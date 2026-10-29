@@ -2,11 +2,12 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline } from './outline.js';
-import { placeTheme, deleteTheme, newProject, reindex, eff, themeStats, effRec, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
+import { linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, effRec, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, rateUnrated, showValidation, showExport, showSettings, openPath } from './dialogs.js';
 import { isAncestor } from './model.js';
+import { allWordsView } from './allwords.js';
 import { entryDefaults } from './model.js';
 
 const VERSION = '2';
@@ -20,7 +21,7 @@ const autosave = debounce(async () => {
 }, 700);
 
 A.changed = () => { reindex(A.P); A.dirty = true; autosave(); render(); };
-A.render = () => render();
+A.render = keep => render(keep);
 
 function renderStatus() {
   $('#save').textContent = (A.dirty ? 'Unsaved to file · ' : 'File saved · ') + (savedAt === 'failed' ? 'autosave failed' : savedAt ? 'autosaved ' + savedAt : '');
@@ -206,6 +207,7 @@ function overview() {
   return h('div.overview', {},
     h('h1', 'Wordlist builder'),
     h('p', {}, `${plural(P.entries.length, 'entry')} · ${plural(playable, 'playable theme')} · ${ready.toLocaleString()} with ${min}+ words · language: ${P.lang}`),
+    h('div.actions', {}, h('button', { onclick: () => { A.view = 'words'; render(); } }, 'All words…')),
     h('p.hint', 'Pick a theme on the left. Add words by hand, paste a list, or generate with Claude (Settings → API key). The checks button finds problems; Export writes the game file.'),
     h('table.ov', {}, h('tr', {}, h('th', 'Group'), h('th', 'Themes'), h('th', `With ${min}+ words`), h('th', 'Words')),
       tops.map(t => h('tr.clickable', { onclick: () => select_(t.id) }, h('td', t.name), h('td', c.play.get(t.id)), h('td', c.ready.get(t.id)), h('td', c.tot.get(t.id))))));
@@ -234,7 +236,7 @@ function themeView(t) {
     const c = counts();
     parts.push(h('div.kids', {}, kids.map(k => h('div.kid', { onclick: () => select_(k.id) }, h('b', k.name), h('span.hint', k.group ? `${c.ready.get(k.id)}/${c.play.get(k.id)} ready` : `${c.own.get(k.id)} words`)))));
   }
-  if (t.group) { if (!kids.length) parts.push(h('p.hint', 'This group is empty. Add a sub-theme.')); return parts; }
+  if (t.group) { if (!kids.length) parts.push(h('p.hint', 'This group is empty. Add a sub-theme.')); else parts.push(entryTable(t)); return parts; }
 
   const status = st.roots >= min ? h('span.ok', `${st.roots} distinct words ✓`) : h('span.bad', `${st.roots} of ${min} needed`);
   parts.push(h('div.poolbar', {}, status, h('span.hint', ` · ${plural(st.entries, 'entry')} · pool depth by rating:`), bandBar(st),
@@ -245,26 +247,36 @@ function themeView(t) {
 
 function pathIds(id) { const out = []; let t = A.P.ix.theme.get(id); while (t) { out.unshift(t.id); t = t.parent && A.P.ix.theme.get(t.parent); } return out; }
 
+const SUB_CAP = 500;
 function entryTable(t) {
-  const P = A.P;
-  const list = (P.ix.byTheme.get(t.id) || []).filter(e => (A.showOff || e.enabled) && (!A.filter || (e.text + ' ' + e.gloss).toLowerCase().includes(A.filter.toLowerCase())));
+  const P = A.P, sub = !!A.showSub;
+  // With "sub-themes" on, the table holds the words of this theme and of every theme below it (each word once).
+  const subIds = new Set([t.id, ...descendants(P, t.id).map(x => x.id)]);
+  const pool = sub ? [...new Map([...subIds].flatMap(id => P.ix.byTheme.get(id) || []).map(e => [e.id, e])).values()] : (P.ix.byTheme.get(t.id) || []);
+  const tools = h('div.tools', {}, h('input.filter', { placeholder: 'filter words…', value: A.filter, oninput: ev => { A.filter = ev.target.value; render(true); } }),
+    h('label.chk', {}, h('input', { type: 'checkbox', checked: A.showOff, onchange: ev => { A.showOff = ev.target.checked; render(); } }), ' show disabled'),
+    h('label.chk', { title: 'Also list the words of every sub-theme' }, h('input', { type: 'checkbox', checked: sub, onchange: ev => { A.showSub = ev.target.checked; render(); } }), ' show words in sub-themes'));
+  if (t.group && !sub) return h('div.etable', {}, tools);
+  const list = pool.filter(e => (A.showOff || e.enabled) && (!A.filter || (e.text + ' ' + e.gloss).toLowerCase().includes(A.filter.toLowerCase())));
   const inList = new Set(list.map(e => e.id));
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
-  const key = { text: e => e.text.toLowerCase(), rec: e => effRec(P, e, t.id) || 9, status: e => e.status, type: e => e.type }[A.sort] || (e => e.text.toLowerCase());
+  const key = { text: e => e.text.toLowerCase(), rec: e => (sub ? e.rec : effRec(P, e, t.id)) || 9, status: e => e.status, type: e => e.type }[A.sort] || (e => e.text.toLowerCase());
   roots.sort((a, b) => key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0);
-  const rows = [];
+  let rows = [];
   for (const e of roots) { rows.push(e); for (const a of list.filter(x => x.aliasOf === e.id)) rows.push(a); }
-  const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'on' : '', onclick: () => { A.sort = k; render(); } }, label);
+  const total = rows.length;
+  if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
+  const where = e => linkIds(P, e).filter(id => subIds.has(id)).map(id => `${P.ix.theme.get(id)?.name} ${effRec(P, e, id) || ''}`.trim()).join(', ');
+  const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: 'Click to sort by ' + label, onclick: () => { A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? ' ▲' : ' ⇅'));
   const flagsOf = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
-  return h('div.etable', {},
-    h('div.tools', {}, h('input.filter', { placeholder: 'filter words…', value: A.filter, oninput: ev => { A.filter = ev.target.value; render(true); } }),
-      h('label.chk', {}, h('input', { type: 'checkbox', checked: A.showOff, onchange: ev => { A.showOff = ev.target.checked; render(); } }), ' show disabled')),
-    h('table', {}, h('tr', {}, h('th.on', ''), th('Word', 'text'), h('th', 'pos'), th('type', 'type'), th('rating', 'rec'), h('th', { title: 'Rating in this theme' }, 'in theme'), h('th', 'flags'), th('status', 'status')),
+  return h('div.etable', {}, tools,
+    sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
+    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), h('th', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : h('th', { title: 'Rating in this theme' }, 'in theme'), h('th', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.aliasOf ? h('span.arrow', '↳ ') : '', e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), e.aliasKind && h('span.hint', ` ${e.aliasKind}`)),
         h('td.dim', e.pos.slice(0, 3)), h('td.dim', e.type), h('td', {}, recSel(e.rec, ev => { e.rec = +ev.target.value; A.changed(); })),
-        h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), !!e.aliasOf && !e.th[t.id] && h('span.hint', ' ' + effRec(P, e, t.id))),
+        sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), !!e.aliasOf && !e.th[t.id] && h('span.hint', ' ' + effRec(P, e, t.id))),
         h('td', flagsOf(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·')))) :
         h('tr', h('td', { colspan: 8, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
 }
@@ -277,7 +289,7 @@ function render(keepFocus = false) {
   const pos = focus ? document.activeElement.selectionStart : 0;
   renderTree();
   const t = A.sel && A.P.ix.theme.get(A.sel);
-  main.replaceChildren(...[].concat(t ? themeView(t) : overview()));
+  main.replaceChildren(...[].concat(t ? themeView(t) : A.view === 'words' ? allWordsView() : overview()));
   main.scrollTop = top;
   if (focus) { const f = $('.filter'); f.focus(); f.setSelectionRange(pos, pos); }
   renderStatus();
@@ -323,7 +335,7 @@ async function boot() {
   const tf = $('#tflag');
   tf.append(...THEME_FILTERS.map(([v, l]) => h('option', { value: v }, l)));
   tf.onchange = () => { A.tflag = tf.value; renderTree(); };
-  $('#btn-home').onclick = () => { A.sel = null; render(); };
+  $('#btn-home').onclick = () => { A.sel = null; A.view = null; render(); };
   $('#filemenu .mpop').append(
     menuItem('Save project file', () => {
       if (!A.dirty) return toast('No changes since the last file save.');

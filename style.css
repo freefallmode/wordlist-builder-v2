@@ -119,3 +119,22 @@ h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--
 .flaghelp { margin: 2px 0 6px; } .flaghelp > div { margin: 2px 0; }
 .sechead.fold { cursor: pointer; user-select: none; } .sechead.fold:hover { background: var(--hover); }
 #tflag { margin: 6px 8px; width: calc(100% - 16px); }
+
+/* word table: fixed column widths so sorting never moves them; sortable headings are marked */
+.etable { overflow-x: auto; }
+.etable table { table-layout: fixed; min-width: 760px; }
+.etable th:nth-child(1) { width: 28px; } .etable th:nth-child(3) { width: 48px; } .etable th:nth-child(4) { width: 90px; }
+.etable th:nth-child(5) { width: 96px; } .etable th:nth-child(6) { width: 130px; } .etable table.sub th:nth-child(6) { width: 230px; }
+.etable th:nth-child(7) { width: 90px; } .etable th:nth-child(8) { width: 84px; }
+.etable td { overflow: hidden; text-overflow: ellipsis; }
+th.sortable { color: var(--text); cursor: pointer; user-select: none; text-decoration: underline dotted; text-underline-offset: 3px; }
+th.sortable:hover { background: var(--hover); }
+th.sortable .sortmark { color: var(--dim); font-weight: 400; opacity: .6; }
+th.sortable.sorted { background: var(--sel); text-decoration: none; } th.sortable.sorted .sortmark { color: var(--text); opacity: 1; }
+
+/* all words screen */
+.tools.wrap { flex-wrap: wrap; } .pager { margin: 6px 0; display: flex; align-items: center; gap: 6px; }
+.awrap { overflow-x: auto; } table.aw { table-layout: fixed; min-width: 900px; }
+table.aw th:nth-child(1) { width: 28px; } table.aw th:nth-child(2) { width: 150px; } table.aw th:nth-child(3) { width: 130px; } table.aw th:nth-child(4) { width: 48px; }
+table.aw th:nth-child(5) { width: 84px; } table.aw th:nth-child(6) { width: 76px; } table.aw th:nth-child(7) { width: 84px; } table.aw th:nth-child(8) { width: 130px; }
+table.aw th:nth-child(10) { width: 80px; } table.aw td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
