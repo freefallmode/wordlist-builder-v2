@@ -4,7 +4,7 @@
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag), 'exclude' (drop flagged links) or 'only' (keep only flagged links).
 // Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, effRec, linkIds, POS, TYPES, KIND_NAMES } from './model.js';
+import { eff, effRec, linkIds, POS, TYPES } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 
 export const DEFAULT_EXPORT = {
@@ -137,15 +137,15 @@ export function buildExport(P, opt0 = {}) {
     const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0)
       | (t.complete ? THEME_BITS.complete : 0)
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
-    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, t.d, rMask(f.region), KIND_NAMES.indexOf(t.kind), t.geo];
+    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, t.d, rMask(f.region)];
     if (o.notes) row.push(t.note);
     return row;
   });
 
   const file = {
     v: 1, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
-    options: o, regions, posNames: POS, typeNames: TYPES, kindNames: KIND_NAMES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
-    themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions', 'kind', 'geo'].concat(o.notes ? ['note'] : []),
+    options: o, regions, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
+    themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
     // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] pairs (themeIndex, rating) in `links`.
     // root[i] is 0 for a root entry, else the index+1 of the root it is an alias of.

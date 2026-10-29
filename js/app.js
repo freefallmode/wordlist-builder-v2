@@ -2,10 +2,11 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline } from './outline.js';
-import { newProject, reindex, eff, themeStats, effRec, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
+import { placeTheme, deleteTheme, newProject, reindex, eff, themeStats, effRec, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, rateUnrated, showValidation, showExport, showSettings, openPath } from './dialogs.js';
+import { isAncestor } from './model.js';
 import { entryDefaults } from './model.js';
 
 const VERSION = '2';
@@ -23,7 +24,8 @@ A.render = () => render();
 
 function renderStatus() {
   $('#save').textContent = (A.dirty ? 'Unsaved to file · ' : 'File saved · ') + (savedAt === 'failed' ? 'autosave failed' : savedAt ? 'autosaved ' + savedAt : '');
-  $('#lib').textContent = `library v${A.P.lib.version} · ${A.P.lib.modified}`;
+  const P = A.P, themes = P.themes.filter(t => !t.group).length;
+  $('#lib').textContent = `library v${P.lib.version} · ${P.lib.modified} · ${themes.toLocaleString()} themes · ${P.entries.length.toLocaleString()} words (${P.entries.filter(e => e.enabled).length.toLocaleString()} enabled)`;
 }
 
 // ---------- tree ----------
@@ -55,38 +57,137 @@ function badges(t) {
   return b;
 }
 
+function rowButtons(t) {
+  const btn = (label, title, fn) => h('button.rb', { title, onclick: ev => { ev.stopPropagation(); fn(); } }, label);
+  return h('span.acts', {},
+    btn('+', 'Add a sub-theme', () => addTheme(t.id)),
+    btn('✎', 'Rename', () => renameTheme(t)),
+    btn('🗑', 'Delete', () => {
+      if (!confirm(`Delete "${t.name}"? Its sub-themes move up a level and words stay but lose this link.`)) return;
+      deleteTheme(A.P, t.id); if (A.sel === t.id) A.sel = t.parent; A.changed();
+    }));
+}
+
+function renameTheme(t) {
+  const input = h('input', { value: t.name });
+  dialog('Rename theme', h('div.form', {}, input), [
+    { label: 'Cancel' },
+    { label: 'Rename', primary: true, action: () => {
+      const name = input.value.trim();
+      if (!name) throw Error('A theme needs a name.');
+      if (A.P.themes.some(x => x !== t && x.name.toLowerCase() === name.toLowerCase())) throw Error('Another theme already has this name.');
+      t.name = name; A.changed();
+    } },
+  ]);
+  setTimeout(() => { input.focus(); input.select(); }, 30);
+}
+
+function setLock(on) {
+  A.unlock = on;
+  try { localStorage.setItem('wlb2-unlock', on ? '1' : ''); } catch {}
+  const b = $('#btn-lock');
+  b.textContent = on ? '🔓' : '🔒';
+  b.title = on ? 'Dragging themes is on: drop on a theme to nest it, near a row edge to reorder. Click to lock.' : 'Dragging themes is off. Click to unlock.';
+  renderTree();
+}
+
+// Dragging themes in the tree (only while unlocked).
+let drag = null;
+const zone = e => e.target.closest && e.target.closest('#tree [data-id], #tree [data-root]');
+const where = (e, r) => { if (r.dataset.root) return 'root'; const b = r.getBoundingClientRect(), y = (e.clientY - b.top) / b.height; return y < .28 ? 'before' : y > .72 ? 'after' : 'in'; };
+const clearZones = () => document.querySelectorAll('.dz, .dzt, .dzb').forEach(n => n.classList.remove('dz', 'dzt', 'dzb'));
+function canDrop(id, r, w) {
+  if (!id) return false;
+  const tid = r.dataset.id || null;
+  if (id === tid) return false;
+  const target = tid && A.P.ix.theme.get(tid);
+  const parent = w === 'root' ? null : w === 'in' ? tid : target.parent;
+  return !(parent && isAncestor(A.P, id, parent));
+}
+document.addEventListener('dragstart', e => {
+  const r = e.target.closest && e.target.closest('#tree [data-id]'); if (!r || !A.unlock) return;
+  drag = r.dataset.id; e.dataTransfer.setData('text/plain', drag); e.dataTransfer.effectAllowed = 'move';
+});
+document.addEventListener('dragover', e => {
+  const r = zone(e); if (!drag || !r) return;
+  const w = where(e, r); clearZones();
+  if (canDrop(drag, r, w)) { e.preventDefault(); r.classList.add(w === 'before' ? 'dzt' : w === 'after' ? 'dzb' : 'dz'); }
+});
+document.addEventListener('dragleave', e => { const r = zone(e); if (r) r.classList.remove('dz', 'dzt', 'dzb'); });
+document.addEventListener('drop', e => {
+  const r = zone(e); if (!drag || !r) return;
+  e.preventDefault();
+  const w = where(e, r);
+  if (canDrop(drag, r, w) && placeTheme(A.P, drag, r.dataset.id || null, w)) {
+    if (w === 'in') A.open.add(r.dataset.id);
+    A.changed();
+  }
+  drag = null; clearZones();
+});
+document.addEventListener('dragend', () => { drag = null; clearZones(); });
+
+const searchOpen = { themes: true, words: true };
+
+// Tree filter (the select above the tree): themes with a flag, set on them or inherited from a parent, plus their parents for context.
+const THEME_FILTERS = [
+  ['', 'All themes'],
+  ['off', 'Disabled themes', (P, t, ef) => !ef.enabled],
+  ['group', 'Groups (folders)', (P, t) => t.group],
+  ['complete', 'Complete sets', (P, t) => t.complete],
+  ['adult', 'Adult themes', (P, t, ef) => ef.adult],
+  ['sensitive', 'Sensitive themes', (P, t, ef) => ef.sensitive],
+  ['tm', 'Trademark / copyright themes', (P, t, ef) => ef.tm],
+  ['lang', 'Language-specific themes', (P, t, ef) => ef.lang],
+  ['region', 'Region-specific themes', (P, t, ef) => ef.region.length > 0],
+];
+function filterVisible() {
+  const f = THEME_FILTERS.find(x => x[0] === A.tflag)?.[2];
+  if (!f) return null;
+  const P = A.P, vis = new Set(), hit = new Set();
+  for (const t of P.themes) if (f(P, t, eff(P, t.id))) { hit.add(t.id); for (let x = t; x; x = x.parent && P.ix.theme.get(x.parent)) vis.add(x.id); }
+  vis.hits = hit.size;
+  return vis;
+}
 function renderTree() {
   const P = A.P, box = $('#tree'), q = A.search.trim().toLowerCase();
   if (q) {
     const themes = P.themes.filter(t => t.name.toLowerCase().includes(q)).slice(0, 60);
     const words = q.length < 2 ? [] : P.entries.filter(e => e.text.toLowerCase().includes(q)).slice(0, 60);
+    const sect = (key, title, hits) => [
+      h('div.sechead.fold', { onclick: () => { searchOpen[key] = !searchOpen[key]; renderTree(); } }, (searchOpen[key] ? '▾ ' : '▸ ') + title),
+      ...(searchOpen[key] ? hits : [])];
     box.replaceChildren(...[
-      h('div.sechead', `Themes (${themes.length})`),
-      themes.map(t => h('div.hit', { onclick: () => select_(t.id) }, h('b', t.name), h('span.path', pathOf(P, t.id).slice(0, -1).join(' › ')))),
-      h('div.sechead', `Words (${words.length})`),
-      words.map(e => h('div.hit', { onclick: () => editEntry(e) }, h('b', e.text), e.gloss && h('span.path', e.gloss),
-        h('span.path', Object.keys(e.th).slice(0, 3).map(id => P.ix.theme.get(id)?.name).filter(Boolean).join(', '))))].flat());
+      sect('themes', `Themes (${themes.length})`,
+        themes.map(t => h('div.hit', { onclick: () => select_(t.id) }, h('b', t.name), h('span.path', pathOf(P, t.id).slice(0, -1).join(' › '))))),
+      sect('words', `Words (${words.length})`,
+        words.map(e => h('div.hit', { onclick: () => editEntry(e) }, h('b', e.text), e.gloss && h('span.path', e.gloss),
+          h('span.path', Object.keys(e.th).slice(0, 3).map(id => P.ix.theme.get(id)?.name).filter(Boolean).join(', '))))),
+    ].flat().filter(Boolean));
     return;
   }
-  const c = counts(), min = P.settings.minWords || 4, frag = document.createDocumentFragment();
+  const c = counts(), min = P.settings.minWords || 4, frag = document.createDocumentFragment(), vis = filterVisible();
+  if (vis) frag.append(h('div.sechead', `${plural(vis.hits, 'theme')} match`));
   const walk = (key, depth) => {
-    for (const t of P.ix.kids.get(key) || []) {
-      const kids = P.ix.kids.get(t.id) || [], open = A.open.has(t.id), off = !eff(P, t.id).enabled;
+    for (const t of (P.ix.kids.get(key) || []).filter(k => !vis || vis.has(k.id))) {
+      const kids = (P.ix.kids.get(t.id) || []).filter(k => !vis || vis.has(k.id)), open = vis ? true : A.open.has(t.id), off = !eff(P, t.id).enabled;
       const n = t.group ? null : c.own.get(t.id);
       frag.append(h('div.node', { class: [t.group ? 'group' : '', A.sel === t.id ? 'sel' : '', off ? 'off' : '', !t.group && n === 0 ? 'empty' : '', !t.group && n > 0 && n < min ? 'thin' : ''].join(' '),
-        style: `padding-left:${6 + depth * 14}px`, onclick: () => select_(t.id) },
+        style: `padding-left:${6 + depth * 14}px`, 'data-id': t.id, onclick: () => select_(t.id) },
         h('span.tog', { onclick: ev => { ev.stopPropagation(); open ? A.open.delete(t.id) : A.open.add(t.id); renderTree(); } }, kids.length ? (open ? '▾' : '▸') : ''),
-        h('span.nm', t.name), badges(t),
+        h('span.nm', t.name), badges(t), rowButtons(t),
         h('span.cnt', { title: t.group || kids.length ? `${c.ready.get(t.id)} of ${c.play.get(t.id)} themes have ${min}+ words` : '' },
           t.group ? `${c.ready.get(t.id)}/${c.play.get(t.id)}` : kids.length ? `${n} · ${c.ready.get(t.id) - (n >= min ? 1 : 0)}/${c.play.get(t.id) - 1}` : n)));
+      if (A.unlock) frag.lastChild.draggable = true;
       if (open) walk(t.id, depth + 1);
     }
   };
   walk('', 0);
+  if (A.unlock) frag.append(h('div.dropRoot', { 'data-root': '1' }, 'Drop here to make top level'));
   box.replaceChildren(frag);
 }
 
 function select_(id) {
+  if (A.sel === id && !A.filter) { A.sel = null; render(); return; }
   A.sel = id; openPath(id); A.filter = '';
   if ((A.P.ix.kids.get(id) || []).length) A.open.add(id);
   render();
@@ -123,7 +224,7 @@ function themeView(t) {
   const head = h('div.thead', {},
     h('div.crumbs', {}, path.slice(0, -1).map((n, i) => h('a', { href: '#', onclick: ev => { ev.preventDefault(); select_(P.ix.theme.get(pathIds(t.id)[i]).id); } }, n + ' › '))),
     h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')),
-    h('div.chips', {}, badges(t), t.d ? h('span.badge.d', { title: 'Theme difficulty' }, 'difficulty ' + t.d) : h('span.badge.d0', 'not rated'), t.kind && h('span.badge', t.kind), t.geo && h('span.badge', '🌍 ' + t.geo)),
+    h('div.chips', {}, badges(t), t.d ? h('span.badge.d', { title: 'Theme difficulty' }, 'difficulty ' + t.d) : h('span.badge.d0', 'not rated')),
     t.note && h('p.note', t.note),
     h('div.actions', {}, h('button', { onclick: () => editTheme(t) }, 'Theme settings…'), h('button', { onclick: () => addTheme(t.id) }, '+ Sub-theme'),
       !t.group && h('button', { onclick: () => bulkAdd(t.id) }, '+ Add words…'), !t.group && h('button.primary', { onclick: () => generate(t.id) }, 'Generate with Claude…'),
@@ -214,8 +315,15 @@ async function boot() {
   $('#btn-checks').onclick = showValidation;
   $('#btn-export').onclick = showExport;
   $('#btn-settings').onclick = showSettings;
+  try { A.unlock = !!localStorage.getItem('wlb2-unlock'); } catch {}
+  setLock(!!A.unlock);
+  $('#btn-lock').onclick = () => setLock(!A.unlock);
+  $('#btn-expand').onclick = () => { A.open = new Set(A.P.themes.filter(t => (A.P.ix.kids.get(t.id) || []).length).map(t => t.id)); renderTree(); };
+  $('#btn-collapse').onclick = () => { A.open.clear(); renderTree(); };
+  const tf = $('#tflag');
+  tf.append(...THEME_FILTERS.map(([v, l]) => h('option', { value: v }, l)));
+  tf.onchange = () => { A.tflag = tf.value; renderTree(); };
   $('#btn-home').onclick = () => { A.sel = null; render(); };
-  $('#btn-newtheme').onclick = () => addTheme(A.sel && A.P.ix.theme.get(A.sel)?.group ? A.sel : null);
   $('#filemenu .mpop').append(
     menuItem('Save project file', () => {
       if (!A.dirty) return toast('No changes since the last file save.');

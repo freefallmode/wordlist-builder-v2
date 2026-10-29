@@ -35,7 +35,7 @@ function packEntry(e) {
   }
   return JSON.stringify({ id: e.id, text: e.text, ...o });
 }
-const packTheme = t => JSON.stringify(t);
+const packTheme = ({ geo, kind, ...t }) => JSON.stringify(t);
 
 export function serializeProject(P) {
   const head = { schema: P.schema, lang: P.lang, lib: P.lib, nextId: P.nextId, settings: P.settings };
@@ -47,7 +47,7 @@ export function parseProject(text) {
   if (!j.project || !j.themes) throw Error('Not a wordlist-builder project file.');
   const P = Object.assign(newProject(), j.project);
   P.settings = Object.assign(newProject().settings, j.project.settings);
-  P.themes = j.themes;
+  P.themes = j.themes.map(({ geo, kind, ...t }) => t);
   P.entries = j.entries.map(e => Object.assign(entryDefaults(), e));
   P.nextId = Math.max(P.nextId || 1, ...P.entries.map(e => e.id + 1), 1);
   return P;

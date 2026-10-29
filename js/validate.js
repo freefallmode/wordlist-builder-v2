@@ -23,13 +23,13 @@ export function validate(P) {
       if (direct.length) add('warn', 'group-words', `"${t.name}" is a group (a folder) but has ${direct.length} words linked to it.`, { themeId: t.id });
       continue;
     }
-    if (!t.d) unrated++;
     const st = themeStats(P, t.id);
+    if (!t.d) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no difficulty rating.`, { themeId: t.id }); else unrated++; }
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
-  if (unrated) add('info', 'theme-unrated', `${unrated} themes have no difficulty rating yet.`);
+  if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no difficulty rating yet.`);
 
   // ----- entries -----
   const seen = new Map();

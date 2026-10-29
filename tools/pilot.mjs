@@ -100,6 +100,13 @@ for (const [tid, rows] of Object.entries(DATA)) {
     }
   }
 }
+// Theme difficulty (1 everyone gets the category at a glance ... 5 specialist). Every theme with words must be rated.
+const THEME_D = { fruits: 1, citrus_fruits: 2, cheeses: 2, hot_drinks: 1, big_cats: 1, farm_animals: 1, dog_breeds: 2, main_cloud_types: 3, metals: 2, uk_nations: 2,
+  cardinal_directions: 1, buildings_to_live_in: 1, shops: 1, british_car_brands: 3, torso: 2, the_five_senses: 1, currencies: 2, seating: 1, hand_tools: 2,
+  months_with_30_days: 2, days_of_the_week: 1, chess_pieces: 2, card_suits: 1, string_instruments: 2, brass_instruments: 2, planets: 1, silicon_valley_companies: 3,
+  shades_of_blue: 3, colors_of_the_rainbow: 1 };
+for (const t of P.themes) if (THEME_D[t.id]) t.d = THEME_D[t.id];
+for (const id of Object.keys(DATA)) if (!P.ix.theme.get(id)?.d) console.log('UNRATED THEME', id);
 reindex(P);
 writeFileSync(here('../data/pilot.project.json'), serializeProject(P));
 const issues = validate(P).filter(i => i.sev !== 'info' || i.kind === 'rating-vs-zipf');

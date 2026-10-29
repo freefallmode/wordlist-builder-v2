@@ -1,6 +1,6 @@
 // Data model. Pure functions over a plain project object, so they can be tested in Node.
 //
-// Theme   { id, name, parent, group, enabled, d, complete, adult, sensitive, tm, lang, region[], geo, kind, note }
+// Theme   { id, name, parent, group, enabled, d, complete, adult, sensitive, tm, lang, region[], note }
 // Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, rec, adult, sensitive, tm, vulgar, region[],
 //         aliasOf, aliasKind, th{ themeId: inThemeRating }, status, note }
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
@@ -13,7 +13,6 @@ export const TYPES = ['common', 'person', 'place', 'org', 'title', 'proper', 'ac
 export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named person or character', place: 'a named place', org: 'company, brand, team, group',
   title: 'book, film, song, game, artwork', proper: 'other proper name (event, era, deity)', acronym: 'letters said as letters or a word (NASA, UFO)', phrase: 'idiom or set phrase' };
 export const REGIONS = ['US', 'CA', 'UK', 'IE', 'AU', 'NZ', 'ZA', 'IN', 'TR'];
-export const KIND_NAMES = ['', 'place', 'property', 'wordplay'];
 export const REC_HELP = ['not rated', '1 every child knows it', '2 nearly every adult', '3 many adults, not all', '4 interest, job or region', '5 few people'];
 export const ALIAS_KINDS = ['', 'synonym', 'spelling'];
 export const STATUS = ['new', 'gen', 'rev'];
@@ -178,3 +177,28 @@ export function sortDepthFirst(P) {
   for (const t of P.themes) if (!seen.has(t.id)) { t.parent = null; seen.add(t.id); out.push(t); walk(t.id); }   // orphans (missing parent) go to the top level
   P.themes = out;
 }
+
+// Drag and drop in the tree. where: 'in' (last child of target), 'before' / 'after' (sibling of target), 'root' (top level, last).
+export function placeTheme(P, id, targetId, where) {
+  const t = P.ix.theme.get(id), target = targetId && P.ix.theme.get(targetId);
+  if (!t) return false;
+  const parent = where === 'root' ? null : where === 'in' ? targetId : target.parent;
+  if (id === targetId || (parent && isAncestor(P, id, parent))) return false;
+  const block = [t, ...descendantsIn(P.themes, id)];
+  const rest = P.themes.filter(x => !block.includes(x));
+  t.parent = parent || null;
+  let at = rest.length;
+  if (where === 'before') at = rest.indexOf(target);
+  else if (where === 'after' || where === 'in') at = rest.indexOf(target) + 1 + descendantsIn(rest, targetId).length;
+  rest.splice(at, 0, ...block);
+  P.themes = rest;
+  return true;
+}
+
+// What the content flags mean. Used in the generation prompt and as hints in the editors, so the wording stays the same everywhere.
+export const FLAG_HELP = {
+  tm: 'Trademarks or copyrighted names: brands, titles, characters, and so on.',
+  adult: 'Adult: drugs, sexual content, violence, and so on.',
+  sensitive: 'Sensitive: religion, politics, death, and so on. The game can keep these out of early or easy levels.',
+  lang: 'Language-specific: depends on the spelling, sound or slang of the library language, so it will not translate: rhymes, puns, slang, acronyms, anagrams, spoonerisms, wordplay, and so on.',
+};

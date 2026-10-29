@@ -21,8 +21,13 @@
   <aside>
     <div class="side-top">
       <input id="search" type="search" placeholder="Search themes and words" autocomplete="off">
-      <button id="btn-newtheme" title="New theme (inside the selected group)">+ Theme</button>
     </div>
+    <div class="tree-tools">
+      <button id="btn-expand" title="Expand all">⊞ Expand all</button>
+      <button id="btn-collapse" title="Collapse all">⊟ Collapse all</button>
+      <button id="btn-lock" class="lock"></button>
+    </div>
+    <select id="tflag" title="Show only themes with a flag (including flags inherited from a parent theme), with their parents for context"></select>
     <div id="tree"></div>
   </aside>
   <main id="main"></main>

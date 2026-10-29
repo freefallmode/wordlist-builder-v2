@@ -1,6 +1,6 @@
 // Claude, called straight from the browser with the user's own API key (kept for the session unless "remember" is ticked).
 // Replies use structured outputs, so they are always valid JSON of the shape in the schema.
-import { POS, TYPES, REGIONS, pathOf, descendants } from './model.js';
+import { POS, TYPES, REGIONS, FLAG_HELP, pathOf, descendants } from './model.js';
 
 export const MODELS = [['claude-opus-5-5', 'Claude Opus 5.5'], ['claude-sonnet-5-5', 'Claude Sonnet 5.5'], ['claude-haiku-4-5', 'Claude Haiku 4.5']];
 const PRICE = { 'claude-opus-5-5': [4, 20, 0.4], 'claude-sonnet-5-5': [2, 10, 0.2], 'claude-haiku-4-5': [1, 5, 0.1] };   // $ per million tokens: in, out, cache read
@@ -59,7 +59,7 @@ const entrySchema = { type: 'object', additionalProperties: false,
   required: ['text', 'gloss', 'pos', 'type', 'rec', 'inRec', 'adult', 'sensitive', 'tm', 'vulgar', 'region', 'aliases'],
   properties: { text: str, gloss: str, pos: { type: 'string', enum: POS }, type: { type: 'string', enum: TYPES }, rec: int, inRec: int,
     adult: bool, sensitive: bool, tm: bool, vulgar: bool, region: { type: 'array', items: { type: 'string', enum: REGIONS } }, aliases: { type: 'array', items: aliasSchema } } };
-export const WORDS_SCHEMA = { type: 'object', additionalProperties: false, required: ['entries'], properties: { entries: { type: 'array', items: entrySchema } } };
+export const WORDS_SCHEMA = { type: 'object', additionalProperties: false, required: ['themeDifficulty', 'entries'], properties: { themeDifficulty: int, entries: { type: 'array', items: entrySchema } } };
 
 export const GAME = `You build the word lists for a themed word-sorting game. A level shows words from 8 to 12 themes, four words per theme, mixed together; the player sorts each word into its theme (and the theme's name is revealed when it is complete). Players are typical adult English readers, and the game has five difficulty modes from easy to ultra-hard, so every theme needs words across the whole range of how well known they are.
 
@@ -73,10 +73,19 @@ type: common (ordinary word), person (a named person or character), place, org (
 rec, how widely known the word itself is among players, 1 to 5. Be honest and conservative; rate by what a typical adult actually knows, not by how common the thing is in the world. 1 = every child and adult knows it (apple, dog). 2 = nearly every adult (plum, otter). 3 = many adults but not all (quince, ocelot). 4 = people with the interest, job or region (kumquat, quokka). 5 = few people (pulasan, a rare specialist term). Do not rate an obscure word as easy.
 inRec: how recognisable the word is AS A MEMBER OF THIS THEME, 1 to 5 on the same scale: how readily a player who knows the word would place it in this theme. A word everyone knows can still be a hard fit (a tomato in "fruits" is a 3).
 
-Flags (true only when it really applies to this meaning of the word): adult = adult content (18+); sensitive = a topic some players or parents would rather meet later (death, religion, politics, war, illness); tm = a trademark, brand or copyrighted name; vulgar = crude or offensive wording in this meaning.
+Flags (true only when it really applies to this meaning of the word):
+- tm: ${FLAG_HELP.tm}
+- adult: ${FLAG_HELP.adult}
+- sensitive: ${FLAG_HELP.sensitive}
+- vulgar: crude or offensive wording in this meaning.
+Themes carry the same adult, sensitive and trademark flags, plus a language-specific flag.
+- ${FLAG_HELP.lang}
+Theme flags are inherited by its words' links, so a word does not need a flag only because its theme has one.
 region: only if the word is mainly known in particular regions, using the codes (US, CA, UK, IE, AU, NZ, ZA, IN, TR); otherwise empty.
 
 Aliases. Add aliases only when there is a real, commonly used alternative that fits the same theme: a synonym (sofa / couch / settee), a regional word (sidewalk US, pavement UK; give region), or a spelling variant (color / colour, kind "spelling", region UK). Each alias gets its own honest rec and inRec: a rarer alias should have a higher number. Never list the same concept as separate top-level entries. Leave aliases empty when there are none.
+
+themeDifficulty: how recognisable the THEME is as a category, 1 to 5 (1 = everyone gets it at a glance, 5 = specialist or obscure; a vague boundary makes it harder). Always give it; it is only used when the theme is still unrated.
 
 Complete themes are a finite set: list EVERY member exactly and correctly, nothing else, however many that is.`;
 
@@ -86,9 +95,7 @@ export function wordsPrompt(P, t, n, spread, extra) {
   const kids = descendants(P, t.id).slice(0, 12).map(k => k.name);
   const lines = [`Theme: ${t.name}`, `Place in the tree: ${path}`];
   if (t.note) lines.push(`Note: ${t.note}`);
-  if (t.kind === 'place') lines.push('This theme is things found at a place: list what you would see or find there.');
-  if (t.kind === 'property') lines.push('This theme is things that share a property: list things that clearly have that property.');
-  if (t.kind === 'wordplay') lines.push('This is a wordplay theme about spelling, sound or word structure; every word you list must satisfy the rule exactly.');
+  if (t.lang) lines.push('This theme is language-specific (spelling, sound, slang or wordplay): every word you list must satisfy its rule exactly.');
   if (t.complete) lines.push('COMPLETE theme: list every member of the set (use the note), exactly, with no extras.');
   if (kids.length) lines.push(`Sub-themes exist (${kids.join(', ')}); words here should be typical of this theme itself, not copies of what the sub-themes will hold.`);
   if (have.length) lines.push(`Already in the theme (do not repeat): ${have.slice(0, 150).join(', ')}`);
@@ -106,7 +113,7 @@ export const SPREADS = {
 
 export async function generateWords(P, t, { n = 20, spread = 'even', extra = '', model, signal }) {
   const r = await claude({ model, system: GAME, prompt: wordsPrompt(P, t, n, SPREADS[spread] || SPREADS.even, extra), schema: WORDS_SCHEMA, maxTokens: t.complete ? 16000 : 12000, signal });
-  return { entries: r.data.entries, cost: r.cost };
+  return { entries: r.data.entries, themeDifficulty: r.data.themeDifficulty, cost: r.cost };
 }
 
 // ---------- theme difficulty ----------

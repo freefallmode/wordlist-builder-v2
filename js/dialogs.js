@@ -2,8 +2,8 @@
 import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
-import { POS, TYPES, TYPE_HELP, REGIONS, KIND_NAMES, REC_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
-  pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, descendants } from './model.js';
+import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
+  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, sizeOf } from './export.js';
@@ -35,8 +35,6 @@ export async function editTheme(t, isNew = false) {
     name: h('input', { value: w.name }),
     note: h('textarea', { rows: 3 }, w.note),
     d: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.d),
-    kind: select([['', 'category (plain)'], ['place', 'place: things found at a place'], ['property', 'property: things that share a property'], ['wordplay', 'wordplay: spelling, sound, structure']], w.kind),
-    geo: h('input', { value: w.geo, placeholder: 'e.g. Asia, Europe' }),
   };
   const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang'];
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
@@ -47,10 +45,9 @@ export async function editTheme(t, isNew = false) {
     field('Name', f.name),
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
     h('div.flags', Object.values(boxes)),
+    h('div.hint.flaghelp', {}, ['tm', 'adult', 'sensitive', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Theme difficulty', f.d, 'How recognisable the theme is as a category (1 everyone gets it at a glance ... 5 specialist).'),
-    field('Kind', f.kind),
     field('Audience regions', h('div.chips', regionBoxes), 'Tick if the theme is mainly known in some countries (US states, British politics). Leave empty for everyone.'),
-    field('Part of the world', f.geo, 'Optional: where the theme is about (not who knows it).'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
   return dialog(isNew ? 'New theme' : 'Theme: ' + t.name, body, [
@@ -65,7 +62,7 @@ export async function editTheme(t, isNew = false) {
       const pname = parentPick.input.value.trim(), parent = pname ? parentPick.get() : null;
       if (pname && !parent) throw Error('Parent theme not found.');
       if (parent && (parent === t.id || (!isNew && isAncestor(P, t.id, parent)))) throw Error('A theme cannot be inside itself.');
-      Object.assign(w, { name, note: f.note.value.trim(), d: +f.d.value, kind: f.kind.value, geo: f.geo.value.trim() });
+      Object.assign(w, { name, note: f.note.value.trim(), d: +f.d.value });
       for (const k of flags) w[k] = boxes[k].querySelector('input').checked;
       w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
       const oldParent = t.parent;
@@ -182,6 +179,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
     h('div.two', {}, field('Recognisability (the word itself)', f.rec, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
     h('div.flags', Object.values(boxes)),
+    h('div.hint.flaghelp', {}, ['tm', 'adult', 'sensitive'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Regions', h('div.chips', regionBoxes), 'Tick if the word is mainly known in some countries (lorry, pavement). Empty = everyone.'),
     h('h3', 'Themes'), linksBox,
     aliasBlock,
@@ -254,14 +252,15 @@ export async function generate(tid) {
     extra: h('input', { placeholder: 'optional, e.g. include some tropical ones' }),
   };
   const out = h('div.gen');
-  let result = null, ctl = null;
+  let result = null, ctl = null, themeD = 0;
   const run = async st => {
     setModel(f.model.value);
     st.textContent = 'Asking Claude…'; st.classList.remove('err');
     ctl = new AbortController();
     const r = await generateWords(P, t, { n: +f.n.value || 20, spread: f.spread.value, extra: f.extra.value, model: f.model.value, signal: ctl.signal });
     result = r.entries.map(x => ({ ...x, take: true }));
-    st.textContent = `${plural(result.length, 'entry')} · cost $${r.cost.toFixed(3)}`;
+    themeD = Math.max(1, Math.min(5, Math.round(+r.themeDifficulty) || 0));
+    st.textContent = `${plural(result.length, 'entry')}${t.d ? '' : ` · theme difficulty ${themeD}`} · cost $${r.cost.toFixed(3)}`;
     draw();
     return false;
   };
@@ -300,6 +299,7 @@ export async function generate(tid) {
         reindex(P); created++;
       }
     }
+    if (!t.d && themeD) t.d = themeD;
     A.changed();
     toast(`${plural(created, 'entry')} added, ${linked} linked. Status "gen": review them.`);
   };
