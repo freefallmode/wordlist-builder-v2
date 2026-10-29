@@ -45,7 +45,7 @@ The old app (`../wordlist-builder`) is a reference only. Its words were over-inc
 
 Pure functions over a plain project object (`js/model.js`), so the core can be tested in Node.
 
-**Project:** `{ schema: 1, lang, lib: { version, modified }, nextId, settings: { minWords: 4, maxWords: 3, maxLen: 20 }, themes[], entries[] }`.
+**Project:** `{ schema: 1, lang, lib: { version, modified }, nextId, settings: { minWords: 4, maxWords: 4, maxLen: 20 }, themes[], entries[] }`.
 
 **Theme:** `{ id, name, parent, group, enabled, d, complete, adult, sensitive, tm, lang, region[], note }`.
 - `id`: stable slug (`citrus_fruits`). A leading or trailing `___` in a name becomes "blank" so `___ball` and `ball` get different ids. Duplicate ids get `_2`, `_3`.
@@ -124,6 +124,7 @@ Each issue has a severity (error breaks the model, warn is probably a mistake, i
 ## 8. Library export (Export…)
 
 Filters, each applied **per link** (a link is flagged when the entry, its theme, or any ancestor theme has the flag):
+- longest entry in words (`maxEntryWords`, 0 = no limit): entries with more words are left out, aliases included;
 
 - adult, sensitive, trademark, vulgar, language-specific: **include / leave out / only**;
 - region-specific: everything / leave out / only, optionally for listed regions;

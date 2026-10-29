@@ -3,7 +3,7 @@
 // Filters are applied per link (entry in theme), because a flag can come from the entry or from the theme it sits in.
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag), 'exclude' (drop flagged links) or 'only' (keep only flagged links).
-// Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
+// Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
 import { eff, effRec, linkIds, POS, TYPES } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 
@@ -13,6 +13,7 @@ export const DEFAULT_EXPORT = {
   synonyms: true, spellings: true,                  // include aliases of each kind
   zipf: false, gloss: false, notes: false,
   recMin: 1, recMax: 5, unrated: true, minWords: 4,
+  maxEntryWords: 0,                                 // longest entry (in words) to include; 0 = no limit
 };
 export const PRESETS = {
   'full': {},
@@ -49,6 +50,7 @@ export function buildExport(P, opt0 = {}) {
   const okTheme = new Map(P.themes.map(t => [t.id, themeOk(t)]));
   for (const e of candidates) {
     if (e.aliasOf && !(e.aliasKind === 'spelling' ? o.spellings : o.synonyms)) continue;
+    if (o.maxEntryWords > 0 && e.text.trim().split(/s+/).length > o.maxEntryWords) continue;
     if (!pass(o.vulgar, e.vulgar) || !regionPass(o.region, e.region)) continue;
     const links = [];
     for (const tid of linkIds(P, e)) {

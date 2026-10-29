@@ -47,7 +47,7 @@ export function validate(P) {
       for (const o of same) if (o.id > e.id && o.pos === e.pos && !e.aliasOf && !o.aliasOf && shares(P, e, o))
         add('warn', 'maybe-duplicate', `"${label(e)}" and "${label(o)}" have the same part of speech and share a theme: one entry or two meanings?`, loc);
     }
-    if (words(text) > (S.maxWords || 3)) add('warn', 'long', `"${text}" has more than ${S.maxWords || 3} words.`, loc);
+    if (words(text) > (S.maxWords || 4)) add('warn', 'long', `"${text}" has more than ${S.maxWords || 4} words.`, loc);
     if (e.type === 'phrase' && /^[A-ZÀ-Ý]/.test(text)) add('warn', 'type', `"${text}" is typed phrase but looks like a name; use person, place, org, title or proper (phrase is for ordinary expressions).`, loc);
     if (letters(text) > (S.maxLen || 20)) add('warn', 'long', `"${text}" is longer than ${S.maxLen || 20} letters.`, loc);
 

@@ -1,6 +1,6 @@
 // Applied after all the root batches: gives meaning labels to older entries that now share their text with a newer one, merges the
 // same meaning written twice by different batches, adds words the batches had to leave out, and raises the word limit to 3.
-export const SETTINGS = { maxWords: 3 };
+export const SETTINGS = { maxWords: 4 };
 
 export const FIXES = [
   // older, unlabelled entries whose text another batch also uses for a different meaning

@@ -10,7 +10,7 @@
 //   ALIASES [[themeId, rootText, rootGloss, [alias row, ...]], ...]  adds aliases to a root that already exists (e.g. from an earlier batch)
 //   FIXES  [{ gloss: [text, themeId, newGloss] } | { merge: [text, [themeId, ...], gloss] } | { del: [text, themeId] }, ...]  edits existing entries first (the entry is found by its text and a theme it is in):
 //          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); del removes one
-//   SETTINGS { maxWords: 3, ... }  library settings to set
+//   SETTINGS { maxWords: 4, ... }  library settings to set
 //   THEMES { themeId: { d: 1-5, ...flag overrides (complete, adult, sensitive, tm, lang, region, note) } }
 // An entry that already exists (same text and gloss) is only linked to the theme (its own ratings and flags stay); a link already there is left alone.
 // Aliases inherit part of speech, type, adult, sensitive and trademark from the root unless the alias row says otherwise.

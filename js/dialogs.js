@@ -383,7 +383,8 @@ export async function showExport() {
     h('div.three', {}, tri('Vulgar words', 'vulgar'), tri('Language-specific themes', 'lang'), field('Region-specific', regionMode)),
     field('Regions (empty = any)', h('div.chips', regionBoxes)),
     h('div.flags', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes'), tick('Include unrated words', 'unrated')),
-    h('div.three', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20)));
+    h('div.three', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20)),
+    h('div.three', {}, num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));
   let form = build();
   let last = null;
   const run = async () => {
@@ -430,7 +431,7 @@ export async function showSettings() {
     setKey(key.value, remember.querySelector('input').checked);
     setModel(f.model.value);
     P.lang = f.lang.value;
-    Object.assign(S, { minWords: +f.min.value || 4, maxWords: +f.maxW.value || 3, maxLen: +f.maxL.value || 20 });
+    Object.assign(S, { minWords: +f.min.value || 4, maxWords: +f.maxW.value || 4, maxLen: +f.maxL.value || 20 });
     A.changed();
   } }]);
 }
