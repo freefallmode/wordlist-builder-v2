@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":151,"modified":"2026-10-30 01:03"},"nextId":62520,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":152,"modified":"2026-10-30 01:04"},"nextId":62524,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"d":0,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":""},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"d":1,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":""},
@@ -3524,7 +3524,7 @@
 {"id":919,"text":"fry","gloss":"cook","pos":"verb","rec":1,"th":{"cooking":1,"cooking_methods":1,"no_vowels":3},"status":"gen"},
 {"id":920,"text":"roast","gloss":"cooking","pos":"verb","rec":1,"th":{"cooking":1,"cooking_methods":1},"status":"gen"},
 {"id":921,"text":"grill","pos":"verb","rec":1,"th":{"cooking":1,"cooking_methods":1,"hot_things":2},"status":"gen"},
-{"id":922,"text":"stir","pos":"verb","rec":1,"th":{"cooking":1,"ways_to_mix":1,"prison_words":4},"status":"gen"},
+{"id":922,"text":"stir","gloss":"to mix","pos":"verb","rec":1,"th":{"cooking":1,"ways_to_mix":1},"status":"gen"},
 {"id":923,"text":"chop","gloss":"cut","pos":"verb","rec":1,"th":{"cooking":1,"butcher_shop":2,"ways_to_cut_food":1,"blank_shop":3},"status":"gen"},
 {"id":924,"text":"slice","gloss":"cut","pos":"verb","rec":1,"th":{"cooking":2,"ways_to_cut_food":1,"hidden_insects":4},"status":"gen"},
 {"id":925,"text":"melt","pos":"verb","rec":1,"th":{"cooking":2,"snow_blank":3,"ice_blank":4},"status":"gen"},
@@ -4406,7 +4406,7 @@
 {"id":1801,"text":"mimosa","gloss":"plant","rec":3,"th":{"plants":3,"sweet_smelling_flowers":3,"yellow_flowers":3},"status":"gen"},
 {"id":1802,"text":"yucca","rec":3,"th":{"plants":3,"houseplants":2,"cacti_and_succulents":4,"desert_plants":2,"desert":2,"prickly_things":3},"status":"gen"},
 {"id":1803,"text":"agave","rec":3,"th":{"plants":3,"sweeteners":1,"cacti_and_succulents":2,"fiber_plants":4,"desert_plants":2,"thorny_plants":3,"prickly_things":3},"status":"gen"},
-{"id":1804,"text":"succulent","rec":3,"th":{"plants":3,"houseplants":1,"taste_words":2},"status":"gen"},
+{"id":1804,"text":"succulent","gloss":"plant","rec":3,"th":{"plants":3,"houseplants":1},"status":"gen"},
 {"id":1805,"text":"perennial","gloss":"plant","rec":3,"th":{"plants":3},"status":"gen"},
 {"id":1806,"text":"annual","gloss":"plant","rec":3,"th":{"plants":3},"status":"gen"},
 {"id":1807,"text":"rush","gloss":"plant","rec":3,"th":{"plants":4,"grasses_and_reeds":2},"status":"gen"},
@@ -35691,7 +35691,7 @@
 {"id":33674,"text":"hung jury","rec":3,"th":{"courtroom_words":1},"status":"gen"},
 {"id":33675,"text":"sustained","rec":3,"th":{"courtroom_words":2},"status":"gen"},
 {"id":33676,"text":"overruled","rec":3,"th":{"courtroom_words":2},"status":"gen"},
-{"id":33677,"text":"summation","rec":4,"th":{"courtroom_words":1,"math_operations":4},"status":"gen"},
+{"id":33677,"text":"summation","gloss":"closing speech","rec":4,"th":{"courtroom_words":1},"status":"gen"},
 {"id":33678,"text":"closing argument","rec":3,"th":{"courtroom_words":1},"status":"gen"},
 {"id":33679,"text":"voir dire","rec":5,"th":{"courtroom_words":1,"legal_latin":1},"status":"gen"},
 {"id":33680,"text":"cop","gloss":"officer","rec":1,"th":{"police_words":1},"status":"gen"},
@@ -61857,7 +61857,7 @@
 {"id":60096,"text":"chirr","rec":4,"th":{"animal_sounds":4},"status":"gen"},
 {"id":60097,"text":"stridulation","rec":5,"th":{"animal_sounds":5},"status":"gen"},
 {"id":60098,"text":"croon","rec":3,"th":{"animal_sounds":3},"status":"gen"},
-{"id":60099,"text":"whoop","rec":3,"th":{"animal_sounds":3,"wearable_tech":4},"status":"gen"},
+{"id":60099,"text":"whoop","gloss":"cry","rec":3,"th":{"animal_sounds":3},"status":"gen"},
 {"id":60100,"text":"yip","rec":2,"th":{"animal_sounds":2},"status":"gen"},
 {"id":60101,"text":"bugle","gloss":"elk","rec":4,"th":{"animal_sounds":4},"status":"gen"},
 {"id":60102,"text":"boom","gloss":"bittern","rec":2,"th":{"animal_sounds":4},"status":"gen"},
@@ -64275,5 +64275,9 @@
 {"id":62516,"text":"Oymyakon","type":"place","rec":5,"th":{"cold_things":5},"status":"gen"},
 {"id":62517,"text":"Hoth","type":"place","rec":3,"th":{"cold_things":4},"status":"gen"},
 {"id":62518,"text":"pyrolysis","rec":5,"th":{"fire_words":5},"status":"gen"},
-{"id":62519,"text":"cresset","rec":5,"th":{"fire_words":5},"status":"gen"}
+{"id":62519,"text":"cresset","rec":5,"th":{"fire_words":5},"status":"gen"},
+{"id":62520,"text":"stir","gloss":"prison","pos":"verb","rec":1,"th":{"prison_words":4},"status":"gen"},
+{"id":62521,"text":"succulent","gloss":"juicy","rec":3,"th":{"taste_words":2},"status":"gen"},
+{"id":62522,"text":"summation","gloss":"adding up","rec":4,"th":{"math_operations":4},"status":"gen"},
+{"id":62523,"text":"whoop","gloss":"fitness band","type":"org","rec":3,"th":{"wearable_tech":4},"status":"gen"}
 ]}
