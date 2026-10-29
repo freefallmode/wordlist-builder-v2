@@ -370,7 +370,7 @@ export async function showExport() {
   const info = h('div.exportinfo', 'Press Preview to see the counts and size.');
   const stale = () => { info.textContent = 'Press Preview to update.'; };
   const num = (key, label, min, max) => field(label, h('input', { type: 'number', min, max, value: o[key], onchange: ev => { o[key] = +ev.target.value; stale(); } }));
-  const tick = (label, key) => check(label, o[key], { onchange: ev => { o[key] = ev.target.checked; stale(); } });
+  const tick = (label, key) => field(label, select([['include', 'include'], ['exclude', 'leave out']], o[key] ? 'include' : 'exclude', { onchange: ev => { o[key] = ev.target.value === 'include'; stale(); } }));   // yes/no options shown as the same drop-down
   const tri = (label, key) => field(label, select([['include', 'include'], ['exclude', 'leave out']], o[key] === 'exclude' ? 'exclude' : 'include', { onchange: ev => { o[key] = ev.target.value; stale(); } }));
   const preset = select(Object.keys(presets), 'full', { onchange: ev => {
     o = Object.assign(JSON.parse(JSON.stringify(DEFAULT_EXPORT)), JSON.parse(JSON.stringify(presets[ev.target.value])));
@@ -389,11 +389,10 @@ export async function showExport() {
       h('div.hint', 'Regions the setting applies to (words and themes tagged with one of the ticked regions):'), h('div.chips', [...both, ...boxes]));
     lock();
     return h('div.form', {},
-      tri('Adult content', 'adult'), tri('Sensitive topics', 'sensitive'), tri('Trademark / copyright', 'tm'), tri('Vulgar words', 'vulgar'), tri('Language-specific themes', 'lang'),
+      h('div.two', {}, tri('Adult content', 'adult'), tri('Sensitive topics', 'sensitive'), tri('Trademark / copyright', 'tm'), tri('Vulgar words', 'vulgar'), tri('Language-specific themes', 'lang')),
       region,
-      h('div.flags', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Include unrated words', 'unrated'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes')),
-      h('div.three', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20)),
-      h('div.three', {}, num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));
+      h('div.two', {}, tick('Synonyms (couch / sofa)', 'synonyms'), tick('Spelling variants (color / colour)', 'spellings'), tick('Unrated words', 'unrated'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes'),
+        num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20), num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));
   };
   let form = build();
   let last = null;
