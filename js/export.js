@@ -4,12 +4,12 @@
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, effRec, linkIds, POS, TYPES } from './model.js';
+import { eff, effRec, linkIds, POS, TYPES, REGIONS } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 
 export const DEFAULT_EXPORT = {
   adult: 'include', sensitive: 'include', tm: 'include', vulgar: 'include', lang: 'include',
-  region: { mode: 'all', codes: [] },              // 'all' | 'exclude' | 'only', with codes ([] = any region-specific)
+  region: { mode: 'all', codes: [...REGIONS], v: 2 }, // 'all' | 'exclude'; codes = the regions the setting applies to (none ticked = nothing is left out)
   synonyms: true, spellings: true,                  // include aliases of each kind
   zipf: false, gloss: false, notes: false,
   recMin: 1, recMax: 5, unrated: true, minWords: 4,
@@ -19,16 +19,18 @@ export const PRESETS = {
   'full': {},
   'family': { adult: 'exclude', sensitive: 'exclude', vulgar: 'exclude' },
   'family, no trademarks': { adult: 'exclude', sensitive: 'exclude', vulgar: 'exclude', tm: 'exclude' },
-  'english spelling only, no regional words': { region: { mode: 'exclude', codes: [] } },
+  'english spelling only, no regional words': { region: { mode: 'exclude', codes: [...REGIONS], v: 2 } },
   'no variants': { synonyms: false, spellings: false },
 };
 
 const pass = (mode, flagged) => mode === 'include' || (mode === 'exclude' ? !flagged : flagged);
 const regionPass = (r, regions) => {
   if (r.mode === 'all') return true;
-  const hit = r.codes.length ? regions.some(c => r.codes.includes(c)) : regions.length > 0;
+  const hit = regions.some(c => r.codes.includes(c));
   return r.mode === 'exclude' ? !hit : hit;
 };
+// Presets saved before version 2 used an empty list to mean every region.
+export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r.codes : [...REGIONS], v: 2 });
 
 // Bit layouts, written into the file so the reader does not have to guess.
 export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32 };
@@ -36,6 +38,7 @@ export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spe
 
 export function buildExport(P, opt0 = {}) {
   const o = Object.assign({}, DEFAULT_EXPORT, opt0);
+  o.region = fixRegion(o.region);
   const report = { themesIn: 0, themesOut: 0, entriesIn: 0, entriesOut: 0, droppedThin: [], notes: [] };
   const ix = P.ix;
 

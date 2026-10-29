@@ -6,7 +6,7 @@ import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, ALIAS_KINDS, STATUS, STATUS_H
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
-import { buildExport, DEFAULT_EXPORT, PRESETS, sizeOf } from './export.js';
+import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf } from './export.js';
 import { download } from './store.js';
 import { MODELS, getKey, setKey, getModel, setModel, generateWords, rateThemes, SPREADS } from './ai.js';
 
@@ -371,21 +371,25 @@ export async function showExport() {
   const stale = () => { info.textContent = 'Press Preview to update.'; };
   const num = (key, label, min, max) => field(label, h('input', { type: 'number', min, max, value: o[key], onchange: ev => { o[key] = +ev.target.value; stale(); } }));
   const tick = (label, key) => check(label, o[key], { onchange: ev => { o[key] = ev.target.checked; stale(); } });
-  const inc = (label, key) => check(label, o[key] !== 'exclude', { onchange: ev => { o[key] = ev.target.checked ? 'include' : 'exclude'; stale(); } });   // flag filters: ticked = include, unticked = leave out
+  const tri = (label, key) => field(label, select([['include', 'include'], ['exclude', 'leave out']], o[key] === 'exclude' ? 'exclude' : 'include', { onchange: ev => { o[key] = ev.target.value; stale(); } }));
   const preset = select(Object.keys(presets), 'full', { onchange: ev => {
     o = Object.assign(JSON.parse(JSON.stringify(DEFAULT_EXPORT)), JSON.parse(JSON.stringify(presets[ev.target.value])));
     form.replaceWith(form = build()); stale();
   } });
   const build = () => {
-    if (o.region.mode === 'only') o.region.mode = 'all';   // old presets
-    const boxes = REGIONS.map(c => check(c, o.region.codes.includes(c), { onchange: () => { o.region.codes = boxes.filter(b => b.querySelector('input').checked).map(b => b.textContent.trim()); stale(); } }));
-    const lock = () => boxes.forEach(b => { b.querySelector('input').disabled = o.region.mode === 'all'; });
-    const region = h('div.regionbox', {},
-      check('Include region-specific words and themes', o.region.mode === 'all', { onchange: ev => { o.region.mode = ev.target.checked ? 'all' : 'exclude'; lock(); stale(); } }),
-      h('div.hint', 'If unticked, leave out the ones tagged with these regions (none ticked = every region):'), h('div.chips', boxes));
+    o.region = fixRegion(o.region);
+    if (o.region.mode === 'only') o.region.mode = 'all';
+    const boxes = REGIONS.map(c => check(c, o.region.codes.includes(c), { onchange: () => set() }));
+    const set = () => { o.region.codes = boxes.filter(b => b.querySelector('input').checked).map(b => b.textContent.trim()); stale(); };
+    const all = on => { boxes.forEach(b => { b.querySelector('input').checked = on; }); set(); };
+    const lock = () => { const off = o.region.mode === 'all'; boxes.forEach(b => { b.querySelector('input').disabled = off; }); both.forEach(b => { b.disabled = off; }); };
+    const both = [h('button.link', { type: 'button', onclick: () => all(true) }, 'all'), h('button.link', { type: 'button', onclick: () => all(false) }, 'none')];
+    const mode = select([['all', 'include'], ['exclude', 'leave out']], o.region.mode, { onchange: ev => { o.region.mode = ev.target.value; lock(); stale(); } });
+    const region = h('div.regionbox', {}, field('Region-specific words and themes', mode),
+      h('div.hint', 'Regions the setting applies to (words and themes tagged with one of the ticked regions):'), h('div.chips', [...both, ...boxes]));
     lock();
     return h('div.form', {},
-      h('div.flags', {}, inc('Include adult content', 'adult'), inc('Include sensitive topics', 'sensitive'), inc('Include trademark / copyright', 'tm'), inc('Include vulgar words', 'vulgar'), inc('Include language-specific themes', 'lang')),
+      tri('Adult content', 'adult'), tri('Sensitive topics', 'sensitive'), tri('Trademark / copyright', 'tm'), tri('Vulgar words', 'vulgar'), tri('Language-specific themes', 'lang'),
       region,
       h('div.flags', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Include unrated words', 'unrated'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes')),
       h('div.three', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20)),
