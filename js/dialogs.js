@@ -367,24 +367,30 @@ export async function showExport() {
   const P = A.P;
   const presets = { ...PRESETS, ...(P.settings.exportPresets || {}) };
   let o = JSON.parse(JSON.stringify(DEFAULT_EXPORT));
-  const tri = (label, key) => field(label, select([['include', 'include'], ['exclude', 'leave out']], o[key], { onchange: ev => { o[key] = ev.target.value; stale(); } }));
   const info = h('div.exportinfo', 'Press Preview to see the counts and size.');
   const stale = () => { info.textContent = 'Press Preview to update.'; };
-  const regionBoxes = REGIONS.map(c => check(c, o.region.codes.includes(c), { onchange: () => { o.region.codes = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.textContent.trim()); stale(); } }));
-  const regionMode = select([['all', 'everything'], ['exclude', 'leave out region-specific'], ['only', 'only region-specific']], o.region.mode, { onchange: ev => { o.region.mode = ev.target.value; stale(); } });
   const num = (key, label, min, max) => field(label, h('input', { type: 'number', min, max, value: o[key], onchange: ev => { o[key] = +ev.target.value; stale(); } }));
   const tick = (label, key) => check(label, o[key], { onchange: ev => { o[key] = ev.target.checked; stale(); } });
+  const inc = (label, key) => check(label, o[key] !== 'exclude', { onchange: ev => { o[key] = ev.target.checked ? 'include' : 'exclude'; stale(); } });   // flag filters: ticked = include, unticked = leave out
   const preset = select(Object.keys(presets), 'full', { onchange: ev => {
     o = Object.assign(JSON.parse(JSON.stringify(DEFAULT_EXPORT)), JSON.parse(JSON.stringify(presets[ev.target.value])));
     form.replaceWith(form = build()); stale();
   } });
-  const build = () => h('div.form', {},
-    h('div.three', {}, tri('Adult content', 'adult'), tri('Sensitive topics', 'sensitive'), tri('Trademark / copyright', 'tm')),
-    h('div.three', {}, tri('Vulgar words', 'vulgar'), tri('Language-specific themes', 'lang'), field('Region-specific', regionMode)),
-    field('Regions (empty = any)', h('div.chips', regionBoxes)),
-    h('div.flags', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes'), tick('Include unrated words', 'unrated')),
-    h('div.three', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20)),
-    h('div.three', {}, num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));
+  const build = () => {
+    if (o.region.mode === 'only') o.region.mode = 'all';   // old presets
+    const boxes = REGIONS.map(c => check(c, o.region.codes.includes(c), { onchange: () => { o.region.codes = boxes.filter(b => b.querySelector('input').checked).map(b => b.textContent.trim()); stale(); } }));
+    const lock = () => boxes.forEach(b => { b.querySelector('input').disabled = o.region.mode === 'all'; });
+    const region = h('div.regionbox', {},
+      check('Include region-specific words and themes', o.region.mode === 'all', { onchange: ev => { o.region.mode = ev.target.checked ? 'all' : 'exclude'; lock(); stale(); } }),
+      h('div.hint', 'If unticked, leave out the ones tagged with these regions (none ticked = every region):'), h('div.chips', boxes));
+    lock();
+    return h('div.form', {},
+      h('div.flags', {}, inc('Include adult content', 'adult'), inc('Include sensitive topics', 'sensitive'), inc('Include trademark / copyright', 'tm'), inc('Include vulgar words', 'vulgar'), inc('Include language-specific themes', 'lang')),
+      region,
+      h('div.flags', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Include unrated words', 'unrated'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes')),
+      h('div.three', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20)),
+      h('div.three', {}, num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));
+  };
   let form = build();
   let last = null;
   const run = async () => {

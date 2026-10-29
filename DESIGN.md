@@ -128,7 +128,7 @@ Filters, each applied **per link** (a link is flagged when the entry, its theme,
 - longest entry in words (`maxEntryWords`, 0 = no limit): entries with more words are left out, aliases included;
 
 - adult, sensitive, trademark, vulgar, language-specific: **include / leave out** (the export code still understands "only", the screen does not offer it);
-- region-specific: everything / leave out / only, optionally for listed regions;
+- region-specific: one tick-box "include region-specific words and themes"; when unticked, the region boxes below it say which regions to leave out (none ticked = every region). The flag filters are tick-boxes too (ticked = include);
 - include synonyms, include spelling variants (on/off);
 - rating range and "include unrated";
 - minimum words per theme.
