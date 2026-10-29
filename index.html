@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wordlist Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <button id="btn-home" class="brand" title="Overview">Wordlist builder <small id="version"></small></button>
+  <span id="lib" class="hint"></span>
+  <span class="grow"></span>
+  <span id="save" class="hint"></span>
+  <details id="filemenu" class="menu"><summary>File ▾</summary><div class="mpop"></div></details>
+  <button id="btn-checks">Checks</button>
+  <button id="btn-export">Export…</button>
+  <button id="btn-settings">Settings</button>
+</header>
+<div id="layout">
+  <aside>
+    <div class="side-top">
+      <input id="search" type="search" placeholder="Search themes and words" autocomplete="off">
+      <button id="btn-newtheme" title="New theme (inside the selected group)">+ Theme</button>
+    </div>
+    <div id="tree"></div>
+  </aside>
+  <main id="main"></main>
+</div>
+<div id="toast"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
