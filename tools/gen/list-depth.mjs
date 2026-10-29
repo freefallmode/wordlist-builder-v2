@@ -1,6 +1,6 @@
 // Lists the playable (non-group) themes at tree depth 3 under a root, in chunks, for writing a word batch.
 // Run: node tools/gen/list-depth.mjs                  chunk counts per root
-//      node tools/gen/list-depth.mjs <rootId> <n>     chunk n (1-based) of that root, with each theme's path, notes, flags, sub-themes and the words it already has
+//      node tools/gen/list-depth.mjs <rootId> <n> [rest]     chunk n (with rest: the still-empty themes instead of depth 3) (1-based) of that root, with each theme's path, notes, flags, sub-themes and the words it already has
 import fs from 'node:fs';
 import { parseProject } from '../../js/store.js';
 import { reindex } from '../../js/model.js';
@@ -9,8 +9,10 @@ reindex(P);
 const SIZE = 30;
 const depth = t => { let d = 1, x = t; while (x.parent) { x = P.ix.theme.get(x.parent); d++; } return d; };
 const under = rootId => P.themes.filter(t => { let x = t; while (x.parent) x = P.ix.theme.get(x.parent); return x.id === rootId; });
-const chunksOf = rootId => { const l = under(rootId).filter(t => depth(t) === 3 && !t.group); return Array.from({ length: Math.ceil(l.length / SIZE) }, (_, i) => l.slice(i * SIZE, (i + 1) * SIZE)); };
-const [root, n] = process.argv.slice(2);
+const [root, n, mode] = process.argv.slice(2);
+const words = new Map(); for (const e of P.entries) if (!e.aliasOf) for (const t of Object.keys(e.th)) words.set(t, (words.get(t) || 0) + 1);
+// mode 'rest': every playable theme of the root still holding fewer than 4 words (depth 4 and deeper, plus strays), instead of the depth-3 themes
+const chunksOf = rootId => { const l = under(rootId).filter(t => !t.group && (mode === 'rest' ? (words.get(t.id) || 0) < 4 : depth(t) === 3)); return Array.from({ length: Math.ceil(l.length / SIZE) }, (_, i) => l.slice(i * SIZE, (i + 1) * SIZE)); };
 if (!root) { for (const r of P.ix.kids.get('')) console.log(r.id.padEnd(22), chunksOf(r.id).length, 'chunks'); process.exit(); }
 const chunk = chunksOf(root)[n - 1];
 if (!chunk) throw Error('no such chunk');

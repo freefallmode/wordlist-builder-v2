@@ -1,0 +1,10 @@
+# Brief: add back words that an earlier batch skipped
+
+Read `tools/gen/BRIEF-depth3.md` first: it explains the batch module format (`DATA`, `THEMES` unnecessary here, `FIXES`) and the clash rules. Earlier batches for your roots followed an OLD rule that skipped a word whenever its text already existed as another meaning. The library has since been reconciled (every shared text now has meaning labels), so those words can now be added properly.
+
+Your job: for the SEED WORDS given in your task (plus any other well-known members of those roots' themes you notice are missing for the same reason), add them to the right themes as their own correctly labelled entries.
+1. Look each up: `node tools/gen/find-word.mjs word1 word2 ...` (prints existing entries with label, type and themes). Find the theme the skipped word belongs in (the themes of the root named in the seed list; `node tools/gen/list-depth.mjs <root> <n>` lists themes; `grep` theme ids in data/wordlist-en.project.json if needed).
+2. If an entry with the same meaning already exists, reuse its exact text and label (`['text', rec, inRec, {g: 'label'}]`), which only links it. If the meaning is new, add a row with its own short label. If the only existing entry is unlabelled and has the wrong/other meaning, label it via `FIXES` `{gloss: [text, aThemeItIsIn, 'label']}`, or `{split: ...}` as described in the brief.
+3. Put rows in `DATA = { theme_id: [[text, rec, inRec, opts], ...] }`. Set flags, type, ratings honestly (rec = how well known the word is, inRec = how readily a player places it in this theme).
+4. Export `DATA` and `FIXES` from `tools/gen/r-<name>.mjs` (name given in your task). Test: `cp data/wordlist-en.project.json tools/gen/.scratch-r-<name>.json; node tools/apply-words.mjs tools/gen/r-<name>.mjs tools/gen/.scratch-r-<name>.json`, fix every error and warning about your rows, delete the scratch file. Never edit the real library, js/, or other agents' files; do not commit.
+Report in under 80 words: number of rows, words you could not place and why.

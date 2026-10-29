@@ -1,0 +1,123 @@
+// Repair batch: sports words skipped earlier because their text already existed as another meaning.
+export const FIXES = [
+  { gloss: ['red', 'colors', 'color'] },
+  { gloss: ['yellow', 'colors', 'color'] },
+  { gloss: ['blue', 'colors', 'color'] },
+  { gloss: ['pink', 'colors', 'color'] },
+  { gloss: ['brown', 'colors', 'color'] },
+  { gloss: ['eagle', 'birds', 'bird'] },
+  { gloss: ['albatross', 'birds', 'bird'] },
+  { gloss: ['crab', 'crustaceans', 'animal'] },
+  { gloss: ['nutmeg', 'spices', 'spice'] },
+  { gloss: ['bagel', 'breads', 'bread'] },
+  { gloss: ['hammer', 'hand_tools', 'tool'] },
+  { gloss: ['hole', 'homophones', 'opening'] },
+  { gloss: ['bunker', 'military', 'shelter'] },
+  { gloss: ['slice', 'ways_to_cut_food', 'cut'] },
+  { gloss: ['save', 'things_you_do_with_money', 'money'] },
+  { gloss: ['seam', 'sewing_words', 'stitching'] },
+  { gloss: ['gully', 'erosion_words', 'channel'] },
+  { gloss: ['cover', 'parts_of_a_book', 'book'] },
+  { gloss: ['glance', 'sight_words', 'look'] },
+  { gloss: ['cox', 'apple_varieties', 'apple'] },
+  { split: ['treble', 'darts_terms', 'darts'] },
+];
+
+export const DATA = {
+  cue_sports_terms: [
+    ['red', 1, 1, { g: 'snooker' }],
+    ['yellow', 1, 2, { g: 'snooker' }],
+    ['green', 1, 2, { g: 'snooker' }],
+    ['brown', 1, 2, { g: 'snooker' }],
+    ['blue', 1, 2, { g: 'snooker' }],
+    ['pink', 1, 2, { g: 'snooker' }],
+    ['black', 1, 2, { g: 'snooker' }],
+  ],
+  golf_terms: [
+    ['eagle', 2, 1, { g: 'golf' }],
+    ['albatross', 2, 2, { g: 'golf' }],
+    ['clubs', 1, 1, { g: 'golf' }],
+    ['green', 1, 1, { g: 'golf' }],
+    ['tee', 1, 1, { g: 'golf' }],
+  ],
+  golf_course_features: [
+    ['tee', 1, 1, { g: 'golf' }],
+    ['green', 1, 1, { g: 'golf' }],
+    ['hole', 1, 2, { g: 'golf' }],
+    ['bunker', 2, 2, { g: 'golf' }],
+    ['hazard', 2, 3, { g: 'golf' }],
+    ['fairway', 2, 2],
+    ['rough', 2, 2, { g: 'golf' }],
+    ['dogleg', 3, 3],
+  ],
+  golf_shots: [
+    ['draw', 2, 4, { g: 'golf' }],
+    ['fade', 3, 4, { g: 'golf' }],
+    ['slice', 2, 2, { g: 'golf' }],
+    ['hook', 2, 2, { g: 'golf' }],
+    ['chip', 2, 2, { g: 'golf' }],
+    ['putt', 2, 1],
+    ['drive', 2, 2, { g: 'golf' }],
+  ],
+  golf_clubs: [
+    ['driver', 2, 1, { g: 'golf' }],
+    ['iron', 1, 2, { g: 'golf' }],
+    ['wood', 1, 3, { g: 'golf' }],
+    ['wedge', 2, 2, { g: 'golf' }],
+    ['putter', 2, 1],
+    ['hybrid', 3, 3, { g: 'golf' }],
+    ['sand wedge', 3, 2],
+  ],
+  soccer_terms: [
+    ['nutmeg', 3, 2, { g: 'soccer' }],
+    ['cap', 2, 3, { g: 'soccer' }],
+    ['dummy', 3, 3, { g: 'soccer' }],
+    ['save', 1, 2, { g: 'soccer' }],
+    ['post', 1, 2, { g: 'soccer' }],
+    ['cross', 2, 2, { g: 'soccer' }],
+    ['pitch', 2, 2, { g: 'soccer' }],
+  ],
+  tennis_terms: [
+    ['bagel', 3, 4, { g: 'tennis' }],
+    ['slice', 2, 2, { g: 'tennis' }],
+  ],
+  swimming_strokes: [
+    ['butterfly', 1, 1, { g: 'swimming' }],
+  ],
+  rowing_words: [
+    ['crab', 1, 4, { g: 'rowing' }],
+    ['cox', 3, 2, { g: 'rowing' }],
+  ],
+  curling_words: [
+    ['house', 3, 2, { g: 'curling' }],
+    ['hammer', 3, 3, { g: 'curling' }],
+    ['button', 3, 3, { g: 'curling' }],
+    ['stone', 1, 2, { g: 'curling' }],
+  ],
+  field_events: [
+    ['hammer', 2, 2, { g: 'athletics' }],
+  ],
+  darts_terms: [
+    ['bull', 1, 1, { g: 'darts' }],
+  ],
+  cricket_terms: [
+    ['duck', 1, 1, { g: 'cricket' }],
+    ['cut', 2, 3, { g: 'cricket' }],
+    ['pull', 2, 3, { g: 'cricket' }],
+    ['glance', 3, 4, { g: 'cricket' }],
+    ['seam', 3, 3, { g: 'cricket' }],
+  ],
+  cricket_fielding_positions: [
+    ['gully', 3, 2, { g: 'cricket' }],
+    ['slip', 2, 2, { g: 'cricket' }],
+    ['point', 2, 3, { g: 'cricket' }],
+    ['cover', 3, 3, { g: 'cricket' }],
+  ],
+};
+
+export const THEMES = {
+  golf_course_features: { d: 2 },
+  golf_shots: { d: 3 },
+  golf_clubs: { d: 2 },
+  cricket_fielding_positions: { d: 3 },
+};
