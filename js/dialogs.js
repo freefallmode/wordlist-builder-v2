@@ -367,7 +367,7 @@ export async function showExport() {
   const P = A.P;
   const presets = { ...PRESETS, ...(P.settings.exportPresets || {}) };
   let o = JSON.parse(JSON.stringify(DEFAULT_EXPORT));
-  const tri = (label, key) => field(label, select([['include', 'include'], ['exclude', 'leave out'], ['only', 'only these']], o[key], { onchange: ev => { o[key] = ev.target.value; stale(); } }));
+  const tri = (label, key) => field(label, select([['include', 'include'], ['exclude', 'leave out']], o[key], { onchange: ev => { o[key] = ev.target.value; stale(); } }));
   const info = h('div.exportinfo', 'Press Preview to see the counts and size.');
   const stale = () => { info.textContent = 'Press Preview to update.'; };
   const regionBoxes = REGIONS.map(c => check(c, o.region.codes.includes(c), { onchange: () => { o.region.codes = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.textContent.trim()); stale(); } }));

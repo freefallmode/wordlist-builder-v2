@@ -127,7 +127,7 @@ Filters, each applied **per link** (a link is flagged when the entry, its theme,
 - region-specific filter: judged on root words only; an alias (synonym or spelling variant) is kept or dropped with its root and its own region tag is ignored (its tag is still written to the file);
 - longest entry in words (`maxEntryWords`, 0 = no limit): entries with more words are left out, aliases included;
 
-- adult, sensitive, trademark, vulgar, language-specific: **include / leave out / only**;
+- adult, sensitive, trademark, vulgar, language-specific: **include / leave out** (the export code still understands "only", the screen does not offer it);
 - region-specific: everything / leave out / only, optionally for listed regions;
 - include synonyms, include spelling variants (on/off);
 - rating range and "include unrated";
