@@ -138,3 +138,4 @@ th.sortable.sorted { background: var(--sel); text-decoration: none; } th.sortabl
 table.aw th:nth-child(1) { width: 28px; } table.aw th:nth-child(2) { width: 150px; } table.aw th:nth-child(3) { width: 130px; } table.aw th:nth-child(4) { width: 48px; }
 table.aw th:nth-child(5) { width: 84px; } table.aw th:nth-child(6) { width: 76px; } table.aw th:nth-child(7) { width: 84px; } table.aw th:nth-child(8) { width: 130px; }
 table.aw th:nth-child(10) { width: 80px; } table.aw td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, aliases are not grouped under their root here */
