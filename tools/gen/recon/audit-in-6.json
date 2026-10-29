@@ -1,2273 +1,1095 @@
 [
  {
-  "id": 30678,
-  "text": "coir",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "fiber plants [fiber_plants] (nature_earth)",
-   "natural materials [natural_materials] (qualities)"
-  ]
- },
- {
-  "id": 19852,
-  "text": "colander",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "kitchen utensils [kitchen_utensils] (food_drink)",
-   "kitchen [kitchen] (home_everyday)",
-   "things with holes [things_with_holes] (qualities)"
-  ]
- },
- {
-  "id": 16576,
-  "text": "cold room",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "turkish bath [turkish_bath] (body_health)",
-   "butcher shop [butcher_shop] (food_drink)"
-  ]
- },
- {
-  "id": 1261,
-  "text": "coley",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "fish [fish] (animals)",
-   "sea fish [sea_fish] (animals)",
-   "fish to eat [fish_to_eat] (food_drink)"
-  ]
- },
- {
-  "id": 6310,
-  "text": "collage",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "art [art] (arts_entertainment)",
-   "paper crafts [paper_crafts] (sports_games)"
-  ]
- },
- {
-  "id": 17457,
-  "text": "collard greens",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "leafy greens [leafy_greens] (food_drink)",
-   "cabbage family [cabbage_family] (food_drink)",
-   "north american food [north_american_food] (food_drink)",
-   "bitter foods [bitter_foods] (qualities)"
-  ]
- },
- {
-  "id": 8462,
-  "text": "collared dove",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "pigeons and doves [pigeons_and_doves] (animals)",
-   "garden birds [garden_birds] (nature_earth)"
-  ]
- },
- {
-  "id": 3741,
-  "text": "cologne",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "personal care [personal_care] (body_health)",
-   "european cities [european_cities] (places_geography)",
-   "toiletries [toiletries] (travel_transport)"
-  ]
- },
- {
-  "id": 12691,
-  "text": "colorist",
+  "id": 34482,
+  "text": "thangka",
   "type": "common",
   "rec": 5,
   "themes": [
-   "behind the camera [behind_the_camera] (arts_entertainment)",
-   "comic book words [comic_book_words] (arts_entertainment)",
-   "beauty jobs [beauty_jobs] (people_society)"
+   "buddhism words [buddhism_words] (people_society)",
+   "asian art forms [asian_art_forms] (arts_entertainment)"
   ]
  },
  {
-  "id": 2320,
-  "text": "Colosseum",
-  "type": "place",
-  "rec": 1,
-  "themes": [
-   "landmarks [landmarks] (places_geography)",
-   "ancient civilizations [ancient_civilizations] (history_myth)",
-   "ancient rome [ancient_rome] (history_myth)",
-   "famous buildings [famous_buildings] (places_geography)",
-   "ancient wonders [ancient_wonders] (places_geography)",
-   "huge things [huge_things] (qualities)"
-  ]
- },
- {
-  "id": 24656,
-  "text": "combat boots",
-  "type": "common",
+  "id": 40154,
+  "text": "Thanos",
+  "type": "proper",
   "rec": 2,
   "themes": [
-   "boots [boots] (home_everyday)",
-   "army words [army_words] (people_society)"
+   "purple things [purple_things] (qualities)",
+   "supervillains [supervillains] (arts_entertainment)"
   ]
  },
  {
-  "id": 3132,
-  "text": "combine harvester",
-  "type": "common",
+  "id": 42199,
+  "text": "Theodore Roosevelt",
+  "type": "person",
   "rec": 2,
   "themes": [
-   "special vehicles [special_vehicles] (travel_transport)",
-   "farm [farm] (places_geography)",
-   "farm vehicles [farm_vehicles] (travel_transport)"
+   "nobel laureates [nobel_laureates] (science_tech)",
+   "mount rushmore presidents [mount_rushmore_presidents] (history_myth)"
   ]
  },
  {
-  "id": 39911,
-  "text": "combustion",
+  "id": 53973,
+  "text": "Theophrastus",
+  "type": "person",
+  "rec": 5,
+  "themes": [
+   "greek philosophers [greek_philosophers] (history_myth)",
+   "ancient greek thinkers [ancient_greek_thinkers] (science_tech)"
+  ]
+ },
+ {
+  "id": 39860,
+  "text": "three-toed sloth",
   "type": "common",
   "rec": 4,
   "themes": [
-   "fire words [fire_words] (qualities)",
-   "chemical reactions [chemical_reactions] (science_tech)"
+   "slow things [slow_things] (qualities)",
+   "amazon animals [amazon_animals] (animals)"
   ]
  },
  {
-  "id": 7113,
-  "text": "comet",
+  "id": 3207,
+  "text": "throat",
   "type": "common",
   "rec": 1,
   "themes": [
-   "space [space] (science_tech)",
-   "fast things [fast_things] (qualities)",
-   "things with tails [things_with_tails] (qualities)",
-   "space rocks [space_rocks] (science_tech)"
+   "body parts [body_parts] (body_health)",
+   "animal body parts [animal_body_parts] (animals)",
+   "bird body parts [bird_body_parts] (animals)"
   ]
  },
  {
-  "id": 12698,
-  "text": "comic strip",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "cartoon words [cartoon_words] (arts_entertainment)",
-   "comic book words [comic_book_words] (arts_entertainment)",
-   "newspaper words [newspaper_words] (people_society)"
-  ]
- },
- {
-  "id": 2931,
-  "text": "commute",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "journeys [journeys] (travel_transport)",
-   "workplace words [workplace_words] (people_society)",
-   "traffic words [traffic_words] (places_geography)",
-   "commuting words [commuting_words] (travel_transport)",
-   "travel verbs [travel_verbs] (travel_transport)"
-  ]
- },
- {
-  "id": 23318,
-  "text": "compact mirror",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "in a handbag [in_a_handbag] (home_everyday)",
-   "things that reflect [things_that_reflect] (qualities)"
-  ]
- },
- {
-  "id": 23997,
-  "text": "compactor",
+  "id": 49917,
+  "text": "Tiangong",
   "type": "common",
   "rec": 4,
   "themes": [
-   "bins and recycling [bins_and_recycling] (home_everyday)",
-   "construction vehicles [construction_vehicles] (travel_transport)"
+   "space station [space_station] (science_tech)",
+   "space vehicles [space_vehicles] (travel_transport)"
   ]
  },
  {
-  "id": 21021,
-  "text": "compass rose",
+  "id": 19360,
+  "text": "tibs",
   "type": "common",
-  "rec": 3,
+  "rec": 5,
   "themes": [
-   "navigation tools [navigation_tools] (history_myth)",
-   "map words [map_words] (places_geography)"
+   "african food [african_food] (food_drink)",
+   "east african food [east_african_food] (food_drink)",
+   "spicy dishes of africa [spicy_dishes_of_africa] (qualities)"
   ]
  },
  {
-  "id": 6142,
-  "text": "composer",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "musicians [musicians] (arts_entertainment)",
-   "behind the camera [behind_the_camera] (arts_entertainment)",
-   "arts jobs [arts_jobs] (people_society)"
-  ]
- },
- {
-  "id": 1836,
-  "text": "compost",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "garden [garden] (nature_earth)",
-   "bins and recycling [bins_and_recycling] (home_everyday)",
-   "gardening verbs [gardening_verbs] (nature_earth)",
-   "soil words [soil_words] (nature_earth)",
-   "recycling words [recycling_words] (nature_earth)",
-   "things that smell bad [things_that_smell_bad] (qualities)"
-  ]
- },
- {
-  "id": 1864,
-  "text": "compost bin",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "garden [garden] (nature_earth)",
-   "bins and recycling [bins_and_recycling] (home_everyday)"
-  ]
- },
- {
-  "id": 24580,
-  "text": "compression socks",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "socks and hosiery [socks_and_hosiery] (home_everyday)",
-   "sports clothing [sports_clothing] (sports_games)",
-   "travel accessories [travel_accessories] (travel_transport)"
-  ]
- },
- {
-  "id": 7250,
-  "text": "computer",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "computers [computers] (science_tech)",
-   "home office [home_office] (home_everyday)",
-   "things with keys [things_with_keys] (qualities)",
-   "things with screens [things_with_screens] (qualities)"
-  ]
- },
- {
-  "id": 10653,
-  "text": "concertina",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "folk instruments [folk_instruments] (arts_entertainment)",
-   "things that fold [things_that_fold] (qualities)"
-  ]
- },
- {
-  "id": 12801,
-  "text": "concession stand",
+  "id": 12812,
+  "text": "ticket stub",
   "type": "common",
   "rec": 2,
   "themes": [
    "movie theater words [movie_theater_words] (arts_entertainment)",
-   "shopping words [shopping_words] (people_society)"
+   "movie theater [movie_theater] (places_geography)"
   ]
  },
  {
-  "id": 1323,
-  "text": "conch",
+  "id": 39644,
+  "text": "ticking",
   "type": "common",
-  "rec": 3,
+  "rec": 2,
   "themes": [
-   "sea life [sea_life] (animals)",
-   "mollusks [mollusks] (animals)",
-   "animals with shells [animals_with_shells] (animals)",
-   "shellfish [shellfish] (food_drink)",
-   "foods with shells [foods_with_shells] (food_drink)",
-   "seashells [seashells] (nature_earth)",
-   "things with shells [things_with_shells] (qualities)"
+   "machine sounds [machine_sounds] (qualities)",
+   "cotton fabrics [cotton_fabrics] (home_everyday)"
   ]
  },
  {
-  "id": 33006,
-  "text": "concierge",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "service jobs [service_jobs] (people_society)",
-   "hotel staff [hotel_staff] (travel_transport)"
-  ]
- },
- {
-  "id": 7396,
-  "text": "concrete",
+  "id": 31144,
+  "text": "tide",
   "type": "common",
   "rec": 1,
   "themes": [
-   "engineering [engineering] (science_tech)",
-   "building materials [building_materials] (home_everyday)",
-   "shades of gray [shades_of_gray] (qualities)",
-   "man-made materials [man_made_materials] (qualities)",
-   "hard materials [hard_materials] (qualities)",
-   "rough things [rough_things] (qualities)",
-   "materials science [materials_science] (science_tech)"
+   "tides and currents [tides_and_currents] (nature_earth)",
+   "ocean [ocean] (nature_earth)",
+   "beach [beach] (places_geography)"
   ]
  },
  {
-  "id": 31990,
-  "text": "condensation",
+  "id": 39178,
+  "text": "tikka masala",
   "type": "common",
   "rec": 2,
   "themes": [
-   "water cycle words [water_cycle_words] (nature_earth)",
-   "things that drip [things_that_drip] (qualities)",
-   "states of matter [states_of_matter] (science_tech)"
+   "spicy foods [spicy_foods] (qualities)",
+   "indian food [indian_food] (food_drink)"
   ]
  },
  {
-  "id": 24152,
-  "text": "condo",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "house styles [house_styles] (home_everyday)",
-   "vacation homes [vacation_homes] (travel_transport)"
-  ]
- },
- {
-  "id": 1105,
-  "text": "condor",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "birds [birds] (animals)",
-   "birds of prey [birds_of_prey] (animals)",
-   "south american animals [south_american_animals] (animals)",
-   "mountain animals [mountain_animals] (animals)",
-   "scavengers [scavengers] (animals)",
-   "gliding animals [gliding_animals] (animals)",
-   "andes [andes] (nature_earth)",
-   "national animals [national_animals] (places_geography)"
-  ]
- },
- {
-  "id": 8888,
-  "text": "cone snail",
-  "type": "common",
+  "id": 37187,
+  "text": "Tintagel",
+  "type": "place",
   "rec": 4,
   "themes": [
-   "mollusks [mollusks] (animals)",
-   "venomous animals [venomous_animals] (animals)",
-   "things that sting [things_that_sting] (qualities)"
+   "famous castles [famous_castles] (places_geography)",
+   "arthurian legend [arthurian_legend] (history_myth)"
   ]
  },
  {
-  "id": 35139,
-  "text": "conference call",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "phone words [phone_words] (people_society)",
-   "phone features [phone_features] (science_tech)"
-  ]
- },
- {
-  "id": 13916,
-  "text": "confetti",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "brazilian carnival words [brazilian_carnival_words] (arts_entertainment)",
-   "new year [new_year] (home_everyday)",
-   "weddings [weddings] (home_everyday)",
-   "birthdays [birthdays] (home_everyday)"
-  ]
- },
- {
-  "id": 3964,
-  "text": "confidant",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "family and friends [family_and_friends] (people_society)",
-   "story roles [story_roles] (arts_entertainment)",
-   "words for friend [words_for_friend] (people_society)"
-  ]
- },
- {
-  "id": 15042,
-  "text": "congestion",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "symptoms [symptoms] (body_health)",
-   "traffic words [traffic_words] (places_geography)"
-  ]
- },
- {
-  "id": 2100,
-  "text": "conglomerate",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "rocks and minerals [rocks_and_minerals] (nature_earth)",
-   "rock types [rock_types] (nature_earth)",
-   "business words [business_words] (people_society)"
-  ]
- },
- {
-  "id": 5960,
-  "text": "conkers",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "toys and play [toys_and_play] (sports_games)",
-   "signs of autumn [signs_of_autumn] (nature_earth)"
-  ]
- },
- {
-  "id": 4444,
-  "text": "conscription",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "military [military] (people_society)",
-   "war words [war_words] (history_myth)"
-  ]
- },
- {
-  "id": 32259,
-  "text": "conservation",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "conservation words [conservation_words] (nature_earth)",
-   "ecology words [ecology_words] (science_tech)"
-  ]
- },
- {
-  "id": 6607,
-  "text": "conservatory",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "architecture [architecture] (arts_entertainment)",
-   "parts of a house [parts_of_a_house] (home_everyday)"
-  ]
- },
- {
-  "id": 20392,
-  "text": "consul",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "ancient rome [ancient_rome] (history_myth)",
-   "political titles [political_titles] (people_society)",
-   "diplomacy words [diplomacy_words] (people_society)"
-  ]
- },
- {
-  "id": 4154,
-  "text": "consultant",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "jobs [jobs] (people_society)",
-   "hospital words [hospital_words] (body_health)"
-  ]
- },
- {
-  "id": 39858,
-  "text": "continental drift",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "slow things [slow_things] (qualities)",
-   "famous discoveries [famous_discoveries] (science_tech)"
-  ]
- },
- {
-  "id": 38406,
-  "text": "contraflow",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "traffic words [traffic_words] (places_geography)",
-   "driving words [driving_words] (travel_transport)"
-  ]
- },
- {
-  "id": 11246,
-  "text": "control room",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "recording studio words [recording_studio_words] (arts_entertainment)",
-   "nuclear power plant [nuclear_power_plant] (science_tech)",
-   "observatory [observatory] (science_tech)"
-  ]
- },
- {
-  "id": 2733,
-  "text": "control tower",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "air travel [air_travel] (travel_transport)",
-   "towers and skyscrapers [towers_and_skyscrapers] (places_geography)",
-   "airport words [airport_words] (travel_transport)"
-  ]
- },
- {
-  "id": 10261,
-  "text": "convocation",
-  "type": "common",
+  "id": 22958,
+  "text": "Tintoretto",
+  "type": "person",
   "rec": 5,
   "themes": [
-   "collective nouns [collective_nouns] (animals)",
-   "graduation words [graduation_words] (people_society)"
+   "renaissance [renaissance] (history_myth)",
+   "renaissance painters [renaissance_painters] (arts_entertainment)"
   ]
  },
  {
-  "id": 4419,
-  "text": "convoy",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "military [military] (people_society)",
-   "road trip words [road_trip_words] (travel_transport)"
-  ]
- },
- {
-  "id": 32140,
-  "text": "Coober Pedy",
-  "type": "place",
-  "rec": 4,
-  "themes": [
-   "outback [outback] (nature_earth)",
-   "australian landmarks [australian_landmarks] (places_geography)"
-  ]
- },
- {
-  "id": 8499,
-  "text": "cooing",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "pigeons and doves [pigeons_and_doves] (animals)",
-   "baby milestones [baby_milestones] (body_health)"
-  ]
- },
- {
-  "id": 39338,
-  "text": "cool",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "words for good [words_for_good] (qualities)",
-   "words for cold [words_for_cold] (qualities)",
-   "temperature words [temperature_words] (science_tech)"
-  ]
- },
- {
-  "id": 3609,
-  "text": "cool-down",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "fitness [fitness] (body_health)",
-   "fitness words [fitness_words] (body_health)",
-   "swimming words [swimming_words] (sports_games)"
-  ]
- },
- {
-  "id": 3035,
-  "text": "cooler",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "campsite [campsite] (travel_transport)",
-   "picnic basket [picnic_basket] (food_drink)",
-   "things with lids [things_with_lids] (home_everyday)",
-   "cold things [cold_things] (qualities)",
-   "camping gear [camping_gear] (travel_transport)",
-   "beach gear [beach_gear] (travel_transport)"
-  ]
- },
- {
-  "id": 42237,
-  "text": "cooling fan",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "computer parts [computer_parts] (science_tech)",
-   "data center [data_center] (science_tech)",
-   "gaming hardware [gaming_hardware] (sports_games)"
-  ]
- },
- {
-  "id": 38276,
-  "text": "cooling tower",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "towers and skyscrapers [towers_and_skyscrapers] (places_geography)",
-   "things that drip [things_that_drip] (qualities)",
-   "nuclear words [nuclear_words] (science_tech)",
-   "nuclear power plant [nuclear_power_plant] (science_tech)"
-  ]
- },
- {
-  "id": 4844,
-  "text": "coping saw",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "tools [tools] (home_everyday)",
-   "hand tools [hand_tools] (home_everyday)",
-   "woodworking words [woodworking_words] (sports_games)"
-  ]
- },
- {
-  "id": 10107,
-  "text": "coprolite",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "dinosaur words [dinosaur_words] (animals)",
-   "fossils [fossils] (history_myth)"
-  ]
- },
- {
-  "id": 2819,
-  "text": "coracle",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "boats and ships [boats_and_ships] (travel_transport)",
-   "things that float [things_that_float] (qualities)",
-   "boat types [boat_types] (travel_transport)"
-  ]
- },
- {
-  "id": 23684,
-  "text": "cordless drill",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "power tools [power_tools] (home_everyday)",
-   "things that run on batteries [things_that_run_on_batteries] (qualities)"
-  ]
- },
- {
-  "id": 25785,
-  "text": "cordless phone",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "things with buttons [things_with_buttons] (home_everyday)",
-   "phone words [phone_words] (people_society)"
-  ]
- },
- {
-  "id": 15573,
-  "text": "cordyceps",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "chinese medicine [chinese_medicine] (body_health)",
-   "mushrooms [mushrooms] (food_drink)",
-   "fungi [fungi] (nature_earth)"
-  ]
- },
- {
-  "id": 20379,
-  "text": "Corinth",
-  "type": "place",
-  "rec": 3,
-  "themes": [
-   "ancient greece [ancient_greece] (history_myth)",
-   "ancient cities [ancient_cities] (places_geography)"
-  ]
- },
- {
-  "id": 36920,
-  "text": "Corinth Canal",
-  "type": "place",
-  "rec": 4,
-  "themes": [
-   "straits and canals [straits_and_canals] (places_geography)",
-   "greek landmarks [greek_landmarks] (places_geography)",
-   "famous canals [famous_canals] (travel_transport)"
-  ]
- },
- {
-  "id": 28014,
-  "text": "cork",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "things made from trees [things_made_from_trees] (nature_earth)",
-   "places that are also words [places_that_are_also_words] (places_geography)",
-   "natural materials [natural_materials] (qualities)",
-   "lightweight things [lightweight_things] (qualities)",
-   "things that float [things_that_float] (qualities)",
-   "things that pop [things_that_pop] (qualities)"
-  ]
- },
- {
-  "id": 20038,
-  "text": "corkage",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "restaurant words [restaurant_words] (food_drink)",
-   "restaurant [restaurant] (places_geography)"
-  ]
- },
- {
-  "id": 19854,
-  "text": "corkscrew",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "kitchen utensils [kitchen_utensils] (food_drink)",
-   "picnic basket [picnic_basket] (food_drink)",
-   "curves and spirals [curves_and_spirals] (qualities)",
-   "simple machines [simple_machines] (science_tech)"
-  ]
- },
- {
-  "id": 17869,
-  "text": "corn on the cob",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "barbecue foods [barbecue_foods] (food_drink)",
-   "fairground food [fairground_food] (food_drink)",
-   "thanksgiving [thanksgiving] (home_everyday)"
-  ]
- },
- {
-  "id": 17785,
-  "text": "corned beef",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "cured meats [cured_meats] (food_drink)",
-   "canned foods [canned_foods] (food_drink)",
-   "salty foods [salty_foods] (qualities)"
-  ]
- },
- {
-  "id": 1747,
-  "text": "cornflower",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "flowers [flowers] (nature_earth)",
-   "wildflowers [wildflowers] (nature_earth)",
-   "edible flowers [edible_flowers] (nature_earth)",
-   "meadow [meadow] (nature_earth)",
-   "national flowers [national_flowers] (places_geography)",
-   "colors named after flowers [colors_named_after_flowers] (qualities)",
-   "blue things [blue_things] (qualities)"
-  ]
- },
- {
-  "id": 18866,
-  "text": "cornichon",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "pickles and preserves [pickles_and_preserves] (food_drink)",
-   "sour foods [sour_foods] (qualities)"
-  ]
- },
- {
-  "id": 20665,
-  "text": "Cornwall",
-  "type": "place",
-  "rec": 2,
-  "themes": [
-   "celts [celts] (history_myth)",
-   "english counties [english_counties] (places_geography)",
-   "european holiday regions [european_holiday_regions] (places_geography)",
-   "flags with crosses [flags_with_crosses] (places_geography)"
-  ]
- },
- {
-  "id": 22749,
-  "text": "corroboree",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "aboriginal dreaming [aboriginal_dreaming] (history_myth)",
-   "aboriginal culture [aboriginal_culture] (people_society)"
-  ]
- },
- {
-  "id": 22967,
-  "text": "corset",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "victorian era [victorian_era] (history_myth)",
-   "underwear [underwear] (home_everyday)",
-   "things with strings [things_with_strings] (qualities)"
-  ]
- },
- {
-  "id": 2105,
-  "text": "corundum",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "rocks and minerals [rocks_and_minerals] (nature_earth)",
-   "minerals [minerals] (nature_earth)",
-   "hard materials [hard_materials] (qualities)"
-  ]
- },
- {
-  "id": 5919,
-  "text": "cosplay",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "hobbies and crafts [hobbies_and_crafts] (sports_games)",
-   "anime and manga words [anime_and_manga_words] (arts_entertainment)"
-  ]
- },
- {
-  "id": 36358,
-  "text": "Costa del Sol",
-  "type": "place",
-  "rec": 2,
-  "themes": [
-   "spanish regions [spanish_regions] (places_geography)",
-   "european holiday regions [european_holiday_regions] (places_geography)",
-   "spanish landmarks [spanish_landmarks] (places_geography)",
-   "beach destinations [beach_destinations] (travel_transport)"
-  ]
- },
- {
-  "id": 12247,
-  "text": "costume",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "theater words [theater_words] (arts_entertainment)",
-   "halloween [halloween] (home_everyday)"
-  ]
- },
- {
-  "id": 12310,
-  "text": "costume designer",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "theater jobs [theater_jobs] (arts_entertainment)",
-   "behind the camera [behind_the_camera] (arts_entertainment)",
-   "arts jobs [arts_jobs] (people_society)"
-  ]
- },
- {
-  "id": 10178,
-  "text": "cote",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "animal homes [animal_homes] (animals)",
-   "medieval clothing [medieval_clothing] (history_myth)"
-  ]
- },
- {
-  "id": 32154,
-  "text": "Cotopaxi",
-  "type": "place",
-  "rec": 4,
-  "themes": [
-   "andes [andes] (nature_earth)",
-   "south american landmarks [south_american_landmarks] (places_geography)"
-  ]
- },
- {
-  "id": 116,
-  "text": "cottage",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "buildings to live in [buildings_to_live_in] (places_geography)",
-   "buildings [buildings] (places_geography)",
-   "accommodation [accommodation] (travel_transport)",
-   "house styles [house_styles] (home_everyday)",
-   "vacation homes [vacation_homes] (travel_transport)"
-  ]
- },
- {
-  "id": 529,
-  "text": "cottage cheese",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "dairy and eggs [dairy_and_eggs] (food_drink)",
-   "healthy snacks [healthy_snacks] (body_health)",
-   "cheeses [cheeses] (food_drink)",
-   "in the fridge [in_the_fridge] (home_everyday)"
-  ]
- },
- {
-  "id": 23721,
-  "text": "cotter pin",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "fixings [fixings] (home_everyday)",
-   "machine parts [machine_parts] (science_tech)"
-  ]
- },
- {
-  "id": 5038,
-  "text": "cotton",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "fabrics and sewing [fabrics_and_sewing] (home_everyday)",
-   "fabrics [fabrics] (home_everyday)",
-   "fiber plants [fiber_plants] (nature_earth)",
-   "shades of white [shades_of_white] (qualities)",
-   "natural materials [natural_materials] (qualities)",
-   "candle scents [candle_scents] (qualities)",
-   "white things [white_things] (qualities)"
-  ]
- },
- {
-  "id": 628,
-  "text": "cotton candy",
+  "id": 624,
+  "text": "tiramisu",
   "type": "common",
   "rec": 2,
   "themes": [
    "desserts and sweets [desserts_and_sweets] (food_drink)",
-   "ice cream flavors [ice_cream_flavors] (food_drink)",
-   "candy [candy] (food_drink)",
-   "fairground food [fairground_food] (food_drink)",
-   "pastel colors [pastel_colors] (qualities)",
-   "soft things [soft_things] (qualities)",
-   "pink things [pink_things] (qualities)"
+   "cakes [cakes] (food_drink)",
+   "desserts of the world [desserts_of_the_world] (food_drink)",
+   "italian food [italian_food] (food_drink)",
+   "creamy foods [creamy_foods] (qualities)"
   ]
  },
  {
-  "id": 22923,
-  "text": "cotton gin",
+  "id": 18387,
+  "text": "Toblerone",
+  "type": "org",
+  "rec": 2,
+  "themes": [
+   "chocolates [chocolates] (food_drink)",
+   "triangular things [triangular_things] (qualities)"
+  ]
+ },
+ {
+  "id": 3181,
+  "text": "toe",
+  "type": "common",
+  "rec": 1,
+  "themes": [
+   "body parts [body_parts] (body_health)",
+   "hands and feet [hands_and_feet] (body_health)",
+   "animal body parts [animal_body_parts] (animals)",
+   "bird body parts [bird_body_parts] (animals)"
+  ]
+ },
+ {
+  "id": 23138,
+  "text": "toilet paper",
+  "type": "common",
+  "rec": 1,
+  "themes": [
+   "bathroom [bathroom] (home_everyday)",
+   "paper goods [paper_goods] (home_everyday)",
+   "things made of paper [things_made_of_paper] (qualities)",
+   "chinese inventions [chinese_inventions] (science_tech)"
+  ]
+ },
+ {
+  "id": 18936,
+  "text": "tom yum",
   "type": "common",
   "rec": 3,
   "themes": [
-   "industrial revolution [industrial_revolution] (history_myth)",
-   "inventions [inventions] (science_tech)"
+   "soups [soups] (food_drink)",
+   "thai food [thai_food] (food_drink)",
+   "spicy dishes of asia [spicy_dishes_of_asia] (qualities)"
   ]
  },
  {
-  "id": 30713,
-  "text": "cotyledon",
-  "type": "common",
-  "rec": 5,
-  "themes": [
-   "seeds and pips [seeds_and_pips] (nature_earth)",
-   "plant biology [plant_biology] (science_tech)"
-  ]
- },
- {
-  "id": 3651,
-  "text": "couch potato",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "fitness [fitness] (body_health)",
-   "tv words [tv_words] (arts_entertainment)"
-  ]
- },
- {
-  "id": 14873,
-  "text": "cough",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "common illnesses [common_illnesses] (body_health)",
-   "symptoms [symptoms] (body_health)",
-   "body noises [body_noises] (body_health)",
-   "voice sounds [voice_sounds] (qualities)"
-  ]
- },
- {
-  "id": 15332,
-  "text": "cough syrup",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "pharmacy [pharmacy] (body_health)",
-   "cold and flu remedies [cold_and_flu_remedies] (body_health)",
-   "medicine cabinet [medicine_cabinet] (home_everyday)"
-  ]
- },
- {
-  "id": 30858,
-  "text": "couloir",
-  "type": "common",
-  "rec": 5,
-  "themes": [
-   "mountain features [mountain_features] (nature_earth)",
-   "mountains [mountains] (nature_earth)",
-   "skiing words [skiing_words] (sports_games)",
-   "mountaineering words [mountaineering_words] (sports_games)"
-  ]
- },
- {
-  "id": 24131,
-  "text": "countersink",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "diy words [diy_words] (home_everyday)",
-   "woodworking words [woodworking_words] (sports_games)"
-  ]
- },
- {
-  "id": 23299,
-  "text": "coupon",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "in a wallet [in_a_wallet] (home_everyday)",
-   "shopping words [shopping_words] (people_society)",
-   "advertising words [advertising_words] (people_society)",
-   "supermarket [supermarket] (places_geography)"
-  ]
- },
- {
-  "id": 664,
-  "text": "couscous",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "pasta, rice and grains [pasta_rice_and_grains] (food_drink)",
-   "middle eastern food [middle_eastern_food] (food_drink)",
-   "african food [african_food] (food_drink)",
-   "in the pantry [in_the_pantry] (food_drink)",
-   "national dishes [national_dishes] (places_geography)"
-  ]
- },
- {
-  "id": 13880,
-  "text": "cover charge",
+  "id": 15196,
+  "text": "tongue depressor",
   "type": "common",
   "rec": 3,
   "themes": [
-   "nightclub words [nightclub_words] (arts_entertainment)",
-   "restaurant words [restaurant_words] (food_drink)",
-   "restaurant [restaurant] (places_geography)"
+   "medical equipment [medical_equipment] (body_health)",
+   "doctor's office [doctor_s_office] (body_health)",
+   "things made of wood [things_made_of_wood] (qualities)"
   ]
  },
  {
-  "id": 23013,
-  "text": "covered wagon",
+  "id": 24456,
+  "text": "tool belt",
   "type": "common",
   "rec": 2,
   "themes": [
-   "wild west [wild_west] (history_myth)",
-   "prairie [prairie] (nature_earth)",
-   "things with wheels [things_with_wheels] (qualities)",
-   "animal-powered travel [animal_powered_travel] (travel_transport)",
-   "horse-drawn vehicles [horse_drawn_vehicles] (travel_transport)"
+   "work clothes [work_clothes] (home_everyday)",
+   "things made of leather [things_made_of_leather] (qualities)"
   ]
  },
  {
-  "id": 149,
-  "text": "cow",
+  "id": 14482,
+  "text": "tooth",
   "type": "common",
   "rec": 1,
   "themes": [
-   "farm animals [farm_animals] (animals)",
-   "domestic animals [domestic_animals] (animals)",
-   "hoofed mammals [hoofed_mammals] (animals)",
-   "female animals [female_animals] (animals)",
-   "things with horns [things_with_horns] (qualities)",
-   "things with eyes [things_with_eyes] (qualities)",
-   "things with tongues [things_with_tongues] (qualities)",
-   "things with tails [things_with_tails] (qualities)"
+   "teeth [teeth] (body_health)",
+   "dental words [dental_words] (body_health)",
+   "dentist's office [dentist_s_office] (places_geography)"
   ]
  },
  {
-  "id": 10601,
-  "text": "cowbell",
+  "id": 30103,
+  "text": "toothpick",
   "type": "common",
   "rec": 2,
   "themes": [
-   "percussion instruments [percussion_instruments] (arts_entertainment)",
-   "classroom instruments [classroom_instruments] (arts_entertainment)",
-   "things that ring [things_that_ring] (qualities)"
+   "things made from trees [things_made_from_trees] (nature_earth)",
+   "things made of wood [things_made_of_wood] (qualities)"
   ]
  },
  {
-  "id": 12534,
-  "text": "cowboy",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "dress-up costumes [dress_up_costumes] (arts_entertainment)",
-   "wild west [wild_west] (history_myth)",
-   "prairie [prairie] (nature_earth)",
-   "rodeo words [rodeo_words] (sports_games)"
-  ]
- },
- {
-  "id": 24652,
-  "text": "cowboy boots",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "boots [boots] (home_everyday)",
-   "cowboy words [cowboy_words] (people_society)"
-  ]
- },
- {
-  "id": 22998,
-  "text": "cowboy hat",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "wild west [wild_west] (history_myth)",
-   "hats [hats] (home_everyday)",
-   "cowboy words [cowboy_words] (people_society)",
-   "rodeo words [rodeo_words] (sports_games)"
-  ]
- },
- {
-  "id": 20840,
-  "text": "cowl",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "medieval clothing [medieval_clothing] (history_myth)",
-   "knitwear [knitwear] (home_everyday)",
-   "religious clothing [religious_clothing] (people_society)"
-  ]
- },
- {
-  "id": 1324,
-  "text": "cowrie",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "sea life [sea_life] (animals)",
-   "mollusks [mollusks] (animals)",
-   "animals with shells [animals_with_shells] (animals)",
-   "seashells [seashells] (nature_earth)",
-   "things with shells [things_with_shells] (qualities)"
-  ]
- },
- {
-  "id": 21287,
-  "text": "coxswain",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "pirate crew [pirate_crew] (history_myth)",
-   "navy words [navy_words] (people_society)",
-   "rowing words [rowing_words] (sports_games)",
-   "ship crew [ship_crew] (travel_transport)"
-  ]
- },
- {
-  "id": 470,
-  "text": "crab",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "meat and seafood [meat_and_seafood] (food_drink)",
-   "sea life [sea_life] (animals)",
-   "crustaceans [crustaceans] (animals)",
-   "animals with shells [animals_with_shells] (animals)",
-   "shellfish [shellfish] (food_drink)",
-   "foods with shells [foods_with_shells] (food_drink)",
-   "rock pool [rock_pool] (nature_earth)",
-   "things with shells [things_with_shells] (qualities)"
-  ]
- },
- {
-  "id": 9706,
-  "text": "crabeater seal",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "antarctic animals [antarctic_animals] (animals)",
-   "antarctic coast [antarctic_coast] (nature_earth)"
-  ]
- },
- {
-  "id": 31630,
-  "text": "cracked earth",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "dry season [dry_season] (nature_earth)",
-   "rough things [rough_things] (qualities)"
-  ]
- },
- {
-  "id": 19094,
-  "text": "crackers",
+  "id": 19095,
+  "text": "tortilla chips",
   "type": "common",
   "rec": 1,
   "themes": [
    "snacks [snacks] (food_drink)",
-   "picnic basket [picnic_basket] (food_drink)",
-   "salty foods [salty_foods] (qualities)"
+   "crunchy foods [crunchy_foods] (qualities)"
   ]
  },
  {
-  "id": 3569,
-  "text": "cradle",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "babies and birth [babies_and_birth] (body_health)",
-   "maternity ward [maternity_ward] (body_health)",
-   "beds [beds] (home_everyday)"
-  ]
- },
- {
-  "id": 21053,
-  "text": "crampons",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "polar exploration [polar_exploration] (history_myth)",
-   "sports equipment [sports_equipment] (sports_games)",
-   "mountaineering words [mountaineering_words] (sports_games)",
-   "hiking gear [hiking_gear] (travel_transport)",
-   "climbing gear [climbing_gear] (travel_transport)",
-   "antarctic research station [antarctic_research_station] (science_tech)"
-  ]
- },
- {
-  "id": 354,
-  "text": "cranberry",
+  "id": 49043,
+  "text": "tower crane",
   "type": "common",
   "rec": 2,
   "themes": [
-   "fruits [fruits] (food_drink)",
-   "berries [berries] (food_drink)",
-   "shades of red [shades_of_red] (qualities)",
-   "colors named after foods [colors_named_after_foods] (qualities)",
-   "sour foods [sour_foods] (qualities)",
-   "candle scents [candle_scents] (qualities)",
-   "red things [red_things] (qualities)"
+   "construction vehicles [construction_vehicles] (travel_transport)",
+   "construction site [construction_site] (places_geography)"
   ]
  },
  {
-  "id": 18788,
-  "text": "cranberry sauce",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "sauces and condiments [sauces_and_condiments] (food_drink)",
-   "north american food [north_american_food] (food_drink)",
-   "canned foods [canned_foods] (food_drink)",
-   "thanksgiving [thanksgiving] (home_everyday)"
-  ]
- },
- {
-  "id": 5778,
-  "text": "Cranium",
-  "type": "org",
-  "rec": 3,
-  "themes": [
-   "table games [table_games] (sports_games)",
-   "bones [bones] (body_health)",
-   "board games [board_games] (sports_games)",
-   "word games [word_games] (sports_games)",
-   "party games [party_games] (sports_games)"
-  ]
- },
- {
-  "id": 2621,
-  "text": "crankshaft",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "cars [cars] (travel_transport)",
-   "engineering [engineering] (science_tech)",
-   "car parts [car_parts] (travel_transport)",
-   "machine parts [machine_parts] (science_tech)"
-  ]
- },
- {
-  "id": 45072,
-  "text": "crash pad",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "climbing words [climbing_words] (sports_games)",
-   "climbing gear [climbing_gear] (travel_transport)"
-  ]
- },
- {
-  "id": 5010,
-  "text": "cravat",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "accessories [accessories] (home_everyday)",
-   "pirate clothing [pirate_clothing] (history_myth)",
-   "neckwear [neckwear] (home_everyday)"
-  ]
- },
- {
-  "id": 499,
-  "text": "crayfish",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "meat and seafood [meat_and_seafood] (food_drink)",
-   "crustaceans [crustaceans] (animals)",
-   "animals with shells [animals_with_shells] (animals)",
-   "burrowing animals [burrowing_animals] (animals)",
-   "foods with shells [foods_with_shells] (food_drink)",
-   "things with shells [things_with_shells] (qualities)"
-  ]
- },
- {
-  "id": 12009,
-  "text": "crayon",
+  "id": 38451,
+  "text": "town square",
   "type": "common",
   "rec": 1,
   "themes": [
-   "art materials [art_materials] (arts_entertainment)",
-   "stationery [stationery] (people_society)",
-   "things that melt [things_that_melt] (qualities)"
+   "parts of a town [parts_of_a_town] (places_geography)",
+   "square things [square_things] (qualities)"
   ]
  },
  {
-  "id": 23286,
-  "text": "credit card",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "in a wallet [in_a_wallet] (home_everyday)",
-   "banking words [banking_words] (people_society)"
-  ]
- },
- {
-  "id": 25513,
-  "text": "creel",
+  "id": 38554,
+  "text": "tracht",
   "type": "common",
   "rec": 5,
   "themes": [
-   "containers [containers] (home_everyday)",
-   "fishing words [fishing_words] (sports_games)"
+   "national costumes [national_costumes] (places_geography)",
+   "european folk costume [european_folk_costume] (home_everyday)",
+   "oktoberfest [oktoberfest] (home_everyday)"
   ]
  },
  {
-  "id": 21747,
-  "text": "cremation",
+  "id": 34066,
+  "text": "trader",
   "type": "common",
   "rec": 2,
   "themes": [
-   "tombs and burials [tombs_and_burials] (history_myth)",
-   "buddhism words [buddhism_words] (people_society)"
+   "stock market words [stock_market_words] (people_society)",
+   "street market [street_market] (places_geography)"
   ]
  },
  {
-  "id": 544,
-  "text": "crème fraîche",
+  "id": 38853,
+  "text": "trapezoid",
   "type": "common",
   "rec": 3,
   "themes": [
-   "dairy and eggs [dairy_and_eggs] (food_drink)",
-   "fermented foods [fermented_foods] (food_drink)",
-   "in the fridge [in_the_fridge] (home_everyday)"
+   "2d shapes [2d_shapes] (qualities)",
+   "polygons [polygons] (science_tech)"
   ]
  },
  {
-  "id": 17620,
-  "text": "cremini",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "mushrooms [mushrooms] (food_drink)",
-   "fungi [fungi] (nature_earth)"
-  ]
- },
- {
-  "id": 14033,
-  "text": "crescent moon",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "mosque parts [mosque_parts] (arts_entertainment)",
-   "moon phases and moods [moon_phases_and_moods] (science_tech)"
-  ]
- },
- {
-  "id": 30902,
-  "text": "crevasse",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "ice features [ice_features] (nature_earth)",
-   "snow and ice [snow_and_ice] (nature_earth)",
-   "polar regions [polar_regions] (nature_earth)",
-   "mountains [mountains] (nature_earth)",
-   "ice words [ice_words] (qualities)",
-   "mountaineering words [mountaineering_words] (sports_games)"
-  ]
- },
- {
-  "id": 2802,
-  "text": "crew",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "boats and ships [boats_and_ships] (travel_transport)",
-   "groups of people [groups_of_people] (people_society)",
-   "hot air balloon parts [hot_air_balloon_parts] (travel_transport)",
-   "sailing words [sailing_words] (travel_transport)"
-  ]
- },
- {
-  "id": 39814,
-  "text": "cricket ball",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "things that bounce [things_that_bounce] (qualities)",
-   "sports balls [sports_balls] (sports_games)"
-  ]
- },
- {
-  "id": 30106,
-  "text": "cricket bat",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "things made from trees [things_made_from_trees] (nature_earth)",
-   "sports equipment [sports_equipment] (sports_games)"
-  ]
- },
- {
-  "id": 4195,
-  "text": "crime",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "law and order [law_and_order] (people_society)",
-   "movie genres [movie_genres] (arts_entertainment)"
-  ]
- },
- {
-  "id": 22969,
-  "text": "crinoline",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "victorian era [victorian_era] (history_myth)",
-   "dresses and skirts [dresses_and_skirts] (home_everyday)"
-  ]
- },
- {
-  "id": 5848,
-  "text": "crochet",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "hobbies and crafts [hobbies_and_crafts] (sports_games)",
-   "knitting words [knitting_words] (home_everyday)",
-   "crafts [crafts] (sports_games)"
-  ]
- },
- {
-  "id": 1138,
-  "text": "crocodile",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "reptiles and amphibians [reptiles_and_amphibians] (animals)",
-   "crocodilians [crocodilians] (animals)",
-   "game meats [game_meats] (food_drink)",
-   "wetlands [wetlands] (nature_earth)",
-   "things with teeth [things_with_teeth] (qualities)",
-   "things with tails [things_with_tails] (qualities)"
-  ]
- },
- {
-  "id": 1725,
-  "text": "crocus",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "flowers [flowers] (nature_earth)",
-   "spring flowers [spring_flowers] (nature_earth)",
-   "flower bulbs [flower_bulbs] (nature_earth)",
-   "signs of spring [signs_of_spring] (nature_earth)",
-   "purple things [purple_things] (qualities)"
-  ]
- },
- {
-  "id": 557,
-  "text": "croissant",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "breads and baking [breads_and_baking] (food_drink)",
-   "pastries [pastries] (food_drink)",
-   "breakfast foods [breakfast_foods] (food_drink)",
-   "cafe [cafe] (places_geography)"
-  ]
- },
- {
-  "id": 5033,
-  "text": "cross-stitch",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "fabrics and sewing [fabrics_and_sewing] (home_everyday)",
-   "hobbies and crafts [hobbies_and_crafts] (sports_games)",
-   "crafts [crafts] (sports_games)"
-  ]
- },
- {
-  "id": 8176,
-  "text": "crossbill",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "songbirds [songbirds] (animals)",
-   "taiga [taiga] (nature_earth)"
-  ]
- },
- {
-  "id": 5270,
-  "text": "crossbow",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "racket and target sports [racket_and_target_sports] (sports_games)",
-   "medieval weapons [medieval_weapons] (history_myth)",
-   "historic weapons [historic_weapons] (people_society)",
-   "inventions [inventions] (science_tech)",
-   "archery terms [archery_terms] (sports_games)",
-   "hunting words [hunting_words] (sports_games)"
-  ]
- },
- {
-  "id": 3436,
-  "text": "croup",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "illnesses [illnesses] (body_health)",
-   "parts of a horse [parts_of_a_horse] (animals)",
-   "common illnesses [common_illnesses] (body_health)",
-   "childhood illnesses [childhood_illnesses] (body_health)"
-  ]
- },
- {
-  "id": 2833,
-  "text": "crow's nest",
-  "type": "phrase",
-  "rec": 3,
-  "themes": [
-   "boats and ships [boats_and_ships] (travel_transport)",
-   "pirates [pirates] (history_myth)",
-   "age of sail [age_of_sail] (history_myth)",
-   "navy words [navy_words] (people_society)",
-   "ship parts [ship_parts] (travel_transport)",
-   "cruise words [cruise_words] (travel_transport)"
-  ]
- },
- {
-  "id": 325,
-  "text": "crowbar",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "hand tools [hand_tools] (home_everyday)",
-   "tools [tools] (home_everyday)",
-   "things with handles [things_with_handles] (home_everyday)",
-   "simple machines [simple_machines] (science_tech)"
-  ]
- },
- {
-  "id": 21224,
-  "text": "crown jewels",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "treasure [treasure] (history_myth)",
-   "royal things [royal_things] (people_society)"
-  ]
- },
- {
-  "id": 22443,
-  "text": "crucible",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "alchemy [alchemy] (history_myth)",
-   "lab equipment [lab_equipment] (science_tech)"
-  ]
- },
- {
-  "id": 20168,
-  "text": "cruet",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "table setting [table_setting] (food_drink)",
-   "containers [containers] (home_everyday)"
-  ]
- },
- {
-  "id": 2835,
-  "text": "cruise ship",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "boats and ships [boats_and_ships] (travel_transport)",
-   "huge things [huge_things] (qualities)",
-   "cruise words [cruise_words] (travel_transport)"
-  ]
- },
- {
-  "id": 10568,
-  "text": "crumhorn",
-  "type": "common",
-  "rec": 5,
-  "themes": [
-   "woodwind instruments [woodwind_instruments] (arts_entertainment)",
-   "medieval instruments [medieval_instruments] (history_myth)"
-  ]
- },
- {
-  "id": 15182,
-  "text": "crutches",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "medical equipment [medical_equipment] (body_health)",
-   "things that come in pairs [things_that_come_in_pairs] (qualities)"
-  ]
- },
- {
-  "id": 17018,
-  "text": "cry",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "ways of crying [ways_of_crying] (body_health)",
-   "voice sounds [voice_sounds] (qualities)"
-  ]
- },
- {
-  "id": 14002,
-  "text": "crypt",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "church parts [church_parts] (arts_entertainment)",
-   "tombs and burials [tombs_and_burials] (history_myth)",
-   "halloween [halloween] (home_everyday)"
-  ]
- },
- {
-  "id": 7012,
-  "text": "crystal ball",
-  "type": "phrase",
-  "rec": 1,
-  "themes": [
-   "fantasy [fantasy] (history_myth)",
-   "fairy tale objects [fairy_tale_objects] (arts_entertainment)",
-   "magic items [magic_items] (history_myth)",
-   "witchcraft [witchcraft] (history_myth)"
-  ]
- },
- {
-  "id": 10673,
-  "text": "cuatro",
-  "type": "common",
-  "rec": 5,
-  "themes": [
-   "folk instruments [folk_instruments] (arts_entertainment)",
-   "national instruments [national_instruments] (places_geography)"
-  ]
- },
- {
-  "id": 2157,
-  "text": "Cuba",
+  "id": 55157,
+  "text": "Trenton",
   "type": "place",
-  "rec": 1,
+  "rec": 4,
   "themes": [
-   "countries [countries] (places_geography)",
-   "pirate places [pirate_places] (history_myth)",
-   "north american countries [north_american_countries] (places_geography)",
-   "island nations [island_nations] (places_geography)",
-   "spanish-speaking countries [spanish_speaking_countries] (places_geography)",
-   "famous islands [famous_islands] (places_geography)",
-   "flags with stars [flags_with_stars] (places_geography)",
-   "places that are also words [places_that_are_also_words] (places_geography)"
+   "american revolution [american_revolution] (history_myth)",
+   "us state capitals [us_state_capitals] (places_geography)"
   ]
  },
  {
-  "id": 1088,
-  "text": "cuckoo",
+  "id": 18128,
+  "text": "tres leches",
   "type": "common",
-  "rec": 2,
+  "rec": 4,
   "themes": [
-   "birds [birds] (animals)",
-   "migrating animals [migrating_animals] (animals)",
-   "animal sounds [animal_sounds] (animals)",
-   "signs of spring [signs_of_spring] (nature_earth)",
-   "onomatopoeia [onomatopoeia] (qualities)"
-  ]
- },
- {
-  "id": 25371,
-  "text": "cuckoo clock",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "clocks and calendars [clocks_and_calendars] (home_everyday)",
-   "things that tick [things_that_tick] (qualities)"
-  ]
- },
- {
-  "id": 400,
-  "text": "cucumber",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "vegetables [vegetables] (food_drink)",
-   "foods you peel [foods_you_peel] (food_drink)",
-   "green things [green_things] (qualities)"
-  ]
- },
- {
-  "id": 4963,
-  "text": "cufflinks",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "accessories [accessories] (home_everyday)",
-   "jewelry [jewelry] (home_everyday)",
-   "things that come in pairs [things_that_come_in_pairs] (qualities)"
-  ]
- },
- {
-  "id": 860,
-  "text": "cullen skink",
-  "type": "common",
-  "rec": 5,
-  "themes": [
-   "dishes [dishes] (food_drink)",
-   "soups [soups] (food_drink)",
-   "national dishes [national_dishes] (places_geography)"
-  ]
- },
- {
-  "id": 742,
-  "text": "cumin",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "herbs, spices and sauces [herbs_spices_and_sauces] (food_drink)",
-   "ayurveda words [ayurveda_words] (body_health)",
-   "spices [spices] (food_drink)",
-   "spice trade [spice_trade] (history_myth)",
-   "spicy foods [spicy_foods] (qualities)"
-  ]
- },
- {
-  "id": 12807,
-  "text": "cup holder",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "movie theater words [movie_theater_words] (arts_entertainment)",
-   "car accessories [car_accessories] (travel_transport)"
-  ]
- },
- {
-  "id": 560,
-  "text": "cupcake",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "breads and baking [breads_and_baking] (food_drink)",
-   "desserts and sweets [desserts_and_sweets] (food_drink)",
    "cakes [cakes] (food_drink)",
-   "birthdays [birthdays] (home_everyday)",
-   "sweet foods [sweet_foods] (qualities)",
-   "pink things [pink_things] (qualities)"
+   "mexican food [mexican_food] (food_drink)",
+   "south american sweets [south_american_sweets] (qualities)"
   ]
  },
  {
-  "id": 6583,
-  "text": "cupola",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "architecture [architecture] (arts_entertainment)",
-   "architectural features [architectural_features] (arts_entertainment)",
-   "roof parts [roof_parts] (home_everyday)",
-   "space station [space_station] (science_tech)"
-  ]
- },
- {
-  "id": 13736,
-  "text": "cups and balls",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "magic show words [magic_show_words] (arts_entertainment)",
-   "magic tricks [magic_tricks] (sports_games)"
-  ]
- },
- {
-  "id": 6325,
-  "text": "curator",
+  "id": 23424,
+  "text": "trestle table",
   "type": "common",
   "rec": 3,
+  "themes": [
+   "tables and desks [tables_and_desks] (home_everyday)",
+   "things with legs [things_with_legs] (home_everyday)",
+   "street market [street_market] (places_geography)"
+  ]
+ },
+ {
+  "id": 3492,
+  "text": "triage",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "medicine [medicine] (body_health)",
+   "hospital words [hospital_words] (body_health)",
+   "hospital [hospital] (places_geography)"
+  ]
+ },
+ {
+  "id": 2537,
+  "text": "tricolor",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "national symbols [national_symbols] (places_geography)",
+   "flag words [flag_words] (places_geography)",
+   "french revolution [french_revolution] (history_myth)"
+  ]
+ },
+ {
+  "id": 6348,
+  "text": "triptych",
+  "type": "common",
+  "rec": 4,
   "themes": [
    "art [art] (arts_entertainment)",
-   "art gallery words [art_gallery_words] (arts_entertainment)",
-   "arts jobs [arts_jobs] (people_society)"
+   "painting words [painting_words] (arts_entertainment)",
+   "art gallery [art_gallery] (places_geography)"
   ]
  },
  {
-  "id": 4230,
-  "text": "curfew",
+  "id": 33681,
+  "text": "truncheon",
   "type": "common",
   "rec": 3,
   "themes": [
-   "law and order [law_and_order] (people_society)",
-   "medieval times [medieval_times] (history_myth)",
-   "punishments [punishments] (people_society)"
+   "police words [police_words] (people_society)",
+   "police station [police_station] (places_geography)"
   ]
  },
  {
-  "id": 32884,
-  "text": "curious",
+  "id": 53590,
+  "text": "tteok",
   "type": "common",
-  "rec": 1,
+  "rec": 5,
   "themes": [
-   "personality traits [personality_traits] (people_society)",
-   "words for strange [words_for_strange] (qualities)"
+   "korean food [korean_food] (food_drink)",
+   "chewy foods [chewy_foods] (qualities)"
   ]
  },
  {
-  "id": 3796,
-  "text": "curling iron",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "personal care [personal_care] (body_health)",
-   "hair care [hair_care] (body_health)",
-   "small appliances [small_appliances] (home_everyday)",
-   "things you plug in [things_you_plug_in] (home_everyday)"
-  ]
- },
- {
-  "id": 799,
-  "text": "curry",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "dishes [dishes] (food_drink)",
-   "stews [stews] (food_drink)",
-   "asian food [asian_food] (food_drink)",
-   "spicy foods [spicy_foods] (qualities)",
-   "pungent foods [pungent_foods] (qualities)",
-   "hot things [hot_things] (qualities)"
-  ]
- },
- {
-  "id": 12242,
-  "text": "curtain",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "theater words [theater_words] (arts_entertainment)",
-   "parts of a stage [parts_of_a_stage] (arts_entertainment)",
-   "theater building parts [theater_building_parts] (arts_entertainment)",
-   "windows and doors [windows_and_doors] (home_everyday)"
-  ]
- },
- {
-  "id": 16834,
-  "text": "curtsy",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "gestures [gestures] (body_health)",
-   "manners and etiquette [manners_and_etiquette] (people_society)"
-  ]
- },
- {
-  "id": 20434,
-  "text": "Cusco",
-  "type": "place",
-  "rec": 3,
-  "themes": [
-   "inca empire [inca_empire] (history_myth)",
-   "andes [andes] (nature_earth)",
-   "south american cities [south_american_cities] (places_geography)"
-  ]
- },
- {
-  "id": 615,
-  "text": "custard",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "desserts and sweets [desserts_and_sweets] (food_drink)",
-   "smooth things [smooth_things] (qualities)",
-   "yellow things [yellow_things] (qualities)"
-  ]
- },
- {
-  "id": 33969,
-  "text": "customs",
-  "type": "common",
-  "rec": 2,
-  "themes": [
-   "tax words [tax_words] (people_society)",
-   "airport words [airport_words] (travel_transport)"
-  ]
- },
- {
-  "id": 38227,
-  "text": "customs form",
+  "id": 19134,
+  "text": "tteokbokki",
   "type": "common",
   "rec": 4,
   "themes": [
-   "post office [post_office] (places_geography)",
-   "travel documents [travel_documents] (travel_transport)"
+   "street food [street_food] (food_drink)",
+   "korean food [korean_food] (food_drink)",
+   "spicy dishes of asia [spicy_dishes_of_asia] (qualities)"
   ]
  },
  {
-  "id": 6764,
-  "text": "cutlass",
+  "id": 37172,
+  "text": "Tuileries",
+  "type": "place",
+  "rec": 5,
+  "themes": [
+   "famous palaces [famous_palaces] (places_geography)",
+   "french revolution [french_revolution] (history_myth)"
+  ]
+ },
+ {
+  "id": 19322,
+  "text": "tulumba",
+  "type": "common",
+  "rec": 5,
+  "themes": [
+   "turkish food [turkish_food] (food_drink)",
+   "sweet treats of turkey [sweet_treats_of_turkey] (qualities)"
+  ]
+ },
+ {
+  "id": 49168,
+  "text": "tumbril",
+  "type": "common",
+  "rec": 5,
+  "themes": [
+   "horse-drawn vehicles [horse_drawn_vehicles] (travel_transport)",
+   "french revolution [french_revolution] (history_myth)"
+  ]
+ },
+ {
+  "id": 52310,
+  "text": "Turkish carpet",
   "type": "common",
   "rec": 3,
   "themes": [
-   "pirates [pirates] (history_myth)",
-   "pirate weapons [pirate_weapons] (history_myth)",
-   "historic weapons [historic_weapons] (people_society)",
-   "things that cut [things_that_cut] (qualities)"
+   "turkish arts [turkish_arts] (arts_entertainment)",
+   "turkish souvenirs [turkish_souvenirs] (travel_transport)"
   ]
  },
  {
-  "id": 19850,
-  "text": "cutting board",
+  "id": 19296,
+  "text": "turkish coffee",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "turkish food [turkish_food] (food_drink)",
+   "hot drinks [hot_drinks] (food_drink)",
+   "coffee drinks [coffee_drinks] (food_drink)",
+   "turkish breakfast [turkish_breakfast] (food_drink)",
+   "turkish souvenirs [turkish_souvenirs] (travel_transport)"
+  ]
+ },
+ {
+  "id": 18392,
+  "text": "Twix",
+  "type": "org",
+  "rec": 1,
+  "themes": [
+   "chocolates [chocolates] (food_drink)",
+   "american candy [american_candy] (qualities)"
+  ]
+ },
+ {
+  "id": 5706,
+  "text": "two-up",
+  "type": "common",
+  "rec": 4,
+  "themes": [
+   "games of chance [games_of_chance] (sports_games)",
+   "anzac day [anzac_day] (home_everyday)"
+  ]
+ },
+ {
+  "id": 18800,
+  "text": "tzatziki",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "dips [dips] (food_drink)",
+   "greek food [greek_food] (food_drink)",
+   "meze [meze] (food_drink)",
+   "creamy foods [creamy_foods] (qualities)"
+  ]
+ },
+ {
+  "id": 36098,
+  "text": "Ugarit",
+  "type": "place",
+  "rec": 5,
+  "themes": [
+   "ancient cities [ancient_cities] (places_geography)",
+   "ancient sites of the middle east [ancient_sites_of_the_middle_east] (history_myth)"
+  ]
+ },
+ {
+  "id": 31123,
+  "text": "undertow",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "tides and currents [tides_and_currents] (nature_earth)",
+   "shipwreck coast words [shipwreck_coast_words] (nature_earth)",
+   "ocean [ocean] (nature_earth)",
+   "beach [beach] (places_geography)"
+  ]
+ },
+ {
+  "id": 5900,
+  "text": "upholstery",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "hobbies and crafts [hobbies_and_crafts] (sports_games)",
+   "things made of leather [things_made_of_leather] (qualities)"
+  ]
+ },
+ {
+  "id": 21649,
+  "text": "Upton Sinclair",
+  "type": "person",
+  "rec": 4,
+  "themes": [
+   "reformers [reformers] (history_myth)",
+   "american novelists [american_novelists] (arts_entertainment)"
+  ]
+ },
+ {
+  "id": 42226,
+  "text": "USB port",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "computer parts [computer_parts] (science_tech)",
+   "dashboard items [dashboard_items] (travel_transport)"
+  ]
+ },
+ {
+  "id": 42079,
+  "text": "vaccination",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "famous discoveries [famous_discoveries] (science_tech)",
+   "vet clinic [vet_clinic] (places_geography)"
+  ]
+ },
+ {
+  "id": 15186,
+  "text": "ventilator",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "medical equipment [medical_equipment] (body_health)",
+   "operating room [operating_room] (body_health)",
+   "hospital [hospital] (places_geography)"
+  ]
+ },
+ {
+  "id": 37779,
+  "text": "Vergina",
+  "type": "place",
+  "rec": 5,
+  "themes": [
+   "greek landmarks [greek_landmarks] (places_geography)",
+   "ancient sites of europe [ancient_sites_of_europe] (history_myth)"
+  ]
+ },
+ {
+  "id": 12142,
+  "text": "vernissage",
+  "type": "common",
+  "rec": 5,
+  "themes": [
+   "art gallery words [art_gallery_words] (arts_entertainment)",
+   "art gallery [art_gallery] (places_geography)"
+  ]
+ },
+ {
+  "id": 20884,
+  "text": "vert",
+  "type": "common",
+  "rec": 4,
+  "themes": [
+   "heraldry [heraldry] (history_myth)",
+   "colors in french [colors_in_french] (qualities)"
+  ]
+ },
+ {
+  "id": 4388,
+  "text": "veteran",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "military [military] (people_society)",
+   "words for expert [words_for_expert] (people_society)",
+   "anzac day [anzac_day] (home_everyday)"
+  ]
+ },
+ {
+  "id": 10450,
+  "text": "veterinarian",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "animal experts [animal_experts] (animals)",
+   "vet clinic [vet_clinic] (places_geography)"
+  ]
+ },
+ {
+  "id": 25499,
+  "text": "vial",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "containers [containers] (home_everyday)",
+   "lab glassware [lab_glassware] (science_tech)"
+  ]
+ },
+ {
+  "id": 20981,
+  "text": "vielle",
+  "type": "common",
+  "rec": 5,
+  "themes": [
+   "medieval instruments [medieval_instruments] (history_myth)",
+   "bowed instruments [bowed_instruments] (arts_entertainment)"
+  ]
+ },
+ {
+  "id": 34289,
+  "text": "vihara",
+  "type": "common",
+  "rec": 5,
+  "themes": [
+   "places of worship [places_of_worship] (people_society)",
+   "religious buildings [religious_buildings] (places_geography)"
+  ]
+ },
+ {
+  "id": 19549,
+  "text": "Vimto",
+  "type": "org",
+  "rec": 4,
+  "themes": [
+   "soft drinks [soft_drinks] (food_drink)",
+   "fizzy drinks [fizzy_drinks] (qualities)"
+  ]
+ },
+ {
+  "id": 48928,
+  "text": "vineyard",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "tourist attractions [tourist_attractions] (travel_transport)",
+   "wine words [wine_words] (food_drink)"
+  ]
+ },
+ {
+  "id": 37523,
+  "text": "Virunga",
+  "type": "place",
+  "rec": 5,
+  "themes": [
+   "african landmarks [african_landmarks] (places_geography)",
+   "african national parks [african_national_parks] (travel_transport)"
+  ]
+ },
+ {
+  "id": 35267,
+  "text": "volume knob",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "radio words [radio_words] (people_society)",
+   "guitar parts [guitar_parts] (arts_entertainment)"
+  ]
+ },
+ {
+  "id": 32072,
+  "text": "wader",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "wetlands [wetlands] (nature_earth)",
+   "wading birds [wading_birds] (animals)"
+  ]
+ },
+ {
+  "id": 53545,
+  "text": "wagashi",
+  "type": "common",
+  "rec": 5,
+  "themes": [
+   "japanese sweets [japanese_sweets] (food_drink)",
+   "japanese souvenirs [japanese_souvenirs] (travel_transport)"
+  ]
+ },
+ {
+  "id": 27086,
+  "text": "waka",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "maori culture [maori_culture] (people_society)",
+   "traditional boats [traditional_boats] (travel_transport)"
+  ]
+ },
+ {
+  "id": 22734,
+  "text": "Wandjina",
+  "type": "proper",
+  "rec": 5,
+  "themes": [
+   "aboriginal dreaming [aboriginal_dreaming] (history_myth)",
+   "pacific art words [pacific_art_words] (arts_entertainment)"
+  ]
+ },
+ {
+  "id": 46867,
+  "text": "warning triangle",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "car accessories [car_accessories] (travel_transport)",
+   "triangular things [triangular_things] (qualities)"
+  ]
+ },
+ {
+  "id": 4223,
+  "text": "warrant",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "law and order [law_and_order] (people_society)",
+   "police words [police_words] (people_society)",
+   "legal documents [legal_documents] (people_society)",
+   "police station [police_station] (places_geography)"
+  ]
+ },
+ {
+  "id": 34290,
+  "text": "wat",
+  "type": "common",
+  "rec": 4,
+  "themes": [
+   "places of worship [places_of_worship] (people_society)",
+   "buddhism words [buddhism_words] (people_society)",
+   "religious buildings [religious_buildings] (places_geography)"
+  ]
+ },
+ {
+  "id": 55789,
+  "text": "watch strap",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "clock parts [clock_parts] (home_everyday)",
+   "things made of leather [things_made_of_leather] (qualities)"
+  ]
+ },
+ {
+  "id": 40254,
+  "text": "water balloon",
   "type": "common",
   "rec": 1,
   "themes": [
-   "kitchen utensils [kitchen_utensils] (food_drink)",
-   "kitchen [kitchen] (home_everyday)"
+   "things that pop [things_that_pop] (qualities)",
+   "holi [holi] (home_everyday)"
   ]
  },
  {
-  "id": 1300,
-  "text": "cuttlefish",
+  "id": 33163,
+  "text": "water cooler",
   "type": "common",
-  "rec": 3,
+  "rec": 2,
   "themes": [
-   "sea life [sea_life] (animals)",
-   "mollusks [mollusks] (animals)",
-   "spotted animals [spotted_animals] (animals)",
-   "camouflaged animals [camouflaged_animals] (animals)",
-   "tentacled animals [tentacled_animals] (animals)",
-   "things with eyes [things_with_eyes] (qualities)",
-   "things with arms [things_with_arms] (qualities)"
+   "workplace words [workplace_words] (people_society)",
+   "office [office] (places_geography)"
   ]
  },
  {
-  "id": 21086,
-  "text": "Cutty Sark",
+  "id": 20142,
+  "text": "water glass",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "table setting [table_setting] (food_drink)",
+   "drinking vessels [drinking_vessels] (home_everyday)"
+  ]
+ },
+ {
+  "id": 5202,
+  "text": "water polo",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "ball sports [ball_sports] (sports_games)",
+   "team ball sports [team_ball_sports] (sports_games)",
+   "sports with a net [sports_with_a_net] (sports_games)",
+   "olympic sports [olympic_sports] (sports_games)",
+   "swimming pool [swimming_pool] (places_geography)"
+  ]
+ },
+ {
+  "id": 6296,
+  "text": "watercolor",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "art [art] (arts_entertainment)",
+   "painting words [painting_words] (arts_entertainment)",
+   "art materials [art_materials] (arts_entertainment)",
+   "art gallery [art_gallery] (places_geography)"
+  ]
+ },
+ {
+  "id": 17756,
+  "text": "weisswurst",
+  "type": "common",
+  "rec": 4,
+  "themes": [
+   "sausages [sausages] (food_drink)",
+   "german food [german_food] (food_drink)",
+   "oktoberfest [oktoberfest] (home_everyday)"
+  ]
+ },
+ {
+  "id": 4147,
+  "text": "welder",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "jobs [jobs] (people_society)",
+   "trades [trades] (people_society)",
+   "factory [factory] (places_geography)"
+  ]
+ },
+ {
+  "id": 15077,
+  "text": "West Nile virus",
   "type": "proper",
   "rec": 3,
   "themes": [
-   "famous voyages [famous_voyages] (history_myth)",
-   "famous ships [famous_ships] (travel_transport)"
+   "tropical diseases [tropical_diseases] (body_health)",
+   "viruses [viruses] (science_tech)"
   ]
  },
  {
-  "id": 9118,
-  "text": "cutworm",
+  "id": 55209,
+  "text": "western shirt",
   "type": "common",
-  "rec": 5,
+  "rec": 2,
   "themes": [
-   "garden bugs [garden_bugs] (animals)",
-   "garden pests [garden_pests] (nature_earth)"
+   "cowboy gear [cowboy_gear] (history_myth)",
+   "western wear [western_wear] (home_everyday)"
   ]
  },
  {
-  "id": 15965,
-  "text": "cycling",
+  "id": 8746,
+  "text": "whale shark",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "sharks [sharks] (animals)",
+   "ocean giants [ocean_giants] (animals)",
+   "migrating animals [migrating_animals] (animals)",
+   "spotted animals [spotted_animals] (animals)",
+   "aquarium [aquarium] (places_geography)"
+  ]
+ },
+ {
+  "id": 19702,
+  "text": "wheat beer",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "beers [beers] (food_drink)",
+   "oktoberfest [oktoberfest] (home_everyday)"
+  ]
+ },
+ {
+  "id": 528,
+  "text": "whipped cream",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "dairy and eggs [dairy_and_eggs] (food_drink)",
+   "cake decorations [cake_decorations] (food_drink)",
+   "toppings [toppings] (food_drink)",
+   "ice cream parlor [ice_cream_parlor] (food_drink)",
+   "creamy foods [creamy_foods] (qualities)"
+  ]
+ },
+ {
+  "id": 16596,
+  "text": "Wiesbaden",
+  "type": "place",
+  "rec": 3,
+  "themes": [
+   "european spa towns [european_spa_towns] (body_health)",
+   "german cities [german_cities] (places_geography)"
+  ]
+ },
+ {
+  "id": 29489,
+  "text": "wigwam",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "traditional lodgings [traditional_lodgings] (travel_transport)",
+   "traditional dwellings [traditional_dwellings] (places_geography)"
+  ]
+ },
+ {
+  "id": 17736,
+  "text": "wild goose",
+  "type": "common",
+  "rec": 3,
+  "themes": [
+   "game meats [game_meats] (food_drink)",
+   "geese and swans [geese_and_swans] (animals)"
+  ]
+ },
+ {
+  "id": 32094,
+  "text": "wildflower",
   "type": "common",
   "rec": 1,
   "themes": [
-   "workout types [workout_types] (body_health)",
-   "healthy habits [healthy_habits] (body_health)",
-   "green living words [green_living_words] (nature_earth)",
-   "national sports [national_sports] (places_geography)",
-   "olympic sports [olympic_sports] (sports_games)",
-   "outdoor activities [outdoor_activities] (travel_transport)"
+   "meadow [meadow] (nature_earth)",
+   "midsummer [midsummer] (home_everyday)"
   ]
  },
  {
-  "id": 2008,
-  "text": "cyclone",
+  "id": 48809,
+  "text": "windbreak",
   "type": "common",
+  "rec": 3,
+  "themes": [
+   "beach gear [beach_gear] (travel_transport)",
+   "beach [beach] (places_geography)"
+  ]
+ },
+ {
+  "id": 2575,
+  "text": "windshield",
+  "type": "common",
+  "rec": 1,
+  "themes": [
+   "cars [cars] (travel_transport)",
+   "car parts [car_parts] (travel_transport)",
+   "things made of glass [things_made_of_glass] (qualities)"
+  ]
+ },
+ {
+  "id": 39385,
+  "text": "wise",
+  "type": "common",
+  "rec": 1,
+  "themes": [
+   "words for smart [words_for_smart] (qualities)",
+   "positive traits [positive_traits] (people_society)"
+  ]
+ },
+ {
+  "id": 5880,
+  "text": "wood carving",
+  "type": "phrase",
   "rec": 2,
   "themes": [
-   "weather [weather] (nature_earth)",
-   "storms [storms] (nature_earth)",
-   "natural disasters [natural_disasters] (nature_earth)",
-   "things with eyes [things_with_eyes] (qualities)"
+   "hobbies and crafts [hobbies_and_crafts] (sports_games)",
+   "pacific art words [pacific_art_words] (arts_entertainment)",
+   "african art words [african_art_words] (arts_entertainment)"
   ]
  },
  {
-  "id": 6939,
-  "text": "Cyclops",
+  "id": 25202,
+  "text": "wrapping paper",
   "type": "common",
-  "rec": 2,
+  "rec": 1,
   "themes": [
-   "mythology [mythology] (history_myth)",
-   "mythical creatures [mythical_creatures] (history_myth)",
-   "things with eyes [things_with_eyes] (qualities)"
+   "gift wrapping [gift_wrapping] (home_everyday)",
+   "paper goods [paper_goods] (home_everyday)",
+   "things made of paper [things_made_of_paper] (qualities)"
   ]
  },
  {
-  "id": 6024,
-  "text": "cymbals",
+  "id": 1270,
+  "text": "wrasse",
   "type": "common",
-  "rec": 2,
+  "rec": 5,
+  "themes": [
+   "fish [fish] (animals)",
+   "sea fish [sea_fish] (animals)",
+   "aquarium [aquarium] (places_geography)"
+  ]
+ },
+ {
+  "id": 21233,
+  "text": "xebec",
+  "type": "common",
+  "rec": 5,
+  "themes": [
+   "pirate ships [pirate_ships] (history_myth)",
+   "sailing ships [sailing_ships] (travel_transport)"
+  ]
+ },
+ {
+  "id": 11250,
+  "text": "XLR",
+  "type": "acronym",
+  "rec": 5,
+  "themes": [
+   "recording studio words [recording_studio_words] (arts_entertainment)",
+   "cables and connectors [cables_and_connectors] (science_tech)"
+  ]
+ },
+ {
+  "id": 6014,
+  "text": "xylophone",
+  "type": "common",
+  "rec": 1,
   "themes": [
    "instruments [instruments] (arts_entertainment)",
    "percussion instruments [percussion_instruments] (arts_entertainment)",
-   "things that come in pairs [things_that_come_in_pairs] (qualities)"
+   "classroom instruments [classroom_instruments] (arts_entertainment)",
+   "things made of wood [things_made_of_wood] (qualities)"
   ]
  },
  {
-  "id": 1699,
-  "text": "daffodil",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "flowers [flowers] (nature_earth)",
-   "national symbols [national_symbols] (places_geography)",
-   "easter [easter] (home_everyday)",
-   "garden flowers [garden_flowers] (nature_earth)",
-   "spring flowers [spring_flowers] (nature_earth)",
-   "flower bulbs [flower_bulbs] (nature_earth)",
-   "poisonous plants [poisonous_plants] (nature_earth)",
-   "national flowers [national_flowers] (places_geography)",
-   "shades of yellow [shades_of_yellow] (qualities)",
-   "colors named after flowers [colors_named_after_flowers] (qualities)"
-  ]
- },
- {
-  "id": 12095,
-  "text": "daguerreotype",
-  "type": "common",
-  "rec": 5,
-  "themes": [
-   "photography words [photography_words] (arts_entertainment)",
-   "inventions [inventions] (science_tech)"
-  ]
- },
- {
-  "id": 1730,
-  "text": "dahlia",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "flowers [flowers] (nature_earth)",
-   "garden flowers [garden_flowers] (nature_earth)",
-   "bouquet flowers [bouquet_flowers] (nature_earth)",
-   "flower bulbs [flower_bulbs] (nature_earth)",
-   "national flowers [national_flowers] (places_geography)"
-  ]
- },
- {
-  "id": 30212,
-  "text": "Daintree",
+  "id": 44390,
+  "text": "Yankee Stadium",
   "type": "place",
-  "rec": 4,
-  "themes": [
-   "famous forests [famous_forests] (nature_earth)",
-   "australian states and regions [australian_states_and_regions] (places_geography)",
-   "australian landmarks [australian_landmarks] (places_geography)"
-  ]
- },
- {
-  "id": 1695,
-  "text": "daisy",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "flowers [flowers] (nature_earth)",
-   "garden flowers [garden_flowers] (nature_earth)",
-   "wildflowers [wildflowers] (nature_earth)",
-   "spring flowers [spring_flowers] (nature_earth)",
-   "bouquet flowers [bouquet_flowers] (nature_earth)",
-   "meadow [meadow] (nature_earth)",
-   "colors named after flowers [colors_named_after_flowers] (qualities)",
-   "white things [white_things] (qualities)"
-  ]
- },
- {
-  "id": 44323,
-  "text": "Dakar Rally",
-  "type": "proper",
-  "rec": 3,
-  "themes": [
-   "famous sporting events [famous_sporting_events] (sports_games)",
-   "famous races [famous_races] (sports_games)",
-   "motor racing [motor_racing] (travel_transport)"
-  ]
- },
- {
-  "id": 34478,
-  "text": "Dalai Lama",
-  "type": "person",
   "rec": 2,
   "themes": [
-   "buddhism words [buddhism_words] (people_society)",
-   "nobel laureates [nobel_laureates] (science_tech)"
+   "famous stadiums [famous_stadiums] (sports_games)",
+   "new york landmarks [new_york_landmarks] (places_geography)"
   ]
  },
  {
-  "id": 24859,
-  "text": "damask",
+  "id": 15058,
+  "text": "yellow fever",
+  "type": "common",
+  "rec": 2,
+  "themes": [
+   "historic diseases [historic_diseases] (body_health)",
+   "tropical diseases [tropical_diseases] (body_health)",
+   "viruses [viruses] (science_tech)"
+  ]
+ },
+ {
+  "id": 37434,
+  "text": "Yosemite",
+  "type": "place",
+  "rec": 2,
+  "themes": [
+   "famous parks [famous_parks] (places_geography)",
+   "us landmarks [us_landmarks] (places_geography)",
+   "us national parks [us_national_parks] (travel_transport)"
+  ]
+ },
+ {
+  "id": 22701,
+  "text": "Yunus Emre",
+  "type": "person",
+  "rec": 5,
+  "themes": [
+   "turkish folklore [turkish_folklore] (history_myth)",
+   "turkish writers [turkish_writers] (arts_entertainment)"
+  ]
+ },
+ {
+  "id": 34434,
+  "text": "zakat",
   "type": "common",
   "rec": 4,
   "themes": [
-   "fabrics [fabrics] (home_everyday)",
-   "patterns [patterns] (qualities)"
+   "islam words [islam_words] (people_society)",
+   "ramadan and eid [ramadan_and_eid] (home_everyday)"
   ]
  },
  {
-  "id": 30523,
-  "text": "damask rose",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "sweet-smelling flowers [sweet_smelling_flowers] (nature_earth)",
-   "middle eastern scents [middle_eastern_scents] (qualities)"
-  ]
- },
- {
-  "id": 373,
-  "text": "damson",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "fruits [fruits] (food_drink)",
-   "stone fruits [stone_fruits] (food_drink)",
-   "shades of purple [shades_of_purple] (qualities)"
-  ]
- },
- {
-  "id": 6204,
-  "text": "dancer",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "dance [dance] (arts_entertainment)",
-   "arts jobs [arts_jobs] (people_society)"
-  ]
- },
- {
-  "id": 1727,
-  "text": "dandelion",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "flowers [flowers] (nature_earth)",
-   "foraging finds [foraging_finds] (nature_earth)",
-   "wildflowers [wildflowers] (nature_earth)",
-   "edible flowers [edible_flowers] (nature_earth)",
-   "flowers with animal names [flowers_with_animal_names] (nature_earth)",
-   "weeds [weeds] (nature_earth)",
-   "meadow [meadow] (nature_earth)",
-   "shades of yellow [shades_of_yellow] (qualities)",
-   "colors named after flowers [colors_named_after_flowers] (qualities)",
-   "yellow things [yellow_things] (qualities)"
-  ]
- },
- {
-  "id": 17467,
-  "text": "dandelion greens",
-  "type": "common",
-  "rec": 4,
-  "themes": [
-   "leafy greens [leafy_greens] (food_drink)",
-   "bitter foods [bitter_foods] (qualities)"
-  ]
- },
- {
-  "id": 24531,
-  "text": "dandy",
-  "type": "common",
-  "rec": 3,
-  "themes": [
-   "fashion styles [fashion_styles] (home_everyday)",
-   "words for good [words_for_good] (qualities)"
-  ]
- },
- {
-  "id": 16745,
-  "text": "dark chocolate",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "superfoods [superfoods] (body_health)",
-   "chocolates [chocolates] (food_drink)",
-   "bitter foods [bitter_foods] (qualities)"
-  ]
- },
- {
-  "id": 12558,
-  "text": "Darth Vader",
+  "id": 15066,
+  "text": "Zika",
   "type": "proper",
-  "rec": 1,
+  "rec": 2,
   "themes": [
-   "dress-up costumes [dress_up_costumes] (arts_entertainment)",
-   "black things [black_things] (qualities)"
-  ]
- },
- {
-  "id": 2592,
-  "text": "dashboard",
-  "type": "common",
-  "rec": 1,
-  "themes": [
-   "cars [cars] (travel_transport)",
-   "things with buttons [things_with_buttons] (home_everyday)",
-   "software words [software_words] (science_tech)"
+   "tropical diseases [tropical_diseases] (body_health)",
+   "viruses [viruses] (science_tech)"
   ]
  }
 ]

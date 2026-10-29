@@ -1,0 +1,220 @@
+// Depth 4+ word batch: Home & Everyday, chunk 1 (window coverings ... lunar new year).
+const T = (o = {}) => ({ type: 'title', ...o });
+const REL = (o = {}) => ({ type: 'title', sens: true, ...o });
+const P = (o = {}) => ({ type: 'proper', ...o });
+
+export const THEMES = {
+  window_coverings: { d: 2 }, rugs_and_carpets: { d: 3 }, fireplace_words: { d: 3 }, saws: { d: 3 }, brooms_and_brushes: { d: 2 },
+  staircase_parts: { d: 3 }, parts_of_a_door: { d: 2 },
+  ottoman_clothing: { d: 5, region: ['TR'] }, middle_eastern_clothing: { d: 4 }, african_clothing: { d: 4 }, japanese_clothing: { d: 3 },
+  indian_clothing: { d: 3, region: ['IN'] }, pacific_island_clothing: { d: 4 }, south_american_clothing: { d: 4 }, western_wear: { d: 2 },
+  european_folk_costume: { d: 3 }, historical_hats: { d: 4 }, cotton_fabrics: { d: 3 }, wool_fabrics: { d: 3 }, embroidery_stitches: { d: 4 },
+  sewing_kit: { d: 2 }, necklines: { d: 3 },
+  christmas_carols: { d: 1, lang: true }, santa_s_reindeer: { d: 1, complete: true }, twelve_days_of_christmas_gifts: { d: 2, complete: true },
+  wedding_anniversaries: { d: 3, lang: true }, wedding_rhyme: { d: 3, complete: true, lang: true }, party_supplies: { d: 1 },
+  diwali: { d: 3, region: ['IN'], sensitive: true }, lunar_new_year: { d: 2 },
+};
+
+export const FIXES = [
+  { gloss: ['berber', 'african_languages', 'language'] }, { gloss: ['underlay', 'roof_parts', 'roof'] }, { gloss: ['poker', 'card_games', 'card game'] },
+  { gloss: ['ankara', 'turkish_cities', 'city'] }, { gloss: ['fugu', 'fish', 'pufferfish'] }, { gloss: ['pyjama', 'hindi_everyday_words', 'Hindi'] },
+  { gloss: ['duster', 'cleaning_items', 'cleaning'] }, { gloss: ['lawn', 'garden', 'garden'] }, { gloss: ['alpaca', 'farm_animals', 'animal'] },
+  { gloss: ['Dasher', 'fast_things', 'sprinter'] }, { gloss: ['Dancer', 'dance', 'performer'] }, { gloss: ['Vixen', 'wild_dogs_and_foxes', 'fox'] },
+  { gloss: ['Comet', 'space', 'astronomy'] },
+];
+
+export const DATA = {
+  window_coverings: [
+    ['curtains', 1, 1], ['blinds', 1, 1], ['shutters', 2, 2], ['drapes', 2, 1, { reg: ['US'] }], ['roller blind', 2, 1, { al: [['roller shade', 'synonym', 3, 2, ['US']]] }],
+    ['venetian blind', 2, 1], ['net curtains', 3, 2, { reg: ['UK'] }], ['valance', 3, 3], ['pelmet', 4, 3, { reg: ['UK'] }], ['curtain rod', 2, 2, { al: [['curtain pole', 'synonym', 2, 2, ['UK']]] }],
+    ['curtain rings', 3, 3], ['tieback', 4, 3], ['roman blind', 3, 3, { al: [['roman shade', 'synonym', 3, 3, ['US']]] }], ['vertical blinds', 2, 2], ['sheers', 3, 3],
+    ['blackout curtains', 2, 2], ['cafe curtains', 3, 3], ['plantation shutters', 3, 3], ['jalousie', 5, 4], ['swag', 5, 4, { g: 'curtain' }], ['cornice', 4, 4, { g: 'window' }],
+    ['window shade', 2, 2, { reg: ['US'] }], ['curtain hooks', 3, 3], ['pleated blind', 3, 3], ['cafe rod', 5, 5],
+  ],
+  rugs_and_carpets: [
+    ['rug', 1, 1, { g: 'carpet' }], ['carpet', 1, 1], ['doormat', 1, 2], ['runner', 2, 2, { g: 'rug' }], ['shag', 3, 2, { g: 'carpet' }], ['persian rug', 2, 1, { al: [['Persian carpet', 'synonym', 2, 1]] }],
+    ['kilim', 4, 3], ['dhurrie', 5, 4], ['area rug', 2, 2], ['throw rug', 3, 3], ['rag rug', 3, 3], ['sheepskin rug', 3, 3], ['oriental rug', 2, 2],
+    ['Axminster', 4, 3, { reg: ['UK'], type: 'proper' }], ['Wilton', 5, 5, { g: 'carpet', type: 'proper' }], ['broadloom', 4, 4], ['welcome mat', 2, 2], ['berber', 4, 4, { g: 'carpet' }],
+    ['stair runner', 3, 3], ['hearth rug', 4, 4], ['bearskin rug', 3, 3], ['prayer rug', 3, 3, { sens: true }], ['jute rug', 3, 3], ['flokati', 5, 5], ['rya', 5, 5, { g: 'rug' }],
+    ['underlay', 4, 4, { g: 'carpet', reg: ['UK'] }], ['carpet tile', 3, 3], ['shag pile', 4, 4], ['bath mat', 2, 3],
+  ],
+  fireplace_words: [
+    ['hearth', 2, 1], ['mantel', 2, 1], ['mantelpiece', 2, 1], ['grate', 3, 2, { g: 'fireplace' }], ['poker', 2, 2, { g: 'fireplace' }], ['bellows', 3, 2],
+    ['flue', 4, 3], ['kindling', 2, 2], ['firewood', 1, 2], ['log', 1, 2, { g: 'wood' }], ['chimney', 1, 1, { g: 'house' }], ['fire screen', 3, 2, { al: [['fireguard', 'synonym', 3, 2, ['UK']]] }],
+    ['andirons', 4, 3, { al: [['firedogs', 'synonym', 5, 4]] }], ['fire tongs', 3, 3], ['coal scuttle', 4, 3], ['ash pan', 4, 4], ['damper', 4, 4, { g: 'chimney' }], ['firebox', 4, 3],
+    ['log basket', 3, 3], ['chimney breast', 4, 4, { reg: ['UK'] }], ['fireplace surround', 4, 4], ['tinder', 3, 3, { g: 'fire' }], ['embers', 2, 3], ['ashes', 1, 3], ['firelighter', 3, 3, { reg: ['UK'] }],
+    ['log burner', 3, 3, { reg: ['UK'] }], ['wood stove', 2, 3], ['inglenook', 5, 4], ['fender', 4, 4, { g: 'fireplace' }], ['flue liner', 5, 5], ['creosote', 5, 5], ['hearthstone', 4, 3],
+  ],
+  saws: [
+    ['saw', 1, 1, { g: 'tool' }], ['handsaw', 2, 1], ['hacksaw', 2, 1], ['coping saw', 3, 2], ['bow saw', 3, 2], ['fret saw', 4, 3, { al: [['fretsaw', 'spelling', 4, 3]] }], ['chainsaw', 1, 1],
+    ['band saw', 3, 2, { al: [['bandsaw', 'spelling', 3, 2]] }], ['circular saw', 2, 1], ['table saw', 2, 1], ['jigsaw', 2, 2, { g: 'saw' }], ['crosscut saw', 4, 3],
+    ['rip saw', 4, 3], ['tenon saw', 4, 3], ['panel saw', 4, 4], ['mitre saw', 3, 2, { reg: ['UK'], al: [['miter saw', 'spelling', 3, 2, ['US']], ['chop saw', 'synonym', 3, 3]] }],
+    ['reciprocating saw', 3, 3, { al: [['Sawzall', 'synonym', 4, 4, ['US'], { type: 'org', tm: true }]] }], ['scroll saw', 4, 3], ['keyhole saw', 4, 4], ['pruning saw', 3, 3],
+    ['dovetail saw', 4, 4], ['back saw', 4, 4], ['pull saw', 4, 4], ['ryoba', 5, 5], ['hole saw', 3, 3], ['tile saw', 3, 3], ['whipsaw', 4, 4], ['buzz saw', 3, 2],
+    ['pit saw', 5, 5], ['compass saw', 4, 4], ['flush-cut saw', 5, 5], ['two-man saw', 4, 4],
+  ],
+  brooms_and_brushes: [
+    ['broom', 1, 1], ['dustpan', 2, 2], ['dustpan brush', 3, 2], ['push broom', 3, 2], ['besom', 4, 3], ['whisk broom', 3, 3], ['feather duster', 2, 2], ['toilet brush', 2, 2],
+    ['scrubbing brush', 2, 2, { al: [['scrub brush', 'synonym', 2, 2, ['US']]] }], ['mop', 1, 3], ['sweeping brush', 2, 2, { reg: ['UK'] }], ['bottle brush', 3, 3], ['dish brush', 2, 2],
+    ['lint brush', 3, 3], ['wire brush', 3, 3], ['hand brush', 2, 2], ['carpet sweeper', 3, 4], ['squeegee', 3, 4, { g: 'cleaning' }], ['yard broom', 3, 3, { reg: ['US'] }], ['grill brush', 3, 3],
+    ['radiator brush', 4, 4], ['oven brush', 4, 4], ['pot scrubber', 3, 3], ['washing-up brush', 3, 3, { reg: ['UK'] }], ['deck brush', 4, 4], ['banister brush', 5, 5, { reg: ['UK'] }],
+    ['toothbrush', 1, 4], ['cobweb brush', 4, 4], ['lambswool duster', 4, 4, { reg: ['UK'] }],
+  ],
+  staircase_parts: [
+    ['stair', 1, 1], ['step', 1, 2, { g: 'stairs' }], ['banister', 2, 1, { al: [['bannister', 'spelling', 3, 2], ['balustrade', 'synonym', 3, 3]] }], ['handrail', 2, 1], ['tread', 3, 2, { g: 'stairs' }], ['riser', 3, 2, { g: 'stairs' }],
+    ['newel post', 3, 2, { al: [['newel', 'synonym', 4, 3]] }], ['baluster', 4, 3, { al: [['spindle', 'synonym', 3, 3, [], { g: 'stairs' }]] }], ['landing', 2, 1, { g: 'stairs' }], ['stringer', 4, 4, { g: 'stairs' }],
+    ['nosing', 4, 4], ['flight', 2, 2, { g: 'stairs' }], ['winder', 4, 4], ['half landing', 3, 3], ['stairwell', 3, 2], ['stair rod', 4, 4], ['bullnose', 5, 5, { g: 'step' }],
+    ['gooseneck', 5, 5, { g: 'handrail' }], ['going', 5, 5, { g: 'stairs', reg: ['UK'] }], ['volute', 5, 5], ['curtail step', 5, 5], ['stair carpet', 2, 3], ['quarter landing', 4, 4],
+    ['cap rail', 5, 5], ['stair gate', 2, 4, { reg: ['UK'] }], ['stair lift', 2, 4], ['spiral staircase', 2, 3], ['top step', 1, 3],
+  ],
+  parts_of_a_door: [
+    ['hinge', 2, 1], ['doorknob', 1, 1, { al: [['door handle', 'synonym', 1, 1]] }], ['latch', 3, 2, { g: 'door' }], ['jamb', 4, 3], ['threshold', 3, 2], ['knocker', 2, 1], ['peephole', 2, 1, { al: [['spyhole', 'synonym', 3, 2, ['UK']], ['door viewer', 'synonym', 4, 3]] }],
+    ['lock', 1, 1, { g: 'door' }], ['deadbolt', 3, 2], ['keyhole', 1, 1], ['door frame', 1, 1], ['lintel', 4, 3], ['door panel', 2, 2], ['letterbox', 2, 2, { reg: ['UK'], al: [['mail slot', 'synonym', 2, 2, ['US']]] }],
+    ['doorbell', 1, 2], ['door chain', 2, 2], ['strike plate', 4, 4], ['hinge pin', 4, 4], ['door stop', 2, 3], ['sill', 3, 3], ['fanlight', 4, 3, { reg: ['UK'], al: [['transom', 'synonym', 4, 4, ['US']]] }],
+    ['sidelight', 4, 4], ['door sweep', 4, 4], ['weatherstrip', 4, 4], ['escutcheon', 5, 5, { g: 'keyhole plate' }], ['stile', 5, 5], ['astragal', 5, 5], ['kick plate', 4, 4], ['door closer', 3, 3],
+    ['cat flap', 2, 3, { reg: ['UK'] }], ['architrave', 4, 4, { reg: ['UK'] }], ['peep sight', 5, 5], ['door number', 1, 3],
+  ],
+  ottoman_clothing: [
+    ['fez', 3, 2, { g: 'hat', al: [['tarboosh', 'synonym', 5, 4]] }], ['kaftan', 3, 2, { al: [['caftan', 'spelling', 3, 2]] }], ['salvar', 5, 4], ['entari', 5, 5], ['yashmak', 4, 3, { sens: true }],
+    ['kalpak', 5, 5], ['turban', 2, 3], ['harem pants', 3, 3], ['dolman', 5, 5, { g: 'robe' }], ['mintan', 5, 5], ['cepken', 5, 5], ['yelek', 5, 5], ['kavuk', 5, 5],
+    ['feredze', 5, 5, { sens: true }], ['yemeni', 5, 5], ['pestemal', 5, 5], ['bork', 5, 5, { g: 'hat' }], ['kusak', 5, 5], ['jubba', 5, 5], ['janissary hat', 4, 4], ['sultan robe', 4, 4],
+  ],
+  middle_eastern_clothing: [
+    ['thobe', 3, 2, { al: [['thawb', 'spelling', 4, 3], ['dishdasha', 'synonym', 4, 3], ['kandura', 'synonym', 4, 3]] }], ['abaya', 3, 2, { sens: true }], ['keffiyeh', 3, 2, { al: [['kufiya', 'spelling', 4, 3], ['shemagh', 'synonym', 4, 3], ['ghutra', 'synonym', 5, 4]] }],
+    ['agal', 5, 4], ['bisht', 5, 4], ['hijab', 2, 2, { sens: true }], ['niqab', 3, 2, { sens: true }], ['burqa', 3, 2, { sens: true }], ['chador', 4, 3, { sens: true }],
+    ['jalabiya', 4, 3, { al: [['galabeya', 'spelling', 4, 3]] }], ['djellaba', 4, 3], ['kufi', 4, 4, { sens: true }], ['taqiyah', 5, 5, { sens: true }], ['sirwal', 5, 5],
+    ['shayla', 4, 4, { sens: true }], ['burnous', 5, 4], ['mashlah', 5, 5], ['kaftan', 3, 3], ['headscarf', 2, 3], ['abaya cloak', 4, 4, { sens: true }], ['tarha', 5, 5, { sens: true }],
+  ],
+  african_clothing: [
+    ['dashiki', 3, 1], ['kente', 3, 2, { g: 'cloth', al: [['kente cloth', 'synonym', 3, 2]] }], ['boubou', 4, 3], ['agbada', 4, 3], ['gele', 4, 3], ['kanga', 4, 3, { g: 'cloth', al: [['leso', 'synonym', 5, 5]] }],
+    ['kitenge', 4, 3], ['kikoy', 4, 4, { al: [['kikoi', 'spelling', 4, 4]] }], ['shuka', 4, 4], ['buba', 5, 5], ['iro', 5, 5, { g: 'wrapper' }], ['fila', 5, 5, { g: 'cap' }],
+    ['ankara', 4, 3, { g: 'fabric' }], ['kufi', 4, 4, { sens: true }], ['kanzu', 4, 3], ['djellaba', 4, 3], ['lappa', 5, 5], ['pagne', 5, 5], ['sokoto', 5, 5],
+    ['adire', 5, 5], ['mudcloth', 4, 4, { al: [['bogolan', 'synonym', 5, 5]] }], ['head wrap', 2, 3], ['fugu', 5, 5, { g: 'smock' }], ['gomesi', 5, 5], ['kaftan', 3, 3],
+  ],
+  japanese_clothing: [
+    ['kimono', 1, 1, { g: 'robe' }], ['yukata', 3, 2], ['obi', 3, 2, { g: 'sash' }], ['hakama', 4, 3], ['geta', 4, 2], ['tabi', 4, 3], ['haori', 4, 3], ['happi', 4, 4], ['happi coat', 4, 3],
+    ['zori', 4, 3], ['jinbei', 5, 4], ['juban', 5, 5], ['kasa', 5, 5, { g: 'hat' }], ['furisode', 5, 4], ['tomesode', 5, 5], ['uchikake', 5, 5], ['fundoshi', 4, 4],
+    ['samue', 5, 5], ['waraji', 5, 5], ['tenugui', 5, 5], ['kosode', 5, 5], ['jikatabi', 5, 5], ['okobo', 5, 5], ['kanzashi', 5, 4], ['hanten', 5, 5],
+    ['straw sandals', 3, 3], ['wooden clogs', 2, 3],
+  ],
+  indian_clothing: [
+    ['sari', 2, 1, { al: [['saree', 'spelling', 2, 1]] }], ['kurta', 3, 2], ['dhoti', 3, 2], ['lehenga', 4, 3], ['sherwani', 4, 3], ['dupatta', 4, 3], ['salwar kameez', 3, 2],
+    ['churidar', 4, 3], ['lungi', 4, 3], ['angarakha', 5, 5], ['pagri', 4, 4, { al: [['pagdi', 'synonym', 5, 5]] }], ['choli', 4, 4], ['ghagra', 5, 4], ['anarkali', 4, 4],
+    ['mundu', 5, 4], ['veshti', 5, 5], ['Nehru jacket', 3, 3, { type: 'proper' }], ['jodhpurs', 3, 3], ['mojari', 5, 5], ['kolhapuri', 4, 4, { g: 'sandals' }], ['jutti', 5, 5],
+    ['salwar', 4, 3], ['pallu', 5, 5], ['achkan', 5, 5], ['bandhgala', 5, 5], ['phulkari', 5, 5], ['kurti', 4, 3], ['gamcha', 5, 5], ['pyjama', 3, 4, { g: 'trousers' }],
+  ],
+  pacific_island_clothing: [
+    ['lavalava', 4, 2], ['sulu', 4, 3], ['pareo', 3, 2, { al: [['pareu', 'spelling', 4, 3]] }], ['lei', 2, 1], ['aloha shirt', 2, 1, { al: [['Hawaiian shirt', 'synonym', 1, 1]] }], ['piupiu', 5, 4],
+    ['muumuu', 3, 2, { al: [['mumu', 'spelling', 4, 3]] }], ['tapa', 4, 3, { g: 'cloth' }], ['ie toga', 5, 4], ['puletasi', 5, 5], ['kihei', 5, 5], ['malo', 5, 5, { g: 'loincloth' }],
+    ['hula skirt', 3, 2], ['grass skirt', 2, 2], ['flower crown', 2, 3], ['haku lei', 5, 5], ['korowai', 5, 4], ['hei tiki', 4, 4], ['feather cloak', 4, 4], ['taovala', 5, 5],
+    ['sarong', 2, 3], ['shell necklace', 3, 4], ['kikepa', 5, 5], ['pareo wrap', 4, 3],
+  ],
+  south_american_clothing: [
+    ['poncho', 1, 1], ['chullo', 4, 2], ['pollera', 5, 3], ['ruana', 4, 3], ['bombachas', 5, 4], ['manta', 5, 4, { g: 'shawl' }], ['aguayo', 5, 4], ['lliclla', 5, 5],
+    ['gaucho pants', 3, 3], ['alpaca sweater', 2, 3], ['ojotas', 5, 5], ['abarcas', 5, 5], ['chuspa', 5, 5], ['faja', 5, 5, { g: 'sash' }],
+    ['alpargatas', 4, 4], ['chiripa', 5, 5], ['vincha', 5, 5], ['unku', 5, 5], ['panama hat', 2, 3, { al: [['jipijapa', 'synonym', 5, 5]] }], ['gaucho hat', 3, 3], ['llama wool', 3, 3],
+    ['woolen cap', 2, 3], ['knitted hat', 2, 3], ['bowler hat', 2, 4],
+  ],
+  western_wear: [
+    ['cowboy hat', 1, 1], ['chaps', 3, 2, { g: 'cowboy' }], ['bolo tie', 3, 2], ['bandana', 2, 1], ['duster', 3, 3, { g: 'coat' }], ['cowboy boots', 1, 1], ['spurs', 2, 2, { g: 'horse tack' }], ['Stetson', 3, 3, { type: 'org', tm: true }],
+    ['ten-gallon hat', 3, 2], ['belt buckle', 2, 3], ['western shirt', 2, 2], ['pearl snaps', 4, 4], ['denim jacket', 2, 3], ['jeans', 1, 3], ['neckerchief', 3, 3], ['string tie', 4, 4],
+    ['yoke', 4, 4, { g: 'clothing' }], ['gaiters', 4, 4], ['fringe jacket', 3, 3], ['slicker', 4, 4], ['concho belt', 5, 5], ['buckskin jacket', 3, 3], ['rodeo shirt', 4, 4],
+    ['cattleman crease', 5, 5], ['Wrangler', 3, 4, { type: 'org', tm: true, g: 'jeans' }], ['western boots', 2, 2], ['sheepskin vest', 3, 4],
+  ],
+  european_folk_costume: [
+    ['kilt', 1, 1], ['lederhosen', 3, 1], ['dirndl', 3, 1], ['sporran', 4, 2], ['clogs', 2, 2, { al: [['wooden shoes', 'synonym', 2, 2], ['klompen', 'synonym', 4, 4]] }], ['bunad', 5, 3],
+    ["tam o' shanter", 3, 3], ['glengarry', 4, 4], ['tartan', 2, 3, { g: 'cloth' }], ['sgian dubh', 5, 5], ['loden jacket', 4, 4], ['tracht', 5, 5], ['tyrolean hat', 3, 3], ['kosovorotka', 5, 5],
+    ['sarafan', 4, 4], ['kokoshnik', 4, 4], ['vyshyvanka', 5, 4], ['opanak', 5, 5], ['fustanella', 5, 4], ['tsarouhi', 5, 5], ['mantilla', 4, 3], ['flamenco dress', 2, 3],
+    ['barretina', 5, 5], ['beret', 1, 4], ['gakti', 5, 4], ['ghillie brogues', 5, 5], ['dutch cap', 3, 3], ['lace bonnet', 3, 3], ['sash', 3, 4],
+  ],
+  historical_hats: [
+    ['bicorne', 4, 3], ['tricorne', 3, 2, { al: [['tricorn', 'spelling', 4, 3]] }], ['top hat', 1, 1, { g: 'hat' }], ['bowler', 2, 2, { g: 'hat', al: [['derby', 'synonym', 3, 3, ['US'], { g: 'hat' }]] }], ['boater', 3, 2],
+    ['cloche', 3, 3, { g: 'hat' }], ['fedora', 2, 2], ['pillbox', 3, 3, { g: 'hat' }], ['homburg', 4, 4], ['deerstalker', 3, 3], ['pork pie hat', 3, 4], ['trilby', 3, 3, { reg: ['UK'] }],
+    ['fascinator', 3, 4], ['mob cap', 4, 4], ['bonnet', 2, 3, { g: 'hat' }], ['coif', 4, 4], ['hennin', 5, 5], ['wimple', 3, 4], ['capotain', 5, 5], ['phrygian cap', 4, 4], ['liberty cap', 5, 5],
+    ['busby', 4, 4], ['shako', 5, 5], ['kepi', 4, 4], ['pith helmet', 3, 3], ['coonskin cap', 3, 3], ['beaver hat', 4, 4], ['poke bonnet', 4, 4], ['toque', 4, 4, { g: 'hat' }],
+    ['cavalier hat', 4, 4], ['stovepipe hat', 4, 3], ['wide-awake hat', 5, 5], ['opera hat', 5, 5], ['cocked hat', 3, 3], ['snood', 4, 4],
+  ],
+  cotton_fabrics: [
+    ['denim', 1, 1, { g: 'fabric' }], ['calico', 3, 2], ['muslin', 3, 2], ['gingham', 3, 2], ['poplin', 4, 3], ['corduroy', 2, 2, { g: 'fabric' }], ['chambray', 4, 3], ['seersucker', 3, 3], ['flannelette', 4, 3],
+    ['canvas', 2, 3, { g: 'fabric' }], ['terry cloth', 3, 3], ['terrycloth', 3, 3], ['jersey', 2, 3, { g: 'fabric' }], ['twill', 3, 3], ['percale', 4, 4], ['sateen', 4, 4],
+    ['voile', 4, 4], ['lawn', 4, 4, { g: 'fabric' }], ['cambric', 5, 5], ['batiste', 5, 5], ['madras', 4, 4, { g: 'fabric' }], ['chintz', 4, 4], ['moleskin', 4, 4, { g: 'fabric' }],
+    ['velveteen', 4, 4], ['broadcloth', 4, 4], ['dimity', 5, 5], ['organdie', 5, 5], ['ticking', 4, 4], ['cheesecloth', 3, 3], ['nainsook', 5, 5], ['oxford cloth', 4, 4],
+    ['gauze', 3, 3], ['toile', 4, 4],
+  ],
+  wool_fabrics: [
+    ['tweed', 2, 1], ['flannel', 2, 2, { g: 'fabric' }], ['cashmere', 2, 1], ['merino', 3, 2, { g: 'wool' }], ['mohair', 3, 2], ['felt', 2, 2, { g: 'fabric' }], ['angora', 3, 3, { g: 'fabric' }], ['alpaca', 2, 2, { g: 'wool' }],
+    ['lambswool', 3, 2], ['shetland', 4, 4, { g: 'wool' }], ['worsted', 4, 3], ['serge', 4, 4], ['gabardine', 4, 4], ['Harris Tweed', 3, 3, { type: 'proper', tm: true }], ['boiled wool', 4, 3],
+    ['boucle', 5, 5], ['melton', 5, 5], ['loden', 5, 5], ['vicuna wool', 5, 4], ['camel hair', 4, 4], ['houndstooth', 3, 3], ['herringbone', 3, 4, { g: 'pattern' }], ['challis', 5, 5], ['barathea', 5, 5],
+    ['baize', 4, 4], ['pashmina', 4, 3], ['duffle', 4, 4, { g: 'cloth' }], ['donegal tweed', 4, 4], ['cavalry twill', 5, 5], ['wool', 1, 1], ['qiviut', 5, 5], ['yak wool', 4, 4],
+  ],
+  embroidery_stitches: [
+    ['cross-stitch', 2, 1], ['backstitch', 3, 2], ['running stitch', 2, 2], ['chain stitch', 3, 2], ['satin stitch', 3, 2], ['blanket stitch', 3, 2], ['french knot', 3, 2], ['stem stitch', 4, 3],
+    ['split stitch', 4, 3], ['couching', 4, 3], ['herringbone stitch', 4, 3], ['feather stitch', 4, 3], ['lazy daisy', 4, 3], ['fly stitch', 4, 4], ['seed stitch', 4, 4], ['long and short', 5, 4],
+    ['bullion knot', 5, 4], ['fishbone stitch', 5, 4], ['cretan stitch', 5, 5], ['buttonhole stitch', 4, 3], ['straight stitch', 2, 3], ['petit point', 4, 3], ['gros point', 5, 5],
+    ['tent stitch', 4, 4], ['smocking', 3, 3], ['trellis stitch', 5, 5], ['woven wheel', 5, 5], ['chevron stitch', 5, 5], ['basket stitch', 5, 5], ['pistil stitch', 5, 5],
+    ['padded satin', 5, 5], ['romanian stitch', 5, 5],
+  ],
+  sewing_kit: [
+    ['needle', 1, 1, { g: 'sewing' }], ['thread', 1, 1, { g: 'sewing' }], ['thimble', 2, 1], ['pin cushion', 2, 1], ['scissors', 1, 1], ['tape measure', 1, 1], ['seam ripper', 3, 2], ['safety pin', 1, 2], ['pins', 1, 1],
+    ['button', 1, 2, { g: 'sewing' }], ['bobbin', 3, 2], ['pinking shears', 3, 3], ["tailor's chalk", 4, 3], ['bodkin', 4, 4], ['needle threader', 3, 2], ['embroidery hoop', 3, 3], ['sewing box', 2, 1],
+    ['sewing basket', 2, 1], ['spool', 2, 2], ['needle case', 3, 2], ["tailor's ham", 5, 5], ['rotary cutter', 4, 4], ['seam gauge', 5, 5], ['darning egg', 5, 4],
+    ['beeswax', 4, 5], ['bias tape', 4, 4], ['tracing wheel', 5, 5], ['pattern weights', 5, 5], ['zipper', 1, 3, { g: 'clothing' }], ['elastic', 2, 3, { g: 'band' }], ['fabric scissors', 2, 2],
+    ['snaps', 2, 3], ['hook and eye', 3, 3],
+  ],
+  necklines: [
+    ['v-neck', 1, 1], ['crew neck', 2, 1], ['scoop neck', 2, 1, { al: [['scoop', 'synonym', 2, 2, [], { g: 'neckline' }]] }], ['boat neck', 2, 2, { al: [['bateau', 'synonym', 4, 4]] }], ['sweetheart neckline', 2, 1],
+    ['halter neck', 2, 1, { al: [['halter', 'synonym', 2, 2, [], { g: 'neckline' }]] }], ['turtleneck', 1, 2, { al: [['roll neck', 'synonym', 3, 3, ['UK']]] }], ['polo neck', 2, 2, { reg: ['UK'] }], ['mock neck', 3, 3], ['cowl neck', 3, 2],
+    ['off-the-shoulder', 2, 2], ['square neck', 3, 2], ['round neck', 2, 1], ['plunging neckline', 3, 2], ['keyhole neckline', 4, 3], ['one-shoulder', 3, 3],
+    ['asymmetric neckline', 4, 4], ['jewel neck', 4, 4], ['henley', 3, 4, { g: 'shirt' }], ['strapless', 2, 3], ['Queen Anne neckline', 5, 5, { type: 'proper' }], ['decollete', 4, 4], ['racerback', 3, 4],
+    ['surplice', 4, 4], ['wrap neckline', 3, 3], ['high neck', 2, 3], ['portrait neckline', 5, 5], ['illusion neckline', 5, 5], ['tie neck', 3, 3], ['funnel neck', 4, 4],
+  ],
+  christmas_carols: [
+    ['Silent Night', 1, 1, REL({ al: [['Stille Nacht', 'synonym', 4, 3, [], { type: 'title' }]] })], ['Jingle Bells', 1, 1, T()], ['Deck the Halls', 1, 1, T()], ['Joy to the World', 1, 1, REL()],
+    ['O Holy Night', 2, 1, REL()], ['Away in a Manger', 2, 1, REL()], ['Hark the Herald', 2, 2, REL()], ['Adeste Fideles', 4, 3, REL()], ['The First Noel', 2, 1, REL()],
+    ['God Rest Ye Merry', 3, 2, REL()], ['We Three Kings', 2, 1, REL()], ['Good King Wenceslas', 3, 2, REL()], ['Holly and the Ivy', 3, 2, T()], ['Ding Dong Merrily', 3, 2, T()],
+    ['Bleak Midwinter', 4, 3, REL()], ['Carol of the Bells', 2, 2, T()], ['Little Drummer Boy', 2, 2, T()], ['Coventry Carol', 4, 3, REL()], ['I Saw Three Ships', 3, 3, T()],
+    ['O Tannenbaum', 4, 3, T()], ['Sussex Carol', 5, 4, REL()], ['Gaudete', 5, 5, REL()], ['Personent Hodie', 5, 5, REL()], ['Veni Emmanuel', 4, 4, REL()], ['Wassail Song', 4, 4, T()],
+  ],
+  santa_s_reindeer: [
+    ['Rudolph', 1, 1, P({ tm: true })], ['Dasher', 3, 1, P({ g: 'reindeer' })], ['Dancer', 3, 1, P({ g: 'reindeer' })], ['Prancer', 3, 1, P({ g: 'reindeer' })],
+    ['Vixen', 3, 1, P({ g: 'reindeer' })], ['Comet', 3, 1, P({ g: 'reindeer' })], ['Cupid', 2, 1, P({ g: 'reindeer' })],
+    ['Donner', 3, 1, P({ g: 'reindeer', al: [['Donder', 'spelling', 4, 3, [], { type: 'proper', g: 'reindeer' }]] })], ['Blitzen', 3, 1, P({ g: 'reindeer', al: [['Blixem', 'synonym', 5, 5, [], { type: 'proper', g: 'reindeer' }]] })],
+  ],
+  twelve_days_of_christmas_gifts: [
+    ['partridge', 2, 1], ['turtle doves', 2, 1], ['French hens', 3, 1], ['calling birds', 3, 1, { type: 'phrase' }], ['gold rings', 2, 1],
+    ['geese a-laying', 4, 2, { type: 'phrase' }], ['swans a-swimming', 4, 2, { type: 'phrase' }], ['maids a-milking', 4, 2, { type: 'phrase' }], ['ladies dancing', 3, 2, { type: 'phrase' }],
+    ['lords a-leaping', 4, 2, { type: 'phrase' }], ['pipers piping', 3, 2, { type: 'phrase' }], ['drummers drumming', 3, 2, { type: 'phrase' }],
+  ],
+  wedding_anniversaries: [
+    ['paper', 1, 3, { g: 'material' }], ['cotton', 1, 3], ['leather', 1, 3], ['linen', 2, 3], ['wood', 1, 3, { g: 'material' }],
+    ['iron', 1, 3, { g: 'metal' }], ['wool', 1, 3], ['copper', 2, 3, { g: 'metal' }], ['bronze', 2, 3, { g: 'metal' }], ['pottery', 2, 4],
+    ['tin', 2, 3, { g: 'metal' }], ['steel', 1, 3, { g: 'metal' }], ['silk', 2, 3], ['lace', 2, 3, { g: 'fabric' }], ['ivory', 3, 3, { g: 'material' }],
+    ['crystal', 1, 2, { g: 'glass' }], ['china', 2, 3, { g: 'porcelain' }], ['silver', 1, 1, { g: 'metal' }], ['pearl', 1, 2, { g: 'gem' }], ['coral', 2, 3, { g: 'gem' }],
+    ['ruby', 1, 1, { g: 'gem' }], ['sapphire', 2, 2, { g: 'gem' }], ['gold', 1, 1, { g: 'metal' }], ['emerald', 2, 2, { g: 'gem' }], ['diamond', 1, 1, { g: 'gem' }],
+    ['platinum', 2, 2], ['jade', 3, 3, { g: 'gem' }], ['opal', 3, 3, { g: 'gem' }], ['topaz', 3, 3, { g: 'gemstone' }], ['amethyst', 3, 3, { g: 'gemstone' }],
+    ['golden jubilee', 3, 2], ['silver jubilee', 3, 2], ['diamond jubilee', 3, 2], ['ruby wedding', 2, 1], ['golden wedding', 2, 1],
+  ],
+  wedding_rhyme: [
+    ['something old', 1, 1], ['something new', 1, 1], ['something borrowed', 1, 1], ['something blue', 1, 1], ['sixpence', 3, 2, { al: [['silver sixpence', 'synonym', 4, 3]] }],
+  ],
+  party_supplies: [
+    ['balloons', 1, 1], ['streamers', 1, 1], ['confetti', 1, 1], ['party hat', 1, 1], ['candles', 1, 1], ['birthday cake', 1, 1], ['pinata', 2, 1], ['party blower', 2, 1, { al: [['noisemaker', 'synonym', 2, 2]] }],
+    ['banner', 2, 2, { g: 'party' }], ['paper plates', 1, 1], ['plastic cups', 1, 1], ['napkins', 1, 2], ['goody bag', 2, 1], ['party bag', 1, 1], ['loot bag', 3, 2],
+    ['gift wrap', 1, 2], ['invitations', 1, 2], ['party poppers', 2, 2], ['sparkler', 3, 3], ['tablecloth', 1, 2], ['cupcakes', 1, 2], ['balloon pump', 3, 3], ['helium tank', 3, 3], ['bunting', 3, 2, { g: 'flags', reg: ['UK'] }],
+    ['party favors', 2, 2, { reg: ['US'], al: [['party favours', 'spelling', 2, 2, ['UK']]] }], ['photo booth', 3, 3], ['glow sticks', 2, 3], ['cake topper', 3, 3], ['paper lanterns', 3, 3],
+    ['crepe paper', 3, 3], ['garland', 2, 3], ['cake stand', 3, 4], ['name tags', 2, 3], ['foil balloon', 3, 3], ['tinsel curtain', 4, 4], ['party plates', 2, 2],
+  ],
+  diwali: [
+    ['diya', 3, 1, { al: [['deepam', 'synonym', 5, 4]] }], ['rangoli', 3, 1], ['Lakshmi', 3, 2, P({ g: 'goddess' })], ['Rama', 3, 3, P({ g: 'god' })], ['sparklers', 2, 3], ['firecrackers', 2, 2],
+    ['oil lamp', 2, 2], ['mithai', 4, 3], ['ladoo', 4, 3, { al: [['laddu', 'spelling', 4, 3]] }], ['jalebi', 4, 3], ['barfi', 4, 3], ['gulab jamun', 3, 3], ['kaju katli', 5, 4],
+    ['marigold', 3, 3], ['toran', 5, 4], ['kandil', 5, 5], ['Dhanteras', 4, 3, P()], ['puja', 3, 3], ['Ganesh', 3, 3, P({ g: 'god' })], ['Ramayana', 4, 3, T()],
+    ['Ayodhya', 4, 3, { type: 'place' }], ['Bhai Dooj', 5, 4, P()], ['Choti Diwali', 5, 4, P()], ['Govardhan Puja', 5, 5, P()], ['festival of lights', 2, 1, { type: 'phrase' }],
+  ],
+  lunar_new_year: [
+    ['red envelope', 2, 1, { al: [['hongbao', 'synonym', 4, 3], ['lai see', 'synonym', 5, 4, ['HK']], ['ang pao', 'synonym', 5, 4], ['lucky money', 'synonym', 3, 2]] }], ['lion dance', 2, 1], ['dragon dance', 2, 1],
+    ['firecrackers', 2, 1], ['lanterns', 2, 2], ['dumplings', 1, 2], ['nian gao', 4, 3], ['reunion dinner', 3, 2], ['spring couplets', 4, 3], ['fireworks', 1, 3], ['Chinese zodiac', 2, 2, { type: 'proper' }],
+    ['lantern festival', 3, 2, P()], ['Nian', 4, 3, P({ g: 'beast' })], ['mandarin oranges', 3, 3], ['kumquat tree', 4, 4], ['peach blossom', 4, 4], ['plum blossom', 4, 4], ['spring festival', 2, 1, { al: [['Chunjie', 'synonym', 5, 4, [], { type: 'proper' }]] }],
+    ['Tet', 4, 3, P({ g: 'festival' })], ['Seollal', 5, 4, P()], ['longevity noodles', 4, 3], ['spring rolls', 2, 3], ['tangyuan', 5, 4], ['Gong Xi Fa Cai', 4, 2, P()], ['lantern riddles', 5, 4],
+    ['parade', 1, 3, { g: 'procession' }], ['kitchen god', 5, 4, { sens: true }], ['door gods', 5, 4, { sens: true }], ['red decorations', 2, 3], ['new year cake', 3, 3],
+  ],
+};

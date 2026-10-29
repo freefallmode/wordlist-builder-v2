@@ -40,3 +40,6 @@ Fix every `error` it prints (needs-gloss, bad ratings, too many words) and every
 
 ## Report (under 150 words)
 The file path; number of words, aliases and themes; the `d` spread you chose; any word you had to skip because of a clash; flag judgement calls worth the user's review.
+
+## Keep entries short, no near-duplicates (added after review)
+Use the shortest form people actually use: "smell", not "sense of smell"; "touch", not "sense of touch"; "dentist", not "dentist's office" unless the long form is a different thing. Inside one theme never add an entry whose text merely contains another entry of that theme as a whole word ("sense of smell" next to "smell", "red wine" next to "wine" is fine only when it is a different thing). If the long form is a common alternative name, make it an alias of the short root instead. Check the theme's existing words (list-depth shows them) before adding.
