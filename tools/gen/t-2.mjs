@@ -1,0 +1,30 @@
+const r = (...a) => a;
+export const DATA = {
+  chip_flavors: [['seaweed',3,4],['Cajun',3,4],['Szechuan',4,4],['kimchi',3,4],['Cajun squirrel',5,5],['Chinese curry',3,4],['rosemary',2,4]],
+  street_food: [['burger',1,2],['popcorn',1,2],['ice cream',1,2],['fries',1,2],['pizza',1,2],['noodles',1,2]],
+  italian_food: [['bresaola',4,4],['guanciale',4,4],['nduja',4,4],['pizzoccheri',5,5],['cassata',4,4],['sfogliatella',5,4],['lampredotto',5,5],['bottarga',4,4],['strozzapreti',5,4],['cotechino',5,4],['trofie',5,5],['culurgiones',5,5]],
+  french_food: [['gougères',4,4],['rouille',4,4,{g:'sauce'}],['financier',4,4],['canelé',4,4],['choucroute',4,4],['flammekueche',5,5],['pommes dauphine',4,4],['navarin',5,4],['brandade',4,4],['kouign-amann',4,4],['cervelle de canut',5,5]],
+  spanish_food: [['ajoblanco',5,4],['calçots',5,4],['marmitako',5,5],['sobrasada',4,4],['txangurro',5,5],['escalivada',5,4],['papas arrugadas',5,4],['gofio',5,5],['butifarra',5,4],['zarangollo',5,5]],
+  british_food: [['stovies',4,4],['clapshot',5,5],['Eccles cake',3,4],['Chelsea bun',3,4],['tattie scones',4,4],['Forfar bridie',5,5],['Arbroath smokie',4,4],['cawl',4,4],['pease pudding',4,4],['Kendal mint cake',4,4],['haslet',5,4],['lardy cake',4,4],['Bedfordshire clanger',5,5]],
+  greek_food: [['skordalia',4,4],['trahana',5,5],['revithada',5,5],['tsipouro',5,4],['mastiha',5,4],['soutzoukakia',5,4],['kataifi',4,4],['loukaniko',4,4],['kopanisti',5,5],['tirokafteri',5,5],['diples',4,4],['rizogalo',5,4]],
+  german_food: [['grünkohl',4,4],['rote grütze',4,4],['mettwurst',4,4],['flammkuchen',4,4],['saumagen',5,5],['handkäse',5,5],['streuselkuchen',4,4],['teewurst',5,5],['sülze',5,5],['himmel und erde',5,5]],
+  eastern_european_food: [['lecsó',4,4],['sarmale',4,4],['pljeskavica',5,4],['burek',3,4],['kajmak',5,4],['kutia',5,4],['medovik',5,4],['zacuscă',5,5],['kolduny',5,5],['holodets',5,5]],
+  turkish_breakfast: [['pişi',4,4],['çılbır',4,4],['kaşar',4,4],['bazlama',5,4],['lor peyniri',5,5],['otlu peynir',5,5],['çökelek',5,5],['tereyağı',4,4],['sucuklu yumurta',4,2]],
+  kebab_types: [['tokat kebabı',5,5],['kağıt kebabı',5,5],['çöp şiş',5,4],['Antep kebabı',5,4],['yoğurtlu kebab',4,4],['tas kebabı',5,5],['orman kebabı',5,5],['kuyu kebabı',5,5]],
+  meze: [['kısır',4,4],['çiğ köfte',4,4],['midye dolma',5,4],['topik',5,5],['girit ezmesi',5,5],['atom',5,5,{g:'meze'}],['arnavut ciğeri',5,5],['yalancı dolma',5,4]],
+  persian_food: [['barbari',4,4],['sangak',5,4],['torshi',5,4],['sekanjabin',5,5],['kashk',5,5],['albaloo polo',5,5],['reshteh polo',5,5],['khoresh karafs',5,5],['kufteh tabrizi',5,5],['lubia polo',5,5],['nargesi',5,5],['dami gojeh',5,5]],
+  african_food: [['falafel',2,2],['shakshuka',2,2],['mint tea',1,2],['harissa',2,2]],
+  north_african_food: [['briouat',5,4],['sfenj',5,4],['mhajeb',5,4],['kesra',5,4],['chorba',4,4],['bsisa',5,5],['tangia',5,5],['mrouzia',5,5],['tfaya',5,5],['bazin',5,5]],
+  west_african_food: [['tuo zaafi',5,5],['ewa agoyin',5,5],['gbegiri',5,5],['ofada rice',5,4],['banga soup',5,5],['afang soup',5,5],['akple',5,5],['dawadawa',5,5],['alloco',5,4],['domoda',5,5],['benachin',5,5],['foutou',5,5],['bofrot',5,5]],
+  east_african_food: [['kuku paka',5,5],['wali wa nazi',5,5],['pilau',3,4],['bhajia',5,4],['urojo',5,5],['mkate mayai',5,5],['zigni',5,5],['kik alicha',5,5],['misir wat',5,5],['dulet',5,5],['canjeero',5,5],['suqaar',5,5],['sambusa',4,4]],
+  south_african_food: [['kota',5,4,{g:'sandwich'}],['magwinya',5,4],['mogodu',5,5],['morogo',5,5],['phutu',5,5],['melkkos',5,5],['mosbolletjies',5,5],['pampoenkoekies',5,5],['frikkadel',4,4],['denningvleis',5,5],['skilpadjies',5,5],['mebos',5,5]],
+  asian_food: [['rendang',3,4],['laksa',4,4],['khao soi',4,4],['larb',4,4],['balut',4,4],['okonomiyaki',4,4],['lumpia',4,4],['gado-gado',5,4],['kaya toast',4,4],['sambal',4,4],['bulgogi',3,3]],
+  indian_food: [['litti chokha',5,5],['pesarattu',5,5],['bisi bele bath',5,5],['puran poli',5,5],['sarson ka saag',5,4],['undhiyu',5,5],['thepla',5,4],['avial',5,4],['kadhi',4,4],['pongal',4,4],['dal baati churma',5,5],['sheer khurma',5,4],['gatte ki sabzi',5,5]],
+  chinese_food: [['dongpo pork',5,5],["lion's head",5,5],['zhajiangmian',5,5],['liangpi',5,5],['red braised pork',4,4],['drunken chicken',4,4],['tea eggs',4,4],["bird's nest soup",3,4],['chicken feet',3,4],['ants climbing a tree',5,5]],
+  sushi_types: [['makizushi',4,4],['nigirizushi',4,4],['chakin sushi',5,5],['kappa maki',3,3],['funazushi',5,5],['hakozushi',5,5],['sasazushi',5,5],['tamago nigiri',3,2]],
+  vietnamese_food: [['banh canh',4,4],['banh khot',4,4],['banh tet',5,4],['banh beo',5,4],['bo kho',4,4],['cha ca',5,4],['nem chua',5,4],['xoi',5,4],['bun mam',5,5],['bo la lot',5,4],['chao long',5,5],['bun thit nuong',4,4]],
+  oceanian_food: [['kiwifruit',1,2],['sausage roll',1,2],['fish and chips',1,2],['lamb',1,2,{g:'meat'}]],
+  south_american_food: [['coffee',1,2],['steak',1,2],['potato',1,2],['rice and beans',1,2]],
+};
+export const FIXES = [{ gloss: ['atom', 'chemistry_words', 'particle'] }];
+export const THEMES = {};
