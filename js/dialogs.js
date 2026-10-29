@@ -430,7 +430,7 @@ export async function showSettings() {
     setKey(key.value, remember.querySelector('input').checked);
     setModel(f.model.value);
     P.lang = f.lang.value;
-    Object.assign(S, { minWords: +f.min.value || 4, maxWords: +f.maxW.value || 2, maxLen: +f.maxL.value || 20 });
+    Object.assign(S, { minWords: +f.min.value || 4, maxWords: +f.maxW.value || 3, maxLen: +f.maxL.value || 20 });
     A.changed();
   } }]);
 }
