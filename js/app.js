@@ -2,7 +2,7 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline } from './outline.js';
-import { linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, effRec, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, effRec, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, rateUnrated, showValidation, showExport, showSettings, openPath } from './dialogs.js';
@@ -260,7 +260,7 @@ function entryTable(t) {
   const list = pool.filter(e => (A.showOff || e.enabled) && (!A.filter || (e.text + ' ' + e.gloss).toLowerCase().includes(A.filter.toLowerCase())));
   const inList = new Set(list.map(e => e.id));
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
-  const key = { text: e => e.text.toLowerCase(), rec: e => (sub ? e.rec : effRec(P, e, t.id)) || 9, status: e => e.status, type: e => e.type }[A.sort] || (e => e.text.toLowerCase());
+  const key = { text: e => e.text.toLowerCase(), rec: e => (sub ? e.rec : effRec(P, e, t.id)) || 9, status: e => e.status, type: e => e.type, flags: flagKey }[A.sort] || (e => e.text.toLowerCase());
   roots.sort((a, b) => key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0);
   let rows = [];
   for (const e of roots) { rows.push(e); for (const a of list.filter(x => x.aliasOf === e.id)) rows.push(a); }
@@ -271,7 +271,7 @@ function entryTable(t) {
   const flagsOf = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
-    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), h('th', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : h('th', { title: 'Rating in this theme' }, 'in theme'), h('th', 'flags'), th('status', 'status')),
+    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), h('th', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : h('th', { title: 'Rating in this theme' }, 'in theme'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.aliasOf ? h('span.arrow', '↳ ') : '', e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), e.aliasKind && h('span.hint', ` ${e.aliasKind}`)),

@@ -9,6 +9,7 @@
 import { childrenOf } from './outline.js';
 
 export const POS = ['noun', 'verb', 'adjective', 'adverb', 'other'];
+export const flagKey = e => (e.adult ? 'a' : 'z') + (e.sensitive ? 's' : 'z') + (e.tm ? 't' : 'z') + (e.vulgar ? 'v' : 'z') + (e.region.length ? 'r' : 'z');   // flagged words sort first: adult, sensitive, trademark, vulgar, region
 export const TYPES = ['common', 'person', 'place', 'org', 'title', 'proper', 'acronym', 'phrase'];
 export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named person or character', place: 'a named place', org: 'company, brand, team, group',
   title: 'book, film, song, game, artwork', proper: 'other proper name (event, era, deity)', acronym: 'letters said as letters or a word (NASA, UFO)', phrase: 'idiom or set phrase' };

@@ -1,7 +1,7 @@
 // The "All words" screen: every entry in the library in one sortable, filterable table.
 import { h, select, plural } from './dom.js';
 import { A } from './state.js';
-import { linkIds } from './model.js';
+import { linkIds, flagKey } from './model.js';
 import { editEntry } from './dialogs.js';
 
 const PAGE = 200;
@@ -37,7 +37,7 @@ export function allWordsView() {
   const rootOf = e => e.aliasOf && P.ix.entry.get(e.aliasOf);
   const keys = {
     text: e => e.text.toLowerCase(), gloss: e => (e.gloss || '').toLowerCase(), pos: e => e.pos, type: e => e.type,
-    rec: e => e.rec || 9, status: e => e.status, alias: e => (rootOf(e)?.text || '￿').toLowerCase(),
+    rec: e => e.rec || 9, status: e => e.status, flags: flagKey, alias: e => (rootOf(e)?.text || '￿').toLowerCase(),
     themes: e => linkIds(P, e).length,
   };
   const key = keys[S.sort] || keys.text;
@@ -67,7 +67,7 @@ export function allWordsView() {
       pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
     pager(),
     h('div.awrap', {}, h('table.aw', {}, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('Meaning', 'gloss'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'),
-      h('th', 'flags'), th('alias of', 'alias'), th('themes', 'themes'), th('status', 'status')),
+      th('flags', 'flags'), th('alias of', 'alias'), th('themes', 'themes'), th('status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.text),
