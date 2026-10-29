@@ -124,6 +124,7 @@ Each issue has a severity (error breaks the model, warn is probably a mistake, i
 ## 8. Library export (Export…)
 
 Filters, each applied **per link** (a link is flagged when the entry, its theme, or any ancestor theme has the flag):
+- region-specific filter: judged on root words only; an alias (synonym or spelling variant) is kept or dropped with its root and its own region tag is ignored (its tag is still written to the file);
 - longest entry in words (`maxEntryWords`, 0 = no limit): entries with more words are left out, aliases included;
 
 - adult, sensitive, trademark, vulgar, language-specific: **include / leave out / only**;

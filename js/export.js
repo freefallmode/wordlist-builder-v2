@@ -51,7 +51,7 @@ export function buildExport(P, opt0 = {}) {
   for (const e of candidates) {
     if (e.aliasOf && !(e.aliasKind === 'spelling' ? o.spellings : o.synonyms)) continue;
     if (o.maxEntryWords > 0 && e.text.trim().split(/s+/).length > o.maxEntryWords) continue;
-    if (!pass(o.vulgar, e.vulgar) || !regionPass(o.region, e.region)) continue;
+    if (!pass(o.vulgar, e.vulgar) || !regionPass(o.region, ix.entry.get(e.aliasOf || e.id).region)) continue;   // region is judged on the root only: an alias follows its root, never its own tag
     const links = [];
     for (const tid of linkIds(P, e)) {
       if (!okTheme.get(tid)) continue;
