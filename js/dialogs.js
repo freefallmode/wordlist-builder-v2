@@ -389,7 +389,7 @@ export async function showExport() {
       h('div.hint', 'If unticked, leave out words and themes tagged with any of these regions:'), h('div.chips', [...both, ...boxes]));
     lock();
     return h('div.form', {},
-      h('div.two', {}, inc('Include adult content', 'adult'), inc('Include sensitive topics', 'sensitive'), inc('Include trademark / copyright', 'tm'), inc('Include vulgar words', 'vulgar'), inc('Include language-specific themes', 'lang')),
+      h('div.two', {}, inc('Include adult content', 'adult'), inc('Include vulgar words', 'vulgar'), inc('Include sensitive topics', 'sensitive'), inc('Include trademark / copyright', 'tm'), inc('Include language-specific themes', 'lang')),
       region,
       h('div.two', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Include unrated words', 'unrated'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes')),
       h('div.two', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20), num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));

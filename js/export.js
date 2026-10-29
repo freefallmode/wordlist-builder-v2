@@ -17,10 +17,8 @@ export const DEFAULT_EXPORT = {
 };
 export const PRESETS = {
   'full': {},
-  'family': { adult: 'exclude', sensitive: 'exclude', vulgar: 'exclude' },
-  'family, no trademarks': { adult: 'exclude', sensitive: 'exclude', vulgar: 'exclude', tm: 'exclude' },
-  'english spelling only, no regional words': { region: { mode: 'exclude', codes: [...REGIONS], v: 2 } },
-  'no variants': { synonyms: false, spellings: false },
+  'family': { adult: 'exclude', vulgar: 'exclude' },
+  'family, no trademarks': { adult: 'exclude', vulgar: 'exclude', tm: 'exclude' },
 };
 
 const pass = (mode, flagged) => mode === 'include' || (mode === 'exclude' ? !flagged : flagged);

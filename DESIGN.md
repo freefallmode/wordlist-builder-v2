@@ -133,7 +133,7 @@ Filters, each applied **per link** (a link is flagged when the entry, its theme,
 - rating range and "include unrated";
 - minimum words per theme.
 
-Process: filter links; drop entries with no link left; drop themes under the minimum (counted in distinct roots); repeat until stable; the report lists the dropped themes and the sizes (with a gzip estimate). If an alias's root is filtered out, the first surviving alias becomes the root. Ancestors kept only to hold the tree together are written with the group bit. Presets: full, family, family without trademarks, English spelling only without regional words, no variants. Optional columns: Zipf, meanings (gloss), notes.
+Process: filter links; drop entries with no link left; drop themes under the minimum (counted in distinct roots); repeat until stable; the report lists the dropped themes and the sizes (with a gzip estimate). If an alias's root is filtered out, the first surviving alias becomes the root. Ancestors kept only to hold the tree together are written with the group bit. Presets: full; family (adult and vulgar left out, sensitive kept); family without trademarks. More can be saved with the project. Optional columns: Zipf, meanings (gloss), notes.
 
 Output is columnar JSON to keep the file small:
 
