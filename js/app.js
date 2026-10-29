@@ -8,7 +8,7 @@ import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, rateUnrated, showValidation, showExport, showSettings, openPath } from './dialogs.js';
 import { entryDefaults } from './model.js';
 
-const VERSION = '1';
+const VERSION = '2';
 
 // ---------- change handling ----------
 
@@ -60,12 +60,12 @@ function renderTree() {
   if (q) {
     const themes = P.themes.filter(t => t.name.toLowerCase().includes(q)).slice(0, 60);
     const words = q.length < 2 ? [] : P.entries.filter(e => e.text.toLowerCase().includes(q)).slice(0, 60);
-    box.replaceChildren(
+    box.replaceChildren(...[
       h('div.sechead', `Themes (${themes.length})`),
       themes.map(t => h('div.hit', { onclick: () => select_(t.id) }, h('b', t.name), h('span.path', pathOf(P, t.id).slice(0, -1).join(' › ')))),
       h('div.sechead', `Words (${words.length})`),
       words.map(e => h('div.hit', { onclick: () => editEntry(e) }, h('b', e.text), e.gloss && h('span.path', e.gloss),
-        h('span.path', Object.keys(e.th).slice(0, 3).map(id => P.ix.theme.get(id)?.name).filter(Boolean).join(', ')))));
+        h('span.path', Object.keys(e.th).slice(0, 3).map(id => P.ix.theme.get(id)?.name).filter(Boolean).join(', '))))].flat());
     return;
   }
   const c = counts(), min = P.settings.minWords || 4, frag = document.createDocumentFragment();

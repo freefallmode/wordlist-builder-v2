@@ -167,7 +167,7 @@ export function uniqueThemeId(P, base) {
   return id;
 }
 
-// Entries with the same text. Used for the "needs a gloss" rule and the duplicate check.
+// Entries with the same text. Used for the "needs a meaning" rule and the duplicate check.
 export const sameText = (P, text) => P.ix.byText.get(text.toLowerCase()) || [];
 
 // Puts P.themes back into depth-first outline order (after merging or importing), keeping each parent's children in their current order.

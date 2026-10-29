@@ -8,7 +8,7 @@ import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, sizeOf } from './export.js';
 import { download } from './store.js';
-import { MODELS, getKey, setKey, generateWords, rateThemes, SPREADS } from './ai.js';
+import { MODELS, getKey, setKey, getModel, setModel, generateWords, rateThemes, SPREADS } from './ai.js';
 
 const REC_OPTS = REC_HELP.map((l, i) => [i, l]);
 const IN_OPTS = [[0, 'auto'], ...REC_HELP.slice(1).map((l, i) => [i + 1, l])];
@@ -96,7 +96,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const boxes = Object.fromEntries(Object.keys(flags).map(k => [k, check(flags[k], w[k])]));
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
 
-  // alias target: text box + datalist of matching entries ("text (gloss) #id")
+  // alias target: text box + datalist of matching entries ("text (meaning) #id")
   const aliasList = h('datalist', { id: 'al' + listSeq });
   const aliasInput = h('input', { list: 'al' + listSeq++, placeholder: 'type a word, pick from the list' });
   const labelOf = x => `${x.text}${x.gloss ? ' (' + x.gloss + ')' : ''} #${x.id}`;
@@ -107,6 +107,10 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     aliasList.replaceChildren(...(q.length < 2 ? [] : P.entries.filter(x => x !== e && !x.aliasOf && x.text.toLowerCase().startsWith(q)).slice(0, 12).map(x => h('option', { value: labelOf(x) }))));
   });
 
+  // Has anything been changed since the dialog opened? (Used to ask before leaving for a theme.)
+  const sig = () => JSON.stringify([f.text.value, f.gloss.value, f.pos.value, f.type.value, f.rec.value, f.status.value, f.note.value, f.kind.value, aliasInput.value,
+    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.th]);
+  const initialSig = sig();
   const linksBox = h('div.links');
   const addPick = themePicker('add a theme…', { groups: false });
   const drawLinks = () => {
@@ -116,10 +120,26 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     linksBox.replaceChildren(
       ids.size ? h('table.links', {}, h('tr', {}, h('th', 'Theme'), h('th', root ? 'Rating here (auto = harder of root and own)' : 'Rating in this theme'), h('th')),
         [...ids].map(tid => {
-          const inherited = root && !(tid in w.th) ;
+          const inherited = !!root && !(tid in w.th);
           const own = tid in w.th;
           return h('tr', { class: inherited ? 'inherited' : '' },
-            h('td', {}, h('a', { href: '#', title: pathOf(P, tid).join(' > '), onclick: ev => { ev.preventDefault(); } }, P.ix.theme.get(tid)?.name || tid + ' (missing)'), inherited && h('span.hint', ' from root')),
+            h('td', {}, h('a', { href: '#', title: pathOf(P, tid).join(' > '), onclick: async ev => {
+              ev.preventDefault();
+              if (!P.ix.theme.has(tid)) return;
+              const dlg = ev.target.closest('dialog');
+              if (sig() !== initialSig) {
+                // Unsaved edits: offer to save them, drop them, or stay.
+                const choice = await dialog('Unsaved changes', h('p', 'You have changed this entry. Save before going to the theme?'), [
+                  { label: 'Stay', action: () => 'stay' },
+                  { label: 'Discard changes', action: () => 'discard' },
+                  { label: 'Save and go', primary: true, action: () => { save(); return 'save'; } },   // a validation error stays in the prompt
+                ]);
+                if (choice !== 'save' && choice !== 'discard') return;
+              }
+              A.sel = tid; openPath(tid); A.filter = '';
+              dlg.dispatchEvent(new Event('cancel'));   // closes the entry dialog
+              A.render();
+            } }, P.ix.theme.get(tid)?.name || tid + ' (missing)'), inherited && h('span.hint', ' from root')),
             h('td', {}, select(IN_OPTS, w.th[tid] || 0, { onchange: ev => { w.th[tid] = +ev.target.value; } })),
             h('td', {}, (own || !root) && h('button.link', { type: 'button', title: 'Unlink', onclick: () => { delete w.th[tid]; drawLinks(); } }, '✕')));
         })) : h('p.hint', 'Not linked to any theme yet.'),
@@ -134,21 +154,37 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   drawLinks();
 
   const aliases = P.entries.filter(a => a.aliasOf === e.id);
-  const aliasSection = h('div', {},
-    field('This is an alias of', aliasInput, 'Leave empty for a root entry. An alias takes its themes from its root; it has its own flags and ratings. Spelling = same word spelled differently (color/colour); synonym = a different word (sofa/couch/settee).'), aliasList,
-    field('Alias kind', f.kind));
+  // "This is an alias of" (for an alias) and "Aliases of this entry" (for a root) sit in one place, under Themes; only the one that applies shows.
+  const rootEntry = () => { const m = aliasInput.value.match(/#(\d+)$/); return m && P.ix.entry.get(+m[1]); };
+  const rootLabel = () => { const r = rootEntry(); return r ? r.text + (r.gloss ? ` (${r.gloss})` : '') : ''; };
+  const rootLink = h('a', { href: '#', onclick: async ev => {
+    ev.preventDefault();
+    const r = rootEntry();
+    if (!r) return toast('Pick the root entry first.', true);
+    if (await editEntry(r)) A.changed();
+  } }, rootLabel());
+  const picker = field('Pick the root entry', aliasInput, 'An alias takes its themes from its root; it has its own flags and ratings. Spelling = same word spelled differently (color/colour); synonym = a different word (sofa/couch/settee).');
+  const linkRow = h('div.row', {}, rootLink, h('button.link', { type: 'button', onclick: () => { picker.hidden = !picker.hidden; } }, 'change'));
+  picker.hidden = !!w.aliasOf;
+  linkRow.hidden = !w.aliasOf;
+  aliasInput.addEventListener('change', () => { rootLink.textContent = rootLabel(); linkRow.hidden = !rootEntry(); });
+  const aliasSection = h('div', {}, h('h3', 'This is an alias of'), linkRow, picker, aliasList, field('Alias kind', f.kind));
+  const aliasesList = h('div', {}, h('h3', 'Aliases of this entry'), aliases.map(a => h('div.row', {},
+    h('a', { href: '#', onclick: async ev => { ev.preventDefault(); if (await editEntry(a)) A.changed(); } }, a.text),
+    ` ${a.aliasKind || '?'}${a.region.length ? ' · ' + a.region.join('/') : ''} · rating ${a.rec || '?'}`)));
+  // A root that has aliases cannot become one; a root without any gets a link that reveals the field.
+  const revealer = h('div.row', {}, h('button.link', { type: 'button', onclick: () => { revealer.replaceWith(aliasSection); picker.hidden = false; } }, 'Make this an alias of another entry…'));
+  const aliasBlock = w.aliasOf ? aliasSection : aliases.length ? aliasesList : revealer;
   const zv = freqLoaded() && w.text ? zipf(w.text) : undefined;
 
   const body = h('div.form', {},
-    h('div.two', {}, field('Text (as written, with capitals)', f.text), field('Gloss', f.gloss)),
+    h('div.two', {}, field('Text (as written, with capitals)', f.text), field('Meaning/context', f.gloss)),
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
     h('div.two', {}, field('Recognisability (the word itself)', f.rec, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
     h('div.flags', Object.values(boxes)),
     field('Regions', h('div.chips', regionBoxes), 'Tick if the word is mainly known in some countries (lorry, pavement). Empty = everyone.'),
-    aliasSection,
     h('h3', 'Themes'), linksBox,
-    aliases.length > 0 && h('div', {}, h('h3', 'Aliases of this entry'), aliases.map(a => h('div.row', {}, h('a', { href: '#', onclick: ev => { ev.preventDefault(); } }, a.text), ` ${a.aliasKind || '?'}${a.region.length ? ' · ' + a.region.join('/') : ''} · rating ${a.rec || '?'} `,
-      h('button.link', { type: 'button', onclick: async () => { const ok = await editEntry(a); if (ok) { A.changed(); } } }, 'edit')))),
+    aliasBlock,
     !e.aliasOf && !isNew && h('div.row', {}, h('button', { type: 'button', onclick: async () => {
       const a = Object.assign(entryDefaults(), { aliasOf: e.id, aliasKind: 'synonym', pos: e.pos, type: e.type });
       if (await editEntry(a, { isNew: true })) A.changed();
@@ -160,9 +196,9 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (!text) throw Error('The word cannot be empty.');
     const gloss = f.gloss.value.trim();
     const dup = sameText(P, text).find(x => x !== e && (x.gloss || '').toLowerCase() === gloss.toLowerCase());
-    if (dup) throw Error(`"${text}${gloss ? ' (' + gloss + ')' : ''}" already exists. Give a gloss to tell the meanings apart.`);
+    if (dup) throw Error(`"${text}${gloss ? ' (' + gloss + ')' : ''}" already exists. Give each a meaning/context to tell them apart.`);
     const others = sameText(P, text).filter(x => x !== e);
-    if (others.length && !gloss) throw Error(`"${text}" already exists with another meaning; give this one a gloss.`);
+    if (others.length && !gloss) throw Error(`"${text}" already exists with another meaning; give this one a meaning/context.`);
     const m = aliasInput.value.match(/#(\d+)$/);
     const aliasOf = aliasInput.value.trim() ? (m ? +m[1] : -1) : 0;
     if (aliasOf === -1 || (aliasOf && !P.ix.entry.get(aliasOf))) throw Error('Pick the alias target from the list.');
@@ -188,7 +224,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
 
 export async function bulkAdd(tid) {
   const P = A.P, t = P.ix.theme.get(tid);
-  const ta = h('textarea', { rows: 12, placeholder: 'One word per line.\nOptional extras after |  :  gloss | rating | in-theme rating\n  ass | donkey | 1 | 2' });
+  const ta = h('textarea', { rows: 12, placeholder: 'One word per line.\nOptional extras after |  :  meaning | rating | in-theme rating\n  ass | donkey | 1 | 2' });
   const d = { pos: select(POS, 'noun'), type: select(TYPES, 'common'), rec: select(REC_OPTS, 0), inRec: select(IN_OPTS, 0) };
   const body = h('div.form', {}, h('p', {}, `Adding to "${t.name}". Words that already exist are just linked.`), ta,
     h('div.two', {}, field('Part of speech', d.pos), field('Type', d.type)), h('div.two', {}, field('Recognisability', d.rec), field('Rating in this theme', d.inRec)));
@@ -204,7 +240,7 @@ export async function bulkAdd(tid) {
       reindex(P); added++;
     }
     A.changed();
-    toast(`${plural(added, 'word')} added, ${linked} linked` + (problems.length ? `; need a gloss: ${problems.join(', ')}` : ''), problems.length > 0);
+    toast(`${plural(added, 'word')} added, ${linked} linked` + (problems.length ? `; need a meaning/context: ${problems.join(', ')}` : ''), problems.length > 0);
   } }], { wide: true });
 }
 
@@ -213,14 +249,14 @@ export async function bulkAdd(tid) {
 export async function generate(tid) {
   const P = A.P, t = P.ix.theme.get(tid);
   const f = {
-    model: select(MODELS, P.settings.model), n: h('input', { type: 'number', value: 20, min: 4, max: 80 }),
+    model: select(MODELS, getModel()), n: h('input', { type: 'number', value: 20, min: 4, max: 80 }),
     spread: select([['even', 'spread across easy, medium, hard'], ['easy', 'well-known words first'], ['hard', 'harder words']], 'even'),
     extra: h('input', { placeholder: 'optional, e.g. include some tropical ones' }),
   };
   const out = h('div.gen');
   let result = null, ctl = null;
   const run = async st => {
-    P.settings.model = f.model.value;
+    setModel(f.model.value);
     st.textContent = 'Asking Claude…'; st.classList.remove('err');
     ctl = new AbortController();
     const r = await generateWords(P, t, { n: +f.n.value || 20, spread: f.spread.value, extra: f.extra.value, model: f.model.value, signal: ctl.signal });
@@ -286,7 +322,7 @@ export async function rateUnrated(tid) {
   let done = 0, cost = 0;
   try {
     for (let i = 0; i < todo.length; i += 80) {
-      const r = await rateThemes(P, todo.slice(i, i + 80), { model: P.settings.model });
+      const r = await rateThemes(P, todo.slice(i, i + 80), { model: getModel() });
       cost += r.cost;
       for (const x of r.ratings) { const t = P.ix.theme.get(x.id); if (t && x.d >= 1 && x.d <= 5) { t.d = Math.round(x.d); done++; } }
       toast(`Rated ${done} of ${todo.length}…`);
@@ -309,10 +345,10 @@ export async function showValidation() {
   const list = h('div.issues');
   const draw = () => {
     const shown = issues.filter(i => sev[i.sev] && (!kind.value || i.kind === kind.value));
-    list.replaceChildren(h('p.hint', `${plural(shown.length, 'issue')}${shown.length > 400 ? ' (showing the first 400)' : ''}`),
+    list.replaceChildren(...[h('p.hint', `${plural(shown.length, 'issue')}${shown.length > 400 ? ' (showing the first 400)' : ''}`),
       shown.slice(0, 400).map(i => h('div.issue.' + i.sev, {}, h('span.sevtag', i.sev), ' ', i.msg, ' ',
         i.themeId && h('button.link', { type: 'button', onclick: () => { A.sel = i.themeId; openPath(i.themeId); A.render(); document.querySelector('dialog')?.dispatchEvent(new Event('cancel')); } }, 'go to theme'),
-        i.entryId && h('button.link', { type: 'button', onclick: () => { const e = P.ix.entry.get(i.entryId); if (e) editEntry(e); } }, 'edit'))));
+        i.entryId && h('button.link', { type: 'button', onclick: () => { const e = P.ix.entry.get(i.entryId); if (e) editEntry(e); } }, 'edit')))].flat());
   };
   const body = h('div', {}, h('div.row', {}, ['error', 'warn', 'info'].map(s => check(`${s} (${counts[s]})`, sev[s], { onchange: ev => { sev[s] = ev.target.checked; draw(); } })), kind), list);
   kind.addEventListener('change', draw);
@@ -346,7 +382,7 @@ export async function showExport() {
     h('div.three', {}, tri('Adult content', 'adult'), tri('Sensitive topics', 'sensitive'), tri('Trademark / copyright', 'tm')),
     h('div.three', {}, tri('Vulgar words', 'vulgar'), tri('Language-specific themes', 'lang'), field('Region-specific', regionMode)),
     field('Regions (empty = any)', h('div.chips', regionBoxes)),
-    h('div.flags', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Zipf frequency column', 'zipf'), tick('Glosses', 'gloss'), tick('Notes', 'notes'), tick('Include unrated words', 'unrated')),
+    h('div.flags', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes'), tick('Include unrated words', 'unrated')),
     h('div.three', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20)));
   let form = build();
   let last = null;
@@ -375,17 +411,26 @@ export async function showExport() {
 
 // ---------- settings ----------
 
+export const LANGUAGES = [['en', 'en: English'], ['pt', 'pt: Portuguese'], ['de', 'de: German'], ['es', 'es: Spanish'], ['fr', 'fr: French'], ['jp', 'jp: Japanese']];
+
 export async function showSettings() {
   const P = A.P, S = P.settings;
   const key = h('input', { type: 'password', value: getKey(), placeholder: 'sk-ant-…', autocomplete: 'off' });
   const remember = check('Remember the key in this browser (localStorage)', !!localStorage.getItem('wlb2-key'));
-  const f = { model: select(MODELS, S.model), min: h('input', { type: 'number', value: S.minWords, min: 1 }), maxW: h('input', { type: 'number', value: S.maxWords, min: 1 }), maxL: h('input', { type: 'number', value: S.maxLen, min: 3 }) };
-  const body = h('div.form', {}, field('Anthropic API key', key, 'Used only from this browser, straight to the Anthropic API. Kept for this session unless you tick remember.'), remember,
+  const f = { model: select(MODELS, getModel()), lang: select(LANGUAGES, P.lang), min: h('input', { type: 'number', value: S.minWords, min: 1 }),
+    maxW: h('input', { type: 'number', value: S.maxWords, min: 1 }), maxL: h('input', { type: 'number', value: S.maxLen, min: 3 }) };
+  const body = h('div.form', {},
+    h('h3.sect', 'General (this app, all libraries)'),
+    field('Anthropic API key', key, 'Used only from this browser, straight to the Anthropic API. Kept for this session unless you tick remember.'), remember,
     field('Model for generation', f.model),
+    h('h3.sect', 'Library (saved with this library)'),
+    field('Language', f.lang, 'The language of the words in this library. The frequency check and the generation prompt are written for English.'),
     h('div.three', {}, field('Minimum words per theme', f.min), field('Longest entry, in words', f.maxW), field('Longest entry, in letters', f.maxL)));
   return dialog('Settings', body, [{ label: 'Cancel' }, { label: 'Save', primary: true, action: () => {
     setKey(key.value, remember.querySelector('input').checked);
-    Object.assign(S, { model: f.model.value, minWords: +f.min.value || 4, maxWords: +f.maxW.value || 2, maxLen: +f.maxL.value || 20 });
+    setModel(f.model.value);
+    P.lang = f.lang.value;
+    Object.assign(S, { minWords: +f.min.value || 4, maxWords: +f.maxW.value || 2, maxLen: +f.maxL.value || 20 });
     A.changed();
   } }]);
 }

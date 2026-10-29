@@ -42,7 +42,7 @@ export function validate(P) {
     if (seen.has(key)) add('error', 'duplicate', `"${label(e)}" appears twice (entries ${seen.get(key)} and ${e.id}).`, loc); else seen.set(key, e.id);
 
     const same = sameText(P, text);
-    if (same.length > 1 && !e.gloss) add('error', 'needs-gloss', `"${text}" has ${same.length} entries; each needs a short gloss to tell them apart.`, loc);
+    if (same.length > 1 && !e.gloss) add('error', 'needs-gloss', `"${text}" has ${same.length} entries; each needs a short meaning/context to tell them apart.`, loc);
     if (same.length > 1) {
       for (const o of same) if (o.id > e.id && o.pos === e.pos && !e.aliasOf && !o.aliasOf && shares(P, e, o))
         add('warn', 'maybe-duplicate', `"${label(e)}" and "${label(o)}" have the same part of speech and share a theme: one entry or two meanings?`, loc);
@@ -75,9 +75,11 @@ export function validate(P) {
     }
     if (!e.rec && e.enabled) add('info', 'unrated', `"${label(e)}" has no recognisability rating.`, loc);
 
-    if (freqLoaded() && e.type === 'common' && e.rec && !e.aliasOf) {
+    if (freqLoaded() && P.lang === 'en' && e.type === 'common' && e.rec && !e.aliasOf) {
       const z = zipf(text);
-      if (e.rec <= 2 && z != null && z < 3) add('warn', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (easy) but is rare in text (Zipf ${z.toFixed(1)}). Check the rating.`, loc);
+      // Frequency in text undersells concrete everyday nouns (igloo, tuba, feta sit near Zipf 2.7), so only very rare words are a warning.
+      if (e.rec <= 2 && z != null && z < 2.3) add('warn', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (easy) but is rare in text (Zipf ${z.toFixed(1)}). Check the rating.`, loc);
+      else if (e.rec <= 2 && z != null && z < 3) add('info', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (easy) and is fairly rare in text (Zipf ${z.toFixed(1)}).`, loc);
       if (e.rec <= 2 && z === null) add('warn', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (easy) but is not in the frequency list.`, loc);
       if (e.rec >= 4 && z != null && z > 5) add('info', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (hard) but is very common in text (Zipf ${z.toFixed(1)}).`, loc);
     }

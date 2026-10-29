@@ -109,7 +109,7 @@ export function buildExport(P, opt0 = {}) {
     return promoted.get(r) === id ? 0 : pos.get(promoted.get(r)) + 1;
   };
   const cols = { text: [], pos: [], type: [], flags: [], rec: [], regions: [], root: [], linkCount: [], links: [] };
-  if (o.zipf) cols.zipf = [];
+  if (o.zipf && P.lang === "en") cols.zipf = [];
   if (o.gloss) cols.gloss = [];
   if (o.notes) cols.note = [];
   for (const id of ids) {
@@ -126,7 +126,7 @@ export function buildExport(P, opt0 = {}) {
     cols.root.push(rootIndex(id));
     cols.linkCount.push(links.length);
     for (const [tid, r] of links) cols.links.push(tIndex.get(tid), r);
-    if (o.zipf) { const z = zipf(e.text); cols.zipf.push(z == null ? 0 : Math.round(z * 10)); }
+    if (cols.zipf) { const z = zipf(e.text); cols.zipf.push(z == null ? 0 : Math.round(z * 10)); }
     if (o.gloss) cols.gloss.push(e.gloss);
     if (o.notes) cols.note.push(e.note);
   }

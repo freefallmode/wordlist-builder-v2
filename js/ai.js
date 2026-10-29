@@ -15,6 +15,13 @@ export function getKey() {
   return sessionKey;
 }
 
+// The model is an app setting (the same for every library), so it lives in the browser, not in the project.
+export function getModel() {
+  try { const m = localStorage.getItem('wlb2-model'); if (m && MODELS.some(x => x[0] === m)) return m; } catch { /* ignore */ }
+  return MODELS[0][0];
+}
+export function setModel(m) { try { localStorage.setItem('wlb2-model', m); } catch { /* ignore */ } }
+
 export const cost = (model, u) => {
   const p = PRICE[model] || PRICE['claude-opus-5-5'];
   return ((u.input_tokens || 0) * p[0] + (u.cache_creation_input_tokens || 0) * p[0] * 1.25 + (u.cache_read_input_tokens || 0) * p[2] + (u.output_tokens || 0) * p[1]) / 1e6;

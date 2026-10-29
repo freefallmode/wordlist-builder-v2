@@ -102,3 +102,6 @@ table.links, table.gen { font-size: 13px; } tr.inherited { color: var(--dim); } 
 #toast.show { opacity: 1; } #toast.err { background: var(--bad); color: #fff; }
 .fatal { padding: 20px; color: var(--bad); white-space: pre-wrap; }
 @media (max-width: 800px) { #layout { grid-template-columns: 1fr; } aside { max-height: 40vh; } .two, .three { grid-template-columns: 1fr; } }
+
+.row.nowrap { flex-wrap: nowrap; } .row.nowrap input { flex: 1; min-width: 0; }
+h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--line); } .form > h3.sect:first-child { margin-top: 0; }
