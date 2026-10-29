@@ -317,11 +317,38 @@ function mergeOutline(text) {
 
 const menuItem = (label, fn) => h('button.mi', { onclick: ev => { ev.target.closest('details').open = false; fn(); } }, label);
 
+// The starter library shipped with the app (data/wordlist-en.project.json). Used when the browser holds no library, and offered when it is newer than the one in the browser.
+async function fetchStarter() {
+  try {
+    const r = await fetch('data/wordlist-en.project.json', { cache: 'no-store' });
+    if (!r.ok) return null;
+    const P = parseProject(await r.text());
+    return P.themes.length ? P : null;
+  } catch { return null; }
+}
+
+async function offerStarterUpdate() {
+  const S = await fetchStarter(), P = A.P;
+  if (!S || S.lang !== P.lang || S.lib.version <= P.lib.version) return;
+  let declined = 0;
+  try { declined = +localStorage.getItem('wlb2-starter-declined') || 0; } catch {}
+  if (declined >= S.lib.version) return;
+  const words = S.entries.filter(e => !e.aliasOf).length.toLocaleString();
+  if (confirm(`A newer starter library is available: v${S.lib.version} (${S.themes.length.toLocaleString()} themes, ${words} words). Yours is v${P.lib.version}.
+
+OK opens it and REPLACES your current library. Save your project to a file first (File menu) if you want to keep it.
+Cancel keeps yours; you will not be asked again for this version.`)) {
+    reindex(S); A.P = S; A.sel = null; A.view = null; A.dirty = false; autosave(); A.render(); toast('Opened starter library v' + S.lib.version);
+  } else { try { localStorage.setItem('wlb2-starter-declined', String(S.lib.version)); } catch {} }
+}
+
 async function boot() {
   $('#version').textContent = 'v' + VERSION;
   let P = await loadLocal();
-  if (!P || !P.themes.length) P = await loadSkeleton();
+  const fresh = !P || !P.themes.length;
+  if (fresh) P = (await fetchStarter()) || await loadSkeleton();
   A.P = P; reindex(P);
+  if (fresh) autosave();
   loadFreq().then(() => A.render()).catch(() => toast('Frequency list did not load (serve the folder over http).', true));
   $('#search').addEventListener('input', debounce(ev => { A.search = ev.target.value; renderTree(); }, 120));
   $('#btn-checks').onclick = showValidation;
@@ -358,6 +385,8 @@ async function boot() {
       A.P = await loadSkeleton(); reindex(A.P); A.sel = null; A.changed();
     }));
   render();
+  A.checkStarter = offerStarterUpdate;
+  if (!fresh) offerStarterUpdate();
 }
 
 boot().catch(e => { document.body.append(h('pre.fatal', String(e && e.stack || e))); console.error(e); });

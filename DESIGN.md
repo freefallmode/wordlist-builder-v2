@@ -115,6 +115,8 @@ Each issue has a severity (error breaks the model, warn is probably a mistake, i
 
 **Autosave** goes to the browser (IndexedDB, database `wordlist-builder-v2`, key `project`), debounced, with a status line ("Unsaved to file · autosaved 18:42"). **File ▾ → Save project file** downloads the project JSON and **bumps `lib.version` and `lib.modified`** (the library's own change counter); it does nothing if nothing changed. **Open project file** loads one. Other File items: Import theme outline, Export theme outline, Reset to the starter theme tree.
 
+**Starter library.** `data/wordlist-en.project.json` is the library shipped with the app. On start: if the browser holds no library (or one with no themes) the starter is loaded and autosaved; if it holds one and the starter has the same language and a higher `lib.version`, the app asks once whether to open it (replacing the browser copy, with a reminder to save a file first); Cancel remembers that version in localStorage (`wlb2-starter-declined`) so it is not asked again. If the starter file is missing it falls back to the empty outline `data/themes.txt`. Nothing else ever replaces the browser library without the user choosing Open project file or Reset.
+
 **Project file** (`wordlist-en.project.json`): `{"project":{schema, lang, lib, nextId, settings},"themes":[...],"entries":[...]}` with one JSON record per line; entry fields equal to their default are left out; retired theme fields (`geo`, `kind`) are dropped on read and write.
 
 **App settings in browser local storage:** `wlb2-key` (API key, only if "remember" is ticked), `wlb2-model`, `wlb2-unlock` (tree dragging unlocked).
