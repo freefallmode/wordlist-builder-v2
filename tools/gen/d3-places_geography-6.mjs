@@ -1,0 +1,145 @@
+// Generated word data: Places & Geography depth-3 chunk 6 (towers ... national costumes).
+// Format is described in tools/apply-words.mjs.
+const P = (o = {}) => ({ type: 'proper', ...o });
+const PL = (o = {}) => ({ type: 'place', ...o });
+
+export const THEMES = {
+  towers_and_skyscrapers: { d: 2 }, middle_eastern_buildings: { d: 4 }, east_asian_buildings: { d: 3 }, road_types: { d: 1 }, street_names: { d: 4 },
+  street_furniture: { d: 2 }, traffic_words: { d: 2 }, parts_of_a_road: { d: 3 }, parts_of_a_town: { d: 2 }, kinds_of_settlements: { d: 1 },
+  national_animals: { d: 2 }, national_flowers: { d: 4 }, national_dishes: { d: 2 }, national_sports: { d: 4 }, national_instruments: { d: 4 }, national_costumes: { d: 3 },
+};
+
+export const FIXES = [{ gloss: ['shoulder', 'body_parts', 'body part'] }];
+
+export const DATA = {
+  towers_and_skyscrapers: [
+    ['skyscraper', 1, 1, { al: [['high-rise', 'synonym', 2, 2]] }], ['lighthouse', 1, 1], ['bell tower', 2, 1, { al: [['campanile', 'synonym', 4, 4]] }], ['belfry', 3, 2],
+    ['clock tower', 1, 1], ['water tower', 1, 1], ['watchtower', 2, 1], ['control tower', 2, 1], ['tower block', 2, 2, { reg: ['UK'] }],
+    ['steeple', 2, 2], ['spire', 3, 3], ['minaret', 3, 2], ['pagoda', 2, 2], ['turret', 2, 3], ['cooling tower', 2, 2], ['observation tower', 2, 1],
+    ['TV tower', 2, 2, { type: 'common' }], ['martello tower', 4, 4, { reg: ['UK'] }], ['peel tower', 5, 5, { reg: ['UK'] }], ['donjon', 5, 5], ['broch', 5, 5, { reg: ['UK'] }],
+    ['Eiffel Tower', 1, 2, PL()], ['Leaning Tower', 2, 3, PL()], ['Big Ben', 1, 3, PL()], ['Empire State Building', 1, 2, PL()], ['Burj Khalifa', 2, 2, PL()],
+    ['CN Tower', 3, 3, PL()], ['Space Needle', 3, 3, PL()], ['Shard', 3, 4, PL({ g: 'London' })], ['Petronas Towers', 3, 3, PL()], ['Chrysler Building', 3, 3, PL()],
+    ['Tokyo Skytree', 4, 4, PL()], ['Taipei 101', 4, 4, PL()], ['Willis Tower', 4, 4, PL()], ['Shanghai Tower', 4, 4, PL()],
+  ],
+  middle_eastern_buildings: [
+    ['mosque', 1, 1, { sens: true }], ['minaret', 3, 2], ['bazaar', 2, 2], ['souk', 3, 2, { al: [['souq', 'spelling', 4, 4]] }], ['palace', 1, 3], ['citadel', 3, 4],
+    ['hammam', 4, 3], ['kasbah', 4, 3, { al: [['casbah', 'spelling', 4, 4]] }], ['riad', 4, 4], ['caravanserai', 5, 4, { al: [['khan', 'synonym', 4, 5, [], { g: 'inn', type: 'common' }]] }],
+    ['madrasa', 4, 3, { sens: true, al: [['madrassa', 'spelling', 4, 4]] }], ['mausoleum', 3, 4], ['ziggurat', 4, 3], ['medina', 4, 3, { g: 'old city' }],
+    ['bedouin tent', 3, 3], ['mashrabiya', 5, 5], ['iwan', 5, 5], ['ksar', 5, 5], ['minbar', 5, 5, { sens: true }], ['mihrab', 5, 4, { sens: true }],
+    ['Kaaba', 3, 3, P({ sens: true })], ['Dome of the Rock', 3, 3, PL({ sens: true })], ['Blue Mosque', 3, 2, PL({ sens: true })], ['Hagia Sophia', 3, 3, PL()],
+    ['Al-Aqsa Mosque', 3, 3, PL({ sens: true })], ['Alhambra', 3, 4, PL()], ['Burj Al Arab', 3, 3, PL()], ['Sheikh Zayed Mosque', 4, 3, PL({ sens: true })],
+    ['Topkapi Palace', 4, 3, PL()], ['Umayyad Mosque', 5, 4, PL({ sens: true })], ['Petra Treasury', 4, 4, PL()],
+  ],
+  east_asian_buildings: [
+    ['pagoda', 2, 1], ['temple', 1, 2, { g: 'building' }], ['shrine', 2, 3], ['pavilion', 2, 3], ['teahouse', 2, 2, { al: [['tea house', 'spelling', 2, 2]] }], ['castle', 1, 4],
+    ['torii', 3, 2, { g: 'gate' }], ['dojo', 3, 2], ['ryokan', 4, 3], ['onsen', 3, 3], ['izakaya', 4, 3], ['hanok', 4, 3], ['stupa', 4, 3], ['hutong', 4, 3, { g: 'alley' }],
+    ['siheyuan', 5, 4], ['tulou', 5, 4], ['machiya', 5, 4], ['minka', 5, 5], ['pailou', 5, 4, { al: [['paifang', 'synonym', 5, 5]] }], ['sento', 4, 3, { g: 'bathhouse' }],
+    ['Forbidden City', 2, 2, PL()], ['Himeji Castle', 3, 2, PL()], ['Temple of Heaven', 3, 2, PL()], ['Summer Palace', 3, 3, PL()], ['Potala Palace', 3, 2, PL()],
+    ['Kinkaku-ji', 4, 3, PL()], ['Todai-ji', 5, 4, PL()], ['Gyeongbokgung', 5, 4, PL()], ['Meiji Shrine', 4, 3, PL()], ['Fushimi Inari', 4, 3, PL()],
+    ['Shaolin Temple', 3, 3, PL()], ['Osaka Castle', 3, 3, PL()],
+  ],
+  road_types: [
+    ['motorway', 2, 1, { reg: ['UK'] }], ['highway', 1, 1], ['freeway', 2, 1, { reg: ['US'] }], ['expressway', 2, 1], ['interstate', 2, 2, { reg: ['US'] }], ['street', 1, 1], ['road', 1, 1],
+    ['avenue', 1, 1], ['boulevard', 2, 1], ['lane', 1, 1, { g: 'road' }], ['alley', 1, 1, { al: [['alleyway', 'synonym', 2, 2]] }], ['cul-de-sac', 2, 2, { al: [['dead end', 'synonym', 1, 2]] }],
+    ['dual carriageway', 3, 2, { reg: ['UK'] }], ['ring road', 2, 2, { al: [['beltway', 'synonym', 3, 3, ['US']]] }], ['bypass', 2, 2], ['toll road', 2, 2, { al: [['turnpike', 'synonym', 3, 3, ['US']]] }],
+    ['dirt road', 1, 1], ['country lane', 2, 2], ['side street', 2, 2], ['high street', 2, 3, { reg: ['UK'] }], ['one-way street', 2, 2], ['parkway', 3, 3], ['thoroughfare', 4, 3],
+    ['byway', 4, 4], ['backroad', 3, 2], ['causeway', 3, 4], ['autobahn', 3, 3, { g: 'road' }], ['autostrada', 4, 4], ['A-road', 3, 3, { reg: ['UK'] }], ['B-road', 3, 3, { reg: ['UK'] }],
+    ['cobbled street', 2, 2], ['trail', 1, 3], ['drive', 2, 2, { g: 'road' }], ['crescent', 3, 3, { g: 'road' }], ['terrace', 3, 4, { g: 'road' }], ['mews', 4, 4, { reg: ['UK'] }],
+  ],
+  street_names: [
+    ['Main Street', 1, 1, P()], ['High Street', 1, 1, P({ reg: ['UK'] })], ['Church Street', 1, 1, P()], ['Station Road', 2, 1, P({ reg: ['UK'] })], ['Park Lane', 2, 2, P()],
+    ['Mill Lane', 2, 2, P({ reg: ['UK'] })], ['Elm Street', 2, 2, P()], ['Oak Street', 1, 2, P()], ['Maple Avenue', 1, 2, P({ reg: ['US', 'CA'] })], ['Victoria Road', 2, 2, P({ reg: ['UK'] })],
+    ['London Road', 2, 2, P({ reg: ['UK'] })], ['Market Street', 2, 2, P()], ['Bridge Street', 2, 2, P()], ['School Lane', 2, 2, P({ reg: ['UK'] })], ['Church Lane', 2, 2, P({ reg: ['UK'] })],
+    ['King Street', 2, 2, P()], ['Queen Street', 2, 2, P()], ['Washington Street', 2, 3, P({ reg: ['US'] })], ['Park Avenue', 2, 2, P()], ['Pine Street', 1, 2, P({ reg: ['US'] })],
+    ['Cedar Lane', 2, 3, P()], ['Chestnut Street', 3, 3, P()], ['Willow Road', 3, 3, P()], ['Orchard Road', 3, 3, P()], ['Manor Road', 3, 3, P({ reg: ['UK'] })], ['New Street', 2, 3, P()],
+    ['Baker Street', 2, 4, P()], ['Abbey Road', 2, 4, P()], ['Penny Lane', 2, 4, P()], ['Downing Street', 2, 4, P()], ['Wall Street', 1, 4, P()], ['Fleet Street', 3, 4, P()],
+    ['Broadway', 1, 4, P()], ['Sunset Boulevard', 2, 4, P()], ['Fifth Avenue', 2, 4, P()], ['Bourbon Street', 3, 4, P()],
+  ],
+  street_furniture: [
+    ['bench', 1, 1], ['lamp post', 1, 1, { al: [['lamppost', 'spelling', 1, 1], ['streetlight', 'synonym', 1, 1], ['street lamp', 'synonym', 1, 1]] }],
+    ['bollard', 3, 2], ['litter bin', 2, 1, { reg: ['UK'], al: [['trash can', 'synonym', 1, 1, ['US']]] }], ['postbox', 3, 1, { reg: ['UK'], al: [['pillar box', 'synonym', 3, 2, ['UK']], ['mailbox', 'synonym', 1, 2, ['US']]] }],
+    ['phone box', 2, 1, { reg: ['UK'], al: [['telephone booth', 'synonym', 2, 2, ['US']], ['payphone', 'synonym', 2, 2]] }], ['bus shelter', 2, 1], ['bus stop', 1, 1], ['fire hydrant', 1, 1, { al: [['hydrant', 'synonym', 2, 2]] }],
+    ['traffic light', 1, 2], ['signpost', 2, 2], ['road sign', 1, 2], ['drinking fountain', 2, 2], ['bike rack', 1, 1, { al: [['cycle stand', 'synonym', 3, 3, ['UK']]] }],
+    ['planter', 2, 2], ['railing', 2, 3], ['parking meter', 1, 1], ['manhole cover', 2, 3], ['storm drain', 2, 3], ['grit bin', 3, 2, { reg: ['UK'] }], ['kiosk', 2, 2], ['newsstand', 2, 2],
+    ['crash barrier', 3, 3], ['street sign', 1, 1], ['bandstand', 3, 4], ['public toilet', 2, 3], ["cat's eye", 3, 4, { g: 'road stud', reg: ['UK'] }], ['pedestrian crossing', 2, 3],
+    ['EV charger', 3, 3], ['bike share dock', 3, 3],
+  ],
+  traffic_words: [
+    ['traffic jam', 1, 1], ['gridlock', 2, 1], ['congestion', 2, 1], ['rush hour', 1, 1], ['tailback', 3, 2, { reg: ['UK'] }], ['bottleneck', 2, 2], ['roadworks', 2, 2, { reg: ['UK'] }],
+    ['detour', 2, 1, { al: [['diversion', 'synonym', 2, 2, ['UK']]] }], ['merge', 2, 2, { pos: 'verb' }], ['overtake', 2, 2, { pos: 'verb', reg: ['UK'] }],
+    ['tailgate', 3, 2, { pos: 'verb', g: 'driving' }], ['honk', 1, 2, { pos: 'verb' }], ['toll', 2, 2, { g: 'road charge' }], ['yield', 2, 2, { pos: 'verb', reg: ['US'], al: [['give way', 'synonym', 2, 2, ['UK']]] }],
+    ['speed limit', 1, 1], ['zebra crossing', 2, 2, { reg: ['UK'], al: [['crosswalk', 'synonym', 2, 2, ['US']]] }], ['roundabout', 1, 2, { g: 'road', reg: ['UK'], al: [['traffic circle', 'synonym', 3, 3, ['US']]] }],
+    ['junction', 2, 2, { g: 'road', al: [['intersection', 'synonym', 2, 2]] }], ['commute', 1, 2, { pos: 'verb' }], ['pile-up', 2, 2], ['fender bender', 3, 3, { reg: ['US'] }], ['road rage', 2, 2],
+    ['hard shoulder', 3, 2, { reg: ['UK'] }], ['carpool', 2, 2], ['rat run', 4, 3, { reg: ['UK'] }], ['contraflow', 4, 3, { reg: ['UK'] }], ['speed trap', 2, 2], ['jaywalk', 3, 3, { pos: 'verb', reg: ['US'] }],
+    ['U-turn', 1, 2], ['traffic cone', 1, 1], ['one-way', 1, 2], ['no entry', 1, 3], ['stop and go', 3, 3], ['stop-start', 3, 3, { reg: ['UK'] }], ['peak hour', 3, 3],
+  ],
+  parts_of_a_road: [
+    ['lane', 1, 2, { g: 'traffic' }], ['shoulder', 2, 3, { g: 'road' }], ['hard shoulder', 3, 2, { reg: ['UK'] }], ['verge', 3, 3], ['kerb', 3, 2, { reg: ['UK'], al: [['curb', 'spelling', 3, 2, ['US']]] }],
+    ['central reservation', 4, 3, { reg: ['UK'], al: [['median strip', 'synonym', 4, 3, ['US']]] }], ['carriageway', 4, 3, { reg: ['UK'] }],
+    ['camber', 4, 4, { g: 'road' }], ['gutter', 2, 3], ['manhole', 2, 3], ['white line', 2, 2], ['centre line', 3, 2, { al: [['center line', 'spelling', 3, 2, ['US']]] }],
+    ['road marking', 2, 2], ['speed bump', 1, 2, { al: [['speed hump', 'synonym', 3, 3], ['sleeping policeman', 'synonym', 4, 4, ['UK']]] }], ['rumble strip', 3, 3], ['slip road', 3, 3, { reg: ['UK'], al: [['on-ramp', 'synonym', 2, 2, ['US']], ['off-ramp', 'synonym', 2, 2, ['US']]] }],
+    ['tarmac', 2, 2], ['asphalt', 2, 2], ['pothole', 1, 2], ['sidewalk', 1, 3, { reg: ['US'] }], ['cycle lane', 2, 2, { al: [['bike lane', 'synonym', 1, 2]] }],
+    ['layby', 3, 2, { reg: ['UK'] }], ['passing place', 4, 3, { reg: ['UK'] }], ['bus lane', 2, 2], ['road surface', 2, 3], ["cat's eye", 3, 3, { g: 'road stud', reg: ['UK'] }], ['embankment', 3, 4],
+    ['drainage ditch', 3, 4], ['roadbed', 4, 4], ['intersection', 2, 3], ['overpass', 3, 3], ['underpass', 2, 3],
+  ],
+  parts_of_a_town: [
+    ['town centre', 1, 1, { al: [['town center', 'spelling', 1, 1, ['US']], ['city centre', 'synonym', 1, 1, ['UK']], ['downtown', 'synonym', 1, 1, ['US']]] }], ['town square', 1, 1, { al: [['market square', 'synonym', 2, 2]] }],
+    ['town hall', 1, 1], ['high street', 2, 2, { reg: ['UK'], al: [['main street', 'synonym', 1, 1, ['US']]] }], ['suburb', 2, 1], ['outskirts', 2, 1],
+    ['old town', 2, 2], ['village green', 2, 2, { reg: ['UK'] }], ['industrial estate', 3, 2, { reg: ['UK'], al: [['industrial park', 'synonym', 3, 2, ['US']]] }], ['housing estate', 2, 2, { reg: ['UK'] }],
+    ['residential area', 2, 2], ['neighbourhood', 2, 1, { al: [['neighborhood', 'spelling', 2, 1, ['US']]] }], ['business district', 3, 2, { al: [['financial district', 'synonym', 3, 2]] }],
+    ['waterfront', 2, 2], ['quarter', 3, 3, { g: 'district' }], ['district', 2, 2], ['ward', 3, 3, { g: 'district' }], ['precinct', 3, 3, { g: 'district' }], ['uptown', 2, 2], ['midtown', 3, 2],
+    ['Chinatown', 2, 2, P()], ['inner city', 2, 2], ['green belt', 3, 3], ['city limits', 2, 2], ['commuter belt', 3, 3, { reg: ['UK'] }], ['shopping centre', 1, 2, { al: [['mall', 'synonym', 1, 2, ['US']]] }],
+    ['marketplace', 2, 2], ['bus station', 1, 2], ['car park', 1, 3, { reg: ['UK'], al: [['parking lot', 'synonym', 1, 3, ['US']]] }], ['playground', 1, 3], ['cemetery', 2, 3, { sens: true }],
+    ['housing project', 3, 3, { reg: ['US'] }],
+  ],
+  kinds_of_settlements: [
+    ['hamlet', 2, 1], ['village', 1, 1], ['town', 1, 1], ['city', 1, 1], ['suburb', 2, 2], ['metropolis', 2, 1], ['borough', 3, 2], ['megacity', 3, 2],
+    ['conurbation', 4, 3], ['capital', 1, 3, { g: 'city' }], ['township', 3, 3], ['municipality', 3, 2], ['parish', 3, 4], ['outpost', 2, 3], ['settlement', 2, 1],
+    ['colony', 2, 3, { g: 'settlement' }], ['commune', 3, 3], ['kibbutz', 3, 3], ['pueblo', 3, 3], ['shanty town', 3, 2, { al: [['shantytown', 'spelling', 3, 2]] }],
+    ['favela', 3, 3], ['barrio', 3, 3], ['burgh', 4, 4], ['market town', 2, 2, { reg: ['UK'] }], ['ghost town', 1, 2], ['boomtown', 3, 3], ['new town', 3, 3, { reg: ['UK'] }],
+    ['garden city', 4, 4], ['city-state', 3, 3], ['megalopolis', 4, 3], ['farmstead', 3, 3], ['homestead', 3, 3], ['exurb', 5, 4, { reg: ['US'] }], ['company town', 3, 3, { reg: ['US'] }],
+    ['tent city', 3, 3], ['satellite town', 4, 3], ['kraal', 5, 4, { g: 'village' }],
+  ],
+  national_animals: [
+    ['lion', 1, 3], ['bald eagle', 1, 2], ['kangaroo', 1, 2], ['giant panda', 1, 2], ['kiwi', 1, 2, { g: 'bird' }], ['beaver', 1, 3], ['Bengal tiger', 2, 2], ['brown bear', 1, 3],
+    ['elephant', 1, 3], ['unicorn', 1, 3], ['dragon', 1, 3], ['springbok', 3, 2], ['emu', 2, 3], ['golden eagle', 2, 3], ['peacock', 1, 3], ['rooster', 1, 3], ['black swan', 2, 3],
+    ['Andean condor', 3, 3], ['condor', 2, 3], ['vicuña', 4, 3], ['quetzal', 3, 3, { g: 'bird' }], ['doctor bird', 4, 3], ['snow leopard', 2, 3], ['markhor', 5, 4], ['takin', 5, 4],
+    ['jaguar', 1, 3, { g: 'animal' }], ['red kangaroo', 3, 3], ['moose', 1, 4], ['bison', 1, 4], ['komodo dragon', 2, 4], ['ibex', 3, 4], ['kookaburra', 2, 4], ['oryx', 3, 3], ['Arabian oryx', 3, 3],
+  ],
+  national_flowers: [
+    ['rose', 1, 2, { g: 'flower' }], ['tulip', 1, 2], ['lotus', 2, 2, { g: 'flower' }], ['cherry blossom', 1, 1], ['thistle', 2, 2], ['shamrock', 2, 2], ['daffodil', 1, 2], ['sunflower', 1, 3],
+    ['poppy', 1, 3], ['edelweiss', 3, 2], ['cornflower', 2, 3], ['fleur-de-lis', 3, 3], ['iris', 2, 3, { g: 'flower' }], ['protea', 4, 2], ['golden wattle', 4, 2],
+    ['plum blossom', 3, 2], ['peony', 2, 3], ['chrysanthemum', 2, 3], ['orchid', 2, 3], ['hibiscus', 2, 3], ['sampaguita', 4, 3], ['jasmine', 2, 3], ['carnation', 2, 4],
+    ['dahlia', 2, 3], ['bird of paradise', 2, 4, { g: 'flower' }], ['ceibo', 5, 4], ['lily of the valley', 3, 3], ['blue lotus', 4, 3], ['heather', 2, 4], ['bluebell', 2, 4], ['red rose', 1, 3], ['bougainvillea', 3, 4],
+    ['frangipani', 3, 4], ['lavender', 1, 4, { g: 'flower' }], ['gladiolus', 3, 5], ['guaria morada', 5, 5],
+  ],
+  national_dishes: [
+    ['fish and chips', 1, 1], ['pizza', 1, 2], ['paella', 2, 1], ['sushi', 1, 2], ['haggis', 2, 1], ['poutine', 2, 1], ['pad thai', 2, 1], ['kimchi', 2, 1], ['borscht', 3, 1],
+    ['pierogi', 2, 2], ['goulash', 2, 2], ['taco', 1, 2, { al: [['tacos', 'synonym', 1, 2]] }], ['feijoada', 3, 2], ['jollof rice', 3, 2], ['tagine', 3, 3], ['couscous', 2, 3],
+    ['bibimbap', 3, 2], ['pho', 2, 2], ['adobo', 3, 2], ['ceviche', 2, 2], ['schnitzel', 2, 2], ['moussaka', 2, 2], ['lasagne', 1, 3], ['hamburger', 1, 3], ['fondue', 2, 2],
+    ['rosti', 4, 3], ['kebab', 1, 3], ['falafel', 2, 3], ['empanada', 3, 3], ['arepa', 3, 3], ['pupusa', 4, 3], ['asado', 3, 3], ['mofongo', 4, 3], ['rendang', 4, 3],
+    ['nasi goreng', 3, 3], ['laksa', 4, 3], ['bobotie', 5, 3], ['ugali', 5, 4], ['injera', 4, 3], ['pavlova', 3, 3], ['cullen skink', 5, 4], ['ackee and saltfish', 4, 3],
+  ],
+  national_sports: [
+    ['cricket', 1, 2, { g: 'sport' }], ['baseball', 1, 2], ['lacrosse', 2, 3], ['sumo', 2, 2], ['taekwondo', 2, 2], ['rugby', 1, 2], ['hurling', 3, 2], ['Gaelic football', 3, 3],
+    ['kabaddi', 3, 2], ['muay thai', 3, 2], ['buzkashi', 5, 3], ['pesapallo', 5, 3], ['sepak takraw', 4, 3], ['polo', 2, 3, { g: 'sport' }], ['pato', 5, 4], ['charreria', 5, 4],
+    ['bandy', 4, 4], ['camogie', 5, 4, { g: "women's hurling" }], ['shinty', 4, 3], ['jai alai', 4, 3], ['ice hockey', 1, 3], ['football', 1, 3, { g: 'soccer' }], ['judo', 2, 3], ['sumo wrestling', 2, 2],
+    ['bullfighting', 2, 3, { sens: true, adult: true }], ['Aussie rules', 3, 3, { reg: ['AU'] }], ['pelota', 4, 4], ['table tennis', 1, 4], ['badminton', 1, 4], ['cycling', 1, 4],
+    ['skiing', 1, 4], ['kendo', 3, 3], ['sipa', 5, 4], ['curling', 2, 4, { g: 'sport' }], ['wushu', 4, 4], ['silat', 5, 4], ['kyudo', 5, 4], ['cockfighting', 3, 4, { sens: true, adult: true }],
+  ],
+  national_instruments: [
+    ['bagpipes', 1, 1], ['harp', 1, 3], ['balalaika', 3, 1], ['sitar', 2, 1], ['didgeridoo', 2, 1], ['bouzouki', 3, 2], ['ukulele', 1, 2], ['shamisen', 4, 2], ['koto', 4, 2],
+    ['erhu', 4, 3], ['guzheng', 5, 3], ['pipa', 4, 3], ['gamelan', 3, 2], ['gayageum', 5, 4], ['kora', 4, 3, { g: 'harp-lute' }], ['mbira', 4, 3], ['djembe', 3, 2], ['steel drum', 2, 2],
+    ['panpipes', 3, 3], ['charango', 4, 3], ['quena', 5, 4], ['bandoneon', 4, 3], ['accordion', 1, 3], ['hardanger fiddle', 5, 4], ['kantele', 5, 3], ['kokle', 5, 4],
+    ['uilleann pipes', 4, 3], ['bodhran', 4, 3], ['tin whistle', 3, 3], ['cimbalom', 5, 3], ['oud', 4, 3], ['saz', 5, 4], ['duduk', 5, 3], ['santoor', 5, 4], ['tabla', 3, 3],
+    ['nyckelharpa', 5, 4], ['marimba', 3, 3], ['cajón', 4, 4], ['berimbau', 5, 3], ['zurna', 5, 5], ['fiddle', 2, 4], ['mandolin', 2, 4], ['cuatro', 4, 4],
+  ],
+  national_costumes: [
+    ['kilt', 1, 1], ['kimono', 1, 1], ['sari', 2, 1, { al: [['saree', 'spelling', 2, 1]] }], ['hanbok', 3, 2], ['dirndl', 3, 2], ['lederhosen', 3, 1], ['poncho', 1, 2],
+    ['sombrero', 1, 2], ['cheongsam', 3, 2, { al: [['qipao', 'synonym', 4, 3]] }], ['ao dai', 3, 2], ['barong tagalog', 4, 3, { al: [['barong', 'synonym', 4, 4]] }], ['dashiki', 3, 3],
+    ['kente', 3, 3, { g: 'cloth' }], ['kaftan', 3, 4, { al: [['caftan', 'spelling', 3, 4]] }], ['thobe', 4, 3], ['kanzu', 5, 4], ['sarong', 2, 3], ['gho', 5, 4], ['kira', 5, 5, { g: 'dress' }],
+    ['dhoti', 3, 3], ['salwar kameez', 3, 2], ['kurta', 3, 3], ['bunad', 5, 4], ['huipil', 4, 3], ['pollera', 5, 4], ['chullo', 4, 4], ['fez', 2, 4], ['shuka', 5, 4],
+    ['boubou', 5, 4], ['agbada', 5, 4], ['hakama', 4, 3], ['yukata', 3, 2], ['happi coat', 4, 3], ['kokoshnik', 5, 4], ['ushanka', 3, 4], ['beret', 2, 4], ['tartan', 2, 3, { g: 'cloth' }],
+    ['gaucho', 2, 3, { g: 'cowboy' }], ['bombachas', 5, 4], ['tracht', 5, 4], ['Aran sweater', 3, 4], ['mariachi suit', 3, 3], ['clogs', 1, 4],
+  ],
+};

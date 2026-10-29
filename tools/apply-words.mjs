@@ -8,8 +8,8 @@
 //            opts   g gloss, pos, type, tm, adult, sens, vulgar, reg [regions], note,
 //                   al [[text, kind, rec, inRec, regions, { g, type, adult, sens, tm, vulgar }], ...]
 //   ALIASES [[themeId, rootText, rootGloss, [alias row, ...]], ...]  adds aliases to a root that already exists (e.g. from an earlier batch)
-//   FIXES  [{ gloss: [text, themeId, newGloss] } | { merge: [text, [themeId, ...], gloss] } | { del: [text, themeId] }, ...]  edits existing entries first (the entry is found by its text and a theme it is in):
-//          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); del removes one
+//   FIXES  [{ gloss: [text, themeId, newGloss] } | { merge: [text, [themeId, ...], gloss] } | { split: [text, themeId, newGloss, {type, pos, rec}] } | { del: [text, themeId] }, ...]  edits existing entries first (the entry is found by its text and a theme it is in):
+//          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); split moves one theme link of an entry that was linked for a different meaning onto a new entry with its own meaning label; del removes one
 //   SETTINGS { maxWords: 4, ... }  library settings to set
 //   THEMES { themeId: { d: 1-5, ...flag overrides (complete, adult, sensitive, tm, lang, region, note) } }
 // An entry that already exists (same text and gloss) is only linked to the theme (its own ratings and flags stay); a link already there is left alone.
@@ -35,9 +35,10 @@ setFreq(parseFreq(readFileSync(here('../data/freq-en.txt'), 'utf8')));
 const find = (text, tid) => sameText(P, text).filter(e => linkIds(P, e).includes(tid));
 for (const f of FIXES || []) {
   if (f.gloss) {
-    const [text, tid, gloss] = f.gloss, m = find(text, tid);
-    if (m.length !== 1) throw Error(`gloss: ${m.length} entries for "${text}" in ${tid}`);
-    m[0].gloss = gloss;
+    // labels an entry that has none; when another batch already labelled it (or the label is already there) this is a no-op
+    const [text, tid, gloss] = f.gloss, m = find(text, tid).filter(e => !e.gloss);
+    if (m.length > 1) throw Error(`gloss: ${m.length} unlabelled entries for "${text}" in ${tid}`);
+    if (m.length === 1) m[0].gloss = gloss;
   } else if (f.merge) {
     const [text, tids, gloss] = f.merge;
     const all = [...new Set(tids.flatMap(t => find(text, t)))].sort((a, b) => a.id - b.id);
@@ -50,6 +51,14 @@ for (const f of FIXES || []) {
       P.entries = P.entries.filter(x => x !== d);
     }
     keep.gloss = gloss;
+  } else if (f.split) {
+    // an entry was linked to a theme for a different meaning: move that theme link to a new entry with its own meaning label
+    const [text, tid, gloss, o = {}] = f.split, m = find(text, tid).filter(e => e.th[tid] !== undefined);
+    if (m.some(e => e.gloss === gloss)) continue;   // another batch already split it
+    if (m.length !== 1) throw Error(`split: ${m.length} entries of "${text}" with their own link to ${tid}`);
+    const old = m[0], r = old.th[tid];
+    delete old.th[tid];
+    addEntry(P, text, { gloss, pos: o.pos || old.pos, type: o.type || 'common', rec: o.rec ?? old.rec, th: { [tid]: r }, status: 'gen' });
   } else if (f.del) {
     const [text, tid] = f.del, m = find(text, tid);
     if (m.length !== 1) throw Error(`del: ${m.length} entries for "${text}" in ${tid}`);

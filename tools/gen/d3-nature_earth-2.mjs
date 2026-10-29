@@ -1,0 +1,201 @@
+// Depth-3 words: Nature & Earth, chunk 2 (plants, garden, landscapes).
+const v = (o = {}) => ({ pos: 'verb', ...o });
+const pl = (o = {}) => ({ type: 'place', ...o });
+
+export const THEMES = {
+  cacti_and_succulents: { d: 2 }, vines_and_climbers: { d: 3 }, water_plants: { d: 3 }, poisonous_plants: { d: 3 }, plant_parts: { d: 1 },
+  grasses_and_reeds: { d: 3 }, medicinal_plants: { d: 3 }, weeds: { d: 2 }, fiber_plants: { d: 4 }, christmas_plants: { d: 2 }, desert_plants: { d: 3 },
+  thorny_plants: { d: 2 }, seeds_and_pips: { d: 2 }, garden_tools: { d: 1 }, garden_features: { d: 1 }, garden_pests: { d: 2 }, garden_furniture: { d: 2 },
+  garden_birds: { d: 2 }, gardening_verbs: { d: 2 }, garden_styles: { d: 4 }, famous_gardens: { d: 5 }, japanese_garden: { d: 3 }, garden_helpers: { d: 3 },
+  mountain_features: { d: 2 }, river_features: { d: 2 }, desert_features: { d: 3 }, ice_features: { d: 3 }, cave_features: { d: 4 }, flat_landscapes: { d: 4 },
+  bodies_of_water: { d: 1 },
+};
+
+export const DATA = {
+  cacti_and_succulents: [
+    ['cactus', 1, 1, { al: [['cacti', 'synonym', 2, 2]] }], ['aloe vera', 2, 2], ['prickly pear', 2, 2, { al: [['opuntia', 'synonym', 5, 5]] }], ['saguaro', 3, 2],
+    ['barrel cactus', 3, 2], ['agave', 3, 2], ['jade plant', 3, 2], ['Christmas cactus', 3, 3], ['echeveria', 4, 3], ['sedum', 4, 3], ['yucca', 3, 4],
+    ['aeonium', 5, 3], ['haworthia', 5, 3], ['lithops', 5, 3, { al: [['living stones', 'synonym', 4, 4]] }], ['kalanchoe', 4, 3], ['hens and chicks', 4, 3],
+    ['sempervivum', 5, 4], ['string of pearls', 4, 3], ['cholla', 5, 3], ['snake plant', 3, 4], ['stonecrop', 4, 3], ['crassula', 5, 3], ['organ pipe cactus', 4, 3],
+  ],
+  vines_and_climbers: [
+    ['ivy', 1, 1], ['grapevine', 2, 1], ['wisteria', 2, 1], ['honeysuckle', 2, 1], ['clematis', 3, 2], ['morning glory', 3, 2], ['sweet pea', 2, 2],
+    ['climbing rose', 2, 2], ['jasmine', 2, 3], ['bougainvillea', 3, 2], ['virginia creeper', 4, 2], ['hops', 3, 4, { g: 'plant' }], ['passion flower', 3, 2],
+    ['kudzu', 4, 2], ['bindweed', 3, 3], ['trumpet vine', 4, 2], ['runner bean', 2, 3], ['liana', 4, 2], ['creeper', 2, 2], ['boston ivy', 4, 2],
+    ['nasturtium', 3, 4], ['moonflower', 4, 3], ['dodder', 5, 4], ['bryony', 5, 4], ['woodbine', 4, 3], ['Russian vine', 5, 3],
+  ],
+  water_plants: [
+    ['water lily', 2, 1, { al: [['waterlily', 'spelling', 3, 2]] }], ['lotus', 2, 1, { g: 'flower' }], ['duckweed', 3, 1], ['seaweed', 1, 3], ['reed', 2, 2, { g: 'plant' }], ['bulrush', 3, 2],
+    ['cattail', 3, 2], ['algae', 2, 3], ['pondweed', 3, 1], ['papyrus', 3, 3], ['kelp', 2, 3], ['water hyacinth', 4, 2], ['watercress', 3, 3, { al: [['water cress', 'spelling', 3, 3]] }],
+    ['rice', 1, 4], ['mangrove', 3, 3], ['eelgrass', 4, 2], ['hornwort', 5, 2], ['water chestnut', 3, 3], ['water lettuce', 4, 2], ['frogbit', 5, 2],
+    ['marsh marigold', 4, 3], ['elodea', 5, 2], ['water milfoil', 5, 2], ['water fern', 4, 2], ['azolla', 5, 2], ['pickerel weed', 5, 2],
+  ],
+  poisonous_plants: [
+    ['deadly nightshade', 2, 1, { al: [['belladonna', 'synonym', 3, 2]] }], ['poison ivy', 1, 1], ['hemlock', 3, 1], ['foxglove', 2, 2, { al: [['digitalis', 'synonym', 4, 3]] }],
+    ['oleander', 3, 2], ['poison oak', 2, 1], ['monkshood', 4, 2, { al: [['wolfsbane', 'synonym', 4, 3], ['aconite', 'synonym', 4, 3]] }], ['castor bean', 4, 2],
+    ['yew', 3, 3], ['lily of the valley', 3, 3], ['mistletoe', 2, 4], ['daffodil', 1, 4], ['holly', 2, 4], ['laburnum', 4, 3],
+    ['poison sumac', 4, 2], ['water hemlock', 4, 2], ['angel\'s trumpet', 4, 3], ['jimsonweed', 4, 3], ['henbane', 5, 2], ['cuckoo pint', 5, 3],
+    ['giant hogweed', 4, 2], ['rosary pea', 5, 3], ['autumn crocus', 5, 3], ['mandrake', 4, 3],
+  ],
+  plant_parts: [
+    ['leaf', 1, 1], ['root', 1, 1, { g: 'plant' }], ['stem', 1, 1, { g: 'plant' }], ['flower', 1, 1], ['petal', 1, 1], ['seed', 1, 1], ['branch', 1, 2], ['bud', 2, 1, { g: 'plant' }],
+    ['trunk', 1, 3, { g: 'tree' }], ['bark', 1, 3, { g: 'tree' }], ['thorn', 1, 3], ['fruit', 1, 2], ['stalk', 2, 2], ['twig', 2, 3], ['bulb', 2, 2], ['tuber', 3, 3], ['sepal', 3, 2],
+    ['stamen', 3, 2], ['pistil', 4, 3], ['stigma', 4, 3], ['anther', 4, 3], ['pollen', 2, 3], ['node', 4, 3, { g: 'plant' }], ['taproot', 4, 2], ['rhizome', 4, 2],
+    ['xylem', 4, 3], ['phloem', 4, 3], ['stomata', 5, 3], ['chloroplast', 4, 4], ['calyx', 5, 3], ['frond', 3, 3], ['tendril', 3, 2], ['cambium', 5, 3],
+  ],
+  grasses_and_reeds: [
+    ['bamboo', 1, 1], ['pampas grass', 3, 1], ['papyrus', 3, 2], ['reed', 2, 1, { g: 'plant' }], ['rush', 3, 2, { g: 'plant' }], ['cattail', 3, 2], ['wheat', 1, 3], ['barley', 2, 4],
+    ['sedge', 4, 2], ['marram', 4, 2], ['fescue', 4, 2], ['ryegrass', 3, 2], ['bluegrass', 3, 2], ['bulrush', 3, 2], ['sugarcane', 2, 3],
+    ['lemongrass', 2, 3], ['switchgrass', 4, 2], ['bermuda grass', 4, 2], ['timothy', 4, 2, { g: 'grass' }], ['esparto', 5, 2], ['cordgrass', 5, 2], ['spinifex', 5, 2],
+    ['couch grass', 4, 2], ['fountain grass', 4, 2], ['oats', 1, 4], ['miscanthus', 5, 2], ['elephant grass', 4, 2], ['vetiver', 5, 3], ['sawgrass', 4, 2],
+  ],
+  medicinal_plants: [
+    ['aloe vera', 2, 1], ['ginseng', 2, 1], ['echinacea', 3, 1], ['valerian', 4, 2], ['witch hazel', 3, 2], ['feverfew', 4, 2], ['arnica', 4, 2], ['chamomile', 2, 2],
+    ['peppermint', 1, 3], ['ginger', 1, 4], ['garlic', 1, 4], ['turmeric', 2, 3], ['lavender', 1, 4, { g: 'flower' }], ['eucalyptus', 2, 3], ['St John\'s wort', 3, 1], ['comfrey', 4, 2],
+    ['calendula', 4, 2], ['willow bark', 4, 2], ['ginkgo', 3, 2], ['goldenseal', 4, 2], ['milk thistle', 4, 2], ['licorice root', 4, 2], ['elderflower', 3, 3],
+    ['slippery elm', 5, 2], ['marshmallow root', 5, 2], ['black cohosh', 5, 2], ['skullcap', 5, 2], ['yarrow', 4, 3], ['tea tree', 2, 3], ['senna', 4, 2], ['evening primrose', 4, 3],
+    ['cinchona', 5, 2],
+  ],
+  weeds: [
+    ['dandelion', 1, 1], ['nettle', 2, 1], ['thistle', 2, 1], ['bindweed', 3, 1], ['dock', 3, 2, { g: 'plant' }], ['chickweed', 3, 1], ['ragwort', 4, 2], ['knotweed', 4, 1],
+    ['crabgrass', 3, 1], ['clover', 1, 3], ['moss', 1, 3], ['groundsel', 4, 2], ['horsetail', 4, 2], ['couch grass', 4, 2], ['ground elder', 4, 1],
+    ['creeping buttercup', 4, 2], ['bramble', 3, 3], ['mare\'s tail', 5, 2], ['goosegrass', 5, 2], ['hogweed', 4, 2], ['purslane', 5, 2], ['lamb\'s quarters', 5, 2],
+    ['shepherd\'s purse', 5, 2], ['speedwell', 5, 3], ['bittercress', 5, 2], ['oxalis', 5, 2], ['burdock', 4, 2], ['cleavers', 5, 2], ['ragweed', 3, 2],
+    ['mugwort', 5, 2], ['milkweed', 3, 3],
+  ],
+  fiber_plants: [
+    ['cotton', 1, 1], ['flax', 3, 1], ['hemp', 3, 1, { g: 'plant' }], ['jute', 3, 1], ['sisal', 4, 1], ['coir', 4, 2], ['abaca', 5, 2], ['ramie', 5, 2], ['kapok', 4, 2],
+    ['bamboo', 1, 3], ['raffia', 4, 2], ['rattan', 3, 3], ['wicker', 3, 4], ['kenaf', 5, 2], ['agave', 3, 4], ['coconut', 1, 4],
+    ['esparto', 5, 2], ['sunn hemp', 5, 2], ['henequen', 5, 2], ['phormium', 5, 2],
+  ],
+  christmas_plants: [
+    ['holly', 1, 1], ['mistletoe', 1, 1], ['poinsettia', 3, 1], ['ivy', 2, 2], ['fir tree', 1, 1], ['Christmas tree', 1, 1], ['spruce', 2, 2], ['pine', 1, 2, { g: 'tree' }],
+    ['amaryllis', 3, 2], ['Christmas cactus', 3, 1], ['rosemary', 2, 3], ['cyclamen', 3, 3], ['hellebore', 4, 2], ['Christmas rose', 3, 2], ['paperwhite', 4, 2],
+    ['norway spruce', 4, 2], ['nordmann fir', 4, 2], ['blue spruce', 3, 2], ['winterberry', 4, 3], ['snowberry', 4, 3], ['red amaryllis', 3, 2],
+  ],
+  desert_plants: [
+    ['cactus', 1, 1], ['saguaro', 3, 1], ['agave', 3, 2], ['yucca', 3, 2], ['joshua tree', 3, 1], ['aloe', 3, 2], ['prickly pear', 2, 2], ['tumbleweed', 2, 1],
+    ['sagebrush', 3, 1], ['mesquite', 3, 2], ['creosote bush', 4, 2], ['ocotillo', 4, 2], ['date palm', 2, 3], ['barrel cactus', 3, 2], ['welwitschia', 5, 2],
+    ['desert rose', 3, 3], ['brittlebush', 5, 2], ['cholla', 5, 2], ['palo verde', 5, 3], ['acacia', 3, 3], ['spinifex', 5, 3], ['century plant', 4, 2],
+    ['baobab', 3, 4], ['lithops', 5, 3], ['ironwood', 4, 4], ['desert willow', 5, 3],
+  ],
+  thorny_plants: [
+    ['rose', 1, 1, { g: 'flower' }], ['cactus', 1, 1], ['thistle', 2, 1], ['bramble', 3, 1], ['hawthorn', 3, 2], ['blackthorn', 3, 2], ['gorse', 3, 1], ['holly', 2, 2],
+    ['blackberry', 1, 2], ['barberry', 4, 2], ['pyracantha', 4, 2], ['bougainvillea', 3, 3], ['acacia', 3, 3], ['mesquite', 3, 3], ['teasel', 5, 3],
+    ['firethorn', 4, 2], ['raspberry', 1, 3], ['gooseberry', 3, 3], ['sloe', 4, 3], ['sea buckthorn', 5, 2], ['agave', 3, 3],
+    ['berberis', 5, 2], ['bull thistle', 4, 2], ['honey locust', 4, 2], ['hawthorn hedge', 3, 2], ['wild rose', 2, 2],
+  ],
+  seeds_and_pips: [
+    ['pip', 2, 1, { g: 'seed' }], ['seed', 1, 1], ['pit', 2, 2, { g: 'fruit' }], ['stone', 1, 2, { g: 'fruit' }], ['kernel', 3, 2, { g: 'seed' }], ['acorn', 1, 2], ['conker', 3, 3, { reg: ['UK'] }],
+    ['sunflower seed', 1, 1], ['pumpkin seed', 2, 1], ['sesame seed', 2, 2], ['poppy seed', 2, 2], ['chia seed', 3, 2], ['flax seed', 3, 2], ['pine nut', 2, 3],
+    ['mustard seed', 3, 2], ['apple pip', 2, 1], ['grape seed', 3, 2], ['samara', 5, 2], ['achene', 5, 2], ['cotyledon', 5, 4], ['endosperm', 5, 3],
+    ['sycamore key', 3, 2], ['hemp seed', 3, 2], ['peach stone', 2, 2], ['cherry stone', 2, 2], ['avocado stone', 2, 2],
+  ],
+  garden_tools: [
+    ['spade', 1, 1], ['shovel', 1, 1], ['rake', 1, 1], ['hoe', 2, 1, { g: 'tool' }], ['trowel', 2, 1], ['fork', 1, 2, { g: 'garden' }], ['wheelbarrow', 1, 1], ['watering can', 1, 1], ['hose', 1, 1],
+    ['lawn mower', 1, 1], ['shears', 2, 1], ['secateurs', 3, 1, { reg: ['UK'], al: [['pruning shears', 'synonym', 2, 2], ['pruners', 'synonym', 3, 3, ['US']]] }], ['loppers', 3, 1],
+    ['sprinkler', 1, 1], ['strimmer', 3, 2, { reg: ['UK'], al: [['weed whacker', 'synonym', 3, 2, ['US']], ['weed eater', 'synonym', 3, 2, ['US']]] }],
+    ['hedge trimmer', 2, 1], ['leaf blower', 2, 1], ['dibber', 4, 2, { reg: ['UK'] }], ['edging iron', 5, 2], ['hand fork', 3, 1], ['garden hose', 1, 1], ['pruning saw', 3, 2],
+    ['cultivator', 4, 2], ['rotavator', 4, 2, { reg: ['UK'], al: [['rototiller', 'synonym', 4, 2, ['US']]] }], ['bulb planter', 4, 1], ['grass shears', 3, 1],
+  ],
+  garden_features: [
+    ['lawn', 1, 1], ['flower bed', 1, 1], ['pond', 1, 1], ['hedge', 1, 1], ['fence', 1, 2], ['path', 1, 2, { g: 'garden' }], ['patio', 1, 1], ['shed', 1, 1], ['greenhouse', 1, 1], ['fountain', 1, 1],
+    ['trellis', 3, 1], ['pergola', 3, 1], ['gazebo', 2, 1], ['rockery', 3, 1], ['border', 2, 1, { g: 'garden' }], ['compost heap', 2, 1], ['water butt', 3, 2, { reg: ['UK'] }],
+    ['birdbath', 3, 1], ['arbour', 3, 1, { al: [['arbor', 'spelling', 3, 1, ['US']]] }], ['decking', 2, 1], ['vegetable patch', 2, 1],
+    ['raised bed', 2, 1], ['cold frame', 4, 1], ['ha-ha', 4, 2, { g: 'garden wall' }], ['topiary', 3, 1], ['folly', 4, 2, { g: 'building' }], ['sundial', 2, 1], ['bird feeder', 1, 1], ['garden gnome', 1, 1],
+    ['herb garden', 2, 1], ['wildflower meadow', 3, 2],
+  ],
+  garden_pests: [
+    ['slug', 1, 1, { g: 'animal' }], ['snail', 1, 1], ['aphid', 3, 1, { al: [['greenfly', 'synonym', 3, 1, ['UK']], ['blackfly', 'synonym', 3, 2, ['UK']]] }], ['caterpillar', 1, 2], ['mole', 2, 1, { g: 'animal' }],
+    ['rabbit', 1, 2], ['squirrel', 1, 2], ['vine weevil', 4, 1], ['whitefly', 3, 1], ['earwig', 2, 2], ['cutworm', 4, 2], ['leatherjacket', 5, 2],
+    ['wireworm', 5, 2], ['red spider mite', 4, 2], ['thrips', 5, 2], ['mealybug', 4, 2], ['scale insect', 4, 2], ['Japanese beetle', 4, 2], ['cabbage white', 3, 2], ['codling moth', 5, 2],
+    ['lily beetle', 4, 2], ['sawfly', 4, 3], ['gopher', 3, 1], ['vole', 3, 2], ['woodlouse', 3, 3, { reg: ['UK'] }],
+  ],
+  garden_furniture: [
+    ['bench', 1, 1], ['deck chair', 1, 1], ['sun lounger', 3, 1, { reg: ['UK'] }], ['hammock', 1, 1], ['parasol', 2, 1], ['patio table', 1, 1], ['swing seat', 2, 2],
+    ['adirondack chair', 3, 2], ['picnic table', 1, 2], ['barbecue', 1, 2], ['bistro set', 3, 1], ['garden bench', 1, 1], ['folding chair', 1, 2],
+    ['chaise longue', 3, 3], ['fire pit', 2, 2], ['patio heater', 3, 2], ['outdoor sofa', 2, 1], ['lounge chair', 2, 1], ['patio chair', 1, 1], ['rocking chair', 1, 3],
+  ],
+  garden_birds: [
+    ['robin', 1, 1], ['blackbird', 1, 1], ['sparrow', 1, 1], ['blue tit', 2, 1, { reg: ['UK'] }], ['great tit', 3, 1, { reg: ['UK'] }], ['wren', 2, 1], ['starling', 2, 2], ['chaffinch', 3, 1, { reg: ['UK'] }],
+    ['goldfinch', 3, 1], ['greenfinch', 3, 1], ['thrush', 2, 2], ['song thrush', 3, 1], ['collared dove', 3, 2], ['woodpigeon', 3, 2], ['magpie', 2, 2], ['dunnock', 4, 1, { reg: ['UK'] }],
+    ['house sparrow', 2, 1], ['nuthatch', 4, 1], ['long-tailed tit', 4, 1], ['coal tit', 4, 1], ['bullfinch', 3, 2], ['cardinal', 2, 1, { g: 'bird' }],
+    ['chickadee', 3, 1], ['blue jay', 2, 1], ['hummingbird', 1, 2], ['mockingbird', 3, 2], ['goldcrest', 4, 2],
+  ],
+  gardening_verbs: [
+    ['plant', 1, 1, v()], ['dig', 1, 1, v({ g: 'soil' })], ['irrigate', 3, 2, v()], ['weed', 1, 1, v()], ['mow', 2, 1, v()], ['prune', 2, 1, v()], ['sow', 3, 1, v({ g: 'seeds' })], ['rake', 1, 1, v()],
+    ['trim', 1, 2, v()], ['harvest', 2, 2, v()], ['grow', 1, 2, v()], ['mulch', 3, 1, v()], ['compost', 2, 2, v()], ['fertilise', 3, 1, v({ al: [['fertilize', 'spelling', 3, 1, ['US']]] })],
+    ['transplant', 3, 1, v()], ['deadhead', 4, 1, v()], ['hoe', 3, 1, v({ g: 'weeding' })], ['graft', 4, 2, v()], ['thin out', 3, 2, v()], ['prick out', 5, 2, v()], ['pinch out', 5, 2, v()],
+    ['harden off', 5, 2, v()], ['aerate', 4, 2, v()], ['scarify', 5, 3, v()], ['propagate', 4, 2, v()], ['cultivate', 3, 2, v()],
+  ],
+  garden_styles: [
+    ['cottage garden', 2, 1], ['rock garden', 2, 1], ['zen garden', 2, 1], ['kitchen garden', 3, 1], ['walled garden', 3, 1], ['knot garden', 4, 1], ['formal garden', 2, 1],
+    ['English garden', 2, 1], ['Japanese garden', 2, 1], ['herb garden', 2, 2], ['water garden', 3, 1], ['wildlife garden', 3, 1], ['prairie garden', 4, 1], ['Italian garden', 3, 1],
+    ['French garden', 3, 1], ['parterre', 5, 2], ['sunken garden', 4, 1], ['courtyard garden', 3, 1], ['woodland garden', 4, 1], ['gravel garden', 4, 1], ['xeriscape', 5, 2],
+    ['permaculture', 4, 3], ['container garden', 3, 2], ['roof garden', 3, 2], ['bog garden', 4, 1], ['alpine garden', 4, 1], ['moon garden', 4, 1], ['potager', 5, 2],
+    ['landscape garden', 4, 2], ['tropical garden', 3, 1],
+  ],
+  famous_gardens: [
+    ['Kew Gardens', 2, 1, pl()], ['Versailles', 2, 3, pl()], ['Keukenhof', 4, 1, pl()], ['Giverny', 4, 1, pl()], ['Butchart Gardens', 4, 1, pl()], ['Kirstenbosch', 5, 1, pl()],
+    ['Boboli Gardens', 5, 1, pl()], ['Eden Project', 3, 2, pl()], ['Stourhead', 5, 1, pl()], ['Sissinghurst', 5, 1, pl()],
+    ['Villa d\'Este', 5, 1, pl()], ['Longwood Gardens', 5, 1, pl()], ['Gardens by the Bay', 3, 1, pl()], ['Kenroku-en', 5, 1, pl()],
+    ['Hidcote', 5, 1, pl()], ['Powerscourt', 5, 1, pl()], ['Chatsworth', 4, 2, pl()],
+    ['Bodnant', 5, 1, pl()], ['Chanticleer', 5, 1, pl()], ['Wisley', 5, 1, pl()], ['Alnwick Garden', 5, 1, pl()], ['Ryoan-ji', 5, 2, pl()], ['Generalife', 5, 1, pl()],
+  ],
+  japanese_garden: [
+    ['koi', 2, 1], ['bonsai', 2, 1], ['stone lantern', 3, 1], ['raked gravel', 3, 1], ['moss', 1, 2], ['teahouse', 3, 1], ['stepping stones', 2, 1],
+    ['bamboo fence', 3, 1], ['cherry blossom', 1, 2], ['arched bridge', 3, 1], ['red bridge', 3, 1], ['bamboo fountain', 4, 1], ['shishi-odoshi', 5, 2],
+    ['tsukubai', 5, 2], ['karesansui', 5, 2], ['azalea', 3, 3], ['moss garden', 3, 1], ['sand garden', 3, 1], ['tea garden', 3, 1],
+    ['stone basin', 3, 1], ['gravel path', 2, 1], ['rock garden', 2, 2], ['koi pond', 2, 1], ['pruned pine', 3, 1], ['bamboo spout', 4, 1], ['sand ripples', 4, 1],
+  ],
+  garden_helpers: [
+    ['bee', 1, 1], ['ladybird', 2, 1, { reg: ['UK'], al: [['ladybug', 'synonym', 2, 1, ['US']]] }], ['earthworm', 1, 1], ['hedgehog', 1, 1], ['hoverfly', 3, 1],
+    ['lacewing', 4, 1], ['frog', 1, 1], ['toad', 1, 2], ['bumblebee', 1, 1], ['ground beetle', 4, 1], ['slow worm', 4, 2, { reg: ['UK'] }],
+    ['honeybee', 1, 1], ['mason bee', 4, 1], ['parasitic wasp', 4, 1], ['praying mantis', 2, 2], ['newt', 3, 2],
+    ['compost worm', 3, 2], ['pollinator', 3, 2], ['bug hotel', 3, 1], ['rove beetle', 5, 2], ['mole cricket', 5, 5],
+  ].filter(r => r[0] !== 'mole cricket'),
+  mountain_features: [
+    ['peak', 1, 1, { g: 'mountain' }], ['summit', 1, 1], ['ridge', 2, 1], ['valley', 1, 1], ['cliff', 1, 1], ['slope', 1, 1], ['pass', 2, 1, { g: 'mountain' }], ['glacier', 1, 2], ['crag', 3, 1],
+    ['gorge', 2, 2], ['col', 4, 1, { g: 'mountain' }], ['arete', 5, 1], ['cirque', 5, 1, { al: [['corrie', 'synonym', 5, 2, ['UK']], ['cwm', 'synonym', 5, 2, ['UK']]] }], ['scree', 4, 1], ['foothills', 2, 1],
+    ['snowline', 3, 1], ['treeline', 3, 1], ['spur', 3, 2, { g: 'mountain' }], ['crest', 2, 2, { g: 'ridge' }], ['massif', 4, 1], ['plateau', 2, 4, { g: 'landform' }], ['avalanche', 2, 2],
+    ['moraine', 4, 2], ['tarn', 4, 2], ['ravine', 3, 2], ['pinnacle', 3, 2], ['rock face', 2, 1], ['couloir', 5, 1],
+    ['alp', 3, 1, { g: 'mountain' }], ['tor', 4, 1],
+  ],
+  river_features: [
+    ['bank', 1, 1, { g: 'river' }], ['source', 2, 1, { g: 'river' }], ['delta', 2, 1, { g: 'river' }], ['estuary', 3, 1], ['rapids', 2, 1], ['waterfall', 1, 1],
+    ['meander', 3, 1], ['tributary', 3, 1], ['oxbow lake', 4, 1], ['floodplain', 3, 1], ['riverbed', 2, 1], ['ford', 3, 1], ['weir', 4, 1], ['confluence', 4, 1],
+    ['rivulet', 4, 1], ['stream', 1, 1], ['brook', 2, 1], ['creek', 2, 1], ['sandbar', 3, 1], ['levee', 3, 1], ['eddy', 3, 1],
+    ['headwaters', 3, 1], ['watershed', 3, 2], ['backwater', 3, 2], ['shallows', 2, 2], ['bayou', 4, 2], ['river bend', 2, 1], ['plunge pool', 4, 1],
+  ],
+  desert_features: [
+    ['dune', 1, 1], ['oasis', 1, 1], ['mirage', 2, 1], ['wadi', 4, 1], ['mesa', 3, 1], ['butte', 4, 1],
+    ['salt flat', 3, 1], ['playa', 5, 1], ['sandstorm', 2, 1], ['badlands', 3, 1], ['hoodoo', 5, 1], ['erg', 5, 1],
+    ['hamada', 5, 2], ['sand sea', 4, 1], ['desert pavement', 5, 1], ['inselberg', 5, 2], ['dust devil', 3, 1], ['sand dune', 1, 1],
+    ['barchan', 5, 1], ['star dune', 5, 1], ['haboob', 5, 2], ['alluvial fan', 5, 2], ['desert wash', 4, 1], ['rock arch', 3, 2],
+  ],
+  ice_features: [
+    ['glacier', 1, 1], ['iceberg', 1, 1], ['icicle', 1, 1], ['ice cap', 3, 1], ['ice sheet', 3, 1], ['crevasse', 3, 1], ['permafrost', 3, 2], ['pack ice', 3, 1], ['ice shelf', 3, 1],
+    ['frozen lake', 1, 1], ['snowfield', 3, 1], ['serac', 5, 1], ['moraine', 4, 2], ['ice floe', 3, 1], ['sea ice', 2, 1], ['ice cave', 3, 1], ['firn', 5, 2], ['nunatak', 5, 2],
+    ['bergy bit', 5, 2], ['growler', 5, 3, { g: 'ice' }], ['hoarfrost', 4, 2], ['ice fall', 4, 1], ['calving', 4, 2], ['polynya', 5, 2],
+    ['ice bridge', 4, 1], ['glacial stream', 4, 1], ['frozen waterfall', 2, 1],
+  ],
+  cave_features: [
+    ['stalactite', 3, 1], ['stalagmite', 3, 1], ['cavern', 2, 1], ['grotto', 3, 1], ['underground river', 3, 1],
+    ['sinkhole', 2, 2], ['flowstone', 5, 1], ['cave pearl', 5, 1], ['helictite', 5, 1], ['speleothem', 5, 1], ['underground lake', 3, 1],
+    ['pothole', 4, 2, { g: 'caving' }], ['cave mouth', 3, 1], ['limestone cave', 3, 1], ['soda straw', 5, 1],
+    ['dripstone', 5, 1], ['gour', 5, 1], ['crystal cave', 3, 2], ['lava tube', 4, 1], ['sea cave', 3, 1], ['rimstone', 5, 1], ['cave chamber', 3, 1],
+    ['cave entrance', 2, 1], ['cave passage', 3, 1], ['cave formation', 3, 1], ['cave wall', 3, 1],
+  ],
+  flat_landscapes: [
+    ['plain', 1, 1, { g: 'landscape' }], ['plateau', 2, 1, { g: 'landform' }], ['prairie', 2, 1], ['steppe', 3, 1], ['tundra', 2, 1], ['moor', 3, 1], ['heath', 3, 1, { g: 'landscape' }], ['fen', 4, 1], ['veld', 4, 1], ['pampas', 4, 1],
+    ['savanna', 2, 1, { al: [['savannah', 'spelling', 2, 1]] }], ['grassland', 1, 1], ['flatland', 3, 1], ['llano', 5, 1],
+    ['lowland', 2, 1], ['downs', 4, 2, { reg: ['UK'] }], ['fenland', 4, 1],
+    ['puszta', 5, 1], ['machair', 5, 2, { reg: ['UK'] }], ['moorland', 3, 1], ['heathland', 3, 1], ['scrubland', 3, 2], ['great plains', 2, 1], ['plains', 1, 1], ['lowlands', 2, 1],
+  ],
+  bodies_of_water: [
+    ['lake', 1, 1], ['pond', 1, 1], ['lagoon', 2, 1], ['reservoir', 2, 1], ['loch', 3, 1, { reg: ['UK'] }], ['tarn', 4, 1], ['fjord', 3, 1], ['bay', 1, 1], ['gulf', 2, 1], ['estuary', 3, 1],
+    ['sound', 3, 2, { g: 'water' }], ['ocean', 1, 1], ['sea', 1, 1], ['river', 1, 1], ['stream', 1, 1], ['creek', 2, 1], ['brook', 2, 1], ['canal', 2, 1], ['strait', 3, 1], ['channel', 2, 2, { g: 'water' }],
+    ['inlet', 3, 1], ['cove', 3, 1], ['harbour', 2, 2, { al: [['harbor', 'spelling', 2, 2, ['US']]] }], ['bayou', 4, 2], ['mere', 5, 1, { reg: ['UK'], g: 'lake' }], ['billabong', 4, 2, { reg: ['AU'] }], ['oxbow lake', 4, 1],
+    ['rock pool', 2, 2, { reg: ['UK'] }], ['firth', 5, 1, { reg: ['UK'] }], ['lough', 5, 1, { reg: ['IE'] }], ['slough', 5, 2, { g: 'water' }],
+  ],
+};
