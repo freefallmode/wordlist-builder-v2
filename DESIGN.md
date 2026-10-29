@@ -128,7 +128,7 @@ Filters, each applied **per link** (a link is flagged when the entry, its theme,
 - longest entry in words (`maxEntryWords`, 0 = no limit): entries with more words are left out, aliases included;
 
 - adult, sensitive, trademark, vulgar, language-specific: **include / leave out** (the export code still understands "only", the screen does not offer it);
-- region-specific: include / leave out, plus region boxes (all ticked by default, with all / none links) saying which regions the setting applies to; none ticked = nothing is left out. Presets saved before `region.v: 2` used an empty list for "every region" and are converted when read. Every other export option (flag filters, synonyms, spelling variants, unrated, Zipf, meanings, notes) is a drop-down (include / leave out) too, laid out in two columns;
+- region-specific: one tick-box "Include region-specific words and themes", plus region boxes (all ticked by default, with all / none links) saying which regions the setting applies to; none ticked = nothing is left out. Presets saved before `region.v: 2` used an empty list for "every region" and are converted when read. Every option is a tick-box (flag filters: ticked = include), laid out in two columns on wide screens;
 - include synonyms, include spelling variants (on/off);
 - rating range and "include unrated";
 - minimum words per theme.
