@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":187,"modified":"2026-10-30 22:24"},"nextId":63555,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":188,"modified":"2026-10-30 22:24"},"nextId":63555,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1},
@@ -64126,8 +64126,8 @@
 {"id":63533,"text":"veggie","gloss":"meatless option","rec":2,"th":{"pizza_styles":3},"status":"gen"},
 {"id":63534,"text":"white","gloss":"no-tomato style","rec":3,"th":{"pizza_styles":4},"status":"gen"},
 {"id":63535,"text":"roll","gloss":"rolled seaweed form","rec":1,"th":{"sushi_types":1},"status":"gen"},
-{"id":63536,"text":"builder's","gloss":"strong British brew","rec":3,"region":["UK"],"th":{"teas":1},"status":"gen"},
-{"id":63537,"text":"white","gloss":"delicate pale brew","rec":3,"th":{"teas":2},"status":"gen"},
+{"id":63536,"text":"builder's","gloss":"tea","rec":3,"region":["UK"],"th":{"teas":1},"status":"gen"},
+{"id":63537,"text":"white","gloss":"tea","rec":3,"th":{"teas":2},"status":"gen"},
 {"id":63538,"text":"black","gloss":"no milk","rec":1,"th":{"coffee_drinks":1},"status":"gen"},
 {"id":63539,"text":"instant","gloss":"freeze-dried granules","rec":2,"th":{"coffee_drinks":1},"status":"gen"},
 {"id":63540,"text":"Irish","gloss":"whiskey and cream drink","rec":2,"adult":true,"sensitive":true,"th":{"coffee_drinks":2},"status":"gen"},
