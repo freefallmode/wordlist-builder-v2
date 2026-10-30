@@ -119,6 +119,7 @@ h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--
 .flaghelp { margin: 2px 0 6px; } .flaghelp > div { margin: 2px 0; }
 .sechead.fold { cursor: pointer; user-select: none; } .sechead.fold:hover { background: var(--hover); }
 #tflag { margin: 6px 8px; width: calc(100% - 16px); }
+#tlevel { margin: 0 8px 6px; width: calc(100% - 16px); } #tlevel[hidden] { display: none; }
 
 /* word table: fixed column widths so sorting never moves them; sortable headings are marked */
 .etable { overflow-x: auto; }

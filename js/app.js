@@ -140,13 +140,18 @@ const THEME_FILTERS = [
   ['tm', 'Trademark / copyright themes', (P, t, ef) => ef.tm],
   ['lang', 'Language-specific themes', (P, t, ef) => ef.lang],
   ['region', 'Region-specific themes', (P, t, ef) => ef.region.length > 0],
-  ['pop0', 'Popularity not rated', (P, t) => !t.group && !t.pop],
-  ...[1, 2, 3, 4, 5].map(n => ['pop' + n, `Popularity ${n}`, (P, t) => !t.group && t.pop === n]),
-  ['diff0', 'Difficulty: too few words to fill a set', (P, t) => !t.group && !themeProfile(P, t.id).lo],
-  ...[1, 2, 3, 4, 5].map(n => ['diff' + n, `Can serve difficulty ${n}`, (P, t) => { if (t.group) return false; const p = themeProfile(P, t.id); return p.lo > 0 && p.lo <= n && n <= p.hi; }]),   // the theme can fill a set at this level: its 4th easiest and 4th hardest words straddle it
+  ['pop', 'Popularity…'],
+  ['diff', 'Difficulty…'],
 ];
+// The "Popularity…" and "Difficulty…" choices open a second select for the level.
+const LEVEL_FILTERS = {
+  pop: [['0', 'not rated', (P, t) => !t.pop], ...[1, 2, 3, 4, 5].map(n => [String(n), String(n) + (n === 1 ? ' (most popular)' : n === 5 ? ' (least popular)' : ''), (P, t) => t.pop === n])],
+  diff: [['0', 'too few words to fill a set', (P, t) => !themeProfile(P, t.id).lo],   // can serve a level: the 4th easiest and 4th hardest words straddle it
+    ...[1, 2, 3, 4, 5].map(n => [String(n), 'can serve ' + n + (n === 1 ? ' (easiest)' : n === 5 ? ' (hardest)' : ''), (P, t) => { const p = themeProfile(P, t.id); return p.lo > 0 && p.lo <= n && n <= p.hi; }])],
+};
 function filterVisible() {
-  const f = THEME_FILTERS.find(x => x[0] === A.tflag)?.[2];
+  const lv = LEVEL_FILTERS[A.tflag]?.find(x => x[0] === A.tlevel)?.[2];
+  const f = lv ? (P, t, ef) => !t.group && lv(P, t, ef) : THEME_FILTERS.find(x => x[0] === A.tflag)?.[2];
   if (!f) return null;
   const P = A.P, vis = new Set(), hit = new Set();
   for (const t of P.themes) if (f(P, t, eff(P, t.id))) { hit.add(t.id); for (let x = t; x; x = x.parent && P.ix.theme.get(x.parent)) vis.add(x.id); }
@@ -372,7 +377,15 @@ async function boot() {
   $('#btn-collapse').onclick = () => { A.open.clear(); renderTree(); };
   const tf = $('#tflag');
   tf.append(...THEME_FILTERS.map(([v, l]) => h('option', { value: v }, l)));
-  tf.onchange = () => { A.tflag = tf.value; renderTree(); };
+  const tl = $('#tlevel');
+  tl.onchange = () => { A.tlevel = tl.value; renderTree(); };
+  tf.onchange = () => {
+    A.tflag = tf.value;
+    const lv = LEVEL_FILTERS[A.tflag];
+    tl.hidden = !lv;
+    if (lv) { tl.replaceChildren(...lv.map(([v, l]) => h('option', { value: v }, l))); tl.value = A.tlevel = lv[1][0]; }
+    renderTree();
+  };
   $('#btn-home').onclick = () => { A.sel = null; A.view = null; render(); };
   $('#filemenu .mpop').append(
     menuItem('Save project file', () => {
