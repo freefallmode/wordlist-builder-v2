@@ -3,6 +3,8 @@
 The library feeds a word-sorting game: a level shows sets of 4 words from 8-12 themes and the player sorts each word into its theme; a theme's name is shown only when the theme is complete. A word that contains a word from its theme's name gives the theme away ("tomato soup" in "soups"). Two earlier passes replaced the easy ones, but a first reviewer kept about 5,000 entries under their full name, many of them too readily ("when in doubt, keep"). Your chunk lists those kept entries. Decide again, and this time make each keep EARN its place.
 
 ## The test
+**The question to ask: "what type/kind of <the category> is it?" If the bare word is a natural answer, it is an S.** What type of shark? Bull. What type of cheese? Blue. What type of tea? White, green, herbal, bubble. What type of pie? Apple. What type of flour? Millet. What type of eggs? Scrambled. What kind of coffee? Irish. It does not matter that the bare word also means something else on its own: in the category it is the natural answer. It fails only when it is not a natural answer to that question ("what type of fruit? dragon" is wrong, "what type of apple? dried" is wrong).
+
 Cover the theme name. Take the text with the theme-name word removed (the listing gives it as `shorter`). Ask two questions:
 
 1. **Would people really call the thing that?** If someone says "I had a canary", "pass me the Erie" or "I'll have the white" (tea) meaning this exact thing, the bare form works. Within a category the distinguishing word alone is the normal shorthand: black, green, white, bubble, herbal for teas; blue for cheese; oyster for mushrooms; tiger and bull for sharks.
