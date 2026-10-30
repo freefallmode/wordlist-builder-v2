@@ -11,18 +11,20 @@ import fs from 'node:fs';
 import { parseProject, serializeProject, stampSave } from '../../js/store.js';
 import { reindex, linkIds, addEntry, deleteEntry, sameText } from '../../js/model.js';
 import { nameLeak, themeNameWords } from '../../js/validate.js';
-const args = process.argv.slice(2), li = args.indexOf('--lib');
+const args = process.argv.slice(2), li = args.indexOf('--lib'), ki = args.indexOf('--keep-drops'), KEEP = ki >= 0;   // --keep-drops: apply only the replacements; D lines, leaking aliases and replacements that merge into an entry already in the theme are left as they are
+if (ki >= 0) args.splice(ki, 1);
 const LIB = li >= 0 ? args.splice(li, 2)[1] : new URL('../../data/wordlist-en.project.json', import.meta.url);
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const doneFile = li >= 0 ? LIB + '.done.json' : new URL('./leak/done.json', import.meta.url);
 const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFile, 'utf8')) : []);
-const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, ok: 0, open: 0 };
+const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, ok: 0, open: 0, kept: 0 };
 
 for (const f of args) {
   let tid = null, need = new Set(), handled = new Set();
   const close = () => {
     if (!tid) return;
     const left = [...need].filter(id => !handled.has(id));
+    if (KEEP) { stat.kept += left.length; stat.themes++; return; }
     if (left.length) { stat.open += left.length; problems.push(`${f}: ${tid} has ${left.length} leaking entries without an action (${left.slice(0, 4).map(id => P.ix.entry.get(id)?.text).join(', ')}...)`); } else done.add(tid);
     stat.themes++;
   };
@@ -47,11 +49,12 @@ for (const f of args) {
     } else if (tid && (m = /^D (\d+)$/.exec(s))) {
       const e = P.ix.entry.get(+m[1]);
       if (!e || !linkIds(P, e).includes(tid)) { if (!handled.has(+m[1])) problems.push(`${f}: entry ${m[1]} is not in ${tid}`); continue; }
+      if (KEEP) continue;
       handled.add(e.id); drop(e, tid, null); stat.D++;
     } else if (tid && (m = /^S (\d+) (?:= (\d+)|\| ([^|]+) \| ([^|]*) \| ([1-5]))$/.exec(s))) {
       const e = P.ix.entry.get(+m[1]), t = P.ix.theme.get(tid);
       if (!e || !linkIds(P, e).includes(tid)) { if (!handled.has(+m[1])) problems.push(`${f}: entry ${m[1]} is not in ${tid}`); continue; }
-      if (e.aliasOf) { handled.add(e.id); drop(e, tid, null); stat.D++; continue; }   // an alias is just dropped
+      if (e.aliasOf) { if (KEEP) continue; handled.add(e.id); drop(e, tid, null); stat.D++; continue; }   // an alias is just dropped
       let target;
       if (m[2]) { target = P.ix.entry.get(+m[2]); if (!target || target.aliasOf) { problems.push(`${f}: ${m[2]} is not a root entry`); continue; } }
       else {
@@ -65,6 +68,7 @@ for (const f of args) {
           reindex(P); stat.made++;
         }
       }
+      if (KEEP && target !== e && target.th[tid] !== undefined) continue;
       if (target === e) { problems.push(`${f}: ${e.id} cannot replace itself`); continue; }
       if (target.th[tid] === undefined) target.th[tid] = e.th[tid] || 3;
       handled.add(e.id); drop(e, tid, target); stat.S++;
@@ -76,5 +80,5 @@ for (const p of problems.slice(0, 40)) console.log('PROBLEM', p);
 if (problems.length > 40) console.log('... and', problems.length - 40, 'more problems');
 reindex(P); stampSave(P);
 fs.writeFileSync(LIB, serializeProject(P));
-fs.writeFileSync(doneFile, JSON.stringify([...done].sort()));
-console.log(`${stat.themes} themes (${stat.ok} marked nameOk), ${stat.S} replaced, ${stat.D} dropped, ${stat.made} entries made, ${stat.deleted} deleted, ${stat.open} still open -> library v${P.lib.version}; ${done.size} themes done`);
+if (!KEEP) fs.writeFileSync(doneFile, JSON.stringify([...done].sort()));
+console.log(`${stat.themes} themes (${stat.ok} marked nameOk), ${stat.S} replaced, ${stat.D} dropped, ${stat.made} entries made, ${stat.deleted} deleted, ${stat.open} still open, ${stat.kept} left as they were -> library v${P.lib.version}; ${done.size} themes done`);
