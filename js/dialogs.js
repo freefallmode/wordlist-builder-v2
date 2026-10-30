@@ -13,6 +13,12 @@ import { MODELS, getKey, setKey, getModel, setModel, generateWords, rateThemes, 
 const REC_OPTS = REC_HELP.map((l, i) => [i, l]);
 const IN_OPTS = [[0, 'auto'], ...POP_HELP.slice(1).map((l, i) => [i + 1, l])];
 
+// Region ticks in the same box, with all / none links, as the region section of the Export window.
+const regionBox = boxes => {
+  const all = on => boxes.forEach(b => { b.querySelector('input').checked = on; });
+  return h('div.regionbox', {}, h('div.chips', [h('button.link', { type: 'button', onclick: () => all(true) }, 'all'), h('button.link', { type: 'button', onclick: () => all(false) }, 'none'), ...boxes]));
+};
+
 // Theme picker by name: a text box with a datalist. Returns { input, get() } where get() gives a theme id or null.
 let listSeq = 0;
 function themePicker(placeholder, { groups = true } = {}) {
@@ -36,7 +42,7 @@ export async function editTheme(t, isNew = false) {
     note: h('textarea', { rows: 3 }, w.note),
     pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
   };
-  const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang'];
+  const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
     tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)' };
   const boxes = Object.fromEntries(flags.map(k => [k, check(flagLabel[k], w[k])]));
@@ -45,9 +51,9 @@ export async function editTheme(t, isNew = false) {
     field('Name', f.name),
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
     h('div.flags', Object.values(boxes)),
-    h('div.hint.flaghelp', {}, ['tm', 'adult', 'sensitive', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
+    h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). Difficulty is worked out from the words.'),
-    field('Audience regions', h('div.chips', regionBoxes), 'Tick if the theme is mainly known in some countries (US states, British politics). Leave empty for everyone.'),
+    field('Audience regions', regionBox(regionBoxes), 'Tick if the theme is mainly known in some countries (US states, British politics). Leave empty for everyone.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
   return dialog(isNew ? 'New theme' : 'Theme: ' + t.name, body, [
@@ -89,7 +95,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     rec: select(REC_OPTS, w.rec), status: select(STATUS.map(s => [s, `${s} — ${STATUS_HELP[s]}`]), w.status),
     note: h('textarea', { rows: 2 }, w.note), kind: select(ALIAS_KINDS.map(k => [k, k || '(not an alias)']), w.aliasKind),
   };
-  const flags = { enabled: 'Enabled', adult: 'Adult', sensitive: 'Sensitive', tm: 'Trademark / copyright', vulgar: 'Vulgar' };
+  const flags = { enabled: 'Enabled', adult: 'Adult', vulgar: 'Vulgar', sensitive: 'Sensitive', tm: 'Trademark / copyright' };   // the order of the Export window
   const boxes = Object.fromEntries(Object.keys(flags).map(k => [k, check(flags[k], w[k])]));
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
 
@@ -179,8 +185,8 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
     h('div.two', {}, field('Recognisability (the word itself)', f.rec, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
     h('div.flags', Object.values(boxes)),
-    h('div.hint.flaghelp', {}, ['tm', 'adult', 'sensitive'].map(k => h('div', {}, FLAG_HELP[k]))),
-    field('Regions', h('div.chips', regionBoxes), 'Tick if the word is mainly known in some countries (lorry, pavement). Empty = everyone.'),
+    h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
+    field('Regions', regionBox(regionBoxes), 'Tick if the word is mainly known in some countries (lorry, pavement). Empty = everyone.'),
     h('h3', 'Themes'), linksBox,
     aliasBlock,
     !e.aliasOf && !isNew && h('div.row', {}, h('button', { type: 'button', onclick: async () => {

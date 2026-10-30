@@ -12,6 +12,7 @@ How typical and central the word is of THIS theme: how readily it comes to mind 
 
 Rules of thumb:
 - Spread the ratings: a theme of 20+ words normally has a few 1s (2-4), several 2s, and the rest spread over 3, 4 and 5. Do not give everything 2-3, and do not copy `rec`. A very well-known word can still be a 4 or 5 in a theme it only just fits, and an uncommon word can be a 1 or 2 when it is exactly what the theme is about (the theme "swimming strokes": backstroke 1, trudgen 3 or 4, not 1).
+- Popular words are usually well known, so many words will end up with a popularity close to `rec`; that is fine. But look for the two kinds of gap and rate them honestly: a word that is exactly what the theme is about and the first thing people name gets 1-2 even when the word itself is only moderately known; a famous word that only just fits (olive, tomato and avocado in fruits) gets 4-5.
 - `old` is only a loose hint left from an earlier rating of a different thing (how easily a word is placed). Ignore it when it disagrees with your judgement.
 - Judge the theme as the typical player of this English-language game would; regional words follow the theme's region.
 - Synonym lines (`~`) are alternative names of the word above them: rate each on its own, as how central THAT name is in the theme (couch 1, settee 3; physalis lower than cape gooseberry if it is less used there). Spelling variants and inflected forms are not listed: they take the root's rating.
