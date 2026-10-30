@@ -1,0 +1,373 @@
+T zoo
+D 57575
+D 57582
+T beach
+D 39807
+D 48402
+T art_gallery
+D 12152
+D 57598
+T swimming_pool
+D 31515
+D 57615
+D 57613
+D 57619
+D 39817
+S 57609 | bathing cap | - | 2
+T ski_resort
+D 43529
+D 24667
+D 39852
+D 43526
+S 43539 = 47073
+D 43542
+D 48873
+D 43555
+D 3140
+D 40295
+T water_park
+D 57640
+D 5966
+D 57627
+T traditional_dwellings
+D 57654
+D 57655
+T public_buildings
+D 57675
+T shops
+S 130 = 17893
+S 35378 | thrift store | second-hand | 2
+S 60589 | convenience store | - | 2
+S 140 | pet store | - | 1
+S 60588 | shoe store | - | 1
+S 60590 | candy store | - | 2
+T towers_and_skyscrapers
+D 14001
+D 38273
+D 2370
+D 2733
+D 38276
+S 2310 | Eiffel | - | 2
+D 2315
+S 38282 | Pisa | - | 2
+S 38279 | Martello | - | 4
+D 38277
+D 38280
+S 2375 | Petronas | - | 3
+D 37092
+D 2463
+D 2461
+D 38278
+D 38274
+D 37050
+T road_types
+D 38325
+D 38326
+D 38314
+D 27375
+D 28254
+S 38312 | turnpike | toll | 3
+T street_names
+S 37257 | Baker | Sherlock | 2
+S 37268 | Bourbon | New Orleans | 3
+D 38343
+D 38351
+S 38333 | Church | road name | 1
+S 33602 | Downing | - | 2
+S 38337 | Elm | road name | 2
+S 37272 | Fleet | London | 3
+S 27376 | High | road name | 2
+D 38346
+S 38332 | Main | road name | 1
+D 38342
+D 38354
+D 38338
+D 38349
+D 38347
+S 34068 | Wall | finance | 2
+D 38348
+T street_furniture
+D 38358
+D 38378
+T traffic_words
+D 38398
+D 38409
+D 38385
+T parts_of_a_road
+D 38426
+D 38441
+D 38431
+T parts_of_a_town
+D 38455
+D 38448
+D 38447
+D 2493
+D 38451
+T kinds_of_settlements
+D 38491
+T national_symbols
+D 2523
+S 2525 = 28224
+S 2563 = 20878
+T cars
+D 2574
+D 2605
+D 2601
+T car_types
+D 46640
+D 46655
+D 46637
+D 32362
+D 46645
+D 46634
+D 2601
+D 46646
+D 46654
+T famous_car_models
+D 59035
+S 23067 | Tin Lizzie | - | 4
+T driving_words
+D 46672
+T motor_racing
+D 46695
+T road_signs
+D 46732
+D 46729
+D 46726
+S 38312 = 38393
+T gas_station
+D 46788
+D 23162
+D 46766
+D 2589
+D 46787
+T parking_words
+D 46813
+D 46814
+D 46722
+D 46818
+D 46820
+D 46797
+D 46824
+D 46795
+S 46810 | handbrake | car | 2
+D 46825
+D 46799
+D 46791
+D 38373
+D 46794
+D 46793
+D 4227
+D 46817
+T car_accessories
+D 46854
+D 46851
+D 46835
+T bus_types
+D 46894
+D 2702
+D 46889
+D 46879
+D 46902
+D 46882
+D 46883
+D 46898
+D 46891
+D 46892
+D 46901
+D 2673
+D 46893
+D 46885
+D 46896
+D 46900
+D 2655
+S 46881 = 2676
+D 46884
+D 46880
+T on_a_bus
+D 2667
+D 2656
+T ticket_words
+D 46959
+D 46941
+D 46940
+D 46954
+D 46952
+D 47830
+D 40239
+D 46951
+T taxis_of_the_world
+D 47037
+D 47020
+D 47022
+D 47015
+D 47019
+D 47038
+D 40088
+D 13899
+D 47014
+T cable_cars_and_lifts
+D 47054
+D 47068
+D 43538
+D 47041
+D 47055
+D 47048
+D 47073
+D 47075
+D 47062
+D 47061
+T air_travel
+D 2777
+D 2724
+D 2747
+T aircraft_types
+D 47089
+D 2710
+D 47087
+T flight_crew
+D 47188
+D 2723
+D 47172
+D 47169
+D 47194
+D 47195
+D 2773
+T airlines
+S 47202 | Alaska | carrier | 2
+S 47199 | American | carrier | 1
+S 60636 | Copa | - | 5
+D 47243
+S 60637 | Frontier | carrier | 3
+S 60640 | Hawaiian | carrier | 3
+S 47227 | JAL | carrier | 3
+S 60638 | LOT | - | 4
+D 47233
+D 47235
+S 47225 | SIA | - | 4
+D 47217
+D 47238
+T european_airlines
+D 59075
+D 59077
+T asian_airlines
+D 59097
+D 59095
+D 59107
+S 47227 | JAL | carrier | 3
+D 47233
+D 47235
+S 47225 | SIA | - | 4
+D 47238
+T middle_eastern_airlines
+S 59119 | MEA | - | 5
+D 47217
+T flying_machines
+D 22381
+S 47248 | UFO | alien craft | 1
+T famous_airports
+D 47276
+D 47273
+D 47265
+D 47301
+D 47302
+T in_flight_words
+D 47346
+D 47314
+T hot_air_balloon_parts
+D 27773
+T boats_and_ships
+D 2779
+S 2808 | freighter | merchant | 2
+S 2835 | liner | ocean | 2
+D 2839
+D 2786
+D 2784
+D 2778
+T boat_types
+D 47433
+S 45155 | trawler | - | 3
+D 47435
+S 47427 = 39822
+T small_boats
+D 2839
+D 59133
+T sailing_ships
+D 21171
+T working_boats
+D 59160
+D 49022
+D 45155
+D 34705
+D 59148
+T traditional_boats
+D 59165
+D 59171
+T pleasure_boats
+D 48865
+D 59189
+D 59186
+D 59181
+S 47427 = 39822
+D 59185
+D 59187
+T ports_and_harbors
+D 47513
+D 47511
+D 2804
+D 33242
+D 47519
+T knots
+D 47566
+D 60653
+D 47571
+D 6978
+D 47556
+D 47565
+D 60655
+S 47563 | overhand | - | 4
+D 60657
+D 47560
+D 47559
+D 60654
+D 47554
+D 47575
+D 47581
+S 47558 | Windsor | tie | 3
+T famous_canals
+D 47589
+D 47597
+D 47586
+D 36925
+D 36923
+D 47590
+D 47591
+D 47596
+S 36920 | Corinth | isthmus | 4
+S 36921 | Erie | - | 3
+D 47592
+D 47584
+D 36926
+D 47588
+S 36919 | Kiel | waterway | 4
+D 36924
+D 47594
+S 36909 | Panama | waterway | 1
+D 47585
+S 36927 | Rideau | - | 4
+S 36908 | Suez | - | 1
+D 47587
+D 36928
+T ship_crew
+D 47638
+D 47630
+D 47640
+D 47637
+T submarine_words
+D 47641
+T trains
+S 2866 | Shinkansen | Japan | 3
+D 2909
+D 2869
+D 2868
+D 39524

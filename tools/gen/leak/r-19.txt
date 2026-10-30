@@ -1,0 +1,405 @@
+T puppets
+D 12356
+D 12358
+D 12355
+D 12385
+D 12387
+D 12362
+D 12364
+D 12360
+D 12386
+D 12357
+D 12359
+T musicals_words
+D 12405
+D 12400
+T film_and_tv
+D 6364
+D 6443
+T movie_genres
+D 12595
+D 12577
+D 12570
+D 12575
+S 12590 = 12532
+D 12588
+D 12568
+T film_words
+D 12659
+T behind_the_camera
+D 12672
+T cartoon_words
+D 12731
+T award_words
+D 12751
+D 12758
+D 12760
+T entertainment_awards
+D 12751
+D 61945
+D 52456
+D 52453
+D 12758
+D 61943
+D 52460
+D 61944
+D 52454
+D 52450
+D 12760
+D 52451
+D 52458
+D 52457
+T film_festivals
+D 12788
+D 12784
+D 12796
+D 12798
+D 12785
+D 12786
+D 12787
+T movie_theater_words
+D 2477
+T special_effects_words
+D 12886
+D 12881
+D 12868
+S 12869 | VFX | - | 3
+T anime_and_manga_words
+D 12624
+D 13073
+T camera_shots
+D 13130
+D 13151
+D 13129
+D 13128
+D 13131
+D 13123
+D 13152
+D 13132
+D 13143
+D 13119
+D 13144
+D 13121
+S 13133 | over-the-shoulder | - | 4
+D 13125
+S 13134 | POV | - | 3
+D 13136
+D 13148
+D 13126
+D 13124
+D 13135
+D 13120
+D 13127
+T book_genres
+S 13156 | children's literature | - | 2
+D 13173
+T fairy_tale_characters
+D 6989
+S 13358 = 32407
+T comic_book_words
+D 12698
+T book_formats
+D 13553
+D 13565
+S 13566 = 26279
+D 13173
+D 13549
+D 13554
+D 13570
+T fairy_tale_villains
+D 13614
+T circus
+D 13713
+D 13689
+T magic_show_words
+D 13746
+D 13744
+T comedy_words
+D 13774
+D 13773
+D 6381
+T fairground_rides
+D 13797
+D 13801
+D 13789
+T street_performers
+D 13825
+D 13806
+D 6161
+T theme_park_words
+D 13851
+D 13845
+D 13850
+D 13833
+T party_entertainment
+D 13862
+T brazilian_carnival_words
+D 5124
+D 13923
+T asian_temple_features
+D 14060
+T bridge_types
+D 14079
+D 14095
+S 14084 = 49879
+D 14080
+S 14107 = 43137
+S 14081 | cable-stayed | - | 4
+S 14083 = 7423
+D 14090
+D 14087
+D 14098
+D 14103
+D 14104
+D 14096
+D 14092
+D 14100
+D 14099
+D 14091
+D 14105
+D 14086
+D 14106
+D 14089
+D 14094
+D 7424
+D 14085
+D 14097
+D 14101
+D 14093
+S 14102 = 50147
+S 14082 = 7404
+T roof_styles
+D 14118
+D 14116
+S 14134 | catslide | - | 5
+D 14129
+D 14120
+D 14110
+D 14113
+D 14126
+S 14133 | half-hip | - | 5
+S 14108 = 50333
+D 14109
+D 14122
+D 14131
+D 14111
+D 14119
+S 14117 | sawtooth | - | 5
+D 14115
+S 14121 | skillion | - | 5
+D 14127
+D 14136
+S 14114 | thatch | - | 2
+D 14128
+D 14137
+T column_styles
+D 14153
+D 14149
+D 14152
+D 14144
+D 14143
+D 14150
+D 14147
+D 14146
+D 14151
+S 14145 | Solomonic | - | 5
+D 14148
+T window_styles
+D 14189
+D 14179
+D 14164
+D 14172
+D 14184
+S 14166 | casement | - | 3
+S 14182 = 6585
+S 14170 = 6613
+S 14180 | double-hung | - | 4
+D 14193
+D 14167
+D 14192
+S 14178 = 55240
+S 14174 = 14158
+D 14194
+D 14191
+D 14177
+D 14176
+D 14190
+S 14173 = 6584
+S 14187 = 13933
+D 14169
+D 14014
+D 14175
+S 14165 = 21314
+D 14185
+S 14171 = 5881
+D 14186
+S 14181 = 47452
+D 14188
+T egyptian_afterlife
+D 34407
+T aztecs_and_maya
+D 20409
+D 6637
+T inca_empire
+D 20433
+D 20448
+D 20439
+T ancient_persia
+D 6625
+T vikings
+D 12540
+T ottoman_empire
+D 344
+T celts
+D 20681
+T medieval_times
+D 6702
+T knights
+D 36
+D 20695
+D 20697
+T orders_of_knighthood
+D 54062
+S 54060 | Alcantara | - | 5
+S 54065 | Aviz | - | 5
+S 54059 | Calatrava | - | 5
+D 54064
+S 54063 | Montesa | - | 5
+D 54072
+D 54070
+D 54058
+D 54067
+D 54056
+D 54061
+D 54066
+S 20707 | Garter | knightly order | 4
+D 54068
+D 54071
+D 54073
+D 54057
+T castles
+D 34
+D 2373
+S 20729 | Warwick | English fortress | 4
+S 20728 | Windsor | royal residence | 3
+T castle_parts
+D 54104
+T jousting_tournament
+D 5585
+D 20920
+D 6673
+T crusades
+D 20939
+D 20943
+D 20623
+D 20942
+T black_death
+D 20975
+S 20972 | danse macabre | - | 4
+T conquistadors
+D 29312
+T antarctic_explorers
+D 54219
+T silk_road
+D 5039
+T spice_trade
+S 21124 | Moluccas | - | 4
+T pirates
+D 6810
+D 6759
+T treasure
+D 6793
+T lost_treasures
+S 54308 = 21219
+S 54299 | Beale ciphers | - | 5
+D 54302
+D 54301
+D 54298
+S 54297 = 21220
+D 54306
+D 54313
+T pirate_ships
+D 13785
+T pirate_crew
+D 21292
+T pirate_clothing
+D 21312
+T wars_and_battles
+D 4393
+D 6839
+D 6821
+D 6838
+D 6844
+D 6834
+D 6843
+D 6841
+D 6840
+D 6836
+D 6845
+D 6835
+D 6842
+D 4392
+D 6846
+D 6837
+D 6847
+T napoleonic_battles
+D 54394
+T world_war_ii_battles
+D 21477
+D 54429
+D 54426
+T armor
+D 21360
+D 20704
+D 20584
+D 21346
+T war_words
+D 21367
+T siege_weapons
+D 21377
+D 20723
+T cold_war
+D 21448
+T peace_words
+D 21501
+D 21491
+D 16826
+T french_kings
+D 54606
+T famous_queens
+S 21686 | Mary Stuart | - | 3
+D 54578
+D 54642
+D 54638
+D 33387
+S 54628 | Sheba | - | 3
+T emperors
+D 62095
+T chinese_emperors
+D 62095
+S 54664 | Han Wudi | - | 5
+S 22135 | Huangdi | - | 4
+T suffragists
+D 54727
+T fossils
+D 1567
+D 21700
+D 1621
+D 21708
+D 21712
+D 21707
+T tombs_and_burials
+D 21760
+D 21758
+S 21764 | KV62 | - | 5
+D 6868
+T stone_age
+D 1613
+D 7077
+D 7080
+D 21802
+T bronze_age
+D 12038
+D 7096
+T trojan_war
+D 6928

@@ -1,0 +1,386 @@
+T train_types
+D 2869
+D 47682
+D 2866
+D 47676
+D 47672
+D 2909
+S 47665 = 2885
+D 47666
+D 47675
+S 47668 = 2865
+D 2868
+D 47667
+D 47678
+D 47669
+D 47673
+D 47674
+D 47671
+D 47664
+D 47677
+D 47670
+D 47663
+D 47680
+D 46058
+T railway_words
+S 47710 | cutting | rail cut | 4
+S 47705 | gauge | track width | 4
+D 47715
+S 47707 | sleeper | track tie | 3
+S 39034 = 2858
+T station_words
+D 47719
+D 47731
+T famous_trains
+D 47742
+T high_speed_trains
+D 2866
+T metro_systems
+D 47772
+D 47770
+D 47769
+D 47792
+D 47782
+D 47771
+D 47795
+D 47773
+T famous_train_stations
+D 47802
+D 47811
+D 47816
+D 47801
+D 47809
+D 47810
+T bike_types
+D 47893
+S 47892 | bakfiets | - | 5
+D 47894
+D 47895
+D 47903
+D 47887
+D 47886
+D 47900
+D 47897
+D 40277
+D 47898
+D 47890
+S 47883 | MTB | - | 3
+D 47888
+D 47884
+D 47891
+D 47899
+T motorcycle_types
+D 47959
+D 40174
+D 47958
+D 47962
+D 47951
+T cycling_races
+S 47972 | Amstel Gold | - | 5
+D 60671
+S 47979 | RAAM | - | 5
+T scooters_and_skates
+D 7370
+D 40331
+D 44140
+S 43572 | Rollerblades | - | 2
+D 48055
+D 48058
+D 43576
+D 48068
+D 48054
+D 5954
+D 43557
+D 48057
+D 48056
+T skate_park_features
+D 48091
+D 43577
+D 48102
+D 48100
+T skateboard_parts
+D 48120
+T kinds_of_travelers
+D 48170
+D 48147
+T travel_verbs
+D 28275
+T famous_routes
+D 48209
+D 48208
+S 37264 | Mother Road | - | 4
+D 48199
+T road_trip_words
+D 48286
+D 2404
+T road_trip_games
+D 48295
+D 48296
+D 48305
+D 48294
+D 48297
+D 48299
+T hotel
+D 48330
+T hotel_staff
+D 33010
+T room_types
+D 48374
+D 48375
+D 48377
+D 48369
+D 48363
+D 48362
+D 48379
+D 48372
+D 48383
+D 48373
+D 48380
+D 48364
+D 48382
+T vacation_homes
+D 3004
+D 48391
+D 3002
+T famous_hotels
+D 48412
+S 48423 | Grand Budapest | - | 3
+D 48428
+D 48429
+S 48431 | Danieli | - | 5
+D 48421
+S 48427 | The Del | - | 4
+S 48434 | Metropol | - | 5
+D 48424
+T camping_gear
+D 48484
+T tent_parts
+D 3057
+D 48496
+D 48502
+D 48516
+D 3056
+T tent_types
+D 48536
+D 48543
+D 38287
+D 48520
+D 48525
+D 48533
+D 60709
+D 48529
+D 48528
+D 60705
+D 48527
+D 48542
+D 48530
+D 48544
+D 48538
+D 48537
+D 48546
+D 40260
+D 48522
+D 48545
+D 48526
+D 48531
+D 48541
+D 60708
+D 48539
+D 48521
+D 60707
+D 48532
+D 60706
+S 48540 = 2998
+T campfire_foods
+D 48563
+D 48553
+T rvs_and_campers
+D 48282
+D 48623
+D 48604
+S 48619 | Kombi | - | 3
+T hiking_gear
+D 24653
+D 24585
+T trail_words
+D 48652
+D 48665
+T famous_hiking_trails
+S 60728 | Alpe-Adria | - | 5
+S 48196 | Appalachian | - | 3
+D 48692
+S 48681 | Cape Wrath | - | 5
+D 48694
+S 48695 | Great Himalaya | - | 5
+D 32160
+D 48217
+S 60725 | Kalalau | - | 5
+S 48686 | Larapinta | - | 5
+D 48690
+D 60727
+S 48200 | Pacific Crest | - | 3
+S 48693 | Tahoe Rim | - | 5
+T climbing_gear
+D 45086
+D 48712
+T safari_words
+D 48741
+T luggage
+D 48744
+D 46910
+D 48762
+T travel_documents
+D 48791
+D 48768
+D 48783
+T beach_gear
+D 48811
+D 39807
+D 60743
+D 48814
+D 48543
+D 60742
+T souvenirs
+D 48820
+T turkish_souvenirs
+D 52310
+D 19296
+D 643
+D 59297
+D 59302
+D 16580
+D 59296
+T japanese_souvenirs
+D 59318
+T mexican_souvenirs
+S 59330 | serape | - | 4
+T moroccan_souvenirs
+D 59335
+D 59338
+T travel_accessories
+D 48838
+D 48845
+D 48849
+D 48287
+D 47317
+D 48842
+T beach_vacation
+D 48866
+D 48402
+D 48863
+S 16353 | parasol | - | 2
+D 5220
+T ski_trip
+D 48870
+D 24667
+D 60749
+D 33093
+D 24611
+D 48874
+D 43539
+D 47074
+D 43542
+D 48873
+D 48880
+D 43541
+D 43555
+D 48884
+D 40295
+T cruise_words
+D 48903
+D 48890
+D 2835
+D 47507
+T cruise_lines
+D 59376
+D 59355
+D 59369
+D 59356
+S 59351 | Princess | cruise line | 2
+T sightseeing_words
+D 2963
+T famous_theme_parks
+D 48946
+D 48963
+D 48950
+S 48943 | Thorpe | - | 3
+T beach_destinations
+S 36622 = 59042
+S 60751 | Diani | - | 5
+D 36621
+D 36623
+S 60750 | Navagio | - | 5
+D 36620
+D 36619
+T special_vehicles
+D 3156
+T emergency_vehicles
+S 49026 | RRV | - | 5
+D 49038
+D 49040
+T farm_vehicles
+S 49058 | UTV | - | 4
+T military_vehicles
+D 49104
+T delivery_vehicles
+D 49115
+D 49116
+D 49109
+D 49118
+D 49135
+T space_vehicles
+S 49160 | SLS | - | 4
+D 49157
+D 49140
+D 7127
+D 7141
+T horse_drawn_vehicles
+D 48242
+T truck_types
+D 49257
+D 49258
+D 3116
+D 3106
+D 49125
+D 49110
+D 3112
+D 49195
+D 49201
+D 49184
+D 3105
+S 3089 | fire engine | emergency | 1
+D 3146
+D 3145
+D 49196
+D 3113
+D 3121
+D 30262
+D 3150
+D 3144
+D 49127
+D 49200
+D 2640
+D 49126
+D 49191
+D 3119
+S 3110 | wrecker | tow | 4
+D 28334
+D 49197
+T electric_vehicles
+D 47886
+D 46882
+D 32362
+D 49251
+D 49221
+S 40331 = 7370
+D 49220
+D 49222
+S 49247 | EV | - | 2
+T hands_and_feet
+D 3174
+T arms_and_legs
+D 3171
+D 14233
+D 3177
+D 14231
+D 14227

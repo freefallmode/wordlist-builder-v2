@@ -1,0 +1,348 @@
+T small_wild_cats
+S 7779 | Pallas's | - | 4
+S 7789 | Geoffroy's | - | 5
+D 7795
+D 7800
+D 7794
+D 7793
+D 7801
+D 7786
+D 7778
+D 7792
+D 7790
+D 7781
+D 7802
+D 7791
+D 7788
+D 7785
+D 7776
+T monkeys
+S 59904 | De Brazza's | - | 5
+S 59906 | Goeldi's | - | 5
+S 7811 | howler | - | 3
+S 50491 | douroucouli | - | 5
+S 50489 | patas | - | 5
+S 7814 | rhesus | - | 3
+S 50486 = 7833
+D 50496
+D 982
+D 50492
+D 7815
+D 50495
+D 50488
+D 7812
+D 7813
+D 50493
+T whales_and_dolphins
+D 7870
+S 7882 | boto | Amazon | 5
+S 7866 | bottlenose | - | 3
+S 7872 | bowhead | - | 4
+S 7875 | Bryde's | - | 5
+S 59911 | Commerson's | - | 5
+S 59915 | Cuvier's | - | 5
+S 7868 | finback | - | 4
+S 59913 | Fraser's | - | 5
+S 7891 | Hector's | - | 5
+S 1307 | humpback | - | 3
+S 7889 = 36797
+S 7867 | minke | - | 4
+S 7884 | Risso's | - | 5
+S 1308 | cachalot | - | 4
+D 7894
+D 7876
+D 1306
+D 7878
+D 1285
+D 7880
+D 7890
+D 7869
+D 1305
+D 59910
+D 7873
+D 7877
+D 7871
+D 7881
+D 59914
+D 7874
+D 7879
+D 1284
+D 7892
+T marsupials
+D 7919
+D 7909
+T deer
+S 50499 | chital | - | 5
+S 50502 = 60118
+S 50500 | milu | - | 5
+S 9856 | sika | - | 4
+S 9733 | whitetail | - | 3
+D 9677
+D 50503
+D 50508
+D 9734
+D 9871
+D 9740
+D 9679
+D 50501
+T antelopes
+D 1025
+D 50511
+D 40205
+T wild_cattle
+S 50533 | Chillingham | - | 5
+D 50524
+T wild_goats_and_sheep
+S 50537 | aoudad | North African | 5
+S 7933 | bighorn | - | 3
+D 50541
+D 9809
+D 9806
+D 7934
+D 50548
+D 50545
+D 50550
+D 50543
+D 50549
+T wild_pigs
+D 50554
+D 50556
+D 50560
+D 50553
+D 9678
+D 50563
+T bears
+D 7959
+D 7950
+D 7951
+D 7946
+D 7954
+D 7956
+D 7947
+D 7953
+D 7949
+D 7952
+D 7944
+D 7943
+D 7957
+D 7958
+D 7955
+T wild_dogs_and_foxes
+D 7970
+D 7969
+D 7979
+S 7967 | fennec | - | 3
+S 7973 | tanuki | Japanese | 4
+D 7963
+D 7980
+D 7972
+D 7996
+D 7982
+D 7988
+D 996
+D 7978
+D 7989
+D 7977
+D 7987
+D 7962
+D 7976
+D 7990
+T weasel_family
+D 8010
+D 8011
+D 7997
+T bats
+S 8035 | Daubenton's | - | 5
+S 8036 | Natterer's | - | 5
+D 993
+D 8034
+D 8032
+D 8042
+D 8053
+D 8050
+D 8039
+D 8026
+D 8043
+D 8044
+D 8029
+D 8046
+D 8052
+D 8041
+D 8033
+D 8031
+D 8040
+D 8049
+D 8045
+D 8051
+D 8047
+D 8025
+D 8048
+T rabbits_and_hares
+D 1484
+D 8062
+D 8085
+D 8064
+D 8069
+D 8063
+D 8058
+D 8076
+D 8090
+D 8072
+D 8065
+D 8074
+D 1443
+D 8071
+D 8061
+D 8073
+D 8075
+T birds_of_prey
+D 8119
+D 8106
+T owls
+S 50568 | saw-whet | - | 4
+S 59920 | Tengmalm's | - | 5
+D 8096
+D 50566
+D 50580
+D 50570
+D 9784
+D 8100
+D 50567
+D 50578
+D 59926
+D 50573
+D 59921
+D 59925
+D 50571
+D 8099
+D 50575
+D 50581
+D 8116
+D 50564
+D 59924
+D 50576
+D 1063
+D 51110
+D 59922
+D 50569
+D 50574
+D 8117
+D 50565
+D 8097
+D 59923
+D 50577
+D 9853
+D 8098
+D 50572
+T eagles
+S 50587 | Bonelli's | - | 5
+S 10050 | Haast's | - | 5
+D 50591
+D 50597
+D 2528
+D 50596
+D 50586
+D 50583
+D 1062
+D 8111
+D 8093
+D 8108
+D 50588
+D 50598
+D 50584
+D 32324
+D 8110
+D 50594
+D 50592
+D 50595
+D 50589
+D 50582
+D 50590
+D 50585
+D 8109
+T vultures
+S 8114 | lammergeier | - | 4
+D 9898
+D 50605
+D 50601
+D 9655
+D 8113
+D 50602
+D 9899
+D 50599
+D 50609
+D 50608
+D 50603
+D 50613
+D 50610
+D 8112
+D 1082
+D 50600
+D 50606
+T finches
+S 8351 | Gouldian | - | 5
+D 50628
+D 50626
+D 41021
+D 1092
+D 50615
+D 50616
+D 50627
+D 50625
+D 9847
+T crows_and_ravens
+D 50638
+D 50650
+D 9895
+D 50637
+D 1069
+D 50639
+D 50636
+D 50647
+D 50654
+D 50648
+D 1083
+D 50649
+T ducks
+S 50660 | Aylesbury | - | 4
+S 17730 | Pekin | - | 4
+D 50673
+D 9862
+D 50664
+D 8224
+D 1483
+D 50675
+D 46070
+D 50669
+D 50658
+D 8229
+D 8223
+T geese_and_swans
+S 50682 | Bewick's | - | 5
+S 8213 | whooper | - | 4
+D 8211
+D 50684
+D 8210
+D 1066
+D 8212
+D 50683
+T flightless_birds
+S 8245 | Aepyornis | - | 5
+D 8256
+D 8246
+T parrots
+S 8292 | Meyer's | - | 5
+D 8269
+D 8290
+D 8286
+D 8289
+D 8285
+D 8287
+D 1065
+D 8288
+D 8283
+D 8291
+T colorful_birds
+D 8334
+T bird_body_parts
+D 8396

@@ -1,0 +1,328 @@
+T pies_and_tarts
+S 18194 | banoffee | - | 3
+S 18174 = 17163
+S 18173 | lemon meringue | - | 2
+S 18186 | Mississippi mud | - | 3
+S 18185 | shoofly | - | 5
+S 17863 | stargazy | - | 5
+D 18168
+D 18181
+D 18175
+D 18172
+D 18169
+D 18184
+D 18176
+D 18195
+D 18190
+D 18177
+D 18192
+D 59452
+D 59453
+D 18191
+D 18178
+D 18183
+D 18171
+D 19177
+D 18170
+D 18182
+D 19193
+D 18193
+D 18187
+D 18179
+T baking_ingredients
+D 585
+D 584
+T flours
+D 18217
+D 18236
+D 18216
+D 18224
+D 18222
+D 18220
+S 18242 | tipo 00 | - | 5
+D 18235
+D 18215
+D 18227
+D 18245
+D 59458
+D 18221
+D 18231
+D 18225
+D 18248
+D 59456
+D 18228
+D 18230
+D 18241
+D 18251
+D 59457
+D 18252
+D 18250
+D 59459
+D 18247
+D 18232
+D 18234
+D 18239
+D 18249
+D 59455
+D 18229
+D 18226
+D 18223
+D 18246
+D 18233
+D 18238
+D 18244
+D 18218
+D 18219
+T cake_decorations
+D 18259
+T desserts_and_sweets
+D 608
+T ice_cream_flavors
+D 18281
+D 18300
+T frozen_desserts
+D 18316
+S 16776 | froyo | - | 2
+T puddings
+S 18336 | sticky toffee | - | 2
+D 59480
+D 18334
+D 18333
+D 18339
+D 18350
+D 18356
+D 18332
+D 18337
+D 18345
+D 59477
+D 18348
+D 18347
+D 18354
+D 53497
+D 18355
+D 18352
+D 18340
+D 18346
+D 18331
+D 18349
+D 18344
+D 18353
+D 18343
+D 18351
+D 18335
+D 18338
+T candy
+D 629
+D 628
+D 621
+D 18367
+D 18361
+D 18362
+T chocolates
+S 18405 | cocoa mass | - | 5
+S 18385 | semisweet | - | 3
+D 18399
+D 18384
+D 18383
+D 18402
+D 18401
+D 18403
+D 18386
+D 16745
+D 18381
+D 18396
+D 18400
+D 18382
+T pasta_rice_and_grains
+D 669
+D 652
+D 653
+D 690
+D 686
+T pasta_dishes
+S 59525 | gricia | - | 5
+D 18538
+D 59530
+D 59528
+D 18534
+D 59531
+D 18539
+D 59526
+D 18530
+D 18522
+D 18529
+D 18523
+D 18536
+T noodles
+D 18547
+S 18548 | dan dan | - | 4
+S 18554 = 59532
+D 18569
+D 18565
+D 18543
+D 18546
+D 671
+D 18567
+D 18566
+D 690
+D 18561
+D 18563
+D 18564
+D 18560
+T noodle_dishes
+S 53191 | niu rou mian | - | 5
+S 59549 | biang biang | - | 5
+S 18548 | dan dan | - | 4
+S 53188 | pad kee mao | - | 4
+D 18569
+D 18561
+T rice_dishes
+D 18573
+S 852 | jollof | - | 4
+S 18571 = 697
+D 18584
+D 18585
+D 18579
+D 17993
+D 806
+D 59560
+D 18590
+D 18575
+D 18331
+D 18586
+D 18577
+T grains
+D 3857
+T dumplings
+D 18646
+D 18657
+D 18670
+D 18656
+D 20237
+D 18669
+D 18659
+D 18658
+D 18663
+T rice_varieties
+D 18683
+D 18677
+S 18671 | jasmine | scented | 2
+S 59593 | matta | - | 5
+D 18691
+D 18676
+D 669
+D 59598
+D 18684
+D 18674
+D 18690
+D 18682
+D 18689
+D 18678
+D 18675
+D 18577
+D 18673
+D 59597
+D 18672
+D 686
+T herbs_spices_and_sauces
+D 752
+S 771 | HP | - | 3
+S 727 | shoyu | - | 4
+D 729
+D 768
+D 728
+D 751
+D 773
+T spices
+D 18719
+D 18715
+T spice_blends
+D 18728
+D 18718
+D 18727
+D 18729
+D 18724
+T chili_peppers
+S 18763 | Anaheim | - | 4
+S 18770 | Padrón | - | 4
+S 18757 | bird's eye | - | 4
+D 18758
+D 18774
+D 18771
+D 18773
+D 17658
+D 18780
+D 18784
+D 18779
+D 18781
+D 18762
+T sauces_and_condiments
+S 771 | HP | - | 3
+S 18792 = 782
+S 18790 = 765
+S 727 | shoyu | - | 4
+S 18795 = 53256
+S 18787 = 29452
+D 18789
+D 729
+D 18788
+D 768
+D 728
+D 18794
+D 18793
+D 751
+D 18785
+D 773
+T french_sauces
+S 53207 | allemande | velouté-based | 5
+S 53212 | poulette | - | 5
+S 53205 | soubise | - | 5
+D 53209
+T asian_sauces
+S 727 | shoyu | - | 4
+S 18795 = 53256
+D 53214
+D 768
+D 18793
+D 53220
+D 53215
+D 53219
+D 53217
+D 53216
+T salad_dressings
+D 53245
+D 53234
+D 59618
+D 53232
+D 53242
+D 53241
+D 53247
+D 53235
+D 772
+D 53240
+D 59617
+D 53243
+T dips
+D 18814
+D 16777
+D 18809
+D 18816
+D 18802
+D 18815
+D 18818
+D 18805
+D 18804
+D 18803
+D 18806
+T spreads
+D 18843
+D 18833
+D 18403
+D 18834
+D 18848
+T pickles_and_preserves
+D 18855
+D 18867
+D 18868
+D 18854
+D 18858
