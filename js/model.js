@@ -65,10 +65,10 @@ export function linkIds(P, e) {
 }
 
 // The rating that counts for an entry in one theme.
-// Root: its in-theme rating, else its general rating. Alias: its own in-theme override, else the harder of its root's rating there
+// Root: the harder of its in-theme rating and its general rating (a word few people know is hard however readily it fits the theme). Alias: its own in-theme override, else the harder of its root's rating there
 // and its own general rating (settee is at least as hard as couch, and as hard as settee is on its own).
 export function effRec(P, e, tid) {
-  if (!e.aliasOf) return e.th[tid] || e.rec || 0;
+  if (!e.aliasOf) return Math.max(e.th[tid] || 0, e.rec || 0);
   if (e.th[tid]) return e.th[tid];
   const r = P.ix.entry.get(e.aliasOf);
   const base = r ? (r.th[tid] || r.rec || 0) : 0;
