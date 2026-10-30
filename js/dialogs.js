@@ -47,9 +47,9 @@ export async function editTheme(t, isNew = false) {
     note: h('textarea', { rows: 3 }, w.note),
     pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
   };
-  const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
+  const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang', 'nameOk'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
-    tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)' };
+    tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)', nameOk: "Words may contain the theme's own words (wordplay themes)" };
   const boxes = Object.fromEntries(flags.map(k => [k, check(flagLabel[k], w[k])]));
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
   const body = h('div.form', {},

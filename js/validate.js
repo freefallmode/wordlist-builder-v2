@@ -3,6 +3,14 @@
 import { eff, effRec, linkIds, themeStats, pathOf, sameText } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 
+// A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
+const NAME_STOP = new Set(('a an and or the of in on at to for from with by as is are that this these those your my our their its words word names name types type kinds kind famous common things thing parts part ' +
+  'varieties variety styles style ways way terms term items item sorts sort different all some other about into over under more most not no blank').split(/\s+/));
+const nameStem = w => w.length > 4 && /ies$/.test(w) ? w.slice(0, -3) + 'y' : w.length > 4 && /(ches|shes|sses|xes)$/.test(w) ? w.slice(0, -2) : w.length > 3 && /[^s]s$/.test(w) ? w.slice(0, -1) : w;
+const nameToks = s => (s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').match(/[a-z]+/g) || []);
+export const themeNameWords = t => [...new Set(nameToks(t.name).filter(w => w.length > 2 && !NAME_STOP.has(w)).map(nameStem))];
+export function nameLeak(t, e, words = themeNameWords(t)) { if (t.nameOk || !words.length) return null; const ts = nameToks(e.text).map(nameStem); return words.find(k => ts.includes(k)) || null; }
+
 const words = s => s.trim().split(/\s+/).length;
 const letters = s => s.replace(/[^\p{L}\p{N}]/gu, '').length;
 const label = e => e.text + (e.gloss ? ` (${e.gloss})` : '');
@@ -27,6 +35,7 @@ export function validate(P) {
     if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no popularity rating.`, { themeId: t.id }); else unrated++; }
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
+    if (!t.nameOk) { const ws = themeNameWords(t); for (const e of direct) { const w = nameLeak(t, e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
   if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no popularity rating yet.`);
