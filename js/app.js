@@ -140,6 +140,10 @@ const THEME_FILTERS = [
   ['tm', 'Trademark / copyright themes', (P, t, ef) => ef.tm],
   ['lang', 'Language-specific themes', (P, t, ef) => ef.lang],
   ['region', 'Region-specific themes', (P, t, ef) => ef.region.length > 0],
+  ['pop0', 'Popularity not rated', (P, t) => !t.group && !t.pop],
+  ...[1, 2, 3, 4, 5].map(n => ['pop' + n, `Popularity ${n}`, (P, t) => !t.group && t.pop === n]),
+  ['diff0', 'Difficulty not known (no rated words)', (P, t) => !t.group && !themeProfile(P, t.id).reach],
+  ...[1, 2, 3, 4, 5].map(n => ['diff' + n, `Difficulty ${n}`, (P, t) => !t.group && themeProfile(P, t.id).median === n]),
 ];
 function filterVisible() {
   const f = THEME_FILTERS.find(x => x[0] === A.tflag)?.[2];
