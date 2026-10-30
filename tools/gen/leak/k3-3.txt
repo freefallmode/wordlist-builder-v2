@@ -1,0 +1,237 @@
+T sauces_and_condiments
+K 18789 # bare word means the fruit
+K 729 # bare word means the event
+K 18788 # bare word means the fruit
+K 768 # bare word means the animal
+K 728 # bare word is only an adjective
+K 18794 # bare word means the herb
+K 18793 # bare word means the shellfish
+K 751 # bare word means teeth plaque
+K 18785 # bare word means the fruit
+T french_sauces
+K 53209 # bare word is a first name
+T asian_sauces
+K 53214 # bare word means the legume
+K 768 # bare word means the animal
+K 18793 # bare word means the shellfish
+K 53220 # bare word means the nut
+K 53215 # bare word means the fruit
+K 53219 # bare word means the skewers
+S 727 | shoyu | - | 4
+K 53217 # bare word means the cutlet
+K 53216 # bare fragment, no meaning alone
+T salad_dressings
+K 53245 # bare word means the cabbage salad
+K 53234 # bare word means language
+K 59618 # bare word means sesame
+K 53232 # bare word means nationality
+K 53242 # bare word is a first name
+K 53241 # bare word means the paste
+K 53247 # bare word means the cheese
+K 53235 # bare word means nationality
+K 772 # bare word means dairy cream
+K 53240 # bare word means the paste
+K 59617 # bare word means nothing alone
+K 53243 # bare word means the dairy food
+T dips
+K 18814 # bare word means the vegetable
+K 16777 # bare word means the legume
+K 18809 # bare word means the cheese
+K 18816 # bare form means wings or chicken
+K 18802 # bare word means the dairy food
+K 18815 # bare word means the animal
+K 18818 # bare word means the herb
+K 18805 # bare word means the soup
+K 18804 # bare word means the vegetable
+S 18803 = 753
+K 18806 # bare word means the vegetable
+T spreads
+K 18843 # bare word means the biscuit
+K 18833 # bare word means the dairy food
+K 18403 # bare word means the sweet
+K 18834 # bare word means the nut
+K 18848 # bare word means the biscuit
+T pickles_and_preserves
+K 18855 # bare word means the herb
+K 18867 # bare word means the fruit
+K 18868 # bare word means the fruit
+K 18854 # nothing left
+K 18858 # bare word is only an adjective
+T oils_and_vinegars
+K 18911 # bare word means the colour
+K 18912 # bare word means the drink
+K 18904 # bare word means the drink
+K 18913 # bare word means the fruit
+K 18909 # bare word is only an adjective
+K 18888 # bare word means the tree or hand
+K 18907 # bare word means the grain
+K 18918 # bare word means the drink
+K 18893 # bare word means chocolate or fungus
+K 18881 # bare word means the plant food
+K 18901 # bare word means the colour
+T soups
+K 18921 # bare word means the pasta
+K 18923 # bare word means the plant food
+T stews
+K 18948 # bare word means the meat
+K 18963 # bare word means a place
+K 18949 # bare word means the meat
+K 17865 # bare word means the animal
+K 18952 # bare word means nationality
+K 18951 # bare word means the meat
+K 18950 # bare word means the plant food
+T salads
+K 18988 # bare word means the vegetable
+K 18983 # bare word means the cook
+K 18979 # bare word means the meat
+K 18999 # bare word means the grain
+K 18987 # bare word means the vegetable
+K 17988 # bare word means the food
+K 16761 # bare word means tree produce
+K 18977 # bare word means the plot
+K 18976 # bare word means nationality
+K 18982 # bare word means the building
+K 18985 # bare word means the vegetable
+K 18984 # bare word means the pasta
+K 18529 # bare word means the dry food
+K 17873 # bare word means the vegetable
+K 18989 # bare word means the grain
+K 19002 # bare word means nationality
+K 18998 # bare word means the plant
+K 18978 # bare word means a position
+K 18980 # bare word means the vegetable
+K 18986 # bare word means the Mexican food
+K 18981 # bare word means the fruit
+K 17861 # bare word means the fish
+S 18990 | Waldorf | apple walnut mix | 3
+S 18996 | wedge | iceberg lettuce | 3
+T sandwiches
+K 19012 # bare word means the meat
+S 19013 | club | triple-decker | 2
+S 19033 | Cuban | pressed pork and ham | 3
+K 19016 # bare word means the vegetable
+K 19011 # bare word means the food
+K 19026 # bare word means body part
+K 19042 # bare form means frozen fish snack
+K 19010 # bare word means the meat
+K 19034 # bare word is only an adjective
+S 19021 | sub | long roll | 1
+T snacks
+K 19098 # bare word means tree produce
+K 16769 # bare word means the plant
+T potato_dishes
+K 19141 # bare word is only an adjective
+K 19146 # bare word means the coat
+K 19147 # bare word means breakfast pancake
+K 17873 # bare word means leafy dish
+K 19145 # bare word means peel or hides
+K 19157 # bare form is only an adjective
+T savory_pies
+K 19173 # bare form is a fragment
+K 19176 # bare word means the house
+K 17841 # bare word means the animal
+K 19183 # bare word means play or wild animals
+K 19172 # bare word means the food
+K 19192 # bare word means potato puree
+K 19177 # bare word means the meat
+K 19174 # bare word means cookware
+K 19193 # bare word means the whisky
+K 19175 # bare form is a fragment
+K 19178 # bare word means the meat
+T pizza_styles
+K 19204 # bare word means the dairy food
+K 19225 # bare word means the bread
+K 19231 # bare word means the relative
+K 19233 # bare word means nationality
+K 19215 # bare word means the cookware
+K 19242 # bare word means nothing alone
+K 19207 # bare word means vegetarian
+K 19224 # bare word means the colour
+T pancakes_of_the_world
+K 19261 # bare word means the grain
+K 19251 # bare word means the dairy drink
+K 19260 # bare word means language
+K 19250 # nothing left
+K 19147 # bare word means the vegetable
+K 19257 # bare word means the vegetable
+K 19259 # bare word means nationality
+T burger_toppings
+K 19290 # bare word means any sauce
+T greek_food
+K 18976 # bare word means any salad
+T turkish_food
+K 19296 # bare word means any coffee
+T turkish_breakfast
+K 19296 # bare word means any coffee
+K 16580 # bare word means any tea
+T kebab_types
+K 59695 # bare word means paper
+K 813 # nothing left
+K 59701 # bare word means a well
+K 59700 # bare word means forest
+K 53386 # bare word means aubergine
+K 59699 # bare word means a bowl
+K 53387 # bare word means a jug
+K 59698 # bare word means with yogurt
+T sushi_types
+K 39783 # bare word means bread roll
+T korean_food
+K 53579 # bare word is generic grilling
+K 53589 # bare word is generic chicken dish
+T thai_food
+K 824 # fixed name
+T vietnamese_food
+K 19528 # bare word means any coffee
+T bush_tucker
+K 53662 # bare word means any honey
+T drinks
+K 886 # bare word means power
+T hot_drinks
+K 227 # bare word means the sweet
+K 19467 # bare word means alcoholic drink
+K 19460 # bare word means the powder
+K 16115 # bare word means dairy drink
+T teas
+K 19492 # bare word means the colour
+K 19499 # full name; boba added as synonym
+K 19513 # bare form is a fragment
+S 19507 | Ceylon | Sri Lankan black | 3
+K 19502 # bare word means tree produce
+K 16741 # bare word means the colour
+K 15564 # full name; tisane added as synonym
+K 866 # bare word is only an adjective
+K 19493 # bare word means the fruit
+K 19501 # bare word means the dairy drink
+K 19498 # bare word is only an adjective
+K 19509 # bare word means nationality
+K 19503 # bare word means the colour
+T coffee_drinks
+K 19524 # bare word means the colour
+S 19466 | drip | filter brew | 3
+K 19523 # bare word is only an adjective
+K 19462 # bare word is only an adjective
+K 19469 # bare word means nationality
+K 19296 # bare word means nationality
+K 19528 # bare word means nationality
+T coffee_words
+S 25568 | filter | paper brewing disc | 2
+S 19466 | drip | filter brew | 3
+K 53788 # bare word means the colour
+T soda_flavors
+K 19544 # bare word means dairy cream
+T juices
+K 19576 # bare word means the vegetable
+K 19570 # bare word means the colour
+T asian_drinks
+K 19598 # bare word means the plant
+T wines
+K 19654 # bare word means the course
+K 19655 # bare word is only an adjective
+K 19652 # bare word means the building
+K 19677 # bare word means the fruit
+K 19645 # bare word means the colour
+K 19649 # bare word is only an adjective
+K 19653 # bare word means furniture
+K 19646 # bare word means the colour
+T red_wines
+K 53811 # bare word means any blend
