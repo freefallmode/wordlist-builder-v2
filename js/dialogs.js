@@ -14,15 +14,14 @@ const REC_OPTS = REC_HELP.map((l, i) => [i, l]);
 const IN_OPTS = [[0, 'auto'], ...POP_HELP.slice(1).map((l, i) => [i + 1, l])];
 
 // Region ticks in the same box, with all / none links, as the region section of the Export window.
-// Returns { toggle, panel }: the "region-specific" checkbox (joins the other flag checkboxes) and the region box it switches on and off.
+// The region section: the "region-specific" checkbox, which switches the region ticks on and off, with all / none and the ticks on one line in a box (sits right after the flag checkboxes).
 const regionBox = (boxes, label, hint) => {
   const all = on => boxes.forEach(b => { b.querySelector('input').checked = on; });
   const btns = [h('button.link', { type: 'button', onclick: () => all(true) }, 'all'), h('button.link', { type: 'button', onclick: () => all(false) }, 'none')];
   const lock = () => { const off = !toggle.querySelector('input').checked; boxes.forEach(b => { b.querySelector('input').disabled = off; }); btns.forEach(b => { b.disabled = off; }); };
   const toggle = check(label, boxes.some(b => b.querySelector('input').checked), { onchange: ev => { if (!ev.target.checked) all(false); lock(); } });
-  const panel = h('div.regionbox', {}, h('div.hint', hint), h('div.chips', [...btns, ...boxes]));
   lock();
-  return { toggle, panel };
+  return h('div.regionbox', {}, h('div.chips', [toggle, ...btns, ...boxes]), h('div.hint', hint));
 };
 
 // Theme picker by name: a text box with a datalist. Returns { input, get() } where get() gives a theme id or null.
@@ -53,13 +52,12 @@ export async function editTheme(t, isNew = false) {
     tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)' };
   const boxes = Object.fromEntries(flags.map(k => [k, check(flagLabel[k], w[k])]));
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
-  const rb = regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).');
   const body = h('div.form', {},
     field('Name', f.name),
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
-    h('div.flags', [...Object.values(boxes), rb.toggle]),
+    h('div.flags', Object.values(boxes)),
+    regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).'),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
-    rb.panel,
     field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). Difficulty is worked out from the words.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
@@ -187,14 +185,13 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const aliasBlock = w.aliasOf ? aliasSection : aliases.length ? aliasesList : revealer;
   const zv = freqLoaded() && w.text ? zipf(w.text) : undefined;
 
-  const rb = regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).');
   const body = h('div.form', {},
     h('div.two', {}, field('Text (as written, with capitals)', f.text), field('Meaning/context', f.gloss)),
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
     h('div.two', {}, field('Recognisability (the word itself)', f.rec, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
-    h('div.flags', [...Object.values(boxes), rb.toggle]),
+    h('div.flags', Object.values(boxes)),
+    regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).'),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
-    rb.panel,
     h('h3', 'Themes'), linksBox,
     aliasBlock,
     !e.aliasOf && !isNew && h('div.row', {}, h('button', { type: 'button', onclick: async () => {
