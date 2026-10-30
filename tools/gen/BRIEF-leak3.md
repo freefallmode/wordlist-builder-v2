@@ -25,13 +25,17 @@ Cover the theme name. Take the text with the theme-name word removed (the listin
 ## Listing
 `node tools/gen/leak-make.mjs --kept <n>` (n is given in your task). Per theme: path, flags, note, the forbidden name words, a few other words from the theme, then each kept entry: `<id> <text> (<label>) | pos type | rec r pop p | root | in N themes | shorter: "<bare form>" | existing "<text>": <ids with labels>`. The `shorter` form is mechanical and sometimes poor (it can leave an article, a stray adjective or nothing). If an entry of that text with the right meaning exists, replace by it with `=`. If the text already exists with other meanings, the new entry needs a short meaning label (never containing the theme name). If the entry is in several themes, the replacement applies only to the theme you are looking at; it keeps its other links under its full name.
 
+## Pairs: the bare word AND another name
+When you replace by a different well-known name (baking soda -> bicarb, green bean -> haricot vert, killer whale -> orca) and the bare word also passes the test (soda, green, killer), make the BARE word the S and add the other name on an `A` line right below it. The full original name stays as an alias automatically. Skip the A line when the bare word fails the test or there is no other name.
+
 ## Output
 ONE file `tools/gen/leak/k3-<n>.txt`. For every theme in the chunk, in order:
 ```
 T <themeId>
 S <id> = <existing entry id>
 S <id> | <new text> | <meaning label or -> | <rec 1-5>
-K <id> # reason
+A | <another name for the entry above> | <meaning label or -> | <rec 1-5>
+K <id> # reason # reason
 ```
 or `T <themeId> OK` alone. One line for EVERY entry listed under the theme. `rec` = how well known the new text is as that thing (1 every child ... 5 few people). Nothing else in the file: no other comments.
 

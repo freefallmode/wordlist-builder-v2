@@ -24,7 +24,7 @@ const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFi
 const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, aliased: 0, ok: 0, open: 0, kept: 0, K: 0 };
 
 for (const f of args) {
-  let tid = null, need = new Set(), handled = new Set();
+  let tid = null, need = new Set(), handled = new Set(), last = null;
   const close = () => {
     if (!tid) return;
     const left = [...need].filter(id => !handled.has(id));
@@ -49,7 +49,7 @@ for (const f of args) {
     const s = line.trim(); if (!s) continue;
     let m;
     if ((m = /^T (\S+)( OK)?$/.exec(s))) {
-      close(); tid = m[1]; handled = new Set(); need = new Set();
+      close(); tid = m[1]; handled = new Set(); need = new Set(); last = null;
       const t = P.ix.theme.get(tid); if (!t || t.group) { problems.push(`${f}: no playable theme ${tid}`); tid = null; continue; }
       if (m[2]) { t.nameOk = true; stat.ok++; done.add(tid); tid = null; continue; }
       const ws = themeNameWords(t); need = new Set((P.ix.byTheme.get(tid) || []).filter(e => KEPT ? !e.aliasOf && (e.nameOkIn || []).includes(tid) && nameLeak(t, { text: e.text }, ws) : nameLeak(t, e, ws)).map(e => e.id));
@@ -84,7 +84,14 @@ for (const f of args) {
       if (KEEP && target !== e && (target.th[tid] !== undefined) !== MERGES) continue;
       if (target === e) { problems.push(`${f}: ${e.id} cannot replace itself`); continue; }
       if (target.th[tid] === undefined) target.th[tid] = e.th[tid] || 3;
-      handled.add(e.id); drop(e, tid, target); stat.S++;
+      handled.add(e.id); drop(e, tid, target); stat.S++; last = target;
+    } else if (tid && last && (m = /^A \| ([^|]+) \| ([^|]*) \| ([1-5])$/.exec(s))) {   // another name for the entry the line above made or found: a synonym of it
+      const text = m[1].trim(), gloss = m[2].trim() === '-' ? '' : m[2].trim();
+      if (nameLeak(P.ix.theme.get(tid), { text })) { problems.push(`${f}: "${text}" still contains a word of the theme name`); continue; }
+      if (sameText(P, text).some(x => (x.gloss || '') === gloss && (x.aliasOf === last.id || x === last))) continue;
+      if (sameText(P, text).length && !gloss) { problems.push(`${f}: "${text}" exists; give the synonym a meaning label`); continue; }
+      const a = addEntry(P, text, { gloss, pos: last.pos, type: last.type, rec: +m[3], adult: last.adult, vulgar: last.vulgar, sensitive: last.sensitive, tm: last.tm, region: [...last.region], status: 'gen' });
+      a.aliasOf = last.id; a.aliasKind = 'synonym'; reindex(P); stat.made++;
     } else problems.push(`${f}: cannot read "${s.slice(0, 60)}"`);
   }
   close();
