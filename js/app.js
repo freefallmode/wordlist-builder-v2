@@ -149,18 +149,23 @@ function filterVisible() {
   vis.hits = hit.size;
   return vis;
 }
+// Search ranking: exact match first, then names starting with the text, then whole-word matches, then other substrings; shorter names first within each rank.
+const searchRank = (name, q) => { const n = name.toLowerCase(), i = n.indexOf(q); if (i < 0) return -1; if (n === q) return 0; if (i === 0) return 1;
+  for (let j = i; j >= 0; j = n.indexOf(q, j + 1)) if (!/[a-z0-9]/.test(n[j - 1] || ' ') && !/[a-z0-9]/.test(n[j + q.length] || ' ')) return 2; return 3; };
+const ranked = (items, nameOf, q, cap) => { const hits = []; for (const it of items) { const r = searchRank(nameOf(it), q); if (r >= 0) hits.push([r, nameOf(it).length, nameOf(it).toLowerCase(), it]); }
+  hits.sort((a, b) => a[0] - b[0] || a[1] - b[1] || (a[2] < b[2] ? -1 : a[2] > b[2] ? 1 : 0)); return { total: hits.length, list: hits.slice(0, cap).map(x => x[3]) }; };
 function renderTree() {
   const P = A.P, box = $('#tree'), q = A.search.trim().toLowerCase();
   if (q) {
-    const themes = P.themes.filter(t => t.name.toLowerCase().includes(q)).slice(0, 60);
-    const words = q.length < 2 ? [] : P.entries.filter(e => e.text.toLowerCase().includes(q)).slice(0, 60);
+    const tr = ranked(P.themes, t => t.name, q, 60), themes = tr.list;
+    const wr = q.length < 2 ? { total: 0, list: [] } : ranked(P.entries, e => e.text, q, 60), words = wr.list;
     const sect = (key, title, hits) => [
       h('div.sechead.fold', { onclick: () => { searchOpen[key] = !searchOpen[key]; renderTree(); } }, (searchOpen[key] ? '▾ ' : '▸ ') + title),
       ...(searchOpen[key] ? hits : [])];
     box.replaceChildren(...[
-      sect('themes', `Themes (${themes.length})`,
+      sect('themes', `Themes (${tr.total > themes.length ? themes.length + ' of ' + tr.total : themes.length})`,
         themes.map(t => h('div.hit', { onclick: () => select_(t.id) }, h('b', t.name), h('span.path', pathOf(P, t.id).slice(0, -1).join(' › '))))),
-      sect('words', `Words (${words.length})`,
+      sect('words', `Words (${wr.total > words.length ? words.length + ' of ' + wr.total : words.length})`,
         words.map(e => h('div.hit', { onclick: () => editEntry(e) }, h('b', e.text), e.gloss && h('span.path', e.gloss),
           h('span.path', Object.keys(e.th).slice(0, 3).map(id => P.ix.theme.get(id)?.name).filter(Boolean).join(', '))))),
     ].flat().filter(Boolean));
