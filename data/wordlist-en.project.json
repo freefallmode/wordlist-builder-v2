@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":200,"modified":"2026-10-30 22:45"},"nextId":64824,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":201,"modified":"2026-10-30 23:44"},"nextId":64824,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1},
@@ -3046,8 +3046,8 @@
 {"id":442,"text":"pak choi","rec":3,"region":["UK"],"aliasOf":441,"aliasKind":"synonym","th":{"vegetables":3,"leafy_greens":3,"cabbage_family":3,"words_from_chinese":4},"status":"gen"},
 {"id":443,"text":"arugula","rec":3,"region":["US"],"th":{"vegetables":3,"leafy_greens":2,"cabbage_family":4,"pizza_toppings":3,"burger_toppings":4,"bitter_foods":3},"status":"gen"},
 {"id":444,"text":"rocket","gloss":"salad leaf","rec":3,"region":["UK"],"aliasOf":443,"aliasKind":"synonym","th":{"vegetables":3,"leafy_greens":2,"cabbage_family":4,"pizza_toppings":4,"burger_toppings":5,"bitter_foods":3},"status":"gen"},
-{"id":445,"text":"rutabaga","rec":3,"region":["US"],"th":{"vegetables":4,"cabbage_family":4},"status":"gen"},
-{"id":446,"text":"swede","rec":3,"region":["UK"],"aliasOf":445,"aliasKind":"synonym","th":{"root_vegetables":2,"cabbage_family":4,"vegetables":3},"status":"gen"},
+{"id":445,"text":"rutabaga","rec":3,"region":["US"],"th":{"vegetables":4,"cabbage_family":4,"root_vegetables":2},"status":"gen"},
+{"id":446,"text":"swede","rec":3,"region":["UK"],"aliasOf":445,"aliasKind":"synonym","th":{"cabbage_family":4,"vegetables":3},"status":"gen"},
 {"id":447,"text":"mangetout","rec":3,"region":["UK"],"th":{"vegetables":3,"beans_and_pulses":4},"status":"gen"},
 {"id":448,"text":"snow peas","rec":3,"region":["US"],"aliasOf":447,"aliasKind":"synonym","th":{"vegetables":3,"beans_and_pulses":4},"status":"gen"},
 {"id":449,"text":"kohlrabi","rec":4,"th":{"vegetables":4,"root_vegetables":4,"cabbage_family":3,"foods_you_peel":4,"words_from_german":4,"crunchy_foods":5},"status":"gen"},
