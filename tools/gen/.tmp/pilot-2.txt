@@ -1,0 +1,219 @@
+T pies_and_tarts
+S 18168 | apple | dessert | 2
+K 18175 # nobody says banana cream alone
+S 18172 | blueberry | dessert | 2
+S 18169 | cherry | dessert | 2
+K 18184 # nobody says chess for it
+K 18176 # custard alone is just custard
+K 18195 # nobody says Dutch apple alone
+K 18190 # nobody says frangipane for it
+K 18177 # fruit alone is not the tart
+K 18192 # nobody says gooseberry for it
+K 59452 # nobody says gypsy for it
+K 59453 # jam alone is the preserve
+K 18191 # nobody says Manchester for it
+K 18178 # nobody says mince for it
+K 18183 # nobody says mud for it
+S 18171 | pecan | dessert | 2
+K 19177 # pork alone is the meat
+S 18170 | pumpkin | dessert | 2
+S 18182 | rhubarb | dessert | 3
+K 19193 # nobody says scotch for it
+K 18193 # nobody says sugar for it
+S 18187 | sweet potato | dessert | 3
+K 18179 # nobody says treacle for it
+T baking_ingredients
+K 584 # fixed name, powder alone means more
+S 585 | bicarbonate of soda | leavening | 3
+T flours
+S 18227 | almond | ground | 3
+S 18245 | amaranth | ground | 5
+S 59458 | bajra | ground | 5
+K 18221 # nobody says bread for it
+S 18231 | buckwheat | ground | 3
+K 18225 # nobody says cake for it
+S 18248 | cassava | ground | 4
+S 59456 | chestnut | ground | 4
+S 18235 | besan | pulse | 4
+S 18228 | coconut | ground | 3
+K 18230 # nobody says corn for it
+S 18241 | durum | ground | 4
+S 18251 | einkorn | ground | 5
+K 59457 # nobody says graham for it
+S 18252 | hazelnut | ground | 4
+S 18250 | kamut | ground | 5
+S 59459 | lupin | ground | 5
+S 18247 | millet | ground | 4
+S 18232 | oat | ground | 3
+K 18234 # nobody says pastry for it
+S 18239 | potato | ground | 4
+S 18249 | quinoa | ground | 4
+S 59455 | ragi | ground | 5
+S 18229 | rice | ground | 3
+S 18226 | rye | ground | 3
+S 18233 | spelt | ground | 3
+S 18238 | tapioca | ground | 4
+S 18244 | teff | ground | 5
+S 18218 | wheat | ground | 3
+T cake_decorations
+S 18259 | topper | - | 3
+T ice_cream_flavors
+K 18281 # fixed flavor name
+K 18300 # fixed flavor name
+T frozen_desserts
+K 18316 # custard alone is plain custard
+T puddings
+K 18334 # nobody says banana for it
+K 18333 # nobody says bread for it
+S 18339 | butterscotch | dessert | 3
+K 18350 # fixed name
+K 18356 # nobody says chia for it
+S 18332 | chocolate | dessert | 2
+S 18337 | Christmas pud | - | 2
+K 18345 # fixed name
+K 59477 # nobody says figgy for it
+K 18348 # fixed name
+K 18347 # fixed name
+K 18354 # nobody says lemon for it
+K 53497 # fixed name
+K 18355 # nobody says pistachio for it
+S 18352 | plum duff | - | 4
+K 18340 # nobody says cup for it
+K 18346 # fixed name
+K 18331 # nobody says rice for it
+K 18349 # nobody says sago for it
+K 18344 # nobody says semolina for it
+K 18353 # nobody says steamed for it
+K 18343 # nobody says summer for it
+S 18335 | tapioca | dessert | 3
+S 18338 | vanilla | dessert | 2
+T candy
+K 621 # nobody says cane for it
+K 18367 # nobody says corn for it
+S 628 | fairy floss | spun sugar | 3
+S 18361 | boiled sweet | - | 3
+K 18362 # fixed name
+T chocolates
+S 18399 | Belgian | cocoa | 3
+S 18384 | bittersweet | cocoa | 3
+K 18383 # nobody says bar for it
+K 18402 # nobody says button for it
+K 18401 # fixed name
+K 18403 # nobody says spread for it
+S 16745 | dark | cocoa | 2
+S 18381 | milk | cocoa | 2
+S 18396 | ruby | cocoa | 4
+S 18400 | Swiss | cocoa | 3
+S 18382 | white | cocoa | 2
+T pasta_rice_and_grains
+S 669 | brown | variety | 2
+K 652 # nothing left
+K 653 # nothing left
+S 686 | wild | variety | 3
+T pasta_dishes
+K 18538 # Italian name needs pasta
+K 59530 # Italian name needs pasta
+K 59528 # Italian name needs pasta
+K 18534 # Italian name needs pasta
+K 59531 # nobody says bake for it
+K 18539 # Italian name needs pasta
+K 59526 # Italian name needs pasta
+K 18530 # Italian name needs pasta
+K 18529 # nobody says salad for it
+K 18523 # pesto alone is the sauce
+T noodles
+K 18569 # nobody says cold for it
+K 18565 # nobody says cup for it
+K 18543 # nobody says egg for it
+S 18546 | bean threads | - | 4
+K 18554 # nobody says hand-pulled for it
+K 671 # nobody says instant for it
+K 690 # nobody says rice for it
+K 18561 # fixed name
+K 18560 # nobody says wonton for it
+T noodle_dishes
+K 18569 # nobody says cold for it
+K 18561 # fixed name
+T rice_dishes
+K 18584 # fixed name
+K 18585 # nobody says coconut for it
+K 18579 # nobody says dirty for it
+K 17993 # nobody says egg fried for it
+K 806 # nobody says fried for it
+K 59560 # nobody says jeera for it
+K 18590 # nobody says lemon for it
+K 18575 # fixed name
+K 18331 # nobody says pudding for it
+K 18586 # nobody says Spanish for it
+K 18577 # nobody says sticky for it
+T grains
+K 3857 # nobody says whole for it
+T dumplings
+K 18657 # nobody says apple for it
+K 18670 # nobody says boiled for it
+K 18656 # fixed name
+K 20237 # nothing left
+K 18669 # nobody says soup for it
+K 18659 # nobody says fried for it
+K 18658 # nobody says steamed for it
+K 18663 # nobody says suet for it
+T rice_varieties
+K 18691 # nobody says aromatic for it
+S 18676 | black | variety | 3
+S 669 | brown | variety | 2
+K 59598 # nobody says glutinous for it
+K 18684 # nobody says instant for it
+S 18674 | long-grain | - | 2
+S 18690 | medium-grain | - | 3
+K 18682 # nobody says parboiled for it
+S 18678 | red | variety | 3
+S 18675 | short-grain | - | 2
+K 18577 # nobody says sticky for it
+K 18673 # nobody says sushi for it
+K 59597 # nobody says valencia for it
+S 18672 | white | variety | 2
+S 686 | wild | variety | 3
+T herbs_spices_and_sauces
+K 729 # nobody says barbecue for it
+K 768 # nobody says fish for it
+K 728 # nobody says hot for it
+K 751 # nobody says tartar for it
+T spices
+K 18715 # fixed name
+T spice_blends
+K 18728 # fixed name
+K 18718 # fixed name
+K 18727 # nobody says mixed for it
+K 18729 # nobody says pickling for it
+K 18724 # fixed name
+T chili_peppers
+K 18771 # nobody says banana for it
+K 18773 # nobody says cherry for it
+K 17658 # nothing left
+S 18758 | bhut jolokia | superhot | 4
+K 18780 # nobody says green for it
+K 18784 # fixed name
+K 18779 # nobody says red for it
+K 18781 # nobody says tabasco for it
+S 18762 | bird's eye | - | 4
+T sauces_and_condiments
+K 18789 # nobody says apple for it
+K 729 # nobody says barbecue for it
+K 18788 # nobody says cranberry for it
+K 768 # nobody says fish for it
+K 728 # nobody says hot for it
+K 18794 # nobody says mint for it
+K 18793 # nobody says oyster for it
+K 751 # nobody says tartar for it
+K 18785 # nobody says tomato for it
+T french_sauces
+K 53209 # fixed name
+T asian_sauces
+K 53214 # nobody says black bean for it
+K 768 # nobody says fish for it
+K 18793 # nobody says oyster for it
+K 53220 # nobody says peanut for it
+K 53215 # nobody says plum for it
+K 53219 # nobody says satay for it
+K 53217 # nobody says tonkatsu for it
+K 53216 # nobody says xo for it
