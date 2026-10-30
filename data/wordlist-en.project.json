@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":152,"modified":"2026-10-30 01:04"},"nextId":62524,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":153,"modified":"2026-10-30 10:19"},"nextId":62524,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"d":0,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":""},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"d":1,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":""},
@@ -5953,8 +5953,6 @@
 {"id":3350,"text":"inner ear","rec":2,"th":{"senses":3,"ear_parts":1},"status":"gen"},
 {"id":3351,"text":"eyeball","rec":1,"th":{"senses":2,"sight_words":3,"eye_parts":1,"ways_of_looking":3,"things_that_reflect":4},"status":"gen"},
 {"id":3352,"text":"earwax","rec":2,"th":{"senses":3,"ear_parts":2},"status":"gen"},
-{"id":3353,"text":"sense of smell","rec":1,"aliasOf":40,"aliasKind":"synonym","th":{"senses":1,"smell_words":1},"status":"gen"},
-{"id":3354,"text":"sense of touch","rec":1,"aliasOf":42,"aliasKind":"synonym","th":{"senses":1},"status":"gen"},
 {"id":3355,"text":"cold","gloss":"illness","rec":1,"th":{"illnesses":1,"common_illnesses":1},"status":"gen"},
 {"id":3356,"text":"head cold","rec":2,"aliasOf":3355,"aliasKind":"synonym","status":"gen"},
 {"id":3357,"text":"the sniffles","rec":3,"aliasOf":3355,"aliasKind":"synonym","th":{"common_illnesses":2},"status":"gen"},
@@ -49422,8 +49420,6 @@
 {"id":47613,"text":"broadside","gloss":"ship side","rec":3,"th":{"nautical_directions":4,"navy_words":2},"status":"gen"},
 {"id":47614,"text":"beam","gloss":"ship width","rec":3,"th":{"nautical_directions":4},"status":"gen"},
 {"id":47615,"text":"forward","gloss":"ship front","rec":2,"th":{"nautical_directions":4},"status":"gen"},
-{"id":47616,"text":"to port","rec":3,"aliasOf":47598,"aliasKind":"synonym","th":{"nautical_directions":3},"status":"gen"},
-{"id":47617,"text":"to starboard","rec":3,"aliasOf":34580,"aliasKind":"synonym","th":{"nautical_directions":3},"status":"gen"},
 {"id":47618,"text":"weather side","rec":5,"th":{"nautical_directions":5},"status":"gen"},
 {"id":47619,"text":"hard a-lee","rec":5,"th":{"nautical_directions":5},"status":"gen"},
 {"id":47620,"text":"stem to stern","rec":4,"th":{"nautical_directions":4},"status":"gen"},
