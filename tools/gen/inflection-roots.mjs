@@ -11,6 +11,7 @@ const old = parseProject(readFileSync(process.argv[2], 'utf8')), P = parseProjec
 const oldE = new Map(old.entries.map(e => [e.id, e]));
 const cls = t => /ing$/i.test(t) && t.length > 5 ? 'ing' : /[^s]s$/i.test(t) ? 's' : 'plain';
 const rows = [];
+const NOT = new Set(['your','her','our','their','it','tender','yacht','log','jib']), BY_USAGE = new Set(['bicep','tricep']);   // reviewed by hand: pronoun pairs are not plurals, tender/tendering tied, yacht/log/jib also name things in other themes (boats, floating things, triangles); biceps and triceps are the usual names
 for (const B of P.entries) {
   const o = oldE.get(B.id); if (!B.aliasOf || !o || !oldE.get(B.aliasOf) || o.aliasOf || B.aliasKind !== 'synonym') continue;
   const A = P.ix.entry.get(B.aliasOf), oA = oldE.get(A.id), ca = cls(A.text), cb = cls(B.text);
@@ -23,7 +24,7 @@ for (const B of P.entries) {
       if (c === kind) n.form++;
       else if (kind === 'ing' ? e.pos === 'verb' : (!e.pos || e.pos === 'noun')) n.base++;
     }
-    const swap = ca !== cb && cb !== 'plain' && n.form + n.base >= 3 && n.form / (n.form + n.base) >= 0.5;
+    const swap = !NOT.has(A.text) && (BY_USAGE.has(A.text) || ca !== cb && cb !== 'plain' && n.form + n.base >= 3 && n.form / (n.form + n.base) >= 0.5);
     rows.push({ t, A, B, n, kind, swap, za: zipf(A.text), zb: zipf(B.text) });
   }
 }
