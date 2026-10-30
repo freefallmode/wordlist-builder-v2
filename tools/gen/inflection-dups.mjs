@@ -1,7 +1,9 @@
 // Finds themes holding two entries that are inflections of one word (wood / woods, run / running, city / cities).
 // Run: node tools/gen/inflection-dups.mjs [library] [out.json]
+//      node tools/gen/inflection-dups.mjs <library> --apply    makes the inflected form an alias (synonym) of the base form, so a game never picks both
+//      (skipped: pairs already involving an alias, word-pattern themes ending _blank, and the EXCLUDE list)
 import { readFileSync, writeFileSync } from 'node:fs';
-import { parseProject } from '../../js/store.js';
+import { parseProject, serializeProject, stampSave } from '../../js/store.js';
 import { reindex, linkIds } from '../../js/model.js';
 const P = parseProject(readFileSync(process.argv[2] || new URL('../../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
 // all plausible base forms of a lower-case word, longest-removal last
@@ -26,4 +28,16 @@ for (const [t, es] of by) {
 }
 const k = {}; for (const o of out) k[o.kind] = (k[o.kind] || 0) + 1;
 console.log(out.length, 'pairs in', new Set(out.map(o => o.theme)).size, 'themes', k, '| distinct word pairs', new Set(out.map(o => o.baseId + '|' + o.formId)).size);
-if (process.argv[3]) writeFileSync(process.argv[3], JSON.stringify(out, null, 1));
+if (process.argv[3] && process.argv[3] !== '--apply') writeFileSync(process.argv[3], JSON.stringify(out, null, 1));
+if (process.argv[3] === '--apply') {
+  const EXCLUDE = new Set(['honorifics|Mr|Mrs', 'reversible_words|live|lived', 'sun_care|shade|shades', 'fire_words|Kindle|kindling']);
+  const skipped = []; let n = 0;
+  for (const o of out) {
+    const A = P.ix.entry.get(o.baseId), B = P.ix.entry.get(o.formId);
+    if (EXCLUDE.has(o.theme + '|' + o.base + '|' + o.form) || o.theme.endsWith('_blank') || A.aliasOf || B.aliasOf) { skipped.push(o); continue; }
+    for (const x of P.entries) if (x.aliasOf === B.id) x.aliasOf = A.id;   // aliases of the form follow the base
+    B.aliasOf = A.id; B.aliasKind = 'synonym'; n++;
+  }
+  reindex(P); stampSave(P); writeFileSync(process.argv[2], serializeProject(P));
+  console.log(n, 'made aliases;', skipped.length, 'skipped:', skipped.map(o => o.theme + ': ' + o.base + '/' + o.form).join('; '));
+}

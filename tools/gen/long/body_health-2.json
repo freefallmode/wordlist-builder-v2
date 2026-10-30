@@ -1,0 +1,902 @@
+[
+ {
+  "theme": "illegal_drugs",
+  "text": "methylenedioxymethamphetamine",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "short form MDMA not in library; ecstasy present"
+ },
+ {
+  "theme": "illegal_drugs",
+  "text": "lysergic acid diethylamide",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "short form already in library: LSD"
+ },
+ {
+  "theme": "cold_and_flu_remedies",
+  "text": "nasal decongestant spray",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": "nasal spray, decongestant present"
+ },
+ {
+  "theme": "cold_and_flu_remedies",
+  "text": "over-the-counter medication",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 3,
+  "note": ""
+ },
+ {
+  "theme": "chinese_medicine",
+  "text": "Traditional Chinese Medicine",
+  "type": "proper",
+  "gloss": "",
+  "rec": 5,
+  "inRec": 5,
+  "note": "TCM"
+ },
+ {
+  "theme": "chinese_medicine",
+  "text": "Chinese herbal medicine",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "herbal decoction, herbal tea present"
+ },
+ {
+  "theme": "chinese_medicine",
+  "text": "Compendium of Materia Medica",
+  "type": "title",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "Li Shizhen herbal text"
+ },
+ {
+  "theme": "oceanian_remedies",
+  "text": "Traditional Maori medicine",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "rongoa present"
+ },
+ {
+  "theme": "oceanian_remedies",
+  "text": "Aboriginal bush medicine",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "short form already in library: bush medicine"
+ },
+ {
+  "theme": "oceanian_remedies",
+  "text": "Native Hawaiian healing",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "african_remedies",
+  "text": "traditional African medicine",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "traditional healer present"
+ },
+ {
+  "theme": "native_american_remedies",
+  "text": "Traditional Native American medicine",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "native_american_remedies",
+  "text": "Cherokee herbal medicine",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "babies_and_birth",
+  "text": "sudden infant death syndrome",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 3,
+  "note": "SIDS; cot death"
+ },
+ {
+  "theme": "babies_and_birth",
+  "text": "neonatal intensive care unit",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": "NICU; neonatal unit present in maternity_ward"
+ },
+ {
+  "theme": "babies_and_birth",
+  "text": "congenital heart defect",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 2,
+  "note": ""
+ },
+ {
+  "theme": "pregnancy_words",
+  "text": "chorionic villus sampling",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "ultrasound present"
+ },
+ {
+  "theme": "pregnancy_words",
+  "text": "nuchal translucency scan",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "anomaly scan present"
+ },
+ {
+  "theme": "pregnancy_words",
+  "text": "Braxton Hicks contractions",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "short form already in library: Braxton Hicks"
+ },
+ {
+  "theme": "childbirth_words",
+  "text": "postpartum haemorrhage",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "childbirth_words",
+  "text": "umbilical cord clamping",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": "umbilical cord present"
+ },
+ {
+  "theme": "childbirth_words",
+  "text": "emergency caesarean section",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": "C-section present"
+ },
+ {
+  "theme": "childbirth_words",
+  "text": "vaginal birth after caesarean",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "short form already in library: VBAC"
+ },
+ {
+  "theme": "childbirth_words",
+  "text": "transcutaneous electrical nerve stimulation",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "short form already in library: TENS machine"
+ },
+ {
+  "theme": "newborn_care",
+  "text": "sudden infant death syndrome",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 3,
+  "note": ""
+ },
+ {
+  "theme": "newborn_care",
+  "text": "newborn hearing screening",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "newborn_care",
+  "text": "exclusive breastfeeding",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "breastfeeding present"
+ },
+ {
+  "theme": "maternity_ward",
+  "text": "neonatal intensive care unit",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "short form already in library: neonatal unit"
+ },
+ {
+  "theme": "fitness",
+  "text": "high-intensity interval training",
+  "type": "common",
+  "gloss": "",
+  "rec": 5,
+  "inRec": 5,
+  "note": "short form already in library: HIIT"
+ },
+ {
+  "theme": "fitness",
+  "text": "delayed onset muscle soreness",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "short form already in library: DOMS"
+ },
+ {
+  "theme": "fitness",
+  "text": "maximal oxygen consumption",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "short form already in library: VO2 max"
+ },
+ {
+  "theme": "fitness",
+  "text": "rate of perceived exertion",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "fitness",
+  "text": "muscle protein synthesis",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "fitness_words",
+  "text": "delayed onset muscle soreness",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "short form already in library: DOMS"
+ },
+ {
+  "theme": "fitness_words",
+  "text": "rate of perceived exertion",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "RPE"
+ },
+ {
+  "theme": "exercises",
+  "text": "standing overhead press",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "shoulder press present"
+ },
+ {
+  "theme": "exercises",
+  "text": "overhead triceps extension",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "exercises",
+  "text": "single-leg Romanian deadlift",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "deadlift present"
+ },
+ {
+  "theme": "gym_equipment",
+  "text": "stationary exercise bike",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "short form already in library: exercise bike"
+ },
+ {
+  "theme": "gym_equipment",
+  "text": "adjustable weight bench",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "weight bench present"
+ },
+ {
+  "theme": "gym_equipment",
+  "text": "assisted pull-up machine",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "pull-up bar present"
+ },
+ {
+  "theme": "yoga_poses",
+  "text": "downward-facing dog pose",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "short form already in library: downward dog"
+ },
+ {
+  "theme": "yoga_poses",
+  "text": "extended side angle pose",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "yoga_poses",
+  "text": "reclining bound angle pose",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "yoga_words",
+  "text": "alternate nostril breathing",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": "pranayama present"
+ },
+ {
+  "theme": "workout_types",
+  "text": "high-intensity interval training",
+  "type": "common",
+  "gloss": "",
+  "rec": 5,
+  "inRec": 5,
+  "note": "short form already in library: HIIT"
+ },
+ {
+  "theme": "workout_types",
+  "text": "cardiovascular exercise",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 4,
+  "note": "cardio present"
+ },
+ {
+  "theme": "workout_types",
+  "text": "resistance band training",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "strength training present"
+ },
+ {
+  "theme": "stretches",
+  "text": "seated hamstring stretch",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "hamstring stretch present"
+ },
+ {
+  "theme": "stretches",
+  "text": "kneeling hip flexor stretch",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "hip flexor stretch present"
+ },
+ {
+  "theme": "stretches",
+  "text": "proprioceptive neuromuscular facilitation",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "PNF"
+ },
+ {
+  "theme": "sleep_words",
+  "text": "rapid eye movement sleep",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "short form already in library: REM"
+ },
+ {
+  "theme": "sleep_words",
+  "text": "non-rapid eye movement sleep",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "sleep_words",
+  "text": "excessive daytime sleepiness",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "sleep_disorders",
+  "text": "delayed sleep phase syndrome",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "short form already in library: delayed sleep phase"
+ },
+ {
+  "theme": "bedding",
+  "text": "Egyptian cotton bed sheets",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "nightwear",
+  "text": "dressing gown and slippers",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 3,
+  "note": "dressing gown present"
+ },
+ {
+  "theme": "dream_words",
+  "text": "The Interpretation of Dreams",
+  "type": "title",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 3,
+  "note": "Freud; Freud and interpretation present"
+ },
+ {
+  "theme": "dream_words",
+  "text": "hypnagogic hallucination",
+  "type": "common",
+  "gloss": "",
+  "rec": 1,
+  "inRec": 4,
+  "note": "hypnagogic present"
+ },
+ {
+  "theme": "bedtime_routine",
+  "text": "progressive muscle relaxation",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "body scan present"
+ },
+ {
+  "theme": "bedtime_routine",
+  "text": "diaphragmatic breathing",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "breathing exercise present"
+ },
+ {
+  "theme": "healthy_habits",
+  "text": "diaphragmatic breathing",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 3,
+  "note": "deep breathing present"
+ },
+ {
+  "theme": "hair_care",
+  "text": "deep conditioning treatment",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "hair mask present"
+ },
+ {
+  "theme": "hair_care",
+  "text": "apple cider vinegar rinse",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": ""
+ },
+ {
+  "theme": "korean_skincare",
+  "text": "snail secretion filtrate",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "snail mucin present"
+ },
+ {
+  "theme": "korean_skincare",
+  "text": "galactomyces ferment filtrate",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "korean_skincare",
+  "text": "ten-step skincare routine",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "double cleanse present"
+ },
+ {
+  "theme": "makeup",
+  "text": "full coverage foundation",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "foundation present"
+ },
+ {
+  "theme": "nail_care",
+  "text": "acrylic nail extensions",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "acrylic nails present"
+ },
+ {
+  "theme": "middle_eastern_grooming",
+  "text": "traditional Moroccan hammam",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "hammam present"
+ },
+ {
+  "theme": "shaving",
+  "text": "double-edged safety razor",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "safety razor present"
+ },
+ {
+  "theme": "shaving",
+  "text": "badger hair shaving brush",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "shaving brush, badger brush present"
+ },
+ {
+  "theme": "sun_care",
+  "text": "broad spectrum sunscreen",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "sunscreen, broad spectrum present"
+ },
+ {
+  "theme": "sun_care",
+  "text": "sun protective clothing",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "sun shirt present"
+ },
+ {
+  "theme": "sun_care",
+  "text": "ultraviolet protection factor",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "UPF; uv protection present"
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "post-traumatic stress disorder",
+  "type": "common",
+  "gloss": "",
+  "rec": 5,
+  "inRec": 5,
+  "note": "short form already in library: PTSD"
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "obsessive compulsive disorder",
+  "type": "common",
+  "gloss": "",
+  "rec": 5,
+  "inRec": 5,
+  "note": "short form already in library: OCD"
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "attention deficit hyperactivity disorder",
+  "type": "common",
+  "gloss": "",
+  "rec": 5,
+  "inRec": 5,
+  "note": "short form already in library: ADHD"
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "cognitive behavioural therapy",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "short form already in library: CBT"
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "seasonal affective disorder",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 5,
+  "note": "SAD"
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "generalized anxiety disorder",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "anxiety present"
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "borderline personality disorder",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "mental_health_words",
+  "text": "major depressive disorder",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "depression present"
+ },
+ {
+  "theme": "phobias",
+  "text": "hippopotomonstrosesquippedaliophobia",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 4,
+  "note": "joke term for fear of long words"
+ },
+ {
+  "theme": "phobias",
+  "text": "paraskevidekatriaphobia",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "fear of Friday the 13th; triskaidekaphobia present"
+ },
+ {
+  "theme": "phobias",
+  "text": "hexakosioihexekontahexaphobia",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": "fear of 666"
+ },
+ {
+  "theme": "massage_types",
+  "text": "traditional Thai massage",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "thai massage present"
+ },
+ {
+  "theme": "massage_types",
+  "text": "structural integration",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "rolfing present"
+ },
+ {
+  "theme": "spa",
+  "text": "sensory deprivation tank",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": "flotation tank present"
+ },
+ {
+  "theme": "nutrition",
+  "text": "recommended daily allowance",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "short form already in library: RDA"
+ },
+ {
+  "theme": "nutrition",
+  "text": "high-fructose corn syrup",
+  "type": "common",
+  "gloss": "",
+  "rec": 4,
+  "inRec": 3,
+  "note": ""
+ },
+ {
+  "theme": "nutrition",
+  "text": "dietary reference intake",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "nutrients",
+  "text": "branched-chain amino acids",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "amino acid present"
+ },
+ {
+  "theme": "nutrients",
+  "text": "medium-chain triglycerides",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "nutrients",
+  "text": "conjugated linoleic acid",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "diet_types",
+  "text": "whole food plant-based diet",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "plant-based present"
+ },
+ {
+  "theme": "diet_types",
+  "text": "low carbohydrate high fat",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": "low-carb, keto present"
+ },
+ {
+  "theme": "superfoods",
+  "text": "cruciferous vegetables",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 3,
+  "note": "broccoli, kale present"
+ },
+ {
+  "theme": "healthy_snacks",
+  "text": "celery with peanut butter",
+  "type": "common",
+  "gloss": "",
+  "rec": 3,
+  "inRec": 5,
+  "note": ""
+ },
+ {
+  "theme": "healthy_snacks",
+  "text": "wholegrain crackers and cheese",
+  "type": "common",
+  "gloss": "",
+  "rec": 2,
+  "inRec": 4,
+  "note": ""
+ }
+]
