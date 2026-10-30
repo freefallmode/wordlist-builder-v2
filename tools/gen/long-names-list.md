@@ -1,0 +1,3102 @@
+# Long-name candidates (over 20 letters, not in the library)
+
+3077 distinct entries from 48 agents. Columns: text, type, rec/inRec, themes. Review, then tell me which to add (and whether to raise maxLen).
+
+## person (195)
+
+- Adolf Erik Nordenskiöld · 3/4 · arctic_explorers
+- Adolphus Washington Greely · 2/4 · arctic_explorers
+- Albert Abraham Michelson · 2/4 · nobel_laureates
+- Alejandro Gonzalez Inarritu · 3/4 · film_directors
+- Aleksandr Solzhenitsyn · 4/4 · nobel_laureates
+- Alexander Grothendieck · 2/5 · famous_mathematicians
+- Alexander Sergeyevich Pushkin · 3/5 · russian_writers
+- Alexandre Gustave Eiffel · 3/4 · architects
+- Alfred Bulltop Stormalong (Full name of the tall-tale sailor) · 2/5 · american_tall_tales
+- Algernon Charles Swinburne · 2/4 · victorian_era
+- Anastasia Pavlyuchenkova · 2/4 · tennis_champions
+- Andrey Nikolaevich Kolmogorov · 2/5 · famous_mathematicians
+- Antoine de Saint-Exupery · 4/5 · authors, children_s_authors
+- Antoine Henri Becquerel · 2/5 · famous_physicists
+- Antonie van Leeuwenhoek · 3/4 · biology_words, scientists
+- Apichatpong Weerasethakul · 2/4 · film_directors
+- Archbishop Desmond Tutu · 4/4 · religious_leaders
+- Arturo Benedetti Michelangeli · 3/5 · instrument_players
+- Athanasius of Alexandria · 3/5 · famous_saints
+- Augustine of Canterbury · 3/5 · famous_saints
+- Augustus Charles Gregory · 2/4 · australian_explorers
+- Babe Didrikson Zaharias · 3/4 · famous_golfers
+- Baldassare Castiglione · 2/5 · renaissance
+- Bartolome Esteban Murillo · 3/5 · spanish_painters
+- Bastian Schweinsteiger · 3/5 · famous_soccer_players
+- Bernal Díaz del Castillo · 3/4 · conquistadors
+- Carlos Drummond de Andrade · 2/5 · latin_american_writers
+- Cassius Marcellus Clay Jr. · 4/5 · famous_boxers
+- Catherine of Alexandria · 3/5 · famous_saints
+- Cecilia Payne-Gaposchkin · 3/5 · women_in_science
+- Chandrasekhara Venkata Raman · 3/5 · famous_physicists
+- Charles Algernon Parsons · 2/5 · famous_engineers
+- Charles Augustin de Coulomb · 2/4 · scientists, famous_physicists
+- Charles Carroll of Carrollton · 2/5 · founding_fathers
+- Charles Cotesworth Pinckney · 2/4 · founding_fathers
+- Charles Cunningham Boycott · 2/4 · words_named_after_people
+- Charles Frederick Worth · 3/5 · fashion_designers
+- Charles Hamilton Houston · 2/4 · civil_rights_figures
+- Charles Lutwidge Dodgson · 2/3 · famous_mathematicians
+- Charles Rennie Mackintosh · 4/5 · architects
+- Chico Buarque de Hollanda · 3/5 · south_american_singers
+- Chimamanda Ngozi Adichie · 4/5 · african_writers
+- Christiane Nüsslein-Volhard · 2/5 · women_in_science
+- Christopher Latham Sholes · 2/4 · inventors
+- Clifford Possum Tjapaltjarri (Western Desert Aboriginal painter of Dreaming stories) · 2/3 · aboriginal_dreaming
+- Constantine XI Palaiologos · 3/5 · byzantine_empire, emperors
+- Diego Velázquez de Cuéllar · 3/4 · conquistadors
+- Domenikos Theotokopoulos · 2/5 · spanish_painters
+- Dorothy Crowfoot Hodgkin · 2/5 · scientists, women_in_science, nobel_laureates
+- Edmund Jennings Randolph · 2/4 · founding_fathers
+- Edson Arantes do Nascimento · 3/5 · famous_soccer_players
+- Elizabeth Barrett Browning · 4/5 · poets, famous_women_in_history, victorian_era
+- Elizabeth Garrett Anderson · 3/4 · suffragists, famous_women_in_history, women_in_science
+- Emmanuelle Charpentier · 3/5 · scientists, women_in_science
+- Emmeline Pethick-Lawrence · 2/5 · suffragists
+- Ernest Orlando Lawrence · 2/5 · famous_physicists, nobel_laureates
+- Ezio Auditore da Firenze (Assassin's Creed II hero) · 3/5 · video_game_characters
+- Fabian Gottlieb von Bellingshausen · 3/5 · antarctic_explorers
+- Florence Griffith Joyner · 4/5 · olympic_legends
+- Florian Henckel von Donnersmarck · 2/4 · film_directors
+- Frances Ellen Watkins Harper · 2/4 · suffragists
+- Frances Hodgson Burnett · 3/5 · authors, children_s_authors
+- Francisco de Paula Santander · 2/4 · latin_american_liberators
+- Francisco Vázquez de Coronado · 3/5 · conquistadors
+- Françoise Barré-Sinoussi · 2/5 · women_in_science
+- Franklin Delano Roosevelt · 4/5 · famous_leaders, us_presidents
+- Frederic Auguste Bartholdi · 3/5 · famous_sculptors
+- Frederick William Lanchester · 2/5 · famous_engineers
+- Frederik Willem de Klerk · 3/4 · nobel_laureates
+- Friedrich Wilhelm Murnau · 3/4 · film_directors
+- Fyodor Mikhailovich Dostoevsky · 3/5 · russian_writers
+- Gebhard Leberecht von Blucher · 3/4 · famous_generals
+- George Armstrong Custer · 4/3 · famous_generals, wild_west_legends
+- George Hendrik Breitner · 2/5 · dutch_painters
+- George Herbert Walker Bush · 3/5 · us_presidents
+- George Washington Carver · 4/3 · inventors
+- George Washington Goethals · 2/5 · famous_engineers
+- Giacomo Barozzi da Vignola · 2/5 · architects
+- Giovanni Bartolomeo Bosco · 1/5 · famous_magicians
+- Giovanni Battista Belzoni · 2/4 · archaeology
+- Giovanni Battista Tiepolo · 3/5 · painters
+- Giovanni Domenico Cassini · 3/5 · scientists
+- Giovanni Pico della Mirandola · 2/5 · renaissance
+- Gonzalo Jiménez de Quesada · 3/4 · conquistadors
+- Gottfried Wilhelm Leibniz · 3/5 · famous_mathematicians
+- Gotthold Ephraim Lessing · 2/5 · playwrights
+- Gregory the Illuminator · 2/5 · famous_saints
+- Grover Cleveland Alexander · 2/5 · baseball_legends
+- Guillermo Cabrera Infante · 2/5 · latin_american_writers
+- Hans Christian Andersen · 5/5 · children_s_authors
+- Hans Holbein the Younger · 3/5 · renaissance_painters, renaissance
+- Harry Blackstone Junior · 2/5 · famous_magicians
+- Henri de Toulouse-Lautrec · 4/4 · impressionist_painters
+- Henry Wadsworth Longfellow · 4/5 · poets
+- Horatio Herbert Kitchener · 3/4 · famous_generals
+- Inspector Endeavour Morse · 3/5 · fictional_detectives, detective_words
+- Inspector Jacques Clouseau · 4/5 · fictional_detectives, detective_words
+- Inspector Jules Maigret · 3/5 · detective_words
+- Inspector Salvo Montalbano · 3/5 · fictional_detectives
+- Isambard Kingdom Brunel · 4/4 · inventors, famous_engineers, engineering
+- Ishwar Chandra Vidyasagar · 2/4 · reformers
+- James Abbott McNeill Whistler · 3/5 · painters
+- Jean Eugene Robert-Houdin · 3/5 · famous_magicians
+- Jean-Auguste-Dominique Ingres · 3/5 · painters
+- Jean-Baptiste Joseph Fourier · 2/5 · famous_mathematicians
+- Jean-Baptiste-Camille Corot · 3/5 · painters
+- Jean-Francois Champollion · 3/4 · archaeology
+- Jean-François Champollion · 3/3 · ancient_egypt
+- Jean-Jacques Dessalines · 2/4 · latin_american_liberators
+- Jean-Pierre and Luc Dardenne · 2/4 · film_directors
+- Joaquin Sorolla y Bastida · 2/5 · spanish_painters
+- Johann Carl Friedrich Gauss · 2/5 · famous_mathematicians
+- Johann Joachim Winckelmann · 2/3 · archaeology
+- Johann Ludwig Burckhardt · 2/3 · explorers_of_africa
+- Johann Wolfgang von Goethe · 4/5 · authors, playwrights
+- John Fitzgerald Kennedy · 4/5 · us_presidents
+- John Simpson Kirkpatrick · 3/4 · anzac_day
+- Joseph Mallord William Turner · 3/5 · painters
+- Joseph William Bazalgette · 2/5 · famous_engineers
+- Joseph-Ignace Guillotin · 2/4 · words_named_after_people
+- Joshua Lawrence Chamberlain · 3/3 · famous_generals
+- Juan Rodríguez Cabrillo · 2/4 · conquistadors
+- Juana Azurduy de Padilla · 2/4 · latin_american_liberators
+- Julius and Ethel Rosenberg · 3/5 · cold_war, spy_words
+- Konrad Zacharias Lorenz · 2/4 · animal_experts
+- Konstantin Tsiolkovsky · 3/4 · scientists
+- Lancelot Capability Brown · 3/3 · garden
+- Leinier Dominguez Perez (Cuban-born American grandmaster) · 2/5 · famous_chess_players
+- Leopold von Sacher-Masoch · 2/4 · words_named_after_people
+- Lieutenant Frank Columbo · 3/5 · fictional_detectives
+- Lorenzo the Magnificent · 3/5 · renaissance
+- Louis Antoine de Bougainville · 3/4 · explorers
+- Louis Antoine de Saint-Just · 2/5 · french_revolution
+- Marcus Licinius Crassus · 3/4 · ancient_rome
+- Marcus Vipsanius Agrippa · 3/4 · ancient_rome
+- Maria Faustina Kowalska · 3/5 · famous_saints
+- Maria Theresa of Austria · 3/4 · famous_queens
+- Marvelous Marvin Hagler · 4/5 · famous_boxers
+- Mary Wollstonecraft Shelley · 3/5 · british_novelists, famous_women_in_history
+- Mary-Kate and Ashley Olsen · 3/4 · things_that_come_in_pairs
+- Maurits Cornelis Escher · 3/4 · dutch_painters
+- Maximilien Robespierre · 4/5 · french_revolution
+- Michael VIII Palaiologos · 2/4 · byzantine_empire
+- Michelangelo Antonioni · 3/4 · film_directors
+- Michelangelo Buonarroti · 4/5 · renaissance_painters, famous_sculptors, renaissance
+- Miguel Hidalgo y Costilla · 3/5 · latin_american_liberators
+- Millicent Garrett Fawcett · 3/5 · suffragists
+- Mohandas Karamchand Gandhi · 3/5 · famous_leaders, reformers
+- Mother Teresa of Calcutta · 3/5 · reformers, famous_women_in_history, famous_saints
+- Nikolai Ivanovich Lobachevsky · 2/5 · famous_mathematicians
+- Orville and Wilbur Wright · 4/5 · inventors
+- Pafnuty Lvovich Chebyshev · 2/5 · famous_mathematicians
+- Paul Edmund de Strzelecki · 2/4 · australian_explorers
+- Pedro Menéndez de Avilés · 2/4 · conquistadors
+- Philo Taylor Farnsworth · 2/5 · inventors
+- Pierre Puvis de Chavannes · 2/5 · painters
+- Pierre Savorgnan de Brazza · 3/4 · explorers_of_africa
+- Pierre-Augustin Caron de Beaumarchais · 2/5 · playwrights
+- Pierre-Emerick Aubameyang · 3/5 · famous_soccer_players
+- Pieter Bruegel the Elder · 3/5 · renaissance
+- Pieter van den Hoogenband · 3/4 · olympic_legends
+- Raffaello Sanzio da Urbino · 2/5 · renaissance_painters
+- Rainer Werner Fassbinder · 3/4 · film_directors
+- Rameshbabu Praggnanandhaa (Indian grandmaster, world championship candidate) · 3/5 · famous_chess_players
+- Rembrandt Harmenszoon van Rijn · 3/5 · dutch_painters
+- Richard Brinsley Sheridan · 4/5 · playwrights
+- Richard Buckminster Fuller · 4/4 · architects
+- Robert Andrews Millikan · 2/5 · famous_physicists
+- Rodgers and Hammerstein · 3/3 · things_that_come_in_pairs
+- Rosencrantz and Guildenstern · 4/5 · shakespeare_characters, things_that_come_in_pairs
+- Sachin Ramesh Tendulkar · 3/5 · famous_cricketers
+- Saint Benedict of Nursia · 3/4 · monastery
+- Samuel Langhorne Clemens · 3/3 · authors
+- Samuel Taylor Coleridge · 4/5 · poets
+- Sebastián de Belalcázar · 3/4 · conquistadors
+- Septima Poinsette Clark · 2/5 · civil_rights_figures
+- Sergej Milinković-Savić · 2/5 · famous_soccer_players
+- Shai Gilgeous-Alexander · 4/5 · basketball_legends
+- Subrahmanyan Chandrasekhar · 3/5 · scientists, famous_physicists, nobel_laureates
+- Suleiman the Magnificent · 5/5 · ottoman_sultans, emperors
+- Tlahuizcalpantecuhtli (Aztec lord of the dawn, Venus as morning star) · 1/5 · aztec_gods
+- Venkatraman Ramakrishnan · 2/4 · nobel_laureates
+- Veronica Campbell-Brown · 3/4 · olympic_legends
+- Wilhelmina of the Netherlands · 2/5 · famous_queens
+- William Barclay Masterson · 2/5 · wild_west_legends
+- William Carlos Williams · 3/5 · poets
+- William Charles Wentworth · 3/4 · australian_explorers
+- William Henry Fox Talbot · 2/3 · inventors
+- William Jefferson Clinton · 4/5 · us_presidents
+- William Makepeace Thackeray · 4/5 · british_novelists, victorian_era
+- William Matthew Flinders Petrie · 2/5 · archaeology
+- William Tecumseh Sherman · 4/5 · famous_generals
+- William-Adolphe Bouguereau · 3/5 · painters
+- Williamina Paton Fleming · 2/5 · women_in_science
+- Yakup Kadri Karaosmanoglu · 3/5 · turkish_writers
+
+## place (321)
+
+- African Renaissance Monument · 3/5 · african_landmarks
+- Alexander Nevsky Cathedral · 3/5 · famous_churches
+- Alsace-Champagne-Ardenne-Lorraine · 2/4 · french_regions
+- Amundsen-Scott South Pole Station · 3/4 · polar_exploration, antarctic_places, antarctic_research_station
+- Ancient Bristlecone Pine Forest (California forest of the oldest trees) · 3/4 · famous_forests
+- Andaman and Nicobar Islands · 3/3 · indian_states
+- Arch of Septimius Severus · 3/5 · rome_landmarks
+- Arctic National Wildlife Refuge · 3/4 · polar_regions
+- Arlington National Cemetery · 4/3 · tombs_and_burials
+- Auckland Harbour Bridge · 3/5 · famous_bridges
+- Auckland War Memorial Museum · 3/4 · new_zealand_landmarks
+- Augusta National Golf Club (home of the Masters) · 4/3 · golf_terms
+- Augusta National Golf Club · 4/4 · famous_stadiums
+- Australian Antarctic Territory · 3/5 · antarctic_places
+- Australian Capital Territory · 3/5 · australian_states_and_regions
+- Australian War Memorial · 4/4 · anzac_day, australian_landmarks
+- Autodromo Nazionale Monza · 3/5 · sports_venues, famous_race_tracks
+- Avenue des Champs-Élysées · 4/5 · famous_streets, street_names
+- Bahrain International Circuit · 3/5 · famous_race_tracks
+- Baja California Peninsula · 3/5 · peninsulas
+- Basilica of Saint Francis · 3/5 · famous_churches
+- Basilica of the Annunciation · 3/5 · famous_churches
+- Battersea Power Station · 4/4 · famous_buildings, london_landmarks
+- Beijing National Stadium · 4/4 · famous_buildings, east_asian_buildings
+- Berlin Television Tower · 3/5 · famous_towers
+- Bibliotheca Alexandrina · 3/5 · egyptian_landmarks
+- Bibliotheque nationale de France · 3/4 · paris_landmarks
+- Blue Lagoon geothermal spa · 3/4 · geothermal_words
+- Blue Mountains National Park · 3/4 · australian_landmarks
+- Bourgogne-Franche-Comté · 3/5 · french_regions
+- Bridge of Forgetfulness (Naihe Bridge where souls drink Meng Po's soup) · 2/3 · chinese_mythology
+- Brisbane Cricket Ground (Queensland stadium) · 3/4 · aussie_rules_terms
+- British Antarctic Territory · 3/5 · antarctic_places
+- Brooklyn Academy of Music · 3/4 · new_york_landmarks
+- Brooklyn Botanic Garden · 2/4 · famous_gardens, new_york_landmarks
+- Bryce Canyon National Park · 4/4 · erosion_words
+- Buddha Tooth Relic Temple · 3/5 · famous_temples
+- Busch Gardens Williamsburg · 3/5 · famous_theme_parks
+- Bushveld Igneous Complex · 2/3 · igneous_rocks
+- Bwindi Impenetrable Forest (Ugandan forest home to mountain gorillas) · 3/5 · famous_forests
+- Bwindi Impenetrable National Park · 3/5 · african_landmarks, african_national_parks
+- Caesars Palace Las Vegas · 4/5 · famous_hotels
+- Cairngorms National Park · 3/4 · scottish_landscape_words
+- Callanish Standing Stones · 2/5 · ancient_sites_of_europe
+- Canadian Museum of History · 3/4 · canadian_landmarks
+- Çanakkale Martyrs' Memorial · 3/5 · turkish_landmarks
+- Capilano Suspension Bridge · 3/4 · famous_bridges
+- Cappadocia fairy chimneys · 3/3 · erosion_words
+- Carlsbad Caverns National Park · 3/4 · famous_caves
+- Catacombs of Saint Callixtus · 2/5 · tombs_and_burials
+- Central African Republic · 3/5 · countries, african_countries, landlocked_countries, french_speaking_countries, flags_with_stars
+- Charles de Gaulle Airport · 4/4 · airport
+- Charlotte Motor Speedway · 3/5 · famous_race_tracks
+- Chernobyl Nuclear Power Plant · 4/5 · nuclear_power_plant
+- Chesapeake and Ohio Canal · 2/4 · straits_and_canals, famous_canals
+- Chhatrapati Shivaji Maharaj Terminus · 3/5 · famous_train_stations
+- Chhatrapati Shivaji Terminus · 3/4 · indian_landmarks
+- Chiang Kai-shek Memorial Hall · 3/4 · east_asian_buildings
+- Cimetiere du Montparnasse · 3/4 · paris_landmarks
+- Circuit Gilles Villeneuve · 4/5 · famous_race_tracks
+- Clifton Suspension Bridge · 3/3 · industrial_revolution, famous_bridges
+- Column of Marcus Aurelius · 3/5 · rome_landmarks
+- Commonwealth of Australia · 3/4 · countries_ending_in_ia
+- Conegliano Valdobbiadene · 3/4 · wine_regions
+- Continental Divide Trail · 4/5 · famous_hiking_trails
+- Corryvreckan whirlpool · 2/3 · scottish_landscape_words
+- Court Philippe Chatrier (main court at Roland Garros) · 3/3 · tennis_terms
+- Dakshineswar Kali Temple · 3/4 · indian_landmarks
+- Dallas Fort Worth International · 3/4 · famous_airports
+- Daytona International Speedway · 4/5 · sports_venues, famous_race_tracks
+- Death Valley National Park · 3/3 · desert, famous_parks
+- Democratic Republic of Congo · 3/4 · flags_with_stars
+- Dinosaur National Monument · 2/4 · dinosaur_words, fossils
+- Dinosaur Provincial Park · 2/4 · dinosaur_words, canadian_landmarks
+- Disney California Adventure · 4/5 · famous_theme_parks
+- Disney's Hollywood Studios · 4/5 · famous_theme_parks
+- Dongdaemun Design Plaza · 2/4 · east_asian_buildings
+- Dujiangyan Irrigation System · 2/4 · ancient_china
+- Dulwich Picture Gallery · 2/4 · london_landmarks
+- Dumont d'Urville Station · 2/5 · antarctic_research_station
+- East Antarctic Ice Sheet · 3/4 · ice_words
+- East Riding of Yorkshire · 2/5 · english_counties
+- Eastern State Penitentiary · 2/4 · prison_words
+- Everglades National Park · 3/5 · wetlands, famous_parks, tourist_attractions
+- Fairmont Chateau Frontenac · 3/5 · famous_hotels
+- Federal Hall National Memorial · 2/4 · new_york_landmarks
+- Federal Republic of Nigeria · 2/4 · countries_ending_in_ia
+- Federal Republic of Yugoslavia · 2/4 · old_country_names
+- Federated States of Micronesia · 2/5 · oceanian_countries, island_nations, pacific_islands, flags_with_stars, countries_ending_in_ia
+- Fiordland National Park · 3/5 · new_zealand_landmarks
+- Fishbourne Roman Palace · 2/5 · ancient_sites_of_europe
+- Flushing Meadows Corona Park · 3/4 · new_york_landmarks
+- Fontainebleau Miami Beach · 3/5 · famous_hotels
+- Frankfurt Hauptbahnhof · 3/4 · famous_train_stations
+- Garden of the Hesperides (Orchard of the golden apples) · 3/5 · legendary_places
+- Garmisch-Partenkirchen · 3/4 · famous_ski_resorts
+- Gateway Arch National Park · 3/5 · us_national_parks
+- George Washington Bridge · 4/5 · famous_bridges, places_named_after_people
+- German Democratic Republic · 3/5 · old_country_names
+- Gettysburg National Military Park · 3/4 · us_landmarks
+- Giant Buddhas of Bamiyan · 3/5 · ancient_sites_of_asia
+- Golden Temple of Amritsar · 3/4 · famous_temples
+- Grand Canyon National Park · 5/4 · erosion_words, famous_parks, us_landmarks, us_national_parks, tourist_attractions
+- Grand Teton National Park · 3/4 · mountains
+- Granville Island Public Market · 3/4 · canadian_landmarks
+- Grauman's Chinese Theatre · 4/3 · movie_theater
+- Great Buddha of Kamakura · 3/3 · buddhism_words
+- Great Meteoron Monastery · 2/5 · greek_landmarks
+- Great Mosque of Damascus · 3/5 · famous_mosques
+- Great Mosque of Kairouan · 2/4 · ancient_sites_of_africa, places_of_worship, famous_mosques
+- Great Pacific garbage patch · 4/3 · ocean, pollution_words, things_that_float
+- Great Pyramid of Cholula · 3/3 · aztecs_and_maya
+- Guggenheim Museum Bilbao · 3/4 · tourist_attractions
+- Halley Research Station · 2/5 · antarctic_places, antarctic_research_station
+- Hanging Gardens of Babylon · 4/5 · mesopotamia, ancient_sites_of_the_middle_east, famous_gardens, seven_wonders_of_the_ancient_world
+- Hanging Gardens of Babylon (Legendary terraced gardens of Babylon) · 4/3 · legendary_places
+- Hartsfield-Jackson Atlanta International · 3/4 · famous_airports
+- Hawaii Volcanoes National Park · 3/4 · us_landmarks, us_national_parks
+- Hawaiian Volcanoes National Park · 3/4 · volcano_words
+- Heart of Neolithic Orkney · 2/5 · ancient_sites_of_europe
+- Heraklion Archaeological Museum · 3/4 · greek_landmarks
+- Hieroglyphic Stairway of Copan · 2/5 · maya_and_aztec_sites
+- Hiroshima Peace Memorial · 3/4 · landmarks
+- Hiroshima Peace Memorial Museum · 3/4 · japanese_landmarks
+- Holy Island of Lindisfarne · 3/5 · famous_islands
+- Honghe Hani Rice Terraces · 2/4 · chinese_landmarks
+- Hot Springs National Park · 3/4 · geothermal_words
+- Huascaran National Park · 2/4 · south_american_landmarks
+- Hypostyle Hall of Karnak · 2/5 · ancient_sites_of_africa
+- Indianapolis Motor Speedway · 5/5 · sports_venues, famous_race_tracks
+- Indira Gandhi International · 3/3 · famous_airports
+- Interstate Highway System · 4/3 · famous_routes
+- Istanbul Archaeological Museums · 3/4 · istanbul_landmarks
+- Jade Dragon Snow Mountain · 3/4 · chinese_landmarks
+- Jiuquan Satellite Launch Center · 2/5 · launch_pad
+- John F Kennedy International · 4/4 · famous_airports
+- Jomo Kenyatta International · 3/3 · famous_airports
+- Joshua Tree National Park · 3/4 · desert, famous_parks
+- Kandariya Mahadeva Temple · 2/5 · ancient_sites_of_asia
+- Kgalagadi Transfrontier Park · 3/5 · african_national_parks
+- Kilimanjaro Machame Route · 3/4 · famous_hiking_trails
+- Kilimanjaro National Park · 4/5 · african_national_parks
+- Kitt Peak National Observatory · 3/5 · observatory
+- Lake District National Park · 3/5 · famous_parks
+- Largo di Torre Argentina · 3/4 · rome_landmarks
+- Leeds and Liverpool Canal · 3/4 · straits_and_canals, famous_canals
+- Lencois Maranhenses National Park · 3/4 · south_american_landmarks
+- Leonardo da Vinci Airport · 3/4 · famous_airports
+- Library of Ashurbanipal · 3/4 · mesopotamia, ancient_sites_of_the_middle_east, ancient_writing
+- Lighthouse of Alexandria · 4/3 · ancient_egypt, ancient_sites_of_africa, seven_wonders_of_the_ancient_world
+- Lincoln Memorial Reflecting Pool · 4/4 · things_that_reflect
+- Litchfield National Park · 3/4 · australian_landmarks
+- Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch (Welsh village with the longest place name in Europe) · 4/3 · double_letters
+- London Waterloo Station · 4/3 · station_words
+- Los Glaciares National Park · 3/3 · andes, south_american_landmarks
+- Maasai Mara National Reserve · 4/5 · african_landmarks
+- Makkah Royal Clock Tower · 3/5 · famous_towers, towers_and_skyscrapers
+- Mammoth Cave National Park · 3/4 · famous_caves
+- Marina Bay Street Circuit · 3/5 · famous_race_tracks
+- Martin Luther King Boulevard · 3/4 · street_names
+- Masai Mara National Reserve · 3/4 · savanna, african_national_parks, safari_words
+- Mausoleum at Halicarnassus · 4/3 · ancient_greece, ancient_sites_of_turkey, tombs_and_burials, seven_wonders_of_the_ancient_world
+- Mecklenburg-Vorpommern · 3/5 · german_states
+- Mecklenburg-Western Pomerania · 2/5 · german_states
+- Melbourne Cricket Ground · 4/5 · australian_landmarks, oval_things, famous_stadiums
+- Melbourne Cricket Ground (famous Australian stadium (MCG)) · 4/3 · cricket_terms
+- Melbourne Cricket Ground (home of the AFL grand final) · 4/5 · aussie_rules_terms
+- Menai Suspension Bridge · 3/5 · famous_bridges
+- Mercedes-Benz Superdome · 3/5 · famous_stadiums
+- Metropolitan Cathedral · 3/4 · mexican_landmarks
+- Metropolitan Opera House · 4/3 · opera_words, new_york_landmarks
+- Mississippi River Delta · 3/4 · wetlands
+- Missouri Botanical Garden · 2/4 · famous_gardens
+- Monarch Butterfly Biosphere Reserve · 3/4 · mexican_landmarks
+- Monasterio de El Escorial · 2/4 · spanish_landmarks
+- Monastery of Hosios Loukas · 2/4 · greek_landmarks
+- Monastery of Saint Catherine · 3/3 · monastery
+- Monteverde Cloud Forest (cloud forest reserve in Costa Rica) · 3/5 · famous_forests
+- Monumento a la Revolucion · 3/4 · mexican_landmarks
+- Mortuary Temple of Hatshepsut · 2/4 · ancient_egypt, ancient_sites_of_africa, egyptian_landmarks
+- Mosque-Cathedral of Cordoba · 3/5 · spanish_landmarks
+- Mosque-Cathedral of Córdoba · 4/5 · famous_mosques
+- Mount Aspiring National Park · 2/4 · new_zealand_landmarks
+- Mount Rainier National Park · 3/5 · us_national_parks
+- Mount Rushmore National Memorial · 3/5 · landmarks, things_with_faces
+- Murchison Falls National Park · 3/5 · african_national_parks
+- Museo Nacional de Antropologia · 3/4 · mexican_landmarks
+- Nahuel Huapi National Park · 2/4 · south_american_landmarks
+- Nanjing Yangtze River Bridge · 2/4 · chinese_landmarks
+- National Archaeological Museum · 3/4 · greek_landmarks
+- National Maritime Museum · 3/4 · museum
+- National Portrait Gallery · 4/5 · london_landmarks, art_gallery
+- Netherlands East Indies · 2/5 · old_country_names
+- New York Botanical Garden · 3/4 · famous_gardens
+- Newfoundland and Labrador · 4/5 · canadian_provinces
+- Ngorongoro Conservation Area · 4/5 · african_landmarks, african_national_parks
+- Northern Mariana Islands · 3/5 · pacific_islands, flags_with_stars
+- Nürburgring Nordschleife · 3/5 · sports_venues, famous_race_tracks
+- Olympic National Forest (Washington state national forest) · 2/4 · famous_forests
+- Osun-Osogbo Sacred Grove (Sacred forest of the goddess Osun in Nigeria) · 2/4 · yoruba_orishas
+- Pacific Northwest Trail · 3/5 · famous_hiking_trails
+- Pacific Rim National Park · 2/4 · canadian_landmarks
+- Padmanabhaswamy Temple · 3/4 · indian_landmarks
+- Palace of Fontainebleau · 3/5 · famous_palaces
+- Palace of Holyroodhouse · 4/5 · famous_palaces
+- Palace of the Parliament · 3/4 · famous_palaces
+- Palm Springs Aerial Tramway · 3/5 · cable_cars_and_lifts
+- Parc des Buttes-Chaumont · 2/4 · paris_landmarks
+- People's Republic of China · 4/5 · countries, asian_countries
+- Petrified Forest National Park · 3/3 · fossils
+- Petropavlovsk-Kamchatsky · 2/4 · russian_cities
+- Piazza della Repubblica · 3/4 · rome_landmarks
+- Plaza de la Constitución · 3/4 · famous_squares
+- Plitvice Lakes National Park · 3/3 · famous_lakes
+- Plurinational State of Bolivia · 2/4 · countries_ending_in_ia
+- Pompeii and Herculaneum · 3/4 · archaeology
+- Port Campbell National Park · 3/4 · australian_landmarks
+- Portland Japanese Garden · 2/3 · japanese_garden
+- Prague astronomical clock · 3/4 · clocks_and_calendars
+- Prince's Palace of Monaco · 3/5 · famous_palaces
+- Princess Elizabeth Land · 2/5 · places_ending_in_land
+- Principality of Asturias · 3/5 · spanish_regions
+- Provence-Alpes-Côte d'Azur · 4/5 · french_regions
+- Punakaiki Pancake Rocks · 3/4 · new_zealand_landmarks
+- Purnululu National Park · 2/4 · australian_landmarks
+- Queen Elizabeth Islands · 2/5 · places_named_after_people
+- Queen Elizabeth National Park · 3/5 · african_national_parks
+- Queen Elizabeth Olympic Park · 3/4 · london_landmarks
+- Raffles Hotel Singapore · 3/5 · famous_hotels
+- Ras Mohammed National Park · 3/4 · egyptian_landmarks
+- Rock-Hewn Churches of Lalibela · 4/5 · african_landmarks
+- Rocky Mountain National Park · 4/3 · mountains, famous_parks, us_landmarks, us_national_parks
+- Ronne-Filchner Ice Shelf · 2/4 · ice_words
+- Roosevelt Island Tramway · 3/4 · new_york_landmarks, cable_cars_and_lifts
+- Rothenburg ob der Tauber · 2/3 · european_cities, german_cities
+- Rothera Research Station · 2/5 · antarctic_research_station
+- Royal Botanic Garden Edinburgh · 2/4 · famous_gardens
+- Royal Botanic Gardens Kew · 4/5 · famous_gardens
+- Royal Exhibition Building · 3/4 · australian_landmarks
+- Royal Observatory Greenwich · 3/5 · london_landmarks, observatory
+- Royal Palace of Stockholm · 3/5 · famous_palaces
+- Saint Catherine's Monastery · 3/4 · pilgrimage_sites, egyptian_landmarks
+- Saint Pancras International · 4/5 · famous_train_stations
+- Saint Patrick's Cathedral · 3/4 · st_patrick_s_day, new_york_landmarks
+- Sambadrome Marques de Sapucai · 2/5 · brazilian_carnival_words
+- San Giovanni in Laterano · 3/5 · rome_landmarks
+- Sangre de Cristo Mountains · 3/5 · mountain_ranges
+- Santa Maria della Salute · 4/5 · famous_churches
+- Santa Maria in Trastevere · 3/4 · rome_landmarks
+- Santa Maria Sopra Minerva · 2/4 · rome_landmarks
+- Santiago de Compostela Cathedral · 4/5 · famous_churches, spanish_landmarks
+- Satish Dhawan Space Centre · 2/5 · launch_pad
+- Scandinavian Mountains · 2/4 · mountain_ranges
+- Scandinavian Peninsula · 3/5 · peninsulas, world_regions
+- Sequoia National Forest (California national forest with giant sequoias) · 3/4 · famous_forests
+- Serengeti National Park · 4/4 · savanna, famous_parks, african_landmarks, african_national_parks, tourist_attractions
+- Shanghai World Financial Center · 3/4 · famous_buildings, chinese_landmarks, towers_and_skyscrapers
+- Sheikh Lotfollah Mosque · 2/5 · middle_eastern_buildings
+- Sheikh Zayed Grand Mosque · 4/5 · places_of_worship, famous_mosques, middle_eastern_buildings, religious_buildings, tourist_attractions
+- Sierra Madre Occidental · 3/5 · mountain_ranges
+- Singapore Botanic Gardens · 3/4 · famous_gardens
+- Sinharaja Forest Reserve (rainforest reserve in Sri Lanka) · 2/5 · famous_forests
+- Sissinghurst Castle Garden · 3/5 · famous_gardens
+- Six Flags Magic Mountain · 4/5 · famous_theme_parks
+- Spotsylvania Court House · 2/5 · civil_war_battles
+- Sri Jayawardenepura Kotte · 2/4 · capital_cities, asian_capitals
+- Sri Ranganathaswamy Temple · 2/4 · indian_landmarks
+- St Pancras International · 4/4 · london_landmarks, station_words
+- Standing Stones of Stenness · 2/5 · ancient_sites_of_europe, scottish_landscape_words
+- Sultan Qaboos Grand Mosque · 3/5 · famous_mosques
+- Svalbard Global Seed Vault · 3/3 · polar_regions
+- Table Mountain Aerial Cableway · 4/5 · cable_cars_and_lifts
+- Table Mountain National Park · 4/5 · african_landmarks
+- Talladega Superspeedway · 4/5 · sports_venues
+- Tallgrass Prairie National Preserve · 2/4 · prairie
+- Tanegashima Space Center · 2/5 · launch_pad
+- Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu · 3/3 · maori_words
+- Temple of the Inscriptions · 2/4 · aztecs_and_maya, maya_and_aztec_sites
+- Theodore Roosevelt National Park · 3/5 · us_national_parks
+- Tirumala Venkateswara Temple · 2/5 · pilgrimage_sites, famous_temples
+- Tokyo Metropolitan Government Building · 3/4 · japanese_landmarks, east_asian_buildings
+- Tongariro National Park · 3/5 · new_zealand_landmarks
+- Tongass National Forest (largest US national forest, in Alaska) · 3/5 · famous_forests
+- Tottenham Hotspur Stadium · 4/5 · famous_stadiums
+- Trans-Mexican Volcanic Belt · 3/4 · mountain_ranges
+- Transantarctic Mountains · 2/5 · polar_regions, mountain_ranges, antarctic_places
+- Turks and Caicos Islands · 4/5 · caribbean_islands
+- Uluru-Kata Tjuta National Park · 3/5 · aboriginal_culture, landmarks
+- United States of America · 5/5 · countries, north_american_countries, flags_with_stars
+- United States Virgin Islands · 4/5 · caribbean_islands
+- Universal Orlando Resort · 4/5 · famous_theme_parks
+- Universal Studios Florida · 4/5 · famous_theme_parks
+- Universal Studios Hollywood · 4/5 · famous_theme_parks
+- Universal Studios Japan · 4/5 · famous_theme_parks
+- Upper Middle Rhine Valley · 3/4 · european_holiday_regions
+- Valdivian temperate rainforest (temperate rainforest of Chile and Argentina) · 2/4 · famous_forests
+- Vandenberg Space Force Base · 3/5 · launch_pad
+- Vehicle Assembly Building · 3/4 · spaceflight_words, launch_pad
+- Verrazzano-Narrows Bridge · 4/5 · famous_bridges
+- Victoria and Albert Museum · 4/3 · victorian_era, famous_museums, london_landmarks, museum, tourist_attractions
+- Victoria and Alfred Waterfront · 3/4 · african_landmarks
+- Vietnam Veterans Memorial · 4/4 · landmarks, us_landmarks
+- Wai-O-Tapu thermal wonderland · 2/5 · geothermal_words
+- Waimangu Volcanic Valley · 2/5 · geothermal_words, new_zealand_landmarks
+- Waitangi Treaty Grounds · 3/3 · landmarks, new_zealand_landmarks
+- Waldorf Astoria New York · 4/5 · famous_hotels
+- Wallops Flight Facility · 2/5 · launch_pad
+- Walls of Constantinople · 3/5 · byzantine_empire, istanbul_landmarks
+- Walt Disney Concert Hall · 3/4 · famous_buildings
+- Washington National Cathedral · 4/5 · famous_churches, us_landmarks
+- Waterton Lakes National Park · 3/4 · canadian_landmarks
+- West Antarctic Ice Sheet · 3/4 · ice_words
+- White Desert National Park · 3/5 · egyptian_landmarks
+- Winchester Mystery House (Famously haunted California mansion) · 3/3 · ghosts_and_spirits
+- Wood Buffalo National Park · 2/4 · taiga, canadian_landmarks
+- Wright Brothers National Memorial · 2/4 · us_landmarks
+- Yarlung Tsangpo Grand Canyon · 2/5 · famous_canyons_and_gorges
+- Yellowstone National Park · 5/3 · conservation_words, geothermal_words, famous_parks, us_landmarks, us_national_parks, tourist_attractions
+- Yokohama Landmark Tower · 3/4 · japanese_landmarks
+- Zaporizhzhia Nuclear Power Plant · 3/5 · nuclear_power_plant
+- Zhangjiajie Glass Bridge · 3/3 · famous_bridges
+
+## org (278)
+
+- Academicos do Grande Rio · 2/5 · brazilian_carnival_words
+- Advertising Standards Authority · 2/4 · advertising_words
+- American Automobile Association · 4/4 · cars
+- American Basketball Association (rival league 1967-1976) · 3/3 · basketball_terms
+- American Bowling Congress (ABC, former US body) · 2/3 · bowling_terms
+- American Football Conference (one of the two NFL conferences) · 3/3 · american_football_terms
+- American Motors Corporation · 3/4 · american_car_brands
+- Argyll and Sutherland Highlanders · 2/5 · military_units
+- Art Institute of Chicago · 4/5 · famous_museums
+- Association of Tennis Professionals (men's tour body (ATP)) · 4/3 · tennis_terms
+- Atacama Large Millimeter Array · 3/5 · observatory
+- Atlético Petróleos de Luanda (Angolan club) · 2/5 · african_soccer_clubs
+- Australian Football League (top Australian rules competition) · 5/4 · aussie_rules_terms
+- Australian Imperial Force · 3/4 · anzac_day
+- Automobile Association · 4/4 · cars
+- Bachman-Turner Overdrive · 3/5 · famous_bands
+- Baltimore and Ohio Railroad · 4/4 · railway_words
+- Barcelona Sporting Club (Ecuadorian club of Guayaquil) · 3/5 · south_american_soccer_clubs
+- Barnum and Bailey Circus · 4/5 · circus
+- Bayerische Motoren Werke · 3/4 · car_brands, german_car_brands
+- Bell Helicopter Textron · 2/4 · aircraft_makers
+- Berlin Philharmonic Orchestra · 4/2 · orchestra_words
+- Beşiktaş Jimnastik Kulübü (full name of Beşiktaş) · 3/5 · turkish_football_clubs
+- Betting and Gaming Council (UK trade body for licensed gambling operators) · 2/3 · betting_words
+- Borussia Mönchengladbach (German Bundesliga club) · 4/5 · european_soccer_clubs
+- Brighton and Hove Albion (English Premier League club) · 4/5 · european_soccer_clubs
+- Bristol Aeroplane Company · 2/4 · aircraft_makers
+- British Antarctic Survey · 3/3 · antarctic_coast
+- British Broadcasting Corporation · 5/5 · radio_words
+- British Darts Organisation (BDO, former governing body) · 3/4 · darts_terms
+- British East India Company · 3/5 · spice_trade, age_of_sail
+- British Heart Foundation · 4/5 · charity_words
+- British Leyland Motor Corporation · 3/4 · british_car_brands
+- British Motor Corporation · 3/4 · british_car_brands
+- British Telecommunications · 3/5 · european_tech_companies
+- British Trust for Ornithology · 2/5 · birdwatching_words
+- Butterfield Overland Mail · 2/4 · wild_west
+- Cambridge Silicon Radio · 2/4 · european_tech_companies
+- Cambridge University Boat Club (Cambridge crew in the Boat Race) · 3/4 · rowing_words
+- Campaign for Nuclear Disarmament · 3/3 · protest_words
+- Canadian Football League (professional league in Canada) · 3/3 · american_football_terms
+- Centers for Disease Control · 3/4 · medicine
+- Central Intelligence Agency · 4/5 · cold_war, us_government, spy_words
+- Central Pacific Railroad · 2/4 · wild_west
+- Chabab Riadhi Belouizdad (Algerian club) · 2/5 · african_soccer_clubs
+- Chicago Transit Authority · 4/4 · public_transportation, metro_systems
+- Chicago White Stockings (early name of the Chicago Cubs) · 3/5 · mlb_teams
+- Choice Hotels International · 3/5 · hotel_chains
+- Cincinnati Red Stockings (first fully professional team, 1869) · 3/5 · mlb_teams
+- Club Atlético Boca Juniors (official name of Boca) · 3/5 · south_american_soccer_clubs
+- Club Atlético River Plate (official name of River Plate) · 3/5 · south_american_soccer_clubs
+- Collingwood Football Club (official name of Collingwood) · 3/5 · afl_clubs
+- Committee for State Security · 3/5 · spy_words
+- Committee of Public Safety · 4/5 · french_revolution
+- Committee to Protect Journalists · 2/5 · journalism_words
+- Committees of Correspondence · 3/5 · american_revolution
+- Conference of the Parties · 3/4 · climate_words
+- Cornell Lab of Ornithology · 3/4 · birdwatching_words
+- Creedence Clearwater Revival · 4/5 · famous_bands
+- Criminal Investigation Department · 3/4 · police_station
+- Crown Prosecution Service · 3/4 · law_and_order
+- Dallas Cowboys Cheerleaders · 5/3 · cheerleading_words
+- Democratic Unionist Party · 3/5 · british_politics
+- Department of Homeland Security · 4/4 · us_government
+- Department of Motor Vehicles · 4/4 · cars
+- Dian Fossey Gorilla Fund · 3/4 · conservation_words
+- Digital Equipment Corporation · 3/4 · tech_companies
+- Docklands Light Railway · 4/4 · public_transportation, metro_systems
+- Doctors Without Borders · 4/4 · international_organizations, charity_words
+- Dutch East India Company · 5/5 · spice_trade, age_of_sail
+- Dutch West India Company · 3/4 · colonial_america
+- Eastern Orthodox Church · 4/5 · religion
+- Electric Light Orchestra · 4/5 · famous_bands
+- Electronic Sports League (early esports tournament organiser) · 2/4 · esports_words
+- Environmental Protection Agency · 5/3 · pollution_words, us_government
+- Espérance Sportive de Tunis (Tunisian club) · 3/5 · african_soccer_clubs
+- Estacao Primeira de Mangueira · 2/5 · brazilian_carnival_words
+- Étoile Sportive du Sahel (Tunisian club from Sousse) · 3/5 · african_soccer_clubs
+- European Southern Observatory · 3/5 · observatory
+- Evolution Championship Series (major fighting-game tournament) · 3/4 · esports_words
+- Fairchild Semiconductor · 3/4 · tech_companies, silicon_valley_companies
+- Federal Bureau of Investigation · 5/5 · us_government
+- Federal Communications Commission · 3/3 · radio_words
+- Federal Deposit Insurance Corporation · 3/4 · banking_words
+- Federation Internationale des Echecs (full name of FIDE, the world chess federation) · 2/4 · chess_terms
+- Fermi National Accelerator Laboratory · 3/4 · particle_physics
+- Fiat Chrysler Automobiles · 3/3 · car_brands
+- Florence and the Machine · 4/5 · famous_bands
+- Fluminense Football Club (official name of Fluminense) · 3/5 · south_american_soccer_clubs
+- Food and Drug Administration · 4/4 · medicine, us_government
+- Forest Stewardship Council (certifier of responsibly managed forests) · 3/4 · forestry_words
+- Forestry and Land Scotland (Scottish public body managing national forests) · 2/4 · forestry_words
+- Galatasaray Spor Kulübü (full name of Galatasaray) · 3/5 · turkish_football_clubs
+- Galleria dell'Accademia · 4/5 · famous_museums
+- Gençlerbirliği Spor Kulübü (full name of Gençlerbirliği) · 2/5 · turkish_football_clubs
+- General Motors Corporation · 4/4 · american_car_brands
+- Government Communications Headquarters · 3/5 · spy_words
+- Great Backyard Bird Count · 3/5 · birdwatching_words
+- Greater Western Sydney Giants (full name of GWS) · 3/5 · afl_clubs
+- Hewlett Packard Enterprise · 3/5 · tech_companies, silicon_valley_companies
+- Hildebrand und Wolfmuller · 2/3 · motorcycle_brands
+- Homeowners association · 4/4 · real_estate_words
+- Homewood Suites by Hilton · 3/5 · hotel_chains
+- Hon Hai Precision Industry · 2/5 · asian_tech_companies
+- House of Representatives · 5/5 · us_government
+- Hudson Motor Car Company · 2/4 · american_car_brands
+- Hyatt Hotels Corporation · 3/5 · hotel_chains
+- Imperatriz Leopoldinense · 2/5 · brazilian_carnival_words
+- Indian Motorcycle Company · 3/4 · motorcycle_brands
+- InterContinental Hotels Group · 3/5 · hotel_chains
+- Internal Revenue Service · 5/4 · us_government
+- International Atomic Energy Agency · 4/5 · nuclear_words, nuclear_power_plant
+- International Basketball Federation (world governing body (FIBA)) · 3/3 · basketball_terms
+- International Boxing Federation (IBF sanctioning body) · 3/3 · boxing_terms
+- International Brotherhood of Magicians (largest magicians society) · 3/3 · magic_tricks
+- International Business Machines · 3/5 · tech_companies
+- International Court of Justice · 3/5 · international_organizations
+- International Cricket Council (world governing body (ICC)) · 4/3 · cricket_terms
+- International Criminal Court · 4/5 · international_organizations
+- International Flipper Pinball Association (governing body of competitive pinball) · 2/3 · pinball_words
+- International Harvester · 3/4 · farm_vehicles
+- International Ice Hockey Federation (IIHF) · 3/3 · ice_hockey_terms
+- International Judo Federation · 3/3 · judo_words
+- International Maritime Organization · 3/3 · boats_and_ships
+- International Monetary Fund · 5/5 · international_organizations
+- International Paralympic Committee · 3/2 · paralympic_sports
+- International Plastic Modellers' Society (worldwide scale plastic modelling society) · 3/4 · model_making
+- International Renewable Energy Agency · 2/4 · renewable_energy
+- International Skating Union (ISU) · 3/3 · skating_words
+- International Ski Federation (FIS) · 3/3 · skiing_words
+- International Surfing Association (world governing body) · 2/3 · surfing_words
+- International Table Tennis Federation (world governing body (ITTF)) · 2/3 · table_tennis_terms
+- International Tennis Federation (world governing body (ITF)) · 3/3 · tennis_terms
+- Japan Karate Association · 3/3 · karate_words
+- Jet Propulsion Laboratory · 3/4 · space
+- Jeunesse Sportive de Kabylie (Algerian club) · 3/5 · african_soccer_clubs
+- Kawasaki Heavy Industries · 3/3 · motorcycle_brands
+- Kunsthistorisches Museum · 4/5 · famous_museums
+- Ladies Professional Golf Association (LPGA) · 3/3 · golf_terms
+- Ladysmith Black Mambazo · 3/5 · african_musicians
+- Liga Deportiva Universitaria (Ecuadorian club of Quito) · 3/5 · south_american_soccer_clubs
+- Liverpool and Manchester Railway · 3/5 · industrial_revolution, railway_words
+- London Symphony Orchestra · 4/2 · orchestra_words
+- Los Alamos National Laboratory · 4/5 · nuclear_words
+- Los Fabulosos Cadillacs · 3/5 · south_american_singers
+- Macmillan Cancer Support · 3/5 · charity_words
+- Marine Expeditionary Unit · 2/5 · military_units
+- Marine Stewardship Council · 3/4 · conservation_words
+- Marriott International · 4/5 · hotel_chains
+- Marylebone Cricket Club (custodians of the Laws of cricket (MCC)) · 4/3 · cricket_terms
+- Massachusetts Bay Transportation Authority · 4/4 · public_transportation
+- Mazda Motor Corporation · 3/4 · japanese_car_brands
+- Médecins Sans Frontières · 4/4 · charity_words, nobel_laureates
+- Messerschmitt-Bolkow-Blohm · 2/4 · aircraft_makers
+- Metropolitan Museum of Art · 5/5 · famous_museums, new_york_landmarks, tourist_attractions
+- Metropolitan Transportation Authority · 4/4 · public_transportation
+- Military Order of Christ · 2/4 · orders_of_knighthood
+- Ministry for State Security · 3/5 · spy_words
+- Mitsubishi Motors Corporation · 3/4 · japanese_car_brands
+- Multiple Listing Service · 3/5 · real_estate_words
+- Museo Thyssen-Bornemisza · 4/5 · famous_museums, spanish_landmarks
+- National Audubon Society · 3/5 · birdwatching_words
+- National Basketball Association (top US professional basketball league) · 5/3 · basketball_terms
+- National Collegiate Athletic Association (US college sports body) · 4/3 · basketball_terms
+- National Constituent Assembly · 3/5 · french_revolution
+- National Football Conference (one of the two NFL conferences) · 3/3 · american_football_terms
+- National Football League (top US professional football league) · 5/3 · american_football_terms
+- National Gardens Scheme · 2/3 · garden
+- National Interagency Fire Center (US wildfire coordination centre in Idaho) · 3/4 · wildfire_words
+- National Mah Jongg League (US body that publishes the American card) · 2/3 · mahjong_words
+- National Model Railroad Association (US model railway standards body) · 3/4 · model_making
+- National Security Agency · 4/5 · spy_words
+- National Union of Mineworkers · 4/4 · mining_words
+- National Weather Service · 4/3 · forecast_words
+- Netscape Communications · 3/5 · silicon_valley_companies
+- New York Football Giants (official name of the New York Giants) · 3/5 · nfl_teams
+- Nippon Professional Baseball (Japanese professional league) · 3/3 · baseball_terms
+- Nippon Telegraph and Telephone · 3/5 · asian_tech_companies
+- Nissan Motor Corporation · 3/4 · japanese_car_brands
+- North American Aviation · 3/4 · aircraft_makers
+- North Atlantic Treaty Organization · 4/5 · cold_war, international_organizations
+- North Melbourne Football Club (official name of North Melbourne) · 2/5 · afl_clubs
+- Northern Ireland Assembly · 3/5 · british_politics
+- Nuclear Regulatory Commission · 3/4 · nuclear_words, nuclear_power_plant
+- Oak Ridge National Laboratory · 3/4 · nuclear_words
+- Officer Candidate School · 3/4 · army_words
+- Oxford University Boat Club (Oxford crew in the Boat Race) · 3/4 · rowing_words
+- Packard Motor Car Company · 3/4 · american_car_brands
+- Pan American World Airways · 4/5 · airlines
+- Parent-teacher association · 4/4 · school
+- Peggy Guggenheim Collection · 4/4 · famous_museums, art_gallery
+- People's Postcode Lottery (UK charity lottery based on postcodes) · 3/4 · lottery_words
+- Philadelphia Athletics (Philadelphia team before the move to Kansas City and Oakland) · 3/5 · mlb_teams
+- Philadelphia Museum of Art · 4/5 · famous_museums
+- Polynesian Voyaging Society · 3/5 · polynesian_voyaging
+- Port Adelaide Football Club (official name of Port Adelaide) · 2/5 · afl_clubs
+- Pre-Raphaelite Brotherhood · 3/5 · art_movements, victorian_era
+- Professional Bowlers Association (PBA) · 3/3 · bowling_terms
+- Professional Darts Corporation (PDC) · 3/4 · darts_terms
+- Professional Golfers' Association (PGA) · 3/3 · golf_terms
+- Rage Against the Machine · 5/5 · famous_bands
+- Reporters Without Borders · 3/5 · journalism_words
+- Residence Inn by Marriott · 3/5 · hotel_chains
+- Returned and Services League · 3/3 · anzac_day
+- Revolutionary Tribunal · 3/5 · french_revolution
+- Ringling Brothers Circus · 4/5 · circus
+- Royal Australian Air Force · 3/5 · air_force_words
+- Royal Caledonian Curling Club (Scottish governing body) · 2/3 · curling_words
+- Royal Canadian Air Force · 3/5 · air_force_words
+- Royal Canadian Mounted Police · 4/5 · police_words, national_symbols
+- Royal Caribbean International · 4/5 · cruise_lines
+- Royal Flying Doctor Service · 4/4 · outback
+- Royal Horticultural Society · 4/3 · garden
+- Royal National Lifeboat Institution · 3/3 · shipwreck_coast_words, charity_words, boats_and_ships
+- Royal Philharmonic Orchestra · 3/2 · orchestra_words
+- Royal Philips Electronics · 3/5 · european_tech_companies
+- Royal Scots Dragoon Guards · 2/5 · military_units
+- Royal Yachting Association (UK governing body (RYA)) · 3/3 · sailing_sports
+- Russian Orthodox Church · 4/5 · religion, religious_buildings
+- San Francisco Municipal Railway · 3/4 · public_transportation
+- Scandinavian Airlines System · 3/4 · european_airlines
+- Scottish National Party · 4/5 · british_politics
+- Sea Shepherd Conservation Society · 3/4 · conservation_words
+- Second Continental Congress · 4/5 · american_revolution
+- Secret Intelligence Service · 4/5 · spy_words
+- Securities and Exchange Commission · 4/4 · stock_market_words
+- Singapore Mass Rapid Transit · 3/4 · metro_systems
+- Siouxsie and the Banshees · 3/5 · famous_bands
+- Smithsonian Institution · 4/4 · museum
+- Sociedade Esportiva Palmeiras (official name of Palmeiras) · 3/5 · south_american_soccer_clubs
+- Society of American Magicians (oldest magicians society) · 3/3 · magic_tricks
+- Sony Interactive Entertainment · 3/5 · asian_tech_companies
+- Special Weapons and Tactics · 4/5 · police_words
+- Sport Club Corinthians Paulista (official name of Corinthians) · 3/5 · south_american_soccer_clubs
+- Sport Club Internacional (official name of Internacional) · 3/5 · south_american_soccer_clubs
+- Sporting Clube de Portugal (Lisbon club) · 3/5 · european_soccer_clubs
+- Stanford Research Institute · 2/4 · silicon_valley_companies
+- Starwood Hotels and Resorts · 3/5 · hotel_chains
+- Stockton and Darlington Railway · 3/5 · industrial_revolution, railway_words
+- Strategic Petroleum Reserve · 3/4 · fossil_fuels
+- Suzuki Motor Corporation · 3/4 · japanese_car_brands
+- Taiwan Semiconductor Manufacturing · 2/5 · tech_companies, asian_tech_companies
+- Takshashila University · 2/4 · ancient_india
+- Tata Consultancy Services · 3/5 · tech_companies, asian_tech_companies
+- Taxi and Limousine Commission · 3/3 · taxis_of_the_world
+- Telefonaktiebolaget LM Ericsson · 2/5 · european_tech_companies
+- Thai Airways International · 3/4 · asian_airlines
+- Toyota Motor Corporation · 4/3 · car_brands, japanese_car_brands
+- Transportation Security Administration · 4/3 · airport
+- Truth and Reconciliation Commission · 3/4 · peace_words
+- UCI Road World Championships · 4/5 · cycling_races
+- United Nations Headquarters · 4/4 · famous_buildings
+- United Nations peacekeepers · 3/4 · peace_words
+- United Nations Security Council · 5/4 · international_organizations
+- United States Bowling Congress (USBC) · 2/3 · bowling_terms
+- United States Forest Service (US agency managing national forests) · 3/4 · forestry_words
+- United States Golf Association (US governing body (USGA)) · 3/3 · golf_terms
+- United States Postal Service · 4/4 · mail_words
+- United States Tennis Association (US governing body (USTA)) · 3/3 · tennis_terms
+- Universal Cheerleaders Association · 3/4 · cheerleading_words
+- Victorian Football League (state league below the AFL) · 3/4 · aussie_rules_terms
+- Vienna Philharmonic Orchestra · 4/2 · orchestra_words
+- Virginia Company of London · 3/5 · colonial_america
+- Washington Football Team (Washington's name 2020-2021) · 3/5 · nfl_teams
+- Western Bulldogs Football Club (official name of the Bulldogs) · 2/5 · afl_clubs
+- Wildlife Conservation Society · 3/5 · conservation_words
+- Women Airforce Service Pilots · 2/4 · world_war_ii_terms
+- Women's National Basketball Association (US professional women's league) · 4/3 · basketball_terms
+- Women's Tennis Association (women's tour body (WTA)) · 4/3 · tennis_terms
+- World Archery Federation (world governing body) · 2/3 · archery_terms
+- World Boxing Association (WBA sanctioning body) · 3/3 · boxing_terms
+- World Boxing Organization (WBO sanctioning body) · 3/3 · boxing_terms
+- World Curling Federation (world governing body) · 2/3 · curling_words
+- World Health Organization · 5/4 · medicine, international_organizations
+- World Meteorological Organization · 3/2 · forecast_words
+- World Rowing Federation (world governing body) · 2/3 · rowing_words
+- World Trade Organization · 4/5 · international_organizations
+- Wyndham Hotels and Resorts · 3/5 · hotel_chains
+
+## title (184)
+
+- A Midsummer Night's Dream · 3/5 · famous_operas, shakespeare_plays
+- Abduction from the Seraglio · 3/5 · famous_operas
+- administrative assistant · 4/5 · office_jobs
+- advanced open water diver (scuba certification level) · 3/4 · scuba_words
+- Adventures of Huckleberry Finn · 5/5 · classic_novels
+- Adventures of Robin Hood (1938 Errol Flynn film) · 3/4 · robin_hood_legend
+- Adventures of Tom Sawyer · 4/5 · classic_novels
+- air conditioning technician · 3/4 · trades
+- airport baggage handler · 3/3 · transport_jobs
+- Alice's Adventures in Wonderland · 3/5 · famous_ballets, classic_novels
+- Alice's Adventures in Wonderland (Lewis Carroll's fantasy novel) · 5/3 · fantasy
+- antiquarian bookseller · 3/4 · shopkeepers
+- apprentice electrician · 3/4 · trades
+- Archbishop of Canterbury · 5/5 · religious_leaders
+- Archbishop of Westminster · 3/5 · religious_leaders
+- Articles of Confederation · 4/4 · american_revolution, historic_documents
+- Assassin's Creed Valhalla (Viking-era open-world action game) · 3/4 · video_games
+- Avatar The Last Airbender · 4/4 · cartoon_words
+- Bachelor of Architecture · 2/5 · university_degrees
+- Bachelor of Business Administration · 3/5 · university_degrees
+- Bachelor of Engineering · 3/5 · university_degrees
+- Best Adapted Screenplay · 4/5 · award_words
+- Best Documentary Feature · 3/5 · award_words
+- Best Foreign Language Film · 3/5 · award_words
+- Best International Feature · 3/5 · award_words
+- Best Makeup and Hairstyling · 3/5 · award_words
+- Best Original Screenplay · 4/5 · award_words
+- Best Supporting Actress · 5/5 · award_words
+- Branwen daughter of Llyr (Second branch of the Mabinogi) · 2/3 · celtic_folklore
+- British Academy Film Awards · 4/5 · entertainment_awards
+- British Academy Television Awards · 3/5 · entertainment_awards
+- business development manager · 3/4 · office_jobs
+- cardiothoracic surgeon · 2/4 · medical_jobs
+- Certificate of occupancy · 2/4 · real_estate_words
+- certified public accountant · 4/4 · office_jobs
+- chancellor of the exchequer · 4/5 · political_titles, british_politics
+- chief executive officer · 5/5 · office_jobs, business_words, words_for_leader, office
+- chief financial officer · 4/5 · office_jobs, business_words, words_for_leader
+- chief information officer · 3/4 · tech_jobs
+- chief operating officer · 3/5 · office_jobs, words_for_leader
+- chief technology officer · 3/4 · tech_jobs
+- Combat Infantryman Badge · 3/4 · medals_and_honors
+- commander of the faithful · 3/4 · royal_titles
+- commercial airline pilot · 3/4 · transport_jobs, flight_crew
+- Compendium of Materia Medica · 2/4 · chinese_medicine
+- Congressional Gold Medal · 3/5 · medals_and_honors
+- Congressional Medal of Honor · 4/5 · medals_and_honors
+- consultant anaesthetist · 3/3 · medical_jobs
+- convenience store owner · 3/3 · shopkeepers
+- Convention on Biological Diversity · 3/5 · conservation_words
+- Counter-Strike Global Offensive (2012 tactical shooter) · 4/5 · video_games
+- Country Music Association Awards · 3/5 · entertainment_awards
+- Courage the Cowardly Dog · 3/4 · cartoon_words
+- Crime Scene Investigator · 4/4 · police_words, police_station
+- customer service representative · 4/5 · service_jobs
+- data protection officer · 3/3 · office_jobs
+- database administrator · 4/5 · tech_jobs
+- Daughter of the Regiment · 3/5 · famous_operas
+- Declaration of Arbroath · 3/5 · historic_documents
+- Declaration of Independence · 5/5 · american_revolution, historic_documents, government_words, us_government, legal_documents, national_symbols
+- Declaration of Sentiments · 3/5 · suffragists, historic_documents
+- Detective Chief Inspector · 3/5 · police_words, police_station
+- Dialogues of the Carmelites · 2/5 · famous_operas
+- Die Meistersinger von Nurnberg · 4/5 · famous_operas
+- Dirty Rotten Scoundrels · 3/5 · famous_musicals
+- Distinguished Conduct Medal · 2/5 · medals_and_honors
+- Distinguished Flying Cross · 3/5 · medals_and_honors
+- Distinguished Service Cross · 3/5 · medals_and_honors
+- Distinguished Service Order · 3/5 · medals_and_honors
+- Doctor of Veterinary Medicine · 2/4 · animal_experts
+- Ein Prosit der Gemütlichkeit · 3/5 · oktoberfest
+- Elementary Education Act · 2/5 · victorian_era
+- Elmer the Patchwork Elephant · 3/5 · children_s_book_characters
+- Encyclopaedia Britannica · 5/4 · things_you_read
+- Energy Performance Certificate · 3/5 · real_estate_words, green_living_words
+- English Standard Version · 3/4 · holy_books
+- environmental scientist · 4/5 · science_jobs
+- Everybody's Talking About Jamie · 2/5 · famous_musicals
+- executive vice president · 3/4 · office_jobs
+- food and beverage manager · 3/3 · food_jobs, hotel_staff
+- forensic anthropologist · 3/4 · science_jobs
+- Fundamental Orders of Connecticut · 2/5 · colonial_america
+- Garden of Earthly Delights · 4/5 · famous_paintings
+- Gargantua and Pantagruel · 2/5 · classic_novels
+- Gargantua and Pantagruel (Rabelais' giants and their story) · 3/4 · giants_of_legend
+- Gloucestershire Wassail · 2/4 · christmas_carols
+- Graduate teaching assistant · 2/3 · school_staff, university_words
+- Great American Songbook · 3/3 · jazz_words
+- Hampton Court Flower Show · 3/2 · garden
+- Health and safety officer · 4/4 · office
+- heavy equipment operator · 3/4 · outdoor_jobs
+- heavy goods vehicle driver · 3/4 · transport_jobs
+- Heisman Memorial Trophy (award for best college player) · 4/4 · american_football_terms
+- Higher National Diploma · 3/5 · university_degrees
+- His Majesty's Opposition · 3/5 · british_politics
+- Historia Regum Britanniae (Geoffrey of Monmouth's chronicle that popularised Arthur) · 2/3 · arthurian_legend
+- horse riding instructor · 3/4 · animal_jobs
+- human resources manager · 3/5 · office_jobs, hotel_staff
+- Independent Spirit Award · 3/5 · entertainment_awards
+- Infant Holy Infant Lowly · 3/5 · christmas_carols
+- Investigative reporter · 3/5 · journalism_words
+- James Norris Memorial Trophy (NHL best defenceman award) · 2/4 · ice_hockey_terms
+- journeyman electrician · 3/4 · trades
+- Lady Byng Memorial Trophy (NHL sportsmanship award) · 2/4 · ice_hockey_terms
+- Larry O'Brien Championship Trophy (NBA champions' trophy) · 3/4 · basketball_terms
+- Laureus World Sports Award · 3/5 · trophies_and_prizes
+- leader of the opposition · 4/5 · political_titles, british_politics, words_for_leader
+- Les Demoiselles d'Avignon · 4/5 · famous_paintings
+- Letter from Birmingham Jail · 4/5 · historic_documents
+- Liberty Leading the People · 4/5 · famous_paintings
+- Little Humpbacked Horse (Russian fairy tale by Pyotr Yershov) · 2/4 · slavic_folklore
+- machine learning engineer · 4/5 · tech_jobs
+- Marquess of Queensberry rules (standard rules of boxing) · 4/5 · boxing_terms
+- Maryland Toleration Act · 2/5 · colonial_america
+- Master Chief Petty Officer · 3/5 · military_ranks
+- Master Gunnery Sergeant · 2/5 · military_ranks
+- Master of Business Administration · 5/5 · university_degrees
+- Maurice Rocket Richard Trophy (NHL top goal scorer award) · 3/4 · ice_hockey_terms
+- Mendelssohn's Wedding March · 4/5 · weddings
+- Metamorphosis of Narcissus · 3/5 · famous_paintings
+- Microsoft Flight Simulator (long-running civil aviation simulator) · 3/4 · video_games
+- minister without portfolio · 3/5 · political_titles
+- Most Valuable Player Award · 4/5 · trophies_and_prizes
+- Napoleon Crossing the Alps · 3/5 · famous_paintings
+- National Television Awards · 3/5 · entertainment_awards
+- Neon Genesis Evangelion · 4/5 · anime_and_manga_words
+- New American Standard Bible · 2/4 · holy_books
+- New International Version · 3/4 · holy_books
+- New Revised Standard Version · 2/4 · holy_books
+- Nickelodeon Kids' Choice Awards · 4/5 · entertainment_awards
+- Nude Descending a Staircase · 3/5 · famous_paintings
+- Orpheus in the Underworld · 3/5 · famous_operas
+- otorhinolaryngologist · 2/5 · medical_jobs
+- Oxford English Dictionary · 5/4 · things_you_read
+- Patriarch of Constantinople · 2/5 · religious_leaders
+- PlayerUnknown's Battlegrounds (battle royale shooter) · 4/5 · video_games
+- plumbing and heating engineer · 3/4 · trades
+- police community support officer · 3/4 · emergency_workers, police_words, police_station
+- Popocatepetl and Iztaccihuatl (Mexican legend of the two volcanoes) · 3/5 · latin_american_folklore
+- Postgraduate certificate · 3/5 · university_degrees
+- Presidential Medal of Freedom · 5/5 · medals_and_honors
+- quality assurance tester · 3/4 · tech_jobs
+- Quartermaster Sergeant · 2/5 · military_ranks
+- Regimental Sergeant Major · 3/5 · military_ranks
+- Remembrance of Things Past · 3/5 · classic_novels
+- Revised Standard Version · 2/4 · holy_books
+- Saturn Devouring His Son · 3/5 · famous_paintings
+- Screen Actors Guild Award · 4/5 · entertainment_awards
+- Senatus Populusque Romanus · 3/5 · ancient_rome
+- Sid Meier's Civilization (turn-based strategy series) · 4/5 · video_games
+- Sir Garfield Sobers Trophy · 2/5 · trophies_and_prizes
+- site reliability engineer · 3/5 · tech_jobs
+- Slaughter on Tenth Avenue · 2/5 · famous_ballets
+- Space Battleship Yamato · 3/5 · anime_and_manga_words
+- Special educational needs coordinator · 3/5 · school_staff
+- speech and language therapist · 3/5 · medical_jobs
+- Super Smash Bros Ultimate (Nintendo crossover fighting game) · 4/5 · video_games
+- Television match official · 3/5 · sports_officials
+- Television Match Official (video referee (TMO)) · 3/4 · rugby_terms
+- The Bremen Town Musicians · 3/5 · fairy_tales
+- The Chronicles of Narnia (C. S. Lewis's fantasy series) · 5/4 · fantasy
+- The Cunning Little Vixen · 3/5 · famous_operas
+- The Fountain of Bakhchisarai · 2/5 · famous_ballets
+- The Interpretation of Dreams · 4/3 · dream_words
+- The Mysteries of Udolpho · 2/5 · classic_novels
+- The Steadfast Tin Soldier · 3/5 · fairy_tales
+- The Twelve Dancing Princesses · 3/5 · fairy_tales
+- The Very Hungry Caterpillar · 5/5 · children_s_book_characters
+- Theseus and the Minotaur (Myth of Theseus slaying the Minotaur in the Labyrinth) · 4/5 · mythology
+- Thoroughly Modern Millie · 3/5 · famous_musicals
+- Through the Looking-Glass · 4/5 · classic_novels
+- Through the Looking-Glass (Lewis Carroll's sequel to Alice) · 4/3 · fantasy
+- Tinker Tailor Soldier Spy · 4/4 · spy_words
+- Treaty of Guadalupe Hidalgo · 3/5 · historic_documents
+- Twelve Days of Christmas · 5/4 · christmas_carols
+- Twelve Labors of Hercules (The twelve tasks set for Hercules) · 4/4 · mythology
+- user experience designer · 3/4 · tech_jobs
+- Video assistant referee · 4/5 · sports_officials
+- Video Assistant Referee (official who reviews decisions on video) · 4/5 · soccer_terms
+- Virginia Declaration of Rights · 2/5 · historic_documents
+- Washington Crossing the Delaware · 3/5 · famous_paintings
+- While Shepherds Watched · 3/5 · christmas_carols
+- Wildlife and Countryside Act · 3/4 · conservation_words
+- Wisden Cricketers' Almanack (annual cricket reference book) · 3/4 · cricket_terms
+
+## proper (328)
+
+- Abbots Bromley Horn Dance · 2/5 · european_folk_dances
+- Aboriginal Land Rights Act · 3/4 · aboriginal_culture
+- Aboriginal Tent Embassy · 3/5 · aboriginal_culture
+- Abstract Expressionism · 4/5 · art_movements, art_gallery
+- Achaemenid Persian Empire · 3/4 · empires
+- Advanced Crew Escape Suit · 2/5 · astronaut_gear
+- Advanced Placement exam · 3/5 · exam_words
+- Agricultural Revolution · 4/3 · ages_of_history
+- Alpha Magnetic Spectrometer · 3/5 · space_station
+- American League Championship Series (MLB playoff round) · 3/4 · baseball_terms
+- American Revolutionary War · 5/5 · wars_and_battles
+- Anomalocaris canadensis · 2/4 · fossils
+- Antarctic Circumpolar Current · 3/4 · tides_and_currents, ocean
+- Antarctic Treaty System · 3/3 · polar_exploration, polar_regions
+- Archaeopteryx lithographica · 2/5 · fossils
+- Arts and Crafts Movement · 3/5 · art_movements, victorian_era
+- Asch conformity experiments · 3/5 · famous_experiments
+- Ash Wednesday bushfires (1983 Australian bushfires) · 2/4 · wildfire_words
+- Assassination of Julius Caesar · 4/4 · ancient_rome
+- Atlantic meridional overturning circulation · 2/4 · climate_words
+- Australasian Antarctic Expedition · 2/5 · polar_exploration
+- Australian rules football (the sport itself) · 4/4 · aussie_rules_terms
+- Australopithecus afarensis · 3/3 · prehistoric_life, discoveries, fossils, evolution_words
+- Austro-Hungarian Empire · 4/5 · empires, old_country_names
+- Austronesian expansion · 2/4 · polynesian_voyaging
+- Automated Transfer Vehicle · 2/5 · space_station
+- balsamic vinegar of Modena · 3/5 · oils_and_vinegars
+- Battle of Bosworth Field · 3/5 · medieval_battles
+- Battle of Chancellorsville · 3/5 · civil_war_battles
+- Battle of Fredericksburg · 3/5 · civil_war_battles
+- Battle of Jena-Auerstedt · 2/5 · napoleonic_battles
+- Battle of Kasserine Pass · 2/5 · world_war_ii_battles
+- Battle of Kennesaw Mountain · 2/5 · civil_war_battles
+- Battle of Lake Trasimene · 2/5 · ancient_battles
+- Battle of Little Bighorn · 4/5 · famous_battles, wild_west
+- Battle of Lookout Mountain · 2/5 · civil_war_battles
+- Battle of Milvian Bridge · 3/3 · roman_army
+- Battle of Missionary Ridge · 2/5 · civil_war_battles
+- Battle of Roncevaux Pass · 2/5 · medieval_battles
+- Battle of Stamford Bridge · 3/3 · vikings, medieval_battles
+- Battle of Stirling Bridge · 3/5 · medieval_battles
+- Battle of Teutoburg Forest · 3/4 · roman_army, ancient_battles
+- Battle of the Wilderness · 3/5 · civil_war_battles
+- Battle of Vittorio Veneto · 2/5 · world_war_i_battles
+- Beaufort wind force scale · 3/3 · wind_words
+- Berlin International Film Festival · 4/5 · film_festivals
+- Black and White Impermanence (Heibai Wuchang, guardians who escort souls to the underworld) · 2/4 · chinese_mythology
+- Black Diamond watermelon · 2/5 · melons
+- Black Forest cuckoo clock · 3/4 · things_made_of_wood
+- Black Obelisk of Shalmaneser · 2/4 · mesopotamia, artifacts
+- Black Saturday bushfires (2009 Victorian bushfires) · 3/4 · wildfire_words
+- Black Saturday bushfires · 3/3 · dry_season, natural_disasters
+- Boeing B-17 Flying Fortress · 4/5 · air_force_words, aircraft_types
+- Bose-Einstein condensate · 3/4 · states_of_matter
+- Braemar Royal Highland Gathering (famous Scottish games attended by the monarch) · 3/5 · highland_games
+- Bresaola della Valtellina · 2/5 · cured_meats
+- British Touring Car Championship · 3/4 · motor_racing
+- Bugatti Veyron Super Sport · 3/4 · fast_things
+- Burke and Wills expedition · 3/3 · outback
+- Busan International Film Festival · 3/5 · film_festivals
+- Calcio Storico Fiorentino (historic Florentine ball game) · 2/4 · ball_sports
+- Canadian Aboriginal syllabics · 2/4 · writing_systems
+- Capoeira Contemporânea (style blending Angola and Regional) · 2/5 · capoeira_words
+- Caribbean Premier League (Twenty20 league) · 3/3 · cricket_terms
+- Cascadia subduction zone · 3/4 · earthquake_words
+- Casper the Friendly Ghost (Cartoon ghost) · 5/5 · ghosts_and_spirits
+- Champion the Wonder Horse (Gene Autry's TV horse) · 2/3 · legendary_horses
+- Charleston Gray watermelon · 2/5 · melons
+- Chernobyl nuclear disaster · 5/3 · pollution_words
+- Chesapeake and Delaware Canal · 2/5 · famous_canals
+- Chevrolet Corvette Stingray · 3/4 · famous_car_models
+- Chinese scholars garden · 2/4 · garden_styles
+- Chinese Spring Festival · 4/5 · new_year
+- Cinderella's pumpkin carriage · 3/3 · orange_things
+- College Football Playoff (national championship playoff) · 4/4 · american_football_terms
+- Colston Bassett Stilton · 3/4 · cheeses, blue_cheeses
+- Commonwealth Trans-Antarctic Expedition · 2/5 · polar_exploration
+- competitive exclusion principle · 2/4 · ecology_words
+- Consolidated B-24 Liberator · 2/5 · air_force_words
+- Constructors Championship · 4/5 · motor_racing
+- Coordinated Universal Time · 4/3 · clocks_and_calendars
+- Corynebacterium diphtheriae · 2/4 · microbes
+- Cosmic microwave background · 3/3 · discoveries, astronomy_terms
+- Cowal Highland Gathering (large Scottish games at Dunoon) · 3/5 · highland_games
+- Creutzfeldt-Jakob disease · 2/5 · illnesses, words_named_after_people
+- Crimean-Congo hemorrhagic fever · 2/5 · tropical_diseases, viruses
+- Criminal Justice System · 3/4 · law_and_order
+- Crimson Sweet watermelon · 2/5 · melons
+- Cropwell Bishop Stilton · 3/4 · cheeses, blue_cheeses
+- Dancing Girl of Mohenjo-daro · 3/4 · ancient_india
+- Danyang-Kunshan Grand Bridge · 2/4 · long_things
+- Darjeeling Himalayan Railway · 3/4 · famous_trains
+- Deepwater Horizon oil spill · 4/4 · pollution_words
+- Delaware and Raritan Canal · 2/5 · famous_canals
+- Dewey Decimal Classification · 3/5 · library
+- Digital Command Control (standard for controlling model trains digitally) · 3/4 · model_making
+- Dissolution of the Monasteries · 4/3 · monastery
+- Dow Jones Industrial Average · 5/5 · stock_market_words
+- Drake's circumnavigation · 3/4 · famous_voyages
+- Drosophila melanogaster · 3/4 · flies
+- Dutch Golden Age painting · 3/5 · art_movements
+- East Australian Current · 3/4 · tides_and_currents
+- Edinburgh Festival Fringe · 4/5 · festivals_of_the_world
+- Edinburgh International Festival · 4/3 · music_festivals
+- Edinburgh International Film Festival · 3/5 · film_festivals
+- El Nino Southern Oscillation · 3/3 · tides_and_currents
+- Electric Daisy Carnival · 4/4 · music_festivals
+- Encyclopaedia Britannica set · 3/4 · retro_household_items
+- English Electric Lightning · 2/5 · air_force_words
+- English landscape garden · 3/4 · garden_styles
+- Extremely Large Telescope · 3/5 · observatory
+- Eyjafjallajokull eruption · 3/4 · volcano_words
+- Financial Times Stock Exchange · 3/4 · stock_market_words
+- first law of thermodynamics · 3/5 · heat_science
+- Formula One World Championship · 4/5 · motor_racing
+- Forsyth-Edwards Notation (text format describing a chess position) · 2/3 · chess_terms
+- Fourth Industrial Revolution · 3/2 · ages_of_history
+- French Revolutionary Wars · 3/5 · wars_and_battles
+- Fukushima nuclear disaster · 4/3 · pollution_words
+- Geographic Information System · 3/4 · maps_and_globes, map_words
+- Ghost of Christmas Future (Spirit in A Christmas Carol (Yet to Come)) · 4/4 · ghosts_and_spirits
+- Ghost of Christmas Present (Spirit in A Christmas Carol) · 4/4 · ghosts_and_spirits
+- Giant Magellan Telescope · 3/5 · observatory
+- Global Positioning System · 5/4 · navigation_tools, maps_and_globes, american_inventions, gadgets, handheld_gadgets, road_trip_words
+- Golden Eagle Danube Express · 2/4 · famous_trains
+- Golden Mask of Tutankhamun · 4/4 · artifacts
+- Goodwood Festival of Speed · 3/4 · motor_racing
+- Graduate Record Examination · 3/4 · exam_words
+- Grandfather Mountain Highland Games (major Highland games in North Carolina) · 3/4 · highland_games
+- Greater bird of paradise · 3/4 · rainforest
+- Gulf of Tonkin Resolution · 2/3 · cold_war
+- Gutenberg discontinuity · 2/5 · layers_of_the_earth
+- Hardy-Weinberg equilibrium · 2/4 · genetics_words
+- Hawker Siddeley Harrier · 2/5 · air_force_words
+- Heisenberg uncertainty principle · 4/5 · physics_words
+- Herald of Free Enterprise · 3/3 · famous_ships
+- Hubble Extreme Deep Field · 2/3 · galaxies_and_nebulae
+- Illinois and Michigan Canal · 3/5 · famous_canals
+- Imperial Trans-Antarctic Expedition · 3/5 · polar_exploration
+- Independence of the Seas · 2/3 · famous_ships
+- Indus Valley Civilization · 4/5 · ancient_india
+- Indus Valley Civilization (Bronze Age civilisation of the Indus basin) · 4/5 · bronze_age
+- International Baccalaureate · 4/4 · exam_words
+- International Date Line · 4/3 · clocks_and_calendars, maps_and_globes, lines_on_a_map
+- International Klein blue · 3/5 · shades_of_blue
+- International Phonetic Alphabet · 4/4 · writing_systems
+- International Space Station · 5/3 · huge_things, space_missions, space_station, space_vehicles
+- International symbol of access · 3/5 · symbols
+- International Women's Day · 4/4 · holidays_and_celebrations
+- International Workers' Day · 3/4 · holidays_and_celebrations
+- Intertropical convergence zone · 2/3 · wind_words
+- Inverness Highland Games (Scottish games held at Inverness) · 2/5 · highland_games
+- Ironman World Championship · 4/5 · triathlon_words
+- Italian Renaissance garden · 2/4 · garden_styles
+- James Webb Space Telescope · 4/3 · things_that_reflect, space_missions, observatory, space_vehicles
+- Jupiter Optimus Maximus (Jupiter's chief cult title, best and greatest) · 3/4 · roman_gods
+- Kaiser Wilhelm der Grosse · 2/3 · famous_ships
+- Lactobacillus acidophilus · 3/4 · microbes
+- Lady Franklin Bay Expedition · 2/4 · polar_exploration
+- Large Binocular Telescope · 2/5 · observatory
+- Latin Empire of Constantinople · 2/4 · crusades
+- law of independent assortment · 3/5 · genetics_words
+- Law of universal gravitation · 3/3 · discoveries, physics_words
+- Le Chatelier's principle · 3/5 · chemistry_words
+- Legionella pneumophila · 3/4 · microbes
+- Lemniscate of Bernoulli · 2/5 · curves_and_spirals
+- Lewis and Clark Expedition · 4/5 · exploration
+- Liberty Enlightening the World · 3/5 · famous_statues
+- Library of Congress Classification · 2/4 · library
+- Listeria monocytogenes · 3/4 · microbes
+- Little Albert experiment · 3/5 · famous_experiments
+- Little League World Series (annual youth baseball tournament) · 4/3 · baseball_terms
+- Little League World Series · 4/5 · famous_sporting_events
+- Lockheed Constellation · 3/4 · aircraft_types
+- Macy's Thanksgiving Day Parade · 5/5 · thanksgiving
+- Magellan-Elcano circumnavigation · 3/5 · famous_voyages
+- Mars Reconnaissance Orbiter · 2/5 · space_vehicles
+- Massachusetts Bay Colony · 4/5 · colonial_america, original_thirteen_colonies
+- Mauna Loa shield volcano · 2/4 · types_of_volcano
+- Mercedes-Benz 300SL Gullwing · 3/4 · famous_car_models
+- Meselson-Stahl experiment · 2/5 · famous_experiments
+- Michelson-Morley experiment · 3/5 · famous_experiments
+- Micronesian navigation · 2/4 · polynesian_voyaging
+- Milgram obedience experiment · 5/5 · famous_experiments
+- Military Demarcation Line · 3/4 · lines_on_a_map
+- Modified Mercalli intensity scale · 2/5 · earthquake_words
+- Mohorovicic discontinuity · 2/5 · layers_of_the_earth
+- Molotov-Ribbentrop Pact · 3/5 · world_war_ii_terms, historic_documents, diplomacy_words
+- Mongol Invasions of Japan · 3/3 · feudal_japan
+- Monterey International Pop Festival · 3/5 · music_festivals
+- Moscow Mathematical Papyrus · 2/4 · ancient_writing
+- Mount Fuji stratovolcano · 3/4 · types_of_volcano
+- Mount St. Helens eruption · 4/4 · volcano_words
+- Mount Vesuvius eruption · 4/4 · volcano_words
+- Mozzarella di Bufala Campana · 3/5 · cheeses, italian_cheeses, soft_cheeses
+- Musica popular brasileira · 2/5 · latin_music_styles
+- Mycenaean civilization (Late Bronze Age Greek civilisation) · 3/5 · bronze_age
+- Mycobacterium tuberculosis · 3/4 · microbes
+- National League Championship Series (MLB playoff round) · 3/4 · baseball_terms
+- Nintendo Entertainment System · 4/5 · gadgets, retro_tech
+- Nintendo Entertainment System (Nintendo 8-bit home console) · 5/5 · gaming_hardware
+- Nintendo Game Boy Advance · 3/5 · handheld_gadgets
+- Northamptonshire skittles (regional pub skittles game) · 2/4 · british_pub_games
+- Nuclear Non-Proliferation Treaty · 4/4 · diplomacy_words, nuclear_words
+- Nuestra Senora de Atocha · 3/4 · treasure, famous_ships
+- Nürnberger Rostbratwurst · 2/5 · sausages, german_food
+- Official World Golf Ranking (ranking of professional golfers) · 3/4 · golf_terms
+- Operation Market Garden · 4/5 · world_war_ii_battles
+- Osgood-Schlatter disease · 2/4 · sports_injuries
+- Pershore yellow egg plum · 2/5 · stone_fruits
+- Persian paradise garden · 2/4 · garden_styles
+- Poisoned Pawn Variation (sharp line of the Sicilian Najdorf) · 2/3 · chess_openings
+- Pontiac Firebird Trans Am · 3/4 · famous_car_models
+- Presumption of Innocence · 4/5 · law_and_order, courtroom_words
+- Prime Minister's Questions · 4/5 · parts_of_parliament, british_politics
+- Principality of Antioch · 3/4 · crusades
+- Professional Golfers' Association Championship (full name of the PGA Championship) · 3/5 · golf_majors
+- Prosciutto di San Daniele · 3/5 · cured_meats, italian_food
+- Protestant Reformation · 4/4 · historical_periods, religion
+- Pseudomonas aeruginosa · 2/4 · microbes
+- Queen Mother Champion Chase · 3/5 · famous_horse_races
+- Ranginui and Papatuanuku (Sky father and earth mother of Maori myth) · 3/5 · maori_mythology
+- Ranginui and Papatuanuku · 3/5 · maori_culture
+- Reese's Peanut Butter Cups · 5/5 · american_candy
+- Rhind Mathematical Papyrus · 2/4 · ancient_writing
+- Rockefeller Center Christmas Tree · 4/4 · christmas
+- Rocky Mountain spotted fever · 3/5 · infections
+- Rolls-Royce Silver Ghost · 4/4 · famous_car_models
+- Rotterdam International Film Festival · 3/5 · film_festivals
+- Royal Christmas Message · 3/5 · christmas
+- Royal Standard of Scotland · 3/5 · flags_with_animals
+- Rudolph the Red-Nosed Reindeer · 5/4 · red_things
+- Russian Orbital Segment · 2/5 · space_station
+- Rutherford gold foil experiment · 3/5 · famous_experiments
+- Saccharomyces cerevisiae · 3/4 · microbes
+- Sagittarius Dwarf Galaxy · 2/4 · galaxies_and_nebulae
+- Sahelanthropus tchadensis · 2/4 · fossils
+- Saint Gabriel the Archangel · 3/5 · archangels
+- Saint Michael the Archangel · 4/5 · archangels
+- Saint Raphael the Archangel · 3/5 · archangels
+- San Francisco earthquake · 4/4 · natural_disasters
+- San Sebastian Film Festival · 3/5 · film_festivals
+- Scholastic Aptitude Test · 3/5 · exam_words
+- School strike for climate · 3/4 · protest_words
+- Schwarzwälder Kirschtorte · 2/4 · cakes, desserts_of_the_world, german_food
+- Scottish Grand National · 3/5 · famous_horse_races
+- Scottish Highland Games (traditional Scottish athletics and music events) · 4/5 · highland_games
+- Scripps National Spelling Bee (US national spelling competition) · 4/3 · word_games
+- Second Industrial Revolution · 3/5 · industrial_revolution
+- second law of thermodynamics · 4/5 · heat_science
+- Second Sino-Japanese War · 3/5 · wars_and_battles
+- Segway Personal Transporter · 3/4 · electric_vehicles
+- Selma to Montgomery march · 3/4 · protest_words
+- Seneca Falls Convention · 4/5 · suffragists
+- Seven Bridges of Königsberg (classic graph-theory puzzle solved by Euler) · 3/4 · logic_puzzles
+- Siege of Constantinople · 4/4 · byzantine_empire, wars_and_battles
+- Six Nations Championship (annual northern hemisphere tournament) · 3/5 · rugby_terms
+- Songkran Water Festival · 3/5 · festivals_of_the_world
+- Sony PlayStation Portable · 4/5 · handheld_gadgets
+- Southern and Northern Dynasties · 2/4 · chinese_dynasties
+- Southern Pinwheel Galaxy · 2/5 · galaxies_and_nebulae
+- Space Shuttle Challenger · 4/3 · flying_machines, space_vehicles
+- Space Shuttle Discovery · 3/3 · flying_machines, space_vehicles
+- Space Shuttle Endeavour · 3/3 · flying_machines, space_vehicles
+- Space Shuttle main engine · 3/4 · rocket_parts
+- Space Transportation System · 3/4 · spaceflight_words
+- Spanish Christmas Lottery (huge annual Spanish lottery draw known as El Gordo) · 3/5 · lottery_words
+- Spring and Autumn Period · 3/3 · historical_periods
+- Stanford prison experiment · 5/5 · famous_experiments
+- state opening of parliament · 4/4 · royal_things
+- Statue of Athena Parthenos · 3/4 · ancient_greece
+- Stern-Gerlach experiment · 2/5 · famous_experiments
+- Strategic Arms Limitation Talks · 3/4 · diplomacy_words
+- Strategic Defense Initiative · 3/5 · cold_war
+- Super Nintendo Entertainment System · 4/5 · retro_tech
+- Super Nintendo Entertainment System (Nintendo 16-bit home console) · 5/5 · gaming_hardware
+- Sydney Harbour Bridge fireworks · 4/4 · new_year
+- Sydney Harbour fireworks · 3/3 · fireworks
+- Sydney Hobart Yacht Race (annual Boxing Day ocean race) · 3/5 · sailing_sports
+- Sydney Hobart Yacht Race · 4/4 · sailing_words
+- Telluride Film Festival · 3/5 · film_festivals
+- Theatre of the Oppressed · 2/4 · stage_genres
+- Thermohaline circulation · 3/4 · tides_and_currents, ocean
+- third law of thermodynamics · 3/5 · heat_science
+- Thüringer Rostbratwurst · 2/5 · sausages
+- Toronto International Film Festival · 4/5 · film_festivals
+- Traditional Chinese Medicine · 5/5 · chinese_medicine
+- Trafalgar Square Christmas tree · 3/4 · christmas
+- Trans-Alaska Pipeline System · 3/4 · fossil_fuels
+- Trans-Saharan trade route · 2/4 · oasis
+- Transcontinental Railroad · 4/4 · wild_west, railway_words, famous_routes
+- Transpacific Yacht Race (Los Angeles to Hawaii race) · 2/4 · sailing_sports
+- Triple Crown of Motorsport · 3/4 · motor_racing
+- Tweedledum and Tweedledee · 4/4 · things_that_come_in_pairs
+- Twentieth Century Limited · 3/5 · famous_trains
+- UEFA European Championship · 4/5 · famous_sporting_events
+- Unitarian Universalism · 2/5 · religion
+- United States Open Championship (full name of the US Open) · 3/5 · golf_majors
+- Universal Transverse Mercator · 2/4 · maps_and_globes
+- Venice International Film Festival · 4/5 · film_festivals
+- Venice Simplon-Orient-Express · 4/5 · famous_trains
+- Vienna New Year's Concert · 3/5 · new_year
+- Volcanic Explosivity Index · 2/5 · volcano_words
+- Volkswagen Karmann Ghia · 3/4 · famous_car_models
+- Volleyball Nations League (annual international competition) · 3/3 · volleyball_terms
+- West Texas Intermediate · 3/4 · fossil_fuels
+- White Buffalo Calf Woman (Lakota sacred figure who brought the pipe) · 3/5 · native_american_folklore
+- Wilson's bird of paradise · 2/4 · rainforest
+- Wimbledon Championships (official name of Wimbledon) · 3/5 · tennis_grand_slams
+- Wimbledon Championships · 5/5 · famous_sporting_events
+- Winged Victory of Samothrace · 4/5 · famous_statues
+- Winter Paralympic Games (multi-sport event for athletes with disabilities) · 3/4 · winter_sports
+- Witwatersrand Gold Rush · 2/5 · gold_rush_words
+- Worker and Kolkhoz Woman · 2/3 · famous_statues
+- World Chess Championship (title match deciding the world chess champion) · 4/4 · chess_terms
+- World Darts Championship (annual world title tournament) · 4/4 · darts_terms
+- World Darts Championship · 4/5 · famous_sporting_events
+- World Drivers Championship · 4/5 · motor_racing
+- World Figure Skating Championships (annual world event) · 4/4 · skating_words
+- World Pool Championship (annual pool event) · 2/3 · cue_sports_terms
+- World Rally Championship · 3/5 · famous_sporting_events, motor_racing
+- World Rowing Championships (annual world event) · 3/4 · rowing_words
+- World Snooker Championship (annual event at the Crucible) · 4/4 · cue_sports_terms
+- World Snooker Championship · 4/5 · famous_sporting_events
+- World Table Tennis Championships (biennial world event) · 3/4 · table_tennis_terms
+- World Test Championship (ICC Test league) · 3/3 · cricket_terms
+- Yellowstone supervolcano · 3/4 · natural_disasters
+- zeroth law of thermodynamics · 3/5 · heat_science
+
+## acronym (1)
+
+- Self-Contained Underwater Breathing Apparatus (expansion of SCUBA) · 3/5 · scuba_words
+
+## common (1770)
+
+- abductor pollicis longus · 1/5 · muscles
+- Aboriginal bark painting · 3/5 · pacific_art_words
+- Aboriginal bush medicine · 3/5 · oceanian_remedies
+- Aboriginal dot painting · 4/5 · pacific_art_words
+- Acoustic-electric guitar · 3/5 · guitar_types
+- acquired immunodeficiency syndrome · 4/5 · infections
+- acromioclavicular joint · 2/5 · joints
+- acrylic nail extensions · 3/5 · nail_care
+- Acrylonitrile butadiene styrene · 3/5 · man_made_materials, plastics, materials_science
+- action role-playing game (real-time combat RPG genre) · 3/5 · video_game_genres
+- Active galactic nucleus · 2/3 · types_of_galaxy
+- Adaptive cruise control · 3/4 · driving_words
+- adenosine triphosphate · 3/4 · biology_words
+- adjustable electric bed · 3/4 · beds
+- adjustable weight bench · 3/5 · gym_equipment
+- Adjustable-rate mortgage · 3/4 · real_estate_words
+- adrenocorticotropic hormone · 2/5 · hormones
+- Advance against royalties · 3/5 · publishing_words
+- Advanced persistent threat · 3/5 · cybersecurity_words
+- Adventure touring motorcycle · 3/5 · motorcycle_types
+- African American spirituals · 2/4 · american_roots_music
+- African fat-tailed gecko · 2/5 · pets
+- African forest elephant · 3/4 · mammals, african_animals, animals_with_tusks
+- African paradise flycatcher · 2/5 · african_birds
+- African savanna elephant · 4/5 · savanna_animals, animals_with_tusks
+- African sleeping sickness · 3/5 · tropical_diseases
+- African spurred tortoise · 2/5 · turtles_and_tortoises, pets, animals_with_shells, things_with_shells
+- African trypanosomiasis · 2/5 · tropical_diseases
+- African white-backed vulture · 2/5 · vultures
+- Air conditioning controls · 3/4 · dashboard_items
+- Air traffic control tower · 4/5 · airport_words
+- Aircraft maintenance engineer · 3/4 · flight_crew
+- Airline loyalty programme · 3/4 · air_travel
+- Airline transport pilot · 3/4 · flight_crew
+- Airport shuttle service · 3/3 · hotel
+- Airstream travel trailer · 4/5 · rvs_and_campers
+- Alaska Peninsula brown bear · 1/5 · bears
+- all terminals and honors (high-scoring winning hand) · 2/4 · mahjong_words
+- Alligator snapping turtle · 3/5 · turtles_and_tortoises, animals_with_shells, things_with_shells
+- Alpine climbing harness · 3/5 · climbing_gear
+- Alternate exterior angles · 2/5 · angle_words
+- Alternate interior angles · 3/4 · geometry, angle_words
+- alternate nostril breathing · 3/4 · yoga_words, ways_of_breathing
+- alternation of generations · 2/4 · plant_biology, life_cycle_words
+- Alternative hypothesis · 3/5 · statistics_words, scientific_method
+- Alternative minimum tax · 3/5 · tax_words
+- Altocumulus castellanus · 2/5 · cloud_types
+- Amarone della Valpolicella · 3/5 · red_wines
+- Amazonian giant centipede · 2/4 · things_that_sting
+- American English coonhound · 2/5 · hounds
+- American green tree frog · 2/5 · frogs_and_toads
+- American hairless terrier · 2/5 · terriers
+- American Miniature Horse · 2/4 · pony_breeds
+- American Staffordshire terrier · 3/5 · terriers
+- American yellow mustard · 3/5 · sauces_and_condiments
+- American-style fridge freezer · 3/4 · appliances
+- Amphibious assault ship · 2/5 · navy_words
+- Amphibious assault vehicle · 2/5 · military_vehicles
+- amyotrophic lateral sclerosis · 4/5 · illnesses
+- Analog-to-digital converter · 3/5 · audio_gear, electronic_parts
+- Anatolian kilim weaving · 2/5 · turkish_arts
+- Ancient Greek architecture · 3/4 · architecture_styles
+- Ancient Roman architecture · 3/4 · architecture_styles
+- Ancient semi-natural woodland (UK term for woodland continuously present since 1600) · 2/4 · woodland_features
+- angiotensin receptor blocker · 2/5 · medicines
+- angiotensin-converting enzyme inhibitor · 2/5 · medicines
+- Annual performance review · 4/4 · office
+- annual physical examination · 3/5 · doctor_s_office
+- anterior cingulate cortex · 2/5 · brain_parts
+- anterior cruciate ligament · 4/4 · joints
+- anterior cruciate ligament tear · 4/5 · sports_injuries, injuries
+- Anti-lock braking system · 4/4 · car_parts, motorcycle_parts
+- Anti-tank guided missile · 2/5 · modern_weapons
+- Anti-theft steering lock · 3/4 · car_accessories
+- Antibacterial hand sanitizer · 3/3 · toiletries
+- antidisestablishmentarianism (opposition to disestablishing a state church; famous long word) · 4/2 · silly_sounding_words
+- Appalachian mountain music · 2/5 · american_roots_music
+- Appellation d'Origine Contrôlée · 3/5 · wine_words, french_phrases_in_english
+- Appenzeller Sennenhund · 2/5 · working_dogs
+- apple cider vinegar rinse · 3/4 · hair_care
+- Application programming interface · 4/5 · coding_words, software_words
+- Application-specific integrated circuit · 3/5 · electronic_parts
+- arc fault circuit interrupter · 2/5 · electrical_fittings, home_safety
+- Arithmetic progression · 3/4 · math_terms
+- Arleigh Burke-class destroyer · 3/5 · warships
+- Armor-piercing ammunition · 2/4 · modern_weapons
+- Armored personnel carrier · 4/5 · army_words, things_with_wheels
+- Armoured personnel carrier · 4/5 · military_vehicles
+- Armoured recovery vehicle · 2/5 · military_vehicles
+- Arrivals and departures · 4/5 · airport_words
+- Articles of Association · 2/5 · legal_documents
+- Articles of Incorporation · 3/5 · legal_documents
+- Artificial general intelligence · 3/5 · ai_words
+- Artificial intelligence · 5/3 · computers, ai_words
+- Artificial neural network · 3/5 · ai_words
+- artistic roller skating (roller sport with figures and free skating) · 3/4 · skating_words
+- Asian long-horned beetle · 2/5 · beetles
+- Asian paradise flycatcher · 2/5 · asian_animals
+- Asian small-clawed otter · 3/5 · weasel_family, asian_animals
+- Assistant general manager · 3/4 · hotel_staff
+- Assistant stage manager · 3/5 · theater_jobs
+- Assisted braking belay device · 3/4 · climbing_gear
+- assisted pull-up machine · 3/5 · gym_equipment
+- At the next intersection · 3/5 · giving_directions
+- Atlantic horseshoe crab · 2/5 · crustaceans, animals_with_shells, things_with_shells
+- Atlantic sharpnose shark · 1/5 · sharks
+- Atlantic spotted dolphin · 2/5 · whales_and_dolphins, sea_mammals, spotted_animals
+- Atlantic white-sided dolphin · 2/5 · whales_and_dolphins
+- Atmospheric carbon dioxide · 3/5 · climate_words
+- Atmospheric perspective · 3/4 · drawing_techniques
+- attention deficit hyperactivity disorder · 5/5 · mental_health_words
+- Attorney-Client Privilege · 4/5 · courtroom_words
+- auditory processing disorder · 2/5 · hearing_words
+- Augmented reality glasses · 3/5 · wearable_tech
+- Austenitic stainless steel · 2/5 · alloys
+- Australian box jellyfish · 3/5 · jellyfish_and_relatives, australian_animals, venomous_animals, tentacled_animals, things_that_sting
+- Australian brush-turkey · 3/5 · australian_birds
+- Australian freshwater crocodile · 3/5 · australian_animals
+- Australian green tree frog · 2/5 · frogs_and_toads, australian_animals, hopping_animals, green_things
+- Australian paralysis tick · 2/5 · biting_bugs
+- Australian red claw crayfish · 1/5 · crustaceans
+- Australian rules football · 5/5 · national_sports, oval_things
+- Australian rules football (Australian football code played on an oval) · 5/5 · ball_sports, team_ball_sports
+- Australian silky terrier · 2/5 · terriers
+- Australopithecus afarensis (Early hominin species of the Lucy fossil) · 2/2 · stone_age
+- autoclaved aerated concrete · 2/5 · building_materials
+- automated external defibrillator · 4/5 · medical_equipment, first_aid, hospital
+- Automated Teller Machine · 4/5 · banking_words, shopping_mall, things_with_screens
+- Automated ticket machine · 4/5 · ticket_words
+- Automatic drip coffee maker · 3/4 · coffee_words
+- Automatic number plate recognition · 3/4 · parking_words
+- Automatic transfer switch · 2/5 · data_center
+- Automatic transmission · 4/5 · cars
+- Automatic warning system · 3/4 · railway_words
+- Automatic weather station · 3/4 · weather_instruments
+- automobile assembly plant · 3/4 · industrial_buildings
+- autonomic nervous system · 4/5 · body_systems
+- Autonomous delivery robot · 2/4 · delivery_vehicles
+- Avalanche safety equipment · 3/4 · ski_trip
+- baby gender reveal party · 3/3 · kinds_of_party
+- Backcountry snowboarding · 3/5 · outdoor_activities
+- bacon double cheeseburger · 4/5 · fast_food
+- Badger Face Welsh Mountain · 2/5 · sheep_breeds
+- badger hair shaving brush · 3/5 · shaving
+- ball-playing centre-back (centre-back who passes well from defence) · 3/5 · soccer_positions
+- Ballistic missile submarine · 3/5 · navy_words, submarine_words, military_vehicles
+- Bamana Chi Wara headdress · 2/5 · african_art_words
+- Barrel of oil equivalent · 2/3 · volume_units
+- Basic input output system · 2/4 · computer_parts
+- Battery electric vehicle · 4/4 · car_types, electric_vehicles
+- Battery energy storage system · 3/5 · power_grid_words
+- Battery-powered flashlight · 4/5 · emergency_supplies
+- Beachfront vacation rental · 3/4 · vacation_homes
+- Beyond a Reasonable Doubt · 5/5 · courtroom_words
+- Beyond Reasonable Doubt · 4/5 · law_and_order
+- Biochemical engineering · 2/5 · engineering_fields
+- biological classification · 3/5 · classification_words
+- biological safety cabinet · 3/3 · lab_equipment, science_lab
+- biological washing powder · 3/5 · laundry_words
+- Bioluminescent mushroom · 2/4 · things_that_glow
+- Bioluminescent plankton · 3/4 · nature_at_night, ocean, things_that_glow
+- Bipolar junction transistor · 3/5 · electronic_parts
+- Bismarck-class battleship · 2/5 · warships
+- bistecca alla fiorentina · 3/5 · italian_food
+- Bittersweet nightshade (woody nightshade with purple flowers and red berries) · 2/4 · poisonous_plants
+- Black and white television · 4/5 · retro_household_items
+- Black box flight recorder · 3/5 · australian_inventions
+- Black spiny-tailed iguana · 1/5 · lizards
+- Black-and-chestnut eagle · 1/5 · eagles
+- black-and-gold howler monkey · 3/4 · south_american_animals
+- Black-and-white colobus monkey · 2/5 · monkeys, black_and_white_animals
+- Black-and-white ruffed lemur · 2/5 · primates, rainforest_animals, black_and_white_animals, zoo
+- Black-bellied whistling duck · 2/5 · ducks
+- Black-capped squirrel monkey · 2/5 · monkeys
+- Black-chested buzzard-eagle · 1/5 · eagles
+- black-chinned hummingbird · 2/5 · pollinators, garden_birds
+- Black-collared lovebird · 2/5 · african_birds
+- Black-crowned night heron · 2/5 · wading_birds, north_american_birds
+- black-footed rock-wallaby · 2/5 · hopping_animals
+- Black-handed spider monkey · 2/5 · monkeys
+- Black-necked spitting cobra · 2/5 · venomous_snakes, african_animals
+- Black-tailed jackrabbit · 2/5 · rabbits_and_hares, north_american_animals, desert_animals, hopping_animals, things_with_tails
+- black-tailed prairie dog · 3/5 · north_american_animals, burrowing_animals, things_with_tails
+- Black-tailed rattlesnake · 1/5 · venomous_snakes
+- Black-throated blue warbler · 2/5 · songbirds
+- Black-throated gray warbler · 1/5 · songbirds
+- Black-throated green warbler · 2/5 · songbirds
+- Black-throated magpie-jay · 1/5 · crows_and_ravens
+- Blackberry and apple pie · 3/5 · pies_and_tarts
+- Blackjack basic strategy · 4/3 · casino_words
+- Block signalling system · 2/4 · railway_words
+- Blue and white porcelain · 4/5 · asian_art_forms, blue_things
+- Blue-spotted ribbontail ray · 2/5 · rays_and_eels
+- Bluespotted ribbontail ray · 2/5 · reef_life
+- Bluestreak cleaner wrasse · 2/5 · tropical_fish, reef_life
+- Bluetooth hands-free kit · 3/4 · car_accessories
+- Bluntnose sixgill shark · 1/5 · sharks
+- bone china dinner service · 3/4 · dining_room
+- borderline personality disorder · 3/5 · mental_health_words
+- Bornean clouded leopard · 2/5 · asian_animals, southeast_asian_animals
+- borosilicate glassware · 3/4 · lab_glassware
+- Bosnian and Herzegovinian · 2/4 · nationalities
+- Botanical illustration · 3/4 · drawing_techniques
+- branched-chain amino acids · 3/5 · nutrients
+- Braxton Hicks contractions · 3/5 · pregnancy_words
+- Brazilian black tarantula · 2/5 · spiders
+- Brazilian free-tailed bat · 2/5 · bats, fast_animals, insect_eaters, nature_at_night
+- Brazilian three-banded armadillo · 3/4 · south_american_animals
+- Brazilian wandering spider · 3/4 · insects_and_bugs, spiders, amazon_animals, rainforest_animals, venomous_animals
+- bread and butter pickles · 4/5 · pickles_and_preserves
+- Bread and butter pudding · 4/5 · puddings, desserts_and_sweets, british_food
+- Breaking the fourth wall · 4/5 · theater_words
+- breathable roofing membrane · 2/4 · roof_parts
+- broad spectrum sunscreen · 4/5 · sun_care
+- Broadnose sevengill shark · 1/5 · sharks
+- brother from another mother · 3/3 · words_for_friend
+- Brown marmorated stink bug · 3/5 · insects_and_bugs, garden_bugs, garden_pests
+- brown-throated three-toed sloth · 3/4 · south_american_animals
+- Brownbanded bamboo shark · 1/5 · sharks
+- Brush-tailed rock-wallaby · 2/5 · marsupials
+- Building an emergency shelter · 3/5 · survival_skills
+- bumper to bumper traffic · 4/5 · traffic_words, road_trip_words
+- buoyancy control device (jacket that controls buoyancy (BCD)) · 3/5 · scuba_words
+- Business class passenger · 3/4 · kinds_of_travelers
+- Business email compromise · 3/5 · cybersecurity_words
+- Business reply envelope · 2/4 · post_office
+- Buttermilk fried chicken · 3/4 · deep_fried_foods
+- Cabbage white butterfly · 4/4 · garden_pests
+- calcium channel blocker · 3/5 · medicines
+- California golden trout · 2/5 · salmon_and_trout
+- California grizzly bear · 2/5 · bears
+- California mountain kingsnake · 1/5 · snakes
+- California red-legged frog · 2/5 · frogs_and_toads
+- California tiger salamander · 2/5 · salamanders_and_newts
+- Campbell-Stokes sunshine recorder · 2/5 · weather_instruments
+- Campbell's dwarf hamster · 2/5 · small_pets
+- Campfire cinnamon rolls · 3/5 · campfire_foods
+- canister vacuum cleaner · 3/4 · cleaning_appliances
+- Cantilever truss bridge · 2/4 · bridge_types
+- Cantilevered staircase · 2/3 · architectural_features, staircase_parts
+- Cape Sable seaside sparrow · 2/5 · everglades_animals
+- Carbon capture and storage · 3/4 · climate_words
+- Carbon fiber reinforced polymer · 3/5 · materials_science
+- Carbon footprint calculator · 3/4 · green_living_words
+- carbon monoxide detector · 4/3 · heating_and_cooling, things_that_run_on_batteries, smart_home
+- carbonaceous chondrite · 2/5 · space_rocks
+- Carboniferous limestone · 2/3 · rock_types, sedimentary_rocks
+- cardiopulmonary bypass · 3/4 · operating_room
+- cardiopulmonary resuscitation · 4/5 · medicine, first_aid, hospital
+- cardiothoracic surgery · 3/5 · medical_specialties
+- cardiovascular exercise · 4/4 · workout_types
+- Caribbean spiny lobster · 2/5 · crustaceans
+- Carnaby's black cockatoo · 2/5 · australian_birds
+- Carnatic classical music · 3/5 · asian_music_styles
+- Cartesian coordinate system · 3/4 · geometry
+- case-making clothes moth · 2/5 · household_pests
+- cast-iron casserole dish · 3/4 · kitchen
+- Cathode ray oscilloscope · 2/4 · measuring_instruments
+- Cathode ray tube television · 3/4 · things_with_screens
+- Cation exchange capacity · 2/4 · soil_words
+- Cavalier King Charles spaniel · 4/5 · dog_breeds, toy_dogs
+- celery with peanut butter · 3/5 · healthy_snacks
+- census-designated place · 3/4 · kinds_of_settlements
+- Central African CFA franc · 2/4 · african_currencies
+- Central Asian shepherd dog · 2/5 · working_dogs
+- central attacking midfielder (attacking midfield playmaker) · 2/5 · soccer_positions
+- central business district · 4/5 · parts_of_a_town
+- central defensive midfielder (holding midfielder in front of the defence) · 2/5 · soccer_positions
+- central processing unit (main processor of a computer) · 3/3 · gaming_hardware
+- Central processing unit · 4/4 · computers, computer_parts
+- Certificate of vaccination · 3/4 · travel_documents
+- certified nursing assistant · 2/4 · hospital_words
+- Charitable organisation · 3/5 · charity_words
+- Chatham Island black robin · 3/4 · new_zealand_animals
+- Cheese and charcuterie board · 4/4 · serving_dishes
+- Cheese and mushroom omelette · 3/4 · egg_dishes
+- Cheese and pickle sandwich · 3/4 · cheese_dishes, sandwiches, picnic_basket
+- chemical splash goggles · 3/5 · lab_safety_gear
+- chemical-resistant gloves · 3/4 · lab_safety_gear
+- Cherokee herbal medicine · 2/4 · native_american_remedies
+- Chesapeake Bay blue crab · 3/5 · shellfish, things_with_shells
+- Chesapeake Bay crab cakes · 2/5 · seafood_dishes
+- Chesapeake Bay retriever · 3/5 · sporting_dogs, words_named_after_places, brown_things
+- Cheyne-Stokes respiration · 2/4 · ways_of_breathing
+- chicken and mushroom pie · 3/5 · savory_pies
+- chicken and sweetcorn soup · 3/5 · soups
+- Chief lighting technician · 3/5 · behind_the_camera
+- child and adolescent psychiatry · 2/5 · medical_specialties
+- children's birthday party · 4/4 · kinds_of_party
+- Chinese caterpillar fungus · 2/3 · mushrooms
+- Chinese courtyard house · 3/4 · traditional_dwellings
+- Chinese crested powderpuff · 2/4 · toy_dogs
+- Chinese five-spice powder · 3/5 · spices
+- Chinese flowering cabbage · 2/5 · cabbage_family
+- Chinese giant salamander · 3/5 · salamanders_and_newts, asian_animals, endangered_animals
+- Chinese herbal medicine · 4/5 · chinese_medicine
+- Chinese landscape painting · 4/5 · asian_art_forms
+- Chinese spot-billed duck · 1/5 · ducks
+- Chippendale dining chair · 2/4 · things_with_legs
+- Chocolate chip cookie dough · 4/5 · ice_cream_flavors
+- chocolate covered pretzels · 3/5 · snacks
+- chocolate covered raisins · 3/5 · snacks
+- Chocolate crinkle cookies · 3/4 · cookies
+- Chocolate fudge brownie · 3/5 · ice_cream_flavors, ice_cream_parlor, sweet_foods
+- Chocolate hazelnut spread · 4/3 · chocolates, spreads
+- Chocolate Labrador retriever · 4/5 · brown_things
+- Chocolate peanut butter · 3/5 · ice_cream_flavors, ice_cream_parlor
+- Chocolate-covered peanuts · 3/3 · candy
+- Chocolate-covered pretzels · 3/3 · candy
+- Chocolate-covered raisins · 3/3 · candy
+- Chocolate-covered strawberries · 4/3 · chocolates, valentine_s_day
+- Chocolate-covered strawberry · 4/4 · sweet_foods
+- Chongqing spicy chicken · 3/4 · spicy_dishes_of_asia
+- chorionic villus sampling · 2/4 · pregnancy_words
+- Christmas carol concert · 3/4 · school_events
+- Christmas Island pipistrelle · 2/5 · extinct_animals
+- Christmas Island red crab · 3/5 · crustaceans
+- Chromium-molybdenum steel · 2/5 · alloys
+- chronic fatigue syndrome · 3/5 · illnesses
+- chronic obstructive pulmonary disease · 4/5 · illnesses
+- Circular polarizing filter · 2/3 · camera_parts
+- Circumference of a circle · 3/4 · circle_parts
+- circumnavigate the globe · 3/4 · travel_verbs
+- Circumnavigation of the globe · 3/4 · journeys
+- Circumstantial Evidence · 4/5 · courtroom_words
+- closed string staircase · 2/4 · staircase_parts
+- closed-circuit rebreather (rebreather that recycles all exhaled gas) · 3/5 · scuba_words
+- closed-circuit television · 4/3 · home_electronics, home_safety, police_station, things_with_screens, cameras
+- Cloud condensation nuclei · 2/3 · water_cycle_words
+- Coal-fired power station · 4/4 · fossil_fuels, industrial_buildings
+- Coastal cutthroat trout · 2/5 · salmon_and_trout
+- Coefficient of friction · 3/4 · material_properties
+- cognitive behavioural therapy · 4/5 · mental_health_words
+- Colchester native oyster · 2/5 · shellfish
+- cold pressed rapeseed oil · 3/5 · oils_and_vinegars
+- Collapsible camping chair · 3/5 · camping_gear
+- Collectible souvenir spoon · 2/4 · souvenirs
+- Collective Bargaining Agreement · 3/4 · legal_documents
+- Columbian black-tailed deer · 1/5 · deer
+- Columbian white-tailed deer · 1/5 · deer
+- Comfortable walking shoes · 4/5 · things_to_pack
+- command and service module · 3/4 · spaceflight_words, space_vehicles
+- Commencement exercises · 3/5 · graduation_words
+- committed relationship · 3/3 · relationships
+- Common blue-tongued skink · 2/5 · lizards
+- Common bottlenose dolphin · 2/5 · whales_and_dolphins, things_that_squeak
+- Common brushtail possum · 2/5 · marsupials, australian_animals, nocturnal_animals, things_with_tails
+- Common Business-Oriented Language · 2/5 · programming_languages
+- Common eastern bumblebee · 2/5 · bees_and_wasps
+- common furniture beetle · 3/5 · household_pests
+- Compact disc read-only memory · 4/5 · computer_storage
+- compact fluorescent lamp · 4/5 · lights_and_lamps, green_living_words, things_that_glow
+- Compass and straightedge · 3/4 · math_tools
+- Complementary color scheme · 2/5 · color_theory_words
+- complete metamorphosis · 3/5 · insect_life_cycle, butterfly_life_stages, life_cycle_words
+- Complimentary breakfast · 4/4 · hotel
+- Complimentary toiletries · 3/4 · hotel
+- Compound light microscope · 3/5 · science_lab
+- Compound-complex sentence · 3/4 · sentence_parts
+- Compression packing cubes · 3/4 · travel_accessories
+- Compression-ignition engine · 2/5 · engines
+- computed tomography scan · 4/5 · medical_tests
+- computed tomography scanner · 3/5 · medical_equipment, hospital
+- Computer numerical control · 3/4 · engineering
+- Concentrated solar power · 2/5 · renewable_energy, energy_sources
+- Conditional probability · 3/5 · statistics_words
+- conductive hearing loss · 3/5 · hearing_words
+- Confidentiality Agreement · 3/5 · legal_documents
+- congenital heart defect · 2/2 · babies_and_birth
+- Congo African grey parrot · 2/5 · parrots
+- congregation (alligators) · 3/5 · collective_nouns
+- conjugate acid-base pair · 2/4 · acids_and_bases
+- conjugated linoleic acid · 2/5 · nutrients
+- Connecticut field pumpkin · 2/5 · squashes
+- Conscientious objector · 4/4 · war_words, peace_words, military, protest_words
+- Consecutive interior angles · 2/5 · angle_words
+- Conservation biologist · 3/4 · animal_experts
+- conservation of momentum · 3/5 · physics_words
+- Constant velocity joint · 3/5 · machine_parts, car_parts
+- constitutional amendment · 4/4 · government_words
+- constitutional monarchy · 4/5 · types_of_government
+- constitutional republic · 3/5 · types_of_government
+- constructive interference · 3/4 · acoustics_words
+- contactless payment card · 4/4 · in_a_wallet, ticket_words
+- Contactless payment reader · 3/4 · on_a_bus
+- Contemporary Christian music · 3/4 · music_genres
+- Contemporary classical music · 3/4 · music_genres
+- Content delivery network · 3/4 · data_center
+- Content management system · 3/4 · software_words
+- Continue straight ahead · 3/5 · giving_directions
+- Continuous cover forestry (management keeping unbroken tree canopy) · 2/5 · forestry_words
+- continuous glucose monitor · 3/5 · medical_equipment, wearable_tech
+- Continuous integration · 3/4 · coding_words
+- Continuously variable transmission · 3/4 · machine_parts, cars
+- Continuously welded rail · 2/4 · railway_words
+- Controllable pitch propeller · 2/4 · ship_parts
+- Controlled parking zone · 3/5 · parking_words
+- Convertible hiking trousers · 3/4 · hiking_gear
+- Convolutional neural network · 3/5 · ai_words
+- Coordinate measuring machine · 2/4 · measuring_instruments
+- Coordinating conjunction · 3/5 · conjunctions
+- Copperband butterflyfish · 2/5 · tropical_fish, reef_life
+- Coquilles Saint-Jacques · 3/5 · seafood_dishes, french_food
+- cordless vacuum cleaner · 4/4 · cleaning_appliances, things_that_run_on_batteries
+- coronation chicken sandwich · 3/4 · sandwiches
+- Corporate social responsibility · 3/5 · business_words
+- Correlation coefficient · 3/5 · statistics_words
+- Correlative conjunction · 2/5 · conjunctions
+- Costa Rican zebra tarantula · 2/5 · spiders
+- cotoletta alla milanese · 3/5 · italian_food
+- Counterweight fly system · 2/5 · parts_of_a_stage
+- counterweight trebuchet · 3/5 · siege_weapons
+- cow's milk protein allergy · 3/5 · allergies
+- Cranberry juice cocktail · 3/4 · juices
+- Cretaceous-Paleogene extinction · 2/4 · dinosaur_words
+- Crimes Against Humanity · 4/4 · crimes
+- crispy chicken sandwich · 3/5 · fast_food
+- Crown of thorns starfish · 3/5 · sea_life
+- Crown-of-thorns starfish · 3/5 · reef_life, starfish_and_sea_urchins, spiny_animals
+- cruciferous vegetables · 3/3 · superfoods
+- Cruel and Unusual Punishment · 4/5 · punishments
+- crushed red pepper flakes · 4/5 · spices, in_the_pantry
+- Customer relationship management · 3/5 · business_words
+- Customs and immigration · 4/5 · airport_words
+- Cyan magenta yellow black · 2/5 · color_theory_words
+- cyanoacrylate adhesive · 2/5 · adhesives, sticky_things
+- Cylindrical roller bearing · 2/5 · machine_parts
+- Czechoslovakian wolfdog · 2/4 · working_dogs
+- Dancing around the maypole · 3/4 · midsummer
+- decomposition reaction · 3/5 · chemical_reactions
+- decompression sickness (the bends) · 4/5 · scuba_words
+- deep backward square leg (boundary fielding position) · 2/5 · cricket_fielding_positions
+- deep conditioning treatment · 3/5 · hair_care, hair_salon
+- defensive pass interference (penalty for illegally contacting a receiver) · 4/5 · american_football_terms
+- defensive three seconds (NBA violation for loitering in the paint) · 3/5 · basketball_terms
+- delayed onset muscle soreness · 4/5 · fitness, fitness_words
+- delayed sleep phase syndrome · 2/5 · sleep_disorders
+- deliberate out of bounds (free kick for kicking the ball out on purpose) · 3/4 · aussie_rules_terms
+- Demonstrative adjective · 2/4 · grammar_terms
+- Denial-of-service attack · 3/5 · cybersecurity_words
+- Denominazione di Origine Controllata · 2/4 · wine_words
+- descent with modification · 3/5 · evolution_words
+- Descriptive statistics · 3/5 · statistics_words
+- destructive interference · 3/4 · acoustics_words
+- Diamond wedding anniversary · 3/4 · wedding_anniversaries, life_events
+- Diamondback water snake · 1/5 · snakes
+- diaphragmatic breathing · 2/4 · bedtime_routine, healthy_habits, ways_of_breathing
+- dichlorodiphenyltrichloroethane · 2/4 · chemical_compounds
+- Diesel particulate filter · 3/4 · car_parts
+- Diesel-electric submarine · 3/5 · submarine_words
+- Diet Coke Mentos experiment · 4/5 · science_experiments_for_kids
+- dietary reference intake · 2/5 · nutrition
+- Difference of two squares · 3/5 · algebra_words
+- Digital audio broadcasting · 2/4 · radio_words
+- Digital audio workstation · 4/5 · recording_studio_words, audio_gear
+- Digital imaging technician · 2/5 · behind_the_camera
+- Digital light processing · 2/5 · display_tech
+- Digital signal processor · 2/4 · audio_gear
+- Digital single-lens reflex · 3/5 · cameras
+- Digital storage oscilloscope · 2/5 · electronics_workbench
+- digital vernier caliper · 3/5 · measuring_tools
+- Digital Visual Interface · 2/5 · cables_and_connectors
+- Digital weather station · 3/4 · weather_instruments
+- Digital-to-analog converter · 3/5 · audio_gear
+- Diminished seventh chord · 3/4 · music_terms
+- Director of housekeeping · 3/4 · hotel_staff
+- Director of photography · 4/5 · behind_the_camera, arts_jobs
+- Disabled parking permit · 4/5 · parking_words
+- Dishonorable discharge · 4/5 · military
+- dishwasher detergent tablet · 3/4 · washing_up
+- disseminated intravascular coagulation · 1/4 · blood_words
+- dissolution of parliament · 3/4 · parts_of_parliament
+- Distilled white vinegar · 3/4 · sour_foods
+- Distributed denial of service · 3/5 · cybersecurity_words
+- Domo arigato gozaimashita · 3/4 · thank_you_around_the_world
+- dorsolateral prefrontal cortex · 2/5 · brain_parts
+- double displacement reaction · 3/5 · chemical_reactions
+- double exposure blackjack (blackjack variant with both dealer cards face up) · 2/3 · blackjack_terms
+- Double yellow-headed amazon · 2/5 · parrots
+- Double-breasted overcoat · 3/4 · things_with_buttons
+- Double-crested cormorant · 2/5 · seabirds
+- double-edged safety razor · 3/5 · shaving
+- downward-facing dog pose · 4/5 · yoga_poses
+- Dramatic coloratura soprano · 2/5 · opera_words
+- dressing gown and slippers · 3/3 · nightwear
+- Dried shiitake mushrooms · 3/4 · umami_foods
+- Driving Under the Influence · 5/4 · crimes, traffic_words, driving_words
+- Duckworth-Lewis-Stern method (rain-affected target setting (DLS)) · 3/4 · cricket_terms
+- Duckworth-Lewis-Stern method · 3/3 · scoring_words
+- Dutch oven peach cobbler · 3/4 · campfire_foods
+- Dwarf elliptical galaxy · 2/5 · types_of_galaxy
+- Dynamic host configuration protocol · 2/5 · networking
+- dysfunctional relationship · 3/3 · relationships
+- Earned income tax credit · 3/5 · tax_words
+- earth leakage circuit breaker · 2/5 · electrical_fittings
+- Earthquake early warning · 3/5 · earthquake_words
+- Earthquake-proof building · 3/4 · earthquake_words
+- Eastern barred bandicoot · 2/5 · marsupials
+- Eastern blue-tongued lizard · 3/5 · things_with_tongues
+- Eastern blue-tongued skink · 3/5 · australian_animals
+- Eastern Caribbean dollar · 2/4 · currencies
+- Eastern collared lizard · 1/5 · lizards
+- eastern cottontail rabbit · 3/5 · north_american_animals, hopping_animals
+- Eastern diamondback rattlesnake · 4/5 · venomous_snakes, everglades_animals, venomous_animals
+- eastern long-necked turtle · 2/5 · long_necked_animals, things_with_necks
+- Eastern lowland gorilla · 2/5 · primates, african_animals, rainforest_animals, endangered_animals
+- Eastern subterranean termite · 2/5 · ants_and_termites
+- Eastern tent caterpillar · 2/4 · insects_and_bugs
+- Eastern tiger salamander · 2/5 · salamanders_and_newts
+- Eastern tiger swallowtail · 3/5 · butterflies_and_moths, striped_animals
+- Easy peasy lemon squeezy · 4/4 · rhyming_pairs
+- Economy class passenger · 3/4 · kinds_of_travelers
+- Edison cylinder phonograph · 2/4 · music_players
+- Edwardian terraced house · 3/5 · house_styles
+- Egg and cress sandwiches · 3/4 · picnic_basket
+- Egyptian cotton bed sheets · 3/4 · bedding, bedroom
+- Egyptian hieroglyphics · 4/5 · ancient_writing, writing_systems
+- Egyptian papyrus column · 2/5 · column_styles
+- Egyptian spiny-tailed lizard · 2/5 · middle_eastern_animals
+- elastic compression bandage · 2/5 · first_aid
+- elastic potential energy · 3/5 · energy_types
+- Electric pencil sharpener · 3/5 · things_you_plug_in
+- Electric pressure cooker · 3/5 · cookware, things_you_plug_in
+- electric vehicle charger · 4/3 · garage, green_living_words
+- Electric vehicle charging station · 4/4 · gas_station
+- Electric yellow cichlid · 2/5 · tropical_fish
+- Electrical conductivity · 4/5 · material_properties
+- Electrical resistivity · 3/5 · material_properties
+- Electro-technical officer · 2/4 · ship_crew
+- Electroencephalograph · 2/3 · measuring_instruments
+- Electrolytic capacitor · 3/5 · electronic_parts
+- electromagnetic induction · 3/5 · electricity_words, magnet_words
+- electromagnetic radiation · 4/5 · light_words
+- electromagnetic spectrum · 4/4 · physics_words, light_words
+- Electronic control unit · 3/4 · car_parts
+- Electronic fuel injection · 3/4 · motorcycle_parts
+- electronic health record · 3/5 · medicine
+- electronic line calling (automated line judging) · 3/4 · tennis_terms
+- electronic nicotine delivery system · 2/5 · smoking_words
+- Electronic programme guide · 3/5 · tv_words
+- Electronic stability control · 3/3 · car_parts
+- Electronic travel authorization · 3/5 · travel_documents
+- Electronic voting machine · 3/4 · things_with_screens
+- Electrostatic discharge mat · 2/5 · electronics_workbench
+- Emergency breakdown kit · 3/4 · car_accessories
+- emergency caesarean section · 3/4 · childbirth_words
+- Emergency communication cord · 3/4 · parts_of_a_train
+- Emergency core cooling system · 2/5 · nuclear_power_plant
+- Emergency evacuation slide · 3/4 · in_flight_words
+- emergency eyewash station · 3/4 · lab_safety_gear
+- Emergency locator transmitter · 2/4 · plane_parts
+- emergency medical services · 3/4 · first_aid
+- emergency medical technician · 3/4 · hospital_words, emergency_workers
+- Emergency space blanket · 3/4 · campsite
+- Emergency travel document · 3/4 · travel_documents
+- emotional intelligence · 4/3 · emotions
+- emotionally intelligent · 3/3 · personality_traits
+- End-user license agreement · 3/5 · software_words
+- Energy efficient appliances · 3/5 · green_living_words
+- Engine management light · 3/4 · dashboard_items
+- English Channel swimming (swimming across the Channel) · 3/4 · water_sports
+- English country dancing · 3/5 · european_folk_dances
+- English springer spaniel · 4/5 · dog_breeds, sporting_dogs
+- Entlebucher mountain dog · 2/3 · words_named_after_places
+- Environmental engineering · 4/5 · engineering_fields
+- environmental tobacco smoke · 2/5 · smoking_words
+- eosinophilic esophagitis · 2/4 · allergies
+- ergonomic vertical mouse · 2/3 · home_office
+- Ethernet crossover cable · 2/5 · cables_and_connectors
+- Ethiopian icon painting · 2/5 · african_art_words
+- Eurasian griffon vulture · 2/5 · scavengers
+- Eurasian oystercatcher · 2/5 · birds
+- European fire-bellied toad · 3/5 · european_animals
+- European green woodpecker · 3/5 · european_animals, woodland_animals
+- European ground squirrel · 3/5 · european_animals
+- European medicinal leech · 2/4 · worms
+- European pied flycatcher · 2/5 · songbirds
+- Evolutionary biologist · 3/3 · animal_experts, science_jobs
+- excessive daytime sleepiness · 2/4 · sleep_words
+- exclusive breastfeeding · 3/5 · newborn_care
+- Exhaust gas recirculation · 2/4 · car_parts
+- Expandable carry-on luggage · 3/4 · luggage
+- expanding polyurethane foam · 3/4 · adhesives
+- Exponential growth curve · 3/4 · curves_and_spirals
+- extendable curtain pole · 3/3 · window_coverings
+- extendable dining table · 3/5 · dining_room, tables_and_desks
+- Extended producer responsibility · 2/4 · recycling_words
+- extended side angle pose · 3/5 · yoga_poses
+- extended-release capsule · 2/5 · forms_of_medicine
+- Extensible Markup Language · 2/5 · file_types
+- extensor carpi radialis · 1/5 · muscles
+- extensor digitorum longus · 1/5 · muscles
+- external auditory canal · 2/5 · ear_parts
+- Extra thick double cream · 3/4 · dairy_and_eggs
+- Extracurricular activities · 4/4 · school
+- extravehicular activity · 3/5 · spaceflight_words, space_station
+- Extravehicular mobility unit · 2/5 · astronaut_gear
+- Factorising quadratics · 2/4 · algebra_words
+- fecal immunochemical test · 2/5 · medical_tests
+- Feminine hygiene products · 4/4 · toiletries
+- Fiat justitia ruat caelum · 2/5 · legal_latin
+- Field-effect transistor · 3/5 · electronic_parts
+- Field-programmable gate array · 3/5 · electronic_parts
+- Fiery-throated hummingbird · 1/5 · colorful_birds
+- Figure eight follow-through · 2/4 · knots
+- Finding drinkable water · 3/5 · survival_skills
+- Finite element analysis · 3/5 · engineering
+- Fiordland crested penguin · 3/3 · new_zealand_animals, penguins
+- Firefighting helicopter (helicopter used to drop water on fires) · 2/5 · wildfire_words
+- First assistant director · 3/5 · behind_the_camera
+- First-class compartment · 4/4 · parts_of_a_train
+- Five-striped palm squirrel · 2/5 · indian_animals
+- fixed-odds betting terminal (UK high-stakes casino-style betting machine in shops) · 3/4 · betting_words
+- Flesh-footed shearwater · 1/5 · seabirds
+- flexor digitorum profundus · 2/5 · muscles
+- flexor digitorum superficialis · 1/5 · muscles
+- Flight information display · 3/4 · things_with_screens
+- Flight management system · 3/4 · plane_parts
+- Flightless steamer duck · 1/5 · flightless_birds
+- floccinaucinihilipilification (the habit of estimating something as worthless) · 3/4 · silly_sounding_words
+- Flocculent spiral galaxy · 2/5 · types_of_galaxy
+- Florida softshell turtle · 2/5 · everglades_animals
+- Flourless chocolate cake · 3/5 · cakes
+- fluorescent strip light · 3/4 · lights_and_lamps
+- follicle stimulating hormone · 3/5 · hormones
+- Formosan subterranean termite · 2/5 · ants_and_termites
+- Fortunately unfortunately · 2/4 · road_trip_games
+- Fossil fuel power station · 3/5 · fossil_fuels
+- Fossiliferous limestone · 2/5 · sedimentary_rocks
+- four concealed triplets (high-scoring winning hand) · 2/4 · mahjong_words
+- Four-season mountaineering tent · 3/5 · tent_types
+- Four-wheel drive vehicle · 3/4 · car_types, safari_words
+- Fourth of July fireworks · 4/4 · fireworks
+- fractional distillation · 3/4 · chemistry_words
+- freestyle snowboarding (trick-based snowboarding) · 3/4 · snow_sports
+- Freezing point depression · 2/3 · temperature_words
+- French breakfast radish · 2/4 · root_vegetables
+- French door refrigerator · 3/4 · appliances
+- Frequent flyer programme · 4/5 · air_travel
+- Frequently asked questions · 4/5 · internet_words
+- Freshly squeezed orange juice · 3/4 · juices, in_the_fridge
+- Freshwater cultured pearl · 3/4 · precious_materials
+- front-loading washing machine · 4/4 · cleaning_appliances
+- Fruit and vegetable stall · 4/5 · street_market
+- Fuel cell electric vehicle · 3/4 · electric_vehicles
+- full coverage foundation · 3/5 · makeup
+- Functional programming · 3/5 · coding_words
+- Fundamental theorem of algebra · 2/4 · algebra_words
+- Fundamental theorem of calculus · 3/4 · math_terms
+- Furoshiki wrapping cloth · 3/4 · japanese_souvenirs
+- Further education college · 3/4 · school_types
+- Future perfect continuous · 2/5 · tenses
+- galactomyces ferment filtrate · 2/5 · korean_skincare
+- Galapagos flightless cormorant · 3/5 · galapagos_animals
+- Galapagos giant tortoise · 4/5 · turtles_and_tortoises, galapagos_animals, animals_with_shells, zoo, slow_things, things_with_shells
+- Galapagos marine iguana · 2/5 · lizards, galapagos_animals
+- Galapagos pink land iguana · 2/5 · pink_animals
+- Galapagos short-eared owl · 2/5 · galapagos_animals
+- garden waste collection · 3/5 · bins_and_recycling
+- Garlic and coriander naan · 3/4 · flatbreads
+- gaslight gatekeep girlboss (meme phrase mocking performative feminism or hustle culture) · 3/3 · gen_z_slang
+- gastroesophageal reflux disease · 3/5 · illnesses
+- gastrointestinal system · 3/5 · body_systems
+- gastrointestinal tract · 4/5 · digestive_system, inside_the_body
+- general classification · 4/5 · cycling_words
+- general household waste · 3/4 · bins_and_recycling
+- generalized anxiety disorder · 3/5 · mental_health_words
+- Generative adversarial network · 3/5 · ai_words
+- genetic fingerprinting · 3/4 · genetics_words
+- genetically modified organism · 4/5 · genetics_words
+- Geological engineering · 2/5 · engineering_fields
+- Georgian terraced house · 3/5 · house_styles
+- Geothermal power station · 3/5 · geothermal_words
+- German shorthaired pointer · 4/5 · dog_breeds, sporting_dogs
+- German wirehaired pointer · 3/5 · dog_breeds, sporting_dogs
+- Giant African land snail · 2/4 · pets, animals_with_shells, slow_things, things_with_shells
+- Giant African pouched rat · 2/4 · working_animals
+- Giant Amazon river turtle · 1/5 · turtles_and_tortoises, amazon_animals
+- giant Andean hummingbird · 2/4 · andean_animals
+- Giant Australian cuttlefish · 2/5 · cephalopods
+- giant desert hairy scorpion · 3/5 · desert_animals, venomous_animals, desert, things_that_sting
+- Giant elliptical galaxy · 3/5 · types_of_galaxy
+- Giant freshwater stingray · 2/5 · rays_and_eels, asian_animals, things_that_sting
+- Giant Gippsland earthworm · 2/5 · worms
+- Giant Japanese spider crab · 3/5 · crustaceans
+- Giraffe-necked antelope · 2/5 · things_with_necks
+- Glacial lake outburst flood · 2/3 · ice_features
+- glass-fronted display cabinet · 3/4 · storage_furniture
+- glass-reinforced plastic · 3/5 · building_materials, man_made_materials, materials_science
+- glass-topped coffee table · 3/4 · tables_and_desks
+- Global average temperature · 3/5 · climate_words
+- Gloucester fishing schooner · 2/4 · sailing_ships
+- Gloucestershire Old Spots · 3/3 · farm_animals, words_named_after_places
+- gnocchi alla sorrentina · 2/5 · italian_food
+- Gold frankincense and myrrh · 4/5 · christmas
+- Golden snub-nosed monkey · 2/5 · primates, monkeys, asian_animals, mountain_animals
+- Golden wedding anniversary · 3/4 · wedding_anniversaries
+- Golden-breasted starling · 2/5 · colorful_birds, african_birds
+- golden-headed lion tamarin · 2/4 · south_american_animals
+- Golden-mantled ground squirrel · 2/5 · rodents, hibernating_animals
+- Golden-ringed dragonfly · 2/4 · flies
+- Golden-shouldered parrot · 1/5 · parrots
+- Goliath bird-eating spider · 3/5 · spiders
+- Grand basset griffon Vendeen · 2/5 · hounds
+- Grand Cayman blue iguana · 2/5 · lizards, blue_things
+- Grand design spiral galaxy · 2/5 · types_of_galaxy
+- Graphical user interface · 3/4 · computers, software_words
+- Graphics Interchange Format · 3/5 · file_types
+- graphics processing unit (chip that renders graphics) · 3/4 · gaming_hardware
+- Graphics processing unit · 3/4 · computers, computer_parts
+- gravitational potential energy · 3/5 · energy_types
+- Great Basin rattlesnake · 1/5 · venomous_snakes
+- Great crested flycatcher · 2/5 · songbirds
+- Great golden digger wasp · 2/5 · bees_and_wasps
+- Great Highland bagpipes · 3/5 · celtic_instruments, national_instruments
+- Great silver water beetle · 2/4 · pond
+- Great spangled fritillary · 2/5 · butterflies_and_moths
+- Great spotted woodpecker · 3/5 · birds, european_animals, british_wildlife, woodland_animals
+- Great spotted woodpecker (black-and-white woodpecker of Eurasian woods) · 3/5 · woodland
+- great-great-grandfather · 3/5 · extended_family
+- great-great-grandmother · 3/5 · extended_family, family_members
+- Greater bird-of-paradise · 2/5 · colorful_birds
+- Greater blue-ringed octopus · 2/5 · cephalopods, tentacled_animals
+- greater hedgehog tenrec · 2/5 · spiny_animals
+- Greater one-horned rhinoceros · 2/5 · hoofed_mammals, asian_animals, indian_animals, animals_with_horns, things_with_horns
+- Greater prairie chicken · 2/5 · game_birds, north_american_birds, prairie
+- Greater spotted woodpecker · 4/4 · garden_birds
+- Greater Swiss mountain dog · 3/5 · dog_breeds, working_dogs, words_named_after_places
+- Greater white-fronted goose · 2/5 · geese_and_swans, migrating_animals
+- Greater yellow-headed vulture · 1/5 · vultures
+- Greatest common divisor · 3/4 · math_terms
+- Greenback cutthroat trout · 2/5 · salmon_and_trout
+- Greenbottle blue tarantula · 2/5 · spiders
+- Greenhouse gas emissions · 4/5 · climate_words
+- Greenland sleeper shark · 1/5 · sharks
+- greetings and salutations · 3/4 · greetings
+- Grilled cheese sandwich · 4/5 · cheese_dishes, sandwiches, diner, campfire_foods
+- ground fault circuit interrupter · 3/5 · electrical_fittings, home_safety, electricity_words, power_grid_words
+- Ground penetrating radar · 2/3 · measuring_instruments
+- Ground proximity warning system · 2/4 · plane_parts
+- Guided missile destroyer · 3/5 · warships, military_vehicles
+- Guyana pinktoe tarantula · 3/5 · pink_animals
+- Habeas corpus ad subjiciendum · 2/5 · latin_phrases, legal_latin
+- Hand-cranked emergency radio · 3/5 · emergency_supplies
+- Hand-woven Berber carpet · 3/5 · moroccan_souvenirs
+- Hand-woven Turkish carpet · 3/5 · turkish_souvenirs
+- Handheld electronic game · 3/5 · handheld_gadgets
+- Handicapped parking space · 4/5 · parking_words
+- Hanging, drawing and quartering · 4/5 · punishments
+- Hartmann's mountain zebra · 2/5 · horse_family
+- Hawaiian outrigger canoe · 3/4 · boat_types
+- Hazard reduction burning (Australian term for planned burns) · 2/5 · wildfire_words
+- Heartleaf philodendron (trailing indoor vine with heart-shaped leaves) · 2/5 · houseplants
+- Heath Robinson contraption · 2/4 · words_named_after_people
+- hematopoietic stem cell · 2/4 · blood_words
+- hexakosioihexekontahexaphobia · 2/5 · phobias
+- hidradenitis suppurativa · 2/4 · skin_words
+- High-definition multimedia interface · 3/5 · cables_and_connectors
+- high-definition television · 4/4 · home_electronics
+- High-density polyethylene · 3/5 · man_made_materials, plastics, materials_science
+- high-fructose corn syrup · 4/3 · nutrition, sweeteners
+- high-intensity interval training · 5/5 · fitness, workout_types
+- High-voltage direct current · 2/5 · power_grid_words
+- Highly composite number · 2/5 · number_types
+- Himalayan griffon vulture · 2/5 · himalayan_animals, mountain_animals, scavengers
+- Hindustani classical music · 3/5 · asian_music_styles
+- hippopotomonstrosesquippedaliophobia · 3/4 · phobias, all_five_vowels
+- Historical European martial arts (revived European fighting arts (HEMA)) · 2/5 · martial_arts
+- historical reenactment (recreating past events in period dress) · 3/5 · hobbies_and_crafts
+- Home contents insurance · 3/4 · household_bills
+- home entertainment system · 4/3 · living_room
+- hormone replacement therapy · 3/4 · medicines
+- Hot chocolate with marshmallows · 4/5 · cozy_things, cafe
+- household waste recycling centre · 3/5 · bins_and_recycling, recycling_words
+- Hue saturation lightness · 2/5 · color_theory_words
+- human chorionic gonadotropin · 3/5 · hormones
+- human immunodeficiency virus · 4/5 · infections, viruses
+- Human resources department · 4/4 · office
+- Humuhumunukunukuapuaa · 3/4 · hawaiian_words
+- Hungarian chicken paprikash · 3/5 · eastern_european_food
+- Hungarian sweet paprika · 3/5 · spices
+- Hungarian wirehaired vizsla · 2/5 · sporting_dogs
+- Hurricane cocktail glass · 3/4 · drinking_vessels
+- Hybrid electric vehicle · 4/4 · cars, electric_vehicles
+- Hydraulic rescue equipment · 2/4 · fire_station
+- Hydroelectric power station · 4/5 · renewable_energy, industrial_buildings
+- Hydrogen fuel cell train · 3/5 · train_types
+- Hydrogenated vegetable oil · 2/5 · fuels
+- Hypertext Markup Language · 3/5 · file_types, programming_languages
+- Hypertext Preprocessor · 2/5 · programming_languages
+- Hypertext transfer protocol · 3/5 · networking
+- hypnagogic hallucination · 1/4 · dream_words
+- Hypothetico-deductive method · 2/5 · scientific_method
+- Identifying edible plants · 3/5 · survival_skills
+- Ignorantia juris non excusat · 2/5 · latin_phrases, legal_latin
+- iliotibial band syndrome · 3/5 · sports_injuries, running_words
+- Illuminated manuscript · 4/4 · monastery, alphabets_and_writing
+- Improvised explosive device · 4/4 · war_words, modern_weapons
+- In-flight entertainment · 4/5 · in_flight_words
+- In-flight entertainment system · 3/5 · things_with_screens
+- Inaccessible Island rail · 1/5 · flightless_birds
+- incandescent light bulb · 4/5 · lights_and_lamps, things_that_glow, inventions
+- incomplete metamorphosis · 3/5 · insect_life_cycle, life_cycle_words
+- Indian crested porcupine · 2/4 · middle_eastern_animals, indian_animals, spiny_animals
+- Indian giant flying squirrel · 2/5 · indian_animals
+- Indian miniature painting · 3/5 · asian_art_forms
+- Indian paradise flycatcher · 2/5 · indian_animals
+- Indian ringneck parakeet · 3/5 · indian_animals
+- Indigenous Australian art · 3/5 · pacific_art_words
+- Individual education plan · 3/4 · school
+- Individual Savings Account · 2/4 · banking_words
+- Indo-Pacific humpback dolphin · 2/5 · sea_mammals
+- inertial measurement unit · 2/4 · rocket_parts
+- Inertial navigation system · 2/4 · navigation_tools
+- Infantry fighting vehicle · 3/5 · army_words, military_vehicles
+- Inferential statistics · 3/5 · statistics_words
+- inflammatory bowel disease · 3/5 · illnesses
+- inflatable air mattress · 3/4 · beds
+- Inflatable aircraft escape slide · 2/4 · australian_inventions
+- Inflatable sleeping pad · 3/5 · campsite
+- Inflatable swimming ring · 3/4 · beach_gear
+- Information and Communication Technology · 3/5 · school_subjects
+- Information technology · 4/5 · school_subjects, computers
+- Initial Public Offering · 5/5 · stock_market_words
+- Inscribed angle theorem · 2/5 · circle_parts
+- Instant-read thermometer · 3/5 · kitchen_utensils
+- Instrument landing system · 3/5 · airport_words
+- Instrumentation engineering · 2/5 · engineering_fields
+- Integrated development environment · 3/4 · coding_words, software_words
+- Intelligent dance music · 3/5 · electronic_music_styles
+- intentional base on balls (deliberate walk) · 3/5 · baseball_terms
+- Interactive whiteboard · 3/4 · things_with_screens
+- Interconnecting family room · 3/4 · room_types
+- Intercontinental ballistic missile · 3/5 · cold_war, modern_weapons
+- Interdimensional travel · 3/4 · superpowers
+- interlocking concrete tile · 2/4 · roof_parts
+- intermediate filaments · 2/4 · cell_parts
+- Internal combustion engine · 4/5 · inventions, european_inventions, engines, cars
+- International departures · 3/4 · airport_words
+- International dialling code · 3/5 · phone_words
+- International driving permit · 4/5 · travel_documents
+- International reply coupon · 2/5 · mail_words, post_office
+- International rules football (hybrid of Gaelic football and Australian rules) · 2/5 · ball_sports
+- International Standard Book Number · 4/5 · publishing_words
+- International System of Units · 4/4 · measurement
+- Internet service provider · 3/4 · media_and_communication, internet_words, networking
+- Interrogative sentence · 3/3 · sentence_parts
+- interspecific competition · 3/4 · ecology_words
+- interventional cardiology · 2/5 · medical_specialties
+- interventional radiology · 2/5 · medical_specialties
+- intramuscular injection · 3/5 · forms_of_medicine
+- intraspecific competition · 2/4 · ecology_words
+- intravenous infusion pump · 3/5 · medical_equipment
+- Intrusion detection system · 2/5 · cybersecurity_words
+- Inverted exclamation mark · 3/4 · symbols
+- Investigative journalism · 4/5 · journalism_words
+- Involuntary Manslaughter · 3/5 · crimes
+- Irish traditional music · 3/4 · european_folk_music
+- irritable bowel syndrome · 4/5 · illnesses
+- Islamic geometric pattern · 3/5 · islamic_art_words, patterns
+- Islamic manuscript illumination · 2/5 · islamic_art_words
+- Isosceles right triangle · 2/4 · 2d_shapes, types_of_triangle
+- Italian meringue buttercream · 2/4 · cake_decorations
+- ivory-billed woodpecker · 3/3 · extinct_animals
+- Jamaican jerk seasoning · 3/4 · spicy_foods
+- Jamon iberico de bellota · 3/5 · cured_meats
+- jamón ibérico de bellota · 3/5 · spanish_food, salty_foods
+- Japanese bunching onion · 2/5 · onion_family
+- Japanese cherry blossom (spring blossom of Japan) · 3/5 · flowers_of_east_asia
+- Japanese cherry blossom · 4/4 · pink_things
+- Japanese emperor butterfly · 2/5 · japanese_animals
+- Japanese fire-bellied newt · 2/5 · salamanders_and_newts, japanese_animals
+- Japanese flower arranging · 4/5 · asian_art_forms
+- Japanese flowering cherry (ornamental cherry grown for spring blossom) · 3/4 · asian_trees
+- Japanese flying squirrel · 3/5 · japanese_animals
+- Japanese giant salamander · 3/5 · salamanders_and_newts, japanese_animals
+- Japanese green woodpecker · 2/5 · japanese_animals
+- Japanese pygmy woodpecker · 2/5 · japanese_animals
+- Japanese rhinoceros beetle · 3/5 · beetles, japanese_animals
+- Japanese role-playing game (RPG genre from Japan such as Final Fantasy) · 3/5 · video_game_genres
+- Japanese tea ceremony set · 3/4 · japanese_souvenirs
+- Japanese woodblock print · 4/5 · asian_art_forms, japanese_souvenirs
+- JavaScript Object Notation · 3/5 · file_types
+- Joint Photographic Experts Group · 2/5 · file_types
+- Just-in-time compilation · 2/4 · coding_words
+- kaleidoscope (butterflies) · 3/5 · collective_nouns
+- Kelvin-Helmholtz clouds · 3/4 · cloud_types
+- Kentucky straight bourbon · 3/5 · spirits
+- Keratin smoothing treatment · 2/4 · hair_salon
+- kerbside recycling collection · 3/5 · bins_and_recycling
+- Key Performance Indicator · 4/5 · business_words
+- Kilogram per cubic metre · 2/3 · metric_units
+- Kinetic energy recovery system · 3/5 · motor_racing
+- kneeling hip flexor stretch · 3/5 · stretches
+- Lactic acid fermentation · 2/4 · ways_to_preserve_food
+- Lahontan cutthroat trout · 2/5 · salmon_and_trout
+- Laminated veneer lumber (engineered lumber from bonded veneers) · 2/3 · types_of_wood
+- Lanzhou beef noodle soup · 3/5 · noodle_dishes
+- Large animal veterinarian · 2/5 · animal_experts
+- Latent heat of vaporization · 3/3 · temperature_words
+- lateral collateral ligament · 2/4 · joints
+- lateral geniculate nucleus · 1/5 · brain_parts
+- Lattice multiplication · 2/4 · math_operations
+- Learning resource centre · 2/4 · places_in_a_school
+- Least common denominator · 3/5 · fractions
+- Leather Chesterfield sofa · 3/5 · things_made_of_leather
+- Leather motorcycle jacket · 4/5 · things_made_of_leather
+- Lesser black-backed gull · 2/5 · seabirds, scavengers
+- Lesser spotted woodpecker · 2/5 · birds, british_wildlife, garden_birds
+- Lesser spotted woodpecker (small woodpecker of Eurasian woods) · 2/5 · woodland
+- Lesser white-fronted goose · 1/5 · geese_and_swans
+- Lesser yellow-headed vulture · 1/5 · vultures
+- letterbox draught excluder · 3/4 · parts_of_a_door
+- levator palpebrae superioris · 1/4 · eye_parts
+- Level crossing without barrier · 2/5 · road_signs
+- Liberté, égalité, fraternité · 4/3 · french_phrases_in_english
+- licensed practical nurse · 2/4 · hospital_words
+- Light commercial vehicle · 2/4 · truck_types
+- Light-dependent resistor · 3/5 · electronic_parts
+- Light-mantled albatross · 1/5 · seabirds
+- light-mantled sooty albatross · 2/4 · antarctic_animals
+- Lightweight backpacking tent · 3/5 · tent_types
+- lightweight double sculls (Olympic rowing event) · 2/4 · rowing_words
+- Lightweight rain jacket · 3/4 · hiking_gear
+- limescale and rust remover · 3/5 · cleaning_products
+- Limited liability company · 3/5 · business_words
+- Linnaean classification · 3/5 · classification_words
+- Liquefied natural gas carrier · 3/4 · working_boats
+- Liquefied petroleum gas · 4/5 · fossil_fuels, gases, energy_sources, fuels, gas_station
+- liquid laundry detergent · 4/5 · laundry_words
+- Liquid-fuel rocket engine · 2/5 · engines
+- live action role-playing (acting out fantasy roles in costume) · 3/4 · hobbies_and_crafts
+- Long Island cheese pumpkin · 2/5 · squashes
+- long-distance relationship · 4/5 · relationships
+- Los Angeles-class submarine · 2/5 · warships
+- Loving-kindness meditation · 3/4 · buddhism_words
+- low carbohydrate high fat · 3/5 · diet_types
+- low-density polyethylene · 3/5 · plastics
+- lower esophageal sphincter · 2/5 · digestive_system
+- Lowest common denominator · 3/5 · fractions
+- Lowland streaked tenrec · 2/5 · madagascar_animals
+- Lyric coloratura soprano · 2/5 · opera_words
+- lysergic acid diethylamide · 3/5 · illegal_drugs
+- Machine-readable passport · 3/4 · travel_documents
+- Madagascar giant day gecko · 2/5 · madagascar_animals
+- Madagascar hissing cockroach · 3/5 · insects_and_bugs, pets, madagascar_animals
+- Madame Berthe's mouse lemur · 2/5 · madagascar_animals
+- made-to-measure curtains · 3/4 · window_coverings
+- Magnetic levitation train · 4/5 · train_types
+- magnetic resonance imaging · 4/5 · medical_tests, hospital, magnet_words, inventions
+- Magnificent bird-of-paradise · 2/5 · colorful_birds
+- Magnificent frigatebird · 2/5 · seabirds, gliding_animals
+- magnificent sea anemone · 2/5 · tentacled_animals
+- major depressive disorder · 3/5 · mental_health_words
+- Major Mitchell's cockatoo · 2/5 · parrots, australian_birds, pink_animals, outback, pink_things
+- Malaysian orchid mantis · 3/5 · southeast_asian_animals
+- Malolactic fermentation · 3/5 · wine_words
+- Mandatory minimum sentence · 3/4 · punishments
+- Manufacturing engineering · 3/5 · engineering_fields
+- Marbled white butterfly · 2/5 · meadow
+- Marriage announcements · 2/4 · newspaper_words
+- marriage of convenience · 4/4 · relationships
+- Marshall Islands stick chart · 2/4 · navigation_tools
+- Mashed potatoes and gravy · 3/4 · diner
+- massively multiplayer online game (persistent online world with many players) · 4/4 · video_game_genres
+- Material recovery facility · 2/5 · recycling_words
+- Mathematical induction · 2/4 · math_terms
+- Matschie's tree kangaroo · 2/5 · rainforest_animals
+- maximal oxygen consumption · 3/5 · fitness
+- Maximum absorbency garment · 3/4 · astronaut_gear
+- Maximum minimum thermometer · 3/5 · weather_instruments, measuring_instruments
+- maximum operating depth (deepest safe depth for a gas mix) · 2/5 · scuba_words
+- Maximum Security Prison · 4/5 · prison_words
+- Measurement uncertainty · 2/3 · measurement
+- medial collateral ligament · 3/4 · joints
+- Mediterranean chameleon · 2/5 · lizards
+- Mediterranean flour moth · 2/5 · household_pests
+- Mediterranean fruit fly · 3/5 · insects_and_bugs, flies, garden_pests
+- Mediterranean monk seal · 2/5 · sea_life, sea_mammals, seals_and_sea_lions, turkish_animals, european_animals, endangered_animals
+- medium-chain triglycerides · 2/5 · nutrients
+- medium-density fibreboard · 3/5 · building_materials, man_made_materials
+- Medium-density fibreboard (engineered wood board made of wood fibres) · 3/4 · types_of_wood
+- Medium-density fibreboard (board made from wood fibres) · 3/5 · things_made_from_trees
+- Melanzane alla parmigiana · 2/3 · cheese_dishes, italian_food
+- Memorandum of Understanding · 4/5 · legal_documents
+- Memory foam travel pillow · 4/5 · travel_accessories
+- Mercury-in-glass thermometer · 3/5 · weather_instruments
+- Mergers and Acquisitions · 4/5 · business_words
+- Mesopotamian cuneiform · 2/5 · writing_systems
+- Mesoscale convective system · 2/4 · storms
+- metacarpophalangeal joint · 1/5 · joints, hands_and_feet
+- metatarsophalangeal joint · 1/4 · hands_and_feet
+- methylenedioxymethamphetamine · 3/5 · illegal_drugs
+- Metre per second squared · 2/3 · metric_units
+- Mexican black kingsnake · 1/5 · snakes
+- Mexican fence post cactus (tall columnar cactus used as living fences) · 2/5 · cacti_and_succulents
+- Mexican redknee tarantula · 3/5 · spiders, pets
+- Mexican vanilla extract · 4/4 · mexican_souvenirs
+- Mexican wedding cookies · 3/4 · cookies
+- Michelin-starred restaurant · 3/3 · restaurant_words
+- microfibre cleaning cloth · 3/5 · cleaning_items
+- Mid-century modern house · 3/5 · house_styles
+- Middle East respiratory syndrome · 3/5 · infections, viruses
+- Military science fiction · 3/5 · book_genres
+- Military-industrial complex · 3/3 · cold_war, military
+- Mindfulness meditation · 4/4 · buddhism_words
+- mineral wool insulation · 3/3 · attic, building_materials
+- Miniature American shepherd · 2/5 · herding_dogs
+- miniature circuit breaker · 3/5 · electrical_fittings, home_safety, electricity_words
+- minimally invasive surgery · 3/4 · operating_room
+- Minimum Security Prison · 3/5 · prison_words
+- Mirror signal manoeuvre · 3/4 · driving_words
+- missionaries and cannibals (classic river crossing puzzle) · 2/4 · logic_puzzles
+- Mississippi Delta blues · 3/5 · american_roots_music
+- Mississippi paddle steamer · 3/4 · boat_types
+- Mobile elevating work platform · 2/5 · construction_vehicles
+- Mobile intensive care unit · 2/5 · emergency_vehicles
+- Mobile launcher platform · 2/5 · launch_pad
+- Mobile network operator · 3/4 · phone_words
+- Modern foreign languages · 3/4 · school_subjects
+- Moisture-wicking base layer · 3/4 · hiking_gear
+- Molecular manipulation · 2/4 · superpowers
+- Mongolian horsehead fiddle · 2/5 · bowed_instruments
+- Mongolian throat singing · 3/4 · world_music_styles
+- monoamine oxidase inhibitor · 2/5 · medicines
+- Monochromatic color scheme · 2/5 · color_theory_words
+- Montepulciano d'Abruzzo · 3/5 · red_wines
+- Montmorency tart cherry · 3/5 · stone_fruits
+- Montreal-style smoked meat · 3/5 · canadian_food
+- Moroccan ceramic tagine · 4/5 · moroccan_souvenirs
+- Moroccan chicken pastilla · 3/5 · north_african_food
+- Moroccan chicken tagine · 3/3 · spicy_dishes_of_africa
+- Moroccan leather slippers · 4/4 · moroccan_souvenirs
+- mould and mildew remover · 3/4 · under_the_sink
+- mountain classification · 3/5 · cycling_words
+- Mountain yellow-legged frog · 1/5 · frogs_and_toads
+- Mountaintop removal mining · 3/5 · mining_words
+- mourning cloak butterfly · 3/4 · hibernating_animals
+- Mozambican peri-peri chicken · 2/4 · spicy_dishes_of_africa
+- Mozambique spitting cobra · 2/5 · venomous_snakes, african_animals
+- Mughal miniature painting · 3/5 · islamic_art_words
+- Multi-factor authentication · 3/5 · cybersecurity_words
+- multi-point locking system · 2/4 · parts_of_a_door
+- Multicolored Asian lady beetle · 2/5 · beetles
+- Multimedia messaging service · 2/5 · phone_features
+- multiplayer online battle arena (team genre such as League of Legends and Dota) · 3/5 · video_game_genres
+- Multiple choice question · 3/4 · exam_words
+- Munchausen syndrome by proxy · 3/3 · words_named_after_people
+- muscle protein synthesis · 2/4 · fitness
+- musculoskeletal system · 4/5 · body_systems
+- musical instrument shop · 3/4 · shops
+- Mutually assured destruction · 4/5 · cold_war, military, nuclear_words
+- Narrow-striped mongoose · 2/5 · madagascar_animals
+- nasal decongestant spray · 3/4 · cold_and_flu_remedies
+- National insurance contributions · 3/4 · tax_words
+- Native Hawaiian healing · 2/4 · oceanian_remedies
+- Natural language processing · 4/5 · ai_words
+- Near-field communication · 3/5 · phone_features
+- Neighborhood electric vehicle · 2/5 · electric_vehicles
+- neonatal intensive care unit · 3/5 · hospital_words, babies_and_birth, maternity_ward
+- Netherland dwarf rabbit · 3/5 · small_pets
+- Network address translation · 2/5 · networking
+- Network attached storage · 3/5 · computer_storage
+- Network operations center · 3/5 · data_center
+- network-attached storage · 3/3 · home_electronics
+- neutralization reaction · 3/5 · chemical_reactions
+- New England clam chowder · 4/5 · seafood_dishes, soups, north_american_food, foods_named_after_places, creamy_foods
+- New Zealand storm petrel · 2/4 · new_zealand_animals
+- newborn hearing screening · 2/4 · newborn_care
+- Newcomen atmospheric engine · 2/5 · engines
+- nicotine replacement therapy · 3/5 · smoking_words, pharmacy
+- Ninety-nine bottles of beer · 4/4 · road_trip_games
+- Nitrogen-fixing bacteria · 3/3 · soil_words
+- noise-cancelling headphones · 4/3 · home_office, gadgets, audio_gear, things_to_pack
+- noise-induced hearing loss · 3/5 · hearing_words
+- Nok terracotta sculpture · 3/5 · african_art_words
+- Non-commissioned officer · 4/5 · army_words
+- Non-Disclosure Agreement · 4/5 · legal_documents
+- Non-governmental organisation · 4/3 · charity_words
+- non-rapid eye movement sleep · 2/5 · sleep_words
+- non-scratch scouring pad · 2/5 · washing_up
+- Non-volatile memory express · 2/5 · computer_storage
+- nonsteroidal anti-inflammatory drug · 3/5 · medicines
+- Normal body temperature · 3/4 · temperature_words
+- Normal distribution curve · 3/4 · curves_and_spirals
+- North American porcupine · 2/5 · rodents, north_american_animals, spiny_animals, prickly_things
+- North American river otter · 2/5 · weasel_family, north_american_animals
+- North Atlantic right whale · 3/5 · whales_and_dolphins, sea_mammals, ocean_giants, endangered_animals
+- Northern bottlenose whale · 2/5 · sea_mammals
+- Northern carmine bee-eater · 2/5 · colorful_birds
+- Northern flying squirrel · 2/5 · rodents, north_american_animals, nocturnal_animals, gliding_animals, taiga, things_with_tails
+- Northern hairy-nosed wombat · 2/5 · marsupials, burrowing_animals
+- Northern house mosquito · 2/5 · biting_bugs
+- Northern Pacific sea star · 1/5 · sea_life
+- Northern praying mantis (style of kung fu) · 2/5 · chinese_martial_arts
+- Northern rockhopper penguin · 2/5 · flightless_birds, penguins
+- Northern Rocky Mountain wolf · 2/5 · wild_dogs_and_foxes
+- Northern royal albatross · 3/3 · new_zealand_animals
+- Northern white rhinoceros · 3/5 · hoofed_mammals, african_animals, savanna_animals, endangered_animals, things_with_horns
+- Northern white-cheeked gibbon · 2/5 · southeast_asian_animals
+- Northern white-faced owl · 1/5 · owls
+- Northumbrian smallpipes · 2/4 · celtic_instruments
+- nuchal translucency scan · 2/4 · pregnancy_words
+- Nuclear containment vessel · 2/5 · nuclear_power_plant
+- nuclear magnetic resonance · 3/3 · chemistry_words, science_lab
+- Nuclear-powered aircraft carrier · 3/5 · navy_words
+- Nuclear-powered submarine · 3/5 · submarine_words
+- Numerical weather prediction · 2/4 · forecast_words
+- Oaxacan alebrije figure · 3/4 · mexican_souvenirs
+- Object-oriented programming · 4/5 · coding_words
+- obsessive compulsive disorder · 5/5 · mental_health_words
+- obstetrics and gynecology · 3/5 · medical_specialties
+- occupational therapist · 3/4 · hospital_words, medical_jobs, hospital
+- Oil pressure warning light · 4/5 · dashboard_items
+- Olympic-size swimming pool (50-metre pool) · 4/4 · swimming_words
+- Olympic-sized swimming pool · 3/5 · swimming_pool
+- One hundred twenty-eighth note · 2/5 · notes_and_rests
+- Online public access catalogue · 2/4 · library
+- open-ended straight draw (a four-card run that can be completed at either end) · 3/4 · poker_terms
+- Open-faced turkey sandwich · 3/5 · diner
+- Open-top sightseeing bus · 3/5 · bus_types, sightseeing_words
+- Opportunistic omnivore · 2/4 · animal_diets
+- Opportunistic predator · 2/4 · animal_diets
+- Opportunistic scavenger · 2/4 · animal_diets
+- opposite-colored bishops (endgame where each side has a bishop on opposite colours) · 2/4 · chess_terms
+- Optical image stabilization · 2/5 · phone_features
+- oral and maxillofacial surgeon · 2/5 · dental_words
+- oral glucose tolerance test · 3/5 · medical_tests
+- oral rehydration solution · 3/4 · medicines, forms_of_medicine
+- orally disintegrating tablet · 2/5 · forms_of_medicine
+- Orange baboon tarantula · 2/5 · spiders
+- Organic light-emitting diode · 3/5 · display_tech
+- Oriental fire-bellied toad · 2/5 · frogs_and_toads
+- Original video animation · 3/5 · anime_and_manga_words
+- Orographic precipitation · 3/5 · water_cycle_words
+- Orthographic projection · 2/3 · drawing_techniques
+- oscillating spindle sander · 2/5 · power_tools
+- oscillating spindle sander (sander with a rotating, bobbing spindle) · 2/4 · woodworking_words
+- Outdoor fitness equipment · 3/4 · park
+- Outpatients department · 3/4 · hospital
+- over-the-counter medication · 3/5 · medicine, pharmacy, cold_and_flu_remedies
+- Overhead line equipment · 3/4 · railway_words
+- overhead triceps extension · 3/5 · exercises
+- Overland expedition vehicle · 3/4 · rvs_and_campers
+- Overnight sleeper train · 3/5 · train_types
+- oxidation-reduction reaction · 3/5 · chemical_reactions
+- Pacific giant salamander · 1/5 · salamanders_and_newts
+- Pacific purple sea urchin · 1/5 · sea_life
+- Pacific white-sided dolphin · 2/5 · whales_and_dolphins, sea_mammals
+- Pantropical spotted dolphin · 2/5 · whales_and_dolphins, spotted_animals
+- Paper towel chromatography · 2/5 · science_experiments_for_kids
+- paraskevidekatriaphobia · 2/5 · phobias, superstitions
+- Parasocial relationship · 2/4 · social_media_words
+- parasympathetic nervous system · 4/5 · body_systems
+- Parking enforcement officer · 3/5 · parking_words
+- parliamentary candidate · 3/4 · election_words
+- parliamentary democracy · 4/5 · types_of_government
+- parliamentary sovereignty · 3/4 · government_words
+- Passenger information display · 3/4 · on_a_bus
+- Passenger information system · 3/4 · station_words
+- Passenger service agent · 2/4 · flight_crew
+- Past perfect continuous · 3/5 · tenses
+- Patchwork leafcutter bee · 2/5 · bees_and_wasps
+- patellofemoral pain syndrome · 2/5 · sports_injuries
+- Peaceful demonstration · 3/5 · protest_words
+- Peak ground acceleration · 2/4 · earthquake_words
+- Pearl-bordered fritillary · 2/5 · butterflies_and_moths
+- Pedestrian crossing ahead · 3/5 · road_signs
+- Penicillium camemberti · 2/4 · cheesemaking_words
+- Penicillium roqueforti · 2/4 · cheesemaking_words
+- Penumbral lunar eclipse · 2/3 · moon_phases_and_moods
+- Perfect authentic cadence · 2/4 · music_terms
+- Perfect square trinomial · 2/5 · algebra_words
+- peripheral nervous system · 4/5 · body_systems
+- Perpendicular bisector · 3/5 · line_types, geometry
+- Persian miniature painting · 3/5 · islamic_art_words
+- Personal digital assistant · 3/4 · things_that_run_on_batteries, gadgets, handheld_gadgets, retro_tech
+- Personal protective equipment · 4/3 · work_clothes, fire_station, construction_site, lab_safety_gear, science_lab
+- Personal Social Health Education · 3/5 · school_subjects
+- Personal video recorder · 3/5 · tv_words
+- Petit basset griffon Vendeen · 2/5 · hounds
+- Petrol station forecourt · 3/4 · gas_station
+- pharmaceutical company · 3/3 · pharmacy
+- Pharmaceutical engineering · 2/5 · engineering_fields
+- Philanthropic foundation · 3/4 · charity_words
+- Philippine flying lemur · 2/5 · southeast_asian_animals
+- Philippine monkey-eating eagle · 2/5 · eagles
+- Phillips head screwdriver · 4/5 · tools
+- Photovoltaic solar panel · 3/5 · renewable_energy
+- Photovoltaic solar panels · 3/5 · energy_sources
+- Pineapple upside-down cake · 4/5 · cakes, desserts_and_sweets, north_american_food, sweet_foods
+- Placebo-controlled trial · 3/5 · scientific_method
+- Plain-bellied water snake · 1/5 · snakes
+- Planetary boundary layer · 2/4 · layers_of_the_atmosphere
+- Planned engineering works · 3/5 · commuting_words
+- plastic and reconstructive surgery · 3/5 · medical_specialties
+- Platinum wedding anniversary · 2/4 · wedding_anniversaries
+- player versus environment (playing against computer-controlled opponents) · 3/5 · gaming_words
+- Please fasten your seatbelt · 4/4 · in_flight_words
+- Plug-in hybrid electric vehicle · 3/4 · car_types
+- pneumatic impact wrench · 3/4 · garage
+- Pneumonoultramicroscopicsilicovolcanoconiosis · 3/4 · all_five_vowels
+- Polar stratospheric cloud · 2/5 · cloud_types
+- Polar stratospheric clouds · 2/4 · layers_of_the_atmosphere
+- Polaroid instant camera · 4/4 · retro_household_items
+- Polish Lowland sheepdog · 2/5 · herding_dogs
+- political action committee · 3/3 · election_words
+- polychlorinated biphenyl · 3/4 · chemical_compounds
+- Polychlorinated biphenyls · 2/3 · pollution_words
+- Polyethylene terephthalate · 3/4 · recycling_words, man_made_materials, plastics, materials_science
+- polymerase chain reaction · 4/4 · biology_words, genetics_words
+- Polymethyl methacrylate · 3/5 · man_made_materials, see_through_materials, plastics, materials_science
+- Polynesian outrigger canoe · 3/4 · polynesian_voyaging
+- Polytetrafluoroethylene · 3/5 · man_made_materials, slippery_things, plastics, materials_science
+- polytetrafluoroethylene tape · 2/4 · plumbing_words
+- Porcelain dinner service · 3/4 · crockery
+- pork and cabbage dumplings · 3/5 · dumplings
+- pork and chive dumplings · 3/5 · dumplings
+- portable air conditioner · 4/4 · appliances, things_you_plug_in
+- Portable beach umbrella · 3/4 · beach_gear
+- Portable Bluetooth speaker · 3/4 · music_players, things_that_run_on_batteries
+- Portable cassette player · 3/4 · things_that_run_on_batteries
+- Portable Document Format · 4/5 · file_types
+- Portable life support system · 2/5 · astronaut_gear
+- Portable Network Graphics · 3/5 · file_types
+- portable oxygen concentrator · 2/5 · medical_equipment
+- Portuguese custard tart · 4/4 · pastries
+- positron emission tomography · 3/5 · medical_tests
+- Post-apocalyptic fiction · 3/5 · book_genres
+- post-traumatic stress disorder · 5/5 · mental_health_words
+- posterior cingulate cortex · 1/5 · brain_parts
+- posterior cruciate ligament · 3/4 · joints
+- postpartum haemorrhage · 3/4 · childbirth_words
+- potentially hazardous asteroid · 3/5 · space_rocks
+- Pounds, shillings and pence · 3/3 · money_slang
+- Power systems engineering · 2/5 · engineering_fields
+- Pre-flight safety briefing · 3/4 · in_flight_words
+- Precision-guided munition · 2/5 · modern_weapons
+- predator-prey relationship · 3/5 · ecology_words
+- Prehensile-tailed skink · 2/5 · lizards
+- Premium unleaded petrol · 3/4 · gas_station
+- prescription medication · 4/5 · pharmacy, things_to_pack
+- Prescription sunglasses · 3/4 · things_to_pack
+- Present perfect continuous · 3/5 · tenses
+- Present perfect progressive · 2/5 · tenses
+- Preserved steam railway · 3/4 · train_types
+- presidential candidate · 4/4 · election_words
+- Presidential turkey pardon · 4/4 · thanksgiving
+- pressure reducing valve · 2/5 · plumbing_words
+- pressure-sensitive adhesive · 2/4 · adhesives, sticky_things
+- Pressure-sensitive tape · 2/5 · sticky_things
+- pressure-treated timber · 3/5 · building_materials
+- pressurized water reactor · 3/5 · nuclear_words, nuclear_power_plant
+- Prestressed concrete bridge · 2/4 · bridge_types
+- Prestressed concrete girder · 2/5 · bridge_parts
+- Prima ballerina assoluta · 3/5 · ballet_terms
+- Private mortgage insurance · 3/4 · real_estate_words
+- Probability distribution · 3/5 · statistics_words
+- Production coordinator · 3/5 · behind_the_camera
+- Production stage manager · 3/5 · theater_jobs
+- Professional association · 3/3 · groups_of_people
+- professional development · 3/3 · workplace_words
+- professional wrestling (scripted wrestling entertainment) · 5/3 · combat_sports
+- profiteroles au chocolat · 3/5 · french_food
+- Programmable logic controller · 3/4 · engineering
+- programmable thermostat · 3/4 · heating_and_cooling, smart_home
+- progressive muscle relaxation · 3/5 · bedtime_routine
+- proportional representation · 4/5 · election_words
+- proprioceptive neuromuscular facilitation · 2/4 · stretches
+- prorogation of parliament · 3/4 · parts_of_parliament
+- prostate specific antigen test · 3/5 · medical_tests
+- Provisional driving licence · 3/4 · driving_words
+- Psychological thriller · 4/5 · book_genres
+- Public key infrastructure · 2/5 · cybersecurity_words
+- Public service announcement · 4/3 · advertising_words
+- Public service broadcasting · 3/4 · tv_words, radio_words
+- Pudim de leite condensado · 3/4 · south_american_sweets
+- pulmonary function test · 3/5 · medical_tests
+- Pumped storage hydroelectricity · 2/5 · energy_sources
+- Pumped storage hydropower · 2/5 · renewable_energy
+- punctuated equilibrium · 3/5 · evolution_words
+- Purifying drinking water · 3/5 · survival_skills
+- Purple emperor butterfly · 2/4 · purple_things
+- Purple sprouting broccoli · 3/4 · cabbage_family, purple_things
+- Pyrocumulonimbus cloud (storm cloud generated by a large fire) · 2/5 · wildfire_words
+- Quadrupedal locomotion · 2/4 · animal_movements
+- quantum chromodynamics · 3/5 · particle_physics
+- quantum electrodynamics · 3/4 · particle_physics
+- Quartz crystal oscillator · 2/4 · clock_parts
+- Queen Alexandra's birdwing · 2/5 · butterflies_and_moths, rainforest
+- Queensland blue pumpkin · 2/5 · squashes
+- Rack and pinion steering · 3/4 · car_parts
+- Radio cassette recorder · 2/4 · music_players
+- Raggiana bird-of-paradise · 2/5 · colorful_birds, rainforest_animals, national_animals
+- Rail replacement service · 4/5 · commuting_words
+- Railroad section foreman · 2/4 · railroad_jobs
+- Rainforest understory layer · 2/5 · layers_of_a_rainforest
+- rainwater harvesting system · 3/3 · outside_the_house
+- random number generator (source of chance in games) · 3/3 · gaming_words
+- Random number generator · 4/3 · casino_words
+- randomized controlled trial · 3/5 · medicine, scientific_method
+- rapid eye movement sleep · 4/5 · sleep_words
+- Rapid intervention vehicle · 2/5 · emergency_vehicles
+- rate of perceived exertion · 2/5 · fitness, fitness_words
+- Rationalising the denominator · 2/3 · math_operations
+- rattan garden furniture · 3/4 · outside_the_house
+- reaction control system · 3/5 · rocket_parts
+- Reactor pressure vessel · 3/5 · nuclear_power_plant
+- Real estate investment trust · 3/3 · real_estate_words
+- reclining bound angle pose · 2/5 · yoga_poses
+- Reclining Buddha statue · 3/4 · asian_temple_features
+- recommended daily allowance · 3/5 · nutrition
+- Rectilinear locomotion · 2/4 · animal_movements
+- recurrent laryngeal nerve · 2/4 · inside_the_body
+- Red diamond rattlesnake · 1/5 · venomous_snakes
+- Red-tailed black cockatoo · 2/5 · parrots, australian_birds, things_with_tails
+- Red-tailed boa constrictor · 3/5 · pets
+- Reel-to-reel tape recorder · 3/5 · retro_household_items
+- Refuse collection vehicle · 2/5 · truck_types
+- Regenerative braking system · 3/3 · parts_of_a_train
+- Regional specialty food · 3/4 · souvenirs
+- Registered trademark symbol · 3/4 · symbols
+- Reinforced concrete bridge · 2/4 · bridge_types
+- Reinforced concrete deck · 2/5 · bridge_parts
+- Reinforcement learning · 3/5 · ai_words
+- Remembrance Day assembly · 3/4 · school_events
+- Remote control helicopter · 3/4 · things_that_run_on_batteries
+- Remotely operated vehicle · 3/3 · submarine_words
+- Remotely piloted aircraft · 3/4 · aircraft_types
+- renin-angiotensin system · 2/5 · body_systems
+- representative democracy · 4/5 · types_of_government
+- reproductive isolation · 3/4 · evolution_words
+- Research and Development · 4/5 · business_words
+- Reservation confirmation · 3/3 · hotel
+- Residents parking permit · 3/5 · parking_words
+- residual current device · 3/5 · electrical_fittings, home_safety, electricity_words, power_grid_words
+- resistance band training · 3/5 · workout_types
+- respiratory syncytial virus · 3/5 · childhood_illnesses, infections, viruses
+- Resurrection of the Dead · 3/5 · afterlife_words
+- retinal pigment epithelium · 2/5 · eye_parts
+- retractable loft ladder · 3/4 · attic
+- retractable tape measure · 3/5 · measuring_tools
+- Retrieval-augmented generation · 2/5 · ai_words
+- Retroactive continuity · 3/5 · comic_book_words
+- Return receipt requested · 2/5 · mail_words
+- reusable launch vehicle · 3/5 · spaceflight_words
+- reverse penhold backhand (penhold backhand using the reverse side) · 2/5 · table_tennis_terms
+- Richardson's ground squirrel · 2/5 · rodents
+- Richardsonian Romanesque · 2/5 · architecture_styles
+- Richter magnitude scale · 3/5 · earthquake_words
+- Rigid-hulled inflatable boat · 3/5 · boat_types
+- Rio Grande cutthroat trout · 2/5 · salmon_and_trout
+- Roasted chestnut seller · 3/4 · street_market
+- Roborovski dwarf hamster · 2/5 · small_pets
+- Rocket-propelled grenade · 4/5 · modern_weapons
+- Rocky Mountain bighorn sheep · 3/5 · wild_goats_and_sheep, north_american_animals, mountain_animals, animals_with_horns, mountains, things_with_horns
+- Rocky Mountain columbine (Colorado state flower) · 3/5 · alpine_flowers
+- Rocky Mountain wood tick · 2/5 · biting_bugs
+- Rotating service structure · 2/5 · launch_pad
+- rough endoplasmic reticulum · 3/5 · cell_parts
+- Round-the-world traveler · 3/4 · kinds_of_travelers
+- rubber washing-up gloves · 3/5 · washing_up
+- Ruby wedding anniversary · 3/4 · wedding_anniversaries
+- Ruby-throated hummingbird · 3/5 · birds, north_american_birds, migrating_animals, pollinators, garden_birds, things_that_fly
+- runner in scoring position (baserunner on second or third (RISP)) · 3/5 · baseball_terms
+- Rusty patched bumblebee · 2/5 · bees_and_wasps
+- Sacagawea golden dollar · 3/5 · us_coins
+- Saint Patrick's Day parade · 4/5 · st_patrick_s_day
+- Salmon-crested cockatoo · 1/5 · parrots
+- Same-side interior angles · 2/5 · angle_words
+- Satanic leaf-tailed gecko · 2/5 · lizards, madagascar_animals, camouflaged_animals, things_with_tails
+- Satellite navigation device · 3/4 · car_accessories
+- Satellite navigation system · 4/4 · dashboard_items
+- Saturday morning cartoon · 4/5 · cartoon_words
+- Scalable Vector Graphics · 2/5 · file_types
+- Scalloped hammerhead shark · 3/5 · sharks, endangered_animals, aquarium
+- Scaly-breasted lorikeet · 2/5 · australian_birds
+- scanning electron microscope · 3/4 · lab_equipment, optical_instruments, science_lab
+- Schmidt-Cassegrain telescope · 2/4 · optical_instruments
+- Schneider's dwarf caiman · 1/5 · crocodilians
+- scientific classification · 4/5 · classification_words
+- scissor-tailed flycatcher · 3/5 · north_american_birds, things_with_tails
+- Scottish country dancing · 3/5 · european_folk_dances
+- Scottish Country Dancing (traditional Scottish group dancing) · 3/3 · highland_games
+- Scottish Highland cattle · 3/5 · cattle_breeds, animals_with_horns, things_with_horns
+- Search engine optimization · 4/3 · advertising_words, internet_words
+- seasonal affective disorder · 4/4 · cold_weather_ailments, mental_health_words
+- seated hamstring stretch · 3/5 · stretches
+- second cousin once removed · 3/5 · extended_family
+- Secondary fermentation · 2/4 · wine_words
+- selective serotonin reuptake inhibitor · 3/4 · medicines
+- Self-addressed envelope · 3/5 · mail_words
+- Self-anchored suspension bridge · 2/4 · bridge_types
+- Self-balancing hoverboard · 3/5 · scooters_and_skates
+- Self-catering accommodation · 4/5 · accommodation
+- Self-catering apartment · 3/5 · accommodation
+- Self-catering holiday home · 3/4 · vacation_homes
+- Self-contained breathing apparatus · 3/5 · fire_station, lab_safety_gear
+- self-deprecating humour · 3/3 · comedy_words
+- self-drilling drywall screw · 2/5 · fixings
+- Self-guided walking tour · 3/4 · sightseeing_words
+- Self-inflating sleeping mat · 3/5 · camping_gear
+- Self-propelled howitzer · 2/5 · military_vehicles
+- Semi-automatic espresso machine · 2/4 · coffee_words
+- semi-presidential system · 3/4 · types_of_government
+- semiconductor fabrication plant · 3/4 · industrial_buildings
+- Senior citizen discount · 3/4 · ticket_words
+- sensorineural hearing loss · 3/5 · hearing_words
+- sensory deprivation tank · 2/4 · spa
+- sensory processing disorder · 2/3 · senses
+- Serial Advanced Technology Attachment · 2/5 · cables_and_connectors
+- Serviced accommodation · 3/5 · accommodation
+- seven vegetable couscous · 3/5 · north_african_food
+- severe acute respiratory syndrome · 4/5 · infections, viruses
+- Severe thunderstorm warning · 3/3 · storms
+- Seville orange marmalade · 3/5 · spreads, bitter_foods, orange_things
+- Seychelles giant tortoise · 2/5 · turtles_and_tortoises
+- Sharp-beaked ground finch · 1/5 · finches
+- Shipping container terminal · 3/4 · ports_and_harbors
+- Short track speed skating · 4/5 · olympic_sports
+- Short-finned pilot whale · 2/5 · whales_and_dolphins, sea_mammals
+- short-tailed chinchilla · 3/4 · andean_animals
+- short-tailed shearwater · 2/5 · migrating_animals
+- short-track speed skating (Olympic skating discipline) · 3/5 · winter_sports
+- Siberian flying squirrel · 2/5 · gliding_animals
+- Sic transit gloria mundi · 3/5 · latin_phrases
+- side-by-side refrigerator · 4/4 · appliances
+- Sierra Nevada bighorn sheep · 1/5 · wild_goats_and_sheep
+- Silver wedding anniversary · 3/4 · wedding_anniversaries, life_events
+- Silver-washed fritillary · 2/5 · butterflies_and_moths
+- Simple mail transfer protocol · 2/5 · networking
+- Simplified Chinese characters · 3/4 · writing_systems
+- Simultaneous equations · 3/5 · algebra_words
+- simultaneous exhibition (one master playing many boards at once) · 3/4 · chess_terms
+- single displacement reaction · 3/5 · chemical_reactions
+- Single malt Scotch whisky · 4/5 · spirits
+- single nucleotide polymorphism · 2/4 · genetics_words
+- Single pot still whiskey · 2/4 · spirits
+- single transferable vote · 3/5 · election_words
+- Single-handed circumnavigation · 3/3 · sailing_words
+- single-leg Romanian deadlift · 3/5 · exercises
+- Single-lens reflex camera · 3/5 · photography_words, optical_instruments
+- Ski-in ski-out accommodation · 3/5 · ski_trip
+- skill-based matchmaking (pairing players of similar ability) · 2/5 · gaming_words
+- Skittles rainbow experiment · 3/5 · science_experiments_for_kids
+- Slender-snouted crocodile · 1/5 · crocodilians
+- sliding compound miter saw (power saw that slides and tilts) · 3/3 · woodworking_words
+- sliding compound mitre saw · 3/5 · saws
+- Small animal veterinarian · 2/5 · animal_experts
+- small tortoiseshell butterfly · 4/4 · british_wildlife, meadow
+- Smoked salmon scrambled eggs · 3/4 · egg_dishes
+- smooth endoplasmic reticulum · 3/5 · cell_parts
+- Smooth hammerhead shark · 2/5 · sharks
+- snail secretion filtrate · 2/5 · korean_skincare
+- Snorkeling mask and snorkel · 3/4 · beach_gear
+- Social media influencer · 4/5 · social_media_words
+- sodium hydrogen carbonate · 2/4 · chemical_compounds
+- Soft-coated wheaten terrier · 3/5 · dog_breeds, terriers
+- Software development kit · 3/5 · software_words
+- solar-powered garden light · 3/4 · outside_the_house
+- Southern banded snake eagle · 1/5 · eagles
+- Southern blue-ringed octopus · 2/5 · cephalopods
+- Southern brown bandicoot · 2/5 · marsupials
+- Southern carmine bee-eater · 2/5 · african_birds
+- Southern crowned pigeon · 1/5 · pigeons_and_doves
+- Southern flying squirrel · 2/5 · rodents, small_pets, nocturnal_animals, gliding_animals
+- Southern ground hornbill · 2/5 · african_birds, savanna_animals, savanna
+- Southern hairy-nosed wombat · 2/5 · marsupials, australian_animals, burrowing_animals
+- Southern house mosquito · 2/5 · biting_bugs
+- Southern Pacific rattlesnake · 1/5 · venomous_snakes
+- Southern pig-tailed macaque · 2/5 · southeast_asian_animals
+- Southern rockhopper penguin · 2/5 · flightless_birds, penguins
+- Southern royal albatross · 3/3 · antarctic_animals, gliding_animals
+- southern three-banded armadillo · 2/4 · south_american_animals
+- Southern white rhinoceros · 3/5 · hoofed_mammals, african_animals, savanna_animals, savanna, things_with_horns
+- Southern white-faced owl · 1/5 · owls
+- Southern yellow-billed hornbill · 2/5 · african_birds
+- spaghetti alla carbonara · 3/5 · pasta_dishes, national_dishes
+- spaghetti alla puttanesca · 3/5 · pasta_dishes
+- spaghetti and meatballs · 5/5 · pasta_dishes, dishes, canned_foods
+- Spanish classical guitar · 3/5 · things_with_strings
+- Spanish Colonial Revival · 3/5 · architecture_styles, house_styles
+- Spanish dancer nudibranch · 2/4 · reef_life
+- Spanish potato omelette · 3/4 · egg_dishes
+- Spanish treasure galleon · 3/4 · sailing_ships
+- Special educational needs · 3/4 · school
+- speckled wood butterfly · 3/4 · woodland_animals
+- spinach and artichoke dip · 4/5 · dips
+- Spontaneous combustion · 4/4 · fire_words
+- Sport touring motorcycle · 3/5 · motorcycle_types
+- Spotted cucumber beetle · 2/5 · garden_bugs
+- Spotted dick and custard · 3/4 · puddings
+- Spotted wing drosophila · 2/4 · flies, garden_pests
+- Spring-loaded camming device · 3/5 · climbing_gear
+- squamous cell carcinoma · 3/4 · skin_words
+- Staffordshire bull terrier · 4/5 · dog_breeds, terriers, words_named_after_places
+- stainless steel cleaner · 3/5 · cleaning_products
+- Stainless steel cutlery · 3/4 · cutlery
+- Stainless steel saucepan · 3/4 · cookware
+- Stamped addressed envelope · 3/5 · mail_words
+- stand-up paddleboarding · 4/4 · beach
+- stand-up paddleboarding (paddling while standing on a board) · 3/5 · water_sports, board_and_paddle_sports
+- Standing Liberty quarter · 2/5 · us_coins
+- standing overhead press · 3/5 · exercises
+- Standing seam metal roof · 2/4 · roof_styles
+- starting primary school · 3/3 · life_events
+- stationary exercise bike · 4/5 · gym_equipment
+- Statistical significance · 3/5 · statistics_words, scientific_method
+- steak and kidney pudding · 4/5 · british_food
+- sterile saline solution · 3/3 · medicine_cabinet
+- Sterling silver cutlery · 3/4 · cutlery
+- Stoneground wholemeal flour · 2/4 · flours
+- Straight over the roundabout · 3/4 · giving_directions
+- straight-tusked elephant · 2/5 · animals_with_tusks
+- Stratified random sampling · 2/5 · statistics_words
+- straw-coloured fruit bat · 3/5 · migrating_animals
+- Strawberry poison dart frog · 2/5 · frogs_and_toads, red_things
+- Stream of consciousness · 4/5 · literature
+- Streptococcus pneumoniae · 2/5 · infections, microbes
+- Strong white bread flour · 3/5 · flours
+- structural insulated panel · 2/5 · building_materials
+- structural integration · 2/4 · massage_types
+- Structured Query Language · 4/5 · programming_languages
+- Student concession card · 3/4 · ticket_words
+- Stuffed jalapeño peppers · 3/5 · stuffed_foods
+- subarachnoid hemorrhage · 2/4 · injuries
+- subcutaneous injection · 3/5 · forms_of_medicine
+- submersible pressure gauge (tank pressure gauge (SPG)) · 2/5 · scuba_words
+- Subordinating conjunction · 3/5 · conjunctions
+- Subscriber identity module · 3/4 · phone_features
+- Subtractive color mixing · 2/5 · color_theory_words
+- Subtropical rainforest (rainforest of the subtropics) · 2/5 · forest_types
+- sudden infant death syndrome · 4/4 · childhood_illnesses, babies_and_birth, newborn_care
+- Sulphur-crested cockatoo · 4/5 · parrots, pets, australian_birds, outback, yellow_things, white_things
+- Summer reading challenge · 2/4 · library
+- sun protective clothing · 3/5 · sun_care
+- Sunset catamaran cruise · 3/4 · beach_vacation
+- supercalifragilisticexpialidocious (nonsense word from Mary Poppins meaning extraordinarily good) · 5/5 · silly_sounding_words
+- Supercalifragilisticexpialidocious · 5/4 · all_five_vowels
+- Supercell thunderstorm · 3/5 · storms
+- superconducting magnet · 3/5 · magnet_words
+- Superhuman intelligence · 3/5 · superpowers
+- Supermassive black hole · 4/5 · black_things
+- suprachiasmatic nucleus · 2/5 · brain_parts
+- surgical safety checklist · 2/5 · operating_room
+- Surprise birthday party · 4/5 · birthdays, kinds_of_party
+- Suspended prison sentence · 3/5 · punishments
+- Suspension of disbelief · 4/5 · literature
+- Sustainable aviation fuel · 3/5 · fuels
+- Sweetened condensed milk · 4/4 · types_of_milk, dairy_and_eggs, in_the_pantry, canned_foods, sweet_foods
+- Swiss meringue buttercream · 3/4 · cake_decorations
+- Swiss system tournament (pairing format where players meet others on similar scores) · 3/3 · chess_terms
+- sword-billed hummingbird · 3/5 · pollinators
+- Sydney funnel-web spider · 3/4 · insects_and_bugs, spiders, australian_animals, venomous_animals
+- sympathetic nervous system · 4/5 · body_systems
+- synchronized platform diving (two divers from the platform) · 3/5 · diving_terms
+- systemic lupus erythematosus · 3/5 · illnesses
+- tabletop role-playing game (pen-and-paper game such as Dungeons & Dragons) · 3/4 · hobbies_and_crafts
+- tactical role-playing game (grid-based turn tactics RPG genre) · 3/4 · video_game_genres
+- Taiwanese beef noodle soup · 3/5 · noodle_dishes
+- Tampering With Evidence · 3/5 · crimes
+- Tasmanian giant freshwater crayfish · 1/5 · crustaceans
+- Taxation without representation · 5/4 · tax_words
+- Teardrop camper trailer · 3/5 · rvs_and_campers
+- Teddy Roosevelt terrier · 2/5 · terriers
+- Television advertisement · 3/5 · advertising_words
+- Television broadcasting · 3/4 · media_and_communication
+- Television remote control · 4/4 · things_with_buttons
+- Temminck's ground pangolin · 2/5 · african_animals
+- Temperate coniferous forest (biome of cone-bearing evergreens in temperate zones) · 2/5 · forest_types
+- Temperate deciduous forest (biome of broadleaf trees that shed leaves) · 3/5 · forest_types
+- temporomandibular joint · 3/5 · joints, dental_words
+- temporomandibular joint disorder · 3/5 · dental_words
+- temporoparietal junction · 1/4 · brain_parts
+- Ten thousand thundering typhoons · 2/4 · interjections
+- ten-step skincare routine · 3/5 · korean_skincare
+- Tennessee Walking Horse · 3/5 · horse_breeds
+- Test-driven development · 3/5 · coding_words
+- theory of natural selection · 3/5 · evolution_words
+- thermal blackout curtains · 3/5 · window_coverings
+- thermal protection system · 3/4 · rocket_parts
+- Thermodynamic temperature · 2/4 · temperature_words
+- thermostatic mixing valve · 3/5 · plumbing_words
+- thermostatic radiator valve · 3/4 · heating_and_cooling
+- thin-layer chromatography · 2/4 · chemistry_words
+- Third-person omniscient · 3/5 · literature
+- Thirteen-lined ground squirrel · 2/5 · rodents, hibernating_animals, burrowing_animals, prairie
+- Thompson seedless grape · 2/4 · fruits
+- Thompson seedless raisin · 2/5 · dried_fruits
+- Thousand Island dressing · 4/5 · salad_dressings
+- Three Marks of Existence · 2/5 · buddhism_words
+- three-cushion billiards (carom billiards discipline) · 3/5 · cue_sports_terms
+- three-meter springboard (Olympic diving event) · 3/5 · diving_terms
+- Three-point perspective · 3/5 · drawing_techniques
+- Three-season backpacking tent · 3/5 · tent_types
+- three-spined stickleback · 3/5 · spiny_animals
+- Three-striped palm squirrel · 2/5 · indian_animals
+- thyroid stimulating hormone · 3/5 · hormones
+- Tibetan thangka painting · 3/5 · asian_art_forms
+- Ticonderoga-class cruiser · 2/5 · warships
+- Tipping bucket rain gauge · 2/5 · weather_instruments
+- Tire pressure monitoring system · 3/4 · dashboard_items
+- tongue-and-groove pliers · 3/5 · tools
+- Tonkin snub-nosed monkey · 2/5 · southeast_asian_animals
+- top-loading washing machine · 4/4 · cleaning_appliances
+- torn and restored newspaper (classic effect where a ripped paper is made whole) · 2/5 · magic_tricks
+- total internal reflection · 3/5 · light_words
+- Tourist information center · 3/3 · road_trip_words
+- Tourist information centre · 4/4 · sightseeing_words
+- Tourist visa application · 3/4 · travel_documents
+- Track maintenance worker · 3/4 · railroad_jobs
+- traditional African medicine · 3/5 · african_remedies
+- Traditional Chinese characters · 3/4 · writing_systems
+- Traditional Japanese inn · 3/5 · traditional_lodgings
+- Traditional Maori medicine · 3/5 · oceanian_remedies
+- traditional Moroccan hammam · 2/5 · middle_eastern_grooming
+- Traditional Native American medicine · 3/5 · native_american_remedies
+- Traditional rock climbing · 3/5 · outdoor_activities
+- traditional Thai massage · 3/5 · massage_types
+- Traffic collision avoidance system · 2/4 · plane_parts
+- Trail difficulty rating · 3/4 · trail_words
+- Transatlantic crossing · 4/4 · journeys, cruise_words
+- Transatlantic telegraph cable · 3/4 · old_ways_to_communicate
+- Transcontinental journey · 3/5 · journeys
+- transcutaneous electrical nerve stimulation · 2/4 · childbirth_words
+- transesophageal echocardiogram · 2/5 · medical_tests
+- Transient luminous event · 2/4 · sky_phenomena
+- Transmission control protocol · 2/5 · networking
+- transmission electron microscope · 3/4 · lab_equipment, optical_instruments, science_lab
+- Treeing Walker coonhound · 2/5 · hounds
+- Trendelenburg position · 2/4 · body_positions
+- Trinidad Moruga Scorpion · 3/5 · chili_peppers, spicy_foods
+- Trinidadian and Tobagonian · 2/4 · nationalities
+- triple-triple combination (two triple jumps in a row) · 3/5 · figure_skating_moves
+- Tropical fruit smoothie · 3/3 · beach_vacation
+- Tropical rainforest canopy · 3/5 · layers_of_a_rainforest
+- TSA-approved luggage lock · 4/5 · travel_accessories
+- Turkey and cheese sandwich · 3/4 · lunchbox
+- Turkish copper coffee pot · 3/4 · turkish_souvenirs
+- Turkish miniature painting · 2/5 · turkish_arts
+- Turkish shadow puppetry · 3/5 · turkish_arts
+- Turn around when possible · 3/4 · giving_directions
+- turquoise-browed motmot · 2/4 · national_animals
+- Two-factor authentication · 3/5 · cybersecurity_words
+- Ukrainian embroidered shirt · 3/4 · national_costumes
+- Ultimate tensile strength · 3/5 · material_properties
+- ultraviolet protection factor · 2/5 · sun_care
+- umbilical cord clamping · 3/4 · childbirth_words
+- Unbleached all-purpose flour · 2/4 · flours
+- Unconditional surrender · 3/4 · war_words
+- uncontested possession (disposal gained without a physical contest) · 3/4 · aussie_rules_terms
+- Underground parking garage · 4/5 · parking_words
+- understood the assignment (did exactly what was needed, and did it well) · 3/4 · gen_z_slang
+- unexplained weight loss · 3/5 · symptoms
+- Unified atomic mass unit · 2/4 · weight_units
+- Uniform resource locator · 3/4 · internet_words
+- unincorporated community · 3/4 · kinds_of_settlements
+- uninterruptible power supply · 3/3 · home_electronics, electricity_words, data_center, power_grid_words
+- Unique selling proposition · 3/5 · advertising_words
+- Unit production manager · 2/5 · behind_the_camera
+- United States customary units · 3/4 · measurement
+- Universal recycling symbol · 3/5 · symbols
+- Universal travel adapter · 4/5 · things_to_pack
+- Unlimited beverage package · 3/4 · cruise_words
+- unloading the dishwasher · 4/5 · chores
+- Unmanned aerial vehicle · 4/4 · military, aircraft_types
+- Unshielded twisted pair · 2/5 · cables_and_connectors
+- Unsolicited manuscript · 3/5 · publishing_words
+- unsportsmanlike conduct (personal foul penalty) · 3/3 · american_football_terms
+- Unsweetened almond milk · 3/4 · types_of_milk
+- Unsweetened baking chocolate · 3/3 · bitter_foods
+- Unsweetened cocoa powder · 3/4 · baking_ingredients, in_the_pantry
+- upper respiratory infection · 4/4 · cold_weather_ailments
+- urinary tract infection · 4/5 · infections
+- Vacation rental by owner · 3/4 · vacation_homes
+- vaginal birth after caesarean · 2/5 · childbirth_words
+- Vegetable-tanned leather · 2/3 · things_made_of_leather
+- Velvet belly lanternshark · 1/5 · sharks
+- Venetian glass chandelier · 3/4 · things_made_of_glass
+- ventromedial prefrontal cortex · 1/5 · brain_parts
+- Vernaccia di San Gimignano · 2/5 · white_wines
+- Vertical axis wind turbine · 2/5 · renewable_energy
+- Vertical sliding sash window · 2/4 · window_styles
+- Vertical takeoff and landing · 3/5 · aircraft_types
+- Vertically opposite angles · 3/5 · angle_words
+- Very large crude carrier · 3/4 · working_boats
+- vestibulocochlear nerve · 2/5 · ear_parts
+- Victoria crowned pigeon · 2/5 · pigeons_and_doves, blue_things
+- Victorian terraced house · 3/5 · house_styles
+- Video cassette recorder · 4/5 · tv_words, home_electronics, retro_tech
+- Vietnamese giant centipede · 2/5 · southeast_asian_animals
+- Vietnamese pot-bellied pig · 3/5 · pets
+- Vino Nobile di Montepulciano · 2/5 · red_wines
+- Virtual local area network · 2/5 · networking
+- Virtual private network · 4/5 · networking
+- virtual reality headset · 4/3 · home_electronics, things_with_screens, gadgets, wearable_tech
+- virtual reality headset (head-worn display for VR) · 4/5 · gaming_hardware
+- visceral leishmaniasis · 2/5 · tropical_diseases
+- Visual effects supervisor · 3/5 · behind_the_camera
+- Voice over Internet Protocol · 3/4 · phone_features
+- Voice-activated assistant · 3/5 · smart_home
+- Volatile organic compounds · 2/4 · pollution_words
+- Volkswagen Transporter camper · 3/5 · rvs_and_campers
+- Voluntary organisation · 3/3 · groups_of_people
+- Walking Liberty half dollar · 2/5 · us_coins
+- wall-mounted television · 3/3 · living_room
+- wallpaper pasting table · 3/5 · painting_and_decorating
+- Washington navel orange · 3/5 · citrus_fruits
+- wastewater treatment plant · 2/4 · industrial_buildings
+- Water purification tablets · 3/4 · hiking_gear
+- Waterproof document pouch · 2/4 · emergency_supplies
+- Waterproof groundsheet · 3/4 · tent_parts
+- Waterproof hiking boots · 4/5 · hiking_gear
+- waterproof mattress protector · 3/4 · bedroom
+- Waterproof passport holder · 3/4 · travel_accessories
+- Waterproof tent footprint · 3/4 · camping_gear
+- Watertight compartment · 3/4 · ship_parts
+- Weapons of mass destruction · 4/3 · war_words, military
+- Wearable fitness tracker · 3/5 · wearable_tech
+- West African dwarf crocodile · 1/5 · crocodilians
+- West Highland white terrier · 4/5 · dog_breeds, terriers, words_named_after_places, white_things
+- Western Australian Christmas tree (Nuytsia, a parasitic tree with orange summer flowers) · 2/4 · australian_trees
+- western black rhinoceros · 4/5 · extinct_animals
+- Western diamondback rattlesnake · 3/5 · venomous_snakes, north_american_animals, desert_animals, venomous_animals, desert
+- Western European hedgehog · 2/4 · mammals
+- Western long-beaked echidna · 1/4 · mammals
+- Western lowland gorilla · 3/5 · primates, african_animals, rainforest_animals, endangered_animals, zoo
+- Western tiger swallowtail · 2/5 · butterflies_and_moths
+- Westslope cutthroat trout · 2/5 · salmon_and_trout
+- Wheelchair accessible ramp · 3/4 · on_a_bus
+- Wheelchair accessible room · 3/4 · room_types
+- White sprouting broccoli · 2/4 · cabbage_family
+- White Swiss shepherd dog · 2/5 · herding_dogs
+- White-breasted nuthatch · 2/5 · birds, north_american_birds, garden_birds
+- White-faced whistling duck · 1/5 · ducks
+- White-spectacled bulbul · 2/5 · middle_eastern_animals
+- White-throated magpie-jay · 1/5 · crows_and_ravens
+- white-throated needletail · 2/5 · fast_animals, fast_things
+- White-winged vampire bat · 1/5 · bats
+- Whitstable native oyster · 2/5 · shellfish
+- whole food plant-based diet · 3/5 · diet_types
+- wholegrain crackers and cheese · 2/4 · healthy_snacks
+- Wildfire evacuation order (official order to leave an area) · 2/5 · wildfire_words
+- Wildland-urban interface (zone where homes meet wildland vegetation) · 3/5 · wildfire_words
+- Wildlife conservation area · 3/4 · safari_words
+- Wildlife rehabilitator · 2/4 · animal_experts
+- Wilson's bird-of-paradise · 2/5 · colorful_birds
+- Windscreen wiper blades · 3/3 · car_accessories
+- Winter white dwarf hamster · 2/5 · small_pets
+- Wirehaired pointing griffon · 2/5 · sporting_dogs
+- Wireless security camera · 3/5 · smart_home
+- wisdom tooth extraction · 4/4 · dentist_s_office
+- Wolff-Parkinson-White syndrome · 2/3 · words_named_after_people
+- Woolly bear caterpillar · 3/5 · insects_and_bugs
+- wrought iron garden gate · 3/4 · outside_the_house
+- Yangtze finless porpoise · 2/5 · asian_animals, endangered_animals
+- Yellow crookneck squash · 2/5 · squashes
+- Yellow Labrador retriever · 3/4 · yellow_things
+- Yellow-banded poison dart frog · 2/5 · frogs_and_toads
+- Yellow-bellied sapsucker · 2/5 · birds, north_american_birds, yellow_things
+- yellow-bellied sea snake · 3/5 · venomous_animals
+- Yellow-billed spoonbill · 2/4 · australian_birds
+- Yellow-crowned night heron · 2/5 · wading_birds
+- Yellow-footed rock-wallaby · 2/5 · marsupials, australian_animals, hopping_animals
+- Yellow-headed blackbird · 2/5 · yellow_things
+- Yellow-tailed black cockatoo · 2/5 · parrots, australian_birds, yellow_things
+- Yellow-tailed woolly monkey · 1/5 · monkeys
+- Yellowstone cutthroat trout · 2/5 · salmon_and_trout
+- young rider classification · 3/5 · cycling_words
+- zebra swallowtail butterfly · 2/5 · striped_animals
+
