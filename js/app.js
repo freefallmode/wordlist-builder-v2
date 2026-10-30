@@ -266,13 +266,14 @@ function entryTable(t) {
   const inList = new Set(list.map(e => e.id));
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
   const key = { text: e => e.text.toLowerCase(), rec: e => e.rec || 9, pos: e => e.pos, intheme: e => effRec(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey }[A.sort] || (e => e.text.toLowerCase());
-  roots.sort((a, b) => key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0);
+  const dir = A.sortDesc ? -1 : 1;
+  roots.sort((a, b) => dir * (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
   let rows = [];
   for (const e of roots) { rows.push(e); for (const a of list.filter(x => x.aliasOf === e.id)) rows.push(a); }
   const total = rows.length;
   if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
   const where = e => linkIds(P, e).filter(id => subIds.has(id)).map(id => `${P.ix.theme.get(id)?.name} ${effRec(P, e, id) || ''}`.trim()).join(', ');
-  const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: 'Click to sort by ' + label, onclick: () => { A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? ' ▲' : ' ⇅'));
+  const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: A.sort === k ? 'Click to reverse the order' : 'Click to sort by ' + label, onclick: () => { A.sortDesc = A.sort === k ? !A.sortDesc : false; A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? (A.sortDesc ? ' ▼' : ' ▲') : ' ⇅'));
   const flagsOf = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
