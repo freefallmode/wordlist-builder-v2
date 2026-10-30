@@ -292,7 +292,7 @@ function entryTable(t) {
     h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
-        h('td.word', { onclick: () => editEntry(e) }, e.aliasOf ? h('span.arrow', '↳ ') : '', e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), e.aliasKind && h('span.hint', ` ${e.aliasKind}`)),
+        h('td.word', { onclick: () => editEntry(e) }, e.aliasOf && inList.has(e.aliasOf) ? h('span.arrow', '↳ ') : '', e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), e.aliasKind && h('span.hint', ` ${e.aliasKind}${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''}`)),
         h('td.dim', e.pos.slice(0, 3)), h('td.dim', e.type), h('td', {}, recSel(e.rec, ev => { e.rec = +ev.target.value; A.changed(); })),
         sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), effRec(P, e, t.id) !== (e.th[t.id] || 0) && h('span.hint', { title: 'The difficulty that counts: the harder of the rating and the popularity' }, ' counts ' + effRec(P, e, t.id))),
         h('td', flagsOf(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·')))) :
