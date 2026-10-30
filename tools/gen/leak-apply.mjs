@@ -12,8 +12,9 @@ import fs from 'node:fs';
 import { parseProject, serializeProject, stampSave } from '../../js/store.js';
 import { reindex, linkIds, addEntry, deleteEntry, sameText } from '../../js/model.js';
 import { nameLeak, themeNameWords } from '../../js/validate.js';
-const args = process.argv.slice(2), ki = args.indexOf('--keep-drops'), KEEP = ki >= 0;   // --keep-drops: apply only the replacements; D lines, leaking aliases and replacements that merge into an entry already in the theme are left as they are
+const args = process.argv.slice(2), ki = args.indexOf('--keep-drops'), mi = args.indexOf('--merges'), MERGES = mi >= 0, KEEP = ki >= 0 || MERGES;   // --merges: like --keep-drops, but applies only the replacements that merge into an entry already in the theme   // --keep-drops: apply only the replacements; D lines, leaking aliases and replacements that merge into an entry already in the theme are left as they are
 if (ki >= 0) args.splice(ki, 1);
+if (mi >= 0) args.splice(args.indexOf('--merges'), 1);
 const li = args.indexOf('--lib');
 const LIB = li >= 0 ? args.splice(li, 2)[1] : new URL('../../data/wordlist-en.project.json', import.meta.url);
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
@@ -75,7 +76,7 @@ for (const f of args) {
           reindex(P); stat.made++;
         }
       }
-      if (KEEP && target !== e && target.th[tid] !== undefined) continue;
+      if (KEEP && target !== e && (target.th[tid] !== undefined) !== MERGES) continue;
       if (target === e) { problems.push(`${f}: ${e.id} cannot replace itself`); continue; }
       if (target.th[tid] === undefined) target.th[tid] = e.th[tid] || 3;
       handled.add(e.id); drop(e, tid, target); stat.S++;
