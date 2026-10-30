@@ -142,8 +142,8 @@ const THEME_FILTERS = [
   ['region', 'Region-specific themes', (P, t, ef) => ef.region.length > 0],
   ['pop0', 'Popularity not rated', (P, t) => !t.group && !t.pop],
   ...[1, 2, 3, 4, 5].map(n => ['pop' + n, `Popularity ${n}`, (P, t) => !t.group && t.pop === n]),
-  ['diff0', 'Difficulty not known (no rated words)', (P, t) => !t.group && !themeProfile(P, t.id).reach],
-  ...[1, 2, 3, 4, 5].map(n => ['diff' + n, `Difficulty ${n}`, (P, t) => !t.group && themeProfile(P, t.id).median === n]),
+  ['diff0', 'Difficulty: too few words to fill a set', (P, t) => !t.group && !themeProfile(P, t.id).lo],
+  ...[1, 2, 3, 4, 5].map(n => ['diff' + n, `Can serve difficulty ${n}`, (P, t) => { if (t.group) return false; const p = themeProfile(P, t.id); return p.lo > 0 && p.lo <= n && n <= p.hi; }]),   // the theme can fill a set at this level: its 4th easiest and 4th hardest words straddle it
 ];
 function filterVisible() {
   const f = THEME_FILTERS.find(x => x[0] === A.tflag)?.[2];
