@@ -1,5 +1,6 @@
 // Lists one chunk of themes whose entries contain a word of the theme's name (see nameLeak in js/validate.js).
 // Run: node tools/gen/leak-make.mjs            number of chunks
+//      add --kept to list instead the entries kept by name (nameOkIn) for a stricter second look: node tools/gen/leak-make.mjs --kept [<n>]
 //      node tools/gen/leak-make.mjs <n>        chunk n (1-based): per theme its path, flags, note, a sample of the other words, and every leaking entry with a suggested shorter form
 // Chunks are filled in theme tree order up to about SIZE leaking entries each (a theme is never split); themes already in tools/gen/leak/done.json or marked nameOk are skipped.
 import fs from 'node:fs';
@@ -8,14 +9,15 @@ import { reindex, sameText } from '../../js/model.js';
 import { nameLeak, themeNameWords } from '../../js/validate.js';
 const P = parseProject(fs.readFileSync(new URL('../../data/wordlist-en.project.json', import.meta.url), 'utf8'));
 reindex(P);
-const SIZE = 330;
-const doneFile = new URL('./leak/done.json', import.meta.url);
+const ki = process.argv.indexOf('--kept'), KEPT = ki >= 0; if (KEPT) process.argv.splice(ki, 1);   // KEPT: the roots whose full text was kept by name
+const SIZE = KEPT ? 200 : 330;
+const doneFile = new URL('./leak/' + (KEPT ? 'kept-done.json' : 'done.json'), import.meta.url);
 const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFile, 'utf8')) : []);
 const tree = []; const walk = id => { for (const t of P.ix.kids.get(id) || []) { tree.push(t); walk(t.id); } }; walk('');
 const todo = [];
 for (const t of tree) {
   if (t.group || t.nameOk || done.has(t.id)) continue;
-  const ws = themeNameWords(t), ents = P.ix.byTheme.get(t.id) || [], leaks = ents.filter(e => nameLeak(t, e, ws));
+  const ws = themeNameWords(t), ents = P.ix.byTheme.get(t.id) || [], leaks = KEPT ? ents.filter(e => !e.aliasOf && (e.nameOkIn || []).includes(t.id) && nameLeak(t, { text: e.text }, ws)) : ents.filter(e => nameLeak(t, e, ws));
   if (leaks.length) todo.push({ t, ws, ents, leaks });
 }
 const chunks = []; let cur = [], n0 = 0;

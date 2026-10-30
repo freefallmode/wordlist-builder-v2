@@ -14,11 +14,12 @@ import { reindex, linkIds, addEntry, deleteEntry, sameText } from '../../js/mode
 import { nameLeak, themeNameWords } from '../../js/validate.js';
 const args = process.argv.slice(2), ki = args.indexOf('--keep-drops'), mi = args.indexOf('--merges'), MERGES = mi >= 0, KEEP = ki >= 0 || MERGES;   // --merges: like --keep-drops, but applies only the replacements that merge into an entry already in the theme   // --keep-drops: apply only the replacements; D lines, leaking aliases and replacements that merge into an entry already in the theme are left as they are
 if (ki >= 0) args.splice(ki, 1);
+const ei = args.indexOf('--kept'), KEPT = ei >= 0; if (KEPT) args.splice(ei, 1);   // --kept: second look at the entries kept by name (leak-make.mjs --kept); a K line is a decision to keep, D lines are refused
 if (mi >= 0) args.splice(args.indexOf('--merges'), 1);
 const li = args.indexOf('--lib');
 const LIB = li >= 0 ? args.splice(li, 2)[1] : new URL('../../data/wordlist-en.project.json', import.meta.url);
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
-const doneFile = li >= 0 ? LIB + '.done.json' : new URL('./leak/done.json', import.meta.url);
+const doneFile = li >= 0 ? LIB + (KEPT ? '.kept-done.json' : '.done.json') : new URL('./leak/' + (KEPT ? 'kept-done.json' : 'done.json'), import.meta.url);
 const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFile, 'utf8')) : []);
 const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, ok: 0, open: 0, kept: 0, K: 0 };
 
@@ -33,7 +34,7 @@ for (const f of args) {
   };
   const drop = (e, tid, target) => {   // take e out of theme tid; delete it when it has no links left
     if (e.aliasOf) { deleteEntry(P, e); stat.deleted++; return; }
-    delete e.th[tid];
+    delete e.th[tid]; if (e.nameOkIn) e.nameOkIn = e.nameOkIn.filter(x => x !== tid);
     for (const a of P.entries) if (a.aliasOf === e.id) delete a.th[tid];
     if (Object.keys(e.th).length === 0) {
       for (const a of P.entries.filter(x => x.aliasOf === e.id)) { if (target && target !== a) a.aliasOf = target.id; else deleteEntry(P, a); }
@@ -48,8 +49,8 @@ for (const f of args) {
       close(); tid = m[1]; handled = new Set(); need = new Set();
       const t = P.ix.theme.get(tid); if (!t || t.group) { problems.push(`${f}: no playable theme ${tid}`); tid = null; continue; }
       if (m[2]) { t.nameOk = true; stat.ok++; done.add(tid); tid = null; continue; }
-      const ws = themeNameWords(t); need = new Set((P.ix.byTheme.get(tid) || []).filter(e => nameLeak(t, e, ws)).map(e => e.id));
-    } else if (tid && (m = /^K (\d+)$/.exec(s))) {   // keep: the full text is the real name; exempt this entry in this theme
+      const ws = themeNameWords(t); need = new Set((P.ix.byTheme.get(tid) || []).filter(e => KEPT ? !e.aliasOf && (e.nameOkIn || []).includes(tid) && nameLeak(t, { text: e.text }, ws) : nameLeak(t, e, ws)).map(e => e.id));
+    } else if (tid && (m = /^K (\d+)(?: # .*)?$/.exec(s))) {   // keep: the full text is the real name; exempt this entry in this theme
       const e = P.ix.entry.get(+m[1]);
       if (!e || !linkIds(P, e).includes(tid)) { problems.push(`${f}: entry ${m[1]} is not in ${tid}`); continue; }
       if (!(e.nameOkIn || []).includes(tid)) e.nameOkIn = [...(e.nameOkIn || []), tid];
@@ -57,7 +58,7 @@ for (const f of args) {
     } else if (tid && (m = /^D (\d+)$/.exec(s))) {
       const e = P.ix.entry.get(+m[1]);
       if (!e || !linkIds(P, e).includes(tid)) { if (!handled.has(+m[1])) problems.push(`${f}: entry ${m[1]} is not in ${tid}`); continue; }
-      if (KEEP) continue;
+      if (KEEP || KEPT) { if (KEPT) problems.push(f + ': D is not allowed in a --kept review (' + m[1] + ')'); continue; }
       handled.add(e.id); drop(e, tid, null); stat.D++;
     } else if (tid && (m = /^S (\d+) (?:= (\d+)|\| ([^|]+) \| ([^|]*) \| ([1-5]))$/.exec(s))) {
       const e = P.ix.entry.get(+m[1]), t = P.ix.theme.get(tid);
