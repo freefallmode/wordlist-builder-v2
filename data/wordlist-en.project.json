@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":198,"modified":"2026-10-30 22:40"},"nextId":64823,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":199,"modified":"2026-10-30 22:40"},"nextId":64824,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1},
@@ -3185,8 +3185,8 @@
 {"id":583,"text":"hundreds and thousands","type":"phrase","rec":4,"region":["UK"],"aliasOf":582,"aliasKind":"synonym","th":{"toppings":3,"ice_cream_parlor":4,"cake_decorations":3,"breads_and_baking":5,"baking_ingredients":5},"status":"gen"},
 {"id":584,"text":"baking powder","rec":2,"th":{"breads_and_baking":2,"baking_ingredients":1,"in_the_pantry":2},"status":"gen","nameOkIn":["breads_and_baking","baking_ingredients"]},
 {"id":585,"text":"baking soda","rec":2,"th":{"in_the_pantry":2,"cleaning_products":3,"acids_and_bases":4,"household_chemicals":2,"science_fair":2},"status":"gen"},
-{"id":586,"text":"bicarbonate of soda","type":"phrase","rec":3,"region":["UK"],"aliasOf":585,"aliasKind":"synonym","th":{"cleaning_products":3,"in_the_pantry":3,"acids_and_bases":5,"household_chemicals":3,"science_fair":3,"baking_ingredients":1},"status":"gen"},
-{"id":587,"text":"bicarb","rec":4,"region":["UK"],"aliasOf":585,"aliasKind":"synonym","th":{"cleaning_products":4,"in_the_pantry":4,"acids_and_bases":5,"household_chemicals":4,"science_fair":4,"breads_and_baking":2},"status":"gen"},
+{"id":586,"text":"bicarbonate of soda","type":"phrase","rec":3,"region":["UK"],"aliasOf":585,"aliasKind":"synonym","th":{"cleaning_products":3,"in_the_pantry":3,"acids_and_bases":5,"household_chemicals":3,"science_fair":3},"status":"gen"},
+{"id":587,"text":"bicarb","rec":4,"region":["UK"],"aliasOf":585,"aliasKind":"synonym","th":{"cleaning_products":4,"in_the_pantry":4,"acids_and_bases":5,"household_chemicals":4,"science_fair":4},"status":"gen"},
 {"id":588,"text":"focaccia","rec":3,"th":{"breads_and_baking":3,"breads":2,"flatbreads":4,"italian_food":3,"bakery":3},"status":"gen"},
 {"id":589,"text":"ciabatta","rec":3,"th":{"breads_and_baking":3,"breads":2,"italian_food":3,"bakery":3,"chewy_foods":4},"status":"gen"},
 {"id":590,"text":"brioche","rec":3,"th":{"breads_and_baking":3,"breads":3,"french_pastries":3,"french_food":2,"bakery":3},"status":"gen"},
@@ -3465,7 +3465,7 @@
 {"id":864,"text":"smoothie","rec":1,"th":{"drinks":1,"healthy_snacks":3},"status":"gen"},
 {"id":865,"text":"cola","rec":1,"th":{"drinks":1,"soft_drinks":1,"soda_flavors":1,"fizzy_drinks":1},"status":"gen"},
 {"id":866,"text":"iced tea","rec":1,"th":{"drinks":1,"teas":1},"status":"gen","nameOkIn":["teas"]},
-{"id":867,"text":"soda","rec":1,"th":{"drinks":1,"movie_theater":2},"status":"gen"},
+{"id":867,"text":"soda","gloss":"fizzy drink","rec":1,"th":{"drinks":1,"movie_theater":2},"status":"gen"},
 {"id":868,"text":"pop","gloss":"soft drink","rec":2,"region":["US","CA"],"aliasOf":867,"aliasKind":"synonym","th":{"movie_theater":3,"drinks":2},"status":"gen"},
 {"id":869,"text":"fizzy drink","rec":2,"region":["UK"],"aliasOf":867,"aliasKind":"synonym","th":{"movie_theater":4,"drinks":2},"status":"gen","nameOkIn":["drinks"]},
 {"id":870,"text":"soft drink","rec":2,"aliasOf":867,"aliasKind":"synonym","th":{"movie_theater":3,"drinks":2},"status":"gen","nameOkIn":["drinks"]},
@@ -65397,5 +65397,6 @@
 {"id":64819,"text":"Hillbilly","rec":3,"th":{"american_roots_music":3},"status":"gen"},
 {"id":64820,"text":"Pointed","rec":3,"region":["UK"],"th":{"cabbage_family":3},"status":"gen"},
 {"id":64821,"text":"Glass","gloss":"transparent","rec":3,"th":{"noodles":2},"status":"gen"},
-{"id":64822,"text":"Thai","gloss":"small hot","rec":4,"th":{"chili_peppers":3},"status":"gen"}
+{"id":64822,"text":"Thai","gloss":"small hot","rec":4,"th":{"chili_peppers":3},"status":"gen"},
+{"id":64823,"text":"soda","gloss":"leavener","rec":2,"aliasOf":585,"aliasKind":"synonym","th":{"breads_and_baking":2,"baking_ingredients":1},"status":"gen"}
 ]}
