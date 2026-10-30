@@ -144,10 +144,12 @@ const THEME_FILTERS = [
   ['diff', 'Difficulty…'],
 ];
 // The "Popularity…" and "Difficulty…" choices open a second select for the level.
+let profMemo = null;   // while counting, each theme's profile is worked out once
+const prof = (P, t) => profMemo ? (profMemo.get(t.id) || profMemo.set(t.id, themeProfile(P, t.id)).get(t.id)) : themeProfile(P, t.id);
 const LEVEL_FILTERS = {
   pop: [['0', 'not rated', (P, t) => !t.pop], ...[1, 2, 3, 4, 5].map(n => [String(n), String(n) + (n === 1 ? ' (most popular)' : n === 5 ? ' (least popular)' : ''), (P, t) => t.pop === n])],
-  diff: [['0', 'too few words to fill a set', (P, t) => !themeProfile(P, t.id).lo],   // can serve a level: the 4th easiest and 4th hardest words straddle it
-    ...[1, 2, 3, 4, 5].map(n => [String(n), 'can serve ' + n + (n === 1 ? ' (easiest)' : n === 5 ? ' (hardest)' : ''), (P, t) => { const p = themeProfile(P, t.id); return p.lo > 0 && p.lo <= n && n <= p.hi; }])],
+  diff: [["0", "too few words to fill a set", (P, t) => !prof(P, t).lo],   // can serve a level: the 4th easiest and 4th hardest words straddle it
+    ...[1, 2, 3, 4, 5].map(n => [String(n), 'can serve ' + n + (n === 1 ? ' (easiest)' : n === 5 ? ' (hardest)' : ''), (P, t) => { const p = prof(P, t); return p.lo > 0 && p.lo <= n && n <= p.hi; }])],
 };
 function filterVisible() {
   const lv = LEVEL_FILTERS[A.tflag]?.find(x => x[0] === A.tlevel)?.[2];
@@ -376,16 +378,23 @@ async function boot() {
   $('#btn-expand').onclick = () => { A.open = new Set(A.P.themes.filter(t => (A.P.ix.kids.get(t.id) || []).length).map(t => t.id)); renderTree(); };
   $('#btn-collapse').onclick = () => { A.open.clear(); renderTree(); };
   const tf = $('#tflag');
-  tf.append(...THEME_FILTERS.map(([v, l]) => h('option', { value: v }, l)));
+  tf.append(...THEME_FILTERS.map(([v, l]) => h('option', { value: v, 'data-label': l }, l)));
   const tl = $('#tlevel');
+  // How many themes each choice matches, shown after its name; worked out when a list is opened or filled, so the numbers follow edits.
+  const countThemes = f => { const P = A.P; let n = 0; for (const t of P.themes) if (f(P, t, eff(P, t.id))) n++; return n; };
+  const label = (o, f) => { o.textContent = `${o.dataset.label}${f ? ' (' + countThemes(f).toLocaleString() + ')' : ''}`; };
+  const countMain = () => { for (const o of tf.options) { const row = THEME_FILTERS.find(x => x[0] === o.value); label(o, row[0] === '' ? () => true : row[2]); } };
+  const countLevels = () => { const lv = LEVEL_FILTERS[tf.value]; if (!lv) return; profMemo = new Map(); try { lv.forEach(([, , f], i) => label(tl.options[i], (P, t, ef) => !t.group && f(P, t, ef))); } finally { profMemo = null; } };
+  tf.addEventListener('mousedown', countMain); tl.addEventListener('mousedown', countLevels);
   tl.onchange = () => { A.tlevel = tl.value; renderTree(); };
   tf.onchange = () => {
     A.tflag = tf.value;
     const lv = LEVEL_FILTERS[A.tflag];
     tl.hidden = !lv;
-    if (lv) { tl.replaceChildren(...lv.map(([v, l]) => h('option', { value: v }, l))); tl.value = A.tlevel = lv[1][0]; }
-    renderTree();
+    if (lv) { tl.replaceChildren(...lv.map(([v, l]) => h('option', { value: v, 'data-label': l }, l))); tl.value = A.tlevel = lv[1][0]; countLevels(); }
+    countMain(); renderTree();
   };
+  countMain();
   $('#btn-home').onclick = () => { A.sel = null; A.view = null; render(); };
   $('#filemenu .mpop').append(
     menuItem('Save project file', () => {
