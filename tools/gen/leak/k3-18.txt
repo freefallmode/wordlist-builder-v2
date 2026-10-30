@@ -1,0 +1,232 @@
+T game_pieces
+K 45540 # nothing left
+T mahjong_words
+K 5733 # nothing left
+T video_games
+S 5845 = 45669
+K 5832 # fixed phrase, over means nothing
+S 5843 | indie | small studio | 2
+K 5825 # nothing left
+T video_game_genres
+S 45627 | idle | incremental | 3
+S 45630 | party | casual multiplayer | 2
+S 45621 | rhythm | beat-matching | 2
+T gaming_hardware
+K 45686 # chair alone is furniture
+T arcade_words
+K 45691 # nothing left
+T pinball_words
+K 58897 # song title, Wizard not it
+T game_controls
+K 45734 # nobody says motion alone
+T esports_words
+K 45751 # nothing left
+T power_ups_and_pickups
+K 45809 # nothing left
+K 45791 # fixed name, pellet is ordinary
+K 45808 # nothing left
+T collecting_hobbies
+K 45894 # bare butterfly is the insect
+K 5864 # numismatics only an alias
+K 45896 # bare shell is not the hobby
+K 5862 # philately only an alias
+T model_making
+S 45905 = 12018
+S 45900 | kit | assembly set | 2
+K 2907 # nobody says railway alone
+S 45904 | plastic kit | - | 3
+T puzzles
+K 45945 # only a number is left
+S 45952 | burr | interlocking wood | 5
+K 45955 # bare picture is not a puzzle
+K 45942 # bare box is a container
+K 45939 # nobody says slide alone
+T logic_puzzles
+K 45938 # bare grid means something else
+K 58921 # nothing left
+K 58930 # nobody says sliding alone
+S 58926 | Einstein's riddle | - | 4
+T magic_tricks
+K 13724 # nobody says card alone
+S 45975 | close-up | table-side performance | 3
+K 45961 # nobody says coin alone
+S 13620 = 6991
+K 45964 # nobody says rope alone
+S 45974 | stage | theater performance | 3
+T paper_crafts
+K 45996 # nobody says handmade alone
+K 61831 # bare mulberry is a fruit
+K 45985 # bare chain is not a craft
+S 45980 | kirigami | - | 3
+K 45991 # bare doll is a toy
+K 45992 # bare fan is something else
+K 45990 # bare flower is a plant
+K 45982 # nobody says folding alone
+K 23498 # bare lantern is not paper
+K 45999 # bare mosaic is tiles
+K 39575 # bare plane is an aircraft
+K 45984 # bare snowflake is weather
+K 61828 # fixed name
+K 45997 # nobody says weaving alone
+S 25207 = 25548
+T pottery_words
+K 5853 # nothing left
+T toys_and_play
+K 5988 # nobody says clockwork alone
+K 5946 # brand name
+K 5948 # bare car is a real car
+S 5949 | tin soldier | - | 3
+K 5989 # nobody says wind-up alone
+T toys
+K 46066 # nobody says pull alone
+K 5948 # bare car is a real car
+S 5949 | tin soldier | - | 3
+K 46058 # bare train is a real train
+K 5989 # nobody says wind-up alone
+T dolls_and_figures
+K 5947 # nobody says action alone
+K 46177 # bare baby is a person
+S 61842 | BJD | - | 5
+K 45991 # bare paper is a material
+K 46167 # bare porcelain is a material
+K 5993 # bare rag is a cloth
+K 46173 # bare troll is a monster
+K 22425 # nobody says voodoo alone
+K 48836 # bare worry is a feeling
+T african_soccer_clubs
+K 46302 # fixed club name
+K 46298 # fixed club name
+T capoeira_words
+K 5438 # nothing left
+S 46507 | Angola | traditional style | 5
+S 46508 | Regional | Bimba style | 5
+T highland_games
+K 46524 # nobody says dancing alone
+K 11800 # fixed dance name
+T british_pub_games
+S 46547 = 4488
+T guitar_types
+S 51351 | baritone | low-tuned | 4
+S 51368 | cigar box | homemade | 4
+S 51338 | classical | nylon-string | 2
+S 51342 | flamenco | Andalusian style | 3
+S 51359 | fretless | - | 4
+K 51365 # bare gypsy jazz is a genre
+K 51367 # bare harp is another instrument
+K 51357 # bare Hawaiian is a nationality
+S 51348 | hollow-body | - | 4
+S 51364 | jumbo | large-bodied | 4
+S 51361 | parlor | small-bodied | 4
+S 51345 | resonator | - | 4
+S 51349 | semi-acoustic | - | 4
+S 51358 | seven-string | - | 4
+S 51344 | slide | bottleneck style | 3
+S 51341 | steel-string | - | 3
+S 51360 | travel | compact | 3
+S 51339 | twelve-string | - | 3
+T bowed_instruments
+K 51379 # plain psaltery is plucked
+T drums
+S 10599 | bass | kick | 2
+K 51390 # nobody says frame alone
+S 51393 | darbuka | - | 4
+K 51400 # nobody says kettle alone
+K 51394 # nobody says slit alone
+K 10608 # steelpan only an alias
+K 35290 # nobody says talking alone
+K 51397 # bare tenor is a voice
+T keyboard_instruments
+K 10627 # nothing left
+T african_instruments
+K 61853 # bare drum is generic
+T chinese_instruments
+S 51460 = 10596
+K 61855 # pipa already in theme
+K 61854 # guzheng already in theme
+T japanese_instruments
+K 61856 # taiko already in theme
+K 61857 # koto already in theme
+T andean_instruments
+K 61860 # quena already in theme
+T electronic_instruments
+K 10685 # bare drums is acoustic
+S 10704 = 10627
+T piano_parts
+S 51613 = 339
+T music_genres
+S 10764 | rock | band style | 1
+T rock_styles
+S 51629 | alternative | - | 2
+S 51651 | arena | stadium-filling | 3
+S 51641 | art | avant-garde | 3
+S 51631 = 10767
+S 51626 | classic | vintage hits | 2
+S 51652 = 10768
+S 51630 = 10776
+S 51636 | garage | raw band sound | 3
+S 10810 = 24519
+S 51624 | hard | heavy | 2
+S 10802 | math | odd-meter | 5
+S 51649 | noise | abrasive | 4
+K 51648 # fixed hyphenated name
+S 51634 | psychedelic | - | 3
+K 51623 # one fixed name
+S 51627 | soft | mellow | 2
+S 51637 | southern | - | 3
+S 59414 | space | cosmic jam | 4
+S 51642 | stoner | - | 4
+S 51638 | surf | beach guitar | 3
+S 51643 | yacht | smooth soft-pop | 3
+T jazz_words
+S 10869 | cool | relaxed 1950s style | 3
+S 10872 | free | improvised avant-garde | 4
+K 10883 # standard already in theme
+S 10886 | modal | - | 5
+S 10873 | trad | jazz style | 4
+T african_music_styles
+K 61861 # nobody says drumming alone
+K 61862 # bare jazz is generic
+S 51702 | palm-wine | - | 5
+T asian_music_styles
+S 51781 | anison | - | 5
+S 51757 | filmi | - | 5
+T latin_music_styles
+K 51805 # bare jazz is generic
+K 51807 # bare pop is generic
+K 51792 # bare trap is a device
+T american_roots_music
+K 51838 # banjo is an instrument
+S 51809 | Cajun | Louisiana French style | 3
+K 51832 # zydeco already in theme
+S 51821 | old-time | - | 3
+K 51830 # nobody says mountain alone
+T european_folk_music
+K 51858 # bare bagpipe is the instrument
+S 51842 = 6250
+S 51857 | Celtic | Gaelic style | 2
+S 51856 | Irish | ballad tradition | 2
+S 51855 | Nordic | - | 3
+S 51847 | Romani | Roma style | 4
+K 51850 # fixed hyphenated name
+T song_types
+S 10955 | birthday | happy-birthday tune | 1
+S 10953 | campfire | sing-along | 2
+S 10936 | drinking | - | 3
+S 10933 = 10776
+S 10928 | love | romantic tune | 1
+S 10954 | marching | - | 3
+S 10934 = 10765
+S 10935 | protest | - | 2
+K 10931 # theme alone is not a song
+K 10943 # bare torch is a flame
+K 10949 # bare work is a job
+T voice_types
+S 11024 | chest | low register | 3
+S 11025 | head | high register | 3
+T orchestra_words
+K 11052 # nobody says chamber alone
+S 11051 | symphony | city ensemble | 2
+T tempo_words
+K 11092 # fixed phrase
+K 11098 # nobody says giusto alone
+K 11110 # nobody says primo alone

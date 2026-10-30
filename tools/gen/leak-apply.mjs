@@ -21,7 +21,7 @@ const LIB = li >= 0 ? args.splice(li, 2)[1] : new URL('../../data/wordlist-en.pr
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const doneFile = li >= 0 ? LIB + (KEPT ? '.kept-done.json' : '.done.json') : new URL('./leak/' + (KEPT ? 'kept-done.json' : 'done.json'), import.meta.url);
 const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFile, 'utf8')) : []);
-const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, ok: 0, open: 0, kept: 0, K: 0 };
+const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, aliased: 0, ok: 0, open: 0, kept: 0, K: 0 };
 
 for (const f of args) {
   let tid = null, need = new Set(), handled = new Set();
@@ -38,7 +38,10 @@ for (const f of args) {
     for (const a of P.entries) if (a.aliasOf === e.id) delete a.th[tid];
     if (Object.keys(e.th).length === 0) {
       for (const a of P.entries.filter(x => x.aliasOf === e.id)) { if (target && target !== a) a.aliasOf = target.id; else deleteEntry(P, a); }
-      deleteEntry(P, e); stat.deleted++;
+      if (KEPT && target) {   // --kept: the full name stays as an alias of the bare word (form when it only adds words to it, else synonym), exempt from the theme-name check here
+        const tk = new Set(target.text.toLowerCase().split(/\W+/).filter(Boolean)), ek = new Set(e.text.toLowerCase().split(/\W+/).filter(Boolean));
+        e.aliasOf = target.id; e.aliasKind = [...tk].every(w => ek.has(w)) ? 'form' : 'synonym'; e.nameOkIn = [...(e.nameOkIn || []), tid]; stat.aliased++;
+      } else { deleteEntry(P, e); stat.deleted++; }
     }
     reindex(P);
   };
@@ -91,4 +94,4 @@ if (problems.length > 40) console.log('... and', problems.length - 40, 'more pro
 reindex(P); stampSave(P);
 fs.writeFileSync(LIB, serializeProject(P));
 if (!KEEP) fs.writeFileSync(doneFile, JSON.stringify([...done].sort()));
-console.log(`${stat.themes} themes (${stat.ok} marked nameOk), ${stat.S} replaced, ${stat.D} dropped, ${stat.made} entries made, ${stat.deleted} deleted, ${stat.open} still open, ${stat.kept} left as they were, ${stat.K} kept by name -> library v${P.lib.version}; ${done.size} themes done`);
+console.log(`${stat.themes} themes (${stat.ok} marked nameOk), ${stat.S} replaced, ${stat.D} dropped, ${stat.made} entries made, ${stat.deleted} deleted, ${stat.aliased} kept as aliases, ${stat.open} still open, ${stat.kept} left as they were, ${stat.K} kept by name -> library v${P.lib.version}; ${done.size} themes done`);

@@ -1,0 +1,232 @@
+T south_american_flowers
+K 56519 # nobody says slipper for it
+T alpine_flowers
+S 56523 = 1735
+S 56537 = 30591
+S 56532 = 1726
+S 56526 = 1701
+K 56521 # alpine rose is not a rose
+T yellow_flowers
+S 56541 = 1712
+S 56539 = 1693
+T red_flowers
+S 56551 | cardinal | flower | 4
+S 32099 = 1776
+T white_flowers
+S 56555 = 1776
+S 56554 = 1693
+T sweet_smelling_flowers
+K 1721 # nobody says pea for it
+S 30513 = 1702
+T plants
+S 1800 | pitcher | carnivorous plant | 3
+K 1823 # sensitive alone is a trait
+T water_plants
+K 17376 # nobody says chestnut for it
+S 60191 | crowfoot | - | 5
+S 30609 = 1766
+S 30603 = 1713
+K 30604 # nobody says lettuce for it
+K 60195 # nobody says soldier for it
+T grasses_and_reeds
+S 30641 | bermuda | lawn type | 3
+S 60209 | buffalo | prairie type | 3
+S 60206 | canary | birdseed type | 4
+S 30646 | couch | weed type | 3
+S 30649 | elephant | tall type | 4
+S 30647 | fountain | ornamental type | 4
+K 60207 # nobody says lyme for it
+K 60204 # quaking is not a noun
+K 1784 # name word is whole identity
+T christmas_plants
+K 30557 # fixed name; cactus too generic
+S 30688 | hellebore | - | 3
+S 25007 = 27965
+T desert_plants
+K 30701 # nobody says century for it
+K 30702 # willow is a different tree
+T seeds_and_pips
+S 30710 = 87
+S 30711 = 90
+S 17390 = 30677
+S 17394 = 720
+K 30707 # name word is whole identity
+S 17387 = 1701
+K 17411 # name word is whole identity
+K 17436 # nobody says coat for it
+S 17384 = 1696
+T garden
+S 1861 = 7019
+S 1866 = 2049
+T garden_tools
+S 30726 = 1844
+T garden_features
+S 1861 = 7019
+K 30734 # herb alone is not a feature
+K 60241 # water alone is not a feature
+T garden_furniture
+S 30743 = 339
+T garden_styles
+S 30791 = 28721
+S 30790 = 1926
+S 60272 = 6566
+S 30788 | container | pots | 3
+S 30769 = 116
+S 30783 = 6564
+S 60277 = 37994
+S 30774 = 38008
+S 60273 = 28392
+S 30773 = 24512
+S 30780 = 38002
+S 30785 = 2053
+S 30734 | herb | - | 2
+S 30779 = 38004
+S 30775 = 38010
+S 30772 | knot | hedge pattern | 3
+S 30794 = 6292
+S 60275 | Mediterranean | planting style | 3
+S 30792 = 7110
+S 60268 = 22864
+S 60269 | Persian | planting style | 4
+K 60271 # nobody says physic for it
+S 30778 = 1920
+S 60279 = 1965
+S 1866 = 2049
+S 30789 = 23245
+S 60276 = 3329
+K 60270 # stroll alone means a walk
+S 30782 | sunken | - | 3
+S 30795 = 32028
+S 60278 | Victorian | planting style | 3
+S 30771 | walled | - | 3
+S 30776 = 861
+S 30777 = 48740
+S 30784 | woodland | - | 3
+S 30770 = 29449
+T famous_gardens
+K 30808 # fixed name
+T japanese_garden
+S 30829 = 1767
+S 1866 = 2049
+S 30830 = 2063
+K 30831 # nobody says tea for it
+S 30770 = 29449
+T river_features
+K 60298 # braided is only an adjective
+S 30882 = 16854
+T desert_features
+K 30891 # nobody says pavement for it
+S 30898 | wash | dry streambed | 3
+T ice_features
+K 30919 # bridge alone is not frozen
+K 30900 # nobody says cap for it
+S 30910 = 1913
+K 30916 # fall alone means season
+S 30901 = 28525
+K 30905 # nobody says shelf for it
+S 30904 | pack | drifting floes | 4
+K 30909 # sea alone is the ocean
+T cave_features
+K 60315 # nobody says bacon for it
+S 30942 = 28289
+S 30943 = 28799
+K 30945 # formation alone too generic
+S 30933 | mouth | opening | 2
+S 30944 | passage | tunnel | 2
+K 30928 # nobody says pearl for it
+S 30946 | wall | rock face | 2
+S 30938 = 2055
+S 30934 = 2058
+K 30940 # sea alone is the ocean
+T island_types
+S 30993 | barrier | - | 3
+K 31016 # barrier reef is another thing
+S 30998 | continental | - | 4
+S 30992 | coral | reef-built | 3
+K 21269 # nobody says desert for it
+S 31008 | floating | - | 3
+K 31012 # nobody says hotspot for it
+K 31010 # fixed name island arc
+K 31001 # nobody says chain alone
+S 31007 | man-made | - | 3
+K 31011 # not a natural shortening
+S 30999 | oceanic | - | 4
+K 31003 # reef alone is a reef
+K 31000 # river alone is a river
+K 31015 # sand alone is sediment
+S 30997 = 49751
+S 31013 = 32028
+S 30991 | volcanic | - | 3
+T rock_pool
+S 31050 = 31041
+K 31047 # tide alone is not a pool
+T tides_and_currents
+K 31149 # nobody says cross for it
+K 31128 # name word is whole identity
+S 31146 | falling | - | 3
+S 31120 | flood | incoming | 3
+S 31115 | high | sea level | 1
+S 31130 | king | extreme high | 4
+K 60333 # Labrador alone is a region
+S 31116 | low | sea level | 1
+K 31140 # ocean alone is the sea
+S 31122 | rip | - | 3
+S 31145 | rising | - | 3
+K 31150 # sea alone is the ocean
+S 31117 | spring | high range | 3
+K 31144 # name word is whole identity
+K 31141 # table alone is furniture
+T shipwreck_coast_words
+K 31157 # name word is whole identity
+T wave_words
+S 60339 | capillary | tiny ripple | 5
+S 31191 | plunging | - | 4
+S 31181 | rogue | freak sea | 3
+K 60341 # nobody says sneaker for it
+S 31192 | spilling | - | 4
+K 40756 # standing alone is not a wave
+K 31125 # fixed name tidal wave
+K 31200 # nobody says train for it
+T rain_words
+K 31219 # heavy alone is an adjective
+K 31220 # light alone is an adjective
+K 1965 # name word is whole identity
+T wind_words
+K 31244 # prevailing alone is an adjective
+K 31239 # trade alone means commerce
+K 1969 # name word is whole identity
+S 31245 | shear | changing speed | 4
+T storms
+S 31257 = 23180
+S 31258 = 39079
+K 1971 # name word is whole identity
+S 31176 = 31198
+S 31262 = 32028
+T cloud_types
+S 31270 | anvil | thunderstorm top | 4
+S 31288 | banner | mountain plume | 5
+K 31287 # nobody says bank for it
+S 31286 = 39119
+S 31279 = 1965
+S 31276 | roll | tubular | 5
+K 31275 # nobody says shelf for it
+S 31278 = 1971
+S 31277 | wall | rotating base | 5
+T snow_and_ice
+K 2016 # fixed name black ice
+K 60357 # nobody says corn for it
+K 30900 # nobody says cap for it
+K 31298 # crystal alone is a mineral
+K 60358 # fog alone is not frozen
+K 31302 # pellet alone is ammunition
+S 30901 = 28525
+K 30905 # nobody says shelf for it
+S 31258 = 1971
+S 30904 | pack | drifting floes | 4
+S 31303 | pancake | round floes | 4
+K 30909 # sea alone is the ocean
+K 31300 # shower alone is rain
+T weather_instruments
+K 31307 # balloon alone is a party item
+S 31308 = 21035
+K 31316 # station alone too vague

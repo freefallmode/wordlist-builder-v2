@@ -1,0 +1,228 @@
+T notes_and_rests
+K 11175 # bar alone is not a rest
+S 11164 | dotted half | - | 4
+K 11163 # dotted alone names nothing
+S 11150 | eighth | music | 2
+K 11161 # bare form means the note
+S 11166 | grace | music | 3
+S 11146 | half | music | 2
+K 11159 # bare form means the note
+S 11148 | quarter | music | 2
+K 11160 # bare form means the note
+K 6127 # name word is whole identity
+S 11152 | sixteenth | music | 3
+K 11162 # bare form means the note
+S 11156 | sixty-fourth | - | 5
+S 11154 | thirty-second | - | 4
+K 11165 # tied alone names nothing
+S 11144 | whole | music | 2
+K 11158 # bare form means the note
+T recording_studio_words
+S 11222 | monitors | audio | 4
+T music_festivals
+S 11276 | Download | rock | 3
+S 11291 | Latitude | Suffolk | 4
+T music_players
+S 11311 | cassette | playback | 2
+S 11310 | CD | playback | 2
+S 7345 | MP3 | playback | 2
+S 11331 | MP4 | playback | 3
+K 11316 # nobody says box for it
+K 11321 # nobody says centre for it
+K 11307 # record means the disc
+K 11328 # vinyl means the disc
+T rock_band_lineup
+S 11338 | manager | music | 3
+K 11350 # nobody says boy for it
+K 11351 # tribute is not a band
+K 11352 # wedding is the event
+T note_values
+S 11150 | eighth | music | 2
+S 11146 | half | music | 2
+S 11148 | quarter | music | 2
+S 11152 | sixteenth | music | 3
+S 11144 | whole | music | 2
+T musicians
+K 4137 # name word is whole identity
+S 6162 | session | hired | 3
+T dance
+S 6248 | barn | country | 3
+S 6244 | belly | hips | 2
+K 6234 # fixed name
+K 6229 # nobody says floor for it
+S 6277 | lap | club | 3
+S 6216 | square | caller | 2
+S 6210 | tap | rhythm | 1
+T dances
+S 11744 | line | choreographed | 2
+S 6216 | square | caller | 2
+S 6210 | tap | rhythm | 1
+T ballet_terms
+S 11767 | corps | dancers | 3
+T folk_dances
+S 6244 | belly | hips | 2
+K 11815 # nobody says fan for it
+K 11814 # nobody says lion for it
+S 11799 | maypole | ribbons | 4
+S 6216 | square | caller | 2
+K 11803 # sword is the weapon
+T middle_eastern_dances
+S 6244 | belly | hips | 2
+K 52029 # nobody says spoon for it
+K 11803 # sword is the weapon
+T african_dances
+S 11822 | gumboot | - | 5
+K 52043 # nobody says jump for it
+K 52042 # warrior is not a dance
+K 52045 # Zulu names the people
+T asian_dances
+S 52062 | apsara | - | 4
+K 52063 # nobody says bamboo for it
+K 25076 # nobody says dragon for it
+K 11815 # nobody says fan for it
+K 11814 # nobody says lion for it
+K 52052 # nobody says ribbon for it
+T polynesian_dances
+K 52077 # slap alone names nothing
+T north_american_folk_dances
+S 6248 | barn | country | 3
+K 52105 # nobody says buck for it
+S 52096 | contra | - | 4
+K 52109 # nobody says eagle for it
+S 52101 | fancy | powwow | 4
+S 52102 | grass | powwow | 4
+K 52100 # nobody says hoop for it
+S 52103 | jingle dress | - | 5
+S 11744 | line | choreographed | 2
+K 52104 # round alone names nothing
+S 6216 | square | caller | 2
+K 52108 # nobody says stomp for it
+T european_folk_dances
+K 52121 # nobody says clog for it
+S 11799 | maypole | ribbons | 4
+K 11803 # sword is the weapon
+T dance_moves
+K 11851 # nobody says hammer for it
+T street_dance_styles
+S 11861 | house | club | 3
+S 11867 | liquid | fluid | 5
+T dance_studio_words
+K 11889 # bag alone names nothing
+K 11905 # bare belt is clothing
+S 11903 = 4475
+S 11893 | instructor | teaching | 2
+S 11892 = 4063
+K 11894 # name word is whole identity
+T art
+K 6361 # fixed name
+S 6322 | pop | Warhol | 2
+T art_movements
+K 6361 # fixed name
+S 11994 | byzantine | icons | 4
+S 11990 | conceptual | ideas | 3
+S 11993 | gothic | medieval | 3
+K 12006 # nobody says land for it
+K 11991 # op is only a fragment
+S 6322 | pop | Warhol | 2
+T art_gallery_words
+S 12152 | dealer | sales | 3
+K 6301 # name word is whole identity
+K 12158 # portrait means a painting
+T color_theory_words
+S 12189 | additive | - | 4
+S 12175 | analogous | - | 4
+K 12202 # harmony alone means music
+K 12193 # temperature alone means heat
+K 12173 # nobody says wheel for it
+S 12174 | complementary | opposite | 3
+S 12180 | cool | hues | 2
+S 12203 | dominant | hue | 4
+K 12169 # name word is whole identity
+K 12171 # name word is whole identity
+S 12190 | subtractive | - | 4
+K 12172 # name word is whole identity
+S 12179 | warm | hues | 2
+T drawing_techniques
+S 12211 | contour | outline | 4
+S 12221 | figure | anatomy | 3
+S 12212 | gesture | - | 4
+K 12220 # life alone names nothing
+S 12222 = 6293
+K 12227 # tonal alone names nothing
+T turkish_arts
+S 52310 = 23501
+K 52311 # lamp alone loses the origin
+T pacific_art_words
+K 22748 # rock alone means a stone
+S 52344 | x-ray | Aboriginal | 4
+T african_art_words
+S 52366 = 21720
+T parts_of_a_stage
+S 12282 | center | middle | 2
+K 12241 # name word is whole identity
+S 12298 | door | entrance | 3
+S 11212 | left | actor's view | 3
+S 12281 | right | actor's view | 3
+S 12297 | thrust | projecting | 5
+T opera_words
+K 12348 # grand alone names nothing
+S 12347 | buffa | - | 5
+K 12340 # house is the head noun
+S 12352 | seria | - | 5
+T puppets
+S 12356 | finger | tiny | 2
+S 12358 | glove | fabric | 3
+S 12355 | hand | palm | 2
+K 12385 # nobody says it bare
+K 12387 # nobody says jester for it
+K 12362 # show is the head noun
+S 12364 | rod | stick | 3
+S 12360 | shadow | silhouette | 3
+K 12386 # Sicilian alone names nothing
+S 12357 | sock | knitted | 2
+S 12359 | string | marionette | 3
+T musicals_words
+K 12405 # book alone is the script
+S 12400 | jukebox | pop songs | 4
+T movie_genres
+K 12595 # B alone is a fragment
+S 12577 | buddy | partners | 3
+S 12570 | disaster | - | 2
+S 12575 | road | journey | 3
+S 12588 | teen | youth | 2
+S 12568 | war | combat | 2
+T film_words
+K 12659 # nobody says stock alone
+T behind_the_camera
+K 12672 # operator alone names nothing
+T cartoon_words
+K 12731 # fixed name
+T award_words
+S 12751 = 12746
+S 12760 | Olivier | West End | 4
+T entertainment_awards
+S 12751 = 12746
+S 61945 | Annie | animation | 5
+S 52456 | ARIA | Australian music | 4
+K 52453 # fixed name
+S 61943 | Cesar | - | 4
+S 52460 | Drama Desk | - | 5
+S 61944 | Goya | Spanish film | 4
+S 52454 | Juno | Canadian music | 4
+S 12760 | Olivier | West End | 4
+K 52451 # SAG means the union
+K 52458 # Saturn alone names a planet
+K 52457 # nobody says Spirit for it
+T film_festivals
+S 12788 = 12771
+S 12796 | Edinburgh | Scottish | 4
+K 12798 # name word is whole identity
+S 12787 | Venice | Lido | 3
+T special_effects_words
+S 12886 | makeup | prosthetics | 3
+S 12881 | particle | sparks | 5
+S 12868 | practical | physical | 3
+K 12869 # nobody says visual alone
+T anime_and_manga_words
+K 12624 # name word is whole identity
+K 13073 # name word is whole identity

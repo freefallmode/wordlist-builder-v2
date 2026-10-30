@@ -1,235 +1,200 @@
-T salad_dressings
-K 53245 # nobody says coleslaw for it
-S 53234 | French | tangy orange sauce | 2
-S 59618 | goma | - | 5
-S 53232 | Italian | herby vinaigrette | 2
-K 53242 # Louis alone is never used
-K 53241 # nobody says miso for it
-S 53247 | Roquefort | blue-cheese sauce | 3
-S 53235 | Russian | pink sauce | 3
-K 772 # fixed name, cream means other
-K 53240 # nobody says tahini for it
-S 59617 | wafu | - | 5
-K 53243 # nobody says yogurt for it
-T dips
-K 18814 # nobody says artichoke for it
-K 16777 # nobody says bean for it
-S 18809 = 53231
-S 18816 | buffalo chicken | - | 3
-K 18802 # nobody says cheese for it
-K 18815 # nobody says crab for it
-K 18818 # nobody says dill for it
-S 18805 | French onion | sour cream flavor | 2
-K 18804 # nobody says onion for it
-K 18806 # nobody says spinach for it
-T spreads
-K 18843 # Biscoff alone is the cookie
-K 18833 # nobody says cheese for it
-K 18403 # chocolate alone is the candy
-K 18834 # nobody says hazelnut for it
-K 18848 # speculoos alone is the cookie
-T pickles_and_preserves
-S 18855 | dill | briny cucumber | 2
-K 18867 # nobody says lime for it
-K 18868 # nobody says mango for it
-K 18854 # nothing left
-K 18858 # sweet alone means nothing
-T oils_and_vinegars
-K 18911 # nobody says black for it
-K 18912 # nobody says champagne for it
-K 18904 # cider alone is the drink
-K 18913 # coconut alone is the oil
-K 18909 # distilled alone means nothing
-K 18888 # palm alone is the tree
-K 18907 # nobody says rice for it
-K 18918 # nobody says sake for it
-K 18893 # truffle alone is the fungus
-K 18881 # vegetable alone is not oil
-S 18901 | white | clear kitchen liquid | 2
-T soups
-K 18921 # nobody says noodle for it
-K 18923 # vegetable alone is not soup
-T stews
-K 18948 # nobody says beef for it
-S 18963 | Brunswick | southern pork-and-corn pot | 4
-K 18949 # nobody says chicken for it
-K 17865 # nobody says fish for it
-K 18952 # nobody says Irish for it
-K 18951 # nobody says lamb for it
-K 18950 # vegetable alone is not stew
-T salads
-K 18988 # nobody says beet for it
-S 18983 | chef | ham-and-cheese plate | 2
-K 18979 # nobody says chicken for it
-K 18999 # nobody says couscous for it
-K 18987 # nobody says cucumber for it
-K 17988 # nobody says egg for it
-K 16761 # fruit alone is not a dish
-S 18977 | garden | lettuce and veg bowl | 3
-S 18976 | Greek | feta and olive dish | 1
-S 18982 | house | restaurant starter | 2
-K 18985 # nobody says kale for it
-K 18984 # nobody says macaroni for it
-K 18529 # nobody says pasta for it
-K 17873 # nobody says potato for it
-K 18989 # nobody says quinoa for it
-K 19002 # nobody says Russian for it
-K 18998 # nobody says seaweed for it
-K 18978 # side alone is ambiguous
-K 18980 # nobody says spinach for it
-K 18986 # nobody says taco for it
-K 18981 # nobody says tomato for it
-K 17861 # nobody says tuna for it
-T sandwiches
-K 19012 # nobody says chicken for it
-K 19016 # nobody says cucumber for it
-K 19011 # nobody says egg for it
-K 19026 # finger alone is the digit
-K 19042 # fish finger is the food
-K 19010 # nobody says ham for it
-K 19034 # open alone means nothing
-T snacks
-K 19098 # fruit alone is not a snack
-K 16769 # nobody says seaweed for it
-T potato_dishes
-K 19141 # baked alone is an adjective
-S 19146 | jacket | oven-baked spud | 3
-K 19147 # pancake alone is another food
-K 17873 # salad alone is another dish
-S 19145 | skins | bar appetizer | 3
-K 19157 # twice baked is a fragment
-T savory_pies
-K 19173 # chicken pot is a fragment
-K 19176 # nobody says cottage for it
-K 17841 # nobody says fish for it
-K 19183 # nobody says game for it
-K 19172 # nobody says meat for it
-K 19192 # fixed name
-K 19177 # nobody says pork for it
-K 19174 # pot alone is cookware
-K 19193 # nobody says scotch for it
-K 19175 # shepherd's alone is a fragment
-K 19178 # nobody says steak for it
-T pizza_styles
-S 19204 | cheese | plain slice | 1
-K 19225 # nobody says flatbread for it
-S 19231 | grandma | thin square slice | 4
-K 19233 # nobody says Greek for it
-S 19215 | pan | thick-crust style | 3
-K 19242 # fritta alone means nothing
-S 19207 | veggie | meatless option | 2
-S 19224 | white | no-tomato style | 3
-T pancakes_of_the_world
-K 19261 # nobody says buckwheat for it
-K 19251 # nobody says buttermilk for it
-K 19260 # nobody says Chinese for it
-K 19250 # nothing left
-K 19147 # pancake alone is another food
-K 19257 # nobody says scallion for it
-K 19259 # nobody says Swedish for it
-T burger_toppings
-K 19290 # sauce alone is generic
-T greek_food
-K 18976 # salad alone is generic
-T turkish_food
-K 19296 # coffee alone is generic
-T turkish_breakfast
-K 19296 # coffee alone is generic
-K 16580 # tea alone is generic
-T kebab_types
-K 59695 # fixed Turkish dish name
-K 813 # nothing left
-K 59701 # fixed Turkish dish name
-K 59700 # fixed Turkish dish name
-K 53386 # fixed Turkish dish name
-K 59699 # fixed Turkish dish name
-K 53387 # fixed Turkish dish name
-K 59698 # fixed Turkish dish name
-T sushi_types
-S 39783 | roll | rolled seaweed form | 1
-T korean_food
-K 53579 # BBQ alone is generic
-K 53589 # fried chicken alone is generic
-T thai_food
-K 824 # pad alone means nothing
-T vietnamese_food
-K 19528 # coffee alone is generic
-T bush_tucker
-K 53662 # honey alone is ordinary honey
-T drinks
-K 886 # nobody says energy for it
-T hot_drinks
-K 227 # chocolate alone is the candy
-K 19467 # cider alone is the alcoholic drink
-K 19460 # cocoa already in this theme
-K 16115 # nobody says milk for it
-T teas
-S 19513 | builder's | strong British brew | 3
-K 19502 # nobody says fruit for it
-K 866 # iced alone is an adjective
-K 19493 # nobody says lemon for it
-K 19501 # nobody says milk for it
-K 19498 # sweet alone means nothing
-K 19509 # nobody says Thai for it
-S 19503 | white | delicate pale brew | 3
-T coffee_drinks
-S 19524 | black | no milk | 1
-K 19523 # iced alone is an adjective
-S 19462 | instant | freeze-dried granules | 2
-S 19469 | Irish | whiskey and cream drink | 2
-S 19296 | Turkish | ibrik-brewed style | 3
-S 19528 | Vietnamese | condensed milk style | 3
-T coffee_words
-K 53788 # nobody says green for it
-T soda_flavors
-S 19544 | cream | vanilla-ish flavor | 3
-T juices
-K 19576 # nobody says beet for it
-K 19570 # nobody says green for it
-T asian_drinks
-K 19598 # aloe vera alone is the plant
-T wines
-K 19654 # dessert alone is a course
-K 19655 # fortified alone is an adjective
-S 19652 | house | restaurant default pour | 2
-S 19677 | orange | skin-contact style | 4
-S 19645 | red | dark grape style | 1
-S 19649 | sparkling | bubbly style | 2
-K 19653 # nobody says table for it
-S 19646 | white | pale grape style | 1
-T red_wines
-K 53811 # blend alone means nothing
-T white_wines
-K 53836 # blend alone means nothing
-K 53833 # burgundy alone is red
-T beers
-S 19692 | craft | small-brewery style | 2
-S 19691 | light | low-calorie style | 2
-S 19716 | sour | tart style | 3
-T ways_to_cut_food
-S 19800 | bias | slanted angle | 4
-T ways_to_mix
-K 19986 # nothing left
-T kitchen_brigade
-K 20078 # nothing left
-K 20066 # nobody says hand for it
-S 20055 | porter | dish-washing role | 3
-T meals_of_the_day
-K 20133 # nobody says midday for it
-T table_setting
-S 20161 | runner | long cloth strip | 3
-T ice_cream_parlor
-K 18281 # cookies alone is a fragment
-K 18310 # sandwich alone is generic
-K 528 # whipped alone is an adjective
-T deep_fried_foods
-K 19052 # nobody says chicken for it
-K 20229 # ice cream alone is not fried
-K 20192 # Oreos alone are not fried
-K 20194 # pickles alone are not fried
-T stuffed_foods
-K 20240 # nobody says mushrooms for it
-K 20238 # nobody says peppers for it
-K 18532 # shells alone is generic
-T frozen_foods
-K 20322 # berries alone are not frozen
+T frogs_and_toads
+K 8654 # nobody says African clawed
+K 8659 # nationality alone is no name
+K 8667 # adjectives alone name nothing
+S 1168 | cane | - | 3
+K 8664 # nobody says chorus for it
+K 8641 # common is not a name
+K 8642 # common is not a name
+K 8666 # nobody says cricket for it
+S 1169 | dart | poisonous rainforest | 3
+K 8669 # possessive alone names nothing
+K 8647 # nobody says edible alone
+K 8650 # adjective alone names nothing
+K 8681 # nobody says flying alone
+K 8660 # possessive alone names nothing
+K 1144 # name word is whole identity
+K 8661 # nobody says giant alone
+S 1203 | glass | see-through skin | 3
+K 8651 # adjectives alone name nothing
+K 8679 # nobody says golden alone
+K 8653 # nobody says goliath alone
+K 8662 # adjectives alone name nothing
+K 8644 # nobody says green alone
+K 8680 # nobody says hairy alone
+K 8678 # nobody says harlequin alone
+K 1210 # nobody says horned alone
+S 8643 | leopard | spotted pond dweller | 3
+K 8646 # nobody says marsh alone
+K 8649 # nobody says midwife alone
+S 8657 | pacman | - | 4
+S 8640 | poison dart | - | 3
+K 8648 # nobody says pool alone
+K 8645 # adjectives alone name nothing
+K 8652 # nobody says strawberry poison
+K 8655 # nobody says Surinam alone
+K 8668 # nobody says tailed alone
+K 1145 # name word is whole identity
+S 8656 | tomato | red round | 4
+S 1167 | tree | climbing | 2
+K 8658 # possessive alone names nothing
+K 8665 # nobody says wood alone
+T salamanders_and_newts
+K 8684 # nobody says alpine alone
+K 8714 # nobody says Alpine alone
+K 8715 # nobody says black alone
+K 8689 # nobody says California alone
+K 8697 # nobody says cave alone
+K 1212 # nobody says crested alone
+K 8696 # nobody says dusky alone
+K 8687 # nobody says eastern alone
+S 1207 | fire | black and yellow | 3
+K 1208 # nobody says giant alone
+K 8682 # nobody says great crested
+K 8705 # nobody says Italian crested
+K 8718 # nobody says Jefferson alone
+K 8716 # possessive alone names nothing
+K 8698 # nobody says lungless alone
+K 8685 # nobody says marbled alone
+K 8692 # nobody says marbled alone
+S 8703 | mole | burrowing amphibian | 5
+K 1147 # name word is whole identity
+K 8683 # nobody says palmate alone
+K 8704 # nobody says Pyrenean brook
+K 8693 # nobody says red-backed alone
+K 8686 # nobody says red-spotted alone
+K 8688 # nobody says rough-skinned alone
+K 1146 # name word is whole identity
+K 8694 # nobody says slimy alone
+K 1211 # nobody says smooth alone
+K 8690 # nobody says spotted alone
+S 8691 | tiger | striped burrower | 3
+K 8695 # nobody says two-lined alone
+T salmon_and_trout
+K 50747 # Atlantic alone means the ocean
+S 8724 | brookie | - | 4
+S 8723 | brown | stream catch | 3
+S 50757 | bull | large char | 4
+S 50752 | chum | dog | 4
+S 50753 | cutthroat | red-slashed | 4
+K 50770 # nobody says Danube alone
+K 50768 # nobody says ferox alone
+K 50756 # nobody says golden alone
+S 8725 | laker | - | 4
+K 50771 # nobody says landlocked alone
+K 50764 # Pacific alone means the ocean
+S 9922 | pink | small Pacific catch | 3
+S 1283 | rainbow | stocked catch | 3
+K 466 # name word is whole identity
+K 50763 # migration event, not shortened
+K 50754 # nobody says sea alone
+K 50766 # nobody says tiger alone
+K 483 # name word is whole identity
+T sharks
+K 8765 # nobody says angel alone
+K 8768 # nobody says bamboo alone
+S 8747 | basking | slow filter feeder | 3
+S 8759 | blacktip | - | 4
+S 8751 | blue | open-ocean | 3
+S 8745 | bull | river-roaming | 2
+K 8761 # nobody says carpet alone
+K 8772 # nobody says epaulette alone
+K 8766 # nobody says frilled alone
+S 8756 | goblin | pink-snouted | 4
+K 8762 # nobody says greenland alone
+S 8752 | lemon | yellowish coastal | 3
+S 8763 | leopard | spotted bay dweller | 4
+S 8750 | nurse | sleepy bottom dweller | 3
+S 8758 | reef | coral patrol | 3
+K 8770 # nobody says silky alone
+S 8744 | tiger | striped predator | 2
+S 8746 | whale | plankton eater | 2
+S 8767 | zebra | striped bottom dweller | 4
+T rays_and_eels
+K 8811 # nobody says butterfly alone
+S 8810 | cownose | - | 4
+K 8802 # nobody says devil alone
+S 8797 | eagle | flat swimmer | 3
+K 495 # name word is whole identity
+S 8795 | electric | Amazon shocker | 2
+S 8799 | electric | numbing shocker | 3
+S 8803 | garden | sand-dwelling | 4
+K 8807 # nobody says glass alone
+S 8813 | gulper | - | 4
+K 8806 # nobody says snake alone
+K 8812 # nobody says spotted eagle
+K 8800 # nobody says torpedo alone
+S 8804 | wolf | fierce coastal | 4
+T deep_sea_fish
+K 8823 # nobody says football alone
+K 8826 # nobody says tripod alone
+T fish_body_parts
+S 8860 | bones | skeleton | 2
+T sea_life
+K 1315 # fixed name
+K 1326 # fixed name
+K 1294 # fixed name
+K 1322 # nobody says otter for it
+K 1336 # nobody says pen for it
+K 1313 # nobody says slug for it
+K 1328 # nobody says snake for it
+K 1333 # fixed name
+K 1293 # nobody says turtle for it
+K 502 # fixed name
+T cephalopods
+K 8895 # name word is whole identity
+T sea_mammals
+K 1294 # fixed name
+K 1322 # nobody says otter for it
+T seals_and_sea_lions
+K 50811 # nobody says Australian alone
+K 9753 # nobody says bearded alone
+K 50807 # nobody says California alone
+K 50813 # nobody says Caspian alone
+K 50815 # nobody says common alone
+S 8898 | elephant | huge blubbery | 3
+K 8897 # nobody says fur alone
+K 50810 # nobody says Galapagos alone
+K 8901 # nobody says grey alone
+K 8899 # nobody says harbor alone
+S 8904 | harp | white-coated pup | 4
+K 32323 # nobody says Hawaiian monk
+K 9754 # nobody says hooded alone
+S 8902 | leopard | Antarctic predator | 3
+S 8903 | monk | endangered hermit | 4
+K 50809 # nobody says northern fur
+K 50808 # nobody says ribbon alone
+K 9749 # nobody says ringed alone
+K 9712 # nobody says Ross alone
+K 1294 # name word is whole identity
+K 1028 # name word is whole identity
+K 50816 # nobody says southern elephant
+K 50814 # nobody says spotted alone
+T reef_life
+S 8758 = 1215
+T jellyfish_and_relatives
+K 8928 # nobody says cannonball alone
+K 8927 # nobody says immortal alone
+K 1286 # name word is whole identity
+K 8935 # nobody says upside-down alone
+T seaweeds
+K 1290 # name word is whole identity
+T ocean_giants
+K 1327 # nobody says clam for it
+K 8973 # nobody says Pacific octopus
+K 1318 # fixed name
+T starfish_and_sea_urchins
+K 8994 # nobody says flower alone
+K 8980 # nobody says heart alone
+S 8981 | pencil | thick-spined | 4
+S 8984 | purple | tide pool | 3
+S 8989 | red | giant spiny | 4
+K 8992 # nobody says apple for it
+K 8988 # nobody says biscuit for it
+K 8993 # nobody says egg for it
+K 502 # name word is whole identity
+S 8995 | slate pencil | thin-spined | 5
+K 1287 # name word is whole identity
+T insects_and_bugs
+S 1430 | assassin | ambush hunter | 4
+S 1423 | shield | armored stinker | 4

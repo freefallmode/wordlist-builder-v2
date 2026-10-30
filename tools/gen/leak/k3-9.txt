@@ -1,0 +1,241 @@
+T famous_mosques
+S 37379 | Djenne | Mali | 4
+S 37377 | Faisal | Islamabad | 4
+K 60539 # Grand of Paris is nonsense
+S 37385 | Kairouan | Tunisia | 5
+K 37383 # nobody says Muhammad Ali for it
+K 37387 # nobody says Shah for it
+S 37372 | Sheikh Zayed | Abu Dhabi | 3
+K 60538 # nobody says Sultan Qaboos alone
+S 37375 | Umayyad | Damascus | 4
+T famous_churches
+K 37407 # bare Nativity means the scene
+T famous_parks
+K 37464 # nobody says Centennial alone
+K 37432 # nobody says Central alone
+S 37444 | Glacier | Montana | 3
+K 37439 # Golden Gate means the bridge
+K 37448 # nobody says Green alone
+S 37450 | Griffith | Los Angeles | 4
+K 37433 # nobody says Hyde alone
+S 37449 | Phoenix | Dublin | 4
+K 37451 # nobody says Prospect alone
+K 37435 # nobody says Regent's alone
+K 37437 # nobody says Richmond alone
+K 37436 # nobody says St James's alone
+K 37458 # nobody says Stanley alone
+S 37457 | Ueno | Tokyo | 4
+T egyptian_landmarks
+S 37309 | Cairo Museum | - | 3
+T london_landmarks
+K 2345 # bare Eye is ambiguous
+K 2344 # bare Tower clashes with Tower Bridge
+T maps_and_globes
+S 2460 | cadastral | - | 5
+K 2396 # nothing left
+K 2418 # product name, Google means company
+K 2395 # nothing left
+S 2451 = 37888
+K 2404 # nobody says road for it
+K 2405 # nobody says street for it
+S 2441 | topographic | - | 3
+K 2403 # nobody says treasure for it
+K 2402 # nobody says world for it
+T lines_on_a_map
+K 2427 # nobody says date for it
+K 37879 # nobody says dotted for it
+K 37878 # fixed name
+S 37881 | LoC | - | 4
+T map_words
+S 37885 = 7620
+T kinds_of_maps
+K 37903 # nobody says bus for it
+S 2460 | cadastral | - | 5
+K 37901 # nobody says city for it
+S 37905 | geological | - | 4
+K 2418 # product name
+S 37907 | orienteering | course | 5
+S 37896 | physical | - | 3
+K 37910 # nobody says pirate for it
+S 37895 | political | - | 2
+S 2451 = 37888
+K 2404 # nobody says road for it
+K 37900 # site means a place
+K 37899 # nobody says subway for it
+S 37904 | thematic | - | 4
+S 2441 | topographic | - | 3
+K 37897 # nobody says tourist for it
+K 37898 # nobody says trail for it
+K 2403 # nobody says treasure for it
+K 37911 # tube means the train
+K 37908 # nobody says wall for it
+K 31393 # nobody says weather for it
+K 2402 # nobody says world for it
+T flags_with_crescents
+K 60551 # fixed name
+T flag_words
+K 37985 # bare black means the colour
+K 37986 # bare checkered means the pattern
+K 37992 # fixed phrase
+K 37988 # bare signal means other things
+K 21499 # bare white means the colour
+T flags_with_a_sun
+K 2539 # fixed name
+K 60553 # fixed name
+S 60554 | Vergina Star | - | 5
+T flags_with_animals
+K 60556 # fixed name
+T post_office
+K 35173 # fixed name
+T library
+K 38251 # fixed name
+K 23298 # nobody says card alone
+T hair_salon
+S 57471 | bleach | lightener | 2
+S 4967 | clip | styling | 2
+S 16175 | dye | - | 2
+S 24815 | extensions | - | 2
+S 3769 | gel | styling | 2
+S 57469 | spray | styling | 2
+K 57476 # nobody says chair alone
+T street_market
+K 57486 # fixed name
+T park
+K 43577 # fixed name
+T shopping_mall
+K 57505 # fixed name
+S 24714 = 34004
+S 39781 = 33996
+T hospital
+S 15301 | gown | patient | 2
+T fire_station
+S 40304 = 28279
+S 57517 | bell | alert | 3
+S 57513 = 35527
+S 34995 = 4411
+S 57511 | helmet | firefighter | 2
+S 57509 = 1844
+S 57510 | sliding pole | - | 3
+S 57520 = 7389
+S 3089 = 28334
+T police_station
+K 3091 # synonyms exist only as aliases
+S 9451 = 1435
+S 4086 | officer | - | 1
+T office
+K 57534 # nobody says corner alone
+T factory
+S 57537 = 28502
+T construction_site
+S 57552 = 34107
+T vet_clinic
+K 4068 # nothing left
+T dentist_s_office
+K 4067 # nothing left
+T zoo
+K 57575 # petting alone means nothing
+S 57582 = 2395
+T beach
+S 39807 = 46057
+S 48402 = 2483
+T art_gallery
+S 12152 = 45206
+S 57598 | gallerist | - | 3
+T swimming_pool
+K 31515 # paddling alone is an activity
+S 57615 | cover | protective | 2
+S 57613 | filter | water | 3
+S 57619 = 57614
+S 39817 | noodle | foam | 2
+T ski_resort
+S 43529 | apres | - | 3
+K 43521 # nothing left
+S 24667 = 21315
+K 39852 # nobody says jump alone
+S 43526 | lift | uphill | 1
+S 43542 = 4215
+S 48873 | poles | - | 2
+S 43555 = 2465
+T water_park
+K 57640 # cannon alone is a weapon
+S 57627 = 5941
+T traditional_dwellings
+S 57654 = 1913
+S 57655 = 1906
+T towers_and_skyscrapers
+S 14001 | campanile | - | 4
+K 38273 # nobody says clock for it
+K 2370 # fixed name
+K 2733 # nobody says control for it
+K 38276 # nobody says cooling for it
+K 38277 # nobody says observation alone
+K 38280 # fixed name
+K 37092 # nobody says Shanghai for it
+K 2461 # nothing left
+K 38278 # nobody says TV for it
+K 38274 # nobody says water for it
+K 37050 # nobody says Willis alone
+T road_types
+K 38325 # fixed name
+K 38326 # fixed name
+S 38314 | dirt track | - | 1
+S 27375 | beltway | - | 3
+K 28254 # nothing left
+T street_names
+K 38354 # nobody says New alone
+T street_furniture
+S 38378 = 26282
+T traffic_words
+S 38409 | cone | orange | 1
+S 38385 | gridlock | - | 2
+T parts_of_a_road
+S 38426 | markings | - | 2
+S 38441 | surface | - | 2
+K 38431 # slip alone is clothing
+T parts_of_a_town
+K 38455 # nobody says old alone
+K 38447 # centre alone is vague
+K 2493 # nobody says hall alone
+T kinds_of_settlements
+K 38491 # nothing left
+T cars
+S 2574 = 23856
+K 2601 # nobody says sports alone
+T car_types
+K 46640 # nobody says city alone
+S 46637 = 28806
+S 32362 = 63346
+K 46645 # nobody says kit alone
+S 46634 | muscle | American | 2
+K 2601 # nobody says sports alone
+K 46646 # nobody says town alone
+S 46654 = 24509
+T famous_car_models
+K 59035 # fixed name
+T driving_words
+S 46672 = 34829
+T motor_racing
+S 46695 = 40620
+T road_signs
+S 46729 | men at work | - | 2
+S 46726 = 14809
+T gas_station
+S 46766 | cap | fuel | 2
+S 2589 | tank | fuel | 2
+K 46787 # fixed name
+T parking_words
+K 46813 # nobody says angle alone
+K 46814 # nobody says bay alone
+K 46722 # fixed sign wording
+K 46820 # nobody says overnight alone
+S 46797 | parallel | kerbside | 2
+S 46824 | attendant | lot | 3
+K 46825 # nobody says enforcement alone
+K 46799 # garage already in theme
+K 38373 # meter already in theme
+K 46793 # space already in theme
+S 4227 | ticket | fine | 1
+S 46817 = 28439
+T car_accessories
+S 46854 | charger | phone | 2
+S 46851 | cover | fitted | 2

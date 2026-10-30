@@ -1,0 +1,252 @@
+T body_systems
+K 14583 # nobody says blood for it
+K 14576 # nobody says central nervous
+S 14563 | digestive | digestion | 2
+K 14588 # nobody says enteric nervous
+S 14564 | nervous | nerves | 2
+T hormones
+S 14603 | growth | - | 3
+K 14619 # nobody says luteinizing alone
+S 14613 | PTH | - | 5
+S 14623 | thyroid | gland output | 3
+T digestive_system
+K 14645 # nobody says tract alone
+T senses
+K 3314 # fixed name
+T sight_words
+K 38 # nothing left
+T hearing_words
+K 14715 # fixed phrase
+K 14704 # nobody says aid alone
+T smell_words
+K 40 # nothing left
+T ear_parts
+K 14799 # nobody says flap
+S 3350 | inner | - | 3
+S 14776 = 28061
+S 14777 | outer | - | 3
+T touch_words
+K 42 # nothing left
+T eye_parts
+S 14860 | socket | skull hollow | 2
+S 14863 | sclera | - | 3
+T allergies
+S 14950 | food | diet trigger | 2
+K 14955 # fixed medical name
+T infections
+S 14972 | bacterial | - | 2
+S 14974 | fungal | - | 3
+S 14973 | viral | virus-caused | 2
+T injuries
+S 15029 | crush | squashing | 3
+T cold_weather_ailments
+K 15098 # nobody says injury alone
+K 15094 # nobody says shock alone
+K 15089 # nobody says sores alone
+K 15092 # nobody says urticaria alone
+K 14956 # fixed name
+T forms_of_medicine
+S 15163 = 40460
+T medical_tests
+S 15252 | allergy | skin sensitivity | 2
+S 15245 = 3245
+S 15269 = 33743
+S 15268 | eye | sight check | 2
+S 15257 | glucose tolerance | sugar check | 4
+S 15259 | stress | heart check | 3
+S 15253 | swab | sampling | 2
+T hospital_words
+S 15301 | gown | patient wear | 1
+T doctor_s_office
+K 3448 # nothing left
+T pharmacy
+K 15348 # nobody says technician alone
+T operating_room
+S 15360 | table | surgical | 2
+T first_aid
+S 15344 | kit | medical supplies | 1
+T dental_words
+K 15430 # nobody says dam alone
+S 15435 | drill | dentist's | 2
+S 15431 = 57567
+T smoking_words
+K 15474 # fixed sign phrase
+S 15457 = 33804
+K 15472 # nobody says jacket for it
+T cold_and_flu_remedies
+S 15318 | shot | jab | 2
+T african_remedies
+K 15618 # nobody says potato for it
+T babies_and_birth
+K 3523 # nothing left
+S 3563 = 25475
+S 3571 | monitor | nursery audio | 2
+S 3590 | shower | gift party | 2
+K 3528 # nothing left
+T pregnancy_words
+S 15345 = 28587
+T baby_gear
+S 15790 = 27983
+S 15782 | bouncer | rocking seat | 3
+S 15783 | carrier | sling | 2
+S 15788 | gate | stair barrier | 2
+S 3571 | monitor | nursery audio | 2
+S 15798 | swing | hanging seat | 2
+S 15786 | walker | wheeled seat | 3
+S 15802 | wrap | cloth carrier | 3
+T yoga_poses
+K 15901 # nobody says child's alone
+T stretches
+S 15990 = 14412
+S 15992 | cat | spine arch | 3
+K 16003 # nobody says doorway for it
+S 15988 = 14230
+S 16013 | hurdle | seated | 4
+S 16019 | lat | back muscle | 4
+S 16002 = 15841
+S 15989 | quad | thigh | 3
+S 60803 | scorpion | twist | 4
+S 15995 = 3170
+S 16007 | straddle | wide legs | 4
+S 15999 = 14421
+K 16009 # nobody says wall for it
+S 16017 = 3173
+T sleep
+K 3705 # fixed phrase
+S 3723 | deep | - | 2
+T sleep_words
+K 16021 # nothing left
+T dream_words
+S 16088 | chased | - | 3
+K 3678 # nothing left
+S 16090 | journal | nightly diary | 3
+S 16086 | falling | - | 2
+S 16087 = 28126
+S 16078 | recurring | - | 3
+T bedtime_routine
+S 16127 = 20115
+S 16107 = 6456
+T sleep_disorders
+K 16149 # nobody says delayed phase
+K 16146 # shift work means the job
+K 16142 # nobody says deprivation alone
+K 16147 # nobody says eating alone
+K 16096 # nobody says paralysis alone
+K 16085 # nobody says talking alone
+K 16144 # nobody says terror alone
+T hair_care
+S 4967 = 24993
+S 3767 | dryer | blow-drying | 2
+S 16175 | dye | colorant | 2
+S 16179 = 55553
+S 3769 | gel | styling | 2
+S 16165 | mask | conditioning treatment | 3
+S 16166 | oil | styling | 3
+S 3798 | tie | elastic loop | 2
+S 16173 | wax | styling | 3
+T makeup
+S 16222 | brush | applicator | 2
+K 16234 # nobody says remover alone
+T nail_care
+S 16246 | acrylic | extensions | 3
+K 16250 # nobody says false alone
+S 16247 | gel | UV manicure | 3
+K 16249 # nobody says art alone
+S 16241 | buffer | smoother | 3
+S 3765 | clippers | trimmers | 2
+S 16264 | drill | electric file | 4
+S 16257 | dryer | curing | 3
+S 3766 = 4807
+S 16262 = 12018
+K 60828 # nobody says matrix alone
+S 3751 | polish | lacquer | 2
+S 16244 | polish remover | - | 2
+S 16263 | stickers | decals | 3
+K 16253 # nobody says strengthener alone
+K 16267 # nobody says whitener alone
+S 16266 | wraps | adhesive strips | 4
+T bath_time
+S 3813 | bomb | fizzing | 2
+S 16289 | caddy | tub rack | 4
+S 16270 | mat | floor | 2
+S 16159 | oil | tub additive | 3
+S 16273 | pillow | headrest | 3
+S 60810 | pouf | scrub sponge | 3
+S 16275 | robe | towelling gown | 2
+S 15510 | salts | soak crystals | 3
+K 60831 # nobody says screen for it
+K 16287 # nobody says sheet for it
+S 16283 = 3461
+S 16271 | toys | tub playthings | 1
+S 16274 = 28547
+S 3758 | bubbles | foaming soap | 2
+T shaving
+S 16331 | bowl | lather dish | 4
+S 16320 | brush | lather | 2
+S 3738 | cream | lather lotion | 2
+S 16315 | foam | can of lather | 2
+S 16328 | gel | slick | 2
+S 16344 | kit | grooming set | 2
+S 16321 | soap | puck | 3
+T sun_care
+K 16346 # fixed name
+S 16347 | hat | wide brim | 2
+K 16355 # nobody says shirt for it
+K 16371 # nobody says spots alone
+S 16369 = 24701
+T mental_health_words
+S 16396 | breakdown | crisis | 2
+T phobias
+K 16434 # nothing left
+T massage_types
+S 16450 = 168
+S 16456 | chair | seated | 3
+S 16457 | couples | for two | 3
+S 16468 = 16536
+S 16449 = 3180
+S 16466 | full-body | - | 2
+S 16470 = 3174
+S 16451 = 3168
+K 16459 # nobody says Indian head alone
+K 16465 # nobody says gun for it
+S 16452 = 3169
+K 16471 # nobody says oil for it
+S 16464 | percussion | tapping | 4
+S 16455 | prenatal | - | 3
+S 16469 = 3209
+S 16446 = 28065
+T healthy_habits
+K 16534 # fixed term
+T spa
+K 16558 # nobody says day alone
+T turkish_bath
+S 16581 | attendant | bathhouse worker | 3
+T european_spa_towns
+K 16589 # nothing left
+T nutrition
+S 3843 = 26283
+T vitamins
+K 16621 # bare letter is nothing
+K 16638 # bare letter is nothing
+K 16631 # bare code is nothing
+K 16646 # bare code is nothing
+K 16647 # bare code is nothing
+K 16648 # bare code is nothing
+K 16649 # bare code is nothing
+K 16650 # bare code is nothing
+K 16632 # bare code is nothing
+K 16633 # bare code is nothing
+K 16644 # bare code is nothing
+K 16634 # bare code is nothing
+K 16629 # bare code is nothing
+K 16636 # bare code is nothing
+K 16645 # bare code is nothing
+K 16618 # fixed name
+K 16623 # bare letter is nothing
+K 16642 # bare letter is nothing
+K 16625 # bare letter is nothing
+K 16643 # bare letter is nothing
+T dietary_minerals
+K 3826 # nothing left
+T food_groups
+S 3871 | junk | unhealthy eats | 2

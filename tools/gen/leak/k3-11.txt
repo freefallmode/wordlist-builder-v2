@@ -1,0 +1,213 @@
+T skate_park_features
+S 48091 | bowl | skate park | 2
+K 43577 # name word is the whole identity
+S 48102 | plaza | skate park | 3
+S 48100 | pool | skate park | 3
+T skateboard_parts
+K 48120 # wheels already its alias
+T kinds_of_travelers
+S 48170 = 6690
+K 48147 # name word is the whole identity
+T travel_verbs
+K 28275 # name word is the whole identity
+T famous_routes
+K 48209 # fixed name
+K 48208 # fixed name
+K 48199 # fixed name
+T road_trip_words
+S 48286 = 2397
+T road_trip_games
+K 48296 # nobody says alphabet alone
+S 48305 = 34725
+K 48299 # nobody says quiet alone
+T hotel
+S 48330 | bar | drinking spot | 1
+T room_types
+S 48374 | accessible | adapted | 3
+K 48375 # bare bunk is a bed
+S 48377 = 48401
+K 48369 # connecting not used alone
+S 48362 | family | sleeps several | 2
+S 48379 | garden | garden-view | 3
+S 48380 | smoking | cigarettes allowed | 2
+T vacation_homes
+K 48391 # second alone is not a home
+S 3002 | rental | lodging | 2
+T famous_hotels
+K 48412 # fixed name
+K 48428 # fixed song name
+S 48429 | Chelsea | Manhattan landmark | 3
+K 48421 # fixed name
+S 48424 = 48659
+T camping_gear
+S 48484 | table | folding outdoor | 2
+T tent_parts
+K 48496 # inner not used alone
+S 48502 | stuff sack | packing | 3
+S 48516 | flap | doorway | 3
+T tent_types
+K 48536 # nobody says backpacking alone
+K 48543 # nobody says beach alone
+K 38287 # bedouin means the people
+S 48520 | bell | round canvas | 3
+S 48525 | cabin | tall-walled | 3
+S 48533 | canvas | heavy cloth | 3
+K 60709 # nobody says expedition alone
+S 48529 | family | large sleeping | 2
+S 48528 | four-season | winter-rated | 3
+K 60705 # nobody says frame alone
+S 48527 | geodesic | domed lattice | 4
+K 48542 # glamping is not a tent
+K 48530 # nobody says hammock for it
+K 48544 # nobody says hoop alone
+S 48538 | inflatable | air-beam | 3
+K 48537 # nobody says instant alone
+K 48546 # nobody says mess alone
+S 40260 | pop-up | spring-frame | 2
+K 48522 # fixed name
+S 48545 | pyramid | peaked shelter | 3
+S 48526 | ridge | A-shaped | 3
+K 48531 # roof alone is a building part
+S 48541 | safari | luxury canvas | 3
+S 60708 | Sibley | conical army | 5
+K 48539 # tarp alone is a sheet
+S 48521 | tunnel | hooped | 2
+K 60707 # umbrella is rain gear
+K 48532 # wall alone is a building part
+K 60706 # nobody says wedge alone
+T rvs_and_campers
+K 48282 # name word is head noun
+K 48623 # nobody says pickup alone
+S 48604 | pop-up | folding trailer | 2
+T trail_words
+S 48652 | loop | circular hike | 2
+S 48665 | logbook | hiker sign-in | 3
+T famous_hiking_trails
+K 48692 # fixed name
+K 48694 # fixed name
+K 32160 # fixed name
+K 48217 # fixed name
+K 48690 # fixed name
+K 60727 # fixed name
+T climbing_gear
+S 45086 | rock shoes | - | 3
+K 48712 # nobody says loop alone
+T safari_words
+S 48741 | bush hat | - | 3
+T luggage
+K 48744 # nobody says hand alone
+S 46910 | rack | overhead shelf | 2
+S 48762 | tag | owner ID | 2
+T travel_documents
+K 48791 # nobody says cruise alone
+S 48768 | insurance | trip cover | 2
+S 48783 | permit | border | 2
+T beach_gear
+S 48811 | bag | tote | 2
+K 39807 # nobody says ball alone
+S 48814 | mat | sand lounging | 2
+T souvenirs
+K 48820 # spoon alone is cutlery
+T turkish_souvenirs
+S 52310 = 23501
+S 19296 = 226
+K 643 # lokum already in theme
+S 59297 = 34144
+S 59302 = 34133
+S 16580 = 225
+S 59296 = 3755
+T japanese_souvenirs
+S 59318 | knife | kitchen blade | 3
+T mexican_souvenirs
+S 59330 = 3668
+T moroccan_souvenirs
+S 59335 = 3027
+S 59338 = 23105
+T travel_accessories
+S 48838 = 48766
+S 48845 = 3668
+S 48849 = 23257
+S 48287 = 25506
+S 48842 = 3755
+T beach_vacation
+S 48866 | bar | seaside drinks | 2
+K 48402 # nobody says hut alone
+T ski_trip
+K 48870 # fixed name
+K 43521 # name word is the whole identity
+S 24667 = 21315
+K 60749 # nobody says bum alone
+S 33093 = 57621
+S 24611 = 4871
+S 48874 = 2980
+S 43539 = 46935
+S 43542 = 4215
+S 48873 | poles | hand-held sticks | 2
+S 48880 | rental | equipment hire | 3
+S 43541 = 2979
+K 43555 # nobody says school alone
+S 48884 = 43547
+T cruise_words
+K 48903 # bare card is vague
+K 48890 # bare director is vague
+S 47507 | terminal | ship port | 2
+T cruise_lines
+K 59376 # fixed name
+S 59355 | Celebrity | ship brand | 3
+S 59369 | Crystal | luxury ship brand | 4
+K 59356 # Disney alone is the company
+T sightseeing_words
+K 2963 # name word is the whole identity
+T famous_theme_parks
+K 48946 # fixed name
+K 48963 # fixed name
+K 48950 # fixed name
+T beach_destinations
+K 36623 # fixed name
+K 36620 # fixed name
+K 36619 # fixed name
+T special_vehicles
+K 3156 # amphibious not used alone
+T emergency_vehicles
+K 49038 # not a shortening
+K 49040 # tactical not used alone
+T military_vehicles
+K 49104 # bare truck is civilian
+T delivery_vehicles
+S 49115 = 2750
+S 49116 = 28692
+K 49118 # pizza car is nonsense
+T space_vehicles
+K 49157 # nobody says plane alone
+S 7127 | shuttle | orbiter | 2
+K 7141 # station alone is vague
+T truck_types
+K 49125 # nobody says armored alone
+K 49110 # nobody says box alone
+K 49195 # nobody says bucket alone
+K 49201 # nobody says concrete alone
+K 49184 # nobody says delivery alone
+S 3105 | dumper | tipping | 3
+K 3145 # fixed name
+K 49196 # nobody says fuel alone
+S 3113 | dustcart | bin lorry | 4
+K 3121 # fixed name
+K 30262 # nobody says logging alone
+K 3150 # nobody says mail alone
+K 3144 # monster alone is a creature
+K 49127 # nobody says moving alone
+K 49200 # nobody says panel alone
+S 49126 | reefer | chilled cargo | 4
+K 49191 # nobody says stake alone
+K 28334 # name word is the whole identity
+K 49197 # nobody says water alone
+T electric_vehicles
+S 47886 | e-bike | electric cycle | 2
+K 46882 # nobody says bus alone
+K 32362 # bare car is petrol
+K 49221 # bare motorbike is petrol
+K 49220 # bare truck is petrol
+K 49222 # bare van is petrol
+K 49247 # name word is the whole identity
+T hands_and_feet
+K 3174 # name word is the whole identity

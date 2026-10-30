@@ -1,0 +1,253 @@
+T camera_shots
+S 13130 | aerial | filmed from above | 3
+K 13151 # nobody says cowboy for it
+S 13129 | crane | film crane move | 3
+K 13131 # drone means the aircraft
+K 13123 # establishing alone means nothing
+K 13152 # nobody says full alone
+S 13143 | insert | cutaway detail | 4
+S 13119 | long | far-away framing | 3
+S 13144 | master | covering main take | 3
+S 13121 | medium | mid-range framing | 3
+S 13136 | reaction | cutaway to a face | 3
+S 13126 | tilt | up-and-down move | 3
+K 13124 # tracking alone isn't a noun here
+K 13135 # two alone means nothing
+S 13120 | wide | broad framing | 2
+T book_genres
+K 13173 # picture alone isn't a book
+T fairy_tale_characters
+K 6989 # theme name word is the identity
+T comic_book_words
+S 12698 | strip | cartoon in panels | 3
+T book_formats
+K 13553 # nobody says board for it
+K 13565 # nobody says coffee table alone
+K 13173 # picture alone isn't a book
+K 13549 # nobody says pocket for it
+S 13554 | pop-up | folding 3D paper | 3
+K 13570 # talking alone means nothing
+T fairy_tale_villains
+K 13614 # nobody says wicked for her
+T circus
+S 13713 | ring | performing arena | 3
+T magic_show_words
+K 13746 # nobody says box for it
+S 13744 | trick | illusion performed | 1
+T comedy_words
+K 13774 # nobody says club alone
+K 13773 # observational alone is only adjective
+T fairground_rides
+K 13797 # nobody says dark for it
+K 13801 # kiddie alone means nothing
+K 13789 # nobody calls the ride swing
+T street_performers
+S 13825 = 6204
+S 13806 = 13719
+T theme_park_words
+S 13845 = 2395
+K 13850 # theme name is the whole identity
+K 13833 # nobody says water for it
+T party_entertainment
+S 13862 | entertainer | hired performer | 2
+T brazilian_carnival_words
+K 5124 # theme name is the whole identity
+T asian_temple_features
+S 14060 | bell | large cast bronze | 1
+T bridge_types
+S 14079 = 7395
+S 14095 | Bailey | portable military span | 4
+S 14080 = 7394
+K 14090 # nobody says clapper for it
+K 14087 # covered alone means nothing
+K 14098 # floating alone means nothing
+K 14103 # girder is a part, not span
+K 14104 # hanging alone means nothing
+K 14096 # nobody says humpback alone
+S 14092 | lift | raising span | 3
+K 14100 # nobody says log for it
+K 14099 # movable alone means nothing
+K 14091 # nobody says packhorse alone
+K 14105 # pedestrian alone means nothing
+S 14086 | pontoon | floating boat span | 3
+K 14106 # nobody says railway for it
+K 14089 # nobody says rope for it
+K 14094 # nobody says stone for it
+S 7424 | suspension | hanging cable span | 2
+S 14085 | swing | pivoting span | 3
+K 14097 # tied-arch alone not a name
+K 14101 # nobody says toll for it
+K 14093 # transporter is a different thing
+T roof_styles
+K 14118 # nobody says barrel alone
+S 14116 | butterfly | V-shaped slope | 4
+K 14129 # conical alone means nothing
+K 14120 # domed alone means nothing
+S 14110 | flat | level, unsloped | 2
+K 14126 # nobody says green for it
+K 14122 # lean-to is a shelter
+K 14131 # pagoda is a building
+K 14111 # pitched alone means nothing
+K 14119 # nobody says pyramid for it
+K 14115 # nobody says shed for it
+K 14127 # nobody says slate for it
+K 14136 # nobody says sod for it
+K 14128 # tiled alone means nothing
+K 14137 # nobody says tin for it
+T column_styles
+K 14153 # attached alone means nothing
+K 14149 # cluster alone means nothing
+K 14152 # nationality alone isn't a column
+K 14144 # engaged alone means nothing
+K 14143 # fluted alone means nothing
+K 14150 # nationality alone isn't a column
+K 14147 # nobody says lotus for it
+K 14146 # nobody says papyrus for it
+K 14151 # nationality alone isn't a column
+S 14148 | Solomonic | twisted spiral shaft | 5
+T window_styles
+K 14189 # arched alone means nothing
+K 14179 # nobody says awning for it
+S 14164 | bay | projecting alcove | 3
+K 14172 # nobody says bow for it
+K 14184 # nobody says bullseye alone
+K 14193 # fixed alone means nothing
+K 14167 # nobody says French alone
+K 14192 # nobody says hopper for it
+K 14194 # nobody says lattice for it
+K 14191 # leaded alone means nothing
+K 14176 # louvred alone means nothing
+K 14190 # mullioned alone means nothing
+K 14169 # picture alone isn't a window
+K 14014 # nobody says rose alone
+K 14175 # round alone means nothing
+K 14185 # sliding alone means nothing
+K 14186 # nobody says storm for it
+K 14188 # nobody says Venetian alone
+T egyptian_afterlife
+K 34407 # theme name is the whole identity
+T aztecs_and_maya
+K 20409 # theme name is the identity
+K 6637 # theme name is the identity
+T inca_empire
+K 20433 # theme name is the identity
+K 20448 # Manco alone is another person
+K 20439 # nobody says Sapa alone
+T ancient_persia
+K 6625 # theme name is the identity
+T vikings
+K 12540 # theme name is the identity
+T ottoman_empire
+K 344 # theme name is the identity
+T celts
+K 20681 # theme name is the identity
+T medieval_times
+K 6702 # theme name is the identity
+T knights
+K 36 # theme name is the identity
+S 20697 | Teutonic Order | German crusading brotherhood | 3
+T orders_of_knighthood
+K 54062 # nobody says Livonian alone
+K 54064 # Christ alone is a person
+K 54072 # Saint John alone is a saint
+K 54070 # Saint Lazarus alone is a saint
+S 54058 | Santiago | Spanish brotherhood | 4
+K 54067 # St Patrick alone is a saint
+S 54056 | Bath | British honour | 3
+K 54061 # Dragon alone is a creature
+S 54066 | Elephant | Danish honour | 5
+K 54068 # nobody says Seraphim alone
+K 54071 # nobody says Star alone
+K 54073 # nobody says Sword alone
+S 54057 | Thistle | Scottish honour | 4
+T jousting_tournament
+K 6673 # theme name is the identity
+T crusades
+K 20939 # Children's alone means nothing
+K 20943 # First alone means nothing
+K 20623 # Fourth alone means nothing
+K 20942 # Third alone means nothing
+T black_death
+S 20972 | danse macabre | medieval death allegory | 3
+T conquistadors
+K 29312 # theme name is the identity
+T silk_road
+K 5039 # theme name is the identity
+T spice_trade
+S 21124 | Moluccas | Indonesian clove islands | 4
+T pirates
+K 6810 # fixed name
+K 6759 # theme name is the identity
+T treasure
+S 6793 = 25491
+T lost_treasures
+K 54302 # nobody says Kidd's alone
+K 54301 # Lima alone is a city
+K 54298 # fixed name
+K 54306 # nobody says Priam's alone
+K 54313 # Templar alone means a knight
+T pirate_ships
+K 13785 # theme name is the identity
+T pirate_clothing
+S 21312 = 4944
+T wars_and_battles
+K 4393 # theme name is the identity
+K 6839 # nobody says Boer alone
+K 6821 # civil alone means nothing
+K 6838 # nobody says Crimean alone
+K 6844 # nobody says Gulf alone
+K 6834 # Hundred Years' alone means nothing
+K 6843 # Korean alone is nationality
+K 6841 # Napoleonic alone means nothing
+K 6840 # nobody says Peloponnesian alone
+K 6836 # nobody says Punic alone
+K 6845 # Seven Years' alone means nothing
+K 6835 # Trojan alone is another thing
+S 6842 | Vietnam | 1960s Southeast Asian conflict | 3
+K 4392 # theme name is the identity
+K 6846 # 1812 alone is only a year
+K 6837 # nobody says Roses alone
+K 6847 # nobody says Zulu alone
+T napoleonic_battles
+S 54394 | Nile | 1798 naval clash | 4
+T world_war_ii_battles
+K 21477 # Britain alone is a country
+K 54429 # nobody says Atlantic alone
+K 54426 # Bulge alone not a battle name
+T armor
+K 21360 # nobody says body for it
+K 20704 # nobody says plate alone
+K 20584 # nobody says samurai alone
+K 21346 # suit alone is clothing
+T war_words
+K 21367 # crime alone isn't a war word
+T siege_weapons
+K 21377 # engine alone is a machine
+K 20723 # tower alone is a building
+T cold_war
+K 21448 # proxy alone isn't a war
+T peace_words
+K 21501 # fixed name
+K 21491 # theme name is the identity
+K 16826 # sign alone means nothing
+T famous_queens
+K 54578 # Anne alone is a name
+K 54638 # Mary alone is a name
+K 33387 # mother alone isn't a queen
+T fossils
+K 1567 # theme name is the identity
+K 21700 # footprint alone isn't a fossil
+K 1621 # record alone is a disc
+K 21708 # nobody says index alone
+K 21712 # living alone means nothing
+K 21707 # trace alone means nothing
+T tombs_and_burials
+K 21760 # chamber alone is a room
+K 21758 # mound alone is a hill
+K 6868 # theme name is the identity
+T stone_age
+K 1613 # nobody says Ice for it
+K 21802 # axe alone isn't Stone Age
+T bronze_age
+K 12038 # theme name is the identity
+K 7096 # collapse alone means nothing

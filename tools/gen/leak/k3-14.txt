@@ -1,0 +1,235 @@
+T school_events
+S 34998 | concert | - | 1
+S 34996 = 28394
+S 61315 = 6212
+S 34986 = 12244
+T places_in_a_school
+S 35031 = 43271
+S 35020 = 28115
+T media_and_communication
+K 4565 # fixed name; social alone vague
+T social_media_platforms
+K 35122 # fixed brand name
+T phone_words
+S 25785 | cordless | - | 3
+S 40276 | flip | folding mobile | 3
+K 35146 # nobody says booth alone
+S 35135 | number | contact | 1
+K 25642 # nobody says rotary alone
+T mail_words
+K 35189 # nobody says bulk alone
+S 35178 | certified | tracked delivery | 4
+S 35183 | express | fast post | 3
+S 35166 | junk | unwanted post | 2
+K 35180 # bag alone is not mail
+K 35185 # fixed name; order means request
+K 35174 # nobody says slot alone
+S 35165 | registered | tracked delivery | 3
+T journalism_words
+K 35220 # nobody says yellow alone
+T advertising_words
+K 35249 # fixed industry term
+T radio_words
+K 35283 # car alone is not radio
+K 11330 # clock alone is not radio
+S 35278 | pirate | unlicensed station | 3
+K 35277 # public alone too vague
+S 35266 | dial | tuner | 2
+K 35284 # drama alone is a genre
+S 35272 | host | broadcast presenter | 1
+S 35261 = 10930
+S 35259 | station | broadcaster | 1
+S 7366 | transistor | portable set | 3
+K 61389 # nobody says valve alone
+T social_classes
+K 35311 # class word is head noun
+K 35325 # class word is head noun
+K 35306 # class word is head noun
+K 35328 # ladder alone is not social
+K 35310 # class word is head noun
+K 35315 # class word is head noun
+K 35307 # class word is head noun
+T protest_words
+K 35356 # no bare form
+K 35366 # peaceful alone too vague
+S 35338 = 20877
+S 35339 = 35222
+T charity_words
+K 28298 # name word is whole identity
+S 35385 | auction | bidding sale | 1
+S 35402 | ball | formal dance | 2
+S 35384 | gala | formal event | 3
+K 35378 # shop alone is any shop
+T manners_and_etiquette
+K 29277 # name word is whole identity
+K 35409 # good alone is vague
+K 35412 # name word is whole identity
+K 35427 # fixed phrase
+K 35410 # table alone means furniture
+T aboriginal_culture
+K 35473 # fixed name
+T words_for_a_person
+K 35477 # name word is whole identity
+T words_for_leader
+K 35526 # name word is whole identity
+T words_for_expert
+K 35557 # name word is whole identity
+T words_for_beginner
+K 35587 # name word is whole identity
+T fans_and_followers
+K 35609 # name word is whole identity
+K 35624 # club alone too vague
+K 35064 # name word is whole identity
+K 35640 # nobody says hardcore alone
+T troublemakers
+K 35645 # name word is whole identity
+T kitchen
+S 23123 | island | counter unit | 2
+T garage
+K 23151 # door alone is not garage
+K 23172 # opener alone too vague
+T attic
+K 23196 # fan alone is generic
+T outside_the_house
+K 23254 # nobody says number alone
+T tables_and_desks
+K 23440 # bistro alone means restaurant
+S 23422 | card | games | 2
+S 4672 | coffee | living room | 1
+S 4692 | console | hallway | 3
+K 4479 # name word is whole identity
+S 4673 | dining | meals | 1
+K 23429 # drafting alone not a noun
+K 4690 # dressing alone means something else
+K 23425 # nobody says drop-leaf alone
+S 23419 | end | small | 2
+K 23423 # nobody says folding alone
+S 23420 | kitchen | cooking room | 1
+K 23426 # nobody says nest alone
+K 23432 # occasional alone is adjective
+K 23428 # pedestal alone means a base
+S 3055 | picnic | outdoor | 1
+S 23430 | pool | billiards | 2
+S 23427 | roll-top | sliding cover | 4
+S 23436 | school | classroom | 1
+S 23418 | side | small | 1
+S 23438 | sofa | lounge | 3
+S 16520 | standing | upright | 3
+K 23437 # nobody says telephone alone
+K 23435 # nobody says tilt-top alone
+S 23421 | writing | study | 2
+T beds
+K 23448 # nobody says air alone
+K 3666 # name word is whole identity
+K 23451 # cabin alone means a building
+K 23447 # nobody says camp alone
+K 23454 # canopy alone is a cover
+S 23442 = 39556
+K 23457 # hospital alone is a building
+S 23443 | king-size | bed size | 2
+K 23456 # loft alone is an attic
+S 23449 | murphy | wall fold | 3
+K 23458 # ottoman alone is furniture
+K 23455 # platform alone too vague
+S 23444 = 63324
+S 23441 | single | bed size | 1
+K 23453 # sleigh alone is a vehicle
+K 4689 # sofa alone is a couch
+T storage_furniture
+K 23468 # bench alone is not storage
+T lights_and_lamps
+S 23148 | bedside | by the bed | 2
+K 23499 # nobody says bulkhead alone
+S 23483 | ceiling | overhead | 1
+S 23221 | desk | work | 2
+K 23485 # fairy alone is a creature
+S 23480 | floor | standing | 1
+S 22972 | gas | gas-fired | 2
+S 3084 | hurricane | windproof | 3
+K 34150 # name word is whole identity
+S 23486 | lava | wax bubbles | 2
+S 23481 | bulb | filament | 1
+S 16114 | night | dim | 2
+S 21723 | oil | wick | 2
+S 23487 | pendant | hanging | 3
+S 23496 | reading | book | 2
+S 23495 | strip | fluorescent | 3
+S 23482 | table | tabletop | 1
+S 23493 | Tiffany | stained glass | 3
+S 23484 | wall | mounted | 2
+T rugs_and_carpets
+K 55248 # nobody says area alone
+S 55258 | bearskin | animal hide | 3
+K 23501 # name word is whole identity
+K 55263 # tile alone is a different thing
+K 23519 # nobody says hearth alone
+S 55259 | jute | natural fibre | 3
+S 55252 | oriental | eastern | 2
+S 23513 | Persian | Iranian weave | 2
+K 14031 # prayer alone means worship
+K 55250 # rag alone is a cloth
+K 23105 # name word is whole identity
+S 55251 | sheepskin | fleece | 3
+K 55249 # throw alone is a blanket
+T heating_and_cooling
+K 23581 # central alone is vague
+S 23580 | underfloor | warm floors | 3
+T fireplace_words
+K 55271 # surround alone is vague
+T hand_tools
+S 23679 = 4799
+T saws
+K 55285 # back alone is a body part
+S 55279 | bow | frame | 3
+K 55291 # nobody says buzz alone
+S 4834 | circular | round blade | 3
+K 55293 # nobody says compass alone
+S 4844 | coping | profile cuts | 4
+S 30265 | crosscut | across grain | 4
+S 4857 | dovetail | joint cutting | 4
+K 55294 # nobody says flush-cut alone
+S 55280 | fret | fine | 4
+K 55288 # nobody says hole alone
+S 55284 | keyhole | small cuts | 4
+S 23690 | mitre | angle cutting | 4
+K 55283 # nobody says panel alone
+K 55292 # nobody says pit alone
+S 30727 | pruning | garden branch | 3
+K 55286 # nobody says pull alone
+S 55282 | rip | along grain | 4
+K 318 # name word is whole identity
+S 46052 | scroll | curved cuts | 4
+S 23689 | table | bench-mounted | 3
+S 4853 | tenon | joint cutting | 4
+K 55289 # nobody says tile alone
+K 55295 # nobody says two-man alone
+T measuring_tools
+S 19848 = 19949
+K 23749 # jug alone is generic
+K 23744 # wheel alone is generic
+T adhesives
+K 23820 # construction alone is vague
+K 23829 # spray alone is vague
+T brooms_and_brushes
+K 55307 # nobody says banister alone
+K 23854 # bottle alone is a container
+K 23833 # name word is whole identity
+K 23853 # nobody says cobweb alone
+K 55306 # deck alone is vague
+K 24010 # dish alone is vague
+K 55296 # dustpan already in theme
+K 55302 # nobody says grill alone
+K 55300 # hand alone is a body part
+K 55299 # nobody says lint alone
+K 55304 # nobody says oven alone
+K 55297 # nobody says push alone
+K 55303 # nobody says radiator alone
+K 23839 # nobody says scrubbing alone
+K 55298 # nobody says sweeping alone
+K 23143 # toilet alone is a room
+K 55305 # nobody says washing-up alone
+K 23850 # whisk alone is a utensil
+K 23846 # wire alone is a material
+K 55301 # yard alone is a garden
+T laundry_words
+K 23886 # basket alone is not laundry

@@ -1,219 +1,190 @@
-T pies_and_tarts
-S 18168 | apple | dessert | 2
-K 18175 # nobody says banana cream alone
-S 18172 | blueberry | dessert | 2
-S 18169 | cherry | dessert | 2
-K 18184 # nobody says chess for it
-K 18176 # custard alone is just custard
-K 18195 # nobody says Dutch apple alone
-K 18190 # nobody says frangipane for it
-K 18177 # fruit alone is not the tart
-K 18192 # nobody says gooseberry for it
-K 59452 # nobody says gypsy for it
-K 59453 # jam alone is the preserve
-K 18191 # nobody says Manchester for it
-K 18178 # nobody says mince for it
-K 18183 # nobody says mud for it
-S 18171 | pecan | dessert | 2
-K 19177 # pork alone is the meat
-S 18170 | pumpkin | dessert | 2
-S 18182 | rhubarb | dessert | 3
-K 19193 # nobody says scotch for it
-K 18193 # nobody says sugar for it
-S 18187 | sweet potato | dessert | 3
-K 18179 # nobody says treacle for it
-T baking_ingredients
-K 584 # fixed name, powder alone means more
-S 585 | bicarbonate of soda | leavening | 3
-T flours
-S 18227 | almond | ground | 3
-S 18245 | amaranth | ground | 5
-S 59458 | bajra | ground | 5
-K 18221 # nobody says bread for it
-S 18231 | buckwheat | ground | 3
-K 18225 # nobody says cake for it
-S 18248 | cassava | ground | 4
-S 59456 | chestnut | ground | 4
-S 18235 | besan | pulse | 4
-S 18228 | coconut | ground | 3
-K 18230 # nobody says corn for it
-S 18241 | durum | ground | 4
-S 18251 | einkorn | ground | 5
-K 59457 # nobody says graham for it
-S 18252 | hazelnut | ground | 4
-S 18250 | kamut | ground | 5
-S 59459 | lupin | ground | 5
-S 18247 | millet | ground | 4
-S 18232 | oat | ground | 3
-K 18234 # nobody says pastry for it
-S 18239 | potato | ground | 4
-S 18249 | quinoa | ground | 4
-S 59455 | ragi | ground | 5
-S 18229 | rice | ground | 3
-S 18226 | rye | ground | 3
-S 18233 | spelt | ground | 3
-S 18238 | tapioca | ground | 4
-S 18244 | teff | ground | 5
-S 18218 | wheat | ground | 3
-T cake_decorations
-S 18259 | topper | - | 3
-T ice_cream_flavors
-K 18281 # fixed flavor name
-K 18300 # fixed flavor name
-T frozen_desserts
-K 18316 # custard alone is plain custard
-T puddings
-K 18334 # nobody says banana for it
-K 18333 # nobody says bread for it
-S 18339 | butterscotch | dessert | 3
-K 18350 # fixed name
-K 18356 # nobody says chia for it
-S 18332 | chocolate | dessert | 2
-S 18337 | Christmas pud | - | 2
-K 18345 # fixed name
-K 59477 # nobody says figgy for it
-K 18348 # fixed name
-K 18347 # fixed name
-K 18354 # nobody says lemon for it
-K 53497 # fixed name
-K 18355 # nobody says pistachio for it
-S 18352 | plum duff | - | 4
-K 18340 # nobody says cup for it
-K 18346 # fixed name
-K 18331 # nobody says rice for it
-K 18349 # nobody says sago for it
-K 18344 # nobody says semolina for it
-K 18353 # nobody says steamed for it
-K 18343 # nobody says summer for it
-S 18335 | tapioca | dessert | 3
-S 18338 | vanilla | dessert | 2
-T candy
-K 621 # nobody says cane for it
-K 18367 # nobody says corn for it
-S 628 | fairy floss | spun sugar | 3
-S 18361 | boiled sweet | - | 3
-K 18362 # fixed name
-T chocolates
-S 18399 | Belgian | cocoa | 3
-S 18384 | bittersweet | cocoa | 3
-K 18383 # nobody says bar for it
-K 18402 # nobody says button for it
-K 18401 # fixed name
-K 18403 # nobody says spread for it
-S 16745 | dark | cocoa | 2
-S 18381 | milk | cocoa | 2
-S 18396 | ruby | cocoa | 4
-S 18400 | Swiss | cocoa | 3
-S 18382 | white | cocoa | 2
-T pasta_rice_and_grains
-S 669 | brown | variety | 2
-K 652 # nothing left
-K 653 # nothing left
-S 686 | wild | variety | 3
-T pasta_dishes
-K 18538 # Italian name needs pasta
-K 59530 # Italian name needs pasta
-K 59528 # Italian name needs pasta
-K 18534 # Italian name needs pasta
-K 59531 # nobody says bake for it
-K 18539 # Italian name needs pasta
-K 59526 # Italian name needs pasta
-K 18530 # Italian name needs pasta
-K 18529 # nobody says salad for it
-K 18523 # pesto alone is the sauce
-T noodles
-K 18569 # nobody says cold for it
-K 18565 # nobody says cup for it
-K 18543 # nobody says egg for it
-S 18546 | bean threads | - | 4
-K 18554 # nobody says hand-pulled for it
-K 671 # nobody says instant for it
-K 690 # nobody says rice for it
-K 18561 # fixed name
-K 18560 # nobody says wonton for it
-T noodle_dishes
-K 18569 # nobody says cold for it
-K 18561 # fixed name
-T rice_dishes
-K 18584 # fixed name
-K 18585 # nobody says coconut for it
-K 18579 # nobody says dirty for it
-K 17993 # nobody says egg fried for it
-K 806 # nobody says fried for it
-K 59560 # nobody says jeera for it
-K 18590 # nobody says lemon for it
-K 18575 # fixed name
-K 18331 # nobody says pudding for it
-K 18586 # nobody says Spanish for it
-K 18577 # nobody says sticky for it
-T grains
-K 3857 # nobody says whole for it
-T dumplings
-K 18657 # nobody says apple for it
-K 18670 # nobody says boiled for it
-K 18656 # fixed name
-K 20237 # nothing left
-K 18669 # nobody says soup for it
-K 18659 # nobody says fried for it
-K 18658 # nobody says steamed for it
-K 18663 # nobody says suet for it
-T rice_varieties
-K 18691 # nobody says aromatic for it
-S 18676 | black | variety | 3
-S 669 | brown | variety | 2
-K 59598 # nobody says glutinous for it
-K 18684 # nobody says instant for it
-S 18674 | long-grain | - | 2
-S 18690 | medium-grain | - | 3
-K 18682 # nobody says parboiled for it
-S 18678 | red | variety | 3
-S 18675 | short-grain | - | 2
-K 18577 # nobody says sticky for it
-K 18673 # nobody says sushi for it
-K 59597 # nobody says valencia for it
-S 18672 | white | variety | 2
-S 686 | wild | variety | 3
-T herbs_spices_and_sauces
-K 729 # nobody says barbecue for it
-K 768 # nobody says fish for it
-K 728 # nobody says hot for it
-K 751 # nobody says tartar for it
-T spices
-K 18715 # fixed name
-T spice_blends
-K 18728 # fixed name
-K 18718 # fixed name
-K 18727 # nobody says mixed for it
-K 18729 # nobody says pickling for it
-K 18724 # fixed name
-T chili_peppers
-K 18771 # nobody says banana for it
-K 18773 # nobody says cherry for it
-K 17658 # nothing left
-S 18758 | bhut jolokia | superhot | 4
-K 18780 # nobody says green for it
-K 18784 # fixed name
-K 18779 # nobody says red for it
-K 18781 # nobody says tabasco for it
-S 18762 | bird's eye | - | 4
-T sauces_and_condiments
-K 18789 # nobody says apple for it
-K 729 # nobody says barbecue for it
-K 18788 # nobody says cranberry for it
-K 768 # nobody says fish for it
-K 728 # nobody says hot for it
-K 18794 # nobody says mint for it
-K 18793 # nobody says oyster for it
-K 751 # nobody says tartar for it
-K 18785 # nobody says tomato for it
-T french_sauces
-K 53209 # fixed name
-T asian_sauces
-K 53214 # nobody says black bean for it
-K 768 # nobody says fish for it
-K 18793 # nobody says oyster for it
-K 53220 # nobody says peanut for it
-K 53215 # nobody says plum for it
-K 53219 # nobody says satay for it
-K 53217 # nobody says tonkatsu for it
-K 53216 # nobody says xo for it
+T vultures
+K 9898 # nobody says it bare
+K 50605 # nobody says it bare
+K 50601 # nobody says it bare
+K 9655 # nobody says it bare
+K 50602 # nobody says it bare
+K 9899 # nobody says it bare
+K 50599 # nobody says it bare
+K 50609 # fixed name
+K 50608 # fixed name
+K 50603 # nobody says it bare
+K 50613 # nobody says it bare
+K 50610 # nobody says it bare
+K 8112 # turkey buzzard already listed
+K 1082 # nothing left
+K 50600 # nobody says it bare
+K 50606 # nobody says it bare
+T finches
+K 50628 # nobody says it bare
+K 50626 # nobody says it bare
+K 41021 # fixed name
+K 1092 # nothing left
+K 50615 # nobody says it bare
+K 50616 # nobody says it bare
+K 50627 # nobody says it bare
+K 50625 # nobody says it bare
+K 9847 # nobody says it bare
+T crows_and_ravens
+K 50638 # nobody says it bare
+K 50650 # nobody says it bare
+K 9895 # nobody says it bare
+K 50637 # nobody says it bare
+K 1069 # nothing left
+K 50639 # nobody says it bare
+K 50636 # nobody says it bare
+K 50647 # nobody says it bare
+K 50648 # nobody says it bare
+K 1083 # nothing left
+K 50649 # nobody says it bare
+T ducks
+K 50673 # nobody says it bare
+S 9862 | harlequin | duck | 4
+K 50664 # nobody says it bare
+S 8224 | mandarin | duck | 3
+S 1483 | muscovy | duck | 4
+S 50675 | Rouen | duck | 5
+K 46070 # toy, rubber alone is material
+S 50669 | ruddy | duck | 4
+K 50658 # nobody says it bare
+K 8229 # nobody says it bare
+K 8223 # nobody says it bare
+T geese_and_swans
+S 8211 | black | swan | 2
+K 50684 # nobody says it bare
+S 8210 | mute | swan | 3
+K 1066 # nothing left
+S 8212 | trumpeter | swan | 4
+S 50683 | tundra | swan | 4
+T flightless_birds
+K 8256 # nothing left
+T parrots
+S 8269 | amazon | parrot | 3
+K 8290 # nobody says it bare
+K 8286 # nobody says it bare
+K 8289 # nobody says it bare
+K 8285 # nobody says it bare
+K 8287 # nobody says it bare
+K 1065 # nothing left
+K 8288 # nobody says it bare
+S 8291 | Senegal | parrot | 4
+T colorful_birds
+K 8334 # fixed name
+T bird_body_parts
+S 8396 = 3180
+T pigeons_and_doves
+K 8482 # nobody says it bare
+K 8497 # nobody says it bare
+S 4629 | carrier | pigeon | 3
+K 8462 # nobody says it bare
+K 8476 # nobody says it bare
+K 8480 # nobody says it bare
+K 8500 # fixed name
+K 8475 # nobody says it bare
+K 1084 # nothing left
+K 8498 # nobody says it bare
+K 8471 # nobody says it bare
+K 8487 # nobody says it bare
+K 8468 # nobody says it bare
+K 8478 # nobody says it bare
+K 8495 # nobody says it bare
+K 8484 # nobody says it bare
+S 8465 | homer | pigeon | 3
+K 8479 # nobody says it bare
+K 8485 # nobody says it bare
+K 8473 # nobody says it bare
+K 8464 # nobody says it bare
+K 8494 # nobody says it bare
+K 8466 # nobody says it bare
+K 8496 # nobody says it bare
+K 1070 # nothing left
+K 8489 # nobody says it bare
+K 8470 # nobody says it bare
+K 8461 # nobody says it bare
+K 8472 # nobody says it bare
+K 8467 # nobody says it bare
+K 8488 # nobody says it bare
+K 8463 # nobody says it bare
+K 8469 # nobody says it bare
+K 8483 # nobody says it bare
+K 8318 # nobody says it bare
+K 8474 # nobody says it bare
+T snakes
+K 8531 # nobody says it bare
+S 8517 | bull | snake | 4
+K 8533 # nobody says it bare
+S 1191 | coral | snake | 3
+S 8507 | corn | snake | 3
+K 8523 # nobody says it bare
+K 8534 # nobody says it bare
+S 1192 | garter | snake | 2
+K 8504 # nobody says it bare
+S 8508 | king | snake | 3
+S 8506 | milk | snake | 4
+S 8509 | rat | snake | 4
+K 1328 # nobody says it bare
+K 8505 # nobody says it bare
+K 1135 # nothing left
+S 8524 | tiger | snake | 3
+K 8532 # nobody says it bare
+K 8516 # nobody says it bare
+T venomous_snakes
+K 50712 # nobody says it bare
+S 1191 | coral | snake | 3
+K 1328 # nobody says it bare
+S 8524 | tiger | snake | 3
+K 50724 # nothing left
+T constrictor_snakes
+K 50740 # nobody says it bare
+S 8517 | bull | snake | 4
+K 50741 # nothing left
+S 8507 | corn | snake | 3
+K 50733 # nobody says it bare
+S 8506 | milk | snake | 4
+K 50734 # nobody says it bare
+S 8509 | rat | snake | 4
+T lizards
+K 8550 # nobody says it bare
+K 8547 # nobody says it bare
+K 8551 # nobody says it bare
+K 1199 # nobody says it bare
+K 8566 # nobody says it bare
+K 8549 # nobody says it bare
+K 1184 # nobody says it bare
+K 8565 # nobody says it bare
+K 1137 # nothing left
+K 8546 # nobody says it bare
+K 8568 # nobody says it bare
+K 8567 # nobody says it bare
+K 8548 # nobody says it bare
+T turtles_and_tortoises
+K 8607 # nobody says it bare
+K 8572 # nobody says it bare
+K 8578 # nobody says it bare
+K 8593 # nobody says it bare
+K 8576 # nobody says it bare
+K 8575 # nobody says it bare
+K 8606 # nobody says it bare
+K 8605 # nobody says it bare
+K 8570 # nobody says it bare
+K 8579 # nobody says it bare
+K 8604 # nobody says it bare
+K 8581 # nobody says it bare
+K 8586 # nobody says it bare
+K 8584 # nobody says it bare
+S 8585 | stinkpot | turtle | 4
+K 8573 # nobody says it bare
+K 8602 # nobody says it bare
+K 8594 # nobody says it bare
+K 8603 # nobody says it bare
+K 8595 # nobody says it bare
+K 8580 # nobody says it bare
+K 1293 # nobody says it bare
+S 1201 | snapper | turtle | 3
+K 8583 # nobody says it bare
+K 8588 # nobody says it bare
+K 1143 # nothing left
+K 1142 # nothing left
+K 8587 # nobody says it bare
+T crocodilians
+K 8634 # nothing left

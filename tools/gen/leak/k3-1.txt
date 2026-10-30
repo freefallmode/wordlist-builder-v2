@@ -1,229 +1,204 @@
-T fruits
-K 361 # nobody says dragon for it
-K 107 # nobody says passion for it
-T tropical_fruits
-K 361 # nobody says dragon for it
-K 107 # nobody says passion for it
-T melons
-S 17262 | bailan | - | 5
-S 17253 | cassaba | - | 5
-K 17259 # nobody says green for it
-S 17245 | kiwano | spiky fruit | 4
-S 17252 | ogen | - | 5
-K 17258 # nobody says orange flesh
-S 17251 | persian | netted fruit | 4
-S 17243 | santa claus | striped fruit | 5
-K 17263 # nobody says snap for it
-S 17254 | sprite | small fruit | 5
-S 17257 | tigger | striped fruit | 5
-T dried_fruits
-K 17273 # bare apple is fresh fruit
-K 17267 # bare apricot is fresh fruit
-K 17277 # bare blueberry is fresh fruit
-K 17276 # bare cherry is fresh fruit
-K 17286 # bare coconut is not dried
-S 17295 | lychee nut | - | 4
-K 17269 # bare cranberry is fresh fruit
-K 17268 # bare fig is fresh fruit
-K 17271 # bare mango is fresh fruit
-K 17285 # bare mulberry is fresh fruit
-K 17280 # bare papaya is fresh fruit
-K 17288 # bare peach is fresh fruit
-K 17287 # bare pear is fresh fruit
-S 17289 | hoshigaki | - | 5
-K 17279 # bare pineapple is fresh fruit
-K 17284 # fixed name, leather is not it
-T apple_varieties
-S 17332 | Pomme d'Api | - | 5
-T asian_fruits
-K 361 # nobody says dragon for it
-T nuts
-S 17356 | brazil | tree seed | 3
-K 17372 # ginkgo means the tree
-K 17363 # hickory means the tree
-K 16760 # mixed alone means nothing
-K 17369 # nobody says monkey for it
-S 17368 | pili | - | 5
-S 17359 | pignoli | pine seed | 4
-S 17377 | shea | tree seed | 5
-K 17374 # soy means the bean
-T edible_seeds
-K 17408 # bare apple is the fruit
-S 17404 | sabja | - | 5
-S 15588 | nigella | spice | 4
-K 17399 # bare celery is the vegetable
-S 17393 | coriander | spice | 3
-K 17403 # lotus means the flower
-K 17407 # bare pea is the vegetable
-K 17401 # pomegranate means whole fruit
-K 17387 # poppy means the flower
-K 17402 # watermelon means whole fruit
-T root_vegetables
-K 17452 # chicory means the leaf plant
-S 17446 | renkon | - | 4
-S 17448 | Hamburg parsley | - | 5
-T leafy_greens
-S 17465 | beet tops | - | 4
-S 17467 | dandelion | salad leaf | 3
-S 17461 | gai choy | - | 4
-K 17474 # nobody says spring for it
-S 17466 | turnip tops | - | 4
-T squashes
-K 17509 # nobody says banana for it
-S 17508 | buttercup | gourd | 4
-S 17510 | carnival | gourd | 4
-S 17512 | gem | gourd | 4
-K 17521 # nobody says kombucha for it
-K 17491 # nobody says spaghetti for it
-K 17492 # summer alone means nothing
-S 17504 | turban | gourd | 4
-K 17493 # winter alone means nothing
-K 17494 # nobody says yellow for it
-T beans_and_pulses
-K 17548 # fixed name, baked alone nothing
-K 17526 # nobody says black for it
-K 17540 # nobody says butter for it
-S 17537 | haricot vert | - | 3
-K 17561 # nobody says jack for it
-S 17525 | kidney | red legume | 3
-S 17532 | lima | legume | 3
-S 17533 | pinto | speckled legume | 3
-K 17549 # nobody says runner for it
-S 17560 | tepary | - | 5
-T onion_family
-K 17580 # nobody says bermuda alone
-K 17576 # nobody says egyptian alone
-K 393 # name word is whole identity
-K 17584 # powder is not a shortening
-K 17567 # nobody says pearl for it
-K 17583 # pickled alone means nothing
-S 17562 | red | cooking type | 2
-K 17581 # nobody says spanish alone
-S 421 | scallion | green stalk | 2
-K 17565 # nobody says sweet for it
-K 17582 # nobody says torpedo for it
-K 17585 # nobody says tree alone
-K 17577 # nobody says walking alone
-K 17575 # nobody says welsh alone
-S 17563 | white | cooking type | 2
-K 17591 # fixed name
-S 17564 | yellow | cooking type | 2
-T cabbage_family
-K 395 # name word is whole identity
-S 17596 | Chinese leaf | - | 3
-S 17604 | hispi | - | 4
-K 17594 # nobody says red for it
-K 17601 # nobody says white for it
-T mushrooms
-S 17610 | button | fungus | 3
-S 17622 | chestnut | fungus | 3
-K 17629 # nobody says field alone
-S 17632 | hedgehog | fungus | 4
-K 17639 # nobody says horse for it
-K 17645 # name word is whole identity
-S 17613 | oyster | fungus | 3
-S 17640 | parasol | fungus | 4
-K 17637 # nobody says straw for it
-K 17630 # nobody says white for it
-T game_meats
-K 17737 # nobody says bird for it
-T sausages
-K 17752 # nobody says breakfast for it
-K 17771 # nobody says cocktail for it
-K 17753 # nobody says italian alone
-S 17751 | lincolnshire | pork link | 4
-K 17772 # polish alone means nationality
-K 17769 # pork alone is just meat
-K 17768 # nobody says summer alone
-S 17770 | wiener | - | 3
-T butcher_shop
-K 17893 # name word is whole identity
-K 17901 # paper alone means nothing
-T dairy_and_eggs
-K 518 # name word is whole identity
-S 519 | albumen | protein | 4
-T cheeses
-S 17942 | american | processed slice | 2
-S 17929 | blue | veined type | 2
-K 529 # nobody says cottage alone
-K 530 # nobody says cream for it
-K 17955 # nobody says pimento alone
-K 17943 # nobody says string alone
-T soft_cheeses
-K 529 # nobody says cottage alone
-K 530 # nobody says cream for it
-S 17928 | chèvre | - | 3
-T blue_cheeses
-K 17929 # name word is whole identity
-K 53106 # nobody says vinney alone
-S 53109 | cashel | - | 4
-S 53104 | maytag | - | 4
-S 53110 | picos | - | 5
-S 53101 | shropshire | veined type | 4
-T types_of_milk
-K 17980 # nobody says buffalo for it
-S 15599 | camel | dairy | 4
-S 17977 | chocolate | dairy | 2
-S 531 | condensed | - | 3
-K 17969 # nobody says cow for it
-K 17979 # nobody says donkey for it
-S 538 | evaporated | - | 4
-S 17965 | goat | dairy | 3
-S 17976 | hemp | dairy alternative | 4
-S 17972 = 16721
-S 17978 | pea | dairy alternative | 4
-K 536 # powdered alone means nothing
-S 17973 | raw | dairy | 3
-K 17974 # nobody says sheep for it
-S 17958 | skim | dairy | 2
-S 17957 | whole | dairy | 2
-T egg_dishes
-S 17983 | boiled | - | 2
-S 18007 | pidan | - | 5
-S 18006 | coddled | - | 5
-S 17986 | deviled | - | 3
-K 17992 # nobody says drop soup
-K 17993 # fried rice is another dish
-K 18008 # basket alone is nonsense
-K 17988 # nobody says salad alone
-S 17996 | florentine | spinach dish | 4
-K 17997 # royale alone means nothing
-S 17982 | fried | - | 2
-S 17984 | poached | - | 2
-K 17994 # scotch alone means whisky
-S 17981 | scrambled | - | 2
-S 18005 | shirred | - | 5
-S 17998 | soft-boiled | - | 3
-T cheese_dishes
-K 18019 # fixed name, cauliflower is a vegetable
-K 18018 # nobody says board alone
-K 18022 # nobody says fries for it
-K 18016 # nobody says sauce alone
-K 18021 # nobody says straws alone
-K 18010 # nobody says grilled alone
-S 815 | mac | baked pasta | 2
-T breads_and_baking
-K 584 # powder is not a shortening
-S 585 | bicarb | leavener | 3
-K 552 # name word is whole identity
-K 592 # nobody says soda for it
-T breads
-K 592 # nobody says soda for it
-S 18056 | white | sliced loaf | 2
-T flatbreads
-K 574 # name word is whole identity
-T pastries
-K 18078 # nobody says puff for the dough
-T cakes
-K 18104 # nobody says birthday alone
-S 18103 | carrot | dessert | 2
-S 18125 | chiffon | sponge | 4
-S 18102 | chocolate | dessert | 2
-K 18114 # nobody says coffee for it
-K 18133 # ice cream alone is another thing
-K 18118 # nobody says layer for it
-K 18136 # nobody says lemon for it
-S 18134 | marble | swirled sponge | 3
-S 18129 | opera | French dessert | 4
-K 18105 # nobody says pound for it
-K 18116 # nobody says wedding for it
+T small_wild_cats
+K 7795 # nobody says it alone
+K 7800 # nobody says it alone
+K 7794 # nobody says it alone
+K 7793 # nobody says it alone
+K 7786 # nobody says it alone
+K 7801 # nobody says it alone
+K 7778 # nobody says it alone
+K 7792 # nobody says it alone
+K 7790 # nobody says it alone
+K 7781 # nobody says it alone
+K 7802 # nobody says it alone
+K 7791 # nobody says it alone
+K 7785 # nobody says it alone
+K 7776 # nobody says it alone
+T monkeys
+K 50496 # nobody says it alone
+K 50488 # nobody says it alone
+K 7812 # nobody says it alone
+K 7813 # nobody says it alone
+K 50493 # nobody says it alone
+K 7815 # nobody says it alone
+K 982 # name is whole identity
+T whales_and_dolphins
+S 7894 | baleen | - | 3
+K 7876 # nobody says it alone
+S 1306 | blue | cetacean | 1
+K 7878 # common is only an adjective
+K 1285 # name is whole identity
+K 7880 # nobody says it alone
+K 7890 # nobody says it alone
+S 7869 | gray | cetacean | 3
+K 59910 # nobody says it alone
+S 7873 | pilot | cetacean | 3
+K 7877 # nobody says it alone
+S 7871 | right | cetacean | 4
+S 7881 | river | cetacean | 3
+K 59914 # nobody says it alone
+S 7874 | sei | cetacean | 4
+S 7879 | spinner | cetacean | 4
+K 1284 # name is whole identity
+K 7892 # nobody says it alone
+T marsupials
+K 7919 # name is whole identity
+K 7909 # nobody says it alone
+T deer
+S 9677 | fallow | - | 3
+K 50503 # nobody says it alone
+K 50508 # nobody says it alone
+S 9734 | mule | antlered animal | 3
+K 9871 # nobody says it alone
+S 9740 | red | antlered animal | 2
+S 9679 | roe | antlered animal | 3
+K 50501 # nobody says it alone
+T antelopes
+K 1025 # name is whole identity
+S 50511 | roan | African grazer | 5
+S 40205 | sable | African grazer | 4
+T wild_cattle
+S 50524 = 1453
+T wild_goats_and_sheep
+S 9809 | Dall | - | 5
+S 9806 | Marco Polo | Pamir argali | 5
+K 7934 # nobody says it alone
+K 50548 # nobody says it alone
+K 50545 # nobody says it alone
+K 50550 # nobody says it alone
+K 50543 # name is whole identity
+K 50549 # name is whole identity
+T wild_pigs
+K 50554 # nobody says it alone
+K 50556 # nobody says it alone
+K 50560 # nobody says it alone
+K 50553 # nobody says it alone
+T bears
+K 7952 # nobody says it alone
+S 7950 | black | large mammal | 1
+S 7944 | brown | large mammal | 1
+S 7943 | polar | large mammal | 1
+K 7957 # sloth means another animal
+K 7958 # nobody says it alone
+K 7955 # nobody says it alone
+T wild_dogs_and_foxes
+S 7969 | painted wolf | - | 4
+S 7963 | arctic | canid | 2
+K 7980 # nobody says it alone
+K 7972 # nobody says it alone
+K 7996 # nobody says it alone
+K 7982 # nobody says it alone
+K 7988 # nobody says it alone
+K 996 # name is whole identity
+S 7978 | gray | canid | 4
+K 7989 # nobody says it alone
+K 7977 # kit means a fox pup
+K 7987 # nobody says it alone
+S 7962 | red | canid | 2
+K 7976 # nobody says it alone
+K 7990 # nobody says it alone
+T weasel_family
+K 8010 # nobody says it alone
+K 8011 # nobody says it alone
+K 7997 # name is whole identity
+T bats
+K 993 # name is whole identity
+K 8034 # nobody says it alone
+K 8032 # nobody says it alone
+K 8042 # nobody says it alone
+K 8053 # nobody says it alone
+K 8050 # nobody says it alone
+K 8039 # nobody says it alone
+S 8026 | fruit | flying mammal | 2
+K 8043 # nobody says it alone
+K 8044 # nobody says it alone
+S 8029 | horseshoe | flying mammal | 3
+K 8046 # nobody says it alone
+K 8052 # nobody says it alone
+K 8041 # nobody says it alone
+K 8033 # nobody says it alone
+K 8031 # nobody says it alone
+K 8040 # nobody says it alone
+K 8049 # nobody says it alone
+K 8045 # nobody says it alone
+K 8051 # nobody says it alone
+K 8047 # nobody says it alone
+S 8025 | vampire | flying mammal | 2
+K 8048 # nobody says it alone
+T rabbits_and_hares
+S 1484 | Angora | fluffy breed | 3
+S 8062 | Arctic | lagomorph | 3
+K 8085 # nobody says it alone
+K 8064 # nobody says it alone
+S 8069 | Dutch | lagomorph | 3
+K 8063 # nobody says it alone
+K 8058 # name is whole identity
+K 8076 # nobody says it alone
+K 8090 # fixed name, March alone fails
+K 8072 # nobody says it alone
+K 8065 # nobody says it alone
+K 8074 # nobody says it alone
+K 1443 # name is whole identity
+S 8071 | rex | - | 4
+S 8061 | snowshoe | lagomorph | 4
+K 8073 # nobody says it alone
+T birds_of_prey
+K 8119 # name is whole identity
+K 8106 # nobody says it alone
+T owls
+S 8096 | barn | night bird | 2
+S 50566 | barred | - | 4
+K 50580 # nobody says it alone
+K 50570 # nobody says it alone
+S 9784 | burrowing | - | 4
+K 8100 # eagle means the bird
+K 50567 # nobody says it alone
+K 50578 # nobody says it alone
+K 59926 # nobody says it alone
+K 50573 # nobody says it alone
+K 59921 # nobody says it alone
+K 59925 # nobody says it alone
+S 50571 | great grey | - | 4
+S 8099 | great horned | - | 3
+K 50575 # nobody says it alone
+K 50581 # nobody says it alone
+K 8116 # nobody says it alone
+S 50564 | long-eared | - | 4
+K 59924 # nobody says it alone
+K 50576 # nobody says it alone
+K 1063 # name is whole identity
+K 51110 # nobody says it alone
+K 59922 # nobody says it alone
+K 50569 # nobody says it alone
+S 50574 | scops | - | 5
+S 8117 | screech | night bird | 3
+S 50565 | short-eared | - | 4
+S 8097 | snowy | night bird | 2
+K 59923 # nobody says it alone
+K 50577 # nobody says it alone
+S 9853 | spotted | - | 4
+S 8098 | tawny | night bird | 3
+K 50572 # nobody says it alone
+T eagles
+K 50591 # nobody says it alone
+K 50597 # nobody says it alone
+S 2528 | bald | raptor | 2
+K 50596 # nobody says it alone
+K 50586 # nobody says it alone
+K 50583 # nobody says it alone
+K 1062 # name is whole identity
+K 8111 # nobody says it alone
+S 8093 | golden | raptor | 2
+S 8108 | harpy | raptor | 4
+K 50588 # nobody says it alone
+K 50598 # nobody says it alone
+K 50584 # nobody says it alone
+K 32324 # nobody says it alone
+K 8110 # nobody says it alone
+K 50594 # nobody says it alone
+K 50592 # nobody says it alone
+K 50595 # nobody says it alone
+K 50589 # nobody says it alone
+K 50582 # nobody says it alone
+K 50590 # nobody says it alone
+K 8109 # nobody says it alone
+K 50585 # nobody says it alone

@@ -1,0 +1,254 @@
+T trojan_war
+K 6928 # fixed name, Horse alone wrong
+T shinto_kami
+K 22120 # name word is whole identity
+T yoruba_orishas
+K 22214 # name word is whole identity
+T sea_monsters
+S 54948 | serpent | legendary giant snake | 2
+T winged_beasts
+K 54971 # nobody says lion for it
+T giants_of_legend
+K 55040 # frost alone is not a giant
+K 55041 # hill alone is not a giant
+T legendary_horses
+K 6928 # fixed name, Trojan alone is malware
+T fantasy
+K 7039 # fixed name, high alone wrong
+T magic_items
+K 13624 # fixed name, Jack's beans
+K 13630 # fixed name, Aladdin's lamp
+K 13368 # fixed name, Snow White's mirror
+K 13638 # fixed name, ring alone vague
+T wizard_words
+K 6980 # name word is whole identity
+K 22408 # nobody says hat alone
+T dragons
+K 22475 # nobody says Chinese for it
+K 6982 # name word is whole identity
+K 22473 # nobody says egg for it
+K 22472 # slayer alone is vague
+S 1152 = 57223
+K 22474 # nobody says Welsh for it
+T fairy_folk
+K 6989 # name word is whole identity
+K 22497 # nobody says dust for it
+S 13358 = 32407
+K 17638 # nobody says ring for it
+K 22494 # fixed name, Tooth alone wrong
+T robin_hood_legend
+K 55088 # name word is whole identity
+K 12551 # name word is whole identity
+T arabian_nights
+K 22715 # fixed name
+T aboriginal_dreaming
+K 34428 # name word is whole identity
+T ghosts_and_spirits
+K 62062 # fixed name
+K 12529 # name word is whole identity
+S 22786 | Marley | Scrooge's partner | 3
+K 22776 # name word is whole identity
+T ages_of_history
+K 62068 # fixed name
+K 7105 # fixed name
+K 7070 # fixed name
+K 7071 # fixed name
+K 22836 # fixed name
+K 7072 # fixed name
+K 22830 # fixed name
+K 7091 # adjective not used alone
+K 62063 # adjective not used alone
+S 7051 | Bronze | prehistoric era | 2
+S 22832 | Copper | prehistoric era | 4
+K 22829 # adjective not used alone
+K 7069 # adjective not used alone
+K 7092 # adjective not used alone
+K 62064 # adjective not used alone
+K 1613 # Ice alone is not the era
+K 7067 # fixed name
+S 7052 | Iron | prehistoric era | 2
+K 7068 # Jazz alone not the era
+K 22834 # Machine alone is vague
+K 6700 # fixed name
+K 7066 # Space alone is vague
+S 7050 | Stone | prehistoric era | 2
+K 22833 # Viking alone is vague
+T chinese_dynasties
+K 62078 # fixed name
+T royal_houses
+S 55172 | Normandy | Norman dynasty | 4
+S 55161 | Savoy | Italian dynasty | 4
+T empires
+K 22880 # demonym is not an empire
+S 22883 | Byzantine | eastern Roman state | 3
+K 22906 # demonym is not an empire
+K 22889 # demonym is not an empire
+S 22900 | Ghana | medieval West African state | 5
+K 22890 # fixed name
+K 22908 # demonym is not an empire
+S 22901 | Mali | medieval West African state | 4
+S 20555 | Persian | ancient Iranian power | 3
+K 22887 # demonym is not an empire
+K 22888 # demonym is not an empire
+K 22886 # demonym is not an empire
+T wild_west_legends
+K 55199 # fixed name
+T wild_west_town
+K 31823 # fixed name
+T lab_equipment
+K 24451 # nobody says coat alone
+T lab_safety_gear
+K 24451 # nobody says coat alone
+K 24790 # glasses alone is plain eyewear
+K 49965 # shower alone is bathroom
+T chemistry_words
+S 40447 | organic | carbon compounds field | 3
+T acids_and_bases
+K 40492 # adjective not used alone
+K 40485 # name word is whole identity
+K 32183 # nobody says rain for it
+K 40486 # name word is whole identity
+K 40496 # nobody says battery for it
+K 40493 # adjective not used alone
+K 39158 # adjective not used alone
+K 40494 # adjective not used alone
+K 40508 # adjective not used alone
+K 3641 # adjective not used alone
+K 40491 # adjective not used alone
+K 40495 # adjective not used alone
+K 40502 # strong alone is vague
+K 40503 # weak alone is vague
+T chemical_reactions
+K 40553 # fixed name
+T forces
+K 40632 # adjective not used alone
+K 40636 # contact alone is vague
+K 40634 # adjective not used alone
+K 40635 # adjective not used alone
+K 40624 # normal alone is vague
+K 40631 # spring alone is vague
+K 40629 # adjective not used alone
+T energy_types
+K 40658 # adjective not used alone
+K 40659 # binding alone is vague
+K 40644 # adjective not used alone
+K 40651 # adjective not used alone
+K 40645 # adjective not used alone
+K 40652 # adjective not used alone
+K 40660 # adjective not used alone
+K 40661 # adjective not used alone
+S 40646 = 27963
+K 40655 # adjective not used alone
+K 40653 # adjective not used alone
+S 40647 = 14696
+K 32238 # wave alone is vague
+K 40662 # adjective not used alone
+T electricity_words
+S 40674 | static | charge buildup | 2
+T light_words
+K 7139 # fixed name
+K 40611 # fixed name
+K 40708 # adjective not used alone
+T magnet_words
+K 40731 # bar alone is vague
+K 40732 # fridge alone is not a magnet
+S 40730 | horseshoe | U-shaped type | 2
+K 40727 # name word is whole identity
+S 40741 | neodymium | strong rare-earth type | 3
+K 40747 # adjective not used alone
+T acoustics_words
+K 14714 # name word is whole identity
+T nuclear_words
+K 40822 # power alone is vague
+K 34716 # submarine alone is vague
+K 40823 # waste alone is vague
+K 40824 # weapon alone is vague
+K 40830 # winter alone is vague
+T heat_science
+K 40847 # name word is whole identity
+K 40851 # capacity alone is vague
+K 40861 # engine alone is vague
+K 40855 # sink alone is vague
+K 40852 # transfer alone is vague
+K 40850 # adjective not used alone
+K 40849 # adjective not used alone
+T cell_parts
+K 40915 # sap alone is vague
+K 40897 # wall alone is vague
+T genetics_words
+K 40928 # code alone is vague
+K 40933 # engineering alone is vague
+T microbes
+K 39509 # name word is whole identity
+T classification_words
+K 40987 # name word is whole identity
+T evolution_words
+K 40865 # name word is whole identity
+T ecology_words
+K 41037 # name word is whole identity
+T life_cycle_words
+K 41064 # name word is whole identity
+T space
+S 7127 | shuttle | NASA orbiter | 2
+S 7141 | station | orbiting outpost | 3
+T moons
+K 7110 # name word is whole identity
+T southern_sky
+K 2551 # fixed name
+T space_missions
+K 21432 # race alone is vague
+S 7127 | shuttle | NASA orbiter | 2
+T stars
+K 41299 # fixed name
+T star_types
+S 58023 | binary | two-star system | 2
+K 58033 # adjective not used alone
+S 7148 | neutron | collapsed stellar core | 3
+K 58031 # fixed name
+S 58025 | variable | brightness-changing type | 4
+T space_rocks
+K 41317 # name word is whole identity
+T rocket_parts
+S 49705 = 2567
+K 58036 # fixed name
+T moon_phases_and_moods
+K 41372 # bare animal names not moons
+K 41378 # bare colour names not moons
+K 41363 # blood alone is vague
+K 41360 # blue alone is vague
+K 41371 # bare animal names not moons
+K 41373 # cold alone is vague
+K 41370 # flower alone is vague
+K 15922 # half alone is vague
+K 31538 # harvest alone is vague
+K 41364 # fixed name
+K 41367 # bare colour names not moons
+K 41376 # quarter alone is vague
+K 41366 # snow alone is vague
+K 41365 # bare fruit names not moons
+K 41368 # bare animal names not moons
+K 41381 # fixed name
+K 41362 # bare animal names not moons
+K 41369 # bare animal names not moons
+T galaxies_and_nebulae
+K 41407 # fixed name
+K 41396 # fixed name
+K 7107 # name word is whole identity
+T numbers_one_to_ten
+K 41471 # name word is whole identity
+K 29033 # name word is whole identity
+T multiples_of_ten
+K 29033 # name word is whole identity
+T number_types
+K 41525 # adjective not used alone
+S 41513 | complex | a+bi type | 3
+K 41529 # adjective not used alone
+S 41515 | cube | n cubed | 3
+K 41526 # adjective not used alone
+S 41507 | natural | counting from one | 3
+K 41524 # adjective not used alone
+S 41517 | perfect | equals sum of divisors | 4
+S 41510 | real | includes fractions and decimals | 3
+S 41514 | square | n times itself | 2
+K 41516 # adjective not used alone
+S 41506 | whole | zero and up | 2

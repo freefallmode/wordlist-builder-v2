@@ -1,0 +1,254 @@
+T horse_breeds
+K 9494 # nobody says Mongolian alone
+S 9491 | Paint | patterned | 3
+S 1531 | Quarter | American stock | 3
+T pony_breeds
+S 9502 | Fell | northern England | 4
+S 9510 | Gotland | Swedish | 5
+S 9516 = 9480
+S 9501 | Highland | Scottish | 4
+K 9499 # nobody says New Forest alone
+K 9521 # nobody says Newfoundland alone
+K 9515 # nobody says Sable Island alone
+S 9517 | Welsh Mountain | small Welsh type | 4
+K 9495 # Welsh alone clashes with cob
+T horse_tack
+S 9576 = 3668
+K 9580 # nothing left
+T horse_family
+K 9627 # feral alone is nonsense
+K 153 # nothing left
+K 9624 # wild alone is nonsense
+T african_animals
+K 7969 # wild dog alone is vague
+T african_birds
+K 51104 # nobody says go-away alone
+K 8106 # nobody says secretary alone
+T madagascar_animals
+K 50598 # fish eagle is another species
+T turkish_animals
+K 9318 # clashes with Angora rabbit goat
+T indian_animals
+K 51130 # different species from great bustard
+K 50735 # python alone is any python
+T japanese_animals
+S 51171 | bobtail | cat | 4
+S 51003 | Chin | dog | 4
+T antarctic_animals
+K 9710 # midge alone is any midge
+T penguins
+S 8243 | jackass | black-footed | 4
+K 51227 # not a species name
+K 51229 # banded alone means nothing
+K 51222 # blue alone is just colour
+K 51228 # not a species name
+S 51225 | erect-crested | - | 5
+S 8242 | fairy | little blue | 3
+S 8244 | Galapagos | equatorial | 4
+S 8235 | king | orange-necked | 2
+S 8239 | macaroni | yellow-plumed | 4
+S 51223 | royal | Macquarie Island | 4
+S 51226 | Snares | New Zealand island | 5
+T andean_animals
+K 9804 # cat alone is any cat
+S 7800 | mountain cat | - | 5
+T galapagos_animals
+K 51263 # racer alone is any racer
+K 51265 # rail alone is any rail
+T arctic_animals
+S 7963 = 996
+S 8062 = 8058
+K 8132 # tern alone is any tern
+S 9750 = 995
+T pond_life
+S 9765 = 1367
+T desert_animals
+K 9659 # hedgehog alone not desert
+K 8553 # iguana alone not desert
+S 8578 = 1143
+T mountain_animals
+S 7934 = 154
+K 7823 # gorilla alone not mountain
+K 8065 # hare alone not mountain
+K 9616 # zebra alone not mountain
+T striped_animals
+K 9641 # hyena alone not striped
+T spotted_animals
+K 9857 # dolphin alone not spotted
+S 9854 = 1020
+K 9853 # owl alone not spotted
+T black_and_white_animals
+K 9860 # skimmer alone not black-white
+T burrowing_animals
+K 9784 # owl alone not burrowing
+T spiny_animals
+S 9909 = 1058
+K 9907 # dogfish alone not spiny
+K 9905 # mouse alone not spiny
+T hopping_animals
+K 9912 # mouse alone not hopping
+T long_necked_animals
+K 9916 # whole name, nothing shorter
+T pink_animals
+K 9924 # anemone alone not pink
+K 9927 # lady crab is nonsense
+K 9921 # pigeon alone not pink
+S 9922 = 466
+K 9929 # toe tarantula is nonsense
+T gliding_animals
+K 9950 # frog alone not gliding
+S 9940 = 7897
+T insect_eaters
+K 8338 # whole bird name
+T dinosaurs
+K 1551 # nothing left
+T flying_reptiles
+K 9998 # dinosaur alone not flying
+K 9996 # nothing left
+K 9997 # winged alone is nonsense
+T sea_reptiles
+K 1328 # snake alone not marine
+S 1293 = 1142
+T dinosaur_words
+K 10120 # bones alone not dinosaur
+T animal_experts
+S 10470 | behaviourist | pet and wildlife | 3
+S 10474 | trainer | circus and zoo | 2
+T trees
+K 1669 # Joshua alone is nonsense
+S 1686 | plane | London street | 4
+T deciduous_trees
+S 1686 | plane | London street | 4
+T evergreen_trees
+K 25007 # Christmas alone is nonsense
+T fruit_trees
+S 29967 = 87
+S 29975 = 352
+S 29986 = 111
+S 29978 = 88
+S 29969 = 92
+S 29989 = 373
+S 29974 = 101
+S 29981 = 77
+S 29990 = 374
+S 29995 = 104
+S 29993 = 82
+S 29973 = 74
+S 29992 = 375
+S 29977 = 95
+S 29984 = 388
+S 29996 = 17225
+S 29985 = 367
+S 29987 = 353
+S 29976 = 360
+S 29972 = 76
+S 29971 = 93
+S 29968 = 89
+S 29991 = 105
+S 29970 = 94
+S 29982 = 100
+S 29983 = 108
+S 29994 = 78
+T nut_trees
+S 29997 = 17235
+K 30002 # nobody says Brazil for it
+S 30010 = 17367
+S 30000 = 17351
+S 30005 = 17364
+K 30004 # filbert alone is the nut
+S 30001 = 17357
+S 29998 = 17352
+K 30006 # pine alone is any pine
+S 29999 = 17353
+T tropical_trees
+S 29978 = 88
+S 30018 = 17204
+S 30024 = 717
+S 30025 | clove | spice | 3
+K 30015 # cocoa alone is drink
+S 30027 = 106
+S 29977 = 95
+S 30026 = 740
+S 30019 = 102
+K 30014 # rubber alone is material
+T african_trees
+K 60159 # mahogany alone not African
+K 60160 # tulip alone is flower
+K 56418 # nobody says dragon for it
+K 56409 # nobody says fever for it
+K 56410 # nobody says sausage for it
+T asian_trees
+K 30014 # rubber alone is material
+T australian_trees
+K 30660 # tea alone is drink
+T south_american_trees
+S 30000 = 17351
+K 30014 # rubber alone is material
+T north_american_trees
+S 56463 = 1635
+K 1669 # Joshua alone is nonsense
+T mediterranean_trees
+S 29997 = 17235
+S 29974 = 101
+K 56475 # nobody says Judas alone
+S 29973 = 74
+S 29972 = 76
+S 29999 = 17353
+S 1686 | plane | London street | 4
+S 29982 = 100
+T woodland
+S 30131 = 30151
+S 30123 = 16849
+T woodland_features
+K 30160 # edge alone not woodland
+T forest_types
+S 30183 = 1774
+S 30176 | boreal | northern conifer | 3
+S 30182 | cloud | mist-shrouded | 3
+K 30206 # community alone is nonsense
+S 30180 = 32108
+S 30181 = 1673
+S 30203 | dipterocarp | Southeast Asian | 5
+K 30190 # dry alone is vague
+S 30201 | elfin | stunted mountain | 5
+S 30188 = 1644
+K 30196 # nobody says gallery for it
+S 30192 = 1292
+S 30189 = 28270
+S 30187 = 2010
+S 30197 | montane | highland | 4
+S 30186 | old-growth | - | 3
+S 30200 | peat swamp | - | 5
+K 30193 # fixed name
+S 30184 = 1629
+S 30195 = 30240
+S 30191 = 1640
+S 30202 | sclerophyll | hard-leaved | 5
+K 30194 # secondary alone is vague
+S 30198 | subalpine | - | 5
+S 30178 | temperate | - | 3
+S 30179 = 32028
+K 30205 # urban alone is vague
+K 30204 # virgin alone is vague
+T famous_forests
+K 30235 # Bavarian alone is nonsense
+K 30234 # Forbidden alone is nonsense
+K 30218 # Dean alone is nonsense
+K 30216 # New alone is nonsense
+S 30210 = 30209
+K 30225 # Thuringian alone is nonsense
+T forestry_words
+K 30251 # sustainable alone is vague
+T wildfire_words
+K 30269 # nothing left
+T tropical_flowers
+K 30395 # ginger alone is spice
+T edible_flowers
+K 30465 # basil alone is herb
+K 30464 # rosemary alone is herb
+K 30471 # zucchini alone is vegetable
+T flowers_with_animal_names
+K 30498 # bat alone loses flower
+K 30492 # cuckoo alone loses flower
+K 30476 # monkey alone loses flower
+K 30500 # swan alone loses flower

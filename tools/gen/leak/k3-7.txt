@@ -1,0 +1,250 @@
+T named_winds
+K 31353 # nobody says berg alone
+K 31350 # nobody says diablo alone
+K 31359 # nobody says helm alone
+K 31239 # trade alone means commerce
+T forecast_words
+K 60371 # nobody says ensemble for it
+K 2003 # nothing left
+T sky_phenomena
+K 31426 # nobody says red for it
+T hot_weather_words
+K 31461 # dry loses the heat
+K 31453 # spell alone is vague
+T signs_of_spring
+K 23969 # cleaning alone is chores
+S 31479 | showers | - | 2
+T signs_of_summer
+K 31521 # storm alone is not seasonal
+T signs_of_winter
+K 30388 # bare aconite is monkshood
+T nature_at_night
+K 31596 # heron is a different bird
+K 31593 # sky alone is not night
+K 31585 # whole phrase is the description
+T monsoon_season
+K 31611 # winds alone is vague
+K 31622 # nobody says northeast
+K 31623 # onset alone is vague
+S 25310 | the rains | - | 3
+K 31621 # nobody says southwest
+S 25308 | the Wet | tropical rainy period | 3
+T dry_season
+K 31652 # creek alone is not dry
+K 31635 # grass alone is just grass
+K 31642 # spell alone is vague
+K 31641 # wells alone is vague
+K 31646 # wind alone is just wind
+K 30286 # nobody says fire for it
+T rocks_and_minerals
+K 2049 # name word is whole identity
+K 2069 # synonym halite is already an alias
+T quartz_varieties
+S 56582 | milky | - | 4
+S 31680 | rose | pink gem | 3
+S 56586 | rutilated | - | 5
+S 31681 | smoky | brown gem | 3
+T rock_types
+K 31073 # lava alone is molten
+T igneous_rocks
+K 31073 # lava alone is molten
+T sedimentary_rocks
+K 2069 # synonym halite is already an alias
+T building_stones
+S 31765 | Bath | pale limestone | 3
+S 31776 | Cotswold | honey-coloured limestone | 3
+K 31780 # dressed alone means nothing
+K 31772 # lava alone is molten
+K 31766 # paving alone is not a rock
+S 31764 | Portland | white limestone | 3
+K 31781 # quarried alone means nothing
+S 31777 | York | Yorkshire paving | 3
+T mining_words
+K 31800 # strip alone is not mining
+T gold_rush_words
+K 31811 # dust alone is vague
+K 31822 # fever alone is vague
+S 31810 | pan | prospector's dish | 2
+K 23011 # name word is whole identity
+T volcano_words
+K 1912 # nothing left
+T earthquake_words
+K 28911 # nothing left
+T erosion_words
+S 31923 | coastal | - | 3
+K 31915 # nothing left
+S 60437 | lateral | - | 5
+S 31922 | wind | air-driven wearing | 3
+T geothermal_words
+K 31945 # energy alone is vague
+K 60445 # gradient alone is vague
+K 31956 # plant alone is vague
+T soil_words
+S 31971 | chalky | - | 3
+S 31976 | loamy | - | 3
+K 31987 # nobody says potting
+S 31969 = 29937
+S 31986 | silty | - | 3
+K 31972 # horizon alone is vague
+T water_cycle_words
+K 32003 # hydrologic alone means nothing
+K 32002 # surface alone means nothing
+K 32007 # nothing left
+K 32000 # table alone is furniture
+T layers_of_a_rainforest
+K 32014 # alias emergent already exists
+T rainforest
+K 32029 # floor alone is vague
+T ocean
+S 36998 | Arctic | polar sea | 2
+K 32042 # nobody says Indian alone
+K 32048 # whole phrase is the name
+K 32178 # nobody says Southern alone
+T polar_regions
+K 7943 # nobody says bear for it
+K 32066 # night alone is vague
+T wetlands
+K 1936 # nothing left
+T mountains
+K 7934 # goat alone is domestic
+T meadow
+K 9036 # nobody says brown for it
+T pond
+K 32102 # dipping alone is vague
+K 32100 # life alone is vague
+S 1422 | water strider | - | 3
+T prairie
+K 8308 # chicken alone is poultry
+K 7840 # dog alone is a pet
+K 32171 # schooner alone is a ship
+T pollution_words
+K 32190 # light alone is illumination
+K 32189 # noise alone is vague
+T recycling_words
+K 23970 # bin alone is rubbish bin
+K 32215 # plant alone is vague
+T renewable_energy
+S 32238 | wave | power from swell | 3
+T conservation_words
+K 32259 # nothing left
+T climate_words
+K 32292 # change alone is vague
+K 32307 # nobody says refugee alone
+T fossil_fuels
+S 58362 | bunker | ship oil | 4
+S 32351 | jet | aviation kerosene | 2
+T island_nations
+S 35770 | Marshalls | - | 4
+S 35768 | Solomons | - | 3
+T french_speaking_countries
+K 35765 # Guiana is a wider region
+T cities
+K 2281 # alias Saigon already exists
+K 2267 # Mexico is the country
+T capital_cities
+K 2267 # Mexico is the country
+T middle_eastern_cities
+K 35864 # Kuwait is the country
+T american_cities
+K 35930 # Kansas is the state
+T canadian_cities
+K 35942 # Quebec is the province
+T new_zealand_cities
+K 57107 # Plymouth is a different city
+T port_cities
+K 36055 # Said alone means nothing
+T mexican_cities
+K 2267 # Mexico is the country
+T mexican_states
+S 36219 | Chihuahua | northern border state | 2
+K 36236 # Mexico is the country
+T french_regions
+K 36334 # alias Côte d'Azur already exists
+T new_england_states
+K 36201 # Hampshire is a different place
+T mountain_ranges
+K 36510 # nobody says Brooks alone
+K 36503 # fragment is not the name
+T famous_mountains
+K 2371 # Table alone is furniture
+T himalayan_peaks
+K 57142 # Broad alone means nothing
+T famous_deserts
+K 36573 # Antarctic alone is the continent
+K 36551 # nobody says Arabian alone
+K 36572 # Colorado is a state
+S 36556 | Gibson | outback arid region | 4
+S 36557 | Great Sandy | - | 4
+K 36554 # Great Victoria is not whole name
+K 36564 # nobody says Libyan alone
+K 36568 # Painted alone is an adjective
+S 36555 | Simpson | central Australian dunefield | 4
+K 36562 # nobody says Syrian alone
+T famous_islands
+S 36596 | Ellis | - | 3
+K 36594 # Long alone means nothing
+K 36595 # nobody says Staten alone
+K 36608 # Vancouver is the city
+T pacific_islands
+K 38120 # nobody says Cook alone
+S 35770 | Marshalls | - | 4
+S 35768 | Solomons | - | 3
+T famous_beaches
+S 36627 | Bells | - | 3
+K 36630 # Brighton is the city
+K 36629 # Cable alone means a wire
+K 36622 # Daytona is the city
+K 36624 # Huntington is the city
+S 36626 | Juno | D-Day landing site | 3
+S 36640 | Manly | - | 3
+K 36621 # Miami is the city
+K 36623 # Myrtle alone is a plant
+S 36625 | Omaha | D-Day landing site | 3
+K 36642 # fragment is not the name
+K 36635 # fragment is not the name
+K 36636 # Shipwreck alone is vague
+K 16715 # South alone means nothing
+K 36620 # Venice is the city
+T peninsulas
+K 36676 # Alaska is the state
+K 36663 # Antarctic alone is the continent
+S 36645 | Arabian | Gulf landmass | 3
+K 36662 # Cape alone is vague
+K 36263 # Eyre is ambiguous
+S 36655 | Italian | boot-shaped landmass | 3
+S 36671 | Kola | Russian Arctic landmass | 5
+S 36646 | Korean | East Asian landmass | 3
+K 36657 # Labrador is the dog
+S 36659 | Malay | Southeast Asian landmass | 4
+S 36664 | Olympic | Washington state landmass | 4
+K 36674 # Upper alone means nothing
+T antarctic_places
+K 2426 # Circle alone is a shape
+K 36663 # Peninsula alone is vague
+T famous_canyons_and_gorges
+K 36722 # Black alone is a color
+K 36709 # Copper alone is metal
+K 36724 # Glen alone is a valley
+K 2332 # Grand alone means big
+K 36721 # nobody says Hells alone
+K 36736 # Horseshoe alone is a shoe part
+K 36731 # Katherine is a town
+K 36718 # Kings alone is a team
+K 36723 # Royal alone means nothing
+K 36715 # Three alone means nothing
+K 36716 # fragment is not the name
+T famous_caves
+K 36744 # Crystals alone is vague
+K 36739 # Fingal's alone is vague
+K 36737 # Mammoth is the animal
+K 36765 # Marble Arch is London
+K 36760 # Marble alone is stone
+K 36745 # fragment is not the name
+T famous_rivers
+S 36816 | Darling | outback tributary | 3
+K 20464 # Yellow alone is a color
+T asian_rivers
+K 37570 # Pearl alone is a gem
+K 20464 # Yellow alone is a color
+T north_american_rivers
+K 57330 # Red alone is a color

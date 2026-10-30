@@ -1,0 +1,238 @@
+T bus_types
+S 46894 = 2715
+S 46889 | chicken | Central American rural | 4
+S 46879 = 38482
+K 46902 # nobody says demand-responsive alone
+S 46882 = 63346
+S 46883 | express | limited-stop service | 2
+K 46898 # nobody says ferry for it
+K 46891 # hopper alone is unclear
+S 46892 | hybrid | diesel-electric | 3
+K 46901 # nobody says kneeling for it
+K 2673 # night alone is not a type
+S 46893 | open-top | roofless sightseeing | 3
+S 46885 | party | nightclub on wheels | 3
+K 46896 # rapid transit alone means metro
+K 46900 # RV alone is a camper
+S 2655 | school | yellow student transport | 2
+S 46884 | sleeper | overnight coach | 3
+S 46880 = 2921
+T on_a_bus
+S 2656 | stop | place to get off | 1
+T ticket_words
+K 46959 # shorter is just a prefix
+S 46941 | season | commuter pass | 2
+K 46940 # nothing left
+K 47830 # nobody says collector alone
+K 40239 # nobody says machine alone
+K 46951 # nobody says office alone
+T taxis_of_the_world
+K 47037 # nobody says camel for it
+S 47022 = 2671
+S 47015 | moto | motorcycle ride | 3
+K 47019 # shared alone is just an adjective
+K 47038 # nobody says sidecar for it
+K 40088 # nothing left
+S 13899 | rank | cab stand | 3
+K 47014 # water alone is just water
+T cable_cars_and_lifts
+K 47068 # nobody says bucket for it
+S 43538 | button | ski tow | 4
+K 47048 # nobody says drag for it
+K 47041 # nothing left
+K 47055 # railway alone means trains
+S 47073 = 46935
+K 47075 # nobody says tower alone
+K 47062 # city name is not the vehicle
+K 47061 # Sugarloaf is a mountain
+T air_travel
+K 2747 # nobody says traffic controller
+T aircraft_types
+K 47087 # light alone is not a type
+T flight_crew
+K 47188 # deadheading is the act
+K 2723 # attendant alone is vague
+S 47172 | dispatcher | airline operations | 4
+K 47169 # engineer alone is another job
+S 47194 | instructor | pilot trainer | 3
+K 47195 # nurse alone is not it
+K 2773 # ground alone means nothing
+T airlines
+K 47233 # country is not the airline
+K 47235 # Philippine alone is an adjective
+S 47217 | Turkish | Istanbul-based flag carrier | 2
+K 47238 # country is not the airline
+T european_airlines
+S 59075 | Austrian | flag carrier of Austria | 4
+K 59077 # city is not the airline
+T asian_airlines
+K 59097 # country is not the airline
+S 59095 | Hainan | Chinese island carrier | 4
+K 59107 # city is not the airline
+K 47233 # country is not the airline
+K 47235 # Philippine alone is an adjective
+K 47238 # country is not the airline
+T middle_eastern_airlines
+S 47217 | Turkish | Istanbul-based flag carrier | 2
+T flying_machines
+K 22381 # carpet alone is floor covering
+T famous_airports
+S 47273 = 35819
+S 47301 = 2272
+S 47302 = 2291
+T in_flight_words
+S 47346 = 2395
+T hot_air_balloon_parts
+K 27773 # nothing left
+T boats_and_ships
+K 2779 # nothing left
+K 2839 # nobody says jolly for it
+K 2778 # nothing left
+T boat_types
+K 47433 # nobody says bumper for it
+T small_boats
+K 2839 # nobody says jolly for it
+K 59133 # nobody says jon alone
+T sailing_ships
+K 21171 # tall alone means height
+T working_boats
+K 59160 # nobody says crab for it
+K 45155 # fishing alone is the activity
+K 34705 # patrol alone is the activity
+K 59148 # pilot alone is a person
+T traditional_boats
+K 59165 # dragon alone is a creature
+K 59171 # reed alone is a plant
+T pleasure_boats
+K 48865 # banana alone is a fruit
+K 59189 # canal alone is a waterway
+S 59186 | glass-bottom | see-through hull | 3
+S 59181 | party | celebration cruise | 3
+K 59185 # ski alone is not a vessel
+K 59187 # nobody says swan for it
+T ports_and_harbors
+K 47513 # nobody says deepwater alone
+K 47511 # fishing alone is the activity
+K 2804 # nothing left
+K 47519 # inner alone means nothing
+T knots
+S 47566 = 25204
+K 60653 # nobody says double alone
+K 47571 # possessive alone is incomplete
+K 6978 # Gordian alone is an adjective
+S 47556 | granny | crossed square knot | 3
+K 47565 # possessive alone is incomplete
+K 60655 # love alone is an emotion
+K 60657 # Pratt alone is a surname
+S 47559 | reef | square knot | 3
+K 60654 # nobody says shoelace alone
+K 47554 # nobody says slip alone
+S 47575 | stopper | end knot | 4
+K 47581 # possessive alone is incomplete
+T famous_canals
+K 47589 # canal is head noun
+K 47597 # canal is head noun
+K 47586 # canal is head noun
+K 36925 # canal is head noun
+K 36923 # canal is head noun
+K 47590 # canal is head noun
+K 47591 # canal is head noun
+K 47596 # canal is head noun
+K 47592 # canal is head noun
+K 47584 # canal is head noun
+K 47588 # canal is head noun
+K 36924 # canal is head noun
+K 47594 # canal is head noun
+K 47585 # canal is head noun
+K 47587 # canal is head noun
+K 36928 # canal is head noun
+T ship_crew
+S 47638 | carpenter | shipboard woodworker | 4
+S 47630 | cook | galley worker | 3
+S 47640 = 3448
+S 47637 = 3470
+T submarine_words
+K 47641 # fixed title
+T trains
+S 2909 = 2662
+S 2868 = 28656
+K 39524 # nothing left
+T train_types
+K 47682 # nobody says boat for it
+S 2866 | bullet | Japanese fast rail | 2
+K 47676 # nobody says circus alone
+S 47672 = 2054
+S 2909 = 2662
+S 47666 = 63346
+S 47675 = 2922
+S 2868 = 28656
+S 47667 = 39318
+S 47678 | intercity | long-distance service | 3
+S 47669 | local | stopping service | 2
+K 47673 # luxury alone is vague
+S 47674 = 28070
+S 47664 = 2663
+S 47677 | regional | short-haul rail | 3
+S 47670 | sleeper | overnight service | 3
+S 47663 = 49675
+K 47680 # nobody says tilting alone
+K 46058 # toy alone is not a train
+T railway_words
+S 47715 | line | rail route | 1
+T station_words
+S 47719 = 34783
+S 47731 = 35511
+T famous_trains
+K 47742 # needs both words
+T high_speed_trains
+S 2866 | bullet | Japanese fast rail | 2
+T metro_systems
+K 47772 # city name is not the metro
+K 47770 # city name is not the metro
+K 47769 # city name is not the metro
+K 47792 # city name is not the metro
+K 47782 # city name is not the metro
+K 47771 # city name is not the metro
+K 47795 # region name is not the metro
+K 47773 # city name is not the metro
+T famous_train_stations
+K 47811 # Central alone is vague
+K 47816 # city name is not the station
+S 47801 | Penn | New York terminus | 3
+K 47809 # city name is not the station
+K 47810 # Union alone is vague
+T bike_types
+K 47893 # nobody says balance alone
+S 47894 | city | urban | 3
+S 47895 | commuter | work-ride | 3
+S 47903 | cyclocross | off-road racer | 5
+S 47886 = 63346
+S 47900 | fat | wide-tire off-road | 4
+S 40277 | folding | collapsible | 3
+S 47898 | gravel | off-road drop-bar | 4
+S 47890 | hybrid | road-mountain blend | 3
+S 47888 | racing | race-built | 3
+S 47884 | road | paved-surface | 2
+S 47891 | touring | long-distance | 3
+S 47899 | track | velodrome | 4
+T motorcycle_types
+S 47959 = 63346
+K 40174 # nothing left
+K 47958 # police alone is people
+K 47962 # nobody says racing alone
+S 47951 | touring | long-haul rider | 3
+T cycling_races
+K 60671 # Olympic road alone is incomplete
+T scooters_and_skates
+K 7370 # shorter is just a prefix
+S 40331 = 63346
+S 44140 | ice | blade type | 1
+K 48055 # nobody says kick alone
+K 48058 # nobody says mobility alone
+S 43576 = 43569
+S 48068 | Razor | US brand | 3
+K 48054 # nobody says roller alone
+K 5954 # nothing left
+K 43557 # nothing left
+K 48057 # nobody says speed alone
+K 48056 # nobody says stunt alone

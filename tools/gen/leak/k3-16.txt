@@ -1,0 +1,76 @@
+T embroidery_stitches
+S 55542 | basket | needlework | 4
+S 5085 | blanket | needlework | 3
+S 55533 | buttonhole | needlework | 3
+S 5086 | chain | needlework | 3
+S 55541 | chevron | needlework | 4
+K 5033 # cross alone is not used
+S 24880 | feather | needlework | 3
+S 55531 | fishbone | needlework | 4
+S 55528 | fly | needlework | 3
+S 55526 | herringbone | needlework | 3
+K 55543 # nobody says pistil alone
+K 55545 # nobody says Romanian alone
+S 5065 | running | needlework | 3
+S 24878 | satin | needlework | 3
+S 24898 | seed | needlework | 3
+S 55524 | split | needlework | 3
+S 55523 | stem | needlework | 3
+K 55534 # nobody says straight alone
+S 55537 | tent | needlework | 4
+S 55539 | trellis | needlework | 4
+T sewing_kit
+K 55548 # bare basket points to nothing
+K 55547 # bare box points to nothing
+T knitting_words
+S 24887 | needles | craft | 1
+T fabric_prints
+K 24925 # nobody says animal alone
+S 24946 | Aztec | pattern | 3
+S 24944 | bandana | pattern | 3
+K 24941 # nobody says block alone
+S 24935 | cow | pattern | 2
+S 24926 | leopard | pattern | 1
+S 24931 | Liberty | pattern | 4
+S 24934 | snakeskin | pattern | 2
+S 24933 | tropical | pattern | 2
+S 24927 | zebra | pattern | 1
+T necklines
+S 55571 | asymmetric | cut | 4
+S 55580 | illusion | cut | 5
+S 55569 | keyhole | cut | 4
+S 55568 | plunging | cut | 3
+S 55579 | portrait | cut | 5
+S 55574 | Queen Anne | cut | 5
+S 55560 | sweetheart | cut | 2
+S 55577 | wrap | cut | 3
+T fastenings
+S 24987 | frog | closure | 4
+T holidays_and_celebrations
+K 5157 # nobody says bank alone
+T christmas
+S 25020 | cracker | festive | 2
+K 25024 # nobody says Eve alone
+S 18337 | plum pudding | - | 3
+S 25007 | tree | festive | 1
+T christmas_carols
+K 55598 # fixed title
+K 55600 # nobody says Coventry alone
+K 55603 # nobody says Sussex alone
+T easter
+S 25052 = 24692
+K 8088 # bunny already in theme
+S 25040 = 518
+S 25055 = 1697
+K 25059 # nobody says Monday alone
+K 25057 # nobody says parade alone
+K 25046 # nobody says Sunday alone
+T new_year
+K 5127 # Spring Festival is an alias
+K 25070 # nothing left
+K 5105 # nobody says Eve alone
+T weddings
+S 18116 = 559
+S 23187 | bridal gown | - | 2
+K 25115 # nobody says planner alone
+S 24736 = 4948

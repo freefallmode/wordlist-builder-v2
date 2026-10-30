@@ -1,0 +1,250 @@
+T shades_of_yellow
+K 38615 # cadmium also orange and red
+K 38612 # nobody says chrome for it
+K 38611 # Naples alone means the city
+K 38617 # pale is just a modifier
+K 38613 # nobody says school bus alone
+K 3 # nothing left
+T shades_of_purple
+K 38624 # dark is just a modifier
+K 38622 # nobody says imperial alone
+K 38625 # light is just a modifier
+K 7665 # nothing left
+K 38620 # royal alone is unclear
+S 7732 | Tyrian | - | 5
+T shades_of_brown
+K 7667 # nothing left
+T shades_of_orange
+K 38644 # nobody says blaze alone
+K 38648 # bright is just a modifier
+K 38638 # nobody says burnt alone
+K 38647 # cadmium also yellow and red
+K 38643 # international alone means other things
+K 38645 # neon alone is not a shade
+K 2 # nothing left
+K 38649 # pale is just a modifier
+K 38642 # nobody says safety alone
+T shades_of_pink
+K 38652 # baby alone is not a shade
+K 38662 # nobody says Barbie alone
+K 38659 # nobody says candy alone
+K 38664 # deep is just a modifier
+K 38651 # hot alone is not a shade
+K 38663 # light is just a modifier
+K 38658 # nobody says millennial alone
+K 7666 # nothing left
+K 38657 # powder alone is not a shade
+K 38655 # nobody says shocking alone
+T shades_of_gray
+K 38673 # battleship alone is the ship
+S 38672 | dove | color | 3
+K 38685 # dark is just a modifier
+K 38677 # nobody says elephant for it
+K 7672 # nothing left
+S 38682 | heather | color | 3
+K 38684 # light is just a modifier
+K 38676 # nobody says mouse for it
+K 38678 # nobody says storm alone
+T shades_of_white
+K 38706 # antique alone is not a shade
+K 38713 # nobody says arctic alone
+K 38715 # nobody says coconut for it
+K 38707 # nobody says floral alone
+K 38703 # nobody says ghost for it
+K 38702 # fixed name
+K 38708 # oyster already in theme
+K 38711 # pure is just a modifier
+K 38709 # nobody says titanium alone
+K 7671 # nothing left
+T shades_of_black
+K 7668 # nothing left
+K 38733 # fixed name
+S 38730 = 40055
+K 38727 # nobody says ivory for it
+K 38719 # nobody says pitch alone
+K 38731 # nobody says velvet alone
+T blue_green_shades
+K 38744 # nothing left
+K 38748 # bluish alone is not a shade
+K 38738 # nobody says Caribbean for it
+K 38745 # nothing left
+K 38747 # nobody says Persian for it
+K 38750 # alias already covers it
+K 38596 # sea alone is not a shade
+S 38739 | Tiffany | color | 3
+T pastel_colors
+K 38756 # bare blue is not pastel
+K 38757 # bare green is not pastel
+K 38761 # bare orange is not pastel
+K 38755 # bare pink is not pastel
+K 38762 # bare purple is not pastel
+K 38758 # bare yellow is not pastel
+T neon_colors
+K 38772 # bare blue is not neon
+K 38606 # bare green is not neon
+K 38645 # bare orange is not neon
+K 38765 # bare pink is not neon
+K 38773 # bare purple is not neon
+K 38787 # bare red is not neon
+K 38766 # bare yellow is not neon
+T line_types
+S 38944 = 58098
+T symbols
+K 38959 # power alone is energy
+K 38965 # radiation alone is the phenomenon
+S 23990 | recycling | - | 3
+S 38960 | trademark | - | 2
+T curves_and_spirals
+K 38928 # nothing left
+K 38907 # nothing left
+K 38979 # staircase is not a spiral type
+T square_things
+K 57809 # quilt alone is the bedding
+K 38451 # town alone is not square
+T oval_things
+K 33582 # fixed name
+T things_made_of_glass
+K 57820 # nobody says drinking alone
+K 57823 # eye alone is the body part
+K 13619 # slipper alone is footwear
+K 33731 # nobody says magnifying alone
+K 48819 # shot alone has other meanings
+K 5881 # nobody says stained alone
+K 20141 # wine alone is the drink
+T things_made_of_paper
+K 62427 # joss alone is another thing
+K 25559 # bag alone is not paper
+K 57831 # boat alone is not paper
+K 45985 # chain alone is not paper
+K 25552 # cup alone is not paper
+K 45992 # fan alone is not paper
+K 57832 # hat alone is not paper
+K 39575 # plane alone is not paper
+K 25560 # straw alone is not paper
+K 25549 # towel alone is cloth
+K 23138 # toilet alone is the fixture
+K 25202 # wrapping alone is not paper
+T things_made_of_rubber
+K 25544 # band alone is not rubber
+K 46070 # duck alone is the bird
+K 39106 # glove alone is not rubber
+K 45988 # stamp alone is not rubber
+T things_made_of_leather
+K 24376 # jacket alone is not leather
+T sticky_things
+K 18577 # rice alone is not sticky
+T sour_foods
+K 39151 # candy alone is not sour
+K 526 # cream alone is not sour
+T bitter_foods
+K 62452 # lemon alone is not bitter
+K 15586 # melon alone is not bitter
+K 39166 # nothing left
+T fizzy_drinks
+K 886 # energy alone is not a drink
+S 57861 | pop | soda | 2
+T american_candy
+K 20186 # apple alone is the fruit
+K 621 # cane alone is not candy
+K 18367 # corn alone is the vegetable
+K 628 # cotton alone is the fabric
+K 18362 # rock alone is stone
+T words_for_small
+K 39289 # nothing left
+T words_for_fast
+K 11101 # nothing left
+K 39322 # lightning alone is not fast
+T words_for_bad
+K 39372 # nothing left
+T words_for_smart
+K 29046 # nothing left
+K 39403 # whip alone is not smart
+T words_for_strange
+K 39417 # nothing left
+T words_for_pretty
+K 39442 # nothing left
+T words_for_old
+K 39471 # nothing left
+T size_labels
+K 39552 # fixed name
+S 39561 | economy | - | 2
+S 39550 | family | pack | 3
+K 39293 # fixed name
+S 39266 | king | bed | 2
+K 39553 # fixed phrase
+S 39559 | plus | clothing | 2
+K 39560 # fixed name
+S 39544 | queen | bed | 2
+K 39549 # fixed name
+K 39551 # travel alone means journey
+T perfume_notes
+S 39746 | green | fragrance | 3
+T things_that_fly
+K 1344 # nothing left
+T things_that_roll
+K 39784 # carpet alone does not roll
+T ways_to_jump
+K 15859 # box alone is a container
+K 39855 # nobody says broad alone
+S 39107 | bungee | free-fall | 3
+K 39842 # high alone is not a jump
+K 11824 # nothing left
+K 39841 # long alone is not a jump
+K 39852 # ski alone is the equipment
+K 39846 # triple alone is not a jump
+K 39854 # tuck alone is a body position
+T slow_things
+K 4750 # cooker alone is not slow
+K 39862 # lane alone is not slow
+T hot_things
+K 728 # sauce alone is not hot
+K 31938 # spring alone is the season
+K 15541 # water bottle alone is not hot
+T cold_things
+K 39884 # shower alone is not cold
+T fire_words
+K 39912 # bush alone is a shrub
+K 20611 # Greek alone is the language
+T ice_words
+K 2016 # black alone is the color
+S 32179 | brash | - | 5
+K 1613 # fixed name
+K 30900 # cap alone is headwear
+S 21052 = 28526
+S 30901 = 28525
+K 30905 # shelf alone is furniture
+K 30904 # pack alone is a bundle
+T words_for_hot
+K 27978 # nothing left
+K 39940 # fixed phrase
+K 39929 # piping alone is not hot
+K 39928 # fixed name
+K 39930 # fixed name
+T words_for_cold
+K 39943 # nothing left
+K 39958 # stone alone is rock
+T things_that_glow
+K 11210 # stick alone does not glow
+K 39972 # worm alone does not glow
+T words_for_shiny
+K 40021 # nothing left
+T words_for_dark
+K 28162 # nothing left
+T red_things
+K 9682 # panda alone is black and white
+K 19645 # wine alone is not red
+T yellow_things
+K 38612 # nobody says chrome for it
+T green_things
+K 40108 # mamba alone is not green
+T blue_things
+K 17929 # cheese alone is not blue
+K 8155 # jay alone is not blue
+K 8776 # tang alone is not blue
+K 1306 # whale alone is not blue
+K 9701 # octopus alone is not ringed
+K 7729 # Prussian alone is the people
+T white_things
+K 21499 # flag alone is not white
+K 33580 # house alone is not white
+K 40123 # rabbit alone is not white

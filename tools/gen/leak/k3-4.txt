@@ -1,0 +1,237 @@
+T beetles
+K 9010 # nobody says bark alone
+K 1350 # nothing left
+K 9012 # nobody says blister alone
+S 9002 | bombardier | beetle kind | 4
+K 9009 # nobody says carpet alone
+K 1427 # nobody says click alone
+S 9004 | Colorado | potato pest | 3
+K 9020 # nobody says darkling alone
+S 9005 | death watch | - | 5
+K 9003 # nobody says diving alone
+K 1392 # nobody says dung alone
+K 9016 # nobody says flea alone
+S 8998 | Goliath | giant insect | 4
+S 9000 | ground | garden insect | 4
+S 8997 | Hercules | horned insect | 3
+S 9008 | Japanese | garden pest | 3
+K 9011 # nobody says jewel alone
+K 9015 # nobody says leaf alone
+S 8999 | longhorn | long-antennaed insect | 4
+S 8996 | rhinoceros | horned insect | 3
+K 9013 # nobody says rove alone
+S 1391 | stag | antlered insect | 3
+S 9001 | tiger | predatory insect | 3
+K 9019 # nobody says tortoise alone
+K 9017 # nobody says water alone
+S 9014 | whirligig | pond insect | 4
+
+T butterflies_and_moths
+S 9043 | atlas | giant insect | 4
+K 1348 # nothing left
+K 9054 # nobody says cinnabar alone
+K 9051 # nobody says clothes alone
+K 9052 # nobody says codling alone
+S 9046 | emperor | large insect | 4
+K 9050 # nobody says gypsy alone
+S 9044 | hawk | fast-flying insect | 4
+K 9048 # no shorter name exists
+S 9042 | luna | green insect | 3
+K 1349 # nothing left
+S 9024 | peacock | eyespot insect | 3
+K 9053 # nobody says peppered alone
+K 9049 # nobody says silk alone
+S 9047 | tiger | striped insect | 4
+
+T bees_and_wasps
+K 1342 # nothing left
+K 59966 # no shorter natural form
+S 9060 | carpenter | wood-boring pollinator | 3
+K 59957 # nobody says cellophane alone
+K 9082 # clashes with cuckoo wasp
+K 9074 # clashes with cuckoo bee
+K 9081 # nobody says digger alone
+K 9073 # nobody says fig alone
+K 9072 # nobody says gall alone
+S 9063 | killer | aggressive pollinator | 3
+S 9062 | leafcutter | leaf-cutting pollinator | 4
+K 9061 # clashes with mason wasp
+K 59958 # clashes with mason bee
+K 9065 # nobody says mining alone
+K 59967 # nobody says mud alone
+K 9083 # nobody says orchid alone
+S 9067 | paper | nest builder | 3
+K 59956 # nobody says plasterer alone
+K 59955 # nobody says pollen alone
+K 9069 # nobody says potter alone
+S 9057 | queen | hive ruler | 1
+K 59962 # no shorter natural form
+K 59960 # no shorter natural form
+K 9084 # nobody says solitary alone
+K 59954 # nobody says spider alone
+K 9064 # nobody says sweat alone
+K 1343 # nothing left
+S 9058 | worker | hive worker | 2
+
+T spiders
+K 9098 # no shorter natural form
+K 9105 # no shorter natural form
+S 9100 | camel | desert hunter | 4
+K 9104 # nobody says cellar alone
+S 9110 = 9114
+S 9095 | crab | sideways walker | 4
+K 9102 # diving bell is a device
+K 9103 # nobody says fishing alone
+K 9086 # nobody says garden alone
+K 9111 # nobody says hobo alone
+K 9085 # nobody says house alone
+S 9088 | jumping | leaping hunter | 3
+K 9096 # nobody says money alone
+S 9108 | peacock | dancing hunter | 4
+K 9109 # nobody says sac alone
+S 9089 | trapdoor | burrow ambusher | 4
+K 9101 # nobody says water alone
+S 9087 | wolf | ground hunter | 3
+K 9107 # nobody says zebra alone
+
+T garden_bugs
+K 1423 # nobody says shield alone
+
+T biting_bugs
+S 1430 | assassin | predatory insect | 5
+K 9160 # nobody says kissing alone
+
+T butterfly_life_stages
+K 1348 # nothing left
+
+T flies
+K 9205 # bee alone is a different insect
+K 9203 # nobody says cluster alone
+K 1386 # nobody says crane alone
+K 9157 # nobody says deer alone
+K 9206 # drone alone means a bee
+K 9210 # nobody says dung alone
+K 9202 # nobody says flesh alone
+K 9209 # nobody says hessian alone
+K 1433 # nobody says robber alone
+K 9164 # nobody says stable alone
+
+T ants_and_termites
+K 1341 # nothing left
+K 9224 # nobody says Argentine alone
+S 1413 | army | marching insect | 3
+K 9217 # nobody says black alone
+K 9234 # nobody says bulldog alone
+S 9169 | bullet | painful-sting insect | 3
+S 9215 | carpenter | wood-boring insect | 3
+K 59978 # nobody says compass alone
+K 9232 # nobody says crazy alone
+K 59976 # no shorter natural form
+K 59971 # nobody says dracula alone
+K 9220 # nobody says driver alone
+K 9236 # no shorter natural form
+S 1412 | fire | stinging insect | 3
+K 9226 # nobody says flying alone
+K 59977 # nobody says Formosan alone
+K 59972 # nobody says garden alone
+K 59974 # nobody says ghost alone
+S 9222 | harvester | seed-gathering insect | 4
+K 9221 # nobody says honeypot alone
+K 1414 # no shorter natural form
+K 59969 # nobody says Matabele alone
+K 59970 # nobody says meat alone
+K 9231 # nobody says pavement alone
+S 9223 | pharaoh | household pest | 4
+S 9212 | queen | nest ruler | 1
+K 9216 # nobody says red alone
+S 9214 | soldier | nest defender | 2
+K 9237 # no shorter natural form
+K 9233 # nobody says sugar alone
+K 1376 # nothing left
+K 9229 # nobody says mound alone
+K 59973 # nobody says thief alone
+K 59968 # no shorter natural form
+S 9219 | weaver | leaf nest builder | 4
+K 9225 # nobody says white alone
+S 9218 | wood | forest insect | 4
+S 9213 | worker | nest worker | 2
+K 59975 # no shorter natural form
+
+T worms
+K 59984 # nobody says acorn alone
+K 59983 # nobody says arrow alone
+K 59981 # nobody says bobbit alone
+K 9263 # Christmas tree is a tree
+K 9262 # nobody says fan alone
+S 9936 | feather duster | marine tube dweller | 5
+K 59989 # no shorter natural form
+K 15074 # nobody says guinea alone
+K 59982 # nobody says peanut alone
+K 59985 # nobody says Pompeii alone
+K 59986 # nobody says spoon alone
+K 1337 # nobody says tube alone
+K 9116 # nothing left
+
+T pet_supplies
+S 50841 = 28261
+K 50863 # food too generic
+K 50854 # gate too generic
+
+T dog_commands
+K 50889 # bad alone is no command
+
+T terriers
+K 50968 # nobody says Australian alone
+S 50947 | Border | breed | 3
+S 50951 | Boston | breed | 3
+K 60004 # nobody says Brazilian alone
+K 50944 # nobody says bull alone
+S 50948 | Cairn | breed | 3
+K 50952 # nobody says fox alone
+S 50953 | Irish | breed | 4
+S 50963 | Manchester | breed | 4
+K 60003 # no shorter natural form
+S 50949 | Norfolk | breed | 4
+S 50950 | Norwich | breed | 4
+K 50960 # nobody says rat alone
+K 50939 # Scottie already an alias
+K 50969 # nobody says Silky alone
+S 50957 | Skye | breed | 4
+K 60001 # nobody says Tenterfield alone
+K 9281 # nothing left
+K 50971 # no shorter natural form
+S 50954 | Welsh | breed | 4
+K 50941 # Westie already an alias
+K 50964 # nobody says wheaten alone
+
+T hounds
+K 60012 # nobody says Finnish alone
+K 50993 # nobody says scent alone
+
+T toy_dogs
+K 51010 # no shorter natural form
+S 51016 | teacup | tiny pet | 3
+K 51015 # nothing left
+K 50971 # fox terrier is another breed
+K 51000 # poodle alone is not toy
+
+T herding_dogs
+S 51032 | heeler | - | 3
+K 9470 # nobody says cattle alone
+
+T working_dogs
+K 51067 # nobody says Greenland alone
+K 9461 # nobody says guard alone
+K 51058 # no shorter natural form
+K 51072 # nobody says rescue alone
+K 9450 # nobody says sled alone
+K 51074 # no shorter natural form
+
+T cat_breeds
+S 9322 | Norwegian Forest | - | 3
+S 9323 | Savannah | spotted hybrid | 3
+
+T horses
+K 153 # nothing left
+K 1513 # nobody says race alone
+K 1531 # nobody says quarter alone

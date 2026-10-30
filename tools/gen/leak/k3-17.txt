@@ -1,0 +1,269 @@
+T candle_words
+S 25606 = 34192
+S 25598 = 3904
+K 20147 # name word is whole identity
+S 25611 = 39889
+K 25596 # nobody says holder alone
+K 25618 # maker alone names nothing
+K 25614 # nobody says church for it
+K 25615 # nobody says dinner for it
+K 25608 # nobody says dipped alone
+K 25601 # nobody says floating alone
+K 25600 # nobody says jar for it
+S 25591 = 6602
+S 25599 | scented | fragranced | 1
+S 25616 = 25585
+T emergency_supplies
+K 25638 # kit alone names nothing
+T drinking_vessels
+K 55843 # horn alone is something else
+T serving_dishes
+K 55867 # bonbon is the candy
+K 25791 # butter is the food
+S 19813 | casserole | oven vessel | 2
+K 55854 # nobody says chafing alone
+K 55859 # compote is the dessert
+K 55862 # gratin is the food
+K 19822 # pie is the food
+S 55851 = 20138
+S 55855 = 20137
+S 55853 = 28547
+T locks_and_keys
+K 25716 # nobody says bike for it
+K 25730 # nobody says bump for it
+K 25740 # nobody says cabinet for it
+K 25727 # nobody says car for it
+K 25711 # nobody says chain for it
+K 25701 # combination alone is the number
+K 25714 # nobody says cylinder for it
+K 25718 # D alone means nothing
+K 25737 # nobody says door for it
+K 25726 # nobody says house for it
+K 25733 # nobody says ignition for it
+K 25699 # name word is whole identity
+K 25728 # cutter alone is a tool
+S 25705 = 28501
+K 25719 # safe alone is a strongbox
+S 25721 = 40169
+K 25724 # nobody says lever for it
+K 24104 # name word is whole identity
+S 25708 = 28522
+K 25741 # nobody says luggage for it
+K 25704 # master alone is a title
+S 25713 = 46037
+K 25738 # nobody says rim for it
+K 25703 # fixed name
+K 25720 # nobody says smart alone
+K 23312 # nobody says spare alone
+K 25734 # nobody says time for it
+K 25742 # TSA alone is the agency
+K 25723 # nobody says warded alone
+S 25710 | Yale | lock brand | 3
+T things_with_buttons
+K 24300 # nobody says panic alone
+T ball_sports
+K 5240 # nobody says cycle alone
+T sports_balls
+K 39807 # beach alone names no ball
+K 39048 # nobody says billiard alone
+S 42661 = 5215
+S 39045 = 5250
+S 39814 = 5198
+S 42660 = 5218
+K 42663 # cue is the stick
+K 39809 # nobody says exercise alone
+S 42649 = 5247
+K 42655 # hockey alone means the sport
+S 42654 = 5201
+K 15880 # nobody says medicine alone
+K 39569 # ping pong alone is the sport
+K 42659 # polo alone is the sport
+K 42651 # pool alone is the game
+S 42650 = 5196
+S 42652 = 5251
+S 42648 = 5190
+S 39811 = 5243
+K 42664 # stress alone is tension
+S 39805 = 5241
+K 42653 # water polo is the sport
+T baseball_bases
+S 58627 = 28028
+S 58628 = 58065
+S 58629 = 58067
+T racket_and_target_sports
+K 5257 # name word is whole identity
+T racket_sports
+K 5257 # name word is whole identity
+T tennis_shots
+K 43018 # approach alone is vague
+S 43003 | drop | delicate net-drop | 3
+K 43013 # nobody says passing alone
+T golf_shots
+S 61530 | flop | high soft pitch | 3
+S 61531 | punch | low knock-down pitch | 4
+S 61528 = 28738
+T golf_clubs
+S 61552 | utility | hybrid-type iron | 4
+T cue_sports_terms
+K 43102 # name word is whole identity
+K 42663 # ball alone names no cue ball
+T archery_terms
+K 5281 # field alone means nothing
+T darts_terms
+K 43170 # name word is whole identity
+T bowling_terms
+S 43207 = 43211
+K 43213 # shoes alone is too generic
+T water_sports
+K 5321 # no shorter name without water
+T swimming_strokes
+S 43260 = 50368
+T diving_terms
+S 43324 | synchro | paired platform event | 3
+T scuba_words
+K 29203 # name word is whole identity
+S 43370 | diver | underwater tank swimmer | 1
+T rowing_words
+S 43452 = 43428
+T sailing_sports
+K 43490 # Olympic alone is not sailing
+K 5296 # name word is whole identity
+T board_and_paddle_sports
+K 43502 # surfing alone is another sport
+T snow_sports
+K 61601 # polo alone is the sport
+K 5375 # tubing alone is water tubing
+T skating_words
+K 5348 # figure alone means shape
+K 43571 # roller alone is a tool
+K 5359 # speed alone is velocity
+T ice_hockey_terms
+K 43603 # name word is whole identity
+T curling_words
+K 5350 # name word is whole identity
+S 43670 | broom | sweeping tool | 1
+S 43669 = 50374
+T boxing_terms
+S 24764 = 4956
+S 43716 | ring | roped fighting square | 1
+T wrestling_terms
+S 43787 | ring | roped fighting square | 1
+T sumo_words
+K 5409 # name word is whole identity
+K 39518 # wrestler alone is generic
+T fencing_terms
+S 43817 | glove | weapon-hand glove | 3
+S 43814 | jacket | padded white top | 3
+S 43800 | mask | wire face guard | 2
+T karate_words
+K 43847 # chop alone is not a strike
+T judo_words
+K 43890 # throw alone is generic
+T gymnastics
+K 43972 # nobody says rhythmic alone
+T running_words
+K 44007 # shoes alone is too generic
+K 5630 # trail alone means path
+T famous_marathons
+K 58783 # fixed name
+K 58776 # Olympic alone is not a marathon
+T triathlon_words
+K 44024 # name word is whole identity
+T cheerleading_words
+S 44098 = 44075
+K 44084 # uniform alone is too generic
+T sports_venues
+K 44194 # complex alone is vague
+K 44179 # hall alone is vague
+T sports_officials
+K 44201 # fourth alone is ordinal
+S 61714 = 44197
+T sports_clothing
+K 24427 # plain bra is not sporty
+K 44251 # jacket alone is generic
+T famous_stadiums
+S 44419 = 44549
+S 44424 | Aviva | Dublin ground | 3
+K 44398 # nobody says Dodger alone
+S 44397 | MetLife | New Jersey NFL ground | 3
+K 44429 # Modi alone is a person
+S 44423 | Principality | Cardiff rugby ground | 4
+K 44390 # nobody says Yankee alone
+T olympic_host_cities
+K 2267 # Mexico is the country
+T trophies_and_prizes
+S 44446 = 44475
+K 12732 # name word is whole identity
+K 44477 # Wimbledon is the tournament
+K 61771 # Wisden is the almanack
+T famous_races
+K 43451 # boat alone is a vessel
+K 44513 # fixed name
+T horse_and_animal_sports
+K 5555 # racing alone is generic
+K 5595 # trials alone is vague
+T horse_riding_words
+K 153 # name word is whole identity
+S 24659 = 21315
+S 9570 | crop | short whip | 2
+K 44838 # hat alone is generic
+T equestrian_events
+K 44905 # three-day alone is vague
+T rodeo_words
+K 1515 # name word is whole identity
+K 44920 # clown alone is generic
+K 44936 # queen alone is royalty
+T extreme_sports
+K 45024 # ironing alone is chores
+T air_sports
+K 45027 # racing alone is generic
+K 45041 # fixed name
+T climbing_words
+K 45086 # shoes alone is too generic
+S 45069 | lead | going first on rope | 3
+K 5645 # sport alone names nothing
+S 5646 | trad | gear-placed route style | 3
+T fishing_words
+K 45151 # carp is the fish
+K 45139 # no shorter name
+K 45155 # boat alone is a vessel
+K 45153 # license alone is software
+S 45130 = 58795
+K 5369 # ice alone is frozen water
+T fishing_tackle
+K 45126 # box alone is generic
+T hunting_words
+K 10592 # horn alone is something else
+K 45179 # knife alone is cutlery
+K 45169 # license alone is software
+K 45160 # season alone is generic
+T casino_games
+K 45192 # war is a different card game
+T casino_words
+K 29326 # name word is whole identity
+K 45219 # floor alone is generic
+T poker_terms
+K 16794 # face alone is body part
+T blackjack_terms
+K 5658 # name word is whole identity
+T betting_words
+K 45349 # exchange alone is money
+K 45350 # shop alone is generic
+T lottery_words
+K 5666 # name word is whole identity
+K 45373 # National alone names nothing
+T board_games
+S 45392 | Life | Hasbro family classic | 2
+T card_games
+K 45423 # fixed name
+T chess_terms
+K 45466 # clock alone is a timepiece
+T chess_openings
+K 58850 # Bird's alone is vague
+S 58836 | Catalan | Barcelona-named system | 4
+S 58825 | English | flank system starting c4 | 3
+T dice_games
+K 45499 # poker alone is cards
+K 45489 # liar's alone is meaningless
+T card_game_words
+K 44348 # wild alone is an adjective

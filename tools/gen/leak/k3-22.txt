@@ -1,0 +1,250 @@
+T big_numbers
+K 40451 # Avogadro alone names nothing
+K 41548 # Graham alone names nothing
+T polygons
+S 58096 | irregular | uneven-sided shape | 3
+K 38865 # nothing left
+S 58091 | regular | equal-sided shape | 3
+S 58097 = 38847
+T circle_parts
+K 38842 # nothing left
+T angle_words
+S 58124 | full | complete turn | 4
+T fractions
+S 41594 | common | ordinary type | 4
+S 41602 | Egyptian | ancient unit-sum type | 5
+S 41595 | equivalent | same-value type | 4
+K 41442 # nothing left
+K 41600 # nobody says bar for it
+S 41591 | improper | top-heavy type | 3
+S 41592 | proper | smaller-top type | 3
+S 41593 | unit | numerator-one type | 4
+T statistics_words
+K 41706 # nothing left
+T length_units
+S 41737 | AU | Earth-Sun distance | 3
+T temperature_words
+K 41815 # nobody says body for it
+K 41811 # nobody says room for it
+K 41814 # nothing left
+T measuring_instruments
+K 23749 # nobody says jug for it
+T science_fields
+S 42120 | materials | study of substances | 3
+T branches_of_biology
+S 42118 | marine | sea life study | 2
+S 58253 | molecular | cell chemistry study | 3
+T earth_sciences
+S 58259 | atmospheric | air study | 3
+K 34755 # nothing left
+T inca_engineering
+K 42214 # nobody says road for it
+T computers
+K 7250 # nothing left
+T keyboard_keys
+S 58285 | arrows | cursor movers | 2
+K 58283 # function alone names no key
+K 58290 # nobody says menu for it
+S 58286 | Windows | logo key | 2
+T software_words
+K 7262 # nothing left
+T cables_and_connectors
+S 58314 | parallel | printer-port type | 4
+S 42598 | patch | short link lead | 3
+S 58316 | ribbon | flat multi-wire type | 4
+S 58301 | serial | single-line type | 4
+T computer_storage
+S 42401 | cloud | online drive | 2
+T handheld_gadgets
+K 49363 # console alone is not handheld
+K 49365 # scanner alone is not handheld
+T robots
+K 49415 # nobody says industrial for it
+K 49422 # nobody says dog for it
+K 4763 # nobody says vacuum for it
+T smart_home
+K 49462 # fixed product name
+K 49470 # nobody says automation alone
+S 49469 = 23146
+S 49459 | bulb | lamp | 2
+K 49474 # display alone is not smart
+S 49468 | fridge | kitchen cooler | 1
+S 49475 = 27963
+S 25720 = 24104
+S 32372 = 49818
+S 23673 = 23640
+S 7341 = 23559
+S 49480 = 23642
+S 23565 | TV | screen set | 1
+T cameras
+S 7342 | action | rugged sports recorder | 3
+S 49501 | bodycam | officer-worn recorder | 3
+K 49492 # fixed name
+K 49495 # nobody says phone for it
+S 49484 | disposable | single-use type | 2
+K 49500 # nobody says drone for it
+K 25647 # film means the roll
+S 49491 | Polaroid | instant-print type | 2
+K 49464 # nobody says security for it
+S 49502 | trail cam | forest wildlife recorder | 3
+T audio_gear
+K 49555 # interface alone names no gear
+T display_tech
+K 49591 # vector alone names no display
+T battery_types
+K 23170 # nobody says car for it
+K 49616 # nobody says flow for it
+K 49613 # hearing aid alone is not a battery
+K 49619 # nobody says laptop for it
+S 49626 | lithium | rechargeable metal type | 2
+K 49620 # nobody says phone for it
+K 49608 # nobody says solar for it
+S 49617 | solid-state | no-liquid type | 4
+K 49628 # nobody says truck for it
+K 49612 # nobody says watch for it
+T engines
+K 49709 # aircraft alone is not an engine
+K 49702 # beam alone names no engine
+S 49706 | piston | reciprocating type | 2
+K 49703 # traction alone names no engine
+T engineering_fields
+S 49728 | acoustic | sound design | 4
+K 49737 # audio alone names no field
+S 49748 | ceramic | clay materials discipline | 5
+S 49713 | chemical | process plants discipline | 2
+S 49710 | civil | infrastructure design | 2
+S 49741 | coastal | shoreline discipline | 4
+K 49732 # computer means the device
+K 49744 # control alone names no field
+K 62259 # forensic alone names no field
+K 40933 # genetic alone names no field
+S 49734 | hydraulic | water flow discipline | 4
+S 49720 | marine | ship design | 3
+K 49722 # materials alone names no field
+S 49724 | mining | ore extraction discipline | 3
+S 49718 | nuclear | atomic power discipline | 3
+S 49733 | optical | light systems discipline | 4
+S 49719 | petroleum | oil extraction discipline | 3
+K 49740 # railway means the track system
+S 62258 | sanitary | sewage discipline | 4
+K 49715 # software means the programs
+K 49739 # sound alone names no field
+K 49727 # systems alone names no field
+S 49742 | textile | fabric discipline | 5
+K 49745 # traffic alone names no field
+K 49735 # transport alone names no field
+T energy_sources
+K 49760 # whole hyphenated name
+T fuels
+S 58362 | bunker oil | ship fuel | 4
+S 49758 | heating oil | home furnace fuel | 2
+S 32351 | jet | aviation kind | 3
+S 58363 | rocket | launch kind | 3
+T materials_science
+K 49796 # smart alone names no material
+T power_grid_words
+K 37884 # nothing left
+K 49831 # national alone names nothing
+S 49832 | outage | loss of electricity | 2
+K 62278 # factor alone names nothing
+S 49816 | transmission line | overhead wire | 3
+K 49824 # plant alone is not power
+K 49817 # station alone is not power
+S 49841 = 49823
+K 62283 # reactive alone names nothing
+T antarctic_research_station
+K 49901 # vessel alone is not research
+K 31316 # weather alone is not a station
+T space_station
+S 7127 | shuttle | NASA orbiter | 2
+S 49925 = 23134
+T observatory
+S 49949 | Lick | Mount Hamilton telescope site | 5
+T science_lab
+S 49967 | bench | work surface | 2
+S 24451 | white coat | lab garment | 2
+K 49970 # report alone names nothing
+T science_fair
+S 49991 = 4063
+T launch_pad
+S 42576 | tower | pad structure | 3
+K 41352 # window alone is not launch
+T data_center
+K 42611 # hall alone names nothing
+T scientific_method
+K 7492 # nothing left
+S 7487 | journal | research periodical | 2
+T celtic_languages
+K 62317 # Continental alone names nothing
+K 62316 # Insular alone names nothing
+T ancient_languages
+S 25937 = 7525
+T codes_and_signals
+K 25998 # flag alone is ambiguous
+K 26016 # Navajo alone is a people
+K 26005 # signal flags is the whole name
+S 4628 | smoke | campfire message | 2
+K 26007 # nobody says tap for it
+S 26017 | zip | US mail area | 1
+T alphabets_and_writing
+K 7597 # nothing left
+T keyboard_symbols
+K 26150 # nobody says at for it
+S 26146 | pound | number sign | 2
+T handwriting_words
+K 26174 # nothing left
+T grammar_terms
+K 26305 # nothing left
+T sentence_parts
+S 26405 | complex | multi-clause type | 3
+S 26404 | compound | two-clause type | 3
+K 26379 # nothing left
+K 26399 # topic alone names nothing
+T canadian_slang
+K 27566 # fixed name
+T words_meaning_nonsense
+K 27753 # nothing left
+K 27787 # stuff alone is not nonsense
+T words_for_toilet
+K 27931 # squat alone is ambiguous
+K 23134 # nothing left
+T zigzag_words
+K 27841 # nothing left
+T shades_of_red
+S 38559 | blood | deep crimson tint | 1
+S 38558 | brick | clay tint | 2
+S 38570 | candy apple | glossy sweet tint | 3
+S 38565 | fire engine | emergency truck tint | 2
+K 38567 # Indian alone names nothing
+K 1 # nothing left
+S 38571 = 38557
+K 38566 # Venetian alone names nothing
+T shades_of_blue
+S 68 | baby | pale pastel tint | 2
+K 5 # nothing left
+S 50308 | cadet | grey-leaning tint | 3
+K 38586 # Carolina alone names nothing
+K 38582 # Egyptian alone names nothing
+S 38578 | electric | vivid bright tint | 2
+S 38579 | ice | frozen pale tint | 3
+K 38580 # Oxford alone names nothing
+S 69 | powder | soft pale tint | 3
+K 7729 # Prussian alone names nothing
+S 67 | royal | rich deep tint | 2
+S 62 | sky | clear daytime tint | 1
+S 38577 | steel | metallic grey tint | 3
+T shades_of_green
+S 38602 | army | military drab tint | 2
+S 38599 | bottle | dark glass tint | 3
+S 38589 | forest | dark woodland tint | 1
+K 4 # nothing left
+S 38593 | hunter | dark hunting tint | 3
+S 38605 | jungle | tropical dense tint | 2
+S 38592 | kelly | bright Irish tint | 3
+K 38604 # Lincoln alone names nothing
+S 38606 | neon | glowing tint | 2
+K 38603 # Paris alone names nothing
+S 38595 | pine | evergreen needle tint | 2
+S 38600 | racing | British motorsport tint | 3
+S 38596 | sea | ocean tint | 2
+S 38601 | spring | fresh young tint | 2

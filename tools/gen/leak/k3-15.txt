@@ -1,0 +1,222 @@
+T bins_and_recycling
+K 23974 # bag alone not a bin bag
+S 23988 = 4125
+K 1864 # bare compost is the material
+K 23998 # nobody says pedal for it
+K 23970 # nothing left
+K 23999 # nobody says center alone
+K 23990 # nobody says symbol alone
+S 23985 = 47993
+T washing_up
+K 24009 # nobody says bowl for it
+T staircase_parts
+S 38979 | spiral | winding stairs | 2
+T roof_parts
+K 23245 # nothing left
+S 24093 | felt | waterproof layer | 4
+K 24098 # skylight already in theme
+S 24088 | valley | angle where slopes meet | 3
+T windows_and_doors
+S 14164 | bay | projecting recess | 3
+K 24066 # nothing left
+S 24111 | frame | surround | 2
+S 24109 | french | glazed pair | 2
+K 24118 # nobody says revolving alone
+S 14014 | rose | cathedral circle | 3
+S 14165 | sash | sliding-pane kind | 3
+K 24108 # nobody says screen for it
+K 24117 # nobody says sliding alone
+K 24067 # nothing left
+T parts_of_a_door
+K 55336 # nobody says closer alone
+S 24111 | frame | surround | 2
+K 55337 # nobody says number alone
+S 55329 | panel | flat section | 3
+S 55333 | sweep | draught seal | 4
+T house_styles
+K 24174 # nobody says council for it
+S 24150 | detached | standalone home | 2
+S 24155 | ranch | single-storey home | 3
+S 24167 | shotgun | narrow home | 5
+S 125 | terraced | row home | 3
+K 24169 # tiny is only an adjective
+T real_estate_words
+S 24182 | agent | property seller | 2
+T household_bills
+S 24239 | electric | power payment | 1
+S 24215 | gas | heating payment | 1
+S 24217 | phone | telecom payment | 1
+S 24216 | water | utility payment | 1
+T moving_house
+K 24263 # day alone means nothing
+T home_safety
+K 24297 # latch alone isn't safety-specific
+S 24287 | socket cover | - | 3
+T tops
+S 24305 | crop | midriff-baring cut | 2
+S 24307 | halter | tie-neck style | 3
+S 4896 | tank | sleeveless shirt | 2
+T pants_and_shorts
+K 24335 # nobody says bike for them
+S 24334 | boardies | - | 4
+S 24338 | gauchos | cropped wide-leg style | 5
+K 24331 # nobody says harem alone
+K 24325 # nobody says hot for them
+S 24332 | palazzos | wide-leg style | 4
+K 4863 # nothing left
+K 4867 # nothing left
+K 24340 # nobody says stirrup for them
+T dresses_and_skirts
+S 24346 | a-line | flared cut | 3
+S 24349 | cocktail | party style | 2
+S 24366 | denim | lower-body jeanswear | 2
+K 4869 # nothing left
+K 24354 # nobody says hoop for it
+S 24342 | maxi | ankle-length style | 2
+S 24345 | pencil | slim style | 2
+K 24352 # adjective, not a name
+S 24360 | puffball | gathered style | 4
+S 24362 | sheath | fitted style | 4
+S 24350 | shift | loose style | 3
+K 4868 # nothing left
+K 24369 # smock is a different garment
+K 24365 # adjective, not a name
+S 24353 | tulle | net-fabric style | 3
+S 24347 | wrap | tie-waist style | 3
+T coats_and_jackets
+K 24390 # nobody says car for it
+S 24391 | chesterfield | velvet-collar style | 4
+K 4872 # nothing left
+S 24377 | denim | upper-body jeanswear | 2
+K 24395 # nobody says donkey for it
+S 24375 | duffel | toggle style | 3
+K 4871 # nothing left
+S 24376 | leather | biker style | 1
+K 24399 # nobody says mess for it
+S 24394 | norfolk | belted tweed style | 5
+S 24389 | shell | waterproof layer | 3
+K 24387 # nobody says sports alone
+S 24373 | trench | belted mac | 2
+S 24393 | ulster | long double-breasted style | 5
+T western_wear
+S 55462 = 24652
+K 55209 # shirt alone loses western
+T work_clothes
+S 24459 = 4956
+T socks_and_hosiery
+S 24568 | ankle | short cut | 2
+S 24574 | argyle | diamond-check style | 3
+K 16064 # nobody says bed alone
+K 24573 # nobody says bobby alone
+S 24580 | compression | circulation support | 3
+S 24586 | crew | mid-calf cut | 3
+S 24585 | hiking | trail kind | 3
+K 24579 # nothing left
+S 24577 | no-show | - | 4
+K 24409 # nothing left
+K 24578 # nobody says toe alone
+K 24576 # trainer alone means shoes
+S 24575 | tube | long stretchy kind | 3
+T rain_gear
+S 24597 = 24588
+K 24601 # nobody says cover alone
+K 24593 # hat alone loses rain
+T winter_clothes
+K 24616 # coat already in theme
+T shoes
+K 24644 # nobody says boat for them
+S 24642 | courts | plain pumps | 3
+K 24643 # nobody says deck for them
+S 24637 | derby | open-laced style | 3
+K 24651 # nobody says golf for them
+S 11887 | taps | dance kind | 3
+T boots
+S 24654 | ankle | ankle-height style | 2
+S 24671 | biker | motorcycle style | 3
+S 24655 | chelsea | elastic-side style | 3
+S 24656 | combat | military style | 2
+S 24652 | cowboy | western footwear | 1
+S 24663 | desert | suede lace-up style | 3
+K 24666 # nobody says football for them
+K 24669 # nobody says go-go alone
+S 24653 | hiking | trail style | 1
+K 24670 # nobody says hobnail alone
+K 24674 # nobody says jodhpur alone
+K 24662 # nobody says knee-high alone
+K 24676 # nobody says lace-up alone
+K 24665 # nobody says moon for them
+K 24675 # nobody says paddock for them
+S 24597 = 24588
+S 24659 | riding | equestrian style | 2
+K 24667 # nobody says ski for them
+S 24608 | snow | winter style | 2
+K 24455 # nobody says steel-toe alone
+K 24661 # nobody says thigh-high alone
+S 24660 | work | tough job style | 2
+T hats
+S 24683 | bucket | floppy brim style | 2
+K 24711 # nobody says chef for it
+S 22998 | cowboy | western headwear | 1
+K 24710 # nobody says party for it
+S 24682 | straw | woven style | 2
+K 16347 # nobody says sun for it
+K 13720 # nobody says top alone
+K 24709 # nobody says witch for it
+T historical_hats
+K 55485 # nobody says beaver for it
+K 55487 # nobody says cavalier for it
+K 21324 # cocked is only an adjective
+K 55490 # nobody says opera for it
+K 13720 # nobody says top alone
+K 55489 # nobody says wide-awake alone
+T bags
+S 24725 | baguette | slim shoulder style | 5
+S 24724 | bucket | drawstring style | 4
+K 15781 # nobody says diaper alone
+K 24730 # doctor's alone is a fragment
+K 24719 # nobody says gym alone
+S 24728 | hobo | slouchy style | 4
+K 24732 # kit alone means gear
+K 24722 # nobody says laptop alone
+K 19920 # nobody says lunch alone
+K 24733 # nobody says nappy alone
+K 24721 # nobody says school alone
+K 24714 # nobody says shopping alone
+K 24715 # nobody says shoulder alone
+S 24723 | sling | cross-body style | 3
+K 24720 # nobody says sports alone
+T scarves_and_gloves
+S 24769 | mitt | baseball | 2
+K 24764 # nobody says boxing alone
+K 24765 # nobody says driving alone
+K 24766 # nobody says evening alone
+K 24762 # nobody says fingerless alone
+K 4956 # nothing left
+K 24770 # nobody says latex alone
+K 24760 # nobody says leather alone
+K 24768 # nobody says opera alone
+S 24763 = 19862
+K 23375 # nobody says rubber alone
+K 24771 # nobody says ski alone
+K 24761 # nobody says wool alone
+T hair_accessories
+K 24817 # nobody says chalk alone
+S 4967 = 24993
+S 16179 = 55553
+S 24815 | extensions | added strands | 2
+K 24821 # nobody says jewel alone
+S 24822 | pick | wide-toothed comb | 4
+K 24812 # nobody says stick alone
+K 3798 # nobody says tie alone
+T fabrics_and_sewing
+K 5025 # nothing left
+K 5034 # kit alone is generic
+S 4766 | machine | stitching device | 2
+T wool_fabrics
+K 55509 # boiled is only an adjective
+S 55513 | vicuna | fine fibre | 5
+K 5040 # nothing left
+S 55522 | yak | shaggy fibre | 4
+T sewing_words
+K 5034 # kit alone is generic
+S 4766 | machine | stitching device | 2

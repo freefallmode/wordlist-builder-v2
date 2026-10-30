@@ -1,0 +1,265 @@
+T diet_types
+S 16728 = 49599
+K 16732 # bare grapefruit is only fruit
+S 16727 | Zone | eating plan | 3
+T healthy_snacks
+S 16769 = 1290
+T ways_of_breathing
+S 17043 | belly | diaphragm | 3
+S 17044 | box | four-count | 3
+S 17047 | labored | - | 3
+S 16505 | mouth | through the mouth | 3
+S 17045 | nose | through the nose | 3
+S 17052 | pursed lip | - | 4
+S 17046 | shallow | - | 3
+T body_positions
+S 15389 | recovery | first aid | 2
+T mouth_actions
+K 17117 # nothing left
+T ways_of_laughing
+K 17144 # nobody says burst out alone
+T family_and_friends
+K 3922 # best alone means nothing
+S 3914 | extended | - | 2
+K 3894 # nothing left
+K 3915 # nobody says tree for it
+S 3943 | foster | - | 3
+K 3895 # nothing left
+S 3942 = 49753
+T relationships
+S 32447 | open | - | 3
+T ways_to_say_goodbye
+K 32493 # nothing left
+T ages_and_stages
+S 32523 = 28061
+S 32541 = 39471
+T words_for_friend
+K 3922 # best alone means nothing
+K 3895 # nothing left
+T words_for_mother
+K 28012 # nothing left
+T words_for_father
+K 32380 # nothing left
+T words_for_kids
+K 32513 # nothing left
+T kinds_of_party
+S 5181 | stag do | - | 3
+S 5184 | bachelorette | pre-wedding | 2
+S 32587 = 3904
+K 32593 # block alone is not a party
+S 32598 | cocktail | drinks reception | 2
+S 32590 | costume | dress-up | 2
+S 32597 | dinner | hosted meal | 2
+S 32596 | garden | outdoor reception | 2
+S 32601 = 5178
+S 32591 = 5102
+S 32592 = 5105
+S 32589 | pool | poolside | 2
+S 5180 | retirement | send-off | 2
+K 32599 # street alone is a road
+S 25147 | surprise | secret celebration | 2
+S 32594 | tea | afternoon social | 2
+T ways_to_say_yes
+K 32607 # nothing left
+T happy_words
+K 32663 # nothing left
+T sad_words
+K 32693 # nothing left
+T angry_words
+K 32723 # nothing left
+T scared_words
+K 28634 # nothing left
+T surprised_words
+K 32776 # nothing left
+T love_words
+K 32820 # nobody says fall for it
+K 3981 # nothing left
+T calm_words
+K 21492 # nothing left
+T moods
+S 32940 = 39372
+S 32941 = 28185
+K 32914 # nothing left
+T arts_jobs
+K 12670 # director alone means film
+S 33035 | restorer | - | 3
+T office_jobs
+K 60938 # boy alone is a child
+K 33083 # nobody says junior alone
+T animal_jobs
+K 10474 # trainer alone means fitness
+T cowboy_words
+S 24652 = 21315
+S 22998 = 4944
+T gaucho_words
+K 38553 # nothing left
+T emergency_workers
+K 33215 # hazmat alone is the material
+T shopkeepers
+K 60961 # nothing left
+T government_words
+K 60975 # nothing left
+T election_words
+K 33337 # nothing left
+S 33318 | polling day | - | 3
+T royal_things
+K 33419 # royal is part of name
+K 33403 # royal is part of name
+K 33421 # royal is part of name
+S 61017 = 10961
+S 33414 = 33303
+K 33404 # royal is part of name
+K 61018 # fixed name Royal Mews
+K 33412 # royal is part of name
+K 33402 # royal is part of name
+S 33417 = 4223
+K 33401 # royal is part of name
+K 61023 # royal is part of name
+T parts_of_parliament
+K 33484 # nobody says hung alone
+T diplomacy_words
+S 33543 = 34597
+K 33542 # shuttle alone is a vehicle
+T international_organizations
+S 33562 | Amnesty | human rights group | 2
+T law_and_order
+K 4183 # nothing left
+K 4248 # enforcement alone is vague
+T courtroom_words
+K 33669 # nothing left
+T police_words
+K 4207 # nothing left
+S 33688 | station | precinct house | 2
+T prison_words
+K 2485 # nothing left
+S 33707 | bars | cell grating | 2
+S 33727 | jailbreak | - | 2
+S 33705 | jailer | - | 2
+S 61137 | hulk | convict ship | 4
+S 33728 = 35341
+S 33715 | yard | exercise area | 2
+T detective_words
+K 4194 # nothing left
+T legal_documents
+S 33763 | brief | - | 3
+T spy_words
+K 16942 # nothing left
+T money_words
+K 28546 # nothing left
+S 33867 = 33866
+T coins
+S 33957 = 21213
+K 21205 # gold alone is the metal
+S 33954 | pound | one-pound piece | 2
+T us_coins
+S 56816 | dollar | one-dollar piece | 2
+T tax_words
+S 32306 | carbon | emissions levy | 3
+S 33966 = 33860
+S 33978 | payroll | - | 3
+S 33984 | community charge | - | 3
+S 24219 = 24201
+S 33967 = 28064
+K 33285 # nothing left
+S 33986 | bracket | income band | 2
+K 33991 # code alone means cipher
+K 33987 # credit alone means borrowing
+K 33654 # evasion alone is vague
+K 33974 # haven alone means refuge
+S 33970 | return | filing | 2
+S 33992 = 30164
+S 33985 | window | historic levy | 3
+T shopping_words
+K 34005 # nobody says window for it
+T money_slang
+S 34034 = 23285
+T stock_market_words
+K 34088 # cap alone is a hat
+K 34081 # penny alone is a coin
+K 34058 # nothing left
+S 34093 | exchange | share trading venue | 2
+T bazaar
+K 20644 # fixed name
+T holy_books
+K 34240 # fixed title
+S 61187 | Enoch | apocryphal text | 4
+S 34248 | Job | Old Testament poem | 3
+K 34227 # Mormon alone is a person
+T angels_and_spirits
+K 4295 # nothing left
+K 34264 # fallen alone is vague
+S 34252 | guardian | protective spirit | 2
+K 22776 # nothing left
+T afterlife_words
+K 34407 # nothing left
+T military
+S 4405 | base | garrison | 2
+T navy_words
+K 21161 # Royal alone is nonsense
+K 34594 # US alone is nonsense
+T air_force_words
+S 34550 = 34542
+S 34545 = 34534
+S 34606 | strike | attack run | 2
+T medals_and_honors
+S 34623 | gold | top prize | 1
+K 4408 # nothing left
+K 34645 # bar alone is vague
+K 34644 # Freedom alone is vague
+K 34626 # nothing left
+K 34647 # Olympic alone is vague
+T school
+S 4524 | boarding | residential | 2
+S 4523 | elementary | - | 2
+K 4521 # nobody says high alone
+S 4522 | primary | first stage | 2
+S 2655 = 2646
+S 4535 = 4905
+T school_staff
+S 34826 | governor | board member | 3
+S 34801 = 3449
+S 34824 = 16381
+S 34814 = 4102
+T exam_words
+K 4485 # nothing left
+K 61276 # script alone means film
+S 34860 | mock | - | 3
+S 34846 | oral | - | 3
+S 34848 = 32890
+S 61273 | Regents | - | 4
+T school_types
+S 4524 | boarding | residential | 2
+S 34902 = 33757
+K 34926 # cram alone is a verb
+K 61285 # dame alone is a woman
+S 4523 | elementary | - | 2
+S 34925 = 4273
+K 34919 # finishing alone is vague
+K 61288 # fixed name
+K 34924 # free alone means no cost
+S 34906 = 26305
+K 61287 # hedge alone is a plant
+K 4521 # nobody says high alone
+K 34923 # infant alone is a baby
+S 34903 | magnet | selective program | 3
+K 34897 # nobody says middle alone
+K 34916 # night alone is time
+S 34918 | prep | preparatory | 2
+S 34900 | private | fee-paying | 2
+S 34901 = 27989
+K 61286 # ragged alone is vague
+K 34922 # special alone is vague
+S 34917 | summer | holiday classes | 2
+K 34915 # Sunday alone is a day
+K 34910 # trade alone is commerce
+S 34913 | Waldorf | Steiner education | 3
+T university_degrees
+S 34938 | associate | - | 3
+S 34963 | first | top class | 3
+K 34960 # foundation alone is makeup
+S 34949 | honours | - | 3
+T graduation_words
+K 34975 # ceremony alone is vague
+K 32601 # party alone is vague
+K 34981 # photo alone is vague
+S 34982 = 21314
