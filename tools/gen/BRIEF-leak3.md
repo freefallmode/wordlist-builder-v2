@@ -5,18 +5,18 @@ The library feeds a word-sorting game: a level shows sets of 4 words from 8-12 t
 ## The test
 Cover the theme name. Take the text with the theme-name word removed (the listing gives it as `shorter`). Ask two questions:
 
-1. **Would people really call the thing that?** In a sorting game the player sees only that word, among 11 other words from other themes. If someone says "I had a canary" or "pass me the Erie" meaning this exact thing, the bare form works.
-2. **Would the player still place it here?** The bare word may be ambiguous in general as long as it points to this thing once the other words are in view. A bare word that points mainly to something else, or to nothing, fails.
+1. **Would people really call the thing that?** If someone says "I had a canary", "pass me the Erie" or "I'll have the white" (tea) meaning this exact thing, the bare form works. Within a category the distinguishing word alone is the normal shorthand: black, green, white, bubble, herbal for teas; blue for cheese; oyster for mushrooms; tiger and bull for sharks.
+2. **Would the player still place it here?** The 4 words of a theme are shown together with 4-word sets from other themes, so siblings named the same way make each other clear (black, green, white, herbal read as teas; canary, musk, honeydew as melons). A bare word that is ambiguous on its own is FINE when it is the usual shorthand and its siblings are alike. It fails only when it points to nothing or is not how anyone shortens the name.
 
 - **S** (replace by the shorter form or another real name) when both answers are yes, or when a different well-known name for the same thing has no theme-name word. Examples: `canary melon` -> `canary`, `musk melon` -> `musk`, `Lake Erie` -> `Erie`, `emperor penguin` -> `emperor`, `hospital gown` -> `gown`, `pigeon loft` -> `loft`, `quad stretch` -> `quad`, `shaving brush` -> `brush`, `crane shot` -> `crane`.
 - **K** (keep) only when you can say in a few words why the shorter form fails. Valid reasons:
   - *fixed name*: the full text is one name and the rest is not used alone: `dried apple` (bare "apple" is just a fruit), `dragon fruit`, `passion fruit`, `food truck`, `pad thai`, `vitamin D`, `Pacific Ocean`.
-  - *different thing*: the bare form means something else, usually a more common thing: `tiger shark` ("tiger" is the cat), `milk snake`, `pill bug`.
+  - *not a shortening*: nobody uses the bare form for this thing, so it would be a different thing or nonsense: `dried apple` ("apple" is the fruit, not dried), `dragon fruit` ("dragon" is never fruit), `milk snake`, `pill bug`. This is NOT satisfied just because the bare word has another, more common meaning: if people do say it for this thing in the category (white tea -> white, blue cheese -> blue, bull shark -> bull), replace it.
   - *nothing left*: the name word is the whole identity (`secondary colors`, `theme song`).
   - *name word is the head noun and no other word names it*: `rock candy`, `measuring cup`.
-- A K line carries the reason as a trailing `# reason` of 2-6 words, e.g. `K 41234 # bare word means the cat`. If you cannot name a valid reason, it is an S.
+- A K line carries the reason as a trailing `# reason` of 2-6 words, e.g. `K 41234 # nobody says dragon for it`. "Bare word means something else" is not a reason on its own. If you cannot name a valid reason, it is an S.
 - Do not keep because the full name "sounds more natural", "is more precise" or "is how it appears in a dictionary". Real people say the short form; the full form is what leaks.
-- Do not be reckless in the other direction: never write a bare form that is a different, better-known thing than this one in any theme (`tiger shark` -> `tiger` is wrong, `bull shark` -> `bull` is wrong, `pen name` -> `pen` is wrong, `Ice Age` -> `Ice` is wrong), and never leave only a function word, number, colour or very short fragment.
+- Do not be reckless in the other direction: never write a bare form that nobody uses for this thing (`pen name` -> `pen` is wrong, `Ice Age` -> `Ice` is wrong), and never leave only a function word, number or very short fragment.
 - Never use D. Never write a new text that still contains a word of the theme name. Never invent names. Aliases are not listed; do not touch them.
 - If the theme is wordplay where sharing the word is the whole point (words that start with / end with / contain, hidden words, rhymes, "___ fire" compounds), write `T <id> OK` alone for it.
 
