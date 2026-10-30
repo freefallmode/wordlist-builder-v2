@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":154,"modified":"2026-10-30 11:09"},"nextId":62524,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":156,"modified":"2026-10-30 11:16"},"nextId":62525,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"d":0,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":""},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"d":1,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":""},
@@ -5643,7 +5643,7 @@
 {"id":3039,"text":"canteen","gloss":"water bottle","rec":3,"th":{"campsite":2,"camping_gear":2,"cowboy_gear":3},"status":"gen"},
 {"id":3040,"text":"s'more","rec":2,"region":["US","CA"],"th":{"campsite":2},"status":"gen"},
 {"id":3041,"text":"firewood","rec":1,"th":{"campsite":1,"things_made_from_trees":1,"energy_sources":2,"fireplace_words":2,"fuels":2},"status":"gen"},
-{"id":3042,"text":"kindling","rec":2,"th":{"campsite":2,"heating_and_cooling":4,"things_made_from_trees":3,"fire_words":2,"fireplace_words":2},"status":"gen"},
+{"id":3042,"text":"kindling","rec":2,"aliasOf":62524,"aliasKind":"synonym","th":{"campsite":2,"heating_and_cooling":4,"things_made_from_trees":3,"fire_words":2,"fireplace_words":2},"status":"gen"},
 {"id":3043,"text":"fire pit","rec":2,"th":{"campsite":2,"garden_furniture":2},"status":"gen"},
 {"id":3044,"text":"hammock","rec":1,"th":{"campsite":2,"sleep":3,"beds":3,"words_from_spanish":4,"words_from_native_american_languages":4,"garden_furniture":1,"navy_words":3,"camping_gear":2,"beach_vacation":2},"status":"gen"},
 {"id":3046,"text":"pocketknife","rec":2,"th":{"campsite":3,"things_that_fold":2},"status":"gen"},
@@ -9940,7 +9940,7 @@
 {"id":7351,"text":"Bluetooth speaker","rec":2,"th":{"gadgets":1,"music_players":2,"audio_gear":1},"status":"gen"},
 {"id":7352,"text":"iPhone","type":"org","rec":1,"tm":true,"th":{"gadgets":1},"status":"gen"},
 {"id":7353,"text":"iPad","type":"org","rec":1,"tm":true,"th":{"gadgets":1,"things_with_screens":1,"handheld_gadgets":1},"status":"gen"},
-{"id":7354,"text":"Kindle","gloss":"e-reader","type":"org","rec":1,"tm":true,"th":{"gadgets":2,"fire_words":2,"things_with_screens":2,"handheld_gadgets":2},"status":"gen"},
+{"id":7354,"text":"Kindle","gloss":"e-reader","type":"org","rec":1,"tm":true,"th":{"gadgets":2,"things_with_screens":2,"handheld_gadgets":2},"status":"gen"},
 {"id":7355,"text":"GoPro","type":"org","rec":2,"tm":true,"th":{"gadgets":3,"cameras":2},"status":"gen"},
 {"id":7356,"text":"Segway","type":"org","rec":2,"tm":true,"th":{"gadgets":3,"scooters_and_skates":3,"electric_vehicles":2},"status":"gen"},
 {"id":7357,"text":"Walkman","type":"org","rec":2,"tm":true,"th":{"gadgets":2,"music_players":2,"retro_household_items":2,"brand_names_used_as_words":2,"things_that_run_on_batteries":3,"handheld_gadgets":2,"retro_tech":1,"japanese_inventions":2},"status":"gen"},
@@ -64275,5 +64275,6 @@
 {"id":62520,"text":"stir","gloss":"prison","pos":"verb","rec":1,"th":{"prison_words":4},"status":"gen"},
 {"id":62521,"text":"succulent","gloss":"juicy","rec":3,"th":{"taste_words":2},"status":"gen"},
 {"id":62522,"text":"summation","gloss":"adding up","rec":4,"th":{"math_operations":4},"status":"gen"},
-{"id":62523,"text":"whoop","gloss":"fitness band","type":"org","rec":3,"th":{"wearable_tech":4},"status":"gen"}
+{"id":62523,"text":"whoop","gloss":"fitness band","type":"org","rec":3,"th":{"wearable_tech":4},"status":"gen"},
+{"id":62524,"text":"kindle","gloss":"to light","pos":"verb","rec":2,"th":{"fire_words":2},"status":"gen"}
 ]}
