@@ -71,6 +71,7 @@ for (const f of args) {
         const same = sameText(P, text);
         target = same.find(x => !x.aliasOf && (x.gloss || '') === gloss);
         if (!target) {
+          if (MERGES) continue;   // a merge never makes a new entry: it would be left with no theme
           if (same.length && !gloss) { problems.push(`${f}: "${text}" exists; give the new entry a meaning label or use S ${e.id} = <id>`); continue; }
           target = addEntry(P, text, { gloss, pos: e.pos, type: e.type, rec: +m[5], adult: e.adult, vulgar: e.vulgar, sensitive: e.sensitive, tm: e.tm, region: [...e.region], status: 'gen' });
           reindex(P); stat.made++;
