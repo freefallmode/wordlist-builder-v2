@@ -4,6 +4,7 @@
 // Then one line per leaking entry of that theme:
 //   S <id> = <existingEntryId>                     replace it in this theme by an existing root entry (linked here with the same popularity)
 //   S <id> | <new text> | <meaning label or -> | <rec 1-5>   replace it by the entry with that text (found, or created with the old one's part of speech, type and flags)
+//   K <id>                                         keep it: the full text is the real name (nameOkIn), no warning for this theme
 //   D <id>                                         drop it from this theme
 // The old entry loses its link to this theme; with no theme links left it is deleted (its aliases move to the new entry on S, are deleted on D). A leaking alias is always deleted.
 // Themes done are recorded in tools/gen/leak/done.json.
@@ -17,7 +18,7 @@ const LIB = li >= 0 ? args.splice(li, 2)[1] : new URL('../../data/wordlist-en.pr
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const doneFile = li >= 0 ? LIB + '.done.json' : new URL('./leak/done.json', import.meta.url);
 const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFile, 'utf8')) : []);
-const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, ok: 0, open: 0, kept: 0 };
+const problems = [], stat = { themes: 0, S: 0, D: 0, made: 0, deleted: 0, ok: 0, open: 0, kept: 0, K: 0 };
 
 for (const f of args) {
   let tid = null, need = new Set(), handled = new Set();
@@ -46,6 +47,11 @@ for (const f of args) {
       const t = P.ix.theme.get(tid); if (!t || t.group) { problems.push(`${f}: no playable theme ${tid}`); tid = null; continue; }
       if (m[2]) { t.nameOk = true; stat.ok++; done.add(tid); tid = null; continue; }
       const ws = themeNameWords(t); need = new Set((P.ix.byTheme.get(tid) || []).filter(e => nameLeak(t, e, ws)).map(e => e.id));
+    } else if (tid && (m = /^K (\d+)$/.exec(s))) {   // keep: the full text is the real name; exempt this entry in this theme
+      const e = P.ix.entry.get(+m[1]);
+      if (!e || !linkIds(P, e).includes(tid)) { problems.push(`${f}: entry ${m[1]} is not in ${tid}`); continue; }
+      if (!(e.nameOkIn || []).includes(tid)) e.nameOkIn = [...(e.nameOkIn || []), tid];
+      handled.add(e.id); stat.K++;
     } else if (tid && (m = /^D (\d+)$/.exec(s))) {
       const e = P.ix.entry.get(+m[1]);
       if (!e || !linkIds(P, e).includes(tid)) { if (!handled.has(+m[1])) problems.push(`${f}: entry ${m[1]} is not in ${tid}`); continue; }
@@ -81,4 +87,4 @@ if (problems.length > 40) console.log('... and', problems.length - 40, 'more pro
 reindex(P); stampSave(P);
 fs.writeFileSync(LIB, serializeProject(P));
 if (!KEEP) fs.writeFileSync(doneFile, JSON.stringify([...done].sort()));
-console.log(`${stat.themes} themes (${stat.ok} marked nameOk), ${stat.S} replaced, ${stat.D} dropped, ${stat.made} entries made, ${stat.deleted} deleted, ${stat.open} still open, ${stat.kept} left as they were -> library v${P.lib.version}; ${done.size} themes done`);
+console.log(`${stat.themes} themes (${stat.ok} marked nameOk), ${stat.S} replaced, ${stat.D} dropped, ${stat.made} entries made, ${stat.deleted} deleted, ${stat.open} still open, ${stat.kept} left as they were, ${stat.K} kept by name -> library v${P.lib.version}; ${done.size} themes done`);

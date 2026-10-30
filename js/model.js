@@ -29,7 +29,7 @@ export function newProject() {
 
 export function entryDefaults() {
   return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, rec: 0, adult: false, sensitive: false, tm: false, vulgar: false,
-    region: [], aliasOf: 0, aliasKind: '', th: {}, status: 'new', note: '' };
+    region: [], aliasOf: 0, aliasKind: '', th: {}, status: 'new', note: '', nameOkIn: [] };   // nameOkIn: themes where the full text is the real name and may contain the theme's words (dried apple in dried fruits)
 }
 
 export function addEntry(P, text, over = {}) {

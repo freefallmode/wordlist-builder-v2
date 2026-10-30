@@ -9,7 +9,7 @@ const NAME_STOP = new Set(('a an and or the of in on at to for from with by as i
 const nameStem = w => w.length > 4 && /ies$/.test(w) ? w.slice(0, -3) + 'y' : w.length > 4 && /(ches|shes|sses|xes)$/.test(w) ? w.slice(0, -2) : w.length > 3 && /[^s]s$/.test(w) ? w.slice(0, -1) : w;
 const nameToks = s => (s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').match(/[a-z]+/g) || []);
 export const themeNameWords = t => [...new Set(nameToks(t.name).filter(w => w.length > 2 && !NAME_STOP.has(w)).map(nameStem))];
-export function nameLeak(t, e, words = themeNameWords(t)) { if (t.nameOk || !words.length) return null; const ts = nameToks(e.text).map(nameStem); return words.find(k => ts.includes(k)) || null; }
+export function nameLeak(t, e, words = themeNameWords(t)) { if (t.nameOk || !words.length || (e.nameOkIn || []).includes(t.id)) return null; const ts = nameToks(e.text).map(nameStem); return words.find(k => ts.includes(k)) || null; }
 
 const words = s => s.trim().split(/\s+/).length;
 const letters = s => s.replace(/[^\p{L}\p{N}]/gu, '').length;
