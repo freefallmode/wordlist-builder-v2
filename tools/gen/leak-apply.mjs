@@ -12,8 +12,9 @@ import fs from 'node:fs';
 import { parseProject, serializeProject, stampSave } from '../../js/store.js';
 import { reindex, linkIds, addEntry, deleteEntry, sameText } from '../../js/model.js';
 import { nameLeak, themeNameWords } from '../../js/validate.js';
-const args = process.argv.slice(2), li = args.indexOf('--lib'), ki = args.indexOf('--keep-drops'), KEEP = ki >= 0;   // --keep-drops: apply only the replacements; D lines, leaking aliases and replacements that merge into an entry already in the theme are left as they are
+const args = process.argv.slice(2), ki = args.indexOf('--keep-drops'), KEEP = ki >= 0;   // --keep-drops: apply only the replacements; D lines, leaking aliases and replacements that merge into an entry already in the theme are left as they are
 if (ki >= 0) args.splice(ki, 1);
+const li = args.indexOf('--lib');
 const LIB = li >= 0 ? args.splice(li, 2)[1] : new URL('../../data/wordlist-en.project.json', import.meta.url);
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const doneFile = li >= 0 ? LIB + '.done.json' : new URL('./leak/done.json', import.meta.url);
