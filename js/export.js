@@ -4,7 +4,7 @@
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, effRec, linkIds, POS, TYPES, REGIONS } from './model.js';
+import { eff, effRec, popIn, themeProfile, linkIds, POS, TYPES, REGIONS } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 
 export const DEFAULT_EXPORT = {
@@ -32,7 +32,7 @@ export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r
 
 // Bit layouts, written into the file so the reader does not have to guess.
 export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32 };
-export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16 };
+export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32 };
 
 export function buildExport(P, opt0 = {}) {
   const o = Object.assign({}, DEFAULT_EXPORT, opt0);
@@ -41,7 +41,7 @@ export function buildExport(P, opt0 = {}) {
   const ix = P.ix;
 
   // 1. Links that pass the filters.
-  const keep = new Map();                            // entry id -> [[themeId, rec]]
+  const keep = new Map();                            // entry id -> [[themeId, difficulty, popularity]]
   const candidates = P.entries.filter(e => e.enabled);
   report.entriesIn = candidates.length;
   const themeOk = t => {
@@ -50,7 +50,7 @@ export function buildExport(P, opt0 = {}) {
   };
   const okTheme = new Map(P.themes.map(t => [t.id, themeOk(t)]));
   for (const e of candidates) {
-    if (e.aliasOf && !(e.aliasKind === 'spelling' ? o.spellings : o.synonyms)) continue;
+    if (e.aliasOf && !(e.aliasKind === 'synonym' ? o.synonyms : o.spellings)) continue;   // spellings and forms (skis for ski) go together
     if (o.maxEntryWords > 0 && e.text.trim().split(/s+/).length > o.maxEntryWords) continue;
     if (!pass(o.vulgar, e.vulgar) || !regionPass(o.region, ix.entry.get(e.aliasOf || e.id).region)) continue;   // region is judged on the root only: an alias follows its root, never its own tag
     const links = [];
@@ -60,7 +60,7 @@ export function buildExport(P, opt0 = {}) {
       if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, e.sensitive || f.sensitive) || !pass(o.tm, e.tm || f.tm)) continue;
       const r = effRec(P, e, tid);
       if (r === 0 ? !o.unrated : (r < o.recMin || r > o.recMax)) continue;
-      links.push([tid, r]);
+      links.push([tid, r, popIn(P, e, tid)]);
     }
     if (links.length) keep.set(e.id, links);
   }
@@ -120,6 +120,7 @@ export function buildExport(P, opt0 = {}) {
     let flags = 0;
     if (e.adult) flags |= ENTRY_BITS.adult; if (e.sensitive) flags |= ENTRY_BITS.sensitive; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.vulgar) flags |= ENTRY_BITS.vulgar;
     if (e.aliasOf && e.aliasKind === 'spelling') flags |= ENTRY_BITS.spelling;
+    if (e.aliasOf && e.aliasKind === 'form') flags |= ENTRY_BITS.form;
     cols.text.push(e.text);
     cols.pos.push(POS.indexOf(e.pos));
     cols.type.push(TYPES.indexOf(e.type));
@@ -128,7 +129,7 @@ export function buildExport(P, opt0 = {}) {
     cols.regions.push(rMask(e.region));
     cols.root.push(rootIndex(id));
     cols.linkCount.push(links.length);
-    for (const [tid, r] of links) cols.links.push(tIndex.get(tid), r);
+    for (const [tid, r, p] of links) cols.links.push(tIndex.get(tid), r, p);
     if (cols.zipf) { const z = zipf(e.text); cols.zipf.push(z == null ? 0 : Math.round(z * 10)); }
     if (o.gloss) cols.gloss.push(e.gloss);
     if (o.notes) cols.note.push(e.note);
@@ -140,17 +141,19 @@ export function buildExport(P, opt0 = {}) {
     const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0)
       | (t.complete ? THEME_BITS.complete : 0)
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
-    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, t.d, rMask(f.region)];
+    const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
+    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, pr ? pr.median : 0, rMask(f.region), t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0]];
     if (o.notes) row.push(t.note);
     return row;
   });
 
   const file = {
-    v: 1, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
+    v: 2, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
     options: o, regions, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
-    themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions'].concat(o.notes ? ['note'] : []),
+    // difficulty = median difficulty of the theme's roots; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
+    themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions', 'popularity', 'counts', 'range'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
-    // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] pairs (themeIndex, rating) in `links`.
+    // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] triples (themeIndex, difficulty, popularity) in `links`.
     // root[i] is 0 for a root entry, else the index+1 of the root it is an alias of.
     entries: cols,
   };

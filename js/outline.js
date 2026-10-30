@@ -8,7 +8,7 @@
 //   [complete]                      a finite, fixed set (months, planets)
 //   [adult] [sensitive] [trademark] [lang]   theme flags; [lang] = depends on English (spelling, sound, slang)
 //   [off]                           disabled
-//   [d:3]                           theme difficulty 1 to 5 (unrated when absent)
+//   [pop:3]                         theme popularity 1 (most popular) to 5 (unrated when absent); [d:n] is an old difficulty tag and is ignored
 //   [region:US,UK]                  only widely known in those regions (audience)
 
 
@@ -19,7 +19,7 @@ export function slug(s) {
 }
 
 export function newTheme(name, parent = null) {
-  return { id: slug(name), name, parent, group: false, enabled: true, d: 0, complete: false, adult: false, sensitive: false,
+  return { id: slug(name), name, parent, group: false, enabled: true, pop: 0, complete: false, adult: false, sensitive: false,
     tm: false, lang: false, region: [], note: '' };
 }
 
@@ -58,7 +58,8 @@ export function parseOutline(text) {
       else if (g === 'trademark') t.tm = true;
       else if (g === 'lang') t.lang = true;
       else if (g === 'off') t.enabled = false;
-      else if (g.startsWith('d:')) t.d = Math.max(0, Math.min(5, +g.slice(2) || 0));
+      else if (g.startsWith('pop:')) t.pop = Math.max(0, Math.min(5, +g.slice(4) || 0));
+      else if (g.startsWith('d:')) continue;   // retired difficulty tag, ignored
       else if (g.startsWith('region:')) t.region = g.slice(7).split(',').map(s => s.trim()).filter(Boolean);
       else if (g.startsWith('geo:')) continue; // retired tag, ignored
       else errors.push(`line ${i + 1}: unknown tag [${g}]`);
@@ -75,7 +76,7 @@ export function formatOutline(themes) {
   return themes.map(t => {
     const tags = [];
     if (t.region.length) tags.push('region:' + t.region.join(','));
-    if (t.d) tags.push('d:' + t.d);
+    if (t.pop) tags.push('pop:' + t.pop);
     for (const [k, v] of [['complete', t.complete], ['adult', t.adult], ['sensitive', t.sensitive], ['trademark', t.tm], ['lang', t.lang], ['off', !t.enabled]]) if (v) tags.push(k);
     return '  '.repeat(depth(t)) + t.name + (t.group ? ':' : '') + tags.map(g => ' [' + g + ']').join('') + (t.note ? ' -- ' + t.note : '');
   }).join('\n') + '\n';

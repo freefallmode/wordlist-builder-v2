@@ -56,7 +56,7 @@ test('aliases take the root themes and the harder rating', () => {
   assert.equal(themeStats(P, 'fruits').entries, 2);
   assert.equal(effRec(P, settee, 'fruits'), 3);
   settee.th.fruits = 2;
-  assert.equal(effRec(P, settee, 'fruits'), 2);
+  assert.equal(effRec(P, settee, 'fruits'), 3);   // its own popularity (2) is easier than how well known it is (3)
   deleteEntry(P, couch); reindex(P);
   assert.equal(settee.aliasOf, 0);
   assert.equal(effRec(P, settee, 'fruits'), 3);   // now a root: the harder of its theme rating (2) and its own rating (3)

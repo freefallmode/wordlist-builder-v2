@@ -1,11 +1,12 @@
 // Data model. Pure functions over a plain project object, so they can be tested in Node.
 //
-// Theme   { id, name, parent, group, enabled, d, complete, adult, sensitive, tm, lang, region[], note }
+// Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, lang, region[], note }
 // Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, rec, adult, sensitive, tm, vulgar, region[],
-//         aliasOf, aliasKind, th{ themeId: inThemeRating }, status, note }
+//         aliasOf, aliasKind, th{ themeId: popularity }, status, note }
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
-//         between themes is the in-theme rating in `th`. An alias (aliasOf = id of its root) takes its themes from the root.
-// Ratings are 1 to 5 (1 every child knows it ... 5 few people), 0 = not rated.
+//         between themes is the popularity in `th` (1 the first words anyone thinks of for the theme ... 5 real but peripheral). An alias (aliasOf = id of its root) takes its themes from the root.
+// `rec` is 1 to 5 (1 every child knows it ... 5 few people), 0 = not rated. A theme's `pop` is how good a pick the theme is (1 most popular ... 5 least), 0 = not rated.
+// A theme's difficulty is not stored: themeProfile() works it out from the words in it.
 import { childrenOf } from './outline.js';
 
 export const POS = ['noun', 'verb', 'adjective', 'adverb', 'other'];
@@ -15,7 +16,8 @@ export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named
   title: 'book, film, song, game, artwork', proper: 'other proper name (event, era, deity)', acronym: 'letters said as letters or a word (NASA, UFO)', phrase: 'idiom or set phrase' };
 export const REGIONS = ['US', 'CA', 'UK', 'IE', 'AU', 'NZ', 'ZA', 'IN', 'TR'];
 export const REC_HELP = ['not rated', '1 every child knows it', '2 nearly every adult', '3 many adults, not all', '4 interest, job or region', '5 few people'];
-export const ALIAS_KINDS = ['', 'synonym', 'spelling'];
+export const POP_HELP = ['not rated', '1 the first words anyone thinks of', '2 typical', '3 ordinary member', '4 less typical', '5 real but peripheral'];
+export const ALIAS_KINDS = ['', 'synonym', 'spelling', 'form'];   // spelling and form (skis for ski) are the same word, so they take the root's popularity; a synonym is rated on its own
 export const STATUS = ['new', 'gen', 'rev'];
 export const STATUS_HELP = { new: 'added by hand, unchecked', gen: 'generated, not reviewed', rev: 'reviewed' };
 
@@ -65,15 +67,16 @@ export function linkIds(P, e) {
 }
 
 // The rating that counts for an entry in one theme.
-// Root: the harder of its in-theme rating and its general rating (a word few people know is hard however readily it fits the theme). Alias: its own in-theme override, else the harder of its root's rating there
-// and its own general rating (settee is at least as hard as couch, and as hard as settee is on its own).
-export function effRec(P, e, tid) {
-  if (!e.aliasOf) return Math.max(e.th[tid] || 0, e.rec || 0);
+// Popularity of an entry in a theme: its own `th` value, else its root's (spellings and forms never have their own).
+export function popIn(P, e, tid) {
   if (e.th[tid]) return e.th[tid];
-  const r = P.ix.entry.get(e.aliasOf);
-  const base = r ? (r.th[tid] || r.rec || 0) : 0;
-  return Math.max(base, e.rec || 0);
+  const r = e.aliasOf && P.ix.entry.get(e.aliasOf);
+  return r ? r.th[tid] || 0 : 0;
 }
+
+// How hard an entry is in a theme: the harder of how well known the word is and how peripheral it is to the theme
+// (a word few people know is hard however typical it is; a famous word that is a stretch for the theme is hard too).
+export function effRec(P, e, tid) { return Math.max(popIn(P, e, tid), e.rec || 0); }
 
 // Theme flags with inheritance: adult, sensitive, trademark, language-specific and disabled pass down the tree; regions are unioned.
 export function eff(P, tid) {
@@ -114,6 +117,20 @@ export function themeStats(P, tid) {
     if (!seen.has(r + ':' + b)) { seen.add(r + ':' + b); rootBands[b]++; }
   }
   return { entries: list.length, roots: roots.size, bands, rootBands };
+}
+
+// What a theme can serve a level: its distinct roots by difficulty. `counts[1..5]` roots at each difficulty (an alias group counts at every difficulty one of its words has),
+// `median` the middle root's difficulty, `lo` and `hi` the difficulty of the 4th easiest and 4th hardest root (the range in which it can fill a 4-word set), `reach` the root count.
+export function themeProfile(P, tid) {
+  const list = (P.ix.byTheme.get(tid) || []).filter(usable), counts = [0, 0, 0, 0, 0, 0], seen = new Set(), roots = new Map();
+  for (const e of list) {
+    const b = effRec(P, e, tid) || 5, r = e.aliasOf || e.id;
+    if (!seen.has(r + ':' + b)) { seen.add(r + ':' + b); counts[b]++; }
+    const rr = P.ix.entry.get(r);
+    if (!e.aliasOf || !roots.has(r)) roots.set(r, effRec(P, e.aliasOf && rr ? rr : e, tid) || 5);
+  }
+  const sorted = [...roots.values()].sort((a, b) => a - b), n = sorted.length;
+  return { counts, reach: n, median: n ? sorted[n >> 1] : 0, lo: n >= 4 ? sorted[3] : 0, hi: n >= 4 ? sorted[n - 4] : 0 };
 }
 
 // ---------- edits ----------

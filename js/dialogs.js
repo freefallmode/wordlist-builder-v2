@@ -2,7 +2,7 @@
 import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
-import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
+import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
@@ -11,7 +11,7 @@ import { download } from './store.js';
 import { MODELS, getKey, setKey, getModel, setModel, generateWords, rateThemes, SPREADS } from './ai.js';
 
 const REC_OPTS = REC_HELP.map((l, i) => [i, l]);
-const IN_OPTS = [[0, 'auto'], ...REC_HELP.slice(1).map((l, i) => [i + 1, l])];
+const IN_OPTS = [[0, 'auto'], ...POP_HELP.slice(1).map((l, i) => [i + 1, l])];
 
 // Theme picker by name: a text box with a datalist. Returns { input, get() } where get() gives a theme id or null.
 let listSeq = 0;
@@ -34,7 +34,7 @@ export async function editTheme(t, isNew = false) {
   const f = {
     name: h('input', { value: w.name }),
     note: h('textarea', { rows: 3 }, w.note),
-    d: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.d),
+    pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
   };
   const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang'];
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
@@ -46,7 +46,7 @@ export async function editTheme(t, isNew = false) {
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
     h('div.flags', Object.values(boxes)),
     h('div.hint.flaghelp', {}, ['tm', 'adult', 'sensitive', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
-    field('Theme difficulty', f.d, 'How recognisable the theme is as a category (1 everyone gets it at a glance ... 5 specialist).'),
+    field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). Difficulty is worked out from the words.'),
     field('Audience regions', h('div.chips', regionBoxes), 'Tick if the theme is mainly known in some countries (US states, British politics). Leave empty for everyone.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
@@ -62,7 +62,7 @@ export async function editTheme(t, isNew = false) {
       const pname = parentPick.input.value.trim(), parent = pname ? parentPick.get() : null;
       if (pname && !parent) throw Error('Parent theme not found.');
       if (parent && (parent === t.id || (!isNew && isAncestor(P, t.id, parent)))) throw Error('A theme cannot be inside itself.');
-      Object.assign(w, { name, note: f.note.value.trim(), d: +f.d.value });
+      Object.assign(w, { name, note: f.note.value.trim(), pop: +f.pop.value });
       for (const k of flags) w[k] = boxes[k].querySelector('input').checked;
       w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
       const oldParent = t.parent;

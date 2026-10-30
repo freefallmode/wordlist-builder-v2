@@ -24,12 +24,12 @@ export function validate(P) {
       continue;
     }
     const st = themeStats(P, t.id);
-    if (!t.d) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no difficulty rating.`, { themeId: t.id }); else unrated++; }
+    if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no popularity rating.`, { themeId: t.id }); else unrated++; }
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
-  if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no difficulty rating yet.`);
+  if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no popularity rating yet.`);
 
   // ----- entries -----
   const seen = new Map();
@@ -63,7 +63,7 @@ export function validate(P) {
         if (r.aliasOf) add('error', 'alias-chain', `"${label(e)}" is an alias of "${label(r)}", which is itself an alias. Point it at the root.`, loc);
         if (r.id === e.id) add('error', 'alias-self', `"${label(e)}" is an alias of itself.`, loc);
         if (r.text.toLowerCase() === text.toLowerCase()) add('warn', 'alias-same', `"${label(e)}" has the same text as its root.`, loc);
-        if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym or spelling).`, loc);
+        if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling or form).`, loc);
         if (e.aliasKind === 'spelling' && !e.region.length) add('info', 'alias-region', `Spelling alias "${label(e)}" has no region (US, UK ...).`, loc);
       }
     } else if (!ids.length) add('info', 'orphan', `"${label(e)}" is not linked to any theme.`, loc);

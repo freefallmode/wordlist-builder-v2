@@ -27,7 +27,7 @@ The old app (`../wordlist-builder`) is a reference only. Its words were over-inc
 | **Aliases** (`aliasOf` + `aliasKind` synonym/spelling + the entry's own `region`) instead of a special US/UK pair type. | One mechanism covers couch/sofa/settee, sidewalk/pavement and color/colour. A regional synonym is a synonym with region UK. |
 | **Aliases add variety, not words to a level.** An alias takes its themes from its root; the game must never show two entries of one alias group in the same level; a theme's 4-word minimum counts distinct roots. | Aliases give extra difficulty steps (settee is harder than couch) and extra surface forms, but must not make a thin theme look big. |
 | **Ratings are 1-5** (0 = not rated), everywhere. | Five levels map onto the five difficulty modes and are what a person can rate consistently. 1-10 gave false precision. |
-| **Three stored ratings:** word recognisability (`rec`), recognisability inside a theme (`th[themeId]`), theme difficulty (`d`). Everything else that makes a level hard (closeness of themes, completeness, length, number of themes) is computed by the generator. | Keeps stored data to what only a human or Claude can judge. Zipf frequency is only a cross-check (validation) and an optional export column. |
+| **Three stored ratings:** word recognisability (`rec`), popularity of a word inside a theme (`th[themeId]`), popularity of a theme (`pop`). Theme difficulty is not stored: it is worked out from the words in the theme (`themeProfile`). Everything else that makes a level hard (closeness of themes, completeness, length, number of themes) is computed by the generator. | Keeps stored data to what only a human or Claude can judge. The game picks words and themes by difficulty and popularity that match its progression. Zipf frequency is only a cross-check (validation) and an optional export column. |
 | **Part of speech and kind of word are separate fields:** `pos` (noun, verb, adjective, adverb, other) and `type` (common, person, place, org, title, proper, acronym, phrase). | "Paris" is a noun and a place; one field cannot hold both. `type` also drives case checks. |
 | **Text is stored with its proper case** (Paris, NASA, iPhone) and accents. The game derives upper-case and accent-folded balloon text. | Case carries meaning and lets validation catch mistakes. Smaller than storing both forms. |
 | **Words and flags are regenerated, not copied from the old library.** | The old data was suspect (section 1). |
@@ -50,7 +50,7 @@ Pure functions over a plain project object (`js/model.js`), so the core can be t
 **Theme:** `{ id, name, parent, group, enabled, d, complete, adult, sensitive, tm, lang, region[], note }`.
 - `id`: stable slug (`citrus_fruits`). A leading or trailing `___` in a name becomes "blank" so `___ball` and `ball` get different ids. Duplicate ids get `_2`, `_3`.
 - `group`: a folder, never played, holds no words (validation warns if it does).
-- `d`: theme difficulty 1-5, 0 = unrated.
+- `pop`: theme popularity 1-5 (1 most popular and appealing), 0 = unrated. (An old `d` difficulty field was dropped: difficulty is worked out.)
 - `note`: shown to the generator and to people. **For complete sets it lists the exact members.**
 - The order of the `themes` array is the depth-first outline order (the tree order). Moving a theme moves its whole sub-tree.
 
@@ -59,7 +59,7 @@ Pure functions over a plain project object (`js/model.js`), so the core can be t
 - `status`: `new` (added by hand), `gen` (generated, not reviewed), `rev` (reviewed).
 - `vulgar` (crude or offensive wording) is an entry flag only; themes have no vulgar flag. Entries have no language-specific flag; that flag is for themes.
 
-**Aliases.** `aliasOf` is the id of the root; an alias is never the root of another alias (chains are an error). An alias takes its themes from its root and has its own flags, ratings, `region` and `aliasKind` (`synonym`, `spelling`). Its rating in a theme is its own `th[theme]` override, else the harder (higher) of its root's rating there and its own `rec`. Deleting a root promotes its first alias to root (it keeps the ratings it was getting). In the entry editor, "This is an alias of" and "Aliases of this entry" are a single block in a single place, both shown as tappable links that open the other entry.
+**Aliases.** `aliasOf` is the id of the root; an alias is never the root of another alias (chains are an error). An alias takes its themes from its root and has its own flags, ratings, `region` and `aliasKind`: `synonym` (another name, rated on its own: its own `th[theme]` popularity), `spelling` (colour/color) or `form` (an inflection: skis for ski); spellings and forms never have their own popularity, they take the root's. Its difficulty in a theme is the harder of its popularity there (own `th`, else its root's) and its own `rec`. Deleting a root promotes its first alias to root (it keeps the ratings it was getting). In the entry editor, "This is an alias of" and "Aliases of this entry" are a single block in a single place, both shown as tappable links that open the other entry.
 
 **Indexes** (`reindex`, rebuilt after every edit): theme by id, children by parent, entry by id, aliases by root, entries by theme (an alias appears under its root's themes), entries by lower-cased text.
 
@@ -90,9 +90,11 @@ Tags: `[complete] [adult] [sensitive] [trademark] [lang] [off] [d:3] [region:US,
 
 ## 5. Rating scales and flag meanings
 
-**Word recognisability `rec`, and in-theme rating:** 1 every child knows it (apple, dog) · 2 nearly every adult (plum, otter) · 3 many adults but not all (quince, ocelot) · 4 people with the interest, job or region (kumquat, quokka) · 5 few people (pulasan, a rare specialist term). Rate by what a typical adult actually knows, not how common the thing is in the world. The in-theme rating is how readily a player who knows the word would place it in this theme (a tomato in "fruits" is a 4 even though everyone knows tomato). The rating that counts for a root in a theme (exports, level building, the theme band counts) is the harder of the two, so a word few people know is never treated as easy just because it fits its theme at once (trudgen: rec 5, in-theme 1, counts as 5). An alias with its own in-theme override uses the override.
+**Word recognisability `rec`:** 1 every child knows it (apple, dog) · 2 nearly every adult (plum, otter) · 3 many adults but not all (quince, ocelot) · 4 people with the interest, job or region (kumquat, quokka) · 5 few people (pulasan, a rare specialist term). Rate by what a typical adult actually knows, not how common the thing is in the world.
 
-**Theme difficulty `d`:** how recognisable the *category* is: 1 everyone gets it at a glance (fruits, animals, colors) · 2 most adults (musical instruments, kitchen tools) · 3 many adults (sailing words, architectural styles) · 4 needs some interest or knowledge (heraldry terms) · 5 specialist or obscure. A vague boundary makes it harder.
+**Word popularity in a theme, `th[themeId]`:** how typical and central the word is of that theme, i.e. how readily it comes to mind when someone names things in the theme: 1 the first words anyone names (weather: rain, sun, snow) · 2 typical · 3 ordinary member · 4 less typical or specialist · 5 real member but peripheral (a famous word that only just fits, e.g. tomato in fruits, or a very obscure member). It is not recognisability and not whether the word belongs. **Difficulty of a word in a theme** (what exports and level building use, `effRec`) is the harder of `rec` and the popularity: a word few people know is hard however typical it is, and a famous word that is a stretch for the theme is hard too.
+
+**Theme popularity `pop`:** how good a pick the theme is for a level: 1 the headline themes people love (fruits, weather, the planets) · 3 ordinary · 5 narrow, dry or niche. Complete sets rate one step more popular (closed sets are satisfying to sort). **Theme difficulty** is worked out, not rated: `themeProfile` counts the distinct roots at each difficulty 1 to 5, takes the median, and gives the range in which the theme can fill a 4-word set (its 4th easiest and 4th hardest root). A theme with only 3 easy words and 40 obscure ones cannot serve an easy level however its average looks, so the game should choose themes by their counts at the level's target difficulty, not by one number.
 
 **Flag meanings** (`FLAG_HELP` in `js/model.js`, used by the editors and the generation prompt so the wording stays identical):
 - **Trademark / copyright:** brands, titles, characters, and so on.
@@ -145,7 +147,7 @@ Output is columnar JSON to keep the file small:
   entries: { text[], pos[], type[], flags[], rec[], regions[], root[], linkCount[], links[] (+ zipf[], gloss[], note[]) } }
 ```
 
-Entry i is `text[i]` etc.; its themes are the next `linkCount[i]` pairs `(themeIndex, rating)` in `links`. `root[i]` is 0 for a root, else index+1 of the root it aliases. Theme `flags` bits: adult 1, sensitive 2, trademark 4, language 8, complete 16, group 32. Entry `flags` bits: adult 1, sensitive 2, trademark 4, vulgar 8, spelling alias 16. `regions` is a bit mask over `regions[]`. Balloon text is not stored; derive it.
+Entry i is `text[i]` etc.; its themes are the next `linkCount[i]` triples `(themeIndex, difficulty, popularity)` in `links`. `root[i]` is 0 for a root, else index+1 of the root it aliases. Theme `flags` bits: adult 1, sensitive 2, trademark 4, language 8, complete 16, group 32. Entry `flags` bits: adult 1, sensitive 2, trademark 4, vulgar 8, spelling alias 16, form alias 32. Theme rows are `id, name, parent, flags, difficulty (median), regions, popularity, counts (roots at difficulty 1-5), range (difficulty of the 4th easiest and 4th hardest root)`; the file version is 2. `regions` is a bit mask over `regions[]`. Balloon text is not stored; derive it.
 
 ## 9. Claude generation
 

@@ -2,7 +2,7 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, effRec, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, rateUnrated, showValidation, showExport, showSettings, openPath } from './dialogs.js';
@@ -202,6 +202,7 @@ function select_(id) {
 // ---------- main pane ----------
 
 const RECCLASS = ['r0', 'r1', 'r2', 'r3', 'r4', 'r5'];
+const themeBadge = (P, t) => { const p = themeProfile(P, t.id); return p.reach ? h('span.badge.d', { title: `Worked out from the words: median difficulty, and the range in which the theme can fill a 4-word set. Roots at difficulty 1-5: ${p.counts.slice(1).join(' / ')}` }, `difficulty ${p.median}` + (p.lo ? ` · serves ${p.lo}–${p.hi}` : '')) : null; };
 const recSel = (value, onchange, auto = false) => select([[0, auto ? 'auto' : '–'], 1, 2, 3, 4, 5], value, { class: 'rs ' + RECCLASS[value], onchange });
 
 function overview() {
@@ -231,11 +232,11 @@ function themeView(t) {
   const head = h('div.thead', {},
     h('div.crumbs', {}, path.slice(0, -1).map((n, i) => h('a', { href: '#', onclick: ev => { ev.preventDefault(); select_(P.ix.theme.get(pathIds(t.id)[i]).id); } }, n + ' › '))),
     h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')),
-    h('div.chips', {}, badges(t), t.d ? h('span.badge.d', { title: 'Theme difficulty' }, 'difficulty ' + t.d) : h('span.badge.d0', 'not rated')),
+    h('div.chips', {}, badges(t), t.pop ? h('span.badge.d', { title: 'Theme popularity (1 most popular)' }, 'popularity ' + t.pop) : h('span.badge.d0', 'not rated'), !t.group && themeBadge(A.P, t)),
     t.note && h('p.note', t.note),
     h('div.actions', {}, h('button', { onclick: () => editTheme(t) }, 'Theme settings…'), h('button', { onclick: () => addTheme(t.id) }, '+ Sub-theme'),
       !t.group && h('button', { onclick: () => bulkAdd(t.id) }, '+ Add words…'), !t.group && h('button.primary', { onclick: () => generate(t.id) }, 'Generate with Claude…'),
-      h('button', { title: 'Ask Claude to rate the difficulty of the unrated themes here', onclick: () => rateUnrated(t.id) }, 'Rate themes…')));
+      ));
   const parts = [head];
   if (kids.length) {
     const c = counts();
@@ -265,7 +266,7 @@ function entryTable(t) {
   const list = pool.filter(e => (A.showOff || e.enabled) && (!A.filter || (e.text + ' ' + e.gloss).toLowerCase().includes(A.filter.toLowerCase())));
   const inList = new Set(list.map(e => e.id));
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
-  const key = { text: e => e.text.toLowerCase(), rec: e => e.rec || 9, pos: e => e.pos, intheme: e => effRec(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey }[A.sort] || (e => e.text.toLowerCase());
+  const key = { text: e => e.text.toLowerCase(), rec: e => e.rec || 9, pos: e => e.pos, intheme: e => popIn(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey }[A.sort] || (e => e.text.toLowerCase());
   const dir = A.sortDesc ? -1 : 1;
   roots.sort((a, b) => dir * (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
   let rows = [];
@@ -277,12 +278,12 @@ function entryTable(t) {
   const flagsOf = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
-    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('in theme', 'intheme'), th('flags', 'flags'), th('status', 'status')),
+    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.aliasOf ? h('span.arrow', '↳ ') : '', e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), e.aliasKind && h('span.hint', ` ${e.aliasKind}`)),
         h('td.dim', e.pos.slice(0, 3)), h('td.dim', e.type), h('td', {}, recSel(e.rec, ev => { e.rec = +ev.target.value; A.changed(); })),
-        sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), !!e.aliasOf && !e.th[t.id] && h('span.hint', ' ' + effRec(P, e, t.id))),
+        sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), effRec(P, e, t.id) !== (e.th[t.id] || 0) && h('span.hint', { title: 'The difficulty that counts: the harder of the rating and the popularity' }, ' counts ' + effRec(P, e, t.id))),
         h('td', flagsOf(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·')))) :
         h('tr', h('td', { colspan: 8, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
 }
