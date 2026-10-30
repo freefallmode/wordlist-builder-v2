@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":173,"modified":"2026-10-30 18:59"},"nextId":63355,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":174,"modified":"2026-10-30 19:30"},"nextId":63355,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1},
@@ -53970,7 +53970,7 @@
 {"id":53054,"text":"towheaded","rec":4,"th":{"hair_colors":4},"status":"gen"},
 {"id":53055,"text":"bleached","gloss":"hair","rec":2,"th":{"hair_colors":4},"status":"gen"},
 {"id":53056,"text":"peroxide blonde","rec":4,"th":{"hair_colors":4},"status":"gen"},
-{"id":53057,"text":"graying","rec":2,"aliasOf":7672,"aliasKind":"form","th":{"hair_colors":3},"status":"gen"},
+{"id":53057,"text":"graying","pos":"adjective","rec":2,"th":{"hair_colors":3},"status":"gen"},
 {"id":53058,"text":"cervical","gloss":"spine","pos":"adjective","rec":3,"th":{"sections_of_the_spine":2},"status":"gen"},
 {"id":53059,"text":"neck vertebrae","pos":"adjective","rec":3,"aliasOf":53058,"aliasKind":"synonym","th":{"sections_of_the_spine":3},"status":"gen"},
 {"id":53060,"text":"thoracic","gloss":"spine","pos":"adjective","rec":3,"th":{"sections_of_the_spine":2},"status":"gen"},
