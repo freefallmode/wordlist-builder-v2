@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":210,"modified":"2026-10-31 23:51"},"nextId":64830,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":212,"modified":"2026-11-01 00:05"},"nextId":64831,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]]},
@@ -64529,5 +64529,6 @@
 {"id":64825,"text":"hazy","pos":"adjective","rec":2,"aliasOf":2011,"aliasKind":"form","status":"gen"},
 {"id":64826,"text":"showery","pos":"adjective","rec":3,"aliasOf":1983,"aliasKind":"form","status":"gen"},
 {"id":64827,"text":"drizzly","pos":"adjective","rec":3,"aliasOf":1990,"aliasKind":"form","status":"gen"},
-{"id":64828,"text":"thundery","pos":"adjective","rec":3,"aliasOf":1972,"aliasKind":"form","status":"gen"}
+{"id":64828,"text":"thundery","pos":"adjective","rec":3,"aliasOf":1972,"aliasKind":"form","status":"gen"},
+{"id":64830,"text":"PNG","gloss":"country","type":"acronym","rec":2,"aliasOf":35767,"aliasKind":"abbreviation"}
 ]}
