@@ -117,3 +117,7 @@ Safeguards: validation rules for each kind, a count of aliases with theme links 
 - Is one member per group per level always right, or should a few themes allow both (for example themes about word choice)? The proposal says: only themes that declare no groups.
 - Region bucketing in the game (US / UK / other): confirm after seeing how many words are unique to AU, NZ, IE, IN, CA and ZA (90, 19, 19, 34, 14 and 7 words respectively tagged to a single region).
 - How does the game use the root pointer and alias kind bits today? Not checked; the game repo is still on export format 1.
+
+## 9. Shortened text in a theme (`show`)
+
+Added 2026-11-01. A theme may show an entry under a shorter text than its own: `rock garden` is shown as `rock` in "garden styles" (`show: {garden_styles: "rock"}`). This is a theme-local fact, so it is **not** an alias: `rock` does not mean "rock garden" in any other theme. The earlier kept-by-name review recorded these as `form` aliases of the bare word; 1,147 of them were turned back into entries of their own (`tools/gen/show-migrate.mjs`). `form` now means a grammatical form only. Like `use`, `show` is not yet written by the export (format 3).

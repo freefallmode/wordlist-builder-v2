@@ -35,12 +35,14 @@ export function validate(P) {
     if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no popularity rating.`, { themeId: t.id }); else unrated++; }
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
-    if (!t.nameOk) { const ws = themeNameWords(t); for (const e of direct) { const w = nameLeak(t, e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
+    if (!t.nameOk) { const ws = themeNameWords(t); for (const e of direct) { const w = nameLeak(t, e.show?.[t.id] ? { ...e, text: e.show[t.id] } : e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
     for (const g of t.groups || []) {   // synonym groups: at most one member per level
       const mem = g.map(id => ix.entry.get(id));
       if (g.length < 2) add('warn', 'group-small', `A synonym group in "${t.name}" has fewer than two members.`, { themeId: t.id });
       for (const [i, e] of mem.entries()) if (!e || e.aliasOf || !(e.th[t.id] !== undefined)) add('warn', 'group-member', `Synonym group member ${g[i]} in "${t.name}" is not a word of that theme.`, { themeId: t.id });
     }
+    const shownAs = new Map();   // two words that read the same in one theme cannot both be placed
+    for (const e of direct) { if (e.aliasOf) continue; const x = fold(e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text); if (shownAs.has(x)) add('warn', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}".`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
   if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no popularity rating yet.`);
@@ -90,6 +92,7 @@ export function validate(P) {
       if (t.group) add('warn', 'link-group', `"${label(e)}" is linked to "${t.name}", which is a group.`, loc);
       if (fold(t.name) === fold(text)) add('warn', 'is-theme-name', `"${text}" is the name of the theme it is in ("${t.name}").`, loc);
     }
+    for (const [tid, txt] of Object.entries(e.show || {})) if (!ids.includes(tid) || !String(txt).trim()) add('warn', 'show-theme', `"${label(e)}" has a display text for ${tid}, which it is not in (or the text is empty).`, loc);
     for (const [tid, aid] of Object.entries(e.use || {})) {
       const a = ix.entry.get(aid);
       if (!ids.includes(tid)) add('warn', 'use-theme', `"${label(e)}" names a display form for ${tid}, which it is not in.`, loc);

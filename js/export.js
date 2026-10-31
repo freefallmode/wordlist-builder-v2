@@ -135,6 +135,8 @@ export function buildExport(P, opt0 = {}) {
     if (o.notes) cols.note.push(e.note);
   }
   report.entriesOut = ids.length;
+  const shownLinks = ids.reduce((n, id) => { const e = ix.entry.get(id); return n + Object.keys({ ...e.show, ...e.use }).filter(tid => tIndex.has(tid)).length; }, 0);
+  if (shownLinks) report.notes.push(`${shownLinks} theme links show a shorter text or another form (show / use); format 2 still writes the entry's own text for them.`);
 
   const themeRows = themes.map(t => {
     const f = eff(P, t.id);
