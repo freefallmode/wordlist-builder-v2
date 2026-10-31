@@ -123,8 +123,8 @@ h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--
 
 /* word table: fixed column widths so sorting never moves them; sortable headings are marked */
 .etable { overflow-x: auto; }
-.etable table { table-layout: fixed; min-width: 960px; }
-.etable th:nth-child(1) { width: 28px; } .etable th:nth-child(3) { width: 170px; } .etable th:nth-child(4) { width: 82px; } .etable th:nth-child(5) { width: 90px; }
+.etable table { table-layout: fixed; min-width: 1090px; }
+.etable th:nth-child(1) { width: 28px; } .etable th:nth-child(3) { width: 300px; } .etable th:nth-child(4) { width: 82px; } .etable th:nth-child(5) { width: 90px; }
 .etable th:nth-child(6) { width: 96px; } .etable th:nth-child(7) { width: 130px; } .etable table.sub th:nth-child(7) { width: 230px; }
 .etable th:nth-child(8) { width: 90px; } .etable th:nth-child(9) { width: 84px; }
 .etable td { overflow: hidden; text-overflow: ellipsis; }
@@ -151,7 +151,7 @@ table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, alia
 .etable td.syn { white-space: normal; }
 .block { display: inline-block; padding: .05rem .5rem; border: 1px solid var(--line, #ccc); border-radius: .4rem; background: var(--panel, rgba(128,128,128,.08)); cursor: grab; }
 tr.dropping td { background: rgba(80, 140, 255, .18); }
-.chip { display: inline-block; margin: .1rem .3rem .1rem 0; padding: 0 .4rem; border: 1px solid var(--line, #ccc); border-radius: 1rem; font-size: .9em; }
+.chip { display: inline-block; margin: .1rem .3rem .1rem 0; padding: 0 .4rem; border: 1px solid var(--line, #ccc); border-radius: 1rem; font-size: 1em; }
 .chip .x { margin-left: .3rem; text-decoration: none; color: var(--dim, #888); }
-.synadd { width: 4.5em; border: 1px dashed var(--line, #ccc); background: transparent; font-size: .9em; padding: 0 .3rem; border-radius: 1rem; }
-.synadd:focus { width: 9em; }
+.synadd { width: 6em; border: 1px dashed var(--line, #ccc); background: transparent; font-size: 1em; padding: 0 .3rem; border-radius: 1rem; }
+.synadd:focus { width: 11em; }
