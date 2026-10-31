@@ -1,0 +1,119 @@
+# Design: synonym groups, word forms and regional variants
+
+Status: proposal, not implemented. Written 2026-10-31 after a discussion about `swede` appearing in "root vegetables" without `rutabaga`. Numbers are from library v201 (62,786 entries, 58,551 roots, 2,485 playable themes).
+
+## 1. Problem
+
+`alias` is doing three different jobs, and one of them does not fit:
+
+| Kind today | Count | What it really is | Theme-dependent? |
+|---|---|---|---|
+| `spelling` (colour/color) | 566 | the same word spelled differently | no |
+| `form` (rainy for rain) | 1,248 | the same word in another grammatical form | no |
+| `synonym` | 2,304 | a different word with (nearly) the same meaning | **yes** |
+| stray kinds (`short form`, `slang`, `abbreviation`, `variant`, `"2"`...) | about 110 | mixed | mixed |
+
+Synonyms are the problem. Whether `pudding` and `dessert` mean the same depends on the theme, so a global alias cannot be right everywhere. In practice 2,142 aliases already carry their own theme links (5,926 links): the alias is being used as a free-standing member of a theme, which is how `castle` (alias of `rook`) ended up in `buildings`, and how `swede` ended up alone in "root vegetables" while `rutabaga` was missing.
+
+About 780 of the synonyms are really **regional words** (`flat` for `apartment`, `bonnet` for `hood`). These are different: the equivalence holds in every theme, so they do not have the problem.
+
+## 2. Principle
+
+> **Global** facts are about the *same word*: its forms, spellings, abbreviations and regional equivalents. **Theme-local** facts are about *different words*: synonyms.
+
+## 3. The model
+
+### 3.1 Entries and aliases
+
+An entry is still one word in one sense (text plus meaning label). A root is the **default-dialect** word (US, see 3.4). Aliases are surface variants of the same word. There are four kinds:
+
+| Kind | Example | Inherits theme links | Rating |
+|---|---|---|---|
+| `spelling` | `colour` for `color` | yes | takes the root's recognisability and popularity |
+| `form` | `rainy`, `raining` for `rain` | yes | own recognisability, shared popularity (see 3.3) |
+| `regional` (new) | `bonnet` for `hood`, `flat` for `apartment` | yes | own recognisability |
+| `abbreviation` (new, replaces `short form`, `acronym`, `nickname`) | `PC` for `personal computer` | yes | own recognisability, shared popularity |
+
+The `synonym` kind is **removed**. An alias never has its own theme links; it appears in every theme its root is in. `swede` and `rutabaga` become two separate entries (or a `regional` pair, since `swede` is the UK word).
+
+A regional variant carries `region` tags (UK, AU...). Spelling aliases carry US or UK only.
+
+### 3.2 Synonym groups (theme-local)
+
+A theme can declare groups of its own entries as interchangeable:
+
+```
+theme "desserts": groups: [[pudding, dessert]]
+```
+
+- Members are ordinary entries with their own ratings and theme links.
+- **Rule for the game: at most one member of a group per level.**
+- Another theme can list `pudding` and `dessert` as unrelated entries, or as a different group.
+- A theme whose point is synonyms ("words for happy") simply declares no groups, so its members can appear together.
+
+**Across themes.** If `pudding` (desserts) and `dessert` (meal courses) land in one level, the player is confused. This is handled by the **level generator**, not the library: the export gives every entry a `clash` id, built from the union of all theme groups it appears in, and the generator never puts two entries with the same clash id in a level. A report lists cross-theme clashes for review, because a few will be wrong where a theme treats the pair as different senses; exceptions can be added.
+
+### 3.3 Word forms
+
+A root is a **meaning** (`rain`), and its `form` aliases are its grammatical forms (`rainy` adjective, `raining` verb). `wind` (weather), `wind` (to turn) and `winding` are different meanings and different entries.
+
+- **Per theme, one form is displayed.** The root's theme link may name an alias to use: `use: { weather: <id of "rainy"> }`. Default is the root itself. A theme link's popularity is shared by all forms of the entry.
+- **Queryable.** A tool or a game theme can ask for the noun forms of a theme instead (`sun`, `rain`, `cloud`), which makes theme sets with matching parts of speech possible.
+- Each form has its own part of speech and its own recognisability (`rainy` is not as well known as `rain`).
+- **Same answer test.** A form counts as the same meaning if a player would accept it as the same answer. Derived words that have drifted (`sunny`, meaning cheerful) are a separate entry.
+
+**Generated forms.** Agents may add a missing form where a theme prefers a part of speech, under these rules:
+- it must be a normal dictionary word in everyday use, and the agent must be able to give a natural example sentence;
+- it is checked against the word-frequency list, and rare forms are flagged;
+- "no suitable form" is an explicit allowed answer;
+- new forms stay `status: gen` until reviewed.
+
+### 3.4 Regional variants and the default dialect
+
+- Roots are the **US/neutral** word. Untagged means "the same everywhere".
+- The regional alias carries its tags. `region` tags stay fully detailed in the data (UK, AU, NZ, IE, IN, CA, ZA and others). **No tag is merged or removed.**
+- **In the game**, the player's region setting picks the member to show: the regional alias if the player's region is in its tags, otherwise the root. Only one is ever shown, so no clash rule is needed. Bucketing (for example US / UK / other, with AU, NZ, IE, IN and ZA following UK unless a word says otherwise) happens in the game, not in the data.
+- **In the web app**, a setting "default dialect" (US or UK) chooses which member the app shows in lists and uses as the export fallback. It does **not** move data: with default UK the app shows `flat` for the `apartment` set. Flipping roots in the data is never needed.
+- Spelling aliases: US and UK are enough.
+
+## 4. Splitting themes
+
+Many themes can yield new themes of 4 or more words, especially once forms are queryable (`weather`: 58 nouns and 8 adjectives could give a `weather conditions` theme of adjectives and a `rough weather` theme of storms). Rules:
+- A split theme should have at least 8 distinct words and a name that does not leak its words.
+- **Complete themes** (134 closed sets, whose note lists the exact members) are only split into pieces that are themselves exact sets.
+- A word may sit in a parent and a child, but the level generator must not use the parent and its split-off children together. Check how the game handles sibling overlap before adding many splits.
+- Splits are proposed by agents, names approved by a person.
+
+## 5. Ratings
+
+Unchanged in meaning (`rec`: how well known the word is; theme link `pop`: how typical it is of the theme), applied as in the table in 3.1. A regional variant's `rec` is judged for the audience of its region.
+
+## 6. Export (format version 3)
+
+- Aliases keep the root pointer, with kind bits for spelling, form, regional and abbreviation (today: spelling 16 and form 32).
+- Each alias row has its part of speech and region mask.
+- Each theme link may have a `use` form index.
+- Each entry gets a `clash` id (3.2).
+- The game repo has not been updated to format 2 yet, so it can be moved straight to 3.
+
+## 7. Migration plan
+
+Run on a prototype slice first (`weather`, plus about ten synonym-heavy themes), then the library. Each phase ends with checks and a commit.
+
+| Phase | Work | Size | Who |
+|---|---|---|---|
+| 0 | Fold the stray alias kinds (`short form`, `slang`, `variant`, `"2"` and so on) into the real kinds | about 110 | script plus review |
+| 1 | Spelling: tag every spelling alias US or UK | 311 untagged | script (by spelling pattern) plus review |
+| 2 | Regional words: `synonym` with a differing region becomes `regional`; flip the roots that are the UK word | 779 pairs; about 105 sure flips (UK root, US alias), plus some of 243 where the root is untagged but is really the UK word | script for the sure cases, agents for the 243 |
+| 3 | Remaining synonyms (about 1,500): each becomes an independent entry. In each theme where the root and the synonym are both present they become a group; a synonym that only has its own link becomes a plain entry; a link that was really a different sense gets its own entry with a label | about 1,500 | agents, by theme |
+| 4 | Families: merge `rain`/`rainy` pairs inside themes, then give forms parts of speech and a `use` form per theme | 1,248 forms plus in-theme duplicates | script plus agents |
+| 5 | Split themes | open ended | agents propose, person approves |
+| 6 | Export v3 and the game | | |
+
+Safeguards: validation rules for each kind, a count of aliases with theme links (target 0), and a before/after list of every theme's member set so no theme loses words by accident.
+
+## 8. Open questions
+
+- Is one member per group per level always right, or should a few themes allow both (for example themes about word choice)? The proposal says: only themes that declare no groups.
+- Region bucketing in the game (US / UK / other): confirm after seeing how many words are unique to AU, NZ, IE, IN, CA and ZA (90, 19, 19, 34, 14 and 7 words respectively tagged to a single region).
+- How does the game use the root pointer and alias kind bits today? Not checked; the game repo is still on export format 1.
