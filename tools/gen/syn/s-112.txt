@@ -1,0 +1,76 @@
+# UK word for default antenna
+R 4607 regional UK
+# US/default word is the synonym
+F 6191 UK
+# beet is the US word, beetroot the UK one
+F 420 UK
+# UK word
+R 23323 regional UK
+# UK word
+R 2871 regional UK
+# US word for caving
+R 5619 regional US
+# G-clamp is a kind of clamp, still synonym
+Y 4816
+# US word for hob/cooktop
+R 4769 regional US
+Y 17621
+Y 14884
+# UK word
+R 413 regional UK
+# UK word
+R 13777 regional UK
+# UK word
+R 53020 regional UK
+# UK word
+R 14341 regional UK
+Y 11147
+# UK word
+R 2580 regional UK,AU,NZ,IE
+# US word
+R 23162 regional US
+# both are words in the toilet word list
+Y 47326 ~words_for_toilet
+# alternative name
+Y 2346
+# US/default word is the synonym
+F 40582 UK
+# a newsstand is not a shopkeeper
+# newsstand is not a shopkeeper; stand vs shop
+Y 146 -shopkeepers ~shops
+# UK word
+R 47306 regional UK
+# oil is not a peanut
+X 18886
+# UK word
+R 14335 regional UK
+# UK word
+R 17616 regional UK
+# UK word
+R 15838 regional UK
+# Welsh name
+R 2546 translation
+# UK word
+R 46937 regional UK
+# UK word
+R 2597 regional UK,IE
+# UK word
+R 5365 regional UK,CA
+# UK word
+R 869 regional UK
+# UK word
+R 583 regional UK
+# UK word
+R 3118 regional UK
+# UK word
+R 4874 regional UK,AU,NZ,IE
+# UK word
+R 23715 regional UK
+# ___line is spelling-based for tram
+Y 2653 -blank_line
+# AU/NZ word, pickup truck is the default
+F 2640 AU
+# UK word
+R 3790 regional UK
+# US word
+R 34737 regional US

@@ -1,0 +1,72 @@
+# UK word for area code
+R 35134 regional UK
+# Indian word for bangle
+R 4987 regional IN
+# US word, root is UK
+F 23251 UK
+# freight car broader than boxcar
+# not grouped: different things in train themes
+Y 2873 ~trains ~parts_of_a_train
+# UK word
+R 19846 regional UK
+# UK word
+R 38954 regional UK
+# US title, root is UK/AU
+F 5720 UK,AU
+# US name for cornflower
+R 1748 regional US
+# UK word
+R 25578 regional UK
+# UK word
+R 23253 regional UK
+# UK abbreviation of the UK term
+R 15279 regional UK
+# Australian slang stays Y
+Y 4085
+# UK word
+R 4127 regional UK
+Y 972
+# UK word
+R 46802 regional UK
+# UK/AU/NZ/IE word
+R 3122 regional UK,AU,NZ,IE
+# clipped form
+R 985 abbreviation AU,NZ
+# US word, root is UK
+F 2879 UK,AU,IE,NZ
+# UK word
+R 816 regional UK
+# UK/AU/IE word
+R 28998 regional UK,AU,IE
+Y 46403
+Y 3929
+# abbreviation
+R 3614 abbreviation UK,AU
+# UK word
+R 5973 regional UK
+# UK word
+R 23651 regional UK
+# UK/IE word
+R 5671 regional UK,IE
+# removals is the UK word
+F 24247 UK
+# US word, root is UK
+F 6435 UK
+# US word, root is UK
+F 38477 UK
+# US word, root is UK
+F 38433 UK
+# WWI US soldier, narrower sense
+O 4379 | WWI American
+Y 2313
+Y 19024
+Y 5246
+# US word, root is UK
+F 2660 UK,AU,IE
+# UK word
+R 4546 regional UK
+Y 3455
+# US word
+R 5966 regional US
+# different fish species
+O 1276 | North American fish

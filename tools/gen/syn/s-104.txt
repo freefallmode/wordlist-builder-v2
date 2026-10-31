@@ -1,0 +1,56 @@
+# UK word
+R 3051 regional UK
+# quad bike regional
+R 3143 regional UK,AU,NZ
+R 33001 regional UK
+# twitching UK word for birdwatching
+R 5861 regional UK
+# double whole note is the US word; breve is UK
+F 11177 UK
+# gulch is smaller than canyon, not Spanish
+# gulch narrower than canyon
+# gulch not from Spanish
+Y 1904 -words_from_spanish ~landscapes
+R 18138 regional UK
+R 6183 regional UK
+R 630 regional AU
+R 48162 regional UK
+R 4728 regional UK,IE
+R 15310 regional UK
+R 47992 regional UK
+R 46768 regional UK
+# fitness center lacks the word-play of gym
+Y 3599 -blank_bag -no_vowels
+R 4821 regional UK
+# turn signal is the US word
+F 46674 UK
+R 1352 regional UK,AU,IE
+Y 1678
+# Pancake Day is not Mardi Gras carnival
+Y 5123 ~festivals_of_the_world
+# film has own alphabetical-letters link that movie lacks
+Y 6364
+R 434 regional UK
+R 61766 regional UK
+# own red_things link would not fit phone booth
+Y 35147
+Y 49253
+R 4501 regional UK
+# own bathroom link differs from range hood
+Y 4774
+R 19817 regional UK
+R 5943 regional UK,AU,NZ,IE
+R 11157 regional UK
+R 1182 regional UK
+R 24848 regional UK
+# walking stick is the US word
+F 1381 UK
+R 2648 regional UK
+# char is slang; only turkish_souvenirs is not its own
+Y 964 -turkish_souvenirs
+R 3112 regional UK
+R 2632 regional UK
+# open house is an event, not a viewing
+O 24188 | home showing event
+# clipped form
+R 18220 abbreviation

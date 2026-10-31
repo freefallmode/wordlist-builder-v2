@@ -1,0 +1,53 @@
+# Indian name
+R 794 regional IN
+# bill is the US word, banknote is UK
+F 33857 UK
+R 5669 regional AU,UK
+R 14278 regional UK
+# toffee apple is a different sweet from candy apple
+O 20187 | toffee coated
+# tallboy is a tall chest, not any chest of drawers
+O 4670 | tall chest
+# informal name
+Y 1357
+# cotton swab is the US word
+F 3763 UK,AU,NZ,IE
+R 3797 regional UK
+R 5075 regional UK
+R 2605 regional UK,AU
+# duplicate of lightning bug (insect)
+X 39970
+R 4771 regional UK
+R 474 regional UK,AU,NZ,IE
+# pound sign is the US word for hash
+F 26128 UK
+R 4782 regional UK
+R 1404 regional UK
+R 2583 regional UK
+R 4121 regional UK
+# slang
+Y 1346
+R 4507 regional IE,IN
+Y 4865
+# gasoline is the US word
+F 50000 UK
+R 3047 regional UK
+R 3457 regional AU,NZ
+R 2861 regional UK,IN
+R 6423 regional UK
+R 2784 regional UK
+R 472 regional UK,AU
+# boat ramp is the US word
+F 47500 UK
+# slang
+Y 4378
+R 2966 regional UK
+R 34805 regional UK
+# clipped name
+R 2319 abbreviation
+R 38313 regional US
+R 4547 regional AU
+R 1901 regional UK
+# nickname
+Y 46405
+R 46080 regional UK

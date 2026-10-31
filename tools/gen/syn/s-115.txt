@@ -1,0 +1,71 @@
+# UK name for aphid
+R 1373 regional UK
+# UK name
+R 586 regional UK
+# nickname
+Y 46220
+# UK name
+R 442 regional UK
+Y 4530
+# word-play themes do not fit fizz
+Y 967 -silent_g_words -words_named_after_places -foods_named_after_places -metallic_colors
+# plastic wrap is US default
+F 39010 UK
+# slang/brand
+Y 3037
+# slang
+Y 4206
+# UK name
+R 24008 regional UK
+Y 4092
+# UK spelling/name
+R 57825 regional UK
+Y 46214
+Y 32391
+# purse does not start with a body part
+Y 4958 -starts_with_a_body_part
+# horse trailer is US word
+F 1539 UK
+# UK name
+R 46853 regional UK
+# US default
+F 46671 UK
+F 4176 UK
+# sound sense, not mini golf synonym
+O 5276 | engine sound
+# UK name
+R 4677 regional UK,AU,IE
+# UK name
+R 3555 regional UK,AU,NZ,IE
+# regional name
+R 47013 regional MY,SG
+# UK name
+R 18216 regional UK
+# UK name
+R 19091 regional UK
+# UK name
+R 26103 regional UK
+# steel bar, not concrete
+O 7426 | steel bar
+# UK name
+R 2786 regional UK
+# also a city; berry sense
+O 17198 | serviceberry
+Y 2882
+# UK name
+R 335 regional UK
+# US default
+F 4543 UK
+# UK name
+R 3560 regional UK,IE
+Y 4903
+# US default
+F 46952 UK
+# UK name
+R 38854 regional UK
+# UK name
+R 3004 regional UK,AU
+# US default
+F 1884 UK
+# metric, different tool
+O 7224 | metric ruler

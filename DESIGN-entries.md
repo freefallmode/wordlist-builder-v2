@@ -146,6 +146,7 @@ Decisions taken while building the weather prototype (2026-11-01), with the reas
 - Full-name rebuild (tools/gen/show-migrate.mjs, show-leftovers.mjs, v204-v206): 1,147 restored with `show`, 18 leftovers resolved, no theme-name warnings left.
 - Export format 3 (section 6 of DESIGN.md): per-link shown text and part of speech, `clash`, regional and abbreviation bits, duplicate-display rule.
 - Phase 3 (synonym aliases to entries), 2026-10-31: 1,557 same-region synonym aliases reviewed (tools/gen/syn-make.mjs, BRIEF-syn.md, syn-apply.mjs, syn-fixups.mjs): 1,361 became entries with 2,632 synonym groups library-wide, 40 different senses, 1 deleted, 155 retyped as abbreviation, spelling or regional. The 783 synonyms whose region differs from their root remain for phase 2 (regional words).
+- Phase 2 (region-differing synonyms), 2026-11-01: 783 reviewed under the revised brief (BRIEF-syn.md, --regional listing, F flip): 457 regional/abbreviation/translation/spelling retypes, 130 flips (the US word becomes the root), 150 synonyms promoted to entries, 40 different senses, 6 deleted; three same-meaning pairs merged (syn-fixups2.mjs). New alias kind translation (bit 256) for other-language names. 23 theme-name leaks from the flips are still to settle.
 - Word table: shown text with `← entry`, form arrow, synonyms column (drag a word onto another, chips with ✕, lookup box).
 
 **Not yet done**
