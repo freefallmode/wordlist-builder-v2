@@ -50,7 +50,7 @@ export function buildExport(P, opt0 = {}) {
   };
   const okTheme = new Map(P.themes.map(t => [t.id, themeOk(t)]));
   for (const e of candidates) {
-    if (e.aliasOf && !(e.aliasKind === 'synonym' ? o.synonyms : o.spellings)) continue;   // spellings and forms (skis for ski) go together
+    if (e.aliasOf && !(['synonym', 'regional', 'abbreviation'].includes(e.aliasKind) ? o.synonyms : o.spellings)) continue;   // spellings and forms (skis for ski) go together; other names for the thing follow the synonyms option
     if (o.maxEntryWords > 0 && e.text.trim().split(/s+/).length > o.maxEntryWords) continue;
     if (!pass(o.vulgar, e.vulgar) || !regionPass(o.region, ix.entry.get(e.aliasOf || e.id).region)) continue;   // region is judged on the root only: an alias follows its root, never its own tag
     const links = [];

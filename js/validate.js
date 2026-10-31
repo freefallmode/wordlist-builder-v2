@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, effRec, linkIds, themeStats, pathOf, sameText } from './model.js';
+import { eff, effRec, linkIds, themeStats, pathOf, sameText, ALIAS_KINDS } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
@@ -72,7 +72,9 @@ export function validate(P) {
         if (r.aliasOf) add('error', 'alias-chain', `"${label(e)}" is an alias of "${label(r)}", which is itself an alias. Point it at the root.`, loc);
         if (r.id === e.id) add('error', 'alias-self', `"${label(e)}" is an alias of itself.`, loc);
         if (r.text.toLowerCase() === text.toLowerCase()) add('warn', 'alias-same', `"${label(e)}" has the same text as its root.`, loc);
-        if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling or form).`, loc);
+        if (e.aliasKind && !ALIAS_KINDS.includes(e.aliasKind)) add('warn', 'alias-kind', `Alias "${label(e)}" has an unknown kind (${e.aliasKind}).`, loc);
+        if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling, form, regional or abbreviation).`, loc);
+        if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
         if (e.aliasKind === 'spelling' && !e.region.length) add('info', 'alias-region', `Spelling alias "${label(e)}" has no region (US, UK ...).`, loc);
       }
     } else if (!ids.length) add('info', 'orphan', `"${label(e)}" is not linked to any theme.`, loc);
