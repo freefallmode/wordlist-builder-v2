@@ -155,3 +155,4 @@ tr.dropping td { background: rgba(80, 140, 255, .18); }
 .chip .x { margin-left: .3rem; text-decoration: none; color: var(--dim, #888); }
 .synadd { width: 6em; border: 1px dashed var(--line, #ccc); background: transparent; font-size: 1em; padding: 0 .3rem; border-radius: 1rem; }
 .synadd:focus { width: 11em; }
+.expander { text-decoration: none; color: var(--dim, #888); font-size: .85em; margin-right: .2rem; white-space: nowrap; }
