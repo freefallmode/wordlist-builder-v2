@@ -26,6 +26,8 @@ The old app (`../wordlist-builder`) is a reference only. Its words were over-inc
 | **The tree is for navigation, flag inheritance and telling the generator which themes are related.** | See above. |
 | **Aliases** (`aliasOf` + `aliasKind` synonym/spelling + the entry's own `region`) instead of a special US/UK pair type. | One mechanism covers couch/sofa/settee, sidewalk/pavement and color/colour. A regional synonym is a synonym with region UK. |
 | **Aliases add variety, not words to a level.** An alias takes its themes from its root; the game must never show two entries of one alias group in the same level; a theme's 4-word minimum counts distinct roots. | Aliases give extra difficulty steps (settee is harder than couch) and extra surface forms, but must not make a thin theme look big. |
+| **Synonyms are theme-local, not global aliases.** A theme lists its synonym groups; one member per group per level; a cross-theme `clash` id in the export stops synonyms of different themes meeting in a level. | Whether two words mean the same depends on the theme (pudding and dessert). A global alias cannot be right everywhere and had already been misused (castle as an alias of rook). See DESIGN-entries.md. |
+| **A form alias is a grammatical form only; a shorter text in one theme is `show`, not an alias.** | rock garden is not a form of rock and rock does not mean rock garden elsewhere; it is only the natural answer to "what type of garden?" in one theme. |
 | **Ratings are 1-5** (0 = not rated), everywhere. | Five levels map onto the five difficulty modes and are what a person can rate consistently. 1-10 gave false precision. |
 | **Three stored ratings:** word recognisability (`rec`), popularity of a word inside a theme (`th[themeId]`), popularity of a theme (`pop`). Theme difficulty is not stored: it is worked out from the words in the theme (`themeProfile`). Everything else that makes a level hard (closeness of themes, completeness, length, number of themes) is computed by the generator. | Keeps stored data to what only a human or Claude can judge. The game picks words and themes by difficulty and popularity that match its progression. Zipf frequency is only a cross-check (validation) and an optional export column. |
 | **Part of speech and kind of word are separate fields:** `pos` (noun, verb, adjective, adverb, other) and `type` (common, person, place, org, title, proper, acronym, phrase). | "Paris" is a noun and a place; one field cannot hold both. `type` also drives case checks. |
@@ -47,19 +49,22 @@ Pure functions over a plain project object (`js/model.js`), so the core can be t
 
 **Project:** `{ schema: 1, lang, lib: { version, modified }, nextId, settings: { minWords: 4, maxWords: 4, maxLen: 20 }, themes[], entries[] }`.
 
-**Theme:** `{ id, name, parent, group, enabled, d, complete, adult, sensitive, tm, lang, region[], note }`.
+**Theme:** `{ id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, lang, region[], note, groups? }`.
 - `id`: stable slug (`citrus_fruits`). A leading or trailing `___` in a name becomes "blank" so `___ball` and `ball` get different ids. Duplicate ids get `_2`, `_3`.
 - `group`: a folder, never played, holds no words (validation warns if it does).
 - `pop`: theme popularity 1-5 (1 most popular and appealing), 0 = unrated. (An old `d` difficulty field was dropped: difficulty is worked out.)
+- `groups` (optional): synonym groups, a list of lists of entry ids of this theme. Words in one group stand for one another *in this theme*: only one of them may appear in a level. A word is in at most one group per theme; members must be roots linked to the theme. See DESIGN-entries.md.
 - `note`: shown to the generator and to people. **For complete sets it lists the exact members.**
 - The order of the `themes` array is the depth-first outline order (the tree order). Moving a theme moves its whole sub-tree.
 
-**Entry:** `{ id, text, gloss, pos, type, enabled, rec, adult, sensitive, tm, vulgar, region[], aliasOf, aliasKind, th{ themeId: inThemeRating }, status, note }`.
+**Entry:** `{ id, text, gloss, pos, type, enabled, rec, adult, sensitive, tm, vulgar, region[], aliasOf, aliasKind, th{ themeId: inThemeRating }, status, note, nameOkIn[], use{}, show{} }`.
 - One meaning of one written form. Everything that depends on meaning is here; the only thing that differs between themes is the in-theme rating in `th`.
 - `status`: `new` (added by hand), `gen` (generated, not reviewed), `rev` (reviewed).
+- `nameOkIn`: themes where the full text may contain a word of the theme's name (dried apple in dried fruits); the theme-name check skips it there.
+- `use` `{ themeId: id of one of its form aliases }`: that theme shows the form (rainy) instead of the entry (rain). `show` `{ themeId: text }`: that theme shows a shorter text (rock for rock garden). Both are theme-local display choices: the entry keeps its identity, ratings and links. Neither is an alias.
 - `vulgar` (crude or offensive wording) is an entry flag only; themes have no vulgar flag. Entries have no language-specific flag; that flag is for themes.
 
-**Aliases.** `aliasOf` is the id of the root; an alias is never the root of another alias (chains are an error). An alias takes its themes from its root and has its own flags, ratings, `region` and `aliasKind`: `synonym` (another name, rated on its own: its own `th[theme]` popularity), `spelling` (colour/color) or `form` (the same word in another form: an inflection such as skis for ski, or a derived word such as rainy for rain); spellings and forms never have their own popularity, they take the root's. Its difficulty in a theme is the harder of its popularity there (own `th`, else its root's) and its own `rec`. Deleting a root promotes its first alias to root (it keeps the ratings it was getting). In the entry editor, "This is an alias of" and "Aliases of this entry" are a single block in a single place, both shown as tappable links that open the other entry.
+**Aliases.** `aliasOf` is the id of the root; an alias is never the root of another alias (chains are an error). An alias takes its themes from its root and has its own flags, ratings, `region` and `aliasKind`: `spelling` (colour/color), `form` (the same word in another grammatical form: an inflection or derivation such as skis for ski or rainy for rain; a compound or a longer name is NOT a form), `regional` (bonnet for hood: the same thing under another regional name, tagged with its `region`), `abbreviation` (PC for personal computer) or `synonym` (another name rated on its own with its own `th[theme]`; being phased out in favour of theme synonym groups, DESIGN-entries.md); spellings and forms never have their own popularity, they take the root's. Its difficulty in a theme is the harder of its popularity there (own `th`, else its root's) and its own `rec`. Deleting a root promotes its first alias to root (it keeps the ratings it was getting). In the entry editor, "This is an alias of" and "Aliases of this entry" are a single block in a single place, both shown as tappable links that open the other entry.
 
 **Indexes** (`reindex`, rebuilt after every edit): theme by id, children by parent, entry by id, aliases by root, entries by theme (an alias appears under its root's themes), entries by lower-cased text.
 
@@ -110,7 +115,8 @@ Each issue has a severity (error breaks the model, warn is probably a mistake, i
 
 - **Themes:** group with words linked (warn); empty theme (info); thin theme under the minimum (error if complete, warn otherwise); complete theme with no note (info); theme with words but **no difficulty** (warn); count of empty unrated themes (info).
 - **Entries:** empty text (error); leading or trailing spaces (warn); duplicate text+gloss (error); same text with no gloss (error); same text, same part of speech, sharing a theme (warn: one entry or two meanings?); too many words or letters per the library settings (warn; no type is exempt; a name typed phrase is a warn); acronym not in capitals, or a person/place/org/title/proper name with no capital (warn); common word starting with a capital (info); not linked to any theme (info); linked to a missing theme (error) or to a group (warn); entry text equal to the name of its theme (warn); unrated (info).
-- **Aliases:** root missing, alias chain, alias of itself (errors); same text as its root, no kind (warn); spelling alias with no region (info).
+- **Aliases:** root missing, alias chain, alias of itself (errors); same text as its root, no kind, unknown kind (warn); spelling or regional alias with no region (info).
+- **Groups, show and use:** a group with fewer than two members, or a member that is not a word of its theme (warn); a `use` form that is not a form of the entry, or a `use`/`show` for a theme the entry is not in (warn); two words that read the same in one theme (info: allowed in the library, the export keeps the more popular, section 8).
 - **Rating vs. frequency** (English libraries only): a rating of 1-2 on a common word that is rare in text (Zipf below 2.3 warn, below 3.0 info) or absent from the list (warn); a rating of 4-5 on a very common word (Zipf above 5, info). Thresholds are loose because frequency in text undersells concrete everyday nouns (igloo, tuba, feta).
 
 ## 7. Storage and file formats
@@ -137,7 +143,7 @@ Filters, each applied **per link** (a link is flagged when the entry, its theme,
 - rating range and "include unrated";
 - minimum words per theme.
 
-Process: filter links; drop entries with no link left; drop themes under the minimum (counted in distinct roots); repeat until stable; the report lists the dropped themes and the sizes (with a gzip estimate). If an alias's root is filtered out, the first surviving alias becomes the root. Ancestors kept only to hold the tree together are written with the group bit. Presets: full; family (adult and vulgar left out, sensitive kept); family without trademarks. More can be saved with the project. Optional columns: Zipf, meanings (gloss), notes.
+Process: filter links; drop entries with no link left; drop themes under the minimum (counted in distinct roots); repeat until stable; the report lists the dropped themes and the sizes (with a gzip estimate). If an alias's root is filtered out, the first surviving alias becomes the root. Ancestors kept only to hold the tree together are written with the group bit. **Two words that read the same in one theme** (a shown text equal to another word's, two synonyms with one text) are allowed in the library; the export keeps the more popular one in that theme (then the easier) and leaves the other out of it, and the report lists each. Presets: full; family (adult and vulgar left out, sensitive kept); family without trademarks. More can be saved with the project. Optional columns: Zipf, meanings (gloss), notes.
 
 Output is columnar JSON to keep the file small:
 
@@ -173,7 +179,7 @@ Called from the browser with the user's key (Settings; kept for the session unle
 **Overview:** counts, an **All words…** button, and a table of groups with themes / ready / words.
 
 **Theme screen:** crumbs, name, badges, difficulty, note; buttons Theme settings…, + Sub-theme, + Add words…, Generate with Claude…, Rate themes…; sub-theme chips with counts; a pool bar (distinct words against the minimum, depth by rating band); the **word table** with a filter box, "show disabled" and **"show words in sub-themes"** (lists every word below this theme once, with a read-only "themes" column; capped at 500 rows; on a group it is the only way the table appears).
-- Word table columns: enabled checkbox, word (click opens the entry), pos, type, rating (editable), in-theme rating (editable), flags, status. Aliases sit under their root, indented.
+- Word table columns: enabled checkbox, word, synonyms, pos, type, rating (editable), in-theme rating (editable), flags, status. A row shows the word **as this theme shows it**: `rainy ← rain` (form chosen with `use`), `rock ← rock garden` (`show`), then the meaning label. Form aliases have no rows of their own; a small arrow box beside the word chooses the form this theme shows. Spelling, regional and abbreviation aliases sit under their root, indented. The word is a draggable block: **drop it on another word to make them synonyms** (groups merge). The synonyms column shows the group-mates as chips with a ✕ (removes that word from the group) and a lookup box to add one. Both sort.
 - Fixed column widths so sorting never shifts them. Sortable headings are dark with a dotted underline and a ⇅ mark; the sorted one is shaded with ▲. Non-sortable headings stay grey.
 
 **Theme dialog:** name, parent (datalist picker), flags (enabled, group, complete, adult, sensitive, trademark, language-specific) with the four flag definitions beneath, difficulty, audience regions, note; Delete and Save. Names must be unique (case-insensitive) and a theme cannot be placed inside itself.
@@ -219,6 +225,7 @@ The data is generated by Claude in working sessions (and in the app on request),
 
 ## 13. Not built yet
 
+- The synonym / forms / regional redesign (DESIGN-entries.md) is partly built: synonym groups, `use`, `show`, export format 3 and the table are done; migrating the remaining ~1,500 synonym aliases, regional words, form families, theme splits and the web-app default-dialect setting are not.
 - Theme check: which other themes each word could also fit (clashes and confusable theme pairs).
 - Rating review pass (second opinion on `rec`), bulk review of `gen` entries, merging entries.
 - Per-group project files; undo.

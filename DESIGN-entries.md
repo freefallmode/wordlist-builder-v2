@@ -1,6 +1,6 @@
 # Design: synonym groups, word forms and regional variants
 
-Status: proposal, not implemented. Written 2026-10-31 after a discussion about `swede` appearing in "root vegetables" without `rutabaga`. Numbers are from library v201 (62,786 entries, 58,551 roots, 2,485 playable themes).
+Written 2026-10-31 after a discussion about `swede` appearing in "root vegetables" without `rutabaga`. Status: partly implemented (updated 2026-11-01). Numbers in sections 1 and 7 are from library v201 (62,786 entries, 58,551 roots, 2,485 playable themes). Implementation state is in section 10.
 
 ## 1. Problem
 
@@ -121,3 +121,32 @@ Safeguards: validation rules for each kind, a count of aliases with theme links 
 ## 9. Shortened text in a theme (`show`)
 
 Added 2026-11-01. A theme may show an entry under a shorter text than its own: `rock garden` is shown as `rock` in "garden styles" (`show: {garden_styles: "rock"}`). This is a theme-local fact, so it is **not** an alias: `rock` does not mean "rock garden" in any other theme. The earlier kept-by-name review recorded these as `form` aliases of the bare word; 1,147 of them were turned back into entries of their own (`tools/gen/show-migrate.mjs`). `form` now means a grammatical form only. Like `use`, `show` is written by export format 3 (see section 8).
+
+## 10. Decisions log and implementation state
+
+Decisions taken while building the weather prototype (2026-11-01), with the reason. The rest of this file is the plan they refine.
+
+**Decisions**
+- **Synonym groups are theme-local.** `theme.groups` is a list of lists of entry ids; a word is in one group per theme. Only one member of a group appears in a level, except in word-puzzle themes that declare no groups. The export gives every word in any group a `clash` id (groups joined across themes); the level builder never puts two with one id in a level.
+- **Forms are grammatical only.** rain, rainy and raining are one meaning. The 1,164 "form" aliases that were really compounds or full names (rock garden of rock, school uniform of uniform, storm cloud of storm) were wrong: they came from a text-matching rule in the kept-by-name review script. They were rebuilt as entries (section 9). `hot springs`, `skis` and similar stay forms.
+- **A theme shows a word through `use` (a form) or `show` (a shorter text).** The entry keeps its identity, ratings and links; the display is a property of the theme link. A form's own recognisability counts when it is shown (the harder of the two). The part of speech shown is the form's, so a theme of adjectives can be built from noun roots.
+- **Shortening is not aliasing.** A bare word is a valid alias only where it means the same thing everywhere. Where the category supplies the meaning ("what type of garden? rock") it is `show`.
+- **Duplicates in display are allowed in the library**; the export keeps the more popular (then the easier) and leaves the other out of that theme. If an obvious second name exists (electric ray -> torpedo) it is used instead.
+- **Theme-name check uses the shown text**, so rock garden is fine where it shows as rock.
+- **Roots are the US/neutral word; every region tag is kept** (not yet applied: see phases 1-2). The web-app default-dialect setting only changes what is shown and the export fallback; it never moves data.
+- **Region in the game** is chosen from the player's setting, never by a clash rule: the regional alias if the player's region is in its tags, else the root.
+- **Generated forms** (misty, hazy, showery, drizzly, thundery) follow section 3.3: ordinary dictionary words with a natural sentence, status `gen` until reviewed.
+- **Weather split:** `weather` is nouns only; `weather conditions` (24 adjectives) is its child; the rough-weather part already exists as `storms`.
+
+**Implemented**
+- Phase 0: stray alias kinds folded into spelling, form, regional, abbreviation, synonym (library v202).
+- Model and checks: `groups`, `use`, `show` (js/model.js, js/validate.js).
+- Weather prototype (tools/gen/weather-proto.mjs, v203): 12 synonyms promoted to entries, 10 groups in weather and 4 in storms, `weather conditions`, five generated forms.
+- Full-name rebuild (tools/gen/show-migrate.mjs, show-leftovers.mjs, v204-v206): 1,147 restored with `show`, 18 leftovers resolved, no theme-name warnings left.
+- Export format 3 (section 6 of DESIGN.md): per-link shown text and part of speech, `clash`, regional and abbreviation bits, duplicate-display rule.
+- Word table: shown text with `← entry`, form arrow, synonyms column (drag a word onto another, chips with ✕, lookup box).
+
+**Not yet done**
+- Phase 1 (tag spelling aliases US/UK), phase 2 (regional words, root flips), phase 3 (the remaining ~1,500 synonym aliases into groups or entries; the 643 alias-only theme links), phase 4 (families), phase 5 (theme splits).
+- The default-dialect setting in the web app.
+- Checking that the game can use a parent theme and its split-off child together, and updating the game to export format 3.
