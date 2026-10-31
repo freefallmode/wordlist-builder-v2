@@ -161,3 +161,6 @@ table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, alia
 .shownform:hover, .rootname:hover { text-decoration: underline; }
 .onwrap { display: flex; align-items: center; gap: .15rem; }
 .onwrap .expander { margin: 0; }
+.formmenu.lookup { max-height: 15em; overflow-y: auto; }
+.formmenu.lookup div { padding: .3rem .8rem; }
+.formmenu.lookup .cur { background: rgba(80, 140, 255, .2); font-weight: 400; }

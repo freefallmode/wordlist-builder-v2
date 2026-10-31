@@ -297,10 +297,9 @@ function entryTable(t) {
   const readAs = new Map();   // the meaning label is left out when the theme already gives the meaning; it shows for words that read the same as another word of the table, and in the sub-theme view
   for (const x of roots) { const k = label(x).toLowerCase(); readAs.set(k, (readAs.get(k) || 0) + 1); }
   const needLabel = e => sub || readAs.get(label(e).toLowerCase()) > 1;
-  const names = h('datalist', { id: 'syn-words' }, roots.filter(x => !x.aliasOf).map(x => h('option', { value: label(x) })));
   const synCell = (t, e) => [...mateIds(t, e).map(id => h('span.chip', {}, groupName(t, id), h('a.x', { href: '#', title: 'Not a synonym', onclick: ev => { ev.preventDefault(); leaveGroup(t, id); } }, '✕'))),
-    h('input.synadd', { list: 'syn-words', placeholder: '+', title: 'Type to find a word of this theme', onchange: ev => { const v = ev.target.value.trim().toLowerCase(); if (!v) return; const m = pool.find(x => !x.aliasOf && x.id !== e.id && (label(x).toLowerCase() === v || x.text.toLowerCase() === v)); if (m) joinSynonyms(t, e.id, m.id); else { toast('"' + ev.target.value + '" is not a word of this theme.', true); ev.target.value = ''; } } })];
-  return h('div.etable', {}, tools, names,
+    h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => pool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
+  return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
     h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => { if (e.aliasOf && underRow.has(e.id)) return h('tr.alias', { class: e.enabled ? '' : 'off' }, h('td'), h('td.word', { onclick: () => editEntry(e) }, e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), h('span.hint', ` ${e.aliasKind}${e.region.length ? ' · ' + e.region.join('/') : ''}`)), h('td', { colspan: 8 })); const s = shown(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || []; return h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
@@ -318,6 +317,27 @@ function entryTable(t) {
 
 function groupName(t, id) { const e = A.P.ix.entry.get(id); return (e && (e.show?.[t.id] || A.P.ix.entry.get(e.use?.[t.id])?.text)) || e?.text || '?'; }   // a group member is named as its theme shows it
 function groupMates(t, e) { return (t.groups || []).filter(g => g.includes(e.id)).flatMap(g => g.filter(id => id !== e.id)).map(id => groupName(t, id)).join(', '); }
+// A search box with its own list under it (the browser's datalist looks different everywhere): type to narrow, arrows and Enter or a click to choose.
+function lookup(items, pick) {
+  let menu = null, at = 0, shown = [];
+  const close = () => { menu?.remove(); menu = null; };
+  const open = ev => {
+    const input = ev.target, q = input.value.trim().toLowerCase();
+    shown = items().filter(([, text]) => !q || text.toLowerCase().includes(q)).sort((a, b) => (b[1].toLowerCase().startsWith(q) - a[1].toLowerCase().startsWith(q)) || a[1].localeCompare(b[1])).slice(0, 60);
+    close(); if (!shown.length) return;
+    at = 0; const r = input.getBoundingClientRect();
+    menu = h('div.formmenu.lookup', { style: `left:${Math.round(r.left)}px;top:${Math.round(r.bottom + 2)}px;min-width:${Math.max(160, Math.round(r.width))}px` },
+      shown.map(([id, text], n) => h('div', { class: n === at ? 'cur' : '', onmousedown: e2 => { e2.preventDefault(); close(); pick(id); } }, text)));
+    document.body.append(menu);
+  };
+  const mark = n => { at = (n + shown.length) % shown.length; [...menu.children].forEach((c, j) => c.classList.toggle('cur', j === at)); menu.children[at].scrollIntoView({ block: 'nearest' }); };
+  return { oninput: open, onfocus: open, onblur: close, onkeydown: ev => {
+    if (ev.key === 'Escape') close();
+    else if (ev.key === 'ArrowDown' && menu) { ev.preventDefault(); mark(at + 1); }
+    else if (ev.key === 'ArrowUp' && menu) { ev.preventDefault(); mark(at - 1); }
+    else if (ev.key === 'Enter' && menu) { ev.preventDefault(); const id = shown[at][0]; close(); pick(id); }
+  } };
+}
 function formMenu(anchor, items, current, pick) {   // a small list under the arrow, as wide as its longest form
   document.querySelectorAll('.formmenu').forEach(m => m.remove());
   const r = anchor.getBoundingClientRect();
