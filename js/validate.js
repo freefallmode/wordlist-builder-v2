@@ -36,6 +36,11 @@ export function validate(P) {
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
     if (!t.nameOk) { const ws = themeNameWords(t); for (const e of direct) { const w = nameLeak(t, e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
+    for (const g of t.groups || []) {   // synonym groups: at most one member per level
+      const mem = g.map(id => ix.entry.get(id));
+      if (g.length < 2) add('warn', 'group-small', `A synonym group in "${t.name}" has fewer than two members.`, { themeId: t.id });
+      for (const [i, e] of mem.entries()) if (!e || e.aliasOf || !(e.th[t.id] !== undefined)) add('warn', 'group-member', `Synonym group member ${g[i]} in "${t.name}" is not a word of that theme.`, { themeId: t.id });
+    }
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
   if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no popularity rating yet.`);
@@ -84,6 +89,11 @@ export function validate(P) {
       if (!t) { add('error', 'bad-theme', `"${label(e)}" is linked to a theme that no longer exists (${tid}).`, loc); continue; }
       if (t.group) add('warn', 'link-group', `"${label(e)}" is linked to "${t.name}", which is a group.`, loc);
       if (fold(t.name) === fold(text)) add('warn', 'is-theme-name', `"${text}" is the name of the theme it is in ("${t.name}").`, loc);
+    }
+    for (const [tid, aid] of Object.entries(e.use || {})) {
+      const a = ix.entry.get(aid);
+      if (!ids.includes(tid)) add('warn', 'use-theme', `"${label(e)}" names a display form for ${tid}, which it is not in.`, loc);
+      if (!a || a.aliasOf !== e.id || a.aliasKind !== 'form') add('warn', 'use-form', `"${label(e)}" shows entry ${aid} in ${tid}, which is not one of its forms.`, loc);
     }
     if (!e.rec && e.enabled) add('info', 'unrated', `"${label(e)}" has no recognisability rating.`, loc);
 
