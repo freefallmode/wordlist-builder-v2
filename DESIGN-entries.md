@@ -144,7 +144,7 @@ Decisions taken while building the weather prototype (2026-11-01), with the reas
 - Weather prototype (tools/gen/weather-proto.mjs, v203): 12 synonyms promoted to entries, 10 groups in weather and 4 in storms, `weather conditions`, five generated forms.
 - Full-name rebuild (tools/gen/show-migrate.mjs, show-leftovers.mjs, v204-v206): 1,147 restored with `show`, 18 leftovers resolved, no theme-name warnings left.
 - Export format 3 (section 6 of DESIGN.md): per-link shown text and part of speech, `clash`, regional and abbreviation bits, duplicate-display rule.
-- Phase 3 (synonym aliases to entries), 2026-11-01: 1,557 same-region synonym aliases reviewed (tools/gen/syn-make.mjs, BRIEF-syn.md, syn-apply.mjs, syn-fixups.mjs): 1,361 became entries with 2,632 synonym groups library-wide, 40 different senses, 1 deleted, 155 retyped as abbreviation, spelling or regional. The 783 synonyms whose region differs from their root remain for phase 2 (regional words).
+- Phase 3 (synonym aliases to entries), 2026-10-31: 1,557 same-region synonym aliases reviewed (tools/gen/syn-make.mjs, BRIEF-syn.md, syn-apply.mjs, syn-fixups.mjs): 1,361 became entries with 2,632 synonym groups library-wide, 40 different senses, 1 deleted, 155 retyped as abbreviation, spelling or regional. The 783 synonyms whose region differs from their root remain for phase 2 (regional words).
 - Word table: shown text with `← entry`, form arrow, synonyms column (drag a word onto another, chips with ✕, lookup box).
 
 **Not yet done**
