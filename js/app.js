@@ -282,7 +282,7 @@ function entryTable(t) {
   const list = pool.filter(e => (A.showOff || e.enabled) && (!f || (e.text + ' ' + e.gloss).toLowerCase().includes(f) || (formsOf.get(e.id) || []).some(a => a.text.toLowerCase().includes(f))));
   const inList = new Set(list.map(e => e.id));
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
-  const key = { text: e => label(e).toLowerCase(), rec: e => e.rec || 9, pos: e => e.pos, intheme: e => popIn(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey }[A.sort] || (e => e.text.toLowerCase());
+  const key = { text: e => label(e).toLowerCase(), rec: e => e.rec || 9, pos: e => e.pos, intheme: e => popIn(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey, syn: e => groupMates(t, e).toLowerCase() || '￿' }[A.sort] || (e => e.text.toLowerCase());
   const dir = A.sortDesc ? -1 : 1;
   roots.sort((a, b) => dir * (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
   let rows = [];
@@ -292,19 +292,14 @@ function entryTable(t) {
   const where = e => linkIds(P, e).filter(id => subIds.has(id)).map(id => `${P.ix.theme.get(id)?.name} ${effRec(P, e, id) || ''}`.trim()).join(', ');
   const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: A.sort === k ? 'Click to reverse the order' : 'Click to sort by ' + label, onclick: () => { A.sortDesc = A.sort === k ? !A.sortDesc : false; A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? (A.sortDesc ? ' ▼' : ' ▲') : ' ⇅'));
   const flagsOf = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
-  const gname = id => groupName(t, id);
-  const groupBar = h('div.groups', {}, h('b', {}, 'Synonym groups '), h('span.hint', {}, 'only one member of a group appears in a level'),
-    ...(t.groups || []).map((g, i) => h('div.group', {}, g.map(gname).join(' ≈ '), ' ', h('a', { href: '#', title: 'Remove this group', onclick: ev => { ev.preventDefault(); t.groups.splice(i, 1); if (!t.groups.length) delete t.groups; A.changed(); render(); } }, '✕'))),
-    h('a', { href: '#', onclick: ev => { ev.preventDefault(); addGroup(t); } }, '+ add a group'));
   return h('div.etable', {}, tools,
-    !t.group && groupBar,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
-    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), h('th', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, 'synonyms'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
+    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => { const s = shown(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || []; return h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.aliasOf && inList.has(e.aliasOf) ? h('span.arrow', '↳ ') : '', label(e), label(e) !== e.text && h('span.root', { title: 'The entry behind the text this theme shows' }, ' ← ' + e.text), e.gloss && h('span.gloss', ` (${e.gloss})`),
           forms.length > 0 && h('select.useform', { title: 'Choose the form this theme shows', onclick: ev => ev.stopPropagation(), onchange: ev => { const v = +ev.target.value; if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed(); render(); } }, h('option', { value: 0, selected: s === e }, e.text), forms.map(a => h('option', { value: a.id, selected: s === a }, a.text))), e.aliasKind && h('span.hint', ` ${e.aliasKind}${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''}`)),
-        h('td.dim', groupMates(t, e)),
+        h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level. Click to change.', onclick: () => editSynonyms(t, e) }, groupMates(t, e) || h('span.hint', '+')),
         h('td.dim', s.pos.slice(0, 3)), h('td.dim', e.type), h('td', {}, recSel(s.rec, ev => { s.rec = +ev.target.value; A.changed(); })),
         sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), effRec(P, e, t.id) !== (e.th[t.id] || 0) && h('span.hint', { title: 'The difficulty that counts: the harder of the rating and the popularity' }, ' counts ' + effRec(P, e, t.id))),
         h('td', flagsOf(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·'))); }) :
@@ -313,16 +308,19 @@ function entryTable(t) {
 
 function groupName(t, id) { const e = A.P.ix.entry.get(id); return (e && (e.show?.[t.id] || A.P.ix.entry.get(e.use?.[t.id])?.text)) || e?.text || '?'; }   // a group member is named as its theme shows it
 function groupMates(t, e) { return (t.groups || []).filter(g => g.includes(e.id)).flatMap(g => g.filter(id => id !== e.id)).map(id => groupName(t, id)).join(', '); }
-function addGroup(t) {
-  const P = A.P, words = prompt('Words of this group, separated by commas (they must already be in this theme; at least two):'); if (!words) return;
-  const ids = [];
+function editSynonyms(t, e) {   // the words of this theme that mean the same as e: only one of them appears in a level
+  const P = A.P, now = (t.groups || []).find(g => g.includes(e.id)), cur = now ? now.filter(id => id !== e.id).map(id => groupName(t, id)).join(', ') : '';
+  const words = prompt('Words of this theme that mean the same as "' + groupName(t, e.id) + '", separated by commas (empty = none):', cur); if (words === null) return;
+  const ids = [e.id];
   for (const w of words.split(',').map(x => x.trim()).filter(Boolean)) {
-    const e = (P.ix.byTheme.get(t.id) || []).find(x => !x.aliasOf && x.text.toLowerCase() === w.toLowerCase());
-    if (!e) { alert('"' + w + '" is not a word of this theme.'); return; }
-    ids.push(e.id);
+    const m = (P.ix.byTheme.get(t.id) || []).find(x => !x.aliasOf && x.id !== e.id && (x.text.toLowerCase() === w.toLowerCase() || groupName(t, x.id).toLowerCase() === w.toLowerCase()));
+    if (!m) { alert('"' + w + '" is not a word of this theme.'); return; }
+    if (!ids.includes(m.id)) ids.push(m.id);
   }
-  if (new Set(ids).size < 2) { alert('A group needs at least two different words.'); return; }
-  (t.groups = t.groups || []).push([...new Set(ids)]); A.changed(); render();
+  t.groups = (t.groups || []).map(g => g.filter(id => !ids.includes(id))).filter(g => g.length > 1);   // a word is in one group per theme
+  if (ids.length > 1) t.groups.push(ids);
+  if (!t.groups.length) delete t.groups;
+  A.changed(); render();
 }
 
 // ---------- shell ----------
