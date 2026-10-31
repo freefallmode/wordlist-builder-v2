@@ -292,15 +292,19 @@ function entryTable(t) {
   const where = e => linkIds(P, e).filter(id => subIds.has(id)).map(id => `${P.ix.theme.get(id)?.name} ${effRec(P, e, id) || ''}`.trim()).join(', ');
   const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: A.sort === k ? 'Click to reverse the order' : 'Click to sort by ' + label, onclick: () => { A.sortDesc = A.sort === k ? !A.sortDesc : false; A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? (A.sortDesc ? ' ▼' : ' ▲') : ' ⇅'));
   const flagsOf = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
-  return h('div.etable', {}, tools,
+  const names = h('datalist', { id: 'syn-words' }, roots.filter(x => !x.aliasOf).map(x => h('option', { value: label(x) })));
+  const synCell = (t, e) => [...mateIds(t, e).map(id => h('span.chip', {}, groupName(t, id), h('a.x', { href: '#', title: 'Not a synonym', onclick: ev => { ev.preventDefault(); leaveGroup(t, id); } }, '✕'))),
+    h('input.synadd', { list: 'syn-words', placeholder: '+', title: 'Type to find a word of this theme', onchange: ev => { const v = ev.target.value.trim().toLowerCase(); if (!v) return; const m = pool.find(x => !x.aliasOf && x.id !== e.id && (label(x).toLowerCase() === v || x.text.toLowerCase() === v)); if (m) joinSynonyms(t, e.id, m.id); else { toast('"' + ev.target.value + '" is not a word of this theme.', true); ev.target.value = ''; } } })];
+  return h('div.etable', {}, tools, names,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
     h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
-      rows.length ? rows.map(e => { const s = shown(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || []; return h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
+      rows.length ? rows.map(e => { const s = shown(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || []; return h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' '), ondragover: ev => { if (!e.aliasOf) { ev.preventDefault(); ev.currentTarget.classList.add('dropping'); } }, ondragleave: ev => ev.currentTarget.classList.remove('dropping'), ondrop: ev => { ev.preventDefault(); ev.currentTarget.classList.remove('dropping'); const from = +ev.dataTransfer.getData('text/plain'); if (from && from !== e.id && !e.aliasOf) joinSynonyms(t, from, e.id); } },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
-        h('td.word', { onclick: () => editEntry(e) }, e.aliasOf && inList.has(e.aliasOf) ? h('span.arrow', '↳ ') : '', label(e), label(e) !== e.text && h('span.root', { title: 'The entry behind the text this theme shows' }, ' ← ' + e.text), e.gloss && h('span.gloss', ` (${e.gloss})`),
+        h('td.word', { onclick: () => editEntry(e) }, e.aliasOf && inList.has(e.aliasOf) ? h('span.arrow', '↳ ') : '',
+          e.aliasOf ? label(e) : h('span.block', { draggable: 'true', title: 'Drag onto another word to make them synonyms', ondragstart: ev => { ev.dataTransfer.setData('text/plain', String(e.id)); ev.dataTransfer.effectAllowed = 'link'; } }, label(e)), label(e) !== e.text && h('span.root', { title: 'The entry behind the text this theme shows' }, ' ← ' + e.text), e.gloss && h('span.gloss', ` (${e.gloss})`),
           forms.length > 0 && h('select.useform', { title: 'Choose the form this theme shows', onclick: ev => ev.stopPropagation(), onchange: ev => { const v = +ev.target.value; if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed(); render(); } }, h('option', { value: 0, selected: s === e }, e.text), forms.map(a => h('option', { value: a.id, selected: s === a }, a.text))), e.aliasKind && h('span.hint', ` ${e.aliasKind}${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''}`)),
-        h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level. Click to change.', onclick: () => editSynonyms(t, e) }, groupMates(t, e) || h('span.hint', '+')),
-        h('td.dim', s.pos.slice(0, 3)), h('td.dim', e.type), h('td', {}, recSel(s.rec, ev => { s.rec = +ev.target.value; A.changed(); })),
+        h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, e.aliasOf ? '' : synCell(t, e)),
+        h('td.dim', s.pos), h('td.dim', e.type), h('td', {}, recSel(s.rec, ev => { s.rec = +ev.target.value; A.changed(); })),
         sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), effRec(P, e, t.id) !== (e.th[t.id] || 0) && h('span.hint', { title: 'The difficulty that counts: the harder of the rating and the popularity' }, ' counts ' + effRec(P, e, t.id))),
         h('td', flagsOf(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·'))); }) :
         h('tr', h('td', { colspan: 9, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
@@ -308,17 +312,15 @@ function entryTable(t) {
 
 function groupName(t, id) { const e = A.P.ix.entry.get(id); return (e && (e.show?.[t.id] || A.P.ix.entry.get(e.use?.[t.id])?.text)) || e?.text || '?'; }   // a group member is named as its theme shows it
 function groupMates(t, e) { return (t.groups || []).filter(g => g.includes(e.id)).flatMap(g => g.filter(id => id !== e.id)).map(id => groupName(t, id)).join(', '); }
-function editSynonyms(t, e) {   // the words of this theme that mean the same as e: only one of them appears in a level
-  const P = A.P, now = (t.groups || []).find(g => g.includes(e.id)), cur = now ? now.filter(id => id !== e.id).map(id => groupName(t, id)).join(', ') : '';
-  const words = prompt('Words of this theme that mean the same as "' + groupName(t, e.id) + '", separated by commas (empty = none):', cur); if (words === null) return;
-  const ids = [e.id];
-  for (const w of words.split(',').map(x => x.trim()).filter(Boolean)) {
-    const m = (P.ix.byTheme.get(t.id) || []).find(x => !x.aliasOf && x.id !== e.id && (x.text.toLowerCase() === w.toLowerCase() || groupName(t, x.id).toLowerCase() === w.toLowerCase()));
-    if (!m) { alert('"' + w + '" is not a word of this theme.'); return; }
-    if (!ids.includes(m.id)) ids.push(m.id);
-  }
-  t.groups = (t.groups || []).map(g => g.filter(id => !ids.includes(id))).filter(g => g.length > 1);   // a word is in one group per theme
-  if (ids.length > 1) t.groups.push(ids);
+const mateIds = (t, e) => ((t.groups || []).find(g => g.includes(e.id)) || []).filter(id => id !== e.id);
+function joinSynonyms(t, a, b) {   // a and b (and the words already grouped with either) become one group: a word is in one group per theme
+  const all = new Set([a, b]);
+  for (const g of t.groups || []) if (g.includes(a) || g.includes(b)) g.forEach(id => all.add(id));
+  t.groups = (t.groups || []).filter(g => !g.includes(a) && !g.includes(b));
+  t.groups.push([...all]); A.changed(); render();
+}
+function leaveGroup(t, id) {
+  t.groups = (t.groups || []).map(g => g.filter(x => x !== id)).filter(g => g.length > 1);
   if (!t.groups.length) delete t.groups;
   A.changed(); render();
 }
