@@ -42,7 +42,7 @@ export function validate(P) {
       for (const [i, e] of mem.entries()) if (!e || e.aliasOf || !(e.th[t.id] !== undefined)) add('warn', 'group-member', `Synonym group member ${g[i]} in "${t.name}" is not a word of that theme.`, { themeId: t.id });
     }
     const shownAs = new Map();   // two words that read the same in one theme cannot both be placed
-    for (const e of direct) { if (e.aliasOf) continue; const x = fold(e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text); if (shownAs.has(x)) add('warn', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}".`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
+    for (const e of direct) { if (e.aliasOf) continue; const x = fold(e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text); if (shownAs.has(x)) add('info', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}"; the export keeps the more popular one.`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
   if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no popularity rating yet.`);

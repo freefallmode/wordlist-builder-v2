@@ -67,6 +67,25 @@ export function buildExport(P, opt0 = {}) {
     if (links.length) keep.set(e.id, links);
   }
 
+  // Two words that read the same in one theme cannot both be placed: the less popular one (then the harder one) is left out of that theme.
+  const slot = new Map();                            // themeId + shown text -> [{ id, pop, rec }]
+  const textOf = (e, sh) => (sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text).trim().toLowerCase();
+  for (const [id, links] of keep) { const e = ix.entry.get(id); if (e.aliasOf) continue; for (const [tid, r, p, sh] of links) { const k = tid + ': ' + textOf(e, sh); if (!slot.has(k)) slot.set(k, []); slot.get(k).push({ id, tid, pop: p || 9, rec: r || 9 }); } }
+  const out = new Set(); report.sameText = [];
+  for (const [k, xs] of slot) if (xs.length > 1) {
+    xs.sort((a, b) => a.pop - b.pop || a.rec - b.rec || a.id - b.id);
+    report.sameText.push(`${k} (kept ${ix.entry.get(xs[0].id).text}, left out ${xs.slice(1).map(x => ix.entry.get(x.id).text).join(', ')})`);
+    for (const x of xs.slice(1)) out.add(x.tid + '|' + x.id);
+  }
+  if (out.size) {
+    for (const [id, links] of [...keep]) {
+      const e = ix.entry.get(id), rid = e.aliasOf || e.id;
+      const rest = links.filter(([tid]) => !out.has(tid + '|' + rid));
+      if (rest.length) keep.set(id, rest); else keep.delete(id);
+    }
+    report.notes.push(`${out.size} links left out because another word reads the same in that theme (the less popular one).`);
+  }
+
   // 2. Drop themes that fall below the minimum, then entries left with no theme; repeat until stable.
   let dropped = new Set();
   for (let pass_ = 0; pass_ < 6; pass_++) {
