@@ -159,3 +159,5 @@ table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, alia
 .formmenu div:hover { background: rgba(80,140,255,.2); }
 .formmenu .cur { font-weight: 700; }
 .shownform:hover, .rootname:hover { text-decoration: underline; }
+.onwrap { display: flex; align-items: center; gap: .15rem; }
+.onwrap .expander { margin: 0; }
