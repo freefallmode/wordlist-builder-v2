@@ -301,11 +301,10 @@ function entryTable(t) {
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
     h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => { if (e.aliasOf && underRow.has(e.id)) return h('tr.alias', { class: e.enabled ? '' : 'off' }, h('td'), h('td.word', { onclick: () => editEntry(e) }, h('span.arrow', '↳ '), e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), h('span.hint', ` ${e.aliasKind}${e.region.length ? ' · ' + e.region.join('/') : ''}`)), h('td', { colspan: 8 })); const s = shown(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || []; return h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
-        h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
+        h('td.on', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) },
-          (under.get(e.id) || []).length > 0 && h('a.expander', { href: '#', title: openRows.has(e.id) ? 'Hide its other names' : 'Show its other names (spellings, regional words ...)', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, (openRows.has(e.id) ? '▾ ' : '▸ ') + under.get(e.id).length + ' '),
           label(e), label(e) !== e.text && h('span.root', { title: 'The entry behind the text this theme shows' }, ' ← ' + e.text), e.gloss && h('span.gloss', ` (${e.gloss})`),
-          forms.length > 0 && h('select.useform', { title: 'Choose the form this theme shows', onclick: ev => ev.stopPropagation(), onchange: ev => { const v = +ev.target.value; if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed(); render(); } }, h('option', { value: 0, selected: s === e }, e.text), forms.map(a => h('option', { value: a.id, selected: s === a }, a.text))), e.aliasKind && h('span.hint', ` ${e.aliasKind}${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''}`)),
+          forms.length > 0 && h('a.useform', { href: '#', title: 'Choose the form this theme shows', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); formMenu(ev.currentTarget, [[0, e.text], ...forms.map(a => [a.id, a.text])], s === e ? 0 : s.id, v => { if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed(); render(); }); } }, '▾'), e.aliasKind && h('span.hint', ` ${e.aliasKind}${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''}`)),
         h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, e.aliasOf ? '' : synCell(t, e)),
         h('td.dim', s.pos), h('td.dim', e.type), h('td', {}, recSel(s.rec, ev => { s.rec = +ev.target.value; A.changed(); })),
         sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), effRec(P, e, t.id) !== (e.th[t.id] || 0) && h('span.hint', { title: 'The difficulty that counts: the harder of the rating and the popularity' }, ' counts ' + effRec(P, e, t.id))),
@@ -315,6 +314,14 @@ function entryTable(t) {
 
 function groupName(t, id) { const e = A.P.ix.entry.get(id); return (e && (e.show?.[t.id] || A.P.ix.entry.get(e.use?.[t.id])?.text)) || e?.text || '?'; }   // a group member is named as its theme shows it
 function groupMates(t, e) { return (t.groups || []).filter(g => g.includes(e.id)).flatMap(g => g.filter(id => id !== e.id)).map(id => groupName(t, id)).join(', '); }
+function formMenu(anchor, items, current, pick) {   // a small list under the arrow, as wide as its longest form
+  document.querySelectorAll('.formmenu').forEach(m => m.remove());
+  const r = anchor.getBoundingClientRect();
+  const m = h('div.formmenu', { style: `left:${Math.round(r.left)}px;top:${Math.round(r.bottom + 2)}px` }, items.map(([v, text]) => h('div', { class: v === current ? 'cur' : '', onclick: ev => { ev.stopPropagation(); m.remove(); pick(v); } }, text)));
+  document.body.append(m);
+  const off = ev => { if (!m.contains(ev.target)) { m.remove(); document.removeEventListener('click', off, true); } };
+  setTimeout(() => document.addEventListener('click', off, true));
+}
 const mateIds = (t, e) => ((t.groups || []).find(g => g.includes(e.id)) || []).filter(id => id !== e.id);
 function joinSynonyms(t, a, b) {   // a and b (and the words already grouped with either) become one group: a word is in one group per theme
   const all = new Set([a, b]);
