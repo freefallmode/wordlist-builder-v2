@@ -32,7 +32,7 @@ export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r
 
 // Bit layouts, written into the file so the reader does not have to guess.
 export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32 };
-export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32 };
+export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128 };
 
 export function buildExport(P, opt0 = {}) {
   const o = Object.assign({}, DEFAULT_EXPORT, opt0);
@@ -58,9 +58,11 @@ export function buildExport(P, opt0 = {}) {
       if (!okTheme.get(tid)) continue;
       const f = eff(P, tid);
       if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, e.sensitive || f.sensitive) || !pass(o.tm, e.tm || f.tm)) continue;
-      const r = effRec(P, e, tid);
+      // A theme may show the entry under a shorter text (show) or as one of its forms (use); that text and its part of speech travel with the link.
+      const sh = e.aliasOf ? null : e.show?.[tid] ? { text: e.show[tid], pos: e.pos } : ix.entry.get(e.use?.[tid])?.enabled ? ix.entry.get(e.use[tid]) : null;
+      const r = Math.max(effRec(P, e, tid), sh && sh.rec || 0);
       if (r === 0 ? !o.unrated : (r < o.recMin || r > o.recMax)) continue;
-      links.push([tid, r, popIn(P, e, tid)]);
+      links.push([tid, r, popIn(P, e, tid), sh ? sh.text + '|' + POS.indexOf(sh.pos) : '']);
     }
     if (links.length) keep.set(e.id, links);
   }
@@ -111,7 +113,12 @@ export function buildExport(P, opt0 = {}) {
     if (pos.has(r)) return pos.get(r) + 1;
     return promoted.get(r) === id ? 0 : pos.get(promoted.get(r)) + 1;
   };
-  const cols = { text: [], pos: [], type: [], flags: [], rec: [], regions: [], root: [], linkCount: [], links: [] };
+  const cols = { text: [], pos: [], type: [], flags: [], rec: [], regions: [], root: [], clash: [], linkCount: [], links: [] };
+  const shown = [], shownAt = new Map();           // texts a theme shows instead of the entry's own: [text, pos]; a link points at one (index+1, 0 = the entry's own text)
+  const clash = new Map(), find = x => { while (clash.has(x) && clash.get(x) !== x) x = clash.get(x); return x; };   // words that stand for one another in a theme (its groups) share a clash id: the level builder never puts two of them in one level
+  for (const t of themes) for (const g of t.groups || []) { const m = g.filter(id => keep.has(id)); for (const id of m) if (!clash.has(id)) clash.set(id, id); for (const id of m.slice(1)) clash.set(find(id), find(m[0])); }
+  const clashN = new Map(); for (const id of clash.keys()) { const c = find(id); clashN.set(c, (clashN.get(c) || 0) + 1); }
+  const clashId = new Map([...clashN].filter(([, n]) => n > 1).map(([c], i) => [c, i + 1]));
   if (o.zipf && P.lang === "en") cols.zipf = [];
   if (o.gloss) cols.gloss = [];
   if (o.notes) cols.note = [];
@@ -121,6 +128,8 @@ export function buildExport(P, opt0 = {}) {
     if (e.adult) flags |= ENTRY_BITS.adult; if (e.sensitive) flags |= ENTRY_BITS.sensitive; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.vulgar) flags |= ENTRY_BITS.vulgar;
     if (e.aliasOf && e.aliasKind === 'spelling') flags |= ENTRY_BITS.spelling;
     if (e.aliasOf && e.aliasKind === 'form') flags |= ENTRY_BITS.form;
+    if (e.aliasOf && e.aliasKind === 'regional') flags |= ENTRY_BITS.regional;
+    if (e.aliasOf && e.aliasKind === 'abbreviation') flags |= ENTRY_BITS.abbreviation;
     cols.text.push(e.text);
     cols.pos.push(POS.indexOf(e.pos));
     cols.type.push(TYPES.indexOf(e.type));
@@ -128,15 +137,18 @@ export function buildExport(P, opt0 = {}) {
     cols.rec.push(e.rec);
     cols.regions.push(rMask(e.region));
     cols.root.push(rootIndex(id));
+    const cr = ix.entry.get(e.aliasOf || e.id).id; cols.clash.push(clash.has(cr) ? clashId.get(find(cr)) || 0 : 0);
     cols.linkCount.push(links.length);
-    for (const [tid, r, p] of links) cols.links.push(tIndex.get(tid), r, p);
+    for (const [tid, r, p, sh] of links) {
+      if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps]); shownAt.set(sh, shown.length); }
+      cols.links.push(tIndex.get(tid), r, p, sh ? shownAt.get(sh) : 0);
+    }
     if (cols.zipf) { const z = zipf(e.text); cols.zipf.push(z == null ? 0 : Math.round(z * 10)); }
     if (o.gloss) cols.gloss.push(e.gloss);
     if (o.notes) cols.note.push(e.note);
   }
   report.entriesOut = ids.length;
-  const shownLinks = ids.reduce((n, id) => { const e = ix.entry.get(id); return n + Object.keys({ ...e.show, ...e.use }).filter(tid => tIndex.has(tid)).length; }, 0);
-  if (shownLinks) report.notes.push(`${shownLinks} theme links show a shorter text or another form (show / use); format 2 still writes the entry's own text for them.`);
+  report.notes.push(`${shown.length} texts are shown in place of an entry's own text in some themes; ${clashId.size} groups of words stand for one another.`);
 
   const themeRows = themes.map(t => {
     const f = eff(P, t.id);
@@ -150,14 +162,17 @@ export function buildExport(P, opt0 = {}) {
   });
 
   const file = {
-    v: 2, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
+    v: 3, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
     options: o, regions, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
     // difficulty = median difficulty of the theme's roots; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
     themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions', 'popularity', 'counts', 'range'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
-    // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] triples (themeIndex, difficulty, popularity) in `links`.
+    // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, popularity, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
+    // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups): never put two with the same id in one level.
     // root[i] is 0 for a root entry, else the index+1 of the root it is an alias of.
     entries: cols,
+    shown,
+    linkFields: ['theme', 'difficulty', 'popularity', 'shown'],
   };
   return { file, report };
 }

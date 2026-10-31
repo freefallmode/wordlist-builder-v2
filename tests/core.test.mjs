@@ -127,3 +127,23 @@ test('zipf combines phrases', () => {
   assert.equal(zipf('ice cream'), 4.7);
   assert.equal(zipf('ice zzz'), null);
 });
+
+test('export format 3: shown text, display form and clash ids travel with the link', () => {
+  const P = project();
+  const rain = addEntry(P, 'rain', { rec: 1, th: { fruits: 1 } }), rainy = addEntry(P, 'rainy', { pos: 'adjective', rec: 2, aliasOf: rain.id, aliasKind: 'form' });
+  const fall = addEntry(P, 'rainfall', { rec: 2, th: { fruits: 2 } });
+  const garden = addEntry(P, 'rock garden', { rec: 3, th: { fruits: 3 } });
+  for (const w of ['fig', 'plum']) addEntry(P, w, { rec: 1, th: { fruits: 1 } });
+  P.themes.find(t => t.id === 'fruits').groups = [[rain.id, fall.id]];
+  rain.use = { fruits: rainy.id }; garden.show = { fruits: 'rock' };
+  reindex(P);
+  const { file } = buildExport(P), c = file.entries, at = text => c.text.indexOf(text);
+  const link = text => { let o = 0; for (let k = 0; k < at(text); k++) o += c.linkCount[k] * 4; return c.links.slice(o, o + 4); };
+  assert.equal(file.v, 3);
+  assert.deepEqual(file.shown[link('rock garden')[3] - 1], ['rock', 0]);
+  assert.deepEqual(file.shown[link('rain')[3] - 1], ['rainy', 2]);
+  assert.equal(link('rain')[1], 2);                                   // the form's own difficulty counts
+  assert.equal(link('fig')[3], 0);
+  assert.ok(c.clash[at('rain')] > 0 && c.clash[at('rain')] === c.clash[at('rainfall')] && c.clash[at('fig')] === 0);
+  assert.ok(validate(P).every(x => !/not one of its forms|display text/.test(x.msg)));
+});

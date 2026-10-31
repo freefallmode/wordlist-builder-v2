@@ -142,12 +142,12 @@ Process: filter links; drop entries with no link left; drop themes under the min
 Output is columnar JSON to keep the file small:
 
 ```
-{ v, lang, lib, generated, options, regions[], posNames[], typeNames[], themeBits, entryBits,
+{ v, lang, lib, generated, options, regions[], posNames[], typeNames[], themeBits, entryBits, shown[], linkFields[],
   themeFields: [id, name, parent, flags, difficulty, regions, (+ note)], themes: [rows],
-  entries: { text[], pos[], type[], flags[], rec[], regions[], root[], linkCount[], links[] (+ zipf[], gloss[], note[]) } }
+  entries: { text[], pos[], type[], flags[], rec[], regions[], root[], clash[], linkCount[], links[] (+ zipf[], gloss[], note[]) } }
 ```
 
-Entry i is `text[i]` etc.; its themes are the next `linkCount[i]` triples `(themeIndex, difficulty, popularity)` in `links`. `root[i]` is 0 for a root, else index+1 of the root it aliases. Theme `flags` bits: adult 1, sensitive 2, trademark 4, language 8, complete 16, group 32. Entry `flags` bits: adult 1, sensitive 2, trademark 4, vulgar 8, spelling alias 16, form alias 32. Theme rows are `id, name, parent, flags, difficulty (median), regions, popularity, counts (roots at difficulty 1-5), range (difficulty of the 4th easiest and 4th hardest root)`; the file version is 2. `regions` is a bit mask over `regions[]`. Balloon text is not stored; derive it.
+Entry i is `text[i]` etc.; its themes are the next `linkCount[i]` groups of four numbers `(themeIndex, difficulty, popularity, shown)` in `links`; `shown` is 0, or index+1 into the top-level `shown` list of `[text, pos]` pairs: the text and part of speech that theme displays instead of the entry's own (an entry's `show` text, or its `use` form; the difficulty is then the harder of the entry and that form). `clash[i]` is 0, or an id shared by words that stand for one another in a theme (its synonym `groups`): the level builder never puts two of them in one level. `root[i]` is 0 for a root, else index+1 of the root it aliases. Theme `flags` bits: adult 1, sensitive 2, trademark 4, language 8, complete 16, group 32. Entry `flags` bits: adult 1, sensitive 2, trademark 4, vulgar 8, spelling alias 16, form alias 32, regional alias 64, abbreviation 128. Theme rows are `id, name, parent, flags, difficulty (median), regions, popularity, counts (roots at difficulty 1-5), range (difficulty of the 4th easiest and 4th hardest root)`; the file version is 3. `regions` is a bit mask over `regions[]`. Balloon text is not stored; derive it.
 
 ## 9. Claude generation
 
