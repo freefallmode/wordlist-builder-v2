@@ -149,8 +149,6 @@ table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, alia
 .useform { appearance: none; -webkit-appearance: none; width: 1.3em; height: 1.3em; margin-left: .3rem; padding: 0; vertical-align: middle; border: 1px solid var(--line, #ccc); border-radius: .3rem; cursor: pointer; color: transparent; background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 3.5l3 3 3-3' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") center / 70% no-repeat; }
 .useform option { color: initial; }
 .etable td.syn { white-space: normal; }
-.block { display: inline-block; padding: .05rem .5rem; border: 1px solid var(--line, #ccc); border-radius: .4rem; background: var(--panel, rgba(128,128,128,.08)); cursor: grab; }
-tr.dropping td { background: rgba(80, 140, 255, .18); }
 .chip { display: inline-block; margin: .1rem .3rem .1rem 0; padding: 0 .4rem; border: 1px solid var(--line, #ccc); border-radius: 1rem; font-size: 1em; }
 .chip .x { margin-left: .3rem; text-decoration: none; color: var(--dim, #888); }
 .synadd { width: 6em; border: 1px dashed var(--line, #ccc); background: transparent; font-size: 1em; padding: 0 .3rem; border-radius: 1rem; }
