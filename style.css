@@ -123,10 +123,10 @@ h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--
 
 /* word table: fixed column widths so sorting never moves them; sortable headings are marked */
 .etable { overflow-x: auto; }
-.etable table { table-layout: fixed; min-width: 760px; }
-.etable th:nth-child(1) { width: 28px; } .etable th:nth-child(3) { width: 48px; } .etable th:nth-child(4) { width: 90px; }
-.etable th:nth-child(5) { width: 96px; } .etable th:nth-child(6) { width: 130px; } .etable table.sub th:nth-child(6) { width: 230px; }
-.etable th:nth-child(7) { width: 90px; } .etable th:nth-child(8) { width: 84px; }
+.etable table { table-layout: fixed; min-width: 930px; }
+.etable th:nth-child(1) { width: 28px; } .etable th:nth-child(3) { width: 170px; } .etable th:nth-child(4) { width: 48px; } .etable th:nth-child(5) { width: 90px; }
+.etable th:nth-child(6) { width: 96px; } .etable th:nth-child(7) { width: 130px; } .etable table.sub th:nth-child(7) { width: 230px; }
+.etable th:nth-child(8) { width: 90px; } .etable th:nth-child(9) { width: 84px; }
 .etable td { overflow: hidden; text-overflow: ellipsis; }
 th.sortable { color: var(--text); cursor: pointer; user-select: none; text-decoration: underline dotted; text-underline-offset: 3px; }
 th.sortable:hover { background: var(--hover); }
@@ -148,3 +148,4 @@ table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, alia
 .root { color: var(--dim, #888); }
 .useform { appearance: none; -webkit-appearance: none; width: 1.3em; height: 1.3em; margin-left: .3rem; padding: 0; vertical-align: middle; border: 1px solid var(--line, #ccc); border-radius: .3rem; cursor: pointer; color: transparent; background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M2 3.5l3 3 3-3' fill='none' stroke='%23888' stroke-width='1.5'/%3E%3C/svg%3E") center / 70% no-repeat; }
 .useform option { color: initial; }
+.etable td.syn { white-space: normal; cursor: pointer; }
