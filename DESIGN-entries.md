@@ -33,6 +33,7 @@ An entry is still one word in one sense (text plus meaning label). A root is the
 | `form` | `rainy`, `raining` for `rain` | yes | own recognisability, shared popularity (see 3.3) |
 | `regional` (new) | `bonnet` for `hood`, `flat` for `apartment` | yes | own recognisability |
 | `abbreviation` (new, replaces `short form`, `acronym`, `nickname`) | `PC` for `personal computer` | yes | own recognisability, shared popularity |
+| `translation` (new, 2026-11-01) | `Danmark` for `Denmark`, `Roma` for `Rome`, `Gaeilge` for `Irish` | yes | own recognisability |
 
 The `synonym` kind is **removed**. An alias never has its own theme links; it appears in every theme its root is in. `swede` and `rutabaga` become two separate entries (or a `regional` pair, since `swede` is the UK word).
 
@@ -90,7 +91,7 @@ Unchanged in meaning (`rec`: how well known the word is; theme link `pop`: how t
 
 ## 6. Export (format version 3)
 
-- Aliases keep the root pointer, with kind bits for spelling, form, regional and abbreviation (today: spelling 16 and form 32).
+- Aliases keep the root pointer, with kind bits for spelling, form, regional, abbreviation and translation (16, 32, 64, 128, 256).
 - Each alias row has its part of speech and region mask.
 - Each theme link may have a `use` form index.
 - Each entry gets a `clash` id (3.2).

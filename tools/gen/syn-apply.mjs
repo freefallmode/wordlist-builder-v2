@@ -4,7 +4,8 @@
 //                                              -theme: not in that theme at all; ~theme: in it but not grouped with the root (not interchangeable there).
 //   O <id> | <meaning label or ->             a different sense: an entry of its own with only its own theme links, no group.
 //   X <id>                                    delete (the root already covers it; no theme link of its own worth keeping)
-//   R <id> <spelling|form|regional|abbreviation> [UK,AU...]   it is really another kind of alias of the root; its own links move to the root.
+//   R <id> <spelling|form|regional|abbreviation|translation> [UK,AU...]   it is really another kind of alias of the root; its own links move to the root.
+//   F <id> [UK,AU...]                          flip: the synonym becomes the root and the old root becomes its regional alias, tagged with the given regions (the old root's own region when none is given). For a region-differing pair where the synonym is the US/default word.
 // Done ids are recorded in tools/gen/syn/done.json.
 import fs from 'node:fs';
 import { parseProject, serializeProject, stampSave } from '../../js/store.js';
@@ -14,7 +15,7 @@ const LIB = li >= 0 ? args.splice(li, 2)[1] : new URL('../../data/wordlist-en.pr
 const doneFile = li >= 0 ? LIB + '.syn-done.json' : new URL('./syn/done.json', import.meta.url);
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFile, 'utf8')) : []);
-const problems = [], stat = { Y: 0, O: 0, X: 0, R: 0, groups: 0, links: 0 };
+const problems = [], stat = { Y: 0, O: 0, X: 0, R: 0, F: 0, groups: 0, links: 0 };
 const group = (t, a, b) => {
   const gs = t.groups = t.groups || [];
   const ga = gs.find(g => g.includes(a)), gb = gs.find(g => g.includes(b));
@@ -52,6 +53,14 @@ for (const f of args) for (const line of fs.readFileSync(f, 'utf8').split(/\r?\n
     const r = P.ix.entry.get(e.aliasOf);
     for (const [t, p] of Object.entries(e.th)) if (r.th[t] === undefined) r.th[t] = p;
     e.th = {}; e.aliasKind = m[2]; if (m[3]) e.region = m[3].split(','); reindex(P); done.add(e.id); stat.R++;
+  } else if ((m = /^F (\d+)(?: ([A-Z,]+))?$/.exec(s))) {
+    const e = find(m[1]); if (!e) continue; const r = P.ix.entry.get(e.aliasOf);
+    for (const [t, p] of Object.entries(r.th)) if (e.th[t] === undefined) e.th[t] = p;
+    for (const a of P.entries) if (a.aliasOf === r.id && a !== e) a.aliasOf = e.id;
+    for (const t of P.themes) for (const g of t.groups || []) if (g.includes(r.id)) { const i = g.indexOf(r.id); if (g.includes(e.id)) g.splice(i, 1); else g[i] = e.id; }
+    e.use = Object.assign({}, r.use, e.use); e.show = Object.assign({}, r.show, e.show); e.nameOkIn = [...new Set([...(e.nameOkIn || []), ...(r.nameOkIn || [])])];
+    r.th = {}; r.use = {}; r.show = {}; r.nameOkIn = []; r.aliasOf = e.id; r.aliasKind = 'regional'; if (m[2]) r.region = m[2].split(',');
+    e.aliasOf = 0; e.aliasKind = ''; e.region = []; reindex(P); done.add(e.id); stat.F++;
   } else problems.push(`${f}: cannot read "${s.slice(0, 60)}"`);
 }
 for (const p of problems.slice(0, 40)) console.log('PROBLEM', p);

@@ -32,7 +32,7 @@ export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r
 
 // Bit layouts, written into the file so the reader does not have to guess.
 export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32 };
-export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128 };
+export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256 };
 
 export function buildExport(P, opt0 = {}) {
   const o = Object.assign({}, DEFAULT_EXPORT, opt0);
@@ -50,7 +50,7 @@ export function buildExport(P, opt0 = {}) {
   };
   const okTheme = new Map(P.themes.map(t => [t.id, themeOk(t)]));
   for (const e of candidates) {
-    if (e.aliasOf && !(['synonym', 'regional', 'abbreviation'].includes(e.aliasKind) ? o.synonyms : o.spellings)) continue;   // spellings and forms (skis for ski) go together; other names for the thing follow the synonyms option
+    if (e.aliasOf && !(['synonym', 'regional', 'abbreviation', 'translation'].includes(e.aliasKind) ? o.synonyms : o.spellings)) continue;   // spellings and forms (skis for ski) go together; other names for the thing follow the synonyms option
     if (o.maxEntryWords > 0 && e.text.trim().split(/s+/).length > o.maxEntryWords) continue;
     if (!pass(o.vulgar, e.vulgar) || !regionPass(o.region, ix.entry.get(e.aliasOf || e.id).region)) continue;   // region is judged on the root only: an alias follows its root, never its own tag
     const links = [];
@@ -149,6 +149,7 @@ export function buildExport(P, opt0 = {}) {
     if (e.aliasOf && e.aliasKind === 'form') flags |= ENTRY_BITS.form;
     if (e.aliasOf && e.aliasKind === 'regional') flags |= ENTRY_BITS.regional;
     if (e.aliasOf && e.aliasKind === 'abbreviation') flags |= ENTRY_BITS.abbreviation;
+    if (e.aliasOf && e.aliasKind === 'translation') flags |= ENTRY_BITS.translation;
     cols.text.push(e.text);
     cols.pos.push(POS.indexOf(e.pos));
     cols.type.push(TYPES.indexOf(e.type));

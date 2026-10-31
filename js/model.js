@@ -17,7 +17,7 @@ export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named
 export const REGIONS = ['US', 'CA', 'UK', 'IE', 'AU', 'NZ', 'ZA', 'IN', 'TR'];
 export const REC_HELP = ['not rated', '1 every child knows it', '2 nearly every adult', '3 many adults, not all', '4 interest, job or region', '5 few people'];
 export const POP_HELP = ['not rated', '1 the first words anyone thinks of', '2 typical', '3 ordinary member', '4 less typical', '5 real but peripheral'];
-export const ALIAS_KINDS = ['', 'synonym', 'spelling', 'form', 'regional', 'abbreviation'];   // spelling and form (skis for ski, rainy for rain) are the same word, so they take the root's popularity; a synonym is rated on its own. regional (bonnet for hood) and abbreviation (PC for personal computer) are the same thing under another name: they follow the root's themes and are rated on their own. Synonyms are to become theme-level groups (DESIGN-entries.md)
+export const ALIAS_KINDS = ['', 'synonym', 'spelling', 'form', 'regional', 'abbreviation', 'translation'];   // spelling and form (skis for ski, rainy for rain) are the same word, so they take the root's popularity; a synonym is rated on its own. regional (bonnet for hood), abbreviation (PC for personal computer) and translation (Danmark for Denmark: the same thing named in another language) are the same thing under another name: they follow the root's themes and are rated on their own. Synonyms are to become theme-level groups (DESIGN-entries.md)
 export const STATUS = ['new', 'gen', 'rev'];
 export const STATUS_HELP = { new: 'added by hand, unchecked', gen: 'generated, not reviewed', rev: 'reviewed' };
 

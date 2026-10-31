@@ -80,7 +80,7 @@ export function validate(P) {
         if (r.id === e.id) add('error', 'alias-self', `"${label(e)}" is an alias of itself.`, loc);
         if (r.text.toLowerCase() === text.toLowerCase()) add('warn', 'alias-same', `"${label(e)}" has the same text as its root.`, loc);
         if (e.aliasKind && !ALIAS_KINDS.includes(e.aliasKind)) add('warn', 'alias-kind', `Alias "${label(e)}" has an unknown kind (${e.aliasKind}).`, loc);
-        if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling, form, regional or abbreviation).`, loc);
+        if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling, form, regional, abbreviation or translation).`, loc);
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
         if (e.aliasKind === 'spelling' && !e.region.length) add('info', 'alias-region', `Spelling alias "${label(e)}" has no region (US, UK ...).`, loc);
       }
