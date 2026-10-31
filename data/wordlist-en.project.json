@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":207,"modified":"2026-10-31 23:38"},"nextId":64830,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":208,"modified":"2026-10-31 23:44"},"nextId":64830,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1},
@@ -64505,7 +64505,7 @@
 {"id":64795,"text":"Pickup","gloss":"open-back","rec":5,"region":["AU","NZ"],"aliasOf":2639,"aliasKind":"synonym","status":"gen"},
 {"id":64796,"text":"Bedside","gloss":"nightstand","rec":4,"aliasOf":4676,"aliasKind":"synonym","status":"gen"},
 {"id":64797,"text":"Secretary","gloss":"fold-down","rec":3,"aliasOf":4707,"aliasKind":"synonym","th":{"tables_and_desks":5},"status":"gen"},
-{"id":64798,"text":"Dinner","gloss":"formal evening","rec":3,"th":{"clothes":3},"status":"gen"},
+{"id":64798,"text":"dinner","gloss":"formal evening","rec":3,"th":{"clothes":3},"status":"gen"},
 {"id":64799,"text":"Lunar","type":"proper","rec":3,"aliasOf":5127,"aliasKind":"synonym","th":{"new_year":3},"status":"gen"},
 {"id":64800,"text":"Plush","rec":3,"th":{"toys_and_play":1,"toys":1},"status":"gen"},
 {"id":64801,"text":"Cinnamon","gloss":"colour morph","rec":3,"aliasOf":7950,"aliasKind":"synonym","status":"gen"},
