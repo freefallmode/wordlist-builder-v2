@@ -75,7 +75,7 @@ export function validate(P) {
     if (letters(text) > (S.maxLen || 20)) add('warn', 'long', `"${text}" is longer than ${S.maxLen || 20} letters.`, loc);
 
     if (e.type === 'acronym' && text !== text.toUpperCase()) add('warn', 'case', `"${text}" is typed as an acronym but is not in capitals.`, loc);
-    if (['person', 'place', 'org', 'title', 'proper'].includes(e.type) && !/\p{Lu}/u.test(text)) add('warn', 'case', `"${text}" is a ${e.type} name but has no capital letter.`, loc);
+    if (['person', 'place', 'org', 'title', 'proper'].includes(e.type) && !/\p{Lu}|^\d/u.test(text)) add('warn', 'case', `"${text}" is a ${e.type} name but has no capital letter.`, loc);
     if (e.type === 'common' && /^\p{Lu}/u.test(text) && !/^\p{Lu}+$/u.test(text) && !e.aliasOf) add('info', 'case', `"${text}" is typed as a common word but starts with a capital.`, loc);
 
     const ids = linkIds(P, e);
