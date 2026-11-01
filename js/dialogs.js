@@ -3,7 +3,7 @@ import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './d
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
-  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, descendants } from './model.js';
+  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, themeProfile, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf } from './export.js';
@@ -46,6 +46,7 @@ export async function editTheme(t, isNew = false) {
     name: h('input', { value: w.name }),
     note: h('textarea', { rows: 3 }, w.note),
     pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
+    diff: select([[0, 'worked out from the words' + (isNew ? '' : ' (now ' + (themeProfile(P, t.id).auto || 'none') + ')')], [1, '1 (easiest)'], [2, '2'], [3, '3'], [4, '4'], [5, '5 (hardest)']], w.diff || 0),
   };
   const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang', 'nameOk'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
@@ -59,6 +60,7 @@ export async function editTheme(t, isNew = false) {
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).'),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). Difficulty is worked out from the words.'),
+    field('Theme difficulty', f.diff, 'Normally worked out from the words (the median of their difficulty). Set it to override that for this theme.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
   return dialog(isNew ? 'New theme' : 'Theme: ' + t.name, body, [
@@ -74,10 +76,12 @@ export async function editTheme(t, isNew = false) {
       if (pname && !parent) throw Error('Parent theme not found.');
       if (parent && (parent === t.id || (!isNew && isAncestor(P, t.id, parent)))) throw Error('A theme cannot be inside itself.');
       Object.assign(w, { name, note: f.note.value.trim(), pop: +f.pop.value });
+      if (+f.diff.value) w.diff = +f.diff.value; else delete w.diff;
       for (const k of flags) w[k] = boxes[k].querySelector('input').checked;
       w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
       const oldParent = t.parent;
       Object.assign(t, w, { parent: oldParent });
+      if (!w.diff) delete t.diff;
       if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindex(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
       else if ((parent || null) !== (oldParent || null)) { reindex(P); moveTheme(P, t.id, parent); if (parent) A.open.add(parent); }
       A.changed();
