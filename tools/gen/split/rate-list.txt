@@ -1,0 +1,502 @@
+colours_named_after_fruit | colours named after fruit | parent: fruits (pop 1) | lemon, lime, orange, tangerine, cherry, peach, plum, mango, avocado, raspberry, apricot, olive
+vegetables_that_are_really_fruits | vegetables that are really fruits | parent: vegetables (pop 1) | tomato, cucumber, pumpkin, bell pepper, sweet pepper, eggplant, zucchini, okra, tomatillo, chayote
+fish_from_rivers_and_lakes | fish from rivers and lakes | parent: fish to eat (pop 2) | trout, tilapia, catfish, carp, pike, perch, sturgeon, bream, Arctic char
+small_oily_fish | small oily fish | parent: fish to eat (pop 2) | sardine, anchovy, mackerel, herring, whitebait, sprat, pilchard, kipper
+meat_from_mammals | meat from mammals | parent: meat and seafood (pop 2) | beef, pork, lamb, bacon, ham, steak, ground beef, veal, venison, mutton, oxtail, offal
+british_cheeses | british cheeses | parent: cheeses (pop 1) | cheddar, stilton, red leicester, wensleydale, cheshire, double gloucester, Caerphilly, Stinking Bishop
+french_desserts | french desserts | parent: desserts of the world (pop 3) | macaron, crème brûlée, mille-feuille, napoleon, tarte tatin, profiteroles, clafoutis, mont blanc
+eastern_mediterranean_sweets | eastern mediterranean sweets | parent: desserts of the world (pop 3) | baklava, Turkish delight, halva, knafeh, loukoumades, galaktoboureko, qatayef, mhalabiya
+long_pasta | long pasta | parent: pasta shapes (pop 3) | spaghetti, linguine, fettuccine, vermicelli, pappardelle, bucatini, angel hair, capellini, tagliatelle, mafalde, tagliolini, spaghettini
+stuffed_pasta | stuffed pasta | parent: pasta shapes (pop 3) | ravioli, tortellini, cannelloni, manicotti, agnolotti, cappelletti, tortelloni, mezzelune
+tube_pasta | tube pasta | parent: pasta shapes (pop 3) | macaroni, penne, rigatoni, bucatini, elbow macaroni, cannelloni, manicotti, ziti, cavatappi, paccheri, garganelli
+east_asian_dishes | east asian dishes | parent: rice dishes (pop 4) | sushi, fried rice, bibimbap, egg fried rice, congee, jook, onigiri, donburi, kimbap, musubi, ochazuke, omurice
+indian_dishes | indian dishes | parent: rice dishes (pop 4) | biryani, Pongal, kedgeree, pulao, khichdi, lemon rice, bisi bele bath, jeera rice
+british_morning_foods | british morning foods | parent: breakfast foods (pop 2) | bacon, sausage, toast, crumpet, baked beans, black pudding, kedgeree, full English, fry-up, kippers, bubble and squeak, laverbread
+asian_dishes | asian dishes | parent: dishes (pop 1) | ramen, curry, sushi, fried rice, dumplings, stir-fry, pad thai, samosa, tempura, biryani, dim sum, pho
+european_dishes | european dishes | parent: dishes (pop 1) | lasagna, risotto, fish and chips, spaghetti bolognese, paella, quiche, French toast, moussaka, goulash, ratatouille, pierogi, frittata
+pasta_meals | pasta meals | parent: italian food (pop 2) | spaghetti, lasagna, ravioli, gnocchi, trofie, cacio e pepe, strozzapreti, carbonara, spaghetti carbonara, bolognese, ragù, amatriciana
+sweet_treats | sweet treats | parent: british food (pop 3) | clotted cream, trifle, Chelsea bun, Eccles cake, Bakewell tart, banoffee pie, sticky toffee pudding, jam roly-poly, scones, spotted dick, eton mess, cranachan
+scottish_dishes | scottish dishes | parent: british food (pop 3) | haggis, cullen skink, cranachan, stovies, clapshot, tattie scones, Forfar bridie, Arbroath smokie
+curries | curries | parent: indian food (pop 2) | curry, aloo gobi, butter chicken, vindaloo, korma, tikka masala, saag paneer, rogan josh, chana masala, jalfrezi, madras
+street_snacks | street snacks | parent: indian food (pop 2) | samosa, bhel puri, pani puri, golgappa, vada pav, pakora, bhaji, pav bhaji, dhokla
+south_indian_dishes | south indian dishes | parent: indian food (pop 2) | Pongal, uttapam, idli, masala dosa, rasam, sambar, bisi bele bath, pesarattu, avial
+yum_cha_dishes | yum cha dishes | parent: chinese food (pop 2) | dumplings, wonton, xiaolongbao, soup dumpling, har gow, siu mai, spring roll, bao, char siu, cheung fun
+takeaway_orders | takeaway orders | parent: chinese food (pop 2) | fried rice, fortune cookie, lo mein, chow mein, hot and sour soup, kung pao chicken, sweet and sour pork, chop suey, egg roll, general tso's chicken, orange chicken, beef and broccoli
+grape_varieties | grape varieties | parent: red wines (pop 4) | merlot, pinot noir, cabernet sauvignon, malbec, shiraz, zinfandel, syrah, tempranillo, sangiovese, grenache, nebbiolo, cabernet franc
+wines_named_for_places | wines named for places | parent: red wines (pop 4) | Chianti, Bordeaux, Burgundy, Rioja, Beaujolais, Barolo, Lambrusco, Amarone, valpolicella, côtes du rhône, châteauneuf-du-pape, Brunello
+tasting_notes | tasting notes | parent: wine words (pop 4) | aroma, bouquet, fruity, corked, legs, dry, full-bodied, oaky, crisp, finish, nose, minerality
+winemaking_terms | winemaking terms | parent: wine words (pop 4) | harvest, fermentation, crush, must, barrique, lees, sulfites, malolactic, racking, fining, pomace, maceration
+nicknames_for_drinks | nicknames for drinks | parent: drinks (pop 1) | java, joe, cuppa, char, vino, bubbly, fizz, brew, brewski
+alcoholic_drinks | alcoholic drinks | parent: drinks (pop 1) | beer, wine, champagne, vodka, rum, eggnog, whisky, gin, tequila, brandy, cocktail, cider
+odd_toed_animals | odd-toed animals | parent: hoofed mammals (pop 5) | horse, donkey, ass, zebra, rhinoceros, tapir, wild ass, onager, quagga, Przewalski's horse
+mammals_that_live_in_water | mammals that live in water | parent: mammals (pop 1) | elephant, hippopotamus, hippo, otter, beaver, platypus, walrus, seal, capybara, manatee, dugong
+british_raptors | british raptors | parent: birds of prey (pop 2) | osprey, kite, merlin, kestrel, buzzard, harrier, golden eagle, peregrine falcon, barn owl, tawny owl, hobby, goshawk
+american_raptors | american raptors | parent: birds of prey (pop 2) | bald eagle, Andean condor, red-tailed hawk, great horned owl, caracara, harpy eagle, turkey vulture, California condor, screech owl, snail kite, Harris's hawk, Cooper's hawk
+new_world_birds | new world birds | parent: songbirds (pop 3) | bluebird, cardinal, mockingbird, blue jay, oriole, chickadee, meadowlark, junco, towhee, tanager, grosbeak, song sparrow
+birds_named_after_a_colour | birds named after a colour | parent: songbirds (pop 3) | blackbird, bluebird, blue jay, goldfinch, greenfinch, blue tit, redwing, yellowhammer, redpoll, redstart, whitethroat, blackcap
+new_world_songbirds | new world songbirds | parent: colorful birds (pop 3) | bluebird, cardinal, blue jay, oriole, goldfinch, tanager, scarlet tanager, painted bunting, indigo bunting, red-crested cardinal, green jay, paradise tanager
+parts_of_a_bird_s_head | parts of a bird's head | parent: bird body parts (pop 5) | throat, beak, bill, crest, wattle, crown, auriculars, cere, eye ring, crown feather, beak tip, lore
+what_a_bird_stands_on | what a bird stands on | parent: bird body parts (pop 5) | toe, hallux, big toe, talon, claw, spur, tarsus, webbed foot
+inner_organs_and_bones | inner organs and bones | parent: bird body parts (pop 5) | breastbone, gizzard, crop, syrinx, preen gland, cloaca, air sac, furcula, wishbone, keel
+observer_s_kit | observer's kit | parent: birdwatching words (pop 4) | binoculars, field guide, hide, life list, spotting scope, checklist, mist net, eBird, telephoto lens, field notes
+local_status_labels | local status labels | parent: birdwatching words (pop 4) | migration, rarity, vagrant, fall-out, flyover, accidental, summer visitor, winter visitor, resident
+american_serpents | american serpents | parent: snakes (pop 2) | rattlesnake, rattler, bullsnake, copperhead, sidewinder, cottonmouth, water moccasin, milk snake, king snake, rat snake, bull snake, hognose
+animals_with_a_poisonous_bite | animals with a poisonous bite | parent: reptiles and amphibians (pop 2) | cobra, viper, rattlesnake, rattler, adder, mamba, gila monster, coral snake, copperhead, sidewinder, taipan, king cobra
+exotic_pets | exotic pets | parent: reptiles and amphibians (pop 2) | tortoise, gecko, iguana, chameleon, python, boa constrictor, tree frog, dart frog, axolotl, bearded dragon, beardie, anole
+coarse_fish | coarse fish | parent: freshwater fish (pop 3) | carp, pike, perch, minnow, bream, roach, tench, chub, dace, zander, rudd, barbel
+north_american_game_fish | north american game fish | parent: freshwater fish (pop 3) | bass, bowfin, sunfish, walleye, bluegill, crappie, largemouth bass, smallmouth bass, muskellunge, northern pike, yellow perch, alligator gar
+fish_on_the_menu | fish on the menu | parent: fish (pop 1) | salmon, tuna, cod, sardine, anchovy, trout, swordfish, haddock, halibut, mackerel, herring, tilapia
+canine_gear | canine gear | parent: pet supplies (pop 3) | kennel, crate, leash, collar, harness, dog bowl, dog bed, dog treat, muzzle, dog coat, poop bag, pooper scooper
+feline_gear | feline gear | parent: pet supplies (pop 3) | catnip, litter box, cat litter, scratching post, cat tree, cat toy, cat bed, feather wand
+cage_birds | cage birds | parent: pets (pop 1) | parrot, finch, canary, budgie, cockatoo, cockatiel, lovebird, macaw, African grey, parakeet
+dogs_from_asia | dogs from asia | parent: dog breeds (pop 1) | husky, Shih Tzu, Akita, Samoyed, saluki, afghan hound, chow chow, pekingese, lhasa apso
+dogs_from_germany | dogs from germany | parent: dog breeds (pop 1) | German shepherd, dachshund, rottweiler, Pomeranian, schnauzer, doberman, boxer, great dane, weimaraner, affenpinscher
+deadly_creatures | deadly creatures | parent: australian animals (pop 1) | cassowary, taipan, saltwater crocodile, saltie, box jellyfish, funnel-web spider, redback spider, blue-ringed octopus
+forest_birds | forest birds | parent: woodland animals (pop 2) | owl, robin, woodpecker, jay, tawny owl, goshawk, sparrowhawk, wren, nuthatch, chaffinch, blue tit, great tit
+birds_awake_after_dark | birds awake after dark | parent: nocturnal animals (pop 2) | owl, kiwi, nightjar, barn owl, tawny owl, kakapo, potoo, nighthawk, whip-poor-will
+long_distance_birds | long-distance birds | parent: migrating animals (pop 3) | goose, flamingo, stork, cuckoo, albatross, crane, swift, swallow, nightingale, osprey, turkey vulture, Arctic tern
+ocean_animals | ocean animals | parent: migrating animals (pop 3) | salmon, eel, sea turtle, humpback whale, sperm whale, gray whale, loggerhead, green turtle, leatherback turtle, great white shark, whale shark, glass eel
+cold_blooded_animals | cold-blooded animals | parent: insect eaters (pop 3) | lizard, frog, toad, salamander, newt, eft, gecko, chameleon, anole, horned lizard
+long_necked_giants | long-necked giants | parent: dinosaurs (pop 2) | Brontosaurus, Diplodocus, Brachiosaurus, Argentinosaurus, apatosaurus, Plateosaurus, Camarasaurus, Amargasaurus, Mamenchisaurus
+horned_and_armored_beasts | horned and armored beasts | parent: dinosaurs (pop 2) | Triceratops, Stegosaurus, Ankylosaurus, Protoceratops, Styracosaurus, Kentrosaurus, Psittacosaurus, Pachyrhinosaurus
+extinct_birds | extinct birds | parent: extinct animals (pop 3) | great auk, moa, dodo, Carolina parakeet, passenger pigeon, Haast's eagle, heath hen, Labrador duck, Rodrigues solitaire, Eskimo curlew, giant moa, Cuban macaw
+geological_epochs | geological epochs | parent: prehistoric periods (pop 5) | Pleistocene, Holocene, Paleocene, Eocene, Oligocene, Miocene, Pliocene, Anthropocene
+homes_of_wild_mammals | homes of wild mammals | parent: animal homes (pop 3) | warren, den, burrow, lair, sett, lodge, drey, holt, form, couch, beaver dam, earth
+homes_for_birds | homes for birds | parent: animal homes (pop 3) | roost, dovecote, pigeon loft, nest, eyrie, coop, aviary, henhouse, loft, rookery, heronry, cote
+farmyard_shelters | farmyard shelters | parent: animal homes (pop 3) | stable, paddock, barn, byre, kennel, sty, pigsty, hutch, fold, cowshed, kraal, shippon
+bird_parts | bird parts | parent: animal body parts (pop 2) | talon, feather, crest, webbed foot, cloaca, wattle, comb, spur, bill, keel
+parts_of_water_animals | parts of water animals | parent: animal body parts (pop 2) | barbel, fin, dorsal fin, tail fin, tentacle, flipper, gill, blowhole, scale
+bug_parts | bug parts | parent: animal body parts (pop 2) | wing, mandible, proboscis, stinger, spiracle, pincer, antenna, pedipalp
+trees_native_to_britain | trees native to Britain | parent: trees (pop 1) | oak, ash, willow, birch, elm, beech, aspen, hawthorn, hazel, yew, alder, rowan
+hedgerow_fruits | hedgerow fruits | parent: foraging finds (pop 3) | mulberry, elderberry, bilberry, whortleberry, juniper berry, sloe, crab apple, wild strawberry, rosehip, hawthorn berry
+leaves_and_shoots | leaves and shoots | parent: foraging finds (pop 3) | samphire, sorrel, dandelion, nettle, stinging nettle, burdock, wild garlic, wood sorrel, wild mint, fiddlehead, chickweed, mallow
+bedding_plants | bedding plants | parent: garden flowers (pop 2) | marigold, pansy, petunia, geranium, snapdragon, zinnia, begonia, nasturtium, verbena, salvia, impatiens, lobelia
+flowers_used_as_girls_names | flowers used as girls' names | parent: flowers (pop 1) | rose, daisy, lily, poppy, violet, iris, lilac, jasmine, dahlia, primrose, gardenia, camellia
+flowering_houseplants | flowering houseplants | parent: houseplants (pop 2) | orchid, begonia, poinsettia, anthurium, peace lily, African violet, Christmas cactus, hoya, kalanchoe
+flowerless_plants | flowerless plants | parent: plants (pop 1) | fern, moss, bracken, tree fern, sphagnum, horsetail, cycad, liverwort, hornwort, club moss
+heath_and_moor_plants | heath and moor plants | parent: plants (pop 1) | heather, bracken, gorse, furze, whin, rush, bramble, sphagnum, sedge
+soggy_places | soggy places | parent: landscapes (pop 1) | swamp, marsh, bog, mire, wetland, delta, estuary, lagoon, fen
+frozen_precipitation | frozen precipitation | parent: snow and ice (pop 2) | snowfall, snowflake, hail, sleet, wintry mix, graupel, flurry, freezing rain, snow shower, ice pellet
+polar_formations | polar formations | parent: snow and ice (pop 2) | glacier, sheet, floe, iceberg, ice cap, crevasse, permafrost, ice shelf, sea ice, firn, pancake ice, pack
+atmospheric_patterns | atmospheric patterns | parent: forecast words (pop 3) | cold front, warm front, isobar, front, high pressure, low pressure, occluded front, anticyclone, trough, ridge, pressure system, isotherm
+lines_from_a_daily_bulletin | lines from a daily bulletin | parent: forecast words (pop 3) | chance of rain, overnight low, daytime high, mostly sunny, partly cloudy, scattered showers, isolated storms, sunny spells, bright intervals
+ice_crystal_effects | ice-crystal effects | parent: sky phenomena (pop 3) | halo, sundog, sun pillar, circumhorizontal arc, parhelion, sun halo, moon halo, mock sun, sun dog, moon dog, light pillar, circumzenithal arc
+sunrise_and_sunset_sights | sunrise and sunset sights | parent: sky phenomena (pop 3) | golden hour, blue hour, green flash, crepuscular rays, red sky, alpenglow, afterglow, Belt of Venus, anticrepuscular rays
+night_sky_sights | night sky sights | parent: sky phenomena (pop 3) | shooting star, Aurora, northern lights, southern lights, aurora borealis, aurora australis, meteor shower, zodiacal light, airglow, noctilucent clouds, earthshine, gegenschein
+blue_gems | blue gems | parent: gemstones (pop 2) | sapphire, turquoise, aquamarine, tanzanite, lapis lazuli, iolite, sodalite, benitoite, star sapphire
+precious_elements | precious elements | parent: metals (pop 3) | gold, silver, platinum, palladium, rhodium, iridium, osmium, ruthenium
+alkali_and_alkaline_earth_elements | alkali and alkaline earth elements | parent: metals (pop 3) | calcium, sodium, magnesium, potassium, radium, lithium, beryllium, barium, strontium, cesium, rubidium, francium
+metal_ores | metal ores | parent: minerals (pop 4) | malachite, magnetite, hematite, bauxite, galena, cinnabar, azurite, sphalerite, chalcopyrite, cassiterite, stibnite, cuprite
+marine_animals | marine animals | parent: ocean (pop 1) | octopus, shark, whale, dolphin, jellyfish, starfish, sea star, sea turtle, krill, plankton, anglerfish, manta ray
+seafloor_features | seafloor features | parent: ocean (pop 1) | hydrothermal vent, ocean floor, trench, abyss, continental shelf, seamount, abyssal plain, mid-ocean ridge, Mariana Trench, Challenger Deep
+moving_water | moving water | parent: ocean (pop 1) | undertow, gulf stream, riptide, current, whirlpool, gyre, upwelling, tide, swell, wave
+animals_of_the_far_north | animals of the far north | parent: polar regions (pop 2) | husky, walrus, narwhal, reindeer, lemming, musk ox, polar bear, arctic fox, snowy owl, ptarmigan, sled dog, caribou
+animals_of_the_far_south | animals of the far south | parent: polar regions (pop 2) | penguin, krill, skua, emperor penguin, Adelie penguin, leopard seal, Weddell seal, snow petrel
+frozen_formations | frozen formations | parent: polar regions (pop 2) | glacier, ice floe, Ross Ice Shelf, iceberg, ice sheet, crevasse, pack ice, ice shelf, nunatak, polynya, brash ice, ice
+famous_mountains_and_ranges | famous mountains and ranges | parent: mountains (pop 2) | mont blanc, Andes, Everest, Alps, Rockies, Himalayas, K2, Matterhorn, Kilimanjaro, Denali, Fuji
+landforms | landforms | parent: mountains (pop 2) | valley, vale, cliff, glacier, peak, plateau, ridge, summit, foothills, tarn, moraine, slope
+grassland_blooms | grassland blooms | parent: meadow (pop 3) | daisy, poppy, buttercup, dandelion, foxglove, lupin, cornflower, clover, yarrow, harebell, cowslip, oxeye daisy
+minibeasts | minibeasts | parent: meadow (pop 3) | bee, butterfly, ladybug, lady beetle, grasshopper, cricket, dragonfly, bumblebee, meadow brown, burnet moth
+needle_leaf_trees | needle-leaf trees | parent: taiga (pop 4) | pine, fir, spruce, evergreen, larch, conifer, tamarack, black spruce, jack pine
+australian_wildlife | australian wildlife | parent: outback (pop 2) | kangaroo, wombat, emu, cockatoo, thorny devil, bilby, red kangaroo, dingo, galah, perentie, goanna, brolga
+places_in_remote_australia | places in remote australia | parent: outback (pop 2) | Uluru, Ayers Rock, Kata Tjuta, Alice Springs, Coober Pedy, Nullarbor, Kimberley, Pilbara, Birdsville, Broken Hill
+heartland_plants | heartland plants | parent: prairie (pop 3) | wheat, sunflower, tumbleweed, Russian thistle, coneflower, switchgrass, tallgrass, bluestem, buffalo grass, blue grama
+heartland_creatures | heartland creatures | parent: prairie (pop 3) | bison, buffalo, badger, pronghorn, hawk, prairie dog, coyote, swift fox, black-footed ferret, meadowlark, sage grouse, prairie chicken
+settler_life | settler life | parent: prairie (pop 3) | windmill, pioneer, cowboy, cattle drive, covered wagon, sodbuster, ranch, sod house, homesteader, open range, prairie schooner
+balkan_countries | balkan countries | parent: european countries (pop 2) | Romania, Bulgaria, Croatia, Serbia, Slovenia, Albania, Montenegro, North Macedonia, Bosnia and Herzegovina, Macedonia, Bosnia
+central_african_lands | central african lands | parent: african countries (pop 3) | Rwanda, Cameroon, Congo, Gabon, Chad, Burundi, Equatorial Guinea, Sao Tome and Principe
+ports_in_europe | ports in europe | parent: port cities (pop 3) | Barcelona, Lisbon, Marseille, Genoa, Naples, Hamburg, Liverpool, Valencia, Antwerp, Rotterdam, Gothenburg, Gdansk
+ports_in_asia | ports in asia | parent: port cities (pop 3) | Singapore, Dubai, Hong Kong, Mumbai, Bombay, Shanghai, Busan, Aden, Karachi, Colombo, Vladivostok, Yokohama
+ports_in_the_americas | ports in the americas | parent: port cities (pop 3) | Buenos Aires, New Orleans, Valparaíso, Baltimore, Vancouver, Halifax, Santos, Charleston, Galveston, Long Beach, Cayenne, Savannah
+islands_near_britain | islands near britain | parent: famous islands (pop 1) | Ireland, Eire, Iona, Isle of Wight, Isle of Man, Anglesey, Skye, Jersey, Guernsey, Lundy
+mediterranean_islands | mediterranean islands | parent: famous islands (pop 1) | Santorini, Corsica, Sicily, Sardinia, Crete, Cyprus, Malta, Majorca, Ibiza, Mykonos, Rhodes, Corfu
+british_and_irish_rivers | british and irish rivers | parent: famous rivers (pop 2) | Thames, Severn, Mersey, Trent, Tyne, Clyde, Shannon, Liffey
+european_waters | european waters | parent: oceans and seas (pop 2) | Mediterranean Sea, Mediterranean, Black Sea, North Sea, Irish Sea, Celtic Sea, Norwegian Sea, White Sea, Adriatic, Aegean, Baltic, Barents
+asian_waters | asian waters | parent: oceans and seas (pop 2) | Arabian Sea, South China Sea, Sea of Japan, Yellow Sea, Java Sea, Sulu Sea, East China Sea, Philippine Sea, Banda Sea, Andaman, Aral, Caspian
+american_natural_wonders | american natural wonders | parent: us landmarks (pop 2) | Niagara Falls, Grand Canyon, Old Faithful, Yellowstone, Everglades, Mount St Helens, Mount Whitney, Antelope Canyon, Bryce Canyon, Mammoth Cave, Carlsbad Caverns, Crater Lake
+capital_sights | capital sights | parent: us landmarks (pop 2) | Lincoln Memorial, Pentagon, white house, US Capitol, Washington Monument, Jefferson Memorial, Arlington Cemetery, Vietnam Memorial
+countries_in_africa | countries in africa | parent: flags with stars (pop 3) | Morocco, Burkina Faso, Ethiopia, Ghana, Somalia, Zimbabwe, Senegal, Cameroon, Liberia, Togo, Burundi, Mauritania
+countries_in_asia | countries in asia | parent: flags with stars (pop 3) | China, Turkey, Israel, Vietnam, Philippines, Pakistan, Singapore, Myanmar, Burma, Jordan, Turkmenistan, North Korea
+countries_in_oceania | countries in oceania | parent: flags with stars (pop 3) | Australia, New Zealand, Tuvalu, Nauru, Samoa, Papua New Guinea, Marshall Islands, Micronesia, Aotearoa
+australian_places | australian places | parent: places named after people (pop 4) | Sydney, Melbourne, Brisbane, Adelaide, Hobart, Darwin, Queensland, Tasmania, Cooktown
+us_cities | us cities | parent: places named after people (pop 4) | Jamestown, Lincoln, Houston, Dallas, Austin, Denver, Nashville, Cleveland, Pittsburgh, Baltimore, Charleston, Washington
+countries_and_archipelagos | countries and archipelagos | parent: places named after people (pop 4) | Colombia, Saudi Arabia, Philippines, Bolivia, Seychelles, Marshall Islands, Mauritius, Cook Islands
+kitchen_crew | kitchen crew | parent: restaurant (pop 2) | chef, sous chef, cook, cuisinier, head chef, commis, chef de partie, expediter, plongeur
+dining_room_staff | dining room staff | parent: restaurant (pop 2) | waiter, server, waitress, host, hostess, maître d', sommelier, busboy, chef de rang
+builders_tools | builders' tools | parent: construction site (pop 3) | hammer, crowbar, spirit level, shovel, trowel, drill, sledgehammer, nail gun, plumb bob, plumb line, theodolite, jackhammer
+symbols_of_the_usa | symbols of the usa | parent: national symbols (pop 2) | Statue of Liberty, Lady Liberty, bald eagle, Uncle Sam, Stars and Stripes, Old Glory, Star-Spangled Banner, Liberty Bell, great seal
+british_isles_symbols | british isles symbols | parent: national symbols (pop 2) | harp, daffodil, thistle, shamrock, Union Jack, John Bull, Britannia, red dragon, Tudor rose
+supercar_makers | supercar makers | parent: car brands (pop 1) | Aston Martin, Lotus, McLaren, Porsche, Ferrari, Lamborghini, Maserati, Bugatti, Pagani, Koenigsegg
+under_the_bonnet | under the bonnet | parent: car parts (pop 2) | carburetor, crankshaft, camshaft, dipstick, piston, gasket, manifold, battery, radiator, spark plug, alternator, fuel injector
+exterior_parts | exterior parts | parent: car parts (pop 2) | headlight, headlamp, bumper, windshield, trunk, hood, tire, wiper, windshield wiper, rearview mirror, wheel, hubcap
+things_inside_the_cabin | things inside the cabin | parent: cars (pop 1) | steering wheel, seat belt, safety belt, dashboard, rearview mirror, odometer, speedometer, glove box, glove compartment, airbag, cruise control, sunroof
+airlines_of_the_americas | airlines of the americas | parent: airlines (pop 2) | Delta, United, Southwest, JetBlue, Air Canada, LATAM, Avianca, Aeromexico, Pan Am, TWA, Spirit, Braniff
+low_cost_airlines | low-cost airlines | parent: airlines (pop 2) | Southwest, JetBlue, Ryanair, easyJet, Spirit, Wizz Air, Allegiant, Frontier
+in_case_of_trouble | in case of trouble | parent: in-flight words (pop 3) | life jacket, life vest, oxygen mask, seatbelt sign, fasten seatbelt sign, safety demonstration, emergency exit, exit row, emergency row, crash position, air sickness bag, doors to manual
+places_you_can_sit | places you can sit | parent: in-flight words (pop 3) | aisle seat, window seat, first class, middle seat, business class, economy class, premium economy, exit row, emergency row, bulkhead seat
+sailing_actions | sailing actions | parent: sailing words (pop 3) | capsize, tack, jibe, reef, heel, luff, broach, hoist, furl, trim
+gear_above_the_deck | gear above the deck | parent: sailing words (pop 3) | rigging, Genoa, jib, halyard, spinnaker, mainsail, boom, sheet
+ocean_liners | ocean liners | parent: famous ships (pop 1) | Titanic, Lusitania, Queen Mary, Queen Elizabeth 2, Mauretania, Olympic, Britannic, Carpathia, Andrea Doria, Costa Concordia, Great Eastern, SS Great Britain
+exploration_ships | exploration ships | parent: famous ships (pop 1) | Mayflower, Santa Maria, Kon-Tiki, HMS Beagle, Endeavour, Golden Hind, Pinta, Discovery, Resolution, Nina, Fram, Endurance
+wind_powered_vessels | wind-powered vessels | parent: boats and ships (pop 1) | yacht, sailboat, schooner, galleon, catamaran, clipper, ketch, junk, dhow, sloop, pinnace, carrack
+human_powered_craft | human-powered craft | parent: boats and ships (pop 1) | canoe, kayak, rowboat, dinghy, raft, gondola, coracle, punt, jolly boat, skiff, longboat
+ledge_tricks | ledge tricks | parent: skateboard tricks (pop 4) | boardslide, 50-50, rail slide, grind, 5-0, nosegrind, tailslide, noseslide, bluntslide, blunt, darkslide
+tricks_where_the_board_spins | tricks where the board spins | parent: skateboard tricks (pop 4) | kickflip, heelflip, shove-it, pop shove-it, 360 flip, tre flip, hardflip, varial, bigspin, laser flip, impossible
+holiday_travel | holiday travel | parent: journeys (pop 3) | excursion, outing, jaunt, safari, cruise, getaway, grand tour, sightseeing, gap year, mini-break
+arduous_trips | arduous trips | parent: journeys (pop 3) | trek, expedition, odyssey, quest, pilgrimage, tramp, schlep, trudge, slog, long haul, hajj, hegira
+cooking_and_drinking_gear | cooking and drinking gear | parent: campsite (pop 1) | camp stove, cooler, esky, canteen, mess kit, Thermos, vacuum flask, spork, billy can, Trangia, Dutch oven, percolator
+desert_parks | desert parks | parent: us national parks (pop 2) | Grand Canyon, Mesa Verde, petrified forest, Bryce Canyon, Canyonlands, Carlsbad Caverns, Zion, Joshua Tree, Death Valley, Arches, Capitol Reef, Big Bend
+california_parks | california parks | parent: us national parks (pop 2) | Yosemite, Joshua Tree, Death Valley, Sequoia, Redwood, Channel Islands, Pinnacles, Lassen Volcanic, Kings Canyon
+eastern_parks | eastern parks | parent: us national parks (pop 2) | Dry Tortugas, Everglades, Mammoth Cave, Great Smoky Mountains, Acadia, Shenandoah, Cuyahoga Valley, Congaree, Biscayne, Voyageurs, Isle Royale, New River Gorge
+african_landscape | african landscape | parent: safari words (pop 3) | acacia, baobab, monkey bread tree, savanna, vlei, mopane, watering hole, Okavango Delta, bush, kopje, marula, donga
+southern_african_words | southern african words | parent: safari words (pop 3) | sundowner, spoor, sjambok, vlei, kopje, kraal, boma, marula, rondavel, donga
+island_getaways | island getaways | parent: beach destinations (pop 2) | Jamaica, Zanzibar, Tahiti, Hawaii, Bahamas, Santorini, Maldives, Seychelles, Fiji, Mauritius, Majorca, Ibiza
+famous_stretches_of_sand | famous stretches of sand | parent: beach destinations (pop 2) | Copacabana, Waikiki, Malibu, Ipanema, Whitehaven Beach, Venice Beach, Myrtle Beach, Bondi, Zlatni Rat, Diani, Navagio
+american_holiday_spots | american holiday spots | parent: beach destinations (pop 2) | Miami, Hawaii, Maui, Waikiki, Malibu, Venice Beach, Myrtle Beach, Key West, Daytona
+naval_vessels | naval vessels | parent: military vehicles (pop 3) | frigate, aircraft carrier, warship, U-boat, submarine, battleship, minesweeper, gunboat, cruiser, patrol boat, landing craft, destroyer
+military_aircraft | military aircraft | parent: military vehicles (pop 3) | Spitfire, fighter jet, bomber, stealth bomber, Harrier, Apache, helicopter gunship, Black Hawk, Chinook, Warthog, warplane, Predator drone
+army_ground_vehicles | army ground vehicles | parent: military vehicles (pop 3) | armored car, tank, Humvee, personnel carrier, APC, self-propelled gun, half-track, tank destroyer, Sherman, Abrams, Panzer, Tiger
+battery_powered_cars | battery-powered cars | parent: electric vehicles (pop 4) | Nissan Leaf, Chevy Bolt, Tesla Model 3, Tesla Model S, Cybertruck, BMW i3, Renault Zoe, Hyundai Ioniq, Kia EV6, Porsche Taycan, Mustang Mach-E, Audi e-tron
+plain_names_for_body_parts | plain names for body parts | parent: inside the body (pop 2) | tummy, tum, gut, bowel, gullet, windpipe, voice box, breastbone, thigh bone, tailbone
+throat_and_airway_parts | throat and airway parts | parent: inside the body (pop 2) | lung, tonsils, windpipe, trachea, diaphragm, larynx, voice box, pharynx, epiglottis, alveoli, bronchi, uvula
+digestive_problems | digestive problems | parent: common illnesses (pop 2) | food poisoning, stomach bug, Delhi belly, gastroenteritis, stomachache, tummy ache, indigestion, constipation, diarrhea, the runs, the trots, nausea
+upper_airway_problems | upper airway problems | parent: common illnesses (pop 2) | head cold, tonsillitis, croup, quinsy, hay fever, sore throat, cough, sinusitis, laryngitis, sniffles, rhinitis, pharyngitis
+viral_illnesses | viral illnesses | parent: infections (pop 3) | flu, influenza, grippe, coronavirus, Covid, hepatitis, rabies, shingles, dengue, common cold, HIV, norovirus
+bacterial_illnesses | bacterial illnesses | parent: infections (pop 3) | tuberculosis, consumption, cholera, typhoid, tetanus, lockjaw, strep throat, impetigo, salmonella, E. coli, MRSA, Lyme disease
+bone_and_joint_injuries | bone and joint injuries | parent: injuries (pop 2) | fracture, dislocation, compound fracture, hairline fracture, greenstick fracture, subluxation, stress fracture, Colles fracture, boxer's fracture
+skin_breaking_injuries | skin-breaking injuries | parent: injuries (pop 2) | cut, scrape, graze, splinter, laceration, gash, puncture, abrasion
+soft_tissue_injuries | soft tissue injuries | parent: injuries (pop 2) | sprain, whiplash, strain, pulled muscle, torn ligament, sprained ankle, tennis elbow, shin splints, torn ACL, ACL tear, pulled hamstring, charley horse
+street_names_for_hemp | street names for hemp | parent: illegal drugs (pop 3) | pot, ganja, dope, weed, grass, skunk, reefer, bud, joint
+stimulants | stimulants | parent: illegal drugs (pop 3) | cocaine, blow, methamphetamine, meth, crystal meth, ice, crack, amphetamine, uppers, coke, snow, charlie
+hallucinogens | hallucinogens | parent: illegal drugs (pop 3) | salvia, LSD, acid, magic mushrooms, psilocybin, mescaline, peyote, DMT, shrooms
+healthcare_workers | healthcare workers | parent: medicine (pop 2) | doctor, nurse, surgeon, family doctor, general practitioner, paramedic, locum, medic
+short_sleeps | short sleeps | parent: sleep (pop 1) | nap, snooze, doze, nod off, siesta, forty winks, kip, shut-eye, power nap, catnap
+grooming_tools | grooming tools | parent: personal care (pop 1) | pumice stone, toothbrush, razor, comb, hairbrush, towel, loofah, Q-tip, cotton swab, tweezers, nail clippers, nail file
+people_who_work_with_sound | people who work with sound | parent: arts jobs (pop 2) | musician, luthier, singer, vocalist, pianist, piano player, violinist, fiddler, conductor, maestro, composer, lyricist
+visual_creators | visual creators | parent: arts jobs (pop 2) | photographer, painter, sculptor, cartoonist, illustrator, potter, ceramicist, printmaker, calligrapher, engraver, street artist, muralist
+theatre_and_movie_crew | theatre and movie crew | parent: arts jobs (pop 2) | choreographer, stuntman, stunt double, gaffer, stage manager, dramaturg, costume designer, set designer, puppeteer, screenwriter, cinematographer, film editor
+western_outfits | western outfits | parent: cowboy words (pop 2) | hat, bandana, bolo tie, spurs, boots, holster, ten-gallon hat, Stetson, chaps
+riding_gear | riding gear | parent: cowboy words (pop 2) | saddle, stirrup, cinch, hackamore, spurs, chaps, riata, latigo, tapaderos
+people_of_the_frontier | people of the frontier | parent: cowboy words (pop 2) | sheriff, greenhorn, buckaroo, tenderfoot, rustler, wrangler, drover, vaquero, cowpuncher, bronc buster, ranch hand
+nicknames_for_workers | nicknames for workers | parent: jobs (pop 1) | number cruncher, bean counter, firie, cop, copper, bobby, sparky, chippy, grease monkey, cabbie, trucker, postie
+legal_rules | legal rules | parent: government words (pop 3) | law, statute, legislation, ordinance, writ, regulation, bill, constitution, amendment, decree, edict, bylaw
+institutions_of_state | institutions of state | parent: government words (pop 3) | council, parliament, congress, cabinet, legislature, ministry, bureaucracy, public sector, polity
+american_campaign_terms | american campaign terms | parent: election words (pop 2) | caucus, primary, election day, swing state, electoral college, absentee ballot, running mate, concession speech, gerrymandering, hanging chad, stump speech, whistle-stop tour
+british_campaign_terms | british campaign terms | parent: election words (pop 2) | manifesto, purdah, constituency, hustings, by-election, marginal seat, returning officer, scrutineer, swingometer, electoral roll, polling booth, polling day
+titles_for_women | titles for women | parent: royal titles (pop 3) | princess, queen, Lady, empress, duchess, countess, baroness, queen mother, tsarina, sultana, rani, begum
+south_asian_titles | south asian titles | parent: royal titles (pop 3) | maharaja, rajah, nawab, rani, begum, nizam, peshwa, maharani
+central_and_eastern_european_titles | central and eastern european titles | parent: royal titles (pop 3) | margrave, landgrave, archduke, tsar, kaiser, grand duke, tsarina, hospodar, tsarevich
+ceremonial_objects | ceremonial objects | parent: royal things (pop 2) | tiara, crown, crown jewels, signet ring, scepter, orb, diadem, coronet, sword of state, ampulla, mace, Koh-i-Noor
+ruled_by_one_leader | ruled by one leader | parent: types of government (pop 4) | monarchy, dictatorship, autocracy, tyranny, absolute monarchy, despotism, regency, caliphate, shogunate, khanate, sultanate
+words_ending_in_cracy | words ending in -cracy | parent: types of government (pop 4) | democracy, bureaucracy, oligarchy, theocracy, autocracy, aristocracy, plutocracy, meritocracy, technocracy, kleptocracy, stratocracy, direct democracy
+ideologies_named_after_people | ideologies named after people | parent: political ideologies (pop 4) | marxism, maoism, leninism, stalinism, trotskyism, thatcherism, keynesianism, peronism, georgism, gaullism, bonapartism, kemalism
+government_representatives_abroad | government representatives abroad | parent: diplomacy words (pop 5) | consul, diplomat, ambassador, envoy, attache, charge d'affaires, plenipotentiary, nuncio
+deals_between_countries | deals between countries | parent: diplomacy words (pop 5) | ceasefire, treaty, accord, entente, alliance, detente, non-aggression pact, communique, modus vivendi, concordat
+borrowed_foreign_words | borrowed foreign words | parent: diplomacy words (pop 5) | entente, rapprochement, persona non grata, attache, detente, demarche, charge d'affaires, agrement, aide-memoire, note verbale, casus belli, modus vivendi
+government_agencies | government agencies | parent: us government (pop 2) | CIA, secret service, federal reserve, IRS, FBI, OMB, FEMA, NSA
+office_holders | office holders | parent: us government (pop 2) | president, senator, governor, vice president, attorney general, speaker of the house, chief justice, majority leader, cabinet secretary, solicitor general, parliamentarian
+stealing_crimes | stealing crimes | parent: crimes (pop 1) | poaching, theft, robbery, burglary, shoplifting, mugging, larceny, pickpocketing, identity theft, looting, rustling, carjacking
+financial_crimes | financial crimes | parent: crimes (pop 1) | fraud, forgery, bribery, embezzlement, extortion, counterfeiting, racketeering, insider trading, money laundering, tax evasion, malfeasance, peculation
+crimes_against_people | crimes against people | parent: crimes (pop 1) | murder, kidnapping, assault, mugging, manslaughter, stalking, affray, mayhem, regicide
+people_at_a_trial | people at a trial | parent: courtroom words (pop 2) | lawyer, counsel, judge, jury, witness, defendant, prosecutor, plaintiff, barrister, solicitor, bailiff, court reporter
+slang_terms | slang terms | parent: police words (pop 1) | bobby, bust, collar, the law, fuzz, old bill, rozzers, cuffs, cop, paddy wagon, peeler
+forces_of_europe | forces of europe | parent: police words (pop 1) | bobby, constable, Scotland Yard, gendarme, panda car, Garda, carabinieri, constabulary, gendarmerie, peeler
+officer_s_equipment | officer's equipment | parent: police words (pop 1) | handcuffs, cuffs, badge, siren, taser, truncheon, baton, riot shield, nightstick
+wrongdoers | wrongdoers | parent: law and order (pop 1) | criminal, crook, outlaw, offender, lawbreaker, perp, felony, felon, fugitive
+parts_of_a_religious_service | parts of a religious service | parent: religion words (pop 3) | prayer, sermon, homily, hymn, altar, baptism, liturgy, sacrament, bless, pray, absolution, offering
+pilgrimage_words | pilgrimage words | parent: islam words (pop 3) | hajj, Mecca, Medina, Kaaba, umrah, kiswah, ihram, Zamzam
+jewish_holidays | jewish holidays | parent: judaism words (pop 3) | Hanukkah, Passover, Pesach, Rosh Hashanah, Yom Kippur, Purim, Sukkot, Shabbat, Sabbath
+jewish_ritual_objects | jewish ritual objects | parent: judaism words (pop 3) | shofar, menorah, kippah, yarmulke, skullcap, tallit, prayer shawl, tefillin, mezuzah, dreidel, Star of David
+key_teachings | key teachings | parent: buddhism words (pop 3) | karma, nirvana, dharma, samsara, Four Noble Truths, Eightfold Path, satori, dukkha, metta, Enlightenment, anatta, anicca
+contemplative_practices | contemplative practices | parent: buddhism words (pop 3) | meditation, mantra, mindfulness, koan, vipassana, zazen, metta, jhana
+temple_sights | temple sights | parent: buddhism words (pop 3) | pagoda, stupa, prayer wheel, mandala, bodhi tree, wat, thangka, prayer flag, singing bowl
+hindu_gods_and_goddesses | hindu gods and goddesses | parent: hinduism words (pop 3) | Vishnu, Shiva, Brahma, Ganesh, Ganapati, Hanuman, Krishna, Rama, Lakshmi, Durga, Kali, Shakti
+spiritual_concepts | spiritual concepts | parent: hinduism words (pop 3) | karma, chakra, dharma, moksha, avatar, atman, Brahman, bhakti, varna, samskara, jnana
+world_religions | world religions | parent: religion (pop 2) | Christianity, Islam, Judaism, Hinduism, Buddhism, Sikhism, Taoism, Shinto, Jainism, Zoroastrianism, Baha'i, Rastafari
+navy_ranks | navy ranks | parent: military ranks (pop 2) | seaman, midshipman, admiral, rear admiral, vice admiral, commodore, ensign, petty officer, chief petty officer
+kinds_of_soldier | kinds of soldier | parent: army words (pop 3) | soldier, trooper, GI, squaddie, digger, grunt, doughboy, recruit, rookie, paratrooper, redcoat, sniper
+army_kit | army kit | parent: army words (pop 3) | camouflage, uniform, bandolier, combat boots, dog tags, bayonet, canteen, ration, helmet, ammunition, puttees
+parts_of_a_ship | parts of a ship | parent: navy words (pop 3) | hull, galley, crow's nest, bridge, binnacle, bowsprit, gunwale, capstan, deck, quarterdeck, gun deck, poop deck
+naval_people | naval people | parent: navy words (pop 3) | marines, sailor, seaman, mariner, matelot, jack tar, bosun, boatswain mate, coxswain, admiral
+service_members | service members | parent: military (pop 2) | marines, soldier, trooper, GI, squaddie, digger, grunt, doughboy, sailor, seaman, mariner, matelot
+camps_and_fortifications | camps and fortifications | parent: military (pop 2) | fort, bivouac, barracks, bunker, trench, military base, mess hall, frontline, Pentagon, garrison, no man's land
+academic_staff | academic staff | parent: university words (pop 3) | registrar, adjunct, Professor, bursar, lecturer, provost, chancellor, vice-chancellor, don, fellow, teaching fellow
+online_actions | online actions | parent: social media words (pop 2) | DM, post, like, share, follow, comment, tag, unfollow, block, retweet, livestream
+internet_users | internet users | parent: social media words (pop 2) | follower, influencer, troll, subscriber, stan, lurker, catfish, sockpuppet
+news_roles | news roles | parent: journalism words (pop 5) | reporter, paparazzi, correspondent, anchor, stringer, photojournalist, war correspondent, pool reporter, muckraker, embedded journalist
+online_promotion_terms | online promotion terms | parent: advertising words (pop 5) | pop-up ad, click-through rate, impression, sponsored content, native advertising, retargeting, advertorial, pre-roll, ROAS, A/B testing, frequency cap, cost per click
+media_slang | media slang | parent: media and communication (pop 2) | hack, newshound, rag, telly, tube, idiot box, small screen, ring, buzz, plug, wire, cable
+workplace_disputes | workplace disputes | parent: protest words (pop 3) | picket, strike, walkout, picket line, general strike, lockout, wildcat strike, work-to-rule, go-slow, sit-down strike
+fundraising_events | fundraising events | parent: charity words (pop 3) | raffle, Live Aid, fun run, telethon, bake sale, benefit concert, charity gala, charity auction, sponsored walk, Red Nose Day, Giving Tuesday, charity ball
+helping_groups | helping groups | parent: charity words (pop 3) | comic relief, UNICEF, Red Cross, food bank, Salvation Army, Oxfam, soup kitchen, Children in Need, Habitat for Humanity
+polite_phrases | polite phrases | parent: manners and etiquette (pop 3) | namaste, pardon, please, thank you, excuse me, sorry, bless you, after you, my pleasure, bon appetit
+polite_gestures | polite gestures | parent: manners and etiquette (pop 3) | handshake, bow, curtsy, hold the door, firm handshake, kiss on the cheek, salute, tip your hat
+things_for_watching_shows | things for watching shows | parent: home electronics (pop 2) | television, telly, tube, idiot box, small screen, remote control, remote, zapper, projector, set-top box, DVD player, VCR
+things_that_play_music | things that play music | parent: home electronics (pop 2) | radio, headphones, cans, turntable, amplifier, record player, gramophone, CD player, stereo, hi-fi, speaker, soundbar
+things_with_a_sharp_blade | things with a sharp blade | parent: tools (pop 1) | saw, axe, chisel, hacksaw, plane, adze, jigsaw, chainsaw, utility knife, Stanley knife, circular saw, hand saw
+fabrics_from_animals | fabrics from animals | parent: fabrics (pop 2) | alpaca, silk, wool, felt, leather, cashmere, suede, mohair, angora
+tough_fabrics | tough fabrics | parent: fabrics (pop 2) | denim, tweed, canvas, leather, corduroy, twill, gabardine, jute, hessian, burlap
+sewing_tools | sewing tools | parent: fabrics and sewing (pop 3) | tape measure, needle, scissors, thimble, bobbin, seam ripper, pincushion, embroidery hoop, pinking shears, pinking scissors, tailor's chalk, dress form
+people_at_the_ceremony | people at the ceremony | parent: weddings (pop 1) | bride, groom, best man, bridesmaid, groomsman, maid of honor, flower girl, page boy, usher, registrar, officiant, ring bearer
+things_arranged_before_the_big_day | things arranged before the big day | parent: weddings (pop 1) | bachelor party, bachelorette party, guest list, save the date, invitation, seating plan, trousseau, dowry, banns, bridal shower, stag do, hen party
+what_the_couple_wears_and_carries | what the couple wears and carries | parent: weddings (pop 1) | ring, veil, garter, bouquet, buttonhole, boutonniere, something old, bridal gown
+hindu_festivals | hindu festivals | parent: holidays and celebrations (pop 2) | Diwali, Holi, Navratri, Raksha Bandhan, Durga Puja, Onam, Pongal, Ganesh Chaturthi, Dussehra, Vijayadashami, Janmashtami, Baisakhi
+life_milestones | life milestones | parent: holidays and celebrations (pop 2) | christening, baby shower, wedding, birthday, anniversary, graduation, housewarming, retirement party, bachelor party, bachelorette party, bar mitzvah, quinceañera
+brewery_containers | brewery containers | parent: containers (pop 4) | barrel, vat, drum, cask, keg, firkin, hogshead, tun
+glass_vessels | glass vessels | parent: containers (pop 4) | ampoule, cruet, decanter, jar, bottle, flask, vial, demijohn, carboy, Mason jar, phial, carafe
+things_with_a_carrying_handle | things with a carrying handle | parent: containers (pop 4) | toolbox, bucket, hamper, tote, pail, lunch box, punnet, pannier, creel, basket, bag
+things_used_for_wiping | things used for wiping | parent: paper goods (pop 4) | napkin, toilet paper, tissue paper, tissue, paper towel, facial tissue, Kleenex, paper napkin, serviette
+office_and_school_supplies | office and school supplies | parent: paper goods (pop 4) | notebook, composition book, flyer, envelope, notepad, sticky note, printer paper, index card, stationery, letterhead, Post-it, graph paper
+energy_and_light_sources | energy and light sources | parent: emergency supplies (pop 3) | flashlight, matches, ferro rod, power bank, portable charger, generator, glow stick, candles, batteries, hand-crank radio, road flare
+old_music_gear | old music gear | parent: retro household items (pop 3) | Walkman, transistor radio, boombox, record player, gramophone, cassette player, tape deck, eight-track, tape recorder
+things_without_a_plug | things without a plug | parent: retro household items (pop 3) | percolator, icebox, mangle, washboard, carpet sweeper, wringer, chamber pot, bed warmer, warming pan, coal scuttle, wind-up clock, butter churn
+old_office_tech | old office tech | parent: retro household items (pop 3) | pager, rolodex, typewriter, floppy disk, answering machine, dial-up modem, fax machine, mimeograph, message machine
+kitchen_gadgets | kitchen gadgets | parent: things you plug in (pop 3) | fridge, freezer, microwave, microwave oven, dishwasher, toaster, kettle, blender, coffee maker, coffee machine, food processor, rice cooker
+kitchen_tools | kitchen tools | parent: things with handles (pop 3) | cleaver, skillet, saucepan, wok, spatula, whisk, ladle, tongs, peeler, skimmer, knife, sieve
+things_you_wear | things you wear | parent: things with buttons (pop 3) | pajamas, shirt, trousers, slacks, jeans, jacket, coat, cardigan, blouse, vest, overalls, polo shirt
+things_you_switch_on | things you switch on | parent: things with buttons (pop 3) | alarm clock, radio, intercom, microwave, microwave oven, washing machine, toaster, doorbell, elevator, cash register, arcade machine, vending machine
+ball_skills | ball skills | parent: soccer terms (pop 2) | header, volley, bicycle kick, overhead kick, back heel, rabona, Panenka, toe poke, stepover, dribble, nutmeg, dummy
+ballpark_parts | ballpark parts | parent: baseball terms (pop 3) | bleachers, dugout, bullpen, outfield, infield, diamond, mound, on-deck circle, batting cage, foul pole, backstop
+pitching_terms | pitching terms | parent: baseball terms (pop 3) | bullpen, curveball, fastball, mound, strikeout, slider, changeup, knuckleball, relief pitcher, no-hitter, balk, southpaw
+hitting_terms | hitting terms | parent: baseball terms (pop 3) | home run, batter, bat, bunt, grand slam, foul ball, RBI, pinch hitter, batting average, sacrifice fly, designated hitter, squeeze play
+bowling_deliveries | bowling deliveries | parent: cricket terms (pop 3) | googly, yorker, bouncer, no-ball, wide, leg spin, off spin, doosra, bodyline, seam
+players_and_officials | players and officials | parent: cricket terms (pop 3) | umpire, bowler, batsman, wicketkeeper, all-rounder, spinner, nightwatchman, tail-ender
+sports_played_with_sticks | sports played with sticks | parent: ball sports (pop 1) | lacrosse, polo, field hockey, hurling, camogie, croquet, shinty, bandy, floorball
+scoring_terms | scoring terms | parent: golf terms (pop 2) | birdie, par, bogey, hole in one, ace, double bogey, double eagle, eagle, albatross
+cue_strokes | cue strokes | parent: cue sports terms (pop 3) | jump shot, bank shot, safety, plant, kiss, masse, kick shot, combination, draw shot, follow shot, stun shot, double kiss
+underwater_gear | underwater gear | parent: scuba words (pop 4) | wetsuit, snorkel, flippers, mask, oxygen tank, regulator, fins, dive computer, depth gauge, air tank, dry suit, weight belt
+surfer_slang | surfer slang | parent: surfing words (pop 3) | shaka, stoked, kook, wipeout, hang ten, goofy, gnarly, radical, grom, dawn patrol, drop in, green room
+surf_moves | surf moves | parent: surfing words (pop 3) | hang ten, paddle out, duck dive, rip curl, cutback, bottom turn, snap, floater, aerial, carve, pop-up
+paddled_boat_sports | paddled boat sports | parent: board and paddle sports (pop 4) | canoeing, kayaking, rafting, whitewater rafting, canoe polo, sea kayaking, dragon boating, kayak polo, slalom canoeing, sprint canoe, sea canoeing, kayak fishing
+sports_ridden_on_a_board | sports ridden on a board | parent: board and paddle sports (pop 4) | surfing, windsurfing, kitesurfing, kiteboarding, wakeboarding, paddleboarding, bodyboarding, boogie boarding, skimboarding, wakesurfing, foilboarding, flowboarding
+engine_powered_sports | engine-powered sports | parent: water sports (pop 1) | waterskiing, wakeboarding, jet skiing, flyboarding, kneeboarding, tubing, wakesurfing, powerboating
+olympic_snow_sports | olympic snow sports | parent: snow sports (pop 3) | skiing, snowboarding, curling, bobsled, luge, ski jumping, cross-country skiing, biathlon, Nordic combined, freestyle skiing, alpine skiing, skeleton
+southeast_asian_martial_arts | southeast asian martial arts | parent: martial arts (pop 3) | Muay Thai, eskrima, arnis, Lethwei, silat, Vovinam, Bokator, Muay Boran, Kuntao
+weapon_based_martial_arts | weapon-based martial arts | parent: martial arts (pop 3) | kyudo, kendo, eskrima, arnis, iaido, naginata, bojutsu, kenjutsu, Gatka
+grappling_arts | grappling arts | parent: martial arts (pop 3) | judo, sumo, aikido, sambo, Brazilian jiu-jitsu, glima, jujutsu, Ssireum
+strikes_kicks_and_blocks | strikes, kicks and blocks | parent: karate words (pop 5) | shuto, mae geri, gedan barai, oi zuki, gyaku zuki, mawashi geri, yoko geri, age uke, nukite
+throwing_moves | throwing moves | parent: judo words (pop 5) | osoto gari, seoi nage, uchi mata, harai goshi, tomoe nage, kosoto gari, ouchi gari, ko-uchi gari, okuri ashi barai, de ashi barai, tai otoshi, kata guruma
+pins_and_chokes | pins and chokes | parent: judo words (pop 5) | kesa gatame, juji gatame, shime-waza, osaekomi, hold-down, armlock, kami shiho gatame, kata gatame, hadaka jime, okuri eri jime, ude garami, sankaku jime
+kit_and_equipment | kit and equipment | parent: triathlon words (pop 5) | wetsuit, swim cap, swim goggles, pull buoy, aero bars, tri bike, timing chip, elastic laces, tri suit, bento box, aero helmet, swim skin
+team_sports | team sports | parent: olympic sports (pop 1) | soccer, football, basketball, baseball, volleyball, softball, handball, cricket, lacrosse, water polo, beach volleyball, rugby sevens
+aquatic_sports | aquatic sports | parent: olympic sports (pop 1) | water polo, swimming, diving, surfing, rowing, canoeing, sailing, synchronized swimming, artistic swimming, canoe slalom, marathon swimming
+gym_gear | gym gear | parent: sports equipment (pop 1) | dumbbell, free weights, jump rope, foam roller, barbell, yoga mat, kettlebell, punching bag, medicine ball, resistance band, weight plate, speed bag
+protective_gear | protective gear | parent: sports equipment (pop 1) | mouthguard, helmet, boxing gloves, baseball glove, goggles, shin guards, catcher's mitt, football helmet, safety glasses
+things_you_swing | things you swing | parent: sports equipment (pop 1) | cricket bat, golf club, tennis racket, lacrosse stick, racket, baseball bat, hockey stick, croquet mallet, snooker cue, pool cue
+places_for_winter_sports | places for winter sports | parent: sports venues (pop 2) | halfpipe, ice rink, ski slope, ski resort, curling rink, ski jump hill, bobsled track, Cresta Run
+playing_surfaces | playing surfaces | parent: sports venues (pop 2) | tennis court, basketball court, football pitch, soccer field, baseball diamond, cricket ground, squash court, real tennis court, fives court, bocce court, croquet lawn, bowling green
+trackside_officials | trackside officials | parent: sports officials (pop 4) | race starter, race marshal, finish judge, clerk of the course, scrutineer, commissaire, clerk of scales, stipendiary steward, pit marshal
+layers_for_cold_weather | layers for cold weather | parent: sports clothing (pop 3) | hoodie, leggings, tracksuit, jogging suit, sweatpants, trackies, gilet, bodywarmer, windbreaker, cagoule, arm warmers, gaiters
+golf_scores | golf scores | parent: scoring words (pop 2) | birdie, par, bogey, hole in one, ace, stableford, eagle, albatross, condor
+multi_sport_events | multi-sport events | parent: famous sporting events (pop 2) | Olympics, Paralympics, Commonwealth Games, X Games, Winter Olympics, Summer Olympics, Gold Coast Games, Special Olympics, Gay Games, Pan American Games, Asian Games
+tournament_formats | tournament formats | parent: tournament words (pop 4) | round robin, knockout round, group stage, double elimination, single elimination, pool play, swiss system, stepladder playoff, double round robin
+stages_of_a_tournament | stages of a tournament | parent: tournament words (pop 4) | final, semifinal, quarterfinal, round of 16, medal round, grand final, qualifying round, preliminary round, first round, second round, last eight, Sweet Sixteen
+american_sports_venues | american sports venues | parent: famous stadiums (pop 4) | Yankee Stadium, Fenway Park, Wrigley Field, Madison Square Garden, Rose Bowl, Lambeau Field, Soldier Field, MetLife Stadium, Dodger Stadium, Superdome, Candlestick Park, Ebbets Field
+english_football_grounds | english football grounds | parent: famous stadiums (pop 4) | Wembley, Old Trafford, Anfield, Stamford Bridge, Goodison Park, Villa Park, Hillsborough, Emirates, Etihad
+rugby_grounds | rugby grounds | parent: famous stadiums (pop 4) | Twickenham, Murrayfield, Principality Stadium, Aviva Stadium, Eden Park, Ellis Park, Cardiff Arms Park, Lansdowne Road
+prizes_you_can_wear | prizes you can wear | parent: trophies and prizes (pop 3) | medal, gold medal, yellow jersey, championship belt, silver medal, bronze medal, Green Jacket, green jersey, polka dot jersey, maillot jaune, Brownlow Medal, Lonsdale Belt
+motor_races | motor races | parent: famous races (pop 4) | Indy 500, Daytona 500, Monaco Grand Prix, Le Mans 24 Hours, Dakar Rally, Isle of Man TT, Cannonball Run, Pikes Peak, Mille Miglia, Targa Florio, Bonneville, Gumball Rally
+bike_races | bike races | parent: famous races (pop 4) | Tour de France, Giro d'Italia, Vuelta a España, Paris-Roubaix, Milan-San Remo, Tour of Flanders, Tour of Britain, Strade Bianche, Giro, Tour of Italy
+horse_races | horse races | parent: famous races (pop 4) | Kentucky Derby, Melbourne Cup, Preakness Stakes, Belmont Stakes, Epsom Derby, Breeders' Cup, Cheltenham Gold Cup, Grand National
+english_players | english players | parent: famous soccer players (pop 2) | David Beckham, Bobby Charlton, Bobby Moore, Wayne Rooney, Steven Gerrard, Frank Lampard, Gary Lineker, Harry Kane, Jude Bellingham, Alan Shearer, Michael Owen
+brazilian_players | brazilian players | parent: famous soccer players (pop 2) | Pelé, Neymar, Ronaldinho, Garrincha, Kaká, Roberto Carlos, Vinícius Júnior, Jairzinho, Nílton Santos
+women_s_tennis_stars | women's tennis stars | parent: tennis champions (pop 4) | Serena Williams, Venus Williams, Steffi Graf, Martina Navratilova, Naomi Osaka, Billie Jean King, Chris Evert, Monica Seles, Martina Hingis, Maria Sharapova, Iga Świątek, Coco Gauff
+american_tennis_stars | american tennis stars | parent: tennis champions (pop 4) | Serena Williams, Venus Williams, Pete Sampras, Andre Agassi, John McEnroe, Jimmy Connors, Arthur Ashe, Billie Jean King, Chris Evert, Coco Gauff, Andy Roddick, Don Budge
+women_athletes | women athletes | parent: famous athletes (pop 1) | Serena Williams, Simone Biles, Venus Williams, Nadia Comaneci, Steffi Graf, Martina Navratilova, Naomi Osaka, Katie Ledecky, Wilma Rudolph, Mia Hamm, Megan Rapinoe, Sonja Henie
+famous_runners | famous runners | parent: famous athletes (pop 1) | Usain Bolt, Jesse Owens, Mo Farah, Carl Lewis, Eliud Kipchoge, Haile Gebrselassie, Wilma Rudolph, Emil Zátopek, Paavo Nurmi, Abebe Bikila, Eric Liddell, Zola Budd
+canine_contests | canine contests | parent: horse and animal sports (pop 3) | dog sledding, greyhound racing, dog racing, dog agility, sheepdog trials, lure coursing, flyball, dock diving, coursing
+races_between_animals | races between animals | parent: horse and animal sports (pop 3) | steeplechase, horse racing, harness racing, greyhound racing, dog racing, pigeon racing, camel racing, flat racing, ostrich racing, pig racing, chuckwagon racing, pony racing
+activities_on_foot | activities on foot | parent: adventure and outdoor sports (pop 1) | orienteering, hiking, trekking, geocaching, trail running, backpacking, gorge walking, fell running, peak bagging, Munro bagging, canopy walking
+people_in_a_casino | people in a casino | parent: casino words (pop 3) | cashier, bouncer, croupier, dealer, high roller, pit boss, gambler, whale, card counter, cocktail waitress
+money_terms_in_gambling | money terms in gambling | parent: casino words (pop 3) | jackpot, tip, bet, bankroll, odds, chips, wager, stake, buy-in, cash out, payout, ante
+player_actions | player actions | parent: poker terms (pop 2) | bluff, call, raise, fold, check, all-in, limp, muck, three-bet, check-raise, slow play, straddle
+kinds_of_wager | kinds of wager | parent: betting words (pop 3) | each way, ante-post, accumulator, parlay, point spread, moneyline, in-play, over/under, treble, Yankee, teaser, lucky 15
+games_with_things_you_throw | games with things you throw | parent: games of chance (pop 2) | dice, craps, coin toss, heads or tails, sic bo, chuck-a-luck, hazard, crown and anchor, two-up
+games_played_with_a_deck | games played with a deck | parent: games of chance (pop 2) | blackjack, poker, baccarat, faro, Texas hold'em, video poker, red dog, punto banco, chemin de fer
+children_s_card_games | children's card games | parent: card games (pop 1) | Uno, crazy eights, go fish, old maid, snap, cheat, war, speed, spit, Happy Families, spoons, beggar my neighbour
+trick_taking_games | trick-taking games | parent: card games (pop 1) | bridge, whist, euchre, pinochle, hearts, spades, bezique, piquet, skat, Black Maria, oh hell
+tactical_motifs | tactical motifs | parent: chess terms (pop 2) | fork, pin, skewer, sacrifice, discovered attack, perpetual check, back rank, zwischenzug, mating net, smothered mate, battery, x-ray
+ways_a_game_ends | ways a game ends | parent: chess terms (pop 2) | checkmate, stalemate, draw, resign, perpetual check, smothered mate, scholar's mate, fool's mate
+two_player_games | two-player games | parent: table games (pop 2) | chess, checkers, backgammon, Go, Othello, Connect Four, Battleship, Mastermind, Stratego, shogi, xiangqi, Chinese chess
+nintendo_characters | nintendo characters | parent: video game characters (pop 1) | Donkey Kong, Mario, Pikachu, Kirby, Luigi, Link, Zelda, Bowser, Princess Peach, Yoshi, Samus Aran, Ganondorf
+villains_and_monsters | villains and monsters | parent: video game characters (pop 1) | Bowser, Creeper, Ganondorf, Dr. Robotnik, Sub-Zero, GLaDOS, Sephiroth, Pyramid Head
+arcade_classics | arcade classics | parent: video games (pop 1) | Tetris, Pac-Man, Pong, Space Invaders, Donkey Kong, Street Fighter, Mortal Kombat, Frogger, Asteroids, Galaga, Lemmings
+needlework | needlework | parent: crafts (pop 3) | embroidery, cross-stitch, quilting, patchwork, needlepoint, appliqué, sewing, sashiko, smocking, bargello, goldwork, trapunto
+yarn_and_thread_crafts | yarn and thread crafts | parent: crafts (pop 3) | knitting, crochet, weaving, macrame, felting, tatting, spinning, kumihimo, bobbin lace, lacemaking, pom-pom making, nalbinding
+manual_woodworking_tools | manual woodworking tools | parent: woodworking words (pop 4) | saw, chisel, mallet, spirit level, plane, adze, coping saw, try square, spokeshave, drawknife, drawshave, gouge
+wood_joints | wood joints | parent: woodworking words (pop 4) | tongue and groove, dovetail, mortise, tenon, rabbet, dado, pocket hole, miter, bird's mouth
+hobbies_done_outdoors | hobbies done outdoors | parent: hobbies and crafts (pop 2) | bonsai, photography, gardening, birdwatching, stargazing, rock collecting, fossil hunting, metal detecting, trainspotting
+thread_crafts | thread crafts | parent: hobbies and crafts (pop 2) | embroidery, cross-stitch, quilting, patchwork, needlepoint, appliqué, sewing, tatting, sashiko, kumihimo
+old_fashioned_playthings | old-fashioned playthings | parent: toys (pop 2) | yo-yo, spinning top, marbles, rocking horse, jack-in-the-box, toy soldier, kaleidoscope, wind-up toy, jacks, pull toy, zoetrope, tin soldier
+chasing_games | chasing games | parent: outdoor games (pop 2) | tag, capture the flag, red rover, kick the can, British bulldog, stuck in the mud, red light green light, Mr Wolf, spud
+toy_brands | toy brands | parent: toys and play (pop 1) | Lego, Barbie, Slinky, Frisbee, Play-Doh, Etch A Sketch, Rubik's Cube, Matchbox car, Hot Wheels, Tamagotchi, Beyblade, Transformers
+traditional_playthings | traditional playthings | parent: toys and play (pop 1) | spinning top, marbles, rocking horse, jack-in-the-box, kaleidoscope, conkers, cat's cradle, jacks, pick-up sticks, clockwork toy, wind-up toy, diabolo
+blown_instruments | blown instruments | parent: folk instruments (pop 4) | harmonica, mouth organ, bagpipes, didgeridoo, tin whistle, penny whistle, panpipes, uilleann pipes, ney, quena, zampona, gaida
+struck_instruments | struck instruments | parent: folk instruments (pop 4) | tambourine, marimba, tabla, bodhrán, djembe, taiko, darbuka, balafon, gamelan, goblet drum
+orchestra_instruments | orchestra instruments | parent: instruments (pop 1) | violin, cello, harp, viola, double bass, trumpet, trombone, tuba, French horn, flute, clarinet, triangle
+plucked_instruments | plucked instruments | parent: instruments (pop 1) | guitar, harp, banjo, ukulele, mandolin, sitar, harpsichord, lyre, dulcimer
+classical_dances | classical dances | parent: classical forms (pop 4) | waltz, mazurka, gavotte, minuet, passacaglia, chaconne, polonaise, sarabande, gigue
+works_for_voices | works for voices | parent: classical forms (pop 4) | cantata, opera, requiem, mass, oratorio, lied, madrigal, motet, aria, arioso
+orchestral_pieces | orchestral pieces | parent: classical forms (pop 4) | overture, rhapsody, symphony, concerto, suite, divertimento, concerto grosso, symphonic poem, tone poem, sinfonia, intermezzo
+ways_to_play_a_note | ways to play a note | parent: music terms (pop 4) | staccato, legato, arpeggio, glissando, vibrato, tremolo, trill, cantabile, mordent, sotto voce, rubato
+music_theory_ideas | music theory ideas | parent: music terms (pop 4) | harmony, chord, scale, octave, syncopation, counterpoint, cadence, hemiola, interval, modulation, polyphony, tonic
+marks_on_sheet_music | marks on sheet music | parent: music terms (pop 4) | measure, staff, coda, fermata, pause, key signature, time signature, accidental, sharp, treble clef, bass clef, flat sign
+italian_music_words | italian music words | parent: music words (pop 2) | staccato, legato, crescendo, arpeggio, coda, fugue, ostinato, cadenza, glissando, tremolo, fermata, a cappella
+twentieth_century_composers | twentieth-century composers | parent: composers (pop 1) | Debussy, Ravel, Stravinsky, Rachmaninoff, Elgar, Holst, Copland, Gershwin, Bernstein, Sibelius, Satie, Vaughan Williams
+british_bands | british bands | parent: famous bands (pop 1) | Beatles, Rolling Stones, Coldplay, Pink Floyd, Led Zeppelin, The Who, Fleetwood Mac, Blur, Radiohead, Genesis, Cream, Black Sabbath
+american_bands | american bands | parent: famous bands (pop 1) | Metallica, Eagles, Aerosmith, Bon Jovi, Guns N Roses, Kiss, Journey, The Doors, Talking Heads, Slayer, Pixies, Steely Dan
+voice_performers | voice performers | parent: musicians (pop 1) | singer, vocalist, crooner, diva, cantor, chorister, choirboy, backup singer, lead singer, tenor, soprano, prima donna
+french_painters | french painters | parent: painters (pop 2) | Claude Monet, Paul Cezanne, Henri Matisse, Paul Gauguin, Edgar Degas, Pierre-Auguste Renoir, Camille Pissarro, Berthe Morisot, Jacques-Louis David, Eugene Delacroix
+american_painters | american painters | parent: painters (pop 2) | Andy Warhol, Jackson Pollock, Georgia O'Keeffe, Edward Hopper, Mark Rothko, Jean-Michel Basquiat, Roy Lichtenstein, Cy Twombly
+one_word_musical_titles | one-word musical titles | parent: famous musicals (pop 1) | hairspray, cabaret, Brigadoon, Cats, Hamilton, Wicked, Oliver!, Annie, Evita, Rent, Oklahoma!, Matilda
+english_stage_writers | english stage writers | parent: playwrights (pop 4) | William Shakespeare, Shakespeare, Christopher Marlowe, Ben Jonson, Harold Pinter, Tom Stoppard, Noel Coward, Alan Ayckbourn, Caryl Churchill, Sarah Kane, Arnold Wesker, John Osborne
+american_stage_writers | american stage writers | parent: playwrights (pop 4) | Arthur Miller, Tennessee Williams, Eugene O'Neill, Neil Simon, August Wilson, Lin-Manuel Miranda, Edward Albee, David Mamet, Sam Shepard, Lillian Hellman, Thornton Wilder
+continental_stage_writers | continental stage writers | parent: playwrights (pop 4) | Moliere, Anton Chekhov, Henrik Ibsen, August Strindberg, Bertolt Brecht, Garcia Lorca, Friedrich Schiller, Luigi Pirandello, Jean Racine, Pierre Corneille, Eugene Ionesco, Jean Genet
+spooky_costumes | spooky costumes | parent: dress-up costumes (pop 1) | skeleton, devil, ghost, vampire, mummy, zombie, werewolf, Dracula
+jobs_with_uniforms | jobs with uniforms | parent: dress-up costumes (pop 1) | nurse, firefighter, fireman, firie, police officer, policeman, cop, copper, bobby, sailor, mariner, matelot
+genres_that_scare_people | genres that scare people | parent: movie genres (pop 2) | slasher, horror, thriller, found footage, body horror, kaiju, creature feature, giallo
+television_equipment | television equipment | parent: tv words (pop 3) | antenna, remote control, remote, zapper, set-top box, flat screen, rabbit ears, HDTV, DVR, TiVo
+european_directors | european directors | parent: film directors (pop 2) | Pedro Almodovar, Federico Fellini, Ingmar Bergman, Jean-Luc Godard, Francois Truffaut, Sergei Eisenstein, Fritz Lang, Werner Herzog, Wim Wenders, Lars von Trier, Andrei Tarkovsky, Yorgos Lanthimos
+asian_directors | asian directors | parent: film directors (pop 2) | Akira Kurosawa, Ang Lee, Satyajit Ray, Hayao Miyazaki, Bong Joon-ho, Yasujiro Ozu, Chloe Zhao, Abbas Kiarostami, Wong Kar-wai
+directors_from_cinema_s_early_decades | directors from cinema's early decades | parent: film directors (pop 2) | Alfred Hitchcock, Akira Kurosawa, Orson Welles, Charlie Chaplin, Sergei Eisenstein, Fritz Lang, Yasujiro Ozu, Howard Hawks, John Ford, Billy Wilder, Frank Capra, Cecil B. DeMille
+leading_ladies | leading ladies | parent: classic film stars (pop 2) | Marilyn Monroe, Audrey Hepburn, Elizabeth Taylor, Grace Kelly, Katharine Hepburn, Bette Davis, Judy Garland, Ginger Rogers, Greta Garbo, Ingrid Bergman, Joan Crawford, Vivien Leigh
+silent_movie_stars | silent movie stars | parent: classic film stars (pop 2) | Charlie Chaplin, Buster Keaton, Harold Lloyd, Rudolph Valentino, Greta Garbo, Gloria Swanson, Mary Pickford, Douglas Fairbanks, Lon Chaney, Clara Bow, Louise Brooks
+factual_books | factual books | parent: book genres (pop 2) | textbook, coursebook, biography, autobiography, memoir, true crime, self-help, cookbook, travel writing
+speculative_genres | speculative genres | parent: book genres (pop 2) | science fiction, fantasy, space opera, dystopian, magical realism, epic fantasy, cyberpunk, steampunk, paranormal romance, urban fantasy
+tales_of_suspense | tales of suspense | parent: book genres (pop 2) | horror, thriller, mystery, police procedural, true crime, crime fiction, cozy mystery, whodunit, hard-boiled, legal thriller, techno-thriller
+sci_fi_and_fantasy_authors | sci-fi and fantasy authors | parent: authors (pop 2) | Margaret Atwood, Neil Gaiman, Terry Pratchett, Douglas Adams, Isaac Asimov, Philip K. Dick, Ursula Le Guin, Frank Herbert, J.R.R. Tolkien, C.S. Lewis, Jules Verne, H.G. Wells
+women_writers | women writers | parent: authors (pop 2) | J.K. Rowling, Agatha Christie, Jane Austen, Virginia Woolf, Danielle Steel, Nora Roberts, Toni Morrison, Maya Angelou, Margaret Atwood, Ursula Le Guin, Beatrix Potter, Enid Blyton
+poem_forms | poem forms | parent: poetry terms (pop 4) | sonnet, haiku, limerick, ode, elegy, ballad, acrostic, villanelle, sestina, ghazal, pantoum, tanka
+rhythm_words | rhythm words | parent: poetry terms (pop 4) | iambic pentameter, meter, trochee, iamb, dactyl, spondee, anapest, hexameter
+characters_in_tragedies | characters in tragedies | parent: shakespeare characters (pop 3) | King Lear, Coriolanus, Titus Andronicus, Timon of Athens, Cordelia, Gertrude, Hamlet, Macbeth, Othello, Romeo, Juliet, Iago
+characters_in_comedies | characters in comedies | parent: shakespeare characters (pop 3) | Titania, Oberon, Beatrice, Rosalind, Portia, Shylock, Puck, Bottom, Benedick, Viola, Malvolio, Petruchio
+magical_beings | magical beings | parent: fairy tale characters (pop 1) | witch, dragon, elf, goblin, troll, fairy, genie, Baba Yaga, giant, ogre, Koschei, godmother
+young_heroes_and_heroines | young heroes and heroines | parent: fairy tale characters (pop 1) | Pinocchio, Cinderella, Snow White, Sleeping Beauty, Little Red Riding Hood, Rapunzel, Thumbelina, Tom Thumb, Goldilocks, Gretel, Hansel, Rose Red
+opening_sections | opening sections | parent: parts of a book (pop 3) | prologue, foreword, epigraph, title page, table of contents, preface, dedication, acknowledgments, endpaper, flyleaf, frontispiece, half title
+closing_sections | closing sections | parent: parts of a book (pop 3) | epilogue, index, glossary, appendix, bibliography, endnote, colophon, back matter, afterword, errata
+outer_parts | outer parts | parent: parts of a book (pop 3) | cover, spine, blurb, dust jacket, binding, paperback, back cover, front cover, hardback
+comics_from_britain | comics from britain | parent: comedians (pop 2) | Charlie Chaplin, Billy Connolly, Eddie Izzard, Ricky Gervais, Lenny Henry, Peter Kay, Michael McIntyre, Jimmy Carr, Russell Brand, John Cleese, Rowan Atkinson, Dawn French
+comics_from_the_usa | comics from the usa | parent: comedians (pop 2) | Mel Brooks, Buster Keaton, Robin Williams, Jerry Seinfeld, Eddie Murphy, Richard Pryor, George Carlin, Dave Chappelle, Chris Rock, Kevin Hart, Ellen DeGeneres, Steve Martin
+funny_women | funny women | parent: comedians (pop 2) | Ellen DeGeneres, Dawn French, Victoria Wood, Lucille Ball, Joan Rivers, Amy Schumer, Tina Fey, Sarah Silverman, Hannah Gadsby, Tig Notaro, Jo Brand
+spaces_you_walk_through | spaces you walk through | parent: architecture (pop 4) | atrium, staircase, stairway, corridor, hallway, archway, vestibule, foyer, lobby, mezzanine
+famous_ruins_and_monuments | famous ruins and monuments | parent: ancient civilizations (pop 1) | Colosseum, Acropolis, Parthenon, ziggurat, amphitheater, pyramid, Sphinx, Hanging Gardens, Library of Alexandria, Rosetta Stone, Terracotta Army, Great Pyramid
+conflicts_in_history | conflicts in history | parent: wars and battles (pop 2) | civil war, Hundred Years' War, Trojan War, Punic Wars, Wars of the Roses, Crimean War, Boer War, Peloponnesian War, Napoleonic Wars, Vietnam War, Korean War, Gulf War
+greek_myth_creatures | greek myth creatures | parent: mythical creatures (pop 1) | Sphinx, satyr, centaur, minotaur, Medusa, Cyclops, Hydra, Pegasus, Cerberus, Chimera, Siren, Harpy
+lawmen_of_the_west | lawmen of the west | parent: wild west (pop 1) | sheriff, posse, Wyatt Earp, marshal, bounty hunter, Pinkerton, Pat Garrett, Bat Masterson, Bass Reeves, Tom Horn, Roy Bean, Hickok
+bad_guys_of_the_west | bad guys of the west | parent: wild west (pop 1) | outlaw, gunslinger, bandit, Jesse James, Billy the Kid, Butch Cassidy, Sundance Kid, rustler, Belle Starr, Black Bart, Johnny Ringo
+periods_named_after_rulers | periods named after rulers | parent: historical periods (pop 2) | Victorian era, Victorian age, Edwardian era, Georgian era, Elizabethan era, Regency, Napoleonic era, Meiji era, Tang dynasty, Tudor
+summary_measures | summary measures | parent: statistics words (pop 4) | margin of error, standard deviation, average, mean, median, mode, range, variance, percentile, quartile, standard error, mean deviation
+data_displays | data displays | parent: statistics words (pop 4) | graph, histogram, bar chart, pie chart, scatter plot, box plot, bell curve, frequency table, tally chart, line graph
+instruments_for_measuring_length | instruments for measuring length | parent: measuring instruments (pop 3) | odometer, tape measure, ruler, yardstick, meter stick, caliper, vernier caliper, micrometer
+physical_properties | physical properties | parent: measurement (pop 3) | length, width, height, depth, weight, distance, speed, volume, mass, area, capacity, diameter
+chemists | chemists | parent: scientists (pop 2) | Marie Curie, Dmitri Mendeleev, Mendeleev, Antoine Lavoisier, Robert Boyle, Dorothy Hodgkin, Humphry Davy, John Dalton, Joseph Priestley, Svante Arrhenius, Gertrude Elion
+medical_pioneers | medical pioneers | parent: scientists (pop 2) | Louis Pasteur, Pasteur, Alexander Fleming, Edward Jenner, Joseph Lister, Jonas Salk, Avicenna, Gertrude Elion, Ibn Sina
+ancient_greek_mathematicians | ancient greek mathematicians | parent: famous mathematicians (pop 4) | Pythagoras, Archimedes, Hypatia, Euclid, Thales, Eratosthenes, Diophantus, Apollonius, Hipparchus
+french_mathematicians | french mathematicians | parent: famous mathematicians (pop 4) | Pierre de Fermat, Fermat, René Descartes, Descartes, Blaise Pascal, Joseph Fourier, Pierre-Simon Laplace, Évariste Galois, Galois, Henri Poincaré, Sophie Germain, Augustin Cauchy
+german_mathematicians | german mathematicians | parent: famous mathematicians (pop 4) | Carl Friedrich Gauss, Gottfried Leibniz, Leibniz, Bernhard Riemann, David Hilbert, Georg Cantor, Emmy Noether, Felix Klein
+household_gadgets | household gadgets | parent: inventions (pop 1) | television, telly, radio, refrigerator, fridge, icebox, microwave oven, vacuum cleaner, vacuum, Hoover, air conditioner, sewing machine
+medical_discoveries | medical discoveries | parent: famous discoveries (pop 2) | Rh factor, insulin, penicillin, DNA, CRISPR, bacteria, X-rays, vaccination, blood circulation, cells, microbes, germ theory
+astronomy_discoveries | astronomy discoveries | parent: famous discoveries (pop 2) | Uranus, Neptune, Big Bang, dark matter, Pluto, Halley's Comet, black holes, expanding universe, heliocentrism, pulsars, exoplanets, gravitational waves
+physics_discoveries | physics discoveries | parent: famous discoveries (pop 2) | gravity, electron, Higgs boson, radium, electricity, relativity, magnetism, proton, neutron, neutrino, radioactivity, laws of motion
+sciences_of_animals | sciences of animals | parent: science fields (pop 3) | zoology, entomology, ornithology, ethology, herpetology, ichthyology, arachnology, myrmecology, cetology, lepidopterology, primatology, oology
+peace_prize_winners | peace prize winners | parent: nobel laureates (pop 2) | Nelson Mandela, Martin Luther King, Mother Teresa, Malala Yousafzai, Desmond Tutu, Wangari Maathai, Dalai Lama, Barack Obama, Albert Schweitzer, Aung San Suu Kyi, Jimmy Carter, Theodore Roosevelt
+literature_prize_winners | literature prize winners | parent: nobel laureates (pop 2) | Samuel Beckett, Wole Soyinka, Ernest Hemingway, Toni Morrison, John Steinbeck, William Faulkner, Albert Camus, Jean-Paul Sartre, Winston Churchill, Bob Dylan, García Márquez, Rabindranath Tagore
+physics_prize_winners | physics prize winners | parent: nobel laureates (pop 2) | Marie Curie, Albert Einstein, Einstein, Niels Bohr, Max Planck, Richard Feynman, Enrico Fermi, Werner Heisenberg, Erwin Schrödinger, Pierre Curie, Paul Dirac, Peter Higgs
+input_devices | input devices | parent: computer parts (pop 2) | microphone, joystick, keyboard, mouse, scanner, webcam, stylus, touchpad, trackpad, trackball
+data_storage_devices | data storage devices | parent: computer parts (pop 2) | hard drive, SSD, floppy disk, optical drive, disk drive, flash drive, memory card, hard disk, CD drive, DVD drive
+internal_components | internal components | parent: computer parts (pop 2) | CPU, processor, RAM, GPU, motherboard, mainboard, BIOS, capacitor, heat sink, graphics card, power supply, fan
+old_languages_from_last_century | old languages from last century | parent: programming languages (pop 3) | COBOL, C, Fortran, BASIC, Pascal, Ada, Assembly, Logo, Prolog, Smalltalk, Forth, APL
+data_structures_and_types | data structures and types | parent: coding words (pop 3) | integer, array, string, boolean, stack, queue, tuple, dictionary, linked list, binary tree, hash table
+coding_mishaps | coding mishaps | parent: coding words (pop 3) | bug, syntax error, exception, infinite loop, runtime error, stack overflow, spaghetti code, off-by-one, segfault, memory leak, race condition
+kinds_of_software | kinds of software | parent: software words (pop 3) | browser, operating system, spreadsheet, firmware, hypervisor, freeware, shareware, plugin, driver, word processor, antivirus, emulator
+screen_controls | screen controls | parent: software words (pop 3) | cursor, pop-up, widget, toolbar, menu, wizard, dialog box, drop-down menu, scroll bar, progress bar, taskbar, GUI
+connecting_hardware | connecting hardware | parent: networking (pop 4) | firewall, router, modem, switch, hub, gateway, access point, bridge, repeater, load balancer
+internet_protocols | internet protocols | parent: networking (pop 4) | DNS, TCP/IP, DHCP, ARP, HTTP, FTP, SMTP, TCP, UDP, IPv6, IPv4
+picture_formats | picture formats | parent: file types (pop 3) | TIFF, GIF, PNG, JPEG, JPG, SVG, BMP, PSD, WEBP, HEIC
+document_formats | document formats | parent: file types (pop 3) | PDF, DOCX, XLSX, PPTX, TXT, CSV, RTF, DOC, PPT, XLS, EPUB, ODT
+sound_and_video_formats | sound and video formats | parent: file types (pop 3) | MP3, MP4, WAV, MOV, AVI, MKV, FLAC, WMV, MPEG, midi, OGG, AIFF
+malicious_programs | malicious programs | parent: cybersecurity words (pop 3) | virus, ransomware, spyware, worm, trojan, adware, keylogger, backdoor, rootkit
+ways_to_prove_who_you_are | ways to prove who you are | parent: cybersecurity words (pop 3) | password, CAPTCHA, MFA, two-factor, authentication, biometric, passkey, token, certificate, security key, digital signature
+tricks_that_fool_people | tricks that fool people | parent: cybersecurity words (pop 3) | deepfake, phishing, social engineering, scam, spear phishing, smishing, vishing, pharming, tailgating, clickjacking
+chip_makers | chip makers | parent: tech companies (pop 2) | Intel, Nvidia, Samsung, TSMC, ASML, AMD, Qualcomm, ARM
+app_makers | app makers | parent: tech companies (pop 2) | Netflix, Meta, Uber, Spotify, Facebook, Twitter, Snap, Zoom, Dropbox, ByteDance, Yahoo
+gadget_makers | gadget makers | parent: tech companies (pop 2) | Apple, Samsung, Sony, Huawei, Xiaomi, Lenovo, Nokia, HP, Nintendo, dell
+kinds_of_machines | kinds of machines | parent: computers (pop 1) | laptop, notebook, desktop, PC, server, Mac, mainframe, supercomputer
+telephone_extras | telephone extras | parent: phone features (pop 2) | voicemail, speed dial, conference call, missed call, caller ID, call waiting, speakerphone, call forwarding, visual voicemail, call barring
+assistants_and_apps | assistants and apps | parent: ai words (pop 2) | Alexa, co-pilot, GPT, Siri, Gemini, image generator, ChatGPT, Claude, Midjourney
+inside_a_model | inside a model | parent: ai words (pop 2) | token, parameter, transformer, embedding, perceptron, tokenizer, context window, softmax, latent space, attention mechanism
+old_ways_to_hear_music | old ways to hear music | parent: retro tech (pop 2) | Walkman, Discman, boombox, reel-to-reel, CD player, eight-track, MiniDisc, tape recorder, vinyl record, cassette
+old_computer_gear | old computer gear | parent: retro tech (pop 2) | dial-up, modem, Palm Pilot, punch card, floppy disk, Zip drive, CRT monitor, dot matrix printer, Commodore 64, Atari, ZX Spectrum, BBC Micro
+old_ways_to_keep_in_touch | old ways to keep in touch | parent: retro tech (pop 2) | walkie-talkie, two-way radio, pager, telex, rotary phone, answering machine, fax machine, telegraph, payphone, flip phone, Nokia 3310
+screen_types | screen types | parent: display tech (pop 4) | LED, LCD, OLED, QLED, plasma, CRT, e-ink, AMOLED, microLED, VFD, Nixie tube, liquid crystal
+display_specs | display specs | parent: display tech (pop 4) | pixel, widescreen, aspect ratio, 4K, 8K, HD, Full HD, HDR, refresh rate, resolution, 1080p, 720p
+renewable_sources | renewable sources | parent: energy sources (pop 2) | hydro, solar power, hydropower, hydroelectric power, geothermal, biomass, biofuel, hydrogen, biogas, solar, wind, tidal
+buried_fuels | buried fuels | parent: energy sources (pop 2) | coal, diesel, peat, oil, natural gas, lignite, anthracite, petroleum, tar sands, kerosene, shale gas, oil shale
+semiconductor_devices | semiconductor devices | parent: electronic parts (pop 4) | transistor, LED, diode, integrated circuit, microchip, photodiode, Zener diode, thyristor, MOSFET, chip, microprocessor, silicon chip
+passive_components | passive components | parent: electronic parts (pop 4) | capacitor, resistor, transformer, inductor, potentiometer, thermistor, varistor, photoresistor, LDR, ferrite bead, trimmer, tantalum capacitor
+maker_kit | maker kit | parent: electronic parts (pop 4) | heat sink, breadboard, jumper wire, Arduino, Raspberry Pi, microcontroller, sensor, solder, wire, buzzer, 555 timer
+electrical_problems | electrical problems | parent: power grid words (pop 4) | blackout, brownout, surge, outage, power cut, load shedding, power failure, black start
+engine_parts | engine parts | parent: machine parts (pop 4) | crankshaft, camshaft, piston, valve, flywheel, gasket, fan belt, cylinder, cam, clutch, piston ring, connecting rod
+bridge_supports | bridge supports | parent: bridge parts (pop 3) | foundation, buttress, bearing, caisson, abutment, footing, piling, wing wall, bearing pad, Anchorage, pier, pier cap
+mechanical_forces | mechanical forces | parent: engineering (pop 3) | load, stress, strain, tension, torque, friction, fatigue, creep, yield strength
+load_bearing_supports | load-bearing supports | parent: engineering (pop 3) | buttress, beam, arch, girder, truss, cantilever, rebar, strut, caisson
+polar_vehicles | polar vehicles | parent: antarctic research station (pop 3) | snowmobile, sno-cat, sledge, snowcat, supply plane, research vessel, ski plane, Hagglund, snow tractor, LC-130, Pisten Bully
+telescope_parts | telescope parts | parent: observatory (pop 2) | tripod, aperture, eyepiece, mount, mirror, lens, finderscope, CCD camera, equatorial mount, focuser, clock drive, dew shield
+famous_stargazing_sites | famous stargazing sites | parent: observatory (pop 2) | Hubble, Mauna Kea, Arecibo, Palomar, Jodrell Bank, Keck, Lick Observatory, Yerkes, Greenwich, Mount Wilson, Very Large Telescope, Griffith
+experiment_glassware | experiment glassware | parent: science lab (pop 2) | flask, test tube, pipette, burette, graduated cylinder, desiccator, beaker, Petri dish, culture dish, Erlenmeyer flask, slide, coverslip
+protective_equipment | protective equipment | parent: science lab (pop 2) | gloves, eyewash, fire extinguisher, fire blanket, safety goggles, goggles, fume hood, safety shower, safety glasses, white coat
+parts_of_an_experiment | parts of an experiment | parent: science fair (pop 2) | hypothesis, educated guess, hunch, observation, variable, conclusion, replication, independent variable, dependent variable, control group, null hypothesis, sample size
+steps_of_an_investigation | steps of an investigation | parent: scientific method (pop 3) | hypothesis, experiment, result, conclusion, analysis, prediction, replication, peer review, question, background research
+statistics_terms | statistics terms | parent: scientific method (pop 3) | bias, sample, correlation, causation, null hypothesis, p-value, sample size, outlier, randomization, confounding variable, standard deviation, meta-analysis
+languages_of_southern_africa | languages of southern africa | parent: african languages (pop 4) | Afrikaans, Zulu, Xhosa, Shona, Sesotho, Tswana, Setswana, Ndebele, Swazi, Tsonga, Venda, Nama
+languages_of_west_africa | languages of west africa | parent: african languages (pop 4) | Hausa, Yoruba, Igbo, Wolof, Twi, Fula, Fulani, Bambara, Akan, Ewe, Fon, Tiv
+languages_of_east_africa | languages of east africa | parent: african languages (pop 4) | Swahili, Amharic, Somali, Oromo, Tigrinya, Kinyarwanda, Luganda, Kikuyu, Chichewa, Kirundi, Luo, Bemba
+typefaces_with_serifs | typefaces with serifs | parent: fonts (pop 4) | Times New Roman, Courier, Georgia, Garamond, Palatino, Baskerville, Bodoni, Cambria, Rockwell, Didot, Caslon, Clarendon
+typefaces_without_serifs | typefaces without serifs | parent: fonts (pop 4) | Arial, Helvetica, Calibri, Verdana, Tahoma, Futura, Gill Sans, Optima, Frutiger, Univers, Century Gothic, Segoe UI
+periodicals | periodicals | parent: things you read (pop 3) | magazine, newspaper, paper, rag, daily, gazette, tabloid, broadsheet, zine, almanac, comic
+literary_works | literary works | parent: things you read (pop 3) | screenplay, script, novel, poem, biography, memoir, essay, libretto, manga, graphic novel, chapbook, diary
+past_tenses_ending_in_silent_e | past tenses ending in silent e | parent: irregular past tenses (pop 3) | ate, gave, wrote, rode, drove, spoke, broke, chose, froze, stole, woke, wore
+i_to_a_past_tenses | i-to-a past tenses | parent: irregular past tenses (pop 3) | swam, ran, began, drank, sang, stank, shrank, sank, sprang
+british_exclamations | british exclamations | parent: polite swears (pop 3) | blimey, crikey, drat, cripes, strewth, blast, bother, cor blimey, flip, ruddy, blooming, dash it
+american_exclamations | american exclamations | parent: polite swears (pop 3) | Jiminy Cricket, jeepers, shucks, dang, darn, heck, jeez, geez, doggone, dagnabbit, consarn, great Scott
+rhyming_word_pairs | rhyming word pairs | parent: silly-sounding words (pop 1) | hocus pocus, hodgepodge, namby-pamby, higgledy-piggledy, topsy-turvy, willy-nilly, wishy-washy, hanky-panky, mishmash, fuddy-duddy, pitter-patter, jiggery-pokery
+archaic_pronouns_and_verb_forms | archaic pronouns and verb forms | parent: old-fashioned english words (pop 4) | thou, thee, dost, thy, thine, ye, hath, doth, wilt, shalt, canst, wert
+old_exclamations | old exclamations | parent: old-fashioned english words (pop 4) | alas, egad, zounds, gadzooks, aye, forsooth, prithee, alack, fie, hark, nay, woe
+old_adverbs_and_prepositions | old adverbs and prepositions | parent: old-fashioned english words (pop 4) | yonder, wherefore, whence, hither, thither, henceforth, anon, betwixt, oft, ere, o'er, ne'er
+food_and_dining_words | food and dining words | parent: words from french (pop 2) | beef, pork, mutton, croissant, vinegar, chef, cuisinier, hors d'oeuvre, menu, restaurant, cuisine, gourmet
+foods_and_flavors | foods and flavors | parent: words from spanish (pop 2) | banana, tomato, avocado, potato, tortilla, vanilla, salsa, cilantro, taco, burrito, guacamole, barbecue
+wild_west_words | wild west words | parent: words from spanish (pop 2) | rodeo, mustang, pinto, lasso, buckaroo, vamoose, desperado, stampede, bonanza, ranch
+italian_food_words | italian food words | parent: words from italian (pop 2) | cappuccino, espresso, broccoli, zucchini, artichoke, pasta, spaghetti, lasagna, pizza, pistachio, salami
+musical_terms | musical terms | parent: words from italian (pop 2) | piano, pianoforte, solo, trio, maestro, virtuoso, diva, soprano, prima donna, opera, tempo, bravo
+german_foods_and_drinks | german foods and drinks | parent: words from german (pop 2) | kohlrabi, pretzel, pumpernickel, muesli, hamburger, schnapps, bratwurst, strudel, sauerkraut, lager, delicatessen, noodle
+food_and_drink_words | food and drink words | parent: words from dutch (pop 4) | cookie, scone, gin, brandy, coleslaw, cruller, pickle, gherkin, waffle, booze
+ships_and_sailing_words | ships and sailing words | parent: words from dutch (pop 4) | yacht, sloop, buoy, cruise, keelhaul, freight, skipper, dock, hoist, iceberg, trawl, reef
+tech_blends | tech blends | parent: portmanteau words (pop 2) | avionics, blog, weblog, podcast, vlog, modem, malware, camcorder, emoticon, webinar, cyborg, netizen
+entertainment_blends | entertainment blends | parent: portmanteau words (pop 2) | sitcom, biopic, docudrama, mockumentary, infomercial, dramedy, edutainment, telethon, romcom, simulcast
+fruit_shades | fruit shades | parent: colors named after foods (pop 2) | lemon, tangerine, mandarin, banana, grape, cherry, mango, pomegranate, persimmon, tomato, avocado, blueberry
+drink_shades | drink shades | parent: colors named after foods (pop 2) | coffee, cocoa, espresso, wine, java, joe, vino, burgundy, claret, mocha
+reading_material | reading material | parent: things made of paper (pop 3) | magazine, newspaper, paper, rag, daily, gazette, pamphlet, leaflet, flyer, book, comic book
+plants_with_spines | plants with spines | parent: prickly things (pop 3) | hawthorn, monkey puzzle, cactus, thistle, nettle, stinging nettle, gorse, furze, whin, yucca, agave, bramble
+animals_covered_in_spikes | animals covered in spikes | parent: prickly things (pop 3) | sea urchin, uni, hedgehog, porcupine, echidna, thorny devil, pufferfish, blowfish, fugu, globefish, tenrec, spiny anteater
+confectionery | confectionery | parent: sweet foods (pop 1) | chocolate, candy, lollipop, lolly, marshmallow, caramel, gummy bear, fudge, toffee, cotton candy, nougat, marzipan
+baked_treats | baked treats | parent: sweet foods (pop 1) | cake, cupcake, brownie, pie, cookie, doughnut, baklava, basbousa, kanafeh
+fermented_foods_and_drinks | fermented foods and drinks | parent: sour foods (pop 3) | yogurt, sour cream, buttermilk, kefir, sourdough, kimchi, kombucha, kvass, sauerkraut, umeboshi
+cured_fish | cured fish | parent: salty foods (pop 2) | lox, smoked salmon, kippers, anchovies, salt cod, salted herring, bottarga, mojama, rollmops, bacalao
+bar_snacks | bar snacks | parent: salty foods (pop 2) | popcorn, beef jerky, potato chips, pretzels, crackers, pork rinds, olives, chips, salted peanuts, saltines
+capsicums | capsicums | parent: spicy foods (pop 2) | cayenne, jalapeño, habanero, serrano, chipotle, scotch bonnet, bird's eye chili, ghost pepper, bhut jolokia, Carolina Reaper, aleppo pepper, chili
+japanese_ingredients | japanese ingredients | parent: umami foods (pop 3) | soy sauce, miso, nori, kombu, shiitake, natto, dashi, bonito flakes, tamari, katsuobushi, shoyu, koji
+ocean_ingredients | ocean ingredients | parent: umami foods (pop 3) | fish sauce, seaweed, nori, dulse, kombu, oyster sauce, garum, anchovies, bonito flakes, katsuobushi, shrimp paste, colatura
+dairy_products | dairy products | parent: creamy foods (pop 3) | ricotta, yogurt, milkshake, sour cream, whipped cream, cream cheese, kefir, clotted cream, crème fraîche, skyr, quark, labneh
+creamy_desserts | creamy desserts | parent: creamy foods (pop 3) | cheesecake, pudding, custard, mousse, gelato, tiramisu, panna cotta, crème brûlée, blancmange, syllabub, buttercream, ganache
+sauces_and_dips | sauces and dips | parent: creamy foods (pop 3) | mayonnaise, hummus, tahini, béchamel, guacamole, hollandaise, tzatziki, baba ganoush, velouté
+fragrant_flowers | fragrant flowers | parent: things that smell good (pop 2) | magnolia, lavender, hyacinth, lilac, jasmine, sweet pea, gardenia, freesia, roses, wisteria, frangipani, ylang-ylang
+smells_from_the_kitchen | smells from the kitchen | parent: things that smell good (pop 2) | lemon, coffee, bacon, toast, chocolate, mint, cinnamon, vanilla, java, joe, popcorn, barbecue
+woody_and_resin_scents | woody and resin scents | parent: things that smell good (pop 2) | cedar, eucalyptus, gum tree, sandalwood, campfire, frankincense, myrrh, oud, vetiver, pine tree, patchouli
+aircraft | aircraft | parent: things that fly (pop 1) | plane, jet, helicopter, chopper, glider, drone, blimp, zeppelin, fighter jet, airship, hot air balloon, hang glider
+winged_creatures | winged creatures | parent: things that fly (pop 1) | bat, eagle, owl, seagull, gull, albatross, bee, fly, butterfly, moth, dragonfly, Pterodactyl
+polar_and_frozen_places | polar and frozen places | parent: cold things (pop 1) | tundra, North Pole, Yukon, Arctic, Antarctica, Greenland, Svalbard, Siberia, Alaska, Vostok Station, Oymyakon
+food_chillers | food chillers | parent: cold things (pop 1) | cooler, esky, refrigerator, fridge, icebox, freezer, dry ice, ice pack, ice cube, walk-in freezer
+dark_foods_and_drinks | dark foods and drinks | parent: black things (pop 2) | coffee, licorice, soy sauce, java, joe, black olive, caviar, squid ink
+dark_creatures | dark creatures | parent: black things (pop 2) | bat, crow, blackbird, beetle, black widow, panther, black cat, Raven
+toys_and_characters | toys and characters | parent: things with eyes (pop 3) | scarecrow, teddy bear, doll, monster, Cyclops, mask, snowman, Argus, Mr. Potato Head, Sauron
+pairs_you_wear | pairs you wear | parent: things that come in pairs (pop 2) | pajamas, trousers, slacks, jeans, shorts, jodhpurs, earrings, gloves, cufflinks, pince-nez, tights, clogs
