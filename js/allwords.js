@@ -12,6 +12,39 @@ const FLAGS = [['', 'any flags'], ['adult', 'adult'], ['sensitive', 'sensitive']
 const SHOW = [['', 'all words'], ['on', 'enabled only'], ['off', 'disabled only'], ['roots', 'roots only'], ['alias', 'aliases only'], ['orphan', 'not in any theme']];
 const STATUS = [['', 'any status'], ['new', 'new (by hand)'], ['gen', 'generated, not reviewed'], ['rev', 'reviewed']];
 
+// Column widths: every column but "themes" has a width (the default below, or one set by dragging the edge of its heading; double-click fits it to its text,
+// shift + double-click goes back to the default). "themes" takes the space that is left, so the table fits the screen and only that column loses text. Widths are kept in the browser.
+const COLS = { on: 28, text: 150, gloss: 130, aliases: 170, aliasof: 130, themes: 0, pos: 82, type: 76, rec: 76, flags: 0, status: 80 };
+const MIN_THEMES = 12;
+let FLAGS_W = 54, W = {};
+try { W = JSON.parse(localStorage.getItem('awCols') || '{}') || {}; } catch { W = {}; }
+const saveW = () => { try { localStorage.setItem('awCols', JSON.stringify(W)); } catch { /* storage unavailable */ } };
+const colW = k => W[k] || (k === 'flags' ? FLAGS_W : COLS[k]) || 0;
+const tableMin = () => Object.keys(COLS).reduce((n, k) => n + (k === 'themes' ? (W.themes || MIN_THEMES) : colW(k)), 0);
+function colGrip(k, thEl) {
+  const w = colW(k);
+  if (w) thEl.style.width = w + 'px';
+  const tbl = () => thEl.closest('table'), apply = px => { thEl.style.width = px + 'px'; if (tbl()) tbl().style.minWidth = tableMin() + 'px'; };
+  thEl.append(h('span.colgrip', { title: 'Drag to change the width; double-click to fit the text; shift + double-click for the default',
+    onclick: ev => ev.stopPropagation(),
+    ondblclick: ev => {
+      ev.stopPropagation();
+      if (ev.shiftKey) { delete W[k]; saveW(); A.render(true); return; }
+      const t = tbl(), i = thEl.cellIndex;
+      let fit = thEl.scrollWidth;
+      for (const r of t.rows) { const c = r.cells[i]; if (c && r.cells.length > 4) fit = Math.max(fit, c.scrollWidth); }
+      W[k] = Math.max(24, Math.min(700, Math.ceil(fit) + 2)); saveW(); apply(W[k]);
+    },
+    onmousedown: ev => {
+      ev.preventDefault(); ev.stopPropagation();
+      const x0 = ev.clientX, w0 = thEl.getBoundingClientRect().width; let px = w0;
+      const move = e => { px = Math.max(24, Math.min(700, Math.round(w0 + e.clientX - x0))); W[k] = px; apply(px); };
+      const up = () => { document.removeEventListener('mousemove', move); document.removeEventListener('mouseup', up); saveW(); };
+      document.addEventListener('mousemove', move); document.addEventListener('mouseup', up);
+    } }));
+  return thEl;
+}
+
 const flagList = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]);
 const themeNames = (P, e) => linkIds(P, e).map(id => P.ix.theme.get(id)?.name).filter(Boolean);
 
@@ -53,13 +86,14 @@ export function allWordsView() {
   if (S.page >= pages) S.page = pages - 1;
   const rows = list.slice(S.page * PAGE, (S.page + 1) * PAGE);
 
-  const th = (label, k) => h('th.sortable', { class: S.sort === k ? 'sorted' : '', title: 'Click to sort by ' + label,
-    onclick: () => { S.dir = S.sort === k ? -S.dir : 1; S.sort = k; S.page = 0; A.render(); } }, label, h('span.sortmark', S.sort === k ? (S.dir > 0 ? ' ▲' : ' ▼') : ' ⇅'));
+  const flagWidth0 = Math.max(54, ...rows.map(e => 16 + flagList(e).length * 22 + (e.region.length ? 14 + e.region.join('/').length * 7 : 0)));   // the flags column fits the widest row on the page
+  FLAGS_W = flagWidth0;
+  const th = (label, k, col) => colGrip(col, h('th.sortable', { class: S.sort === k ? 'sorted' : '', title: 'Click to sort by ' + label,
+    onclick: () => { S.dir = S.sort === k ? -S.dir : 1; S.sort = k; S.page = 0; A.render(); } }, label, h('span.sortmark', S.sort === k ? (S.dir > 0 ? ' ▲' : ' ▼') : ' ⇅')));
   const pick = (k, opts) => { const el = select(opts, S[k]); el.onchange = () => { S[k] = el.value; S.page = 0; A.render(); }; return el; };
   const recOpts = [['', 'any rating'], ...[1, 2, 3, 4, 5].map(n => [String(n), 'rating ' + n]), ['0', 'unrated']];
   const flagBadges = e => flagList(e).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase()))
     .concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
-  const flagWidth = Math.max(54, ...rows.map(e => 16 + flagList(e).length * 22 + (e.region.length ? 14 + e.region.join('/').length * 7 : 0)));   // the flags column fits the widest row on the page
   const aliasCell = e => { const as = aliasesOf.get(e.id) || []; return as.length ? h('span', { title: as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ')' : '')).join(', ') }, as.map(a => a.text).join(', ')) : ''; };
   const themesCell = e => { const n = themeNames(P, e); return n.length ? n.slice(0, 3).join(', ') + (n.length > 3 ? ` +${n.length - 3}` : '') : h('span.hint', '(none)'); };
 
@@ -75,8 +109,8 @@ export function allWordsView() {
       h('input.filter', { placeholder: 'filter…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
       pick('in', SCOPE), pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
     pager(),
-    h('div.awrap', {}, h('table.aw', {}, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('Meaning', 'gloss'), th('aliases', 'aliases'), th('alias of', 'alias'), th('themes', 'themes'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'),
-      Object.assign(th('flags', 'flags'), { style: 'width:' + flagWidth + 'px' }), th('status', 'status')),
+    h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('Word', 'text', 'text'), th('Meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('rating', 'rec', 'rec'),
+      th('flags', 'flags', 'flags'), th('status', 'status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.text),
