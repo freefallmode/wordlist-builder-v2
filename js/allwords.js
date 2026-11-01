@@ -5,9 +5,10 @@ import { linkIds, flagKey } from './model.js';
 import { editEntry } from './dialogs.js';
 
 const PAGE = 200;
-const S = { q: '', in: 'wordalias', flag: '', rec: '', status: '', show: '', sort: 'text', dir: 1, page: 0 };
+const S = { q: '', in: 'wordalias', mode: 'contains', flag: '', rec: '', status: '', show: '', sort: 'text', dir: 1, page: 0 };
 
 const SCOPE = [['wordalias', 'search word or alias'], ['word', 'search the word'], ['alias', 'search the alias'], ['meaning', 'search the meaning'], ['theme', 'search the themes'], ['any', 'search everything']];
+const MODES = [['contains', 'contains'], ['starts', 'starts with'], ['exact', 'exactly']];
 const FLAGS = [['', 'any flags'], ['adult', 'adult'], ['sensitive', 'sensitive'], ['tm', 'trademark'], ['vulgar', 'vulgar'], ['region', 'region-specific'], ['none', 'no flags']];
 const SHOW = [['', 'all words'], ['on', 'enabled only'], ['off', 'disabled only'], ['roots', 'roots only'], ['alias', 'aliases only'], ['orphan', 'not in any theme']];
 const STATUS = [['', 'any status'], ['new', 'new (by hand)'], ['gen', 'generated, not reviewed'], ['rev', 'reviewed']];
@@ -54,7 +55,8 @@ function otherNames(P, e, aliasesOf) { const r = e.aliasOf && P.ix.entry.get(e.a
 function matches(P, e, aliasesOf) {
   if (S.q) {
     const q = S.q.toLowerCase();
-    const inWord = () => e.text.toLowerCase().includes(q), inMeaning = () => (e.gloss || '').toLowerCase().includes(q), inTheme = () => themeNames(P, e).some(n => n.toLowerCase().includes(q)), inAlias = () => otherNames(P, e, aliasesOf).some(n => n.toLowerCase().includes(q));
+    const has = t => { t = t.toLowerCase(); return S.mode === 'exact' ? t === q : S.mode === 'starts' ? t.startsWith(q) : t.includes(q); };
+    const inWord = () => has(e.text), inMeaning = () => has(e.gloss || ''), inTheme = () => themeNames(P, e).some(has), inAlias = () => otherNames(P, e, aliasesOf).some(has);
     if (!(S.in === 'word' ? inWord() : S.in === 'alias' ? inAlias() : S.in === 'wordalias' ? inWord() || inAlias() : S.in === 'meaning' ? inMeaning() : S.in === 'theme' ? inTheme() : inWord() || inAlias() || inMeaning() || inTheme())) return false;
   }
   if (S.flag === 'region' ? !e.region.length : S.flag === 'none' ? (flagList(e).length || e.region.length) : S.flag && !e[S.flag]) return false;
@@ -107,9 +109,9 @@ export function allWordsView() {
       h('div.actions', {}, h('button', { onclick: () => { A.view = null; A.render(); } }, '← Overview'))),
     h('div.tools.wrap', {},
       h('input.filter', { placeholder: 'filter…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
-      pick('in', SCOPE), pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
+      pick('in', SCOPE), pick('mode', MODES), pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
     pager(),
-    h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('Word', 'text', 'text'), th('Meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('rating', 'rec', 'rec'),
+    h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('word', 'text', 'text'), th('meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('rating', 'rec', 'rec'),
       th('flags', 'flags', 'flags'), th('status', 'status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
