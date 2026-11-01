@@ -4,7 +4,7 @@
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, effRec, popIn, themeProfile, linkIds, POS, TYPES, REGIONS } from './model.js';
+import { eff, effRec, popIn, themeProfile, dialectOf, linkIds, POS, TYPES, REGIONS } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 
 export const DEFAULT_EXPORT = {
@@ -183,7 +183,7 @@ export function buildExport(P, opt0 = {}) {
 
   const file = {
     v: 3, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
-    options: o, regions, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
+    dialect: dialectOf(P), options: o, regions, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
     // difficulty = median difficulty of the theme's roots; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
     themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions', 'popularity', 'counts', 'range'].concat(o.notes ? ['note'] : []),
     themes: themeRows,

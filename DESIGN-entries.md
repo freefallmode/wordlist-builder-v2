@@ -152,5 +152,5 @@ Decisions taken while building the weather prototype (2026-11-01), with the reas
 
 **Not yet done**
 - Phase 1 (tag spelling aliases US/UK; done 2026-11-01: only the dialect pairs need a tag, the other untagged spellings are variants and need none), phase 2 (regional words, root flips), phase 3 (the remaining ~1,500 synonym aliases into groups or entries; the 643 alias-only theme links), phase 4 (families; done 2026-11-01: the earlier synonym and regional passes left only 92 form aliases and three in-theme pairs that were one answer in two forms, which are now form aliases; no further family work is needed until generated forms are wanted), phase 5 (theme splits).
-- The default-dialect setting in the web app.
+- (Done 2026-11-01) The default-dialect setting: Settings → Library → Default dialect (saved with the library as settings.dialect; English defaults to US). The theme word table shows the regional or spelling alias tagged with the dialect instead of the root; the export carries it as top-level dialect. No data moves.
 - Checking that the game can use a parent theme and its split-off child together, and updating the game to export format 3.

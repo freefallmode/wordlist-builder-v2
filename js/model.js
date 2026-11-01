@@ -133,6 +133,15 @@ export function themeProfile(P, tid) {
   return { counts, reach: n, median: set || auto, auto, set, lo: n >= 4 ? sorted[3] : 0, hi: n >= 4 ? sorted[n - 4] : 0 };
 }
 
+// The library's default dialect (a setting of the library, so each language can have its own): which regional or spelling variant the app shows for a word that has one.
+// It never moves data: the root stays the root. English defaults to US; other languages have none until it is set.
+export const dialectOf = P => P.settings?.dialect ?? (P.lang === 'en' ? 'US' : '');
+export function dialectMember(P, e) {
+  const d = dialectOf(P);
+  if (!d || e.aliasOf || e.region.includes(d)) return e;
+  return (P.ix.aliases.get(e.id) || []).find(a => (a.aliasKind === 'regional' || a.aliasKind === 'spelling') && a.region.includes(d)) || e;
+}
+
 // ---------- edits ----------
 
 export function linkEntry(P, e, tid, rec = 0) { e.th[tid] = rec; }

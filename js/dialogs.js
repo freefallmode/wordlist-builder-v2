@@ -3,7 +3,7 @@ import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './d
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
-  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, themeProfile, descendants } from './model.js';
+  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, themeProfile, dialectOf, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf } from './export.js';
@@ -443,19 +443,21 @@ export async function showSettings() {
   const key = h('input', { type: 'password', value: getKey(), placeholder: 'sk-ant-…', autocomplete: 'off' });
   const remember = check('Remember the key in this browser (localStorage)', !!localStorage.getItem('wlb2-key'));
   const f = { model: select(MODELS, getModel()), lang: select(LANGUAGES, P.lang), min: h('input', { type: 'number', value: S.minWords, min: 1 }),
-    maxW: h('input', { type: 'number', value: S.maxWords, min: 1 }), maxL: h('input', { type: 'number', value: S.maxLen, min: 3 }) };
+    maxW: h('input', { type: 'number', value: S.maxWords, min: 1 }), maxL: h('input', { type: 'number', value: S.maxLen, min: 3 }),
+    dialect: select([['', '(none)'], ...REGIONS.map(c => [c, c])], dialectOf(P)) };
   const body = h('div.form', {},
     h('h3.sect', 'General (this app, all libraries)'),
     field('Anthropic API key', key, 'Used only from this browser, straight to the Anthropic API. Kept for this session unless you tick remember.'), remember,
     field('Model for generation', f.model),
     h('h3.sect', 'Library (saved with this library)'),
     field('Language', f.lang, 'The language of the words in this library. The frequency check and the generation prompt are written for English.'),
+    field('Default dialect', f.dialect, 'Which variant the word tables show when a word has regional or spelling variants (US: color, UK: colour). Only the display changes; no data moves. Each library has its own, as languages spell differently.'),
     h('div.three', {}, field('Minimum words per theme', f.min), field('Longest entry, in words', f.maxW), field('Longest entry, in letters', f.maxL)));
   return dialog('Settings', body, [{ label: 'Cancel' }, { label: 'Save', primary: true, action: () => {
     setKey(key.value, remember.querySelector('input').checked);
     setModel(f.model.value);
     P.lang = f.lang.value;
-    Object.assign(S, { minWords: +f.min.value || 4, maxWords: +f.maxW.value || 4, maxLen: +f.maxL.value || 20 });
+    Object.assign(S, { dialect: f.dialect.value, minWords: +f.min.value || 4, maxWords: +f.maxW.value || 4, maxLen: +f.maxL.value || 20 });
     A.changed();
   } }]);
 }

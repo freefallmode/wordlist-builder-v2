@@ -2,7 +2,7 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, rateUnrated, showValidation, showExport, showSettings, openPath } from './dialogs.js';
@@ -293,7 +293,7 @@ function entryTable(t) {
   const formsOf = new Map();   // a word's forms (rainy for rain) are not rows of their own: the row shows the form this theme uses, with the root after an arrow
   for (const a of P.entries) if (a.aliasKind === 'form' && a.aliasOf) { if (!formsOf.has(a.aliasOf)) formsOf.set(a.aliasOf, []); formsOf.get(a.aliasOf).push(a); }
   const shown = e => (!e.aliasOf && P.ix.entry.get(e.use?.[t.id])) || e;
-  const label = e => (!e.aliasOf && e.show?.[t.id]) || shown(e).text;   // what the player sees for this word in this theme
+  const label = e => (!e.aliasOf && e.show?.[t.id]) || (shown(e) !== e ? shown(e) : dialectMember(P, e)).text;   // what the player sees for this word in this theme
   const f = A.filter.toLowerCase();
   const list = pool.filter(e => (A.showOff || e.enabled) && (!f || (e.text + ' ' + e.gloss).toLowerCase().includes(f) || (formsOf.get(e.id) || []).some(a => a.text.toLowerCase().includes(f))));
   const inList = new Set(list.map(e => e.id));
