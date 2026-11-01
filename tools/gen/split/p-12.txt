@@ -1,0 +1,57 @@
+# language-specific internet vocabulary, no wordplay split
+N internet_words
+# data types and structures a programmer stores values in
+S coding_words | data structures and types | 3 | 42299,42300,41505,42301,42337,42338,42314,42315,42351,42352,42353
+# things that go wrong in a program
+S coding_words | coding mishaps | 3 | 7277,42316,42343,42329,42348,42349,42344,42347,62161,42341,42345
+# plain everyday names for body parts
+S inside_the_body | plain names for body parts | 3 | 3196,3197,3253,3265,3266,3271,3284,3286,3304,3254
+# parts of the throat and breathing passages
+S inside_the_body | throat and airway parts | 3 | 3262,3266,3267,3270,3271,3290,3299,3301,3300,3302,3239,3268,3307
+# women among the stars
+S classic_film_stars | leading ladies | 3 | 12957,12959,12963,12964,12966,12967,12968,12970,12976,12977,12978,12979,12985,12986,12987,12988,12989,12990,13005,13006,13007,13008,13009,13010,13011,13012,13013,13014,13015,13016
+# stars of the era before sound films
+S classic_film_stars | silent movie stars | 3 | 12905,12973,12974,12975,12976,12989,12990,12992,12995,13008,13009
+# tools worked by hand, not powered
+S woodworking_words | manual woodworking tools | 3 | 318,323,324,327,329,331,4844,4848,4850,4851,4852,12056,23741,55280,61832,61833
+# ways two pieces of wood are fitted together
+S woodworking_words | wood joints | 3 | 46036,46037,46038,40224,46045,46046,50052,46054,61836
+# trees that grow wild in Britain
+S trees | trees native to Britain | 3 | 1628,1632,1633,1634,1635,1636,1654,1652,1651,1675,1679,1691,1683,1692,64792,1680,1648
+# steps and ideas in designing an experiment
+S science_fair | parts of an experiment | 3 | 7447,7448,7449,7451,7453,7457,7461,7467,7468,7469,7475,7478,49976,7495
+# slang vocabulary, not wordplay
+N australian_slang
+# kit a diver wears or carries
+S scuba_words | underwater gear | 3 | 24472,29352,43275,43343,43344,43345,43346,43347,43349,43350,43351,43352,43353,43375,43358,43371,43379,61569,61575
+# composers who lived mostly in the 1900s
+S composers | twentieth-century composers | 3 | 11394,11393,11392,11397,11399,11400,11401,11402,11403,11405,11411,11412,11413,11414,11415,11422,11423,11424,11425,11426,11427,11433,11434,11435
+# stoppages and pressure tactics by workers
+S protest_words | workplace disputes | 3 | 28199,35333,35345,35351,35344,35368,35367,61410,61411,61412
+# games where someone chases the others
+S outdoor_games | chasing games | 3 | 5958,46120,46121,46124,46129,46130,46131,46132,46135
+# things bought for a dog
+S pet_supplies | canine gear | 3 | 10159,25527,50834,50835,50836,50845,50842,50851,50858,50847,50852,50853,59994,50864,25479
+# things bought for a cat
+S pet_supplies | feline gear | 3 | 39715,50839,50840,50855,50856,50859,30489,50860
+# creatures from ancient Greek stories
+S mythical_creatures | greek myth creatures | 3 | 6620,6923,6924,6925,6926,6939,6940,6941,6942,6943,6961,6963
+# kinds of ball the bowler can send down
+S cricket_terms | bowling deliveries | 3 | 42862,42863,42864,42869,42870,42881,50381,42882,42865,42866
+# people with a job in a match
+S cricket_terms | players and officials | 3 | 42848,42847,42859,42860,42805,42875,42879,42871
+# toys sold under a brand name
+S toys | branded playthings | 3 | 5924,5925,5932,5933,5946,5967,5984,5985,40333,45647,46060,46061,46062,46063,46064,46065,46068,46069,46071,46072
+# toys from grandparents' or earlier days
+S toys | old-fashioned playthings | 3 | 5926,5928,5929,5930,5931,5949,64356,46059,5952,46073,5989,46066
+# fish that British anglers call coarse fish
+S freshwater_fish | coarse fish | 3 | 1223,1224,1225,1238,1241,1242,1243,1244,1245,1274,8732,8733,8734,59953
+# fish chased by North American anglers
+S freshwater_fish | north american game fish | 3 | 1226,8719,8720,8721,8722,1276,8728,8730,8731,1264,51289,1268
+# machines that carry people or loads through the air
+S things_that_fly | aircraft | 3 | 2709,2711,2712,2713,2736,2750,2751,34601,39497,29348,39775,39776,39772,47254,39769
+# real animals with wings
+S things_that_fly | winged creatures | 3 | 993,1062,1063,1071,1072,1097,1342,1344,1348,1349,1358,1561,1622,27973
+# birds that are active at night
+S nocturnal_animals | birds awake after dark | 3 | 1063,1096,1130,8096,8098,8231,9816,9817,9818
+N us_states

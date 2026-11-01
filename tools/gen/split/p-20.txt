@@ -1,0 +1,58 @@
+N insects_and_bugs
+# tools used for sewing and tailoring
+S fabrics_and_sewing | sewing tools | 2 | 4800,5020,5026,5027,5057,5058,5056,5067,5068,5073,5074,5088,5091,5097,5098,5099,5080,5063,5093,64282
+N family_and_friends
+# stadiums in the USA
+S famous_stadiums | american sports venues | 2 | 44390,44391,44392,44393,44394,44395,44396,44397,44398,44415,61759,61760,61761,61762,61763
+# football grounds in England
+S famous_stadiums | english football grounds | 2 | 44383,44384,44385,44408,62822,62823,61746,61747,61748
+# rugby grounds
+S famous_stadiums | rugby grounds | 3 | 44400,44403,44423,44424,61755,61756,61753,61754
+# sciences that study animals
+S science_fields | sciences of animals | 3 | 42103,42108,42109,42114,42115,42116,42125,42126,42127,42128,42137,58249,62134,62135,45893
+N furniture
+N french_phrases_in_english
+# surf slang a surfer would say
+S surfing_words | surfer slang | 3 | 27526,29016,16839,43400,43401,43407,43384,43388,43409,43417,43396,50020
+# things a surfer does on a wave
+S surfing_words | surf moves | 3 | 43402,43403,43413,43414,43415,43416,43399,43395,50072,43394,43388
+N radio_words
+# things that go wrong with the electricity supply
+S power_grid_words | electrical problems | 2 | 29240,49822,49828,50003,49832,49823,49839,62276
+# parts that hold a bridge up
+S bridge_parts | bridge supports | 3 | 50078,49867,7443,49876,49878,62295,6571,62299,49880,49881,7405,6546,50011
+# colors named after fruit
+S colors_named_after_foods | fruit shades | 2 | 74,78,79,88,90,92,95,100,105,110,111,348,349,352,354,357,367,7687,7699
+# colors named after drinks
+S colors_named_after_foods | drink shades | 3 | 226,228,231,875,961,962,965,7691,38561,38629
+# peoples of the ancient world
+S ancient_civilizations | ancient peoples | 3 | 6627,6628,6629,6630,6631,6632,6633,6634,6635,6636,6637,6642
+# famous ancient buildings and monuments
+S ancient_civilizations | famous ruins and monuments | 2 | 2320,2334,2335,2516,6620,6619,6659,6657,6653,60560,6654,6656,6600
+# characters from Nintendo games
+S video_game_characters | nintendo characters | 2 | 12557,45814,45816,45817,45818,45819,45820,45821,40151,40094,5789,45840,45839,45847,45846,61806
+# the bad guys and monsters
+S video_game_characters | villains and monsters | 3 | 45818,45839,45841,61804,45853,61808,45830,45844
+# female characters
+S video_game_characters | women of gaming | 3 | 45817,45819,45821,45823,45843,45845,45849,45850
+N hidden_names
+# books based on facts
+S book_genres | factual books | 3 | 4502,4503,6475,6477,6478,12617,13159,13160,13161
+# genres set in imagined worlds or futures
+S book_genres | speculative genres | 3 | 12564,12591,12566,13169,13176,13175,13170,13171,13162,13167
+# stories built on a puzzle, crime or fear
+S book_genres | tales of suspense | 3 | 12567,12561,12605,13158,13163,13164,13177,13178,13179,12560,12617
+# ships and boats of a navy
+S military_vehicles | naval vessels | 3 | 2822,4452,21234,21471,34572,34574,34577,34597,34703,34705,34706,49091
+# flies through the air
+S military_vehicles | military aircraft | 3 | 21468,34601,34602,34608,47256,47257,49088,49089,49090,49100,49101,60764,49108
+# drives on the ground in battle
+S military_vehicles | army ground vehicles | 3 | 3125,49096,49097,49098,49099,49107,60761,60762,60763,49095,49260,49094,49085,49105,49106,3123,49084,49093,49083
+# people you meet in a casino
+S casino_words | people in a casino | 3 | 4101,13876,45205,45206,45213,45209,45210,45216,45229,45235
+# words about money at the table
+S casino_words | money terms in gambling | 3 | 34173,45222,45223,45224,45212,45211,34166,45226,45228,45236,5704,20015,45207,44847,45238
+# plants and land features of the African bush
+S safari_words | african landscape | 3 | 1657,1661,1662,1922,29483,30028,48726,56408,60731,37510,31651,48725
+# words borrowed from Afrikaans and other southern African languages
+S safari_words | southern african words | 4 | 29472,29482,29483,48726,48738,48739,57646,60731,20128,56408

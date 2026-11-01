@@ -1,0 +1,50 @@
+N cities
+N birds
+N nutrition
+N blank_room
+N fitness
+# discoveries that changed medicine or biology
+S famous_discoveries | medical discoveries | 3 | 14460,14590,15121,33743,40931,40965,42076,42079,42080,42085,42094,42095,42096,42083,42084
+# discoveries about planets, stars and the universe
+S famous_discoveries | astronomy discoveries | 3 | 25,26,21099,7138,7143,41307,42077,42078,42086,42087,42088,42089,42090,62128,62129,62130,42082
+# discoveries about matter, particles, forces and energy
+S famous_discoveries | physics discoveries | 3 | 7132,21100,21101,21102,40593,40618,40775,40776,40777,40813,42081,42092,42093,42098,42099,42100,24214
+# cheeses made in Britain
+S cheeses | british cheeses | 3 | 238,246,17930,17931,17932,17933,59443,59444
+N pasta_rice_and_grains
+# kit that moves data between devices
+S networking | connecting hardware | 3 | 7298,7299,7279,42438,42439,42451,42452,42447,42444,42463
+# rule sets that computers use to talk, usually written as acronyms
+S networking | internet protocols | 3 | 42468,42477,42478,42481,42480,42479,42470,42475,42466,42482,42483
+# the parts of a telescope and its mount
+S observatory | telescope parts | 3 | 49932,49933,49934,41074,49935,49958,12065,12063,49956,49963,49939,62309
+# well-known sites for looking at the sky
+S observatory | famous stargazing sites | 3 | 7168,36531,49945,49946,49947,49948,49949,49950,49951,49952,49953,62952
+# vegetables that are botanically the fruit of the plant
+S vegetables | vegetables that are really fruits | 3 | 110,400,403,409,411,412,415,433,453,457
+# words about tasting and describing a wine
+S wine_words | tasting notes | 3 | 3323,14757,39215,53846,53854,53855,53856,53857,53864,59870,53845,53853
+# steps, processes and materials in making wine
+S wine_words | winemaking terms | 3 | 25084,40536,53858,53859,53861,59859,59860,59858,59863,59862,59866,59872,59873,53860,53862
+# items worn on the body that come as a pair
+S things_that_come_in_pairs | pairs you wear | 3 | 3674,4864,4865,4866,4867,4936,4951,4956,4963,5016,6225,16572,23349,24409,24491,24767,24782,24783,24786,34144,50008
+# the people who teach, run or administer a university
+S university_words | academic staff | 3 | 32569,26391,25112,33090,34873,34881,34882,34883,34884,34885,61282
+# formats for images
+S file_types | picture formats | 3 | 12789,29212,36148,42486,42487,42502,42503,42512,42513,42508
+# formats for text, spreadsheets, slides and books
+S file_types | document formats | 3 | 42485,42490,42491,42492,42493,42496,42514,42515,42516,42509,62175,42518
+# formats for audio and moving pictures
+S file_types | sound and video formats | 3 | 42488,42489,42499,42500,42501,42510,42511,42517,42519,50053,62168,62174,62176
+# the physical parts of a ballpark
+S baseball_terms | ballpark parts | 3 | 35032,42688,42806,42812,42813,42814,42815,42837,42838,42839,58913
+# words about throwing the ball
+S baseball_terms | pitching terms | 3 | 42806,42808,42809,42822,42823,42824,42841,42815,42829,42833,42826,50069,42817,42828,42843,50211,42840
+# words about swinging the bat and scoring
+S baseball_terms | hitting terms | 3 | 42799,42807,42810,42802,42803,42821,42827,42825,42834,42842,42844,42831,42835,42816
+# flowers that grow in grassland
+S meadow | grassland blooms | 3 | 1695,1701,1723,1727,1732,1740,1747,15689,28281,30354,30355,30356,30360,30364,30365,30367,30492,60471,60472,60474,60470,1776
+# small insects seen in grass
+S meadow | minibeasts | 3 | 1342,1348,1351,1353,1354,1355,1358,1383,9036,60473
+N air_blank
+N prepositions

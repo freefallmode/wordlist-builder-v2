@@ -1,0 +1,50 @@
+N illnesses
+N school
+N horses
+# clothing a player would pull on over the top in cold or wet weather
+S sports_clothing | layers for cold weather | 3 | 4878,4898,4900,4901,4903,4928,4929,24372,24381,24781,48881,48632,4894
+# boats and ships driven by sails
+S boats_and_ships | wind-powered vessels | 3 | 2793,2794,2815,2816,2817,2818,2821,2842,2843,2849,2783,2780,2814,2841
+# craft moved by people with oars, poles or paddles
+S boats_and_ships | human-powered craft | 3 | 2781,2782,2785,2795,2819,2820,2813,2840,2839,2845,2792
+N waterbirds
+# terms for online promotion
+S advertising_words | online promotion terms | 3 | 35230,35239,35240,35255,61372,61374,61375,61378,61379,35249,35248,61370
+N garden
+# kinds of shot or stroke a player can play
+S cue_sports_terms | cue strokes | 3 | 42723,42744,43120,43125,43126,43127,61564,43119,43117,43118,61561,43121,43116,61565
+# the gods and goddesses of Hinduism
+S hinduism_words | hindu gods and goddesses | 3 | 21962,21963,21964,21965,21967,21968,21969,21970,21971,21974,21975,21995
+# abstract spiritual ideas and beliefs
+S hinduism_words | spiritual concepts | 3 | 4343,15950,34423,34518,61229,61230,61234,15660,34498,61232,61233
+# publications that come out regularly
+S things_you_read | periodicals | 3 | 4567,4568,4569,4570,4571,4624,4635,4557,21042,13562,26279
+# works of creative or literary writing
+S things_you_read | literary works | 3 | 6453,6454,6475,6478,6479,12339,6371,6372,13555,13157,13073,25380
+# numbers that summarise a set of data
+S statistics_words | summary measures | 3 | 41448,41669,41670,41671,29429,41683,7506,41700,41694,41685,41686,7231
+# ways of showing data visually or in a table
+S statistics_words | data displays | 3 | 41678,41679,41680,41681,41682,41703,41702,28318,41701,41688
+# chili pepper varieties and fiery capsicums
+S spicy_foods | capsicums | 3 | 18749,18751,18752,18754,18756,18757,18758,18759,18760,762,29499,18774,62456,62457
+# well-known structures a visitor can name
+S tall_things | famous landmarks | 3 | 2310,2311,2312,2313,2314,2315,2328,2337,2367,2370,2375,2376,37043,37090,37708
+# terms used in American campaigns
+S election_words | american campaign terms | 3 | 29494,33317,33322,33326,33331,33336,33340,33341,33327,33332,33333,33318
+# terms used in British campaigns
+S election_words | british campaign terms | 3 | 33319,33337,33339,33342,33329,29436,60977,60976,60982,64101,29331,60983
+# homes of wild mammals
+S animal_homes | homes of wild mammals | 3 | 8081,10148,10149,10151,10152,10154,10155,10156,10171,10172,10173,10179
+# homes and perches for birds
+S animal_homes | homes for birds | 3 | 10147,8421,8491,8492,10157,10160,10164,10167,10175,10176,10178,10174
+# shelters on a farm
+S animal_homes | farmyard shelters | 3 | 1507,1508,2467,2517,10161,10162,10163,10181,38174,48738,57686,10159
+# pasta shapes and sauces
+S italian_food | pasta meals | 3 | 655,660,663,681,710,18500,18516,18517,18029,18527,59522,59633,18518,18519
+# sweet things eaten after a meal
+# sports where an engine or boat tows or drives you
+S water_sports | engine-powered sports | 3 | 5300,5302,5326,5327,5333,5325,5310,5338
+# exclamations a Brit would use
+S polite_swears | british exclamations | 3 | 26561,26562,27496,27729,27716,26574,27739,27741,27750,27742,27743,27751,39504,27737,27715,26579
+# exclamations an American would use
+S polite_swears | american exclamations | 3 | 27721,27722,27610,27709,26575,27723,27724,27725,27732,27733,27710,27738,27735,27736,26568,13377,27730

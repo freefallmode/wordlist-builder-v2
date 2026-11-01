@@ -1,0 +1,75 @@
+# a woman competing in sport
+S famous_athletes | women athletes | 3 | 5447,5455,5471,5473,5490,5491,5493,5516,5527,5528,5518,5534,5552,5549
+# athletes known for running races
+S famous_athletes | famous runners | 3 | 5445,5466,5472,5474,5509,5510,5531,5529,5530,5518,5549,5550,5551,5533
+N body_parts
+# worked mainly in chemistry
+S scientists | chemists | 3 | 21668,41952,41954,41950,41951,41975,41973,41974,41978,41971,41983
+# worked on medicine, disease or vaccines
+S scientists | medical pioneers | 3 | 41932,41933,41934,41955,41956,41966,41983,41981,62225
+N mythology
+# titles held by women
+S royal_titles | titles for women | 3 | 12531,20757,33373,33374,33375,33377,32572,33392,50130,60993,60994,61004,33387,61006
+# titles used in India and nearby
+S royal_titles | south asian titles | 4 | 33380,33388,60992,60993,60994,60995,60996,61004
+# rulers' titles from central and eastern Europe and Germany
+S royal_titles | central and eastern european titles | 4 | 33378,33379,20776,20774,20775,33390,33392,61003,60997
+N words_from_arabic
+N animal_sounds
+# breaks, cracks and displaced joints
+S injuries | bone and joint injuries | 3 | 14986,14995,15025,15026,15027,15112,60789,60790,15030
+# injuries where the skin is broken
+S injuries | skin-breaking injuries | 3 | 14984,14989,14990,15002,15003,15004,15005,15000
+# damage to muscles, tendons and ligaments
+S injuries | soft tissue injuries | 3 | 14985,14996,14997,14998,14999,15018,15022,15023,15024,15014,15015,15012,15104,15013,14994,15019
+# instruments whose strings are plucked
+S folk_instruments | plucked strings | 3 | 282,285,286,287,288,289,290,6037,10538,10539,10540,10551,10537,10659,10660,10661,10664,10665,10666,10668,10673,10675,38530
+# instruments played by blowing
+S folk_instruments | blown instruments | 3 | 6020,6032,10552,10553,10565,10652,10667,10671,10672,10676,10677,10678,6010,6011
+# instruments played by hitting
+S folk_instruments | struck instruments | 3 | 6012,6028,6036,6053,10606,10662,10669,10670,51393,10679
+N ticket_words
+# flowers with a pleasant scent
+S things_that_smell_good | fragrant flowers | 2 | 1703,1713,1714,1715,1721,1736,1744,1664,29549,30021,30462,30501,30502,25161,30417,30505
+# smells of food and drink
+S things_that_smell_good | smells from the kitchen | 2 | 74,226,462,565,605,6418,19767,19941,20301,39686,39688,39693,715,717,719,961,962
+# woody, resinous and earthy scents
+S things_that_smell_good | woody and resin scents | 3 | 1637,1641,1642,1674,16292,15591,15592,39731,30650,39535,3024
+# parts you use to put information in
+S computer_parts | input devices | 3 | 7254,7255,5846,4563,7259,7258,7376,42227,42228,42244
+# parts that keep files when switched off
+S computer_parts | data storage devices | 3 | 7304,7306,25644,42230,42231,42232,42233,42241,42242,42243
+# parts mounted inside the machine
+S computer_parts | internal components | 3 | 7300,7301,7302,7307,7308,7309,7318,7416,40855,42222,42223,42224,42229,42236,42238,42239,42240,42235,62146,62147,62145
+# energy that renews itself
+S energy_sources | renewable sources | 2 | 32228,32230,32231,32232,32233,32237,32246,49749,49750,49751,49752,49754,49756,49762,32244,62263,49760,49761,62265,27545
+# dug or drilled from underground
+S energy_sources | buried fuels | 2 | 2054,32326,32327,32328,32329,32330,31965,32331,32335,32347,29349,50000,32333,46781
+# a particular kind of wager or way of betting
+S betting_words | kinds of wager | 3 | 45330,45331,45342,45343,45363,44858,45333,45332,45361,45338,44872,45337
+# moving through the outdoors on foot
+S adventure_and_outdoor_sports | activities on foot | 2 | 5604,5608,5636,2438,5629,5630,5652,5654,5655,5643,5656
+# ranks held at sea
+S military_ranks | navy ranks | 3 | 29420,34540,34541,34542,34543,21294,34544,34551,4381
+# the most senior army officers
+S military_ranks | top brass | 3 | 34525,34553,34554,34558,34533,35554,34532,34534,34526
+# games for young children
+S card_games | children's card games | 2 | 5743,5745,5746,5747,5744,45411,45414,45416,45417,45418,45419,45410,45413,45412
+# games won by taking tricks
+S card_games | trick-taking games | 3 | 5735,5739,5740,5741,45408,45404,45405,45406,45407,45415,45431
+# sections at the start of a book
+S parts_of_a_book | opening sections | 3 | 13386,13387,6497,13391,13392,6512,13393,6495,13405,13404,13407,13402,13401
+# sections at the end of a book
+S parts_of_a_book | closing sections | 3 | 6496,13421,13390,13389,13388,13394,13396,13427,13403,13418
+# the outside and physical build of a book
+S parts_of_a_book | outer parts | 3 | 13383,13384,13398,13400,13419,13420,13397,13416,13545
+# crafts worked with needle and thread on cloth
+S crafts | needlework | 3 | 5032,5033,5060,5061,5062,5081,5849,5910,55538,61812,61813,61814,61816
+# crafts made from yarn or thread
+S crafts | yarn and thread crafts | 3 | 5847,5848,5850,5851,5873,5874,5898,45857,5912,61811,5911,45858
+# formed when light passes through ice crystals
+S sky_phenomena | ice-crystal effects | 4 | 31404,31405,31435,31419,31420,31421,31434,31436,31417,31437,31418,60377,60378,60379,60380
+# glows seen around sunrise and sunset
+S sky_phenomena | sunrise and sunset sights | 3 | 12099,25435,31408,31427,31428,31426,60376,60382,31407
+# lights and streaks seen in the dark sky
+S sky_phenomena | night sky sights | 3 | 29903,31409,31410,31411,31412,31422,7129,31423,31424,31425,31432,31429

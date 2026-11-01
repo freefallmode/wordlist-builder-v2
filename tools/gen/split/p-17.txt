@@ -1,0 +1,48 @@
+N languages
+N appliances
+# Italian-origin musical terms a player recognises as Italian
+S music_words | italian music words | 3 | 6088,6089,6090,6091,6096,6100,6101,6102,6103,6105,6106,6120,6121,6130,6111
+# landmarks that are natural wonders, parks or caves
+S us_landmarks | american natural wonders | 3 | 2331,2332,31942,31943,32069,36530,36538,36705,36706,36737,36738,36855,37434,37447,37711,37723,37729,37730,37736
+# buildings and memorials in or beside the nation's capital
+S us_landmarks | capital sights | 3 | 2377,4459,33580,37048,37708,37717,37718,37728
+N brand_names_used_as_words
+# people who serve in the army, by name or nickname
+S army_words | kinds of soldier | 3 | 4373,4374,4375,4376,4377,4378,4379,4386,4387,21387,34565,34566,4430
+# things a soldier wears or carries
+S army_words | army kit | 3 | 4905,4406,24656,24751,34564,28727,21319,34562,61240,34563,34569
+# parts that belong to birds
+S animal_body_parts | bird parts | 3 | 8120,8360,8364,8392,8403,10341,10342,10343,10347,50278
+# parts of animals that live in water
+S animal_body_parts | parts of water animals | 3 | 8833,8837,8841,10334,10329,8933,8733,10348,10351
+# parts of insects and other bugs
+S animal_body_parts | bug parts | 3 | 9125,9131,9132,9133,9136,9148,10338,10349
+# Japanese names of throwing moves
+S judo_words | throwing moves | 3 | 43862,43863,43864,43865,43866,61645,61646,61647,61648,61649,61650,61651,61652,61653,61654,61655,61656
+# techniques used to pin or choke an opponent on the ground
+S judo_words | pins and chokes | 3 | 43875,43876,61657,61658,61659,61660,61661,61662,43877,43878,43881,43882
+# devices a story uses to shape its plot
+S film_words | storytelling tricks | 3 | 6409,6410,6431,12641,6397,12655,12656,6441,6408
+# Indian dishes served in a sauce
+S indian_food | curries | 3 | 799,19160,19372,39178,19382,19383,53512,53514,53515,53520,53521
+# fried or quick snacks eaten on the street
+S indian_food | street snacks | 3 | 828,20226,19114,19131,19132,19133,53513,53516,53519
+# dishes from southern India
+S indian_food | south indian dishes | 3 | 20218,19273,53511,53517,59410,59555,59768,59773,5168
+# prizes worn or draped on the winner
+S trophies_and_prizes | prizes you can wear | 3 | 4408,34623,44443,44444,43743,44469,44450,40097,44457,44458,44459,44468,44481,44476
+N trains
+N taste_words
+N touch_words
+# supplies that give light, power or fire
+S emergency_supplies | energy and light sources | 3 | 3028,16276,11210,23261,7401,7338,7339,25627,3066,3078,25631
+# ball sports played with a stick or mallet
+S ball_sports | sports played with sticks | 3 | 5201,5203,5206,5212,5213,5227,5228,5229,5218
+# job titles of people who gather or report the news
+S journalism_words | news roles | 3 | 4132,4637,35195,35196,35211,35212,35209,35216,35218,61368
+# birds found in forests
+S woodland_animals | forest birds | 3 | 1063,1067,1077,1110,8098,8102,8103,8151,8159,8161,8166,8167,8177,8178,8182,8301,8305,8318,30751
+# geological epochs ending in -cene
+S prehistoric_periods | geological epochs | 3 | 10075,10076,10077,10079,10080,10081,10082,10092
+# geological periods older than the dinosaurs
+S prehistoric_periods | periods before the dinosaurs | 3 | 1619,10069,10070,10071,10072,10073,10094,10095

@@ -1,0 +1,61 @@
+N chemical_elements
+N sea_life
+# Nobel Peace Prize winners: people honoured for peace work
+S nobel_laureates | peace prize winners | 3 | 21517,21519,21643,21644,21664,21680,34478,42195,42196,42197,42198,42199,54998,42200,42201,42202,42203,42204,42205,42206,42207,42208
+# Nobel literature winners: writers and poets
+S nobel_laureates | literature prize winners | 3 | 12489,12523,13184,13200,13229,13230,13242,13243,21516,42173,42174,42175,42181,42182,42183,42184,42185,42186,42194,61993
+# Nobel physics winners: physicists
+S nobel_laureates | physics prize winners | 3 | 41927,41928,41935,58211,41936,58212,41947,58210,41962,58213,41963,41960,42176,42187,42188,42189,41982,21668
+# Events made of many sports in one festival
+S famous_sporting_events | multi-sport events | 3 | 44292,44296,44319,44320,44312,44313,44331,44332,44333,44334,44335
+N gadgets
+N things_with_lids
+# Scoring terms used only in golf
+S scoring_words | golf scores | 3 | 43029,43030,43031,43032,43033,43066,50342,50343,61719
+# Gemstones that are blue
+S gemstones | blue gems | 3 | 31659,31663,31666,31670,31677,31683,31688,31694,31661
+# Women who play tennis
+S tennis_champions | women's tennis stars | 3 | 5447,5471,5490,5491,5493,44550,44551,44552,44553,44554,44555,44556,44562,44563,44564,44566,44567,44568,44572,44577,44578,44579,44580,44581
+# Tennis players from the United States
+S tennis_champions | american tennis stars | 3 | 5447,5471,5488,5489,5512,44546,44549,44550,44551,44573,44582,44556,44575,44576,44578,44579,44580,44581,61787,61788,61789
+# Old gear for playing recorded music
+S retro_household_items | old music gear | 3 | 7357,7366,10986,11307,11308,11311,11312,11318,25662
+# Old household things that need no electricity
+S retro_household_items | things without a plug | 3 | 3087,4717,4795,10614,25654,25655,25656,25657,25661,25666,25667,25668,23847,25665,25670
+# Outdated machines from an office
+S retro_household_items | old office tech | 3 | 25643,23235,25653,25669,25651,50006,25652,25644,4633
+N scottish_words
+# Parts found under the bonnet or hood
+S car_parts | under the bonnet | 3 | 7399,2616,2621,2622,7428,23794,46610,46616,46628,46623,46624,46622,46609,46615,46625,2623,46608
+# Parts you can see on the outside of a car
+S car_parts | exterior parts | 3 | 2571,2572,2573,2575,2577,2579,2585,2587,2588,2594,39999,46599,7387,46611,46612
+# Dinosaurs with very long necks
+S dinosaurs | long-necked giants | 3 | 1558,1559,1560,9915,1590,9965,60040,9963,51334
+# Dinosaurs with horns, plates or armor
+S dinosaurs | horned and armored beasts | 3 | 1555,1556,1571,9958,9967,51324,60038,51325
+# People who make or perform music
+S arts_jobs | people who work with sound | 3 | 4137,6131,6132,6136,6137,6138,6139,6140,6141,6142,6165,33030,4182
+# People who make pictures or objects by hand
+S arts_jobs | visual creators | 3 | 6323,6324,33024,12696,33027,33028,33029,33031,33032,33034,33036,60920,4135,33033
+# People who work on a stage or film set
+S arts_jobs | theatre and movie crew | 3 | 6436,11345,12268,12310,12311,6399,6400,12667,12668,12670,12666,6218,12363
+N world_music_styles
+# Things used to watch shows
+S home_electronics | things for watching shows | 3 | 4572,4574,4575,4576,4577,6389,6390,6392,12800,12831,23561,23563,23564,23565,23568,25650,61464
+# Things that play music
+S home_electronics | things that play music | 3 | 7330,7331,11197,11307,11308,10687,11310,11315,11320,23559,23562,23566,23569,4578,23571,61466,61465
+N brown_things
+# Named peaks and ranges
+S mountains | famous mountains and ranges | 3 | 18416,20435,32079,32080,32081,32082,32083,32084,32085,32086,32087
+# Natural landforms in high country
+S mountains | landforms | 3 | 1900,1902,1906,1911,1916,1918,1930,1933,1959,1963,1964,30842,30843,30844,30845,30846,30847,30849,30850,30854,30858,30902,30908,32093,32092
+# Classical pieces based on a dance
+S classical_forms | classical dances | 3 | 6208,6263,6264,6265,10844,10853,10854,10838,10837
+# Classical works sung by voices
+S classical_forms | works for voices | 3 | 10782,6130,10818,10819,10820,10845,10846,10847,10848,10849
+# Pieces written for a full orchestra
+S classical_forms | orchestral pieces | 3 | 10814,10815,10828,10831,10832,10839,6081,10817,10827,6129,10841
+# Verbs for what a sailor does with boat and sail
+S sailing_words | sailing actions | 3 | 47459,47460,47464,47465,47479,47481,47482,47483,47484,43476
+# Sails and the lines and spars that hold them
+S sailing_words | gear above the deck | 3 | 20962,21172,43465,43466,47443,25540,12473,47470

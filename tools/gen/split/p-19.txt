@@ -1,0 +1,69 @@
+# played by teams
+S olympic_sports | team sports | 2 | 5190,5191,5192,5193,5194,5195,5197,5198,5201,5202,5220,44063,44062,44070,44074
+# sports done in or on water
+S olympic_sports | aquatic sports | 2 | 5290,5291,5292,5293,5294,5296,5308,5309,5202,44073,44071
+# malicious programs that infect or spy
+S cybersecurity_words | malicious programs | 2 | 7278,42524,42525,42522,42523,42529,42530,42536,42531
+# ways to prove who you are
+S cybersecurity_words | ways to prove who you are | 3 | 7270,34947,42527,42528,42543,42544,42545,42546,42554,29213,42557
+# tricks used to fool people
+S cybersecurity_words | tricks that fool people | 3 | 42520,42562,42563,42564,62179,42534,62180,42549,62182,12884
+# writers of science fiction or fantasy
+S authors | sci-fi and fantasy authors | 3 | 13207,13208,13209,13210,13211,13212,13213,13214,13215,13225,13224,13206,13231
+# woman writers
+S authors | women writers | 3 | 13181,13182,13185,13191,13197,13198,13200,13201,13206,13212,13217,13219,13220,13221,13234,13240
+N air_travel
+# standard members of an orchestra
+S instruments | orchestra instruments | 2 | 280,281,283,284,282,6003,6016,6006,6017,6018,292,293,294,295,6025,6024,6013,6027,6014
+# instruments played by plucking strings
+S instruments | plucked instruments | 3 | 279,285,286,287,289,282,6037,6019,6040
+# English-born players
+S famous_soccer_players | english players | 3 | 5457,5520,5521,44514,44515,44516,44524,44530,44541,44543,44544
+# Brazilian players
+S famous_soccer_players | brazilian players | 3 | 5456,5478,5480,5553,44519,44539,44540,61781,61784
+# passenger ships that crossed oceans
+S famous_ships | ocean liners | 3 | 21085,21095,47523,47524,47541,47542,47543,47544,47545,47546,60647,60645,60646
+# ships used for voyages of discovery
+S famous_ships | exploration ships | 3 | 6750,6751,6752,6753,6754,21083,21088,47526,21090,21091,47528,54268,54269,54270,54272,60650
+# words blended from computing and internet terms
+S portmanteau_words | tech blends | 3 | 4597,4598,4616,4632,7299,7314,7336,29589,29595,29600,2770,29596
+# words blended from film and tv terms
+S portmanteau_words | entertainment blends | 3 | 6380,6449,12435,12574,12618,12627,29606,29599,29602,29613
+# named forms of poem
+S poetry_terms | poem forms | 3 | 6486,6487,6508,6509,6510,6511,13263,13264,13265,13266,13267,13268,7652,26714
+# beat and rhythm of verse
+S poetry_terms | rhythm words | 4 | 6536,13247,13258,13259,13260,13261,13262,13285
+# ports in Europe
+S port_cities | ports in europe | 3 | 2254,2238,2300,20962,35815,35818,35826,35828,35829,35830,35831,35833,36042,36043,36044,36045,36046,36047,36048,36049,36050,36051,36061
+# ports in Asia
+S port_cities | ports in asia | 3 | 2187,2243,2248,2249,2264,12777,35883,35899,36052,36053,36054,36060,2237,35878
+# ports in North or South America
+S port_cities | ports in the americas | 3 | 2268,2295,2308,35920,35937,35943,36056,36057,36058,36059,50323,50322
+N blank_board
+# vehicles used on ice and snow
+S antarctic_research_station | polar vehicles | 3 | 3139,3141,21046,49889,49903,49900,49904,49907,62302,62300,49901
+# languages spoken in southern Africa
+S african_languages | languages of southern africa | 3 | 7553,7570,25847,25848,25849,25850,25859,25860,25865,25866,50452,50445,50439,7552
+# languages spoken in West Africa
+S african_languages | languages of west africa | 3 | 7572,7573,7574,7596,25852,25857,25858,25864,25871,50436,50437,50446,50447,50449,50442,50440
+# languages spoken in East Africa
+S african_languages | languages of east africa | 3 | 7535,7571,7575,25853,25854,25855,25861,25862,50438,25870,50444,50450,25863,50441
+# agencies and bodies
+S us_government | government agencies | 3 | 21435,33590,33591,61092,61093,61091,33587,33589
+# buildings and sites where power is held
+S us_government | places of power | 3 | 4459,33580,33581,33582,57491,61097,61098,61100
+# people who hold a government post
+S us_government | office holders | 3 | 33288,33347,33292,33345,33352,33583,33584,33592,33599,33596,61096
+# names for scores relative to par
+S golf_terms | scoring terms | 3 | 43029,43030,43031,43047,50342,50343,43071,43032,43033
+# black foods and drinks
+S black_things | dark foods and drinks | 3 | 226,626,727,961,962,19246,29435,40130
+# animals that are black
+S black_things | dark creatures | 3 | 993,1069,1091,1350,1402,7749,22423,29938
+# migrating animals that are birds
+S migrating_animals | long-distance birds | 3 | 157,1074,1085,1088,1097,1100,1101,1102,1103,1104,8112,8132,8170,8171,8185,8213,8214,8216,8218,8220,9835,9838,9839,9840,9841,9844
+# migrating animals that live in the ocean
+S migrating_animals | ocean animals | 3 | 466,495,1293,1307,1308,7869,8569,8570,8609,8743,8746,8807,8974,9842,9843
+# animals dangerous to people
+S australian_animals | deadly creatures | 3 | 1118,1195,8612,8613,8918,9698,9699,9701
+N reversible_words

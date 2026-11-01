@@ -1,0 +1,66 @@
+N countries
+N landmarks
+N fantasy
+# people who treat patients
+S medicine | healthcare workers | 3 | 3448,3449,3470,3488,3489,3490,3512,3500
+N pets
+# pet reptiles: scaly cold-blooded pets
+# birds kept in cages
+S pets | cage birds | 3 | 1065,1092,1093,1094,1114,1452,1472,8263,8265,8335
+# bands that formed in Britain
+S famous_bands | british bands | 3 | 11436,11437,11440,11442,11444,11445,11446,11448,11449,11453,11456,11458,11459,11460,11461,11462,11464,11465,11468,11470,11471,11472,50386,50387,50388,50400,50402,50398,50399,50407,50408,50409,59427,50405
+# bands that formed in the USA
+S famous_bands | american bands | 3 | 11441,11447,11450,11451,11452,11454,11455,11457,11463,11466,11467,11469,50389,50390,50391,50392,50393,50394,50395,50401,59424,59425,59426
+# street names for the hemp plant drug
+S illegal_drugs | street names for hemp | 3 | 15481,15483,50261,50262,50263,50264,50266,50267,15518
+# drugs that speed the body up
+S illegal_drugs | stimulants | 3 | 15476,15477,15493,50268,50269,50270,15490,15489,15491,15492,50274,50275,50276,15502,50257
+# drugs that cause visions
+S illegal_drugs | hallucinogens | 3 | 1758,15484,15485,15495,15496,15506,15507,15513,50277
+# trees with needles and cones
+S taiga | needle-leaf trees | 3 | 1629,1638,1639,1644,1653,1672,1690,60476,60477
+# Jewish holy days
+S judaism_words | jewish holidays | 3 | 5112,5118,5119,5160,5161,5162,5163,34455,34456
+# objects used in Jewish worship and the home
+S judaism_words | jewish ritual objects | 3 | 10593,25597,34457,34458,34381,34379,34380,34370,34371,34372,34461
+# raptors that live in Britain
+S birds_of_prey | british raptors | 3 | 1104,1117,1133,1134,8091,8092,8093,8094,8096,8098,8101,8102,8103,9896,51299,59918,8116,8109
+# raptors of North and South America
+S birds_of_prey | american raptors | 3 | 2528,2561,8095,8099,8108,8112,8115,8117,8107,59916,59917,51284
+# tools a builder holds or uses
+S construction_site | builders' tools | 2 | 316,325,327,1850,1853,4799,4804,4829,4854,7241,23693,7248
+# illnesses caused by viruses
+S infections | viral illnesses | 3 | 3359,3360,3361,3383,3382,3398,3400,3406,14963,14968,14971,3438,14956
+# illnesses caused by bacteria
+S infections | bacterial illnesses | 3 | 3372,3374,3375,3378,3401,3402,3411,3435,14959,14960,14962,14964,14966,14970,14975,14976,14977,14980,14982,14983,62723
+# set phrases you say to be polite
+S manners_and_etiquette | polite phrases | 3 | 35403,35404,35407,35408,28685,35430,35431,35432,61438,15935
+# polite things you do with your body
+S manners_and_etiquette | polite gestures | 3 | 16823,16825,16834,35419,35428,35429,61437,35415
+# trips taken for fun
+S journeys | holiday travel | 3 | 2922,2928,2929,2933,2965,2964,2969,2946,2963,2927,2924
+# long hard trips
+S journeys | arduous trips | 3 | 2920,2925,2944,2957,2956,2955,2954,2960,2923,2945,2967,2970
+# the main teachings
+S buddhism_words | key teachings | 3 | 4343,4344,15950,34424,34491,61222,61223,61224,34479,34480,34481,50207,61226,61227,61228,34496
+# ways of meditating
+S buddhism_words | contemplative practices | 3 | 4342,16376,34490,34489,34477,15937,61227,34496
+# objects and buildings seen at a temple
+S buddhism_words | temple sights | 3 | 14045,2504,34290,14048,14054,34482,34483,34493,14061
+# who works in the kitchen
+S restaurant | kitchen crew | 3 | 916,944,970,971,20045,20058,20060,20063,60570
+# who works the dining room
+S restaurant | dining room staff | 3 | 4110,4111,4112,20020,20021,20027,20029,20030,60573
+# parts of a ship
+# fish that is cured
+S salty_foods | cured fish | 3 | 17792,17824,19089,39162,39164,20309,59632,62443,62444,62445
+# nibbles served with a drink
+S salty_foods | bar snacks | 3 | 6418,19090,19092,19099,39160,20304,39159,19094,62447,17783
+# insect eaters that are reptiles or amphibians
+S insect_eaters | cold-blooded animals | 3 | 1137,1144,1145,1146,1147,1148,1149,1151,1183,1184
+# companies that make chips
+S tech_companies | chip makers | 3 | 182,183,49302,49303,49310,49298,49300,49290
+# companies known for apps
+S tech_companies | app makers | 3 | 11326,184,190,49305,49306,49308,35098,35093,49315,187,49320
+# companies that build devices
+S tech_companies | gadget makers | 3 | 180,49290,49291,49292,49293,49297,49301,50196,49299,49317
