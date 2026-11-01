@@ -98,6 +98,7 @@ export function validate(P) {
       if (t.group) add('warn', 'link-group', `"${label(e)}" is linked to "${t.name}", which is a group.`, loc);
       if (fold(t.name) === fold(text)) add('warn', 'is-theme-name', `"${text}" is the name of the theme it is in ("${t.name}").`, loc);
     }
+    for (const [tid, v] of Object.entries(e.th)) if (!Number.isInteger(v) || v < 0 || v > 5) add('error', 'bad-rating', `"${label(e)}" has a rating of ${JSON.stringify(v)} in ${tid}; it must be 0 to 5.`, loc);
     for (const [tid, txt] of Object.entries(e.show || {})) if (!ids.includes(tid) || !String(txt).trim()) add('warn', 'show-theme', `"${label(e)}" has a display text for ${tid}, which it is not in (or the text is empty).`, loc);
     for (const [tid, aid] of Object.entries(e.use || {})) {
       const a = ix.entry.get(aid);
