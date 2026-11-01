@@ -123,11 +123,12 @@ h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--
 
 /* word table: fixed column widths so sorting never moves them; sortable headings are marked */
 .etable { overflow-x: auto; }
-.etable table { table-layout: fixed; min-width: 1110px; }
-.etable th:nth-child(1) { width: 70px; } .etable th:nth-child(3) { width: 300px; } .etable th:nth-child(4) { width: 82px; } .etable th:nth-child(5) { width: 90px; }
+.etable table { table-layout: fixed; min-width: 1180px; }
+.etable th:nth-child(1) { width: 70px; } .etable th:nth-child(2) { width: var(--wordw, 230px); }   /* word: about 30 characters; synonyms (3) takes all the space that is left */ .etable th:nth-child(4) { width: 82px; } .etable th:nth-child(5) { width: 90px; }
 .etable th:nth-child(6) { width: 96px; } .etable th:nth-child(7) { width: 130px; } .etable table.sub th:nth-child(7) { width: 230px; }
 .etable th:nth-child(8) { width: 90px; } .etable th:nth-child(9) { width: 84px; }
 .etable td { overflow: hidden; text-overflow: ellipsis; }
+.etable th { position: relative; } .colgrip { position: absolute; top: 0; right: 0; width: 6px; height: 100%; cursor: col-resize; } .colgrip:hover { background: var(--accent, #2a6fdb); opacity: .5; }
 th.sortable { color: var(--text); cursor: pointer; user-select: none; text-decoration: underline dotted; text-underline-offset: 3px; }
 th.sortable:hover { background: var(--hover); }
 th.sortable .sortmark { color: var(--dim); font-weight: 400; opacity: .6; }

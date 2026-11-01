@@ -265,6 +265,22 @@ function themeView(t) {
 function pathIds(id) { const out = []; let t = A.P.ix.theme.get(id); while (t) { out.unshift(t.id); t = t.parent && A.P.ix.theme.get(t.parent); } return out; }
 
 const SUB_CAP = 500;
+// The word column's width is adjustable (drag the edge of its heading, double-click to reset); the synonyms column takes whatever space is left. The width is remembered in the browser.
+const WORD_W = 230, wordWidth = w => document.documentElement.style.setProperty('--wordw', w + 'px');
+try { const w = +localStorage.getItem('wordColW'); if (w >= 80) wordWidth(w); } catch { /* storage unavailable: the default width stays */ }
+function wordHead(thEl) {
+  thEl.append(h('span.colgrip', { title: 'Drag to change the width of the word column; double-click to reset',
+    onclick: ev => ev.stopPropagation(),
+    ondblclick: ev => { ev.stopPropagation(); wordWidth(WORD_W); try { localStorage.removeItem('wordColW'); } catch { /* ignore */ } },
+    onmousedown: ev => {
+      ev.preventDefault(); ev.stopPropagation();
+      const x0 = ev.clientX, w0 = thEl.getBoundingClientRect().width; let w = w0;
+      const move = e => { w = Math.max(80, Math.min(700, w0 + e.clientX - x0)); wordWidth(w); };
+      const up = () => { document.removeEventListener('mousemove', move); document.removeEventListener('mouseup', up); try { localStorage.setItem('wordColW', String(Math.round(w))); } catch { /* ignore */ } };
+      document.addEventListener('mousemove', move); document.addEventListener('mouseup', up);
+    } }));
+  return thEl;
+}
 function entryTable(t) {
   const P = A.P, sub = !!A.showSub;
   // With "sub-themes" on, the table holds the words of this theme and of every theme below it (each word once).
@@ -301,7 +317,7 @@ function entryTable(t) {
     h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => pool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
-    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
+    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('Word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => { if (e.aliasOf && underRow.has(e.id)) return h('tr.alias', { class: e.enabled ? '' : 'off' }, h('td'), h('td.word', { onclick: () => editEntry(e) }, e.text, e.gloss && h('span.gloss', ` (${e.gloss})`), h('span.hint', ` ${e.aliasKind}${e.region.length ? ' · ' + e.region.join('/') : ''}`)), h('td', { colspan: 8 })); const s = shown(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || []; return h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } }))),
         h('td.word', { onclick: () => editEntry(e) },
