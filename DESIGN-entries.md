@@ -150,6 +150,6 @@ Decisions taken while building the weather prototype (2026-11-01), with the reas
 - Word table: shown text with `← entry`, form arrow, synonyms column (drag a word onto another, chips with ✕, lookup box).
 
 **Not yet done**
-- Phase 1 (tag spelling aliases US/UK), phase 2 (regional words, root flips), phase 3 (the remaining ~1,500 synonym aliases into groups or entries; the 643 alias-only theme links), phase 4 (families), phase 5 (theme splits).
+- Phase 1 (tag spelling aliases US/UK; done 2026-11-01: only the dialect pairs need a tag, the other untagged spellings are variants and need none), phase 2 (regional words, root flips), phase 3 (the remaining ~1,500 synonym aliases into groups or entries; the 643 alias-only theme links), phase 4 (families), phase 5 (theme splits).
 - The default-dialect setting in the web app.
 - Checking that the game can use a parent theme and its split-off child together, and updating the game to export format 3.
