@@ -1,0 +1,140 @@
+        /// <summary>
+        /// Reads the game file of the wordlist builder v2 (file format 3, columnar: themes plus entries with links of four numbers). Differences from v4-v8:
+        /// no theme label, kind, separate flag, part-of-speech columns, per-word theme clashes or anagram sets; synonyms are grouped by a clash id and aliases point at a root.
+        /// Mapping: a root entry is a word; its spelling aliases become Other; form aliases are skipped (a link's shown text is its form); regional, abbreviation and
+        /// translation aliases are words of their own. Entries that stand for one another (an alias and its root, or a clash group) share a Root id, so a level never holds two.
+        /// </summary>
+        static WordLibrary LoadV3(Dictionary<string, object> root)
+        {
+            Dictionary<string, object> opt = MiniJson.Get(root, "options") as Dictionary<string, object>;
+            WordLibrary lib = new WordLibrary
+            {
+                Format = 3,
+                Spelling = "US",
+                Generated = MiniJson.Text(MiniJson.Get(root, "generated")),
+                FamilyFriendly = opt != null && MiniJson.Text(MiniJson.Get(opt, "adult")) == "exclude"
+            };
+
+            const int TAdult = 1, TSensitive = 2, TLang = 8, TComplete = 16, TGroup = 32;
+            List<object> tf = MiniJson.List(MiniJson.Get(root, "themeFields"));
+            List<object> rows = MiniJson.List(MiniJson.Get(root, "themes"));
+            int cId = tf.IndexOf("id"), cName = tf.IndexOf("name"), cParent = tf.IndexOf("parent"), cFlags = tf.IndexOf("flags"), cDiff = tf.IndexOf("difficulty");
+            lib.Themes = new LibTheme[rows.Count];
+            for (int i = 0; i < rows.Count; i++)
+            {
+                List<object> r = (List<object>)rows[i];
+                int flags = MiniJson.Int(r[cFlags]);
+                lib.Themes[i] = new LibTheme
+                {
+                    Index = i, Id = MiniJson.Text(r[cId]), Name = MiniJson.Text(r[cName]), Label = "", Kind = "", Region = "",
+                    Parent = MiniJson.Int(r[cParent]), Folder = (flags & TGroup) != 0, Adult = (flags & TAdult) != 0, Sensitive = (flags & TSensitive) != 0,
+                    EnglishOnly = (flags & TLang) != 0, Complete = (flags & TComplete) != 0, Separate = false,
+                    Difficulty = Math.Max(1, Math.Min(5, MiniJson.Int(r[cDiff])))
+                };
+                lib.ThemeById[lib.Themes[i].Id] = i;
+            }
+            FinishThemes(lib);
+
+            Dictionary<string, object> en = (Dictionary<string, object>)MiniJson.Get(root, "entries");
+            List<object> text = MiniJson.List(MiniJson.Get(en, "text")), pos = MiniJson.List(MiniJson.Get(en, "pos")), flagsCol = MiniJson.List(MiniJson.Get(en, "flags")),
+                rec = MiniJson.List(MiniJson.Get(en, "rec")), rootCol = MiniJson.List(MiniJson.Get(en, "root")), clashCol = MiniJson.List(MiniJson.Get(en, "clash")),
+                linkCount = MiniJson.List(MiniJson.Get(en, "linkCount")), links = MiniJson.List(MiniJson.Get(en, "links")), zipf = MiniJson.List(MiniJson.Get(en, "zipf")),
+                shown = MiniJson.List(MiniJson.Get(root, "shown"));
+            int n = text.Count;
+            const int FSpelling = 16, FForm = 32;
+
+            // Entries that stand for one another: an alias and its root, and the members of a clash group.
+            int[] up = new int[n];
+            for (int i = 0; i < n; i++) up[i] = i;
+            Func<int, int> find = null;
+            find = x => { while (up[x] != x) { up[x] = up[up[x]]; x = up[x]; } return x; };
+            Dictionary<int, int> clashFirst = new Dictionary<int, int>();
+            for (int i = 0; i < n; i++)
+            {
+                int rt = MiniJson.Int(rootCol[i]);
+                if (rt > 0) up[find(i)] = find(rt - 1);
+                int c = MiniJson.Int(clashCol[i]), first;
+                if (c > 0) { if (clashFirst.TryGetValue(c, out first)) up[find(i)] = find(first); else clashFirst[c] = i; }
+            }
+            int[] size = new int[n];
+            for (int i = 0; i < n; i++) size[find(i)]++;
+
+            // Links of each entry (offsets into the flat list of four numbers per link).
+            int[] at = new int[n + 1];
+            for (int i = 0; i < n; i++) at[i + 1] = at[i] + MiniJson.Int(linkCount[i]) * 4;
+
+            Dictionary<int, LibWord> byEntry = new Dictionary<int, LibWord>();
+            List<LibWord> words = new List<LibWord>();
+            for (int i = 0; i < n; i++)
+            {
+                int fl = MiniJson.Int(flagsCol[i]), rt = MiniJson.Int(rootCol[i]);
+                if (rt > 0 && (fl & (FSpelling | FForm)) != 0) continue;     // spellings go to Other below; forms are shown through a link's shown text
+                int k = MiniJson.Int(linkCount[i]);
+                List<int> th = new List<int>(), df = new List<int>(), ps = new List<int>();
+                Dictionary<int, string> forms = null;
+                for (int j = 0; j < k; j++)
+                {
+                    int o = at[i] + j * 4, ti = MiniJson.Int(links[o]);
+                    if (ti < 0 || ti >= lib.Themes.Length || lib.Themes[ti].Folder) continue;
+                    int d = MiniJson.Int(links[o + 1]), sh = MiniJson.Int(links[o + 3]), p = MiniJson.Int(pos[i]);
+                    if (sh > 0)
+                    {
+                        List<object> s = (List<object>)shown[sh - 1];
+                        if (forms == null) forms = new Dictionary<int, string>();
+                        forms[ti] = Fold(MiniJson.Text(s[0]));
+                        p = MiniJson.Int(s[1]);
+                    }
+                    th.Add(ti); df.Add(d < 1 ? 3 : Math.Min(5, d)); ps.Add(p + 1);
+                }
+                if (th.Count == 0) continue;
+                LibWord w = new LibWord
+                {
+                    Index = words.Count, Text = MiniJson.Text(text[i]), Zipf10 = zipf.Count > i ? MiniJson.Int(zipf[i]) : 0,
+                    Themes = th.ToArray(), Difficulty = df.ToArray(), Clashes = new int[0], PosPer = ps.ToArray(), Recognition = MiniJson.Int(rec[i]),
+                    Other = "", AnagramSet = 0, Forms = forms, Root = size[find(i)] > 1 ? "u" + find(i) : ""
+                };
+                w.Balloon = Fold(w.Text);
+                w.Key = w.Balloon.ToLowerInvariant();
+                w.Letters = LettersOf(w.Key);
+                w.WordCount = w.Key.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
+                byEntry[i] = w;
+                words.Add(w);
+                lib.Known.Add(w.Key);
+                lib.Known.Add(w.Letters);
+            }
+            for (int i = 0; i < n; i++)
+            {
+                int fl = MiniJson.Int(flagsCol[i]), rt = MiniJson.Int(rootCol[i]);
+                if (rt == 0 || (fl & FSpelling) == 0) continue;
+                LibWord w;
+                if (!byEntry.TryGetValue(rt - 1, out w) || w.Other.Length > 0) continue;
+                string alt = MiniJson.Text(text[i]);
+                if (Fold(alt).ToLowerInvariant() == w.Key) continue;
+                w.Other = alt;
+                string ol = LettersOf(Fold(alt).ToLowerInvariant());
+                if (ol != w.Letters) w.OtherLetters = ol;
+                lib.Known.Add(Fold(alt).ToLowerInvariant());
+            }
+            lib.Words = words.ToArray();
+            foreach (LibWord w in lib.Words) w.Index = Array.IndexOf(lib.Words, w) >= 0 ? w.Index : w.Index;
+            lib.BuildPools(0);
+            Vocab = lib.Known;
+            return lib;
+        }
+
+        /// <summary>Children, depth, top-level group, display name and name tokens of every theme, once Parent is set.</summary>
+        static void FinishThemes(WordLibrary lib)
+        {
+            foreach (LibTheme t in lib.Themes)
+            {
+                if (t.Parent >= 0) lib.Themes[t.Parent].Children.Add(t.Index);
+                int d = 0, top = t.Index;
+                for (int p = t.Parent; p >= 0; p = lib.Themes[p].Parent) { d++; top = p; }
+                t.Depth = d;
+                t.Top = top;
+                t.Display = DisplayName(string.IsNullOrEmpty(t.Label) ? t.Name : t.Label);
+                AddTokens(t.NameTokens, t.Name);
+                AddTokens(t.NameTokens, t.Label);
+            }
+        }
+
