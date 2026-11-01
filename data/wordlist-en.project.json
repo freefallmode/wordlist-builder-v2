@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":220,"modified":"2026-11-01 09:49"},"nextId":64831,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":221,"modified":"2026-11-01 09:55"},"nextId":64831,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]]},
@@ -3228,7 +3228,7 @@
 {"id":625,"text":"truffle","gloss":"chocolate","rec":2,"th":{"desserts_and_sweets":3,"chocolates":2},"status":"gen"},
 {"id":626,"text":"licorice","rec":2,"th":{"desserts_and_sweets":3,"middle_eastern_remedies":3,"candy":2,"shades_of_black":3,"black_things":2,"plants_of_the_middle_east":3,"chewy_foods":2},"status":"gen"},
 {"id":627,"text":"liquorice","rec":2,"region":["UK"],"aliasOf":626,"aliasKind":"spelling","status":"gen"},
-{"id":628,"text":"cotton candy","rec":2,"th":{"desserts_and_sweets":3,"ice_cream_flavors":4,"fairground_food":1,"pastel_colors":3,"soft_things":3,"pink_things":1,"soda_flavors":4,"american_candy":2,"sweet_foods":2,"sticky_things":4,"candy":2},"status":"gen","nameOkIn":["american_candy","candy"]},
+{"id":628,"text":"cotton candy","rec":2,"th":{"desserts_and_sweets":3,"ice_cream_flavors":4,"fairground_food":1,"pastel_colors":3,"soft_things":3,"pink_things":1,"soda_flavors":4,"american_candy":2,"sweet_foods":2,"sticky_things":4,"candy":2},"status":"gen","show":{"candy":"cotton","american_candy":"cotton"}},
 {"id":629,"text":"candy floss","rec":2,"region":["UK"],"aliasOf":628,"aliasKind":"regional","status":"gen","nameOkIn":["candy","american_candy"]},
 {"id":630,"text":"fairy floss","rec":3,"region":["AU"],"aliasOf":628,"aliasKind":"regional","status":"gen"},
 {"id":631,"text":"Kit Kat","type":"org","rec":1,"tm":true,"th":{"desserts_and_sweets":3,"chocolates":2,"american_candy":2,"japanese_souvenirs":2},"status":"gen"},
