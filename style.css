@@ -136,10 +136,10 @@ th.sortable.sorted { background: var(--sel); text-decoration: none; } th.sortabl
 
 /* all words screen */
 .tools.wrap { flex-wrap: wrap; } .pager { margin: 6px 0; display: flex; align-items: center; gap: 6px; }
-.awrap { overflow-x: auto; } table.aw { table-layout: fixed; min-width: 940px; }
-table.aw th:nth-child(1) { width: 28px; } table.aw th:nth-child(2) { width: 150px; } table.aw th:nth-child(3) { width: 130px; } table.aw th:nth-child(4) { width: 82px; }
-table.aw th:nth-child(5) { width: 84px; } table.aw th:nth-child(6) { width: 76px; } table.aw th:nth-child(7) { width: 84px; } table.aw th:nth-child(8) { width: 130px; }
-table.aw th:nth-child(10) { width: 80px; } table.aw td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.awrap { overflow-x: auto; } table.aw { table-layout: fixed; min-width: 1100px; }
+table.aw th:nth-child(1) { width: 28px; } table.aw th:nth-child(2) { width: 150px; } table.aw th:nth-child(3) { width: 130px; } table.aw th:nth-child(4) { width: 170px; } table.aw th:nth-child(5) { width: 130px; }
+table.aw th:nth-child(7) { width: 82px; } table.aw th:nth-child(8) { width: 76px; } table.aw th:nth-child(9) { width: 76px; } table.aw th:nth-child(11) { width: 80px; }   /* 6 (themes) takes the rest; 10 (flags) is sized to its data in allwords.js */
+table.aw td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, aliases are not grouped under their root here */
 .regionbox { display: flex; flex-direction: column; gap: 4px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; }
 
