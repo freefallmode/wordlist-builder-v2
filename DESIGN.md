@@ -60,7 +60,7 @@ Pure functions over a plain project object (`js/model.js`), so the core can be t
 **Entry:** `{ id, text, gloss, pos, type, enabled, rec, adult, sensitive, tm, vulgar, region[], aliasOf, aliasKind, th{ themeId: inThemeRating }, status, note, nameOkIn[], use{}, show{} }`.
 - One meaning of one written form. Everything that depends on meaning is here; the only thing that differs between themes is the in-theme rating in `th`.
 - `status`: `new` (added by hand), `gen` (generated, not reviewed), `rev` (reviewed).
-- `nameOkIn`: themes where the full text may contain a word of the theme's name (dried apple in dried fruits); the theme-name check skips it there.
+- `nameOkIn`: themes where the full text may contain a word of the theme's name (dried apple in dried fruits); the theme-name check skips it there. The check also lets through a single word that is the thing the theme collects (the last word of the name, or of each part of "A and B"): `pants` in pants and shorts, `bug` in garden bugs; not `police` in police words, and not longer text such as tomato soup.
 - `use` `{ themeId: id of one of its form aliases }`: that theme shows the form (rainy) instead of the entry (rain). `show` `{ themeId: text }`: that theme shows a shorter text (rock for rock garden). Both are theme-local display choices: the entry keeps its identity, ratings and links. Neither is an alias.
 - `vulgar` (crude or offensive wording) is an entry flag only; themes have no vulgar flag. Entries have no language-specific flag; that flag is for themes.
 

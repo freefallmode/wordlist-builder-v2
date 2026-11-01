@@ -5,7 +5,7 @@ import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
 import { newProject, addEntry, reindex, themeStats, effRec, eff, deleteEntry, moveTheme, descendants } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
-import { validate } from '../js/validate.js';
+import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
 import { parseFreq, setFreq, zipf } from '../js/freq.js';
 
@@ -146,4 +146,14 @@ test('export format 3: shown text, display form and clash ids travel with the li
   assert.equal(link('fig')[3], 0);
   assert.ok(c.clash[at('rain')] > 0 && c.clash[at('rain')] === c.clash[at('rainfall')] && c.clash[at('fig')] === 0);
   assert.ok(validate(P).every(x => !/not one of its forms|display text/.test(x.msg)));
+});
+
+test('theme-name check: the collected thing alone is fine, longer text and other name words are not', () => {
+  const T = name => ({ id: 'x', name }), E = text => ({ text, nameOkIn: [] });
+  assert.equal(nameLeak(T('pants and shorts'), E('pants')), null);
+  assert.equal(nameLeak(T('garden bugs'), E('bug')), null);
+  assert.equal(nameLeak(T('garden bugs'), E('pill bug')), 'bug');
+  assert.equal(nameLeak(T('soups'), E('tomato soup')), 'soup');
+  assert.equal(nameLeak(T('police words'), E('police')), 'police');
+  assert.equal(nameLeak(T('water park'), E('water')), 'water');
 });

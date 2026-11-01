@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":219,"modified":"2026-11-01 09:38"},"nextId":64831,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":220,"modified":"2026-11-01 09:49"},"nextId":64831,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]]},
@@ -7451,7 +7451,7 @@
 {"id":4861,"text":"tee","gloss":"T-shirt","rec":2,"th":{"souvenirs":2,"clothes":2,"tops":2},"status":"gen"},
 {"id":4862,"text":"tee shirt","rec":2,"aliasOf":4860,"aliasKind":"spelling","status":"gen"},
 {"id":4863,"text":"pants","gloss":"clothing","rec":1,"region":["UK","IE","AU","NZ"],"aliasOf":4864,"aliasKind":"regional","status":"gen"},
-{"id":4864,"text":"trousers","rec":1,"th":{"wardrobe":3,"things_with_buttons":3,"things_with_legs":5,"british_english_words":1,"things_that_come_in_pairs":3,"clothes":1,"hidden_insects":3},"status":"gen","nameOkIn":["pants_and_shorts"]},
+{"id":4864,"text":"trousers","rec":1,"th":{"wardrobe":3,"things_with_buttons":3,"things_with_legs":5,"british_english_words":1,"things_that_come_in_pairs":3,"clothes":1,"hidden_insects":3,"pants_and_shorts":1},"status":"gen","nameOkIn":["pants_and_shorts"]},
 {"id":4865,"text":"slacks","rec":3,"region":["US"],"th":{"pants_and_shorts":3,"clothes":3,"things_with_legs":5,"hidden_insects":4,"wardrobe":3,"things_with_buttons":3,"british_english_words":1,"things_that_come_in_pairs":3},"status":"gen"},
 {"id":4866,"text":"jeans","rec":1,"th":{"clothes":1,"pants_and_shorts":1,"things_with_buttons":3,"things_with_legs":5,"blue_blank":1,"words_named_after_places":1,"blue_things":1,"things_that_come_in_pairs":3,"western_wear":2},"status":"gen"},
 {"id":4867,"text":"shorts","rec":1,"th":{"clothes":1,"pants_and_shorts":1,"things_with_legs":5,"things_that_come_in_pairs":3,"sports_clothing":1},"status":"gen","nameOkIn":["pants_and_shorts"]},
@@ -25084,7 +25084,7 @@
 {"id":23248,"text":"doorbell","rec":1,"th":{"outside_the_house":2,"windows_and_doors":2,"things_with_buttons":2,"things_that_ring":1,"parts_of_a_door":3},"status":"gen"},
 {"id":23249,"text":"garden gate","rec":1,"th":{"outside_the_house":2},"status":"gen"},
 {"id":23250,"text":"bin","gloss":"rubbish","rec":1,"region":["UK"],"aliasOf":23251,"aliasKind":"regional","status":"gen"},
-{"id":23251,"text":"trash can","gloss":"household","rec":1,"th":{"things_with_lids":1,"park":4,"outside_the_house":3,"under_the_sink":3,"containers":3,"blank_man":4,"blank_bag":5},"status":"gen"},
+{"id":23251,"text":"trash can","gloss":"household","rec":1,"th":{"things_with_lids":1,"park":4,"outside_the_house":3,"under_the_sink":3,"containers":3,"blank_man":4,"blank_bag":5,"bins_and_recycling":1},"status":"gen"},
 {"id":23252,"text":"downspout","rec":3,"region":["US"],"th":{"outside_the_house":4,"plumbing_words":5,"parts_of_a_house":4,"roof_parts":4},"status":"gen"},
 {"id":23253,"text":"downpipe","rec":3,"region":["UK"],"aliasOf":23252,"aliasKind":"regional","status":"gen"},
 {"id":23254,"text":"house number","rec":2,"th":{"outside_the_house":4},"status":"gen","nameOkIn":["outside_the_house"]},
