@@ -123,8 +123,8 @@ h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--
 
 /* word table: fixed column widths so sorting never moves them; sortable headings are marked */
 .etable { overflow-x: auto; }
-.etable table { table-layout: fixed; min-width: 1180px; }
-.etable th:nth-child(1) { width: 70px; } .etable th:nth-child(2) { width: var(--wordw, 230px); }   /* word: about 30 characters; synonyms (3) takes all the space that is left */ .etable th:nth-child(4) { width: 82px; } .etable th:nth-child(5) { width: 90px; }
+.etable table { table-layout: fixed; min-width: 1200px; }
+.etable th:nth-child(1) { width: 70px; } .etable th:nth-child(2) { width: var(--wordw, 230px); }   /* word: about 30 characters; synonyms (3) takes all the space that is left */ .etable th:nth-child(4) { width: 100px; } .etable th:nth-child(5) { width: 90px; }
 .etable th:nth-child(6) { width: 96px; } .etable th:nth-child(7) { width: 130px; } .etable table.sub th:nth-child(7) { width: 230px; }
 .etable th:nth-child(8) { width: 90px; } .etable th:nth-child(9) { width: 84px; }
 .etable td { overflow: hidden; text-overflow: ellipsis; }
@@ -136,8 +136,8 @@ th.sortable.sorted { background: var(--sel); text-decoration: none; } th.sortabl
 
 /* all words screen */
 .tools.wrap { flex-wrap: wrap; } .pager { margin: 6px 0; display: flex; align-items: center; gap: 6px; }
-.awrap { overflow-x: auto; } table.aw { table-layout: fixed; min-width: 900px; }
-table.aw th:nth-child(1) { width: 28px; } table.aw th:nth-child(2) { width: 150px; } table.aw th:nth-child(3) { width: 130px; } table.aw th:nth-child(4) { width: 48px; }
+.awrap { overflow-x: auto; } table.aw { table-layout: fixed; min-width: 940px; }
+table.aw th:nth-child(1) { width: 28px; } table.aw th:nth-child(2) { width: 150px; } table.aw th:nth-child(3) { width: 130px; } table.aw th:nth-child(4) { width: 82px; }
 table.aw th:nth-child(5) { width: 84px; } table.aw th:nth-child(6) { width: 76px; } table.aw th:nth-child(7) { width: 84px; } table.aw th:nth-child(8) { width: 130px; }
 table.aw th:nth-child(10) { width: 80px; } table.aw td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, aliases are not grouped under their root here */

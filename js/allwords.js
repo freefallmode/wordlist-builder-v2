@@ -73,7 +73,7 @@ export function allWordsView() {
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.text),
-        h('td.dim', e.gloss || ''), h('td.dim', e.pos.slice(0, 3)), h('td.dim', e.type), h('td', e.rec || h('span.hint', '?')),
+        h('td.dim', e.gloss || ''), h('td.dim', e.pos), h('td.dim', e.type), h('td', e.rec || h('span.hint', '?')),
         h('td', flagBadges(e)), h('td.dim', rootOf(e) ? `${rootOf(e).text}${e.aliasKind ? ' · ' + e.aliasKind : ''}` : ''),
         h('td.dim', themesCell(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·')))) :
         h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words match.')))),
