@@ -5,8 +5,9 @@ import { linkIds, flagKey } from './model.js';
 import { editEntry } from './dialogs.js';
 
 const PAGE = 200;
-const S = { q: '', flag: '', rec: '', status: '', show: '', sort: 'text', dir: 1, page: 0 };
+const S = { q: '', in: 'word', flag: '', rec: '', status: '', show: '', sort: 'text', dir: 1, page: 0 };
 
+const SCOPE = [['word', 'search the word'], ['meaning', 'search the meaning'], ['theme', 'search the themes'], ['any', 'search all three']];
 const FLAGS = [['', 'any flags'], ['adult', 'adult'], ['sensitive', 'sensitive'], ['tm', 'trademark'], ['vulgar', 'vulgar'], ['region', 'region-specific'], ['none', 'no flags']];
 const SHOW = [['', 'all words'], ['on', 'enabled only'], ['off', 'disabled only'], ['roots', 'roots only'], ['alias', 'aliases only'], ['orphan', 'not in any theme']];
 const STATUS = [['', 'any status'], ['new', 'new (by hand)'], ['gen', 'generated, not reviewed'], ['rev', 'reviewed']];
@@ -17,7 +18,8 @@ const themeNames = (P, e) => linkIds(P, e).map(id => P.ix.theme.get(id)?.name).f
 function matches(P, e) {
   if (S.q) {
     const q = S.q.toLowerCase();
-    if (!(e.text + ' ' + e.gloss).toLowerCase().includes(q) && !themeNames(P, e).some(n => n.toLowerCase().includes(q))) return false;
+    const inWord = () => e.text.toLowerCase().includes(q), inMeaning = () => (e.gloss || '').toLowerCase().includes(q), inTheme = () => themeNames(P, e).some(n => n.toLowerCase().includes(q));
+    if (!(S.in === 'word' ? inWord() : S.in === 'meaning' ? inMeaning() : S.in === 'theme' ? inTheme() : inWord() || inMeaning() || inTheme())) return false;
   }
   if (S.flag === 'region' ? !e.region.length : S.flag === 'none' ? (flagList(e).length || e.region.length) : S.flag && !e[S.flag]) return false;
   if (S.rec !== '' && e.rec !== +S.rec) return false;
@@ -63,8 +65,8 @@ export function allWordsView() {
       h('p.hint', `${plural(P.entries.length, 'entry')} in the library (${P.entries.filter(e => e.enabled).length.toLocaleString()} enabled). Click a heading to sort, click a word to edit it.`),
       h('div.actions', {}, h('button', { onclick: () => { A.view = null; A.render(); } }, '← Overview'))),
     h('div.tools.wrap', {},
-      h('input.filter', { placeholder: 'filter by word, meaning or theme…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
-      pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
+      h('input.filter', { placeholder: 'filter…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
+      pick('in', SCOPE), pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
     pager(),
     h('div.awrap', {}, h('table.aw', {}, h('tr', {}, h('th.on', ''), th('Word', 'text'), th('Meaning', 'gloss'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'),
       th('flags', 'flags'), th('alias of', 'alias'), th('themes', 'themes'), th('status', 'status')),
