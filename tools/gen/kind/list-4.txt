@@ -1,0 +1,498 @@
+african_clothing | african clothing {dashiki, kente, boubou, agbada, gele, kanga} | tunic, kaftan, dashiki, kente, djellaba, headscarf, kanga, kufi
+japanese_clothing | japanese clothing {kimono, yukata, obi, hakama, geta, tabi} | kimono, hakama, yukata, obi, kanzashi, happi coat, geta, tabi
+indian_clothing | indian clothing {sari, kurta, dhoti, lehenga, sherwani, dupatta} | jodhpurs, salwar, sari, kurta, salwar kameez, lungi, dhoti, lehenga
+pacific_island_clothing | pacific island clothing {lavalava, sulu, pareo, lei, aloha shirt, piupiu} | sarong, muumuu, pareo, lei, grass skirt, flower crown, shell necklace, hei tiki
+south_american_clothing | south american clothing {poncho, chullo, pollera, ruana, bombachas} | poncho, cape, sandals, bowler hat, gaucho pants, shawl, bombachas, chiripa
+western_wear | western wear {cowboy hat, chaps, bolo tie, bandana, duster} | jeans, bandana, bolo tie, spurs, neckerchief, cowboy hat, ten-gallon hat, Stetson
+european_folk_costume | european folk costume {kilt, lederhosen, dirndl, sporran, clogs, bunad} | clogs, sash, lederhosen, kilt, dirndl, sporran, mantilla, beret
+work_clothes | work clothes {overalls, apron, scrubs, lab coat, hi-vis vest, boiler suit} | overalls, apron, uniform, scrubs, jumpsuit, boilersuit, pinafore, smock
+swimwear | swimwear | rash guard, bandeau, board shorts, bikini, swimsuit, swimming trunks, speedo, wetsuit
+knitwear | knitwear | sweater, pullover, jersey, cardigan, bolero, shrug, scarf, leg warmers
+fashion_styles | fashion styles {preppy, boho, grunge, punk, goth, streetwear, vintage} | grunge, rockabilly, hippie, kawaii, preppy, boho, punk, goth
+fashion_designers | fashion designers {real designers and houses: Chanel, Dior, Versace, Armani, Prada} | Chanel, Dior, Versace, Armani, Prada, Gucci, Louis Vuitton, Calvin Klein
+socks_and_hosiery | socks and hosiery | leggings, garter, tights, leg warmers, bed socks, socks, stockings, ankle
+rain_gear | rain gear | raincoat, parka, poncho, umbrella, anorak, windbreaker, trench coat, cagoule
+winter_clothes | winter clothes | coat, parka, hat, scarf, gloves, earmuffs, fleece, long johns
+accessories | accessories | backpack, rucksack, belt, hat, tie, bow tie, watch, ring
+shoes | shoes | pointe, ballet slippers, clogs, sandals, sneakers, loafers, heels, flip-flops
+boots | boots | rubber boots, galoshes, gumboots, cleats, hiking, ankle, chelsea, Doc Martens
+hats | hats | tricorn, top hat, sun hat, pork pie, fez, Stetson, toque, beanie
+historical_hats | historical hats {bicorne, tricorne, top hat, bowler, boater, cloche} | tricorn, top hat, pork pie, wimple, coif, hennin, cocked hat, toque
+bags | bags | backpack, rucksack, purse, pocketbook, fanny pack, satchel, briefcase, saddlebag
+jewelry | jewelry | ring, necklace, bracelet, earrings, cufflinks, brooch, tie pin, tie clip
+scarves_and_gloves | scarves and gloves | scarf, gloves, bandana, oven mitt, tippet, neckerchief, mittens, shawl
+eyewear | eyewear | sunglasses, shades, sunnies, monocle, pince-nez, lorgnette, eye patch, 3D glasses
+hair_accessories | hair accessories | comb, bobby pin, headband, Alice band, scrunchie, bandana, tiara, ribbon
+neckwear | neckwear {tie, bow tie, cravat, ascot, choker, neckerchief} | bib, tie, bow tie, necklace, scarf, bandana, tie pin, tie clip
+fabrics_and_sewing | fabrics and sewing | denim, tape measure, needle, thread, button, zipper, fabric, scissors
+fabrics | fabrics | denim, alpaca, cotton, silk, wool, linen, velvet, satin
+cotton_fabrics | cotton fabrics {denim, calico, muslin, gingham, poplin, corduroy} | denim, muslin, calico, gauze, percale, sateen, cheesecloth, gingham
+wool_fabrics | wool fabrics {tweed, flannel, cashmere, merino, mohair, felt} | wool, felt, tweed, pashmina, flannel, cashmere, gabardine, mohair
+fabrics_from_animals | fabrics from animals | alpaca, silk, wool, felt, leather, cashmere, suede, mohair
+tough_fabrics | tough fabrics | denim, tweed, canvas, leather, corduroy, twill, gabardine, jute
+sewing_words | sewing words | tape measure, needle, thread, thimble, pattern, hem, seam, stitch
+embroidery_stitches | embroidery stitches | cross, back, french knot, stem, split, couching, herringbone, lazy daisy
+sewing_kit | sewing kit | tape measure, needle, thread, button, zipper, scissors, thimble, bobbin
+knitting_words | knitting words | wool, crochet hook, crochet, Fair Isle, knit, purl, yarn, cast on
+fabric_prints | fabric prints | camouflage, tie-dye, batik, harlequin, gingham, chevron, argyle, stripes
+clothing_parts | clothing parts | button, zipper, hem, seam, pleat, hood, sleeve, collar
+necklines | necklines {V-neck, crew, scoop, boat, sweetheart, halter} | turtleneck, henley, v-neck, surplice, crew neck, scoop neck, scoop, boat neck
+fastenings | fastenings | carabiner, belt, brooch, button, zipper, Velcro, hook-and-loop, safety pin
+sewing_tools | sewing tools | tape measure, needle, scissors, thimble, bobbin, seam ripper, pincushion, embroidery hoop
+holidays_and_celebrations | holidays and celebrations | christening, baby shower, wedding, birthday, anniversary, Christmas, Halloween, Easter
+christmas | christmas | candy cane, eggnog, reindeer, mistletoe, Boxing Day, frankincense, stollen, panettone
+christmas_carols | christmas carols | jingle bells, Silent Night, Stille Nacht, Deck the Halls, Joy to the World, O Holy Night, Away in a Manger, Hark the Herald
+santa_s_reindeer | santa's reindeer {Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner, Blitzen, Rudolph} | Rudolph, Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner
+twelve_days_of_christmas_gifts | twelve days of christmas gifts {partridge, turtle doves, French hens, calling birds, gold rings, geese, swans, m} | partridge, turtle doves, French hens, calling birds, gold rings, geese a-laying, swans a-swimming, maids a-milking
+halloween | halloween | pumpkin, candy, bat, spider, scarecrow, skeleton, Day of the Dead, Día de los Muertos
+easter | easter | jelly beans, rabbit, bunny, tulip, daffodil, narcissus, Passover, Pesach
+new_year | new year | champagne, bubbly, fizz, Big Ben, Elizabeth Tower, Times Square, New Year's Eve, Hogmanay
+thanksgiving | thanksgiving | turkey, sweet potato, gravy, gratitude, thankfulness, feast, Mayflower, wishbone
+weddings | weddings | cake, church, altar, ring, veil, garter, bachelor party, bachelorette party
+wedding_anniversaries | wedding anniversaries {anniversary gift names: paper, tin, crystal, silver, pearl, ruby, gold} | iron, gold, silver, copper, tin, platinum, willow, sugar
+wedding_rhyme | wedding rhyme {Exactly: something old, something new, something borrowed, something blue, sixpe} | something borrowed, something old, sixpence, something new, something blue
+people_at_the_ceremony | wedding ceremony people | bride, groom, best man, bridesmaid, groomsman, maid of honor, flower girl, page boy
+things_arranged_before_the_big_day | wedding preparations | bachelor party, bachelorette party, guest list, save the date, invitation, seating plan, trousseau, dowry
+what_the_couple_wears_and_carries | wedding outfit items | ring, veil, garter, bouquet, buttonhole, boutonniere, something old, bridal gown
+birthdays | birthdays | cake, cupcake, ice cream, bouncy castle, birthday song, clown, musical chairs, pass the parcel
+party_supplies | party supplies | photo booth, confetti, candles, birthday cake, cake topper, paper plates, plastic cups, napkins
+valentine_s_day | valentine's day | perfume, teddy bear, sonnet, pink, kiss, diamond ring, bouquet, heart
+festivals_of_the_world | festivals of the world | Hogmanay, Hanukkah, Diwali, Eid, Ramadan, Mardi Gras, Shrove Tuesday, Pancake Day
+diwali | diwali | gulab jamun, marigold, Ramayana, oil lamp, Ganesh, Ganapati, Rama, Lakshmi
+lunar_new_year | lunar new year | dumplings, Spring Festival, lion dance, parade, fireworks, tangyuan, mandarin oranges, spring rolls
+holi | holi | candy, India, Diwali, squirt gun, malpua, thandai, dancing, Vishnu
+mid_autumn_festival | mid-autumn festival | pomelo, persimmon, tea, cuppa, char, rabbit, bunny, lantern
+ramadan_and_eid | ramadan and eid | mosque, hajj, prayer, supplication, orison, Quran, feast, muezzin
+hanukkah | hanukkah | sour cream, doughnut, olive oil, miracle, Hebrew, brisket, latke, applesauce
+day_of_the_dead | day of the dead | November, marigold, Mexico, skull, skeleton, ancestor, forebear, forefather
+anzac_day | anzac day | April, bugle, rosemary, poppy, Australia, New Zealand, Turkey, soldier
+midsummer | midsummer | June, herring, schnapps, Sweden, Finland, Stonehenge, maypole, sun
+oktoberfest | oktoberfest | pretzel, beer, brew, brewski, Munich, accordion, squeezebox, Ferris wheel
+st_patrick_s_day | st. patrick's day | green, gold, harp, cabbage, soda bread, whisky, clover, shamrock
+gift_wrapping | gift wrapping | scissors, ribbon, scotch tape, double-sided tape, present, wrapping paper, gift wrap, bow
+fireworks | fireworks | pyrotechnics, boom, gunpowder, sparkler, rocket, firecracker, Roman candle, Catherine wheel
+hindu_festivals | hindu festivals | Diwali, Holi, Navratri, Raksha Bandhan, Durga Puja, Onam, Pongal, Ganesh Chaturthi
+life_milestones | life milestones | christening, baby shower, wedding, birthday, anniversary, graduation, housewarming, retirement party
+months | months {January, February, March, April, May, June, July, August, September, October, No} | April, June, September, November, January, February, March, May
+months_with_30_days | months with 30 days {April, June, September, November} | April, June, September, November
+months_with_31_days | months with 31 days {January, March, May, July, August, October, December} | January, March, May, July, August, October, December
+days_and_weeks | days and weeks {weekday names plus weekend, fortnight, midweek} | Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Shrove Tuesday
+season_words | season words {season words: spring, autumn, monsoon, equinox, solstice} | monsoon, thaw, wintry, Yuletide, harvest, spring, summer, autumn
+the_four_seasons | the four seasons {Exactly: spring, summer, autumn, winter.} | spring, summer, autumn, fall, winter
+time_units | time units | generation, term, semester, week, fortnight, two weeks, second, minute
+clocks_and_calendars | clocks and calendars | sundial, watch, pocket watch, stopwatch, hourglass, chronometer, almanac, mantel clock
+clock_parts | clock parts {hand, face, pendulum, chime, cog, escapement} | spring, pendulum, minute hand, hour hand, second hand, mainspring, escapement, balance wheel
+clock_types | clock types {cuckoo, grandfather, sundial, hourglass, stopwatch} | sundial, pocket watch, stopwatch, smartwatch, hourglass, chronometer, mantel clock, pendulum
+times_of_day | times of day | rush hour, bedtime, golden hour, happy hour, breakfast, brekkie, elevenses, vespers
+zodiac_signs | zodiac signs {Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricor} | Aries, the Ram, Taurus, the Bull, Gemini, the Twins, Cancer, the Crab
+chinese_zodiac | chinese zodiac {rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, pig} | pig, horse, goat, ox, tiger, monkey, rat, snake
+days_of_the_week | days of the week {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday} | Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+weekdays | weekdays {Monday, Tuesday, Wednesday, Thursday, Friday} | Monday, Tuesday, Wednesday, Thursday, Friday
+containers | containers | toolbox, amphora, ampoule, bowl, cruet, urn, trunk, tureen
+brewery_containers | brewery containers | barrel, vat, drum, cask, keg, firkin, hogshead, tun
+glass_vessels | glass vessels | ampoule, cruet, decanter, jar, bottle, flask, vial, demijohn
+things_with_a_carrying_handle | things with a carrying handle | toolbox, bucket, shopping bag, hamper, tote, pail, lunch box, punnet
+cords_and_strings | cords and strings {rope, twine, cord, lace, ribbon, yarn, cable} | guy rope, guy line, paracord, hair tie, lanyard, thread, ribbon, wool
+paper_goods | paper goods {tissue, napkin, paper towel, envelope, wrapping paper} | notebook, composition book, flyer, vellum, envelope, butcher paper, napkin, tablecloth
+things_used_for_wiping | things used for wiping | napkin, toilet paper, tissue paper, tissue, paper towel, facial tissue, Kleenex, paper napkin
+office_and_school_supplies | office and school supplies | notebook, composition book, flyer, envelope, notepad, sticky note, printer paper, index card
+candle_words | candle words {candle types and parts: taper, votive, tealight, wick, wax, candelabra} | beeswax, candle, chandler, candlestick, candelabra, sconce, taper, votive
+emergency_supplies | emergency supplies | compass, life jacket, life vest, sleeping bag, bedroll, flashlight, tarp, tarpaulin
+energy_and_light_sources | blackout supplies | flashlight, matches, ferro rod, power bank, portable charger, generator, glow stick, candles
+retro_household_items | retro household items {rotary phone, VCR, typewriter, mangle, washboard, record player} | percolator, hair straightener, GHDs, pager, icebox, mangle, Walkman, transistor radio
+old_music_gear | old music gear | Walkman, transistor radio, boombox, record player, gramophone, cassette player, tape deck, eight-track
+things_without_a_plug | things without a plug | percolator, icebox, mangle, washboard, carpet sweeper, wringer, chamber pot, bed warmer
+old_office_tech | old office tech | pager, rolodex, typewriter, floppy disk, answering machine, dial-up modem, fax machine, mimeograph
+home_decor | home decor {vase, ornament, picture frame, figurine, candlestick} | poster, painting, sculpture, tapestry, figurine, throw, centerpiece, table runner
+cutlery | cutlery | spork, ladle, bread knife, tablespoon, teaspoon, knife, spoon, soup spoon
+crockery | crockery | ramekin, plate, bowl, teacup, salad plate, saucer, gravy boat, trencher
+drinking_vessels | drinking vessels | sippy cup, water bottle, glass, wine glass, water glass, teacup, champagne flute, flask
+serving_dishes | serving dishes | cheese board, pie dish, gravy boat, tureen, bread basket, epergne, teapot, sugar bowl
+locks_and_keys | locks and keys | key ring, lock, deadbolt, latch, padlock, key, keyhole, combination
+cozy_things | cozy things {things that make a home snug: blanket, cocoa, slippers} | hot chocolate, cocoa, armchair, soup, stew, window seat, pillow, blanket
+things_you_plug_in | things you plug in {mains-powered household items} | baby monitor, hair dryer, curling iron, television, telly, tube, idiot box, small screen
+kitchen_gadgets | kitchen electricals | fridge, freezer, microwave, microwave oven, dishwasher, toaster, kettle, blender
+things_with_handles | things with handles | hammer, screwdriver, wrench, axe, crowbar, hatchet, wheelbarrow, watering can
+kitchen_tools | kitchen tools | cleaver, skillet, saucepan, wok, spatula, whisk, ladle, tongs
+things_with_buttons | things with buttons {clothing and devices} | dashboard, pajamas, alarm clock, radio, walkie-talkie, two-way radio, intercom, microwave
+things_you_wear | buttoned clothing | pajamas, shirt, trousers, slacks, jeans, jacket, coat, cardigan
+things_you_switch_on | push-button devices | alarm clock, radio, intercom, microwave, microwave oven, washing machine, toaster, doorbell
+things_with_lids | things with lids | cooler, esky, Dutch oven, lunchbox, packed lunch, washing machine, kettle, rice cooker
+things_with_legs | things with legs {furniture and objects, not animals} | chair, sofa, couch, chesterfield, armchair, stool, bench, deckchair
+ball_sports | ball sports | soccer, football, basketball, baseball, volleyball, softball, rugby, handball
+team_ball_sports | team ball sports | football, basketball, baseball, volleyball, softball, rugby, handball, cricket
+sports_balls | sports balls {types of ball named for their sport or object: football, golf ball, shuttlecock,} | football, basketball, baseball, volleyball, softball, rugby, handball, cricket
+soccer_terms | soccer terms | goal, penalty, corner kick, offside, referee, goalkeeper, goalie, striker
+soccer_positions | soccer positions | goalkeeper, goalie, striker, midfielder, defender, winger, sweeper, playmaker
+european_soccer_clubs | european soccer clubs | Galatasaray, Cim Bom, Fenerbahçe, Real Madrid, Barcelona, Manchester United, Liverpool, Arsenal
+ball_skills | soccer skills | header, volley, bicycle kick, overhead kick, back heel, rabona, Panenka, toe poke
+basketball_terms | basketball terms | hoop, dunk, rebound, free throw, three-pointer, layup, backboard, slam dunk
+nba_teams | nba teams | Lakers, Celtics, Bulls, Warriors, Knicks, Heat, Spurs, Nets
+american_football_terms | american football terms | fumble, blitz, pylon, kickoff, touchdown, quarterback, field goal, end zone
+nfl_teams | nfl teams | Patriots, Cowboys, Packers, Steelers, 49ers, Giants, Jets, Eagles
+american_football_positions | american football positions | quarterback, tackle, linebacker, wide receiver, running back, safety, tight end, cornerback
+baseball_terms | baseball terms | bleachers, dugout, home run, strike, catcher, batter, bat, inning
+mlb_teams | mlb teams | Yankees, Red Sox, Dodgers, Cubs, Giants, Cardinals, Mets, Braves
+baseball_positions | baseball positions {Exactly: pitcher, catcher, first baseman, second baseman, third baseman, shortst} | catcher, shortstop, pitcher, first baseman, first sacker, second baseman, third baseman, left fielder
+baseball_bases | baseball bases {Exactly: first base, second base, third base, home plate.} | first, second, third, hot corner, home plate, home base
+ballpark_parts | ballpark parts | bleachers, dugout, bullpen, outfield, infield, diamond, mound, on-deck circle
+pitching_terms | baseball pitching terms | bullpen, curveball, fastball, mound, strikeout, slider, changeup, knuckleball
+hitting_terms | baseball hitting terms | home run, batter, bat, bunt, grand slam, foul ball, RBI, pinch hitter
+cricket_terms | cricket terms | sledging, umpire, wicket, bat, bowler, batsman, over, six
+cricket_fielding_positions | cricket fielding positions | bowler, wicketkeeper, gully, slip, point, cover, mid-off, mid-on
+cricket_dismissals | cricket dismissals {bowled, caught, LBW, run out, stumped, hit wicket} | bowled, caught, LBW, leg before wicket, run out, stumped, hit wicket
+bowling_deliveries | cricket deliveries | googly, yorker, bouncer, no-ball, wide, leg spin, off spin, doosra
+players_and_officials | cricket players and officials | umpire, bowler, batsman, wicketkeeper, all-rounder, spinner, nightwatchman, tail-ender
+rugby_terms | rugby terms | haka, try, scrum, tackle, conversion, lineout, ruck, maul
+volleyball_terms | volleyball terms | front row, back row, spike, serve, set, block, dig, bump
+sports_with_a_net | sports with a net | soccer, football, basketball, volleyball, handball, cricket, lacrosse, water polo
+sports_played_with_sticks | sports played with sticks | lacrosse, polo, field hockey, hurling, camogie, croquet, shinty, bandy
+racket_and_target_sports | racket and target sports | tennis, badminton, squash, table tennis, ping pong, whiff-whaff, golf, archery
+racket_sports | racket sports | cricket, lacrosse, rounders, pickleball, jai alai, tennis, badminton, squash
+tennis_terms | tennis terms | grand slam, match point, serve, ace, love, deuce, set, racket
+tennis_shots | tennis shots | serve, ace, volley, forehand, backhand, lob, smash, topspin
+tennis_grand_slams | tennis grand slams {Exactly: Wimbledon, US Open, Australian Open, French Open.} | Wimbledon, US Open, Australian Open, French Open, Roland Garros
+golf_terms | golf terms | tee, Clubhouse, birdie, par, bogey, hole in one, ace, fairway
+golf_shots | golf shots | putt, drive, hook, chip, pitch, shank, draw, fade
+golf_course_features | golf course features | tee, Clubhouse, fairway, rough, dogleg, pin, cup, sand trap
+golf_clubs | golf clubs | driver, iron, wood, wedge, putter, hybrid, sand wedge, pitching wedge
+golf_majors | golf majors {Exactly: The Masters, US Open, PGA Championship, The Open Championship.} | The Masters, US Open, PGA Championship, The Open Championship, British Open, Masters
+scoring_terms | golf scoring terms | birdie, par, bogey, hole in one, ace, double bogey, double eagle, eagle
+table_tennis_terms | table tennis terms | ping pong, backspin, deuce, forehand, backhand, drop shot, topspin, paddle
+cue_sports_terms | cue sports terms {snooker, pool and billiards words} | snooker, billiards, carom, eight ball, jump shot, bank shot, cue, pocket
+cue_strokes | cue strokes | jump shot, bank shot, safety, plant, kiss, masse, kick shot, combination
+archery_terms | archery terms | crossbow, field archery, yumi, archer, bow, arrow, longbow, arrowhead
+darts_terms | darts terms | tops, bullseye, grouping, dart, dartboard, oche, double, barrel
+bowling_terms | bowling terms | gutter, perfect game, strike, spare, pin, lane, split, frame
+water_sports | water sports | yacht, swimming, diving, surfing, rowing, canoeing, kayaking, sailing
+swimming_strokes | swimming strokes | sculling, freestyle, backstroke, breaststroke, front crawl, sidestroke, doggy paddle, medley
+main_swimming_strokes | main swimming strokes {Exactly: freestyle, backstroke, breaststroke, butterfly.} | freestyle, backstroke, breaststroke, butterfly
+swimming_words | swimming words | warm-up, cool-down, personal best, towel, swimsuit, swim cap, bathing suit, goggles
+diving_terms | diving terms {springboard and platform diving, not scuba} | somersault, springboard, platform, dive, pike, tuck, twist, layout
+scuba_words | scuba words | wetsuit, scuba, snorkel, buoyancy, flippers, open water, mask, oxygen tank
+underwater_gear | underwater gear | wetsuit, snorkel, flippers, mask, oxygen tank, regulator, fins, dive computer
+surfing_words | surfing words | bodysurfing, Duke Kahanamoku, rash guard, shaka, wetsuit, stoked, kook, rip current
+surfer_slang | surfer slang | shaka, stoked, kook, wipeout, hang ten, goofy, gnarly, radical
+surf_moves | surf moves | hang ten, paddle out, duck dive, rip curl, cutback, bottom turn, snap, floater
+rowing_words | rowing words | skiff, coxswain, regatta, oar, scull, stroke, boathouse, rowlock
+sailing_sports | sailing sports | yacht, dinghy, rudder, catamaran, skiff, sailing, windsurfing, kitesurfing
+board_and_paddle_sports | board and paddle sports | surfing, canoeing, kayaking, windsurfing, kitesurfing, kiteboarding, waterskiing, wakeboarding
+paddled_boat_sports | paddled boat sports | canoeing, kayaking, rafting, whitewater rafting, canoe polo, sea kayaking, dragon boating, kayak polo
+sports_ridden_on_a_board | sports ridden on a board | surfing, windsurfing, kitesurfing, kiteboarding, wakeboarding, paddleboarding, bodyboarding, boogie boarding
+engine_powered_sports | motorboat sports | waterskiing, wakeboarding, jet skiing, flyboarding, kneeboarding, tubing, wakesurfing, powerboating
+winter_sports | winter sports | bandy, skiing, snowboarding, ice skating, figure skating, ice hockey, curling, bobsled
+snow_sports | snow sports | skiing, snowboarding, curling, bobsled, luge, ski jumping, cross-country skiing, biathlon
+olympic_snow_sports | olympic snow sports | skiing, snowboarding, curling, bobsled, luge, ski jumping, cross-country skiing, biathlon
+skiing_words | skiing words | chalet, slalom, moguls, ski boots, goggles, couloir, powder, sidestep
+skating_words | skating words | Zamboni, ice resurfacer, figure skating, speed skating, short track, ice dancing, jump, rink
+figure_skating_moves | figure skating moves | axel, lutz, salchow, toe loop, flip, loop, camel spin, sit spin
+ice_hockey_terms | ice hockey terms | Zamboni, ice resurfacer, Puck, rink, blue line, offside, goalie, hat trick
+nhl_teams | nhl teams | Bruins, Canadiens, Maple Leafs, Rangers, Red Wings, Blackhawks, Penguins, Flyers
+snowboard_tricks | snowboard tricks | backflip, ollie, nollie, fakie, frontside 180, backside 180, 360, 540
+curling_words | curling words | curling, broom, sheet, skip, hog line, hack, sweeping, draw
+combat_sports | combat sports | boxing, wrestling, judo, karate, taekwondo, kickboxing, Muay Thai, MMA
+martial_arts | martial arts | kyudo, judo, karate, taekwondo, kickboxing, Muay Thai, MMA, sumo
+japanese_martial_arts | japanese martial arts | kyudo, judo, karate, jiu-jitsu, sumo, kendo, aikido, iaido
+chinese_martial_arts | chinese martial arts | kung fu, wing chun, Jeet Kune Do, wushu, sanda, tai chi, hung gar, shaolin kung fu
+southeast_asian_martial_arts | southeast asian martial arts | Muay Thai, eskrima, arnis, Lethwei, silat, Vovinam, Bokator, Muay Boran
+weapon_based_martial_arts | weapon-based martial arts | kyudo, kendo, eskrima, arnis, iaido, naginata, bojutsu, kenjutsu
+grappling_arts | grappling arts | judo, sumo, aikido, sambo, Brazilian jiu-jitsu, glima, jujutsu, Ssireum
+boxing_terms | boxing terms | gloves, mouthguard, punching bag, southpaw, jab, hook, uppercut, cross
+boxing_weight_classes | boxing weight classes | heavyweight, flyweight, bantamweight, featherweight, lightweight, welterweight, middleweight, cruiserweight
+wrestling_terms | wrestling terms | singlet, pin, takedown, half nelson, full nelson, headlock, suplex, body slam
+sumo_words | sumo words | sumo, sumo wrestler, dohyo, yokozuna, rikishi, mawashi, basho, chanko nabe
+fencing_terms | fencing terms | saber, touché, hilt, lamé, tierce, foil, epee, parry
+karate_words | karate words | kyokushin, shotokan, sensei, dojo, Okinawa, kata, kumite, obi
+strikes_kicks_and_blocks | karate strikes, kicks and blocks | shuto, mae geri, gedan barai, oi zuki, gyaku zuki, mawashi geri, yoko geri, age uke
+judo_words | judo words | ippon, waza-ari, yuko, koka, shido, hansoku-make, osoto gari, seoi nage
+throwing_moves | judo throws | osoto gari, seoi nage, uchi mata, harai goshi, tomoe nage, kosoto gari, ouchi gari, ko-uchi gari
+pins_and_chokes | judo groundwork | kesa gatame, juji gatame, shime-waza, osaekomi, hold-down, armlock, kami shiho gatame, kata gatame
+track_events | track events | marathon, relay, 100 metres, 200 metres, 400 metres, 800 metres, 1500 metres, 5000 metres
+decathlon_events | decathlon events {100 meters, long jump, shot put, high jump, 400 meters, 110 meter hurdles, discu} | long jump, high jump, pole vault, 100 metres, 400 metres, 1500 metres, shot put, discus
+field_events | field events | personal best, long jump, high jump, pole vault, triple jump, foul line, shot put, discus
+gymnastics | gymnastics | Simone Biles, Nadia Comaneci, trampoline, leotard, cartwheel, backflip, splits, somersault
+gymnastics_apparatus | gymnastics apparatus | trampoline, springboard, floor exercise, vault, balance beam, uneven bars, parallel bars, pommel horse
+gymnastics_moves | gymnastics moves | cartwheel, backflip, splits, somersault, handstand, round-off, walkover, aerial
+running_words | running words | warm-up, treadmill, personal best, interval training, VO2 max, Parkrun, shin splints, fartlek
+famous_marathons | famous marathons | Paris, Rome, Sydney, Los Angeles, Dubai, Amsterdam, Athens, Everest
+triathlon_words | triathlon words | aquathlon, wetsuit, swim cap, swim goggles, pull buoy, open water, triathlon, transition
+kit_and_equipment | triathlon kit | wetsuit, swim cap, swim goggles, pull buoy, aero bars, tri bike, timing chip, elastic laces
+olympic_sports | olympic sports | dressage, equestrian, soccer, football, basketball, baseball, volleyball, softball
+team_sports | olympic team sports | soccer, football, basketball, baseball, volleyball, softball, handball, cricket
+aquatic_sports | olympic aquatic sports | water polo, swimming, diving, surfing, rowing, canoeing, sailing, synchronized swimming
+cheerleading_words | cheerleading words | megaphone, toe touch, pep rally, cheerleader, tick-tock, chant, stunt, base
+paralympic_sports | paralympic sports | goalball, wheelchair rugby, wheelchair basketball, sitting volleyball, wheelchair tennis, boccia, para swimming, para athletics
+sports_equipment | sports equipment | carabiner, dumbbell, free weights, jump rope, foam roller, mouthguard, barbell, yoga mat
+gym_gear | gym gear | dumbbell, free weights, jump rope, foam roller, barbell, yoga mat, kettlebell, punching bag
+protective_gear | protective sports gear | mouthguard, helmet, boxing gloves, baseball glove, goggles, shin guards, catcher's mitt, football helmet
+things_you_swing | things you swing | cricket bat, golf club, tennis racket, lacrosse stick, racket, baseball bat, hockey stick, croquet mallet
+sports_venues | sports venues | Colosseum, stadium, halfpipe, Circus Maximus, hippodrome, grandstand, dojo, locker room
+places_for_winter_sports | places for winter sports | halfpipe, ice rink, ski slope, ski resort, curling rink, ski jump hill, bobsled track, Cresta Run
+playing_surfaces | playing surfaces | tennis court, basketball court, football pitch, soccer field, baseball diamond, cricket ground, squash court, real tennis court
+sports_officials | sports officials | referee, VAR, umpire, ball boy, line judge, chair umpire, linesman, timekeeper
+trackside_officials | motor racing officials | race starter, race marshal, finish judge, clerk of the course, scrutineer, commissaire, clerk of scales, stipendiary steward
+sports_clothing | sports clothing | shorts, hoodie, leggings, polo shirt, tank top, singlet, tracksuit, jogging suit
+layers_for_cold_weather | layers for cold weather | hoodie, leggings, tracksuit, jogging suit, sweatpants, trackies, gilet, bodywarmer
+scoring_words | scoring words | checkmate, bullseye, goal, hat trick, own goal, clean sheet, free throw, three-pointer
+golf_scores | golf scores | birdie, par, bogey, hole in one, ace, stableford, eagle, albatross
+sports_verbs | sports verbs {actions players do: kick, dribble, serve, tackle, volley} | swim, jump, kick, fumble, shoot, pass, hit, throw
+famous_sporting_events | famous sporting events | Super Bowl, Six Nations, boat race, America's Cup, Cowes Week, Olympics, World Cup, Wimbledon
+multi_sport_events | multi-sport events | Olympics, Paralympics, Commonwealth Games, X Games, Winter Olympics, Summer Olympics, Gold Coast Games, Special Olympics
+tournament_words | tournament words | penalty shootout, extra time, relegation, repechage, seed, final, semifinal, quarterfinal
+tournament_formats | tournament formats | round robin, knockout round, group stage, double elimination, single elimination, pool play, swiss system, stepladder playoff
+stages_of_a_tournament | stages of a tournament | final, semifinal, quarterfinal, round of 16, medal round, grand final, qualifying round, preliminary round
+famous_stadiums | famous stadiums | Camp Nou, Wembley, Old Trafford, Anfield, Santiago Bernabéu, San Siro, Maracanã, Allianz Arena
+american_sports_venues | american sports venues | Yankee Stadium, Fenway Park, Wrigley Field, Madison Square Garden, Rose Bowl, Lambeau Field, Soldier Field, MetLife Stadium
+english_football_grounds | english football grounds | Wembley, Old Trafford, Anfield, Stamford Bridge, Goodison Park, Villa Park, Hillsborough, Emirates
+rugby_grounds | rugby grounds | Twickenham, Murrayfield, Principality Stadium, Aviva Stadium, Eden Park, Ellis Park, Cardiff Arms Park, Lansdowne Road
+olympic_host_cities | olympic host cities | London, Paris, Rome, Tokyo, Sydney, Moscow, Berlin, Los Angeles
+trophies_and_prizes | trophies and prizes | medal, trophy, gold medal, yellow jersey, golden boot, Webb Ellis Cup, America's Cup, Stanley Cup
+prizes_you_can_wear | prizes you can wear | medal, gold medal, yellow jersey, championship belt, silver medal, bronze medal, Green Jacket, green jersey
+famous_races | famous races {Tour de France, Kentucky Derby, Boston Marathon, Indy 500, Grand National, Monac} | boat race, Fastnet, Tour de France, Kentucky Derby, Indy 500, Boston Marathon, Daytona 500, Monaco Grand Prix
+motor_races | motor races | Indy 500, Daytona 500, Monaco Grand Prix, Le Mans 24 Hours, Dakar Rally, Isle of Man TT, Cannonball Run, Pikes Peak
+bike_races | bike races | Tour de France, Giro d'Italia, Vuelta a España, Paris-Roubaix, Milan-San Remo, Tour of Flanders, Tour of Britain, Strade Bianche
+horse_races | horse races | Kentucky Derby, Melbourne Cup, Preakness Stakes, Belmont Stakes, Epsom Derby, Breeders' Cup, Cheltenham Gold Cup, Grand National
+famous_athletes | famous athletes | Usain Bolt, Michael Jordan, Serena Williams, Lionel Messi, Cristiano Ronaldo, Muhammad Ali, Tiger Woods, LeBron James
+famous_soccer_players | famous soccer players | Lionel Messi, Cristiano Ronaldo, Pelé, David Beckham, Diego Maradona, Neymar, Zinedine Zidane, Ronaldinho
+english_players | english soccer players | David Beckham, Bobby Charlton, Bobby Moore, Wayne Rooney, Steven Gerrard, Frank Lampard, Gary Lineker, Harry Kane
+brazilian_players | brazilian soccer players | Pelé, Neymar, Ronaldinho, Garrincha, Kaká, Roberto Carlos, Vinícius Júnior, Jairzinho
+tennis_champions | tennis champions | Serena Williams, Roger Federer, Rafael Nadal, Novak Djokovic, Venus Williams, Pete Sampras, Andre Agassi, Steffi Graf
+women_s_tennis_stars | women's tennis stars | Serena Williams, Venus Williams, Steffi Graf, Martina Navratilova, Naomi Osaka, Billie Jean King, Chris Evert, Monica Seles
+american_tennis_stars | american tennis stars | Serena Williams, Venus Williams, Pete Sampras, Andre Agassi, John McEnroe, Jimmy Connors, Arthur Ashe, Billie Jean King
+famous_boxers | famous boxers | Muhammad Ali, Mike Tyson, Floyd Mayweather, Joe Louis, Rocky Marciano, Manny Pacquiao, Tyson Fury, Anthony Joshua
+basketball_legends | basketball legends | Michael Jordan, LeBron James, Kobe Bryant, Shaquille O'Neal, Magic Johnson, Larry Bird, Stephen Curry, Wilt Chamberlain
+olympic_legends | olympic legends | Usain Bolt, Michael Phelps, Simone Biles, Jesse Owens, Mo Farah, Nadia Comaneci, Carl Lewis, Eliud Kipchoge
+formula_one_drivers | formula one drivers | Lewis Hamilton, Michael Schumacher, Ayrton Senna, Max Verstappen, Sebastian Vettel, Fernando Alonso, Alain Prost, Niki Lauda
+famous_golfers | famous golfers | Tiger Woods, Jack Nicklaus, Arnold Palmer, Rory McIlroy, Phil Mickelson, Gary Player, Tom Watson, Seve Ballesteros
+famous_cricketers | famous cricketers | Sachin Tendulkar, Virat Kohli, Don Bradman, Shane Warne, Brian Lara, Ian Botham, Ben Stokes, Joe Root
+baseball_legends | baseball legends | Babe Ruth, Jackie Robinson, Lou Gehrig, Hank Aaron, Derek Jeter, Shohei Ohtani, Joe DiMaggio, Mickey Mantle
+american_football_legends | american football legends | Tom Brady, Joe Montana, Peyton Manning, Patrick Mahomes, Jerry Rice, Walter Payton, Jim Brown, Dan Marino
+women_athletes | women athletes | Serena Williams, Simone Biles, Venus Williams, Nadia Comaneci, Steffi Graf, Martina Navratilova, Naomi Osaka, Katie Ledecky
+famous_runners | famous runners | Usain Bolt, Jesse Owens, Mo Farah, Carl Lewis, Eliud Kipchoge, Haile Gebrselassie, Wilma Rudolph, Emil Zátopek
+horse_and_animal_sports | horse and animal sports | dressage, show jumping, steeplechase, rodeo, polo, dog sledding, horse racing, eventing
+horse_riding_words | horse riding words | horse, pony, stallion, mare, gelding, foal, saddle, bridle
+horse_racing_terms | horse racing terms | colt, filly, yearling, thoroughbred, jockey, paddock, stud, steeplechase
+famous_horse_races | famous horse races | Kentucky Derby, Royal Ascot, Melbourne Cup, Preakness Stakes, Belmont Stakes, Epsom Derby, Breeders' Cup, Cheltenham Gold Cup
+equestrian_events | equestrian events | dressage, show jumping, steeplechase, polo, horse racing, eventing, harness racing, barrel racing
+rodeo_words | rodeo words | rodeo, barrel racing, bull riding, calf roping, steer wrestling, mutton busting, bareback riding, cinch
+bullfighting_words | bullfighting words | bull, Spain, ear, running of the bulls, matador, crowd, bullfight, bull ring
+famous_racehorses | famous racehorses | Red Rum, Secretariat, Seabiscuit, Phar Lap, Frankel, man o' war, Shergar, Arkle
+canine_contests | canine contests | dog sledding, greyhound racing, dog racing, dog agility, sheepdog trials, lure coursing, flyball, dock diving
+races_between_animals | races between animals | steeplechase, horse racing, harness racing, greyhound racing, dog racing, pigeon racing, camel racing, flat racing
+adventure_and_outdoor_sports | adventure and outdoor sports | orienteering, canyoneering, coasteering, ice climbing, rock climbing, mountaineering, hiking, trekking
+extreme_sports | extreme sports | surfing, kayaking, windsurfing, kitesurfing, kiteboarding, wakeboarding, scuba diving, jet skiing
+air_sports | air sports | skydiving, base jumping, paragliding, hang gliding, wingsuit flying, paramotoring, gliding, indoor skydiving
+climbing_words | climbing words | carabiner, bouldering, sport climbing, ascender, chalk bag, belay, chalk, rappel
+mountaineering_words | mountaineering words | glacier, peak, ridge, summit, moraine, whiteout, expedition, bivouac
+fishing_words | fishing words | boat, pier, trawler, waders, creel, sinker, rod, reel
+fishing_tackle | fishing tackle | waders, creel, sinker, rod, reel, hook, bait, lure
+hunting_words | hunting words | venison, hound, safari, camouflage, rifle, crossbow, falconry, gun dog
+activities_on_foot | activities on foot | orienteering, hiking, trekking, geocaching, trail running, backpacking, gorge walking, fell running
+games_of_chance | games of chance | dice, roulette, blackjack, poker, craps, baccarat, slot machine, one-armed bandit
+casino_games | casino games | dice, horse racing, roulette, blackjack, poker, craps, baccarat, slot machine
+casino_words | casino words | dice, Las Vegas, cashier, jackpot, bouncer, tip, loyalty card, casino
+people_in_a_casino | people in a casino | cashier, bouncer, croupier, dealer, high roller, pit boss, gambler, whale
+money_terms_in_gambling | money terms in gambling | jackpot, tip, bet, bankroll, odds, chips, wager, stake
+poker_terms | poker terms | Texas hold'em, poker face, showdown, kicker, Omaha, dealer, ante, rake
+poker_betting_rounds | poker betting rounds {Exactly: preflop, flop, turn, river.} | river, turn, flop, preflop, fourth street, fifth street
+poker_hands | poker hands {high card, pair, two pair, three of a kind, straight, flush, full house, four of} | straight, flush, full house, royal flush, straight flush, four of a kind, three of a kind, two pair
+player_actions | poker player actions | bluff, call, raise, fold, check, all-in, limp, muck
+blackjack_terms | blackjack terms | blackjack, pontoon, dealer, chips, shoe, burn card, hit, stand
+betting_words | betting words | tote, sure thing, bookie, bet, bankroll, punter, favourite, odds
+kinds_of_wager | kinds of wager | each way, ante-post, accumulator, parlay, point spread, moneyline, in-play, over/under
+lottery_words | lottery words | lottery, lotto, raffle, scratch-off, sweepstake, Powerball, Mega Millions, Pick 3
+games_with_things_you_throw | games with things you throw | dice, craps, coin toss, heads or tails, sic bo, chuck-a-luck, hazard, crown and anchor
+games_played_with_a_deck | games played with a deck | blackjack, poker, baccarat, faro, Texas hold'em, video poker, red dog, punto banco
+table_games | table games | chess, checkers, backgammon, Monopoly, Scrabble, Clue, Risk, Go
+board_games | board games | chess, checkers, backgammon, Monopoly, Scrabble, Clue, Risk, Go
+asian_board_games | asian board games | pai gow, Go, Othello, Ludo, Parchís, mahjong, shogi, xiangqi
+card_games | card games | blackjack, poker, baccarat, faro, Texas hold'em, bridge, rummy, gin rummy
+children_s_card_games | children's card games | Uno, crazy eights, go fish, old maid, snap, cheat, war, speed
+trick_taking_games | trick-taking games | bridge, whist, euchre, pinochle, hearts, spades, bezique, piquet
+chess_terms | chess terms | checkmate, grandmaster, check, stalemate, castling, en passant, fork, pin
+chess_openings | chess openings | Sicilian Defense, Ruy Lopez, Queen's Gambit, King's Gambit, Italian Game, French Defense, English, London System
+famous_chess_players | famous chess players | Garry Kasparov, Kasparov, Bobby Fischer, Fischer, Magnus Carlsen, Carlsen, Anatoly Karpov, Boris Spassky
+chess_pieces | chess pieces {Exactly: king, queen, rook, bishop, knight, pawn.} | queen, rook, castle, bishop, pawn, knight, king
+tactical_motifs | chess tactics | fork, pin, skewer, sacrifice, discovered attack, perpetual check, back rank, zwischenzug
+ways_a_game_ends | ways a chess game ends | checkmate, stalemate, draw, resign, perpetual check, smothered mate, scholar's mate, fool's mate
+dice_games | dice games | craps, sic bo, chuck-a-luck, hazard, backgammon, Yahtzee, Farkle, liar's dice
+card_game_words | card game words | talon, shuffle, grand slam, wild card, dealer, ante, deck, trump
+game_pieces | game pieces {things you move or play with on a table: pawn, token, die, tile, marble} | rook, castle, bishop, knight, pawn, thimble, figurine, marble
+word_games | word games | spelling bee, Scrabble, Pictionary, Boggle, hangman, Scattergories, Cranium, acrostic
+mahjong_words | mahjong words | mahjong, pair, dealer, tile, pung, chow, kong, wind
+card_suits | card suits {the four suits of a playing-card deck} | hearts, diamonds, clubs, spades
+tarot_suits | tarot suits {Exactly: wands, cups, swords, pentacles.} | wands, rods, staves, batons, cups, chalices, swords, pentacles
+two_player_games | two-player games | chess, checkers, backgammon, Go, Othello, Connect Four, Battleship, Mastermind
+video_games | video games | Tetris, Pac-Man, Minecraft, Fortnite, Pong, Super Mario, Pokémon, Space Invaders
+video_game_genres | video game genres | visual novel, platformer, shooter, RPG, puzzle, racing, fighting, strategy
+gaming_words | gaming words | quest, high score, cheat code, save point, game over, NPC, respawn, speedrun
+gaming_hardware | gaming hardware | joystick, keyboard, mouse, monitor, RAM, SSD, GPU, motherboard
+arcade_words | arcade words | Skee-Ball, Pac-Man, Pong, Space Invaders, Frogger, Asteroids, Galaga, high score
+pinball_words | pinball words | flipper, plunger, multiball, tilt, bumper, extra ball, drop target, slingshot
+game_controls | game controls | joystick, thumbstick, button, D-pad, trigger, bumper, analog stick, start
+esports_words | esports words | gamer, tournament, headset, Twitch, qualifier, grand final, prize pool, Elo
+power_ups_and_pickups | power-ups and pickups {items collected in video games: coin, extra life, health pack, shield} | rupee, stamina, endurance, bomb, extra life, treasure chest, coin, health pack
+video_game_characters | video game characters | Pac-Man, Donkey Kong, Mario, Pikachu, Kirby, Luigi, Sonic, Link
+nintendo_characters | nintendo characters | Donkey Kong, Mario, Pikachu, Kirby, Luigi, Link, Zelda, Bowser
+villains_and_monsters | video game villains and monsters | Bowser, Creeper, Ganondorf, Dr. Robotnik, Sub-Zero, GLaDOS, Sephiroth, Pyramid Head
+arcade_classics | arcade classics | Tetris, Pac-Man, Pong, Space Invaders, Donkey Kong, Street Fighter, Mortal Kombat, Frogger
+hobbies_and_crafts | hobbies and crafts | bonsai, embroidery, cross-stitch, quilting, patchwork, needlepoint, appliqué, knitting
+crafts | crafts | embroidery, cross-stitch, quilting, patchwork, needlepoint, appliqué, knitting, crochet
+needlework | needlework | embroidery, cross-stitch, quilting, patchwork, needlepoint, appliqué, sewing, sashiko
+yarn_and_thread_crafts | yarn and thread crafts | knitting, crochet, weaving, macrame, felting, tatting, spinning, kumihimo
+collecting_hobbies | collecting hobbies | philately, numismatics, banknotes, fossils, trading cards, comic books, antiques, vinyl records
+model_making | model making | railroad, tweezers, primer, display case, miniature, putty, balsa wood, kit
+puzzles | puzzles | sudoku, Rubik's Cube, acrostic, crossword, tessellation, anagram, word search, cryptogram
+logic_puzzles | logic puzzles | Mastermind, sudoku, Rubik's Cube, crossword, riddle, jigsaw, maze, brain teaser
+magic_tricks | magic tricks | wand, magician, abracadabra, sleight of hand, illusion, levitation, sawing in half, escape artist
+paper_crafts | paper crafts | lantern, origami, scrapbooking, decoupage, card making, bookbinding, collage, stencil
+pottery_words | pottery words | pottery, ceramics, terracotta, kiln, sgraffito, porcelain, vase, potter
+woodworking_words | woodworking words | saw, chisel, mallet, spirit level, plane, adze, clamp, G-clamp
+manual_woodworking_tools | manual woodworking tools | saw, chisel, mallet, spirit level, plane, adze, coping saw, try square
+wood_joints | wood joints | tongue and groove, dovetail, mortise, tenon, rabbet, dado, pocket hole, miter
+hobbies_done_outdoors | hobbies done outdoors | bonsai, photography, gardening, birdwatching, stargazing, rock collecting, fossil hunting, metal detecting
+thread_crafts | thread crafts | embroidery, cross-stitch, quilting, patchwork, needlepoint, appliqué, sewing, tatting
+toys_and_play | toys and play | rattle, teddy bear, doll, jigsaw puzzle, building blocks, Lego, Barbie, yo-yo
+toys | toys | rattle, teddy bear, doll, building blocks, Lego, Barbie, yo-yo, kite
+old_fashioned_playthings | old-fashioned playthings | yo-yo, spinning top, marbles, rocking horse, jack-in-the-box, toy soldier, kaleidoscope, wind-up toy
+playground | playground | picnic table, tetherball, seesaw, swing, slide, trampoline, bouncy castle, hopscotch
+party_games | party games | Pictionary, Jenga, Twister, Cranium, karaoke, musical chairs, pass the parcel, treasure hunt
+outdoor_games | outdoor games | dodgeball, kickball, rounders, bocce, petanque, boules, croquet, lawn bowls
+yard_games | yard games | kickball, bocce, petanque, boules, croquet, lawn bowls, stickball, tetherball
+chasing_games | chasing games | tag, capture the flag, red rover, kick the can, British bulldog, stuck in the mud, red light green light, Mr Wolf
+building_toys | building toys | Jenga, Minecraft, Lego, baseplate, Duplo, Meccano, K'Nex, Lincoln Logs
+dolls_and_figures | dolls and figures | Barbie, action figure, puppet, dollhouse, Transformers, rag doll, matryoshka, figurine
+sports_day_events | sports day events | egg and spoon race, marathon, long jump, high jump, triple jump, relay, 100 metres, 200 metres
+toy_brands | toy brands | Lego, Barbie, Slinky, Frisbee, Play-Doh, Etch A Sketch, Rubik's Cube, Matchbox car
+traditional_playthings | traditional playthings | spinning top, marbles, rocking horse, jack-in-the-box, kaleidoscope, conkers, cat's cradle, jacks
+turkish_football_clubs | turkish football clubs | Galatasaray, Cim Bom, Fenerbahçe, Beşiktaş, Kara Kartallar, Trabzonspor, Başakşehir, Istanbul Basaksehir
+middle_eastern_pastimes | middle eastern pastimes {backgammon, falconry, camel racing, baloot} | pearl diving, camel racing, falconry, camel wrestling, hawking, backgammon, dominoes, rummy
+african_soccer_clubs | african soccer clubs | Al Ahly, Zamalek, Kaizer Chiefs, Orlando Pirates, Mamelodi Sundowns, TP Mazembe, Wydad Casablanca, Wydad
+south_asian_games | south asian games {kabaddi, kho kho, carrom, gilli danda} | kalaripayattu, Ludo, Parchís, snakes and ladders, hopscotch, kabaddi, kho kho, carrom
+aussie_rules_terms | aussie rules terms | back pocket, footy, MCG, free kick, ruck, flanker, grand final, Brownlow Medal
+afl_clubs | afl clubs | Collingwood, Magpies, Pies, Carlton, Blues, Essendon, Bombers, Richmond
+south_american_soccer_clubs | south american soccer clubs | Boca Juniors, River Plate, Flamengo, Corinthians, Palmeiras, Santos, São Paulo, Grêmio
+capoeira_words | capoeira words | capoeira, berimbau, roda, ginga, atabaque, pandeiro, agogô, reco-reco
+highland_games | highland games | bagpipes, highland fling, sword dance, kilt, piping, tartan, hammer throw, tug of war
+british_pub_games | british pub games | darts, snooker, pool, quoits, shuffleboard, arm wrestling, slot machine, pokies
+instruments | instruments | guitar, violin, cello, harp, viola, double bass, banjo, ukulele
+string_instruments | string instruments | guitar, violin, cello, harp, viola, double bass, banjo, ukulele
+guitar_types | guitar types | pedal steel, classical, twelve-string, steel-string, flamenco, lap steel, slide, resonator
+bowed_instruments | bowed instruments | violin, cello, viola, double bass, nyckelharpa, crwth, viol, rebec
+woodwind_instruments | woodwind instruments | flute, saxophone, clarinet, recorder, oboe, bassoon, piccolo, bagpipes
+brass_instruments | brass instruments | trumpet, trombone, tuba, French horn, cornet, bugle, euphonium, flugelhorn
+percussion_instruments | percussion instruments | drum kit, tambourine, triangle, xylophone, maracas, cymbals, timpani, kettledrums
+drums | drums | tambourine, timpani, kettledrums, tabla, bodhrán, tom-tom, djembe, cajon
+keyboard_instruments | keyboard instruments | piano, pianoforte, joanna, organ, accordion, squeezebox, harpsichord, synthesizer
+folk_instruments | folk instruments | harp, banjo, ukulele, mandolin, lute, sitar, balalaika, accordion
+middle_eastern_instruments | middle eastern instruments | lute, tambourine, oud, duduk, ney, saz, darbuka, zurna
+african_instruments | african instruments | xylophone, marimba, vuvuzela, djembe, agogo, mbira, thumb piano, kalimba
+chinese_instruments | chinese instruments | erhu, tam-tam, pipa, guzheng, sheng, dizi, flute, suona
+japanese_instruments | japanese instruments | koto, shakuhachi, shamisen, taiko, kokyu, tsuzumi, biwa, shinobue
+indian_instruments | indian instruments | sitar, tabla, bansuri, harmonium, santoor, sarod, veena, tanpura
+pacific_instruments | pacific instruments | ukulele, didgeridoo, pâté, clapsticks, bullroarer, slit drum, nose flute, pahu
+andean_instruments | andean instruments | guitar, maracas, ocarina, charango, pan flute, panpipes, cajon, quena
+celtic_instruments | celtic instruments | harp, accordion, squeezebox, bagpipes, hurdy-gurdy, crwth, bodhrán, bouzouki
+blown_instruments | blown instruments | harmonica, mouth organ, bagpipes, didgeridoo, tin whistle, penny whistle, panpipes, uilleann pipes
+struck_instruments | struck instruments | tambourine, marimba, tabla, bodhrán, djembe, taiko, darbuka, balafon
+electronic_instruments | electronic instruments | synthesizer, theremin, ondes Martenot, electric guitar, electric piano, Hammond organ, Rhodes piano, mellotron
+instrument_parts | instrument parts | key, string, bow, pedal, guitar neck, fretboard, fingerboard, fret
+guitar_parts | guitar parts | string, fretboard, fingerboard, fret, bridge, tuning peg, machine head, tuning key
+piano_parts | piano parts | key, string, pedal, soundboard, damper, keyboard, music stand, black keys
+classroom_instruments | classroom instruments | ukulele, harmonica, mouth organ, tambourine, triangle, xylophone, recorder, kazoo
+orchestra_instruments | orchestra instruments | violin, cello, harp, viola, double bass, trumpet, trombone, tuba
+plucked_instruments | plucked instruments | guitar, harp, banjo, ukulele, mandolin, sitar, harpsichord, lyre
+music_genres | music genres | disco, rock, pop, jazz, blues, country, hip hop, classical
+rock_styles | rock styles | heavy metal, punk, indie, grunge, emo, new wave, Britpop, shoegaze
+electronic_music_styles | electronic music styles | techno, trance, dubstep, drum and bass, ambient, trip hop, vaporwave, synthpop
+classical_forms | classical music forms | overture, fugue, rhapsody, cantata, waltz, mazurka, gavotte, minuet
+classical_dances | dances in classical music | waltz, mazurka, gavotte, minuet, passacaglia, chaconne, polonaise, sarabande
+works_for_voices | classical vocal works | cantata, opera, requiem, mass, oratorio, lied, madrigal, motet
+orchestral_pieces | orchestral pieces | overture, rhapsody, symphony, concerto, suite, divertimento, concerto grosso, symphonic poem
+jazz_words | jazz words | riff, syncopation, improvisation, ad lib, sideman, ride cymbal, swing, bossa nova
+world_music_styles | world music styles | tango, flamenco, polka, ceilidh, samba, rumba, tarantella, gamelan
+african_music_styles | african music styles | afrobeat, highlife, rai, mbaqanga, juju, gqom, amapiano, kuduro
+arabic_music_words | arabic music words | raqs sharqi, oud, darbuka, dabke, goblet drum, qanun, mizmar, rababa
+asian_music_styles | asian music styles | gamelan, K-pop, bhangra, qawwali, raga, J-pop, gagaku, enka
+latin_music_styles | latin music styles | tango, cha-cha, samba, rumba, salsa, bossa nova, mariachi, merengue
+american_roots_music | american roots music | blues, country, folk, gospel, bluegrass, zydeco, rockabilly, ragtime
+european_folk_music | european folk music | flamenco, polka, mazurka, fandango, tarantella, sea shanty, polonaise, gypsy jazz
+song_types | song types | lullaby, hymn, duet, theme, elegy, ballad, sea shanty, serenade
+hip_hop_words | hip hop words | beat, verse, hook, DJ, disc jockey, lyricist, breakdancing, breaking
+music_words | music words | melody, rhythm, harmony, beat, chorus, verse, lyrics, tune
+music_terms | music terms | melody, rhythm, harmony, beat, chord, scale, key, note
+ways_to_play_a_note | ways to play a note | staccato, legato, arpeggio, glissando, vibrato, tremolo, trill, cantabile
+music_theory_ideas | music theory ideas | harmony, chord, scale, octave, syncopation, counterpoint, cadence, hemiola
+marks_on_sheet_music | marks on sheet music | measure, staff, coda, fermata, pause, key signature, time signature, accidental
+voice_types | voice types | treble, vocalist, chorister, choirboy, tenor, soprano, alto, bass
+classical_voice_types | classical voice types | treble, tenor, soprano, alto, bass, baritone, mezzo-soprano, contralto
+orchestra_words | orchestra words | overture, downbeat, conductor, maestro, soloist, concertmaster, kapellmeister, rehearsal
+orchestra_sections | orchestra sections {Exactly: string, woodwinds, brass, percussion.} | string, woodwinds, brass, percussion
+tempo_words | tempo words | allegro, andante, adagio, presto, largo, moderato, vivace, lento
+dynamics_markings | dynamics markings | crescendo, sforzando, forte, pianissimo, fortissimo, mezzo piano, mezzo forte, diminuendo
+notes_and_rests | notes and rests | clef, fermata, pause, rest, tie, whole, half, minim
+concert_words | concert words | microphone, roadie, mosh pit, box office, amphitheater, gig, stage, audience
+recording_studio_words | recording studio words | microphone, headphones, cans, mixing desk, sound engineer, monitors, pop filter, booth
+music_festivals | music festivals | Glastonbury, Coachella, Woodstock, Lollapalooza, Burning Man, Reading and Leeds, Isle of Wight, Download
+music_players | music players | radio, smart speaker, Bluetooth speaker, Walkman, Alexa, transistor radio, Discman, turntable
+rock_band_lineup | rock band lineup | trio, quartet, singer, vocalist, drummer, guitarist, axeman, bassist
+musical_modes | musical modes {Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian} | Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian
+solfege_notes | solfege notes {do, re, mi, fa, sol, la, ti} | do, re, mi, fa, sol, la, ti
+note_values | note values {whole note, half note, quarter note, eighth note, sixteenth note} | whole, half, minim, quarter, eighth, sixteenth
+italian_music_words | italian music words | staccato, legato, crescendo, arpeggio, coda, fugue, ostinato, cadenza
+musicians | musicians | musician, singer, vocalist, drummer, guitarist, axeman, pianist, piano player
+composers | composers | Mozart, Beethoven, Bach, Chopin, Tchaikovsky, Vivaldi, Handel, Brahms
+baroque_composers | baroque composers | Bach, Vivaldi, Handel, Purcell, Monteverdi, Telemann, Pachelbel, Allegri
+romantic_composers | romantic composers | Chopin, Tchaikovsky, Brahms, Schubert, Liszt, Wagner, Mahler, Dvorak
+opera_composers | opera composers | Mozart, Tchaikovsky, Handel, Wagner, Verdi, Puccini, Rossini, Bizet
+film_composers | film composers | John Williams, Hans Zimmer, Ennio Morricone, Howard Shore, James Horner, Danny Elfman, Alan Silvestri, Jerry Goldsmith
+twentieth_century_composers | twentieth-century composers | Debussy, Ravel, Stravinsky, Rachmaninoff, Elgar, Holst, Copland, Gershwin
+famous_bands | famous bands | Beatles, Rolling Stones, ABBA, U2, Coldplay, Metallica, Pink Floyd, AC/DC
+the_beatles | the beatles {Exactly: John Lennon, McCartney, George Harrison, Ringo Starr.} | Ringo Starr, John Lennon, Lennon, McCartney, Macca, George Harrison
+queen_members | queen members {Freddie Mercury, Brian May, Roger Taylor, John Deacon} | Brian May, Freddie Mercury, Farrokh Bulsara, Roger Taylor, John Deacon
+abba_members | abba members {Agnetha, Bjorn, Benny, Anni-Frid} | Agnetha Faltskog, Agnetha, Bjorn Ulvaeus, Benny Andersson, Benny, Anni-Frid Lyngstad, Frida
+led_zeppelin_members | led zeppelin members {Robert Plant, Jimmy Page, John Paul Jones, John Bonham} | Jimmy Page, John Bonham, Robert Plant, John Paul Jones
+british_bands | british bands | Beatles, Rolling Stones, Coldplay, Pink Floyd, Led Zeppelin, The Who, Fleetwood Mac, Blur
+american_bands | american bands | Metallica, Eagles, Aerosmith, Bon Jovi, Guns N Roses, Kiss, Journey, The Doors
+pop_stars | pop stars | Madonna, Beyonce, Rihanna, Taylor Swift, Britney Spears, Lady Gaga, Katy Perry, Justin Bieber
+jazz_musicians | jazz musicians | Louis Armstrong, Duke Ellington, Miles Davis, Ella Fitzgerald, John Coltrane, Billie Holiday, Count Basie, Dizzy Gillespie
+rock_guitarists | rock guitarists | Prince, Jimi Hendrix, Eric Clapton, Jimmy Page, Brian May, Slash, Keith Richards, Eddie Van Halen
+turkish_singers | turkish singers | Tarkan, Sezen Aksu, Ajda Pekkan, Sertab Erener, Orhan Gencebay, Baris Manco, Ibrahim Tatlises, Mustafa Sandal
+african_musicians | african musicians | Fela Kuti, Miriam Makeba, Youssou N'Dour, Salif Keita, Angelique Kidjo, Hugh Masekela, Burna Boy, Wizkid
+south_american_singers | south american singers | Shakira, Carlos Gardel, Mercedes Sosa, Violeta Parra, Victor Jara, Astrud Gilberto, Caetano Veloso, Gilberto Gil
+country_singers | country singers | Taylor Swift, Johnny Cash, Dolly Parton, Willie Nelson, Garth Brooks, Shania Twain, Kenny Rogers, Hank Williams
+instrument_players | instrument players | Louis Armstrong, Miles Davis, Charlie Parker, Jimi Hendrix, Eric Clapton, Jimmy Page, Eddie Van Halen, Carlos Santana
+voice_performers | voice performers | singer, vocalist, crooner, diva, cantor, chorister, choirboy, backup singer
+dance | dance | audition, dancer, ballet, ballerina, tutu, waltz, tango, disco
+dances | dances | ballet, waltz, tango, breakdancing, breaking, b-boying, square, flamenco
+ballet_terms | ballet terms | ballerina, tutu, choreographer, pirouette, leotard, pointe shoes, barre, pas de deux
+famous_ballets | famous ballets | Sleeping Beauty, Swan Lake, The Nutcracker, Giselle, Romeo and Juliet, Don Quixote, Coppelia, La Sylphide
+ballroom_dances | ballroom dances | waltz, tango, cha-cha, samba, foxtrot, quickstep, jive, rumba
+latin_dances | latin dances | capoeira, tango, flamenco, conga, Macarena, cha-cha, samba, jive
+folk_dances | folk dances | capoeira, square, flamenco, polka, hula, belly, raqs sharqi, ceilidh
+middle_eastern_dances | middle eastern dances | belly, raqs sharqi, hora, sword dance, dabke, khaleeji, whirling dervish, halay
+african_dances | african dances | kuduro, kizomba, gumboot, coupe-decale, bikutsi, ndombolo, azonto, adumu
+asian_dances | asian dances | bhangra, kathak, bharatanatyam, garba, lion dance, fan dance, bon odori, kathakali
+polynesian_dances | polynesian dances | hula, haka, kapa haka, poi, siva, tamure, ori Tahiti, tau'olunga
+latin_american_folk_dances | latin american folk dances | capoeira, tango, samba, merengue, bachata, cumbia, forro, punta
+north_american_folk_dances | north american folk dances | square, barn, hoedown, charleston, jig, line, reel, powwow
+european_folk_dances | european folk dances | waltz, flamenco, polka, ceilidh, can-can, mazurka, fandango, tarantella
+dance_moves | dance moves | twirl, pirouette, moonwalk, twerk, bunny hop, leap, spin, jump
+street_dance_styles | street dance styles | breakdancing, breaking, b-boying, hip hop, popping, locking, krumping, waacking
+dance_studio_words | dance studio words | educator, schoolteacher, choreographer, choreography, routine, leotard, tights, ballet shoes
+art | art | museum, artist, painting, drawing, calligraphy, mosaic, ceramics, sculpture
+painting_words | painting words | canvas, easel, palette, portrait, landscape, still life, watercolor, acrylic
+painters | painters | Leonardo da Vinci, Vincent van Gogh, Pablo Picasso, Claude Monet, Michelangelo, Rembrandt, Salvador Dali, Andy Warhol
+renaissance_painters | renaissance painters | Leonardo da Vinci, Michelangelo, Raphael, Botticelli, Caravaggio, El Greco, Jan van Eyck, Hieronymus Bosch
+impressionist_painters | impressionist painters | Claude Monet, Edgar Degas, Camille Pissarro, Berthe Morisot, Monet, Renoir, Degas, Manet
+modern_artists | modern artists | Andy Warhol, Jackson Pollock, Edvard Munch, Henri Matisse, Edward Hopper, Gustav Klimt, Wassily Kandinsky, Mark Rothko
+dutch_painters | dutch painters | Vincent van Gogh, Rembrandt, Johannes Vermeer, Piet Mondrian, Hieronymus Bosch, Van Gogh, Willem de Kooning, Vermeer
+spanish_painters | spanish painters | Pablo Picasso, Salvador Dali, Joan Miro, Francisco Goya, Diego Velazquez, El Greco, Picasso, Dali
+latin_american_artists | latin american artists {includes Mexican artists such as Kahlo and Rivera} | Frida Kahlo, Diego Rivera, Fernando Botero, David Alfaro Siqueiros, Jose Clemente Orozco, Rufino Tamayo, Joaquin Torres-Garcia, Wifredo Lam
+french_painters | french painters | Claude Monet, Paul Cezanne, Henri Matisse, Paul Gauguin, Edgar Degas, Pierre-Auguste Renoir, Camille Pissarro, Berthe Morisot
+american_painters | american painters | Andy Warhol, Jackson Pollock, Georgia O'Keeffe, Edward Hopper, Mark Rothko, Jean-Michel Basquiat, Roy Lichtenstein, Cy Twombly
+art_movements | art movements | Renaissance, Impressionism, Cubism, Surrealism, pop, street art, minimalism, pointillism
+art_materials | art materials | chalk, sandpaper, canvas, easel, palette, charcoal, watercolor, acrylic
+sculpture_words | sculpture words | chisel, mallet, granite, marble, soapstone, rasp, sculptor, installation
+famous_sculptors | famous sculptors | Michelangelo, Donatello, Cellini, Ghiberti, Jeff Koons, Alberto Giacometti, Barbara Hepworth, Auguste Rodin
+photography_words | photography words | portrait, sepia, camera, lens, flash, tripod, shutter, aperture

@@ -6,6 +6,7 @@
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
 import { eff, effRec, popIn, themeProfile, dialectOf, linkIds, POS, TYPES, REGIONS } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
+import { isNameWord } from './validate.js';
 
 export const DEFAULT_EXPORT = {
   adult: 'include', sensitive: 'include', tm: 'include', vulgar: 'include', lang: 'include',
@@ -31,6 +32,8 @@ const regionPass = (r, regions) => {
 export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r.codes : [...REGIONS], v: 2 });
 
 // Bit layouts, written into the file so the reader does not have to guess.
+// What a theme is: category (kinds of one thing), place, property (members share an attribute), wordplay (members chosen by spelling or sound; rule says how to test) and compound (members combine with a shared word).
+export const THEME_KINDS = ['category', 'place', 'property', 'wordplay', 'compound'];
 export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32 };
 export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256, synonym: 512 };
 
@@ -134,6 +137,7 @@ export function buildExport(P, opt0 = {}) {
     return promoted.get(r) === id ? 0 : pos.get(promoted.get(r)) + 1;
   };
   const cols = { text: [], pos: [], type: [], flags: [], rec: [], regions: [], regionsHi: [], root: [], clash: [], linkCount: [], links: [] };
+  const nameWordLinks = [];                          // numbers of links (position in the concatenated link list, links[4n..4n+3]) whose shown text is just a word of the theme name
   const shown = [], shownAt = new Map();           // texts a theme shows instead of the entry's own: [text, pos]; a link points at one (index+1, 0 = the entry's own text)
   const clash = new Map(), find = x => { while (clash.has(x) && clash.get(x) !== x) x = clash.get(x); return x; };   // words that stand for one another in a theme (its groups) share a clash id: the level builder never puts two of them in one level
   for (const t of themes) for (const g of t.groups || []) { const m = g.filter(id => keep.has(id)); for (const id of m) if (!clash.has(id)) clash.set(id, id); for (const id of m.slice(1)) clash.set(find(id), find(m[0])); }
@@ -162,6 +166,7 @@ export function buildExport(P, opt0 = {}) {
     const cr = ix.entry.get(e.aliasOf || e.id).id; cols.clash.push(clash.has(cr) ? clashId.get(find(cr)) || 0 : 0);
     cols.linkCount.push(links.length);
     for (const [tid, r, p, sh] of links) {
+      if (isNameWord(ix.theme.get(tid), sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text)) nameWordLinks.push(cols.links.length / 4);
       if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps]); shownAt.set(sh, shown.length); }
       cols.links.push(tIndex.get(tid), r, p, sh ? shownAt.get(sh) : 0);
     }
@@ -179,22 +184,22 @@ export function buildExport(P, opt0 = {}) {
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
     const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
     const [rlo, rhi] = rMask(f.region);
-    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, pr ? pr.median : 0, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi];
+    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, pr ? pr.median : 0, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || ''];
     if (o.notes) row.push(t.note);
     return row;
   });
 
   const file = {
     v: 3, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
-    dialect: dialectOf(P), options: o, regions, regionBits: REGION_BITS, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
+    dialect: dialectOf(P), options: o, regions, regionBits: REGION_BITS, kindNames: THEME_KINDS, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
     // difficulty = median difficulty of the theme's roots; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
-    themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions', 'popularity', 'counts', 'range', 'regionsHi'].concat(o.notes ? ['note'] : []),
+    themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
     // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, popularity, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
     // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups): never put two with the same id in one level.
     // root[i] is 0 for a root entry, else the index+1 of the root it is an alias of.
     entries: cols,
-    shown,
+    shown, nameWordLinks,
     linkFields: ['theme', 'difficulty', 'popularity', 'shown'],
   };
   return { file, report };

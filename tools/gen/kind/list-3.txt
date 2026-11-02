@@ -1,0 +1,498 @@
+campsite | campsite | hatchet, marshmallow, compass, headlamp, tent, campfire, sleeping bag, bedroll
+camping_gear | camping gear | mallet, compass, headlamp, tent, campfire, sleeping bag, bedroll, lantern
+tent_parts | tent parts | guy line, ground cloth, flysheet, vestibule, lobby, porch, veranda, stoop
+tent_types | tent types {dome, tipi, bell, tunnel, pup tent, A-frame, bivy} | yurt, marquee, tipi, bivouac sack, dome, bell, tunnel, pup
+campfire_foods | campfire foods | coffee, hot chocolate, cocoa, bacon, bannock, marshmallow, pancakes, hot dog
+survival_skills | survival skills | orienteering, ferro rod, fishing, bushcraft, whittling, dead reckoning, hunting, wayfinding
+rvs_and_campers | rvs and campers {RV, motorhome, camper van, trailer, Airstream, fifth wheel, teardrop} | RV, Airstream, motorhome, trailer, fifth wheel, teardrop, caravan, pop-up
+cooking_and_drinking_gear | outdoor cooking and drinking gear | camp stove, cooler, esky, canteen, mess kit, Thermos, vacuum flask, spork
+hiking_gear | hiking gear | map, compass, GPS, headlamp, backpack, rucksack, bear canister, trail mix
+trail_words | trail words | ridge, summit, tarn, moraine, rucksack, peak bagging, trailblazer, cairn
+outdoor_activities | outdoor activities | orienteering, archery, swimming, surfing, canoeing, kayaking, sailing, paddleboarding
+us_national_parks | us national parks | Grand Canyon, Mesa Verde, Dry Tortugas, petrified forest, Yellowstone, Everglades, Denali, Mount Rainier
+desert_parks | desert national parks | Grand Canyon, Mesa Verde, petrified forest, Bryce Canyon, Canyonlands, Carlsbad Caverns, Zion, Joshua Tree
+california_parks | california national parks | Yosemite, Joshua Tree, Death Valley, Sequoia, Redwood, Channel Islands, Pinnacles, Lassen Volcanic
+eastern_parks | eastern us national parks | Dry Tortugas, Everglades, Mammoth Cave, Great Smoky Mountains, Acadia, Shenandoah, Cuyahoga Valley, Congaree
+african_national_parks | african national parks | Masai Mara, Serengeti, Etosha, Amboseli, Virunga, Bwindi, Lake Nakuru, Kruger
+famous_hiking_trails | famous hiking trails {Appalachian Trail, Inca Trail, Pacific Crest, Lycian Way, Milford Track} | Inca Trail, Camino de Santiago, Pennine Way, West Highland Way, John Muir Trail, Via Francigena, Kokoda Track, Tour du Mont Blanc
+climbing_gear | climbing gear {rope, carabiner, harness, chalk, crampons, ice axe, belay device} | hammer, carabiner, crampons, ascender, ice axe, chalk bag, chalk, quickdraw
+safari_words | safari words {game drive, big five, ranger, tracker, watering hole, lodge} | lion, leopard, elephant, rhinoceros, kudu, acacia, baobab, monkey bread tree
+african_landscape | african landscape | acacia, baobab, monkey bread tree, savanna, vlei, mopane, watering hole, Okavango Delta
+southern_african_words | southern african words | sundowner, spoor, sjambok, vlei, kopje, kraal, boma, marula
+luggage | luggage | carry-on, backpack, rucksack, fanny pack, tote bag, satchel, messenger bag, briefcase
+things_to_pack | things to pack | insect repellent, pajamas, toothbrush, sunscreen, sunblock, towel, dry shampoo, jacket
+travel_documents | travel documents | boarding pass, itinerary, driver's license, ID card, customs form, e-ticket, passport, visa
+toiletries | toiletries {travel-size items in a wash bag: toothpaste, shampoo, razor, deodorant} | pumice stone, soap, shampoo, conditioner, toothbrush, toothpaste, floss, mouthwash
+beach_gear | beach gear | spade, wind sock, life jacket, life vest, tent, cooler, esky, air mattress
+souvenirs | souvenirs | tea, olive oil, cuppa, char, postcard, poster, T-shirt, tee
+turkish_souvenirs | turkish souvenirs | tea, coffee, baklava, cuppa, shisha, narghile, olive oil soap, pestemal
+japanese_souvenirs | japanese souvenirs | matcha, Kit Kat, mochi, bonsai, folding fan, manga, kimono, green tea
+mexican_souvenirs | mexican souvenirs | vanilla, hot sauce, chili powder, tequila, poncho, maracas, mezcal, alebrije
+moroccan_souvenirs | moroccan souvenirs | saffron, kaftan, rose water, henna, argan oil, kohl, black soap, ras el hanout
+travel_accessories | travel accessories {plug adapter, neck pillow, eye mask, earplugs, luggage tag, money belt} | carabiner, eye mask, earplugs, sewing kit, power bank, portable charger, pill organizer, sleep sack
+beach_vacation | beach vacation {things on a beach vacation: sunscreen, deck chair, sandcastle, cabana} | ice cream, cocktail, seagull, gull, aloe vera, aloe, pier, resort
+ski_trip | ski trip {things on a ski trip: chairlift, chalet, piste, lift pass, apres-ski} | chalet, hot chocolate, cocoa, resort, patrol, jacket, moguls, hot tub
+cruise_words | cruise words | fjord, moor, ship, lifeboat, dock, galley, porthole, gangway
+cruise_lines | cruise lines {Carnival, Royal Caribbean, Cunard, Princess, MSC, Holland America} | Carnival, Royal Caribbean, Cunard, MSC, Holland America, Norwegian, Celebrity, Disney
+sightseeing_words | sightseeing words | map, hop-on hop-off, tour, excursion, itinerary, day trip, sightseeing, postcard
+tourist_attractions | tourist attractions {kinds of attraction: museum, aquarium, gallery, viewpoint, old town} | castle, palace, fountain, canyon, gulch, arroyo, cave, waterfall
+famous_theme_parks | famous theme parks {Disneyland, Tivoli, Efteling, Europa-Park, Cedar Point, Everland} | Tivoli Gardens, Disneyland, Walt Disney World, Universal Studios, Legoland, Six Flags, SeaWorld, Magic Kingdom
+beach_destinations | beach destinations {Bali, Cancun, Maldives, Ibiza, Phuket, Bodrum, Maui, Bondi} | Jamaica, Miami, Zanzibar, Tahiti, Hawaii, Bahamas, Santorini, Maldives
+island_getaways | island getaways | Jamaica, Zanzibar, Tahiti, Hawaii, Bahamas, Santorini, Maldives, Seychelles
+famous_stretches_of_sand | famous stretches of sand | Copacabana, Waikiki, Malibu, Ipanema, Whitehaven Beach, Venice Beach, Myrtle Beach, Bondi
+american_holiday_spots | american holiday spots | Miami, Hawaii, Maui, Waikiki, Malibu, Venice Beach, Myrtle Beach, Key West
+famous_ski_resorts | famous ski resorts {Aspen, Whistler, Zermatt, Chamonix, St. Moritz, Niseko} | Telluride, Lake Louise, Lake Placid, Banff, Chamonix, Squaw Valley, Innsbruck, Whistler
+special_vehicles | special vehicles {vehicles with a job: ambulance, snowplow, forklift, tractor, hearse} | school bus, ambulance, fire truck, police car, cop car, snowplow, forklift, tractor
+emergency_vehicles | emergency vehicles | lifeboat, ambulance, fire truck, police car, cop car, tow truck, wrecker, police van
+construction_vehicles | construction vehicles | forklift, bulldozer, dozer, excavator, digger, JCB, crane, dump truck
+farm_vehicles | farm vehicles | Land Rover, horse trailer, pickup truck, tractor, combine, golf cart, ATV, tractor trailer
+military_vehicles | military vehicles | frigate, armored car, tank, aircraft carrier, warship, Spitfire, U-boat, submarine
+naval_vessels | naval vessels | frigate, aircraft carrier, warship, U-boat, submarine, battleship, minesweeper, gunboat
+military_aircraft | military aircraft | Spitfire, fighter jet, bomber, stealth bomber, Harrier, Apache, helicopter gunship, Black Hawk
+army_ground_vehicles | army ground vehicles | armored car, tank, Humvee, personnel carrier, APC, self-propelled gun, half-track, tank destroyer
+delivery_vehicles | delivery vehicles | pickup truck, tuk-tuk, auto rickshaw, ice cream truck, food truck, flatbed truck, mail truck, milk float
+space_vehicles | space vehicles | lunar rover, rocket, satellite, spaceship, starship, spacecraft, space station, Sputnik
+horse_drawn_vehicles | horse-drawn vehicles {carriage, wagon, buggy, stagecoach, chariot, hansom cab, sleigh} | pumpkin coach, chariot, hansom cab, stagecoach, covered wagon, sleigh, wagon, gig
+truck_types | truck types {pickup, semi, dump truck, tow truck, flatbed, tanker, box truck} | school bus, cement mixer, concrete mixer, road train, tractor trailer, semi, moving truck, U-Haul
+vehicle_sounds | vehicle sounds | siren, Putt-Putt, roar, hiss, purr, honk, screech, whoosh
+electric_vehicles | electric vehicles | Tesla, streetcar, trolley, trolleybus, golf cart, milk float, Segway, hoverboard
+battery_powered_cars | battery-powered cars | Nissan Leaf, Chevy Bolt, Tesla Model 3, Tesla Model S, Cybertruck, BMW i3, Renault Zoe, Hyundai Ioniq
+types_of_public_transport | types of public transport {kinds of public transport a person can ride: bus, train, tram, subway, ferry, ta} | bus, subway, streetcar, trolley, ferry, light rail, monorail, minibus
+modes_of_transport | modes of transport {ways of getting around: car, bus, train, plane, boat, bike, on foot} | bus, subway, streetcar, trolley, ferry, airplane, plane, aircraft
+body_parts | body parts | chest, back, waist, hip, navel, belly button, abdomen, buttocks
+face | face parts | nose, mouth, eye, chin, forehead, eyebrow, eyelid, lip
+hands_and_feet | hands and feet | wrist, hand, finger, thumb, ankle, foot, toe, palm
+arms_and_legs | arms and legs | hip, shoulder, arm, elbow, wrist, leg, knee, thigh
+torso | torso | chest, belly, back, waist, hip, ribs, navel, belly button
+joints | joints {elbow, knee, ankle, wrist, hip, shoulder, knuckle, jaw} | hip, neck, shoulder, elbow, wrist, knee, ankle, knuckle
+hair | hair | bangs, ponytail, braid, curls, bun, pigtails, mullet, mohawk
+hairstyles | hairstyles | bangs, ponytail, braid, bun, pigtails, mullet, mohawk, afro
+beard_styles | beard styles | moustache, sideburns, goatee, stubble, handlebar moustache, mutton chops, soul patch, five o'clock shadow
+hair_colors | hair colors | blue, pink, brown, black, jet, sable, white, gray
+skin_words | skin words | skin, eczema, cuticle, pore, freckle, wrinkle, mole, scar
+paired_body_parts | paired body parts {body parts that come in twos: eye, ear, lung, kidney, knee, elbow} | hip, shoulder, arm, elbow, wrist, hand, leg, knee
+fingers | fingers {thumb, index finger, middle finger, ring finger, little finger} | thumb, index, forefinger, Pointer, longest finger, ring, fourth finger, pinky
+inside_the_body | inside the body | spine, stomach, tummy, tum, heart, lung, liver, kidney
+bones | bones | spine, kneecap, skull, rib, skeleton, pelvis, vertebra, breastbone
+sections_of_the_spine | sections of the spine {cervical, thoracic, lumbar, sacral, coccyx} | coccyx, tailbone, sacrum, cervical, neck vertebrae, thoracic, lumbar, sacral
+organs | organs | eye, skin, stomach, tummy, tum, tongue, heart, lung
+muscles | muscles | diaphragm, abs, abdominals, six-pack, hamstring, quadriceps, gastrocnemius, pecs
+blood_words | blood words | heart, blood, vein, artery, bone marrow, aorta, capillary, anemia
+blood_components | blood components {Exactly: plasma, platelet, red blood cells, white blood cells.} | plasma, platelet, red blood cells, erythrocytes, white blood cells, leukocytes
+teeth | teeth | tusk, fang, tooth, molar, canine, incisor, wisdom tooth, baby tooth
+tooth_types | tooth types {Exactly: molar, canine, incisor, premolar.} | molar, canine, incisor, premolar
+brain_parts | brain parts | brain, pituitary gland, hypothalamus, cerebral hemisphere, pineal gland, cerebrum, cerebellum, brain stem
+brain_lobes | brain lobes {Exactly: frontal, occipital, parietal, temporal.} | frontal, occipital, parietal, temporal
+body_systems | body systems {digestive, nervous, circulatory, respiratory, skeletal, immune} | sensory, metabolism, circulation, digestive, nervous, central nervous system, GI tract, CNS
+hormones | hormones | melatonin, insulin, adrenaline, epinephrine, estrogen, testosterone, progesterone, cortisol
+digestive_system | digestive system | mouth, stomach, tummy, tum, liver, intestine, gut, bowel
+ruminant_stomachs | ruminant stomachs {Exactly: rumen, reticulum, omasum, abomasum.} | rumen, reticulum, omasum, abomasum
+plain_names_for_body_parts | plain names for body parts | tummy, tum, gut, bowel, gullet, windpipe, voice box, breastbone
+throat_and_airway_parts | throat and airway parts | lung, tonsils, windpipe, trachea, diaphragm, larynx, voice box, pharynx
+senses | senses {the five senses and sense organs: sight, hearing, smell, taste, touch, eye, ear,} | sight, hearing, smell, taste, touch, nose, eye, ear
+sight_words | sight words | sight, butcher's, vision, eyesight, eyeball, witness, observe, bird's-eye view
+hearing_words | hearing words | deaf, auditory, aural, ultrasound, timbre, earphones, loud, hear
+smell_words | smell words | smell, nose, sniff, scent, aroma, olfactory, olfaction, perfume
+ear_parts | ear parts | earlobe, cartilage, eardrum, earwax, stapes, malleus, incus, anvil
+touch_words | touch words | touch, texture, tactile, soft, goosebumps, feel, rough, smooth
+eye_parts | eye parts | eyebrow, eyelid, retina, cornea, pupil, eyeball, eyelash, optic nerve
+the_five_senses | the five senses {sight, hearing, smell, taste, touch} | sight, hearing, smell, taste, touch
+illnesses | illnesses | cold, head cold, the sniffles, lurgy, flu, influenza, grippe, measles
+common_illnesses | common illnesses | cold, head cold, the sniffles, lurgy, flu, influenza, grippe, measles
+digestive_problems | digestive problems | food poisoning, stomach bug, Delhi belly, gastroenteritis, stomachache, tummy ache, indigestion, constipation
+upper_airway_problems | upper airway problems | head cold, tonsillitis, croup, quinsy, hay fever, sore throat, cough, sinusitis
+childhood_illnesses | childhood illnesses | measles, mumps, chickenpox, polio, tonsillitis, meningitis, rickets, whooping cough
+allergies | allergies | nickel, egg, wheat, eczema, hay fever, hives, rhinitis, pollen
+infections | infections | flu, influenza, grippe, pneumonia, malaria, tuberculosis, consumption, cholera
+viral_illnesses | viral illnesses | flu, influenza, grippe, coronavirus, Covid, hepatitis, rabies, shingles
+bacterial_illnesses | bacterial illnesses | tuberculosis, consumption, cholera, typhoid, tetanus, lockjaw, strep throat, impetigo
+injuries | injuries | hernia, stitches, sutures, bruise, blister, sunburn, cut, sprain
+bone_and_joint_injuries | bone and joint injuries | fracture, dislocation, compound fracture, hairline fracture, greenstick fracture, subluxation, stress fracture, Colles fracture
+skin_breaking_injuries | skin-breaking injuries | cut, scrape, graze, splinter, laceration, gash, puncture, abrasion
+soft_tissue_injuries | soft tissue injuries | sprain, whiplash, strain, pulled muscle, torn ligament, sprained ankle, tennis elbow, shin splints
+symptoms | illness symptoms | fever, pyrexia, jaundice, headache, sore throat, rash, tinnitus, cough
+historic_diseases | historic diseases | grippe, measles, tuberculosis, consumption, cholera, smallpox, polio, typhoid
+tropical_diseases | tropical diseases | malaria, cholera, typhoid, rabies, Ebola, dengue, hookworm, schistosomiasis
+cold_weather_ailments | cold weather ailments {frostbite, hypothermia, snow blindness, chilblains, windburn} | pneumonia, bronchitis, common cold, frostbite, chilblains, trench foot, hypothermia, snow blindness
+sports_injuries | sports injuries | bruise, blister, bursitis, sprain, fracture, concussion, black eye, whiplash
+medicine | medical words | hospital, ambulance, doctor, nurse, surgery, patient, pill, vaccine
+medicines | medications | vaccine, jab, shot, antibiotic, insulin, antihistamine, aspirin, ibuprofen
+forms_of_medicine | forms of medicine {pill, capsule, syrup, ointment, drops, inhaler, injection, patch, lozenge} | pill, injection, elixir, tablet, capsule, syrup, ointment, drops
+medical_equipment | medical equipment | stethoscope, thermometer, syringe, needle, bandage, dressing, scalpel, defibrillator
+medical_specialties | medical specialties | surgery, pathology, epidemiology, palliative care, audiology, cardiology, neurology, pediatrics
+medical_tests | medical tests | blood, X-ray, biopsy, MRI, CT scan, ultrasound, ECG, colonoscopy
+hospital_words | hospital words | ambulance, nurse, surgeon, intensive care, triage, hospice, intern, consultant
+doctor_s_office | doctor's office | doctor, nurse, prescription, stethoscope, thermometer, checkup, general practitioner, referral
+pharmacy | pharmacy | prescription, contraindication, sunscreen, sunblock, pharmacist, eye drops, pill bottle, bandages
+operating_room | operating room | surgeon, scalpel, stitches, sutures, forceps, scrubs, ventilator, curette
+first_aid | first aid | aloe vera, aloe, bandage, dressing, defibrillator, tweezers, EpiPen, tourniquet
+dental_words | dental words | toothbrush, toothpaste, floss, mouthwash, dentist, tooth, molar, incisor
+smoking_words | smoking words {cigarette, cigar, pipe, ashtray, lighter, filter, vape, hookah, tobacco} | vape, cigarette, cigar, ashtray, cigarette lighter, tobacco, shisha, narghile
+illegal_drugs | illegal drugs | salvia, cocaine, blow, heroin, smack, marijuana, pot, cannabis
+street_names_for_hemp | street names for hemp | pot, ganja, dope, weed, grass, skunk, reefer, bud
+stimulants | stimulant drugs | cocaine, blow, methamphetamine, meth, crystal meth, ice, crack, amphetamine
+hallucinogens | hallucinogens | salvia, LSD, acid, magic mushrooms, psilocybin, mescaline, peyote, DMT
+cold_and_flu_remedies | cold and flu remedies | zinc, humidifier, ibuprofen, acetaminophen, decongestant, nasal spray, cough syrup, menthol
+four_humours | four humours {blood, phlegm, yellow bile, black bile} | blood, melancholy, melancholia, phlegm, yellow bile, choler, black bile, choleric
+healthcare_workers | healthcare workers | doctor, nurse, surgeon, family doctor, general practitioner, paramedic, locum, medic
+chinese_medicine | chinese medicine | jujube, ginkgo, maidenhair tree, acupuncture, qi, yin and yang, cupping, moxibustion
+middle_eastern_remedies | middle eastern remedies {black seed, cupping, miswak, frankincense, myrrh, rose water, honey} | pomegranate, licorice, olive oil, cardamom, saffron, fenugreek, aloe vera, aloe
+african_remedies | african remedies {rooibos, buchu, devil's claw, shea butter, baobab, moringa} | baobab, monkey bread tree, aloe vera, aloe, khat, buchu, devil's claw, shea butter
+oceanian_remedies | oceanian remedies {tea tree oil, manuka honey, eucalyptus, kawakawa, kava, noni, lemon myrtle} | eucalyptus, gum tree, sandalwood, hibiscus, aloe vera, aloe, eucalyptus oil, tea tree oil
+ayurveda_words | ayurveda words {dosha, turmeric, ghee, neem, ashwagandha, chakra, prana, triphala} | ghee, ginger, cumin, turmeric, meditation, neem, dosha, ashwagandha
+native_american_remedies | native american remedies {echinacea, willow bark, goldenseal, witch hazel, yarrow, sweat lodge} | sage, sumac, cedar, peyote, echinacea, willow bark, goldenseal, witch hazel
+babies_and_birth | babies and birth | fontanelle, baby, newborn, infant, toddler, pregnancy, birth, midwife
+pregnancy_words | pregnancy words | midwife, umbilical cord, placenta, ultrasound, due date, obstetrician, doula, amniotic fluid
+childbirth_words | childbirth words | newborn, midwife, labor, contractions, delivery, epidural, umbilical cord, placenta
+newborn_care | newborn care | fontanelle, jaundice, lullaby, teething, breastfeeding, colic, swaddle, diaper
+baby_gear | baby gear | stroller, rattle, high chair, car seat, playpen, moses basket, breast pump, bassinet
+baby_milestones | baby milestones | teething, crawling, first steps, coo, tummy time, first smile, rolling over, sitting up
+maternity_ward | maternity ward | nurse, newborn, midwife, labor, contractions, epidural, umbilical cord, placenta
+fitness | fitness | exercise, workout, gym, health club, fitness center, training, cardio, aerobic exercise
+exercises | fitness exercises | push-up, sit-up, squat, lunge, plank, burpee, jumping jack, pull-up
+gym_equipment | gym equipment | treadmill, dumbbell, free weights, jump rope, foam roller, barbell, weight bench, exercise bike
+yoga_poses | yoga poses | downward dog, cobra, warrior, lotus, cat-cow, upward dog, happy baby, half moon
+yoga_words | yoga words {asana, namaste, chakra, mantra, om, mudra, savasana, vinyasa} | meditation, karma, guru, Sanskrit, chakra, prana, pranayama, namaste
+workout_types | workout types | cardio, aerobic exercise, aerobics, pilates, bodybuilding, powerlifting, calisthenics, circuit training
+fitness_words | fitness words | muscle, stamina, endurance, flexibility, warm-up, cool-down, rep, repetition
+stretches | stretches | child's pose, cobra, hamstring, quad, calf, cat, shoulder, neck roll
+sleep | sleep | jet lag, sleeping bag, bedroll, hammock, lullaby, nap, bed, pillow
+sleep_words | sleep words | jet lag, lullaby, nap, snore, insomnia, sleeplessness, yawn, bedtime
+bedding | bedding | sleeping bag, bedroll, pillow, blanket, comforter, quilt, mattress, electric blanket
+nightwear | nightwear | onesie, pajamas, nightgown, bathrobe, robe, romper, nightshirt, nightdress
+dream_words | dream words | dream, nightmare, sleepwalking, somnambulism, Morpheus, night terror, daydream, recurring
+bedtime_routine | bedtime routine | lullaby, melatonin, white noise, mouthwash, stretching, hot water bottle, herbal tea, weighted blanket
+sleep_disorders | sleep disorders | jet lag, insomnia, sleeplessness, sleepwalking, somnambulism, narcolepsy, bedwetting, sleep paralysis
+short_sleeps | short sleeps | nap, snooze, doze, nod off, siesta, forty winks, kip, shut-eye
+personal_care | personal care | pumice stone, soap, shampoo, conditioner, toothbrush, toothpaste, floss, mouthwash
+toiletries_for_washing | toiletries for washing | pumice stone, soap, shampoo, conditioner, deodorant, antiperspirant, roll-on, shower gel
+hair_care | hair care | shampoo, conditioner, comb, hairbrush, hairspray, dry shampoo, curling iron, bobby pin
+skincare_products | skincare products | lotion, moisturizer, sunscreen, sunblock, cleanser, toner, serum, exfoliator
+korean_skincare | korean skincare | moisturizer, sunscreen, sunblock, toner, serum, ginseng, eye cream, hyaluronic acid
+makeup | makeup | lipstick, lippy, mascara, nail polish, foundation, concealer, blusher, blush
+nail_care | nail care | lunula, hand cream, cuticle oil, file, cuticle, manicure, pedicure, emery board
+bath_time | bath time | soap, shampoo, towel, loofah, washcloth, face cloth, sponge, bathtub
+middle_eastern_grooming | middle eastern grooming {kohl, henna, oud, attar, rose water, argan oil, black soap, miswak} | saffron, musk, miswak, frankincense, myrrh, rose water, henna, mastic
+shaving | shaving | razor, aftershave, depilatory cream, Veet, styptic pencil, stubble, witch hazel, foam
+sun_care | sun care | aloe vera, aloe, sunscreen, sunblock, sunglasses, shades, sunnies, parasol
+grooming_tools | grooming tools | pumice stone, toothbrush, razor, comb, hairbrush, towel, loofah, Q-tip
+mental_health_words | mental health words | therapy, anxiety, nerves, antidepressant, journaling, depression, stress, panic attack
+phobias | phobias | photophobia, arachnophobia, claustrophobia, acrophobia, agoraphobia, hydrophobia, xenophobia, homophobia
+massage_types | massage types | cupping, acupressure, gua sha, tui na, abhyanga, deep tissue, hot stone, shiatsu
+bad_habits | bad habits {nail biting, slouching, knuckle cracking, snacking, procrastinating} | junk food, teeth grinding, nail biting, slouching, knuckle cracking, snacking, procrastinating, smoking
+healthy_habits | healthy habits {flossing, walking, drinking water, early nights, stretching} | exercise, sunscreen, sunblock, hydration, intermittent fasting, gratitude, thankfulness, hiking
+spa | spa | eucalyptus, gum tree, bathrobe, robe, manicure, pedicure, jacuzzi, hammam
+turkish_bath | turkish bath {hammam: kese, pestemal, marble slab, steam, foam, dome, clogs} | soap, towel, loofah, dome, foam, hammam, olive oil soap, sauna
+european_spa_towns | european spa towns {Bath, Baden-Baden, Vichy, Spa, Karlovy Vary, Evian} | Karlovy Vary, Bath, Baden-Baden, Vichy, Spa, Evian, Marienbad, Marianske Lazne
+nutrition | nutrition | salt, protein, carbohydrate, fat, fiber, vitamin, mineral, calorie
+vitamins | vitamins | folate, folic acid, beta-carotene, thiamine, riboflavin, niacin, vitamin D, cholecalciferol
+dietary_minerals | dietary minerals {iron, calcium, zinc, magnesium, potassium, iodine, selenium} | cobalt, copper, zinc, nickel, salt, sulfur, mineral, calcium
+food_groups | food groups | candy, protein, empty calories, vegetables, dairy, grains, meat, fish
+nutrients | nutrients | water, protein, carbohydrate, fat, fiber, vitamin, mineral, sugar
+diet_types | diet types | Weight Watchers, vegan, vegetarian, gluten-free, intermittent fasting, keto, paleo, Atkins
+superfoods | superfoods | pomegranate, avocado, matcha, broccoli, spinach, sweet potato, garlic, beet
+healthy_snacks | healthy snacks | banana, edamame, jicama, yogurt, cottage cheese, skyr, labneh, hummus
+facial_expressions | facial expressions | deadpan, squint, wink, glare, smile, frown, grin, smirk
+gestures | gestures | jazz hands, middle finger, namaste, wave, thumbs up, thumbs down, shrug, nod
+body_actions | body actions | hop, crawl, leap, wriggle, jump, cartwheel, turn, squat
+hand_actions | hand actions | knead, flick, pat, tickle, pinch, poke, rub, caress
+ways_of_walking | ways of walking | trot, hike, ramble, trudge, waddle, prowl, amble, lollop
+ways_of_looking | ways of looking | eyeball, observe, watch, stare, glance, gaze, glimpse, peek
+ways_of_speaking | ways of speaking | croak, hiss, bleat, squeak, bellow, whimper, chatter, whisper
+body_noises | body noises {burp, hiccup, sneeze, cough, snore, yawn, sniff, gulp, sigh} | sniff, snore, yawn, sniffle, cough, teeth grinding, groan, burp
+ways_of_crying | ways of crying | whimper, lament, sniffle, whine, sob, weep, wail, bawl
+ways_of_breathing | ways of breathing | sniff, pranayama, rasp, gulp, sigh, gasp, wheeze, snort
+body_positions | body positions | lotus, headstand, slouching, standing, sitting, lying, kneeling, crouching
+mouth_actions | mouth actions | taste, yawn, gobble, smile, smirk, pout, grimace, gulp
+ways_of_laughing | ways of laughing | hoot, hee-haw, cackle, giggle, chuckle, chortle, snicker, snigger
+family_and_friends | family and friends | family, friend, friendship, parent, child, twin, guest, buddy
+family_members | family members | parent, twin, kinsman, sibling, kin, kinfolk, kinsfolk, next of kin
+extended_family | extended family | relative, relation, kinsman, in-laws, descendant, clan, kin, kinfolk
+relationships | relationships | friendship, soulmate, acquaintance, elopement, ex, fiance, marriage, engagement
+terms_of_endearment | terms of endearment | sweetheart, pookie, darling, honey, dear, sweetie, love, babe
+greetings | greetings | ahoy, namaste, salaam, hey, hola, bonjour, konnichiwa, guten Tag
+ways_to_say_goodbye | ways to say goodbye {farewell, adieu, cheerio, so long, adios, sayonara, ta-ta} | adios, au revoir, sayonara, arrivederci, auf Wiedersehen, hasta la vista, bon voyage, hasta luego
+ages_and_stages | stages of life | baby, newborn, infant, toddler, child, young adult, kid, preschooler
+words_for_friend | words for friend {pal, buddy, mate, chum, bestie, companion, comrade, confidant} | friend, buddy, classmate, playmate, companion, ally, best, BFF
+life_events | life events {milestones of a life: birth, christening, graduation, engagement, wedding, retir} | birth, first steps, christening, baby shower, gender reveal, wedding, birthday, anniversary
+honorifics | honorifics {titles before a name: Mr, Mrs, Ms, Dr, Sir, Dame, Professor, Reverend} | captain, rabbi, imam, baron, Sir, duke, bwana, madam
+words_for_mother | words for mother | mama, mother, mom, mummy, mommy, ma, momma, mamma
+words_for_father | words for father | father, dad, papa, daddy, pa, pop, poppa, pappy
+words_for_grandparents | words for grandparents | grandmother, granny, nan, nana, grandfather, grandpa, gramps, grandma
+words_for_kids | words for kids | toddler, child, bairn, whippersnapper, rascal, scamp, urchin, brat
+kinds_of_party | kinds of party | baby shower, sleepover, prom, Hogmanay, graduation, housewarming, ceilidh, rave
+ways_to_say_yes | ways to say yes | aye, yes, yeah, yep, yup, sure, okay, of course
+ways_to_say_no | ways to say no | nay, nein, no, nope, nah, never, not at all, no way
+emotions | emotions | joy, sadness, anger, ire, wrath, fear, fright, surprise
+happy_words | happy words | chuffed, stoked, jovial, happy, glad, joyful, cheerful, delighted
+sad_words | sad words | melancholy, melancholia, gutted, sad, unhappy, miserable, gloomy, down
+angry_words | angry words | ire, wrath, rage, fury, choleric, livid, angry, mad
+scared_words | scared words | dread, panic, terror, trepidation, scared, afraid, frightened, terrified
+surprised_words | surprised words {amazed, astonished, stunned, startled, flabbergasted, gobsmacked} | gasp, wow, whoa, gobsmacked, flabbergasted, surprised, amazed, astonished
+love_words | love words {adore, cherish, affection, devotion, crush, passion, smitten} | love, crush, romance, adore, cherish, affection, devotion, passion
+calm_words | calm words {serene, tranquil, relaxed, placid, peaceful, composed, mellow} | equanimity, repose, at ease, calm, gentle, halcyon, peaceful, relaxed
+disgust_words | disgust words {revolted, repulsed, sickened, appalled, grossed out, yuck} | noisome, ugh, yuck, vile, disgusted, gross, revolting, ew
+personality_traits | personality traits | melancholic, phlegmatic, shy, mercurial, outgoing, funny, clever, quiet
+positive_traits | positive personality traits {kind, honest, generous, loyal, patient, brave} | gentle, polite, cheerful, funny, clever, sociable, easygoing, thoughtful
+negative_traits | negative personality traits {greedy, rude, lazy, selfish, arrogant, stubborn} | sly, moody, grumpy, petulant, nasty, greedy, rude, lazy
+moods | moods | ornery, bored, cheerful, playful, thoughtful, mood, grumpy, cranky
+jobs | jobs | farrier, cartographer, mapmaker, pilot, doctor, nurse, surgeon, midwife
+medical_jobs | medical jobs | doctor, nurse, surgeon, family doctor, general practitioner, paramedic, medic, midwife
+trades | skilled trades | farrier, electrician, sparky, plumber, carpenter, chippy, mechanic, grease monkey
+science_jobs | science jobs | paleontologist, scientist, toxicologist, archaeologist, zoologist, ornithologist, entomologist, marine biologist
+service_jobs | service jobs | chef, cook, cuisinier, flight attendant, stewardess, cashier, receptionist, janitor
+arts_jobs | arts jobs | photographer, actor, musician, writer, luthier, singer, vocalist, pianist
+people_who_work_with_sound | people who work with sound | musician, luthier, singer, vocalist, pianist, piano player, violinist, fiddler
+visual_creators | visual creators | photographer, painter, sculptor, cartoonist, illustrator, potter, ceramicist, printmaker
+theatre_and_movie_crew | theatre and movie crew | choreographer, stuntman, stunt double, gaffer, stage manager, dramaturg, costume designer, set designer
+tech_jobs | tech jobs | programmer, coder, developer, software engineer, web developer, data scientist, network engineer, systems administrator
+office_jobs | office jobs | accountant, number cruncher, bean counter, secretary, receptionist, manager, clerk, intern
+outdoor_jobs | outdoor jobs | farmer, builder, contractor, miner, fisherman, gardener, surveyor, steeplejack
+food_jobs | food jobs {chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer} | chef, sous chef, cook, cuisinier, farmer, waiter, server, waitress
+animal_jobs | animal jobs {vet, zookeeper, groom, farrier, shepherd, dog walker, kennel hand} | jockey, farrier, vet, zoologist, zookeeper, beekeeper, wildlife biologist, animal trainer
+old_time_jobs | old-time jobs {jobs that have mostly vanished in the last 150 years: milkman, chimney sweep, la} | blacksmith, Iceman, cooper, wheelwright, town crier, chimney sweep, page boy, bellhop
+workplace_words | workplace words {salary, boss, shift, promotion, interview, overtime, pension, colleague} | commute, manager, intern, appraisal, payday, boss, workaholic, promotion
+cowboy_words | cowboy words {lasso, saddle, spurs, stetson, ranch, rodeo, chaps, corral, sheriff, posse} | saddle, stirrup, rodeo, mustang, bronco, tumbleweed, Russian thistle, bunkhouse
+western_outfits | cowboy outfits | hat, bandana, bolo tie, spurs, boots, holster, ten-gallon hat, Stetson
+riding_gear | cowboy riding gear | saddle, stirrup, cinch, hackamore, spurs, chaps, riata, latigo
+people_of_the_frontier | people of the frontier | sheriff, greenhorn, buckaroo, tenderfoot, rustler, wrangler, drover, vaquero
+gaucho_words | gaucho words {Argentine/Uruguayan cowboy life: poncho, bolas, mate, asado, estancia, pampas, f} | chimichurri, Argentina, poncho, tango, rhea, milonga, chorizo, empanada
+emergency_workers | emergency workers | doctor, nurse, paramedic, firefighter, fireman, firie, police officer, policeman
+transport_jobs | transport jobs | pilot, flight attendant, stewardess, air traffic controller, ticket inspector, bus driver, taxi driver, cabbie
+beauty_jobs | beauty jobs | makeup artist, hairstylist, barber, dermatologist, hairdresser, masseur, beautician, manicurist
+shopkeepers | shopkeepers | florist, greengrocer, jeweler, newsagent, pharmacist, tailor, optician, optometrist
+nicknames_for_workers | nicknames for workers | number cruncher, bean counter, firie, cop, copper, bobby, sparky, chippy
+government_words | government words | law, statute, legislation, ordinance, writ, jurisdiction, gazette, treaty
+legal_rules | legal rules | law, statute, legislation, ordinance, writ, regulation, bill, constitution
+institutions_of_state | institutions of state | council, parliament, congress, cabinet, legislature, ministry, bureaucracy, public sector
+election_words | election words | ballot, candidate, mandate, manifesto, purdah, caucus, vote, campaign
+american_campaign_terms | american campaign terms | caucus, primary, election day, swing state, electoral college, absentee ballot, running mate, concession speech
+british_campaign_terms | british campaign terms | manifesto, purdah, constituency, hustings, by-election, marginal seat, returning officer, scrutineer
+political_titles | political titles | magistrate, prefect, reeve, consul, tribune, satrap, alderman, president
+royal_titles | royal titles | king, knight, pharaoh, baron, princess, emperor, Sapa Inca, jarl
+ottoman_titles | ottoman titles {sultan, pasha, vizier, bey, agha, effendi, janissary, kadi, sipahi, beylerbey} | sultan, janissary, pasha, vizier, caliph, bey, effendi, emir
+ranks_of_the_british_peerage | ranks of the british peerage {duke, marquess, earl, viscount, baron} | baron, duke, earl, marquess, marquis, viscount, duchess, countess
+titles_for_women | female royal titles | princess, queen, Lady, empress, duchess, countess, baroness, queen mother
+south_asian_titles | south asian royal titles | maharaja, rajah, nawab, rani, begum, nizam, peshwa, maharani
+central_and_eastern_european_titles | central and eastern european royal titles | margrave, landgrave, archduke, tsar, kaiser, grand duke, tsarina, hospodar
+royal_things | royal things {objects and occasions of monarchy: crown, throne, scepter, orb, tiara, coronatio} | castle, palace, coat of arms, crest, fleur-de-lis, tiara, ermine, crown
+ceremonial_objects | royal ceremonial objects | tiara, crown, crown jewels, signet ring, scepter, orb, diadem, coronet
+types_of_government | types of government | feudalism, democracy, triumvirate, junta, bureaucracy, monarchy, republic, dictatorship
+ruled_by_one_leader | ruled by one leader | monarchy, dictatorship, autocracy, tyranny, absolute monarchy, despotism, regency, caliphate
+words_ending_in_cracy | words ending in -cracy | democracy, bureaucracy, oligarchy, theocracy, autocracy, aristocracy, plutocracy, meritocracy
+parts_of_parliament | parts of parliament | committee, cabinet, speaker, whip, mace, House of Commons, House of Lords, backbencher
+political_ideologies | political ideologies {socialism, liberalism, conservatism, communism, anarchism, capitalism, nationali} | communism, totalitarianism, fascism, socialism, liberalism, conservatism, anarchism, capitalism
+ideologies_named_after_people | ideologies named after people | marxism, maoism, leninism, stalinism, trotskyism, thatcherism, keynesianism, peronism
+diplomacy_words | diplomacy words {embassy, ambassador, consul, treaty, summit, envoy, sanctions, attache} | extradition, ceasefire, treaty, consul, appeasement, accord, negotiation, entente
+government_representatives_abroad | government representatives abroad | consul, diplomat, ambassador, envoy, attache, charge d'affaires, plenipotentiary, nuncio
+deals_between_countries | deals between countries | ceasefire, treaty, accord, entente, alliance, detente, non-aggression pact, communique
+borrowed_foreign_words | foreign diplomatic terms | entente, rapprochement, persona non grata, attache, detente, demarche, charge d'affaires, agrement
+international_organizations | international organizations {UN, NATO, EU, WHO, UNESCO, OPEC, IMF, Interpol, Red Cross, ASEAN} | NATO, Warsaw Pact, UNICEF, OPEC, UNESCO, NAFTA, Interpol, commonwealth
+us_government | us government {congress, senate, house, supreme court, cabinet, white house, governor, veto} | Pentagon, senate, CIA, Bill of Rights, Federalist Papers, veto, president, congress
+government_agencies | us government agencies | CIA, secret service, federal reserve, IRS, FBI, OMB, FEMA, NSA
+office_holders | us government office holders | president, senator, governor, vice president, attorney general, speaker of the house, chief justice, majority leader
+british_politics | british politics {Westminster, Downing Street, Whitehall, Commons, Lords, MP, whip, backbencher, c} | brexit, hustings, prime minister, chancellor, whip, MP, member of parliament, backbencher
+law_and_order | law and order | prison, jail, lawyer, counsel, law, justice, court, judge
+crimes | crimes | perjury, murder, blackmail, poaching, theft, robbery, burglary, arson
+stealing_crimes | stealing crimes | poaching, theft, robbery, burglary, shoplifting, mugging, larceny, pickpocketing
+financial_crimes | financial crimes | fraud, forgery, bribery, embezzlement, extortion, counterfeiting, racketeering, insider trading
+crimes_against_people | crimes against people | murder, kidnapping, assault, mugging, manslaughter, stalking, affray, mayhem
+courtroom_words | courtroom words | lawyer, counsel, judge, jury, trial, verdict, evidence, witness
+people_at_a_trial | people at a trial | lawyer, counsel, judge, jury, witness, defendant, prosecutor, plaintiff
+police_words | police words | bobby, detective, arrest, bust, collar, police, the law, fuzz
+slang_terms | police slang | bobby, bust, collar, the law, fuzz, old bill, rozzers, cuffs
+forces_of_europe | european police forces | bobby, constable, Scotland Yard, gendarme, panda car, Garda, carabinieri, constabulary
+officer_s_equipment | police equipment | handcuffs, cuffs, badge, siren, taser, truncheon, baton, riot shield
+prison_words | prison words | Alcatraz, prison, jail, probation, parole, jumpsuit, boilersuit, visiting hours
+detective_words | detective words | evidence, suspect, detective, crime scene, fingerprint, alibi, film noir, noir
+legal_documents | legal documents | warrant, subpoena, affidavit, indictment, injunction, writ, mortgage, lease
+legal_latin | legal latin {habeas corpus, pro bono, de facto, subpoena, affidavit, alibi, bona fide, quid p} | alibi, subpoena, affidavit, status quo, ad hoc, bona fide, per se, quid pro quo
+punishments | punishments {sentences and penalties for breaking rules or laws} | jail, fine, curfew, probation, parole, detention, whipping, flog
+spy_words | spy words {agent, mole, cipher, handler, double agent, safe house, codename, wiretap} | cipher, spy, KGB, CIA, Stasi, Enigma, trench coat, one-time pad
+wrongdoers | wrongdoers | criminal, crook, outlaw, offender, lawbreaker, perp, felony, felon
+money_words | money words {general words about cash and wealth} | coin, cash, mortgage, dowry, loan, money, credit, salary
+currencies | currencies | dollar, euro, pound, yen, rupee, peso, franc, yuan
+african_currencies | african currencies {rand, naira, shilling, cedi, birr, kwacha, pula, dalasi} | rand, dinar, dirham, kwacha, naira, shilling, cedi, birr
+asian_currencies | asian currencies {yen, yuan, won, rupee, baht, ringgit, dong, rupiah, taka} | yen, rupee, yuan, won, baht, dinar, dirham, shekel
+european_currencies | european currencies {current and former: euro, pound, franc, lira, mark, peseta, drachma, krona, zlot} | euro, pound, franc, ruble, krona, lira, dinar, zloty
+latin_american_currencies | latin american currencies {real, sol, boliviano, guarani, bolivar, quetzal, colon, lempira, cordoba} | dollar, peso, real, bolivar, quetzal, sol, boliviano, guarani
+banking_words | banking words | bank, cashier, credit card, debit card, mortgage, escrow, lien, direct debit
+coins | coins | doubloon, denarius, loonie, toonie, sixpence, cent, shilling, drachma
+historic_coins | historic coins {doubloon, ducat, florin, farthing, guinea, sovereign, groat, denarius, thaler, p} | doubloon, denarius, solidus, sixpence, shilling, drachma, farthing, florin
+us_coins | us coins {Exactly: penny, nickel, dime, quarter, half dollar, dollar coin.} | cent, penny, nickel, dime, quarter, half dollar, dollar
+tax_words | tax words | tithe, stamp duty, property, tariff, W-2, tax, IRS, tax evasion
+shopping_words | shopping words | supermarket, cashier, changing room, concession stand, aisle, bazaar, receipt, loyalty card
+money_slang | money slang {dough, bread, moolah, bucks, quid, loot, dosh, greenbacks, clams, smackers} | buck, quid, fiver, tenner, dough, bread, moolah, bucks
+stock_market_words | stock market words {shares, bull, bear, dividend, broker, index, portfolio, bond} | equity, shares, stock, bull, bear, dividend, broker, index
+business_words | business words {profit, revenue, merger, startup, CEO, shareholder, budget, invoice} | manager, benchmark, brand, contract, boss, CEO, deadline, budget
+bazaar | bazaar {things in a Middle Eastern or Turkish market} | tea, baklava, Turkish delight, saffron, sumac, tagine, cuppa, char
+things_you_do_with_money | things you do with money {verbs: spend, save, lend ...} | tithe, waste, pay, stash, owe, splurge, budget, deposit
+religion | religion | church, cathedral, mosque, synagogue, chapel, monastery, pilgrimage, faith
+religion_words | religion words | church, faith, belief, god, prayer, supplication, orison, worship
+the_four_evangelists | the four evangelists {Exactly: Matthew, mark, Luke, John.} | mark, Matthew, Luke, John
+four_horsemen_of_the_apocalypse | four horsemen of the apocalypse {Exactly: pestilence, war, famine, Death.} | war, conquest, pestilence, famine, Death
+seven_deadly_sins | seven deadly sins {pride, greed, lust, envy, gluttony, wrath, sloth} | wrath, envy, pride, sloth, lust, gluttony, avarice, greed
+parts_of_a_religious_service | parts of a religious service | prayer, sermon, homily, hymn, altar, baptism, liturgy, sacrament
+religious_festivals | religious festivals | Christmas, Easter, Hanukkah, Diwali, Eid, Ramadan, Passover, Pesach
+religious_leaders | religious leaders | patriarch, monk, nun, priest, pastor, rabbi, imam, bishop
+holy_books | holy books | Bible, Quran, Torah, Dead Sea Scrolls, Vedas, Mahabharata, Ramayana, Upanishads
+angels_and_spirits | angels and spirits | angel, devil, nymph, Valkyrie, Banshee, fairy, wraith, ghost
+archangels | archangels {Named archangels from the Jewish, Christian and Islamic traditions; the best kno} | Gabriel, Michael, Raphael, Uriel, Azrael, Metatron, Raguel, Remiel
+places_of_worship | places of worship | church, cathedral, mosque, synagogue, chapel, monastery, pagoda, mausoleum
+pilgrimage_sites | pilgrimage sites {Mecca, Lourdes, Varanasi, Jerusalem, Santiago de Compostela, Canterbury, Bodh Ga} | Rome, Glastonbury, Lindisfarne, Jerusalem, Lourdes, Mecca, Varanasi, Santiago de Compostela
+famous_saints | famous saints {Patrick, Nicholas, George, Francis, Valentine, Andrew, Christopher, Joan} | Joan of Arc, Brigid, Mother Teresa, Cuthbert, Patrick, Nicholas, George, Francis
+religious_clothing | religious clothing {cassock, habit, hijab, kippah, turban, miter, surplice, wimple} | mantle, wimple, cowl, scapular, cassock, sari, dhoti, turban
+afterlife_words | afterlife words {heaven, hell, paradise, purgatory, limbo, nirvana, underworld, reincarnation} | rapture, karma, nirvana, reincarnation, salvation, underworld, Valhalla, Elysium
+islam_words | islam words {mosque, minaret, imam, Ramadan, hajj, Quran, Eid, halal, muezzin} | mosque, hajj, imam, Quran, Eid, Ramadan, minaret, mihrab
+pilgrimage_words | islamic pilgrimage words | hajj, Mecca, Medina, Kaaba, umrah, kiswah, ihram, Zamzam
+judaism_words | judaism words {synagogue, rabbi, Torah, kosher, Shabbat, menorah, bar mitzvah, Passover} | challah, matzo, synagogue, rabbi, Torah, Hanukkah, Passover, Pesach
+jewish_holidays | jewish holidays | Hanukkah, Passover, Pesach, Rosh Hashanah, Yom Kippur, Purim, Sukkot, Shabbat
+jewish_ritual_objects | jewish ritual objects | shofar, menorah, kippah, yarmulke, skullcap, tallit, prayer shawl, tefillin
+buddhism_words | buddhism words {nirvana, karma, monk, stupa, dharma, mantra, lama, zen} | lotus, pagoda, monk, meditation, karma, nirvana, stupa, prayer wheel
+key_teachings | buddhist teachings | karma, nirvana, dharma, samsara, Four Noble Truths, Eightfold Path, satori, dukkha
+contemplative_practices | buddhist contemplative practices | meditation, mantra, mindfulness, koan, vipassana, zazen, metta, jhana
+temple_sights | buddhist temple sights | pagoda, stupa, prayer wheel, mandala, bodhi tree, wat, thangka, prayer flag
+hinduism_words | hinduism words {puja, guru, ashram, mantra, Vedas, avatar, moksha, ghat} | temple, karma, guru, Diwali, Holi, chakra, yoga, mantra
+hindu_gods_and_goddesses | hindu gods and goddesses | Vishnu, Shiva, Brahma, Ganesh, Ganapati, Hanuman, Krishna, Rama
+spiritual_concepts | hindu spiritual concepts | karma, chakra, dharma, moksha, avatar, atman, Brahman, bhakti
+world_religions | world religions | Christianity, Islam, Judaism, Hinduism, Buddhism, Sikhism, Taoism, Shinto
+military | military | navy, fort, bivouac, patrol, army, air force, marines, soldier
+military_ranks | military ranks | seaman, airman, recruit, rookie, cadet, centurion, midshipman, sapper
+navy_ranks | navy ranks | seaman, midshipman, admiral, rear admiral, vice admiral, commodore, ensign, petty officer
+army_words | army words | fort, bivouac, tank, soldier, trooper, GI, squaddie, digger
+kinds_of_soldier | kinds of soldier | soldier, trooper, GI, squaddie, digger, grunt, doughboy, recruit
+army_kit | army kit | camouflage, uniform, bandolier, combat boots, dog tags, bayonet, canteen, ration
+navy_words | navy words | man-of-war, ship, anchor, hull, frigate, galley, crow's nest, bridge
+parts_of_a_ship | parts of a ship | hull, galley, crow's nest, bridge, binnacle, bowsprit, gunwale, capstan
+naval_people | naval people | marines, sailor, seaman, mariner, matelot, jack tar, bosun, boatswain mate
+air_force_words | air force words | pilot, runway, cockpit, hangar, airstrip, wingman, airman, squadron
+medals_and_honors | medals and honors | medal, ribbon, trophy, Order of the Garter, Purple Heart, Victoria Cross, Medal of Honor, Silver Star
+historic_weapons | historic weapons | crossbow, trebuchet, cutlass, flintlock, katana, sword, shield, ballista
+modern_weapons | modern weapons {rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun} | tank, missile, grenade, rifle, bomb, pistol, revolver, mortar
+military_units | military units {squad, platoon, company, battalion, regiment, brigade, division, corps, squadron} | patrol, army, infantry, cavalry, artillery, commando, battalion, regiment
+warships | warships {destroyer, frigate, submarine, aircraft carrier, battleship, cruiser, corvette, } | man-of-war, galleon, sloop, frigate, aircraft carrier, privateer, trireme, ship of the line
+service_members | service members | marines, soldier, trooper, GI, squaddie, digger, grunt, doughboy
+camps_and_fortifications | camps and fortifications | fort, bivouac, barracks, bunker, trench, military base, mess hall, frontline
+school | school | bus, schedule, field trip, backpack, rucksack, teacher, educator, schoolteacher
+school_subjects | school subjects | statistics, economics, Mandarin, algebra, math, English, science, history
+stationery | stationery | notebook, composition book, scissors, stencil, ruler, protractor, quill, inkwell
+classroom_items | classroom items | chair, map, globe, backpack, rucksack, desk, bell, textbook
+school_staff | school staff | teacher, educator, schoolteacher, janitor, bus driver, librarian, principal, headmaster
+exam_words | exam words | exam, examination, quiz, report card, essay, sat, test, grade
+university_words | university words | dormitory, dorm, semester, syllabus, scholarship, tuition, lecture, freshman
+academic_staff | university staff | registrar, adjunct, Professor, bursar, lecturer, provost, chancellor, vice-chancellor
+school_types | school types {kindergarten, preschool, elementary, middle school, high school, boarding school} | kindergarten, high, elementary, boarding, borstal, madrasa, yeshiva, preschool
+university_degrees | university degrees {bachelor, master, doctorate, PhD, MBA, BA, BSc, diploma} | diploma, bachelor, master, doctorate, PhD, MBA, BA, BSc
+graduation_words | graduation words {cap, gown, diploma, tassel, valedictorian, commencement, alumni, yearbook} | diploma, valedictorian, alumnus, convocation, tassel, mortarboard, alumni, alma mater
+school_events | school events | field trip, assembly, sports day, prom, spelling bee, maypole dance, talent show, open house
+places_in_a_school | places in a school | library, chapel, classroom, playground, cafeteria, lunchroom, teachers' lounge, sick bay
+media_and_communication | media and communication | journalist, reporter, hack, newshound, news, magazine, internet, website
+newspaper_words | newspaper words | newsstand, reporter, headline, gazette, editor, tabloid, broadsheet, scoop
+social_media_words | social media words | hashtag, meme, vlog, clickbait, selfie, photobomb, doomscrolling, FOMO
+online_actions | social media actions | DM, post, like, share, follow, comment, tag, unfollow
+internet_users | social media users | follower, influencer, troll, subscriber, stan, lurker, catfish, sockpuppet
+social_media_platforms | social media platforms {real brands: Facebook, Instagram, TikTok, YouTube, Snapchat, Reddit, LinkedIn} | telegram, wire, Facebook, Instagram, TikTok, YouTube, Snapchat, Twitter
+phone_words | phone words | text message, voicemail, video call, switchboard, smartphone, mobile, landline, answering machine
+mail_words | mail words | pen pal, carrier, postcard, letter, philately, envelope, Penny Black, stamp
+journalism_words | journalism words | reporter, headline, interview, paparazzi, press release, fake news, byline, sound bite
+news_roles | news roles | reporter, paparazzi, correspondent, anchor, stringer, photojournalist, war correspondent, pool reporter
+advertising_words | advertising words | blimp, poster, commercial, billboard, hoarding, flyer, prime time, jingle
+online_promotion_terms | online promotion terms | pop-up ad, click-through rate, impression, sponsored content, native advertising, retargeting, advertorial, pre-roll
+radio_words | radio words {DJ, frequency, broadcast, station, airwaves, jingle, FM, static} | walkie-talkie, antenna, broadcast, podcast, syndication, DJ, disc jockey, sound booth
+old_ways_to_communicate | old ways to communicate {telegram, Morse code, carrier pigeon, semaphore, smoke signal, fax, pager, town } | telegram, wire, cable, fax, facsimile, Morse code, smoke signal, carrier pigeon
+media_slang | media slang | hack, newshound, rag, telly, tube, idiot box, small screen, ring
+social_classes | social classes {aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie} | peasant, serf, villein, yeoman, burgher, plebeian, patrician, caste
+protest_words | protest words {march, rally, placard, strike, boycott, petition, sit-in, picket} | blockade, megaphone, picket, boycott, march, rally, placard, strike
+workplace_disputes | workplace disputes | picket, strike, walkout, picket line, general strike, lockout, wildcat strike, work-to-rule
+charity_words | charity words {donate, volunteer, fundraiser, appeal, sponsor, raffle, telethon, nonprofit} | raffle, tithe, Live Aid, comic relief, alms, charity, fun run, UNICEF
+fundraising_events | fundraising events | raffle, Live Aid, fun run, telethon, bake sale, benefit concert, charity gala, charity auction
+helping_groups | aid organizations | comic relief, UNICEF, Red Cross, food bank, Salvation Army, Oxfam, soup kitchen, Children in Need
+manners_and_etiquette | manners and etiquette {please, thank you, RSVP, queue, tip, handshake, bow, excuse me} | chivalry, dress code, namaste, handshake, bow, curtsy, tip, fish knife
+polite_phrases | polite phrases | namaste, pardon, please, thank you, excuse me, sorry, bless you, after you
+polite_gestures | polite gestures | handshake, bow, curtsy, hold the door, firm handshake, kiss on the cheek, salute, tip your hat
+maori_culture | maori culture {haka, marae, hangi, whanau, iwi, moko, waka, hongi, mana, tapu} | haka, hangi, kumara, Aotearoa, Maui, Ranginui, Papatuanuku, Tane Mahuta
+aboriginal_culture | aboriginal culture {Aboriginal Australian: didgeridoo, boomerang, Dreamtime, songlines, corroboree, } | Uluru, Ayers Rock, didgeridoo, ochre, smoking ceremony, witchetty grub, Dreamtime, Rainbow Serpent
+words_for_a_person | words for a person {individual, human, soul, fellow, chap, guy, bloke, dude} | Homo sapiens, someone, bloke, geezer, lad, lass, sheila, fellow
+groups_of_people | groups of people {crowd, team, crew, gang, band, squad, mob, troupe, clan, committee} | crew, clan, jury, congregation, platoon, brigade, guild, posse
+words_for_leader | words for leader {boss, chief, captain, head, director, chair, commander, skipper, ringleader} | manager, overlord, big cheese, boss, skipper, honcho, supervisor, president
+words_for_expert | words for expert {guru, ace, whiz, maestro, pro, virtuoso, connoisseur, authority} | veteran, virtuoso, boffin, savant, connoisseur, maven, expert, guru
+words_for_beginner | words for beginner {novice, rookie, newbie, trainee, apprentice, amateur, greenhorn, tenderfoot} | apprentice, intern, recruit, rookie, cadet, freshman, noob, newbie
+fans_and_followers | fans and followers {fan, devotee, enthusiast, buff, aficionado, admirer, disciple, groupie} | disciple, groupie, aficionado, follower, stan, buff, fan, devotee
+troublemakers | troublemakers {rascal, rogue, scamp, brat, prankster, hooligan, imp, scallywag} | scallywag, knave, scoundrel, rapscallion, blackguard, varlet, miscreant, whippersnapper
+living_room | living room | sofa, couch, chesterfield, armchair, recliner, ottoman, loveseat, television
+kitchen | kitchen | rolling pin, cupboard, refrigerator, fridge, icebox, oven, stove, microwave
+bathroom | bathroom | pumice stone, soap, shampoo, conditioner, toothbrush, toothpaste, razor, towel
+bedroom | bedroom | bed, pillow, blanket, comforter, quilt, mattress, sheet, pajamas
+garage | garage | hammer, screwdriver, wrench, wheelbarrow, lawnmower, mower, tire, toolbox
+attic | attic | sewing machine, dress form, rocking horse, skylight, dormer window, ladder, rafters, loft hatch
+dining_room | dining room | chair, table, sideboard, hutch, trivet, napkin, tablecloth, knife
+home_office | home office | chair, desk, whiteboard, computer, laptop, notebook, keyboard, mouse
+outside_the_house | outside the house | lawn, flower bed, hedge, shed, fence, patio, sprinkler, gazebo
+junk_drawer | junk drawer {batteries, rubber bands, tape, takeout menus, spare keys} | screwdriver, flashlight, matches, tape measure, hex key, scissors, candles, bottle opener
+in_a_wallet | in a wallet {cash, cards, driver's license, receipts, photo} | bus pass, cash, credit card, debit card, driver's license, receipt, photo, coins
+in_a_handbag | in a handbag {lipstick, keys, tissues, mints, compact mirror} | perfume, lipstick, lippy, mascara, comb, hairbrush, tweezers, nail file
+medicine_cabinet | medicine cabinet {bathroom cabinet: plasters, aspirin, razor, cotton swabs, thermometer} | thermometer, mouthwash, deodorant, antiperspirant, roll-on, razor, shaving cream, sunscreen
+wardrobe | closet contents {inside a clothes closet: hangers, coats, shoeboxes, belts} | hat stand, trousers, slacks, bathrobe, hat, shoe rack, wedding dress, mothballs
+under_the_sink | under the sink {bleach, sponges, trash bags, drain cleaner, pipes} | garbage disposal, InSinkErator, pipe wrench, plunger, trash can, sponges, trash bags, drain cleaner
+in_the_fridge | in the fridge | lettuce, bacon, ham, milk, cheese, butter, cream, yogurt
+furniture | furniture | chair, sofa, couch, chesterfield, armchair, stool, bench, beanbag
+seating | seating | chair, sofa, couch, chesterfield, armchair, stool, bench, beanbag
+tables_and_desks | tables and desks | desk, nightstand, vanity, bureau, workbench, lectern, side, end
+beds | beds | bedroll, hammock, air mattress, crib, cot, cradle, moses basket, bed
+storage_furniture | storage furniture | bookcase, bookshelf, wardrobe, chest of drawers, tallboy, cabinet, cupboard, sideboard
+lights_and_lamps | lights and lamps | lantern, flashlight, spotlight, glow stick, candle, chandelier, candelabra, downlight
+soft_furnishings | soft furnishings | quilt, tapestry, bedspread, bolster, valance, throw, pillow sham, afghan
+window_coverings | window coverings {curtains, blinds, shutters, drapes, valance, roller blind} | valance, curtains, blinds, drapes, pelmet, roman blind, shutters, net curtains
+rugs_and_carpets | rugs and carpets {kilim, shag, Persian rug, dhurrie, runner, doormat} | prayer rug, prayer mat, bath mat, rug, welcome mat, carpet, doormat, runner
+antique_furniture | antique furniture {armoire, bureau, chaise longue, credenza, escritoire, chiffonier} | rocking chair, ottoman, chaise longue, wardrobe, tallboy, sideboard, credenza, commode
+appliances | appliances | hair dryer, refrigerator, fridge, icebox, freezer, oven, stove, microwave
+kitchen_appliances | kitchen appliances | sous vide, refrigerator, fridge, icebox, freezer, oven, stove, microwave
+cleaning_appliances | cleaning appliances | dishwasher, washing machine, dryer, vacuum cleaner, vacuum, Hoover, steam iron, clothes iron
+home_electronics | home electronics | baby monitor, alarm clock, television, telly, tube, idiot box, small screen, radio
+things_for_watching_shows | things for watching shows | television, telly, tube, idiot box, small screen, remote control, remote, zapper
+things_that_play_music | things that play music | radio, headphones, cans, turntable, amplifier, record player, gramophone, CD player
+heating_and_cooling | heating and cooling | firebox, air conditioner, heater, humidifier, dehumidifier, electric blanket, hot water bottle, fireplace
+fireplace_words | fireplace words {hearth, mantel, grate, poker, bellows, flue, kindling} | firebox, firewood, tinder, mantelpiece, chimney, wood stove, hearth, fire screen
+small_appliances | small appliances | hair dryer, hair straightener, GHDs, curling iron, toaster, kettle, blender, clothes iron
+bathroom_fixtures | bathroom fixtures | bathtub, shower, faucet, clawfoot tub, jacuzzi, sink, toilet, towel rail
+electrical_fittings | electrical fittings {plug, socket, switch, fuse, adapter, dimmer, breaker} | ballast, extension cord, surge protector, plug, socket, switch, dimmer, breaker
+tools | tools | hammer, screwdriver, saw, wrench, pliers, axe, chisel, mallet
+hand_tools | hand tools | hammer, screwdriver, saw, wrench, pliers, axe, chisel, mallet
+saws | saws {hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw} | saw, hacksaw, jigsaw, chainsaw, bandsaw, handsaw, bow, rip
+power_tools | power tools | drill, jigsaw, chainsaw, glue gun, nail gun, soldering iron, angle grinder, circular saw
+fixings | fixings | screw, rivet, nail, bolt, nut, washer, staple, tack
+measuring_tools | measuring tools | spirit level, odometer, thermometer, tape measure, stud finder, try square, ruler, scale
+painting_and_decorating | painting and decorating | sandpaper, caulking gun, putty knife, stencil, varnish, primer, paintbrush, scraper
+plumbing_words | plumbing words | water heater, valve, gasket, faucet, sink, toilet, plunger, bidet
+adhesives | adhesives {glues, tapes and sealants: duct tape, epoxy, superglue, caulk} | Velcro, hook-and-loop, glue, mastic, masking tape, superglue, duct tape, scotch tape
+things_with_a_sharp_blade | things with a sharp blade | saw, axe, chisel, hacksaw, plane, adze, jigsaw, chainsaw
+cleaning_items | cleaning items | vacuum cleaner, vacuum, Hoover, robot vacuum, Roomba, pipe cleaner, toilet brush, lint roller
+brooms_and_brushes | brooms and brushes {push broom, besom, dustpan brush, toilet brush, feather duster} | toothbrush, toilet brush, broom, mop, dustpan, feather duster, scrubbing brush, squeegee
+cleaning_verbs | cleaning verbs | scrape, soak, scrub, wring, wipe, mop, squeegee, clean
+laundry_words | laundry words | starch, washing machine, dryer, clothes iron, mangle, washboard, clothesline, ironing board
+cleaning_products | cleaning products | baking soda, white vinegar, drain cleaner, washing-up liquid, toilet cleaner, disinfectant, limescale remover, air freshener
+chores | chores | gardening, laundry, dishes, vacuuming, sweeping, mopping, dusting, taking out the trash
+bins_and_recycling | bins and recycling | compost, compost bin, garbage truck, garbage collector, trash collector, garbageman, garbage disposal, InSinkErator
+washing_up | washing up {doing the dishes: suds, scourer, drying rack, tea towel} | dishwasher, hot water, tea towel, dish soap, rubber gloves, dishcloth, steel wool, soap dispenser
+household_pests | household pests {pests indoors: mice, cockroaches, silverfish, termites, moths} | rat, ant, wasp, fly, mosquito, mozzie, skeeter, moth
+building_materials | building materials | iron, gravel, slate, sand, terracotta, lintel, concrete, steel
+parts_of_a_house | parts of a house | patio, garage, bedroom, foundation, balcony, hallway, gable, lintel
+staircase_parts | staircase parts {banister, tread, riser, newel, baluster, landing} | baby gate, landing, banister, newel post, handrail, stair, volute, stairwell
+roof_parts | roof parts | slate, gable, parapet, cupola, finial, skylight, dormer, eaves
+windows_and_doors | windows and doors | porthole, stained glass, lintel, oriel, skylight, dormer, curtain, lancet
+parts_of_a_door | parts of a door {hinge, knob, latch, jamb, threshold, knocker, peephole} | lintel, architrave, fanlight, letterbox, doorbell, hinge, threshold, doorknob
+diy_words | diy words | spirit level, toolbox, workbench, sawdust, baseboard, sealant, grout, joist
+house_styles | house styles | apartment, bungalow, cottage, mansion, igloo, villa, penthouse, townhouse
+real_estate_words | real estate words {mortgage, lease, tenant, landlord, deposit, listing} | floor plan, mortgage, rent, landlord, tenant, lease, deposit, listing
+household_bills | household bills {rent, electricity, water, internet, insurance, property tax} | internet, streaming, broadband, service charge, mortgage, rent, ground rent, electricity
+moving_house | moving house | housewarming, packing tape, removal van, packing box, bubble wrap, movers, packing, unpacking
+home_safety | home safety | CCTV, exit sign, first aid kit, baby gate, night light, medicine cabinet, grab bar, fuse box
+clothes | clothes | onesie, pajamas, shirt, T-shirt, tee, trousers, slacks, jeans
+tops | tops | shirt, T-shirt, tee, sweater, pullover, jersey, hoodie, sweatshirt
+pants_and_shorts | pants and shorts | combats, trousers, slacks, jeans, shorts, overalls, leggings, sweatpants
+dresses_and_skirts | dresses and skirts | skirt, dress, pinafore, tutu, gown, kirtle, bustle, crinoline
+coats_and_jackets | coats and jackets | coat, tuxedo, blazer, raincoat, parka, poncho, cape, gilet
+underwear | underwear | bloomers, garter, tights, long johns, chemise, girdle, corset, underclothes
+traditional_clothes | traditional clothes | poncho, kaftan, kimono, clogs, fez, Stetson, dashiki, lederhosen
+ottoman_clothing | ottoman clothing {fez, kaftan, salvar, entari, yashmak, kalpak} | kaftan, veil, pestemal, fez, sash, harem pants, turban, headscarf
+middle_eastern_clothing | middle eastern clothing {thobe, abaya, keffiyeh, dishdasha, bisht} | kaftan, djellaba, abaya, headscarf, keffiyeh, hijab, burqa, niqab

@@ -1,0 +1,498 @@
+fruits | fruits | lemon, lime, orange, grapefruit, tangerine, mandarin, clementine, kumquat
+citrus_fruits | citrus fruits | lemon, lime, orange, grapefruit, tangerine, mandarin, clementine, satsuma
+berries | berries | strawberry, blueberry, raspberry, blackberry, cranberry, gooseberry, mulberry, currant
+tropical_fruits | tropical fruits | pomelo, banana, mango, pineapple, kiwi, kiwifruit, papaya, lychee
+stone_fruits | stone fruits | cherry, peach, plum, mango, lychee, coconut, apricot, nectarine
+melons | melons | watermelon, honeydew, cantaloupe, galia, charentais, casaba, crenshaw, piel de sapo
+dried_fruits | dried fruits | date, currant, jujube, trail mix, goji berry, prune, raisin, sultana
+apple_varieties | apple varieties {named apple cultivars; they only read as apples within this theme} | Granny Smith, Golden Delicious, Red Delicious, Gala, Fuji, McIntosh, Braeburn, Pink Lady
+asian_fruits | asian fruits {lychee, durian, rambutan, mangosteen, longan, yuzu} | kumquat, pomelo, yuzu, lychee, persimmon, jackfruit, rambutan, dragon fruit
+nuts | nuts {culinary nuts: almond, cashew, pecan, walnut, pistachio, peanut} | coconut, mixed nuts, almond, peanut, cashew, pecan, pistachio, hazelnut
+edible_seeds | edible seeds | fennel, quinoa, millet, buckwheat, sorghum, amaranth, teff, mustard
+parts_of_a_fruit | parts of a fruit | juice, zest, peel, seed, core, stem, stone, pit
+colours_named_after_fruit | colours named after fruit | lemon, lime, orange, tangerine, cherry, peach, plum, mango
+vegetables | vegetables | tomato, carrot, potato, onion, lettuce, cabbage, broccoli, cauliflower
+root_vegetables | root vegetables | carrot, potato, onion, sweet potato, garlic, radish, beet, turnip
+leafy_greens | leafy greens | lettuce, cabbage, spinach, kale, chard, watercress, endive, radicchio
+squashes | squashes | pumpkin, zucchini, chayote, butternut, spaghetti, summer squash, winter squash, yellow squash
+beans_and_pulses | beans and pulses | edamame, snow peas, black, lentil, chickpea, pea, soybean, black-eyed pea
+onion_family | onion family | onion, garlic, scallion, leek, shallot, chives, sweet, pearl
+cabbage_family | cabbage family | cabbage, broccoli, cauliflower, radish, turnip, kale, watercress, bok choy
+mushrooms | mushrooms | reishi, cordyceps, button, portobello, shiitake, chanterelle, porcini, morel
+andean_crops | andean crops {first grown in South America: potato, quinoa, cassava, oca, peanut} | tomato, tamarillo, cherimoya, potato, sweet potato, pumpkin, maize, cassava
+vegetables_that_are_really_fruits | vegetables that are really fruits | tomato, cucumber, pumpkin, bell pepper, sweet pepper, eggplant, zucchini, okra
+meat_and_seafood | meat and seafood | chicken, duck, turkey, goose, beef, pork, lamb, bacon
+cuts_of_meat | cuts of meat | oxtail, sirloin, ribeye, fillet, rump, T-bone, brisket, shank
+poultry | poultry | chicken, duck, turkey, goose, hen, spatchcock, pigeon, ostrich
+game_meats | game meats {venison, rabbit, pheasant, boar, quail, grouse, bison} | venison, kangaroo, squirrel, bison, buffalo, moose, antelope, wildebeest
+sausages | sausages | hot dog, haggis, bratwurst, chorizo, salami, pepperoni, bologna, kielbasa
+cured_meats | cured meats | bacon, ham, gammon, chorizo, salami, pepperoni, mortadella, prosciutto
+shellfish | shellfish | lobster, crab, shrimp, oyster, mussel, clam, scallop, crayfish
+fish_to_eat | fish to eat | salmon, tuna, cod, sardine, anchovy, trout, swordfish, haddock
+fish_from_rivers_and_lakes | fish from rivers and lakes | trout, tilapia, catfish, carp, pike, perch, sturgeon, bream
+small_oily_fish | small oily fish | sardine, anchovy, mackerel, herring, whitebait, sprat, pilchard, kipper
+seafood_dishes | seafood dishes {fish and chips, clam chowder, crab cakes, lobster roll, calamari, scampi} | calamari, sushi, fish and chips, paella, tempura, bouillabaisse, scampi, clam chowder
+barbecue_foods | barbecue foods {brisket, ribs, pulled pork, burnt ends, wings, corn on the cob} | sausage, steak, cornbread, hot dog, burger, hamburger, kebab, mac and cheese
+butcher_shop | butcher shop | saw, sausage, ground beef, oxtail, offal, organ meats, tripe, sweetbreads
+meat_from_mammals | meat from mammals | beef, pork, lamb, bacon, ham, steak, ground beef, veal
+dairy_and_eggs | dairy | ricotta, milk, cheese, butter, cream, yogurt, milkshake, margarine
+cheeses | cheeses | cheddar, mozzarella, brie, parmesan, feta, gouda, camembert, edam
+hard_cheeses | hard cheeses | cheddar, parmesan, gouda, edam, manchego, emmental, gruyere, pecorino
+soft_cheeses | soft cheeses | mozzarella, brie, feta, camembert, halloumi, ricotta, paneer, labneh
+blue_cheeses | blue cheeses | stilton, gorgonzola, roquefort, blue cheese, cambozola, bleu d'auvergne, cabrales, dolcelatte
+french_cheeses | french cheeses | brie, camembert, roquefort, raclette, boursin, reblochon, munster, comté
+italian_cheeses | italian cheeses | mozzarella, parmesan, gorgonzola, ricotta, mascarpone, provolone, pecorino, burrata
+british_cheeses | british cheeses | cheddar, stilton, red leicester, wensleydale, cheshire, double gloucester, Caerphilly, Stinking Bishop
+types_of_milk | types of milk {whole, skim, oat, almond, soy, goat, buttermilk, condensed} | coconut, buttermilk, powdered milk, milk powder, rice, almond, cashew, cow
+egg_dishes | egg dishes | omelet, quiche, frittata, shakshuka, egg salad, soufflé, huevos rancheros, egg drop soup
+cheese_dishes | cheese dishes {fondue, raclette, mac and cheese, grilled cheese, quesadilla, welsh rarebit} | curds, cheesecake, nachos, quesadilla, poutine, khachapuri, raclette, soufflé
+cheesemaking_words | cheesemaking words {curd, whey, rennet, rind, wheel, brine, aging, culture} | whey, curds, coagulation, rennet, rind, cheese wheel, brine, aging
+breads_and_baking | breads and baking | bread, loaf, roll, bagel, baguette, croissant, muffin, cake
+breads | breads | bagel, baguette, pretzel, tortilla, naan, sourdough, flatbread, cornbread
+flatbreads | flatbreads {pita, naan, tortilla, lavash, chapati, injera, pide, yufka, arepa} | tortilla, naan, flatbread, pita, focaccia, chapati, roti, matzo
+pastries | pastries | croissant, doughnut, danish, baklava, macaron, eclair, cream puff, turnover
+french_pastries | french pastries | croissant, brioche, danish, macaron, eclair, palmier, profiterole, pain au chocolat
+cakes | cakes | cupcake, cheesecake, tiramisu, birthday cake, pound, red velvet, fruitcake, lemon drizzle
+cookies | cookies | rugelach, chocolate chip, oatmeal raisin, sugar cookie, gingerbread, peanut butter cookie, shortbread, snickerdoodle
+pies_and_tarts | pies and tarts | key lime, banana cream, custard, fruit, mince pie, treacle, tarte tatin, mud pie
+baking_ingredients | baking ingredients | butter, buttermilk, flour, yeast, sprinkles, baking powder, sourdough starter, sugar
+flours | flours {plain, self-rising, bread, whole wheat, rye, spelt, almond, rice, buckwheat} | semolina, cornmeal, arrowroot, bread, cake, corn, pastry, masa harina
+cake_decorations | cake decorations | whipped cream, icing, sprinkles, marzipan, candles, glace cherry, fondant, buttercream
+desserts_and_sweets | desserts and sweets | cake, cupcake, brownie, pie, cookie, ice cream, chocolate, cheesecake
+ice_cream_flavors | ice cream flavors | strawberry, mango, coffee, chocolate, cotton candy, vanilla, java, joe
+frozen_desserts | frozen desserts {sorbet, gelato, sundae, popsicle, granita, frozen yogurt, kulfi} | ice cream, sundae, sorbet, gelato, kulfi, semifreddo, popsicle, ice pop
+puddings | puddings | custard, trifle, blancmange, syllabub, chia, bread, pudding cup, treacle sponge
+candy | candy | lollipop, lolly, marshmallow, caramel, fudge, toffee, jelly beans, candy cane
+chocolates | chocolates | truffle, Kit Kat, Snickers, ganache, praline, Toblerone, Lindt, Godiva
+desserts_of_the_world | desserts of the world | gelato, tiramisu, panna cotta, baklava, churros, pavlova, mochi, macaron
+indian_sweets | indian sweets {gulab jamun, jalebi, barfi, ladoo, rasgulla, kheer} | kulfi, gulab jamun, modak, malpua, jalebi, barfi, ladoo, rasgulla
+french_desserts | french desserts | macaron, crème brûlée, mille-feuille, napoleon, tarte tatin, profiteroles, clafoutis, mont blanc
+eastern_mediterranean_sweets | eastern mediterranean sweets | baklava, Turkish delight, halva, knafeh, loukoumades, galaktoboureko, qatayef, mhalabiya
+toppings | dessert toppings | whipped cream, clotted cream, crème fraîche, sprinkles, granola, chocolate chips, dulce de leche, cacao nibs
+sweeteners | sweeteners {sugar, honey, maple syrup, agave, molasses, stevia, treacle, jaggery} | agave, sugar, fructose, honey, brown sugar, golden syrup, caster sugar, isomalt
+pasta_rice_and_grains | pasta, rice and grains | corn, maize, pasta, rice, noodles, spaghetti, macaroni, oats
+pasta_shapes | pasta shapes | spaghetti, macaroni, lasagna, penne, ravioli, fusilli, linguine, fettuccine
+long_pasta | long pasta | spaghetti, linguine, fettuccine, vermicelli, pappardelle, bucatini, angel hair, capellini
+stuffed_pasta | stuffed pasta | ravioli, tortellini, cannelloni, manicotti, agnolotti, cappelletti, tortelloni, mezzelune
+tube_pasta | tube pasta | macaroni, penne, rigatoni, bucatini, elbow macaroni, cannelloni, manicotti, ziti
+pasta_dishes | pasta dishes {carbonara, lasagna, bolognese, alfredo, cacio e pepe, puttanesca} | lasagna, salad, mac and cheese, spaghetti bolognese, cacio e pepe, cannelloni, carbonara, spaghetti carbonara
+noodles | noodles | ramen, udon, vermicelli, rice, soba, pad thai, pho, egg
+noodle_dishes | noodle dishes {pad thai, ramen, pho, chow mein, laksa, japchae, yakisoba} | ramen, udon, soba, pad thai, pho, lo mein, chow mein, yakisoba
+rice_dishes | rice dishes | pudding, risotto, pilaf, sushi, paella, biryani, bibimbap, Pongal
+east_asian_dishes | east asian grain dishes | sushi, fried rice, bibimbap, egg fried rice, congee, jook, onigiri, donburi
+indian_dishes | indian grain dishes | biryani, Pongal, kedgeree, pulao, khichdi, lemon rice, bisi bele bath, jeera rice
+grains | grains | corn, maize, rice, oats, wheat, quinoa, barley, rye
+breakfast_cereals | breakfast cereals | granola, muesli, cornflakes, oatmeal, bran flakes, Cheerios, Froot Loops, Frosted Flakes
+dumplings | dumplings | gnocchi, dim sum, pierogi, gyoza, potsticker, wonton, matzo ball, xiaolongbao
+rice_varieties | rice varieties | basmati, arborio, sushi, forbidden rice, carnaroli, bomba, calrose, parboiled
+herbs_spices_and_sauces | herbs, spices and sauces | salt, basil, parsley, mint, rosemary, cinnamon, ginger, vanilla
+herbs | herbs | basil, parsley, mint, rosemary, thyme, sage, oregano, dill
+spices | spices | cinnamon, black pepper, pepper, nutmeg, paprika, cumin, cloves, chili powder
+spice_blends | spice blends | chili powder, curry powder, garam masala, za'atar, ras el hanout, five spice, five-spice powder, Cajun seasoning
+chili_peppers | chili peppers | cayenne, chili pepper, jalapeño, habanero, serrano, poblano, chipotle, ancho
+sauces_and_condiments | sauces and condiments | mustard, ketchup, mayonnaise, gravy, salsa, pesto, relish, chutney
+french_sauces | french sauces {béchamel, hollandaise, velouté, béarnaise, beurre blanc, mornay} | mayonnaise, aioli, vinaigrette, béchamel, tapenade, coulis, hollandaise, béarnaise
+asian_sauces | asian sauces {soy, oyster, fish, hoisin, teriyaki, gochujang, ponzu, sambal} | hoisin, mirin, gochujang, ponzu, sesame oil, sriracha, sambal, miso paste
+salad_dressings | salad dressings {ranch, vinaigrette, caesar, thousand island, honey mustard, green goddess} | ranch, vinaigrette, salad cream, poppy seed, vidalia onion, thousand island, caesar, honey mustard
+dips | dips {hummus, guacamole, salsa, tzatziki, baba ganoush, queso, raita} | labneh, salsa, hummus, ranch, tapenade, guacamole, taramasalata, tzatziki
+spreads | spreads {jam, marmalade, peanut butter, Nutella, Marmite, Vegemite, lemon curd, pâté} | butter, margarine, cream cheese, tahini, honey, liverwurst, dulce de leche, jam
+pickles_and_preserves | pickles and preserves | relish, chutney, kimchi, confit, fruit leather, pickled onion, compote, piccalilli
+oils_and_vinegars | oils and vinegars {olive, sesame, canola, coconut, balsamic, malt, cider, rice vinegar} | avocado, coconut, olive, corn, maize, mustard, sherry, sunflower
+dishes | prepared dishes | lasagna, risotto, ramen, pizza, sandwich, soup, salad, curry
+soups | soups | tomato, potato, pumpkin, ramen, miso, gazpacho, pho, borscht
+stews | stews {goulash, chili, cassoulet, tagine, gumbo, bourguignon, stroganoff, hotpot} | oxtail, curry, casserole, pot roast, goulash, ratatouille, tagine, cassoulet
+salads | salads | potato, tuna, egg, pasta, coleslaw, side, chicken, spinach
+sandwiches | sandwiches | cucumber, ham, egg, lobster roll, tuna melt, pulled pork, grilled cheese, croque monsieur
+fast_food | fast food | milkshake, pizza, taco, burrito, nachos, hot dog, hamburger, fish and chips
+breakfast_foods | breakfast foods | bacon, sausage, yogurt, omelet, bagel, croissant, muffin, toast
+british_morning_foods | british morning foods | bacon, sausage, toast, crumpet, baked beans, black pudding, kedgeree, full English
+snacks | snacks | edamame, trail mix, popcorn, rice cakes, mixed nuts, granola bar, kale chips, seaweed
+chip_flavors | chip flavors | chicken, cheddar, sour cream, rosemary, ketchup, paprika, wasabi, kimchi
+street_food | street food | ice cream, churros, noodles, pizza, taco, hot dog, dumplings, burger
+potato_dishes | potato dishes {fries, mashed, hash browns, gratin, rosti, latkes, tater tots, gnocchi} | gnocchi, poutine, pierogi, aligot, french fries, tater tots, curly fries, hash browns
+savory_pies | savory pies {shepherd's pie, pot pie, pork pie, quiche, pasty, empanada, tourtière, börek} | pork, quiche, meat, sausage roll, vol-au-vent, empanada, tamale, chicken pot pie
+pizza_styles | pizza styles {margherita, pepperoni, hawaiian, neapolitan, deep-dish, calzone, diavola} | marinara, Hawaiian, pepperoni, thin crust, margherita, deep dish, Chicago-style, New York-style
+pizza_toppings | pizza toppings | pineapple, tomato, chicken, mozzarella, parmesan, feta, ricotta, onion
+pancakes_of_the_world | pancakes of the world | injera, crepe, dosa, latke, pancake, buttermilk, hotcake, flapjack
+burger_toppings | burger toppings | pineapple, tomato, avocado, cheddar, brie, onion, lettuce, beet
+asian_dishes | asian dishes | ramen, curry, sushi, fried rice, dumplings, stir-fry, pad thai, samosa
+european_dishes | european dishes | lasagna, risotto, fish and chips, spaghetti bolognese, paella, quiche, French toast, moussaka
+italian_food | italian food | focaccia, ciabatta, gelato, tiramisu, panna cotta, spaghetti, lasagna, ravioli
+pasta_meals | pasta meals | spaghetti, lasagna, ravioli, gnocchi, trofie, cacio e pepe, strozzapreti, carbonara
+french_food | french food | baguette, croissant, brioche, crème brûlée, quiche, ratatouille, cassoulet, bouillabaisse
+spanish_food | spanish food | manchego, churros, paella, gazpacho, horchata, chorizo, sobrasada, butifarra
+british_food | british food {fish and chips, sunday roast, toad in the hole, scotch egg, crumpets} | clotted cream, trifle, fish and chips, haggis, bangers and mash, toad in the hole, cullen skink, black pudding
+sweet_treats | british sweet treats | clotted cream, trifle, Chelsea bun, Eccles cake, Bakewell tart, banoffee pie, sticky toffee pudding, jam roly-poly
+scottish_dishes | scottish dishes | haggis, cullen skink, cranachan, stovies, clapshot, tattie scones, Forfar bridie, Arbroath smokie
+greek_food | greek food {moussaka, souvlaki, gyros, spanakopita, dolmades, pastitsio} | feta, halloumi, baklava, halva, hummus, moussaka, taramasalata, saganaki
+german_food | german food {sauerkraut, pretzel, schnitzel, spätzle, strudel, sauerbraten} | pretzel, pumpernickel, bratwurst, liverwurst, weisswurst, currywurst, bockwurst, strudel
+eastern_european_food | eastern european food {pierogi, borscht, goulash, kielbasa, blini, pelmeni} | halva, kasha, goulash, pierogi, borscht, kvass, kielbasa, pelmeni
+turkish_food | turkish food | baklava, kebab, ayran, shish kebab, menemen, manti, cacik, doner kebab
+turkish_breakfast | turkish breakfast {simit, menemen, sucuk, beyaz peynir, kaymak, gözleme, çay} | tahini, honey, Turkish tea, menemen, börek, turkish coffee, simit, gözleme
+kebab_types | kebab types {adana, urfa, iskender, döner, şiş, beyti, cağ kebab} | kebab, shawarma, iskender, kofta, souvlaki, doner, Bursa, adana
+middle_eastern_food | middle eastern food | halloumi, labneh, pita, baklava, halva, couscous, bulgur, freekeh
+meze | meze {small shared plates: hummus, tabbouleh, dolma, muhammara, falafel} | halloumi, labneh, pita, hummus, falafel, taramasalata, tzatziki, baba ganoush
+persian_food | persian food {tahdig, ghormeh sabzi, fesenjan, koobideh, ash reshteh} | sangak, barbari, tahdig, ghormeh sabzi, fesenjan, koobideh, ash reshteh, joojeh kabab
+african_food | african food | plantain, couscous, harissa, falafel, tagine, jollof rice, shakshuka, mint tea
+north_african_food | north african food {couscous, tagine, harira, shakshuka, merguez, b'stilla, brik} | baklava, couscous, harissa, falafel, tagine, shakshuka, mint tea, merguez
+west_african_food | west african food {jollof rice, fufu, egusi, suya, banku, puff-puff, moi moi} | plantain, jollof rice, fufu, groundnut stew, suya, egusi, moi moi, kenkey
+east_african_food | east african food {injera, ugali, nyama choma, sukuma wiki, mandazi, kitfo} | chapati, roti, pilaf, samosa, injera, berbere, ugali, doro wat
+south_african_food | south african food {bobotie, biltong, boerewors, bunny chow, chakalaka, pap} | biltong, piri piri, pannekoek, bobotie, boerewors, bunny chow, braai, rooibos
+asian_food | asian food | paneer, naan, chapati, roti, ramen, udon, soba, curry
+indian_food | indian food | chai, paneer, naan, chapati, roti, gulab jamun, chutney, curry
+curries | curries | curry, aloo gobi, butter chicken, vindaloo, korma, tikka masala, saag paneer, rogan josh
+street_snacks | indian street snacks | samosa, bhel puri, pani puri, golgappa, vada pav, pakora, bhaji, pav bhaji
+south_indian_dishes | south indian dishes | Pongal, uttapam, idli, masala dosa, rasam, sambar, bisi bele bath, pesarattu
+chinese_food | chinese food | fried rice, dumplings, dim sum, peking duck, egg drop soup, century egg, fortune cookie, lo mein
+yum_cha_dishes | yum cha dishes | dumplings, wonton, xiaolongbao, soup dumpling, har gow, siu mai, spring roll, bao
+takeaway_orders | chinese takeaway orders | fried rice, fortune cookie, lo mein, chow mein, hot and sour soup, kung pao chicken, sweet and sour pork, chop suey
+japanese_food | japanese food | edamame, ramen, udon, soba, wasabi, sushi, tempura, sashimi
+japanese_sweets | japanese sweets | mochi, kakigori, dorayaki, taiyaki, dango, daifuku, anmitsu, yokan
+sushi_types | sushi types {nigiri, maki, sashimi, temaki, uramaki, chirashi, inari} | sashimi, california roll, nigiri, maki, temaki, uramaki, chirashi, inari
+korean_food | korean food {kimchi, bibimbap, bulgogi, tteokbokki, japchae, kimbap} | gochujang, kimchi, bibimbap, bingsu, japchae, naengmyeon, kimbap, mandu
+thai_food | thai food | lemongrass, fish sauce, pad thai, sticky rice, tom yum, larb, som tam, satay
+vietnamese_food | vietnamese food {pho, banh mi, goi cuon, bun cha, com tam, banh xeo} | pho, banh mi, banh xeo, bun bo hue, nuoc cham, goi cuon, bun cha, com tam
+filipino_food | filipino food {adobo, sinigang, lechon, lumpia, pancit, sisig, kare-kare} | calamansi, calamondin, pandesal, ube, halo-halo, bibingka, pancit, adobo
+oceanian_food | oceanian food | kiwifruit, coconut, lamb, pavlova, fish and chips, barramundi, yabby, paua
+australian_food | australian food {lamington, pavlova, meat pie, damper, anzac biscuit, fairy bread} | crumpet, pavlova, barramundi, sausage roll, lamington, Anzac biscuit, Vegemite, meat pie
+bush_tucker | bush tucker {Australian native foods: witchetty grub, wattleseed, finger lime, quandong} | kangaroo, emu, crocodile, yabby, lemon myrtle, Kakadu plum, finger lime, macadamia
+pacific_islands_food | pacific islands food {taro, poi, kokoda, palusami, breadfruit, kalua pig, umu} | pineapple, plantain, sweet potato, cassava, coconut crab, kava, breadfruit, taro
+south_american_food | south american food | coffee, potato, steak, quinoa, chimichurri, feijoada, java, joe
+peruvian_food | peruvian food {ceviche, lomo saltado, anticuchos, causa, ají de gallina} | quinoa, ceviche, alfajores, arroz con pollo, pisco sour, lomo saltado, anticuchos, aji amarillo
+brazilian_food | brazilian food {feijoada, pão de queijo, coxinha, moqueca, farofa, açaí} | feijoada, caipirinha, picanha, brigadeiro, churrasco, tapioca, pão de queijo, cachaça
+argentinian_food | argentinian food {asado, empanadas, chimichurri, milanesa, choripán, locro} | chimichurri, dulce de leche, alfajores, asado, mate, milanesa, locro, humita
+south_american_drinks | south american drinks {non-alcoholic: mate, chicha morada, Inca Kola, guaraná} | yerba mate, chicha, mate, Inca Kola, sugarcane juice, chicha morada, guaraná, tereré
+north_american_food | north american food | cornbread, bannock, hot dog, hamburger, mac and cheese, meatloaf, poutine, collard greens
+mexican_food | mexican food | tortilla, churros, salsa, mole, taco, burrito, nachos, quesadilla
+southern_food | southern food {US South: grits, fried chicken, hush puppies, collard greens, biscuits} | okra, cornbread, grits, catfish, collard greens, boudin, country ham, gumbo
+canadian_food | canadian food {poutine, butter tarts, nanaimo bars, tourtière, bannock} | bannock, poutine, back bacon, pemmican, maple syrup, tourtière, ice wine, caesar
+drinks | drinks | tea, coffee, hot chocolate, cocoa, milk, milkshake, water, juice
+hot_drinks | hot drinks | tea, coffee, latte, cappuccino, espresso, mocha, chai, americano
+teas | teas | chai, matcha, fennel, milk, ginger, kombucha, yerba mate, jasmine
+coffee_drinks | coffee drinks | latte, cappuccino, espresso, mocha, americano, macchiato, flat white, affogato
+coffee_words | coffee words {bean, roast, grind, barista, crema, arabica, robusta, decaf, moka pot} | percolator, espresso machine, decaf, ristretto, lungo, milk frother, bean, barista
+soft_drinks | soft drinks | lemonade, cola, Coca-Cola, Pepsi, tonic water, ginger ale, root beer, sarsaparilla
+soda_flavors | soda flavors | lime, orange, grapefruit, grape, strawberry, cherry, peach, mango
+juices | juices | lemon, lime, orange, grapefruit, apple, grape, cherry, mango
+asian_drinks | asian drinks {non-alcoholic: bubble tea, matcha, lassi, chai, thai iced tea, teh tarik} | chai, matcha, lassi, chrysanthemum tea, green tea, soy milk, jasmine tea, bubble tea
+cocktails | cocktails | caipirinha, margarita, mojito, martini, cosmopolitan, daiquiri, old fashioned, manhattan
+wines | wines | champagne, prosecco, sherry, port, bubbly, fizz, glühwein, rosé
+red_wines | red wines {grapes and styles: merlot, pinot noir, shiraz, malbec, chianti, rioja} | port, merlot, pinot noir, cabernet sauvignon, Chianti, Bordeaux, Burgundy, Rioja
+grape_varieties | red wine grapes | merlot, pinot noir, cabernet sauvignon, malbec, shiraz, zinfandel, syrah, tempranillo
+wines_named_for_places | wines named for places | Chianti, Bordeaux, Burgundy, Rioja, Beaujolais, Barolo, Lambrusco, Amarone
+white_wines | white wines {chardonnay, sauvignon blanc, riesling, pinot grigio, chablis, sancerre} | prosecco, chardonnay, sauvignon blanc, riesling, zinfandel, pinot grigio, Chablis, vinho verde
+wine_words | wine words {vintage, cork, sommelier, tannin, bouquet, decant, cellar, terroir} | chateau, aroma, bouquet, sommelier, vintner, cellar, harvest, carafe
+tasting_notes | wine tasting notes | aroma, bouquet, fruity, corked, legs, dry, full-bodied, oaky
+winemaking_terms | winemaking terms | harvest, fermentation, crush, must, barrique, lees, sulfites, malolactic
+beers | beers | lager, ale, stout, IPA, pale ale, pilsner, Guinness, Heineken
+spirits | spirits | vodka, rum, whisky, gin, tequila, brandy, raki, cachaça
+liqueurs | liqueurs {amaretto, cointreau, limoncello, sambuca, chartreuse, triple sec} | absinthe, schnapps, Pimm's, amarula, amaretto, cointreau, limoncello, sambuca
+national_spirits | national spirits {a country's signature spirit: ouzo, rakı, tequila, soju, pisco, cachaça} | vodka, rum, whisky, gin, tequila, sake, baijiu, cachaça
+nicknames_for_drinks | nicknames for drinks | java, joe, cuppa, char, vino, bubbly, fizz, brew
+alcoholic_drinks | alcoholic drinks | beer, wine, champagne, vodka, rum, eggnog, whisky, gin
+cooking | cooking | recipe, ingredient, chef, bake, boil, fry, roast, grill
+cooking_methods | cooking methods | bake, boil, fry, roast, grill, simmer, poach, braise
+ways_to_cut_food | ways to cut food | chop, slice, dice, mince, zest, julienne, chiffonade, spatchcock
+cookware | cookware | Dutch oven, rice cooker, slow cooker, Crock-Pot, pressure cooker, Instant Pot, air fryer, skillet
+kitchen_utensils | kitchen utensils | rolling pin, spatula, whisk, ladle, tongs, peeler, grater, can opener
+ways_to_preserve_food | ways to preserve food {smoking, salting, pickling, canning, freezing, drying, curing, fermenting} | confit, brine, pickle, smoke, salt, can, freeze, dry
+in_the_pantry | in the pantry | condensed milk, evaporated milk, flour, yeast, baking powder, baking soda, pasta, rice
+lunchbox | lunchbox | apple, banana, yogurt, muffin, cookie, sandwich, Thermos, vacuum flask
+picnic_basket | picnic basket | watermelon, cheese, baguette, quiche, lemonade, cooler, esky, bug spray
+recipe_amounts | recipe amounts | cup, tablespoon, teaspoon, dash, gram, pound, kilogram, milliliter
+ways_to_mix | ways to mix | stir, whisk, knead, fold, beat, mix, blend, toss
+restaurant_words | restaurant words | high chair, waiter, server, waitress, cover charge, dress code, bar tab, reservation
+kitchen_brigade | kitchen brigade {restaurant kitchen roles: head chef, sous chef, pastry chef, line cook, commis} | sous chef, head chef, pastry chef, line cook, executive chef, dishwasher, prep cook, fry cook
+courses_of_a_meal | courses of a meal {appetizer, starter, entrée, main, side, dessert, amuse-bouche, digestif} | coffee, cheese, pudding, sorbet, soup, salad, java, nightcap
+meals_of_the_day | meals of the day {breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea} | breakfast, brekkie, brunch, lunch, dinner, supper, snack, afternoon tea
+table_setting | table setting {fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring} | napkin, tablecloth, knife, spoon, plate, bowl, glass, placemat
+diner | diner | stool, milkshake, pancakes, burger, hamburger, meatloaf, jukebox, tuna melt
+fairground_food | fairground food | fudge, cotton candy, churros, nachos, hot dog, fish and chips, lemonade, popcorn
+ice_cream_parlor | ice cream parlor | strawberry, milkshake, sprinkles, chocolate, sundae, sorbet, gelato, vanilla
+fermented_foods | fermented foods {kimchi, sauerkraut, yogurt, miso, kefir, kombucha, tempeh} | cheese, yogurt, sour cream, buttermilk, kefir, crème fraîche, skyr, labneh
+deep_fried_foods | deep-fried foods {doughnut, tempura, falafel, churros, onion rings, hush puppies} | calamari, doughnut, churros, fish and chips, falafel, samosa, tempura, scotch egg
+stuffed_foods | stuffed foods {food with a filling: ravioli, burrito, samosa, empanada, dolma, pierogi} | ravioli, tortellini, taco, burrito, samosa, pierogi, haggis, deviled eggs
+foods_on_a_stick | foods on a stick {kebab, corn dog, lollipop, popsicle, satay, candy apple, yakitori} | lollipop, lolly, kebab, shish kebab, popsicle, ice pop, paddle pop, rock candy
+foods_with_shells | foods with shells {eaten from or with a shell: egg, pistachio, crab, oyster, coconut, peanut} | coconut, lobster, crab, shrimp, oyster, mussel, clam, scallop
+foods_named_after_people | foods named after people {name comes from a person: beef wellington, eggs benedict, pavlova, nachos} | pavlova, béchamel, sandwich, nachos, Granny Smith, chateaubriand, oysters rockefeller, eggs benedict
+foods_with_holes | foods with holes | emmental, olive, bagel, doughnut, pretzel, crumpet, matzo, macaroni
+foods_you_peel | foods you peel | lemon, lime, orange, grapefruit, tangerine, mandarin, clementine, satsuma
+canned_foods | canned foods | pineapple, jackfruit, peas, corn, maize, green beans, bamboo shoots, salmon
+frozen_foods | frozen foods | spinach, peas, corn, maize, edamame, ice cream, sorbet, gelato
+mammals | mammals | cheetah, elephant, giraffe, zebra, monkey, gorilla, kangaroo, hippopotamus
+big_cats | big cats | lion, tiger, leopard, cheetah, jaguar, cougar, puma, mountain lion
+small_wild_cats | small wild cats | lynx, wildcat, ocelot, serval, caracal, margay, jaguarundi, fishing
+primates | primates | monkey, gorilla, chimpanzee, lemur, orangutan, baboon, gibbon, tarsier
+monkeys | monkeys | monkey, baboon, macaque, mandrill, marmoset, tamarin, capuchin, colobus
+rodents | rodents | squirrel, mouse, rat, beaver, porcupine, capybara, chinchilla, groundhog
+whales_and_dolphins | whales and dolphins | whale, narwhal, beluga, porpoise, pygmy sperm whale, dusky, harbour porpoise, vaquita
+marsupials | marsupials | kangaroo, koala, koala bear, wombat, opossum, possum, quokka, numbat
+hoofed_mammals | hoofed mammals | cow, pig, sheep, horse, goat, donkey, ass, llama
+deer | deer | moose, reindeer, elk, muntjac, pudu, caribou, wapiti, stag
+antelopes | antelopes | antelope, wildebeest, gnu, pronghorn, kudu, springbok, gazelle, impala
+wild_cattle | wild cattle | bison, yak, water buffalo, aurochs, musk ox, Cape buffalo, gaur, saola
+wild_goats_and_sheep | wild goats and sheep | ibex, mouflon, chamois, takin, Nubian ibex, goral, markhor, argali
+wild_pigs | wild pigs | warthog, boar, peccary, javelina, babirusa, tusker, bushpig, giant forest hog
+odd_toed_animals | odd-toed animals | horse, donkey, ass, zebra, rhinoceros, tapir, wild ass, onager
+bears | bears {Exactly: giant panda, moon bear, sun bear, sloth bear, spectacled bear, black, b} | giant panda, Himalayan black bear, honey bear, black, brown, polar, Moon, Andean
+wild_dogs_and_foxes | wild dogs and foxes | wolf, fox, jackal, Tibetan, coyote, dingo, grey wolf, timber wolf
+weasel_family | weasel family | otter, skunk, badger, ferret, stoat, wolverine, sea otter, weasel
+bats | bats | bat, echolocation, fruit, flying fox, pipistrelle, noctule, long-eared bat, brown bat
+rabbits_and_hares | rabbits and hares | rabbit, bunny, hare, jackrabbit, cottontail, European rabbit, pika, lop
+mammals_that_live_in_water | mammals that live in water | elephant, hippopotamus, hippo, otter, beaver, platypus, walrus, seal
+birds | birds | chicken, duck, turkey, goose, eagle, owl, penguin, parrot
+birds_of_prey | birds of prey | eagle, owl, hawk, falcon, vulture, osprey, condor, kite
+owls | owls | owl, owlet, long-eared, short-eared, barred, elf, pygmy, boreal
+eagles | eagles | eagle, eaglet, Steller's sea eagle, booted, imperial, tawny, African fish eagle, short-toed eagle
+vultures | vultures | vulture, condor, Andean condor, buzzard, lammergeier, California condor, white-backed, cinereous
+british_raptors | british raptors | osprey, kite, merlin, kestrel, buzzard, harrier, golden eagle, peregrine falcon
+american_raptors | american raptors | bald eagle, Andean condor, red-tailed hawk, great horned owl, caracara, harpy eagle, turkey vulture, California condor
+seabirds | seabirds | penguin, seagull, gull, pelican, albatross, puffin, cormorant, tern
+songbirds | songbirds | robin, sparrow, starling, blackbird, finch, canary, swallow, nightingale
+finches | finches | finch, canary, goldfinch, chaffinch, bullfinch, greenfinch, linnet, siskin
+crows_and_ravens | crows and ravens | crow, raven, magpie, jay, jackdaw, rook, blue jay, alpine chough
+new_world_birds | american songbirds | bluebird, cardinal, mockingbird, blue jay, oriole, chickadee, meadowlark, junco
+birds_named_after_a_colour | birds named after a colour | blackbird, bluebird, blue jay, goldfinch, greenfinch, blue tit, redwing, yellowhammer
+waterbirds | waterbirds | duck, goose, swan, flamingo, pelican, stork, heron, kingfisher
+ducks | ducks | drake, gadwall, pintail, wigeon, shoveler, pochard, goldeneye, eider
+geese_and_swans | geese and swans | goose, swan, gander, Canada goose, greylag goose, barnacle goose, brent goose, snow goose
+wading_birds | wading birds | flamingo, stork, heron, crane, spoonbill, ibis, lapwing, curlew
+flightless_birds | flightless birds | penguin, ostrich, emu, kiwi, cassowary, great auk, moa, dodo
+parrots | parrots | parrot, budgie, cockatoo, cockatiel, lovebird, kakapo, macaw, lorikeet
+game_birds | game birds | turkey, quail, pheasant, partridge, snipe, guinea fowl, teal, pintail
+colorful_birds | colorful birds {birds known for bright plumage: peacock, toucan, macaw, kingfisher} | parrot, flamingo, peacock, hummingbird, toucan, kingfisher, budgie, cockatoo
+new_world_songbirds | new world songbirds | bluebird, cardinal, blue jay, oriole, goldfinch, tanager, scarlet tanager, painted bunting
+bird_body_parts | bird body parts | belly, toe, throat, hallux, big toe, breastbone, gizzard, talon
+parts_of_a_bird_s_head | parts of a bird's head | throat, beak, bill, crest, wattle, crown, auriculars, cere
+what_a_bird_stands_on | what a bird stands on | toe, hallux, big toe, talon, claw, spur, tarsus, webbed foot
+inner_organs_and_bones | bird organs and bones | breastbone, gizzard, crop, syrinx, preen gland, cloaca, air sac, furcula
+birdwatching_words | birdwatching words | bird feeder, birdbath, plumage, wing bar, binoculars, field guide, birdwatcher, birder
+observer_s_kit | birdwatching kit | binoculars, field guide, hide, life list, spotting scope, checklist, mist net, eBird
+local_status_labels | birdwatching status labels | migration, rarity, vagrant, fall-out, flyover, accidental, summer visitor, winter visitor
+pigeons_and_doves | pigeons and doves | dove, dodo, turtle, stock, white, ringneck, Eurasian collared, spotted
+reptiles_and_amphibians | reptiles and amphibians | snake, serpent, lizard, crocodile, alligator, turtle, tortoise, frog
+snakes | snakes | snake, serpent, python, cobra, viper, rattlesnake, rattler, boa constrictor
+venomous_snakes | venomous snakes | cobra, viper, rattlesnake, rattler, adder, mamba, taipan, king cobra
+constrictor_snakes | constrictor snakes | python, boa constrictor, boa, anaconda, Titanoboa, milk, rat, ball python
+american_serpents | american serpents | rattlesnake, rattler, bullsnake, copperhead, sidewinder, cottonmouth, water moccasin, milk snake
+lizards | lizards | lizard, gecko, iguana, chameleon, Komodo dragon, Komodo monitor, skink, gila monster
+turtles_and_tortoises | turtles and tortoises | turtle, tortoise, terrapin, leatherback, sea turtle, loggerhead, hawksbill, box
+crocodilians | crocodilians | crocodile, alligator, caiman, gharial, saltwater crocodile, saltie, Nile crocodile, American alligator
+frogs_and_toads | frogs and toads | frog, toad, tadpole, bullfrog, natterjack, spadefoot, common frog, common toad
+salamanders_and_newts | salamanders and newts | salamander, newt, eft, axolotl, hellbender, mudpuppy, olm, palmate
+animals_with_a_poisonous_bite | animals with a poisonous bite | cobra, viper, rattlesnake, rattler, adder, mamba, gila monster, coral snake
+exotic_pets | pet reptiles and amphibians | tortoise, gecko, iguana, chameleon, python, boa constrictor, tree frog, dart frog
+fish | fish | salmon, tuna, cod, sardine, anchovy, trout, swordfish, haddock
+freshwater_fish | freshwater fish | salmon, trout, eel, goldfish, piranha, catfish, carp, pike
+salmon_and_trout | salmon and trout | salmon, trout, steelhead, sockeye, Arctic char, parr, smolt, lox
+coarse_fish | coarse fish | carp, pike, perch, minnow, bream, roach, tench, chub
+north_american_game_fish | north american game fish | bass, bowfin, sunfish, walleye, bluegill, crappie, largemouth bass, smallmouth bass
+sea_fish | sea fish | salmon, tuna, cod, sardine, anchovy, swordfish, haddock, halibut
+flatfish | flatfish | halibut, plaice, sole, flounder, turbot, dab, brill, dover sole
+sharks | sharks | great white, hammerhead, megalodon, bull, mako, nurse, blue, lemon
+tropical_fish | tropical fish | goldfish, piranha, clownfish, angelfish, seahorse, pufferfish, blowfish, fugu
+rays_and_eels | rays and eels | eel, skate, lamprey, stingray, ray, hagfish, sawfish, torpedo
+deep_sea_fish | deep sea fish | coelacanth, oarfish, hagfish, giant squid, anglerfish, goblin shark, cookiecutter shark, greenland shark
+fish_body_parts | fish body parts | barbel, fin, tail, scale, dorsal fin, pectoral fin, pelvic fin, anal fin
+fish_on_the_menu | fish on the menu | salmon, tuna, cod, sardine, anchovy, trout, swordfish, haddock
+sea_life | sea life | lobster, crab, shrimp, oyster, mussel, clam, scallop, octopus
+crustaceans | crustaceans | lobster, crab, shrimp, crayfish, langoustine, barnacle, krill, hermit crab
+mollusks | mollusks | oyster, mussel, clam, scallop, octopus, squid, calamari, whelk
+cephalopods | cephalopods {octopus, squid, cuttlefish, nautilus and their kinds} | octopus, squid, calamari, nautilus, cuttlefish, giant squid, ammonite, Kraken
+sea_mammals | sea mammals | otter, walrus, seal, manatee, dugong, whale, dolphin, sea lion
+seals_and_sea_lions | seals and sea lions | walrus, seal, sea lion, fur seal, pinniped, pup, rookery, selkie
+reef_life | reef life | octopus, sea urchin, uni, clownfish, angelfish, seahorse, barracuda, grouper
+jellyfish_and_relatives | jellyfish and relatives | jellyfish, coral, sea anemone, anemone, man-of-war, sea fan, sea pen, brain coral
+seaweeds | seaweeds | sea grass, kelp, coralline algae, bladderwrack, nori, dulse, wakame, kombu
+ocean_giants | ocean giants {the largest sea creatures: blue whale, whale shark, giant squid, manta ray} | walrus, oarfish, whale, orca, killer whale, blue whale, humpback whale, sperm whale
+starfish_and_sea_urchins | starfish and sea urchins | sea urchin, uni, starfish, sea star, brittle star, sand dollar, crown-of-thorns, feather star
+insects_and_bugs | insects and bugs | ant, bee, wasp, fly, mosquito, mozzie, skeeter, butterfly
+beetles | beetles | beetle, ladybug, firefly, weevil, dung beetle, scarab, click beetle, cockchafer
+butterflies_and_moths | butterflies and moths | butterfly, moth, monarch, swallowtail, red admiral, cabbage white, brimstone, orange tip
+bees_and_wasps | bees and wasps | bee, wasp, hornet, bumblebee, honeybee, yellowjacket, worker, drone
+spiders | spiders | tarantula, black widow, house spider, garden spider, wolf, huntsman, redback, funnel-web
+garden_bugs | garden bugs | ant, bee, butterfly, ladybug, lady beetle, grasshopper, cricket, dragonfly
+insect_body_parts | insect body parts | abdomen, antenna, tarsus, wing, thorax, head, leg, compound eye
+biting_bugs | biting bugs {bugs that bite or suck blood: mosquito, flea, tick, bedbug} | bee, wasp, mosquito, mozzie, skeeter, flea, tick, louse
+insect_life_cycle | insect life cycle | egg, caterpillar, nymph, larva, pupa, adult, chrysalis, cocoon
+butterfly_life_stages | butterfly life stages {the four stages of a butterfly, with their common names} | egg, butterfly, caterpillar, larva, pupa, adult, chrysalis, imago
+flies | flies | mosquito, mozzie, skeeter, dragonfly, firefly, mayfly, horsefly, gadfly
+ants_and_termites | ants and termites | ant, termite, antlion, queen, worker, soldier, red ant, black ant
+worms | worms | tube worm, earthworm, glowworm, mealworm, ringworm, bookworm, worm, tapeworm
+domestic_animals | domestic animals | cow, pig, sheep, chicken, horse, goat, duck, turkey
+farm_animals | farm animals | cow, pig, sheep, chicken, horse, goat, duck, turkey
+pets | pets | mouse, rat, hedgehog, chinchilla, ferret, parrot, finch, canary
+small_pets | small pets | mouse, rat, hedgehog, chinchilla, ferret, rabbit, bunny, hamster
+pet_supplies | pet supplies | mealworm, kennel, hutch, cage, aquarium, water bottle, pet door, crate
+canine_gear | canine gear | kennel, crate, leash, collar, harness, dog bowl, dog bed, dog treat
+feline_gear | feline gear | catnip, litter box, cat litter, scratching post, cat tree, cat toy, cat bed, feather wand
+dog_commands | dog commands | high five, sit, lie down, stay, come, no, heel, fetch
+cat_behaviors | cat behaviors | hunting, sunbathing, purring, kneading, hissing, meowing, scratching, grooming
+cage_birds | cage birds | parrot, finch, canary, budgie, cockatoo, cockatiel, lovebird, macaw
+dog_breeds | dog breeds | labrador, poodle, bulldog, beagle, German shepherd, golden retriever, chihuahua, dachshund
+terriers | terriers | terrier, pit bull, airedale, Scottish, West Highland, bull terrier, Staffordshire, Border
+hounds | hounds | beagle, dachshund, greyhound, whippet, basenji, saluki, hound, bloodhound
+toy_dogs | toy dogs | chihuahua, pug, Pomeranian, Shih Tzu, yorkshire terrier, bichon frise, pekingese, xoloitzcuintli
+herding_dogs | herding dogs | German shepherd, border collie, corgi, sheepdog, collie, bergamasco, cattle dog, rough collie
+working_dogs | working dogs | husky, rottweiler, Akita, Samoyed, boxer, great dane, saint bernard, newfoundland
+sporting_dogs | sporting dogs {retrievers, spaniels, setters, pointers} | labrador, golden retriever, vizsla, spaniel, cocker spaniel, weimaraner, retriever, Labrador retriever
+dogs_from_asia | dogs from asia | husky, Shih Tzu, Akita, Samoyed, saluki, afghan hound, chow chow, pekingese
+dogs_from_germany | dogs from germany | German shepherd, dachshund, rottweiler, Pomeranian, schnauzer, doberman, boxer, great dane
+cat_breeds | cat breeds | siamese, maine coon, bengal, sphynx, ragdoll, british shorthair, burmese, abyssinian
+cattle_breeds | cattle breeds | zebu, Friesian, holstein, jersey, angus, hereford, guernsey, highland
+chicken_breeds | chicken breeds | bantam, Rhode Island Red, Leghorn, Plymouth Rock, Sussex, Orpington, Silkie, Brahma
+sheep_breeds | sheep breeds | Texel, Cheviot, Herdwick, Jacob, Dorset, Leicester, Romney, Southdown
+working_animals | working animals {animals that do jobs for people: guide dog, sled dog, ox, camel} | donkey, ass, llama, ox, mule, husky, elephant, camel
+horses | horses | horse, donkey, ass, mule, zebra, pony, stallion, mare
+horse_breeds | horse breeds | thoroughbred, Arabian, Clydesdale, Appaloosa, Lipizzaner, Percheron, Friesian, Hanoverian
+pony_breeds | pony breeds | Welsh, Welsh Cob, New Forest, Connemara, Highland, Fell, Icelandic horse, Haflinger
+horse_colors | horse colors | piebald, skewbald, dapple grey, palomino, bay, chestnut, black, grey
+horse_tack | horse tack | saddle, bridle, reins, stirrup, horseshoe, halter, bit, girth
+parts_of_a_horse | parts of a horse | back, mane, hoof, neck, shoulder, elbow, knee, nostril
+horse_family | horse family {horse, donkey, zebra, mule, onager, kiang} | horse, donkey, ass, mule, zebra, pony, hinny, mustang
+african_animals | african animals | lion, leopard, cheetah, elephant, giraffe, zebra, gorilla, hippopotamus
+african_birds | african birds | ostrich, flamingo, hornbill, guinea fowl, lovebird, fish eagle, bee-eater, hoopoe
+madagascar_animals | madagascar animals | lemur, aye-aye, chameleon, sifaka, ring-tailed lemur, fish eagle, elephant bird, leaf-tailed gecko
+middle_eastern_animals | middle eastern animals | saluki, dromedary, caracal, sand cat, jerboa, onager, fennec fox, golden jackal
+turkish_animals | turkish animals | flamingo, Angora rabbit, Angora goat, brown bear, grizzly, grizzly bear, grey wolf, timber wolf
+asian_animals | asian animals | tiger, snow leopard, clouded leopard, elephant, giant panda, orangutan, pangolin, gibbon
+indian_animals | indian animals | leopard, elephant, rhinoceros, wolf, mongoose, pangolin, peacock, hornbill
+himalayan_animals | himalayan animals | snow leopard, wolf, lynx, newt, eft, yak, Pallas's cat, manul
+japanese_animals | japanese animals | Akita, squirrel, badger, sparrow, quail, giant salamander, koi, sea lion
+southeast_asian_animals | southeast asian animals | clouded leopard, elephant, orangutan, pangolin, gibbon, tarsier, Komodo dragon, Komodo monitor
+australian_animals | australian animals | kangaroo, koala, koala bear, platypus, wombat, possum, quokka, numbat
+australian_birds | australian birds | magpie, budgie, emu, kookaburra, cockatoo, ibis, cassowary, cockatiel
+new_zealand_animals | new zealand animals | kiwi, tuatara, glowworm, moa, Hector's dolphin, kakapo, takahe, weka
+deadly_creatures | deadly australian animals | cassowary, taipan, saltwater crocodile, saltie, box jellyfish, funnel-web spider, redback spider, blue-ringed octopus
+antarctic_animals | antarctic animals | albatross, tern, krill, orca, killer whale, blue whale, humpback whale, sperm whale
+penguins | penguins | blue, royal, erect-crested, Snares, Antarctic penguin, crested penguin, banded penguin, Adelie
+south_american_animals | south american animals | llama, alpaca, jaguar, armadillo, sloth, anteater, tapir, capybara
+amazon_animals | amazon animals | jaguar, sloth, tapir, capybara, parrot, toucan, boa constrictor, boa
+andean_animals | andean animals | goose, llama, alpaca, puma, fox, chinchilla, flamingo, hummingbird
+galapagos_animals | galapagos animals | penguin, flamingo, hawk, dove, tortoise, marine iguana, shark, sea lion
+north_american_animals | north american animals | mountain lion, bison, buffalo, moose, beaver, raccoon, skunk, porcupine
+north_american_birds | north american birds | robin, osprey, bald eagle, red-tailed hawk, snowy owl, great horned owl, turkey vulture, California condor
+everglades_animals | everglades animals | manatee, osprey, alligator, green anole, mosquito, mozzie, skeeter, bald eagle
+european_animals | european animals | hedgehog, otter, badger, mole, lynx, stoat, nightingale, adder
+british_wildlife | british wildlife | hedgehog, otter, badger, mole, stoat, robin, kingfisher, blackbird
+alpine_animals | alpine animals | wolf, lynx, stoat, swift, salamander, newt, eft, marmot
+arctic_animals | arctic animals | fox, walrus, wolverine, puffin, tern, char, narwhal, orca
+pond_life | pond life | duck, swan, heron, frog, toad, newt, eft, tadpole
+woodland_animals | woodland animals | squirrel, bear, wolf, fox, deer, hedgehog, raccoon, badger
+forest_birds | forest birds | owl, robin, woodpecker, jay, tawny owl, goshawk, sparrowhawk, wren
+desert_animals | desert animals | camel, hedgehog, hyena, meerkat, ostrich, vulture, lizard, tortoise
+rainforest_animals | rainforest animals | tiger, jaguar, gorilla, chimpanzee, sloth, lemur, orangutan, okapi
+savanna_animals | savanna animals | lion, leopard, cheetah, elephant, giraffe, zebra, hippopotamus, hippo
+mountain_animals | mountain animals | goat, llama, alpaca, cougar, snow leopard, zebra, gorilla, condor
+city_animals | city animals {wildlife living in towns: pigeon, rat, fox, raccoon} | squirrel, mouse, rat, bat, fox, hedgehog, raccoon, skunk
+nocturnal_animals | nocturnal animals {active at night: owl, bat, hedgehog, aye-aye} | bat, fox, hedgehog, raccoon, badger, porcupine, armadillo, platypus
+birds_awake_after_dark | birds awake after dark | owl, kiwi, nightjar, barn owl, tawny owl, kakapo, potoo, nighthawk
+venomous_animals | venomous animals {inject venom by bite or sting: cobra, scorpion, stonefish, box jellyfish} | platypus, Komodo dragon, Komodo monitor, cobra, viper, rattlesnake, rattler, gila monster
+hibernating_animals | hibernating animals {sleep through winter: dormouse, bear, hedgehog, marmot} | bat, bear, hedgehog, skunk, badger, groundhog, woodchuck, echidna
+migrating_animals | migrating animals {make long seasonal journeys: swallow, wildebeest, monarch butterfly, salmon} | goose, salmon, eel, zebra, wildebeest, gnu, flamingo, stork
+long_distance_birds | long-distance birds | goose, flamingo, stork, cuckoo, albatross, crane, swift, swallow
+ocean_animals | migrating ocean animals | salmon, eel, sea turtle, humpback whale, sperm whale, gray whale, loggerhead, green turtle
+striped_animals | striped animals {zebra, tiger, okapi, bumblebee} | tiger, zebra, raccoon, skunk, badger, hyena, okapi, tapir
+spotted_animals | spotted animals {leopard, cheetah, dalmatian, ladybug} | leopard, cheetah, jaguar, snow leopard, clouded leopard, dalmatian, trout, giraffe
+black_and_white_animals | black and white animals {zebra, panda, skunk, orca} | dalmatian, border collie, zebra, panda, giant panda, skunk, badger, coati
+animals_with_horns | animals with horns {true horns or antlers: rhino, ibex, deer, buffalo} | goat, ox, bull, rhinoceros, deer, bison, buffalo, moose
+animals_with_tusks | animals with tusks {elephant, walrus, warthog, narwhal} | elephant, hippopotamus, hippo, walrus, dugong, narwhal, boar, mammoth
+animals_with_shells | animals with shells {turtle, snail, crab, armadillo} | lobster, crab, shrimp, oyster, mussel, clam, scallop, crayfish
+burrowing_animals | burrowing animals {dig homes underground: mole, rabbit, meerkat, wombat} | crayfish, fox, hedgehog, badger, armadillo, meerkat, wombat, mole
+camouflaged_animals | camouflaged animals {blend into surroundings: chameleon, stick insect, flounder, ptarmigan} | octopus, halibut, stoat, nightjar, bittern, gecko, chameleon, tree frog
+scavengers | scavengers {eat dead remains: vulture, hyena, jackal, crow} | rat, fox, raccoon, hyena, jackal, wolverine, opossum, possum
+pollinators | pollinators {carry pollen between flowers: bee, butterfly, hummingbird, bat} | bat, hummingbird, ant, bee, wasp, fly, butterfly, moth
+fast_animals | fast animals {among the fastest runners, fliers or swimmers: cheetah, falcon, sailfish, prongh} | horse, lion, cheetah, cougar, puma, mountain lion, greyhound, whippet
+spiny_animals | spiny animals | sea urchin, uni, hedgehog, porcupine, pangolin, echidna, horned lizard, thorny devil
+hopping_animals | hopping animals | kangaroo, quokka, tarsier, robin, sparrow, frog, toad, bullfrog
+long_necked_animals | long-necked animals | goose, llama, alpaca, giraffe, camel, swan, ostrich, flamingo
+pink_animals | pink animals | pig, salmon, lobster, shrimp, manatee, flamingo, spoonbill, axolotl
+tentacled_animals | tentacled animals | octopus, squid, calamari, catfish, jellyfish, sea anemone, anemone, nautilus
+gliding_animals | gliding animals | eagle, hawk, vulture, albatross, condor, kite, pterosaur, flying squirrel
+insect_eaters | insect eaters | bat, hedgehog, anteater, mole, aardvark, pangolin, numbat, tarsier
+cold_blooded_animals | cold-blooded animals | lizard, frog, toad, salamander, newt, eft, gecko, chameleon
+prehistoric_life | prehistoric life | dinosaur, Tyrannosaurus, Tyrannosaurus rex, Triceratops, Stegosaurus, Velociraptor, Brontosaurus, Diplodocus
+dinosaurs | dinosaurs | dinosaur, Tyrannosaurus, Tyrannosaurus rex, Triceratops, Stegosaurus, Velociraptor, Brontosaurus, Diplodocus
+meat_eating_dinosaurs | meat-eating dinosaurs | Tyrannosaurus, Tyrannosaurus rex, Velociraptor, Allosaurus, Spinosaurus, Gallimimus, Dilophosaurus, Compsognathus
+plant_eating_dinosaurs | plant-eating dinosaurs | Triceratops, Stegosaurus, Brontosaurus, Diplodocus, Brachiosaurus, Ankylosaurus, Iguanodon, Parasaurolophus
+long_necked_giants | long-necked dinosaurs | Brontosaurus, Diplodocus, Brachiosaurus, Argentinosaurus, apatosaurus, Plateosaurus, Camarasaurus, Amargasaurus
+horned_and_armored_beasts | horned and armored dinosaurs | Triceratops, Stegosaurus, Ankylosaurus, Protoceratops, Styracosaurus, Kentrosaurus, Psittacosaurus, Pachyrhinosaurus
+flying_reptiles | flying reptiles | Pterodactyl, Pteranodon, Quetzalcoatlus, pterosaur, Pterodaustro, Rhamphorhynchus, Dimorphodon, Pterodactylus
+sea_reptiles | prehistoric sea reptiles | snake, turtle, marine iguana, leatherback, Plesiosaur, Ichthyosaur, Elasmosaurus, Liopleurodon
+ice_age_animals | ice age animals | reindeer, mammoth, woolly mammoth, mastodon, Smilodon, Megatherium, dire wolf, giant sloth
+extinct_animals | extinct animals | dinosaur, Pterodactyl, mammoth, woolly mammoth, Smilodon, trilobite, megalodon, dire wolf
+extinct_birds | extinct birds | great auk, moa, dodo, Carolina parakeet, passenger pigeon, Haast's eagle, heath hen, Labrador duck
+prehistoric_periods | prehistoric periods | Mesozoic, Paleozoic, Cenozoic, Jurassic, Cretaceous, Triassic, Ice Age, Cambrian
+geological_epochs | geological epochs | Pleistocene, Holocene, Paleocene, Eocene, Oligocene, Miocene, Pliocene, Anthropocene
+dinosaur_words | dinosaur words | fossil, extinction, paleontologist, sauropod, theropod, herbivore, carnivore, museum
+baby_animals | baby animals | lamb, tadpole, caterpillar, bunny, piglet, foal, colt, filly
+animal_homes | animal homes | stable, paddock, barn, byre, warren, roost, dovecote, pigeon loft
+homes_of_wild_mammals | homes of wild mammals | warren, den, burrow, lair, sett, lodge, drey, holt
+homes_for_birds | homes for birds | roost, dovecote, pigeon loft, nest, eyrie, coop, aviary, henhouse
+farmyard_shelters | farmyard shelters | stable, paddock, barn, byre, kennel, sty, pigsty, hutch
+animal_sounds | animal sounds | cuckoo, neigh, whinny, coo, croak, ribbit, bark, meow
+collective_nouns | collective nouns | pride, covey, flock, herd, pack, swarm, school, pod
+male_animals | male animals | bull, lion, peacock, dog, hound, pooch, mutt, doggo
+female_animals | female animals | cow, hen, sow, ewe, heifer, mare, nanny goat, filly
+animal_body_parts | animal body parts | belly, mane, hoof, toe, throat, nape, scruff, haunch
+bird_parts | bird-only parts | talon, feather, crest, webbed foot, cloaca, wattle, comb, spur
+parts_of_water_animals | parts of water animals | barbel, fin, dorsal fin, tail fin, tentacle, flipper, gill, blowhole
+bug_parts | arthropod parts | wing, mandible, proboscis, stinger, spiracle, pincer, antenna, pedipalp
+animal_movements | animal movements {ways animals move: slither, waddle, gallop, scurry} | gallop, canter, trot, burrow, skulk, hop, crawl, swim
+animal_coverings | animal coverings {fur, feathers, scales, quills} | skin, hair, mucus, wool, plumage, carapace, scutes, exoskeleton
+animal_adjectives | animal adjectives {feline, canine, equine, bovine} | cetacean, passerine, crocodilian, feline, canine, equine, bovine, porcine
+animal_experts | animal experts {zoologist, ornithologist, entomologist, vet} | vet, birder, zoologist, zookeeper, veterinarian, ornithologist, entomologist, herpetologist
+animal_diets | animal diets {carnivore, herbivore, omnivore, scavenger} | herbivore, carnivore, omnivore, predator, scavenger, insectivore, piscivore, frugivore
+hybrid_animals | hybrid animals | mule, hinny, liger, tigon, coydog, savannah cat, zorse, zonkey
+trees | trees | oak, pine, maple, palm, ash, willow, birch, elm
+deciduous_trees | deciduous trees | oak, maple, ash, willow, birch, elm, beech, poplar
+evergreen_trees | evergreen trees | pine, cedar, fir, spruce, redwood, sequoia, cypress, yew
+fruit_trees | fruit trees | mandarin, kumquat, fig, olive, cherry plum, apple, pear, cherry
+nut_trees | nut trees | oak, beech, hazel, hickory, black walnut, sweet chestnut, chestnut, walnut
+tropical_trees | tropical trees | palm, acacia, mahogany, ebony, teak, baobab, banyan, jacaranda
+tree_parts | tree parts | branch, bough, Bud, trunk, leaf, root, bark, twig
+types_of_wood | types of wood | oak, pine, maple, ash, birch, elm, beech, cedar
+hedge_plants | hedge plants {shrubs and trees grown as hedges: privet, box, yew, hawthorn, beech, laurel} | beech, hawthorn, hazel, yew, dogwood, hornbeam, lavender, fuchsia
+things_that_fall_from_trees | things that fall from trees {leaves, acorns, conkers, pine cones, sycamore keys, blossom, sap} | apple, cherry blossom, berries, acorn, beechnut, seed, branch, Blossom
+african_trees | african trees | acacia, ebony, baobab, kigelia, tamarind, date palm, mopane, sapele
+asian_trees | asian trees | jackfruit, durian, mangosteen, teak, banyan, ginkgo, sandalwood, neem
+australian_trees | australian trees | wattle, paperbark, macadamia, mulga, golden wattle, banksia, jarrah, boab
+south_american_trees | south american trees | guava, mahogany, monkey puzzle, Chile pine, jacaranda, balsa, cacao, brazil nut
+north_american_trees | north american trees | redwood, sequoia, aspen, quaking aspen, hickory, Joshua tree, dogwood, cottonwood
+mediterranean_trees | mediterranean trees | fig, olive, oak, pine, cypress, plane, cedar of Lebanon, mastic
+things_made_from_trees | things made from trees | rocking chair, cinnamon, canoe, firewood, newspaper, rag, daily, gazette
+trees_native_to_britain | trees native to Britain | oak, ash, willow, birch, elm, beech, aspen, hawthorn
+woodland | woodland | squirrel, fox, deer, badger, owl, woodpecker, bluebell, fern
+forest_floor | forest floor {what lies on the ground in a forest: moss, leaf litter, fungi, ferns, beetles} | ant, beetle, centipede, millipede, earthworm, snail, slug, roly-poly
+woodland_features | woodland features {clearing, glade, thicket, canopy, undergrowth, stump, trail} | ridge, ravine, bower, canopy, stump, glade, clearing, grove
+forest_types | forest types {boreal, cloud forest, mangrove, temperate, coniferous, bamboo forest} | kelp, mangrove, jungle, rainforest, taiga, temperate, tropical, coniferous
+famous_forests | famous forests {Black Forest, Sherwood, Amazon, Daintree, Bialowieza, Sundarbans} | Sherwood, Amazon, Daintree, Bialowieza, Sundarbans, Fangorn, New Forest, Dean
+forestry_words | forestry words {logging, lumberjack, sawmill, timber, felling, coppice, plantation} | axe, chainsaw, woodcutter, timber, lumber, logger, coppice, log
+wildfire_words | wildfire words {blaze, embers, firebreak, smoke jumper, backburn, bushfire} | drought, tinder, firefighter, fireman, firie, evacuation, firebreak, wildfire
+foraging_finds | foraging finds | blackberry, mulberry, elderberry, bilberry, whortleberry, samphire, wild rice, sorrel
+hedgerow_fruits | hedgerow fruits | mulberry, elderberry, bilberry, whortleberry, juniper berry, sloe, crab apple, wild strawberry
+leaves_and_shoots | foraged leaves and shoots | samphire, sorrel, dandelion, nettle, stinging nettle, burdock, wild garlic, wood sorrel
+fungi | fungi | yeast, athlete's foot, ringworm, cordyceps, button mushroom, portobello, shiitake, oyster mushroom
+flowers | flowers | rose, tulip, daisy, sunflower, lily, orchid, daffodil, narcissus
+garden_flowers | garden flowers | rose, tulip, daisy, sunflower, lily, daffodil, narcissus, marigold
+bedding_plants | bedding plants | marigold, pansy, petunia, geranium, snapdragon, zinnia, begonia, nasturtium
+wildflowers | wildflowers | daisy, poppy, violet, bluebell, buttercup, forget-me-not, dandelion, primrose
+spring_flowers | spring flowers | magnolia, tulip, daisy, daffodil, narcissus, violet, pansy, iris
+tropical_flowers | tropical flowers | orchid, jasmine, hibiscus, lotus, gardenia, amaryllis, bird of paradise, protea
+flower_parts | flower parts | ovary, pollen, seed, calyx, carpel, receptacle, pedicel, thorn
+bouquet_flowers | bouquet flowers | rose, tulip, daisy, sunflower, lily, orchid, lavender, carnation
+edible_flowers | edible flowers {nasturtium, borage, violet, calendula, elderflower, squash blossom} | borage, tulip, sunflower, violet, lavender, dianthus, marigold, pansy
+flowers_with_animal_names | flowers with animal names {flower names containing an animal: foxglove, larkspur, tiger lily, snapdragon, c} | snapdragon, antirrhinum, buttercup, dandelion, foxglove, bird of paradise, larkspur, cowslip
+anatolian_flowers | anatolian flowers {flowers native to or iconic in Turkey: tulip, hyacinth, crocus, cyclamen, fritil} | tulip, lily, orchid, daffodil, narcissus, poppy, carnation, dianthus
+south_african_flowers | south african flowers {protea, strelitzia, agapanthus, freesia, clivia, gerbera} | gladiolus, sword lily, freesia, bird of paradise, protea, gerbera, agapanthus, plumbago
+flowers_of_east_asia | flowers of east asia {cherry blossom, lotus, chrysanthemum, peony, camellia, wisteria} | magnolia, orchid, chrysanthemum, jasmine, peony, lotus, hydrangea, gardenia
+australian_wildflowers | australian wildflowers {kangaroo paw, waratah, wattle, banksia, flannel flower} | wattle, kangaroo paw, waratah, spider orchid, boronia, golden wattle, banksia, bottlebrush
+south_american_flowers | south american flowers {passionflower, fuchsia, alstroemeria, bromeliad, heliconia} | petunia, begonia, nasturtium, verbena, salvia, bromeliad, fuchsia, lantana
+alpine_flowers | alpine flowers {edelweiss, gentian, alpine rose, saxifrage, pasqueflower} | edelweiss, columbine, harebell, primula, aubrieta, pasqueflower, gentian, saxifrage
+yellow_flowers | yellow flowers | sunflower, daffodil, narcissus, marigold, buttercup, dandelion, primrose, gorse
+blue_flowers | blue flowers | borage, iris, bluebell, forget-me-not, hydrangea, delphinium, lupin, cornflower
+red_flowers | red flowers | rose, tulip, poppy, carnation, dianthus, geranium, hibiscus, peony
+white_flowers | white flowers | hawthorn, magnolia, dogwood, daisy, lily, orchid, narcissus, jasmine
+purple_flowers | purple flowers | orchid, violet, lavender, pansy, petunia, iris, hyacinth, lilac
+sweet_smelling_flowers | sweet-smelling flowers | magnolia, rose, narcissus, violet, lavender, carnation, dianthus, hyacinth
+flower_bulbs | flower bulbs | tulip, lily, daffodil, narcissus, iris, hyacinth, bluebell, snowdrop
