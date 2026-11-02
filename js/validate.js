@@ -88,6 +88,7 @@ export function validate(P) {
         if (r.text.toLowerCase() === text.toLowerCase()) add('warn', 'alias-same', `"${label(e)}" has the same text as its root.`, loc);
         if (e.aliasKind && !ALIAS_KINDS.includes(e.aliasKind)) add('warn', 'alias-kind', `Alias "${label(e)}" has an unknown kind (${e.aliasKind}).`, loc);
         if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling, form, regional, abbreviation or translation).`, loc);
+        if (e.aliasKind === 'form' && (e.nameOkIn || []).length && text.length > r.text.length && text.toLowerCase().includes(r.text.toLowerCase())) add('info', 'alias-fullname', `"${label(e)}" is kept as a form of "${label(r)}" but is a longer name: make it an entry of its own and give the theme a shown text (show).`, loc);
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
       }
     } else if (!ids.length) add('info', 'orphan', `"${label(e)}" is not linked to any theme.`, loc);
