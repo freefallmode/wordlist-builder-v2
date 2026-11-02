@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":249,"modified":"2026-11-02 17:09"},"nextId":66178,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":250,"modified":"2026-11-02 17:15"},"nextId":66178,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]]},
@@ -50543,7 +50543,7 @@
 {"id":49217,"text":"drone","gloss":"engine noise","pos":"verb","rec":3,"th":{"vehicle_sounds":4},"status":"gen"},
 {"id":49218,"text":"creak","pos":"verb","rec":2,"th":{"vehicle_sounds":5},"status":"gen"},
 {"id":49219,"text":"plug-in hybrid","rec":3,"th":{"electric_vehicles":3},"status":"gen"},
-{"id":49220,"text":"electric truck","rec":2,"th":{"electric_vehicles":3,"truck_types":1},"status":"gen","nameOkIn":["truck_types"],"show":{"electric_vehicles":"truck"}},
+{"id":49220,"text":"electric truck","rec":2,"th":{"electric_vehicles":3},"status":"gen","show":{"electric_vehicles":"truck"}},
 {"id":49221,"text":"electric motorbike","rec":3,"th":{"electric_vehicles":3},"status":"gen","show":{"electric_vehicles":"motorbike"}},
 {"id":49222,"text":"electric van","rec":3,"th":{"electric_vehicles":3},"status":"gen","show":{"electric_vehicles":"van"}},
 {"id":49223,"text":"charging station","rec":2,"th":{"electric_vehicles":2},"status":"gen"},
