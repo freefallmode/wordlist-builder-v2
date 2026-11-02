@@ -54,7 +54,7 @@ const str = { type: 'string' };
 const strs = { type: 'array', items: str };
 const int = { type: 'integer' };
 const aliasSchema = { type: 'object', additionalProperties: false, required: ['text', 'gloss', 'kind', 'region', 'rec', 'inRec'],
-  properties: { text: str, gloss: str, kind: { type: 'string', enum: ['regional', 'spelling'] }, region: { type: 'array', items: { type: 'string', enum: REGIONS } }, rec: int, inRec: int } };
+  properties: { text: str, gloss: str, kind: { type: 'string', enum: ['synonym', 'regional', 'spelling'] }, region: { type: 'array', items: { type: 'string', enum: REGIONS } }, rec: int, inRec: int } };
 const entrySchema = { type: 'object', additionalProperties: false,
   required: ['text', 'gloss', 'pos', 'type', 'rec', 'inRec', 'adult', 'sensitive', 'tm', 'vulgar', 'region', 'aliases'],
   properties: { text: str, gloss: str, pos: { type: 'string', enum: POS }, type: { type: 'string', enum: TYPES }, rec: int, inRec: int,
@@ -83,7 +83,7 @@ Themes carry the same adult, sensitive and trademark flags, plus a language-spec
 Theme flags are inherited by its words' links, so a word does not need a flag only because its theme has one.
 region: only if the word is mainly known in particular regions, using the codes (US, CA, UK, IE, AU, NZ, ZA, IN, TR); otherwise empty.
 
-Aliases. Add aliases only when there is a real, commonly used alternative that fits the same theme: a regional word (sidewalk US, pavement UK; give region), or a spelling variant (color / colour, kind "spelling", region UK). Each alias gets its own honest rec and inRec: a rarer alias should have a higher number. Never list the same concept as separate top-level entries. Different words for the same thing that are not regional (sofa / couch) are not aliases. Leave aliases empty when there are none.
+Aliases. Add aliases only when there is a real, commonly used alternative that fits the same theme: a strict synonym, a regional word (sidewalk US, pavement UK; give region), or a spelling variant (color / colour, kind "spelling", region UK). Each alias gets its own honest rec and inRec: a rarer alias should have a higher number. Never list the same concept as separate top-level entries. kind "synonym" is only for a strict substitute that a player would accept as the same answer in every theme (besan / gram flour); a near match (sofa / couch) is not an alias. Leave aliases empty when there are none.
 
 themeDifficulty: how recognisable the THEME is as a category, 1 to 5 (1 = everyone gets it at a glance, 5 = specialist or obscure; a vague boundary makes it harder). Always give it; it is only used when the theme is still unrated.
 

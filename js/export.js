@@ -32,7 +32,7 @@ export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r
 
 // Bit layouts, written into the file so the reader does not have to guess.
 export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32 };
-export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256 };
+export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256, synonym: 512 };
 
 export function buildExport(P, opt0 = {}) {
   const o = Object.assign({}, DEFAULT_EXPORT, opt0);
@@ -150,6 +150,7 @@ export function buildExport(P, opt0 = {}) {
     if (e.aliasOf && e.aliasKind === 'regional') flags |= ENTRY_BITS.regional;
     if (e.aliasOf && e.aliasKind === 'abbreviation') flags |= ENTRY_BITS.abbreviation;
     if (e.aliasOf && e.aliasKind === 'translation') flags |= ENTRY_BITS.translation;
+    if (e.aliasOf && e.aliasKind === 'synonym') flags |= ENTRY_BITS.synonym;
     cols.text.push(e.text);
     cols.pos.push(POS.indexOf(e.pos));
     cols.type.push(TYPES.indexOf(e.type));

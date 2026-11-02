@@ -102,7 +102,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     gloss: h('input', { value: w.gloss, placeholder: 'only if the text has other meanings, e.g. donkey' }),
     pos: select(POS, w.pos), type: select(TYPES.map(t => [t, `${t} — ${TYPE_HELP[t]}`]), w.type),
     rec: select(REC_OPTS, w.rec), status: select(STATUS.map(s => [s, `${s} — ${STATUS_HELP[s]}`]), w.status),
-    note: h('textarea', { rows: 2 }, w.note), kind: select(ALIAS_KINDS.filter(k => k !== 'synonym' || w.aliasKind === 'synonym').map(k => [k, k || '(not an alias)']), w.aliasKind),
+    note: h('textarea', { rows: 2 }, w.note), kind: select(ALIAS_KINDS.map(k => [k, k || '(not an alias)']), w.aliasKind),
   };
   const flags = { enabled: 'Enabled', adult: 'Adult', vulgar: 'Vulgar', sensitive: 'Sensitive', tm: 'Trademark / copyright' };   // the order of the Export window
   const boxes = Object.fromEntries(Object.keys(flags).map(k => [k, check(flags[k], w[k])]));
@@ -175,7 +175,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (!r) return toast('Pick the root entry first.', true);
     if (await editEntry(r)) A.changed();
   } }, rootLabel());
-  const picker = field('Pick the root entry', aliasInput, 'An alias takes its themes from its root; it has its own flags and ratings. Spelling = same word spelled differently (color/colour); regional = the same thing under another regional word (sidewalk/pavement). A different word for the same thing (sofa/couch) is an entry of its own, with a synonym group in the theme.');
+  const picker = field('Pick the root entry', aliasInput, 'An alias takes its themes from its root; it has its own flags and ratings. Spelling = same word spelled differently (color/colour); regional = the same thing under another regional word (sidewalk/pavement); synonym = a strict substitute that is always the same answer (besan/gram flour). A near match in meaning (sofa/couch) is an entry of its own, with a synonym group in the theme.');
   const linkRow = h('div.row', {}, rootLink, h('button.link', { type: 'button', onclick: () => { picker.hidden = !picker.hidden; } }, 'change'));
   picker.hidden = !!w.aliasOf;
   linkRow.hidden = !w.aliasOf;
@@ -199,7 +199,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     h('h3', 'Themes'), linksBox,
     aliasBlock,
     !e.aliasOf && !isNew && h('div.row', {}, h('button', { type: 'button', onclick: async () => {
-      const a = Object.assign(entryDefaults(), { aliasOf: e.id, aliasKind: 'regional', pos: e.pos, type: e.type });
+      const a = Object.assign(entryDefaults(), { aliasOf: e.id, aliasKind: 'synonym', pos: e.pos, type: e.type });
       if (await editEntry(a, { isNew: true })) A.changed();
     } }, '+ Add alias')),
     field('Note', f.note));
@@ -219,7 +219,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (aliasOf && aliasOf === e.id) throw Error('An entry cannot be an alias of itself.');
     if (aliasOf && P.entries.some(a => a.aliasOf === e.id)) throw Error('This entry has aliases of its own; move them first.');
     Object.assign(w, { text, gloss, pos: f.pos.value, type: f.type.value, rec: +f.rec.value, status: f.status.value, note: f.note.value.trim(), aliasOf,
-      aliasKind: aliasOf ? (f.kind.value || 'regional') : '' });
+      aliasKind: aliasOf ? (f.kind.value || 'synonym') : '' });
     for (const k of Object.keys(flags)) w[k] = boxes[k].querySelector('input').checked;
     w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
     Object.assign(e, w);
