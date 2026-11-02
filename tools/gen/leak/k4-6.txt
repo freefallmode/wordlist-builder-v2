@@ -1,0 +1,285 @@
+T horse_breeds
+S 9494 | Mongolian | steppe equine | 4
+T pony_breeds
+S 9499 | New Forest | native equine | 3
+S 9521 | Newfoundland | native equine | 4
+S 9515 | Sable Island | native equine | 5
+S 9495 | Welsh | native equine | 3
+T horse_family
+S 9627 | brumby | Australian feral | 3
+K 153 # nothing left # head member
+S 9624 = 1532
+T african_animals
+S 7969 = 7970
+T african_birds
+K 51104 # bare go-away unused
+S 8106 | secretary | raptor | 3
+T madagascar_animals
+S 50598 = 8111
+T turkish_animals
+S 9318 = 9664
+T indian_animals
+S 51130 = 9747
+S 50735 = 29534
+T himalayan_animals
+S 7954 = 7953
+T japanese_animals
+S 51148 = 51147
+T antarctic_animals
+S 9710 = 1400
+T penguins
+K 51227 # nobody says Antarctic alone
+K 51229 # bare banded is an adjective
+S 51222 | blue | fairy bird | 3
+K 51228 # bare crested is an adjective
+T andean_animals
+S 7959 = 7958
+K 9804 # bare cat means house cat
+T galapagos_animals
+S 51263 | racer | snake | 4
+S 51265 | rail | bird | 4
+T north_american_animals
+S 7949 = 7950
+T arctic_animals
+S 8132 = 1128
+T desert_animals
+S 9659 = 1003
+S 8553 = 1150
+T mountain_animals
+S 7823 = 983
+S 8065 = 8058
+S 222 = 220
+S 9616 = 981
+T striped_animals
+S 9641 = 1020
+T spotted_animals
+S 9857 = 1285
+S 9853 = 1063
+T black_and_white_animals
+S 9860 = 9865
+T burrowing_animals
+S 9784 = 1063
+T spiny_animals
+S 9909 = 1058
+S 9907 = 8754
+S 9905 = 24022
+T hopping_animals
+S 9912 = 24022
+T long_necked_animals
+K 9916 # fixed name # no shorter form
+T pink_animals
+S 9924 = 1297
+S 9927 | lady crab | - | 5
+S 9921 = 1070
+K 9929 # fixed name # toe tarantula nonsense
+T gliding_animals
+S 9950 = 8681
+S 9940 = 7897
+T insect_eaters
+K 8338 # fixed bird name
+T flying_reptiles
+K 9998 # bare dinosaur not flying
+K 9996 # nothing left
+K 9997 # bare winged unused
+T sea_reptiles
+S 1328 = 1135
+T dinosaur_words
+K 10120 # nobody says bones alone
+T trees
+S 1642 = 64791
+K 1669 # nobody says Joshua alone
+S 1666 = 1665
+S 1662 = 1661
+T deciduous_trees
+S 1666 = 1665
+T evergreen_trees
+K 25007 # Christmas alone is not a tree
+S 1642 = 64791
+T nut_trees
+K 30002 # Brazil alone is the country
+S 30004 = 17355
+S 30006 = 29960
+T tropical_trees
+S 30015 = 16749
+S 1662 = 1661
+S 30014 | rubber | latex source | 2
+T african_trees
+S 60159 = 1658
+K 60160 # tulip alone is the flower
+K 56418 # dragon alone is a creature
+K 56409 # fever alone is an illness
+S 1662 = 1661
+S 56410 = 15619
+T asian_trees
+S 1666 = 1665
+S 30014 | rubber | latex source | 2
+T australian_trees
+S 1642 = 64791
+S 30660 | melaleuca | - | 4
+T south_american_trees
+S 30014 | rubber | latex source | 2
+T north_american_trees
+K 1669 # nobody says Joshua alone
+T mediterranean_trees
+K 56475 # Judas alone is a person
+T woodland_features
+K 30160 # bare edge too vague
+T forest_types
+K 30206 # bare community too vague
+S 30190 | dry | arid woodland | 3
+S 30196 | gallery | riverside woodland | 4
+S 30193 | petrified | fossil woodland | 3
+S 30194 | secondary | regrown woodland | 4
+S 30205 | urban | city woodland | 3
+S 30204 | virgin | primeval woodland | 3
+T famous_forests
+K 30235 # fixed place name
+K 30234 # fixed name
+S 30218 | Dean | Gloucestershire woodland | 4
+K 30216 # New alone means nothing
+K 30225 # fixed place name
+T forestry_words
+K 30251 # sustainable alone is adjective
+T wildfire_words
+K 30269 # nothing left # the name itself
+T tropical_flowers
+S 30395 | ginger | blossom spike | 3
+T edible_flowers
+S 30465 | basil | herb blossom | 4
+S 30464 | rosemary | herb blossom | 4
+S 30471 = 30456
+T flowers_with_animal_names
+K 30498 # nobody says bat alone
+K 30492 # cuckoo alone is the bird
+K 30476 # monkey alone is the animal
+K 30500 # swan alone is the bird
+T south_american_flowers
+S 56519 = 56513
+T alpine_flowers
+S 56521 = 56524
+T sweet_smelling_flowers
+K 1721 # fixed name # pea alone is vegetable
+T plants
+S 1823 = 1801
+A | touch-me-not | - | 4
+T water_plants
+K 17376 # nobody says chestnut for it
+S 30604 | Nile cabbage | - | 5
+K 60195 # fixed name
+T grasses_and_reeds
+K 60207 # nobody says lyme alone
+K 60204 # quaking alone is adjective
+T christmas_plants
+S 30557 | holiday cactus | - | 3
+S 30688 = 30341
+T desert_plants
+S 30701 = 1803
+K 30702 # willow is a different tree
+T seeds_and_pips
+S 17388 = 17389
+S 17436 = 60232
+S 17383 = 17382
+T garden
+S 1875 | community | shared plot | 3
+S 1870 = 64793
+T garden_features
+S 30734 = 63769
+S 1870 = 64793
+S 60241 | water | pond or fountain | 2
+T garden_styles
+S 1870 = 64793
+K 60271 # nobody says physic alone
+K 60270 # stroll alone is not garden
+T famous_gardens
+K 30808 # fixed name
+T japanese_garden
+S 30831 = 60290
+T river_features
+S 60298 | braided | channel pattern | 4
+T desert_features
+S 30891 | reg | stony plain | 5
+T ice_features
+K 30919 # nobody says bridge alone
+K 30900 # nobody says cap alone
+K 30916 # nobody says fall alone
+K 30905 # shelf alone too vague
+K 30909 # sea alone is water body
+T cave_features
+K 60315 # fixed name
+S 30945 = 30930
+K 30928 # nobody says pearl alone
+K 30940 # sea alone is water body
+T island_types
+K 31016 # barrier reef is other thing
+K 21269 # desert alone is wasteland
+K 31012 # hotspot alone not island
+K 31010 # nobody says arc alone
+K 31001 # chain alone too vague
+K 31011 # mid-ocean alone unused
+S 31003 | reef | low cay | 3
+S 31000 | river | midstream islet | 3
+S 31015 | sand | dune-built | 3
+T rock_pool
+K 31047 # nobody says tide alone
+T tides_and_currents
+K 31149 # cross alone unused
+K 60333 # Labrador alone is dog
+K 31140 # ocean alone is water body
+K 31150 # sea alone is water body
+K 31141 # table alone is furniture
+T shipwreck_coast_words
+K 31157 # nothing left
+T wave_words
+K 60341 # nobody says sneaker alone
+K 40756 # standing alone unused
+S 31125 = 29446
+K 31200 # train alone unused
+T rain_words
+S 31219 | heavy | intense | 1
+S 31220 | light | gentle | 1
+K 1965 # nothing left
+T wind_words
+S 31244 | prevailing | steady | 4
+S 31239 | trades | steady easterlies | 3
+K 1969 # nothing left
+T storms
+S 1978 = 1977
+T cloud_types
+K 31287 # nobody says bank alone
+S 31275 | shelf | arcus | 4
+T snow_and_ice
+S 2016 | black | road hazard | 2
+S 60357 | corn | spring slush | 5
+K 30900 # nobody says cap alone
+K 31298 # nobody says crystal alone
+K 60358 # nobody says fog alone
+S 31302 = 1988
+K 30905 # shelf alone too vague
+K 30909 # sea alone is water body
+K 31300 # shower alone is rain
+T weather_instruments
+S 31307 = 31318
+K 31316 # station alone too vague
+T named_winds
+K 31353 # berg alone is mountain
+S 31350 | diablo | California | 5
+K 31359 # helm alone is steering
+S 31239 | trades | steady easterlies | 3
+T forecast_words
+S 60371 | ensemble | model runs | 5
+K 2003 # nothing left
+T sky_phenomena
+K 31426 # red alone is color
+T hot_weather_words
+K 31461 # fixed phrase
+K 31453 # spell alone too vague
+T signs_of_spring
+K 23969 # cleaning alone unrelated
+T signs_of_summer
+K 31521 # storm alone loses season
+T signs_of_winter
+S 30388 = 30618
+T nature_at_night
+S 31596 = 1086
+K 31593 # sky alone too vague
+K 31585 # fixed phrase

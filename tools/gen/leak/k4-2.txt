@@ -1,0 +1,229 @@
+T chocolates
+S 18383 | bar | candy slab | 1
+S 18402 | button | small disc sweet | 3
+K 18401 # fixed name # nobody says orange alone
+K 18403 # spread alone is not a chocolate
+T pasta_dishes
+S 18538 | al forno | baked | 5
+S 59530 | all'assassina | spicy burnt | 5
+S 59528 | alla Genovese | - | 5
+S 18534 | alla norma | aubergine and ricotta | 5
+S 59531 = 917
+S 18539 | con le sarde | sardine and fennel | 5
+K 59526 # fixed name # e ceci not used alone
+K 18530 # fixed name # e fagioli not used alone
+S 18529 = 798
+S 18523 = 746
+T noodles
+S 18547 = 25212
+K 18569 # cold alone is not noodles
+K 18565 # nobody says cup for it
+S 18543 | egg | made with yolk | 1
+K 64752 # bare glass already in theme
+S 18554 | hand-pulled | stretched by hand | 3
+S 671 | instant | quick-cook | 2
+S 690 | rice | rice flour | 3
+S 18561 | singapore | curried vermicelli | 3
+K 18560 # wonton alone is a dumpling
+T noodle_dishes
+K 18569 # cold alone is not a dish
+S 18561 | singapore | curried vermicelli | 3
+T rice_dishes
+K 18584 # fixed name # chicken alone is a bird
+S 18585 | coconut | cooked in coconut milk | 2
+K 18579 # nobody says dirty alone
+S 17993 | egg fried | wok-cooked with egg | 2
+S 806 = 63443
+S 59560 | jeera | cumin-flavored | 4
+S 18590 | lemon | tangy south Indian | 3
+K 18575 # fixed name # beans alone is vague
+S 18573 | congee | savory porridge | 3
+S 18331 = 614
+S 18586 | Spanish | tomato-seasoned | 3
+S 18577 | sticky | glutinous | 2
+T grains
+K 3857 # whole alone is not a grain
+T dumplings
+S 18657 | apple | pastry-wrapped baked | 2
+S 18670 | boiled | cooked in water | 3
+K 18656 # fixed dish name # chicken alone is a bird
+K 18669 # soup alone is a different dish
+S 18659 = 63443
+S 18646 | soup | filled with broth | 3
+S 18658 | steamed | cooked in steam | 2
+S 18663 | suet | beef-fat | 4
+T rice_varieties
+S 18691 | aromatic | fragrant | 4
+K 18677 # bare forbidden already in theme
+S 59598 | glutinous | sticky | 3
+S 18684 | instant | precooked | 2
+S 18682 | parboiled | partly boiled | 3
+S 18577 | sticky | glutinous | 3
+S 18673 | sushi | short-grain | 2
+S 59597 | valencia | paella grain | 4
+T herbs_spices_and_sauces
+S 729 | barbecue | smoky glaze | 1
+S 768 | fish | fermented seasoning | 3
+S 728 | hot | chili-based | 1
+S 751 | tartar | mayo-based | 2
+T spices
+K 18719 # fixed name # no other name
+K 18715 # fixed name # pumpkin pie is a dessert
+T spice_blends
+K 18728 # fixed name # apple pie is a dessert
+K 18718 # fixed name # five alone is a number
+K 18719 # fixed name # no other name
+S 18727 | mixed | British baking | 3
+S 18729 | pickling | brine seasoning | 3
+S 18724 | pumpkin | autumn flavor | 2
+T chili_peppers
+S 18771 | banana | yellow mild | 3
+S 18773 | cherry | round red | 4
+K 17658 # nothing left
+S 18780 | green | unripe | 2
+S 18784 | peter | novelty shaped | 5
+S 18779 | red | ripe | 2
+S 18781 | tabasco | Louisiana cultivar | 4
+K 64759 # bare thai already in theme
+T sauces_and_condiments
+S 18789 | apple | puréed fruit | 1
+S 729 | barbecue | smoky glaze | 1
+S 18788 | cranberry | festive tart | 2
+S 768 | fish | fermented seasoning | 3
+S 728 | hot | chili-based | 1
+S 18794 | mint | lamb accompaniment | 3
+S 18793 | oyster | savory Chinese | 3
+S 751 | tartar | mayo-based | 2
+S 18785 | tomato | red pasta topping | 1
+T french_sauces
+S 53209 | Robert | mustard and onion | 5
+T asian_sauces
+S 53214 | black bean | fermented soy | 3
+S 768 | fish | fermented seasoning | 3
+S 18793 | oyster | savory Chinese | 3
+S 53220 | peanut | satay-style | 2
+S 53215 | plum | sweet fruity | 3
+S 53219 | satay | peanut dip | 3
+S 53217 | tonkatsu | fruity Japanese brown | 4
+S 53216 | XO | seafood chili | 4
+T salad_dressings
+K 53245 # coleslaw is a salad
+S 53242 | Louis | mayonnaise-chili | 5
+S 53241 | miso | umami | 3
+K 772 # fixed name # cream alone means dairy
+S 53240 | tahini | sesame | 3
+S 53243 | yogurt | tangy white | 3
+T dips
+S 18814 | artichoke | baked creamy | 3
+S 16777 | bean | refried | 3
+S 18802 | cheese | melted | 1
+S 18815 | crab | seafood | 3
+S 18818 | dill | herby | 3
+S 18804 | onion | sour cream | 2
+S 18806 | spinach | creamy green | 2
+T spreads
+S 18843 | Biscoff | caramelized biscuit | 3
+S 18833 | cheese | smooth and soft | 2
+S 18403 | chocolate | cocoa | 2
+S 18834 | hazelnut | nutty cocoa | 2
+S 18848 | speculoos | spiced biscuit | 4
+T pickles_and_preserves
+S 18867 | lime | Indian tangy | 4
+S 18868 | mango | Indian tangy | 4
+S 18858 | sweet | sugar-brined gherkin | 2
+T oils_and_vinegars
+S 18905 | ACV | health tonic | 3
+S 18911 | black | Chinese dark | 4
+A | Chinkiang | - | 5
+S 18912 | champagne | pale French | 4
+S 18904 | cider | apple-based | 2
+K 18913 # bare coconut already in theme
+S 18909 | distilled | clear sharp | 3
+S 18895 = 63146
+S 18888 | palm | tropical fat | 2
+K 18884 # bare rapeseed already in theme
+S 18907 | rice | mild Asian | 3
+S 18918 | sake | rice-wine | 5
+S 18893 | truffle | infused luxury | 3
+S 18881 | vegetable | generic cooking | 1
+T soups
+S 18921 | noodle | broth with strands | 1
+S 18923 | vegetable | veggie broth | 1
+T stews
+S 18948 = 459
+S 18949 | chicken | slow-cooked fowl | 1
+S 17865 | fish | seafood | 2
+S 18952 | Irish | lamb and potato | 2
+S 18951 = 461
+S 18950 | vegetable | meatless | 1
+T salads
+S 18988 = 420
+S 18979 | chicken | cold diced poultry | 1
+S 18999 = 664
+S 18987 = 400
+S 17988 = 518
+S 16761 | fruit | mixed fresh | 1
+S 18985 = 428
+S 18984 = 656
+S 18529 = 652
+S 17873 = 392
+S 18989 = 665
+S 19002 | Russian | diced vegetable mayo | 4
+S 18998 = 1290
+S 18978 | side | small accompaniment | 1
+S 18980 = 398
+S 18986 = 801
+S 18981 = 110
+S 17861 = 467
+T sandwiches
+S 19036 = 462
+S 19012 | chicken | cold poultry filled | 1
+S 19016 = 400
+S 19011 = 518
+S 19026 | finger | small crustless | 3
+S 19042 | fish finger | breaded fish stick | 3
+S 19010 = 463
+S 19034 | open-faced | single slice | 3
+T breakfast_foods
+K 978 # bare cereal already in theme
+T snacks
+S 19098 | fruit | gummy chewy | 2
+S 16769 | seaweed | crispy sheets | 3
+T potato_dishes
+S 19141 | baked | oven roasted whole | 2
+K 19147 # pancake alone not potato
+S 17873 | salad | cold mayo | 1
+S 19157 | twice baked | stuffed and re-baked | 3
+T savory_pies
+K 19173 # nobody says chicken pot
+K 19176 # nobody says cottage alone
+S 17841 | fish | creamy seafood | 3
+S 19183 | game | wild meat | 3
+S 19172 = 16670
+K 19192 # fixed name # mash alone is potato
+S 19177 = 460
+K 19174 # nobody says pot alone
+S 19193 | scotch | mutton hand | 4
+K 19175 # nobody says shepherd's alone
+S 19178 = 465
+T pizza_styles
+S 19225 | flatbread | thin crisp base | 3
+S 19233 | Greek | pan-baked | 4
+S 19242 | fritta | fried Neapolitan | 5
+T pancakes_of_the_world
+S 19261 | buckwheat | nutty dark | 3
+S 19251 = 527
+S 19260 | Chinese | savory flatbread | 3
+K 19250 # nothing left
+S 19147 | potato | grated fried | 2
+S 19257 = 422
+S 19259 | Swedish | thin and crepe-like | 3
+T burger_toppings
+K 19290 # sauce alone too generic
+T greek_food
+S 18976 | horiatiki | tomato and feta | 4
+T turkish_food
+K 19296 # bare coffee is not Turkish
+T turkish_breakfast
+K 19296 # bare coffee is not Turkish
+K 16580 # bare tea is not Turkish

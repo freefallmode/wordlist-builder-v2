@@ -1,0 +1,266 @@
+T flags_with_animals
+K 60556 # fixed name # bare Bear is just animal
+T post_office
+K 35173 # nobody says sorting alone
+T library
+K 38251 # fixed name
+S 23298 | card | borrowing | 2
+T hair_salon
+S 57476 = 332
+T street_market
+S 38452 = 63316
+K 57486 # fixed name # bare food too generic
+T park
+K 43577 # nobody says skate for it
+T shopping_mall
+K 57505 # nobody says walker alone
+T fire_station
+S 38366 = 28342
+S 57510 | pole | sliding | 2
+T police_station
+S 3091 = 23150
+T office
+S 57534 | corner | executive suite | 3
+T vet_clinic
+K 4068 # nothing left
+T dentist_s_office
+K 4067 # nothing left
+T zoo
+K 57575 # nobody says petting alone
+T art_gallery
+S 57598 | gallerist | - | 4
+T swimming_pool
+K 31515 # nobody says paddling alone
+S 57619 | skimmer | leaf net | 3
+T ski_resort
+K 43521 # nothing left
+K 39852 # nobody says jump alone
+S 47074 = 46935
+T water_park
+K 57640 # nobody says cannon alone
+T towers_and_skyscrapers
+S 38273 | clock | public timepiece | 2
+K 2370 # CN alone is no name
+K 2733 # nobody says control alone
+K 38276 # nobody says cooling alone
+K 2315 # Elizabeth alone is a queen
+K 38277 # nobody says observation alone
+K 38280 # nobody says peel alone
+K 37092 # nobody says Shanghai for it
+K 2463 # nobody says block alone
+K 38278 # nobody says TV alone
+K 38274 # nobody says water alone
+K 37050 # nobody says Willis alone
+T road_types
+K 38325 # fixed name
+K 38326 # fixed name
+S 38314 | dirt | unpaved | 2
+K 28254 # nothing left
+T street_names
+S 38354 | New | generic road name | 2
+T street_furniture
+K 38358 # nobody says lamp alone
+T traffic_words
+S 38398 = 27373
+T parts_of_a_road
+S 38426 | markings | painted lines | 3
+T parts_of_a_town
+K 38455 # nobody says old alone
+K 2493 # nobody says hall alone
+T national_symbols
+S 2523 = 2524
+T cars
+K 2601 # nobody says sports alone
+T car_types
+K 46640 # nobody says city alone
+S 46655 | classic | vintage vehicle | 2
+K 46645 # nobody says kit alone
+K 2601 # nobody says sports alone
+K 46646 # nobody says town alone
+T famous_car_models
+K 59035 # nothing left
+T road_signs
+K 46729 # nobody says work alone
+T gas_station
+K 46787 # nobody says service alone
+T parking_words
+S 46813 | angle | slanted bays | 3
+S 46814 | bay | marked space | 3
+K 46722 # no is a function word
+S 46818 | on-street | kerbside | 3
+S 46820 = 28836
+S 46825 | enforcement | ticketing | 3
+S 46799 = 2470
+S 38373 = 46796
+S 46793 = 46819
+S 46794 | spot | free car bay | 3
+T bus_types
+S 2702 | articulated | long hinged | 3
+A | bendy | long hinged | 3
+K 46902 # nobody says demand-responsive alone
+K 46898 # nobody says ferry alone
+K 46891 # nobody says hopper alone
+K 46901 # nobody says kneeling alone
+K 2673 # nobody says night alone
+K 46896 # nobody says rapid transit alone
+K 46900 # nobody says RV alone
+T on_a_bus
+S 2667 = 46935
+T ticket_words
+K 46959 # fixed name
+K 46940 # nothing left
+S 46952 | booth | sales window | 2
+K 47830 # nobody says collector alone
+K 40239 # nobody says machine alone
+T taxis_of_the_world
+K 47037 # nobody says camel alone
+K 47020 # nobody says collective alone
+K 47019 # nobody says shared alone
+K 47038 # nobody says sidecar alone
+K 40088 # nothing left
+K 47014 # nobody says water alone
+T cable_cars_and_lifts
+K 47054 # nobody says bubble alone
+K 47068 # nobody says bucket alone
+K 47041 # nothing left
+K 47055 # nobody says railway alone
+S 47048 | drag | ski tow | 4
+K 47075 # nobody says tower alone
+K 47062 # nobody says San Francisco
+S 47061 | Sugarloaf | Rio ride | 4
+T air_travel
+S 2747 | controller | runway traffic | 3
+T aircraft_types
+S 47089 | crop duster | - | 2
+K 2710 # nothing left
+S 47087 | light plane | small aeroplane | 3
+T flight_crew
+K 47188 # nobody says deadheading alone
+S 2723 | attendant | cabin | 2
+S 47169 | engineer | on-board systems | 3
+S 47195 = 3449
+S 2773 | ground staff | - | 3
+T airlines
+S 47233 | Malaysia | national carrier | 3
+K 47235 # nobody says Philippine alone
+S 47238 | Vietnam | national carrier | 3
+T european_airlines
+S 59077 | Brussels | Belgian carrier | 4
+T asian_airlines
+K 59097 # bare China misleads
+K 59107 # bare Hong Kong misleads
+S 47233 | Malaysia | national carrier | 3
+K 47235 # nobody says Philippine alone
+S 47238 | Vietnam | national carrier | 3
+T flying_machines
+K 22381 # nobody says carpet alone
+T famous_airports
+S 47276 | Hartsfield-Jackson | Georgia hub | 4
+S 47265 | Kennedy | New York hub | 3
+T hot_air_balloon_parts
+K 27773 # nothing left
+T boats_and_ships
+K 2839 # nobody says jolly alone
+T boat_types
+K 47433 # nobody says bumper alone
+S 47435 | pedalo | pedal-powered | 3
+T small_boats
+K 2839 # nobody says jolly alone
+K 59133 # nobody says jon alone
+S 47435 | pedalo | pedal-powered | 3
+T sailing_ships
+K 21171 # nobody says tall alone
+T working_boats
+K 59160 # nobody says crab alone
+K 45155 # nobody says fishing alone
+K 34705 # nobody says patrol alone
+K 59148 # nobody says pilot alone
+T traditional_boats
+S 59165 | dragon | festival racer | 3
+K 59171 # nobody says reed alone
+T pleasure_boats
+K 48865 # nobody says banana alone
+K 59189 # nobody says canal alone
+S 47435 | pedalo | pedal-powered | 3
+K 59185 # nobody says ski alone
+K 59187 # nobody says swan alone
+T ports_and_harbors
+K 47513 # nobody says deepwater alone
+K 47511 # nobody says fishing alone
+K 47519 # nobody says inner alone
+T knots
+S 60653 | double | doubled loop | 3
+K 47571 # nobody says Fisherman's alone
+K 6978 # nobody says Gordian alone
+K 47565 # nobody says Hangman's alone
+K 60655 # nobody says love alone
+S 60657 | Pratt | tie style | 5
+K 60654 # nobody says shoelace alone
+S 47554 | slip | running loop | 3
+S 47560 | square | reef-like | 3
+K 47581 # nobody says Surgeon's alone
+T famous_canals
+S 47589 | Albert | Belgian waterway | 5
+S 47597 | Grachtengordel | Amsterdam rings | 5
+S 47586 | Bridgewater | English waterway | 5
+S 36925 | Caledonian | Scottish waterway | 4
+S 36923 | Midi | Languedoc waterway | 4
+S 47590 | Saint-Martin | Paris waterway | 5
+S 47591 | Cape Cod | Massachusetts waterway | 4
+K 47596 # nobody says Chicago Sanitary
+S 47592 | Gota | Swedish waterway | 5
+K 47584 # fixed name
+S 47588 | Karakum | Turkmen waterway | 5
+K 36924 # nobody says Manchester Ship
+K 47594 # nobody says Midland alone
+S 47585 | Regent's | London waterway | 4
+S 47587 | Volga-Don | Russian waterway | 5
+S 36928 | Welland | Ontario waterway | 5
+T submarine_words
+K 47641 # fixed name
+T train_types
+K 47682 # nobody says boat alone
+K 47676 # nobody says circus alone
+K 47673 # nobody says luxury alone
+K 47671 # nobody says night alone
+K 47680 # nobody says tilting alone
+K 46058 # nobody says toy alone
+T famous_trains
+K 47742 # fixed name
+T metro_systems
+S 47772 | Delhi | Indian subway | 3
+S 47770 | Moscow | Russian subway | 3
+S 47769 | Paris | French subway | 2
+K 47792 # nobody says Santiago for it
+S 47782 | Seoul | Korean subway | 4
+S 47771 | Tokyo | Japanese subway | 3
+K 47795 # nobody says Tyne and Wear
+K 47773 # Washington alone is ambiguous
+T famous_train_stations
+K 47811 # nobody says Central alone
+K 47816 # nobody says Kyoto for it
+S 47802 | Penn | New York terminus | 3
+K 47809 # nobody says Tokyo for it
+K 47810 # nobody says Union alone
+T bike_types
+K 47893 # nobody says balance alone
+S 47897 = 64817
+T motorcycle_types
+K 40174 # nothing left
+K 47958 # nobody says police alone
+K 47962 # nobody says racing alone
+T cycling_races
+K 60671 # fixed name
+T scooters_and_skates
+K 7370 # fixed name
+K 48055 # nobody says kick alone
+K 48058 # nobody says mobility alone
+K 48054 # nobody says roller alone
+K 48057 # nobody says speed alone
+K 48056 # nobody says stunt alone
+T skate_park_features
+K 43577 # nothing left
+T skateboard_parts
+K 48120 # nobody says wheels alone
+T travel_verbs
+K 28275 # nothing left

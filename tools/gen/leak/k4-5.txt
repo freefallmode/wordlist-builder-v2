@@ -1,0 +1,230 @@
+T sharks
+S 8765 | angel | flat-bodied fish | 4
+S 8768 | bamboo | slender reef fish | 5
+S 8761 | carpet | bottom-dwelling fish | 5
+S 8772 | epaulette | walking reef fish | 5
+S 8766 | frilled | - | 5
+S 8762 | Greenland | Arctic fish | 4
+S 8749 = 8748
+S 8770 | silky | oceanic fish | 5
+T rays_and_eels
+S 8811 | butterfly | wide-winged fish | 5
+S 8802 | devil | manta-like fish | 3
+S 8807 | glass | transparent young | 4
+K 8806 # nobody says snake alone
+S 8812 = 50589
+S 8800 | torpedo | electric fish | 4
+T deep_sea_fish
+K 8823 # nobody says football alone
+K 8826 # nobody says tripod alone
+T sea_life
+S 1296 = 1297
+K 1315 # nobody says cucumber alone
+K 1326 # nobody says fan alone
+K 1291 # grass alone is a land plant
+K 1294 # lion alone is a land animal
+S 1322 = 1009
+K 1336 # nobody says pen alone
+K 1313 # slug alone is a land animal
+K 1328 # snake alone is a land animal
+K 1333 # nobody says squirt alone
+K 1288 # star alone means sky or shape
+S 1293 = 1142
+S 502 = 28370
+T sea_mammals
+K 1294 # lion alone is a land animal
+S 1322 = 1009
+T seals_and_sea_lions
+S 50811 | Australian | pinniped | 4
+S 9753 | bearded | pinniped | 4
+S 50807 | California | pinniped | 3
+S 50813 | Caspian | pinniped | 5
+S 50815 | common | pinniped | 3
+K 8897 # nobody says fur alone
+S 50810 | Galapagos | pinniped | 4
+S 8901 | grey | pinniped | 3
+S 8899 | harbor | pinniped | 3
+S 32323 | monk | pinniped | 4
+S 9754 | hooded | pinniped | 4
+K 50809 # nobody says northern fur
+S 50808 | ribbon | pinniped | 5
+S 9749 | ringed | pinniped | 4
+S 9712 | Ross | pinniped | 5
+K 1294 # nothing left
+K 50816 # southern marks the species
+S 50814 | spotted | pinniped | 5
+T jellyfish_and_relatives
+S 8928 | cannonball | gelatinous drifter | 5
+S 8927 | immortal | - | 4
+S 8935 = 28043
+T ocean_giants
+K 1327 # nobody says clam for it
+S 8973 | Pacific octopus | - | 4
+K 1318 # nobody says squid for it
+T starfish_and_sea_urchins
+K 8994 # nobody says flower
+K 8980 # nobody says heart
+K 8992 # nobody says apple
+K 8988 # nobody says biscuit
+K 8993 # nobody says egg
+K 1288 # nothing left
+K 502 # nothing left
+T beetles
+S 9010 | bark | tree pest | 4
+S 9012 | blister | toxic insect | 5
+S 9009 | carpet | household pest | 4
+K 1427 # nobody says click alone
+S 9020 | darkling | - | 5
+K 9003 # nobody says diving alone
+K 1392 # nobody says dung alone
+K 9016 # nobody says flea alone
+S 9011 | jewel | metallic insect | 5
+K 9015 # nobody says leaf alone
+S 9013 | rove | - | 5
+K 9019 # nobody says tortoise alone
+K 9017 # nobody says water alone
+T butterflies_and_moths
+S 9054 | cinnabar | red-black insect | 5
+K 9051 # nobody says clothes alone
+S 9052 | codling | - | 5
+S 9050 | gypsy | forest pest | 4
+K 9048 # nobody says hummingbird hawk
+S 9053 | peppered | - | 4
+K 9049 # nobody says silk alone
+T bees_and_wasps
+S 59966 | blue orchard | - | 5
+S 59957 | cellophane | - | 5
+K 9082 # cuckoo covers bee and wasp
+K 9074 # cuckoo covers bee and wasp
+K 9081 # nobody says digger alone
+K 9073 # nobody says fig alone
+K 9072 # nobody says gall alone
+K 9061 # mason covers bee and wasp
+K 59958 # mason covers bee and wasp
+S 9065 | mining | - | 4
+K 59967 # nobody says mud alone
+K 9083 # nobody says orchid alone
+S 59956 | plasterer | - | 5
+K 59955 # nobody says pollen alone
+S 9069 | potter | clay-nesting insect | 5
+S 59962 | red mason | - | 4
+S 59960 | ruby-tailed | - | 5
+S 9084 | solitary | - | 4
+K 59954 # nobody says spider alone
+S 9064 | sweat | - | 4
+T spiders
+S 9098 | bird-eating | - | 4
+S 9105 | black house | - | 5
+S 9104 | cellar | web-spinning arachnid | 5
+S 9102 | diving bell | air-bubble arachnid | 5
+K 9103 # nobody says fishing alone
+K 9086 # nobody says garden alone
+S 9111 | hobo | - | 5
+K 9085 # nobody says house alone
+K 9096 # nobody says money alone
+S 9109 | sac | - | 5
+K 9101 # nobody says water alone
+S 9107 | zebra | jumping arachnid | 4
+T garden_bugs
+K 1424 # nobody says stink alone
+T biting_bugs
+K 9160 # nobody says kissing alone
+T butterfly_life_stages
+K 1348 # nothing left
+T flies
+K 9205 # nobody says bee alone
+S 9203 | cluster | - | 5
+S 1386 | crane | long-legged insect | 3
+K 9157 # nobody says deer alone
+K 9206 # nobody says drone alone
+K 9210 # nobody says dung alone
+K 9202 # nobody says flesh alone
+S 9209 | hessian | - | 5
+S 1433 | robber | - | 5
+S 9164 | stable | biting insect | 4
+T ants_and_termites
+S 9224 = 38021
+K 9217 # black alone too vague
+S 9234 | bulldog | aggressive insect | 4
+K 59978 # nobody says compass alone
+S 9232 | crazy | - | 5
+S 59976 | dampwood | - | 5
+S 59971 | Dracula | tiny insect | 5
+S 9220 | driver | African insect | 4
+S 9236 | drywood | - | 5
+K 9226 # nobody says flying alone
+S 59977 | Formosan | - | 5
+K 59972 # nobody says garden alone
+S 59974 | ghost | tiny insect | 5
+S 9221 | honeypot | - | 5
+S 1414 | leafcutter | fungus-farming insect | 4
+S 59969 | Matabele | - | 5
+K 59970 # nobody says meat alone
+S 9231 | pavement | - | 5
+K 9216 # red alone too vague
+S 9237 | subterranean | - | 5
+K 9233 # nobody says sugar alone
+K 9229 # mound alone is generic
+K 59973 # nobody says thief alone
+S 59968 | trap-jaw | - | 4
+K 9225 # white alone too vague
+K 59975 # nobody says yellow meadow
+T worms
+S 59984 | acorn | marine invertebrate | 5
+S 59983 | arrow | marine invertebrate | 5
+S 59981 | bobbit | - | 5
+S 9263 | Christmas tree | spiral-gilled invertebrate | 5
+K 9262 # nobody says fan alone
+K 59989 # nobody says giant tube
+S 15074 | guinea | parasite | 4
+S 59982 | peanut | marine invertebrate | 5
+S 59985 | Pompeii | deep-sea invertebrate | 5
+S 59986 | spoon | marine invertebrate | 5
+K 1337 # nobody says tube alone
+T pet_supplies
+K 24122 # door alone is generic
+S 50863 = 28368
+K 50854 # gate alone is generic
+T dog_commands
+S 50889 = 39372
+T terriers
+S 50968 | Australian | - | 4
+S 60004 | Brazilian | - | 5
+K 50944 # nobody says bull alone
+K 50952 # nobody says fox alone
+K 60003 # nobody says Miniature bull
+K 50960 # nobody says rat alone
+S 50939 | Scottish | - | 3
+A | Scottie | - | 2
+S 50969 | Silky | - | 4
+S 60001 | Tenterfield | - | 5
+K 50971 # nobody says toy fox
+S 50941 | West Highland | - | 3
+A | Westie | - | 2
+S 50964 | wheaten | - | 4
+T hounds
+S 60012 | Finnish | - | 4
+K 50993 # nobody says scent alone
+T toy_dogs
+K 51010 # nobody says English spaniel
+K 51015 # nothing left
+S 50971 = 50952
+S 51000 = 256
+T herding_dogs
+K 51032 # nobody says Australian cattle
+K 9470 # nobody says cattle alone
+T working_dogs
+S 51067 | Greenland | Arctic breed | 5
+K 9461 # nobody says guard alone
+K 51058 # nobody says Portuguese water
+K 51072 # nobody says rescue alone
+K 9450 # nobody says sled alone
+K 51074 # nobody says Swiss mountain
+T sheep_breeds
+S 60124 = 9415
+S 60123 = 9447
+S 60122 = 9416
+T horses
+K 1513 # race alone is generic
+K 1539 # trailer alone is generic
+K 1531 # quarter alone means a fraction

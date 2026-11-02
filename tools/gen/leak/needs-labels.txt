@@ -1,0 +1,816 @@
+-- Sunday
+  14	[NO LABEL]	root	days_of_the_week,days_and_weeks
+  65778	(weekly religious classes)	root	school_types
+-- north
+  43	[NO LABEL]	root	cardinal_directions,blank_light,compass_directions
+  65536	(European waters)	root	oceans_and_seas
+-- grapefruit
+  77	[NO LABEL]	root	citrus_fruits,fruits,foods_you_peel,sour_foods
+  65763	(weight-loss plan)	root	diet_types
+-- banana
+  88	[NO LABEL]	root	fruits,healthy_snacks,tropical_fruits,lunchbox
+  65033	(dessert)	root	puddings
+  65081	(yellow mild)	root	chili_peppers
+-- strawberry
+  91	[NO LABEL]	root	fruits,berries,ice_cream_flavors,ice_cream_parlor
+  66070	(June name)	root	moon_phases_and_moods
+-- mango
+  95	[NO LABEL]	root	fruits,tropical_fruits,stone_fruits,foods_you_peel
+  65116	(Indian tangy)	root	pickles_and_preserves
+-- cottage
+  116	[NO LABEL]	root	buildings_to_live_in,buildings,accommodation,house_styles
+  64999	(curd type)	root	cheeses,soft_cheeses
+-- sheep
+  151	[NO LABEL]	root	farm_animals,domestic_animals,hoofed_mammals,irregular_plurals
+  65004	(dairy herd)	root	types_of_milk
+-- donkey
+  158	[NO LABEL]	root	farm_animals,domestic_animals,horses,hoofed_mammals
+  65003	(dairy herd)	root	types_of_milk
+-- titanium
+  212	[NO LABEL]	root	metals,metallic_colors,hard_materials,chemical_elements
+  66140	(pigment)	root	shades_of_white
+-- labrador
+  255	[NO LABEL]	root	dog_breeds,words_named_after_places,sporting_dogs
+  65535	(North Atlantic waters)	root	oceans_and_seas
+-- bulldog
+  257	[NO LABEL]	root	dog_breeds
+  65199	(fish-catching)	root	bats
+  65447	(aggressive insect)	root	ants_and_termites
+-- cranberry
+  354	[NO LABEL]	root	fruits,berries,shades_of_red,colors_named_after_foods
+  65088	(festive tart)	root	sauces_and_condiments
+-- gooseberry
+  366	[NO LABEL]	root	fruits,berries,double_letters,thorny_plants
+  65024	(fruit filling)	root	pies_and_tarts
+-- onion
+  393	[NO LABEL]	root	vegetables,root_vegetables,onion_family,pizza_toppings
+  65108	(sour cream)	root	dips
+-- spinach
+  398	[NO LABEL]	root	vegetables,superfoods,leafy_greens,pizza_toppings
+  65109	(creamy green)	root	dips
+-- artichoke
+  429	[NO LABEL]	root	vegetables,words_from_italian,words_from_arabic,bitter_foods
+  65103	(baked creamy)	root	dips
+-- ham
+  463	[NO LABEL]	root	meat_and_seafood,cured_meats,pizza_toppings,in_the_fridge
+  65790	(amateur broadcasting)	root	radio_words
+-- egg
+  518	[NO LABEL]	root	dairy_and_eggs,insect_life_cycle,pizza_toppings,foods_with_shells
+  65051	(made with yolk)	root	noodles
+-- yogurt
+  522	[NO LABEL]	root	dairy_and_eggs,healthy_snacks,breakfast_foods,lunchbox
+  65102	(tangy white)	root	salad_dressings
+-- flatbread
+  574	[NO LABEL]	root	breads_and_baking,breads,flatbreads
+  65151	(thin crisp base)	root	pizza_styles
+-- ice cream
+  604	[NO LABEL]	root	desserts_and_sweets,frozen_desserts,frozen_foods,birthdays
+  65719	(mobile dessert vendor)	root	truck_types
+-- custard
+  615	[NO LABEL]	root	desserts_and_sweets,smooth_things,yellow_things,creamy_foods
+  65020	(baked custard)	root	pies_and_tarts
+-- spaghetti
+  655	[NO LABEL]	root	pasta_rice_and_grains,pasta_shapes,words_from_italian,long_things
+  64989	(stringy gourd)	root	squashes
+-- semolina
+  693	[NO LABEL]	root	pasta_rice_and_grains,flours
+  65041	(dessert)	root	puddings
+-- basil
+  713	[NO LABEL]	root	herbs_spices_and_sauces,herbs,pizza_toppings,green_things
+  65492	(herb blossom)	root	edible_flowers
+-- rosemary
+  716	[NO LABEL]	root	herbs_spices_and_sauces,herbs,christmas_plants,anzac_day
+  65493	(herb blossom)	root	edible_flowers
+-- tahini
+  766	[NO LABEL]	root	herbs_spices_and_sauces,edible_seeds,sauces_and_condiments,spreads
+  65101	(sesame)	root	salad_dressings
+-- miso
+  767	[NO LABEL]	root	herbs_spices_and_sauces,fermented_foods,umami_foods,soups
+  65100	(umami)	root	salad_dressings
+-- soup
+  797	[NO LABEL]	root	dishes,canned_foods,cozy_things,courses_of_a_meal
+  65065	(filled with broth)	root	dumplings
+-- salad
+  798	[NO LABEL]	root	dishes,courses_of_a_meal,pasta_dishes
+  65146	(cold mayo)	root	potato_dishes
+-- sushi
+  800	[NO LABEL]	root	dishes,seafood_dishes,asian_food,words_from_japanese
+  65072	(short-grain)	root	rice_varieties
+-- wine
+  875	[NO LABEL]	root	drinks,blank_berry,ice_blank,shades_of_red
+  66151	(stemware)	root	things_made_of_glass
+-- sake
+  902	[NO LABEL]	root	drinks,rhymes_with_cake,words_from_japanese,national_spirits
+  65126	(rice-wine)	root	oils_and_vinegars
+-- squirrel
+  990	[NO LABEL]	root	mammals,rodents,woodland_animals,city_animals
+  65183	(tiny primate)	root	monkeys
+-- beaver
+  1010	[NO LABEL]	root	mammals,national_symbols,rodents,north_american_animals
+  66057	(November name)	root	moon_phases_and_moods
+-- cuckoo
+  1088	[NO LABEL]	root	birds,migrating_animals,animal_sounds,rhymes_with_blue
+  65846	(chiming novelty timepiece)	root	clocks_and_calendars,clock_types
+-- turtle
+  1142	[NO LABEL]	root	reptiles_and_amphibians,turtles_and_tortoises,pets,hibernating_animals
+  65296	(summer migrant)	root	pigeons_and_doves
+-- sturgeon
+  1240	[NO LABEL]	root	fish,freshwater_fish,fish_to_eat,fish_from_rivers_and_lakes
+  66071	(August name)	root	moon_phases_and_moods
+-- seaweed
+  1290	[NO LABEL]	root	sea_life,seaweeds,superfoods,foraging_finds
+  65144	(crispy sheets)	root	snacks
+-- dog
+  1435	[NO LABEL]	root	domestic_animals,pets,male_animals,chinese_zodiac
+  66089	(mechanical pet)	root	robots
+-- poppy
+  1701	[NO LABEL]	root	flowers,girls_names,names_that_are_flowers,wildflowers
+  64988	(bagel topping)	root	edible_seeds
+-- shed
+  1831	[NO LABEL]	root	garden,buildings,outside_the_house,garden_features
+  65968	(single-slope cover)	root	roof_styles
+-- pond
+  1841	[NO LABEL]	root	garden,garden_features,bodies_of_water,things_that_reflect
+  65331	(freshwater)	root	turtles_and_tortoises
+-- spade
+  1852	[NO LABEL]	root	garden,things_with_handles,garden_tools,beach_gear
+  65735	(spade-shaped style)	root	beard_styles
+-- hill
+  1896	[NO LABEL]	root	landscapes,foot_blank
+  66015	(highland brute)	root	giants_of_legend
+-- cave
+  1913	[NO LABEL]	root	landscapes,stone_age,blank_man,blank_fish
+  65368	(cave-dwelling amphibian)	root	salamanders_and_newts
+-- beach
+  1915	[NO LABEL]	root	landscapes,blank_ball,coastal_features
+  65694	(sun shelter for sand)	root	tent_types
+-- swamp
+  1924	[NO LABEL]	root	landscapes,wetlands,soggy_places
+  65207	(bayou-dwelling)	root	rabbits_and_hares
+-- marsh
+  1925	[NO LABEL]	root	landscapes,wetlands,soggy_places
+  65187	(swamp-dwelling)	root	deer
+  65204	(wetland swimmer)	root	rabbits_and_hares
+  65217	(reedbed)	root	owls
+  65358	(European marsh amphibian)	root	frogs_and_toads
+-- storm
+  1971	[NO LABEL]	root	weather,fire_blank,rain_blank,snow_blank
+  65997	(extra outer pane)	root	window_styles
+  66136	(cloud tint)	root	shades_of_gray
+-- frost
+  1981	[NO LABEL]	root	weather,snow_and_ice,signs_of_autumn,signs_of_winter
+  66014	(icy Norse race)	root	giants_of_legend
+-- snowflake
+  1985	[NO LABEL]	root	weather,snow_and_ice,lightweight_things,ice_words
+  65904	(cut paper decoration)	root	paper_crafts
+-- rainy
+  2022	[NO LABEL]	form of rain	
+  65842	(wet spell)	root	season_words
+-- quartz
+  2061	[NO LABEL]	root	rocks_and_minerals,words_from_german,gemstones,minerals
+  65854	(battery-driven movement)	root	clock_types
+-- Singapore
+  2187	[NO LABEL]	root	countries,asian_countries,island_nations,tiny_countries
+  65055	(curried vermicelli)	root	noodles,noodle_dishes
+-- Moscow
+  2226	[NO LABEL]	root	cities,capital_cities,european_cities,olympic_host_cities
+  65687	(Russian subway)	root	metro_systems
+-- Delhi
+  2250	[NO LABEL]	root	cities,asian_cities,places_after_new,indian_cities
+  65686	(Indian subway)	root	metro_systems
+-- Prague
+  2255	[NO LABEL]	root	cities,capital_cities,european_cities,european_capitals
+  65591	(Czech fortress)	root	famous_castles
+-- Seoul
+  2266	[NO LABEL]	root	cities,capital_cities,asian_cities,olympic_host_cities
+  65689	(Korean subway)	root	metro_systems
+-- Brussels
+  2290	[NO LABEL]	root	cities,capital_cities,european_cities,foods_named_after_places
+  65665	(Belgian carrier)	root	european_airlines
+-- Golden Gate
+  2326	[NO LABEL]	root	landmarks,famous_bridges,us_landmarks
+  65616	(San Francisco green space)	root	famous_parks
+-- Acropolis
+  2334	[NO LABEL]	root	landmarks,ancient_civilizations,ancient_greece,greek_landmarks
+  65599	(Athens museum)	root	famous_museums
+-- map
+  2395	[NO LABEL]	root	maps_and_globes,navigation_tools,things_you_read,classroom_items
+  65326	(map-patterned)	root	turtles_and_tortoises
+-- hospital
+  2466	[NO LABEL]	root	buildings,medicine,road_signs,public_buildings
+  65815	(adjustable medical type)	root	beds
+-- pagoda
+  2504	[NO LABEL]	root	buildings,architecture,asian_temple_features,places_of_worship
+  65965	(tiered curved cover)	root	roof_styles
+-- belfry
+  2514	[NO LABEL]	root	buildings,church_parts,towers_and_skyscrapers
+  66011	(wheeled assault structure)	root	siege_weapons
+-- bus
+  2646	[NO LABEL]	root	public_transportation,air_blank,things_with_wheels,reversible_words
+  65627	(transit chart)	root	kinds_of_maps
+-- school bus
+  2655	[NO LABEL]	root	public_transportation,special_vehicles,yellow_things,truck_types
+  66129	(road tint)	root	shades_of_yellow
+-- passenger
+  2663	[NO LABEL]	root	public_transportation,on_a_bus,kinds_of_travelers
+  65289	(extinct)	root	pigeons_and_doves
+-- aircraft
+  2710	[NO LABEL]	root	air_travel,aircraft_types,flying_machines,inventions
+  66101	(flying power)	root	engines
+-- harbor
+  2804	[NO LABEL]	root	boats_and_ships,ports_and_harbors,bodies_of_water,tourist_attractions
+  65413	(pinniped)	root	seals_and_sea_lions
+-- railway
+  2855	[NO LABEL]	regional of railroad	
+  65953	(train crossing)	root	bridge_types
+  66108	(track and trains)	root	engineering_fields
+-- expedition
+  2923	[NO LABEL]	root	journeys,exploration,polar_exploration,mountaineering_words
+  65696	(extreme-weather shelter)	root	tent_types
+-- glamping
+  2999	[NO LABEL]	root	accommodation,portmanteau_words
+  65698	(luxury camping shelter)	root	tent_types
+-- tarp
+  3032	[NO LABEL]	root	campsite,emergency_supplies,camping_gear,street_market
+  65704	(tarpaulin shelter)	root	tent_types
+-- hammock
+  3044	[NO LABEL]	root	campsite,sleep,beds,words_from_spanish
+  65699	(hanging shelter)	root	tent_types
+-- infant
+  3525	[NO LABEL]	root	babies_and_birth,ages_and_stages
+  65774	(ages five to seven)	root	school_types
+-- midwife
+  3529	[NO LABEL]	root	babies_and_birth,jobs,pregnancy_words,childbirth_words
+  65359	(father-carrying-eggs amphibian)	root	frogs_and_toads
+-- towel
+  3755	[NO LABEL]	root	personal_care,bath_time,turkish_bath,bathroom
+  66161	(kitchen roll)	root	things_made_of_paper
+-- imam
+  4287	[NO LABEL]	root	religion,honorifics,religious_leaders,islam_words
+  65594	(Isfahan plaza)	root	famous_squares
+-- devil
+  4296	[NO LABEL]	root	religion,dress_up_costumes,blank_fish,reversible_words
+  65403	(manta-like fish)	root	rays_and_eels
+-- umbrella
+  4962	[NO LABEL]	root	accessories,in_a_handbag,rain_gear,things_with_handles
+  65705	(umbrella-style shelter)	root	tent_types
+-- gliding
+  5635	[NO LABEL]	root	adventure_and_outdoor_sports,air_sports
+  65728	(sliding articulation)	root	joints
+-- backpacking
+  5636	[NO LABEL]	root	adventure_and_outdoor_sports,outdoor_activities,activities_on_foot
+  65693	(lightweight hiking shelter)	root	tent_types
+-- chess
+  5713	[NO LABEL]	root	table_games,medieval_pastimes,blank_board,words_from_persian
+  65019	(Southern custard)	root	pies_and_tarts
+-- weaving
+  5850	[NO LABEL]	root	hobbies_and_crafts,crafts,yarn_and_thread_crafts
+  65905	(interlaced paper strips)	root	paper_crafts
+-- origami
+  5852	[NO LABEL]	root	hobbies_and_crafts,blank_paper,words_from_japanese,things_that_fold
+  65856	(folding sheets)	root	paper_goods
+-- Barbie
+  5925	[NO LABEL]	root	toys_and_play,pink_things,toys,dolls_and_figures
+  66133	(doll tint)	root	shades_of_pink
+-- chorus
+  6060	[NO LABEL]	root	music_words,blank_line
+  65341	(singing)	root	frogs_and_toads
+-- ensemble
+  6080	[NO LABEL]	root	music_words,musicals_words
+  65512	(model runs)	root	forecast_words
+-- lattice
+  6610	[NO LABEL]	root	architecture,patterns
+  65990	(diamond-pane style)	root	window_styles
+-- Pompeii
+  6874	[NO LABEL]	root	archaeology,ancient_rome,discoveries,volcano_words
+  65465	(deep-sea invertebrate)	root	worms
+-- monster
+  6916	[NO LABEL]	root	mythology,things_with_eyes,toys_and_characters
+  65722	(oversized-wheel show vehicle)	root	truck_types
+-- computer
+  7250	[NO LABEL]	root	computers,home_office,things_with_keys,things_with_screens
+  66103	(hardware design)	root	engineering_fields
+-- laptop
+  7251	[NO LABEL]	root	computers,home_office,home_electronics,things_you_plug_in
+  66096	(notebook power)	root	battery_types
+-- software
+  7262	[NO LABEL]	root	computers,software_words
+  66109	(programming)	root	engineering_fields
+-- lever
+  7385	[NO LABEL]	root	engineering,things_with_arms,simple_machines,machine_parts
+  65867	(lever-tumbler type)	root	locks_and_keys
+-- concrete
+  7396	[NO LABEL]	root	engineering,building_materials,shades_of_gray,man_made_materials
+  65715	(cement-mixing hauler)	root	truck_types
+-- girder
+  7403	[NO LABEL]	root	engineering,building_materials,things_that_rust,bridge_parts
+  65946	(steel beam span)	root	bridge_types
+-- Hebrew
+  7530	[NO LABEL]	root	languages,middle_eastern_languages,ancient_languages,judaism_words
+  65849	(Jewish dating system)	root	clocks_and_calendars
+-- Zulu
+  7553	[NO LABEL]	root	languages,african_languages,phonetic_alphabet,rhymes_with_blue
+  66008	(British-Zulu conflict)	root	wars_and_battles
+-- Navajo
+  7561	[NO LABEL]	root	languages,languages_of_the_americas,native_north_american_languages
+  66117	(wartime cipher)	root	codes_and_signals
+-- Mongolian
+  7581	[NO LABEL]	root	languages,asian_languages,languages_of_china
+  65471	(steppe equine)	root	horse_breeds
+-- cinereous
+  7739	[NO LABEL]	root	colors
+  65236	(large scavenger)	root	vultures
+-- gopher
+  7848	[NO LABEL]	root	rodents,burrowing_animals,garden_pests
+  65304	(burrowing rodent-eater)	root	constrictor_snakes
+  65320	(burrowing shelled)	root	turtles_and_tortoises
+-- suet
+  8455	[NO LABEL]	root	birdwatching_words,butcher_shop,baking_ingredients
+  65067	(beef-fat)	root	dumplings
+-- proboscis
+  9132	[NO LABEL]	root	insect_body_parts,animal_body_parts,bug_parts
+  65181	(long-nosed)	root	monkeys
+-- packhorse
+  9458	[NO LABEL]	root	working_animals
+  65951	(narrow stone span)	root	bridge_types
+-- Brumby
+  9486	[NO LABEL]	root	horse_breeds,horse_family
+  65476	(Australian feral)	root	horse_family
+-- pup
+  10133	[NO LABEL]	root	baby_animals,palindromes,seals_and_sea_lions
+  65702	(tiny two-person shelter)	root	tent_types
+-- gypsy jazz
+  10874	[NO LABEL]	root	european_folk_music
+  65912	(Django-style guitar)	root	guitar_types
+-- bollywood
+  10905	[NO LABEL]	root	world_music_styles
+  65922	(Hindi film songs)	root	asian_music_styles
+-- hi-fi
+  11320	[NO LABEL]	root	music_players,home_electronics,audio_gear,things_that_play_music
+  65924	(all-in-one stereo)	root	music_players
+-- pedestal
+  12039	[NO LABEL]	root	sculpture_words
+  65810	(drawer-sided type)	root	tables_and_desks
+-- ghost
+  12529	[NO LABEL]	root	dress_up_costumes,ghosts_and_spirits,halloween,blank_ship
+  65201	(pale Australian)	root	bats
+  65454	(tiny insect)	root	ants_and_termites
+  66138	(pale tint)	root	shades_of_white
+-- anime
+  12624	[NO LABEL]	root	tv_genres,anime_and_manga_words,words_from_japanese
+  65921	(anime soundtrack genre)	root	asian_music_styles
+-- blister
+  14331	[NO LABEL]	root	skin_words,injuries,sports_injuries,things_that_pop
+  65424	(toxic insect)	root	beetles
+-- hearing aid
+  14704	[NO LABEL]	root	hearing_words,medical_equipment,things_that_run_on_batteries,wearable_tech
+  66095	(tiny cell)	root	battery_types
+-- audio
+  14713	[NO LABEL]	root	hearing_words,blank_book
+  66102	(recording work)	root	engineering_fields
+-- smooth
+  14802	[NO LABEL]	root	touch_words,texture_words
+  65385	(smooth water amphibian)	root	salamanders_and_newts
+-- sticky
+  14804	[NO LABEL]	root	touch_words,hot_weather_words,words_for_hot,hidden_insects
+  65062	(glutinous)	root	rice_dishes,rice_varieties
+-- slimy
+  14805	[NO LABEL]	root	touch_words,texture_words
+  65384	(slimy amphibian)	root	salamanders_and_newts
+-- wet
+  14811	[NO LABEL]	root	touch_words
+  65843	(tropical rainy spell)	root	season_words
+-- silky
+  14822	[NO LABEL]	root	touch_words,texture_words,terriers
+  65401	(oceanic fish)	root	sharks
+-- black eye
+  14992	[NO LABEL]	root	injuries,sports_injuries
+  66074	(M64)	root	galaxies_and_nebulae
+-- peanut
+  17350	[NO LABEL]	root	nuts,andean_crops,foods_with_shells,things_with_shells
+  65094	(satay-style)	root	asian_sauces
+  65464	(marine invertebrate)	root	worms
+-- black bean
+  17526	[NO LABEL]	form of black	
+  65093	(fermented soy)	root	asian_sauces
+-- speculoos
+  18156	[NO LABEL]	root	cookies
+  65114	(spiced biscuit)	root	spreads
+-- biscoff
+  18157	[NO LABEL]	root	cookies
+  65110	(caramelized biscuit)	root	spreads
+-- treacle
+  18468	[NO LABEL]	root	sweeteners,sticky_things,sweet_foods
+  65027	(syrup filling)	root	pies_and_tarts
+-- congee
+  18572	[NO LABEL]	root	rice_dishes,breakfast_foods,chinese_food,east_asian_dishes
+  65060	(savory porridge)	root	rice_dishes
+-- satay
+  19121	[NO LABEL]	root	street_food,asian_food,foods_on_a_stick,thai_food
+  65096	(peanut dip)	root	asian_sauces
+-- barbecue
+  19767	[NO LABEL]	root	cooking_methods,outside_the_house,words_from_spanish,words_from_native_american_languages
+  65074	(smoky glaze)	root	herbs_spices_and_sauces,sauces_and_condiments
+-- dessert
+  20083	[NO LABEL]	root	courses_of_a_meal,restaurant
+  65173	(sweet-style)	root	wines
+-- plate
+  20137	[NO LABEL]	root	table_setting,dining_room,foot_blank,home_blank
+  66009	(full steel plates)	root	armor
+-- tonkatsu
+  20230	[NO LABEL]	root	deep_fried_foods,japanese_food
+  65097	(fruity Japanese brown)	root	asian_sauces
+-- Hatshepsut
+  20353	[NO LABEL]	root	ancient_egypt,famous_women_in_history,pharaohs,famous_queens
+  65610	(Egyptian landmark)	root	famous_temples
+-- Inca
+  20433	[NO LABEL]	root	inca_empire,andes,words_from_south_american_languages,empires
+  65285	(scaled)	root	pigeons_and_doves
+-- jewel
+  21206	[NO LABEL]	root	treasure,blank_fish,names_that_are_gems,precious_materials
+  65427	(metallic insect)	root	beetles
+-- Hohenzollern
+  22872	[NO LABEL]	root	dynasties,royal_houses
+  65587	(German fortress)	root	famous_castles
+-- car
+  23150	[NO LABEL]	root	garage,things_with_keys,things_with_wheels,things_with_horns
+  65788	(vehicle stereo)	root	radio_words
+  65906	(miniature vehicle)	root	toys_and_play,toys
+  66093	(starter power)	root	battery_types
+-- letterbox
+  23244	[NO LABEL]	root	windows_and_doors,parts_of_a_door,post_office,street_furniture
+  65785	(door opening for post)	root	mail_words
+-- carpet
+  23501	[NO LABEL]	root	soft_furnishings,rugs_and_carpets,blank_bag
+  65398	(bottom-dwelling fish)	root	sharks
+  65425	(household pest)	root	beetles
+-- hardcore
+  24062	[NO LABEL]	root	building_materials
+  65803	(devoted type)	root	fans_and_followers
+-- cellar
+  24075	[NO LABEL]	root	wine_words,parts_of_a_house
+  65440	(web-spinning arachnid)	root	spiders
+-- palazzo
+  24171	[NO LABEL]	root	house_styles
+  65831	(wide-leg trousers)	root	pants_and_shorts
+-- epaulette
+  24964	[NO LABEL]	root	clothing_parts
+  65399	(walking reef fish)	root	sharks
+-- Christmas tree
+  25007	[NO LABEL]	root	evergreen_trees,green_things,new_zealand_plants
+  65462	(spiral-gilled invertebrate)	root	worms
+-- sleigh
+  25016	[NO LABEL]	root	christmas,blank_bell,words_from_dutch,animal_powered_travel
+  65819	(curved-ends type)	root	beds
+-- harvest
+  25084	[NO LABEL]	root	thanksgiving,season_words,blank_time,gardening_verbs
+  66065	(autumn)	root	moon_phases_and_moods
+-- millennium
+  25345	[NO LABEL]	root	time_units,double_letters
+  65562	(Thames crossing)	root	famous_bridges
+-- twilight
+  25419	[NO LABEL]	root	times_of_day
+  65552	(depth layer)	root	ocean_zones
+-- jar
+  25474	[NO LABEL]	root	containers,things_with_lids,things_with_necks,things_made_of_glass
+  65861	(container wax light)	root	candle_words
+-- Punic
+  25956	[NO LABEL]	root	ancient_languages
+  66006	(Rome versus Carthage)	root	wars_and_battles
+-- Mayan
+  25963	[NO LABEL]	root	languages_of_the_americas,empires
+  65852	(Mesoamerican dating system)	root	clocks_and_calendars
+-- report
+  26285	[NO LABEL]	root	things_you_read
+  66115	(experiment write-up)	root	science_lab
+-- cluster
+  27957	[NO LABEL]	root	blank_fly,star_blank,flies
+  65974	(grouped shafts)	root	column_styles
+-- town
+  27969	[NO LABEL]	root	blank_house,blank_ship,home_blank,kinds_of_settlements
+  66149	(central plaza)	root	square_things
+-- hot
+  27978	[NO LABEL]	root	blank_house,blank_line,blank_pot,words_for_hot
+  65076	(chili-based)	root	herbs_spices_and_sauces,sauces_and_condiments
+-- counting
+  27987	[NO LABEL]	root	blank_house
+  66079	(natural)	root	number_types
+-- public
+  27989	[NO LABEL]	root	blank_house,blank_works
+  65791	(publicly funded broadcaster)	root	radio_words
+-- middle
+  28061	[NO LABEL]	root	blank_man
+  65738	(central digit)	root	fingers
+  65775	(ages nine to thirteen)	root	school_types
+  65797	(center tier)	root	social_classes
+-- best
+  28062	[NO LABEL]	root	blank_man
+  65764	(closest pal)	root	family_and_friends,words_for_friend
+-- mail
+  28070	[NO LABEL]	root	blank_man,blank_box,blank_bag,black_blank
+  65721	(postal hauler)	root	truck_types
+-- flying
+  28126	[NO LABEL]	root	blank_fish
+  65347	(gliding amphibian)	root	frogs_and_toads
+-- dead
+  28190	[NO LABEL]	root	blank_line,blank_wood
+  65529	(salt lake waters)	root	oceans_and_seas
+-- bean
+  28259	[NO LABEL]	root	blank_bag,coffee_words
+  65104	(refried)	root	dips
+-- mixed
+  28270	[NO LABEL]	root	blank_bag
+  65078	(British baking)	root	spice_blends
+-- passing
+  28285	[NO LABEL]	root	blank_bell
+  65876	(past-the-opponent)	root	tennis_shots
+-- antique
+  28308	[NO LABEL]	root	blank_shop,words_for_old
+  66137	(aged tint)	root	shades_of_white
+-- waste
+  28321	[NO LABEL]	root	blank_paper,things_you_do_with_money
+  66114	(burned refuse)	root	energy_sources
+-- construction
+  28329	[NO LABEL]	root	blank_paper
+  65825	(heavy-duty type)	root	adhesives
+-- field
+  28409	[NO LABEL]	root	snow_blank,air_blank,ice_blank,meadow
+  65602	(Chicago museum)	root	famous_museums
+-- street
+  28439	[NO LABEL]	root	back_blank,road_types
+  65624	(urban chart)	root	maps_and_globes
+  65766	(outdoor neighbourhood event)	root	kinds_of_party
+-- time
+  28515	[NO LABEL]	root	air_blank,life_blank,over_blank,reversible_words
+  65873	(timed vault type)	root	locks_and_keys
+-- hopper
+  28575	[NO LABEL]	root	sand_blank
+  65989	(bottom-hinged pane)	root	window_styles
+-- contact
+  28582	[NO LABEL]	root	eye_blank
+  66030	(touch)	root	forces
+-- alpine
+  28721	[NO LABEL]	root	hidden_trees
+  65365	(mountain amphibian)	root	salamanders_and_newts
+-- pygmy
+  29076	[NO LABEL]	root	no_vowels
+  65206	(tiny sagebrush)	root	rabbits_and_hares
+  65220	(diminutive hunter)	root	owls
+-- warder
+  29142	[NO LABEL]	root	anagrams_of_each_other
+  65769	(jail officer)	root	prison_words
+-- martial
+  29518	[NO LABEL]	root	words_from_mythology
+  65228	(Africa's largest)	root	eagles
+-- Charles
+  29672	[NO LABEL]	root	boys_names
+  65557	(Prague crossing)	root	famous_bridges
+-- Carolina
+  29897	[NO LABEL]	root	names_that_are_places
+  66120	(pale sky tint)	root	shades_of_blue
+-- New Forest
+  30216	[NO LABEL]	root	famous_forests
+  65472	(native equine)	root	pony_breeds
+-- logging
+  30236	[NO LABEL]	form of log	
+  65720	(timber hauler)	root	truck_types
+-- gulf
+  30959	[NO LABEL]	root	bodies_of_water,coastal_features
+  66002	(Iraq-Kuwait conflict)	root	wars_and_battles
+-- cadmium
+  31707	[NO LABEL]	root	metals,chemical_elements
+  66126	(pigment)	root	shades_of_yellow,shades_of_orange
+-- dirt
+  31977	[NO LABEL]	root	soil_words,brown_things
+  65644	(unpaved)	root	road_types
+-- stratosphere
+  32010	[NO LABEL]	root	layers_of_the_atmosphere
+  65574	(Las Vegas landmark)	root	famous_towers
+-- Greenland
+  32063	[NO LABEL]	root	polar_regions,famous_islands,flags_with_crosses,red_and_white_flags
+  65400	(Arctic fish)	root	sharks
+  65470	(Arctic breed)	root	working_dogs
+-- Bedouin
+  32118	[NO LABEL]	root	oasis
+  65695	(nomadic goat-hair shelter)	root	tent_types
+-- happy
+  32663	[NO LABEL]	root	happy_words
+  66080	(digit sum)	root	number_types
+-- peaceful
+  32827	[NO LABEL]	root	calm_words
+  65801	(nonviolent)	root	protest_words
+-- Westminster
+  33601	[NO LABEL]	root	british_politics
+  65580	(Parliament building)	root	famous_palaces
+-- Malaysia
+  35689	[NO LABEL]	root	asian_countries,flags_with_stars,flags_with_crescents,countries_ending_in_ia
+  65663	(national carrier)	root	airlines,asian_airlines
+-- Naples
+  35815	[NO LABEL]	root	european_cities,port_cities,italian_cities,ports_in_europe
+  66128	(pigment)	root	shades_of_yellow
+-- Osaka
+  35880	[NO LABEL]	root	asian_cities,japanese_cities
+  65590	(Japanese fortress)	root	famous_castles
+-- Luxor
+  36005	[NO LABEL]	root	african_cities,ancient_sites_of_africa
+  65609	(Egyptian landmark)	root	famous_temples
+-- Pergamon
+  36095	[NO LABEL]	root	ancient_cities,turkish_landmarks,ancient_sites_of_turkey
+  65605	(Berlin museum)	root	famous_museums
+-- Surinam
+  36146	[NO LABEL]	root	countries,south_american_countries,flags_with_stars
+  65362	(flat-bodied amphibian)	root	frogs_and_toads
+-- California
+  36160	[NO LABEL]	root	us_states,flags_with_animals
+  65367	(West Coast amphibian)	root	salamanders_and_newts
+  65408	(pinniped)	root	seals_and_sea_lions
+-- Karakum
+  36560	[NO LABEL]	root	famous_deserts
+  65682	(Turkmen waterway)	root	famous_canals
+-- Royal Gorge
+  36723	[NO LABEL]	root	famous_canyons_and_gorges
+  65565	(Colorado crossing)	root	famous_bridges
+-- Danube
+  36774	[NO LABEL]	root	famous_rivers,european_rivers
+  65389	(Danube fish)	root	salmon_and_trout
+-- Severn
+  36808	[NO LABEL]	root	famous_rivers,european_rivers,british_and_irish_rivers
+  65566	(Welsh crossing)	root	famous_bridges
+-- Oresund
+  36929	[NO LABEL]	root	straits_and_canals
+  65563	(Denmark Sweden crossing)	root	famous_bridges
+-- Deir el-Bahri
+  37500	[NO LABEL]	root	egyptian_landmarks
+  65611	(Egyptian landmark)	synonym of Hatshepsut	
+-- El Castillo
+  37691	[NO LABEL]	root	mexican_landmarks,maya_and_aztec_sites
+  65612	(Chichen Itza)	root	famous_temples
+-- Vergina
+  37779	[NO LABEL]	root	greek_landmarks,ancient_sites_of_europe
+  65638	(Macedonian emblem)	root	flags_with_a_sun
+-- northeast
+  37912	[NO LABEL]	root	compass_directions,intercardinal_directions
+  65513	(rain-bringing wind)	root	monsoon_season
+-- Australian
+  38014	[NO LABEL]	root	nationalities,terriers
+  65256	(Outback corvid)	root	crows_and_ravens
+  65406	(pinniped)	root	seals_and_sea_lions
+-- Normal
+  38139	[NO LABEL]	root	places_that_are_also_words
+  66033	(perpendicular)	root	forces
+-- checkered
+  38904	[NO LABEL]	root	patterns
+  65636	(race signal)	root	flag_words
+-- marbled
+  38912	[NO LABEL]	root	patterns
+  65378	(marbled water amphibian)	root	salamanders_and_newts
+-- little
+  39268	[NO LABEL]	root	words_for_small
+  65216	(Athena's)	root	owls
+  65737	(smallest digit)	root	fingers
+-- carrion
+  39716	[NO LABEL]	root	things_that_smell_bad
+  65257	(black corvid scavenger)	root	crows_and_ravens
+-- fuel
+  39909	[NO LABEL]	root	fire_words
+  65718	(petrol-carrying hauler)	root	truck_types
+-- dusky
+  40053	[NO LABEL]	root	words_for_dark
+  65186	(leaping)	root	whales_and_dolphins
+  65370	(dusky amphibian)	root	salamanders_and_newts
+-- ignition
+  40167	[NO LABEL]	root	things_with_keys,launch_pad,dashboard_items
+  65866	(engine-start type)	root	locks_and_keys
+-- bullseye
+  40210	[NO LABEL]	root	things_with_eyes,archery_terms,darts_terms,scoring_words
+  65986	(round glass pane)	root	window_styles
+-- drag
+  40620	[NO LABEL]	root	forces,computer_actions
+  65656	(ski tow)	root	cable_cars_and_lifts
+-- radiation
+  40811	[NO LABEL]	root	nuclear_words,nuclear_power_plant
+  66146	(hazard sign)	root	symbols
+-- angle
+  41554	[NO LABEL]	root	geometry
+  65648	(slanted bays)	root	parking_words
+-- proxy
+  42443	[NO LABEL]	root	networking
+  66012	(indirect conflict)	root	cold_war
+-- controller
+  45670	[NO LABEL]	root	gaming_hardware
+  65658	(runway traffic)	root	air_travel
+-- Yanga
+  46299	[NO LABEL]	root	african_soccer_clubs
+  65911	(Dar es Salaam club)	root	african_soccer_clubs
+-- drafting
+  46705	[NO LABEL]	root	motor_racing,cycling_words
+  65805	(architect's type)	root	tables_and_desks
+-- Hartsfield-Jackson
+  47275	[NO LABEL]	root	famous_airports
+  65666	(Georgia hub)	root	famous_airports
+-- pedalo
+  47434	[NO LABEL]	regional of pedalo	
+  65668	(pedal-powered)	root	boat_types,small_boats,pleasure_boats
+-- diving bell
+  47659	[NO LABEL]	root	submarine_words
+  65441	(air-bubble arachnid)	root	spiders
+-- Harley
+  47908	[NO LABEL]	root	motorcycle_brands
+  65598	(London medical strip)	root	famous_streets
+-- tourist
+  48144	[NO LABEL]	root	kinds_of_travelers,sightseeing_words
+  65631	(visitor chart)	root	kinds_of_maps
+-- softshell
+  48642	[NO LABEL]	root	hiking_gear
+  65335	(leathery-shelled)	root	turtles_and_tortoises
+-- Lotte World
+  48949	[NO LABEL]	root	famous_theme_parks
+  65571	(Seoul skyscraper)	root	famous_towers
+-- Stirling
+  49693	[NO LABEL]	root	engines
+  65592	(Scottish fortress)	root	famous_castles
+-- solar
+  49749	[NO LABEL]	root	energy_sources,energy_types,renewable_sources
+  66098	(panel storage)	root	battery_types
+-- tidal
+  49751	[NO LABEL]	root	energy_sources,energy_types,renewable_sources
+  66034	(moon pull)	root	forces
+-- sunlight
+  49762	[NO LABEL]	root	energy_sources,renewable_sources
+  65551	(depth layer)	root	ocean_zones
+-- Van Gogh
+  52150	[NO LABEL]	root	impressionist_painters,dutch_painters
+  65606	(Amsterdam museum)	root	famous_museums
+-- horiatiki
+  53320	[NO LABEL]	root	greek_food
+  65158	(tomato and feta)	root	greek_food
+-- sulu
+  55420	[NO LABEL]	root	pacific_island_clothing
+  65543	(Philippine waters)	root	oceans_and_seas
+-- goblet
+  55832	[NO LABEL]	root	drinking_vessels,things_made_of_glass
+  65916	(darbuka-style drum)	root	drums
+-- eastern
+  56033	[NO LABEL]	root	hidden_birds
+  65371	(eastern amphibian)	root	salamanders_and_newts
+-- Leeds
+  56861	[NO LABEL]	root	british_cities
+  65588	(Kent fortress)	root	famous_castles
+-- Oxford
+  56867	[NO LABEL]	root	british_cities
+  66122	(university tint)	root	shades_of_blue
+-- Heidelberg
+  56908	[NO LABEL]	root	german_cities
+  65586	(German ruin)	root	famous_castles
+-- Matsumoto
+  57014	[NO LABEL]	root	japanese_cities
+  65589	(Japanese fortress)	root	famous_castles
+-- Mysore
+  57032	[NO LABEL]	root	indian_cities
+  65579	(Indian royal residence)	root	famous_palaces
+-- Timor
+  57225	[NO LABEL]	root	indonesian_islands
+  65544	(Australian waters)	root	oceans_and_seas
+-- Vatican
+  57423	[NO LABEL]	root	rome_landmarks,holy_cities
+  65607	(papal collection)	root	famous_museums
+-- pastry
+  57462	[NO LABEL]	root	bakery
+  65032	(soft wheat)	root	flours
+-- working
+  62383	[NO LABEL]	root	blank_paper
+  65800	(labor tier)	root	social_classes
+-- Fowler's
+  62766	[NO LABEL]	root	body_positions
+  65348	(Fowler's amphibian)	root	frogs_and_toads
+-- humpback
+  63018	[NO LABEL]	root	whales_and_dolphins
+  65948	(steeply arched span)	root	bridge_types
+-- Whitehaven
+  63173	[NO LABEL]	root	famous_beaches
+  65711	(Whitsunday Island shore)	root	beach_destinations
+-- Welland
+  63240	[NO LABEL]	root	straits_and_canals
+  65685	(Ontario waterway)	root	famous_canals
+-- spotted
+  63596	[NO LABEL]	root	owls
+  65293	(speckled)	root	pigeons_and_doves
+  65336	(polka-dot shelled)	root	turtles_and_tortoises
+  65386	(yellow-spotted amphibian)	root	salamanders_and_newts
+  65419	(pinniped)	root	seals_and_sea_lions
+-- markings
+  63890	[NO LABEL]	root	parts_of_a_road
+  65646	(painted lines)	root	parts_of_a_road
+-- Lunar
+  64799	[NO LABEL]	root	new_year,holidays_and_celebrations
+  65851	(moon-based dating system)	root	clocks_and_calendars
+-- Philippine
+  65229	[NO LABEL]	root	eagles
+  65538	(Pacific waters)	root	oceans_and_seas
+-- hooded
+  65238	[NO LABEL]	root	vultures
+  65260	(grey-bodied corvid)	root	crows_and_ravens
+  65415	(pinniped)	root	seals_and_sea_lions
+-- crested
+  65274	[NO LABEL]	root	pigeons_and_doves
+  65369	(crested amphibian)	root	salamanders_and_newts

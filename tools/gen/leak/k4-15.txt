@@ -1,0 +1,266 @@
+T drawing_techniques
+S 12220 | life | art class from a live model | 3
+K 12227 # nobody says tonal alone
+T turkish_arts
+K 52311 # lamp alone is generic
+T pacific_art_words
+K 22748 # rock alone isn't art
+T opera_words
+S 12348 | grand | lavish French style | 3
+K 12340 # bare house means a building
+T puppets
+K 12385 # nobody says hand-and-rod alone
+K 12387 # jester alone is a person
+K 12362 # bare show isn't a puppet
+S 12386 | opera dei pupi | Sicilian marionette art | 5
+T musicals_words
+K 12405 # book means the script
+T film_and_tv
+S 6443 = 6444
+T movie_genres
+K 12595 # B alone means nothing
+T film_words
+S 12659 | stock | raw material for shooting | 4
+T behind_the_camera
+K 12672 # operator alone is vague
+T cartoon_words
+K 12731 # fixed network name
+T award_words
+S 12751 = 12746
+T entertainment_awards
+S 12751 = 12746
+S 52453 | Billboards | music chart prizes | 4
+S 52451 | SAG | actors guild prize | 4
+S 52458 | Saturn | sci-fi prize | 5
+S 52457 | Spirit | indie prize | 5
+T film_festivals
+S 12788 = 12771
+K 12798 # nothing left
+T movie_theater_words
+K 2477 # nothing left
+T special_effects_words
+S 12869 = 12870
+T anime_and_manga_words
+K 13073 # nothing left
+T camera_shots
+S 13151 | cowboy | framing from the thighs up | 5
+S 13131 | drone | aerial footage | 3
+S 13123 | establishing | scene-setting view | 3
+S 13152 | full | head-to-toe framing | 4
+S 13124 | tracking | following movement | 3
+K 13135 # bare two is a number
+T book_genres
+S 13173 | picture | illustrated children's story | 2
+T fairy_tale_characters
+K 6989 # nothing left
+T book_formats
+S 13553 | board | sturdy baby read | 3
+K 13565 # bare coffee table is furniture
+S 13173 | picture | illustrated children's story | 2
+S 13549 | pocket | small-format paperback | 3
+K 13570 # nobody says talking alone
+T fairy_tale_villains
+K 13614 # nobody says wicked alone
+T circus
+S 13689 = 13688
+T magic_show_words
+K 13746 # bare box isn't magic
+T comedy_words
+K 13774 # bare club is a group
+S 13773 | observational | humor about everyday life | 3
+S 6381 = 6380
+T fairground_rides
+K 13797 # dark alone means unlit
+K 13801 # nobody says kiddie alone
+K 13789 # swing alone is playground
+T street_performers
+S 6161 = 6160
+T theme_park_words
+K 13851 # amusement alone is a feeling
+K 13850 # nothing left
+K 13833 # water alone is liquid
+T brazilian_carnival_words
+K 5124 # nothing left
+T bridge_types
+S 14090 | clapper | slab span of stones | 5
+S 14087 | covered | roofed timber span | 3
+S 14098 | floating | span on pontoons | 4
+S 14103 | girder | steel beam span | 4
+S 14104 | hanging | suspended rope span | 3
+S 14096 | humpback | steeply arched span | 3
+S 14100 | log | tree trunk crossing | 3
+S 14099 | movable | span that lifts or swings | 4
+S 14091 | packhorse | narrow stone span | 5
+S 14105 | pedestrian | walkers-only crossing | 3
+S 14106 | railway | train crossing | 3
+S 14089 | rope | strung rope crossing | 2
+S 14094 | stone | masonry span | 3
+S 14097 | tied-arch | arch with a deck tie | 5
+S 14101 | toll | pay-to-cross span | 3
+S 14093 | transporter | gondola-carrying span | 5
+T roof_styles
+S 14118 | barrel | curved vaulted cover | 4
+S 14129 | conical | cone-shaped cover | 4
+S 14120 | domed | rounded cover | 3
+S 14126 | green | planted cover | 3
+S 14109 | hipped | four-sided sloping cover | 4
+S 14122 | lean-to | single-slope cover | 4
+S 14131 | pagoda | tiered curved cover | 4
+S 14111 | pitched | sloping cover | 3
+S 14119 | pyramid | four-triangle cover | 4
+S 14115 | shed | single-slope cover | 4
+S 14127 | slate | stone-tile cover | 3
+S 14136 | sod | turf cover | 4
+S 14128 | tiled | clay-tile cover | 3
+S 14137 | tin | corrugated metal cover | 3
+T column_styles
+S 14153 | attached | wall-joined pillar | 5
+S 14149 | cluster | grouped shafts | 5
+S 14152 | Egyptian | Nile-style pillar | 3
+S 14144 | engaged | half-embedded pillar | 5
+S 14143 | fluted | grooved pillar | 3
+S 14150 | Greek | classical pillar | 3
+S 14147 | lotus | lotus-capital pillar | 5
+S 14146 | papyrus | papyrus-capital pillar | 5
+S 14151 | Roman | Roman-style pillar | 3
+S 14148 | twisted | spiral pillar | 4
+T window_styles
+S 14189 | arched | curved-top pane | 3
+S 14179 | awning | top-hinged pane | 4
+S 14172 | bow | curved bay-style pane | 3
+S 14184 | bullseye | round glass pane | 5
+S 14193 | fixed | non-opening pane | 4
+S 14167 | French | glazed double doors | 3
+S 14192 | hopper | bottom-hinged pane | 5
+S 14194 | lattice | diamond-pane style | 3
+S 14191 | leaded | leaded-glass pane | 3
+S 14176 | louvred | slatted pane | 4
+S 14190 | mullioned | divided pane | 4
+S 14169 | picture | large fixed pane | 3
+S 14014 = 64215
+S 14175 | round | circular pane | 3
+S 14185 | sliding | pane that slides | 3
+S 14186 | storm | extra outer pane | 4
+S 14188 | Venetian | three-part arched pane | 5
+T inca_empire
+K 20433 # nothing left
+K 20448 # Manco alone is unclear
+K 20439 # Sapa alone is meaningless
+T ottoman_empire
+K 344 # nothing left
+T medieval_times
+K 6702 # nothing left
+T orders_of_knighthood
+S 54062 | Livonian | Baltic crusading brotherhood | 5
+K 54064 # bare Christ is a person
+S 54072 = 54052
+K 54070 # Saint Lazarus alone is a saint
+K 54067 # St Patrick alone is a saint
+K 54061 # Dragon alone is a creature
+K 54068 # Seraphim alone is angels
+K 54071 # Star alone is a shape
+K 54073 # Sword alone is a weapon
+T castles
+S 2373 = 2372
+T crusades
+K 20939 # Children's is a fragment
+K 20943 # bare ordinal means nothing
+K 20623 # bare ordinal means nothing
+K 20942 # bare ordinal means nothing
+T black_death
+S 20972 = 20973
+T antarctic_explorers
+S 54219 = 54218
+T silk_road
+K 5039 # nothing left
+T spice_trade
+S 21124 = 21125
+T pirates
+K 6810 # fixed fictional title
+T lost_treasures
+K 54302 # Kidd's alone is a fragment
+K 54301 # Lima alone is a city
+K 54298 # Dutchman Mine is a fragment
+K 54306 # Priam's alone is a fragment
+K 54313 # Templar alone is knights
+T pirate_ships
+K 13785 # nothing left
+T wars_and_battles
+S 6839 | Boer | South African conflict | 4
+K 6821 # civil alone is an adjective
+S 6838 | Crimean | Russian-Ottoman conflict | 3
+S 6844 | Gulf | Iraq-Kuwait conflict | 3
+K 6834 # Hundred Years' is a fragment
+S 6843 | Korean | 1950s peninsula conflict | 3
+S 6841 | Napoleonic | Bonaparte-era conflicts | 3
+S 6840 | Peloponnesian | Athens versus Sparta | 4
+S 6836 | Punic | Rome versus Carthage | 4
+K 6845 # Seven Years' is a fragment
+S 6835 | Trojan | Homeric siege conflict | 3
+K 6846 # bare 1812 is a number
+K 6837 # nobody says Roses alone
+S 6847 | Zulu | British-Zulu conflict | 4
+T world_war_ii_battles
+K 21477 # Britain alone is a country
+K 54429 # Atlantic alone is an ocean
+K 54426 # Bulge already an alias
+T armor
+K 21360 # body alone is vague
+S 20704 | plate | full steel plates | 3
+S 20584 | yoroi | Japanese warrior gear | 4
+K 21346 # suit alone is clothing
+T war_words
+K 21367 # crime alone isn't military
+T siege_weapons
+K 21377 # engine alone is a machine
+S 20723 | belfry | wheeled assault structure | 4
+T cold_war
+S 21448 | proxy | indirect conflict | 3
+T peace_words
+K 21501 # Nobel alone isn't peace
+K 21491 # nothing left
+K 16826 # sign alone is a notice
+T french_kings
+S 54606 = 54605
+T famous_queens
+K 54578 # Anne alone is a name
+K 54638 # Mary alone is a name
+K 33387 # mother alone is a parent
+T emperors
+S 62095 = 20459
+T chinese_emperors
+S 62095 = 20459
+T fossils
+K 21700 # footprint alone isn't ancient
+K 1621 # record alone is data
+K 21708 # index alone is vague
+K 21712 # living alone is vague
+S 21707 | trace | remains of animal activity | 4
+T tombs_and_burials
+K 21760 # chamber alone is a room
+S 21758 = 6871
+T stone_age
+K 1613 # Ice alone is frozen water
+S 7077 = 7076
+S 7080 = 7078
+K 21802 # axe alone isn't stone
+T bronze_age
+K 12038 # nothing left
+K 7096 # collapse alone is vague
+T trojan_war
+K 6928 # Horse alone is an animal
+T winged_beasts
+K 54971 # lion alone is plain
+T giants_of_legend
+S 55040 | frost | icy Norse race | 2
+S 55041 | hill | highland brute | 3
+T legendary_horses
+K 6928 # Trojan alone is malware
+T fantasy
+S 7039 | high | epic-world genre | 4
+T magic_items
+K 13624 # beans alone are food
+S 22382 = 22381
+S 13630 = 22395
+K 13368 # mirror alone is plain
+K 13638 # ring alone is jewelry

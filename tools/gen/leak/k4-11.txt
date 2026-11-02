@@ -1,0 +1,271 @@
+T vitamins
+K 16621 # single letter alone
+K 16638 # single letter alone
+S 16631 | B1 | - | 3
+S 16646 | B10 | - | 5
+S 16647 | B11 | - | 5
+S 16648 | B13 | - | 5
+S 16649 | B15 | - | 5
+S 16650 | B17 | - | 5
+S 16632 | B2 | - | 3
+S 16633 | B3 | - | 3
+S 16644 = 27209
+S 16634 | B5 | - | 4
+S 16629 | B6 | - | 3
+S 16636 | B7 | - | 4
+S 16645 | B8 | - | 5
+K 16618 # single letter alone
+K 16623 # single letter alone
+K 16642 # single letter alone
+K 16625 # single letter alone
+K 16643 # single letter alone
+T diet_types
+S 16732 | grapefruit | weight-loss plan | 3
+S 3855 = 16731
+T mouth_actions
+K 17117 # nothing left
+T ways_of_laughing
+K 17144 # nobody says burst out alone
+T family_and_friends
+S 3922 | best | closest pal | 2
+K 3915 # fixed name, tree alone is plant
+T words_for_friend
+S 3922 | best | closest pal | 2
+T kinds_of_party
+S 32593 | block | neighbourhood event | 3
+S 32599 | street | outdoor neighbourhood event | 3
+T happy_words
+K 32663 # nothing left
+T sad_words
+K 32693 # nothing left
+T angry_words
+K 32723 # nothing left
+T scared_words
+K 28634 # nothing left
+T surprised_words
+K 32776 # nothing left
+T love_words
+K 32820 # nobody says fall alone
+K 3981 # nothing left
+T calm_words
+K 21492 # nothing left
+T arts_jobs
+K 12670 # director alone is another job
+T office_jobs
+K 60938 # nobody says boy for it
+S 33083 | junior | junior staffer | 4
+T animal_jobs
+K 10474 # trainer alone too vague
+T gaucho_words
+K 38553 # nothing left
+T emergency_workers
+S 33215 | hazmat | chemical-hazard responder | 3
+T government_words
+K 60975 # nothing left
+T election_words
+K 33337 # one compound, nothing else
+S 33318 | polling day | - | 2
+T royal_things
+K 33419 # nobody says barge alone
+S 33403 | state coach | - | 3
+K 33421 # court alone means other things
+K 33404 # nobody says guard alone
+K 61018 # fixed name
+K 33412 # nobody says seal alone
+K 33402 # fixed name
+K 33401 # wedding alone loses royalty
+K 61023 # nobody says yacht alone
+T parts_of_parliament
+K 33484 # fixed name
+T diplomacy_words
+K 33542 # fixed name
+T law_and_order
+K 4248 # fixed name
+K 4208 # nothing left
+T courtroom_words
+K 33669 # nothing left
+T police_words
+K 4207 # nothing left
+T prison_words
+K 2485 # nothing left
+K 33727 # fixed name
+S 33705 | warder | jail officer | 3
+T detective_words
+K 4194 # nothing left
+T punishments
+S 33808 = 64813
+T spy_words
+K 16942 # nothing left
+T money_words
+K 28546 # nothing left
+T coins
+S 21205 | gold | precious-metal piece | 1
+T tax_words
+K 33984 # fixed name
+K 33285 # nothing left
+K 33991 # nobody says code alone
+K 33987 # credit alone is not a tax
+K 33654 # evasion alone is vague
+K 33974 # nobody says haven alone
+T shopping_words
+K 34005 # fixed name
+T stock_market_words
+K 34088 # fixed name
+K 34081 # nobody says penny alone
+K 34058 # nothing left
+T bazaar
+K 20644 # fixed name
+T holy_books
+K 34240 # fixed name
+K 34227 # fixed name
+T angels_and_spirits
+K 34264 # fixed name
+T afterlife_words
+K 34407 # nothing left
+T navy_words
+K 21161 # fixed name
+K 34594 # fixed name
+T medals_and_honors
+K 34645 # nobody says bar alone
+K 34644 # fixed name
+K 34626 # nothing left
+K 34647 # Olympic alone is not a medal
+T school
+S 4521 | high | secondary level | 1
+T exam_words
+K 4485 # nothing left
+K 61276 # nobody says script alone
+T school_types
+S 34926 | cram | test-prep type | 4
+K 61285 # nobody says dame alone
+K 34919 # nobody says finishing alone
+K 61288 # fixed name
+S 34924 | free | publicly funded | 3
+K 61287 # nobody says hedge alone
+S 4521 | high | secondary level | 1
+S 34923 | infant | ages five to seven | 4
+S 34897 | middle | ages nine to thirteen | 1
+S 34916 | night | evening classes | 2
+K 61286 # nobody says ragged alone
+S 34922 | special | additional needs | 3
+S 34915 | Sunday | weekly religious classes | 2
+S 34910 | trade | skills training | 2
+S 34911 = 64814
+T university_degrees
+S 34960 | foundation | two-year qualification | 4
+T graduation_words
+S 34975 | commencement | - | 3
+S 32601 | grad party | - | 2
+S 34981 | grad photo | - | 2
+T media_and_communication
+K 4565 # fixed name
+T social_media_platforms
+K 35122 # fixed name
+T phone_words
+S 7325 | cell | wireless handset | 1
+S 7326 = 7327
+K 35146 # nobody says booth alone
+S 25642 | rotary | dial type | 3
+T mail_words
+K 35189 # nobody says bulk alone
+K 35180 # nobody says bag alone
+K 35185 # fixed name
+S 35174 | letterbox | door opening for post | 2
+T journalism_words
+S 35220 | yellow | sensationalist press | 5
+T advertising_words
+S 35249 | native | blended-in ads | 5
+T radio_words
+S 35283 | car | vehicle stereo | 1
+S 11330 | clock | bedside alarm | 2
+S 5894 | ham | amateur broadcasting | 3
+S 35277 | public | publicly funded broadcaster | 3
+S 35284 | drama | audio plays | 3
+S 4602 | two-way | handheld transceiver | 3
+S 61389 | valve | vacuum tube set | 4
+T social_classes
+S 35311 | lower | bottom tier | 1
+S 35325 | lower middle | lower-middle tier | 3
+S 35306 | middle | center tier | 2
+K 35328 # nobody says ladder alone
+S 35310 | upper | top tier | 1
+S 35315 | upper middle | upper-middle tier | 3
+S 35307 | working | labor tier | 1
+T protest_words
+K 35356 # one compound, nothing else
+S 35366 | peaceful | nonviolent | 3
+T charity_words
+K 28298 # nothing left
+T manners_and_etiquette
+K 35409 # nobody says good alone
+K 35427 # fixed phrase
+S 35410 | table | mealtime conduct | 1
+T aboriginal_culture
+K 35473 # nobody says flag alone
+T fans_and_followers
+K 35624 # nobody says club alone
+S 35640 | hardcore | devoted type | 2
+T garage
+K 23151 # nobody says door alone
+K 23172 # nobody says opener alone
+T attic
+K 23196 # nobody says fan alone
+T outside_the_house
+K 23254 # nobody says number alone
+T tables_and_desks
+S 23440 | bistro | cafe style | 3
+S 23429 | drafting | architect's type | 3
+S 4690 | dressing | grooming furniture | 3
+S 23425 | drop-leaf | hinged-flap type | 4
+S 23423 | folding | collapsible type | 3
+K 23426 # nobody says nest alone
+S 23432 | occasional | side furniture type | 4
+S 23428 | pedestal | drawer-sided type | 4
+S 4708 = 64797
+K 23437 # telephone alone is a device
+S 23435 | tilt-top | pivoting-top type | 5
+T beds
+K 23448 # nobody says air alone
+S 23451 | cabin | built-in storage type | 3
+S 23447 | camp | folding travel type | 2
+S 23454 | canopy | four-poster style | 3
+S 23457 | hospital | adjustable medical type | 2
+S 23456 | loft | raised sleeping platform | 3
+S 23458 | ottoman | lift-up storage type | 4
+S 23455 | platform | low frame type | 3
+S 23453 | sleigh | curved-ends type | 4
+S 4689 | sofa | fold-out type | 2
+K 23450 # nobody says wall alone
+T storage_furniture
+K 23468 # nobody says bench alone
+T lights_and_lamps
+S 23499 | bulkhead | wall-mounted fitting | 5
+K 23485 # nobody says fairy alone
+T rugs_and_carpets
+K 55248 # nobody says area alone
+K 55263 # nobody says tile alone
+K 23519 # nobody says hearth alone
+K 14031 # nobody says prayer alone
+K 55250 # nobody says rag alone
+K 55249 # nobody says throw alone
+T heating_and_cooling
+K 23581 # nobody says central alone
+T fireplace_words
+K 55271 # nobody says surround alone
+T saws
+K 55285 # nobody says back alone
+K 55291 # nobody says buzz alone
+S 55293 | compass | narrow-blade type | 4
+S 55294 | flush-cut | trimming type | 5
+K 55288 # nobody says hole alone
+S 55283 | panel | sheet-cutting type | 4
+K 55292 # nobody says pit alone
+K 55286 # nobody says pull alone
+K 55289 # nobody says tile alone
+K 55295 # nobody says two-man alone
+T measuring_tools
+K 23749 # nobody says jug alone
+S 23744 | trundle wheel | - | 3
+T adhesives
+S 23820 | construction | heavy-duty type | 4
+S 23829 | spray | aerosol type | 4

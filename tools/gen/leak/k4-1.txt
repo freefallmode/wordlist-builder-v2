@@ -1,0 +1,237 @@
+T fruits
+K 361 # nobody says dragon for it
+K 107 # nobody says passion for it
+T berries
+S 17188 = 17189
+T tropical_fruits
+K 361 # nobody says dragon for it
+K 107 # nobody says passion for it
+T melons
+K 17259 # nobody says green for it
+S 356 = 355
+S 64658 = 63379
+K 17258 # nobody says orange flesh
+K 17263 # nobody says snap for it
+T dried_fruits
+K 17273 # bare apple is fresh fruit
+K 17267 # bare apricot is fresh fruit
+K 17277 # bare blueberry is fresh fruit
+K 17276 # bare cherry is fresh fruit
+K 17286 # bare coconut is fresh fruit
+K 17269 # bare cranberry is fresh fruit
+K 17268 # bare fig is fresh fruit
+K 64664 # bare lychee is fresh fruit
+K 17271 # bare mango is fresh fruit
+K 17285 # bare mulberry is fresh fruit
+K 17280 # bare papaya is fresh fruit
+K 17288 # bare peach is fresh fruit
+K 17287 # bare pear is fresh fruit
+K 64665 # bare persimmon is fresh fruit
+K 17279 # bare pineapple is fresh fruit
+K 17284 # fixed name, leather alone is hide
+T apple_varieties
+K 64666 # nobody says Lady alone
+T asian_fruits
+K 361 # nobody says dragon for it
+T nuts
+S 17372 = 1665
+S 17363 = 1656
+K 16760 # mixed is not a name
+K 17369 # nobody says monkey for it
+K 17374 # soy alone is not a nut
+T edible_seeds
+K 17408 # bare apple is the fruit
+S 64669 = 63392
+K 17399 # bare celery is the vegetable
+S 17388 = 17389
+K 17403 # bare lotus is the flower
+K 17407 # bare pea is the vegetable
+K 17401 # bare pomegranate is the fruit
+S 17387 | poppy | bagel topping | 2
+S 17383 = 17382
+K 17402 # bare watermelon is the fruit
+T root_vegetables
+S 17452 = 39169
+K 64670 # bare parsley is the herb
+T leafy_greens
+K 64671 # bare beet is the root
+K 17474 # fixed name
+T squashes
+K 17509 # bare banana is a fruit
+S 17488 = 17489
+K 17521 # bare kombucha is a drink
+K 17500 # bare scallop is shellfish
+S 17491 | spaghetti | stringy gourd | 3
+K 17492 # nobody says summer alone
+K 17493 # nobody says winter alone
+S 17494 = 62532
+T beans_and_pulses
+K 17548 # fixed name, nobody says baked
+S 17526 | black | dark legume | 2
+K 17540 # nobody says butter alone
+K 17561 # nobody says jack alone
+S 50237 = 50238
+S 17549 | runner | climbing legume | 3
+T onion_family
+S 17580 | bermuda | mild bulb | 3
+K 17576 # nobody says Egyptian alone
+K 393 # nothing left
+K 17584 # powder alone is vague
+S 17567 | pearl | small bulb | 3
+K 17583 # nobody says pickled alone
+S 17581 | spanish | mild bulb | 3
+S 17565 | sweet | mild bulb | 3
+K 17582 # nobody says torpedo alone
+K 17585 # nobody says tree alone
+K 17577 # nobody says walking alone
+K 17575 # nobody says Welsh alone
+K 17591 # nobody says white spring
+T cabbage_family
+K 395 # nothing left
+S 17597 = 64807
+S 64682 = 64807
+S 64683 = 64820
+S 17594 | red | purple head | 2
+S 17601 | white | pale head | 2
+T mushrooms
+K 17629 # nobody says field alone
+K 17639 # nobody says horse alone
+K 17637 # nobody says straw alone
+S 17630 = 63415
+T andean_crops
+S 17657 = 17656
+T meat_and_seafood
+S 498 = 497
+T game_meats
+K 17737 # bird alone is vague
+T sausages
+S 17749 = 17748
+K 17771 # nobody says cocktail alone
+K 17752 # nobody says breakfast alone
+S 17753 | Italian | seasoned link | 2
+S 17772 = 17744
+K 17769 # pork alone is vague
+K 17768 # nobody says summer alone
+K 64687 # nobody says vienna alone
+T butcher_shop
+K 17893 # nothing left
+K 17901 # paper alone is vague
+T dairy_and_eggs
+S 64688 = 63421
+T cheeses
+S 529 | cottage | curd type | 2
+S 530 | cream | soft spread | 2
+K 17955 # nobody says pimento alone
+K 17943 # nobody says string alone
+T soft_cheeses
+S 529 | cottage | curd type | 2
+S 530 | cream | soft spread | 2
+T blue_cheeses
+K 17929 # nothing left
+K 53106 # vinney never used alone
+T types_of_milk
+S 17980 | buffalo | dairy herd | 3
+S 17969 | cow | dairy herd | 2
+S 17979 | donkey | dairy herd | 4
+K 537 # powder alone is vague
+K 536 # powdered alone is nonsense
+S 17974 | sheep | dairy herd | 3
+T egg_dishes
+K 17992 # drop soup is nonsense
+K 17993 # fried rice is a broader dish
+K 18008 # basket alone is nonsense
+K 17988 # salad alone is vague
+K 17997 # royale alone is nonsense
+K 17994 # nobody says scotch alone
+T cheese_dishes
+K 18019 # bare cauliflower is the vegetable
+K 18018 # board alone is vague
+K 18022 # fries alone are plain
+K 18016 # sauce alone is vague
+K 18021 # straws alone is nonsense
+K 18010 # grilled alone is nonsense
+T breads_and_baking
+K 584 # powder alone is vague
+K 592 # soda already means the leavener here
+T breads
+S 592 | soda | Irish loaf | 3
+T pastries
+S 18086 = 18085
+S 18078 | puff | flaky dough | 2
+T cakes
+K 18104 # nobody says birthday alone
+S 64708 | carrot | spiced sponge | 2
+S 64709 | chiffon | light sponge | 4
+S 64710 | chocolate | rich sponge | 2
+S 18114 | coffee | streusel sponge | 3
+K 18133 # ice cream alone is not a cake
+S 18118 | layer | tiered sponge | 3
+S 18136 | lemon | citrus sponge | 3
+S 64711 | marble | swirled sponge | 3
+S 64712 | opera | French sponge | 4
+S 18105 | pound | dense sponge | 3
+K 18116 # nobody says wedding alone
+T pies_and_tarts
+S 18175 | banana cream | - | 3
+S 64713 | blueberry | fruit filling | 2
+S 64714 | cherry | fruit filling | 2
+S 18184 | chess | Southern custard | 4
+S 18176 | custard | baked custard | 2
+S 18195 | Dutch apple | - | 3
+S 18190 | frangipane | almond filling | 4
+S 18177 | fruit | fresh topping | 3
+S 18192 | gooseberry | fruit filling | 4
+K 59452 # nobody says gypsy alone
+S 59453 | jam | sweet filling | 2
+K 18191 # nobody says Manchester alone
+K 18178 # nobody says mince for it
+K 18183 # nobody says mud alone
+K 19177 # pork alone is vague
+S 64715 | rhubarb | fruit filling | 3
+K 19193 # nobody says scotch alone
+K 18193 # nobody says sugar alone
+S 18179 | treacle | syrup filling | 3
+T baking_ingredients
+K 584 # powder alone is vague
+T flours
+S 18221 | bread | strong grade | 3
+S 18225 | cake | soft grade | 3
+S 64722 = 63470
+S 18230 | corn | milled maize | 3
+S 59457 | graham | whole grain | 4
+S 18236 = 63470
+S 18234 | pastry | soft wheat | 3
+T ice_cream_flavors
+K 18281 # nobody says cookies alone
+K 18300 # nobody says pralines alone
+T frozen_desserts
+K 18316 # custard alone is not frozen
+T puddings
+S 18334 | banana | dessert | 3
+S 18333 | bread | dessert | 3
+S 64740 | butterscotch | dessert | 3
+K 18350 # nobody says cabinet alone
+S 18356 = 17389
+S 64741 | chocolate | dessert | 2
+K 18345 # nobody says Eve's alone
+K 59477 # nobody says figgy alone
+K 18348 # nobody says hasty alone
+K 18347 # nobody says Indian alone
+S 18354 | lemon | dessert | 3
+K 53497 # nobody says malva alone
+S 18355 | pistachio | dessert | 3
+S 64742 = 63491
+K 18340 # cup alone is vague
+K 18346 # nobody says queen alone
+S 18331 | rice | dessert | 2
+S 18349 | sago | - | 4
+S 18344 | semolina | dessert | 3
+K 18353 # nobody says steamed alone
+K 18343 # nobody says summer alone
+S 64743 | tapioca | dessert | 3
+S 64744 | vanilla | dessert | 2
+T candy
+K 621 # nobody says cane alone
+K 18367 # nobody says corn alone
+S 64745 = 63495
+K 18362 # rock candy head noun

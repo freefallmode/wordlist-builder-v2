@@ -1,0 +1,252 @@
+T monsoon_season
+K 31611 # nobody says winds for it
+S 31622 | northeast | rain-bringing wind | 5
+K 31623 # onset alone means nothing
+S 31621 | southwest | rain-bringing wind | 4
+T dry_season
+K 31652 # creek is not dry
+K 31635 # nobody says grass for it
+K 31642 # nobody says spell for it
+K 31641 # nobody says wells for it
+K 31646 # nobody says wind for it
+K 30286 # fixed name, fire alone wrong
+T rocks_and_minerals
+S 2069 = 2070
+T rock_types
+K 31073 # nobody says lava for rock
+T igneous_rocks
+K 31073 # nobody says lava for rock
+T sedimentary_rocks
+S 2069 = 2070
+T building_stones
+S 31780 = 31763
+S 31772 | lava | volcanic building rock | 3
+S 31766 = 31759
+K 31781 # quarried is not a name
+T mining_words
+K 31800 # nobody says strip for it
+T gold_rush_words
+S 2074 = 2073
+S 31811 | dust | panned powder | 3
+K 31822 # nobody says fever for it
+K 23011 # nothing left
+T volcano_words
+S 32018 = 32017
+K 1912 # nothing left
+T earthquake_words
+K 28911 # nothing left
+T erosion_words
+K 31915 # nothing left
+T geothermal_words
+K 31945 # nobody says energy alone
+K 60445 # nobody says gradient alone
+K 31956 # nobody says plant alone
+T soil_words
+S 31987 | potting mix | - | 2
+S 31972 | horizon | soil layer | 4
+T water_cycle_words
+K 32003 # hydrologic alone is nonsense
+K 32002 # surface alone is nonsense
+K 32007 # nothing left
+K 32000 # nobody says table for it
+T layers_of_a_rainforest
+K 32014 # emergent already an alias
+T types_of_volcano
+S 32022 = 32021
+S 32018 = 32017
+T rainforest
+S 32029 = 32016
+T ocean
+K 32042 # nobody says Indian alone
+K 32048 # fixed name, ridge alone wrong
+S 32034 = 32033
+K 32178 # nobody says Southern alone
+T polar_regions
+K 7943 # fixed animal name
+K 32066 # nobody says night for it
+T mountains
+K 7934 # goat is not mountain-specific
+T meadow
+K 9036 # nobody says brown for it
+T pond
+K 32102 # dipping alone is nonsense
+K 32100 # nobody says life for it
+T prairie
+K 8308 # fixed animal name
+K 7840 # fixed animal name
+S 32171 = 23013
+T pollution_words
+S 32190 | light | night glare | 2
+S 32189 = 14697
+T recycling_words
+S 23970 | bin | sorted waste | 1
+K 32215 # nobody says plant alone
+T conservation_words
+K 32259 # nothing left
+T climate_words
+K 32292 # nobody says change alone
+K 32307 # nobody says refugee alone
+T french_speaking_countries
+K 35765 # Guiana alone not used
+T cities
+S 2281 = 2282
+K 2267 # Mexico is the country
+T capital_cities
+K 2267 # Mexico is the country
+T middle_eastern_cities
+S 35864 = 35700
+T american_cities
+K 35930 # Kansas is the state
+T canadian_cities
+S 35942 | Quebec | provincial capital | 2
+T new_zealand_cities
+K 57107 # Plymouth is another city
+T port_cities
+K 36055 # Said alone is nonsense
+T mexican_cities
+K 2267 # Mexico is the country
+T mexican_states
+K 36236 # Mexico is the country
+T french_regions
+S 36334 = 36335
+T new_england_states
+K 36201 # Hampshire is a county
+T mountain_ranges
+K 36510 # Brooks alone is not used
+K 36503 # Great Dividing alone is nonsense
+S 36486 = 36485
+T famous_mountains
+K 2371 # nobody says Table alone
+T himalayan_peaks
+K 57142 # Broad alone is nonsense
+T famous_deserts
+K 36573 # Antarctic alone not used
+K 36551 # Arabian alone not used
+K 36572 # Colorado is state and river
+K 36554 # Great Victoria alone is nonsense
+K 36564 # Libyan alone not used
+S 36547 = 36546
+K 36568 # Painted alone is nonsense
+K 36562 # Syrian alone not used
+T famous_islands
+K 36594 # Long alone is nonsense
+K 36595 # Staten alone not used
+K 36608 # Vancouver is the city
+T pacific_islands
+K 38120 # Cook alone not used
+T indonesian_islands
+K 21124 # Spice alone not used
+T famous_beaches
+S 36613 = 36614
+K 36630 # Brighton is the city
+K 36629 # Cable alone is nonsense
+S 36622 = 59042
+K 36624 # Huntington alone not used
+K 36621 # Miami is the city
+K 36623 # Myrtle alone not used
+K 36642 # Pink Sands alone not used
+K 36635 # Seven Mile alone not used
+K 36636 # Shipwreck alone not used
+K 16715 # South alone is nonsense
+K 36620 # Venice is the city
+T peninsulas
+K 36676 # Alaska is the state
+K 36663 # Antarctic alone not used
+K 36662 # Cape alone is nonsense
+S 36648 = 36647
+K 36263 # Eyre alone not used
+K 36657 # Labrador is the dog
+S 36651 = 36652
+K 36674 # Upper alone is nonsense
+T antarctic_places
+K 2426 # Circle alone is nonsense
+K 36663 # Peninsula alone is nonsense
+T famous_canyons_and_gorges
+K 36722 # Black alone is nonsense
+K 36709 # Copper alone is nonsense
+K 36724 # Glen alone is nonsense
+K 2332 # Grand alone is nonsense
+K 36721 # Hells alone not used
+K 36736 # Horseshoe alone not used
+K 36731 # Katherine is the town
+K 36718 # Kings alone not used
+K 36723 # Royal alone is nonsense
+K 36715 # Three alone is nonsense
+K 36716 # Tiger Leaping alone not used
+T famous_caves
+K 36744 # Crystals alone is nonsense
+K 36739 # Fingal's alone not used
+K 36737 # Mammoth alone not used
+K 36765 # Marble Arch is London
+K 36760 # Marble alone is nonsense
+K 36745 # Reed Flute alone not used
+T famous_rivers
+S 60557 = 36769
+S 20464 | Huang He | - | 3
+T asian_rivers
+K 37570 # Pearl alone not used
+S 20464 | Huang He | - | 3
+T north_american_rivers
+K 57330 # Red alone is nonsense
+T south_american_rivers
+S 60557 = 36769
+T famous_lakes
+K 36855 # Crater alone is nonsense
+K 36834 # fixed name
+K 36835 # Chad is the country
+K 36829 # Constance alone not used
+K 36828 # Geneva is the city
+K 36839 # Louise alone not used
+K 36836 # Malawi is the country
+K 36841 # Maracaibo is the city
+K 36856 # Mead alone not used
+K 36842 # Nicaragua is the country
+K 36840 # Placid alone not used
+S 36822 | Victoria | East African | 2
+K 36851 # Volta is the river
+K 36852 # Winnipeg is the city
+T straits_and_canals
+K 36913 # Bass alone is nonsense
+K 36925 # Caledonian alone not used
+K 36923 # Midi alone not used
+K 36914 # Cook alone not used
+K 36916 # Davis alone not used
+K 36917 # Denmark is the country
+K 36922 # Grand alone is nonsense
+K 36926 # Grand Union alone not used
+K 36941 # Hecate alone not used
+K 36938 # Johor alone not used
+K 36939 # Lombok is the island
+K 36924 # Manchester Ship alone nonsense
+K 36911 # Dover is the port
+K 36918 # Messina is the city
+K 36933 # Taiwan is the island
+T gulfs_and_bays
+K 36979 # Islands alone is nonsense
+K 36986 # Naples is the city
+K 50105 # Pigs alone is nonsense
+K 36978 # Plenty alone is nonsense
+K 36962 # Botany alone not used
+K 36969 # Cardigan alone not used
+K 36968 # Dublin is the city
+K 36967 # Galway is the city
+K 36980 # Golden alone is nonsense
+K 36950 # Aden is the city
+K 36951 # Alaska is the state
+K 36957 # California is the state
+K 36989 # Corinth is the city
+K 36952 # Finland is the country
+K 36958 # Guinea is the country
+K 36954 # Oman is the country
+K 36990 # Riga is the city
+K 36959 # St Lawrence is the river
+K 36987 # Suez is the town
+K 36955 # Thailand is the country
+K 36947 # Hudson is the river
+K 36985 # James alone is nonsense
+K 36974 # Manila is the city
+K 36945 # Persian alone not used
+K 36964 # San Francisco is the city
+K 36971 # Table alone is nonsense
+K 36965 # Tampa is the city
+K 36975 # Tokyo is the city

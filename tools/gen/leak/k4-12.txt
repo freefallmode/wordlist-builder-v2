@@ -1,0 +1,240 @@
+T brooms_and_brushes
+K 55307 # nobody says banister for it
+K 23854 # nobody says bottle for it
+K 23853 # nobody says cobweb for it
+K 55306 # nobody says deck for it
+K 24010 # nobody says dish for it
+K 55296 # bare dustpan is the pan itself
+K 55302 # nobody says grill for it
+K 55300 # nobody says hand for it
+K 55299 # nobody says lint for it
+K 55304 # nobody says oven for it
+K 55297 # nobody says push for it
+K 55303 # nobody says radiator for it
+K 23839 # nobody says scrubbing for it
+K 55298 # nobody says sweeping for it
+K 23143 # bare toilet is the fixture
+K 55305 # nobody says washing-up for it
+K 23850 # bare whisk is a kitchen tool
+K 23846 # nobody says wire for it
+K 55301 # nobody says yard for it
+T laundry_words
+S 23901 | laundromat | - | 2
+S 23886 | hamper | clothes | 2
+S 23896 | detergent | - | 2
+T bins_and_recycling
+K 1864 # compost already listed separately
+K 23998 # nobody says pedal for it
+K 23970 # nothing left
+K 23999 # nobody says center for it
+K 23990 # nobody says symbol for it
+T washing_up
+K 24009 # nothing left
+T roof_parts
+K 14109 # nobody says hipped alone
+K 23245 # nothing left
+K 24098 # nobody says light for it
+T windows_and_doors
+S 24103 = 28555
+K 24110 # nobody says patio alone
+K 24122 # nobody says pet alone
+K 24118 # nobody says revolving alone
+K 24108 # nobody says screen alone
+K 24117 # nobody says sliding alone
+S 24107 | sill | - | 3
+T parts_of_a_door
+S 25712 | chain | security | 2
+K 55336 # nobody says closer alone
+S 24103 = 28555
+K 55337 # nobody says number alone
+K 24122 # nobody says pet alone
+T house_styles
+K 24174 # nobody says council alone
+K 24169 # nobody says tiny alone
+T moving_house
+K 24263 # day alone means nothing
+T home_safety
+S 24297 | latch | child-proof | 3
+S 24287 | outlet cover | - | 3
+T pants_and_shorts
+K 24335 # nobody says bike alone
+K 24331 # nobody says harem alone
+K 24325 # nobody says hot alone
+S 24332 | palazzo | wide-leg trousers | 4
+K 24340 # nobody says stirrup alone
+T dresses_and_skirts
+K 24354 # nobody says hoop alone
+K 24352 # nobody says pleated alone
+S 24369 = 4935
+K 24365 # nobody says tiered alone
+T coats_and_jackets
+K 24390 # nobody says car alone
+K 24395 # nobody says donkey alone
+K 24399 # nobody says mess alone
+K 24388 # nobody says sports alone
+K 24387 # nobody says sports alone
+T western_wear
+S 55462 | cowboy boots | - | 1
+K 55209 # nobody says western alone
+T socks_and_hosiery
+K 16064 # nobody says bed alone
+K 24573 # nobody says bobby alone
+K 24578 # nobody says toe alone
+K 24576 # nobody says trainer alone
+T rain_gear
+K 24601 # nobody says cover alone
+S 24593 = 47487
+T winter_clothes
+K 24616 # coat already listed
+T shoes
+K 24644 # nobody says boat alone
+K 24642 # plain pump already listed
+K 24643 # nobody says deck alone
+K 24651 # nobody says golf alone
+T boots
+S 24666 = 24650
+K 24669 # nobody says go-go alone
+K 24670 # nobody says hobnail alone
+K 24674 # bare jodhpur means the trousers
+K 24662 # knee-high means socks
+S 24676 | lace-ups | - | 2
+K 24665 # nobody says moon alone
+K 24675 # nobody says paddock alone
+K 24589 # nobody says rubber alone
+K 24667 # nobody says ski alone
+S 24455 | steel-toes | - | 3
+S 24661 | thigh-highs | - | 3
+S 24590 | Wellingtons | - | 2
+T hats
+K 24711 # toque already listed
+K 24710 # nobody says party alone
+K 16347 # nobody says sun alone
+K 13720 # fixed name
+K 24709 # nobody says witch alone
+T historical_hats
+K 55485 # nobody says beaver alone
+K 55487 # nobody says cavalier alone
+K 21324 # nobody says cocked alone
+K 55490 # nobody says opera alone
+K 13720 # fixed name
+K 55489 # nobody says wide-awake alone
+T bags
+K 15781 # nobody says diaper alone
+K 24730 # nobody says doctor's alone
+K 24719 # nobody says gym alone
+K 24732 # nobody says kit alone
+K 24722 # nobody says laptop alone
+K 19920 # nobody says lunch alone
+K 24733 # nobody says nappy alone
+K 24721 # nobody says school alone
+S 24714 = 25486
+K 24715 # nobody says shoulder alone
+K 24720 # nobody says sports alone
+T scarves_and_gloves
+K 24764 # nobody says boxing alone
+K 24765 # nobody says driving alone
+K 24766 # nobody says evening alone
+K 24762 # nobody says fingerless alone
+K 24770 # nobody says latex alone
+K 24760 # nobody says leather alone
+K 24768 # nobody says opera alone
+S 23375 | marigolds | - | 3
+K 24771 # nobody says ski alone
+K 24761 # nobody says wool alone
+T hair_accessories
+K 24817 # nobody says chalk alone
+K 24821 # nobody says jewel alone
+K 24812 # nobody says stick alone
+S 3798 | bobble | elastic | 3
+T fabrics_and_sewing
+K 5034 # nobody says kit alone
+T wool_fabrics
+K 55509 # fixed name
+K 5040 # nothing left
+T sewing_words
+K 5034 # nobody says kit alone
+T sewing_kit
+K 55548 # nobody says basket alone
+K 55547 # nobody says box alone
+T fabric_prints
+K 24925 # nobody says animal alone
+K 24941 # nobody says block alone
+T holidays_and_celebrations
+K 5157 # fixed name
+K 5158 # fixed name
+T christmas
+K 25024 # nothing left
+S 18337 = 64742
+T christmas_carols
+K 55598 # nothing left
+K 55600 # fixed name
+K 55603 # fixed name
+T easter
+K 8088 # bunny already listed
+K 25059 # nothing left
+K 25057 # nobody says parade alone
+K 25046 # nothing left
+T new_year
+K 5128 # lunar already listed
+K 25070 # nothing left
+K 5105 # nothing left
+T weddings
+K 25115 # nobody says planner alone
+T wedding_anniversaries
+K 32562 # nobody says golden alone
+K 55634 # ruby already listed
+T birthdays
+K 25158 # nobody says banner alone
+K 25151 # nobody says boy alone
+K 25156 # fixed name
+K 18104 # cake already listed
+K 25152 # nobody says girl alone
+K 10955 # nobody says song alone
+K 25153 # fixed name
+K 25159 # nobody says wishes alone
+T party_supplies
+S 25150 | noisemaker | - | 3
+S 55644 | favors | - | 3
+K 24710 # nobody says hat alone
+K 55651 # paper plates already listed
+K 55640 # poppers means something else
+T valentine_s_day
+K 25181 # fixed name
+K 25177 # nothing left
+K 25182 # fixed name
+K 25185 # nothing left
+T festivals_of_the_world
+K 25194 # fixed name
+K 25078 # nobody says lantern alone
+T diwali
+S 55659 | Naraka Chaturdashi | - | 5
+T lunar_new_year
+S 55674 | nian gao | - | 4
+T mid_autumn_festival
+K 55696 # nobody says Moon alone
+T ramadan_and_eid
+K 55703 # fixed greeting
+T anzac_day
+K 29211 # nothing left
+K 18159 # nobody says biscuit alone
+K 37479 # fixed place name
+T st_patrick_s_day
+K 34309 # fixed place name
+K 55771 # nobody says Saint alone
+T gift_wrapping
+K 25206 # nobody says bag alone
+K 25213 # nobody says basket alone
+K 25208 # nobody says box alone
+K 25222 # nobody says receipt alone
+K 25205 # nobody says tag alone
+K 25203 # wrap already listed
+K 25202 # nobody says paper alone
+T fireworks
+K 25240 # nobody says display alone
+T days_and_weeks
+K 5130 # fixed name
+K 25298 # nobody says off alone
+K 25287 # fixed name
+K 25299 # nobody says school alone
+K 25281 # fortnight already listed
+K 25284 # nobody says work alone

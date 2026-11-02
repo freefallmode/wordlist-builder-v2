@@ -1,0 +1,225 @@
+T oceans_and_seas
+S 37007 | Arabian | Indian waters | 2
+S 36995 = 32041
+S 37038 | Banda | Indonesian waters | 5
+S 37004 | Black | Eurasian waters | 2
+S 37001 = 37002
+S 37018 | Celtic | Atlantic waters | 3
+S 37010 | Coral | Australian waters | 3
+S 36845 | Dead | salt lake waters | 2
+S 37036 | East China | Pacific waters | 3
+S 32042 | Indian | major water | 1
+S 37017 | Irish | British Isles waters | 2
+S 37023 | Java | Indonesian waters | 4
+S 37029 | Kara | Arctic waters | 5
+S 37027 | Labrador | North Atlantic waters | 4
+S 36999 = 37000
+S 37006 | North | European waters | 2
+S 37019 | Norwegian | Nordic waters | 3
+S 37037 | Philippine | Pacific waters | 4
+S 37003 | Red | African waters | 2
+S 32173 | Ross | Antarctic waters | 4
+K 37009 # nobody says Japan for it
+S 37008 | South China | Pacific waters | 3
+S 32178 | Southern | major water | 3
+S 37024 | Sulu | Philippine waters | 5
+S 37022 | Timor | Australian waters | 4
+S 37028 | White | Russian waters | 4
+S 37021 | Yellow | Chinese waters | 3
+T the_five_oceans
+S 36995 = 32041
+S 32042 | Indian | major water | 1
+S 32178 | Southern | major water | 3
+T ocean_zones
+S 57373 | bathypelagic | depth layer | 5
+S 57369 | epipelagic | depth layer | 5
+S 57371 | mesopelagic | depth layer | 5
+S 57372 | midnight | depth layer | 4
+S 57368 | sunlight | depth layer | 3
+S 57370 | twilight | depth layer | 3
+T famous_buildings
+S 37059 | Lloyd's | London insurer | 5
+S 37057 | Seagram | New York skyscraper | 5
+T famous_bridges
+S 37076 | Bosphorus | Istanbul crossing | 4
+K 37065 # fixed name # bare Sighs is nonsense
+S 37062 | Brooklyn | East River crossing | 2
+K 37078 # nobody says Chain for it
+S 37067 | Charles | Prague crossing | 3
+S 37068 | Forth | Scottish crossing | 3
+S 2325 = 2326
+S 37088 | Helix | Singapore crossing | 5
+S 37074 | Humber | Hull crossing | 4
+K 37072 # nobody says Iron for it
+S 37084 | Kwai | Thai crossing | 4
+K 37063 # bare London is the city
+S 37071 | Millennium | Thames crossing | 3
+S 37079 | Oresund | Denmark Sweden crossing | 4
+S 37069 | Rainbow | Niagara crossing | 3
+S 37086 | Royal Gorge | Colorado crossing | 5
+S 37081 | Severn | Welsh crossing | 4
+S 37064 | Coathanger | Sydney landmark | 3
+K 2343 # nobody says Tower for it
+S 37087 | Vasco da Gama | Lisbon crossing | 5
+T famous_towers
+K 37099 # fixed name # Fernsehturm already listed
+S 37091 | Blackpool | seaside landmark | 3
+K 37105 # bare Calgary is the city
+K 37097 # bare Canton is the city
+K 2370 # CN alone is not used
+K 2315 # nobody says Elizabeth for it
+S 37110 | Hancock | Boston skyscraper | 5
+K 2324 # fixed name
+S 37112 | Lotte World | Seoul skyscraper | 4
+K 37113 # bare Macau is the city
+S 37102 | Kiz Kulesi | Istanbul landmark | 5
+S 37095 | Sears | Chicago skyscraper | 3
+K 37092 # bare Shanghai is the city
+K 37101 # nobody says Sky for it
+S 37098 | Stratosphere | Las Vegas landmark | 4
+K 37089 # bare Tokyo is the city
+K 2344 # bare London is the city
+S 37093 | Trump | New York skyscraper | 3
+K 37109 # nobody says Victoria for it
+S 37050 | Willis | Chicago skyscraper | 4
+T famous_statues
+K 37134 # nobody says Unity for it
+K 37129 # bare Zeus is the god
+T famous_palaces
+S 37154 | Catherine | Russian royal residence | 4
+S 37170 | Diocletian's | Croatian ruin | 5
+K 37147 # nobody says Grand for it
+S 37152 | Mysore | Indian royal residence | 4
+K 2349 # bare Museum fails
+S 37144 | Westminster | Parliament building | 3
+S 37158 | Pena | Portuguese royal residence | 4
+K 37143 # nobody says Winter for it
+T famous_castles
+S 37175 | Bran | Romanian landmark | 3
+S 37174 | Cinderella | Disney park landmark | 3
+S 37176 | Dover | Kent fortress | 3
+S 37173 | Edinburgh | Scottish fortress | 2
+S 37191 | Heidelberg | German ruin | 4
+S 37194 | Hohenzollern | German fortress | 5
+S 37185 | Leeds | Kent fortress | 4
+S 37189 | Matsumoto | Japanese fortress | 4
+S 2373 = 2372
+S 37179 | Osaka | Japanese fortress | 3
+S 37178 | Prague | Czech fortress | 3
+S 37182 | Stirling | Scottish fortress | 4
+S 20729 = 62871
+S 20728 = 62872
+T famous_squares
+S 37232 | Dam | Amsterdam plaza | 4
+K 37250 # nobody says Federation for it
+K 37241 # bare Harvard is the university
+S 37248 | Imam | Isfahan plaza | 5
+S 37220 | Leicester | London plaza | 2
+K 37240 # nobody says Madison for it
+K 37234 # nobody says Palace for it
+K 37215 # nobody says Red for it
+K 37218 # bare St Peter's is the basilica
+K 2350 # nobody says Times for it
+K 37226 # nobody says Union for it
+K 37225 # nobody says Washington for it
+T famous_streets
+S 37257 = 62633
+S 37287 | Beale | Memphis strip | 4
+K 37273 # nobody says Bond for it
+S 37268 = 62634
+S 33602 = 62636
+S 37272 = 62638
+S 37288 | Grafton | Dublin strip | 4
+S 37279 | Harley | London medical strip | 4
+K 37255 # bare Oxford is the city
+K 37267 # nobody says Regent for it
+S 34068 = 62641
+T famous_museums
+S 37316 | Acropolis | Athens museum | 4
+S 37314 | Air and Space | Washington museum | 3
+K 37294 # nobody says British for it
+K 37325 # nobody says Deutsches for it
+S 37309 | Egyptian | Cairo museum | 3
+S 37322 | Field | Chicago museum | 4
+S 37326 | Imperial War | London museum | 4
+S 37300 | Natural History | London museum | 2
+S 37315 | Pergamon | Berlin museum | 4
+K 37301 # bare Science fails
+S 37308 | Van Gogh | Amsterdam museum | 3
+S 37304 | Vatican | papal collection | 3
+T famous_temples
+S 37049 | Lotus | Delhi landmark | 4
+S 37334 | Luxor | Egyptian landmark | 3
+K 37346 # nobody says Apollo for it
+K 37208 # nobody says Artemis for it
+K 37209 # nobody says Diana for it
+S 37349 | Hatshepsut | Egyptian landmark | 4
+A | Deir el-Bahri | Egyptian landmark | 5
+K 2394 # nobody says Heaven for it
+S 37358 | El Castillo | Chichen Itza | 4
+S 37356 | Olympieion | Athens ruin | 5
+K 37347 # nobody says Poseidon for it
+T famous_mosques
+K 60539 # fixed name # no short form
+K 60562 # fixed name # no short form
+K 37383 # bare Muhammad Ali is the boxer
+K 37387 # nobody says Shah for it
+S 60538 | Sultan Qaboos | Muscat landmark | 4
+T famous_churches
+K 37407 # fixed name # Nativity is a scene
+T famous_parks
+S 37464 | Centennial | Atlanta green space | 5
+K 37432 # nobody says Central for it
+S 37439 | Golden Gate | San Francisco green space | 3
+K 37448 # nobody says Green for it
+S 37433 | Hyde | London green space | 2
+S 37451 | Prospect | Brooklyn green space | 4
+S 37435 | Regent's | London green space | 3
+S 37437 | Richmond | London green space | 3
+S 37436 | St James's | London green space | 3
+S 37458 | Stanley | Vancouver green space | 4
+T london_landmarks
+K 2345 # bare Eye fails
+K 2344 # bare London is the city
+T maps_and_globes
+K 2418 # fixed name
+K 2437 # fixed name
+S 2404 | road | driving chart | 1
+S 2405 | street | urban chart | 2
+S 2403 | treasure | pirate chart | 1
+S 2402 | world | global chart | 1
+T lines_on_a_map
+S 2430 = 2431
+K 2427 # nobody says date alone
+K 37879 # bare dotted is only an adjective
+K 37878 # nobody says Green for it
+K 37881 # fixed name
+T map_words
+K 2437 # fixed name
+T kinds_of_maps
+S 37903 | bus | transit chart | 2
+S 37901 | city | urban chart | 1
+K 2418 # fixed name
+S 37910 | pirate | treasure chart | 1
+S 2404 | road | driving chart | 1
+K 37900 # nobody says site alone
+S 37899 | subway | transit chart | 2
+S 37897 | tourist | visitor chart | 2
+S 37898 | trail | hiking chart | 2
+S 2403 | treasure | pirate chart | 1
+S 37911 | tube | transit chart | 2
+K 37908 # nobody says wall alone
+S 31393 | weather | forecast chart | 1
+S 2402 | world | global chart | 1
+T flags_with_crescents
+K 60551 # nobody says Red for it
+T flag_words
+S 37985 | black | warning banner | 3
+S 37986 | checkered | race signal | 2
+K 37992 # fixed name
+K 37988 # bare signal means other things
+S 21499 | white | surrender banner | 1
+T flags_with_a_sun
+K 2539 # bare rising fails
+K 60553 # fixed name
+S 60554 | Vergina | Macedonian emblem | 5

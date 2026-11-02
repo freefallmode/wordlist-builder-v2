@@ -1,0 +1,216 @@
+T vultures
+S 9898 | black | scavenger | 3
+S 50605 | Cape | African scavenger | 4
+S 50601 | cinereous | large scavenger | 5
+S 9655 | Egyptian | small white scavenger | 4
+S 50602 | hooded | - | 5
+S 9899 | king | colorful scavenger | 4
+S 50599 | lappet-faced | - | 5
+K 50609 # nobody says New World alone
+K 50608 # nobody says Old World alone
+S 50603 | palm-nut | - | 5
+S 50613 | red-headed | - | 5
+S 50610 | Ruppell's | - | 5
+S 8112 | turkey | red-headed scavenger | 3
+S 50600 | white-backed | - | 4
+S 50606 | white-headed | - | 5
+T finches
+S 50628 | Bengalese | - | 4
+S 50626 | citril | - | 5
+S 41021 | Darwin's | Galapagos songbirds | 4
+S 50615 | house | red-faced songbird | 3
+S 50616 | purple | rosy songbird | 4
+S 50627 | society | pet songbird | 4
+S 50625 | trumpeter | desert songbird | 5
+S 9847 | zebra | striped-cheek songbird | 4
+T crows_and_ravens
+S 50638 | American | black corvid | 2
+S 50650 | Australian | Outback corvid | 4
+S 9895 | carrion | black corvid scavenger | 4
+S 50637 | common | large black corvid | 3
+S 50639 | fish | coastal corvid | 4
+S 50636 | hooded | grey-bodied corvid | 4
+S 50647 | house | Asian corvid | 4
+S 50648 | pied | black-and-white corvid | 4
+S 50649 | white-necked | - | 5
+T ducks
+S 50673 | black | dusky waterfowl | 3
+S 50664 | long-tailed | - | 4
+S 46070 | rubber | bath toy | 2
+S 50658 | tufted | - | 4
+S 8229 | whistling | - | 5
+S 8223 | wood | colorful waterfowl | 3
+T geese_and_swans
+S 50684 | black-necked | - | 5
+T flightless_birds
+K 8256 # name word is whole identity
+T parrots
+K 8290 # nobody says fig for it
+K 8286 # nobody says ground for it
+K 8289 # nobody says hanging for it
+K 8285 # nobody says night for it
+K 8287 # nobody says owl for it
+K 8288 # nobody says pygmy for it
+T colorful_birds
+K 8334 # fixed name
+T pigeons_and_doves
+S 8482 | band-tailed | - | 5
+S 8497 | Barbary | pale pet | 5
+S 8462 | collared | - | 3
+S 8476 | crested | - | 4
+S 8480 | crowned | giant crested | 4
+K 8500 # fixed hyphenated name
+S 8475 | diamond | small Australian | 5
+S 8498 | emerald | green-winged | 5
+S 8471 | Eurasian collared | - | 4
+S 8487 | fantail | fancy fan-tailed | 4
+S 8468 | feral | city | 3
+S 8478 | fruit | tropical | 4
+S 8495 | green | tropical green | 5
+S 8484 | ground | small ground-feeding | 4
+S 8479 | imperial | large fruit-eating | 5
+S 8485 | Inca | scaled | 5
+S 8473 | laughing | - | 4
+S 8464 | mourning | cooing | 3
+S 8494 | olive | African olive | 5
+S 8466 | passenger | extinct | 3
+K 8496 # nobody says peace for it
+S 8492 = 10174
+S 8489 | racing | homing | 3
+S 8470 | ringneck | - | 4
+S 8461 | rock | wild city | 3
+S 8472 | spotted | speckled | 4
+S 8467 | stock | woodland | 4
+S 8488 | tumbler | acrobatic fancy | 5
+S 8463 | turtle | summer migrant | 3
+S 8469 | white | pure white | 2
+S 8483 | white-winged | - | 5
+S 8318 | wood | large grey | 3
+S 8474 | zebra | barred | 4
+T snakes
+K 8531 # nobody says blind for it
+K 8533 # nobody says cat for it
+S 8523 | eastern brown | - | 4
+K 8534 # nobody says flying for it
+S 8504 | grass | harmless ringed | 3
+K 1328 # nobody says sea for it
+K 8505 # nobody says smooth for it
+K 8532 # nobody says vine for it
+K 8516 # nobody says whip for it
+T venomous_snakes
+S 50712 | brown | Australian brown | 3
+K 1328 # nobody says sea for it
+K 50724 # name word is whole identity
+T constrictor_snakes
+K 50740 # black rat means rodent
+K 1159 # boa form already in theme
+K 50741 # name word is whole identity
+S 50733 | gopher | burrowing rodent-eater | 4
+K 50734 # nobody says pine for it
+T lizards
+S 8550 | collared | - | 5
+S 8547 | common | European reptile | 4
+K 8551 # nobody says fence for it
+S 1199 | frilled | Australian frilled | 4
+S 8566 | girdled | - | 5
+S 8549 | glass | brittle limbless | 5
+S 1184 | horned | spiky desert | 4
+S 8565 | legless | limbless | 5
+S 8546 | sand | dune | 4
+S 8568 | side-blotched | - | 5
+S 8567 | spiny | - | 5
+S 8548 | wall | Mediterranean wall-climbing | 4
+T turtles_and_tortoises
+S 8607 | bog | rare marsh | 5
+S 8572 | box | hinged-shell | 3
+S 8578 | desert | arid-land | 3
+K 8593 # nobody says flatback for it
+S 8576 | Galapagos | island giant | 3
+S 8575 | giant | huge shelled | 2
+S 8606 | gopher | burrowing shelled | 5
+S 8605 | Greek | Mediterranean | 4
+S 8570 | green | large marine | 3
+S 8579 | Hermann's | - | 4
+S 8604 | Indian star | - | 5
+S 8581 | leopard | spotted-shell | 4
+S 8586 | map | map-patterned | 5
+S 8584 | mud | small freshwater | 4
+S 8585 | musk | stinkpot | 5
+S 8573 | painted | colorful-shelled | 3
+S 8602 | pancake | flat-shelled | 5
+S 8594 | pond | freshwater | 4
+S 8603 | radiated | Madagascar | 5
+S 8595 | river | riverine | 4
+S 8580 | Russian | steppe | 4
+K 1293 # nobody says sea for it
+S 8583 | softshell | leathery-shelled | 4
+S 8588 | spotted | polka-dot shelled | 5
+S 8587 | wood | forest-dwelling shelled | 4
+T frogs_and_toads
+S 8654 | African clawed | - | 4
+S 8659 | American | North American croaker | 3
+S 8667 | barking tree | - | 5
+S 8664 | chorus | singing | 5
+S 8641 | common | pond amphibian | 3
+S 8642 | common | warty amphibian | 3
+K 8666 # nobody says cricket for it
+S 8669 | Darwin's | mouth-brooding | 5
+S 8647 | edible | table | 4
+S 8650 | fire-bellied | - | 4
+S 8681 | flying | gliding amphibian | 4
+S 8660 | Fowler's | Fowler's amphibian | 5
+S 8661 | giant | huge amphibian | 4
+S 8651 | golden poison | - | 4
+S 8679 | golden | extinct orange amphibian | 4
+S 8653 | goliath | huge African amphibian | 4
+S 8662 | gray tree | - | 4
+S 8644 | green | North American green amphibian | 3
+S 8680 | hairy | hairy amphibian | 5
+S 8678 | harlequin | colorful stream amphibian | 5
+S 1210 | horned | horned amphibian | 4
+S 8646 | marsh | European marsh amphibian | 4
+S 8649 | midwife | father-carrying-eggs amphibian | 5
+K 8648 # nobody says pool for it
+S 8645 | red-eyed tree | - | 3
+S 8652 | strawberry poison | - | 4
+S 8655 | Surinam | flat-bodied amphibian | 5
+K 8668 # nobody says tailed for it
+S 8658 | White's tree | - | 4
+S 8665 | wood | woodland amphibian | 4
+T salamanders_and_newts
+S 8684 | alpine | mountain amphibian | 5
+K 8714 # clashes with alpine newt
+S 8715 | black | dark amphibian | 5
+S 8689 | California | West Coast amphibian | 5
+S 8697 | cave | cave-dwelling amphibian | 5
+S 1212 | crested | crested amphibian | 5
+S 8696 | dusky | dusky amphibian | 5
+S 8687 | eastern | eastern amphibian | 5
+S 1208 | giant | huge amphibian giant | 4
+S 8682 | great crested | - | 4
+S 8705 | Italian crested | - | 5
+S 8718 | Jefferson | Jefferson's amphibian | 5
+S 8716 | Jordan's | - | 5
+S 8698 | lungless | - | 5
+S 8685 | marbled | marbled water amphibian | 5
+K 8692 # clashes with marbled newt
+S 8683 | palmate | - | 5
+S 8704 | Pyrenean brook | - | 5
+S 8693 | red-backed | - | 5
+S 8686 | red-spotted | - | 5
+S 8688 | rough-skinned | - | 5
+S 8694 | slimy | slimy amphibian | 5
+S 1211 | smooth | smooth water amphibian | 5
+S 8690 | spotted | yellow-spotted amphibian | 4
+S 8695 | two-lined | - | 5
+T salmon_and_trout
+S 50747 | Atlantic | Atlantic migratory fish | 2
+S 50770 | Danube | Danube fish | 5
+S 50768 | ferox | - | 5
+S 50756 | golden | golden fish | 4
+S 50771 | landlocked | - | 4
+S 50764 | Pacific | Pacific migratory fish | 3
+K 50763 # not a shortening
+K 50754 # nobody says sea for it
+S 50751 | silver | silver fish | 3
+S 50766 | tiger | hybrid striped fish | 5

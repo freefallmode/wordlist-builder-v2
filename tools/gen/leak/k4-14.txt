@@ -1,0 +1,273 @@
+T climbing_words
+S 45086 | rock shoes | - | 3
+K 5645 # nobody says sport alone
+T fishing_words
+S 45151 = 1223
+S 45139 | deep sea | offshore angling | 3
+S 45155 = 2779
+S 45153 | license | angling permit | 2
+S 5369 | ice | angling on frozen lakes | 3
+T fishing_tackle
+K 45126 # fixed name, box is head noun
+T hunting_words
+S 10592 = 10594
+S 45179 | knife | skinning blade | 2
+S 45169 | license | game permit | 2
+S 45160 | season | legal game period | 2
+T casino_games
+S 45192 = 45411
+T casino_words
+K 29326 # nothing left
+S 45219 | gaming floor | - | 3
+T poker_terms
+K 16794 # nobody says face alone
+T blackjack_terms
+K 5658 # nothing left
+T betting_words
+S 45349 | exchange | peer-to-peer wagering site | 3
+S 45350 | bookies | betting shop | 2
+T lottery_words
+K 5666 # nothing left
+K 45373 # nobody says National alone
+T card_games
+K 45423 # fixed title
+T chess_terms
+S 45466 | clock | game timer | 2
+T chess_openings
+K 58850 # nobody says Bird's alone
+T dice_games
+K 45499 # poker alone is card game
+K 45489 # nobody says liar's alone
+T card_game_words
+K 44348 # nobody says wild alone
+T mahjong_words
+K 5733 # nothing left
+T video_games
+K 5832 # nobody says over for it
+K 5825 # nothing left
+T gaming_hardware
+S 45686 | chair | gamer seat | 2
+T arcade_words
+K 45691 # nothing left
+T pinball_words
+K 58897 # fixed title
+T game_controls
+K 45734 # nobody says motion alone
+T esports_words
+K 45751 # nothing left
+T power_ups_and_pickups
+K 45791 # fixed name
+K 45808 # nothing left
+T collecting_hobbies
+S 45894 | butterflies | insect specimen hobby | 3
+S 5864 | coins | numismatic hobby | 1
+S 45896 | shells | beachcombed specimens | 2
+S 5862 | stamps | postage hobby | 1
+T model_making
+S 2908 = 2856
+S 45904 | plastic kit | - | 3
+T puzzles
+K 45955 # nobody says picture alone
+K 45942 # fixed name, box is head noun
+K 45939 # nobody says slide alone
+T logic_puzzles
+K 58927 # nobody says Einstein's alone
+K 45938 # nobody says grid alone
+K 58921 # nothing left
+K 58930 # nobody says sliding alone
+K 58926 # zebra alone is the animal
+T magic_tricks
+S 13724 | card | playing-card magic | 2
+S 45961 | coin | coin magic | 2
+S 45964 | rope | rope magic | 2
+T paper_crafts
+K 45996 # nobody says handmade alone
+K 61831 # nobody says mulberry alone
+S 45985 | chain | looped paper strips | 2
+S 45991 | doll | cut-out figure | 2
+S 45992 = 48829
+S 45990 | flower | crepe paper bloom | 2
+K 45982 # folding alone is not a craft
+S 23498 = 3027
+S 45999 = 5882
+S 39575 | plane | folded dart | 1
+S 45984 | snowflake | cut paper decoration | 2
+K 61828 # nobody says tole alone
+S 45997 | weaving | interlaced paper strips | 3
+T pottery_words
+K 5853 # nothing left
+T toys_and_play
+K 5988 # nobody says clockwork alone
+K 5946 # brand name
+S 5971 = 64800
+S 5948 | car | miniature vehicle | 2
+S 5949 | soldier | miniature figure | 2
+S 5989 | wind-up | clockwork-powered plaything | 3
+T toys
+S 5971 = 64800
+K 46066 # nobody says pull alone
+S 5948 | car | miniature vehicle | 2
+S 5949 | soldier | miniature figure | 2
+S 46058 | train | miniature railway set | 2
+S 5989 | wind-up | clockwork-powered plaything | 3
+T dolls_and_figures
+K 5947 # nobody says action alone
+K 46177 # baby alone is an infant
+S 61842 | BJD | - | 5
+K 45991 # nobody says paper alone
+K 46167 # nobody says porcelain alone
+K 5993 # nobody says rag alone
+K 46173 # troll alone is a monster
+K 22425 # nobody says voodoo alone
+K 48836 # nobody says worry alone
+T african_soccer_clubs
+K 46302 # nobody says Africain alone
+S 46291 | Raja | Casablanca club | 4
+S 46298 | Yanga | Dar es Salaam club | 5
+T capoeira_words
+K 5438 # nothing left
+T highland_games
+K 46524 # nobody says dancing alone
+K 11800 # fixed name
+T guitar_types
+S 51365 | gypsy jazz | Django-style guitar | 4
+K 51367 # nobody says harp for it
+S 51357 | Hawaiian | steel-style guitar | 3
+T bowed_instruments
+K 51379 # plain psaltery is plucked
+T drums
+S 6002 | kit | full percussion set | 2
+S 51390 | frame | hoop-and-skin drum | 3
+S 51393 | goblet | darbuka-style drum | 4
+K 51400 # kettle alone is appliance
+K 51394 # nobody says slit alone
+S 10608 | steel pan | - | 2
+K 35290 # nobody says talking alone
+S 51397 | tenors | marching drums | 3
+T keyboard_instruments
+K 10627 # nothing left
+T african_instruments
+S 61853 = 10595
+T chinese_instruments
+S 51443 = 6003
+S 61855 = 288
+S 61854 = 291
+T japanese_instruments
+S 61856 = 10595
+S 61857 = 282
+T andean_instruments
+S 61860 = 6003
+T electronic_instruments
+S 10685 | e-drums | - | 3
+T rock_styles
+S 51635 | acid | psychedelic rock style | 3
+K 51648 # nobody says post alone
+S 51633 = 62846
+K 51623 # nobody says roll alone
+T jazz_words
+S 10883 = 10860
+T african_music_styles
+K 61861 # nobody says drumming alone
+K 61862 # jazz alone is another genre
+T asian_music_styles
+S 51781 | anime | anime soundtrack genre | 3
+S 51757 | Bollywood | Hindi film songs | 3
+T latin_music_styles
+K 51805 # jazz alone is another genre
+K 51807 # pop alone is another genre
+K 51792 # trap alone is another genre
+T american_roots_music
+K 51838 # nobody says banjo for the genre
+K 51832 # nobody says Creole alone
+S 51821 = 64819
+K 51830 # nobody says mountain alone
+T european_folk_music
+K 51858 # nobody says bagpipe for the genre
+K 51850 # fixed name
+T song_types
+S 10931 = 6099
+K 10943 # nobody says torch alone
+K 10949 # nobody says work alone
+T orchestra_words
+K 11052 # nobody says chamber alone
+T tempo_words
+K 11092 # nothing left
+K 11098 # nobody says giusto alone
+K 11110 # nobody says primo alone
+T notes_and_rests
+K 11175 # nobody says bar alone
+K 11163 # dotted alone is adjective
+S 11177 | breve | double whole note | 3
+K 11161 # bare form means the note
+K 11159 # bare form means the note
+K 11160 # bare form means the note
+K 11162 # bare form means the note
+K 11165 # nobody says tied alone
+K 11158 # bare form means the note
+T music_players
+K 11316 # nobody says box alone
+S 11321 | hi-fi | all-in-one stereo | 3
+K 11307 # nobody says record alone
+K 11328 # nobody says vinyl alone
+T rock_band_lineup
+K 11350 # nobody says boy alone
+S 11351 | tribute | cover act | 3
+K 11352 # nobody says wedding alone
+T musicians
+S 6161 | busker | - | 2
+T dance
+K 6234 # nobody says card alone
+K 6229 # nobody says floor alone
+T folk_dances
+K 11815 # nobody says fan alone
+K 11814 # nobody says lion alone
+K 11803 # nobody says sword alone
+T middle_eastern_dances
+K 52029 # nobody says spoon alone
+K 11803 # nobody says sword alone
+T african_dances
+K 52043 # nobody says jump alone
+K 61991 # nobody says war alone
+K 52042 # nobody says warrior alone
+K 52045 # nobody says Zulu alone
+T asian_dances
+K 52063 # nobody says bamboo alone
+K 25076 # nobody says dragon alone
+K 11815 # nobody says fan alone
+K 11814 # nobody says lion alone
+K 52052 # nobody says ribbon alone
+T polynesian_dances
+K 52077 # nobody says slap alone
+T north_american_folk_dances
+K 52105 # nobody says buck alone
+K 52109 # nobody says eagle alone
+K 52100 # nobody says hoop alone
+K 52104 # nobody says round alone
+K 52108 # nobody says stomp alone
+T european_folk_dances
+S 52121 | clogging | - | 3
+K 11803 # nobody says sword alone
+T dance_moves
+K 11851 # nobody says hammer alone
+T dance_studio_words
+K 11889 # nobody says bag alone
+K 11905 # nobody says belt alone
+K 11894 # nothing left
+T art
+K 6361 # fixed name
+K 6334 # nobody says street alone
+T art_movements
+K 6361 # fixed name
+K 12006 # nobody says land alone
+K 11991 # nobody says op alone
+K 6334 # nobody says street alone
+T art_gallery_words
+K 6301 # nothing left
+K 12158 # portrait alone is artwork
+T color_theory_words
+K 12202 # nobody says harmony alone
+K 12193 # nobody says temperature alone
+K 12173 # wheel alone is a part
+K 12169 # nothing left
+K 12171 # nothing left
+K 12172 # nothing left

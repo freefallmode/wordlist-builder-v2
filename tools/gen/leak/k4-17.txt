@@ -1,0 +1,259 @@
+T battery_types
+S 23170 | car | starter power | 2
+S 49616 | flow | liquid-tank type | 4
+S 49613 | hearing aid | tiny cell | 3
+S 49619 | laptop | notebook power | 2
+S 49620 | phone | handset power | 2
+S 49608 | solar | panel storage | 3
+S 49628 | truck | heavy vehicle power | 3
+S 49612 | watch | wristwatch cell | 3
+T engines
+S 49709 | aircraft | flying power | 3
+K 49702 # nobody says beam alone
+K 49703 # nobody says traction alone
+T engineering_fields
+S 49737 | audio | recording work | 3
+S 49732 | computer | hardware design | 2
+S 49744 | control | automation | 4
+S 62259 | forensic | failure investigation | 5
+S 40933 | genetic | gene editing | 3
+S 49722 | materials | substances | 3
+S 49740 | railway | track and trains | 4
+S 49715 | software | programming | 2
+S 49739 | sound | acoustics work | 3
+S 49727 | systems | whole-system design | 4
+S 49745 | traffic | road flow | 4
+S 49735 | transport | moving people and goods | 4
+T energy_sources
+S 49760 | waste | burned refuse | 4
+T fuels
+S 58362 = 63827
+T materials_science
+K 49796 # nobody says smart alone
+T power_grid_words
+K 37884 # nothing left
+K 49831 # fixed name
+K 49832 # cut alone means other things
+K 62278 # fixed technical term
+K 50003 # failure alone not a name
+K 49816 # line alone too vague
+K 49824 # plant alone means vegetation
+K 49817 # station alone too vague
+K 62283 # fixed technical term
+T antarctic_research_station
+K 49901 # vessel alone names nothing
+K 31316 # weather alone means climate
+T science_lab
+S 49970 | report | experiment write-up | 2
+T launch_pad
+K 41352 # window alone means glass
+T data_center
+K 42611 # hall alone names nothing
+T celtic_languages
+K 62317 # nobody says Continental alone
+K 62316 # nobody says Insular alone
+T codes_and_signals
+S 25998 | flag | ship signalling | 3
+S 26016 | Navajo | wartime cipher | 4
+S 26005 | flags | ship signalling | 3
+S 26007 | tap | knock cipher | 4
+T keyboard_symbols
+K 26150 # at is a function word
+T handwriting_words
+K 26174 # nothing left
+T grammar_terms
+K 26305 # nothing left
+T sentence_parts
+K 26379 # nothing left
+K 26399 # topic alone not a sentence
+T canadian_slang
+K 27566 # fixed name
+T words_meaning_nonsense
+K 27787 # stuff alone is not nonsense
+T words_for_toilet
+K 27931 # squat alone means exercise
+T zigzag_words
+K 27841 # nothing left
+T shades_of_red
+K 38567 # Indian alone means nationality
+K 38566 # Venetian alone means person
+T shades_of_blue
+S 38586 | Carolina | pale sky tint | 4
+S 38582 | Egyptian | ancient pigment | 5
+S 38580 | Oxford | university tint | 4
+S 7729 | Prussian | dark pigment | 4
+T shades_of_green
+S 38604 | Lincoln | forest tint | 5
+S 38603 | Paris | pigment | 5
+T shades_of_yellow
+S 38615 | cadmium | pigment | 4
+S 38612 | chrome | pigment | 4
+S 38611 | Naples | pigment | 5
+K 38617 # just a modifier
+S 38613 | school bus | road tint | 2
+T shades_of_purple
+K 38624 # just a modifier
+S 38622 | imperial | regal tint | 4
+K 38625 # just a modifier
+S 38620 | royal | regal tint | 2
+T shades_of_orange
+S 38644 | blaze | hunter tint | 3
+K 38648 # just a modifier
+K 38638 # burnt alone is not a name
+S 38647 | cadmium | pigment | 5
+K 38643 # international alone names nothing
+K 38645 # neon alone names nothing
+K 38649 # just a modifier
+K 38642 # safety alone too vague
+T shades_of_pink
+K 38652 # just a modifier
+S 38662 | Barbie | doll tint | 3
+K 38659 # candy alone too vague
+K 38664 # just a modifier
+K 38651 # hot alone names nothing
+K 38663 # just a modifier
+K 38658 # millennial alone too vague
+K 38657 # powder alone too vague
+K 38655 # fixed name
+T shades_of_gray
+S 38673 | battleship | navy tint | 3
+K 38685 # just a modifier
+S 38677 | elephant | animal tint | 3
+K 38684 # just a modifier
+K 38676 # mouse alone too vague
+S 38678 | storm | cloud tint | 2
+T shades_of_white
+S 38706 | antique | aged tint | 3
+K 38713 # arctic alone too vague
+K 38715 # coconut alone too vague
+K 38707 # floral alone too vague
+S 38703 | ghost | pale tint | 3
+K 38702 # nothing left
+S 38708 | oyster | pearly tint | 3
+K 38711 # just a modifier
+S 38709 | titanium | pigment | 4
+T shades_of_black
+K 38733 # nothing left
+S 38727 | ivory | pigment | 5
+S 38719 | pitch | tar tint | 2
+S 38731 | velvet | soft tint | 3
+T blue_green_shades
+K 38744 # nothing left
+K 38748 # bluish alone is not a name
+S 38738 | Caribbean | sea tint | 3
+K 38745 # nothing left
+S 38747 | Persian | pigment | 5
+K 38750 # sea foam already in theme
+K 38596 # sea alone too vague
+T pastel_colors
+K 38756 # pastel is the identity
+K 38757 # pastel is the identity
+K 38761 # pastel is the identity
+K 38755 # pastel is the identity
+K 38762 # pastel is the identity
+K 38758 # pastel is the identity
+T neon_colors
+K 38772 # neon is the identity
+K 38606 # neon is the identity
+K 38645 # neon is the identity
+K 38765 # neon is the identity
+K 38773 # neon is the identity
+K 38787 # neon is the identity
+K 38766 # neon is the identity
+T line_types
+K 2430 # contour already in theme
+T symbols
+K 38959 # power alone too vague
+S 38965 | radiation | hazard sign | 3
+A | trefoil | hazard sign | 4
+T curves_and_spirals
+K 38979 # staircase loses the spiral
+T square_things
+S 38452 | market | trading plaza | 2
+K 57809 # quilt alone is not square
+S 38451 | town | central plaza | 2
+T oval_things
+K 33582 # fixed name
+T things_made_of_glass
+K 57820 # drinking alone names nothing
+K 57823 # eye alone means body part
+K 13619 # slipper alone is not glass
+K 33731 # magnifying alone names nothing
+S 48819 | shot | tiny tumbler | 2
+K 5881 # stained alone names nothing
+S 20141 | wine | stemware | 2
+T things_made_of_paper
+S 62427 | joss | burnt offering | 5
+S 25559 | bag | carrier | 2
+S 57831 | boat | folded toy | 2
+S 45985 | chain | party decoration | 2
+S 25552 | cup | disposable drinkware | 2
+S 45992 | fan | folding cooler | 2
+S 57832 | hat | folded headwear | 2
+S 39575 | plane | folded glider | 2
+S 25560 | straw | eco drinking tube | 2
+S 25549 | towel | kitchen roll | 2
+K 23138 # toilet alone means bathroom
+K 25202 # wrapping alone names nothing
+T things_made_of_rubber
+S 25544 | band | elastic loop | 2
+S 46070 | duck | bath toy | 2
+S 39106 | glove | cleaning hand wear | 2
+S 45988 | stamp | ink pad tool | 2
+T things_made_of_leather
+S 24376 | jacket | biker coat | 2
+T sticky_things
+S 18577 | glutinous rice | - | 3
+T sour_foods
+K 39151 # candy alone loses the sourness
+K 526 # fixed name
+T bitter_foods
+K 62452 # lemon alone not bitter
+S 15586 | karela | - | 4
+K 39166 # nothing left
+T fizzy_drinks
+K 886 # energy alone is not a drink
+T american_candy
+K 20186 # apple alone is the fruit
+K 621 # cane alone names nothing
+K 18367 # corn alone is the vegetable
+K 18362 # rock alone is a stone
+T words_for_fast
+K 39322 # compound with nothing shorter
+T words_for_smart
+K 39403 # compound with nothing shorter
+T size_labels
+K 39552 # compound with nothing shorter
+K 39293 # compound with nothing shorter
+K 39553 # fixed phrase
+K 39560 # compound with nothing shorter
+K 39549 # compound with nothing shorter
+K 39551 # travel alone means journey
+T things_that_roll
+K 39784 # carpet alone does not roll
+T ways_to_jump
+S 15859 | box | plyometric hop | 3
+K 39855 # nobody says broad alone
+S 39842 | high | athletics event | 2
+S 39841 | long | athletics event | 2
+S 39852 | ski | winter sport leap | 2
+S 39846 | triple | athletics event | 3
+S 39854 | tuck | knees-up leap | 3
+T slow_things
+S 4750 | Crock-Pot | brand pot | 3
+K 39862 # lane alone names nothing
+T hot_things
+K 728 # sauce alone not hot
+K 31938 # spring alone means season
+K 15541 # fixed name
+T cold_things
+K 39884 # shower alone not cold
+T fire_words
+K 39912 # bush alone means shrub
+K 20611 # Greek alone means nationality
+T ice_words
+K 2016 # black alone means colour
+K 1613 # fixed name
+K 30900 # cap alone means hat
+K 30905 # shelf alone means furniture
+K 30904 # pack alone means bag

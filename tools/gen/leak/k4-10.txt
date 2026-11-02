@@ -1,0 +1,267 @@
+T famous_routes
+K 48209 # Garden alone names nothing
+K 48208 # Incense alone names nothing
+K 48199 # Spice alone names nothing
+T road_trip_games
+K 48296 # bare alphabet is just letters
+K 48299 # quiet is not a game name
+T room_types
+K 48375 # nobody says bunk for room
+K 48369 # connecting is only an adjective
+T vacation_homes
+K 48391 # second alone is nonsense
+T famous_hotels
+S 48412 | Chelsea | New York landmark inn | 3
+K 48428 # fixed title with song name
+K 48421 # Paris alone is the city
+T tent_parts
+K 48496 # inner is only an adjective
+K 48502 # nobody says bag alone
+T tent_types
+S 48536 | backpacking | lightweight hiking shelter | 3
+S 48543 | beach | sun shelter for sand | 2
+S 38287 | bedouin | nomadic goat-hair shelter | 3
+S 60709 | expedition | extreme-weather shelter | 3
+S 60705 | frame | rigid-poled shelter | 3
+S 48542 | glamping | luxury camping shelter | 3
+S 48530 | hammock | hanging shelter | 3
+S 48544 | hoop | bent-pole shelter | 4
+S 48537 | instant | pop-up shelter | 3
+K 48546 # mess means dining hall
+S 48522 | pup | tiny two-person shelter | 3
+S 48531 | roof | car-top shelter | 3
+S 48539 | tarp | tarpaulin shelter | 4
+S 60707 | umbrella | umbrella-style shelter | 3
+K 48532 # nobody says wall alone
+S 60706 | wedge | wedge-shaped shelter | 4
+T rvs_and_campers
+S 48282 | van | converted living van | 2
+K 48623 # nobody says pickup for it
+T trail_words
+K 48665 # nobody says register alone
+T famous_hiking_trails
+S 48692 | Bruce | Ontario long-distance path | 4
+K 48694 # Colorado is a state
+K 32160 # Inca alone names a people
+K 48217 # John Muir is a person
+K 60727 # Otter alone is an animal
+K 48690 # Long alone is nonsense
+T climbing_gear
+K 48712 # nobody says loop alone
+T safari_words
+K 48741 # hat alone is too vague
+T luggage
+K 48744 # hand alone is nonsense
+T travel_documents
+K 48791 # cruise alone is nonsense
+T beach_gear
+K 39807 # nobody says ball alone
+T souvenirs
+S 48820 | spoon | collectible decorative spoon | 3
+T turkish_souvenirs
+S 643 | lokum | - | 3
+T travel_accessories
+K 47317 # pillow alone too vague
+T beach_vacation
+K 48402 # nobody says hut alone
+T ski_trip
+K 48870 # one fixed word
+K 43521 # nothing left
+K 60749 # bum alone is nonsense
+S 47074 = 46935
+K 43555 # school alone too vague
+T cruise_words
+K 48903 # card alone too vague
+K 48890 # director alone too vague
+T cruise_lines
+K 59376 # fixed company name
+S 59356 | Disney | family ship operator | 2
+T sightseeing_words
+K 2963 # nothing left
+T famous_theme_parks
+K 48946 # fixed park name
+K 48963 # Movie alone nonsense
+K 48950 # Ocean alone nonsense
+T beach_destinations
+K 36623 # Myrtle alone is a plant
+K 36620 # Venice alone is the city
+S 36619 | Whitehaven | Whitsunday Island shore | 3
+T special_vehicles
+K 3156 # amphibious is only an adjective
+T emergency_vehicles
+K 49038 # shorter form nonsense
+K 49040 # tactical is only an adjective
+T military_vehicles
+K 49104 # nobody says truck alone
+T delivery_vehicles
+K 49118 # shorter form nonsense
+T space_vehicles
+K 49157 # plane alone is wrong
+K 7141 # nobody says station alone
+T truck_types
+S 49125 | armored | cash-carrying armoured hauler | 3
+S 49110 | box | enclosed cargo hauler | 2
+S 49195 | bucket | utility lift hauler | 3
+S 49201 | concrete | cement-mixing hauler | 3
+S 49184 | delivery | parcel hauler | 2
+S 3146 = 49254
+S 3145 | food | mobile kitchen | 2
+S 49196 | fuel | petrol-carrying hauler | 3
+S 3121 | ice cream | mobile dessert vendor | 2
+S 30262 | logging | timber hauler | 3
+S 3150 | mail | postal hauler | 2
+S 3144 | monster | oversized-wheel show vehicle | 2
+K 49127 # moving is only an adjective
+S 49200 | panel | enclosed utility hauler | 4
+S 2640 = 64795
+S 49191 | stake | slatted-side hauler | 4
+S 3119 = 49255
+K 28334 # nothing left
+S 49197 | water | water-spraying hauler | 3
+T electric_vehicles
+S 47886 = 28280
+A | e-bike | battery-assisted cycle | 2
+S 46882 = 2646
+S 32362 = 23150
+S 49221 = 39832
+S 49220 = 28334
+S 49222 = 46631
+S 49247 | EV | - | 2
+T arms_and_legs
+K 14233 # crook alone is nonsense
+K 14231 # lower is only an adjective
+K 14227 # upper is only an adjective
+T joints
+S 14273 | facet | spinal articulation | 5
+S 14270 | gliding | sliding articulation | 4
+S 14262 | pivot | rotating articulation | 4
+S 14271 | saddle | saddle-shaped articulation | 5
+T beard_styles
+S 53032 | anchor | chin-and-moustache style | 4
+S 53030 | circle | goatee-ring style | 4
+S 53026 | full | thick all-over style | 1
+S 53034 | long | extended-length style | 2
+S 53043 | spade | spade-shaped style | 5
+T skin_words
+K 3189 # nothing left
+T fingers
+K 14383 # nobody says fourth alone
+S 14376 | index | pointing digit | 2
+S 14384 | little | smallest digit | 2
+K 14381 # nobody says longest alone
+S 14380 | middle | central digit | 2
+S 14378 = 64803
+S 14382 | ring | wedding band digit | 2
+T bones
+S 3286 | femur | - | 2
+T blood_words
+K 3245 # nothing left
+K 14447 # pressure alone too vague
+K 14448 # type alone too vague
+K 14473 # vessel alone too vague
+S 14452 | red cell | - | 3
+S 14451 | white cell | - | 3
+T blood_components
+K 53063 # synonym erythrocytes already present
+K 53066 # synonym leukocytes already present
+T brain_parts
+K 3242 # nothing left
+K 14522 # nobody says stem alone
+T body_systems
+K 14583 # blood alone is a fluid
+K 14576 # central nervous is incomplete
+K 14588 # enteric nervous is incomplete
+T hormones
+S 14619 | LH | - | 3
+S 14613 | PTH | - | 4
+T digestive_system
+S 14645 | alimentary canal | - | 4
+T senses
+K 3314 # sixth alone is nonsense
+T sight_words
+K 38 # nothing left
+T hearing_words
+K 14715 # hard alone is nonsense
+K 14704 # aid alone too vague
+T smell_words
+K 40 # nothing left
+T ear_parts
+K 14799 # nobody says flap alone
+T touch_words
+K 42 # nothing left
+T eye_parts
+S 14863 = 64804
+S 14848 = 64804
+T allergies
+S 14955 | pollen-food syndrome | - | 5
+T cold_weather_ailments
+K 15098 # cold is the whole identity
+K 15094 # shock alone too vague
+S 15089 | fever blisters | - | 3
+K 15092 # urticaria alone is wrong
+K 14956 # common alone is nonsense
+T doctor_s_office
+K 3448 # nothing left
+S 3488 | family physician | - | 2
+T pharmacy
+K 15348 # technician alone too vague
+T dental_words
+K 15430 # nobody says dam alone
+T smoking_words
+K 15474 # no alone is nonsense
+K 15472 # jacket alone too vague
+T african_remedies
+K 15618 # potato alone is wrong
+T baby_gear
+S 15784 = 64805
+T fitness
+K 3599 # center alone too vague
+T yoga_poses
+S 15901 | balasana | - | 4
+T stretches
+K 16003 # doorway alone too vague
+K 16009 # nobody says wall alone
+T sleep
+K 3705 # beauty alone is nonsense
+T sleep_words
+K 16021 # nothing left
+T dream_words
+K 3678 # nothing left
+T sleep_disorders
+K 16149 # delayed phase incomplete
+K 16146 # shift work incomplete
+K 16142 # deprivation alone too vague
+K 16147 # eating alone is wrong
+K 16096 # paralysis alone too vague
+S 16085 | somniloquy | - | 5
+K 16144 # terror alone too vague
+T korean_skincare
+S 53083 | K-beauty | - | 2
+T makeup
+K 16234 # remover alone too vague
+T nail_care
+K 16250 # false is only an adjective
+K 16249 # art alone too vague
+K 60828 # matrix alone too vague
+K 16253 # strengthener alone too vague
+K 16267 # whitener alone too vague
+S 16251 | press-ons | - | 2
+T bath_time
+K 60831 # nobody says screen alone
+K 16287 # sheet alone too vague
+T sun_care
+K 16346 # one fixed word
+K 16355 # shirt alone too vague
+S 16371 | age spots | - | 2
+T massage_types
+S 16459 | champissage | - | 5
+K 16465 # gun alone is nonsense
+K 16471 # oil alone too vague
+T healthy_habits
+K 16534 # stacking alone is nonsense
+T spa
+K 16558 # day alone too vague
+T european_spa_towns
+K 16589 # nothing left
+T nutrition
+K 3844 # facts alone too vague

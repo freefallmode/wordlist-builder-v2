@@ -1,0 +1,72 @@
+T words_for_hot
+K 39940 # bare form is nonsense
+K 39929 # piping alone not used
+K 39928 # compound is the whole identity
+K 39930 # compound is the whole identity
+T words_for_cold
+K 39958 # stone alone not used
+T things_that_glow
+K 11210 # stick alone means nothing
+K 39972 # worm alone is just worm
+T words_for_dark
+K 40052 # pitch alone not used
+T red_things
+S 9682 | lesser panda | - | 4
+K 19645 # bare form is theme word
+T yellow_things
+K 38612 # chrome alone is plating
+T green_things
+K 40108 # mamba alone ambiguous
+T blue_things
+K 17929 # bare form is theme word
+S 8155 = 1110
+S 8776 | tang | fish | 3
+S 1306 = 1284
+K 9701 # nothing left to shorten
+K 7729 # nobody says Prussian alone
+T white_things
+K 21499 # flag alone not white
+K 33580 # fixed name
+K 40123 # Alice character, fixed name
+T black_things
+K 22423 # cat alone not black
+K 7122 # fixed name
+K 19246 # olive alone is other things
+K 1402 # nobody says widow
+T orange_things
+K 76 # nothing left
+T pink_things
+S 40146 | boto | Amazon river dolphin | 4
+K 40152 # lemonade is not pink
+K 40142 # fixed name
+T purple_things
+K 34624 # fixed name
+K 40160 # potato not purple
+K 7732 # nobody says Tyrian alone
+T things_with_keys
+K 4997 # ring alone is jewelry
+K 26018 # Morse alone is the code
+T things_with_wheels
+K 13776 # fixed name
+T things_with_shells
+K 40198 # ark alone is boat
+K 40196 # pie alone not a shell
+T things_with_horns
+K 295 # French alone is language
+S 22388 | cornucopia | - | 3
+T things_with_eyes
+K 40211 # googly alone not used
+K 24980 # fixed phrase
+T things_with_faces
+K 30857 # rock alone is stone
+T things_with_tongues
+K 40224 # groove alone wrong
+T things_with_arms
+K 2526 # fixed phrase
+T things_with_holes
+K 23227 # punch alone is a hit
+T things_with_screens
+K 4577 # small alone nonsense
+T things_that_pop
+K 40253 # fixed brand name
+K 40260 # nothing left to shorten

@@ -1,0 +1,251 @@
+T season_words
+S 25309 | dry | tropical rainless spell | 3
+K 25335 # fixed name # flu alone not a season
+K 25336 # nobody says growing alone
+K 25325 # nobody says high alone
+S 25334 | hurricane | storm period | 3
+K 25326 # nobody says low alone
+S 25330 | mud | thaw period | 4
+K 25327 # name word is whole identity
+K 25328 # nobody says peak alone
+S 25310 | rainy | wet spell | 2
+K 25329 # nobody says shoulder alone
+S 25308 | wet | tropical rainy spell | 3
+T clocks_and_calendars
+K 25019 # advent alone is the church season
+S 3685 = 55792
+S 25375 | analog | dial display | 3
+S 25373 | atomic | caesium-based timekeeper | 3
+K 25395 # nobody says carriage alone
+S 25390 = 55782
+S 25371 | cuckoo | chiming novelty timepiece | 2
+K 23239 # desk alone is furniture
+S 25374 | digital | numeric display | 2
+S 23524 | longcase | tall pendulum timepiece | 4
+S 25385 | Hebrew | Jewish dating system | 3
+S 25383 | Julian | Roman-era dating system | 4
+S 25384 | lunar | moon-based dating system | 3
+K 23113 # nobody says mantel alone
+S 25386 | Mayan | Mesoamerican dating system | 3
+K 25381 # wall alone is not a calendar
+K 25377 # wall alone is not a clock
+S 25392 | clepsydra | ancient water timepiece | 5
+T clock_types
+S 3685 = 55792
+S 25375 | analog | dial display | 3
+K 55800 # nobody says astronomical alone
+S 25373 | atomic | caesium-based timekeeper | 3
+K 40274 # nobody says bedside alone
+K 55798 # nobody says candle alone
+K 25395 # nobody says carriage alone
+K 45466 # chess alone is a game
+S 25371 | cuckoo | chiming novelty timepiece | 2
+S 25374 | digital | numeric display | 2
+K 55806 # nobody says flower alone
+S 23524 | longcase | tall pendulum timepiece | 4
+K 55803 # nobody says grandmother alone
+K 23113 # nobody says mantel alone
+S 55801 | quartz | battery-driven movement | 3
+K 55805 # skeleton alone is bones
+K 55799 # nobody says speaking alone
+K 55802 # nobody says tower alone
+K 25377 # wall alone is not a clock
+S 25392 | clepsydra | ancient water timepiece | 5
+T times_of_day
+K 25436 # nobody says break alone
+T cords_and_strings
+K 23164 # nobody says extension alone
+K 25529 # guitar alone is the instrument
+K 25531 # kite alone is toy or bird
+K 25542 # macrame alone is the craft
+K 25528 # power alone means energy
+K 25538 # nobody says sash alone
+K 25539 # nobody says shock alone
+T paper_goods
+K 25561 # nobody says baking alone
+S 25574 | blotter | ink-absorbing sheet | 4
+K 17901 # nobody says butcher alone
+K 25575 # carbon alone is an element
+K 25567 # nobody says construction alone
+K 25566 # crepe alone is pancake or fabric
+K 40400 # filter alone is not paper
+K 25581 # nobody says graph alone
+K 25582 # nobody says lined alone
+S 25576 | origami | folding sheets | 3
+S 25559 = 34004
+S 25552 = 25507
+K 25573 # napkin already in theme
+S 25551 = 20137
+S 25560 | straw | drinking tube | 2
+K 25549 # towel alone is cloth
+S 25562 = 21765
+K 25580 # photo means a picture
+K 25554 # nobody says printer alone
+K 25583 # nobody says sugar alone
+K 25207 # tissue already in theme
+S 23138 | toilet roll | - | 1
+K 25565 # nobody says tracing alone
+K 25564 # wax alone is not paper
+S 25202 | gift wrap | - | 2
+K 25553 # nobody says writing alone
+T candle_words
+K 20147 # nothing left
+K 25596 # holder alone is vague
+K 25618 # chandler already in theme
+K 25595 # snuffer already in theme
+K 25614 # church alone is a building
+K 25615 # taper already in theme
+S 25608 | dipped | hand-dunked wax stick | 4
+S 25601 | floating | pond-style wax light | 3
+S 25600 | jar | container wax light | 3
+T emergency_supplies
+K 25638 # kit alone is too vague
+T drinking_vessels
+K 55843 # horn alone is instrument
+T serving_dishes
+K 55867 # bonbon alone is a sweet
+K 25791 # butter alone is food
+K 55854 # nobody says chafing alone
+K 55859 # compote alone is food
+K 55862 # gratin alone is food
+K 19822 # pie alone is food
+T locks_and_keys
+K 25717 # nobody says bicycle alone
+K 25716 # nobody says bike alone
+S 25730 | bump | picking method | 4
+K 25740 # cabinet alone is furniture
+K 25727 # car alone is a vehicle
+S 25711 | chain | door security type | 3
+S 25701 | combination | dial-code type | 2
+S 25714 | cylinder | pin-tumbler type | 4
+K 25718 # name word is head noun
+K 25737 # door alone is not a lock
+K 25726 # house alone is a building
+S 25733 | ignition | engine-start type | 3
+K 25728 # cutter alone is a tool
+K 4997 # ring alone is jewelry
+K 25719 # safe alone is a strongbox
+S 25724 | lever | lever-tumbler type | 4
+K 25741 # luggage alone is bags
+S 25704 | master | all-opening type | 2
+S 25738 | rim | surface-mounted type | 5
+S 25703 | skeleton | passkey type | 3
+S 25720 | smart | electronic type | 3
+S 23312 | spare | extra type | 2
+S 25734 | time | timed vault type | 4
+K 25742 # TSA alone is an agency
+S 25723 | warded | old-style type | 5
+T things_with_buttons
+K 24300 # panic alone is a feeling
+T ball_sports
+K 5240 # nobody says cycle alone
+T sports_balls
+K 39807 # beach alone is a place
+K 39048 # nobody says billiard alone
+K 42663 # cue alone is the stick
+K 39809 # nobody says exercise alone
+S 42655 = 44063
+K 15880 # medicine alone is a drug
+S 39569 = 5245
+S 42659 = 5203
+S 42651 = 5252
+K 42664 # stress alone is tension
+S 42653 = 5202
+T baseball_bases
+K 58632 # complete theme, home plate exists
+T racket_sports
+K 5257 # nothing left
+T tennis_shots
+S 43018 | approach | net-rushing prelude | 4
+S 43013 | passing | past-the-opponent | 3
+T cue_sports_terms
+K 43102 # nothing left
+S 42663 | white | pool and snooker | 3
+T archery_terms
+K 5281 # field alone is not archery
+T darts_terms
+K 43170 # nothing left
+T bowling_terms
+S 43213 = 23349
+T water_sports
+S 5321 | marathon swimming | - | 3
+T diving_terms
+K 43324 # synchronized already in theme
+T scuba_words
+K 29203 # nothing left
+T sailing_sports
+K 43490 # Olympic alone is a games
+K 5296 # nothing left
+T board_and_paddle_sports
+K 43502 # surfing already in theme
+T snow_sports
+K 61601 # polo alone is a sport
+K 5375 # tubing alone is water
+T skating_words
+K 5348 # nobody says figure alone
+K 43571 # nobody says roller alone
+K 5359 # speed alone is a measure
+T ice_hockey_terms
+K 43603 # nothing left
+K 3131 # Zamboni already in theme
+T curling_words
+K 5350 # nothing left
+T martial_arts
+S 5404 | MMA | - | 2
+T sumo_words
+K 5409 # nothing left
+S 58750 | heya | - | 4
+K 39518 # rikishi already in theme
+T karate_words
+K 43847 # chop alone is a cut
+T judo_words
+K 43890 # throw alone is a toss
+T gymnastics
+S 43972 | rhythmic | ribbon-and-hoop discipline | 3
+T running_words
+S 44007 = 27367
+S 5630 | trail | off-road racing | 3
+T famous_marathons
+K 58783 # fixed name
+K 58776 # Olympic alone is a games
+T triathlon_words
+K 44024 # nothing left
+T cheerleading_words
+S 44084 = 4905
+T sports_venues
+K 44194 # complex alone is vague
+K 44179 # hall alone is a building
+T sports_officials
+K 44201 # nobody says fourth alone
+T sports_clothing
+S 24427 = 24408
+S 44251 = 4871
+T famous_stadiums
+K 44398 # Dodger alone is the team
+S 44429 | Motera | - | 5
+K 44390 # Yankee alone is the team
+T olympic_host_cities
+K 2267 # Mexico alone is the country
+T trophies_and_prizes
+K 44477 # Wimbledon alone is the venue
+K 61771 # Wisden alone is the almanac
+T famous_races
+K 43451 # boat alone is a vessel
+S 44513 | Peachtree | Atlanta July 4 10K | 5
+T horse_and_animal_sports
+K 5555 # racing alone is generic
+K 5595 # eventing already in theme
+T horse_riding_words
+K 153 # nothing left
+K 44838 # hat alone is too vague
+T equestrian_events
+K 44905 # eventing already in theme
+T rodeo_words
+K 1515 # nothing left
+S 44920 = 44938
+K 44936 # queen alone is monarch
+T extreme_sports
+K 45024 # ironing alone is chores
+T air_sports
+K 45027 # racing alone is generic
+K 45041 # fixed event name

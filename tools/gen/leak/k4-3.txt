@@ -1,0 +1,226 @@
+T kebab_types
+K 59695 # nobody says kağıt alone
+K 813 # nothing left
+K 59701 # nobody says kuyu alone
+K 59700 # nobody says orman alone
+K 53386 # patlıcan means aubergine
+K 59699 # nobody says tas alone
+K 53387 # nobody says testi alone
+K 59698 # yoğurtlu is only an adjective
+T korean_food
+S 53579 | gogi-gui | - | 4
+S 53589 | yangnyeom chicken | - | 4
+T thai_food
+K 824 # fixed name, pad is not used alone
+T vietnamese_food
+S 19528 | ca phe sua da | - | 4
+T bush_tucker
+S 53662 | sugarbag | native bee honey | 5
+T drinks
+K 886 # nobody says energy for it
+S 870 | soda | fizzy | 1
+T hot_drinks
+S 227 | chocolate | cocoa-based | 1
+S 19467 | cider | spiced apple | 2
+S 19460 = 228
+S 16115 = 514
+T teas
+S 19500 = 63372
+S 19502 | fruit | infusion | 2
+S 866 | iced | chilled-brewed | 2
+S 19493 | lemon | lemon-flavoured | 2
+S 19501 = 514
+S 19498 | sweet | Southern-style | 2
+S 19509 | thai | orange-hued | 3
+T coffee_drinks
+S 19523 | iced | over ice | 2
+T coffee_words
+S 53788 | green | unroasted | 3
+T juices
+S 19576 = 420
+S 19570 | green | pressed vegetables | 3
+T asian_drinks
+S 19598 = 1780
+T wines
+S 19654 | dessert | sweet-style | 3
+S 19655 = 3875
+S 19648 | rosé | pink | 2
+S 19653 | table | everyday | 3
+T red_wines
+S 53811 = 19987
+T white_wines
+S 53836 = 19987
+K 53833 # bare burgundy means the red
+T kitchen_brigade
+K 20066 # nobody says hand alone
+T courses_of_a_meal
+S 20081 = 20082
+T meals_of_the_day
+K 20133 # nobody says midday for lunch
+T ice_cream_parlor
+K 18281 # fixed flavour name
+K 18310 # bare sandwich is wrong food
+S 528 | whipped | topping | 2
+T deep_fried_foods
+K 19052 # bare chicken is the bird
+K 20229 # bare ice cream is not fried
+K 20192 # nobody says Oreos for it
+K 20194 # bare pickles are not fried
+T stuffed_foods
+S 20240 = 20303
+S 20238 | peppers | - | 2
+S 18532 = 18490
+T frozen_foods
+S 20322 = 16773
+S 20330 | TV dinner | - | 3
+T small_wild_cats
+K 7795 # nobody says African golden
+K 7800 # nobody says Andean mountain
+K 7794 # nobody says Asian golden
+K 7793 # nobody says bay alone
+K 7786 # nobody says black-footed alone
+K 7801 # nobody says Bornean bay
+S 7778 | fishing | -  | 3
+K 7792 # nobody says flat-headed alone
+S 7790 | jungle | wetland hunter | 3
+K 7781 # bare leopard is the big cat
+S 7802 | oncilla | - | 5
+K 7791 # nobody says marbled alone
+K 7785 # nobody says rusty-spotted alone
+S 7776 | sand | desert dweller | 3
+T monkeys
+S 50496 | diana | West African guenon | 5
+S 50492 | douroucouli | - | 5
+S 7815 | proboscis | long-nosed | 3
+S 50495 | Japanese macaque | - | 3
+K 50488 # nobody says snub-nosed alone
+S 7812 | spider | prehensile-tailed | 2
+S 7813 | squirrel | tiny primate | 3
+K 50493 # nobody says woolly alone
+T whales_and_dolphins
+S 7876 | beaked | - | 4
+S 7878 | common | widespread | 3
+S 7880 | dusky | leaping | 4
+K 7890 # nobody says false killer
+S 1305 = 64790
+K 59910 # nobody says melon-headed alone
+K 7877 # nobody says pygmy sperm
+K 59914 # nobody says rough-toothed alone
+K 7892 # nobody says white-beaked alone
+T marsupials
+K 7909 # fixed name, mole means other animal
+T deer
+K 50503 # nobody says hog alone
+S 50508 | marsh | swamp-dwelling | 4
+S 9871 | musk | perfume-yielding | 4
+S 50501 | water | tusked | 3
+T wild_goats_and_sheep
+S 50541 | bharal | - | 4
+S 7934 | mountain | white-coated | 2
+K 50548 # Rocky Mountain alone is a range
+K 50545 # nobody says snow alone
+K 50550 # nobody says Stone's alone
+K 50543 # nothing left
+K 50549 # nothing left
+T wild_pigs
+K 50554 # nobody says bearded alone
+S 50556 | feral | escaped domestic | 3
+K 50560 # nobody says Sulawesi warty
+K 50553 # nobody says Visayan warty
+T bears
+S 7959 | Andean | - | 4
+K 7954 # nobody says Himalayan black
+K 7956 # nobody says honey alone
+S 7953 = 64802
+S 7957 | sloth | shaggy-coated | 3
+S 7958 | spectacled | South American | 3
+S 7955 | sun | smallest | 3
+T wild_dogs_and_foxes
+S 7980 | bat-eared | - | 4
+K 7972 # nobody says bush alone
+K 7996 # nobody says Cape alone
+K 7982 # nobody says crab-eating alone
+K 7988 # nobody says Darwin's alone
+S 7989 | island | Channel Islands | 4
+K 7977 # bare kit means baby fox
+K 7987 # nobody says pampas alone
+S 7976 | swift | small prairie | 3
+S 7990 = 7582
+T weasel_family
+K 8010 # nobody says least alone
+K 8011 # nobody says long-tailed alone
+K 7997 # nothing left
+T bats
+K 8034 # nobody says big brown
+K 8032 # nobody says brown alone
+S 8042 | bulldog | fish-catching | 4
+S 8053 | vampire | blood-drinking | 3
+K 8050 # nobody says Egyptian fruit
+K 8039 # nobody says free-tailed alone
+S 8043 | ghost | pale Australian | 4
+K 8044 # nobody says hoary alone
+K 8046 # nobody says Indiana alone
+K 8052 # nobody says Kitti's hog-nosed
+K 8041 # nobody says leaf-nosed alone
+K 8033 # nobody says little brown
+K 8031 # nobody says long-eared alone
+K 8040 # nobody says Mexican free-tailed
+K 8049 # nobody says mouse-eared alone
+K 8045 # nobody says red alone
+K 8051 # nobody says spectral alone
+K 8047 # nobody says tomb alone
+K 8048 # vesper alone is a cocktail
+T rabbits_and_hares
+K 8085 # nobody says Belgian alone
+S 8064 | brown | large European | 3
+K 8063 # nobody says European alone
+S 8076 | hispid | bristly-furred | 5
+K 8090 # fixed name, March alone is month
+S 8072 | marsh | wetland swimmer | 4
+S 8065 | mountain | white in winter | 3
+S 8074 | pygmy | tiny sagebrush | 4
+S 8073 | swamp | bayou-dwelling | 4
+T birds_of_prey
+K 8119 # nothing left
+S 8106 | secretary | snake-stomping | 3
+T owls
+K 50580 # nobody says Blakiston's alone
+S 50570 | boreal | small northern | 4
+S 8100 | eagle | large horned | 3
+S 50567 | elf | tiny desert | 4
+K 50578 # name word is the head noun
+K 59926 # nobody says ferruginous pygmy
+S 50573 | fish | fish-hunting | 4
+S 59921 | flammulated | - | 5
+S 59925 | grass | tall-grass | 4
+S 50575 | hawk | day-hunting | 4
+K 50581 # nobody says hoot alone
+S 8116 | little | Athena's | 3
+S 59924 | marsh | reedbed | 4
+S 50576 | masked | - | 4
+K 51110 # nobody says Pel's fishing
+S 59922 | powerful | giant Australian | 4
+S 50569 | pygmy | diminutive hunter | 4
+S 59923 | sooty | dark Australian | 4
+S 50577 | spectacled | Neotropical | 4
+K 50572 # nobody says Ural alone
+T eagles
+K 50591 # nobody says African fish
+K 50597 # same as bald, bare is nationality
+S 50596 | black | dark southern African | 3
+S 50586 | booted | - | 4
+S 50583 | crowned | African forest hunter | 4
+S 8111 | fish | river fisher | 3
+S 50588 | imperial | regal | 4
+K 50598 # nobody says Madagascar fish
+S 50584 | martial | Africa's largest | 4
+S 32324 | Philippine | - | 4
+S 8110 | sea | coastal | 3
+K 50594 # nobody says serpent alone
+K 50592 # nobody says short-toed alone
+K 50595 # nobody says snake alone
+K 50589 # nobody says spotted alone
+K 50582 # nobody says Steller's sea
+S 50590 | tawny | steppe-living | 4
+S 50585 | wedge-tailed | - | 4
+S 8109 | white-tailed | - | 4
