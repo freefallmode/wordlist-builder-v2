@@ -9,6 +9,7 @@ import { parseProject, serializeProject, stampSave } from '../../js/store.js';
 import { reindex, sortDepthFirst, uniqueThemeId } from '../../js/model.js';
 import { validate, nameLeak, themeNameWords } from '../../js/validate.js';
 const here = p => new URL(p, import.meta.url);
+const DIR = process.argv.includes('--dir') ? process.argv[process.argv.indexOf('--dir') + 1] : 'overlap';   // overlap, or overlap2 for the brand pass (BRIEF-overlap2.md)
 const LIB = here('../../data/wordlist-en.project.json'), APPLY = process.argv.includes('--apply');
 const REPORT = process.argv.includes('--report') ? process.argv[process.argv.indexOf('--report') + 1] : '';
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
@@ -17,9 +18,9 @@ const stat = { MERGE: 0, BRAND: 0, GROUP: 0, SUB: 0, bad: 0, orphanedToAlias: 0 
 const toks = s => s.toLowerCase().match(/[a-z0-9]+/g) || [];
 const fold = s => s.toLowerCase().replace(/[^a-z0-9]/g, ''), slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
 const regroup = (t, fn) => { if (t.groups) t.groups = t.groups.map(g => [...new Set(g.map(fn).filter(Boolean))]).filter(g => g.length > 1); };
-const files = fs.readdirSync(here('./overlap/')).filter(f => /^v-\d+\.txt$/.test(f)).sort((a, b) => parseInt(a.slice(2)) - parseInt(b.slice(2)));
+const files = fs.readdirSync(here('./' + DIR + '/')).filter(f => /^v-\d+\.txt$/.test(f)).sort((a, b) => parseInt(a.slice(2)) - parseInt(b.slice(2)));
 const lines = [];
-for (const f of files) for (const l of fs.readFileSync(here('./overlap/' + f), 'utf8').split(/\r?\n/)) if (l.trim() && !l.startsWith('#')) lines.push([f, l.trim()]);
+for (const f of files) for (const l of fs.readFileSync(here('./' + DIR + '/' + f), 'utf8').split(/\r?\n/)) if (l.trim() && !l.startsWith('#')) lines.push([f, l.trim()]);
 const slist = lines.filter(([, l]) => l.startsWith('SUB')), plist = lines.filter(([, l]) => !l.startsWith('SUB'));
 const leave = (t, b, why) => {
   if (b.th[t.id] === undefined) return false;

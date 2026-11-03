@@ -1,0 +1,224 @@
+# Overlap sweep
+
+{"MERGE":0,"BRAND":0,"GROUP":212,"SUB":0,"bad":0,"orphanedToAlias":0}
+
+## Sub-themes
+
+## Brand entries left without a theme
+
+## Changes
+- GROUP in dried fruits: dried cranberry + craisins
+- GROUP in sweeteners: sucralose + Splenda
+- GROUP in spreads: yeast extract + Marmite
+- GROUP in spreads: yeast extract + Vegemite
+- GROUP in spreads: cookie butter + Biscoff spread
+- GROUP in herbs, spices and sauces: hot + Tabasco
+- GROUP in sauces and condiments: hot + Tabasco
+- GROUP in south american drinks: guaraná + Guaraná Antarctica
+- GROUP in dessert toppings: whipped cream + Cool Whip
+- GROUP in dessert toppings: cookie crumbs + crushed Oreos
+- GROUP in soft drinks: cola + Pepsi
+- GROUP in soft drinks: lemon-lime soda + Sprite
+- GROUP in soft drinks: lemon-lime soda + 7 Up
+- GROUP in cookware: slow cooker + Crock-Pot
+- GROUP in cookware: pressure cooker + Instant Pot
+- GROUP in lunchbox: vacuum flask + Thermos
+- GROUP in lunchbox: juice box + Capri-Sun
+- GROUP in lunchbox: fruit leather + Fruit Roll-Up
+- GROUP in frozen foods: waffles + Eggo
+- GROUP in canned foods: luncheon meat + Spam
+- GROUP in liqueurs: Irish cream + Baileys
+- GROUP in liqueurs: amaretto + Disaronno
+- GROUP in foods with holes: crispbread + Ryvita
+- GROUP in flags with stars: EU + European Union
+- GROUP in park: flying disc + Frisbee
+- GROUP in office: voice recorder + Dictaphone
+- GROUP in construction site: digger + JCB
+- GROUP in aircraft types: business jet + Learjet
+- GROUP in taxis of the world: rideshare + Uber
+- GROUP in taxis of the world: rideshare + Lyft
+- GROUP in taxis of the world: rideshare + Grab
+- GROUP in taxis of the world: rideshare + Bolt
+- GROUP in scooters and skates: roller shoes + Heelys
+- GROUP in scooters and skates: caster board + Ripstik
+- GROUP in scooters and skates: wave board + snakeboard
+- GROUP in accommodation: vacation rental + Airbnb
+- GROUP in campsite: vacuum flask + Thermos
+- GROUP in camping gear: vacuum flask + Thermos
+- GROUP in outdoor cooking and drinking gear: vacuum flask + Thermos
+- GROUP in beach gear: flying disc + Frisbee
+- GROUP in travel accessories: bag tracker + AirTag
+- GROUP in special vehicles: ice resurfacer + Zamboni
+- GROUP in special vehicles: digger + JCB
+- GROUP in special vehicles: skid steer + Bobcat
+- GROUP in construction vehicles: digger + JCB
+- GROUP in construction vehicles: skid steer + Bobcat
+- GROUP in delivery vehicles: moving truck + U-Haul
+- GROUP in truck types: moving truck + U-Haul
+- GROUP in bones: skull + Cranium
+- GROUP in medications: acetaminophen + Tylenol
+- GROUP in medications: ibuprofen + Advil
+- GROUP in medications: sertraline + Zoloft
+- GROUP in first aid: butterfly stitch + Steri-Strip
+- GROUP in smoking words: cigarette lighter + Zippo
+- GROUP in cold and flu remedies: vapor rub + Vicks
+- GROUP in cold and flu remedies: decongestant + Sudafed
+- GROUP in fitness: activity tracker + Fitbit
+- GROUP in personal care: cotton swab + Q-tip
+- GROUP in personal care: petroleum jelly + Vaseline
+- GROUP in personal care: hair straightener + GHDs
+- GROUP in personal care: lip balm + ChapStick
+- GROUP in personal care: depilatory cream + Veet
+- GROUP in shaving: depilatory cream + Veet
+- GROUP in grooming tools: cotton swab + Q-tip
+- GROUP in grooming tools: hair straightener + GHDs
+- GROUP in cowboy words: ten-gallon hat + Stetson
+- GROUP in cowboy outfits: ten-gallon hat + Stetson
+- GROUP in parts of parliament: lower house + House of Commons
+- GROUP in parts of parliament: upper house + House of Lords
+- GROUP in british politics: Tory + Conservative Party
+- GROUP in international organizations: UN + United Nations
+- GROUP in international organizations: EU + European Union
+- GROUP in exam words: bubble sheet + Scantron
+- GROUP in phone words: answering machine + Ansaphone
+- GROUP in charity words: comic relief + Red Nose Day
+- GROUP in medicine cabinet: bandages + band-aids
+- GROUP in under the sink: garbage disposal + InSinkErator
+- GROUP in appliances: vacuum cleaner + Hoover
+- GROUP in appliances: vacuum + Hoover
+- GROUP in appliances: slow cooker + Crock-Pot
+- GROUP in appliances: pressure cooker + Instant Pot
+- GROUP in appliances: robot vacuum + Roomba
+- GROUP in appliances: garbage disposal + InSinkErator
+- GROUP in kitchen appliances: slow cooker + Crock-Pot
+- GROUP in kitchen appliances: pressure cooker + Instant Pot
+- GROUP in kitchen appliances: garbage disposal + InSinkErator
+- GROUP in cleaning appliances: vacuum cleaner + Hoover
+- GROUP in cleaning appliances: vacuum + Hoover
+- GROUP in cleaning appliances: robot vacuum + Roomba
+- GROUP in cleaning appliances: handheld vacuum + dustbuster
+- GROUP in cleaning appliances: carpet cleaner + rug doctor
+- GROUP in cleaning appliances: wet vac + shop vac
+- GROUP in small appliances: hair straightener + GHDs
+- GROUP in tools: utility knife + Stanley knife
+- GROUP in things with a sharp blade: utility knife + Stanley knife
+- GROUP in fixings: wall anchor + rawlplug
+- GROUP in adhesives: hook-and-loop + Velcro
+- GROUP in adhesives: glue stick + Pritt Stick
+- GROUP in cleaning items: vacuum cleaner + Hoover
+- GROUP in cleaning items: vacuum + Hoover
+- GROUP in cleaning items: robot vacuum + Roomba
+- GROUP in cleaning products: disinfectant + Dettol
+- GROUP in cleaning products: window cleaner + Windex
+- GROUP in cleaning products: bleach + Domestos
+- GROUP in cleaning products: disinfectant + Lysol
+- GROUP in bins and recycling: garbage disposal + InSinkErator
+- GROUP in washing up: dish soap + Fairy Liquid
+- GROUP in things used for wiping: tissue + Kleenex
+- GROUP in paper goods: tissue + Kleenex
+- GROUP in paper goods: sticky note + Post-it
+- GROUP in office and school supplies: sticky note + Post-it
+- GROUP in fabrics: spandex + Lycra
+- GROUP in fabrics and sewing: hook-and-loop + Velcro
+- GROUP in fastenings: hook-and-loop + Velcro
+- GROUP in wool fabrics: tweed + Harris Tweed
+- GROUP in things you plug in: vacuum cleaner + Hoover
+- GROUP in things you plug in: vacuum + Hoover
+- GROUP in things you plug in: slow cooker + Crock-Pot
+- GROUP in kitchen electricals: slow cooker + Crock-Pot
+- GROUP in things with lids: slow cooker + Crock-Pot
+- GROUP in retro household items: hair straightener + GHDs
+- GROUP in retro household items: cassette player + Walkman
+- GROUP in retro household items: instant camera + polaroid
+- GROUP in old music gear: cassette player + Walkman
+- GROUP in ball sports: footbag + Hacky Sack
+- GROUP in skating words: ice resurfacer + Zamboni
+- GROUP in ice hockey terms: ice resurfacer + Zamboni
+- GROUP in skating words: inline skates + rollerblades
+- GROUP in toys and play: flying disc + Frisbee
+- GROUP in toys: flying disc + Frisbee
+- GROUP in outdoor games: flying disc + Frisbee
+- GROUP in yard games: flying disc + Frisbee
+- GROUP in toys and play: building blocks + Lego
+- GROUP in toys: building blocks + Lego
+- GROUP in rodeo words: cowboy hat + Stetson
+- GROUP in board games: Ludo + Parcheesi
+- GROUP in board games: Parchís + Parcheesi
+- GROUP in table games: Ludo + Parcheesi
+- GROUP in table games: Parchís + Parcheesi
+- GROUP in dice games: Yacht + Yahtzee
+- GROUP in building toys: magnetic tiles + Magna-Tiles
+- GROUP in building toys: construction set + Erector Set
+- GROUP in dolls and figures: figurine + Hummel figurine
+- GROUP in guitar types: resonator guitar + dobro
+- GROUP in electronic instruments: electric organ + Hammond organ
+- GROUP in electronic instruments: electric piano + Rhodes piano
+- GROUP in electronic instruments: electronic keyboard + Casio keyboard
+- GROUP in photography words: instant camera + polaroid
+- GROUP in music players: gramophone + Victrola
+- GROUP in television equipment: DVR + TiVo
+- GROUP in plastics: acrylic + perspex
+- GROUP in plastics: acrylic + lucite
+- GROUP in plastics: polycarbonate + Lexan
+- GROUP in heat science: vacuum flask + Thermos
+- GROUP in inventions: vacuum cleaner + Hoover
+- GROUP in cowboy gear: ten-gallon hat + Stetson
+- GROUP in wild west: cowboy hat + Stetson
+- GROUP in famous pirates: Henry Morgan + Captain Morgan
+- GROUP in undead: zombie + walker
+- GROUP in accidental inventions: hook-and-loop + Velcro
+- GROUP in household gadgets: vacuum + Hoover
+- GROUP in robots: robot vacuum + Roomba
+- GROUP in smart home: robot vacuum + Roomba
+- GROUP in smart home: video doorbell + Ring doorbell
+- GROUP in gadgets: fitness tracker + Fitbit
+- GROUP in gadgets: e-reader + Kindle
+- GROUP in gadgets: voice recorder + Dictaphone
+- GROUP in gadgets: smartwatch + Apple Watch
+- GROUP in gadgets: action camera + GoPro
+- GROUP in handheld gadgets: e-reader + Kindle
+- GROUP in handheld gadgets: voice recorder + Dictaphone
+- GROUP in handheld gadgets: tablet + iPad
+- GROUP in handheld gadgets: PDA + Palm Pilot
+- GROUP in retro tech: instant camera + polaroid
+- GROUP in retro tech: instant camera + Instant
+- GROUP in retro tech: CD player + Discman
+- GROUP in old ways to hear music: CD player + Discman
+- GROUP in wearable tech: fitness tracker + Fitbit
+- GROUP in wearable tech: smartwatch + Apple Watch
+- GROUP in wearable tech: earbuds + AirPods
+- GROUP in wearable tech: smart ring + Oura Ring
+- GROUP in wearable tech: smart glasses + Google Glass
+- GROUP in wearable tech: VR headset + Meta Quest
+- GROUP in screen types: CRT + Trinitron
+- GROUP in display tech: CRT + Trinitron
+- GROUP in science fiction gadgets: time machine + Tardis
+- GROUP in science fiction gadgets: teleporter + transporter
+- GROUP in antarctic research station: snowcat + Pisten Bully
+- GROUP in polar vehicles: snowcat + Pisten Bully
+- GROUP in ___bag: vacuum + Hoover
+- GROUP in see-through materials: acrylic + plexiglass
+- GROUP in see-through materials: acrylic + perspex
+- GROUP in see-through materials: acrylic + lucite
+- GROUP in man-made materials: hook-and-loop + Velcro
+- GROUP in man-made materials: spandex + Lycra
+- GROUP in stretchy things: spandex + Lycra
+- GROUP in sticky things: glue + superglue
+- GROUP in square things: sticky note + Post-it
+- GROUP in slippery things: petroleum jelly + Vaseline
+- GROUP in umami foods: yeast extract + Marmite
+- GROUP in spicy foods: hot sauce + Tabasco
+- GROUP in round things: flying disc + Frisbee
+- GROUP in triangular things: tortilla chip + Doritos
+- GROUP in loud things: vacuum cleaner + Hoover
+- GROUP in loud things: vacuum + Hoover
+- GROUP in things that fly: flying disc + Frisbee
+- GROUP in things that fly: superhero + Superman
+- GROUP in things with screens: tablet + iPad
+- GROUP in things with screens: e-reader + Kindle
+- GROUP in things that run on batteries: robot vacuum + Roomba
+- GROUP in things with arms: excavator + JCB
+- GROUP in things with arms: digger + JCB
+
+## Problems
+- v-11.txt: already gone "GROUP sticky_things 23311 25572"

@@ -1,0 +1,139 @@
+T hot_drinks | hot drinks | 54 words
+BRANDS: 19473 Horlicks; 19474 Ovaltine
+OTHERS: 225 tea; 226 coffee; 229 latte; 230 cappuccino; 231 espresso; 232 mocha; 233 chai; 234 americano; 235 macchiato; 236 flat white; 237 matcha; 514 milk; 907 yerba mate; 961 java; 962 joe; 963 cuppa; 964 char; 15520 honey and lemon; 15564 herbal tea; 16741 green tea; 19296 turkish coffee; 19460 cocoa; 19461 peppermint tea; 19462 instant coffee; 19463 decaf; 19464 chai latte; 19465 filter coffee; 19466 drip coffee; 19467 cider; 19468 mulled wine; 19469 irish coffee; 19470 mulled cider; 19471 café au lait; 19475 glühwein; 19477 cortado; 19478 doppio; 19479 ristretto; 19480 long black; 19481 butter tea; 19482 golden milk; 19484 red eye; 19485 babyccino; 19486 lungo; 19487 piccolo; 19488 salep; 19489 champurrado; 19490 atole; 19491 kopi luwak; 20818 wassail; 62994 buttered rum; 62995 toddy; 65163 chocolate
+
+T soft_drinks | soft drinks | 30 words
+BRANDS: 873 Pepsi; 19538 Sprite; 19539 Fanta; 19540 7 Up; 19541 Dr Pepper; 19542 Mountain Dew; 19546 Schweppes; 19547 Orangina; 19548 Irn-Bru; 19549 Vimto; 19551 Ramune; 19552 Squirt; 19553 Tizer; 19554 Moxie; 19555 Inca Kola
+OTHERS: 863 lemonade; 865 cola; 883 tonic water; 884 ginger ale; 888 root beer; 15701 sarsaparilla; 19533 orange soda; 19534 diet cola; 19535 grape soda; 19536 cherry cola; 19537 lemon-lime soda; 19543 club soda; 19544 cream soda; 19545 ginger beer; 19550 birch beer
+
+T juices | juices | 31 words
+BRANDS: 19579 Tropicana; 19580 Ocean Spray; 50150 V8
+OTHERS: 74 lemon; 75 lime; 76 orange; 77 grapefruit; 87 apple; 90 grape; 92 cherry; 95 mango; 96 pineapple; 97 watermelon; 100 pomegranate; 103 lychee; 104 guava; 107 passion fruit; 110 tomato; 354 cranberry; 391 carrot; 401 celery; 1792 sugarcane; 15640 noni; 16750 wheatgrass; 17215 prune; 18914 verjuice; 19570 green; 19571 apple cider; 19576 beet; 19585 nectar; 62997 açai
+
+T asian_drinks | asian drinks | 31 words
+BRANDS: 19551 Ramune; 19590 Yakult; 19602 Calpis; 19604 Pocari Sweat
+OTHERS: 233 chai; 237 matcha; 899 lassi; 15581 chrysanthemum tea; 16741 green tea; 17961 soy milk; 19497 jasmine tea; 19499 bubble tea; 19500 boba tea; 19501 milk tea; 19528 Vietnamese coffee; 19581 sugarcane juice; 19587 mango lassi; 19588 Thai iced tea; 19589 oolong; 19591 teh tarik; 19592 cendol; 19593 falooda; 19594 nimbu pani; 19595 barley tea; 19596 dalgona coffee; 19597 Hong Kong milk tea; 19598 aloe vera; 19599 sikhye; 19600 jaljeera; 19601 thandai; 19603 amazake
+
+T cocktails | cocktails | 41 words
+BRANDS: 19622 Aperol spritz
+OTHERS: 13914 caipirinha; 19605 margarita; 19606 mojito; 19607 martini; 19608 cosmopolitan; 19609 daiquiri; 19610 old fashioned; 19611 manhattan; 19612 piña colada; 19614 Bloody Mary; 19615 mimosa; 19616 sangria; 19617 Moscow Mule; 19618 Tequila Sunrise; 19619 White Russian; 19620 screwdriver; 19621 espresso martini; 19623 whiskey sour; 19624 negroni; 19625 mai tai; 19626 Tom Collins; 19627 Cuba libre; 19628 mint julep; 19630 Black Russian; 19631 Long Island Iced Tea; 19632 sex on the beach; 19633 sidecar; 19634 sazerac; 19635 Singapore Sling; 19636 paloma; 19637 grasshopper; 19638 zombie; 19639 hurricane; 19640 boulevardier; 19641 vesper; 19642 aviation; 19643 gibson; 19644 rob roy; 20276 Bellini; 50221 gimlet
+
+T beers | beers | 43 words
+BRANDS: 19693 Guinness; 19694 Heineken; 19695 Budweiser; 19696 Corona; 19697 Stella Artois; 19698 Carlsberg; 19699 Coors; 19700 Miller; 19708 Foster's; 19709 Asahi; 19711 Modelo; 19712 Blue Moon; 19713 Peroni; 19717 Tsingtao; 19718 Kirin; 19719 Pabst; 19720 Singha; 19727 Chimay; 50099 Sapporo
+OTHERS: 19684 lager; 19685 ale; 19686 stout; 19687 IPA; 19688 pale ale; 19689 pilsner; 19701 porter; 19703 amber ale; 19704 brown ale; 19705 shandy; 19706 bitter; 19707 real ale; 19714 hefeweizen; 19715 bock; 19721 malt liquor; 19722 lambic; 19723 gose; 19724 saison; 19725 tripel; 19726 kölsch; 62999 weissbier; 64783 craft; 64784 light; 64785 sour
+
+T spirits | spirits | 43 words
+BRANDS: 19741 Jack Daniel's; 19742 Smirnoff; 19743 Bacardi; 19744 Johnnie Walker; 19745 Jameson; 19746 Absolut; 19747 Grey Goose; 19748 Hennessy; 19749 Captain Morgan; 19750 Jim Beam
+OTHERS: 877 vodka; 878 rum; 891 whisky; 893 gin; 894 tequila; 895 brandy; 19298 raki; 19424 cachaça; 19728 bourbon; 19729 scotch; 19730 Scotch whisky; 19731 cognac; 19732 mezcal; 19733 moonshine; 19734 ouzo; 19735 soju; 19736 white rum; 19737 dark rum; 19738 spiced rum; 19739 single malt; 19740 rye; 19751 grappa; 19752 pisco; 19753 calvados; 19754 eau de vie; 19755 aquavit; 19756 armagnac; 19757 arak; 19758 genever; 19759 shochu; 19760 slivovitz; 19761 kirsch; 19762 poitín
+
+T liqueurs | liqueurs | 49 words
+BRANDS: 19947 Pimm's; 53872 Baileys; 53873 Kahlúa; 53874 Grand Marnier; 53875 Drambuie; 53876 Frangelico; 53877 Jägermeister; 53880 Disaronno; 53881 Midori; 53882 Southern Comfort; 53883 Galliano; 53884 Campari; 53885 Aperol; 53888 Tia Maria; 53889 St-Germain; 53893 Cynar; 53895 Strega; 53896 Malibu; 53897 Goldschläger; 53898 Fireball; 59882 Licor 43; 59883 Tuaca; 59884 Fernet-Branca
+OTHERS: 908 absinthe; 910 schnapps; 53508 amarula; 53866 amaretto; 53867 cointreau; 53868 limoncello; 53869 sambuca; 53870 chartreuse; 53871 triple sec; 53878 crème de menthe; 53879 crème de cassis; 53886 curaçao; 53887 advocaat; 53890 maraschino; 53891 sloe gin; 53892 Irish cream; 53894 crème de violette; 59381 Benedictine; 59382 Chambord; 59875 Nocino; 59876 Mirto; 59877 Becherovka; 59878 Unicum; 59879 Kümmel; 59880 Averna; 59881 Pacharán
+
+T cookware | cookware | 35 words
+BRANDS: 4751 Crock-Pot; 4753 Instant Pot
+OTHERS: 3086 Dutch oven; 4749 rice cooker; 4750 slow cooker; 4752 pressure cooker; 4754 air fryer; 19808 skillet; 19809 saucepan; 19810 pot; 19811 wok; 19812 stockpot; 19813 casserole dish; 19815 baking sheet; 19816 roasting pan; 19818 muffin tin; 19820 cake pan; 19821 loaf pan; 19822 pie dish; 19823 cast iron pan; 19824 griddle pan; 19825 sauté pan; 19826 steamer; 19827 tagine; 19828 ramekin; 19829 springform pan; 19830 paella pan; 19831 double boiler; 19832 bain-marie; 19833 bundt pan; 19834 terrine; 19835 karahi; 19836 tava; 19837 cocotte; 19838 sauteuse
+
+T kitchen_utensils | kitchen utensils | 47 words
+BRANDS: 19880 Microplane
+OTHERS: 596 rolling pin; 19839 spatula; 19840 whisk; 19841 ladle; 19842 tongs; 19843 peeler; 19844 grater; 19845 can opener; 19847 wooden spoon; 19848 measuring cup; 19849 measuring spoon; 19850 cutting board; 19852 colander; 19853 sieve; 19854 corkscrew; 19855 potato masher; 19856 slotted spoon; 19857 garlic press; 19858 pizza cutter; 19859 cookie cutter; 19860 paring knife; 19861 bread knife; 19862 oven mitt; 19863 ice cream scoop; 19864 nutcracker; 19865 pastry brush; 19866 melon baller; 19867 apple corer; 19868 salad spinner; 19869 egg slicer; 19870 pastry cutter; 19871 funnel; 19872 zester; 19874 skimmer; 19875 ricer; 19876 baster; 19877 trivet; 19878 bench scraper; 19879 fish slice; 19881 offset spatula; 19882 mezzaluna; 19883 chinois; 19884 splatter guard; 23132 mandoline; 50233 honing steel; 50235 meat mallet
+
+T lunchbox | lunchbox | 42 words
+BRANDS: 3063 Thermos; 19928 Capri-Sun; 19929 Tupperware; 19930 Lunchables; 19933 Fruit Roll-Up; 59893 Dunkaroos; 59894 Gushers; 59895 Uncrustables; 59896 Go-Gurt; 59897 Fruit by the Foot
+OTHERS: 87 apple; 88 banana; 522 yogurt; 558 muffin; 566 cookie; 796 sandwich; 3064 vacuum flask; 3074 trail mix; 4526 packed lunch; 15392 ice pack; 16754 carrot sticks; 16759 hard-boiled egg; 16764 granola bar; 17284 fruit leather; 18340 pudding cup; 18576 onigiri; 19010 ham sandwich; 19015 PB&J; 19017 wrap; 19092 pretzels; 19918 juice box; 19919 raisins; 19920 lunch bag; 19921 water bottle; 19922 cheese stick; 19924 fruit snack; 19925 sandwich bag; 19926 napkin; 19927 applesauce; 19931 bento; 19932 fruit cup; 19934 lunch note
+
+T picnic_basket | picnic basket | 38 words
+BRANDS: 19947 Pimm's
+OTHERS: 97 watermelon; 515 cheese; 556 baguette; 825 quiche; 863 lemonade; 3035 cooler; 3037 esky; 3052 bug spray; 3053 insect repellent; 3668 blanket; 3745 sunscreen; 3746 sunblock; 16757 grapes; 17872 coleslaw; 17873 potato salad; 17986 deviled eggs; 17994 scotch egg; 18091 sausage roll; 18529 pasta salad; 19016 cucumber sandwich; 19052 fried chicken; 19094 crackers; 19177 pork pie; 19854 corkscrew; 19936 sandwiches; 19937 paper plates; 19938 plastic cups; 19939 napkins; 19940 bottle opener; 19941 strawberries; 19942 tablecloth; 19944 wet wipes; 19945 ice chest; 19946 gingham; 19948 trash bag; 30682 wicker; 63283 hamper
+
+T fairground_food | fairground food | 33 words
+BRANDS: 20192 fried Oreos; 20196 deep-fried Mars bar
+OTHERS: 617 fudge; 628 cotton candy; 638 churros; 807 nachos; 808 hot dog; 817 fish and chips; 863 lemonade; 6418 popcorn; 17721 turkey leg; 17739 bratwurst; 17869 corn on the cob; 17953 cheese curds; 18309 ice cream cone; 18312 snow cone; 18313 shaved ice; 18314 slushie; 18377 saltwater taffy; 19055 corn dog; 19116 soft pretzel; 19119 funnel cake; 19128 kettle corn; 20186 candy apple; 20187 toffee apple; 20188 caramel apple; 20189 fried dough; 20190 mini doughnuts; 20191 candied nuts; 20193 elephant ear; 20194 fried pickles; 20195 stroopwafel; 20197 tornado potato
+
+T deep_fried_foods | deep-fried foods | 38 words
+BRANDS: 19063 tater tots; 20192 fried Oreos
+OTHERS: 486 calamari; 568 doughnut; 638 churros; 817 fish and chips; 827 falafel; 828 samosa; 829 tempura; 17994 scotch egg; 18089 beignet; 19050 french fries; 19051 chicken nuggets; 19052 fried chicken; 19053 onion rings; 19055 corn dog; 19062 mozzarella sticks; 19064 popcorn chicken; 19118 spring roll; 19119 funnel cake; 19125 arancini; 19379 katsu; 19455 hush puppies; 19457 chimichanga; 20194 fried pickles; 20224 fritter; 20225 croquette; 20226 pakora; 20227 onion bhaji; 20228 jalapeño poppers; 20229 fried ice cream; 20230 tonkatsu; 20231 crullers; 20232 vada; 20233 karaage; 20234 zeppole; 20235 sopapilla; 20236 youtiao
+
+T foods_on_a_stick | foods on a stick | 31 words
+BRANDS: 18303 popsicle; 18305 ice pop; 18306 paddle pop
+OTHERS: 609 lollipop; 610 lolly; 813 kebab; 17876 shish kebab; 18362 rock candy; 18665 dango; 19055 corn dog; 19121 satay; 19130 yakitori; 19329 kofta; 19426 anticuchos; 20186 candy apple; 20187 toffee apple; 20188 caramel apple; 20247 cake pop; 20248 chicken skewers; 20249 fruit kebab; 20250 souvlaki; 20251 chicken tikka; 20252 shashlik; 20253 brochette; 20254 pincho; 20255 frozen banana; 20256 pretzel rod; 20257 tanghulu; 20258 kushikatsu; 20259 espetada; 20260 sosatie
+
+T foods_named_after_people | foods named after people | 47 words
+BRANDS: 18391 Mars bar; 19741 Jack Daniel's; 19744 Johnnie Walker; 57846 Tootsie Roll
+OTHERS: 640 pavlova; 775 béchamel; 796 sandwich; 807 nachos; 17297 Granny Smith; 17699 chateaubriand; 17844 oysters rockefeller; 17985 eggs benedict; 18109 Victoria sponge; 18122 Sachertorte; 18127 lamington; 18180 tarte tatin; 18290 praline; 18520 fettuccine alfredo; 18521 alfredo; 18956 beef stroganoff; 18957 stroganoff; 18975 caesar salad; 18991 cobb salad; 19166 duchess potatoes; 19185 beef wellington; 19494 Earl Grey; 20265 graham cracker; 20266 margherita pizza; 20267 peach melba; 20268 Reuben sandwich; 20269 Salisbury steak; 20270 Battenberg cake; 20272 General Tso chicken; 20273 carpaccio; 20274 madeleine; 20275 Shirley Temple; 20276 Bellini; 20277 Garibaldi biscuit; 20278 crêpes Suzette; 20279 Melba toast; 20280 Hass avocado; 20281 Bartlett pear; 20283 Bramley apple; 20284 Mornay sauce; 20285 Lady Baltimore cake; 59898 Hershey bar; 59899 Arnold Palmer
+
+T foods_with_holes | foods with holes | 31 words
+BRANDS: 18613 Cheerios; 18614 Froot Loops; 20286 Life Savers; 20287 Polo mints; 20288 Hula Hoops; 20291 Ryvita
+OTHERS: 252 emmental; 360 olive; 555 bagel; 568 doughnut; 570 pretzel; 591 crumpet; 599 matzo; 656 macaroni; 662 penne; 678 rigatoni; 706 bucatini; 17446 lotus root; 17920 swiss cheese; 17934 jarlsberg; 18061 English muffin; 18093 cruller; 18115 bundt cake; 18492 cannelloni; 18494 ziti; 19053 onion rings; 19293 gruyère; 20289 crispbread; 20290 Maasdam; 20292 bublik; 20293 taralli
+
+T canned_foods | canned foods | 45 words
+BRANDS: 20295 Spam; 20308 Campbell's; 20317 Chef Boyardee; 20320 Dinty Moore
+OTHERS: 96 pineapple; 106 jackfruit; 399 peas; 406 corn; 408 maize; 417 green beans; 455 bamboo shoots; 466 salmon; 467 tuna; 531 condensed milk; 538 evaporated milk; 663 ravioli; 797 soup; 855 chili; 16744 lentils; 17548 baked beans; 17785 corned beef; 17967 coconut milk; 18788 cranberry sauce; 20297 tomatoes; 20298 sardines; 20299 chickpeas; 20300 kidney beans; 20301 peaches; 20302 fruit cocktail; 20303 mushrooms; 20304 olives; 20305 pears; 20306 black beans; 20307 mandarin oranges; 20309 anchovies; 20310 refried beans; 20311 water chestnuts; 20312 creamed corn; 20313 pumpkin puree; 20314 artichoke hearts; 20315 spaghetti hoops; 20316 luncheon meat; 20318 Vienna sausages; 20319 corned beef hash; 20321 potted meat
+
+T frozen_foods | frozen foods | 45 words
+BRANDS: 18303 popsicle; 18305 ice pop; 18306 paddle pop; 19063 tater tots; 20326 Hot Pockets; 20327 Magnum; 20328 Cornetto; 20331 Birds Eye; 20333 Eggo; 20334 Fudgsicle; 20335 Dippin' Dots; 20336 Viennetta; 20337 Klondike bar; 20340 Findus
+OTHERS: 398 spinach; 399 peas; 406 corn; 408 maize; 440 edamame; 604 ice cream; 622 sorbet; 623 gelato; 660 lasagna; 795 pizza; 805 waffles; 810 dumplings; 841 pierogi; 17833 fish sticks; 18078 puff pastry; 18282 cookie dough; 18307 sherbet; 18641 gyoza; 19050 french fries; 19051 chicken nuggets; 19078 hash browns; 19174 pot pie; 20322 berries; 20323 spring rolls; 20324 garlic bread; 20325 mixed vegetables; 20329 TV dinner; 20332 oven chips; 20338 croquettes; 20339 Arctic roll; 62885 froyo
+
+T deer | deer | 30 words
+BRANDS: 25017 Rudolph; 50506 Bambi
+OTHERS: 1008 moose; 1471 reindeer; 7922 elk; 9689 muntjac; 9727 pudu; 9730 caribou; 9732 wapiti; 9780 stag; 9781 doe; 9855 chital; 10130 fawn; 10288 hart; 50498 sambar; 50501 water; 50503 hog deer; 50504 hind; 50505 roebuck; 50507 barasingha; 50508 marsh; 60118 brocket; 63022 milu; 63023 sika; 63024 whitetail; 63563 fallow; 63564 mule; 63565 red; 63566 roe; 65188 musk
+
+T wild_pigs | wild pigs | 21 words
+BRANDS: 50562 Pumbaa
+OTHERS: 7930 warthog; 7931 boar; 7942 peccary; 9736 javelina; 9870 babirusa; 9872 tusker; 9874 bushpig; 9875 giant forest hog; 10298 hog; 50551 red river hog; 50552 pygmy hog; 50553 Visayan warty pig; 50554 bearded pig; 50555 razorback; 50556 feral; 50557 collared peccary; 50558 white-lipped peccary; 50559 Chacoan peccary; 50560 Sulawesi warty pig; 50561 sounder
+
+T owls | owls | 39 words
+BRANDS: 50579 Hedwig
+OTHERS: 9853 owl; 10135 owlet; 50564 long-eared; 50565 short-eared; 50566 barred; 50567 elf; 50569 pygmy; 50570 boreal; 50572 Ural owl; 50573 fish; 50574 scops; 50575 hawk; 50576 masked; 50577 spectacled; 50578 Eurasian eagle-owl; 50580 Blakiston's fish owl; 50581 hoot owl; 51110 pel's fishing owl; 51203 morepork; 59919 boobook; 59921 flammulated; 59922 powerful; 59923 sooty; 59924 marsh; 59925 grass; 59926 ferruginous pygmy owl; 63032 saw-whet; 63033 Tengmalm's; 63586 barn; 63588 burrowing; 63589 great grey; 63590 great horned; 63593 screech; 63595 snowy; 63596 spotted; 63597 tawny; 65210 eagle; 65216 little
+
+T parrots | parrots | 42 words
+BRANDS: 8298 Norwegian blue
+OTHERS: 1065 parrot; 1094 budgie; 1114 cockatoo; 1452 cockatiel; 1472 lovebird; 8231 kakapo; 8263 macaw; 8264 lorikeet; 8265 African grey; 8266 kea; 8267 conure; 8268 rosella; 8269 amazon; 8270 eclectus; 8271 lory; 8272 parrotlet; 8273 scarlet macaw; 8274 blue and gold macaw; 8275 hyacinth macaw; 8276 galah; 8277 corella; 8278 rainbow lorikeet; 8279 ring-necked parakeet; 8280 monk parakeet; 8281 Carolina parakeet; 8282 sun conure; 8284 kaka; 8285 night parrot; 8286 ground parrot; 8287 owl parrot; 8288 pygmy parrot; 8289 hanging parrot; 8290 fig parrot; 8291 Senegal; 8293 palm cockatoo; 8294 black cockatoo; 8295 pink cockatoo; 8296 gang-gang; 8297 polly; 63042 Meyer's; 63287 quaker
+
+T birdwatching_words | birdwatching words | 56 words
+BRANDS: 8439 eBird
+OTHERS: 1856 bird feeder; 1859 birdbath; 8365 plumage; 8402 wing bar; 8408 binoculars; 8409 field guide; 8410 birdwatcher; 8411 birder; 8412 twitcher; 8413 hide; 8414 nest box; 8415 birdhouse; 8416 birdsong; 8417 bird call; 8418 dawn chorus; 8419 migration; 8420 flock; 8421 roost; 8422 lifer; 8423 life list; 8424 spotting scope; 8425 checklist; 8426 hotspot; 8427 tick; 8428 rarity; 8429 vagrant; 8430 fledgling; 8431 juvenile; 8432 fall-out; 8433 jizz; 8434 mobbing; 8435 flyover; 8437 bird banding; 8438 mist net; 8440 RSPB; 8441 Audubon; 8442 big year; 8443 bird count; 8444 birdathon; 8445 pishing; 8446 dip; 8447 accidental; 8448 passerine; 8449 non-passerine; 8450 summer visitor; 8451 winter visitor; 8452 resident; 8453 lek; 8454 seed feeder; 8455 suet; 8456 bird table; 8457 telephoto lens; 8458 field notes; 8459 bird sighting; 8460 bird of the year
+
+T observer_s_kit | birdwatching kit | 10 words
+BRANDS: 8439 eBird
+OTHERS: 8408 binoculars; 8409 field guide; 8413 hide; 8423 life list; 8424 spotting scope; 8425 checklist; 8438 mist net; 8457 telephoto lens; 8458 field notes
+
+T constrictor_snakes | constrictor snakes | 39 words
+BRANDS: 50745 Kaa
+OTHERS: 1154 python; 1159 boa constrictor; 1160 boa; 1161 anaconda; 1596 Titanoboa; 8506 milk; 8509 rat; 8510 ball python; 8511 Burmese python; 8512 reticulated python; 8513 green tree python; 8514 emerald tree boa; 8515 rainbow boa; 8517 bull; 8535 sand boa; 9923 rosy boa; 50725 green anaconda; 50726 royal python; 50727 rock python; 50728 African rock python; 50729 carpet python; 50730 rubber boa; 50731 tree boa; 50732 kingsnake; 50733 gopher; 50734 pine snake; 50735 Indian python; 50736 amethystine python; 50737 scrub python; 50738 Madagascar boa; 50739 yellow anaconda; 50740 black rat snake; 50741 constrictor; 50742 woma python; 50743 Children's python; 50744 spotted python; 50746 Dumeril's boa; 63616 corn
+
+T frogs_and_toads | frogs and toads | 53 words
+BRANDS: 8670 Kermit
+OTHERS: 1144 frog; 1145 toad; 1163 tadpole; 1166 bullfrog; 1204 natterjack; 1205 spadefoot; 8641 common frog; 8642 common toad; 8643 leopard; 8644 green; 8646 marsh; 8647 edible; 8648 pool frog; 8649 midwife; 8650 fire-bellied; 8651 golden poison; 8652 strawberry poison; 8653 goliath; 8654 African clawed; 8655 Surinam; 8657 pacman; 8658 White's tree; 8659 American; 8660 Fowler's; 8661 giant; 8662 gray tree; 8663 spring peeper; 8664 chorus; 8666 cricket frog; 8667 barking tree; 8668 tailed frog; 8669 Darwin's; 8671 froglet; 8672 spawn; 8673 croak; 8674 ribbit; 8675 lily pad; 8676 frogspawn; 8677 toadlet; 8678 harlequin; 8680 hairy; 63624 cane; 63625 dart; 63626 glass; 63629 poison dart; 63630 tomato; 63631 tree; 65347 flying; 65351 golden; 65357 horned; 65360 red-eyed tree; 65364 wood
+
+T terriers | terriers | 40 words
+BRANDS: 50973 Toto
+OTHERS: 9281 terrier; 9287 pit bull; 9294 airedale; 50939 Scottish; 50941 West Highland; 50944 bull terrier; 50945 Staffordshire; 50947 Border; 50948 Cairn; 50949 Norfolk; 50950 Norwich; 50951 Boston; 50952 fox terrier; 50953 Irish; 50954 Welsh; 50957 Skye; 50958 Dandie Dinmont; 50960 rat terrier; 50962 Parson Russell; 50963 Manchester; 50964 wheaten; 50965 miniature schnauzer; 50968 Australian; 50969 silky; 50971 toy fox terrier; 50972 Glen of Imaal; 51011 Yorkie; 60001 Tenterfield; 60002 Jagdterrier; 60003 Miniature bull terrier; 60004 Brazilian; 60005 AmStaff; 63073 Bedlington; 63074 Cesky; 63075 Jack Russell; 63076 Kerry blue; 63077 Lakeland; 63078 Patterdale; 63079 Sealyham
+
+T herding_dogs | herding dogs | 41 words
+BRANDS: 51048 Lassie
+OTHERS: 259 German shepherd; 267 border collie; 269 corgi; 1474 sheepdog; 9279 collie; 9300 bergamasco; 9470 cattle dog; 51019 rough collie; 51020 smooth collie; 51021 Australian shepherd; 51022 Old English sheepdog; 51023 Shetland sheepdog; 51026 Pembroke corgi; 51027 Cardigan corgi; 51028 Belgian Malinois; 51029 Belgian Tervuren; 51030 Briard; 51031 bearded collie; 51032 Australian cattle dog; 51033 blue heeler; 51034 kelpie; 51035 Puli; 51036 Komondor; 51037 Bouvier des Flandres; 51038 Pyrenean shepherd; 51039 Catalan sheepdog; 51040 Icelandic sheepdog; 51041 Lancashire heeler; 51042 Swedish vallhund; 51043 Finnish Lapphund; 51044 Mudi; 51045 Pumi; 51046 Dutch shepherd; 51047 Beauceron; 51049 Alsatian; 60013 Entlebucher; 60014 Berger Picard; 60015 Schapendoes; 60016 Croatian sheepdog; 63725 heeler
+
+T prehistoric_life | prehistoric life | 76 words
+BRANDS: 1613 Ice Age
+OTHERS: 1551 dinosaur; 1552 Tyrannosaurus; 1554 Tyrannosaurus rex; 1555 Triceratops; 1556 Stegosaurus; 1557 Velociraptor; 1558 Brontosaurus; 1559 Diplodocus; 1560 Brachiosaurus; 1561 Pterodactyl; 1562 mammoth; 1563 woolly mammoth; 1564 mastodon; 1565 saber-toothed cat; 1566 Smilodon; 1567 fossil; 1568 trilobite; 1569 ammonite; 1570 Allosaurus; 1571 Ankylosaurus; 1572 Spinosaurus; 1573 Pteranodon; 1574 Archaeopteryx; 1575 Iguanodon; 1576 megalodon; 1577 Plesiosaur; 1578 Ichthyosaur; 1579 Parasaurolophus; 1580 Pachycephalosaurus; 1581 Gallimimus; 1582 Dilophosaurus; 1583 Compsognathus; 1584 Carnotaurus; 1585 Giganotosaurus; 1586 Utahraptor; 1587 Dimetrodon; 1588 Megatherium; 1589 Deinonychus; 1590 Argentinosaurus; 1591 Quetzalcoatlus; 1592 Dunkleosteus; 1593 Anomalocaris; 1594 Hallucigenia; 1595 Elasmosaurus; 1596 Titanoboa; 1597 Liopleurodon; 1598 Therizinosaurus; 1599 dire wolf; 1600 giant sloth; 1601 woolly rhinoceros; 1602 aurochs; 1603 great auk; 1604 moa; 1605 dodo; 1606 thylacine; 1607 Mesozoic; 1608 Paleozoic; 1609 Cenozoic; 1610 Jurassic; 1611 Cretaceous; 1612 Triassic; 1614 extinction; 1615 amber; 1616 paleontologist; 1617 megafauna; 1618 Neanderthal; 1619 Cambrian; 1620 Pangaea; 1621 fossil record; 1622 pterosaur; 1623 mosasaur; 1624 sauropod; 1625 theropod; 1626 herbivore; 1627 carnivore
+
+T prehistoric_periods | prehistoric periods | 50 words
+BRANDS: 1613 Ice Age
+OTHERS: 1607 Mesozoic; 1608 Paleozoic; 1609 Cenozoic; 1610 Jurassic; 1611 Cretaceous; 1612 Triassic; 1619 Cambrian; 7050 Stone Age; 7076 Neolithic; 7077 New Stone Age; 7078 Paleolithic; 7080 Old Stone Age; 7081 Mesolithic; 10069 Permian; 10070 Carboniferous; 10071 Devonian; 10072 Silurian; 10073 Ordovician; 10074 Precambrian; 10075 Pleistocene; 10076 Holocene; 10077 Paleocene; 10079 Eocene; 10080 Oligocene; 10081 Miocene; 10082 Pliocene; 10083 Quaternary; 10084 Tertiary; 10085 Neogene; 10086 Paleogene; 10088 Hadean; 10089 Archean; 10091 Proterozoic; 10092 Anthropocene; 10093 Phanerozoic; 10094 Pennsylvanian; 10095 Mississippian; 10096 Ediacaran; 10097 Age of Dinosaurs; 10098 Age of Reptiles; 10099 Age of Mammals; 60075 Cryogenian; 60076 Neoproterozoic; 60077 Cisuralian; 60078 Lopingian; 60079 Rhaetian; 60080 Calabrian; 60081 Eoarchean; 60082 Tonian
+
+T dinosaur_words | dinosaur words | 48 words
+BRANDS: 10121 Jurassic Park; 10122 The Land Before Time
+OTHERS: 1567 fossil; 1614 extinction; 1616 paleontologist; 1624 sauropod; 1625 theropod; 1626 herbivore; 1627 carnivore; 2472 museum; 3248 skeleton; 6858 excavation; 6887 paleontology; 7114 asteroid; 7128 meteor; 7129 shooting star; 7130 falling star; 9149 claw; 10100 extinct; 10102 omnivore; 10103 ornithischian; 10104 saurischian; 10105 ceratopsian; 10106 dig site; 10107 coprolite; 10108 trackway; 10109 amber; 10110 bipedal; 10111 quadruped; 10112 predator; 10113 prey; 10114 mass extinction; 10115 crest; 10116 frill; 10117 tail spike; 10118 thagomizer; 10119 gastrolith; 10120 dinosaur bones; 10123 petrified; 10124 bonebed; 10125 feathers; 60083 ornithopod; 60084 ichnology; 60085 sauropodomorph; 60086 Chicxulub; 60087 osteoderm; 60088 Bone Wars; 60089 Hell Creek
+
+T famous_forests | famous forests | 27 words
+BRANDS: 30215 Fangorn; 30232 Mirkwood; 30233 Hundred Acre Wood; 30234 Forbidden Forest
+OTHERS: 30209 Sherwood; 30211 Amazon; 30212 Daintree; 30213 Bialowieza; 30214 Sundarbans; 30216 New Forest; 30218 Dean; 30219 Ardennes; 30220 Congo Basin; 30221 Tongass; 30222 Tijuca; 30223 Hoh Rainforest; 30224 Kielder; 30225 Thuringian Forest; 30226 Hainich; 30227 Aokigahara; 30228 Sinharaja; 30229 Monteverde; 30230 Tarkine; 30231 Waipoua; 30235 Bavarian Forest; 63133 Schwarzwald; 63134 Epping
+
+T asian_cities | asian cities | 43 words
+BRANDS: 19710 Sapporo
+OTHERS: 2187 Singapore; 2224 Tokyo; 2234 Beijing; 2235 Peking; 2243 Hong Kong; 2248 Mumbai; 2249 Bombay; 2250 Delhi; 2264 Shanghai; 2265 Bangkok; 2266 Seoul; 2279 Kolkata; 2280 Calcutta; 2296 Kyoto; 2302 Kathmandu; 12777 Busan; 35794 Hanoi; 35795 Manila; 35796 Jakarta; 35880 Osaka; 35881 Kuala Lumpur; 35882 Dhaka; 35883 Karachi; 35884 Lahore; 35885 Chennai; 35886 Bangalore; 35887 Hyderabad; 35888 Taipei; 35889 Guangzhou; 35890 Shenzhen; 35891 Chengdu; 35892 Wuhan; 35893 Nagoya; 35894 Hiroshima; 35895 Nagasaki; 35896 Phnom Penh; 35897 Vientiane; 35898 Yangon; 35899 Colombo; 35900 Chiang Mai; 35901 Macau; 35902 Pyongyang
+
+T japanese_cities | japanese cities | 28 words
+BRANDS: 19710 Sapporo
+OTHERS: 2224 Tokyo; 2296 Kyoto; 20582 Kamakura; 35880 Osaka; 35893 Nagoya; 35894 Hiroshima; 35895 Nagasaki; 36053 Yokohama; 36054 Kobe; 36070 Nara; 44439 Nagano; 57005 Fukuoka; 57006 Sendai; 57007 Kanazawa; 57008 Okayama; 57009 Niigata; 57010 Kumamoto; 57011 Kagoshima; 57012 Hakodate; 57013 Nikko; 57014 Matsumoto; 57015 Naha; 57016 Hamamatsu; 57017 Shizuoka; 57018 Himeji; 57019 Sakai; 59400 Kawasaki
