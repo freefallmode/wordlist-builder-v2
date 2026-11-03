@@ -1,0 +1,3 @@
+export const DATA = { "salad_ingredients": [ [ "crouton", 2, 3 ] ], "ways_to_cook_eggs": [ [ "boiled", 1, 1 ], [ "poached", 1, 2 ], [ "omelette", 1, 2 ], [ "soft-boiled", 1, 3 ], [ "devilled", 2, 3 ], [ "coddled", 3, 4 ] ], "pet_snacks_and_feed": [ [ "fish flakes", 2, 2 ], [ "dog biscuit", 1, 2 ], [ "chew stick", 2, 3 ] ], "things_you_brush": [ [ "crumbs", 1, 3 ] ], "things_you_pour": [ [ "sauce", 1, 2 ] ], "fluffy_things": [ [ "cotton wool", 1, 1 ], [ "candyfloss", 1, 3 ] ], "morning_routine": [ [ "wake up", 1, 1 ], [ "get dressed", 1, 1 ], [ "eat breakfast", 1, 1 ], [ "make the bed", 1, 1 ], [ "have a shower", 1, 1 ], [ "wash your face", 1, 1 ], [ "comb hair", 1, 1 ], [ "pack a bag", 1, 3 ] ]
+};
+export const THEMES = {};
