@@ -59,6 +59,8 @@ main { overflow: auto; padding: 12px 18px 60px; min-width: 0; }
 .crumbs { font-size: 12px; color: var(--dim); } .crumbs a { color: var(--dim); text-decoration: none; }
 .tag { font-size: 11px; font-weight: 400; margin-left: 8px; border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; color: var(--dim); vertical-align: middle; }
 .tag.off { color: var(--bad); border-color: var(--bad); }
+.thead .chips .badge { font-size: 13px; line-height: 20px; padding: 1px 9px; border-radius: 5px; }
+.titlebar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px 16px; margin: 4px 0 8px; } .titleleft { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; } .titleleft h1 { margin: 0; } .titlebar .actions { margin: 0; justify-content: flex-end; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .note { color: var(--dim); margin: 6px 0; max-width: 90ch; }
 .actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
@@ -80,6 +82,7 @@ td.word { cursor: pointer; font-weight: 500; } td.word:hover { text-decoration: 
 .gloss, .arrow { color: var(--dim); font-weight: 400; } .dim { color: var(--dim); font-size: 12px; }
 tr.alias td.word { padding-left: 22px; font-weight: 400; } tr.off { opacity: .45; }
 .rs { padding: 1px 2px; width: 64px; } .rs.r1 { background: var(--r1); } .rs.r2 { background: var(--r2); } .rs.r3 { background: var(--r3); } .rs.r4 { background: var(--r4); } .rs.r5 { background: var(--r5); } .rs.r0 { color: var(--dim); }
+.diffcell { display: inline-block; min-width: 26px; padding: 1px 6px; border-radius: 3px; text-align: center; } .diffcell.r1 { background: var(--r1); } .diffcell.r2 { background: var(--r2); } .diffcell.r3 { background: var(--r3); } .diffcell.r4 { background: var(--r4); } .diffcell.r5 { background: var(--r5); } .diffcell.r0 { color: var(--dim); }
 .dot { display: inline-block; width: 18px; text-align: center; color: var(--dim); } .dot.rev { color: var(--ok); font-weight: 700; } .dot.gen { color: var(--warn); font-weight: 700; }
 .overview table { max-width: 640px; } tr.clickable { cursor: pointer; } tr.clickable:hover td { background: var(--hover); }
 

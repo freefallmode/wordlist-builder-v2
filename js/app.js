@@ -157,7 +157,7 @@ function filterVisible() {
   if (!f) return null;
   const P = A.P, vis = new Set(), hit = new Set();
   for (const t of P.themes) if (f(P, t, eff(P, t.id))) { hit.add(t.id); for (let x = t; x; x = x.parent && P.ix.theme.get(x.parent)) vis.add(x.id); }
-  vis.hits = hit.size;
+  vis.hits = hit.size; vis.hit = hit;
   return vis;
 }
 // Search ranking: exact match first, then names starting with the text, then whole-word matches, then other substrings; shorter names first within each rank.
@@ -168,12 +168,14 @@ const ranked = (items, nameOf, q, cap) => { const hits = []; for (const it of it
 function renderTree() {
   const P = A.P, box = $('#tree'), q = A.search.trim().toLowerCase();
   if (q) {
-    const tr = ranked(P.themes, t => t.name, q, 60), themes = tr.list;
-    const wr = q.length < 2 ? { total: 0, list: [] } : ranked(P.entries, e => e.text, q, 60), words = wr.list;
+    const only = filterVisible();   // the filter above the tree narrows the search too: only matching themes, and words in them
+    const tr = ranked(only ? P.themes.filter(t => only.hit.has(t.id)) : P.themes, t => t.name, q, 60), themes = tr.list;
+    const wr = q.length < 2 ? { total: 0, list: [] } : ranked(only ? P.entries.filter(e => linkIds(P, e).some(id => only.hit.has(id))) : P.entries, e => e.text, q, 60), words = wr.list;
     const sect = (key, title, hits) => [
       h('div.sechead.fold', { onclick: () => { searchOpen[key] = !searchOpen[key]; renderTree(); } }, (searchOpen[key] ? '▾ ' : '▸ ') + title),
       ...(searchOpen[key] ? hits : [])];
     box.replaceChildren(...[
+      only && h('div.sechead', `Only the ${plural(only.hit.size, 'theme')} matching the filter`),
       sect('themes', `Themes (${tr.total > themes.length ? themes.length + ' of ' + tr.total : themes.length})`,
         themes.map(t => h('div.hit', { onclick: () => select_(t.id) }, h('b', t.name), h('span.path', pathOf(P, t.id).slice(0, -1).join(' › '))))),
       sect('words', `Words (${wr.total > words.length ? words.length + ' of ' + wr.total : words.length})`,
@@ -241,18 +243,12 @@ function themeView(t) {
   const kids = P.ix.kids.get(t.id) || [];
   const path = pathOf(P, t.id);
   const head = h('div.thead', {},
-    h('div.crumbs', {}, path.slice(0, -1).map((n, i) => h('a', { href: '#', onclick: ev => { ev.preventDefault(); select_(P.ix.theme.get(pathIds(t.id)[i]).id); } }, n + ' › '))),
-    h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')),
-    h('div.chips', {}, badges(t), t.pop ? h('span.badge.d', { title: 'Theme popularity (1 most popular)' }, 'popularity ' + t.pop) : h('span.badge.d0', 'popularity not rated'), !t.group && themeBadge(A.P, t)),
-    t.note && h('p.note', t.note),
-    h('div.actions', {}, h('button', { onclick: () => editTheme(t) }, 'Theme settings…'), h('button', { onclick: () => addTheme(t.id) }, '+ Sub-theme'),
-      !t.group && h('button', { onclick: () => bulkAdd(t.id) }, '+ Add words…'), !t.group && h('button.primary', { onclick: () => generate(t.id) }, 'Generate with Claude…'),
-      ));
+    h('div.crumbs', {}, h('a', { href: '#', onclick: ev => { ev.preventDefault(); A.sel = null; A.view = null; render(); } }, 'Overview › '), path.slice(0, -1).map((n, i) => h('a', { href: '#', onclick: ev => { ev.preventDefault(); select_(P.ix.theme.get(pathIds(t.id)[i]).id); } }, n + ' › '))),
+    h('div.titlebar', {}, h('div.titleleft', {}, h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')), h('div.chips', {}, badges(t), t.pop ? h('span.badge.d', { title: 'Theme popularity (1 most popular)' }, 'popularity ' + t.pop) : h('span.badge.d0', 'popularity not rated'), !t.group && themeBadge(A.P, t))),
+      h('div.actions', {}, h('button', { onclick: () => editTheme(t) }, 'Theme settings…'), h('button', { onclick: () => addTheme(t.id) }, '+ Sub-theme'),
+      !t.group && h('button', { onclick: () => bulkAdd(t.id) }, '+ Add words…'), !t.group && h('button.primary', { onclick: () => generate(t.id) }, 'Generate with Claude…'))),
+    t.note && h('p.note', t.note));
   const parts = [head];
-  if (kids.length) {
-    const c = counts();
-    parts.push(h('div.kids', {}, kids.map(k => h('div.kid', { onclick: () => select_(k.id) }, h('b', k.name), h('span.hint', k.group ? `${c.ready.get(k.id)}/${c.play.get(k.id)} ready` : `${c.own.get(k.id)} words`)))));
-  }
   if (t.group) { if (!kids.length) parts.push(h('p.hint', 'This group is empty. Add a sub-theme.')); else parts.push(entryTable(t)); return parts; }
 
   const status = st.roots >= min ? h('span.ok', `${st.roots} distinct words ✓`) : h('span.bad', `${st.roots} of ${min} needed`);
@@ -332,7 +328,7 @@ function entryTable(t) {
         h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, e.aliasOf ? '' : synCell(t, e)),
         h('td.dim', v.pos), h('td.dim', v.type), h('td', {}, recSel(v.rec, ev => { v.rec = +ev.target.value; A.changed(); })),
         sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true)),
-        h('td.dim', { title: 'Difficulty: the harder of familiarity and typicality (worked out, not editable)' }, sub ? '' : effRec(P, e, t.id) || ''),
+        h('td', {}, sub ? '' : h('span.diffcell.' + RECCLASS[effRec(P, e, t.id)], { title: 'Difficulty: the harder of familiarity and typicality (worked out, not editable)' }, effRec(P, e, t.id) || '–')),
         h('td', flagsOf(v)), h('td', h('span.dot.' + v.status, { title: v.status }, v.status === 'rev' ? '✓' : v.status === 'gen' ? 'g' : '·'))); }) :
         h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
 }
