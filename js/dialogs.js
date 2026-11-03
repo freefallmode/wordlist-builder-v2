@@ -6,7 +6,7 @@ import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, ALIAS_KINDS, STATUS
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, themeProfile, dialectOf, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
-import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf } from './export.js';
+import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } from './export.js';
 import { download } from './store.js';
 import { MODELS, getKey, setKey, getModel, setModel, generateWords, rateThemes, SPREADS } from './ai.js';
 
@@ -45,6 +45,8 @@ export async function editTheme(t, isNew = false) {
   const f = {
     name: h('input', { value: w.name }),
     note: h('textarea', { rows: 3 }, w.note),
+    tkind: select(THEME_KINDS.map(k => [k, k]), w.tkind || 'category'),
+    rule: h('input', { value: w.rule || '', placeholder: 'hidden:tree, rhyme:ake, palindrome, compound-end:bag, compound-start:snow' }),
     pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
     diff: select([[0, 'worked out from the words' + (isNew ? '' : ' (now ' + (themeProfile(P, t.id).auto || 'none') + ')')], [1, '1 (easiest)'], [2, '2'], [3, '3'], [4, '4'], [5, '5 (hardest)']], w.diff || 0),
   };
@@ -59,6 +61,8 @@ export async function editTheme(t, isNew = false) {
     h('div.flags', Object.values(boxes)),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).'),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
+    field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
+    field('Rule', f.rule, 'Wordplay and compound themes only: how the game tests a word. hidden:<what>, rhyme:<ending>, palindrome, anagram, homophone, onomatopoeia, double-letters, starts:<what>, ends:<ending>, contains:<letters>, compound-end:<word> for ___ word, compound-start:<word> for word ___, or other.'),
     field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). Difficulty is worked out from the words.'),
     field('Theme difficulty', f.diff, 'Normally worked out from the words (the median of their difficulty). Set it to override that for this theme.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
@@ -77,11 +81,18 @@ export async function editTheme(t, isNew = false) {
       if (parent && (parent === t.id || (!isNew && isAncestor(P, t.id, parent)))) throw Error('A theme cannot be inside itself.');
       Object.assign(w, { name, note: f.note.value.trim(), pop: +f.pop.value });
       if (+f.diff.value) w.diff = +f.diff.value; else delete w.diff;
+      const tk = f.tkind.value, rule = f.rule.value.trim();
+      if (tk === 'compound' && !/^compound-(end|start):./.test(rule)) throw Error('A compound theme needs a rule: compound-end:<word> or compound-start:<word>.');
+      if (tk === 'wordplay' && !rule) throw Error('A wordplay theme needs a rule (or other).');
+      if (tk === 'category') delete w.tkind; else w.tkind = tk;
+      if ((tk === 'wordplay' || tk === 'compound') && rule) w.rule = rule; else delete w.rule;
       for (const k of flags) w[k] = boxes[k].querySelector('input').checked;
       w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
       const oldParent = t.parent;
       Object.assign(t, w, { parent: oldParent });
       if (!w.diff) delete t.diff;
+      if (!w.tkind) delete t.tkind;
+      if (!w.rule) delete t.rule;
       if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindex(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
       else if ((parent || null) !== (oldParent || null)) { reindex(P); moveTheme(P, t.id, parent); if (parent) A.open.add(parent); }
       A.changed();
