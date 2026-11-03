@@ -28,7 +28,7 @@ for (const f of files) for (const line of fs.readFileSync(f, 'utf8').split(/\r?\
   const bad = [];
   if (es.some(e => !e || e.aliasOf)) bad.push('a word id is missing or is an alias');
   else if (es.some(e => e.th[pid] === undefined)) bad.push('a word is not in the parent');
-  if (ids.length < 8) bad.push(`only ${ids.length} words`);
+  if (ids.length < 4) bad.push(`only ${ids.length} words`);
   const parentN = new Set((P.ix.byTheme.get(pid) || []).map(e => e.aliasOf || e.id)).size;
   if (ids.length > parentN * 0.7) bad.push(`${ids.length} of ${parentN} words is most of the parent`);
   if (parent.complete) bad.push('the parent is complete');

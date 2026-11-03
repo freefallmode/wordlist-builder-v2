@@ -80,7 +80,8 @@ A root is a **meaning** (`rain`), and its `form` aliases are its grammatical for
 ## 4. Splitting themes
 
 Many themes can yield new themes of 4 or more words, especially once forms are queryable (`weather`: 58 nouns and 8 adjectives could give a `weather conditions` theme of adjectives and a `rough weather` theme of storms). Rules:
-- A split theme should have at least 8 distinct words and a name that does not leak its words.
+- A split theme should have at least 4 distinct words (relaxed from 8, 2026-11-03), be a real subtype or a clear membership test (not just a shared word: "water" in drinks is not a subtype), and have a name that does not leak its words.
+- **Overlap rule** (2026-11-03). A theme must not list two words for the same thing, or a word and a more specific form of it, unless they are grouped. Cola and Coca-Cola, or pasta and pasta sauce, are the mistake. Fixes, in order: (1) the same thing under two names becomes one entry (the shortest form; the other an alias or dropped); (2) a brand leaves generic themes entirely and lives in brand themes, kept in a generic theme only when no generic word stands for it there; (3) four or more subtypes of one thing become their own sub-theme; (4) fewer than four stay in the parent and go in a theme-local synonym group so a level never uses both. The validator reports candidates as `overlap` (info).
 - **Complete themes** (134 closed sets, whose note lists the exact members) are only split into pieces that are themselves exact sets.
 - A word may sit in a parent and a child, but the level generator must not use the parent and its split-off children together. Check how the game handles sibling overlap before adding many splits.
 - Splits are proposed by agents, names approved by a person.

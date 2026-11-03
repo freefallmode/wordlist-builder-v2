@@ -56,6 +56,19 @@ export function validate(P) {
   }
   if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no popularity rating yet.`);
 
+  // ----- overlap: one word inside another in the same theme (cola / Coca-Cola, pasta / pasta sauce) -----
+  const toks = s => s.toLowerCase().match(/[a-z0-9]+/g) || [];
+  const hasRun = (big, small) => { for (let i = 0; i + small.length <= big.length; i++) if (small.every((w, j) => big[i + j] === w)) return true; return false; };
+  for (const t of P.themes) {
+    if (t.group || !eff(P, t.id).enabled) continue;
+    const list = (ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf && e.enabled).map(e => ({ e, w: toks(e.show?.[t.id] || e.text) })).filter(x => x.w.length);
+    const grouped = new Map(); for (const g of t.groups || []) for (const id of g) grouped.set(id, g);
+    for (const a of list) for (const b of list) {
+      if (a.w.length >= b.w.length || !hasRun(b.w, a.w) || grouped.get(a.e.id) === grouped.get(b.e.id) && grouped.has(a.e.id)) continue;
+      add('info', 'overlap', `"${t.name}" lists both "${a.e.show?.[t.id] || a.e.text}" and "${b.e.show?.[t.id] || b.e.text}". Same thing, a subtype, or a brand of it? Merge, move the brand out, group, or make a sub-theme.`, { themeId: t.id, entryId: b.e.id });
+    }
+  }
+
   // ----- entries -----
   const seen = new Map();
   for (const e of P.entries) {

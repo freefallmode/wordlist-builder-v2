@@ -1,0 +1,29 @@
+SUB sea_mammals | whale_types | whale types | 1305 1306 1307 1308 7867 7868 7869 7871 7872 7873 7874 7876
+SUB crustaceans | crab_types | crab types | 1311 8861 8862 8863 8864 8865 8872 8873 8874 8875
+SUB ants_and_termites | ant_types | ant types | 9216 9217 9225 9226 9233 59970 59972 59973 59975
+SUB bees_and_wasps | wasp_types | wasp types | 9072 9073 9074 9081 59954 59955 59958 59967
+SUB cephalopods | squid_types | squid types | 1318 8831 8970 9932 31602 50796 50803 50804
+SUB hibernating_animals | bear_types | bear types | 7943 7944 7946 7947 7949 7950 7951
+SUB sea_mammals | seal_types | seal types | 8897 8898 8899 8901 8902 8903 8904
+SUB sporting_dogs | spaniel_types | spaniel types | 9283 51081 51092 51093 51094 51095 51096 51097
+MERGE jellyfish_and_relatives 1317 8917
+MERGE butterflies_and_moths 9039 9040
+GROUP butterflies_and_moths 9046 9033
+MERGE sporting_dogs 255 51079
+MERGE working_dogs 51071 51051
+MERGE herding_dogs 269 51025
+MERGE cattle_breeds 9341 9356
+GROUP cattle_breeds 1524 9374
+MERGE horse_tack 1537 9572
+MERGE north_american_birds 8153 9738
+MERGE north_american_birds 8201 9735
+MERGE animal_homes 10174 8492
+MERGE homes_for_birds 10174 8492
+MERGE male_animals 10293 1478
+GROUP dog_commands 50870 16862
+GROUP dog_commands 50890 50885
+GROUP hounds 50990 50981
+GROUP hounds 50995 50975
+GROUP hounds 50996 50974
+GROUP herding_dogs 9470 51032
+GROUP working_dogs 264 51050

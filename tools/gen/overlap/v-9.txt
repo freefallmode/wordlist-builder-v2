@@ -1,0 +1,36 @@
+# Olympic sailing is just sailing
+MERGE sailing_sports 5296 43490
+# same thing, bracketed duplicate
+MERGE snow_sports 43515 43512
+SUB snow_sports | ski_disciplines | ski disciplines | 5356 5361 5362 5376 5392 43512 43514 43517 61603
+SUB combat_sports | wrestling_styles | wrestling styles | 5417 5418 5429 5430 5439
+GROUP combat_sports 5409 5430
+# stalefish grab is the same trick as stalefish
+MERGE snowboard_tricks 43651 43665
+SUB snowboard_tricks | snowboard_grabs | snowboard grabs | 43647 43650 43652 43653 43654 43666
+# shot and shot put are the same event
+MERGE field_events 43942 43933
+# Cortina is the same place
+MERGE olympic_host_cities 48997 44433
+# Giro is the Giro d'Italia
+MERGE bike_races 60713 44324
+# Webb Ellis is the Webb Ellis Cup
+MERGE trophies_and_prizes 44474 42926
+SUB adventure_and_outdoor_sports | climbing_styles | climbing styles | 5368 5602 5638 5646
+# jumping as an equestrian event is show jumping
+MERGE equestrian_events 44919 1511
+GROUP casino_games 5682 45197
+GROUP casino_games 45204 5689
+SUB casino_games | poker_variants | poker variants | 5690 45187 45197 45203
+BRAND lottery_words 5667 45391
+BRAND toys 46057 46064
+BRAND toys_and_play 65906 5983
+BRAND building_toys 46147 46150
+BRAND dolls_and_figures 12046 46185
+BRAND keyboard_instruments 6007 10635
+BRAND keyboard_instruments 5998 10636
+SUB keyboard_instruments | piano_types | piano types | 10628 10629 10630 10636 10641 10644 10645 10646
+BRAND electronic_instruments 10704 10703
+SUB brass_instruments | horn_types | horn types | 295 10580 10581 10582 10585 10588 10592
+BRAND power_ups_and_pickups 45784 45806
+GROUP south_american_soccer_clubs 46449 46467

@@ -1,0 +1,47 @@
+MERGE keyboard_symbols 26135 26147
+MERGE keyboard_symbols 26146 26128
+GROUP fonts 26237 26277
+GROUP typefaces_without_serifs 26237 26277
+GROUP thank_you_around_the_world 26765 26766
+GROUP goodbye_around_the_world 26803 26827
+GROUP swahili_words 26772 26993
+GROUP maori_words 27122 27096
+# barnet fair is the full rhyming-slang form of barnet
+MERGE cockney_rhyming_slang 27446 27445
+MERGE polite_swears 26561 27729
+MERGE british_exclamations 26561 27729
+GROUP words_meaning_nonsense 27753 27787
+MERGE words_for_toilet 27927 27914
+GROUP jewel_tones 38557 38571
+GROUP jewel_tones 38574 38801
+GROUP jewel_tones 38588 38802
+GROUP jewel_tones 38618 38803
+GROUP colors_named_after_gems 38584 31670
+MERGE see_through_materials 39017 39011
+MERGE slippery_things 3726 39084
+GROUP prickly_things 28480 39094
+MERGE plants_with_spines 1778 1779
+GROUP salty_foods 39159 19090
+GROUP bar_snacks 39159 19090
+BRAND fizzy_drinks 865 871
+GROUP words_for_pretty 39448 39470
+MERGE eating_sounds 57948 57949
+MERGE eating_sounds 57948 57955
+MERGE eating_sounds 57949 57955
+GROUP water_sounds 39624 27828
+MERGE things_that_smell_good 226 39693
+MERGE smells_from_the_kitchen 226 39693
+MERGE pungent_foods 393 39728
+GROUP candle_scents 39752 39753
+GROUP ways_to_jump 6270 62513
+MERGE things_that_reflect 1909 40006
+MERGE words_for_shiny 40023 40048
+BRAND pink_things 150 40144
+BRAND things_with_eyes 392 40208
+MERGE things_with_wheels 40182 39779
+MERGE things_with_teeth 7384 40189
+MERGE things_that_sting 40247 9819
+BRAND things_that_cut 20135 4813
+SUB things_that_bounce | ball_types | ball types | 39569 39803 39804 39805 39807 39808 39809 39811 39814
+SUB sentence_parts | clause_types | clause types | 26386 26387 26388 26389 26390 26400 26401 26402
+SUB things_that_ring | bell_types | bell types | 23210 40302 40303 40305 40306 40307 40308 40309 40310

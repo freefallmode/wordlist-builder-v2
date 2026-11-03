@@ -1,0 +1,1128 @@
+T horse_drawn_vehicles | horse-drawn vehicles | 39 words | note: carriage, wagon, buggy, stagecoach, chariot, hansom cab, sleigh
+A 29373 wagon (common, rec 1, in 5 themes)
+  B 23013 covered wagon (common, rec 2, in 6 themes)
+  B 49064 hay wagon (common, rec 2, in 2 themes)
+  B 49182 Conestoga wagon (proper, rec 4, in 1 themes)
+A 49161 carriage [horse-drawn] (common, rec 1, in 1 themes)
+  B 47010 hackney carriage (common, rec 3, in 3 themes)
+A 49163 cart [horse-drawn] (common, rec 1, in 1 themes)
+  B 48235 pony cart (common, rec 3, in 2 themes)
+A 49164 coach [carriage] (common, rec 2, in 1 themes)
+  B 13626 pumpkin coach (common, rec 2, in 2 themes)
+  B 49183 Concord coach (proper, rec 5, in 1 themes)
+
+T truck_types | truck types | 41 words | note: pickup, semi, dump truck, tow truck, flatbed, tanker, box truck
+A 3163 semi [truck] (common, rec 2, in 3 themes)
+  B 49185 semi trailer (common, rec 3, in 1 themes)
+A 49201 concrete (common, rec 2, in 1 themes)
+  B 3109 concrete mixer (common, rec 2, in 4 themes)
+
+T vehicle_sounds | vehicle sounds | 44 words
+A 10209 honk (common, rec 1, in 5 themes)
+  B 49212 honk honk (common, rec 1, in 1 themes)
+A 28872 ding (common, rec 2, in 4 themes)
+  B 49215 ding-ding (common, rec 2, in 1 themes)
+A 29017 toot (common, rec 2, in 2 themes)
+  B 49213 toot toot (common, rec 1, in 1 themes)
+A 39583 beep (common, rec 1, in 3 themes)
+  B 49211 beep beep (common, rec 1, in 1 themes)
+
+T electric_vehicles | electric vehicles | 53 words
+A 188 Tesla [car company] (org, rec 1, brand, in 3 themes)
+  B 49226 Tesla Model 3 (proper, rec 2, brand, in 2 themes)
+  B 49227 Tesla Model S (proper, rec 2, brand, in 2 themes)
+  B 49246 Tesla Roadster (proper, rec 3, brand, in 2 themes)
+A 23150 car [automobile] (common, rec 1, in 7 themes)
+  B 49250 solar car (common, rec 3, in 1 themes)
+A 46641 hybrid [car] (common, rec 2, in 2 themes)
+  B 49219 plug-in hybrid (common, rec 3, in 1 themes)
+
+T types_of_public_transport | types of public transport | 25 words | note: kinds of public transport a person can ride: bus, train, tram, subway, ferry, taxi, cable car
+A 2646 bus [public vehicle] (common, rec 1, in 7 themes)
+  B 2691 water bus (phrase, rec 4, in 2 themes)
+A 2684 rickshaw (common, rec 3, in 5 themes)
+  B 2683 auto rickshaw (common, rec 4, in 4 themes)
+A 39524 train [vehicle] (common, rec 1, in 6 themes)
+  B 2866 bullet train (common, rec 1, in 3 themes)
+A 40088 taxi (common, rec 1, in 5 themes)
+  B 47014 water taxi (common, rec 2, in 3 themes)
+
+T modes_of_transport | modes of transport | 33 words | note: ways of getting around: car, bus, train, plane, boat, bike, on foot
+A 23150 car [automobile] (common, rec 1, in 7 themes)
+  B 47041 cable car (common, rec 1, in 6 themes)
+
+T body_parts | body parts | 81 words
+A 168 back [body part] (common, rec 1, in 8 themes)
+  B 3236 small of the back (phrase, rec 3, in 2 themes)
+A 3170 shoulder [body part] (common, rec 1, in 7 themes)
+  B 3219 shoulder blade (common, rec 2, in 2 themes)
+A 3180 foot [body] (common, rec 1, in 5 themes)
+  B 3237 ball of the foot (phrase, rec 3, in 2 themes)
+A 3181 toe (common, rec 1, in 5 themes)
+  B 3233 big toe (common, rec 1, in 4 themes)
+
+T face | face parts | 29 words
+A 3183 nose [body part] (common, rec 1, in 6 themes)
+  B 14202 bridge of the nose (phrase, rec 3, in 1 themes)
+
+T hands_and_feet | hands and feet | 33 words
+A 3180 foot [body] (common, rec 1, in 5 themes)
+  B 3237 ball of the foot (phrase, rec 3, in 2 themes)
+A 3181 toe (common, rec 1, in 5 themes)
+  B 3233 big toe (common, rec 1, in 4 themes)
+  B 14213 little toe (common, rec 1, in 1 themes)
+  B 14218 pinky toe (common, rec 2, in 1 themes)
+
+T arms_and_legs | arms and legs | 36 words
+A 3171 arm [body] (common, rec 1, in 4 themes)
+  B 14227 upper arm (common, rec 2, in 1 themes)
+  B 14233 crook of the arm (phrase, rec 3, in 1 themes)
+A 3177 leg [body part] (common, rec 1, in 4 themes)
+  B 14231 lower leg (common, rec 2, in 1 themes)
+A 3191 thigh (common, rec 1, in 3 themes)
+  B 3286 thigh bone (common, rec 1, in 3 themes)
+  B 14234 inner thigh (common, rec 2, in 1 themes)
+
+T torso | torso | 41 words
+A 167 belly [stomach] (common, rec 1, in 3 themes)
+  B 173 belly button (common, rec 1, in 2 themes)
+A 168 back [body part] (common, rec 1, in 8 themes)
+  B 3236 small of the back (phrase, rec 3, in 2 themes)
+  B 14247 lower back (common, rec 1, in 1 themes)
+  B 14248 upper back (common, rec 1, in 1 themes)
+
+T joints | joints | 27 words | note: elbow, knee, ankle, wrist, hip, shoulder, knuckle, jaw
+A 14263 socket [joint] (common, rec 2, in 2 themes)
+  B 14260 ball and socket (common, rec 3, in 1 themes)
+
+T hair | hair | 47 words
+A 14277 braid (common, rec 1, in 3 themes)
+  B 14311 fishtail braid (common, rec 3, in 2 themes)
+A 14291 moustache (common, rec 2, in 2 themes)
+  B 14316 handlebar moustache (common, rec 3, in 2 themes)
+
+T hairstyles | hairstyles | 34 words
+A 14277 braid (common, rec 1, in 3 themes)
+  B 14311 fishtail braid (common, rec 3, in 2 themes)
+  B 53019 french braid (common, rec 2, in 1 themes)
+A 14280 bun [hair] (common, rec 1, in 2 themes)
+  B 53024 man bun (common, rec 2, in 1 themes)
+
+T beard_styles | beard styles | 27 words
+A 14291 moustache (common, rec 2, in 2 themes)
+  B 14316 handlebar moustache (common, rec 3, in 2 themes)
+A 14295 stubble (common, rec 2, in 5 themes)
+  B 53029 designer stubble (common, rec 3, in 1 themes)
+
+T hair_colors | hair colors | 33 words
+A 7668 black [color] (common, rec 1, in 14 themes)
+  B 53050 jet black (common, rec 2, in 1 themes)
+A 7669 jet [color] (common, rec 3, in 5 themes)
+  B 53050 jet black (common, rec 2, in 1 themes)
+A 14298 blonde [hair] (common, rec 1, in 2 themes)
+  B 53046 strawberry blonde (common, rec 3, in 1 themes)
+  B 53047 platinum blonde (common, rec 2, in 1 themes)
+  B 53048 dirty blonde (common, rec 2, in 1 themes)
+  B 53053 ash blonde (common, rec 3, in 1 themes)
+  B 53056 peroxide blonde (common, rec 4, in 1 themes)
+
+T paired_body_parts | paired body parts | 36 words | note: body parts that come in twos: eye, ear, lung, kidney, knee, elbow
+A 3170 shoulder [body part] (common, rec 1, in 7 themes)
+  B 3219 shoulder blade (common, rec 2, in 2 themes)
+
+T inside_the_body | inside the body | 74 words
+A 3243 bone (common, rec 1, in 7 themes)
+  B 3272 bone marrow (common, rec 2, in 2 themes)
+  B 3286 thigh bone (common, rec 1, in 3 themes)
+A 3251 nerve [body] (common, rec 2, in 1 themes)
+  B 3305 sciatic nerve (common, rec 4, in 1 themes)
+A 3276 gland (common, rec 2, in 1 themes)
+  B 3288 adrenal gland (common, rec 4, in 3 themes)
+  B 3294 pituitary gland (common, rec 4, in 3 themes)
+
+T organs | organs | 43 words
+A 3252 intestine (common, rec 2, in 3 themes)
+  B 14404 small intestine (common, rec 2, in 2 themes)
+  B 14405 large intestine (common, rec 2, in 2 themes)
+
+T blood_words | blood words | 42 words
+A 3245 blood [body fluid] (common, rec 1, in 8 themes)
+  B 14447 blood pressure (common, rec 1, in 1 themes)
+  B 14448 blood type (common, rec 1, in 1 themes)
+  B 14473 blood vessel (common, rec 2, in 1 themes)
+A 14475 donor [blood] (common, rec 2, in 1 themes)
+  B 14478 universal donor (common, rec 3, in 1 themes)
+
+T teeth | teeth | 39 words
+A 14482 tooth (common, rec 1, in 4 themes)
+  B 14486 wisdom tooth (common, rec 1, in 2 themes)
+  B 14487 baby tooth (common, rec 1, in 1 themes)
+  B 14488 milk tooth (common, rec 2, in 1 themes)
+  B 14509 tooth socket (common, rec 3, in 1 themes)
+  B 14513 buck tooth (common, rec 3, in 1 themes)
+  B 14514 sweet tooth (common, rec 1, in 1 themes)
+  B 14515 gap tooth (common, rec 2, in 1 themes)
+A 14483 molar (common, rec 2, in 4 themes)
+  B 14511 third molar (common, rec 4, in 1 themes)
+
+T brain_parts | brain parts | 48 words
+A 3242 brain (common, rec 1, in 3 themes)
+  B 14522 brain stem (common, rec 3, in 1 themes)
+A 14523 cortex (common, rec 3, in 1 themes)
+  B 14543 cerebral cortex (common, rec 4, in 1 themes)
+  B 14544 prefrontal cortex (common, rec 4, in 1 themes)
+  B 14561 motor cortex (common, rec 4, in 1 themes)
+  B 14562 visual cortex (common, rec 4, in 1 themes)
+A 14557 gyrus (common, rec 5, in 1 themes)
+  B 14556 fusiform gyrus (common, rec 5, in 1 themes)
+A 50248 hemisphere [brain] (common, rec 2, in 1 themes)
+  B 14374 cerebral hemisphere (common, rec 5, in 2 themes)
+
+T body_systems | body systems | 29 words | note: digestive, nervous, circulatory, respiratory, skeletal, immune
+A 14564 nervous (common, rec 1, in 1 themes)
+  B 14576 central nervous system (common, rec 3, in 1 themes)
+  B 14588 enteric nervous system (common, rec 5, in 1 themes)
+A 62706 immune (common, rec 3, in 1 themes)
+  B 14586 immune response (common, rec 2, in 1 themes)
+
+T digestive_system | digestive system | 44 words
+A 3195 stomach (common, rec 1, in 5 themes)
+  B 14633 stomach acid (common, rec 2, in 1 themes)
+A 3252 intestine (common, rec 2, in 3 themes)
+  B 14404 small intestine (common, rec 2, in 2 themes)
+  B 14405 large intestine (common, rec 2, in 2 themes)
+A 3260 colon [intestine] (common, rec 3, in 3 themes)
+  B 14647 sigmoid colon (common, rec 5, in 1 themes)
+  B 14648 transverse colon (common, rec 5, in 1 themes)
+A 3289 bile (common, rec 3, in 2 themes)
+  B 14636 bile duct (common, rec 3, in 1 themes)
+
+T senses | senses | 47 words | note: the five senses and sense organs: sight, hearing, smell, taste, touch, eye, ear, nose, tongue, skin
+A 41 taste (common, rec 1, in 3 themes)
+  B 3315 taste buds (common, rec 2, in 1 themes)
+A 3186 ear (common, rec 1, in 5 themes)
+  B 3350 inner ear (common, rec 2, in 1 themes)
+A 3309 vision (common, rec 2, in 2 themes)
+  B 3320 night vision (common, rec 2, in 2 themes)
+  B 3321 peripheral vision (common, rec 3, in 1 themes)
+
+T sight_words | sight words | 50 words
+A 14672 view (common, rec 2, in 2 themes)
+  B 13140 bird's-eye view (common, rec 3, in 2 themes)
+
+T hearing_words | hearing words | 49 words
+A 3312 deaf (common, rec 1, in 2 themes)
+  B 14716 tone deaf (common, rec 2, in 1 themes)
+  B 14717 stone deaf (phrase, rec 3, in 1 themes)
+
+T smell_words | smell words | 43 words
+A 3313 sniff (common, rec 1, in 4 themes)
+  B 14765 scratch and sniff (phrase, rec 2, in 1 themes)
+
+T touch_words | touch words | 53 words
+A 14800 feel (common, rec 1, in 1 themes)
+  B 14837 feel up (phrase, rec 3, in 1 themes)
+
+T eye_parts | eye parts | 36 words
+A 14872 tear [eye] (common, rec 1, in 1 themes)
+  B 14846 tear duct (common, rec 2, in 1 themes)
+  B 14862 tear gland (common, rec 3, in 1 themes)
+
+T illnesses | illnesses | 85 words
+A 3355 cold [illness] (common, rec 1, in 2 themes)
+  B 3432 cold sore (common, rec 2, in 1 themes)
+A 3362 measles (common, rec 1, in 6 themes)
+  B 3422 German measles (common, rec 3, in 3 themes)
+A 3392 fever (common, rec 1, in 4 themes)
+  B 3423 scarlet fever (common, rec 3, in 3 themes)
+  B 3445 hay fever (common, rec 1, in 5 themes)
+
+T common_illnesses | common illnesses | 60 words
+A 3359 flu (common, rec 1, in 6 themes)
+  B 14895 stomach flu (common, rec 2, in 2 themes)
+A 3392 fever (common, rec 1, in 4 themes)
+  B 3445 hay fever (common, rec 1, in 5 themes)
+A 14891 sniffles (common, rec 2, in 2 themes)
+  B 3357 the sniffles (common, rec 3, in 2 themes)
+
+T childhood_illnesses | childhood illnesses | 45 words
+A 3362 measles (common, rec 1, in 6 themes)
+  B 3422 German measles (common, rec 3, in 3 themes)
+
+T allergies | allergies | 44 words
+A 14893 rhinitis (common, rec 4, in 3 themes)
+  B 14951 allergic rhinitis (common, rec 4, in 1 themes)
+A 14916 pollen (common, rec 1, in 6 themes)
+  B 65744 pollen-food syndrome (common, rec 5, in 1 themes)
+A 14950 food (common, rec 1, in 1 themes)
+  B 65744 pollen-food syndrome (common, rec 5, in 1 themes)
+
+T injuries | injuries | 61 words
+A 14986 fracture (common, rec 2, in 3 themes)
+  B 15025 compound fracture (common, rec 3, in 2 themes)
+  B 15026 hairline fracture (common, rec 3, in 2 themes)
+  B 15027 greenstick fracture (common, rec 4, in 2 themes)
+  B 15112 stress fracture (common, rec 3, in 3 themes)
+  B 60789 Colles fracture (proper, rec 5, in 2 themes)
+  B 60790 boxer's fracture (common, rec 5, in 2 themes)
+
+T bone_and_joint_injuries | bone and joint injuries | 9 words
+A 14986 fracture (common, rec 2, in 3 themes)
+  B 15025 compound fracture (common, rec 3, in 2 themes)
+  B 15026 hairline fracture (common, rec 3, in 2 themes)
+  B 15027 greenstick fracture (common, rec 4, in 2 themes)
+  B 15112 stress fracture (common, rec 3, in 3 themes)
+  B 60789 Colles fracture (proper, rec 5, in 2 themes)
+  B 60790 boxer's fracture (common, rec 5, in 2 themes)
+
+T historic_diseases | historic diseases | 33 words
+A 3379 plague (common, rec 2, in 4 themes)
+  B 15055 bubonic plague (common, rec 2, in 1 themes)
+
+T sports_injuries | sports injuries | 33 words
+A 14986 fracture (common, rec 2, in 3 themes)
+  B 15112 stress fracture (common, rec 3, in 3 themes)
+A 14996 strain [muscle] (common, rec 2, in 3 themes)
+  B 15107 groin strain (common, rec 3, in 1 themes)
+
+T medicine | medical words | 70 words
+A 3448 doctor (common, rec 1, in 7 themes)
+  B 3488 family doctor (common, rec 1, in 3 themes)
+
+T forms_of_medicine | forms of medicine | 34 words | note: pill, capsule, syrup, ointment, drops, inhaler, injection, patch, lozenge
+A 15150 tablet [medicine] (common, rec 1, in 1 themes)
+  B 15172 effervescent tablet (common, rec 3, in 1 themes)
+A 15154 drops [medicine] (common, rec 1, in 2 themes)
+  B 15170 eye drops (common, rec 1, in 3 themes)
+A 15156 patch [medical] (common, rec 1, in 1 themes)
+  B 15180 transdermal patch (common, rec 3, in 1 themes)
+A 15159 spray [medical] (common, rec 1, in 1 themes)
+  B 15169 nasal spray (common, rec 1, in 3 themes)
+
+T hospital_words | hospital words | 36 words
+A 3449 nurse [health worker] (common, rec 1, in 11 themes)
+  B 15303 charge nurse (common, rec 4, in 1 themes)
+A 15277 ward [hospital] (common, rec 2, in 5 themes)
+  B 15287 maternity ward (common, rec 2, in 3 themes)
+
+T doctor_s_office | doctor's office | 37 words
+A 15311 appointment (common, rec 1, in 1 themes)
+  B 15327 appointment card (common, rec 2, in 1 themes)
+
+T pharmacy | pharmacy | 32 words
+A 3456 prescription (common, rec 1, in 3 themes)
+  B 15354 prescription pad (common, rec 2, in 1 themes)
+
+T first_aid | first aid | 39 words
+A 3464 bandage (common, rec 1, in 5 themes)
+  B 15399 pressure bandage (common, rec 3, in 1 themes)
+  B 15402 triangular bandage (common, rec 3, in 1 themes)
+A 3465 dressing [wound] (common, rec 3, in 5 themes)
+  B 15403 wound dressing (common, rec 2, in 1 themes)
+  B 15412 burn dressing (common, rec 3, in 1 themes)
+A 15385 antiseptic (common, rec 2, in 2 themes)
+  B 15405 antiseptic wipe (common, rec 2, in 1 themes)
+
+T dental_words | dental words | 43 words
+A 14482 tooth (common, rec 1, in 4 themes)
+  B 14486 wisdom tooth (common, rec 1, in 2 themes)
+  B 15416 canine tooth (common, rec 3, in 1 themes)
+  B 15421 tooth abscess (common, rec 3, in 1 themes)
+  B 15426 tooth pulp (common, rec 3, in 1 themes)
+  B 15434 tooth extraction (common, rec 2, in 1 themes)
+
+T smoking_words | smoking words | 39 words | note: cigarette, cigar, pipe, ashtray, lighter, filter, vape, hookah, tobacco
+A 7350 vape (common, rec 2, in 2 themes)
+  B 15469 vape pen (common, rec 2, in 1 themes)
+A 15437 cigarette (common, rec 1, in 1 themes)
+  B 15441 cigarette lighter (common, rec 1, in 2 themes)
+  B 15446 cigarette filter (common, rec 2, in 1 themes)
+  B 15452 cigarette butt (common, rec 1, in 1 themes)
+  B 15473 cigarette holder (common, rec 3, in 1 themes)
+A 15438 cigar [tobacco] (common, rec 1, in 3 themes)
+  B 15456 cigar cutter (common, rec 3, in 1 themes)
+A 15442 tobacco (common, rec 1, in 4 themes)
+  B 15450 chewing tobacco (common, rec 3, in 1 themes)
+  B 62730 tobacco pipe (common, rec 2, in 1 themes)
+A 15448 nicotine (common, rec 2, in 2 themes)
+  B 15458 nicotine patch (common, rec 2, in 1 themes)
+  B 15459 nicotine gum (common, rec 2, in 1 themes)
+
+T stimulants | stimulant drugs | 15 words
+A 15490 meth (common, rec 1, in 2 themes)
+  B 15491 crystal meth (common, rec 2, in 2 themes)
+A 50274 crystal [meth] (common, rec 3, in 2 themes)
+  B 15491 crystal meth (common, rec 2, in 2 themes)
+
+T healthcare_workers | healthcare workers | 8 words
+A 3448 doctor (common, rec 1, in 7 themes)
+  B 3488 family doctor (common, rec 1, in 3 themes)
+
+T middle_eastern_remedies | middle eastern remedies | 33 words | note: black seed, cupping, miswak, frankincense, myrrh, rose water, honey
+A 15594 honey [food] (common, rec 1, in 13 themes)
+  B 15600 sidr honey (common, rec 5, in 1 themes)
+A 15598 dates [fruit] (common, rec 1, in 5 themes)
+  B 15609 ajwa dates (common, rec 4, in 1 themes)
+
+T african_remedies | african remedies | 30 words | note: rooibos, buchu, devil's claw, shea butter, baobab, moringa
+A 19347 rooibos [tea] (common, rec 3, in 5 themes)
+  B 15634 rooibos tea (common, rec 2, in 1 themes)
+
+T oceanian_remedies | oceanian remedies | 28 words | note: tea tree oil, manuka honey, eucalyptus, kawakawa, kava, noni, lemon myrtle
+A 1641 eucalyptus (common, rec 2, in 6 themes)
+  B 15546 eucalyptus oil (common, rec 3, in 2 themes)
+
+T pregnancy_words | pregnancy words | 36 words
+A 28587 test [medical] (common, rec 1, in 2 themes)
+  B 15733 glucose test (common, rec 3, in 1 themes)
+
+T childbirth_words | childbirth words | 38 words
+A 3533 delivery [birth] (common, rec 2, in 2 themes)
+  B 15743 forceps delivery (common, rec 3, in 1 themes)
+
+T newborn_care | newborn care | 38 words
+A 3552 diaper (common, rec 1, in 5 themes)
+  B 14900 diaper rash (common, rec 1, in 2 themes)
+
+T fitness | fitness | 66 words
+A 3595 exercise (common, rec 1, in 3 themes)
+  B 3603 aerobic exercise (common, rec 3, in 2 themes)
+A 3596 workout (common, rec 1, in 1 themes)
+  B 3647 pre-workout (common, rec 4, in 1 themes)
+A 3597 gym [fitness] (common, rec 1, in 3 themes)
+  B 3635 gym membership (common, rec 1, in 1 themes)
+  B 3649 gym rat (common, rec 3, in 1 themes)
+  B 3650 gym bunny (common, rec 4, in 1 themes)
+A 3601 training (common, rec 1, in 1 themes)
+  B 3630 circuit training (common, rec 2, in 2 themes)
+  B 3631 interval training (common, rec 3, in 2 themes)
+A 3610 rep [exercise] (common, rec 2, in 2 themes)
+  B 3640 one-rep max (common, rec 4, in 2 themes)
+
+T yoga_poses | yoga poses | 35 words
+A 63334 plank [arm balance] (common, rec 3, in 1 themes)
+  B 15928 side plank (common, rec 3, in 1 themes)
+
+T workout_types | workout types | 44 words
+A 3624 aerobics (common, rec 2, in 2 themes)
+  B 15970 aqua aerobics (common, rec 3, in 2 themes)
+A 15665 yoga (common, rec 1, in 4 themes)
+  B 60797 Bikram yoga (common, rec 4, in 1 themes)
+
+T fitness_words | fitness words | 36 words
+A 3610 rep [exercise] (common, rec 2, in 2 themes)
+  B 3640 one-rep max (common, rec 4, in 2 themes)
+A 3612 set [exercise] (common, rec 1, in 2 themes)
+  B 15983 drop set (common, rec 4, in 1 themes)
+
+T sleep | sleep | 62 words
+A 3665 nap (common, rec 1, in 5 themes)
+  B 3703 power nap (common, rec 2, in 3 themes)
+A 3666 bed (common, rec 1, in 13 themes)
+  B 3708 bunk bed (common, rec 1, in 4 themes)
+
+T sleep_words | sleep words | 36 words
+A 3665 nap (common, rec 1, in 5 themes)
+  B 3703 power nap (common, rec 2, in 3 themes)
+
+T bedding | bedding | 33 words
+A 3667 pillow [bedding] (common, rec 1, in 5 themes)
+  B 16045 pillow sham (common, rec 4, in 2 themes)
+  B 16048 feather pillow (common, rec 2, in 1 themes)
+A 3668 blanket [bedding] (common, rec 1, in 9 themes)
+  B 4765 electric blanket (common, rec 2, in 5 themes)
+  B 16052 weighted blanket (common, rec 3, in 2 themes)
+A 3672 mattress (common, rec 1, in 7 themes)
+  B 16034 mattress topper (common, rec 3, in 2 themes)
+  B 16041 mattress protector (common, rec 3, in 1 themes)
+A 16030 sheet [bedding] (common, rec 1, in 1 themes)
+  B 16032 fitted sheet (common, rec 2, in 2 themes)
+  B 16042 top sheet (common, rec 3, in 1 themes)
+  B 16046 flat sheet (common, rec 3, in 1 themes)
+
+T nightwear | nightwear | 27 words
+A 3674 pajamas (common, rec 1, in 11 themes)
+  B 16067 flannel pajamas (common, rec 2, in 1 themes)
+  B 16068 footed pajamas (common, rec 3, in 1 themes)
+
+T dream_words | dream words | 34 words
+A 16086 falling (common, rec 2, in 1 themes)
+  B 16089 teeth falling out (common, rec 3, in 1 themes)
+
+T sleep_disorders | sleep disorders | 30 words
+A 3681 insomnia (common, rec 2, in 3 themes)
+  B 16145 fatal insomnia (common, rec 5, in 1 themes)
+
+T short_sleeps | short sleeps | 10 words
+A 3665 nap (common, rec 1, in 5 themes)
+  B 3703 power nap (common, rec 2, in 3 themes)
+
+T personal_care | personal care | 80 words
+A 3727 shampoo (common, rec 1, in 8 themes)
+  B 3792 dry shampoo (common, rec 3, in 4 themes)
+
+T toiletries_for_washing | toiletries for washing | 38 words
+A 3726 soap [wash] (common, rec 1, in 10 themes)
+  B 16151 bar soap (common, rec 1, in 1 themes)
+  B 16152 hand soap (common, rec 1, in 1 themes)
+  B 16154 antibacterial soap (common, rec 2, in 1 themes)
+  B 16158 liquid soap (common, rec 1, in 1 themes)
+  B 16160 soap dish (common, rec 2, in 2 themes)
+  B 16161 castile soap (common, rec 4, in 1 themes)
+  B 16294 black soap (common, rec 3, in 3 themes)
+  B 60808 soap nuts (common, rec 4, in 1 themes)
+A 3727 shampoo (common, rec 1, in 8 themes)
+  B 3792 dry shampoo (common, rec 3, in 4 themes)
+A 3817 sponge [bath] (common, rec 1, in 7 themes)
+  B 60809 konjac sponge (common, rec 4, in 1 themes)
+
+T hair_care | hair care | 40 words
+A 3727 shampoo (common, rec 1, in 8 themes)
+  B 3792 dry shampoo (common, rec 3, in 4 themes)
+  B 16182 clarifying shampoo (common, rec 4, in 1 themes)
+  B 16183 purple shampoo (common, rec 4, in 1 themes)
+A 3728 conditioner [hair] (common, rec 1, in 6 themes)
+  B 16169 leave-in conditioner (common, rec 3, in 1 themes)
+A 3753 comb [hair tool] (common, rec 1, in 9 themes)
+  B 16177 wide-tooth comb (common, rec 3, in 1 themes)
+A 16166 oil (common, rec 2, in 1 themes)
+  B 15626 argan oil (common, rec 2, in 4 themes)
+  B 60813 hot oil treatment (common, rec 3, in 1 themes)
+
+T skincare_products | skincare products | 43 words
+A 3774 serum [skincare] (common, rec 3, in 3 themes)
+  B 16188 vitamin c serum (common, rec 3, in 1 themes)
+
+T korean_skincare | korean skincare | 34 words
+A 3773 toner [skincare] (common, rec 3, in 3 themes)
+  B 60821 toner pads (common, rec 3, in 1 themes)
+
+T makeup | makeup | 42 words
+A 3787 eyeliner (common, rec 2, in 3 themes)
+  B 16233 gel eyeliner (common, rec 3, in 1 themes)
+A 16216 powder [makeup] (common, rec 1, in 2 themes)
+  B 16232 pressed powder (common, rec 3, in 1 themes)
+A 16222 brush (common, rec 1, in 1 themes)
+  B 60823 kabuki brush (common, rec 4, in 1 themes)
+  B 60825 stippling brush (common, rec 4, in 1 themes)
+A 16224 compact [makeup] (common, rec 3, in 2 themes)
+  B 16235 cushion compact (common, rec 5, in 2 themes)
+
+T nail_care | nail care | 40 words
+A 9138 cuticle [nail] (common, rec 4, in 4 themes)
+  B 3814 cuticle oil (common, rec 4, in 2 themes)
+  B 16248 cuticle pusher (common, rec 3, in 1 themes)
+  B 16255 cuticle nipper (common, rec 4, in 1 themes)
+A 64049 polish [lacquer] (common, rec 2, in 1 themes)
+  B 64050 polish remover (common, rec 2, in 1 themes)
+
+T bath_time | bath time | 38 words
+A 16272 shower [bathroom] (common, rec 1, in 4 themes)
+  B 16285 shower curtain (common, rec 1, in 2 themes)
+A 64060 salts [soak crystals] (common, rec 3, in 1 themes)
+  B 60832 Epsom salts (common, rec 3, in 1 themes)
+
+T middle_eastern_grooming | middle eastern grooming | 33 words | note: kohl, henna, oud, attar, rose water, argan oil, black soap, miswak
+A 16292 oud [perfume] (common, rec 3, in 6 themes)
+  B 16314 oud oil (common, rec 4, in 1 themes)
+
+T shaving | shaving | 40 words
+A 3737 razor [shaving tool] (common, rec 1, in 10 themes)
+  B 16316 safety razor (common, rec 2, in 1 themes)
+  B 16322 razor burn (common, rec 2, in 1 themes)
+  B 16324 straight razor (common, rec 3, in 1 themes)
+  B 16327 razor bump (common, rec 3, in 1 themes)
+  B 16342 disposable razor (common, rec 2, in 1 themes)
+A 3739 aftershave (common, rec 2, in 3 themes)
+  B 16334 aftershave balm (common, rec 3, in 1 themes)
+A 16338 trimmer [shaving] (common, rec 2, in 1 themes)
+  B 16323 beard trimmer (common, rec 2, in 1 themes)
+A 64064 brush [lather] (common, rec 2, in 1 themes)
+  B 16332 badger brush (common, rec 4, in 1 themes)
+A 64065 cream [lather lotion] (common, rec 2, in 1 themes)
+  B 3809 depilatory cream (common, rec 4, in 2 themes)
+
+T sun_care | sun care | 37 words
+A 3745 sunscreen (common, rec 1, in 15 themes)
+  B 16361 sunscreen stick (common, rec 3, in 1 themes)
+  B 16368 mineral sunscreen (common, rec 4, in 1 themes)
+A 16345 SPF (acronym, rec 2, in 1 themes)
+  B 16352 lip balm with spf (common, rec 3, in 1 themes)
+
+T spa | spa | 45 words
+A 16535 massage (common, rec 1, in 1 themes)
+  B 16562 bamboo massage (common, rec 4, in 1 themes)
+A 16537 sauna (common, rec 1, in 4 themes)
+  B 16554 infrared sauna (common, rec 3, in 1 themes)
+
+T turkish_bath | turkish bath | 29 words | note: hammam: kese, pestemal, marble slab, steam, foam, dome, clogs
+A 3726 soap [wash] (common, rec 1, in 10 themes)
+  B 16304 olive oil soap (common, rec 4, in 3 themes)
+A 16291 foam [bath] (common, rec 2, in 4 themes)
+  B 16579 foam massage (common, rec 4, in 1 themes)
+A 16570 steam [vapor] (common, rec 1, in 5 themes)
+  B 16538 steam room (common, rec 2, in 2 themes)
+
+T nutrition | nutrition | 72 words
+A 3818 protein (common, rec 1, in 4 themes)
+  B 3890 complete protein (common, rec 4, in 1 themes)
+A 3821 fat [nutrient] (common, rec 1, in 3 themes)
+  B 3858 saturated fat (common, rec 2, in 2 themes)
+  B 3859 trans fat (common, rec 3, in 2 themes)
+
+T food_groups | food groups | 26 words
+A 16668 dairy [food group] (common, rec 1, in 2 themes)
+  B 16682 dairy products (common, rec 2, in 1 themes)
+A 16669 grains (common, rec 1, in 1 themes)
+  B 16685 whole grains (common, rec 2, in 1 themes)
+A 16680 cereals (common, rec 2, in 1 themes)
+  B 16673 bread and cereals (common, rec 2, in 1 themes)
+A 16687 oils (common, rec 2, in 1 themes)
+  B 16672 fats and oils (common, rec 2, in 1 themes)
+A 30089 fruit [tree] (common, rec 1, in 6 themes)
+  B 16684 fruit and veg (common, rec 2, in 1 themes)
+
+T nutrients | nutrients | 37 words
+A 3821 fat [nutrient] (common, rec 1, in 3 themes)
+  B 3858 saturated fat (common, rec 2, in 2 themes)
+  B 3859 trans fat (common, rec 3, in 2 themes)
+  B 16691 unsaturated fat (common, rec 3, in 1 themes)
+
+T healthy_snacks | healthy snacks | 40 words
+A 522 yogurt [cultured dairy] (common, rec 1, in 11 themes)
+  B 16776 frozen yogurt (common, rec 2, in 3 themes)
+A 6418 popcorn (common, rec 1, in 15 themes)
+  B 16774 air-popped popcorn (common, rec 3, in 1 themes)
+
+T gestures | gestures | 45 words
+A 16818 salute [gesture] (common, rec 1, in 1 themes)
+  B 60872 Vulcan salute (proper, rec 2, in 1 themes)
+A 16825 bow [gesture] (common, rec 1, in 3 themes)
+  B 16844 forehead bow (common, rec 4, in 1 themes)
+
+T ways_of_looking | ways of looking | 43 words
+A 14652 stare (common, rec 1, in 3 themes)
+  B 16943 stare down (common, rec 3, in 1 themes)
+A 16935 eye [look at] (common, rec 2, in 1 themes)
+  B 16811 side-eye (common, rec 2, in 2 themes)
+  B 60881 eye up (common, rec 3, in 1 themes)
+
+T ways_of_speaking | ways of speaking | 49 words
+A 14699 whisper (common, rec 1, in 4 themes)
+  B 16974 stage whisper (common, rec 4, in 1 themes)
+
+T ways_of_crying | ways of crying | 29 words
+A 17018 cry (common, rec 1, in 3 themes)
+  B 17024 cry one's eyes out (common, rec 2, in 1 themes)
+  B 17032 ugly cry (common, rec 2, in 1 themes)
+
+T ways_of_breathing | ways of breathing | 39 words
+A 16987 gasp (common, rec 1, in 4 themes)
+  B 17062 gasp for air (common, rec 2, in 1 themes)
+
+T body_positions | body positions | 36 words
+A 17064 sitting (common, rec 1, in 2 themes)
+  B 17094 kneel-sitting (common, rec 4, in 1 themes)
+
+T ways_of_laughing | ways of laughing | 40 words
+A 17137 snort [laugh] (common, rec 2, in 1 themes)
+  B 17149 snort laugh (common, rec 2, in 1 themes)
+
+T family_and_friends | family and friends | 71 words
+A 3894 family [relatives] (common, rec 1, in 1 themes)
+  B 3915 family tree (common, rec 2, in 1 themes)
+A 3901 buddy [friend] (common, rec 1, in 2 themes)
+  B 3925 bosom buddy (common, rec 4, in 2 themes)
+A 3926 pal (common, rec 2, in 2 themes)
+  B 3958 pen pal (common, rec 2, in 2 themes)
+A 3950 kin (common, rec 3, in 4 themes)
+  B 3953 next of kin (phrase, rec 3, in 2 themes)
+  B 3970 kith and kin (phrase, rec 4, in 2 themes)
+A 3971 kith (common, rec 5, in 1 themes)
+  B 3970 kith and kin (phrase, rec 4, in 2 themes)
+
+T family_members | family members | 44 words
+A 3950 kin (common, rec 3, in 4 themes)
+  B 3953 next of kin (phrase, rec 3, in 2 themes)
+A 28012 mother (common, rec 2, in 5 themes)
+  B 32410 mother-in-law (common, rec 2, in 2 themes)
+A 32383 brother (common, rec 1, in 1 themes)
+  B 32412 brother-in-law (common, rec 2, in 2 themes)
+  B 32425 half-brother (common, rec 2, in 2 themes)
+A 32385 sister (common, rec 1, in 1 themes)
+  B 32406 half-sister (common, rec 2, in 1 themes)
+A 32396 aunt (common, rec 1, in 1 themes)
+  B 32416 great-aunt (common, rec 2, in 2 themes)
+A 32399 cousin (common, rec 1, in 1 themes)
+  B 32420 second cousin (common, rec 3, in 2 themes)
+
+T extended_family | extended family | 32 words
+A 3950 kin (common, rec 3, in 4 themes)
+  B 3970 kith and kin (phrase, rec 4, in 2 themes)
+
+T greetings | greetings | 29 words
+A 26542 hey [interjection] (common, rec 1, in 2 themes)
+  B 32491 hey there (phrase, rec 1, in 1 themes)
+
+T ways_to_say_goodbye | ways to say goodbye | 30 words | note: farewell, adieu, cheerio, so long, adios, sayonara, ta-ta
+A 32504 later [farewell] (common, rec 1, in 1 themes)
+  B 32495 see you later (phrase, rec 1, in 1 themes)
+  B 32508 catch you later (phrase, rec 2, in 1 themes)
+
+T ages_and_stages | stages of life | 34 words
+A 32522 adult [grown-up] (common, rec 1, in 1 themes)
+  B 13155 young adult (common, rec 2, in 2 themes)
+A 32524 senior [older person] (common, rec 2, in 2 themes)
+  B 32533 senior citizen (common, rec 2, in 1 themes)
+
+T words_for_friend | words for friend | 34 words | note: pal, buddy, mate, chum, bestie, companion, comrade, confidant
+A 3901 buddy [friend] (common, rec 1, in 2 themes)
+  B 3925 bosom buddy (common, rec 4, in 2 themes)
+
+T life_events | life events | 41 words | note: milestones of a life: birth, christening, graduation, engagement, wedding, retirement, funeral
+A 3903 wedding (common, rec 1, in 6 themes)
+  B 32562 golden wedding (common, rec 4, in 2 themes)
+A 3905 anniversary (common, rec 1, in 4 themes)
+  B 25131 silver anniversary (common, rec 3, in 2 themes)
+A 32430 engagement [betrothal] (common, rec 2, in 2 themes)
+  B 60904 engagement party (common, rec 1, in 1 themes)
+
+T ways_to_say_yes | ways to say yes | 31 words
+A 32611 sure [agreement] (common, rec 1, in 1 themes)
+  B 32629 sure thing (phrase, rec 2, in 2 themes)
+
+T ways_to_say_no | ways to say no | 27 words
+A 32637 no (common, rec 1, in 2 themes)
+  B 32642 no way (phrase, rec 1, in 1 themes)
+  B 32644 no thanks (phrase, rec 1, in 1 themes)
+  B 32647 by no means (phrase, rec 3, in 1 themes)
+  B 32655 no can do (phrase, rec 2, in 1 themes)
+  B 32658 no chance (phrase, rec 1, in 1 themes)
+
+T angry_words | angry words | 31 words
+A 32724 mad [angry] (common, rec 1, in 3 themes)
+  B 32747 hopping mad (phrase, rec 3, in 1 themes)
+
+T love_words | love words | 29 words | note: adore, cherish, affection, devotion, crush, passion, smitten
+A 3981 love [emotion] (common, rec 1, in 3 themes)
+  B 32820 fall in love (phrase, rec 1, in 1 themes)
+
+T medical_jobs | medical jobs | 35 words
+A 3448 doctor (common, rec 1, in 7 themes)
+  B 3488 family doctor (common, rec 1, in 3 themes)
+
+T trades | skilled trades | 36 words
+A 23773 decorator (common, rec 3, in 2 themes)
+  B 32958 painter and decorator (common, rec 2, in 1 themes)
+
+T science_jobs | science jobs | 38 words
+A 4077 scientist (common, rec 1, in 3 themes)
+  B 32986 research scientist (common, rec 2, in 1 themes)
+A 32973 biologist (common, rec 2, in 1 themes)
+  B 10460 marine biologist (common, rec 2, in 2 themes)
+
+T tech_jobs | tech jobs | 42 words
+A 4080 developer [software] (common, rec 3, in 3 themes)
+  B 33038 web developer (common, rec 2, in 1 themes)
+  B 33045 game developer (common, rec 2, in 1 themes)
+  B 33048 app developer (common, rec 2, in 1 themes)
+  B 33051 front-end developer (common, rec 3, in 1 themes)
+  B 33052 back-end developer (common, rec 3, in 1 themes)
+  B 33053 full-stack developer (common, rec 4, in 1 themes)
+  B 33060 blockchain developer (common, rec 4, in 1 themes)
+  B 60924 kernel developer (common, rec 4, in 1 themes)
+A 33044 hacker (common, rec 2, in 2 themes)
+  B 60930 ethical hacker (common, rec 2, in 1 themes)
+
+T office_jobs | office jobs | 46 words
+A 4102 secretary [office] (common, rec 2, in 3 themes)
+  B 60936 company secretary (common, rec 3, in 1 themes)
+A 4104 manager [job] (common, rec 1, in 7 themes)
+  B 33071 HR manager (common, rec 3, in 1 themes)
+  B 33075 marketing manager (common, rec 3, in 1 themes)
+  B 33081 project manager (common, rec 2, in 1 themes)
+A 4105 clerk (common, rec 2, in 2 themes)
+  B 33070 data entry clerk (common, rec 3, in 1 themes)
+  B 33077 filing clerk (common, rec 3, in 1 themes)
+  B 60941 mailroom clerk (common, rec 3, in 1 themes)
+A 33068 executive (common, rec 2, in 1 themes)
+  B 33084 executive assistant (common, rec 3, in 1 themes)
+
+T food_jobs | food jobs | 34 words | note: chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer
+A 916 chef [cook] (common, rec 1, in 8 themes)
+  B 944 sous chef (common, rec 3, in 5 themes)
+  B 20045 head chef (common, rec 1, in 4 themes)
+  B 20046 pastry chef (common, rec 2, in 2 themes)
+  B 20054 sushi chef (common, rec 3, in 2 themes)
+A 970 cook [person] (common, rec 1, in 9 themes)
+  B 20047 line cook (common, rec 2, in 2 themes)
+  B 20051 fry cook (common, rec 3, in 2 themes)
+
+T animal_jobs | animal jobs | 30 words | note: vet, zookeeper, groom, farrier, shepherd, dog walker, kennel hand
+A 4068 vet [animal] (common, rec 1, in 5 themes)
+  B 33119 vet nurse (common, rec 3, in 1 themes)
+
+T cowboy_words | cowboy words | 53 words | note: lasso, saddle, spurs, stetson, ranch, rodeo, chaps, corral, sheriff, posse
+A 4944 hat [headwear] (common, rec 1, in 12 themes)
+  B 23027 ten-gallon hat (common, rec 3, in 6 themes)
+A 29304 ranch [farm] (common, rec 1, in 5 themes)
+  B 60946 ranch hand (common, rec 2, in 2 themes)
+
+T western_outfits | cowboy outfits | 9 words
+A 4944 hat [headwear] (common, rec 1, in 12 themes)
+  B 23027 ten-gallon hat (common, rec 3, in 6 themes)
+
+T emergency_workers | emergency workers | 47 words
+A 3449 nurse [health worker] (common, rec 1, in 11 themes)
+  B 60947 ER nurse (common, rec 1, in 1 themes)
+A 4083 firefighter (common, rec 1, in 6 themes)
+  B 33228 wildland firefighter (common, rec 4, in 1 themes)
+A 4222 sheriff (common, rec 2, in 7 themes)
+  B 33221 sheriff deputy (common, rec 3, in 1 themes)
+A 62768 rescuer (common, rec 2, in 1 themes)
+  B 33213 mountain rescuer (common, rec 3, in 1 themes)
+  B 60952 swiftwater rescuer (common, rec 5, in 1 themes)
+
+T transport_jobs | transport jobs | 40 words
+A 2714 pilot [aircraft] (common, rec 1, in 5 themes)
+  B 33243 bush pilot (common, rec 4, in 2 themes)
+
+T beauty_jobs | beauty jobs | 30 words
+A 33255 stylist (common, rec 2, in 2 themes)
+  B 33261 personal stylist (common, rec 3, in 1 themes)
+
+T shopkeepers | shopkeepers | 45 words
+A 20744 chandler [job] (common, rec 4, in 3 themes)
+  B 60959 corn chandler (common, rec 5, in 1 themes)
+
+T election_words | election words | 51 words
+A 28081 ballot (common, rec 2, in 4 themes)
+  B 33320 ballot box (common, rec 2, in 1 themes)
+  B 33327 absentee ballot (common, rec 3, in 2 themes)
+  B 33338 spoiled ballot (common, rec 4, in 1 themes)
+A 33286 vote (common, rec 1, in 2 themes)
+  B 33328 proxy vote (common, rec 4, in 1 themes)
+A 33312 campaign [election] (common, rec 1, in 2 themes)
+  B 60984 campaign trail (common, rec 2, in 1 themes)
+A 33313 poll [election] (common, rec 1, in 2 themes)
+  B 33321 exit poll (common, rec 3, in 1 themes)
+  B 60979 straw poll (common, rec 3, in 1 themes)
+
+T political_titles | political titles | 47 words
+A 33288 president [leader] (common, rec 1, in 5 themes)
+  B 33347 vice president (common, rec 1, in 3 themes)
+  B 33360 president-elect (common, rec 3, in 1 themes)
+A 33291 minister [government] (common, rec 2, in 2 themes)
+  B 33344 prime minister (common, rec 1, in 3 themes)
+  B 33361 first minister (common, rec 4, in 1 themes)
+  B 33367 chief minister (common, rec 4, in 1 themes)
+  B 33368 shadow minister (common, rec 4, in 1 themes)
+A 33293 mayor (common, rec 1, in 2 themes)
+  B 33356 lord mayor (common, rec 3, in 1 themes)
+A 33345 governor [politics] (common, rec 2, in 3 themes)
+  B 33365 lieutenant governor (common, rec 4, in 1 themes)
+A 33358 whip [politics] (common, rec 3, in 3 themes)
+  B 33366 chief whip (common, rec 4, in 1 themes)
+
+T royal_titles | royal titles | 68 words
+A 20757 queen [royal] (common, rec 1, in 4 themes)
+  B 33387 queen mother (common, rec 2, in 3 themes)
+  B 61006 queen consort (common, rec 2, in 2 themes)
+A 20759 duke (common, rec 2, in 4 themes)
+  B 33390 grand duke (common, rec 3, in 2 themes)
+A 20762 prince [royal] (common, rec 1, in 3 themes)
+  B 33386 crown prince [royal] (common, rec 2, in 1 themes)
+  B 61005 prince consort (common, rec 3, in 1 themes)
+
+T ottoman_titles | ottoman titles | 32 words | note: sultan, pasha, vizier, bey, agha, effendi, janissary, kadi, sipahi, beylerbey
+A 20632 sultan (common, rec 2, in 5 themes)
+  B 56748 valide sultan (common, rec 5, in 1 themes)
+A 20639 pasha (common, rec 3, in 4 themes)
+  B 61011 Kapudan Pasha (title, rec 5, in 1 themes)
+A 20640 vizier (common, rec 3, in 4 themes)
+  B 56740 grand vizier (common, rec 3, in 1 themes)
+A 29443 effendi (common, rec 4, in 2 themes)
+  B 61010 reis effendi (common, rec 5, in 1 themes)
+A 56739 agha (common, rec 4, in 1 themes)
+  B 61007 Kizlar Agha (title, rec 5, in 1 themes)
+
+T titles_for_women | female royal titles | 14 words
+A 20757 queen [royal] (common, rec 1, in 4 themes)
+  B 33387 queen mother (common, rec 2, in 3 themes)
+  B 61006 queen consort (common, rec 2, in 2 themes)
+
+T royal_things | royal things | 51 words | note: objects and occasions of monarchy: crown, throne, scepter, orb, tiara, coronation, jubilee, ermine
+A 21212 crown [royal] (common, rec 1, in 5 themes)
+  B 21224 crown jewels (common, rec 2, in 3 themes)
+A 27916 throne [royal seat] (common, rec 2, in 3 themes)
+  B 61025 throne room (common, rec 1, in 1 themes)
+
+T ceremonial_objects | royal ceremonial objects | 16 words
+A 21212 crown [royal] (common, rec 1, in 5 themes)
+  B 21224 crown jewels (common, rec 2, in 3 themes)
+
+T types_of_government | types of government | 50 words
+A 20374 democracy (common, rec 1, in 3 themes)
+  B 33444 direct democracy (common, rec 3, in 2 themes)
+A 33424 monarchy (common, rec 2, in 2 themes)
+  B 33440 absolute monarchy (common, rec 3, in 2 themes)
+
+T ruled_by_one_leader | ruled by one leader | 11 words
+A 33424 monarchy (common, rec 2, in 2 themes)
+  B 33440 absolute monarchy (common, rec 3, in 2 themes)
+
+T words_ending_in_cracy | words ending in -cracy | 18 words
+A 20374 democracy (common, rec 1, in 3 themes)
+  B 33444 direct democracy (common, rec 3, in 2 themes)
+
+T parts_of_parliament | parts of parliament | 47 words
+A 29051 committee (common, rec 2, in 3 themes)
+  B 33473 select committee (common, rec 4, in 1 themes)
+A 33350 speaker [house] (common, rec 2, in 2 themes)
+  B 61037 Lord Speaker (title, rec 4, in 1 themes)
+  B 61043 Mr Speaker (title, rec 3, in 1 themes)
+A 33488 division [vote] (common, rec 4, in 1 themes)
+  B 33465 division bell (common, rec 5, in 1 themes)
+
+T us_government | us government | 53 words | note: congress, senate, house, supreme court, cabinet, white house, governor, veto
+A 26954 veto (common, rec 2, in 2 themes)
+  B 33593 pocket veto (common, rec 5, in 1 themes)
+A 33288 president [leader] (common, rec 1, in 5 themes)
+  B 33347 vice president (common, rec 1, in 3 themes)
+A 33289 congress (common, rec 2, in 3 themes)
+  B 33600 library of congress (common, rec 3, in 1 themes)
+A 33297 cabinet [government] (common, rec 2, in 4 themes)
+  B 33596 cabinet secretary (common, rec 3, in 2 themes)
+
+T office_holders | us government office holders | 11 words
+A 33288 president [leader] (common, rec 1, in 5 themes)
+  B 33347 vice president (common, rec 1, in 3 themes)
+
+T british_politics | british politics | 47 words | note: Westminster, Downing Street, Whitehall, Commons, Lords, MP, whip, backbencher, chancellor
+A 33346 chancellor [government] (common, rec 2, in 2 themes)
+  B 61104 Lord Chancellor (title, rec 4, in 1 themes)
+A 33358 whip [politics] (common, rec 3, in 3 themes)
+  B 61101 three-line whip (common, rec 4, in 1 themes)
+
+T law_and_order | law and order | 93 words
+A 4183 law (common, rec 1, in 3 themes)
+  B 4208 the law (phrase, rec 3, in 3 themes)
+  B 4248 law enforcement (phrase, rec 3, in 1 themes)
+A 4185 court [law] (common, rec 1, in 3 themes)
+  B 4267 contempt of court (phrase, rec 4, in 2 themes)
+A 4195 crime (common, rec 1, in 2 themes)
+  B 4196 crime scene (common, rec 1, in 2 themes)
+
+T crimes | crimes | 58 words
+A 33625 theft (common, rec 1, in 2 themes)
+  B 33655 identity theft (common, rec 2, in 3 themes)
+
+T stealing_crimes | stealing crimes | 12 words
+A 33625 theft (common, rec 1, in 2 themes)
+  B 33655 identity theft (common, rec 2, in 3 themes)
+
+T courtroom_words | courtroom words | 57 words
+A 4187 jury (common, rec 1, in 6 themes)
+  B 33674 hung jury (common, rec 3, in 1 themes)
+  B 61129 jury box (common, rec 1, in 1 themes)
+A 4192 witness (common, rec 1, in 6 themes)
+  B 33671 witness stand (common, rec 2, in 1 themes)
+A 33667 plea (common, rec 2, in 1 themes)
+  B 4268 plea bargain (common, rec 4, in 2 themes)
+  B 4269 plea deal (common, rec 3, in 2 themes)
+
+T police_words | police words | 51 words
+A 33680 cop [officer] (common, rec 1, in 2 themes)
+  B 33694 beat cop (common, rec 3, in 1 themes)
+
+T prison_words | prison words | 45 words
+A 2485 prison (common, rec 2, in 5 themes)
+  B 33705 prison guard (common, rec 1, in 1 themes)
+  B 33727 prison break (common, rec 2, in 1 themes)
+A 33702 cell [prison] (common, rec 1, in 1 themes)
+  B 33723 cell block (common, rec 3, in 1 themes)
+
+T legal_documents | legal documents | 42 words
+A 29007 deed (common, rec 1, in 2 themes)
+  B 24204 title deed (common, rec 4, in 2 themes)
+  B 33767 trust deed (common, rec 4, in 1 themes)
+  B 61142 quitclaim deed (common, rec 5, in 1 themes)
+A 33752 patent (common, rec 2, in 1 themes)
+  B 61143 letters patent (phrase, rec 5, in 1 themes)
+
+T spy_words | spy words | 42 words | note: agent, mole, cipher, handler, double agent, safe house, codename, wiretap
+A 33829 agent [spy] (common, rec 1, in 1 themes)
+  B 33831 double agent (common, rec 2, in 1 themes)
+  B 33832 secret agent (common, rec 1, in 1 themes)
+  B 33840 sleeper agent (common, rec 3, in 1 themes)
+
+T money_words | money words | 35 words | note: general words about cash and wealth
+A 23285 cash (common, rec 1, in 3 themes)
+  B 33882 petty cash (common, rec 3, in 1 themes)
+  B 33883 hard cash (common, rec 3, in 1 themes)
+
+T latin_american_currencies | latin american currencies | 21 words | note: real, sol, boliviano, guarani, bolivar, quetzal, colon, lempira, cordoba
+A 306 peso (common, rec 2, in 2 themes)
+  B 61160 Mexican peso (proper, rec 2, in 1 themes)
+  B 61161 Argentine peso (proper, rec 3, in 1 themes)
+A 56793 sol [currency] (common, rec 3, in 1 themes)
+  B 56805 nuevo sol [currency] (common, rec 5, in 1 themes)
+
+T banking_words | banking words | 37 words
+A 2495 bank [financial] (common, rec 2, in 4 themes)
+  B 33934 bank run (common, rec 4, in 1 themes)
+A 33912 account [bank] (common, rec 1, in 2 themes)
+  B 33921 savings account (common, rec 1, in 1 themes)
+  B 33923 checking account (common, rec 2, in 1 themes)
+A 33913 deposit [bank] (common, rec 2, in 2 themes)
+  B 33920 safe deposit box (common, rec 3, in 1 themes)
+A 33916 teller [bank clerk] (common, rec 3, in 1 themes)
+  B 33930 teller machine (common, rec 3, in 1 themes)
+
+T coins | coins | 39 words
+A 28766 cent [coin] (common, rec 2, in 3 themes)
+  B 33942 euro cent (common, rec 3, in 1 themes)
+
+T us_coins | us coins | 7 words | note: Exactly: penny, nickel, dime, quarter, half dollar, dollar coin.
+A 56816 dollar (common, rec 2, in 1 themes)
+  B 33941 half dollar (common, rec 3, in 2 themes)
+
+T tax_words | tax words | 40 words
+A 33285 tax (common, rec 1, in 2 themes)
+  B 33654 tax evasion (common, rec 3, in 3 themes)
+  B 33974 tax haven (common, rec 3, in 1 themes)
+  B 33984 poll tax (common, rec 3, in 1 themes)
+  B 33987 tax credit (common, rec 3, in 1 themes)
+  B 33991 tax code (common, rec 3, in 1 themes)
+A 33968 duty [tax] (common, rec 2, in 1 themes)
+  B 24199 stamp duty (common, rec 4, in 2 themes)
+
+T shopping_words | shopping words | 42 words
+A 28171 sale [discount] (common, rec 3, in 4 themes)
+  B 34016 flash sale (common, rec 3, in 1 themes)
+
+T stock_market_words | stock market words | 47 words | note: shares, bull, bear, dividend, broker, index, portfolio, bond
+A 34058 stock [shares] (common, rec 2, in 3 themes)
+  B 34081 penny stock (common, rec 3, in 1 themes)
+A 34059 bull [market] (common, rec 2, in 1 themes)
+  B 50171 Bull Run [stock market] (place, rec 4, in 1 themes)
+A 34061 dividend (common, rec 3, in 1 themes)
+  B 61165 ex-dividend (common, rec 5, in 1 themes)
+
+T bazaar | bazaar | 49 words | note: things in a Middle Eastern or Turkish market
+A 34150 lamp [light] (common, rec 1, in 9 themes)
+  B 34145 mosaic lamp (common, rec 4, in 3 themes)
+
+T things_you_do_with_money | things you do with money | 38 words | note: verbs: spend, save, lend ...
+A 34157 lend (common, rec 1, in 1 themes)
+  B 34171 lend out (common, rec 2, in 1 themes)
+
+T religious_festivals | religious festivals | 48 words
+A 5116 Eid (proper, rec 2, in 4 themes)
+  B 5159 Eid al-Adha (proper, rec 4, in 2 themes)
+  B 25201 Eid al-Fitr (proper, rec 3, in 2 themes)
+
+T holy_books | holy books | 46 words
+A 4290 Bible (title, rec 1, in 2 themes)
+  B 34238 Gideon Bible (proper, rec 4, in 1 themes)
+  B 34251 King James Bible (proper, rec 3, in 1 themes)
+A 50014 gospel [scripture] (common, rec 2, in 1 themes)
+  B 61190 Gospel of Thomas (proper, rec 4, in 1 themes)
+
+T angels_and_spirits | angels and spirits | 41 words
+A 4295 angel [spirit] (common, rec 1, in 4 themes)
+  B 34264 fallen angel (common, rec 2, in 1 themes)
+
+T places_of_worship | places of worship | 37 words
+A 2464 church [building] (common, rec 1, in 9 themes)
+  B 34294 parish church (common, rec 3, in 2 themes)
+  B 34295 Orthodox church (common, rec 3, in 1 themes)
+A 4280 temple [worship] (common, rec 1, in 4 themes)
+  B 20552 fire temple (common, rec 5, in 3 themes)
+
+T religious_clothing | religious clothing | 44 words | note: cassock, habit, hijab, kippah, turban, miter, surplice, wimple
+A 34383 robe [religious] (common, rec 1, in 1 themes)
+  B 34389 saffron robe (common, rec 4, in 2 themes)
+
+T afterlife_words | afterlife words | 46 words | note: heaven, hell, paradise, purgatory, limbo, nirvana, underworld, reincarnation
+A 34403 heaven (common, rec 1, in 1 themes)
+  B 34426 Heaven's Gate (proper, rec 4, in 1 themes)
+
+T buddhism_words | buddhism words | 52 words | note: nirvana, karma, monk, stupa, dharma, mantra, lama, zen
+A 34215 lama (common, rec 3, in 2 themes)
+  B 34478 Dalai Lama (person, rec 2, in 3 themes)
+
+T military | military | 100 words
+A 61 navy [armed force] (common, rec 1, in 1 themes)
+  B 7744 navy blue [colour] (common, rec 1, in 1 themes)
+
+T military_ranks | military ranks | 52 words
+A 29420 admiral (common, rec 3, in 5 themes)
+  B 34540 rear admiral (common, rec 3, in 2 themes)
+  B 34541 vice admiral (common, rec 3, in 2 themes)
+A 32575 Major [rank] (title, rec 2, in 2 themes)
+  B 34539 sergeant major [rank] (common, rec 3, in 1 themes)
+  B 34553 major general (common, rec 3, in 1 themes)
+A 32576 Sergeant (title, rec 2, in 4 themes)
+  B 34537 staff sergeant (common, rec 3, in 1 themes)
+  B 34539 sergeant major [rank] (common, rec 3, in 1 themes)
+  B 61237 colour sergeant (common, rec 5, in 1 themes)
+A 34525 general [rank] (common, rec 1, in 1 themes)
+  B 34553 major general (common, rec 3, in 1 themes)
+  B 34554 brigadier general (common, rec 3, in 1 themes)
+  B 34558 five-star general (common, rec 4, in 1 themes)
+A 34526 colonel (common, rec 2, in 1 themes)
+  B 34552 lieutenant colonel (common, rec 3, in 1 themes)
+A 34527 captain [rank] (common, rec 1, in 1 themes)
+  B 34549 group captain (common, rec 4, in 1 themes)
+A 34528 lieutenant (common, rec 2, in 1 themes)
+  B 34535 second lieutenant (common, rec 3, in 1 themes)
+  B 34548 flight lieutenant (common, rec 3, in 2 themes)
+  B 34552 lieutenant colonel (common, rec 3, in 1 themes)
+A 34529 corporal (common, rec 2, in 1 themes)
+  B 34536 lance corporal (common, rec 3, in 1 themes)
+A 34531 commander [rank] (common, rec 2, in 1 themes)
+  B 34546 wing commander (common, rec 3, in 2 themes)
+A 34532 brigadier (common, rec 3, in 1 themes)
+  B 34554 brigadier general (common, rec 3, in 1 themes)
+A 34534 marshal [rank] (common, rec 3, in 2 themes)
+  B 34533 field marshal (common, rec 3, in 1 themes)
+  B 34545 air marshal (common, rec 4, in 2 themes)
+A 34542 commodore (common, rec 3, in 3 themes)
+  B 34550 air commodore (common, rec 5, in 1 themes)
+A 34544 petty officer (common, rec 3, in 2 themes)
+  B 34551 chief petty officer (common, rec 4, in 2 themes)
+
+T navy_ranks | navy ranks | 9 words
+A 29420 admiral (common, rec 3, in 5 themes)
+  B 34540 rear admiral (common, rec 3, in 2 themes)
+  B 34541 vice admiral (common, rec 3, in 2 themes)
+A 34544 petty officer (common, rec 3, in 2 themes)
+  B 34551 chief petty officer (common, rec 4, in 2 themes)
+
+T navy_words | navy words | 62 words
+A 34579 port [naval] (common, rec 1, in 1 themes)
+  B 47599 port side (common, rec 3, in 3 themes)
+A 34583 deck [ship] (common, rec 1, in 7 themes)
+  B 34595 gun deck (common, rec 4, in 2 themes)
+  B 47440 poop deck (common, rec 3, in 4 themes)
+
+T parts_of_a_ship | parts of a ship | 19 words
+A 34583 deck [ship] (common, rec 1, in 7 themes)
+  B 34595 gun deck (common, rec 4, in 2 themes)
+  B 47440 poop deck (common, rec 3, in 4 themes)
+
+T air_force_words | air force words | 40 words
+A 4434 squadron (common, rec 3, in 3 themes)
+  B 34547 squadron leader (common, rec 3, in 2 themes)
+A 34600 jet [aircraft] (common, rec 1, in 3 themes)
+  B 34601 fighter jet (common, rec 1, in 7 themes)
+A 34602 bomber [aircraft] (common, rec 2, in 4 themes)
+  B 34608 stealth bomber (common, rec 2, in 4 themes)
+
+T medals_and_honors | medals and honors | 29 words
+A 4408 medal (common, rec 1, in 4 themes)
+  B 34626 Medal of Honor (proper, rec 3, in 1 themes)
+  B 34644 Medal of Freedom (proper, rec 4, in 1 themes)
+  B 34645 medal bar (common, rec 4, in 1 themes)
+  B 34647 Olympic medal (common, rec 2, in 1 themes)

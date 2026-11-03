@@ -1,0 +1,68 @@
+# SUBs
+SUB american_roots_music | blues_styles | blues styles | 51814 51815 51816 51826 51827 51834
+SUB electronic_music_styles | techno_styles | techno styles | 51676 51680 51682 51686
+SUB electronic_music_styles | house_styles | house styles | 51667 51668 51681 51685
+SUB fantasy_races | elf_types | elf types | 22360 22362 22364 22365
+SUB tv_genres | drama_types | drama types | 12604 12606 12607 12622 12623 12626
+# period drama = costume drama
+GROUP tv_genres 12622 12623
+# mezzo is short for mezzo-soprano
+MERGE voice_types 11033 11013
+MERGE classical_voice_types 11033 11013
+# pilot = pilot episode
+MERGE tv_words 6412 12853
+MERGE television_equipment 6390 6389
+MERGE pacific_art_words 55424 52333
+# surname vs full name
+MERGE impressionist_painters 52140 11931
+MERGE impressionist_painters 52141 52158
+MERGE impressionist_painters 52142 11962
+MERGE impressionist_painters 52143 52157
+MERGE impressionist_painters 52144 11964
+MERGE dutch_painters 11933 52201
+MERGE dutch_painters 52150 11929
+MERGE dutch_painters 52181 11942
+MERGE spanish_painters 52162 11930
+MERGE spanish_painters 52163 11934
+MERGE spanish_painters 52202 11955
+MERGE spanish_painters 52203 11956
+MERGE spanish_painters 52206 52209
+MERGE english_stage_writers 12481 12480
+MERGE russian_writers 52533 13187
+MERGE russian_writers 52534 13245
+MERGE russian_writers 52535 12485
+MERGE russian_writers 52536 52511
+MERGE russian_writers 52537 52512
+MERGE pharaohs 12552 53931
+MERGE greek_philosophers 53961 53978
+MERGE ancient_rome 20382 13292
+MERGE explorers 21003 6716
+MERGE conquistadors 54106 21014
+MERGE conquistadors 54109 54122
+MERGE conquistadors 54111 54121
+MERGE conquistadors 54113 54120
+MERGE undead 12545 25037
+MERGE robin_hood_legend 30209 30210
+MERGE robin_hood_legend 55088 12551
+MERGE african_folklore 22582 22605
+MERGE turkish_folklore 22687 22681
+MERGE turkish_folklore 22688 22681
+MERGE american_tall_tales 22761 22774
+# related but different people/things, never in one level
+GROUP romantic_composers 11406 51908
+GROUP romantic_composers 11407 51909
+GROUP conquistadors 20437 54123
+GROUP conquistadors 11783 54124
+GROUP reformers 21633 21519
+GROUP shakespeare_characters 52765 52777
+GROUP characters_in_tragedies 52765 52777
+GROUP egyptian_gods 21927 21960
+GROUP egyptian_gods 21937 21960
+GROUP arthurian_legend 55070 55057
+GROUP turkish_folklore 12382 22690
+GROUP turkish_folklore 22684 22690
+GROUP american_tall_tales 22771 22752
+GROUP famous_magicians 52937 52961
+GROUP pirate_ships 21237 21227
+# magazine for the genre
+BRAND anime_and_manga_words 13078 13118

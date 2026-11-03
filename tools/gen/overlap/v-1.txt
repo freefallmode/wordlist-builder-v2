@@ -1,0 +1,34 @@
+# goji berry is just goji
+MERGE dried_fruits 28140 15570
+# mandarin orange is just mandarin
+MERGE citrus_fruits 79 17177
+MERGE foods_you_peel 79 17177
+# commis chef is just commis
+MERGE kitchen_brigade 20058 20059
+# spaghetti carbonara is just carbonara in a pasta meals list
+MERGE pasta_meals 18516 18517
+# yerba mate is just mate
+MERGE south_american_drinks 19416 907
+# masala chai is just chai
+MERGE teas 233 19508
+MERGE asian_drinks 233 19508
+# tea time is the tea meal
+MERGE meals_of_the_day 20117 20124
+BRAND drinks 865 871
+BRAND soft_drinks 865 871
+# Dairy Milk is a milk chocolate brand
+BRAND chocolates 64748 18393
+BRAND chocolates 65044 18391
+BRAND salad_dressings 64762 59621
+BRAND south_american_drinks 53691 53716
+SUB stone_fruits | cherry_varieties | cherry varieties | 17216 17217 17218 17219 17236
+SUB stone_fruits | plum_varieties | plum varieties | 17226 17227 17228 17231
+SUB citrus_fruits | orange_varieties | orange varieties | 17160 17161 17162 17173
+SUB citrus_fruits | lime_varieties | lime varieties | 17163 17169 17171 17174
+SUB leafy_greens | lettuce_varieties | lettuce varieties | 17460 17463 17472 17482
+SUB onion_family | onion_varieties | onion varieties | 17575 17576 17577 17582 17585
+SUB sweeteners | sugar_types | sugar types | 18197 18210 18466 18467 18473 18477 18484 59507
+SUB table_setting | fork_types | fork types | 20151 20152 20166 20169
+SUB beers | ale_types | ale types | 19688 19703 19704 19707
+SUB big_cats | tiger_subspecies | tiger subspecies | 7750 7751 7752 7759 7768 7769
+SUB monkeys | macaque_species | macaque species | 7831 50494 51129 51131 51180

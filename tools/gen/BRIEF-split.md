@@ -12,7 +12,7 @@ Add a `#` comment line above every `S` with a one-line reason (the test a player
 
 ## Rules
 1. **A sub-theme has a clear membership test**, so a player can place any word: `adjectives for the weather`, `animals that live in water`, `tools with a blade`. Not vague moods or "misc".
-2. **At least 8 words**, all taken from the parent's list (use their ids). At most about 60% of the parent: a split that holds nearly everything adds nothing.
+2. **At least 4 words**, all taken from the parent's list (use their ids). At most about 60% of the parent: a split that holds nearly everything adds nothing.
 3. **The name must not give the members away.** No name word may appear in a member (the name `tomato things` for tomato soup is a leak). A member that is just the name's head noun is fine (`bug` in `garden bugs`). Names are lowercase plural phrases like the existing ones (`big cats`, `rain words`); do not use the parent's name as a prefix to make a longer name (`jobs in jobs`).
 4. **No duplicates**: do not propose what an existing sub-theme or sibling (listed) already is, even under another name.
 5. **Complete themes** (marked COMPLETE) are fixed sets: only propose a sub-theme if it is itself an exact fixed set (`noble gases` in chemical elements). Otherwise `N`.

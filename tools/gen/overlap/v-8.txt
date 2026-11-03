@@ -1,0 +1,69 @@
+SUB eyewear | glasses_types | glasses types | 12804 23330 24793 24796 24797 24798 24799 24803 50008
+SUB neckwear | tie_types | tie types | 4946 5012 24828 24829 24830 24832
+SUB sewing_words | stitch_types | stitch types | 5065 5085 5086 24877 24878 24880 24881
+SUB cutlery | knife_types | knife types | 19861 20154 20155 20165 23206 55809 55812
+SUB cutlery | spoon_types | spoon types | 20143 20153 23213 55808 55811 55813
+SUB cutlery | fork_types | fork types | 20151 20152 20166 20169 55807 55810 55814
+SUB crockery | bowl_types | bowl types | 25790 55818 55819 55821 55822 55829 55830
+SUB drinking_vessels | drinking_glass_types | drinking glass types | 20141 20142 48819 55833 55836 55837 55840 55848
+SUB drinking_vessels | cup_types | cup types | 15828 25552 55845 55846 55847
+SUB things_with_legs | table_types | table types | 4672 4673 4690 23422 23424 23429 23430 25809
+SUB golf_clubs | wedge_types | wedge types | 50358 61539 61540 61541
+SUB diving_terms | dive_types | dive types | 43319 43320 43321 43338
+BRAND wool_fabrics 5048 55508
+MERGE knitting_words 5040 24891
+MERGE fastenings 24982 24989
+GROUP fastenings 24985 24996
+GROUP fastenings 25003 24980
+GROUP easter 1444 8088
+MERGE new_year 64799 5128
+GROUP birthdays 559 18104
+GROUP valentine_s_day 25160 25174
+MERGE valentine_s_day 25162 25172
+GROUP holi 55682 55680
+GROUP midsummer 25307 25323
+GROUP st_patrick_s_day 1776 22581
+MERGE gift_wrapping 25224 25203
+GROUP season_words 25306 25321
+GROUP season_words 25306 25322
+GROUP season_words 25307 25323
+GROUP season_words 25307 25324
+GROUP season_words 25317 25321
+MERGE clocks_and_calendars 34783 25377
+GROUP times_of_day 25413 25426
+GROUP times_of_day 25415 25421
+MERGE containers 34004 24714
+MERGE things_with_a_carrying_handle 34004 24714
+MERGE paper_goods 19926 25573
+MERGE things_used_for_wiping 19926 25573
+GROUP paper_goods 25548 25207
+GROUP things_used_for_wiping 25548 25207
+MERGE paper_goods 25548 25570
+MERGE things_used_for_wiping 25548 25570
+MERGE candle_words 25590 25617
+GROUP crockery 20137 55816
+MERGE drinking_vessels 55832 55849
+MERGE serving_dishes 23207 25792
+GROUP locks_and_keys 24104 25716
+GROUP locks_and_keys 25716 25717
+MERGE locks_and_keys 24104 25737
+MERGE things_you_plug_in 4730 4798
+MERGE kitchen_gadgets 4730 4798
+MERGE kitchen_gadgets 4722 4723
+MERGE things_you_switch_on 4722 4723
+GROUP things_with_lids 23251 25793
+GROUP things_with_legs 25804 23424
+GROUP ball_sports 5196 5210
+MERGE team_ball_sports 42646 5206
+MERGE basketball_terms 42715 42722
+MERGE nba_teams 58524 61499
+MERGE nfl_teams 58559 61503
+MERGE nfl_teams 58568 61504
+MERGE american_football_terms 42772 42795
+MERGE mlb_teams 58591 61509
+MERGE mlb_teams 58603 61508
+MERGE mlb_teams 58614 61511
+MERGE racket_sports 5241 42973
+MERGE racket_and_target_sports 5250 5263
+GROUP golf_terms 50345 43072
+GROUP cue_sports_terms 50341 43132

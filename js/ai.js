@@ -87,6 +87,8 @@ Aliases. Add aliases only when there is a real, commonly used alternative that f
 
 themeDifficulty: how recognisable the THEME is as a category, 1 to 5 (1 = everyone gets it at a glance, 5 = specialist or obscure; a vague boundary makes it harder). Always give it; it is only used when the theme is still unrated.
 
+Overlap. Never list two words for the same thing in a theme, or a word and a more specific form of it (cola and Coca-Cola, pasta and pasta sauce). Keep the generic word; brands belong in brand themes, not generic ones. If a theme has four or more subtypes of one thing, they belong in their own sub-theme; with fewer, list only the best-known.
+
 Complete themes are a finite set: list EVERY member exactly and correctly, nothing else, however many that is.`;
 
 export function wordsPrompt(P, t, n, spread, extra) {

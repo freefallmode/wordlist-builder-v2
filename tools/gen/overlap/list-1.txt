@@ -1,0 +1,1082 @@
+T fruits | fruits | 75 words
+A 87 apple [fruit] (common, rec 1, in 8 themes)
+  B 377 custard apple (common, rec 4, in 2 themes)
+A 366 gooseberry [green berry] (common, rec 3, in 5 themes)
+  B 385 cape gooseberry (common, rec 4, in 1 themes)
+
+T citrus_fruits | citrus fruits | 32 words
+A 74 lemon [fruit] (common, rec 1, in 17 themes)
+  B 17172 meyer lemon (common, rec 3, in 1 themes)
+A 75 lime [fruit] (common, rec 1, in 9 themes)
+  B 17163 key lime (common, rec 3, in 3 themes)
+  B 17169 finger lime (common, rec 4, in 2 themes)
+  B 17171 kaffir lime (common, rec 4, in 1 themes)
+  B 17174 sweet lime (common, rec 4, in 1 themes)
+A 76 orange [fruit] (common, rec 1, in 9 themes)
+  B 17160 blood orange (common, rec 2, in 2 themes)
+  B 17161 navel orange (common, rec 2, in 1 themes)
+  B 17162 seville orange (common, rec 4, in 2 themes)
+  B 17173 valencia orange (common, rec 3, in 1 themes)
+  B 17177 mandarin orange (common, rec 2, in 2 themes)
+A 79 mandarin [fruit] (common, rec 2, in 11 themes)
+  B 17177 mandarin orange (common, rec 2, in 2 themes)
+
+T berries | berries | 38 words
+A 349 raspberry (common, rec 1, in 8 themes)
+  B 17199 black raspberry (common, rec 4, in 1 themes)
+  B 17200 golden raspberry [fruit] (common, rec 4, in 1 themes)
+
+T stone_fruits | stone fruits | 36 words
+A 92 cherry [fruit] (common, rec 1, in 12 themes)
+  B 17216 sour cherry (common, rec 3, in 1 themes)
+  B 17217 morello cherry (common, rec 4, in 1 themes)
+  B 17218 bing cherry (common, rec 3, in 1 themes)
+  B 17219 rainier cherry (common, rec 4, in 1 themes)
+  B 17220 maraschino cherry (common, rec 3, in 1 themes)
+  B 17226 cherry plum (common, rec 4, in 2 themes)
+  B 17234 cornelian cherry (common, rec 5, in 1 themes)
+  B 17236 black cherry (common, rec 3, in 3 themes)
+A 93 peach [fruit] (common, rec 1, in 7 themes)
+  B 17229 white peach (common, rec 3, in 1 themes)
+  B 17230 donut peach (common, rec 4, in 1 themes)
+A 94 plum [fruit] (common, rec 2, in 5 themes)
+  B 17226 cherry plum (common, rec 4, in 2 themes)
+  B 17227 victoria plum (common, rec 4, in 1 themes)
+  B 17228 santa rosa plum (common, rec 5, in 1 themes)
+  B 17231 yellow plum (common, rec 5, in 1 themes)
+A 352 apricot (common, rec 2, in 9 themes)
+  B 17232 apricot kernel (common, rec 5, in 1 themes)
+
+T melons | melons | 31 words
+A 97 watermelon (common, rec 1, in 8 themes)
+  B 17249 seedless watermelon (common, rec 3, in 1 themes)
+  B 17250 yellow watermelon (common, rec 4, in 1 themes)
+  B 17260 mini watermelon (common, rec 3, in 1 themes)
+
+T dried_fruits | dried fruits | 36 words
+A 359 date [fruit] (common, rec 2, in 4 themes)
+  B 17291 medjool date (common, rec 3, in 1 themes)
+A 368 currant (common, rec 3, in 5 themes)
+  B 17294 zante currant (common, rec 5, in 1 themes)
+A 17265 raisin (common, rec 1, in 2 themes)
+  B 17275 golden raisin (common, rec 3, in 1 themes)
+A 28140 goji (common, rec 2, in 3 themes)
+  B 15570 goji berry (common, rec 2, in 2 themes)
+
+T apple_varieties | apple varieties | 42 words | note: named apple cultivars; they only read as apples within this theme
+A 17334 Pippin [apple] (proper, rec 4, in 1 themes)
+  B 17306 Cox's Orange Pippin (proper, rec 3, in 1 themes)
+  B 17325 Newtown Pippin (proper, rec 5, in 1 themes)
+
+T nuts | nuts | 35 words | note: culinary nuts: almond, cashew, pecan, walnut, pistachio, peanut
+A 17235 almond [nut] (common, rec 1, in 6 themes)
+  B 17371 marcona almond (common, rec 4, in 1 themes)
+A 20261 chestnut [nut] (common, rec 2, in 6 themes)
+  B 17376 water chestnut (common, rec 3, in 4 themes)
+  B 17379 sweet chestnut (common, rec 4, in 3 themes)
+A 30307 walnut [nut] (common, rec 2, in 6 themes)
+  B 17373 black walnut (common, rec 4, in 4 themes)
+
+T parts_of_a_fruit | parts of a fruit | 34 words
+A 17411 seed [plant] (common, rec 1, in 8 themes)
+  B 17436 seed coat (common, rec 4, in 2 themes)
+
+T vegetables | vegetables | 56 words
+A 392 potato [vegetable] (common, rec 1, in 12 themes)
+  B 402 sweet potato [vegetable] (common, rec 1, in 8 themes)
+A 399 peas (common, rec 1, in 4 themes)
+  B 448 snow peas (common, rec 3, in 2 themes)
+A 64789 Green [scallion] (common, rec 3, in 1 themes)
+  B 417 green beans (common, rec 1, in 2 themes)
+
+T root_vegetables | root vegetables | 36 words
+A 391 carrot [vegetable] (common, rec 1, in 10 themes)
+  B 17456 purple carrot (common, rec 3, in 1 themes)
+A 392 potato [vegetable] (common, rec 1, in 12 themes)
+  B 402 sweet potato [vegetable] (common, rec 1, in 8 themes)
+
+T leafy_greens | leafy greens | 41 words
+A 394 lettuce [vegetable] (common, rec 1, in 5 themes)
+  B 17460 iceberg lettuce (common, rec 2, in 1 themes)
+  B 17463 lamb's lettuce (common, rec 4, in 1 themes)
+  B 17472 butterhead lettuce (common, rec 3, in 1 themes)
+  B 17482 oak leaf lettuce (common, rec 3, in 1 themes)
+A 398 spinach [leafy green] (common, rec 1, in 7 themes)
+  B 17485 water spinach (common, rec 4, in 1 themes)
+  B 17487 baby spinach (common, rec 2, in 1 themes)
+A 428 kale (common, rec 2, in 5 themes)
+  B 17476 lacinato kale (common, rec 4, in 2 themes)
+  B 17477 dinosaur kale (common, rec 4, in 2 themes)
+
+T squashes | squashes | 39 words
+A 403 pumpkin [vegetable] (common, rec 1, in 9 themes)
+  B 17497 Japanese pumpkin (common, rec 4, in 1 themes)
+  B 17518 cheese pumpkin (common, rec 5, in 1 themes)
+  B 17520 sugar pumpkin (common, rec 4, in 1 themes)
+A 17516 gourd (common, rec 3, in 2 themes)
+  B 17517 bottle gourd (common, rec 4, in 1 themes)
+
+T beans_and_pulses | beans and pulses | 37 words
+A 17526 black [bean variety] (common, rec 2, in 1 themes)
+  B 17538 black-eyed pea (common, rec 3, in 1 themes)
+A 17527 lentil (common, rec 1, in 2 themes)
+  B 17546 red lentil (common, rec 2, in 1 themes)
+  B 17547 puy lentil (common, rec 4, in 1 themes)
+A 17530 pea [vegetable] (common, rec 1, in 4 themes)
+  B 17538 black-eyed pea (common, rec 3, in 1 themes)
+  B 17545 split pea (common, rec 2, in 2 themes)
+  B 17552 pigeon pea (common, rec 4, in 1 themes)
+  B 17559 snap pea (common, rec 2, in 1 themes)
+A 62537 haricot (common, rec 3, in 1 themes)
+  B 63405 haricot vert (common, rec 3, in 1 themes)
+
+T onion_family | onion family | 34 words
+A 393 onion [bulb vegetable] (common, rec 1, in 7 themes)
+  B 17575 welsh onion (common, rec 5, in 1 themes)
+  B 17576 egyptian onion (common, rec 5, in 1 themes)
+  B 17577 walking onion (common, rec 5, in 1 themes)
+  B 17582 torpedo onion (common, rec 5, in 1 themes)
+  B 17583 pickled onion (common, rec 3, in 4 themes)
+  B 17584 onion powder (common, rec 2, in 1 themes)
+  B 17585 tree onion (common, rec 5, in 1 themes)
+  B 17591 white spring onion (common, rec 4, in 1 themes)
+A 404 garlic (common, rec 1, in 8 themes)
+  B 17570 wild garlic (common, rec 3, in 4 themes)
+  B 17572 elephant garlic (common, rec 4, in 1 themes)
+  B 17573 garlic chives (common, rec 4, in 1 themes)
+  B 17578 garlic scape (common, rec 5, in 1 themes)
+  B 17579 black garlic (common, rec 4, in 2 themes)
+A 427 leek (common, rec 2, in 3 themes)
+  B 17590 baby leek (common, rec 4, in 1 themes)
+A 738 chives (common, rec 2, in 4 themes)
+  B 17573 garlic chives (common, rec 4, in 1 themes)
+  B 17574 Chinese chives (common, rec 4, in 1 themes)
+A 64680 white (common, rec 2, in 1 themes)
+  B 17591 white spring onion (common, rec 4, in 1 themes)
+
+T cabbage_family | cabbage family | 40 words
+A 395 cabbage [vegetable] (common, rec 1, in 6 themes)
+  B 64682 napa cabbage (common, rec 3, in 1 themes)
+A 396 broccoli (common, rec 1, in 7 themes)
+  B 17600 broccoli rabe (common, rec 4, in 2 themes)
+  B 17607 chinese broccoli (common, rec 4, in 1 themes)
+A 428 kale (common, rec 2, in 5 themes)
+  B 17476 lacinato kale (common, rec 4, in 2 themes)
+  B 17477 dinosaur kale (common, rec 4, in 2 themes)
+A 17597 Chinese (common, rec 3, in 1 themes)
+  B 17607 chinese broccoli (common, rec 4, in 1 themes)
+
+T mushrooms | mushrooms | 39 words
+A 17628 puffball [fungus] (common, rec 4, in 3 themes)
+  B 17643 giant puffball (common, rec 4, in 1 themes)
+A 17645 mushroom [fungus] (common, rec 1, in 6 themes)
+  B 17629 field mushroom (common, rec 3, in 2 themes)
+  B 17637 straw mushroom (common, rec 4, in 1 themes)
+  B 17639 horse mushroom (common, rec 5, in 1 themes)
+A 63418 oyster [fungus] (common, rec 3, in 1 themes)
+  B 17625 king oyster (common, rec 4, in 2 themes)
+
+T andean_crops | andean crops | 37 words | note: first grown in South America: potato, quinoa, cassava, oca, peanut
+A 110 tomato [fruit] (common, rec 1, in 17 themes)
+  B 17662 tree tomato (common, rec 4, in 1 themes)
+A 392 potato [vegetable] (common, rec 1, in 12 themes)
+  B 402 sweet potato [vegetable] (common, rec 1, in 8 themes)
+  B 17665 peruvian potato (common, rec 4, in 1 themes)
+
+T meat_and_seafood | meat and seafood | 54 words
+A 459 beef (common, rec 1, in 5 themes)
+  B 473 ground beef (common, rec 1, in 4 themes)
+
+T cuts_of_meat | cuts of meat | 47 words
+A 17671 fillet [meat] (common, rec 2, in 3 themes)
+  B 17701 neck fillet (common, rec 5, in 1 themes)
+
+T poultry | poultry | 40 words
+A 152 chicken [bird] (common, rec 1, in 7 themes)
+  B 17716 free-range chicken (common, rec 2, in 1 themes)
+  B 17718 chicken breast (common, rec 1, in 1 themes)
+  B 17719 chicken thigh (common, rec 2, in 1 themes)
+  B 17720 chicken wings (common, rec 1, in 2 themes)
+  B 17725 roast chicken (common, rec 1, in 2 themes)
+  B 17726 rotisserie chicken (common, rec 2, in 1 themes)
+  B 17728 chicken liver (common, rec 3, in 1 themes)
+  B 17732 organic chicken (common, rec 2, in 1 themes)
+A 155 duck [bird] (common, rec 1, in 9 themes)
+  B 1483 muscovy duck (common, rec 4, in 3 themes)
+  B 17722 duck breast (common, rec 3, in 1 themes)
+  B 17730 pekin duck (common, rec 4, in 1 themes)
+  B 17731 peking duck (common, rec 3, in 3 themes)
+A 156 turkey [bird] (common, rec 1, in 7 themes)
+  B 17721 turkey leg (common, rec 2, in 2 themes)
+A 165 hen [chicken] (common, rec 1, in 5 themes)
+  B 17714 cornish hen (common, rec 3, in 1 themes)
+A 17729 fowl (common, rec 3, in 1 themes)
+  B 1455 guinea fowl (common, rec 3, in 5 themes)
+
+T cured_meats | cured meats | 44 words
+A 462 bacon (common, rec 1, in 13 themes)
+  B 17795 back bacon (common, rec 3, in 2 themes)
+  B 17796 streaky bacon (common, rec 3, in 1 themes)
+  B 17797 canadian bacon [meat] (common, rec 3, in 1 themes)
+  B 17808 bacon bits (common, rec 2, in 1 themes)
+A 463 ham [cured meat] (common, rec 1, in 8 themes)
+  B 17780 serrano ham (common, rec 3, in 2 themes)
+  B 17793 country ham (common, rec 3, in 2 themes)
+  B 17794 smoked ham (common, rec 2, in 1 themes)
+  B 17798 parma ham (common, rec 3, in 1 themes)
+  B 17799 black forest ham (common, rec 3, in 1 themes)
+A 17778 jamon (common, rec 3, in 1 themes)
+  B 17779 jamon iberico (common, rec 4, in 1 themes)
+
+T shellfish | shellfish | 37 words
+A 469 lobster (common, rec 1, in 12 themes)
+  B 8877 spiny lobster (common, rec 4, in 2 themes)
+A 470 crab [animal] (common, rec 1, in 10 themes)
+  B 8862 king crab (common, rec 2, in 2 themes)
+  B 8863 blue crab (common, rec 3, in 2 themes)
+  B 8872 dungeness crab (common, rec 4, in 2 themes)
+A 478 clam (common, rec 2, in 8 themes)
+  B 8881 razor clam (common, rec 3, in 5 themes)
+A 1295 barnacle (common, rec 3, in 8 themes)
+  B 17815 goose barnacle (common, rec 5, in 1 themes)
+
+T fish_to_eat | fish to eat | 51 words
+A 466 salmon [fish] (common, rec 1, in 15 themes)
+  B 17824 smoked salmon (common, rec 1, in 3 themes)
+A 1226 bass [fish] (common, rec 2, in 6 themes)
+  B 491 sea bass (common, rec 3, in 2 themes)
+A 1227 sole [fish] (common, rec 3, in 5 themes)
+  B 17822 dover sole (common, rec 4, in 2 themes)
+  B 17825 lemon sole (common, rec 4, in 2 themes)
+
+T seafood_dishes | seafood dishes | 44 words | note: fish and chips, clam chowder, crab cakes, lobster roll, calamari, scampi
+A 823 paella (common, rec 2, in 6 themes)
+  B 17854 paella marinera (common, rec 5, in 1 themes)
+A 8871 scampi (common, rec 3, in 3 themes)
+  B 17843 shrimp scampi (common, rec 3, in 1 themes)
+A 18926 chowder (common, rec 2, in 3 themes)
+  B 17828 clam chowder (common, rec 2, in 3 themes)
+
+T barbecue_foods | barbecue foods | 43 words | note: brisket, ribs, pulled pork, burnt ends, wings, corn on the cob
+A 464 sausage (common, rec 1, in 7 themes)
+  B 17806 smoked sausage (common, rec 2, in 2 themes)
+A 813 kebab (common, rec 1, in 12 themes)
+  B 17876 shish kebab (common, rec 3, in 4 themes)
+A 17674 brisket (common, rec 3, in 4 themes)
+  B 17887 texas brisket (common, rec 4, in 1 themes)
+A 17866 pulled pork (common, rec 2, in 4 themes)
+  B 17886 carolina pulled pork (common, rec 4, in 1 themes)
+A 50091 ribs [food] (common, rec 1, in 1 themes)
+  B 17693 spare ribs (common, rec 3, in 2 themes)
+  B 17871 baby back ribs (common, rec 2, in 1 themes)
+  B 17877 pork ribs (common, rec 2, in 1 themes)
+  B 17879 beef ribs (common, rec 3, in 1 themes)
+  B 17885 kansas city ribs (common, rec 4, in 1 themes)
+
+T butcher_shop | butcher shop | 48 words
+A 464 sausage (common, rec 1, in 7 themes)
+  B 17916 sausage casing (common, rec 4, in 1 themes)
+A 3243 bone (common, rec 1, in 7 themes)
+  B 17899 marrow bone (common, rec 4, in 1 themes)
+A 17893 butcher [shop] (common, rec 1, in 2 themes)
+  B 17901 butcher paper (common, rec 4, in 2 themes)
+
+T meat_from_mammals | meat from mammals | 15 words
+A 459 beef (common, rec 1, in 5 themes)
+  B 473 ground beef (common, rec 1, in 4 themes)
+
+T dairy_and_eggs | dairy | 34 words
+A 514 milk [drink] (common, rec 1, in 8 themes)
+  B 531 condensed milk (common, rec 2, in 3 themes)
+  B 536 powdered milk (common, rec 3, in 2 themes)
+  B 537 milk powder (common, rec 3, in 2 themes)
+  B 538 evaporated milk (common, rec 3, in 3 themes)
+A 515 cheese [dairy food] (common, rec 1, in 12 themes)
+  B 529 cottage cheese (common, rec 2, in 3 themes)
+  B 530 cream cheese (common, rec 2, in 3 themes)
+A 517 cream [dairy] (common, rec 1, in 4 themes)
+  B 526 sour cream (common, rec 2, in 8 themes)
+  B 528 whipped cream (common, rec 2, in 4 themes)
+  B 530 cream cheese (common, rec 2, in 3 themes)
+  B 534 heavy cream (common, rec 2, in 1 themes)
+  B 541 clotted cream (common, rec 3, in 5 themes)
+  B 604 ice cream [frozen dessert] (common, rec 1, in 14 themes)
+
+T blue_cheeses | blue cheeses | 20 words
+A 53112 bleu [cheese] (common, rec 3, in 1 themes)
+  B 53099 bleu d'auvergne (common, rec 5, in 2 themes)
+  B 53108 bleu de gex (common, rec 5, in 1 themes)
+  B 53111 bleu de bresse (common, rec 5, in 1 themes)
+
+T italian_cheeses | italian cheeses | 23 words
+A 17924 pecorino (common, rec 4, in 4 themes)
+  B 53128 pecorino romano (common, rec 4, in 1 themes)
+
+T egg_dishes | egg dishes | 31 words
+A 63443 fried (common, rec 2, in 2 themes)
+  B 17993 egg fried rice (common, rec 2, in 2 themes)
+A 64701 boiled (common, rec 1, in 1 themes)
+  B 64706 soft-boiled (common, rec 2, in 1 themes)
+
+T cheesemaking_words | cheesemaking words | 27 words | note: curd, whey, rennet, rind, wheel, brine, aging, culture
+A 18032 rind [cheese] (common, rec 2, in 1 themes)
+  B 18047 washed rind (common, rec 4, in 1 themes)
+  B 18048 bloomy rind (common, rec 4, in 1 themes)
+A 18037 culture [cheese] (common, rec 2, in 1 themes)
+  B 18052 starter culture (common, rec 4, in 1 themes)
+
+T breads_and_baking | breads and baking | 45 words
+A 552 bread [food] (common, rec 1, in 7 themes)
+  B 592 soda bread (common, rec 3, in 2 themes)
+A 573 sourdough [bread] (common, rec 2, in 6 themes)
+  B 602 sourdough starter (common, rec 3, in 2 themes)
+A 64823 soda [leavener] (common, rec 2, in 3 themes)
+  B 592 soda bread (common, rec 3, in 2 themes)
+
+T flatbreads | flatbreads | 28 words | note: pita, naan, tortilla, lavash, chapati, injera, pide, yufka, arepa
+A 595 roti (common, rec 3, in 7 themes)
+  B 53137 roti canai (common, rec 4, in 1 themes)
+
+T pastries | pastries | 33 words
+A 65006 puff [flaky dough] (common, rec 2, in 1 themes)
+  B 18074 cream puff (common, rec 2, in 2 themes)
+
+T cakes | cakes | 35 words
+A 18136 lemon (common, rec 1, in 1 themes)
+  B 18111 lemon drizzle (common, rec 3, in 1 themes)
+
+T pies_and_tarts | pies and tarts | 36 words
+A 63456 apple [dessert] (common, rec 2, in 1 themes)
+  B 18195 Dutch apple (common, rec 3, in 1 themes)
+
+T baking_ingredients | baking ingredients | 27 words
+A 3830 sugar [food] (common, rec 1, in 11 themes)
+  B 18197 brown sugar (common, rec 1, in 2 themes)
+  B 18198 powdered sugar (common, rec 2, in 1 themes)
+  B 18210 caster sugar (common, rec 3, in 2 themes)
+
+T flours | flours | 44 words | note: plain, self-rising, bread, whole wheat, rye, spelt, almond, rice, buckwheat
+A 64739 wheat (common, rec 1, in 1 themes)
+  B 62548 whole wheat (common, rec 2, in 1 themes)
+
+T cake_decorations | cake decorations | 39 words
+A 580 icing (common, rec 2, in 3 themes)
+  B 18260 royal icing (common, rec 3, in 1 themes)
+  B 18269 icing tip (common, rec 3, in 1 themes)
+A 582 sprinkles (common, rec 2, in 5 themes)
+  B 18266 rainbow sprinkles (common, rec 1, in 1 themes)
+  B 18279 confetti sprinkles (common, rec 3, in 1 themes)
+A 18255 fondant (common, rec 3, in 1 themes)
+  B 18277 rolled fondant (common, rec 3, in 1 themes)
+
+T desserts_and_sweets | desserts and sweets | 48 words
+A 607 candy (common, rec 1, in 12 themes)
+  B 621 candy cane (common, rec 2, in 4 themes)
+  B 628 cotton candy (common, rec 2, in 12 themes)
+
+T ice_cream_flavors | ice cream flavors | 43 words
+A 605 chocolate [sweet] (common, rec 1, in 13 themes)
+  B 18280 mint chocolate chip (common, rec 1, in 1 themes)
+
+T frozen_desserts | frozen desserts | 38 words | note: sorbet, gelato, sundae, popsicle, granita, frozen yogurt, kulfi
+A 604 ice cream [frozen dessert] (common, rec 1, in 14 themes)
+  B 18309 ice cream cone (common, rec 1, in 3 themes)
+  B 18310 ice cream sandwich (common, rec 1, in 2 themes)
+  B 18323 mochi ice cream (common, rec 3, in 1 themes)
+  B 18328 ice cream float (common, rec 2, in 1 themes)
+
+T candy | candy | 47 words
+A 618 toffee (common, rec 2, in 8 themes)
+  B 59485 cinder toffee (common, rec 4, in 1 themes)
+A 18372 brittle [candy] (common, rec 3, in 2 themes)
+  B 18376 peanut brittle (common, rec 2, in 2 themes)
+
+T chocolates | chocolates | 34 words
+A 625 truffle [chocolate] (common, rec 2, in 2 themes)
+  B 18408 truffle shell (common, rec 5, in 1 themes)
+A 18290 praline (common, rec 3, in 6 themes)
+  B 18407 praline filling (common, rec 4, in 1 themes)
+A 64748 milk (common, rec 1, in 1 themes)
+  B 18393 Dairy Milk (org, rec 3, brand, in 1 themes)
+A 65044 bar [candy slab] (common, rec 1, in 1 themes)
+  B 18391 Mars bar (org, rec 2, brand, in 2 themes)
+
+T indian_sweets | indian sweets | 29 words | note: gulab jamun, jalebi, barfi, ladoo, rasgulla, kheer
+A 53164 halwa (common, rec 3, in 1 themes)
+  B 53167 gajar halwa (common, rec 4, in 1 themes)
+
+T toppings | dessert toppings | 46 words
+A 18441 crumble [topping] (common, rec 2, in 1 themes)
+  B 18453 pistachio crumble (common, rec 4, in 1 themes)
+
+T sweeteners | sweeteners | 49 words | note: sugar, honey, maple syrup, agave, molasses, stevia, treacle, jaggery
+A 3830 sugar [food] (common, rec 1, in 11 themes)
+  B 18197 brown sugar (common, rec 1, in 2 themes)
+  B 18210 caster sugar (common, rec 3, in 2 themes)
+  B 18466 cane sugar (common, rec 2, in 1 themes)
+  B 18467 raw sugar (common, rec 2, in 1 themes)
+  B 18473 coconut sugar (common, rec 3, in 1 themes)
+  B 18477 demerara sugar (common, rec 4, in 1 themes)
+  B 18484 palm sugar (common, rec 4, in 1 themes)
+  B 59507 invert sugar (common, rec 4, in 1 themes)
+
+T pasta_rice_and_grains | pasta, rice and grains | 60 words
+A 654 noodles (common, rec 1, in 3 themes)
+  B 671 instant noodles (common, rec 2, in 2 themes)
+
+T pasta_shapes | pasta shapes | 59 words
+A 656 macaroni [pasta] (common, rec 1, in 4 themes)
+  B 18491 elbow macaroni (common, rec 1, in 2 themes)
+
+T tube_pasta | tube pasta | 11 words
+A 656 macaroni [pasta] (common, rec 1, in 4 themes)
+  B 18491 elbow macaroni (common, rec 1, in 2 themes)
+
+T pasta_dishes | pasta dishes | 39 words | note: carbonara, lasagna, bolognese, alfredo, cacio e pepe, puttanesca
+A 18518 bolognese [sauce] (common, rec 2, in 3 themes)
+  B 818 spaghetti bolognese (common, rec 2, in 3 themes)
+A 18526 arrabbiata (common, rec 4, in 1 themes)
+  B 18542 penne arrabbiata (common, rec 3, in 1 themes)
+A 59531 bake (common, rec 1, in 1 themes)
+  B 63282 tuna bake (common, rec 3, in 1 themes)
+
+T noodles | noodles | 43 words
+A 690 rice (common, rec 3, in 1 themes)
+  B 59540 rice sticks (common, rec 4, in 1 themes)
+
+T noodle_dishes | noodle dishes | 40 words | note: pad thai, ramen, pho, chow mein, laksa, japchae, yakisoba
+A 670 ramen (common, rec 2, in 9 themes)
+  B 59551 miso ramen (common, rec 2, in 1 themes)
+  B 59552 tonkotsu ramen (common, rec 3, in 1 themes)
+A 688 udon (common, rec 3, in 5 themes)
+  B 59545 kitsune udon (common, rec 4, in 1 themes)
+  B 59550 yaki udon (common, rec 3, in 1 themes)
+A 703 soba (common, rec 4, in 5 themes)
+  B 59546 zaru soba (common, rec 4, in 1 themes)
+A 18556 kway teow (common, rec 4, in 2 themes)
+  B 59541 char kway teow (common, rec 4, in 1 themes)
+
+T rice_dishes | rice dishes | 51 words
+A 63443 fried (common, rec 2, in 2 themes)
+  B 65057 egg fried [wok-cooked with egg] (common, rec 2, in 1 themes)
+
+T east_asian_dishes | east asian grain dishes | 13 words
+A 806 fried rice (common, rec 1, in 6 themes)
+  B 17993 egg fried rice (common, rec 2, in 2 themes)
+
+T grains | grains | 41 words
+A 653 rice [grain] (common, rec 1, in 8 themes)
+  B 669 brown rice (common, rec 2, in 1 themes)
+  B 686 wild rice (common, rec 3, in 2 themes)
+A 658 wheat [cereal] (common, rec 1, in 9 themes)
+  B 18601 cracked wheat (common, rec 3, in 1 themes)
+  B 18603 wheat berries (common, rec 4, in 1 themes)
+A 666 barley (common, rec 2, in 4 themes)
+  B 18602 pearl barley (common, rec 3, in 1 themes)
+  B 18607 hulled barley (common, rec 4, in 1 themes)
+A 682 millet [grain] (common, rec 3, in 3 themes)
+  B 59563 pearl millet (common, rec 4, in 1 themes)
+  B 59564 finger millet (common, rec 4, in 1 themes)
+  B 59565 foxtail millet (common, rec 5, in 1 themes)
+
+T breakfast_cereals | breakfast cereals | 44 words
+A 18613 Cheerios (org, rec 1, brand, in 3 themes)
+  B 18621 Honey Nut Cheerios (org, rec 2, brand, in 1 themes)
+
+T dumplings | dumplings | 44 words
+A 20237 dumpling (common, rec 1, in 3 themes)
+  B 18669 dumpling soup (common, rec 2, in 1 themes)
+A 65065 soup [filled with broth] (common, rec 3, in 1 themes)
+  B 18669 dumpling soup (common, rec 2, in 1 themes)
+
+T rice_varieties | rice varieties | 39 words
+A 62895 jasmine [scented] (common, rec 2, in 1 themes)
+  B 18688 Thai jasmine (common, rec 3, in 1 themes)
+A 63506 black [variety] (common, rec 3, in 1 themes)
+  B 59599 Black Japonica (org, rec 5, brand, in 1 themes)
+A 64756 red (common, rec 3, in 1 themes)
+  B 59600 bhutanese red (common, rec 5, in 1 themes)
+
+T herbs | herbs | 41 words
+A 713 basil [culinary herb] (common, rec 1, in 4 themes)
+  B 15667 holy basil (common, rec 3, in 2 themes)
+  B 18696 Thai basil (common, rec 3, in 1 themes)
+A 18694 savory [herb] (common, rec 4, in 1 themes)
+  B 59607 winter savory (common, rec 4, in 1 themes)
+
+T spices | spices | 47 words
+A 717 cinnamon [spice] (common, rec 1, in 10 themes)
+  B 18704 cinnamon stick (common, rec 1, in 1 themes)
+A 722 pepper [spice] (common, rec 1, in 6 themes)
+  B 18713 white pepper (common, rec 2, in 1 themes)
+  B 18714 red pepper flakes (common, rec 2, in 1 themes)
+  B 59613 long pepper (common, rec 5, in 2 themes)
+A 741 paprika (common, rec 2, in 5 themes)
+  B 18712 smoked paprika (common, rec 3, in 1 themes)
+A 760 cardamom (common, rec 3, in 6 themes)
+  B 59616 black cardamom (common, rec 4, in 1 themes)
+
+T salad_dressings | salad dressings | 34 words | note: ranch, vinaigrette, caesar, thousand island, honey mustard, green goddess
+A 753 ranch [dressing] (common, rec 2, in 3 themes)
+  B 53246 bacon ranch (common, rec 2, in 1 themes)
+A 770 vinaigrette (common, rec 3, in 3 themes)
+  B 53239 lemon vinaigrette (common, rec 2, in 1 themes)
+  B 53248 raspberry vinaigrette (common, rec 3, in 1 themes)
+A 64762 Italian (common, rec 2, in 1 themes)
+  B 59621 Zesty Italian (org, rec 3, brand, in 1 themes)
+
+T dips | dips | 33 words | note: hummus, guacamole, salsa, tzatziki, baba ganoush, queso, raita
+A 18801 queso (common, rec 2, in 1 themes)
+  B 18817 chili con queso (common, rec 3, in 1 themes)
+A 18802 cheese (common, rec 1, in 1 themes)
+  B 18808 nacho cheese (common, rec 2, in 2 themes)
+  B 18810 cheese fondue (common, rec 2, in 1 themes)
+  B 64766 blue cheese (common, rec 2, in 1 themes)
+A 18804 onion (common, rec 2, in 1 themes)
+  B 64768 French onion (common, rec 2, in 1 themes)
+
+T spreads | spreads | 34 words | note: jam, marmalade, peanut butter, Nutella, Marmite, Vegemite, lemon curd, pâté
+A 516 butter (common, rec 1, in 12 themes)
+  B 18829 peanut butter (common, rec 1, in 6 themes)
+  B 18832 almond butter (common, rec 2, in 1 themes)
+  B 18840 cashew butter (common, rec 3, in 1 themes)
+  B 18841 apple butter (common, rec 3, in 1 themes)
+  B 18842 cookie butter (common, rec 3, in 1 themes)
+A 18833 cheese (common, rec 2, in 1 themes)
+  B 530 cream cheese (common, rec 2, in 3 themes)
+
+T oils_and_vinegars | oils and vinegars | 45 words | note: olive, sesame, canola, coconut, balsamic, malt, cider, rice vinegar
+A 351 coconut [fruit] (common, rec 1, in 14 themes)
+  B 18913 coconut vinegar (common, rec 5, in 1 themes)
+A 18907 rice (common, rec 3, in 1 themes)
+  B 62963 rice bran (common, rec 4, in 1 themes)
+A 63522 white [clear kitchen liquid] (common, rec 2, in 1 themes)
+  B 19646 white wine (common, rec 1, in 1 themes)
+
+T soups | soups | 40 words
+A 18921 noodle (common, rec 1, in 1 themes)
+  B 62965 chicken noodle (common, rec 2, in 1 themes)
+A 18924 broth (common, rec 1, in 1 themes)
+  B 18937 scotch broth (common, rec 4, in 1 themes)
+A 18926 chowder (common, rec 2, in 3 themes)
+  B 17828 clam chowder (common, rec 2, in 3 themes)
+A 18934 bisque [soup] (common, rec 3, in 3 themes)
+  B 17847 lobster bisque (common, rec 3, in 2 themes)
+
+T stews | stews | 42 words | note: goulash, chili, cassoulet, tagine, gumbo, bourguignon, stroganoff, hotpot
+A 855 chili [dish] (common, rec 2, in 5 themes)
+  B 18953 chili con carne (common, rec 2, in 1 themes)
+A 18948 beef (common, rec 1, in 1 themes)
+  B 18954 beef bourguignon (common, rec 3, in 2 themes)
+  B 18956 beef stroganoff (common, rec 3, in 3 themes)
+A 18949 chicken (common, rec 1, in 1 themes)
+  B 18959 chicken cacciatore (common, rec 3, in 1 themes)
+
+T sandwiches | sandwiches | 42 words
+A 19026 finger (common, rec 3, in 1 themes)
+  B 19042 fish finger (common, rec 4, in 1 themes)
+
+T fast_food | fast food | 40 words
+A 802 burrito (common, rec 1, in 7 themes)
+  B 19070 breakfast burrito (common, rec 3, in 1 themes)
+A 18012 cheeseburger (common, rec 1, in 3 themes)
+  B 19061 double cheeseburger (common, rec 2, in 1 themes)
+
+T breakfast_foods | breakfast foods | 57 words
+A 464 sausage (common, rec 1, in 7 themes)
+  B 17749 blood sausage (common, rec 3, in 2 themes)
+  B 59625 lorne sausage (common, rec 5, in 2 themes)
+A 558 muffin (common, rec 1, in 5 themes)
+  B 18061 English muffin (common, rec 2, in 3 themes)
+A 565 toast [bread] (common, rec 1, in 7 themes)
+  B 832 French toast (proper, rec 2, in 3 themes)
+  B 19080 avocado toast (common, rec 2, in 1 themes)
+A 16678 eggs [food] (common, rec 1, in 4 themes)
+  B 17981 scrambled eggs (common, rec 1, in 1 themes)
+  B 17985 eggs benedict (common, rec 2, in 2 themes)
+  B 19088 steak and eggs (common, rec 3, in 1 themes)
+
+T british_morning_foods | british morning foods | 14 words
+A 464 sausage (common, rec 1, in 7 themes)
+  B 59625 lorne sausage (common, rec 5, in 2 themes)
+
+T snacks | snacks | 40 words
+A 19094 crackers (common, rec 1, in 6 themes)
+  B 16775 rice crackers (common, rec 2, in 2 themes)
+  B 19109 prawn crackers (common, rec 3, in 2 themes)
+
+T chip_flavors | chip flavors | 39 words
+A 152 chicken [bird] (common, rec 1, in 7 themes)
+  B 17725 roast chicken (common, rec 1, in 2 themes)
+A 526 sour cream (common, rec 2, in 8 themes)
+  B 53251 sour cream and onion (common, rec 1, in 1 themes)
+A 39179 cajun [cuisine] (common, rec 3, in 2 themes)
+  B 59627 Cajun squirrel (common, rec 5, in 1 themes)
+
+T street_food | street food | 48 words
+A 813 kebab (common, rec 1, in 12 themes)
+  B 19124 doner kebab (common, rec 3, in 2 themes)
+
+T potato_dishes | potato dishes | 41 words | note: fries, mashed, hash browns, gratin, rosti, latkes, tater tots, gnocchi
+A 65145 baked [oven roasted whole] (common, rec 2, in 1 themes)
+  B 19157 twice baked (common, rec 3, in 1 themes)
+
+T savory_pies | savory pies | 35 words | note: shepherd's pie, pot pie, pork pie, quiche, pasty, empanada, tourtière, börek
+A 19174 pot pie (common, rec 2, in 2 themes)
+  B 19173 chicken pot pie (common, rec 2, in 1 themes)
+A 19178 steak (common, rec 2, in 1 themes)
+  B 62978 steak and kidney (common, rec 3, in 1 themes)
+A 19179 pasty [pie] (common, rec 3, in 1 themes)
+  B 19180 Cornish pasty (proper, rec 3, in 2 themes)
+
+T pizza_styles | pizza styles | 40 words | note: margherita, pepperoni, hawaiian, neapolitan, deep-dish, calzone, diavola
+A 64773 cheese (common, rec 1, in 1 themes)
+  B 19219 four cheese (common, rec 2, in 1 themes)
+
+T pizza_toppings | pizza toppings | 41 words
+A 110 tomato [fruit] (common, rec 1, in 17 themes)
+  B 19249 sun-dried tomato (common, rec 3, in 1 themes)
+A 393 onion [bulb vegetable] (common, rec 1, in 7 themes)
+  B 17562 red onion (common, rec 1, in 1 themes)
+
+T pancakes_of_the_world | pancakes of the world | 41 words
+A 19117 crepe [pancake] (common, rec 2, in 3 themes)
+  B 19269 mille crepe (common, rec 4, in 1 themes)
+
+T burger_toppings | burger toppings | 40 words
+A 393 onion [bulb vegetable] (common, rec 1, in 7 themes)
+  B 19287 grilled onion (common, rec 2, in 1 themes)
+  B 19289 onion ring (common, rec 2, in 1 themes)
+  B 19291 caramelized onion (common, rec 3, in 1 themes)
+A 515 cheese [dairy food] (common, rec 1, in 12 themes)
+  B 17920 swiss cheese [cheese] (common, rec 1, in 4 themes)
+  B 17929 blue cheese [cheese] (common, rec 1, in 4 themes)
+  B 17942 american cheese (common, rec 1, in 1 themes)
+
+T italian_food | italian food | 51 words
+A 655 spaghetti [long pasta] (common, rec 1, in 8 themes)
+  B 18517 spaghetti carbonara (common, rec 2, in 3 themes)
+
+T pasta_meals | pasta meals | 14 words
+A 655 spaghetti [long pasta] (common, rec 1, in 8 themes)
+  B 18517 spaghetti carbonara (common, rec 2, in 3 themes)
+A 18516 carbonara (common, rec 2, in 3 themes)
+  B 18517 spaghetti carbonara (common, rec 2, in 3 themes)
+
+T british_food | british food | 57 words | note: fish and chips, sunday roast, toad in the hole, scotch egg, crumpets
+A 53303 scones (common, rec 2, in 2 themes)
+  B 59650 tattie scones (common, rec 4, in 2 themes)
+
+T turkish_food | turkish food | 40 words
+A 813 kebab (common, rec 1, in 12 themes)
+  B 17876 shish kebab (common, rec 3, in 4 themes)
+  B 19124 doner kebab (common, rec 3, in 2 themes)
+  B 19304 adana kebab (common, rec 4, in 1 themes)
+
+T turkish_breakfast | turkish breakfast | 33 words | note: simit, menemen, sucuk, beyaz peynir, kaymak, gözleme, çay
+A 19315 kaymak (common, rec 5, in 2 themes)
+  B 53373 bal kaymak (common, rec 5, in 1 themes)
+
+T kebab_types | kebab types | 34 words | note: adana, urfa, iskender, döner, şiş, beyti, cağ kebab
+A 813 kebab (common, rec 1, in 12 themes)
+  B 53386 patlıcan kebab (common, rec 5, in 1 themes)
+  B 53387 testi kebab (common, rec 5, in 1 themes)
+  B 59695 kağıt kebabı (common, rec 5, in 1 themes)
+  B 59698 yoğurtlu kebab (common, rec 4, in 1 themes)
+  B 59699 tas kebabı (common, rec 5, in 1 themes)
+  B 59700 orman kebabı (common, rec 5, in 1 themes)
+  B 59701 kuyu kebabı (common, rec 5, in 1 themes)
+
+T meze | meze | 36 words | note: small shared plates: hummus, tabbouleh, dolma, muhammara, falafel
+A 19297 dolma (common, rec 3, in 6 themes)
+  B 59704 midye dolma (common, rec 5, in 1 themes)
+  B 59709 yalancı dolma (common, rec 5, in 1 themes)
+
+T persian_food | persian food | 42 words | note: tahdig, ghormeh sabzi, fesenjan, koobideh, ash reshteh
+A 59712 kashk (common, rec 5, in 1 themes)
+  B 53419 kashk-e bademjan (common, rec 5, in 1 themes)
+
+T west_african_food | west african food | 43 words | note: jollof rice, fufu, egusi, suya, banku, puff-puff, moi moi
+A 369 plantain [fruit] (common, rec 3, in 6 themes)
+  B 53467 fried plantain (common, rec 3, in 1 themes)
+
+T east_african_food | east african food | 43 words | note: injera, ugali, nyama choma, sukuma wiki, mandazi, kitfo
+A 18064 injera (common, rec 4, in 7 themes)
+  B 53490 injera firfir (common, rec 5, in 1 themes)
+
+T asian_food | asian food | 52 words
+A 19371 tofu (common, rec 1, in 6 themes)
+  B 19377 mapo tofu (common, rec 3, in 4 themes)
+
+T indian_food | indian food | 57 words
+A 254 paneer (common, rec 3, in 4 themes)
+  B 53512 saag paneer (common, rec 3, in 2 themes)
+A 19381 dal (common, rec 3, in 3 themes)
+  B 53522 tadka dal (common, rec 4, in 1 themes)
+  B 59775 dal baati churma (common, rec 5, in 1 themes)
+A 53513 bhaji (common, rec 3, in 2 themes)
+  B 53516 pav bhaji (common, rec 4, in 2 themes)
+
+T street_snacks | indian street snacks | 9 words
+A 53513 bhaji (common, rec 3, in 2 themes)
+  B 53516 pav bhaji (common, rec 4, in 2 themes)
+
+T japanese_sweets | japanese sweets | 22 words
+A 18665 dango (common, rec 4, in 4 themes)
+  B 53557 mitarashi dango (common, rec 5, in 1 themes)
+
+T sushi_types | sushi types | 29 words | note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari
+A 53559 nigiri (common, rec 3, in 1 themes)
+  B 59792 tamago nigiri (common, rec 3, in 1 themes)
+A 53560 maki (common, rec 3, in 2 themes)
+  B 53575 tekka maki (common, rec 5, in 1 themes)
+  B 59788 kappa maki (common, rec 3, in 1 themes)
+A 64778 roll (common, rec 1, in 1 themes)
+  B 19448 california roll (common, rec 2, in 2 themes)
+  B 53565 hand roll (common, rec 3, in 1 themes)
+  B 53571 spicy tuna roll (common, rec 2, in 1 themes)
+  B 53572 dragon roll (common, rec 3, in 1 themes)
+  B 53573 rainbow roll (common, rec 3, in 1 themes)
+  B 53574 philadelphia roll (common, rec 3, in 1 themes)
+
+T korean_food | korean food | 27 words | note: kimchi, bibimbap, bulgogi, tteokbokki, japchae, kimbap
+A 845 kimchi (common, rec 3, in 14 themes)
+  B 53582 kimchi jjigae (common, rec 5, in 2 themes)
+
+T thai_food | thai food | 29 words
+A 18577 sticky rice (common, rec 2, in 2 themes)
+  B 53599 mango sticky rice (common, rec 3, in 1 themes)
+
+T filipino_food | filipino food | 28 words | note: adobo, sinigang, lechon, lumpia, pancit, sisig, kare-kare
+A 18301 ube (common, rec 5, in 3 themes)
+  B 53631 ube halaya (common, rec 5, in 1 themes)
+
+T south_american_drinks | south american drinks | 21 words | note: non-alcoholic: mate, chicha morada, Inca Kola, guaraná
+A 17668 chicha (common, rec 5, in 2 themes)
+  B 53677 chicha morada (common, rec 5, in 2 themes)
+A 19416 mate [drink] (common, rec 3, in 4 themes)
+  B 907 yerba mate (common, rec 4, in 4 themes)
+  B 53727 mate de coca (common, rec 5, in 1 themes)
+A 53691 guaraná (common, rec 3, in 2 themes)
+  B 53716 Guaraná Antarctica (org, rec 4, brand, in 1 themes)
+
+T southern_food | southern food | 43 words | note: US South: grits, fried chicken, hush puppies, collard greens, biscuits
+A 692 grits (common, rec 3, in 3 themes)
+  B 17855 shrimp and grits (common, rec 4, in 2 themes)
+
+T drinks | drinks | 61 words
+A 225 tea [drink] (common, rec 1, in 18 themes)
+  B 866 iced tea (common, rec 1, in 1 themes)
+A 861 water [liquid] (common, rec 1, in 16 themes)
+  B 879 sparkling water (common, rec 1, in 2 themes)
+  B 882 mineral water (common, rec 2, in 1 themes)
+  B 883 tonic water (common, rec 2, in 4 themes)
+  B 885 coconut water (common, rec 2, in 2 themes)
+A 865 cola (common, rec 1, in 4 themes)
+  B 871 Coca-Cola (org, rec 1, brand, in 3 themes)
+A 874 beer (common, rec 1, in 6 themes)
+  B 888 root beer (common, rec 2, in 4 themes)
+
+T hot_drinks | hot drinks | 54 words
+A 225 tea [drink] (common, rec 1, in 18 themes)
+  B 15564 herbal tea (common, rec 1, in 3 themes)
+  B 16741 green tea (common, rec 1, in 7 themes)
+  B 19461 peppermint tea (common, rec 1, in 1 themes)
+  B 19481 butter tea (common, rec 4, in 1 themes)
+A 226 coffee [drink] (common, rec 1, in 27 themes)
+  B 19296 turkish coffee (common, rec 2, in 3 themes)
+  B 19462 instant coffee (common, rec 1, in 1 themes)
+  B 19465 filter coffee (common, rec 2, in 1 themes)
+  B 19466 drip coffee (common, rec 2, in 1 themes)
+  B 19469 irish coffee (common, rec 2, in 2 themes)
+A 229 latte (common, rec 1, in 3 themes)
+  B 19464 chai latte (common, rec 2, in 1 themes)
+A 233 chai (common, rec 2, in 5 themes)
+  B 19464 chai latte (common, rec 2, in 1 themes)
+A 514 milk [drink] (common, rec 1, in 8 themes)
+  B 19482 golden milk (common, rec 4, in 1 themes)
+A 19467 cider (common, rec 2, in 1 themes)
+  B 19470 mulled cider (common, rec 3, in 1 themes)
+
+T teas | teas | 42 words
+A 233 chai (common, rec 2, in 5 themes)
+  B 19508 masala chai (common, rec 3, in 2 themes)
+
+T coffee_drinks | coffee drinks | 30 words
+A 64779 black [drink] (common, rec 1, in 1 themes)
+  B 19480 long black (common, rec 4, in 2 themes)
+
+T coffee_words | coffee words | 44 words | note: bean, roast, grind, barista, crema, arabica, robusta, decaf, moka pot
+A 53778 grinder [coffee] (common, rec 2, in 1 themes)
+  B 53784 burr grinder (common, rec 4, in 1 themes)
+
+T soft_drinks | soft drinks | 31 words
+A 865 cola (common, rec 1, in 4 themes)
+  B 871 Coca-Cola (org, rec 1, brand, in 3 themes)
+  B 19534 diet cola (common, rec 1, in 1 themes)
+  B 19536 cherry cola (common, rec 2, in 1 themes)
+
+T soda_flavors | soda flavors | 36 words
+A 75 lime [fruit] (common, rec 1, in 9 themes)
+  B 53790 lemon-lime (common, rec 1, in 1 themes)
+A 76 orange [fruit] (common, rec 1, in 9 themes)
+  B 17160 blood orange (common, rec 2, in 2 themes)
+A 92 cherry [fruit] (common, rec 1, in 12 themes)
+  B 17236 black cherry (common, rec 3, in 3 themes)
+
+T juices | juices | 31 words
+A 87 apple [fruit] (common, rec 1, in 8 themes)
+  B 19571 apple cider (common, rec 3, in 2 themes)
+
+T asian_drinks | asian drinks | 32 words | note: non-alcoholic: bubble tea, matcha, lassi, chai, thai iced tea, teh tarik
+A 233 chai (common, rec 2, in 5 themes)
+  B 19508 masala chai (common, rec 3, in 2 themes)
+A 899 lassi (common, rec 3, in 5 themes)
+  B 19587 mango lassi (common, rec 3, in 1 themes)
+A 19501 milk tea (common, rec 2, in 1 themes)
+  B 19597 Hong Kong milk tea (common, rec 4, in 1 themes)
+
+T cocktails | cocktails | 41 words
+A 19607 martini (common, rec 1, in 1 themes)
+  B 19621 espresso martini (common, rec 2, in 1 themes)
+
+T beers | beers | 43 words
+A 19685 ale [beer] (common, rec 2, in 3 themes)
+  B 19688 pale ale (common, rec 2, in 1 themes)
+  B 19703 amber ale (common, rec 3, in 1 themes)
+  B 19704 brown ale (common, rec 3, in 1 themes)
+  B 19707 real ale (common, rec 3, in 1 themes)
+
+T spirits | spirits | 43 words
+A 878 rum [drink] (common, rec 1, in 5 themes)
+  B 19736 white rum (common, rec 2, in 1 themes)
+  B 19737 dark rum (common, rec 2, in 1 themes)
+  B 19738 spiced rum (common, rec 2, in 1 themes)
+A 891 whisky (common, rec 2, in 6 themes)
+  B 19730 Scotch whisky (common, rec 2, in 1 themes)
+
+T cooking | cooking | 49 words
+A 916 chef [cook] (common, rec 1, in 8 themes)
+  B 944 sous chef (common, rec 3, in 5 themes)
+
+T cooking_methods | cooking methods | 36 words
+A 919 fry [cook] (common, rec 1, in 3 themes)
+  B 19768 stir-fry [cook] (common, rec 2, in 1 themes)
+  B 19769 deep-fry (common, rec 2, in 1 themes)
+  B 19770 pan-fry (common, rec 2, in 1 themes)
+  B 19773 air fry (common, rec 2, in 1 themes)
+A 920 roast [cooking] (common, rec 1, in 2 themes)
+  B 19780 pot roast [cook] (common, rec 3, in 1 themes)
+  B 19782 spit-roast (common, rec 4, in 1 themes)
+
+T cookware | cookware | 35 words
+A 19810 pot [cookware] (common, rec 1, in 1 themes)
+  B 4751 Crock-Pot [slow cooker] (org, rec 3, brand, in 8 themes)
+  B 4753 Instant Pot [electric multicooker] (org, rec 3, brand, in 3 themes)
+
+T kitchen_utensils | kitchen utensils | 47 words
+A 19839 spatula (common, rec 1, in 6 themes)
+  B 19881 offset spatula (common, rec 5, in 1 themes)
+
+T ways_to_preserve_food | ways to preserve food | 27 words | note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting
+A 19885 salt [preserve] (common, rec 1, in 1 themes)
+  B 19901 salt-cure (common, rec 3, in 1 themes)
+A 19888 freeze [preserve] (common, rec 1, in 2 themes)
+  B 19897 freeze-dry (common, rec 3, in 1 themes)
+A 19889 dry [food] (common, rec 1, in 3 themes)
+  B 19896 sun-dry (common, rec 3, in 1 themes)
+  B 19897 freeze-dry (common, rec 3, in 1 themes)
+  B 19900 air-dry (common, rec 3, in 1 themes)
+  B 19903 dry-age (common, rec 4, in 1 themes)
+A 19890 cure [food] (common, rec 3, in 1 themes)
+  B 19901 salt-cure (common, rec 3, in 1 themes)
+A 19891 ferment (common, rec 3, in 1 themes)
+  B 19907 lacto-ferment (common, rec 5, in 1 themes)
+
+T in_the_pantry | in the pantry | 45 words
+A 563 flour (common, rec 1, in 6 themes)
+  B 18223 self-rising flour (common, rec 2, in 1 themes)
+
+T lunchbox | lunchbox | 42 words
+A 796 sandwich (common, rec 1, in 10 themes)
+  B 19010 ham sandwich (common, rec 1, in 1 themes)
+  B 19925 sandwich bag (common, rec 2, in 1 themes)
+
+T recipe_amounts | recipe amounts | 33 words
+A 41762 ounce [unit] (common, rec 1, in 3 themes)
+  B 19967 fluid ounce (common, rec 3, in 3 themes)
+
+T restaurant_words | restaurant words | 38 words
+A 20017 table [restaurant] (common, rec 1, in 1 themes)
+  B 20041 table d'hôte (phrase, rec 5, in 1 themes)
+A 26281 menu [restaurant] (common, rec 1, in 5 themes)
+  B 20022 kids menu (common, rec 2, in 1 themes)
+  B 20031 tasting menu (common, rec 3, in 2 themes)
+
+T kitchen_brigade | kitchen brigade | 33 words | note: restaurant kitchen roles: head chef, sous chef, pastry chef, line cook, commis
+A 20058 commis [chef] (common, rec 4, in 3 themes)
+  B 20059 commis chef (common, rec 4, in 1 themes)
+
+T courses_of_a_meal | courses of a meal | 30 words | note: appetizer, starter, entrée, main, side, dessert, amuse-bouche, digestif
+A 20083 dessert [sweet course] (common, rec 1, in 2 themes)
+  B 20107 pre-dessert (common, rec 5, in 1 themes)
+
+T meals_of_the_day | meals of the day | 25 words | note: breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea
+A 20109 breakfast (common, rec 1, in 2 themes)
+  B 20126 second breakfast (common, rec 4, in 1 themes)
+A 20115 snack [meal] (common, rec 1, in 1 themes)
+  B 20118 midnight snack (common, rec 2, in 1 themes)
+A 20117 tea [meal] (common, rec 2, in 1 themes)
+  B 20116 afternoon tea (common, rec 2, in 1 themes)
+  B 20120 high tea (common, rec 3, in 1 themes)
+  B 20121 cream tea (common, rec 3, in 2 themes)
+  B 20124 tea time (common, rec 2, in 1 themes)
+  B 20125 morning tea (common, rec 3, in 1 themes)
+
+T table_setting | table setting | 39 words | note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring
+A 19926 napkin (common, rec 2, in 10 themes)
+  B 20158 napkin ring (common, rec 3, in 2 themes)
+A 20135 knife [cutlery] (common, rec 1, in 10 themes)
+  B 20154 butter knife (common, rec 3, in 2 themes)
+  B 20155 steak knife (common, rec 3, in 3 themes)
+  B 20165 fish knife (common, rec 4, in 3 themes)
+  B 20170 knife rest (common, rec 5, in 1 themes)
+A 20136 spoon [cutlery] (common, rec 1, in 5 themes)
+  B 20143 soup spoon (common, rec 2, in 2 themes)
+  B 20153 dessert spoon (common, rec 3, in 2 themes)
+A 20137 plate [dinner dish] (common, rec 1, in 8 themes)
+  B 20156 bread plate (common, rec 3, in 1 themes)
+  B 20157 salad plate (common, rec 3, in 2 themes)
+A 20138 bowl [dish] (common, rec 1, in 4 themes)
+  B 20167 finger bowl (common, rec 4, in 2 themes)
+A 20139 glass [drinking] (common, rec 1, in 2 themes)
+  B 20141 wine glass (common, rec 2, in 4 themes)
+  B 20142 water glass (common, rec 2, in 2 themes)
+A 40192 fork [cutlery] (common, rec 1, in 4 themes)
+  B 20151 dinner fork (common, rec 3, in 2 themes)
+  B 20152 salad fork (common, rec 3, in 2 themes)
+  B 20166 cake fork (common, rec 4, in 2 themes)
+  B 20169 oyster fork (common, rec 5, in 2 themes)
+
+T diner | diner | 37 words
+A 524 milkshake (common, rec 1, in 7 themes)
+  B 20183 malted milkshake (common, rec 4, in 1 themes)
+
+T ice_cream_parlor | ice cream parlor | 39 words
+A 20198 cone [ice cream] (common, rec 1, in 1 themes)
+  B 20201 waffle cone (common, rec 2, in 1 themes)
+  B 20203 sugar cone (common, rec 3, in 1 themes)
+
+T foods_on_a_stick | foods on a stick | 31 words | note: kebab, corn dog, lollipop, popsicle, satay, candy apple, yakitori
+A 813 kebab (common, rec 1, in 12 themes)
+  B 17876 shish kebab (common, rec 3, in 4 themes)
+  B 20249 fruit kebab (common, rec 3, in 1 themes)
+
+T foods_with_shells | foods with shells | 39 words | note: eaten from or with a shell: egg, pistachio, crab, oyster, coconut, peanut
+A 478 clam (common, rec 2, in 8 themes)
+  B 8881 razor clam (common, rec 3, in 5 themes)
+A 518 egg [food from hens] (common, rec 1, in 14 themes)
+  B 20263 duck egg [egg] (common, rec 2, in 2 themes)
+  B 20264 quail egg (common, rec 3, in 3 themes)
+
+T foods_named_after_people | foods named after people | 47 words | note: name comes from a person: beef wellington, eggs benedict, pavlova, nachos
+A 796 sandwich (common, rec 1, in 10 themes)
+  B 20268 Reuben sandwich (common, rec 3, in 1 themes)
+
+T foods_you_peel | foods you peel | 54 words
+A 76 orange [fruit] (common, rec 1, in 9 themes)
+  B 17177 mandarin orange (common, rec 2, in 2 themes)
+A 79 mandarin [fruit] (common, rec 2, in 11 themes)
+  B 17177 mandarin orange (common, rec 2, in 2 themes)
+A 392 potato [vegetable] (common, rec 1, in 12 themes)
+  B 402 sweet potato [vegetable] (common, rec 1, in 8 themes)
+
+T canned_foods | canned foods | 45 words
+A 406 corn [vegetable] (common, rec 1, in 8 themes)
+  B 20312 creamed corn (common, rec 3, in 1 themes)
+A 17785 corned beef (common, rec 2, in 4 themes)
+  B 20319 corned beef hash (common, rec 4, in 1 themes)
+
+T mammals | mammals | 81 words
+A 994 bear [animal] (common, rec 1, in 9 themes)
+  B 999 koala bear (common, rec 2, in 3 themes)
+A 1018 anteater (common, rec 2, in 4 themes)
+  B 9909 spiny anteater (common, rec 4, in 7 themes)
+
+T big_cats | big cats | 33 words
+A 215 lion (common, rec 1, in 13 themes)
+  B 222 mountain lion (common, rec 3, in 3 themes)
+  B 7754 African lion (proper, rec 2, in 1 themes)
+  B 7755 Asiatic lion (proper, rec 4, in 3 themes)
+  B 7760 Barbary lion (proper, rec 5, in 2 themes)
+  B 7761 white lion (common, rec 3, in 1 themes)
+A 216 tiger [animal] (common, rec 1, in 9 themes)
+  B 7750 Bengal tiger (proper, rec 2, in 4 themes)
+  B 7751 Siberian tiger (proper, rec 2, in 4 themes)
+  B 7752 Amur tiger (proper, rec 4, in 4 themes)
+  B 7753 white tiger (common, rec 2, in 1 themes)
+  B 7759 Sumatran tiger (proper, rec 3, in 2 themes)
+  B 7768 Indochinese tiger (proper, rec 5, in 1 themes)
+  B 7769 Malayan tiger (proper, rec 4, in 2 themes)
+A 217 leopard [big cat] (common, rec 1, in 8 themes)
+  B 223 snow leopard (common, rec 2, in 8 themes)
+  B 224 clouded leopard (common, rec 4, in 4 themes)
+  B 7764 Persian leopard (proper, rec 5, in 1 themes)
+  B 7765 Sunda clouded leopard (proper, rec 5, in 1 themes)
+  B 7770 Amur leopard (proper, rec 4, in 2 themes)
+A 224 clouded leopard (common, rec 4, in 4 themes)
+  B 7765 Sunda clouded leopard (proper, rec 5, in 1 themes)
+A 7749 panther [animal] (common, rec 2, in 4 themes)
+  B 7748 black panther [cat] (common, rec 2, in 1 themes)
+
+T small_wild_cats | small wild cats | 33 words
+A 1039 lynx [cat] (common, rec 3, in 8 themes)
+  B 7782 Eurasian lynx (proper, rec 4, in 1 themes)
+  B 7783 Canada lynx (proper, rec 3, in 1 themes)
+  B 7784 Iberian lynx (proper, rec 4, in 3 themes)
+A 7771 wildcat (common, rec 2, in 4 themes)
+  B 7797 European wildcat (proper, rec 4, in 1 themes)
+  B 7798 Scottish wildcat (proper, rec 4, in 1 themes)
+  B 7799 African wildcat (proper, rec 4, in 1 themes)
+A 7793 bay cat (common, rec 5, in 1 themes)
+  B 7801 Bornean bay cat (proper, rec 5, in 1 themes)
+
+T primates | primates | 41 words
+A 982 monkey [animal] (common, rec 1, in 7 themes)
+  B 7811 howler monkey (common, rec 3, in 6 themes)
+  B 7812 spider monkey (common, rec 2, in 3 themes)
+  B 7813 squirrel monkey (common, rec 3, in 2 themes)
+  B 7814 rhesus monkey (common, rec 3, in 1 themes)
+  B 7815 proboscis monkey (common, rec 4, in 4 themes)
+A 983 gorilla (common, rec 1, in 8 themes)
+  B 7823 mountain gorilla (common, rec 3, in 2 themes)
+A 1022 lemur (common, rec 2, in 6 themes)
+  B 7829 ring-tailed lemur (common, rec 3, in 3 themes)
+A 7804 ape [animal] (common, rec 1, in 1 themes)
+  B 7832 Barbary ape (proper, rec 4, in 3 themes)
+A 7806 macaque (common, rec 3, in 4 themes)
+  B 7831 Barbary macaque (proper, rec 4, in 3 themes)
+A 7809 tamarin (common, rec 4, in 5 themes)
+  B 7830 golden lion tamarin (common, rec 5, in 4 themes)
+A 7818 loris (common, rec 4, in 2 themes)
+  B 7819 slow loris (common, rec 4, in 5 themes)
+
+T monkeys | monkeys | 44 words
+A 982 monkey [animal] (common, rec 1, in 7 themes)
+  B 50488 snub-nosed monkey (common, rec 4, in 1 themes)
+  B 50493 woolly monkey (common, rec 4, in 1 themes)
+A 7806 macaque (common, rec 3, in 4 themes)
+  B 7831 Barbary macaque (proper, rec 4, in 3 themes)
+  B 50494 Japanese macaque (proper, rec 3, in 1 themes)
+  B 51129 bonnet macaque (common, rec 5, in 2 themes)
+  B 51131 lion-tailed macaque (common, rec 5, in 2 themes)
+  B 51180 pig-tailed macaque (common, rec 5, in 2 themes)
+A 7808 marmoset (common, rec 3, in 4 themes)
+  B 9790 pygmy marmoset (common, rec 4, in 2 themes)
+A 7809 tamarin (common, rec 4, in 5 themes)
+  B 7830 golden lion tamarin (common, rec 5, in 4 themes)
+  B 50497 emperor tamarin (common, rec 5, in 1 themes)
+  B 59905 cotton-top tamarin (common, rec 4, in 1 themes)
+A 7817 langur (common, rec 4, in 4 themes)
+  B 51133 hanuman langur (common, rec 5, in 2 themes)
+  B 59903 douc langur (common, rec 5, in 1 themes)

@@ -1,0 +1,54 @@
+GROUP industrial_revolution 2850 2854
+GROUP renaissance 22859 22957
+GROUP cowboy_gear 9569 55212
+GROUP cowboy_gear 21315 55212
+# flask kinds are enough for their own theme
+SUB lab_glassware | flask_types | flask types | 40412 40415 40419 57976 57979 57980 57982
+GROUP acids_and_bases 28326 40488
+MERGE chemical_compounds 712 40529
+# six quark flavours
+SUB particle_physics | quark_flavours | quark flavours | 40793 40794 40795 40796 40797 40798
+# named nebulae
+SUB galaxies_and_nebulae | named_nebulae | named nebulae | 41203 41206 41386 41387 41390 41397 41399 41400 41401 41402 41403 41404 41405 41406
+MERGE fractions 41578 41589
+MERGE math_operations 41607 26137
+MERGE math_operations 41608 26139
+MERGE math_operations 41603 41628
+MERGE measurement 7210 7212
+GROUP measurement 7247 7237
+MERGE famous_naturalists 41018 40887
+MERGE chemists 41951 41950
+MERGE medical_pioneers 41933 41932
+MERGE french_mathematicians 41990 41989
+MERGE french_mathematicians 41995 41994
+MERGE french_mathematicians 42012 42011
+MERGE german_mathematicians 41993 41992
+MERGE literature_prize_winners 61993 12523
+MERGE physics_prize_winners 41928 41927
+MERGE physics_prize_winners 58210 41947
+MERGE physics_prize_winners 58211 41935
+MERGE physics_prize_winners 58212 41936
+MERGE physics_prize_winners 58213 41962
+MERGE household_gadgets 4735 4734
+GROUP handheld_gadgets 7337 49364
+GROUP networking 42480 42468
+GROUP internet_protocols 42480 42468
+MERGE computer_storage 42241 49359
+MERGE display_tech 49558 49593
+GROUP display_tech 49559 49592
+MERGE energy_sources 49749 32228
+MERGE energy_sources 49750 49756
+MERGE energy_sources 49752 32231
+MERGE renewable_sources 49749 32228
+MERGE renewable_sources 49750 49756
+MERGE renewable_sources 49752 32231
+# steel kinds are enough for their own theme
+SUB alloys | steel_grades | steel grades | 31734 58376 58377 58378 58379
+# bridge cable kinds
+SUB bridge_parts | bridge_cable_types | bridge cable types | 49869 49873 49882 49883
+GROUP languages 7540 59438
+GROUP celtic_languages 7540 25816
+GROUP celtic_languages 7540 59438
+GROUP celtic_languages 7540 59441
+GROUP slavic_languages 25814 55890
+GROUP languages_of_china 7519 62320

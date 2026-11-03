@@ -1,0 +1,461 @@
+# Overlap sweep
+
+{"MERGE":227,"BRAND":8,"GROUP":144,"SUB":61,"bad":4,"orphanedToAlias":122}
+
+## Sub-themes
+- **cherry varieties** under stone_fruits (5): sour cherry, morello cherry, bing cherry, rainier cherry, black cherry
+- **plum varieties** under stone_fruits (4): cherry plum, victoria plum, santa rosa plum, yellow plum
+- **orange varieties** under citrus_fruits (4): blood orange, navel orange, seville orange, valencia orange
+- **lime varieties** under citrus_fruits (4): key lime, finger lime, kaffir lime, sweet lime
+- **lettuce varieties** under leafy_greens (4): iceberg lettuce, lamb's lettuce, butterhead lettuce, oak leaf lettuce
+- **onion varieties** under onion_family (5): welsh onion, egyptian onion, walking onion, torpedo onion, tree onion
+- **sugar types** under sweeteners (8): brown sugar, caster sugar, cane sugar, raw sugar, coconut sugar, demerara sugar, palm sugar, invert sugar
+- **fork types** under table_setting (4): dinner fork, salad fork, cake fork, oyster fork
+- **ale types** under beers (4): pale ale, amber ale, brown ale, real ale
+- **tiger subspecies** under big_cats (6): Bengal tiger, Siberian tiger, Amur tiger, Sumatran tiger, Indochinese tiger, Malayan tiger
+- **macaque species** under monkeys (5): Barbary macaque, Japanese macaque, bonnet macaque, lion-tailed macaque, pig-tailed macaque
+- **penguin species** under flightless_birds (14): emperor penguin, king penguin, Adelie penguin, chinstrap penguin, gentoo penguin, macaroni penguin, rockhopper penguin, little penguin, fairy penguin, African penguin, Galapagos penguin, Magellanic penguin, yellow-eyed penguin, Humboldt penguin
+- **whale types** under sea_mammals (12): killer whale, blue whale, humpback whale, sperm whale, minke whale, fin whale, gray whale, right whale, bowhead whale, pilot whale, sei whale, beaked whale
+- **crab types** under crustaceans (10): hermit crab, spider crab, king crab, blue crab, fiddler crab, horseshoe crab, dungeness crab, coconut crab, snow crab, mud crab
+- **ant types** under ants_and_termites (9): red ant, black ant, white ant, flying ant, sugar ant, meat ant, garden ant, thief ant, yellow meadow ant
+- **wasp types** under bees_and_wasps (8): gall wasp, fig wasp, cuckoo wasp, digger wasp, spider wasp, pollen wasp, mason wasp, mud wasp
+- **squid types** under cephalopods (8): giant squid, vampire squid, colossal squid, bobtail squid, firefly squid, Humboldt squid, reef squid, glass squid
+- **bear types** under hibernating_animals (7): polar bear, brown bear, grizzly bear, Kodiak bear, American black bear, black bear, cinnamon bear
+- **seal types** under sea_mammals (7): fur seal, elephant seal, harbor seal, grey seal, leopard seal, monk seal, harp seal
+- **spaniel types** under sporting_dogs (8): cocker spaniel, springer spaniel, Clumber spaniel, Sussex spaniel, field spaniel, Welsh springer spaniel, Irish water spaniel, American water spaniel
+- **pine species** under evergreen_trees (5): Chile pine, Scots pine, stone pine, lodgepole pine, ponderosa pine
+- **palm species** under tropical_trees (5): coconut palm, date palm, royal palm, talipot palm, sago palm
+- **eucalypt species** under australian_trees (4): ghost gum, river red gum, blue gum, snow gum
+- **seal species** under antarctic_coast (5): fur seal, elephant seal, leopard seal, Weddell seal, crabeater seal
+- **bear species** under taiga (6): brown bear, grizzly bear, Kodiak bear, American black bear, black bear, cinnamon bear
+- **lava forms** under volcano_words (5): lava tube, lava flow, lava lake, lava dome, pillow lava
+- **fracture types** under injuries (6): compound fracture, hairline fracture, greenstick fracture, stress fracture, Colles fracture, boxer's fracture
+- **cortex areas** under brain_parts (4): cerebral cortex, prefrontal cortex, motor cortex, visual cortex
+- **blonde shades** under hair_colors (5): strawberry blonde, platinum blonde, dirty blonde, ash blonde, peroxide blonde
+- **soap types** under toiletries_for_washing (6): bar soap, hand soap, antibacterial soap, liquid soap, castile soap, black soap
+- **developer roles** under tech_jobs (8): web developer, game developer, app developer, front-end developer, back-end developer, full-stack developer, blockchain developer, kernel developer
+- **chef roles** under food_jobs (4): sous chef, head chef, pastry chef, sushi chef
+- **minister titles** under political_titles (4): prime minister, first minister, chief minister, shadow minister
+- **glasses types** under eyewear (9): 3D glasses, reading glasses, opera glasses, prescription glasses, half-moon glasses, cat-eye glasses, round glasses, blue-light glasses, safety glasses
+- **tie types** under neckwear (6): bow tie, bolo tie, clip-on tie, skinny tie, kipper tie, school tie
+- **stitch types** under sewing_words (7): running stitch, blanket stitch, chain stitch, cross stitch, satin stitch, feather stitch, whip stitch
+- **knife types** under cutlery (7): bread knife, butter knife, steak knife, fish knife, carving knife, cheese knife, fruit knife
+- **spoon types** under cutlery (6): soup spoon, dessert spoon, serving spoon, grapefruit spoon, demitasse spoon, caviar spoon
+- **bowl types** under crockery (7): sugar bowl, soup bowl, cereal bowl, dessert bowl, pudding bowl, pasta bowl, noodle bowl
+- **drinking glass types** under drinking_vessels (8): wine glass, water glass, shot glass, pint glass, highball glass, rocks glass, martini glass, cocktail glass
+- **cup types** under drinking_vessels (5): sippy cup, paper cup, loving cup, stirrup cup, kiddush cup
+- **table types** under things_with_legs (8): coffee table, dining table, dressing table, card table, trestle table, drafting table, pool table, tea table
+- **wedge types** under golf_clubs (4): sand wedge, pitching wedge, lob wedge, gap wedge
+- **dive types** under diving_terms (4): back dive, forward dive, swan dive, pencil dive
+- **wrestling styles** under combat_sports (5): Greco-Roman wrestling, arm wrestling, catch wrestling, sumo wrestling, freestyle wrestling
+- **snowboard grabs** under snowboard_tricks (6): indy grab, mute grab, melon grab, tail grab, nose grab, crail grab
+- **climbing styles** under adventure_and_outdoor_sports (4): ice climbing, rock climbing, free solo climbing, trad climbing
+- **poker variants** under casino_games (4): video poker, three card poker, Pai Gow poker, stud poker
+- **horn types** under brass_instruments (7): French horn, baritone horn, tenor horn, alto horn, natural horn, post horn, hunting horn
+- **blues styles** under american_roots_music (6): Delta blues, Chicago blues, Piedmont blues, swamp blues, Texas blues, country blues
+- **techno styles** under electronic_music_styles (4): dub techno, minimal techno, Detroit techno, hardcore techno
+- **elf types** under fantasy_races (4): half-elf, dark elf, wood elf, high elf
+- **drama types** under tv_genres (6): crime drama, medical drama, legal drama, period drama, costume drama, teen drama
+- **flask types** under lab_glassware (7): Dewar flask, volumetric flask, Erlenmeyer flask, round-bottom flask, distillation flask, Florence flask, Schlenk flask
+- **quark flavours** under particle_physics (6): up quark, down quark, charm quark, strange quark, top quark, bottom quark
+- **named nebulae** under galaxies_and_nebulae (14): Carina Nebula, Tarantula Nebula, Orion Nebula, Crab Nebula, Horsehead Nebula, Eagle Nebula, Ring Nebula, Helix Nebula, Cat's Eye Nebula, Lagoon Nebula, Trifid Nebula, Veil Nebula, Rosette Nebula, Butterfly Nebula
+- **steel grades** under alloys (5): stainless steel, carbon steel, Damascus steel, spring steel, tool steel
+- **bridge cable types** under bridge_parts (4): suspension cable, stay cable, main cable, suspender cable
+- **ball types** under things_that_bounce (9): ping pong ball, rubber ball, super ball, tennis ball, beach ball, bouncy ball, exercise ball, squash ball, cricket ball
+- **clause types** under sentence_parts (8): main clause, subordinate clause, relative clause, dependent clause, independent clause, noun clause, adverb clause, adjective clause
+- **bell types** under things_that_ring (9): dinner bell, church bell, school bell, bicycle bell, wedding bell, boxing bell, ship's bell, hotel bell, desk bell
+
+## Brand entries left without a theme
+
+## Changes
+- MERGE in dried fruits: goji berry out (kept goji)
+- MERGE in citrus fruits: mandarin orange out (kept mandarin)
+- MERGE in foods you peel: mandarin orange out (kept mandarin)
+- MERGE in kitchen brigade: commis chef out (kept commis)
+- MERGE in pasta meals: spaghetti carbonara out (kept carbonara)
+- MERGE in south american drinks: yerba mate out (kept mate)
+- MERGE in teas: masala chai out (kept chai)
+- MERGE in asian drinks: masala chai out (kept chai)
+- MERGE in meals of the day: tea time out (kept tea)
+- BRAND in drinks: Coca-Cola out (kept cola)
+- BRAND in soft drinks: Coca-Cola out (kept cola)
+- BRAND in chocolates: Mars bar out (kept bar)
+- MERGE in waterbirds: eider duck out (kept eider)
+- MERGE in crocodilians: mugger crocodile out (kept mugger)
+- MERGE in jellyfish and relatives: portuguese man-of-war out (kept man-of-war)
+- MERGE in butterflies and moths: blue morpho out (kept morpho)
+- GROUP in butterflies and moths: emperor moth + purple emperor
+- MERGE in sporting dogs: Labrador retriever out (kept labrador)
+- MERGE in working dogs: Alaskan malamute out (kept malamute)
+- MERGE in herding dogs: Welsh corgi out (kept corgi)
+- MERGE in cattle breeds: aberdeen angus out (kept angus)
+- GROUP in cattle breeds: Friesian + british friesian
+- MERGE in horse tack: girth strap out (kept girth)
+- MERGE in north american birds: northern cardinal out (kept cardinal)
+- MERGE in north american birds: common loon out (kept loon)
+- MERGE in animal homes: pigeon loft out (kept loft)
+- MERGE in homes for birds: pigeon loft out (kept loft)
+- MERGE in male animals: billy goat out (kept billy)
+- GROUP in dog commands: down + lie down
+- GROUP in dog commands: paw + give paw
+- GROUP in hounds: elkhound + Norwegian elkhound
+- GROUP in hounds: deerhound + Scottish deerhound
+- GROUP in hounds: wolfhound + Irish wolfhound
+- GROUP in herding dogs: cattle dog + Australian cattle dog
+- GROUP in working dogs: husky + Siberian husky
+- MERGE in female animals: nanny goat out (kept nanny)
+- MERGE in thorny plants: hawthorn hedge out (kept hawthorn)
+- MERGE in foraged leaves and shoots: stinging nettle out (kept nettle)
+- MERGE in european waters: Mediterranean Sea out (kept Mediterranean)
+- MERGE in desert features: sand dune out (kept dune)
+- MERGE in desert: sand dune out (kept dune)
+- MERGE in island types: coral atoll out (kept atoll)
+- MERGE in tides and currents: ocean current out (kept current)
+- MERGE in tides and currents: sea current out (kept current)
+- MERGE in earthquake words: fault line out (kept fault)
+- MERGE in volcano words: volcanic ash out (kept ash)
+- MERGE in hot weather words: phew what a scorcher out (kept scorcher)
+- MERGE in greek landmarks: Palace of Knossos out (kept Knossos)
+- GROUP in balkan countries: Macedonia + North Macedonia
+- GROUP in balkan countries: Bosnia + Bosnia and Herzegovina
+- GROUP in french regions: Aquitaine + Nouvelle-Aquitaine
+- GROUP in spanish regions: La Mancha + Castilla-La Mancha
+- GROUP in spanish regions: Castile + Castile and León
+- GROUP in wonders of the world: Giza + Pyramids of Giza
+- GROUP in wonders of the world: Giza + Great Pyramid of Giza
+- GROUP in egyptian landmarks: Giza + Pyramids of Giza
+- GROUP in egyptian landmarks: Giza + Great Pyramid of Giza
+- GROUP in wonders of the world: Babylon + Gardens of Babylon
+- GROUP in wonders of the world: Olympia + Zeus at Olympia
+- GROUP in new zealand landmarks: Tongariro + Tongariro Crossing
+- GROUP in caribbean islands: Cayman + Grand Cayman
+- GROUP in scottish landscape words: Ben + Ben Nevis
+- GROUP in scottish landscape words: glen + Glen Coe
+- GROUP in scottish landscape words: loch + Loch Ness
+- GROUP in scottish landscape words: ness + Loch Ness
+- GROUP in andes: Inca + Inca Trail
+- GROUP in andes: condor + Andean condor
+- GROUP in storms: tropical storm + tropical cyclone
+- GROUP in forest types: temperate forest + temperate rainforest
+- GROUP in island types: barrier island + barrier reef island
+- GROUP in island types: reef island + barrier reef island
+- GROUP in sky phenomena: Aurora + aurora borealis
+- GROUP in sky phenomena: Aurora + aurora australis
+- GROUP in night sky sights: Aurora + aurora borealis
+- GROUP in night sky sights: Aurora + aurora australis
+- GROUP in countries ending in ia: Arabia + Saudi Arabia
+- MERGE in shopping mall: store directory out (kept directory)
+- MERGE in national sports: sumo wrestling out (kept sumo)
+- MERGE in car exterior parts: windshield wiper out (kept wiper)
+- MERGE in parking words: on-street parking out (kept street parking)
+- MERGE in ticket words: fare zone out (kept zone)
+- MERGE in cable cars and lifts: aerial tramway out (kept tramway)
+- MERGE in flying machines: glider plane out (kept glider)
+- MERGE in in-flight precautions: fasten seatbelt sign out (kept seatbelt sign)
+- GROUP in aircraft makers: Douglas + McDonnell Douglas
+- GROUP in aircraft makers: Grumman + Northrop Grumman
+- MERGE in hot air balloon parts: propane tank out (kept tank)
+- MERGE in hot air balloon parts: suspension cables out (kept cables)
+- MERGE in famous ships: HMS Bounty out (kept Bounty)
+- MERGE in railway words: rail gauge out (kept gauge)
+- MERGE in railroad jobs: railway porter out (kept porter)
+- MERGE in railroad jobs: locomotive engineer out (kept engineer)
+- GROUP in cycling races: Tour de France + Tour de France Femmes
+- GROUP in cycling races: Giro + Giro Rosa
+- MERGE in skate park features: concrete bowl out (kept skate bowl)
+- MERGE in skateboard parts: truck axle out (kept axle)
+- MERGE in hotel: minibar fridge out (kept minibar)
+- MERGE in hotel room types: standard double out (kept double)
+- MERGE in vacation homes: holiday cottage out (kept cottage)
+- MERGE in vacation homes: cottage rental out (kept rental)
+- MERGE in toiletries: dental floss out (kept floss)
+- MERGE in souvenirs: fridge magnet out (kept magnet)
+- MERGE in travel accessories: plug adapter out (kept travel adapter)
+- MERGE in tourist attractions: art gallery out (kept gallery)
+- GROUP in famous theme parks: Disneyland + Disneyland Paris
+- GROUP in street names: Church + Church Lane
+- MERGE in vehicle sounds: honk honk out (kept honk)
+- MERGE in vehicle sounds: ding-ding out (kept ding)
+- MERGE in vehicle sounds: toot toot out (kept toot)
+- MERGE in vehicle sounds: beep beep out (kept beep)
+- GROUP in electric vehicles: Tesla + Tesla Model 3
+- GROUP in electric vehicles: Tesla + Tesla Model S
+- GROUP in electric vehicles: Tesla + Tesla Roadster
+- MERGE in stimulant drugs: crystal meth out (kept meth)
+- MERGE in common illnesses: the sniffles out (kept sniffles)
+- MERGE in african remedies: rooibos tea out (kept rooibos)
+- MERGE in first aid: wound dressing out (kept dressing)
+- MERGE in food groups: dairy products out (kept dairy)
+- MERGE in ways of laughing: snort laugh out (kept snort)
+- MERGE in ways of breathing: gasp for air out (kept gasp)
+- MERGE in greetings: hey there out (kept hey)
+- MERGE in stages of life: senior citizen out (kept senior)
+- MERGE in skilled trades: painter and decorator out (kept decorator)
+- MERGE in law and order: the law out (kept law)
+- MERGE in things you do with money: lend out out (kept lend)
+- MERGE in navy words: port side out (kept port)
+- MERGE in brain parts: cerebral hemisphere out (kept hemisphere)
+- GROUP in hands and feet: little toe + pinky toe
+- GROUP in teeth: wisdom tooth + third molar
+- GROUP in hair colors: black + jet black
+- GROUP in hair colors: jet + jet black
+- GROUP in food groups: cereals + bread and cereals
+- GROUP in food groups: oils + fats and oils
+- GROUP in food groups: fruit + fruit and veg
+- GROUP in family and friends: kin + kith and kin
+- GROUP in family and friends: kith + kith and kin
+- GROUP in ways to say goodbye: later + see you later
+- GROUP in ways to say goodbye: later + catch you later
+- GROUP in ways to say yes: sure + sure thing
+- GROUP in courtroom words: plea bargain + plea deal
+- GROUP in latin american currencies: sol + nuevo sol
+- MERGE in phone words: text message out (kept text)
+- MERGE in words for a person: human being out (kept human)
+- MERGE in things for watching shows: remote control out (kept remote)
+- MERGE in electrical fittings: circuit breaker out (kept breaker)
+- MERGE in electrical fittings: dimmer switch out (kept dimmer)
+- MERGE in electrical fittings: plug adapter out (kept adapter)
+- MERGE in kitchen appliances: range cooker out (kept range)
+- MERGE in swimwear: swimming trunks out (kept trunks)
+- MERGE in old ways to communicate: cable telegram out (kept telegram)
+- MERGE in japanese clothing: happi coat out (kept happi)
+- MERGE in pacific island clothing: pareo wrap out (kept pareo)
+- MERGE in middle eastern clothing: abaya cloak out (kept abaya)
+- MERGE in bins and recycling: landfill site out (kept landfill)
+- MERGE in appliances: clothes iron out (kept iron)
+- MERGE in cleaning appliances: clothes iron out (kept iron)
+- MERGE in small appliances: clothes iron out (kept iron)
+- MERGE in laundry words: clothes iron out (kept iron)
+- MERGE in appliances: electric kettle out (kept kettle)
+- MERGE in small appliances: electric kettle out (kept kettle)
+- MERGE in heating and cooling: fire grate out (kept grate)
+- MERGE in winter clothes: winter coat out (kept coat)
+- MERGE in manners and etiquette: good manners out (kept manners)
+- MERGE in manners and etiquette: firm handshake out (kept handshake)
+- MERGE in polite gestures: firm handshake out (kept handshake)
+- MERGE in household pests: house mouse out (kept mouse)
+- GROUP in fashion designers: Chanel + Coco Chanel
+- GROUP in maori culture: Waitangi + Treaty of Waitangi
+- GROUP in graduation words: cap + cap and gown
+- GROUP in graduation words: gown + cap and gown
+- MERGE in knitting words: ball of wool out (kept wool)
+- MERGE in fastenings: snap fastener out (kept snap)
+- GROUP in fastenings: toggle + toggle button
+- GROUP in fastenings: hook + hook and eye
+- GROUP in easter: bunny + Easter bunny
+- MERGE in new year: Lunar New Year out (kept Lunar)
+- GROUP in birthdays: cake + birthday cake
+- GROUP in valentine's day: heart + love heart
+- MERGE in valentine's day: box of chocolates out (kept chocolates)
+- GROUP in holi: Holika + Holika Dahan
+- GROUP in midsummer: solstice + summer solstice
+- GROUP in st. patrick's day: clover + four-leaf clover
+- MERGE in gift wrapping: gift wrap out (kept wrap)
+- GROUP in season words: equinox + vernal equinox
+- GROUP in season words: equinox + autumnal equinox
+- GROUP in season words: solstice + summer solstice
+- GROUP in season words: solstice + winter solstice
+- GROUP in season words: vernal + vernal equinox
+- MERGE in clocks and calendars: wall clock out (kept clock)
+- GROUP in times of day: dawn + crack of dawn
+- GROUP in times of day: noon + high noon
+- MERGE in containers: shopping bag out (kept bag)
+- MERGE in things with a carrying handle: shopping bag out (kept bag)
+- MERGE in paper goods: paper napkin out (kept napkin)
+- MERGE in things used for wiping: paper napkin out (kept napkin)
+- GROUP in paper goods: tissue + tissue paper
+- GROUP in things used for wiping: tissue + tissue paper
+- MERGE in paper goods: facial tissue out (kept tissue)
+- MERGE in things used for wiping: facial tissue out (kept tissue)
+- MERGE in candle words: melted wax out (kept wax)
+- GROUP in crockery: plate + dinner plate
+- MERGE in drinking vessels: wine goblet out (kept goblet)
+- MERGE in serving dishes: soup tureen out (kept tureen)
+- GROUP in locks and keys: lock + bike lock
+- GROUP in locks and keys: bike lock + bicycle lock
+- MERGE in locks and keys: door lock out (kept lock)
+- MERGE in things you plug in: electric kettle out (kept kettle)
+- MERGE in kitchen electricals: electric kettle out (kept kettle)
+- MERGE in kitchen electricals: microwave oven out (kept microwave)
+- MERGE in push-button devices: microwave oven out (kept microwave)
+- GROUP in things with lids: trash can + garbage can
+- GROUP in things with legs: trestle + trestle table
+- GROUP in ball sports: rugby + rugby union
+- MERGE in team ball sports: field hockey out (kept hockey)
+- MERGE in basketball terms: slam dunk out (kept dunk)
+- MERGE in nba teams: Vancouver Grizzlies out (kept Grizzlies)
+- MERGE in nfl teams: Baltimore Colts out (kept Colts)
+- MERGE in nfl teams: Cleveland Rams out (kept Rams)
+- MERGE in american football terms: center snap out (kept snap)
+- MERGE in mlb teams: Brooklyn Dodgers out (kept Dodgers)
+- MERGE in mlb teams: Devil Rays out (kept Rays)
+- MERGE in mlb teams: Florida Marlins out (kept Marlins)
+- MERGE in racket sports: lawn tennis out (kept tennis)
+- MERGE in racket and target sports: tenpin bowling out (kept bowling)
+- GROUP in golf terms: green + putting green
+- GROUP in cue sports terms: black + black ball
+- MERGE in sailing sports: Olympic sailing out (kept sailing)
+- MERGE in snow sports: downhill skiing out (kept downhill)
+- GROUP in combat sports: sumo + sumo wrestling
+- MERGE in snowboard tricks: stalefish grab out (kept stalefish)
+- MERGE in field events: shot put out (kept shot)
+- MERGE in olympic host cities: Cortina d'Ampezzo out (kept Cortina)
+- MERGE in bike races: Giro d'Italia out (kept Giro)
+- MERGE in trophies and prizes: Webb Ellis Cup out (kept Webb Ellis)
+- MERGE in equestrian events: show jumping out (kept jumping)
+- GROUP in casino games: pai gow + Pai Gow poker
+- GROUP in casino games: Hold'em + Texas hold'em
+- BRAND in toys and play: Matchbox car out (kept car)
+- BRAND in keyboard instruments: Hammond organ out (kept organ)
+- BRAND in keyboard instruments: Rhodes piano out (kept piano)
+- GROUP in south american soccer clubs: Nacional + Atlético Nacional
+- GROUP in tv genres: period drama + costume drama
+- MERGE in voice types: mezzo-soprano out (kept mezzo)
+- MERGE in classical voice types: mezzo-soprano out (kept mezzo)
+- MERGE in tv words: pilot episode out (kept pilot)
+- MERGE in television equipment: remote control out (kept remote)
+- MERGE in pacific art words: tapa cloth out (kept tapa)
+- MERGE in impressionist painters: Claude Monet out (kept Monet)
+- MERGE in impressionist painters: Auguste Renoir out (kept Renoir)
+- MERGE in impressionist painters: Edgar Degas out (kept Degas)
+- MERGE in impressionist painters: Edouard Manet out (kept Manet)
+- MERGE in impressionist painters: Camille Pissarro out (kept Pissarro)
+- MERGE in dutch painters: Rembrandt van Rijn out (kept Rembrandt)
+- MERGE in dutch painters: Vincent van Gogh out (kept Van Gogh)
+- MERGE in dutch painters: Johannes Vermeer out (kept Vermeer)
+- MERGE in spanish painters: Pablo Picasso out (kept Picasso)
+- MERGE in spanish painters: Salvador Dali out (kept Dali)
+- MERGE in spanish painters: Francisco Goya out (kept Goya)
+- MERGE in spanish painters: Diego Velazquez out (kept Velazquez)
+- MERGE in spanish painters: Joaquin Sorolla out (kept Sorolla)
+- MERGE in english stage writers: William Shakespeare out (kept Shakespeare)
+- MERGE in russian writers: Leo Tolstoy out (kept Tolstoy)
+- MERGE in russian writers: Fyodor Dostoevsky out (kept Dostoevsky)
+- MERGE in russian writers: Anton Chekhov out (kept Chekhov)
+- MERGE in russian writers: Alexander Pushkin out (kept Pushkin)
+- MERGE in russian writers: Nikolai Gogol out (kept Gogol)
+- MERGE in pharaohs: Cleopatra VII out (kept Cleopatra)
+- MERGE in greek philosophers: Zeno of Citium out (kept Zeno)
+- MERGE in ancient rome: Julius Caesar out (kept Caesar)
+- MERGE in explorers: Christopher Columbus out (kept Columbus)
+- MERGE in conquistadors: Hernando de Soto out (kept de Soto)
+- MERGE in conquistadors: Diego de Almagro out (kept Almagro)
+- MERGE in conquistadors: Pedro de Valdivia out (kept Valdivia)
+- MERGE in conquistadors: Pánfilo de Narváez out (kept Narváez)
+- MERGE in undead: Count Dracula out (kept Dracula)
+- MERGE in robin hood legend: Sherwood Forest out (kept Sherwood)
+- MERGE in robin hood legend: Robin Hood out (kept Hood)
+- MERGE in african folklore: Anansi the Spider out (kept Anansi)
+- MERGE in turkish folklore: Nasreddin Hodja out (kept Hodja)
+- MERGE in american tall tales: Old Stormalong out (kept Stormalong)
+- GROUP in romantic composers: Schumann + Clara Schumann
+- GROUP in romantic composers: Mendelssohn + Fanny Mendelssohn
+- GROUP in conquistadors: Pizarro + Gonzalo Pizarro
+- GROUP in conquistadors: balboa + Vasco Núñez de Balboa
+- GROUP in reformers: Martin Luther + Martin Luther King
+- GROUP in shakespeare characters: Macbeth + Lady Macbeth
+- GROUP in shakespearean tragedy characters: Macbeth + Lady Macbeth
+- GROUP in egyptian gods: Ra + Amun-Ra
+- GROUP in egyptian gods: Amun + Amun-Ra
+- GROUP in arthurian legend: Pendragon + Uther Pendragon
+- GROUP in turkish folklore: Karagoz + Karagoz and Hacivat
+- GROUP in turkish folklore: Hacivat + Karagoz and Hacivat
+- GROUP in american tall tales: blue ox + Babe the Blue Ox
+- GROUP in famous magicians: Teller + Penn and Teller
+- GROUP in pirate ships: Revenge + Queen Anne's Revenge
+- GROUP in industrial revolution: locomotive + steam locomotive
+- GROUP in renaissance: Medici + Lorenzo de Medici
+- GROUP in cowboy gear: spurs + spurs and boots
+- GROUP in cowboy gear: boots + spurs and boots
+- GROUP in acids and bases: litmus + litmus paper
+- MERGE in chemical compounds: table salt out (kept salt)
+- MERGE in fractions: one half out (kept half)
+- MERGE in math operations: plus sign out (kept plus)
+- MERGE in math operations: minus sign out (kept minus)
+- MERGE in math operations: add up out (kept add)
+- MERGE in measurement: metric system out (kept metric)
+- GROUP in measurement: vernier + vernier caliper
+- MERGE in famous naturalists: Charles Darwin out (kept Darwin)
+- MERGE in chemists: Dmitri Mendeleev out (kept Mendeleev)
+- MERGE in medical pioneers: Louis Pasteur out (kept Pasteur)
+- MERGE in french mathematicians: Pierre de Fermat out (kept Fermat)
+- MERGE in french mathematicians: René Descartes out (kept Descartes)
+- MERGE in french mathematicians: Évariste Galois out (kept Galois)
+- MERGE in german mathematicians: Gottfried Leibniz out (kept Leibniz)
+- MERGE in nobel literature prize winners: Wole Soyinka out (kept Soyinka)
+- MERGE in nobel physics prize winners: Albert Einstein out (kept Einstein)
+- MERGE in nobel physics prize winners: Richard Feynman out (kept Feynman)
+- MERGE in nobel physics prize winners: Niels Bohr out (kept Bohr)
+- MERGE in nobel physics prize winners: Max Planck out (kept Planck)
+- MERGE in nobel physics prize winners: Werner Heisenberg out (kept Heisenberg)
+- MERGE in household gadgets: vacuum cleaner out (kept vacuum)
+- GROUP in handheld gadgets: calculator + pocket calculator
+- GROUP in networking: TCP + TCP/IP
+- GROUP in internet protocols: TCP + TCP/IP
+- MERGE in computer storage: hard disk drive out (kept hard disk)
+- MERGE in display tech: LCD screen out (kept LCD)
+- GROUP in display tech: OLED + OLED TV
+- MERGE in energy sources: solar power out (kept solar)
+- MERGE in energy sources: wind power out (kept wind)
+- MERGE in energy sources: hydroelectric power out (kept hydroelectric)
+- MERGE in renewable sources: solar power out (kept solar)
+- MERGE in renewable sources: wind power out (kept wind)
+- MERGE in renewable sources: hydroelectric power out (kept hydroelectric)
+- GROUP in languages: Gaelic + Irish Gaelic
+- GROUP in celtic languages: Gaelic + Scots Gaelic
+- GROUP in celtic languages: Gaelic + Irish Gaelic
+- GROUP in celtic languages: Gaelic + Scottish Gaelic
+- GROUP in slavic languages: Croatian + Serbo-Croatian
+- GROUP in languages of china: Chinese + Standard Chinese
+- MERGE in keyboard symbols: forward slash out (kept slash)
+- MERGE in keyboard symbols: pound sign out (kept pound symbol)
+- GROUP in fonts: Helvetica + Helvetica Neue
+- GROUP in typefaces without serifs: Helvetica + Helvetica Neue
+- GROUP in thank you around the world: grazie + mille grazie
+- GROUP in goodbye around the world: sayonara + sayonara baby
+- GROUP in swahili words: asante + asante sana
+- GROUP in maori words: pai + ka pai
+- MERGE in cockney rhyming slang: barnet fair out (kept barnet)
+- MERGE in polite swears: cor blimey out (kept blimey)
+- MERGE in british exclamations: cor blimey out (kept blimey)
+- GROUP in words meaning nonsense: nonsense + stuff and nonsense
+- MERGE in words for toilet: ladies room out (kept ladies)
+- GROUP in jewel tones: ruby + ruby red
+- GROUP in jewel tones: sapphire + sapphire blue
+- GROUP in jewel tones: emerald + emerald green
+- GROUP in jewel tones: amethyst + amethyst purple
+- GROUP in colors named after gems: lapis + lapis lazuli
+- MERGE in see-through materials: window pane out (kept pane)
+- MERGE in slippery things: wet soap out (kept soap)
+- GROUP in prickly things: thorn + rose thorn
+- MERGE in plants with spines: stinging nettle out (kept nettle)
+- GROUP in salty foods: chips + potato chips
+- GROUP in bar snacks: chips + potato chips
+- GROUP in words for pretty: gorgeous + drop-dead gorgeous
+- MERGE in eating sounds: nom nom out (kept nom)
+- MERGE in eating sounds: om nom nom out (kept nom)
+- GROUP in water sounds: patter + pitter-patter
+- MERGE in things that smell good: fresh coffee out (kept coffee)
+- MERGE in smells from the kitchen: fresh coffee out (kept coffee)
+- MERGE in pungent foods: raw onion out (kept onion)
+- GROUP in candle scents: teakwood + mahogany teakwood
+- GROUP in ways to jump: jeté + grand jeté
+- MERGE in things that reflect: still lake out (kept lake)
+- MERGE in words for shiny: lustrous sheen out (kept lustrous)
+- BRAND in things with eyes: Mr. Potato Head out (kept potato)
+- MERGE in things with wheels: roller skate out (kept skate)
+- MERGE in things with teeth: gear wheel out (kept gear)
+- MERGE in things that sting: Portuguese man o' war out (kept man o' war)
+- BRAND in things that cut: Stanley knife out (kept knife)
+
+## Problems
+- v-4.txt: already gone "GROUP island_types 30992 31014"
+- v-5.txt: already gone "GROUP hot_air_balloon_parts 47418 47394"
+- v-6.txt: already gone "MERGE stimulants 50274 15491"
+- v-7.txt: already gone "MERGE old_ways_to_communicate 4596 61395"
+- v-10.txt: already gone "MERGE turkish_folklore 22688 22681"
+- v-12.txt: already gone "MERGE eating_sounds 57949 57955"
+- v-8.txt: "fork types" under cutlery: a theme with this name exists
+- v-9.txt: "ski disciplines" under snow_sports: a word is not in the parent
+- v-9.txt: "piano types" under keyboard_instruments: a word is not in the parent
+- v-10.txt: "house styles" under electronic_music_styles: a theme with this name exists

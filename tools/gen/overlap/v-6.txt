@@ -1,0 +1,49 @@
+# repeated sound words
+MERGE vehicle_sounds 10209 49212
+MERGE vehicle_sounds 28872 49215
+MERGE vehicle_sounds 29017 49213
+MERGE vehicle_sounds 39583 49211
+# model names give the brand away
+GROUP electric_vehicles 188 49226
+GROUP electric_vehicles 188 49227
+GROUP electric_vehicles 188 49246
+# same drug
+MERGE stimulants 15490 15491
+MERGE stimulants 50274 15491
+# same thing with a filler word
+MERGE common_illnesses 14891 3357
+MERGE african_remedies 19347 15634
+MERGE first_aid 3465 15403
+MERGE food_groups 16668 16682
+MERGE ways_of_laughing 17137 17149
+MERGE ways_of_breathing 16987 17062
+MERGE greetings 26542 32491
+MERGE ages_and_stages 32524 32533
+MERGE trades 23773 32958
+MERGE law_and_order 4183 4208
+MERGE things_you_do_with_money 34157 34171
+MERGE navy_words 34579 47599
+MERGE brain_parts 50248 14374
+# near-same answers
+GROUP hands_and_feet 14213 14218
+GROUP teeth 14486 14511
+GROUP hair_colors 7668 53050
+GROUP hair_colors 7669 53050
+GROUP food_groups 16680 16673
+GROUP food_groups 16687 16672
+GROUP food_groups 30089 16684
+GROUP family_and_friends 3950 3970
+GROUP family_and_friends 3971 3970
+GROUP ways_to_say_goodbye 32504 32495
+GROUP ways_to_say_goodbye 32504 32508
+GROUP ways_to_say_yes 32611 32629
+GROUP courtroom_words 4268 4269
+GROUP latin_american_currencies 56793 56805
+# kinds of one thing
+SUB injuries | fracture_types | fracture types | 15025 15026 15027 15112 60789 60790
+SUB brain_parts | cortex_areas | cortex areas | 14543 14544 14561 14562
+SUB hair_colors | blonde_shades | blonde shades | 53046 53047 53048 53053 53056
+SUB toiletries_for_washing | soap_types | soap types | 16151 16152 16154 16158 16161 16294
+SUB tech_jobs | developer_roles | developer roles | 33038 33045 33048 33051 33052 33053 33060 60924
+SUB food_jobs | chef_roles | chef roles | 944 20045 20046 20054
+SUB political_titles | minister_titles | minister titles | 33344 33361 33367 33368

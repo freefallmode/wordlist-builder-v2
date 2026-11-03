@@ -1,0 +1,6 @@
+# eider duck is just an eider
+MERGE waterbirds 8208 8225
+# mugger is the mugger crocodile
+MERGE crocodilians 8633 8624
+# penguin species are a theme of their own
+SUB flightless_birds | penguin_species | penguin species | 8234 8235 8236 8237 8238 8239 8240 8241 8242 8243 8244 8260 8261 8262

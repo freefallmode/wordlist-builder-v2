@@ -1,0 +1,1132 @@
+T female_animals | female animals | 32 words
+A 149 cow [animal] (common, rec 1, in 10 themes)
+  B 10320 cow elephant (common, rec 4, in 1 themes)
+A 1464 mare [horse] (common, rec 3, in 5 themes)
+  B 10319 brood mare (common, rec 3, in 1 themes)
+A 10304 nanny [animal] (common, rec 2, in 1 themes)
+  B 1477 nanny goat (common, rec 3, in 3 themes)
+A 10308 queen [cat] (common, rec 1, in 1 themes)
+  B 9057 queen bee (common, rec 1, in 1 themes)
+
+T animal_body_parts | animal body parts | 61 words
+A 1503 hoof (common, rec 1, in 4 themes)
+  B 10350 cloven hoof (common, rec 3, in 1 themes)
+A 8833 fin [fish] (common, rec 1, in 4 themes)
+  B 8837 dorsal fin (common, rec 3, in 3 themes)
+  B 8841 tail fin (common, rec 3, in 3 themes)
+A 8834 tail [animal] (common, rec 1, in 4 themes)
+  B 8841 tail fin (common, rec 3, in 3 themes)
+
+T parts_of_water_animals | parts of water animals | 9 words
+A 8833 fin [fish] (common, rec 1, in 4 themes)
+  B 8837 dorsal fin (common, rec 3, in 3 themes)
+  B 8841 tail fin (common, rec 3, in 3 themes)
+
+T animal_experts | animal experts | 44 words | note: zoologist, ornithologist, entomologist, vet
+A 63746 trainer [circus and zoo] (common, rec 2, in 1 themes)
+  B 10475 dog trainer (common, rec 2, in 2 themes)
+
+T animal_diets | animal diets | 40 words | note: carnivore, herbivore, omnivore, scavenger
+A 1627 carnivore [animal] (common, rec 2, in 4 themes)
+  B 10507 obligate carnivore (common, rec 4, in 1 themes)
+A 10112 predator (common, rec 2, in 5 themes)
+  B 10492 apex predator (common, rec 3, in 2 themes)
+
+T trees | trees | 62 words
+A 1629 pine [tree] (common, rec 1, in 8 themes)
+  B 1668 Chile pine (proper, rec 5, in 4 themes)
+A 1632 ash [tree] (common, rec 1, in 4 themes)
+  B 1680 mountain ash (common, rec 3, in 6 themes)
+A 1635 elm [tree] (common, rec 2, in 5 themes)
+  B 1692 wych elm (common, rec 5, in 3 themes)
+A 1638 fir (common, rec 2, in 4 themes)
+  B 1687 Douglas fir (proper, rec 4, in 5 themes)
+A 1647 poplar (common, rec 3, in 3 themes)
+  B 63124 tulip poplar (common, rec 4, in 3 themes)
+
+T deciduous_trees | deciduous trees | 37 words
+A 1630 maple (common, rec 1, in 4 themes)
+  B 29948 field maple (common, rec 5, in 2 themes)
+A 1632 ash [tree] (common, rec 1, in 4 themes)
+  B 1680 mountain ash (common, rec 3, in 6 themes)
+A 1634 birch (common, rec 2, in 6 themes)
+  B 29949 silver birch (common, rec 3, in 1 themes)
+A 1635 elm [tree] (common, rec 2, in 5 themes)
+  B 1692 wych elm (common, rec 5, in 3 themes)
+A 1647 poplar (common, rec 3, in 3 themes)
+  B 63124 tulip poplar (common, rec 4, in 3 themes)
+A 29945 chestnut [tree] (common, rec 2, in 2 themes)
+  B 29947 horse chestnut (common, rec 3, in 2 themes)
+
+T evergreen_trees | evergreen trees | 33 words
+A 1629 pine [tree] (common, rec 1, in 8 themes)
+  B 1668 Chile pine (proper, rec 5, in 4 themes)
+  B 29955 Scots pine (proper, rec 4, in 2 themes)
+  B 29960 stone pine (common, rec 5, in 3 themes)
+  B 29961 lodgepole pine (common, rec 5, in 1 themes)
+  B 29963 ponderosa pine (common, rec 5, in 2 themes)
+  B 30006 pine nut tree (common, rec 4, in 3 themes)
+A 1637 cedar (common, rec 2, in 8 themes)
+  B 2559 cedar of Lebanon (phrase, rec 4, in 4 themes)
+A 1638 fir (common, rec 2, in 4 themes)
+  B 1687 Douglas fir (proper, rec 4, in 5 themes)
+  B 15705 balsam fir (common, rec 4, in 4 themes)
+A 1639 spruce (common, rec 2, in 5 themes)
+  B 29956 Norway spruce (proper, rec 4, in 2 themes)
+  B 29959 Sitka spruce (proper, rec 5, in 1 themes)
+A 1645 sequoia [tree] (common, rec 3, in 7 themes)
+  B 29964 giant sequoia (common, rec 4, in 2 themes)
+A 1646 cypress (common, rec 3, in 5 themes)
+  B 29962 Leyland cypress (proper, rec 5, in 1 themes)
+
+T fruit_trees | fruit trees | 32 words
+A 29967 apple (common, rec 1, in 1 themes)
+  B 29988 crab apple (common, rec 3, in 3 themes)
+A 29969 cherry (common, rec 1, in 1 themes)
+  B 17226 cherry plum (common, rec 4, in 2 themes)
+A 29970 plum (common, rec 1, in 1 themes)
+  B 17226 cherry plum (common, rec 4, in 2 themes)
+
+T nut_trees | nut trees | 28 words
+A 17363 hickory (common, rec 4, in 2 themes)
+  B 30007 shagbark hickory (common, rec 5, in 1 themes)
+A 29945 chestnut [tree] (common, rec 2, in 2 themes)
+  B 17379 sweet chestnut (common, rec 4, in 3 themes)
+  B 29947 horse chestnut (common, rec 3, in 2 themes)
+  B 30012 Spanish chestnut (proper, rec 4, in 1 themes)
+A 29946 walnut [tree] (common, rec 2, in 3 themes)
+  B 17373 black walnut (common, rec 4, in 4 themes)
+  B 30013 English walnut (proper, rec 4, in 1 themes)
+
+T tropical_trees | tropical trees | 35 words
+A 1631 palm [tree] (common, rec 1, in 2 themes)
+  B 29979 coconut palm (common, rec 2, in 4 themes)
+  B 29980 date palm (common, rec 2, in 8 themes)
+  B 30020 royal palm (common, rec 4, in 1 themes)
+  B 30029 talipot palm (common, rec 5, in 1 themes)
+  B 30030 sago palm (common, rec 4, in 1 themes)
+
+T tree_parts | tree parts | 28 words
+A 30034 root [plant] (common, rec 1, in 4 themes)
+  B 50331 buttress root [tree] (common, rec 4, in 2 themes)
+
+T hedge_plants | hedge plants | 30 words | note: shrubs and trees grown as hedges: privet, box, yew, hawthorn, beech, laurel
+A 30071 laurel [hedge] (common, rec 3, in 2 themes)
+  B 30076 cherry laurel (common, rec 4, in 1 themes)
+
+T things_that_fall_from_trees | things that fall from trees | 25 words | note: leaves, acorns, conkers, pine cones, sycamore keys, blossom, sap
+A 17411 seed [plant] (common, rec 1, in 8 themes)
+  B 30093 helicopter seed (common, rec 3, in 1 themes)
+  B 30096 seed pod (common, rec 3, in 2 themes)
+A 29857 Blossom (proper, rec 2, in 4 themes)
+  B 2540 cherry blossom (phrase, rec 2, in 9 themes)
+A 30053 cone [tree] (common, rec 1, in 2 themes)
+  B 30087 pine cone (common, rec 1, in 4 themes)
+
+T australian_trees | australian trees | 30 words
+A 2565 wattle [plant] (common, rec 4, in 4 themes)
+  B 38513 golden wattle (common, rec 4, in 3 themes)
+A 64791 Gum [tree] (common, rec 4, in 3 themes)
+  B 56435 ghost gum (common, rec 4, in 1 themes)
+  B 56436 river red gum (common, rec 5, in 1 themes)
+  B 56445 blue gum (common, rec 4, in 1 themes)
+  B 56448 snow gum (common, rec 5, in 1 themes)
+
+T north_american_trees | north american trees | 31 words
+A 1645 sequoia [tree] (common, rec 3, in 7 themes)
+  B 29964 giant sequoia (common, rec 4, in 2 themes)
+
+T mediterranean_trees | mediterranean trees | 29 words
+A 1628 oak [tree] (common, rec 1, in 6 themes)
+  B 29958 holm oak (common, rec 4, in 2 themes)
+  B 56470 cork oak (common, rec 3, in 1 themes)
+A 1629 pine [tree] (common, rec 1, in 8 themes)
+  B 29960 stone pine (common, rec 5, in 3 themes)
+  B 30006 pine nut tree (common, rec 4, in 3 themes)
+  B 56472 Aleppo pine (common, rec 5, in 1 themes)
+  B 56473 umbrella pine (common, rec 4, in 1 themes)
+A 1646 cypress (common, rec 3, in 5 themes)
+  B 56476 Italian cypress (common, rec 4, in 1 themes)
+
+T things_made_from_trees | things made from trees | 44 words
+A 20472 paper [material] (common, rec 1, in 12 themes)
+  B 25551 paper plate (common, rec 1, in 1 themes)
+
+T trees_native_to_britain | trees native to Britain | 16 words
+A 1632 ash [tree] (common, rec 1, in 4 themes)
+  B 1680 mountain ash (common, rec 3, in 6 themes)
+A 1635 elm [tree] (common, rec 2, in 5 themes)
+  B 1692 wych elm (common, rec 5, in 3 themes)
+
+T forest_floor | forest floor | 42 words | note: what lies on the ground in a forest: moss, leaf litter, fungi, ferns, beetles
+A 1350 beetle [insect] (common, rec 1, in 9 themes)
+  B 9000 ground beetle (common, rec 4, in 3 themes)
+
+T woodland_features | woodland features | 38 words | note: clearing, glade, thicket, canopy, undergrowth, stump, trail
+A 30119 coppice (common, rec 4, in 3 themes)
+  B 30173 coppice stool (common, rec 5, in 1 themes)
+A 30153 hollow [woodland] (common, rec 3, in 1 themes)
+  B 30163 tree hollow (common, rec 3, in 1 themes)
+
+T forest_types | forest types | 35 words | note: boreal, cloud forest, mangrove, temperate, coniferous, bamboo forest
+A 30175 rainforest (common, rec 1, in 2 themes)
+  B 30199 temperate rainforest (common, rec 4, in 1 themes)
+A 30178 temperate (common, rec 3, in 1 themes)
+  B 30199 temperate rainforest (common, rec 4, in 1 themes)
+
+T forestry_words | forestry words | 40 words | note: logging, lumberjack, sawmill, timber, felling, coppice, plantation
+A 322 axe [tool] (common, rec 1, in 11 themes)
+  B 30266 felling axe (common, rec 4, in 1 themes)
+A 30135 log [wood] (common, rec 1, in 7 themes)
+  B 30267 log drive (common, rec 4, in 1 themes)
+A 30239 felling (common, rec 3, in 1 themes)
+  B 30266 felling axe (common, rec 4, in 1 themes)
+
+T wildfire_words | wildfire words | 43 words | note: blaze, embers, firebreak, smoke jumper, backburn, bushfire
+A 30277 smoke [fire] (common, rec 1, in 3 themes)
+  B 30272 smoke jumper (common, rec 4, in 1 themes)
+
+T foraging_finds | foraging finds | 59 words
+A 778 sorrel [herb] (common, rec 4, in 7 themes)
+  B 30147 wood sorrel (common, rec 4, in 3 themes)
+
+T leaves_and_shoots | foraged leaves and shoots | 19 words
+A 778 sorrel [herb] (common, rec 4, in 7 themes)
+  B 30147 wood sorrel (common, rec 4, in 3 themes)
+A 1778 nettle (common, rec 2, in 8 themes)
+  B 1779 stinging nettle (common, rec 2, in 8 themes)
+
+T fungi | fungi | 45 words
+A 17645 mushroom [fungus] (common, rec 1, in 6 themes)
+  B 17610 button mushroom (common, rec 1, in 2 themes)
+  B 17613 oyster mushroom (common, rec 3, in 1 themes)
+  B 17629 field mushroom (common, rec 3, in 2 themes)
+  B 17640 parasol mushroom (common, rec 5, in 1 themes)
+
+T flowers | flowers | 69 words
+A 1697 lily (common, rec 1, in 12 themes)
+  B 1743 sword lily (common, rec 5, in 7 themes)
+
+T garden_flowers | garden flowers | 51 words
+A 1693 rose [flower] (common, rec 1, in 13 themes)
+  B 30688 Christmas rose (common, rec 3, in 3 themes)
+A 1697 lily (common, rec 1, in 12 themes)
+  B 1743 sword lily (common, rec 5, in 7 themes)
+
+T wildflowers | wildflowers | 44 words
+A 1695 daisy (common, rec 1, in 13 themes)
+  B 30355 oxeye daisy (common, rec 3, in 5 themes)
+A 30377 campion (common, rec 4, in 1 themes)
+  B 30358 red campion (common, rec 4, in 1 themes)
+
+T spring_flowers | spring flowers | 42 words
+A 1713 hyacinth (common, rec 2, in 11 themes)
+  B 30382 grape hyacinth (common, rec 3, in 4 themes)
+A 1745 anemone [flower] (common, rec 3, in 6 themes)
+  B 30142 wood anemone (common, rec 4, in 4 themes)
+
+T tropical_flowers | tropical flowers | 39 words
+A 1698 orchid (common, rec 1, in 16 themes)
+  B 30415 moth orchid (common, rec 4, in 1 themes)
+A 1728 lotus [flower] (common, rec 2, in 9 themes)
+  B 30407 blue lotus (common, rec 4, in 2 themes)
+A 1759 protea (common, rec 4, in 6 themes)
+  B 30413 king protea (common, rec 4, in 2 themes)
+A 30395 ginger (common, rec 3, in 1 themes)
+  B 30400 torch ginger (common, rec 4, in 1 themes)
+  B 30401 red ginger (common, rec 4, in 1 themes)
+
+T flower_parts | flower parts | 35 words
+A 14916 pollen (common, rec 1, in 6 themes)
+  B 30437 pollen sac (common, rec 4, in 1 themes)
+
+T bouquet_flowers | bouquet flowers | 44 words
+A 1693 rose [flower] (common, rec 1, in 13 themes)
+  B 30452 spray rose (common, rec 4, in 1 themes)
+A 1697 lily (common, rec 1, in 12 themes)
+  B 1743 sword lily (common, rec 5, in 7 themes)
+  B 30381 lily of the valley (common, rec 3, in 7 themes)
+  B 30453 calla lily (common, rec 3, in 4 themes)
+
+T anatolian_flowers | anatolian flowers | 23 words | note: flowers native to or iconic in Turkey: tulip, hyacinth, crocus, cyclamen, fritillary
+A 1694 tulip (common, rec 1, in 17 themes)
+  B 56480 Turkish tulip (common, rec 4, in 1 themes)
+A 1713 hyacinth (common, rec 2, in 11 themes)
+  B 30382 grape hyacinth (common, rec 3, in 4 themes)
+A 1725 crocus (common, rec 2, in 7 themes)
+  B 56478 saffron crocus (common, rec 4, in 1 themes)
+
+T south_african_flowers | south african flowers | 24 words | note: protea, strelitzia, agapanthus, freesia, clivia, gerbera
+A 1759 protea (common, rec 4, in 6 themes)
+  B 30413 king protea (common, rec 4, in 2 themes)
+
+T flowers_of_east_asia | flowers of east asia | 24 words | note: cherry blossom, lotus, chrysanthemum, peony, camellia, wisteria
+A 1717 peony [flower] (common, rec 2, in 14 themes)
+  B 56492 tree peony (common, rec 4, in 1 themes)
+
+T australian_wildflowers | australian wildflowers | 25 words | note: kangaroo paw, waratah, wattle, banksia, flannel flower
+A 2565 wattle [plant] (common, rec 4, in 4 themes)
+  B 38513 golden wattle (common, rec 4, in 3 themes)
+
+T alpine_flowers | alpine flowers | 23 words | note: edelweiss, gentian, alpine rose, saxifrage, pasqueflower
+A 39170 gentian (common, rec 5, in 3 themes)
+  B 56530 trumpet gentian (common, rec 5, in 1 themes)
+  B 56531 stemless gentian (common, rec 5, in 1 themes)
+A 56522 saxifrage (common, rec 4, in 1 themes)
+  B 56535 purple saxifrage (common, rec 5, in 1 themes)
+
+T yellow_flowers | yellow flowers | 32 words
+A 1731 primrose [flower] (common, rec 3, in 7 themes)
+  B 30661 evening primrose (common, rec 4, in 3 themes)
+
+T white_flowers | white flowers | 30 words
+A 1695 daisy (common, rec 1, in 13 themes)
+  B 30355 oxeye daisy (common, rec 3, in 5 themes)
+A 1697 lily (common, rec 1, in 12 themes)
+  B 30381 lily of the valley (common, rec 3, in 7 themes)
+  B 30453 calla lily (common, rec 3, in 4 themes)
+A 1745 anemone [flower] (common, rec 3, in 6 themes)
+  B 30142 wood anemone (common, rec 4, in 4 themes)
+
+T purple_flowers | purple flowers | 34 words
+A 1702 violet [flower] (common, rec 2, in 9 themes)
+  B 30546 African violet (proper, rec 3, in 3 themes)
+
+T sweet_smelling_flowers | sweet-smelling flowers | 46 words
+A 1693 rose [flower] (common, rec 1, in 13 themes)
+  B 30522 tea rose (common, rec 4, in 1 themes)
+  B 30523 damask rose (common, rec 4, in 3 themes)
+A 1715 jasmine [flower] (common, rec 2, in 18 themes)
+  B 30520 night jasmine (common, rec 4, in 1 themes)
+A 30444 stock [flower] (common, rec 3, in 2 themes)
+  B 30504 night-scented stock (common, rec 5, in 1 themes)
+
+T flower_bulbs | flower bulbs | 42 words
+A 1697 lily (common, rec 1, in 12 themes)
+  B 1743 sword lily (common, rec 5, in 7 themes)
+  B 30453 calla lily (common, rec 3, in 4 themes)
+  B 30535 pineapple lily (common, rec 5, in 1 themes)
+A 1713 hyacinth (common, rec 2, in 11 themes)
+  B 30382 grape hyacinth (common, rec 3, in 4 themes)
+A 1725 crocus (common, rec 2, in 7 themes)
+  B 30533 autumn crocus (common, rec 4, in 2 themes)
+
+T plants | plants | 62 words
+A 1766 fern (common, rec 1, in 7 themes)
+  B 1811 tree fern (common, rec 3, in 3 themes)
+A 1767 moss (common, rec 1, in 10 themes)
+  B 1827 club moss (common, rec 5, in 2 themes)
+A 1769 grass [plant] (common, rec 1, in 4 themes)
+  B 1809 pampas grass (common, rec 3, in 2 themes)
+A 1777 thistle [plant] (common, rec 2, in 15 themes)
+  B 1786 Russian thistle (common, rec 5, in 9 themes)
+
+T houseplants | houseplants | 59 words
+A 1766 fern (common, rec 1, in 7 themes)
+  B 30551 Boston fern (proper, rec 3, in 1 themes)
+  B 30569 bird's nest fern (common, rec 4, in 1 themes)
+  B 30571 maidenhair fern (common, rec 4, in 1 themes)
+A 1768 cactus (common, rec 1, in 10 themes)
+  B 30557 Christmas cactus (proper, rec 3, in 3 themes)
+A 1770 ivy (common, rec 2, in 5 themes)
+  B 30560 English ivy (proper, rec 3, in 1 themes)
+
+T cacti_and_succulents | cacti and succulents | 27 words
+A 1768 cactus (common, rec 1, in 10 themes)
+  B 30557 Christmas cactus (proper, rec 3, in 3 themes)
+  B 30577 barrel cactus (common, rec 3, in 2 themes)
+  B 30589 organ pipe cactus (common, rec 4, in 2 themes)
+
+T vines_and_climbers | vines and climbers | 26 words
+A 1770 ivy (common, rec 2, in 5 themes)
+  B 30598 boston ivy (common, rec 4, in 1 themes)
+A 30597 creeper [plant] (common, rec 2, in 1 themes)
+  B 30594 virginia creeper (common, rec 4, in 1 themes)
+  B 63141 trumpet creeper (common, rec 4, in 1 themes)
+
+T poisonous_plants | poisonous plants | 28 words
+A 29944 Hemlock [poison] (proper, rec 4, in 2 themes)
+  B 30622 water hemlock (common, rec 4, in 1 themes)
+
+T weeds | weeds | 41 words | note: dandelion, nettle, thistle, bindweed, dock, chickweed, ragwort, knotweed
+A 1777 thistle [plant] (common, rec 2, in 15 themes)
+  B 60210 sow thistle (common, rec 4, in 1 themes)
+
+T fiber_plants | fiber plants | 21 words | note: plants grown for fiber: cotton, flax, hemp, jute, sisal, coir, abaca
+A 30677 hemp [plant] (common, rec 3, in 4 themes)
+  B 30684 sunn hemp (common, rec 5, in 1 themes)
+
+T plants_of_the_middle_east | plants of the middle east | 32 words | note: date palm, cedar of Lebanon, frankincense, myrrh, henna, tamarisk
+A 101 fig (common, rec 2, in 5 themes)
+  B 56561 sycamore fig (common, rec 5, in 1 themes)
+
+T christmas_plants | christmas plants | 27 words
+A 1629 pine [tree] (common, rec 1, in 8 themes)
+  B 29955 Scots pine (proper, rec 4, in 2 themes)
+A 1639 spruce (common, rec 2, in 5 themes)
+  B 29956 Norway spruce (proper, rec 4, in 2 themes)
+  B 30690 blue spruce (common, rec 3, in 2 themes)
+A 1751 amaryllis (common, rec 3, in 6 themes)
+  B 30693 red amaryllis (common, rec 3, in 1 themes)
+A 27965 tree [plant] (common, rec 1, in 7 themes)
+  B 30687 fir tree (common, rec 1, in 1 themes)
+
+T desert_plants | desert plants | 39 words
+A 1768 cactus (common, rec 1, in 10 themes)
+  B 30577 barrel cactus (common, rec 3, in 2 themes)
+  B 30589 organ pipe cactus (common, rec 4, in 2 themes)
+
+T thorny_plants | thorny plants | 37 words
+A 1651 hawthorn [tree] (common, rec 3, in 8 themes)
+  B 30706 hawthorn hedge (common, rec 3, in 1 themes)
+A 1693 rose [flower] (common, rec 1, in 13 themes)
+  B 30375 wild rose (common, rec 2, in 2 themes)
+A 1777 thistle [plant] (common, rec 2, in 15 themes)
+  B 30704 bull thistle (common, rec 4, in 1 themes)
+  B 60231 globe thistle (common, rec 4, in 1 themes)
+A 29953 holly [tree] (common, rec 2, in 12 themes)
+  B 31092 sea holly (common, rec 4, in 5 themes)
+A 60226 buckthorn (common, rec 4, in 1 themes)
+  B 16748 sea buckthorn (common, rec 5, in 5 themes)
+
+T seeds_and_pips | seeds and pips | 31 words
+A 17414 stone [fruit] (common, rec 1, in 2 themes)
+  B 30715 peach stone (common, rec 2, in 1 themes)
+  B 30716 cherry stone (common, rec 2, in 1 themes)
+  B 30717 avocado stone (common, rec 2, in 1 themes)
+
+T flowerless_plants | flowerless plants | 10 words
+A 1766 fern (common, rec 1, in 7 themes)
+  B 1811 tree fern (common, rec 3, in 3 themes)
+A 1767 moss (common, rec 1, in 10 themes)
+  B 1827 club moss (common, rec 5, in 2 themes)
+
+T garden | garden | 59 words
+A 1831 shed [garden building] (common, rec 1, in 6 themes)
+  B 1865 potting shed (common, rec 2, in 1 themes)
+A 1836 compost (common, rec 2, in 6 themes)
+  B 1864 compost bin (common, rec 2, in 2 themes)
+
+T garden_tools | garden tools | 34 words
+A 1854 hoe [tool] (common, rec 2, in 3 themes)
+  B 60238 Dutch hoe (common, rec 4, in 1 themes)
+A 30718 fork [garden] (common, rec 1, in 1 themes)
+  B 30725 hand fork (common, rec 3, in 1 themes)
+A 30719 shears (common, rec 2, in 2 themes)
+  B 1881 pruning shears (common, rec 3, in 3 themes)
+  B 30730 grass shears (common, rec 3, in 1 themes)
+
+T garden_features | garden features | 39 words
+A 1830 hedge [garden] (common, rec 1, in 4 themes)
+  B 60240 pleached hedge (common, rec 5, in 1 themes)
+
+T garden_furniture | garden furniture | 30 words
+A 339 bench [seat] (common, rec 1, in 9 themes)
+  B 60252 Lutyens bench (common, rec 5, in 1 themes)
+
+T garden_birds | garden birds | 43 words
+A 1068 sparrow (common, rec 1, in 7 themes)
+  B 8192 house sparrow (common, rec 2, in 3 themes)
+A 1109 thrush [bird] (common, rec 3, in 3 themes)
+  B 8168 song thrush (common, rec 3, in 2 themes)
+  B 8169 mistle thrush (common, rec 4, in 2 themes)
+
+T japanese_garden | japanese garden | 34 words | note: koi, bonsai, stone lantern, raked gravel, moss, teahouse, stepping stones
+A 1239 koi (common, rec 2, in 10 themes)
+  B 14056 koi pond (common, rec 3, in 2 themes)
+A 2050 stone [rock] (common, rec 1, in 17 themes)
+  B 14049 stone lantern (common, rec 3, in 2 themes)
+  B 30832 stone basin (common, rec 3, in 1 themes)
+A 30830 sand (common, rec 3, in 1 themes)
+  B 30836 sand ripples (common, rec 4, in 1 themes)
+
+T garden_helpers | garden helpers | 27 words
+A 1342 bee [insect] (common, rec 1, in 14 themes)
+  B 9061 mason bee (common, rec 4, in 3 themes)
+
+T river_features | river features | 35 words
+A 30861 bank [river] (common, rec 1, in 1 themes)
+  B 60300 cut bank (common, rec 5, in 1 themes)
+
+T desert_features | desert features | 31 words
+A 1929 dune (common, rec 2, in 6 themes)
+  B 30894 sand dune (common, rec 1, in 4 themes)
+  B 30896 star dune (common, rec 5, in 1 themes)
+
+T bodies_of_water | bodies of water | 37 words | note: lake, pond, lagoon, reservoir, loch, tarn, fjord, bay, gulf, estuary, sound
+A 1909 lake (common, rec 1, in 5 themes)
+  B 30865 oxbow lake (common, rec 4, in 3 themes)
+  B 60325 kettle lake (common, rec 5, in 1 themes)
+A 28110 sea [water body] (common, rec 1, in 8 themes)
+  B 60326 inland sea (common, rec 3, in 1 themes)
+
+T scottish_landscape_words | scottish landscape words | 37 words | note: glen, loch, ben, burn, brae, firth, strath, corrie, munro
+A 1956 glen (common, rec 3, in 3 themes)
+  B 30983 Glen Coe [valley] (place, rec 3, in 1 themes)
+A 27391 loch (common, rec 2, in 3 themes)
+  B 30984 sea loch (common, rec 4, in 1 themes)
+  B 30989 Loch Ness [lake] (place, rec 1, in 2 themes)
+A 29835 Ben [name] (proper, rec 1, in 2 themes)
+  B 30980 Ben Nevis [mountain] (place, rec 2, in 2 themes)
+A 30979 ness (common, rec 4, in 1 themes)
+  B 30989 Loch Ness [lake] (place, rec 1, in 2 themes)
+
+T island_types | island types | 30 words
+A 1948 atoll (common, rec 3, in 2 themes)
+  B 31014 coral atoll (common, rec 3, in 1 themes)
+A 30992 coral (common, rec 3, in 1 themes)
+  B 31014 coral atoll (common, rec 3, in 1 themes)
+A 30993 barrier (common, rec 4, in 1 themes)
+  B 31016 barrier reef island (common, rec 5, in 1 themes)
+A 30995 cay (common, rec 4, in 1 themes)
+  B 31009 sandy cay (common, rec 5, in 1 themes)
+A 31003 reef (common, rec 4, in 1 themes)
+  B 31016 barrier reef island (common, rec 5, in 1 themes)
+
+T seashells | seashells | 35 words | note: cowrie, conch, scallop, cockle, whelk, clam, abalone, nautilus, limpet, sand dollar
+A 506 cockle (common, rec 4, in 7 themes)
+  B 31038 heart cockle (common, rec 5, in 1 themes)
+A 1323 conch (common, rec 3, in 7 themes)
+  B 31037 queen conch (common, rec 4, in 1 themes)
+
+T rock_pool | rock pool life | 42 words | note: crab, starfish, limpet, anemone, barnacle, periwinkle, shrimp, blenny
+A 470 crab [animal] (common, rec 1, in 10 themes)
+  B 1311 hermit crab (common, rec 2, in 7 themes)
+  B 31046 shore crab (common, rec 4, in 1 themes)
+A 1297 anemone [sea creature] (common, rec 3, in 8 themes)
+  B 31045 beadlet anemone (common, rec 5, in 1 themes)
+  B 60327 snakelocks anemone (common, rec 5, in 1 themes)
+A 31039 blenny (common, rec 5, in 1 themes)
+  B 31051 tompot blenny (common, rec 5, in 1 themes)
+
+T coastal_features | coastal features | 43 words
+A 1915 beach [sandy shore] (common, rec 1, in 3 themes)
+  B 31085 barrier beach (common, rec 5, in 1 themes)
+  B 31086 raised beach (common, rec 5, in 1 themes)
+  B 31090 shingle beach (common, rec 3, in 1 themes)
+  B 60329 storm beach (common, rec 5, in 1 themes)
+
+T coastal_plants | coastal plants | 39 words | note: marram grass, sea holly, samphire, thrift, sea kale, sea lavender, mangrove
+A 454 samphire (common, rec 4, in 5 themes)
+  B 31105 rock samphire (common, rec 5, in 1 themes)
+  B 31114 marsh samphire (common, rec 5, in 1 themes)
+A 1292 kelp (common, rec 3, in 8 themes)
+  B 8967 bull kelp (common, rec 5, in 2 themes)
+
+T tides_and_currents | tides and currents | 45 words
+A 31128 current [water] (common, rec 1, in 3 themes)
+  B 31140 ocean current (common, rec 2, in 1 themes)
+  B 31149 cross current (common, rec 4, in 1 themes)
+  B 31150 sea current (common, rec 2, in 1 themes)
+  B 60333 Labrador Current (proper, rec 4, in 1 themes)
+A 31144 tide (common, rec 1, in 4 themes)
+  B 31141 tide table (common, rec 3, in 2 themes)
+
+T shipwreck_coast_words | shipwreck coast words | 40 words | note: lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn
+A 1974 fog (common, rec 1, in 6 themes)
+  B 31168 fog signal (common, rec 4, in 1 themes)
+A 2474 lighthouse (common, rec 1, in 7 themes)
+  B 31166 lighthouse keeper (common, rec 2, in 1 themes)
+A 2830 buoy (common, rec 2, in 8 themes)
+  B 31172 bell buoy (common, rec 4, in 2 themes)
+A 31077 reef [coral] (common, rec 2, in 2 themes)
+  B 31174 treacherous reef (common, rec 3, in 1 themes)
+A 31151 rocks (common, rec 1, in 1 themes)
+  B 31173 hidden rocks (common, rec 2, in 1 themes)
+
+T wave_words | wave words | 41 words
+A 32045 swell [ocean] (common, rec 3, in 4 themes)
+  B 31201 ground swell (common, rec 4, in 1 themes)
+
+T weather | weather | 70 words
+A 1969 wind [weather] (common, rec 1, in 6 themes)
+  B 2036 wind chill (common, rec 3, in 2 themes)
+A 1971 storm [bad weather] (common, rec 1, in 10 themes)
+  B 1978 electrical storm (common, rec 3, in 2 themes)
+A 1973 lightning [storm] (common, rec 1, in 4 themes)
+  B 2044 ball lightning (common, rec 4, in 2 themes)
+A 1983 shower [rain] (common, rec 1, in 4 themes)
+  B 2039 sun shower (common, rec 3, in 1 themes)
+A 2013 dew (common, rec 2, in 6 themes)
+  B 2041 dew point (common, rec 4, in 3 themes)
+
+T wind_words | wind words | 44 words
+A 1979 breeze (common, rec 1, in 5 themes)
+  B 31237 sea breeze (common, rec 2, in 4 themes)
+  B 31238 land breeze (common, rec 3, in 1 themes)
+  B 31253 stiff breeze (common, rec 3, in 1 themes)
+  B 31254 fresh breeze (common, rec 3, in 1 themes)
+
+T storms | storms | 40 words
+A 2008 cyclone (common, rec 2, in 4 themes)
+  B 31266 bomb cyclone (common, rec 4, in 1 themes)
+  B 31267 tropical cyclone (common, rec 3, in 1 themes)
+A 31262 tropical (common, rec 2, in 1 themes)
+  B 31267 tropical cyclone (common, rec 3, in 1 themes)
+
+T cloud_types | cloud types | 39 words
+A 59 cumulus (common, rec 3, in 2 themes)
+  B 31280 cumulus congestus (common, rec 5, in 1 themes)
+  B 60353 cumulus humilis (common, rec 5, in 1 themes)
+
+T weather_instruments | weather instruments | 42 words
+A 3461 thermometer (common, rec 1, in 17 themes)
+  B 31317 wet bulb thermometer (common, rec 5, in 1 themes)
+  B 31330 max-min thermometer (common, rec 5, in 1 themes)
+A 7230 barometer (common, rec 3, in 4 themes)
+  B 31320 aneroid barometer (common, rec 5, in 1 themes)
+  B 31321 mercury barometer (common, rec 4, in 1 themes)
+A 7239 anemometer (common, rec 4, in 3 themes)
+  B 31323 cup anemometer (common, rec 5, in 1 themes)
+A 31308 radar (common, rec 3, in 1 themes)
+  B 31326 doppler radar (common, rec 3, in 1 themes)
+A 31309 psychrometer (common, rec 5, in 1 themes)
+  B 31327 sling psychrometer (common, rec 5, in 1 themes)
+
+T forecast_words | forecast words | 54 words | note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility
+A 31370 front [weather] (common, rec 2, in 2 themes)
+  B 2018 cold front (common, rec 2, in 3 themes)
+  B 2033 warm front (common, rec 3, in 3 themes)
+  B 31377 occluded front (common, rec 5, in 2 themes)
+A 31371 pressure [weather] (common, rec 2, in 1 themes)
+  B 31375 high pressure (common, rec 2, in 2 themes)
+  B 31376 low pressure (common, rec 2, in 2 themes)
+  B 31394 barometric pressure (common, rec 3, in 1 themes)
+  B 31402 pressure system (common, rec 3, in 2 themes)
+
+T atmospheric_patterns | atmospheric patterns | 14 words
+A 31370 front [weather] (common, rec 2, in 2 themes)
+  B 2018 cold front (common, rec 2, in 3 themes)
+  B 2033 warm front (common, rec 3, in 3 themes)
+  B 31377 occluded front (common, rec 5, in 2 themes)
+
+T sky_phenomena | sky phenomena | 50 words | note: rainbow, aurora, halo, sundog, moonbow, mirage, green flash, crepuscular rays
+A 1982 rainbow [weather] (common, rec 1, in 5 themes)
+  B 31413 double rainbow (common, rec 2, in 1 themes)
+A 29903 Aurora [sky lights] (proper, rec 3, in 5 themes)
+  B 31411 aurora borealis (common, rec 3, in 2 themes)
+  B 31412 aurora australis (common, rec 4, in 2 themes)
+A 31404 halo [light] (common, rec 3, in 2 themes)
+  B 31420 sun halo (common, rec 4, in 2 themes)
+  B 31421 moon halo (common, rec 3, in 2 themes)
+
+T ice_crystal_effects | ice-crystal effects | 15 words
+A 31404 halo [light] (common, rec 3, in 2 themes)
+  B 31420 sun halo (common, rec 4, in 2 themes)
+  B 31421 moon halo (common, rec 3, in 2 themes)
+
+T night_sky_sights | night sky sights | 12 words
+A 29903 Aurora [sky lights] (proper, rec 3, in 5 themes)
+  B 31411 aurora borealis (common, rec 3, in 2 themes)
+  B 31412 aurora australis (common, rec 4, in 2 themes)
+
+T hot_weather_words | hot weather words | 44 words
+A 31452 scorcher (common, rec 3, in 1 themes)
+  B 60386 phew what a scorcher (phrase, rec 2, in 1 themes)
+
+T signs_of_spring | signs of spring | 45 words | note: buds, blossom, lambs, catkins, frogspawn, nesting, daffodils
+A 29857 Blossom (proper, rec 2, in 4 themes)
+  B 2540 cherry blossom (phrase, rec 2, in 9 themes)
+A 31479 showers (common, rec 1, in 1 themes)
+  B 31488 April showers (common, rec 1, in 1 themes)
+
+T signs_of_autumn | signs of autumn | 48 words | note: falling leaves, acorns, conkers, migration, frost, fungi, harvest
+A 25084 harvest [crop gathering] (common, rec 2, in 8 themes)
+  B 31538 harvest moon (common, rec 2, in 2 themes)
+  B 31551 harvest festival (common, rec 2, in 2 themes)
+
+T signs_of_winter | signs of winter | 49 words | note: frost, icicles, bare trees, hibernation, snow, short days, holly
+A 1981 frost [icy coating] (common, rec 1, in 8 themes)
+  B 31570 hard frost (common, rec 2, in 1 themes)
+A 39079 ice [frozen water] (common, rec 1, in 15 themes)
+  B 2016 black ice (common, rec 2, in 4 themes)
+  B 31566 ice on windscreen (common, rec 2, in 1 themes)
+
+T nature_at_night | nature at night | 48 words | note: owls, bats, moths, fireflies, dew, moonlight, glowworms, hedgehogs
+A 31584 stars [sky] (common, rec 1, in 1 themes)
+  B 31591 shooting stars (common, rec 1, in 1 themes)
+A 31595 hawkmoth (common, rec 4, in 1 themes)
+  B 9045 death's-head hawkmoth (common, rec 4, in 2 themes)
+
+T monsoon_season | monsoon season | 48 words | note: downpour, flood, paddy fields, leeches, humidity, puddles, umbrellas
+A 2001 flood [weather] (common, rec 1, in 4 themes)
+  B 31222 flash flood (common, rec 2, in 3 themes)
+
+T dry_season | dry season | 48 words | note: drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub
+A 23180 dust [dirt] (common, rec 1, in 7 themes)
+  B 30893 dust devil (common, rec 3, in 2 themes)
+  B 31257 dust storm (common, rec 2, in 3 themes)
+  B 31653 dust cloud (common, rec 2, in 1 themes)
+  B 60406 dust bowl (common, rec 4, in 1 themes)
+A 31527 migration [animals] (common, rec 2, in 3 themes)
+  B 31650 wildebeest migration (common, rec 2, in 1 themes)
+
+T rocks_and_minerals | rocks and minerals | 69 words
+A 2050 stone [rock] (common, rec 1, in 17 themes)
+  B 2079 pumice stone (common, rec 2, in 13 themes)
+
+T gemstones | gemstones | 61 words
+A 2061 quartz [crystal mineral] (common, rec 2, in 7 themes)
+  B 31680 rose quartz [gem] (common, rec 3, in 2 themes)
+  B 31681 smoky quartz (common, rec 4, in 1 themes)
+A 28347 opal [gem] (common, rec 4, in 5 themes)
+  B 31690 black opal (common, rec 3, in 1 themes)
+  B 31693 fire opal (common, rec 4, in 1 themes)
+A 31659 sapphire [gem] (common, rec 1, in 7 themes)
+  B 31694 star sapphire (common, rec 4, in 2 themes)
+
+T quartz_varieties | quartz varieties | 28 words | note: amethyst, citrine, rose quartz, agate, onyx, jasper, carnelian, tiger's eye
+A 29878 Agate [gemstone] (proper, rec 4, in 3 themes)
+  B 56588 moss agate (common, rec 4, in 1 themes)
+
+T blue_gems | blue gems | 9 words
+A 31659 sapphire [gem] (common, rec 1, in 7 themes)
+  B 31694 star sapphire (common, rec 4, in 2 themes)
+
+T metals | metals | 73 words
+A 201 iron [metal] (common, rec 1, in 12 themes)
+  B 31735 cast iron (common, rec 2, in 4 themes)
+  B 31736 wrought iron (common, rec 3, in 1 themes)
+  B 31737 pig iron (common, rec 4, in 1 themes)
+A 202 gold [metal] (common, rec 1, in 9 themes)
+  B 31739 white gold (common, rec 2, in 3 themes)
+  B 31740 rose gold (common, rec 2, in 4 themes)
+A 203 silver [metal] (common, rec 1, in 8 themes)
+  B 31738 sterling silver (common, rec 3, in 3 themes)
+A 7397 steel [metal] (common, rec 1, in 12 themes)
+  B 31734 stainless steel (common, rec 1, in 4 themes)
+
+T sedimentary_rocks | sedimentary rocks | 29 words | note: sandstone, limestone, shale, chalk, coal, conglomerate, flint, mudstone
+A 2080 shale (common, rec 3, in 3 themes)
+  B 32347 oil shale (common, rec 4, in 4 themes)
+
+T building_stones | building stones | 36 words
+A 31746 marble [rock] (common, rec 1, in 2 themes)
+  B 31778 Carrara marble (common, rec 3, in 1 themes)
+
+T mining_words | mining words | 47 words | note: shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter
+A 31788 mine [pit] (common, rec 1, in 1 themes)
+  B 22917 coal mine (common, rec 1, in 3 themes)
+  B 31795 mine cart (common, rec 2, in 1 themes)
+  B 31804 gold mine (common, rec 1, in 1 themes)
+A 31789 pit [mine] (common, rec 2, in 1 themes)
+  B 31799 open pit (common, rec 3, in 1 themes)
+  B 60427 pit pony (common, rec 3, in 1 themes)
+
+T gold_rush_words | gold rush words | 34 words | note: prospector, claim, panning, sluice, boomtown, forty-niner, Klondike
+A 31805 claim [mining] (common, rec 2, in 1 themes)
+  B 31814 claim jumper (common, rec 4, in 1 themes)
+  B 31828 stake a claim (common, rec 2, in 1 themes)
+
+T natural_disasters | natural disasters | 39 words
+A 2001 flood [weather] (common, rec 1, in 4 themes)
+  B 31222 flash flood (common, rec 2, in 3 themes)
+
+T volcano_words | volcano words | 48 words
+A 28044 lava [molten rock] (common, rec 2, in 6 themes)
+  B 30939 lava tube (common, rec 4, in 2 themes)
+  B 31855 lava flow (common, rec 2, in 2 themes)
+  B 31856 lava lake (common, rec 4, in 1 themes)
+  B 32023 lava dome (common, rec 4, in 2 themes)
+  B 60432 pillow lava (common, rec 5, in 1 themes)
+A 31839 magma (common, rec 2, in 3 themes)
+  B 31849 magma chamber (common, rec 3, in 1 themes)
+A 31840 eruption (common, rec 1, in 1 themes)
+  B 60430 Plinian eruption (common, rec 5, in 1 themes)
+  B 60431 phreatic eruption (common, rec 5, in 1 themes)
+A 31841 ash [volcanic] (common, rec 1, in 1 themes)
+  B 31845 ash cloud (common, rec 2, in 1 themes)
+  B 31863 volcanic ash (common, rec 2, in 1 themes)
+A 31844 cone [volcano] (common, rec 2, in 1 themes)
+  B 31862 spatter cone (common, rec 5, in 1 themes)
+
+T earthquake_words | earthquake words | 36 words
+A 7245 magnitude (common, rec 4, in 3 themes)
+  B 31887 moment magnitude (common, rec 5, in 1 themes)
+A 31868 fault [geology] (common, rec 2, in 3 themes)
+  B 31869 fault line (common, rec 2, in 1 themes)
+A 31878 seismic (common, rec 3, in 1 themes)
+  B 31877 seismic wave (common, rec 3, in 1 themes)
+  B 31895 seismic zone (common, rec 4, in 1 themes)
+
+T layers_of_the_earth | layers of the earth | 21 words
+A 201 iron [metal] (common, rec 1, in 12 themes)
+  B 31908 molten iron (common, rec 3, in 1 themes)
+A 20831 mantle [cloak] (common, rec 3, in 3 themes)
+  B 31906 upper mantle (common, rec 4, in 1 themes)
+  B 31907 lower mantle (common, rec 4, in 1 themes)
+A 28647 crust (common, rec 1, in 3 themes)
+  B 31904 continental crust (common, rec 4, in 1 themes)
+  B 31905 oceanic crust (common, rec 4, in 1 themes)
+A 31898 core [earth] (common, rec 1, in 1 themes)
+  B 31899 outer core (common, rec 3, in 2 themes)
+  B 31900 inner core (common, rec 3, in 2 themes)
+  B 31913 solid core (common, rec 3, in 1 themes)
+  B 31914 liquid core (common, rec 3, in 1 themes)
+
+T geothermal_words | geothermal words | 40 words | note: geyser, hot spring, fumarole, mud pool, steam vent, sulfur, onsen
+A 16570 steam [vapor] (common, rec 1, in 5 themes)
+  B 31940 steam vent (common, rec 3, in 1 themes)
+  B 60444 dry steam (common, rec 5, in 1 themes)
+
+T water_cycle_words | water cycle words | 40 words | note: evaporation, condensation, precipitation, runoff, groundwater, aquifer
+A 1908 river [water] (common, rec 1, in 6 themes)
+  B 60374 atmospheric river (common, rec 4, in 2 themes)
+A 2013 dew (common, rec 2, in 6 themes)
+  B 2041 dew point (common, rec 4, in 3 themes)
+
+T rainforest | rainforest | 41 words
+A 982 monkey [animal] (common, rec 1, in 7 themes)
+  B 7811 howler monkey (common, rec 3, in 6 themes)
+
+T ocean | ocean | 54 words
+A 28110 sea [water body] (common, rec 1, in 8 themes)
+  B 1288 sea star (common, rec 3, in 10 themes)
+  B 1291 sea grass [seagrass] (common, rec 3, in 15 themes)
+  B 1293 sea turtle (common, rec 2, in 9 themes)
+  B 37013 Sargasso Sea (place, rec 3, in 1 themes)
+A 32036 trench [ocean] (common, rec 3, in 4 themes)
+  B 60464 Mariana Trench (place, rec 3, in 2 themes)
+
+T seafloor_features | seafloor features | 10 words
+A 32036 trench [ocean] (common, rec 3, in 4 themes)
+  B 60464 Mariana Trench (place, rec 3, in 2 themes)
+
+T desert | desert | 49 words
+A 1137 lizard [reptile] (common, rec 1, in 11 themes)
+  B 1184 horned lizard (common, rec 4, in 7 themes)
+A 1929 dune (common, rec 2, in 6 themes)
+  B 30894 sand dune (common, rec 1, in 4 themes)
+
+T polar_regions | polar regions | 53 words
+A 1028 seal [animal] (common, rec 2, in 7 themes)
+  B 8902 leopard seal (common, rec 3, in 6 themes)
+  B 9704 Weddell seal (common, rec 4, in 4 themes)
+A 1064 penguin [bird] (common, rec 1, in 12 themes)
+  B 8234 emperor penguin (common, rec 1, in 5 themes)
+  B 8236 Adelie penguin (proper, rec 4, in 5 themes)
+A 1967 snow [weather] (common, rec 1, in 17 themes)
+  B 9705 snow petrel (common, rec 4, in 4 themes)
+A 30905 ice shelf (common, rec 3, in 8 themes)
+  B 21054 Ross Ice Shelf (place, rec 4, in 4 themes)
+A 32061 Arctic [region] (place, rec 1, in 5 themes)
+  B 7963 arctic fox (common, rec 2, in 5 themes)
+A 39079 ice [frozen water] (common, rec 1, in 15 themes)
+  B 21052 ice floe (common, rec 3, in 4 themes)
+  B 21054 Ross Ice Shelf (place, rec 4, in 4 themes)
+  B 30901 ice sheet (common, rec 3, in 2 themes)
+  B 30904 pack ice (common, rec 3, in 4 themes)
+  B 30905 ice shelf (common, rec 3, in 8 themes)
+  B 32179 brash ice (common, rec 5, in 3 themes)
+
+T animals_of_the_far_south | animals of the far south | 8 words
+A 1064 penguin [bird] (common, rec 1, in 12 themes)
+  B 8234 emperor penguin (common, rec 1, in 5 themes)
+  B 8236 Adelie penguin (proper, rec 4, in 5 themes)
+
+T frozen_formations | frozen formations | 12 words
+A 30905 ice shelf (common, rec 3, in 8 themes)
+  B 21054 Ross Ice Shelf (place, rec 4, in 4 themes)
+A 39079 ice [frozen water] (common, rec 1, in 15 themes)
+  B 21052 ice floe (common, rec 3, in 4 themes)
+  B 21054 Ross Ice Shelf (place, rec 4, in 4 themes)
+  B 30901 ice sheet (common, rec 3, in 2 themes)
+  B 30904 pack ice (common, rec 3, in 4 themes)
+  B 30905 ice shelf (common, rec 3, in 8 themes)
+  B 32179 brash ice (common, rec 5, in 3 themes)
+
+T wetlands | wetlands | 47 words
+A 1925 marsh [wetland] (common, rec 2, in 3 themes)
+  B 31083 salt marsh (common, rec 3, in 2 themes)
+  B 60467 marsh harrier (common, rec 5, in 1 themes)
+
+T meadow | meadow | 51 words | note: grass, poppies, clover, buttercups, butterflies, bees, hay, skylark
+A 1695 daisy (common, rec 1, in 13 themes)
+  B 30355 oxeye daisy (common, rec 3, in 5 themes)
+A 1769 grass [plant] (common, rec 1, in 4 themes)
+  B 32098 timothy grass (common, rec 5, in 1 themes)
+A 1776 clover (common, rec 2, in 10 themes)
+  B 32099 red clover (common, rec 3, in 1 themes)
+A 28409 field [open land] (common, rec 3, in 5 themes)
+  B 7850 field mouse (common, rec 2, in 2 themes)
+
+T grassland_blooms | grassland blooms | 22 words
+A 1695 daisy (common, rec 1, in 13 themes)
+  B 30355 oxeye daisy (common, rec 3, in 5 themes)
+
+T pond | pond | 44 words | note: frog, tadpole, newt, lily pad, reeds, dragonfly, pondweed, moorhen, frogspawn
+A 1147 newt (common, rec 2, in 10 themes)
+  B 1211 smooth newt (common, rec 5, in 2 themes)
+  B 8682 great crested newt (common, rec 4, in 2 themes)
+A 1367 snail (common, rec 1, in 15 themes)
+  B 32101 water snail (common, rec 2, in 1 themes)
+  B 60475 ramshorn snail (common, rec 5, in 1 themes)
+
+T taiga | taiga | 61 words | note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger
+A 994 bear [animal] (common, rec 1, in 9 themes)
+  B 7944 brown bear (common, rec 1, in 7 themes)
+  B 7946 grizzly bear (common, rec 1, in 8 themes)
+  B 7947 Kodiak bear (proper, rec 3, in 2 themes)
+  B 7949 American black bear (proper, rec 3, in 2 themes)
+  B 7950 black bear (common, rec 1, in 3 themes)
+  B 7951 cinnamon bear (common, rec 4, in 3 themes)
+A 995 wolf [animal] (common, rec 1, in 11 themes)
+  B 7964 grey wolf (common, rec 2, in 4 themes)
+  B 7966 timber wolf (common, rec 3, in 5 themes)
+A 1063 owl (common, rec 1, in 15 themes)
+  B 50571 great grey owl (common, rec 4, in 1 themes)
+A 1629 pine [tree] (common, rec 1, in 8 themes)
+  B 30087 pine cone (common, rec 1, in 4 themes)
+  B 60477 jack pine (common, rec 5, in 2 themes)
+  B 60479 pine grosbeak (common, rec 5, in 1 themes)
+A 1639 spruce (common, rec 2, in 5 themes)
+  B 60476 black spruce (common, rec 5, in 2 themes)
+
+T needle_leaf_trees | needle-leaf trees | 9 words
+A 1629 pine [tree] (common, rec 1, in 8 themes)
+  B 60477 jack pine (common, rec 5, in 2 themes)
+A 1639 spruce (common, rec 2, in 5 themes)
+  B 60476 black spruce (common, rec 5, in 2 themes)
+
+T oasis | oasis | 45 words | note: date palm, well, spring, camel, caravan, shade, pool, nomad
+A 359 date [fruit] (common, rec 2, in 4 themes)
+  B 29980 date palm (common, rec 2, in 8 themes)
+A 1002 camel [animal] (common, rec 1, in 15 themes)
+  B 32121 camel train (common, rec 3, in 2 themes)
+
+T outback | outback | 54 words | note: red dirt, spinifex, billabong, kangaroo, dingo, road train, station, termite mound
+A 151 sheep [farm animal] (common, rec 1, in 8 themes)
+  B 32136 sheep station (common, rec 3, in 1 themes)
+A 984 kangaroo (common, rec 1, in 15 themes)
+  B 7899 red kangaroo (common, rec 2, in 6 themes)
+A 32129 station [farm] (common, rec 2, in 1 themes)
+  B 32136 sheep station (common, rec 3, in 1 themes)
+  B 32137 cattle station (common, rec 3, in 1 themes)
+
+T australian_wildlife | australian wildlife | 13 words
+A 984 kangaroo (common, rec 1, in 15 themes)
+  B 7899 red kangaroo (common, rec 2, in 6 themes)
+
+T andes | andes | 47 words | note: llama, alpaca, condor, vicuna, glacier, terraces, altiplano, puna
+A 1105 condor [bird] (common, rec 2, in 11 themes)
+  B 2561 Andean condor (proper, rec 4, in 6 themes)
+A 20433 Inca [Andean empire] (proper, rec 2, in 4 themes)
+  B 32160 Inca Trail (common, rec 3, in 3 themes)
+
+T prairie | prairie | 50 words | note: bison, prairie dog, pronghorn, tallgrass, tornado, ranch, meadowlark
+A 1007 buffalo [bison] (common, rec 2, in 11 themes)
+  B 60209 buffalo grass (common, rec 3, in 2 themes)
+
+T antarctic_coast | antarctic coast | 36 words | note: penguin, seal, iceberg, krill, ice shelf, research station, skua
+A 1028 seal [animal] (common, rec 2, in 7 themes)
+  B 8897 fur seal (common, rec 3, in 5 themes)
+  B 8898 elephant seal (common, rec 3, in 5 themes)
+  B 8902 leopard seal (common, rec 3, in 6 themes)
+  B 9704 Weddell seal (common, rec 4, in 4 themes)
+  B 9706 crabeater seal (common, rec 4, in 2 themes)
+A 1064 penguin [bird] (common, rec 1, in 12 themes)
+  B 8234 emperor penguin (common, rec 1, in 5 themes)
+  B 8236 Adelie penguin (proper, rec 4, in 5 themes)
+  B 8237 chinstrap penguin (common, rec 4, in 3 themes)
+A 29374 iceberg (common, rec 1, in 13 themes)
+  B 32177 tabular iceberg (common, rec 5, in 1 themes)
+
+T renewable_energy | renewable energy | 32 words
+A 32232 geothermal (common, rec 3, in 4 themes)
+  B 32258 geothermal well (common, rec 5, in 1 themes)
+A 32238 wave (common, rec 3, in 2 themes)
+  B 32253 wave buoy (common, rec 5, in 1 themes)
+A 32244 hydrogen (common, rec 2, in 8 themes)
+  B 32256 green hydrogen (common, rec 4, in 1 themes)
+
+T conservation_words | conservation words | 44 words
+A 32266 poaching (common, rec 3, in 3 themes)
+  B 32277 anti-poaching (common, rec 4, in 1 themes)
+
+T endangered_animals | endangered animals | 36 words
+A 216 tiger [animal] (common, rec 1, in 9 themes)
+  B 7751 Siberian tiger (proper, rec 2, in 4 themes)
+  B 7752 Amur tiger (proper, rec 4, in 4 themes)
+
+T fossil_fuels | fossil fuels | 43 words | note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands
+A 2054 coal (common, rec 1, in 9 themes)
+  B 22917 coal mine (common, rec 1, in 3 themes)
+  B 32334 bituminous coal (common, rec 5, in 1 themes)
+  B 32346 coal seam (common, rec 4, in 1 themes)
+  B 60508 cannel coal (common, rec 5, in 1 themes)
+  B 60510 coal tar (common, rec 4, in 1 themes)
+A 32326 oil [fuel] (common, rec 1, in 5 themes)
+  B 32332 crude oil (common, rec 2, in 2 themes)
+  B 32337 oil rig (common, rec 1, in 1 themes)
+  B 32338 oil well (common, rec 1, in 1 themes)
+  B 32347 oil shale (common, rec 4, in 4 themes)
+  B 32350 heating oil [fuel oil] (common, rec 3, in 2 themes)
+A 32327 natural gas (common, rec 2, in 5 themes)
+  B 32344 natural gas liquids (common, rec 5, in 1 themes)
+
+T green_living_words | green living words | 36 words | note: composting, upcycling, carpooling, reusable, refill, solar panel, rewilding
+A 32355 reusable (common, rec 2, in 1 themes)
+  B 32356 reusable bag (common, rec 1, in 1 themes)
+  B 32364 reusable cup (common, rec 2, in 1 themes)
+
+T western_european_countries | western european countries | 26 words
+A 2138 Ireland (place, rec 1, in 10 themes)
+  B 50 Northern Ireland (place, rec 2, in 3 themes)
+
+T balkan_countries | balkan countries | 11 words
+A 36139 Macedonia (place, rec 3, in 5 themes)
+  B 35684 North Macedonia (place, rec 3, in 5 themes)
+A 36140 Bosnia (place, rec 3, in 5 themes)
+  B 35685 Bosnia and Herzegovina (place, rec 3, in 4 themes)
+
+T african_countries | african countries | 51 words
+A 35734 Guinea [country] (place, rec 3, in 6 themes)
+  B 35743 Equatorial Guinea (place, rec 4, in 4 themes)
+  B 35744 Guinea-Bissau (place, rec 4, in 2 themes)
+
+T west_african_countries | west african countries | 17 words
+A 35734 Guinea [country] (place, rec 3, in 6 themes)
+  B 35744 Guinea-Bissau (place, rec 4, in 2 themes)
+
+T east_african_countries | east african countries | 22 words
+A 35714 Sudan (place, rec 2, in 4 themes)
+  B 35773 South Sudan (place, rec 3, in 2 themes)
+
+T french_speaking_countries | french-speaking countries | 34 words | note: French is an official or widely used language
+A 35734 Guinea [country] (place, rec 3, in 6 themes)
+  B 35743 Equatorial Guinea (place, rec 4, in 4 themes)
+
+T russian_cities | russian cities | 32 words
+A 56986 Novgorod (place, rec 4, in 1 themes)
+  B 56966 Nizhny Novgorod (place, rec 4, in 1 themes)
+
+T us_states | us states | 50 words | note: Exactly the 50 US states; see the words.
+A 36170 Virginia [US state] (place, rec 1, in 4 themes)
+  B 36192 West Virginia (place, rec 2, in 1 themes)
+
+T mexican_states | mexican states | 32 words | note: Exactly the 32 federal entities of Mexico (31 states plus Mexico City); see the words.
+A 36234 Baja California (place, rec 3, in 2 themes)
+  B 36235 Baja California Sur (place, rec 4, in 1 themes)
+
+T australian_states_and_regions | australian states and regions | 31 words | note: states, territories and well-known regions: Outback, Kimberley, Top End, Gold Coast
+A 36239 Queensland (place, rec 2, in 4 themes)
+  B 36260 Far North Queensland (place, rec 4, in 1 themes)
+
+T french_regions | french regions | 34 words | note: current and traditional: Brittany, Normandy, Provence, Alsace
+A 36309 Aquitaine (place, rec 4, in 1 themes)
+  B 36332 Nouvelle-Aquitaine (place, rec 4, in 1 themes)
+
+T spanish_regions | spanish regions | 28 words
+A 36342 Castile (place, rec 3, in 1 themes)
+  B 36354 Castile and León (place, rec 4, in 1 themes)
+  B 36363 Old Castile (place, rec 5, in 1 themes)
+  B 36364 New Castile (place, rec 5, in 1 themes)
+A 36357 La Mancha (place, rec 3, in 1 themes)
+  B 36353 Castilla-La Mancha (place, rec 4, in 1 themes)
+
+T german_states | german states | 16 words | note: Exactly: Berlin, Hamburg, Bavaria, Bremen, Saxony, Hesse, Brandenburg, Thuringia, Saarland, Lower Saxony, Schleswig-Hols
+A 36391 Saxony (place, rec 3, in 1 themes)
+  B 36397 Lower Saxony (place, rec 3, in 1 themes)
+  B 36399 Saxony-Anhalt (place, rec 4, in 1 themes)
+
+T caribbean_islands | caribbean islands | 30 words
+A 63167 Cayman (place, rec 3, in 1 themes)
+  B 57185 Grand Cayman (place, rec 3, in 1 themes)
+
+T african_rivers | african rivers | 28 words
+A 6661 Nile [river] (place, rec 2, in 6 themes)
+  B 57246 Blue Nile (place, rec 3, in 1 themes)
+  B 57247 White Nile (place, rec 4, in 1 themes)
+
+T european_waters | european waters | 17 words
+A 37000 Mediterranean [sea] (place, rec 1, in 2 themes)
+  B 36999 Mediterranean Sea (place, rec 1, in 1 themes)
+
+T ancient_wonders | wonders of the world | 29 words | note: the Seven Wonders of the Ancient World and the New Seven Wonders
+A 6624 Babylon (place, rec 2, in 6 themes)
+  B 60560 Gardens of Babylon (place, rec 3, in 5 themes)
+A 20344 Giza (place, rec 2, in 5 themes)
+  B 2317 Pyramids of Giza (place, rec 1, in 3 themes)
+  B 37205 Great Pyramid of Giza (place, rec 1, in 2 themes)
+A 37767 Olympia [Greece] (place, rec 3, in 4 themes)
+  B 60561 Zeus at Olympia (place, rec 5, in 3 themes)
+
+T famous_museums | famous museums | 42 words
+A 2351 Louvre (place, rec 2, in 3 themes)
+  B 37319 Louvre Abu Dhabi (place, rec 4, in 1 themes)
+
+T egyptian_landmarks | egyptian landmarks | 39 words
+A 20344 Giza (place, rec 2, in 5 themes)
+  B 2317 Pyramids of Giza (place, rec 1, in 3 themes)
+  B 37205 Great Pyramid of Giza (place, rec 1, in 2 themes)
+
+T new_zealand_landmarks | new zealand landmarks | 48 words
+A 37638 Tongariro (place, rec 4, in 1 themes)
+  B 48696 Tongariro Crossing (place, rec 5, in 2 themes)
+
+T greek_landmarks | greek landmarks | 38 words
+A 21806 Knossos (place, rec 4, in 6 themes)
+  B 37157 Palace of Knossos (place, rec 4, in 1 themes)
+
+T maps_and_globes | maps and globes | 64 words
+A 2395 map [chart of places] (common, rec 1, in 10 themes)
+  B 2437 map reference (phrase, rec 3, in 2 themes)
+A 2421 meridian (common, rec 3, in 2 themes)
+  B 2419 prime meridian (phrase, rec 3, in 2 themes)
+  B 2420 Greenwich Meridian (place, rec 4, in 2 themes)
+A 2434 projection [map] (common, rec 3, in 2 themes)
+  B 2435 Mercator projection (proper, rec 3, in 3 themes)
+A 2448 triangulation (common, rec 4, in 1 themes)
+  B 2450 triangulation pillar (phrase, rec 5, in 1 themes)
+
+T continents_and_supercontinents | continents and supercontinents | 27 words | note: Africa, Asia, Europe, Eurasia, Oceania, Pangaea, Gondwana, Laurasia
+A 1620 Pangaea (proper, rec 3, in 2 themes)
+  B 37831 Pangaea Proxima (place, rec 5, in 1 themes)
+
+T lines_on_a_map | lines on a map | 33 words
+A 2421 meridian (common, rec 3, in 2 themes)
+  B 2419 prime meridian (phrase, rec 3, in 2 themes)
+  B 2420 Greenwich Meridian (place, rec 4, in 2 themes)
+A 2422 parallel [latitude] (common, rec 3, in 2 themes)
+  B 37874 49th parallel (common, rec 4, in 1 themes)
+  B 37875 38th parallel (common, rec 3, in 1 themes)
+
+T map_words | map words | 33 words
+A 2408 scale [map] (common, rec 2, in 2 themes)
+  B 37890 scale bar (common, rec 3, in 1 themes)
+A 2434 projection [map] (common, rec 3, in 2 themes)
+  B 2435 Mercator projection (proper, rec 3, in 3 themes)
+A 37884 grid [map grid] (common, rec 2, in 2 themes)
+  B 2436 grid reference (phrase, rec 3, in 2 themes)
+
+T kinds_of_maps | kinds of maps | 32 words | note: road map, atlas, globe, chart, street plan, relief map
+A 37893 chart [sea chart] (common, rec 2, in 1 themes)
+  B 2442 nautical chart (phrase, rec 3, in 2 themes)
+  B 21037 star chart (common, rec 2, in 3 themes)
+  B 37906 bathymetric chart (common, rec 5, in 1 themes)
+
+T compass_directions | compass directions | 16 words | note: the 16 points of the compass
+A 43 north [compass direction] (common, rec 1, in 3 themes)
+  B 37921 north-northeast (common, rec 3, in 1 themes)
+  B 37928 north-northwest (common, rec 3, in 1 themes)
+A 44 south (common, rec 1, in 2 themes)
+  B 37924 south-southeast (common, rec 3, in 1 themes)
+  B 37925 south-southwest (common, rec 3, in 1 themes)
+A 45 east (common, rec 1, in 2 themes)
+  B 37922 east-northeast (common, rec 3, in 1 themes)
+  B 37923 east-southeast (common, rec 3, in 1 themes)
+A 46 west (common, rec 1, in 2 themes)
+  B 37926 west-southwest (common, rec 3, in 1 themes)
+  B 37927 west-northwest (common, rec 3, in 1 themes)
+A 37912 northeast [compass direction] (common, rec 1, in 2 themes)
+  B 37921 north-northeast (common, rec 3, in 1 themes)
+  B 37922 east-northeast (common, rec 3, in 1 themes)
+A 37915 southeast (common, rec 1, in 2 themes)
+  B 37923 east-southeast (common, rec 3, in 1 themes)
+  B 37924 south-southeast (common, rec 3, in 1 themes)
+A 37917 southwest [direction] (common, rec 1, in 2 themes)
+  B 37925 south-southwest (common, rec 3, in 1 themes)
+  B 37926 west-southwest (common, rec 3, in 1 themes)
+A 37919 northwest (common, rec 1, in 2 themes)
+  B 37927 west-northwest (common, rec 3, in 1 themes)
+  B 37928 north-northwest (common, rec 3, in 1 themes)
