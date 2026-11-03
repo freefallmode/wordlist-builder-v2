@@ -184,7 +184,7 @@ export function buildExport(P, opt0 = {}) {
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
     const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
     const [rlo, rhi] = rMask(f.region);
-    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, pr ? pr.median : 0, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || ''];
+    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || ''];
     if (o.notes) row.push(t.note);
     return row;
   });
@@ -192,8 +192,8 @@ export function buildExport(P, opt0 = {}) {
   const file = {
     v: 3, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
     dialect: dialectOf(P), options: o, regions, regionBits: REGION_BITS, kindNames: THEME_KINDS, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
-    // difficulty = median difficulty of the theme's roots; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
-    themeFields: ['id', 'name', 'parent', 'flags', 'difficulty', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule'].concat(o.notes ? ['note'] : []),
+    // popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
+    themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
     // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, popularity, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
     // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups): never put two with the same id in one level.

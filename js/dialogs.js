@@ -3,12 +3,12 @@ import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './d
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
-  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, themeProfile, dialectOf, descendants } from './model.js';
+  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } from './export.js';
 import { download } from './store.js';
-import { MODELS, getKey, setKey, getModel, setModel, generateWords, rateThemes, SPREADS } from './ai.js';
+import { MODELS, getKey, setKey, getModel, setModel, generateWords, SPREADS } from './ai.js';
 
 const REC_OPTS = REC_HELP.map((l, i) => [i, l]);
 const IN_OPTS = [[0, 'auto'], ...POP_HELP.slice(1).map((l, i) => [i + 1, l])];
@@ -48,7 +48,6 @@ export async function editTheme(t, isNew = false) {
     tkind: select(THEME_KINDS.map(k => [k, k]), w.tkind || 'category'),
     rule: h('input', { value: w.rule || '', placeholder: 'hidden:tree, rhyme:ake, palindrome, compound-end:bag, compound-start:snow' }),
     pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
-    diff: select([[0, 'worked out from the words' + (isNew ? '' : ' (now ' + (themeProfile(P, t.id).auto || 'none') + ')')], [1, '1 (easiest)'], [2, '2'], [3, '3'], [4, '4'], [5, '5 (hardest)']], w.diff || 0),
   };
   const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang', 'nameOk'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
@@ -63,8 +62,7 @@ export async function editTheme(t, isNew = false) {
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
     field('Rule', f.rule, 'Wordplay and compound themes only: how the game tests a word. hidden:<what>, rhyme:<ending>, palindrome, anagram, homophone, onomatopoeia, double-letters, starts:<what>, ends:<ending>, contains:<letters>, compound-end:<word> for ___ word, compound-start:<word> for word ___, or other.'),
-    field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). Difficulty is worked out from the words.'),
-    field('Theme difficulty', f.diff, 'Normally worked out from the words (the median of their difficulty). Set it to override that for this theme.'),
+    field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). How hard a theme is to serve is worked out from its words.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
   return dialog(isNew ? 'New theme' : 'Theme: ' + t.name, body, [
@@ -80,7 +78,6 @@ export async function editTheme(t, isNew = false) {
       if (pname && !parent) throw Error('Parent theme not found.');
       if (parent && (parent === t.id || (!isNew && isAncestor(P, t.id, parent)))) throw Error('A theme cannot be inside itself.');
       Object.assign(w, { name, note: f.note.value.trim(), pop: +f.pop.value });
-      if (+f.diff.value) w.diff = +f.diff.value; else delete w.diff;
       const tk = f.tkind.value, rule = f.rule.value.trim();
       if (tk === 'compound' && !/^compound-(end|start):./.test(rule)) throw Error('A compound theme needs a rule: compound-end:<word> or compound-start:<word>.');
       if (tk === 'wordplay' && !rule) throw Error('A wordplay theme needs a rule (or other).');
@@ -90,7 +87,6 @@ export async function editTheme(t, isNew = false) {
       w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
       const oldParent = t.parent;
       Object.assign(t, w, { parent: oldParent });
-      if (!w.diff) delete t.diff;
       if (!w.tkind) delete t.tkind;
       if (!w.rule) delete t.rule;
       if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindex(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
@@ -278,15 +274,14 @@ export async function generate(tid) {
     extra: h('input', { placeholder: 'optional, e.g. include some tropical ones' }),
   };
   const out = h('div.gen');
-  let result = null, ctl = null, themeD = 0;
+  let result = null, ctl = null;
   const run = async st => {
     setModel(f.model.value);
     st.textContent = 'Asking Claude…'; st.classList.remove('err');
     ctl = new AbortController();
     const r = await generateWords(P, t, { n: +f.n.value || 20, spread: f.spread.value, extra: f.extra.value, model: f.model.value, signal: ctl.signal });
     result = r.entries.map(x => ({ ...x, take: true }));
-    themeD = Math.max(1, Math.min(5, Math.round(+r.themeDifficulty) || 0));
-    st.textContent = `${plural(result.length, 'entry')}${t.d ? '' : ` · theme difficulty ${themeD}`} · cost $${r.cost.toFixed(3)}`;
+    st.textContent = `${plural(result.length, 'entry')} · cost $${r.cost.toFixed(3)}`;
     draw();
     return false;
   };
@@ -325,7 +320,6 @@ export async function generate(tid) {
         reindex(P); created++;
       }
     }
-    if (!t.d && themeD) t.d = themeD;
     A.changed();
     toast(`${plural(created, 'entry')} added, ${linked} linked. Status "gen": review them.`);
   };
@@ -337,25 +331,6 @@ export async function generate(tid) {
     { label: 'Generate', action: run },
     { label: 'Add selected', primary: true, action: () => { if (!result) throw Error('Generate first.'); add(); } },
   ], { wide: true });
-}
-
-// Rate the difficulty of unrated themes under (and including) a theme, 80 at a time.
-export async function rateUnrated(tid) {
-  const P = A.P;
-  const todo = [P.ix.theme.get(tid), ...descendants(P, tid)].filter(t => !t.group && !t.d);
-  if (!todo.length) return toast('Every theme here already has a difficulty.');
-  if (!confirm(`Ask Claude to rate ${todo.length} themes?`)) return;
-  let done = 0, cost = 0;
-  try {
-    for (let i = 0; i < todo.length; i += 80) {
-      const r = await rateThemes(P, todo.slice(i, i + 80), { model: getModel() });
-      cost += r.cost;
-      for (const x of r.ratings) { const t = P.ix.theme.get(x.id); if (t && x.d >= 1 && x.d <= 5) { t.d = Math.round(x.d); done++; } }
-      toast(`Rated ${done} of ${todo.length}…`);
-    }
-  } catch (e) { toast(e.message, true); }
-  A.changed();
-  toast(`Rated ${done} themes · cost $${cost.toFixed(3)}`);
 }
 
 // ---------- validation ----------

@@ -59,7 +59,7 @@ const entrySchema = { type: 'object', additionalProperties: false,
   required: ['text', 'gloss', 'pos', 'type', 'rec', 'inRec', 'adult', 'sensitive', 'tm', 'vulgar', 'region', 'aliases'],
   properties: { text: str, gloss: str, pos: { type: 'string', enum: POS }, type: { type: 'string', enum: TYPES }, rec: int, inRec: int,
     adult: bool, sensitive: bool, tm: bool, vulgar: bool, region: { type: 'array', items: { type: 'string', enum: REGIONS } }, aliases: { type: 'array', items: aliasSchema } } };
-export const WORDS_SCHEMA = { type: 'object', additionalProperties: false, required: ['themeDifficulty', 'entries'], properties: { themeDifficulty: int, entries: { type: 'array', items: entrySchema } } };
+export const WORDS_SCHEMA = { type: 'object', additionalProperties: false, required: ['entries'], properties: { entries: { type: 'array', items: entrySchema } } };
 
 export const GAME = `You build the word lists for a themed word-sorting game. A level shows words from 8 to 12 themes, four words per theme, mixed together; the player sorts each word into its theme (and the theme's name is revealed when it is complete). Players are typical adult English readers, and the game has five difficulty modes from easy to ultra-hard, so every theme needs words across the whole range of how well known they are.
 
@@ -85,7 +85,6 @@ region: only if the word is mainly known in particular regions, using the codes 
 
 Aliases. Add aliases only when there is a real, commonly used alternative that fits the same theme: a strict synonym, a regional word (sidewalk US, pavement UK; give region), or a spelling variant (color / colour, kind "spelling", region UK). Each alias gets its own honest rec and inRec: a rarer alias should have a higher number. Never list the same concept as separate top-level entries. kind "synonym" is only for a strict substitute that a player would accept as the same answer in every theme (besan / gram flour); a near match (sofa / couch) is not an alias. Leave aliases empty when there are none.
 
-themeDifficulty: how recognisable the THEME is as a category, 1 to 5 (1 = everyone gets it at a glance, 5 = specialist or obscure; a vague boundary makes it harder). Always give it; it is only used when the theme is still unrated.
 
 Overlap. Never list two words for the same thing in a theme, or a word and a more specific form of it (cola and Coca-Cola, pasta and pasta sauce). Keep the generic word. In a theme of a general category (soft drinks), a brand and its generic word are one answer, so list one of them; in a theme of examples or kinds (fizzy drinks), brands and generic names may be separate members. If a theme has four or more subtypes of one thing, they belong in their own sub-theme; with fewer, list only the best-known.
 
@@ -115,7 +114,7 @@ export const SPREADS = {
 
 export async function generateWords(P, t, { n = 20, spread = 'even', extra = '', model, signal }) {
   const r = await claude({ model, system: GAME, prompt: wordsPrompt(P, t, n, SPREADS[spread] || SPREADS.even, extra), schema: WORDS_SCHEMA, maxTokens: t.complete ? 16000 : 12000, signal });
-  return { entries: r.data.entries, themeDifficulty: r.data.themeDifficulty, cost: r.cost };
+  return { entries: r.data.entries, cost: r.cost };
 }
 
 // ---------- theme difficulty ----------

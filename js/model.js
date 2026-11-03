@@ -6,7 +6,7 @@
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
 //         between themes is the popularity in `th` (1 the first words anyone thinks of for the theme ... 5 real but peripheral). An alias (aliasOf = id of its root) takes its themes from the root.
 // `rec` is 1 to 5 (1 every child knows it ... 5 few people), 0 = not rated. A theme's `pop` is how good a pick the theme is (1 most popular ... 5 least), 0 = not rated.
-// A theme's difficulty is worked out from the words in it by themeProfile(); a person can set it by hand (theme.diff, 1 to 5), which replaces the worked-out median.
+// A theme's difficulty is never stored: themeProfile() works it out from the words in it.
 import { childrenOf } from './outline.js';
 
 export const POS = ['noun', 'verb', 'adjective', 'adverb', 'other'];
@@ -128,8 +128,8 @@ export function themeProfile(P, tid) {
     const rr = P.ix.entry.get(r);
     if (!e.aliasOf || !roots.has(r)) roots.set(r, effRec(P, e.aliasOf && rr ? rr : e, tid) || 5);
   }
-  const sorted = [...roots.values()].sort((a, b) => a - b), n = sorted.length, auto = n ? sorted[n >> 1] : 0, set = P.ix.theme.get(tid)?.diff || 0;
-  return { counts, reach: n, median: set || auto, auto, set, lo: n >= 4 ? sorted[3] : 0, hi: n >= 4 ? sorted[n - 4] : 0 };
+  const sorted = [...roots.values()].sort((a, b) => a - b), n = sorted.length, median = n ? sorted[n >> 1] : 0;
+  return { counts, reach: n, median, lo: n >= 4 ? sorted[3] : 0, hi: n >= 4 ? sorted[n - 4] : 0 };
 }
 
 // The library's default dialect (a setting of the library, so each language can have its own): which regional or spelling variant the app shows for a word that has one.

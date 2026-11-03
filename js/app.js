@@ -5,7 +5,7 @@ import { parseOutline, formatOutline } from './outline.js';
 import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
-import { editTheme, addTheme, editEntry, bulkAdd, generate, rateUnrated, showValidation, showExport, showSettings, openPath } from './dialogs.js';
+import { editTheme, addTheme, editEntry, bulkAdd, generate, showValidation, showExport, showSettings, openPath } from './dialogs.js';
 import { isAncestor } from './model.js';
 import { allWordsView } from './allwords.js';
 import { entryDefaults } from './model.js';
@@ -215,7 +215,7 @@ function select_(id) {
 // ---------- main pane ----------
 
 const RECCLASS = ['r0', 'r1', 'r2', 'r3', 'r4', 'r5'];
-const themeBadge = (P, t) => { const p = themeProfile(P, t.id); return p.reach ? h('span.badge.d', { title: `${p.set ? 'Set by hand (the words give ' + p.auto + '). ' : 'Worked out from the words: '}median difficulty, and the range in which the theme can fill a 4-word set. Roots at difficulty 1-5: ${p.counts.slice(1).join(' / ')}` }, `difficulty ${p.median}${p.set ? ' (set)' : ''}` + (p.lo ? ` · serves ${p.lo}–${p.hi}` : '')) : null; };
+const themeBadge = (P, t) => { const p = themeProfile(P, t.id); return p.reach ? h('span.badge.d', { title: `Worked out from the words: the difficulty range in which the theme can fill a 4-word set. Roots at difficulty 1-5: ${p.counts.slice(1).join(' / ')}` }, (() => { const d = p.lo ? [p.lo, p.hi] : [1, 2, 3, 4, 5].filter(n => p.counts[n]); return `difficulty ${d[0]}–${d[d.length - 1]}`; })()) : null; };
 const recSel = (value, onchange, auto = false) => select([[0, auto ? 'auto' : '–'], 1, 2, 3, 4, 5], value, { class: 'rs ' + RECCLASS[value], onchange });
 
 function overview() {
