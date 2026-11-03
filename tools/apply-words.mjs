@@ -112,6 +112,9 @@ writeFileSync(LIB, serializeProject(P));
 console.log(`${stats.made} words and ${stats.aliases} aliases added, ${stats.linked} existing words linked, ${stats.kept} links kept -> ${LIB.pathname.split("/").slice(-2).join("/")} (library v${P.lib.version})`);
 const issues = validate(P).filter(i => i.sev !== 'info' || ['rating-vs-zipf'].includes(i.kind)).filter(i => !['thin', 'empty'].includes(i.kind));
 const ids = new Set(Object.keys(DATA));
+{ const done = new URL('./gen/rec/done.json', import.meta.url), seen = new Set(existsSync(done) ? JSON.parse(readFileSync(done, 'utf8')) : []);
+  const fresh = P.entries.filter(e => !e.aliasOf && e.rec && (e.type || 'common') !== 'common' && !seen.has(e.id)).length;
+  if (fresh) console.log(`${fresh} names (people, places, organisations, titles, acronyms) have no recognisability review yet: node tools/gen/rec-make.mjs, then agents under tools/gen/BRIEF-rec.md, then node tools/gen/rec-apply.mjs --apply`); }
 for (const i of issues) {
   const e = i.entryId && P.ix.entry.get(i.entryId);
   const touched = !e || Object.keys(e.th).some(t => ids.has(t)) || (e.aliasOf && Object.keys(P.ix.entry.get(e.aliasOf)?.th || {}).some(t => ids.has(t)));
