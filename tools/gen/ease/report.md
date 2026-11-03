@@ -1,0 +1,433 @@
+# Difficulty-1 changes
+
+{"R":78,"I":235,"RI":6,"bad":1,"noop":0}
+
+- **nuts** (5): mixed nuts, pecan, pistachio, hazelnut, walnut
+- **breads and baking** (4): roll, muffin, cupcake, pie
+- **cakes** (2): cupcake, cheesecake
+- **ice cream flavors** (1): cookie dough
+- **candy** (2): caramel, jelly beans
+- **jam flavours** (2): cherry, blueberry
+- **herbs** (2): thyme, sage
+- **spices** (1): nutmeg
+- **soups** (3): lentil, noodle soup, chicken noodle
+- **pizza toppings** (6): pineapple, onion, bacon, ham, sausage, mushroom
+- **salad ingredients** (2): olive, spinach
+- **alcoholic drinks** (1): rum
+- **in the pantry** (5): noodles, cereal, honey, jam, peanut butter
+- **picnic basket** (4): cheese, lemonade, paper plates, napkins
+- **ways to cook eggs** (2): fried, scrambled
+- **fish** (2): trout, clownfish
+- **sea mammals** (2): seal, orca
+- **australian animals** (6): platypus, wombat, emu, Tasmanian devil, wallaby, dingo
+- **rainforest animals** (2): sloth, orangutan
+- **trees** (1): willow
+- **plants** (3): cactus, bamboo, weed
+- **weather conditions** (2): storm, fog
+- **rainforest** (3): jaguar, gorilla, canopy
+- **marine animals** (2): octopus, jellyfish
+- **desert** (3): scorpion, dune, oasis
+- **american cities** (1): Las Vegas
+- **us states** (3): Alaska, Arizona, Washington
+- **compass directions** (4): northeast, southeast, southwest, northwest
+- **farm** (2): hay bale, haystack
+- **restaurant** (4): waitress, napkin, appetizer, dessert
+- **supermarket** (4): aisle, trolley, receipt, basket
+- **library** (1): card
+- **cafe** (3): croissant, muffin, sandwich
+- **bakery** (6): muffin, cupcake, cookie, doughnut, oven, baker
+- **hospital** (4): stethoscope, wheelchair, X-ray, emergency room
+- **museum** (3): exhibition, exhibit, dinosaur skeleton
+- **aquarium** (1): fish tank
+- **movie theater** (2): candy, soda
+- **buildings to live in** (1): mansion
+- **shops** (4): pharmacy, toy store, shoe store, pet store
+- **public transportation** (2): school bus, bus station
+- **campsite** (5): marshmallow, firewood, lantern, campground, matches
+- **outdoor activities** (3): skiing, fishing, cycling
+- **things to pack** (5): pajamas, toothbrush, sunscreen, socks, jacket
+- **beach gear** (5): towel, sunglasses, beach ball, flip-flops, sand toys
+- **types of public transport** (2): taxi, ferry
+- **face parts** (3): chin, forehead, eyebrow
+- **hands and feet** (4): palm, heel, fingernail, big toe
+- **arms and legs** (2): wrist, knee
+- **torso** (4): belly, back, belly button, tummy
+- **hairstyles** (1): bob
+- **hair colors** (3): gray, ginger, brunette
+- **fingers** (3): index finger, ring finger, middle
+- **common illnesses** (6): chickenpox, fever, hay fever, tummy ache, vomiting, stomach bug
+- **pharmacy** (4): pharmacist, vitamins, painkillers, cough syrup
+- **first aid** (2): plaster, ice pack
+- **fitness exercises** (4): lunge, plank, crunch, jumping jack
+- **gym equipment** (2): barbell, weight bench
+- **workout types** (4): pilates, strength training, swimming, cycling
+- **bedding** (2): fitted sheet, mattress
+- **hair care** (2): comb, dryer
+- **food groups** (2): protein, fish
+- **emotions** (2): surprise, excitement
+- **crimes** (1): burglary
+- **police words** (3): detective, arrest, siren
+- **seven deadly sins** (2): sloth, lust
+- **school staff** (2): principal, school nurse
+- **bedroom** (4): sheet, pajamas, alarm clock, lamp
+- **dining room** (4): tablecloth, knife, spoon, fork
+- **home office** (2): keyboard, mouse
+- **closet contents** (4): coats, jackets, shoes, sweaters
+- **in the fridge** (2): juice, ketchup
+- **small appliances** (2): iron, hair dryer
+- **bathroom fixtures** (1): faucet
+- **laundry words** (1): hamper
+- **cleaning products** (2): washing-up liquid, window cleaner
+- **winter clothes** (1): snow boots
+- **hats** (1): sun hat
+- **jewelry** (2): wedding ring, diamond ring
+- **clothing parts** (2): hood, collar
+- **christmas** (5): reindeer, candy cane, elf, sleigh, Christmas Eve
+- **new year** (4): fireworks, resolution, party, New Year's Day
+- **thanksgiving** (6): gravy, feast, mashed potatoes, cranberry sauce, stuffing, Pilgrims
+- **party supplies** (5): candles, birthday cake, napkins, streamers, party plates
+- **cutlery** (1): tablespoon
+- **kitchen electricals** (3): freezer, dishwasher, coffee maker
+- **water sports** (2): waterskiing, snorkeling
+- **combat sports** (3): taekwondo, MMA, kung fu
+- **olympic sports** (14): football, volleyball, badminton, golf, archery, diving, surfing, sailing, skiing, snowboarding, boxing, wrestling, judo, cycling
+- **olympic team sports** (2): football, volleyball
+- **card games** (1): war
+- **playground** (3): sandbox, monkey bars, jungle gym
+- **dances** (2): twist, salsa
+- **spooky costumes** (4): skeleton, mummy, werewolf, Dracula
+- **fairy tales** (5): Three Little Pigs, Jack and the Beanstalk, Rapunzel, Beauty and the Beast, The Little Mermaid
+- **fairy tale characters** (6): witch, fairy, Pinocchio, Sleeping Beauty, Little Red Riding Hood, Rapunzel
+- **fairground rides** (1): merry-go-round
+- **castles** (3): castle, moat, drawbridge
+- **ghosts and spirits** (2): haunted house, Casper
+- **household chemicals** (1): laundry detergent
+- **ordinal numbers** (4): first, fourth, fifth, sixth
+- **numbers one to ten** (4): ten, four, five, six
+- **multiples of ten** (4): forty, thirty, fifty, sixty
+- **punctuation** (5): period, colon, exclamation point, apostrophe, quotation marks
+- **___ball** (4): beach, hand, meat, fire
+- **things made of plastic** (1): straw
+- **wet things** (2): bath, swimming pool
+- **confectionery** (3): lollipop, marshmallow, gummy bear
+
+## Detail
+- nuts: mixed nuts rec 1->1, typicality 2->1
+- nuts: pecan rec 2->1, typicality 1->1
+- nuts: pistachio rec 2->1, typicality 1->1
+- nuts: hazelnut rec 2->1, typicality 1->1
+- nuts: walnut rec 2->1, typicality 1->1
+- breads and baking: roll rec 1->1, typicality 2->1
+- breads and baking: muffin rec 1->1, typicality 2->1
+- breads and baking: cupcake rec 1->1, typicality 2->1
+- breads and baking: pie rec 1->1, typicality 2->1
+- cakes: cupcake rec 1->1, typicality 2->1
+- cakes: cheesecake rec 1->1, typicality 2->1
+- ice cream flavors: cookie dough rec 1->1, typicality 2->1
+- candy: caramel rec 1->1, typicality 2->1
+- candy: jelly beans rec 2->1, typicality 1->1
+- jam flavours: cherry rec 1->1, typicality 2->1
+- jam flavours: blueberry rec 1->1, typicality 2->1
+- herbs: thyme rec 2->1, typicality 1->1
+- herbs: sage rec 2->1, typicality 1->1
+- spices: nutmeg rec 2->1, typicality 1->1
+- soups: lentil rec 1->1, typicality 2->1
+- soups: noodle soup rec 1->1, typicality 2->1
+- soups: chicken noodle rec 2->1, typicality 1->1
+- pizza toppings: pineapple rec 1->1, typicality 2->1
+- pizza toppings: onion rec 1->1, typicality 2->1
+- pizza toppings: bacon rec 1->1, typicality 2->1
+- pizza toppings: ham rec 1->1, typicality 2->1
+- pizza toppings: sausage rec 1->1, typicality 2->1
+- pizza toppings: mushroom rec 1->1, typicality 2->1
+- salad ingredients: olive rec 1->1, typicality 2->1
+- salad ingredients: spinach rec 1->1, typicality 2->1
+- alcoholic drinks: rum rec 1->1, typicality 2->1
+- in the pantry: noodles rec 1->1, typicality 2->1
+- in the pantry: cereal rec 1->1, typicality 2->1
+- in the pantry: honey rec 1->1, typicality 2->1
+- in the pantry: jam rec 1->1, typicality 2->1
+- in the pantry: peanut butter rec 1->1, typicality 2->1
+- picnic basket: cheese rec 1->1, typicality 2->1
+- picnic basket: lemonade rec 1->1, typicality 2->1
+- picnic basket: paper plates rec 1->1, typicality 2->1
+- picnic basket: napkins rec 1->1, typicality 2->1
+- ways to cook eggs: fried rec 2->1, typicality 1->1
+- ways to cook eggs: scrambled rec 2->1, typicality 1->1
+- fish: trout rec 2->1, typicality 1->1
+- fish: clownfish rec 1->1, typicality 2->1
+- sea mammals: seal rec 2->1, typicality 1->1
+- sea mammals: orca rec 2->1, typicality 1->1
+- australian animals: platypus rec 2->1, typicality 1->1
+- australian animals: wombat rec 2->1, typicality 1->1
+- australian animals: emu rec 2->1, typicality 1->1
+- australian animals: Tasmanian devil rec 2->1, typicality 1->1
+- australian animals: wallaby rec 2->1, typicality 1->1
+- australian animals: dingo rec 2->1, typicality 1->1
+- rainforest animals: sloth rec 2->1, typicality 1->1
+- rainforest animals: orangutan rec 2->1, typicality 1->1
+- trees: willow rec 2->1, typicality 1->1
+- plants: cactus rec 1->1, typicality 2->1
+- plants: bamboo rec 1->1, typicality 2->1
+- plants: weed rec 1->1, typicality 2->1
+- weather conditions: storm rec 1->1, typicality 2->1
+- weather conditions: fog rec 1->1, typicality 2->1
+- rainforest: jaguar rec 1->1, typicality 2->1
+- rainforest: gorilla rec 1->1, typicality 2->1
+- rainforest: canopy rec 2->1, typicality 1->1
+- marine animals: octopus rec 2->1, typicality 2->1
+- marine animals: jellyfish rec 1->1, typicality 2->1
+- desert: scorpion rec 1->1, typicality 2->1
+- desert: dune rec 2->1, typicality 1->1
+- desert: oasis rec 2->1, typicality 1->1
+- american cities: Las Vegas rec 1->1, typicality 2->1
+- us states: Alaska rec 1->1, typicality 2->1
+- us states: Arizona rec 1->1, typicality 2->1
+- us states: Washington rec 1->1, typicality 2->1
+- compass directions: northeast rec 1->1, typicality 2->1
+- compass directions: southeast rec 1->1, typicality 2->1
+- compass directions: southwest rec 1->1, typicality 2->1
+- compass directions: northwest rec 1->1, typicality 2->1
+- farm: hay bale rec 1->1, typicality 2->1
+- farm: haystack rec 1->1, typicality 2->1
+- restaurant: waitress rec 1->1, typicality 2->1
+- restaurant: napkin rec 2->1, typicality 2->1
+- restaurant: appetizer rec 1->1, typicality 2->1
+- restaurant: dessert rec 1->1, typicality 2->1
+- supermarket: aisle rec 2->1, typicality 1->1
+- supermarket: trolley rec 2->1, typicality 1->1
+- supermarket: receipt rec 1->1, typicality 2->1
+- supermarket: basket rec 1->1, typicality 2->1
+- library: card rec 2->1, typicality 1->1
+- cafe: croissant rec 1->1, typicality 2->1
+- cafe: muffin rec 1->1, typicality 2->1
+- cafe: sandwich rec 1->1, typicality 2->1
+- bakery: muffin rec 1->1, typicality 2->1
+- bakery: cupcake rec 1->1, typicality 2->1
+- bakery: cookie rec 1->1, typicality 2->1
+- bakery: doughnut rec 1->1, typicality 2->1
+- bakery: oven rec 1->1, typicality 2->1
+- bakery: baker rec 2->1, typicality 1->1
+- hospital: stethoscope rec 1->1, typicality 2->1
+- hospital: wheelchair rec 1->1, typicality 2->1
+- hospital: X-ray rec 1->1, typicality 2->1
+- hospital: emergency room rec 1->1, typicality 2->1
+- museum: exhibition rec 2->1, typicality 1->1
+- museum: exhibit rec 2->1, typicality 1->1
+- museum: dinosaur skeleton rec 1->1, typicality 2->1
+- aquarium: fish tank rec 1->1, typicality 2->1
+- movie theater: candy rec 1->1, typicality 2->1
+- movie theater: soda rec 1->1, typicality 2->1
+- buildings to live in: mansion rec 1->1, typicality 2->1
+- shops: pharmacy rec 1->1, typicality 2->1
+- shops: toy store rec 1->1, typicality 2->1
+- shops: shoe store rec 1->1, typicality 2->1
+- shops: pet store rec 1->1, typicality 2->1
+- public transportation: school bus rec 1->1, typicality 2->1
+- public transportation: bus station rec 1->1, typicality 2->1
+- campsite: marshmallow rec 1->1, typicality 2->1
+- campsite: firewood rec 1->1, typicality 2->1
+- campsite: lantern rec 2->1, typicality 1->1
+- campsite: campground rec 2->1, typicality 1->1
+- campsite: matches rec 1->1, typicality 2->1
+- outdoor activities: skiing rec 1->1, typicality 2->1
+- outdoor activities: fishing rec 1->1, typicality 2->1
+- outdoor activities: cycling rec 1->1, typicality 2->1
+- things to pack: pajamas rec 1->1, typicality 2->1
+- things to pack: toothbrush rec 1->1, typicality 2->1
+- things to pack: sunscreen rec 1->1, typicality 2->1
+- things to pack: socks rec 1->1, typicality 2->1
+- things to pack: jacket rec 1->1, typicality 2->1
+- beach gear: towel rec 1->1, typicality 2->1
+- beach gear: sunglasses rec 1->1, typicality 2->1
+- beach gear: beach ball rec 1->1, typicality 2->1
+- beach gear: flip-flops rec 1->1, typicality 2->1
+- beach gear: sand toys rec 2->1, typicality 1->1
+- types of public transport: taxi rec 1->1, typicality 2->1
+- types of public transport: ferry rec 1->1, typicality 2->1
+- face parts: chin rec 1->1, typicality 2->1
+- face parts: forehead rec 1->1, typicality 2->1
+- face parts: eyebrow rec 1->1, typicality 2->1
+- hands and feet: palm rec 1->1, typicality 2->1
+- hands and feet: heel rec 1->1, typicality 2->1
+- hands and feet: fingernail rec 1->1, typicality 2->1
+- hands and feet: big toe rec 1->1, typicality 2->1
+- arms and legs: wrist rec 1->1, typicality 2->1
+- arms and legs: knee rec 1->1, typicality 2->1
+- torso: belly rec 1->1, typicality 2->1
+- torso: back rec 1->1, typicality 2->1
+- torso: belly button rec 1->1, typicality 2->1
+- torso: tummy rec 1->1, typicality 2->1
+- hairstyles: bob rec 2->1, typicality 1->1
+- hair colors: gray rec 1->1, typicality 2->1
+- hair colors: ginger rec 1->1, typicality 2->1
+- hair colors: brunette rec 2->1, typicality 1->1
+- fingers: index finger rec 1->1, typicality 2->1
+- fingers: ring finger rec 1->1, typicality 2->1
+- fingers: middle rec 2->1, typicality 1->1
+- common illnesses: chickenpox rec 1->1, typicality 2->1
+- common illnesses: fever rec 1->1, typicality 2->1
+- common illnesses: hay fever rec 1->1, typicality 2->1
+- common illnesses: tummy ache rec 1->1, typicality 2->1
+- common illnesses: vomiting rec 1->1, typicality 2->1
+- common illnesses: stomach bug rec 1->1, typicality 2->1
+- pharmacy: pharmacist rec 2->1, typicality 1->1
+- pharmacy: vitamins rec 1->1, typicality 2->1
+- pharmacy: painkillers rec 1->1, typicality 2->1
+- pharmacy: cough syrup rec 1->1, typicality 2->1
+- first aid: plaster rec 2->1, typicality 1->1
+- first aid: ice pack rec 1->1, typicality 2->1
+- fitness exercises: lunge rec 2->1, typicality 1->1
+- fitness exercises: plank rec 2->1, typicality 1->1
+- fitness exercises: crunch rec 2->1, typicality 1->1
+- fitness exercises: jumping jack rec 1->1, typicality 2->1
+- gym equipment: barbell rec 2->1, typicality 1->1
+- gym equipment: weight bench rec 2->1, typicality 1->1
+- workout types: pilates rec 2->1, typicality 1->1
+- workout types: strength training rec 2->1, typicality 1->1
+- workout types: swimming rec 1->1, typicality 2->1
+- workout types: cycling rec 1->1, typicality 2->1
+- bedding: fitted sheet rec 2->1, typicality 1->1
+- bedding: mattress rec 1->1, typicality 2->1
+- hair care: comb rec 1->1, typicality 2->1
+- hair care: dryer rec 2->1, typicality 1->1
+- food groups: protein rec 1->1, typicality 2->1
+- food groups: fish rec 1->1, typicality 2->1
+- emotions: surprise rec 1->1, typicality 2->1
+- emotions: excitement rec 1->1, typicality 2->1
+- crimes: burglary rec 2->1, typicality 1->1
+- police words: detective rec 1->1, typicality 2->1
+- police words: arrest rec 1->1, typicality 2->1
+- police words: siren rec 1->1, typicality 2->1
+- seven deadly sins: sloth rec 1->1, typicality 2->1
+- seven deadly sins: lust rec 2->1, typicality 1->1
+- school staff: principal rec 2->1, typicality 1->1
+- school staff: school nurse rec 1->1, typicality 2->1
+- bedroom: sheet rec 1->1, typicality 2->1
+- bedroom: pajamas rec 1->1, typicality 2->1
+- bedroom: alarm clock rec 1->1, typicality 2->1
+- bedroom: lamp rec 1->1, typicality 2->1
+- dining room: tablecloth rec 2->1, typicality 1->1
+- dining room: knife rec 1->1, typicality 2->1
+- dining room: spoon rec 1->1, typicality 2->1
+- dining room: fork rec 1->1, typicality 2->1
+- home office: keyboard rec 1->1, typicality 2->1
+- home office: mouse rec 1->1, typicality 2->1
+- closet contents: coats rec 1->1, typicality 2->1
+- closet contents: jackets rec 1->1, typicality 2->1
+- closet contents: shoes rec 1->1, typicality 2->1
+- closet contents: sweaters rec 1->1, typicality 2->1
+- in the fridge: juice rec 1->1, typicality 2->1
+- in the fridge: ketchup rec 1->1, typicality 2->1
+- small appliances: iron rec 1->1, typicality 2->1
+- small appliances: hair dryer rec 1->1, typicality 2->1
+- bathroom fixtures: faucet rec 2->1, typicality 2->1
+- laundry words: hamper rec 2->1, typicality 1->1
+- cleaning products: washing-up liquid rec 2->1, typicality 1->1
+- cleaning products: window cleaner rec 2->1, typicality 1->1
+- winter clothes: snow boots rec 2->1, typicality 2->1
+- hats: sun hat rec 1->1, typicality 2->1
+- jewelry: wedding ring rec 1->1, typicality 2->1
+- jewelry: diamond ring rec 1->1, typicality 2->1
+- clothing parts: hood rec 1->1, typicality 2->1
+- clothing parts: collar rec 2->1, typicality 1->1
+- christmas: reindeer rec 2->1, typicality 1->1
+- christmas: candy cane rec 2->1, typicality 2->1
+- christmas: elf rec 1->1, typicality 2->1
+- christmas: sleigh rec 1->1, typicality 2->1
+- christmas: Christmas Eve rec 1->1, typicality 2->1
+- new year: fireworks rec 2->1, typicality 1->1
+- new year: resolution rec 2->1, typicality 1->1
+- new year: party rec 1->1, typicality 2->1
+- new year: New Year's Day rec 1->1, typicality 2->1
+- thanksgiving: gravy rec 1->1, typicality 2->1
+- thanksgiving: feast rec 1->1, typicality 2->1
+- thanksgiving: mashed potatoes rec 1->1, typicality 2->1
+- thanksgiving: cranberry sauce rec 2->1, typicality 1->1
+- thanksgiving: stuffing rec 2->1, typicality 1->1
+- thanksgiving: Pilgrims rec 2->1, typicality 1->1
+- party supplies: candles rec 1->1, typicality 2->1
+- party supplies: birthday cake rec 1->1, typicality 2->1
+- party supplies: napkins rec 1->1, typicality 2->1
+- party supplies: streamers rec 2->1, typicality 1->1
+- party supplies: party plates rec 2->1, typicality 1->1
+- cutlery: tablespoon rec 1->1, typicality 2->1
+- kitchen electricals: freezer rec 1->1, typicality 2->1
+- kitchen electricals: dishwasher rec 1->1, typicality 2->1
+- kitchen electricals: coffee maker rec 1->1, typicality 2->1
+- water sports: waterskiing rec 2->1, typicality 1->1
+- water sports: snorkeling rec 1->1, typicality 2->1
+- combat sports: taekwondo rec 2->1, typicality 1->1
+- combat sports: MMA rec 2->1, typicality 1->1
+- combat sports: kung fu rec 1->1, typicality 2->1
+- olympic sports: football rec 1->1, typicality 2->1
+- olympic sports: volleyball rec 1->1, typicality 2->1
+- olympic sports: badminton rec 1->1, typicality 2->1
+- olympic sports: golf rec 1->1, typicality 2->1
+- olympic sports: archery rec 1->1, typicality 2->1
+- olympic sports: diving rec 1->1, typicality 2->1
+- olympic sports: surfing rec 1->1, typicality 2->1
+- olympic sports: sailing rec 1->1, typicality 2->1
+- olympic sports: skiing rec 1->1, typicality 2->1
+- olympic sports: snowboarding rec 1->1, typicality 2->1
+- olympic sports: boxing rec 1->1, typicality 2->1
+- olympic sports: wrestling rec 1->1, typicality 2->1
+- olympic sports: judo rec 1->1, typicality 2->1
+- olympic sports: cycling rec 1->1, typicality 2->1
+- olympic team sports: football rec 1->1, typicality 2->1
+- olympic team sports: volleyball rec 1->1, typicality 2->1
+- card games: war rec 1->1, typicality 2->1
+- playground: sandbox rec 1->1, typicality 2->1
+- playground: monkey bars rec 2->1, typicality 1->1
+- playground: jungle gym rec 2->1, typicality 1->1
+- dances: twist rec 1->1, typicality 2->1
+- dances: salsa rec 2->1, typicality 1->1
+- spooky costumes: skeleton rec 1->1, typicality 2->1
+- spooky costumes: mummy rec 1->1, typicality 2->1
+- spooky costumes: werewolf rec 1->1, typicality 2->1
+- spooky costumes: Dracula rec 1->1, typicality 2->1
+- fairy tales: Three Little Pigs rec 1->1, typicality 2->1
+- fairy tales: Jack and the Beanstalk rec 1->1, typicality 2->1
+- fairy tales: Rapunzel rec 1->1, typicality 2->1
+- fairy tales: Beauty and the Beast rec 1->1, typicality 2->1
+- fairy tales: The Little Mermaid rec 1->1, typicality 2->1
+- fairy tale characters: witch rec 1->1, typicality 2->1
+- fairy tale characters: fairy rec 1->1, typicality 2->1
+- fairy tale characters: Pinocchio rec 1->1, typicality 2->1
+- fairy tale characters: Sleeping Beauty rec 1->1, typicality 2->1
+- fairy tale characters: Little Red Riding Hood rec 1->1, typicality 2->1
+- fairy tale characters: Rapunzel rec 1->1, typicality 2->1
+- fairground rides: merry-go-round rec 2->1, typicality 1->1
+- castles: castle rec 2->1, typicality 1->1
+- castles: moat rec 2->1, typicality 1->1
+- castles: drawbridge rec 2->1, typicality 1->1
+- ghosts and spirits: haunted house rec 2->1, typicality 1->1
+- ghosts and spirits: Casper rec 1->1, typicality 2->1
+- household chemicals: laundry detergent rec 1->1, typicality 2->1
+- ordinal numbers: first rec 2->1, typicality 1->1
+- ordinal numbers: fourth rec 1->1, typicality 2->1
+- ordinal numbers: fifth rec 1->1, typicality 2->1
+- ordinal numbers: sixth rec 1->1, typicality 2->1
+- numbers one to ten: ten rec 1->1, typicality 2->1
+- numbers one to ten: four rec 1->1, typicality 2->1
+- numbers one to ten: five rec 1->1, typicality 2->1
+- numbers one to ten: six rec 1->1, typicality 2->1
+- multiples of ten: forty rec 1->1, typicality 2->1
+- multiples of ten: thirty rec 1->1, typicality 2->1
+- multiples of ten: fifty rec 1->1, typicality 2->1
+- multiples of ten: sixty rec 1->1, typicality 2->1
+- punctuation: period rec 1->1, typicality 2->1
+- punctuation: colon rec 1->1, typicality 2->1
+- punctuation: exclamation point rec 1->1, typicality 2->1
+- punctuation: apostrophe rec 1->1, typicality 2->1
+- punctuation: quotation marks rec 1->1, typicality 2->1
+- ___ball: beach rec 1->1, typicality 2->1
+- ___ball: hand rec 1->1, typicality 2->1
+- ___ball: meat rec 1->1, typicality 2->1
+- ___ball: fire rec 1->1, typicality 2->1
+- things made of plastic: straw rec 2->1, typicality 1->1
+- wet things: bath rec 2->1, typicality 2->1
+- wet things: swimming pool rec 1->1, typicality 2->1
+- confectionery: lollipop rec 1->1, typicality 2->1
+- confectionery: marshmallow rec 1->1, typicality 2->1
+- confectionery: gummy bear rec 1->1, typicality 2->1

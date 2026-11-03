@@ -1,0 +1,192 @@
+T restaurant | restaurant | 52 words | 5 at difficulty 1
+EASY ALREADY: chef [cook], waiter, reservation [restaurant], bill [restaurant], menu [restaurant]
+970 | cook [person] | common | familiarity 1 | typicality 2
+4111 | server [waiter] | common | familiarity 2 | typicality 2
+4112 | waitress [server] | common | familiarity 1 | typicality 2
+19926 | napkin | common | familiarity 2 | typicality 2
+20015 | tip [gratuity] | common | familiarity 1 | typicality 2
+20020 | host [restaurant] | common | familiarity 2 | typicality 2
+20021 | hostess | common | familiarity 2 | typicality 2
+20024 | booth [restaurant] | common | familiarity 2 | typicality 2
+20025 | wine list | common | familiarity 2 | typicality 2
+20045 | head chef | common | familiarity 1 | typicality 2
+20079 | appetizer | common | familiarity 1 | typicality 2
+20081 | main course | common | familiarity 1 | typicality 2
+20082 | main [course] | common | familiarity 2 | typicality 2
+20083 | dessert [sweet course] | common | familiarity 1 | typicality 2
+38192 | check [restaurant bill] | common | familiarity 2 | typicality 2
+
+T supermarket | supermarket | 40 words | 2 at difficulty 1
+EASY ALREADY: cashier, checkout [shop till]
+12802 | aisle [walkway] | common | familiarity 2 | typicality 1
+23290 | receipt | common | familiarity 1 | typicality 2
+23295 | loyalty card | common | familiarity 2 | typicality 2
+23463 | shelf [furniture] | common | familiarity 1 | typicality 2
+24716 | carrier bag | common | familiarity 2 | typicality 2
+25992 | barcode | common | familiarity 1 | typicality 2
+33997 | trolley [shopping] | common | familiarity 2 | typicality 1
+33998 | basket [shopping] | common | familiarity 1 | typicality 2
+34002 | price tag | common | familiarity 1 | typicality 2
+38193 | till | common | familiarity 2 | typicality 2
+38195 | self-checkout | common | familiarity 2 | typicality 2
+38197 | special offer | common | familiarity 2 | typicality 2
+38198 | shopping list | common | familiarity 1 | typicality 2
+38199 | conveyor belt | common | familiarity 2 | typicality 2
+38208 | dairy aisle | common | familiarity 2 | typicality 2
+38209 | frozen aisle | common | familiarity 2 | typicality 2
+
+T library | library | 44 words | 4 at difficulty 1
+EASY ALREADY: librarian, book, shelf [furniture], borrow [loan]
+4218 | fine [penalty] | common | familiarity 1 | typicality 2
+4567 | newspaper | common | familiarity 1 | typicality 2
+13399 | bookmark [book] | common | familiarity 1 | typicality 2
+38239 | due date [library book] | common | familiarity 2 | typicality 2
+38242 | reading room | common | familiarity 2 | typicality 2
+65639 | card [borrowing] | common | familiarity 2 | typicality 1
+
+T cafe | cafe | 44 words | 4 at difficulty 1
+EASY ALREADY: tea [drink], coffee [drink], latte, cappuccino
+232 | mocha [coffee] | common | familiarity 2 | typicality 2
+234 | americano | common | familiarity 2 | typicality 2
+557 | croissant | common | familiarity 1 | typicality 2
+558 | muffin | common | familiarity 1 | typicality 2
+796 | sandwich | common | familiarity 1 | typicality 2
+4760 | espresso machine | common | familiarity 2 | typicality 2
+25766 | teapot | common | familiarity 1 | typicality 2
+25795 | takeaway cup | common | familiarity 2 | typicality 2
+32999 | barista | common | familiarity 2 | typicality 1
+
+T bakery | bakery | 38 words | 4 at difficulty 1
+EASY ALREADY: bread [food], loaf, croissant, cake [food]
+554 | roll [bread] | common | familiarity 1 | typicality 2
+555 | bagel [bread] | common | familiarity 1 | typicality 2
+556 | baguette [bread] | common | familiarity 1 | typicality 2
+558 | muffin | common | familiarity 1 | typicality 2
+560 | cupcake [cake] | common | familiarity 1 | typicality 2
+564 | dough [food] | common | familiarity 1 | typicality 2
+566 | cookie [biscuit] | common | familiarity 1 | typicality 2
+568 | doughnut | common | familiarity 1 | typicality 2
+4719 | oven | common | familiarity 1 | typicality 2
+18077 | cinnamon roll | common | familiarity 1 | typicality 2
+20056 | baker [job] | common | familiarity 2 | typicality 1
+57462 | pastry [baking] | common | familiarity 2 | typicality 2
+
+T hospital | hospital | 49 words | 5 at difficulty 1
+EASY ALREADY: ambulance, doctor, nurse [health worker], patient [medical], surgeon
+3459 | X-ray [medical] | common | familiarity 1 | typicality 2
+3460 | stethoscope | common | familiarity 1 | typicality 2
+15167 | IV drip | common | familiarity 2 | typicality 2
+15183 | wheelchair | common | familiarity 1 | typicality 2
+15184 | stretcher [medical] | common | familiarity 1 | typicality 2
+15277 | ward [hospital] | common | familiarity 2 | typicality 2
+15278 | emergency room | common | familiarity 1 | typicality 2
+15284 | waiting room | common | familiarity 1 | typicality 2
+15287 | maternity ward | common | familiarity 2 | typicality 2
+57506 | operating room | common | familiarity 2 | typicality 2
+
+T museum | museum | 34 words | 0 at difficulty 1
+EASY ALREADY: 
+1567 | fossil | common | familiarity 1 | typicality 2
+6286 | sculpture | common | familiarity 1 | typicality 2
+6302 | exhibition | common | familiarity 2 | typicality 1
+6303 | exhibit | common | familiarity 2 | typicality 1
+6660 | mummy [Egyptian] | common | familiarity 1 | typicality 2
+6860 | artifact | common | familiarity 2 | typicality 1
+12136 | collection [art] | common | familiarity 2 | typicality 2
+12144 | gift shop | common | familiarity 2 | typicality 2
+57596 | dinosaur skeleton | common | familiarity 1 | typicality 2
+
+T aquarium | aquarium | 41 words | 3 at difficulty 1
+EASY ALREADY: shark [fish], clownfish, jellyfish
+480 | octopus [animal] | common | familiarity 2 | typicality 2
+1219 | seahorse | common | familiarity 2 | typicality 2
+1235 | stingray | common | familiarity 2 | typicality 2
+1293 | sea turtle | common | familiarity 2 | typicality 2
+8746 | whale shark | common | familiarity 2 | typicality 2
+50843 | fish tank | common | familiarity 1 | typicality 2
+57601 | glass tunnel | common | familiarity 2 | typicality 2
+
+T movie_theater | movie theater | 37 words | 4 at difficulty 1
+EASY ALREADY: screen [film], popcorn, ticket [cinema], seat [cinema]
+607 | candy | common | familiarity 1 | typicality 2
+867 | soda [fizzy drink] | common | familiarity 1 | typicality 2
+6376 | trailer [film] | common | familiarity 2 | typicality 2
+6416 | box office | phrase | familiarity 2 | typicality 2
+6606 | lobby [building] | common | familiarity 2 | typicality 2
+12800 | projector | common | familiarity 2 | typicality 2
+12801 | concession stand | common | familiarity 2 | typicality 1
+12804 | 3D glasses | common | familiarity 2 | typicality 2
+12810 | showtime | common | familiarity 2 | typicality 2
+
+T buildings_to_live_in | buildings to live in | 30 words | 2 at difficulty 1
+EASY ALREADY: house [building], apartment
+115 | bungalow | common | familiarity 2 | typicality 2
+116 | cottage [small house] | common | familiarity 2 | typicality 2
+117 | mansion | common | familiarity 1 | typicality 2
+121 | penthouse | common | familiarity 2 | typicality 2
+124 | mobile home | common | familiarity 2 | typicality 2
+24152 | condo | common | familiarity 2 | typicality 2
+
+T shops | shops | 30 words | 4 at difficulty 1
+EASY ALREADY: bakery, supermarket, bookstore, butcher [shop]
+132 | pharmacy | common | familiarity 1 | typicality 2
+136 | florist | common | familiarity 1 | typicality 2
+141 | toy store | common | familiarity 1 | typicality 2
+142 | hardware store | common | familiarity 2 | typicality 2
+143 | jeweler | common | familiarity 2 | typicality 2
+147 | deli | common | familiarity 2 | typicality 2
+46773 | convenience store | common | familiarity 2 | typicality 2
+57494 | department store | common | familiarity 1 | typicality 2
+57500 | shoe store | common | familiarity 1 | typicality 2
+62629 | pet store | common | familiarity 1 | typicality 2
+62630 | candy store | common | familiarity 2 | typicality 2
+
+T public_transportation | public transportation | 59 words | 4 at difficulty 1
+EASY ALREADY: bus [public vehicle], subway [train], bus stop, train [vehicle]
+2652 | streetcar | common | familiarity 2 | typicality 2
+2655 | school bus [yellow vehicle] | common | familiarity 1 | typicality 2
+2657 | bus station | common | familiarity 1 | typicality 2
+2658 | fare [transport] | common | familiarity 2 | typicality 2
+2660 | schedule [timetable] | common | familiarity 1 | typicality 2
+2662 | commuter [traveller] | common | familiarity 2 | typicality 2
+2663 | passenger [traveler] | common | familiarity 1 | typicality 2
+2667 | bus pass | common | familiarity 2 | typicality 2
+2672 | double-decker | common | familiarity 2 | typicality 2
+2674 | coach [bus] | common | familiarity 2 | typicality 2
+
+T bike_types | bike types | 31 words | 2 at difficulty 1
+EASY ALREADY: bicycle, road
+44069 | BMX | acronym | familiarity 2 | typicality 2
+47885 | tandem | common | familiarity 2 | typicality 2
+47888 | racing | common | familiarity 2 | typicality 2
+63346 | electric [powered] | common | familiarity 1 | typicality 2
+
+T campsite | campsite | 58 words | 4 at difficulty 1
+EASY ALREADY: tent [shelter], campfire [outdoor fire], sleeping bag, flashlight
+611 | marshmallow | common | familiarity 1 | typicality 2
+3027 | lantern | common | familiarity 2 | typicality 1
+3030 | backpack | common | familiarity 1 | typicality 2
+3034 | camp stove | common | familiarity 2 | typicality 2
+3040 | s'more | common | familiarity 2 | typicality 2
+3041 | firewood | common | familiarity 1 | typicality 2
+62524 | kindle [to light] | common | familiarity 2 | typicality 2
+3043 | fire pit | common | familiarity 2 | typicality 2
+3044 | hammock [hanging bed] | common | familiarity 1 | typicality 2
+3052 | bug spray | common | familiarity 1 | typicality 2
+3054 | camp chair | common | familiarity 2 | typicality 2
+3055 | picnic table | common | familiarity 1 | typicality 2
+3062 | campground | common | familiarity 2 | typicality 1
+3066 | matches [fire] | common | familiarity 1 | typicality 2
+
+T outdoor_activities | outdoor activities | 44 words | 3 at difficulty 1
+EASY ALREADY: rock climbing, hiking [outdoor activity], camping [outdoors]
+5294 | canoeing | common | familiarity 2 | typicality 2
+5295 | kayaking | common | familiarity 2 | typicality 2
+5311 | rafting | common | familiarity 2 | typicality 2
+5345 | skiing | common | familiarity 1 | typicality 2
+5618 | caving | common | familiarity 2 | typicality 2
+5621 | mountain biking | phrase | familiarity 1 | typicality 2
+5631 | fishing | common | familiarity 1 | typicality 2
+5636 | backpacking [hiking trip] | common | familiarity 2 | typicality 2
+15965 | cycling | common | familiarity 1 | typicality 2
+48671 | bird watching | phrase | familiarity 2 | typicality 2
