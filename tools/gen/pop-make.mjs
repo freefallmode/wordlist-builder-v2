@@ -1,32 +1,25 @@
-// Lists one chunk of playable themes for the popularity pass.
-// Run: node tools/gen/pop-make.mjs            number of chunks
-//      node tools/gen/pop-make.mjs <n>        chunk n (1-based): per theme its path, flags, note and every word to rate
-// Chunks follow the theme tree order, 25 playable themes each, skipping themes that already have a result in tools/gen/pop/done.json.
+// Lists themes of popularity 1 and 2 for agents re-rating under BRIEF-pop2.md.
+// Run: node tools/gen/pop-make.mjs [chunks=10] [--pops 1,2]   writes tools/gen/pop/list-<n>.txt
 import fs from 'node:fs';
 import { parseProject } from '../../js/store.js';
-import { reindex, linkIds } from '../../js/model.js';
-const P = parseProject(fs.readFileSync(new URL('../../data/wordlist-en.project.json', import.meta.url), 'utf8'));
-reindex(P);
-const SIZE = 25;
-const doneFile = new URL('./pop/done.json', import.meta.url);
-const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFile, 'utf8')) : []);
-const tree = []; const walk = (id) => { for (const t of P.ix.kids.get(id) || []) { tree.push(t); walk(t.id); } }; walk('');
-const todo = tree.filter(t => !t.group && !done.has(t.id) && (P.ix.byTheme.get(t.id) || []).length);
-const chunks = Array.from({ length: Math.ceil(todo.length / SIZE) }, (_, i) => todo.slice(i * SIZE, (i + 1) * SIZE));
-const n = +process.argv[2];
-if (!n) { console.log(chunks.length, 'chunks of up to', SIZE, 'themes;', todo.length, 'themes left'); process.exit(); }
-const chunk = chunks[n - 1]; if (!chunk) throw Error('no such chunk');
-for (const t of chunk) {
-  const path = []; for (let x = t; x; x = x.parent && P.ix.theme.get(x.parent)) path.unshift(x.name);
-  const flags = ['complete', 'adult', 'sensitive', 'tm', 'lang'].filter(k => t[k]).join(',') + (t.region.length ? ' region:' + t.region.join('/') : '');
-  const list = (P.ix.byTheme.get(t.id) || []).filter(e => e.enabled);
-  const roots = list.filter(e => !e.aliasOf), syn = list.filter(e => e.aliasOf && e.aliasKind === 'synonym');
-  console.log(`\nTHEME ${t.id} | ${path.join(' > ')} | ${flags || 'no flags'}${t.note ? ' | note: ' + t.note : ''} | ${roots.length} words`);
-  roots.sort((a, b) => a.text.localeCompare(b.text));
-  for (const e of roots) {
-    console.log(`${e.id} ${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''} | rec ${e.rec}${e.th[t.id] ? ' old ' + e.th[t.id] : ''}`);
-    for (const a of syn.filter(x => x.aliasOf === e.id)) console.log(`  ${a.id} ~ ${a.text}${a.gloss ? ' (' + a.gloss + ')' : ''} | rec ${a.rec}`);
-  }
-  // synonyms whose root is not in this list (the root is linked elsewhere): rated here too
-  for (const a of syn.filter(x => !roots.some(r => r.id === x.aliasOf))) console.log(`  ${a.id} ~ ${a.text} (synonym of ${P.ix.entry.get(a.aliasOf)?.text}) | rec ${a.rec}`);
+import { reindex, effRec, eff } from '../../js/model.js';
+const here = p => new URL(p, import.meta.url);
+const P = parseProject(fs.readFileSync(here('../../data/wordlist-en.project.json'), 'utf8')); reindex(P);
+const n = +process.argv.slice(2).find(a => /^\d+$/.test(a)) || 10;
+const pops = new Set((process.argv.includes('--pops') ? process.argv[process.argv.indexOf('--pops') + 1] : '1,2').split(',').map(Number));
+const NAMED = new Set(['person', 'place', 'org', 'title', 'proper']);
+const rows = [];
+for (const t of P.themes) {
+  if (t.group || !eff(P, t.id).enabled || !pops.has(t.pop)) continue;
+  const roots = new Map();
+  for (const e of P.ix.byTheme.get(t.id) || []) { if (!e.enabled) continue; const r = e.aliasOf ? P.ix.entry.get(e.aliasOf) : e; if (r && !roots.has(r.id)) roots.set(r.id, { r, d: effRec(P, r, t.id) || 5 }); }
+  const xs = [...roots.values()]; if (!xs.length) continue;
+  xs.sort((a, b) => a.d - b.d || a.r.text.localeCompare(b.r.text));
+  const easy = xs.filter(x => x.d <= 3).length / xs.length, named = xs.filter(x => NAMED.has(x.r.type)).length / xs.length;
+  const txt = x => `${x.r.show?.[t.id] || x.r.text}(${x.d})`;
+  const pick = [...xs.slice(0, 6), ...xs.slice(-4)].filter((x, i, a) => a.indexOf(x) === i);
+  rows.push(`${t.id} | ${t.name} | ${t.tkind || 'category'} | pop ${t.pop} | ${xs.length} words | easy ${Math.round(easy * 100)}% | named ${Math.round(named * 100)}% | ${pick.map(txt).join(', ')}`);
 }
+const sz = Math.ceil(rows.length / n);
+for (let i = 0; i < n; i++) fs.writeFileSync(here(`./pop/list-${i + 1}.txt`), rows.slice(i * sz, (i + 1) * sz).join('\n') + '\n');
+console.log(rows.length + ' themes in ' + n + ' chunks of about ' + sz);
