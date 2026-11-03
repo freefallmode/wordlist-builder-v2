@@ -71,7 +71,7 @@ pos: noun, verb, adjective, adverb, other (prepositions, numbers, interjections 
 type: common (ordinary word), person (a named person or character), place, org (company, brand, team, group), title (book, film, song, game, artwork), proper (other proper name), acronym, phrase (ordinary idiom or set phrase only, never a name; the type must always say what the entry really is, and is never changed to get past the word limit).
 
 rec, how widely known the word itself is among players, 1 to 5. Be honest and conservative; rate by what a typical adult actually knows, not by how common the thing is in the world. 1 = every child and adult knows it (apple, dog). 2 = nearly every adult (plum, otter). 3 = many adults but not all (quince, ocelot). 4 = people with the interest, job or region (kumquat, quokka). 5 = few people (pulasan, a rare specialist term). Do not rate an obscure word as easy. For names (people, places, organisations, titles, acronyms) do not use how often the name appears in text: ask whether a typical adult would know who or what it is (Cleopatra 2, Tutankhamun 3, Hatshepsut 4), and when unsure pick the harder rating.
-inRec: how recognisable the word is AS A MEMBER OF THIS THEME, 1 to 5 on the same scale: how readily a player who knows the word would place it in this theme. A word everyone knows can still be a hard fit (a tomato in "fruits" is a 3).
+inRec: how typical the word is OF THIS THEME (typicality), 1 to 5: 1 = among the first words anyone names for the theme, 3 = an ordinary member, 5 = a real member but peripheral. It is not how well known the word is: a tomato in "fruits" is a 5 even though everyone knows it.
 
 Flags (true only when it really applies to this meaning of the word):
 - tm: ${FLAG_HELP.tm}

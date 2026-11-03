@@ -66,15 +66,14 @@ export function linkIds(P, e) {
   return r ? [...new Set([...Object.keys(r.th), ...Object.keys(e.th)])] : Object.keys(e.th);
 }
 
-// The rating that counts for an entry in one theme.
-// Popularity of an entry in a theme: its own `th` value, else its root's (spellings and forms never have their own).
+// Typicality of an entry in a theme (how readily it comes to mind for the theme): its own `th` value, else its root's (spellings and forms never have their own).
 export function popIn(P, e, tid) {
   if (e.th[tid]) return e.th[tid];
   const r = e.aliasOf && P.ix.entry.get(e.aliasOf);
   return r ? r.th[tid] || 0 : 0;
 }
 
-// How hard an entry is in a theme: the harder of how well known the word is and how peripheral it is to the theme
+// How hard an entry is in a theme: the harder of its familiarity (how well known the word is) and its typicality (how peripheral it is to the theme)
 // (a word few people know is hard however typical it is; a famous word that is a stretch for the theme is hard too).
 export function effRec(P, e, tid) { return Math.max(popIn(P, e, tid), e.rec || 0); }
 

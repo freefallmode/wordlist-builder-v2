@@ -256,7 +256,7 @@ function themeView(t) {
   if (t.group) { if (!kids.length) parts.push(h('p.hint', 'This group is empty. Add a sub-theme.')); else parts.push(entryTable(t)); return parts; }
 
   const status = st.roots >= min ? h('span.ok', `${st.roots} distinct words ✓`) : h('span.bad', `${st.roots} of ${min} needed`);
-  parts.push(h('div.poolbar', {}, status, h('span.hint', ` · ${plural(st.entries, 'entry')} · pool depth by rating:`), bandBar(st),
+  parts.push(h('div.poolbar', {}, status, h('span.hint', ` · ${plural(st.entries, 'entry')} · pool depth by difficulty:`), bandBar(st),
     t.complete && h('span.hint', ' · complete set: the list must be every member')));
   parts.push(entryTable(t));
   return parts;
@@ -298,7 +298,7 @@ function entryTable(t) {
   const list = pool.filter(e => (A.showOff || e.enabled) && (!f || (e.text + ' ' + e.gloss).toLowerCase().includes(f) || (formsOf.get(e.id) || []).some(a => a.text.toLowerCase().includes(f))));
   const inList = new Set(list.map(e => e.id));
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
-  const key = { text: e => label(e).toLowerCase(), rec: e => e.rec || 9, pos: e => e.pos, intheme: e => popIn(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey, syn: e => groupMates(t, e).toLowerCase() || '￿' }[A.sort] || (e => e.text.toLowerCase());
+  const key = { text: e => label(e).toLowerCase(), rec: e => e.rec || 9, pos: e => e.pos, intheme: e => popIn(P, e, t.id) || 9, diff: e => effRec(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey, syn: e => groupMates(t, e).toLowerCase() || '￿' }[A.sort] || (e => e.text.toLowerCase());
   const dir = A.sortDesc ? -1 : 1;
   roots.sort((a, b) => dir * (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
   let rows = [];
@@ -315,13 +315,13 @@ function entryTable(t) {
   const needLabel = e => sub || readAs.get(label(e).toLowerCase()) > 1;
   const synCell = (t, e) => [...mateIds(t, e).map(id => h('span.chip', {}, groupName(t, id), h('a.x', { href: '#', title: 'Not a synonym', onclick: ev => { ev.preventDefault(); leaveGroup(t, id); } }, '✕'))),
     h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => pool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
-  // another name of a word (an alias, or the root when the row shows a dialect variant) sits under its row with its own part of speech, type, rating, flags and status
+  // another name of a word (an alias, or the root when the row shows a dialect variant) sits under its row with its own part of speech, type, familiarity, flags and status
   const subRow = (a, note) => h('tr.alias', { class: a.enabled ? '' : 'off' }, h('td.on', {}, h('div.onwrap', {}, h('span.expander.none'), h('input', { type: 'checkbox', checked: a.enabled, title: 'enabled', onchange: ev => { a.enabled = ev.target.checked; A.changed(); } }))),
-    h('td.word', { onclick: () => editEntry(a) }, a.text, a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, recSel(a.rec, ev => { a.rec = +ev.target.value; A.changed(); })), h('td'),
+    h('td.word', { onclick: () => editEntry(a) }, a.text, a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, recSel(a.rec, ev => { a.rec = +ev.target.value; A.changed(); })), h('td'), h('td'),
     h('td', flagsOf(a)), h('td', h('span.dot.' + a.status, { title: a.status }, a.status === 'rev' ? '✓' : a.status === 'gen' ? 'g' : '·')));
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
-    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('rating', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the rating in each' }, 'themes') : th('popularity', 'intheme'), th('flags', 'flags'), th('status', 'status')),
+    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('familiarity', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the typicality in each' }, 'themes') : th('typicality', 'intheme'), th('difficulty', 'diff'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => { if (e.asRoot) return subRow(e.asRoot, 'root'); if (e.aliasOf && underRow.has(e.id)) return subRow(e, e.aliasKind === 'regional' ? '' : e.aliasKind); const s = shown(e), v = s !== e ? s : dialectMember(P, e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];   // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
          return h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } }))),
@@ -331,9 +331,10 @@ function entryTable(t) {
           forms.length > 0 && h('a.useform', { href: '#', title: 'Choose the form this theme shows', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); formMenu(ev.currentTarget, [[0, e.text], ...forms.map(a => [a.id, a.text])], s === e ? 0 : s.id, v => { if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed(); render(); }); } }, '▾'), e.aliasKind && h('span.hint', ` ${e.aliasKind}${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''}`)),
         h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, e.aliasOf ? '' : synCell(t, e)),
         h('td.dim', v.pos), h('td.dim', v.type), h('td', {}, recSel(v.rec, ev => { v.rec = +ev.target.value; A.changed(); })),
-        sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true), effRec(P, e, t.id) !== (e.th[t.id] || 0) && h('span.hint', { title: 'The difficulty that counts: the harder of the rating and the popularity' }, ' counts ' + effRec(P, e, t.id))),
+        sub ? h('td.dim', where(e)) : h('td', {}, recSel(e.th[t.id] || 0, ev => { e.th[t.id] = +ev.target.value; A.changed(); }, true)),
+        h('td.dim', { title: 'Difficulty: the harder of familiarity and typicality (worked out, not editable)' }, sub ? '' : effRec(P, e, t.id) || ''),
         h('td', flagsOf(v)), h('td', h('span.dot.' + v.status, { title: v.status }, v.status === 'rev' ? '✓' : v.status === 'gen' ? 'g' : '·'))); }) :
-        h('tr', h('td', { colspan: 9, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
+        h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
 }
 
 function groupName(t, id) { const e = A.P.ix.entry.get(id); return (e && (e.show?.[t.id] || A.P.ix.entry.get(e.use?.[t.id])?.text)) || e?.text || '?'; }   // a group member is named as its theme shows it

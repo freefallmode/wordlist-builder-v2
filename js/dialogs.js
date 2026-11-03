@@ -141,7 +141,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     const root = rootId && P.ix.entry.get(rootId);
     const ids = new Set([...Object.keys(w.th), ...(root ? Object.keys(root.th) : [])]);
     linksBox.replaceChildren(
-      ids.size ? h('table.links', {}, h('tr', {}, h('th', 'Theme'), h('th', root ? 'Rating here (auto = harder of root and own)' : 'Rating in this theme'), h('th')),
+      ids.size ? h('table.links', {}, h('tr', {}, h('th', 'Theme'), h('th', root ? 'Typicality here (auto = harder of root and own)' : 'Typicality in this theme'), h('th')),
         [...ids].map(tid => {
           const inherited = !!root && !(tid in w.th);
           const own = tid in w.th;
@@ -186,7 +186,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (!r) return toast('Pick the root entry first.', true);
     if (await editEntry(r)) A.changed();
   } }, rootLabel());
-  const picker = field('Pick the root entry', aliasInput, 'An alias takes its themes from its root; it has its own flags and ratings. Spelling = same word spelled differently (color/colour); regional = the same thing under another regional word (sidewalk/pavement); synonym = a strict substitute that is always the same answer (besan/gram flour). A near match in meaning (sofa/couch) is an entry of its own, with a synonym group in the theme.');
+  const picker = field('Pick the root entry', aliasInput, 'An alias takes its themes from its root; it has its own flags and familiarity. Spelling = same word spelled differently (color/colour); regional = the same thing under another regional word (sidewalk/pavement); synonym = a strict substitute that is always the same answer (besan/gram flour). A near match in meaning (sofa/couch) is an entry of its own, with a synonym group in the theme.');
   const linkRow = h('div.row', {}, rootLink, h('button.link', { type: 'button', onclick: () => { picker.hidden = !picker.hidden; } }, 'change'));
   picker.hidden = !!w.aliasOf;
   linkRow.hidden = !w.aliasOf;
@@ -194,7 +194,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const aliasSection = h('div', {}, h('h3', 'This is an alias of'), linkRow, picker, aliasList, field('Alias kind', f.kind));
   const aliasesList = h('div', {}, h('h3', 'Aliases of this entry'), aliases.map(a => h('div.row', {},
     h('a', { href: '#', onclick: async ev => { ev.preventDefault(); if (await editEntry(a)) A.changed(); } }, a.text),
-    ` ${a.aliasKind || '?'}${a.region.length ? ' · ' + a.region.join('/') : ''} · rating ${a.rec || '?'}`)));
+    ` ${a.aliasKind || '?'}${a.region.length ? ' · ' + a.region.join('/') : ''} · familiarity ${a.rec || '?'}`)));
   // A root that has aliases cannot become one; a root without any gets a link that reveals the field.
   const revealer = h('div.row', {}, h('button.link', { type: 'button', onclick: () => { revealer.replaceWith(aliasSection); picker.hidden = false; } }, 'Make this an alias of another entry…'));
   const aliasBlock = w.aliasOf ? aliasSection : aliases.length ? aliasesList : revealer;
@@ -203,7 +203,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const body = h('div.form', {},
     h('div.two', {}, field('Text (as written, with capitals)', f.text), field('Meaning/context', f.gloss)),
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
-    h('div.two', {}, field('Recognisability (the word itself)', f.rec, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
+    h('div.two', {}, field('Familiarity (the word itself)', f.rec, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
     h('div.flags', Object.values(boxes)),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).'),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
@@ -248,10 +248,10 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
 
 export async function bulkAdd(tid) {
   const P = A.P, t = P.ix.theme.get(tid);
-  const ta = h('textarea', { rows: 12, placeholder: 'One word per line.\nOptional extras after |  :  meaning | rating | in-theme rating\n  ass | donkey | 1 | 2' });
+  const ta = h('textarea', { rows: 12, placeholder: 'One word per line.\nOptional extras after |  :  meaning | familiarity | typicality\n  ass | donkey | 1 | 2' });
   const d = { pos: select(POS, 'noun'), type: select(TYPES, 'common'), rec: select(REC_OPTS, 0), inRec: select(IN_OPTS, 0) };
   const body = h('div.form', {}, h('p', {}, `Adding to "${t.name}". Words that already exist are just linked.`), ta,
-    h('div.two', {}, field('Part of speech', d.pos), field('Type', d.type)), h('div.two', {}, field('Recognisability', d.rec), field('Rating in this theme', d.inRec)));
+    h('div.two', {}, field('Part of speech', d.pos), field('Type', d.type)), h('div.two', {}, field('Familiarity', d.rec), field('Typicality in this theme', d.inRec)));
   return dialog('Add words', body, [{ label: 'Cancel' }, { label: 'Add', primary: true, action: () => {
     let added = 0, linked = 0; const problems = [];
     for (const line of ta.value.split('\n')) {
@@ -418,7 +418,7 @@ export async function showExport() {
       h('div.two', {}, inc('Include adult content', 'adult'), inc('Include vulgar words', 'vulgar'), inc('Include sensitive topics', 'sensitive'), inc('Include trademark / copyright', 'tm'), inc('Include language-specific themes', 'lang')),
       region,
       h('div.two', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Include unrated words', 'unrated'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes')),
-      h('div.two', {}, num('recMin', 'Lowest rating to include', 1, 5), num('recMax', 'Highest rating to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20), num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));
+      h('div.two', {}, num('recMin', 'Easiest difficulty to include', 1, 5), num('recMax', 'Hardest difficulty to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20), num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));
   };
   let form = build();
   let last = null;

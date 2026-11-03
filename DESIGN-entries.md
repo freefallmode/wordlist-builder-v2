@@ -88,6 +88,8 @@ Many themes can yield new themes of 4 or more words, especially once forms are q
 
 ## 5. Ratings
 
+Terms (2026-11-03). **Familiarity** (`rec`): how well known the word is, on its own. **Typicality** (`th[theme]`, `inRec` in prompts): how readily the word comes to mind for one theme. **Difficulty**: the harder of the two for a word in a theme; computed, never stored, and exported per link. **Theme popularity** (`pop`): how familiar and appealing the theme is for a general player. The stored keys are unchanged; only the labels changed.
+
 Unchanged in meaning (`rec`: how well known the word is; theme link `pop`: how typical it is of the theme), applied as in the table in 3.1. A regional variant's `rec` is judged for the audience of its region.
 
 ## 6. Export (format version 3)

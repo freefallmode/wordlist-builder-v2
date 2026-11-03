@@ -93,7 +93,7 @@ export function allWordsView() {
   const th = (label, k, col) => colGrip(col, h('th.sortable', { class: S.sort === k ? 'sorted' : '', title: 'Click to sort by ' + label,
     onclick: () => { S.dir = S.sort === k ? -S.dir : 1; S.sort = k; S.page = 0; A.render(); } }, label, h('span.sortmark', S.sort === k ? (S.dir > 0 ? ' ▲' : ' ▼') : ' ⇅')));
   const pick = (k, opts) => { const el = select(opts, S[k]); el.onchange = () => { S[k] = el.value; S.page = 0; A.render(); }; return el; };
-  const recOpts = [['', 'any rating'], ...[1, 2, 3, 4, 5].map(n => [String(n), 'rating ' + n]), ['0', 'unrated']];
+  const recOpts = [['', 'any familiarity'], ...[1, 2, 3, 4, 5].map(n => [String(n), 'familiarity ' + n]), ['0', 'unrated']];
   const flagBadges = e => flagList(e).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase()))
     .concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
   const aliasCell = e => { const as = aliasesOf.get(e.id) || []; return as.length ? h('span', { title: as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ')' : '')).join(', ') }, as.map(a => a.text).join(', ')) : ''; };
@@ -111,7 +111,7 @@ export function allWordsView() {
       h('input.filter', { placeholder: 'filter…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
       pick('in', SCOPE), pick('mode', MODES), pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
     pager(),
-    h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('word', 'text', 'text'), th('meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('rating', 'rec', 'rec'),
+    h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('word', 'text', 'text'), th('meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('familiarity', 'rec', 'rec'),
       th('flags', 'flags', 'flags'), th('status', 'status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),

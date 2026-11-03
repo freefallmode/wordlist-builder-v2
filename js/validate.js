@@ -41,7 +41,7 @@ export function validate(P) {
       continue;
     }
     const st = themeStats(P, t.id);
-    if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no popularity rating.`, { themeId: t.id }); else unrated++; }
+    if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no theme popularity.`, { themeId: t.id }); else unrated++; }
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
     if (!t.nameOk) { const ws = themeNameWords(t); for (const e of direct) { const w = nameLeak(t, e.show?.[t.id] ? { ...e, text: e.show[t.id] } : e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
@@ -54,7 +54,7 @@ export function validate(P) {
     for (const e of direct) { if (e.aliasOf) continue; const x = fold(e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text); if (shownAs.has(x)) add('info', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}"; the export keeps the more popular one.`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
-  if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no popularity rating yet.`);
+  if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no theme popularity yet.`);
 
   // ----- overlap: one word inside another in the same theme (cola / Coca-Cola, pasta / pasta sauce) -----
   const toks = s => s.toLowerCase().match(/[a-z0-9]+/g) || [];
@@ -114,22 +114,22 @@ export function validate(P) {
       if (t.group) add('warn', 'link-group', `"${label(e)}" is linked to "${t.name}", which is a group.`, loc);
       if (fold(t.name) === fold(text)) add('warn', 'is-theme-name', `"${text}" is the name of the theme it is in ("${t.name}").`, loc);
     }
-    for (const [tid, v] of Object.entries(e.th)) if (!Number.isInteger(v) || v < 0 || v > 5) add('error', 'bad-rating', `"${label(e)}" has a rating of ${JSON.stringify(v)} in ${tid}; it must be 0 to 5.`, loc);
+    for (const [tid, v] of Object.entries(e.th)) if (!Number.isInteger(v) || v < 0 || v > 5) add('error', 'bad-rating', `"${label(e)}" has a typicality of ${JSON.stringify(v)} in ${tid}; it must be 0 to 5.`, loc);
     for (const [tid, txt] of Object.entries(e.show || {})) if (!ids.includes(tid) || !String(txt).trim()) add('warn', 'show-theme', `"${label(e)}" has a display text for ${tid}, which it is not in (or the text is empty).`, loc);
     for (const [tid, aid] of Object.entries(e.use || {})) {
       const a = ix.entry.get(aid);
       if (!ids.includes(tid)) add('warn', 'use-theme', `"${label(e)}" names a display form for ${tid}, which it is not in.`, loc);
       if (!a || a.aliasOf !== e.id || a.aliasKind !== 'form') add('warn', 'use-form', `"${label(e)}" shows entry ${aid} in ${tid}, which is not one of its forms.`, loc);
     }
-    if (!e.rec && e.enabled) add('info', 'unrated', `"${label(e)}" has no recognisability rating.`, loc);
+    if (!e.rec && e.enabled) add('info', 'unrated', `"${label(e)}" has no familiarity rating.`, loc);
 
     if (freqLoaded() && P.lang === 'en' && e.type === 'common' && e.rec && !e.aliasOf) {
       const z = zipf(text);
       // Frequency in text undersells concrete everyday nouns (igloo, tuba, feta sit near Zipf 2.7), so only very rare words are a warning.
-      if (e.rec <= 2 && z != null && z < 2.3) add('warn', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (easy) but is rare in text (Zipf ${z.toFixed(1)}). Check the rating.`, loc);
-      else if (e.rec <= 2 && z != null && z < 3) add('info', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (easy) and is fairly rare in text (Zipf ${z.toFixed(1)}).`, loc);
-      if (e.rec <= 2 && z === null) add('warn', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (easy) but is not in the frequency list.`, loc);
-      if (e.rec >= 4 && z != null && z > 5) add('info', 'rating-vs-zipf', `"${label(e)}" is rated ${e.rec} (hard) but is very common in text (Zipf ${z.toFixed(1)}).`, loc);
+      if (e.rec <= 2 && z != null && z < 2.3) add('warn', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (easy) but is rare in text (Zipf ${z.toFixed(1)}). Check the familiarity.`, loc);
+      else if (e.rec <= 2 && z != null && z < 3) add('info', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (easy) and is fairly rare in text (Zipf ${z.toFixed(1)}).`, loc);
+      if (e.rec <= 2 && z === null) add('warn', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (easy) but is not in the frequency list.`, loc);
+      if (e.rec >= 4 && z != null && z > 5) add('info', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (hard) but is very common in text (Zipf ${z.toFixed(1)}).`, loc);
     }
   }
   return out;
