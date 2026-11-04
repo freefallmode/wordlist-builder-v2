@@ -2,7 +2,7 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, showValidation, showExport, showSettings, openPath } from './dialogs.js';
@@ -290,7 +290,8 @@ function entryTable(t) {
   for (const a of P.entries) if (a.aliasKind === 'form' && a.aliasOf) { if (!formsOf.has(a.aliasOf)) formsOf.set(a.aliasOf, []); formsOf.get(a.aliasOf).push(a); }
   const shown = e => (!e.aliasOf && P.ix.entry.get(e.use?.[t.id])) || e;
   const own = e => e.th[t.id] !== undefined;   // an alias linked in this theme on its own is a word of the theme like any other (public house in ___ house); otherwise it only sits under its root
-  const label = e => ((!e.aliasOf || own(e)) && e.show?.[t.id]) ||(shown(e) !== e ? shown(e) : dialectMember(P, e)).text;   // what the player sees for this word in this theme
+  const dm = e => themeLocked(P, t) ? e : dialectMember(P, e);   // a locked theme shows exactly the linked word, whatever the library's dialect
+  const label = e => ((!e.aliasOf || own(e)) && e.show?.[t.id]) ||(shown(e) !== e ? shown(e) : dm(e)).text;   // what the player sees for this word in this theme
   const f = A.filter.toLowerCase();
   const list = pool.filter(e => (A.showOff || e.enabled) && (!f || (e.text + ' ' + e.gloss).toLowerCase().includes(f) || (formsOf.get(e.id) || []).some(a => a.text.toLowerCase().includes(f))));
   const inList = new Set(list.map(e => e.id));
@@ -300,7 +301,7 @@ function entryTable(t) {
   roots.sort((a, b) => dir * (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
   let rows = [];
   const under = new Map(), openRows = A.expanded || (A.expanded = new Set());   // other names of a word (spellings, regional words ...) sit behind a button on its row
-  for (const e of roots) { const as = list.filter(x => x.aliasOf === e.id && x.aliasKind !== 'form'); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dialectMember(P, e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
+  for (const e of roots) { const as = list.filter(x => x.aliasOf === e.id && x.aliasKind !== 'form'); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dm(e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
   const underRow = new Set([...under].filter(([id]) => openRows.has(id)).flatMap(([, as]) => as.map(a => a.id)));
   const total = rows.length;
   if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
@@ -319,7 +320,7 @@ function entryTable(t) {
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
     h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('familiarity', 'rec'), sub ? h('th', { title: 'Themes below this one that hold the word, with the typicality in each' }, 'themes') : th('typicality', 'intheme'), th('difficulty', 'diff'), th('flags', 'flags'), th('status', 'status')),
-      rows.length ? rows.map(e => { if (e.asRoot) return subRow(e.asRoot, '(root)'); if (e.aliasOf && underRow.has(e.id)) return subRow(e, '(' + (e.aliasKind || 'unknown') + ' alias)'); const s = shown(e), v = s !== e ? s : dialectMember(P, e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];   // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
+      rows.length ? rows.map(e => { if (e.asRoot) return subRow(e.asRoot, '(root)'); if (e.aliasOf && underRow.has(e.id)) return subRow(e, '(' + (e.aliasKind || 'unknown') + ' alias)'); const s = shown(e), v = s !== e ? s : dm(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];   // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
          return h('tr', { class: [e.aliasOf && !own(e) ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } }))),
         h('td.word', { onclick: () => editEntry(s !== e ? e : v) },
