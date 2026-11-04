@@ -135,6 +135,9 @@ export function themeProfile(P, tid) {
 // The library's default dialect (a setting of the library, so each language can have its own): which regional or spelling variant the app shows for a word that has one.
 // It never moves data: the root stays the root. English defaults to US; other languages have none until it is set.
 export const dialectOf = P => P.settings?.dialect ?? (P.lang === 'en' ? 'US' : '');
+// A locked theme shows exactly the word linked, never a regional, spelling or family substitute: the spelling or sound of the word is the point (wordplay, compound, language-specific themes).
+// Derived from the theme's kind and language flag unless the theme says so itself (t.locked true or false).
+export const themeLocked = (P, t) => t.locked !== undefined ? !!t.locked : t.tkind === 'wordplay' || t.tkind === 'compound' || !!eff(P, t.id).lang;
 export function dialectMember(P, e) {
   const d = dialectOf(P);
   if (!d || e.aliasOf || e.region.includes(d)) return e;

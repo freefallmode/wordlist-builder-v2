@@ -52,6 +52,9 @@ export function validate(P) {
     }
     const shownAs = new Map();   // two words that read the same in one theme cannot both be placed
     for (const e of direct) { if (e.aliasOf) continue; const x = fold(e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text); if (shownAs.has(x)) add('info', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}"; the export keeps the more popular one.`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
+    const fam = new Map();   // an alias family (a root and its aliases) may have only one member linked in a theme
+    for (const e of direct) { if (e.th[t.id] === undefined) continue; const r = e.aliasOf || e.id; if (!fam.has(r)) fam.set(r, []); fam.get(r).push(e); }
+    for (const [r, es] of fam) if (es.length > 1) add('warn', 'family-twice', `"${es.map(e => e.text).join('" and "')}" are the same word (one alias family) and both linked in "${t.name}"; keep one.`, { themeId: t.id, entryId: es[0].id });
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
   if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no theme popularity yet.`);
@@ -106,6 +109,7 @@ export function validate(P) {
         if (e.aliasKind === 'form' && (e.nameOkIn || []).length && text.length > r.text.length && text.toLowerCase().includes(r.text.toLowerCase())) add('info', 'alias-fullname', `"${label(e)}" is kept as a form of "${label(r)}" but is a longer name: make it an entry of its own and give the theme a shown text (show).`, loc);
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
       }
+      if ((e.aliasKind === 'spelling' || e.aliasKind === 'form') && Object.keys(e.th).length) add('warn', 'alias-link-kind', `"${label(e)}" is a ${e.aliasKind} alias with links of its own; only regional, synonym, abbreviation and translation aliases can be linked on their own.`, loc);
     } else if (!ids.length) add('info', 'orphan', `"${label(e)}" is not linked to any theme.`, loc);
 
     for (const tid of ids) {

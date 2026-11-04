@@ -35,7 +35,7 @@ An entry is still one word in one sense (text plus meaning label). A root is the
 | `abbreviation` (new, replaces `short form`, `acronym`, `nickname`) | `PC` for `personal computer` | yes | own recognisability, shared popularity |
 | `translation` (new, 2026-11-01) | `Danmark` for `Denmark`, `Roma` for `Rome`, `Gaeilge` for `Irish` | yes | own recognisability |
 
-A `synonym` alias is a **strict** synonym only: a word that is always the same answer as its root and can always substitute for it (same answer test, 3.3); the game may show whichever of the two suits the level difficulty. Near matches (`sofa`/`couch`) are separate entries with a synonym group. An alias never has its own theme links; it appears in every theme its root is in. `swede` and `rutabaga` become two separate entries (or a `regional` pair, since `swede` is the UK word).
+A `synonym` alias is a **strict** synonym only: a word that is always the same answer as its root and can always substitute for it (same answer test, 3.3); the game may show whichever of the two suits the level difficulty. Near matches (`sofa`/`couch`) are separate entries with a synonym group. A regional, synonym, abbreviation or translation alias **may have theme links of its own** (decided 2026-11-04, see 3.5); a spelling or form alias never does. An alias with no link of its own appears in every theme its root is in. `swede` and `rutabaga` become two separate entries (or a `regional` pair, since `swede` is the UK word).
 
 A regional variant carries `region` tags (UK, AU...). Spelling aliases carry US or UK only.
 
@@ -76,6 +76,27 @@ A root is a **meaning** (`rain`), and its `form` aliases are its grammatical for
 - **In the game**, the player's region setting picks the member to show: the regional alias if the player's region is in its tags, otherwise the root. Only one is ever shown, so no clash rule is needed. Bucketing (for example US / UK / other, with AU, NZ, IE, IN and ZA following UK unless a word says otherwise) happens in the game, not in the data.
 - **In the web app**, a setting "default dialect" (US or UK) chooses which member the app shows in lists and uses as the export fallback. It does **not** move data: with default UK the app shows `flat` for the `apartment` set. Flipping roots in the data is never needed.
 - Spelling aliases: US and UK are enough.
+
+### 3.5 Alias families in themes, and locked themes (2026-11-04)
+
+A root and all its aliases form an **alias family**: one meaning, one primary (the root).
+
+- **Linking.** Any regional, synonym, abbreviation or translation member of a family may be linked in a theme on its own, with its own link rating (difficulty is then `max(its own rec, the link)`, so `handbag` is no longer as hard as `pocketbook`). Spelling and form aliases are not linked on their own; the dialect swap handles them.
+- **One per theme.** At most one member of a family may be linked in a theme (validation `family-twice`). The link says which word the theme wants; the rest of the family follows.
+- **One per level.** The game never puts two words of the same family in one level. The export gives each word its family (the root), as it already does in the root column.
+- **Locked themes.** A theme is *locked* when the game must show exactly the linked word. It then does not swap in a regional or spelling variant or another family member. Locked by default when the theme kind is `wordplay` or `compound`, or the theme (or an ancestor) is language-specific (`lang`); a theme can override either way with `locked: true` or `false` (theme dialog, Word substitution). The export writes bit 64 (`locked`) in the theme flags.
+- **Unlocked themes** swap by the player's region as in 3.4: if the linked word has a family member for the player's region, that member is shown. A UK-only member linked in an unlocked theme is shown as such to a UK player, and swapped to the US word for a US player.
+- `show` is separate: it is the short display text of an entry in a theme (`fly` for `greenfly` in a compound theme). It stays and works with locked and unlocked themes.
+
+### 3.6 Compound and modifier members: the entry is the full term (2026-11-05)
+
+What the player is asked to recognise is the **full term**, so the entry, its ratings, part of speech, type and flags describe the full term, never the bare word.
+
+- **Compound themes** (`tkind` compound, rule `compound-end:room` or `compound-start:fire`): each member is an entry for the full term (`break room`, `firefly`); the theme shows the short word through `show` (`break`, `fly`). The entry carries `nameOkIn` for the theme, since the full term contains the theme's shared word. `rec`, the link rating, pos, type, adult, sensitive, tm, vulgar and region are judged for the full term (a harmless word can make a sensitive term: `crack house`). Loose phrases (an ordinary word plus the shared word: `good time`) are not members; only fixed terms are.
+- **Kinds-of-X themes with modifier members:** a member that is only a modifier and does not mean the thing without its head noun (`green`, `herbal`, `bubble` in teas; `mute` in swans; `igneous` in rocks; `solid` in line types; `prime` in number types) is the full-term entry (`green tea`) shown as the modifier. A bare word that already means the thing (`pine`, `tote`, `leatherback`, `Pacific`, a saint's first name) stays as it is.
+- **Entries with the same text** keep their meaning labels apart (`overlook` the verb and the viewpoint); a word that exists already is reused, not duplicated.
+- **Shown text** repeats across entries more often now (several members show `board`); the generator treats two words with the same shown text as clashing in one level, as for synonym groups.
+- Done in the library: all compound themes (v274 pilot, then the other 48 in v275: 130 links dropped, 923 moved to existing full terms, 703 new full-term entries, 394 emptied bare words deleted). Tools: `tools/gen/compound-make.mjs`, `BRIEF-compound.md`, `compound-apply.mjs`; modifiers: `BRIEF-modifier.md`, `compound-apply.mjs --prefix m`.
 
 ## 4. Splitting themes
 
@@ -162,6 +183,7 @@ Decisions taken while building the weather prototype (2026-11-01), with the reas
 - Case check: a name that starts with a digit (76ers, 49ers) counts as capitalised.
 - Default dialect (see 3.4): Settings → Library → Default dialect; the word table shows the alias tagged with the dialect and the row's columns (part of speech, type, rating, flags, status) follow the word shown. The other names of a word sit under its row with their own columns and a tick-box; the root is listed there when the row shows a variant. No data moves.
 - Theme difficulty is never stored (2026-11-03): the manual `diff` override and the AI theme rating were removed. `themeProfile` works it out from the words; the library shows "serves x to y" (the range in which the theme can fill a 4-word set) and the filter uses the same range; the export no longer writes a theme difficulty (the `difficulty` theme field was dropped; `counts` and `range` remain).
+- Alias families and locked themes (2026-11-04): rules in 3.5. Code so far: `themeLocked` (model.js), the Word substitution field in the theme dialog, export theme bit 64, validations `family-twice` and `alias-link-kind`. Not yet: the game-side swap, a family column in the export for aliases beyond the existing root column, and the 25 via-alias compound links (to be linked to the alias itself).
 - All words screen: aliases column, alias of, themes; a search scope (word or alias, word, alias, meaning, themes, everything) and a match mode (contains, starts with, exactly); every column resizable (drag a heading edge, double-click fits the text, shift + double-click resets), the themes column takes the space left so the table never scrolls; the word column of the theme table is resizable too. Widths are kept per browser.
 - Game export (2026-11-01): tools/export-game.mjs writes data/export/wordlist-game-family.json. The Unity reader for format 3 was written (kept as tools/game/LoadV3.cs.txt; the file in the Unity repo was reverted at the owner's request) and loads 59,620 words, but level generation from the new ratings is not done: the ratings are stricter than the old plan dials. Decision: level generation is set aside; a new generator or on-the-fly generation in the game will be chosen later.
 

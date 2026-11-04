@@ -1,0 +1,1806 @@
+# Compound migration
+
+{"D":130,"U":923,"N":703,"fix":8,"bad":0,"deleted":394,"reused":11,"viaAlias":25,"fixups":4}
+
+- D worms: leech
+- D worms: nightcrawler
+- D worms: liver fluke
+- D worms: planarian
+- N worms: nematode -> nematode worm (noun, common, rec 4, link 3)
+- N worms: annelid -> annelid worm (noun, common, rec 5, link 4)
+- N worms: tubifex -> tubifex worm (noun, common, rec 5, link 5)
+- U worms: Christmas tree -> christmas tree worm (9263) link 4
+- N worms: red wiggler -> red wiggler worm (noun, common, rec 3, link 2)
+- U worms: bobbit -> bobbit worm (59981) link 4
+- U worms: peanut -> peanut worm (59982) link 5
+- U worms: arrow -> arrow worm (59983) link 5
+- U worms: acorn -> acorn worm (59984) link 5
+- U worms: Pompeii -> Pompeii worm (59985) link 5
+- U worms: spoon -> spoon worm (59986) link 5
+- N worms: polychaete -> polychaete worm (noun, common, rec 5, link 4)
+- N worms: nemertean -> nemertean worm (noun, common, rec 5, link 4)
+- D worms: onychophoran
+- N worms: palolo -> palolo worm (noun, common, rec 5, link 5)
+- U worms: feather duster -> feather duster worm (9936) link 5
+- U worms: guinea -> guinea worm (15074) link 4
+- U places after new: England -> New England (37842) link 1
+- U places after new: Mexico -> New Mexico (36189) link 2
+- U places after new: Amsterdam -> New Amsterdam (23047) link 4
+- U places after new: Delhi -> New Delhi (35788) link 2
+- N places after new: cross -> New Cross (noun, place, rec 4, link 4, UK)
+- U places after new: forest -> New Forest (30216) link 3
+- U places after new: Guinea -> New Guinea (57226) link 3
+- U places after new: Plymouth -> New Plymouth (57107) link 4
+- U places after new: Hampshire -> New Hampshire (36201) link 2
+- U places after new: Jersey -> New Jersey (36194) link 1
+- U places after new: York -> New York (2219) link 1
+- U places after new: Zealand -> New Zealand (2156) link 1
+- U places after new: Orleans -> New Orleans (2295) link 2
+- U places after new: Caledonia -> New Caledonia (57216) link 3
+- U places after new: South Wales -> New South Wales (36237) link 2
+- N places after new: Haven -> New Haven (noun, place, rec 3, link 3)
+- N places after new: Hebrides -> New Hebrides (noun, place, rec 4, link 4)
+- U places after new: Brunswick -> New Brunswick (36210) link 3
+- N places after new: Paltz -> New Paltz (noun, place, rec 5, link 5, US)
+- N places after new: Rochelle -> New Rochelle (noun, place, rec 4, link 4, US)
+- N places after new: Bedford -> New Bedford (noun, place, rec 4, link 4, US)
+- N places after new: Canaan -> New Canaan (noun, place, rec 5, link 5, US)
+- N places after new: Glarus -> New Glarus (noun, place, rec 5, link 5)
+- N places after new: Brighton -> New Brighton (noun, place, rec 4, link 4, UK)
+- U puppets: hand -> hand puppet (12355) link 1
+- U puppets: sock -> sock puppet (12357) link 1
+- U puppets: glove -> glove puppet (12358) link 2
+- U puppets: string -> string puppet (12359) link 1
+- U puppets: shadow -> shadow puppet (12360) link 2
+- D puppets: marionette
+- U puppets: rod -> rod puppet (12364) link 3
+- D puppets: ventriloquist dummy
+- N puppets: bunraku -> bunraku puppet (noun, common, rec 4, link 4)
+- D puppets: wayang kulit
+- D puppets: Punch and Judy
+- D puppets: Muppets
+- D puppets: Kermit the Frog
+- D puppets: Miss Piggy
+- D puppets: Elmo
+- D puppets: Sooty
+- D puppets: Lamb Chop
+- D puppets: Howdy Doody
+- D puppets: Gonzo
+- D puppets: Thunderbirds
+- D puppets: Spitting Image
+- D puppets: Orville
+- D puppets: Pinocchio
+- D puppets: Karagoz
+- D puppets: supermarionation
+- D puppets: toy theatre
+- U puppets: finger -> finger puppet (12356) link 2
+- N ___ball: butter -> butterball (noun, common, rec 2, link 4)
+- U ___ball: matzo -> matzo ball (18644) link 3
+- N ___ball: moth -> mothball (noun, common, rec 1, link 3)
+- U ___ball: beach -> beach ball (39807) link 1
+- U ___ball: snow -> snowball (31291) link 1
+- D ___ball: snowfall
+- U ___ball: crystal -> crystal ball (7012) link 2
+- U ___ball: hand -> handball (5197) link 2
+- U ___ball: foot -> football (5191) link 1
+- U ___ball: eye -> eyeball (3351) link 2
+- U ___ball: hair -> hairball (50920) link 3
+- U ___ball: cotton -> cotton ball (39052) link 3
+- U ___ball: tennis -> tennis ball (39805) link 1
+- U ___ball: golf -> golf ball (42649) link 1
+- U ___ball: disco -> disco ball (13872) link 3
+- N ___ball: screw -> screwball (noun, common, rec 2, link 4)
+- N ___ball: fur -> furball (noun, common, rec 2, link 4)
+- U ___ball: fast -> fastball (42809) link 3
+- U ___ball: soft -> softball (5195) link 2
+- U ___ball: paint -> paintball (5639) link 2
+- U ___ball: meat -> meatball (19247) link 1
+- U ___ball: kick -> kickball (5200) link 3
+- U ___ball: puff -> puffball (17628) link 4
+- U ___ball: cannon -> cannonball (21241) link 2
+- U ___ball: mirror -> mirror ball (13884) link 3
+- U ___ball: pin -> pinball (45697) link 2
+- U ___ball: odd -> oddball (39426) link 3
+- U ___ball: dodge -> dodgeball (5199) link 2
+- N ___ball: goof -> goofball (noun, common, rec 3, link 4)
+- N ___ball: high -> highball (noun, common, rec 3, link 4)
+- N ___ball: wrecking -> wrecking ball (noun, common, rec 2, link 2)
+- U ___ball: medicine -> medicine ball (15880) link 3
+- U ___ball: fire -> fireball (41301) link 1
+- U ___ball: stress -> stress ball (42664) link 3
+- U ___ball: basket -> basketball (5192) link 1
+- U ___ball: curve -> curveball (42808) link 3
+- N ___ball: gum -> gumball (noun, common, rec 2, link 3)
+- U ___ball: base -> baseball (5193) link 1
+- U ___ball: volley -> volleyball (5194) link 2
+- U ___ball: cue -> cue ball (42663) link 3
+- A ___fly: green -> greenfly (alias entry linked itself, root aphid)
+- D ___fly: blue
+- U ___fly: house -> housefly (9196) link 1
+- U ___fly: horse -> horsefly (1396) link 2
+- U ___fly: saw -> sawfly (1408) link 4
+- U ___fly: butter -> butterfly (1348) link 1
+- U ___fly: deer -> deer fly (9157) link 3
+- U ___fly: crane -> crane fly (1386) link 3
+- N ___fly: snake -> snakefly (noun, common, rec 5, link 5)
+- N ___fly: scorpion -> scorpionfly (noun, common, rec 5, link 5)
+- N ___fly: alder -> alderfly (noun, common, rec 5, link 4)
+- U ___fly: stone -> stonefly (9208) link 4
+- U ___fly: sand -> sandfly (9155) link 3
+- U ___fly: dragon -> dragonfly (1358) link 1
+- U ___fly: black -> black fly (9158) link 3
+- U ___fly: white -> whitefly (1407) link 3
+- U ___fly: hover -> hoverfly (1432) link 3
+- U ___fly: blow -> blowfly (9201) link 3
+- U ___fly: flesh -> flesh fly (9202) link 4
+- U ___fly: damsel -> damselfly (9123) link 2
+- U ___fly: fire -> firefly (1359) link 1
+- U ___fly: may -> mayfly (1388) link 3
+- U ___fly: shoo -> shoofly (62882) link 5
+- U ___fly: gad -> gadfly (1398) link 3
+- U ___fly: caddis -> caddisfly (9207) link 4
+- U ___fly: bot -> botfly (1410) link 4
+- U ___fly: robber -> robber fly (1433) link 4
+- U ___fly: tsetse -> tsetse fly (1411) link 2
+- U ___fly: cluster -> cluster fly (9203) link 4
+- U ___fly: dung -> dung fly (9210) link 4
+- D ___fly: hang
+- N ___fly: dobson -> dobsonfly (noun, common, rec 5, link 5)
+- N ___fly: bar -> barfly (noun, common, rec 3, link 4)
+- U ___fly: fruit -> fruit fly (9198) link 1
+- U ___house: green -> greenhouse (1835) link 1
+- U ___house: hen -> henhouse (10167) link 3
+- U ___house: tea -> teahouse (30820) link 3
+- U ___house: coffee -> coffeehouse (58219) link 2
+- N ___house: steak -> steakhouse (noun, common, rec 2, link 3)
+- D ___house: joe
+- D ___house: char
+- N ___house: cook -> cookhouse (noun, common, rec 3, link 4)
+- U ___house: dog -> dog house (50858) link 1
+- U ___house: boat -> boathouse (43425) link 2
+- D ___house: lodge
+- U ___house: guest -> guesthouse (2977) link 1
+- U ___house: doll -> dollhouse (5974) link 1
+- N ___house: manor -> manor house (noun, common, rec 2, link 3)
+- U ___house: white -> white house (33580) link 1
+- U ___house: opera -> opera house (12340) link 1
+- N ___house: ale -> alehouse (noun, common, rec 3, link 4, adult,sensitive)
+- N ___house: glass -> glasshouse (noun, common, rec 2, link 3)
+- U ___house: safe -> safe house (33835) link 3
+- fix summer house: type=common
+- U ___house: summer -> summer house (48390) link 3
+- U ___house: light -> lighthouse (2474) link 1
+- U ___house: farm -> farmhouse (24154) link 1
+- N ___house: tree -> treehouse (noun, common, rec 1, link 1)
+- U ___house: ware -> warehouse (2481) link 2
+- U ___house: full -> full house (45259) link 3
+- U ___house: town -> townhouse (122) link 2
+- N ___house: country -> country house (noun, common, rec 2, link 3)
+- U ___house: play -> playhouse (46086) link 2
+- U ___house: bird -> birdhouse (8415) link 2
+- U ___house: out -> outhouse (3072) link 3
+- N ___house: hot -> hothouse (noun, common, rec 3, link 4)
+- N ___house: slaughter -> slaughterhouse (noun, common, rec 2, link 4)
+- U ___house: work -> workhouse (22970) link 4
+- N ___house: store -> storehouse (noun, common, rec 3, link 5)
+- U ___house: bath -> bathhouse (16565) link 3
+- U ___house: alms -> almshouse (61424) link 4
+- U ___house: boarding -> boarding house (2981) link 3
+- N ___house: counting -> counting house (noun, common, rec 4, link 5)
+- N ___house: custom -> custom house (noun, common, rec 4, link 5)
+- A ___house: public -> public house (alias entry linked itself, root pub)
+- U ___house: mad -> madhouse (43180) link 3
+- N ___house: club -> clubhouse (noun, common, rec 2, link 2)
+- N ___house: ice -> icehouse (noun, common, rec 3, link 4)
+- N ___house: power -> powerhouse (noun, common, rec 2, link 3)
+- U ___board: back -> backboard (42720) link 3
+- U ___board: cheese -> cheese board (18018) link 2
+- U ___board: bread -> breadboard (42624) link 3
+- U ___board: sandwich -> sandwich board (35243) link 3
+- U ___board: snow -> snowboard (48871) link 1
+- D ___board: snowfall
+- U ___board: head -> headboard (16053) link 2
+- N ___board: foot -> footboard (noun, common, rec 3, link 4)
+- U ___board: chalk -> chalkboard (4510) link 2
+- N ___board: press -> pressboard (noun, common, rec 4, link 5)
+- U ___board: diving -> diving board (39813) link 2
+- U ___board: chess -> chessboard (45465) link 1
+- U ___board: star -> starboard (34580) link 3
+- U ___board: spring -> springboard (43302) link 3
+- U ___board: black -> blackboard (4509) link 1
+- U ___board: white -> whiteboard (4512) link 1
+- A ___board: notice -> notice board (alias entry linked itself, root bulletin board)
+- U ___board: sound -> soundboard (10721) link 3
+- U ___board: hard -> hardboard (30068) link 4
+- A ___board: clap -> clapboard (alias entry linked itself, root clapperboard)
+- U ___board: shuffle -> shuffleboard (5278) link 3
+- N ___board: drain -> drainboard (noun, common, rec 3, link 4, US)
+- U ___board: wash -> washboard (10614) link 3
+- U ___board: ironing -> ironing board (23554) link 1
+- A ___board: plaster -> plasterboard (alias entry linked itself, root drywall)
+- U ___board: mortar -> mortarboard (24700) link 3
+- U ___board: floor -> floorboard (40314) link 2
+- U ___board: clip -> clipboard (15312) link 1
+- U ___board: cup -> cupboard (4679) link 1
+- U ___board: key -> keyboard (7254) link 1
+- U ___board: over -> overboard (60659) link 2
+- U ___board: skate -> skateboard (43578) link 1
+- U ___board: card -> cardboard (23982) link 2
+- U ___board: surf -> surfboard (39818) link 1
+- U ___board: dart -> dartboard (43171) link 2
+- N ___board: draught -> draughtboard (noun, common, rec 4, link 4, UK)
+- A ___board: chopping -> chopping board (alias entry linked itself, root cutting board)
+- U ___board: bill -> billboard (4592) link 2
+- U ___board: bulletin -> bulletin board (34785) link 2
+- U ___board: side -> sideboard (4684) link 3
+- A ___board: skirting -> skirting board (alias entry linked itself, root baseboard)
+- U ___board: switch -> switchboard (4656) link 3
+- U ___board: score -> scoreboard (40240) link 1
+- U ___board: paddle -> paddleboard (39823) link 3
+- U ___board: body -> bodyboard (43421) link 3
+- U ___board: boogie -> boogie board (57583) link 3
+- D ___board: pass
+- N ___board: free -> freeboard (noun, common, rec 5, link 5)
+- U ___board: mother -> motherboard (7308) link 1
+- U ___board: peg -> pegboard (23159) link 3
+- N ___board: cork -> corkboard (noun, common, rec 2, link 2)
+- U ___board: ouija -> Ouija board (22789) link 2
+- N ___board: wake -> wakeboard (noun, common, rec 3, link 3)
+- U ___board: chip -> chipboard (24054) link 3
+- U ___light: red -> red light (46751) link 1
+- N ___light: green -> green light (noun, common, rec 1, link 1)
+- N ___light: north -> north light (noun, common, rec 5, link 5)
+- U ___light: back -> backlight (49572) link 4
+- N ___light: fog -> fog light (noun, common, rec 2, link 2)
+- D ___light: pea-souper
+- D ___light: haar
+- N ___light: flood -> floodlight (noun, common, rec 2, link 2)
+- U ___light: head -> headlight (2571) link 1
+- U ___light: fan -> fanlight (14183) link 5
+- U ___light: star -> starlight (31599) link 2
+- U ___light: sun -> sunlight (49762) link 1
+- U ___light: moon -> moonlight (31579) link 1
+- N ___light: black -> black light (noun, common, rec 3, link 3)
+- U ___light: tail -> tail light (48070) link 2
+- N ___light: low -> lowlight (noun, common, rec 4, link 5)
+- U ___light: flash -> flashlight (3028) link 1
+- U ___light: candle -> candlelight (25605) link 2
+- N ___light: strobe -> strobe light (noun, common, rec 2, link 3)
+- U ___light: day -> daylight (55757) link 1
+- U ___light: night -> night light (16114) link 2
+- N ___light: high -> highlight (noun, common, rec 1, link 3)
+- N ___light: fire -> firelight (noun, common, rec 2, link 2)
+- U ___light: side -> sidelight (55332) link 4
+- U ___light: spot -> spotlight (11195) link 1
+- U ___light: traffic -> traffic light (38368) link 1
+- N ___light: search -> searchlight (noun, common, rec 2, link 3)
+- U ___light: sky -> skylight (6599) link 2
+- N ___light: gas -> gaslight (noun, common, rec 3, link 4)
+- U ___light: lime -> limelight (12273) link 3
+- U ___light: pilot -> pilot light (47406) link 3
+- N ___light: neon -> neon light (noun, common, rec 1, link 2)
+- U ___light: first -> first light (25431) link 3
+- N ___light: guiding -> guiding light (noun, phrase, rec 3, link 4)
+- N ___light: leading -> leading light (noun, phrase, rec 3, link 4)
+- D ___light: bright
+- N ___light: arc -> arc light (noun, common, rec 4, link 4)
+- N ___light: up -> uplight (noun, common, rec 4, link 5)
+- N ___light: lamp -> lamplight (noun, common, rec 3, link 3)
+- U ___light: half -> half-light (25441) link 5
+- N ___light: brake -> brake light (noun, common, rec 1, link 2)
+- N ___light: stop -> stoplight (noun, common, rec 2, link 2)
+- U ___cake: lemon -> lemon cake (18136) link 2
+- N ___cake: plum -> plum cake (noun, common, rec 3, link 4)
+- N ___cake: tea -> teacake (noun, common, rec 3, link 3, UK)
+- U ___cake: coffee -> coffee cake (18114) link 2
+- U ___cake: carrot -> carrot cake (64708) link 1
+- N ___cake: potato -> potato cake (noun, common, rec 3, link 5)
+- U ___cake: crab -> crab cake (19454) link 2
+- U ___cake: cheese -> cheesecake (606) link 1
+- U ___cake: chocolate -> chocolate cake (64710) link 1
+- N ___cake: rice -> rice cake (noun, common, rec 2, link 3)
+- D ___cake: joe
+- D ___cake: char
+- N ___cake: rock -> rock cake (noun, common, rec 3, link 3, UK)
+- D ___cake: stone
+- U ___cake: marble -> marble cake (64711) link 3
+- U ___cake: wedding -> wedding cake (18116) link 1
+- U ___cake: birthday -> birthday cake (18104) link 1
+- N ___cake: Christmas -> Christmas cake (noun, common, rec 2, link 2)
+- N ___cake: fairy -> fairy cake (noun, common, rec 3, link 3, UK)
+- N ___cake: fish -> fishcake (noun, common, rec 2, link 3)
+- U ___cake: red velvet -> red velvet cake (53741) link 2
+- U ___cake: Battenberg -> Battenberg cake (20270) link 4
+- U ___cake: funnel -> funnel cake (19119) link 3
+- U ___cake: pound -> pound cake (18105) link 2
+- U ___cake: cup -> cupcake (560) link 1
+- U ___cake: pan -> pancake (19250) link 1
+- N ___cake: sponge -> sponge cake (noun, common, rec 1, link 2)
+- U ___cake: oat -> oatcake (20825) link 3
+- N ___cake: angel food -> angel food cake (noun, common, rec 3, link 3)
+- U ___cake: layer -> layer cake (18118) link 2
+- N ___cake: jaffa -> Jaffa cake (noun, common, rec 3, link 4, tm, UK)
+- U ___cake: simnel -> simnel cake (18126) link 4
+- N ___cake: upside-down -> upside-down cake (noun, common, rec 2, link 3)
+- N ___cake: lava -> lava cake (noun, common, rec 2, link 3)
+- N ___cake: short -> shortcake (noun, common, rec 2, link 3)
+- U ___cake: eccles -> Eccles cake (18096) link 3
+- N ___cake: dundee -> Dundee cake (noun, common, rec 4, link 4, UK)
+- U ___cake: lardy -> lardy cake (59655) link 5
+- N ___cake: madeira -> Madeira cake (noun, common, rec 4, link 4, UK)
+- U ___cake: bundt -> bundt cake (18115) link 3
+- N ___cake: mud -> mud cake (noun, common, rec 3, link 4)
+- U ___cake: fruit -> fruitcake (18110) link 2
+- D ___cake: ice
+- U ___man: iron -> Iron Man (52810) link 2
+- N ___man: tin -> Tin Man (noun, proper, rec 2, link 2)
+- U ___man: chair -> chairman (33372) link 2
+- U ___man: milk -> milkman (33020) link 2
+- D ___man: candy
+- N ___man: lollipop -> lollipop man (noun, common, rec 3, link 3, UK)
+- D ___man: lolly
+- N ___man: elephant -> Elephant Man (noun, proper, rec 2, link 3)
+- U ___man: bat -> Batman (12553) link 1
+- N ___man: frog -> frogman (noun, common, rec 3, link 3)
+- U ___man: ant -> Ant-Man (52822) link 3
+- U ___man: spider -> Spider-Man (12554) link 1
+- U ___man: cave -> caveman (12541) link 2
+- N ___man: rain -> Rain Man (noun, title, rec 2, link 4, tm)
+- D ___man: rainfall
+- U ___man: snow -> snowman (25014) link 1
+- D ___man: snowfall
+- U ___man: sand -> sandman (16025) link 3
+- U ___man: police -> policeman (4087) link 1
+- D ___man: old bill
+- N ___man: clergy -> clergyman (noun, common, rec 3, link 4)
+- U ___man: fisher -> fisherman (4149) link 2
+- U ___man: stunt -> stuntman (6399) link 2
+- U ___man: gingerbread -> gingerbread man (25781) link 2
+- A ___man: dust -> dustman (alias entry linked itself, root garbage collector)
+- D ___man: trash can
+- D ___man: rag
+- U ___man: fire -> fireman (4084) link 1
+- U ___man: hang -> hangman (5767) link 2
+- A ___man: bar -> barman (alias entry linked itself, root bartender)
+- A ___man: post -> postman (alias entry linked itself, root mail carrier)
+- U ___man: super -> Superman (12555) link 1
+- U ___man: aqua -> Aquaman (52818) link 2
+- U ___man: gentle -> gentleman (35425) link 2
+- N ___man: business -> businessman (noun, common, rec 1, link 2)
+- U ___man: handy -> handyman (24146) link 2
+- N ___man: straw -> straw man (noun, common, rec 3, link 4)
+- N ___man: middle -> middleman (noun, common, rec 2, link 3)
+- U ___man: best -> best man (25101) link 2
+- N ___man: hit -> hitman (noun, common, rec 2, link 3)
+- N ___man: sales -> salesman (noun, common, rec 1, link 2)
+- U ___man: sports -> sportsman (28247) link 3
+- N ___man: show -> showman (noun, common, rec 3, link 3)
+- N ___man: con -> con man (noun, common, rec 2, link 3)
+- fix mailman: type=common
+- U ___man: mail -> mailman (4122) link 2
+- U ___man: pac -> Pac-Man (5782) link 2
+- N ___man: invisible -> Invisible Man (noun, title, rec 2, link 4)
+- U ___man: weather -> weatherman (12849) link 2
+- U ___man: yes -> yes man (27292) link 2
+- N ___man: mad -> madman (noun, common, rec 2, link 2)
+- N ___man: bag -> bagman (noun, common, rec 4, link 5)
+- U ___man: ice -> Iceman (6881) link 3
+- N ___man: bogey -> bogeyman (noun, common, rec 2, link 2)
+- U ___man: hench -> henchman (13529) link 2
+- N ___man: lay -> layman (noun, common, rec 3, link 3)
+- N ___man: pitch -> pitchman (noun, common, rec 4, link 5, US)
+- A ___box: horse -> horsebox (alias entry linked itself, root horse trailer)
+- N ___box: bread -> bread box (noun, common, rec 2, link 3)
+- N ___box: cereal -> cereal box (noun, common, rec 1, link 3)
+- N ___box: salt -> salt box (noun, common, rec 2, link 3)
+- D ___box: pizza
+- N ___box: dice -> dice box (noun, common, rec 3, link 3)
+- U ___box: sand -> sandbox (46075) link 1
+- U ___box: signal -> signal box (2905) link 3
+- U ___box: tinder -> tinderbox (13634) link 4
+- N ___box: pill -> pillbox (noun, common, rec 2, link 3)
+- N ___box: soap -> soapbox (noun, common, rec 2, link 3)
+- U ___box: jury -> jury box (61129) link 3
+- N ___box: witness -> witness box (noun, common, rec 2, link 3)
+- N ___box: sentry -> sentry box (noun, common, rec 2, link 3)
+- U ___box: letter -> letterbox (23244) link 2
+- U ___box: hat -> hat box (23190) link 3
+- A ___box: gear -> gearbox (alias entry linked itself, root transmission)
+- U ___box: black -> black box (2742) link 3
+- U ___box: nest -> nest box (8414) link 4
+- N ___box: chatter -> chatterbox (noun, common, rec 3, link 4)
+- N ___box: pencil -> pencil box (noun, common, rec 2, link 3)
+- N ___box: paint -> paintbox (noun, common, rec 2, link 3)
+- D ___box: crayon
+- N ___box: cigar -> cigar box (noun, common, rec 2, link 3)
+- U ___box: snuff -> snuffbox (61493) link 4
+- U ___box: squeeze -> squeezebox (6009) link 3
+- U ___box: bento -> bento box (61680) link 3
+- U ___box: lunch -> lunch box (25509) link 1
+- N ___box: cash -> cashbox (noun, common, rec 2, link 3)
+- A ___box: phone -> phone box (alias entry linked itself, root telephone booth)
+- N ___box: cardboard -> cardboard box (noun, common, rec 1, link 2)
+- N ___box: window -> window box (noun, common, rec 2, link 3)
+- U ___box: post -> post box (40084) link 2
+- U ___box: mail -> mailbox (38221) link 1
+- U ___box: juke -> jukebox (11314) link 2
+- U ___box: tool -> toolbox (4801) link 1
+- N ___box: shoe -> shoebox (noun, common, rec 2, link 3)
+- N ___box: match -> matchbox (noun, common, rec 2, link 2)
+- N ___box: toy -> toy box (noun, common, rec 2, link 2)
+- U ___box: gift -> gift box (25208) link 2
+- U ___box: ballot -> ballot box (33320) link 2
+- U ___box: glove -> glove box (2612) link 1
+- U ___box: music -> music box (11316) link 1
+- N ___box: dispatch -> dispatch box (noun, common, rec 4, link 5, UK)
+- N ___box: call -> call box (noun, common, rec 2, link 3, UK)
+- U ___box: ice -> icebox (4717) link 3
+- U ___box: jewelry -> jewelry box (23149) link 2
+- U ___box: fuse -> fuse box (23648) link 2
+- U ___box: penalty -> penalty box (43600) link 2
+- U ___book: cook -> cookbook (13160) link 1
+- D ___book: library
+- N ___book: bank -> bankbook (noun, common, rec 4, link 4)
+- N ___book: hand -> handbook (noun, common, rec 2, link 2)
+- U ___book: face -> Facebook (35093) link 3
+- A ___book: exercise -> exercise book (alias entry linked itself, root notebook)
+- N ___book: prayer -> prayer book (noun, common, rec 2, link 2, sensitive)
+- D ___book: orison
+- N ___book: hymn -> hymnbook (noun, common, rec 2, link 2, sensitive)
+- N ___book: song -> songbook (noun, common, rec 2, link 2)
+- U ___book: sketch -> sketchbook (12015) link 2
+- N ___book: story -> storybook (noun, common, rec 1, link 1)
+- N ___book: black -> black book (noun, common, rec 3, link 4)
+- U ___book: audio -> audiobook (13548) link 2
+- D ___book: hard
+- U ___book: pocket -> pocket book (13549) link 4
+- U ___book: year -> yearbook (34968) link 2
+- U ___book: comic -> comic book (13566) link 1
+- N ___book: phrase -> phrasebook (noun, common, rec 2, link 3)
+- N ___book: work -> workbook (noun, common, rec 2, link 2)
+- U ___book: pass -> passbook (33936) link 4
+- N ___book: match -> matchbook (noun, common, rec 3, link 4)
+- U ___book: note -> notebook (4504) link 1
+- N ___book: scrap -> scrapbook (noun, common, rec 1, link 1)
+- U ___book: picture -> picture book (13173) link 1
+- U ___book: guide -> guidebook (48765) link 2
+- N ___book: rule -> rulebook (noun, common, rec 2, link 3)
+- U ___book: cheque -> cheque book (61449) link 3
+- N ___book: colouring -> colouring book (noun, common, rec 1, link 2, UK)
+- N ___book: reference -> reference book (noun, common, rec 2, link 4)
+- N ___book: order -> order book (noun, common, rec 4, link 5)
+- D ___book: ledger
+- N ___book: jungle -> The Jungle Book (noun, title, rec 1, link 2)
+- U ___book: e -> ebook (13547) link 2
+- N ___book: check -> checkbook (noun, common, rec 2, link 3, US)
+- U ___book: date -> datebook (25407) link 5
+- U ___book: log -> logbook (21019) link 3
+- U ___book: text -> textbook (4502) link 1
+- N ___book: address -> address book (noun, common, rec 1, link 2)
+- D ___bird: red
+- U ___bird: blue -> bluebird (8152) link 2
+- N ___bird: king -> kingbird (noun, common, rec 4, link 4)
+- U ___bird: cow -> cowbird (51281) link 4
+- N ___bird: water -> waterbird (noun, common, rec 3, link 4)
+- N ___bird: cat -> catbird (noun, common, rec 3, link 4)
+- D ___bird: moggy
+- D ___bird: kitty
+- U ___bird: snow -> snowbird (27544) link 3
+- D ___bird: snowfall
+- U ___bird: thunder -> Thunderbird (22639) link 3
+- U ___bird: jail -> jailbird (33729) link 2
+- U ___bird: frigate -> frigatebird (8129) link 3
+- U ___bird: love -> lovebird (1472) link 1
+- U ___bird: secretary -> secretary bird (8106) link 3
+- N ___bird: tailor -> tailorbird (noun, common, rec 4, link 4)
+- N ___bird: oven -> ovenbird (noun, common, rec 4, link 4)
+- U ___bird: lyre -> lyrebird (8186) link 3
+- N ___bird: song -> songbird (noun, common, rec 1, link 1)
+- U ___bird: sun -> sunbird (8348) link 4
+- U ___bird: black -> blackbird (1091) link 1
+- U ___bird: fire -> Firebird (22606) link 4
+- U ___bird: humming -> hummingbird (1076) link 1
+- N ___bird: sea -> seabird (noun, common, rec 2, link 2)
+- U ___bird: mocking -> mockingbird (8154) link 2
+- N ___bird: early -> early bird (noun, phrase, rec 1, link 2)
+- U ___bird: big -> Big Bird (40095) link 4
+- N ___bird: rare -> rare bird (noun, phrase, rec 3, link 5)
+- D ___bird: yard
+- U ___bird: bower -> bowerbird (51181) link 3
+- U ___bird: butcher -> butcherbird (51189) link 3
+- U ___bird: dicky -> dicky bird (27481) link 3
+- N ___bird: shore -> shorebird (noun, common, rec 2, link 3)
+- N ___bird: land -> landbird (noun, common, rec 3, link 4)
+- N ___bird: wading -> wading bird (noun, common, rec 3, link 3)
+- A ___bird: Lady -> ladybird (alias entry linked itself, root ladybug)
+- U ___bird: game -> game bird (17737) link 2
+- N ___bird: weaver -> weaverbird (noun, common, rec 3, link 4)
+- N ___fish: blue -> bluefish (noun, common, rec 3, link 4)
+- N ___fish: king -> kingfish (noun, common, rec 3, link 4)
+- U ___fish: gold -> goldfish (1214) link 1
+- U ___fish: silver -> silverfish (1394) link 3
+- U ___fish: lion -> lionfish (1321) link 2
+- U ___fish: saw -> sawfish (8798) link 3
+- N ___fish: cod -> codfish (noun, common, rec 2, link 4)
+- N ___fish: zebra -> zebrafish (noun, common, rec 3, link 3)
+- U ___fish: parrot -> parrotfish (8774) link 2
+- U ___fish: dog -> dogfish (8754) link 4
+- U ___fish: cat -> catfish (1221) link 1
+- D ___fish: moggy
+- D ___fish: kitty
+- N ___fish: cave -> cavefish (noun, common, rec 4, link 4)
+- N ___fish: rock -> rockfish (noun, common, rec 3, link 4)
+- U ___fish: stone -> stonefish (8913) link 3
+- U ___fish: lantern -> lanternfish (8815) link 3
+- U ___fish: lung -> lungfish (1265) link 4
+- U ___fish: razor -> razorfish (17820) link 5
+- U ___fish: monk -> monkfish (508) link 3
+- U ___fish: angel -> angelfish (1218) link 2
+- N ___fish: devil -> devilfish (noun, common, rec 4, link 4)
+- N ___fish: file -> filefish (noun, common, rec 4, link 5)
+- U ___fish: star -> starfish (1287) link 1
+- U ___fish: sun -> sunfish (1268) link 4
+- N ___fish: moon -> moonfish (noun, common, rec 4, link 5)
+- N ___fish: white -> whitefish (noun, common, rec 3, link 3)
+- U ___fish: shell -> shellfish (62720) link 2
+- U ___fish: clown -> clownfish (1217) link 1
+- U ___fish: blow -> blowfish (1232) link 3
+- U ___fish: jelly -> jellyfish (1286) link 1
+- U ___fish: sword -> swordfish (484) link 1
+- N ___fish: jewel -> jewelfish (noun, common, rec 5, link 5)
+- U ___fish: pipe -> pipefish (9888) link 4
+- N ___fish: odd -> odd fish (noun, phrase, rec 3, link 4)
+- N ___fish: big -> big fish (noun, phrase, rec 2, link 3)
+- U ___fish: cuttle -> cuttlefish (1300) link 2
+- U ___fish: flying -> flying fish (9938) link 2
+- U ___fish: puffer -> pufferfish (1231) link 2
+- U ___fish: cray -> crayfish (499) link 2
+- N ___fish: oily -> oily fish (noun, common, rec 2, link 4)
+- U ___fish: globe -> globefish (1234) link 5
+- U ___fish: trigger -> triggerfish (8786) link 4
+- U ___berry: blue -> blueberry (348) link 1
+- U ___berry: goose -> gooseberry (366) link 2
+- U ___berry: salmon -> salmonberry (17191) link 4
+- U ___berry: wine -> wineberry (17201) link 5
+- N ___berry: bear -> bearberry (noun, common, rec 4, link 5)
+- N ___berry: wolf -> wolfberry (noun, common, rec 4, link 5)
+- U ___berry: juniper -> juniper berry (17187) link 3
+- N ___berry: rowan -> rowanberry (noun, common, rec 4, link 4)
+- D ___berry: mountain ash
+- U ___berry: snow -> snowberry (30692) link 5
+- D ___berry: snowfall
+- U ___berry: cloud -> cloudberry (17186) link 4
+- U ___berry: dew -> dewberry (17190) link 5
+- U ___berry: black -> BlackBerry (49261) link 1
+- U ___berry: acai -> acai berry (17188) link 3
+- U ___berry: straw -> strawberry (91) link 1
+- U ___berry: rasp -> raspberry (349) link 1
+- U ___berry: cran -> cranberry (354) link 1
+- U ___berry: elder -> elderberry (370) link 2
+- U ___berry: mul -> mulberry (367) link 3
+- U ___berry: logan -> loganberry (17181) link 4
+- U ___berry: boysen -> boysenberry (17180) link 3
+- U ___berry: huckle -> huckleberry (17183) link 4
+- U ___berry: bil -> bilberry (371) link 4
+- U ___berry: goji -> goji berry (15570) link 3
+- N ___berry: bane -> baneberry (noun, common, rec 5, link 5)
+- U ___berry: lingon -> lingonberry (17184) link 5
+- U ___berry: chuck -> Chuck Berry (11560) link 5
+- N ___berry: bay -> bayberry (noun, common, rec 4, link 4)
+- U ___berry: tay -> tayberry (17182) link 4
+- N ___line: waist -> waistline (noun, common, rec 2, link 3)
+- N ___line: bread -> breadline (noun, common, rec 2, link 3)
+- N ___line: water -> waterline (noun, common, rec 3, link 3)
+- N ___line: bee -> beeline (noun, common, rec 2, link 3)
+- U ___line: snow -> snowline (30851) link 4
+- D ___line: snowfall
+- D ___line: streetcar
+- U ___line: head -> headline (4561) link 1
+- U ___line: neck -> neckline (24955) link 2
+- U ___line: hair -> hairline (38933) link 2
+- N ___line: battle -> battle line (noun, common, rec 2, link 4)
+- U ___line: hem -> hemline (24977) link 3
+- U ___line: fishing -> fishing line (25530) link 2
+- U ___line: chorus -> chorus line (12390) link 3
+- U ___line: conga -> conga line (39527) link 3
+- N ___line: story -> storyline (noun, common, rec 2, link 2)
+- U ___line: punch -> punchline (10971) link 1
+- D ___line: main course
+- U ___line: main -> main line (47702) link 5
+- N ___line: phone -> phone line (noun, common, rec 1, link 2)
+- U ___line: pipe -> pipeline (32341) link 2
+- N ___line: timber -> timberline (noun, common, rec 3, link 4)
+- D ___line: lumber
+- N ___line: bikini -> bikini line (noun, common, rec 2, link 4)
+- U ___line: party -> party line (25672) link 4
+- U ___line: under -> underline (26205) link 2
+- U ___line: tree -> treeline (30155) link 3
+- N ___line: out -> outline (noun, common, rec 1, link 2)
+- U ___line: hot -> hotline (35157) link 2
+- N ___line: sky -> skyline (noun, common, rec 1, link 1)
+- N ___line: gas -> gas line (noun, common, rec 2, link 4)
+- N ___line: guide -> guideline (noun, common, rec 1, link 2)
+- U ___line: date -> date line (2427) link 4
+- U ___line: shore -> shoreline (31087) link 2
+- U ___line: land -> landline (24235) link 2
+- N ___line: chat -> chat line (noun, common, rec 2, link 4)
+- N ___line: life -> lifeline (noun, common, rec 1, link 1)
+- U ___line: dead -> deadline (33158) link 1
+- U ___line: coast -> coastline (37880) link 1
+- U ___line: clothes -> clothesline (23257) link 2
+- U ___line: starting -> starting line (44010) link 2
+- U ___line: front -> frontline (4424) link 1
+- U ___line: plumb -> plumb line (7241) link 4
+- U ___line: dotted -> dotted line (37879) link 2
+- U ___line: washing -> washing line (40325) link 2
+- U ___line: picket -> picket line (35345) link 2
+- U ___line: assembly -> assembly line (22931) link 2
+- N ___line: help -> helpline (noun, common, rec 2, link 3)
+- U ___line: tag -> tagline (35235) link 3
+- U ___line: branch -> branch line (2896) link 4
+- D ___line: top
+- U ___line: air -> airline (2740) link 1
+- N ___line: rail -> rail line (noun, common, rec 2, link 3)
+- N ___line: poverty -> poverty line (noun, common, rec 2, link 3)
+- N ___line: straight -> straight line (noun, common, rec 1, link 2)
+- N ___line: fault -> fault line (noun, common, rec 2, link 2)
+- N ___line: border -> borderline (noun, common, rec 2, link 3)
+- N ___line: base -> baseline (noun, common, rec 2, link 3)
+- U ___line: power -> power line (49816) link 1
+- U ___line: finish -> finish line (44009) link 1
+- N ___line: production -> production line (noun, common, rec 2, link 3)
+- U ___line: Maginot -> Maginot Line (21489) link 4
+- N ___line: Plimsoll -> Plimsoll line (noun, proper, rec 5, link 5)
+- N ___line: ley -> ley line (noun, common, rec 4, link 5)
+- N ___line: Curzon -> Curzon line (noun, proper, rec 5, link 5)
+- N ___line: Mason-Dixon -> Mason-Dixon line (noun, proper, rec 3, link 4)
+- U ___wood: red -> redwood (1640) link 2
+- U ___wood: green -> greenwood (30129) link 5
+- U ___wood: iron -> ironwood (30031) link 4
+- U ___wood: dog -> dogwood (1681) link 3
+- U ___wood: balsa -> balsa wood (39571) link 3
+- fix Rosewood: type=common
+- fix Rosewood: rec=3
+- U ___wood: rose -> Rosewood (29942) link 3
+- D ___wood: tinder
+- U ___wood: heart -> heartwood (30043) link 4
+- U ___wood: cotton -> cottonwood (1682) link 3
+- N ___wood: black -> blackwood (noun, common, rec 4, link 5)
+- N ___wood: white -> whitewood (noun, common, rec 4, link 5)
+- U ___wood: worm -> wormwood (39173) link 4
+- U ___wood: soft -> softwood (30058) link 1
+- U ___wood: hard -> hardwood (30057) link 1
+- D ___wood: timber
+- D ___wood: lumber
+- N ___wood: box -> boxwood (noun, common, rec 4, link 4)
+- N ___wood: cord -> cordwood (noun, common, rec 3, link 5)
+- N ___wood: under -> underwood (noun, common, rec 5, link 5)
+- U ___wood: fire -> firewood (3041) link 1
+- N ___wood: match -> matchwood (noun, common, rec 4, link 5)
+- N ___wood: dead -> deadwood (noun, common, rec 3, link 3)
+- U ___wood: sandal -> sandalwood (1674) link 2
+- U ___wood: ply -> plywood (24039) link 1
+- N ___wood: brush -> brushwood (noun, common, rec 3, link 4)
+- N ___wood: bent -> bentwood (noun, common, rec 4, link 5)
+- U ___wood: holly -> Hollywood (28731) link 3
+- U ___wood: drift -> driftwood (30059) link 2
+- U ___stone: blue -> bluestone (31762) link 5
+- N ___stone: touch -> touchstone (noun, common, rec 3, link 3)
+- U ___stone: cherry -> cherry stone (30716) link 4
+- U ___stone: peach -> peach stone (30715) link 4
+- U ___stone: iron -> ironstone (56608) link 5
+- U ___stone: whin -> whinstone (31774) link 5
+- U ___stone: hail -> hailstone (2019) link 2
+- U ___stone: sand -> sandstone (2059) link 2
+- U ___stone: pumice -> pumice stone (2079) link 3
+- N ___stone: flint -> flintstone (noun, common, rec 4, link 5)
+- U ___stone: mill -> millstone (31769) link 3
+- U ___stone: head -> headstone (21746) link 2
+- N ___stone: kidney -> kidney stone (noun, common, rec 1, link 2)
+- U ___stone: birth -> birthstone (31696) link 2
+- U ___stone: soap -> soapstone (2087) link 4
+- N ___stone: foundation -> foundation stone (noun, common, rec 3, link 4)
+- U ___stone: tomb -> tombstone (21744) link 2
+- U ___stone: sun -> sunstone (31678) link 5
+- U ___stone: moon -> moonstone (31665) link 3
+- U ___stone: brown -> brownstone (24162) link 3
+- N ___stone: stepping -> stepping stone (noun, common, rec 2, link 2)
+- U ___stone: Bath -> Bath stone (31765) link 4
+- U ___stone: grave -> gravestone (21745) link 2
+- U ___stone: hearth -> hearthstone (55277) link 4
+- U ___stone: key -> keystone (6579) link 3
+- D ___stone: fire
+- U ___stone: lime -> limestone (2058) link 2
+- U ___stone: mile -> milestone (25155) link 2
+- U ___stone: gem -> gemstone (21216) link 2
+- N ___stone: brim -> brimstone (noun, common, rec 3, link 3)
+- U ___stone: cobble -> cobblestone (31760) link 2
+- U ___stone: rolling -> rolling stone (39782) link 3
+- U ___stone: flag -> flagstone (31759) link 3
+- N ___stone: gall -> gallstone (noun, common, rec 2, link 3)
+- U ___stone: rosetta -> Rosetta Stone (6656) link 3
+- N ___stone: whet -> whetstone (noun, common, rec 3, link 4)
+- U ___stone: corner -> cornerstone (31767) link 2
+- U ___stone: lode -> lodestone (2108) link 4
+- U ___stone: blarney -> Blarney Stone (55776) link 3
+- N ___stone: rhine -> rhinestone (noun, common, rec 2, link 3)
+- U ___stone: cap -> capstone (31768) link 4
+- U ___stone: Portland -> Portland stone (31764) link 4
+- U ___stone: curb -> curbstone (31773) link 4
+- U ___ship: cruise -> cruise ship (2835) link 1
+- U ___ship: friend -> friendship (3896) link 1
+- U ___ship: partner -> partnership (34111) link 2
+- U ___ship: kin -> kinship (3966) link 4
+- N ___ship: apprentice -> apprenticeship (noun, common, rec 2, link 3)
+- N ___ship: intern -> internship (noun, common, rec 2, link 3)
+- U ___ship: court -> courtship (32443) link 3
+- U ___ship: war -> warship (21234) link 2
+- U ___ship: battle -> battleship (34574) link 1
+- U ___ship: sailing -> sailing ship (58222) link 4
+- N ___ship: author -> authorship (noun, common, rec 3, link 4)
+- N ___ship: pirate -> pirate ship (noun, common, rec 1, link 2)
+- U ___ship: star -> starship (7125) link 3
+- N ___ship: rocket -> rocket ship (noun, common, rec 1, link 2)
+- U ___ship: ghost -> ghost ship (31159) link 3
+- N ___ship: hard -> hardship (noun, common, rec 1, link 3)
+- U ___ship: steward -> stewardship (32275) link 4
+- N ___ship: lord -> lordship (noun, common, rec 3, link 4)
+- U ___ship: town -> township (38487) link 3
+- N ___ship: mother -> mothership (noun, common, rec 2, link 2)
+- U ___ship: space -> spaceship (7124) link 1
+- U ___ship: air -> airship (39497) link 2
+- U ___ship: flag -> flagship (21235) link 2
+- N ___ship: relation -> relationship (noun, common, rec 1, link 1)
+- N ___ship: leader -> leadership (noun, common, rec 1, link 1)
+- N ___ship: owner -> ownership (noun, common, rec 1, link 2)
+- U ___ship: cargo -> cargo ship (2808) link 3
+- N ___ship: citizen -> citizenship (noun, common, rec 2, link 3)
+- U ___ship: scholar -> scholarship (4537) link 2
+- U ___ship: censor -> censorship (4647) link 3
+- U ___ship: dictator -> dictatorship (33426) link 3
+- U ___ship: fellow -> fellowship (7049) link 3
+- N ___ship: slave -> slave ship (noun, common, rec 2, link 4, sensitive)
+- N ___ship: sportsman -> sportsmanship (noun, common, rec 3, link 4)
+- N ___ship: brinkman -> brinkmanship (noun, common, rec 4, link 5)
+- N ___ship: gamesman -> gamesmanship (noun, common, rec 4, link 5)
+- N ___ship: one-upman -> one-upmanship (noun, common, rec 4, link 5)
+- N ___ship: member -> membership (noun, common, rec 1, link 2)
+- U ___ship: sponsor -> sponsorship (35381) link 3
+- N ___ship: champion -> championship (noun, common, rec 1, link 1)
+- U ___works: iron -> ironworks (57707) link 4
+- N ___works: copper -> copperworks (noun, common, rec 4, link 5)
+- D ___works: tin
+- D ___works: lead
+- U ___works: water -> waterworks (57724) link 3
+- D ___works: stone
+- U ___works: steel -> steelworks (57706) link 2
+- N ___works: brick -> brickworks (noun, common, rec 3, link 3)
+- D ___works: wood
+- N ___works: glass -> glassworks (noun, common, rec 3, link 4)
+- U ___works: fire -> fireworks (13848) link 1
+- N ___works: public -> public works (noun, common, rec 2, link 4)
+- U ___works: gas -> gasworks (57708) link 4
+- N ___works: earth -> earthworks (noun, common, rec 3, link 4)
+- U ___works: road -> roadworks (38389) link 2
+- U ___works: sewage -> sewage works (57715) link 4
+- N ___works: metal -> metalworks (noun, common, rec 3, link 4)
+- N ___works: ground -> groundworks (noun, common, rec 4, link 5)
+- N ___works: art -> artworks (noun, common, rec 2, link 4)
+- N ___works: clock -> clockwork (noun, common, rec 2, link 2)
+- D ___bag: back
+- U ___bag: tea -> tea bag (40243) link 1
+- D ___bag: char
+- U ___bag: saddle -> saddlebag (9583) link 2
+- N ___bag: wind -> windbag (noun, common, rec 2, link 4)
+- N ___bag: sand -> sandbag (noun, common, rec 2, link 2)
+- U ___bag: school -> school bag (24721) link 2
+- U ___bag: shoulder -> shoulder bag (24715) link 2
+- A ___bag: hand -> handbag (alias entry linked itself, root pocketbook)
+- N ___bag: nose -> nosebag (noun, common, rec 3, link 5)
+- U ___bag: diaper -> diaper bag (15781) link 3
+- U ___bag: gym -> gym bag (24719) link 2
+- N ___bag: vacuum -> vacuum bag (noun, common, rec 2, link 4)
+- N ___bag: Hoover -> hoover bag (noun, common, rec 2, link 4, tm, UK,IE)
+- N ___bag: clutch -> clutch bag (noun, common, rec 3, link 4)
+- N ___bag: golf -> golf bag (noun, common, rec 1, link 2)
+- N ___bag: ditty -> ditty bag (noun, common, rec 4, link 5)
+- N ___bag: punch -> punch bag (noun, common, rec 1, link 2, UK)
+- N ___bag: grab -> grab bag (noun, common, rec 2, link 4)
+- U ___bag: lunch -> lunch bag (19920) link 3
+- U ___bag: paper -> paper bag (25559) link 1
+- fix toilet bag: type=common
+- U ___bag: toilet -> toilet bag (48803) link 3
+- D ___bag: trash can
+- U ___bag: carpet -> carpetbag (24718) link 4
+- N ___bag: rag -> rag bag (noun, common, rec 3, link 5)
+- U ___bag: wash -> wash bag (23905) link 4
+- fix laundry bag: type=common
+- U ___bag: laundry -> laundry bag (48769) link 2
+- N ___bag: evening -> evening bag (noun, common, rec 3, link 4)
+- U ___bag: doggy -> doggy bag (20023) link 2
+- N ___bag: body -> body bag (noun, common, rec 2, link 2, sensitive)
+- U ___bag: mail -> mail bag (35180) link 3
+- N ___bag: tool -> tool bag (noun, common, rec 1, link 3)
+- U ___bag: air -> airbag (2614) link 2
+- U ___bag: sleeping -> sleeping bag (3025) link 1
+- U ___bag: bean -> bean bag (25747) link 2
+- U ___bag: shopping -> shopping bag (24714) link 1
+- U ___bag: carrier -> carrier bag (24716) link 3
+- N ___bag: plastic -> plastic bag (noun, common, rec 1, link 1)
+- U ___bag: duffel -> duffel bag (24713) link 3
+- U ___bag: kit -> kit bag (24732) link 4
+- A ___bag: bum -> bum bag (alias entry linked itself, root fanny pack)
+- A ___bag: sick -> sick bag (alias entry linked itself, root air sickness bag)
+- U ___bag: goody -> goody bag (55638) link 2
+- U ___bag: tote -> tote bag (4991) link 3
+- N ___bag: mixed -> mixed bag (noun, phrase, rec 2, link 4)
+- U ___bag: messenger -> messenger bag (4994) link 3
+- N ___bag: diplomatic -> diplomatic bag (noun, common, rec 3, link 5, UK)
+- U ___bag: piping -> piping bag (18258) link 3
+- N ___bag: make-up -> make-up bag (noun, common, rec 2, link 3)
+- N ___bag: travel -> travel bag (noun, common, rec 1, link 2)
+- D ___bag: fanny
+- N ___bag: dime -> dime bag (noun, common, rec 2, link 5, sensitive, US)
+- N ___bag: ice -> ice bag (noun, common, rec 2, link 4)
+- U ___bag: dilly -> dilly bag (35465) link 5
+- fix gladstone bag: type=common
+- U ___bag: gladstone -> gladstone bag (48754) link 5
+- N ___bag: scum -> scumbag (noun, common, rec 2, link 4, sensitive)
+- U ___bell: blue -> bluebell (1722) link 2
+- U ___bell: cow -> cowbell (10601) link 2
+- D ___bell: sheep
+- N ___bell: taco -> Taco Bell (noun, org, rec 2, link 4, tm, US)
+- U ___bell: church -> church bell (40302) link 2
+- U ___bell: school -> school bell (40303) link 2
+- U ___bell: hand -> handbell (20990) link 3
+- U ___bell: wedding -> wedding bell (40306) link 2
+- N ___bell: curfew -> curfew bell (noun, common, rec 4, link 5)
+- U ___bell: kettle -> kettlebell (15875) link 4
+- D ___bell: Christmas
+- U ___bell: diving -> diving bell (47659) link 3
+- N ___bell: jingle -> jingle bell (noun, common, rec 1, link 1)
+- U ___bell: dinner -> dinner bell (23210) link 3
+- U ___bell: bicycle -> bicycle bell (40305) link 2
+- U ___bell: door -> doorbell (23248) link 1
+- N ___bell: sleigh -> sleigh bell (noun, common, rec 2, link 2)
+- U ___bell: bar -> barbell (15870) link 2
+- U ___bell: dumb -> dumbbell (3617) link 2
+- U ___bell: liberty -> Liberty Bell (2544) link 3
+- N ___bell: alarm -> alarm bell (noun, common, rec 1, link 3)
+- N ___bell: bike -> bike bell (noun, common, rec 1, link 3)
+- N ___bell: tubular -> tubular bell (noun, common, rec 3, link 5)
+- U ___bell: ship's -> ship's bell (40308) link 4
+- N ___bell: sanctus -> sanctus bell (noun, common, rec 5, link 5)
+- N ___bell: passing -> passing bell (noun, common, rec 4, link 5)
+- N ___bell: Lutine -> Lutine Bell (noun, proper, rec 5, link 5)
+- N ___bell: Angelus -> angelus bell (noun, common, rec 4, link 5)
+- D ___bell: Hell's
+- U ___pot: tea -> teapot (25766) link 1
+- U ___pot: coffee -> coffee pot (20172) link 2
+- N ___pot: lobster -> lobster pot (noun, common, rec 2, link 3)
+- U ___pot: pepper -> pepper pot (25799) link 4
+- N ___pot: stew -> stewpot (noun, common, rec 3, link 4)
+- D ___pot: joe
+- D ___pot: char
+- D ___pot: slow
+- N ___pot: ink -> inkpot (noun, common, rec 3, link 5)
+- D ___pot: stink
+- U ___pot: honey -> honeypot (42548) link 3
+- N ___pot: flesh -> fleshpot (noun, common, rec 4, link 5, adult)
+- U ___pot: chimney -> chimney pot (24096) link 3
+- U ___pot: hot -> hot pot (19375) link 3
+- N ___pot: flower -> flowerpot (noun, common, rec 1, link 1)
+- fix jackpot: adult=0
+- U ___pot: jack -> jackpot (5704) link 1
+- N ___pot: crack -> crackpot (noun, common, rec 2, link 4)
+- U ___pot: chamber -> chamber pot (25655) link 3
+- N ___pot: melting -> melting pot (noun, common, rec 2, link 3)
+- U ___pot: plant -> plant pot (1855) link 2
+- N ___pot: fuss -> fusspot (noun, common, rec 3, link 5, UK)
+- U ___pot: crock -> Crock-Pot (4751) link 3
+- D ___pot: pressure
+- D ___pot: cooking
+- U ___pot: stock -> stockpot (19812) link 4
+- N ___shop: tea -> tea shop (noun, common, rec 1, link 3)
+- N ___shop: coffee -> coffee shop (noun, common, rec 1, link 1)
+- N ___shop: cake -> cake shop (noun, common, rec 1, link 3)
+- N ___shop: ice cream -> ice cream shop (noun, common, rec 1, link 3)
+- N ___shop: sandwich -> sandwich shop (noun, common, rec 1, link 3)
+- N ___shop: chop -> chop shop (noun, common, rec 2, link 4)
+- D ___shop: joe
+- D ___shop: char
+- N ___shop: duty-free -> duty-free shop (noun, common, rec 2, link 4)
+- N ___shop: tailor -> tailor shop (noun, common, rec 2, link 4)
+- N ___shop: dress -> dress shop (noun, common, rec 1, link 4)
+- N ___shop: print -> print shop (noun, common, rec 2, link 4)
+- A ___shop: book -> bookshop (alias entry linked itself, root bookstore)
+- N ___shop: fish -> fish shop (noun, common, rec 1, link 4)
+- N ___shop: pound -> pound shop (noun, common, rec 2, link 5, UK)
+- N ___shop: window -> window-shop (verb, common, rec 2, link 4)
+- N ___shop: farm -> farm shop (noun, common, rec 2, link 4, UK)
+- U ___shop: work -> workshop (57700) link 1
+- N ___shop: card -> card shop (noun, common, rec 1, link 4)
+- N ___shop: body -> body shop (noun, common, rec 2, link 4)
+- N ___shop: shoe -> shoe shop (noun, common, rec 1, link 2, UK)
+- N ___shop: toy -> toy shop (noun, common, rec 1, link 1)
+- U ___shop: gift -> gift shop (12144) link 1
+- N ___shop: butcher -> butcher shop (noun, common, rec 1, link 2)
+- N ___shop: corner -> corner shop (noun, common, rec 1, link 2, UK)
+- N ___shop: bike -> bike shop (noun, common, rec 1, link 3)
+- N ___shop: flower -> flower shop (noun, common, rec 1, link 2)
+- N ___shop: pet -> pet shop (noun, common, rec 1, link 1)
+- U ___shop: barber -> barbershop (148) link 1
+- N ___shop: charity -> charity shop (noun, common, rec 1, link 1, UK)
+- N ___shop: sweet -> sweet shop (noun, common, rec 1, link 2, UK)
+- N ___shop: gun -> gun shop (noun, common, rec 2, link 4)
+- N ___shop: junk -> junk shop (noun, common, rec 2, link 4)
+- N ___shop: thrift -> thrift shop (noun, common, rec 1, link 2, US)
+- N ___shop: talking -> talking shop (noun, phrase, rec 3, link 5, UK)
+- A ___shop: betting -> betting shop (alias entry linked itself, root bookies)
+- U ___shop: pop-up -> pop-up shop (57504) link 3
+- N ___shop: sweat -> sweatshop (noun, common, rec 2, link 3)
+- N ___shop: antique -> antique shop (noun, common, rec 1, link 3)
+- U ___shop: souvenir -> souvenir shop (13831) link 2
+- N ___shop: hardware -> hardware shop (noun, common, rec 2, link 4)
+- D ___shop: bargain
+- D ___shop: drug
+- N ___shop: health food -> health food shop (noun, common, rec 2, link 4)
+- N ___shop: closed -> closed shop (noun, phrase, rec 3, link 5)
+- N ___shop: one-stop -> one-stop shop (noun, phrase, rec 2, link 4)
+- U ___shop: tuck -> tuck shop (35030) link 2
+- N ___shop: chip -> chip shop (noun, common, rec 1, link 3, UK)
+- U ___paper: green -> green paper (33478) link 4
+- N ___paper: rice -> rice paper (noun, common, rec 2, link 3)
+- U ___paper: fly -> flypaper (39067) link 4
+- U ___paper: sand -> sandpaper (4802) link 2
+- U ___paper: sugar -> sugar paper (25583) link 4
+- N ___paper: exam -> exam paper (noun, common, rec 2, link 3)
+- N ___paper: examination -> examination paper (noun, common, rec 3, link 5)
+- N ___paper: term -> term paper (noun, common, rec 2, link 3, US)
+- U ___paper: news -> newspaper (4567) link 1
+- U ___paper: origami -> origami paper (25576) link 5
+- D ___paper: write
+- N ___paper: brown -> brown paper (noun, common, rec 1, link 3)
+- U ___paper: white -> white paper (33477) link 3
+- U ___paper: filter -> filter paper (40400) link 5
+- U ___paper: tracing -> tracing paper (25565) link 3
+- U ___paper: crepe -> crepe paper (25566) link 4
+- U ___paper: toilet -> toilet paper (23138) link 1
+- U ___paper: photo -> photo paper (25580) link 3
+- N ___paper: glass -> glass paper (noun, common, rec 3, link 4, UK)
+- U ___paper: wall -> wallpaper (23758) link 1
+- N ___paper: kitchen -> kitchen paper (noun, common, rec 2, link 3, UK)
+- U ___paper: lining -> lining paper (23778) link 4
+- U ___paper: tissue -> tissue paper (25207) link 2
+- U ___paper: parchment -> parchment paper (25562) link 4
+- U ___paper: wax -> wax paper (25564) link 3
+- N ___paper: note -> notepaper (noun, common, rec 2, link 3)
+- N ___paper: scrap -> scrap paper (noun, common, rec 1, link 2)
+- U ___paper: butcher -> butcher paper (17901) link 3
+- U ___paper: rolling -> rolling paper (15451) link 3
+- U ___paper: wrapping -> wrapping paper (25202) link 1
+- U ___paper: graph -> graph paper (25581) link 2
+- U ___paper: blotting -> blotting paper (25574) link 3
+- N ___paper: waste -> wastepaper (noun, common, rec 2, link 3)
+- U ___paper: carbon -> carbon paper (25575) link 3
+- N ___paper: greaseproof -> greaseproof paper (noun, common, rec 2, link 4, UK)
+- U ___paper: baking -> baking paper (25561) link 3
+- U ___paper: lined -> lined paper (25582) link 3
+- U ___paper: litmus -> litmus paper (40488) link 3
+- N ___paper: copy -> copy paper (noun, common, rec 2, link 2)
+- N ___paper: cartridge -> cartridge paper (noun, common, rec 4, link 5, UK)
+- U ___paper: construction -> construction paper (25567) link 3
+- N ___paper: tar -> tar paper (noun, common, rec 3, link 4, US)
+- N ___paper: emery -> emery paper (noun, common, rec 4, link 4)
+- U ___paper: kraft -> kraft paper (25215) link 4
+- U ___paper: order -> order paper (33481) link 5
+- N ___paper: position -> position paper (noun, common, rec 3, link 5)
+- N ___paper: working -> working paper (noun, common, rec 4, link 5)
+- N ___paper: squared -> squared paper (noun, common, rec 3, link 5, UK)
+- U sun___: bear -> sun bear (7955) link 4
+- U sun___: dew -> sundew (1812) link 4
+- U sun___: bed -> sunbed (39881) link 2
+- U sun___: dress -> sundress (24343) link 2
+- N sun___: belt -> sun belt (noun, common, rec 3, link 5, US)
+- U sun___: hat -> sun hat (16347) link 2
+- N sun___: tan -> suntan (noun, common, rec 1, link 3)
+- U sun___: burn -> sunburn (14337) link 1
+- U sun___: shade -> sunshade (46845) link 4
+- U sun___: fish -> sunfish (1268) link 3
+- U sun___: roof -> sunroof (2626) link 3
+- U sun___: lounger -> sun lounger (25810) link 2
+- N sun___: bonnet -> sun bonnet (noun, common, rec 2, link 3)
+- U sun___: glasses -> sunglasses (4952) link 1
+- D sun___: spectacles
+- D sun___: day
+- U sun___: dial -> sundial (1871) link 2
+- U sun___: light -> sunlight (49762) link 3
+- U sun___: bird -> sunbird (8348) link 4
+- N sun___: spot -> sunspot (noun, common, rec 2, link 3)
+- U sun___: down -> sundown (25423) link 2
+- U sun___: flower -> sunflower (1696) link 1
+- U sun___: shine -> sunshine (31501) link 1
+- U sun___: screen -> sunscreen (3745) link 3
+- U sun___: rise -> sunrise (25416) link 1
+- U sun___: set -> sunset (25417) link 1
+- U sun___: stroke -> sunstroke (31458) link 2
+- U sun___: block -> sunblock (3746) link 2
+- N sun___: bathe -> sunbathe (verb, common, rec 2, link 3)
+- N sun___: cream -> sun cream (noun, common, rec 1, link 2, UK)
+- N sun___: beam -> sunbeam (noun, common, rec 2, link 3)
+- N sun___: kissed -> sun-kissed (adjective, common, rec 2, link 4)
+- N sun___: dried -> sun-dried (adjective, common, rec 2, link 4)
+- U sun___: room -> sunroom (66219) link 2
+- D sun___: flare
+- N sun___: seeker -> sunseeker (noun, common, rec 3, link 4)
+- N sun___: lamp -> sunlamp (noun, common, rec 2, link 3)
+- N sun___: deck -> sun deck (noun, common, rec 2, link 2)
+- N sun___: trap -> sun trap (noun, common, rec 3, link 3, UK)
+- U sea___: horse -> seahorse (1219) link 1
+- U sea___: lion -> sea lion (1294) link 1
+- U sea___: cucumber -> sea cucumber (1315) link 2
+- U sea___: salt -> sea salt (39037) link 5
+- N sea___: water -> seawater (noun, common, rec 1, link 5)
+- N sea___: wolf -> sea wolf (noun, common, rec 4, link 5)
+- U sea___: otter -> sea otter (1322) link 3
+- U sea___: eagle -> sea eagle (8110) link 2
+- U sea___: snake -> sea snake (1328) link 3
+- U sea___: bass -> sea bass (491) link 2
+- U sea___: anemone -> sea anemone (1296) link 5
+- U sea___: dog -> sea dog (21188) link 1
+- U sea___: weed -> seaweed (1290) link 1
+- U sea___: breeze -> sea breeze (31237) link 4
+- D sea___: zephyr
+- N sea___: mist -> sea mist (noun, common, rec 2, link 4)
+- U sea___: plane -> seaplane (2737) link 5
+- N sea___: captain -> sea captain (noun, common, rec 2, link 3)
+- U sea___: bed -> seabed (32033) link 2
+- U sea___: shell -> seashell (40197) link 1
+- U sea___: wall -> sea wall (31084) link 1
+- N sea___: bird -> seabird (noun, common, rec 1, link 2)
+- N sea___: side -> seaside (noun, common, rec 1, link 1)
+- N sea___: shore -> seashore (noun, common, rec 2, link 4)
+- N sea___: board -> seaboard (noun, common, rec 3, link 3)
+- N sea___: front -> seafront (noun, common, rec 2, link 3, UK)
+- N sea___: sick -> seasick (adjective, common, rec 1, link 2)
+- U sea___: food -> seafood (16688) link 2
+- N sea___: level -> sea level (noun, common, rec 1, link 2)
+- U sea___: urchin -> sea urchin (502) link 3
+- U sea___: port -> seaport (47512) link 4
+- N sea___: scape -> seascape (noun, common, rec 3, link 4)
+- N sea___: worthy -> seaworthy (adjective, common, rec 3, link 3)
+- N sea___: faring -> seafaring (adjective, common, rec 3, link 3)
+- U sea___: shanty -> sea shanty (6802) link 3
+- N sea___: legs -> sea legs (noun, phrase, rec 3, link 4)
+- U sea___: man -> seaman (4381) link 3
+- N sea___: power -> sea power (noun, common, rec 3, link 5)
+- N star___: thistle -> star thistle (noun, common, rec 4, link 5)
+- U star___: ship -> starship (7125) link 2
+- N star___: turn -> star turn (noun, common, rec 3, link 4, UK)
+- N star___: gaze -> stargaze (verb, common, rec 3, link 4)
+- U star___: anise -> star anise (764) link 3
+- U star___: fish -> starfish (1287) link 1
+- U star___: chart -> star chart (21037) link 4
+- N star___: dust -> stardust (noun, common, rec 2, link 1)
+- N star___: sign -> star sign (noun, common, rec 1, link 2, UK)
+- N star___: cluster -> star cluster (noun, common, rec 3, link 5)
+- U star___: light -> starlight (31599) link 1
+- D star___: bright
+- U star___: board -> starboard (34580) link 3
+- N star___: quality -> star quality (noun, common, rec 2, link 2)
+- N star___: fighter -> starfighter (noun, common, rec 3, link 3)
+- N star___: gazer -> stargazer (noun, common, rec 3, link 3)
+- N star___: struck -> star-struck (adjective, common, rec 2, link 3)
+- N star___: burst -> starburst (noun, common, rec 3, link 2)
+- D star___: gate
+- N star___: spangled -> star-spangled (adjective, common, rec 3, link 3)
+- N star___: crossed -> star-crossed (adjective, common, rec 3, link 2)
+- N star___: studded -> star-studded (adjective, common, rec 2, link 4)
+- N star___: lit -> starlit (adjective, common, rec 2, link 3)
+- N star___: system -> star system (noun, common, rec 3, link 5)
+- N star___: player -> star player (noun, common, rec 2, link 3)
+- N star___: wort -> starwort (noun, common, rec 5, link 5)
+- U star___: fruit -> starfruit (363) link 3
+- N rain___: water -> rainwater (noun, common, rec 1, link 3)
+- U rain___: cloud -> rain cloud (31279) link 4
+- U rain___: storm -> rainstorm (31221) link 3
+- U rain___: shower -> rain shower (31626) link 4
+- N rain___: god -> rain god (noun, common, rec 2, link 4)
+- U rain___: coat -> raincoat (4918) link 1
+- U rain___: cape -> raincape (24604) link 4
+- U rain___: hat -> rain hat (24593) link 3
+- U rain___: gauge -> rain gauge (31304) link 3
+- U rain___: boots -> rain boots (24597) link 3
+- U rain___: bow -> rainbow (1982) link 1
+- U rain___: fall -> rainfall (1966) link 5
+- N rain___: day -> rain day (noun, common, rec 2, link 3)
+- U rain___: barrel -> rain barrel (1884) link 3
+- N rain___: tree -> rain tree (noun, common, rec 3, link 4)
+- N rain___: bird -> rainbird (noun, common, rec 4, link 5)
+- N rain___: check -> rain check (noun, phrase, rec 1, link 2, US)
+- N rain___: proof -> rainproof (adjective, common, rec 2, link 3)
+- U rain___: forest -> rainforest (30175) link 1
+- U rain___: dance -> rain dance (31654) link 3
+- N rain___: maker -> rainmaker (noun, common, rec 2, link 3)
+- U rain___: wear -> rainwear (24605) link 3
+- N rain___: shadow -> rain shadow (noun, common, rec 3, link 4)
+- N rain___: delay -> rain delay (noun, common, rec 2, link 3)
+- N rain___: spout -> rainspout (noun, common, rec 4, link 5, US)
+- D rain___: mac
+- N rain___: band -> rain band (noun, common, rec 4, link 5)
+- U rain___: drop -> raindrop (1984) link 1
+- U snow___: goose -> snow goose (8218) link 5
+- U snow___: leopard -> snow leopard (223) link 4
+- U snow___: melt -> snowmelt (31999) link 5
+- D snow___: owl
+- U snow___: shovel -> snow shovel (23169) link 3
+- U snow___: storm -> snowstorm (1997) link 3
+- N snow___: fort -> snow fort (noun, common, rec 2, link 3, US)
+- N snow___: blind -> snow-blind (adjective, common, rec 3, link 4)
+- U snow___: suit -> snowsuit (24610) link 2
+- U snow___: white -> Snow White (13322) link 4
+- N snow___: bound -> snowbound (adjective, common, rec 3, link 5)
+- N snow___: pea -> snow pea (noun, common, rec 2, link 3)
+- U snow___: flake -> snowflake (1985) link 1
+- U snow___: fall -> snowfall (1968) link 5
+- N snow___: day -> snow day (noun, common, rec 2, link 3, US)
+- N snow___: shoe -> snowshoe (noun, common, rec 2, link 3)
+- U snow___: board -> snowboard (48871) link 1
+- U snow___: cap -> snowcap (32089) link 3
+- U snow___: plow -> snowplow (3094) link 2
+- U snow___: mobile -> snowmobile (3139) link 2
+- U snow___: globe -> snow globe (25685) link 1
+- N snow___: bank -> snowbank (noun, common, rec 2, link 3, US)
+- U snow___: field -> snowfield (30907) link 3
+- U snow___: bunting -> snow bunting (9756) link 4
+- U snow___: pack -> snowpack (31295) link 4
+- N snow___: capped -> snow-capped (adjective, common, rec 2, link 3)
+- U snow___: man -> snowman (25014) link 1
+- U snow___: line -> snowline (30851) link 4
+- U snow___: cone -> snow cone (18312) link 3
+- U snow___: drop -> snowdrop (1724) link 2
+- U snow___: ball -> snowball (31291) link 1
+- U snow___: drift -> snowdrift (31290) link 2
+- N head___: butt -> headbutt (verb, common, rec 2, link 4)
+- U head___: wind -> headwind (47477) link 2
+- U head___: stone -> headstone (21746) link 2
+- N head___: teacher -> head teacher (noun, common, rec 2, link 2, UK)
+- N head___: waiter -> head waiter (noun, common, rec 2, link 3)
+- N head___: server -> head server (noun, common, rec 4, link 5, US)
+- N head___: waitress -> head waitress (noun, common, rec 3, link 4)
+- N head___: dress -> headdress (noun, common, rec 2, link 3)
+- U head___: scarf -> headscarf (24758) link 3
+- N head___: gasket -> head gasket (noun, common, rec 3, link 3)
+- U head___: stand -> headstand (15923) link 3
+- N head___: phone -> headphone (noun, common, rec 1, link 1)
+- U head___: lock -> headlock (43758) link 3
+- U head___: first -> head-first (43340) link 4
+- U head___: land -> headland (31074) link 4
+- U head___: board -> headboard (16053) link 3
+- N head___: long -> headlong (adverb, common, rec 3, link 4)
+- N head___: space -> headspace (noun, common, rec 3, link 4)
+- U head___: room -> headroom (66211) link 3
+- U head___: ache -> headache (3446) link 1
+- U head___: quarters -> headquarters (34114) link 2
+- N head___: lights -> headlights (noun, common, rec 1, link 1)
+- N head___: strong -> headstrong (adjective, common, rec 2, link 4)
+- N head___: way -> headway (noun, common, rec 3, link 4)
+- U head___: set -> headset (23222) link 2
+- N head___: rest -> headrest (noun, common, rec 1, link 3)
+- N head___: hunter -> headhunter (noun, common, rec 2, link 4)
+- N head___: gear -> headgear (noun, common, rec 3, link 4)
+- N head___: boy -> head boy (noun, common, rec 3, link 4, UK)
+- N head___: piece -> headpiece (noun, common, rec 3, link 5)
+- N head___: shot -> headshot (noun, common, rec 2, link 3)
+- U head___: mistress -> headmistress (4500) link 3
+- U head___: lamp -> headlamp (2572) link 2
+- N head___: count -> headcount (noun, common, rec 2, link 4)
+- U head___: band -> headband (4965) link 2
+- U head___: master -> headmaster (4499) link 3
+- U head___: line -> headline (4561) link 2
+- N head___: start -> head start (noun, common, rec 2, link 3)
+- N back___: bench -> backbench (noun, common, rec 3, link 5, UK)
+- U back___: water -> backwater (30880) link 4
+- U back___: hand -> backhand (42996) link 3
+- U back___: bone -> backbone (8853) link 2
+- N back___: story -> backstory (noun, common, rec 2, link 3)
+- U back___: stage -> backstage (11191) link 3
+- U back___: ward -> backward (37933) link 3
+- N back___: bite -> backbite (verb, common, rec 4, link 5)
+- U back___: gammon -> backgammon (5716) link 3
+- N back___: cloth -> backcloth (noun, common, rec 4, link 5, UK)
+- U back___: door -> backdoor (42531) link 2
+- U back___: slash -> backslash (26134) link 3
+- U back___: flip -> backflip (11833) link 3
+- U back___: fire -> backfire (49204) link 3
+- N back___: country -> backcountry (noun, common, rec 3, link 5)
+- N back___: side -> backside (noun, common, rec 2, link 4)
+- U back___: up -> backup (7280) link 2
+- N back___: yard -> backyard (noun, common, rec 1, link 1)
+- U back___: space -> backspace (58268) link 4
+- U back___: ground -> background (11926) link 2
+- U back___: room -> back room (66209) link 3
+- N back___: lit -> backlit (adjective, common, rec 3, link 5)
+- U back___: pack -> backpack (3030) link 1
+- N back___: rest -> backrest (noun, common, rec 3, link 4)
+- N back___: lash -> backlash (noun, common, rec 3, link 4)
+- U back___: stroke -> backstroke (43242) link 2
+- N back___: pedal -> back-pedal (verb, common, rec 3, link 5)
+- N back___: stab -> backstab (verb, common, rec 3, link 5)
+- N back___: talk -> backtalk (noun, common, rec 3, link 5, US)
+- N back___: burner -> back burner (noun, common, rec 3, link 4)
+- N back___: street -> backstreet (noun, common, rec 3, link 5)
+- N back___: breaking -> backbreaking (adjective, common, rec 3, link 4)
+- N back___: handed -> backhanded (adjective, common, rec 3, link 4)
+- N back___: pay -> back pay (noun, common, rec 3, link 5)
+- N back___: log -> backlog (noun, common, rec 2, link 4)
+- U back___: drop -> backdrop (12279) link 3
+- U back___: seat -> back seat (48275) link 3
+- U foot___: stool -> footstool (4680) link 3
+- N foot___: hill -> foothill (noun, common, rec 2, link 4)
+- N foot___: soldier -> foot soldier (noun, common, rec 2, link 3)
+- D foot___: trooper
+- D foot___: squaddie
+- D foot___: digger
+- D foot___: grunt
+- D foot___: doughboy
+- U foot___: bridge -> footbridge (14088) link 2
+- N foot___: pump -> foot pump (noun, common, rec 2, link 4)
+- N foot___: plate -> footplate (noun, common, rec 4, link 5, UK)
+- N foot___: fall -> footfall (noun, common, rec 3, link 4)
+- U foot___: work -> footwork (43724) link 3
+- U foot___: bath -> footbath (57616) link 4
+- N foot___: board -> footboard (noun, common, rec 3, link 5)
+- U foot___: long -> footlong (19074) link 5
+- N foot___: wear -> footwear (noun, common, rec 2, link 2)
+- U foot___: lights -> footlights (12276) link 4
+- N foot___: rest -> footrest (noun, common, rec 2, link 4)
+- U foot___: print -> footprint (29224) link 2
+- N foot___: step -> footstep (noun, common, rec 2, link 3)
+- U foot___: note -> footnote (13395) link 3
+- U foot___: path -> footpath (30158) link 3
+- N foot___: hold -> foothold (noun, common, rec 2, link 4)
+- U foot___: age -> footage (12640) link 4
+- N foot___: loose -> footloose (adjective, common, rec 3, link 5)
+- N foot___: sore -> footsore (adjective, common, rec 3, link 5)
+- U foot___: hills -> foothills (1959) link 4
+- U foot___: spa -> foot spa (23610) link 5
+- N foot___: fault -> foot fault (noun, common, rec 3, link 5)
+- N foot___: locker -> footlocker (noun, common, rec 3, link 4, US)
+- N foot___: man -> footman (noun, common, rec 3, link 4)
+- U foot___: ball -> football (5191) link 1
+- N foot___: brake -> foot brake (noun, common, rec 3, link 4)
+- U hand___: saw -> hand saw (4839) link 3
+- N hand___: towel -> hand towel (noun, common, rec 1, link 2)
+- N hand___: grenade -> hand grenade (noun, common, rec 2, link 3, sensitive)
+- D hand___: stitch
+- U hand___: puppet -> hand puppet (12355) link 2
+- N hand___: book -> handbook (noun, common, rec 2, link 3)
+- N hand___: basin -> hand basin (noun, common, rec 2, link 4, UK)
+- U hand___: stand -> handstand (17091) link 3
+- U hand___: shake -> handshake (16823) link 2
+- U hand___: kerchief -> handkerchief (4975) link 3
+- N hand___: wash -> hand wash (verb, common, rec 1, link 3)
+- U hand___: over -> handover (24253) link 4
+- N hand___: out -> handout (noun, common, rec 2, link 3)
+- U hand___: some -> handsome (29223) link 2
+- U hand___: rail -> handrail (24299) link 3
+- N hand___: gun -> handgun (noun, common, rec 2, link 2)
+- U hand___: cream -> hand cream (3782) link 2
+- U hand___: set -> handset (35137) link 3
+- N hand___: print -> handprint (noun, common, rec 2, link 4)
+- N hand___: hold -> handhold (noun, common, rec 3, link 4)
+- N hand___: cuff -> handcuff (noun, common, rec 2, link 2)
+- U hand___: writing -> handwriting (26174) link 2
+- N hand___: made -> handmade (adjective, common, rec 1, link 3)
+- N hand___: picked -> handpicked (adjective, common, rec 3, link 5)
+- U hand___: held -> handheld (45674) link 3
+- U hand___: spring -> handspring (43989) link 5
+- N hand___: signal -> hand signal (noun, common, rec 2, link 4)
+- N hand___: craft -> handcraft (verb, common, rec 3, link 5)
+- U hand___: sanitizer -> hand sanitizer (15322) link 2
+- A hand___: bag -> handbag (alias entry linked itself, root pocketbook)
+- U hand___: ball -> handball (5197) link 3
+- A hand___: brake -> handbrake (alias entry linked itself, root emergency brake)
+- U hand___: luggage -> hand luggage (48744) link 3
+- N hand___: maid -> handmaid (noun, common, rec 4, link 5)
+- U water___: buffalo -> water buffalo (1454) link 2
+- N water___: snake -> water snake (noun, common, rec 2, link 4)
+- U water___: lily -> water lily (1791) link 2
+- N water___: mill -> watermill (noun, common, rec 3, link 3)
+- U water___: bed -> waterbed (23446) link 4
+- U water___: polo -> water polo (5202) link 2
+- U water___: skiing -> waterskiing (5300) link 3
+- U water___: slide -> water slide (57627) link 3
+- U water___: tower -> water tower (38274) link 3
+- N water___: wheel -> waterwheel (noun, common, rec 3, link 3)
+- U water___: vole -> water vole (9770) link 4
+- U water___: cress -> watercress (437) link 3
+- U water___: melon -> watermelon (97) link 1
+- A water___: pistol -> water pistol (alias entry linked itself, root squirt gun)
+- U water___: fall -> waterfall (1914) link 1
+- U water___: bottle -> water bottle (19921) link 1
+- N water___: boarding -> waterboarding (noun, common, rec 3, link 5, sensitive)
+- N water___: sports -> water sports (noun, common, rec 2, link 3)
+- D water___: board
+- U water___: front -> waterfront (38465) link 3
+- U water___: works -> waterworks (57724) link 5
+- N water___: proof -> waterproof (adjective, common, rec 1, link 2)
+- N water___: level -> water level (noun, common, rec 2, link 4)
+- N water___: way -> waterway (noun, common, rec 2, link 3)
+- U water___: color -> watercolor (6296) link 3
+- N water___: mark -> watermark (noun, common, rec 3, link 4)
+- U water___: logged -> waterlogged (31614) link 4
+- N water___: tight -> watertight (adjective, common, rec 2, link 4)
+- U water___: park -> water park (13833) link 2
+- N water___: course -> watercourse (noun, common, rec 4, link 5)
+- N water___: supply -> water supply (noun, common, rec 2, link 3)
+- N water___: line -> waterline (noun, common, rec 3, link 4)
+- U black___: Friday -> Black Friday (25086) link 2
+- U black___: sheep -> black sheep (3957) link 2
+- U black___: currant -> blackcurrant (17178) link 4
+- U black___: pudding -> black pudding (17748) link 3
+- U black___: pepper -> black pepper (721) link 2
+- U black___: bear -> black bear (7950) link 2
+- U black___: swan -> black swan (8211) link 3
+- N black___: hawk -> black hawk (noun, common, rec 4, link 5)
+- D black___: adder
+- U black___: mamba -> black mamba (8501) link 3
+- U black___: cat -> black cat (22423) link 2
+- D black___: moggy
+- D black___: kitty
+- N black___: heath -> Blackheath (noun, place, rec 4, link 5, UK)
+- U black___: eye -> black eye (14992) link 2
+- U black___: belt -> black belt (43825) link 2
+- N black___: tie -> black tie (noun, common, rec 2, link 3)
+- N black___: comedy -> black comedy (noun, common, rec 2, link 4)
+- U black___: panther -> black panther (7748) link 2
+- U black___: beard -> Blackbeard (6775) link 3
+- U black___: prince -> Black Prince (6699) link 5
+- D black___: friar
+- N black___: magic -> black magic (noun, common, rec 1, link 3)
+- U black___: box -> black box (2742) link 3
+- U black___: bird -> blackbird (1091) link 2
+- U black___: out -> blackout (29240) link 3
+- N black___: spot -> black spot (noun, common, rec 3, link 5, UK)
+- U black___: mail -> blackmail (29235) link 2
+- U black___: sea -> Black Sea (37004) link 3
+- U black___: board -> blackboard (4509) link 1
+- N black___: top -> blacktop (noun, common, rec 3, link 5, US)
+- U black___: jack -> blackjack (5658) link 2
+- U black___: damp -> blackdamp (60421) link 5
+- U black___: forest -> Black Forest (30208) link 3
+- U black___: smith -> blacksmith (6666) link 2
+- U black___: berry -> BlackBerry (49261) link 1
+- N black___: list -> blacklist (noun, common, rec 2, link 3)
+- U black___: hole -> black hole (7122) link 1
+- N black___: market -> black market (noun, common, rec 2, link 3)
+- U black___: widow -> black widow (1402) link 1
+- U black___: thorn -> blackthorn (30073) link 5
+- N black___: humor -> black humor (noun, common, rec 3, link 5)
+- U black___: ice -> black ice (2016) link 3
+- U black___: cab -> black cab (47009) link 2
+- U black___: death -> Black Death (15054) link 2
+- N home___: brew -> home brew (noun, common, rec 2, link 3, adult,sensitive)
+- U home___: school -> homeschool (34914) link 2
+- N home___: bound -> homebound (adjective, common, rec 3, link 4)
+- U home___: page -> homepage (42412) link 2
+- N home___: ward -> homeward (adverb, common, rec 3, link 5)
+- N home___: stretch -> home stretch (noun, common, rec 2, link 3)
+- U home___: plate -> home plate (58631) link 2
+- N home___: spun -> homespun (adjective, common, rec 3, link 5)
+- N home___: town -> hometown (noun, common, rec 1, link 3)
+- U home___: work -> homework (4482) link 1
+- N home___: body -> homebody (noun, common, rec 3, link 5)
+- N home___: rule -> home rule (noun, common, rec 3, link 4)
+- N home___: land -> homeland (noun, common, rec 2, link 3)
+- N home___: screen -> home screen (noun, common, rec 1, link 3)
+- N home___: front -> home front (noun, common, rec 2, link 4)
+- N home___: straight -> home straight (noun, common, rec 3, link 4, UK)
+- N home___: owner -> homeowner (noun, common, rec 1, link 2)
+- N home___: sick -> homesick (adjective, common, rec 1, link 2)
+- D home___: sweet
+- N home___: maker -> homemaker (noun, common, rec 2, link 2)
+- N home___: boy -> homeboy (noun, common, rec 3, link 4, US)
+- N home___: made -> homemade (adjective, common, rec 1, link 1)
+- U home___: stead -> homestead (38505) link 3
+- U home___: coming -> homecoming (34992) link 2
+- N home___: grown -> homegrown (adjective, common, rec 2, link 2)
+- N home___: less -> homeless (adjective, common, rec 1, link 2)
+- N home___: buyer -> home buyer (noun, common, rec 3, link 4)
+- U home___: stay -> homestay (2994) link 4
+- N home___: cooked -> home-cooked (adjective, common, rec 2, link 3)
+- N home___: girl -> homegirl (noun, common, rec 3, link 4, US)
+- N home___: team -> home team (noun, common, rec 1, link 3)
+- N home___: loan -> home loan (noun, common, rec 2, link 4)
+- U home___: economics -> home economics (34738) link 2
+- N home___: office -> home office (noun, common, rec 1, link 2)
+- U home___: base -> home base (58632) link 3
+- U home___: run -> home run (42799) link 2
+- U key___: lime -> key lime (17163) link 3
+- U key___: stone -> keystone (6579) link 3
+- N key___: word -> keyword (noun, common, rec 1, link 2)
+- N key___: stage -> key stage (noun, common, rec 3, link 5, UK)
+- U key___: grip -> key grip (6438) link 5
+- D key___: lock
+- U key___: signature -> key signature (6112) link 4
+- N key___: light -> key light (noun, common, rec 4, link 5)
+- U key___: card -> keycard (25706) link 2
+- U key___: board -> keyboard (7254) link 1
+- N key___: player -> key player (noun, common, rec 3, link 4)
+- U key___: hole -> keyhole (25700) link 2
+- N key___: less -> keyless (adjective, common, rec 3, link 5)
+- U key___: chain -> keychain (4996) link 2
+- U key___: ring -> key ring (4997) link 1
+- N key___: note -> keynote (noun, common, rec 2, link 3)
+- U key___: pad -> keypad (40169) link 2
+- N key___: stroke -> keystroke (noun, common, rec 2, link 3)
+- U key___: fob -> key fob (25705) link 3
+- N key___: worker -> key worker (noun, common, rec 3, link 4, UK)
+- U key___: frame -> keyframe (12709) link 5
+- U key___: logger -> keylogger (42530) link 5
+- U key___: cutter -> key cutter (25728) link 4
+- N key___: change -> key change (noun, common, rec 3, link 4)
+- N key___: account -> key account (noun, common, rec 4, link 5)
+- D key___: smash
+- N air___: guitar -> air guitar (noun, common, rec 1, link 2)
+- D air___: bus
+- N air___: fare -> airfare (noun, common, rec 2, link 3)
+- U air___: plane -> airplane (2707) link 1
+- U air___: ship -> airship (39497) link 2
+- N air___: head -> airhead (noun, common, rec 2, link 4)
+- U air___: bed -> air bed (23448) link 3
+- U air___: mattress -> air mattress (3050) link 2
+- U air___: brush -> airbrush (45909) link 4
+- N air___: speed -> airspeed (noun, common, rec 3, link 4)
+- U air___: pump -> air pump (46771) link 3
+- U air___: dry -> air-dry (19900) link 4
+- A air___: hostess -> air hostess (alias entry linked itself, root flight attendant)
+- U air___: raid -> air raid (4398) link 2
+- U air___: lock -> airlock (41348) link 3
+- U air___: pocket -> air pocket (47342) link 3
+- N air___: traffic -> air traffic (noun, common, rec 2, link 3)
+- U air___: mail -> airmail (35164) link 2
+- U air___: quality -> air quality (32197) link 3
+- N air___: space -> airspace (noun, common, rec 3, link 3)
+- N air___: sick -> airsick (adjective, common, rec 2, link 3)
+- N air___: gun -> air gun (noun, common, rec 2, link 3, sensitive)
+- U air___: port -> airport (2715) link 1
+- N air___: worthy -> airworthy (adjective, common, rec 3, link 5)
+- N air___: burst -> airburst (noun, common, rec 4, link 5)
+- N air___: field -> airfield (noun, common, rec 3, link 3)
+- N air___: way -> airway (noun, common, rec 3, link 4)
+- U air___: craft -> aircraft (2710) link 1
+- N air___: tight -> airtight (adjective, common, rec 2, link 3)
+- N air___: hole -> air hole (noun, common, rec 3, link 4)
+- N air___: less -> airless (adjective, common, rec 3, link 5)
+- U air___: strip -> airstrip (2748) link 3
+- U air___: conditioner -> air conditioner (4737) link 1
+- N air___: borne -> airborne (adjective, common, rec 2, link 3)
+- U air___: show -> airshow (45038) link 2
+- N air___: time -> airtime (noun, common, rec 3, link 4)
+- U air___: freshener -> air freshener (23395) link 3
+- N air___: miles -> air miles (noun, common, rec 2, link 4, tm)
+- U air___: fryer -> air fryer (4754) link 3
+- N air___: frame -> airframe (noun, common, rec 4, link 5)
+- U air___: glow -> airglow (31424) link 5
+- N air___: shaft -> air shaft (noun, common, rec 4, link 5)
+- U air___: bag -> airbag (2614) link 2
+- U air___: force -> air force (4371) link 2
+- N air___: lift -> airlift (noun, common, rec 3, link 4)
+- U air___: line -> airline (2740) link 1
+- N air___: drop -> airdrop (noun, common, rec 3, link 4)
+- U air___: brake -> air brake (47127) link 4
+- N air___: drome -> airdrome (noun, common, rec 5, link 5, US)
+- N air___: gap -> air gap (noun, common, rec 4, link 5)
+- N ice___: tea -> ice tea (noun, common, rec 2, link 2)
+- N ice___: coffee -> ice coffee (noun, common, rec 2, link 2)
+- U ice___: axe -> ice axe (44148) link 3
+- U ice___: cream -> ice cream (604) link 1
+- A ice___: lolly -> ice lolly (alias entry linked itself, root popsicle)
+- N ice___: water -> ice water (noun, common, rec 1, link 3)
+- U ice___: wine -> ice wine (19676) link 4
+- N ice___: melt -> ice melt (noun, common, rec 4, link 5)
+- D ice___: joe
+- D ice___: char
+- U ice___: storm -> ice storm (31258) link 3
+- U ice___: fishing -> ice fishing (5369) link 3
+- N ice___: dancer -> ice dancer (noun, common, rec 3, link 4)
+- U ice___: sculpture -> ice sculpture (39888) link 3
+- U ice___: cube -> ice cube (39819) link 1
+- N ice___: queen -> ice queen (noun, common, rec 2, link 4)
+- N ice___: bucket -> ice bucket (noun, common, rec 1, link 3)
+- U ice___: shelf -> ice shelf (30905) link 4
+- U ice___: fall -> ice fall (30916) link 5
+- U ice___: box -> icebox (4717) link 3
+- U ice___: bath -> ice bath (49968) link 3
+- U ice___: cap -> ice cap (30900) link 3
+- N ice___: road -> ice road (noun, common, rec 3, link 4)
+- U ice___: dance -> ice dance (61686) link 4
+- N ice___: field -> icefield (noun, common, rec 4, link 5)
+- U ice___: pack -> ice pack (15392) link 2
+- N ice___: age -> ice age (noun, common, rec 1, link 3)
+- U ice___: berg -> iceberg (29374) link 1
+- N ice___: skate -> ice skate (noun, common, rec 1, link 2)
+- N ice___: pick -> ice pick (noun, common, rec 2, link 4)
+- U ice___: rink -> ice rink (39043) link 2
+- U ice___: sheet -> ice sheet (30901) link 3
+- U ice___: floe -> ice floe (21052) link 4
+- U ice___: breaker -> icebreaker (59146) link 3
+- N ice___: maiden -> ice maiden (noun, common, rec 4, link 5)
+- U ice___: pop -> ice pop (18305) link 2
+- N ice___: man -> iceman (noun, common, rec 3, link 5)
+- U ice___: hockey -> ice hockey (5349) link 2
+- U moon___: cake -> mooncake (53533) link 4
+- U moon___: pie -> Moon Pie (53748) link 5
+- N moon___: river -> Moon River (noun, proper, rec 3, link 5)
+- U moon___: stone -> moonstone (31665) link 3
+- N moon___: face -> moon face (noun, common, rec 3, link 5)
+- N moon___: child -> moonchild (noun, common, rec 3, link 4)
+- N moon___: fish -> moonfish (noun, common, rec 4, link 5)
+- U moon___: walk -> moonwalk (6253) link 2
+- U moon___: jelly -> moon jelly (9933) link 4
+- N moon___: dust -> moon dust (noun, common, rec 2, link 3)
+- U moon___: roof -> moonroof (2627) link 4
+- N moon___: cup -> moon cup (noun, common, rec 4, link 5, sensitive)
+- U moon___: light -> moonlight (31579) link 1
+- U moon___: flower -> moonflower (30521) link 4
+- U moon___: shine -> moonshine (19733) link 2
+- U moon___: rise -> moonrise (41379) link 3
+- U moon___: set -> moonset (41380) link 4
+- N moon___: beam -> moonbeam (noun, common, rec 2, link 3)
+- N moon___: scape -> moonscape (noun, common, rec 3, link 4)
+- N moon___: struck -> moonstruck (adjective, common, rec 2, link 4)
+- N moon___: lit -> moonlit (adjective, common, rec 2, link 3)
+- N moon___: wort -> moonwort (noun, common, rec 5, link 5)
+- D moon___: dance
+- N moon___: shot -> moonshot (noun, common, rec 2, link 3)
+- U moon___: landing -> moon landing (41253) link 1
+- N moon___: raker -> moonraker (noun, common, rec 4, link 5)
+- N moon___: boot -> moon boot (noun, common, rec 3, link 4)
+- U moon___: buggy -> moon buggy (49138) link 3
+- N moon___: phase -> moon phase (noun, common, rec 2, link 3)
+- N moon___: lighting -> moonlighting (noun, common, rec 2, link 4)
+- N moon___: quake -> moonquake (noun, common, rec 4, link 5)
+- D moon___: cycle
+- N moon___: base -> moon base (noun, common, rec 2, link 3)
+- U paper___: back -> paperback (13416) link 1
+- N paper___: tiger -> paper tiger (noun, phrase, rec 3, link 4)
+- U paper___: wasp -> paper wasp (9067) link 5
+- U paper___: mill -> paper mill (57722) link 3
+- U paper___: plane -> paper plane (39575) link 1
+- U paper___: boat -> paper boat (57831) link 4
+- U paper___: lantern -> paper lantern (23498) link 3
+- U paper___: towel -> paper towel (25549) link 1
+- U paper___: hat -> paper hat (57832) link 4
+- D paper___: lace
+- U paper___: doll -> paper doll (45991) link 3
+- U paper___: weight -> paperweight (57821) link 2
+- N paper___: jam -> paper jam (noun, common, rec 2, link 3)
+- N paper___: napkin -> paper napkin (noun, common, rec 1, link 3)
+- N paper___: knife -> paper knife (noun, common, rec 3, link 5)
+- N paper___: shredder -> paper shredder (noun, common, rec 2, link 3)
+- U paper___: clip -> paper clip (34761) link 1
+- U paper___: cup -> paper cup (25552) link 2
+- U paper___: work -> paperwork (39857) link 1
+- U paper___: boy -> paperboy (35045) link 3
+- U paper___: chain -> paper chain (45985) link 3
+- U paper___: cutter -> paper cutter (40285) link 3
+- N paper___: cut -> paper cut (noun, common, rec 1, link 2)
+- N paper___: chase -> paper chase (noun, common, rec 4, link 5)
+- N paper___: pusher -> paper pusher (noun, common, rec 3, link 5)
+- U paper___: money -> paper money (58203) link 2
+- N paper___: tray -> paper tray (noun, common, rec 3, link 4)
+- N paper___: route -> paper route (noun, common, rec 2, link 3, US,CA)
+- N paper___: crane -> paper crane (noun, common, rec 2, link 3)
+- U paper___: trail -> paper trail (33748) link 3
+- U paper___: bag -> paper bag (25559) link 1
+- N paper___: thin -> paper-thin (adjective, common, rec 2, link 4)
+- N paper___: round -> paper round (noun, common, rec 3, link 4, UK)
+- N door___: curtain -> door curtain (noun, common, rec 4, link 5)
+- N door___: plate -> doorplate (noun, common, rec 4, link 4)
+- N door___: prize -> door prize (noun, common, rec 2, link 2)
+- N door___: nail -> doornail (noun, common, rec 3, link 4)
+- N door___: hinge -> door hinge (noun, common, rec 2, link 3)
+- N door___: lock -> door lock (noun, common, rec 1, link 2)
+- D door___: window ledge
+- N door___: jamb -> doorjamb (noun, common, rec 3, link 4)
+- N door___: post -> doorpost (noun, common, rec 3, link 4)
+- N door___: way -> doorway (noun, common, rec 1, link 1)
+- U door___: chain -> door chain (25712) link 3
+- U door___: bell -> doorbell (23248) link 1
+- U door___: step -> doorstep (24080) link 2
+- U door___: mat -> doormat (23503) link 1
+- U door___: knob -> doorknob (24102) link 2
+- U door___: frame -> door frame (24111) link 2
+- U door___: handle -> door handle (24103) link 2
+- N door___: knocker -> door knocker (noun, common, rec 2, link 2)
+- D door___: stopper
+- U door___: staff -> door staff (13890) link 4
+- N door___: code -> door code (noun, common, rec 2, link 4)
+- N door___: sill -> doorsill (noun, common, rec 4, link 5)
+- U door___: wedge -> door wedge (49673) link 3
+- N door___: buster -> doorbuster (noun, common, rec 3, link 4)
+- N door___: opener -> door opener (noun, common, rec 2, link 3)
+- U door___: man -> doorman (33009) link 2
+- U door___: stop -> doorstop (24112) link 2
+- U blue___: Monday -> Blue Monday (25288) link 3
+- U blue___: cheese -> blue cheese (17929) link 1
+- D blue___: water
+- U blue___: jay -> blue jay (8155) link 1
+- N blue___: marlin -> blue marlin (noun, common, rec 3, link 4)
+- U blue___: whale -> blue whale (1306) link 1
+- U blue___: grass -> bluegrass (10789) link 2
+- U blue___: lagoon -> Blue Lagoon (31952) link 3
+- U blue___: stone -> bluestone (31762) link 5
+- U blue___: blood -> blue blood (35320) link 3
+- U blue___: jeans -> blue jeans (58225) link 1
+- U blue___: ribbon -> blue ribbon (49984) link 2
+- U blue___: note -> blue note (10863) link 4
+- U blue___: screen -> blue screen (12866) link 3
+- U blue___: moon -> blue moon (41360) link 2
+- N blue___: planet -> blue planet (noun, common, rec 3, link 4)
+- U blue___: tit -> blue tit (8166) link 2
+- N blue___: fin -> bluefin (noun, common, rec 3, link 3)
+- U blue___: gill -> bluegill (8719) link 4
+- U blue___: beard -> Bluebeard (13348) link 4
+- N blue___: stocking -> bluestocking (noun, common, rec 4, link 5)
+- U blue___: hour -> blue hour (25435) link 4
+- U blue___: bottle -> bluebottle (9199) link 4
+- N blue___: yonder -> blue yonder (noun, phrase, rec 3, link 5)
+- U blue___: bird -> bluebird (8152) link 1
+- N blue___: sky -> blue sky (noun, common, rec 2, link 3)
+- D blue___: sea
+- U blue___: berry -> blueberry (348) link 1
+- U blue___: print -> blueprint (6544) link 1
+- U blue___: bell -> bluebell (1722) link 2
+- N blue___: collar -> blue-collar (adjective, common, rec 2, link 2)
+- N blue___: murder -> blue murder (noun, phrase, rec 3, link 5)
+- N blue___: shift -> blueshift (noun, common, rec 4, link 5)
+- N blue___: wave -> blue wave (noun, common, rec 3, link 5)
+- U blue___: chip -> blue chip (34080) link 3
+- U sand___: castle -> sandcastle (48859) link 1
+- N sand___: eel -> sand eel (noun, common, rec 4, link 5)
+- U sand___: lizard -> sand lizard (8546) link 4
+- N sand___: shark -> sand shark (noun, common, rec 3, link 4)
+- U sand___: fly -> sandfly (9155) link 3
+- N sand___: flea -> sand flea (noun, common, rec 2, link 3)
+- U sand___: dune -> sand dune (30894) link 1
+- U sand___: storm -> sandstorm (30886) link 1
+- U sand___: stone -> sandstone (2059) link 2
+- D sand___: bed
+- N sand___: worm -> sandworm (noun, common, rec 3, link 4)
+- N sand___: fish -> sandfish (noun, common, rec 4, link 5)
+- U sand___: paper -> sandpaper (4802) link 1
+- N sand___: glass -> sandglass (noun, common, rec 3, link 4)
+- N sand___: timer -> sand timer (noun, common, rec 2, link 3)
+- U sand___: box -> sandbox (46075) link 2
+- N sand___: blast -> sandblast (verb, common, rec 3, link 4)
+- U sand___: bath -> sand bath (50867) link 5
+- U sand___: pit -> sand pit (43944) link 2
+- U sand___: bank -> sandbank (31153) link 3
+- U sand___: wedge -> sand wedge (50358) link 4
+- U sand___: bar -> sandbar (30875) link 3
+- U sand___: piper -> sandpiper (8220) link 3
+- U sand___: hopper -> sandhopper (31048) link 5
+- U sand___: martin -> sand martin (9840) link 4
+- N sand___: bagger -> sandbagger (noun, common, rec 4, link 5)
+- N sand___: bag -> sandbag (noun, common, rec 2, link 2)
+- U sand___: man -> sandman (16025) link 2
+- U sand___: trap -> sand trap (43057) link 3
+- U eye___: sight -> eyesight (3310) link 2
+- N eye___: candy -> eye candy (noun, common, rec 2, link 3)
+- N eye___: witness -> eyewitness (noun, common, rec 1, link 2)
+- U eye___: patch -> eye patch (6768) link 2
+- U eye___: brow -> eyebrow (3203) link 1
+- U eye___: socket -> eye socket (14860) link 3
+- U eye___: tooth -> eyetooth (14501) link 4
+- U eye___: lid -> eyelid (3204) link 1
+- U eye___: drops -> eye drops (15170) link 2
+- D eye___: spy
+- U eye___: wash -> eyewash (15396) link 4
+- N eye___: glass -> eyeglass (noun, common, rec 3, link 4)
+- U eye___: cup -> eyecup (52282) link 5
+- D eye___: teeth
+- N eye___: full -> eyeful (noun, common, rec 3, link 5)
+- N eye___: bath -> eyebath (noun, common, rec 4, link 5)
+- N eye___: level -> eye level (noun, common, rec 2, link 2)
+- N eye___: wear -> eyewear (noun, common, rec 2, link 2)
+- U eye___: shadow -> eyeshadow (3788) link 2
+- U eye___: piece -> eyepiece (41074) link 4
+- U eye___: lash -> eyelash (14196) link 1
+- N eye___: sore -> eyesore (noun, common, rec 2, link 3)
+- N eye___: opener -> eye-opener (noun, common, rec 3, link 4)
+- U eye___: liner -> eyeliner (3787) link 2
+- N eye___: contact -> eye contact (noun, common, rec 1, link 2)
+- N eye___: strain -> eyestrain (noun, common, rec 2, link 3)
+- N eye___: catching -> eye-catching (adjective, common, rec 2, link 3)
+- N eye___: popping -> eye-popping (adjective, common, rec 3, link 4)
+- U eye___: test -> eye test (15268) link 2
+- U eye___: ball -> eyeball (3351) link 1
+- U life___: boat -> lifeboat (2791) link 1
+- N life___: raft -> life raft (noun, common, rec 1, link 2)
+- U life___: buoy -> lifebuoy (39820) link 3
+- N life___: blood -> lifeblood (noun, common, rec 3, link 4)
+- N life___: partner -> life partner (noun, common, rec 2, link 3)
+- U life___: sentence -> life sentence (33809) link 2
+- U life___: jacket -> life jacket (2827) link 1
+- N life___: belt -> lifebelt (noun, common, rec 2, link 4)
+- U life___: drawing -> life drawing (12220) link 3
+- N life___: story -> life story (noun, common, rec 2, link 4)
+- N life___: size -> life-size (adjective, common, rec 2, link 3)
+- U life___: peer -> life peer (33619) link 5
+- N life___: insurance -> life insurance (noun, common, rec 1, link 2)
+- N life___: work -> lifework (noun, common, rec 3, link 4)
+- N life___: changing -> life-changing (adjective, common, rec 2, link 3)
+- N life___: long -> lifelong (adjective, common, rec 1, link 2)
+- N life___: less -> lifeless (adjective, common, rec 1, link 3)
+- U life___: time -> lifetime (66258) link 1
+- U life___: cycle -> life cycle (41064) link 3
+- U life___: guard -> lifeguard (33021) link 1
+- N life___: style -> lifestyle (noun, common, rec 1, link 2)
+- N life___: span -> lifespan (noun, common, rec 2, link 3)
+- U life___: saver -> life saver (33222) link 2
+- N life___: support -> life support (noun, common, rec 2, link 3)
+- N life___: expectancy -> life expectancy (noun, common, rec 2, link 4)
+- N life___: coach -> life coach (noun, common, rec 2, link 3)
+- N life___: form -> lifeform (noun, common, rec 3, link 4)
+- N life___: hack -> life hack (noun, common, rec 2, link 4)
+- N life___: sciences -> life sciences (noun, common, rec 3, link 4)
+- N life___: skills -> life skills (noun, common, rec 2, link 4)
+- D life___: signs
+- D life___: sized
+- N life___: like -> lifelike (adjective, common, rec 2, link 3)
+- N life___: force -> life force (noun, common, rec 3, link 3)
+- N life___: line -> lifeline (noun, common, rec 1, link 2)
+- N over___: sight -> oversight (noun, common, rec 2, link 4)
+- N over___: dose -> overdose (noun, common, rec 1, link 2, sensitive)
+- D over___: joy
+- N over___: awe -> overawe (verb, common, rec 4, link 5)
+- U over___: coat -> overcoat (24374) link 1
+- N over___: weight -> overweight (adjective, common, rec 1, link 2)
+- N over___: size -> oversize (adjective, common, rec 2, link 4)
+- U over___: flow -> overflow (23625) link 3
+- N over___: turn -> overturn (verb, common, rec 2, link 4)
+- U over___: cast -> overcast (2007) link 3
+- N over___: bite -> overbite (noun, common, rec 2, link 4)
+- N over___: see -> oversee (verb, common, rec 2, link 4)
+- N over___: look -> overlook (verb, common, rec 1, link 2)
+- U over___: hear -> overhear (14703) link 3
+- U over___: lord -> overlord (20778) link 4
+- U over___: night -> overnight (28836) link 1
+- U over___: hang -> overhang (45063) link 4
+- U over___: pass -> overpass (38445) link 3
+- N over___: rule -> overrule (verb, common, rec 2, link 4)
+- U over___: board -> overboard (60659) link 2
+- N over___: shadow -> overshadow (verb, common, rec 2, link 4)
+- N over___: age -> overage (noun, common, rec 4, link 5)
+- N over___: grown -> overgrown (adjective, common, rec 2, link 3)
+- U over___: time -> overtime (33154) link 1
+- N over___: all -> overall (adjective, common, rec 1, link 2)
+- N over___: come -> overcome (verb, common, rec 1, link 2)
+- N over___: due -> overdue (adjective, common, rec 1, link 2)
+- N over___: drive -> overdrive (noun, common, rec 3, link 4)
+- N over___: load -> overload (verb, common, rec 2, link 3)
+- N over___: rate -> overrate (verb, common, rec 2, link 4)
+- N over___: seas -> overseas (adverb, common, rec 1, link 2)
+- N over___: throw -> overthrow (verb, common, rec 2, link 3)
+- U over___: whelm -> overwhelm (28720) link 3
+- N over___: haul -> overhaul (verb, common, rec 3, link 4)
+- N over___: ride -> override (verb, common, rec 2, link 3)
+- N over___: sleep -> oversleep (verb, common, rec 1, link 3)
+- N over___: wrought -> overwrought (adjective, common, rec 3, link 5)
+- N over___: power -> overpower (verb, common, rec 2, link 4)
+- U over___: tone -> overtone (40754) link 5
+- N over___: heat -> overheat (verb, common, rec 1, link 3)
+- U over___: draft -> overdraft (33917) link 4
+- N over___: run -> overrun (verb, common, rec 2, link 4)
+- N over___: lap -> overlap (verb, common, rec 2, link 3)
+- N over___: kill -> overkill (noun, common, rec 2, link 3)
+- N over___: ween -> overween (verb, common, rec 5, link 5)
+- U over___: burden -> overburden (60424) link 5
+- N over___: spill -> overspill (noun, common, rec 3, link 4, UK)
+- N over___: reach -> overreach (verb, common, rec 3, link 4)
+- N over___: eat -> overeat (verb, common, rec 1, link 3)
+
+## Problems

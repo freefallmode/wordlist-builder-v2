@@ -1,0 +1,238 @@
+T heating_and_cooling | heating and cooling
+23574 | fan [cooling] noun common rec 1 link 1 | EXISTS: 42237 [] noun common rec 3 flags - region -
+
+T windows_and_doors | windows and doors
+24104 | lock [door] noun common rec 1 link 1 | EXISTS: 66884 [] noun common rec 1 flags - region -
+
+T parts_of_a_door | parts of a door
+24104 | lock [door] noun common rec 1 link 1 | EXISTS: 66884 [] noun common rec 1 flags - region -
+
+T fashion_styles | fashion styles
+24509 | vintage [style] adjective common rec 2 link 2 | NEW (vintage style or style vintage)
+
+T hats | hats
+24684 | panama [hat] noun common rec 3 link 3 | EXISTS: 55447 [] noun common rec 2 flags - region -
+24695 | cloche [hat] noun common rec 4 link 4 | EXISTS: 23064 [] noun common rec 4 flags - region -
+29548 | bowler [hat] noun common rec 2 link 2 | EXISTS: 22982 [] noun common rec 2 flags - region -
+
+T historical_hats | historical hats
+24695 | cloche [hat] noun common rec 4 link 3 | EXISTS: 23064 [] noun common rec 4 flags - region -
+29548 | bowler [hat] noun common rec 2 link 1 | EXISTS: 22982 [] noun common rec 2 flags - region -
+
+T bags | bags
+24712 | clutch [bag] noun common rec 3 link 3 | EXISTS: 66532 [] noun common rec 3 flags - region -
+25486 | tote [bag] noun common rec 3 link 2 | EXISTS: 4991 [] noun common rec 2 flags - region -
+28261 | carrier [bag] noun common rec 2 link 3 | EXISTS: 24716 [] noun common rec 2 flags - region UK
+28264 | duffel [bag] noun common rec 2 link 2 | EXISTS: 24713 [] noun common rec 2 flags - region -
+
+T gift_wrapping | gift wrapping
+25224 | wrap [gift] verb common rec 1 link 1 | EXISTS: 25203 [] noun common rec 2 flags - region -
+
+T paper_goods | paper goods
+25548 | tissue [paper] noun common rec 1 link 1 | EXISTS: 25207 [] noun common rec 1 flags - region -
+
+T things_made_of_paper | things made of paper
+25548 | tissue [paper] noun common rec 1 link 2 | EXISTS: 25207 [] noun common rec 1 flags - region -
+
+T paper_crafts | paper crafts
+25548 | tissue [paper] noun common rec 1 link 4 | EXISTS: 25207 [] noun common rec 1 flags - region -
+
+T beds | beds
+25808 | four-poster [bed] noun common rec 4 link 3 | EXISTS: 4694 [] noun common rec 3 flags - region -
+
+T handwriting_words | handwriting words
+26178 | neat [handwriting] adjective common rec 1 link 2 | NEW (neat handwriting or handwriting neat)
+26179 | messy [handwriting] adjective common rec 1 link 2 | NEW (messy handwriting or handwriting messy)
+26183 | loopy [handwriting] adjective common rec 2 link 3 | NEW (loopy handwriting or handwriting loopy)
+26184 | slanted [handwriting] adjective common rec 2 link 3 | NEW (slanted handwriting or handwriting slanted)
+26188 | scratchy [handwriting] adjective common rec 2 link 4 | NEW (scratchy handwriting or handwriting scratchy)
+
+T typography_words | typography words
+26222 | justified [typography] adjective common rec 2 link 3 | NEW (justified typography or typography justified)
+
+T silly_sounding_words | silly-sounding words
+27840 | loopy [silly] adjective common rec 2 link 4 | NEW (loopy silly or silly loopy)
+
+T cakes | cakes
+28037 | sponge [cake] noun common rec 1 link 1 | EXISTS: 66357 [] noun common rec 1 flags - region -
+28049 | madeira [cake] noun common rec 3 link 4 | EXISTS: 66364 [] noun common rec 4 flags - region UK
+
+T line_types | line types
+28211 | straight [line] adjective common rec 1 link 1 | EXISTS: 66473 [] noun common rec 1 flags - region -
+38918 | solid [line] adjective common rec 1 link 1 | NEW (solid line or line solid)
+38920 | diagonal [line] adjective common rec 2 link 2 | NEW (diagonal line or line diagonal)
+38921 | vertical [line] adjective common rec 2 link 2 | NEW (vertical line or line vertical)
+38922 | horizontal [line] adjective common rec 2 link 2 | NEW (horizontal line or line horizontal)
+38923 | parallel [line] adjective common rec 2 link 2 | NEW (parallel line or line parallel)
+38931 | broken [line] adjective common rec 1 link 3 | NEW (broken line or line broken)
+38934 | double [line] adjective common rec 1 link 3 | NEW (double line or line double)
+38936 | skew [line] adjective common rec 5 link 5 | NEW (skew line or line skew)
+38940 | slanted [line] adjective common rec 2 link 3 | NEW (slanted line or line slanted)
+38941 | oblique [line] adjective common rec 3 link 4 | NEW (oblique line or line oblique)
+38947 | bold [line] adjective common rec 1 link 4 | NEW (bold line or line bold)
+38948 | thin [line] adjective common rec 1 link 3 | NEW (thin line or line thin)
+
+T fire_station | fire station
+28342 | hydrant [fire] noun common rec 2 link 2 | EXISTS: 38366 [] noun common rec 1 flags - region -
+
+T engines | engines
+29539 | diesel [engine] noun common rec 2 link 1 | EXISTS: 49704 [] noun common rec 1 flags - region -
+49675 | steam [engine] noun common rec 1 link 2 | EXISTS: 2853 [] noun common rec 1 flags - region -
+49676 | jet [engine] noun common rec 1 link 2 | EXISTS: 2739 [] noun common rec 2 flags - region -
+49677 | rocket [engine] noun common rec 1 link 2 | EXISTS: 49705 [] noun common rec 1 flags - region -
+
+T tree_parts | tree parts
+30032 | trunk [tree] noun common rec 1 link 1 | EXISTS: 40163 [] noun common rec 1 flags - region -
+
+T woodland_features | woodland features
+30151 | path [woodland] noun common rec 1 link 1 | EXISTS: 30131 [] noun common rec 2 flags - region -
+
+T river_features | river features
+30861 | bank [river] noun common rec 1 link 1 | EXISTS: 31925 [] noun common rec 2 flags - region -
+
+T cloud_types | cloud types
+31272 | lenticular [cloud] adjective common rec 5 link 3 | NEW (lenticular cloud or cloud lenticular)
+
+T hot_weather_words | hot weather words
+31454 | close [weather] adjective common rec 3 link 4 | NEW (close weather or weather close)
+
+T ocean | ocean
+32040 | Pacific [ocean] noun place rec 1 link 1 | EXISTS: 36993 [] noun place rec 1 flags - region -
+32045 | swell [ocean] adjective common rec 3 link 3 | NEW (swell ocean or ocean swell)
+
+T the_five_oceans | the five oceans
+32040 | Pacific [ocean] noun place rec 1 link 1 | EXISTS: 36993 [] noun place rec 1 flags - region -
+
+T desert | desert
+32050 | Gobi [desert] noun place rec 3 link 2 | EXISTS: 21111 [] noun place rec 2 flags - region -
+32054 | Atacama [desert] noun place rec 3 link 3 | EXISTS: 37669 [] noun place rec 3 flags - region -
+
+T famous_deserts | famous deserts
+32050 | Gobi [desert] noun place rec 3 link 1 | EXISTS: 21111 [] noun place rec 2 flags - region -
+32054 | Atacama [desert] noun place rec 3 link 2 | EXISTS: 37669 [] noun place rec 3 flags - region -
+
+T fossil_fuels | fossil fuels
+32326 | oil [fuel] noun common rec 1 link 1 | EXISTS: 49758 [] noun common rec 3 flags - region -
+
+T buried_fuels | buried fuels
+32326 | oil [fuel] noun common rec 1 link 1 | EXISTS: 49758 [] noun common rec 3 flags - region -
+
+T sad_words | sad words
+32697 | down [sad] adjective common rec 1 link 2 | NEW (down sad or sad down)
+
+T angry_words | angry words
+32724 | mad [angry] adjective common rec 1 link 1 | NEW (mad angry or angry mad)
+32726 | cross [angry] adjective common rec 2 link 3 | NEW (cross angry or angry cross)
+32744 | incandescent [angry] adjective common rec 4 link 4 | NEW (incandescent angry or angry incandescent)
+
+T calm_words | calm words
+32827 | peaceful [calm] adjective common rec 1 link 1 | NEW (peaceful calm or calm peaceful)
+32840 | still [calm] adjective common rec 1 link 3 | NEW (still calm or calm still)
+32843 | zen [calm] adjective common rec 2 link 3 | NEW (zen calm or calm zen)
+32846 | sedate [calm] adjective common rec 4 link 4 | NEW (sedate calm or calm sedate)
+32848 | stoic [calm] adjective common rec 4 link 4 | NEW (stoic calm or calm stoic)
+
+T shopping_words | shopping words
+33996 | cart [shopping] noun common rec 1 link 1 | EXISTS: 39781 [] noun common rec 1 flags - region -
+33997 | trolley [shopping] noun common rec 1 link 1 | EXISTS: 40320 [] noun common rec 2 flags - region -
+34004 | bag [shopping] noun common rec 1 link 2 | EXISTS: 24714 [] noun common rec 1 flags - region -
+
+T shopping_mall | shopping mall
+33996 | cart [shopping] noun common rec 1 link 3 | EXISTS: 39781 [] noun common rec 1 flags - region -
+34004 | bag [shopping] noun common rec 1 link 2 | EXISTS: 24714 [] noun common rec 1 flags - region -
+
+T famous_saints | famous saints
+34332 | Patrick [saint] noun person rec 2 link 1 | EXISTS: 55771 [] noun person rec 2 flags - region -
+34333 | Nicholas [saint] noun person rec 2 link 1 | EXISTS: 25031 [] noun person rec 3 flags sensitive region -
+34334 | George [saint] noun person rec 2 link 1 | EXISTS: 22471 [] noun person rec 2 flags - region -
+34340 | Paul [saint] noun person rec 1 link 2 | EXISTS: 57054 [] noun place rec 3 flags - region -
+34343 | Bernard [saint] noun person rec 3 link 3 | EXISTS: 9284 [] noun common rec 2 flags - region -
+34349 | Benedict [saint] noun person rec 3 link 3 | EXISTS: 20875 [] noun person rec 4 flags - region -
+
+T phone_words | phone words
+35125 | call [phone] noun common rec 1 link 1 | EXISTS: 4582 [] noun phrase rec 1 flags - region -
+
+T news_roles | news roles
+35196 | anchor [news] noun common rec 2 link 2 | EXISTS: 4612 [] noun phrase rec 2 flags - region -
+
+T european_cities | european cities
+35824 | Manchester [city] noun place rec 2 link 3 | EXISTS: 58474 [soccer club] noun org rec 2 flags - region -
+
+T british_cities | british cities
+35824 | Manchester [city] noun place rec 2 link 1 | EXISTS: 58474 [soccer club] noun org rec 2 flags - region -
+
+T famous_rivers | famous rivers
+36769 | Amazon [river] noun place rec 1 link 1 | EXISTS: 60557 [] noun place rec 1 flags - region -
+
+T south_american_rivers | south american rivers
+36769 | Amazon [river] noun place rec 1 link 1 | EXISTS: 60557 [] noun place rec 1 flags - region -
+
+T map_words | map words
+37888 | relief [map] noun common rec 3 link 4 | EXISTS: 2451 [] noun phrase rec 4 flags - region -
+
+T directions | relative directions
+37952 | diagonal [direction] adjective common rec 2 link 4 | NEW (diagonal direction or direction diagonal)
+
+T patterns | patterns
+38904 | checkered [pattern] adjective common rec 2 link 1 | NEW (checkered pattern or pattern checkered)
+
+T geometry | geometry
+38924 | perpendicular [geometry] adjective common rec 3 link 3 | NEW (perpendicular geometry or geometry perpendicular)
+41569 | parallel [geometry] adjective common rec 2 link 2 | NEW (parallel geometry or geometry parallel)
+
+T basketball_terms | basketball terms
+39780 | hoop [basketball] noun common rec 2 link 1 | EXISTS: 44154 [] noun common rec 1 flags - region -
+42759 | court [basketball] noun common rec 1 link 1 | EXISTS: 44164 [] noun common rec 1 flags - region -
+
+T heat_science | heat science
+39938 | thermal [heat] adjective common rec 3 link 4 | NEW (thermal heat or heat thermal)
+
+T temperature_words | temperature words
+39943 | cold [temperature] adjective common rec 1 link 1 | NEW (cold temperature or temperature cold)
+
+T genetics_words | genetics words
+40919 | dominant [genetics] adjective common rec 2 link 2 | NEW (dominant genetics or genetics dominant)
+
+T famous_islands | famous islands
+41020 | Galapagos [islands] noun place rec 2 link 2 | EXISTS: 36587 [] noun place rec 2 flags - region -
+
+T microscope_parts | microscope parts
+41079 | slide [microscope] noun common rec 1 link 1 | EXISTS: 40409 [] noun common rec 2 flags - region -
+
+T moon_phases_and_moods | moon phases and moods
+41356 | crescent [moon] noun common rec 2 link 2 | EXISTS: 14033 [] noun common rec 3 flags - region -
+
+T numbers | numbers
+41477 | eight [number] noun common rec 1 link 2 | EXISTS: 42907 [] noun common rec 3 flags - region -
+
+T numbers_one_to_ten | numbers one to ten
+41477 | eight [number] noun common rec 1 link 3 | EXISTS: 42907 [] noun common rec 3 flags - region -
+
+T number_types | number types
+41497 | prime [number] adjective common rec 2 link 1 | NEW (prime number or number prime)
+41503 | negative [number] adjective common rec 1 link 2 | NEW (negative number or number negative)
+41504 | positive [number] adjective common rec 1 link 3 | NEW (positive number or number positive)
+41508 | rational [number] adjective common rec 3 link 3 | NEW (rational number or number rational)
+41509 | irrational [number] adjective common rec 3 link 3 | NEW (irrational number or number irrational)
+41519 | composite [number] adjective common rec 4 link 3 | NEW (composite number or number composite)
+41520 | cardinal [number] adjective common rec 4 link 4 | NEW (cardinal number or number cardinal)
+41521 | ordinal [number] adjective common rec 3 link 4 | NEW (ordinal number or number ordinal)
+
+T american_football_terms | american football terms
+42796 | flag [football] noun common rec 2 link 4 | EXISTS: 44074 [] noun common rec 3 flags - region -
+
+T baseball_terms | baseball terms
+42803 | bat [baseball] noun common rec 1 link 1 | EXISTS: 44137 [] noun common rec 1 flags - region -
+42814 | diamond [baseball] noun common rec 2 link 2 | EXISTS: 44169 [] noun common rec 2 flags - region -
+
+T hitting_terms | baseball hitting terms
+42803 | bat [baseball] noun common rec 1 link 1 | EXISTS: 44137 [] noun common rec 1 flags - region -
+
+T cricket_terms | cricket terms
+42846 | bat [cricket] noun common rec 1 link 1 | EXISTS: 30106 [] noun common rec 2 flags - region -
+
+T rugby_terms | rugby terms
+42931 | sevens [rugby] noun common rec 3 link 3 | EXISTS: 44062 [] noun common rec 3 flags - region -
+
+T tennis_terms | tennis terms
+42992 | court [tennis] noun common rec 1 link 1 | EXISTS: 44163 [] noun common rec 1 flags - region -

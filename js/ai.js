@@ -97,6 +97,8 @@ export function wordsPrompt(P, t, n, spread, extra) {
   const lines = [`Theme: ${t.name}`, `Place in the tree: ${path}`];
   if (t.note) lines.push(`Note: ${t.note}`);
   if (t.lang) lines.push('This theme is language-specific (spelling, sound, slang or wordplay): every word you list must satisfy its rule exactly.');
+  if (t.tkind === 'compound' && /^compound-(end|start):./.test(t.rule || '')) lines.push(`This is a compound theme (rule ${t.rule}): every member is a FULL TERM people say as a unit (break room, firefly), written in full as the entry text. The game shows the player only the short word. Rate rec, inRec, pos, type and the flags for the full term, never for the bare word. Skip loose phrases that are only an ordinary word plus the shared word.`);
+  else if (!t.group && !t.lang) lines.push('If the theme collects kinds of one thing, a member that is only a modifier (green, herbal, solid, igneous) is written as the full term (green tea, solid line, igneous rock), and the ratings describe the full term. A word that already means the thing on its own (pine, tote, Pacific) stays as it is.');
   if (t.complete) lines.push('COMPLETE theme: list every member of the set (use the note), exactly, with no extras.');
   if (kids.length) lines.push(`Sub-themes exist (${kids.join(', ')}); words here should be typical of this theme itself, not copies of what the sub-themes will hold.`);
   if (have.length) lines.push(`Already in the theme (do not repeat): ${have.slice(0, 150).join(', ')}`);

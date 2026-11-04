@@ -4,7 +4,7 @@
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, effRec, popIn, themeProfile, dialectOf, linkIds, POS, TYPES, REGIONS } from './model.js';
+import { eff, effRec, popIn, themeProfile, dialectOf, themeLocked, linkIds, POS, TYPES, REGIONS } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { isNameWord } from './validate.js';
 
@@ -34,7 +34,7 @@ export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r
 // Bit layouts, written into the file so the reader does not have to guess.
 // What a theme is: category (kinds of one thing), place, property (members share an attribute), wordplay (members chosen by spelling or sound; rule says how to test) and compound (members combine with a shared word).
 export const THEME_KINDS = ['category', 'place', 'property', 'wordplay', 'compound'];
-export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32 };
+export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32, locked: 64 };   // locked: show exactly the linked word, no regional or family substitution
 export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256, synonym: 512 };
 
 export function buildExport(P, opt0 = {}) {
@@ -62,7 +62,7 @@ export function buildExport(P, opt0 = {}) {
       const f = eff(P, tid);
       if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, e.sensitive || f.sensitive) || !pass(o.tm, e.tm || f.tm)) continue;
       // A theme may show the entry under a shorter text (show) or as one of its forms (use); that text and its part of speech travel with the link.
-      const sh = e.aliasOf ? null : e.show?.[tid] ? { text: e.show[tid], pos: e.pos } : ix.entry.get(e.use?.[tid])?.enabled ? ix.entry.get(e.use[tid]) : null;
+      const sh = e.aliasOf && e.th[tid] === undefined ? null : e.show?.[tid] ?{ text: e.show[tid], pos: e.pos } : ix.entry.get(e.use?.[tid])?.enabled ? ix.entry.get(e.use[tid]) : null;
       const r = Math.max(effRec(P, e, tid), sh && sh.rec || 0);
       if (r === 0 ? !o.unrated : (r < o.recMin || r > o.recMax)) continue;
       links.push([tid, r, popIn(P, e, tid), sh ? sh.text + '|' + POS.indexOf(sh.pos) : '']);
@@ -73,7 +73,7 @@ export function buildExport(P, opt0 = {}) {
   // Two words that read the same in one theme cannot both be placed: the less popular one (then the harder one) is left out of that theme.
   const slot = new Map();                            // themeId + shown text -> [{ id, pop, rec }]
   const textOf = (e, sh) => (sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text).trim().toLowerCase();
-  for (const [id, links] of keep) { const e = ix.entry.get(id); if (e.aliasOf) continue; for (const [tid, r, p, sh] of links) { const k = tid + ': ' + textOf(e, sh); if (!slot.has(k)) slot.set(k, []); slot.get(k).push({ id, tid, pop: p || 9, rec: r || 9 }); } }
+  for (const [id, links] of keep) { const e = ix.entry.get(id); for (const [tid, r, p, sh] of links) { if (e.aliasOf && e.th[tid] === undefined) continue; const k = tid + ': ' + textOf(e, sh); if (!slot.has(k)) slot.set(k, []); slot.get(k).push({ id, tid, pop: p || 9, rec: r || 9 }); } }
   const out = new Set(); report.sameText = [];
   for (const [k, xs] of slot) if (xs.length > 1) {
     xs.sort((a, b) => a.pop - b.pop || a.rec - b.rec || a.id - b.id);
@@ -83,7 +83,7 @@ export function buildExport(P, opt0 = {}) {
   if (out.size) {
     for (const [id, links] of [...keep]) {
       const e = ix.entry.get(id), rid = e.aliasOf || e.id;
-      const rest = links.filter(([tid]) => !out.has(tid + '|' + rid));
+      const rest = links.filter(([tid]) => !out.has(tid + '|' + rid) && !out.has(tid + '|' + id));
       if (rest.length) keep.set(id, rest); else keep.delete(id);
     }
     report.notes.push(`${out.size} links left out because another word reads the same in that theme (the less popular one).`);
@@ -181,6 +181,7 @@ export function buildExport(P, opt0 = {}) {
     const f = eff(P, t.id);
     const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0)
       | (t.complete ? THEME_BITS.complete : 0)
+      | (themeLocked(P, t) ? THEME_BITS.locked : 0)
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
     const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
     const [rlo, rhi] = rMask(f.region);

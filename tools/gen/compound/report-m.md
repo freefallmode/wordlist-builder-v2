@@ -1,0 +1,74 @@
+# Compound migration
+
+{"D":4,"U":27,"N":34,"fix":0,"bad":0,"deleted":52,"reused":3,"K":237}
+
+- N rocks and minerals: igneous -> igneous rock (noun, common, rec 3, link 3)
+- N rocks and minerals: metamorphic -> metamorphic rock (noun, common, rec 3, link 3)
+- U rocks and minerals: sedimentary -> sedimentary rock (21711) link 3
+- N rock types: igneous -> igneous rock (noun, common, rec 3, link 2)
+- N rock types: metamorphic -> metamorphic rock (noun, common, rec 3, link 2)
+- U rock types: sedimentary -> sedimentary rock (21711) link 2
+- N art: abstract -> abstract art (noun, common, rec 2, link 2)
+- N art gallery: abstract -> abstract art (noun, common, rec 2, link 2)
+- D birdwatching words: accidental
+- U courses of a meal: main -> main course (20081) link 2
+- U ice hockey terms: hockey -> ice hockey (5349) link 2
+- U line types: straight -> straight line (66473) link 1
+- N line types: solid -> solid line (noun, common, rec 1, link 1)
+- N line types: diagonal -> diagonal line (noun, common, rec 1, link 2)
+- N line types: vertical -> vertical line (noun, common, rec 1, link 2)
+- N line types: horizontal -> horizontal line (noun, common, rec 1, link 2)
+- N line types: parallel -> parallel line (noun, common, rec 2, link 2)
+- N line types: broken -> broken line (noun, common, rec 1, link 2)
+- N line types: double -> double line (noun, common, rec 2, link 3)
+- N line types: skew -> skew line (noun, common, rec 5, link 5)
+- N line types: slanted -> slanted line (noun, common, rec 2, link 3)
+- N line types: oblique -> oblique line (noun, common, rec 3, link 4)
+- D line types: bold
+- D line types: thin
+- N cloud types: lenticular -> lenticular cloud (noun, common, rec 4, link 4)
+- D hot weather words: close
+- N ocean: swell -> ocean swell (noun, common, rec 3, link 3)
+- U map words: relief -> relief map (2451) link 4
+- N number types: prime -> prime number (noun, common, rec 1, link 1)
+- N number types: negative -> negative number (noun, common, rec 1, link 2)
+- N number types: positive -> positive number (noun, common, rec 1, link 3)
+- N number types: rational -> rational number (noun, common, rec 3, link 3)
+- N number types: irrational -> irrational number (noun, common, rec 3, link 3)
+- N number types: composite -> composite number (noun, common, rec 4, link 3)
+- N number types: cardinal -> cardinal number (noun, common, rec 3, link 4)
+- N number types: ordinal -> ordinal number (noun, common, rec 3, link 4)
+- N sections of the spine: cervical -> cervical spine (noun, common, rec 3, link 2)
+- N sections of the spine: thoracic -> thoracic spine (noun, common, rec 3, link 3)
+- N sections of the spine: lumbar -> lumbar spine (noun, common, rec 3, link 2)
+- N sections of the spine: sacral -> sacral spine (noun, common, rec 4, link 4)
+- U angle words: right -> right angle (41566) link 1
+- N angle words: reflex -> reflex angle (noun, common, rec 3, link 3)
+- N angle words: straight -> straight angle (noun, common, rec 3, link 2)
+- N angle words: vertical -> vertical angle (noun, common, rec 3, link 3)
+- N angle words: alternate -> alternate angles (noun, common, rec 4, link 3)
+- N angle words: interior -> interior angle (noun, common, rec 3, link 3)
+- N angle words: exterior -> exterior angle (noun, common, rec 3, link 3)
+- N angle words: oblique -> oblique angle (noun, common, rec 4, link 4)
+- U teas: bubble -> bubble tea (19499) link 3
+- U teas: herbal -> herbal tea (15564) link 2
+- U teas: black -> black tea (19492) link 1
+- U teas: green -> green tea (16741) link 1
+- U teas: white -> white tea (19503) link 3
+- U ducks: harlequin -> harlequin duck (9862) link 4
+- U ducks: mandarin -> mandarin duck (8224) link 3
+- U ducks: muscovy -> muscovy duck (1483) link 4
+- U ducks: ruddy -> ruddy duck (50669) link 4
+- U geese and swans: black -> black swan (8211) link 2
+- U geese and swans: mute -> mute swan (8210) link 3
+- U geese and swans: trumpeter -> trumpeter swan (8212) link 3
+- U pigeons and doves: carrier -> carrier pigeon (4629) link 3
+- U snakes: coral -> coral snake (1191) link 3
+- U snakes: corn -> corn snake (8507) link 2
+- U snakes: garter -> garter snake (1192) link 2
+- U venomous snakes: coral -> coral snake (1191) link 2
+- U constrictor snakes: corn -> corn snake (8507) link 3
+- U tides and currents: rip -> rip current (31122) link 3
+- U australian trees: Gum -> gum tree (1642) link 1
+
+## Problems

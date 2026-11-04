@@ -3,7 +3,7 @@ import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './d
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
-  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, descendants } from './model.js';
+  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, themeLocked, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } from './export.js';
@@ -48,6 +48,7 @@ export async function editTheme(t, isNew = false) {
     tkind: select(THEME_KINDS.map(k => [k, k]), w.tkind || 'category'),
     rule: h('input', { value: w.rule || '', placeholder: 'hidden:tree, rhyme:ake, palindrome, compound-end:bag, compound-start:snow' }),
     pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
+    locked: select([['auto', 'Follow the kind (locked for wordplay, compound and language-specific)'], ['locked', 'Locked: show exactly the linked word'], ['free', 'Allowed: regional and family words may stand in']], w.locked === undefined ? 'auto' : w.locked ? 'locked' : 'free'),
   };
   const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang', 'nameOk'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
@@ -62,6 +63,7 @@ export async function editTheme(t, isNew = false) {
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
     field('Rule', f.rule, 'Wordplay and compound themes only: how the game tests a word. hidden:<what>, rhyme:<ending>, palindrome, anagram, homophone, onomatopoeia, double-letters, starts:<what>, ends:<ending>, contains:<letters>, compound-end:<word> for ___ word, compound-start:<word> for word ___, or other.'),
+    field('Word substitution', f.locked, 'Whether the game may show a regional, spelling or alias word in place of the one linked (US word for a UK player). Locked themes always show the linked word.'),
     field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). How hard a theme is to serve is worked out from its words.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
@@ -89,6 +91,7 @@ export async function editTheme(t, isNew = false) {
       Object.assign(t, w, { parent: oldParent });
       if (!w.tkind) delete t.tkind;
       if (!w.rule) delete t.rule;
+      if (f.locked.value === 'auto') delete t.locked; else t.locked = f.locked.value === 'locked';
       if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindex(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
       else if ((parent || null) !== (oldParent || null)) { reindex(P); moveTheme(P, t.id, parent); if (parent) A.open.add(parent); }
       A.changed();
@@ -182,7 +185,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (!r) return toast('Pick the root entry first.', true);
     if (await editEntry(r)) A.changed();
   } }, rootLabel());
-  const picker = field('Pick the root entry', aliasInput, 'An alias takes its themes from its root; it has its own flags and familiarity. Spelling = same word spelled differently (color/colour); regional = the same thing under another regional word (sidewalk/pavement); synonym = a strict substitute that is always the same answer (besan/gram flour). A near match in meaning (sofa/couch) is an entry of its own, with a synonym group in the theme.');
+  const picker = field('Pick the root entry', aliasInput, 'An alias takes its themes from its root unless it is linked to a theme itself (regional, synonym, abbreviation and translation aliases may be; one member of the family per theme); it has its own flags and familiarity. Spelling = same word spelled differently (color/colour); regional = the same thing under another regional word (sidewalk/pavement); synonym = a strict substitute that is always the same answer (besan/gram flour). A near match in meaning (sofa/couch) is an entry of its own, with a synonym group in the theme.');
   const linkRow = h('div.row', {}, rootLink, h('button.link', { type: 'button', onclick: () => { picker.hidden = !picker.hidden; } }, 'change'));
   picker.hidden = !!w.aliasOf;
   linkRow.hidden = !w.aliasOf;
@@ -304,8 +307,11 @@ export async function generate(tid) {
       const text = x.text.trim(); if (!text) continue;
       const gloss = (x.gloss || '').trim();
       let root = sameText(P, text).find(o => (o.gloss || '').toLowerCase() === gloss.toLowerCase());
-      if (root) { if (!(tid in root.th) && !root.aliasOf) { root.th[tid] = clamp(x.inRec); linked++; } }
-      else {
+      if (root) {   // an existing word (or one of its alias family) is linked if no member of the family is in the theme yet; spelling and form aliases are linked through their root
+        const fam = root.aliasOf ? P.ix.entry.get(root.aliasOf) : root;
+        if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.th)) { (['spelling', 'form'].includes(root.aliasKind) ? fam : root).th[tid] = clamp(x.inRec); linked++; }
+        root = fam;
+      } else {
         root = addEntry(P, text, { gloss, pos: x.pos, type: x.type, rec: clamp(x.rec), adult: x.adult, sensitive: x.sensitive, tm: x.tm, vulgar: x.vulgar, region: x.region,
           status: 'gen', th: { [tid]: clamp(x.inRec) } });
         reindex(P); created++;
@@ -315,9 +321,7 @@ export async function generate(tid) {
         if (sameText(P, at).some(o => (o.gloss || '').toLowerCase() === (a.gloss || '').toLowerCase())) continue;
         const al = addEntry(P, at, { gloss: (a.gloss || '').trim(), pos: root.pos, type: root.type, rec: clamp(a.rec), aliasOf: root.id, aliasKind: a.kind, region: a.region, status: 'gen',
           adult: root.adult, sensitive: root.sensitive, tm: root.tm, vulgar: root.vulgar });
-        const def = Math.max(root.th[tid] || root.rec, al.rec);
-        if (clamp(a.inRec) !== def) al.th[tid] = clamp(a.inRec);
-        reindex(P); created++;
+        reindex(P); created++;   // the alias follows its root's links; a family has only one member linked in a theme
       }
     }
     A.changed();

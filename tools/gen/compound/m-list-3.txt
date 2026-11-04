@@ -1,0 +1,231 @@
+T bowling_terms | bowling terms
+43205 | pin [bowling] noun common rec 1 link 1 | EXISTS: 39786 [] noun common rec 1 flags - region -
+43211 | alley [bowling] noun common rec 2 link 2 | EXISTS: 43207 [] noun common rec 1 flags - region -
+
+T swimming_words | swimming words
+43271 | pool [swimming] noun common rec 1 link 1 | EXISTS: 40120 [] noun common rec 1 flags - region -
+43279 | trunks [swimming] noun common rec 1 link 2 | EXISTS: 24470 [] noun common rec 2 flags - region -
+43301 | gala [swimming] noun common rec 3 link 4 | EXISTS: 35003 [] noun common rec 3 flags - region UK
+
+T swimming_pool | swimming pool
+43279 | trunks [swimming] noun common rec 1 link 2 | EXISTS: 24470 [] noun common rec 2 flags - region -
+
+T famous_races | famous races
+43482 | Fastnet [race] noun proper rec 4 link 5 | EXISTS: 44498 [] noun proper rec 5 flags - region -
+
+T ski_trip | ski trip
+43527 | gondola [ski] noun common rec 2 link 2 | EXISTS: 47072 [] noun common rec 3 flags - region -
+48872 | goggles [ski] noun common rec 2 link 2 | EXISTS: 24792 [] noun common rec 2 flags - region -
+57621 | instructor [ski] noun common rec 2 link 3 | EXISTS: 33093 [] noun common rec 2 flags - region -
+
+T ski_resort | ski resort
+43527 | gondola [ski] noun common rec 2 link 2 | EXISTS: 47072 [] noun common rec 3 flags - region -
+48872 | goggles [ski] noun common rec 2 link 3 | EXISTS: 24792 [] noun common rec 2 flags - region -
+57621 | instructor [ski] noun common rec 2 link 3 | EXISTS: 33093 [] noun common rec 2 flags - region -
+
+T boxing_terms | boxing terms
+43717 | bell [boxing] noun common rec 1 link 3 | EXISTS: 40307 [] noun common rec 3 flags - region -
+
+T wrestling_terms | wrestling terms
+43766 | freestyle [wrestling] noun common rec 2 link 3 | EXISTS: 5439 [] noun phrase rec 3 flags - region -
+
+T horse_racing_terms | horse racing terms
+44851 | trainer [horse] noun common rec 2 link 2 | EXISTS: 33110 [] noun common rec 2 flags - region -
+
+T rodeo_words | rodeo words
+44941 | arena [rodeo] noun common rec 2 link 3 | EXISTS: 44193 [] noun common rec 3 flags - region -
+
+T fishing_words | fishing words
+45117 | rod [fishing] noun common rec 1 link 1 | EXISTS: 39526 [] noun common rec 2 flags - region -
+45122 | line [fishing] noun common rec 1 link 1 | EXISTS: 25530 [] noun common rec 1 flags - region -
+45123 | net [fishing] noun common rec 1 link 2 | EXISTS: 31060 [] noun common rec 2 flags - region -
+
+T fishing_tackle | fishing tackle
+45117 | rod [fishing] noun common rec 1 link 1 | EXISTS: 39526 [] noun common rec 2 flags - region -
+45122 | line [fishing] noun common rec 1 link 1 | EXISTS: 25530 [] noun common rec 1 flags - region -
+45123 | net [fishing] noun common rec 1 link 3 | EXISTS: 31060 [] noun common rec 2 flags - region -
+58795 | fly [fishing] noun common rec 2 link 2 | EXISTS: 45130 [] noun common rec 2 flags - region -
+
+T lottery_words | lottery words
+45364 | ticket [lottery] noun common rec 1 link 1 | EXISTS: 23304 [] noun common rec 2 flags - region -
+
+T video_games | video games
+45669 | console [game] noun common rec 1 link 3 | EXISTS: 5845 [] noun phrase rec 1 flags - region -
+
+T model_making | model making
+45902 | scale [model] noun common rec 2 link 2 | EXISTS: 12860 [] noun common rec 3 flags - region -
+
+T puzzles | puzzles
+45932 | jigsaw [puzzle] noun common rec 1 link 1 | EXISTS: 5922 [] noun phrase rec 1 flags - region -
+
+T logic_puzzles | logic puzzles
+45932 | jigsaw [puzzle] noun common rec 1 link 5 | EXISTS: 5922 [] noun phrase rec 1 flags - region -
+
+T dolls_and_figures | dolls and figures
+46188 | daruma [doll] noun common rec 5 link 5 | EXISTS: 59307 [] noun common rec 4 flags - region -
+
+T car_parts | car parts
+46600 | horn [car] noun common rec 1 link 2 | EXISTS: 39602 [] noun common rec 1 flags - region -
+46608 | battery [car] noun common rec 1 link 2 | EXISTS: 23170 [] noun common rec 2 flags - region -
+
+T road_signs | road signs
+46717 | stop [sign] verb common rec 1 link 1 | EXISTS: 40080 [] noun common rec 1 flags - region -
+
+T parking_words | parking words
+46796 | meter [parking] noun common rec 2 link 3 | EXISTS: 38373 [] noun common rec 1 flags - region -
+46804 | reserved [parking] adjective common rec 2 link 3 | NEW (reserved parking or parking reserved)
+
+T on_a_bus | on a bus
+46904 | driver [bus] noun common rec 1 link 1 | EXISTS: 4113 [] noun phrase rec 1 flags - region -
+
+T ticket_words | ticket words
+46938 | stub [ticket] noun common rec 3 link 3 | EXISTS: 12812 [] noun common rec 2 flags - region -
+46964 | inspector [ticket] noun common rec 3 link 3 | EXISTS: 2892 [] noun common rec 2 flags - region UK
+
+T airport_words | airport words
+47151 | shuttle [airport] noun common rec 2 link 3 | EXISTS: 46895 [shuttle bus] noun common rec 2 flags - region -
+
+T bicycle_parts | bicycle parts
+47852 | chain [bicycle] noun common rec 1 link 1 | EXISTS: 40321 [] noun common rec 2 flags - region -
+47858 | bell [bicycle] noun common rec 1 link 2 | EXISTS: 40305 [] noun common rec 1 flags - region -
+47861 | reflector [bicycle] noun common rec 2 link 2 | EXISTS: 40009 [] noun common rec 2 flags - region -
+
+T tent_parts | tent parts
+48493 | stake [tent] noun common rec 2 link 2 | EXISTS: 3057 [] noun common rec 2 flags - region -
+
+T climbing_gear | climbing gear
+48700 | rope [climbing] noun common rec 1 link 1 | EXISTS: 46200 [] noun common rec 3 flags - region -
+48701 | harness [climbing] noun common rec 2 link 1 | EXISTS: 44149 [] noun common rec 2 flags - region -
+
+T climbing_words | climbing words
+48700 | rope [climbing] noun common rec 1 link 1 | EXISTS: 46200 [] noun common rec 3 flags - region -
+48701 | harness [climbing] noun common rec 2 link 1 | EXISTS: 44149 [] noun common rec 2 flags - region -
+
+T beach_destinations | beach destinations
+48967 | Bondi [beach] noun place rec 3 link 2 | EXISTS: 36613 [] noun place rec 2 flags - region -
+
+T truck_types | truck types
+49255 | tanker [truck] noun common rec 2 link 2 | EXISTS: 3119 [] noun common rec 2 flags - region -
+
+T tax_words | tax words
+50205 | deduction [tax] noun common rec 3 link 3 | EXISTS: 35392 [] noun common rec 4 flags - region -
+
+T vultures | vultures
+50612 | griffon [vulture] noun common rec 4 link 3 | EXISTS: 8113 [] noun common rec 4 flags - region -
+
+T camera_parts | camera parts
+52276 | film [camera] noun common rec 1 link 2 | EXISTS: 25647 [] noun common rec 2 flags - region -
+
+T cameras | cameras
+52276 | film [camera] noun common rec 1 link 1 | EXISTS: 25647 [] noun common rec 2 flags - region -
+
+T sections_of_the_spine | sections of the spine
+53058 | cervical [spine] adjective common rec 3 link 2 | NEW (cervical spine or spine cervical)
+53060 | thoracic [spine] adjective common rec 3 link 2 | NEW (thoracic spine or spine thoracic)
+53061 | lumbar [spine] adjective common rec 3 link 2 | NEW (lumbar spine or spine lumbar)
+53062 | sacral [spine] adjective common rec 4 link 3 | NEW (sacral spine or spine sacral)
+
+T kebab_types | kebab types
+53379 | adana [kebab] noun common rec 4 link 1 | EXISTS: 19304 [] noun common rec 4 flags - region -
+
+T coffee_words | coffee words
+53778 | grinder [coffee] noun common rec 2 link 1 | EXISTS: 23601 [] noun common rec 2 flags - region -
+
+T wine_words | wine words
+53845 | corked [wine] adjective common rec 3 link 2 | NEW (corked wine or wine corked)
+53853 | dry [wine] adjective common rec 1 link 2 | NEW (dry wine or wine dry)
+53856 | crisp [wine] adjective common rec 2 link 3 | NEW (crisp wine or wine crisp)
+
+T tasting_notes | wine tasting notes
+53845 | corked [wine] adjective common rec 3 link 2 | NEW (corked wine or wine corked)
+53853 | dry [wine] adjective common rec 1 link 2 | NEW (dry wine or wine dry)
+53856 | crisp [wine] adjective common rec 2 link 3 | NEW (crisp wine or wine crisp)
+
+T famous_queens | famous queens
+54563 | Victoria [queen] noun person rec 1 link 1 | EXISTS: 21520 [] noun person rec 1 flags - region -
+
+T rugs_and_carpets | rugs and carpets
+55256 | berber [carpet] noun common rec 4 link 4 | EXISTS: 59334 [] noun common rec 3 flags - region -
+
+T clock_parts | clock parts
+55782 | face [clock] noun common rec 1 link 1 | EXISTS: 25390 [] noun common rec 1 flags - region -
+55792 | alarm [clock] noun common rec 1 link 3 | EXISTS: 3685 [] noun common rec 1 flags - region -
+
+T clocks_and_calendars | clocks and calendars
+55782 | face [clock] noun common rec 1 link 2 | EXISTS: 25390 [] noun common rec 1 flags - region -
+55792 | alarm [clock] noun common rec 1 link 1 | EXISTS: 3685 [] noun common rec 1 flags - region -
+
+T clock_types | clock types
+55792 | alarm [clock] noun common rec 1 link 1 | EXISTS: 3685 [] noun common rec 1 flags - region -
+
+T angle_words | angle words
+58110 | right [angle] adjective common rec 1 link 1 | EXISTS: 41566 [] noun common rec 2 flags - region -
+58111 | reflex [angle] adjective common rec 3 link 2 | NEW (reflex angle or angle reflex)
+58112 | straight [angle] adjective common rec 1 link 2 | NEW (straight angle or angle straight)
+58116 | vertical [angle] adjective common rec 2 link 4 | NEW (vertical angle or angle vertical)
+58118 | alternate [angle] adjective common rec 3 link 4 | NEW (alternate angle or angle alternate)
+58119 | interior [angle] adjective common rec 3 link 4 | NEW (interior angle or angle interior)
+58120 | exterior [angle] adjective common rec 3 link 4 | NEW (exterior angle or angle exterior)
+58127 | oblique [angle] adjective common rec 4 link 5 | NEW (oblique angle or angle oblique)
+
+T famous_car_models | famous car models
+59028 | Panda [car] noun proper rec 3 link 4 | EXISTS: 49253 [UK term] noun common rec 4 flags - region UK
+
+T sausages | sausages
+62541 | Cumberland [sausage] noun common rec 3 link 2 | EXISTS: 17750 [] noun common rec 3 flags - region UK
+
+T famous_castles | famous castles
+62585 | Himeji [castle] noun place rec 4 link 3 | EXISTS: 2389 [] noun place rec 5 flags - region -
+
+T famous_squares | famous squares
+62593 | Trafalgar [square] noun place rec 2 link 1 | EXISTS: 37216 [] noun place rec 2 flags - region -
+
+T cords_and_strings | cords and strings
+62804 | bungee [cord] noun common rec 2 link 3 | EXISTS: 25522 [] noun common rec 2 flags - region -
+
+T observatory | observatory
+62952 | Griffith [observatory] noun place rec 4 link 3 | EXISTS: 37734 [] noun place rec 4 flags - region -
+
+T salads | salads
+62971 | Olivier [salad] noun common rec 5 link 5 | EXISTS: 19008 [] noun common rec 5 flags - region -
+
+T teas | teas
+63373 | bubble [tea] adjective common rec 2 link 2 | EXISTS: 19499 [] noun common rec 2 flags - region -
+63374 | herbal [tea] adjective common rec 1 link 1 | EXISTS: 15564 [] noun common rec 1 flags - region -
+63375 | black [tea] adjective common rec 1 link 1 | EXISTS: 19492 [] noun common rec 1 flags - region -
+63376 | green [tea] adjective common rec 1 link 1 | EXISTS: 16741 [] noun common rec 1 flags - region -
+63537 | white [tea] noun common rec 3 link 2 | EXISTS: 19503 [] noun common rec 3 flags - region -
+
+T ducks | ducks
+63601 | harlequin [duck] noun common rec 4 link 4 | EXISTS: 9862 [] noun common rec 4 flags - region -
+63602 | mandarin [duck] noun common rec 3 link 2 | EXISTS: 8224 [] noun common rec 3 flags - region -
+63603 | muscovy [duck] noun common rec 4 link 3 | EXISTS: 1483 [] noun common rec 4 flags - region -
+63605 | ruddy [duck] noun common rec 4 link 4 | EXISTS: 50669 [] noun common rec 4 flags - region -
+
+T geese_and_swans | geese and swans
+63606 | black [swan] noun common rec 2 link 2 | EXISTS: 8211 [] noun common rec 2 flags - region -
+63607 | mute [swan] noun common rec 3 link 1 | EXISTS: 8210 [] noun common rec 3 flags - region -
+63608 | trumpeter [swan] noun common rec 4 link 3 | EXISTS: 8212 [] noun common rec 4 flags - region -
+
+T pigeons_and_doves | pigeons and doves
+63612 | carrier [pigeon] noun phrase rec 3 link 2 | EXISTS: 4629 [] noun phrase rec 2 flags - region -
+
+T snakes | snakes
+63615 | coral [snake] noun common rec 3 link 3 | EXISTS: 1191 [] noun common rec 4 flags - region -
+63616 | corn [snake] noun common rec 3 link 3 | EXISTS: 8507 [] noun common rec 3 flags - region -
+63617 | garter [snake] noun common rec 2 link 2 | EXISTS: 1192 [] noun common rec 3 flags - region -
+
+T venomous_snakes | venomous snakes
+63615 | coral [snake] noun common rec 3 link 2 | EXISTS: 1191 [] noun common rec 4 flags - region -
+
+T constrictor_snakes | constrictor snakes
+63616 | corn [snake] noun common rec 3 link 3 | EXISTS: 8507 [] noun common rec 3 flags - region -
+
+T tides_and_currents | tides and currents
+63794 | rip [current] noun common rec 3 link 2 | EXISTS: 31122 [] noun common rec 3 flags - region -
+
+T famous_lakes | famous lakes
+63848 | Eyre [lake] noun place rec 5 link 3 | EXISTS: 36837 [] noun place rec 4 flags - region -
+
+T australian_trees | australian trees
+64791 | Gum [tree] noun common rec 4 link 1 | EXISTS: 1642 [] noun common rec 2 flags - region AU
