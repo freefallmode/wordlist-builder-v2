@@ -96,7 +96,7 @@ export function allWordsView() {
   const recOpts = [['', 'any familiarity'], ...[1, 2, 3, 4, 5].map(n => [String(n), 'familiarity ' + n]), ['0', 'unrated']];
   const flagBadges = e => flagList(e).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase()))
     .concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
-  const aliasCell = e => { const as = aliasesOf.get(e.id) || []; return as.length ? h('span', { title: as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ')' : '')).join(', ') }, as.map(a => a.text).join(', ')) : ''; };
+  const aliasCell = e => { const as = aliasesOf.get(e.id) || []; return as.length ? h('span', { title: as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ')' : '')).join(', ') }, as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ' alias)' : '')).join(', ')) : ''; };
   const themesCell = e => { const n = themeNames(P, e); return n.length ? n.slice(0, 3).join(', ') + (n.length > 3 ? ` +${n.length - 3}` : '') : h('span.hint', '(none)'); };
 
   const pager = () => h('div.pager', {}, h('button', { disabled: S.page === 0, onclick: () => { S.page--; A.render(); } }, '‹ Prev'),
@@ -116,7 +116,7 @@ export function allWordsView() {
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.text),
-        h('td.dim', e.gloss || ''), h('td.dim', aliasCell(e)), h('td.dim', rootOf(e) ? `${rootOf(e).text}${e.aliasKind ? ' · ' + e.aliasKind : ''}` : ''),
+        h('td.dim', e.gloss || ''), h('td.dim', aliasCell(e)), h('td.dim', rootOf(e) ? `${rootOf(e).text}${e.aliasKind ? ' (' + e.aliasKind + ' alias)' : ''}` : ''),
         h('td.dim', themesCell(e)), h('td.dim', e.pos), h('td.dim', e.type), h('td', e.rec || h('span.hint', '?')),
         h('td', flagBadges(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·')))) :
         h('tr', h('td', { colspan: 11, class: 'hint' }, 'No words match.')))),
