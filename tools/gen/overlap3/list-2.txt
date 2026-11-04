@@ -1,0 +1,891 @@
+298 | theme pancakes_of_the_world "pancakes of the world"
+   SHORT 19117 "crepe" [pancake] noun common rec 2 link 1
+   LONG  19269 "mille crepe" noun common rec 4 link 4
+299 | theme burger_toppings "burger toppings"
+   SHORT 393 "onion" [bulb vegetable] noun common rec 1 link 1
+   LONG  19287 "grilled onion" noun common rec 2 link 2
+300 | theme burger_toppings "burger toppings"
+   SHORT 393 "onion" [bulb vegetable] noun common rec 1 link 1
+   LONG  19289 "onion ring" noun common rec 2 link 3
+301 | theme burger_toppings "burger toppings"
+   SHORT 393 "onion" [bulb vegetable] noun common rec 1 link 1
+   LONG  19291 "caramelized onion" noun common rec 3 link 3
+302 | theme burger_toppings "burger toppings"
+   SHORT 515 "cheese" [dairy food] noun common rec 1 link 1
+   LONG  17920 "swiss cheese" [cheese] noun common rec 1 link 3
+303 | theme burger_toppings "burger toppings"
+   SHORT 515 "cheese" [dairy food] noun common rec 1 link 1
+   LONG  17929 "blue cheese" [cheese] noun common rec 1 link 4
+304 | theme burger_toppings "burger toppings"
+   SHORT 515 "cheese" [dairy food] noun common rec 1 link 1
+   LONG  17942 "american cheese" noun common rec 1 link 1
+305 | theme italian_food "italian food"
+   SHORT 655 "spaghetti" [long pasta] noun common rec 1 link 1
+   LONG  18517 "spaghetti carbonara" noun common rec 2 link 3
+306 | theme british_food "british food" (note: fish and chips, sunday roast, toad in the hole, scotch egg, crumpets)
+   SHORT 53303 "scones" noun common rec 2 link 2
+   LONG  59650 "tattie scones" noun common rec 4 link 5
+307 | theme turkish_food "turkish food"
+   SHORT 813 "kebab" noun common rec 1 link 1
+   LONG  17876 "shish kebab" noun common rec 3 link 2
+308 | theme turkish_food "turkish food"
+   SHORT 813 "kebab" noun common rec 1 link 1
+   LONG  19124 "doner kebab" noun common rec 3 link 1
+309 | theme turkish_food "turkish food"
+   SHORT 813 "kebab" noun common rec 1 link 1
+   LONG  19304 "adana kebab" noun common rec 4 link 3
+310 | theme turkish_breakfast "turkish breakfast" (note: simit, menemen, sucuk, beyaz peynir, kaymak, gözleme, çay)
+   SHORT 19315 "kaymak" noun common rec 5 link 3
+   LONG  53373 "bal kaymak" noun common rec 5 link 4
+311 | theme meze "meze" (note: small shared plates: hummus, tabbouleh, dolma, muhammara, falafel)
+   SHORT 19297 "dolma" noun common rec 3 link 2
+   LONG  59704 "midye dolma" noun common rec 5 link 5
+312 | theme meze "meze" (note: small shared plates: hummus, tabbouleh, dolma, muhammara, falafel)
+   SHORT 19297 "dolma" noun common rec 3 link 2
+   LONG  59709 "yalancı dolma" noun common rec 5 link 5
+313 | theme persian_food "persian food" (note: tahdig, ghormeh sabzi, fesenjan, koobideh, ash reshteh)
+   SHORT 59712 "kashk" noun common rec 5 link 5
+   LONG  53419 "kashk-e bademjan" noun common rec 5 link 3
+314 | theme west_african_food "west african food" (note: jollof rice, fufu, egusi, suya, banku, puff-puff, moi moi)
+   SHORT 369 "plantain" [fruit] noun common rec 3 link 3
+   LONG  53467 "fried plantain" noun common rec 3 link 2
+315 | theme east_african_food "east african food" (note: injera, ugali, nyama choma, sukuma wiki, mandazi, kitfo)
+   SHORT 18064 "injera" noun common rec 4 link 1
+   LONG  53490 "injera firfir" noun common rec 5 link 5
+316 | theme asian_food "asian food"
+   SHORT 19371 "tofu" noun common rec 1 link 3
+   LONG  19377 "mapo tofu" noun common rec 3 link 3
+317 | theme indian_food "indian food"
+   SHORT 254 "paneer" noun common rec 3 link 2
+   LONG  53512 "saag paneer" noun common rec 3 link 2
+318 | theme indian_food "indian food"
+   SHORT 19381 "dal" noun common rec 3 link 2
+   LONG  53522 "tadka dal" noun common rec 4 link 3
+319 | theme indian_food "indian food"
+   SHORT 19381 "dal" noun common rec 3 link 2
+   LONG  59775 "dal baati churma" noun common rec 5 link 5
+320 | theme indian_food "indian food"
+   SHORT 53513 "bhaji" noun common rec 3 link 3
+   LONG  53516 "pav bhaji" noun common rec 4 link 3
+321 | theme street_snacks "indian street snacks"
+   SHORT 53513 "bhaji" noun common rec 3 link 3
+   LONG  53516 "pav bhaji" noun common rec 4 link 3
+322 | theme japanese_sweets "japanese sweets"
+   SHORT 18665 "dango" noun common rec 4 link 1
+   LONG  53557 "mitarashi dango" noun common rec 5 link 3
+323 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 53559 "nigiri" noun common rec 3 link 1
+   LONG  59792 "tamago nigiri" noun common rec 3 link 2
+324 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 53560 "maki" noun common rec 3 link 1
+   LONG  53575 "tekka maki" noun common rec 5 link 3
+325 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 53560 "maki" noun common rec 3 link 1
+   LONG  59788 "kappa maki" noun common rec 3 link 3
+326 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 64778 "roll" (full: sushi roll) noun common rec 1 link 1
+   LONG  19448 "california roll" noun common rec 2 link 1
+327 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 64778 "roll" (full: sushi roll) noun common rec 1 link 1
+   LONG  53565 "hand roll" noun common rec 3 link 2
+328 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 64778 "roll" (full: sushi roll) noun common rec 1 link 1
+   LONG  53571 "spicy tuna roll" noun common rec 2 link 2
+329 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 64778 "roll" (full: sushi roll) noun common rec 1 link 1
+   LONG  53572 "dragon roll" noun common rec 3 link 2
+330 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 64778 "roll" (full: sushi roll) noun common rec 1 link 1
+   LONG  53573 "rainbow roll" noun common rec 3 link 2
+331 | theme sushi_types "sushi types" (note: nigiri, maki, sashimi, temaki, uramaki, chirashi, inari)
+   SHORT 64778 "roll" (full: sushi roll) noun common rec 1 link 1
+   LONG  53574 "philadelphia roll" noun common rec 3 link 3
+332 | theme korean_food "korean food" (note: kimchi, bibimbap, bulgogi, tteokbokki, japchae, kimbap)
+   SHORT 845 "kimchi" noun common rec 3 link 1
+   LONG  53582 "kimchi jjigae" noun common rec 5 link 3
+333 | theme thai_food "thai food"
+   SHORT 18577 "sticky rice" noun common rec 2 link 2
+   LONG  53599 "mango sticky rice" noun common rec 3 link 1
+334 | theme filipino_food "filipino food" (note: adobo, sinigang, lechon, lumpia, pancit, sisig, kare-kare)
+   SHORT 18301 "ube" noun common rec 5 link 2
+   LONG  53631 "ube halaya" noun common rec 5 link 3
+335 | theme south_american_drinks "south american drinks" (note: non-alcoholic: mate, chicha morada, Inca Kola, guaraná)
+   SHORT 17668 "chicha" noun common rec 5 link 2
+   LONG  53677 "chicha morada" noun common rec 5 link 1
+336 | theme south_american_drinks "south american drinks" (note: non-alcoholic: mate, chicha morada, Inca Kola, guaraná)
+   SHORT 19416 "mate" [drink] noun common rec 3 link 1
+   LONG  53727 "mate de coca" noun common rec 5 link 3
+337 | theme southern_food "southern food" (note: US South: grits, fried chicken, hush puppies, collard greens, biscuits)
+   SHORT 692 "grits" noun common rec 3 link 1
+   LONG  17855 "shrimp and grits" noun common rec 4 link 2
+338 | theme drinks "drinks"
+   SHORT 225 "tea" [drink] noun common rec 1 link 1
+   LONG  866 "iced tea" noun common rec 1 link 1
+339 | theme drinks "drinks"
+   SHORT 861 "water" [liquid] noun common rec 1 link 1
+   LONG  879 "sparkling water" noun common rec 1 link 2
+340 | theme drinks "drinks"
+   SHORT 861 "water" [liquid] noun common rec 1 link 1
+   LONG  882 "mineral water" noun common rec 2 link 2
+341 | theme drinks "drinks"
+   SHORT 861 "water" [liquid] noun common rec 1 link 1
+   LONG  883 "tonic water" noun common rec 2 link 2
+342 | theme drinks "drinks"
+   SHORT 861 "water" [liquid] noun common rec 1 link 1
+   LONG  885 "coconut water" noun common rec 2 link 3
+343 | theme drinks "drinks"
+   SHORT 874 "beer" noun common rec 1 link 1
+   LONG  888 "root beer" noun common rec 2 link 2
+344 | theme hot_drinks "hot drinks"
+   SHORT 225 "tea" [drink] noun common rec 1 link 1
+   LONG  15564 "herbal tea" noun common rec 1 link 1
+345 | theme hot_drinks "hot drinks"
+   SHORT 225 "tea" [drink] noun common rec 1 link 1
+   LONG  16741 "green tea" noun common rec 1 link 1
+346 | theme hot_drinks "hot drinks"
+   SHORT 225 "tea" [drink] noun common rec 1 link 1
+   LONG  19461 "peppermint tea" noun common rec 1 link 2
+347 | theme hot_drinks "hot drinks"
+   SHORT 225 "tea" [drink] noun common rec 1 link 1
+   LONG  19481 "butter tea" noun common rec 4 link 3
+348 | theme hot_drinks "hot drinks"
+   SHORT 226 "coffee" [drink] noun common rec 1 link 1
+   LONG  19296 "turkish coffee" noun common rec 2 link 2
+349 | theme hot_drinks "hot drinks"
+   SHORT 226 "coffee" [drink] noun common rec 1 link 1
+   LONG  19462 "instant coffee" noun common rec 1 link 2
+350 | theme hot_drinks "hot drinks"
+   SHORT 226 "coffee" [drink] noun common rec 1 link 1
+   LONG  19465 "filter coffee" noun common rec 2 link 2
+351 | theme hot_drinks "hot drinks"
+   SHORT 226 "coffee" [drink] noun common rec 1 link 1
+   LONG  19466 "drip coffee" noun common rec 2 link 2
+352 | theme hot_drinks "hot drinks"
+   SHORT 226 "coffee" [drink] noun common rec 1 link 1
+   LONG  19469 "irish coffee" noun common rec 2 link 2
+353 | theme hot_drinks "hot drinks"
+   SHORT 229 "latte" noun common rec 1 link 1
+   LONG  19464 "chai latte" noun common rec 2 link 2
+354 | theme hot_drinks "hot drinks"
+   SHORT 233 "chai" noun common rec 2 link 1
+   LONG  19464 "chai latte" noun common rec 2 link 2
+355 | theme hot_drinks "hot drinks"
+   SHORT 514 "milk" [drink] noun common rec 1 link 2
+   LONG  19482 "golden milk" noun common rec 4 link 3
+356 | theme hot_drinks "hot drinks"
+   SHORT 19467 "cider" (full: hot cider) noun common rec 2 link 2
+   LONG  19470 "mulled cider" noun common rec 3 link 3
+357 | theme coffee_drinks "coffee drinks"
+   SHORT 64779 "black" (full: black coffee) [drink] noun common rec 1 link 1
+   LONG  19480 "long black" noun common rec 4 link 2
+358 | theme coffee_words "coffee words" (note: bean, roast, grind, barista, crema, arabica, robusta, decaf, moka pot)
+   SHORT 53778 "grinder" [coffee] noun common rec 2 link 1
+   LONG  53784 "burr grinder" noun common rec 4 link 2
+359 | theme soft_drinks "soft drinks"
+   SHORT 865 "cola" noun common rec 1 link 1
+   LONG  19534 "diet cola" noun common rec 1 link 1
+360 | theme soft_drinks "soft drinks"
+   SHORT 865 "cola" noun common rec 1 link 1
+   LONG  19536 "cherry cola" noun common rec 2 link 2
+361 | theme soda_flavors "soda flavors"
+   SHORT 75 "lime" [fruit] noun common rec 1 link 2
+   LONG  53790 "lemon-lime" noun common rec 1 link 1
+362 | theme soda_flavors "soda flavors"
+   SHORT 76 "orange" [fruit] noun common rec 1 link 1
+   LONG  17160 "blood orange" noun common rec 2 link 4
+363 | theme soda_flavors "soda flavors"
+   SHORT 92 "cherry" [fruit] noun common rec 1 link 2
+   LONG  17236 "black cherry" noun common rec 3 link 3
+364 | theme juices "juices"
+   SHORT 87 "apple" [fruit] noun common rec 1 link 1
+   LONG  19571 "apple cider" noun common rec 3 link 3
+365 | theme asian_drinks "asian drinks" (note: non-alcoholic: bubble tea, matcha, lassi, chai, thai iced tea, teh tarik)
+   SHORT 899 "lassi" noun common rec 3 link 3
+   LONG  19587 "mango lassi" noun common rec 3 link 3
+366 | theme asian_drinks "asian drinks" (note: non-alcoholic: bubble tea, matcha, lassi, chai, thai iced tea, teh tarik)
+   SHORT 19501 "milk tea" noun common rec 2 link 3
+   LONG  19597 "Hong Kong milk tea" noun common rec 4 link 3
+367 | theme cocktails "cocktails"
+   SHORT 19607 "martini" noun common rec 1 link 1
+   LONG  19621 "espresso martini" noun common rec 2 link 2
+368 | theme beers "beers"
+   SHORT 19685 "ale" [beer] noun common rec 2 link 2
+   LONG  19688 "pale ale" noun common rec 2 link 2
+369 | theme beers "beers"
+   SHORT 19685 "ale" [beer] noun common rec 2 link 2
+   LONG  19703 "amber ale" noun common rec 3 link 4
+370 | theme beers "beers"
+   SHORT 19685 "ale" [beer] noun common rec 2 link 2
+   LONG  19704 "brown ale" noun common rec 3 link 4
+371 | theme beers "beers"
+   SHORT 19685 "ale" [beer] noun common rec 2 link 2
+   LONG  19707 "real ale" noun common rec 3 link 4
+372 | theme spirits "spirits"
+   SHORT 878 "rum" [drink] noun common rec 1 link 1
+   LONG  19736 "white rum" noun common rec 2 link 3
+373 | theme spirits "spirits"
+   SHORT 878 "rum" [drink] noun common rec 1 link 1
+   LONG  19737 "dark rum" noun common rec 2 link 3
+374 | theme spirits "spirits"
+   SHORT 878 "rum" [drink] noun common rec 1 link 1
+   LONG  19738 "spiced rum" noun common rec 2 link 3
+375 | theme spirits "spirits"
+   SHORT 891 "whisky" noun common rec 2 link 1
+   LONG  19730 "Scotch whisky" noun common rec 2 link 2
+376 | theme cooking "cooking"
+   SHORT 916 "chef" [cook] noun common rec 1 link 2
+   LONG  944 "sous chef" noun common rec 3 link 3
+377 | theme cooking_methods "cooking methods"
+   SHORT 919 "fry" [cook] verb common rec 1 link 1
+   LONG  19768 "stir-fry" [cook] verb common rec 2 link 2
+378 | theme cooking_methods "cooking methods"
+   SHORT 919 "fry" [cook] verb common rec 1 link 1
+   LONG  19769 "deep-fry" verb common rec 2 link 2
+379 | theme cooking_methods "cooking methods"
+   SHORT 919 "fry" [cook] verb common rec 1 link 1
+   LONG  19770 "pan-fry" verb common rec 2 link 2
+380 | theme cooking_methods "cooking methods"
+   SHORT 919 "fry" [cook] verb common rec 1 link 1
+   LONG  19773 "air fry" verb common rec 2 link 3
+381 | theme cooking_methods "cooking methods"
+   SHORT 920 "roast" [cooking] verb common rec 1 link 1
+   LONG  19780 "pot roast" [cook] verb common rec 3 link 3
+382 | theme cooking_methods "cooking methods"
+   SHORT 920 "roast" [cooking] verb common rec 1 link 1
+   LONG  19782 "spit-roast" verb common rec 4 link 4
+383 | theme cookware "cookware"
+   SHORT 19810 "pot" [cookware] noun common rec 1 link 1
+   LONG  4751 "Crock-Pot" [slow cooker] noun org rec 3 link 3
+384 | theme cookware "cookware"
+   SHORT 19810 "pot" [cookware] noun common rec 1 link 1
+   LONG  4753 "Instant Pot" [electric multicooker] noun org rec 3 link 3
+385 | theme kitchen_utensils "kitchen utensils"
+   SHORT 19839 "spatula" noun common rec 1 link 1
+   LONG  19881 "offset spatula" noun common rec 5 link 5
+386 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19885 "salt" [preserve] verb common rec 1 link 1
+   LONG  19901 "salt-cure" verb common rec 3 link 3
+387 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19888 "freeze" [preserve] verb common rec 1 link 1
+   LONG  19897 "freeze-dry" verb common rec 3 link 3
+388 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19889 "dry" [food] verb common rec 1 link 2
+   LONG  19896 "sun-dry" verb common rec 3 link 3
+389 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19889 "dry" [food] verb common rec 1 link 2
+   LONG  19897 "freeze-dry" verb common rec 3 link 3
+390 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19889 "dry" [food] verb common rec 1 link 2
+   LONG  19900 "air-dry" verb common rec 3 link 4
+391 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19889 "dry" [food] verb common rec 1 link 2
+   LONG  19903 "dry-age" verb common rec 4 link 5
+392 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19890 "cure" [food] verb common rec 3 link 2
+   LONG  19901 "salt-cure" verb common rec 3 link 3
+393 | theme ways_to_preserve_food "ways to preserve food" (note: smoking, salting, pickling, canning, freezing, drying, curing, fermenting)
+   SHORT 19891 "ferment" verb common rec 3 link 3
+   LONG  19907 "lacto-ferment" verb common rec 5 link 4
+394 | theme in_the_pantry "in the pantry"
+   SHORT 563 "flour" noun common rec 1 link 1
+   LONG  18223 "self-rising flour" noun common rec 2 link 3
+395 | theme lunchbox "lunchbox"
+   SHORT 796 "sandwich" noun common rec 1 link 1
+   LONG  19010 "ham sandwich" noun common rec 1 link 2
+396 | theme lunchbox "lunchbox"
+   SHORT 796 "sandwich" noun common rec 1 link 1
+   LONG  19925 "sandwich bag" noun common rec 2 link 2
+397 | theme recipe_amounts "recipe amounts"
+   SHORT 41762 "ounce" [unit] noun common rec 1 link 2
+   LONG  19967 "fluid ounce" noun common rec 3 link 4
+398 | theme restaurant_words "restaurant words"
+   SHORT 20017 "table" [restaurant] noun common rec 1 link 2
+   LONG  20041 "table d'hôte" noun phrase rec 5 link 5
+399 | theme restaurant_words "restaurant words"
+   SHORT 26281 "menu" [restaurant] noun common rec 1 link 1
+   LONG  20022 "kids menu" noun common rec 2 link 3
+400 | theme restaurant_words "restaurant words"
+   SHORT 26281 "menu" [restaurant] noun common rec 1 link 1
+   LONG  20031 "tasting menu" noun common rec 3 link 3
+401 | theme courses_of_a_meal "courses of a meal" (note: appetizer, starter, entrée, main, side, dessert, amuse-bouche, digestif)
+   SHORT 20083 "dessert" [sweet course] noun common rec 1 link 1
+   LONG  20107 "pre-dessert" noun common rec 5 link 5
+402 | theme meals_of_the_day "meals of the day" (note: breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea)
+   SHORT 20109 "breakfast" noun common rec 1 link 1
+   LONG  20126 "second breakfast" noun common rec 4 link 5
+403 | theme meals_of_the_day "meals of the day" (note: breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea)
+   SHORT 20115 "snack" [meal] noun common rec 1 link 3
+   LONG  20118 "midnight snack" noun common rec 2 link 4
+404 | theme meals_of_the_day "meals of the day" (note: breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea)
+   SHORT 20117 "tea" [meal] noun common rec 2 link 2
+   LONG  20116 "afternoon tea" noun common rec 2 link 2
+405 | theme meals_of_the_day "meals of the day" (note: breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea)
+   SHORT 20117 "tea" [meal] noun common rec 2 link 2
+   LONG  20120 "high tea" noun common rec 3 link 3
+406 | theme meals_of_the_day "meals of the day" (note: breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea)
+   SHORT 20117 "tea" [meal] noun common rec 2 link 2
+   LONG  20121 "cream tea" noun common rec 3 link 4
+407 | theme meals_of_the_day "meals of the day" (note: breakfast, brunch, lunch, dinner, supper, elevenses, afternoon tea)
+   SHORT 20117 "tea" [meal] noun common rec 2 link 2
+   LONG  20125 "morning tea" noun common rec 3 link 3
+408 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 19926 "napkin" noun common rec 1 link 1
+   LONG  20158 "napkin ring" noun common rec 3 link 3
+409 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20135 "knife" [cutlery] noun common rec 1 link 1
+   LONG  20154 "butter knife" noun common rec 3 link 3
+410 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20135 "knife" [cutlery] noun common rec 1 link 1
+   LONG  20155 "steak knife" noun common rec 3 link 3
+411 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20135 "knife" [cutlery] noun common rec 1 link 1
+   LONG  20165 "fish knife" noun common rec 4 link 4
+412 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20135 "knife" [cutlery] noun common rec 1 link 1
+   LONG  20170 "knife rest" noun common rec 5 link 5
+413 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20136 "spoon" [cutlery] noun common rec 1 link 1
+   LONG  20143 "soup spoon" noun common rec 2 link 2
+414 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20136 "spoon" [cutlery] noun common rec 1 link 1
+   LONG  20153 "dessert spoon" noun common rec 3 link 3
+415 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20137 "plate" [dinner dish] noun common rec 1 link 1
+   LONG  20156 "bread plate" noun common rec 3 link 3
+416 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20137 "plate" [dinner dish] noun common rec 1 link 1
+   LONG  20157 "salad plate" noun common rec 3 link 3
+417 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20138 "bowl" [dish] noun common rec 1 link 3
+   LONG  20167 "finger bowl" noun common rec 4 link 4
+418 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20139 "glass" [drinking] noun common rec 1 link 2
+   LONG  20141 "wine glass" noun common rec 2 link 1
+419 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 20139 "glass" [drinking] noun common rec 1 link 2
+   LONG  20142 "water glass" noun common rec 2 link 2
+420 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 40192 "fork" [cutlery] noun common rec 1 link 1
+   LONG  20151 "dinner fork" noun common rec 3 link 2
+421 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 40192 "fork" [cutlery] noun common rec 1 link 1
+   LONG  20152 "salad fork" noun common rec 3 link 2
+422 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 40192 "fork" [cutlery] noun common rec 1 link 1
+   LONG  20166 "cake fork" noun common rec 4 link 4
+423 | theme table_setting "table setting" (note: fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring)
+   SHORT 40192 "fork" [cutlery] noun common rec 1 link 1
+   LONG  20169 "oyster fork" noun common rec 5 link 5
+424 | theme diner "diner"
+   SHORT 524 "milkshake" noun common rec 1 link 2
+   LONG  20183 "malted milkshake" noun common rec 4 link 4
+425 | theme ice_cream_parlor "ice cream parlor"
+   SHORT 20198 "cone" [ice cream] noun common rec 1 link 1
+   LONG  20201 "waffle cone" noun common rec 2 link 2
+426 | theme ice_cream_parlor "ice cream parlor"
+   SHORT 20198 "cone" [ice cream] noun common rec 1 link 1
+   LONG  20203 "sugar cone" noun common rec 3 link 3
+427 | theme foods_on_a_stick "foods on a stick" (note: kebab, corn dog, lollipop, popsicle, satay, candy apple, yakitori)
+   SHORT 813 "kebab" noun common rec 1 link 1
+   LONG  17876 "shish kebab" noun common rec 3 link 1
+428 | theme foods_on_a_stick "foods on a stick" (note: kebab, corn dog, lollipop, popsicle, satay, candy apple, yakitori)
+   SHORT 813 "kebab" noun common rec 1 link 1
+   LONG  20249 "fruit kebab" noun common rec 3 link 3
+429 | theme foods_with_shells "foods with shells" (note: eaten from or with a shell: egg, pistachio, crab, oyster, coconut, peanut)
+   SHORT 478 "clam" noun common rec 2 link 2
+   LONG  8881 "razor clam" noun common rec 3 link 4
+430 | theme foods_with_shells "foods with shells" (note: eaten from or with a shell: egg, pistachio, crab, oyster, coconut, peanut)
+   SHORT 518 "egg" [food from hens] noun common rec 1 link 1
+   LONG  20263 "duck egg" [egg] noun common rec 2 link 4
+431 | theme foods_with_shells "foods with shells" (note: eaten from or with a shell: egg, pistachio, crab, oyster, coconut, peanut)
+   SHORT 518 "egg" [food from hens] noun common rec 1 link 1
+   LONG  20264 "quail egg" noun common rec 3 link 3
+432 | theme foods_named_after_people "foods named after people" (note: name comes from a person: beef wellington, eggs benedict, pavlova, nachos)
+   SHORT 796 "sandwich" noun common rec 1 link 2
+   LONG  20268 "Reuben sandwich" noun common rec 3 link 3
+433 | theme foods_you_peel "foods you peel"
+   SHORT 392 "potato" [vegetable] noun common rec 1 link 3
+   LONG  402 "sweet potato" [vegetable] noun common rec 1 link 3
+434 | theme canned_foods "canned foods"
+   SHORT 406 "corn" [vegetable] noun common rec 1 link 1
+   LONG  20312 "creamed corn" noun common rec 3 link 3
+435 | theme canned_foods "canned foods"
+   SHORT 17785 "corned beef" noun common rec 2 link 1
+   LONG  20319 "corned beef hash" noun common rec 4 link 3
+436 | theme egg_dishes "egg dishes"
+   SHORT 63443 "fried" noun common rec 1 link 1
+   LONG  17993 "egg fried rice" noun common rec 2 link 4
+437 | theme egg_dishes "egg dishes"
+   SHORT 64701 "boiled" (full: boiled egg) noun common rec 1 link 1
+   LONG  64706 "soft-boiled" (full: soft-boiled egg) noun common rec 2 link 2
+438 | theme ways_to_cook_eggs "ways to cook eggs" (note: styles of cooked egg: boiled, fried, scrambled)
+   SHORT 66179 "boiled" noun common rec 1 link 1
+   LONG  13177 "hard-boiled" adjective common rec 4 link 2
+439 | theme ways_to_cook_eggs "ways to cook eggs" (note: styles of cooked egg: boiled, fried, scrambled)
+   SHORT 66179 "boiled" noun common rec 1 link 1
+   LONG  66181 "soft-boiled" noun common rec 1 link 3
+440 | theme mammals "mammals"
+   SHORT 994 "bear" [animal] noun common rec 1 link 1
+   LONG  999 "koala bear" noun common rec 2 link 3
+441 | theme mammals "mammals"
+   SHORT 1018 "anteater" noun common rec 2 link 3
+   LONG  9909 "spiny anteater" noun common rec 4 link 5
+442 | theme big_cats "big cats"
+   SHORT 215 "lion" noun common rec 1 link 1
+   LONG  222 "mountain lion" noun common rec 3 link 2
+443 | theme big_cats "big cats"
+   SHORT 215 "lion" noun common rec 1 link 1
+   LONG  7754 "African lion" noun proper rec 2 link 2
+444 | theme big_cats "big cats"
+   SHORT 215 "lion" noun common rec 1 link 1
+   LONG  7755 "Asiatic lion" noun proper rec 4 link 4
+445 | theme big_cats "big cats"
+   SHORT 215 "lion" noun common rec 1 link 1
+   LONG  7760 "Barbary lion" noun proper rec 5 link 5
+446 | theme big_cats "big cats"
+   SHORT 215 "lion" noun common rec 1 link 1
+   LONG  7761 "white lion" noun common rec 3 link 3
+447 | theme big_cats "big cats"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7750 "Bengal tiger" noun proper rec 2 link 2
+448 | theme big_cats "big cats"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7751 "Siberian tiger" noun proper rec 2 link 3
+449 | theme big_cats "big cats"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7752 "Amur tiger" noun proper rec 4 link 4
+450 | theme big_cats "big cats"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7753 "white tiger" noun common rec 2 link 2
+451 | theme big_cats "big cats"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7759 "Sumatran tiger" noun proper rec 3 link 3
+452 | theme big_cats "big cats"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7768 "Indochinese tiger" noun proper rec 5 link 5
+453 | theme big_cats "big cats"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7769 "Malayan tiger" noun proper rec 4 link 4
+454 | theme big_cats "big cats"
+   SHORT 217 "leopard" [big cat] noun common rec 1 link 1
+   LONG  223 "snow leopard" noun common rec 2 link 2
+455 | theme big_cats "big cats"
+   SHORT 217 "leopard" [big cat] noun common rec 1 link 1
+   LONG  224 "clouded leopard" noun common rec 4 link 3
+456 | theme big_cats "big cats"
+   SHORT 217 "leopard" [big cat] noun common rec 1 link 1
+   LONG  7764 "Persian leopard" noun proper rec 5 link 5
+457 | theme big_cats "big cats"
+   SHORT 217 "leopard" [big cat] noun common rec 1 link 1
+   LONG  7765 "Sunda clouded leopard" noun proper rec 5 link 5
+458 | theme big_cats "big cats"
+   SHORT 217 "leopard" [big cat] noun common rec 1 link 1
+   LONG  7770 "Amur leopard" noun proper rec 4 link 4
+459 | theme big_cats "big cats"
+   SHORT 224 "clouded leopard" noun common rec 4 link 3
+   LONG  7765 "Sunda clouded leopard" noun proper rec 5 link 5
+460 | theme big_cats "big cats"
+   SHORT 7749 "panther" [animal] noun common rec 2 link 2
+   LONG  7748 "black panther" [cat] noun common rec 2 link 2
+461 | theme small_wild_cats "small wild cats"
+   SHORT 1039 "lynx" [cat] noun common rec 3 link 1
+   LONG  7782 "Eurasian lynx" noun proper rec 4 link 3
+462 | theme small_wild_cats "small wild cats"
+   SHORT 1039 "lynx" [cat] noun common rec 3 link 1
+   LONG  7783 "Canada lynx" noun proper rec 3 link 2
+463 | theme small_wild_cats "small wild cats"
+   SHORT 1039 "lynx" [cat] noun common rec 3 link 1
+   LONG  7784 "Iberian lynx" noun proper rec 4 link 3
+464 | theme small_wild_cats "small wild cats"
+   SHORT 7771 "wildcat" noun common rec 2 link 1
+   LONG  7797 "European wildcat" noun proper rec 4 link 3
+465 | theme small_wild_cats "small wild cats"
+   SHORT 7771 "wildcat" noun common rec 2 link 1
+   LONG  7798 "Scottish wildcat" noun proper rec 4 link 3
+466 | theme small_wild_cats "small wild cats"
+   SHORT 7771 "wildcat" noun common rec 2 link 1
+   LONG  7799 "African wildcat" noun proper rec 4 link 3
+467 | theme small_wild_cats "small wild cats"
+   SHORT 7793 "bay cat" noun common rec 5 link 5
+   LONG  7801 "Bornean bay cat" noun proper rec 5 link 5
+468 | theme primates "primates"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  7811 "howler monkey" noun common rec 3 link 3
+469 | theme primates "primates"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  7812 "spider monkey" noun common rec 2 link 2
+470 | theme primates "primates"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  7813 "squirrel monkey" noun common rec 3 link 3
+471 | theme primates "primates"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  7814 "rhesus monkey" noun common rec 3 link 3
+472 | theme primates "primates"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  7815 "proboscis monkey" noun common rec 4 link 3
+473 | theme primates "primates"
+   SHORT 983 "gorilla" noun common rec 1 link 1
+   LONG  7823 "mountain gorilla" noun common rec 3 link 3
+474 | theme primates "primates"
+   SHORT 1022 "lemur" noun common rec 2 link 2
+   LONG  7829 "ring-tailed lemur" noun common rec 3 link 2
+475 | theme primates "primates"
+   SHORT 7804 "ape" [animal] noun common rec 1 link 1
+   LONG  7832 "Barbary ape" noun proper rec 4 link 4
+476 | theme primates "primates"
+   SHORT 7806 "macaque" noun common rec 3 link 3
+   LONG  7831 "Barbary macaque" noun proper rec 4 link 4
+477 | theme primates "primates"
+   SHORT 7809 "tamarin" noun common rec 4 link 3
+   LONG  7830 "golden lion tamarin" noun common rec 5 link 4
+478 | theme primates "primates"
+   SHORT 7818 "loris" noun common rec 4 link 4
+   LONG  7819 "slow loris" noun common rec 4 link 4
+479 | theme monkeys "monkeys"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  50488 "snub-nosed monkey" noun common rec 4 link 4
+480 | theme monkeys "monkeys"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  50493 "woolly monkey" noun common rec 4 link 4
+481 | theme monkeys "monkeys"
+   SHORT 7806 "macaque" noun common rec 3 link 3
+   LONG  7831 "Barbary macaque" noun proper rec 4 link 3
+482 | theme monkeys "monkeys"
+   SHORT 7806 "macaque" noun common rec 3 link 3
+   LONG  50494 "Japanese macaque" noun proper rec 3 link 3
+483 | theme monkeys "monkeys"
+   SHORT 7806 "macaque" noun common rec 3 link 3
+   LONG  51129 "bonnet macaque" noun common rec 5 link 5
+484 | theme monkeys "monkeys"
+   SHORT 7806 "macaque" noun common rec 3 link 3
+   LONG  51131 "lion-tailed macaque" noun common rec 5 link 5
+485 | theme monkeys "monkeys"
+   SHORT 7806 "macaque" noun common rec 3 link 3
+   LONG  51180 "pig-tailed macaque" noun common rec 5 link 5
+486 | theme monkeys "monkeys"
+   SHORT 7808 "marmoset" noun common rec 3 link 2
+   LONG  9790 "pygmy marmoset" noun common rec 4 link 3
+487 | theme monkeys "monkeys"
+   SHORT 7809 "tamarin" noun common rec 4 link 3
+   LONG  7830 "golden lion tamarin" noun common rec 5 link 3
+488 | theme monkeys "monkeys"
+   SHORT 7809 "tamarin" noun common rec 4 link 3
+   LONG  50497 "emperor tamarin" noun common rec 5 link 4
+489 | theme monkeys "monkeys"
+   SHORT 7809 "tamarin" noun common rec 4 link 3
+   LONG  59905 "cotton-top tamarin" noun common rec 4 link 4
+490 | theme monkeys "monkeys"
+   SHORT 7817 "langur" noun common rec 4 link 4
+   LONG  51133 "hanuman langur" noun common rec 5 link 5
+491 | theme monkeys "monkeys"
+   SHORT 7817 "langur" noun common rec 4 link 4
+   LONG  59903 "douc langur" noun common rec 5 link 5
+492 | theme rodents "rodents"
+   SHORT 990 "squirrel" [tree rodent] noun common rec 1 link 1
+   LONG  7854 "flying squirrel" noun common rec 3 link 3
+493 | theme rodents "rodents"
+   SHORT 990 "squirrel" [tree rodent] noun common rec 1 link 1
+   LONG  7855 "red squirrel" noun common rec 2 link 2
+494 | theme rodents "rodents"
+   SHORT 990 "squirrel" [tree rodent] noun common rec 1 link 1
+   LONG  7856 "grey squirrel" noun common rec 2 link 1
+495 | theme rodents "rodents"
+   SHORT 991 "mouse" [animal] noun common rec 1 link 1
+   LONG  7849 "harvest mouse" noun common rec 4 link 4
+496 | theme rodents "rodents"
+   SHORT 991 "mouse" [animal] noun common rec 1 link 1
+   LONG  7850 "field mouse" noun common rec 2 link 3
+497 | theme rodents "rodents"
+   SHORT 991 "mouse" [animal] noun common rec 1 link 1
+   LONG  7851 "house mouse" noun common rec 2 link 1
+498 | theme rodents "rodents"
+   SHORT 991 "mouse" [animal] noun common rec 1 link 1
+   LONG  7865 "wood mouse" noun common rec 4 link 4
+499 | theme rodents "rodents"
+   SHORT 992 "rat" [animal] noun common rec 1 link 1
+   LONG  7852 "brown rat" noun common rec 3 link 2
+500 | theme rodents "rodents"
+   SHORT 992 "rat" [animal] noun common rec 1 link 1
+   LONG  7853 "black rat" noun common rec 3 link 2
+501 | theme rodents "rodents"
+   SHORT 992 "rat" [animal] noun common rec 1 link 1
+   LONG  7858 "kangaroo rat" noun common rec 4 link 4
+502 | theme rodents "rodents"
+   SHORT 992 "rat" [animal] noun common rec 1 link 1
+   LONG  7859 "mole rat" noun common rec 4 link 4
+503 | theme rodents "rodents"
+   SHORT 992 "rat" [animal] noun common rec 1 link 1
+   LONG  7860 "naked mole-rat" noun common rec 4 link 4
+504 | theme rodents "rodents"
+   SHORT 7848 "gopher" [pocket rodent] noun common rec 3 link 3
+   LONG  7864 "pocket gopher" noun common rec 4 link 4
+505 | theme rodents "rodents"
+   SHORT 7859 "mole rat" noun common rec 4 link 4
+   LONG  7860 "naked mole-rat" noun common rec 4 link 4
+506 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 1284 "whale" [animal] noun common rec 1 link 1
+   LONG  7877 "pygmy sperm whale" noun common rec 5 link 5
+507 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 1284 "whale" [animal] noun common rec 1 link 1
+   LONG  7890 "false killer whale" noun common rec 5 link 4
+508 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 1284 "whale" [animal] noun common rec 1 link 1
+   LONG  59910 "melon-headed whale" noun common rec 5 link 5
+509 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 1310 "porpoise" noun common rec 3 link 2
+   LONG  7885 "harbour porpoise" noun common rec 4 link 3
+510 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 1310 "porpoise" noun common rec 3 link 2
+   LONG  59909 "Dall's porpoise" noun proper rec 5 link 5
+511 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 1310 "porpoise" noun common rec 3 link 2
+   LONG  59912 "finless porpoise" noun common rec 5 link 5
+512 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 9857 "dolphin" (full: spotted dolphin) noun common rec 4 link 1
+   LONG  7892 "white-beaked dolphin" noun common rec 5 link 5
+513 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 9857 "dolphin" (full: spotted dolphin) noun common rec 4 link 1
+   LONG  59914 "rough-toothed dolphin" noun common rec 5 link 5
+514 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 64790 "Killer" [orca] noun common rec 4 link 1
+   LONG  7890 "false killer whale" noun common rec 5 link 4
+515 | theme whales_and_dolphins "whales and dolphins"
+   SHORT 65184 "beaked" noun common rec 4 link 4
+   LONG  7892 "white-beaked dolphin" noun common rec 5 link 5
+516 | theme marsupials "marsupials"
+   SHORT 984 "kangaroo" noun common rec 1 link 1
+   LONG  7899 "red kangaroo" noun common rec 2 link 2
+517 | theme marsupials "marsupials"
+   SHORT 984 "kangaroo" noun common rec 1 link 1
+   LONG  7900 "grey kangaroo" noun common rec 3 link 3
+518 | theme marsupials "marsupials"
+   SHORT 984 "kangaroo" noun common rec 1 link 1
+   LONG  7901 "tree kangaroo" noun common rec 3 link 3
+519 | theme marsupials "marsupials"
+   SHORT 984 "kangaroo" noun common rec 1 link 1
+   LONG  7916 "musky rat-kangaroo" noun common rec 5 link 5
+520 | theme marsupials "marsupials"
+   SHORT 1046 "opossum" noun common rec 3 link 3
+   LONG  7914 "Virginia opossum" noun proper rec 4 link 3
+521 | theme marsupials "marsupials"
+   SHORT 1047 "possum" noun common rec 3 link 3
+   LONG  7911 "ringtail possum" noun common rec 4 link 4
+522 | theme marsupials "marsupials"
+   SHORT 1047 "possum" noun common rec 3 link 3
+   LONG  7912 "brushtail possum" noun common rec 3 link 3
+523 | theme marsupials "marsupials"
+   SHORT 1047 "possum" noun common rec 3 link 3
+   LONG  7913 "honey possum" noun common rec 5 link 5
+524 | theme marsupials "marsupials"
+   SHORT 1047 "possum" noun common rec 3 link 3
+   LONG  9940 "gliding possum" noun common rec 4 link 2
+525 | theme marsupials "marsupials"
+   SHORT 7919 "marsupial" noun common rec 2 link 1
+   LONG  7909 "marsupial mole" noun common rec 5 link 5
+526 | theme hoofed_mammals "hoofed mammals"
+   SHORT 151 "sheep" [farm animal] noun common rec 1 link 1
+   LONG  7933 "bighorn sheep" noun common rec 3 link 3
+527 | theme hoofed_mammals "hoofed mammals"
+   SHORT 153 "horse" [animal] noun common rec 1 link 1
+   LONG  9483 "Przewalski's horse" noun proper rec 3 link 4
+528 | theme hoofed_mammals "hoofed mammals"
+   SHORT 154 "goat" [animal] noun common rec 1 link 1
+   LONG  7934 "mountain goat" noun common rec 2 link 3
+529 | theme hoofed_mammals "hoofed mammals"
+   SHORT 159 "ass" [donkey] noun common rec 3 link 4
+   LONG  1534 "wild ass" noun common rec 4 link 5
+530 | theme hoofed_mammals "hoofed mammals"
+   SHORT 1007 "buffalo" [bison] noun common rec 2 link 3
+   LONG  1454 "water buffalo" noun common rec 3 link 3
+531 | theme antelopes "antelopes"
+   SHORT 7923 "gazelle" noun common rec 2 link 1
+   LONG  9797 "Thomson's gazelle" noun proper rec 4 link 2
+532 | theme wild_cattle "wild cattle"
+   SHORT 1006 "bison" noun common rec 2 link 1
+   LONG  9741 "European bison" noun proper rec 3 link 3
+533 | theme wild_cattle "wild cattle"
+   SHORT 1006 "bison" noun common rec 2 link 1
+   LONG  50523 "American bison" noun proper rec 2 link 2
+534 | theme wild_cattle "wild cattle"
+   SHORT 1006 "bison" noun common rec 2 link 1
+   LONG  50534 "wood bison" noun common rec 4 link 4
+535 | theme wild_cattle "wild cattle"
+   SHORT 1006 "bison" noun common rec 2 link 1
+   LONG  50535 "plains bison" noun common rec 4 link 4
+536 | theme wild_cattle "wild cattle"
+   SHORT 9793 "buffalo" [animal] noun common rec 2 link 1
+   LONG  1454 "water buffalo" noun common rec 3 link 3
+537 | theme wild_cattle "wild cattle"
+   SHORT 9793 "buffalo" [animal] noun common rec 2 link 1
+   LONG  9636 "Cape buffalo" noun proper rec 3 link 2
+538 | theme wild_cattle "wild cattle"
+   SHORT 9793 "buffalo" [animal] noun common rec 2 link 1
+   LONG  50530 "African buffalo" noun proper rec 3 link 2
+539 | theme wild_cattle "wild cattle"
+   SHORT 9793 "buffalo" [animal] noun common rec 2 link 1
+   LONG  50531 "forest buffalo" noun common rec 5 link 4
+540 | theme wild_cattle "wild cattle"
+   SHORT 9793 "buffalo" [animal] noun common rec 2 link 1
+   LONG  50532 "dwarf buffalo" noun common rec 5 link 5
+541 | theme wild_goats_and_sheep "wild goats and sheep"
+   SHORT 7927 "ibex" noun common rec 3 link 1
+   LONG  9653 "Nubian ibex" noun proper rec 4 link 3
+542 | theme wild_goats_and_sheep "wild goats and sheep"
+   SHORT 7927 "ibex" noun common rec 3 link 1
+   LONG  9810 "Alpine ibex" noun proper rec 4 link 3
+543 | theme wild_goats_and_sheep "wild goats and sheep"
+   SHORT 7927 "ibex" noun common rec 3 link 1
+   LONG  50546 "Siberian ibex" noun proper rec 4 link 3
+544 | theme wild_goats_and_sheep "wild goats and sheep"
+   SHORT 7927 "ibex" noun common rec 3 link 1
+   LONG  50547 "Walia ibex" noun proper rec 5 link 5
+545 | theme wild_goats_and_sheep "wild goats and sheep"
+   SHORT 50536 "tahr" noun common rec 4 link 4
+   LONG  9802 "Himalayan tahr" noun proper rec 5 link 4
+546 | theme wild_goats_and_sheep "wild goats and sheep"
+   SHORT 65190 "mountain" [white-coated] noun common rec 2 link 1
+   LONG  50548 "Rocky Mountain goat" noun proper rec 3 link 2
+547 | theme wild_pigs "wild pigs"
+   SHORT 7942 "peccary" noun common rec 4 link 3
+   LONG  50557 "collared peccary" noun common rec 4 link 3
+548 | theme wild_pigs "wild pigs"
+   SHORT 7942 "peccary" noun common rec 4 link 3
+   LONG  50558 "white-lipped peccary" noun common rec 5 link 4
+549 | theme wild_pigs "wild pigs"
+   SHORT 7942 "peccary" noun common rec 4 link 3
+   LONG  50559 "Chacoan peccary" noun proper rec 5 link 5
+550 | theme wild_pigs "wild pigs"
+   SHORT 10298 "hog" [pig] noun common rec 2 link 2
+   LONG  9875 "giant forest hog" noun common rec 5 link 4
+551 | theme wild_pigs "wild pigs"
+   SHORT 10298 "hog" [pig] noun common rec 2 link 2
+   LONG  50551 "red river hog" noun common rec 4 link 3
+552 | theme wild_pigs "wild pigs"
+   SHORT 10298 "hog" [pig] noun common rec 2 link 2
+   LONG  50552 "pygmy hog" noun common rec 5 link 4
+553 | theme odd_toed_animals "odd-toed animals"
+   SHORT 153 "horse" [animal] noun common rec 1 link 1
+   LONG  9483 "Przewalski's horse" noun proper rec 3 link 4
+554 | theme odd_toed_animals "odd-toed animals"
+   SHORT 159 "ass" [donkey] noun common rec 3 link 4
+   LONG  1534 "wild ass" noun common rec 4 link 5
+555 | theme bears "bears" (note: Exactly: giant panda, moon bear, sun bear, sloth bear, spectacled bear, black, brown, polar.)
+   SHORT 63571 "black" [large mammal] noun common rec 1 link 1
+   LONG  7954 "Himalayan black bear" noun proper rec 5 link 4
+556 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7964 "grey wolf" noun common rec 2 link 1
+557 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7966 "timber wolf" noun common rec 3 link 2
+558 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7971 "maned wolf" noun common rec 4 link 3
+559 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7975 "red wolf" noun common rec 4 link 3
+560 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7983 "Ethiopian wolf" noun proper rec 4 link 3
+561 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7991 "lone wolf" noun phrase rec 2 link 4
+562 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7992 "wolf pack" [wolves] noun common rec 2 link 3
+563 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7994 "Tasmanian wolf" noun proper rec 4 link 4
+564 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  63574 "painted wolf" noun common rec 4 link 3
+565 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 996 "fox" noun common rec 1 link 1
+   LONG  7977 "kit fox" noun common rec 4 link 4
+566 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 996 "fox" noun common rec 1 link 1
+   LONG  7982 "crab-eating fox" noun common rec 5 link 5
+567 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 996 "fox" noun common rec 1 link 1
+   LONG  7987 "pampas fox" noun common rec 5 link 5
+568 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 996 "fox" noun common rec 1 link 1
+   LONG  7988 "Darwin's fox" noun proper rec 5 link 5
+569 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 996 "fox" noun common rec 1 link 1
+   LONG  7996 "Cape fox" noun proper rec 5 link 5
+570 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 1033 "jackal" noun common rec 3 link 2
+   LONG  7984 "golden jackal" noun common rec 4 link 3
+571 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 1033 "jackal" noun common rec 3 link 2
+   LONG  7985 "black-backed jackal" noun common rec 4 link 4
+572 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 1033 "jackal" noun common rec 3 link 2
+   LONG  7986 "side-striped jackal" noun common rec 5 link 5
+573 | theme wild_dogs_and_foxes "wild dogs and foxes"
+   SHORT 63577 "red" [canid] noun common rec 2 link 1
+   LONG  7975 "red wolf" noun common rec 4 link 3
+574 | theme weasel_family "weasel family"
+   SHORT 1009 "otter" noun common rec 2 link 1
+   LONG  1322 "sea otter" noun common rec 2 link 2
+575 | theme weasel_family "weasel family"
+   SHORT 1009 "otter" noun common rec 2 link 1
+   LONG  8004 "river otter" noun common rec 3 link 2
+576 | theme weasel_family "weasel family"
+   SHORT 1009 "otter" noun common rec 2 link 1
+   LONG  8005 "giant otter" noun common rec 4 link 3
+577 | theme weasel_family "weasel family"
+   SHORT 1013 "skunk" [animal] noun common rec 2 link 1
+   LONG  8021 "hooded skunk" noun common rec 5 link 5
+578 | theme weasel_family "weasel family"
+   SHORT 1013 "skunk" [animal] noun common rec 2 link 1
+   LONG  8022 "striped skunk" noun common rec 3 link 3
+579 | theme weasel_family "weasel family"
+   SHORT 1013 "skunk" [animal] noun common rec 2 link 1
+   LONG  8023 "spotted skunk" noun common rec 4 link 4
+580 | theme weasel_family "weasel family"
+   SHORT 1013 "skunk" [animal] noun common rec 2 link 1
+   LONG  8024 "hog-nosed skunk" noun common rec 5 link 5
+581 | theme weasel_family "weasel family"
+   SHORT 1014 "badger" [animal] noun common rec 2 link 1
+   LONG  8003 "honey badger" noun common rec 3 link 2
+582 | theme weasel_family "weasel family"
+   SHORT 1014 "badger" [animal] noun common rec 2 link 1
+   LONG  8006 "American badger" noun proper rec 4 link 3
+583 | theme weasel_family "weasel family"
+   SHORT 1014 "badger" [animal] noun common rec 2 link 1
+   LONG  8007 "European badger" noun proper rec 3 link 2
+584 | theme weasel_family "weasel family"
+   SHORT 1014 "badger" [animal] noun common rec 2 link 1
+   LONG  8008 "hog badger" noun common rec 5 link 5
+585 | theme weasel_family "weasel family"
+   SHORT 1043 "ferret" noun common rec 3 link 2
+   LONG  8009 "black-footed ferret" noun common rec 4 link 3
+586 | theme weasel_family "weasel family"
+   SHORT 7997 "weasel" noun common rec 2 link 1
+   LONG  8010 "least weasel" noun common rec 5 link 4
+587 | theme weasel_family "weasel family"
+   SHORT 7997 "weasel" noun common rec 2 link 1
+   LONG  8011 "long-tailed weasel" noun common rec 4 link 4
+588 | theme weasel_family "weasel family"
+   SHORT 7998 "mink" [animal] noun common rec 2 link 2
+   LONG  8013 "American mink" noun proper rec 3 link 3
+589 | theme weasel_family "weasel family"
+   SHORT 7998 "mink" [animal] noun common rec 2 link 2
+   LONG  8014 "European mink" noun proper rec 5 link 4
+590 | theme weasel_family "weasel family"
+   SHORT 7999 "polecat" noun common rec 3 link 3
+   LONG  8012 "steppe polecat" noun common rec 5 link 5
+591 | theme weasel_family "weasel family"
+   SHORT 8000 "marten" noun common rec 4 link 3
+   LONG  8001 "pine marten" noun common rec 4 link 3
+592 | theme weasel_family "weasel family"
+   SHORT 8000 "marten" noun common rec 4 link 3
+   LONG  8015 "stone marten" noun common rec 5 link 4
+593 | theme weasel_family "weasel family"
+   SHORT 8000 "marten" noun common rec 4 link 3
+   LONG  8016 "beech marten" noun common rec 5 link 5
+594 | theme bats "bats"
+   SHORT 993 "bat" [animal] noun common rec 1 link 1
+   LONG  8031 "long-eared bat" noun common rec 4 link 3

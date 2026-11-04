@@ -1,0 +1,891 @@
+1783 | theme tides_and_currents "tides and currents"
+   SHORT 31144 "tide" noun common rec 1 link 1
+   LONG  31141 "tide table" noun common rec 3 link 3
+1784 | theme shipwreck_coast_words "shipwreck coast words" (note: lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn)
+   SHORT 1974 "fog" noun common rec 1 link 3
+   LONG  31168 "fog signal" noun common rec 4 link 4
+1785 | theme shipwreck_coast_words "shipwreck coast words" (note: lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn)
+   SHORT 2474 "lighthouse" noun common rec 1 link 1
+   LONG  31166 "lighthouse keeper" noun common rec 2 link 3
+1786 | theme shipwreck_coast_words "shipwreck coast words" (note: lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn)
+   SHORT 2830 "buoy" noun common rec 2 link 3
+   LONG  31172 "bell buoy" noun common rec 4 link 4
+1787 | theme shipwreck_coast_words "shipwreck coast words" (note: lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn)
+   SHORT 31077 "reef" [coral] noun common rec 2 link 2
+   LONG  31174 "treacherous reef" noun common rec 3 link 3
+1788 | theme shipwreck_coast_words "shipwreck coast words" (note: lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn)
+   SHORT 31151 "rocks" noun common rec 1 link 2
+   LONG  31173 "hidden rocks" noun common rec 2 link 2
+1789 | theme wave_words "wave words"
+   SHORT 32045 "swell" [ocean] adjective common rec 3 link 1
+   LONG  31201 "ground swell" noun common rec 4 link 4
+1790 | theme weather "weather"
+   SHORT 1969 "wind" [weather] noun common rec 1 link 1
+   LONG  2036 "wind chill" noun common rec 3 link 3
+1791 | theme weather "weather"
+   SHORT 1971 "storm" [bad weather] noun common rec 1 link 1
+   LONG  1978 "electrical storm" noun common rec 3 link 4
+1792 | theme weather "weather"
+   SHORT 1973 "lightning" [storm] noun common rec 1 link 1
+   LONG  2044 "ball lightning" noun common rec 4 link 4
+1793 | theme weather "weather"
+   SHORT 1983 "shower" [rain] noun common rec 1 link 2
+   LONG  2039 "sun shower" noun common rec 3 link 3
+1794 | theme weather "weather"
+   SHORT 2013 "dew" noun common rec 2 link 3
+   LONG  2041 "dew point" noun common rec 4 link 4
+1795 | theme wind_words "wind words"
+   SHORT 1979 "breeze" noun common rec 1 link 1
+   LONG  31237 "sea breeze" noun common rec 2 link 2
+1796 | theme wind_words "wind words"
+   SHORT 1979 "breeze" noun common rec 1 link 1
+   LONG  31238 "land breeze" noun common rec 3 link 3
+1797 | theme wind_words "wind words"
+   SHORT 1979 "breeze" noun common rec 1 link 1
+   LONG  31253 "stiff breeze" noun common rec 3 link 3
+1798 | theme wind_words "wind words"
+   SHORT 1979 "breeze" noun common rec 1 link 1
+   LONG  31254 "fresh breeze" noun common rec 3 link 3
+1799 | theme storms "storms"
+   SHORT 2008 "cyclone" noun common rec 2 link 3
+   LONG  31266 "bomb cyclone" noun common rec 4 link 4
+1800 | theme storms "storms"
+   SHORT 2008 "cyclone" noun common rec 2 link 3
+   LONG  31267 "tropical cyclone" noun common rec 3 link 3
+1801 | theme cloud_types "cloud types"
+   SHORT 59 "cumulus" noun common rec 3 link 1
+   LONG  31280 "cumulus congestus" noun common rec 5 link 4
+1802 | theme cloud_types "cloud types"
+   SHORT 59 "cumulus" noun common rec 3 link 1
+   LONG  60353 "cumulus humilis" noun common rec 5 link 4
+1803 | theme weather_instruments "weather instruments"
+   SHORT 3461 "thermometer" noun common rec 1 link 1
+   LONG  31317 "wet bulb thermometer" noun common rec 5 link 4
+1804 | theme weather_instruments "weather instruments"
+   SHORT 3461 "thermometer" noun common rec 1 link 1
+   LONG  31330 "max-min thermometer" noun common rec 5 link 4
+1805 | theme weather_instruments "weather instruments"
+   SHORT 7230 "barometer" noun common rec 3 link 1
+   LONG  31320 "aneroid barometer" noun common rec 5 link 4
+1806 | theme weather_instruments "weather instruments"
+   SHORT 7230 "barometer" noun common rec 3 link 1
+   LONG  31321 "mercury barometer" noun common rec 4 link 3
+1807 | theme weather_instruments "weather instruments"
+   SHORT 7239 "anemometer" noun common rec 4 link 2
+   LONG  31323 "cup anemometer" noun common rec 5 link 4
+1808 | theme weather_instruments "weather instruments"
+   SHORT 31308 "radar" (full: weather radar) noun common rec 3 link 2
+   LONG  31326 "doppler radar" noun common rec 3 link 3
+1809 | theme weather_instruments "weather instruments"
+   SHORT 31309 "psychrometer" noun common rec 5 link 4
+   LONG  31327 "sling psychrometer" noun common rec 5 link 4
+1810 | theme forecast_words "forecast words" (note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility)
+   SHORT 31370 "front" [weather] noun common rec 2 link 2
+   LONG  2018 "cold front" noun common rec 2 link 2
+1811 | theme forecast_words "forecast words" (note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility)
+   SHORT 31370 "front" [weather] noun common rec 2 link 2
+   LONG  2033 "warm front" noun common rec 3 link 2
+1812 | theme forecast_words "forecast words" (note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility)
+   SHORT 31370 "front" [weather] noun common rec 2 link 2
+   LONG  31377 "occluded front" noun common rec 5 link 4
+1813 | theme forecast_words "forecast words" (note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility)
+   SHORT 31371 "pressure" [weather] noun common rec 2 link 2
+   LONG  31375 "high pressure" noun common rec 2 link 1
+1814 | theme forecast_words "forecast words" (note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility)
+   SHORT 31371 "pressure" [weather] noun common rec 2 link 2
+   LONG  31376 "low pressure" noun common rec 2 link 1
+1815 | theme forecast_words "forecast words" (note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility)
+   SHORT 31371 "pressure" [weather] noun common rec 2 link 2
+   LONG  31394 "barometric pressure" noun common rec 3 link 3
+1816 | theme forecast_words "forecast words" (note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility)
+   SHORT 31371 "pressure" [weather] noun common rec 2 link 2
+   LONG  31402 "pressure system" noun common rec 3 link 3
+1817 | theme atmospheric_patterns "atmospheric patterns"
+   SHORT 31370 "front" [weather] noun common rec 2 link 2
+   LONG  2018 "cold front" noun common rec 2 link 2
+1818 | theme atmospheric_patterns "atmospheric patterns"
+   SHORT 31370 "front" [weather] noun common rec 2 link 2
+   LONG  2033 "warm front" noun common rec 3 link 2
+1819 | theme atmospheric_patterns "atmospheric patterns"
+   SHORT 31370 "front" [weather] noun common rec 2 link 2
+   LONG  31377 "occluded front" noun common rec 5 link 4
+1820 | theme sky_phenomena "sky phenomena" (note: rainbow, aurora, halo, sundog, moonbow, mirage, green flash, crepuscular rays)
+   SHORT 1982 "rainbow" [weather] noun common rec 1 link 1
+   LONG  31413 "double rainbow" noun common rec 2 link 2
+1821 | theme sky_phenomena "sky phenomena" (note: rainbow, aurora, halo, sundog, moonbow, mirage, green flash, crepuscular rays)
+   SHORT 31404 "halo" [light] noun common rec 3 link 2
+   LONG  31420 "sun halo" noun common rec 4 link 3
+1822 | theme sky_phenomena "sky phenomena" (note: rainbow, aurora, halo, sundog, moonbow, mirage, green flash, crepuscular rays)
+   SHORT 31404 "halo" [light] noun common rec 3 link 2
+   LONG  31421 "moon halo" noun common rec 3 link 3
+1823 | theme ice_crystal_effects "ice-crystal effects"
+   SHORT 31404 "halo" [light] noun common rec 3 link 2
+   LONG  31420 "sun halo" noun common rec 4 link 3
+1824 | theme ice_crystal_effects "ice-crystal effects"
+   SHORT 31404 "halo" [light] noun common rec 3 link 2
+   LONG  31421 "moon halo" noun common rec 3 link 3
+1825 | theme signs_of_spring "signs of spring" (note: buds, blossom, lambs, catkins, frogspawn, nesting, daffodils)
+   SHORT 29857 "Blossom" noun proper rec 2 link 1
+   LONG  2540 "cherry blossom" noun phrase rec 2 link 3
+1826 | theme signs_of_spring "signs of spring" (note: buds, blossom, lambs, catkins, frogspawn, nesting, daffodils)
+   SHORT 31479 "showers" (full: spring showers) noun common rec 1 link 2
+   LONG  31488 "April showers" noun common rec 1 link 2
+1827 | theme signs_of_autumn "signs of autumn" (note: falling leaves, acorns, conkers, migration, frost, fungi, harvest)
+   SHORT 25084 "harvest" [crop gathering] verb common rec 2 link 2
+   LONG  31538 "harvest moon" noun common rec 2 link 3
+1828 | theme signs_of_autumn "signs of autumn" (note: falling leaves, acorns, conkers, migration, frost, fungi, harvest)
+   SHORT 25084 "harvest" [crop gathering] verb common rec 2 link 2
+   LONG  31551 "harvest festival" noun common rec 2 link 4
+1829 | theme signs_of_winter "signs of winter" (note: frost, icicles, bare trees, hibernation, snow, short days, holly)
+   SHORT 1981 "frost" [icy coating] noun common rec 1 link 1
+   LONG  31570 "hard frost" noun common rec 2 link 2
+1830 | theme signs_of_winter "signs of winter" (note: frost, icicles, bare trees, hibernation, snow, short days, holly)
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  2016 "black ice" noun common rec 2 link 3
+1831 | theme signs_of_winter "signs of winter" (note: frost, icicles, bare trees, hibernation, snow, short days, holly)
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  31566 "ice on windscreen" noun common rec 2 link 3
+1832 | theme nature_at_night "nature at night" (note: owls, bats, moths, fireflies, dew, moonlight, glowworms, hedgehogs)
+   SHORT 31584 "stars" [sky] noun common rec 1 link 1
+   LONG  31591 "shooting stars" noun common rec 1 link 2
+1833 | theme nature_at_night "nature at night" (note: owls, bats, moths, fireflies, dew, moonlight, glowworms, hedgehogs)
+   SHORT 31595 "hawkmoth" noun common rec 4 link 4
+   LONG  9045 "death's-head hawkmoth" noun common rec 4 link 5
+1834 | theme monsoon_season "monsoon season" (note: downpour, flood, paddy fields, leeches, humidity, puddles, umbrellas)
+   SHORT 2001 "flood" [weather] noun common rec 1 link 2
+   LONG  31222 "flash flood" noun common rec 2 link 3
+1835 | theme dry_season "dry season" (note: drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub)
+   SHORT 23180 "dust" [dirt] noun common rec 1 link 3
+   LONG  30893 "dust devil" noun common rec 3 link 3
+1836 | theme dry_season "dry season" (note: drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub)
+   SHORT 23180 "dust" [dirt] noun common rec 1 link 3
+   LONG  31257 "dust storm" noun common rec 2 link 2
+1837 | theme dry_season "dry season" (note: drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub)
+   SHORT 23180 "dust" [dirt] noun common rec 1 link 3
+   LONG  31653 "dust cloud" noun common rec 2 link 3
+1838 | theme dry_season "dry season" (note: drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub)
+   SHORT 23180 "dust" [dirt] noun common rec 1 link 3
+   LONG  60406 "dust bowl" noun common rec 4 link 4
+1839 | theme dry_season "dry season" (note: drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub)
+   SHORT 31527 "migration" [animals] noun common rec 2 link 3
+   LONG  31650 "wildebeest migration" noun common rec 2 link 3
+1840 | theme rocks_and_minerals "rocks and minerals"
+   SHORT 2050 "stone" [rock] noun common rec 1 link 1
+   LONG  2079 "pumice stone" noun common rec 2 link 3
+1841 | theme gemstones "gemstones"
+   SHORT 2061 "quartz" [crystal mineral] noun common rec 2 link 3
+   LONG  31680 "rose quartz" [gem] noun common rec 3 link 3
+1842 | theme gemstones "gemstones"
+   SHORT 2061 "quartz" [crystal mineral] noun common rec 2 link 3
+   LONG  31681 "smoky quartz" noun common rec 4 link 4
+1843 | theme gemstones "gemstones"
+   SHORT 28347 "opal" [gem] noun common rec 4 link 2
+   LONG  31690 "black opal" noun common rec 3 link 3
+1844 | theme gemstones "gemstones"
+   SHORT 28347 "opal" [gem] noun common rec 4 link 2
+   LONG  31693 "fire opal" noun common rec 4 link 4
+1845 | theme gemstones "gemstones"
+   SHORT 31659 "sapphire" [gem] noun common rec 1 link 1
+   LONG  31694 "star sapphire" noun common rec 4 link 4
+1846 | theme quartz_varieties "quartz varieties" (note: amethyst, citrine, rose quartz, agate, onyx, jasper, carnelian, tiger's eye)
+   SHORT 29878 "Agate" [gemstone] noun proper rec 4 link 2
+   LONG  56588 "moss agate" noun common rec 4 link 4
+1847 | theme blue_gems "blue gems"
+   SHORT 31659 "sapphire" [gem] noun common rec 1 link 1
+   LONG  31694 "star sapphire" noun common rec 4 link 4
+1848 | theme metals "metals"
+   SHORT 201 "iron" [metal] noun common rec 1 link 1
+   LONG  31735 "cast iron" noun common rec 2 link 3
+1849 | theme metals "metals"
+   SHORT 201 "iron" [metal] noun common rec 1 link 1
+   LONG  31736 "wrought iron" noun common rec 3 link 3
+1850 | theme metals "metals"
+   SHORT 201 "iron" [metal] noun common rec 1 link 1
+   LONG  31737 "pig iron" noun common rec 4 link 4
+1851 | theme metals "metals"
+   SHORT 202 "gold" [metal] noun common rec 1 link 1
+   LONG  31739 "white gold" noun common rec 2 link 3
+1852 | theme metals "metals"
+   SHORT 202 "gold" [metal] noun common rec 1 link 1
+   LONG  31740 "rose gold" noun common rec 2 link 3
+1853 | theme metals "metals"
+   SHORT 203 "silver" [metal] noun common rec 1 link 1
+   LONG  31738 "sterling silver" noun common rec 3 link 3
+1854 | theme metals "metals"
+   SHORT 7397 "steel" [metal] noun common rec 1 link 1
+   LONG  31734 "stainless steel" noun common rec 1 link 2
+1855 | theme sedimentary_rocks "sedimentary rocks" (note: sandstone, limestone, shale, chalk, coal, conglomerate, flint, mudstone)
+   SHORT 2080 "shale" noun common rec 3 link 2
+   LONG  32347 "oil shale" noun common rec 4 link 5
+1856 | theme building_stones "building stones"
+   SHORT 31746 "marble" [rock] noun common rec 1 link 1
+   LONG  31778 "Carrara marble" noun common rec 3 link 3
+1857 | theme mining_words "mining words" (note: shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter)
+   SHORT 31788 "mine" [pit] noun common rec 1 link 1
+   LONG  22917 "coal mine" noun common rec 1 link 1
+1858 | theme mining_words "mining words" (note: shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter)
+   SHORT 31788 "mine" [pit] noun common rec 1 link 1
+   LONG  31795 "mine cart" noun common rec 2 link 2
+1859 | theme mining_words "mining words" (note: shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter)
+   SHORT 31788 "mine" [pit] noun common rec 1 link 1
+   LONG  31804 "gold mine" noun common rec 1 link 2
+1860 | theme mining_words "mining words" (note: shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter)
+   SHORT 31789 "pit" [mine] noun common rec 2 link 2
+   LONG  31799 "open pit" noun common rec 3 link 3
+1861 | theme mining_words "mining words" (note: shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter)
+   SHORT 31789 "pit" [mine] noun common rec 2 link 2
+   LONG  60427 "pit pony" noun common rec 3 link 3
+1862 | theme gold_rush_words "gold rush words" (note: prospector, claim, panning, sluice, boomtown, forty-niner, Klondike)
+   SHORT 31805 "claim" [mining] noun common rec 2 link 1
+   LONG  31814 "claim jumper" noun common rec 4 link 3
+1863 | theme gold_rush_words "gold rush words" (note: prospector, claim, panning, sluice, boomtown, forty-niner, Klondike)
+   SHORT 31805 "claim" [mining] noun common rec 2 link 1
+   LONG  31828 "stake a claim" verb common rec 2 link 3
+1864 | theme natural_disasters "natural disasters"
+   SHORT 2001 "flood" [weather] noun common rec 1 link 1
+   LONG  31222 "flash flood" noun common rec 2 link 2
+1865 | theme volcano_words "volcano words"
+   SHORT 28044 "lava" [molten rock] noun common rec 2 link 1
+   LONG  30939 "lava tube" noun common rec 4 link 3
+1866 | theme volcano_words "volcano words"
+   SHORT 28044 "lava" [molten rock] noun common rec 2 link 1
+   LONG  31855 "lava flow" noun common rec 2 link 1
+1867 | theme volcano_words "volcano words"
+   SHORT 28044 "lava" [molten rock] noun common rec 2 link 1
+   LONG  31856 "lava lake" noun common rec 4 link 3
+1868 | theme volcano_words "volcano words"
+   SHORT 28044 "lava" [molten rock] noun common rec 2 link 1
+   LONG  32023 "lava dome" noun common rec 4 link 4
+1869 | theme volcano_words "volcano words"
+   SHORT 28044 "lava" [molten rock] noun common rec 2 link 1
+   LONG  60432 "pillow lava" noun common rec 5 link 5
+1870 | theme volcano_words "volcano words"
+   SHORT 31839 "magma" noun common rec 2 link 1
+   LONG  31849 "magma chamber" noun common rec 3 link 3
+1871 | theme volcano_words "volcano words"
+   SHORT 31840 "eruption" noun common rec 1 link 1
+   LONG  60430 "Plinian eruption" noun common rec 5 link 5
+1872 | theme volcano_words "volcano words"
+   SHORT 31840 "eruption" noun common rec 1 link 1
+   LONG  60431 "phreatic eruption" noun common rec 5 link 5
+1873 | theme volcano_words "volcano words"
+   SHORT 31841 "ash" [volcanic] noun common rec 1 link 2
+   LONG  31845 "ash cloud" noun common rec 2 link 3
+1874 | theme volcano_words "volcano words"
+   SHORT 31844 "cone" [volcano] noun common rec 2 link 3
+   LONG  31862 "spatter cone" noun common rec 5 link 5
+1875 | theme earthquake_words "earthquake words"
+   SHORT 7245 "magnitude" noun common rec 4 link 3
+   LONG  31887 "moment magnitude" noun common rec 5 link 5
+1876 | theme earthquake_words "earthquake words"
+   SHORT 31878 "seismic" adjective common rec 3 link 3
+   LONG  31877 "seismic wave" noun common rec 3 link 3
+1877 | theme earthquake_words "earthquake words"
+   SHORT 31878 "seismic" adjective common rec 3 link 3
+   LONG  31895 "seismic zone" noun common rec 4 link 4
+1878 | theme layers_of_the_earth "layers of the earth"
+   SHORT 201 "iron" [metal] noun common rec 1 link 3
+   LONG  31908 "molten iron" noun common rec 3 link 4
+1879 | theme layers_of_the_earth "layers of the earth"
+   SHORT 20831 "mantle" [cloak] noun common rec 3 link 2
+   LONG  31906 "upper mantle" noun common rec 4 link 3
+1880 | theme layers_of_the_earth "layers of the earth"
+   SHORT 20831 "mantle" [cloak] noun common rec 3 link 2
+   LONG  31907 "lower mantle" noun common rec 4 link 3
+1881 | theme layers_of_the_earth "layers of the earth"
+   SHORT 28647 "crust" noun common rec 1 link 1
+   LONG  31904 "continental crust" noun common rec 4 link 3
+1882 | theme layers_of_the_earth "layers of the earth"
+   SHORT 28647 "crust" noun common rec 1 link 1
+   LONG  31905 "oceanic crust" noun common rec 4 link 3
+1883 | theme layers_of_the_earth "layers of the earth"
+   SHORT 31898 "core" [earth] noun common rec 1 link 1
+   LONG  31899 "outer core" noun common rec 3 link 2
+1884 | theme layers_of_the_earth "layers of the earth"
+   SHORT 31898 "core" [earth] noun common rec 1 link 1
+   LONG  31900 "inner core" noun common rec 3 link 2
+1885 | theme layers_of_the_earth "layers of the earth"
+   SHORT 31898 "core" [earth] noun common rec 1 link 1
+   LONG  31913 "solid core" noun common rec 3 link 3
+1886 | theme layers_of_the_earth "layers of the earth"
+   SHORT 31898 "core" [earth] noun common rec 1 link 1
+   LONG  31914 "liquid core" noun common rec 3 link 3
+1887 | theme geothermal_words "geothermal words" (note: geyser, hot spring, fumarole, mud pool, steam vent, sulfur, onsen)
+   SHORT 16570 "steam" [vapor] noun common rec 1 link 3
+   LONG  31940 "steam vent" noun common rec 3 link 2
+1888 | theme geothermal_words "geothermal words" (note: geyser, hot spring, fumarole, mud pool, steam vent, sulfur, onsen)
+   SHORT 16570 "steam" [vapor] noun common rec 1 link 3
+   LONG  60444 "dry steam" noun common rec 5 link 5
+1889 | theme water_cycle_words "water cycle words" (note: evaporation, condensation, precipitation, runoff, groundwater, aquifer)
+   SHORT 1908 "river" [water] noun common rec 1 link 3
+   LONG  60374 "atmospheric river" noun common rec 4 link 5
+1890 | theme water_cycle_words "water cycle words" (note: evaporation, condensation, precipitation, runoff, groundwater, aquifer)
+   SHORT 2013 "dew" noun common rec 2 link 3
+   LONG  2041 "dew point" noun common rec 4 link 4
+1891 | theme rainforest "rainforest"
+   SHORT 982 "monkey" [animal] noun common rec 1 link 1
+   LONG  7811 "howler monkey" noun common rec 3 link 2
+1892 | theme ocean "ocean"
+   SHORT 28110 "sea" [water body] noun common rec 1 link 1
+   LONG  1288 "sea star" noun common rec 3 link 4
+1893 | theme ocean "ocean"
+   SHORT 28110 "sea" [water body] noun common rec 1 link 1
+   LONG  1291 "sea grass" [seagrass] noun common rec 3 link 4
+1894 | theme ocean "ocean"
+   SHORT 28110 "sea" [water body] noun common rec 1 link 1
+   LONG  1293 "sea turtle" noun common rec 2 link 2
+1895 | theme ocean "ocean"
+   SHORT 28110 "sea" [water body] noun common rec 1 link 1
+   LONG  37013 "Sargasso Sea" noun place rec 3 link 4
+1896 | theme ocean "ocean"
+   SHORT 32036 "trench" [ocean] noun common rec 3 link 3
+   LONG  60464 "Mariana Trench" noun place rec 3 link 3
+1897 | theme seafloor_features "seafloor features"
+   SHORT 32036 "trench" [ocean] noun common rec 3 link 3
+   LONG  60464 "Mariana Trench" noun place rec 3 link 3
+1898 | theme desert "desert"
+   SHORT 1137 "lizard" [reptile] noun common rec 1 link 3
+   LONG  1184 "horned lizard" noun common rec 4 link 4
+1899 | theme polar_regions "polar regions"
+   SHORT 1028 "seal" [animal] noun common rec 1 link 2
+   LONG  8902 "leopard seal" noun common rec 3 link 3
+1900 | theme polar_regions "polar regions"
+   SHORT 1028 "seal" [animal] noun common rec 1 link 2
+   LONG  9704 "Weddell seal" noun common rec 4 link 5
+1901 | theme polar_regions "polar regions"
+   SHORT 1064 "penguin" [bird] noun common rec 1 link 1
+   LONG  8234 "emperor penguin" noun common rec 1 link 2
+1902 | theme polar_regions "polar regions"
+   SHORT 1064 "penguin" [bird] noun common rec 1 link 1
+   LONG  8236 "Adelie penguin" noun proper rec 4 link 4
+1903 | theme polar_regions "polar regions"
+   SHORT 1967 "snow" [weather] noun common rec 1 link 1
+   LONG  9705 "snow petrel" noun common rec 4 link 5
+1904 | theme polar_regions "polar regions"
+   SHORT 30905 "ice shelf" noun common rec 3 link 3
+   LONG  21054 "Ross Ice Shelf" noun place rec 4 link 4
+1905 | theme polar_regions "polar regions"
+   SHORT 32061 "Arctic" [region] noun place rec 1 link 1
+   LONG  7963 "arctic fox" noun common rec 2 link 2
+1906 | theme polar_regions "polar regions"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  21052 "ice floe" noun common rec 3 link 3
+1907 | theme polar_regions "polar regions"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  21054 "Ross Ice Shelf" noun place rec 4 link 4
+1908 | theme polar_regions "polar regions"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  30901 "ice sheet" noun common rec 3 link 2
+1909 | theme polar_regions "polar regions"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  30904 "pack ice" noun common rec 3 link 3
+1910 | theme polar_regions "polar regions"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  30905 "ice shelf" noun common rec 3 link 3
+1911 | theme polar_regions "polar regions"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  32179 "brash ice" noun common rec 5 link 5
+1912 | theme animals_of_the_far_south "animals of the far south"
+   SHORT 1064 "penguin" [bird] noun common rec 1 link 1
+   LONG  8234 "emperor penguin" noun common rec 1 link 2
+1913 | theme animals_of_the_far_south "animals of the far south"
+   SHORT 1064 "penguin" [bird] noun common rec 1 link 1
+   LONG  8236 "Adelie penguin" noun proper rec 4 link 4
+1914 | theme frozen_formations "frozen formations"
+   SHORT 30905 "ice shelf" noun common rec 3 link 3
+   LONG  21054 "Ross Ice Shelf" noun place rec 4 link 4
+1915 | theme frozen_formations "frozen formations"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  21052 "ice floe" noun common rec 3 link 3
+1916 | theme frozen_formations "frozen formations"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  21054 "Ross Ice Shelf" noun place rec 4 link 4
+1917 | theme frozen_formations "frozen formations"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  30901 "ice sheet" noun common rec 3 link 2
+1918 | theme frozen_formations "frozen formations"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  30904 "pack ice" noun common rec 3 link 3
+1919 | theme frozen_formations "frozen formations"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  30905 "ice shelf" noun common rec 3 link 3
+1920 | theme frozen_formations "frozen formations"
+   SHORT 39079 "ice" [frozen water] noun common rec 1 link 1
+   LONG  32179 "brash ice" noun common rec 5 link 5
+1921 | theme wetlands "wetlands"
+   SHORT 1925 "marsh" [wetland] noun common rec 2 link 1
+   LONG  31083 "salt marsh" noun common rec 3 link 3
+1922 | theme wetlands "wetlands"
+   SHORT 1925 "marsh" [wetland] noun common rec 2 link 1
+   LONG  60467 "marsh harrier" noun common rec 5 link 5
+1923 | theme meadow "meadow" (note: grass, poppies, clover, buttercups, butterflies, bees, hay, skylark)
+   SHORT 1695 "daisy" noun common rec 1 link 1
+   LONG  30355 "oxeye daisy" noun common rec 3 link 2
+1924 | theme meadow "meadow" (note: grass, poppies, clover, buttercups, butterflies, bees, hay, skylark)
+   SHORT 1769 "grass" [plant] noun common rec 1 link 1
+   LONG  32098 "timothy grass" noun common rec 5 link 5
+1925 | theme meadow "meadow" (note: grass, poppies, clover, buttercups, butterflies, bees, hay, skylark)
+   SHORT 1776 "clover" noun common rec 2 link 1
+   LONG  32099 "red clover" noun common rec 3 link 3
+1926 | theme meadow "meadow" (note: grass, poppies, clover, buttercups, butterflies, bees, hay, skylark)
+   SHORT 28409 "field" [open land] noun common rec 3 link 2
+   LONG  7850 "field mouse" noun common rec 2 link 3
+1927 | theme grassland_blooms "grassland blooms"
+   SHORT 1695 "daisy" noun common rec 1 link 1
+   LONG  30355 "oxeye daisy" noun common rec 3 link 2
+1928 | theme pond "pond" (note: frog, tadpole, newt, lily pad, reeds, dragonfly, pondweed, moorhen, frogspawn)
+   SHORT 1147 "newt" noun common rec 2 link 2
+   LONG  1211 "smooth newt" noun common rec 5 link 4
+1929 | theme pond "pond" (note: frog, tadpole, newt, lily pad, reeds, dragonfly, pondweed, moorhen, frogspawn)
+   SHORT 1147 "newt" noun common rec 2 link 2
+   LONG  8682 "great crested newt" noun common rec 4 link 3
+1930 | theme pond "pond" (note: frog, tadpole, newt, lily pad, reeds, dragonfly, pondweed, moorhen, frogspawn)
+   SHORT 1367 "snail" noun common rec 1 link 3
+   LONG  32101 "water snail" noun common rec 2 link 3
+1931 | theme pond "pond" (note: frog, tadpole, newt, lily pad, reeds, dragonfly, pondweed, moorhen, frogspawn)
+   SHORT 1367 "snail" noun common rec 1 link 3
+   LONG  60475 "ramshorn snail" noun common rec 5 link 5
+1932 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 994 "bear" [animal] noun common rec 1 link 2
+   LONG  7944 "brown bear" noun common rec 1 link 3
+1933 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 994 "bear" [animal] noun common rec 1 link 2
+   LONG  7946 "grizzly bear" noun common rec 1 link 3
+1934 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 994 "bear" [animal] noun common rec 1 link 2
+   LONG  7947 "Kodiak bear" noun proper rec 3 link 4
+1935 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 994 "bear" [animal] noun common rec 1 link 2
+   LONG  7949 "American black bear" noun proper rec 3 link 3
+1936 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 994 "bear" [animal] noun common rec 1 link 2
+   LONG  7950 "black bear" noun common rec 1 link 3
+1937 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 994 "bear" [animal] noun common rec 1 link 2
+   LONG  7951 "cinnamon bear" noun common rec 4 link 3
+1938 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7964 "grey wolf" noun common rec 2 link 2
+1939 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 995 "wolf" [animal] noun common rec 1 link 1
+   LONG  7966 "timber wolf" noun common rec 3 link 2
+1940 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 1063 "owl" noun common rec 1 link 4
+   LONG  50571 "great grey owl" noun common rec 4 link 4
+1941 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 1629 "pine" [tree] noun common rec 1 link 1
+   LONG  30087 "pine cone" noun common rec 1 link 3
+1942 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 1629 "pine" [tree] noun common rec 1 link 1
+   LONG  60477 "jack pine" noun common rec 5 link 5
+1943 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 1629 "pine" [tree] noun common rec 1 link 1
+   LONG  60479 "pine grosbeak" noun common rec 5 link 5
+1944 | theme taiga "taiga" (note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger)
+   SHORT 1639 "spruce" noun common rec 2 link 1
+   LONG  60476 "black spruce" noun common rec 5 link 4
+1945 | theme needle_leaf_trees "needle-leaf trees"
+   SHORT 1629 "pine" [tree] noun common rec 1 link 1
+   LONG  60477 "jack pine" noun common rec 5 link 5
+1946 | theme needle_leaf_trees "needle-leaf trees"
+   SHORT 1639 "spruce" noun common rec 2 link 1
+   LONG  60476 "black spruce" noun common rec 5 link 4
+1947 | theme oasis "oasis" (note: date palm, well, spring, camel, caravan, shade, pool, nomad)
+   SHORT 359 "date" [fruit] noun common rec 2 link 1
+   LONG  29980 "date palm" noun common rec 2 link 1
+1948 | theme oasis "oasis" (note: date palm, well, spring, camel, caravan, shade, pool, nomad)
+   SHORT 1002 "camel" [animal] noun common rec 1 link 1
+   LONG  32121 "camel train" noun common rec 3 link 3
+1949 | theme outback "outback" (note: red dirt, spinifex, billabong, kangaroo, dingo, road train, station, termite mound)
+   SHORT 151 "sheep" [farm animal] noun common rec 1 link 3
+   LONG  32136 "sheep station" noun common rec 3 link 2
+1950 | theme outback "outback" (note: red dirt, spinifex, billabong, kangaroo, dingo, road train, station, termite mound)
+   SHORT 984 "kangaroo" noun common rec 1 link 1
+   LONG  7899 "red kangaroo" noun common rec 2 link 2
+1951 | theme outback "outback" (note: red dirt, spinifex, billabong, kangaroo, dingo, road train, station, termite mound)
+   SHORT 32129 "station" [farm] noun common rec 2 link 2
+   LONG  32136 "sheep station" noun common rec 3 link 2
+1952 | theme outback "outback" (note: red dirt, spinifex, billabong, kangaroo, dingo, road train, station, termite mound)
+   SHORT 32129 "station" [farm] noun common rec 2 link 2
+   LONG  32137 "cattle station" noun common rec 3 link 2
+1953 | theme australian_wildlife "australian wildlife"
+   SHORT 984 "kangaroo" noun common rec 1 link 1
+   LONG  7899 "red kangaroo" noun common rec 2 link 2
+1954 | theme prairie "prairie" (note: bison, prairie dog, pronghorn, tallgrass, tornado, ranch, meadowlark)
+   SHORT 1007 "buffalo" [bison] noun common rec 2 link 1
+   LONG  60209 "buffalo grass" noun common rec 3 link 3
+1955 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1028 "seal" [animal] noun common rec 1 link 1
+   LONG  8897 "fur seal" noun common rec 3 link 4
+1956 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1028 "seal" [animal] noun common rec 1 link 1
+   LONG  8898 "elephant seal" noun common rec 3 link 3
+1957 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1028 "seal" [animal] noun common rec 1 link 1
+   LONG  8902 "leopard seal" noun common rec 3 link 2
+1958 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1028 "seal" [animal] noun common rec 1 link 1
+   LONG  9704 "Weddell seal" noun common rec 4 link 3
+1959 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1028 "seal" [animal] noun common rec 1 link 1
+   LONG  9706 "crabeater seal" noun common rec 4 link 3
+1960 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1064 "penguin" [bird] noun common rec 1 link 1
+   LONG  8234 "emperor penguin" noun common rec 1 link 1
+1961 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1064 "penguin" [bird] noun common rec 1 link 1
+   LONG  8236 "Adelie penguin" noun proper rec 4 link 3
+1962 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 1064 "penguin" [bird] noun common rec 1 link 1
+   LONG  8237 "chinstrap penguin" noun common rec 4 link 3
+1963 | theme antarctic_coast "antarctic coast" (note: penguin, seal, iceberg, krill, ice shelf, research station, skua)
+   SHORT 29374 "iceberg" noun common rec 1 link 1
+   LONG  32177 "tabular iceberg" noun common rec 5 link 3
+1964 | theme renewable_energy "renewable energy"
+   SHORT 32232 "geothermal" adjective common rec 3 link 3
+   LONG  32258 "geothermal well" noun common rec 5 link 5
+1965 | theme renewable_energy "renewable energy"
+   SHORT 32238 "wave" (full: wave energy) noun common rec 3 link 2
+   LONG  32253 "wave buoy" noun common rec 5 link 5
+1966 | theme renewable_energy "renewable energy"
+   SHORT 32244 "hydrogen" noun common rec 2 link 4
+   LONG  32256 "green hydrogen" noun common rec 4 link 4
+1967 | theme conservation_words "conservation words"
+   SHORT 32266 "poaching" noun common rec 3 link 2
+   LONG  32277 "anti-poaching" adjective common rec 4 link 3
+1968 | theme endangered_animals "endangered animals"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7751 "Siberian tiger" noun proper rec 2 link 2
+1969 | theme endangered_animals "endangered animals"
+   SHORT 216 "tiger" [animal] noun common rec 1 link 1
+   LONG  7752 "Amur tiger" noun proper rec 4 link 3
+1970 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 2054 "coal" noun common rec 1 link 1
+   LONG  22917 "coal mine" noun common rec 1 link 3
+1971 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 2054 "coal" noun common rec 1 link 1
+   LONG  32334 "bituminous coal" noun common rec 5 link 4
+1972 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 2054 "coal" noun common rec 1 link 1
+   LONG  32346 "coal seam" noun common rec 4 link 4
+1973 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 2054 "coal" noun common rec 1 link 1
+   LONG  60508 "cannel coal" noun common rec 5 link 5
+1974 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 2054 "coal" noun common rec 1 link 1
+   LONG  60510 "coal tar" noun common rec 4 link 5
+1975 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  32332 "crude oil" noun common rec 2 link 1
+1976 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  32337 "oil rig" noun common rec 1 link 2
+1977 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  32338 "oil well" noun common rec 1 link 2
+1978 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  32347 "oil shale" noun common rec 4 link 4
+1979 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  32350 "heating oil" [fuel oil] noun common rec 3 link 3
+1980 | theme fossil_fuels "fossil fuels" (note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands)
+   SHORT 32327 "natural gas" noun common rec 2 link 1
+   LONG  32344 "natural gas liquids" noun common rec 5 link 5
+1981 | theme green_living_words "green living words" (note: composting, upcycling, carpooling, reusable, refill, solar panel, rewilding)
+   SHORT 32355 "reusable" adjective common rec 2 link 2
+   LONG  32356 "reusable bag" noun common rec 1 link 1
+1982 | theme green_living_words "green living words" (note: composting, upcycling, carpooling, reusable, refill, solar panel, rewilding)
+   SHORT 32355 "reusable" adjective common rec 2 link 2
+   LONG  32364 "reusable cup" noun common rec 2 link 2
+1983 | theme western_european_countries "western european countries"
+   SHORT 2138 "Ireland" noun place rec 1 link 2
+   LONG  50 "Northern Ireland" noun place rec 2 link 4
+1984 | theme african_countries "african countries"
+   SHORT 35734 "Guinea" [country] noun place rec 3 link 4
+   LONG  35743 "Equatorial Guinea" noun place rec 4 link 5
+1985 | theme african_countries "african countries"
+   SHORT 35734 "Guinea" [country] noun place rec 3 link 4
+   LONG  35744 "Guinea-Bissau" noun place rec 4 link 5
+1986 | theme west_african_countries "west african countries"
+   SHORT 35734 "Guinea" [country] noun place rec 3 link 3
+   LONG  35744 "Guinea-Bissau" noun place rec 4 link 5
+1987 | theme east_african_countries "east african countries"
+   SHORT 35714 "Sudan" noun place rec 2 link 4
+   LONG  35773 "South Sudan" noun place rec 3 link 4
+1988 | theme french_speaking_countries "french-speaking countries" (note: French is an official or widely used language)
+   SHORT 35734 "Guinea" [country] noun place rec 3 link 4
+   LONG  35743 "Equatorial Guinea" noun place rec 4 link 5
+1989 | theme russian_cities "russian cities"
+   SHORT 56986 "Novgorod" noun place rec 4 link 4
+   LONG  56966 "Nizhny Novgorod" noun place rec 4 link 4
+1990 | theme us_states "us states" (note: Exactly the 50 US states; see the words.)
+   SHORT 36170 "Virginia" [US state] noun place rec 1 link 2
+   LONG  36192 "West Virginia" noun place rec 2 link 4
+1991 | theme mexican_states "mexican states" (note: Exactly the 32 federal entities of Mexico (31 states plus Mexico City); see the words.)
+   SHORT 36234 "Baja California" noun place rec 3 link 2
+   LONG  36235 "Baja California Sur" noun place rec 4 link 3
+1992 | theme australian_states_and_regions "australian states and regions" (note: states, territories and well-known regions: Outback, Kimberley, Top End, Gold Coast)
+   SHORT 36239 "Queensland" noun place rec 2 link 1
+   LONG  36260 "Far North Queensland" noun place rec 4 link 4
+1993 | theme spanish_regions "spanish regions"
+   SHORT 36342 "Castile" noun place rec 3 link 3
+   LONG  36363 "Old Castile" noun place rec 5 link 5
+1994 | theme spanish_regions "spanish regions"
+   SHORT 36342 "Castile" noun place rec 3 link 3
+   LONG  36364 "New Castile" noun place rec 5 link 5
+1995 | theme german_states "german states" (note: Exactly: Berlin, Hamburg, Bavaria, Bremen, Saxony, Hesse, Brandenburg, Thuringia, Saarland, Lower Saxony, Schleswig-Hols)
+   SHORT 36391 "Saxony" noun place rec 3 link 3
+   LONG  36397 "Lower Saxony" noun place rec 3 link 3
+1996 | theme german_states "german states" (note: Exactly: Berlin, Hamburg, Bavaria, Bremen, Saxony, Hesse, Brandenburg, Thuringia, Saarland, Lower Saxony, Schleswig-Hols)
+   SHORT 36391 "Saxony" noun place rec 3 link 3
+   LONG  36399 "Saxony-Anhalt" noun place rec 4 link 4
+1997 | theme african_rivers "african rivers"
+   SHORT 6661 "Nile" [river] noun place rec 2 link 1
+   LONG  57246 "Blue Nile" noun place rec 3 link 3
+1998 | theme african_rivers "african rivers"
+   SHORT 6661 "Nile" [river] noun place rec 2 link 1
+   LONG  57247 "White Nile" noun place rec 4 link 2
+1999 | theme famous_museums "famous museums"
+   SHORT 2351 "Louvre" noun place rec 2 link 1
+   LONG  37319 "Louvre Abu Dhabi" noun place rec 4 link 4
+2000 | theme maps_and_globes "maps and globes"
+   SHORT 2395 "map" [chart of places] noun common rec 1 link 1
+   LONG  2437 "map reference" noun phrase rec 3 link 3
+2001 | theme maps_and_globes "maps and globes"
+   SHORT 2421 "meridian" noun common rec 3 link 3
+   LONG  2419 "prime meridian" noun phrase rec 3 link 3
+2002 | theme maps_and_globes "maps and globes"
+   SHORT 2421 "meridian" noun common rec 3 link 3
+   LONG  2420 "Greenwich Meridian" noun place rec 4 link 3
+2003 | theme maps_and_globes "maps and globes"
+   SHORT 2434 "projection" [map] noun common rec 3 link 3
+   LONG  2435 "Mercator projection" noun proper rec 3 link 3
+2004 | theme maps_and_globes "maps and globes"
+   SHORT 2448 "triangulation" noun common rec 4 link 4
+   LONG  2450 "triangulation pillar" noun phrase rec 5 link 5
+2005 | theme continents_and_supercontinents "continents and supercontinents" (note: Africa, Asia, Europe, Eurasia, Oceania, Pangaea, Gondwana, Laurasia)
+   SHORT 1620 "Pangaea" noun proper rec 3 link 1
+   LONG  37831 "Pangaea Proxima" noun place rec 5 link 5
+2006 | theme lines_on_a_map "lines on a map"
+   SHORT 2421 "meridian" noun common rec 3 link 2
+   LONG  2419 "prime meridian" noun phrase rec 3 link 1
+2007 | theme lines_on_a_map "lines on a map"
+   SHORT 2421 "meridian" noun common rec 3 link 2
+   LONG  2420 "Greenwich Meridian" noun place rec 4 link 3
+2008 | theme lines_on_a_map "lines on a map"
+   SHORT 2422 "parallel" [latitude] noun common rec 3 link 2
+   LONG  37874 "49th parallel" noun common rec 4 link 4
+2009 | theme lines_on_a_map "lines on a map"
+   SHORT 2422 "parallel" [latitude] noun common rec 3 link 2
+   LONG  37875 "38th parallel" noun common rec 3 link 4
+2010 | theme map_words "map words"
+   SHORT 2408 "scale" [map] noun common rec 2 link 1
+   LONG  37890 "scale bar" noun common rec 3 link 2
+2011 | theme map_words "map words"
+   SHORT 2434 "projection" [map] noun common rec 3 link 2
+   LONG  2435 "Mercator projection" noun proper rec 3 link 3
+2012 | theme map_words "map words"
+   SHORT 37884 "grid" [map grid] noun common rec 2 link 2
+   LONG  2436 "grid reference" noun phrase rec 3 link 3
+2013 | theme kinds_of_maps "kinds of maps" (note: road map, atlas, globe, chart, street plan, relief map)
+   SHORT 37893 "chart" [sea chart] noun common rec 2 link 3
+   LONG  2442 "nautical chart" noun phrase rec 3 link 3
+2014 | theme kinds_of_maps "kinds of maps" (note: road map, atlas, globe, chart, street plan, relief map)
+   SHORT 37893 "chart" [sea chart] noun common rec 2 link 3
+   LONG  21037 "star chart" noun common rec 2 link 4
+2015 | theme kinds_of_maps "kinds of maps" (note: road map, atlas, globe, chart, street plan, relief map)
+   SHORT 37893 "chart" [sea chart] noun common rec 2 link 3
+   LONG  37906 "bathymetric chart" noun common rec 5 link 5
+2016 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 43 "north" [compass direction] noun common rec 1 link 1
+   LONG  37921 "north-northeast" noun common rec 3 link 3
+2017 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 43 "north" [compass direction] noun common rec 1 link 1
+   LONG  37928 "north-northwest" noun common rec 3 link 3
+2018 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 44 "south" noun common rec 1 link 1
+   LONG  37924 "south-southeast" noun common rec 3 link 3
+2019 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 44 "south" noun common rec 1 link 1
+   LONG  37925 "south-southwest" noun common rec 3 link 3
+2020 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 45 "east" noun common rec 1 link 1
+   LONG  37922 "east-northeast" noun common rec 3 link 3
+2021 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 45 "east" noun common rec 1 link 1
+   LONG  37923 "east-southeast" noun common rec 3 link 3
+2022 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 46 "west" noun common rec 1 link 1
+   LONG  37926 "west-southwest" noun common rec 3 link 3
+2023 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 46 "west" noun common rec 1 link 1
+   LONG  37927 "west-northwest" noun common rec 3 link 3
+2024 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37912 "northeast" [compass direction] noun common rec 1 link 1
+   LONG  37921 "north-northeast" noun common rec 3 link 3
+2025 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37912 "northeast" [compass direction] noun common rec 1 link 1
+   LONG  37922 "east-northeast" noun common rec 3 link 3
+2026 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37915 "southeast" noun common rec 1 link 1
+   LONG  37923 "east-southeast" noun common rec 3 link 3
+2027 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37915 "southeast" noun common rec 1 link 1
+   LONG  37924 "south-southeast" noun common rec 3 link 3
+2028 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37917 "southwest" [direction] noun common rec 1 link 1
+   LONG  37925 "south-southwest" noun common rec 3 link 3
+2029 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37917 "southwest" [direction] noun common rec 1 link 1
+   LONG  37926 "west-southwest" noun common rec 3 link 3
+2030 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37919 "northwest" noun common rec 1 link 1
+   LONG  37927 "west-northwest" noun common rec 3 link 3
+2031 | theme compass_directions "compass directions" (note: the 16 points of the compass)
+   SHORT 37919 "northwest" noun common rec 1 link 1
+   LONG  37928 "north-northwest" noun common rec 3 link 3
+2032 | theme flag_words "flag words" (note: flagpole, banner, pennant, ensign, canton, half-mast)
+   SHORT 20877 "banner" [flag] noun common rec 1 link 2
+   LONG  2535 "Star-Spangled Banner" noun title rec 2 link 3
+2033 | theme flag_words "flag words" (note: flagpole, banner, pennant, ensign, canton, half-mast)
+   SHORT 37974 "jack" [small flag] noun common rec 3 link 4
+   LONG  2531 "Union Jack" noun proper rec 1 link 1
+2034 | theme flag_words "flag words" (note: flagpole, banner, pennant, ensign, canton, half-mast)
+   SHORT 50208 "ensign" [flag] noun common rec 3 link 3
+   LONG  37991 "Red Ensign" noun proper rec 5 link 5
+2035 | theme restaurant "restaurant"
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  944 "sous chef" noun common rec 3 link 3
+2036 | theme restaurant "restaurant"
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  20045 "head chef" noun common rec 1 link 2
+2037 | theme restaurant "restaurant"
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  20060 "chef de partie" noun common rec 4 link 4
+2038 | theme restaurant "restaurant"
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  60573 "chef de rang" noun common rec 5 link 5
+2039 | theme restaurant "restaurant"
+   SHORT 26281 "menu" [restaurant] noun common rec 1 link 1
+   LONG  20031 "tasting menu" noun common rec 3 link 3
+2040 | theme restaurant "restaurant"
+   SHORT 26281 "menu" [restaurant] noun common rec 1 link 1
+   LONG  38189 "set menu" noun common rec 3 link 3
+2041 | theme restaurant "restaurant"
+   SHORT 26281 "menu" [restaurant] noun common rec 1 link 1
+   LONG  38190 "kids' menu" noun common rec 3 link 3
+2042 | theme kitchen_crew "kitchen crew"
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  944 "sous chef" noun common rec 3 link 3
+2043 | theme kitchen_crew "kitchen crew"
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  20045 "head chef" noun common rec 1 link 2
+2044 | theme kitchen_crew "kitchen crew"
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  20060 "chef de partie" noun common rec 4 link 4
+2045 | theme supermarket "supermarket"
+   SHORT 12802 "aisle" [walkway] noun common rec 1 link 1
+   LONG  38208 "dairy aisle" noun common rec 2 link 2
+2046 | theme supermarket "supermarket"
+   SHORT 12802 "aisle" [walkway] noun common rec 1 link 1
+   LONG  38209 "frozen aisle" noun common rec 2 link 2
+2047 | theme supermarket "supermarket"
+   SHORT 25992 "barcode" noun common rec 1 link 2
+   LONG  38200 "barcode scanner" noun common rec 2 link 3
+2048 | theme supermarket "supermarket"
+   SHORT 33997 "trolley" [shopping] noun common rec 1 link 1
+   LONG  38202 "trolley bay" noun common rec 3 link 4
+2049 | theme supermarket "supermarket"
+   SHORT 33999 "checkout" [shop till] noun common rec 1 link 1
+   LONG  38195 "self-checkout" noun common rec 2 link 2
+2050 | theme supermarket "supermarket"
+   SHORT 33999 "checkout" [shop till] noun common rec 1 link 1
+   LONG  38213 "checkout divider" noun common rec 4 link 4
+2051 | theme post_office "post office"
+   SHORT 23300 "stamp" [postage] noun common rec 2 link 1
+   LONG  38229 "stamp book" noun common rec 3 link 4
+2052 | theme post_office "post office"
+   SHORT 28070 "mail" [post] noun common rec 2 link 2
+   LONG  4120 "mail carrier" noun phrase rec 2 link 2
+2053 | theme post_office "post office"
+   SHORT 28070 "mail" [post] noun common rec 2 link 2
+   LONG  35165 "registered mail" noun common rec 3 link 3
+2054 | theme post_office "post office"
+   SHORT 28070 "mail" [post] noun common rec 2 link 2
+   LONG  35174 "mail slot" noun common rec 3 link 4
+2055 | theme library "library"
+   SHORT 6452 "book" noun common rec 1 link 1
+   LONG  38249 "book trolley" noun common rec 3 link 3
+2056 | theme library "library"
+   SHORT 6452 "book" noun common rec 1 link 1
+   LONG  38258 "e-book" noun common rec 2 link 3
+2057 | theme library "library"
+   SHORT 12139 "catalogue" noun common rec 3 link 3
+   LONG  38252 "card catalogue" noun common rec 4 link 3
+2058 | theme library "library"
+   SHORT 65639 "card" [borrowing] noun common rec 1 link 1
+   LONG  38252 "card catalogue" noun common rec 4 link 3
+2059 | theme cafe "cafe"
+   SHORT 226 "coffee" [drink] noun common rec 1 link 1
+   LONG  19523 "iced coffee" noun common rec 1 link 3
+2060 | theme cafe "cafe"
+   SHORT 226 "coffee" [drink] noun common rec 1 link 1
+   LONG  23601 "coffee grinder" noun common rec 2 link 3
+2061 | theme bakery "bakery"
+   SHORT 552 "bread" [food] noun common rec 1 link 1
+   LONG  18060 "rye bread" noun common rec 1 link 3
+2062 | theme bakery "bakery"
+   SHORT 552 "bread" [food] noun common rec 1 link 1
+   LONG  19861 "bread knife" noun common rec 2 link 3
+2063 | theme bakery "bakery"
+   SHORT 554 "roll" [bread] noun common rec 1 link 2
+   LONG  18077 "cinnamon roll" noun common rec 1 link 2
+2064 | theme bakery "bakery"
+   SHORT 559 "cake" [food] noun common rec 1 link 1
+   LONG  38267 "cake stand" noun common rec 3 link 4
+2065 | theme hair_salon "hair salon"
+   SHORT 3727 "shampoo" noun common rec 1 link 1
+   LONG  57477 "shampoo basin" noun common rec 3 link 3
+2066 | theme hair_salon "hair salon"
+   SHORT 3753 "comb" [hair tool] noun common rec 1 link 2
+   LONG  57474 "tail comb" noun common rec 4 link 4
+2067 | theme hair_salon "hair salon"
+   SHORT 57469 "spray" (full: hair spray) noun common rec 1 link 3
+   LONG  23843 "spray bottle" noun common rec 2 link 4
+2068 | theme park "park"
+   SHORT 55758 "picnic" [meal] noun common rec 1 link 2
+   LONG  3055 "picnic table" noun common rec 1 link 2
+2069 | theme shopping_mall "shopping mall"
+   SHORT 27982 "store" noun common rec 2 link 1
+   LONG  57494 "department store" noun common rec 1 link 1
+2070 | theme shopping_mall "shopping mall"
+   SHORT 27982 "store" noun common rec 2 link 1
+   LONG  57495 "anchor store" noun common rec 4 link 4
+2071 | theme shopping_mall "shopping mall"
+   SHORT 27982 "store" noun common rec 2 link 1
+   LONG  57500 "shoe store" noun common rec 1 link 2
+2072 | theme hospital "hospital"
+   SHORT 15277 "ward" [hospital] noun common rec 2 link 2
+   LONG  15287 "maternity ward" noun common rec 2 link 2
+2073 | theme hospital "hospital"
+   SHORT 15277 "ward" [hospital] noun common rec 2 link 2
+   LONG  60574 "ward round" noun common rec 3 link 4
+2074 | theme fire_station "fire station"
+   SHORT 23153 "ladder" [steps] noun common rec 1 link 2
+   LONG  57521 "aerial ladder" noun common rec 4 link 3
+2075 | theme police_station "police station"
+   SHORT 4191 "evidence" noun common rec 1 link 3
+   LONG  57526 "evidence locker" noun common rec 4 link 4
+2076 | theme police_station "police station"
+   SHORT 32576 "Sergeant" noun title rec 2 link 3
+   LONG  57523 "desk sergeant" noun common rec 3 link 3
+2077 | theme office "office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  16520 "standing desk" noun common rec 3 link 3
+2078 | theme office "office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  23221 "desk lamp" noun common rec 1 link 3
+2079 | theme office "office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  33174 "hot desk" noun common rec 4 link 4

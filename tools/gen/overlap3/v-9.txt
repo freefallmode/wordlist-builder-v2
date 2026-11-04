@@ -1,0 +1,41 @@
+GROUP animal_powered_travel 163 9457
+GROUP accommodation 2469 3005
+# bar tab is a bill, not part of a hotel
+OUT hotel 48330 13886
+GROUP hotel_staff 4104 48343
+# en suite is an adjective, not a room type
+OUT room_types 48361 48376
+GROUP hotel_chains 48438 48468
+GROUP hotel_chains 48441 48467
+GROUP rvs_and_campers 48599 48607
+# van life is a lifestyle, not a vehicle
+OUT rvs_and_campers 65707 48612
+GROUP safari_words 48730 48731
+GROUP travel_accessories 48843 48848
+GROUP sightseeing_words 2921 48917
+# named museum, not a kind of attraction
+OUT tourist_attractions 2472 37301
+GROUP construction_vehicles 3102 49050
+GROUP construction_vehicles 49047 49048
+# tractor trailer is a semi truck, not a farm vehicle
+OUT farm_vehicles 3097 3162
+GROUP army_ground_vehicles 3125 49260
+BRAND delivery_vehicles 46631 49121
+BRAND delivery_vehicles 46631 49122
+BRAND delivery_vehicles 46631 49123
+BRAND delivery_vehicles 46631 49124
+BRAND delivery_vehicles 46631 49131
+BRAND delivery_vehicles 46631 49136
+GROUP delivery_vehicles 49116 49134
+# Cinderella's coach, fiction not a vehicle type
+OUT horse_drawn_vehicles 49164 13626
+# a semi trailer is the trailer, not a truck
+OUT truck_types 3163 49185
+# concrete truck is the concrete mixer
+MERGE truck_types 49201 3109
+# idiom, not a kind of tooth
+OUT teeth 14482 14514
+GROUP allergies 14893 14951
+GROUP historic_diseases 3379 15055
+GROUP smoking_words 7350 15469
+GROUP oceanian_remedies 1641 15546

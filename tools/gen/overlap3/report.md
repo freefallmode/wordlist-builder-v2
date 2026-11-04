@@ -1,0 +1,678 @@
+# Overlap sweep
+
+{"MERGE":25,"BRAND":2,"GROUP":428,"OUT":132,"SHORT-OUT":1,"SUB":0,"bad":5,"orphanedToAlias":17}
+
+## Sub-themes
+
+## Brand entries left without a theme
+- 17232 apricot kernel (from stone fruits)
+- 17220 maraschino cherry (from stone fruits)
+- 17584 onion powder (from onion family)
+- 17578 garlic scape (from onion family)
+- 17718 chicken breast (from poultry)
+- 17719 chicken thigh (from poultry)
+- 17726 rotisserie chicken (from poultry)
+- 17728 chicken liver (from poultry)
+- 17722 duck breast (from poultry)
+- 17808 bacon bits (from cured meats)
+- 18269 icing tip (from cake decorations)
+- 18408 truffle shell (from chocolates)
+- 18407 praline filling (from chocolates)
+- 18669 dumpling soup (from dumplings)
+- 19646 white wine (from oils and vinegars)
+- 19269 mille crepe (from pancakes of the world)
+- 64778 sushi roll (from sushi types)
+- 19780 pot roast (from cooking methods)
+- 7991 lone wolf (from wild dogs and foxes)
+- 7992 wolf pack (from wild dogs and foxes)
+- 8496 peace dove (from pigeons and doves)
+- 50763 salmon run (from salmon and trout)
+- 1513 horse race (from horses)
+- 9878 sea elephant (from animals with tusks)
+- 31166 lighthouse keeper (from shipwreck coast words)
+- 31814 claim jumper (from gold rush words)
+- 32346 coal seam (from fossil fuels)
+- 60510 coal tar (from fossil fuels)
+- 32337 oil rig (from fossil fuels)
+- 32338 oil well (from fossil fuels)
+- 47040 hailing a cab (from taxis of the world)
+- 47620 stem to stern (from nautical directions)
+- 2908 model railroad (from trains)
+- 48044 ollie north (from skateboard tricks)
+- 47180 test pilot (from flight crew)
+- 47181 fighter pilot (from flight crew)
+- 47182 crop duster pilot (from flight crew)
+- 47183 stunt pilot (from flight crew)
+- 47184 helicopter pilot (from flight crew)
+- 48612 van life (from rvs and campers)
+- 49185 semi trailer (from truck types)
+- 14514 sweet tooth (from teeth)
+- 60904 engagement party (from life events)
+- 50171 Bull Run (from stock market words)
+- 34238 Gideon Bible (from holy books)
+- 34426 Heaven's Gate (from afterlife words)
+- 7744 navy blue (from military)
+- 34645 medal bar (from medals and honors)
+- 23388 mouse trap (from under the sink)
+- 24206 listing agent (from real estate words)
+- 55779 Shamrock Shake (from st. patrick's day)
+- 25289 Cyber Monday (from days and weeks)
+- 25300 weekend break (from days and weeks)
+- 25618 candle maker (from candle words)
+- 42978 tennis doubles (from racket sports)
+- 44290 bowl over (from sports verbs)
+- 45199 craps table (from casino games)
+- 11180 whole tone (from notes and rests)
+- 11927 oil on canvas (from painting words)
+- 12281 stage right (from theater building parts)
+- 13118 Shonen Jump (from anime and manga words)
+- 14168 French door (from window styles)
+- 54884 Achilles' heel (from trojan war)
+- 22426 witch hunt (from witchcraft)
+- 22498 pixie dust (from fairy folk)
+- 40949 Human Genome Project (from genetics words)
+- 41321 comet tail (from space rocks)
+- 41302 asteroid belt (from space rocks)
+- 41343 payload bay (from spaceflight words)
+- 41335 launch pad (from spaceflight words)
+- 62493 clever clogs (from words for smart)
+- 40204 bull elephant (from things with horns)
+- 40270 cooling engine (from things that tick)
+
+## Changes
+- OUT in stone fruits: yellow plum out (kept plum)
+- OUT in stone fruits: apricot kernel out (kept apricot)
+- OUT in stone fruits: maraschino cherry out (kept cherry)
+- GROUP in apple varieties: Pippin + Cox's Orange Pippin
+- GROUP in apple varieties: Pippin + Newtown Pippin
+- OUT in nuts: water chestnut out (kept chestnut)
+- GROUP in nuts: chestnut + sweet chestnut
+- GROUP in beans and pulses: haricot + haricot vert
+- OUT in onion family: pickled onion out (kept onion)
+- OUT in onion family: onion powder out (kept onion)
+- OUT in onion family: garlic scape out (kept garlic)
+- OUT in poultry: chicken breast out (kept chicken)
+- OUT in poultry: chicken thigh out (kept chicken)
+- OUT in poultry: chicken wings out (kept chicken)
+- OUT in poultry: roast chicken out (kept chicken)
+- OUT in poultry: rotisserie chicken out (kept chicken)
+- OUT in poultry: chicken liver out (kept chicken)
+- MERGE in poultry: free-range chicken out (kept chicken)
+- MERGE in poultry: organic chicken out (kept chicken)
+- OUT in poultry: duck breast out (kept duck)
+- OUT in poultry: peking duck out (kept duck)
+- OUT in poultry: turkey leg out (kept turkey)
+- OUT in cured meats: bacon bits out (kept bacon)
+- GROUP in cured meats: ham + smoked ham
+- GROUP in cured meats: jamon + jamon iberico
+- GROUP in fish to eat: bass + sea bass
+- GROUP in seafood dishes: paella + paella marinera
+- GROUP in seafood dishes: scampi + shrimp scampi
+- GROUP in seafood dishes: chowder + clam chowder
+- GROUP in barbecue foods: kebab + shish kebab
+- GROUP in barbecue foods: brisket + texas brisket
+- GROUP in barbecue foods: pulled pork + carolina pulled pork
+- GROUP in barbecue foods: ribs + spare ribs
+- GROUP in barbecue foods: ribs + baby back ribs
+- GROUP in barbecue foods: ribs + pork ribs
+- GROUP in barbecue foods: ribs + beef ribs
+- GROUP in barbecue foods: ribs + kansas city ribs
+- GROUP in blue cheeses: bleu + bleu d'auvergne
+- GROUP in blue cheeses: bleu + bleu de gex
+- GROUP in blue cheeses: bleu + bleu de bresse
+- GROUP in italian cheeses: pecorino + pecorino romano
+- GROUP in cheesemaking words: culture + starter culture
+- GROUP in flatbreads: roti + roti canai
+- GROUP in cakes: lemon cake + lemon drizzle
+- GROUP in pies and tarts: apple + Dutch apple pie
+- GROUP in flours: wheat flour + whole wheat
+- OUT in cake decorations: icing tip out (kept icing)
+- GROUP in cake decorations: sprinkles + rainbow sprinkles
+- GROUP in cake decorations: sprinkles + confetti sprinkles
+- GROUP in cake decorations: fondant + rolled fondant
+- OUT in frozen desserts: ice cream cone out (kept ice cream)
+- GROUP in candy: brittle + peanut brittle
+- OUT in chocolates: truffle shell out (kept truffle)
+- OUT in chocolates: praline filling out (kept praline)
+- GROUP in pasta dishes: bolognese + spaghetti bolognese
+- GROUP in pasta dishes: arrabbiata + penne arrabbiata
+- GROUP in noodles: rice noodles + rice sticks
+- GROUP in noodle dishes: ramen + miso ramen
+- GROUP in noodle dishes: ramen + tonkotsu ramen
+- GROUP in noodle dishes: udon + kitsune udon
+- GROUP in noodle dishes: udon + yaki udon
+- GROUP in noodle dishes: soba + zaru soba
+- GROUP in noodle dishes: kway teow + char kway teow
+- GROUP in rice dishes: fried + egg fried
+- GROUP in east asian grain dishes: fried rice + egg fried rice
+- GROUP in breakfast cereals: Cheerios + Honey Nut Cheerios
+- OUT in dumplings: dumpling soup out (kept dumpling)
+- GROUP in rice varieties: jasmine + Thai jasmine
+- GROUP in spices: cinnamon + cinnamon stick
+- GROUP in salad dressings: ranch + bacon ranch
+- GROUP in salad dressings: vinaigrette + lemon vinaigrette
+- GROUP in salad dressings: vinaigrette + raspberry vinaigrette
+- GROUP in dips: queso + chili con queso
+- GROUP in dips: cheese dip + nacho cheese
+- GROUP in dips: onion dip + french onion dip
+- OUT in oils and vinegars: white wine out (kept white)
+- GROUP in soups: noodle soup + chicken noodle
+- GROUP in soups: chowder + clam chowder
+- GROUP in soups: bisque + lobster bisque
+- GROUP in stews: chili + chili con carne
+- GROUP in sandwiches: finger sandwich + fish finger sandwich
+- GROUP in fast food: burrito + breakfast burrito
+- GROUP in fast food: cheeseburger + double cheeseburger
+- GROUP in breakfast foods: eggs + scrambled eggs
+- GROUP in chip flavors: chicken + roast chicken
+- GROUP in chip flavors: sour cream + sour cream and onion
+- GROUP in street food: kebab + doner kebab
+- GROUP in potato dishes: baked + twice baked potato
+- GROUP in savory pies: pot pie + chicken pot pie
+- GROUP in savory pies: steak pie + steak and kidney
+- GROUP in savory pies: pasty + Cornish pasty
+- OUT in pancakes of the world: mille crepe out (kept crepe)
+- GROUP in burger toppings: onion + grilled onion
+- GROUP in burger toppings: onion + caramelized onion
+- GROUP in burger toppings: cheese + swiss cheese
+- GROUP in burger toppings: cheese + blue cheese
+- GROUP in burger toppings: cheese + american cheese
+- GROUP in west african food: plantain + fried plantain
+- GROUP in sushi types: nigiri + tamago nigiri
+- SHORT-OUT in sushi types: sushi roll out (kept california roll)
+- GROUP in south american drinks: chicha + chicha morada
+- GROUP in hot drinks: chai + chai latte
+- GROUP in hot drinks: hot cider + mulled cider
+- GROUP in soft drinks: cola + diet cola
+- GROUP in soft drinks: cola + cherry cola
+- GROUP in asian drinks: milk tea + Hong Kong milk tea
+- GROUP in spirits: whisky + Scotch whisky
+- OUT in cooking methods: pot roast out (kept roast)
+- BRAND in cookware: Crock-Pot out (kept pot)
+- BRAND in cookware: Instant Pot out (kept pot)
+- GROUP in meals of the day: tea + afternoon tea
+- GROUP in meals of the day: tea + high tea
+- GROUP in diner: milkshake + malted milkshake
+- GROUP in foods on a stick: kebab + shish kebab
+- OUT in wild dogs and foxes: lone wolf out (kept wolf)
+- OUT in wild dogs and foxes: wolf pack out (kept wolf)
+- GROUP in big cats: lion + African lion
+- GROUP in big cats: lion + Asiatic lion
+- GROUP in big cats: lion + Barbary lion
+- GROUP in big cats: tiger + Bengal tiger
+- GROUP in big cats: tiger + Siberian tiger
+- GROUP in big cats: tiger + Amur tiger
+- GROUP in big cats: tiger + Sumatran tiger
+- GROUP in big cats: tiger + Indochinese tiger
+- GROUP in big cats: tiger + Malayan tiger
+- GROUP in big cats: leopard + Persian leopard
+- GROUP in big cats: leopard + Amur leopard
+- GROUP in big cats: clouded leopard + Sunda clouded leopard
+- GROUP in big cats: leopard + Sunda clouded leopard
+- GROUP in small wild cats: wildcat + European wildcat
+- GROUP in small wild cats: wildcat + Scottish wildcat
+- GROUP in small wild cats: wildcat + African wildcat
+- GROUP in small wild cats: bay cat + Bornean bay cat
+- GROUP in marsupials: opossum + Virginia opossum
+- OUT in rabbits and hares: Easter bunny out (kept bunny)
+- GROUP in owls: eagle + Eurasian eagle-owl
+- GROUP in vultures: turkey + turkey buzzard
+- GROUP in geese and swans: goose + wild goose
+- MERGE in flightless birds: common ostrich out (kept ostrich)
+- OUT in pigeons and doves: peace dove out (kept dove)
+- GROUP in pigeons and doves: collared + Eurasian collared dove
+- OUT in bird body parts: big toe out (kept toe)
+- OUT in what a bird stands on: big toe out (kept toe)
+- OUT in salmon and trout: salmon run out (kept salmon)
+- MERGE in frogs and toads: poison dart out (kept dart)
+- GROUP in salamanders and newts: crested + great crested
+- GROUP in salamanders and newts: eft + red eft
+- GROUP in fish body parts: tail + tail fin
+- GROUP in constrictor snakes: constrictor + boa constrictor
+- GROUP in turtles and tortoises: slider + red-eared slider
+- OUT in ants and termites: termite mound out (kept termite)
+- GROUP in domestic animals: goat + nanny goat
+- GROUP in domestic animals: goat + billy goat
+- GROUP in farm animals: goat + nanny goat
+- GROUP in farm animals: goat + billy goat
+- GROUP in pets: rat + fancy rat
+- GROUP in small pets: mouse + fancy mouse
+- GROUP in small pets: rat + fancy rat
+- GROUP in working animals: mule + pack mule
+- OUT in horses: horse race out (kept horse)
+- OUT in horses: horse trailer out (kept horse)
+- GROUP in horses: horse + wild horse
+- GROUP in horse family: horse + wild horse
+- GROUP in horse family: horse + feral horse
+- GROUP in arctic animals: Arctic wolf + white wolf
+- GROUP in city animals: rat + sewer rat
+- GROUP in city animals: fox + urban fox
+- GROUP in city animals: pigeon + feral pigeon
+- OUT in animals with tusks: elephant seal out (kept elephant)
+- OUT in animals with tusks: sea elephant out (kept elephant)
+- MERGE in animals with tusks: wild boar out (kept boar)
+- GROUP in burrowing animals: gopher + pocket gopher
+- GROUP in extinct animals: moa + giant moa
+- GROUP in extinct birds: moa + giant moa
+- GROUP in animal body parts: hoof + cloven hoof
+- GROUP in animal diets: carnivore + obligate carnivore
+- GROUP in evergreen trees: pine + pine nut tree
+- GROUP in mediterranean trees: pine + pine nut tree
+- GROUP in evergreen trees: cedar + cedar of Lebanon
+- GROUP in evergreen trees: sequoia + giant sequoia
+- GROUP in north american trees: sequoia + giant sequoia
+- GROUP in things that fall from trees: cone + pine cone
+- GROUP in woodland features: hollow + tree hollow
+- GROUP in garden tools: shears + pruning shears
+- GROUP in garden tools: shears + grass shears
+- GROUP in coastal plants: samphire + rock samphire
+- GROUP in coastal plants: samphire + marsh samphire
+- OUT in shipwreck coast words: lighthouse keeper out (kept lighthouse)
+- MERGE in shipwreck coast words: treacherous reef out (kept reef)
+- MERGE in shipwreck coast words: hidden rocks out (kept rocks)
+- GROUP in wave words: swell + ground swell
+- GROUP in storms: cyclone + tropical cyclone
+- MERGE in forecast words: barometric pressure out (kept pressure)
+- GROUP in signs of spring: spring showers + April showers
+- OUT in gold rush words: claim jumper out (kept claim)
+- GROUP in gold rush words: claim + stake a claim
+- GROUP in conservation words: poaching + anti-poaching
+- OUT in fossil fuels: coal mine out (kept coal)
+- OUT in fossil fuels: coal seam out (kept coal)
+- OUT in fossil fuels: coal tar out (kept coal)
+- OUT in fossil fuels: oil rig out (kept oil)
+- OUT in fossil fuels: oil well out (kept oil)
+- GROUP in western european countries: Ireland + Northern Ireland
+- GROUP in african countries: Guinea + Equatorial Guinea
+- GROUP in african countries: Guinea + Guinea-Bissau
+- GROUP in west african countries: Guinea + Guinea-Bissau
+- GROUP in east african countries: Sudan + South Sudan
+- GROUP in french-speaking countries: Guinea + Equatorial Guinea
+- GROUP in russian cities: Novgorod + Nizhny Novgorod
+- GROUP in us states: Virginia + West Virginia
+- GROUP in mexican states: Baja California + Baja California Sur
+- GROUP in australian states and regions: Queensland + Far North Queensland
+- GROUP in spanish regions: Castile + Old Castile
+- GROUP in spanish regions: Castile + New Castile
+- GROUP in german states: Saxony + Lower Saxony
+- GROUP in german states: Saxony + Saxony-Anhalt
+- GROUP in african rivers: Nile + Blue Nile
+- GROUP in african rivers: Nile + White Nile
+- GROUP in famous museums: Louvre + Louvre Abu Dhabi
+- OUT in maps and globes: map reference out (kept map)
+- GROUP in maps and globes: meridian + prime meridian
+- GROUP in maps and globes: meridian + Greenwich Meridian
+- GROUP in lines on a map: meridian + prime meridian
+- GROUP in lines on a map: meridian + Greenwich Meridian
+- OUT in flag words: Star-Spangled Banner out (kept banner)
+- GROUP in supermarket: checkout + self-checkout
+- GROUP in library: catalogue + card catalogue
+- OUT in bakery: bread knife out (kept bread)
+- OUT in bakery: cake stand out (kept cake)
+- GROUP in police station: Sergeant + desk sergeant
+- GROUP in airport: gate + boarding gate
+- GROUP in ski resort: lodge + base lodge
+- GROUP in farm buildings: stable + stable block
+- GROUP in industrial buildings: depot + storage depot
+- GROUP in middle eastern buildings: palace + Topkapi Palace
+- GROUP in middle eastern buildings: mosque + Blue Mosque
+- GROUP in middle eastern buildings: mosque + Sultan Ahmed Mosque
+- GROUP in middle eastern buildings: mosque + Al-Aqsa Mosque
+- GROUP in middle eastern buildings: mosque + Sheikh Zayed Mosque
+- GROUP in middle eastern buildings: mosque + Umayyad Mosque
+- GROUP in east asian buildings: castle + Himeji Castle
+- GROUP in east asian buildings: castle + Osaka Castle
+- GROUP in east asian buildings: temple + Temple of Heaven
+- GROUP in east asian buildings: temple + Shaolin Temple
+- GROUP in east asian buildings: pavilion + Golden Pavilion
+- GROUP in east asian buildings: shrine + Meiji Shrine
+- GROUP in street furniture: street sign + road sign
+- GROUP in parts of a road: shoulder + hard shoulder
+- GROUP in national animals: kangaroo + red kangaroo
+- GROUP in national animals: condor + Andean condor
+- GROUP in national animals: oryx + Arabian oryx
+- GROUP in national flowers: rose + red rose
+- GROUP in national flowers: lotus + blue lotus
+- GROUP in national instruments: fiddle + hardanger fiddle
+- GROUP in german car brands: Mercedes + Mercedes-AMG
+- GROUP in british car brands: Rover + Land Rover
+- GROUP in motor racing: Grand Prix + Monaco Grand Prix
+- GROUP in parking words: parking spot + handicap spot
+- GROUP in parking words: bay parking + EV charging bay
+- GROUP in public transportation: rickshaw + auto rickshaw
+- GROUP in bus types: shuttle + airport shuttle
+- GROUP in bus types: airport bus + airport shuttle
+- GROUP in bus types: school + school coach
+- GROUP in ticket words: off-peak + super off-peak
+- GROUP in ticket words: transfer + free transfer
+- GROUP in taxis of the world: rickshaw + auto rickshaw
+- GROUP in cable cars and lifts: cable car + San Francisco cable car
+- GROUP in cable cars and lifts: gondola + ski gondola
+- GROUP in plane parts: turbine + ram air turbine
+- GROUP in flight crew: pilot + airline pilot
+- GROUP in flight crew: pilot + commercial pilot
+- GROUP in flight crew: flight engineer + aircraft engineer
+- GROUP in small boats: dinghy + rubber dinghy
+- GROUP in working boats: freighter + coastal freighter
+- GROUP in ports and harbors: harbor + inner harbor
+- GROUP in nautical directions: ahead + dead ahead
+- GROUP in ship crew: mate + first mate
+- GROUP in ship crew: engineer + chief engineer
+- GROUP in trains: locomotive + steam locomotive
+- GROUP in trains: engine + steam engine
+- GROUP in trains: whistle + steam whistle
+- GROUP in parts of a train: cab + driver's cab
+- GROUP in bike types: cruiser + beach cruiser
+- GROUP in skateboard tricks: shove-it + pop shove-it
+- GROUP in tricks where the board spins: shove-it + pop shove-it
+- GROUP in scooters and skates: scooter + e-scooter
+- GROUP in scooters and skates: skates + roller skates
+- GROUP in scooters and skates: skateboard + electric skateboard
+- GROUP in scooters and skates: electric + electric skateboard
+- GROUP in skateboard parts: deck + maple deck
+- OUT in air travel: jet stream out (kept jet)
+- OUT in taxis of the world: hailing a cab out (kept cab)
+- OUT in nautical directions: stem to stern out (kept stern)
+- OUT in trains: model railroad out (kept railroad)
+- OUT in skateboard tricks: ollie north out (kept ollie)
+- OUT in flight crew: bush pilot out (kept pilot)
+- OUT in flight crew: test pilot out (kept pilot)
+- OUT in flight crew: fighter pilot out (kept pilot)
+- OUT in flight crew: crop duster pilot out (kept pilot)
+- OUT in flight crew: stunt pilot out (kept pilot)
+- OUT in flight crew: helicopter pilot out (kept pilot)
+- OUT in scooters and skates: mobility scooter out (kept scooter)
+- GROUP in animal-powered travel: mule + pack mule
+- GROUP in accommodation: hotel + luxury hotel
+- OUT in hotel: bar tab out (kept hotel bar)
+- GROUP in hotel staff: manager + general manager
+- OUT in hotel room types: en suite out (kept suite)
+- GROUP in hotel chains: Marriott + Courtyard by Marriott
+- GROUP in hotel chains: Holiday Inn + Holiday Inn Express
+- GROUP in rvs and campers: trailer + travel trailer
+- OUT in rvs and campers: van life out (kept van)
+- GROUP in safari words: camp + tented camp
+- GROUP in travel accessories: toiletry bag + hanging toiletry bag
+- GROUP in sightseeing words: tour + guided tour
+- OUT in tourist attractions: Science Museum out (kept museum)
+- GROUP in construction vehicles: digger + mini digger
+- GROUP in construction vehicles: paver + asphalt paver
+- OUT in farm vehicles: tractor trailer out (kept tractor)
+- GROUP in army ground vehicles: tank + main battle tank
+- GROUP in delivery vehicles: delivery robot + sidewalk robot
+- OUT in horse-drawn vehicles: pumpkin coach out (kept coach)
+- OUT in truck types: semi trailer out (kept semi)
+- MERGE in truck types: concrete mixer out (kept concrete truck)
+- OUT in teeth: sweet tooth out (kept tooth)
+- GROUP in allergies: rhinitis + allergic rhinitis
+- GROUP in historic diseases: plague + bubonic plague
+- GROUP in smoking words: vape + vape pen
+- GROUP in oceanian remedies: eucalyptus + eucalyptus oil
+- GROUP in bedding: sheet + flat sheet
+- GROUP in nightwear: pajamas + flannel pajamas
+- GROUP in nightwear: pajamas + footed pajamas
+- GROUP in short sleeps: nap + power nap
+- GROUP in toiletries for washing: soap + bar soap
+- GROUP in toiletries for washing: soap + hand soap
+- GROUP in toiletries for washing: soap + antibacterial soap
+- GROUP in toiletries for washing: soap + liquid soap
+- OUT in toiletries for washing: soap dish out (kept soap)
+- GROUP in toiletries for washing: soap + castile soap
+- GROUP in toiletries for washing: soap + black soap
+- GROUP in hair care: comb + wide-tooth comb
+- GROUP in skincare products: serum + vitamin c serum
+- GROUP in makeup: eyeliner + gel eyeliner
+- GROUP in makeup: powder + pressed powder
+- GROUP in makeup: compact + cushion compact
+- GROUP in bath time: salts + Epsom salts
+- GROUP in middle eastern grooming: oud + oud oil
+- GROUP in shaving: razor + safety razor
+- GROUP in shaving: razor + straight razor
+- GROUP in shaving: razor + disposable razor
+- GROUP in shaving: aftershave + aftershave balm
+- GROUP in shaving: trimmer + beard trimmer
+- GROUP in shaving: brush + badger brush
+- GROUP in sun care: sunscreen + sunscreen stick
+- GROUP in sun care: sunscreen + mineral sunscreen
+- GROUP in spa: massage + bamboo massage
+- GROUP in spa: sauna + infrared sauna
+- GROUP in turkish bath: soap + olive oil soap
+- GROUP in food groups: grains + whole grains
+- GROUP in healthy snacks: popcorn + air-popped popcorn
+- GROUP in ways of crying: cry + cry one's eyes out
+- GROUP in family and friends: buddy + bosom buddy
+- GROUP in family and friends: kin + next of kin
+- GROUP in family members: kin + next of kin
+- GROUP in extended family: kin + kith and kin
+- GROUP in words for friend: buddy + bosom buddy
+- OUT in life events: engagement party out (kept engagement)
+- GROUP in angry words: mad + hopping mad
+- GROUP in science jobs: scientist + research scientist
+- GROUP in cowboy words: hat + ten-gallon hat
+- GROUP in cowboy outfits: hat + ten-gallon hat
+- GROUP in emergency workers: nurse + ER nurse
+- GROUP in latin american currencies: peso + Mexican peso
+- GROUP in latin american currencies: peso + Argentine peso
+- OUT in stock market words: Bull Run out (kept bull)
+- GROUP in religious festivals: Eid + Eid al-Adha
+- GROUP in religious festivals: Eid + Eid al-Fitr
+- GROUP in holy books: Bible + King James Bible
+- OUT in holy books: Gideon Bible out (kept Bible)
+- GROUP in religious clothing: robe + saffron robe
+- OUT in afterlife words: Heaven's Gate out (kept heaven)
+- OUT in military: navy blue out (kept navy)
+- GROUP in air force words: jet + fighter jet
+- OUT in medals and honors: medal bar out (kept medal)
+- GROUP in classroom items: projector + overhead projector
+- GROUP in university degrees: bachelor + bachelor of arts
+- GROUP in university degrees: bachelor + bachelor of science
+- GROUP in university degrees: master + master of arts
+- GROUP in university degrees: master + master of science
+- GROUP in old ways to communicate: semaphore + semaphore flags
+- OUT in old ways to communicate: telegraph pole out (kept telegraph)
+- GROUP in social classes: gentry + landed gentry
+- GROUP in manners and etiquette: manners + mind your manners
+- GROUP in maori culture: haka + kapa haka
+- GROUP in junk drawer: candles + birthday candles
+- GROUP in junk drawer: batteries + dead batteries
+- OUT in closet contents: hat stand out (kept hat)
+- OUT in under the sink: mouse trap out (kept trap)
+- GROUP in lights and lamps: strip light + LED strip
+- GROUP in bathroom fixtures: towel rail + heated towel rail
+- GROUP in measuring tools: caliper + vernier caliper
+- OUT in bins and recycling: trash collector out (kept trash)
+- OUT in real estate words: listing agent out (kept listing)
+- MERGE in household bills: water rates out (kept water bill)
+- GROUP in household bills: insurance + home insurance
+- GROUP in indian clothing: salwar + salwar kameez
+- GROUP in work clothes: overalls + bib overalls
+- GROUP in fashion designers: Versace + Donatella Versace
+- OUT in scarves and gloves: oven mitt out (kept mitt)
+- OUT in neckwear: tie pin out (kept tie)
+- OUT in neckwear: tie clip out (kept tie)
+- GROUP in easter: Easter egg + chocolate egg
+- MERGE in wedding anniversaries: ruby wedding out (kept ruby)
+- OUT in st. patrick's day: Shamrock Shake out (kept shamrock)
+- GROUP in fireworks: rocket + sky rocket
+- OUT in days and weeks: Blue Monday out (kept Monday)
+- OUT in days and weeks: Cyber Monday out (kept Monday)
+- OUT in days and weeks: Shrove Tuesday out (kept Tuesday)
+- OUT in days and weeks: Ash Wednesday out (kept Wednesday)
+- OUT in days and weeks: Maundy Thursday out (kept Thursday)
+- OUT in days and weeks: Good Friday out (kept Friday)
+- OUT in days and weeks: Black Friday out (kept Friday)
+- OUT in days and weeks: Palm Sunday out (kept Sunday)
+- OUT in days and weeks: weekend break out (kept weekend)
+- OUT in candle words: candle maker out (kept candle)
+- OUT in locks and keys: key cutter out (kept key)
+- OUT in racket sports: tennis doubles out (kept tennis)
+- MERGE in diving terms: pike position out (kept pike)
+- MERGE in diving terms: tuck position out (kept tuck)
+- MERGE in field events: hammer throw out (kept hammer)
+- MERGE in track events: relay race out (kept relay)
+- MERGE in triathlon words: transition area out (kept transition)
+- MERGE in sports equipment: hockey puck out (kept Puck)
+- OUT in sports verbs: bowl over out (kept bowl)
+- GROUP in sports equipment: racket + tennis racket
+- GROUP in things you swing: racket + tennis racket
+- GROUP in skating words: quad + quad skates
+- GROUP in board and paddle sports: rafting + white-water rafting
+- GROUP in paddled boat sports: rafting + whitewater rafting
+- GROUP in sailing sports: dinghy + dinghy racing
+- GROUP in rowing words: crab + catching a crab
+- GROUP in bullfighting words: cape + red cape
+- GROUP in sports clothing: gi + karate gi
+- GROUP in sports officials: referee + boxing referee
+- GROUP in sports officials: referee + soccer referee
+- GROUP in sports officials: referee + judo referee
+- GROUP in sports officials: umpire + cricket umpire
+- GROUP in sports officials: umpire + tennis umpire
+- GROUP in sports officials: umpire + baseball umpire
+- OUT in casino games: craps table out (kept craps)
+- GROUP in blackjack terms: basic strategy + basic strategy chart
+- GROUP in power-ups and pickups: star + Super Star
+- GROUP in woodworking words: plane + hand plane
+- GROUP in building toys: bricks + interlocking bricks
+- GROUP in building toys: blocks + wooden blocks
+- GROUP in south asian games: goli + danda goli
+- GROUP in classical music forms: variations + theme and variations
+- GROUP in hip hop words: diss + diss track
+- GROUP in orchestra words: string + string section
+- GROUP in orchestra words: brass + brass section
+- GROUP in orchestra words: percussion + percussion section
+- OUT in notes and rests: whole tone out (kept whole note)
+- GROUP in brass instruments: horn + French horn
+- GROUP in rock band lineup: singer + lead singer
+- GROUP in rock band lineup: vocals + lead vocals
+- OUT in dance: ballet shoes out (kept ballet)
+- OUT in painting words: oil on canvas out (kept canvas)
+- MERGE in sculpture words: bas-relief out (kept relief)
+- MERGE in turkish arts: Karagoz and Hacivat out (kept Karagoz)
+- GROUP in parts of a stage: pit + orchestra pit
+- OUT in theater building parts: stage left out (kept stage)
+- OUT in theater building parts: stage right out (kept stage)
+- GROUP in asian theater forms: wayang + wayang kulit
+- GROUP in ballet terms: danseur + premier danseur
+- GROUP in tv genres: procedural + police procedural
+- OUT in anime and manga words: Shonen Jump out (kept shonen)
+- MERGE in poetry terms: rhyming couplet out (kept couplet)
+- GROUP in fairy tale villains: wolf + big bad wolf
+- GROUP in fairy tale villains: witch + wicked witch
+- GROUP in theme park words: flume + log flume
+- GROUP in party entertainment: magician + strolling magician
+- OUT in window styles: French door out (kept French window)
+- GROUP in feudal japan: Edo + Edo period
+- GROUP in heraldry: rampant + lion rampant
+- OUT in medieval instruments: drum kit out (kept drum)
+- MERGE in navigation tools: marine chronometer out (kept chronometer)
+- GROUP in pirate punishments: plank + walk the plank
+- GROUP in archaeology words: dig + dig site
+- OUT in trojan war: Achilles' heel out (kept Achilles)
+- GROUP in maori mythology: Tane + Tane Mahuta
+- OUT in witchcraft: witch hunt out (kept witch)
+- OUT in fairy folk: fairy ring out (kept fairy)
+- OUT in fairy folk: pixie dust out (kept pixie)
+- GROUP in robin hood legend: friar + Friar Tuck
+- GROUP in robin hood legend: Nottingham + Sheriff of Nottingham
+- GROUP in superstitions: bad luck + seven years bad luck
+- OUT in historical periods: Bronze Age collapse out (kept Bronze Age)
+- OUT in french revolution: Bastille Day out (kept Bastille)
+- GROUP in chinese dynasties: Han + Eastern Han
+- GROUP in chinese dynasties: Han + Western Han
+- GROUP in chinese dynasties: Zhou + Western Zhou
+- GROUP in chinese dynasties: Zhou + Eastern Zhou
+- GROUP in chinese dynasties: Song dynasty + Northern Song
+- GROUP in chinese dynasties: Song dynasty + Southern Song
+- GROUP in chinese dynasties: Jin + Western Jin
+- GROUP in chinese dynasties: Jin + Eastern Jin
+- OUT in states of matter: melting point out (kept melting)
+- OUT in states of matter: boiling point out (kept boiling)
+- OUT in states of matter: freezing point out (kept freezing)
+- OUT in acids and bases: acid rain out (kept acid)
+- OUT in genetics words: Human Genome Project out (kept genome)
+- GROUP in astronomy terms: eclipse + solar eclipse
+- OUT in space rocks: comet tail out (kept comet)
+- OUT in space rocks: asteroid belt out (kept asteroid)
+- OUT in space rocks: meteor shower out (kept meteor)
+- OUT in spaceflight words: payload bay out (kept payload)
+- OUT in spaceflight words: launch pad out (kept launch)
+- GROUP in moon phases and moods: blood moon + super blood moon
+- OUT in chinese inventions: toilet paper out (kept paper)
+- GROUP in japanese inventions: karaoke + karaoke machine
+- GROUP in software words: interface + user interface
+- MERGE in internet words: going viral out (kept viral)
+- GROUP in cybersecurity words: breach + data breach
+- GROUP in computer actions: drag + drag and drop
+- GROUP in robots: Optimus + Optimus Prime
+- GROUP in battery types: lithium battery + lithium-ion
+- GROUP in simple machines: wheel + wheel and axle
+- GROUP in simple machines: axle + wheel and axle
+- GROUP in electronic parts: chip + silicon chip
+- GROUP in semiconductor devices: chip + silicon chip
+- GROUP in science lab: goggles + safety goggles
+- GROUP in lab protective equipment: goggles + safety goggles
+- GROUP in launch pad: countdown + countdown clock
+- GROUP in scientific method: control + control group
+- GROUP in ancient languages: Ancient Greek + Classical Greek
+- OUT in codes and signals: Morse key out (kept Morse)
+- MERGE in poetry forms: rhyming couplet out (kept couplet)
+- GROUP in gen z slang: cap + no cap
+- GROUP in words from turkish: kebab + shish kebab
+- OUT in names that are trees: mountain ash out (kept Ash)
+- GROUP in shades of yellow: yellow + pale yellow
+- GROUP in shades of purple: purple + dark purple
+- GROUP in shades of purple: purple + light purple
+- GROUP in shades of gray: gray + light gray
+- GROUP in shades of gray: gray + dark gray
+- GROUP in shades of pink: pink + light pink
+- GROUP in shades of orange: orange + bright orange
+- GROUP in shades of orange: orange + pale orange
+- OUT in metallic colors: gold leaf out (kept gold)
+- GROUP in colors in french: bleu + bleu marine
+- GROUP in colors in french: bleu + bleu ciel
+- MERGE in shades of white: pure white out (kept white)
+- GROUP in shades of black: black + blackest black
+- GROUP in pastel colors: mint + mint green
+- GROUP in pastel colors: lavender + pale lavender
+- GROUP in oval things: egg + ostrich egg
+- GROUP in hard materials: carbide + tungsten carbide
+- GROUP in crunchy foods: brittle + peanut brittle
+- GROUP in chewy foods: taffy + saltwater taffy
+- OUT in words for smart: clever clogs out (kept clever)
+- GROUP in huge things: whale + blue whale
+- GROUP in heavy things: piano + grand piano
+- GROUP in lightweight things: bubble + soap bubble
+- GROUP in loud things: siren + air raid siren
+- GROUP in candle scents: cotton + clean cotton
+- GROUP in things that fly: jet + fighter jet
+- GROUP in things that fly: glider + hang glider
+- GROUP in aircraft: jet + fighter jet
+- GROUP in aircraft: glider + hang glider
+- MERGE in things that spin: spinning top out (kept top)
+- GROUP in things that bounce: ball + bouncy ball
+- GROUP in fast things: jet + fighter jet
+- GROUP in slow things: sloth + three-toed sloth
+- GROUP in slow things: molasses + cold molasses
+- GROUP in things that melt: ice + ice cube
+- GROUP in words for hot: hot + hot as hell
+- GROUP in words for dark: black + jet-black
+- GROUP in words for dark: jet + jet-black
+- GROUP in words for dark: dark + pitch dark
+- GROUP in things with wheels: cart + shopping cart
+- OUT in things with horns: bull elephant out (kept bull)
+- OUT in things with arms: coat of arms out (kept coat)
+- OUT in things that pop: bubble tea out (kept bubble)
+- GROUP in things that pop: bubble + soap bubble
+- OUT in things that tick: cooling engine out (kept engine)
+- GROUP in things that cut: shears + pruning shears
+- GROUP in things that ring: phone + cell phone
+- GROUP in things that ring: chime + wind chime
+- OUT in things that ring: bell tower out (kept bell)
+
+## Problems
+- v-1.txt: already gone "OUT dumplings 65065 18669"
+- v-2.txt: not an overlap pair "SHORT-OUT sushi_types 64778 53565"
+- v-2.txt: not an overlap pair "SHORT-OUT sushi_types 64778 53571"
+- v-2.txt: not an overlap pair "SHORT-OUT sushi_types 64778 53572"
+- v-2.txt: not an overlap pair "SHORT-OUT sushi_types 64778 53573"
+- v-2.txt: not an overlap pair "SHORT-OUT sushi_types 64778 53574"

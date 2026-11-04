@@ -1,0 +1,34 @@
+# lead singer is the singer
+GROUP rock_band_lineup 6131 6193
+GROUP rock_band_lineup 11354 11355
+# shoes are not a dance
+OUT dance 6205 6226
+# caption phrase, not a painting word
+OUT painting_words 6287 11927
+# bas-relief is a relief
+MERGE sculpture_words 12040 12041
+MERGE turkish_arts 12382 22690
+# orchestra pit is the pit
+GROUP parts_of_a_stage 12299 11062
+# stage left/right are directions, not building parts
+OUT theater_building_parts 12241 11212
+OUT theater_building_parts 12241 12281
+GROUP asian_theater_forms 12443 12367
+GROUP ballet_terms 11773 11774
+GROUP tv_genres 12632 12605
+# a magazine, not a genre word
+OUT anime_and_manga_words 13078 13118
+MERGE poetry_terms 13249 13279
+GROUP fairy_tale_villains 995 13361
+GROUP fairy_tale_villains 6981 13367
+GROUP theme_park_words 13853 13784
+GROUP party_entertainment 13719 13873
+# a door, not a window style
+OUT window_styles 14167 14168
+GROUP feudal_japan 20564 7089
+GROUP heraldry 20897 20879
+# drum kit is modern
+OUT medieval_instruments 10595 6002
+MERGE navigation_tools 21023 21024
+GROUP pirate_punishments 21308 6767
+GROUP archaeology_words 6859 10106

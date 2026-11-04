@@ -1,0 +1,21 @@
+# bachelor and its named degrees are the same answer
+GROUP university_degrees 34931 34955
+GROUP university_degrees 34931 34956
+GROUP university_degrees 34932 34957
+GROUP university_degrees 34932 34958
+# semaphore flags are the semaphore
+GROUP old_ways_to_communicate 4657 35302
+# a telegraph pole is not a way to communicate
+OUT old_ways_to_communicate 26012 35299
+GROUP social_classes 35305 35319
+GROUP manners_and_etiquette 35412 35427
+GROUP maori_culture 11804 35442
+GROUP junk_drawer 16276 23274
+GROUP junk_drawer 23261 23284
+# a hat stand is furniture, not closet contents
+OUT wardrobe 4944 4698
+# a mouse trap is not under the sink
+OUT under_the_sink 23383 23388
+GROUP lights_and_lamps 23495 23494
+GROUP bathroom_fixtures 23137 23633
+GROUP measuring_tools 7235 7237

@@ -1,0 +1,891 @@
+2971 | theme school_staff "school staff"
+   SHORT 4063 "teacher" noun common rec 1 link 1
+   LONG  34803 "substitute teacher" noun common rec 2 link 2
+2972 | theme school_staff "school staff"
+   SHORT 4063 "teacher" noun common rec 1 link 1
+   LONG  34815 "art teacher" noun common rec 2 link 3
+2973 | theme school_staff "school staff"
+   SHORT 4063 "teacher" noun common rec 1 link 1
+   LONG  34816 "gym teacher" noun common rec 2 link 2
+2974 | theme school_staff "school staff"
+   SHORT 4063 "teacher" noun common rec 1 link 1
+   LONG  34818 "music teacher" noun common rec 2 link 2
+2975 | theme school_staff "school staff"
+   SHORT 4063 "teacher" noun common rec 1 link 1
+   LONG  34820 "homeroom teacher" noun common rec 3 link 3
+2976 | theme school_staff "school staff"
+   SHORT 4497 "principal" [school] noun common rec 1 link 1
+   LONG  34806 "vice principal" noun common rec 2 link 3
+2977 | theme school_staff "school staff"
+   SHORT 4533 "tutor" noun common rec 2 link 2
+   LONG  34819 "form tutor" noun common rec 3 link 4
+2978 | theme school_staff "school staff"
+   SHORT 34824 "psychologist" (full: school psychologist) noun common rec 3 link 4
+   LONG  61268 "educational psychologist" noun common rec 4 link 5
+2979 | theme exam_words "exam words"
+   SHORT 4485 "exam" noun common rec 1 link 1
+   LONG  61276 "exam script" noun common rec 3 link 3
+2980 | theme exam_words "exam words"
+   SHORT 4488 "quiz" noun common rec 2 link 2
+   LONG  34854 "pop quiz" noun common rec 2 link 2
+2981 | theme exam_words "exam words"
+   SHORT 34829 "test" [exam] noun common rec 1 link 1
+   LONG  34856 "standardized test" noun common rec 3 link 3
+2982 | theme exam_words "exam words"
+   SHORT 34832 "pass" [exam] noun common rec 1 link 2
+   LONG  34851 "pass mark" noun common rec 3 link 4
+2983 | theme university_words "university words"
+   SHORT 4539 "lecture" noun common rec 2 link 2
+   LONG  34889 "lecture hall" noun common rec 2 link 2
+2984 | theme university_words "university words"
+   SHORT 34882 "chancellor" [university] noun common rec 3 link 3
+   LONG  34883 "vice-chancellor" noun common rec 4 link 4
+2985 | theme university_words "university words"
+   SHORT 34885 "fellow" [university] noun common rec 3 link 4
+   LONG  61282 "teaching fellow" noun common rec 4 link 5
+2986 | theme academic_staff "university staff"
+   SHORT 34882 "chancellor" [university] noun common rec 3 link 3
+   LONG  34883 "vice-chancellor" noun common rec 4 link 4
+2987 | theme academic_staff "university staff"
+   SHORT 34885 "fellow" [university] noun common rec 3 link 4
+   LONG  61282 "teaching fellow" noun common rec 4 link 5
+2988 | theme school_types "school types" (note: kindergarten, preschool, elementary, middle school, high school, boarding school, academy)
+   SHORT 4521 "high" (full: high school) noun phrase rec 1 link 1
+   LONG  34898 "junior high" noun common rec 2 link 2
+2989 | theme school_types "school types" (note: kindergarten, preschool, elementary, middle school, high school, boarding school, academy)
+   SHORT 4521 "high" (full: high school) noun phrase rec 1 link 1
+   LONG  61288 "folk high school" noun common rec 5 link 5
+2990 | theme school_types "school types" (note: kindergarten, preschool, elementary, middle school, high school, boarding school, academy)
+   SHORT 34899 "academy" [school] noun common rec 3 link 3
+   LONG  34920 "military academy" noun common rec 3 link 3
+2991 | theme university_degrees "university degrees" (note: bachelor, master, doctorate, PhD, MBA, BA, BSc, diploma)
+   SHORT 34931 "bachelor" [degree] noun common rec 2 link 1
+   LONG  34955 "bachelor of arts" noun common rec 3 link 2
+2992 | theme university_degrees "university degrees" (note: bachelor, master, doctorate, PhD, MBA, BA, BSc, diploma)
+   SHORT 34931 "bachelor" [degree] noun common rec 2 link 1
+   LONG  34956 "bachelor of science" noun common rec 3 link 2
+2993 | theme university_degrees "university degrees" (note: bachelor, master, doctorate, PhD, MBA, BA, BSc, diploma)
+   SHORT 34932 "master" [degree] noun common rec 2 link 1
+   LONG  34957 "master of arts" noun common rec 3 link 2
+2994 | theme university_degrees "university degrees" (note: bachelor, master, doctorate, PhD, MBA, BA, BSc, diploma)
+   SHORT 34932 "master" [degree] noun common rec 2 link 1
+   LONG  34958 "master of science" noun common rec 3 link 2
+2995 | theme graduation_words "graduation words" (note: cap, gown, diploma, tassel, valedictorian, commencement, alumni, yearbook)
+   SHORT 34976 "cum laude" other common rec 4 link 4
+   LONG  26945 "summa cum laude" adverb phrase rec 4 link 4
+2996 | theme graduation_words "graduation words" (note: cap, gown, diploma, tassel, valedictorian, commencement, alumni, yearbook)
+   SHORT 34976 "cum laude" other common rec 4 link 4
+   LONG  34977 "magna cum laude" other common rec 4 link 4
+2997 | theme school_events "school events"
+   SHORT 34986 "play" (full: school play) noun common rec 1 link 1
+   LONG  34999 "nativity play" noun common rec 3 link 3
+2998 | theme school_events "school events"
+   SHORT 34996 "dance" (full: school dance) noun common rec 1 link 2
+   LONG  11799 "maypole dance" noun common rec 4 link 5
+2999 | theme media_and_communication "media and communication"
+   SHORT 4556 "news" noun common rec 1 link 1
+   LONG  4612 "news anchor" noun phrase rec 2 link 2
+3000 | theme media_and_communication "media and communication"
+   SHORT 4556 "news" noun common rec 1 link 1
+   LONG  4649 "fake news" noun phrase rec 2 link 3
+3001 | theme media_and_communication "media and communication"
+   SHORT 4578 "radio" noun common rec 1 link 1
+   LONG  4602 "two-way radio" noun phrase rec 3 link 3
+3002 | theme media_and_communication "media and communication"
+   SHORT 4595 "wire" [telegram] noun common rec 4 link 4
+   LONG  4654 "wire service" noun phrase rec 4 link 5
+3003 | theme media_and_communication "media and communication"
+   SHORT 4623 "press" [news media] noun common rec 2 link 2
+   LONG  4641 "press release" noun phrase rec 3 link 4
+3004 | theme newspaper_words "newspaper words"
+   SHORT 4614 "editor" noun common rec 2 link 1
+   LONG  35054 "sub-editor" noun common rec 4 link 3
+3005 | theme newspaper_words "newspaper words"
+   SHORT 4614 "editor" noun common rec 2 link 1
+   LONG  35055 "copy editor" [newspaper] noun common rec 3 link 3
+3006 | theme newspaper_words "newspaper words"
+   SHORT 35035 "column" [newspaper] noun common rec 2 link 2
+   LONG  35047 "gossip column" noun common rec 2 link 3
+3007 | theme social_media_words "social media words"
+   SHORT 35060 "post" [online] verb common rec 1 link 1
+   LONG  35091 "sponsored post" noun common rec 3 link 4
+3008 | theme phone_words "phone words"
+   SHORT 35124 "dial" [phone] verb common rec 1 link 2
+   LONG  35130 "dial tone" noun common rec 2 link 3
+3009 | theme phone_words "phone words"
+   SHORT 35124 "dial" [phone] verb common rec 1 link 2
+   LONG  35138 "speed dial" noun common rec 3 link 3
+3010 | theme phone_words "phone words"
+   SHORT 35125 "call" [phone] noun common rec 1 link 1
+   LONG  4621 "video call" noun phrase rec 1 link 2
+3011 | theme phone_words "phone words"
+   SHORT 35125 "call" [phone] noun common rec 1 link 1
+   LONG  35139 "conference call" noun common rec 2 link 3
+3012 | theme phone_words "phone words"
+   SHORT 35125 "call" [phone] noun common rec 1 link 1
+   LONG  35140 "missed call" noun common rec 1 link 3
+3013 | theme phone_words "phone words"
+   SHORT 35125 "call" [phone] noun common rec 1 link 1
+   LONG  35151 "prank call" noun common rec 2 link 3
+3014 | theme phone_words "phone words"
+   SHORT 35125 "call" [phone] noun common rec 1 link 1
+   LONG  35154 "call waiting" noun common rec 3 link 4
+3015 | theme phone_words "phone words"
+   SHORT 35125 "call" [phone] noun common rec 1 link 1
+   LONG  35156 "collect call" noun common rec 3 link 5
+3016 | theme phone_words "phone words"
+   SHORT 35135 "number" (full: phone number) noun common rec 1 link 2
+   LONG  35150 "wrong number" noun common rec 2 link 3
+3017 | theme phone_words "phone words"
+   SHORT 65783 "cell" [wireless handset] noun common rec 1 link 1
+   LONG  61354 "cell tower" noun common rec 3 link 4
+3018 | theme mail_words "mail words"
+   SHORT 4586 "letter" [mail] noun common rec 1 link 1
+   LONG  35175 "chain letter" noun common rec 3 link 4
+3019 | theme mail_words "mail words"
+   SHORT 4586 "letter" [mail] noun common rec 1 link 1
+   LONG  35176 "dead letter" noun common rec 4 link 4
+3020 | theme mail_words "mail words"
+   SHORT 4586 "letter" [mail] noun common rec 1 link 1
+   LONG  35181 "air letter" noun common rec 4 link 4
+3021 | theme mail_words "mail words"
+   SHORT 35161 "address" [mailing] noun common rec 2 link 2
+   LONG  24250 "forwarding address" noun common rec 3 link 3
+3022 | theme mail_words "mail words"
+   SHORT 35161 "address" [mailing] noun common rec 2 link 2
+   LONG  35167 "return address" noun common rec 2 link 3
+3023 | theme journalism_words "journalism words"
+   SHORT 4132 "reporter" noun common rec 1 link 1
+   LONG  35216 "pool reporter" noun common rec 5 link 5
+3024 | theme journalism_words "journalism words"
+   SHORT 35191 "source" [journalism] noun common rec 2 link 2
+   LONG  35215 "anonymous source" noun common rec 3 link 3
+3025 | theme journalism_words "journalism words"
+   SHORT 35195 "correspondent" noun common rec 3 link 2
+   LONG  35212 "war correspondent" noun common rec 3 link 3
+3026 | theme news_roles "news roles"
+   SHORT 4132 "reporter" noun common rec 1 link 1
+   LONG  35216 "pool reporter" noun common rec 5 link 5
+3027 | theme news_roles "news roles"
+   SHORT 35195 "correspondent" noun common rec 3 link 2
+   LONG  35212 "war correspondent" noun common rec 3 link 3
+3028 | theme advertising_words "advertising words"
+   SHORT 28337 "brand" noun common rec 2 link 2
+   LONG  35247 "brand ambassador" noun common rec 4 link 3
+3029 | theme advertising_words "advertising words"
+   SHORT 28337 "brand" noun common rec 2 link 2
+   LONG  61377 "brand equity" noun common rec 4 link 5
+3030 | theme advertising_words "advertising words"
+   SHORT 28337 "brand" noun common rec 2 link 2
+   LONG  61380 "brand awareness" noun common rec 3 link 4
+3031 | theme old_ways_to_communicate "old ways to communicate" (note: telegram, Morse code, carrier pigeon, semaphore, smoke signal, fax, pager, town crier)
+   SHORT 4657 "semaphore" noun common rec 4 link 3
+   LONG  35302 "semaphore flags" noun common rec 3 link 3
+3032 | theme old_ways_to_communicate "old ways to communicate" (note: telegram, Morse code, carrier pigeon, semaphore, smoke signal, fax, pager, town crier)
+   SHORT 26012 "telegraph" noun common rec 2 link 1
+   LONG  35293 "wireless telegraph" noun common rec 5 link 4
+3033 | theme old_ways_to_communicate "old ways to communicate" (note: telegram, Morse code, carrier pigeon, semaphore, smoke signal, fax, pager, town crier)
+   SHORT 26012 "telegraph" noun common rec 2 link 1
+   LONG  35295 "bush telegraph" noun common rec 5 link 5
+3034 | theme old_ways_to_communicate "old ways to communicate" (note: telegram, Morse code, carrier pigeon, semaphore, smoke signal, fax, pager, town crier)
+   SHORT 26012 "telegraph" noun common rec 2 link 1
+   LONG  35299 "telegraph pole" noun common rec 3 link 4
+3035 | theme old_ways_to_communicate "old ways to communicate" (note: telegram, Morse code, carrier pigeon, semaphore, smoke signal, fax, pager, town crier)
+   SHORT 26012 "telegraph" noun common rec 2 link 1
+   LONG  61392 "optical telegraph" noun common rec 5 link 5
+3036 | theme social_classes "social classes" (note: aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie, elite)
+   SHORT 35305 "gentry" noun common rec 4 link 3
+   LONG  35319 "landed gentry" noun common rec 4 link 3
+3037 | theme social_classes "social classes" (note: aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie, elite)
+   SHORT 35306 "middle" (full: middle class) noun common rec 1 link 1
+   LONG  35315 "upper middle" (full: upper middle class) noun common rec 3 link 3
+3038 | theme social_classes "social classes" (note: aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie, elite)
+   SHORT 35306 "middle" (full: middle class) noun common rec 1 link 1
+   LONG  35325 "lower middle" (full: lower middle class) noun common rec 3 link 4
+3039 | theme social_classes "social classes" (note: aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie, elite)
+   SHORT 35307 "working" (full: working class) noun common rec 1 link 1
+   LONG  61406 "working poor" noun common rec 3 link 4
+3040 | theme social_classes "social classes" (note: aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie, elite)
+   SHORT 35308 "bourgeoisie" noun common rec 3 link 2
+   LONG  35326 "petite bourgeoisie" noun common rec 5 link 5
+3041 | theme social_classes "social classes" (note: aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie, elite)
+   SHORT 35310 "upper" (full: upper class) noun common rec 1 link 1
+   LONG  35315 "upper middle" (full: upper middle class) noun common rec 3 link 3
+3042 | theme social_classes "social classes" (note: aristocracy, nobility, gentry, middle class, working class, peasant, bourgeoisie, elite)
+   SHORT 35311 "lower" (full: lower class) noun common rec 1 link 2
+   LONG  35325 "lower middle" (full: lower middle class) noun common rec 3 link 4
+3043 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 28199 "picket" noun common rec 2 link 3
+   LONG  35345 "picket line" noun common rec 2 link 2
+3044 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35330 "march" [protest] noun common rec 1 link 1
+   LONG  35362 "civil rights march" noun common rec 3 link 3
+3045 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35330 "march" [protest] noun common rec 1 link 1
+   LONG  61416 "Jarrow March" noun proper rec 5 link 5
+3046 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35333 "strike" [labor] noun common rec 1 link 1
+   LONG  35343 "hunger strike" noun common rec 2 link 2
+3047 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35333 "strike" [labor] noun common rec 1 link 1
+   LONG  35351 "general strike" noun common rec 3 link 3
+3048 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35333 "strike" [labor] noun common rec 1 link 1
+   LONG  35368 "wildcat strike" noun common rec 4 link 4
+3049 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35333 "strike" [labor] noun common rec 1 link 1
+   LONG  61412 "sit-down strike" noun common rec 4 link 4
+3050 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35338 "banner" (full: protest banner) noun common rec 1 link 2
+   LONG  61417 "banner drop" noun common rec 4 link 4
+3051 | theme protest_words "protest words" (note: march, rally, placard, strike, boycott, petition, sit-in, picket)
+   SHORT 35341 "riot" noun common rec 2 link 2
+   LONG  35347 "riot police" noun common rec 2 link 3
+3052 | theme workplace_disputes "workplace disputes"
+   SHORT 28199 "picket" noun common rec 2 link 3
+   LONG  35345 "picket line" noun common rec 2 link 2
+3053 | theme workplace_disputes "workplace disputes"
+   SHORT 35333 "strike" [labor] noun common rec 1 link 1
+   LONG  35351 "general strike" noun common rec 3 link 3
+3054 | theme workplace_disputes "workplace disputes"
+   SHORT 35333 "strike" [labor] noun common rec 1 link 1
+   LONG  35368 "wildcat strike" noun common rec 4 link 4
+3055 | theme workplace_disputes "workplace disputes"
+   SHORT 35333 "strike" [labor] noun common rec 1 link 1
+   LONG  61412 "sit-down strike" noun common rec 4 link 4
+3056 | theme charity_words "charity words" (note: donate, volunteer, fundraiser, appeal, sponsor, raffle, telethon, nonprofit)
+   SHORT 35371 "appeal" [charity] noun common rec 3 link 3
+   LONG  35401 "poppy appeal" noun common rec 4 link 4
+3057 | theme charity_words "charity words" (note: donate, volunteer, fundraiser, appeal, sponsor, raffle, telethon, nonprofit)
+   SHORT 35375 "donation" noun common rec 1 link 1
+   LONG  61426 "in-kind donation" noun common rec 4 link 5
+3058 | theme manners_and_etiquette "manners and etiquette" (note: please, thank you, RSVP, queue, tip, handshake, bow, excuse me)
+   SHORT 20015 "tip" [gratuity] noun common rec 1 link 2
+   LONG  61437 "tip your hat" verb phrase rec 2 link 4
+3059 | theme manners_and_etiquette "manners and etiquette" (note: please, thank you, RSVP, queue, tip, handshake, bow, excuse me)
+   SHORT 35404 "thank you" other common rec 1 link 1
+   LONG  35413 "thank-you note" noun common rec 3 link 3
+3060 | theme manners_and_etiquette "manners and etiquette" (note: please, thank you, RSVP, queue, tip, handshake, bow, excuse me)
+   SHORT 35410 "table" (full: table manners) noun common rec 1 link 1
+   LONG  61436 "elbows off the table" other phrase rec 2 link 3
+3061 | theme manners_and_etiquette "manners and etiquette" (note: please, thank you, RSVP, queue, tip, handshake, bow, excuse me)
+   SHORT 35412 "manners" noun common rec 1 link 1
+   LONG  35427 "mind your manners" verb phrase rec 2 link 2
+3062 | theme maori_culture "maori culture" (note: haka, marae, hangi, whanau, iwi, moko, waka, hongi, mana, tapu)
+   SHORT 11804 "haka" noun common rec 2 link 1
+   LONG  35442 "kapa haka" noun common rec 4 link 3
+3063 | theme words_for_expert "words for expert" (note: guru, ace, whiz, maestro, pro, virtuoso, connoisseur, authority)
+   SHORT 35566 "master" [expert] noun common rec 2 link 2
+   LONG  35577 "past master" noun phrase rec 4 link 4
+3064 | theme words_for_beginner "words for beginner" (note: novice, rookie, newbie, trainee, apprentice, amateur, greenhorn, tenderfoot)
+   SHORT 35590 "amateur" noun common rec 2 link 3
+   LONG  35605 "rank amateur" noun phrase rec 3 link 3
+3065 | theme fans_and_followers "fans and followers" (note: fan, devotee, enthusiast, buff, aficionado, admirer, disciple, groupie)
+   SHORT 35609 "fan" [supporter] noun common rec 1 link 1
+   LONG  35624 "fan club" noun common rec 2 link 3
+3066 | theme living_room "living room"
+   SHORT 16040 "throw" [blanket] noun common rec 3 link 3
+   LONG  23116 "throw pillow" noun common rec 2 link 2
+3067 | theme kitchen "kitchen"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  4723 "microwave oven" noun common rec 1 link 1
+3068 | theme kitchen "kitchen"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  23127 "oven glove" noun common rec 2 link 3
+3069 | theme bathroom "bathroom"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16160 "soap dish" noun common rec 2 link 3
+3070 | theme bathroom "bathroom"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  61441 "soap scum" noun common rec 3 link 5
+3071 | theme bathroom "bathroom"
+   SHORT 3755 "towel" [bath cloth] noun common rec 1 link 1
+   LONG  23137 "towel rail" noun common rec 2 link 3
+3072 | theme bathroom "bathroom"
+   SHORT 3755 "towel" [bath cloth] noun common rec 1 link 1
+   LONG  61439 "towel warmer" noun common rec 3 link 4
+3073 | theme bathroom "bathroom"
+   SHORT 16272 "shower" [bathroom] noun common rec 1 link 1
+   LONG  16156 "shower cap" noun common rec 2 link 4
+3074 | theme bathroom "bathroom"
+   SHORT 16272 "shower" [bathroom] noun common rec 1 link 1
+   LONG  16285 "shower curtain" noun common rec 1 link 2
+3075 | theme bathroom "bathroom"
+   SHORT 23134 "toilet" [bathroom] noun common rec 1 link 1
+   LONG  23138 "toilet paper" noun common rec 1 link 2
+3076 | theme bathroom "bathroom"
+   SHORT 23134 "toilet" [bathroom] noun common rec 1 link 1
+   LONG  23143 "toilet brush" noun common rec 2 link 2
+3077 | theme bedroom "bedroom"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  16039 "bed skirt" noun common rec 3 link 4
+3078 | theme bedroom "bedroom"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  23147 "bed frame" noun common rec 2 link 3
+3079 | theme bedroom "bedroom"
+   SHORT 3672 "mattress" noun common rec 1 link 1
+   LONG  16034 "mattress topper" noun common rec 3 link 4
+3080 | theme bedroom "bedroom"
+   SHORT 3673 "sheet" [bed] noun common rec 1 link 1
+   LONG  16032 "fitted sheet" noun common rec 1 link 3
+3081 | theme bedroom "bedroom"
+   SHORT 34150 "lamp" [light] noun common rec 1 link 1
+   LONG  23148 "bedside lamp" noun common rec 2 link 2
+3082 | theme bedroom "bedroom"
+   SHORT 64796 "Bedside" [nightstand] noun common rec 4 link 2
+   LONG  23148 "bedside lamp" noun common rec 2 link 2
+3083 | theme garage "garage"
+   SHORT 319 "wrench" noun common rec 1 link 2
+   LONG  4825 "torque wrench" noun common rec 3 link 4
+3084 | theme garage "garage"
+   SHORT 23150 "car" [automobile] noun common rec 1 link 1
+   LONG  23170 "car battery" noun common rec 2 link 3
+3085 | theme attic "attic"
+   SHORT 23176 "trunk" [storage] noun common rec 2 link 1
+   LONG  23191 "steamer trunk" noun common rec 4 link 2
+3086 | theme dining_room "dining room"
+   SHORT 4663 "table" [furniture] noun common rec 1 link 1
+   LONG  20161 "table runner" noun common rec 3 link 3
+3087 | theme dining_room "dining room"
+   SHORT 4663 "table" [furniture] noun common rec 1 link 1
+   LONG  23214 "table leaf" noun common rec 4 link 5
+3088 | theme dining_room "dining room"
+   SHORT 19926 "napkin" noun common rec 1 link 2
+   LONG  20158 "napkin ring" noun common rec 3 link 4
+3089 | theme dining_room "dining room"
+   SHORT 20135 "knife" [cutlery] noun common rec 1 link 1
+   LONG  23206 "carving knife" noun common rec 3 link 4
+3090 | theme dining_room "dining room"
+   SHORT 20136 "spoon" [cutlery] noun common rec 1 link 1
+   LONG  23213 "serving spoon" noun common rec 2 link 3
+3091 | theme home_office "home office"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  23232 "ergonomic chair" noun common rec 3 link 2
+3092 | theme home_office "home office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  16520 "standing desk" noun common rec 3 link 3
+3093 | theme home_office "home office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  23221 "desk lamp" noun common rec 1 link 2
+3094 | theme home_office "home office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  23239 "desk calendar" noun common rec 2 link 4
+3095 | theme home_office "home office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  61444 "desk blotter" noun common rec 4 link 5
+3096 | theme home_office "home office"
+   SHORT 7255 "mouse" [computer] noun common rec 1 link 1
+   LONG  23223 "mouse pad" noun common rec 2 link 3
+3097 | theme home_office "home office"
+   SHORT 23215 "monitor" [computer] noun common rec 2 link 2
+   LONG  23231 "monitor stand" noun common rec 3 link 4
+3098 | theme outside_the_house "outside the house"
+   SHORT 6614 "porch" noun common rec 1 link 1
+   LONG  23256 "porch swing" noun common rec 3 link 4
+3099 | theme outside_the_house "outside the house"
+   SHORT 23241 "garden" [plot] noun common rec 1 link 1
+   LONG  23249 "garden gate" noun common rec 1 link 2
+3100 | theme junk_drawer "junk drawer" (note: batteries, rubber bands, tape, takeout menus, spare keys)
+   SHORT 16276 "candles" noun common rec 1 link 4
+   LONG  23274 "birthday candles" noun common rec 2 link 4
+3101 | theme junk_drawer "junk drawer" (note: batteries, rubber bands, tape, takeout menus, spare keys)
+   SHORT 23261 "batteries" noun common rec 1 link 1
+   LONG  23284 "dead batteries" noun common rec 2 link 4
+3102 | theme junk_drawer "junk drawer" (note: batteries, rubber bands, tape, takeout menus, spare keys)
+   SHORT 23263 "tape" [sticky] noun common rec 1 link 1
+   LONG  4800 "tape measure" noun common rec 1 link 3
+3103 | theme in_a_wallet "in a wallet" (note: cash, cards, driver's license, receipts, photo)
+   SHORT 23291 "photo" noun common rec 1 link 2
+   LONG  23308 "photo booth strip" noun common rec 4 link 5
+3104 | theme wardrobe "closet contents" (note: inside a clothes closet: hangers, coats, shoeboxes, belts)
+   SHORT 4944 "hat" [headwear] noun common rec 1 link 3
+   LONG  4698 "hat stand" noun common rec 3 link 3
+3105 | theme under_the_sink "under the sink" (note: bleach, sponges, trash bags, drain cleaner, pipes)
+   SHORT 23383 "trap" [plumbing] noun common rec 4 link 4
+   LONG  23388 "mouse trap" [pest trap] noun common rec 2 link 4
+3106 | theme under_the_sink "under the sink" (note: bleach, sponges, trash bags, drain cleaner, pipes)
+   SHORT 23383 "trap" [plumbing] noun common rec 4 link 4
+   LONG  61453 "P-trap" noun common rec 4 link 3
+3107 | theme in_the_fridge "in the fridge"
+   SHORT 515 "cheese" [dairy food] noun common rec 1 link 1
+   LONG  529 "cottage cheese" noun common rec 2 link 3
+3108 | theme in_the_fridge "in the fridge"
+   SHORT 517 "cream" [dairy] noun common rec 1 link 3
+   LONG  526 "sour cream" noun common rec 2 link 3
+3109 | theme furniture "furniture"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  342 "rocking chair" noun common rec 2 link 2
+3110 | theme furniture "furniture"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  3568 "high chair" noun common rec 1 link 3
+3111 | theme furniture "furniture"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  4695 "wingback chair" noun common rec 3 link 4
+3112 | theme furniture "furniture"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  4704 "Windsor chair" noun proper rec 4 link 5
+3113 | theme furniture "furniture"
+   SHORT 333 "sofa" [furniture] noun common rec 1 link 1
+   LONG  4689 "sofa bed" noun common rec 2 link 2
+3114 | theme furniture "furniture"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  3708 "bunk bed" noun common rec 1 link 3
+3115 | theme furniture "furniture"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  4689 "sofa bed" noun common rec 2 link 2
+3116 | theme furniture "furniture"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  4694 "four-poster bed" noun common rec 3 link 4
+3117 | theme furniture "furniture"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  4700 "trundle bed" noun common rec 4 link 4
+3118 | theme furniture "furniture"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  4708 "secretary desk" noun common rec 5 link 5
+3119 | theme furniture "furniture"
+   SHORT 4663 "table" [furniture] noun common rec 1 link 1
+   LONG  4672 "coffee table" noun common rec 1 link 1
+3120 | theme furniture "furniture"
+   SHORT 4663 "table" [furniture] noun common rec 1 link 1
+   LONG  4673 "dining table" noun common rec 1 link 2
+3121 | theme furniture "furniture"
+   SHORT 4663 "table" [furniture] noun common rec 1 link 1
+   LONG  4690 "dressing table" noun common rec 2 link 3
+3122 | theme furniture "furniture"
+   SHORT 4663 "table" [furniture] noun common rec 1 link 1
+   LONG  4692 "console table" noun common rec 3 link 4
+3123 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  342 "rocking chair" noun common rec 2 link 2
+3124 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  3568 "high chair" noun common rec 1 link 3
+3125 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  4704 "Windsor chair" noun proper rec 4 link 4
+3126 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  23216 "office chair" noun common rec 1 link 3
+3127 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  23407 "folding chair" noun common rec 1 link 2
+3128 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  23412 "director's chair" noun common rec 3 link 3
+3129 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  23415 "egg chair" noun common rec 4 link 4
+3130 | theme seating "seating"
+   SHORT 332 "chair" [furniture] noun common rec 1 link 1
+   LONG  23417 "swivel chair" noun common rec 2 link 3
+3131 | theme seating "seating"
+   SHORT 338 "stool" noun common rec 1 link 1
+   LONG  23413 "camp stool" noun common rec 3 link 4
+3132 | theme seating "seating"
+   SHORT 338 "stool" noun common rec 1 link 1
+   LONG  23414 "milking stool" noun common rec 4 link 5
+3133 | theme beds "beds"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  23448 "air bed" noun common rec 2 link 3
+3134 | theme beds "beds"
+   SHORT 3666 "bed" noun common rec 1 link 1
+   LONG  23450 "wall bed" noun common rec 3 link 3
+3135 | theme storage_furniture "storage furniture"
+   SHORT 4671 "cabinet" [furniture] noun common rec 2 link 2
+   LONG  23203 "china cabinet" noun common rec 3 link 3
+3136 | theme storage_furniture "storage furniture"
+   SHORT 4671 "cabinet" [furniture] noun common rec 2 link 2
+   LONG  23217 "filing cabinet" noun common rec 2 link 3
+3137 | theme storage_furniture "storage furniture"
+   SHORT 4671 "cabinet" [furniture] noun common rec 2 link 2
+   LONG  23469 "display cabinet" noun common rec 3 link 3
+3138 | theme storage_furniture "storage furniture"
+   SHORT 4671 "cabinet" [furniture] noun common rec 2 link 2
+   LONG  23473 "TV cabinet" noun common rec 2 link 3
+3139 | theme storage_furniture "storage furniture"
+   SHORT 4671 "cabinet" [furniture] noun common rec 2 link 2
+   LONG  23474 "drinks cabinet" noun common rec 3 link 4
+3140 | theme storage_furniture "storage furniture"
+   SHORT 23463 "shelf" [furniture] noun common rec 1 link 1
+   LONG  23470 "cube shelf" noun common rec 3 link 3
+3141 | theme lights_and_lamps "lights and lamps"
+   SHORT 3027 "lantern" noun common rec 1 link 3
+   LONG  23498 "paper lantern" noun common rec 2 link 4
+3142 | theme lights_and_lamps "lights and lamps"
+   SHORT 23495 "strip" (full: strip light) noun common rec 3 link 4
+   LONG  23494 "LED strip" noun common rec 3 link 4
+3143 | theme soft_furnishings "soft furnishings"
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  23512 "shag rug" noun common rec 3 link 4
+3144 | theme soft_furnishings "soft furnishings"
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  23513 "persian rug" noun common rec 2 link 3
+3145 | theme soft_furnishings "soft furnishings"
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  23519 "hearth rug" noun common rec 3 link 4
+3146 | theme soft_furnishings "soft furnishings"
+   SHORT 23107 "curtains" noun common rec 1 link 1
+   LONG  23508 "net curtains" noun common rec 3 link 3
+3147 | theme soft_furnishings "soft furnishings"
+   SHORT 23146 "blinds" noun common rec 2 link 3
+   LONG  23506 "venetian blinds" noun common rec 2 link 3
+3148 | theme soft_furnishings "soft furnishings"
+   SHORT 23501 "carpet" [floor covering] noun common rec 1 link 2
+   LONG  23518 "wall-to-wall carpet" noun common rec 3 link 4
+3149 | theme window_coverings "window coverings" (note: curtains, blinds, shutters, drapes, valance, roller blind)
+   SHORT 23107 "curtains" noun common rec 1 link 1
+   LONG  23508 "net curtains" noun common rec 3 link 3
+3150 | theme window_coverings "window coverings" (note: curtains, blinds, shutters, drapes, valance, roller blind)
+   SHORT 23107 "curtains" noun common rec 1 link 1
+   LONG  55237 "blackout curtains" noun common rec 2 link 2
+3151 | theme window_coverings "window coverings" (note: curtains, blinds, shutters, drapes, valance, roller blind)
+   SHORT 23107 "curtains" noun common rec 1 link 1
+   LONG  55238 "cafe curtains" noun common rec 3 link 3
+3152 | theme window_coverings "window coverings" (note: curtains, blinds, shutters, drapes, valance, roller blind)
+   SHORT 23146 "blinds" noun common rec 2 link 1
+   LONG  55236 "vertical blinds" noun common rec 2 link 2
+3153 | theme window_coverings "window coverings" (note: curtains, blinds, shutters, drapes, valance, roller blind)
+   SHORT 23507 "shutters" noun common rec 2 link 2
+   LONG  55239 "plantation shutters" noun common rec 3 link 3
+3154 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  14031 "prayer rug" noun common rec 2 link 3
+3155 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  23519 "hearth rug" noun common rec 3 link 3
+3156 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  55248 "area rug" noun common rec 2 link 2
+3157 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  55249 "throw rug" noun common rec 3 link 2
+3158 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 23105 "rug" [carpet] noun common rec 1 link 1
+   LONG  55250 "rag rug" noun common rec 3 link 3
+3159 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 23501 "carpet" [floor covering] noun common rec 1 link 1
+   LONG  55263 "carpet tile" noun common rec 3 link 4
+3160 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 23510 "runner" [rug] noun common rec 3 link 3
+   LONG  55257 "stair runner" noun common rec 3 link 3
+3161 | theme rugs_and_carpets "rugs and carpets" (note: kilim, shag, Persian rug, dhurrie, runner, doormat)
+   SHORT 55247 "shag" [carpet] noun common rec 3 link 3
+   LONG  55264 "shag pile" noun common rec 4 link 4
+3162 | theme appliances "appliances"
+   SHORT 4716 "fridge" [refrigerator] noun common rec 1 link 1
+   LONG  4794 "wine fridge" noun common rec 3 link 4
+3163 | theme appliances "appliances"
+   SHORT 4718 "freezer" noun common rec 1 link 1
+   LONG  4786 "chest freezer" noun common rec 3 link 4
+3164 | theme appliances "appliances"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  4723 "microwave oven" noun common rec 1 link 1
+3165 | theme appliances "appliances"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  4758 "toaster oven" noun common rec 2 link 3
+3166 | theme appliances "appliances"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  4790 "wall oven" noun common rec 4 link 4
+3167 | theme appliances "appliances"
+   SHORT 4727 "dryer" [clothes dryer] noun common rec 1 link 1
+   LONG  3767 "hair dryer" noun common rec 1 link 3
+3168 | theme appliances "appliances"
+   SHORT 4727 "dryer" [clothes dryer] noun common rec 1 link 1
+   LONG  4793 "spin dryer" noun common rec 4 link 4
+3169 | theme appliances "appliances"
+   SHORT 4729 "toaster" noun common rec 1 link 1
+   LONG  4758 "toaster oven" noun common rec 2 link 3
+3170 | theme appliances "appliances"
+   SHORT 4731 "blender" noun common rec 1 link 1
+   LONG  4781 "immersion blender" noun common rec 3 link 4
+3171 | theme appliances "appliances"
+   SHORT 4731 "blender" noun common rec 1 link 1
+   LONG  4783 "hand blender" noun common rec 3 link 4
+3172 | theme appliances "appliances"
+   SHORT 4735 "vacuum" [vacuum cleaner] noun common rec 1 link 1
+   LONG  4763 "robot vacuum" noun common rec 2 link 3
+3173 | theme appliances "appliances"
+   SHORT 4743 "heater" noun common rec 1 link 2
+   LONG  4776 "water heater" noun common rec 3 link 3
+3174 | theme appliances "appliances"
+   SHORT 25760 "iron" [appliance] noun common rec 1 link 2
+   LONG  4740 "steam iron" noun common rec 2 link 3
+3175 | theme appliances "appliances"
+   SHORT 25760 "iron" [appliance] noun common rec 1 link 2
+   LONG  4756 "waffle iron" noun common rec 2 link 3
+3176 | theme kitchen_appliances "kitchen appliances"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  4723 "microwave oven" noun common rec 1 link 1
+3177 | theme kitchen_appliances "kitchen appliances"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  4758 "toaster oven" noun common rec 2 link 3
+3178 | theme kitchen_appliances "kitchen appliances"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  23541 "combi oven" noun common rec 4 link 5
+3179 | theme kitchen_appliances "kitchen appliances"
+   SHORT 4719 "oven" noun common rec 1 link 1
+   LONG  61461 "steam oven" noun common rec 3 link 4
+3180 | theme kitchen_appliances "kitchen appliances"
+   SHORT 4729 "toaster" noun common rec 1 link 1
+   LONG  4758 "toaster oven" noun common rec 2 link 3
+3181 | theme kitchen_appliances "kitchen appliances"
+   SHORT 4768 "hob" [cooking surface] noun common rec 2 link 2
+   LONG  61458 "induction hob" noun common rec 3 link 3
+3182 | theme kitchen_appliances "kitchen appliances"
+   SHORT 23535 "mixer" [kitchen] noun common rec 2 link 2
+   LONG  4746 "stand mixer" noun common rec 2 link 3
+3183 | theme cleaning_appliances "cleaning appliances"
+   SHORT 4727 "dryer" [clothes dryer] noun common rec 1 link 2
+   LONG  4793 "spin dryer" noun common rec 4 link 4
+3184 | theme cleaning_appliances "cleaning appliances"
+   SHORT 4727 "dryer" [clothes dryer] noun common rec 1 link 2
+   LONG  23553 "washer-dryer" noun common rec 3 link 3
+3185 | theme cleaning_appliances "cleaning appliances"
+   SHORT 4735 "vacuum" [vacuum cleaner] noun common rec 1 link 1
+   LONG  4763 "robot vacuum" noun common rec 2 link 2
+3186 | theme cleaning_appliances "cleaning appliances"
+   SHORT 4735 "vacuum" [vacuum cleaner] noun common rec 1 link 1
+   LONG  23546 "handheld vacuum" noun common rec 3 link 3
+3187 | theme cleaning_appliances "cleaning appliances"
+   SHORT 4735 "vacuum" [vacuum cleaner] noun common rec 1 link 1
+   LONG  23547 "stick vacuum" noun common rec 3 link 3
+3188 | theme cleaning_appliances "cleaning appliances"
+   SHORT 4735 "vacuum" [vacuum cleaner] noun common rec 1 link 1
+   LONG  23557 "central vacuum" noun common rec 4 link 4
+3189 | theme cleaning_appliances "cleaning appliances"
+   SHORT 4735 "vacuum" [vacuum cleaner] noun common rec 1 link 1
+   LONG  23558 "cylinder vacuum" noun common rec 4 link 3
+3190 | theme cleaning_appliances "cleaning appliances"
+   SHORT 25760 "iron" [appliance] noun common rec 1 link 3
+   LONG  4740 "steam iron" noun common rec 2 link 3
+3191 | theme home_electronics "home electronics"
+   SHORT 4578 "radio" noun common rec 1 link 1
+   LONG  4602 "two-way radio" noun phrase rec 3 link 5
+3192 | theme home_electronics "home electronics"
+   SHORT 23559 "speaker" [audio] noun common rec 1 link 2
+   LONG  7341 "smart speaker" noun common rec 2 link 3
+3193 | theme heating_and_cooling "heating and cooling"
+   SHORT 4743 "heater" noun common rec 1 link 1
+   LONG  23578 "space heater" noun common rec 2 link 2
+3194 | theme heating_and_cooling "heating and cooling"
+   SHORT 4743 "heater" noun common rec 1 link 1
+   LONG  23595 "storage heater" noun common rec 4 link 3
+3195 | theme heating_and_cooling "heating and cooling"
+   SHORT 23574 "fan" [cooling] noun common rec 1 link 1
+   LONG  23579 "ceiling fan" noun common rec 1 link 2
+3196 | theme fireplace_words "fireplace words" (note: hearth, mantel, grate, poker, bellows, flue, kindling)
+   SHORT 23246 "chimney" [house] noun common rec 1 link 2
+   LONG  55270 "chimney breast" noun common rec 4 link 4
+3197 | theme fireplace_words "fireplace words" (note: hearth, mantel, grate, poker, bellows, flue, kindling)
+   SHORT 23590 "flue" noun common rec 4 link 3
+   LONG  55275 "flue liner" noun common rec 5 link 5
+3198 | theme fireplace_words "fireplace words" (note: hearth, mantel, grate, poker, bellows, flue, kindling)
+   SHORT 30135 "log" [wood] noun common rec 1 link 1
+   LONG  23591 "log basket" noun common rec 4 link 4
+3199 | theme fireplace_words "fireplace words" (note: hearth, mantel, grate, poker, bellows, flue, kindling)
+   SHORT 30135 "log" [wood] noun common rec 1 link 1
+   LONG  23599 "log burner" noun common rec 3 link 3
+3200 | theme small_appliances "small appliances"
+   SHORT 4731 "blender" noun common rec 1 link 1
+   LONG  4781 "immersion blender" noun common rec 3 link 3
+3201 | theme small_appliances "small appliances"
+   SHORT 4731 "blender" noun common rec 1 link 1
+   LONG  4783 "hand blender" noun common rec 3 link 3
+3202 | theme small_appliances "small appliances"
+   SHORT 25760 "iron" [appliance] noun common rec 1 link 1
+   LONG  3796 "curling iron" noun common rec 2 link 4
+3203 | theme bathroom_fixtures "bathroom fixtures"
+   SHORT 16272 "shower" [bathroom] noun common rec 1 link 1
+   LONG  23622 "shower tray" noun common rec 3 link 4
+3204 | theme bathroom_fixtures "bathroom fixtures"
+   SHORT 16272 "shower" [bathroom] noun common rec 1 link 1
+   LONG  23623 "shower screen" noun common rec 3 link 3
+3205 | theme bathroom_fixtures "bathroom fixtures"
+   SHORT 16272 "shower" [bathroom] noun common rec 1 link 1
+   LONG  23630 "rainfall shower" noun common rec 3 link 3
+3206 | theme bathroom_fixtures "bathroom fixtures"
+   SHORT 23117 "sink" noun common rec 1 link 1
+   LONG  23617 "pedestal sink" noun common rec 3 link 3
+3207 | theme bathroom_fixtures "bathroom fixtures"
+   SHORT 23134 "toilet" [bathroom] noun common rec 1 link 1
+   LONG  23619 "toilet seat" noun common rec 1 link 2
+3208 | theme bathroom_fixtures "bathroom fixtures"
+   SHORT 23134 "toilet" [bathroom] noun common rec 1 link 1
+   LONG  23621 "toilet roll holder" noun common rec 2 link 3
+3209 | theme bathroom_fixtures "bathroom fixtures"
+   SHORT 23137 "towel rail" noun common rec 2 link 2
+   LONG  23633 "heated towel rail" noun common rec 3 link 3
+3210 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 23640 "plug" [electrical] noun common rec 1 link 1
+   LONG  23673 "smart plug" noun common rec 3 link 3
+3211 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 23641 "socket" [electrical] noun common rec 1 link 1
+   LONG  23653 "wall socket" noun common rec 1 link 1
+3212 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 23641 "socket" [electrical] noun common rec 1 link 1
+   LONG  23659 "USB socket" noun common rec 3 link 3
+3213 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 23642 "switch" [electrical] noun common rec 1 link 1
+   LONG  23652 "light switch" noun common rec 1 link 1
+3214 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 23642 "switch" [electrical] noun common rec 1 link 1
+   LONG  23668 "rocker switch" noun common rec 4 link 4
+3215 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 23642 "switch" [electrical] noun common rec 1 link 1
+   LONG  23670 "cooker switch" noun common rec 5 link 5
+3216 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 23660 "cable" [electrical] noun common rec 1 link 2
+   LONG  61479 "cable gland" noun common rec 5 link 5
+3217 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 40676 "fuse" [electric] noun common rec 2 link 1
+   LONG  23648 "fuse box" noun common rec 2 link 2
+3218 | theme electrical_fittings "electrical fittings" (note: plug, socket, switch, fuse, adapter, dimmer, breaker)
+   SHORT 40676 "fuse" [electric] noun common rec 2 link 1
+   LONG  23663 "fuse wire" noun common rec 4 link 4
+3219 | theme tools "tools"
+   SHORT 317 "screwdriver" [tool] noun common rec 1 link 1
+   LONG  4814 "Phillips screwdriver" noun proper rec 2 link 2
+3220 | theme tools "tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4834 "circular saw" noun common rec 3 link 3
+3221 | theme tools "tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4839 "hand saw" noun common rec 2 link 2
+3222 | theme tools "tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4844 "coping saw" noun common rec 4 link 4
+3223 | theme tools "tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4853 "tenon saw" noun common rec 5 link 5
+3224 | theme tools "tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4857 "dovetail saw" noun common rec 5 link 5
+3225 | theme tools "tools"
+   SHORT 319 "wrench" noun common rec 1 link 1
+   LONG  4823 "socket wrench" noun common rec 3 link 3
+3226 | theme tools "tools"
+   SHORT 319 "wrench" noun common rec 1 link 1
+   LONG  4825 "torque wrench" noun common rec 3 link 4
+3227 | theme tools "tools"
+   SHORT 319 "wrench" noun common rec 1 link 1
+   LONG  4826 "monkey wrench" noun common rec 3 link 3
+3228 | theme tools "tools"
+   SHORT 319 "wrench" noun common rec 1 link 1
+   LONG  4827 "pipe wrench" noun common rec 3 link 3
+3229 | theme tools "tools"
+   SHORT 329 "plane" [tool] noun common rec 3 link 3
+   LONG  4856 "block plane" noun common rec 5 link 5
+3230 | theme tools "tools"
+   SHORT 4803 "level" [tool] noun common rec 2 link 3
+   LONG  327 "spirit level" noun common rec 3 link 2
+3231 | theme hand_tools "hand tools"
+   SHORT 316 "hammer" [tool] noun common rec 1 link 1
+   LONG  23678 "claw hammer" noun common rec 2 link 2
+3232 | theme hand_tools "hand tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4844 "coping saw" noun common rec 4 link 4
+3233 | theme hand_tools "hand tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4853 "tenon saw" noun common rec 5 link 5
+3234 | theme hand_tools "hand tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4857 "dovetail saw" noun common rec 5 link 5
+3235 | theme hand_tools "hand tools"
+   SHORT 319 "wrench" noun common rec 1 link 1
+   LONG  4823 "socket wrench" noun common rec 3 link 3
+3236 | theme hand_tools "hand tools"
+   SHORT 319 "wrench" noun common rec 1 link 1
+   LONG  4827 "pipe wrench" noun common rec 3 link 3
+3237 | theme saws "saws" (note: hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw)
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55285 "back saw" noun common rec 4 link 4
+3238 | theme saws "saws" (note: hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw)
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55286 "pull saw" noun common rec 4 link 4
+3239 | theme saws "saws" (note: hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw)
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55288 "hole saw" noun common rec 3 link 4
+3240 | theme saws "saws" (note: hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw)
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55289 "tile saw" noun common rec 3 link 5
+3241 | theme saws "saws" (note: hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw)
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55291 "buzz saw" noun common rec 3 link 3
+3242 | theme saws "saws" (note: hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw)
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55292 "pit saw" noun common rec 5 link 5
+3243 | theme saws "saws" (note: hacksaw, coping saw, bow saw, fret saw, chainsaw, band saw)
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55295 "two-man saw" noun common rec 4 link 4
+3244 | theme power_tools "power tools"
+   SHORT 4799 "drill" [tool] noun common rec 1 link 1
+   LONG  23684 "cordless drill" noun common rec 2 link 1
+3245 | theme power_tools "power tools"
+   SHORT 4799 "drill" [tool] noun common rec 1 link 1
+   LONG  23698 "drill press" noun common rec 3 link 3
+3246 | theme power_tools "power tools"
+   SHORT 4799 "drill" [tool] noun common rec 1 link 1
+   LONG  23699 "hammer drill" noun common rec 3 link 3
+3247 | theme power_tools "power tools"
+   SHORT 23681 "sander" noun common rec 2 link 2
+   LONG  4845 "belt sander" noun common rec 4 link 3
+3248 | theme power_tools "power tools"
+   SHORT 23681 "sander" noun common rec 2 link 2
+   LONG  4846 "orbital sander" noun common rec 4 link 3
+3249 | theme fixings "fixings"
+   SHORT 7392 "screw" [hardware] noun common rec 1 link 1
+   LONG  23719 "wood screw" noun common rec 2 link 2
+3250 | theme fixings "fixings"
+   SHORT 7392 "screw" [hardware] noun common rec 1 link 1
+   LONG  23728 "self-tapping screw" noun common rec 4 link 3
+3251 | theme fixings "fixings"
+   SHORT 7392 "screw" [hardware] noun common rec 1 link 1
+   LONG  23734 "grub screw" noun common rec 4 link 4
+3252 | theme fixings "fixings"
+   SHORT 23702 "nail" [fastener] noun common rec 1 link 1
+   LONG  23718 "masonry nail" noun common rec 4 link 3
+3253 | theme fixings "fixings"
+   SHORT 23702 "nail" [fastener] noun common rec 1 link 1
+   LONG  23733 "clout nail" noun common rec 5 link 5
+3254 | theme fixings "fixings"
+   SHORT 23703 "bolt" [fastener] noun common rec 1 link 1
+   LONG  23723 "lag bolt" noun common rec 4 link 4
+3255 | theme fixings "fixings"
+   SHORT 23703 "bolt" [fastener] noun common rec 1 link 1
+   LONG  23725 "toggle bolt" noun common rec 4 link 4
+3256 | theme fixings "fixings"
+   SHORT 23703 "bolt" [fastener] noun common rec 1 link 1
+   LONG  23727 "carriage bolt" noun common rec 4 link 4
+3257 | theme fixings "fixings"
+   SHORT 23703 "bolt" [fastener] noun common rec 1 link 1
+   LONG  23729 "eye bolt" noun common rec 4 link 4
+3258 | theme fixings "fixings"
+   SHORT 23703 "bolt" [fastener] noun common rec 1 link 1
+   LONG  23735 "hex bolt" noun common rec 4 link 3
+3259 | theme fixings "fixings"
+   SHORT 23704 "nut" [fastener] noun common rec 1 link 1
+   LONG  23726 "wing nut" noun common rec 3 link 3
+3260 | theme measuring_tools "measuring tools"
+   SHORT 7235 "caliper" noun common rec 4 link 3
+   LONG  7237 "vernier caliper" noun common rec 5 link 4
+3261 | theme painting_and_decorating "painting and decorating"
+   SHORT 23758 "wallpaper" [wall covering] noun common rec 1 link 1
+   LONG  23771 "wallpaper steamer" noun common rec 4 link 4
+3262 | theme plumbing_words "plumbing words"
+   SHORT 7402 "valve" [machine] noun common rec 2 link 3
+   LONG  23785 "float valve" noun common rec 4 link 4
+3263 | theme plumbing_words "plumbing words"
+   SHORT 7402 "valve" [machine] noun common rec 2 link 3
+   LONG  23797 "ball valve" noun common rec 4 link 4
+3264 | theme plumbing_words "plumbing words"
+   SHORT 7402 "valve" [machine] noun common rec 2 link 3
+   LONG  23798 "pressure valve" noun common rec 3 link 4
+3265 | theme plumbing_words "plumbing words"
+   SHORT 23780 "pipe" [tube] noun common rec 1 link 1
+   LONG  23787 "pipe elbow" noun common rec 3 link 4
+3266 | theme plumbing_words "plumbing words"
+   SHORT 23780 "pipe" [tube] noun common rec 1 link 1
+   LONG  23788 "pipe coupling" noun common rec 4 link 4
+3267 | theme plumbing_words "plumbing words"
+   SHORT 23780 "pipe" [tube] noun common rec 1 link 1
+   LONG  23791 "pipe cutter" noun common rec 3 link 4

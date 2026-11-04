@@ -14,11 +14,13 @@ const LIB = here('../../data/wordlist-en.project.json'), APPLY = process.argv.in
 const REPORT = process.argv.includes('--report') ? process.argv[process.argv.indexOf('--report') + 1] : '';
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const E = id => P.ix.entry.get(+id), T = id => P.ix.theme.get(id);
-const stat = { MERGE: 0, BRAND: 0, GROUP: 0, SUB: 0, bad: 0, orphanedToAlias: 0 }, problems = [], orphans = [], kept = [], subs = [], log = [];
+const stat = { MERGE: 0, BRAND: 0, GROUP: 0, OUT: 0, 'SHORT-OUT': 0, SUB: 0, bad: 0, orphanedToAlias: 0 }, problems = [], orphans = [], kept = [], subs = [], log = [];
 const toks = s => s.toLowerCase().match(/[a-z0-9]+/g) || [];
 const fold = s => s.toLowerCase().replace(/[^a-z0-9]/g, ''), slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
 const regroup = (t, fn) => { if (t.groups) t.groups = t.groups.map(g => [...new Set(g.map(fn).filter(Boolean))]).filter(g => g.length > 1); };
 const files = fs.readdirSync(here('./' + DIR + '/')).filter(f => /^v-\d+\.txt$/.test(f)).sort((a, b) => parseInt(a.slice(2)) - parseInt(b.slice(2)));
+const pairTheme = new Map();   // pair number -> theme id, from the list files of a full pass
+for (const f of fs.readdirSync(here('./' + DIR + '/')).filter(f => /^list-\d+\.txt$/.test(f))) for (const l of fs.readFileSync(here('./' + DIR + '/' + f), 'utf8').split(/\r?\n/)) { const m = /^(\d+) \| theme (\S+) /.exec(l); if (m) pairTheme.set(+m[1], m[2]); }
 const lines = [];
 for (const f of files) for (const l of fs.readFileSync(here('./' + DIR + '/' + f), 'utf8').split(/\r?\n/)) if (l.trim() && !l.startsWith('#')) lines.push([f, l.trim()]);
 const slist = lines.filter(([, l]) => l.startsWith('SUB')), plist = lines.filter(([, l]) => !l.startsWith('SUB'));
@@ -29,11 +31,14 @@ const leave = (t, b, why) => {
   return true;
 };
 for (const [f, l] of plist) {
-  const m = /^(MERGE|BRAND|GROUP)\s+(\S+)\s+(\d+)\s+(\d+)$/.exec(l);
+  const m = /^(MERGE|BRAND|GROUP|OUT|SHORT-OUT)\s+(\S+)\s+(\d+)\s+(\d+)$/.exec(l);
   if (!m) { stat.bad++; problems.push(`${f}: cannot read "${l.slice(0, 80)}"`); continue; }
-  const [, verb, tid, ai, bi] = m, t = T(tid), a = E(ai), b = E(bi);
+  const [, verb, tid0, ai, bi] = m, tid = /^\d+$/.test(tid0) && pairTheme.has(+tid0) ? pairTheme.get(+tid0) : tid0, t = T(tid);   // an agent may write the pair number where the theme id goes: the list files say which theme the pair is in
+  let a = E(ai), b = E(bi);
   if (!t || !a || !b) { stat.bad++; problems.push(`${f}: missing theme or entry in "${l}"`); continue; }
   if (a.aliasOf || b.aliasOf) { stat.bad++; problems.push(`${f}: alias in "${l}"`); continue; }
+  { const sh = e => toks(e.show?.[tid] || e.text), has = (big, small) => { for (let i = 0; i + small.length <= big.length; i++) if (small.every((w, j) => big[i + j] === w)) return true; return false; };   // the long entry must contain the short one; swap if an agent wrote them the other way round
+    if (!has(sh(b), sh(a))) { if (has(sh(a), sh(b))) [a, b] = [b, a]; else { stat.bad++; problems.push(`${f}: not an overlap pair "${l}"`); continue; } } }
   if (a.th[tid] === undefined || b.th[tid] === undefined) { problems.push(`${f}: already gone "${l}"`); continue; }
   if (verb === 'GROUP') {
     t.groups = t.groups || [];
@@ -43,15 +48,16 @@ for (const [f, l] of plist) {
     stat.GROUP++; log.push(`GROUP in ${t.name}: ${a.text} + ${b.text}`); continue;
   }
   if (verb === 'BRAND' && Object.keys(b.th).length === 1) { kept.push(b.id + ' ' + b.text + ' (' + t.name + ')'); continue; }
-  leave(t, b); stat[verb]++; log.push(`${verb} in ${t.name}: ${b.text} out (kept ${a.text})`);
-  const left = Object.keys(b.th).length;
-  if (!left && !P.entries.some(x => x.aliasOf === b.id && Object.keys(x.th).length)) {
+  const gone = verb === 'SHORT-OUT' ? a : b, stays = verb === 'SHORT-OUT' ? b : a;   // OUT: the long entry is not a member; SHORT-OUT: the bare category word of a kinds theme leaves
+  leave(t, gone); stat[verb]++; log.push(`${verb} in ${t.name}: ${gone.text} out (kept ${stays.text})`);
+  const left = Object.keys(gone.th).length;
+  if (!left && !P.entries.some(x => x.aliasOf === gone.id && Object.keys(x.th).length)) {
     if (verb === 'MERGE') {
-      for (const x of P.entries) if (x.aliasOf === b.id) x.aliasOf = a.id;
-      for (const x of P.entries) if (x.use) for (const k of Object.keys(x.use)) if (x.use[k] === b.id) delete x.use[k];
-      for (const t2 of P.themes) regroup(t2, id => id === b.id ? a.id : id);
-      P.entries.splice(P.entries.indexOf(b), 1); stat.orphanedToAlias++;
-    } else orphans.push(`${b.id} ${b.text} (from ${t.name})`);
+      for (const x of P.entries) if (x.aliasOf === gone.id) x.aliasOf = stays.id;
+      for (const x of P.entries) if (x.use) for (const k of Object.keys(x.use)) if (x.use[k] === gone.id) delete x.use[k];
+      for (const t2 of P.themes) regroup(t2, id => id === gone.id ? stays.id : id);
+      P.entries.splice(P.entries.indexOf(gone), 1); stat.orphanedToAlias++;
+    } else orphans.push(`${gone.id} ${gone.text} (from ${t.name})`);
   }
 }
 for (const [f, l] of slist) {

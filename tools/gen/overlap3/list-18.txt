@@ -1,0 +1,891 @@
+5050 | theme cybersecurity_words "cybersecurity words" (note: hacker, malware, phishing, firewall, password, encryption, ransomware, spyware)
+   SHORT 42538 "breach" noun common rec 2 link 2
+   LONG  42539 "data breach" noun common rec 2 link 2
+5051 | theme tricks_that_fool_people "tricks that fool people"
+   SHORT 42520 "phishing" noun common rec 2 link 1
+   LONG  42562 "spear phishing" noun common rec 4 link 3
+5052 | theme computer_actions "computer actions" (note: click, scroll, drag, copy, paste, save, upload, download, reboot, log in)
+   SHORT 39581 "click" [sound] other common rec 1 link 1
+   LONG  49262 "double-click" verb common rec 1 link 2
+5053 | theme computer_actions "computer actions" (note: click, scroll, drag, copy, paste, save, upload, download, reboot, log in)
+   SHORT 39581 "click" [sound] other common rec 1 link 1
+   LONG  49263 "right-click" verb common rec 1 link 2
+5054 | theme computer_actions "computer actions" (note: click, scroll, drag, copy, paste, save, upload, download, reboot, log in)
+   SHORT 40620 "drag" [air resistance] noun common rec 2 link 2
+   LONG  49277 "drag and drop" verb common rec 2 link 3
+5055 | theme computer_actions "computer actions" (note: click, scroll, drag, copy, paste, save, upload, download, reboot, log in)
+   SHORT 41795 "drop" [unit] noun common rec 1 link 5
+   LONG  49277 "drag and drop" verb common rec 2 link 3
+5056 | theme computer_actions "computer actions" (note: click, scroll, drag, copy, paste, save, upload, download, reboot, log in)
+   SHORT 49273 "delete" [action] verb common rec 1 link 1
+   LONG  49284 "ctrl-alt-delete" verb common rec 3 link 3
+5057 | theme phone_features "phone features"
+   SHORT 4620 "voicemail" noun common rec 2 link 2
+   LONG  62210 "visual voicemail" noun common rec 4 link 5
+5058 | theme phone_features "phone features"
+   SHORT 12060 "camera" noun common rec 1 link 1
+   LONG  49381 "selfie camera" noun common rec 2 link 2
+5059 | theme telephone_extras "telephone services"
+   SHORT 4620 "voicemail" noun common rec 2 link 2
+   LONG  62210 "visual voicemail" noun common rec 4 link 5
+5060 | theme robots "robots"
+   SHORT 49411 "Optimus" [robot] noun proper rec 3 link 3
+   LONG  49396 "Optimus Prime" [robot] noun proper rec 2 link 2
+5061 | theme ai_words "ai words"
+   SHORT 39306 "prompt" [quick] adjective common rec 3 link 2
+   LONG  62224 "prompt engineering" noun common rec 2 link 3
+5062 | theme ai_words "ai words"
+   SHORT 49429 "model" [AI] noun common rec 1 link 2
+   LONG  49431 "large language model" noun common rec 3 link 2
+5063 | theme ai_words "ai words"
+   SHORT 49429 "model" [AI] noun common rec 1 link 2
+   LONG  62219 "diffusion model" noun common rec 4 link 4
+5064 | theme ai_words "ai words"
+   SHORT 49454 "AI" noun acronym rec 1 link 1
+   LONG  49432 "generative AI" noun common rec 2 link 2
+5065 | theme cameras "cameras"
+   SHORT 12061 "lens" [camera] noun common rec 1 link 1
+   LONG  12088 "lens cap" noun common rec 2 link 3
+5066 | theme cameras "cameras"
+   SHORT 12061 "lens" [camera] noun common rec 1 link 1
+   LONG  49485 "zoom lens" noun common rec 2 link 2
+5067 | theme cameras "cameras"
+   SHORT 12064 "shutter" [camera] noun common rec 2 link 2
+   LONG  12080 "shutter speed" noun common rec 3 link 4
+5068 | theme wearable_tech "wearable tech" (note: smartwatch, fitness tracker, VR headset, earbuds, smart glasses, hearing aid)
+   SHORT 23222 "headset" [audio] noun common rec 2 link 4
+   LONG  7340 "VR headset" noun common rec 2 link 2
+5069 | theme wearable_tech "wearable tech" (note: smartwatch, fitness tracker, VR headset, earbuds, smart glasses, hearing aid)
+   SHORT 23222 "headset" [audio] noun common rec 2 link 4
+   LONG  49525 "Bluetooth headset" noun common rec 2 link 3
+5070 | theme audio_gear "audio gear" (note: headphones, speaker, amplifier, microphone, turntable, subwoofer, soundbar)
+   SHORT 23559 "speaker" [audio] noun common rec 1 link 1
+   LONG  7351 "Bluetooth speaker" noun common rec 2 link 2
+5071 | theme audio_gear "audio gear" (note: headphones, speaker, amplifier, microphone, turntable, subwoofer, soundbar)
+   SHORT 23559 "speaker" [audio] noun common rec 1 link 1
+   LONG  49552 "bookshelf speaker" noun common rec 3 link 4
+5072 | theme audio_gear "audio gear" (note: headphones, speaker, amplifier, microphone, turntable, subwoofer, soundbar)
+   SHORT 23559 "speaker" [audio] noun common rec 1 link 1
+   LONG  49554 "speaker cable" noun common rec 2 link 4
+5073 | theme display_tech "display tech" (note: LCD, LED, OLED, plasma, CRT, touchscreen, projector, e-ink, 4K)
+   SHORT 39973 "LED" noun acronym rec 2 link 2
+   LONG  49576 "LED matrix" noun common rec 4 link 4
+5074 | theme display_tech "display tech" (note: LCD, LED, OLED, plasma, CRT, touchscreen, projector, e-ink, 4K)
+   SHORT 39973 "LED" noun acronym rec 2 link 2
+   LONG  62232 "Mini-LED" noun common rec 4 link 4
+5075 | theme display_tech "display tech" (note: LCD, LED, OLED, plasma, CRT, touchscreen, projector, e-ink, 4K)
+   SHORT 49566 "HD" noun common rec 2 link 1
+   LONG  49567 "Full HD" noun common rec 2 link 2
+5076 | theme display_tech "display tech" (note: LCD, LED, OLED, plasma, CRT, touchscreen, projector, e-ink, 4K)
+   SHORT 49566 "HD" noun common rec 2 link 1
+   LONG  49585 "ultra HD" noun common rec 3 link 2
+5077 | theme display_tech "display tech" (note: LCD, LED, OLED, plasma, CRT, touchscreen, projector, e-ink, 4K)
+   SHORT 49573 "AMOLED" noun common rec 3 link 3
+   LONG  49586 "Super AMOLED" noun common rec 4 link 4
+5078 | theme screen_types "screen types"
+   SHORT 39973 "LED" noun acronym rec 2 link 2
+   LONG  62232 "Mini-LED" noun common rec 4 link 4
+5079 | theme screen_types "screen types"
+   SHORT 49573 "AMOLED" noun common rec 3 link 3
+   LONG  49586 "Super AMOLED" noun common rec 4 link 4
+5080 | theme display_specs "display specs"
+   SHORT 49566 "HD" noun common rec 2 link 1
+   LONG  49567 "Full HD" noun common rec 2 link 2
+5081 | theme display_specs "display specs"
+   SHORT 49566 "HD" noun common rec 2 link 1
+   LONG  49585 "ultra HD" noun common rec 3 link 2
+5082 | theme battery_types "battery types" (note: AA, AAA, 9-volt, button cell, lithium-ion, alkaline, power bank, car battery)
+   SHORT 49626 "lithium" (full: lithium battery) noun common rec 2 link 2
+   LONG  49598 "lithium-ion" noun common rec 2 link 1
+5083 | theme battery_types "battery types" (note: AA, AAA, 9-volt, button cell, lithium-ion, alkaline, power bank, car battery)
+   SHORT 49626 "lithium" (full: lithium battery) noun common rec 2 link 2
+   LONG  49607 "lithium polymer" noun common rec 4 link 4
+5084 | theme engineering "engineering"
+   SHORT 7379 "bridge" [structure] noun common rec 1 link 1
+   LONG  7424 "suspension bridge" noun common rec 2 link 2
+5085 | theme engineering "engineering"
+   SHORT 7396 "concrete" [building material] noun common rec 1 link 2
+   LONG  7425 "reinforced concrete" noun common rec 3 link 3
+5086 | theme simple_machines "simple machines" (note: the six simple machines plus everyday examples: lever, pulley, wedge, screw, ramp, seesaw, crowbar)
+   SHORT 6560 "staircase" noun common rec 1 link 4
+   LONG  38979 "spiral staircase" noun common rec 2 link 4
+5087 | theme simple_machines "simple machines" (note: the six simple machines plus everyday examples: lever, pulley, wedge, screw, ramp, seesaw, crowbar)
+   SHORT 7387 "wheel" [part] noun common rec 1 link 2
+   LONG  49668 "wheel and axle" noun common rec 3 link 1
+5088 | theme simple_machines "simple machines" (note: the six simple machines plus everyday examples: lever, pulley, wedge, screw, ramp, seesaw, crowbar)
+   SHORT 7388 "axle" [car part] noun common rec 2 link 3
+   LONG  49668 "wheel and axle" noun common rec 3 link 1
+5089 | theme simple_machines "simple machines" (note: the six simple machines plus everyday examples: lever, pulley, wedge, screw, ramp, seesaw, crowbar)
+   SHORT 7392 "screw" [hardware] noun common rec 1 link 1
+   LONG  49674 "Archimedes screw" noun common rec 4 link 4
+5090 | theme simple_machines "simple machines" (note: the six simple machines plus everyday examples: lever, pulley, wedge, screw, ramp, seesaw, crowbar)
+   SHORT 28562 "wedge" [simple machine] noun common rec 3 link 1
+   LONG  49673 "door wedge" noun common rec 2 link 3
+5091 | theme engines "engines" (note: engine kinds: diesel, steam, jet, rocket, turbine, rotary, two-stroke, V8)
+   SHORT 7400 "turbine" noun common rec 2 link 3
+   LONG  49692 "steam turbine" noun common rec 3 link 3
+5092 | theme engines "engines" (note: engine kinds: diesel, steam, jet, rocket, turbine, rotary, two-stroke, V8)
+   SHORT 7400 "turbine" noun common rec 2 link 3
+   LONG  49696 "gas turbine" noun common rec 3 link 3
+5093 | theme engines "engines" (note: engine kinds: diesel, steam, jet, rocket, turbine, rotary, two-stroke, V8)
+   SHORT 7400 "turbine" noun common rec 2 link 3
+   LONG  62252 "Tesla turbine" noun common rec 5 link 5
+5094 | theme engines "engines" (note: engine kinds: diesel, steam, jet, rocket, turbine, rotary, two-stroke, V8)
+   SHORT 49675 "steam" [engine] noun common rec 1 link 2
+   LONG  49692 "steam turbine" noun common rec 3 link 3
+5095 | theme engines "engines" (note: engine kinds: diesel, steam, jet, rocket, turbine, rotary, two-stroke, V8)
+   SHORT 49676 "jet" [engine] noun common rec 1 link 2
+   LONG  49700 "pulse jet" noun common rec 5 link 5
+5096 | theme energy_sources "energy sources" (note: includes fossil and nuclear: coal, oil, gas, uranium, solar, wind, tidal)
+   SHORT 32299 "methane" noun common rec 3 link 4
+   LONG  32349 "methane hydrate" noun common rec 5 link 5
+5097 | theme energy_sources "energy sources" (note: includes fossil and nuclear: coal, oil, gas, uranium, solar, wind, tidal)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  32347 "oil shale" noun common rec 4 link 4
+5098 | theme energy_sources "energy sources" (note: includes fossil and nuclear: coal, oil, gas, uranium, solar, wind, tidal)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  49758 "fuel oil" noun common rec 3 link 4
+5099 | theme energy_sources "energy sources" (note: includes fossil and nuclear: coal, oil, gas, uranium, solar, wind, tidal)
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  62261 "whale oil" noun common rec 4 link 4
+5100 | theme buried_fuels "buried fuels"
+   SHORT 32326 "oil" [fuel] noun common rec 1 link 1
+   LONG  32347 "oil shale" noun common rec 4 link 4
+5101 | theme electronic_parts "electronic parts"
+   SHORT 7416 "capacitor" noun common rec 3 link 1
+   LONG  62273 "tantalum capacitor" noun common rec 4 link 5
+5102 | theme electronic_parts "electronic parts"
+   SHORT 40680 "diode" noun common rec 4 link 1
+   LONG  49777 "Zener diode" noun common rec 5 link 4
+5103 | theme electronic_parts "electronic parts"
+   SHORT 40680 "diode" noun common rec 4 link 1
+   LONG  62269 "Schottky diode" noun common rec 4 link 5
+5104 | theme electronic_parts "electronic parts"
+   SHORT 49765 "switch" [electronics] noun common rec 1 link 2
+   LONG  49789 "DIP switch" noun common rec 5 link 5
+5105 | theme electronic_parts "electronic parts"
+   SHORT 49773 "wire" [electronics] noun common rec 1 link 3
+   LONG  42626 "jumper wire" noun common rec 3 link 4
+5106 | theme electronic_parts "electronic parts"
+   SHORT 49787 "chip" [electronics] noun common rec 1 link 2
+   LONG  50004 "silicon chip" noun common rec 2 link 3
+5107 | theme semiconductor_devices "semiconductor devices"
+   SHORT 40680 "diode" noun common rec 4 link 1
+   LONG  49777 "Zener diode" noun common rec 5 link 4
+5108 | theme semiconductor_devices "semiconductor devices"
+   SHORT 40680 "diode" noun common rec 4 link 1
+   LONG  62269 "Schottky diode" noun common rec 4 link 5
+5109 | theme semiconductor_devices "semiconductor devices"
+   SHORT 49787 "chip" [electronics] noun common rec 1 link 2
+   LONG  50004 "silicon chip" noun common rec 2 link 3
+5110 | theme passive_components "passive electronic components"
+   SHORT 7416 "capacitor" noun common rec 3 link 1
+   LONG  62273 "tantalum capacitor" noun common rec 4 link 5
+5111 | theme maker_kit "hobby electronics parts"
+   SHORT 49773 "wire" [electronics] noun common rec 1 link 3
+   LONG  42626 "jumper wire" noun common rec 3 link 4
+5112 | theme materials_science "materials science"
+   SHORT 21813 "alloy" noun common rec 2 link 2
+   LONG  49798 "shape memory alloy" noun common rec 5 link 4
+5113 | theme alloys "alloys" (note: steel, bronze, brass, pewter, solder, sterling silver, white gold)
+   SHORT 7397 "steel" [metal] noun common rec 1 link 1
+   LONG  31734 "stainless steel" noun common rec 1 link 1
+5114 | theme alloys "alloys" (note: steel, bronze, brass, pewter, solder, sterling silver, white gold)
+   SHORT 7397 "steel" [metal] noun common rec 1 link 1
+   LONG  58376 "carbon steel" noun common rec 3 link 3
+5115 | theme alloys "alloys" (note: steel, bronze, brass, pewter, solder, sterling silver, white gold)
+   SHORT 7397 "steel" [metal] noun common rec 1 link 1
+   LONG  58377 "Damascus steel" noun common rec 3 link 4
+5116 | theme alloys "alloys" (note: steel, bronze, brass, pewter, solder, sterling silver, white gold)
+   SHORT 7397 "steel" [metal] noun common rec 1 link 1
+   LONG  58378 "spring steel" noun common rec 4 link 4
+5117 | theme alloys "alloys" (note: steel, bronze, brass, pewter, solder, sterling silver, white gold)
+   SHORT 7397 "steel" [metal] noun common rec 1 link 1
+   LONG  58379 "tool steel" noun common rec 4 link 4
+5118 | theme material_properties "material properties"
+   SHORT 58389 "strength" [material] noun common rec 1 link 1
+   LONG  7439 "yield strength" noun common rec 5 link 4
+5119 | theme material_properties "material properties"
+   SHORT 58389 "strength" [material] noun common rec 1 link 1
+   LONG  58398 "tensile strength" noun common rec 3 link 2
+5120 | theme material_properties "material properties"
+   SHORT 58389 "strength" [material] noun common rec 1 link 1
+   LONG  58410 "shear strength" noun common rec 4 link 4
+5121 | theme power_grid_words "power grid words" (note: generator, transformer, pylon, substation, power line, turbine, grid)
+   SHORT 37884 "grid" [map grid] noun common rec 2 link 2
+   LONG  49831 "national grid" noun common rec 2 link 1
+5122 | theme power_grid_words "power grid words" (note: generator, transformer, pylon, substation, power line, turbine, grid)
+   SHORT 40669 "voltage" noun common rec 1 link 2
+   LONG  49820 "high voltage" noun common rec 1 link 2
+5123 | theme power_grid_words "power grid words" (note: generator, transformer, pylon, substation, power line, turbine, grid)
+   SHORT 49818 "meter" [electric] noun common rec 1 link 2
+   LONG  32372 "smart meter" noun common rec 3 link 3
+5124 | theme power_grid_words "power grid words" (note: generator, transformer, pylon, substation, power line, turbine, grid)
+   SHORT 49826 "load" [electrical] noun common rec 2 link 4
+   LONG  49839 "load shedding" noun common rec 4 link 4
+5125 | theme machine_parts "machine parts"
+   SHORT 7384 "gear" [machine] noun common rec 1 link 1
+   LONG  49854 "worm gear" noun common rec 4 link 4
+5126 | theme machine_parts "machine parts"
+   SHORT 7399 "piston" [engine part] noun common rec 2 link 1
+   LONG  49850 "piston ring" noun common rec 4 link 3
+5127 | theme machine_parts "machine parts"
+   SHORT 7402 "valve" [machine] noun common rec 2 link 2
+   LONG  62291 "poppet valve" noun common rec 4 link 4
+5128 | theme machine_parts "machine parts"
+   SHORT 7405 "bearing" [machine] noun common rec 3 link 2
+   LONG  49863 "thrust bearing" noun common rec 5 link 4
+5129 | theme machine_parts "machine parts"
+   SHORT 49843 "shaft" [machine] noun common rec 2 link 2
+   LONG  46620 "drive shaft" noun common rec 4 link 3
+5130 | theme machine_parts "machine parts"
+   SHORT 49844 "belt" [machine] noun common rec 1 link 3
+   LONG  46622 "fan belt" noun common rec 3 link 3
+5131 | theme engine_parts "engine parts"
+   SHORT 7399 "piston" [engine part] noun common rec 2 link 1
+   LONG  49850 "piston ring" noun common rec 4 link 3
+5132 | theme engine_parts "engine parts"
+   SHORT 7402 "valve" [machine] noun common rec 2 link 2
+   LONG  62291 "poppet valve" noun common rec 4 link 4
+5133 | theme bridge_parts "bridge parts"
+   SHORT 7395 "arch" [structure] noun common rec 2 link 2
+   LONG  49884 "arch rib" noun common rec 5 link 4
+5134 | theme bridge_parts "bridge parts"
+   SHORT 7403 "girder" [bridge beam] noun common rec 3 link 2
+   LONG  49885 "box girder" noun common rec 5 link 4
+5135 | theme bridge_parts "bridge parts"
+   SHORT 7403 "girder" [bridge beam] noun common rec 3 link 2
+   LONG  62296 "stiffening girder" noun common rec 4 link 4
+5136 | theme bridge_parts "bridge parts"
+   SHORT 7405 "bearing" [machine] noun common rec 3 link 4
+   LONG  49881 "bearing pad" noun common rec 5 link 5
+5137 | theme bridge_parts "bridge parts"
+   SHORT 49866 "deck" [bridge] noun common rec 2 link 1
+   LONG  49887 "deck slab" noun common rec 5 link 4
+5138 | theme bridge_parts "bridge parts"
+   SHORT 49866 "deck" [bridge] noun common rec 2 link 1
+   LONG  62294 "orthotropic deck" noun common rec 5 link 5
+5139 | theme bridge_parts "bridge parts"
+   SHORT 49868 "cable" [bridge] noun common rec 1 link 1
+   LONG  49869 "suspension cable" noun common rec 3 link 2
+5140 | theme bridge_parts "bridge parts"
+   SHORT 49868 "cable" [bridge] noun common rec 1 link 1
+   LONG  49873 "stay cable" noun common rec 4 link 3
+5141 | theme bridge_parts "bridge parts"
+   SHORT 49868 "cable" [bridge] noun common rec 1 link 1
+   LONG  49882 "main cable" noun common rec 3 link 2
+5142 | theme bridge_parts "bridge parts"
+   SHORT 49868 "cable" [bridge] noun common rec 1 link 1
+   LONG  49883 "suspender cable" noun common rec 4 link 3
+5143 | theme bridge_parts "bridge parts"
+   SHORT 49868 "cable" [bridge] noun common rec 1 link 1
+   LONG  62293 "cable saddle" noun common rec 5 link 5
+5144 | theme bridge_parts "bridge parts"
+   SHORT 49868 "cable" [bridge] noun common rec 1 link 1
+   LONG  62297 "cable clamp" noun common rec 4 link 5
+5145 | theme bridge_parts "bridge parts"
+   SHORT 50078 "pier" [bridge support] noun common rec 2 link 1
+   LONG  62295 "pier cap" noun common rec 4 link 4
+5146 | theme bridge_supports "bridge supports"
+   SHORT 7405 "bearing" [machine] noun common rec 3 link 4
+   LONG  49881 "bearing pad" noun common rec 5 link 5
+5147 | theme bridge_supports "bridge supports"
+   SHORT 50078 "pier" [bridge support] noun common rec 2 link 1
+   LONG  62295 "pier cap" noun common rec 4 link 4
+5148 | theme antarctic_research_station "antarctic research station" (note: things at a polar base: ice core, weather balloon, snowcat, generator, radio)
+   SHORT 28224 "flag" [banner] noun common rec 2 link 4
+   LONG  49894 "crevasse flag" noun common rec 5 link 4
+5149 | theme observatory "observatory" (note: telescope, dome, star chart, eyepiece, mount, astronomer)
+   SHORT 6551 "dome" [building] noun common rec 2 link 1
+   LONG  49959 "rotating dome" noun common rec 3 link 2
+5150 | theme observatory "observatory" (note: telescope, dome, star chart, eyepiece, mount, astronomer)
+   SHORT 7121 "telescope" noun common rec 1 link 1
+   LONG  49953 "Very Large Telescope" noun common rec 4 link 3
+5151 | theme observatory "observatory" (note: telescope, dome, star chart, eyepiece, mount, astronomer)
+   SHORT 7121 "telescope" noun common rec 1 link 1
+   LONG  49954 "radio telescope" noun common rec 2 link 2
+5152 | theme observatory "observatory" (note: telescope, dome, star chart, eyepiece, mount, astronomer)
+   SHORT 7121 "telescope" noun common rec 1 link 1
+   LONG  49962 "solar telescope" noun common rec 4 link 4
+5153 | theme observatory "observatory" (note: telescope, dome, star chart, eyepiece, mount, astronomer)
+   SHORT 49932 "mount" [telescope] noun common rec 2 link 3
+   LONG  49952 "Mount Wilson" noun common rec 5 link 4
+5154 | theme observatory "observatory" (note: telescope, dome, star chart, eyepiece, mount, astronomer)
+   SHORT 49932 "mount" [telescope] noun common rec 2 link 3
+   LONG  49956 "equatorial mount" noun common rec 5 link 3
+5155 | theme telescope_parts "telescope parts"
+   SHORT 49932 "mount" [telescope] noun common rec 2 link 3
+   LONG  49956 "equatorial mount" noun common rec 5 link 3
+5156 | theme science_lab "science lab" (note: goggles, lab coat, fume hood, bunsen burner, specimen, eyewash)
+   SHORT 24786 "goggles" [eyewear] noun common rec 2 link 1
+   LONG  24458 "safety goggles" noun common rec 2 link 1
+5157 | theme science_lab "science lab" (note: goggles, lab coat, fume hood, bunsen burner, specimen, eyewash)
+   SHORT 25488 "flask" noun common rec 2 link 1
+   LONG  40419 "Erlenmeyer flask" noun common rec 3 link 2
+5158 | theme experiment_glassware "experiment glassware"
+   SHORT 25488 "flask" noun common rec 2 link 1
+   LONG  40419 "Erlenmeyer flask" noun common rec 3 link 2
+5159 | theme protective_equipment "lab protective equipment"
+   SHORT 24786 "goggles" [eyewear] noun common rec 2 link 1
+   LONG  24458 "safety goggles" noun common rec 2 link 1
+5160 | theme science_fair "science fair" (note: poster, volcano model, hypothesis, judge, ribbon, display board)
+   SHORT 5035 "ribbon" [fabric strip] noun common rec 2 link 2
+   LONG  49984 "blue ribbon" noun common rec 1 link 1
+5161 | theme science_fair "science fair" (note: poster, volcano model, hypothesis, judge, ribbon, display board)
+   SHORT 7447 "hypothesis" noun common rec 2 link 1
+   LONG  7475 "null hypothesis" noun common rec 4 link 5
+5162 | theme science_fair "science fair" (note: poster, volcano model, hypothesis, judge, ribbon, display board)
+   SHORT 7453 "variable" [experiment] noun common rec 2 link 3
+   LONG  7467 "independent variable" noun common rec 3 link 4
+5163 | theme science_fair "science fair" (note: poster, volcano model, hypothesis, judge, ribbon, display board)
+   SHORT 7453 "variable" [experiment] noun common rec 2 link 3
+   LONG  7468 "dependent variable" noun common rec 3 link 4
+5164 | theme parts_of_an_experiment "parts of an experiment"
+   SHORT 7447 "hypothesis" noun common rec 2 link 1
+   LONG  7475 "null hypothesis" noun common rec 4 link 5
+5165 | theme parts_of_an_experiment "parts of an experiment"
+   SHORT 7453 "variable" [experiment] noun common rec 2 link 3
+   LONG  7467 "independent variable" noun common rec 3 link 4
+5166 | theme parts_of_an_experiment "parts of an experiment"
+   SHORT 7453 "variable" [experiment] noun common rec 2 link 3
+   LONG  7468 "dependent variable" noun common rec 3 link 4
+5167 | theme launch_pad "launch pad" (note: rocket, gantry, launch tower, fuel tank, countdown clock, flame trench)
+   SHORT 7153 "countdown" [space] noun common rec 1 link 1
+   LONG  42574 "countdown clock" noun common rec 3 link 2
+5168 | theme launch_pad "launch pad" (note: rocket, gantry, launch tower, fuel tank, countdown clock, flame trench)
+   SHORT 42576 "tower" (full: launch tower) noun common rec 3 link 1
+   LONG  42585 "umbilical tower" noun common rec 4 link 3
+5169 | theme launch_pad "launch pad" (note: rocket, gantry, launch tower, fuel tank, countdown clock, flame trench)
+   SHORT 42576 "tower" (full: launch tower) noun common rec 3 link 1
+   LONG  42586 "service tower" noun common rec 4 link 3
+5170 | theme launch_pad "launch pad" (note: rocket, gantry, launch tower, fuel tank, countdown clock, flame trench)
+   SHORT 42576 "tower" (full: launch tower) noun common rec 3 link 1
+   LONG  42591 "escape tower" noun common rec 5 link 4
+5171 | theme data_center "data center" (note: server rack, cables, cooling fans, backup generator, router, raised floor)
+   SHORT 7274 "server" [computer] noun common rec 2 link 1
+   LONG  42594 "server rack" noun common rec 2 link 1
+5172 | theme data_center "data center" (note: server rack, cables, cooling fans, backup generator, router, raised floor)
+   SHORT 7274 "server" [computer] noun common rec 2 link 1
+   LONG  42600 "server room" noun common rec 2 link 2
+5173 | theme data_center "data center" (note: server rack, cables, cooling fans, backup generator, router, raised floor)
+   SHORT 7274 "server" [computer] noun common rec 2 link 1
+   LONG  42601 "server farm" noun common rec 3 link 2
+5174 | theme data_center "data center" (note: server rack, cables, cooling fans, backup generator, router, raised floor)
+   SHORT 7274 "server" [computer] noun common rec 2 link 1
+   LONG  42602 "blade server" noun common rec 4 link 4
+5175 | theme data_center "data center" (note: server rack, cables, cooling fans, backup generator, router, raised floor)
+   SHORT 28704 "cable" [wire] noun common rec 1 link 3
+   LONG  42597 "ethernet cable" noun common rec 2 link 3
+5176 | theme data_center "data center" (note: server rack, cables, cooling fans, backup generator, router, raised floor)
+   SHORT 28704 "cable" [wire] noun common rec 1 link 3
+   LONG  42598 "patch cable" noun common rec 3 link 3
+5177 | theme nuclear_power_plant "nuclear power plant" (note: reactor, cooling tower, control rods, turbine, uranium, radiation suit)
+   SHORT 31704 "uranium" noun common rec 2 link 1
+   LONG  40827 "enriched uranium" noun common rec 3 link 3
+5178 | theme nuclear_power_plant "nuclear power plant" (note: reactor, cooling tower, control rods, turbine, uranium, radiation suit)
+   SHORT 31704 "uranium" noun common rec 2 link 1
+   LONG  42617 "uranium pellets" noun common rec 4 link 3
+5179 | theme nuclear_power_plant "nuclear power plant" (note: reactor, cooling tower, control rods, turbine, uranium, radiation suit)
+   SHORT 40811 "radiation" [energy emission] noun common rec 2 link 1
+   LONG  42612 "radiation suit" noun common rec 3 link 2
+5180 | theme electronics_workbench "electronics workbench" (note: soldering iron, multimeter, breadboard, oscilloscope, wire stripper, resistor)
+   SHORT 31729 "solder" [metal] noun common rec 3 link 1
+   LONG  42639 "solder wick" noun common rec 5 link 4
+5181 | theme scientific_method "scientific method"
+   SHORT 7447 "hypothesis" noun common rec 2 link 1
+   LONG  7475 "null hypothesis" noun common rec 4 link 4
+5182 | theme scientific_method "scientific method"
+   SHORT 7453 "variable" [experiment] noun common rec 2 link 2
+   LONG  7467 "independent variable" noun common rec 3 link 3
+5183 | theme scientific_method "scientific method"
+   SHORT 7453 "variable" [experiment] noun common rec 2 link 2
+   LONG  7468 "dependent variable" noun common rec 3 link 3
+5184 | theme scientific_method "scientific method"
+   SHORT 7453 "variable" [experiment] noun common rec 2 link 2
+   LONG  7505 "confounding variable" noun common rec 4 link 5
+5185 | theme scientific_method "scientific method"
+   SHORT 7454 "control" [experiment] noun common rec 2 link 2
+   LONG  7469 "control group" noun common rec 2 link 2
+5186 | theme scientific_method "scientific method"
+   SHORT 7458 "analysis" noun common rec 2 link 3
+   LONG  7512 "meta-analysis" noun common rec 5 link 5
+5187 | theme scientific_method "scientific method"
+   SHORT 7460 "research" noun common rec 1 link 2
+   LONG  7494 "background research" noun common rec 3 link 3
+5188 | theme scientific_method "scientific method"
+   SHORT 7463 "bias" [research] noun common rec 2 link 3
+   LONG  7502 "confirmation bias" noun common rec 3 link 4
+5189 | theme scientific_method "scientific method"
+   SHORT 7464 "sample" [specimen] noun common rec 2 link 3
+   LONG  7478 "sample size" noun common rec 3 link 4
+5190 | theme scientific_method "scientific method"
+   SHORT 7466 "test" [experiment] noun common rec 1 link 2
+   LONG  7503 "blind test" noun common rec 3 link 4
+5191 | theme statistics_terms "statistics terms"
+   SHORT 7464 "sample" [specimen] noun common rec 2 link 3
+   LONG  7478 "sample size" noun common rec 3 link 4
+5192 | theme germanic_languages "germanic languages"
+   SHORT 7514 "English" [language] noun proper rec 1 link 1
+   LONG  25938 "Old English" noun proper rec 2 link 3
+5193 | theme germanic_languages "germanic languages"
+   SHORT 7517 "German" [language] noun proper rec 1 link 1
+   LONG  55878 "Low German" noun proper rec 4 link 4
+5194 | theme germanic_languages "germanic languages"
+   SHORT 7517 "German" [language] noun proper rec 1 link 1
+   LONG  55882 "Swiss German" noun proper rec 3 link 3
+5195 | theme celtic_languages "celtic languages"
+   SHORT 7531 "Welsh" [language] noun proper rec 2 link 1
+   LONG  62313 "Middle Welsh" noun common rec 5 link 5
+5196 | theme celtic_languages "celtic languages"
+   SHORT 7531 "Welsh" [language] noun proper rec 2 link 1
+   LONG  62314 "Old Welsh" noun common rec 5 link 5
+5197 | theme celtic_languages "celtic languages"
+   SHORT 7532 "Irish" [language] noun proper rec 2 link 1
+   LONG  59433 "Old Irish" noun proper rec 5 link 4
+5198 | theme celtic_languages "celtic languages"
+   SHORT 7532 "Irish" [language] noun proper rec 2 link 1
+   LONG  62315 "Middle Irish" noun common rec 5 link 5
+5199 | theme celtic_languages "celtic languages"
+   SHORT 7587 "Breton" [language] noun proper rec 4 link 2
+   LONG  62318 "Old Breton" noun common rec 5 link 5
+5200 | theme languages_of_china "languages of china"
+   SHORT 7519 "Chinese" [language] noun proper rec 1 link 1
+   LONG  62321 "Jin Chinese" noun common rec 5 link 5
+5201 | theme turkic_languages "turkic languages"
+   SHORT 7534 "Turkish" [language] noun proper rec 2 link 1
+   LONG  62322 "Ottoman Turkish" noun common rec 3 link 3
+5202 | theme turkic_languages "turkic languages"
+   SHORT 7534 "Turkish" [language] noun proper rec 2 link 1
+   LONG  62323 "Modern Turkish" noun common rec 3 link 2
+5203 | theme turkic_languages "turkic languages"
+   SHORT 25892 "Tatar" noun proper rec 4 link 4
+   LONG  25899 "Crimean Tatar" noun proper rec 5 link 4
+5204 | theme pacific_languages "pacific languages"
+   SHORT 7566 "Maori" noun proper rec 3 link 1
+   LONG  62326 "Cook Islands Maori" noun common rec 5 link 5
+5205 | theme pacific_languages "pacific languages"
+   SHORT 7567 "Hawaiian" [language] noun proper rec 3 link 1
+   LONG  25934 "Hawaiian Pidgin" noun proper rec 5 link 4
+5206 | theme ancient_languages "ancient languages"
+   SHORT 25937 "Greek" (full: Ancient Greek) noun proper rec 2 link 1
+   LONG  25951 "Classical Greek" noun proper rec 3 link 3
+5207 | theme ancient_languages "ancient languages"
+   SHORT 25937 "Greek" (full: Ancient Greek) noun proper rec 2 link 1
+   LONG  25952 "Koine Greek" noun proper rec 4 link 4
+5208 | theme languages_of_the_americas "languages of the americas"
+   SHORT 7514 "English" [language] noun proper rec 1 link 1
+   LONG  62327 "American English" noun common rec 2 link 4
+5209 | theme languages_of_the_americas "languages of the americas"
+   SHORT 7515 "Spanish" [language] noun proper rec 1 link 1
+   LONG  62330 "Mexican Spanish" noun common rec 3 link 3
+5210 | theme languages_of_the_americas "languages of the americas"
+   SHORT 7516 "French" [language] noun proper rec 1 link 2
+   LONG  62328 "Canadian French" noun common rec 3 link 3
+5211 | theme languages_of_the_americas "languages of the americas"
+   SHORT 7522 "Portuguese" noun proper rec 1 link 1
+   LONG  62329 "Brazilian Portuguese" noun common rec 3 link 3
+5212 | theme codes_and_signals "codes and signals"
+   SHORT 62953 "Morse" [telegraph] noun proper rec 2 link 1
+   LONG  26018 "Morse key" noun proper rec 4 link 4
+5213 | theme alphabets_and_writing "alphabets and writing"
+   SHORT 7598 "letter" [alphabet] noun common rec 1 link 1
+   LONG  7608 "capital letter" noun common rec 1 link 2
+5214 | theme alphabets_and_writing "alphabets and writing"
+   SHORT 7598 "letter" [alphabet] noun common rec 1 link 1
+   LONG  7612 "small letter" noun common rec 2 link 3
+5215 | theme punctuation "punctuation"
+   SHORT 26100 "dash" [punctuation] noun common rec 1 link 2
+   LONG  26110 "em dash" noun common rec 3 link 3
+5216 | theme punctuation "punctuation"
+   SHORT 26100 "dash" [punctuation] noun common rec 1 link 2
+   LONG  26111 "en dash" noun common rec 3 link 4
+5217 | theme punctuation "punctuation"
+   SHORT 26106 "brackets" [punctuation] noun common rec 1 link 2
+   LONG  26122 "square brackets" noun common rec 2 link 3
+5218 | theme punctuation "punctuation"
+   SHORT 26106 "brackets" [punctuation] noun common rec 1 link 2
+   LONG  26123 "curly brackets" noun common rec 3 link 3
+5219 | theme writing_systems "writing systems"
+   SHORT 7597 "alphabet" noun common rec 1 link 2
+   LONG  26160 "Latin alphabet" noun proper rec 2 link 1
+5220 | theme writing_systems "writing systems"
+   SHORT 7597 "alphabet" noun common rec 1 link 2
+   LONG  26161 "Greek alphabet" noun proper rec 2 link 1
+5221 | theme writing_systems "writing systems"
+   SHORT 7597 "alphabet" noun common rec 1 link 2
+   LONG  26162 "Hebrew alphabet" noun proper rec 2 link 2
+5222 | theme writing_systems "writing systems"
+   SHORT 7646 "syllabary" noun common rec 4 link 4
+   LONG  26173 "Cherokee syllabary" noun proper rec 4 link 3
+5223 | theme typography_words "typography words"
+   SHORT 26206 "serif" noun common rec 2 link 2
+   LONG  26207 "sans serif" noun common rec 2 link 2
+5224 | theme typography_words "typography words"
+   SHORT 26206 "serif" noun common rec 2 link 2
+   LONG  26228 "slab serif" noun common rec 4 link 4
+5225 | theme things_you_read "things you read"
+   SHORT 6453 "novel" [book] noun common rec 1 link 1
+   LONG  13157 "graphic novel" noun common rec 2 link 3
+5226 | theme literary_works "literary works"
+   SHORT 6453 "novel" [book] noun common rec 1 link 1
+   LONG  13157 "graphic novel" noun common rec 2 link 3
+5227 | theme grammar_terms "grammar terms"
+   SHORT 26314 "modifier" [grammar] noun common rec 3 link 3
+   LONG  26337 "dangling modifier" noun common rec 4 link 4
+5228 | theme grammar_terms "grammar terms"
+   SHORT 26320 "voice" [grammar] noun common rec 2 link 3
+   LONG  26334 "active voice" noun common rec 2 link 2
+5229 | theme grammar_terms "grammar terms"
+   SHORT 26320 "voice" [grammar] noun common rec 2 link 3
+   LONG  26335 "passive voice" noun common rec 2 link 2
+5230 | theme grammar_terms "grammar terms"
+   SHORT 26327 "infinitive" noun common rec 3 link 2
+   LONG  26336 "split infinitive" noun common rec 3 link 4
+5231 | theme tenses "tenses"
+   SHORT 26347 "present" [tense] noun common rec 1 link 2
+   LONG  26353 "present perfect" noun common rec 2 link 2
+5232 | theme tenses "tenses"
+   SHORT 26347 "present" [tense] noun common rec 1 link 2
+   LONG  26357 "present continuous" noun common rec 2 link 2
+5233 | theme tenses "tenses"
+   SHORT 26347 "present" [tense] noun common rec 1 link 2
+   LONG  26358 "present progressive" noun common rec 3 link 3
+5234 | theme tenses "tenses"
+   SHORT 26347 "present" [tense] noun common rec 1 link 2
+   LONG  26362 "simple present" noun common rec 2 link 2
+5235 | theme tenses "tenses"
+   SHORT 26347 "present" [tense] noun common rec 1 link 2
+   LONG  26366 "present simple" noun common rec 2 link 2
+5236 | theme tenses "tenses"
+   SHORT 26347 "present" [tense] noun common rec 1 link 2
+   LONG  26373 "historic present" noun common rec 4 link 5
+5237 | theme tenses "tenses"
+   SHORT 26348 "past" [tense] noun common rec 1 link 2
+   LONG  26354 "past perfect" noun common rec 2 link 2
+5238 | theme tenses "tenses"
+   SHORT 26348 "past" [tense] noun common rec 1 link 2
+   LONG  26359 "past continuous" noun common rec 2 link 2
+5239 | theme tenses "tenses"
+   SHORT 26348 "past" [tense] noun common rec 1 link 2
+   LONG  26360 "past progressive" noun common rec 3 link 3
+5240 | theme tenses "tenses"
+   SHORT 26348 "past" [tense] noun common rec 1 link 2
+   LONG  26363 "simple past" noun common rec 2 link 2
+5241 | theme tenses "tenses"
+   SHORT 26348 "past" [tense] noun common rec 1 link 2
+   LONG  26367 "past simple" noun common rec 2 link 2
+5242 | theme tenses "tenses"
+   SHORT 26348 "past" [tense] noun common rec 1 link 2
+   LONG  26375 "future in the past" noun common rec 4 link 5
+5243 | theme tenses "tenses"
+   SHORT 26349 "future" [tense] noun common rec 1 link 2
+   LONG  26356 "future perfect" noun common rec 3 link 2
+5244 | theme tenses "tenses"
+   SHORT 26349 "future" [tense] noun common rec 1 link 2
+   LONG  26361 "future continuous" noun common rec 3 link 3
+5245 | theme tenses "tenses"
+   SHORT 26349 "future" [tense] noun common rec 1 link 2
+   LONG  26365 "simple future" noun common rec 2 link 2
+5246 | theme tenses "tenses"
+   SHORT 26349 "future" [tense] noun common rec 1 link 2
+   LONG  26368 "future simple" noun common rec 3 link 3
+5247 | theme tenses "tenses"
+   SHORT 26349 "future" [tense] noun common rec 1 link 2
+   LONG  26375 "future in the past" noun common rec 4 link 5
+5248 | theme tenses "tenses"
+   SHORT 26370 "perfect" [tense] noun common rec 2 link 3
+   LONG  26353 "present perfect" noun common rec 2 link 2
+5249 | theme tenses "tenses"
+   SHORT 26370 "perfect" [tense] noun common rec 2 link 3
+   LONG  26354 "past perfect" noun common rec 2 link 2
+5250 | theme tenses "tenses"
+   SHORT 26370 "perfect" [tense] noun common rec 2 link 3
+   LONG  26356 "future perfect" noun common rec 3 link 2
+5251 | theme tenses "tenses"
+   SHORT 26370 "perfect" [tense] noun common rec 2 link 3
+   LONG  26374 "perfect continuous" noun common rec 3 link 3
+5252 | theme tenses "tenses"
+   SHORT 26376 "progressive" [tense] noun common rec 3 link 3
+   LONG  26358 "present progressive" noun common rec 3 link 3
+5253 | theme tenses "tenses"
+   SHORT 26376 "progressive" [tense] noun common rec 3 link 3
+   LONG  26360 "past progressive" noun common rec 3 link 3
+5254 | theme sentence_parts "sentence parts"
+   SHORT 26293 "verb" [part of speech] noun common rec 1 link 1
+   LONG  26325 "auxiliary verb" noun common rec 3 link 4
+5255 | theme sentence_parts "sentence parts"
+   SHORT 26293 "verb" [part of speech] noun common rec 1 link 1
+   LONG  26385 "verb phrase" noun common rec 3 link 3
+5256 | theme sentence_parts "sentence parts"
+   SHORT 26293 "verb" [part of speech] noun common rec 1 link 1
+   LONG  26396 "finite verb" noun common rec 4 link 5
+5257 | theme sentence_parts "sentence parts"
+   SHORT 26309 "subject" [grammar] noun common rec 1 link 1
+   LONG  26397 "subject complement" noun common rec 4 link 5
+5258 | theme sentence_parts "sentence parts"
+   SHORT 26310 "object" [grammar] noun common rec 1 link 2
+   LONG  26382 "direct object" noun common rec 2 link 2
+5259 | theme sentence_parts "sentence parts"
+   SHORT 26310 "object" [grammar] noun common rec 1 link 2
+   LONG  26383 "indirect object" noun common rec 3 link 3
+5260 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26386 "main clause" noun common rec 3 link 2
+5261 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26387 "subordinate clause" noun common rec 3 link 3
+5262 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26388 "relative clause" noun common rec 3 link 4
+5263 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26389 "dependent clause" noun common rec 3 link 3
+5264 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26390 "independent clause" noun common rec 3 link 3
+5265 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26400 "noun clause" noun common rec 4 link 4
+5266 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26401 "adverb clause" noun common rec 4 link 4
+5267 | theme sentence_parts "sentence parts"
+   SHORT 26312 "clause" [grammar] noun common rec 2 link 1
+   LONG  26402 "adjective clause" noun common rec 4 link 4
+5268 | theme sentence_parts "sentence parts"
+   SHORT 26313 "phrase" [grammar] noun common rec 1 link 1
+   LONG  26384 "noun phrase" noun common rec 3 link 3
+5269 | theme sentence_parts "sentence parts"
+   SHORT 26313 "phrase" [grammar] noun common rec 1 link 1
+   LONG  26385 "verb phrase" noun common rec 3 link 3
+5270 | theme sentence_parts "sentence parts"
+   SHORT 26313 "phrase" [grammar] noun common rec 1 link 1
+   LONG  26392 "prepositional phrase" noun common rec 3 link 3
+5271 | theme sentence_parts "sentence parts"
+   SHORT 26379 "sentence" [grammar] noun common rec 1 link 1
+   LONG  26399 "topic sentence" noun common rec 3 link 4
+5272 | theme sentence_parts "sentence parts"
+   SHORT 26380 "complement" noun common rec 3 link 4
+   LONG  26397 "subject complement" noun common rec 4 link 5
+5273 | theme prepositions "prepositions"
+   SHORT 26446 "in" [preposition] other common rec 1 link 1
+   LONG  26491 "in front of" [preposition] other common rec 1 link 2
+5274 | theme prepositions "prepositions"
+   SHORT 26453 "to" [preposition] other common rec 1 link 2
+   LONG  26492 "next to" [preposition] other common rec 1 link 2
+5275 | theme prepositions "prepositions"
+   SHORT 26453 "to" [preposition] other common rec 1 link 2
+   LONG  26494 "according to" [preposition] other common rec 2 link 4
+5276 | theme prepositions "prepositions"
+   SHORT 26453 "to" [preposition] other common rec 1 link 2
+   LONG  26497 "thanks to" [preposition] other common rec 2 link 4
+5277 | theme prepositions "prepositions"
+   SHORT 26454 "of" [preposition] other common rec 1 link 2
+   LONG  26491 "in front of" [preposition] other common rec 1 link 2
+5278 | theme prepositions "prepositions"
+   SHORT 26454 "of" [preposition] other common rec 1 link 2
+   LONG  26493 "because of" [preposition] other common rec 1 link 3
+5279 | theme prepositions "prepositions"
+   SHORT 26454 "of" [preposition] other common rec 1 link 2
+   LONG  26495 "out of" [preposition] other common rec 1 link 2
+5280 | theme prepositions "prepositions"
+   SHORT 26454 "of" [preposition] other common rec 1 link 2
+   LONG  26496 "ahead of" [preposition] other common rec 2 link 3
+5281 | theme conjunctions "conjunctions"
+   SHORT 26501 "so" [conjunction] other common rec 1 link 2
+   LONG  26526 "so that" [conjunction] other common rec 2 link 3
+5282 | theme conjunctions "conjunctions"
+   SHORT 26507 "though" [conjunction] other common rec 2 link 2
+   LONG  26525 "even though" [conjunction] other common rec 2 link 3
+5283 | theme conjunctions "conjunctions"
+   SHORT 26507 "though" [conjunction] other common rec 2 link 2
+   LONG  26530 "as though" [conjunction] other common rec 3 link 4
+5284 | theme conjunctions "conjunctions"
+   SHORT 26510 "if" [conjunction] other common rec 1 link 2
+   LONG  26529 "as if" [conjunction] other common rec 2 link 3
+5285 | theme conjunctions "conjunctions"
+   SHORT 26514 "as" [conjunction] other common rec 1 link 2
+   LONG  26524 "as long as" [conjunction] other common rec 2 link 3
+5286 | theme conjunctions "conjunctions"
+   SHORT 26514 "as" [conjunction] other common rec 1 link 2
+   LONG  26529 "as if" [conjunction] other common rec 2 link 3
+5287 | theme conjunctions "conjunctions"
+   SHORT 26514 "as" [conjunction] other common rec 1 link 2
+   LONG  26530 "as though" [conjunction] other common rec 3 link 4
+5288 | theme conjunctions "conjunctions"
+   SHORT 26514 "as" [conjunction] other common rec 1 link 2
+   LONG  26532 "inasmuch as" [conjunction] other common rec 5 link 5
+5289 | theme figures_of_speech "figures of speech"
+   SHORT 6490 "metaphor" noun common rec 2 link 1
+   LONG  26708 "dead metaphor" noun common rec 4 link 4
+5290 | theme poetry_forms "poetry forms"
+   SHORT 13249 "couplet" noun common rec 3 link 3
+   LONG  13279 "rhyming couplet" noun common rec 3 link 3
+5291 | theme poetry_forms "poetry forms"
+   SHORT 13249 "couplet" noun common rec 3 link 3
+   LONG  13280 "heroic couplet" noun common rec 5 link 4
+5292 | theme latin_phrases "latin phrases" (note: carpe diem, status quo, ad hoc, bona fide)
+   SHORT 26953 "ergo" other common rec 3 link 5
+   LONG  26938 "cogito ergo sum" other phrase rec 3 link 2
+5293 | theme swahili_words "swahili words" (note: jambo, asante, safari, karibu, rafiki, pole pole)
+   SHORT 27001 "pole" [sorry] other common rec 4 link 3
+   LONG  26990 "pole pole" adverb common rec 3 link 2
+5294 | theme maori_words "maori words" (note: kia ora, haka, whanau, aroha, waka, kai)
+   SHORT 27113 "tūī" noun common rec 3 link 3
+   LONG  27099 "tēnā koe" other common rec 4 link 3
+5295 | theme maori_words "maori words" (note: kia ora, haka, whanau, aroha, waka, kai)
+   SHORT 27113 "tūī" noun common rec 3 link 3
+   LONG  27103 "tāne" noun common rec 5 link 4
+5296 | theme maori_words "maori words" (note: kia ora, haka, whanau, aroha, waka, kai)
+   SHORT 27113 "tūī" noun common rec 3 link 3
+   LONG  27114 "wētā" noun common rec 3 link 3
+5297 | theme maori_words "maori words" (note: kia ora, haka, whanau, aroha, waka, kai)
+   SHORT 27117 "kākā" noun common rec 4 link 4
+   LONG  27112 "kākāpō" noun common rec 3 link 3
+5298 | theme numbers_in_french "numbers in french"
+   SHORT 55933 "quatre" [French number] noun common rec 2 link 1
+   LONG  55954 "quatre-vingts" [French number] noun common rec 4 link 5
+5299 | theme numbers_in_french "numbers in french"
+   SHORT 55939 "dix" [French number] noun common rec 1 link 1
+   LONG  55955 "soixante-dix" [French number] noun common rec 4 link 5
+5300 | theme numbers_in_french "numbers in french"
+   SHORT 55950 "soixante" [French number] noun common rec 3 link 3
+   LONG  55955 "soixante-dix" [French number] noun common rec 4 link 5
+5301 | theme numbers_in_german "numbers in german"
+   SHORT 55958 "drei" [German number] noun common rec 2 link 1
+   LONG  55970 "dreißig" [German number] noun common rec 3 link 3
+5302 | theme numbers_in_japanese "numbers in japanese"
+   SHORT 56006 "ichi" [Japanese number] noun common rec 2 link 1
+   LONG  56024 "ju-ichi" [Japanese number] noun common rec 4 link 5
+5303 | theme numbers_in_japanese "numbers in japanese"
+   SHORT 56007 "ni" [Japanese number] noun common rec 2 link 1
+   LONG  56025 "ni-ju" [Japanese number] noun common rec 4 link 5
+5304 | theme numbers_in_japanese "numbers in japanese"
+   SHORT 56018 "ju" [Japanese number] noun common rec 3 link 2
+   LONG  56024 "ju-ichi" [Japanese number] noun common rec 4 link 5
+5305 | theme numbers_in_japanese "numbers in japanese"
+   SHORT 56018 "ju" [Japanese number] noun common rec 3 link 2
+   LONG  56025 "ni-ju" [Japanese number] noun common rec 4 link 5
+5306 | theme gen_z_slang "gen z slang" (note: rizz, sus, slay, no cap, bussin, mid)
+   SHORT 27222 "cap" [slang] noun common rec 2 link 2
+   LONG  27221 "no cap" other phrase rec 2 link 1
+5307 | theme scottish_words "scottish words" (note: wee, bairn, loch, aye, braw, dreich, bonnie)
+   SHORT 27389 "wee" adjective common rec 2 link 1
+   LONG  27419 "wee dram" noun phrase rec 3 link 3
+5308 | theme australian_slang "australian slang" (note: arvo, brekkie, ute, servo, esky, bogan, fair dinkum)
+   SHORT 50303 "blue" [fight] noun common rec 3 link 4
+   LONG  27504 "true blue" adjective phrase rec 3 link 3
+5309 | theme words_for_toilet "words for toilet"
+   SHORT 15799 "potty" noun common rec 1 link 3
+   LONG  27929 "porta-potty" noun common rec 3 link 3
+5310 | theme words_for_toilet "words for toilet"
+   SHORT 23134 "toilet" [bathroom] noun common rec 1 link 1
+   LONG  27931 "squat toilet" noun common rec 3 link 5
+5311 | theme words_from_turkish "words from turkish" (note: yogurt, kiosk, kebab, tulip, divan)
+   SHORT 813 "kebab" noun common rec 1 link 1
+   LONG  17876 "shish kebab" noun common rec 3 link 2
+5312 | theme words_from_chinese "words from chinese" (note: ketchup, typhoon, wok, kowtow, gung ho)
+   SHORT 29470 "chow" [dog] noun common rec 2 link 4
+   LONG  18545 "chow mein" noun common rec 2 link 2
+5313 | theme names_that_are_trees "names that are trees" (note: Ash, Willow, Rowan, Aspen, Juniper)
+   SHORT 29939 "Ash" [name] noun proper rec 2 link 1
+   LONG  1680 "mountain ash" noun common rec 3 link 4
+5314 | theme colors "colors"
+   SHORT 5 "blue" [color] noun common rec 1 link 1
+   LONG  7729 "Prussian blue" adjective proper rec 4 link 5
+5315 | theme colors "colors"
+   SHORT 7665 "purple" [color] adjective common rec 1 link 1
+   LONG  7732 "Tyrian purple" adjective proper rec 5 link 5
+5316 | theme shades_of_red "shades of red"
+   SHORT 1 "red" [color] noun common rec 1 link 2
+   LONG  38566 "Venetian red" noun proper rec 4 link 5
+5317 | theme shades_of_red "shades of red"
+   SHORT 1 "red" [color] noun common rec 1 link 2
+   LONG  38567 "Indian red" noun proper rec 4 link 4
+5318 | theme shades_of_yellow "shades of yellow"
+   SHORT 3 "yellow" [color] noun common rec 1 link 1
+   LONG  38617 "pale yellow" noun common rec 1 link 3
+5319 | theme shades_of_purple "shades of purple"
+   SHORT 7665 "purple" [color] adjective common rec 1 link 1
+   LONG  38624 "dark purple" noun common rec 1 link 3
+5320 | theme shades_of_purple "shades of purple"
+   SHORT 7665 "purple" [color] adjective common rec 1 link 1
+   LONG  38625 "light purple" noun common rec 1 link 3
+5321 | theme shades_of_brown "shades of brown"
+   SHORT 7712 "sienna" noun common rec 3 link 3
+   LONG  38631 "raw sienna" noun common rec 4 link 4
+5322 | theme shades_of_brown "shades of brown"
+   SHORT 7713 "umber" noun common rec 3 link 3
+   LONG  38630 "burnt umber" noun common rec 4 link 4
+5323 | theme shades_of_orange "shades of orange"
+   SHORT 2 "orange" [color] noun common rec 1 link 1
+   LONG  38638 "burnt orange" noun common rec 2 link 2
+5324 | theme shades_of_orange "shades of orange"
+   SHORT 2 "orange" [color] noun common rec 1 link 1
+   LONG  38642 "safety orange" noun common rec 2 link 3
+5325 | theme shades_of_orange "shades of orange"
+   SHORT 2 "orange" [color] noun common rec 1 link 1
+   LONG  38643 "international orange" noun common rec 4 link 5
+5326 | theme shades_of_orange "shades of orange"
+   SHORT 2 "orange" [color] noun common rec 1 link 1
+   LONG  38645 "neon orange" noun common rec 1 link 3
+5327 | theme shades_of_orange "shades of orange"
+   SHORT 2 "orange" [color] noun common rec 1 link 1
+   LONG  38648 "bright orange" noun common rec 1 link 3
+5328 | theme shades_of_orange "shades of orange"
+   SHORT 2 "orange" [color] noun common rec 1 link 1
+   LONG  38649 "pale orange" noun common rec 1 link 3
+5329 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38651 "hot pink" noun common rec 1 link 1
+5330 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38652 "baby pink" noun common rec 1 link 1
+5331 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38655 "shocking pink" noun common rec 3 link 2
+5332 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38657 "powder pink" noun common rec 2 link 3
+5333 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38658 "millennial pink" noun common rec 3 link 3
+5334 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38659 "candy pink" noun common rec 2 link 3
+5335 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38663 "light pink" noun common rec 1 link 2
+5336 | theme shades_of_pink "shades of pink"
+   SHORT 7666 "pink" [color] adjective common rec 1 link 1
+   LONG  38664 "deep pink" noun common rec 1 link 3
+5337 | theme shades_of_pink "shades of pink"
+   SHORT 7698 "rose" [color] adjective common rec 1 link 1
+   LONG  38660 "dusty rose" noun common rec 3 link 3
+5338 | theme shades_of_pink "shades of pink"
+   SHORT 7698 "rose" [color] adjective common rec 1 link 1
+   LONG  38661 "rose quartz" [color] noun common rec 3 link 3
+5339 | theme shades_of_gray "shades of gray"
+   SHORT 7672 "gray" [color] adjective common rec 1 link 1
+   LONG  38676 "mouse gray" noun common rec 2 link 3
+5340 | theme shades_of_gray "shades of gray"
+   SHORT 7672 "gray" [color] adjective common rec 1 link 1
+   LONG  38684 "light gray" noun common rec 1 link 2
+5341 | theme shades_of_gray "shades of gray"
+   SHORT 7672 "gray" [color] adjective common rec 1 link 1
+   LONG  38685 "dark gray" noun common rec 1 link 2
+5342 | theme metallic_colors "metallic colors" (note: gold, silver, bronze, copper, pewter, gunmetal)
+   SHORT 7674 "gold" [color] adjective common rec 1 link 1
+   LONG  18268 "gold leaf" noun common rec 3 link 3
+5343 | theme metallic_colors "metallic colors" (note: gold, silver, bronze, copper, pewter, gunmetal)
+   SHORT 7674 "gold" [color] adjective common rec 1 link 1
+   LONG  31740 "rose gold" noun common rec 2 link 2
+5344 | theme metallic_colors "metallic colors" (note: gold, silver, bronze, copper, pewter, gunmetal)
+   SHORT 7674 "gold" [color] adjective common rec 1 link 1
+   LONG  38691 "antique gold" noun common rec 3 link 3
+5345 | theme metallic_colors "metallic colors" (note: gold, silver, bronze, copper, pewter, gunmetal)
+   SHORT 7674 "gold" [color] adjective common rec 1 link 1
+   LONG  38692 "old gold" noun common rec 3 link 3
+5346 | theme colors_in_spanish "colors in spanish" (note: rojo, azul, verde, amarillo, blanco)
+   SHORT 57727 "azul" [color] adjective common rec 2 link 1
+   LONG  57745 "azul marino" adjective common rec 4 link 3

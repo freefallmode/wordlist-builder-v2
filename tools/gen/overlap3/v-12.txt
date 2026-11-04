@@ -1,0 +1,34 @@
+# brand of glue
+BRAND adhesives 12018 23825
+# person, not a bin
+OUT bins_and_recycling 23972 4129
+# agent is a person
+OUT real_estate_words 24181 24206
+# same bill
+MERGE household_bills 24216 24232
+GROUP household_bills 24218 24228
+GROUP indian_clothing 24337 24439
+GROUP work_clothes 4891 24460
+# Donatella is the same fashion house answer
+GROUP fashion_designers 24534 24559
+# oven mitt is not clothing
+OUT scarves_and_gloves 64279 19862
+# accessories, not neckwear
+OUT neckwear 4945 4979
+OUT neckwear 4945 4980
+GROUP easter 25040 25041
+# same wedding anniversary
+MERGE wedding_anniversaries 31657 55634
+# branded product
+OUT st_patrick_s_day 1787 55779
+GROUP fireworks 25230 25260
+# special days/events, not weekdays
+OUT days_and_weeks 8 25288
+OUT days_and_weeks 8 25289
+OUT days_and_weeks 9 5122
+OUT days_and_weeks 10 25048
+OUT days_and_weeks 11 25049
+OUT days_and_weeks 12 5148
+OUT days_and_weeks 12 25086
+OUT days_and_weeks 14 25047
+OUT days_and_weeks 25277 25300

@@ -1,0 +1,29 @@
+# pike position = pike
+MERGE diving_terms 43305 43336
+# tuck position = tuck
+MERGE diving_terms 43306 43337
+# hammer = hammer throw
+MERGE field_events 50375 43938
+# relay = relay race
+MERGE track_events 42635 46123
+# transition area = transition
+MERGE triathlon_words 44025 44036
+# puck = hockey puck
+MERGE sports_equipment 22493 44156
+# bowl over is not a sports action
+OUT sports_verbs 44271 44290
+GROUP sports_equipment 42990 40241
+GROUP things_you_swing 42990 40241
+GROUP skating_words 43569 43576
+GROUP board_and_paddle_sports 5311 5617
+GROUP paddled_boat_sports 5311 5312
+GROUP sailing_sports 2792 5339
+GROUP rowing_words 50369 43443
+GROUP bullfighting_words 44945 44971
+GROUP sports_clothing 59421 44233
+GROUP sports_officials 42671 44219
+GROUP sports_officials 42671 44222
+GROUP sports_officials 42671 44224
+GROUP sports_officials 42805 44220
+GROUP sports_officials 42805 44221
+GROUP sports_officials 42805 44223

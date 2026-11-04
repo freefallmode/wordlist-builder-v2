@@ -1,0 +1,891 @@
+2674 | theme bedding "bedding"
+   SHORT 16030 "sheet" [bedding] noun common rec 1 link 1
+   LONG  16046 "flat sheet" noun common rec 3 link 2
+2675 | theme nightwear "nightwear"
+   SHORT 3674 "pajamas" noun common rec 1 link 1
+   LONG  16067 "flannel pajamas" noun common rec 2 link 2
+2676 | theme nightwear "nightwear"
+   SHORT 3674 "pajamas" noun common rec 1 link 1
+   LONG  16068 "footed pajamas" noun common rec 3 link 3
+2677 | theme dream_words "dream words"
+   SHORT 16086 "falling" (full: falling dream) noun common rec 2 link 3
+   LONG  16089 "teeth falling out" noun common rec 3 link 3
+2678 | theme sleep_disorders "sleep disorders"
+   SHORT 3681 "insomnia" noun common rec 2 link 1
+   LONG  16145 "fatal insomnia" noun common rec 5 link 5
+2679 | theme short_sleeps "short sleeps"
+   SHORT 3665 "nap" noun common rec 1 link 1
+   LONG  3703 "power nap" noun common rec 2 link 2
+2680 | theme personal_care "personal care"
+   SHORT 3727 "shampoo" noun common rec 1 link 1
+   LONG  3792 "dry shampoo" noun common rec 3 link 3
+2681 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16151 "bar soap" noun common rec 1 link 1
+2682 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16152 "hand soap" noun common rec 1 link 1
+2683 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16154 "antibacterial soap" noun common rec 2 link 3
+2684 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16158 "liquid soap" noun common rec 1 link 2
+2685 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16160 "soap dish" noun common rec 2 link 4
+2686 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16161 "castile soap" noun common rec 4 link 5
+2687 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  16294 "black soap" noun common rec 3 link 5
+2688 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3726 "soap" [wash] noun common rec 1 link 1
+   LONG  60808 "soap nuts" noun common rec 4 link 5
+2689 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3727 "shampoo" noun common rec 1 link 1
+   LONG  3792 "dry shampoo" noun common rec 3 link 4
+2690 | theme toiletries_for_washing "toiletries for washing"
+   SHORT 3817 "sponge" [bath] noun common rec 1 link 3
+   LONG  60809 "konjac sponge" noun common rec 4 link 5
+2691 | theme hair_care "hair care"
+   SHORT 3727 "shampoo" noun common rec 1 link 1
+   LONG  3792 "dry shampoo" noun common rec 3 link 3
+2692 | theme hair_care "hair care"
+   SHORT 3727 "shampoo" noun common rec 1 link 1
+   LONG  16182 "clarifying shampoo" noun common rec 4 link 4
+2693 | theme hair_care "hair care"
+   SHORT 3727 "shampoo" noun common rec 1 link 1
+   LONG  16183 "purple shampoo" noun common rec 4 link 4
+2694 | theme hair_care "hair care"
+   SHORT 3728 "conditioner" [hair] noun common rec 1 link 1
+   LONG  16169 "leave-in conditioner" noun common rec 3 link 3
+2695 | theme hair_care "hair care"
+   SHORT 3753 "comb" [hair tool] noun common rec 1 link 1
+   LONG  16177 "wide-tooth comb" noun common rec 3 link 4
+2696 | theme hair_care "hair care"
+   SHORT 16166 "oil" (full: hair oil) noun common rec 2 link 3
+   LONG  15626 "argan oil" noun common rec 2 link 3
+2697 | theme hair_care "hair care"
+   SHORT 16166 "oil" (full: hair oil) noun common rec 2 link 3
+   LONG  60813 "hot oil treatment" noun common rec 3 link 4
+2698 | theme skincare_products "skincare products"
+   SHORT 3774 "serum" [skincare] noun common rec 3 link 2
+   LONG  16188 "vitamin c serum" noun common rec 3 link 3
+2699 | theme korean_skincare "korean skincare"
+   SHORT 3773 "toner" [skincare] noun common rec 3 link 2
+   LONG  60821 "toner pads" noun common rec 3 link 3
+2700 | theme makeup "makeup"
+   SHORT 3787 "eyeliner" noun common rec 2 link 1
+   LONG  16233 "gel eyeliner" noun common rec 3 link 4
+2701 | theme makeup "makeup"
+   SHORT 16216 "powder" [makeup] noun common rec 1 link 2
+   LONG  16232 "pressed powder" noun common rec 3 link 3
+2702 | theme makeup "makeup"
+   SHORT 16222 "brush" (full: makeup brush) noun common rec 1 link 2
+   LONG  60823 "kabuki brush" noun common rec 4 link 5
+2703 | theme makeup "makeup"
+   SHORT 16222 "brush" (full: makeup brush) noun common rec 1 link 2
+   LONG  60825 "stippling brush" noun common rec 4 link 5
+2704 | theme makeup "makeup"
+   SHORT 16224 "compact" [makeup] noun common rec 3 link 3
+   LONG  16235 "cushion compact" noun common rec 5 link 5
+2705 | theme nail_care "nail care"
+   SHORT 9138 "cuticle" [nail] noun common rec 4 link 3
+   LONG  3814 "cuticle oil" noun common rec 4 link 3
+2706 | theme nail_care "nail care"
+   SHORT 9138 "cuticle" [nail] noun common rec 4 link 3
+   LONG  16248 "cuticle pusher" noun common rec 3 link 3
+2707 | theme nail_care "nail care"
+   SHORT 9138 "cuticle" [nail] noun common rec 4 link 3
+   LONG  16255 "cuticle nipper" noun common rec 4 link 4
+2708 | theme nail_care "nail care"
+   SHORT 64049 "polish" [lacquer] noun common rec 2 link 1
+   LONG  64050 "polish remover" noun common rec 2 link 2
+2709 | theme bath_time "bath time"
+   SHORT 16272 "shower" [bathroom] noun common rec 1 link 4
+   LONG  16285 "shower curtain" noun common rec 1 link 4
+2710 | theme bath_time "bath time"
+   SHORT 64060 "salts" [soak crystals] noun common rec 3 link 2
+   LONG  60832 "Epsom salts" noun common rec 3 link 3
+2711 | theme middle_eastern_grooming "middle eastern grooming" (note: kohl, henna, oud, attar, rose water, argan oil, black soap, miswak)
+   SHORT 16292 "oud" [perfume] noun common rec 3 link 1
+   LONG  16314 "oud oil" noun common rec 4 link 2
+2712 | theme shaving "shaving"
+   SHORT 3737 "razor" [shaving tool] noun common rec 1 link 1
+   LONG  16316 "safety razor" noun common rec 2 link 2
+2713 | theme shaving "shaving"
+   SHORT 3737 "razor" [shaving tool] noun common rec 1 link 1
+   LONG  16322 "razor burn" noun common rec 2 link 2
+2714 | theme shaving "shaving"
+   SHORT 3737 "razor" [shaving tool] noun common rec 1 link 1
+   LONG  16324 "straight razor" noun common rec 3 link 2
+2715 | theme shaving "shaving"
+   SHORT 3737 "razor" [shaving tool] noun common rec 1 link 1
+   LONG  16327 "razor bump" noun common rec 3 link 3
+2716 | theme shaving "shaving"
+   SHORT 3737 "razor" [shaving tool] noun common rec 1 link 1
+   LONG  16342 "disposable razor" noun common rec 2 link 2
+2717 | theme shaving "shaving"
+   SHORT 3739 "aftershave" noun common rec 2 link 1
+   LONG  16334 "aftershave balm" noun common rec 3 link 2
+2718 | theme shaving "shaving"
+   SHORT 16338 "trimmer" [shaving] noun common rec 2 link 3
+   LONG  16323 "beard trimmer" noun common rec 2 link 3
+2719 | theme shaving "shaving"
+   SHORT 64064 "brush" [lather] noun common rec 2 link 1
+   LONG  16332 "badger brush" noun common rec 4 link 3
+2720 | theme shaving "shaving"
+   SHORT 64065 "cream" [lather lotion] noun common rec 2 link 1
+   LONG  3809 "depilatory cream" noun common rec 4 link 5
+2721 | theme sun_care "sun care"
+   SHORT 3745 "sunscreen" noun common rec 1 link 1
+   LONG  16361 "sunscreen stick" noun common rec 3 link 4
+2722 | theme sun_care "sun care"
+   SHORT 3745 "sunscreen" noun common rec 1 link 1
+   LONG  16368 "mineral sunscreen" noun common rec 4 link 3
+2723 | theme sun_care "sun care"
+   SHORT 16345 "SPF" noun acronym rec 2 link 1
+   LONG  16352 "lip balm with spf" noun common rec 3 link 3
+2724 | theme spa "spa"
+   SHORT 16535 "massage" noun common rec 1 link 1
+   LONG  16562 "bamboo massage" noun common rec 4 link 4
+2725 | theme spa "spa"
+   SHORT 16537 "sauna" noun common rec 1 link 1
+   LONG  16554 "infrared sauna" noun common rec 3 link 4
+2726 | theme turkish_bath "turkish bath" (note: hammam: kese, pestemal, marble slab, steam, foam, dome, clogs)
+   SHORT 3726 "soap" [wash] noun common rec 1 link 2
+   LONG  16304 "olive oil soap" noun common rec 4 link 3
+2727 | theme turkish_bath "turkish bath" (note: hammam: kese, pestemal, marble slab, steam, foam, dome, clogs)
+   SHORT 16291 "foam" [bath] noun common rec 2 link 3
+   LONG  16579 "foam massage" noun common rec 4 link 3
+2728 | theme turkish_bath "turkish bath" (note: hammam: kese, pestemal, marble slab, steam, foam, dome, clogs)
+   SHORT 16570 "steam" [vapor] noun common rec 1 link 1
+   LONG  16538 "steam room" noun common rec 2 link 3
+2729 | theme nutrition "nutrition"
+   SHORT 3818 "protein" noun common rec 1 link 1
+   LONG  3890 "complete protein" noun common rec 4 link 4
+2730 | theme nutrition "nutrition"
+   SHORT 3821 "fat" [nutrient] noun common rec 1 link 1
+   LONG  3858 "saturated fat" noun common rec 2 link 3
+2731 | theme nutrition "nutrition"
+   SHORT 3821 "fat" [nutrient] noun common rec 1 link 1
+   LONG  3859 "trans fat" noun common rec 3 link 3
+2732 | theme food_groups "food groups"
+   SHORT 16669 "grains" noun common rec 1 link 1
+   LONG  16685 "whole grains" noun common rec 2 link 4
+2733 | theme nutrients "nutrients"
+   SHORT 3821 "fat" [nutrient] noun common rec 1 link 1
+   LONG  3858 "saturated fat" noun common rec 2 link 3
+2734 | theme nutrients "nutrients"
+   SHORT 3821 "fat" [nutrient] noun common rec 1 link 1
+   LONG  3859 "trans fat" noun common rec 3 link 4
+2735 | theme nutrients "nutrients"
+   SHORT 3821 "fat" [nutrient] noun common rec 1 link 1
+   LONG  16691 "unsaturated fat" noun common rec 3 link 3
+2736 | theme healthy_snacks "healthy snacks"
+   SHORT 522 "yogurt" [cultured dairy] noun common rec 1 link 2
+   LONG  16776 "frozen yogurt" noun common rec 2 link 4
+2737 | theme healthy_snacks "healthy snacks"
+   SHORT 6418 "popcorn" noun common rec 1 link 3
+   LONG  16774 "air-popped popcorn" noun common rec 3 link 3
+2738 | theme gestures "gestures"
+   SHORT 16818 "salute" [gesture] noun common rec 1 link 2
+   LONG  60872 "Vulcan salute" noun proper rec 2 link 3
+2739 | theme gestures "gestures"
+   SHORT 16825 "bow" [gesture] noun common rec 1 link 3
+   LONG  16844 "forehead bow" noun common rec 4 link 5
+2740 | theme ways_of_looking "ways of looking"
+   SHORT 14652 "stare" verb common rec 1 link 1
+   LONG  16943 "stare down" verb common rec 3 link 3
+2741 | theme ways_of_looking "ways of looking"
+   SHORT 16935 "eye" [look at] verb common rec 2 link 3
+   LONG  16811 "side-eye" noun common rec 2 link 3
+2742 | theme ways_of_looking "ways of looking"
+   SHORT 16935 "eye" [look at] verb common rec 2 link 3
+   LONG  60881 "eye up" verb common rec 3 link 4
+2743 | theme ways_of_speaking "ways of speaking"
+   SHORT 14699 "whisper" noun common rec 1 link 1
+   LONG  16974 "stage whisper" noun common rec 4 link 4
+2744 | theme ways_of_crying "ways of crying"
+   SHORT 17018 "cry" verb common rec 1 link 1
+   LONG  17024 "cry one's eyes out" verb common rec 2 link 2
+2745 | theme ways_of_crying "ways of crying"
+   SHORT 17018 "cry" verb common rec 1 link 1
+   LONG  17032 "ugly cry" verb common rec 2 link 3
+2746 | theme body_positions "body positions"
+   SHORT 17064 "sitting" adjective common rec 1 link 1
+   LONG  17094 "kneel-sitting" noun common rec 4 link 4
+2747 | theme family_and_friends "family and friends"
+   SHORT 3894 "family" [relatives] noun common rec 1 link 1
+   LONG  3915 "family tree" noun common rec 2 link 2
+2748 | theme family_and_friends "family and friends"
+   SHORT 3901 "buddy" [friend] noun common rec 1 link 1
+   LONG  3925 "bosom buddy" noun common rec 4 link 4
+2749 | theme family_and_friends "family and friends"
+   SHORT 3926 "pal" noun common rec 2 link 2
+   LONG  3958 "pen pal" noun common rec 2 link 3
+2750 | theme family_and_friends "family and friends"
+   SHORT 3950 "kin" noun common rec 3 link 3
+   LONG  3953 "next of kin" noun phrase rec 3 link 3
+2751 | theme family_members "family members"
+   SHORT 3950 "kin" noun common rec 3 link 5
+   LONG  3953 "next of kin" noun phrase rec 3 link 5
+2752 | theme family_members "family members"
+   SHORT 28012 "mother" noun common rec 2 link 1
+   LONG  32410 "mother-in-law" noun common rec 2 link 3
+2753 | theme family_members "family members"
+   SHORT 32383 "brother" noun common rec 1 link 1
+   LONG  32412 "brother-in-law" noun common rec 2 link 3
+2754 | theme family_members "family members"
+   SHORT 32383 "brother" noun common rec 1 link 1
+   LONG  32425 "half-brother" noun common rec 2 link 3
+2755 | theme family_members "family members"
+   SHORT 32385 "sister" noun common rec 1 link 1
+   LONG  32406 "half-sister" noun common rec 2 link 3
+2756 | theme family_members "family members"
+   SHORT 32396 "aunt" noun common rec 1 link 1
+   LONG  32416 "great-aunt" noun common rec 2 link 4
+2757 | theme family_members "family members"
+   SHORT 32399 "cousin" noun common rec 1 link 1
+   LONG  32420 "second cousin" noun common rec 3 link 4
+2758 | theme extended_family "extended family"
+   SHORT 3950 "kin" noun common rec 3 link 2
+   LONG  3970 "kith and kin" noun phrase rec 4 link 4
+2759 | theme ages_and_stages "stages of life"
+   SHORT 32522 "adult" [grown-up] noun common rec 1 link 2
+   LONG  13155 "young adult" noun common rec 2 link 3
+2760 | theme words_for_friend "words for friend" (note: pal, buddy, mate, chum, bestie, companion, comrade, confidant)
+   SHORT 3901 "buddy" [friend] noun common rec 1 link 1
+   LONG  3925 "bosom buddy" noun common rec 4 link 4
+2761 | theme life_events "life events" (note: milestones of a life: birth, christening, graduation, engagement, wedding, retirement, funeral)
+   SHORT 3903 "wedding" noun common rec 1 link 1
+   LONG  32562 "golden wedding" noun common rec 4 link 4
+2762 | theme life_events "life events" (note: milestones of a life: birth, christening, graduation, engagement, wedding, retirement, funeral)
+   SHORT 3905 "anniversary" noun common rec 1 link 2
+   LONG  25131 "silver anniversary" noun common rec 3 link 4
+2763 | theme life_events "life events" (note: milestones of a life: birth, christening, graduation, engagement, wedding, retirement, funeral)
+   SHORT 32430 "engagement" [betrothal] noun common rec 2 link 1
+   LONG  60904 "engagement party" noun common rec 1 link 4
+2764 | theme ways_to_say_no "ways to say no"
+   SHORT 32637 "no" other common rec 1 link 1
+   LONG  32642 "no way" other phrase rec 1 link 1
+2765 | theme ways_to_say_no "ways to say no"
+   SHORT 32637 "no" other common rec 1 link 1
+   LONG  32644 "no thanks" other phrase rec 1 link 2
+2766 | theme ways_to_say_no "ways to say no"
+   SHORT 32637 "no" other common rec 1 link 1
+   LONG  32647 "by no means" other phrase rec 3 link 4
+2767 | theme ways_to_say_no "ways to say no"
+   SHORT 32637 "no" other common rec 1 link 1
+   LONG  32655 "no can do" other phrase rec 2 link 4
+2768 | theme ways_to_say_no "ways to say no"
+   SHORT 32637 "no" other common rec 1 link 1
+   LONG  32658 "no chance" other phrase rec 1 link 2
+2769 | theme angry_words "angry words"
+   SHORT 32724 "mad" [angry] adjective common rec 1 link 1
+   LONG  32747 "hopping mad" adjective phrase rec 3 link 3
+2770 | theme love_words "love words" (note: adore, cherish, affection, devotion, crush, passion, smitten)
+   SHORT 3981 "love" [emotion] noun common rec 1 link 1
+   LONG  32820 "fall in love" verb phrase rec 1 link 1
+2771 | theme medical_jobs "medical jobs"
+   SHORT 3448 "doctor" noun common rec 1 link 1
+   LONG  3488 "family doctor" noun common rec 1 link 2
+2772 | theme science_jobs "science jobs"
+   SHORT 4077 "scientist" noun common rec 1 link 1
+   LONG  32986 "research scientist" noun common rec 2 link 3
+2773 | theme science_jobs "science jobs"
+   SHORT 32973 "biologist" noun common rec 2 link 1
+   LONG  10460 "marine biologist" noun common rec 2 link 3
+2774 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  33038 "web developer" noun common rec 2 link 2
+2775 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  33045 "game developer" noun common rec 2 link 3
+2776 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  33048 "app developer" noun common rec 2 link 3
+2777 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  33051 "front-end developer" noun common rec 3 link 3
+2778 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  33052 "back-end developer" noun common rec 3 link 4
+2779 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  33053 "full-stack developer" noun common rec 4 link 4
+2780 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  33060 "blockchain developer" noun common rec 4 link 5
+2781 | theme tech_jobs "tech jobs"
+   SHORT 4080 "developer" [software] noun common rec 3 link 2
+   LONG  60924 "kernel developer" noun common rec 4 link 5
+2782 | theme tech_jobs "tech jobs"
+   SHORT 33044 "hacker" noun common rec 2 link 3
+   LONG  60930 "ethical hacker" noun common rec 2 link 3
+2783 | theme office_jobs "office jobs"
+   SHORT 4102 "secretary" [office] noun common rec 2 link 1
+   LONG  60936 "company secretary" noun common rec 3 link 4
+2784 | theme office_jobs "office jobs"
+   SHORT 4104 "manager" [job] noun common rec 1 link 1
+   LONG  33071 "HR manager" noun common rec 3 link 3
+2785 | theme office_jobs "office jobs"
+   SHORT 4104 "manager" [job] noun common rec 1 link 1
+   LONG  33075 "marketing manager" noun common rec 3 link 3
+2786 | theme office_jobs "office jobs"
+   SHORT 4104 "manager" [job] noun common rec 1 link 1
+   LONG  33081 "project manager" noun common rec 2 link 3
+2787 | theme office_jobs "office jobs"
+   SHORT 4105 "clerk" noun common rec 2 link 1
+   LONG  33070 "data entry clerk" noun common rec 3 link 2
+2788 | theme office_jobs "office jobs"
+   SHORT 4105 "clerk" noun common rec 2 link 1
+   LONG  33077 "filing clerk" noun common rec 3 link 3
+2789 | theme office_jobs "office jobs"
+   SHORT 4105 "clerk" noun common rec 2 link 1
+   LONG  60941 "mailroom clerk" noun common rec 3 link 3
+2790 | theme office_jobs "office jobs"
+   SHORT 33068 "executive" noun common rec 2 link 2
+   LONG  33084 "executive assistant" noun common rec 3 link 2
+2791 | theme food_jobs "food jobs" (note: chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer)
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  944 "sous chef" noun common rec 3 link 2
+2792 | theme food_jobs "food jobs" (note: chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer)
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  20045 "head chef" noun common rec 1 link 2
+2793 | theme food_jobs "food jobs" (note: chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer)
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  20046 "pastry chef" noun common rec 2 link 2
+2794 | theme food_jobs "food jobs" (note: chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer)
+   SHORT 916 "chef" [cook] noun common rec 1 link 1
+   LONG  20054 "sushi chef" noun common rec 3 link 3
+2795 | theme food_jobs "food jobs" (note: chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer)
+   SHORT 970 "cook" [person] noun common rec 1 link 1
+   LONG  20047 "line cook" noun common rec 2 link 3
+2796 | theme food_jobs "food jobs" (note: chef, baker, butcher, waiter, barista, sommelier, fishmonger, grocer)
+   SHORT 970 "cook" [person] noun common rec 1 link 1
+   LONG  20051 "fry cook" noun common rec 3 link 4
+2797 | theme animal_jobs "animal jobs" (note: vet, zookeeper, groom, farrier, shepherd, dog walker, kennel hand)
+   SHORT 4068 "vet" [animal] noun common rec 1 link 1
+   LONG  33119 "vet nurse" noun common rec 3 link 3
+2798 | theme cowboy_words "cowboy words" (note: lasso, saddle, spurs, stetson, ranch, rodeo, chaps, corral, sheriff, posse)
+   SHORT 4944 "hat" [headwear] noun common rec 1 link 1
+   LONG  23027 "ten-gallon hat" noun common rec 3 link 2
+2799 | theme cowboy_words "cowboy words" (note: lasso, saddle, spurs, stetson, ranch, rodeo, chaps, corral, sheriff, posse)
+   SHORT 29304 "ranch" [farm] noun common rec 1 link 1
+   LONG  60946 "ranch hand" noun common rec 2 link 2
+2800 | theme western_outfits "cowboy outfits"
+   SHORT 4944 "hat" [headwear] noun common rec 1 link 1
+   LONG  23027 "ten-gallon hat" noun common rec 3 link 2
+2801 | theme emergency_workers "emergency workers"
+   SHORT 3449 "nurse" [health worker] noun common rec 1 link 3
+   LONG  60947 "ER nurse" noun common rec 1 link 3
+2802 | theme emergency_workers "emergency workers"
+   SHORT 4083 "firefighter" noun common rec 1 link 1
+   LONG  33228 "wildland firefighter" noun common rec 4 link 4
+2803 | theme emergency_workers "emergency workers"
+   SHORT 4222 "sheriff" noun common rec 2 link 4
+   LONG  33221 "sheriff deputy" noun common rec 3 link 4
+2804 | theme emergency_workers "emergency workers"
+   SHORT 62768 "rescuer" noun common rec 2 link 2
+   LONG  33213 "mountain rescuer" noun common rec 3 link 3
+2805 | theme emergency_workers "emergency workers"
+   SHORT 62768 "rescuer" noun common rec 2 link 2
+   LONG  60952 "swiftwater rescuer" noun common rec 5 link 5
+2806 | theme transport_jobs "transport jobs"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  33243 "bush pilot" noun common rec 4 link 4
+2807 | theme beauty_jobs "beauty jobs"
+   SHORT 33255 "stylist" noun common rec 2 link 2
+   LONG  33261 "personal stylist" noun common rec 3 link 3
+2808 | theme shopkeepers "shopkeepers"
+   SHORT 20744 "chandler" [job] noun common rec 4 link 4
+   LONG  60959 "corn chandler" noun common rec 5 link 5
+2809 | theme election_words "election words"
+   SHORT 28081 "ballot" noun common rec 2 link 1
+   LONG  33320 "ballot box" noun common rec 2 link 2
+2810 | theme election_words "election words"
+   SHORT 28081 "ballot" noun common rec 2 link 1
+   LONG  33327 "absentee ballot" noun common rec 3 link 3
+2811 | theme election_words "election words"
+   SHORT 28081 "ballot" noun common rec 2 link 1
+   LONG  33338 "spoiled ballot" noun common rec 4 link 3
+2812 | theme election_words "election words"
+   SHORT 33286 "vote" noun common rec 1 link 1
+   LONG  33328 "proxy vote" noun common rec 4 link 4
+2813 | theme election_words "election words"
+   SHORT 33312 "campaign" [election] noun common rec 1 link 1
+   LONG  60984 "campaign trail" noun common rec 2 link 3
+2814 | theme election_words "election words"
+   SHORT 33313 "poll" [election] noun common rec 1 link 1
+   LONG  33321 "exit poll" noun common rec 3 link 3
+2815 | theme election_words "election words"
+   SHORT 33313 "poll" [election] noun common rec 1 link 1
+   LONG  60979 "straw poll" noun common rec 3 link 4
+2816 | theme political_titles "political titles"
+   SHORT 33288 "president" [leader] noun common rec 1 link 1
+   LONG  33347 "vice president" noun common rec 1 link 2
+2817 | theme political_titles "political titles"
+   SHORT 33288 "president" [leader] noun common rec 1 link 1
+   LONG  33360 "president-elect" noun common rec 3 link 3
+2818 | theme political_titles "political titles"
+   SHORT 33291 "minister" [government] noun common rec 2 link 2
+   LONG  33344 "prime minister" noun common rec 1 link 1
+2819 | theme political_titles "political titles"
+   SHORT 33291 "minister" [government] noun common rec 2 link 2
+   LONG  33361 "first minister" noun common rec 4 link 4
+2820 | theme political_titles "political titles"
+   SHORT 33291 "minister" [government] noun common rec 2 link 2
+   LONG  33367 "chief minister" noun common rec 4 link 4
+2821 | theme political_titles "political titles"
+   SHORT 33291 "minister" [government] noun common rec 2 link 2
+   LONG  33368 "shadow minister" noun common rec 4 link 4
+2822 | theme political_titles "political titles"
+   SHORT 33293 "mayor" noun common rec 1 link 1
+   LONG  33356 "lord mayor" noun common rec 3 link 3
+2823 | theme political_titles "political titles"
+   SHORT 33345 "governor" [politics] noun common rec 2 link 2
+   LONG  33365 "lieutenant governor" noun common rec 4 link 4
+2824 | theme political_titles "political titles"
+   SHORT 33358 "whip" [politics] noun common rec 3 link 3
+   LONG  33366 "chief whip" noun common rec 4 link 4
+2825 | theme royal_titles "royal titles"
+   SHORT 20757 "queen" [royal] noun common rec 1 link 1
+   LONG  33387 "queen mother" noun common rec 2 link 3
+2826 | theme royal_titles "royal titles"
+   SHORT 20757 "queen" [royal] noun common rec 1 link 1
+   LONG  61006 "queen consort" noun common rec 2 link 3
+2827 | theme royal_titles "royal titles"
+   SHORT 20759 "duke" noun common rec 2 link 1
+   LONG  33390 "grand duke" noun common rec 3 link 4
+2828 | theme royal_titles "royal titles"
+   SHORT 20762 "prince" [royal] noun common rec 1 link 1
+   LONG  33386 "crown prince" [royal] noun common rec 2 link 2
+2829 | theme royal_titles "royal titles"
+   SHORT 20762 "prince" [royal] noun common rec 1 link 1
+   LONG  61005 "prince consort" noun common rec 3 link 3
+2830 | theme ottoman_titles "ottoman titles" (note: sultan, pasha, vizier, bey, agha, effendi, janissary, kadi, sipahi, beylerbey)
+   SHORT 20632 "sultan" noun common rec 2 link 1
+   LONG  56748 "valide sultan" noun common rec 5 link 4
+2831 | theme ottoman_titles "ottoman titles" (note: sultan, pasha, vizier, bey, agha, effendi, janissary, kadi, sipahi, beylerbey)
+   SHORT 20639 "pasha" noun common rec 3 link 1
+   LONG  61011 "Kapudan Pasha" noun title rec 5 link 4
+2832 | theme ottoman_titles "ottoman titles" (note: sultan, pasha, vizier, bey, agha, effendi, janissary, kadi, sipahi, beylerbey)
+   SHORT 20640 "vizier" noun common rec 3 link 2
+   LONG  56740 "grand vizier" noun common rec 3 link 1
+2833 | theme ottoman_titles "ottoman titles" (note: sultan, pasha, vizier, bey, agha, effendi, janissary, kadi, sipahi, beylerbey)
+   SHORT 29443 "effendi" noun common rec 4 link 3
+   LONG  61010 "reis effendi" noun common rec 5 link 5
+2834 | theme ottoman_titles "ottoman titles" (note: sultan, pasha, vizier, bey, agha, effendi, janissary, kadi, sipahi, beylerbey)
+   SHORT 56739 "agha" noun common rec 4 link 3
+   LONG  61007 "Kizlar Agha" noun title rec 5 link 5
+2835 | theme titles_for_women "female royal titles"
+   SHORT 20757 "queen" [royal] noun common rec 1 link 1
+   LONG  33387 "queen mother" noun common rec 2 link 3
+2836 | theme titles_for_women "female royal titles"
+   SHORT 20757 "queen" [royal] noun common rec 1 link 1
+   LONG  61006 "queen consort" noun common rec 2 link 3
+2837 | theme royal_things "royal things" (note: objects and occasions of monarchy: crown, throne, scepter, orb, tiara, coronation, jubilee, ermine)
+   SHORT 21212 "crown" [royal] noun common rec 1 link 1
+   LONG  21224 "crown jewels" noun common rec 2 link 1
+2838 | theme royal_things "royal things" (note: objects and occasions of monarchy: crown, throne, scepter, orb, tiara, coronation, jubilee, ermine)
+   SHORT 27916 "throne" [royal seat] noun common rec 2 link 1
+   LONG  61025 "throne room" noun common rec 1 link 2
+2839 | theme ceremonial_objects "royal ceremonial objects"
+   SHORT 21212 "crown" [royal] noun common rec 1 link 1
+   LONG  21224 "crown jewels" noun common rec 2 link 1
+2840 | theme types_of_government "types of government"
+   SHORT 20374 "democracy" noun common rec 1 link 1
+   LONG  33444 "direct democracy" noun common rec 3 link 3
+2841 | theme types_of_government "types of government"
+   SHORT 33424 "monarchy" noun common rec 2 link 5
+   LONG  33440 "absolute monarchy" noun common rec 3 link 3
+2842 | theme ruled_by_one_leader "ruled by one leader"
+   SHORT 33424 "monarchy" noun common rec 2 link 5
+   LONG  33440 "absolute monarchy" noun common rec 3 link 3
+2843 | theme words_ending_in_cracy "words ending in -cracy"
+   SHORT 20374 "democracy" noun common rec 1 link 1
+   LONG  33444 "direct democracy" noun common rec 3 link 3
+2844 | theme parts_of_parliament "parts of parliament"
+   SHORT 29051 "committee" noun common rec 2 link 3
+   LONG  33473 "select committee" noun common rec 4 link 3
+2845 | theme parts_of_parliament "parts of parliament"
+   SHORT 33350 "speaker" [house] noun common rec 2 link 1
+   LONG  61037 "Lord Speaker" noun title rec 4 link 3
+2846 | theme parts_of_parliament "parts of parliament"
+   SHORT 33350 "speaker" [house] noun common rec 2 link 1
+   LONG  61043 "Mr Speaker" noun title rec 3 link 2
+2847 | theme parts_of_parliament "parts of parliament"
+   SHORT 33488 "division" [vote] noun common rec 4 link 4
+   LONG  33465 "division bell" noun common rec 5 link 4
+2848 | theme us_government "us government" (note: congress, senate, house, supreme court, cabinet, white house, governor, veto)
+   SHORT 26954 "veto" noun common rec 2 link 2
+   LONG  33593 "pocket veto" noun common rec 5 link 4
+2849 | theme us_government "us government" (note: congress, senate, house, supreme court, cabinet, white house, governor, veto)
+   SHORT 33288 "president" [leader] noun common rec 1 link 1
+   LONG  33347 "vice president" noun common rec 1 link 2
+2850 | theme us_government "us government" (note: congress, senate, house, supreme court, cabinet, white house, governor, veto)
+   SHORT 33289 "congress" noun common rec 2 link 1
+   LONG  33600 "library of congress" noun common rec 3 link 4
+2851 | theme us_government "us government" (note: congress, senate, house, supreme court, cabinet, white house, governor, veto)
+   SHORT 33297 "cabinet" [government] noun common rec 2 link 2
+   LONG  33596 "cabinet secretary" noun common rec 3 link 3
+2852 | theme office_holders "us government office holders"
+   SHORT 33288 "president" [leader] noun common rec 1 link 1
+   LONG  33347 "vice president" noun common rec 1 link 2
+2853 | theme british_politics "british politics" (note: Westminster, Downing Street, Whitehall, Commons, Lords, MP, whip, backbencher, chancellor)
+   SHORT 33346 "chancellor" [government] noun common rec 2 link 2
+   LONG  61104 "Lord Chancellor" noun title rec 4 link 4
+2854 | theme british_politics "british politics" (note: Westminster, Downing Street, Whitehall, Commons, Lords, MP, whip, backbencher, chancellor)
+   SHORT 33358 "whip" [politics] noun common rec 3 link 3
+   LONG  61101 "three-line whip" noun common rec 4 link 4
+2855 | theme law_and_order "law and order"
+   SHORT 4183 "law" noun common rec 1 link 1
+   LONG  4248 "law enforcement" noun phrase rec 3 link 2
+2856 | theme law_and_order "law and order"
+   SHORT 4185 "court" [law] noun common rec 1 link 1
+   LONG  4267 "contempt of court" noun phrase rec 4 link 4
+2857 | theme law_and_order "law and order"
+   SHORT 4195 "crime" noun common rec 1 link 2
+   LONG  4196 "crime scene" noun common rec 1 link 2
+2858 | theme crimes "crimes"
+   SHORT 33625 "theft" noun common rec 1 link 1
+   LONG  33655 "identity theft" noun common rec 2 link 3
+2859 | theme stealing_crimes "stealing crimes"
+   SHORT 33625 "theft" noun common rec 1 link 1
+   LONG  33655 "identity theft" noun common rec 2 link 3
+2860 | theme courtroom_words "courtroom words"
+   SHORT 4187 "jury" noun common rec 1 link 1
+   LONG  33674 "hung jury" noun common rec 3 link 3
+2861 | theme courtroom_words "courtroom words"
+   SHORT 4187 "jury" noun common rec 1 link 1
+   LONG  61129 "jury box" noun common rec 1 link 2
+2862 | theme courtroom_words "courtroom words"
+   SHORT 4192 "witness" noun common rec 1 link 1
+   LONG  33671 "witness stand" noun common rec 2 link 2
+2863 | theme courtroom_words "courtroom words"
+   SHORT 33667 "plea" noun common rec 2 link 3
+   LONG  4268 "plea bargain" noun common rec 4 link 4
+2864 | theme courtroom_words "courtroom words"
+   SHORT 33667 "plea" noun common rec 2 link 3
+   LONG  4269 "plea deal" noun common rec 3 link 4
+2865 | theme police_words "police words"
+   SHORT 33680 "cop" [officer] noun common rec 1 link 1
+   LONG  33694 "beat cop" noun common rec 3 link 3
+2866 | theme prison_words "prison words"
+   SHORT 2485 "prison" noun common rec 2 link 1
+   LONG  33705 "prison guard" noun common rec 1 link 2
+2867 | theme prison_words "prison words"
+   SHORT 2485 "prison" noun common rec 2 link 1
+   LONG  33727 "prison break" noun common rec 2 link 3
+2868 | theme prison_words "prison words"
+   SHORT 33702 "cell" [prison] noun common rec 1 link 1
+   LONG  33723 "cell block" noun common rec 3 link 3
+2869 | theme legal_documents "legal documents"
+   SHORT 29007 "deed" noun common rec 1 link 2
+   LONG  24204 "title deed" noun common rec 4 link 3
+2870 | theme legal_documents "legal documents"
+   SHORT 29007 "deed" noun common rec 1 link 2
+   LONG  33767 "trust deed" noun common rec 4 link 5
+2871 | theme legal_documents "legal documents"
+   SHORT 29007 "deed" noun common rec 1 link 2
+   LONG  61142 "quitclaim deed" noun common rec 5 link 5
+2872 | theme legal_documents "legal documents"
+   SHORT 33752 "patent" noun common rec 2 link 3
+   LONG  61143 "letters patent" noun phrase rec 5 link 5
+2873 | theme spy_words "spy words" (note: agent, mole, cipher, handler, double agent, safe house, codename, wiretap)
+   SHORT 33829 "agent" [spy] noun common rec 1 link 2
+   LONG  33831 "double agent" noun common rec 2 link 1
+2874 | theme spy_words "spy words" (note: agent, mole, cipher, handler, double agent, safe house, codename, wiretap)
+   SHORT 33829 "agent" [spy] noun common rec 1 link 2
+   LONG  33832 "secret agent" noun common rec 1 link 1
+2875 | theme spy_words "spy words" (note: agent, mole, cipher, handler, double agent, safe house, codename, wiretap)
+   SHORT 33829 "agent" [spy] noun common rec 1 link 2
+   LONG  33840 "sleeper agent" noun common rec 3 link 2
+2876 | theme money_words "money words" (note: general words about cash and wealth)
+   SHORT 23285 "cash" noun common rec 1 link 1
+   LONG  33882 "petty cash" noun common rec 3 link 4
+2877 | theme money_words "money words" (note: general words about cash and wealth)
+   SHORT 23285 "cash" noun common rec 1 link 1
+   LONG  33883 "hard cash" noun common rec 3 link 4
+2878 | theme latin_american_currencies "latin american currencies" (note: real, sol, boliviano, guarani, bolivar, quetzal, colon, lempira, cordoba)
+   SHORT 306 "peso" noun common rec 2 link 1
+   LONG  61160 "Mexican peso" noun proper rec 2 link 1
+2879 | theme latin_american_currencies "latin american currencies" (note: real, sol, boliviano, guarani, bolivar, quetzal, colon, lempira, cordoba)
+   SHORT 306 "peso" noun common rec 2 link 1
+   LONG  61161 "Argentine peso" noun proper rec 3 link 1
+2880 | theme banking_words "banking words"
+   SHORT 2495 "bank" [financial] noun common rec 2 link 1
+   LONG  33934 "bank run" noun common rec 4 link 4
+2881 | theme banking_words "banking words"
+   SHORT 33912 "account" [bank] noun common rec 1 link 1
+   LONG  33921 "savings account" noun common rec 1 link 1
+2882 | theme banking_words "banking words"
+   SHORT 33912 "account" [bank] noun common rec 1 link 1
+   LONG  33923 "checking account" noun common rec 2 link 2
+2883 | theme banking_words "banking words"
+   SHORT 33913 "deposit" [bank] verb common rec 2 link 2
+   LONG  33920 "safe deposit box" noun common rec 3 link 3
+2884 | theme banking_words "banking words"
+   SHORT 33916 "teller" [bank clerk] noun common rec 3 link 2
+   LONG  33930 "teller machine" noun common rec 3 link 3
+2885 | theme coins "coins"
+   SHORT 28766 "cent" [coin] noun common rec 2 link 1
+   LONG  33942 "euro cent" noun common rec 3 link 2
+2886 | theme us_coins "us coins" (note: Exactly: penny, nickel, dime, quarter, half dollar, dollar coin.)
+   SHORT 56816 "dollar" (full: dollar coin) noun common rec 2 link 2
+   LONG  33941 "half dollar" noun common rec 3 link 3
+2887 | theme tax_words "tax words"
+   SHORT 33285 "tax" noun common rec 1 link 1
+   LONG  33654 "tax evasion" noun common rec 3 link 2
+2888 | theme tax_words "tax words"
+   SHORT 33285 "tax" noun common rec 1 link 1
+   LONG  33974 "tax haven" noun common rec 3 link 2
+2889 | theme tax_words "tax words"
+   SHORT 33285 "tax" noun common rec 1 link 1
+   LONG  33984 "poll tax" noun common rec 3 link 4
+2890 | theme tax_words "tax words"
+   SHORT 33285 "tax" noun common rec 1 link 1
+   LONG  33987 "tax credit" noun common rec 3 link 3
+2891 | theme tax_words "tax words"
+   SHORT 33285 "tax" noun common rec 1 link 1
+   LONG  33991 "tax code" noun common rec 3 link 4
+2892 | theme tax_words "tax words"
+   SHORT 33968 "duty" [tax] noun common rec 2 link 2
+   LONG  24199 "stamp duty" noun common rec 4 link 3
+2893 | theme shopping_words "shopping words"
+   SHORT 28171 "sale" [discount] noun common rec 3 link 1
+   LONG  34016 "flash sale" noun common rec 3 link 3
+2894 | theme stock_market_words "stock market words" (note: shares, bull, bear, dividend, broker, index, portfolio, bond)
+   SHORT 34058 "stock" [shares] noun common rec 2 link 1
+   LONG  34081 "penny stock" noun common rec 3 link 3
+2895 | theme stock_market_words "stock market words" (note: shares, bull, bear, dividend, broker, index, portfolio, bond)
+   SHORT 34059 "bull" [market] noun common rec 2 link 1
+   LONG  50171 "Bull Run" [stock market] noun place rec 4 link 4
+2896 | theme stock_market_words "stock market words" (note: shares, bull, bear, dividend, broker, index, portfolio, bond)
+   SHORT 34061 "dividend" noun common rec 3 link 1
+   LONG  61165 "ex-dividend" adjective common rec 5 link 5
+2897 | theme bazaar "bazaar" (note: things in a Middle Eastern or Turkish market)
+   SHORT 34150 "lamp" [light] noun common rec 1 link 2
+   LONG  34145 "mosaic lamp" noun common rec 4 link 2
+2898 | theme religious_festivals "religious festivals"
+   SHORT 5116 "Eid" noun proper rec 2 link 1
+   LONG  5159 "Eid al-Adha" noun proper rec 4 link 2
+2899 | theme religious_festivals "religious festivals"
+   SHORT 5116 "Eid" noun proper rec 2 link 1
+   LONG  25201 "Eid al-Fitr" noun proper rec 3 link 2
+2900 | theme holy_books "holy books"
+   SHORT 4290 "Bible" noun title rec 1 link 1
+   LONG  34238 "Gideon Bible" noun proper rec 4 link 2
+2901 | theme holy_books "holy books"
+   SHORT 4290 "Bible" noun title rec 1 link 1
+   LONG  34251 "King James Bible" noun proper rec 3 link 2
+2902 | theme holy_books "holy books"
+   SHORT 50014 "gospel" [scripture] noun common rec 2 link 2
+   LONG  61190 "Gospel of Thomas" noun proper rec 4 link 4
+2903 | theme angels_and_spirits "angels and spirits"
+   SHORT 4295 "angel" [spirit] noun common rec 1 link 1
+   LONG  34264 "fallen angel" noun common rec 2 link 2
+2904 | theme places_of_worship "places of worship"
+   SHORT 2464 "church" [building] noun common rec 1 link 1
+   LONG  34294 "parish church" noun common rec 3 link 3
+2905 | theme places_of_worship "places of worship"
+   SHORT 2464 "church" [building] noun common rec 1 link 1
+   LONG  34295 "Orthodox church" noun common rec 3 link 4
+2906 | theme places_of_worship "places of worship"
+   SHORT 4280 "temple" [worship] noun common rec 1 link 1
+   LONG  20552 "fire temple" noun common rec 5 link 4
+2907 | theme religious_clothing "religious clothing" (note: cassock, habit, hijab, kippah, turban, miter, surplice, wimple)
+   SHORT 34383 "robe" [religious] noun common rec 1 link 2
+   LONG  34389 "saffron robe" noun common rec 4 link 3
+2908 | theme afterlife_words "afterlife words" (note: heaven, hell, paradise, purgatory, limbo, nirvana, underworld, reincarnation)
+   SHORT 34403 "heaven" noun common rec 1 link 1
+   LONG  34426 "Heaven's Gate" noun proper rec 4 link 3
+2909 | theme buddhism_words "buddhism words" (note: nirvana, karma, monk, stupa, dharma, mantra, lama, zen)
+   SHORT 34215 "lama" noun common rec 3 link 3
+   LONG  34478 "Dalai Lama" noun person rec 2 link 2
+2910 | theme military "military"
+   SHORT 61 "navy" [armed force] noun common rec 1 link 1
+   LONG  7744 "navy blue" [colour] noun common rec 1 link 5
+2911 | theme military_ranks "military ranks"
+   SHORT 29420 "admiral" noun common rec 3 link 2
+   LONG  34540 "rear admiral" noun common rec 3 link 3
+2912 | theme military_ranks "military ranks"
+   SHORT 29420 "admiral" noun common rec 3 link 2
+   LONG  34541 "vice admiral" noun common rec 3 link 3
+2913 | theme military_ranks "military ranks"
+   SHORT 32575 "Major" [rank] noun title rec 2 link 1
+   LONG  34539 "sergeant major" [rank] noun common rec 3 link 2
+2914 | theme military_ranks "military ranks"
+   SHORT 32575 "Major" [rank] noun title rec 2 link 1
+   LONG  34553 "major general" noun common rec 3 link 3
+2915 | theme military_ranks "military ranks"
+   SHORT 32576 "Sergeant" noun title rec 2 link 1
+   LONG  34537 "staff sergeant" noun common rec 3 link 3
+2916 | theme military_ranks "military ranks"
+   SHORT 32576 "Sergeant" noun title rec 2 link 1
+   LONG  34539 "sergeant major" [rank] noun common rec 3 link 2
+2917 | theme military_ranks "military ranks"
+   SHORT 32576 "Sergeant" noun title rec 2 link 1
+   LONG  61237 "colour sergeant" noun common rec 5 link 5
+2918 | theme military_ranks "military ranks"
+   SHORT 34525 "general" [rank] noun common rec 1 link 1
+   LONG  34553 "major general" noun common rec 3 link 3
+2919 | theme military_ranks "military ranks"
+   SHORT 34525 "general" [rank] noun common rec 1 link 1
+   LONG  34554 "brigadier general" noun common rec 3 link 3
+2920 | theme military_ranks "military ranks"
+   SHORT 34525 "general" [rank] noun common rec 1 link 1
+   LONG  34558 "five-star general" noun common rec 4 link 4
+2921 | theme military_ranks "military ranks"
+   SHORT 34526 "colonel" noun common rec 2 link 1
+   LONG  34552 "lieutenant colonel" noun common rec 3 link 2
+2922 | theme military_ranks "military ranks"
+   SHORT 34527 "captain" [rank] noun common rec 1 link 1
+   LONG  34549 "group captain" noun common rec 4 link 4
+2923 | theme military_ranks "military ranks"
+   SHORT 34528 "lieutenant" noun common rec 2 link 1
+   LONG  34535 "second lieutenant" noun common rec 3 link 3
+2924 | theme military_ranks "military ranks"
+   SHORT 34528 "lieutenant" noun common rec 2 link 1
+   LONG  34548 "flight lieutenant" noun common rec 3 link 3
+2925 | theme military_ranks "military ranks"
+   SHORT 34528 "lieutenant" noun common rec 2 link 1
+   LONG  34552 "lieutenant colonel" noun common rec 3 link 2
+2926 | theme military_ranks "military ranks"
+   SHORT 34529 "corporal" noun common rec 2 link 1
+   LONG  34536 "lance corporal" noun common rec 3 link 3
+2927 | theme military_ranks "military ranks"
+   SHORT 34531 "commander" [rank] noun common rec 2 link 2
+   LONG  34546 "wing commander" noun common rec 3 link 3
+2928 | theme military_ranks "military ranks"
+   SHORT 34532 "brigadier" noun common rec 3 link 3
+   LONG  34554 "brigadier general" noun common rec 3 link 3
+2929 | theme military_ranks "military ranks"
+   SHORT 34534 "marshal" [rank] noun common rec 3 link 4
+   LONG  34533 "field marshal" noun common rec 3 link 2
+2930 | theme military_ranks "military ranks"
+   SHORT 34534 "marshal" [rank] noun common rec 3 link 4
+   LONG  34545 "air marshal" noun common rec 4 link 4
+2931 | theme military_ranks "military ranks"
+   SHORT 34542 "commodore" noun common rec 3 link 3
+   LONG  34550 "air commodore" noun common rec 5 link 4
+2932 | theme military_ranks "military ranks"
+   SHORT 34544 "petty officer" noun common rec 3 link 3
+   LONG  34551 "chief petty officer" noun common rec 4 link 4
+2933 | theme navy_ranks "navy ranks"
+   SHORT 29420 "admiral" noun common rec 3 link 2
+   LONG  34540 "rear admiral" noun common rec 3 link 3
+2934 | theme navy_ranks "navy ranks"
+   SHORT 29420 "admiral" noun common rec 3 link 2
+   LONG  34541 "vice admiral" noun common rec 3 link 3
+2935 | theme navy_ranks "navy ranks"
+   SHORT 34544 "petty officer" noun common rec 3 link 3
+   LONG  34551 "chief petty officer" noun common rec 4 link 4
+2936 | theme navy_words "navy words"
+   SHORT 34583 "deck" [ship] noun common rec 1 link 2
+   LONG  34595 "gun deck" noun common rec 4 link 4
+2937 | theme navy_words "navy words"
+   SHORT 34583 "deck" [ship] noun common rec 1 link 2
+   LONG  47440 "poop deck" noun common rec 3 link 4
+2938 | theme parts_of_a_ship "parts of a ship"
+   SHORT 34583 "deck" [ship] noun common rec 1 link 2
+   LONG  34595 "gun deck" noun common rec 4 link 4
+2939 | theme parts_of_a_ship "parts of a ship"
+   SHORT 34583 "deck" [ship] noun common rec 1 link 2
+   LONG  47440 "poop deck" noun common rec 3 link 4
+2940 | theme air_force_words "air force words"
+   SHORT 4434 "squadron" noun common rec 3 link 3
+   LONG  34547 "squadron leader" noun common rec 3 link 4
+2941 | theme air_force_words "air force words"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  34601 "fighter jet" noun common rec 1 link 1
+2942 | theme air_force_words "air force words"
+   SHORT 34602 "bomber" [aircraft] noun common rec 2 link 1
+   LONG  34608 "stealth bomber" noun common rec 2 link 2
+2943 | theme medals_and_honors "medals and honors"
+   SHORT 4408 "medal" noun common rec 1 link 1
+   LONG  34626 "Medal of Honor" noun proper rec 3 link 1
+2944 | theme medals_and_honors "medals and honors"
+   SHORT 4408 "medal" noun common rec 1 link 1
+   LONG  34644 "Medal of Freedom" noun proper rec 4 link 3
+2945 | theme medals_and_honors "medals and honors"
+   SHORT 4408 "medal" noun common rec 1 link 1
+   LONG  34645 "medal bar" noun common rec 4 link 5
+2946 | theme medals_and_honors "medals and honors"
+   SHORT 4408 "medal" noun common rec 1 link 1
+   LONG  34647 "Olympic medal" noun common rec 2 link 2
+2947 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4453 "missile" noun common rec 2 link 1
+   LONG  34668 "cruise missile" noun common rec 3 link 3
+2948 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4453 "missile" noun common rec 2 link 1
+   LONG  61249 "Hellfire missile" noun proper rec 4 link 4
+2949 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4454 "grenade" noun common rec 2 link 1
+   LONG  34683 "grenade launcher" noun common rec 3 link 3
+2950 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4455 "rifle" [gun] noun common rec 1 link 1
+   LONG  34663 "sniper rifle" noun common rec 2 link 2
+2951 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4455 "rifle" [gun] noun common rec 1 link 1
+   LONG  34664 "assault rifle" noun common rec 2 link 2
+2952 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4455 "rifle" [gun] noun common rec 1 link 1
+   LONG  61246 "recoilless rifle" noun common rec 4 link 5
+2953 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4456 "bomb" [weapon] noun common rec 1 link 1
+   LONG  34679 "smart bomb" noun common rec 3 link 3
+2954 | theme modern_weapons "modern weapons" (note: rifle, pistol, grenade, missile, torpedo, mortar, bazooka, machine gun)
+   SHORT 4456 "bomb" [weapon] noun common rec 1 link 1
+   LONG  61253 "cluster bomb" noun common rec 3 link 3
+2955 | theme military_units "military units" (note: squad, platoon, company, battalion, regiment, brigade, division, corps, squadron)
+   SHORT 4370 "army" [military] noun common rec 1 link 1
+   LONG  34698 "field army" noun common rec 4 link 5
+2956 | theme military_units "military units" (note: squad, platoon, company, battalion, regiment, brigade, division, corps, squadron)
+   SHORT 4370 "army" [military] noun common rec 1 link 1
+   LONG  34700 "army group" noun common rec 4 link 4
+2957 | theme military_units "military units" (note: squad, platoon, company, battalion, regiment, brigade, division, corps, squadron)
+   SHORT 4432 "regiment" noun common rec 3 link 2
+   LONG  34702 "regiment of foot" noun common rec 5 link 5
+2958 | theme military_units "military units" (note: squad, platoon, company, battalion, regiment, brigade, division, corps, squadron)
+   SHORT 34688 "corps" [military unit] noun common rec 3 link 3
+   LONG  34701 "marine corps" [military branch] noun common rec 3 link 3
+2959 | theme warships "warships" (note: destroyer, frigate, submarine, aircraft carrier, battleship, cruiser, corvette, minesweeper)
+   SHORT 34572 "submarine" noun common rec 1 link 1
+   LONG  34716 "nuclear submarine" noun common rec 2 link 2
+2960 | theme school "school"
+   SHORT 4063 "teacher" noun common rec 1 link 1
+   LONG  4534 "teacher's pet" noun phrase rec 2 link 3
+2961 | theme school_subjects "school subjects"
+   SHORT 28495 "economics" noun common rec 3 link 4
+   LONG  34738 "home economics" noun common rec 2 link 3
+2962 | theme school_subjects "school subjects"
+   SHORT 34723 "science" [subject] noun common rec 1 link 1
+   LONG  34740 "computer science" noun common rec 2 link 2
+2963 | theme school_subjects "school subjects"
+   SHORT 34723 "science" [subject] noun common rec 1 link 1
+   LONG  34755 "earth science" noun common rec 3 link 4
+2964 | theme stationery "stationery"
+   SHORT 12007 "pencil" [writing tool] noun common rec 1 link 1
+   LONG  25794 "pencil case" noun common rec 1 link 2
+2965 | theme stationery "stationery"
+   SHORT 12007 "pencil" [writing tool] noun common rec 1 link 1
+   LONG  34763 "pencil sharpener" noun common rec 1 link 1
+2966 | theme stationery "stationery"
+   SHORT 34758 "pen" [writing] noun common rec 1 link 1
+   LONG  34767 "fountain pen" noun common rec 2 link 3
+2967 | theme stationery "stationery"
+   SHORT 34758 "pen" [writing] noun common rec 1 link 1
+   LONG  34768 "ballpoint pen" noun common rec 2 link 2
+2968 | theme stationery "stationery"
+   SHORT 34758 "pen" [writing] noun common rec 1 link 1
+   LONG  61262 "dip pen" noun common rec 4 link 4
+2969 | theme stationery "stationery"
+   SHORT 34758 "pen" [writing] noun common rec 1 link 1
+   LONG  61263 "pen nib" noun common rec 4 link 5
+2970 | theme classroom_items "classroom items"
+   SHORT 12800 "projector" noun common rec 2 link 2
+   LONG  34788 "overhead projector" noun common rec 3 link 3

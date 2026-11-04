@@ -1,0 +1,47 @@
+GROUP colors_in_french 59389 57759
+GROUP colors_in_french 59389 57760
+# pure white is just white
+MERGE shades_of_white 7671 38711
+GROUP shades_of_black 7668 38733
+GROUP pastel_colors 715 38754
+GROUP pastel_colors 7686 38760
+GROUP oval_things 518 57815
+GROUP hard_materials 39001 39002
+GROUP crunchy_foods 18372 18376
+GROUP chewy_foods 39103 18377
+BRAND fizzy_drinks 865 871
+# person, not a word for smart
+OUT words_for_smart 32881 62493
+GROUP huge_things 1284 1306
+GROUP heavy_things 5998 10628
+GROUP lightweight_things 39566 39570
+GROUP loud_things 4216 39607
+GROUP candle_scents 5038 39749
+GROUP things_that_fly 2711 34601
+GROUP things_that_fly 2736 39772
+GROUP aircraft 2711 34601
+GROUP aircraft 2736 39772
+MERGE things_that_spin 39791 5928
+GROUP things_that_bounce 46057 39808
+GROUP fast_things 2711 34601
+GROUP slow_things 1017 39860
+GROUP slow_things 18464 39863
+GROUP things_that_melt 39079 39819
+GROUP words_for_hot 27978 39940
+GROUP words_for_dark 7668 40064
+GROUP words_for_dark 7669 40064
+GROUP words_for_dark 28162 40052
+GROUP things_with_wheels 40178 39781
+# bull elephant has no horns
+OUT things_with_horns 164 40204
+# coat of arms is not a thing with arms
+OUT things_with_arms 4872 2526
+# a drink, not something that pops
+OUT things_that_pop 39566 19499
+GROUP things_that_pop 39566 39570
+OUT things_that_tick 2567 40270
+GROUP things_that_cut 30719 1881
+GROUP things_that_ring 23319 7325
+GROUP things_that_ring 25404 25682
+# a tower, not something that rings
+OUT things_that_ring 40219 14001

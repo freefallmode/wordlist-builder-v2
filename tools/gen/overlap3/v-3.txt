@@ -1,0 +1,17 @@
+# fictional character, not a kind of rabbit
+OUT rabbits_and_hares 1444 8088
+# SHORT "eagle" here means eagle owl
+GROUP owls 65210 50578
+# SHORT "turkey" here means the turkey vulture
+GROUP vultures 65244 50607
+# wild goose is just goose
+GROUP geese_and_swans 157 17736
+# same bird
+MERGE flightless_birds 1073 8251
+# symbol, not a kind of dove
+OUT pigeons_and_doves 1084 8496
+# same bird (collared dove)
+GROUP pigeons_and_doves 65273 8471
+# human body part, not a bird part
+OUT bird_body_parts 3181 3233
+OUT what_a_bird_stands_on 3181 3233

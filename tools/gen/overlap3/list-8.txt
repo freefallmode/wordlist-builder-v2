@@ -1,0 +1,891 @@
+2080 | theme office "office"
+   SHORT 4479 "desk" [furniture] noun common rec 1 link 1
+   LONG  57530 "desk phone" noun common rec 1 link 3
+2081 | theme construction_site "construction site"
+   SHORT 3104 "crane" [machine] noun common rec 1 link 1
+   LONG  49043 "tower crane" noun common rec 2 link 2
+2082 | theme construction_site "construction site"
+   SHORT 7396 "concrete" [building material] noun common rec 1 link 2
+   LONG  3109 "concrete mixer" noun common rec 2 link 2
+2083 | theme vet_clinic "vet clinic"
+   SHORT 10159 "kennel" noun common rec 1 link 3
+   LONG  60581 "kennel cough" noun common rec 4 link 4
+2084 | theme vet_clinic "vet clinic"
+   SHORT 28296 "pet" [animal] noun common rec 1 link 1
+   LONG  50841 "pet carrier" noun common rec 2 link 2
+2085 | theme vet_clinic "vet clinic"
+   SHORT 28296 "pet" [animal] noun common rec 1 link 1
+   LONG  57561 "pet insurance" noun common rec 3 link 4
+2086 | theme vet_clinic "vet clinic"
+   SHORT 28296 "pet" [animal] noun common rec 1 link 1
+   LONG  60587 "pet passport" noun common rec 4 link 4
+2087 | theme zoo "zoo"
+   SHORT 1000 "panda" [animal] noun common rec 1 link 2
+   LONG  9682 "red panda" noun common rec 2 link 3
+2088 | theme beach "beach"
+   SHORT 28110 "sea" [water body] noun common rec 1 link 2
+   LONG  1288 "sea star" noun common rec 3 link 4
+2089 | theme beach "beach"
+   SHORT 28110 "sea" [water body] noun common rec 1 link 2
+   LONG  1291 "sea grass" [seagrass] noun common rec 3 link 4
+2090 | theme beach "beach"
+   SHORT 28110 "sea" [water body] noun common rec 1 link 2
+   LONG  31052 "sea glass" noun common rec 2 link 4
+2091 | theme airport "airport"
+   SHORT 47141 "gate" [airport] noun common rec 1 link 1
+   LONG  57588 "boarding gate" noun common rec 2 link 2
+2092 | theme museum "museum"
+   SHORT 6303 "exhibit" noun common rec 1 link 1
+   LONG  57593 "exhibit hall" noun common rec 2 link 3
+2093 | theme museum "museum"
+   SHORT 12136 "collection" [art] noun common rec 2 link 2
+   LONG  57595 "coin collection" noun common rec 2 link 4
+2094 | theme art_gallery "art gallery"
+   SHORT 5855 "painting" noun common rec 1 link 1
+   LONG  6298 "oil painting" noun phrase rec 1 link 1
+2095 | theme art_gallery "art gallery"
+   SHORT 6327 "frame" [picture] noun common rec 1 link 2
+   LONG  57597 "gilded frame" noun common rec 3 link 4
+2096 | theme aquarium "aquarium"
+   SHORT 495 "eel" noun common rec 3 link 3
+   LONG  1320 "moray eel" noun common rec 3 link 3
+2097 | theme aquarium "aquarium"
+   SHORT 1215 "shark" [fish] noun common rec 1 link 1
+   LONG  8746 "whale shark" noun common rec 2 link 2
+2098 | theme aquarium "aquarium"
+   SHORT 1236 "ray" [fish] noun common rec 2 link 3
+   LONG  1329 "manta ray" noun common rec 3 link 3
+2099 | theme movie_theater "movie theater"
+   SHORT 6418 "popcorn" noun common rec 1 link 1
+   LONG  12811 "popcorn machine" noun common rec 2 link 3
+2100 | theme movie_theater "movie theater"
+   SHORT 12799 "ticket" [cinema] noun common rec 1 link 1
+   LONG  12812 "ticket stub" noun common rec 2 link 3
+2101 | theme movie_theater "movie theater"
+   SHORT 57604 "seat" [cinema] noun common rec 1 link 1
+   LONG  57605 "reclining seat" noun common rec 3 link 3
+2102 | theme swimming_pool "swimming pool"
+   SHORT 43272 "lane" [swimming] noun common rec 2 link 2
+   LONG  43288 "lane rope" noun common rec 3 link 3
+2103 | theme swimming_pool "swimming pool"
+   SHORT 43272 "lane" [swimming] noun common rec 2 link 2
+   LONG  57618 "lane marker" noun common rec 3 link 4
+2104 | theme ski_resort "ski resort"
+   SHORT 2980 "lodge" [accommodation] noun common rec 2 link 3
+   LONG  57626 "base lodge" noun common rec 4 link 4
+2105 | theme ski_resort "ski resort"
+   SHORT 43521 "ski" [equipment] noun common rec 1 link 1
+   LONG  39852 "ski jump" verb common rec 2 link 4
+2106 | theme ski_resort "ski resort"
+   SHORT 43523 "slope" [skiing] noun common rec 1 link 1
+   LONG  57623 "nursery slope" noun common rec 3 link 3
+2107 | theme ski_resort "ski resort"
+   SHORT 43524 "piste" [ski] noun common rec 3 link 2
+   LONG  43535 "off-piste" adjective common rec 3 link 4
+2108 | theme ski_resort "ski resort"
+   SHORT 63885 "lift" [uphill] noun common rec 1 link 1
+   LONG  43538 "button lift" noun common rec 4 link 4
+2109 | theme ski_resort "ski resort"
+   SHORT 63885 "lift" [uphill] noun common rec 1 link 1
+   LONG  47073 "lift pass" noun common rec 2 link 2
+2110 | theme water_park "water park"
+   SHORT 57627 "slide" (full: water slide) noun common rec 1 link 1
+   LONG  57635 "tube slide" noun common rec 2 link 2
+2111 | theme water_park "water park"
+   SHORT 57627 "slide" (full: water slide) noun common rec 1 link 1
+   LONG  57636 "body slide" noun common rec 3 link 3
+2112 | theme water_park "water park"
+   SHORT 57627 "slide" (full: water slide) noun common rec 1 link 1
+   LONG  57637 "speed slide" noun common rec 3 link 3
+2113 | theme water_park "water park"
+   SHORT 57627 "slide" (full: water slide) noun common rec 1 link 1
+   LONG  57638 "bowl slide" noun common rec 4 link 4
+2114 | theme water_park "water park"
+   SHORT 57627 "slide" (full: water slide) noun common rec 1 link 1
+   LONG  57645 "free fall slide" noun common rec 3 link 3
+2115 | theme buildings "buildings"
+   SHORT 112 "house" [building] noun common rec 1 link 1
+   LONG  2518 "oast house" noun phrase rec 5 link 5
+2116 | theme buildings_to_live_in "buildings to live in"
+   SHORT 112 "house" [building] noun common rec 1 link 1
+   LONG  125 "terraced house" noun common rec 3 link 2
+2117 | theme buildings_to_live_in "buildings to live in"
+   SHORT 112 "house" [building] noun common rec 1 link 1
+   LONG  126 "semi-detached house" noun common rec 3 link 2
+2118 | theme traditional_dwellings "traditional dwellings" (note: igloo, yurt, tepee, longhouse, hogan, rondavel, trullo)
+   SHORT 2483 "hut" [building] noun common rec 2 link 2
+   LONG  57658 "nipa hut" noun common rec 4 link 4
+2119 | theme traditional_dwellings "traditional dwellings" (note: igloo, yurt, tepee, longhouse, hogan, rondavel, trullo)
+   SHORT 2483 "hut" [building] noun common rec 2 link 2
+   LONG  57659 "mud hut" noun common rec 2 link 2
+2120 | theme religious_buildings "religious buildings"
+   SHORT 2464 "church" [building] noun common rec 1 link 1
+   LONG  34294 "parish church" noun common rec 3 link 3
+2121 | theme religious_buildings "religious buildings"
+   SHORT 4280 "temple" [worship] noun common rec 1 link 1
+   LONG  20552 "fire temple" noun common rec 5 link 5
+2122 | theme farm_buildings "farm buildings"
+   SHORT 1831 "shed" [garden building] noun common rec 1 link 3
+   LONG  57681 "tractor shed" noun common rec 2 link 3
+2123 | theme farm_buildings "farm buildings"
+   SHORT 1831 "shed" [garden building] noun common rec 1 link 3
+   LONG  57689 "lambing shed" noun common rec 3 link 3
+2124 | theme farm_buildings "farm buildings"
+   SHORT 1831 "shed" [garden building] noun common rec 1 link 3
+   LONG  57690 "machine shed" noun common rec 3 link 3
+2125 | theme farm_buildings "farm buildings"
+   SHORT 2467 "barn" [farm building] noun common rec 1 link 1
+   LONG  57687 "tithe barn" noun common rec 4 link 5
+2126 | theme farm_buildings "farm buildings"
+   SHORT 2467 "barn" [farm building] noun common rec 1 link 1
+   LONG  57688 "hay barn" noun common rec 2 link 2
+2127 | theme farm_buildings "farm buildings"
+   SHORT 2467 "barn" [farm building] noun common rec 1 link 1
+   LONG  57692 "cattle barn" noun common rec 2 link 2
+2128 | theme farm_buildings "farm buildings"
+   SHORT 2467 "barn" [farm building] noun common rec 1 link 1
+   LONG  57693 "pole barn" noun common rec 4 link 4
+2129 | theme farm_buildings "farm buildings"
+   SHORT 2467 "barn" [farm building] noun common rec 1 link 1
+   LONG  57694 "Dutch barn" noun common rec 4 link 4
+2130 | theme farm_buildings "farm buildings"
+   SHORT 2467 "barn" [farm building] noun common rec 1 link 1
+   LONG  57699 "horse barn" noun common rec 2 link 2
+2131 | theme farm_buildings "farm buildings"
+   SHORT 2502 "stable" [building] noun common rec 3 link 1
+   LONG  57698 "stable block" noun common rec 3 link 3
+2132 | theme industrial_buildings "industrial buildings" (note: factory, warehouse, mill, refinery, silo, foundry, power station)
+   SHORT 2482 "depot" noun common rec 3 link 3
+   LONG  57714 "storage depot" noun common rec 3 link 4
+2133 | theme industrial_buildings "industrial buildings" (note: factory, warehouse, mill, refinery, silo, foundry, power station)
+   SHORT 2501 "mill" [building] noun common rec 3 link 2
+   LONG  22915 "cotton mill" noun common rec 2 link 3
+2134 | theme industrial_buildings "industrial buildings" (note: factory, warehouse, mill, refinery, silo, foundry, power station)
+   SHORT 2501 "mill" [building] noun common rec 3 link 2
+   LONG  22916 "textile mill" noun common rec 2 link 3
+2135 | theme industrial_buildings "industrial buildings" (note: factory, warehouse, mill, refinery, silo, foundry, power station)
+   SHORT 2501 "mill" [building] noun common rec 3 link 2
+   LONG  57722 "paper mill" noun common rec 2 link 3
+2136 | theme industrial_buildings "industrial buildings" (note: factory, warehouse, mill, refinery, silo, foundry, power station)
+   SHORT 2501 "mill" [building] noun common rec 3 link 2
+   LONG  57723 "flour mill" noun common rec 2 link 3
+2137 | theme middle_eastern_buildings "middle eastern buildings" (note: souk, bazaar, minaret, hammam, caravanserai, riad, kasbah)
+   SHORT 128 "palace" noun common rec 2 link 3
+   LONG  20636 "Topkapi Palace" noun place rec 4 link 3
+2138 | theme middle_eastern_buildings "middle eastern buildings" (note: souk, bazaar, minaret, hammam, caravanserai, riad, kasbah)
+   SHORT 2489 "mosque" noun common rec 2 link 1
+   LONG  2363 "Blue Mosque" noun place rec 3 link 3
+2139 | theme middle_eastern_buildings "middle eastern buildings" (note: souk, bazaar, minaret, hammam, caravanserai, riad, kasbah)
+   SHORT 2489 "mosque" noun common rec 2 link 1
+   LONG  2364 "Sultan Ahmed Mosque" noun place rec 4 link 4
+2140 | theme middle_eastern_buildings "middle eastern buildings" (note: souk, bazaar, minaret, hammam, caravanserai, riad, kasbah)
+   SHORT 2489 "mosque" noun common rec 2 link 1
+   LONG  37369 "Al-Aqsa Mosque" noun place rec 3 link 2
+2141 | theme middle_eastern_buildings "middle eastern buildings" (note: souk, bazaar, minaret, hammam, caravanserai, riad, kasbah)
+   SHORT 2489 "mosque" noun common rec 2 link 1
+   LONG  37372 "Sheikh Zayed Mosque" noun place rec 4 link 3
+2142 | theme middle_eastern_buildings "middle eastern buildings" (note: souk, bazaar, minaret, hammam, caravanserai, riad, kasbah)
+   SHORT 2489 "mosque" noun common rec 2 link 1
+   LONG  37375 "Umayyad Mosque" noun place rec 4 link 4
+2143 | theme east_asian_buildings "east asian buildings" (note: pagoda, stupa, shrine, teahouse, dojo, ryokan, hanok)
+   SHORT 34 "castle" [building] noun common rec 1 link 3
+   LONG  2389 "Himeji Castle" noun place rec 5 link 3
+2144 | theme east_asian_buildings "east asian buildings" (note: pagoda, stupa, shrine, teahouse, dojo, ryokan, hanok)
+   SHORT 34 "castle" [building] noun common rec 1 link 3
+   LONG  37179 "Osaka Castle" noun place rec 4 link 3
+2145 | theme east_asian_buildings "east asian buildings" (note: pagoda, stupa, shrine, teahouse, dojo, ryokan, hanok)
+   SHORT 2490 "temple" [building] noun common rec 2 link 1
+   LONG  2394 "Temple of Heaven" noun place rec 5 link 2
+2146 | theme east_asian_buildings "east asian buildings" (note: pagoda, stupa, shrine, teahouse, dojo, ryokan, hanok)
+   SHORT 2490 "temple" [building] noun common rec 2 link 1
+   LONG  37336 "Shaolin Temple" noun place rec 3 link 3
+2147 | theme east_asian_buildings "east asian buildings" (note: pagoda, stupa, shrine, teahouse, dojo, ryokan, hanok)
+   SHORT 6557 "pavilion" noun common rec 3 link 3
+   LONG  37368 "Golden Pavilion" noun place rec 4 link 3
+2148 | theme east_asian_buildings "east asian buildings" (note: pagoda, stupa, shrine, teahouse, dojo, ryokan, hanok)
+   SHORT 14050 "shrine" noun common rec 2 link 1
+   LONG  37585 "Meiji Shrine" noun place rec 4 link 3
+2149 | theme road_types "road types"
+   SHORT 28439 "street" [road] noun common rec 3 link 1
+   LONG  27376 "high street" noun common rec 2 link 2
+2150 | theme road_types "road types"
+   SHORT 28439 "street" [road] noun common rec 3 link 1
+   LONG  38316 "side street" noun common rec 2 link 2
+2151 | theme road_types "road types"
+   SHORT 28439 "street" [road] noun common rec 3 link 1
+   LONG  38317 "one-way street" noun common rec 2 link 3
+2152 | theme road_types "road types"
+   SHORT 28439 "street" [road] noun common rec 3 link 1
+   LONG  38327 "cobbled street" noun common rec 2 link 3
+2153 | theme road_types "road types"
+   SHORT 38308 "lane" [road] noun common rec 1 link 1
+   LONG  38315 "country lane" noun common rec 2 link 2
+2154 | theme street_furniture "street furniture"
+   SHORT 38378 "sign" (full: street sign) noun common rec 1 link 2
+   LONG  38370 "road sign" noun common rec 1 link 2
+2155 | theme traffic_words "traffic words"
+   SHORT 38399 "junction" [road] noun common rec 2 link 2
+   LONG  60593 "box junction" noun common rec 4 link 5
+2156 | theme parts_of_a_road "parts of a road"
+   SHORT 38415 "lane" [traffic] noun common rec 1 link 1
+   LONG  2678 "bus lane" noun phrase rec 3 link 3
+2157 | theme parts_of_a_road "parts of a road"
+   SHORT 38415 "lane" [traffic] noun common rec 1 link 1
+   LONG  38437 "cycle lane" noun common rec 2 link 2
+2158 | theme parts_of_a_road "parts of a road"
+   SHORT 38415 "lane" [traffic] noun common rec 1 link 1
+   LONG  38438 "bike lane" noun common rec 1 link 2
+2159 | theme parts_of_a_road "parts of a road"
+   SHORT 38416 "shoulder" [road] noun common rec 2 link 3
+   LONG  38403 "hard shoulder" noun common rec 3 link 2
+2160 | theme parts_of_a_town "parts of a town"
+   SHORT 38467 "district" noun common rec 2 link 2
+   LONG  38463 "business district" noun common rec 3 link 3
+2161 | theme parts_of_a_town "parts of a town"
+   SHORT 38467 "district" noun common rec 2 link 2
+   LONG  38464 "financial district" noun common rec 3 link 3
+2162 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 27969 "town" [small city] noun common rec 1 link 1
+   LONG  31823 "ghost town" noun common rec 2 link 3
+2163 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 27969 "town" [small city] noun common rec 1 link 1
+   LONG  38495 "shanty town" noun common rec 3 link 3
+2164 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 27969 "town" [small city] noun common rec 1 link 1
+   LONG  38500 "market town" noun common rec 2 link 3
+2165 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 27969 "town" [small city] noun common rec 1 link 1
+   LONG  38501 "new town" noun common rec 3 link 4
+2166 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 27969 "town" [small city] noun common rec 1 link 1
+   LONG  38507 "company town" noun common rec 3 link 4
+2167 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 27969 "town" [small city] noun common rec 1 link 1
+   LONG  38509 "satellite town" noun common rec 4 link 5
+2168 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 38482 "city" [settlement] noun common rec 1 link 1
+   LONG  33449 "city-state" noun common rec 3 link 4
+2169 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 38482 "city" [settlement] noun common rec 1 link 1
+   LONG  38502 "garden city" noun common rec 4 link 5
+2170 | theme kinds_of_settlements "kinds of settlements" (note: hamlet, village, town, city, suburb, metropolis, borough)
+   SHORT 38482 "city" [settlement] noun common rec 1 link 1
+   LONG  38508 "tent city" noun common rec 3 link 4
+2171 | theme national_animals "national animals"
+   SHORT 984 "kangaroo" noun common rec 1 link 1
+   LONG  7899 "red kangaroo" noun common rec 2 link 3
+2172 | theme national_animals "national animals"
+   SHORT 1105 "condor" [bird] noun common rec 2 link 3
+   LONG  2561 "Andean condor" noun proper rec 4 link 3
+2173 | theme national_animals "national animals"
+   SHORT 6982 "dragon" [creature] noun common rec 1 link 2
+   LONG  1152 "Komodo dragon" noun proper rec 2 link 3
+2174 | theme national_animals "national animals"
+   SHORT 7926 "oryx" noun common rec 4 link 4
+   LONG  9640 "Arabian oryx" noun proper rec 4 link 4
+2175 | theme national_flowers "national flowers"
+   SHORT 1693 "rose" [flower] noun common rec 1 link 1
+   LONG  25165 "red rose" noun common rec 1 link 3
+2176 | theme national_flowers "national flowers"
+   SHORT 1728 "lotus" [flower] noun common rec 2 link 2
+   LONG  30407 "blue lotus" noun common rec 4 link 4
+2177 | theme national_sports "national sports"
+   SHORT 5191 "football" [soccer] noun common rec 1 link 5
+   LONG  5211 "Gaelic football" noun proper rec 3 link 2
+2178 | theme national_instruments "national instruments"
+   SHORT 10654 "fiddle" [violin] noun common rec 2 link 3
+   LONG  38532 "hardanger fiddle" noun common rec 5 link 4
+2179 | theme cars "cars"
+   SHORT 2575 "windshield" noun common rec 1 link 1
+   LONG  2588 "windshield wiper" noun common rec 2 link 3
+2180 | theme cars "cars"
+   SHORT 2585 "tire" [wheel] noun common rec 1 link 1
+   LONG  2628 "spare tire" noun common rec 2 link 3
+2181 | theme german_car_brands "german car brands"
+   SHORT 46562 "Mercedes" noun org rec 1 link 1
+   LONG  58959 "Mercedes-AMG" noun org rec 4 link 3
+2182 | theme british_car_brands "british car brands"
+   SHORT 60601 "Rover" [car] noun org rec 3 link 3
+   LONG  199 "Land Rover" noun org rec 2 link 2
+2183 | theme car_parts "car parts"
+   SHORT 2575 "windshield" noun common rec 1 link 1
+   LONG  2588 "windshield wiper" noun common rec 2 link 3
+2184 | theme car_parts "car parts"
+   SHORT 7387 "wheel" [part] noun common rec 1 link 1
+   LONG  2568 "steering wheel" [car] noun common rec 1 link 1
+2185 | theme car_parts "car parts"
+   SHORT 46598 "brake" [car] noun common rec 1 link 1
+   LONG  46619 "brake pad" noun common rec 3 link 3
+2186 | theme driving_words "driving words"
+   SHORT 46660 "park" [car] verb common rec 1 link 1
+   LONG  46676 "double park" verb common rec 3 link 4
+2187 | theme motor_racing "motor racing"
+   SHORT 46686 "lap" [race] noun common rec 1 link 2
+   LONG  46701 "formation lap" noun common rec 4 link 4
+2188 | theme motor_racing "motor racing"
+   SHORT 46694 "rally" [motor sport] noun common rec 2 link 3
+   LONG  44323 "Dakar Rally" noun proper rec 3 link 4
+2189 | theme motor_racing "motor racing"
+   SHORT 46694 "rally" [motor sport] noun common rec 2 link 3
+   LONG  46715 "tarmac rally" noun common rec 5 link 5
+2190 | theme motor_racing "motor racing"
+   SHORT 46712 "Grand Prix" [racing] noun proper rec 2 link 1
+   LONG  44315 "Monaco Grand Prix" noun proper rec 2 link 3
+2191 | theme gas_station "gas station"
+   SHORT 46757 "pump" [fuel] noun common rec 1 link 1
+   LONG  46771 "air pump" noun common rec 2 link 3
+2192 | theme gas_station "gas station"
+   SHORT 46757 "pump" [fuel] noun common rec 1 link 1
+   LONG  46774 "pay at the pump" verb common rec 3 link 3
+2193 | theme gas_station "gas station"
+   SHORT 63895 "tank" [fuel] noun common rec 2 link 4
+   LONG  46784 "underground tank" noun common rec 4 link 5
+2194 | theme parking_words "parking words"
+   SHORT 46794 "spot" (full: parking spot) noun common rec 1 link 2
+   LONG  46801 "handicap spot" noun common rec 3 link 3
+2195 | theme parking_words "parking words"
+   SHORT 46803 "permit" [parking] noun common rec 2 link 3
+   LONG  46829 "permit holders only" other common rec 4 link 5
+2196 | theme parking_words "parking words"
+   SHORT 46814 "bay" (full: bay parking) noun common rec 4 link 4
+   LONG  46823 "EV charging bay" noun common rec 4 link 4
+2197 | theme parking_words "parking words"
+   SHORT 63898 "ticket" [fine] noun common rec 1 link 2
+   LONG  40239 "ticket machine" noun common rec 2 link 3
+2198 | theme car_accessories "car accessories"
+   SHORT 46851 "cover" (full: car cover) noun common rec 2 link 3
+   LONG  46836 "seat cover" noun common rec 1 link 1
+2199 | theme car_accessories "car accessories"
+   SHORT 46851 "cover" (full: car cover) noun common rec 2 link 3
+   LONG  46847 "steering wheel cover" noun common rec 2 link 3
+2200 | theme car_accessories "car accessories"
+   SHORT 46851 "cover" (full: car cover) noun common rec 2 link 3
+   LONG  46863 "dashboard cover" noun common rec 3 link 4
+2201 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2655 "school bus" [yellow vehicle] noun common rec 1 link 1
+2202 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2656 "bus stop" noun common rec 1 link 1
+2203 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2657 "bus station" noun common rec 1 link 1
+2204 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2667 "bus pass" noun common rec 2 link 2
+2205 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2673 "night bus" noun phrase rec 3 link 3
+2206 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2678 "bus lane" noun phrase rec 3 link 3
+2207 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2691 "water bus" noun phrase rec 4 link 4
+2208 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2701 "bendy bus" noun common rec 3 link 3
+2209 | theme public_transportation "public transportation"
+   SHORT 2646 "bus" [public vehicle] noun common rec 1 link 1
+   LONG  2702 "articulated bus" noun common rec 4 link 4
+2210 | theme public_transportation "public transportation"
+   SHORT 2658 "fare" [transport] noun common rec 2 link 2
+   LONG  2697 "concession fare" noun phrase rec 4 link 4
+2211 | theme public_transportation "public transportation"
+   SHORT 2684 "rickshaw" noun common rec 3 link 4
+   LONG  2683 "auto rickshaw" noun common rec 4 link 4
+2212 | theme bus_types "bus types"
+   SHORT 2674 "coach" [bus] noun common rec 2 link 2
+   LONG  46903 "school coach" noun common rec 3 link 3
+2213 | theme bus_types "bus types"
+   SHORT 2676 "shuttle" [bus] noun common rec 2 link 2
+   LONG  46895 "airport shuttle" [shuttle bus] noun common rec 2 link 3
+2214 | theme bus_types "bus types"
+   SHORT 2676 "shuttle" [bus] noun common rec 2 link 2
+   LONG  46899 "campus shuttle" noun common rec 3 link 3
+2215 | theme bus_types "bus types"
+   SHORT 46894 "airport" (full: airport bus) noun common rec 2 link 3
+   LONG  46895 "airport shuttle" [shuttle bus] noun common rec 2 link 3
+2216 | theme bus_types "bus types"
+   SHORT 63906 "school" [yellow student transport] noun common rec 2 link 1
+   LONG  46903 "school coach" noun common rec 3 link 3
+2217 | theme on_a_bus "on a bus"
+   SHORT 2658 "fare" [transport] noun common rec 2 link 2
+   LONG  46920 "fare box" noun common rec 3 link 4
+2218 | theme on_a_bus "on a bus"
+   SHORT 46905 "seat" [bus] noun common rec 1 link 1
+   LONG  46915 "priority seat" noun common rec 3 link 3
+2219 | theme on_a_bus "on a bus"
+   SHORT 63908 "stop" [place to get off] noun common rec 1 link 1
+   LONG  46914 "stop request" noun common rec 3 link 3
+2220 | theme on_a_bus "on a bus"
+   SHORT 63908 "stop" [place to get off] noun common rec 1 link 1
+   LONG  46925 "stop cord" noun common rec 4 link 3
+2221 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  46946 "child fare" noun common rec 2 link 3
+2222 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  46947 "senior fare" noun common rec 3 link 3
+2223 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  46948 "peak fare" noun common rec 3 link 3
+2224 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  46953 "fare gate" noun common rec 3 link 3
+2225 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  46961 "fare evasion" noun common rec 4 link 4
+2226 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  46963 "penalty fare" noun common rec 4 link 4
+2227 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  46972 "flat fare" noun common rec 3 link 3
+2228 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  60621 "excess fare" noun common rec 4 link 5
+2229 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 2658 "fare" [transport] noun common rec 2 link 1
+   LONG  60626 "fare capping" noun common rec 5 link 5
+2230 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46935 "pass" [ticket] noun common rec 2 link 2
+   LONG  2719 "boarding pass" noun common rec 1 link 1
+2231 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46935 "pass" [ticket] noun common rec 2 link 2
+   LONG  46822 "monthly pass" noun common rec 3 link 2
+2232 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46935 "pass" [ticket] noun common rec 2 link 2
+   LONG  46943 "day pass" noun common rec 1 link 2
+2233 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46935 "pass" [ticket] noun common rec 2 link 2
+   LONG  46944 "weekly pass" noun common rec 2 link 2
+2234 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46940 "ticket" [transport] noun common rec 1 link 1
+   LONG  40239 "ticket machine" noun common rec 2 link 2
+2235 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46940 "ticket" [transport] noun common rec 1 link 1
+   LONG  46959 "e-ticket" noun common rec 2 link 2
+2236 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46940 "ticket" [transport] noun common rec 1 link 1
+   LONG  47830 "ticket collector" noun common rec 2 link 3
+2237 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46949 "off-peak" [off-peak fare] adjective common rec 3 link 3
+   LONG  60624 "super off-peak" noun common rec 4 link 5
+2238 | theme ticket_words "ticket words" (note: fare, pass, one-way, round-trip, stub, validate)
+   SHORT 46950 "transfer" [ticket] noun common rec 2 link 3
+   LONG  46973 "free transfer" noun common rec 4 link 4
+2239 | theme commuting_words "commuting words"
+   SHORT 2662 "commuter" [traveller] noun common rec 2 link 1
+   LONG  46942 "commuter pass" noun common rec 3 link 3
+2240 | theme commuting_words "commuting words"
+   SHORT 2931 "commute" verb common rec 1 link 1
+   LONG  47000 "bike commute" noun common rec 3 link 3
+2241 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 2684 "rickshaw" noun common rec 3 link 2
+   LONG  2683 "auto rickshaw" noun common rec 4 link 3
+2242 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40088 "taxi" noun common rec 1 link 1
+   LONG  47014 "water taxi" noun common rec 2 link 3
+2243 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40088 "taxi" noun common rec 1 link 1
+   LONG  47019 "shared taxi" noun common rec 3 link 3
+2244 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40088 "taxi" noun common rec 1 link 1
+   LONG  47020 "collective taxi" noun common rec 4 link 4
+2245 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40088 "taxi" noun common rec 1 link 1
+   LONG  47037 "camel taxi" noun common rec 4 link 5
+2246 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40088 "taxi" noun common rec 1 link 1
+   LONG  47038 "sidecar taxi" noun common rec 5 link 5
+2247 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40089 "cab" [yellow taxi] noun common rec 1 link 1
+   LONG  22973 "hansom cab" noun common rec 3 link 3
+2248 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40089 "cab" [yellow taxi] noun common rec 1 link 1
+   LONG  47008 "yellow cab" noun common rec 1 link 1
+2249 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40089 "cab" [yellow taxi] noun common rec 1 link 1
+   LONG  47009 "black cab" noun common rec 2 link 1
+2250 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40089 "cab" [yellow taxi] noun common rec 1 link 1
+   LONG  47031 "horse-drawn cab" noun common rec 3 link 4
+2251 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40089 "cab" [yellow taxi] noun common rec 1 link 1
+   LONG  47039 "gypsy cab" noun common rec 4 link 4
+2252 | theme taxis_of_the_world "taxis of the world" (note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi)
+   SHORT 40089 "cab" [yellow taxi] noun common rec 1 link 1
+   LONG  47040 "hailing a cab" verb common rec 3 link 4
+2253 | theme cable_cars_and_lifts "cable cars and lifts" (note: cable car, gondola, chairlift, funicular, T-bar, aerial tram)
+   SHORT 47041 "cable car" noun common rec 1 link 1
+   LONG  47062 "San Francisco cable car" noun proper rec 2 link 2
+2254 | theme cable_cars_and_lifts "cable cars and lifts" (note: cable car, gondola, chairlift, funicular, T-bar, aerial tram)
+   SHORT 47042 "gondola" [lift] noun common rec 2 link 1
+   LONG  47072 "ski gondola" noun common rec 3 link 2
+2255 | theme air_travel "air travel"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  2772 "bush plane" noun common rec 4 link 5
+2256 | theme air_travel "air travel"
+   SHORT 2711 "jet" [plane] noun common rec 1 link 1
+   LONG  2035 "jet stream" noun common rec 3 link 5
+2257 | theme air_travel "air travel"
+   SHORT 2711 "jet" [plane] noun common rec 1 link 1
+   LONG  2720 "jet lag" noun common rec 2 link 2
+2258 | theme air_travel "air travel"
+   SHORT 2711 "jet" [plane] noun common rec 1 link 1
+   LONG  2735 "jumbo jet" noun common rec 2 link 2
+2259 | theme air_travel "air travel"
+   SHORT 2711 "jet" [plane] noun common rec 1 link 1
+   LONG  2739 "jet engine" noun common rec 2 link 3
+2260 | theme air_travel "air travel"
+   SHORT 2711 "jet" [plane] noun common rec 1 link 1
+   LONG  2776 "jet bridge" noun common rec 4 link 4
+2261 | theme air_travel "air travel"
+   SHORT 2741 "flight" [air travel] noun common rec 1 link 1
+   LONG  2723 "flight attendant" noun common rec 1 link 1
+2262 | theme air_travel "air travel"
+   SHORT 2741 "flight" [air travel] noun common rec 1 link 1
+   LONG  2759 "charter flight" noun common rec 3 link 3
+2263 | theme aircraft_types "aircraft types"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  47077 "propeller plane" noun common rec 2 link 2
+2264 | theme aircraft_types "aircraft types"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  47078 "prop plane" noun common rec 3 link 2
+2265 | theme aircraft_types "aircraft types"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  47080 "cargo plane" noun common rec 2 link 2
+2266 | theme aircraft_types "aircraft types"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  47097 "reconnaissance plane" noun common rec 4 link 4
+2267 | theme aircraft_types "aircraft types"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  47098 "spy plane" noun common rec 2 link 3
+2268 | theme aircraft_types "aircraft types"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  47099 "transport plane" noun common rec 3 link 3
+2269 | theme aircraft_types "aircraft types"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  65659 "light plane" [small aeroplane] noun common rec 3 link 2
+2270 | theme aircraft_types "aircraft types"
+   SHORT 2736 "glider" [aircraft] noun common rec 2 link 2
+   LONG  39772 "hang glider" noun common rec 2 link 3
+2271 | theme aircraft_types "aircraft types"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  2735 "jumbo jet" noun common rec 2 link 2
+2272 | theme aircraft_types "aircraft types"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  34601 "fighter jet" noun common rec 1 link 1
+2273 | theme aircraft_types "aircraft types"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  47081 "private jet" noun common rec 1 link 2
+2274 | theme aircraft_types "aircraft types"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  47082 "business jet" noun common rec 2 link 3
+2275 | theme aircraft_types "aircraft types"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  47092 "supersonic jet" noun common rec 2 link 3
+2276 | theme aircraft_types "aircraft types"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  47100 "regional jet" noun common rec 3 link 3
+2277 | theme aircraft_types "aircraft types"
+   SHORT 34602 "bomber" [aircraft] noun common rec 2 link 2
+   LONG  30288 "water bomber" noun common rec 3 link 4
+2278 | theme aircraft_types "aircraft types"
+   SHORT 34602 "bomber" [aircraft] noun common rec 2 link 2
+   LONG  34608 "stealth bomber" noun common rec 2 link 3
+2279 | theme plane_parts "plane parts"
+   SHORT 7400 "turbine" noun common rec 2 link 3
+   LONG  47137 "ram air turbine" noun common rec 5 link 5
+2280 | theme plane_parts "plane parts"
+   SHORT 47111 "tail" [aircraft] noun common rec 1 link 1
+   LONG  47133 "tail rotor" noun common rec 4 link 4
+2281 | theme airport_words "airport words"
+   SHORT 47146 "boarding" [flight] noun common rec 1 link 1
+   LONG  2719 "boarding pass" noun common rec 1 link 1
+2282 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  33243 "bush pilot" noun common rec 4 link 4
+2283 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47165 "co-pilot" noun common rec 2 link 1
+2284 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47180 "test pilot" noun common rec 3 link 3
+2285 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47181 "fighter pilot" noun common rec 2 link 3
+2286 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47182 "crop duster pilot" noun common rec 5 link 4
+2287 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47183 "stunt pilot" noun common rec 3 link 4
+2288 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47184 "helicopter pilot" noun common rec 2 link 3
+2289 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47185 "chief pilot" noun common rec 4 link 4
+2290 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47191 "airline pilot" noun common rec 2 link 2
+2291 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47192 "commercial pilot" noun common rec 3 link 3
+2292 | theme flight_crew "flight crew"
+   SHORT 2714 "pilot" [aircraft] noun common rec 1 link 1
+   LONG  47193 "trainee pilot" noun common rec 3 link 4
+2293 | theme flight_crew "flight crew"
+   SHORT 47169 "engineer" (full: flight engineer) noun common rec 3 link 3
+   LONG  47173 "aircraft engineer" noun common rec 3 link 3
+2294 | theme flying_machines "flying machines"
+   SHORT 2709 "plane" [aircraft] noun common rec 1 link 1
+   LONG  47261 "rocket plane" noun common rec 4 link 4
+2295 | theme flying_machines "flying machines"
+   SHORT 2736 "glider" [aircraft] noun common rec 2 link 2
+   LONG  39772 "hang glider" noun common rec 2 link 3
+2296 | theme flying_machines "flying machines"
+   SHORT 7119 "rocket" [spacecraft] noun common rec 1 link 3
+   LONG  47261 "rocket plane" noun common rec 4 link 4
+2297 | theme flying_machines "flying machines"
+   SHORT 34600 "jet" [aircraft] noun common rec 1 link 1
+   LONG  47262 "jump jet" noun common rec 4 link 4
+2298 | theme flying_machines "flying machines"
+   SHORT 47250 "balloon" [aircraft] noun common rec 1 link 2
+   LONG  39769 "hot air balloon" noun common rec 1 link 1
+2299 | theme flying_machines "flying machines"
+   SHORT 47250 "balloon" [aircraft] noun common rec 1 link 2
+   LONG  47259 "gas balloon" noun common rec 4 link 4
+2300 | theme hot_air_balloon_parts "hot air balloon parts"
+   SHORT 28438 "burner" [stove ring] noun common rec 3 link 1
+   LONG  47408 "burner frame" noun common rec 5 link 5
+2301 | theme hot_air_balloon_parts "hot air balloon parts"
+   SHORT 47392 "basket" [balloon] noun common rec 1 link 1
+   LONG  47409 "basket skids" noun common rec 5 link 5
+2302 | theme hot_air_balloon_parts "hot air balloon parts"
+   SHORT 50482 "mouth" [balloon] noun common rec 3 link 4
+   LONG  47422 "mouth ring" noun common rec 5 link 5
+2303 | theme boats_and_ships "boats and ships"
+   SHORT 2779 "boat" [vessel] noun common rec 1 link 1
+   LONG  2839 "jolly boat" noun common rec 5 link 5
+2304 | theme boats_and_ships "boats and ships"
+   SHORT 2788 "steamer" [ship] noun common rec 3 link 3
+   LONG  2838 "paddle steamer" noun phrase rec 3 link 3
+2305 | theme small_boats "small boats" (note: canoe, kayak, dinghy, rowboat, punt, raft, skiff)
+   SHORT 2792 "dinghy" noun common rec 2 link 1
+   LONG  59134 "rubber dinghy" noun common rec 2 link 2
+2306 | theme working_boats "working boats" (note: tugboat, trawler, barge, tanker, icebreaker, dredger)
+   SHORT 2654 "ferry" noun common rec 1 link 2
+   LONG  59162 "ro-ro ferry" noun common rec 4 link 4
+2307 | theme working_boats "working boats" (note: tugboat, trawler, barge, tanker, icebreaker, dredger)
+   SHORT 2809 "freighter" [cargo ship] noun common rec 3 link 2
+   LONG  59163 "coastal freighter" noun common rec 4 link 4
+2308 | theme pleasure_boats "pleasure boats"
+   SHORT 2780 "yacht" [boat] noun common rec 1 link 1
+   LONG  59177 "motor yacht" noun common rec 2 link 1
+2309 | theme pleasure_boats "pleasure boats"
+   SHORT 2780 "yacht" [boat] noun common rec 1 link 1
+   LONG  59180 "sailing yacht" noun common rec 2 link 2
+2310 | theme ship_parts "ship parts"
+   SHORT 34583 "deck" [ship] noun common rec 1 link 1
+   LONG  47440 "poop deck" noun common rec 3 link 3
+2311 | theme ports_and_harbors "ports and harbors" (note: parts of a harbor: dock, pier, quay, wharf, jetty, marina, berth)
+   SHORT 2804 "harbor" [port] noun common rec 1 link 1
+   LONG  47519 "inner harbor" noun common rec 3 link 4
+2312 | theme ports_and_harbors "ports and harbors" (note: parts of a harbor: dock, pier, quay, wharf, jetty, marina, berth)
+   SHORT 29361 "dock" [harbor] noun common rec 1 link 1
+   LONG  47501 "dry dock" noun common rec 3 link 3
+2313 | theme ports_and_harbors "ports and harbors" (note: parts of a harbor: dock, pier, quay, wharf, jetty, marina, berth)
+   SHORT 29361 "dock" [harbor] noun common rec 1 link 1
+   LONG  47510 "floating dock" noun common rec 3 link 4
+2314 | theme ports_and_harbors "ports and harbors" (note: parts of a harbor: dock, pier, quay, wharf, jetty, marina, berth)
+   SHORT 29361 "dock" [harbor] noun common rec 1 link 1
+   LONG  47516 "fuel dock" noun common rec 3 link 4
+2315 | theme knots "knots" (note: knots you tie: bowline, reef knot, clove hitch, sheepshank)
+   SHORT 47468 "bowline" noun common rec 4 link 2
+   LONG  47580 "running bowline" noun common rec 5 link 5
+2316 | theme nautical_directions "nautical directions" (note: port, starboard, bow, stern, aft, leeward, windward)
+   SHORT 37955 "aft" adverb common rec 4 link 2
+   LONG  47608 "fore and aft" adverb common rec 3 link 3
+2317 | theme nautical_directions "nautical directions" (note: port, starboard, bow, stern, aft, leeward, windward)
+   SHORT 47602 "fore" [ship front] adverb common rec 3 link 2
+   LONG  47608 "fore and aft" adverb common rec 3 link 3
+2318 | theme nautical_directions "nautical directions" (note: port, starboard, bow, stern, aft, leeward, windward)
+   SHORT 47604 "ahead" [ship direction] adverb common rec 2 link 3
+   LONG  47609 "dead ahead" adverb common rec 3 link 3
+2319 | theme nautical_directions "nautical directions" (note: port, starboard, bow, stern, aft, leeward, windward)
+   SHORT 47612 "lee" [shelter] noun common rec 4 link 4
+   LONG  47619 "hard a-lee" other common rec 5 link 5
+2320 | theme nautical_directions "nautical directions" (note: port, starboard, bow, stern, aft, leeward, windward)
+   SHORT 48893 "stern" [ship back] noun common rec 3 link 1
+   LONG  47620 "stem to stern" adverb common rec 4 link 5
+2321 | theme ship_crew "ship crew" (note: captain, first mate, bosun, deckhand, purser, helmsman)
+   SHORT 4381 "seaman" noun common rec 3 link 1
+   LONG  47634 "able seaman" noun common rec 4 link 4
+2322 | theme ship_crew "ship crew" (note: captain, first mate, bosun, deckhand, purser, helmsman)
+   SHORT 4381 "seaman" noun common rec 3 link 1
+   LONG  47635 "ordinary seaman" noun common rec 4 link 4
+2323 | theme ship_crew "ship crew" (note: captain, first mate, bosun, deckhand, purser, helmsman)
+   SHORT 47628 "mate" [ship] noun common rec 2 link 2
+   LONG  21275 "first mate" [ship] noun common rec 2 link 1
+2324 | theme ship_crew "ship crew" (note: captain, first mate, bosun, deckhand, purser, helmsman)
+   SHORT 47628 "mate" [ship] noun common rec 2 link 2
+   LONG  21279 "boatswain mate" noun common rec 4 link 4
+2325 | theme ship_crew "ship crew" (note: captain, first mate, bosun, deckhand, purser, helmsman)
+   SHORT 50475 "engineer" [ship] noun common rec 1 link 3
+   LONG  47631 "chief engineer" noun common rec 3 link 3
+2326 | theme submarine_words "submarine words"
+   SHORT 21036 "sonar" noun common rec 2 link 2
+   LONG  47655 "sonar operator" noun common rec 4 link 4
+2327 | theme submarine_words "submarine words"
+   SHORT 34587 "torpedo" [weapon] noun common rec 2 link 1
+   LONG  47644 "torpedo tube" noun common rec 3 link 3
+2328 | theme trains "trains"
+   SHORT 2850 "locomotive" noun common rec 2 link 1
+   LONG  2854 "steam locomotive" noun common rec 2 link 1
+2329 | theme trains "trains"
+   SHORT 2851 "engine" [locomotive] noun common rec 1 link 1
+   LONG  2853 "steam engine" noun common rec 1 link 1
+2330 | theme trains "trains"
+   SHORT 2851 "engine" [locomotive] noun common rec 1 link 1
+   LONG  2895 "tank engine" noun common rec 3 link 3
+2331 | theme trains "trains"
+   SHORT 2856 "railroad" noun common rec 1 link 1
+   LONG  2879 "railroad crossing" noun common rec 2 link 3
+2332 | theme trains "trains"
+   SHORT 2856 "railroad" noun common rec 1 link 1
+   LONG  2908 "model railroad" noun common rec 3 link 3
+2333 | theme trains "trains"
+   SHORT 2864 "ticket" [train] noun common rec 1 link 2
+   LONG  2892 "ticket inspector" noun common rec 2 link 2
+2334 | theme trains "trains"
+   SHORT 2875 "whistle" [train] noun common rec 1 link 2
+   LONG  2910 "steam whistle" noun common rec 3 link 3
+2335 | theme trains "trains"
+   SHORT 2876 "signal" [railway] noun common rec 2 link 2
+   LONG  2905 "signal box" noun common rec 4 link 4
+2336 | theme trains "trains"
+   SHORT 28656 "freight" noun common rec 2 link 2
+   LONG  2873 "freight car" noun common rec 3 link 3
+2337 | theme parts_of_a_train "parts of a train"
+   SHORT 47689 "cab" [train] noun common rec 2 link 2
+   LONG  47688 "driver's cab" noun common rec 3 link 3
+2338 | theme railway_words "railway words"
+   SHORT 2858 "track" [railway] noun common rec 1 link 1
+   LONG  47714 "track bed" noun common rec 5 link 5
+2339 | theme railway_words "railway words"
+   SHORT 47715 "line" (full: railway line) noun common rec 1 link 1
+   LONG  2896 "branch line" noun common rec 4 link 4
+2340 | theme railway_words "railway words"
+   SHORT 47715 "line" (full: railway line) noun common rec 1 link 1
+   LONG  47702 "main line" noun common rec 3 link 3
+2341 | theme station_words "station words"
+   SHORT 2857 "platform" [station] noun common rec 1 link 1
+   LONG  47726 "bay platform" noun common rec 5 link 5
+2342 | theme station_words "station words"
+   SHORT 2857 "platform" [station] noun common rec 1 link 1
+   LONG  47727 "platform edge" noun common rec 3 link 3
+2343 | theme famous_train_stations "famous train stations" (note: Grand Central, King's Cross, Gare du Nord, Haydarpasa, Shinjuku)
+   SHORT 47803 "Victoria" [station] noun place rec 3 link 3
+   LONG  47823 "Victoria Terminus" noun place rec 5 link 5
+2344 | theme railroad_jobs "railroad jobs" (note: conductor, engineer, porter, signalman, stoker, brakeman)
+   SHORT 47831 "porter" [railway] noun common rec 2 link 2
+   LONG  47835 "Pullman porter" noun title rec 4 link 3
+2345 | theme bike_types "bike types"
+   SHORT 47889 "cruiser" [bike] noun common rec 3 link 3
+   LONG  47901 "beach cruiser" noun common rec 4 link 4
+2346 | theme skateboard_tricks "skateboard tricks"
+   SHORT 43634 "ollie" [skate trick] noun common rec 3 link 1
+   LONG  48044 "ollie north" noun common rec 5 link 5
+2347 | theme skateboard_tricks "skateboard tricks"
+   SHORT 43636 "fakie" noun common rec 3 link 3
+   LONG  48045 "rock to fakie" noun common rec 5 link 4
+2348 | theme skateboard_tricks "skateboard tricks"
+   SHORT 48021 "shove-it" noun common rec 3 link 2
+   LONG  48022 "pop shove-it" noun common rec 3 link 2
+2349 | theme skateboard_tricks "skateboard tricks"
+   SHORT 60675 "air" [skateboard trick] noun common rec 2 link 2
+   LONG  43649 "method air" noun common rec 4 link 4
+2350 | theme tricks_where_the_board_spins "tricks where the board spins"
+   SHORT 48021 "shove-it" noun common rec 3 link 2
+   LONG  48022 "pop shove-it" noun common rec 3 link 2
+2351 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 5954 "scooter" noun common rec 1 link 1
+   LONG  7370 "e-scooter" noun common rec 3 link 3
+2352 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 5954 "scooter" noun common rec 1 link 1
+   LONG  48055 "kick scooter" noun common rec 2 link 2
+2353 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 5954 "scooter" noun common rec 1 link 1
+   LONG  48056 "stunt scooter" noun common rec 3 link 3
+2354 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 5954 "scooter" noun common rec 1 link 1
+   LONG  48058 "mobility scooter" noun common rec 3 link 5
+2355 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 43557 "skates" noun common rec 1 link 1
+   LONG  48054 "roller skates" noun common rec 1 link 1
+2356 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 43557 "skates" noun common rec 1 link 1
+   LONG  48057 "speed skates" noun common rec 3 link 3
+2357 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 43578 "skateboard" [skating] noun common rec 1 link 1
+   LONG  48061 "electric skateboard" noun common rec 4 link 3
+2358 | theme scooters_and_skates "scooters and skates" (note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle)
+   SHORT 63346 "electric" [powered] noun common rec 1 link 3
+   LONG  48061 "electric skateboard" noun common rec 4 link 3
+2359 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48092 "mini ramp" noun common rec 3 link 2
+2360 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48096 "bank ramp" noun common rec 4 link 3
+2361 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48098 "launch ramp" noun common rec 4 link 3
+2362 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48099 "vert ramp" noun common rec 4 link 2
+2363 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48104 "spine ramp" noun common rec 5 link 4
+2364 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48105 "hip ramp" noun common rec 5 link 4
+2365 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48112 "wedge ramp" noun common rec 5 link 4
+2366 | theme skate_park_features "skate park features"
+   SHORT 48089 "ramp" [skate park] noun common rec 1 link 1
+   LONG  48117 "pyramid ramp" noun common rec 5 link 4
+2367 | theme skate_park_features "skate park features"
+   SHORT 48091 "bowl" (full: skate bowl) noun common rec 3 link 2
+   LONG  60683 "mini bowl" noun common rec 3 link 3
+2368 | theme skate_park_features "skate park features"
+   SHORT 60680 "ledge" [skate park] noun common rec 2 link 2
+   LONG  48095 "grind ledge" noun common rec 4 link 3
+2369 | theme skate_park_features "skate park features"
+   SHORT 60680 "ledge" [skate park] noun common rec 2 link 2
+   LONG  48113 "hubba ledge" noun common rec 5 link 5
+2370 | theme skate_park_features "skate park features"
+   SHORT 60682 "rail" [skate park] noun common rec 2 link 2
+   LONG  48090 "grind rail" noun common rec 3 link 2
+2371 | theme skate_park_features "skate park features"
+   SHORT 60682 "rail" [skate park] noun common rec 2 link 2
+   LONG  48114 "down rail" noun common rec 5 link 4
+2372 | theme skateboard_parts "skateboard parts"
+   SHORT 48118 "deck" [skateboard] noun common rec 2 link 1
+   LONG  48143 "maple deck" noun common rec 4 link 3
+2373 | theme skateboard_parts "skateboard parts"
+   SHORT 48123 "tail" [skateboard] noun common rec 2 link 3
+   LONG  48130 "tail guard" noun common rec 5 link 5
+2374 | theme skateboard_parts "skateboard parts"
+   SHORT 48123 "tail" [skateboard] noun common rec 2 link 3
+   LONG  48139 "tail skid" noun common rec 5 link 5
+2375 | theme skateboard_parts "skateboard parts"
+   SHORT 60685 "nose" [skateboard] noun common rec 2 link 3
+   LONG  48129 "nose guard" noun common rec 5 link 5
+2376 | theme journeys "journeys" (note: words for a trip: voyage, trek, tour, excursion, expedition, outing, odyssey)
+   SHORT 2921 "tour" verb common rec 1 link 1
+   LONG  2946 "grand tour" noun common rec 3 link 4

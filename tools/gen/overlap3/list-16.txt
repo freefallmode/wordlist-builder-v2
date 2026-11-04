@@ -1,0 +1,891 @@
+4456 | theme music_players "music players"
+   SHORT 4578 "radio" noun common rec 1 link 2
+   LONG  7366 "transistor radio" noun common rec 3 link 3
+4457 | theme music_players "music players"
+   SHORT 4578 "radio" noun common rec 1 link 2
+   LONG  11330 "clock radio" noun common rec 2 link 4
+4458 | theme music_players "music players"
+   SHORT 11315 "stereo" [music] noun common rec 1 link 2
+   LONG  11327 "car stereo" noun common rec 2 link 3
+4459 | theme rock_band_lineup "rock band lineup"
+   SHORT 6078 "trio" noun common rec 2 link 4
+   LONG  11348 "power trio" noun common rec 4 link 4
+4460 | theme rock_band_lineup "rock band lineup"
+   SHORT 6131 "singer" noun common rec 1 link 1
+   LONG  6191 "backup singer" noun phrase rec 3 link 3
+4461 | theme rock_band_lineup "rock band lineup"
+   SHORT 6131 "singer" noun common rec 1 link 1
+   LONG  6193 "lead singer" noun common rec 2 link 1
+4462 | theme rock_band_lineup "rock band lineup"
+   SHORT 6131 "singer" noun common rec 1 link 1
+   LONG  11343 "singer-songwriter" noun common rec 3 link 4
+4463 | theme rock_band_lineup "rock band lineup"
+   SHORT 6132 "vocalist" noun common rec 2 link 2
+   LONG  11337 "backing vocalist" noun common rec 2 link 3
+4464 | theme rock_band_lineup "rock band lineup"
+   SHORT 6134 "guitarist" noun common rec 1 link 1
+   LONG  11333 "lead guitarist" noun common rec 1 link 1
+4465 | theme rock_band_lineup "rock band lineup"
+   SHORT 6134 "guitarist" noun common rec 1 link 1
+   LONG  11334 "rhythm guitarist" noun common rec 2 link 2
+4466 | theme rock_band_lineup "rock band lineup"
+   SHORT 6134 "guitarist" noun common rec 1 link 1
+   LONG  11353 "bass guitarist" noun common rec 2 link 2
+4467 | theme rock_band_lineup "rock band lineup"
+   SHORT 11338 "manager" (full: band manager) noun common rec 3 link 4
+   LONG  11339 "tour manager" noun common rec 3 link 4
+4468 | theme rock_band_lineup "rock band lineup"
+   SHORT 11338 "manager" (full: band manager) noun common rec 3 link 4
+   LONG  11345 "stage manager" noun common rec 3 link 5
+4469 | theme rock_band_lineup "rock band lineup"
+   SHORT 11354 "vocals" noun common rec 2 link 2
+   LONG  11355 "lead vocals" noun common rec 2 link 2
+4470 | theme musicians "musicians"
+   SHORT 6131 "singer" noun common rec 1 link 1
+   LONG  6191 "backup singer" noun phrase rec 3 link 3
+4471 | theme musicians "musicians"
+   SHORT 6131 "singer" noun common rec 1 link 1
+   LONG  6193 "lead singer" noun common rec 2 link 2
+4472 | theme voice_performers "voice performers"
+   SHORT 6131 "singer" noun common rec 1 link 1
+   LONG  6191 "backup singer" noun phrase rec 3 link 3
+4473 | theme voice_performers "voice performers"
+   SHORT 6131 "singer" noun common rec 1 link 1
+   LONG  6193 "lead singer" noun common rec 2 link 2
+4474 | theme dance "dance"
+   SHORT 6205 "ballet" noun common rec 1 link 1
+   LONG  6226 "ballet shoes" noun phrase rec 2 link 3
+4475 | theme ballet_terms "ballet terms"
+   SHORT 6206 "ballerina" noun common rec 1 link 1
+   LONG  11755 "prima ballerina" noun common rec 2 link 2
+4476 | theme ballet_terms "ballet terms"
+   SHORT 11753 "pointe" noun common rec 3 link 2
+   LONG  6227 "pointe shoes" noun phrase rec 3 link 2
+4477 | theme ballet_terms "ballet terms"
+   SHORT 11773 "danseur" noun common rec 4 link 4
+   LONG  11774 "premier danseur" noun common rec 4 link 4
+4478 | theme ballroom_dances "ballroom dances"
+   SHORT 6208 "waltz" noun common rec 1 link 1
+   LONG  11776 "Viennese waltz" noun common rec 3 link 2
+4479 | theme ballroom_dances "ballroom dances"
+   SHORT 6208 "waltz" noun common rec 1 link 1
+   LONG  11785 "slow waltz" noun common rec 4 link 3
+4480 | theme ballroom_dances "ballroom dances"
+   SHORT 6209 "tango" noun common rec 1 link 1
+   LONG  11778 "American tango" noun common rec 5 link 5
+4481 | theme ballroom_dances "ballroom dances"
+   SHORT 6209 "tango" noun common rec 1 link 1
+   LONG  11780 "argentine tango" noun common rec 4 link 3
+4482 | theme ballroom_dances "ballroom dances"
+   SHORT 6258 "foxtrot" noun common rec 2 link 1
+   LONG  11784 "smooth foxtrot" noun common rec 5 link 5
+4483 | theme ballroom_dances "ballroom dances"
+   SHORT 11777 "swing" [dance] noun common rec 2 link 2
+   LONG  11779 "east coast swing" noun common rec 5 link 5
+4484 | theme folk_dances "folk dances"
+   SHORT 11742 "jig" [dance] noun common rec 2 link 2
+   LONG  11801 "Irish jig" noun common rec 3 link 2
+4485 | theme polynesian_dances "polynesian dances"
+   SHORT 6243 "hula" noun common rec 2 link 1
+   LONG  52079 "hula kahiko" noun common rec 5 link 3
+4486 | theme polynesian_dances "polynesian dances"
+   SHORT 6243 "hula" noun common rec 2 link 1
+   LONG  52080 "hula auana" noun common rec 5 link 3
+4487 | theme polynesian_dances "polynesian dances"
+   SHORT 11804 "haka" noun common rec 2 link 1
+   LONG  35442 "kapa haka" noun common rec 4 link 2
+4488 | theme polynesian_dances "polynesian dances"
+   SHORT 52067 "siva" [Samoan dance] noun common rec 4 link 2
+   LONG  62852 "siva afi" noun common rec 5 link 2
+4489 | theme north_american_folk_dances "north american folk dances"
+   SHORT 11751 "reel" [dance] noun common rec 3 link 3
+   LONG  52097 "Virginia reel" noun common rec 3 link 2
+4490 | theme dance_moves "dance moves"
+   SHORT 11825 "shuffle" [dance move] noun common rec 2 link 3
+   LONG  11842 "shuffle ball change" noun common rec 4 link 4
+4491 | theme street_dance_styles "street dance styles"
+   SHORT 11855 "hip hop" [dance] noun common rec 1 link 1
+   LONG  11870 "lyrical hip hop" noun common rec 5 link 4
+4492 | theme art "art"
+   SHORT 5855 "painting" noun common rec 1 link 1
+   LONG  6298 "oil painting" noun phrase rec 1 link 2
+4493 | theme art "art"
+   SHORT 6291 "portrait" [artwork] noun common rec 1 link 2
+   LONG  6344 "self-portrait" noun common rec 2 link 3
+4494 | theme painting_words "painting words"
+   SHORT 6287 "canvas" [painting surface] noun common rec 1 link 1
+   LONG  11927 "oil on canvas" noun common rec 3 link 2
+4495 | theme painting_words "painting words"
+   SHORT 6290 "palette" [art] noun common rec 2 link 2
+   LONG  11921 "palette knife" noun common rec 3 link 3
+4496 | theme art_movements "art movements"
+   SHORT 6319 "Impressionism" noun proper rec 3 link 1
+   LONG  11985 "post-impressionism" noun common rec 4 link 3
+4497 | theme art_movements "art movements"
+   SHORT 11977 "expressionism" noun common rec 3 link 2
+   LONG  12001 "neo-expressionism" noun common rec 5 link 5
+4498 | theme art_materials "art materials"
+   SHORT 6300 "pastel" [art] noun common rec 2 link 2
+   LONG  12013 "oil pastel" noun common rec 3 link 3
+4499 | theme art_materials "art materials"
+   SHORT 6300 "pastel" [art] noun common rec 2 link 2
+   LONG  12036 "pastel paper" noun common rec 4 link 4
+4500 | theme art_materials "art materials"
+   SHORT 12007 "pencil" [writing tool] noun common rec 1 link 1
+   LONG  12023 "colored pencil" noun common rec 1 link 2
+4501 | theme art_materials "art materials"
+   SHORT 12009 "crayon" noun common rec 1 link 1
+   LONG  12027 "conte crayon" noun common rec 5 link 5
+4502 | theme art_materials "art materials"
+   SHORT 12010 "clay" [modeling] noun common rec 1 link 2
+   LONG  12020 "modeling clay" noun common rec 2 link 3
+4503 | theme art_materials "art materials"
+   SHORT 12011 "paper" [sheet] noun common rec 1 link 2
+   LONG  12036 "pastel paper" noun common rec 4 link 4
+4504 | theme art_materials "art materials"
+   SHORT 12014 "ink" [writing fluid] noun common rec 1 link 2
+   LONG  12028 "india ink" noun common rec 4 link 4
+4505 | theme sculpture_words "sculpture words"
+   SHORT 6338 "statue" noun common rec 1 link 1
+   LONG  12059 "equestrian statue" noun common rec 4 link 4
+4506 | theme sculpture_words "sculpture words"
+   SHORT 12040 "relief" [sculpture] noun common rec 3 link 3
+   LONG  12041 "bas-relief" noun common rec 4 link 4
+4507 | theme sculpture_words "sculpture words"
+   SHORT 12043 "casting" [sculpture] noun common rec 3 link 3
+   LONG  12055 "lost-wax casting" noun common rec 5 link 5
+4508 | theme photography_words "photography words"
+   SHORT 12060 "camera" noun common rec 1 link 1
+   LONG  49491 "instant camera" noun common rec 1 link 3
+4509 | theme photography_words "photography words"
+   SHORT 12061 "lens" [camera] noun common rec 1 link 1
+   LONG  12088 "lens cap" noun common rec 2 link 3
+4510 | theme photography_words "photography words"
+   SHORT 12064 "shutter" [camera] noun common rec 2 link 1
+   LONG  12080 "shutter speed" noun common rec 3 link 2
+4511 | theme photography_words "photography words"
+   SHORT 12064 "shutter" [camera] noun common rec 2 link 1
+   LONG  12101 "shutter release" noun common rec 4 link 4
+4512 | theme photography_words "photography words"
+   SHORT 12068 "exposure" [camera] noun common rec 2 link 3
+   LONG  12085 "long exposure" noun common rec 4 link 4
+4513 | theme camera_parts "camera parts"
+   SHORT 12061 "lens" [camera] noun common rec 1 link 1
+   LONG  12088 "lens cap" noun common rec 2 link 3
+4514 | theme camera_parts "camera parts"
+   SHORT 12061 "lens" [camera] noun common rec 1 link 1
+   LONG  52279 "lens hood" noun common rec 3 link 3
+4515 | theme camera_parts "camera parts"
+   SHORT 12064 "shutter" [camera] noun common rec 2 link 1
+   LONG  52267 "shutter button" noun common rec 2 link 1
+4516 | theme camera_parts "camera parts"
+   SHORT 12064 "shutter" [camera] noun common rec 2 link 1
+   LONG  61897 "leaf shutter" noun common rec 5 link 5
+4517 | theme camera_parts "camera parts"
+   SHORT 12064 "shutter" [camera] noun common rec 2 link 1
+   LONG  61900 "shutter curtain" noun common rec 5 link 5
+4518 | theme camera_parts "camera parts"
+   SHORT 52270 "battery" [camera] noun common rec 1 link 3
+   LONG  52283 "battery grip" noun common rec 4 link 5
+4519 | theme camera_parts "camera parts"
+   SHORT 52276 "film" [camera] noun common rec 1 link 2
+   LONG  52277 "film advance lever" noun common rec 5 link 5
+4520 | theme camera_parts "camera parts"
+   SHORT 52276 "film" [camera] noun common rec 1 link 2
+   LONG  61896 "film gate" noun common rec 5 link 5
+4521 | theme camera_parts "camera parts"
+   SHORT 52276 "film" [camera] noun common rec 1 link 2
+   LONG  61901 "film spool" noun common rec 4 link 5
+4522 | theme art_gallery_words "art gallery words"
+   SHORT 6301 "gallery" [art] noun common rec 1 link 1
+   LONG  12158 "portrait gallery" noun common rec 3 link 4
+4523 | theme art_gallery_words "art gallery words"
+   SHORT 6302 "exhibition" noun common rec 1 link 1
+   LONG  12150 "touring exhibition" noun common rec 4 link 4
+4524 | theme art_gallery_words "art gallery words"
+   SHORT 12136 "collection" [art] noun common rec 2 link 2
+   LONG  12149 "permanent collection" noun common rec 4 link 3
+4525 | theme color_theory_words "color theory words"
+   SHORT 12174 "complementary" (full: complementary colors) noun common rec 3 link 2
+   LONG  12192 "split complementary" noun common rec 5 link 5
+4526 | theme drawing_techniques "drawing techniques"
+   SHORT 6331 "perspective" [art] noun common rec 3 link 3
+   LONG  12213 "one-point perspective" noun common rec 4 link 4
+4527 | theme drawing_techniques "drawing techniques"
+   SHORT 12205 "hatching" noun common rec 3 link 2
+   LONG  12206 "cross-hatching" noun common rec 3 link 2
+4528 | theme drawing_techniques "drawing techniques"
+   SHORT 12211 "contour" (full: contour drawing) noun common rec 4 link 4
+   LONG  12226 "blind contour" noun common rec 5 link 5
+4529 | theme drawing_techniques "drawing techniques"
+   SHORT 12220 "life" (full: life drawing) noun common rec 3 link 3
+   LONG  12222 "still life" (full: still life drawing) noun common rec 4 link 4
+4530 | theme islamic_art_words "islamic art words"
+   SHORT 5867 "calligraphy" noun common rec 2 link 1
+   LONG  52298 "Quran calligraphy" noun common rec 4 link 3
+4531 | theme turkish_arts "turkish arts" (note: ebru, cini, hat, tezhip, minyatur, kilim, Iznik tiles)
+   SHORT 12382 "Karagoz" noun proper rec 5 link 4
+   LONG  22690 "Karagoz and Hacivat" noun proper rec 5 link 4
+4532 | theme turkish_arts "turkish arts" (note: ebru, cini, hat, tezhip, minyatur, kilim, Iznik tiles)
+   SHORT 52310 "carpet" (full: Turkish carpet) noun common rec 3 link 1
+   LONG  61908 "Hereke carpet" noun proper rec 5 link 4
+4533 | theme pacific_art_words "pacific art words" (note: Aboriginal and Maori art: dot painting, ochre, koru, ta moko, tapa)
+   SHORT 52334 "tiki" [carving] noun common rec 2 link 2
+   LONG  52338 "hei tiki" noun common rec 4 link 3
+4534 | theme african_art_words "african art words"
+   SHORT 52352 "beadwork" noun common rec 3 link 3
+   LONG  52351 "Maasai beadwork" noun common rec 4 link 3
+4535 | theme african_art_words "african art words"
+   SHORT 52366 "mask" (full: African mask) noun common rec 2 link 1
+   LONG  61924 "Dogon mask" noun proper rec 4 link 3
+4536 | theme african_art_words "african art words"
+   SHORT 52366 "mask" (full: African mask) noun common rec 2 link 1
+   LONG  61927 "Fang mask" noun proper rec 4 link 4
+4537 | theme theater_words "theater words"
+   SHORT 6233 "rehearsal" noun common rec 2 link 2
+   LONG  12254 "dress rehearsal" noun common rec 3 link 3
+4538 | theme theater_words "theater words"
+   SHORT 12242 "curtain" noun common rec 1 link 1
+   LONG  11214 "curtain call" noun common rec 3 link 2
+4539 | theme theater_words "theater words"
+   SHORT 12252 "ovation" noun common rec 3 link 4
+   LONG  12267 "standing ovation" noun common rec 2 link 3
+4540 | theme parts_of_a_stage "parts of a stage"
+   SHORT 12242 "curtain" noun common rec 1 link 1
+   LONG  12291 "safety curtain" noun common rec 4 link 4
+4541 | theme parts_of_a_stage "parts of a stage"
+   SHORT 12242 "curtain" noun common rec 1 link 1
+   LONG  12292 "iron curtain" [theater] noun common rec 3 link 5
+4542 | theme parts_of_a_stage "parts of a stage"
+   SHORT 12299 "pit" [theater] noun common rec 3 link 3
+   LONG  11062 "orchestra pit" noun common rec 2 link 2
+4543 | theme theater_jobs "theater jobs"
+   SHORT 12306 "director" [theater] noun common rec 1 link 1
+   LONG  12321 "musical director" noun common rec 3 link 3
+4544 | theme theater_jobs "theater jobs"
+   SHORT 12306 "director" [theater] noun common rec 1 link 1
+   LONG  12326 "fight director" noun common rec 5 link 5
+4545 | theme theater_jobs "theater jobs"
+   SHORT 12306 "director" [theater] noun common rec 1 link 1
+   LONG  12329 "technical director" noun common rec 4 link 4
+4546 | theme theater_jobs "theater jobs"
+   SHORT 12306 "director" [theater] noun common rec 1 link 1
+   LONG  12330 "artistic director" noun common rec 4 link 3
+4547 | theme theater_jobs "theater jobs"
+   SHORT 12306 "director" [theater] noun common rec 1 link 1
+   LONG  12331 "casting director" noun common rec 3 link 3
+4548 | theme theater_jobs "theater jobs"
+   SHORT 12306 "director" [theater] noun common rec 1 link 1
+   LONG  12332 "assistant director" noun common rec 3 link 4
+4549 | theme opera_words "opera words"
+   SHORT 6196 "soprano" [singer] noun common rec 2 link 1
+   LONG  11013 "mezzo-soprano" noun common rec 4 link 3
+4550 | theme puppets "puppets"
+   SHORT 12355 "hand" (full: hand puppet) noun common rec 1 link 1
+   LONG  12385 "hand-and-rod puppet" noun common rec 5 link 5
+4551 | theme puppets "puppets"
+   SHORT 12364 "rod" (full: rod puppet) noun common rec 3 link 3
+   LONG  12385 "hand-and-rod puppet" noun common rec 5 link 5
+4552 | theme musicals_words "musicals words"
+   SHORT 12388 "Broadway" [theater district] noun place rec 1 link 1
+   LONG  12398 "Off-Broadway" noun place rec 3 link 3
+4553 | theme stage_genres "stage genres"
+   SHORT 6522 "tragedy" [literature] noun common rec 2 link 1
+   LONG  12422 "Greek tragedy" noun common rec 3 link 3
+4554 | theme stage_genres "stage genres"
+   SHORT 6523 "comedy" [literature] noun common rec 1 link 1
+   LONG  12429 "comedy of manners" noun common rec 4 link 4
+4555 | theme stage_genres "stage genres"
+   SHORT 6523 "comedy" [literature] noun common rec 1 link 1
+   LONG  12430 "restoration comedy" noun common rec 5 link 4
+4556 | theme stage_genres "stage genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12428 "kitchen sink drama" noun common rec 4 link 5
+4557 | theme asian_theater_forms "asian theater forms"
+   SHORT 12443 "wayang" noun common rec 5 link 3
+   LONG  12367 "wayang kulit" noun common rec 5 link 3
+4558 | theme theater_building_parts "theater building parts"
+   SHORT 12241 "stage" [theater] noun common rec 1 link 1
+   LONG  11212 "stage left" noun common rec 3 link 4
+4559 | theme theater_building_parts "theater building parts"
+   SHORT 12241 "stage" [theater] noun common rec 1 link 1
+   LONG  12281 "stage right" noun common rec 3 link 4
+4560 | theme theater_building_parts "theater building parts"
+   SHORT 12241 "stage" [theater] noun common rec 1 link 1
+   LONG  12297 "thrust stage" noun common rec 5 link 5
+4561 | theme theater_building_parts "theater building parts"
+   SHORT 12241 "stage" [theater] noun common rec 1 link 1
+   LONG  12298 "stage door" noun common rec 3 link 3
+4562 | theme theater_building_parts "theater building parts"
+   SHORT 12242 "curtain" noun common rec 1 link 2
+   LONG  12291 "safety curtain" noun common rec 4 link 4
+4563 | theme film_and_tv "film and tv"
+   SHORT 4136 "actor" noun common rec 1 link 1
+   LONG  6450 "voice actor" noun phrase rec 2 link 3
+4564 | theme film_and_tv "film and tv"
+   SHORT 6363 "movie" noun common rec 1 link 1
+   LONG  2477 "movie theater" noun common rec 1 link 1
+4565 | theme film_and_tv "film and tv"
+   SHORT 6375 "cut" [film] noun common rec 2 link 2
+   LONG  6440 "jump cut" noun phrase rec 4 link 4
+4566 | theme film_and_tv "film and tv"
+   SHORT 6393 "screen" [film] noun common rec 1 link 2
+   LONG  4577 "small screen" noun phrase rec 4 link 4
+4567 | theme film_and_tv "film and tv"
+   SHORT 6393 "screen" [film] noun common rec 1 link 2
+   LONG  6406 "green screen" noun phrase rec 2 link 3
+4568 | theme movie_genres "movie genres"
+   SHORT 6444 "noir" [film genre] noun phrase rec 3 link 3
+   LONG  12581 "neo-noir" noun common rec 4 link 4
+4569 | theme movie_genres "movie genres"
+   SHORT 6523 "comedy" [literature] noun common rec 1 link 1
+   LONG  12573 "screwball comedy" noun common rec 4 link 4
+4570 | theme movie_genres "movie genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12593 "courtroom drama" noun common rec 3 link 3
+4571 | theme movie_genres "movie genres"
+   SHORT 12560 "horror" [film genre] noun common rec 1 link 1
+   LONG  12580 "body horror" noun common rec 4 link 4
+4572 | theme movie_genres "movie genres"
+   SHORT 12562 "western" noun common rec 1 link 1
+   LONG  12572 "spaghetti western" noun common rec 3 link 3
+4573 | theme genres_that_scare_people "scary movie genres"
+   SHORT 12560 "horror" [film genre] noun common rec 1 link 1
+   LONG  12580 "body horror" noun common rec 4 link 4
+4574 | theme tv_genres "tv genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12604 "crime drama" noun common rec 2 link 2
+4575 | theme tv_genres "tv genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12606 "medical drama" noun common rec 3 link 3
+4576 | theme tv_genres "tv genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12607 "legal drama" noun common rec 3 link 3
+4577 | theme tv_genres "tv genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12622 "period drama" noun common rec 3 link 3
+4578 | theme tv_genres "tv genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12623 "costume drama" noun common rec 4 link 4
+4579 | theme tv_genres "tv genres"
+   SHORT 12436 "drama" [genre] noun common rec 1 link 1
+   LONG  12626 "teen drama" noun common rec 3 link 3
+4580 | theme tv_genres "tv genres"
+   SHORT 12632 "procedural" noun common rec 4 link 4
+   LONG  12605 "police procedural" noun common rec 4 link 3
+4581 | theme film_words "film words"
+   SHORT 6369 "director" [film] noun common rec 1 link 1
+   LONG  12643 "director's cut" noun common rec 3 link 2
+4582 | theme film_words "film words"
+   SHORT 6396 "credits" [film] noun common rec 2 link 2
+   LONG  12656 "post-credits scene" noun common rec 4 link 3
+4583 | theme behind_the_camera "crew roles behind the lens"
+   SHORT 6369 "director" [film] noun common rec 1 link 1
+   LONG  12331 "casting director" noun common rec 3 link 3
+4584 | theme behind_the_camera "crew roles behind the lens"
+   SHORT 6369 "director" [film] noun common rec 1 link 1
+   LONG  12332 "assistant director" noun common rec 3 link 3
+4585 | theme behind_the_camera "crew roles behind the lens"
+   SHORT 6369 "director" [film] noun common rec 1 link 1
+   LONG  12670 "art director" noun common rec 3 link 3
+4586 | theme behind_the_camera "crew roles behind the lens"
+   SHORT 6370 "producer" [film] noun common rec 2 link 1
+   LONG  12671 "executive producer" noun common rec 3 link 3
+4587 | theme behind_the_camera "crew roles behind the lens"
+   SHORT 6370 "producer" [film] noun common rec 2 link 1
+   LONG  12690 "line producer" noun common rec 5 link 5
+4588 | theme movie_theater_words "movie theater words"
+   SHORT 6393 "screen" [film] noun common rec 1 link 1
+   LONG  12818 "silver screen" noun common rec 3 link 3
+4589 | theme movie_theater_words "movie theater words"
+   SHORT 6418 "popcorn" noun common rec 1 link 1
+   LONG  12811 "popcorn machine" noun common rec 2 link 3
+4590 | theme movie_theater_words "movie theater words"
+   SHORT 12799 "ticket" [cinema] noun common rec 1 link 1
+   LONG  12471 "ticket booth" [cinema] noun common rec 2 link 3
+4591 | theme movie_theater_words "movie theater words"
+   SHORT 12799 "ticket" [cinema] noun common rec 1 link 1
+   LONG  12812 "ticket stub" noun common rec 2 link 2
+4592 | theme tv_words "tv words"
+   SHORT 6385 "series" [tv] noun common rec 1 link 2
+   LONG  12844 "series finale" noun common rec 3 link 3
+4593 | theme tv_words "tv words"
+   SHORT 6387 "season" [tv] noun common rec 1 link 2
+   LONG  12843 "season finale" noun common rec 2 link 2
+4594 | theme tv_words "tv words"
+   SHORT 6387 "season" [tv] noun common rec 1 link 2
+   LONG  12845 "mid-season" noun common rec 4 link 5
+4595 | theme tv_words "tv words"
+   SHORT 6388 "channel" [tv] noun common rec 1 link 1
+   LONG  12839 "channel surfing" noun common rec 3 link 3
+4596 | theme tv_words "tv words"
+   SHORT 12392 "finale" noun common rec 2 link 3
+   LONG  12843 "season finale" noun common rec 2 link 2
+4597 | theme tv_words "tv words"
+   SHORT 12392 "finale" noun common rec 2 link 3
+   LONG  12844 "series finale" noun common rec 3 link 3
+4598 | theme anime_and_manga_words "anime and manga words"
+   SHORT 13078 "shonen" noun common rec 4 link 2
+   LONG  13118 "Shonen Jump" noun title rec 4 link 3
+4599 | theme camera_shots "camera shots"
+   SHORT 6405 "dolly" [camera] noun common rec 3 link 2
+   LONG  13147 "dolly zoom" noun common rec 5 link 4
+4600 | theme camera_shots "camera shots"
+   SHORT 11254 "pan" [recording] noun common rec 1 link 2
+   LONG  13145 "whip pan" noun common rec 5 link 4
+4601 | theme camera_shots "camera shots"
+   SHORT 12066 "zoom" [camera] noun common rec 3 link 2
+   LONG  13147 "dolly zoom" noun common rec 5 link 4
+4602 | theme camera_shots "camera shots"
+   SHORT 12635 "close-up" [shot] noun common rec 2 link 1
+   LONG  13122 "extreme close-up" noun common rec 3 link 2
+4603 | theme camera_shots "camera shots"
+   SHORT 12635 "close-up" [shot] noun common rec 2 link 1
+   LONG  13153 "medium close-up" noun common rec 4 link 3
+4604 | theme camera_shots "camera shots"
+   SHORT 13119 "long" (full: long shot) [camera shot] noun common rec 3 link 1
+   LONG  13149 "long take" noun common rec 4 link 4
+4605 | theme camera_shots "camera shots"
+   SHORT 13120 "wide" (full: wide shot) noun common rec 2 link 1
+   LONG  12082 "wide angle" noun common rec 3 link 2
+4606 | theme camera_shots "camera shots"
+   SHORT 13121 "medium" (full: medium shot) noun common rec 3 link 1
+   LONG  13153 "medium close-up" noun common rec 4 link 3
+4607 | theme literature "literature"
+   SHORT 6456 "story" [tale] noun common rec 1 link 1
+   LONG  6504 "short story" noun phrase rec 1 link 2
+4608 | theme literature "literature"
+   SHORT 6472 "fiction" noun common rec 1 link 1
+   LONG  6505 "flash fiction" noun phrase rec 4 link 4
+4609 | theme literature "literature"
+   SHORT 6472 "fiction" noun common rec 1 link 1
+   LONG  6520 "dystopian fiction" noun common rec 3 link 4
+4610 | theme book_genres "book genres"
+   SHORT 6472 "fiction" noun common rec 1 link 2
+   LONG  12564 "science fiction" noun common rec 1 link 1
+4611 | theme book_genres "book genres"
+   SHORT 6472 "fiction" noun common rec 1 link 2
+   LONG  13154 "historical fiction" noun common rec 2 link 2
+4612 | theme book_genres "book genres"
+   SHORT 6472 "fiction" noun common rec 1 link 2
+   LONG  13158 "crime fiction" noun common rec 2 link 2
+4613 | theme book_genres "book genres"
+   SHORT 6472 "fiction" noun common rec 1 link 2
+   LONG  13166 "literary fiction" noun common rec 3 link 3
+4614 | theme book_genres "book genres"
+   SHORT 6472 "fiction" noun common rec 1 link 2
+   LONG  13168 "gothic fiction" noun common rec 4 link 3
+4615 | theme book_genres "book genres"
+   SHORT 6524 "romance" [literature] noun common rec 2 link 1
+   LONG  13175 "paranormal romance" noun common rec 4 link 3
+4616 | theme book_genres "book genres"
+   SHORT 12561 "thriller" noun common rec 1 link 1
+   LONG  13178 "legal thriller" noun common rec 3 link 3
+4617 | theme book_genres "book genres"
+   SHORT 12561 "thriller" noun common rec 1 link 1
+   LONG  13179 "techno-thriller" noun common rec 4 link 4
+4618 | theme book_genres "book genres"
+   SHORT 12566 "fantasy" noun common rec 1 link 1
+   LONG  13169 "epic fantasy" noun common rec 4 link 3
+4619 | theme book_genres "book genres"
+   SHORT 12566 "fantasy" noun common rec 1 link 1
+   LONG  13176 "urban fantasy" noun common rec 4 link 4
+4620 | theme book_genres "book genres"
+   SHORT 12567 "mystery" noun common rec 2 link 1
+   LONG  13163 "cozy mystery" noun common rec 4 link 4
+4621 | theme speculative_genres "speculative genres"
+   SHORT 12566 "fantasy" noun common rec 1 link 1
+   LONG  13169 "epic fantasy" noun common rec 4 link 3
+4622 | theme speculative_genres "speculative genres"
+   SHORT 12566 "fantasy" noun common rec 1 link 1
+   LONG  13176 "urban fantasy" noun common rec 4 link 4
+4623 | theme tales_of_suspense "tales of suspense"
+   SHORT 12561 "thriller" noun common rec 1 link 1
+   LONG  13178 "legal thriller" noun common rec 3 link 3
+4624 | theme tales_of_suspense "tales of suspense"
+   SHORT 12561 "thriller" noun common rec 1 link 1
+   LONG  13179 "techno-thriller" noun common rec 4 link 4
+4625 | theme tales_of_suspense "tales of suspense"
+   SHORT 12567 "mystery" noun common rec 2 link 1
+   LONG  13163 "cozy mystery" noun common rec 4 link 4
+4626 | theme poetry_terms "poetry terms"
+   SHORT 6061 "verse" noun common rec 1 link 2
+   LONG  6537 "free verse" noun phrase rec 3 link 2
+4627 | theme poetry_terms "poetry terms"
+   SHORT 6061 "verse" noun common rec 1 link 2
+   LONG  13252 "blank verse" noun common rec 4 link 2
+4628 | theme poetry_terms "poetry terms"
+   SHORT 6486 "sonnet" noun common rec 3 link 1
+   LONG  13281 "Petrarchan sonnet" noun common rec 5 link 4
+4629 | theme poetry_terms "poetry terms"
+   SHORT 6486 "sonnet" noun common rec 3 link 1
+   LONG  13282 "Shakespearean sonnet" noun common rec 4 link 3
+4630 | theme poetry_terms "poetry terms"
+   SHORT 6489 "rhyme" noun common rec 1 link 1
+   LONG  13255 "rhyme scheme" noun common rec 3 link 2
+4631 | theme poetry_terms "poetry terms"
+   SHORT 6489 "rhyme" noun common rec 1 link 1
+   LONG  13276 "slant rhyme" noun common rec 5 link 4
+4632 | theme poetry_terms "poetry terms"
+   SHORT 6489 "rhyme" noun common rec 1 link 1
+   LONG  13277 "end rhyme" noun common rec 4 link 3
+4633 | theme poetry_terms "poetry terms"
+   SHORT 6489 "rhyme" noun common rec 1 link 1
+   LONG  13278 "internal rhyme" noun common rec 5 link 4
+4634 | theme poetry_terms "poetry terms"
+   SHORT 13249 "couplet" noun common rec 3 link 2
+   LONG  13279 "rhyming couplet" noun common rec 3 link 3
+4635 | theme poetry_terms "poetry terms"
+   SHORT 13249 "couplet" noun common rec 3 link 2
+   LONG  13280 "heroic couplet" noun common rec 5 link 4
+4636 | theme fairy_tale_characters "fairy tale characters"
+   SHORT 6981 "witch" [sorceress] noun common rec 1 link 1
+   LONG  13367 "wicked witch" noun common rec 2 link 2
+4637 | theme parts_of_a_book "parts of a book"
+   SHORT 13383 "cover" [book] noun common rec 1 link 1
+   LONG  13419 "back cover" noun common rec 1 link 2
+4638 | theme parts_of_a_book "parts of a book"
+   SHORT 13383 "cover" [book] noun common rec 1 link 1
+   LONG  13420 "front cover" noun common rec 1 link 2
+4639 | theme parts_of_a_book "parts of a book"
+   SHORT 13385 "page" [book] noun common rec 1 link 1
+   LONG  13386 "title page" noun common rec 2 link 2
+4640 | theme parts_of_a_book "parts of a book"
+   SHORT 13385 "page" [book] noun common rec 1 link 1
+   LONG  13407 "copyright page" noun common rec 3 link 3
+4641 | theme parts_of_a_book "parts of a book"
+   SHORT 13385 "page" [book] noun common rec 1 link 1
+   LONG  13410 "page number" noun common rec 1 link 2
+4642 | theme outer_parts "book outer parts"
+   SHORT 13383 "cover" [book] noun common rec 1 link 1
+   LONG  13419 "back cover" noun common rec 1 link 2
+4643 | theme outer_parts "book outer parts"
+   SHORT 13383 "cover" [book] noun common rec 1 link 1
+   LONG  13420 "front cover" noun common rec 1 link 2
+4644 | theme publishing_words "publishing words"
+   SHORT 4614 "editor" noun common rec 2 link 1
+   LONG  13437 "copy editor" [publishing] noun common rec 4 link 3
+4645 | theme publishing_words "publishing words"
+   SHORT 4614 "editor" noun common rec 2 link 1
+   LONG  13450 "commissioning editor" noun common rec 5 link 4
+4646 | theme publishing_words "publishing words"
+   SHORT 13433 "edition" noun common rec 2 link 2
+   LONG  13441 "first edition" noun common rec 3 link 2
+4647 | theme comic_book_words "comic book words"
+   SHORT 13495 "issue" [comic] noun common rec 2 link 2
+   LONG  13516 "back issue" noun common rec 3 link 3
+4648 | theme story_roles "story roles"
+   SHORT 6464 "narrator" noun common rec 2 link 2
+   LONG  13532 "unreliable narrator" noun common rec 4 link 4
+4649 | theme story_roles "story roles"
+   SHORT 6467 "hero" noun common rec 1 link 1
+   LONG  13520 "anti-hero" noun common rec 3 link 3
+4650 | theme story_roles "story roles"
+   SHORT 6467 "hero" noun common rec 1 link 1
+   LONG  13531 "tragic hero" noun common rec 3 link 3
+4651 | theme story_roles "story roles"
+   SHORT 13530 "rival" [story] noun common rec 2 link 2
+   LONG  13544 "love rival" noun common rec 3 link 3
+4652 | theme book_formats "book formats"
+   SHORT 13416 "paperback" noun common rec 1 link 1
+   LONG  13502 "trade paperback" noun common rec 4 link 3
+4653 | theme book_formats "book formats"
+   SHORT 13416 "paperback" noun common rec 1 link 1
+   LONG  13556 "mass market paperback" noun common rec 4 link 3
+4654 | theme book_formats "book formats"
+   SHORT 13416 "paperback" noun common rec 1 link 1
+   LONG  13567 "paperback original" noun common rec 5 link 5
+4655 | theme fairy_tale_villains "fairy tale villains"
+   SHORT 995 "wolf" [animal] noun common rec 1 link 2
+   LONG  13361 "big bad wolf" noun common rec 1 link 1
+4656 | theme fairy_tale_villains "fairy tale villains"
+   SHORT 6981 "witch" [sorceress] noun common rec 1 link 1
+   LONG  13367 "wicked witch" noun common rec 2 link 1
+4657 | theme fairy_tale_villains "fairy tale villains"
+   SHORT 6981 "witch" [sorceress] noun common rec 1 link 1
+   LONG  13612 "Sea Witch" noun proper rec 3 link 3
+4658 | theme fairy_tale_villains "fairy tale villains"
+   SHORT 6981 "witch" [sorceress] noun common rec 1 link 1
+   LONG  13616 "Gingerbread Witch" noun proper rec 3 link 3
+4659 | theme circus "circus"
+   SHORT 12533 "clown" noun common rec 1 link 1
+   LONG  13706 "clown car" noun common rec 2 link 2
+4660 | theme circus "circus"
+   SHORT 13685 "trapeze" [circus] noun common rec 1 link 1
+   LONG  13699 "trapeze artist" noun common rec 2 link 2
+4661 | theme circus "circus"
+   SHORT 13685 "trapeze" [circus] noun common rec 1 link 1
+   LONG  13714 "flying trapeze" noun common rec 2 link 2
+4662 | theme magic_show_words "magic show words"
+   SHORT 13744 "trick" (full: magic trick) noun common rec 1 link 1
+   LONG  13724 "card trick" noun common rec 1 link 1
+4663 | theme comedy_words "comedy words"
+   SHORT 13748 "joke" noun common rec 1 link 1
+   LONG  13768 "dad joke" noun common rec 2 link 2
+4664 | theme comedy_words "comedy words"
+   SHORT 13748 "joke" noun common rec 1 link 1
+   LONG  13770 "knock-knock joke" noun common rec 2 link 2
+4665 | theme street_performers "street performers"
+   SHORT 13687 "juggler" noun common rec 1 link 1
+   LONG  13824 "fire juggler" noun common rec 3 link 3
+4666 | theme street_performers "street performers"
+   SHORT 13825 "dancer" (full: street dancer) noun common rec 2 link 2
+   LONG  13812 "break dancer" noun common rec 2 link 2
+4667 | theme theme_park_words "theme park words"
+   SHORT 13853 "flume" [ride] noun common rec 3 link 4
+   LONG  13784 "log flume" noun common rec 2 link 2
+4668 | theme party_entertainment "party entertainment"
+   SHORT 13719 "magician" noun common rec 1 link 1
+   LONG  13873 "strolling magician" noun common rec 4 link 4
+4669 | theme nightclub_words "nightclub words"
+   SHORT 6145 "DJ" noun acronym rec 1 link 1
+   LONG  13885 "DJ booth" noun common rec 3 link 3
+4670 | theme nightclub_words "nightclub words"
+   SHORT 6145 "DJ" noun acronym rec 1 link 1
+   LONG  13892 "resident DJ" noun common rec 4 link 4
+4671 | theme brazilian_carnival_words "brazilian carnival words"
+   SHORT 6257 "samba" noun common rec 2 link 1
+   LONG  13903 "samba school" noun common rec 3 link 2
+4672 | theme architecture "architecture"
+   SHORT 6553 "tower" [building] noun common rec 1 link 1
+   LONG  2463 "tower block" noun common rec 2 link 3
+4673 | theme architecture "architecture"
+   SHORT 6571 "buttress" [building] noun common rec 4 link 4
+   LONG  6572 "flying buttress" noun phrase rec 4 link 4
+4674 | theme architecture_styles "architecture styles"
+   SHORT 6592 "Gothic" [architecture] noun proper rec 3 link 1
+   LONG  13932 "Gothic Revival" noun proper rec 4 link 3
+4675 | theme architecture_styles "architecture styles"
+   SHORT 13927 "Tudor" [architecture] noun proper rec 2 link 2
+   LONG  13953 "Tudor Revival" noun proper rec 4 link 4
+4676 | theme church_parts "church parts"
+   SHORT 4309 "altar" noun common rec 2 link 1
+   LONG  14015 "altar rail" noun common rec 4 link 4
+4677 | theme bridge_types "bridge types"
+   SHORT 14079 "arch" (full: arch bridge) noun common rec 2 link 1
+   LONG  14097 "tied-arch" (full: tied-arch bridge) noun common rec 5 link 5
+4678 | theme roof_styles "roof styles"
+   SHORT 6574 "gable" noun common rec 3 link 2
+   LONG  14123 "Dutch gable" noun common rec 5 link 4
+4679 | theme roof_styles "roof styles"
+   SHORT 6574 "gable" noun common rec 3 link 2
+   LONG  14125 "cross gable" noun common rec 5 link 4
+4680 | theme roof_styles "roof styles"
+   SHORT 50333 "hip" [roof] noun common rec 3 link 2
+   LONG  62861 "half-hip" noun common rec 5 link 5
+4681 | theme architectural_features "architectural features"
+   SHORT 6571 "buttress" [building] noun common rec 4 link 3
+   LONG  6572 "flying buttress" noun phrase rec 4 link 3
+4682 | theme window_styles "window styles"
+   SHORT 14167 "French" (full: French window) noun common rec 2 link 2
+   LONG  14168 "French door" noun common rec 2 link 3
+4683 | theme ancient_civilizations "ancient civilizations"
+   SHORT 6619 "pyramid" [monument] noun common rec 1 link 1
+   LONG  6659 "Great Pyramid" noun place rec 2 link 2
+4684 | theme ancient_civilizations "ancient civilizations"
+   SHORT 6624 "Babylon" noun place rec 2 link 2
+   LONG  60560 "Gardens of Babylon" noun place rec 3 link 4
+4685 | theme ancient_olympics "ancient olympics" (note: events, places and words of the ancient Games: stadion, pankration, laurel, Olympia)
+   SHORT 4443 "truce" noun common rec 3 link 3
+   LONG  53994 "sacred truce" noun common rec 4 link 4
+4686 | theme ancient_rome "ancient rome"
+   SHORT 20397 "Hadrian" noun person rec 3 link 3
+   LONG  2379 "Hadrian's Wall" noun place rec 3 link 4
+4687 | theme inca_empire "inca empire"
+   SHORT 20433 "Inca" [Andean empire] noun proper rec 2 link 1
+   LONG  20439 "Sapa Inca" noun title rec 4 link 2
+4688 | theme inca_empire "inca empire"
+   SHORT 20433 "Inca" [Andean empire] noun proper rec 2 link 1
+   LONG  20448 "Manco Inca" noun person rec 5 link 5
+4689 | theme ancient_china "ancient china"
+   SHORT 5039 "silk" noun common rec 1 link 2
+   LONG  20457 "Silk Road" noun place rec 2 link 2
+4690 | theme ancient_china "ancient china"
+   SHORT 20385 "emperor" [ruler] noun common rec 1 link 1
+   LONG  62095 "First Emperor" noun person rec 3 link 2
+4691 | theme mesopotamia "mesopotamia"
+   SHORT 6624 "Babylon" noun place rec 2 link 1
+   LONG  60560 "Gardens of Babylon" noun place rec 3 link 3
+4692 | theme mesopotamia "mesopotamia"
+   SHORT 20508 "Hammurabi" noun person rec 3 link 2
+   LONG  6655 "Code of Hammurabi" noun title rec 4 link 2
+4693 | theme mesopotamia "mesopotamia"
+   SHORT 20515 "Gilgamesh" noun person rec 4 link 2
+   LONG  20526 "Epic of Gilgamesh" noun proper rec 4 link 3
+4694 | theme feudal_japan "feudal japan"
+   SHORT 20558 "samurai" noun common rec 1 link 1
+   LONG  20584 "samurai armor" noun common rec 3 link 2
+4695 | theme feudal_japan "feudal japan"
+   SHORT 20564 "Edo" noun place rec 3 link 3
+   LONG  7089 "Edo period" noun proper rec 4 link 3
+4696 | theme ottoman_empire "ottoman empire"
+   SHORT 20632 "sultan" noun common rec 2 link 1
+   LONG  2364 "Sultan Ahmed Mosque" noun place rec 4 link 4
+4697 | theme famous_ruins_and_monuments "famous ruins and monuments"
+   SHORT 6619 "pyramid" [monument] noun common rec 1 link 1
+   LONG  6659 "Great Pyramid" noun place rec 2 link 2
+4698 | theme medieval_times "medieval times"
+   SHORT 6671 "tapestry" noun common rec 2 link 3
+   LONG  6685 "Bayeux Tapestry" noun title rec 3 link 3
+4699 | theme castles "castles"
+   SHORT 6553 "tower" [building] noun common rec 1 link 1
+   LONG  20723 "siege tower" noun common rec 3 link 4
+4700 | theme medieval_weapons "medieval weapons"
+   SHORT 322 "axe" [tool] noun common rec 1 link 3
+   LONG  20787 "battle axe" noun common rec 2 link 2
+4701 | theme medieval_food "medieval food"
+   SHORT 552 "bread" [food] noun common rec 1 link 1
+   LONG  18060 "rye bread" noun common rec 1 link 3
+4702 | theme medieval_food "medieval food"
+   SHORT 562 "pie" noun common rec 1 link 3
+   LONG  18178 "mince pie" noun common rec 3 link 4
+4703 | theme heraldry "heraldry"
+   SHORT 20897 "rampant" adjective common rec 3 link 2
+   LONG  20879 "lion rampant" noun common rec 4 link 1
+4704 | theme crusades "crusades"
+   SHORT 20923 "crusader" noun common rec 2 link 1
+   LONG  20940 "Crusader States" noun proper rec 4 link 4
+4705 | theme black_death "black death"
+   SHORT 3379 "plague" noun common rec 2 link 1
+   LONG  20954 "plague doctor" noun common rec 2 link 1
+4706 | theme medieval_instruments "medieval instruments"
+   SHORT 10595 "drum" [instrument] noun common rec 1 link 2
+   LONG  6002 "drum kit" noun common rec 2 link 5
+4707 | theme navigation_tools "navigation tools"
+   SHORT 2398 "compass" [navigation] noun common rec 1 link 1
+   LONG  21021 "compass rose" noun common rec 3 link 2
+4708 | theme navigation_tools "navigation tools"
+   SHORT 21018 "chart" [nautical map] noun common rec 1 link 2
+   LONG  2453 "portolan chart" noun phrase rec 5 link 3
+4709 | theme navigation_tools "navigation tools"
+   SHORT 21018 "chart" [nautical map] noun common rec 1 link 2
+   LONG  21037 "star chart" noun common rec 2 link 3
+4710 | theme navigation_tools "navigation tools"
+   SHORT 21023 "chronometer" noun common rec 4 link 3
+   LONG  21024 "marine chronometer" noun common rec 4 link 3
+4711 | theme polar_exploration "polar exploration"
+   SHORT 2923 "expedition" [exploring trip] noun common rec 2 link 2
+   LONG  21051 "Franklin expedition" noun proper rec 4 link 3
+4712 | theme silk_road "silk road"
+   SHORT 1002 "camel" [animal] noun common rec 1 link 1
+   LONG  9687 "Bactrian camel" noun proper rec 3 link 2
+4713 | theme polynesian_voyaging "polynesian voyaging"
+   SHORT 2781 "canoe" noun common rec 1 link 1
+   LONG  21146 "double canoe" noun common rec 3 link 2
+4714 | theme pirates "pirates"
+   SHORT 2801 "captain" [ship] noun common rec 1 link 3
+   LONG  6776 "Captain Kidd" noun person rec 3 link 2
+4715 | theme pirates "pirates"
+   SHORT 2801 "captain" [ship] noun common rec 1 link 3
+   LONG  6782 "Captain Hook" noun person rec 1 link 3
+4716 | theme pirates "pirates"
+   SHORT 6759 "pirate" [sea robber] noun common rec 1 link 1
+   LONG  6810 "Dread Pirate Roberts" noun person rec 4 link 4
+4717 | theme pirates "pirates"
+   SHORT 6765 "treasure" [loot] noun common rec 1 link 1
+   LONG  2403 "treasure map" noun phrase rec 1 link 1
+4718 | theme pirates "pirates"
+   SHORT 6765 "treasure" [loot] noun common rec 1 link 1
+   LONG  6792 "buried treasure" noun phrase rec 1 link 1
+4719 | theme pirates "pirates"
+   SHORT 6765 "treasure" [loot] noun common rec 1 link 1
+   LONG  6793 "treasure chest" noun phrase rec 1 link 1
+4720 | theme treasure "treasure"
+   SHORT 21212 "crown" [royal] noun common rec 1 link 3
+   LONG  21224 "crown jewels" noun common rec 2 link 2
+4721 | theme treasure "treasure"
+   SHORT 31656 "diamond" [gem] noun common rec 1 link 2
+   LONG  21222 "Hope Diamond" noun proper rec 3 link 4
+4722 | theme pirate_crew "pirate crew"
+   SHORT 21277 "boatswain" noun common rec 3 link 3
+   LONG  21279 "boatswain mate" noun common rec 4 link 4
+4723 | theme pirate_crew "pirate crew"
+   SHORT 21280 "gunner" noun common rec 3 link 2
+   LONG  21286 "master gunner" noun common rec 4 link 3
+4724 | theme pirate_punishments "pirate punishments" (note: walk the plank, keelhaul, maroon, flogging, cat o' nine tails)
+   SHORT 21296 "hanging" [punishment] noun common rec 2 link 2
+   LONG  21311 "hanging in chains" noun common rec 4 link 4
+4725 | theme pirate_punishments "pirate punishments" (note: walk the plank, keelhaul, maroon, flogging, cat o' nine tails)
+   SHORT 21298 "irons" [shackles] noun common rec 3 link 3
+   LONG  21310 "leg irons" noun common rec 3 link 3
+4726 | theme pirate_punishments "pirate punishments" (note: walk the plank, keelhaul, maroon, flogging, cat o' nine tails)
+   SHORT 21308 "plank" [pirate] noun common rec 1 link 1
+   LONG  6767 "walk the plank" verb phrase rec 2 link 1
+4727 | theme pirate_clothing "pirate clothing"
+   SHORT 21312 "hat" (full: pirate hat) noun common rec 1 link 1
+   LONG  21324 "cocked hat" noun common rec 4 link 3
+4728 | theme wars_and_battles "wars and battles"
+   SHORT 4392 "war" [conflict] noun common rec 1 link 1
+   LONG  6821 "civil war" noun phrase rec 1 link 1
+4729 | theme wars_and_battles "wars and battles"
+   SHORT 4392 "war" [conflict] noun common rec 1 link 1
+   LONG  6834 "Hundred Years' War" noun proper rec 3 link 4
+4730 | theme wars_and_battles "wars and battles"
+   SHORT 4392 "war" [conflict] noun common rec 1 link 1
+   LONG  6845 "Seven Years' War" noun proper rec 4 link 5
+4731 | theme wars_and_battles "wars and battles"
+   SHORT 4392 "war" [conflict] noun common rec 1 link 1
+   LONG  6846 "War of 1812" noun proper rec 3 link 4
+4732 | theme armor "armor"
+   SHORT 20684 "shield" [armor] noun common rec 1 link 2
+   LONG  21353 "kite shield" noun common rec 4 link 4
+4733 | theme armor "armor"
+   SHORT 20684 "shield" [armor] noun common rec 1 link 2
+   LONG  21354 "tower shield" noun common rec 3 link 4
+4734 | theme peace_words "peace words"
+   SHORT 21491 "peace" noun common rec 1 link 1
+   LONG  16826 "peace sign" noun common rec 1 link 1
+4735 | theme peace_words "peace words"
+   SHORT 21491 "peace" noun common rec 1 link 1
+   LONG  21501 "Nobel Peace Prize" noun proper rec 2 link 2
+4736 | theme archaeology_words "archaeology words"
+   SHORT 6859 "dig" [excavation] noun common rec 1 link 1
+   LONG  10106 "dig site" noun common rec 3 link 2
+4737 | theme fossils "fossils"
+   SHORT 1567 "fossil" noun common rec 1 link 1
+   LONG  1621 "fossil record" noun common rec 4 link 3
+4738 | theme fossils "fossils"
+   SHORT 1567 "fossil" noun common rec 1 link 1
+   LONG  21700 "fossil footprint" noun common rec 2 link 2
+4739 | theme fossils "fossils"
+   SHORT 1567 "fossil" noun common rec 1 link 1
+   LONG  21708 "index fossil" noun common rec 5 link 5
+4740 | theme fossils "fossils"
+   SHORT 1567 "fossil" noun common rec 1 link 1
+   LONG  21712 "living fossil" noun common rec 3 link 4
+4741 | theme artifacts "artifacts"
+   SHORT 12046 "figurine" noun common rec 2 link 2
+   LONG  21736 "Venus figurine" noun common rec 4 link 3
+4742 | theme artifacts "artifacts"
+   SHORT 21720 "mask" [face covering] noun common rec 1 link 2
+   LONG  21724 "death mask" noun common rec 3 link 3
+4743 | theme tombs_and_burials "tombs and burials"
+   SHORT 6619 "pyramid" [monument] noun common rec 1 link 1
+   LONG  6659 "Great Pyramid" noun place rec 2 link 2
+4744 | theme tombs_and_burials "tombs and burials"
+   SHORT 21739 "grave" [tomb] noun common rec 1 link 1
+   LONG  21756 "grave goods" noun common rec 4 link 3
+4745 | theme ancient_writing "ancient writing"
+   SHORT 7634 "inscription" noun common rec 3 link 3
+   LONG  21773 "Behistun Inscription" noun proper rec 5 link 5
+4746 | theme stone_age "stone age"
+   SHORT 1913 "cave" [rock hollow] noun common rec 1 link 1
+   LONG  6900 "cave painting" noun phrase rec 2 link 1
+4747 | theme stone_age "stone age"
+   SHORT 1913 "cave" [rock hollow] noun common rec 1 link 1
+   LONG  10027 "cave bear" noun common rec 3 link 4
+4748 | theme stone_age "stone age"
+   SHORT 1913 "cave" [rock hollow] noun common rec 1 link 1
+   LONG  21799 "Chauvet Cave" noun place rec 5 link 4
+4749 | theme stone_age "stone age"
+   SHORT 2081 "flint" noun common rec 3 link 2
+   LONG  6892 "flint knapping" noun phrase rec 4 link 3
+4750 | theme bronze_age "bronze age"
+   SHORT 12038 "bronze" [metal] noun common rec 1 link 1
+   LONG  7096 "Bronze Age collapse" noun proper rec 5 link 3
+4751 | theme mythology "mythology"
+   SHORT 6951 "Achilles" noun person rec 2 link 2
+   LONG  6979 "Achilles heel" noun proper rec 2 link 3
+4752 | theme trojan_war "trojan war"
+   SHORT 6623 "Troy" noun place rec 2 link 1
+   LONG  22291 "Helen of Troy" noun person rec 2 link 1

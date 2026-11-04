@@ -1,0 +1,891 @@
+4159 | theme climbing_words "climbing words"
+   SHORT 45052 "belay" verb common rec 3 link 1
+   LONG  45068 "belay device" noun common rec 3 link 2
+4160 | theme climbing_words "climbing words"
+   SHORT 45053 "chalk" [climbing] noun common rec 1 link 1
+   LONG  44150 "chalk bag" noun common rec 4 link 2
+4161 | theme climbing_words "climbing words"
+   SHORT 48700 "rope" [climbing] noun common rec 1 link 1
+   LONG  45070 "top rope" noun common rec 3 link 3
+4162 | theme mountaineering_words "mountaineering words"
+   SHORT 1933 "summit" [mountaintop] noun common rec 2 link 1
+   LONG  45104 "summit push" noun common rec 4 link 4
+4163 | theme mountaineering_words "mountaineering words"
+   SHORT 1933 "summit" [mountaintop] noun common rec 2 link 1
+   LONG  45115 "summit fever" noun common rec 4 link 4
+4164 | theme fishing_words "fishing words"
+   SHORT 45123 "net" [fishing] noun common rec 1 link 2
+   LONG  45138 "landing net" noun common rec 3 link 3
+4165 | theme fishing_words "fishing words"
+   SHORT 45125 "tackle" [fishing] noun common rec 2 link 2
+   LONG  45126 "tackle box" noun common rec 2 link 2
+4166 | theme fishing_words "fishing words"
+   SHORT 45130 "fly" (full: fly fishing) noun common rec 2 link 2
+   LONG  45147 "dry fly" noun common rec 4 link 4
+4167 | theme fishing_words "fishing words"
+   SHORT 45156 "catch" [fishing] noun common rec 1 link 2
+   LONG  45133 "catch and release" noun common rec 2 link 3
+4168 | theme fishing_tackle "fishing tackle"
+   SHORT 45117 "rod" [fishing] noun common rec 1 link 1
+   LONG  58801 "fly rod" noun common rec 3 link 2
+4169 | theme fishing_tackle "fishing tackle"
+   SHORT 45118 "reel" [fishing] noun common rec 1 link 1
+   LONG  58802 "spinning reel" noun common rec 4 link 3
+4170 | theme fishing_tackle "fishing tackle"
+   SHORT 45123 "net" [fishing] noun common rec 1 link 3
+   LONG  45138 "landing net" noun common rec 3 link 3
+4171 | theme fishing_tackle "fishing tackle"
+   SHORT 58795 "fly" [fishing] noun common rec 2 link 2
+   LONG  58801 "fly rod" noun common rec 3 link 2
+4172 | theme hunting_words "hunting words"
+   SHORT 45158 "game" [wild animals] noun common rec 1 link 2
+   LONG  10468 "game warden" noun common rec 3 link 4
+4173 | theme hunting_words "hunting words"
+   SHORT 45158 "game" [wild animals] noun common rec 1 link 2
+   LONG  45174 "game call" noun common rec 4 link 3
+4174 | theme hunting_words "hunting words"
+   SHORT 45158 "game" [wild animals] noun common rec 1 link 2
+   LONG  45178 "big game" noun common rec 2 link 3
+4175 | theme games_of_chance "games of chance"
+   SHORT 5659 "poker" [card game] noun common rec 1 link 1
+   LONG  5690 "video poker" noun phrase rec 3 link 3
+4176 | theme casino_games "casino games"
+   SHORT 5659 "poker" [card game] noun common rec 1 link 1
+   LONG  5690 "video poker" noun phrase rec 3 link 2
+4177 | theme casino_games "casino games"
+   SHORT 5659 "poker" [card game] noun common rec 1 link 1
+   LONG  45187 "three card poker" noun common rec 3 link 3
+4178 | theme casino_games "casino games"
+   SHORT 5659 "poker" [card game] noun common rec 1 link 1
+   LONG  45197 "Pai Gow poker" noun common rec 5 link 4
+4179 | theme casino_games "casino games"
+   SHORT 5659 "poker" [card game] noun common rec 1 link 1
+   LONG  45203 "stud poker" noun common rec 4 link 3
+4180 | theme casino_games "casino games"
+   SHORT 5660 "craps" noun common rec 2 link 1
+   LONG  45199 "craps table" noun common rec 3 link 2
+4181 | theme casino_games "casino games"
+   SHORT 5661 "baccarat" noun common rec 3 link 3
+   LONG  45198 "mini baccarat" noun common rec 4 link 4
+4182 | theme casino_words "casino words"
+   SHORT 34166 "bet" [wager] verb common rec 1 link 1
+   LONG  45238 "minimum bet" noun common rec 3 link 4
+4183 | theme casino_words "casino words"
+   SHORT 45225 "house" [casino] noun common rec 1 link 2
+   LONG  45208 "house edge" noun common rec 3 link 3
+4184 | theme casino_words "casino words"
+   SHORT 45227 "pit" [casino] noun common rec 2 link 4
+   LONG  45210 "pit boss" noun common rec 3 link 3
+4185 | theme money_terms_in_gambling "money terms in gambling"
+   SHORT 34166 "bet" [wager] verb common rec 1 link 1
+   LONG  45238 "minimum bet" noun common rec 3 link 4
+4186 | theme poker_terms "poker terms"
+   SHORT 45244 "pot" [poker] noun common rec 1 link 2
+   LONG  45279 "side pot" noun common rec 4 link 4
+4187 | theme poker_terms "poker terms"
+   SHORT 45246 "raise" [poker] verb common rec 1 link 1
+   LONG  45281 "check-raise" verb common rec 4 link 4
+4188 | theme poker_terms "poker terms"
+   SHORT 45248 "check" [poker] verb common rec 1 link 2
+   LONG  45281 "check-raise" verb common rec 4 link 4
+4189 | theme poker_terms "poker terms"
+   SHORT 45257 "straight" [poker] noun common rec 2 link 2
+   LONG  45261 "straight flush" noun common rec 3 link 3
+4190 | theme poker_terms "poker terms"
+   SHORT 45258 "flush" [poker] noun common rec 2 link 2
+   LONG  45260 "royal flush" noun common rec 2 link 1
+4191 | theme poker_terms "poker terms"
+   SHORT 45258 "flush" [poker] noun common rec 2 link 2
+   LONG  45261 "straight flush" noun common rec 3 link 3
+4192 | theme poker_terms "poker terms"
+   SHORT 45265 "pair" [poker] noun common rec 1 link 3
+   LONG  45264 "two pair" noun common rec 3 link 3
+4193 | theme poker_hands "poker hands" (note: high card, pair, two pair, three of a kind, straight, flush, full house, four of a kind, straight flush, royal flush)
+   SHORT 45257 "straight" [poker] noun common rec 2 link 2
+   LONG  45261 "straight flush" noun common rec 3 link 3
+4194 | theme poker_hands "poker hands" (note: high card, pair, two pair, three of a kind, straight, flush, full house, four of a kind, straight flush, royal flush)
+   SHORT 45258 "flush" [poker] noun common rec 2 link 2
+   LONG  45260 "royal flush" noun common rec 2 link 1
+4195 | theme poker_hands "poker hands" (note: high card, pair, two pair, three of a kind, straight, flush, full house, four of a kind, straight flush, royal flush)
+   SHORT 45258 "flush" [poker] noun common rec 2 link 2
+   LONG  45261 "straight flush" noun common rec 3 link 3
+4196 | theme poker_hands "poker hands" (note: high card, pair, two pair, three of a kind, straight, flush, full house, four of a kind, straight flush, royal flush)
+   SHORT 45265 "pair" [poker] noun common rec 1 link 2
+   LONG  45264 "two pair" noun common rec 3 link 2
+4197 | theme player_actions "poker player actions"
+   SHORT 45246 "raise" [poker] verb common rec 1 link 1
+   LONG  45281 "check-raise" verb common rec 4 link 4
+4198 | theme player_actions "poker player actions"
+   SHORT 45248 "check" [poker] verb common rec 1 link 2
+   LONG  45281 "check-raise" verb common rec 4 link 4
+4199 | theme blackjack_terms "blackjack terms"
+   SHORT 45206 "dealer" [card handler] noun common rec 1 link 1
+   LONG  45326 "tipping the dealer" verb common rec 3 link 5
+4200 | theme blackjack_terms "blackjack terms"
+   SHORT 45289 "bust" [card game] noun common rec 2 link 1
+   LONG  45324 "bust card" noun common rec 5 link 5
+4201 | theme blackjack_terms "blackjack terms"
+   SHORT 45291 "split" [blackjack] verb common rec 1 link 1
+   LONG  45325 "double after split" noun common rec 5 link 5
+4202 | theme blackjack_terms "blackjack terms"
+   SHORT 45297 "basic strategy" noun common rec 3 link 3
+   LONG  45323 "basic strategy chart" noun common rec 4 link 4
+4203 | theme betting_words "betting words"
+   SHORT 34166 "bet" [wager] verb common rec 1 link 1
+   LONG  45336 "bet slip" noun common rec 3 link 3
+4204 | theme betting_words "betting words"
+   SHORT 34166 "bet" [wager] verb common rec 1 link 1
+   LONG  45339 "prop bet" noun common rec 4 link 4
+4205 | theme betting_words "betting words"
+   SHORT 44847 "odds" [betting] noun common rec 1 link 1
+   LONG  45335 "odds-on" adjective common rec 3 link 2
+4206 | theme betting_words "betting words"
+   SHORT 44847 "odds" [betting] noun common rec 1 link 1
+   LONG  45344 "fixed odds" noun common rec 3 link 3
+4207 | theme lottery_words "lottery words"
+   SHORT 5666 "lottery" noun common rec 1 link 1
+   LONG  45373 "National Lottery" noun proper rec 2 link 2
+4208 | theme lottery_words "lottery words"
+   SHORT 5667 "lotto" noun common rec 2 link 1
+   LONG  45386 "lotto balls" noun common rec 3 link 2
+4209 | theme lottery_words "lottery words"
+   SHORT 5667 "lotto" noun common rec 2 link 1
+   LONG  45391 "Lotto Max" noun proper rec 4 link 5
+4210 | theme lottery_words "lottery words"
+   SHORT 5704 "jackpot" noun common rec 2 link 1
+   LONG  45388 "jackpot winner" noun common rec 2 link 3
+4211 | theme lottery_words "lottery words"
+   SHORT 45365 "draw" [lottery] noun common rec 1 link 1
+   LONG  45385 "draw machine" noun common rec 4 link 3
+4212 | theme lottery_words "lottery words"
+   SHORT 45366 "numbers" [lottery] noun common rec 1 link 2
+   LONG  45367 "winning numbers" noun common rec 1 link 1
+4213 | theme lottery_words "lottery words"
+   SHORT 45366 "numbers" [lottery] noun common rec 1 link 2
+   LONG  45378 "lucky numbers" noun common rec 1 link 2
+4214 | theme lottery_words "lottery words"
+   SHORT 45369 "prize" [lottery] noun common rec 1 link 2
+   LONG  45379 "unclaimed prize" noun common rec 3 link 4
+4215 | theme lottery_words "lottery words"
+   SHORT 45369 "prize" [lottery] noun common rec 1 link 2
+   LONG  45383 "prize pool" noun common rec 3 link 4
+4216 | theme lottery_words "lottery words"
+   SHORT 45389 "winner" [lottery] noun common rec 1 link 2
+   LONG  45388 "jackpot winner" noun common rec 2 link 3
+4217 | theme games_played_with_a_deck "games played with a deck"
+   SHORT 5659 "poker" [card game] noun common rec 1 link 1
+   LONG  5690 "video poker" noun phrase rec 3 link 3
+4218 | theme table_games "table games"
+   SHORT 5713 "chess" [board game] noun common rec 1 link 1
+   LONG  5763 "Chinese chess" noun proper rec 4 link 5
+4219 | theme table_games "table games"
+   SHORT 5714 "checkers" noun common rec 1 link 1
+   LONG  5768 "Chinese checkers" noun proper rec 2 link 3
+4220 | theme table_games "table games"
+   SHORT 5722 "Go" [board game] noun common rec 3 link 3
+   LONG  5745 "go fish" noun phrase rec 1 link 2
+4221 | theme table_games "table games"
+   SHORT 5736 "rummy" noun common rec 2 link 3
+   LONG  5737 "gin rummy" noun phrase rec 3 link 4
+4222 | theme board_games "board games"
+   SHORT 5714 "checkers" noun common rec 1 link 1
+   LONG  5768 "Chinese checkers" noun proper rec 2 link 3
+4223 | theme card_games "card games"
+   SHORT 5736 "rummy" noun common rec 2 link 2
+   LONG  5737 "gin rummy" noun phrase rec 3 link 3
+4224 | theme card_games "card games"
+   SHORT 5736 "rummy" noun common rec 2 link 2
+   LONG  45432 "rummy 500" noun common rec 4 link 4
+4225 | theme chess_terms "chess terms"
+   SHORT 45435 "check" [chess] noun common rec 1 link 1
+   LONG  45463 "perpetual check" noun common rec 4 link 4
+4226 | theme chess_terms "chess terms"
+   SHORT 45448 "rank" [chess] noun common rec 2 link 3
+   LONG  45464 "back rank" noun common rec 4 link 4
+4227 | theme chess_terms "chess terms"
+   SHORT 45449 "file" [chess] noun common rec 1 link 3
+   LONG  45471 "open file" noun common rec 4 link 4
+4228 | theme chess_openings "chess openings"
+   SHORT 58820 "Queen's Gambit" noun proper rec 2 link 1
+   LONG  58855 "Queen's Gambit Declined" noun proper rec 5 link 3
+4229 | theme card_game_words "card game words"
+   SHORT 45506 "trump" [card] noun common rec 2 link 2
+   LONG  45522 "no-trump" noun common rec 4 link 5
+4230 | theme word_games "word games"
+   SHORT 35040 "crossword" [puzzle] noun common rec 1 link 1
+   LONG  45569 "cryptic crossword" noun common rec 3 link 3
+4231 | theme mahjong_words "mahjong words"
+   SHORT 45532 "tile" [game] noun common rec 1 link 1
+   LONG  45588 "honor tile" noun common rec 5 link 4
+4232 | theme mahjong_words "mahjong words"
+   SHORT 45574 "wind" [mahjong] noun common rec 1 link 2
+   LONG  45582 "east wind" noun common rec 3 link 3
+4233 | theme mahjong_words "mahjong words"
+   SHORT 45575 "dragon" [mahjong] noun common rec 1 link 2
+   LONG  45583 "green dragon" noun common rec 3 link 3
+4234 | theme mahjong_words "mahjong words"
+   SHORT 45575 "dragon" [mahjong] noun common rec 1 link 2
+   LONG  45584 "white dragon" noun common rec 3 link 3
+4235 | theme mahjong_words "mahjong words"
+   SHORT 45575 "dragon" [mahjong] noun common rec 1 link 2
+   LONG  50090 "red dragon" [mahjong tile] noun phrase rec 3 link 3
+4236 | theme two_player_games "two-player games"
+   SHORT 5713 "chess" [board game] noun common rec 1 link 1
+   LONG  5763 "Chinese chess" noun proper rec 4 link 5
+4237 | theme video_game_genres "video game genres"
+   SHORT 45611 "strategy" [game genre] noun common rec 1 link 2
+   LONG  45631 "real-time strategy" noun common rec 3 link 3
+4238 | theme video_game_genres "video game genres"
+   SHORT 45620 "adventure" [game genre] noun common rec 1 link 2
+   LONG  45629 "text adventure" noun common rec 3 link 4
+4239 | theme gaming_hardware "gaming hardware"
+   SHORT 7254 "keyboard" [computer] noun common rec 1 link 2
+   LONG  45688 "mechanical keyboard" noun common rec 3 link 4
+4240 | theme gaming_hardware "gaming hardware"
+   SHORT 23222 "headset" [audio] noun common rec 2 link 3
+   LONG  7340 "VR headset" noun common rec 2 link 3
+4241 | theme pinball_words "pinball words"
+   SHORT 45707 "flipper" [pinball] noun common rec 3 link 1
+   LONG  58894 "flipper button" noun common rec 3 link 2
+4242 | theme pinball_words "pinball words"
+   SHORT 45711 "bumper" [pinball] noun common rec 2 link 2
+   LONG  58896 "pop bumper" noun common rec 4 link 2
+4243 | theme game_controls "game controls"
+   SHORT 45717 "button" [controller] noun common rec 1 link 1
+   LONG  45747 "shoulder button" noun common rec 3 link 3
+4244 | theme game_controls "game controls"
+   SHORT 45717 "button" [controller] noun common rec 1 link 1
+   LONG  45749 "A button" noun common rec 2 link 2
+4245 | theme game_controls "game controls"
+   SHORT 45717 "button" [controller] noun common rec 1 link 1
+   LONG  45750 "X button" noun common rec 3 link 2
+4246 | theme esports_words "esports words"
+   SHORT 61793 "gaming" noun common rec 1 link 1
+   LONG  45776 "gaming house" noun common rec 4 link 4
+4247 | theme power_ups_and_pickups "power-ups and pickups" (note: items collected in video games: coin, extra life, health pack, shield)
+   SHORT 45784 "star" [game] noun common rec 1 link 2
+   LONG  45806 "Super Star" noun proper rec 2 link 2
+4248 | theme power_ups_and_pickups "power-ups and pickups" (note: items collected in video games: coin, extra life, health pack, shield)
+   SHORT 45797 "orb" [game] noun common rec 2 link 4
+   LONG  45804 "XP orb" noun common rec 4 link 4
+4249 | theme video_game_characters "video game characters"
+   SHORT 5782 "Pac-Man" noun title rec 1 link 1
+   LONG  45845 "Ms. Pac-Man" noun person rec 3 link 3
+4250 | theme hobbies_and_crafts "hobbies and crafts"
+   SHORT 5850 "weaving" [cloth craft] noun common rec 2 link 3
+   LONG  5876 "basket weaving" noun phrase rec 2 link 3
+4251 | theme crafts "crafts"
+   SHORT 5850 "weaving" [cloth craft] noun common rec 2 link 2
+   LONG  5876 "basket weaving" noun phrase rec 2 link 3
+4252 | theme model_making "model making"
+   SHORT 45900 "kit" (full: model kit) noun common rec 1 link 1
+   LONG  45931 "rocket kit" noun common rec 3 link 3
+4253 | theme model_making "model making"
+   SHORT 45900 "kit" (full: model kit) noun common rec 1 link 1
+   LONG  61825 "resin kit" noun common rec 3 link 4
+4254 | theme model_making "model making"
+   SHORT 45900 "kit" (full: model kit) noun common rec 1 link 1
+   LONG  64351 "plastic kit" noun common rec 3 link 1
+4255 | theme model_making "model making"
+   SHORT 45902 "scale" [model] noun common rec 2 link 2
+   LONG  45920 "HO scale" noun common rec 4 link 3
+4256 | theme model_making "model making"
+   SHORT 45902 "scale" [model] noun common rec 2 link 2
+   LONG  45921 "N scale" noun common rec 4 link 3
+4257 | theme model_making "model making"
+   SHORT 45925 "wash" [model paint] noun common rec 3 link 4
+   LONG  61819 "pin wash" noun common rec 4 link 5
+4258 | theme puzzles "puzzles"
+   SHORT 35040 "crossword" [puzzle] noun common rec 1 link 1
+   LONG  45569 "cryptic crossword" noun common rec 3 link 3
+4259 | theme logic_puzzles "logic puzzles"
+   SHORT 5890 "sudoku" noun common rec 2 link 1
+   LONG  58922 "killer sudoku" noun common rec 3 link 3
+4260 | theme logic_puzzles "logic puzzles"
+   SHORT 45562 "riddle" noun common rec 1 link 2
+   LONG  64353 "Einstein's riddle" noun common rec 4 link 2
+4261 | theme magic_tricks "magic tricks"
+   SHORT 65897 "card" [playing-card magic] noun common rec 2 link 1
+   LONG  45960 "pick a card" noun common rec 1 link 2
+4262 | theme magic_tricks "magic tricks"
+   SHORT 65897 "card" [playing-card magic] noun common rec 2 link 1
+   LONG  45969 "card force" noun common rec 5 link 4
+4263 | theme paper_crafts "paper crafts"
+   SHORT 5852 "origami" [paper folding] noun common rec 2 link 1
+   LONG  45998 "modular origami" noun common rec 5 link 4
+4264 | theme pottery_words "pottery words"
+   SHORT 6902 "kiln" noun common rec 3 link 1
+   LONG  46034 "kiln shelf" noun common rec 4 link 5
+4265 | theme pottery_words "pottery words"
+   SHORT 33027 "potter" [ceramicist] noun common rec 2 link 1
+   LONG  39798 "potter's wheel" noun common rec 2 link 1
+4266 | theme pottery_words "pottery words"
+   SHORT 46003 "glaze" [pottery] noun common rec 2 link 1
+   LONG  46021 "crackle glaze" noun common rec 4 link 4
+4267 | theme pottery_words "pottery words"
+   SHORT 46004 "slip" [pottery] noun common rec 3 link 3
+   LONG  46035 "slip casting" noun common rec 5 link 5
+4268 | theme woodworking_words "woodworking words"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4844 "coping saw" noun common rec 4 link 3
+4269 | theme woodworking_words "woodworking words"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  23689 "table saw" noun common rec 3 link 2
+4270 | theme woodworking_words "woodworking words"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  46052 "scroll saw" noun common rec 4 link 3
+4271 | theme woodworking_words "woodworking words"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55280 "fret saw" noun common rec 4 link 4
+4272 | theme woodworking_words "woodworking words"
+   SHORT 329 "plane" [tool] noun common rec 3 link 2
+   LONG  23677 "hand plane" noun common rec 3 link 2
+4273 | theme manual_woodworking_tools "manual woodworking tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  4844 "coping saw" noun common rec 4 link 3
+4274 | theme manual_woodworking_tools "manual woodworking tools"
+   SHORT 318 "saw" [tool] noun common rec 1 link 1
+   LONG  55280 "fret saw" noun common rec 4 link 4
+4275 | theme toys_and_play "toys and play"
+   SHORT 5921 "doll" [toy] noun common rec 1 link 1
+   LONG  5993 "rag doll" noun phrase rec 2 link 3
+4276 | theme toys_and_play "toys and play"
+   SHORT 5921 "doll" [toy] noun common rec 1 link 1
+   LONG  5994 "Russian doll" noun proper rec 2 link 3
+4277 | theme toys "toys"
+   SHORT 46057 "ball" [toy] noun common rec 1 link 1
+   LONG  46064 "Magic 8 Ball" noun proper rec 3 link 4
+4278 | theme playground "playground"
+   SHORT 5940 "swing" [playground] noun common rec 1 link 1
+   LONG  15798 "baby swing" noun common rec 2 link 4
+4279 | theme playground "playground"
+   SHORT 5940 "swing" [playground] noun common rec 1 link 1
+   LONG  39815 "tire swing" noun common rec 3 link 2
+4280 | theme outdoor_games "outdoor games"
+   SHORT 5933 "Frisbee" noun org rec 1 link 1
+   LONG  42642 "ultimate frisbee" noun common rec 3 link 3
+4281 | theme building_toys "building toys"
+   SHORT 46147 "bricks" [toy] noun common rec 1 link 2
+   LONG  46150 "Stickle Bricks" noun proper rec 4 link 3
+4282 | theme building_toys "building toys"
+   SHORT 46147 "bricks" [toy] noun common rec 1 link 2
+   LONG  46156 "interlocking bricks" noun common rec 2 link 2
+4283 | theme building_toys "building toys"
+   SHORT 62841 "blocks" noun phrase rec 1 link 1
+   LONG  46143 "wooden blocks" noun common rec 1 link 1
+4284 | theme dolls_and_figures "dolls and figures"
+   SHORT 5951 "puppet" noun common rec 1 link 3
+   LONG  12356 "finger puppet" noun common rec 1 link 4
+4285 | theme sports_day_events "sports day events"
+   SHORT 42635 "relay" [electronics] noun common rec 4 link 5
+   LONG  43932 "sprint relay" noun common rec 3 link 3
+4286 | theme sports_day_events "sports day events"
+   SHORT 42635 "relay" [electronics] noun common rec 4 link 5
+   LONG  46202 "water relay" noun common rec 3 link 3
+4287 | theme sports_day_events "sports day events"
+   SHORT 42635 "relay" [electronics] noun common rec 4 link 5
+   LONG  46204 "sponge relay" noun common rec 4 link 3
+4288 | theme sports_day_events "sports day events"
+   SHORT 46190 "sprint" [race] verb common rec 2 link 1
+   LONG  43932 "sprint relay" noun common rec 3 link 3
+4289 | theme south_asian_games "south asian games" (note: kabaddi, kho kho, carrom, gilli danda)
+   SHORT 46332 "goli" noun common rec 5 link 4
+   LONG  46324 "danda goli" noun common rec 5 link 4
+4290 | theme aussie_rules_terms "aussie rules terms"
+   SHORT 42895 "ruck" noun common rec 3 link 2
+   LONG  46351 "ruck-rover" noun common rec 5 link 5
+4291 | theme aussie_rules_terms "aussie rules terms"
+   SHORT 46345 "goal" [score] noun common rec 1 link 1
+   LONG  46354 "goal square" noun common rec 4 link 4
+4292 | theme aussie_rules_terms "aussie rules terms"
+   SHORT 46345 "goal" [score] noun common rec 1 link 1
+   LONG  46375 "goal umpire" noun common rec 4 link 3
+4293 | theme aussie_rules_terms "aussie rules terms"
+   SHORT 46346 "behind" [score] noun common rec 2 link 2
+   LONG  46384 "rushed behind" noun common rec 5 link 5
+4294 | theme aussie_rules_terms "aussie rules terms"
+   SHORT 46350 "rover" [AFL position] noun common rec 3 link 3
+   LONG  46351 "ruck-rover" noun common rec 5 link 5
+4295 | theme capoeira_words "capoeira words"
+   SHORT 46484 "mestre" [capoeira master] noun common rec 4 link 1
+   LONG  46509 "Mestre Bimba" noun person rec 5 link 2
+4296 | theme capoeira_words "capoeira words"
+   SHORT 46484 "mestre" [capoeira master] noun common rec 4 link 1
+   LONG  46510 "Mestre Pastinha" noun person rec 5 link 3
+4297 | theme capoeira_words "capoeira words"
+   SHORT 46513 "meia-lua" noun common rec 5 link 3
+   LONG  46488 "meia lua de frente" noun common rec 5 link 4
+4298 | theme british_pub_games "british pub games"
+   SHORT 46535 "skittles" [game] noun common rec 2 link 2
+   LONG  46537 "bar skittles" noun common rec 4 link 3
+4299 | theme british_pub_games "british pub games"
+   SHORT 46535 "skittles" [game] noun common rec 2 link 2
+   LONG  46538 "table skittles" noun common rec 4 link 3
+4300 | theme british_pub_games "british pub games"
+   SHORT 46535 "skittles" [game] noun common rec 2 link 2
+   LONG  46552 "hood skittles" noun common rec 5 link 4
+4301 | theme instruments "instruments"
+   SHORT 6007 "organ" [instrument] noun common rec 1 link 1
+   LONG  6011 "mouth organ" noun common rec 3 link 3
+4302 | theme instruments "instruments"
+   SHORT 6010 "harmonica" noun common rec 1 link 2
+   LONG  6051 "glass harmonica" noun common rec 5 link 5
+4303 | theme instruments "instruments"
+   SHORT 10595 "drum" [instrument] noun common rec 1 link 1
+   LONG  6050 "hang drum" noun common rec 5 link 5
+4304 | theme string_instruments "string instruments"
+   SHORT 279 "guitar" noun common rec 1 link 1
+   LONG  10535 "bass guitar" noun common rec 2 link 2
+4305 | theme string_instruments "string instruments"
+   SHORT 279 "guitar" noun common rec 1 link 1
+   LONG  10536 "electric guitar" noun common rec 1 link 1
+4306 | theme string_instruments "string instruments"
+   SHORT 279 "guitar" noun common rec 1 link 1
+   LONG  10537 "acoustic guitar" noun common rec 1 link 1
+4307 | theme guitar_types "guitar types"
+   SHORT 63344 "acoustic" [instrument] noun common rec 1 link 1
+   LONG  51349 "semi-acoustic" (full: semi-acoustic guitar) noun common rec 4 link 4
+4308 | theme guitar_types "guitar types"
+   SHORT 63344 "acoustic" [instrument] noun common rec 1 link 1
+   LONG  51350 "acoustic-electric" noun common rec 3 link 3
+4309 | theme guitar_types "guitar types"
+   SHORT 63346 "electric" [powered] noun common rec 1 link 1
+   LONG  51350 "acoustic-electric" noun common rec 3 link 3
+4310 | theme bowed_instruments "bowed instruments"
+   SHORT 283 "viola" [instrument] noun common rec 3 link 1
+   LONG  51369 "viola da gamba" noun common rec 4 link 3
+4311 | theme bowed_instruments "bowed instruments"
+   SHORT 283 "viola" [instrument] noun common rec 3 link 1
+   LONG  51371 "viola d'amore" noun common rec 5 link 4
+4312 | theme bowed_instruments "bowed instruments"
+   SHORT 10654 "fiddle" [violin] noun common rec 2 link 2
+   LONG  38532 "hardanger fiddle" noun common rec 5 link 4
+4313 | theme bowed_instruments "bowed instruments"
+   SHORT 10654 "fiddle" [violin] noun common rec 2 link 2
+   LONG  51375 "horsehead fiddle" noun common rec 5 link 5
+4314 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6003 "flute" noun common rec 1 link 1
+   LONG  10558 "alto flute" noun common rec 4 link 3
+4315 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6003 "flute" noun common rec 1 link 1
+   LONG  10559 "bass flute" noun common rec 4 link 4
+4316 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6003 "flute" noun common rec 1 link 1
+   LONG  10564 "pan flute" noun common rec 3 link 3
+4317 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6004 "saxophone" noun common rec 1 link 1
+   LONG  10560 "alto saxophone" noun common rec 3 link 3
+4318 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6004 "saxophone" noun common rec 1 link 1
+   LONG  10561 "tenor saxophone" noun common rec 3 link 3
+4319 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6006 "clarinet" noun common rec 1 link 1
+   LONG  10557 "bass clarinet" noun common rec 3 link 3
+4320 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6016 "oboe" noun common rec 2 link 1
+   LONG  10566 "bass oboe" noun common rec 5 link 5
+4321 | theme woodwind_instruments "woodwind instruments"
+   SHORT 6016 "oboe" noun common rec 2 link 1
+   LONG  10575 "oboe d'amore" noun common rec 5 link 5
+4322 | theme brass_instruments "brass instruments"
+   SHORT 292 "trumpet" [instrument] noun common rec 1 link 1
+   LONG  10579 "piccolo trumpet" noun common rec 4 link 4
+4323 | theme brass_instruments "brass instruments"
+   SHORT 293 "trombone" noun common rec 1 link 1
+   LONG  10578 "bass trombone" noun common rec 4 link 3
+4324 | theme brass_instruments "brass instruments"
+   SHORT 293 "trombone" noun common rec 1 link 1
+   LONG  10591 "slide trombone" noun common rec 4 link 3
+4325 | theme brass_instruments "brass instruments"
+   SHORT 294 "tuba" noun common rec 1 link 1
+   LONG  10584 "bass tuba" noun common rec 4 link 3
+4326 | theme brass_instruments "brass instruments"
+   SHORT 294 "tuba" noun common rec 1 link 1
+   LONG  10590 "wagner tuba" noun common rec 5 link 5
+4327 | theme brass_instruments "brass instruments"
+   SHORT 10594 "horn" [instrument] noun common rec 2 link 2
+   LONG  295 "French horn" noun proper rec 2 link 1
+4328 | theme brass_instruments "brass instruments"
+   SHORT 10594 "horn" [instrument] noun common rec 2 link 2
+   LONG  10580 "baritone horn" noun common rec 4 link 4
+4329 | theme brass_instruments "brass instruments"
+   SHORT 10594 "horn" [instrument] noun common rec 2 link 2
+   LONG  10581 "tenor horn" noun common rec 4 link 4
+4330 | theme brass_instruments "brass instruments"
+   SHORT 10594 "horn" [instrument] noun common rec 2 link 2
+   LONG  10582 "alto horn" noun common rec 4 link 4
+4331 | theme brass_instruments "brass instruments"
+   SHORT 10594 "horn" [instrument] noun common rec 2 link 2
+   LONG  10585 "natural horn" noun common rec 5 link 5
+4332 | theme brass_instruments "brass instruments"
+   SHORT 10594 "horn" [instrument] noun common rec 2 link 2
+   LONG  10588 "post horn" noun common rec 5 link 5
+4333 | theme brass_instruments "brass instruments"
+   SHORT 10594 "horn" [instrument] noun common rec 2 link 2
+   LONG  10592 "hunting horn" noun common rec 4 link 4
+4334 | theme percussion_instruments "percussion instruments"
+   SHORT 10595 "drum" [instrument] noun common rec 1 link 1
+   LONG  6002 "drum kit" noun common rec 2 link 2
+4335 | theme percussion_instruments "percussion instruments"
+   SHORT 10595 "drum" [instrument] noun common rec 1 link 1
+   LONG  10598 "snare drum" noun common rec 2 link 1
+4336 | theme percussion_instruments "percussion instruments"
+   SHORT 10595 "drum" [instrument] noun common rec 1 link 1
+   LONG  10599 "bass drum" noun common rec 2 link 2
+4337 | theme percussion_instruments "percussion instruments"
+   SHORT 10595 "drum" [instrument] noun common rec 1 link 1
+   LONG  10608 "steel drum" noun common rec 2 link 2
+4338 | theme keyboard_instruments "keyboard instruments"
+   SHORT 5998 "piano" noun common rec 1 link 1
+   LONG  10628 "grand piano" noun common rec 1 link 1
+4339 | theme keyboard_instruments "keyboard instruments"
+   SHORT 5998 "piano" noun common rec 1 link 1
+   LONG  10629 "upright piano" noun common rec 2 link 2
+4340 | theme keyboard_instruments "keyboard instruments"
+   SHORT 5998 "piano" noun common rec 1 link 1
+   LONG  10630 "electric piano" noun common rec 2 link 2
+4341 | theme keyboard_instruments "keyboard instruments"
+   SHORT 5998 "piano" noun common rec 1 link 1
+   LONG  10641 "player piano" noun common rec 3 link 3
+4342 | theme keyboard_instruments "keyboard instruments"
+   SHORT 5998 "piano" noun common rec 1 link 1
+   LONG  10644 "digital piano" noun common rec 2 link 2
+4343 | theme keyboard_instruments "keyboard instruments"
+   SHORT 5998 "piano" noun common rec 1 link 1
+   LONG  10645 "stage piano" noun common rec 4 link 3
+4344 | theme keyboard_instruments "keyboard instruments"
+   SHORT 5998 "piano" noun common rec 1 link 1
+   LONG  10646 "toy piano" noun common rec 2 link 4
+4345 | theme keyboard_instruments "keyboard instruments"
+   SHORT 6007 "organ" [instrument] noun common rec 1 link 1
+   LONG  10634 "pipe organ" noun common rec 2 link 2
+4346 | theme keyboard_instruments "keyboard instruments"
+   SHORT 6007 "organ" [instrument] noun common rec 1 link 1
+   LONG  10649 "cathedral organ" noun common rec 3 link 4
+4347 | theme folk_instruments "folk instruments"
+   SHORT 282 "harp" [instrument] noun common rec 1 link 2
+   LONG  10674 "jaw harp" noun common rec 4 link 4
+4348 | theme african_instruments "african instruments"
+   SHORT 61853 "drum" (full: African drum) noun common rec 1 link 1
+   LONG  35290 "talking drum" noun common rec 4 link 2
+4349 | theme indian_instruments "indian instruments"
+   SHORT 6036 "tabla" noun common rec 4 link 1
+   LONG  51510 "tabla tarang" noun common rec 5 link 5
+4350 | theme indian_instruments "indian instruments"
+   SHORT 10665 "veena" noun common rec 5 link 3
+   LONG  51498 "rudra veena" noun common rec 5 link 5
+4351 | theme andean_instruments "andean instruments"
+   SHORT 61860 "flute" (full: Andean flute) noun common rec 3 link 2
+   LONG  10564 "pan flute" noun common rec 3 link 1
+4352 | theme celtic_instruments "celtic instruments"
+   SHORT 282 "harp" [instrument] noun common rec 1 link 1
+   LONG  51573 "Irish harp" noun common rec 3 link 2
+4353 | theme celtic_instruments "celtic instruments"
+   SHORT 282 "harp" [instrument] noun common rec 1 link 1
+   LONG  51577 "triple harp" noun common rec 5 link 4
+4354 | theme celtic_instruments "celtic instruments"
+   SHORT 282 "harp" [instrument] noun common rec 1 link 1
+   LONG  51578 "Welsh harp" noun common rec 4 link 3
+4355 | theme celtic_instruments "celtic instruments"
+   SHORT 6020 "bagpipes" noun common rec 2 link 1
+   LONG  51561 "Highland bagpipes" noun common rec 3 link 2
+4356 | theme instrument_parts "instrument parts"
+   SHORT 6067 "key" [music] noun common rec 2 link 2
+   LONG  10719 "tuning key" noun common rec 4 link 3
+4357 | theme instrument_parts "instrument parts"
+   SHORT 6067 "key" [music] noun common rec 2 link 2
+   LONG  10748 "octave key" noun common rec 5 link 5
+4358 | theme instrument_parts "instrument parts"
+   SHORT 50419 "neck" [instrument] noun common rec 1 link 1
+   LONG  10712 "guitar neck" noun common rec 2 link 3
+4359 | theme instrument_parts "instrument parts"
+   SHORT 50421 "head" [drum] noun common rec 2 link 3
+   LONG  10718 "machine head" noun common rec 4 link 3
+4360 | theme guitar_parts "guitar parts"
+   SHORT 10707 "string" [music] noun common rec 1 link 1
+   LONG  51592 "string tree" noun common rec 5 link 5
+4361 | theme guitar_parts "guitar parts"
+   SHORT 10723 "pickup" [music] noun common rec 2 link 2
+   LONG  51589 "pickup selector" noun common rec 4 link 4
+4362 | theme piano_parts "piano parts"
+   SHORT 6067 "key" [music] noun common rec 2 link 1
+   LONG  51615 "key slip" noun common rec 5 link 5
+4363 | theme piano_parts "piano parts"
+   SHORT 10711 "pedal" [music] noun common rec 1 link 1
+   LONG  51597 "sustain pedal" noun common rec 3 link 2
+4364 | theme piano_parts "piano parts"
+   SHORT 10711 "pedal" [music] noun common rec 1 link 1
+   LONG  51598 "soft pedal" noun common rec 3 link 3
+4365 | theme piano_parts "piano parts"
+   SHORT 10711 "pedal" [music] noun common rec 1 link 1
+   LONG  51599 "sostenuto pedal" noun common rec 5 link 3
+4366 | theme piano_parts "piano parts"
+   SHORT 10711 "pedal" [music] noun common rec 1 link 1
+   LONG  51622 "pedal lyre" noun common rec 5 link 4
+4367 | theme classroom_instruments "classroom instruments"
+   SHORT 10626 "shaker" [instrument] noun common rec 2 link 2
+   LONG  10759 "egg shaker" noun common rec 3 link 2
+4368 | theme classroom_instruments "classroom instruments"
+   SHORT 10760 "whistle" [instrument] noun common rec 1 link 4
+   LONG  10761 "slide whistle" noun common rec 3 link 4
+4369 | theme music_genres "music genres"
+   SHORT 10764 "rock" (full: rock music) noun common rec 1 link 1
+   LONG  10802 "math rock" noun common rec 5 link 5
+4370 | theme music_genres "music genres"
+   SHORT 10764 "rock" (full: rock music) noun common rec 1 link 1
+   LONG  10810 "glam rock" noun common rec 3 link 4
+4371 | theme music_genres "music genres"
+   SHORT 10765 "pop" [music] noun common rec 1 link 1
+   LONG  10798 "K-pop" noun common rec 3 link 3
+4372 | theme rock_styles "rock styles"
+   SHORT 10775 "punk" [music] noun common rec 1 link 1
+   LONG  51639 "pop punk" noun common rec 3 link 3
+4373 | theme rock_styles "rock styles"
+   SHORT 10775 "punk" [music] noun common rec 1 link 1
+   LONG  51640 "post-punk" noun common rec 3 link 3
+4374 | theme rock_styles "rock styles"
+   SHORT 10775 "punk" [music] noun common rec 1 link 1
+   LONG  51653 "hardcore punk" noun common rec 3 link 3
+4375 | theme rock_styles "rock styles"
+   SHORT 10775 "punk" [music] noun common rec 1 link 1
+   LONG  51655 "proto-punk" noun common rec 5 link 5
+4376 | theme electronic_music_styles "electronic music styles"
+   SHORT 10783 "techno" noun common rec 2 link 1
+   LONG  51676 "dub techno" noun common rec 5 link 5
+4377 | theme electronic_music_styles "electronic music styles"
+   SHORT 10783 "techno" noun common rec 2 link 1
+   LONG  51680 "minimal techno" noun common rec 4 link 4
+4378 | theme electronic_music_styles "electronic music styles"
+   SHORT 10783 "techno" noun common rec 2 link 1
+   LONG  51682 "Detroit techno" noun common rec 5 link 4
+4379 | theme electronic_music_styles "electronic music styles"
+   SHORT 10783 "techno" noun common rec 2 link 1
+   LONG  51686 "hardcore techno" noun common rec 5 link 5
+4380 | theme electronic_music_styles "electronic music styles"
+   SHORT 10795 "ambient" [music] noun common rec 3 link 2
+   LONG  51687 "dark ambient" noun common rec 5 link 5
+4381 | theme electronic_music_styles "electronic music styles"
+   SHORT 51656 "house" [music] noun common rec 1 link 1
+   LONG  51667 "acid house" noun common rec 3 link 3
+4382 | theme electronic_music_styles "electronic music styles"
+   SHORT 51656 "house" [music] noun common rec 1 link 1
+   LONG  51668 "deep house" noun common rec 3 link 3
+4383 | theme electronic_music_styles "electronic music styles"
+   SHORT 51656 "house" [music] noun common rec 1 link 1
+   LONG  51681 "progressive house" noun common rec 4 link 3
+4384 | theme electronic_music_styles "electronic music styles"
+   SHORT 51656 "house" [music] noun common rec 1 link 1
+   LONG  51685 "tech house" noun common rec 4 link 3
+4385 | theme electronic_music_styles "electronic music styles"
+   SHORT 51660 "electro" [music] noun common rec 3 link 3
+   LONG  51688 "electro swing" noun common rec 4 link 4
+4386 | theme classical_forms "classical music forms"
+   SHORT 10815 "concerto" noun common rec 3 link 1
+   LONG  10828 "concerto grosso" noun common rec 5 link 4
+4387 | theme classical_forms "classical music forms"
+   SHORT 10851 "variations" noun common rec 3 link 4
+   LONG  10852 "theme and variations" noun common rec 4 link 4
+4388 | theme orchestral_pieces "orchestral pieces"
+   SHORT 10815 "concerto" noun common rec 3 link 1
+   LONG  10828 "concerto grosso" noun common rec 5 link 4
+4389 | theme jazz_words "jazz words"
+   SHORT 10856 "bop" noun common rec 3 link 3
+   LONG  10870 "hard bop" noun common rec 5 link 4
+4390 | theme american_roots_music "american roots music"
+   SHORT 10767 "blues" [music] noun common rec 1 link 1
+   LONG  51814 "Delta blues" noun common rec 3 link 2
+4391 | theme american_roots_music "american roots music"
+   SHORT 10767 "blues" [music] noun common rec 1 link 1
+   LONG  51815 "Chicago blues" noun common rec 3 link 2
+4392 | theme american_roots_music "american roots music"
+   SHORT 10767 "blues" [music] noun common rec 1 link 1
+   LONG  51816 "Piedmont blues" noun common rec 5 link 4
+4393 | theme american_roots_music "american roots music"
+   SHORT 10767 "blues" [music] noun common rec 1 link 1
+   LONG  51826 "swamp blues" noun common rec 5 link 5
+4394 | theme american_roots_music "american roots music"
+   SHORT 10767 "blues" [music] noun common rec 1 link 1
+   LONG  51827 "Texas blues" noun common rec 4 link 3
+4395 | theme american_roots_music "american roots music"
+   SHORT 10767 "blues" [music] noun common rec 1 link 1
+   LONG  51834 "country blues" noun common rec 4 link 3
+4396 | theme american_roots_music "american roots music"
+   SHORT 10768 "country" [music] noun common rec 1 link 1
+   LONG  51822 "outlaw country" noun common rec 3 link 3
+4397 | theme american_roots_music "american roots music"
+   SHORT 10768 "country" [music] noun common rec 1 link 1
+   LONG  51834 "country blues" noun common rec 4 link 3
+4398 | theme american_roots_music "american roots music"
+   SHORT 10776 "folk" [music] noun common rec 1 link 2
+   LONG  51810 "Appalachian folk" noun common rec 3 link 3
+4399 | theme american_roots_music "american roots music"
+   SHORT 10779 "gospel" [music] noun common rec 2 link 2
+   LONG  51831 "bluegrass gospel" noun common rec 5 link 4
+4400 | theme american_roots_music "american roots music"
+   SHORT 10779 "gospel" [music] noun common rec 2 link 2
+   LONG  51836 "southern gospel" noun common rec 4 link 3
+4401 | theme american_roots_music "american roots music"
+   SHORT 10789 "bluegrass" [music] noun common rec 3 link 1
+   LONG  51831 "bluegrass gospel" noun common rec 5 link 4
+4402 | theme american_roots_music "american roots music"
+   SHORT 51809 "Cajun" (full: Cajun music) noun common rec 3 link 2
+   LONG  51837 "Cajun two-step" noun common rec 5 link 5
+4403 | theme song_types "song types"
+   SHORT 6511 "ballad" noun common rec 3 link 1
+   LONG  10942 "power ballad" noun common rec 3 link 2
+4404 | theme song_types "song types"
+   SHORT 10926 "anthem" [song] noun common rec 2 link 2
+   LONG  10952 "party anthem" noun common rec 3 link 3
+4405 | theme hip_hop_words "hip hop words"
+   SHORT 10780 "rap" [music] noun common rec 1 link 1
+   LONG  10970 "rap battle" noun common rec 2 link 2
+4406 | theme hip_hop_words "hip hop words"
+   SHORT 10780 "rap" [music] noun common rec 1 link 1
+   LONG  10989 "mumble rap" noun common rec 3 link 4
+4407 | theme hip_hop_words "hip hop words"
+   SHORT 10959 "bars" [rap] noun common rec 2 link 2
+   LONG  10985 "sixteen bars" noun phrase rec 4 link 4
+4408 | theme hip_hop_words "hip hop words"
+   SHORT 10966 "diss" verb common rec 3 link 2
+   LONG  10967 "diss track" [rap song] noun common rec 3 link 2
+4409 | theme music_words "music words"
+   SHORT 6067 "key" [music] noun common rec 2 link 2
+   LONG  6112 "key signature" noun phrase rec 3 link 3
+4410 | theme music_terms "music terms"
+   SHORT 6067 "key" [music] noun common rec 2 link 2
+   LONG  6112 "key signature" noun phrase rec 3 link 2
+4411 | theme voice_types "voice types"
+   SHORT 6195 "tenor" [singer] noun common rec 2 link 1
+   LONG  11020 "lyric tenor" noun common rec 5 link 5
+4412 | theme voice_types "voice types"
+   SHORT 6196 "soprano" [singer] noun common rec 2 link 1
+   LONG  11021 "dramatic soprano" noun common rec 5 link 5
+4413 | theme voice_types "voice types"
+   SHORT 6196 "soprano" [singer] noun common rec 2 link 1
+   LONG  11027 "boy soprano" noun common rec 3 link 3
+4414 | theme voice_types "voice types"
+   SHORT 11011 "bass" [voice] noun common rec 1 link 1
+   LONG  11019 "bass-baritone" noun common rec 5 link 4
+4415 | theme voice_types "voice types"
+   SHORT 11012 "baritone" [voice] noun common rec 3 link 1
+   LONG  11019 "bass-baritone" noun common rec 5 link 4
+4416 | theme classical_voice_types "classical voice types"
+   SHORT 6195 "tenor" [singer] noun common rec 2 link 1
+   LONG  11020 "lyric tenor" noun common rec 5 link 4
+4417 | theme classical_voice_types "classical voice types"
+   SHORT 6195 "tenor" [singer] noun common rec 2 link 1
+   LONG  51864 "dramatic tenor" noun common rec 4 link 4
+4418 | theme classical_voice_types "classical voice types"
+   SHORT 6196 "soprano" [singer] noun common rec 2 link 1
+   LONG  11021 "dramatic soprano" noun common rec 5 link 4
+4419 | theme classical_voice_types "classical voice types"
+   SHORT 6196 "soprano" [singer] noun common rec 2 link 1
+   LONG  11027 "boy soprano" noun common rec 3 link 3
+4420 | theme classical_voice_types "classical voice types"
+   SHORT 6196 "soprano" [singer] noun common rec 2 link 1
+   LONG  51863 "lyric soprano" noun common rec 4 link 3
+4421 | theme classical_voice_types "classical voice types"
+   SHORT 11011 "bass" [voice] noun common rec 1 link 1
+   LONG  11019 "bass-baritone" noun common rec 5 link 4
+4422 | theme classical_voice_types "classical voice types"
+   SHORT 11011 "bass" [voice] noun common rec 1 link 1
+   LONG  51865 "bass buffo" noun common rec 5 link 5
+4423 | theme classical_voice_types "classical voice types"
+   SHORT 11012 "baritone" [voice] noun common rec 3 link 1
+   LONG  11019 "bass-baritone" noun common rec 5 link 4
+4424 | theme classical_voice_types "classical voice types"
+   SHORT 11012 "baritone" [voice] noun common rec 3 link 1
+   LONG  51868 "lyric baritone" noun common rec 5 link 4
+4425 | theme classical_voice_types "classical voice types"
+   SHORT 11033 "mezzo" noun common rec 3 link 2
+   LONG  51872 "dramatic mezzo" noun common rec 5 link 5
+4426 | theme orchestra_words "orchestra words"
+   SHORT 6140 "conductor" [orchestra] noun common rec 2 link 1
+   LONG  11063 "assistant conductor" noun common rec 4 link 4
+4427 | theme orchestra_words "orchestra words"
+   SHORT 6140 "conductor" [orchestra] noun common rec 2 link 1
+   LONG  11064 "guest conductor" noun common rec 3 link 4
+4428 | theme orchestra_words "orchestra words"
+   SHORT 10707 "string" [music] noun common rec 1 link 3
+   LONG  11043 "string section" noun common rec 3 link 1
+4429 | theme orchestra_words "orchestra words"
+   SHORT 11047 "score" [music] noun common rec 2 link 2
+   LONG  11067 "full score" noun common rec 4 link 4
+4430 | theme orchestra_words "orchestra words"
+   SHORT 11070 "brass" [music] noun common rec 1 link 3
+   LONG  11045 "brass section" noun common rec 2 link 2
+4431 | theme orchestra_words "orchestra words"
+   SHORT 11071 "percussion" [music] noun common rec 2 link 3
+   LONG  11046 "percussion section" noun common rec 3 link 2
+4432 | theme tempo_words "tempo words"
+   SHORT 11074 "allegro" [tempo] noun common rec 3 link 1
+   LONG  11103 "allegro con brio" adverb common rec 4 link 4
+4433 | theme tempo_words "tempo words"
+   SHORT 11074 "allegro" [tempo] noun common rec 3 link 1
+   LONG  11104 "molto allegro" adverb common rec 4 link 4
+4434 | theme tempo_words "tempo words"
+   SHORT 11096 "con brio" adverb common rec 4 link 4
+   LONG  11103 "allegro con brio" adverb common rec 4 link 4
+4435 | theme dynamics_markings "dynamics markings"
+   SHORT 11113 "forte" adverb common rec 3 link 1
+   LONG  11117 "mezzo forte" adverb common rec 4 link 2
+4436 | theme notes_and_rests "notes and rests"
+   SHORT 6127 "rest" [music] noun common rec 2 link 2
+   LONG  11158 "whole rest" noun common rec 3 link 3
+4437 | theme notes_and_rests "notes and rests"
+   SHORT 6127 "rest" [music] noun common rec 2 link 2
+   LONG  11159 "half rest" noun common rec 3 link 3
+4438 | theme notes_and_rests "notes and rests"
+   SHORT 6127 "rest" [music] noun common rec 2 link 2
+   LONG  11160 "quarter rest" noun common rec 3 link 3
+4439 | theme notes_and_rests "notes and rests"
+   SHORT 6127 "rest" [music] noun common rec 2 link 2
+   LONG  11161 "eighth rest" noun common rec 3 link 3
+4440 | theme notes_and_rests "notes and rests"
+   SHORT 6127 "rest" [music] noun common rec 2 link 2
+   LONG  11162 "sixteenth rest" noun common rec 4 link 4
+4441 | theme notes_and_rests "notes and rests"
+   SHORT 6127 "rest" [music] noun common rec 2 link 2
+   LONG  11175 "bar rest" noun common rec 4 link 4
+4442 | theme notes_and_rests "notes and rests"
+   SHORT 11144 "whole" (full: whole note) noun common rec 2 link 1
+   LONG  11158 "whole rest" noun common rec 3 link 3
+4443 | theme notes_and_rests "notes and rests"
+   SHORT 11144 "whole" (full: whole note) noun common rec 2 link 1
+   LONG  11177 "double whole note" noun common rec 5 link 5
+4444 | theme notes_and_rests "notes and rests"
+   SHORT 11144 "whole" (full: whole note) noun common rec 2 link 1
+   LONG  11180 "whole tone" noun common rec 3 link 5
+4445 | theme notes_and_rests "notes and rests"
+   SHORT 11146 "half" (full: half note) noun common rec 2 link 1
+   LONG  11159 "half rest" noun common rec 3 link 3
+4446 | theme notes_and_rests "notes and rests"
+   SHORT 11146 "half" (full: half note) noun common rec 2 link 1
+   LONG  11164 "dotted half" (full: dotted half note) noun common rec 4 link 3
+4447 | theme notes_and_rests "notes and rests"
+   SHORT 11148 "quarter" (full: quarter note) noun common rec 2 link 1
+   LONG  11160 "quarter rest" noun common rec 3 link 3
+4448 | theme notes_and_rests "notes and rests"
+   SHORT 11150 "eighth" (full: eighth note) noun common rec 2 link 1
+   LONG  11161 "eighth rest" noun common rec 3 link 3
+4449 | theme notes_and_rests "notes and rests"
+   SHORT 11152 "sixteenth" (full: sixteenth note) noun common rec 3 link 2
+   LONG  11162 "sixteenth rest" noun common rec 4 link 4
+4450 | theme concert_words "concert words"
+   SHORT 11183 "stage" [concert] noun common rec 1 link 1
+   LONG  11206 "stage diving" noun common rec 3 link 3
+4451 | theme concert_words "concert words"
+   SHORT 11183 "stage" [concert] noun common rec 1 link 1
+   LONG  11212 "stage left" noun common rec 3 link 5
+4452 | theme concert_words "concert words"
+   SHORT 11192 "crowd" [concert] noun common rec 1 link 1
+   LONG  11207 "crowd surfing" noun common rec 3 link 3
+4453 | theme recording_studio_words "recording studio words"
+   SHORT 11224 "booth" [recording] noun common rec 2 link 3
+   LONG  11245 "sound booth" noun common rec 3 link 2
+4454 | theme recording_studio_words "recording studio words"
+   SHORT 11224 "booth" [recording] noun common rec 2 link 3
+   LONG  11267 "isolation booth" noun common rec 4 link 4
+4455 | theme recording_studio_words "recording studio words"
+   SHORT 11224 "booth" [recording] noun common rec 2 link 3
+   LONG  11268 "vocal booth" noun common rec 3 link 2
