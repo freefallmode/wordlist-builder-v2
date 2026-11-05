@@ -105,7 +105,7 @@ export const addTheme = parentId => editTheme(Object.assign(newTheme('', parentI
 
 export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const P = A.P;
-  const w = { ...e, region: [...e.region], th: { ...e.th } };
+  const w = { ...e, region: [...e.region], th: { ...e.th }, show: { ...e.show } };
   if (isNew && themeId && !w.aliasOf) w.th[themeId] = w.th[themeId] ?? 0;
   const f = {
     text: h('input', { value: w.text, autofocus: true }),
@@ -131,7 +131,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
 
   // Has anything been changed since the dialog opened? (Used to ask before leaving for a theme.)
   const sig = () => JSON.stringify([f.text.value, f.gloss.value, f.pos.value, f.type.value, f.rec.value, f.status.value, f.note.value, f.kind.value, aliasInput.value,
-    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.th]);
+    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.th, w.show]);
   const initialSig = sig();
   const linksBox = h('div.links');
   const addPick = themePicker('add a theme…', { groups: false });
@@ -140,7 +140,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     const root = rootId && P.ix.entry.get(rootId);
     const ids = new Set([...Object.keys(w.th), ...(root ? Object.keys(root.th) : [])]);
     linksBox.replaceChildren(
-      ids.size ? h('table.links', {}, h('tr', {}, h('th', 'Theme'), h('th', root ? 'Typicality here (auto = harder of root and own)' : 'Typicality in this theme'), h('th')),
+      ids.size ? h('table.links', {}, h('tr', {}, h('th', 'Theme'), h('th', root ? 'Typicality here (auto = harder of root and own)' : 'Typicality in this theme'), h('th', { title: 'What the theme shows the player instead of the full text, e.g. sun for sun hat in hats. Leave empty to show the full text.' }, 'Shown as'), h('th')),
         [...ids].map(tid => {
           const inherited = !!root && !(tid in w.th);
           const own = tid in w.th;
@@ -163,7 +163,8 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
               A.render();
             } }, P.ix.theme.get(tid)?.name || tid + ' (missing)'), inherited && h('span.hint', ' from root')),
             h('td', {}, select(IN_OPTS, w.th[tid] || 0, { onchange: ev => { w.th[tid] = +ev.target.value; } })),
-            h('td', {}, (own || !root) && h('button.link', { type: 'button', title: 'Unlink', onclick: () => { delete w.th[tid]; drawLinks(); } }, '✕')));
+            h('td', {}, own && h('input.shown', { value: w.show[tid] || '', placeholder: 'full text', size: 14, oninput: ev => { const v = ev.target.value.trim(); if (v) w.show[tid] = v; else delete w.show[tid]; } })),
+            h('td', {}, (own || !root) && h('button.link', { type: 'button', title: 'Unlink', onclick: () => { delete w.th[tid]; delete w.show[tid]; drawLinks(); } }, '✕')));
         })) : h('p.hint', 'Not linked to any theme yet.'),
       h('div.row', {}, addPick.node, h('button', { type: 'button', onclick: () => {
         const tid = addPick.get();
