@@ -1,0 +1,59 @@
+# ends with a musical instrument: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE horn
+  foghorn | noun | rec 3
+  airhorn | noun | rec 3
+  bighorn | noun | rec 3
+  hawthorn | noun | rec 3 | tree
+  longhorn | noun | rec 3 | cattle
+  greenhorn | noun | rec 3
+  alphorn | noun | rec 4
+  pronghorn | noun | rec 4
+  shorthorn | noun | rec 4
+  stinkhorn | noun | rec 4
+  firethorn | noun | rec 4
+  buckthorn | noun | rec 4
+  flugelhorn | noun | rec 4
+  blackthorn | noun | rec 4
+  crumhorn | noun | rec 5
+  gemshorn | noun | rec 5
+  knobthorn | noun | rec 5
+
+TYPE bell
+  barbell | noun | rec 1
+  dumbbell | noun | rec 1
+  doorbell | noun | rec 1
+  cowbell | noun | rec 2
+  bluebell | noun | rec 2
+  kettlebell | noun | rec 2
+  handbell | noun | rec 3
+  harebell | noun | rec 4
+
+TYPE drum
+  eardrum | noun | rec 2
+  clerodendrum | noun | rec 5
+
+TYPE harp
+  autoharp | noun | rec 4
+
+TYPE gong
+  qigong | noun | rec 3
+  dugong | noun | rec 4
+  legong | noun | rec 5
+  wobbegong | noun | rec 5
+
+TYPE tuba  (no library words)
+
+TYPE oboe  (no library words)
+
+TYPE lute
+  salute | noun | rec 1 | military
+  salute | noun | rec 1 | gesture
+  salute | noun | rec 2 | greeting
+  salute | noun | rec 2 | fencing
+  solute | noun | rec 3
+  volute | noun | rec 5
+
+TYPE lyre  (no library words)
+
+TYPE fife  (no library words)

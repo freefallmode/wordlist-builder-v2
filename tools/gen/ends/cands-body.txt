@@ -1,0 +1,278 @@
+# ends with a body part: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE arm
+  swarm | noun | rec 1 | bees
+  alarm | noun | rec 1 | warning
+  alarm | noun | rec 1 | clock
+  firearm | noun | rec 1
+  charm | noun | rec 2 | magic
+  forearm | noun | rec 2
+  underarm | noun | rec 2
+  lukewarm | adjective | rec 2
+  overarm | noun | rec 3 | swimming
+  charm | noun | rec 4 | finches
+  yardarm | noun | rec 4 | hanging place
+  tonearm | noun | rec 4
+  yardarm | noun | rec 4 | ship
+  swingarm | noun | rec 5
+
+TYPE leg
+  dogleg | noun | rec 3
+  gateleg | noun | rec 5
+
+TYPE lip
+  tulip | noun | rec 1
+  backflip | noun | rec 2
+  cowslip | noun | rec 3
+  kickflip | noun | rec 3
+  heelflip | noun | rec 3
+  coverslip | noun | rec 3
+  frontflip | noun | rec 3
+  landslip | noun | rec 4
+  hardflip | noun | rec 4
+  oxlip | noun | rec 5
+  circlip | noun | rec 5
+
+TYPE hip
+  worship | noun | rec 1
+  warship | noun | rec 1
+  hardship | noun | rec 1
+  spaceship | noun | rec 1
+  microchip | noun | rec 1
+  ownership | noun | rec 1
+  friendship | noun | rec 1
+  leadership | noun | rec 1
+  membership | noun | rec 1
+  relationship | noun | rec 1
+  championship | noun | rec 1
+  airship | noun | rec 2
+  starship | noun | rec 2 | spaceship
+  flagship | noun | rec 2
+  steamship | noun | rec 2
+  fellowship | noun | rec 2
+  battleship | noun | rec 2 | warship
+  internship | noun | rec 2
+  mothership | noun | rec 2
+  partnership | noun | rec 2
+  citizenship | noun | rec 2
+  dictatorship | noun | rec 2
+  apprenticeship | noun | rec 2
+  rosehip | noun | rec 3
+  longship | noun | rec 3
+  township | noun | rec 3
+  lordship | noun | rec 3
+  courtship | noun | rec 3
+  troopship | noun | rec 3
+  censorship | noun | rec 3
+  mentorship | noun | rec 3
+  authorship | noun | rec 3
+  scholarship | noun | rec 3
+  sponsorship | noun | rec 3
+  sportsmanship | noun | rec 3
+  kinship | noun | rec 4
+  fireship | noun | rec 4
+  penmanship | noun | rec 4
+  stewardship | noun | rec 4
+  brinkmanship | noun | rec 4
+  gamesmanship | noun | rec 4
+  tezhip | noun | rec 5
+  lightship | noun | rec 5
+
+TYPE ear
+  spear | noun | rec 1
+  swear | verb | rec 1
+  appear | verb | rec 1
+  underwear | noun | rec 1
+  linear | adjective | rec 2 | math
+  eyewear | noun | rec 2
+  overhear | verb | rec 2
+  rainwear | noun | rec 2
+  footwear | noun | rec 2
+  sportswear | noun | rec 2
+  bugbear | noun | rec 3
+  workwear | noun | rec 3
+  knitwear | noun | rec 3
+  headgear | noun | rec 3
+  shapewear | noun | rec 3
+  loungewear | noun | rec 3
+  streetwear | noun | rec 3
+  shear | noun | rec 4 | force
+  smear | noun | rec 4
+  schmear | noun | rec 4
+  forebear | noun | rec 4
+  wheatear | noun | rec 4
+
+TYPE eye
+  bullseye | noun | rec 2 | target centre
+  ribeye | noun | rec 3
+  redeye | noun | rec 4 | whiskey
+  walleye | noun | rec 4 | North American fish
+  sockeye | noun | rec 4
+  fisheye | noun | rec 4
+  buckeye | noun | rec 4 | tree
+  buckeye | noun | rec 4 | nut
+  goldeneye | noun | rec 4
+  barreleye | noun | rec 5
+
+TYPE toe
+  tiptoe | verb | rec 2
+  mistletoe | noun | rec 2
+  toetoe | noun | rec 5
+
+TYPE shin
+  zanshin | noun | rec 5
+  sanshin | noun | rec 5
+  kyokushin | noun | rec 5
+
+TYPE chin
+  urchin | noun | rec 3
+  capuchin | noun | rec 3
+  tahchin | noun | rec 5
+  benachin | noun | rec 5
+
+TYPE hand
+  forehand | noun | rec 2
+  backhand | noun | rec 2
+  shorthand | noun | rec 2
+  secondhand | adjective | rec 2
+  deckhand | noun | rec 3
+  longhand | noun | rec 3
+  farmhand | noun | rec 3
+  stagehand | noun | rec 3
+  overhand | noun | rec 4
+  shakehand | noun | rec 5
+  shrikhand | noun | rec 5
+
+TYPE foot
+  tenderfoot | noun | rec 3
+  spadefoot | noun | rec 5
+  cocksfoot | noun | rec 5
+  coltsfoot | noun | rec 5
+
+TYPE knee  (no library words)
+
+TYPE back
+  hardback | noun | rec 1
+  paperback | noun | rec 1
+  quarterback | noun | rec 1
+  hatchback | noun | rec 2
+  flashback | noun | rec 2
+  horseback | noun | rec 2
+  bareback | adverb | rec 3
+  tailback | noun | rec 3
+  fullback | noun | rec 3
+  halfback | noun | rec 3
+  humpback | noun | rec 3 | whale
+  touchback | noun | rec 3
+  razorback | noun | rec 3 | wild pig
+  racerback | noun | rec 3
+  silverback | noun | rec 3
+  cornerback | noun | rec 3
+  diamondback | noun | rec 3
+  redback | noun | rec 4 | spider
+  tieback | noun | rec 4
+  cutback | noun | rec 4
+  layback | noun | rec 4
+  finback | noun | rec 4
+  callback | noun | rec 4 | comedy
+  wingback | noun | rec 4 | chair
+  snapback | noun | rec 4
+  callback | noun | rec 4 | programming
+  fastback | noun | rec 4
+  pushback | noun | rec 4
+  splashback | noun | rec 4
+  switchback | noun | rec 4
+  canvasback | noun | rec 4
+  leatherback | noun | rec 4 | turtle
+  stickleback | noun | rec 4
+  lieback | noun | rec 5
+  foldback | noun | rec 5
+  zwieback | noun | rec 5
+  liftback | noun | rec 5
+  wingback | noun | rec 5 | football
+  countback | noun | rec 5
+  thornback | noun | rec 5
+  saddleback | noun | rec 5
+  shingleback | noun | rec 5
+
+TYPE rib  (no library words)
+
+TYPE skin
+  pigskin | noun | rec 3
+  buckskin | noun | rec 3 | horse color
+  siskin | noun | rec 4
+  oilskin | noun | rec 4
+  bearskin | noun | rec 4 | hat
+  moleskin | noun | rec 4 | blister
+  moleskin | noun | rec 4 | fabric
+  wineskin | noun | rec 4
+  gaskin | noun | rec 5
+  sheepskin | noun | rec 5 | diploma
+
+TYPE nose
+  diagnose | verb | rec 3
+  bottlenose | noun | rec 3
+  bluenose | noun | rec 4
+  hognose | noun | rec 5
+  bullnose | noun | rec 5 | step
+
+TYPE head
+  redhead | noun | rec 1 | person
+  forehead | noun | rec 1
+  arrowhead | noun | rec 1
+  pinhead | noun | rec 2
+  airhead | noun | rec 2
+  bonehead | noun | rec 2
+  whitehead | noun | rec 2
+  spearhead | noun | rec 2
+  hammerhead | noun | rec 2 | shark
+  egghead | noun | rec 3
+  overhead | noun | rec 3
+  blackhead | noun | rec 3
+  blockhead | noun | rec 3
+  trailhead | noun | rec 3
+  copperhead | noun | rec 3 | animal
+  showerhead | noun | rec 3
+  letterhead | noun | rec 3
+  figurehead | noun | rec 3 | ship carving
+  figurehead | noun | rec 3 | nominal leader
+  copperhead | noun | rec 3 | snake
+  knucklehead | noun | rec 3
+  pithead | noun | rec 4
+  redhead | noun | rec 4 | duck
+  bowhead | noun | rec 4
+  notehead | noun | rec 4
+  hosehead | noun | rec 4
+  deadhead | verb | rec 4 | gardening
+  bulkhead | noun | rec 4 | ship
+  deadhead | verb | rec 4 | Grateful Dead fan
+  steelhead | noun | rec 4
+  loggerhead | noun | rec 4 | turtle
+  dunderhead | noun | rec 4
+  fiddlehead | noun | rec 4
+  bufflehead | noun | rec 4
+  masthead | noun | rec 5
+  hogshead | noun | rec 5
+  wellhead | noun | rec 5
+  railhead | noun | rec 5
+  loosehead | noun | rec 5
+  tighthead | noun | rec 5
+  lancehead | noun | rec 5
+  crosshead | noun | rec 5
+  jerkinhead | noun | rec 5
+  dragonhead | noun | rec 5
+  turtlehead | noun | rec 5
+
+TYPE neck
+  turtleneck | noun | rec 2
+  bottleneck | noun | rec 2
+  breakneck | adjective | rec 3
+  crookneck | noun | rec 4
+  rubberneck | verb | rec 4
+  gooseneck | noun | rec 5 | trailer
+  gooseneck | noun | rec 5 | handrail
+  littleneck | noun | rec 5
+
+TYPE palm
+  facepalm | noun | rec 2
+  napalm | noun | rec 3

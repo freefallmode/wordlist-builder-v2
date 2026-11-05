@@ -1,0 +1,131 @@
+# ends with public transport: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE bus
+  minibus | noun | rec 2
+  nimbus | noun | rec 3
+  rhombus | noun | rec 3
+  omnibus | noun | rec 3 | horse-drawn
+  trolleybus | noun | rec 3
+  cumulonimbus | noun | rec 3
+  rebus | noun | rec 4
+  colobus | noun | rec 4
+  omnibus | noun | rec 4 | book
+  incubus | noun | rec 4 | demon
+  syllabus | noun | rec 4
+  succubus | noun | rec 4
+  cumbus | noun | rec 5
+  railbus | noun | rec 5
+  arquebus | noun | rec 5
+
+TYPE cab
+  pedicab | noun | rec 3
+  minicab | noun | rec 3
+
+TYPE car
+  vicar | noun | rec 2
+  railcar | noun | rec 2
+  racecar | noun | rec 2
+  supercar | noun | rec 2
+  streetcar | noun | rec 2
+  oscar | noun | rec 3 | fish
+  boxcar | noun | rec 3
+  tramcar | noun | rec 3
+  flatcar | noun | rec 3
+  sidecar | noun | rec 3 | motorcycle
+  hypercar | noun | rec 3
+  sidecar | noun | rec 4 | cocktail
+  microcar | noun | rec 4
+  trocar | noun | rec 5
+  handcar | noun | rec 5
+
+TYPE tram  (no library words)
+
+TYPE train
+  restrain | verb | rec 2
+  eyestrain | noun | rec 2
+  constrain | verb | rec 3
+  quatrain | noun | rec 4
+
+TYPE taxi  (no library words)
+
+TYPE bike
+  motorbike | noun | rec 1
+  superbike | noun | rec 3
+  minibike | noun | rec 4
+
+TYPE plane
+  airplane | noun | rec 1
+  biplane | noun | rec 3
+  seaplane | noun | rec 3
+  warplane | noun | rec 3
+  monoplane | noun | rec 3
+  triplane | noun | rec 4
+  sailplane | noun | rec 4
+  hydroplane | verb | rec 4 | skid
+  hydroplane | noun | rec 4 | submarine
+  chairoplane | noun | rec 4
+
+TYPE boat
+  rowboat | noun | rec 1
+  sailboat | noun | rec 1
+  lifeboat | noun | rec 1
+  speedboat | noun | rec 1
+  motorboat | noun | rec 1
+  tugboat | noun | rec 2
+  houseboat | noun | rec 2
+  steamboat | noun | rec 2
+  riverboat | noun | rec 2
+  gunboat | noun | rec 3
+  fireboat | noun | rec 3
+  powerboat | noun | rec 3
+  narrowboat | noun | rec 3
+  towboat | noun | rec 4
+  longboat | noun | rec 4
+
+TYPE ship
+  worship | noun | rec 1
+  warship | noun | rec 1
+  hardship | noun | rec 1
+  spaceship | noun | rec 1
+  ownership | noun | rec 1
+  friendship | noun | rec 1
+  leadership | noun | rec 1
+  membership | noun | rec 1
+  relationship | noun | rec 1
+  championship | noun | rec 1
+  airship | noun | rec 2
+  starship | noun | rec 2 | spaceship
+  flagship | noun | rec 2
+  steamship | noun | rec 2
+  fellowship | noun | rec 2
+  battleship | noun | rec 2 | warship
+  internship | noun | rec 2
+  mothership | noun | rec 2
+  partnership | noun | rec 2
+  citizenship | noun | rec 2
+  dictatorship | noun | rec 2
+  apprenticeship | noun | rec 2
+  longship | noun | rec 3
+  township | noun | rec 3
+  lordship | noun | rec 3
+  courtship | noun | rec 3
+  troopship | noun | rec 3
+  censorship | noun | rec 3
+  mentorship | noun | rec 3
+  authorship | noun | rec 3
+  scholarship | noun | rec 3
+  sponsorship | noun | rec 3
+  sportsmanship | noun | rec 3
+  kinship | noun | rec 4
+  fireship | noun | rec 4
+  penmanship | noun | rec 4
+  stewardship | noun | rec 4
+  brinkmanship | noun | rec 4
+  gamesmanship | noun | rec 4
+  lightship | noun | rec 5
+
+TYPE ferry  (no library words)
+
+TYPE metro  (no library words)
+
+TYPE tube  (no library words)

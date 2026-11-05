@@ -1,0 +1,72 @@
+# ends with a bird: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE crow
+  scarecrow | noun | rec 1 | field figure
+  escrow | noun | rec 4
+  pilcrow | noun | rec 4
+  cockcrow | noun | rec 4
+
+TYPE wren  (no library words)
+
+TYPE gull
+  seagull | noun | rec 1
+
+TYPE dove  (no library words)
+
+TYPE swan  (no library words)
+
+TYPE emu  (no library words)
+
+TYPE owl
+  growl | noun | rec 1
+  fishbowl | noun | rec 1
+  prowl | verb | rec 2
+  scowl | noun | rec 2
+  waterfowl | noun | rec 3
+  peafowl | noun | rec 4
+  jobbernowl | noun | rec 5
+  malleefowl | noun | rec 5
+
+TYPE jay
+  popinjay | noun | rec 4
+
+TYPE kite
+  nukite | noun | rec 5
+
+TYPE lark
+  skylark | noun | rec 3
+  meadowlark | noun | rec 3
+  mudlark | noun | rec 4 | bird
+  mudlark | noun | rec 4 | scavenger
+
+TYPE tern
+  lantern | noun | rec 1
+  western | noun | rec 1
+  intern | noun | rec 2
+  pattern | noun | rec 2 | sewing
+  eastern | adjective | rec 2 | bird group
+  astern | adverb | rec 4
+  bittern | noun | rec 4
+  pastern | noun | rec 4
+  lectern | noun | rec 4
+  cistern | noun | rec 4
+  cittern | noun | rec 5
+  postern | noun | rec 5
+  gittern | noun | rec 5
+  subaltern | noun | rec 5
+
+TYPE hawk
+  mohawk | noun | rec 2 | haircut
+  tomahawk | noun | rec 2 | axe
+  sparrowhawk | noun | rec 3
+  goshawk | noun | rec 4
+  tomahawk | noun | rec 4 | steak
+  nighthawk | noun | rec 4
+  mohawk | noun | rec 5 | skating
+  tomahawk | noun | rec 5 | table tennis
+
+TYPE rook  (no library words)
+
+TYPE duck
+  geoduck | noun | rec 4
+  shelduck | noun | rec 4

@@ -1,0 +1,63 @@
+# ends with a family member: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE son
+  lesson | noun | rec 1
+  season | noun | rec 1 | tv
+  person | noun | rec 1
+  season | noun | rec 1 | mahjong
+  bison | noun | rec 2
+  mason | noun | rec 2 | stonemason
+  arson | noun | rec 2
+  season | verb | rec 2 | cooking
+  prison | noun | rec 2
+  season | noun | rec 2 | commuter pass
+  crimson | adjective | rec 2
+  grandson | noun | rec 2
+  salesperson | noun | rec 2
+  boson | noun | rec 3
+  venison | noun | rec 3
+  liaison | noun | rec 3
+  treason | noun | rec 3
+  stonemason | noun | rec 3
+  chairperson | noun | rec 3
+  linesperson | noun | rec 3
+  spokesperson | noun | rec 3
+  meson | noun | rec 4
+  damson | noun | rec 4
+  chanson | noun | rec 4
+  garrison | noun | rec 4
+  saucisson | noun | rec 4
+  frontperson | noun | rec 4
+  orison | noun | rec 5
+  grison | noun | rec 5
+  gibson | noun | rec 5 | cocktail
+  saison | noun | rec 5
+  nelson | noun | rec 5 | cricket
+  anison | noun | rec 5
+  caisson | noun | rec 5
+  madison | noun | rec 5 | cycling race
+  gambeson | noun | rec 5
+  veraison | noun | rec 5
+  caparison | noun | rec 5
+  oganesson | noun | rec 5
+
+TYPE mum
+  chrysanthemum | noun | rec 2 | flower
+  osteospermum | noun | rec 4
+  chrysanthemum | noun | rec 4 | firework burst
+  leucospermum | noun | rec 5
+
+TYPE dad
+  grandad | noun | rec 2
+  granddad | noun | rec 2
+  aoudad | noun | rec 5 | North African
+
+TYPE aunt  (no library words)
+
+TYPE nan  (no library words)
+
+TYPE gran  (no library words)
+
+TYPE twin  (no library words)
+
+TYPE kid  (no library words)

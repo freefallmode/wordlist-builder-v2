@@ -1,0 +1,25 @@
+THEME a tree | crash (ash), cloak (oak), porcupine (pine), overwhelm (elm), kefir (fir)
+TYPE ash
+W crash | verb | 1 | 1
+W flash | noun | 1 | 1
+W trash | noun | 1 | 1
+W splash | noun | 1 | 2
+W squash | noun | 2 | 2
+W smash | verb | 2 | 2
+TYPE pine
+W porcupine | noun | 2 | 1
+W alpine | adjective | 3 | 2
+W lupine | adjective | 3 | 3
+W supine | adjective | 4 | 3
+W vulpine | adjective | 4 | 4
+TYPE oak
+W cloak | noun | 1 | 1
+W croak | verb | 2 | 2
+TYPE elm
+W overwhelm | verb | 3 | 2
+TYPE fir
+W kefir | noun | 3 | 3
+# napalm is a weapon; mildly sensitive but common
+TYPE palm
+TYPE plum
+W peplum | noun | 5 | 4

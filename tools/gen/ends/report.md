@@ -1,0 +1,43 @@
+- birds.txt: ends with a bird: 6 types, 2 sub-themes
+- body.txt: ends with a body part: 13 types, 5 sub-themes
+- new somewhat
+- clothing.txt: ends with a piece of clothing: 7 types, 1 sub-themes
+- new hatred
+- new kindred
+- new entrust
+- new distrust
+- new mistrust
+- new encrust
+- colors.txt: ends with a color: 7 types, 3 sub-themes
+- new origin
+- new entwine
+- new support
+- new export
+- drinks.txt: ends with a drink: 6 types, 4 sub-themes
+- new poison
+- new reason
+- new maximum
+- new minimum
+- new optimum
+- new flaunt
+- new basis
+- new crisis
+- new dilemma
+- family.txt: ends with a family member: 5 types, 4 sub-themes
+- new humdrum
+- new absolute
+- new pollute
+- new dilute
+- instruments.txt: ends with a musical instrument: 5 types, 1 sub-themes
+- numbers.txt: ends with a number: 4 types, 4 sub-themes
+- new bureaucrat
+- pets.txt: ends with a pet: 5 types, 2 sub-themes
+- new discipline
+- shapes.txt: ends with a shape: 4 types, 2 sub-themes
+- new vocab
+- transport.txt: ends with public transport: 5 types, 2 sub-themes
+- trees.txt: ends with a tree: 6 types, 2 sub-themes
+- new terrain
+- weather.txt: ends with a weather word: 5 types, 2 sub-themes
+
+## Problems

@@ -1,0 +1,115 @@
+# ends with a weather word: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE wind
+  headwind | noun | rec 2 | sailing
+  tailwind | noun | rec 2 | sailing
+  whirlwind | noun | rec 2
+  upwind | adverb | rec 3
+  downwind | adverb | rec 3
+  crosswind | noun | rec 3
+
+TYPE mist
+  chemist | noun | rec 2 | scientist
+  alchemist | noun | rec 3
+  biochemist | noun | rec 3
+  optimist | noun | rec 4 | dinghy
+  taxonomist | noun | rec 4
+  taxidermist | noun | rec 4
+  phlebotomist | noun | rec 4
+  ergonomist | noun | rec 5
+
+TYPE hail  (no library words)
+
+TYPE fog  (no library words)
+
+TYPE sun
+  bosun | noun | rec 3
+  subsun | noun | rec 5
+
+TYPE snow
+  thundersnow | noun | rec 4
+
+TYPE rain
+  sprain | noun | rec 1
+  strain | noun | rec 2 | muscle
+  restrain | verb | rec 2
+  eyestrain | noun | rec 2
+  strain | noun | rec 3 | material
+  refrain | noun | rec 3
+  constrain | verb | rec 3
+  multigrain | noun | rec 3
+  quatrain | noun | rec 4
+  midbrain | noun | rec 4
+  forebrain | noun | rec 4
+  hindbrain | noun | rec 4
+  suzerain | noun | rec 5
+  petitgrain | noun | rec 5
+
+TYPE frost
+  permafrost | noun | rec 3
+  hoarfrost | noun | rec 4
+
+TYPE dew
+  mildew | noun | rec 2
+  honeydew | noun | rec 2
+  sundew | noun | rec 4
+
+TYPE storm
+  thunderstorm | noun | rec 1
+  snowstorm | noun | rec 2
+  sandstorm | noun | rec 2
+  rainstorm | noun | rec 2
+  hailstorm | noun | rec 2
+  windstorm | noun | rec 2
+  firestorm | noun | rec 3
+  superstorm | noun | rec 3
+
+TYPE cloud
+  thundercloud | noun | rec 3
+
+TYPE ice
+  juice | noun | rec 1 | drink
+  slice | verb | rec 1 | cut
+  price | noun | rec 1
+  police | noun | rec 1
+  notice | verb | rec 1
+  office | noun | rec 1 | workplace
+  justice | noun | rec 1
+  voice | noun | rec 2 | grammar
+  slice | noun | rec 2 | golf
+  slice | noun | rec 2 | tennis
+  malice | noun | rec 2
+  invoice | noun | rec 2
+  licorice | noun | rec 2
+  sacrifice | noun | rec 2 | chess
+  apprentice | noun | rec 2
+  spice | noun | rec 3 | synthetic cannabis
+  juice | noun | rec 3 | betting
+  plaice | noun | rec 3
+  pumice | noun | rec 3
+  novice | noun | rec 3
+  thrice | other | rec 3
+  hospice | noun | rec 3 | care
+  lattice | noun | rec 3 | crisscross framework
+  chalice | noun | rec 3
+  avarice | noun | rec 3
+  allspice | noun | rec 3
+  jaundice | noun | rec 3
+  poultice | noun | rec 3
+  solstice | noun | rec 3
+  sluice | verb | rec 4 | channel
+  bodice | noun | rec 4
+  sluice | verb | rec 4 | verb clean
+  hospice | noun | rec 4 | inn
+  cornice | noun | rec 4 | architecture
+  coppice | noun | rec 4
+  cornice | noun | rec 4 | snow
+  cornice | noun | rec 4 | window
+  omurice | noun | rec 4
+  armistice | noun | rec 4
+  statice | noun | rec 5
+  verjuice | noun | rec 5
+  surplice | noun | rec 5
+  cockatrice | noun | rec 5
+
+TYPE haze  (no library words)

@@ -1,0 +1,106 @@
+# ends with a drink: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE tea
+  protea | noun | rec 4
+  kahikatea | noun | rec 5
+
+TYPE gin
+  begin | verb | rec 1
+  login | noun | rec 1
+  margin | noun | rec 1 | typography
+  plugin | noun | rec 2
+  noggin | noun | rec 4 | unit
+
+TYPE rum
+  forum | noun | rec 2 | Roman
+  scrum | noun | rec 2
+  eardrum | noun | rec 2
+  spectrum | noun | rec 2 | color
+  serum | noun | rec 3 | skincare
+  forum | noun | rec 3 | online
+  serum | noun | rec 3 | blood
+  serum | noun | rec 3 | hair
+  thrum | other | rec 3
+  plectrum | noun | rec 3
+  cerebrum | noun | rec 3
+  durum | noun | rec 4 | wheat
+  sacrum | noun | rec 4
+  quorum | noun | rec 4
+  decorum | noun | rec 4
+  philtrum | noun | rec 4
+  colostrum | noun | rec 4
+  garum | noun | rec 5
+  rostrum | noun | rec 5
+  lustrum | noun | rec 5
+  fulcrum | noun | rec 5
+  sistrum | noun | rec 5
+  electrum | noun | rec 5
+  ngultrum | noun | rec 5 | currency
+  organistrum | noun | rec 5
+  pittosporum | noun | rec 5
+  hippeastrum | noun | rec 5
+  clerodendrum | noun | rec 5
+
+TYPE ale
+  whale | noun | rec 1 | animal
+  scale | noun | rec 1 | weighing
+  scale | noun | rec 1 | animal
+  scale | noun | rec 2 | map
+  scale | noun | rec 2 | music
+  scale | noun | rec 2 | fish
+  scale | noun | rec 2 | bathroom
+  stale | adjective | rec 2
+  scale | noun | rec 2 | model
+  whale | noun | rec 2 | plankton eater
+  finale | noun | rec 2
+  inhale | verb | rec 2
+  exhale | verb | rec 2
+  grayscale | noun | rec 2
+  nightingale | noun | rec 2
+  shale | noun | rec 3
+  whale | noun | rec 3 | gambler
+  tamale | noun | rec 3
+  descale | verb | rec 3
+  wholesale | noun | rec 3
+  chorale | noun | rec 4
+  gunwale | noun | rec 4
+  sarmale | noun | rec 4
+  airedale | noun | rec 4
+  martingale | noun | rec 4
+  wensleydale | noun | rec 4 | cheese
+  swale | noun | rec 5
+  mapale | noun | rec 5
+  percale | noun | rec 5
+  gregale | noun | rec 5
+  biennale | noun | rec 5
+  triticale | noun | rec 5
+  planigale | noun | rec 5
+  guanciale | noun | rec 5
+  jarrahdale | noun | rec 5
+  farthingale | noun | rec 5
+
+TYPE wine  (no library words)
+
+TYPE milk
+  buttermilk | noun | rec 2
+  moonmilk | noun | rec 5
+
+TYPE cola
+  capicola | noun | rec 4
+
+TYPE mead  (no library words)
+
+TYPE sake
+  forsake | verb | rec 3
+  namesake | noun | rec 3
+  keepsake | noun | rec 3
+
+TYPE port
+  report | noun | rec 1 | account
+  airport | noun | rec 1
+  passport | noun | rec 1
+  import | noun | rec 2 | goods
+  seaport | noun | rec 2
+  rapport | noun | rec 3
+  spaceport | noun | rec 3
+  davenport | noun | rec 5 | desk

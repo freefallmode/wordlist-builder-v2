@@ -1,0 +1,90 @@
+# ends with a color: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE red
+  bored | adjective | rec 1
+  tired | adjective | rec 1
+  scared | adjective | rec 1
+  hundred | noun | rec 1
+  shred | verb | rec 2
+  sacred | adjective | rec 2
+  blurred | adjective | rec 2
+  textured | adjective | rec 2
+  infrared | noun | rec 2
+  checkered | adjective | rec 2 | pattern
+  checkered | noun | rec 2 | race signal
+  endangered | adjective | rec 2
+  bared | adjective | rec 3
+  floored | adjective | rec 3
+  armored | noun | rec 3 | cash-carrying armoured hauler
+  collared | noun | rec 3
+  knackered | adjective | rec 3
+  staggered | adjective | rec 3
+  registered | noun | rec 3 | tracked delivery
+  thoroughbred | noun | rec 3
+  peppered | noun | rec 4
+  enamoured | adjective | rec 4
+  lacquered | adjective | rec 4
+  chequered | adjective | rec 4
+
+TYPE tan
+  suntan | noun | rec 1
+  orangutan | noun | rec 1
+  sultan | noun | rec 2
+  tartan | noun | rec 2 | cloth
+  manhattan | noun | rec 2 | cocktail
+  cosmopolitan | noun | rec 2 | cocktail
+  kaftan | noun | rec 3
+  rattan | noun | rec 3
+  neapolitan | noun | rec 3 | ice cream
+  kirtan | noun | rec 4
+  capstan | noun | rec 4 | ship
+  rambutan | noun | rec 4
+  mintan | noun | rec 5
+  capstan | noun | rec 5 | piano
+  harmattan | noun | rec 5
+  mercaptan | noun | rec 5
+  constantan | noun | rec 5
+  metropolitan | noun | rec 5 | bishop
+
+TYPE pink  (no library words)
+
+TYPE blue  (no library words)
+
+TYPE gold
+  marigold | noun | rec 2
+
+TYPE gray
+  stingray | noun | rec 2
+
+TYPE green
+  evergreen | noun | rec 2
+  shagreen | noun | rec 5
+
+TYPE rose
+  sucrose | noun | rec 3
+  primrose | noun | rec 3 | flower
+  primrose | adjective | rec 3 | color
+  morose | adjective | rec 4
+  tuberose | noun | rec 4
+  alpenrose | noun | rec 4
+  calrose | noun | rec 5
+
+TYPE lime
+  sublime | adjective | rec 3 | adjective
+  birdlime | noun | rec 5
+
+TYPE jade  (no library words)
+
+TYPE teal  (no library words)
+
+TYPE navy  (no library words)
+
+TYPE plum
+  sugarplum | noun | rec 3
+  peplum | noun | rec 5
+
+TYPE rust
+  thrust | noun | rec 2 | push
+  upthrust | noun | rec 4
+  thrust | noun | rec 5 | projecting
+  megathrust | noun | rec 5

@@ -1,0 +1,177 @@
+# ends with a pet: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE dog
+  bulldog | noun | rec 1 | breed of dog
+  lapdog | noun | rec 2
+  sheepdog | noun | rec 2
+  underdog | noun | rec 2
+  wolfdog | noun | rec 3
+  sundog | noun | rec 4
+  coydog | noun | rec 5
+  waterdog | noun | rec 5
+
+TYPE cat
+  tomcat | noun | rec 2
+  wildcat | noun | rec 2
+  copycat | noun | rec 2
+  bobcat | noun | rec 3 | cat
+  polecat | noun | rec 3
+  snowcat | noun | rec 3
+  ducat | noun | rec 4
+  ocicat | noun | rec 4
+  hepcat | noun | rec 4
+  muscat | noun | rec 4 | wine
+  bearcat | noun | rec 4
+
+TYPE rat
+  carat | noun | rec 2
+  aristocrat | noun | rec 2
+  rugrat | noun | rec 3 | child
+  muskrat | noun | rec 3
+  baccarat | noun | rec 3
+  sprat | noun | rec 4
+  baharat | noun | rec 4
+  ziggurat | noun | rec 4
+  plutocrat | noun | rec 4
+  korat | noun | rec 5
+  firebrat | noun | rec 5
+
+TYPE pig
+  bushpig | noun | rec 4
+
+TYPE hen
+  hyphen | noun | rec 1 | punctuation
+  kitchen | noun | rec 1 | house room
+  toughen | verb | rec 2
+  acetaminophen | noun | rec 2
+  peahen | noun | rec 3
+  lichen | noun | rec 3
+  moorhen | noun | rec 3
+  lebkuchen | noun | rec 4
+  flammkuchen | noun | rec 4
+  streuselkuchen | noun | rec 4
+  huchen | noun | rec 5
+  maultaschen | noun | rec 5
+  reibekuchen | noun | rec 5
+  hamantaschen | noun | rec 5
+  zwiebelkuchen | noun | rec 5
+
+TYPE cow  (no library words)
+
+TYPE pup  (no library words)
+
+TYPE fish
+  selfish | adjective | rec 1
+  goldfish | noun | rec 1
+  starfish | noun | rec 1
+  clownfish | noun | rec 1
+  jellyfish | noun | rec 1
+  catfish | noun | rec 2 | fish
+  catfish | noun | rec 2 | internet
+  codfish | noun | rec 2
+  swordfish | noun | rec 2
+  angelfish | noun | rec 2
+  shellfish | noun | rec 2
+  pufferfish | noun | rec 2
+  dogfish | noun | rec 3
+  sawfish | noun | rec 3
+  crayfish | noun | rec 3
+  blowfish | noun | rec 3
+  lionfish | noun | rec 3
+  blobfish | noun | rec 3
+  sailfish | noun | rec 3
+  flatfish | noun | rec 3
+  bluefish | noun | rec 3
+  kingfish | noun | rec 3
+  rockfish | noun | rec 3
+  viperfish | noun | rec 3
+  zebrafish | noun | rec 3
+  whitefish | noun | rec 3
+  cuttlefish | noun | rec 3
+  anglerfish | noun | rec 3
+  silverfish | noun | rec 3
+  parrotfish | noun | rec 3
+  oarfish | noun | rec 4
+  sunfish | noun | rec 4
+  icefish | noun | rec 4
+  monkfish | noun | rec 4
+  lungfish | noun | rec 4
+  pipefish | noun | rec 4
+  frogfish | noun | rec 4
+  cavefish | noun | rec 4
+  filefish | noun | rec 4
+  moonfish | noun | rec 4
+  sandfish | noun | rec 4
+  stonefish | noun | rec 4
+  stalefish | noun | rec 4 | snowboard
+  devilfish | noun | rec 4
+  archerfish | noun | rec 4
+  guitarfish | noun | rec 4
+  dragonfish | noun | rec 4
+  paddlefish | noun | rec 4
+  dolphinfish | noun | rec 4
+  surgeonfish | noun | rec 4
+  triggerfish | noun | rec 4
+  rainbowfish | noun | rec 4
+  lanternfish | noun | rec 4
+  hatchetfish | noun | rec 4
+  scorpionfish | noun | rec 4
+  butterflyfish | noun | rec 4
+  porcupinefish | noun | rec 4
+  hagfish | noun | rec 5
+  globefish | noun | rec 5
+  snailfish | noun | rec 5
+
+TYPE bird
+  songbird | noun | rec 1
+  hummingbird | noun | rec 1
+  seabird | noun | rec 2
+  lovebird | noun | rec 2
+  bluebird | noun | rec 2
+  blackbird | noun | rec 2
+  shorebird | noun | rec 2
+  catbird | noun | rec 3
+  snowbird | noun | rec 3
+  jailbird | noun | rec 3
+  landbird | noun | rec 3
+  bowerbird | noun | rec 3
+  waterbird | noun | rec 3
+  weaverbird | noun | rec 3
+  mockingbird | noun | rec 3
+  sunbird | noun | rec 4
+  warbird | noun | rec 4
+  cowbird | noun | rec 4
+  lyrebird | noun | rec 4
+  bellbird | noun | rec 4
+  kingbird | noun | rec 4
+  ovenbird | noun | rec 4
+  rainbird | noun | rec 4
+  mousebird | noun | rec 4
+  tailorbird | noun | rec 4
+  frigatebird | noun | rec 4
+  butcherbird | noun | rec 4
+  surfbird | noun | rec 5
+  widowbird | noun | rec 5
+  tropicbird | noun | rec 5
+  stitchbird | noun | rec 5
+  apostlebird | noun | rec 5
+
+TYPE mouse
+  dormouse | noun | rec 3
+  titmouse | noun | rec 4
+
+TYPE horse
+  racehorse | noun | rec 1
+  seahorse | noun | rec 2
+  sawhorse | noun | rec 3
+  carthorse | noun | rec 3
+  unhorse | verb | rec 4
+  packhorse | noun | rec 4 | pack animal
+
+TYPE goat  (no library words)
+
+TYPE lamb  (no library words)
+
+TYPE duck
+  geoduck | noun | rec 4
+  shelduck | noun | rec 4

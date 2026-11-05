@@ -1,0 +1,100 @@
+# ends with a piece of clothing: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE hat
+  arhat | noun | rec 5
+  whinchat | noun | rec 5
+  entrechat | noun | rec 5
+  stonechat | noun | rec 5
+
+TYPE cap
+  kneecap | noun | rec 2
+  handicap | noun | rec 2 | golf
+  hubcap | noun | rec 3
+  snowcap | noun | rec 3
+  nightcap | noun | rec 3 | drink
+  nightcap | noun | rec 3 | hat
+  whitecap | noun | rec 3
+  skullcap | noun | rec 3 | religious
+  handicap | noun | rec 3 | bowling
+  handicap | noun | rec 3 | race
+  gelcap | noun | rec 4
+  blackcap | noun | rec 4
+  redcap | noun | rec 5 | goblin
+  skullcap | noun | rec 5 | plant
+  foolscap | noun | rec 5
+
+TYPE tie
+  sweetie | noun | rec 1
+  cutie | noun | rec 2
+  auntie | noun | rec 2
+  necktie | noun | rec 2
+  bestie | noun | rec 3
+  tattie | noun | rec 3
+  toastie | noun | rec 3
+  floatie | noun | rec 3
+  postie | noun | rec 4 | UK term
+  saltie | noun | rec 4
+  bobotie | noun | rec 4
+  sortie | noun | rec 5
+  stottie | noun | rec 5
+  sosatie | noun | rec 5
+  perentie | noun | rec 5
+  christie | noun | rec 5 | skiing
+
+TYPE bra
+  zebra | noun | rec 1 | animal
+  cobra | noun | rec 2 | snake
+  cobra | noun | rec 2 | yoga pose
+  algebra | noun | rec 2
+  vertebra | noun | rec 3
+  chupacabra | noun | rec 3
+  abracadabra | other | rec 3
+  zebra | noun | rec 4 | striped-cheek songbird
+  zebra | noun | rec 4 | jumping arachnid
+  candelabra | noun | rec 4
+  akubra | noun | rec 5
+
+TYPE sock
+  cassock | noun | rec 4
+  tussock | noun | rec 4
+
+TYPE vest
+  invest | verb | rec 2
+  harvest | verb | rec 2 | crop gathering
+  harvest | noun | rec 2 | autumn
+  divest | verb | rec 5
+
+TYPE belt
+  lifebelt | noun | rec 2
+
+TYPE coat
+  raincoat | noun | rec 1
+  overcoat | noun | rec 2
+  redcoat | noun | rec 3
+  topcoat | noun | rec 3
+  peacoat | noun | rec 3
+  tailcoat | noun | rec 3
+  undercoat | noun | rec 3
+  petticoat | noun | rec 3
+  housecoat | noun | rec 3
+  greatcoat | noun | rec 4
+  surcoat | noun | rec 5
+
+TYPE boot
+  reboot | verb | rec 2 | computing
+  reboot | noun | rec 3 | film
+
+TYPE shoe
+  horseshoe | noun | rec 1 | horse gear
+  snowshoe | noun | rec 2 | footwear
+  horseshoe | noun | rec 3 | flying mammal
+  gumshoe | noun | rec 4
+  snowshoe | noun | rec 4 | lagomorph
+  snowshoe | noun | rec 5 | cat
+
+TYPE robe
+  wardrobe | noun | rec 1
+  bathrobe | noun | rec 2
+  strobe | noun | rec 3
+  microbe | noun | rec 3
+  garderobe | noun | rec 5

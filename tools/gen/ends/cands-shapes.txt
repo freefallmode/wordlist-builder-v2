@@ -1,0 +1,211 @@
+# ends with a shape: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE ball
+  eyeball | noun | rec 1
+  pinball | noun | rec 1
+  football | noun | rec 1 | soccer
+  baseball | noun | rec 1
+  softball | noun | rec 1
+  snowball | noun | rec 1
+  mothball | noun | rec 1
+  paintball | noun | rec 1
+  basketball | noun | rec 1
+  volleyball | noun | rec 1
+  cannonball | noun | rec 1 | dive
+  netball | noun | rec 2
+  furball | noun | rec 2
+  gumball | noun | rec 2
+  handball | noun | rec 2 | sport
+  meatball | noun | rec 2
+  fastball | noun | rec 2
+  foosball | noun | rec 2
+  dodgeball | noun | rec 2
+  curveball | noun | rec 2
+  screwball | noun | rec 2
+  cannonball | noun | rec 2 | ammunition
+  butterball | noun | rec 2
+  oddball | adjective | rec 3
+  airball | noun | rec 3
+  kickball | noun | rec 3
+  fireball | noun | rec 3 | meteor
+  handball | noun | rec 3 | AFL pass
+  hairball | noun | rec 3 | cat
+  goofball | noun | rec 3
+  highball | noun | rec 3
+  trackball | noun | rec 3
+  pickleball | noun | rec 3
+  tetherball | noun | rec 3
+  murderball | noun | rec 3
+  racquetball | noun | rec 3
+  knuckleball | noun | rec 3
+  flyball | noun | rec 4
+  teqball | noun | rec 4
+  korfball | noun | rec 4
+  goalball | noun | rec 4
+  puffball | noun | rec 4 | fungus
+  floorball | noun | rec 4
+  stickball | noun | rec 4
+  broomball | noun | rec 4
+  multiball | noun | rec 4
+  fistball | noun | rec 5
+  moonball | noun | rec 5
+  horseball | noun | rec 5
+  stoolball | noun | rec 5
+  tchoukball | noun | rec 5
+
+TYPE heart
+  sweetheart | noun | rec 2 | loved one
+  purpleheart | noun | rec 4
+
+TYPE disc
+  laserdisc | noun | rec 4
+
+TYPE line
+  online | adjective | rec 1
+  airline | noun | rec 1
+  offline | adjective | rec 1
+  outline | noun | rec 1
+  skyline | noun | rec 1
+  headline | noun | rec 1
+  deadline | noun | rec 1 | work
+  gasoline | noun | rec 1
+  lifeline | noun | rec 1
+  underline | noun | rec 1 | typography
+  coastline | noun | rec 1 | shore
+  guideline | noun | rec 1
+  trampoline | noun | rec 1
+  adrenaline | noun | rec 1
+  feline | adjective | rec 2
+  jawline | noun | rec 2
+  beeline | noun | rec 2
+  neckline | noun | rec 2
+  pipeline | noun | rec 2
+  deadline | noun | rec 2 | journalism
+  baseline | noun | rec 2 | tennis
+  helpline | noun | rec 2
+  baseline | noun | rec 2 | starting point
+  shoreline | noun | rec 2
+  waistline | noun | rec 2
+  breadline | noun | rec 2
+  storyline | noun | rec 2
+  borderline | noun | rec 2
+  clothesline | noun | rec 2 | laundry
+  saline | noun | rec 3
+  barline | noun | rec 3
+  praline | noun | rec 3
+  hemline | noun | rec 3
+  hotline | noun | rec 3
+  tagline | noun | rec 3
+  landline | noun | rec 3
+  baseline | noun | rec 3 | typography
+  treeline | noun | rec 3
+  snowline | noun | rec 3
+  hairline | noun | rec 3 | line
+  bloodline | noun | rec 3
+  frontline | noun | rec 3
+  punchline | noun | rec 3
+  waterline | noun | rec 3
+  timberline | noun | rec 3
+  clothesline | noun | rec 3 | wrestling move
+  crystalline | adjective | rec 3
+  byline | noun | rec 4
+  choline | noun | rec 4
+  bowline | noun | rec 4
+  aquiline | adjective | rec 4
+  bodyline | noun | rec 4
+  mescaline | noun | rec 4
+  crinoline | noun | rec 4
+  mandoline | noun | rec 4 | slicer
+  moneyline | noun | rec 4
+  strapline | noun | rec 4
+  sertraline | noun | rec 4
+  tourmaline | noun | rec 4 | gem
+  tourmaline | noun | rec 4 | color
+
+TYPE star
+  protostar | noun | rec 4
+  instar | noun | rec 5
+  hillstar | noun | rec 5
+  earthstar | noun | rec 5
+
+TYPE arc  (no library words)
+
+TYPE ring
+  spring | noun | rec 1 | coil
+  string | noun | rec 1 | music
+  string | noun | rec 1 | cord
+  spring | noun | rec 1 | season
+  during | other | rec 1 | preposition
+  spring | noun | rec 1 | water source
+  caring | adjective | rec 1 | kind
+  hearing | noun | rec 1 | sense
+  earring | noun | rec 1
+  pouring | verb | rec 1
+  purring | noun | rec 1
+  staring | noun | rec 1 | cat
+  wiring | noun | rec 2
+  spring | verb | rec 2 | jump
+  string | noun | rec 2 | programming
+  hearing | noun | rec 2 | court
+  snoring | noun | rec 2
+  swearing | noun | rec 2
+  clearing | noun | rec 2
+  offering | noun | rec 2 | religion
+  towering | adjective | rec 2
+  sparring | noun | rec 2
+  hamstring | noun | rec 2
+  shoestring | noun | rec 2
+  sweltering | adjective | rec 2
+  glittering | adjective | rec 2
+  shimmering | adjective | rec 2
+  volunteering | noun | rec 2
+  mouthwatering | adjective | rec 2
+  mountaineering | noun | rec 2
+  firing | noun | rec 3 | pottery
+  herring | noun | rec 3
+  bearing | noun | rec 3 | direction
+  bearing | noun | rec 3 | machine
+  searing | adjective | rec 3
+  soaring | noun | rec 3
+  scoring | noun | rec 3 | paper
+  bearing | noun | rec 3 | navigation
+  layering | noun | rec 3 | drawing
+  cowering | adjective | rec 3
+  alluring | adjective | rec 3
+  bullring | noun | rec 3 | arena
+  mastering | noun | rec 3
+  lettering | noun | rec 3
+  offspring | noun | rec 3 | children
+  loitering | noun | rec 3
+  bowstring | noun | rec 3
+  bartering | noun | rec 3
+  neutering | noun | rec 3
+  seafaring | adjective | rec 3
+  bouldering | noun | rec 3
+  drawstring | noun | rec 3
+  blistering | adjective | rec 3 | heat
+  weathering | noun | rec 3 | erosion
+  handspring | noun | rec 3
+  blistering | adjective | rec 3 | speed
+  chattering | noun | rec 3 | cat
+  orienteering | noun | rec 3 | sport
+  racketeering | noun | rec 3
+  bioengineering | noun | rec 3
+
+TYPE dot
+  peridot | noun | rec 4 | color
+
+TYPE oval  (no library words)
+
+TYPE cone
+  pinecone | noun | rec 2
+  silicone | noun | rec 3 | sealant
+
+TYPE cross
+  motocross | noun | rec 2
+  cyclocross | noun | rec 4 | sport
+
+TYPE wedge  (no library words)
+
+TYPE loop
+  hyperloop | noun | rec 4

@@ -1,0 +1,129 @@
+# ends with a number: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE one
+  stone | noun | rec 1 | rock
+  drone | noun | rec 1 | gadget
+  stone | noun | rec 1 | fruit
+  phone | noun | rec 1 | device
+  stone | noun | rec 1 | material
+  alone | adjective | rec 1
+  stone | noun | rec 1 | curling
+  iPhone | noun | rec 1
+  anyone | other | rec 1 | pronoun
+  jawbone | noun | rec 1
+  someone | other | rec 1 | pronoun
+  trombone | noun | rec 1
+  everyone | other | rec 1 | pronoun
+  ringtone | noun | rec 1
+  saxophone | noun | rec 1
+  xylophone | noun | rec 1
+  tombstone | noun | rec 1 | grave marker
+  telephone | noun | rec 1 | device
+  telephone | noun | rec 1 | game
+  headphone | noun | rec 1
+  microphone | noun | rec 1
+  smartphone | noun | rec 1
+  gravestone | noun | rec 1
+  scone | noun | rec 2
+  drone | noun | rec 2 | aircraft
+  drone | noun | rec 2 | bee
+  drone | noun | rec 2 | male bee
+  stone | noun | rec 2 | color
+  drone | other | rec 2 | sound
+  ozone | noun | rec 2
+  stone | noun | rec 2 | unit
+  throne | noun | rec 2 | royal seat
+  cyclone | noun | rec 2
+  hormone | noun | rec 2
+  tailbone | noun | rec 2
+  wishbone | noun | rec 2 | bird
+  backbone | noun | rec 2
+  shinbone | noun | rec 2
+  gemstone | noun | rec 2
+  pinecone | noun | rec 2
+  hailstone | noun | rec 2
+  limestone | noun | rec 2
+  sandstone | noun | rec 2
+  megaphone | noun | rec 2
+  cheekbone | noun | rec 2
+  headstone | noun | rec 2
+  milestone | noun | rec 2
+  gallstone | noun | rec 2
+  breastbone | noun | rec 2
+  collarbone | noun | rec 2
+  birthstone | noun | rec 2
+  rhinestone | noun | rec 2
+  cobblestone | noun | rec 2
+  cornerstone | noun | rec 2
+  testosterone | noun | rec 2
+  speakerphone | noun | rec 2
+  crone | noun | rec 3
+  shone | verb | rec 3 | past tense
+  drone | verb | rec 3 | engine noise
+  krone | noun | rec 3 | currency
+
+TYPE two  (no library words)
+
+TYPE six  (no library words)
+
+TYPE ten
+  often | adjective | rec 1
+  kitten | noun | rec 1
+  listen | verb | rec 1
+  kindergarten | noun | rec 1
+  mitten | noun | rec 2
+  rotten | adjective | rec 2
+  frighten | verb | rec 2
+  glisten | verb | rec 3
+  smitten | adjective | rec 3
+  tungsten | noun | rec 3
+  marten | noun | rec 4
+  batten | noun | rec 4
+  sauerbraten | noun | rec 4
+  patten | noun | rec 5
+  hanten | noun | rec 5
+  chorten | noun | rec 5
+  klootschieten | noun | rec 5
+
+TYPE nine
+  canine | adjective | rec 2 | dog
+  canine | noun | rec 2 | tooth
+  feminine | adjective | rec 2
+  asinine | adjective | rec 3
+  quinine | noun | rec 3
+  adenine | noun | rec 3
+  leonine | adjective | rec 4
+  guanine | noun | rec 4
+  mezzanine | noun | rec 4
+  saturnine | adjective | rec 4
+  ranine | adjective | rec 5
+  pavonine | adjective | rec 5
+  meliponine | noun | rec 5
+
+TYPE four  (no library words)
+
+TYPE five  (no library words)
+
+TYPE three  (no library words)
+
+TYPE seven  (no library words)
+
+TYPE eight
+  overweight | adjective | rec 1
+  freight | noun | rec 2
+  heavyweight | noun | rec 2
+  lightweight | noun | rec 2
+  flyweight | noun | rec 3
+  paperweight | noun | rec 3
+  welterweight | noun | rec 3
+  middleweight | noun | rec 3
+  featherweight | noun | rec 3
+  cruiserweight | noun | rec 3
+  sleight | noun | rec 4
+  deadweight | noun | rec 4
+  bantamweight | noun | rec 4
+  hundredweight | noun | rec 4
+  atomweight | noun | rec 5
+  pennyweight | noun | rec 5
+  strawweight | noun | rec 5
+  minimumweight | noun | rec 5

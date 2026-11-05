@@ -1,0 +1,89 @@
+# ends with a tree: library words that end with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE fir
+  kefir | noun | rec 3
+
+TYPE ash
+  crash | verb | rec 1 | computer
+  flash | noun | rec 1 | camera
+  trash | noun | rec 1
+  leash | noun | rec 1 | lead
+  slash | noun | rec 1 | punctuation
+  slash | noun | rec 1 | symbol
+  crash | noun | rec 1 | accident
+  crash | other | rec 1 | sound
+  crash | noun | rec 1 | software
+  smash | noun | rec 1 | sound
+  splash | noun | rec 1 | water
+  splash | noun | rec 1 | diving
+  eyelash | noun | rec 1
+  stash | verb | rec 2
+  crash | noun | rec 2 | market
+  smash | verb | rec 2 | tennis
+  smash | noun | rec 2 | table tennis
+  leash | noun | rec 2 | surfing
+  squash | noun | rec 2 | drink
+  squash | noun | rec 2 | sport
+  squash | noun | rec 2 | vegetable
+  hogwash | noun | rec 2
+  whiplash | noun | rec 2
+  mouthwash | noun | rec 2
+  backslash | noun | rec 2 | symbol
+  flash | noun | rec 3 | climbing
+  goulash | noun | rec 3
+  eyewash | noun | rec 3
+  mishmash | noun | rec 3
+  backlash | noun | rec 3
+  whitewash | noun | rec 3
+  succotash | noun | rec 3
+  balderdash | noun | rec 3
+  crash | noun | rec 4 | rhinos
+  gnash | verb | rec 4
+  lavash | noun | rec 4
+  limewash | noun | rec 4
+  backwash | noun | rec 4
+  paprikash | noun | rec 4
+  pebbledash | noun | rec 4
+  swash | noun | rec 5
+  plash | other | rec 5
+  brash | noun | rec 5
+  shamash | noun | rec 5 | candle
+  stramash | noun | rec 5
+  throatlash | noun | rec 5
+  chyawanprash | noun | rec 5
+  electroclash | noun | rec 5
+
+TYPE oak
+  cloak | noun | rec 1
+  croak | verb | rec 2 | frog
+
+TYPE elm
+  overwhelm | verb | rec 3
+
+TYPE pine
+  porcupine | noun | rec 2
+  alpine | adjective | rec 3 | tree zone
+  lupine | adjective | rec 3 | of wolves
+  supine | adjective | rec 4
+  vulpine | adjective | rec 4
+  vespine | adjective | rec 5
+
+TYPE palm
+  facepalm | noun | rec 2
+  napalm | noun | rec 3
+
+TYPE fig  (no library words)
+
+TYPE gum
+  bubblegum | noun | rec 1 | candy
+  bubblegum | noun | rec 1 | color
+  sweetgum | noun | rec 4
+  begum | noun | rec 5
+
+TYPE bay  (no library words)
+
+TYPE yew  (no library words)
+
+TYPE plum
+  sugarplum | noun | rec 3
+  peplum | noun | rec 5
