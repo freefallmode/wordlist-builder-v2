@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":288,"modified":"2026-11-05 14:21"},"nextId":67055,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":289,"modified":"2026-11-05 14:28"},"nextId":67055,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]]},
@@ -50860,7 +50860,7 @@
 {"id":50012,"text":"albedo","gloss":"alchemy stage","rec":5,"th":{"alchemy":4},"status":"gen"},
 {"id":50013,"text":"Aspen","gloss":"ski town","type":"place","rec":3,"th":{"famous_ski_resorts":2},"status":"gen"},
 {"id":50014,"text":"gospel","gloss":"scripture","rec":2,"th":{"holy_books":2},"status":"gen"},
-{"id":50015,"text":"Hamlet","gloss":"village","type":"title","rec":1,"th":{"kinds_of_settlements":2},"status":"gen"},
+{"id":50015,"text":"hamlet","gloss":"village","rec":3,"th":{"kinds_of_settlements":2},"status":"rev"},
 {"id":50016,"text":"hacking","gloss":"riding","rec":2,"th":{"horse_riding_words":3,"equestrian_events":4},"status":"gen"},
 {"id":50017,"text":"grog","gloss":"clay","rec":3,"adult":true,"sensitive":true,"th":{"pottery_words":5},"status":"gen"},
 {"id":50018,"text":"grounding","gloss":"electrical","rec":3,"th":{"power_grid_words":4},"status":"gen"},
