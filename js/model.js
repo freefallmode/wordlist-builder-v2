@@ -78,6 +78,19 @@ export function popIn(P, e, tid) {
 // (a word few people know is hard however typical it is; a famous word that is a stretch for the theme is hard too).
 export function effRec(P, e, tid) { return Math.max(popIn(P, e, tid), e.rec || 0); }
 
+// The difficulty the game receives, as a decimal from 1.0 to 5.0 (0 = unrated): 0.7 of the harder of the two ratings plus 0.3 of the easier, rounded to one decimal.
+// A word hard on both ratings scores higher than one hard on only one. If only one rating is set, that one is the value. effRec above is the whole-number band used for counting and filtering.
+const round1 = x => Math.round(x * 10) / 10;
+export const DIFF_WEIGHT = 0.7;
+export const blendRatings = (a, b) => {
+  const hi = Math.max(a || 0, b || 0), lo = Math.min(a || 0, b || 0);
+  return !hi ? 0 : !lo ? hi : round1(DIFF_WEIGHT * hi + (1 - DIFF_WEIGHT) * lo);
+};
+export const wordDifficulty = (P, e, tid) => blendRatings(e.rec, popIn(P, e, tid));
+// A theme's difficulty: its identifiability, moved up or down by popularity (1 most popular ... 5 least) by at most 1: ident + 0.5 x (pop - 3), kept between 1 and 5, one decimal.
+// 0 when identifiability is unrated; identifiability alone when popularity is.
+export const themeDifficulty = t => !t.ident ? 0 : !t.pop ? t.ident : round1(Math.min(5, Math.max(1, t.ident + 0.5 * (t.pop - 3))));
+
 // Theme flags with inheritance: adult, sensitive, trademark, language-specific and disabled pass down the tree; regions are unioned.
 export function eff(P, tid) {
   const ix = P.ix;

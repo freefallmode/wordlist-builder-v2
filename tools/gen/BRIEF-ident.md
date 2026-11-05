@@ -18,8 +18,18 @@ The game shows a player four words and asks them to work out what links them (th
 - Place themes (cities, rivers, US states, capitals) are usually 1 or 2; rate higher only when the places have nothing visible in common beyond the name or are very obscure.
 - Use the whole scale, but most themes are 2 to 4. Judge each theme on its own; do not spread ratings to fill a quota.
 
+## The test (apply it to every theme, whatever its kind)
+Take the four most typical examples listed and imagine the player sees only those four words. Ask: **what would they say the theme is, and would that be right?**
+- They name the theme at once, in about the words of its title: **1 or 2**. Use 1 when even a child would, and 2 when a typical adult would after a second look.
+- They name a wider or neighbouring theme first (hot dog, hamburger, taco read as "fast food" or "lunch" before "street food"; Arial, Helvetica as "fonts" before "typefaces without serifs") but the title is an obvious refinement: **2**.
+- Several different themes fit all four and the title is only one of them, or the player has to know a niche fact to choose: **3**.
+- The four words are individually clear but nothing visible joins them, or the title needs knowledge most players lack (macaque species named Barbary, Japanese, bonnet, lion-tailed; club names and mascot nicknames mixed): **4**.
+- The link cannot be found without being told: **5**.
+
+Anchors from a sample (use them to calibrate): game pieces (pawn, token, die, tile) 2; motion verbs (jump, walk, run, hop) 1; baseball bases 2; oceanian countries 2; street food 2; healthy snacks 2; alkali metals (sodium, lithium, potassium, cesium) 2; meadow (bee, butterfly, grasshopper, daisy) 3; machine sounds (hum, buzz, beep, ping) 3; tricks that fool people (phishing, scam) 3; Balkan countries 3; national spirits 3; macaque species 4; wild goats and sheep 4.
+
 ## Output
-A file `tools/gen/ident/r-<n>.txt` for your list, with one line per theme in the list and nothing else:
+The output file named in your instructions (`r-<n>.txt` next to your list), with one line per theme in the list and nothing else:
 ```
 <theme id> <ident 1-5>
 ```

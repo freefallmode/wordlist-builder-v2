@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, effRec, eff, deleteEntry, moveTheme, descendants } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, effRec, eff, deleteEntry, moveTheme, descendants, blendRatings, themeDifficulty } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
@@ -121,6 +121,21 @@ test('export filters by flag, drops thin themes, promotes aliases', () => {
   assert.equal(z.file.entries.zipf[0], 60);
 });
 
+test('difficulty is a one-decimal blend of the ratings', () => {
+  assert.equal(blendRatings(4, 4), 4);
+  assert.equal(blendRatings(1, 5), 3.8);    // 0.7 x 5 + 0.3 x 1
+  assert.equal(blendRatings(5, 1), 3.8);    // order does not matter
+  assert.equal(blendRatings(3, 0), 3);      // one rating alone is the value
+  assert.equal(blendRatings(0, 0), 0);      // unrated
+  assert.equal(themeDifficulty({ ident: 3, pop: 3 }), 3);
+  assert.equal(themeDifficulty({ ident: 3, pop: 1 }), 2);     // a popular theme is a step easier
+  assert.equal(themeDifficulty({ ident: 4, pop: 5 }), 5);
+  assert.equal(themeDifficulty({ ident: 5, pop: 5 }), 5);     // kept within 1 to 5
+  assert.equal(themeDifficulty({ ident: 1, pop: 1 }), 1);
+  assert.equal(themeDifficulty({ ident: 2, pop: 0 }), 2);     // popularity unrated: identifiability alone
+  assert.equal(themeDifficulty({ ident: 0, pop: 2 }), 0);     // identifiability unrated: no value
+});
+
 test('zipf combines phrases', () => {
   setFreq(parseFreq('50 ice\n50 cream'));
   assert.equal(zipf('ice'), 5);
@@ -142,7 +157,7 @@ test('export format 3: shown text, display form and clash ids travel with the li
   assert.equal(file.v, 3);
   assert.deepEqual(file.shown[link('rock garden')[3] - 1], ['rock', 0]);
   assert.deepEqual(file.shown[link('rain')[3] - 1], ['rainy', 2]);
-  assert.equal(link('rain')[1], 2);                                   // the form's own difficulty counts
+  assert.equal(link('rain')[1], 1.7);                                 // the form's own familiarity (2) counts: 0.7 x 2 + 0.3 x 1 (typicality)
   assert.equal(link('fig')[3], 0);
   assert.ok(c.clash[at('rain')] > 0 && c.clash[at('rain')] === c.clash[at('rainfall')] && c.clash[at('fig')] === 0);
   assert.ok(validate(P).every(x => !/not one of its forms|display text/.test(x.msg)));

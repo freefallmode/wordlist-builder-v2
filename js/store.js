@@ -1,6 +1,6 @@
 // Saving and loading. Two places: an autosave in the browser (IndexedDB) and a project file you keep in git.
 // The project file is JSON with one theme or entry per line, so diffs and merges stay readable.
-import { newProject, entryDefaults, nowStamp } from './model.js';
+import { newProject, entryDefaults, nowStamp, themeDifficulty } from './model.js';
 
 const DB = 'wordlist-builder-v2';
 
@@ -73,4 +73,5 @@ export function pickFile(accept) {
 }
 
 // Version bump when a project file is written: lib.version +1 and modified = now (the library's own change counter).
-export function stampSave(P) { P.lib.version++; P.lib.modified = nowStamp(); }
+// Each theme's difficulty (from its identifiability and popularity) is written with it so the project file shows it; the export works it out again from the ratings.
+export function stampSave(P) { P.lib.version++; P.lib.modified = nowStamp(); for (const t of P.themes) { const d = themeDifficulty(t); if (d) t.difficulty = d; else delete t.difficulty; } }

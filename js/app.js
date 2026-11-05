@@ -2,7 +2,7 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, effRec, popIn, pathOf, descendants, sortDepthFirst, nowStamp, REC_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, showValidation, showExport, showSettings, openPath } from './dialogs.js';
@@ -247,7 +247,7 @@ function themeView(t) {
   const path = pathOf(P, t.id);
   const head = h('div.thead', {},
     h('div.crumbs', {}, h('a', { href: '#', onclick: ev => { ev.preventDefault(); A.sel = null; A.view = null; render(); } }, 'Overview › '), path.slice(0, -1).map((n, i) => h('a', { href: '#', onclick: ev => { ev.preventDefault(); select_(P.ix.theme.get(pathIds(t.id)[i]).id); } }, n + ' › '))),
-    h('div.titlebar', {}, h('div.titleleft', {}, h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')), h('div.chips', {}, badges(t), t.pop ? h('span.badge.d', { title: 'Theme popularity (1 most popular)' }, 'popularity ' + t.pop) : h('span.badge.d0', 'popularity not rated'), t.ident ? h('span.badge.d', { title: 'Identifiability (1 obvious, 5 obscure)' }, 'identifiability ' + t.ident) : h('span.badge.d0', 'identifiability not rated'),!t.group && themeBadge(A.P, t))),
+    h('div.titlebar', {}, h('div.titleleft', {}, h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')), h('div.chips', {}, badges(t), t.pop ? h('span.badge.d', { title: 'Theme popularity (1 most popular)' }, 'popularity ' + t.pop) : h('span.badge.d0', 'popularity not rated'), t.ident ? h('span.badge.d', { title: 'Identifiability (1 obvious, 5 obscure)' }, 'identifiability ' + t.ident) : h('span.badge.d0', 'identifiability not rated'), themeDifficulty(t) > 0 && h('span.badge.d', { title: 'Theme difficulty: identifiability moved by popularity (1 easiest, 5 hardest); worked out from the two ratings' }, 'difficulty ' + themeDifficulty(t).toFixed(1)), !t.group && themeBadge(A.P, t))),
       h('div.actions', {}, h('button', { onclick: () => editTheme(t) }, 'Theme settings…'), h('button', { onclick: () => addTheme(t.id) }, '+ Sub-theme'),
       !t.group && h('button', { onclick: () => bulkAdd(t.id) }, '+ Add words…'), !t.group && h('button.primary', { onclick: () => generate(t.id) }, 'Generate with Claude…'))),
     t.note && h('p.note', t.note));

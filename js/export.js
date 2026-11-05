@@ -4,7 +4,7 @@
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, effRec, popIn, themeProfile, dialectOf, themeLocked, linkIds, POS, TYPES, REGIONS } from './model.js';
+import { eff, effRec, popIn, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, POS, TYPES, REGIONS } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { isNameWord } from './validate.js';
 
@@ -65,7 +65,7 @@ export function buildExport(P, opt0 = {}) {
       const sh = e.aliasOf && e.th[tid] === undefined ? null : e.show?.[tid] ?{ text: e.show[tid], pos: e.pos } : ix.entry.get(e.use?.[tid])?.enabled ? ix.entry.get(e.use[tid]) : null;
       const r = Math.max(effRec(P, e, tid), sh && sh.rec || 0);
       if (r === 0 ? !o.unrated : (r < o.recMin || r > o.recMax)) continue;
-      links.push([tid, r, popIn(P, e, tid), sh ? sh.text + '|' + POS.indexOf(sh.pos) : '']);
+      links.push([tid, blendRatings(Math.max(e.rec || 0, sh && sh.rec || 0), popIn(P, e, tid)), popIn(P, e, tid), sh ? sh.text + '|' + POS.indexOf(sh.pos) : '']);   // difficulty is the decimal blend (model.js); the whole-number r above only filters
     }
     if (links.length) keep.set(e.id, links);
   }
@@ -185,7 +185,7 @@ export function buildExport(P, opt0 = {}) {
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
     const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
     const [rlo, rhi] = rMask(f.region);
-    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || '', t.ident || 0];
+    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || '', t.ident || 0, themeDifficulty(t)];
     if (o.notes) row.push(t.note);
     return row;
   });
@@ -194,7 +194,7 @@ export function buildExport(P, opt0 = {}) {
     v: 3, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
     dialect: dialectOf(P), options: o, regions, regionBits: REGION_BITS, kindNames: THEME_KINDS, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
     // identifiability 1 (obvious) to 5 (obscure), 0 unrated; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
-    themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability'].concat(o.notes ? ['note'] : []),
+    themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
     // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, popularity, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
     // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups): never put two with the same id in one level.

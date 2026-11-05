@@ -1,0 +1,274 @@
+hair_colors | hair colors | category | pop 1 | 33 words
+   e.g. gray, brown, black, blonde, ginger, redhead, brunette, jet black
+blonde_shades | blonde shades | category | pop 4 | 5 words
+   e.g. platinum, ash, dirty, strawberry, peroxide
+skin_words | skin words | category | pop 2 | 43 words
+   e.g. skin, pimple, freckle, wrinkle, zit, tan, pore, mole
+paired_body_parts | paired body parts | property | pop 4 | 36 words | note: body parts that come in twos: eye, ear, lung, kidney, knee, elbow
+   e.g. eye, ear, lung, kidney, arm, leg, hand, knee
+fingers | fingers | category | pop 1 | 10 words | note: thumb, index finger, middle finger, ring finger, little finger
+   e.g. ring, thumb, index, pinky, middle, little, Pointer, forefinger
+inside_the_body | inside the body | category | pop 2 | 74 words
+   e.g. lung, bone, heart, liver, brain, blood, kidney, muscle
+bones | bones | category | pop 2 | 41 words
+   e.g. rib, spine, skull, femur, pelvis, kneecap, jawbone, skeleton
+sections_of_the_spine | sections of the spine | category | pop 3 | 8 words | note: cervical, thoracic, lumbar, sacral, coccyx
+   e.g. coccyx, lumbar, cervical, sacrum, tailbone, thoracic, neck vertebrae, sacral
+organs | organs | category | pop 1 | 43 words
+   e.g. lung, heart, liver, brain, kidney, stomach, gut, tummy
+muscles | muscles | category | pop 3 | 42 words
+   e.g. abs, pecs, biceps, triceps, calf, glutes, six-pack, hamstring
+blood_words | blood words | category | pop 3 | 42 words
+   e.g. blood, red cell, blood type, white cell, clot, bleed, donor, plasma
+blood_components | blood components | category | pop 4 | 6 words | note: Exactly: plasma, platelet, red blood cells, white blood cells.
+   e.g. plasma, platelet, red blood cells, white blood cells, leukocytes, erythrocytes
+teeth | teeth | category | pop 2 | 38 words
+   e.g. tooth, molar, cavity, wisdom tooth, gum, canine, enamel, braces
+tooth_types | tooth types | category | pop 3 | 4 words | note: Exactly: molar, canine, incisor, premolar.
+   e.g. molar, canine, incisor, premolar
+brain_parts | brain parts | category | pop 3 | 47 words
+   e.g. cerebrum, cerebellum, frontal lobe, cortex, thalamus, brainstem, brain stem, hemisphere
+brain_lobes | brain lobes | category | pop 3 | 4 words | note: Exactly: frontal, occipital, parietal, temporal.
+   e.g. frontal, temporal, parietal, occipital
+cortex_areas | cortex areas | category | pop 3 | 4 words
+   e.g. prefrontal, motor, visual, cerebral
+body_systems | body systems | category | pop 2 | 29 words | note: digestive, nervous, circulatory, respiratory, skeletal, immune
+   e.g. nervous, skeletal, digestive, circulatory, respiratory, immune, muscular, endocrine
+hormones | hormones | category | pop 3 | 44 words
+   e.g. insulin, estrogen, adrenaline, testosterone, cortisol, dopamine, oxytocin, melatonin
+digestive_system | digestive system | category | pop 3 | 44 words
+   e.g. mouth, gullet, stomach, oesophagus, gut, tummy, liver, intestine
+ruminant_stomachs | ruminant stomachs | category | pop 4 | 4 words | note: Exactly: rumen, reticulum, omasum, abomasum.
+   e.g. rumen, omasum, abomasum, reticulum
+plain_names_for_body_parts | plain names for body parts | category | pop 3 | 10 words
+   e.g. gut, tummy, tum, bowel, windpipe, voice box, breastbone, thigh bone
+throat_and_airway_parts | throat and airway parts | category | pop 3 | 13 words
+   e.g. lung, larynx, trachea, windpipe, diaphragm, voice box, uvula, tonsils
+senses | senses | category | pop 2 | 47 words | note: the five senses and sense organs: sight, hearing, smell, taste, touch, eye, ear, nose, tongue, skin
+   e.g. eye, ear, nose, sight, smell, taste, touch, hearing
+sight_words | sight words | category | pop 2 | 50 words
+   e.g. see, look, sight, watch, stare, spy, gaze, peek
+hearing_words | hearing words | category | pop 2 | 49 words
+   e.g. deaf, loud, hear, sound, noise, listen, hearing aid, echo
+smell_words | smell words | category | pop 2 | 43 words
+   e.g. nose, smell, sniff, scent, stink, perfume, odor, aroma
+ear_parts | ear parts | category | pop 3 | 39 words
+   e.g. earlobe, eardrum, lobe, anvil, outer, pinna, inner, middle
+touch_words | touch words | category | pop 2 | 53 words
+   e.g. soft, feel, hard, touch, rough, smooth, wet, pat
+eye_parts | eye parts | category | pop 2 | 36 words
+   e.g. iris, lens, pupil, retina, eyeball, eyelid, cornea, eyelash
+the_five_senses | the five senses | category | pop 1 | 5 words | note: sight, hearing, smell, taste, touch
+   e.g. sight, smell, taste, touch, hearing
+illnesses | illnesses | category | pop 1 | 85 words
+   e.g. flu, cold, Covid, cancer, asthma, measles, diabetes, chickenpox
+common_illnesses | common illnesses | category | pop 1 | 59 words
+   e.g. flu, cold, fever, cough, headache, vomiting, hay fever, chickenpox
+digestive_problems | digestive problems | category | pop 2 | 16 words
+   e.g. nausea, diarrhea, the runs, vomiting, the trots, tummy ache, stomach bug, stomachache
+upper_airway_problems | upper airway problems | category | pop 3 | 12 words
+   e.g. cough, sore throat, head cold, hay fever, sniffles, sinusitis, laryngitis, tonsillitis
+childhood_illnesses | childhood illnesses | category | pop 3 | 45 words
+   e.g. measles, chickenpox, nits, mumps, teething, head lice, diaper rash, scarlet fever
+allergies | allergies | category | pop 2 | 44 words
+   e.g. food, pollen, peanut, sneezing, hay fever, egg, hives, dairy
+infections | infections | category | pop 2 | 55 words
+   e.g. flu, Covid, coronavirus, common cold, viral, influenza, pneumonia, bacterial
+viral_illnesses | viral illnesses | category | pop 3 | 13 words
+   e.g. flu, Covid, coronavirus, common cold, influenza, HIV, rabies, hepatitis
+bacterial_illnesses | bacterial illnesses | category | pop 3 | 21 words
+   e.g. strep throat, MRSA, staph, cholera, E. coli, salmonella, tuberculosis, Lyme disease
+injuries | injuries | category | pop 2 | 61 words
+   e.g. cut, burn, bruise, sprain, broken bone, graze, wound, scrape
+bone_and_joint_injuries | bone and joint injuries | category | pop 3 | 9 words
+   e.g. fracture, dislocation, compound fracture, stress fracture, hairline fracture, greenstick fracture, subluxation, Colles fracture
+skin_breaking_injuries | skin-breaking injuries | category | pop 2 | 8 words
+   e.g. cut, graze, scrape, gash, splinter, puncture, laceration, abrasion
+soft_tissue_injuries | soft tissue injuries | category | pop 3 | 16 words
+   e.g. sprain, strain, pulled muscle, sprained ankle, whiplash, torn ACL, ACL tear, tennis elbow
+fracture_types | fracture types | category | pop 4 | 6 words
+   e.g. compound, stress, hairline, greenstick, Colles, boxer's
+symptoms | illness symptoms | category | pop 2 | 35 words
+   e.g. fever, cough, nausea, headache, vomiting, rash, fatigue, diarrhea
+historic_diseases | historic diseases | category | pop 2 | 33 words
+   e.g. plague, smallpox, Black Death, bubonic plague, scurvy, cholera, leprosy, consumption
+tropical_diseases | tropical diseases | category | pop 3 | 30 words
+   e.g. malaria, Zika, dengue, yellow fever, sleeping sickness, Ebola, cholera, typhoid
+cold_weather_ailments | cold weather ailments | category | pop 3 | 22 words | note: frostbite, hypothermia, snow blindness, chilblains, windburn
+   e.g. frostbite, common cold, hypothermia, windburn, frostnip, chapped lips, snow blindness, dry skin
+sports_injuries | sports injuries | category | pop 2 | 33 words
+   e.g. sprain, concussion, tennis elbow, pulled muscle, cramp, strain, fracture, ACL tear
+medicine | medical words | category | pop 2 | 69 words
+   e.g. pill, nurse, doctor, surgery, patient, vaccine, surgeon, hospital
+medicines | medications | category | pop 2 | 37 words
+   e.g. aspirin, ibuprofen, antibiotic, painkiller, insulin, Tylenol, morphine, penicillin
+forms_of_medicine | forms of medicine | category | pop 2 | 34 words | note: pill, capsule, syrup, ointment, drops, inhaler, injection, patch, lozenge
+   e.g. pill, syrup, tablet, capsule, injection, drops, cream, liquid
+medical_equipment | medical equipment | category | pop 2 | 40 words
+   e.g. syringe, crutches, wheelchair, stethoscope, thermometer, needle, bandage, scalpel
+medical_specialties | medical specialties | category | pop 3 | 40 words
+   e.g. surgery, cardiology, pediatrics, oncology, neurology, psychiatry, gynecology, dermatology
+medical_tests | medical tests | category | pop 2 | 36 words
+   e.g. blood, X-ray, urinalysis, MRI, ECG, eye, swab, CT scan
+hospital_words | hospital words | category | pop 2 | 36 words
+   e.g. ward, nurse, surgeon, patient, emergency room, gown, ambulance, waiting room
+doctor_s_office | doctor's office | category | pop 1 | 37 words
+   e.g. nurse, doctor, checkup, stethoscope, appointment, waiting room, examination table, scale
+pharmacy | pharmacy | category | pop 1 | 32 words
+   e.g. vitamins, pharmacist, pill bottle, cough syrup, painkillers, prescription, tablets, blister pack
+operating_room | operating room | category | pop 2 | 37 words
+   e.g. table, surgeon, scalpel, scrubs, suture, sutures, stitches, anesthesia
+first_aid | first aid | category | pop 1 | 38 words
+   e.g. CPR, kit, bandage, plaster, ice pack, gauze, sling, splint
+dental_words | dental words | category | pop 2 | 43 words
+   e.g. tooth, cavity, dentist, filling, toothbrush, toothpaste, floss, molar
+smoking_words | smoking words | category | pop 2 | 39 words | note: cigarette, cigar, pipe, ashtray, lighter, filter, vape, hookah, tobacco
+   e.g. cigar, ashtray, tobacco, cigarette, tobacco pipe, vape, hookah, matches
+illegal_drugs | illegal drugs | category | pop 2 | 62 words
+   e.g. pot, LSD, bud, blow, acid, weed, coke, snow
+street_names_for_hemp | street names for hemp | category | pop 3 | 9 words
+   e.g. pot, bud, weed, ganja, grass, skunk, joint, reefer
+stimulants | stimulant drugs | category | pop 4 | 14 words
+   e.g. blow, coke, snow, cocaine, charlie, ice, meth, crack
+hallucinogens | hallucinogens | category | pop 3 | 9 words
+   e.g. LSD, acid, shrooms, magic mushrooms, psilocybin, DMT, peyote, mescaline
+cold_and_flu_remedies | cold and flu remedies | category | pop 2 | 37 words
+   e.g. tissues, chicken soup, hot tea, bed rest, vitamin C, hot lemon, cough syrup, cough drops
+four_humours | four humours | category | pop 3 | 13 words | note: blood, phlegm, yellow bile, black bile
+   e.g. blood, phlegm, black bile, yellow bile, choler, choleric, sanguine, melancholy
+healthcare_workers | healthcare workers | category | pop 2 | 8 words
+   e.g. nurse, doctor, surgeon, paramedic, medic, family doctor, general practitioner, locum
+chinese_medicine | chinese medicine | category | pop 3 | 33 words
+   e.g. ginseng, acupuncture, qi, cupping, meridians, herbal tea, goji berry, yin and yang
+middle_eastern_remedies | middle eastern remedies | category | pop 4 | 33 words | note: black seed, cupping, miswak, frankincense, myrrh, rose water, honey
+   e.g. honey, black seed, black cumin, myrrh, dates, miswak, nigella, rose water
+african_remedies | african remedies | category | pop 4 | 29 words | note: rooibos, buchu, devil's claw, shea butter, baobab, moringa
+   e.g. rooibos, traditional healer, aloe, buchu, baobab, moringa, sangoma, aloe vera
+oceanian_remedies | oceanian remedies | category | pop 5 | 28 words | note: tea tree oil, manuka honey, eucalyptus, kawakawa, kava, noni, lemon myrtle
+   e.g. kava, tea tree oil, manuka honey, noni, eucalyptus, bush medicine, eucalyptus oil, rongoā
+ayurveda_words | ayurveda words | category | pop 4 | 35 words | note: dosha, turmeric, ghee, neem, ashwagandha, chakra, prana, triphala
+   e.g. vata, dosha, kapha, pitta, tulsi, turmeric, triphala, tridosha
+native_american_remedies | native american remedies | category | pop 4 | 31 words | note: echinacea, willow bark, goldenseal, witch hazel, yarrow, sweat lodge
+   e.g. sage, medicine man, shaman, smudging, echinacea, sweat lodge, cedar, peyote
+babies_and_birth | babies and birth | category | pop 2 | 65 words
+   e.g. cot, baby, crib, birth, infant, diaper, bottle, newborn
+pregnancy_words | pregnancy words | category | pop 2 | 36 words
+   e.g. due date, pregnant, cravings, baby bump, expecting, ultrasound, morning sickness, test
+childbirth_words | childbirth words | category | pop 2 | 38 words
+   e.g. labor, delivery, contractions, water breaking, midwife, pushing, epidural, C-section
+newborn_care | newborn care | category | pop 2 | 38 words
+   e.g. diaper, baby bottle, breastfeeding, swaddle, burping, pacifier, bath time, baby wipes
+baby_gear | baby gear | category | pop 2 | 33 words
+   e.g. crib, stroller, car seat, high chair, bath, Sling, playpen, monitor
+baby_milestones | baby milestones | category | pop 2 | 30 words
+   e.g. walking, crawling, first word, first steps, first smile, first tooth, babbling, sitting up
+maternity_ward | maternity ward | category | pop 4 | 38 words
+   e.g. nurse, newborn, midwife, delivery room, labor, epidural, incubator, ultrasound
+fitness | fitness | category | pop 1 | 66 words
+   e.g. gym, abs, cardio, workout, exercise, training, dumbbell, six-pack
+exercises | fitness exercises | category | pop 1 | 32 words
+   e.g. squat, lunge, plank, sit-up, crunch, push-up, pull-up, deadlift
+gym_equipment | gym equipment | category | pop 1 | 34 words
+   e.g. barbell, dumbbell, treadmill, weight bench, exercise bike, leg press, kettlebell, elliptical
+yoga_poses | yoga poses | category | pop 2 | 35 words
+   e.g. tree, cobra, warrior, mountain, balasana, downward dog, lotus, wheel
+yoga_words | yoga words | category | pop 4 | 34 words | note: asana, namaste, chakra, mantra, om, mudra, savasana, vinyasa
+   e.g. om, asana, mantra, namaste, yogi, chakra, vinyasa, savasana
+workout_types | workout types | category | pop 1 | 44 words
+   e.g. yoga, cardio, pilates, running, cycling, swimming, weightlifting, strength training
+fitness_words | fitness words | category | pop 2 | 36 words
+   e.g. rep, set, abs, muscle, warm-up, six-pack, core, gains
+stretches | stretches | category | pop 3 | 38 words
+   e.g. quad, calf, hamstring, toe touch, pigeon, triceps, shoulder, butterfly
+sleep | sleep | category | pop 1 | 62 words
+   e.g. nap, bed, dream, snore, pillow, sleepy, blanket, insomnia
+sleep_words | sleep words | category | pop 2 | 36 words
+   e.g. nap, snore, sleepy, snooze, insomnia, yawn, doze, drowsy
+bedding | bedding | category | pop 1 | 33 words
+   e.g. sheet, pillow, blanket, mattress, pillowcase, fitted sheet, quilt, comforter
+nightwear | nightwear | category | pop 1 | 27 words
+   e.g. pajamas, nightgown, bathrobe, nightshirt, nightdress, pajama bottoms, flannel pajamas, robe
+dream_words | dream words | category | pop 3 | 34 words
+   e.g. dream, nightmare, lucid, recurring, dreamcatcher, Freud, flying, surreal
+bedtime_routine | bedtime routine | category | pop 2 | 38 words
+   e.g. story, brush teeth, read a book, put on pajamas, lullaby, tuck in, hot milk, wash face
+sleep_disorders | sleep disorders | category | pop 3 | 30 words
+   e.g. apnea, snoring, insomnia, sleepwalking, narcolepsy, night terrors, restless legs, sleep paralysis
+short_sleeps | short sleeps | category | pop 2 | 10 words
+   e.g. nap, snooze, catnap, power nap, kip, doze, siesta, nod off
+personal_care | personal care | category | pop 1 | 80 words
+   e.g. soap, razor, shampoo, perfume, lipstick, deodorant, toothbrush, toothpaste
+toiletries_for_washing | toiletries for washing | category | pop 2 | 37 words
+   e.g. soap, shampoo, bar soap, hand soap, shower gel, body wash, face wash, conditioner
+soap_types | soap types | category | pop 5 | 6 words
+   e.g. bar, hand, liquid, antibacterial, black, castile
+hair_care | hair care | category | pop 1 | 40 words
+   e.g. comb, dryer, shampoo, hairbrush, hairspray, conditioner, dye, gel
+skincare_products | skincare products | category | pop 2 | 43 words
+   e.g. cleanser, sunscreen, face cream, moisturizer, toner, serum, lotion, face mask
+korean_skincare | korean skincare | category | pop 4 | 34 words
+   e.g. essence, sheet mask, glass skin, snail mucin, Korean beauty, double cleanse, toner, serum
+makeup | makeup | category | pop 2 | 42 words
+   e.g. mascara, lipstick, eyeliner, eyeshadow, lip gloss, foundation, blush, brush
+nail_care | nail care | category | pop 2 | 40 words
+   e.g. file, polish, manicure, pedicure, clippers, gel, acrylic, top coat
+bath_time | bath time | category | pop 2 | 38 words
+   e.g. soap, bathtub, bubbles, rubber duck, tap, toys, soak, foam
+middle_eastern_grooming | middle eastern grooming | category | pop 5 | 33 words | note: kohl, henna, oud, attar, rose water, argan oil, black soap, miswak
+   e.g. oud, kohl, henna, hammam, mehndi, oud oil, rose water, Turkish bath
+shaving | shaving | category | pop 2 | 40 words
+   e.g. foam, razor, brush, cream, aftershave, gel, soap, blade
+sun_care | sun care | category | pop 2 | 37 words
+   e.g. SPF, sunscreen, tan, hat, aloe, shades, sunburn, sunblock
+grooming_tools | grooming tools | category | pop 1 | 21 words
+   e.g. razor, toothbrush, comb, hairbrush, hair dryer, towel, Q-tip, sponge
+mental_health_words | mental health words | category | pop 2 | 46 words
+   e.g. stress, therapy, anxiety, therapist, depression, panic attack, OCD, PTSD
+phobias | phobias | category | pop 3 | 39 words
+   e.g. phobia, arachnophobia, claustrophobia, acrophobia, agoraphobia, nyctophobia, ophidiophobia, triskaidekaphobia
+massage_types | massage types | category | pop 2 | 43 words
+   e.g. Swedish, deep tissue, foot, back, Thai, sports, shiatsu, full-body
+bad_habits | bad habits | category | pop 2 | 39 words | note: nail biting, slouching, knuckle cracking, snacking, procrastinating
+   e.g. smoking, nail biting, procrastinating, knuckle cracking, snacking, swearing, junk food, slouching
+healthy_habits | healthy habits | category | pop 2 | 42 words | note: flossing, walking, drinking water, early nights, stretching
+   e.g. walking, exercise, sleeping well, drinking water, brushing teeth, yoga, flossing, stretching
+spa | spa | category | pop 2 | 45 words
+   e.g. sauna, facial, massage, spa day, jacuzzi, hot tub, manicure, pedicure
+turkish_bath | turkish bath | category | pop 4 | 29 words | note: hammam: kese, pestemal, marble slab, steam, foam, dome, clogs
+   e.g. steam, hammam, soap, towel, scrub, bathhouse, attendant, marble slab
+european_spa_towns | european spa towns | place | pop 5 | 40 words | note: Bath, Baden-Baden, Vichy, Spa, Karlovy Vary, Evian
+   e.g. Spa, Bath, Baden-Baden, Vichy, Marienbad, Karlovy Vary, Evian, Buxton
+nutrition | nutrition | category | pop 2 | 72 words
+   e.g. fat, protein, vitamin, calorie, carbohydrate, balanced diet, fiber, sugar
+vitamins | vitamins | category | pop 2 | 40 words
+   e.g. vitamin D, vitamin A, ascorbic acid, B12, vitamin E, vitamin K, cobalamin, vitamin B
+dietary_minerals | dietary minerals | category | pop 2 | 25 words | note: iron, calcium, zinc, magnesium, potassium, iodine, selenium
+   e.g. zinc, iron, calcium, magnesium, potassium, sodium, iodine, mineral
+food_groups | food groups | category | pop 1 | 25 words
+   e.g. meat, fish, dairy, fruit, grains, protein, vegetables, poultry
+nutrients | nutrients | category | pop 2 | 37 words
+   e.g. fat, protein, vitamin, mineral, carbohydrate, water, fiber, sugar
+diet_types | diet types | category | pop 2 | 38 words
+   e.g. keto, vegan, vegetarian, paleo, Atkins, low-fat, low-carb, ketogenic
+superfoods | superfoods | category | pop 2 | 43 words
+   e.g. kale, quinoa, chia seeds, blueberries, acai, turmeric, spirulina, goji berries
+healthy_snacks | healthy snacks | category | pop 2 | 40 words
+   e.g. apple slices, carrot sticks, celery sticks, banana, yogurt, hummus, grapes, almonds
+facial_expressions | facial expressions | category | pop 1 | 37 words
+   e.g. wink, grin, smile, frown, pout, glare, smirk, scowl
+gestures | gestures | category | pop 1 | 45 words
+   e.g. wave, shrug, thumbs up, high five, handshake, thumbs down, nod, clap
+body_actions | body actions | category | pop 2 | 44 words
+   e.g. sit, run, jump, walk, stand, hop, leap, bend
+hand_actions | hand actions | category | pop 4 | 37 words
+   e.g. wave, clap, grab, slap, pat, rub, tap, grip
+ways_of_walking | ways of walking | category | pop 2 | 45 words
+   e.g. march, stroll, hike, limp, amble, tiptoe, stride, wander
+ways_of_looking | ways of looking | category | pop 4 | 43 words
+   e.g. peek, watch, stare, glance, gaze, peer, peep, glare
+ways_of_speaking | ways of speaking | category | pop 2 | 49 words
+   e.g. yell, shout, mumble, whisper, mutter, murmur, scream, shriek
+body_noises | body noises | category | pop 2 | 38 words | note: burp, hiccup, sneeze, cough, snore, yawn, sniff, gulp, sigh
+   e.g. yawn, burp, fart, snore, cough, hiccup, sneeze, sigh
+ways_of_crying | ways of crying | category | pop 3 | 29 words
+   e.g. sob, cry, weep, wail, bawl, tear up, shed tears, burst into tears

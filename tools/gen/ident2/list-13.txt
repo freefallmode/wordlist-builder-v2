@@ -1,0 +1,274 @@
+crockery | crockery | category | pop 2 | 34 words
+   e.g. cup, bowl, plate, teapot, dinner plate, mug, teacup, saucer
+bowl_types | bowl types | category | pop 3 | 7 words
+   e.g. soup, cereal, sugar, pasta, dessert, noodle, pudding
+drinking_vessels | drinking vessels | category | pop 2 | 34 words
+   e.g. mug, glass, wine glass, cup, teacup, goblet, tankard, shot glass
+drinking_glass_types | drinking glass types | category | pop 3 | 8 words
+   e.g. wine, shot, pint, martini, water, cocktail, rocks, highball
+cup_types | cup types | category | pop 4 | 5 words
+   e.g. paper, sippy, loving, stirrup, kiddush
+serving_dishes | serving dishes | category | pop 3 | 32 words
+   e.g. bowl, platter, tray, plate, tureen, gravy boat, salad bowl, punch bowl
+locks_and_keys | locks and keys | category | pop 3 | 47 words
+   e.g. key, lock, padlock, house key, spare, master, keyhole, deadbolt
+things_on_wheels | things on wheels | category | pop 1 | 12 words | note: everyday things that roll on wheels
+   e.g. bus, car, bike, pram, scooter, trolley, skateboard, roller skates
+things_you_brush | things you brush | category | pop 1 | 9 words | note: things people brush: teeth, hair, shoes
+   e.g. hair, teeth, shoes, dog, coat, horse, floor, crumb
+things_you_open | things you open | category | pop 1 | 12 words | note: things people open: door, jar, present
+   e.g. box, jar, book, door, letter, window, bottle, present
+things_you_pour | things you pour | category | pop 1 | 11 words | note: liquids and loose things people pour
+   e.g. tea, milk, water, juice, coffee, cereal, gravy, sugar
+cozy_things | cozy things | property | pop 2 | 49 words | note: things that make a home snug: blanket, cocoa, slippers
+   e.g. cocoa, blanket, log fire, slippers, fireplace, cup of tea, fuzzy socks, woolly socks
+things_you_plug_in | things you plug in | property | pop 2 | 73 words | note: mains-powered household items
+   e.g. lamp, fridge, kettle, vacuum, laptop, toaster, blender, microwave
+kitchen_gadgets | kitchen electricals | category | pop 1 | 25 words
+   e.g. fridge, kettle, freezer, toaster, blender, microwave, dishwasher, coffee maker
+things_with_handles | things with handles | property | pop 2 | 65 words
+   e.g. mug, door, hammer, bucket, umbrella, saucepan, suitcase, screwdriver
+kitchen_tools | kitchen tools | category | pop 1 | 14 words
+   e.g. saucepan, ladle, knife, skillet, spatula, whisk, tongs, scoop
+things_with_buttons | things with buttons | property | pop 2 | 54 words | note: clothing and devices
+   e.g. shirt, remote, smartphone, cell phone, calculator, remote control, vending machine, coat
+things_you_wear | buttoned clothing | category | pop 2 | 18 words
+   e.g. shirt, coat, jacket, blouse, cardigan, polo shirt, trench coat, dress shirt
+things_you_switch_on | push-button devices | property | pop 3 | 13 words
+   e.g. vending machine, doorbell, elevator, ATM, radio, toaster, intercom, microwave
+things_with_lids | things with lids | property | pop 2 | 66 words
+   e.g. jar, pot, dustbin, saucepan, trash can, cookie jar, garbage can, box
+things_with_legs | things with legs | property | pop 2 | 62 words | note: furniture and objects, not animals
+   e.g. sofa, desk, chair, couch, stool, table, armchair, barstool
+table_types | table types | category | pop 3 | 8 words
+   e.g. dining, coffee, card, pool, trestle, dressing, drafting, tea
+ball_sports | ball sports | category | pop 1 | 51 words
+   e.g. rugby, soccer, cricket, football, baseball, basketball, volleyball, american football
+team_ball_sports | team ball sports | category | pop 2 | 36 words
+   e.g. rugby, cricket, football, baseball, basketball, volleyball, american football, netball
+sports_balls | sports balls | category | pop 2 | 38 words | note: types of ball named for their sport or object: football, golf ball, shuttlecock, puck
+   e.g. golf, tennis, soccer, football, baseball, basketball, volleyball, rugby
+soccer_terms | soccer terms | category | pop 2 | 55 words
+   e.g. goal, goalie, penalty, offside, referee, striker, red card, free kick
+soccer_positions | soccer positions | category | pop 2 | 31 words
+   e.g. goalie, striker, forward, defender, goalkeeper, winger, left back, midfielder
+european_soccer_clubs | european soccer clubs | category | pop 3 | 42 words
+   e.g. Arsenal, Chelsea, Barcelona, Liverpool, Real Madrid, Manchester United, Spurs, Juventus
+ball_skills | soccer skills | category | pop 3 | 13 words
+   e.g. header, cross, dribble, bicycle kick, overhead kick, dummy, volley, rabona
+basketball_terms | basketball terms | category | pop 2 | 46 words
+   e.g. hoop, dunk, court, free throw, three-pointer, rim, layup, block
+nba_teams | nba teams | category | pop 3 | 35 words
+   e.g. Bulls, Lakers, Celtics, Warriors, Heat, Spurs, Knicks, Nets
+american_football_terms | american football terms | category | pop 2 | 44 words
+   e.g. sack, tackle, touchdown, field goal, Super Bowl, quarterback, punt, snap
+nfl_teams | nfl teams | category | pop 3 | 35 words
+   e.g. Bears, Eagles, Cowboys, Patriots, Jets, 49ers, Lions, Giants
+american_football_positions | american football positions | category | pop 3 | 29 words
+   e.g. quarterback, running back, wide receiver, tackle, kicker, punter, tight end, linebacker
+baseball_terms | baseball terms | category | pop 2 | 51 words
+   e.g. bat, strike, batter, catcher, pitcher, home run, walk, mound
+mlb_teams | mlb teams | category | pop 3 | 33 words
+   e.g. Yankees, Red Sox, Dodgers, Cubs, Mets, Cardinals, Reds, Twins
+baseball_positions | baseball positions | category | pop 2 | 11 words | note: Exactly: pitcher, catcher, first baseman, second baseman, third baseman, shortstop, left fielder, center fielder, right 
+   e.g. catcher, pitcher, shortstop, first baseman, third baseman, second baseman, left fielder, right fielder
+baseball_bases | baseball bases | category | pop 3 | 6 words | note: Exactly: first base, second base, third base, home plate.
+   e.g. first, third, second, hot corner, home plate, home base
+ballpark_parts | ballpark parts | category | pop 3 | 11 words
+   e.g. mound, infield, diamond, outfield, dugout, bullpen, backstop, batting cage
+pitching_terms | baseball pitching terms | category | pop 3 | 17 words
+   e.g. pitcher, mound, fastball, curveball, strikeout, slider, bullpen, changeup
+hitting_terms | baseball hitting terms | category | pop 3 | 14 words
+   e.g. bat, batter, home run, foul ball, grand slam, RBI, bunt, pinch hitter
+cricket_terms | cricket terms | category | pop 3 | 52 words
+   e.g. bat, run, wicket, bowler, batsman, six, over, four
+cricket_fielding_positions | cricket fielding positions | category | pop 4 | 22 words
+   e.g. slip, point, wicketkeeper, gully, cover, bowler, mid-on, mid-off
+cricket_dismissals | cricket dismissals | category | pop 3 | 7 words | note: bowled, caught, LBW, run out, stumped, hit wicket
+   e.g. bowled, caught, LBW, run out, stumped, leg before wicket, hit wicket
+bowling_deliveries | cricket deliveries | category | pop 4 | 10 words
+   e.g. wide, googly, yorker, bouncer, no-ball, leg spin, off spin, seam
+players_and_officials | cricket players and officials | category | pop 4 | 8 words
+   e.g. bowler, batsman, wicketkeeper, umpire, spinner, all-rounder, tail-ender, nightwatchman
+rugby_terms | rugby terms | category | pop 3 | 43 words
+   e.g. try, scrum, tackle, ruck, prop, wing, hooker, lineout
+volleyball_terms | volleyball terms | category | pop 3 | 38 words
+   e.g. set, net, spike, serve, block, dig, ace, bump
+sports_with_a_net | sports with a net | property | pop 2 | 41 words
+   e.g. tennis, badminton, volleyball, whiff-whaff, table tennis, padel, soccer, netball
+sports_played_with_sticks | sports played with sticks | property | pop 3 | 9 words
+   e.g. lacrosse, field hockey, polo, hurling, croquet, floorball, bandy, shinty
+racket_and_target_sports | racket and target sports | category | pop 2 | 47 words
+   e.g. golf, darts, tennis, archery, pool, squash, bowling, snooker
+racket_sports | racket sports | category | pop 3 | 31 words
+   e.g. tennis, squash, badminton, whiff-whaff, table tennis, padel, ping pong, pickleball
+tennis_terms | tennis terms | category | pop 2 | 47 words
+   e.g. ace, net, love, serve, court, racket, forehand, backhand
+tennis_shots | tennis shots | category | pop 3 | 24 words
+   e.g. serve, forehand, backhand, ace, lob, smash, volley, return
+tennis_grand_slams | tennis grand slams | category | pop 2 | 5 words | note: Exactly: Wimbledon, US Open, Australian Open, French Open.
+   e.g. Wimbledon, US Open, French Open, Australian Open, Roland Garros
+golf_terms | golf terms | category | pop 2 | 52 words
+   e.g. tee, par, putt, bogey, eagle, clubs, green, birdie
+golf_shots | golf shots | category | pop 3 | 16 words
+   e.g. tee, putt, drive, hook, chip, pitch, slice, draw
+golf_course_features | golf course features | category | pop 3 | 19 words
+   e.g. tee, hole, green, bunker, fairway, pin, rough, hazard
+golf_clubs | golf clubs | category | pop 2 | 24 words
+   e.g. iron, wood, driver, putter, wedge, sand wedge, pitching wedge, hybrid
+wedge_types | wedge types | category | pop 3 | 4 words
+   e.g. sand, pitching, lob, gap
+golf_majors | golf majors | category | pop 3 | 6 words | note: Exactly: The Masters, US Open, PGA Championship, The Open Championship.
+   e.g. Masters, The Masters, US Open, PGA Championship, The Open Championship, British Open
+scoring_terms | golf scoring terms | category | pop 3 | 9 words
+   e.g. par, bogey, eagle, birdie, hole in one, ace, albatross, double bogey
+table_tennis_terms | table tennis terms | category | pop 3 | 35 words
+   e.g. net, serve, paddle, ping pong, loop, rally, smash, topspin
+cue_sports_terms | cue sports terms | category | pop 3 | 58 words | note: snooker, pool and billiards words
+   e.g. cue, pool, break, white, pocket, red, rack, foul
+cue_strokes | cue strokes | category | pop 4 | 14 words
+   e.g. safety, cut shot, jump shot, bank shot, kick shot, draw shot, side spin, combination
+archery_terms | archery terms | category | pop 3 | 44 words
+   e.g. bow, arrow, archer, target, draw, quiver, longbow, recurve
+darts_terms | darts terms | category | pop 3 | 39 words
+   e.g. dart, bull, bullseye, dartboard, 180, ton, oche, double
+bowling_terms | bowling terms | category | pop 3 | 40 words
+   e.g. pin, lane, strike, gutter ball, spare, frame, alley, shoes
+water_sports | water sports | category | pop 1 | 52 words
+   e.g. diving, surfing, sailing, swimming, snorkeling, waterskiing, yacht, rowing
+swimming_strokes | swimming strokes | category | pop 2 | 27 words
+   e.g. freestyle, butterfly, backstroke, breaststroke, sidestroke, back crawl, front crawl, doggy paddle
+main_swimming_strokes | main swimming strokes | category | pop 1 | 4 words | note: Exactly: freestyle, backstroke, breaststroke, butterfly.
+   e.g. freestyle, backstroke, breaststroke, butterfly
+swimming_words | swimming words | category | pop 2 | 43 words
+   e.g. pool, goggles, swimsuit, lifeguard, lap, lane, trunks, swim cap
+diving_terms | diving terms | category | pop 3 | 41 words | note: springboard and platform diving, not scuba
+   e.g. dive, platform, springboard, pike, tuck, splash, swan dive, somersault
+dive_types | dive types | category | pop 4 | 4 words
+   e.g. swan, forward, back, pencil
+scuba_words | scuba words | category | pop 3 | 59 words
+   e.g. mask, fins, wetsuit, regulator, oxygen tank, scuba, diver, snorkel
+underwater_gear | underwater gear | category | pop 3 | 19 words
+   e.g. mask, fins, wetsuit, regulator, oxygen tank, snorkel, flippers, air tank
+surfing_words | surfing words | category | pop 3 | 60 words
+   e.g. wave, wipeout, surfboard, wax, fin, tube, swell, leash
+surfer_slang | surfer slang | category | pop 3 | 12 words
+   e.g. wipeout, hang ten, kook, grom, shaka, goofy, stoked, gnarly
+surf_moves | surf moves | category | pop 3 | 11 words
+   e.g. pop-up, hang ten, carve, rip curl, duck dive, paddle out, snap, aerial
+rowing_words | rowing words | category | pop 4 | 43 words
+   e.g. oar, stroke, cox, scull, eight, regatta, coxswain, bow
+sailing_sports | sailing sports | category | pop 4 | 42 words
+   e.g. jibe, yacht, sailing, regatta, dinghy, tacking, mainsail, catamaran
+board_and_paddle_sports | board and paddle sports | category | pop 3 | 52 words
+   e.g. surfing, canoeing, kayaking, windsurfing, rafting, paddling, kitesurfing, waterskiing
+paddled_boat_sports | paddled boat sports | category | pop 3 | 16 words
+   e.g. canoeing, kayaking, rafting, sea kayaking, dragon boating, whitewater rafting, whitewater kayaking, canoe polo
+sports_ridden_on_a_board | sports ridden on a board | category | pop 3 | 17 words
+   e.g. surfing, windsurfing, kitesurfing, wakeboarding, paddleboarding, kiteboarding, bodyboarding, skimboarding
+engine_powered_sports | motorboat sports | category | pop 3 | 8 words
+   e.g. waterskiing, jet skiing, wakeboarding, tubing, flyboarding, wakesurfing, kneeboarding, powerboating
+winter_sports | winter sports | category | pop 1 | 48 words
+   e.g. skiing, sledding, ice hockey, ice skating, snowboarding, figure skating, luge, slalom
+snow_sports | snow sports | category | pop 2 | 49 words
+   e.g. skiing, halfpipe, snowboarding, slalom, sledding, downhill, ski jumping, alpine skiing
+olympic_snow_sports | olympic snow sports | category | pop 2 | 12 words
+   e.g. skiing, snowboarding, ski jumping, alpine skiing, cross-country skiing, luge, bobsled, biathlon
+skiing_words | skiing words | category | pop 3 | 46 words
+   e.g. ski, slope, ski pole, ski lift, ski boots, piste, slalom, powder
+skating_words | skating words | category | pop 3 | 48 words
+   e.g. rink, skates, figure skating, roller skating, spin, axel, blade, ice rink
+figure_skating_moves | figure skating moves | category | pop 3 | 27 words
+   e.g. axel, triple axel, lutz, flip, loop, lift, salchow, toe loop
+ice_hockey_terms | ice hockey terms | category | pop 2 | 47 words
+   e.g. Puck, rink, stick, goalie, slapshot, face-off, power play, penalty box
+nhl_teams | nhl teams | category | pop 3 | 38 words
+   e.g. Bruins, Canadiens, Maple Leafs, Rangers, Penguins, Red Wings, Blackhawks, Jets
+snowboard_tricks | snowboard tricks | category | pop 4 | 47 words
+   e.g. 180, grab, ollie, backflip, 360, 720, method air, rail slide
+snowboard_grabs | snowboard grabs | category | pop 5 | 6 words
+   e.g. indy, mute, tail, nose, melon, crail
+curling_words | curling words | category | pop 3 | 34 words
+   e.g. broom, stone, curling, sweeping, skip, draw, sheet, house
+combat_sports | combat sports | category | pop 1 | 46 words
+   e.g. MMA, judo, boxing, karate, kung fu, wrestling, taekwondo, cage fighting
+martial_arts | martial arts | category | pop 2 | 53 words
+   e.g. judo, karate, kung fu, taekwondo, aikido, tai chi, Muay Thai, krav maga
+japanese_martial_arts | japanese martial arts | category | pop 3 | 24 words
+   e.g. judo, karate, aikido, sumo, kendo, jujutsu, ninjutsu, jiu-jitsu
+chinese_martial_arts | chinese martial arts | category | pop 4 | 18 words
+   e.g. kung fu, tai chi, wushu, wing chun, shaolin kung fu, drunken boxing, praying mantis, hung gar
+southeast_asian_martial_arts | southeast asian martial arts | category | pop 4 | 9 words
+   e.g. Muay Thai, eskrima, arnis, silat, Kuntao, Lethwei, Vovinam, Bokator
+weapon_based_martial_arts | weapon-based martial arts | category | pop 4 | 9 words
+   e.g. kendo, kyudo, iaido, eskrima, arnis, Gatka, bojutsu, naginata
+grappling_arts | grappling arts | category | pop 3 | 8 words
+   e.g. judo, aikido, jujutsu, Brazilian jiu-jitsu, sumo, sambo, glima, Ssireum
+boxing_terms | boxing terms | category | pop 2 | 47 words
+   e.g. jab, ring, round, gloves, uppercut, knockout, punching bag, hook
+boxing_weight_classes | boxing weight classes | category | pop 3 | 24 words
+   e.g. heavyweight, lightweight, welterweight, middleweight, light heavyweight, flyweight, bantamweight, featherweight
+wrestling_terms | wrestling terms | category | pop 3 | 39 words
+   e.g. pin, mat, ring, body slam, suplex, takedown, headlock, tag team
+sumo_words | sumo words | category | pop 4 | 29 words
+   e.g. sumo, rikishi, mawashi, yokozuna, sumo wrestler, dohyo, chanko nabe, basho
+fencing_terms | fencing terms | category | pop 4 | 35 words
+   e.g. foil, epee, fencer, mask, saber, parry, lunge, blade
+karate_words | karate words | category | pop 4 | 54 words
+   e.g. dojo, kata, sensei, black belt, gi, obi, kiai, kumite
+strikes_kicks_and_blocks | karate strikes, kicks and blocks | category | pop 5 | 9 words
+   e.g. shuto, oi zuki, mae geri, yoko geri, gyaku zuki, gedan barai, mawashi geri, nukite
+judo_words | judo words | category | pop 4 | 60 words
+   e.g. ippon, judoka, gi, yuko, tatami, judogi, waza-ari, hip throw
+throwing_moves | judo throws | category | pop 5 | 17 words
+   e.g. seoi nage, uchi mata, o goshi, osoto gari, tomoe nage, ouchi gari, harai goshi, uki goshi
+pins_and_chokes | judo groundwork | category | pop 5 | 12 words
+   e.g. armlock, hold-down, osaekomi, shime-waza, kesa gatame, juji gatame, ude garami, kata gatame
+track_events | track events | category | pop 2 | 43 words
+   e.g. sprint, hurdles, marathon, 100 metres, 200 metres, mile, dash, 400 metres
+decathlon_events | decathlon events | category | pop 2 | 12 words | note: 100 meters, long jump, shot put, high jump, 400 meters, 110 meter hurdles, discus, pole vault, javelin, 1500 meters
+   e.g. shot put, long jump, high jump, pole vault, discus, javelin, 100 metres, 400 metres
+field_events | field events | category | pop 3 | 33 words
+   e.g. discus, javelin, long jump, high jump, pole vault, triple jump, discus throw, javelin throw
+gymnastics | gymnastics | category | pop 2 | 42 words
+   e.g. vault, gymnast, cartwheel, uneven bars, Simone Biles, balance beam, pommel horse, floor exercise
+gymnastics_apparatus | gymnastics apparatus | category | pop 2 | 21 words
+   e.g. uneven bars, balance beam, pommel horse, parallel bars, vault, trampoline, floor exercise, horizontal bar
+gymnastics_moves | gymnastics moves | category | pop 2 | 30 words
+   e.g. splits, backflip, cartwheel, handstand, somersault, tuck, bridge, walkover
+running_words | running words | category | pop 2 | 45 words
+   e.g. 5K, jog, runner, marathon, running shoes, 10K, pace, trail
+famous_marathons | famous marathons | place | pop 3 | 26 words
+   e.g. Boston, London, New York City, Athens, Olympic Marathon, Paris, Tokyo, Berlin
+triathlon_words | triathlon words | category | pop 4 | 51 words
+   e.g. Ironman, triathlon, triathlete, T1, T2, wetsuit, run leg, swim cap
+kit_and_equipment | triathlon kit | category | pop 4 | 13 words
+   e.g. wetsuit, swim cap, swim goggles, tri bike, tri suit, tri shorts, timing chip, aero bars
+olympic_sports | olympic sports | category | pop 1 | 84 words
+   e.g. golf, judo, soccer, tennis, diving, skiing, boxing, archery
+team_sports | olympic team sports | category | pop 1 | 15 words
+   e.g. soccer, football, basketball, volleyball, hockey, water polo, beach volleyball, cricket
+aquatic_sports | olympic aquatic sports | category | pop 2 | 12 words
+   e.g. swimming, diving, rowing, surfing, sailing, water polo, canoeing, artistic swimming
+cheerleading_words | cheerleading words | category | pop 3 | 35 words
+   e.g. cheer, pom-pom, cheerleader, base, chant, stunt, uniform, Go team
+paralympic_sports | paralympic sports | category | pop 4 | 44 words
+   e.g. para swimming, para athletics, wheelchair basketball, boccia, goalball, para cycling, para ice hockey, wheelchair rugby
+sports_equipment | sports equipment | category | pop 1 | 75 words
+   e.g. ski, net, ball, dumbbell, baseball bat, hockey stick, boxing gloves, tennis racket
+gym_gear | gym gear | category | pop 2 | 16 words
+   e.g. dumbbell, barbell, punching bag, yoga mat, jump rope, kettlebell, free weights, weight plate
+protective_gear | protective sports gear | category | pop 2 | 9 words
+   e.g. boxing gloves, helmet, shin guards, baseball glove, football helmet, goggles, mouthguard, catcher's mitt
+things_you_swing | things you swing | property | pop 2 | 10 words
+   e.g. baseball bat, hockey stick, tennis racket, racket, pool cue, golf club, cricket bat, snooker cue
+sports_venues | sports venues | place | pop 2 | 65 words
+   e.g. stadium, Colosseum, golf course, tennis court, swimming pool, football pitch, basketball court, gym
+places_for_winter_sports | places for winter sports | place | pop 3 | 8 words
+   e.g. ice rink, ski slope, halfpipe, ski resort, curling rink, ski jump hill, bobsled track, Cresta Run
+playing_surfaces | playing surfaces | place | pop 2 | 13 words
+   e.g. tennis court, football pitch, basketball court, soccer field, baseball diamond, squash court, bowling green, cricket ground
+sports_officials | sports officials | category | pop 3 | 51 words
+   e.g. ref, umpire, referee, scorer, linesman, tennis umpire, boxing referee, cricket umpire
+trackside_officials | motor racing officials | category | pop 5 | 9 words
+   e.g. race starter, race marshal, scrutineer, commissaire, pit marshal, finish judge, clerk of scales, clerk of the course

@@ -1,0 +1,274 @@
+garden | garden | category | pop 1 | 59 words
+   e.g. lawn, shed, hose, rake, hedge, spade, shovel, trowel
+garden_tools | garden tools | category | pop 2 | 34 words
+   e.g. hoe, rake, fork, mower, spade, shovel, trowel, lawnmower
+garden_features | garden features | category | pop 2 | 39 words
+   e.g. lawn, pond, arbor, flower bed, path, hedge, fence, patio
+garden_pests | garden pests | category | pop 3 | 38 words
+   e.g. slug, snail, aphid, mole, caterpillar, deer, earwig, rabbit
+garden_furniture | garden furniture | category | pop 2 | 30 words
+   e.g. bench, deck chair, patio table, hammock, sun lounger, patio chair, picnic table, lounge chair
+garden_birds | garden birds | category | pop 2 | 43 words
+   e.g. robin, blue tit, blackbird, wren, sparrow, starling, cardinal, goldfinch
+gardening_verbs | gardening verbs | category | pop 3 | 35 words
+   e.g. dig, sow, weed, plant, prune, mow, grow, harvest
+garden_styles | garden styles | category | pop 5 | 47 words | note: rock garden, cottage garden, kitchen garden, zen garden, knot garden, walled garden
+   e.g. cottage, zen, formal, English, Japanese, rock, quad, herb
+famous_gardens | famous gardens | place | pop 3 | 29 words | note: Kew, Versailles, Keukenhof, Giverny, Butchart, Kirstenbosch, Boboli
+   e.g. Kew, Giverny, Versailles, Keukenhof, Eden Project, Sissinghurst, Gardens by the Bay, Wisley
+japanese_garden | japanese garden | category | pop 3 | 34 words | note: koi, bonsai, stone lantern, raked gravel, moss, teahouse, stepping stones
+   e.g. koi, zen, koi pond, stone lantern, rock, stone, bonsai, rockery
+garden_helpers | garden helpers | category | pop 2 | 27 words
+   e.g. bee, ladybug, hedgehog, earthworm, frog, toad, honeybee, bumblebee
+landscapes | landscapes | category | pop 1 | 68 words
+   e.g. hill, lake, peak, cliff, river, beach, valley, canyon
+mountain_features | mountain features | category | pop 2 | 34 words
+   e.g. peak, ridge, summit, pass, crag, cliff, slope, valley
+river_features | river features | category | pop 2 | 35 words
+   e.g. bank, stream, rapids, delta, brook, creek, mouth, source
+desert_features | desert features | category | pop 4 | 30 words
+   e.g. oasis, dune, mirage, sandstorm, mesa, wadi, butte, haboob
+ice_features | ice features | category | pop 3 | 36 words
+   e.g. icicle, glacier, iceberg, frozen lake, floe, cave, pack, sheet
+cave_features | cave features | category | pop 4 | 32 words
+   e.g. cavern, stalactite, stalagmite, grotto, entrance, mouth, cenote, crystal
+flat_landscapes | flat landscapes | category | pop 4 | 29 words | note: plain, plateau, prairie, steppe, tundra, moor, heath, fen, veld, pampas
+   e.g. plain, prairie, steppe, savanna, flatland, grassland, great plains, fen
+bodies_of_water | bodies of water | category | pop 2 | 37 words | note: lake, pond, lagoon, reservoir, loch, tarn, fjord, bay, gulf, estuary, sound
+   e.g. sea, pond, lake, river, ocean, creek, harbor, stream
+scottish_landscape_words | scottish landscape words | category | pop 4 | 37 words | note: glen, loch, ben, burn, brae, firth, strath, corrie, munro
+   e.g. glen, loch, Loch Ness, Ben, moor, burn, brae, heather
+island_types | island types | category | pop 4 | 29 words
+   e.g. desert, tropical, atoll, coral, islet, volcanic, archipelago, cay
+soggy_places | soggy places | category | pop 2 | 9 words
+   e.g. bog, swamp, marsh, fen, delta, lagoon, wetland, mire
+seashells | seashells | category | pop 2 | 35 words | note: cowrie, conch, scallop, cockle, whelk, clam, abalone, nautilus, limpet, sand dollar
+   e.g. conch, cowrie, scallop, clam, whelk, cockle, nautilus, oyster shell
+rock_pool | rock pool life | category | pop 2 | 42 words | note: crab, starfish, limpet, anemone, barnacle, periwinkle, shrimp, blenny
+   e.g. crab, anemone, starfish, sea anemone, shrimp, limpet, seaweed, sea star
+beachcombing_finds | beachcombing finds | category | pop 2 | 37 words | note: driftwood, sea glass, shells, pebbles, mermaid's purse, cuttlebone, kelp
+   e.g. shells, pebbles, driftwood, sea glass, seaweed, starfish, crab shell, mermaid's purse
+coastal_features | coastal features | category | pop 2 | 43 words
+   e.g. cliff, beach, coast, bay, dune, cove, sea cave, headland
+coastal_plants | coastal plants | category | pop 5 | 39 words | note: marram grass, sea holly, samphire, thrift, sea kale, sea lavender, mangrove
+   e.g. marram grass, kelp, thrift, seaweed, mangrove, sea holly, samphire, sea kale
+tides_and_currents | tides and currents | category | pop 4 | 43 words
+   e.g. low, high, tide, current, gulf stream, ebb, flood, spring
+shipwreck_coast_words | shipwreck coast words | category | pop 3 | 37 words | note: lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn
+   e.g. wreck, shipwreck, lighthouse, sunken ship, SOS, reef, rocks, foghorn
+wave_words | wave words | category | pop 4 | 41 words
+   e.g. surf, swell, breaker, crest, rogue, ripple, tsunami, whitecap
+weather | weather | category | pop 1 | 70 words
+   e.g. fog, rain, snow, wind, cloud, storm, thunder, lightning
+rain_words | rain words | category | pop 2 | 37 words
+   e.g. rain, heavy, light, shower, drizzle, raindrop, pouring, rainfall
+wind_words | wind words | category | pop 2 | 44 words
+   e.g. wind, gale, gust, breeze, westerly, easterly, headwind, tailwind
+storms | storms | category | pop 2 | 40 words
+   e.g. storm, tornado, hurricane, thunderstorm, thunder, twister, typhoon, tempest
+weather_conditions | weather conditions | category | pop 1 | 24 words
+   e.g. fog, rain, wind, cloud, storm, sunny, snowy, icy
+cloud_types | cloud types | category | pop 2 | 39 words
+   e.g. storm, cirrus, stratus, cumulus, rain, nimbus, fluffy, nimbostratus
+main_cloud_types | main cloud types | category | pop 2 | 10 words | note: Exactly: cirrus, cirrocumulus, cirrostratus, altocumulus, altostratus, nimbostratus, stratocumulus, stratus, cumulus, cu
+   e.g. cirrus, stratus, cumulus, nimbostratus, cumulonimbus, altocumulus, altostratus, cirrocumulus
+snow_and_ice | snow and ice | category | pop 2 | 49 words
+   e.g. frost, sleet, snowfall, blizzard, snowflake, hail, storm, slush
+frozen_precipitation | frozen precipitation | category | pop 2 | 10 words
+   e.g. sleet, snowfall, snowflake, hail, flurry, snow shower, freezing rain, wintry mix
+polar_formations | polar formations | category | pop 4 | 12 words
+   e.g. glacier, iceberg, floe, pack, sheet, ice cap, sea ice, crevasse
+weather_instruments | weather instruments | category | pop 4 | 42 words
+   e.g. barometer, wind vane, rain gauge, thermometer, weather station, radar, wind sock, anemometer
+named_winds | named winds | category | pop 5 | 42 words | note: mistral, sirocco, chinook, foehn, bora, harmattan, khamsin, santa ana, haboob
+   e.g. sirocco, trades, monsoon, chinook, mistral, foehn, zephyr, haboob
+forecast_words | forecast words | category | pop 2 | 53 words | note: front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility
+   e.g. forecast, temperature, weather map, low pressure, high pressure, partly cloudy, chance of rain, front
+atmospheric_patterns | atmospheric patterns | category | pop 4 | 14 words
+   e.g. low pressure, high pressure, front, cold front, warm front, isobar, anticyclone, pressure system
+lines_from_a_daily_bulletin | weather forecast phrases | category | pop 2 | 9 words
+   e.g. partly cloudy, chance of rain, daytime high, mostly sunny, scattered showers, sunny spells, overnight low, isolated storms
+sky_phenomena | sky phenomena | category | pop 3 | 50 words | note: rainbow, aurora, halo, sundog, moonbow, mirage, green flash, crepuscular rays
+   e.g. rainbow, shooting star, northern lights, aurora borealis, halo, mirage, Aurora, red sky
+ice_crystal_effects | ice-crystal effects | category | pop 5 | 15 words
+   e.g. halo, sundog, sun dog, sun halo, moon halo, mock sun, moon dog, parhelion
+sunrise_and_sunset_sights | sunrise and sunset sights | category | pop 4 | 9 words
+   e.g. red sky, afterglow, golden hour, green flash, crepuscular rays, blue hour, alpenglow, Belt of Venus
+night_sky_sights | night sky sights | category | pop 3 | 12 words
+   e.g. shooting star, northern lights, aurora borealis, Aurora, meteor shower, southern lights, aurora australis, earthshine
+hot_weather_words | hot weather words | category | pop 2 | 42 words
+   e.g. boiling, heatwave, roasting, scorcher, scorching, sweltering, warm, muggy
+kinds_of_precipitation | kinds of precipitation | category | pop 2 | 9 words | note: rain, drizzle, sleet, hail, snow
+   e.g. rain, snow, hail, sleet, drizzle, rainfall, snowfall, mizzle
+signs_of_spring | signs of spring | category | pop 2 | 45 words | note: buds, blossom, lambs, catkins, frogspawn, nesting, daffodils
+   e.g. buds, lambs, Blossom, daffodils, crocus, tulips, chicks, nesting
+signs_of_summer | signs of summer | category | pop 2 | 44 words | note: long days, heat haze, ripe berries, bees, hay, thunderstorms, sunflowers
+   e.g. sunshine, ice cream, long days, sunburn, picnics, heatwave, barbecues, butterflies
+signs_of_autumn | signs of autumn | category | pop 2 | 48 words | note: falling leaves, acorns, conkers, migration, frost, fungi, harvest
+   e.g. leaf fall, red leaves, falling leaves, acorns, conkers, harvest, mushrooms, shorter days
+signs_of_winter | signs of winter | category | pop 2 | 49 words | note: frost, icicles, bare trees, hibernation, snow, short days, holly
+   e.g. ice, snow, frost, bare trees, icicles, snowfall, cold snap, short days
+nature_at_night | nature at night | category | pop 3 | 48 words | note: owls, bats, moths, fireflies, dew, moonlight, glowworms, hedgehogs
+   e.g. moon, bats, owls, stars, moonlight, night sky, moths, foxes
+monsoon_season | monsoon season | category | pop 3 | 48 words | note: downpour, flood, paddy fields, leeches, humidity, puddles, umbrellas
+   e.g. the Wet, downpour, umbrellas, the rains, rain clouds, pouring rain, torrential rain, flood
+dry_season | dry season | category | pop 3 | 48 words | note: drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub
+   e.g. drought, cracked earth, waterhole, dry grass, dry spell, dust storm, cracked mud, parched land
+rocks_and_minerals | rocks and minerals | category | pop 2 | 69 words
+   e.g. rock, coal, stone, marble, quartz, granite, limestone, sandstone
+gemstones | gemstones | category | pop 2 | 61 words
+   e.g. ruby, diamond, emerald, Amethyst, sapphire, opal, jade, Topaz
+quartz_varieties | quartz varieties | category | pop 4 | 28 words | note: amethyst, citrine, rose quartz, agate, onyx, jasper, carnelian, tiger's eye
+   e.g. rose, Amethyst, Agate, smoky, Citrine, tiger's eye, rock crystal, onyx
+blue_gems | blue gems | category | pop 3 | 9 words
+   e.g. sapphire, turquoise, aquamarine, lapis lazuli, tanzanite, star sapphire, iolite, sodalite
+metals | metals | category | pop 2 | 73 words
+   e.g. tin, iron, gold, lead, steel, silver, copper, aluminum
+precious_elements | precious elements | category | pop 3 | 8 words
+   e.g. gold, silver, platinum, iridium, palladium, osmium, rhodium, ruthenium
+alkali_and_alkaline_earth_elements | alkali and alkaline earth elements | category | pop 4 | 12 words
+   e.g. lithium, magnesium, sodium, radium, potassium, barium, cesium, calcium
+rock_types | rock types | category | pop 2 | 46 words
+   e.g. marble, granite, limestone, sandstone, coal, slate, chalk, basalt
+igneous_rocks | igneous rocks | category | pop 4 | 29 words | note: granite, basalt, obsidian, pumice, gabbro, andesite, rhyolite, tuff
+   e.g. basalt, granite, pumice, obsidian, pumice stone, tuff, gabbro, scoria
+sedimentary_rocks | sedimentary rocks | category | pop 4 | 29 words | note: sandstone, limestone, shale, chalk, coal, conglomerate, flint, mudstone
+   e.g. limestone, sandstone, chalk, shale, coal, flint, mudstone, siltstone
+minerals | minerals | category | pop 3 | 50 words
+   e.g. quartz, mica, pyrite, calcite, feldspar, Amethyst, fool's gold, talc
+mohs_scale_minerals | mohs scale minerals | category | pop 4 | 10 words | note: talc, gypsum, calcite, fluorite, apatite, orthoclase, quartz, topaz, corundum, diamond
+   e.g. talc, quartz, diamond, Topaz, gypsum, calcite, fluorite, apatite
+metal_ores | metal ores | category | pop 4 | 15 words
+   e.g. galena, hematite, malachite, magnetite, bauxite, azurite, cinnabar, cuprite
+building_stones | building stones | category | pop 3 | 36 words
+   e.g. slate, brick, marble, granite, limestone, sandstone, cobblestone, Bath
+mining_words | mining words | category | pop 3 | 47 words | note: shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter
+   e.g. ore, mine, miner, pickaxe, coal mine, pit, seam, vein
+gold_rush_words | gold rush words | category | pop 3 | 33 words | note: prospector, claim, panning, sluice, boomtown, forty-niner, Klondike
+   e.g. claim, panning, gold rush, prospector, forty-niner, pan, dust, nugget
+natural_disasters | natural disasters | category | pop 1 | 39 words
+   e.g. flood, tornado, tsunami, wildfire, hurricane, earthquake, volcanic eruption, twister
+volcano_words | volcano words | category | pop 2 | 47 words
+   e.g. lava, magma, volcano, eruption, Vesuvius, lava flow, ash, crater
+lava_forms | lava forms | category | pop 4 | 5 words
+   e.g. flow, tube, lake, dome, pillow
+earthquake_words | earthquake words | category | pop 3 | 35 words
+   e.g. earthquake, Richter scale, quake, fault, tremor, epicenter, aftershock, seismograph
+layers_of_the_earth | layers of the earth | category | pop 2 | 21 words
+   e.g. core, crust, mantle, outer core, inner core, iron, solid core, lithosphere
+earth_s_layers | the four layers of the earth | category | pop 2 | 4 words | note: Exactly: crust, mantle, outer core, inner core.
+   e.g. crust, mantle, outer core, inner core
+erosion_words | erosion words | category | pop 4 | 49 words
+   e.g. erosion, weathering, wind, canyon, glacier, coastal, sediment, landslide
+geothermal_words | geothermal words | category | pop 4 | 40 words | note: geyser, hot spring, fumarole, mud pool, steam vent, sulfur, onsen
+   e.g. geyser, hot spring, Old Faithful, onsen, Iceland, mud pool, steam vent, Yellowstone
+soil_words | soil words | category | pop 3 | 45 words | note: clay, loam, silt, peat, humus, topsoil, subsoil, loess, compost
+   e.g. clay, loam, dirt, topsoil, sand, silt, peat, humus
+water_cycle_words | water cycle words | category | pop 3 | 40 words | note: evaporation, condensation, precipitation, runoff, groundwater, aquifer
+   e.g. evaporation, water cycle, condensation, precipitation, rain, cloud, vapor, hydrologic cycle
+layers_of_the_atmosphere | layers of the atmosphere | category | pop 2 | 5 words | note: troposphere, stratosphere, mesosphere, thermosphere, exosphere
+   e.g. troposphere, stratosphere, exosphere, mesosphere, thermosphere
+layers_of_a_rainforest | layers of a rainforest | category | pop 3 | 5 words | note: emergent layer, canopy, understory, forest floor
+   e.g. canopy, forest floor, rainforest floor, understory, emergent layer
+types_of_volcano | types of volcano | category | pop 3 | 8 words | note: shield, cinder cone, composite, lava dome, caldera
+   e.g. shield, composite, cinder cone, stratovolcano, lava dome, caldera, scoria cone, volcanic dome
+rainforest | rainforest | category | pop 1 | 41 words
+   e.g. jaguar, monkey, parrot, toucan, jungle, canopy, Amazon, gorilla
+ocean | ocean | category | pop 1 | 54 words
+   e.g. sea, tide, wave, shark, whale, dolphin, Pacific, Atlantic
+marine_animals | marine animals | category | pop 1 | 14 words
+   e.g. shark, whale, octopus, dolphin, jellyfish, sea turtle, starfish, plankton
+seafloor_features | seafloor features | category | pop 3 | 10 words
+   e.g. ocean floor, abyss, trench, Mariana Trench, continental shelf, abyssal plain, mid-ocean ridge, Challenger Deep
+moving_water | water movements | category | pop 3 | 10 words
+   e.g. tide, wave, current, whirlpool, swell, riptide, undertow, gulf stream
+desert | desert | category | pop 1 | 48 words
+   e.g. dune, camel, oasis, cactus, mirage, Sahara, scorpion, Gobi
+savanna | savanna | category | pop 2 | 46 words
+   e.g. lion, zebra, cheetah, giraffe, elephant, grassland, rhinoceros, wildebeest
+polar_regions | polar regions | category | pop 2 | 53 words
+   e.g. ice, snow, igloo, Arctic, penguin, glacier, iceberg, North Pole
+animals_of_the_far_north | animals of the far north | category | pop 2 | 12 words
+   e.g. polar bear, husky, walrus, sled dog, arctic fox, narwhal, musk ox, caribou
+animals_of_the_far_south | animals of the far south | category | pop 3 | 8 words
+   e.g. penguin, emperor penguin, leopard seal, skua, krill, Adelie penguin, snow petrel, Weddell seal
+frozen_formations | frozen formations | category | pop 3 | 12 words
+   e.g. ice, glacier, iceberg, ice sheet, ice floe, pack ice, ice shelf, crevasse
+wetlands | wetlands | category | pop 3 | 47 words
+   e.g. bog, swamp, marsh, wetland, alligator, fen, frog, reed
+mountains | mountains | category | pop 2 | 51 words
+   e.g. peak, Alps, summit, Everest, Himalayas, Fuji, cliff, ridge
+famous_mountains_and_ranges | famous mountains and ranges | place | pop 2 | 11 words
+   e.g. Alps, Everest, Himalayas, Fuji, Andes, Rockies, Matterhorn, Kilimanjaro
+landforms | mountain landforms | category | pop 3 | 25 words
+   e.g. peak, summit, cliff, ridge, valley, glacier, pass, crag
+meadow | meadow | category | pop 2 | 51 words | note: grass, poppies, clover, buttercups, butterflies, bees, hay, skylark
+   e.g. bee, daisy, poppy, grass, clover, butterfly, buttercup, wildflower
+grassland_blooms | grassland blooms | category | pop 3 | 22 words
+   e.g. daisy, poppy, clover, buttercup, dandelion, oxeye daisy, cowslip, cornflower
+minibeasts | minibeasts | category | pop 2 | 10 words
+   e.g. bee, butterfly, grasshopper, ladybug, bumblebee, cricket, dragonfly, meadow brown
+pond | pond | category | pop 2 | 44 words | note: frog, tadpole, newt, lily pad, reeds, dragonfly, pondweed, moorhen, frogspawn
+   e.g. duck, frog, tadpole, lily pad, frogspawn, water lily, swan, toad
+taiga | taiga | category | pop 3 | 61 words | note: spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger
+   e.g. wolf, pine, moose, spruce, conifer, evergreen, boreal forest, fir
+needle_leaf_trees | needle-leaf trees | category | pop 3 | 9 words
+   e.g. pine, spruce, conifer, evergreen, fir, larch, tamarack, black spruce
+oasis | oasis | category | pop 3 | 45 words | note: date palm, well, spring, camel, caravan, shade, pool, nomad
+   e.g. date, pool, water, camel, desert, date palm, palm tree, sand
+outback | outback | category | pop 3 | 54 words | note: red dirt, spinifex, billabong, kangaroo, dingo, road train, station, termite mound
+   e.g. Uluru, dingo, kangaroo, red dirt, emu, bush, station, swagman
+australian_wildlife | australian wildlife | category | pop 2 | 13 words
+   e.g. dingo, kangaroo, emu, red kangaroo, wombat, goanna, thorny devil, bilby
+places_in_remote_australia | places in remote australia | place | pop 3 | 10 words
+   e.g. Uluru, Ayers Rock, Alice Springs, Nullarbor, Kimberley, Coober Pedy, Broken Hill, Pilbara
+andes | andes | category | pop 3 | 47 words | note: llama, alpaca, condor, vicuna, glacier, terraces, altiplano, puna
+   e.g. llama, alpaca, Machu Picchu, Andean condor, Peru, Inca, Cusco, condor
+prairie | prairie | category | pop 3 | 50 words | note: bison, prairie dog, pronghorn, tallgrass, tornado, ranch, meadowlark
+   e.g. bison, plain, buffalo, grassland, prairie dog, great plains, wheat, coyote
+heartland_plants | plains plants | category | pop 4 | 10 words
+   e.g. wheat, tallgrass, tumbleweed, switchgrass, buffalo grass, bluestem, coneflower, sunflower
+heartland_creatures | plains animals | category | pop 3 | 16 words
+   e.g. bison, buffalo, prairie dog, coyote, pronghorn, meadowlark, prairie chicken, black-footed ferret
+settler_life | frontier life | category | pop 3 | 11 words
+   e.g. cowboy, pioneer, covered wagon, ranch, windmill, sod house, open range, homesteader
+antarctic_coast | antarctic coast | category | pop 3 | 36 words | note: penguin, seal, iceberg, krill, ice shelf, research station, skua
+   e.g. seal, penguin, iceberg, Antarctica, emperor penguin, krill, sea ice, pack ice
+pollution_words | pollution words | category | pop 3 | 34 words
+   e.g. smog, litter, oil spill, toxic waste, smoke, noise, light, sewage
+recycling_words | recycling words | category | pop 2 | 36 words
+   e.g. bin, paper, reuse, recycle, plastic bottle, reduce, newspaper, cardboard
+renewable_energy | renewable energy | category | pop 2 | 32 words
+   e.g. wind farm, solar power, solar panel, wind turbine, wave, hydropower, solar farm, tidal power
+conservation_words | conservation words | category | pop 3 | 44 words
+   e.g. conservation, national park, nature reserve, endangered species, WWF, ranger, habitat, poaching
+climate_words | climate words | category | pop 2 | 38 words
+   e.g. global warming, climate change, greenhouse effect, ice cap, sea level rise, carbon dioxide, greenhouse gas, melting glacier
+endangered_animals | endangered animals | category | pop 2 | 36 words
+   e.g. tiger, orangutan, polar bear, giant panda, blue whale, black rhino, snow leopard, Siberian tiger
+fossil_fuels | fossil fuels | category | pop 3 | 38 words | note: coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands
+   e.g. oil, coal, petroleum, crude oil, natural gas, diesel, gasoline, jet
+green_living_words | green living words | category | pop 3 | 36 words | note: composting, upcycling, carpooling, reusable, refill, solar panel, rewilding
+   e.g. composting, solar panel, reusable bag, cycling, reusable, LED bulb, carpooling, zero waste
+countries | countries | place | pop 1 | 91 words
+   e.g. UK, Italy, Spain, China, Japan, India, Egypt, Canada
+european_countries | european countries | place | pop 2 | 50 words
+   e.g. Italy, Spain, France, Greece, Germany, Ireland, Holland, Netherlands
+eastern_european_countries | eastern european countries | place | pop 2 | 24 words
+   e.g. Russia, Poland, Ukraine, Romania, Serbia, Latvia, Czechia, Hungary
+western_european_countries | western european countries | place | pop 2 | 26 words
+   e.g. France, Germany, Holland, Netherlands, UK, England, Britain, Ireland
+balkan_countries | balkan countries | place | pop 3 | 11 words
+   e.g. Serbia, Bosnia, Romania, Croatia, Bulgaria, Bosnia and Herzegovina, Albania, Slovenia
+asian_countries | asian countries | place | pop 2 | 46 words
+   e.g. China, Japan, India, Thailand, South Korea, Vietnam, Pakistan, Indonesia
+middle_eastern_countries | middle eastern countries | place | pop 2 | 20 words | note: including Turkey and Egypt as commonly counted
+   e.g. Iran, Iraq, Israel, Saudi Arabia, Egypt, Syria, Turkey, United Arab Emirates
+african_countries | african countries | place | pop 2 | 51 words
+   e.g. Egypt, Kenya, South Africa, Nigeria, Morocco, Tanzania, Ethiopia, Ghana
+west_african_countries | west african countries | place | pop 3 | 17 words
+   e.g. Ghana, Nigeria, Senegal, Ivory Coast, Mali, Niger, Guinea, Liberia
+east_african_countries | east african countries | place | pop 4 | 22 words
+   e.g. Kenya, Tanzania, Uganda, Ethiopia, Rwanda, Somalia, Madagascar, Sudan
+southern_african_countries | southern african countries | place | pop 4 | 17 words
+   e.g. South Africa, Namibia, Zimbabwe, Botswana, Zambia, Angola, Lesotho, Mozambique
