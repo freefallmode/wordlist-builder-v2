@@ -1,0 +1,21 @@
+# library already has the full term for these
+FULL cat_breeds 63088 persian cat 9304
+FULL cat_breeds 9306 Bengal cat 10529
+FULL cat_breeds 9307 sphynx cat 9928
+FULL cat_breeds 63727 savannah cat 9323
+# bare word alone is an object, place or nationality, not the cat
+FULL cat_breeds 9308 ragdoll cat NEW | noun | common | 3 | 2
+FULL cat_breeds 9333 snowshoe cat NEW | noun | common | 5 | 4
+FULL cat_breeds 9337 munchkin cat NEW | noun | common | 3 | 3
+FULL cat_breeds 9332 Somali cat NEW | noun | common | 5 | 4
+FULL cat_breeds 9327 Balinese cat NEW | noun | common | 5 | 4
+FULL cat_breeds 9315 Manx cat NEW | noun | common | 3 | 3
+# place names that need "cattle"
+FULL cattle_breeds 9344 highland cattle NEW | noun | common | 3 | 2
+FULL cattle_breeds 9358 Devon cattle NEW | noun | common | 4 | 4
+FULL cattle_breeds 9359 Sussex cattle NEW | noun | common | 4 | 4
+FULL cattle_breeds 9370 Gloucester cattle NEW | noun | common | 5 | 5
+FULL cattle_breeds 9375 Kerry cattle NEW | noun | common | 5 | 5
+FULL cattle_breeds 9355 Galloway cattle NEW | noun | common | 4 | 4
+# place name that needs "chicken"
+FULL chicken_breeds 9379 Sussex chicken NEW | noun | common | 4 | 3

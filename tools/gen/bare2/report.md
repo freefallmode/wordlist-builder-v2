@@ -1,0 +1,162 @@
+# Bare members
+
+{"reused":70,"retexted":56,"created":30,"skipped":18,"bad":0}
+
+- E types of milk: coconut -> coconut milk (17967)
+- N types of milk: rice -> rice milk
+- N types of milk: almond -> almond milk
+- N types of milk: cashew -> cashew milk
+- R types of milk: oat -> oat milk (in place, rec 1, link 1)
+- E types of milk: soy -> soy milk (17961)
+- R types of milk: semi-skimmed -> semi-skimmed milk (in place, rec 2, link 2)
+- E types of milk: camel -> camel milk (15599)
+- E types of milk: condensed -> condensed milk (531)
+- E types of milk: evaporated -> evaporated milk (538)
+- R rice varieties: jasmine -> jasmine rice (in place, rec 1, link 1)
+- E rice varieties: brown -> brown rice (669)
+- E rice varieties: wild -> wild rice (686)
+- R rice varieties: black -> black rice (in place, rec 3, link 3)
+- E rice varieties: Forbidden -> forbidden rice (18677)
+- E rice varieties: sticky -> sticky rice (18577)
+- R rice varieties: bhutanese red -> Bhutanese red rice (in place, rec 5, link 5)
+- N pizza styles: marinara -> marinara pizza
+- N pizza styles: Hawaiian -> Hawaiian pizza
+- N pizza styles: pepperoni -> pepperoni pizza
+- R pizza styles: thin crust -> thin crust pizza (in place, rec 1, link 2)
+- E pizza styles: margherita -> margherita pizza (20266)
+- R pizza styles: deep dish -> deep dish pizza (in place, rec 2, link 2)
+- R pizza styles: Chicago-style -> Chicago-style pizza (in place, rec 3, link 2)
+- R pizza styles: New York-style -> New York-style pizza (in place, rec 2, link 2)
+- R pizza styles: supreme -> supreme pizza (in place, rec 2, link 3)
+- R pizza styles: BBQ chicken -> BBQ chicken pizza (in place, rec 2, link 3)
+- R pizza styles: sicilian -> Sicilian pizza (in place, rec 3, link 3)
+- R pizza styles: wood-fired -> wood-fired pizza (in place, rec 3, link 3)
+- R pizza styles: California-style -> California-style pizza (in place, rec 4, link 4)
+- R pizza styles: tavern style -> tavern-style pizza (in place, rec 5, link 5)
+- R pizza styles: St. Louis-style -> St. Louis-style pizza (in place, rec 5, link 4)
+- E truck types: armored -> armored truck (49125)
+- E truck types: box -> box truck (49110)
+- E truck types: food -> food truck (3145)
+- E truck types: ice cream -> ice cream truck (3121)
+- E truck types: logging -> logging truck (30262)
+- E truck types: monster -> monster truck (3144)
+- R forms of medicine: chewable -> chewable tablet (in place, rec 2, link 3)
+- R massage types: deep tissue -> deep tissue massage (in place, rec 2, link 1)
+- N massage types: hot stone -> hot stone massage
+- R massage types: trigger point -> trigger point massage (in place, rec 3, link 4)
+- R massage types: Balinese -> Balinese massage (in place, rec 3, link 3)
+- R massage types: Esalen -> Esalen massage (in place, rec 5, link 5)
+- R massage types: Swedish -> Swedish massage (in place, rec 1, link 1)
+- R diet types: raw food -> raw food diet (in place, rec 2, link 3)
+- R diet types: carnivore -> carnivore diet (in place, rec 2, link 3)
+- R diet types: macrobiotic -> macrobiotic diet (in place, rec 4, link 4)
+- N diet types: halal -> halal diet
+- N diet types: kosher -> kosher diet
+- R diet types: low FODMAP -> low FODMAP diet (in place, rec 5, link 5)
+- E diet types: ketogenic -> ketogenic diet (3855)
+- R diet types: cabbage soup -> cabbage soup diet (in place, rec 3, link 4)
+- E kinds of party: graduation -> graduation party (32601)
+- E kinds of party: bachelorette -> bachelorette party (5184)
+- E kinds of party: retirement -> retirement party (5180)
+- E kinds of party: surprise -> surprise party (25147)
+- E house styles: semi-detached -> semi-detached house (126)
+- R house styles: split-level -> split-level house (in place, rec 3, link 4)
+- E clock types: pendulum -> pendulum clock (55804)
+- E clock types: alarm -> alarm clock (3685)
+- N kinds of wager: each way -> each way bet
+- E guitar types: acoustic -> acoustic guitar (10537)
+- E guitar types: electric -> electric guitar (10536)
+- E rock styles: glam -> glam rock (10810)
+- E rock styles: math -> math rock (10802)
+- E world music styles: bollywood -> Bollywood music (51757)
+- R asian music styles: Carnatic -> Carnatic music (in place, rec 4, link 3)
+- E song types: theme -> theme song (10931)
+- E song types: wassail -> Wassail Song (55607)
+- E bridge types: suspension -> suspension bridge (7424)
+- E bridge types: rope -> rope bridge (14089)
+- E roof styles: hipped -> hipped roof (14109)
+- N bridge types: truss -> truss bridge
+- N bridge types: cantilever -> cantilever bridge
+- N bridge types: trestle -> trestle bridge
+- N roof styles: hip -> hip roof
+- R column styles: Solomonic -> Solomonic column (in place, rec 5, link 4)
+- E window styles: dormer -> dormer window (14170)
+- E window styles: sash -> sash window (14165)
+- E window styles: rose -> rose window (14014)
+- E energy types: geothermal -> geothermal energy (31945)
+- N energy types: radiant -> radiant energy
+- E energy types: thermal -> thermal energy (40664)
+- N energy types: wind -> wind energy
+- N energy types: tidal -> tidal energy
+- N energy types: hydroelectric -> hydroelectric energy
+- E energy types: kinetic -> kinetic energy (40601)
+- E energy types: potential -> potential energy (40602)
+- R energy types: renewable -> renewable energy (in place, rec 2, link 4)
+- E energy types: Atomic -> atomic energy (66049)
+- E star types: neutron -> neutron star (7148)
+- N number types: decimal -> decimal number
+- R number types: transcendental -> transcendental number (in place, rec 5, link 5)
+- N number types: Fibonacci -> Fibonacci number
+- E number types: whole -> whole number (41506)
+- N types of triangle: acute -> acute triangle
+- N types of triangle: obtuse -> obtuse triangle
+- E types of triangle: right -> right triangle (38872)
+- E types of triangle: isosceles -> isosceles triangle (38873)
+- E battery types: car -> car battery (23170)
+- R battery types: alkaline -> alkaline battery (in place, rec 1, link 1)
+- R battery types: rechargeable -> rechargeable battery (in place, rec 1, link 2)
+- R battery types: lead-acid -> lead-acid battery (in place, rec 3, link 3)
+- R battery types: nickel-cadmium -> nickel-cadmium battery (in place, rec 4, link 4)
+- R battery types: zinc-carbon -> zinc-carbon battery (in place, rec 4, link 4)
+- R battery types: nickel-iron -> nickel-iron battery (in place, rec 5, link 5)
+- R battery types: zinc-air -> zinc-air battery (in place, rec 4, link 5)
+- R battery types: silver oxide -> silver oxide battery (in place, rec 4, link 5)
+- N screen types: plasma -> plasma screen
+- N screen types: liquid crystal -> liquid crystal display
+- E line types: contour -> contour line (2430)
+- E line types: dotted -> dotted line (37879)
+- R line types: dashed -> dashed line (in place, rec 1, link 1)
+- R line types: wavy -> wavy line (in place, rec 1, link 2)
+- R line types: squiggly -> squiggly line (in place, rec 3, link 3)
+- R line types: jagged -> jagged line (in place, rec 2, link 3)
+- R line types: dash-dot -> dash-dot line (in place, rec 4, link 4)
+- N line types: perpendicular -> perpendicular line
+- R pizza styles: meat lovers -> meat lovers pizza (in place, rec 2, link 3)
+- R pizza styles: al taglio -> pizza al taglio (in place, rec 4, link 5)
+- R pizza styles: bianca -> pizza bianca (in place, rec 4, link 5)
+- E kebab types: doner -> doner kebab (19124)
+- E kebab types: adana -> adana kebab (19304)
+- E kebab types: shish -> shish kebab (17876)
+- R kebab types: urfa -> urfa kebab (in place, rec 5, link 2)
+- N kebab types: Bursa -> Bursa kebab
+- R kebab types: Antep -> Antep kebab (in place, rec 5, link 4)
+- R kebab types: cağ -> cağ kebab (in place, rec 5, link 4)
+- R kebab types: chapli -> chapli kebab (in place, rec 5, link 4)
+- R kebab types: seekh -> seekh kebab (in place, rec 3, link 2)
+- R kebab types: shami -> shami kebab (in place, rec 4, link 4)
+- R kebab types: Tokat -> Tokat kebab (in place, rec 5, link 5)
+- E horse breeds: Quarter -> quarter horse (1531)
+- E pony breeds: Shetland -> Shetland pony (1519)
+- E forest types: kelp -> kelp forest (30192)
+- E forest types: boreal -> boreal forest (30176)
+- E forest types: cloud -> cloud forest (30182)
+- E forest types: petrified -> petrified forest (30193)
+- E garden styles: English -> English garden (30774)
+- R cloud types: noctilucent -> noctilucent cloud (in place, rec 5, link 4)
+- N cloud types: nacreous -> nacreous cloud
+- E quartz varieties: rose -> rose quartz (38661)
+- E quartz varieties: smoky -> smoky quartz (31681)
+- E kinds of maps: treasure -> treasure map (2403)
+- E kinds of maps: trail -> trail map (37898)
+- E kinds of maps: weather -> weather map (31393)
+- N car types: hybrid -> hybrid car
+- E car types: electric -> electric car (32362)
+- E train types: freight -> freight train (2868)
+- E train types: bullet -> bullet train (2866)
+- N train types: diesel -> diesel train
+- N bike types: recumbent -> recumbent bike
+- E bike types: electric -> electric bike (47886)
+- E bike types: folding -> folding bike (40277)
+- E tent types: pop-up -> pop-up tent (40260)
+
+## Problems

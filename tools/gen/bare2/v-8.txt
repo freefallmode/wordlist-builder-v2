@@ -1,0 +1,5 @@
+FULL car_types 63346 electric car 32362
+FULL train_types 28656 freight freight train 2868
+FULL train_types 63925 bullet bullet train 2866
+# "diesel" alone is only the fuel/engine; needs "train"
+FULL train_types 2885 diesel train NEW | noun | common | 2 | 2

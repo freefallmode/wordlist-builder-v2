@@ -1,0 +1,11 @@
+FULL bridge_types 64512 suspension bridge 7424
+FULL bridge_types 65954 rope bridge 14089
+FULL roof_styles 65963 hipped roof 14109
+# truss alone is the structure, not the bridge
+FULL bridge_types 7404 truss bridge NEW | noun | common | 3 | 2
+FULL bridge_types 7423 cantilever bridge NEW | noun | common | 4 | 3
+# trestle alone is a support/frame
+FULL bridge_types 50147 trestle bridge NEW | noun | common | 3 | 4
+# hip alone is a body part; needs roof
+FULL roof_styles 50333 hip roof NEW | noun | common | 3 | 2
+FULL column_styles 62864 Solomonic column NEW | noun | common | 5 | 4

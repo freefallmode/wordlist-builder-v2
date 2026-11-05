@@ -1,0 +1,19 @@
+# Brief: full terms shown in full in kinds themes
+
+In themes of kinds ("car types", "clock types", "island types") a word-sorting game shows a member's text and the player sorts it into its theme. Rule (DESIGN-entries.md 3.6): an entry is the FULL term; the theme may show a shorter word (`show`) when that word, seen alone in the theme, still identifies the kind (`whole milk` shown as "whole", `oat milk` as "oat"). The members in your listing are full terms that are still shown in full, so the theme name's word appears in them ("sports car" in car types).
+
+Listing (`tools/gen/full/list-<n>.txt`): per item a number, the theme (id, name, note), then the entry (id, text, meaning label, pos, type, familiarity `rec`, link rating).
+
+## Decide per item (write a line only for items that should be shortened)
+`SHOW <theme id> <entry id> <short text>`
+- Shorten when the theme word is the LAST word (or the head) and what is left is a word or phrase that, taken alone, still points to the kind in this theme: `sports car` → `sports`, `desert island` → `desert`, `mantel clock` → `mantel`, `lava rock` → `lava`, `wild horse` → `wild`. Use the modifier exactly as it is written in the entry.
+- Leave whole (write nothing) when: the theme word comes first or in the middle and the rest would not identify the kind (`island chain`, `island arc`, `cloud bank`, `massage gun`, `Google Maps`, `site map` if "site" alone is unclear); the entry is a name or fixed phrase (`A-road`, `Lady Apple`, `connecting rooms`); the remainder is a function word, a number or a fragment; or the remainder could just as easily point to another kind or another theme (`town car`, `toy train`, `tiny house`, `night train` are borderline: shorten only if "town", "toy" ... would still read as that kind to a player who sees the theme name).
+- Be conservative: when unsure, leave it whole. Judge only with what the listing shows.
+
+## Output
+ONE file `tools/gen/full/v-<n>.txt` (n in your task): the SHOW lines only, `#` comment above any non-obvious one. Read the whole listing; do not stop early. Empty file if none.
+
+Do NOT edit the library, js/ or other files, and do NOT commit.
+
+## Report (under 50 words)
+File path, number of SHOW lines, and the commonest reason items were left whole.
