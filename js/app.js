@@ -140,6 +140,7 @@ const THEME_FILTERS = [
   ['tm', 'Trademark / copyright themes', (P, t, ef) => ef.tm],
   ['lang', 'Language-specific themes', (P, t, ef) => ef.lang],
   ['region', 'Region-specific themes', (P, t, ef) => ef.region.length > 0],
+  ['locked', 'Locked words (no substitution)', (P, t) => !t.group && themeLocked(P, t)],
   ['pop', 'Popularity…'],
   ['diff', 'Difficulty…'],
 ];
