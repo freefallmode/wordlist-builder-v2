@@ -1,0 +1,90 @@
+# starts with a musical instrument: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE horn
+  hornet | noun | rec 2
+  hornbill | noun | rec 3
+  horned | noun | rec 4 | spiky desert
+  horned | noun | rec 4 | horned amphibian
+  hornbeam | noun | rec 4
+  hornpipe | noun | rec 4 | dance
+  hornpipe | noun | rec 4 | instrument
+  hornwort | noun | rec 5
+  hornfels | noun | rec 5
+  horntail | noun | rec 5
+  hornswoggle | verb | rec 5
+
+TYPE bell
+  bellow | verb | rec 3
+  bellhop | noun | rec 3
+  bellboy | noun | rec 3
+  bellows | noun | rec 3 | camera
+  bellyflop | noun | rec 3
+  belladonna | noun | rec 3
+  bellows | noun | rec 4 | fireplace
+  bellbird | noun | rec 4
+  bellcrank | noun | rec 5
+  bellwether | noun | rec 5
+
+TYPE drum
+  drummer | noun | rec 1
+  drumstick | noun | rec 2 | bird
+  drumstick | noun | rec 2 | chicken
+  drumsticks | noun | rec 2
+  drumlin | noun | rec 4
+
+TYPE harp
+  harpist | noun | rec 2
+  harpsichord | noun | rec 2
+
+TYPE organ
+  organic | adjective | rec 2 | food
+  organist | noun | rec 2
+  organism | noun | rec 2
+  organised | adjective | rec 2
+  organelle | noun | rec 3
+  organza | noun | rec 4
+  organdie | noun | rec 5
+  organistrum | noun | rec 5
+
+TYPE flute  (no library words)
+
+TYPE lute
+  lutenist | noun | rec 4
+  lutein | noun | rec 5
+  lutetium | noun | rec 5
+
+TYPE gong
+  gongbi | noun | rec 5
+
+TYPE tuba  (no library words)
+
+TYPE oboe  (no library words)
+
+TYPE lyre
+  lyrebird | noun | rec 4
+
+TYPE fife  (no library words)
+
+TYPE piano
+  pianola | noun | rec 4
+  pianoforte | noun | rec 4
+
+TYPE banjo
+  banjoist | noun | rec 4
+  banjolele | noun | rec 5
+
+TYPE cello
+  cellophane | noun | rec 3
+
+TYPE viol
+  violin | noun | rec 1
+  violinist | noun | rec 1
+  violet | noun | rec 2 | color
+  violet | noun | rec 2 | flower
+  violeta | adjective | rec 3 | color
+  violist | noun | rec 4
+  violone | noun | rec 5
+
+TYPE sitar  (no library words)
+
+TYPE kazoo  (no library words)

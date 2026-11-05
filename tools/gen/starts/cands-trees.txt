@@ -1,0 +1,131 @@
+# starts with a tree: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE fir
+  first | adjective | rec 1 | ordinal
+  firefly | noun | rec 1 | insect
+  fireman | noun | rec 1
+  firearm | noun | rec 1
+  firewood | noun | rec 1
+  fireworks | noun | rec 1
+  fireplace | noun | rec 1
+  fireproof | adjective | rec 1
+  firefighter | noun | rec 1
+  firecracker | noun | rec 1
+  firewall | noun | rec 2
+  fireside | noun | rec 2
+  fireflies | noun | rec 2
+  firepower | noun | rec 2
+  firelight | noun | rec 2
+  firecrackers | noun | rec 2
+  firing | noun | rec 3 | pottery
+  fireball | noun | rec 3 | meteor
+  fireboat | noun | rec 3
+  firebomb | noun | rec 3
+  firetrap | noun | rec 3
+  firebreak | noun | rec 3
+  firestorm | noun | rec 3
+  firewater | noun | rec 3
+  fireguard | noun | rec 3
+  firelighter | noun | rec 3
+  firmware | noun | rec 4
+  fireweed | noun | rec 4
+  fireship | noun | rec 4
+  firethorn | noun | rec 4
+  firebrand | noun | rec 4
+  firie | noun | rec 5
+  firth | noun | rec 5
+  firkin | noun | rec 5
+  firebox | noun | rec 5
+  firefly | noun | rec 5 | yoga pose
+  firepot | noun | rec 5
+  firbolg | noun | rec 5
+  firebrat | noun | rec 5
+  firedamp | noun | rec 5
+  firecrest | noun | rec 5
+
+TYPE ash
+  ashes | noun | rec 1
+  ashtray | noun | rec 1
+  ashamed | adjective | rec 1
+  ashore | adverb | rec 2
+  ashram | noun | rec 3
+  ashwagandha | noun | rec 3
+  ashtanga | noun | rec 4
+  ashlar | noun | rec 5
+  ashiatsu | noun | rec 5
+
+TYPE oak
+  oakmoss | noun | rec 4
+
+TYPE elm  (no library words)
+
+TYPE pine
+  pineapple | noun | rec 1
+  pinecone | noun | rec 2
+  pineappleweed | noun | rec 5
+
+TYPE palm
+  palmier | noun | rec 3
+  palming | noun | rec 4
+  palmistry | noun | rec 4
+
+TYPE fig
+  fight | noun | rec 1
+  figure | noun | rec 1 | shape
+  fighting | noun | rec 1 | game genre
+  figurine | noun | rec 2
+  figment | noun | rec 3
+  figurehead | noun | rec 3 | ship carving
+  figurehead | noun | rec 3 | nominal leader
+
+TYPE gum
+  gumball | noun | rec 2
+  gumbo | noun | rec 3
+  gumdrop | noun | rec 3
+  gumboots | noun | rec 3
+  gumption | noun | rec 3
+  gumshoe | noun | rec 4
+  gumleaf | noun | rec 5
+  gummivore | noun | rec 5
+
+TYPE bay
+  bayou | noun | rec 3
+  bayonet | noun | rec 3
+  bayram | noun | rec 4
+  bayberry | noun | rec 4
+  bayati | noun | rec 5
+
+TYPE yew  (no library words)
+
+TYPE beech
+  beechnut | noun | rec 4
+
+TYPE plum
+  plumber | noun | rec 1
+  plummy | adjective | rec 3
+  plumage | noun | rec 3
+  plummet | verb | rec 3
+  plumeria | noun | rec 4
+  plumcot | noun | rec 5
+  plumule | noun | rec 5
+  plumbago | noun | rec 5
+
+TYPE cedar
+  cedarwood | noun | rec 3
+
+TYPE teak
+  teakwood | noun | rec 4
+
+TYPE maple  (no library words)
+
+TYPE birch  (no library words)
+
+TYPE larch  (no library words)
+
+TYPE alder
+  alderman | noun | rec 4
+  alderfly | noun | rec 5
+
+TYPE hazel
+  hazelnut | noun | rec 1 | nut
+  hazelnuts | noun | rec 2

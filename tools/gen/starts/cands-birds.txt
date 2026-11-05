@@ -1,0 +1,111 @@
+# starts with a bird: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE crow
+  crowbar | noun | rec 2
+  crowning | noun | rec 3
+  crowdfunding | noun | rec 3
+  crowned | noun | rec 4 | African forest hunter
+  crowberry | noun | rec 5
+
+TYPE wren
+  wrench | noun | rec 1
+
+TYPE gull
+  gullet | noun | rec 3
+  gullible | adjective | rec 3
+
+TYPE dove
+  dovetail | noun | rec 3 | joint
+  dovecote | noun | rec 4
+  dovetail | noun | rec 4 | joint cutting
+
+TYPE swan
+  swansdown | noun | rec 5
+
+TYPE emu
+  emulsion | noun | rec 3
+  emulator | noun | rec 3
+  emulsify | verb | rec 4
+
+TYPE owl
+  owlet | noun | rec 3
+
+TYPE jay
+  jaywalking | noun | rec 2
+  jaywalk | verb | rec 3
+
+TYPE kite
+  kitesurfing | noun | rec 3
+  kiteboarding | noun | rec 3
+  kitenge | noun | rec 4
+
+TYPE lark
+  larkspur | noun | rec 4
+
+TYPE tern  (no library words)
+
+TYPE hawk
+  hawker | noun | rec 3 | trader
+  hawking | noun | rec 4 | falconry
+  hawkmoth | noun | rec 4
+  hawkweed | noun | rec 4
+  hawksbill | noun | rec 4
+  hawkish | adjective | rec 5
+
+TYPE rook
+  rookie | noun | rec 2 | recruit
+  rookery | noun | rec 3
+
+TYPE duck
+  duckling | noun | rec 1
+  ducklings | noun | rec 1
+  duckweed | noun | rec 3
+  ducktail | noun | rec 4 | beard
+  duckpin | noun | rec 5
+
+TYPE kiwi
+  kiwifruit | noun | rec 2
+  kiwicha | noun | rec 5
+
+TYPE finch  (no library words)
+
+TYPE stork  (no library words)
+
+TYPE crane
+  cranefly | noun | rec 4
+  cranesbill | noun | rec 4
+
+TYPE heron
+  heronry | noun | rec 4
+
+TYPE swift  (no library words)
+
+TYPE quail  (no library words)
+
+TYPE raven  (no library words)
+
+TYPE eagle  (no library words)
+
+TYPE goose
+  goosebumps | noun | rec 1
+  gooseberry | noun | rec 3 | green berry
+  gooseneck | noun | rec 5 | trailer
+  gooseneck | noun | rec 5 | handrail
+  goosegrass | noun | rec 5
+
+TYPE parrot
+  parrotfish | noun | rec 3
+  parrotlet | noun | rec 5
+
+TYPE coot
+  cooter | noun | rec 5
+
+TYPE rail
+  railroad | noun | rec 1
+  railcar | noun | rec 2
+  railing | noun | rec 2
+  railcard | noun | rec 4
+  railbus | noun | rec 5
+  railhead | noun | rec 5
+
+TYPE ibis  (no library words)

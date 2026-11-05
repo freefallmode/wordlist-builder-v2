@@ -1,0 +1,110 @@
+# starts with a drink: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE tea
+  tears | noun | rec 1
+  teapot | noun | rec 1
+  teacher | noun | rec 1
+  teaspoon | noun | rec 1
+  teary | adjective | rec 2
+  teacup | noun | rec 2 | cup
+  teatime | noun | rec 2
+  tearful | adjective | rec 2
+  teapots | noun | rec 2
+  teaser | noun | rec 3 | advertising
+  teacups | noun | rec 3
+  teacake | noun | rec 3
+  tealight | noun | rec 3
+  teahouse | noun | rec 3
+  teasel | noun | rec 4
+  tearaway | noun | rec 4
+  teakwood | noun | rec 4
+  teardrop | noun | rec 4 | trailer
+  teaser | noun | rec 5 | bet
+
+TYPE gin
+  ginger | noun | rec 1 | spice root
+  ginger | noun | rec 1 | hair colour
+  gingerbread | noun | rec 1
+  ginseng | noun | rec 2
+  ginormous | adjective | rec 2
+  ginkgo | noun | rec 3
+  gingivitis | noun | rec 3
+  gingersnap | noun | rec 3
+  gingham | noun | rec 4
+  ginga | noun | rec 5
+  ginnel | noun | rec 5
+  gingiva | noun | rec 5
+
+TYPE rum
+  rummy | noun | rec 2
+  rumble | noun | rec 2 | sound
+  rumba | noun | rec 3
+  rumble | noun | rec 3 | controller
+  rumen | noun | rec 4
+  rumination | noun | rec 4
+  ruminate | verb | rec 5
+
+TYPE ale
+  alebrije | noun | rec 3
+  alehouse | noun | rec 3
+  alevin | noun | rec 5
+  alembic | noun | rec 5
+  alexanders | noun | rec 5
+  alexandrine | noun | rec 5
+  alexandrite | noun | rec 5 | gemstone
+  alexandrite | noun | rec 5 | color
+  alexithymia | noun | rec 5
+
+TYPE port
+  portrait | noun | rec 1 | artwork
+  porter | noun | rec 2 | railway
+  portion | noun | rec 2
+  porthole | noun | rec 2
+  portobello | noun | rec 2
+  porter | noun | rec 3 | hospital
+  porter | noun | rec 3 | beer
+  porter | noun | rec 3 | hotel
+  porter | noun | rec 3 | luggage
+  portside | adverb | rec 3
+  portfolio | noun | rec 3
+  portcullis | noun | rec 3
+  porterhouse | noun | rec 3
+  portico | noun | rec 4
+  portent | noun | rec 4
+  portakabin | noun | rec 4
+  portafilter | noun | rec 5
+  portmanteau | noun | rec 5 | luggage
+
+TYPE wine
+  wineskin | noun | rec 4
+  wineberry | noun | rec 5
+
+TYPE milk
+  milkshake | noun | rec 1
+  milkman | noun | rec 2
+  milkweed | noun | rec 3
+  milksop | noun | rec 4
+
+TYPE cola
+  colander | noun | rec 2
+  colatura | noun | rec 5
+
+TYPE cocoa  (no library words)
+
+TYPE mead
+  meadow | noun | rec 2
+  meadowlark | noun | rec 3
+  meadowsweet | noun | rec 4
+
+TYPE sake  (no library words)
+
+TYPE juice  (no library words)
+
+TYPE soda
+  sodalite | noun | rec 5
+
+TYPE cider  (no library words)
+
+TYPE punch
+  punchline | noun | rec 3
+  puncheon | noun | rec 5

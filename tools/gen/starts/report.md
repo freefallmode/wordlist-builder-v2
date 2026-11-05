@@ -1,0 +1,37 @@
+- new ravenous
+- new swanky
+- new ternary
+- birds.txt: starts with bird: 13 types, 0 sub-themes
+- new bibelot
+- new kilter
+- clothing.txt: starts with a piece of clothing: 11 types, 3 sub-themes
+- new rummage
+- new rumor
+- new rumple
+- new rumpus
+- new alert
+- new sodality
+- drinks.txt: starts with a drink: 8 types, 5 sub-themes
+- new grandeur
+- new twinkle
+- family.txt: starts with family member: 11 types, 5 sub-themes
+- new hornblende
+- new bellicose
+- new harpoon
+- new violent
+- new violate
+- new violence
+- instruments.txt: starts with musical instrument: 10 types, 3 sub-themes
+- new ironic
+- new tinge
+- metals.txt: starts with a metal: 2 types, 1 sub-themes
+- new starve
+- new dotage
+- shapes.txt: starts with a shape: 7 types, 4 sub-themes
+- new firmament
+- trees.txt: starts with tree: 7 types, 3 sub-themes
+- new sunken
+- new sunder
+- weather.txt: starts with weather word: 6 types, 1 sub-themes
+
+## Problems

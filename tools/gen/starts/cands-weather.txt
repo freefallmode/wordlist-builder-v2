@@ -1,0 +1,195 @@
+# starts with a weather word: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE wind
+  window | noun | rec 1 | house
+  window | noun | rec 1 | bus
+  window | noun | rec 1 | aircraft
+  window | noun | rec 1 | space station
+  windmill | noun | rec 1 | building
+  windshield | noun | rec 1
+  windbag | noun | rec 2
+  windpipe | noun | rec 2
+  windstorm | noun | rec 2
+  windowsill | noun | rec 2
+  windsurfing | noun | rec 2
+  windbreaker | noun | rec 2
+  windburn | noun | rec 3
+  windmill | noun | rec 3 | stretch
+  windward | adjective | rec 3
+  windswept | adjective | rec 3
+  windbreak | noun | rec 3
+  winder | noun | rec 4
+  windfall | noun | rec 4
+  windrower | noun | rec 4
+  windowpane | noun | rec 4 | pattern
+  windlass | noun | rec 5
+  windjammer | noun | rec 5
+  windowpane | noun | rec 5 | flatfish
+  windfoiling | noun | rec 5
+
+TYPE mist
+  mistake | noun | rec 1
+  mistletoe | noun | rec 2
+  mistral | noun | rec 3 | wind
+  mistrial | noun | rec 4
+
+TYPE hail
+  hailstone | noun | rec 2
+  hailstorm | noun | rec 2
+
+TYPE fog
+  foghorn | noun | rec 3
+  fogbow | noun | rec 5
+  foggara | noun | rec 5
+
+TYPE sun
+  sunny | adjective | rec 1
+  sunset | noun | rec 1 | time of day
+  sunset | noun | rec 1 | beach
+  suntan | noun | rec 1
+  sunburn | noun | rec 1
+  sunrise | noun | rec 1
+  sunshine | noun | rec 1 | sun
+  sunlight | noun | rec 1 | sun light
+  sunflower | noun | rec 1
+  sunscreen | noun | rec 1
+  sunglasses | noun | rec 1
+  sunflowers | noun | rec 1 | flower
+  sunbathing | noun | rec 1
+  sundae | noun | rec 2
+  sunset | noun | rec 2 | color
+  sundial | noun | rec 2
+  sunroof | noun | rec 2
+  sundown | noun | rec 2
+  sunroom | noun | rec 2
+  sunspot | noun | rec 2
+  sunlamp | noun | rec 2
+  sunblock | noun | rec 2
+  sundress | noun | rec 2
+  sunshine | noun | rec 2 | endearment
+  sunbathe | verb | rec 2
+  sunup | noun | rec 3
+  sunbed | noun | rec 3
+  sunnies | noun | rec 3
+  sunless | adjective | rec 3
+  sunbeams | noun | rec 3
+  sunshade | noun | rec 3
+  sunstroke | noun | rec 3
+  sunseeker | noun | rec 3
+  sundew | noun | rec 4
+  sundog | noun | rec 4
+  sunfish | noun | rec 4
+  sunbird | noun | rec 4
+  sunstone | noun | rec 4
+  sundries | noun | rec 4
+  sundowner | noun | rec 4 | drink
+  sundowner | noun | rec 4 | wind
+  sungka | noun | rec 5
+  sundari | noun | rec 5
+  sungura | noun | rec 5
+  sundowning | noun | rec 5
+
+TYPE snow
+  snowman | noun | rec 1
+  snowplow | noun | rec 1 | vehicle
+  snowball | noun | rec 1
+  snowplow | noun | rec 1 | ski turn
+  snowflake | noun | rec 1 | ice crystal
+  snowboard | noun | rec 1
+  snowflakes | noun | rec 1
+  snowboarding | noun | rec 1
+  snowdrop | noun | rec 2
+  snowfall | noun | rec 2
+  snowsuit | noun | rec 2
+  snowshoe | noun | rec 2 | footwear
+  snowbank | noun | rec 2
+  snowstorm | noun | rec 2
+  snowmobile | noun | rec 2
+  snowmobiling | noun | rec 2
+  snowcap | noun | rec 3
+  snowcat | noun | rec 3
+  snowbird | noun | rec 3
+  snowline | noun | rec 3
+  snowpack | noun | rec 3
+  snowmelt | noun | rec 3
+  snowfield | noun | rec 3
+  snowdrift | noun | rec 3
+  snowdrops | noun | rec 3
+  snowshoes | noun | rec 3
+  snowbound | adjective | rec 3
+  snowshoeing | noun | rec 3
+  snowmageddon | noun | rec 3
+  snowshoe | noun | rec 4 | lagomorph
+  snowberry | noun | rec 4
+  snowkiting | noun | rec 4
+  snowbiking | noun | rec 4
+  snowshoe | noun | rec 5 | cat
+  snowcock | noun | rec 5
+  snowfinch | noun | rec 5
+  snowblading | noun | rec 5
+
+TYPE rain
+  rainbow | noun | rec 1 | weather
+  raindrop | noun | rec 1
+  raincoat | noun | rec 1
+  rainwater | noun | rec 1
+  rainforest | noun | rec 1
+  rainbow | noun | rec 2 | poker
+  rainfall | noun | rec 2
+  rainwear | noun | rec 2
+  rainstorm | noun | rec 2
+  rainproof | adjective | rec 2
+  rainmaker | noun | rec 2
+  rainbow | noun | rec 3 | stocked catch
+  rainstick | noun | rec 3
+  raincape | noun | rec 4
+  rainbird | noun | rec 4
+  rainspout | noun | rec 4
+  rainbowfish | noun | rec 4
+
+TYPE frost
+  frostbite | noun | rec 2
+  frostnip | noun | rec 4
+
+TYPE dew
+  dewdrop | noun | rec 3
+  dewlap | noun | rec 4
+  dewberry | noun | rec 5
+
+TYPE storm
+  storming | noun | rec 2 | Bastille
+
+TYPE cloud
+  cloudburst | noun | rec 4
+  cloudberry | noun | rec 4
+
+TYPE gale
+  galena | noun | rec 4
+  galette | noun | rec 4 | crepe
+
+TYPE ice
+  iceberg | noun | rec 1
+  icebox | noun | rec 3
+  iceman | noun | rec 3 | ice deliverer
+  icehouse | noun | rec 3
+  icebreaker | noun | rec 3
+  icefish | noun | rec 4
+  icefield | noun | rec 4
+
+TYPE haze
+  hazelnut | noun | rec 1 | nut
+  hazelnuts | noun | rec 2
+
+TYPE smog  (no library words)
+
+TYPE sleet  (no library words)
+
+TYPE thunder
+  thunderstorm | noun | rec 1
+  thunderclap | noun | rec 2
+  thunderbolt | noun | rec 2 | Zeus
+  thunderstorms | noun | rec 2
+  thundercloud | noun | rec 3
+  thundersnow | noun | rec 4
+  thunderstruck | adjective | rec 4
+  thunderbox | noun | rec 5

@@ -1,0 +1,280 @@
+# starts with a family member: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE son
+  songbird | noun | rec 1
+  sonar | noun | rec 2
+  songbook | noun | rec 2
+  songwriter | noun | rec 2
+  sonic | adjective | rec 3 | sound
+  sonnet | noun | rec 3
+  sonata | noun | rec 3
+  songlines | noun | rec 3
+  sonorous | adjective | rec 4
+  sonographer | noun | rec 4
+  soncoya | noun | rec 5
+  songthaew | noun | rec 5
+
+TYPE kid
+  kidney | noun | rec 1 | organ
+  kiddo | noun | rec 2
+  kidneys | noun | rec 2
+  kidnapping | noun | rec 2
+  kidney | noun | rec 3 | red legume
+
+TYPE gran
+  granny | noun | rec 1 | grandmother
+  grandpa | noun | rec 1
+  grandma | noun | rec 1 | relative
+  grandmother | noun | rec 1
+  grandfather | noun | rec 1
+  grande | noun | rec 2 | coffee size
+  granola | noun | rec 2
+  granite | noun | rec 2
+  grandad | noun | rec 2
+  grandson | noun | rec 2
+  granddad | noun | rec 2
+  granddaughter | noun | rec 2
+  granary | noun | rec 3
+  granita | noun | rec 3
+  grandstand | noun | rec 3
+  grandmaster | noun | rec 3
+  granate | adjective | rec 5
+  granthi | noun | rec 5
+  granivore | noun | rec 5
+  granodiorite | noun | rec 5
+
+TYPE mum
+  mummy | noun | rec 1 | Egyptian
+  mummy | noun | rec 1 | monster
+  mummy | noun | rec 1 | embalmed body
+  mummy | noun | rec 1 | mother
+  mumps | noun | rec 2
+  mumble | verb | rec 2
+  mumsy | noun | rec 3
+  mummification | noun | rec 3
+  mumming | noun | rec 4
+  mumblecore | noun | rec 5
+
+TYPE dad
+  daddy | noun | rec 1
+  daddio | noun | rec 4
+
+TYPE bro
+  brown | adjective | rec 1 | color
+  broth | noun | rec 1
+  broom | noun | rec 1 | cleaning tool
+  broke | verb | rec 1 | past tense
+  brown | noun | rec 1 | snooker
+  broom | noun | rec 1 | plant
+  brown | noun | rec 1 | large mammal
+  bronze | adjective | rec 1 | color
+  bronze | noun | rec 1 | metal
+  broken | adjective | rec 1 | damaged
+  brownie | noun | rec 1 | dessert
+  browser | noun | rec 1 | software
+  brought | verb | rec 1 | past tense
+  brother | noun | rec 1
+  broccoli | noun | rec 1
+  brownies | noun | rec 1
+  broomstick | noun | rec 1
+  brook | noun | rec 2
+  brown | noun | rec 2 | variety
+  browse | verb | rec 2
+  bronzer | noun | rec 2
+  brownie | noun | rec 2 | fairy
+  bromine | noun | rec 2
+  brochure | noun | rec 2
+  bromance | noun | rec 2
+  browsing | noun | rec 2
+  broadcast | noun | rec 2
+  broadband | noun | rec 2
+  bronchitis | noun | rec 2
+  broil | verb | rec 3
+  brood | noun | rec 3 | chicks
+  brown | noun | rec 3 | stream catch
+  brown | noun | rec 3 | large European
+  bronco | noun | rec 3 | horse
+  brooch | noun | rec 3
+  brolly | noun | rec 3
+  broody | adjective | rec 3
+  broker | noun | rec 3
+  browser | noun | rec 3 | animal
+  broiler | noun | rec 3
+  brogues | noun | rec 3
+  broiling | adjective | rec 3
+  brownout | noun | rec 3
+  broadside | noun | rec 3 | ship side
+  broadsheet | noun | rec 3
+  broccolini | noun | rec 3
+  broadsword | noun | rec 3
+  brownstone | noun | rec 3
+  brogue | noun | rec 4
+  bronchi | noun | rec 4
+  brocade | noun | rec 4
+  brookie | noun | rec 4
+  browband | noun | rec 4
+  brouhaha | noun | rec 4
+  brougham | noun | rec 4
+  bromeliad | noun | rec 4
+  broomball | noun | rec 4
+  brochette | noun | rec 4
+  broadloom | noun | rec 4
+  broadcloth | noun | rec 4
+
+TYPE sis
+  sister | noun | rec 1
+  sisal | noun | rec 4
+  sisig | noun | rec 4
+  siskin | noun | rec 4
+  sistrum | noun | rec 5
+  sissonne | noun | rec 5
+
+TYPE aunt
+  auntie | noun | rec 2
+
+TYPE nan
+  nanny | noun | rec 1 | carer
+  nanny | noun | rec 2 | animal
+  nanna | noun | rec 3 | grandmother
+  nanny | noun | rec 3 | grandmother
+  nanometer | noun | rec 3
+  nanosecond | noun | rec 3
+  nanotechnology | noun | rec 3
+  nanoparticle | noun | rec 4
+  nanomaterial | noun | rec 4
+
+TYPE pa
+  pawn | noun | rec 1 | chess piece
+  palm | noun | rec 1 | tree
+  path | noun | rec 1 | garden
+  palm | noun | rec 1 | hand
+  pack | noun | rec 1 | wolves
+  page | noun | rec 1 | book
+  past | noun | rec 1 | tense
+  pair | noun | rec 1 | couple
+  pals | noun | rec 1
+  path | noun | rec 1 | woodland
+  pass | noun | rec 1 | exam
+  pair | noun | rec 1 | poker
+  park | verb | rec 1 | car
+  pawn | verb | rec 1 | hock
+  pasta | noun | rec 1
+  panda | noun | rec 1 | animal
+  patio | noun | rec 1
+  paper | noun | rec 1 | newspaper
+  paint | noun | rec 1 | pigment
+  paper | noun | rec 1 | sheet
+  patch | noun | rec 1 | medical
+  paper | noun | rec 1 | material
+  party | noun | rec 1 | celebration
+  pause | verb | rec 1 | game
+  parrot | noun | rec 1
+  parent | noun | rec 1
+  patrol | noun | rec 1
+  pardon | other | rec 1
+  paddle | noun | rec 1 | table tennis
+  parsley | noun | rec 1
+  patient | noun | rec 1 | medical
+  pajamas | noun | rec 1
+  partner | noun | rec 1 | life partner
+  partner | noun | rec 1 | dance
+  painter | noun | rec 1
+  patient | noun | rec 1 | person
+  pancake | noun | rec 1 | food
+  packing | noun | rec 1
+  panties | noun | rec 1
+  padlock | noun | rec 1
+  partner | noun | rec 1 | significant other
+  package | noun | rec 1
+  patient | adjective | rec 1 | tolerant
+  parmesan | noun | rec 1
+  pancakes | noun | rec 1
+  pacifier | noun | rec 1
+  painting | noun | rec 1
+  password | noun | rec 1
+  passport | noun | rec 1
+  passenger | noun | rec 1 | traveler
+  paintball | noun | rec 1
+  paperback | noun | rec 1
+  paragraph | noun | rec 1
+  parachute | noun | rec 1
+  paintbrush | noun | rec 1
+  painkiller | noun | rec 1
+  painkillers | noun | rec 1
+  pace | verb | rec 2 | walk
+  pant | verb | rec 2
+  pail | noun | rec 2
+
+TYPE ma
+  mane | noun | rec 1 | horse
+  mask | noun | rec 1 | face covering
+  mama | noun | rec 1
+  make | verb | rec 1
+  math | noun | rec 1 | subject
+  mall | noun | rec 1 | shopping centre
+  mask | noun | rec 1 | diving
+  maze | noun | rec 1
+  maid | noun | rec 1 | hotel
+  mango | noun | rec 1 | tropical fruit
+  maple | noun | rec 1
+  manga | noun | rec 1
+  march | verb | rec 1 | walk
+  magic | noun | rec 1 | sorcery
+  match | noun | rec 1
+  madam | noun | rec 1
+  mayor | noun | rec 1
+  march | verb | rec 1 | military
+  march | noun | rec 1 | protest
+  margin | noun | rec 1 | typography
+  marble | noun | rec 1 | rock
+  marker | noun | rec 1 | pen
+  marble | noun | rec 1 | toy
+  magnet | noun | rec 1 | physics
+  magnet | noun | rec 1 | fridge
+  mansion | noun | rec 1
+  mammoth | noun | rec 1 | animal
+  matches | noun | rec 1 | fire
+  mascara | noun | rec 1
+  manager | noun | rec 1 | job
+  marbles | noun | rec 1 | toy
+  matches | noun | rec 1 | smoking
+  massage | noun | rec 1
+  martini | noun | rec 1
+  machine | noun | rec 1 | device
+  manners | noun | rec 1
+  mailbox | noun | rec 1 | postbox
+  massive | adjective | rec 1
+  marbles | noun | rec 1 | game
+  married | adjective | rec 1
+  macaroni | noun | rec 1 | pasta
+  mattress | noun | rec 1
+  magazine | noun | rec 1 | periodical
+  magician | noun | rec 1
+  manicure | noun | rec 1
+  marathon | noun | rec 1 | race
+  marriage | noun | rec 1
+  marijuana | noun | rec 1
+  marmalade | noun | rec 1
+  margarita | noun | rec 1 | cocktail
+  mayonnaise | noun | rec 1
+  marshmallow | noun | rec 1
+  marshmallows | noun | rec 1
+  mast | noun | rec 2
+  mate | noun | rec 2 | friend
+  mass | noun | rec 2 | physics
+  mass | noun | rec 2 | music
+  mash | verb | rec 2 | squash
+  main | noun | rec 2 | course
+  mace | noun | rec 2 | weapon
+
+TYPE papa
+  papaya | noun | rec 2
+  papadum | noun | rec 3
+  paparazzi | noun | rec 3
+  papalo | noun | rec 5
+  papasan | noun | rec 5
+  paparazzo | noun | rec 5
+
+TYPE twin
+  twinkling | adjective | rec 2
+  twinset | noun | rec 4

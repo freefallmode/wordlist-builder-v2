@@ -1,0 +1,78 @@
+# starts with a metal: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE iron
+  ironing | noun | rec 1
+  ironclad | noun | rec 3
+  ironwood | noun | rec 4
+  ironbark | noun | rec 4
+  ironstone | noun | rec 4
+  ironworks | noun | rec 4
+  ironmonger | noun | rec 4
+
+TYPE tin
+  tingle | noun | rec 2 | sensation
+  tinsel | noun | rec 2
+  tinny | adjective | rec 3
+  tinder | noun | rec 3 | fire
+  tinkle | noun | rec 3
+  tinker | noun | rec 3
+  tinnitus | noun | rec 3
+  tincture | noun | rec 3 | medicine
+  tincture | noun | rec 3 | heraldic color
+  tinnie | noun | rec 4
+  tinikling | noun | rec 4
+  tindy | noun | rec 5
+  tinamou | noun | rec 5
+  tinderbox | noun | rec 5
+
+TYPE lead
+  leader | noun | rec 1 | person
+  leadership | noun | rec 1
+  leading | noun | rec 3 | typography
+  leaderboard | noun | rec 3
+  leader | noun | rec 4 | fishing line
+  leadwood | noun | rec 5
+
+TYPE gold
+  goldfish | noun | rec 1
+  golden | adjective | rec 2 | gold
+  golden | noun | rec 2 | raptor
+  goldsmith | noun | rec 2
+  goldfinch | noun | rec 3
+  goldenrod | noun | rec 3
+  goldenseal | noun | rec 3
+  goldendoodle | noun | rec 3
+  golden | noun | rec 4 | extinct orange amphibian
+  goldwork | noun | rec 4
+  goldeneye | noun | rec 4
+  goldcrest | noun | rec 4
+  goldenberry | noun | rec 5
+
+TYPE zinc  (no library words)
+
+TYPE steel
+  steelworks | noun | rec 3
+  steelpan | noun | rec 4
+  steelhead | noun | rec 4
+
+TYPE silver
+  silverware | noun | rec 2
+  silverfish | noun | rec 3
+  silverback | noun | rec 3
+  silverside | noun | rec 4
+
+TYPE copper
+  copperhead | noun | rec 3 | animal
+  copperhead | noun | rec 3 | snake
+  copperplate | noun | rec 4 | handwriting
+  copperworks | noun | rec 4
+
+TYPE brass
+  brassie | noun | rec 5
+
+TYPE bronze
+  bronzewing | noun | rec 5
+
+TYPE nickel  (no library words)
+
+TYPE cobalt  (no library words)

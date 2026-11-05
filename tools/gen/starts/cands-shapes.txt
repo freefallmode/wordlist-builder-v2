@@ -1,0 +1,165 @@
+# starts with a shape: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE ball
+  ballet | noun | rec 1
+  balloon | noun | rec 1 | party
+  balloon | noun | rec 1 | aircraft
+  balloons | noun | rec 1
+  ballerina | noun | rec 1
+  ballot | noun | rec 2
+  ballroom | noun | rec 2
+  ballpark | noun | rec 2
+  ballooning | noun | rec 2
+  ballad | noun | rec 3
+  ballast | noun | rec 3 | ship
+  ballista | noun | rec 3
+  ballast | noun | rec 4 | railway
+  ballcock | noun | rec 4
+  ballyhoo | noun | rec 4
+  ballistics | noun | rec 4
+  ballotade | noun | rec 5
+
+TYPE heart
+  heartache | noun | rec 2
+  heartless | adjective | rec 2
+  heartbroken | adjective | rec 2
+  heartworm | noun | rec 3
+  heartwood | noun | rec 3
+  hearthstone | noun | rec 4
+
+TYPE disc
+  discount | noun | rec 1
+  discus | noun | rec 2 | sport
+  discard | verb | rec 2
+  discharge | noun | rec 2 | hospital
+  discourage | verb | rec 2
+  disciple | noun | rec 3
+  discerning | adjective | rec 3
+  discus | noun | rec 4 | fish
+  discern | verb | rec 4
+  discombobulate | verb | rec 4
+  disconsolate | adjective | rec 5
+  discriminant | noun | rec 5
+
+TYPE line
+  linear | adjective | rec 2 | math
+  linesman | noun | rec 2
+  linebacker | noun | rec 2
+  lineup | noun | rec 3 | police
+  lineup | noun | rec 3 | surfing
+  lineage | noun | rec 3
+  lineout | noun | rec 3
+  lineman | noun | rec 3
+  linesperson | noun | rec 3
+
+TYPE star
+  staring | noun | rec 1 | cat
+  starfish | noun | rec 1
+  starch | noun | rec 2
+  startup | noun | rec 2
+  starlit | adjective | rec 2
+  starling | noun | rec 2
+  starship | noun | rec 2 | spaceship
+  startled | adjective | rec 2
+  starches | noun | rec 2
+  stardust | noun | rec 2
+  starlight | noun | rec 2
+  starboard | noun | rec 2 | ship side
+  starboard | noun | rec 2 | rowing
+  stargazing | noun | rec 2
+  starless | adjective | rec 3
+  stargaze | verb | rec 3
+  starfruit | noun | rec 3
+  stargazer | noun | rec 3
+  starfighter | noun | rec 3
+  stargazy | adjective | rec 5
+  starwort | noun | rec 5
+
+TYPE arc
+  archer | noun | rec 1 | job
+  arcade | noun | rec 1 | game room
+  arcade | noun | rec 1 | games
+  archery | noun | rec 1
+  architect | noun | rec 1
+  arctic | noun | rec 2 | canid
+  archway | noun | rec 2
+  archangel | noun | rec 2
+  archbishop | noun | rec 2
+  archaeologist | noun | rec 2
+  arcade | noun | rec 3 | architecture
+  arcane | adjective | rec 3
+  arcade | noun | rec 3 | building
+  archaic | adjective | rec 3
+  archive | noun | rec 3
+  archives | noun | rec 3
+  archipelago | noun | rec 3
+  archtop | noun | rec 4
+  archduke | noun | rec 4
+  archdemon | noun | rec 4
+  archerfish | noun | rec 4
+  archdeacon | noun | rec 4
+  arcus | noun | rec 5
+  archaea | noun | rec 5
+  architrave | noun | rec 5
+  archimandrite | noun | rec 5
+
+TYPE ring
+  ringtone | noun | rec 1
+  ringmaster | noun | rec 1
+  ringworm | noun | rec 2
+  ringleader | noun | rec 3
+  ringed | noun | rec 4 | pinniped
+  ringlet | noun | rec 4 | butterfly
+  ringgit | noun | rec 4
+  ringtail | noun | rec 5
+
+TYPE dot
+  dotted | adjective | rec 2
+  doting | adjective | rec 3
+
+TYPE oval  (no library words)
+
+TYPE cone
+  coneflower | noun | rec 4
+
+TYPE cross
+  crossword | noun | rec 1 | puzzle
+  crosswords | noun | rec 1
+  crossing | noun | rec 2 | sea
+  crossbow | noun | rec 2
+  crossbar | noun | rec 2
+  crossroads | noun | rec 2
+  crossover | noun | rec 3 | comic
+  crosswind | noun | rec 3
+  crossover | noun | rec 3 | basketball
+  crossover | noun | rec 3 | car
+  crossbreed | noun | rec 3
+  crosscut | noun | rec 4 | across grain
+  crossbill | noun | rec 4
+  crosswise | adverb | rec 4
+  crossover | noun | rec 4 | skating
+  crossover | noun | rec 4 | audio
+  crossbench | noun | rec 4
+  crossette | noun | rec 5
+  crosshead | noun | rec 5
+  crossfader | noun | rec 5
+  crossminton | noun | rec 5
+  crossbencher | noun | rec 5
+
+TYPE wedge  (no library words)
+
+TYPE loop
+  loophole | noun | rec 3
+
+TYPE point
+  pointer | noun | rec 2 | dog
+  pointer | noun | rec 3 | teaching
+  pointer | noun | rec 3 | programming
+  pointillism | noun | rec 4
+
+TYPE square  (no library words)
+
+TYPE prism  (no library words)
+
+TYPE curve
+  curveball | noun | rec 2

@@ -1,0 +1,215 @@
+# starts with a piece of clothing: library words that begin with each type word (raw matches: many are related to the type and must be rejected)
+
+TYPE hat
+  hatch | verb | rec 1 | emerge
+  hatch | noun | rec 2 | ship
+  hatchback | noun | rec 2
+  hater | noun | rec 3
+  hatter | noun | rec 3
+  hatchet | noun | rec 3
+  hatching | noun | rec 3
+  hatchling | noun | rec 3 | turtle
+  hatchling | noun | rec 3 | baby animal
+  hatha | noun | rec 4
+  hatbox | noun | rec 4 | luggage
+  hatchetfish | noun | rec 4
+  hatun | noun | rec 5
+  hatpin | noun | rec 5
+  hatayi | noun | rec 5
+  hattat | noun | rec 5
+  hatchment | noun | rec 5
+
+TYPE cap
+  captain | noun | rec 1 | ship
+  capsule | noun | rec 1 | medicine
+  captain | noun | rec 1 | rank
+  captain | noun | rec 1 | leader
+  capital | noun | rec 1 | city
+  captain | noun | rec 1 | crew
+  cappuccino | noun | rec 1
+  caper | noun | rec 2 | pickled bud
+  capitol | noun | rec 2
+  capsule | noun | rec 2 | shape
+  capsule | noun | rec 2 | spacecraft
+  capsize | verb | rec 2
+  capacity | noun | rec 2
+  capitalism | noun | rec 2
+  caper | verb | rec 3 | leap
+  capris | noun | rec 3
+  caplet | noun | rec 3
+  caption | noun | rec 3
+  capital | noun | rec 3 | finance
+  caprese | noun | rec 3
+  capybara | noun | rec 3
+  capoeira | noun | rec 3
+  capuchin | noun | rec 3
+  capstone | noun | rec 3
+  capillary | noun | rec 3 | blood vessel
+  capacitor | noun | rec 3
+  capellini | noun | rec 3
+  capon | noun | rec 4
+  capers | noun | rec 4
+  capote | noun | rec 4
+  caprine | adjective | rec 4
+  capstan | noun | rec 4 | ship
+  capicola | noun | rec 4
+  capricciosa | noun | rec 4
+  capoeirista | noun | rec 4
+  capercaillie | noun | rec 4
+  capsid | noun | rec 5
+  capstan | noun | rec 5 | piano
+  caprino | noun | rec 5
+  capriole | verb | rec 5
+  capotain | noun | rec 5
+  capriccio | noun | rec 5
+  caparison | noun | rec 5
+  capacious | adjective | rec 5
+  capitulate | verb | rec 5
+  capirotada | noun | rec 5
+  cappelletti | noun | rec 5
+
+TYPE sock
+  socket | noun | rec 1 | electrical
+  socket | noun | rec 2 | joint
+  sockeye | noun | rec 4
+  sockpuppet | noun | rec 4
+  sockdolager | noun | rec 5
+
+TYPE tie
+  tiebreak | noun | rec 2
+  tiefling | noun | rec 3
+  tiebreaker | noun | rec 3
+  tieback | noun | rec 4
+  tierce | noun | rec 5
+  tiercel | noun | rec 5
+
+TYPE vest
+  vestry | noun | rec 4
+  vestibule | noun | rec 4 | entrance
+  vestments | noun | rec 4
+  vestigial | adjective | rec 4
+  vestibule | noun | rec 4 | ear
+
+TYPE boot
+  bootlace | noun | rec 3
+  bootcamp | noun | rec 3 | esports
+  bootlegger | noun | rec 3
+  bootstrapping | noun | rec 4
+  bootloader | noun | rec 5
+
+TYPE belt
+  beltway | noun | rec 3
+
+TYPE shirt  (no library words)
+
+TYPE bra
+  brain | noun | rec 1
+  brass | noun | rec 1 | music
+  braid | noun | rec 1
+  brass | noun | rec 1 | metal
+  brake | noun | rec 1 | car
+  brake | verb | rec 1 | to slow
+  brave | adjective | rec 1
+  braces | noun | rec 1 | dental
+  brakes | noun | rec 1 | vehicle
+  brakes | noun | rec 1 | bicycle
+  bravery | noun | rec 1
+  bracelet | noun | rec 1
+  brackets | noun | rec 1 | punctuation
+  bravo | other | rec 2 | cheer
+  brand | noun | rec 2
+  brass | noun | rec 2 | color
+  brandy | noun | rec 2
+  braces | noun | rec 2 | punctuation
+  branch | noun | rec 2 | tree
+  brainy | adjective | rec 2
+  branch | noun | rec 2 | programming
+  bracket | noun | rec 2 | hardware
+  bracket | noun | rec 2 | tournament
+  bratwurst | noun | rec 2
+  brace | noun | rec 3 | game
+  braai | noun | rec 3
+  braise | verb | rec 3
+  brazil | noun | rec 3 | tree seed
+  bracken | noun | rec 3
+  bramble | noun | rec 3
+  bravado | noun | rec 3
+  brainiac | noun | rec 3 | smart person
+  brainiac | noun | rec 3 | DC villain
+  brainstem | noun | rec 3
+  bract | noun | rec 4
+  brace | noun | rec 4 | goals
+  brahmi | noun | rec 4
+  bracer | noun | rec 4 | archery
+  bradawl | noun | rec 4
+  brahman | noun | rec 4 | cattle
+  bravura | noun | rec 4
+  brazier | noun | rec 4
+  bracket | noun | rec 4 | skating
+  bralette | noun | rec 4
+  brandade | noun | rec 4
+  brambling | noun | rec 4
+  brachiopod | noun | rec 4
+  brant | noun | rec 5 | goose
+  brash | noun | rec 5
+  brakie | noun | rec 5
+  brassie | noun | rec 5
+  brakeman | noun | rec 5
+  braconid | noun | rec 5
+  brachiate | verb | rec 5
+  brachialis | noun | rec 5
+  brazilwood | noun | rec 5
+  braunschweiger | noun | rec 5
+
+TYPE cape
+  capellini | noun | rec 3
+  capers | noun | rec 4
+  capercaillie | noun | rec 4
+
+TYPE coat  (no library words)
+
+TYPE glove  (no library words)
+
+TYPE robe  (no library words)
+
+TYPE shoe
+  shoelace | noun | rec 1
+  shoebox | noun | rec 2
+  shoestring | noun | rec 2
+  shoeboxes | noun | rec 3
+  shoebill | noun | rec 4
+  shoegaze | noun | rec 5
+
+TYPE skirt  (no library words)
+
+TYPE scarf  (no library words)
+
+TYPE sash
+  sashimi | noun | rec 2
+  sashay | verb | rec 3
+  sashiko | noun | rec 5
+
+TYPE gown  (no library words)
+
+TYPE apron  (no library words)
+
+TYPE jacket  (no library words)
+
+TYPE mitt
+  mittens | noun | rec 1
+  mitten | noun | rec 2
+  mittsu | noun | rec 5 | Japanese number
+
+TYPE veil  (no library words)
+
+TYPE bib
+  bibliography | noun | rec 3
+  bibby | noun | rec 4
+  bibimbap | noun | rec 4
+  bibliophile | noun | rec 4
+  bibingka | noun | rec 5
+
+TYPE sari
+  sarinda | noun | rec 5
+
+TYPE kilt  (no library words)
