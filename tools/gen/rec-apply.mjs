@@ -17,7 +17,7 @@ for (let i = 1; fs.existsSync(here(`./rec/list-${i}.txt`)); i++) {
     if (!l.trim()) continue;
     const m = /^(\d+)\s+([1-5])\s*$/.exec(l.trim()), e = m && P.ix.entry.get(+m[1]);
     if (!m || !e || e.aliasOf || !listed.has(e.id)) { stat.bad++; console.log('bad line r-' + i + ': ' + l); continue; }
-    if (e.rec !== +m[2]) { if (+m[2] < e.rec) stat.easier++; else stat.harder++; e.rec = +m[2]; stat.changed++; }
+    if (e.fam !== +m[2]) { if (+m[2] < e.fam) stat.easier++; else stat.harder++; e.fam = +m[2]; stat.changed++; }
   }
   for (const id of listed) { done.add(id); stat.reviewed++; }
 }

@@ -6,7 +6,7 @@ import { parseProject } from '../../js/store.js';
 import { reindex, linkIds } from '../../js/model.js';
 const P = parseProject(fs.readFileSync(new URL('../../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
 const SIZE = 25, MINEASY = 3, MINTOTAL = 16;
-const rows = new Map(); for (const e of P.entries) if (!e.aliasOf) for (const [t, r] of Object.entries(e.th)) (rows.get(t) || rows.set(t, []).get(t)).push([e.text + (e.gloss ? ` (${e.gloss})` : ''), r]);
+const rows = new Map(); for (const e of P.entries) if (!e.aliasOf) for (const [t, r] of Object.entries(e.typ)) (rows.get(t) || rows.set(t, []).get(t)).push([e.text + (e.gloss ? ` (${e.gloss})` : ''), r]);
 const need = [];
 for (const t of P.themes) {
   if (t.group) continue;

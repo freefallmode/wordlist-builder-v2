@@ -20,7 +20,7 @@ for (const a of P.entries) {
     const bare = toks.join(' '); if (!bare || bare.toLowerCase() === r.text.toLowerCase() || bare.length < 2) continue;
     const have = sameText(P, bare).filter(x => !x.aliasOf);
     n++;
-    console.log(`${a.id}\t${tid}\t${a.text}\t-> ${r.id} ${r.text}${r.gloss ? ' (' + r.gloss + ')' : ''}\tbare "${bare}"${have.length ? ' EXISTS: ' + have.map(x => x.id + (x.gloss ? ' (' + x.gloss + ')' : '') + (x.th[tid] !== undefined ? ' IN THEME' : '')).join('; ') : ''}`);
+    console.log(`${a.id}\t${tid}\t${a.text}\t-> ${r.id} ${r.text}${r.gloss ? ' (' + r.gloss + ')' : ''}\tbare "${bare}"${have.length ? ' EXISTS: ' + have.map(x => x.id + (x.gloss ? ' (' + x.gloss + ')' : '') + (x.typ[tid] !== undefined ? ' IN THEME' : '')).join('; ') : ''}`);
   }
 }
 console.log(n, 'candidates');

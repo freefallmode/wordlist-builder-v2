@@ -9,11 +9,11 @@ const ops = readdirSync(dir).filter(f => /^audit-out-\d+\.json$/.test(f)).flatMa
 let n = 0, skipped = 0;
 for (const o of ops) {
   const e = P.ix.entry.get(o.id); if (!e || e.gloss || !o.keep) { skipped++; continue; }
-  const groups = (o.split || []).map(g => ({ ...g, themes: g.themes.filter(t => e.th[t] !== undefined) })).filter(g => g.themes.length && g.gloss && g.gloss !== o.keep);
+  const groups = (o.split || []).map(g => ({ ...g, themes: g.themes.filter(t => e.typ[t] !== undefined) })).filter(g => g.themes.length && g.gloss && g.gloss !== o.keep);
   if (!groups.length) { skipped++; continue; }
   e.gloss = o.keep;
-  for (const g of groups) { const th = {}; for (const t of g.themes) { th[t] = e.th[t]; delete e.th[t]; }
-    addEntry(P, e.text, { gloss: g.gloss, pos: e.pos, type: g.type || e.type, rec: e.rec, th, tm: e.tm, adult: e.adult, sensitive: e.sensitive, vulgar: e.vulgar, region: e.region, status: 'gen' }); reindex(P); n++; }
+  for (const g of groups) { const th = {}; for (const t of g.themes) { th[t] = e.typ[t]; delete e.typ[t]; }
+    addEntry(P, e.text, { gloss: g.gloss, pos: e.pos, type: g.type || e.type, fam: e.fam, th, tm: e.tm, adult: e.adult, sensitive: e.sensitive, vulgar: e.vulgar, region: e.region, status: 'gen' }); reindex(P); n++; }
 }
 reindex(P); stampSave(P); writeFileSync(lib, serializeProject(P));
 const errs = validate(P).filter(i => i.sev === 'error');

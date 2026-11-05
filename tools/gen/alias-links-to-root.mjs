@@ -10,10 +10,10 @@ let moved = 0, kept = 0, cleared = 0; const sample = [];
 for (const a of P.entries) {
   if (!a.aliasOf || !['spelling', 'form'].includes(a.aliasKind)) continue;
   const r = P.ix.entry.get(a.aliasOf); if (!r) continue;
-  for (const [tid, v] of Object.entries(a.th)) {
+  for (const [tid, v] of Object.entries(a.typ)) {
     if (P.ix.theme.get(tid)?.lang) { kept++; continue; }
-    if (r.th[tid] === undefined) { r.th[tid] = v; moved++; if (sample.length < 14) sample.push(`${a.text} -> ${r.text}: ${tid}`); } else cleared++;
-    delete a.th[tid];
+    if (r.typ[tid] === undefined) { r.typ[tid] = v; moved++; if (sample.length < 14) sample.push(`${a.text} -> ${r.text}: ${tid}`); } else cleared++;
+    delete a.typ[tid];
   }
 }
 console.log(moved, 'links moved to the root;', cleared, 'already on the root (cleared from the alias);', kept, 'kept on the alias in language-specific themes');

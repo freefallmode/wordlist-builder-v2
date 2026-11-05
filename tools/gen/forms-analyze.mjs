@@ -17,7 +17,7 @@ if (which === 'short') {
     const lead = tr.slice(0, tr.length - ta.length).join(' '), keepsTail = tr.slice(tr.length - ta.length).join(' ') === ta.join(' ');
     const others = sameText(P, a.text).filter(x => x !== a);
     n++;
-    console.log(`${a.id}\t${lab(a)} [${a.aliasKind}] <- ${r.id}\t${lab(r)}\t${r.type}/${r.pos || 'noun'}\t${keepsTail ? 'drops leading ' + lead : 'keeps head only if first'}\tthemes ${Object.keys(r.th).length}/${Object.keys(a.th).length}\trec ${a.rec}/${r.rec}${others.length ? '\tSAME TEXT: ' + others.map(lab).join('; ') : ''}`);
+    console.log(`${a.id}\t${lab(a)} [${a.aliasKind}] <- ${r.id}\t${lab(r)}\t${r.type}/${r.pos || 'noun'}\t${keepsTail ? 'drops leading ' + lead : 'keeps head only if first'}\tthemes ${Object.keys(r.typ).length}/${Object.keys(a.typ).length}\trec ${a.fam}/${r.fam}${others.length ? '\tSAME TEXT: ' + others.map(lab).join('; ') : ''}`);
   }
   console.log(n, 'pairs');
 } else {
@@ -28,7 +28,7 @@ if (which === 'short') {
     for (const a of roots) for (const b of roots) {
       if (a === b || !rel(a.text.toLowerCase(), b.text.toLowerCase())) continue;
       const k = tid + a.id + '-' + b.id; if (seen.has(k)) continue; seen.add(k); n++;
-      console.log(`${tid}\t${a.id} ${lab(a)} ${a.pos || 'noun'} rec ${a.rec} pop ${a.th[tid]}\t${b.id} ${lab(b)} ${b.pos || 'noun'} rec ${b.rec} pop ${b.th[tid]}\t${P.ix.theme.get(tid).complete ? 'COMPLETE' : ''}`);
+      console.log(`${tid}\t${a.id} ${lab(a)} ${a.pos || 'noun'} rec ${a.fam} pop ${a.typ[tid]}\t${b.id} ${lab(b)} ${b.pos || 'noun'} rec ${b.fam} pop ${b.typ[tid]}\t${P.ix.theme.get(tid).complete ? 'COMPLETE' : ''}`);
     }
   }
   console.log(n, 'pairs');

@@ -2,7 +2,7 @@
 import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
-import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
+import { POS, TYPES, TYPE_HELP, REGIONS, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, difficultyBand, eff,
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, themeLocked, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
@@ -10,8 +10,8 @@ import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } 
 import { download } from './store.js';
 import { MODELS, getKey, setKey, getModel, setModel, generateWords, SPREADS } from './ai.js';
 
-const REC_OPTS = REC_HELP.map((l, i) => [i, l]);
-const IN_OPTS = [[0, 'auto'], ...POP_HELP.slice(1).map((l, i) => [i + 1, l])];
+const FAMILIARITY_OPTS = FAMILIARITY_HELP.map((l, i) => [i, l]);
+const TYPICALITY_OPTS = [[0, 'auto'], ...TYPICALITY_HELP.slice(1).map((l, i) => [i + 1, l])];
 
 // Region ticks in the same box, with all / none links, as the region section of the Export window.
 // The region section: the "region-specific" checkbox, which switches the region ticks on and off, with all / none and the ticks on one line in a box (sits right after the flag checkboxes).
@@ -47,7 +47,7 @@ export async function editTheme(t, isNew = false) {
     note: h('textarea', { rows: 3 }, w.note),
     tkind: select(THEME_KINDS.map(k => [k, k]), w.tkind || 'category'),
     rule: h('input', { value: w.rule || '', placeholder: 'hidden:tree, rhyme:ake, palindrome, compound-end:bag, compound-start:snow' }),
-    pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
+    pop: select(TYPICALITY_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
     ident: select(IDENT_HELP.map((l, v) => [v, l]), w.ident || 0),
     locked: select([['auto', 'Follow the kind (locked for wordplay, compound and language-specific)'], ['locked', 'Locked: show exactly the linked word'], ['free', 'Allowed: regional and family words may stand in']], w.locked === undefined ? 'auto' : w.locked ? 'locked' : 'free'),
   };
@@ -107,13 +107,13 @@ export const addTheme = parentId => editTheme(Object.assign(newTheme('', parentI
 
 export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const P = A.P;
-  const w = { ...e, region: [...e.region], th: { ...e.th }, show: { ...e.show } };
-  if (isNew && themeId && !w.aliasOf) w.th[themeId] = w.th[themeId] ?? 0;
+  const w = { ...e, region: [...e.region], typ: { ...e.typ }, show: { ...e.show } };
+  if (isNew && themeId && !w.aliasOf) w.typ[themeId] = w.typ[themeId] ?? 0;
   const f = {
     text: h('input', { value: w.text, autofocus: true }),
     gloss: h('input', { value: w.gloss, placeholder: 'only if the text has other meanings, e.g. donkey' }),
     pos: select(POS, w.pos), type: select(TYPES.map(t => [t, `${t} — ${TYPE_HELP[t]}`]), w.type),
-    rec: select(REC_OPTS, w.rec), status: select(STATUS.map(s => [s, `${s} — ${STATUS_HELP[s]}`]), w.status),
+    fam: select(FAMILIARITY_OPTS, w.fam), status: select(STATUS.map(s => [s, `${s} — ${STATUS_HELP[s]}`]), w.status),
     note: h('textarea', { rows: 2 }, w.note), kind: select(ALIAS_KINDS.map(k => [k, k || '(not an alias)']), w.aliasKind),
   };
   const flags = { enabled: 'Enabled', adult: 'Adult', vulgar: 'Vulgar', sensitive: 'Sensitive', tm: 'Trademark / copyright' };   // the order of the Export window
@@ -132,20 +132,20 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   });
 
   // Has anything been changed since the dialog opened? (Used to ask before leaving for a theme.)
-  const sig = () => JSON.stringify([f.text.value, f.gloss.value, f.pos.value, f.type.value, f.rec.value, f.status.value, f.note.value, f.kind.value, aliasInput.value,
-    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.th, w.show]);
+  const sig = () => JSON.stringify([f.text.value, f.gloss.value, f.pos.value, f.type.value, f.fam.value, f.status.value, f.note.value, f.kind.value, aliasInput.value,
+    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.typ, w.show]);
   const initialSig = sig();
   const linksBox = h('div.links');
   const addPick = themePicker('add a theme…', { groups: false });
   const drawLinks = () => {
     const rootId = (() => { const m = aliasInput.value.match(/#(\d+)$/); return m ? +m[1] : 0; })();
     const root = rootId && P.ix.entry.get(rootId);
-    const ids = new Set([...Object.keys(w.th), ...(root ? Object.keys(root.th) : [])]);
+    const ids = new Set([...Object.keys(w.typ), ...(root ? Object.keys(root.typ) : [])]);
     linksBox.replaceChildren(
       ids.size ? h('table.links', {}, h('tr', {}, h('th', 'Theme'), h('th', root ? 'Typicality here (auto = harder of root and own)' : 'Typicality in this theme'), h('th', { title: 'What the theme shows the player instead of the full text, e.g. sun for sun hat in hats. Leave empty to show the full text.' }, 'Shown as'), h('th')),
         [...ids].map(tid => {
-          const inherited = !!root && !(tid in w.th);
-          const own = tid in w.th;
+          const inherited = !!root && !(tid in w.typ);
+          const own = tid in w.typ;
           return h('tr', { class: inherited ? 'inherited' : '' },
             h('td', {}, h('a', { href: '#', title: pathOf(P, tid).join(' > '), onclick: async ev => {
               ev.preventDefault();
@@ -164,14 +164,14 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
               dlg.dispatchEvent(new Event('cancel'));   // closes the entry dialog
               A.render();
             } }, P.ix.theme.get(tid)?.name || tid + ' (missing)'), inherited && h('span.hint', ' from root')),
-            h('td', {}, select(IN_OPTS, w.th[tid] || 0, { onchange: ev => { w.th[tid] = +ev.target.value; } })),
+            h('td', {}, select(TYPICALITY_OPTS, w.typ[tid] || 0, { onchange: ev => { w.typ[tid] = +ev.target.value; } })),
             h('td', {}, own && h('input.shown', { value: w.show[tid] || '', placeholder: 'full text', size: 14, oninput: ev => { const v = ev.target.value.trim(); if (v) w.show[tid] = v; else delete w.show[tid]; } })),
-            h('td', {}, (own || !root) && h('button.link', { type: 'button', title: 'Unlink', onclick: () => { delete w.th[tid]; delete w.show[tid]; drawLinks(); } }, '✕')));
+            h('td', {}, (own || !root) && h('button.link', { type: 'button', title: 'Unlink', onclick: () => { delete w.typ[tid]; delete w.show[tid]; drawLinks(); } }, '✕')));
         })) : h('p.hint', 'Not linked to any theme yet.'),
       h('div.row', {}, addPick.node, h('button', { type: 'button', onclick: () => {
         const tid = addPick.get();
         if (!tid) return toast('Pick a theme from the list.', true);
-        if (!(tid in w.th)) w.th[tid] = 0;
+        if (!(tid in w.typ)) w.typ[tid] = 0;
         addPick.input.value = ''; drawLinks();
       } }, 'Link')));
   };
@@ -196,7 +196,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const aliasSection = h('div', {}, h('h3', 'This is an alias of'), linkRow, picker, aliasList, field('Alias kind', f.kind));
   const aliasesList = h('div', {}, h('h3', 'Aliases of this entry'), aliases.map(a => h('div.row', {},
     h('a', { href: '#', onclick: async ev => { ev.preventDefault(); if (await editEntry(a)) A.changed(); } }, a.text),
-    ` ${a.aliasKind || '?'}${a.region.length ? ' · ' + a.region.join('/') : ''} · familiarity ${a.rec || '?'}`)));
+    ` ${a.aliasKind || '?'}${a.region.length ? ' · ' + a.region.join('/') : ''} · familiarity ${a.fam || '?'}`)));
   // A root that has aliases cannot become one; a root without any gets a link that reveals the field.
   const revealer = h('div.row', {}, h('button.link', { type: 'button', onclick: () => { revealer.replaceWith(aliasSection); picker.hidden = false; } }, 'Make this an alias of another entry…'));
   const aliasBlock = w.aliasOf ? aliasSection : aliases.length ? aliasesList : revealer;
@@ -205,7 +205,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
   const body = h('div.form', {},
     h('div.two', {}, field('Text (as written, with capitals)', f.text), field('Meaning/context', f.gloss)),
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
-    h('div.two', {}, field('Familiarity (the word itself)', f.rec, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
+    h('div.two', {}, field('Familiarity (the word itself)', f.fam, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
     h('div.flags', Object.values(boxes)),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).'),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
@@ -231,7 +231,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (aliasOf && P.ix.entry.get(aliasOf).aliasOf) throw Error('Point the alias at the root entry, not at another alias.');
     if (aliasOf && aliasOf === e.id) throw Error('An entry cannot be an alias of itself.');
     if (aliasOf && P.entries.some(a => a.aliasOf === e.id)) throw Error('This entry has aliases of its own; move them first.');
-    Object.assign(w, { text, gloss, pos: f.pos.value, type: f.type.value, rec: +f.rec.value, status: f.status.value, note: f.note.value.trim(), aliasOf,
+    Object.assign(w, { text, gloss, pos: f.pos.value, type: f.type.value, fam: +f.fam.value, status: f.status.value, note: f.note.value.trim(), aliasOf,
       aliasKind: aliasOf ? (f.kind.value || 'synonym') : '' });
     for (const k of Object.keys(flags)) w[k] = boxes[k].querySelector('input').checked;
     w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
@@ -251,18 +251,18 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
 export async function bulkAdd(tid) {
   const P = A.P, t = P.ix.theme.get(tid);
   const ta = h('textarea', { rows: 12, placeholder: 'One word per line.\nOptional extras after |  :  meaning | familiarity | typicality\n  ass | donkey | 1 | 2' });
-  const d = { pos: select(POS, 'noun'), type: select(TYPES, 'common'), rec: select(REC_OPTS, 0), inRec: select(IN_OPTS, 0) };
+  const d = { pos: select(POS, 'noun'), type: select(TYPES, 'common'), fam: select(FAMILIARITY_OPTS, 0), typicality: select(TYPICALITY_OPTS, 0) };
   const body = h('div.form', {}, h('p', {}, `Adding to "${t.name}". Words that already exist are just linked.`), ta,
-    h('div.two', {}, field('Part of speech', d.pos), field('Type', d.type)), h('div.two', {}, field('Familiarity', d.rec), field('Typicality in this theme', d.inRec)));
+    h('div.two', {}, field('Part of speech', d.pos), field('Type', d.type)), h('div.two', {}, field('Familiarity', d.fam), field('Typicality in this theme', d.typicality)));
   return dialog('Add words', body, [{ label: 'Cancel' }, { label: 'Add', primary: true, action: () => {
     let added = 0, linked = 0; const problems = [];
     for (const line of ta.value.split('\n')) {
       if (!line.trim()) continue;
-      const [text, gloss = '', rec = '', inRec = ''] = line.split('|').map(s => s.trim());
+      const [text, gloss = '', fam = '', typ = ''] = line.split('|').map(s => s.trim());
       const same = sameText(P, text), hit = same.find(x => (x.gloss || '').toLowerCase() === gloss.toLowerCase());
-      if (hit) { if (!(tid in hit.th)) { hit.th[tid] = +inRec || +d.inRec.value; linked++; } continue; }
+      if (hit) { if (!(tid in hit.typ)) { hit.typ[tid] = +typ || +d.typicality.value; linked++; } continue; }
       if (same.length && !gloss) { problems.push(text); continue; }
-      addEntry(P, text, { gloss, pos: d.pos.value, type: d.type.value, rec: +rec || +d.rec.value, th: { [tid]: +inRec || +d.inRec.value } });
+      addEntry(P, text, { gloss, pos: d.pos.value, type: d.type.value, fam: +fam || +d.fam.value, typ: { [tid]: +typ || +d.typicality.value } });
       reindex(P); added++;
     }
     A.changed();
@@ -293,15 +293,15 @@ export async function generate(tid) {
   };
   const clamp = n => Math.max(1, Math.min(5, Math.round(+n) || 3));
   const draw = () => {
-    out.replaceChildren(h('table.gen', {}, h('tr', {}, h('th'), h('th', 'Word'), h('th', 'pos'), h('th', 'type'), h('th', 'rec'), h('th', 'in'), h('th', 'flags'), h('th', 'aliases')),
+    out.replaceChildren(h('table.gen', {}, h('tr', {}, h('th'), h('th', 'Word'), h('th', 'pos'), h('th', 'type'), h('th', 'familiarity'), h('th', 'typicality'), h('th', 'flags'), h('th', 'aliases')),
       result.map(x => {
         const exists = sameText(P, x.text).find(o => (o.gloss || '').toLowerCase() === (x.gloss || '').toLowerCase());
         return h('tr', { class: exists ? 'exists' : '' },
           h('td', {}, h('input', { type: 'checkbox', checked: x.take, onchange: ev => { x.take = ev.target.checked; } })),
           h('td', {}, x.text, x.gloss && h('span.hint', ` (${x.gloss})`), exists && h('span.hint', ' · exists, will be linked')),
-          h('td', x.pos.slice(0, 3)), h('td', x.type), h('td', clamp(x.rec)), h('td', clamp(x.inRec)),
+          h('td', x.pos.slice(0, 3)), h('td', x.type), h('td', clamp(x.familiarity)), h('td', clamp(x.typicality)),
           h('td', ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => x[k]).map(k => k[0].toUpperCase()).join('') + (x.region.length ? ' ' + x.region.join('/') : '')),
-          h('td', x.aliases.map(a => `${a.text} (${a.kind}${a.region.length ? ' ' + a.region.join('/') : ''}, ${clamp(a.rec)})`).join(', ')));
+          h('td', x.aliases.map(a => `${a.text} (${a.kind}${a.region.length ? ' ' + a.region.join('/') : ''}, ${clamp(a.familiarity)})`).join(', ')));
       })));
   };
   const add = () => {
@@ -312,17 +312,17 @@ export async function generate(tid) {
       let root = sameText(P, text).find(o => (o.gloss || '').toLowerCase() === gloss.toLowerCase());
       if (root) {   // an existing word (or one of its alias family) is linked if no member of the family is in the theme yet; spelling and form aliases are linked through their root
         const fam = root.aliasOf ? P.ix.entry.get(root.aliasOf) : root;
-        if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.th)) { (['spelling', 'form'].includes(root.aliasKind) ? fam : root).th[tid] = clamp(x.inRec); linked++; }
+        if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.typ)) { (['spelling', 'form'].includes(root.aliasKind) ? fam : root).typ[tid] = clamp(x.typicality); linked++; }
         root = fam;
       } else {
-        root = addEntry(P, text, { gloss, pos: x.pos, type: x.type, rec: clamp(x.rec), adult: x.adult, sensitive: x.sensitive, tm: x.tm, vulgar: x.vulgar, region: x.region,
-          status: 'gen', th: { [tid]: clamp(x.inRec) } });
+        root = addEntry(P, text, { gloss, pos: x.pos, type: x.type, fam: clamp(x.familiarity), adult: x.adult, sensitive: x.sensitive, tm: x.tm, vulgar: x.vulgar, region: x.region,
+          status: 'gen', typ: { [tid]: clamp(x.typicality) } });
         reindex(P); created++;
       }
       for (const a of x.aliases) {
         const at = a.text.trim(); if (!at || at.toLowerCase() === text.toLowerCase()) continue;
         if (sameText(P, at).some(o => (o.gloss || '').toLowerCase() === (a.gloss || '').toLowerCase())) continue;
-        const al = addEntry(P, at, { gloss: (a.gloss || '').trim(), pos: root.pos, type: root.type, rec: clamp(a.rec), aliasOf: root.id, aliasKind: a.kind, region: a.region, status: 'gen',
+        const al = addEntry(P, at, { gloss: (a.gloss || '').trim(), pos: root.pos, type: root.type, fam: clamp(a.familiarity), aliasOf: root.id, aliasKind: a.kind, region: a.region, status: 'gen',
           adult: root.adult, sensitive: root.sensitive, tm: root.tm, vulgar: root.vulgar });
         reindex(P); created++;   // the alias follows its root's links; a family has only one member linked in a theme
       }

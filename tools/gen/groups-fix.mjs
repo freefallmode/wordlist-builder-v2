@@ -20,14 +20,14 @@ for (let n = 1; n <= 18; n++) {
 let swapped = 0, dropped = 0, gone = 0;
 for (const t of P.themes) {
   if (!t.groups?.length) continue;
-  const ok = e => e && !e.aliasOf && e.th[t.id] !== undefined;
+  const ok = e => e && !e.aliasOf && e.typ[t.id] !== undefined;
   t.groups = t.groups.map(g => {
     const out = [];
     for (const id of g) {
       let e = P.ix.entry.get(id);
       if (!ok(e)) {
         const r = e?.aliasOf && P.ix.entry.get(e.aliasOf), x = repl.get(t.id + '|' + id);
-        const y = ok(r) ? r : x && (x.id ? P.ix.entry.get(x.id) : P.entries.find(z => !z.aliasOf && z.text === x.text && (z.gloss || '') === x.gloss && z.th[t.id] !== undefined));
+        const y = ok(r) ? r : x && (x.id ? P.ix.entry.get(x.id) : P.entries.find(z => !z.aliasOf && z.text === x.text && (z.gloss || '') === x.gloss && z.typ[t.id] !== undefined));
         if (ok(y)) { e = y; swapped++; } else { dropped++; continue; }
       }
       if (!out.includes(e.id)) out.push(e.id);

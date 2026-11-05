@@ -3,7 +3,7 @@
 // plain: category themes named by their head noun (hats, cakes, owls) instead of kinds themes; a theme needs 3+ such members.
 import fs from 'node:fs';
 import { parseProject } from '../../js/store.js';
-import { reindex, popIn } from '../../js/model.js';
+import { reindex, typicality } from '../../js/model.js';
 const here = p => new URL(p, import.meta.url);
 const P = parseProject(fs.readFileSync(here('../../data/wordlist-en.project.json'), 'utf8')); reindex(P);
 const C = +process.argv[2] || 2, DIR = process.argv[3] || 'full', PLAIN = process.argv[4] === 'plain', items = [];
@@ -19,7 +19,7 @@ for (const t of P.themes) {
   if (PLAIN && mine.length < 3) continue;
   for (const e of mine) items.push({ t, e });
 }
-const d = (t, e) => `${e.id} "${e.text}"${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos} ${e.type} rec ${e.rec} link ${popIn(P, e, t.id) || '-'}`;
+const d = (t, e) => `${e.id} "${e.text}"${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos} ${e.type} rec ${e.fam} link ${typicality(P, e, t.id) || '-'}`;
 fs.mkdirSync(here('./' + DIR + '/'), { recursive: true });
 const per = Math.ceil(items.length / C);
 for (let c = 0; c < C; c++) fs.writeFileSync(here(`./${DIR}/list-${c + 1}.txt`), items.slice(c * per, (c + 1) * per).map(({ t, e }, i) => `${c * per + i + 1} | theme ${t.id} "${t.name}"${t.note ? ' (note: ' + t.note.slice(0, 100) + ')' : ''}\n   ${d(t, e)}`).join('\n') + '\n');

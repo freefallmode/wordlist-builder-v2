@@ -10,8 +10,8 @@ const T = 'room_types';
 // id, bare text, familiarity of the full term, typicality in the theme
 const FIX = [[48358, 'single', 1, 1], [48359, 'double', 1, 1], [48360, 'twin', 2, 1], [63321, 'deluxe', 2, 2], [63322, 'king', 2, 2], [63323, 'quad', 3, 3], [63324, 'queen', 2, 2], [63325, 'standard', 1, 2], [63326, 'triple', 3, 3]];
 for (const [id, bare, rec, link] of FIX) {
-  const e = P.ix.entry.get(id); if (!e || e.text !== bare || Object.keys(e.th).length !== 1) throw Error('unexpected entry ' + id);
-  e.text = bare + ' room'; e.gloss = ''; e.pos = 'noun phrase'; e.type = 'common'; e.rec = rec; e.th[T] = link;
+  const e = P.ix.entry.get(id); if (!e || e.text !== bare || Object.keys(e.typ).length !== 1) throw Error('unexpected entry ' + id);
+  e.text = bare + ' room'; e.gloss = ''; e.pos = 'noun phrase'; e.type = 'common'; e.fam = rec; e.typ[T] = link;
   e.show = { ...e.show, [T]: bare }; e.nameOkIn = [...new Set([...(e.nameOkIn || []), T])];
 }
 reindex(P);

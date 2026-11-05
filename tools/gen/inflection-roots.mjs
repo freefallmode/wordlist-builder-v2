@@ -15,8 +15,8 @@ const NOT = new Set(['your','her','our','their','it','tender','yacht','log','jib
 for (const B of P.entries) {
   const o = oldE.get(B.id); if (!B.aliasOf || !o || !oldE.get(B.aliasOf) || o.aliasOf || B.aliasKind !== 'synonym') continue;
   const A = P.ix.entry.get(B.aliasOf), oA = oldE.get(A.id), ca = cls(A.text), cb = cls(B.text);
-  for (const t of Object.keys(o.th)) if (oA.th[t] !== undefined) {
-    const sib = old.entries.filter(e => !e.aliasOf && e.id !== A.id && e.id !== B.id && e.th[t] !== undefined);
+  for (const t of Object.keys(o.typ)) if (oA.typ[t] !== undefined) {
+    const sib = old.entries.filter(e => !e.aliasOf && e.id !== A.id && e.id !== B.id && e.typ[t] !== undefined);
     const kind = cb === 'ing' ? 'ing' : 's';
     const n = { form: 0, base: 0 };
     for (const e of sib) {
@@ -34,9 +34,9 @@ if (process.argv[3] === '--apply') {
   for (const r of rows.filter(r => r.swap)) {
     const { A, B } = r;
     for (const x of P.entries) if (x.aliasOf === A.id && x !== B) x.aliasOf = B.id;   // aliases of the old root follow the new root
-    for (const [t, v] of Object.entries(A.th)) if (B.th[t] === undefined) B.th[t] = v;
+    for (const [t, v] of Object.entries(A.typ)) if (B.typ[t] === undefined) B.typ[t] = v;
     B.aliasOf = null; delete B.aliasKind;
-    A.aliasOf = B.id; A.aliasKind = 'synonym'; A.th = {};
+    A.aliasOf = B.id; A.aliasKind = 'synonym'; A.typ = {};
   }
   reindex(P); stampSave(P); writeFileSync(LIB, serializeProject(P)); console.log('applied, v' + P.lib.version);
 }

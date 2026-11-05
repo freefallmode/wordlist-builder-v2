@@ -25,8 +25,8 @@ const lines = [];
 for (const f of files) for (const l of fs.readFileSync(here('./' + DIR + '/' + f), 'utf8').split(/\r?\n/)) if (l.trim() && !l.startsWith('#')) lines.push([f, l.trim()]);
 const slist = lines.filter(([, l]) => l.startsWith('SUB')), plist = lines.filter(([, l]) => !l.startsWith('SUB'));
 const leave = (t, b, why) => {
-  if (b.th[t.id] === undefined) return false;
-  delete b.th[t.id]; regroup(t, id => id === b.id ? 0 : id);
+  if (b.typ[t.id] === undefined) return false;
+  delete b.typ[t.id]; regroup(t, id => id === b.id ? 0 : id);
   if (b.show) { delete b.show[t.id]; if (!Object.keys(b.show).length) delete b.show; }
   return true;
 };
@@ -39,7 +39,7 @@ for (const [f, l] of plist) {
   if (a.aliasOf || b.aliasOf) { stat.bad++; problems.push(`${f}: alias in "${l}"`); continue; }
   { const sh = e => toks(e.show?.[tid] || e.text), has = (big, small) => { for (let i = 0; i + small.length <= big.length; i++) if (small.every((w, j) => big[i + j] === w)) return true; return false; };   // the long entry must contain the short one; swap if an agent wrote them the other way round
     if (!has(sh(b), sh(a))) { if (has(sh(a), sh(b))) [a, b] = [b, a]; else { stat.bad++; problems.push(`${f}: not an overlap pair "${l}"`); continue; } } }
-  if (a.th[tid] === undefined || b.th[tid] === undefined) { problems.push(`${f}: already gone "${l}"`); continue; }
+  if (a.typ[tid] === undefined || b.typ[tid] === undefined) { problems.push(`${f}: already gone "${l}"`); continue; }
   if (verb === 'GROUP') {
     t.groups = t.groups || [];
     const ga = t.groups.find(g => g.includes(a.id)), gb = t.groups.find(g => g.includes(b.id));
@@ -47,11 +47,11 @@ for (const [f, l] of plist) {
     else if (ga) { if (!ga.includes(b.id)) ga.push(b.id); } else if (gb) { gb.push(a.id); } else t.groups.push([a.id, b.id]);
     stat.GROUP++; log.push(`GROUP in ${t.name}: ${a.text} + ${b.text}`); continue;
   }
-  if (verb === 'BRAND' && Object.keys(b.th).length === 1) { kept.push(b.id + ' ' + b.text + ' (' + t.name + ')'); continue; }
+  if (verb === 'BRAND' && Object.keys(b.typ).length === 1) { kept.push(b.id + ' ' + b.text + ' (' + t.name + ')'); continue; }
   const gone = verb === 'SHORT-OUT' ? a : b, stays = verb === 'SHORT-OUT' ? b : a;   // OUT: the long entry is not a member; SHORT-OUT: the bare category word of a kinds theme leaves
   leave(t, gone); stat[verb]++; log.push(`${verb} in ${t.name}: ${gone.text} out (kept ${stays.text})`);
-  const left = Object.keys(gone.th).length;
-  if (!left && !P.entries.some(x => x.aliasOf === gone.id && Object.keys(x.th).length)) {
+  const left = Object.keys(gone.typ).length;
+  if (!left && !P.entries.some(x => x.aliasOf === gone.id && Object.keys(x.typ).length)) {
     if (verb === 'MERGE') {
       for (const x of P.entries) if (x.aliasOf === gone.id) x.aliasOf = stays.id;
       for (const x of P.entries) if (x.use) for (const k of Object.keys(x.use)) if (x.use[k] === gone.id) delete x.use[k];
@@ -67,7 +67,7 @@ for (const [f, l] of slist) {
   let leakShow = null;
   const bad = [], NOISE = new Set(['types', 'type', 'species', 'varieties', 'forms', 'kinds', 'styles', 'subspecies', 'breeds']);
   if (!parent) bad.push('no parent'); else if (parent.complete) bad.push('parent complete');
-  else if (es.some(e => !e || e.th[pid] === undefined)) bad.push('a word is not in the parent');
+  else if (es.some(e => !e || e.typ[pid] === undefined)) bad.push('a word is not in the parent');
   if (ids.length < 4) bad.push('only ' + ids.length + ' words');
   if (P.themes.some(t => fold(t.name) === fold(name))) bad.push('a theme with this name exists');
   if (!bad.length) {
@@ -83,7 +83,7 @@ for (const [f, l] of slist) {
   stat.SUB++;
   P.themes.push({ id, name, parent: pid, group: false, enabled: true, complete: false, adult: false, sensitive: false, tm: false, lang: parent.lang, region: [], note: '', pop: parent.pop || 3 });
   reindex(P);
-  for (const e of es) { e.th[id] = e.th[pid]; if (leakShow) { const sh = strip(e.show?.[pid] || e.text, leakShow); if (sh && sh !== (e.show?.[pid] || e.text)) { e.show = { ...e.show, [id]: sh }; e.nameOkIn = [...new Set([...(e.nameOkIn || []), id])]; } } }
+  for (const e of es) { e.typ[id] = e.typ[pid]; if (leakShow) { const sh = strip(e.show?.[pid] || e.text, leakShow); if (sh && sh !== (e.show?.[pid] || e.text)) { e.show = { ...e.show, [id]: sh }; e.nameOkIn = [...new Set([...(e.nameOkIn || []), id])]; } } }
   if (leakShow) for (const a of P.entries) if (es.some(e => e.id === a.aliasOf)) a.nameOkIn = [...new Set([...(a.nameOkIn || []), id])];
   reindex(P);
 }

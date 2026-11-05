@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, effRec, linkIds, themeStats, pathOf, sameText, ALIAS_KINDS } from './model.js';
+import { eff, difficultyBand, linkIds, themeStats, pathOf, sameText, ALIAS_KINDS } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
@@ -48,12 +48,12 @@ export function validate(P) {
     for (const g of t.groups || []) {   // synonym groups: at most one member per level
       const mem = g.map(id => ix.entry.get(id));
       if (g.length < 2) add('warn', 'group-small', `A synonym group in "${t.name}" has fewer than two members.`, { themeId: t.id });
-      for (const [i, e] of mem.entries()) if (!e || e.aliasOf || !(e.th[t.id] !== undefined)) add('warn', 'group-member', `Synonym group member ${g[i]} in "${t.name}" is not a word of that theme.`, { themeId: t.id });
+      for (const [i, e] of mem.entries()) if (!e || e.aliasOf || !(e.typ[t.id] !== undefined)) add('warn', 'group-member', `Synonym group member ${g[i]} in "${t.name}" is not a word of that theme.`, { themeId: t.id });
     }
     const shownAs = new Map();   // two words that read the same in one theme cannot both be placed
     for (const e of direct) { if (e.aliasOf) continue; const x = fold(e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text); if (shownAs.has(x)) add('info', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}"; the export keeps the more popular one.`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
     const fam = new Map();   // an alias family (a root and its aliases) may have only one member linked in a theme
-    for (const e of direct) { if (e.th[t.id] === undefined) continue; const r = e.aliasOf || e.id; if (!fam.has(r)) fam.set(r, []); fam.get(r).push(e); }
+    for (const e of direct) { if (e.typ[t.id] === undefined) continue; const r = e.aliasOf || e.id; if (!fam.has(r)) fam.set(r, []); fam.get(r).push(e); }
     for (const [r, es] of fam) if (es.length > 1) add('warn', 'family-twice', `"${es.map(e => e.text).join('" and "')}" are the same word (one alias family) and both linked in "${t.name}"; keep one.`, { themeId: t.id, entryId: es[0].id });
     if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
   }
@@ -109,7 +109,7 @@ export function validate(P) {
         if (e.aliasKind === 'form' && (e.nameOkIn || []).length && text.length > r.text.length && text.toLowerCase().includes(r.text.toLowerCase())) add('info', 'alias-fullname', `"${label(e)}" is kept as a form of "${label(r)}" but is a longer name: make it an entry of its own and give the theme a shown text (show).`, loc);
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
       }
-      if ((e.aliasKind === 'spelling' || e.aliasKind === 'form') && Object.keys(e.th).length) add('warn', 'alias-link-kind', `"${label(e)}" is a ${e.aliasKind} alias with links of its own; only regional, synonym, abbreviation and translation aliases can be linked on their own.`, loc);
+      if ((e.aliasKind === 'spelling' || e.aliasKind === 'form') && Object.keys(e.typ).length) add('warn', 'alias-link-kind', `"${label(e)}" is a ${e.aliasKind} alias with links of its own; only regional, synonym, abbreviation and translation aliases can be linked on their own.`, loc);
     } else if (!ids.length) add('info', 'orphan', `"${label(e)}" is not linked to any theme.`, loc);
 
     for (const tid of ids) {
@@ -118,22 +118,22 @@ export function validate(P) {
       if (t.group) add('warn', 'link-group', `"${label(e)}" is linked to "${t.name}", which is a group.`, loc);
       if (fold(t.name) === fold(text)) add('warn', 'is-theme-name', `"${text}" is the name of the theme it is in ("${t.name}").`, loc);
     }
-    for (const [tid, v] of Object.entries(e.th)) if (!Number.isInteger(v) || v < 0 || v > 5) add('error', 'bad-rating', `"${label(e)}" has a typicality of ${JSON.stringify(v)} in ${tid}; it must be 0 to 5.`, loc);
+    for (const [tid, v] of Object.entries(e.typ)) if (!Number.isInteger(v) || v < 0 || v > 5) add('error', 'bad-rating', `"${label(e)}" has a typicality of ${JSON.stringify(v)} in ${tid}; it must be 0 to 5.`, loc);
     for (const [tid, txt] of Object.entries(e.show || {})) if (!ids.includes(tid) || !String(txt).trim()) add('warn', 'show-theme', `"${label(e)}" has a display text for ${tid}, which it is not in (or the text is empty).`, loc);
     for (const [tid, aid] of Object.entries(e.use || {})) {
       const a = ix.entry.get(aid);
       if (!ids.includes(tid)) add('warn', 'use-theme', `"${label(e)}" names a display form for ${tid}, which it is not in.`, loc);
       if (!a || a.aliasOf !== e.id || a.aliasKind !== 'form') add('warn', 'use-form', `"${label(e)}" shows entry ${aid} in ${tid}, which is not one of its forms.`, loc);
     }
-    if (!e.rec && e.enabled) add('info', 'unrated', `"${label(e)}" has no familiarity rating.`, loc);
+    if (!e.fam && e.enabled) add('info', 'unrated', `"${label(e)}" has no familiarity rating.`, loc);
 
-    if (freqLoaded() && P.lang === 'en' && e.type === 'common' && e.rec && !e.aliasOf) {
+    if (freqLoaded() && P.lang === 'en' && e.type === 'common' && e.fam && !e.aliasOf) {
       const z = zipf(text);
       // Frequency in text undersells concrete everyday nouns (igloo, tuba, feta sit near Zipf 2.7), so only very rare words are a warning.
-      if (e.rec <= 2 && z != null && z < 2.3) add('warn', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (easy) but is rare in text (Zipf ${z.toFixed(1)}). Check the familiarity.`, loc);
-      else if (e.rec <= 2 && z != null && z < 3) add('info', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (easy) and is fairly rare in text (Zipf ${z.toFixed(1)}).`, loc);
-      if (e.rec <= 2 && z === null) add('warn', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (easy) but is not in the frequency list.`, loc);
-      if (e.rec >= 4 && z != null && z > 5) add('info', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.rec} (hard) but is very common in text (Zipf ${z.toFixed(1)}).`, loc);
+      if (e.fam <= 2 && z != null && z < 2.3) add('warn', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.fam} (easy) but is rare in text (Zipf ${z.toFixed(1)}). Check the familiarity.`, loc);
+      else if (e.fam <= 2 && z != null && z < 3) add('info', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.fam} (easy) and is fairly rare in text (Zipf ${z.toFixed(1)}).`, loc);
+      if (e.fam <= 2 && z === null) add('warn', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.fam} (easy) but is not in the frequency list.`, loc);
+      if (e.fam >= 4 && z != null && z > 5) add('info', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.fam} (hard) but is very common in text (Zipf ${z.toFixed(1)}).`, loc);
     }
   }
   return out;

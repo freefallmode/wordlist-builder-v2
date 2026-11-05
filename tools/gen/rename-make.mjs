@@ -10,7 +10,7 @@ const SIZE = 260, chunks = []; for (let i = 0; i < list.length; i += SIZE) chunk
 const n = +process.argv[2]; if (!n) { console.log(chunks.length, 'chunks;', list.length, 'themes'); process.exit(); }
 for (const t of chunks[n - 1]) {
   const path = []; for (let x = t; x; x = x.parent && P.ix.theme.get(x.parent)) path.unshift(x.name);
-  const es = (P.ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf).sort((a, b) => (a.th[t.id] || 9) - (b.th[t.id] || 9) || (a.rec || 9) - (b.rec || 9));
+  const es = (P.ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf).sort((a, b) => (a.typ[t.id] || 9) - (b.typ[t.id] || 9) || (a.fam || 9) - (b.fam || 9));
   const flags = ['complete', 'adult', 'sensitive', 'tm', 'lang'].filter(k => t[k]).join(',');
   console.log(`${t.id} | ${path.join(' > ')} | ${es.length} words${flags ? ' | ' + flags : ''}${t.note ? ' | note: ' + t.note : ''}\n   ${es.slice(0, 7).map(e => e.text).join(', ')}`);
 }

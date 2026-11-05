@@ -5,7 +5,7 @@ import { linkIds, flagKey } from './model.js';
 import { editEntry } from './dialogs.js';
 
 const PAGE = 200;
-const S = { q: '', in: 'wordalias', mode: 'contains', flag: '', rec: '', status: '', show: '', sort: 'text', dir: 1, page: 0 };
+const S = { q: '', in: 'wordalias', mode: 'contains', flag: '', fam: '', status: '', show: '', sort: 'text', dir: 1, page: 0 };
 
 const SCOPE = [['wordalias', 'search word or alias'], ['word', 'search the word'], ['alias', 'search the alias'], ['meaning', 'search the meaning'], ['theme', 'search the themes'], ['any', 'search everything']];
 const MODES = [['contains', 'contains'], ['starts', 'starts with'], ['exact', 'exactly']];
@@ -15,7 +15,7 @@ const STATUS = [['', 'any status'], ['new', 'new (by hand)'], ['gen', 'generated
 
 // Column widths: every column but "themes" has a width (the default below, or one set by dragging the edge of its heading; double-click fits it to its text,
 // shift + double-click goes back to the default). "themes" takes the space that is left, so the table fits the screen and only that column loses text. Widths are kept in the browser.
-const COLS = { on: 28, text: 150, gloss: 130, aliases: 170, aliasof: 130, themes: 0, pos: 82, type: 76, rec: 76, flags: 0, status: 80 };
+const COLS = { on: 28, text: 150, gloss: 130, aliases: 170, aliasof: 130, themes: 0, pos: 82, type: 76, fam: 76, flags: 0, status: 80 };
 const MIN_THEMES = 12;
 let FLAGS_W = 54, W = {};
 try { W = JSON.parse(localStorage.getItem('awCols') || '{}') || {}; } catch { W = {}; }
@@ -60,14 +60,14 @@ function matches(P, e, aliasesOf) {
     if (!(S.in === 'word' ? inWord() : S.in === 'alias' ? inAlias() : S.in === 'wordalias' ? inWord() || inAlias() : S.in === 'meaning' ? inMeaning() : S.in === 'theme' ? inTheme() : inWord() || inAlias() || inMeaning() || inTheme())) return false;
   }
   if (S.flag === 'region' ? !e.region.length : S.flag === 'none' ? (flagList(e).length || e.region.length) : S.flag && !e[S.flag]) return false;
-  if (S.rec !== '' && e.rec !== +S.rec) return false;
+  if (S.fam !== '' && e.fam !== +S.fam) return false;
   if (S.status && e.status !== S.status) return false;
   switch (S.show) {
     case 'on': return e.enabled;
     case 'off': return !e.enabled;
     case 'roots': return !e.aliasOf;
     case 'alias': return !!e.aliasOf;
-    case 'orphan': return !e.aliasOf && !Object.keys(e.th).length;
+    case 'orphan': return !e.aliasOf && !Object.keys(e.typ).length;
   }
   return true;
 }
@@ -79,7 +79,7 @@ export function allWordsView() {
   for (const a of P.entries) if (a.aliasOf) { if (!aliasesOf.has(a.aliasOf)) aliasesOf.set(a.aliasOf, []); aliasesOf.get(a.aliasOf).push(a); }
   const keys = {
     text: e => e.text.toLowerCase(), gloss: e => (e.gloss || '').toLowerCase(), pos: e => e.pos, type: e => e.type,
-    rec: e => e.rec || 9, status: e => e.status, flags: flagKey, alias: e => (rootOf(e)?.text || '￿').toLowerCase(),
+    fam: e => e.fam || 9, status: e => e.status, flags: flagKey, alias: e => (rootOf(e)?.text || '￿').toLowerCase(),
     themes: e => linkIds(P, e).length, aliases: e => (aliasesOf.get(e.id)?.[0]?.text || '￿').toLowerCase(),
   };
   const key = keys[S.sort] || keys.text;
@@ -93,7 +93,7 @@ export function allWordsView() {
   const th = (label, k, col) => colGrip(col, h('th.sortable', { class: S.sort === k ? 'sorted' : '', title: 'Click to sort by ' + label,
     onclick: () => { S.dir = S.sort === k ? -S.dir : 1; S.sort = k; S.page = 0; A.render(); } }, label, h('span.sortmark', S.sort === k ? (S.dir > 0 ? ' ▲' : ' ▼') : ' ⇅')));
   const pick = (k, opts) => { const el = select(opts, S[k]); el.onchange = () => { S[k] = el.value; S.page = 0; A.render(); }; return el; };
-  const recOpts = [['', 'any familiarity'], ...[1, 2, 3, 4, 5].map(n => [String(n), 'familiarity ' + n]), ['0', 'unrated']];
+  const familiarityOpts = [['', 'any familiarity'], ...[1, 2, 3, 4, 5].map(n => [String(n), 'familiarity ' + n]), ['0', 'unrated']];
   const flagBadges = e => flagList(e).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase()))
     .concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
   const aliasCell = e => { const as = aliasesOf.get(e.id) || []; return as.length ? h('span', { title: as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ')' : '')).join(', ') }, as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ' alias)' : '')).join(', ')) : ''; };
@@ -109,15 +109,15 @@ export function allWordsView() {
       h('div.actions', {}, h('button', { onclick: () => { A.view = null; A.render(); } }, '← Overview'))),
     h('div.tools.wrap', {},
       h('input.filter', { placeholder: 'filter…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
-      pick('in', SCOPE), pick('mode', MODES), pick('show', SHOW), pick('flag', FLAGS), pick('rec', recOpts), pick('status', STATUS)),
+      pick('in', SCOPE), pick('mode', MODES), pick('show', SHOW), pick('flag', FLAGS), pick('fam', familiarityOpts), pick('status', STATUS)),
     pager(),
-    h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('word', 'text', 'text'), th('meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('familiarity', 'rec', 'rec'),
+    h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('word', 'text', 'text'), th('meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('familiarity', 'fam', 'fam'),
       th('flags', 'flags', 'flags'), th('status', 'status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.text),
         h('td.dim', e.gloss || ''), h('td.dim', aliasCell(e)), h('td.dim', rootOf(e) ? `${rootOf(e).text}${e.aliasKind ? ' (' + e.aliasKind + ' alias)' : ''}` : ''),
-        h('td.dim', themesCell(e)), h('td.dim', e.pos), h('td.dim', e.type), h('td', e.rec || h('span.hint', '?')),
+        h('td.dim', themesCell(e)), h('td.dim', e.pos), h('td.dim', e.type), h('td', e.fam || h('span.hint', '?')),
         h('td', flagBadges(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·')))) :
         h('tr', h('td', { colspan: 11, class: 'hint' }, 'No words match.')))),
     list.length > 40 && pager(),

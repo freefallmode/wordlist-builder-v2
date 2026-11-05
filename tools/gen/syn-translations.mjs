@@ -13,8 +13,8 @@ let n = 0;
 for (const [aid, rid] of Object.entries(PAIRS)) {
   const e = P.ix.entry.get(+aid), r = P.ix.entry.get(rid);
   if (!e || !r || e.aliasOf) { console.log('skip', aid, rid); continue; }
-  for (const [t, p] of Object.entries(e.th)) if (r.th[t] === undefined) r.th[t] = p;
-  e.th = {}; e.use = {}; e.show = {}; e.aliasOf = r.id; e.aliasKind = 'translation'; n++;
+  for (const [t, p] of Object.entries(e.typ)) if (r.typ[t] === undefined) r.typ[t] = p;
+  e.typ = {}; e.use = {}; e.show = {}; e.aliasOf = r.id; e.aliasKind = 'translation'; n++;
 }
 const gone = new Set(Object.keys(PAIRS).map(Number));
 for (const t of P.themes) if (t.groups) { t.groups = t.groups.map(g => g.filter(id => !gone.has(id))).filter(g => g.length > 1); if (!t.groups.length) delete t.groups; }

@@ -2,24 +2,24 @@
 // Run: node tools/gen/ease-apply.mjs [--apply] [--report file.md]   (without --apply nothing is saved)
 import fs from 'node:fs';
 import { parseProject, serializeProject, stampSave } from '../../js/store.js';
-import { reindex, effRec } from '../../js/model.js';
+import { reindex, difficultyBand } from '../../js/model.js';
 const here = p => new URL(p, import.meta.url);
 const LIB = here('../../data/wordlist-en.project.json'), APPLY = process.argv.includes('--apply');
 const REPORT = process.argv.includes('--report') ? process.argv[process.argv.indexOf('--report') + 1] : '';
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const stat = { R: 0, I: 0, RI: 0, bad: 0, noop: 0 }, rows = [], problems = [], byTheme = {};
 const before = new Map(P.themes.map(t => [t.id, 0]));
-const d1 = tid => new Set((P.ix.byTheme.get(tid) || []).filter(e => e.enabled).map(e => e.aliasOf || e.id)).size && [...new Set((P.ix.byTheme.get(tid) || []).filter(e => e.enabled).map(e => e.aliasOf || e.id))].filter(id => effRec(P, P.ix.entry.get(id), tid) === 1).length;
+const d1 = tid => new Set((P.ix.byTheme.get(tid) || []).filter(e => e.enabled).map(e => e.aliasOf || e.id)).size && [...new Set((P.ix.byTheme.get(tid) || []).filter(e => e.enabled).map(e => e.aliasOf || e.id))].filter(id => difficultyBand(P, P.ix.entry.get(id), tid) === 1).length;
 for (const t of P.themes) before.set(t.id, d1(t.id));
 for (const f of fs.readdirSync(here('./ease/')).filter(f => /^e-\d+\.txt$/.test(f))) for (const l of fs.readFileSync(here('./ease/' + f), 'utf8').split(/\r?\n/)) {
   if (!l.trim() || l.startsWith('#')) continue;
   const m = /^(\d+)\s+(\S+)\s+(RI|R|I)\b/.exec(l.trim()), e = m && P.ix.entry.get(+m[1]), t = m && P.ix.theme.get(m[2]);
-  if (!e || !t || e.aliasOf || e.th[t.id] === undefined) { stat.bad++; problems.push(`${f}: cannot use "${l.slice(0, 80)}"`); continue; }
-  const was = effRec(P, e, t.id), r0 = e.rec, i0 = e.th[t.id];
-  if (m[3].includes('R') && e.rec > 1) e.rec = 1;
-  if (m[3].includes('I') && e.th[t.id] > 1) e.th[t.id] = 1;
-  if (e.rec === r0 && e.th[t.id] === i0) { stat.noop++; continue; }
-  stat[m[3]]++; rows.push({ t, e, from: was, r0, i0, r1: e.rec, i1: e.th[t.id] }); (byTheme[t.name] ||= []).push(e.text);
+  if (!e || !t || e.aliasOf || e.typ[t.id] === undefined) { stat.bad++; problems.push(`${f}: cannot use "${l.slice(0, 80)}"`); continue; }
+  const was = difficultyBand(P, e, t.id), r0 = e.fam, i0 = e.typ[t.id];
+  if (m[3].includes('R') && e.fam > 1) e.fam = 1;
+  if (m[3].includes('I') && e.typ[t.id] > 1) e.typ[t.id] = 1;
+  if (e.fam === r0 && e.typ[t.id] === i0) { stat.noop++; continue; }
+  stat[m[3]]++; rows.push({ t, e, from: was, r0, i0, r1: e.fam, i1: e.typ[t.id] }); (byTheme[t.name] ||= []).push(e.text);
 }
 reindex(P);
 const after = P.themes.filter(t => !t.group && t.enabled !== false && t.pop === 1).map(t => d1(t.id));

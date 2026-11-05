@@ -20,6 +20,6 @@ for (const f of fs.readdirSync(dir).filter(f => /^r-\d+\.txt$/.test(f))) for (co
     out.push({ tid: cur.id, e, bare, same }); n++;
   }
 }
-const lab = x => `${x.id}${x.gloss ? ' (' + x.gloss + ')' : ''} ${x.pos || ''} r${x.rec} in ${Object.keys(x.th).length}${x.th[cur?.id] !== undefined ? '' : ''}`;
-for (const o of out) console.log(`${o.tid}\t${o.e.id} ${o.e.text}\t=> "${o.bare}"\t${o.same.length ? o.same.map(x => lab(x) + (x.th[o.tid] !== undefined ? ' INTHEME' : '')).join('; ') : 'none exist'}`);
+const lab = x => `${x.id}${x.gloss ? ' (' + x.gloss + ')' : ''} ${x.pos || ''} r${x.fam} in ${Object.keys(x.typ).length}${x.typ[cur?.id] !== undefined ? '' : ''}`;
+for (const o of out) console.log(`${o.tid}\t${o.e.id} ${o.e.text}\t=> "${o.bare}"\t${o.same.length ? o.same.map(x => lab(x) + (x.typ[o.tid] !== undefined ? ' INTHEME' : '')).join('; ') : 'none exist'}`);
 console.error(n, 'dropped roots;', out.filter(o => o.same.length).length, 'with an existing bare entry;', out.filter(o => !o.same.length).length, 'none');

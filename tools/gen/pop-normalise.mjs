@@ -8,7 +8,7 @@ const LIB = new URL('../../data/wordlist-en.project.json', import.meta.url);
 const P = parseProject(readFileSync(LIB, 'utf8')); reindex(P);
 const SHARE = [0.10, 0.25, 0.35, 0.20, 0.10];
 const sum = new Map(), cnt = new Map();
-for (const e of P.entries) if (!e.aliasOf) for (const [t, v] of Object.entries(e.th)) { sum.set(t, (sum.get(t) || 0) + v); cnt.set(t, (cnt.get(t) || 0) + 1); }
+for (const e of P.entries) if (!e.aliasOf) for (const [t, v] of Object.entries(e.typ)) { sum.set(t, (sum.get(t) || 0) + v); cnt.set(t, (cnt.get(t) || 0) + 1); }
 const rated = P.themes.filter(t => !t.group && t.pop);
 const key = t => t.pop + (cnt.get(t.id) ? sum.get(t.id) / cnt.get(t.id) / 10 : 0.25);   // mean word popularity (1..5) / 10 never crosses a whole rating step
 rated.sort((a, b) => key(a) - key(b));

@@ -6,7 +6,7 @@ import { parseProject } from '../../js/store.js';
 import { reindex } from '../../js/model.js';
 const P = parseProject(fs.readFileSync(new URL('../../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
 const SIZE = 60, rootOf = t => { let x = t; while (x.parent) x = P.ix.theme.get(x.parent); return x.id; };
-const words = new Map(); for (const e of P.entries) for (const t of Object.keys(e.th)) (words.get(t) || words.set(t, []).get(t)).push(e.text + (e.gloss ? ` (${e.gloss})` : ''));
+const words = new Map(); for (const e of P.entries) for (const t of Object.keys(e.typ)) (words.get(t) || words.set(t, []).get(t)).push(e.text + (e.gloss ? ` (${e.gloss})` : ''));
 const of = r => P.themes.filter(t => !t.group && rootOf(t) === r);
 const [root, n] = process.argv.slice(2);
 if (!root) { for (const r of P.ix.kids.get('')) console.log(r.id.padEnd(22), Math.ceil(of(r.id).length / SIZE), 'chunks'); process.exit(); }

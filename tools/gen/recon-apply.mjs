@@ -15,7 +15,7 @@ const fwd = new Map(); const dest = id => { while (fwd.has(id)) id = fwd.get(id)
 for (const o of ops) if (o.merge !== undefined) {
   const s = E(dest(o.id)), t = E(dest(o.merge));
   if (!s || !t || s === t) { skipped++; continue; }
-  for (const [th, v] of Object.entries(s.th)) if (t.th[th] === undefined) t.th[th] = v;
+  for (const [th, v] of Object.entries(s.typ)) if (t.typ[th] === undefined) t.typ[th] = v;
   for (const a of P.entries) if (a.aliasOf === s.id) a.aliasOf = t.id;
   t.adult ||= s.adult; t.sensitive ||= s.sensitive; t.tm ||= s.tm; t.vulgar ||= s.vulgar;
   fwd.set(s.id, t.id); P.entries = P.entries.filter(x => x !== s); reindex(P); m++;

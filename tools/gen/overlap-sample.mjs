@@ -2,7 +2,7 @@
 // Run: node tools/gen/overlap-sample.mjs [count=300] [chunks=2]   -> tools/gen/overlap/sample-N.txt (a fixed random seed, so the sample is repeatable)
 import fs from 'node:fs';
 import { parseProject } from '../../js/store.js';
-import { reindex, eff, popIn } from '../../js/model.js';
+import { reindex, eff, typicality } from '../../js/model.js';
 const here = p => new URL(p, import.meta.url);
 const P = parseProject(fs.readFileSync(here('../../data/wordlist-en.project.json'), 'utf8')); reindex(P);
 const ALL = process.argv[2] === 'all', N = ALL ? Infinity : +process.argv[2] || 300, C = +process.argv[3] || 2, DIR = process.argv[4] || 'overlap', PFX = ALL ? 'list' : 'sample';   // all: every pair in theme order (a full pass), chunked: node tools/gen/overlap-sample.mjs all 19 overlap3
@@ -21,7 +21,7 @@ for (const t of P.themes) {
 let seed = 20261105; const rnd = () => (seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296;
 if (!ALL) for (let i = pairs.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [pairs[i], pairs[j]] = [pairs[j], pairs[i]]; }
 const pick = pairs.slice(0, N);
-const d = (t, e) => `${e.id} "${e.show?.[t.id] || e.text}"${e.show?.[t.id] ? ' (full: ' + e.text + ')' : ''}${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos} ${e.type} rec ${e.rec} link ${popIn(P, e, t.id) || '-'}`;
+const d = (t, e) => `${e.id} "${e.show?.[t.id] || e.text}"${e.show?.[t.id] ? ' (full: ' + e.text + ')' : ''}${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos} ${e.type} rec ${e.fam} link ${typicality(P, e, t.id) || '-'}`;
 fs.mkdirSync(here('./' + DIR + '/'), { recursive: true });
 const per = Math.ceil(pick.length / C);
 for (let c = 0; c < C; c++) fs.writeFileSync(here(`./${DIR}/${PFX}-${c + 1}.txt`), pick.slice(c * per, (c + 1) * per).map(({ t, a, b }, i) => `${c * per + i + 1} | theme ${t.id} "${t.name}"${t.note ? ' (note: ' + t.note.slice(0, 120) + ')' : ''}\n   SHORT ${d(t, a)}\n   LONG  ${d(t, b)}`).join('\n') + '\n');

@@ -11,7 +11,7 @@ const groups = [];
 for (const [k, es] of by) {
   if (es.length < 2 || !es.some(e => !e.gloss)) continue;
   groups.push({ text: k, entries: es.map(e => { const ids = linkIds(P, e);
-    return { id: e.id, text: e.text, gloss: e.gloss || '', type: e.type, rec: e.rec, aliasOf: e.aliasOf ? P.ix.entry.get(e.aliasOf)?.text + (P.ix.entry.get(e.aliasOf)?.gloss ? ` (${P.ix.entry.get(e.aliasOf).gloss})` : '') : undefined,
+    return { id: e.id, text: e.text, gloss: e.gloss || '', type: e.type, fam: e.fam, aliasOf: e.aliasOf ? P.ix.entry.get(e.aliasOf)?.text + (P.ix.entry.get(e.aliasOf)?.gloss ? ` (${P.ix.entry.get(e.aliasOf).gloss})` : '') : undefined,
       themes: ids.slice(0, 7).map(t => `${T(t).name} [${T(t).id}]`), more: ids.length > 7 ? ids.length - 7 : undefined }; }) });
 }
 groups.sort((a, b) => a.text.localeCompare(b.text));

@@ -5,7 +5,7 @@
 //   --everything every enabled theme, rated or not (a blind second pass; use a new --dir)
 import fs from 'node:fs';
 import { parseProject } from '../../js/store.js';
-import { reindex, popIn } from '../../js/model.js';
+import { reindex, typicality } from '../../js/model.js';
 const here = p => new URL(p, import.meta.url);
 const P = parseProject(fs.readFileSync(here('../../data/wordlist-en.project.json'), 'utf8')); reindex(P);
 const arg = k => (process.argv.find(a => a.startsWith('--' + k + '=')) || '').split('=')[1];
@@ -19,7 +19,7 @@ for (const t of P.themes) {
     if (t.ident) continue;
   }
   const mine = (P.ix.byTheme.get(t.id) || []).filter(e => e.enabled && !e.aliasOf);
-  const ws = mine.map(e => ({ s: e.show?.[t.id] || e.text, p: popIn(P, e, t.id) || 3 })).sort((a, b) => a.p - b.p || a.s.length - b.s.length);
+  const ws = mine.map(e => ({ s: e.show?.[t.id] || e.text, p: typicality(P, e, t.id) || 3 })).sort((a, b) => a.p - b.p || a.s.length - b.s.length);
   items.push({ t, k, n: mine.length, sample: ws.slice(0, 8).map(w => w.s) });
 }
 fs.mkdirSync(here(`./${DIR}/`), { recursive: true });

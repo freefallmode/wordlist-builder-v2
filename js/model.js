@@ -1,12 +1,12 @@
 // Data model. Pure functions over a plain project object, so they can be tested in Node.
 //
 // Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, lang, region[], note }
-// Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, rec, adult, sensitive, tm, vulgar, region[],
-//         aliasOf, aliasKind, th{ themeId: popularity }, status, note }
+// Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, fam, adult, sensitive, tm, vulgar, region[],
+//         aliasOf, aliasKind, typ{ themeId: typicality }, status, note }
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
-//         between themes is the popularity in `th` (1 the first words anyone thinks of for the theme ... 5 real but peripheral). An alias (aliasOf = id of its root) takes its themes from the root.
-// `rec` is 1 to 5 (1 every child knows it ... 5 few people), 0 = not rated. A theme's `pop` is how good a pick the theme is (1 most popular ... 5 least), 0 = not rated.
-// A theme's `ident` is how easily the theme can be worked out from its members (1 obvious ... 5 obscure), 0 = not rated. A word's difficulty is the harder of `rec` and its link rating, and a theme's difficulty is worked out from `ident` and `pop`: both are computed at export and never stored. themeProfile() counts the words of a theme at each difficulty.
+//         between themes is the typicality in `typ` (1 the first words anyone thinks of for the theme ... 5 real but peripheral). An alias (aliasOf = id of its root) takes its themes from the root.
+// `fam` (familiarity) is 1 to 5 (1 every child knows it ... 5 few people), 0 = not rated. A theme's `pop` is how good a pick the theme is (1 most popular ... 5 least), 0 = not rated.
+// A theme's `ident` is how easily the theme can be worked out from its members (1 obvious ... 5 obscure), 0 = not rated. A word's difficulty is the harder of `fam` and its link rating, and a theme's difficulty is worked out from `ident` and `pop`: both are computed at export and never stored. themeProfile() counts the words of a theme at each difficulty.
 import { childrenOf } from './outline.js';
 
 export const POS = ['noun', 'verb', 'adjective', 'adverb', 'other'];
@@ -15,8 +15,8 @@ export const TYPES = ['common', 'person', 'place', 'org', 'title', 'proper', 'ac
 export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named person or character', place: 'a named place', org: 'company, brand, team, group',
   title: 'book, film, song, game, artwork', proper: 'other proper name (event, era, deity)', acronym: 'letters said as letters or a word (NASA, UFO)', phrase: 'idiom or set phrase' };
 export const REGIONS = ['US', 'CA', 'UK', 'IE', 'AU', 'NZ', 'ZA', 'IN', 'TR'];
-export const REC_HELP = ['not rated', '1 every child knows it', '2 nearly every adult', '3 many adults, not all', '4 interest, job or region', '5 few people'];
-export const POP_HELP = ['not rated', '1 the first words anyone thinks of', '2 typical', '3 ordinary member', '4 less typical', '5 real but peripheral'];
+export const FAMILIARITY_HELP = ['not rated', '1 every child knows it', '2 nearly every adult', '3 many adults, not all', '4 interest, job or region', '5 few people'];
+export const TYPICALITY_HELP = ['not rated', '1 the first words anyone thinks of', '2 typical', '3 ordinary member', '4 less typical', '5 real but peripheral'];
 export const IDENT_HELP = ['not rated', '1 obvious: four members and the theme is clear', '2 clear', '3 needs a moment', '4 hard: broad, or the link is a trick', '5 obscure: hard to guess even with all four'];
 export const ALIAS_KINDS = ['', 'synonym', 'spelling', 'form', 'regional', 'abbreviation', 'translation'];   // spelling and form (skis for ski, rainy for rain) are the same word, so they take the root's popularity; a synonym is rated on its own. regional (bonnet for hood), abbreviation (PC for personal computer) and translation (Danmark for Denmark: the same thing named in another language) are the same thing under another name: they follow the root's themes and are rated on their own. Synonyms are to become theme-level groups (DESIGN-entries.md)
 export const STATUS = ['new', 'gen', 'rev'];
@@ -29,8 +29,8 @@ export function newProject() {
 }
 
 export function entryDefaults() {
-  return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, rec: 0, adult: false, sensitive: false, tm: false, vulgar: false,
-    region: [], aliasOf: 0, aliasKind: '', th: {}, status: 'new', note: '', nameOkIn: [], use: {}, show: {} };   // nameOkIn: themes where the full text is the real name and may contain the theme's words (dried apple in dried fruits); use: { themeId: id of a form alias to show instead of the root in that theme }; show: { themeId: text } the theme shows this shorter text for the entry (rock for rock garden)
+  return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, fam: 0, adult: false, sensitive: false, tm: false, vulgar: false,
+    region: [], aliasOf: 0, aliasKind: '', typ: {}, status: 'new', note: '', nameOkIn: [], use: {}, show: {} };   // nameOkIn: themes where the full text is the real name and may contain the theme's words (dried apple in dried fruits); use: { themeId: id of a form alias to show instead of the root in that theme }; show: { themeId: text } the theme shows this shorter text for the entry (rock for rock garden)
 }
 
 export function addEntry(P, text, over = {}) {
@@ -62,31 +62,31 @@ export const rootOf = (P, e) => (e.aliasOf && P.ix.entry.get(e.aliasOf)) || e;
 
 // Theme ids an entry belongs to: its own links, plus its root's when it is an alias.
 export function linkIds(P, e) {
-  if (!e.aliasOf) return Object.keys(e.th);
+  if (!e.aliasOf) return Object.keys(e.typ);
   const r = P.ix.entry.get(e.aliasOf);
-  return r ? [...new Set([...Object.keys(r.th), ...Object.keys(e.th)])] : Object.keys(e.th);
+  return r ? [...new Set([...Object.keys(r.typ), ...Object.keys(e.typ)])] : Object.keys(e.typ);
 }
 
-// Typicality of an entry in a theme (how readily it comes to mind for the theme): its own `th` value, else its root's (spellings and forms never have their own).
-export function popIn(P, e, tid) {
-  if (e.th[tid]) return e.th[tid];
+// Typicality of an entry in a theme (how readily it comes to mind for the theme): its own `typ` value, else its root's (spellings and forms never have their own).
+export function typicality(P, e, tid) {
+  if (e.typ[tid]) return e.typ[tid];
   const r = e.aliasOf && P.ix.entry.get(e.aliasOf);
-  return r ? r.th[tid] || 0 : 0;
+  return r ? r.typ[tid] || 0 : 0;
 }
 
 // How hard an entry is in a theme: the harder of its familiarity (how well known the word is) and its typicality (how peripheral it is to the theme)
 // (a word few people know is hard however typical it is; a famous word that is a stretch for the theme is hard too).
-export function effRec(P, e, tid) { return Math.max(popIn(P, e, tid), e.rec || 0); }
+export function difficultyBand(P, e, tid) { return Math.max(typicality(P, e, tid), e.fam || 0); }
 
 // The difficulty the game receives, as a decimal from 1.0 to 5.0 (0 = unrated): 0.7 of the harder of the two ratings plus 0.3 of the easier, rounded to one decimal.
-// A word hard on both ratings scores higher than one hard on only one. If only one rating is set, that one is the value. effRec above is the whole-number band used for counting and filtering.
+// A word hard on both ratings scores higher than one hard on only one. If only one rating is set, that one is the value. difficultyBand above is the whole-number band used for counting and filtering.
 const round1 = x => Math.round(x * 10) / 10;
 export const DIFF_WEIGHT = 0.7;
 export const blendRatings = (a, b) => {
   const hi = Math.max(a || 0, b || 0), lo = Math.min(a || 0, b || 0);
   return !hi ? 0 : !lo ? hi : round1(DIFF_WEIGHT * hi + (1 - DIFF_WEIGHT) * lo);
 };
-export const wordDifficulty = (P, e, tid) => blendRatings(e.rec, popIn(P, e, tid));
+export const wordDifficulty = (P, e, tid) => blendRatings(e.fam, typicality(P, e, tid));
 // A theme's difficulty: its identifiability, moved up or down by popularity (1 most popular ... 5 least) by at most 1: ident + 0.5 x (pop - 3), kept between 1 and 5, one decimal.
 // 0 when identifiability is unrated; identifiability alone when popularity is.
 export const themeDifficulty = t => !t.ident ? 0 : !t.pop ? t.ident : round1(Math.min(5, Math.max(1, t.ident + 0.5 * (t.pop - 3))));
@@ -124,7 +124,7 @@ export function themeStats(P, tid) {
   const roots = new Set(list.map(e => e.aliasOf || e.id));
   const bands = [0, 0, 0, 0, 0, 0], rootBands = [0, 0, 0, 0, 0, 0], seen = new Set();
   for (const e of list) {
-    const b = effRec(P, e, tid);
+    const b = difficultyBand(P, e, tid);
     bands[b]++;
     const r = e.aliasOf || e.id;
     if (!seen.has(r + ':' + b)) { seen.add(r + ':' + b); rootBands[b]++; }
@@ -137,10 +137,10 @@ export function themeStats(P, tid) {
 export function themeProfile(P, tid) {
   const list = (P.ix.byTheme.get(tid) || []).filter(usable), counts = [0, 0, 0, 0, 0, 0], seen = new Set(), roots = new Map();
   for (const e of list) {
-    const b = effRec(P, e, tid) || 5, r = e.aliasOf || e.id;
+    const b = difficultyBand(P, e, tid) || 5, r = e.aliasOf || e.id;
     if (!seen.has(r + ':' + b)) { seen.add(r + ':' + b); counts[b]++; }
     const rr = P.ix.entry.get(r);
-    if (!e.aliasOf || !roots.has(r)) roots.set(r, effRec(P, e.aliasOf && rr ? rr : e, tid) || 5);
+    if (!e.aliasOf || !roots.has(r)) roots.set(r, difficultyBand(P, e.aliasOf && rr ? rr : e, tid) || 5);
   }
   const sorted = [...roots.values()].sort((a, b) => a - b), n = sorted.length, median = n ? sorted[n >> 1] : 0;
   return { counts, reach: n, median, lo: n >= 4 ? sorted[3] : 0, hi: n >= 4 ? sorted[n - 4] : 0 };
@@ -160,15 +160,15 @@ export function dialectMember(P, e) {
 
 // ---------- edits ----------
 
-export function linkEntry(P, e, tid, rec = 0) { e.th[tid] = rec; }
-export function unlinkEntry(P, e, tid) { delete e.th[tid]; }
+export function linkEntry(P, e, tid, typ = 0) { e.typ[tid] = typ; }
+export function unlinkEntry(P, e, tid) { delete e.typ[tid]; }
 
 export function deleteEntry(P, e) {
   const als = P.entries.filter(a => a.aliasOf === e.id);
   if (als.length) {
     // The first alias becomes the root; it keeps what it was getting from the old root.
     const [first, ...rest] = als;
-    for (const [tid, v] of Object.entries(e.th)) if (!(tid in first.th)) first.th[tid] = effRec(P, first, tid);
+    for (const [tid, v] of Object.entries(e.typ)) if (!(tid in first.typ)) first.typ[tid] = difficultyBand(P, first, tid);
     first.aliasOf = 0; first.aliasKind = '';
     for (const a of rest) a.aliasOf = first.id;
   }
@@ -179,7 +179,7 @@ export function deleteTheme(P, tid) {
   const t = P.ix.theme.get(tid);
   if (!t) return;
   for (const k of P.themes) if (k.parent === tid) k.parent = t.parent;
-  for (const e of P.entries) delete e.th[tid];
+  for (const e of P.entries) delete e.typ[tid];
   P.themes = P.themes.filter(x => x !== t);
 }
 

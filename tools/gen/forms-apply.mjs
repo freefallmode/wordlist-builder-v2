@@ -11,9 +11,9 @@ const SWAP = [722,1160,1297,1379,1781,2263,2326,2431,2524,3133,3167,3383,4735,63
 const FAMILY = [[1965,2022],[1969,2023],[1970,2021],[1971,2025],[1974,2024],[40,14745],[14740,14748],[14741,14773],[25279,25293],[1979,31246],[2014,31247],[25303,25318],[12529,22799]];
 const move = (A, B, kind) => {   // B becomes the root, A its alias
   for (const x of P.entries) if (x.aliasOf === A.id && x !== B) x.aliasOf = B.id;
-  for (const [t, v] of Object.entries(A.th)) B.th[t] = B.th[t] === undefined ? v : Math.min(B.th[t], v);
+  for (const [t, v] of Object.entries(A.typ)) B.typ[t] = B.typ[t] === undefined ? v : Math.min(B.typ[t], v);
   B.aliasOf = null; delete B.aliasKind;
-  A.aliasOf = B.id; A.aliasKind = kind; A.th = {};
+  A.aliasOf = B.id; A.aliasKind = kind; A.typ = {};
 };
 let ns = 0, nf = 0, skip = [];
 for (const id of SWAP) {
@@ -27,5 +27,5 @@ for (const [r, a] of FAMILY) {
   move(A, R, 'form'); nf++;
 }
 console.log(ns, 'swaps,', nf, 'forms merged; skipped', skip.join(' ') || 'none');
-for (const id of [722, 1965, 1974, 36996]) { const e = P.ix.entry.get(id); console.log(id, e.text, e.aliasOf ? 'alias of ' + e.aliasOf : 'root', Object.keys(e.th).length + ' themes'); }
+for (const id of [722, 1965, 1974, 36996]) { const e = P.ix.entry.get(id); console.log(id, e.text, e.aliasOf ? 'alias of ' + e.aliasOf : 'root', Object.keys(e.typ).length + ' themes'); }
 if (process.argv[2] === '--apply') { reindex(P); stampSave(P); writeFileSync(LIB, serializeProject(P)); console.log('applied, v' + P.lib.version); }

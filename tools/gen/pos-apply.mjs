@@ -31,8 +31,8 @@ for (const f of args) {
   const rootsIn = id => (P.ix.byTheme.get(id) || []).filter(e => !e.aliasOf).length;
   // take e out of theme tid; `into` is the entry that stands in for it (F: becomes its alias when e has no other links)
   const leave = (e, t, into, asForm) => {
-    delete e.th[t.id];
-    if (Object.keys(e.th).length === 0) {
+    delete e.typ[t.id];
+    if (Object.keys(e.typ).length === 0) {
       for (const a of P.entries.filter(x => x.aliasOf === e.id)) { if (a !== into) a.aliasOf = into.id; }
       if (asForm) { e.aliasOf = into.id; e.aliasKind = 'form'; } else { deleteEntry(P, e); stat.deleted++; }
     }
@@ -51,14 +51,14 @@ for (const f of args) {
     const t = P.ix.theme.get(tid);
     if ((m = /^([PFSK]) (\d+)(.*)$/.exec(s))) {
       const op = m[1], e = P.ix.entry.get(+m[2]), rest = m[3].trim();
-      if (!e || e.aliasOf || e.th[tid] === undefined) { if (!handled.has(+m[2])) problems.push(`${f}: entry ${m[2]} is not a root in ${tid}`); continue; }
+      if (!e || e.aliasOf || e.typ[tid] === undefined) { if (!handled.has(+m[2])) problems.push(`${f}: entry ${m[2]} is not a root in ${tid}`); continue; }
       if (op === 'K') { handled.add(e.id); stat.K++; continue; }
       if (op === 'P') { const pos = rest; if (!POS.includes(pos)) { problems.push(`${f}: bad part of speech "${pos}"`); continue; } e.pos = pos; handled.add(e.id); stat.P++; continue; }
       let target, mm;
       if ((mm = /^= (\d+)$/.exec(rest))) {
         target = P.ix.entry.get(+mm[1]);
         if (!target || target.aliasOf || target === e) { problems.push(`${f}: ${mm[1]} is not a usable root entry`); continue; }
-        if (op === 'F' && target.th[tid] === undefined) { problems.push(`${f}: F ${e.id} = ${target.id}: the root is not in this theme (use S)`); continue; }
+        if (op === 'F' && target.typ[tid] === undefined) { problems.push(`${f}: F ${e.id} = ${target.id}: the root is not in this theme (use S)`); continue; }
       } else if (op === 'S' && (mm = /^\| ([^|]+) \| ([^|]*) \| ([1-5]) \| (\w+)$/.exec(rest))) {
         const text = mm[1].trim(), gloss = mm[2].trim() === '-' ? '' : mm[2].trim(), pos = mm[4];
         if (!POS.includes(pos)) { problems.push(`${f}: bad part of speech "${pos}"`); continue; }
@@ -66,12 +66,12 @@ for (const f of args) {
         target = same.find(x => !x.aliasOf && (x.gloss || '') === gloss);
         if (!target) {
           if (same.length && !gloss) { problems.push(`${f}: "${text}" exists; give the new entry a meaning label or use S ${e.id} = <id>`); continue; }
-          target = addEntry(P, text, { gloss, pos, type: e.type, rec: +mm[3], adult: e.adult, vulgar: e.vulgar, sensitive: e.sensitive, tm: e.tm, region: [...e.region], status: 'gen' });
+          target = addEntry(P, text, { gloss, pos, type: e.type, fam: +mm[3], adult: e.adult, vulgar: e.vulgar, sensitive: e.sensitive, tm: e.tm, region: [...e.region], status: 'gen' });
           reindex(P); stat.made++;
         }
       } else { problems.push(`${f}: cannot read "${s.slice(0, 60)}"`); continue; }
-      if (t.complete && target.th[tid] !== undefined) { problems.push(`${f}: ${tid} is complete and would lose "${e.text}" (merge into "${target.text}")`); continue; }
-      if (target.th[tid] === undefined) target.th[tid] = e.th[tid] || 3;
+      if (t.complete && target.typ[tid] !== undefined) { problems.push(`${f}: ${tid} is complete and would lose "${e.text}" (merge into "${target.text}")`); continue; }
+      if (target.typ[tid] === undefined) target.typ[tid] = e.typ[tid] || 3;
       handled.add(e.id); leave(e, t, target, op === 'F'); stat[op]++;
     } else problems.push(`${f}: cannot read "${s.slice(0, 60)}"`);
   }

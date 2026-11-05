@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, effRec, eff, deleteEntry, moveTheme, descendants, blendRatings, themeDifficulty } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, moveTheme, descendants, blendRatings, themeDifficulty } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
@@ -49,24 +49,24 @@ test('flags inherit down the tree', () => {
 
 test('aliases take the root themes and the harder rating', () => {
   const P = project();
-  const couch = addEntry(P, 'sofa', { rec: 1, th: { fruits: 1 } });
-  const settee = addEntry(P, 'settee', { rec: 3, aliasOf: couch.id, aliasKind: 'synonym' });
+  const couch = addEntry(P, 'sofa', { fam: 1, typ: { fruits: 1 } });
+  const settee = addEntry(P, 'settee', { fam: 3, aliasOf: couch.id, aliasKind: 'synonym' });
   reindex(P);
   assert.equal(themeStats(P, 'fruits').roots, 1);
   assert.equal(themeStats(P, 'fruits').entries, 2);
-  assert.equal(effRec(P, settee, 'fruits'), 3);
-  settee.th.fruits = 2;
-  assert.equal(effRec(P, settee, 'fruits'), 3);   // its own popularity (2) is easier than how well known it is (3)
+  assert.equal(difficultyBand(P, settee, 'fruits'), 3);
+  settee.typ.fruits = 2;
+  assert.equal(difficultyBand(P, settee, 'fruits'), 3);   // its own popularity (2) is easier than how well known it is (3)
   deleteEntry(P, couch); reindex(P);
   assert.equal(settee.aliasOf, 0);
-  assert.equal(effRec(P, settee, 'fruits'), 3);   // now a root: the harder of its theme rating (2) and its own rating (3)
+  assert.equal(difficultyBand(P, settee, 'fruits'), 3);   // now a root: the harder of its theme rating (2) and its own rating (3)
 });
 
 test('same text needs a gloss; duplicates are errors', () => {
   const P = project();
-  addEntry(P, 'bat', { th: { fruits: 1 }, gloss: 'animal' });
-  addEntry(P, 'bat', { th: { citrus: 1 } });
-  addEntry(P, 'bat', { th: { citrus: 1 } });
+  addEntry(P, 'bat', { typ: { fruits: 1 }, gloss: 'animal' });
+  addEntry(P, 'bat', { typ: { citrus: 1 } });
+  addEntry(P, 'bat', { typ: { citrus: 1 } });
   reindex(P);
   const kinds = validate(P).map(i => i.kind);
   assert.ok(kinds.includes('needs-gloss'));
@@ -75,12 +75,12 @@ test('same text needs a gloss; duplicates are errors', () => {
 
 test('project file round-trips and keeps defaults out', () => {
   const P = project();
-  addEntry(P, 'lemon', { rec: 1, th: { citrus: 1, fruits: 2 } });
+  addEntry(P, 'lemon', { fam: 1, typ: { citrus: 1, fruits: 2 } });
   const text = serializeProject(P);
   assert.ok(!text.includes('"adult":false'.replace('adult', 'vulgar')));
   const Q = parseProject(text);
   assert.equal(Q.entries.length, 1);
-  assert.deepEqual(Q.entries[0].th, { citrus: 1, fruits: 2 });
+  assert.deepEqual(Q.entries[0].typ, { citrus: 1, fruits: 2 });
   assert.equal(Q.entries[0].vulgar, false);
   assert.equal(Q.themes.length, P.themes.length);
 });
@@ -96,10 +96,10 @@ test('moving a theme keeps outline order', () => {
 test('export filters by flag, drops thin themes, promotes aliases', () => {
   const P = project();
   // 5 clean words in fruits, one adult-theme word set, aliases of a vulgar root.
-  for (const w of ['apple', 'pear', 'plum', 'fig', 'grape']) addEntry(P, w, { rec: 1, th: { fruits: 1 } });
-  for (const w of ['navy', 'sky', 'teal', 'cyan']) addEntry(P, w, { rec: 2, th: { shades_of_blue: 2 } });
-  const rude = addEntry(P, 'rude', { rec: 2, vulgar: true, th: { fruits: 3 } });
-  addEntry(P, 'cheeky', { rec: 2, aliasOf: rude.id, aliasKind: 'synonym' });
+  for (const w of ['apple', 'pear', 'plum', 'fig', 'grape']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  for (const w of ['navy', 'sky', 'teal', 'cyan']) addEntry(P, w, { fam: 2, typ: { shades_of_blue: 2 } });
+  const rude = addEntry(P, 'rude', { fam: 2, vulgar: true, typ: { fruits: 3 } });
+  addEntry(P, 'cheeky', { fam: 2, aliasOf: rude.id, aliasKind: 'synonym' });
   reindex(P);
   const all = buildExport(P);
   assert.equal(all.file.entries.text.length, 11);
@@ -145,10 +145,10 @@ test('zipf combines phrases', () => {
 
 test('export format 3: shown text, display form and clash ids travel with the link', () => {
   const P = project();
-  const rain = addEntry(P, 'rain', { rec: 1, th: { fruits: 1 } }), rainy = addEntry(P, 'rainy', { pos: 'adjective', rec: 2, aliasOf: rain.id, aliasKind: 'form' });
-  const fall = addEntry(P, 'rainfall', { rec: 2, th: { fruits: 2 } });
-  const garden = addEntry(P, 'rock garden', { rec: 3, th: { fruits: 3 } });
-  for (const w of ['fig', 'plum']) addEntry(P, w, { rec: 1, th: { fruits: 1 } });
+  const rain = addEntry(P, 'rain', { fam: 1, typ: { fruits: 1 } }), rainy = addEntry(P, 'rainy', { pos: 'adjective', fam: 2, aliasOf: rain.id, aliasKind: 'form' });
+  const fall = addEntry(P, 'rainfall', { fam: 2, typ: { fruits: 2 } });
+  const garden = addEntry(P, 'rock garden', { fam: 3, typ: { fruits: 3 } });
+  for (const w of ['fig', 'plum']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
   P.themes.find(t => t.id === 'fruits').groups = [[rain.id, fall.id]];
   rain.use = { fruits: rainy.id }; garden.show = { fruits: 'rock' };
   reindex(P);

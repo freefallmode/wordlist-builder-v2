@@ -33,7 +33,7 @@ let n = 0;
 for (const [tid, rows] of Object.entries(LINKS)) for (const [id, text, pop] of rows) {
   const e = P.ix.entry.get(id);
   if (!e || e.text !== text) throw Error(`entry ${id} is not "${text}"`);
-  if (e.th[tid] === undefined) { e.th[tid] = pop; n++; }
+  if (e.typ[tid] === undefined) { e.typ[tid] = pop; n++; }
 }
 reindex(P); stampSave(P); writeFileSync(LIB, serializeProject(P));
 console.log(n, 'links added; library v' + P.lib.version);

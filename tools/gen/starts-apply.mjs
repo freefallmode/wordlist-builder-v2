@@ -10,9 +10,9 @@ const ONLY = new Set(arg('--only', '').split(',').filter(Boolean)), LIB = here('
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const POS = new Set(['noun', 'verb', 'adjective', 'adverb', 'other']), log = [], problems = [];
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
-const entryFor = w => { let e = P.entries.find(x => !x.aliasOf && x.text.toLowerCase() === w.text && x.enabled && x.type !== 'proper'); if (!e) { e = addEntry(P, w.text, { pos: w.pos, type: 'common', rec: w.rec, status: 'gen' }); log.push('new ' + w.text); } return e; };
+const entryFor = w => { let e = P.entries.find(x => !x.aliasOf && x.text.toLowerCase() === w.text && x.enabled && x.type !== 'proper'); if (!e) { e = addEntry(P, w.text, { pos: w.pos, type: 'common', fam: w.fam, status: 'gen' }); log.push('new ' + w.text); } return e; };
 const mkTheme = (name, parent, note, rule) => { const t = { id: uniqueThemeId(P, slug(name)), name, parent, group: false, enabled: true, complete: false, adult: false, sensitive: false, tm: false, lang: true, region: [], note, pop: 3, tkind: 'wordplay', rule }; P.themes.push(t); reindex(P); return t; };
-const link = (t, w) => { const e = entryFor(w); e.th[t.id] = w.link; if (nameLeak(t, e, themeNameWords(t))) e.nameOkIn = [...new Set([...(e.nameOkIn || []), t.id])]; return e; };
+const link = (t, w) => { const e = entryFor(w); e.typ[t.id] = w.link; if (nameLeak(t, e, themeNameWords(t))) e.nameOkIn = [...new Set([...(e.nameOkIn || []), t.id])]; return e; };
 const files = fs.readdirSync(here('./starts/')).filter(f => /\.txt$/.test(f) && !f.startsWith('cands-') && (!ONLY.size || ONLY.has(f.replace('.txt', ''))));
 for (const f of files) {
   const types = []; let kind = '', note = '', cur = null;
@@ -22,7 +22,7 @@ for (const f of files) {
     if ((m = /^THEME\s+(.+?)\s*\|\s*(.*)$/.exec(l))) { kind = m[1].replace(/^starts with\s+/i, ''); note = m[2]; }
     else if ((m = /^TYPE\s+(\S+)/.exec(l))) { cur = { type: m[1].toLowerCase(), words: [] }; types.push(cur); }
     else if ((m = /^W\s+(\S+)\s*\|\s*(\w+)\s*\|\s*(\d)\s*\|\s*(\d)$/.exec(l)) && cur) {
-      const w = { text: m[1].toLowerCase(), pos: m[2], rec: +m[3], link: +m[4] };
+      const w = { text: m[1].toLowerCase(), pos: m[2], fam: +m[3], link: +m[4] };
       if (!POS.has(w.pos) || !w.text.startsWith(cur.type) || w.text.length < cur.type.length + 2 || w.text === cur.type) { problems.push(`${f}: rejected "${l}"`); continue; }
       if (cur.words.some(x => x.text.includes(w.text) || w.text.includes(x.text))) { problems.push(`${f}: "${w.text}" overlaps another word of ${cur.type}`); continue; }
       cur.words.push(w);

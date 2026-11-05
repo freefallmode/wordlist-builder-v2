@@ -13,7 +13,7 @@ for (const t of P.themes) {
   if (t.group || !eff(P, t.id).enabled) continue;
   const list = (P.ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf && e.enabled).map(e => ({ e, txt: e.show?.[t.id] || e.text })).map(x => ({ ...x, w: toks(x.txt) })).filter(x => x.w.length);
   const grouped = new Map(); for (const g of t.groups || []) for (const id of g) grouped.set(id, g);
-  const fmt = x => `${x.e.id} ${x.txt}${x.e.gloss ? ' [' + x.e.gloss + ']' : ''} (${x.e.type || 'common'}, rec ${x.e.rec || '-'}${x.e.tm ? ', brand' : ''}, in ${Object.keys(x.e.th).length} themes)`;
+  const fmt = x => `${x.e.id} ${x.txt}${x.e.gloss ? ' [' + x.e.gloss + ']' : ''} (${x.e.type || 'common'}, rec ${x.e.fam || '-'}${x.e.tm ? ', brand' : ''}, in ${Object.keys(x.e.typ).length} themes)`;
   const lines = [];
   for (const a of list) {
     const bs = list.filter(b => a.w.length < b.w.length && hasRun(b.w, a.w) && !(grouped.has(a.e.id) && grouped.get(a.e.id) === grouped.get(b.e.id)));

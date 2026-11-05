@@ -20,8 +20,8 @@ const words = P.entries.filter(e => !e.aliasOf && e.enabled && !/[ \-'\d]/.test(
 fs.mkdirSync(here('./starts/'), { recursive: true });
 for (const [key, [name, types]] of Object.entries(THEMES)) {
   const out = [`# starts with ${name}: library words that begin with each type word (raw matches: many are related to the type and must be rejected)`];
-  for (const t of types.split(' ')) { const m = words.filter(e => e.text.toLowerCase().startsWith(t) && e.text.length > t.length + 1).sort((a, b) => a.rec - b.rec || a.text.length - b.text.length).slice(0, 60);
-    out.push(`\nTYPE ${t}${m.length ? '' : '  (no library words)'}`); for (const e of m) out.push(`  ${e.text} | ${e.pos} | rec ${e.rec}${e.gloss ? ' | ' + e.gloss : ''}`); }
+  for (const t of types.split(' ')) { const m = words.filter(e => e.text.toLowerCase().startsWith(t) && e.text.length > t.length + 1).sort((a, b) => a.fam - b.fam || a.text.length - b.text.length).slice(0, 60);
+    out.push(`\nTYPE ${t}${m.length ? '' : '  (no library words)'}`); for (const e of m) out.push(`  ${e.text} | ${e.pos} | rec ${e.fam}${e.gloss ? ' | ' + e.gloss : ''}`); }
   fs.writeFileSync(here(`./starts/cands-${key}.txt`), out.join('\n') + '\n');
 }
 console.log(Object.keys(THEMES).length + ' candidate files in tools/gen/starts/');

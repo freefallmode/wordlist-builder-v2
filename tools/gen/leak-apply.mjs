@@ -34,9 +34,9 @@ for (const f of args) {
   };
   const drop = (e, tid, target) => {   // take e out of theme tid; delete it when it has no links left
     if (e.aliasOf) { deleteEntry(P, e); stat.deleted++; return; }
-    delete e.th[tid]; if (e.nameOkIn) e.nameOkIn = e.nameOkIn.filter(x => x !== tid);
-    for (const a of P.entries) if (a.aliasOf === e.id) delete a.th[tid];
-    if (Object.keys(e.th).length === 0) {
+    delete e.typ[tid]; if (e.nameOkIn) e.nameOkIn = e.nameOkIn.filter(x => x !== tid);
+    for (const a of P.entries) if (a.aliasOf === e.id) delete a.typ[tid];
+    if (Object.keys(e.typ).length === 0) {
       for (const a of P.entries.filter(x => x.aliasOf === e.id)) { if (target && target !== a) a.aliasOf = target.id; else deleteEntry(P, a); }
       if (KEPT && target) {   // --kept: the full name stays as an alias of the bare word (form when it only adds words to it, else synonym), exempt from the theme-name check here
         const tk = new Set(target.text.toLowerCase().split(/\W+/).filter(Boolean)), ek = new Set(e.text.toLowerCase().split(/\W+/).filter(Boolean));
@@ -77,20 +77,20 @@ for (const f of args) {
         if (!target) {
           if (MERGES) continue;   // a merge never makes a new entry: it would be left with no theme
           if (same.length && !gloss) { problems.push(`${f}: "${text}" exists; give the new entry a meaning label or use S ${e.id} = <id>`); continue; }
-          target = addEntry(P, text, { gloss, pos: e.pos, type: e.type, rec: +m[5], adult: e.adult, vulgar: e.vulgar, sensitive: e.sensitive, tm: e.tm, region: [...e.region], status: 'gen' });
+          target = addEntry(P, text, { gloss, pos: e.pos, type: e.type, fam: +m[5], adult: e.adult, vulgar: e.vulgar, sensitive: e.sensitive, tm: e.tm, region: [...e.region], status: 'gen' });
           reindex(P); stat.made++;
         }
       }
-      if (KEEP && target !== e && (target.th[tid] !== undefined) !== MERGES) continue;
+      if (KEEP && target !== e && (target.typ[tid] !== undefined) !== MERGES) continue;
       if (target === e) { problems.push(`${f}: ${e.id} cannot replace itself`); continue; }
-      if (target.th[tid] === undefined) target.th[tid] = e.th[tid] || 3;
+      if (target.typ[tid] === undefined) target.typ[tid] = e.typ[tid] || 3;
       handled.add(e.id); drop(e, tid, target); stat.S++; last = target;
     } else if (tid && last && (m = /^A \| ([^|]+) \| ([^|]*) \| ([1-5])$/.exec(s))) {   // another name for the entry the line above made or found: a synonym of it
       const text = m[1].trim(), gloss = m[2].trim() === '-' ? '' : m[2].trim();
       if (nameLeak(P.ix.theme.get(tid), { text })) { problems.push(`${f}: "${text}" still contains a word of the theme name`); continue; }
       if (sameText(P, text).some(x => (x.gloss || '') === gloss && (x.aliasOf === last.id || x === last))) continue;
       if (sameText(P, text).length && !gloss) { problems.push(`${f}: "${text}" exists; give the synonym a meaning label`); continue; }
-      const a = addEntry(P, text, { gloss, pos: last.pos, type: last.type, rec: +m[3], adult: last.adult, vulgar: last.vulgar, sensitive: last.sensitive, tm: last.tm, region: [...last.region], status: 'gen' });
+      const a = addEntry(P, text, { gloss, pos: last.pos, type: last.type, fam: +m[3], adult: last.adult, vulgar: last.vulgar, sensitive: last.sensitive, tm: last.tm, region: [...last.region], status: 'gen' });
       a.aliasOf = last.id; a.aliasKind = 'synonym'; reindex(P); stat.made++;
     } else problems.push(`${f}: cannot read "${s.slice(0, 60)}"`);
   }

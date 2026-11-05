@@ -13,7 +13,7 @@ for (const a of P.entries) {
   if (a.aliasKind !== 'form' || !a.nameOkIn?.length) continue;
   const r = P.ix.entry.get(a.aliasOf);
   if (!r || ![...tk(r.text)].every(w => tk(a.text).has(w)) || tk(a.text).size === tk(r.text).size) continue;   // not a longer name of the root
-  if (!a.nameOkIn.every(tid => r.th[tid] !== undefined)) { skipped.push(`${a.text} <- ${r.text}: root not in all of ${a.nameOkIn}`); continue; }
+  if (!a.nameOkIn.every(tid => r.typ[tid] !== undefined)) { skipped.push(`${a.text} <- ${r.text}: root not in all of ${a.nameOkIn}`); continue; }
   for (const tid of a.nameOkIn) { const k = tid + '|' + r.id; if (!plan.has(k)) plan.set(k, []); plan.get(k).push(a); }
 }
 const ambiguous = new Set();
@@ -23,8 +23,8 @@ const stat = { restored: 0, links: 0, rootsDeleted: 0, movedAliases: 0, groups: 
 for (const a of done) {
   const r = P.ix.entry.get(a.aliasOf);
   for (const tid of a.nameOkIn) {
-    const pop = r.th[tid]; a.th[tid] = pop; a.show = { ...a.show, [tid]: r.text }; delete r.th[tid]; stat.links++;
-    for (const s of P.entries) if (s.aliasOf === r.id && s.aliasKind === 'synonym' && s.th[tid] === undefined) s.th[tid] = pop;
+    const pop = r.typ[tid]; a.typ[tid] = pop; a.show = { ...a.show, [tid]: r.text }; delete r.typ[tid]; stat.links++;
+    for (const s of P.entries) if (s.aliasOf === r.id && s.aliasKind === 'synonym' && s.typ[tid] === undefined) s.typ[tid] = pop;
     const t = P.ix.theme.get(tid); if (t.groups) t.groups = t.groups.map(g => g.map(id => id === r.id ? a.id : id)).map(g => [...new Set(g)]).filter(g => { if (g.length > 1) return true; stat.groups++; return false; });
     if (!r.show) continue; delete r.show[tid];
   }
@@ -36,7 +36,7 @@ reindex(P);
 const byRoot = new Map(); for (const a of done) { /* aliasOf was cleared; look the root up through the plan */ }
 for (const [k, as] of plan) {
   if (as.length !== 1 || !done.includes(as[0])) continue;
-  const r = P.ix.entry.get(+k.split('|')[1]); if (!r || r.aliasOf || Object.keys(r.th).length) continue;
+  const r = P.ix.entry.get(+k.split('|')[1]); if (!r || r.aliasOf || Object.keys(r.typ).length) continue;
   if (![...plan].every(([k2, as2]) => k2.split('|')[1] !== String(r.id) || as2.length === 1 && done.includes(as2[0]))) continue;
   const heirs = [...new Set([...plan].filter(([k2]) => k2.split('|')[1] === String(r.id)).flatMap(([, as2]) => as2))];
   if (heirs.length !== 1) continue;
@@ -45,7 +45,7 @@ for (const [k, as] of plan) {
 }
 reindex(P);
 console.log(stat, 'skipped', skipped.length); console.log(skipped.slice(0, 20).join('\n'));
-const drop = (id, tid) => { const e = P.ix.entry.get(id); delete e.th[tid]; if (e.show) { delete e.show[tid]; if (!Object.keys(e.show).length) delete e.show; } };
+const drop = (id, tid) => { const e = P.ix.entry.get(id); delete e.typ[tid]; if (e.show) { delete e.show[tid]; if (!Object.keys(e.show).length) delete e.show; } };
 // three cases the show text cannot settle (checked by hand)
 drop(8812, 'eagles');   // a spotted eagle ray is a fish, not an eagle
 drop(44251, 'coats_and_jackets');   // sports jacket (blazer) is already there

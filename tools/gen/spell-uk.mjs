@@ -64,7 +64,7 @@ console.log('tag:', tag.slice(0, 40).map(x => `${x.a.text}(${x.region}) of ${x.r
 if (skipped.length) console.log('skipped:\n  ' + skipped.slice(0, 30).join('\n  '));
 if (APPLY) {
   for (const { root, uk } of add) {
-    addEntry(P, uk, { aliasOf: root.id, aliasKind: 'spelling', region: ['UK'], pos: root.pos, type: root.type, gloss: root.gloss, rec: root.rec, enabled: root.enabled,
+    addEntry(P, uk, { aliasOf: root.id, aliasKind: 'spelling', region: ['UK'], pos: root.pos, type: root.type, gloss: root.gloss, fam: root.fam, enabled: root.enabled,
       adult: root.adult, sensitive: root.sensitive, tm: root.tm, vulgar: root.vulgar, status: 'gen',
       show: Object.fromEntries(Object.entries(root.show || {}).map(([t, x]) => [t, ukText(x)])), nameOkIn: [...(root.nameOkIn || [])] });   // the alias shows what its root shows in a theme, respelled
   }

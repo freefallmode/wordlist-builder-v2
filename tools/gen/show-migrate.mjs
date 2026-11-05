@@ -15,8 +15,8 @@ for (const a of P.entries) {
   if (oa?.aliasOf || ![...tk(r.text)].every(w => tk(a.text).has(w))) continue;   // a genuine form (skis, hot springs), not a full name
   const or = O.ix.entry.get(r.id);
   for (const tid of a.nameOkIn) {
-    if (r.th[tid] === undefined) continue;
-    if (or && or.th[tid] !== undefined) continue;   // the bare word was already in the theme: the review merged two entries; left for a person
+    if (r.typ[tid] === undefined) continue;
+    if (or && or.typ[tid] !== undefined) continue;   // the bare word was already in the theme: the review merged two entries; left for a person
     const k = tid + '|' + r.id; if (!plan.has(k)) plan.set(k, []); plan.get(k).push(a);
   }
 }
@@ -24,9 +24,9 @@ const stat = { restored: 0, links: 0, ambiguous: 0, rootsDeleted: 0, moved: 0 },
 for (const [k, as] of plan) {
   const [tid, rid] = k.split('|'), r = P.ix.entry.get(+rid);
   if (as.length > 1) { stat.ambiguous++; ambiguous.push(`${tid}: ${as.map(a => a.text).join(' / ')} -> ${r.text}`); continue; }
-  const a = as[0], pop = r.th[tid];
-  a.th[tid] = pop; a.show = { ...a.show, [tid]: r.text }; delete r.th[tid];
-  for (const s of P.entries) if (s.aliasOf === r.id && s.aliasKind === 'synonym' && s !== a && s.th[tid] === undefined) s.th[tid] = pop;   // the synonym stays in the theme until synonyms are migrated
+  const a = as[0], pop = r.typ[tid];
+  a.typ[tid] = pop; a.show = { ...a.show, [tid]: r.text }; delete r.typ[tid];
+  for (const s of P.entries) if (s.aliasOf === r.id && s.aliasKind === 'synonym' && s !== a && s.typ[tid] === undefined) s.typ[tid] = pop;   // the synonym stays in the theme until synonyms are migrated
   if (!restoredBy.has(a.id)) restoredBy.set(a.id, new Set()); restoredBy.get(a.id).add(r.id);
   stat.links++;
 }
@@ -35,7 +35,7 @@ for (const [aid, rids] of restoredBy) {
   a.aliasOf = 0; a.aliasKind = ''; a.nameOkIn = []; stat.restored++;
   for (const rid of rids) {
     const r = P.ix.entry.get(rid);
-    if (Object.keys(r.th).length || O.ix.entry.get(r.id)) continue;   // still used elsewhere, or an older entry
+    if (Object.keys(r.typ).length || O.ix.entry.get(r.id)) continue;   // still used elsewhere, or an older entry
     const others = [...restoredBy].filter(([x, set]) => x !== aid && set.has(rid));
     if (others.length) continue;
     for (const s of P.entries) if (s.aliasOf === r.id) { s.aliasOf = a.id; stat.moved++; }   // its other names now belong to the full entry

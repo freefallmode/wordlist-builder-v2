@@ -8,12 +8,12 @@ const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const fresh = {}, log = [];
 for (const [tid, rows] of Object.entries(DATA)) {
   for (const [text, rec, inRec, o] of rows) {
-    const c = P.entries.filter(e => !e.aliasOf && e.text.toLowerCase() === text.toLowerCase() && e.th[tid] === undefined);
-    if (!c.length) { if (P.entries.some(e => !e.aliasOf && e.text.toLowerCase() === text.toLowerCase() && e.th[tid] !== undefined)) continue; (fresh[tid] ||= []).push(o ? [text, rec, inRec, o] : [text, rec, inRec]); continue; }
-    const score = e => Object.keys(e.th).filter(k => (P.ix.theme.get(k)?.pop || 9) <= 2).length * 10 - (e.rec || 5) - (e.type === 'proper' ? 20 : 0);
+    const c = P.entries.filter(e => !e.aliasOf && e.text.toLowerCase() === text.toLowerCase() && e.typ[tid] === undefined);
+    if (!c.length) { if (P.entries.some(e => !e.aliasOf && e.text.toLowerCase() === text.toLowerCase() && e.typ[tid] !== undefined)) continue; (fresh[tid] ||= []).push(o ? [text, rec, inRec, o] : [text, rec, inRec]); continue; }
+    const score = e => Object.keys(e.typ).filter(k => (P.ix.theme.get(k)?.pop || 9) <= 2).length * 10 - (e.fam || 5) - (e.type === 'proper' ? 20 : 0);
     const best = c.slice().sort((a, b) => score(b) - score(a))[0];
-    if (o?.g) { const m = c.find(e => e.gloss === o.g); if (m) { m.th[tid] = inRec; continue; } }
-    best.th[tid] = inRec;
+    if (o?.g) { const m = c.find(e => e.gloss === o.g); if (m) { m.typ[tid] = inRec; continue; } }
+    best.typ[tid] = inRec;
     if (c.length > 1) log.push(`${tid}: ${text} -> [${best.gloss || ''}] of ${c.map(e => e.gloss || '-').join(' / ')}`);
   }
 }

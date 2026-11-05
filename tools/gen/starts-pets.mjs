@@ -8,7 +8,7 @@ import { validate } from '../../js/validate.js';
 const LIB = new URL('../../data/wordlist-en.project.json', import.meta.url);
 const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 // word:pos:familiarity:typicality (typicality 1 = the clearest example)
-const W = s => s.trim().split(/\s+/).map(x => { const [text, pos, rec, link] = x.split(':'); return { text, pos, rec: +rec, link: +link }; });
+const W = s => s.trim().split(/\s+/).map(x => { const [text, pos, rec, link] = x.split(':'); return { text, pos, fam: +rec, link: +link }; });
 const PETS = {
   dog: W('dogmatic:adjective:3:2 doggerel:noun:4:4 dogged:adjective:3:3 dogsbody:noun:4:4 doggone:adjective:4:4'),
   cat: W('category:noun:1:1 catalogue:noun:1:2 catapult:noun:2:2 catastrophe:noun:2:3 cathedral:noun:1:3'),
@@ -31,7 +31,7 @@ const BEST_TRANS = { bus: 'busy', cab: 'cabin', metro: 'metronome' };
 const log = [];
 function entryFor(w) {
   let e = P.entries.find(x => !x.aliasOf && x.text.toLowerCase() === w.text && x.enabled);
-  if (!e) { e = addEntry(P, w.text, { pos: w.pos, type: 'common', rec: w.rec, status: 'gen' }); log.push('new ' + w.text); }
+  if (!e) { e = addEntry(P, w.text, { pos: w.pos, type: 'common', fam: w.fam, status: 'gen' }); log.push('new ' + w.text); }
   return e;
 }
 function theme(id, name, parent, note, rule) {
@@ -40,7 +40,7 @@ function theme(id, name, parent, note, rule) {
 }
 function build(top, topName, topNote, topRule, groups, best, singles, leak) {
   const t = theme(top, topName, 'letter_play', topNote, topRule);
-  const put = (th, w, nameOk) => { const e = entryFor(w); e.th[th.id] = w.link; if (nameOk) e.nameOkIn = [...new Set([...(e.nameOkIn || []), th.id])]; return e; };
+  const put = (th, w, nameOk) => { const e = entryFor(w); e.typ[th.id] = w.link; if (nameOk) e.nameOkIn = [...new Set([...(e.nameOkIn || []), th.id])]; return e; };
   for (const [key, words] of Object.entries(groups)) {
     const sub = theme(`starts_with_${key}`, `starts with ${key}`, t.id, `words that begin with "${key}" but have nothing to do with it: ${words.slice(0, 4).map(w => w.text).join(', ')}`, `starts:${key}`);
     for (const w of words) put(sub, w, true);

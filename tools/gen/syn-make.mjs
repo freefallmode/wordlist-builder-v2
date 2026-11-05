@@ -14,7 +14,7 @@ const done = new Set(fs.existsSync(doneFile) ? JSON.parse(fs.readFileSync(doneFi
 const regDiff = (e, r) => e.region.length && JSON.stringify([...e.region].sort()) !== JSON.stringify([...r.region].sort());
 const name = id => P.ix.theme.get(id)?.name || id;
 const lab = e => e.text + (e.gloss ? ` (${e.gloss})` : '');
-const list = P.entries.filter(e => e.aliasKind === 'synonym' && !done.has(e.id)).filter(e => { const r = P.ix.entry.get(e.aliasOf); return (REG ? !!regDiff(e, r) : !regDiff(e, r)) && (ALL || REG || THEMES.some(t => e.th[t] !== undefined || r.th[t] !== undefined)); })
+const list = P.entries.filter(e => e.aliasKind === 'synonym' && !done.has(e.id)).filter(e => { const r = P.ix.entry.get(e.aliasOf); return (REG ? !!regDiff(e, r) : !regDiff(e, r)) && (ALL || REG || THEMES.some(t => e.typ[t] !== undefined || r.typ[t] !== undefined)); })
   .sort((a, b) => P.ix.entry.get(a.aliasOf).text.localeCompare(P.ix.entry.get(b.aliasOf).text) || a.text.localeCompare(b.text));
 const mine = list.filter((_, i) => i % chunks === chunk - 1);
 console.log(`# chunk ${chunk}/${chunks}: ${mine.length} synonyms. ${REG ? 'region differs from the root' : ALL ? "all themes" : "Pilot themes: " + THEMES.join(", ")}`);
@@ -25,9 +25,9 @@ const sibs = r => {   // what already hangs off the root: other aliases and entr
 };
 for (const e of mine) {
   const r = P.ix.entry.get(e.aliasOf);
-  const own = Object.entries(e.th).map(([t, p]) => `${t} (${name(t)}):${p}`).join(', ') || '-';
-  const inh = Object.entries(r.th).map(([t, p]) => `${t}:${p}`).join(', ') || '-';
+  const own = Object.entries(e.typ).map(([t, p]) => `${t} (${name(t)}):${p}`).join(', ') || '-';
+  const inh = Object.entries(r.typ).map(([t, p]) => `${t}:${p}`).join(', ') || '-';
   const same = P.entries.filter(x => x.text.toLowerCase() === e.text.toLowerCase() && x !== e).map(x => `${x.id}${x.gloss ? ' ' + x.gloss : ''}`).join('; ');
   const sb = sibs(r).filter(x => x !== e).map(x => `${x.id} ${lab(x)}${x.aliasKind ? ' [' + x.aliasKind + ']' : ''}`).join('; ');
-  console.log(`${e.id} ${lab(e)} | ${e.pos} rec ${e.rec}${e.region.length ? ' ' + e.region.join('/') : ''} | synonym of ${r.id} ${lab(r)} rec ${r.rec}${r.region.length ? ' ' + r.region.join('/') : ''}\n    its own themes: ${own}\n    root's themes: ${inh}${same ? `\n    same text elsewhere: ${same}` : ''}${sb ? `\n    already with the root: ${sb}` : ''}`);
+  console.log(`${e.id} ${lab(e)} | ${e.pos} rec ${e.fam}${e.region.length ? ' ' + e.region.join('/') : ''} | synonym of ${r.id} ${lab(r)} rec ${r.fam}${r.region.length ? ' ' + r.region.join('/') : ''}\n    its own themes: ${own}\n    root's themes: ${inh}${same ? `\n    same text elsewhere: ${same}` : ''}${sb ? `\n    already with the root: ${sb}` : ''}`);
 }

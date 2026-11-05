@@ -23,7 +23,7 @@ for (const [t, es] of by) {
     const A = ix.get(b)[0], B = list[0]; if ((A.gloss || '') !== (B.gloss || '') && A.gloss && B.gloss) continue;   // different labelled meanings: not an inflection pair
     if (A.aliasOf === B.id || B.aliasOf === A.id) continue;
     const k = t + '|' + A.id + '|' + B.id; if (seen.has(k)) continue; seen.add(k);
-    out.push({ theme: t, base: A.text, form: B.text, baseId: A.id, formId: B.id, baseAlias: !!A.aliasOf, formAlias: !!B.aliasOf, kind: w.endsWith('ing') ? 'ing' : w.endsWith('ed') ? 'ed' : 's', baseRating: A.th[t], formRating: B.th[t] });
+    out.push({ theme: t, base: A.text, form: B.text, baseId: A.id, formId: B.id, baseAlias: !!A.aliasOf, formAlias: !!B.aliasOf, kind: w.endsWith('ing') ? 'ing' : w.endsWith('ed') ? 'ed' : 's', baseRating: A.typ[t], formRating: B.typ[t] });
   }
 }
 const k = {}; for (const o of out) k[o.kind] = (k[o.kind] || 0) + 1;

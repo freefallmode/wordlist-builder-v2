@@ -27,7 +27,7 @@ for (const f of files) for (const line of fs.readFileSync(f, 'utf8').split(/\r?\
   const es = ids.map(id => P.ix.entry.get(id));
   const bad = [];
   if (es.some(e => !e || e.aliasOf)) bad.push('a word id is missing or is an alias');
-  else if (es.some(e => e.th[pid] === undefined)) bad.push('a word is not in the parent');
+  else if (es.some(e => e.typ[pid] === undefined)) bad.push('a word is not in the parent');
   if (ids.length < 4) bad.push(`only ${ids.length} words`);
   const parentN = new Set((P.ix.byTheme.get(pid) || []).map(e => e.aliasOf || e.id)).size;
   if (ids.length > parentN * 0.7) bad.push(`${ids.length} of ${parentN} words is most of the parent`);
@@ -42,7 +42,7 @@ for (const f of files) for (const line of fs.readFileSync(f, 'utf8').split(/\r?\
   if (APPLY) {
     P.themes.push({ id, name, parent: pid, group: false, enabled: true, complete: false, adult: false, sensitive: false, tm: false, lang: parent.lang, region: [], note: '', pop: +pop });
     reindex(P);
-    for (const e of es) e.th[id] = e.th[pid];
+    for (const e of es) e.typ[id] = e.typ[pid];
     reindex(P);
   }
 }

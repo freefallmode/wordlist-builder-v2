@@ -23,7 +23,7 @@ for (const a of syn) {
   if (ABBR.has(a.id)) plan.abbr.push(a);
   else if (a.region?.some(c => c !== 'US') && !a.region.includes('US')) plan.regional.push(a);
   else if (a.id === 65726) plan.drop = (plan.drop || []).concat(a);
-  else if (shortOf && !NOT_SHOWN.has(a.id) && a.nameOkIn?.length && a.nameOkIn.every(t => r.th[t] !== undefined)) plan.shown.push(a);
+  else if (shortOf && !NOT_SHOWN.has(a.id) && a.nameOkIn?.length && a.nameOkIn.every(t => r.typ[t] !== undefined)) plan.shown.push(a);
   else plan.entry.push(a);
 }
 for (const k in plan) console.log(k, plan[k].length, plan[k].map(a => a.text + '<-' + P.ix.entry.get(a.aliasOf).text).join('; ').slice(0, 1400));
@@ -33,12 +33,12 @@ const addGroup = (tid, x, y) => { const t = P.ix.theme.get(tid); t.groups = t.gr
 for (const a of plan.regional) { a.aliasKind = 'regional'; stat.regional++; }
 for (const a of plan.entry) {
   const r = P.ix.entry.get(a.aliasOf); own(a, r);
-  a.th = { ...r.th }; for (const tid in a.th) addGroup(tid, r.id, a.id);
+  a.typ = { ...r.typ }; for (const tid in a.typ) addGroup(tid, r.id, a.id);
   stat.entry++;
 }
 for (const a of plan.abbr) {
   const r = P.ix.entry.get(a.aliasOf); own(a, r);
-  a.th = { ...r.th }; a.show = { ...r.show, ...a.show }; r.th = {}; delete r.show;
+  a.typ = { ...r.typ }; a.show = { ...r.show, ...a.show }; r.typ = {}; delete r.show;
   for (const s of P.entries) if (s.aliasOf === r.id && s !== a) s.aliasOf = a.id;
   r.aliasOf = a.id; r.aliasKind = 'abbreviation'; r.nameOkIn = [];
   for (const t of P.themes) if (t.groups) t.groups = t.groups.map(g => [...new Set(g.map(id => id === r.id ? a.id : id))]).filter(g => g.length > 1);
@@ -46,13 +46,13 @@ for (const a of plan.abbr) {
 }
 for (const a of plan.shown) {
   const r = P.ix.entry.get(a.aliasOf); own(a, r);
-  a.th = {}; a.show = {};
-  for (const tid of a.nameOkIn) { a.th[tid] = r.th[tid]; a.show[tid] = r.text; delete r.th[tid]; const t = P.ix.theme.get(tid); if (t.groups) t.groups = t.groups.map(g => [...new Set(g.map(id => id === r.id ? a.id : id))]).filter(g => g.length > 1); }
+  a.typ = {}; a.show = {};
+  for (const tid of a.nameOkIn) { a.typ[tid] = r.typ[tid]; a.show[tid] = r.text; delete r.typ[tid]; const t = P.ix.theme.get(tid); if (t.groups) t.groups = t.groups.map(g => [...new Set(g.map(id => id === r.id ? a.id : id))]).filter(g => g.length > 1); }
   a.nameOkIn = []; a.__r = r; stat.shown++;
 }
 for (const a of plan.drop || []) P.entries.splice(P.entries.indexOf(a), 1);   // e-bike is its own entry already
 reindex(P);
-for (const a of plan.shown) { const r = a.__r; delete a.__r; if (!Object.keys(r.th).length && !r.aliasOf) { for (const s of P.entries) if (s.aliasOf === r.id) s.aliasOf = a.id; P.entries.splice(P.entries.indexOf(r), 1); stat.rootsDeleted++; } }
+for (const a of plan.shown) { const r = a.__r; delete a.__r; if (!Object.keys(r.typ).length && !r.aliasOf) { for (const s of P.entries) if (s.aliasOf === r.id) s.aliasOf = a.id; P.entries.splice(P.entries.indexOf(r), 1); stat.rootsDeleted++; } }
 reindex(P);
 console.log(stat);
 const bad = validate(P).filter(i => i.sev !== 'info' && !/longer than 20/.test(i.msg)); console.log(bad.length, bad.slice(0, 15).map(i => i.msg).join('\n'));

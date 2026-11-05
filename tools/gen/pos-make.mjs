@@ -26,7 +26,7 @@ if (arg === 'skipped') {
 }
 if (arg === 'theme') {   // every root entry of one theme with its part of speech: node tools/gen/pos-make.mjs theme <themeId>
   const t = P.ix.theme.get(process.argv[3]); if (!t) throw Error('no such theme');
-  for (const e of (P.ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf).sort((a, b) => norm(a).localeCompare(norm(b)) || a.text.localeCompare(b.text))) console.log(`${e.id} ${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''} | ${norm(e)} | rec ${e.rec} pop ${e.th[t.id]}`);
+  for (const e of (P.ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf).sort((a, b) => norm(a).localeCompare(norm(b)) || a.text.localeCompare(b.text))) console.log(`${e.id} ${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''} | ${norm(e)} | rec ${e.fam} pop ${e.typ[t.id]}`);
   process.exit();
 }
 const n = +arg;
@@ -42,10 +42,10 @@ for (const { t, roots, ranked, dominant, minor } of chunk) {
   console.log(`  ${dominant} words in the theme: ${dom.slice(0, 10).map(e => e.text).join(', ')}${dom.length > 10 ? ', ... (' + dom.length + ')' : ''}`);
   for (const e of minor.sort((a, b) => a.text.localeCompare(b.text))) {
     const w = e.text.toLowerCase(), inTheme = roots.filter(r => r !== e && (FORMS(r.text.toLowerCase(), w) || FORMS(w, r.text.toLowerCase())));
-    const others = Object.keys(e.th).filter(x => x !== t.id).map(x => P.ix.theme.get(x)?.name).filter(Boolean);
+    const others = Object.keys(e.typ).filter(x => x !== t.id).map(x => P.ix.theme.get(x)?.name).filter(Boolean);
     const stems = [...new Set([w.replace(/(y|ly|ing|ed|er|ness|ish|ful|less|al|ic)$/, ''), w.replace(/(ied|ier|ies)$/, 'y')])].filter(s => s.length > 2 && s !== w);
     const lib = stems.flatMap(s => sameText(P, s)).filter(x => !x.aliasOf && x !== e && !inTheme.includes(x));
-    console.log(`${e.id} ${label(e)} | ${norm(e)} ${e.type} | rec ${e.rec} pop ${e.th[t.id]} | ${others.length ? 'also in ' + others.length + ' themes: ' + others.slice(0, 3).join(', ') : 'only in this theme'}` +
+    console.log(`${e.id} ${label(e)} | ${norm(e)} ${e.type} | rec ${e.fam} pop ${e.typ[t.id]} | ${others.length ? 'also in ' + others.length + ' themes: ' + others.slice(0, 3).join(', ') : 'only in this theme'}` +
       `${inTheme.length ? ' | SAME WORD IN THEME: ' + inTheme.map(r => `${r.id} ${label(r)} ${norm(r)}`).join('; ') : ''}${lib.length ? ' | related entries elsewhere: ' + lib.slice(0, 4).map(r => `${r.id} ${label(r)} ${norm(r)}`).join('; ') : ''}`);
   }
 }

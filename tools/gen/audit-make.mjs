@@ -13,7 +13,7 @@ for (const [k, es] of by) {
   const ids = linkIds(P, es[0]).filter(t => !skip.has(root(t)));
   const roots = new Set(ids.map(root)); if (roots.size < 2) continue;
   const e = es[0];
-  out.push({ id: e.id, text: e.text, type: e.type, rec: e.rec, themes: ids.slice(0, 10).map(t => `${T(t).name} [${T(t).id}] (${root(t)})`) });
+  out.push({ id: e.id, text: e.text, type: e.type, fam: e.fam, themes: ids.slice(0, 10).map(t => `${T(t).name} [${T(t).id}] (${root(t)})`) });
 }
 out.sort((a, b) => a.text.localeCompare(b.text));
 const n = Math.ceil(out.length / per);

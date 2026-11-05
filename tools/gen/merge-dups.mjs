@@ -18,11 +18,11 @@ for (const g of by.values()) {
     if (!keep) continue;
     console.log(`merge ${o.id} ${o.text} (${o.gloss}) into ${keep.id} (${keep.gloss})`); n++;
     if (!APPLY) continue;
-    for (const [t, v] of Object.entries(o.th)) keep.th[t] = keep.th[t] === undefined ? v : Math.min(keep.th[t] || 9, v || 9) % 9 || keep.th[t];
+    for (const [t, v] of Object.entries(o.typ)) keep.typ[t] = keep.typ[t] === undefined ? v : Math.min(keep.typ[t] || 9, v || 9) % 9 || keep.typ[t];
     keep.show = { ...o.show, ...keep.show }; keep.use = { ...o.use, ...keep.use };
     keep.nameOkIn = [...new Set([...(keep.nameOkIn || []), ...(o.nameOkIn || [])])];
     for (const f of ['adult', 'sensitive', 'tm', 'vulgar']) keep[f] = keep[f] || o[f];
-    keep.rec = Math.min(keep.rec || 9, o.rec || 9) % 9 || keep.rec;
+    keep.fam = Math.min(keep.fam || 9, o.fam || 9) % 9 || keep.fam;
     for (const a of P.entries) if (a.aliasOf === o.id) a.aliasOf = keep.id;
     for (const e of P.entries) for (const [t, id] of Object.entries(e.use || {})) if (id === o.id) e.use[t] = keep.id;
     for (const t of P.themes) if (t.groups) t.groups = t.groups.map(gr => [...new Set(gr.map(id => id === o.id ? keep.id : id))]).filter(gr => gr.length >= 2);

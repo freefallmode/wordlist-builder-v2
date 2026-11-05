@@ -11,16 +11,16 @@ const P = parseProject(fs.readFileSync(LIB, 'utf8')); reindex(P);
 const E = id => P.ix.entry.get(id), log = [];
 const need = (id, text) => { const e = E(id); if (!e || e.text !== text) throw Error(`entry ${id} is not "${text}"`); return e; };
 for (const [id, text] of [[18305, 'ice pop'], [18304, 'ice lolly']]) { const e = need(id, text); if (e.tm) { e.tm = false; log.push(`${text}: trademark off`); } }
-const ip = need(18305, 'ice pop'); if (ip.th.brand_names_used_as_words !== undefined) { delete ip.th.brand_names_used_as_words; log.push('ice pop: left brand_names_used_as_words'); }
+const ip = need(18305, 'ice pop'); if (ip.typ.brand_names_used_as_words !== undefined) { delete ip.typ.brand_names_used_as_words; log.push('ice pop: left brand_names_used_as_words'); }
 const dl = need(2427, 'date line'); if (dl.type === 'phrase') { dl.type = 'common'; log.push('date line: type common'); }
 const sl = need(45101, 'snow line'), root = need(30851, 'snowline');
 if (!sl.aliasOf) {
-  for (const [t, v] of Object.entries(sl.th)) if (root.th[t] === undefined) root.th[t] = v;
-  sl.th = {}; sl.show = {}; sl.use = {}; sl.aliasOf = root.id; sl.aliasKind = 'spelling'; log.push('snow line: spelling alias of snowline, link moved to the root');
+  for (const [t, v] of Object.entries(sl.typ)) if (root.typ[t] === undefined) root.typ[t] = v;
+  sl.typ = {}; sl.show = {}; sl.use = {}; sl.aliasOf = root.id; sl.aliasKind = 'spelling'; log.push('snow line: spelling alias of snowline, link moved to the root');
 }
 // omelette (UK spelling of omelet) and crumbs (plural form of crumb) were linked on their own; spelling and form aliases follow their root. The link moves to the root; crumbs stays the form the theme shows (use).
-{ const a = need(533, 'omelette'), r = need(532, 'omelet'); for (const [t, v] of Object.entries(a.th)) { if (r.th[t] === undefined) r.th[t] = v; } if (Object.keys(a.th).length) { a.th = {}; log.push('omelette: link moved to omelet'); } }
-{ const a = need(27717, 'crumbs'), r = need(39504, 'crumb'); for (const [t, v] of Object.entries(a.th)) { if (r.th[t] === undefined) r.th[t] = v; r.use = { ...r.use, [t]: a.id }; } if (Object.keys(a.th).length) { a.th = {}; log.push('crumbs: link moved to crumb, the theme shows the form crumbs'); } }
+{ const a = need(533, 'omelette'), r = need(532, 'omelet'); for (const [t, v] of Object.entries(a.typ)) { if (r.typ[t] === undefined) r.typ[t] = v; } if (Object.keys(a.typ).length) { a.typ = {}; log.push('omelette: link moved to omelet'); } }
+{ const a = need(27717, 'crumbs'), r = need(39504, 'crumb'); for (const [t, v] of Object.entries(a.typ)) { if (r.typ[t] === undefined) r.typ[t] = v; r.use = { ...r.use, [t]: a.id }; } if (Object.keys(a.typ).length) { a.typ = {}; log.push('crumbs: link moved to crumb, the theme shows the form crumbs'); } }
 reindex(P);
 console.log(log.join('\n'));
 const bad = validate(P).filter(i => i.sev === 'error'); console.log('errors', bad.length, bad.slice(0, 5).map(i => i.msg));

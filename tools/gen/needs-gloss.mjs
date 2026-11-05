@@ -9,5 +9,5 @@ for (const e of P.entries) { const k = e.text.trim().toLowerCase(); (by.get(k) |
 for (const g of by.values()) {
   if (g.length < 2 || g.every(e => e.gloss)) continue;
   console.log('--', g[0].text);
-  for (const e of g) console.log(`  ${e.id}\t${e.gloss ? '(' + e.gloss + ')' : '[NO LABEL]'}\t${e.aliasOf ? e.aliasKind + ' of ' + P.ix.entry.get(e.aliasOf)?.text : 'root'}\t${Object.keys(e.th).slice(0, 4).join(',')}`);
+  for (const e of g) console.log(`  ${e.id}\t${e.gloss ? '(' + e.gloss + ')' : '[NO LABEL]'}\t${e.aliasOf ? e.aliasKind + ' of ' + P.ix.entry.get(e.aliasOf)?.text : 'root'}\t${Object.keys(e.typ).slice(0, 4).join(',')}`);
 }

@@ -24,23 +24,23 @@ for (const f of files) for (const raw of fs.readFileSync(here('./' + DIR + '/' +
   let text = text0;   // an agent may repeat the bare word before the full term (radiant radiant energy)
   if (b) { const bt = (b.show?.[tid] || b.text).toLowerCase(); if (text.toLowerCase().startsWith(bt + ' ' + bt)) text = text.slice(bt.length + 1); }
   if (SKIP.has(+bid)) { stat.skipped++; continue; }
-  if (!t || !b || b.th[tid] === undefined || b.aliasOf) { stat.bad++; problems.push(`${f}: missing theme, entry or link "${l.slice(0, 80)}"`); continue; }
-  const bare = b.show?.[tid] || b.text, link = b.th[tid];
+  if (!t || !b || b.typ[tid] === undefined || b.aliasOf) { stat.bad++; problems.push(`${f}: missing theme, entry or link "${l.slice(0, 80)}"`); continue; }
+  const bare = b.show?.[tid] || b.text, link = b.typ[tid];
   const p = (rest || '').split('|').map(x => x.trim()), [pos, type, rec, lk] = p;
   let F = which === 'NEW' ? P.entries.find(e => !e.aliasOf && e.text.toLowerCase() === text.toLowerCase()) : E(which);
   if (which === 'NEW' && P.entries.some(e => e.aliasOf && e.text.toLowerCase() === text.toLowerCase())) { stat.bad++; problems.push(`${f}: "${text}" is already an alias`); continue; }
   if (F && F.aliasOf) { stat.bad++; problems.push(`${f}: "${text}" is an alias`); continue; }
-  const aliased = P.entries.some(a => a.aliasOf === b.id), others = Object.keys(b.th).length > 1;
+  const aliased = P.entries.some(a => a.aliasOf === b.id), others = Object.keys(b.typ).length > 1;
   if (!F && which === 'NEW' && !aliased && !others) {   // retext in place
-    b.text = text; b.gloss = ''; b.pos = pos || b.pos; b.type = type || b.type; b.rec = +rec || b.rec; b.th[tid] = +lk || link; b.show = { ...b.show, [tid]: bare }; b.nameOkIn = [...new Set([...(b.nameOkIn || []), tid])];
-    stat.retexted++; log.push(`R ${t.name}: ${bare} -> ${text} (in place, rec ${b.rec}, link ${b.th[tid]})`); continue;
+    b.text = text; b.gloss = ''; b.pos = pos || b.pos; b.type = type || b.type; b.fam = +rec || b.fam; b.typ[tid] = +lk || link; b.show = { ...b.show, [tid]: bare }; b.nameOkIn = [...new Set([...(b.nameOkIn || []), tid])];
+    stat.retexted++; log.push(`R ${t.name}: ${bare} -> ${text} (in place, rec ${b.fam}, link ${b.typ[tid]})`); continue;
   }
-  if (!F) { F = addEntry(P, text, { pos: pos || b.pos, type: type || b.type, rec: +rec || b.rec, status: 'gen', region: [...b.region], adult: b.adult, sensitive: b.sensitive, tm: b.tm, vulgar: b.vulgar }); F.th[tid] = +lk || link; stat.created++; log.push(`N ${t.name}: ${bare} -> ${text}`); }
-  else { if (F.th[tid] === undefined) F.th[tid] = link; stat.reused++; log.push(`E ${t.name}: ${bare} -> ${text} (${F.id})`); }
+  if (!F) { F = addEntry(P, text, { pos: pos || b.pos, type: type || b.type, fam: +rec || b.fam, status: 'gen', region: [...b.region], adult: b.adult, sensitive: b.sensitive, tm: b.tm, vulgar: b.vulgar }); F.typ[tid] = +lk || link; stat.created++; log.push(`N ${t.name}: ${bare} -> ${text}`); }
+  else { if (F.typ[tid] === undefined) F.typ[tid] = link; stat.reused++; log.push(`E ${t.name}: ${bare} -> ${text} (${F.id})`); }
   F.show = { ...F.show, [tid]: bare }; F.nameOkIn = [...new Set([...(F.nameOkIn || []), tid])];
   for (const a of P.entries) if (a.aliasOf === F.id) a.nameOkIn = [...new Set([...(a.nameOkIn || []), tid])];
-  delete b.th[tid]; if (b.show) { delete b.show[tid]; if (!Object.keys(b.show).length) delete b.show; } regroup(t, b.id, F.id);
-  if (!Object.keys(b.th).length && !aliased) orphans.push(`${b.id} ${b.text}`);
+  delete b.typ[tid]; if (b.show) { delete b.show[tid]; if (!Object.keys(b.show).length) delete b.show; } regroup(t, b.id, F.id);
+  if (!Object.keys(b.typ).length && !aliased) orphans.push(`${b.id} ${b.text}`);
 }
 reindex(P);
 console.log(stat); console.log(problems.join('\n')); console.log('bare words left with no theme:', orphans.length, orphans.join('; '));

@@ -19,5 +19,5 @@ for (const { t, es } of mine) {
   const k = kids(t); if (k.length) console.log(`existing sub-themes: ${k.map(c => `${c.name} (${(P.ix.byTheme.get(c.id) || []).length})`).join('; ')}`);
   if (sib.length && sib.length < 40) console.log(`siblings: ${sib.join('; ')}`);
   console.log('words (id text [gloss] pos rec pop):');
-  console.log(es.map(e => `${e.id} ${e.text}${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos[0]} ${e.rec} ${e.th[t.id] ?? '-'}`).join('\n'));
+  console.log(es.map(e => `${e.id} ${e.text}${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos[0]} ${e.fam} ${e.typ[t.id] ?? '-'}`).join('\n'));
 }

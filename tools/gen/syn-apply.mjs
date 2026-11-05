@@ -33,17 +33,17 @@ for (const f of args) for (const line of fs.readFileSync(f, 'utf8').split(/\r?\n
     for (const x of m[2].trim().split(/\s+/).filter(Boolean)) (x[0] === '-' ? drop : loose).add(x.slice(1));
     for (const x of [...drop, ...loose]) if (!P.ix.theme.get(x)) problems.push(`${f}: no theme ${x}`);
     if (sameText(P, e.text).some(o => o !== e && !o.gloss) && !e.gloss) { problems.push(`${f}: ${e.id} "${e.text}" shares its text with an entry that has no label: use O with a label, or X`); continue; }
-    for (const [t, p] of Object.entries(r.th)) if (e.th[t] === undefined && !drop.has(t)) e.th[t] = p;
-    for (const t of drop) delete e.th[t];
+    for (const [t, p] of Object.entries(r.typ)) if (e.typ[t] === undefined && !drop.has(t)) e.typ[t] = p;
+    for (const t of drop) delete e.typ[t];
     e.aliasOf = 0; e.aliasKind = ''; reindex(P);
-    for (const t of Object.keys(e.th)) { stat.links++; if (r.th[t] !== undefined && !loose.has(t)) group(P.ix.theme.get(t), r.id, e.id); }
+    for (const t of Object.keys(e.typ)) { stat.links++; if (r.typ[t] !== undefined && !loose.has(t)) group(P.ix.theme.get(t), r.id, e.id); }
     done.add(e.id); stat.Y++;
   } else if ((m = /^O (\d+)(?: \| (.*))?$/.exec(s))) {
     const e = find(m[1]); if (!e) continue;
     const gloss = (m[2] || '').trim() === '-' ? '' : (m[2] || '').trim();
     if (gloss) e.gloss = gloss;
     if (sameText(P, e.text).some(o => o !== e && !o.gloss) && !e.gloss) { problems.push(`${f}: ${e.id} "${e.text}" needs a meaning label`); continue; }
-    if (!Object.keys(e.th).length) { problems.push(`${f}: ${e.id} "${e.text}" has no theme links of its own: use X, Y or R`); continue; }
+    if (!Object.keys(e.typ).length) { problems.push(`${f}: ${e.id} "${e.text}" has no theme links of its own: use X, Y or R`); continue; }
     e.aliasOf = 0; e.aliasKind = ''; reindex(P); done.add(e.id); stat.O++;
   } else if ((m = /^X (\d+)$/.exec(s))) {
     const e = find(m[1]); if (!e) continue; deleteEntry(P, e); reindex(P); done.add(+m[1]); stat.X++;
@@ -51,15 +51,15 @@ for (const f of args) for (const line of fs.readFileSync(f, 'utf8').split(/\r?\n
     const e = find(m[1]); if (!e) continue;
     if (!ALIAS_KINDS.includes(m[2]) || m[2] === 'synonym' || m[2] === '') { problems.push(`${f}: bad kind ${m[2]}`); continue; }
     const r = P.ix.entry.get(e.aliasOf);
-    for (const [t, p] of Object.entries(e.th)) if (r.th[t] === undefined) r.th[t] = p;
-    e.th = {}; e.aliasKind = m[2]; if (m[3]) e.region = m[3].split(','); reindex(P); done.add(e.id); stat.R++;
+    for (const [t, p] of Object.entries(e.typ)) if (r.typ[t] === undefined) r.typ[t] = p;
+    e.typ = {}; e.aliasKind = m[2]; if (m[3]) e.region = m[3].split(','); reindex(P); done.add(e.id); stat.R++;
   } else if ((m = /^F (\d+)(?: ([A-Z,]+))?$/.exec(s))) {
     const e = find(m[1]); if (!e) continue; const r = P.ix.entry.get(e.aliasOf);
-    for (const [t, p] of Object.entries(r.th)) if (e.th[t] === undefined) e.th[t] = p;
+    for (const [t, p] of Object.entries(r.typ)) if (e.typ[t] === undefined) e.typ[t] = p;
     for (const a of P.entries) if (a.aliasOf === r.id && a !== e) a.aliasOf = e.id;
     for (const t of P.themes) for (const g of t.groups || []) if (g.includes(r.id)) { const i = g.indexOf(r.id); if (g.includes(e.id)) g.splice(i, 1); else g[i] = e.id; }
     e.use = Object.assign({}, r.use, e.use); e.show = Object.assign({}, r.show, e.show); e.nameOkIn = [...new Set([...(e.nameOkIn || []), ...(r.nameOkIn || [])])];
-    r.th = {}; r.use = {}; r.show = {}; r.nameOkIn = []; r.aliasOf = e.id; r.aliasKind = 'regional'; if (m[2]) r.region = m[2].split(',');
+    r.typ = {}; r.use = {}; r.show = {}; r.nameOkIn = []; r.aliasOf = e.id; r.aliasKind = 'regional'; if (m[2]) r.region = m[2].split(',');
     e.aliasOf = 0; e.aliasKind = ''; e.region = []; reindex(P); done.add(e.id); stat.F++;
   } else problems.push(`${f}: cannot read "${s.slice(0, 60)}"`);
 }

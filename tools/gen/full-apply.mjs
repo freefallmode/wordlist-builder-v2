@@ -11,7 +11,7 @@ let n = 0, skipped = 0; const problems = [];
 for (const f of fs.readdirSync(here('./' + DIR + '/')).filter(f => /^v-\d+\.txt$/.test(f)).sort()) for (const raw of fs.readFileSync(here('./' + DIR + '/' + f), 'utf8').split(/\r?\n/)) {
   const l = raw.trim(); if (!l || l.startsWith('#')) continue;
   const m = /^SHOW\s+(\S+)\s+(\d+)\s+(.+)$/.exec(l), e = m && P.ix.entry.get(+m[2]);
-  if (!m || !e || e.aliasOf || e.th[m[1]] === undefined) { problems.push(`${f}: cannot apply "${l.slice(0, 70)}"`); continue; }
+  if (!m || !e || e.aliasOf || e.typ[m[1]] === undefined) { problems.push(`${f}: cannot apply "${l.slice(0, 70)}"`); continue; }
   if (SKIP.has(e.id)) { skipped++; continue; }
   const short = m[3].trim(); if (!e.text.toLowerCase().includes(short.toLowerCase())) { problems.push(`${f}: "${short}" is not in "${e.text}"`); continue; }
   e.show = { ...e.show, [m[1]]: short }; e.nameOkIn = [...new Set([...(e.nameOkIn || []), m[1]])];

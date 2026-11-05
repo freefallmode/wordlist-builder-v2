@@ -2,7 +2,7 @@
 // Run: node tools/gen/bare-sample.mjs [count|all] [chunks=2] [dir=bare]   -> tools/gen/<dir>/list-N.txt (fixed seed)
 import fs from 'node:fs';
 import { parseProject } from '../../js/store.js';
-import { reindex, popIn } from '../../js/model.js';
+import { reindex, typicality } from '../../js/model.js';
 const here = p => new URL(p, import.meta.url);
 const P = parseProject(fs.readFileSync(here('../../data/wordlist-en.project.json'), 'utf8')); reindex(P);
 const ALL = process.argv[2] === 'all', N = ALL ? Infinity : +process.argv[2] || 300, C = +process.argv[3] || 2, DIR = process.argv[4] || 'bare';
@@ -23,7 +23,7 @@ for (const t of P.themes) {
 let seed = 20261106; const rnd = () => (seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296;
 if (!ALL) for (let i = items.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [items[i], items[j]] = [items[j], items[i]]; }
 const pick = items.slice(0, N), per = Math.ceil(pick.length / C);
-const d = (t, e) => `${e.id} "${e.text}"${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos} ${e.type} rec ${e.rec} link ${popIn(P, e, t.id) || '-'}`;
+const d = (t, e) => `${e.id} "${e.text}"${e.gloss ? ' [' + e.gloss + ']' : ''} ${e.pos} ${e.type} rec ${e.fam} link ${typicality(P, e, t.id) || '-'}`;
 fs.mkdirSync(here('./' + DIR + '/'), { recursive: true });
 for (let c = 0; c < C; c++) fs.writeFileSync(here(`./${DIR}/list-${c + 1}.txt`), pick.slice(c * per, (c + 1) * per).map(({ t, e, head, cand }, i) => `${c * per + i + 1} | theme ${t.id} "${t.name}"${t.note ? ' (note: ' + t.note.slice(0, 100) + ')' : ''}\n   BARE ${d(t, e)}\n   ${cand.length ? 'FULL-TERM ENTRIES IN LIBRARY: ' + cand.map(x => d(t, x)).join(' ; ') : 'no full-term entry in the library'}`).join('\n') + '\n');
 console.log(items.length + ' bare members in total, listed ' + pick.length + ' in ' + C + ' files');

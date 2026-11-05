@@ -88,14 +88,14 @@ for (const [tid, rows] of Object.entries(DATA)) {
   if (!P.ix.theme.has(tid)) throw Error('no such theme: ' + tid);
   for (const [text, r, inR, o = {}] of rows) {
     let e = sameText(P, text).find(x => (x.gloss || '') === (o.g || ''));
-    if (e) { e.th[tid] = inR; continue; }
-    e = addEntry(P, text, { gloss: o.g || '', pos: o.pos || 'noun', type: o.type || 'common', rec: rec(r), th: { [tid]: inR }, tm: !!o.tm, adult: !!o.adult,
+    if (e) { e.typ[tid] = inR; continue; }
+    e = addEntry(P, text, { gloss: o.g || '', pos: o.pos || 'noun', type: o.type || 'common', fam: rec(r), typ: { [tid]: inR }, tm: !!o.tm, adult: !!o.adult,
       vulgar: !!o.vulgar, sensitive: !!o.sens, region: o.reg || [], status: 'gen' });
     reindex(P); made++;
     for (const [at, kind, ar, ai, areg = [], ao = {}] of o.al || []) {
-      const a = addEntry(P, at, { gloss: ao.g || '', pos: e.pos, type: e.type, rec: rec(ar), aliasOf: e.id, aliasKind: kind, region: areg, tm: e.tm, adult: !!ao.adult,
+      const a = addEntry(P, at, { gloss: ao.g || '', pos: e.pos, type: e.type, fam: rec(ar), aliasOf: e.id, aliasKind: kind, region: areg, tm: e.tm, adult: !!ao.adult,
         vulgar: !!ao.vulgar, status: 'gen' });
-      if (ai !== Math.max(inR, ar)) a.th[tid] = ai;
+      if (ai !== Math.max(inR, ar)) a.typ[tid] = ai;
       reindex(P); made++;
     }
   }

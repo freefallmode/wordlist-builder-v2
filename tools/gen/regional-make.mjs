@@ -16,12 +16,12 @@ const find = (t, g) => { const m = P.entries.filter(e => !e.aliasOf && e.text ==
 const log = [];
 for (const [rt, rg, ot, og, more = []] of PAIRS) {
   const R = find(rt, rg), O = find(ot, og);
-  const shared = Object.keys(O.th).filter(k => R.th[k] !== undefined || more.includes(k));
-  const rest = Object.keys(O.th).filter(k => !shared.includes(k));
+  const shared = Object.keys(O.typ).filter(k => R.typ[k] !== undefined || more.includes(k));
+  const rest = Object.keys(O.typ).filter(k => !shared.includes(k));
   log.push(`${R.text} [${R.region}] <- ${O.text} [${O.region}] | leaves ${shared.join(', ') || '-'} | ${rest.length ? 'stays in ' + rest.join(', ') : 'nothing else'}`);
   if (!APPLY) continue;
-  const N = { ...O, id: P.nextId++, gloss: O.gloss, aliasOf: R.id, aliasKind: 'regional', th: {}, use: {}, show: {}, nameOkIn: [], status: 'gen' };
-  for (const k of shared) { delete O.th[k]; if (O.show) delete O.show[k]; }
+  const N = { ...O, id: P.nextId++, gloss: O.gloss, aliasOf: R.id, aliasKind: 'regional', typ: {}, use: {}, show: {}, nameOkIn: [], status: 'gen' };
+  for (const k of shared) { delete O.typ[k]; if (O.show) delete O.show[k]; }
   for (const t of P.themes) if (t.groups) t.groups = t.groups.map(g => [...new Set(g.map(x => x === O.id ? R.id : x))]).filter(g => g.length > 1);
   for (const a of P.entries) if (a.aliasOf === O.id) a.aliasOf = R.id;
   P.entries.push(N);
@@ -31,7 +31,7 @@ for (const [rt, rg, ot, og, more = []] of PAIRS) {
 }
 console.log(log.join('\n'));
 if (APPLY) {
-  for (const t of P.themes) if (t.groups) t.groups = t.groups.map(g => g.filter(id => P.ix.entry.get(id)?.th[t.id] !== undefined)).filter(g => g.length > 1);   // a group member whose link moved away
+  for (const t of P.themes) if (t.groups) t.groups = t.groups.map(g => g.filter(id => P.ix.entry.get(id)?.typ[t.id] !== undefined)).filter(g => g.length > 1);   // a group member whose link moved away
   reindex(P);
   const bad = validate(P).filter(i => i.sev !== 'info' && !/longer than 20/.test(i.msg) && !/rating-vs-zipf/.test(i.kind || i.msg)); console.log(bad.length, bad.slice(0, 8).map(i => i.msg).join('\n'));
   stampSave(P); fs.writeFileSync(LIB, serializeProject(P)); console.log('library v' + P.lib.version);

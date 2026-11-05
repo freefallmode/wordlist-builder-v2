@@ -2,13 +2,13 @@
 // Run: node tools/apply-words.mjs tools/gen/food-drink.mjs [library file]
 //
 // A data module exports:
-//   DATA   { themeId: [row, ...] }  row = [text, rec, inRec, opts]
-//            rec    how well known the word itself is (1 every child ... 5 few people)
-//            inRec  popularity in THIS theme (1 the first words anyone names for it ... 5 real but peripheral)
+//   DATA   { themeId: [row, ...] }  row = [text, familiarity, typicality, opts]
+//            familiarity  how well known the word itself is (1 every child ... 5 few people)
+//            typicality  how typical the word is of THIS theme (1 the first words anyone names for it ... 5 real but peripheral)
 //            opts   g gloss, pos, type, tm, adult, sens, vulgar, reg [regions], note,
-//                   al [[text, kind, rec, inRec, regions, { g, type, adult, sens, tm, vulgar }], ...]
+//                   al [[text, kind, familiarity, typicality, regions, { g, type, adult, sens, tm, vulgar }], ...]
 //   ALIASES [[themeId, rootText, rootGloss, [alias row, ...]], ...]  adds aliases to a root that already exists (e.g. from an earlier batch)
-//   FIXES  [{ gloss: [text, themeId, newGloss] } | { merge: [text, [themeId, ...], gloss] } | { split: [text, themeId, newGloss, {type, pos, rec}] } | { del: [text, themeId] }, ...]  edits existing entries first (the entry is found by its text and a theme it is in):
+//   FIXES  [{ gloss: [text, themeId, newGloss] } | { merge: [text, [themeId, ...], gloss] } | { split: [text, themeId, newGloss, {type, pos, fam}] } | { del: [text, themeId] }, ...]  edits existing entries first (the entry is found by its text and a theme it is in):
 //          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); split moves one theme link of an entry that was linked for a different meaning onto a new entry with its own meaning label; del removes one
 //   SETTINGS { maxWords: 4, ... }  library settings to set
 //   THEMES { themeId: { pop: 1-5 (theme popularity, 1 most popular), ident: 1-5 (identifiability, 1 obvious ... 5 obscure), ...flag overrides (complete, adult, sensitive, tm, lang, region, note) } }
@@ -45,7 +45,7 @@ for (const f of FIXES || []) {
     if (all.length < 2) throw Error(`merge: only ${all.length} entries for "${text}"`);
     const [keep, ...rest] = all;
     for (const d of rest) {
-      for (const [t, v] of Object.entries(d.th)) if (keep.th[t] === undefined) keep.th[t] = v;
+      for (const [t, v] of Object.entries(d.typ)) if (keep.typ[t] === undefined) keep.typ[t] = v;
       for (const a of P.entries) if (a.aliasOf === d.id) a.aliasOf = keep.id;
       keep.adult ||= d.adult; keep.sensitive ||= d.sensitive; keep.tm ||= d.tm;
       P.entries = P.entries.filter(x => x !== d);
@@ -53,12 +53,12 @@ for (const f of FIXES || []) {
     keep.gloss = gloss;
   } else if (f.split) {
     // an entry was linked to a theme for a different meaning: move that theme link to a new entry with its own meaning label
-    const [text, tid, gloss, o = {}] = f.split, m = find(text, tid).filter(e => e.th[tid] !== undefined);
+    const [text, tid, gloss, o = {}] = f.split, m = find(text, tid).filter(e => e.typ[tid] !== undefined);
     if (m.some(e => e.gloss === gloss)) continue;   // another batch already split it
     if (m.length !== 1) throw Error(`split: ${m.length} entries of "${text}" with their own link to ${tid}`);
-    const old = m[0], r = old.th[tid];
-    delete old.th[tid];
-    addEntry(P, text, { gloss, pos: o.pos || old.pos, type: o.type || 'common', rec: o.rec ?? old.rec, th: { [tid]: r }, status: 'gen' });
+    const old = m[0], r = old.typ[tid];
+    delete old.typ[tid];
+    addEntry(P, text, { gloss, pos: o.pos || old.pos, type: o.type || 'common', fam: (o.fam ?? o.rec) ?? old.fam, typ: { [tid]: r }, status: 'gen' });
   } else if (f.del) {
     const [text, tid] = f.del, m = find(text, tid);
     if (m.length !== 1) throw Error(`del: ${m.length} entries for "${text}" in ${tid}`);
@@ -66,23 +66,23 @@ for (const f of FIXES || []) {
   }
   reindex(P);
 }
-const rec = n => Math.max(0, Math.min(5, n));
+const clampRating = n => Math.max(0, Math.min(5, n));
 const stats = { made: 0, aliases: 0, linked: 0, kept: 0 };
 for (const [tid, rows] of Object.entries(DATA)) {
   if (!P.ix.theme.has(tid)) throw Error('no such theme: ' + tid);
   if (P.ix.theme.get(tid).group) throw Error('theme is a group: ' + tid);
-  for (const [text, r, inR, o = {}] of rows) {
-    if (!(r >= 1 && r <= 5 && inR >= 1 && inR <= 5)) throw Error(`bad rating on "${text}" in ${tid}`);
+  for (const [text, r, typ, o = {}] of rows) {
+    if (!(r >= 1 && r <= 5 && typ >= 1 && typ <= 5)) throw Error(`bad rating on "${text}" in ${tid}`);
     let e = sameText(P, text).find(x => (x.gloss || '') === (o.g || ''));
-    if (e) { if (e.th[tid] === undefined) { e.th[tid] = inR; stats.linked++; } else stats.kept++; continue; }
-    e = addEntry(P, text, { gloss: o.g || '', pos: o.pos || 'noun', type: o.type || 'common', rec: rec(r), th: { [tid]: inR }, tm: !!o.tm, adult: !!o.adult,
+    if (e) { if (e.typ[tid] === undefined) { e.typ[tid] = typ; stats.linked++; } else stats.kept++; continue; }
+    e = addEntry(P, text, { gloss: o.g || '', pos: o.pos || 'noun', type: o.type || 'common', fam: clampRating(r), typ: { [tid]: typ }, tm: !!o.tm, adult: !!o.adult,
       vulgar: !!o.vulgar, sensitive: !!o.sens, region: o.reg || [], note: o.note || '', status: 'gen' });
     reindex(P); stats.made++;
     for (const [at, kind, ar, ai, areg = [], ao = {}] of o.al || []) {
       if (!(ar >= 1 && ar <= 5 && ai >= 1 && ai <= 5)) throw Error(`bad alias rating on "${at}"`);
-      const a = addEntry(P, at, { gloss: ao.g || '', pos: e.pos, type: ao.type || e.type, rec: rec(ar), aliasOf: e.id, aliasKind: kind, region: areg,
+      const a = addEntry(P, at, { gloss: ao.g || '', pos: e.pos, type: ao.type || e.type, fam: clampRating(ar), aliasOf: e.id, aliasKind: kind, region: areg,
         tm: ao.tm ?? e.tm, adult: ao.adult ?? e.adult, sensitive: ao.sens ?? e.sensitive, vulgar: !!ao.vulgar, status: 'gen' });
-      if (ai !== Math.max(inR, ar)) a.th[tid] = ai;
+      if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
       reindex(P); stats.aliases++;
     }
   }
@@ -90,12 +90,12 @@ for (const [tid, rows] of Object.entries(DATA)) {
 for (const [tid, rootText, rootGloss, rows] of ALIASES || []) {
   const root = sameText(P, rootText).find(x => (x.gloss || '') === (rootGloss || '') && !x.aliasOf);
   if (!root) throw Error('no root for alias: ' + rootText);
-  const inR = root.th[tid] ?? 0;
+  const typ = root.typ[tid] ?? 0;
   for (const [at, kind, ar, ai, areg = [], ao = {}] of rows) {
     if (sameText(P, at).some(x => (x.gloss || '') === (ao.g || '') && x.aliasOf === root.id)) continue;
-    const a = addEntry(P, at, { gloss: ao.g || '', pos: root.pos, type: ao.type || root.type, rec: rec(ar), aliasOf: root.id, aliasKind: kind, region: areg,
+    const a = addEntry(P, at, { gloss: ao.g || '', pos: root.pos, type: ao.type || root.type, fam: clampRating(ar), aliasOf: root.id, aliasKind: kind, region: areg,
       tm: ao.tm ?? root.tm, adult: ao.adult ?? root.adult, sensitive: ao.sens ?? root.sensitive, vulgar: !!ao.vulgar, status: 'gen' });
-    if (ai !== Math.max(inR, ar)) a.th[tid] = ai;
+    if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
     reindex(P); stats.aliases++;
   }
 }
@@ -114,10 +114,10 @@ console.log(`${stats.made} words and ${stats.aliases} aliases added, ${stats.lin
 const issues = validate(P).filter(i => i.sev !== 'info' || ['rating-vs-zipf'].includes(i.kind)).filter(i => !['thin', 'empty'].includes(i.kind));
 const ids = new Set(Object.keys(DATA));
 { const done = new URL('./gen/rec/done.json', import.meta.url), seen = new Set(existsSync(done) ? JSON.parse(readFileSync(done, 'utf8')) : []);
-  const fresh = P.entries.filter(e => !e.aliasOf && e.rec && (e.type || 'common') !== 'common' && !seen.has(e.id)).length;
+  const fresh = P.entries.filter(e => !e.aliasOf && e.fam && (e.type || 'common') !== 'common' && !seen.has(e.id)).length;
   if (fresh) console.log(`${fresh} names (people, places, organisations, titles, acronyms) have no recognisability review yet: node tools/gen/rec-make.mjs, then agents under tools/gen/BRIEF-rec.md, then node tools/gen/rec-apply.mjs --apply`); }
 for (const i of issues) {
   const e = i.entryId && P.ix.entry.get(i.entryId);
-  const touched = !e || Object.keys(e.th).some(t => ids.has(t)) || (e.aliasOf && Object.keys(P.ix.entry.get(e.aliasOf)?.th || {}).some(t => ids.has(t)));
+  const touched = !e || Object.keys(e.typ).some(t => ids.has(t)) || (e.aliasOf && Object.keys(P.ix.entry.get(e.aliasOf)?.typ || {}).some(t => ids.has(t)));
   if (touched || i.sev === 'error') console.log(i.sev, i.kind, i.msg);
 }

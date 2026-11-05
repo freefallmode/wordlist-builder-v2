@@ -43,7 +43,7 @@ for (const { t, ws, ents, leaks } of chunk) {
   for (const e of leaks.sort((a, b) => a.text.localeCompare(b.text))) {
     const s = strip(e.text, ws), same = s ? sameText(P, s).filter(x => x !== e) : [];
     const root = e.aliasOf && P.ix.entry.get(e.aliasOf);
-    console.log(`${e.id} ${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''} | ${e.pos || ''} ${e.type} | rec ${e.rec} pop ${e.th[t.id] || (root && root.th[t.id]) || '-'} | ${root ? 'ALIAS (' + e.aliasKind + ') of ' + root.text : 'root'}${Object.keys(e.th).length > 1 ? ' | in ' + Object.keys(e.th).length + ' themes' : ''}` +
-      ` | shorter: ${s ? '"' + s + '"' : '(nothing left)'}${same.length ? ' | existing "' + s + '": ' + same.map(x => `${x.id}${x.gloss ? ' (' + x.gloss + ')' : ''}${x.aliasOf ? ' alias' : ''} rec ${x.rec}${(P.ix.byTheme.get(t.id) || []).includes(x) ? ' ALREADY IN THIS THEME' : ''}`).join('; ') : ''}`);
+    console.log(`${e.id} ${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''} | ${e.pos || ''} ${e.type} | rec ${e.fam} pop ${e.typ[t.id] || (root && root.typ[t.id]) || '-'} | ${root ? 'ALIAS (' + e.aliasKind + ') of ' + root.text : 'root'}${Object.keys(e.typ).length > 1 ? ' | in ' + Object.keys(e.typ).length + ' themes' : ''}` +
+      ` | shorter: ${s ? '"' + s + '"' : '(nothing left)'}${same.length ? ' | existing "' + s + '": ' + same.map(x => `${x.id}${x.gloss ? ' (' + x.gloss + ')' : ''}${x.aliasOf ? ' alias' : ''} rec ${x.fam}${(P.ix.byTheme.get(t.id) || []).includes(x) ? ' ALREADY IN THIS THEME' : ''}`).join('; ') : ''}`);
   }
 }
