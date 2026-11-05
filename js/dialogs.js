@@ -2,7 +2,7 @@
 import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
-import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
+import { POS, TYPES, TYPE_HELP, REGIONS, REC_HELP, POP_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, effRec, eff,
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, themeLocked, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
@@ -48,6 +48,7 @@ export async function editTheme(t, isNew = false) {
     tkind: select(THEME_KINDS.map(k => [k, k]), w.tkind || 'category'),
     rule: h('input', { value: w.rule || '', placeholder: 'hidden:tree, rhyme:ake, palindrome, compound-end:bag, compound-start:snow' }),
     pop: select(IN_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
+    ident: select(IDENT_HELP.map((l, v) => [v, l]), w.ident || 0),
     locked: select([['auto', 'Follow the kind (locked for wordplay, compound and language-specific)'], ['locked', 'Locked: show exactly the linked word'], ['free', 'Allowed: regional and family words may stand in']], w.locked === undefined ? 'auto' : w.locked ? 'locked' : 'free'),
   };
   const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang', 'nameOk'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
@@ -64,7 +65,8 @@ export async function editTheme(t, isNew = false) {
     field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
     field('Rule', f.rule, 'Wordplay and compound themes only: how the game tests a word. hidden:<what>, rhyme:<ending>, palindrome, anagram, homophone, onomatopoeia, double-letters, starts:<what>, ends:<ending>, contains:<letters>, compound-end:<word> for ___ word, compound-start:<word> for word ___, or other.'),
     field('Word substitution', f.locked, 'Whether the game may show a regional, spelling or alias word in place of the one linked (US word for a UK player). Locked themes always show the linked word.'),
-    field('Theme popularity', f.pop, 'How good a pick the theme is for a level (1 most popular and appealing ... 5 least). How hard a theme is to serve is worked out from its words.'),
+    field('Theme popularity', f.pop, 'How familiar and appealing the theme is for a general player (1 most popular ... 5 least). How hard a theme is to work out is its identifiability.'),
+    field('Identifiability', f.ident, 'How easily a player works out the theme from its members (1 obvious ... 5 obscure). Wordplay themes and broad themes ("things made of metal") rate high even when their words are easy.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
     !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, sensitive, trademark, language, disabled) apply to sub-themes.`));
   return dialog(isNew ? 'New theme' : 'Theme: ' + t.name, body, [
@@ -79,7 +81,7 @@ export async function editTheme(t, isNew = false) {
       const pname = parentPick.input.value.trim(), parent = pname ? parentPick.get() : null;
       if (pname && !parent) throw Error('Parent theme not found.');
       if (parent && (parent === t.id || (!isNew && isAncestor(P, t.id, parent)))) throw Error('A theme cannot be inside itself.');
-      Object.assign(w, { name, note: f.note.value.trim(), pop: +f.pop.value });
+      Object.assign(w, { name, note: f.note.value.trim(), pop: +f.pop.value, ident: +f.ident.value });
       const tk = f.tkind.value, rule = f.rule.value.trim();
       if (tk === 'compound' && !/^compound-(end|start):./.test(rule)) throw Error('A compound theme needs a rule: compound-end:<word> or compound-start:<word>.');
       if (tk === 'wordplay' && !rule) throw Error('A wordplay theme needs a rule (or other).');

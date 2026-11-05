@@ -1,0 +1,126 @@
+rain_blank | rain___ | compound compound-start:rain | pop 2 | 27 words | note: words that come after "rain": bow, coat, drop, forest
+   e.g. bow, drop, coat, forest, check, hat, day, wear
+snow_blank | snow___ | compound compound-start:snow | pop 2 | 31 words | note: words that come after "snow": man, flake, ball, board
+   e.g. man, ball, flake, globe, board, drop, plow, suit
+head_blank | head___ | compound compound-start:head | pop 3 | 38 words | note: words that come after "head": ache, line, phone, quarters
+   e.g. ache, phone, lights, set, lamp, line, band, wind
+back_blank | back___ | compound compound-start:back | pop 3 | 37 words | note: words that come after "back": pack, yard, bone, fire
+   e.g. pack, yard, up, bone, door, ground, stroke, flip
+foot_blank | foot___ | compound compound-start:foot | pop 3 | 29 words | note: words that come after "foot": ball, print, step, note
+   e.g. ball, wear, print, bridge, note, path, work, step
+hand_blank | hand___ | compound compound-start:hand | pop 2 | 31 words | note: words that come after "hand": bag, shake, cuff, writing
+   e.g. gun, some, cuff, cream, shake, towel, puppet, writing
+water_blank | water___ | compound compound-start:water | pop 2 | 30 words | note: words that come after "water": fall, melon, proof, color
+   e.g. fall, melon, bottle, lily, polo, park, proof, buffalo
+black_blank | black___ | compound compound-start:black | pop 1 | 41 words | note: words that come after "black": board, bird, smith, mail
+   e.g. hole, widow, board, berry, eye, cat, cab, bird
+home_blank | home___ | compound compound-start:home | pop 2 | 35 words
+   e.g. work, made, run, page, sick, less, plate, owner
+key_blank | key___ | compound compound-start:key | pop 3 | 24 words
+   e.g. ring, board, pad, hole, card, word, chain, fob
+air_blank | air___ | compound compound-start:air | pop 2 | 48 words
+   e.g. port, line, plane, craft, conditioner, bag, raid, mail
+ice_blank | ice___ | compound compound-start:ice | pop 2 | 35 words | note: words that come after "ice": cream, berg, cube, skate, pack, age
+   e.g. berg, cube, cream, pop, tea, pack, rink, skate
+moon_blank | moon___ | compound compound-start:moon | pop 3 | 31 words | note: words that come after "moon": light, shine, walk, beam, stone, struck
+   e.g. light, landing, walk, shine, lit, rise, dust, beam
+paper_blank | paper___ | compound compound-start:paper | pop 3 | 32 words | note: words that come after "paper": back, clip, weight, work, boy, plane
+   e.g. bag, back, clip, work, towel, plane, cup, cut
+door_blank | door___ | compound compound-start:door | pop 2 | 25 words | note: words that come after "door": bell, step, mat, knob, way, stop
+   e.g. mat, way, bell, man, step, knob, stop, lock
+blue_blank | blue___ | compound compound-start:blue | pop 2 | 33 words | note: words that come after "blue": berry, bird, print, bell, grass, jay
+   e.g. jay, bird, berry, whale, print, jeans, cheese, tit
+sand_blank | sand___ | compound compound-start:sand | pop 3 | 28 words | note: words that come after "sand": castle, paper, storm, box, bag, stone
+   e.g. dune, paper, storm, castle, man, pit, box, bag
+eye_blank | eye___ | compound compound-start:eye | pop 3 | 28 words | note: words that come after "eye": ball, brow, lash, lid, sight, witness
+   e.g. lid, brow, ball, lash, test, wear, sight, liner
+life_blank | life___ | compound compound-start:life | pop 3 | 33 words | note: words that come after "life": boat, guard, time, style, jacket, span
+   e.g. boat, time, guard, jacket, line, raft, long, saver
+over_blank | over___ | compound compound-start:over | pop 4 | 48 words | note: words that come after "over": coat, night, time, board, flow, look
+   e.g. coat, time, night, all, due, dose, look, come
+hidden_birds | hidden birds | wordplay hidden:bird | pop 4 | 32 words | note: a bird spelled inside a longer word: bOWL, cROWn, rEGRET, paTTERN
+   e.g. bowl, crown, crowbar, towel, crowd, howl, wrench, trowel
+hidden_insects | hidden insects | wordplay hidden:insect | pop 4 | 34 words | note: an insect spelled inside a longer word: giANT, MOTHer, sTICKy, BUGle
+   e.g. giant, antler, sticky, mother, beetle, bugbear, beer, bugle
+hidden_body_parts | hidden body parts | wordplay hidden:body part | pop 4 | 39 words | note: a body part inside a longer word: CHINa, sHIP, bEARd
+   e.g. ship, China, beard, army, whip, chair, snail, kneel
+hidden_colors | hidden colors | wordplay hidden:color | pop 4 | 42 words | note: a color inside a longer word: shREDded, TANgo, sTEALth
+   e.g. tango, bored, tired, scared, hundred, goldfish, shredded, greyhound
+hidden_numbers | hidden numbers | wordplay hidden:number | pop 3 | 30 words | note: a number inside a longer word: lONEly, oFTEN, wEIGHT
+   e.g. none, often, alone, lonely, weight, kitten, mitten, tennis
+hidden_fruits | hidden fruits | wordplay hidden:fruit | pop 4 | 27 words | note: a fruit inside a longer word: FIGure, sPEARs, sLIMEy, PLUMber
+   e.g. figure, plumber, spear, plump, pearl, appear, slime, dapple
+hidden_names | hidden names | wordplay hidden:name | pop 4 | 52 words | note: a first name inside a longer word: BENch, ANNoy, TOMato, EVEning
+   e.g. bench, annoy, tomato, evening, candy, banner, timber, baron
+hidden_vehicles | hidden vehicles | wordplay hidden:vehicle | pop 4 | 39 words | note: a vehicle inside a longer word: sCARf, aBUSe, CABin, sTRAMp
+   e.g. cabin, scarf, abuse, business, busy, carrot, cable, scarce
+hidden_trees | hidden trees | wordplay hidden:tree | pop 4 | 31 words | note: a tree inside a longer word: sOAK, hELMet, sPINE, sTEAK
+   e.g. soak, ashes, helmet, spine, steak, ashtray, fire, firm
+sounds_like_a_letter | sounds like a letter | wordplay homophone | pop 3 | 27 words | note: words that sound like a letter name: bee, sea, tea, eye, queue
+   e.g. tea, bee, eye, see, pea, you, sea, why
+sounds_like_a_number | sounds like a number | wordplay homophone | pop 3 | 19 words | note: words that sound like a number: won, too, for, ate, fore
+   e.g. for, ate, won, too, to, fore, set, dry
+homophones | homophones | wordplay homophone | pop 2 | 61 words | note: words that sound like another word but are spelled differently
+   e.g. bear, write, their, there, right, our, pear, sail
+homographs | homographs | wordplay other | pop 3 | 44 words | note: one spelling, two pronunciations: bass, bow, lead, tear, wind
+   e.g. bow, lead, wind, bass, tear, row, live, read
+rhymes_with_light | rhymes with light | wordplay rhyme:ight | pop 2 | 45 words | note: kite, bite, white, height, byte
+   e.g. kite, white, night, right, height, byte, bite, sight
+rhymes_with_bear | rhymes with bear | wordplay rhyme:air | pop 3 | 46 words | note: chair, hair, pear, where, stare
+   e.g. pear, hair, bare, chair, air, hare, rare, wear
+rhymes_with_ring | rhymes with ring | wordplay rhyme:ing | pop 3 | 27 words | note: king, sing, wing, spring, thing
+   e.g. king, wing, sing, thing, bring, swing, sting, string
+rhymes_with_blue | rhymes with blue | wordplay rhyme:oo | pop 2 | 56 words | note: shoe, two, glue, through, crew
+   e.g. two, zoo, glue, shoe, through, flu, moo, who
+rhymes_with_cake | rhymes with cake | wordplay rhyme:ake | pop 2 | 41 words | note: lake, snake, break, steak, ache
+   e.g. lake, steak, snake, break, bake, rake, make, take
+rhyming_pairs | rhyming pairs | wordplay other | pop 2 | 42 words | note: rhyming two-part words: hocus pocus, helter skelter, walkie talkie
+   e.g. hocus pocus, walkie talkie, helter skelter, itsy bitsy, easy peasy, mumbo jumbo, hanky panky, super duper
+zigzag_words | zigzag words | wordplay other | pop 3 | 44 words | note: two-part words that change only the vowel: zigzag, ping pong, tick tock, flip flop
+   e.g. zigzag, ping pong, tick tock, flip flop, hip hop, see saw, chit chat, ding dong
+rhymes_with_cat | rhymes with cat | wordplay rhyme:at | pop 3 | 31 words
+   e.g. rat, bat, hat, mat, fat, sat, chat, that
+palindromes | palindromes | wordplay palindrome | pop 2 | 43 words | note: read the same backwards: level, radar, kayak, noon
+   e.g. kayak, level, radar, racecar, wow, mom, dad, noon
+reversible_words | reversible words | wordplay other | pop 3 | 50 words | note: spell a different word backwards: stressed, drawer, star, live
+   e.g. dog, god, star, live, stop, stressed, rat, tap
+double_letters | double letters | wordplay double-letters | pop 3 | 38 words | note: words with two pairs of double letters: balloon, coffee, bookkeeper, committee
+   e.g. coffee, balloon, committee, bookkeeper, success, Tennessee, embarrass, cappuccino
+no_vowels | no vowels | wordplay other | pop 3 | 40 words | note: words without a, e, i, o, u: rhythm, myth, gym, lynx
+   e.g. gym, lynx, myth, rhythm, fly, cry, sky, why
+all_five_vowels | all five vowels | wordplay contains:aeiou | pop 3 | 30 words | note: words containing a, e, i, o and u: education, sequoia, facetious
+   e.g. sequoia, education, facetious, abstemious, unequivocal, sacrilegious, equation, dialogue
+anagrams_of_each_other | anagrams of each other | wordplay anagram | pop 3 | 44 words | note: each level uses one set of four mutual anagrams: listen, silent, enlist, tinsel
+   e.g. listen, tinsel, silent, enlist, live, evil, Earth, heart
+letters_in_alphabetical_order | letters in alphabetical order | wordplay other | pop 4 | 31 words | note: letters run a to z: almost, first, ghost, begin
+   e.g. ghost, first, begin, almost, most, dirty, empty, forty
+words_made_of_roman_numerals | words made of roman numerals | wordplay other | pop 4 | 21 words | note: only the letters I V X L C D M: civic, vivid, mix, dim
+   e.g. mix, dim, vivid, civic, did, mild, livid, mimic
+ough_words | ough words | wordplay contains:ough | pop 3 | 35 words | note: words spelled with "ough": cough, dough, through, thought
+   e.g. dough, rough, cough, tough, enough, through, though, bought
+acronyms | acronyms | wordplay other | pop 2 | 33 words | note: abbreviations said as a word: laser, scuba, radar, NASA
+   e.g. NATO, NASA, radar, laser, scuba, YOLO, ASAP, sonar
+silent_k_words | silent k words | wordplay contains:kn | pop 3 | 24 words | note: knee, knife, knot, knight
+   e.g. knee, knot, know, knife, knight, knit, kneel, knock
+silent_b_words | silent b words | wordplay contains:silent-b | pop 3 | 25 words | note: lamb, thumb, debt, climb
+   e.g. comb, lamb, thumb, climb, limb, bomb, dumb, debt
+silent_w_words | silent w words | wordplay contains:wr | pop 4 | 28 words | note: write, wrist, sword, answer
+   e.g. wrist, write, sword, wrong, answer, two, wrap, wrinkle
+silent_g_words | silent g words | wordplay contains:gn | pop 4 | 31 words
+   e.g. sign, gnome, design, gnat, gnaw, foreign, campaign, gnu
+starts_with_a_body_part | starts with a body part | wordplay starts:body part | pop 3 | 47 words | note: words that begin with a body part: handsome, armchair, headline, earring, legend, shipshape
+   e.g. legend, earring, armchair, backpack, handsome, footprint, armpit, eyelid
+starts_with_a_color | starts with a color | wordplay starts:color | pop 3 | 48 words | note: words that begin with a color: redeem, greenhouse, blackmail, whiteboard, goldfish, pinkie
+   e.g. redhead, goldfish, bluebird, blackmail, greenhouse, blackboard, whiteboard, pinkie
+starts_with_a_number | starts with a number | wordplay starts:number | pop 3 | 33 words | note: words that begin with a number: oneself, twofold, tenant, sixpence, fourteen, ninety
+   e.g. ninety, eighty, tent, onesie, tennis, fourth, sixteen, fourteen
+starts_with_a_pet | starts with a pet | wordplay starts:pet | pop 3 | 14 words | note: one word for each pet that begins with its name but has nothing to do with it: category, ratchet, dogmatic, fishy, pigme
+   e.g. pupil, fishy, coward, ratchet, category, henna, mousse, goatee
+starts_with_dog | starts with dog | wordplay starts:dog | pop 3 | 5 words | note: words that begin with "dog" but have nothing to do with it: dogmatic, doggerel, dogged, dogsbody
+   e.g. dogmatic, dogged, doggone, doggerel, dogsbody
+starts_with_cat | starts with cat | wordplay starts:cat | pop 3 | 5 words | note: words that begin with "cat" but have nothing to do with it: category, catalogue, catapult, catastrophe
+   e.g. category, catapult, catalogue, cathedral, catastrophe
+starts_with_rat | starts with rat | wordplay starts:rat | pop 3 | 5 words | note: words that begin with "rat" but have nothing to do with it: ratchet, ratio, rattle, ratify
+   e.g. ratchet, ratio, rattle, ratify, rattan
+starts_with_pig | starts with pig | wordplay starts:pig | pop 3 | 4 words | note: words that begin with "pig" but have nothing to do with it: pigment, pigeon, pigtails, pigheaded
+   e.g. pigment, pigeon, pigtails, pigheaded

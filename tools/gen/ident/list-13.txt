@@ -1,0 +1,278 @@
+buildings | buildings | category | pop 1 | 70 words
+   e.g. house, hotel, castle, church, school, museum, factory, library
+buildings_to_live_in | buildings to live in | category | pop 1 | 30 words
+   e.g. house, mansion, apartment, condo, cottage, bungalow, penthouse, mobile home
+traditional_dwellings | traditional dwellings | category | pop 3 | 34 words | note: igloo, yurt, tepee, longhouse, hogan, rondavel, trullo
+   e.g. igloo, tepee, hut, yurt, cave, wigwam, mud hut, tent
+religious_buildings | religious buildings | category | pop 3 | 36 words
+   e.g. church, mosque, temple, cathedral, synagogue, abbey, chapel, monastery
+public_buildings | public buildings | category | pop 2 | 34 words
+   e.g. school, library, hospital, town hall, post office, fire station, police station, museum
+farm_buildings | farm buildings | category | pop 2 | 41 words
+   e.g. barn, silo, stable, farmhouse, dairy, pigsty, cowshed, henhouse
+industrial_buildings | industrial buildings | category | pop 3 | 46 words | note: factory, warehouse, mill, refinery, silo, foundry, power station
+   e.g. factory, warehouse, power station, mill, foundry, refinery, steelworks, silo
+shops | shops | category | pop 1 | 30 words
+   e.g. bakery, butcher, pharmacy, bookstore, toy store, pet store, shoe store, supermarket
+towers_and_skyscrapers | towers and skyscrapers | category | pop 3 | 37 words | note: kinds of tower: lighthouse, minaret, belfry, spire, pagoda, watchtower
+   e.g. Eiffel, Big Ben, skyscraper, Empire State Building, Pisa, clock, high-rise, lighthouse
+middle_eastern_buildings | middle eastern buildings | category | pop 4 | 32 words | note: souk, bazaar, minaret, hammam, caravanserai, riad, kasbah
+   e.g. souk, mosque, bazaar, minaret, Kaaba, Hagia Sophia, bedouin tent, Al-Aqsa Mosque
+east_asian_buildings | east asian buildings | category | pop 4 | 34 words | note: pagoda, stupa, shrine, teahouse, dojo, ryokan, hanok
+   e.g. temple, pagoda, shrine, Forbidden City, dojo, torii, teahouse, Summer Palace
+road_types | road types | category | pop 2 | 37 words
+   e.g. lane, street, avenue, highway, freeway, motorway, dirt, alley
+street_names | street names | category | pop 4 | 36 words | note: common generic names: Main, High, Church, Elm, Park, Station, Mill
+   e.g. Oak, High, Main, Church, Elm, King, Queen, Bridge
+street_furniture | street furniture | category | pop 2 | 34 words
+   e.g. bench, bus stop, lamp post, trash can, streetlight, traffic light, sign, hydrant
+traffic_words | traffic words | category | pop 2 | 47 words
+   e.g. gridlock, rush hour, honk, cone, detour, commute, overtake, junction
+parts_of_a_road | parts of a road | category | pop 3 | 34 words
+   e.g. lane, surface, sidewalk, curb, tarmac, asphalt, pothole, markings
+parts_of_a_town | parts of a town | category | pop 2 | 45 words
+   e.g. mall, suburb, square, downtown, high street, city centre, plaza, old town
+kinds_of_settlements | kinds of settlements | category | pop 3 | 36 words | note: hamlet, village, town, city, suburb, metropolis, borough
+   e.g. town, city, village, suburb, hamlet, capital, metropolis, colony
+national_symbols | national symbols | category | pop 3 | 51 words
+   e.g. flag, anthem, bald eagle, maple leaf, Union Jack, coat of arms, Stars and Stripes, harp
+national_animals | national animals | category | pop 3 | 38 words
+   e.g. lion, kangaroo, bald eagle, emu, kiwi, jaguar, dragon, rooster
+national_flowers | national flowers | category | pop 3 | 39 words
+   e.g. rose, tulip, poppy, lotus, thistle, daffodil, shamrock, edelweiss
+national_dishes | national dishes | category | pop 2 | 42 words
+   e.g. sushi, paella, fish and chips, taco, pizza, kimchi, haggis, fondue
+national_sports | national sports | category | pop 3 | 39 words
+   e.g. rugby, cricket, baseball, judo, sumo, hurling, lacrosse, taekwondo
+national_instruments | national instruments | category | pop 3 | 48 words
+   e.g. harp, sitar, bagpipes, didgeridoo, tabla, ukulele, bouzouki, shamisen
+national_costumes | national costumes | category | pop 3 | 44 words
+   e.g. kilt, sari, kimono, lederhosen, clogs, dirndl, hanbok, ao dai
+symbols_of_the_usa | symbols of the usa | category | pop 2 | 9 words
+   e.g. bald eagle, Stars and Stripes, Uncle Sam, Statue of Liberty, Old Glory, Liberty Bell, Star-Spangled Banner, great seal
+british_isles_symbols | british isles symbols | category | pop 3 | 9 words
+   e.g. Union Jack, harp, thistle, daffodil, shamrock, Britannia, red dragon, John Bull
+cars | cars | category | pop 1 | 64 words
+   e.g. tire, driver, engine, windshield, sports car, steering wheel, SUV, hood
+car_brands | car brands | category | pop 1 | 51 words
+   e.g. BMW, ford, Audi, Honda, Tesla, Toyota, Nissan, Porsche
+german_car_brands | german car brands | category | pop 3 | 21 words
+   e.g. BMW, Audi, Porsche, Mercedes, Volkswagen, Mercedes-Benz, Opel, Smart
+japanese_car_brands | japanese car brands | category | pop 2 | 18 words
+   e.g. Honda, Toyota, Nissan, Mazda, Lexus, Subaru, Mitsubishi, Isuzu
+american_car_brands | american car brands | category | pop 3 | 30 words
+   e.g. ford, Tesla, Chevrolet, Cadillac, Chrysler, Ram, GMC, jeep
+british_car_brands | british car brands | category | pop 3 | 27 words
+   e.g. Mini, Jaguar, Rolls-Royce, Aston Martin, MG, Bentley, Land Rover, Lotus
+supercar_makers | supercar makers | category | pop 2 | 10 words
+   e.g. Porsche, Ferrari, Lamborghini, Lotus, McLaren, Bugatti, Maserati, Aston Martin
+car_parts | car parts | category | pop 2 | 55 words
+   e.g. tire, wheel, brake, engine, windshield, steering wheel, hood, door
+dashboard_items | dashboard items | category | pop 3 | 30 words | note: things on or in a car dashboard: speedometer, odometer, glove box, fuel gauge
+   e.g. speedometer, radio, speedo, odometer, glove box, tachometer, fuel gauge, rev counter
+under_the_bonnet | engine bay parts | category | pop 3 | 17 words
+   e.g. piston, battery, radiator, spark plug, crankshaft, gasket, camshaft, dipstick
+exterior_parts | car exterior parts | category | pop 2 | 14 words
+   e.g. tire, wheel, windshield, hood, door, trunk, bumper, headlight
+car_types | car types | category | pop 2 | 43 words
+   e.g. SUV, sedan, sports, coupe, muscle, Estate, hybrid, minivan
+famous_car_models | famous car models | category | pop 3 | 34 words | note: named models: Model T, Beetle, Mustang, Mini, Corvette, Corolla
+   e.g. Mini, Beetle, Mustang, Corolla, Corvette, Tin Lizzie, Golf, Civic
+driving_words | driving words | category | pop 2 | 40 words
+   e.g. park, test, brake, steer, speeding, honk, skid, merge
+motor_racing | motor racing | category | pop 2 | 45 words
+   e.g. F1, pit stop, Formula 1, Grand Prix, pole position, checkered flag, lap, NASCAR
+famous_race_tracks | famous race tracks | place | pop 4 | 34 words | note: Monza, Silverstone, Daytona, Le Mans, Suzuka, Indianapolis
+   e.g. Monza, Monaco, Silverstone, Indianapolis, Spa-Francorchamps, Suzuka, Le Mans, Daytona
+road_signs | road signs | category | pop 3 | 55 words
+   e.g. stop, one way, no entry, speed limit, detour, give way, dead end, road work
+gas_station | gas station | category | pop 3 | 38 words
+   e.g. pump, nozzle, service station, diesel, fill up, unleaded, gasoline, convenience store
+parking_words | parking words | category | pop 3 | 38 words
+   e.g. car park, spot, ticket, parallel, no parking, curb, space, meter
+car_accessories | car accessories | category | pop 3 | 45 words
+   e.g. GPS, floor mat, seat cover, dash cam, fuzzy dice, child seat, phone mount, air freshener
+things_inside_the_cabin | car interior items | category | pop 2 | 13 words
+   e.g. steering wheel, seat belt, dashboard, speedometer, airbag, sunroof, odometer, glove box
+public_transportation | public transportation | category | pop 1 | 59 words
+   e.g. bus, train, subway, bus stop, school bus, bus station, fare, coach
+bus_types | bus types | category | pop 2 | 38 words
+   e.g. city, school, double-decker, tour, coach, minibus, shuttle, open-top
+on_a_bus | on a bus | category | pop 2 | 41 words
+   e.g. seat, stop, driver, passenger, fare, bell, rider, window
+ticket_words | ticket words | category | pop 3 | 57 words | note: fare, pass, one-way, round-trip, stub, validate
+   e.g. fare, ticket, one-way, round-trip, boarding pass, pass, booth, season
+commuting_words | commuting words | category | pop 2 | 47 words
+   e.g. delay, commute, station, commuter, rush hour, packed, carpool, platform
+taxis_of_the_world | taxis of the world | category | pop 3 | 40 words | note: cab, tuk-tuk, jeepney, matatu, dolmus, pedicab, water taxi
+   e.g. cab, Uber, taxi, tuk-tuk, black cab, yellow cab, Lyft, rickshaw
+cable_cars_and_lifts | cable cars and lifts | category | pop 4 | 41 words | note: cable car, gondola, chairlift, funicular, T-bar, aerial tram
+   e.g. gondola, chairlift, cable car, T-bar, funicular, aerial tram, ski gondola, San Francisco cable car
+air_travel | air travel | category | pop 1 | 66 words
+   e.g. jet, plane, pilot, runway, flight, airport, takeoff, landing
+aircraft_types | aircraft types | category | pop 2 | 47 words
+   e.g. jet, plane, airplane, airliner, helicopter, fighter jet, drone, glider
+plane_parts | plane parts | category | pop 2 | 43 words
+   e.g. wing, tail, cockpit, propeller, jet engine, landing gear, cabin, window
+airport_words | airport words | category | pop 1 | 45 words
+   e.g. gate, runway, luggage, check-in, terminal, security, arrivals, boarding
+flight_crew | flight crew | category | pop 3 | 37 words
+   e.g. pilot, captain, co-pilot, attendant, stewardess, first officer, airline pilot, air traffic controller
+airlines | airlines | category | pop 2 | 65 words
+   e.g. Delta, United, Emirates, American, Air France, British Airways, Sia, KLM
+european_airlines | european airlines | category | pop 3 | 33 words
+   e.g. Lufthansa, Air France, British Airways, KLM, Ryanair, easyJet, Virgin Atlantic, SAS
+asian_airlines | asian airlines | category | pop 4 | 32 words
+   e.g. Sia, JAL, Cathay Pacific, AirAsia, Malaysia, Air India, Air China, Korean Air
+middle_eastern_airlines | middle eastern airlines | category | pop 5 | 28 words
+   e.g. Emirates, Qatar Airways, El Al, Etihad, Turkish, EgyptAir, Saudia, Pegasus
+airlines_of_the_americas | airlines of the americas | category | pop 4 | 17 words
+   e.g. Delta, United, Southwest, Air Canada, Pan Am, Alaska, JetBlue, Hawaiian
+low_cost_airlines | low-cost airlines | category | pop 3 | 8 words
+   e.g. Ryanair, easyJet, Southwest, JetBlue, Spirit, Wizz Air, Frontier, Allegiant
+flying_machines | flying machines | category | pop 2 | 47 words
+   e.g. jet, plane, airplane, helicopter, hot air balloon, drone, glider, chopper
+famous_airports | famous airports | place | pop 3 | 40 words | note: Heathrow, JFK, Changi, O'Hare, Schiphol, Narita
+   e.g. JFK, LAX, Heathrow, O'Hare, Changi, Kennedy, Gatwick, Schiphol
+in_flight_words | in-flight words | category | pop 2 | 51 words | note: tray table, overhead bin, aisle seat, seatbelt sign, turbulence
+   e.g. turbulence, tray table, overhead bin, seatbelt sign, takeoff, landing, aisle seat, window seat
+in_case_of_trouble | in-flight precautions | category | pop 3 | 11 words
+   e.g. seatbelt sign, life jacket, oxygen mask, emergency exit, air sickness bag, safety demonstration, exit row, life vest
+places_you_can_sit | places to sit on a plane | category | pop 3 | 10 words
+   e.g. aisle seat, window seat, first class, middle seat, economy class, business class, exit row, emergency row
+aircraft_makers | aircraft makers | category | pop 4 | 49 words | note: Boeing, Airbus, Embraer, Cessna, Lockheed, Antonov
+   e.g. Boeing, Airbus, Cessna, Embraer, Lockheed, Lockheed Martin, Piper, Antonov
+hot_air_balloon_parts | hot air balloon parts | category | pop 4 | 36 words
+   e.g. burner, basket, envelope, wicker, hot air, propane, crew, lift
+boats_and_ships | boats and ships | category | pop 1 | 66 words
+   e.g. ship, boat, sail, yacht, anchor, captain, sailboat, hull
+boat_types | boat types | category | pop 2 | 48 words
+   e.g. ferry, yacht, canoe, kayak, rowboat, trawler, sailboat, speedboat
+small_boats | small boats | category | pop 2 | 25 words | note: canoe, kayak, dinghy, rowboat, punt, raft, skiff
+   e.g. canoe, kayak, dinghy, rowboat, raft, punt, sailboat, inflatable
+sailing_ships | sailing ships | category | pop 3 | 34 words | note: schooner, galleon, clipper, sloop, ketch, brig
+   e.g. galleon, tall ship, clipper, schooner, Mayflower, Santa Maria, brig, ketch
+working_boats | working boats | category | pop 3 | 32 words | note: tugboat, trawler, barge, tanker, icebreaker, dredger
+   e.g. tanker, tugboat, fishing, cargo ship, container ship, ferry, barge, trawler
+traditional_boats | traditional boats | category | pop 3 | 30 words | note: gondola, junk, dhow, felucca, sampan, outrigger, gulet
+   e.g. junk, gondola, Viking ship, kayak, sampan, dugout, longship, longboat
+pleasure_boats | pleasure boats | category | pop 2 | 29 words
+   e.g. yacht, sailboat, speedboat, motorboat, motor yacht, dinghy, rowboat, houseboat
+ship_parts | ship parts | category | pop 2 | 48 words
+   e.g. bow, hull, mast, sail, deck, stern, anchor, porthole
+sailing_words | sailing words | category | pop 2 | 51 words
+   e.g. capsize, moor, crew, ahoy, helm, tack, port, knot
+sailing_actions | sailing actions | category | pop 3 | 10 words
+   e.g. capsize, tack, reef, heel, hoist, jibe, furl, trim
+gear_above_the_deck | sailboat gear above deck | category | pop 4 | 8 words
+   e.g. mainsail, spinnaker, jib, boom, rigging, Genoa, sheet, halyard
+ports_and_harbors | ports and harbors | category | pop 3 | 47 words | note: parts of a harbor: dock, pier, quay, wharf, jetty, marina, berth
+   e.g. moor, pier, dock, harbor, harbour master, buoy, quay, jetty
+famous_ships | famous ships | category | pop 3 | 60 words
+   e.g. Titanic, Mayflower, Santa Maria, Ark, Nina, Pinta, Bounty, Lusitania
+ocean_liners | ocean liners | category | pop 4 | 13 words
+   e.g. Titanic, Lusitania, Britannic, Carpathia, Queen Mary, Costa Concordia, Queen Elizabeth 2, Olympic
+exploration_ships | exploration ships | category | pop 3 | 16 words
+   e.g. Mayflower, Santa Maria, Nina, Pinta, HMS Beagle, Golden Hind, Kon-Tiki, Endeavour
+knots | knots | category | pop 3 | 36 words | note: knots you tie: bowline, reef knot, clove hitch, sheepshank
+   e.g. reef, square, shoelace, bow, slip, double, bowline, clove hitch
+famous_canals | famous canals | place | pop 4 | 25 words | note: Suez, Panama, Erie, Kiel, Corinth, Grand Canal
+   e.g. Suez, Panama, Grand Canal, Erie, Kiel, Midi, Rideau, Corinth
+nautical_directions | nautical directions | category | pop 4 | 38 words | note: port, starboard, bow, stern, aft, leeward, windward
+   e.g. bow, port, stern, starboard, port side, aft, fore, leeward
+ship_crew | ship crew | category | pop 2 | 38 words | note: captain, first mate, bosun, deckhand, purser, helmsman
+   e.g. sailor, seaman, captain, first mate, mate, bosun, skipper, deckhand
+submarine_words | submarine words | category | pop 4 | 31 words
+   e.g. torpedo, periscope, sonar, Nautilus, conning tower, sail, U-boat, minisub
+wind_powered_vessels | wind-powered vessels | category | pop 3 | 14 words
+   e.g. yacht, sailboat, junk, galleon, clipper, schooner, catamaran, dhow
+human_powered_craft | human-powered craft | category | pop 3 | 11 words
+   e.g. canoe, kayak, rowboat, raft, dinghy, gondola, punt, skiff
+trains | trains | category | pop 1 | 54 words
+   e.g. track, train, engine, station, railroad, platform, conductor, locomotive
+train_types | train types | category | pop 2 | 33 words
+   e.g. steam, bullet, passenger, diesel, express, freight, monorail, commuter
+parts_of_a_train | parts of a train | category | pop 3 | 35 words
+   e.g. engine, locomotive, cab, railcar, caboose, whistle, passenger car, boxcar
+railway_words | railway words | category | pop 4 | 32 words
+   e.g. line, track, signal, tunnel, switch, viaduct, schedule, junction
+station_words | station words | category | pop 2 | 33 words
+   e.g. platform, departures board, clock, schedule, terminus, waiting room, ticket booth, mind the gap
+famous_trains | famous trains | category | pop 3 | 32 words
+   e.g. Orient Express, Flying Scotsman, Thomas the Tank Engine, Eurostar, Polar Express, Trans-Siberian, Hogwarts Express, TGV
+high_speed_trains | high-speed trains | category | pop 4 | 28 words | note: Shinkansen, TGV, ICE, AVE, Eurostar, Acela, KTX
+   e.g. bullet, TGV, Eurostar, ICE, Acela, maglev, AVE, KTX
+famous_locomotives | famous locomotives | category | pop 4 | 29 words | note: Flying Scotsman, Mallard, Rocket, Big Boy
+   e.g. Rocket, Thomas, Flying Scotsman, Mallard, Big Boy, Percy, Gordon, Tornado
+metro_systems | metro systems | place | pop 3 | 30 words | note: names of city rail systems: Tube, U-Bahn, BART, MTR, the El, Marmaray
+   e.g. Tube, Paris, New York subway, London Underground, Tokyo, U-Bahn, MTR, DLR
+famous_train_stations | famous train stations | place | pop 4 | 41 words | note: Grand Central, King's Cross, Gare du Nord, Haydarpasa, Shinjuku
+   e.g. King's Cross, Grand Central, Penn, Penn, Waterloo, Paddington, St Pancras, Gare du Nord
+railroad_jobs | railroad jobs | category | pop 4 | 27 words | note: conductor, engineer, porter, signalman, stoker, brakeman
+   e.g. engineer, conductor, train driver, ticket collector, porter, station master, ticket inspector, locomotive driver
+bicycle_parts | bicycle parts | category | pop 2 | 37 words
+   e.g. pedal, chain, frame, spokes, brakes, bike tire, handlebars, rim
+bike_types | bike types | category | pop 1 | 31 words
+   e.g. MTB, road, bicycle, BMX, tandem, racing, folding, electric
+motorcycle_brands | motorcycle brands | category | pop 2 | 33 words
+   e.g. Honda, Harley, Yamaha, Kawasaki, Harley-Davidson, BMW, Suzuki, Ducati
+motorcycle_types | motorcycle types | category | pop 3 | 31 words | note: chopper, moped, dirt bike, cruiser, scooter, trike, cafe racer
+   e.g. moped, dirt bike, motor scooter, custom chopper, trike, cruiser, sport bike, motocross bike
+cycling_races | cycling races | category | pop 4 | 37 words
+   e.g. Giro, Giro d'Italia, Tour de France, Vuelta a Espana, Paris-Roubaix, Tour of Flanders, Paris-Nice, Il Lombardia
+cycling_words | cycling words | category | pop 3 | 36 words
+   e.g. cyclist, peloton, flat tire, yellow jersey, stage, velodrome, breakaway, time trial
+skateboard_tricks | skateboard tricks | category | pop 4 | 52 words
+   e.g. ollie, kickflip, air, grind, heelflip, shove-it, pop shove-it, 900
+ledge_tricks | skateboard ledge tricks | category | pop 5 | 11 words
+   e.g. grind, 5-0, 50-50, nosegrind, tailslide, noseslide, boardslide, blunt
+tricks_where_the_board_spins | tricks where the board spins | category | pop 4 | 11 words
+   e.g. kickflip, heelflip, shove-it, pop shove-it, 360 flip, varial, bigspin, tre flip
+scooters_and_skates | scooters and skates | category | pop 2 | 28 words | note: kick scooter, roller skates, inline skates, skateboard, hoverboard, unicycle
+   e.g. skates, scooter, skateboard, roller skates, ice, Razor, rollerblades, kick scooter
+motorcycle_parts | motorcycle parts | category | pop 2 | 36 words
+   e.g. engine, fuel tank, handlebars, throttle, headlight, kickstand, tail light, disc brake
+skate_park_features | skate park features | category | pop 3 | 39 words
+   e.g. ramp, half pipe, quarter pipe, bowl, rail, ledge, stairs, halfpipe
+skateboard_parts | skateboard parts | category | pop 4 | 31 words
+   e.g. deck, truck, skateboard wheels, board, bearings, grip tape, tail, nose
+journeys | journeys | category | pop 2 | 53 words | note: words for a trip: voyage, trek, tour, excursion, expedition, outing, odyssey
+   e.g. tour, trip, voyage, road trip, trek, drive, outing, cruise
+kinds_of_travelers | kinds of travelers | category | pop 2 | 31 words | note: tourist, backpacker, nomad, pilgrim, commuter, globetrotter, hitchhiker
+   e.g. tourist, backpacker, commuter, explorer, passenger, hitchhiker, vacationer, globetrotter
+travel_verbs | travel verbs | category | pop 2 | 34 words | note: depart, arrive, board, embark, roam, wander, commute, hitchhike
+   e.g. travel, arrive, depart, tour, board, voyage, embark, journey
+famous_routes | famous routes | place | pop 3 | 40 words | note: Silk Road, Route 66, Camino de Santiago, Pan-American Highway, Spice Route
+   e.g. Silk Road, Mother Road, Oregon Trail, Spice, Inca Trail, Appalachian Trail, Camino de Santiago, Pan-American Highway
+animal_powered_travel | animal-powered travel | category | pop 3 | 34 words | note: camel, mule, dog sled, ox cart, elephant, llama, horse and buggy
+   e.g. camel, horseback, horse and cart, horse and buggy, horse-drawn carriage, mule, donkey, sleigh
+giving_directions | giving directions | category | pop 2 | 46 words | note: turn left, go straight, U-turn, next exit, roundabout, two blocks
+   e.g. u-turn, turn left, turn right, straight on, go straight, straight ahead, next exit, keep going
+road_trip_words | road trip words | category | pop 2 | 42 words | note: detour, rest stop, mileage, carpool, motel, snacks, playlist, odometer, convoy
+   e.g. motel, snacks, highway, playlist, rest stop, gas station, RV, map
+road_trip_games | road trip games | category | pop 2 | 27 words
+   e.g. I spy, license plate, alphabet game, twenty questions, bingo, car bingo, punch buggy, the quiet game
+holiday_travel | holiday travel | category | pop 3 | 10 words
+   e.g. outing, cruise, excursion, jaunt, safari, getaway, mini-break, gap year
+arduous_trips | arduous trips | category | pop 3 | 12 words
+   e.g. trek, expedition, odyssey, pilgrimage, hajj, quest, long haul, slog
+accommodation | accommodation | category | pop 2 | 57 words | note: places to stay: hotel, motel, hostel, inn, B&B, campsite, guesthouse
+   e.g. hotel, motel, hostel, bed and breakfast, inn, B&B, Airbnb, resort
+hotel | hotel | category | pop 2 | 32 words
+   e.g. lobby, keycard, check-in, room key, reception, check-out, room service, housekeeping
+hotel_staff | hotel staff | category | pop 2 | 35 words
+   e.g. manager, concierge, housekeeper, receptionist, chef, maid, porter, bellhop
+room_types | hotel room types | category | pop 2 | 31 words
+   e.g. twin, suite, single, double, king, queen, family, deluxe
+vacation_homes | vacation homes | category | pop 2 | 28 words | note: villa, chalet, cabin, cottage, condo, bungalow, timeshare
+   e.g. cabin, chalet, cottage, beach house, villa, rental, log cabin, lake house
+famous_hotels | famous hotels | category | pop 4 | 35 words | note: Ritz, Savoy, Plaza, Waldorf Astoria, Burj Al Arab, Raffles, Pera Palace
+   e.g. Ritz, Plaza, Waldorf Astoria, Savoy, Raffles, Bellagio, Burj Al Arab, Caesars Palace
+hotel_chains | hotel chains | category | pop 3 | 52 words | note: Hilton, Marriott, Hyatt, Sheraton, Holiday Inn, Ibis, Radisson
+   e.g. Hyatt, Hilton, Marriott, Holiday Inn, Sheraton, Radisson, Travelodge, Premier Inn
+traditional_lodgings | traditional lodgings | category | pop 4 | 34 words | note: ryokan, riad, caravanserai, pousada, parador, ger, longhouse
+   e.g. yurt, ryokan, inn, riad, tipi, igloo, wigwam, ger
+campsite | campsite | category | pop 1 | 58 words
+   e.g. tent, lantern, matches, campfire, firewood, flashlight, campground, marshmallow
+camping_gear | camping gear | category | pop 2 | 43 words
+   e.g. tent, lantern, campfire, flashlight, camp stove, sleeping bag, cooler, stakes

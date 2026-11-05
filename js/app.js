@@ -142,6 +142,7 @@ const THEME_FILTERS = [
   ['region', 'Region-specific themes', (P, t, ef) => ef.region.length > 0],
   ['locked', 'Locked words (no substitution)', (P, t) => !t.group && themeLocked(P, t)],
   ['pop', 'Popularity…'],
+  ['ident', 'Identifiability…'],
   ['diff', 'Difficulty…'],
 ];
 // The "Popularity…" and "Difficulty…" choices open a second select for the level.
@@ -149,6 +150,7 @@ let profMemo = null;   // while counting, each theme's profile is worked out onc
 const prof = (P, t) => profMemo ? (profMemo.get(t.id) || profMemo.set(t.id, themeProfile(P, t.id)).get(t.id)) : themeProfile(P, t.id);
 const LEVEL_FILTERS = {
   pop: [['0', 'not rated', (P, t) => !t.pop], ...[1, 2, 3, 4, 5].map(n => [String(n), String(n) + (n === 1 ? ' (most popular)' : n === 5 ? ' (least popular)' : ''), (P, t) => t.pop === n])],
+  ident: [['0', 'not rated', (P, t) => !t.ident], ...[1, 2, 3, 4, 5].map(n => [String(n), String(n) + (n === 1 ? ' (obvious)' : n === 5 ? ' (obscure)' : ''), (P, t) => t.ident === n])],
   diff: [["0", "too few words to fill a set", (P, t) => !prof(P, t).lo],   // can serve a level: the 4th easiest and 4th hardest words straddle it
     ...[1, 2, 3, 4, 5].map(n => [String(n), 'can serve ' + n + (n === 1 ? ' (easiest)' : n === 5 ? ' (hardest)' : ''), (P, t) => { const p = prof(P, t); return p.lo > 0 && p.lo <= n && n <= p.hi; }])],
 };
@@ -245,7 +247,7 @@ function themeView(t) {
   const path = pathOf(P, t.id);
   const head = h('div.thead', {},
     h('div.crumbs', {}, h('a', { href: '#', onclick: ev => { ev.preventDefault(); A.sel = null; A.view = null; render(); } }, 'Overview › '), path.slice(0, -1).map((n, i) => h('a', { href: '#', onclick: ev => { ev.preventDefault(); select_(P.ix.theme.get(pathIds(t.id)[i]).id); } }, n + ' › '))),
-    h('div.titlebar', {}, h('div.titleleft', {}, h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')), h('div.chips', {}, badges(t), t.pop ? h('span.badge.d', { title: 'Theme popularity (1 most popular)' }, 'popularity ' + t.pop) : h('span.badge.d0', 'popularity not rated'), !t.group && themeBadge(A.P, t))),
+    h('div.titlebar', {}, h('div.titleleft', {}, h('h1', {}, t.name, t.group && h('span.tag', 'group'), !ef.enabled && h('span.tag.off', 'disabled')), h('div.chips', {}, badges(t), t.pop ? h('span.badge.d', { title: 'Theme popularity (1 most popular)' }, 'popularity ' + t.pop) : h('span.badge.d0', 'popularity not rated'), t.ident ? h('span.badge.d', { title: 'Identifiability (1 obvious, 5 obscure)' }, 'identifiability ' + t.ident) : h('span.badge.d0', 'identifiability not rated'),!t.group && themeBadge(A.P, t))),
       h('div.actions', {}, h('button', { onclick: () => editTheme(t) }, 'Theme settings…'), h('button', { onclick: () => addTheme(t.id) }, '+ Sub-theme'),
       !t.group && h('button', { onclick: () => bulkAdd(t.id) }, '+ Add words…'), !t.group && h('button.primary', { onclick: () => generate(t.id) }, 'Generate with Claude…'))),
     t.note && h('p.note', t.note));

@@ -1,0 +1,126 @@
+ends_with_sis | ends with sis | wordplay ends:sis | pop 3 | 5 words | note: words that end with "sis" but have nothing to do with it: basis, oasis, crisis, thesis
+   e.g. oasis, basis, thesis, crisis, analysis
+ends_with_ma | ends with ma | wordplay ends:ma | pop 3 | 4 words | note: words that end with "ma" but have nothing to do with it: drama, comma, llama, dilemma
+   e.g. drama, llama, comma, dilemma
+ends_with_a_musical_instrument | ends with a musical instrument | wordplay ends:musical instrument | pop 3 | 5 words | note: hawthorn (horn), barbell (bell), humdrum (drum), dugong (gong), salute (lute)
+   e.g. dugong, salute, barbell, humdrum, hawthorn
+ends_with_lute | ends with lute | wordplay ends:lute | pop 3 | 5 words | note: words that end with "lute" but have nothing to do with it: salute, absolute, pollute, dilute
+   e.g. salute, dilute, pollute, absolute, volute
+ends_with_a_number | ends with a number | wordplay ends:number | pop 3 | 4 words | note: phone (one), often (ten), canine (nine), freight (eight), scone (one)
+   e.g. phone, often, freight, canine
+ends_with_one | ends with one | wordplay ends:one | pop 3 | 6 words | note: words that end with "one" but have nothing to do with it: phone, alone, stone, throne
+   e.g. phone, alone, scone, stone, drone, throne
+ends_with_ten | ends with ten | wordplay ends:ten | pop 3 | 6 words | note: words that end with "ten" but have nothing to do with it: often, kitten, listen, mitten
+   e.g. often, kitten, listen, mitten, rotten, tungsten
+ends_with_nine | ends with nine | wordplay ends:nine | pop 3 | 5 words | note: words that end with "nine" but have nothing to do with it: canine, feminine, asinine, mezzanine
+   e.g. canine, feminine, asinine, quinine, mezzanine
+ends_with_eight | ends with eight | wordplay ends:eight | pop 3 | 4 words | note: words that end with "eight" but have nothing to do with it: freight, sleight, paperweight, overweight
+   e.g. freight, sleight, overweight, paperweight
+ends_with_a_pet | ends with a pet | wordplay ends:pet | pop 3 | 5 words | note: carat (rat), kitchen (hen), selfish (fish), ducat (cat), hyphen (hen)
+   e.g. carat, kitchen, selfish, ducat, geoduck
+ends_with_rat | ends with rat | wordplay ends:rat | pop 3 | 5 words | note: words that end with "rat" but have nothing to do with it: carat, aristocrat, bureaucrat, ziggurat
+   e.g. carat, aristocrat, bureaucrat, ziggurat, plutocrat
+ends_with_hen | ends with hen | wordplay ends:hen | pop 3 | 5 words | note: words that end with "hen" but have nothing to do with it: kitchen, hyphen, lichen, toughen
+   e.g. kitchen, hyphen, lichen, toughen, acetaminophen
+ends_with_a_shape | ends with a shape | wordplay ends:shape | pop 3 | 4 words | note: trampoline (line), string (ring), spring (ring), herring (ring), silicone (cone)
+   e.g. string, trampoline, peridot, silicone
+ends_with_line | ends with line | wordplay ends:line | pop 3 | 6 words | note: words that end with "line" but have nothing to do with it: trampoline, gasoline, discipline, feline
+   e.g. trampoline, feline, gasoline, discipline, praline, adrenaline
+ends_with_ring | ends with ring | wordplay ends:ring | pop 3 | 4 words | note: words that end with "ring" but have nothing to do with it: string, spring, during, herring
+   e.g. spring, string, during, herring
+ends_with_public_transport | ends with public transport | wordplay ends:public transport | pop 3 | 5 words | note: syllabus (bus), vicar (car), restrain (train), worship (ship), vocab (cab)
+   e.g. vicar, worship, syllabus, restrain, vocab
+ends_with_bus | ends with bus | wordplay ends:bus | pop 3 | 5 words | note: words that end with "bus" but have nothing to do with it: syllabus, nimbus, rhombus, rebus
+   e.g. syllabus, nimbus, rhombus, rebus, colobus
+ends_with_train | ends with train | wordplay ends:train | pop 3 | 4 words | note: words that end with "train" but have nothing to do with it: restrain, constrain, eyestrain, quatrain
+   e.g. restrain, constrain, eyestrain, quatrain
+ends_with_a_tree | ends with a tree | wordplay ends:tree | pop 3 | 6 words | note: crash (ash), cloak (oak), porcupine (pine), overwhelm (elm), kefir (fir)
+   e.g. crash, cloak, porcupine, overwhelm, kefir, peplum
+ends_with_ash | ends with ash | wordplay ends:ash | pop 3 | 6 words | note: words that end with "ash" but have nothing to do with it: crash, flash, trash, splash
+   e.g. crash, flash, trash, smash, squash, splash
+ends_with_pine | ends with pine | wordplay ends:pine | pop 3 | 5 words | note: words that end with "pine" but have nothing to do with it: porcupine, alpine, lupine, supine
+   e.g. porcupine, alpine, supine, lupine, vulpine
+ends_with_a_weather_word | ends with a weather word | wordplay ends:weather word | pop 3 | 5 words | note: juice (ice), sprain (rain), chemist (mist), mildew (dew), bosun (sun)
+   e.g. juice, sprain, chemist, mildew, bosun
+ends_with_ice | ends with ice | wordplay ends:ice | pop 3 | 6 words | note: words that end with "ice" but have nothing to do with it: juice, police, slice, price
+   e.g. juice, police, slice, price, notice, office
+ends_with_rain | ends with rain | wordplay ends:rain | pop 3 | 6 words | note: words that end with "rain" but have nothing to do with it: sprain, terrain, refrain, strain
+   e.g. sprain, terrain, strain, refrain, multigrain, midbrain
+portmanteau_words | portmanteau words | wordplay other | pop 2 | 60 words | note: two words blended: brunch, smog, motel, spork
+   e.g. smog, motel, brunch, blog, spork, brexit, hangry, podcast
+tech_blends | tech word blends | wordplay other | pop 3 | 12 words
+   e.g. blog, podcast, emoticon, vlog, modem, cyborg, malware, webinar
+entertainment_blends | entertainment word blends | wordplay other | pop 3 | 10 words
+   e.g. sitcom, biopic, romcom, telethon, infomercial, mockumentary, dramedy, docudrama
+round_things | round things | property | pop 2 | 45 words | note: ball, coin, plate, wheel, clock face
+   e.g. sun, moon, coin, ball, wheel, plate, CD, ring
+square_things | square things | property | pop 3 | 31 words | note: chessboard tile, waffle, napkin, sticky note, dice face
+   e.g. Post-it, chessboard, sticky note, tile, napkin, window, waffle, sugar cube
+triangular_things | triangular things | property | pop 3 | 28 words | note: pizza slice, sail, yield sign, guitar pick, nacho
+   e.g. pizza slice, sail, tent, nacho, pyramid, arrowhead, yield sign, warning triangle
+oval_things | oval things | property | pop 3 | 27 words
+   e.g. egg, rugby ball, lemon, almond, ellipse, racetrack, ostrich egg, running track
+things_that_rust | things that rust | property | pop 3 | 34 words | note: nail, anchor, bike chain, iron gate, old car, tin can
+   e.g. nail, old car, tin can, iron gate, screw, anchor, railing, bike chain
+things_made_of_wood | things made of wood | property | pop 2 | 49 words | note: pencil, chopsticks, violin, canoe, barrel
+   e.g. desk, door, chair, table, bench, pencil, coffin, ladder
+things_made_of_glass | things made of glass | property | pop 2 | 40 words | note: window, mirror, bottle, lightbulb, marble
+   e.g. wine, mirror, window, bottle, drinking glass, jar, vase, shot
+things_made_of_paper | things made of paper | property | pop 2 | 60 words | note: book, envelope, kite, napkin, origami crane
+   e.g. book, plane, origami, envelope, newspaper, wrapping paper, map, bag
+reading_material | reading material | property | pop 3 | 11 words
+   e.g. book, newspaper, paper, magazine, flyer, leaflet, pamphlet, comic book
+things_made_of_rubber | things made of rubber | property | pop 3 | 30 words | note: tire, eraser, balloon, rain boots, hot water bottle
+   e.g. tire, band, eraser, duck, glove, balloon, rain boots, bouncy ball
+things_made_of_leather | things made of leather | property | pop 3 | 37 words | note: wallet, saddle, belt, baseball glove, jacket
+   e.g. belt, saddle, wallet, jacket, briefcase, cowboy boots, bomber jacket, western boots
+things_made_of_metal | things made of metal | category | pop 1 | 12 words | note: everyday things made of metal
+   e.g. key, pan, coin, nail, bell, fork, spoon, chain
+things_made_of_plastic | things made of plastic | category | pop 1 | 11 words | note: everyday things made of plastic
+   e.g. toy, comb, Lego, straw, bucket, bottle, Tupperware, carrier bag
+rough_things | rough things | property | pop 3 | 44 words | note: sandpaper, bark, brick, pumice, sea salt, emery board
+   e.g. bark, sandpaper, gravel, stubble, concrete, rope, brick, pumice
+smooth_things | smooth things | property | pop 3 | 32 words | note: glass, marble, silk, pebble, ice, satin
+   e.g. silk, satin, baby skin, pebble, marble, velvet, mirror, egg
+soft_things | soft things | property | pop 2 | 38 words | note: pillow, feather, cotton ball, plush toy, kitten fur, velvet
+   e.g. pillow, teddy bear, kitten fur, cotton ball, cloud, velvet, blanket, feather
+sticky_things | sticky things | property | pop 2 | 43 words | note: glue, honey, tape, syrup, gum, sap
+   e.g. gum, glue, tape, honey, bubble gum, jam, sap, syrup
+slippery_things | slippery things | property | pop 2 | 36 words | note: ice, soap, banana peel, wet floor, eel, oil
+   e.g. eel, ice, oil, soap, grease, wet floor, banana peel, slug
+prickly_things | prickly things | property | pop 2 | 55 words | note: cactus, hedgehog, holly, thistle, porcupine, chestnut husk
+   e.g. thorn, holly, cactus, thistle, hedgehog, porcupine, nopal, nettle
+stretchy_things | stretchy things | property | pop 2 | 35 words | note: rubber band, spandex, bungee cord, chewing gum, slingshot
+   e.g. elastic, spandex, bungee cord, rubber band, Lycra, taffy, hair tie, slingshot
+texture_words | texture words | property | pop 2 | 43 words | note: bumpy, fuzzy, grainy, silky, coarse, gritty, velvety, glossy, matte
+   e.g. soft, rough, fuzzy, silky, smooth, slimy, bumpy, lumpy
+fluffy_things | fluffy things | category | pop 1 | 11 words | note: soft, fluffy things: kitten, cloud, chick
+   e.g. sheep, bunny, cloud, chick, kitten, teddy bear, duckling, towel
+wet_things | wet things | category | pop 1 | 11 words | note: things that are wet: rain, puddle, sponge
+   e.g. sea, rain, bath, river, shower, puddle, swimming pool, mud
+sweet_foods | sweet foods | property | pop 1 | 51 words | note: candy, honey, cake, ripe mango, syrup, donut
+   e.g. cake, candy, sugar, honey, doughnut, ice cream, chocolate, fudge
+sour_foods | sour foods | property | pop 2 | 50 words | note: lemon, lime, vinegar, sauerkraut, sour cherry, pickles
+   e.g. lime, lemon, vinegar, pickles, rhubarb, morello, lemonade, sauerkraut
+salty_foods | salty foods | property | pop 2 | 51 words | note: chips, pretzels, olives, bacon, soy sauce, anchovies
+   e.g. salt, pretzels, soy sauce, potato chips, bacon, chips, olives, pickles
+bitter_foods | bitter foods | property | pop 2 | 48 words | note: dark chocolate, coffee, kale, grapefruit, endive, tonic water
+   e.g. coffee, dark chocolate, kale, espresso, grapefruit, tonic water, brussels sprouts, beer
+spicy_foods | spicy foods | property | pop 2 | 54 words | note: chili, wasabi, horseradish, jalapeno, salsa, curry
+   e.g. chili, chilli, jalapeño, hot sauce, piri piri, curry, wasabi, Tabasco
+umami_foods | umami foods | property | pop 3 | 51 words | note: soy sauce, parmesan, miso, anchovies, mushrooms, seaweed
+   e.g. MSG, miso, parmesan, soy sauce, mushrooms, seaweed, shiitake, anchovies
+crunchy_foods | crunchy foods | property | pop 2 | 49 words | note: celery, crackers, apple, croutons, pretzels
+   e.g. celery, pretzels, crackers, potato chips, tortilla chips, apple, toast, carrot
+chewy_foods | chewy foods | property | pop 2 | 41 words | note: gummy bears, bagel, toffee, jerky, mochi
+   e.g. taffy, toffee, gummy bears, chewing gum, gummy worms, boba, bagel, mochi
+creamy_foods | creamy foods | property | pop 2 | 52 words | note: yogurt, custard, avocado, mashed potato, hummus
+   e.g. yogurt, custard, ice cream, whipped cream, mousse, avocado, pudding, milkshake
+huge_things | huge things | property | pop 2 | 38 words | note: whale, mountain, skyscraper, elephant, cruise ship
+   e.g. whale, giant, elephant, dinosaur, mountain, blue whale, mammoth, pyramid
+tiny_things | tiny things | property | pop 2 | 36 words | note: ant, atom, grain of sand, flea, crumb
+   e.g. ant, flea, crumb, grain of sand, gnat, atom, pinhead, poppy seed
+heavy_things | heavy things | property | pop 2 | 43 words | note: anvil, piano, boulder, elephant, safe
+   e.g. piano, anvil, boulder, elephant, grand piano, lead, safe, whale
+long_things | long things | property | pop 3 | 38 words | note: snake, train, river, scarf, noodle
+   e.g. snake, noodle, spaghetti, eel, Nile, rope, river, scarf

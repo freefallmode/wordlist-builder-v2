@@ -11,7 +11,7 @@
 //   FIXES  [{ gloss: [text, themeId, newGloss] } | { merge: [text, [themeId, ...], gloss] } | { split: [text, themeId, newGloss, {type, pos, rec}] } | { del: [text, themeId] }, ...]  edits existing entries first (the entry is found by its text and a theme it is in):
 //          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); split moves one theme link of an entry that was linked for a different meaning onto a new entry with its own meaning label; del removes one
 //   SETTINGS { maxWords: 4, ... }  library settings to set
-//   THEMES { themeId: { pop: 1-5 (theme popularity, 1 most popular), ...flag overrides (complete, adult, sensitive, tm, lang, region, note) } }
+//   THEMES { themeId: { pop: 1-5 (theme popularity, 1 most popular), ident: 1-5 (identifiability, 1 obvious ... 5 obscure), ...flag overrides (complete, adult, sensitive, tm, lang, region, note) } }
 // An entry that already exists (same text and gloss) is only linked to the theme (its own ratings and flags stay); a link already there is left alone.
 // Aliases inherit part of speech, type, adult, sensitive and trademark from the root unless the alias row says otherwise.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -106,6 +106,7 @@ for (const [tid, t] of Object.entries(THEMES || {})) {
 }
 Object.assign(P.settings, SETTINGS || {});
 for (const tid of Object.keys(DATA)) if (!P.ix.theme.get(tid).pop) console.log('UNRATED THEME', tid);
+for (const tid of Object.keys(DATA)) if (!P.ix.theme.get(tid).ident) console.log('THEME WITHOUT IDENTIFIABILITY', tid);
 reindex(P);
 stampSave(P);
 writeFileSync(LIB, serializeProject(P));

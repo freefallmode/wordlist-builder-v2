@@ -122,11 +122,14 @@ export async function generateWords(P, t, { n = 20, spread = 'even', extra = '',
 // ---------- theme difficulty ----------
 
 const RATE_SCHEMA = { type: 'object', additionalProperties: false, required: ['ratings'],
-  properties: { ratings: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['id', 'd'], properties: { id: str, d: int } } } } };
+  properties: { ratings: { type: 'array', items: { type: 'object', additionalProperties: false, required: ['id', 'd', 'i'], properties: { id: str, d: int, i: int } } } } };
 export const THEME_SCALE = 'Rate how recognisable each THEME is to a typical adult, 1 to 5, as a category a player would see in a sorting game: 1 = everyone gets it at a glance (fruits, animals, colors); 2 = most adults (musical instruments, kitchen tools); 3 = many adults (sailing words, architectural styles); 4 = needs some interest or knowledge (heraldry terms, cheese-making words); 5 = specialist or obscure. Also consider how clear the boundary is; a vague or abstract theme is harder.';
+
+// Identifiability is a second, separate judgement (tools/gen/BRIEF-ident.md): how easily a player works out the theme from four of its members, whatever the difficulty of those words. Rate it for every theme a generation creates (`ident` in a THEMES block, or `i` in rateThemes).
+export const IDENT_SCALE = 'Identifiability, 1 to 5: how easily a player works out the theme from four of its members, assuming the words shown are easy ones. 1 = obvious (colors, farm animals); 2 = clear and specific (musical instruments, chess pieces); 3 = needs a moment (a loose property such as things that are round, a compound word theme); 4 = hard: broad or a trick (things made of metal, hidden words, starts-with and rhyme themes); 5 = obscure (unusual letter patterns, rules a player would not think to test). Judge the theme alone; popularity and appeal are separate.';
 
 export async function rateThemes(P, themes, { model }) {
   const list = themes.map(t => `${t.id}: ${pathOf(P, t.id).slice(-3).join(' > ')}${t.note ? ' -- ' + t.note : ''}`).join('\n');
-  const r = await claude({ model, system: 'You rate the difficulty of themes for a themed word-sorting game. ' + THEME_SCALE, prompt: 'Rate these themes (id: path). Return one rating per id.\n' + list, schema: RATE_SCHEMA, maxTokens: 8000 });
+  const r = await claude({ model, system: 'You rate themes for a themed word-sorting game. d: ' + THEME_SCALE + ' i: ' + IDENT_SCALE, prompt: 'Rate these themes (id: path). Return d and i for each id.\n' + list, schema: RATE_SCHEMA, maxTokens: 8000 });
   return { ratings: r.data.ratings, cost: r.cost };
 }
