@@ -17,3 +17,6 @@ Do NOT edit the library, js/ or other files, and do NOT commit.
 
 ## Report (under 50 words)
 File path, number of SHOW lines, and the commonest reason items were left whole.
+
+## Plain category themes (listing `tools/gen/full2/`)
+The same decision applies to category themes named by their head noun ("hats", "cakes", "owls", "snakes"): members written as modifier + head (`sun hat`, `birthday cake`, `sea snake`) are full terms that may be shown with the modifier alone. Same test: seen alone in this theme, does the short word still identify the member? Shorten `sun hat` → `sun`, `birthday cake` → `birthday`, `Ural owl` → `Ural`; leave whole only when the short word could point elsewhere in this theme or is a fixed name. A colour, size, season or habitat word is NOT a reason to leave an item whole: the decision for kinds (teas, swans, squashes) is `green tea` shown as "green", `black swan` as "black", `summer squash` as "summer"; judge by the same test (does the short word alone identify the kind in this theme?). Place and street names (`Red Square`, `Golden Bay`) are fixed names and stay whole. Write verdicts to the `full2` directory (v-<n>.txt there) when your task says so.
