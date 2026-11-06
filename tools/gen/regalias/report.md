@@ -1,0 +1,515 @@
+# Regional equivalents for region-flagged common words with no regional alias
+
+481 words have at least one equivalent (495 pairs). 0 problems reading agent files.
+
+- equivalent already an alias of this word under another kind: 0
+- equivalent exists as its own root word, not linked as an alias: 369
+- equivalent exists only as an alias of a different root: 25
+- equivalent does not exist in the library: 101
+
+## Already an alias, but not of kind regional
+
+
+## Equivalent exists as its own word (could become a regional alias)
+
+- abseil [rope descent] (UK) -> rappel (US): #45054 rappel in climbing words; sports verbs
+- accumulator (UK) -> parlay (US): #45331 parlay (US) in betting words; kinds of wager
+- air bed (UK) -> air mattress (US): #3050 air mattress in campsite; beds; camping gear
+- Alice band [hairband] (UK) -> headband (general): #4965 headband in accessories; hair accessories; sports clothing
+- Alsatian [dog] (UK) -> german shepherd (US): #259 German shepherd in dog breeds; herding dogs; dogs from germany
+- armbands (UK) -> water wings (US): #43278 water wings in swimming words
+- ass [buttocks] (US) -> bottom (UK): #177 bottom [UK term] (UK) in hidden names | #52780 Bottom [weaver] in shakespeare characters; shakespearean comedy characters
+- autocue (UK) -> teleprompter (US): #6429 teleprompter in film and tv; tv words; things with screens
+- baby bella (US) -> cremini (US): #17620 cremini in mushrooms; fungi
+- backcloth (UK) -> backdrop (general): #12279 backdrop in parts of a stage; back___
+- banger [firework] (UK) -> firecracker (general): #25231 firecracker in fireworks; things that pop; fire___
+- basswood (US) -> linden (general): #1676 linden in trees; deciduous trees
+- bathers (AU) -> swimsuit (general): #24469 swimsuit in swimwear; swimming words; sports clothing
+- bellhop (US) -> bellboy (general): #48323 bellboy in hotel; hotel staff
+- bendy bus (UK) -> articulated bus (general): #2702 articulated bus in public transportation
+- big dipper [roller coaster] (UK) -> roller coaster (US): #13778 roller coaster in fairground rides; theme park words; fast things
+- bin chicken (AU) -> ibis (general): #1116 ibis [bird] in birds; waterbirds; long-necked animals | #48442 Ibis [hotel] in hotel chains
+- bind off (US) -> cast off (UK): #24889 cast off in knitting words
+- binky (US) -> dummy (UK): #45524 dummy [bridge] in card game words | #50361 dummy [soccer] in soccer terms; sports verbs; soccer skills
+- binky (US) -> pacifier (general): #3554 pacifier in babies and birth; newborn care; british english words
+- black pudding (UK) -> blood sausage (US): #17749 blood sausage in breakfast foods; british food
+- blacktop (US) -> tarmac (UK): #27387 tarmac in british english words; brand names used as words; parts of a road
+- bluebottle [jellyfish] (AU) -> portuguese man o' war (general): #9819 Portuguese man o' war in venomous animals; tentacled animals
+- bobble [hair] (UK) -> hair tie (US): #3798 hair tie in personal care; cords and strings; stretchy things
+- bobble hat (UK) -> beanie (US): #24490 beanie in knitwear; hats
+- bodywarmer (UK) -> vest (US): #4883 vest [waistcoat] in clothes; things with buttons; pirate clothing | #24411 vest [underwear] (UK) in underwear
+- boob tube (US) -> telly (UK): #4574 telly [UK term] (UK/AU/IE) in tv words; british slang; household gadgets
+- bootlace (UK) -> shoelace (general): #25521 shoelace in cords and strings; long things
+- bottom [UK term] (UK) -> butt (US): #178 butt (US) in torso; body parts
+- boutonniere (US) -> buttonhole (UK): #24973 buttonhole [clothing] in clothing parts | #25120 buttonhole [flower] (UK) in weddings; wedding outfit items
+- bradawl (UK) -> awl (general): #330 awl in hand tools; tools
+- brake van (UK) -> caboose (US): #2870 caboose (US/CA) in trains; parts of a train; words from dutch
+- bread bin (UK) -> bread box (US): #66385 bread box in ___box
+- brekkie (AU/UK) -> breakfast (general): #20109 breakfast in meals of the day; times of day
+- brewski (US) -> beer (general): #874 beer in drinks; in the fridge; bitter foods
+- bricky (UK/AU) -> bricklayer (general): #32956 bricklayer in skilled trades; outdoor jobs; construction site
+- broil (US) -> grill (UK): #921 grill in cooking; cooking methods; hot things
+- bruv (UK) -> bro (general): #32384 bro in words for friend; family members
+- bubbly (UK) -> champagne (general): #876 champagne [drink] in drinks; wines; new year | #9540 champagne [horse color] in horse colors | #63157 Champagne [region] in french regions; wine regions
+- buffalo [bison] (US/CA) -> bison (general): #1006 bison in mammals; hoofed mammals; north american animals
+- bulldog clip (UK) -> binder clip (US): #60576 binder clip in office
+- bunny hill (US) -> nursery slope (UK): #57623 nursery slope (UK) in ski resort
+- burlap (US) -> hessian (UK): #24867 hessian (UK) in fabrics; rough things; tough fabrics
+- bush fire (AU) -> wildfire (general): #30269 wildfire in wildfire words; dry season; natural disasters
+- bushfire (AU) -> wildfire (general): #30269 wildfire in wildfire words; dry season; natural disasters
+- butter bean (UK) -> lima bean (US): #64677 lima bean in beans and pulses
+- buttonhole [flower] (UK) -> boutonniere (US): #25121 boutonniere (US) in weddings; wedding outfit items
+- byre (UK) -> cowshed (general): #38174 cowshed in farm; farm buildings; animal homes
+- cabin crew (UK) -> flight attendant (general): #2723 flight attendant in air travel; service jobs; transport jobs
+- camp [folding travel type] (UK) -> cot (US): #3049 cot [camp bed] in campsite | #3562 cot [baby bed] (UK/AU/NZ/IE) in beds; things with legs; british english words
+- camp bed (UK) -> cot (US): #3049 cot [camp bed] in campsite | #3562 cot [baby bed] (UK/AU/NZ/IE) in beds; things with legs; british english words
+- campervan (UK/AU/NZ) -> rv (US): #48283 RV in road trip words; rvs and campers
+- candy bar (US) -> chocolate bar (UK): #18383 chocolate bar in snacks
+- candy store (UK) -> sweet shop (UK): #66592 sweet shop (UK) in ___shop
+- caravan [towed home] (UK) -> travel trailer (US): #48607 travel trailer in rvs and campers
+- cart corral (US) -> trolley bay (UK): #38202 trolley bay (UK) in supermarket
+- char [tea] (UK) -> tea (general): #225 tea [drink] in hot drinks; drinks; sounds like a letter | #20117 tea [meal] (UK) in meals of the day
+- charity shop (UK) -> thrift shop (US): #66595 thrift shop (US) in ___shop
+- chat show (UK) -> talk show (US): #12602 talk show in tv genres; radio words
+- check [restaurant] (US) -> bill (UK): #8359 bill [bird] in bird body parts; parts of a bird's head | #10347 bill [animal] in animal body parts; bird-only parts | #20016 bill [restaurant] in restaurant words; restaurant | #27996 bill [name] in short forms of names | #33295 bill [law] in government words; legal rules | #33857 bill [banknote] in money words; things made of paper
+- check [restaurant bill] (US) -> bill (UK): #8359 bill [bird] in bird body parts; parts of a bird's head | #10347 bill [animal] in animal body parts; bird-only parts | #20016 bill [restaurant] in restaurant words; restaurant | #27996 bill [name] in short forms of names | #33295 bill [law] in government words; legal rules | #33857 bill [banknote] in money words; things made of paper
+- checkbook (US) -> cheque book (UK): #61449 cheque book (UK) in in a handbag; ___book
+- cheque book (UK) -> checkbook (US): #66421 checkbook (US) in ___book
+- chestnut mushroom (UK) -> cremini (US): #17620 cremini in mushrooms; fungi
+- china [mate] (UK) -> mate (general): #3930 mate [friend] (UK/AU/NZ/IE) in family and friends; british slang; anagrams of each other | #19416 mate [drink] in south american food; argentinian food; south american drinks | #33191 mate [tea] in gaucho words | #47628 mate [ship] in ship crew
+- chippy [carpenter] (UK/AU) -> carpenter (general): #4094 carpenter [job] in jobs; skilled trades | #56309 Carpenter [surname] in surnames that are jobs | #63690 carpenter [wood-boring pollinator] in bees and wasps | #63705 carpenter [wood-boring insect] in ants and termites
+- city centre (UK) -> downtown (US): #38450 downtown in parts of a town
+- cobber (AU) -> friend (general): #3895 friend in family and friends; words for friend
+- coley (UK) -> pollock (US): #1258 pollock in fish; sea fish; fish to eat
+- combats [trousers] (UK) -> cargo pants (US): #4914 cargo pants in clothes
+- corner shop (UK) -> convenience store (US): #46773 convenience store in gas station; shops
+- cot [baby bed] (UK/AU/NZ/IE) -> crib (US): #3561 crib [baby bed] in babies and birth; furniture; beds | #15778 crib [baby] in baby gear
+- Court [plain pump] (UK) -> pump (US): #7389 pump [machine] in engineering | #15984 pump [muscles] in fitness words | #46757 pump [fuel] in gas station
+- court shoes (UK) -> pumps (US): #24627 pumps in shoes
+- cuppa (UK/AU/NZ/IE) -> cup of tea (general): #25745 cup of tea in cozy things
+- cutlery (UK) -> silverware (US): #29247 silverware in starts with a color
+- da [father] (UK) -> dad (general): #32381 dad [father] in palindromes; words for father; family members
+- decking (UK) -> deck (US): #34583 deck [ship] in navy words; ship parts; cruise words | #45327 deck [cards] in blackjack terms; card game words | #48118 deck [skateboard] in skateboard parts | #49866 deck [bridge] in bridge parts
+- dickie bow (UK) -> bow tie (general): #4946 bow tie in accessories; neckwear; tie types
+- dinger (US) -> home run (general): #42799 home run in baseball terms; scoring words; baseball hitting terms
+- diplomatic bag (UK) -> diplomatic pouch (general): #33540 diplomatic pouch in diplomacy words
+- dishpan (US) -> washing-up bowl (UK): #24009 washing-up bowl (UK) in washing up
+- door staff (UK) -> bouncer (general): #13876 bouncer [doorman] in nightclub words; casino words; people in a casino | #42864 bouncer [cricket] in cricket terms; cricket deliveries
+- dot-to-dot (UK) -> connect the dots (US): #45943 connect the dots in puzzles
+- down payment (US) -> deposit (UK): #24180 deposit [rental] in real estate words | #33913 deposit [bank] in banking words; things you do with money
+- drapes (US) -> curtains (general): #23107 curtains in living room; soft furnishings; home decor
+- draughtboard (UK) -> checkerboard (US): #38905 checkerboard in square things; patterns
+- dressing [grooming furniture] (UK) -> vanity (US): #4691 vanity [makeup table] (US) in bedroom; furniture; tables and desks | #23145 vanity [bathroom] (US) in bathroom
+- dressing table (UK) -> vanity (US): #4691 vanity [makeup table] (US) in bedroom; furniture; tables and desks | #23145 vanity [bathroom] (US) in bathroom
+- dust ruffle (US) -> bed skirt (US): #16039 bed skirt in bedding; bedroom
+- dustbin (UK) -> garbage can (US): #25793 garbage can (US) in things with lids
+- dustbin (UK) -> trash can (US): #23251 trash can [household] in things with lids; park; outside the house | #38361 trash can [street] in street furniture
+- dustcart [bin lorry] (US/CA) -> garbage truck (US): #3113 garbage truck (US/CA) in special vehicles; bins and recycling; british english words
+- earth wire (UK) -> ground wire (US): #23665 ground wire (US) in electrical fittings
+- elevenses (UK) -> morning tea (AU/NZ): #20125 morning tea (AU/NZ) in meals of the day
+- end table (US) -> side table (general): #23418 side table in tables and desks
+- esky (AU) -> cooler (general): #3035 cooler (US/CA) in campsite; picnic basket; things with lids
+- extension cord (US) -> extension lead (UK): #23647 extension lead (UK) in electrical fittings; things you plug in
+- extension lead (UK) -> extension cord (US): #23164 extension cord (US) in garage; electrical fittings; cords and strings
+- eyeglasses (US) -> glasses (general): #24782 glasses in eyewear; things that come in pairs; pairs you wear
+- fairy cake (UK) -> cupcake (US): #560 cupcake [cake] in breads and baking; desserts and sweets; cakes | #50283 cupcake [endearment] in terms of endearment
+- fall [season] (US/CA) -> autumn (UK): #25303 autumn in season words; the four seasons
+- fanlight (UK) -> transom (US): #47452 transom in ship parts; window styles
+- faucet (US) -> tap (UK): #23781 tap [faucet] in plumbing words; bath time; hand actions | #64433 tap [rhythm] in dance; dances
+- fender bender (US) -> prang (UK): #14072 prang in asian temple features
+- film [movie] (UK/IE/AU/NZ) -> movie (US): #6363 movie in film and tv
+- fire tender (UK) -> fire engine (general): #62692 fire engine [emergency] in truck types; fire___
+- fireguard (UK) -> fire screen (US): #23586 fire screen in heating and cooling; fireplace words
+- firie (AU) -> firefighter (general): #4083 firefighter in jobs; dress-up costumes; wildfire words
+- fish slice (UK) -> spatula (US): #19839 spatula in kitchen utensils; kitchen; things with handles
+- fitness center (US) -> gym (general): #3597 gym [fitness] in fitness; no vowels | #34728 gym [class] in school subjects | #44162 gym [venue] in sports venues; hotel
+- five-eighth (AU/NZ) -> fly-half (UK): #42903 fly-half in rugby terms
+- fizz [champagne] (UK) -> champagne (general): #876 champagne [drink] in drinks; wines; new year | #9540 champagne [horse color] in horse colors | #63157 Champagne [region] in french regions; wine regions
+- fizzy pop (UK) -> soda (US): #867 soda [fizzy drink] in drinks; movie theater | #64823 soda [leavener] in breads and baking; baking ingredients; in the pantry | #65005 soda [Irish loaf] (IE) in breads
+- flapjack [pancake] (US) -> pancake (general): #19250 pancake [food] in pancakes of the world; rhymes with cake; round things | #42952 pancake [volleyball] in volleyball terms | #62748 pancake [hip opener] in stretches
+- football [soccer] (UK/IE/ZA/IN/TR) -> soccer (US): #5190 soccer in ball sports; sports with a net; olympic sports
+- football pitch (UK) -> soccer field (US): #44166 soccer field (US) in sports venues; playing surfaces
+- form tutor (UK) -> homeroom teacher (US): #34820 homeroom teacher (US) in school staff
+- fortnight (UK/AU/IE) -> two weeks (general): #25281 two weeks in days and weeks; time units; british english words
+- four-wheeler (US) -> atv (general): #3142 ATV in special vehicles; farm vehicles; motorcycle types
+- freeway (US) -> motorway (UK): #27366 motorway in british english words; road types
+- fresher (UK) -> freshman (US): #4550 freshman (US) in school; university words; words for beginner
+- fruit and veg (UK) -> produce (US): #28796 produce [fruit and vegetables] in homographs; street market
+- gala [swimming] (UK) -> swim meet (US): #43300 swim meet in swimming words
+- games console (UK) -> game console (US): #5845 game console in gadgets; things you plug in
+- garbage can (US) -> dustbin (UK): #25798 dustbin (UK) in things with lids; british english words
+- garbage can (US) -> rubbish bin (UK): #39709 rubbish bin (UK) in things that smell bad
+- garbage man (US) -> garbage collector (general): #4125 garbage collector (US) in jobs; bins and recycling
+- gear lever (UK) -> gearshift (US): #48080 gearshift in motorcycle parts
+- gift voucher (UK) -> gift card (general): #23296 gift card in in a wallet; birthdays; shopping words
+- gilet (UK) -> vest (US): #4883 vest [waistcoat] in clothes; things with buttons; pirate clothing | #24411 vest [underwear] (UK) in underwear
+- ginnel (UK) -> alley (general): #38309 alley [road] in road types | #43211 alley [bowling] in bowling terms
+- glass paper (UK) -> sandpaper (general): #4802 sandpaper in tools; art materials; painting and decorating
+- gobstopper (UK) -> jawbreaker (US): #18359 jawbreaker in candy; american candy
+- grandad (UK) -> grandpa (US): #32394 grandpa in words for grandparents; family members
+- granddad (UK) -> grandpa (US): #32394 grandpa in words for grandparents; family members
+- greaseproof paper (UK) -> parchment paper (US): #25562 parchment paper in paper goods; ___paper
+- grinder [sandwich] (US) -> sub (US): #63368 sub [long roll] in sandwiches
+- ground wire (US) -> earth wire (UK): #23664 earth wire (UK) in electrical fittings; electricity words
+- groyne (UK) -> groin (US): #3198 groin in body parts
+- gum tree (AU) -> eucalyptus (general): #1641 eucalyptus in oceanian remedies; spa; medicinal plants
+- gumboots (AU/NZ) -> rain boots (US): #24597 rain boots in things made of rubber; rain___
+- gumboots (AU/NZ) -> wellington boots (UK): #24590 Wellington boots (UK) in monsoon season; rain gear; british english words
+- gym bunny (UK/AU/IE) -> gym rat (US): #3649 gym rat in fitness
+- hair straighteners (UK) -> flat iron (US): #50232 flat iron [steak] in cuts of meat; butcher shop
+- hamper [gift hamper] (UK) -> gift basket (US): #25213 gift basket in gift wrapping
+- hard shoulder (UK) -> shoulder (US): #3170 shoulder [body part] in body parts; parts of a horse; arms and legs | #38416 shoulder [road] in parts of a road
+- head server (US) -> head waiter (general): #66688 head waiter in head___
+- head teacher (UK) -> principal (US): #4497 principal [school] in school; homophones; school staff | #11055 principal [orchestra] in orchestra words | #35535 principal [head] in words for leader
+- head torch (UK) -> headlamp (US): #2572 headlamp in campsite; mining words; camping gear
+- heated towel rail (UK) -> towel warmer (US): #61439 towel warmer in bathroom
+- hen party (UK) -> bachelorette party (US): #5184 bachelorette party in holidays and celebrations; weddings; wedding preparations
+- hessian (UK) -> burlap (US): #24868 burlap (US) in fabrics; rough things; brown things
+- hide [bird watching] (UK) -> blind (US): #3311 blind in senses
+- hoarding [UK billboard or site fence] (UK) -> billboard (US): #4592 billboard in media and communication; advertising words; road trip words
+- holdall (UK) -> duffel bag (US): #24713 duffel bag in luggage; ___bag
+- holidaymaker (UK) -> vacationer (US): #48158 vacationer (US) in kinds of travelers
+- home straight (UK) -> home stretch (US): #66779 home stretch in home___
+- homeroom teacher (US) -> form tutor (UK): #34819 form tutor (UK) in school staff
+- hooter (UK) -> horn (general): #10324 horn [animal] in animal body parts | #10594 horn [instrument] in brass instruments; medieval instruments; hunting words | #46600 horn [car] in car parts; dashboard items
+- hoover [to vacuum] (UK) -> vacuum (general): #4735 vacuum [vacuum cleaner] in appliances; cleaning appliances; cleaning items | #23859 vacuum [to clean] in cleaning verbs
+- hoover bag (UK/IE) -> vacuum bag (general): #66530 vacuum bag in ___bag
+- ice chest (US) -> cooler (US): #3035 cooler (US/CA) in campsite; picnic basket; things with lids
+- ice chest (US) -> esky (AU): #3037 esky (AU) in australian slang; australian inventions; beach
+- icebox (US) -> fridge (general): #4716 fridge [refrigerator] in things you plug in; things with handles; kitchen | #66047 fridge [souvenir] in magnet words
+- jacket [oven-baked spud] (UK) -> baked potato (US): #19141 baked potato in campfire foods
+- jacket potato (UK) -> baked potato (US): #19141 baked potato in campfire foods
+- jandals (NZ) -> flip-flops (general): #24624 flip-flops in shoes; beach gear; beach
+- jandals (NZ) -> thongs (AU): #27485 thongs [flip-flops] in australian slang
+- jelly [spread] (US) -> jam (general): #10862 jam [music] in jazz words | #18827 jam [preserve] in spreads; pickles and preserves; sticky things
+- jersey [knitted top] (UK) -> sweater (US): #4873 sweater in clothes; tops; knitwear
+- jimmies (US) -> sprinkles (general): #582 sprinkles in breads and baking; baking ingredients; cake decorations
+- joanna [piano] (UK) -> piano (general): #5998 piano in instruments; keyboard instruments; things with lids
+- joe [coffee] (US) -> coffee (general): #226 coffee [drink] in hot drinks; drinks; double letters | #64158 coffee [living room] in tables and desks
+- jump leads [garage] (UK) -> jumper cables (US): #46852 jumper cables in car accessories
+- jumpers (UK) -> sweaters (US): #23353 sweaters in closet contents
+- junior high (US) -> middle school (US): #34897 middle school (US) in school types
+- kiddie pool (US) -> paddling pool (UK): #31515 paddling pool in signs of summer; park; swimming pool
+- kitchen paper (UK) -> paper towel (US): #25549 paper towel in paper goods; things used for wiping; paper___
+- knickers [UK term] (UK) -> panties (US): #24403 panties (US) in underwear
+- knitted jumper (UK) -> sweater (US): #4873 sweater in clothes; tops; knitwear
+- kumara (NZ) -> sweet potato (general): #402 sweet potato [vegetable] in vegetables; superfoods; root vegetables | #63462 sweet potato [dessert] in pies and tarts
+- letterbox [mail slot] (UK) -> mail slot (US): #35174 mail slot (US) in post office
+- letterbox [door opening for post] (US) -> mail slot (US): #35174 mail slot (US) in post office
+- life vest (US) -> life jacket (general): #2827 life jacket in boats and ships; emergency supplies; things that float
+- lippy (UK/AU/IE) -> lipstick (general): #3748 lipstick in personal care; makeup; in a handbag
+- log burner (UK) -> wood stove (US): #23583 wood stove in heating and cooling; fireplace words; cozy things
+- lollipop man (UK) -> crossing guard (US): #34812 crossing guard (US) in school staff; british english words
+- lolly [lollipop or ice pop] (UK/AU) -> lollipop (general): #609 lollipop in desserts and sweets; candy; foods on a stick
+- lolly [lollipop or ice pop] (UK/AU) -> popsicle (US): #18303 popsicle in frozen desserts; foods on a stick; frozen foods
+- loo roll (UK) -> toilet paper (general): #23138 toilet paper in bathroom; things made of paper; things used for wiping
+- lough (IE) -> loch (UK): #27391 loch in scottish words; bodies of water; scottish landscape words
+- lunch lady (US) -> dinner lady (UK): #4532 dinner lady (UK) in school; school staff
+- lunchroom (US) -> canteen (UK): #3039 canteen [water bottle] in campsite; camping gear; cowboy gear | #34562 canteen [army] in army words; army kit
+- mackintosh (UK) -> raincoat (general): #4918 raincoat in clothes; coats and jackets; rain gear
+- mail slot (US) -> letterbox (UK): #23244 letterbox [mail slot] (UK) in windows and doors; parts of a door; post office | #65785 letterbox [door opening for post] (US) in mail words
+- mam (UK) -> mom (US): #28997 mom in palindromes; words for mother
+- mammy (UK) -> mommy (US): #56619 mommy in words for mother
+- mate [friend] (UK/AU/NZ/IE) -> buddy (US): #3901 buddy [friend] in family and friends; words for friend
+- matelot (UK) -> sailor (general): #4380 sailor in military; dress-up costumes; pirate crew
+- measuring jug (UK) -> measuring cup (US): #19848 measuring cup in kitchen utensils
+- microlight flying (UK) -> ultralight (US): #39775 ultralight [aircraft] in things that fly; air sports; flying machines | #47095 ultralight [microlight] in aircraft types
+- middle school (US) -> junior high (US): #34898 junior high (US) in school types
+- milk tooth (UK) -> baby tooth (US): #14487 baby tooth in teeth
+- milliard (UK) -> billion (general): #41530 billion in big numbers
+- mincer (UK) -> meat grinder (US): #17902 meat grinder in butcher shop
+- minim (UK) -> half note (US): #11146 half note in note values; notes and rests
+- mobile [UK term] (UK/AU/IE/IN) -> cell phone (US): #7325 cell phone (US/CA) in things that ring; handheld gadgets; american inventions
+- mobile phone [UK term] (UK/AU/IE/NZ/ZA) -> cell phone (US): #7325 cell phone (US/CA) in things that ring; handheld gadgets; american inventions
+- money order (US) -> postal order (UK): #38230 postal order (UK) in post office
+- monkey nut (UK) -> peanut (general): #17350 peanut [legume nut] in nuts; andean crops; foods with shells
+- mooli (UK) -> daikon (general): #451 daikon in vegetables; root vegetables
+- moonroof (US) -> sunroof (general): #2626 sunroof in cars; car interior items; sun___
+- morning tea (AU/NZ) -> elevenses (UK): #20119 elevenses (UK) in meals of the day; times of day; starts with a number
+- moses basket (UK/AU/IE) -> bassinet (US): #15761 bassinet in newborn care; baby gear; maternity ward
+- mozzie [AU term] (AU/NZ) -> mosquito (general): #1345 mosquito in insects and bugs; biting bugs; flies
+- mud guard (UK) -> fender (US): #47453 fender [boat] in ship parts | #47864 fender [bicycle] in bicycle parts | #55274 fender [fireplace] in fireplace words
+- murphy bed (US) -> wall bed (general): #23450 wall bed in beds
+- nan (UK) -> grandma (general): #56643 grandma [relative] in words for grandparents
+- nappy bag (UK) -> diaper bag (US): #15781 diaper bag in baby gear; bags; ___bag
+- nightdress (UK) -> nightgown (US): #3677 nightgown in sleep; nightwear
+- nightstick (US) -> truncheon (UK): #33681 truncheon (UK) in police words; police station; police equipment
+- nil [zero score] (UK) -> zero (general): #29418 zero [number] in words from arabic; numbers | #47935 Zero [electric motorcycle] in motorcycle brands | #55953 zero [French number] in numbers in french | #56001 zero [Italian number] in numbers in italian | #56023 zero [Japanese number] in numbers in japanese
+- no overtaking (UK) -> no passing zone (US): #46740 no passing zone (US) in road signs
+- no passing zone (US) -> no overtaking (UK): #46739 no overtaking (UK) in road signs
+- nought (UK) -> zero (general): #29418 zero [number] in words from arabic; numbers | #47935 Zero [electric motorcycle] in motorcycle brands | #55953 zero [French number] in numbers in french | #56001 zero [Italian number] in numbers in italian | #56023 zero [Japanese number] in numbers in japanese
+- numnah (UK) -> saddle pad (US): #9556 saddle pad in horse tack
+- nursery slope (UK) -> bunny hill (US): #57622 bunny hill (US) in ski resort
+- offal (UK) -> organ meats (US): #498 organ meats in butcher shop
+- operating theatre (UK) -> operating room (US): #57506 operating room in hospital; ___room
+- outlet [electrical] (US) -> socket (UK): #14263 socket [joint] in joints; starts with a piece of clothing | #23641 socket [electrical] in electrical fittings; electricity words
+- oven glove (UK) -> oven mitt (US): #19862 oven mitt in kitchen utensils
+- overtake (UK) -> pass (US): #28008 pass [sports] in sports verbs | #30843 pass [mountain] in mountain features; mountains; mountaineering words | #34832 pass [exam] in exam words | #45971 pass [magic] in magic tricks | #46935 pass [ticket] in ticket words; cable cars and lifts; on a bus
+- paint tin (UK) -> paint can (US): #23772 paint can in painting and decorating
+- pantyhose (US) -> tights (UK): #6225 tights in dance; dance studio words; underwear
+- paper round (UK) -> paper route (US): #66875 paper route (US/CA) in paper___
+- paper route (US/CA) -> paper round (UK): #66878 paper round (UK) in paper___
+- paraprofessional (US) -> teaching assistant (UK): #34811 teaching assistant in school staff
+- parlay (US) -> accumulator (UK): #45330 accumulator (UK) in betting words; kinds of wager
+- paua (NZ) -> abalone (general): #507 abalone in meat and seafood; sea life; mollusks
+- pelmet (UK) -> valance (US): #16038 valance in bedding; bedroom; soft furnishings
+- perspex (UK) -> plexiglass (US): #39006 plexiglass in see-through materials
+- pillar box (UK) -> mailbox (US): #38221 mailbox [postbox] in post office; outside the house; mail words
+- pip [fruit] (UK) -> seed (general): #17411 seed [plant] in parts of a fruit; things that fall from trees; flower parts | #43006 seed [tennis] in tennis terms | #44339 seed [tournament] in tournament words | #64296 seed [needlework] in embroidery stitches
+- plughole (UK) -> drain (general): #23628 drain [bathroom] in bathroom fixtures; bath time; plumbing words | #58891 drain [pinball] in pinball words
+- popper [fastener] (UK) -> snap (US): #5747 snap [card game] in table games; reversible words; card games | #16892 snap [fingers] in hand actions | #16965 snap [speak sharply] in ways of speaking | #24982 snap [fastener] in fastenings | #42772 snap [american football] in american football terms | #43413 snap [surfing] in surfing words; surf moves | #46370 snap [AFL kick] in aussie rules terms | #49305 Snap [company] in tech companies; app makers
+- pork scratchings (UK) -> pork rinds (US): #19099 pork rinds in snacks; salty foods; crunchy foods
+- possum (US) -> opossum (general): #1046 opossum in mammals; marsupials; north american animals
+- post box (UK) -> mailbox (US): #38221 mailbox [postbox] in post office; outside the house; mail words
+- postal order (UK) -> money order (US): #38231 money order (US) in post office
+- prawn cocktail (UK) -> shrimp cocktail (US): #17831 shrimp cocktail in seafood dishes
+- progressives (US) -> varifocals (UK): #24794 varifocals (UK) in eyewear
+- pumper truck (US) -> fire engine (general): #62692 fire engine [emergency] in truck types; fire___
+- punch bag (UK) -> punching bag (US): #15876 punching bag in gym equipment; boxing terms; sports equipment
+- rattler (US) -> rattlesnake (general): #1157 rattlesnake in reptiles and amphibians; snakes; north american animals
+- ready salted (UK) -> plain (US): #1917 plain [landscape] in landscapes; flat landscapes; prairie | #64809 Plain [standard] in flours
+- recorded delivery (UK) -> certified mail (US): #35178 certified mail (US) in mail words
+- resit (UK) -> retake (US): #34850 retake in exam words
+- roach [insect] (US) -> cockroach (general): #1356 cockroach in insects and bugs; city animals; nocturnal animals
+- rock pool (UK) -> tide pool (US): #31047 tide pool in rock pool life; beach vacation; aquarium
+- rockery (UK) -> rock garden (general): #1866 rock garden in japanese garden; garden; garden styles
+- roof light (UK) -> skylight (US): #6599 skylight in architecture; window styles; attic
+- roomie (US) -> roommate (general): #3931 roommate in family and friends; double letters
+- rotary [traffic circle] (US) -> roundabout (UK): #27373 roundabout [junction] in british english words; traffic words
+- routing number (US) -> sort code (UK): #33926 sort code (UK) in banking words
+- rozzers (UK) -> police (general): #4207 police in law and order; police words; hidden insects
+- rubbish bin (UK) -> trash can (US): #23251 trash can [household] in things with lids; park; outside the house | #38361 trash can [street] in street furniture
+- rucksack (UK) -> backpack (general): #3030 backpack in campsite; school; accessories
+- saithe (UK) -> pollock (US): #1258 pollock in fish; sea fish; fish to eat
+- sales clerk (US) -> shop assistant (UK): #33004 shop assistant (UK) in service jobs
+- salt beef (UK) -> corned beef (US): #17785 corned beef in cured meats; canned foods; salty foods
+- saltie (AU) -> saltwater crocodile (general): #8612 saltwater crocodile in crocodilians; ocean giants; australian animals
+- saskatoon [serviceberry] (CA) -> serviceberry (US): #17197 serviceberry in berries
+- school coach (UK) -> school bus (US): #2655 school bus [yellow vehicle] in public transportation; special vehicles; yellow things
+- scourer (UK) -> scouring pad (US): #23376 scouring pad in under the sink; cleaning items; rough things
+- scratchplate (UK) -> pickguard (US): #10747 pickguard in instrument parts; guitar parts
+- seeing eye dog (US) -> guide dog (general): #9449 guide dog in working animals
+- server [waiter] (US) -> waiter (general): #4110 waiter in jobs; restaurant words; service jobs
+- shade [blind] (US) -> blind (UK): #3311 blind in senses
+- shield [armored stinker] (UK) -> stink bug (US): #1424 stink bug in garden bugs
+- shoe shop (UK) -> shoe store (US): #57500 shoe store in shopping mall; shops
+- shonky (AU) -> dodgy (UK): #27323 dodgy in british slang
+- shop assistant (UK) -> sales clerk (US): #33005 sales clerk (US) in service jobs
+- shop vac (US) -> wet vac (US): #23548 wet vac (US) in cleaning appliances
+- shutoff valve (US) -> stopcock (UK): #23782 stopcock (UK) in plumbing words; under the sink
+- sidewalk (US) -> pavement (UK): #27365 pavement in british english words
+- singlet [vest] (AU/NZ/UK/ZA) -> tank top (US): #4896 tank top in clothes; sports clothing
+- singlet [top] (AU/NZ) -> tank top (US): #4896 tank top in clothes; sports clothing
+- sitting room (UK) -> living room (general): #24071 living room in parts of a house; ___room
+- skewbald (UK) -> pinto (US): #1546 pinto [horse] in horses; spotted animals; words from spanish | #9531 pinto [horse color] in horse colors
+- skillion (AU) -> shed roof (US): #14115 shed roof in roof styles
+- slacks (US) -> trousers (UK): #4864 trousers in closet contents; things with buttons; things with legs
+- snigger (UK) -> snicker (US): #17131 snicker in ways of laughing; voice sounds
+- soccer field (US) -> football pitch (UK): #44165 football pitch (UK) in sports venues; playing surfaces
+- solicitor [lawyer] (UK/IE/AU) -> lawyer (general): #4069 lawyer in jobs; law and order; courtroom words
+- sort code (UK) -> routing number (US): #33929 routing number (US) in banking words
+- spackle (US) -> filler (UK): #23760 filler [wall] in painting and decorating
+- sparky [electrician] (UK/AU/NZ) -> electrician (general): #4091 electrician in jobs; skilled trades
+- split pin (UK) -> cotter pin (US): #23721 cotter pin in fixings; machine parts
+- squared paper (UK) -> graph paper (US): #25581 graph paper in paper goods; math tools; square things
+- squillion (UK) -> zillion (US): #41541 zillion in big numbers
+- stag do (UK) -> bachelor party (US): #5181 bachelor party in holidays and celebrations; weddings; wedding preparations
+- stockinette (US) -> stocking stitch (UK): #24895 stocking stitch (UK) in knitting words
+- stocking stitch (UK) -> stockinette (US): #24896 stockinette (US) in knitting words
+- stopover [UK term] (UK/AU/NZ) -> layover (US): #2728 layover (US/CA) in air travel; airport words; airport
+- straight on (UK) -> straight ahead (US): #48246 straight ahead in giving directions
+- street party (UK) -> block party (US): #32593 block party in kinds of party
+- strongroom (UK) -> vault (general): #6552 vault [ceiling] in architecture; architectural features | #33919 vault [bank] in banking words | #39837 vault [jump] in ways to jump | #43964 vault [gymnastics] in gymnastics; gymnastics apparatus
+- sub-editor (UK) -> copy editor (US): #13437 copy editor [publishing] in publishing words | #35055 copy editor [newspaper] in newspaper words
+- sugar paper (UK) -> construction paper (US): #25567 construction paper in paper goods; ___paper
+- sultana [raisin] (UK) -> golden raisin (US): #17275 golden raisin in dried fruits
+- sun cream (UK) -> sunscreen (US): #3745 sunscreen in personal care; pharmacy; skincare products
+- sunnies (AU/NZ) -> sunglasses (general): #4952 sunglasses in accessories; sun care; in a handbag
+- sunup (US) -> sunrise (general): #25416 sunrise in times of day; sun___
+- swamp cooler (US) -> evaporative cooler (general): #23596 evaporative cooler in heating and cooling
+- sweet shop (UK) -> candy store (US): #62630 candy store (UK) in shops
+- swimming costume (UK) -> swimsuit (general): #24469 swimsuit in swimwear; swimming words; sports clothing
+- swimming gala (UK) -> swim meet (US): #43300 swim meet in swimming words
+- tailback (UK) -> traffic jam (general): #38385 traffic jam in slow things; driving words
+- takeaway menu (UK) -> takeout menu (US): #23264 takeout menu (US) in junk drawer
+- takeout menu (US) -> takeaway menu (UK): #23272 takeaway menu (UK) in junk drawer
+- talking book (UK) -> audiobook (general): #13548 audiobook in book formats; library; ___book
+- Tannoy [station announcer] (UK) -> pa system (general): #49547 PA system in audio gear
+- team kit (UK) -> uniform (US): #4905 uniform in clothes; work clothes; phonetic alphabet
+- telephone box (UK) -> phone booth (US): #35146 phone booth in phone words
+- telly [UK term] (UK/AU/IE) -> television (general): #4572 television in media and communication; film and tv; living room
+- tenancy agreement (UK) -> lease (US): #24179 lease in real estate words; legal documents
+- tenderstem (UK) -> broccolini (general): #17598 broccolini in cabbage family
+- test card (UK) -> test pattern (US): #12838 test pattern in tv words
+- the trots (UK) -> diarrhea (general): #14881 diarrhea in common illnesses; illness symptoms; digestive problems
+- threadworm (UK) -> pinworm (US): #9242 pinworm in worms; childhood illnesses
+- thrift shop (US) -> charity shop (UK): #66591 charity shop (UK) in ___shop
+- thrift store [second-hand] (UK) -> charity shop (UK): #66591 charity shop (UK) in ___shop
+- ticket inspector (UK) -> conductor (US): #2661 conductor [transport] in public transportation | #2862 conductor [train] in trains; railroad jobs | #6140 conductor [orchestra] in musicians; orchestra words; arts jobs | #12322 conductor [theater] in theater jobs | #40671 conductor [electric] in electricity words | #46919 conductor [bus] in on a bus
+- tigrina (BR) -> oncilla (general): #7787 oncilla in small wild cats
+- till (UK) -> cash register (US): #25777 cash register in things with buttons; things with keys; things with screens
+- toffee apple [toffee coated] (UK) -> candy apple (US): #20186 candy apple [sweet] in fairground food; foods on a stick; american candy
+- togs (NZ/AU) -> swimsuit (general): #24469 swimsuit in swimwear; swimming words; sports clothing
+- toilet [plane] (UK) -> lavatory (general): #47325 lavatory [plane] in in-flight words; words for toilet
+- toilet bag (UK) -> toiletry bag (general): #48843 toiletry bag in travel accessories
+- tower block (UK) -> high-rise (US): #2462 high-rise in buildings; towers and skyscrapers; architecture
+- trackies (AU/NZ/UK) -> sweatpants (US): #4901 sweatpants in clothes; pants and shorts; sports clothing
+- treacle [golden syrup] (UK) -> golden syrup (UK): #18209 golden syrup (UK) in baking ingredients; sweeteners
+- trolley [shopping] (UK) -> shopping cart (US): #39781 shopping cart in things that roll; things with wheels
+- trolley bay (UK) -> cart corral (US): #38214 cart corral (US) in supermarket
+- truncheon (UK) -> nightstick (US): #33701 nightstick (US) in police words; police equipment
+- tuppence (UK) -> two pence (UK): #33955 two pence (UK) in coins
+- turn-up (UK) -> cuff (US): #24749 cuff [bracelet] in jewelry | #24951 cuff [clothing] in clothing parts
+- twister [tornado] (US) -> tornado (general): #1994 tornado [storm] in weather; words from spanish; storms | #59216 Tornado [locomotive] in famous locomotives
+- twitcher [rare-bird chaser] (UK) -> birder (general): #8411 birder in birdwatching words; animal experts
+- two pence (UK) -> tuppence (UK): #33952 tuppence (UK) in coins; historic coins
+- undershirt (US) -> vest (UK): #4883 vest [waistcoat] in clothes; things with buttons; pirate clothing | #24411 vest [underwear] (UK) in underwear
+- vacationer (US) -> holidaymaker (UK): #48157 holidaymaker (UK) in kinds of travelers
+- vacuum flask (UK) -> thermos (general): #3063 Thermos in campsite; lunchbox; brand names used as words
+- vanity [makeup table] (US) -> dressing table (UK): #4690 dressing table (UK) in furniture; bedroom; things with legs
+- varifocals (UK) -> progressives (US): #24795 progressives (US) in eyewear
+- vest [underwear] (UK) -> undershirt (US): #24412 undershirt (US) in underwear
+- washing-up bowl (UK) -> dishpan (US): #24015 dishpan (US) in washing up
+- washing-up brush (UK) -> dish brush (US): #24010 dish brush in washing up; brooms and brushes
+- washing-up liquid (UK) -> dish soap (US): #23374 dish soap in under the sink; washing up; household chemicals
+- Wellington boots (UK) -> rain boots (US): #24597 rain boots in things made of rubber; rain___
+- Wellingtons (UK) -> rain boots (US): #24597 rain boots in things made of rubber; rain___
+- wet vac (US) -> shop vac (US): #23556 shop vac (US) in cleaning appliances; cleaning items
+- willy-willy (AU) -> dust devil (general): #30893 dust devil in desert features; dry season
+- winkle (UK) -> periwinkle (general): #70 periwinkle [color] in shades of blue; shades of purple; pastel colors | #7746 periwinkle [sea snail] in sea life; mollusks; animals with shells | #40195 periwinkle [snail] in things with shells | #56546 periwinkle [flower] in blue flowers
+- woodchuck (US/CA) -> groundhog (general): #1048 groundhog in mammals; rodents; north american animals
+- wrecker [tow truck] (US) -> tow truck (general): #3110 tow truck in special vehicles; parking words; emergency vehicles
+- y-fronts (UK) -> briefs (general): #24407 briefs [underwear] in underwear
+- yabby (AU) -> crayfish (general): #499 crayfish in meat and seafood; crustaceans; animals with shells
+
+## Equivalent exists only as an alias of another word
+
+- boilersuit (UK) -> coveralls (US): coveralls (US) alias of overalls
+- Christmas pud (UK) -> christmas pudding (general): Christmas pudding (UK) alias of plum pudding
+- club soda (US) -> soda water (UK): soda water (US) alias of sparkling water
+- cotton swabs (US) -> cotton buds (UK): cotton buds (UK) alias of Q-tips
+- drainboard (US) -> draining board (UK): draining board (UK) alias of dish rack
+- four-wheeler (US) -> quad bike (UK): quad bike (UK/AU/NZ) alias of ATV
+- garbage man (US) -> binman (UK): binman (UK) alias of garbage collector
+- gramophone (UK) -> phonograph (US): phonograph (US) alias of record player
+- hob [cooking surface] (UK/IE/AU/NZ) -> stovetop (US): stovetop (US) alias of cooktop
+- ice chest (US) -> chilly bin (NZ): chilly bin (NZ) alias of cooler
+- L-plater (UK/AU) -> learner driver (general): learner driver (UK) alias of student driver
+- longshoreman (US) -> docker (UK): docker [dock worker] (UK) alias of stevedore
+- mailman (US) -> postman (UK): postman (UK) alias of mail carrier
+- mam (UK) -> mum (general): mum [flower] (US) alias of chrysanthemum | mum [mother] (UK/AU/IE) alias of mom
+- panda car [UK term] (UK) -> squad car (US): squad car (US) alias of police car
+- Pickup [open-back] (AU/NZ) -> ute (AU): ute (AU) alias of pickup truck
+- pillar box (UK) -> postbox (UK): postbox (UK) alias of mailbox
+- purse [handbag] (US/CA) -> handbag (UK): handbag (UK) alias of pocketbook
+- rainspout (US) -> downpipe (UK): downpipe (UK) alias of downspout
+- semi [truck] (US) -> articulated lorry (UK): articulated lorry (UK) alias of tractor trailer
+- trailer hitch (US) -> tow bar (UK): tow bar (UK) alias of tow hitch
+- trolley [tram] (US) -> tram (general): tram (UK) alias of streetcar
+- vet nurse (UK) -> vet tech (US): vet tech (US) alias of veterinary nurse
+- Wellingtons (UK) -> wellies (UK): wellies (UK) alias of rubber boots
+- zucchini flower (US) -> courgette flower (UK): courgette flower (UK) alias of squash blossom
+
+## Equivalent missing from the library
+
+- airdrome (US) -> aerodrome (UK)
+- airer (UK) -> drying rack (US)
+- backtalk (US) -> backchat (UK)
+- banger [old car] (UK) -> clunker (US)
+- beer mats (UK) -> coasters (US)
+- bin day (UK) -> trash day (US)
+- biscuit tin (UK) -> cookie tin (US)
+- blanket box (UK) -> blanket chest (US)
+- bull bar (AU/UK) -> grille guard (US)
+- by-election (UK) -> special election (US)
+- cachous (UK) -> dragees (general)
+- campground (US/CA) -> campsite (UK)
+- caravan park (UK/AU/NZ/IE) -> rv park (US)
+- carrier bag (UK) -> grocery bag (US)
+- caster sugar (UK) -> superfine sugar (US)
+- cattle grid (UK) -> cattle guard (US)
+- circlip (UK) -> snap ring (US)
+- cistern (UK) -> toilet tank (US)
+- consumer unit (UK) -> breaker box (US)
+- cot bumper (UK) -> crib bumper (US)
+- coving (UK) -> crown molding (US)
+- cylinder vacuum (UK) -> canister vacuum (US)
+- dado rail (UK) -> chair rail (US)
+- dinner service (UK) -> dinnerware (US)
+- double glazing (UK) -> double-pane windows (US)
+- draught excluder (UK) -> draft stopper (US)
+- drinks cabinet (UK) -> liquor cabinet (US)
+- eejit (IE) -> idiot (general)
+- emulsion (UK) -> latex paint (US)
+- extractor fan [UK term] (UK/AU) -> exhaust fan (US)
+- fairy lights (UK) -> string lights (US)
+- farm shop (UK) -> farm stand (US)
+- fire brigade (UK) -> fire department (US)
+- fly-tipping (UK) -> illegal dumping (US)
+- football shirt (UK) -> soccer jersey (US)
+- freight car (US) -> goods wagon (UK)
+- freshman (US) -> first-year (UK)
+- fusspot (UK) -> fussbudget (US)
+- G-clamp (UK) -> c-clamp (US)
+- gasometer (UK) -> gas holder (general)
+- glace cherry (UK) -> candied cherry (general)
+- go-slow (UK) -> slowdown (US)
+- grub screw (UK) -> set screw (US)
+- hamper [wicker food carrier] (UK) -> picnic basket (US)
+- housing estate (UK) -> housing development (US)
+- housing project (US) -> council estate (UK)
+- HOV lane (US) -> carpool lane (US)
+- jiffy bag (UK) -> padded envelope (general)
+- key worker (UK) -> essential worker (US)
+- knobbly (UK) -> knobby (US)
+- leisure centre (UK) -> recreation center (US)
+- loft hatch (UK) -> attic hatch (US)
+- lost property (UK) -> lost and found (US)
+- luggage van (UK) -> baggage car (US)
+- outlet [electrical] (US) -> power point (AU)
+- oven chips (UK) -> oven fries (US)
+- overtrousers (UK) -> rain pants (US)
+- pensioner (UK) -> senior citizen (US)
+- pound shop (UK) -> dollar store (US)
+- pre-drinks (UK) -> pregame (US)
+- rambler [hiker] (UK) -> hiker (general)
+- rank [cab stand] (UK) -> taxi stand (US)
+- rapeseed oil (UK) -> canola oil (US)
+- removal van (UK) -> moving van (US)
+- roadworks [construction] (UK) -> road construction (US)
+- roman blind (UK) -> roman shade (US)
+- sandwich maker (UK) -> sandwich press (AU)
+- sectional [sofa] (US) -> corner sofa (UK)
+- seville orange (UK) -> bitter orange (general)
+- sharps bin (UK) -> sharps container (US)
+- shower tray (UK) -> shower pan (US)
+- sick note (UK) -> doctor's note (US)
+- signal box (UK) -> signal tower (US)
+- slipcover (US) -> loose cover (UK)
+- snagging (UK) -> punch list (US)
+- splashback (UK) -> backsplash (US)
+- stalls [theater] (UK) -> orchestra (US)
+- star sign (UK) -> zodiac sign (general)
+- stewing steak (UK) -> stew meat (US)
+- stop-start (UK) -> stop-and-go (US)
+- studio flat (UK) -> studio apartment (US)
+- Swiss roll (UK) -> jelly roll (US)
+- T-junction (UK) -> t-intersection (US)
+- tappets (UK) -> lifter (US)
+- tar paper (US) -> roofing felt (UK)
+- taxi rank (UK) -> taxi stand (US)
+- tea towel (UK) -> dish towel (US)
+- terraced [row home] (UK) -> row house (US)
+- terraced house (UK) -> row house (US)
+- throw pillow (US) -> scatter cushion (UK)
+- tipp-ex (UK) -> white-out (US)
+- top table (UK) -> head table (US)
+- topside [meat cut] (UK) -> top round (US)
+- towel rail (UK) -> towel rack (US)
+- traffic warden (UK) -> meter maid (US)
+- train driver (UK) -> locomotive engineer (US)
+- trash collection (US) -> rubbish collection (UK)
+- underlay [carpet] (UK) -> carpet pad (US)
+- vice-chancellor (UK) -> university president (US)
+- windshield wiper (US) -> windscreen wiper (UK)
+- wing mirror (UK) -> side mirror (US)
