@@ -293,6 +293,7 @@ function entryTable(t) {
   for (const a of P.entries) if (a.aliasKind === 'form' && a.aliasOf) { if (!formsOf.has(a.aliasOf)) formsOf.set(a.aliasOf, []); formsOf.get(a.aliasOf).push(a); }
   const shown = e => (!e.aliasOf && P.ix.entry.get(e.use?.[t.id])) || e;
   const own = e => e.typ[t.id] !== undefined;   // an alias linked in this theme on its own is a word of the theme like any other (public house in ___ house); otherwise it only sits under its root
+  const locked = themeLocked(P, t);   // a locked theme never swaps in an alias it does not link itself, so such aliases are not listed under their root
   const dm = e => themeLocked(P, t) ? e : dialectMember(P, e);   // a locked theme shows exactly the linked word, whatever the library's dialect
   const label = e => ((!e.aliasOf || own(e)) && e.show?.[t.id]) ||(shown(e) !== e ? shown(e) : dm(e)).text;   // what the player sees for this word in this theme
   const f = A.filter.toLowerCase();
@@ -304,7 +305,7 @@ function entryTable(t) {
   roots.sort((a, b) => dir * (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
   let rows = [];
   const under = new Map(), openRows = A.expanded || (A.expanded = new Set());   // other names of a word (spellings, regional words ...) sit behind a button on its row
-  for (const e of roots) { const as = list.filter(x => x.aliasOf === e.id && x.aliasKind !== 'form'); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dm(e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
+  for (const e of roots) { const as = list.filter(x => x.aliasOf === e.id && x.aliasKind !== 'form' && !(locked && !own(x))); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dm(e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
   const underRow = new Set([...under].filter(([id]) => openRows.has(id)).flatMap(([, as]) => as.map(a => a.id)));
   const total = rows.length;
   if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
@@ -318,7 +319,7 @@ function entryTable(t) {
     h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => pool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
   // another name of a word (an alias, or the root when the row shows a dialect variant) sits under its row with its own part of speech, type, familiarity, flags and status
   const subRow = (a, note) => h('tr.alias', { class: a.enabled ? '' : 'off' }, h('td.on', {}, h('div.onwrap', {}, h('span.expander.none'), h('input', { type: 'checkbox', checked: a.enabled, title: 'enabled', onchange: ev => { a.enabled = ev.target.checked; A.changed(); } }))),
-    h('td.word', { onclick: () => editEntry(a) }, a.text, a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, familiaritySel(a.fam, ev => { a.fam = +ev.target.value; A.changed(); })), h('td'), h('td'),
+    h('td.word', { onclick: () => editEntry(a) }, a.show?.[t.id] || a.text, a.show?.[t.id] && h('span.root', {}, ' ← ', h('span.rootname', {}, a.text)), a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, familiaritySel(a.fam, ev => { a.fam = +ev.target.value; A.changed(); })), h('td'), h('td'),
     h('td', flagsOf(a)), h('td', h('span.dot.' + a.status, { title: a.status }, a.status === 'rev' ? '✓' : a.status === 'gen' ? 'g' : '·')));
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),

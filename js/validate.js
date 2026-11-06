@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, difficultyBand, linkIds, themeStats, pathOf, sameText, ALIAS_KINDS } from './model.js';
+import { eff, difficultyBand, linkIds, themeStats, pathOf, sameText, themeLocked, ALIAS_KINDS } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
@@ -44,7 +44,7 @@ export function validate(P) {
     if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no theme popularity.`, { themeId: t.id }); else unrated++; }
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
-    if (!t.nameOk) { const ws = themeNameWords(t); for (const e of direct) { const w = nameLeak(t, e.show?.[t.id] ? { ...e, text: e.show[t.id] } : e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
+    if (!t.nameOk) { const ws = themeNameWords(t); const locked = themeLocked(P, t); for (const e of direct) { if (locked && e.aliasOf && e.typ[t.id] === undefined) continue; const w = nameLeak(t, e.show?.[t.id] ? { ...e, text: e.show[t.id] } : e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
     for (const g of t.groups || []) {   // synonym groups: at most one member per level
       const mem = g.map(id => ix.entry.get(id));
       if (g.length < 2) add('warn', 'group-small', `A synonym group in "${t.name}" has fewer than two members.`, { themeId: t.id });

@@ -28,7 +28,7 @@ const moveLinks = (a, holder, root) => {
   for (const [tid, v] of Object.entries(a.typ)) {
     const t = P.ix.theme.get(tid);
     if (root.typ[tid] !== undefined && holder !== root) {   // both words are linked here: the family keeps the root's link only
-      delete a.typ[tid]; stat.dropped++; log.push(`    drops its link in ${t && themeLocked(P, t) ? 'LOCKED ' : ''}"${tn(tid)}" (root is linked there)`); continue;
+      delete a.typ[tid]; if (a.show) delete a.show[tid]; stat.dropped++; log.push(`    drops its link in ${t && themeLocked(P, t) ? 'LOCKED ' : ''}"${tn(tid)}" (root is linked there)`); continue;
     }
     if (t && themeLocked(P, t)) {
       if (holder !== a) { holder.typ[tid] = holder.typ[tid] ?? v; delete a.typ[tid]; }
@@ -118,7 +118,7 @@ for (const raw of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {
 // A word that now sits in a theme whose name it repeats (school bus in bus types) shows without the repeated word (school), as the library does elsewhere.
 for (let pass = 0; pass < 3; pass++) for (const i of validate(P)) {
   if (i.kind !== 'theme-name' || !i.entryId || before.has(i.kind + i.msg)) continue;
-  const e = P.ix.entry.get(i.entryId), t = P.ix.theme.get(i.themeId); if (!e || !t || e.show?.[t.id]) continue;
+  const e = P.ix.entry.get(i.entryId), t = P.ix.theme.get(i.themeId); if (!e || !t || e.show?.[t.id]) continue;   // (the validator no longer flags an alias in a locked theme it does not link itself)
   const tw = themeNameWords(t), toks = e.text.split(/\s+/), keep = toks.filter(w => !themeNameWords({ name: w }).some(x => tw.includes(x)));
   if (!keep.length && nameLeak(t, { ...e, text: toks[toks.length - 1] }) === null) keep.push(toks[toks.length - 1]);   // only the thing the theme collects is left (fizzy drink -> drink)
   if (!keep.length || keep.length === toks.length) { problems.push(`cannot shorten "${e.text}" in "${t.name}"`); continue; }
