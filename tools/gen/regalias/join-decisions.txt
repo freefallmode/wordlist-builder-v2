@@ -1,0 +1,17 @@
+# Words that join an existing family, and data fixes found in the same review.
+# thrift shop and charity shop (an alias of thrift store) are one family and both linked in the locked ___shop theme: keep charity shop
+U 66595 blank_shop
+# hob [cooking surface] was also linked in "male animals" (hob = male ferret): split that sense off first
+X 4768 male_animals 4 male ferret
+L 4768 4767 =
+L 11308 11307 =
+L 49253 3091 =
+L 35606 46671 =
+# trolley [tram] and streetcar are both US words: a synonym alias, not a regional one; same for thrift shop / thrift store
+S 2653 2652 =
+S 66595 62628 =
+# Pickup [open-back] is the US word, wrongly tagged AU/NZ: a short form of pickup truck
+T 64795 pickup | truck
+A 64795 2640 abbreviation -
+# Christmas pud is a short form of Christmas pudding; the root of that family is plum pudding
+A 63490 64742 abbreviation UK

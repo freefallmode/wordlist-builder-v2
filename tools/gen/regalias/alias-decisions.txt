@@ -1,0 +1,133 @@
+# Decisions for the 88 pairs in alias-list.md (both words exist, no shared theme). Applied by alias-apply.mjs.
+#   L <alias id> <root id> <regions>    the alias becomes a regional alias of the root, tagged with the regions
+#   M <duplicate id> <alias id>         the duplicate is an entry for a word that is already an alias of the same root: its links go to that alias, then it is deleted
+#   R <id> <regions>                    fix the region tag of an entry (empty list clears it)
+# Pair numbers are the rows of alias-list.md. Pairs not listed here are left alone (see the notes in the report).
+# 1 abseil / rappel
+M 29350 45055
+# 6 bobble / hair tie
+L 24818 3798 UK
+# 7 bottom / butt
+M 177 66208
+# 8 bread bin / bread box
+L 23125 66385 UK
+# 9 bulldog clip / binder clip
+L 34775 60576 UK
+# 11, 77 candy store / sweet shop (candy store is US, wrongly tagged UK)
+R 62630 US
+L 66592 62630 UK
+# 12 combats / cargo pants
+L 4462 4914 UK
+# 13 corner shop / convenience store
+L 66587 46773 UK
+# 16 cutlery / silverware
+L 23201 29247 UK
+# 18 diplomatic bag / diplomatic pouch
+L 66543 33540 UK
+# 19 draughtboard / checkerboard
+L 66326 38905 UK
+# 21 dustcart / garbage truck
+M 63992 3115
+# 23 fire tender / fire engine
+L 49032 62692 UK
+# 24 fireguard / fire screen
+L 66274 23586 UK
+# 25 fizzy pop / soda
+L 57861 867 UK
+# 26 fruit and veg / produce
+L 16684 28796 UK
+# 27 games console / game console
+L 23560 5845 UK
+# 30 ginnel / alley
+L 60595 38309 UK
+# 32 gumboots / rubber boots (rain boots is a US synonym of rubber boots, left for later)
+L 24603 24589 AU,NZ
+# 34 head teacher / principal
+L 66687 4497 UK
+# 35 head torch / headlamp
+L 40332 2572 UK
+# 36 heated towel rail / towel warmer
+L 23633 61439 UK
+# 38 hooter / horn (car)
+L 49208 46600 UK
+# 39, 40 jacket / jacket potato / baked potato
+L 63528 19141 UK
+L 19146 19141 UK
+# 41 jandals / flip-flops (the audit paired it with thongs, an Australian word)
+L 24649 24624 NZ
+# 42 jump leads / jumper cables
+M 23156 46853
+# 43 kiddie pool / paddling pool (US word is the root)
+L 31515 57632 UK
+# 44 kitchen paper / paper towel
+L 66610 25549 UK
+# 45 knickers / panties
+M 24402 66204
+# 46 knitted jumper / sweater
+L 25746 4873 UK
+# 47 kumara / sweet potato
+L 19393 402 NZ
+# 48 letterbox / mail slot (letterbox is UK, wrongly tagged US)
+L 65785 35174 UK
+# 49 lollipop man / crossing guard
+L 66367 34812 UK
+# 51 measuring jug / measuring cup
+L 23749 19848 UK
+# 52 mobile phone / cell phone
+M 7326 66203
+# 53 mozzie / mosquito
+L 1346 1345 AU,NZ
+# 56 nought / zero
+L 29187 29418 UK
+# 57 operating theatre / operating room
+L 15281 57506 UK
+# 58 oven glove / oven mitt
+L 23127 19862 UK
+# 60 paint tin / paint can
+L 23158 23772 UK
+# 61 pork scratchings / pork rinds
+L 17812 19099 UK
+# 63 punch bag / punching bag
+L 66535 15876 UK
+# 65 rotary / roundabout (roundabout is the root)
+L 48272 27373 US
+# 66 rubbish bin / trash can
+L 39709 23251 UK
+# 67 school coach / school bus
+L 46903 2655 UK
+# 68 scourer / scouring pad
+L 24003 23376 UK
+# 70 shield / stink bug
+L 63671 1424 UK
+# 71 shoe shop / shoe store
+L 66584 57500 UK
+# 72 shonky / dodgy (no US or neutral word; dodgy is the root)
+L 62484 27323 AU
+# 73 sidewalk / pavement (sidewalk is the root)
+L 27365 38436 UK
+# 74 singlet / tank top
+L 24312 4896 AU,NZ
+# 75 stopover / layover
+M 2729 66199
+# 76 strongroom / vault (bank)
+L 66239 33919 UK
+# 78 swimming gala / swim meet
+L 35003 43300 UK
+# 79 tailback / traffic jam
+L 38387 38385 UK
+# 82 thrift store / charity shop (thrift store is US, wrongly tagged UK)
+R 62628 US
+L 66591 62628 UK
+# 83 till / cash register
+L 38193 25777 UK
+# 84 toilet bag / toiletry bag
+L 48803 48843 UK
+# 85 trolley / shopping cart
+L 33997 39781 UK
+# 86, 87 Wellington boots / Wellingtons / rubber boots
+L 24590 24589 UK
+L 65834 24589 UK
+# 88 willy-willy / dust devil
+L 60348 30893 AU
+# rubber boots is not a British-English word; Wellington boots keeps the link in that locked theme
+U 24589 british_english_words
