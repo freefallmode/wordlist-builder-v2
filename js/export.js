@@ -7,6 +7,7 @@
 import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, POS, TYPES, REGIONS } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { isNameWord } from './validate.js';
+import { breakPoints } from './breaks.js';
 
 export const DEFAULT_EXPORT = {
   adult: 'include', sensitive: 'include', tm: 'include', vulgar: 'include', lang: 'include',
@@ -143,6 +144,7 @@ export function buildExport(P, opt0 = {}) {
   for (const t of themes) for (const g of t.groups || []) { const m = g.filter(id => keep.has(id)); for (const id of m) if (!clash.has(id)) clash.set(id, id); for (const id of m.slice(1)) clash.set(find(id), find(m[0])); }
   const clashN = new Map(); for (const id of clash.keys()) { const c = find(id); clashN.set(c, (clashN.get(c) || 0) + 1); }
   const clashId = new Map([...clashN].filter(([, n]) => n > 1).map(([c], i) => [c, i + 1]));
+  cols.breaks = [];                                   // character indexes in text[i] where a hyphen may go, [] for none
   if (o.zipf && P.lang === "en") cols.zipf = [];
   if (o.gloss) cols.gloss = [];
   if (o.notes) cols.note = [];
@@ -157,6 +159,7 @@ export function buildExport(P, opt0 = {}) {
     if (e.aliasOf && e.aliasKind === 'translation') flags |= ENTRY_BITS.translation;
     if (e.aliasOf && e.aliasKind === 'synonym') flags |= ENTRY_BITS.synonym;
     cols.text.push(e.text);
+    cols.breaks.push(breakPoints(e.text));
     cols.pos.push(POS.indexOf(e.pos));
     cols.type.push(TYPES.indexOf(e.type));
     cols.flags.push(flags);
@@ -167,7 +170,7 @@ export function buildExport(P, opt0 = {}) {
     cols.linkCount.push(links.length);
     for (const [tid, r, p, sh] of links) {
       if (isNameWord(ix.theme.get(tid), sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text)) nameWordLinks.push(cols.links.length / 4);
-      if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps]); shownAt.set(sh, shown.length); }
+      if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps, breakPoints(text)]); shownAt.set(sh, shown.length); }
       cols.links.push(tIndex.get(tid), r, p, sh ? shownAt.get(sh) : 0);
     }
     if (cols.zipf) { const z = zipf(e.text); cols.zipf.push(z == null ? 0 : Math.round(z * 10)); }
@@ -185,7 +188,7 @@ export function buildExport(P, opt0 = {}) {
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
     const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
     const [rlo, rhi] = rMask(f.region);
-    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || '', t.ident || 0, themeDifficulty(t)];
+    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || '', t.ident || 0, themeDifficulty(t), breakPoints(t.name)];
     if (o.notes) row.push(t.note);
     return row;
   });
@@ -194,10 +197,11 @@ export function buildExport(P, opt0 = {}) {
     v: 3, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
     dialect: dialectOf(P), options: o, regions, regionBits: REGION_BITS, kindNames: THEME_KINDS, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
     // identifiability 1 (obvious) to 5 (obscure), 0 unrated; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
-    themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty'].concat(o.notes ? ['note'] : []),
+    themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty', 'breaks'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
     // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, typicality, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
     // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups): never put two with the same id in one level.
+    // breaks[i] lists the character indexes in text[i] where a hyphen may be placed (a hyphen goes before that character); [] when the text has no break point. Words of 8+ letters only; spaces and existing hyphens are the game's own breaks. Shown texts carry the same list as a third value, and theme rows in the 'breaks' field.
     // root[i] is 0 for a root entry, else the index+1 of the root it is an alias of.
     entries: cols,
     shown, nameWordLinks,

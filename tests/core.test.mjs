@@ -155,8 +155,8 @@ test('export format 3: shown text, display form and clash ids travel with the li
   const { file } = buildExport(P), c = file.entries, at = text => c.text.indexOf(text);
   const link = text => { let o = 0; for (let k = 0; k < at(text); k++) o += c.linkCount[k] * 4; return c.links.slice(o, o + 4); };
   assert.equal(file.v, 3);
-  assert.deepEqual(file.shown[link('rock garden')[3] - 1], ['rock', 0]);
-  assert.deepEqual(file.shown[link('rain')[3] - 1], ['rainy', 2]);
+  assert.deepEqual(file.shown[link('rock garden')[3] - 1], ['rock', 0, []]);
+  assert.deepEqual(file.shown[link('rain')[3] - 1], ['rainy', 2, []]);
   assert.equal(link('rain')[1], 1.7);                                 // the form's own familiarity (2) counts: 0.7 x 2 + 0.3 x 1 (typicality)
   assert.equal(link('fig')[3], 0);
   assert.ok(c.clash[at('rain')] > 0 && c.clash[at('rain')] === c.clash[at('rainfall')] && c.clash[at('fig')] === 0);
