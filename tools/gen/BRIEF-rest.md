@@ -6,3 +6,4 @@ Follow `tools/gen/BRIEF-depth3.md` in full, with these differences:
 - These themes are narrower, so 12 to 30 words per theme is right (never under 8 unless the theme is a tiny closed set); keep the difficulty spread within each theme and spread theme `d` across the chunk, using 4 and 5 for specialist themes.
 - The library now has labels on every shared text (e.g. "mouth (river)", "bat (animal)"). ALWAYS run `node tools/gen/find-word.mjs word ...` for any word that might exist already or has several meanings and reuse the exact label of the matching meaning (so it is only linked); give new meanings their own label. Never skip a word for a clash.
 - Apply the section "Same thing, different form" at the end of `tools/gen/BRIEF-depth3.md` (words for one concept in one theme: pick one form, or list the group in a comment).
+- Long words (8+ letters) get line-break points afterwards: see the last section of `tools/gen/BRIEF-depth3.md`. Nothing to add to your module.

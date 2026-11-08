@@ -1,12 +1,12 @@
 // Checks the generated out-N.txt files against in-N.txt / todo-N.txt and merges the valid lines into data/breaks-en.txt.
-// node tools/brk-merge.mjs [prefix: in|todo]   Prints the problems; invalid lines are written to tools/gen/brk/bad.txt for a rerun.
+// node tools/brk-merge.mjs [prefix: in|todo]  (todo-N.txt from tools/brk-tokens.mjs is answered in todo-out-N.txt)   Prints the problems; invalid lines are written to tools/gen/brk/bad.txt for a rerun.
 import fs from 'node:fs';
 const dir = 'tools/gen/brk/', prefix = process.argv[2] || 'in';
 const file = 'data/breaks-en.txt';
 const have = new Map(fs.existsSync(file) ? fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(Boolean).map(l => [l.slice(0, l.indexOf('=')), l.slice(l.indexOf('=') + 1)]) : []);
 let ok = 0, none = 0, missing = 0, single = 0; const bad = [];
 for (const f of fs.readdirSync(dir).filter(f => new RegExp('^' + prefix + '-\\d+\\.txt$').test(f))) {
-  const outF = dir + f.replace(prefix, 'out');
+  const outF = dir + (prefix === 'in' ? f.replace('in', 'out') : 'todo-out-' + f.replace(/^todo-/, ''));
   if (!fs.existsSync(outF)) { console.log('no output for ' + f); continue; }
   const want = fs.readFileSync(dir + f, 'utf8').split(/\r?\n/).filter(Boolean);
   const got = new Map(fs.readFileSync(outF, 'utf8').split(/\r?\n/).filter(l => l.includes('=')).map(l => [l.slice(0, l.indexOf('=')).trim(), l.slice(l.indexOf('=') + 1).trim()]));

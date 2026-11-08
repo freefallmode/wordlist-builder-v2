@@ -12,5 +12,6 @@ const todo = new Set();
 for (const t of texts) for (const m of String(t).matchAll(WORD)) { const w = m[0].toLowerCase(); if (w.replace(/'/g, '').length >= MIN_BREAK_LETTERS && !have.has(w)) todo.add(w); }
 const a = [...todo].sort();
 fs.mkdirSync('tools/gen/brk', { recursive: true });
+for (const f of fs.readdirSync('tools/gen/brk')) if (/^todo(-out)?-\d+\.txt$/.test(f)) fs.unlinkSync('tools/gen/brk/' + f);
 for (let c = 0; c * 700 < a.length; c++) fs.writeFileSync(`tools/gen/brk/todo-${c}.txt`, a.slice(c * 700, (c + 1) * 700).join('\n') + '\n');
-console.log(a.length + ' words to do in ' + Math.ceil(a.length / 700) + ' chunks');
+console.log(a.length + ' words to do in ' + Math.ceil(a.length / 700) + ' chunks' + (a.length ? ': agents read tools/gen/brk/todo-N.txt under tools/gen/brk/BRIEF-brk.md and write todo-out-N.txt, then node tools/brk-merge.mjs todo' : ''));
