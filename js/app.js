@@ -8,6 +8,7 @@ import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, showValidation, showExport, showSettings, openPath } from './dialogs.js';
 import { isAncestor } from './model.js';
 import { allWordsView } from './allwords.js';
+import { allThemesView } from './allthemes.js';
 import { entryDefaults } from './model.js';
 
 const VERSION = '2';
@@ -229,7 +230,7 @@ function overview() {
   return h('div.overview', {},
     h('h1', 'Wordlist builder'),
     h('p', {}, `${plural(P.entries.length, 'entry')} · ${plural(playable, 'playable theme')} · ${ready.toLocaleString()} with ${min}+ words · language: ${P.lang}`),
-    h('div.actions', {}, h('button', { onclick: () => { A.view = 'words'; render(); } }, 'All words…')),
+    h('div.actions', {}, h('button', { onclick: () => { A.view = 'words'; render(); } }, 'All words…'), h('button', { onclick: () => { A.view = 'themes'; render(); } }, 'All themes…')),
     h('p.hint', 'Pick a theme on the left. Add words by hand, paste a list, or generate with Claude (Settings → API key). The checks button finds problems; Export writes the game file.'),
     h('table.ov', {}, h('tr', {}, h('th', 'Group'), h('th', 'Themes'), h('th', `With ${min}+ words`), h('th', 'Words')),
       tops.map(t => h('tr.clickable', { onclick: () => select_(t.id) }, h('td', t.name), h('td', c.play.get(t.id)), h('td', c.ready.get(t.id)), h('td', c.tot.get(t.id))))));
@@ -391,7 +392,7 @@ function render(keepFocus = false) {
   const pos = focus ? document.activeElement.selectionStart : 0;
   renderTree();
   const t = A.sel && A.P.ix.theme.get(A.sel);
-  main.replaceChildren(...[].concat(t ? themeView(t) : A.view === 'words' ? allWordsView() : overview()));
+  main.replaceChildren(...[].concat(t ? themeView(t) : A.view === 'words' ? allWordsView() : A.view === 'themes' ? allThemesView(counts(), select_) : overview()));
   main.scrollTop = top;
   if (focus) { const f = $('.filter'); f.focus(); f.setSelectionRange(pos, pos); }
   renderStatus();

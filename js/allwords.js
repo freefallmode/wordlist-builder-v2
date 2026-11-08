@@ -15,9 +15,9 @@ const STATUS = [['', 'any status'], ['new', 'new (by hand)'], ['gen', 'generated
 
 // Column widths: every column but "themes" has a width (the default below, or one set by dragging the edge of its heading; double-click fits it to its text,
 // shift + double-click goes back to the default). "themes" takes the space that is left, so the table fits the screen and only that column loses text. Widths are kept in the browser.
-const COLS = { on: 28, text: 150, gloss: 130, aliases: 170, aliasof: 130, themes: 0, pos: 82, type: 76, fam: 76, flags: 0, status: 80 };
+const COLS = { on: 28, text: 150, gloss: 130, aliases: 170, aliasof: 130, themes: 0, pos: 82, type: 76, fam: 100, flags: 0, status: 80 };
 const MIN_THEMES = 12;
-let FLAGS_W = 54, W = {};
+let FLAGS_W = 62, W = {};
 try { W = JSON.parse(localStorage.getItem('awCols') || '{}') || {}; } catch { W = {}; }
 const saveW = () => { try { localStorage.setItem('awCols', JSON.stringify(W)); } catch { /* storage unavailable */ } };
 const colW = k => W[k] || (k === 'flags' ? FLAGS_W : COLS[k]) || 0;
@@ -88,7 +88,7 @@ export function allWordsView() {
   if (S.page >= pages) S.page = pages - 1;
   const rows = list.slice(S.page * PAGE, (S.page + 1) * PAGE);
 
-  const flagWidth0 = Math.max(54, ...rows.map(e => 16 + flagList(e).length * 22 + (e.region.length ? 14 + e.region.join('/').length * 7 : 0)));   // the flags column fits the widest row on the page
+  const flagWidth0 = Math.max(62, ...rows.map(e => 16 + flagList(e).length * 22 + (e.region.length ? 14 + e.region.join('/').length * 7 : 0)));   // the flags column fits the widest row on the page
   FLAGS_W = flagWidth0;
   const th = (label, k, col) => colGrip(col, h('th.sortable', { class: S.sort === k ? 'sorted' : '', title: 'Click to sort by ' + label,
     onclick: () => { S.dir = S.sort === k ? -S.dir : 1; S.sort = k; S.page = 0; A.render(); } }, label, h('span.sortmark', S.sort === k ? (S.dir > 0 ? ' ▲' : ' ▼') : ' ⇅')));

@@ -137,7 +137,8 @@ th.sortable.sorted { background: var(--sel); text-decoration: none; } th.sortabl
 /* all words screen */
 .tools.wrap { flex-wrap: wrap; } .pager { margin: 6px 0; display: flex; align-items: center; gap: 6px; }
 .awrap { overflow-x: auto; } table.aw { table-layout: fixed; }
-table.aw th { position: relative; }   /* column widths are set in allwords.js (the themes column takes what is left) */
+table.aw th { position: relative; white-space: nowrap; }   /* column widths are set in allwords.js (the themes column takes what is left) */
+table.ath { table-layout: auto; }
 table.aw td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, aliases are not grouped under their root here */
 .regionbox { display: flex; flex-direction: column; gap: 4px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; }
