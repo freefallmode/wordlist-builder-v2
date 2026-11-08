@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":336,"modified":"2026-11-09 00:19"},"nextId":67398,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":337,"modified":"2026-11-09 00:21"},"nextId":67398,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]],"ident":1},
@@ -15156,7 +15156,7 @@
 {"id":12004,"text":"naturalism","gloss":"art","fam":4,"typ":{"art_movements":4},"status":"gen"},
 {"id":12005,"text":"postmodernism","gloss":"art","fam":4,"typ":{"art_movements":4},"status":"gen"},
 {"id":12006,"text":"land art","fam":4,"typ":{"art_movements":4},"status":"gen","nameOkIn":["art_movements"]},
-{"id":12007,"text":"pencil","gloss":"writing tool","fam":1,"typ":{"art_materials":1,"things_made_from_trees":2,"stationery":1,"math_tools":2,"things_made_of_wood":2,"things_you_write_with":1,"in_a_school_bag":1},"status":"gen"},
+{"id":12007,"text":"pencil","gloss":"writing tool","fam":1,"typ":{"art_materials":1,"things_made_from_trees":2,"stationery":1,"math_tools":2,"things_made_of_wood":2,"things_you_write_with":1,"in_a_school_bag":1,"in_a_pencil_case":1},"status":"gen"},
 {"id":12008,"text":"paint","gloss":"pigment","fam":1,"typ":{"art_materials":1,"things_that_drip":2,"things_you_pour":3},"status":"gen"},
 {"id":12009,"text":"crayon","fam":1,"typ":{"art_materials":1,"hidden_names":5,"stationery":3,"things_that_melt":3,"things_you_write_with":1,"in_a_school_bag":2,"in_a_pencil_case":1},"status":"gen"},
 {"id":12010,"text":"clay","gloss":"modeling","fam":1,"typ":{"art_materials":2,"sculpture_words":3},"status":"gen"},
