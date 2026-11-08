@@ -1,0 +1,407 @@
+T march_sisters | march sisters | Meg, Jo, Beth, Amy
+W: 29818 Meg; 29819 Beth; 52803 Jo; 52804 Amy
+
+T three_musketeers | three musketeers | Athos, Porthos, Aramis, D'Artagnan
+W: 52805 Athos; 52806 Porthos; 52807 Aramis; 52808 D'Artagnan
+
+T story_roles | story roles
+W: 3955 sidekick; 3964 confidant; 3969 frenemy; 6464 narrator; 6465 protagonist; 6466 antagonist; 6467 hero; 6468 villain; 7048 chosen one; 12338 ingenue; 13518 mentor; 13519 love interest; 13520 anti-hero; 13522 damsel in distress; 13523 foil [character]; 13524 deuteragonist; 13525 tritagonist; 13526 trickster; 13527 comic relief; 13528 femme fatale; 13529 henchman; 13530 rival [story]; 13531 tragic hero; 13532 unreliable narrator; 13533 everyman; 13534 wise old man; 13535 main character; 13536 lead [role]; 13537 supporting character; 13538 bad guy; 13539 mastermind [criminal]; 13540 minor character; 13541 stock character; 13542 cameo [role]; 13543 final girl; 13544 love rival
+G: 13535 13536
+
+T book_formats | book formats
+W: 4608 pamphlet; 4609 leaflet; 4610 flyer; 7616 Braille; 13157 graphic novel; 13173 picture; 13416 paperback; 13502 trade paperback; 13545 hardback; 13547 ebook; 13548 audiobook; 13549 pocket; 13550 box set; 13551 omnibus [book]; 13552 large print; 13553 board; 13555 chapbook; 13556 mass market paperback; 13557 folio [book]; 13558 quarto; 13559 octavo; 13560 limited edition; 13561 booklet; 13562 zine; 13563 spiral bound (adjective); 13564 leatherbound (adjective); 13565 coffee table book; 13567 paperback original; 13568 digest [book size]; 13569 loose leaf; 26279 comic [comic book]; 64504 pop-up [folding 3D paper]
+G: 4608 4610
+
+T fictional_detectives | fictional detectives
+W: 13571 Sherlock Holmes; 13572 Holmes [detective]; 13573 Hercule Poirot; 13574 Poirot; 13575 Miss Marple; 13576 Nancy Drew; 13577 Philip Marlowe; 13578 Sam Spade; 13579 Inspector Clouseau; 13580 Columbo [detective]; 13581 Father Brown; 13582 Lord Peter Wimsey; 13583 Inspector Morse; 13585 Inspector Rebus; 13586 Kinsey Millhone; 13587 Dirk Gently; 13588 Encyclopedia Brown; 13589 Jessica Fletcher; 13590 Inspector Gadget; 13591 Precious Ramotswe; 13592 Harry Bosch; 13593 Adrian Monk; 13594 Veronica Mars; 13595 Brother Cadfael; 13596 Jules Maigret; 13598 Auguste Dupin; 13599 Mike Hammer; 13600 Lisbeth Salander; 13601 Kurt Wallander; 13602 Dick Tracy; 13603 Nero Wolfe; 13604 Cormoran Strike; 13605 Hamish Macbeth; 13606 Jim Rockford; 13607 Ace Ventura
+G: 13574 13573; 13572 13571
+
+T fairy_tale_villains | fairy tale villains
+W: 995 wolf [animal]; 6981 witch [sorceress]; 6982 dragon [creature]; 13333 Rumpelstiltskin; 13348 Bluebeard; 13359 wicked stepmother; 13360 evil queen; 13361 big bad wolf; 13367 wicked witch; 13373 Baba Yaga; 13374 Snow Queen; 13381 giant [fairy tale]; 13608 ogre [fairy tale]; 13609 troll [fairy tale]; 13610 Ugly Sisters; 13611 Erl King; 13612 Sea Witch; 13613 Goblin King; 13614 wicked fairy; 13615 Mother Gothel; 13616 Gingerbread Witch; 13617 Koschei; 13618 Maleficent
+G: 995 13361; 6981 13367
+
+T fairy_tale_objects | fairy tale objects
+W: 7012 crystal ball; 13368 magic mirror; 13619 glass slipper; 13620 magic wand; 13621 poisoned apple; 13622 spinning wheel; 13623 golden egg; 13624 magic beans; 13625 beanstalk; 13626 pumpkin coach; 13627 glass coffin; 13628 red cloak; 13629 gingerbread house; 13630 magic lamp; 13631 golden goose; 13632 seven-league boots; 13634 tinderbox; 13635 glass mountain; 13636 golden harp; 13637 wishing well; 13638 magic ring; 13639 spindle [spinning]; 13640 breadcrumbs; 13641 straw house; 13642 porridge pot; 13643 poisoned comb; 13644 iron shoes; 13645 enchanted rose; 13646 magic potion; 13647 golden key; 13648 sleeping spell; 13649 invisible cloak; 13650 talking mirror; 22382 magic carpet [flying carpet]
+
+T children_s_book_characters | children's book characters
+W: 1479 piglet; 13651 Winnie the Pooh; 13652 Pooh [bear]; 13653 Peter Rabbit; 13654 Paddington [bear]; 13655 Cat in the Hat; 13656 Matilda [Dahl]; 13657 Charlie Bucket; 13658 Willy Wonka; 13659 Gruffalo; 13660 Hungry Caterpillar; 13661 Curious George; 13662 Madeline [book]; 13663 Eeyore; 13664 Tigger [Pooh character]; 13665 Christopher Robin; 13666 Mr Tumnus; 13667 Pippi Longstocking; 13668 Tintin; 13669 Babar; 13670 Horrid Henry; 13671 Mr Tickle; 13672 Elmer [elephant]; 13673 Spot the Dog; 13674 Maisy [mouse]; 13675 Miffy; 13676 Hairy Maclary; 13677 Stick Man; 13678 Mrs Tiggy-Winkle; 13679 Jemima Puddle-Duck; 13680 Mr McGregor; 13681 Fantastic Mr Fox; 13682 Wilbur [pig]; 13683 Charlotte [spider]
+G: 13652 13651
+
+T circus | circus
+W: 12533 clown; 13684 ringmaster; 13685 trapeze [circus]; 13686 acrobat; 13687 juggler; 13688 big top; 13690 lion tamer; 13691 tightrope walker; 13692 stilt walker; 13693 fire eater; 13694 sword swallower; 13695 human cannonball; 13696 strongman; 13697 contortionist; 13698 unicyclist; 13699 trapeze artist; 13700 safety net; 13701 sawdust [circus]; 13702 bareback rider; 13703 high wire; 13704 sideshow; 13705 aerialist; 13706 clown car; 13707 greasepaint; 13708 red nose; 13709 roustabout; 13710 funambulist; 13711 calliope [instrument]; 13712 barker [circus]; 13713 ring; 13714 flying trapeze; 13715 knife thrower; 13716 bearded lady; 13717 tumbler [acrobat]; 13718 elephant act
+
+T magic_show_words | magic show words
+W: 6991 wand; 13719 magician; 13720 top hat [hat]; 13721 abracadabra (other); 13722 sleight of hand; 13723 illusion [magic]; 13724 card trick; 13725 levitation; 13726 vanishing act; 13727 sawing in half; 13728 escape artist; 13729 mentalist; 13730 misdirection; 13731 patter [magic]; 13732 false bottom; 13733 hocus pocus (other); 13734 conjurer; 13735 illusionist; 13736 cups and balls; 13737 linking rings; 13738 prestidigitation; 13739 legerdemain; 13740 smoke and mirrors; 13741 black art; 13742 palming; 13743 forcing [magic]; 13744 trick; 13745 disappearing act; 13746 magic box; 13747 mind reading [magic trick]; 45978 trapdoor [stage]; 50083 presto [magic word] (other)
+
+T famous_magicians | famous magicians
+W: 13469 David Copperfield; 52932 Harry Houdini; 52933 Houdini [magician]; 52934 Ehrich Weisz; 52935 David Blaine; 52936 Penn Jillette; 52937 Teller [magician]; 52938 Criss Angel; 52939 Siegfried and Roy; 52940 Harry Blackstone; 52941 Howard Thurston; 52942 Doug Henning; 52943 Lance Burton; 52944 Paul Daniels; 52945 Derren Brown; 52946 Dynamo [magician]; 52947 Uri Geller; 52948 James Randi; 52949 Chung Ling Soo; 52950 Harry Kellar; 52951 David Devant; 52952 Ricky Jay; 52953 Dai Vernon; 52954 Mac King; 52955 Shin Lim; 52956 Tommy Cooper; 52957 Harry Anderson; 52958 Cardini; 52959 Robert-Houdin; 52960 The Amazing Randi; 52961 Penn and Teller; 52962 Lennart Green; 52963 Jason Latimer; 52964 Paul Zenon; 52965 Debbie McGee
+G: 52933 52934 52932; 52937 52961
+
+T comedy_words | comedy words
+W: 6124 improvisation; 6380 sitcom; 6427 laugh track; 6428 canned laughter; 6494 satire; 10971 punchline; 12255 monologue; 12263 farce; 12699 catchphrase; 12700 slapstick; 12705 pratfall; 13748 joke; 13749 stand-up; 13750 sketch [comedy]; 13751 one-liner; 13752 heckler; 13753 gag [joke]; 13754 pun; 13755 parody; 13756 deadpan (adjective); 13757 open mic; 13758 banter; 13759 roast [comedy]; 13760 impressionist; 13761 double act; 13762 straight man; 13763 callback [comedy]; 13764 riff [comedy]; 13765 rim shot; 13766 blooper; 13767 spoof [parody]; 13768 dad joke; 13769 custard pie; 13770 knock-knock joke; 13771 bit [comedy]; 13772 tag [comedy]; 13773 observational; 13774 comedy club; 13775 wit [humour]
+G: 6427 6428
+
+T comedians | comedians
+W: 12905 Charlie Chaplin; 12944 Mel Brooks; 12973 Buster Keaton; 52966 Robin Williams; 52967 Jerry Seinfeld; 52968 Eddie Murphy; 52969 Richard Pryor; 52970 George Carlin; 52971 Dave Chappelle; 52972 Chris Rock; 52973 Kevin Hart; 52974 Ellen DeGeneres; 52975 Jim Carrey; 52976 Steve Martin; 52977 Bill Murray; 52978 Billy Connolly; 52979 Eddie Izzard; 52980 Ricky Gervais; 52981 Lenny Henry; 52982 Peter Kay; 52983 Michael McIntyre; 52984 Jimmy Carr; 52985 Russell Brand; 52986 John Cleese; 52987 Rowan Atkinson; 52988 Dawn French; 52989 Victoria Wood; 52990 Bob Hope; 52991 Groucho Marx; 52992 Lucille Ball; 52993 Joan Rivers; 52994 Amy Schumer; 52995 Tina Fey; 52996 Sarah Silverman; 52997 Bill Burr; 52998 Jim Gaffigan; 52999 John Mulaney; 53000 Hannah Gadsby; 53001 Tig Notaro; 53002 Mitch Hedberg; 53003 Rodney Dangerfield; 53004 Don Rickles; 53005 Milton Berle; 53006 Rik Mayall; 53007 Spike Milligan; 53008 Ken Dodd; 53009 Les Dawson; 53010 Jo Brand; 53011 Bill Hicks; 53012 Norm Macdonald; 53013 Tommy Tiernan; 53014 Dara O Briain
+
+T comics_from_britain | comics from britain
+W: 12905 Charlie Chaplin; 52978 Billy Connolly; 52979 Eddie Izzard; 52980 Ricky Gervais; 52981 Lenny Henry; 52982 Peter Kay; 52983 Michael McIntyre; 52984 Jimmy Carr; 52985 Russell Brand; 52986 John Cleese; 52987 Rowan Atkinson; 52988 Dawn French; 52989 Victoria Wood; 53006 Rik Mayall; 53007 Spike Milligan; 53008 Ken Dodd; 53009 Les Dawson; 53010 Jo Brand
+
+T comics_from_the_usa | comics from the usa
+W: 12944 Mel Brooks; 12973 Buster Keaton; 52966 Robin Williams; 52967 Jerry Seinfeld; 52968 Eddie Murphy; 52969 Richard Pryor; 52970 George Carlin; 52971 Dave Chappelle; 52972 Chris Rock; 52973 Kevin Hart; 52974 Ellen DeGeneres; 52976 Steve Martin; 52977 Bill Murray; 52991 Groucho Marx; 52992 Lucille Ball; 52993 Joan Rivers; 52994 Amy Schumer; 52995 Tina Fey; 52996 Sarah Silverman; 52997 Bill Burr; 52998 Jim Gaffigan; 52999 John Mulaney; 53001 Tig Notaro; 53002 Mitch Hedberg; 53003 Rodney Dangerfield; 53004 Don Rickles; 53005 Milton Berle; 53011 Bill Hicks
+
+T funny_women | female comedians
+W: 52974 Ellen DeGeneres; 52988 Dawn French; 52989 Victoria Wood; 52992 Lucille Ball; 52993 Joan Rivers; 52994 Amy Schumer; 52995 Tina Fey; 52996 Sarah Silverman; 53000 Hannah Gadsby; 53001 Tig Notaro; 53010 Jo Brand
+
+T fairground_rides | fairground rides
+W: 5977 merry-go-round; 5979 carousel [playground]; 13776 Ferris wheel; 13778 roller coaster; 13779 bumper cars; 13781 waltzer; 13782 helter skelter; 13783 ghost train; 13784 log flume; 13785 pirate ship [ride]; 13786 teacups; 13788 drop tower; 13789 swing; 13790 chairoplane; 13791 Tilt-A-Whirl; 13792 Gravitron; 13793 octopus [ride]; 13794 Zipper [ride]; 13795 Tagada; 13796 Round Up [ride]; 13797 dark ride; 13798 gallopers; 13799 bucking bronco; 13800 bumper boats; 13801 kiddie; 13802 swinging boat
+G: 5977 5979
+
+T street_performers | street performers
+W: 6151 saxophonist; 6152 sax player; 6160 busker; 6200 one-man band; 12363 puppeteer; 12533 clown; 13686 acrobat; 13687 juggler; 13692 stilt walker; 13697 contortionist; 13698 unicyclist; 13728 escape artist; 13803 mime [performer]; 13804 living statue; 13805 human statue; 13806 magician; 13807 fire breather; 13808 caricaturist; 13809 portrait artist; 13810 pavement artist; 13811 chalk artist; 13812 break dancer; 13813 beatboxer; 13814 accordionist; 13815 organ grinder; 13816 bagpiper; 13817 bucket drummer; 13818 sand sculptor; 13819 bubble artist; 13820 balloon twister; 13821 face painter; 13822 hurdy-gurdy player; 13823 spray paint artist; 13824 fire juggler; 13825 dancer
+G: 6151 6152; 13804 13805; 13810 13811
+
+T theme_park_words | theme park words
+W: 2664 turnstile; 12144 gift shop; 13778 roller coaster; 13784 log flume; 13797 dark ride; 13826 queue [waiting]; 13827 express pass; 13828 height restriction; 13829 mascot [costume]; 13830 parade [procession]; 13831 souvenir shop; 13832 ride operator; 13833 water park; 13834 haunted house; 13835 lap bar; 13836 safety bar; 13837 restraint [ride]; 13838 loop [coaster]; 13839 inversion [coaster]; 13840 block brake; 13841 lift hill; 13842 airtime [coaster]; 13843 season pass [theme park]; 13844 day ticket; 13845 map; 13846 on-ride photo; 13847 meet and greet; 13848 fireworks; 13849 animatronic; 13850 theme park; 13851 amusement park; 13852 thrill ride; 13853 flume [ride]
+G: 13850 13851; 13853 13784
+
+T party_entertainment | party entertainment
+W: 5945 bouncy castle; 6145 DJ; 6146 disc jockey; 6229 dance floor; 6238 limbo [dance]; 10829 string quartet; 12362 puppet show; 12533 clown; 13719 magician; 13808 caricaturist; 13821 face painter; 13854 balloon animals; 13856 karaoke; 13857 photo booth; 13858 live band; 13859 bubble machine; 13860 musical chairs; 13861 pass the parcel; 13862 entertainer; 13863 magic show; 13864 fire dancer; 13865 fortune teller [entertainer]; 13866 jazz trio; 13867 cover band; 13868 ceilidh band; 13869 casino night; 13870 laser tag; 13871 treasure hunt; 13872 disco ball; 13873 strolling magician; 13874 mobile disco; 13875 tribute act; 25139 pinata
+G: 6145 6146; 13719 13873
+
+T nightclub_words | nightclub words
+W: 5000 wristband; 6145 DJ; 6146 disc jockey; 6212 disco; 6229 dance floor; 6252 rave [party]; 11210 glow stick; 12161 cloakroom; 12876 smoke machine; 13826 queue [waiting]; 13876 bouncer [doorman]; 13877 VIP [section]; 13878 velvet rope; 13879 guest list; 13880 cover charge; 13881 dress code; 13882 bottle service; 13883 strobe lights; 13884 mirror ball; 13885 DJ booth; 13886 bar tab; 13887 shots [drinks]; 13888 last orders; 13889 hand stamp; 13891 promoter; 13892 resident DJ; 13893 afterparty; 13894 lock-in; 13895 happy hour; 13896 bass drop; 13897 club night; 13898 door policy; 13901 nightcap [drink]; 67178 pregame [drinking before going out]; 67180 taxi stand
+G: 6145 6146
+
+T brazilian_carnival_words | brazilian carnival words
+W: 2262 Rio de Janeiro; 2263 Rio; 5124 Carnival [festival]; 6257 samba; 10617 agogo [percussion]; 10619 cuica; 13902 Sambadrome; 13903 samba school; 13904 float [parade]; 13905 bateria [carnival]; 13906 passista; 13907 mestre-sala; 13908 porta-bandeira; 13909 bloco; 13910 trio eletrico; 13911 surdo; 13912 tamborim; 13914 caipirinha; 13916 confetti; 13917 masquerade; 13918 feathered headdress; 13919 sequins; 13920 Rei Momo; 13921 enredo; 13922 frevo; 36615 Copacabana [beach]; 46479 pandeiro [tambourine]
+G: 2263 2262
+
+T architecture | architecture
+W: 34 castle [building]; 128 palace; 1862 gazebo; 2461 skyscraper; 2462 high-rise; 2488 cathedral; 2504 pagoda [Asian tower]; 2506 mausoleum; 2507 rotunda; 2519 belvedere; 4076 architect; 5881 stained glass; 6543 building; 6544 blueprint; 6545 floor plan; 6546 foundation [building]; 6547 facade; 6549 column [building]; 6550 arch [building]; 6551 dome [building]; 6552 vault [ceiling]; 6553 tower [building]; 6554 spire; 6555 steeple; 6556 minaret; 6557 pavilion; 6558 atrium [building]; 6559 balcony; 6560 staircase; 6561 stairway; 6562 corridor; 6563 hallway; 6564 courtyard; 6565 quad [courtyard]; 6566 cloister; 6567 colonnade; 6568 portico; 6569 pediment [building]; 6570 cornice [architecture]; 6571 buttress [building]; 6572 flying buttress; 6573 gargoyle; 6574 gable; 6575 turret; 6576 battlement; 6577 parapet; 6578 lintel; 6579 keystone; 6580 pilaster; 6581 loggia; 6582 mansard; 6583 cupola; 6584 oriel; 6585 clerestory; 6587 entablature; 6588 plinth; 6589 finial; 6590 quoin; 6591 corbel; 6592 Gothic [architecture]; 6593 Baroque [architecture]; 6594 Art Deco; 6595 Brutalism; 6596 modernism; 6597 Bauhaus [art school]; 6598 Georgian [architecture]; 6599 skylight; 6600 amphitheater; 6602 pillar; 6603 archway; 6604 vestibule [entrance]; 6605 foyer; 6606 lobby [building]; 6607 conservatory; 6608 scaffolding; 6609 masonry; 6610 lattice [crisscross framework]; 6611 arcade [architecture]; 6612 mezzanine; 6613 dormer; 6614 porch; 6615 veranda; 6616 stoop [front steps]; 6617 eaves
+G: 6562 6563; 6564 6565; 6560 6561; 6544 6545; 6604 6605 6606; 2461 2462; 6614 6615
+
+T architecture_styles | architecture styles
+W: 6361 Art Nouveau; 6592 Gothic [architecture]; 6593 Baroque [architecture]; 6594 Art Deco; 6595 Brutalism; 6597 Bauhaus [art school]; 6598 Georgian [architecture]; 13924 Romanesque; 13925 Renaissance [architecture]; 13927 Tudor [architecture]; 13928 Brutalist; 13929 Modernist; 13930 Neoclassical; 13932 Gothic Revival; 13933 Palladian; 13934 Byzantine; 13935 Moorish; 13936 Postmodern [architecture]; 13937 Deconstructivism; 13938 Beaux-Arts; 13939 Rococo [architecture]; 13940 Edwardian [architecture]; 13941 Regency [architecture]; 13942 Elizabethan [architecture]; 13943 Greek Revival; 13944 Italianate; 13945 Streamline Moderne; 13946 Queen Anne; 13947 Mid-Century Modern; 13948 Craftsman [architecture]; 13949 Prairie Style; 13950 International Style; 13951 Perpendicular [architecture]; 13952 Chicago School; 13953 Tudor Revival; 13954 Norman [architecture]; 13955 Mission Revival; 67017 Victorian; 67021 Colonial
+
+T architects | architects
+W: 11932 Michelangelo; 13956 Frank Lloyd Wright; 13957 Antoni Gaudi; 13958 Gaudi [architect]; 13959 Le Corbusier; 13960 Christopher Wren; 13961 Wren [architect]; 13962 Zaha Hadid; 13963 Frank Gehry; 13964 I M Pei; 13965 Norman Foster; 13966 Renzo Piano; 13967 Mies van der Rohe; 13968 Walter Gropius; 13969 Louis Sullivan; 13970 Oscar Niemeyer; 13971 Santiago Calatrava; 13972 Tadao Ando; 13973 Richard Rogers; 13974 Daniel Libeskind; 13975 Rem Koolhaas; 13976 Bjarke Ingels; 13977 Andrea Palladio; 13979 Filippo Brunelleschi; 13980 Inigo Jones; 13981 Alvar Aalto; 13982 Eero Saarinen; 13983 Philip Johnson; 13984 Louis Kahn; 13985 Jorn Utzon; 13986 Imhotep; 13987 Vitruvius; 13988 Gustave Eiffel; 13989 Julia Morgan; 13990 Edwin Lutyens; 13991 Nicholas Hawksmoor; 13992 John Nash [architect]; 13993 Rennie Mackintosh; 13994 Buckminster Fuller; 54538 Thomas Jefferson; 61996 John Soane; 61997 Augustus Pugin; 61998 Daniel Burnham; 61999 Moshe Safdie; 62000 Peter Zumthor; 62001 Kengo Kuma; 62002 Shigeru Ban
+G: 13961 13960; 13958 13957
+
+T church_parts | church parts
+W: 347 pew; 2499 chapel; 2514 belfry [bell tower]; 4309 altar; 5881 stained glass; 6554 spire; 6555 steeple; 6566 cloister; 6572 flying buttress; 6573 gargoyle; 6585 clerestory; 6614 porch; 6615 veranda; 6616 stoop [front steps]; 13995 nave; 13996 pulpit; 13997 aisle [church]; 13998 transept; 13999 apse; 14000 chancel; 14001 bell tower; 14002 crypt; 14003 vestry; 14004 font [baptism]; 14005 choir [church]; 14006 sanctuary [church]; 14007 lectern; 14008 narthex; 14009 lychgate; 14010 rood screen; 14011 baptistery; 14012 sacristy; 14013 confessional; 14014 rose window; 14015 altar rail; 14016 reredos; 14017 misericord; 14018 ambulatory; 14019 hymn board; 14020 kneeler [church cushion]; 14021 churchyard; 14022 cross [religious]
+G: 6614 6615
+
+T mosque_parts | mosque parts
+W: 5867 calligraphy; 6272 arabesque; 6551 dome [building]; 6556 minaret; 6564 courtyard; 6565 quad [courtyard]; 14023 mihrab; 14024 minbar; 14026 qibla; 14027 prayer hall; 14028 sahn; 14029 ablution fountain; 14030 muezzin; 14031 prayer rug; 14032 prayer mat; 14033 crescent moon; 14034 maqsura; 14035 iwan; 14036 riwaq; 14037 dikka; 14038 shoe rack; 14039 muqarnas; 14040 horseshoe arch; 14041 ablution room; 14042 prayer niche
+G: 6564 6565; 14031 14032
+
+T asian_temple_features | asian temple features
+W: 1728 lotus [flower]; 2504 pagoda [Asian tower]; 14043 torii gate; 14045 stupa; 14046 Buddha statue; 14047 incense burner; 14048 prayer wheel; 14049 stone lantern; 14050 shrine; 14051 prayer flags; 14052 dagoba; 14053 chorten; 14054 mandala; 14055 dragon statue; 14056 koi pond; 14057 shimenawa; 14058 komainu; 14059 guardian lion; 14060 bell; 14061 bodhi tree; 14062 prayer beads; 14063 mala [prayer beads]; 14064 incense stick; 14066 curved roof; 14067 red lanterns; 14068 meditation hall; 14069 gopuram; 14070 shikhara; 14071 vimana; 14072 prang [temple tower]; 14073 chedi; 14074 ema [shrine plaque]; 14075 omikuji; 14076 paifang; 14077 gong [temple]; 14078 offering box
+G: 14062 14063
+
+T bridge_types | bridge types
+W: 2887 viaduct; 6646 aqueduct; 6669 drawbridge; 7424 suspension; 14079 arch; 14080 beam; 14085 swing; 14086 pontoon; 14087 covered; 14088 footbridge; 14089 rope; 14090 clapper; 14091 packhorse; 14092 lift; 14093 transporter; 14094 stone; 14095 Bailey; 14096 humpback; 14097 tied-arch; 14098 floating; 14099 movable; 14100 log; 14101 toll; 14103 girder; 14104 hanging; 14105 pedestrian; 14106 railway; 43137 bowstring; 49879 bascule; 62859 cable-stayed (adjective); 67035 truss; 67036 cantilever; 67037 trestle
+
+T roof_styles | roof styles
+W: 6574 gable; 6582 mansard; 14109 hipped; 14110 flat; 14111 pitched; 14112 gambrel; 14115 shed; 14116 butterfly; 14118 barrel; 14119 pyramid; 14120 domed; 14122 lean-to; 14123 Dutch gable; 14124 jerkinhead; 14125 cross gable; 14126 green; 14127 slate; 14128 tiled; 14129 conical; 14130 onion dome; 14131 pagoda; 14132 saltbox [roof]; 14135 A-frame [house]; 14136 sod; 14137 tin; 24042 thatch; 62860 catslide; 62861 half-hip; 62862 sawtooth; 67038 hip
+G: 67038 14109
+
+T column_styles | column styles
+W: 6567 colonnade; 6580 pilaster; 6602 pillar; 12058 caryatid; 14138 Doric [column]; 14139 Ionic; 14140 Corinthian [column]; 14141 Tuscan [column]; 14142 Composite [column]; 14143 fluted; 14144 engaged; 14146 papyrus; 14147 lotus; 14148 twisted; 14149 cluster; 14150 Greek; 14151 Roman; 14152 Egyptian; 14153 attached; 14154 atlantes; 14155 telamon; 62864 Solomonic
+G: 62864 14148
+
+T architectural_features | architectural features
+W: 2507 rotunda; 6547 facade; 6549 column [building]; 6550 arch [building]; 6551 dome [building]; 6552 vault [ceiling]; 6558 atrium [building]; 6559 balcony; 6567 colonnade; 6568 portico; 6569 pediment [building]; 6570 cornice [architecture]; 6571 buttress [building]; 6572 flying buttress; 6573 gargoyle; 6574 gable; 6575 turret; 6577 parapet; 6578 lintel; 6579 keystone; 6581 loggia; 6583 cupola; 6584 oriel; 6587 entablature; 6588 plinth; 6589 finial; 6590 quoin; 6591 corbel; 6602 pillar; 6603 archway; 6613 dormer; 6615 veranda; 14156 arcade [building]; 14157 balustrade; 14158 lancet [window]; 14159 frieze; 14160 architrave; 14161 tympanum [gable]; 14162 soffit; 14163 mullion
+
+T window_styles | window styles
+W: 2824 porthole; 5881 stained glass; 6584 oriel; 6585 clerestory; 6599 skylight; 14014 rose; 14158 lancet [window]; 14164 bay; 14165 sash; 14167 French; 14169 picture; 14170 dormer; 14172 bow; 14175 round [window]; 14176 louvred; 14179 awning; 14183 fanlight; 14184 bullseye; 14185 sliding; 14186 storm; 14188 Venetian; 14189 arched; 14190 mullioned; 14191 leaded; 14192 hopper; 14193 fixed; 14194 lattice; 47452 transom; 55240 jalousie; 62785 casement; 62865 double-hung (adjective); 67022 Palladian
+G: 14183 47452
+
+T spaces_you_walk_through | spaces you walk through
+W: 6558 atrium [building]; 6560 staircase; 6561 stairway; 6562 corridor; 6563 hallway; 6603 archway; 6604 vestibule [entrance]; 6605 foyer; 6606 lobby [building]; 6612 mezzanine
+
+T ancient_civilizations | ancient civilizations
+W: 1799 papyrus [plant]; 2154 Egypt; 2253 Athens; 2320 Colosseum; 2334 Acropolis [ancient citadel]; 2335 Parthenon; 2516 ziggurat; 6600 amphitheater; 6618 pharaoh [ruler]; 6619 pyramid [monument]; 6620 Sphinx [myth]; 6621 gladiator; 6622 Sparta; 6623 Troy; 6624 Babylon; 6625 Persia; 6626 Carthage; 6627 Phoenicians; 6628 Sumerians; 6629 Assyrians; 6630 Hittites; 6631 Minoans; 6632 Mycenaeans; 6633 Etruscans; 6634 Olmecs; 6635 Aztecs; 6636 Incas; 6637 Maya; 6638 Nubia; 6639 Kush; 6640 Harappa; 6641 Mohenjo-daro; 6642 Akkadians; 6643 toga; 6644 legion; 6645 senate; 6646 aqueduct; 6647 hieroglyphs; 6648 hieroglyphics; 6649 cuneiform; 6650 amphora; 6651 Olympic Games; 6652 oracle [prophet]; 6653 Hanging Gardens; 6654 Library of Alexandria; 6655 Code of Hammurabi; 6656 Rosetta Stone; 6657 Terracotta Army; 6658 agora; 6659 Great Pyramid; 6660 mummy [Egyptian]; 6661 Nile [river]; 60560 Gardens of Babylon
+G: 6647 6648; 6653 60560
+
+T ancient_egypt | ancient egypt
+W: 1393 scarab [beetle]; 1799 papyrus [plant]; 2357 Sphinx [Giza]; 6618 pharaoh [ruler]; 6619 pyramid [monument]; 6647 hieroglyphs; 6648 hieroglyphics; 6656 Rosetta Stone; 6661 Nile [river]; 6875 Tutankhamun; 6876 King Tut; 6883 obelisk; 6899 sarcophagus; 12552 Cleopatra; 13986 Imhotep; 20341 mummy [embalmed body]; 20342 Ramesses II; 20344 Giza; 20345 Valley of the Kings; 20346 ankh; 20348 Ra [sun god]; 20349 Isis [goddess]; 20351 canopic jar; 20352 Karnak; 20353 Hatshepsut [female pharaoh]; 20354 Akhenaten; 20355 Nefertiti; 20356 cartouche; 20357 natron; 20358 shaduf; 20359 Abu Simbel; 20361 Book of the Dead; 21928 Osiris [god]; 21929 Horus [god]; 21930 Anubis [god]
+G: 6647 6648; 6875 6876
+
+T pharaohs | pharaohs
+W: 6875 Tutankhamun; 6876 King Tut; 12552 Cleopatra; 20342 Ramesses II; 20353 Hatshepsut [female pharaoh]; 20354 Akhenaten; 53910 Khufu; 53911 Cheops; 53912 Khafre; 53913 Chephren; 53914 Menkaure; 53915 Thutmose III; 53916 Narmer; 53917 Djoser; 53918 Seti I; 53919 Amenhotep III; 53920 Ptolemy I; 53921 Sneferu; 53922 Merneptah; 53923 Horemheb; 53924 Ahmose I; 53925 Pepi II; 53926 Senusret III; 53927 Taharqa; 53928 Psamtik I; 53929 Mentuhotep II; 53930 Smenkhkare
+G: 53912 53913; 53910 53911; 6875 6876
+
+T egyptian_afterlife | egyptian afterlife | mummies, canopic jars, Book of the Dead, ka, ba, scarab, Duat
+W: 1393 scarab [beetle]; 6868 tomb; 6899 sarcophagus; 7035 amulet; 20341 mummy [embalmed body]; 20351 canopic jar; 20357 natron; 20361 Book of the Dead; 21724 death mask; 21740 coffin; 21757 embalming; 21928 Osiris [god]; 21930 Anubis [god]; 21932 Thoth [god]; 21945 Maat [goddess]; 34407 afterlife; 53932 ka [soul]; 53933 ba [soul]; 53934 Duat [underworld]; 53935 Ammit; 53936 Field of Reeds; 53937 weighing of the heart; 53938 ushabti; 53940 mummification; 53941 Opening of the Mouth; 53942 Hall of Two Truths
+
+T egyptian_symbols | egyptian symbols
+W: 1081 falcon; 1155 cobra [snake]; 1393 scarab [beetle]; 1728 lotus [flower]; 1799 papyrus [plant]; 2357 Sphinx [Giza]; 6619 pyramid [monument]; 6883 obelisk; 20346 ankh; 20356 cartouche; 51441 sistrum; 53943 Eye of Horus; 53944 djed; 53945 was scepter; 53946 crook and flail; 53947 uraeus; 53948 nemes; 53949 double crown; 53950 winged sun; 53951 shen ring; 53952 Eye of Ra; 53953 hieroglyph; 53954 hieroglyphic (adjective); 53955 tyet; 53956 feather of Maat; 53957 white crown; 53958 red crown
+G: 53953 53954
+
+T ancient_greece | ancient greece
+W: 2253 Athens; 2334 Acropolis [ancient citadel]; 2335 Parthenon; 6622 Sparta; 6650 amphora; 6652 oracle [prophet]; 6658 agora; 6825 Thermopylae; 6840 Peloponnesian War; 6949 Zeus [god]; 13307 Pericles; 14222 phalanx; 15556 Hippocrates; 20362 hoplite; 20364 Socrates; 20365 Plato; 20366 Aristotle; 20367 Homer [poet]; 20368 Alexander the Great; 20369 Delphi [ancient city]; 20370 Thucydides; 20371 Herodotus; 20372 trireme; 20373 polis; 20374 democracy; 20375 Pythagoras; 20376 Archimedes; 20377 stoa; 20378 ostracism; 20379 Corinth [city]; 20380 Macedon; 20381 Persian Wars; 21385 Spartan [warrior]
+
+T greek_philosophers | greek philosophers
+W: 20364 Socrates; 20365 Plato; 20366 Aristotle; 20375 Pythagoras; 42026 Thales; 53959 Heraclitus; 53960 Parmenides; 53961 Zeno [philosopher]; 53962 Democritus; 53963 Epicurus; 53964 Diogenes; 53965 Anaximander; 53966 Empedocles; 53967 Protagoras; 53968 Plotinus; 53969 Anaxagoras; 53970 Xenophanes; 53971 Epictetus; 53972 Antisthenes; 53973 Theophrastus; 53974 Gorgias; 53975 Anaximenes; 53976 Aristippus; 53977 Xenophon
+
+T ancient_olympics | ancient olympics | events, places and words of the ancient Games: stadion, pankration, laurel, Olympia
+W: 4443 truce; 5395 boxing; 5396 wrestling; 5419 pankration; 6949 Zeus [god]; 20619 hippodrome; 21837 Nike [goddess]; 25366 olympiad; 34638 laurel wreath; 37767 Olympia [Greece]; 39841 long jump (verb); 43934 discus [sport]; 43935 discus throw; 43936 javelin [sport]; 43937 javelin throw; 53979 stadion; 53981 olive wreath; 53982 pentathlon; 53983 chariot race; 53984 palaestra; 53985 gymnasium [Greek]; 53986 Elis; 53987 Milo of Croton; 53988 Hellanodikai; 53989 diaulos; 53990 dolichos; 53991 Leonidas of Rhodes; 53992 Heraia; 53993 Pelops; 53994 sacred truce; 53995 hoplitodromos
+G: 43936 43937; 43934 43935
+
+T ancient_rome | ancient rome
+W: 2320 Colosseum; 2379 Hadrian's Wall; 6621 gladiator; 6643 toga; 6644 legion; 6645 senate; 6646 aqueduct; 6836 Punic Wars; 6874 Pompeii [ancient Roman city]; 6920 pantheon [gods]; 20382 Caesar [Roman]; 20383 chariot; 20384 centurion; 20385 emperor [ruler]; 20386 Augustus; 20387 Nero; 20388 forum [Roman]; 20389 Rubicon; 20390 plebeian; 20391 patrician; 20392 consul; 20393 Circus Maximus; 20394 Cicero; 20395 Brutus; 20396 Caligula; 20397 Hadrian; 20398 Constantine; 20399 tribune; 20400 praetorian; 20401 triumvirate; 20402 Hannibal; 20403 denarius; 20404 quaestor; 20405 lictor; 20406 Vestal Virgin; 20407 Romulus; 20408 Marcus Aurelius
+
+T roman_life | roman life | forum, toga, bathhouse, aqueduct, villa, senate, gladiator, chariot
+W: 2320 Colosseum; 3071 latrine; 4921 tunic; 5882 mosaic; 6558 atrium [building]; 6600 amphitheater; 6621 gladiator; 6643 toga; 6645 senate; 6646 aqueduct; 16565 bathhouse; 20220 garum; 20383 chariot; 20388 forum [Roman]; 20403 denarius; 21384 legionary; 28246 slave; 37281 Appian Way; 53996 villa [Roman]; 53997 insula [apartment block]; 53998 domus; 53999 stola; 54000 patron [Roman]; 54001 triclinium; 54002 Saturnalia; 54003 bulla [amulet]; 54004 hypocaust; 54005 circus [Roman]; 54006 tavern [Roman]
+
+T roman_army | roman army
+W: 6644 legion; 20384 centurion; 20399 tribune; 20724 ballista; 21380 testudo; 21384 legionary; 21391 Praetorian Guard; 34695 cohort [Roman]; 50066 onager [catapult]; 54007 century [unit]; 54008 gladius; 54009 pilum; 54010 scutum; 54011 lorica segmentata; 54012 aquila [eagle standard]; 54013 optio; 54014 decurion; 54015 auxiliary; 54016 signifer; 54017 maniple; 54018 castra; 54019 galea; 54020 legate; 54021 decimation; 54022 hastati; 54023 triarii; 54024 velites; 54025 marching camp; 54026 caligae; 54027 standard-bearer
+
+T aztecs_and_maya | aztecs and maya
+W: 408 maize; 2076 obsidian; 2077 volcanic glass; 2368 Chichen Itza; 6637 Maya; 16749 cacao; 20409 Aztec [people]; 20410 Tenochtitlan; 20411 Montezuma; 20412 Cortés; 20414 step pyramid; 20415 Tikal; 20416 Teotihuacan; 20417 Popol Vuh; 20418 chinampa; 20421 calendar stone; 20422 Mesoamerica; 20423 codex; 20424 jaguar warrior; 20425 Palenque; 20426 Uxmal; 20427 human sacrifice; 20428 ball court; 20429 Nahuatl; 20430 Kukulkan; 20431 Tlatoani; 20432 Itzamna; 22041 Quetzalcoatl [god]; 22042 Huitzilopochtli [god]; 22044 Tlaloc [god]
+G: 2076 2077
+
+T inca_empire | inca empire
+W: 160 llama; 161 alpaca [animal]; 665 quinoa [grain]; 2333 Machu Picchu; 7569 Quechua; 9719 vicuña; 14089 rope bridge; 17659 coca; 20433 Inca [Andean empire]; 20434 Cusco; 20435 Andes; 20436 Atahualpa; 20437 Pizarro; 20438 quipu; 20439 Sapa Inca; 20440 terrace farming; 20441 Sacsayhuaman; 20442 Pachacuti; 20443 Inti [sun god]; 20445 Cajamarca; 20446 Tahuantinsuyu; 20447 Huayna Capac; 20448 Manco Inca; 20450 mita [labor tax]; 20451 Lake Titicaca; 20452 Ollantaytambo; 20453 chasqui; 20454 Qhapaq Ñan; 22070 Viracocha [god]; 22072 Pachamama [goddess]
+
+T ancient_china | ancient china
+W: 2348 Forbidden City; 2349 Palace Museum; 5039 silk; 6657 Terracotta Army; 6733 Zheng He; 20385 emperor [ruler]; 20455 Great Wall [monument]; 20456 dynasty; 20457 Silk Road; 20458 Confucius; 20459 Qin Shi Huang; 20460 Han [dynasty]; 20461 Tang [dynasty]; 20462 Ming [dynasty]; 20463 Sun Tzu; 20464 Yellow River; 20465 Laozi; 20466 Mandate of Heaven; 20467 Shang [dynasty]; 20468 Zhou [dynasty]; 20469 Qing [dynasty]; 20470 Kublai Khan; 20471 oracle bones; 20472 paper [material]; 20473 gunpowder [explosive]; 20474 abacus; 20475 Grand Canal [China]; 20476 Warring States; 20477 Mencius; 20478 Xia [dynasty]; 20479 Legalism; 20480 civil service exam; 20481 Xi'an; 62095 First Emperor
+G: 2348 2349; 20459 62095
+
+T ancient_india | ancient india
+W: 6640 Harappa; 6641 Mohenjo-daro; 7559 Sanskrit; 12525 Kalidasa; 14045 stupa; 20482 Indus Valley; 20483 Ashoka; 20484 Maurya [empire]; 20485 Gupta [empire]; 20486 Vedas; 20487 Buddha; 20489 caste; 20490 Mahabharata; 20491 Ramayana; 20492 Chandragupta; 20493 Pataliputra; 20494 Takshashila; 20495 Nalanda; 20496 Brahmin; 20497 Great Bath; 20498 Aryans; 20499 Kautilya; 20500 Mahavira; 20501 Vijayanagara; 20502 Chola [dynasty]; 20503 Kushan [empire]; 20504 Upanishads; 34329 Ganges [river]
+
+T mesopotamia | mesopotamia
+W: 2516 ziggurat; 6624 Babylon; 6649 cuneiform; 6653 Hanging Gardens; 6655 Code of Hammurabi; 7657 stylus [ancient]; 20505 Sumer; 20506 Euphrates; 20507 Tigris; 20508 Hammurabi; 20509 Nebuchadnezzar; 20510 Assyria; 20511 Akkad; 20513 Nineveh; 20514 Sargon; 20515 Gilgamesh; 20516 Ishtar Gate; 20517 clay tablet; 20518 Fertile Crescent; 20519 Uruk; 20522 Ashurbanipal; 20523 Enheduanna; 20524 Chaldean; 20525 Tower of Babel; 20526 Epic of Gilgamesh; 20527 irrigation; 20528 Lagash; 20529 Nippur; 21818 Ur [Sumerian city]; 22005 Marduk [god]; 22009 Enki [god]; 60560 Gardens of Babylon
+G: 6653 60560
+
+T ancient_persia | ancient persia
+W: 4336 Zoroastrianism; 6625 Persia; 20530 Cyrus the Great; 20531 Darius; 20532 Xerxes; 20533 Persepolis; 20534 Zoroaster; 20535 satrap; 20536 Achaemenid; 20537 Immortals [Persian guard]; 20538 Royal Road; 20539 Susa; 20540 Pasargadae; 20541 Ahura Mazda; 20542 Sassanid; 20543 Parthian; 20544 Cyrus Cylinder; 20545 Behistun; 20546 Ecbatana; 20547 Shapur; 20548 Medes; 20549 Cambyses; 20550 Artaxerxes; 20551 Salamis; 20552 fire temple; 20553 Gaugamela; 20554 Apadana; 20555 Persian Empire; 20556 Magi; 20557 Avesta
+
+T feudal_japan | feudal japan
+W: 2296 Kyoto; 2354 Mount Fuji; 2355 Fujiyama; 2389 Himeji Castle; 7089 Edo period; 12537 ninja; 16065 kimono [robe]; 20558 samurai; 20559 shogun; 20560 katana; 20561 daimyo; 20562 bushido; 20563 geisha; 20564 Edo; 20565 ronin; 20566 seppuku; 20567 Tokugawa; 20568 Oda Nobunaga; 20569 shuriken; 20571 tea ceremony; 20572 Minamoto; 20573 Genpei War; 20574 sakoku; 20575 Sengoku; 20576 tanto; 20577 yumi; 20578 Hattori Hanzo; 20579 Toyotomi Hideyoshi; 20580 Miyamoto Musashi; 20581 Heian [period]; 20582 Kamakura; 20583 Ashikaga; 20584 samurai armor
+G: 2354 2355; 20564 7089
+
+T vikings | vikings
+W: 1941 fjord [landform]; 2167 Iceland; 2844 longship; 2845 longboat; 6722 Leif Erikson; 6932 Ragnarok; 6933 Valhalla; 6938 Valkyrie; 6969 Yggdrasil; 7037 rune; 12540 Viking [raider]; 20586 Thor [Norse god]; 20587 horned helmet; 20588 raid [attack]; 20589 Norse; 20590 Ragnar Lothbrok; 20591 Loki [Norse god]; 20593 berserker; 20595 Scandinavia; 20596 Vinland; 20597 Lindisfarne; 20598 jarl; 20599 skald; 20600 Danelaw; 20601 Eric the Red; 20602 Harald Hardrada; 20603 Ivar the Boneless; 20604 Mjolnir; 20605 knarr; 20606 mead hall; 20607 Bjorn Ironside; 21895 Odin [god]; 21897 Freya [goddess]
+G: 2844 2845
+
+T byzantine_empire | byzantine empire
+W: 2247 Constantinople; 2361 Hagia Sophia; 3968 patriarch; 5882 mosaic; 20398 Constantine; 20608 Justinian; 20609 Byzantium [city]; 20610 Theodora; 20611 Greek fire; 20612 Belisarius; 20613 Basil II; 20614 Orthodox [church]; 20615 basileus; 20616 Varangian Guard; 20617 Nika riots; 20618 Theodosian Walls; 20619 hippodrome; 20620 iconoclasm; 20621 Heraclius; 20622 Alexios Komnenos; 20623 Fourth Crusade; 20624 Ravenna; 20625 Anatolia; 20626 dromon; 20627 Michael Psellos; 20628 Eastern Roman; 20629 Palaiologos; 20630 Theodosius; 20631 solidus [Byzantine coin]
+
+T ottoman_empire | ottoman empire
+W: 344 ottoman [furniture]; 2246 Istanbul; 2247 Constantinople; 2363 Blue Mosque; 2364 Sultan Ahmed Mosque; 20625 Anatolia; 20632 sultan; 20633 janissary; 20634 Suleiman I; 20635 harem; 20636 Topkapi Palace; 20637 Mehmed II; 20638 fez [hat]; 20639 pasha; 20640 vizier; 20641 caliph; 20642 Osman; 20643 Suleymaniye Mosque; 20644 Grand Bazaar; 20645 devshirme; 20646 Siege of Vienna; 20647 Bosphorus [Ottoman Empire]; 20648 Sublime Porte; 20649 Lepanto; 20650 Barbarossa [admiral]; 20651 Mimar Sinan; 20652 Abdulhamid II; 20653 Tanzimat; 20654 Young Turks; 20655 Gallipoli; 20656 Edirne; 20657 Roxelana; 50173 Bursa [Turkish city]
+G: 2246 2247; 2363 2364
+
+T ottoman_sultans | ottoman sultans
+W: 20634 Suleiman I; 20637 Mehmed II; 20652 Abdulhamid II; 54028 Osman I [sultan]; 54029 Orhan I [sultan]; 54030 Murad I [sultan]; 54031 Bayezid I [sultan]; 54032 Bayezid II [sultan]; 54033 Selim I [sultan]; 54034 Selim II [sultan]; 54035 Selim III [sultan]; 54036 Murad II [sultan]; 54037 Murad III [sultan]; 54038 Murad IV [sultan]; 54039 Mehmed III [sultan]; 54040 Mehmed IV [sultan]; 54041 Mehmed V [sultan]; 54042 Mehmed VI [sultan]; 54043 Ahmed I [sultan]; 54044 Ahmed III [sultan]; 54045 Mustafa I [sultan]; 54046 Osman II [sultan]; 54047 Ibrahim I [sultan]; 54048 Mahmud II [sultan]; 54049 Abdulmejid I [sultan]; 54050 Mehmed I [sultan]; 54051 Abdulaziz [sultan]
+
+T celts | celts
+W: 48 Scotland; 49 Wales; 282 harp [instrument]; 2138 Ireland; 2139 Eire; 2322 Stonehenge; 6172 bard; 6870 cairn [stone mound]; 7540 Gaelic; 20658 druid [Celtic priest]; 20659 Boudicca; 20660 Gaul; 20661 Vercingetorix; 20662 torc; 20663 Celtic knot; 20664 Brittany [region]; 20665 Cornwall; 20666 hillfort; 20667 Hallstatt; 20668 La Tène; 20669 Samhain; 20670 Beltane; 20671 Brigid [saint]; 20672 Pict; 20673 Iceni; 20675 Ogham; 20676 Book of Kells; 20677 Cú Chulainn; 20678 woad; 20679 Newgrange; 20680 Brehon; 20681 Celt; 20682 Tuatha Dé Danann; 22225 Cernunnos [god]
+G: 2138 2139
+
+T famous_ruins_and_monuments | famous ruins and monuments
+W: 2320 Colosseum; 2334 Acropolis [ancient citadel]; 2335 Parthenon; 2516 ziggurat; 6600 amphitheater; 6619 pyramid [monument]; 6620 Sphinx [myth]; 6653 Hanging Gardens; 6654 Library of Alexandria; 6656 Rosetta Stone; 6657 Terracotta Army; 6659 Great Pyramid; 60560 Gardens of Babylon
+
+T medieval_times | medieval times
+W: 31 king [monarch]; 34 castle [building]; 36 knight [warrior]; 903 mead; 2509 keep [castle]; 3379 plague; 4151 apprentice; 4230 curfew; 4282 monk [religious man]; 6170 minstrel; 6171 troubadour; 6498 manuscript; 6662 peasant; 6663 serf; 6664 squire; 6665 jester; 6666 blacksmith; 6667 abbey; 6668 moat; 6669 drawbridge; 6670 dungeon; 6671 tapestry; 6672 feast; 6673 tournament; 6674 chivalry; 6675 feudalism; 6676 manor; 6677 vassal; 6678 fief; 6679 baron; 6680 Magna Carta; 6681 Charlemagne; 6682 Joan of Arc; 6683 William the Conqueror; 6684 Domesday Book; 6685 Bayeux Tapestry; 6686 guild; 6687 scribe; 6688 portcullis; 6689 battlements; 6690 pilgrim; 6691 tithe (verb); 6692 fealty; 6693 villein; 6694 demesne; 6695 reeve [official]; 6696 yeoman; 6697 burgher; 6698 Hanseatic League; 6699 Black Prince; 6700 Middle Ages; 6701 Dark Ages; 6702 medieval (adjective); 6703 wergild; 6704 scutage; 6705 hauberk; 6706 garderobe; 6707 herald; 6708 alchemist; 6709 trebuchet [catapult]; 6711 crusade
+G: 6700 6701
+
+T knights | knights
+W: 36 knight [warrior]; 153 horse [animal]; 2526 coat of arms; 2527 crest [helmet emblem]; 2944 quest [journey]; 6664 squire; 6674 chivalry; 6692 fealty; 6998 Excalibur [sword]; 10405 armour [animal]; 20683 sword [weapon]; 20684 shield [armor]; 20685 helmet [armor]; 20687 King Arthur; 20688 Round Table; 20689 Lancelot; 20690 Sir; 20691 visor [helmet]; 20692 gauntlet; 20693 accolade; 20694 Templar; 20696 Hospitaller; 20698 Galahad; 20699 Gawain; 20700 El Cid; 20701 page [knight in training]; 20702 destrier; 20703 chain mail; 20704 plate armor; 20705 gorget; 20706 pauldron; 20707 Order of the Garter; 20708 William Marshal; 34650 lance [weapon]; 64518 Teutonic Order [German crusading brotherhood]
+
+T orders_of_knighthood | orders of knighthood | Templars, Hospitallers, Teutonic, Garter, Golden Fleece
+W: 20695 Knights Templar; 20697 Teutonic Knights; 54052 Knights Hospitaller; 54054 Knights of Malta; 54055 Golden Fleece [order]; 54056 Bath; 54057 Thistle; 54058 Santiago; 54061 Order of the Dragon; 54062 Livonian; 54064 Order of Christ; 54066 Elephant; 54067 Order of St Patrick; 54068 Order of the Seraphim; 54069 Knights of Columbus; 54070 Order of Saint Lazarus; 54071 Order of the Star; 54073 Order of the Sword; 62866 Alcantara; 62867 Aviz; 62868 Calatrava; 62869 Montesa; 62870 Garter [knightly order]
+G: 54052 54054
+
+T knightly_virtues | knightly virtues | chivalry, honor, valor, loyalty, courtesy, piety
+W: 4184 justice; 4273 faith; 4274 belief; 6674 chivalry; 6692 fealty; 29911 Honor; 29914 Mercy; 29915 Temperance; 29922 Valor; 29925 Humility; 29926 Honesty; 32802 devotion; 35304 nobility; 35411 courtesy; 54074 loyalty; 54075 piety; 54076 courage; 54077 bravery; 54078 prowess; 54079 generosity; 54080 largesse; 54082 gallantry; 54083 truthfulness; 54084 fortitude; 54085 franchise [freedom]; 54086 obedience; 54087 protecting the weak (verb)
+G: 4273 4274
+
+T famous_knights | famous knights
+W: 6699 Black Prince; 20689 Lancelot; 20698 Galahad; 20699 Gawain; 20700 El Cid; 20708 William Marshal; 20921 Ivanhoe; 20924 Richard the Lionheart; 20932 Godfrey of Bouillon; 22515 Roland; 22522 Percival; 22530 Mordred; 54088 Sir Kay; 54089 Tristan [knight]; 54090 Bedivere; 54091 Sir Bors; 54092 Don Quixote [knight]; 54093 Bertrand du Guesclin; 54094 Sir Gareth; 54095 Sir Ector; 54096 Sir Lamorak; 54097 Jacques de Molay; 54098 John Hawkwood; 54099 Geoffroi de Charny; 54100 Sir Palamedes; 54101 Chevalier Bayard; 54102 Sir Lionel
+
+T castles | castles
+W: 34 castle [building]; 2372 Neuschwanstein; 2508 gatehouse; 4466 garrison; 6553 tower [building]; 6575 turret; 6577 parapet; 6668 moat; 6669 drawbridge; 6670 dungeon; 6688 portcullis; 6689 battlements; 6709 trebuchet [catapult]; 20710 keep [castle tower]; 20711 rampart; 20712 bailey [castle]; 20713 motte; 20714 murder hole; 20715 arrow slit; 20716 curtain wall; 20717 barbican; 20718 great hall; 20719 oubliette; 20720 crenellation; 20721 bastion; 20722 donjon; 20723 siege tower; 20724 ballista; 20725 catapult; 20726 postern; 20727 machicolation; 20728 Windsor; 20729 Warwick; 20730 Caernarfon [town]; 20731 merlon
+
+T castle_parts | castle parts | keep, moat, drawbridge, portcullis, battlements, turret
+W: 2499 chapel; 2508 gatehouse; 2509 keep [castle]; 6553 tower [building]; 6564 courtyard; 6565 quad [courtyard]; 6575 turret; 6577 parapet; 6668 moat; 6669 drawbridge; 6670 dungeon; 6688 portcullis; 6689 battlements; 6706 garderobe; 20711 rampart; 20712 bailey [castle]; 20713 motte; 20714 murder hole; 20715 arrow slit; 20716 curtain wall; 20717 barbican; 20718 great hall; 20719 oubliette; 20720 crenellation; 20721 bastion; 20722 donjon; 20726 postern; 20727 machicolation; 20731 merlon; 54103 embrasure; 54105 wall walk
+G: 6564 6565
+
+T medieval_jobs | medieval jobs
+W: 36 knight [warrior]; 4263 bailiff; 4282 monk [religious man]; 6170 minstrel; 6662 peasant; 6663 serf; 6664 squire; 6665 jester; 6666 blacksmith; 6687 scribe; 6695 reeve [official]; 6707 herald; 6708 alchemist; 10478 falconer; 15351 apothecary; 20056 baker [job]; 20732 miller [job]; 20733 archer [job]; 20734 armorer; 20736 fletcher [job]; 20737 cooper [barrel maker]; 20738 wheelwright; 20739 cartwright [job]; 20740 thatcher [job]; 20741 tanner [job]; 20742 mason [stonemason]; 20743 steward [estate manager]; 20744 chandler [job]; 20745 shepherd [job]; 20746 weaver [person]; 20747 bowyer; 20748 barber-surgeon; 20749 town crier; 20750 glazier; 20751 skinner [job]; 20752 fuller [job]; 20753 sexton; 20754 ostler; 20755 vintner; 20756 dyer [job]
+
+T feudal_ranks | feudal ranks
+W: 31 king [monarch]; 36 knight [warrior]; 4352 clergy; 6662 peasant; 6663 serf; 6664 squire; 6677 vassal; 6678 fief; 6679 baron; 6693 villein; 6696 yeoman; 20385 emperor [ruler]; 20757 queen [royal]; 20758 lord [noble]; 20759 duke; 20760 earl; 20761 count [noble]; 20762 prince [royal]; 20763 marquess; 20764 marquis; 20765 viscount; 20766 liege; 20767 freeman; 20768 baronet; 20769 thane; 20771 suzerain; 20772 castellan; 20773 seneschal; 20774 margrave; 20775 landgrave; 20776 archduke; 20777 cottar; 20778 overlord; 20779 sovereign [ruler]; 20780 chamberlain [job]; 32572 Lady [peer]
+G: 20763 20764
+
+T medieval_weapons | medieval weapons
+W: 322 axe [tool]; 5270 crossbow; 6709 trebuchet [catapult]; 20683 sword [weapon]; 20724 ballista; 20725 catapult; 20781 bow [weapon]; 20782 arrow [weapon]; 20783 spear; 20784 dagger [weapon]; 20785 mace [weapon]; 20786 longbow; 20787 battle axe; 20788 halberd; 20790 pike [spear]; 20791 morning star [spiked club]; 20792 broadsword; 20793 war hammer; 20794 battering ram; 20795 claymore; 20796 rapier; 20797 glaive; 20798 poleaxe; 20799 bardiche; 20800 estoc; 20801 falchion; 20802 misericorde; 20803 quarterstaff; 20804 mangonel; 20805 dirk; 20806 arbalest; 20807 scimitar; 20808 greatsword; 20809 cudgel; 34649 flail [weapon]; 34650 lance [weapon]
+
+T medieval_food | medieval food
+W: 487 venison; 488 mutton; 493 herring; 495 eel; 513 lamprey; 515 cheese [dairy food]; 552 bread [food]; 562 pie; 649 blancmange; 666 barley; 761 saffron [spice]; 809 stew [dish]; 897 cider [alcoholic]; 903 mead; 1075 peacock [bird]; 1467 capon; 15594 honey [food]; 18060 rye bread; 18178 mince pie; 19685 ale [beer]; 20811 pottage; 20813 roast boar; 20814 trencher [medieval plate]; 20815 frumenty; 20816 gruel; 20817 manchet; 20818 wassail [drink]; 20819 hippocras; 20820 mortrews; 20821 pease pudding; 20822 spiced wine; 20823 marchpane; 20824 posset; 20825 oatcake; 48569 porridge [camping]; 50035 junket [dessert]
+
+T medieval_clothing | medieval clothing
+W: 4890 robe [bathrobe]; 4894 leggings; 4921 tunic; 4941 surcoat; 4942 houppelande; 5008 veil; 20826 cloak; 20827 hood [clothing]; 20828 gown [dress]; 20829 breeches; 20830 doublet; 20831 mantle [cloak]; 20832 jerkin; 20833 kirtle; 20834 wimple; 20835 coif; 20836 tabard; 20837 chemise; 20838 hennin; 20839 codpiece; 20840 cowl; 20841 livery; 20842 patten; 20843 poulaine; 20844 bliaut; 20845 gambeson; 20846 girdle; 20847 ermine [fur]; 20848 sandals [shoes]; 20849 scapular; 20850 tippet [clothing]; 20851 stomacher; 24413 stockings; 50187 cote [tunic]; 50315 hose [legwear]; 50316 chausses
+
+T monastery | monastery
+W: 2499 chapel; 4276 prayer; 4277 supplication; 4278 orison; 4282 monk [religious man]; 6498 manuscript; 6566 cloister; 6667 abbey; 6691 tithe (verb); 14007 lectern; 14307 tonsure; 20852 abbot; 20853 friar; 20854 scriptorium; 20855 habit [monk clothing]; 20856 cassock; 20857 refectory; 20858 vespers; 20859 matins; 20860 compline; 20861 lauds; 20862 novice; 20864 Benedictine [monks]; 20865 Cistercian; 20866 Franciscan; 20867 Dominican; 20868 chapter house; 20869 almoner; 20870 vow; 20871 hermit; 20872 Gregorian chant; 20874 infirmary; 20875 Saint Benedict; 20876 Cluny; 34213 prior [monastery]; 34393 rosary [beads]
+G: 4276 4278 4277
+
+T heraldry | heraldry
+W: 64 azure; 2526 coat of arms; 2527 crest [helmet emblem]; 2548 fleur-de-lis; 6707 herald; 6944 Griffin; 7024 wyvern; 7670 sable [color] (adjective); 20684 shield [armor]; 20847 ermine [fur]; 20877 banner [flag]; 20878 motto; 20879 lion rampant; 20880 escutcheon [heraldic shield]; 20881 supporter [heraldry]; 20882 gules; 20883 argent; 20884 vert; 20885 purpure; 20886 chevron [pattern]; 20887 fess; 20888 pale [heraldic band]; 20889 bend [heraldic band]; 20890 saltire; 20891 chief [heraldic band]; 20892 bordure; 20893 canton [heraldry]; 20894 mantling; 20895 torse; 20896 blazon; 20897 rampant (adjective); 20898 passant (adjective); 20899 couchant (adjective); 20900 dexter [heraldry] (adjective); 20901 College of Arms; 20902 cadency; 20903 hatchment; 50139 tincture [heraldic color]
+G: 20897 20879
+
+T jousting_tournament | jousting tournament
+W: 36 knight [warrior]; 153 horse [animal]; 292 trumpet [instrument]; 6557 pavilion; 6664 squire; 6673 tournament; 6674 chivalry; 6707 herald; 10405 armour [animal]; 20684 shield [armor]; 20685 helmet [armor]; 20877 banner [flag]; 20904 joust [tournament]; 20905 tilt [jousting barrier]; 20907 lists [jousting arena]; 20908 melee; 20909 favor [token from lady]; 20910 unhorse (verb); 20911 grandstand; 20912 coronal; 20913 caparison; 20915 quintain; 20916 passage of arms; 20917 hastilude; 20918 tourney; 20919 prize [award]; 20921 Ivanhoe; 34650 lance [weapon]; 44374 champion [winner]; 50026 helm [helmet]
+
+T crusades | crusades
+W: 4397 siege [military]; 6690 pilgrim; 14022 cross [religious]; 20623 Fourth Crusade; 20694 Templar; 20696 Hospitaller; 20697 Teutonic Knights; 20922 Jerusalem; 20923 crusader; 20924 Richard the Lionheart; 20925 Saladin; 20926 Holy Land; 20929 Pope Urban II; 20932 Godfrey of Bouillon; 20933 Council of Clermont; 20934 Hattin; 20935 Edessa; 20936 Outremer; 20937 Saracen; 20938 Peter the Hermit; 20939 Children's Crusade; 20940 Crusader States; 20941 Krak des Chevaliers; 20942 Third Crusade; 20943 First Crusade; 20944 Frederick Barbarossa; 20945 indulgence; 20946 Holy Sepulchre; 20947 Cathars; 20948 Baybars; 20949 Mamluk; 20950 Reconquista; 36076 Antioch [ancient city]; 50009 Acre [city]
+
+T black_death | black death
+W: 3379 plague; 3483 epidemic; 3484 pandemic [disease]; 14763 miasma; 20457 Silk Road; 20951 rats (other); 20952 fleas; 20953 bubonic (adjective); 20954 plague doctor; 20955 beak mask; 20956 quarantine; 20957 bubo; 20958 Yersinia pestis; 20959 mass grave; 20960 flagellants; 20961 pestilence; 20962 Genoa; 20963 Messina; 20964 dead cart; 20965 pneumonic (adjective); 20966 septicemic (adjective); 20967 Boccaccio; 20968 Decameron; 20969 lazaretto; 20970 pomander; 20971 Eyam; 20972 dance of death; 20974 Great Mortality; 20976 corpse [body]; 20977 shroud
+
+T medieval_instruments | medieval instruments
+W: 282 harp [instrument]; 288 lute; 292 trumpet [instrument]; 6003 flute; 6012 tambourine; 6015 recorder [instrument]; 6020 bagpipes; 6037 lyre; 6040 dulcimer; 6042 hurdy-gurdy; 6043 sackbut; 6045 shawm; 10543 viol [instrument]; 10544 rebec; 10545 cittern; 10547 psaltery; 10568 crumhorn; 10594 horn [instrument]; 10595 drum [instrument]; 10654 fiddle [violin]; 20979 citole; 20980 gittern; 20981 vielle; 20982 organistrum; 20983 nakers; 20984 tabor [small drum]; 20985 cornett; 20986 portative organ; 20988 bombard [shawm]; 20989 zink; 20990 handbell; 20991 gemshorn
+
+T medieval_pastimes | medieval pastimes
+W: 633 Skittles [candy]; 927 dice [game] (verb); 5248 archery; 5289 bowls [sport]; 5396 wrestling; 5564 cockfighting; 5569 falconry; 5600 hawking [falconry]; 5713 chess [board game]; 5716 backgammon; 5764 nine men's morris; 6170 minstrel; 6171 troubadour; 6246 morris dance; 6247 maypole [festival pole]; 6665 jester; 6672 feast; 6673 tournament; 12424 mystery play; 13717 tumbler [acrobat]; 20904 joust [tournament]; 20915 quintain; 20992 hunting; 20993 dancing; 20994 bear baiting; 20995 mumming; 20996 stoolball; 20997 carols; 20998 shove ha'penny; 20999 juggling; 21000 cards; 21001 storytelling; 21002 fowling
+
+T exploration | exploration
+W: 2306 Timbuktu; 2398 compass [navigation]; 2409 latitude [map coordinate]; 2410 longitude; 2412 cartographer; 2413 mapmaker; 2794 galleon; 2803 voyage (verb); 2923 expedition [exploring trip]; 6712 explorer; 6713 sextant; 6714 astrolabe; 6715 caravel; 6716 Christopher Columbus; 6717 Ferdinand Magellan; 6718 Vasco da Gama [explorer]; 6719 Marco Polo [explorer]; 6720 Captain Cook; 6721 Lewis and Clark; 6722 Leif Erikson; 6723 Roald Amundsen; 6724 Ernest Shackleton; 6725 Edmund Hillary; 6726 Tenzing Norgay; 6727 David Livingstone; 6728 Henry Hudson; 6729 Amerigo Vespucci; 6730 John Cabot; 6731 Jacques Cartier; 6732 Samuel de Champlain; 6733 Zheng He; 6734 Ibn Battuta; 6735 Bartolomeu Dias; 6736 Abel Tasman [explorer]; 6737 Mungo Park; 6738 Hiram Bingham; 6739 Roanoke; 6740 Northwest Passage; 6741 New World; 6742 Terra Incognita; 6743 uncharted (adjective); 6744 frontier [border region]; 6745 Cape of Good Hope; 6746 circumnavigate (verb); 6747 navigator; 6748 pioneer; 6749 trailblazer; 6750 Mayflower [ship]; 6751 Santa Maria [ship]; 6752 Kon-Tiki; 6753 HMS Beagle [ship]; 6754 Endeavour [ship]; 6755 Apollo 11; 6756 dead reckoning; 6757 Mount Everest; 6758 Lost City of Z
+G: 2412 2413
+
+T explorers | explorers
+W: 6718 Vasco da Gama [explorer]; 6719 Marco Polo [explorer]; 6720 Captain Cook; 6721 Lewis and Clark; 6722 Leif Erikson; 6725 Edmund Hillary; 6726 Tenzing Norgay; 6727 David Livingstone; 6728 Henry Hudson; 6729 Amerigo Vespucci; 6730 John Cabot; 6731 Jacques Cartier; 6732 Samuel de Champlain; 6733 Zheng He; 6734 Ibn Battuta; 6735 Bartolomeu Dias; 6736 Abel Tasman [explorer]; 6737 Mungo Park; 21003 Columbus [explorer]; 21004 Magellan [explorer]; 21005 Amundsen; 21006 Shackleton; 21007 Hernán Cortés; 21008 Francisco Pizarro; 21009 Ponce de León; 21010 Sir Francis Drake; 21011 Walter Raleigh; 21012 Henry Stanley; 21013 Willem Barentsz; 21014 Hernando de Soto; 21015 Vitus Bering; 21016 Robert Peary; 21017 Sacagawea
+
+T conquistadors | conquistadors
+W: 11783 balboa [dance]; 20412 Cortés; 20437 Pizarro; 21009 Ponce de León; 29312 conquistador; 54106 de Soto; 54107 Coronado; 54108 Pedro de Alvarado; 54109 Almagro; 54110 Orellana; 54111 Valdivia; 54112 Cabeza de Vaca; 54113 Narváez; 54114 Belalcázar; 54115 Jiménez de Quesada; 54116 Lope de Aguirre; 54117 Montejo; 54118 Bernal Díaz; 54119 Juan de Oñate; 54123 Gonzalo Pizarro; 54124 Vasco Núñez de Balboa; 54125 Pedro de Candia
+G: 20437 54123; 11783 54124
+
+T portuguese_explorers | portuguese explorers
+W: 6717 Ferdinand Magellan; 6718 Vasco da Gama [explorer]; 6735 Bartolomeu Dias; 54126 Pedro Álvares Cabral; 54128 Henry the Navigator; 54129 Prince Henry; 54130 Gil Eanes; 54131 Afonso de Albuquerque; 54132 Diogo Cão; 54133 Pêro da Covilhã; 54134 Gaspar Corte-Real; 54135 Nuno Tristão; 54136 Francisco de Almeida; 54137 Jorge Álvares; 54138 Fernão Mendes Pinto; 54139 João Gonçalves Zarco; 54140 Pedro Teixeira; 54141 Estêvão Gomes; 54142 Tristão Vaz; 54143 João da Nova; 54144 Duarte Pacheco; 54145 Miguel Corte-Real; 54146 Bartolomeu Perestrelo; 54147 Diogo Gomes; 54148 Antonio de Abreu
+G: 54128 54129
+
+T australian_explorers | australian explorers
+W: 6720 Captain Cook; 6736 Abel Tasman [explorer]; 21203 William Dampier; 54149 Matthew Flinders; 54150 Burke and Wills; 54151 Robert O'Hara Burke; 54152 William John Wills; 54153 John McDouall Stuart; 54154 Ludwig Leichhardt; 54155 Charles Sturt; 54156 George Bass; 54157 Edmund Kennedy; 54158 Hamilton Hume; 54159 William Hovell; 54160 John Oxley; 54161 Thomas Mitchell [explorer]; 54162 Edward John Eyre; 54163 Paul Strzelecki; 54164 John Forrest [explorer]; 54165 Ernest Giles; 54166 Peter Warburton; 54167 William Landsborough; 54168 Gregory Blaxland; 54169 William Lawson; 54170 William Wentworth; 54171 Augustus Gregory; 54172 Allan Cunningham [botanist]; 54173 Phillip Parker King
+
+T explorers_of_africa | explorers of africa
+W: 6718 Vasco da Gama [explorer]; 6727 David Livingstone; 6734 Ibn Battuta; 6737 Mungo Park; 54174 Henry Morton Stanley; 54175 Stanley [explorer]; 54176 John Hanning Speke; 54177 Richard Burton [explorer]; 54178 Richard Lander; 54179 René Caillié; 54180 Heinrich Barth; 54181 Samuel Baker; 54182 Verney Cameron; 54183 Hugh Clapperton; 54184 Joseph Thomson [explorer]; 54185 Pierre de Brazza; 54186 Gustav Nachtigal; 54187 James Bruce [explorer]; 54188 Hanno the Navigator; 54189 Mary Kingsley; 54190 Gordon Laing; 54191 Georg Schweinfurth; 54192 Dixon Denham; 54193 Walter Oudney; 54194 Serpa Pinto; 54195 Karl Mauch; 54196 Delia Akeley; 54197 Francis Galton [explorer]
+G: 54174 54175
+
+T great_travelers | great travelers | pre-modern long-distance travelers: Marco Polo, Ibn Battuta, Zheng He, Xuanzang
+W: 6719 Marco Polo [explorer]; 6722 Leif Erikson; 6733 Zheng He; 6734 Ibn Battuta; 20371 Herodotus; 21116 Zhang Qian; 21544 Mansa Musa; 41980 Al-Biruni; 54198 Xuanzang; 54200 Faxian; 54202 Ibn Jubayr; 54203 Benjamin of Tudela; 54204 John of Plano Carpini; 54205 William of Rubruck; 54206 Rabban Bar Sauma; 54207 Ibn Fadlan; 54208 Pytheas [explorer]; 54209 Afanasy Nikitin; 54210 Odoric of Pordenone; 54211 John Mandeville; 54212 Matteo Ricci; 54213 Egeria [pilgrim]; 54214 Ibn Hawqal; 54215 Niccolò de Conti; 54216 Ruy González de Clavijo; 54217 Wang Dayuan
+
+T navigation_tools | navigation tools
+W: 2108 lodestone; 2395 map [chart of places]; 2396 globe [world model]; 2398 compass [navigation]; 2415 GPS; 2435 Mercator projection; 2453 portolan chart; 2474 lighthouse; 2551 Southern Cross [constellation]; 2552 Crux [constellation]; 6713 sextant; 6714 astrolabe; 6756 dead reckoning; 7121 telescope; 7248 theodolite; 21018 chart [nautical map]; 21019 logbook [record book]; 21020 quadrant [navigation]; 21021 compass rose; 21022 hourglass; 21023 chronometer; 21025 backstaff; 21026 cross-staff; 21027 kamal; 21028 octant; 21029 lead line; 21030 log line; 21031 parallel ruler; 21032 dividers; 21033 sounding line; 21034 gyrocompass; 21035 radar; 21036 sonar; 21037 star chart; 21040 rutter; 21041 binnacle; 21042 almanac; 41270 Polaris [star]; 41271 North Star [star]; 41272 Pole Star
+G: 41270 41271 41272; 2551 2552
+
+T polar_exploration | polar exploration
+W: 118 igloo; 2400 North Pole; 2401 South Pole [polar]; 2923 expedition [exploring trip]; 6725 Edmund Hillary; 6740 Northwest Passage; 9450 sled dog; 15009 frostbite; 17809 pemmican; 21005 Amundsen; 21006 Shackleton; 21016 Robert Peary; 21043 Captain Scott; 21046 sledge; 21048 Fridtjof Nansen; 21049 Douglas Mawson; 21050 Matthew Henson; 21051 Franklin expedition; 21052 ice floe; 21053 crampons; 21054 Ross Ice Shelf; 21055 Terra Nova [Scott ship]; 21056 Fram [Nansen ship]; 21057 Erebus [Franklin ship]; 21058 Nimrod [Shackleton ship]; 21059 Vilhjalmur Stefansson; 32061 Arctic [region]; 32062 Antarctica [continent]
+
+T antarctic_explorers | antarctic explorers
+W: 6723 Roald Amundsen; 6724 Ernest Shackleton; 6725 Edmund Hillary; 21049 Douglas Mawson; 54218 Robert Falcon Scott; 54220 Richard Byrd; 54221 Vivian Fuchs; 54222 Carsten Borchgrevink; 54223 Bellingshausen; 54224 James Weddell; 54225 James Clark Ross; 54226 Edgar Evans; 54227 Lawrence Oates; 54228 Tom Crean; 54229 Frank Wild; 54230 Frank Worsley; 54231 Nobu Shirase; 54232 Wilhelm Filchner; 54233 Adrien de Gerlache; 54234 Henry Bowers; 54235 Edward Wilson [explorer]; 54236 Apsley Cherry-Garrard; 54237 Edward Bransfield; 54238 Nathaniel Palmer; 54239 Charles Wilkes; 54240 Dumont d'Urville; 54241 Jean-Baptiste Charcot; 54242 Lincoln Ellsworth; 54243 Ranulph Fiennes; 54244 James Cook
+
+T arctic_explorers | arctic explorers
+W: 6728 Henry Hudson; 21013 Willem Barentsz; 21015 Vitus Bering; 21016 Robert Peary; 21048 Fridtjof Nansen; 21050 Matthew Henson; 21059 Vilhjalmur Stefansson; 54245 John Franklin; 54247 Frederick Cook; 54248 Knud Rasmussen; 54249 Otto Sverdrup; 54250 Adolphus Greely; 54251 Elisha Kent Kane; 54252 Salomon Andrée; 54253 John Rae; 54254 Francis Crozier; 54255 Martin Frobisher; 54256 John Davis [explorer]; 54257 William Baffin; 54258 Robert Bartlett [explorer]; 54259 Umberto Nobile; 54260 Will Steger; 54261 Robert McClure; 54262 Leopold McClintock; 54263 Peter Freuchen; 54264 Wally Herbert; 54265 Ejnar Mikkelsen; 54266 Lauge Koch; 54267 Ernest Leffingwell
+
+T expedition_ships | expedition ships | polar expedition vessels: Endurance, Fram, Terra Nova, Discovery, Erebus
+W: 21090 Discovery [ship]; 47528 Fram [ship]; 54268 Endurance [ship]; 54269 Terra Nova [ship]; 54270 Erebus [ship]; 54271 Terror [ship]; 54272 Nimrod [ship]; 54273 Aurora [ship]; 54274 Quest [ship]; 54275 Belgica [ship]; 54276 Gjøa [ship]; 54277 Gauss [ship]; 54278 Southern Cross [ship]; 54279 Scotia [ship]; 54280 Resolute [ship]; 54281 Jeannette [ship]; 54282 Polaris [ship]; 54283 Karluk [ship]; 54284 Morning [ship]; 54285 Deutschland [ship]; 54286 Pourquoi-Pas [ship]; 54287 Vega [ship]; 54288 Maud [ship]; 54289 Hecla [ship]; 54290 Investigator [ship]; 54291 Stella Polare [ship]; 54292 Tegetthoff [ship]; 54293 Roosevelt [ship]; 54294 Bear of Oakland [ship]
+
+T astronauts | astronauts
+W: 7117 cosmonaut; 7151 spacewalk; 21060 Neil Armstrong; 21061 Buzz Aldrin; 21062 Yuri Gagarin; 21063 John Glenn [astronaut]; 21064 Sally Ride; 21065 Alan Shepard; 21066 Valentina Tereshkova; 21067 Michael Collins [astronaut]; 21068 Chris Hadfield; 21069 Tim Peake; 21070 Peggy Whitson; 21071 Mae Jemison; 21072 Scott Kelly [astronaut]; 21073 Gus Grissom; 21074 Jim Lovell; 21075 Pete Conrad; 21076 Alexei Leonov; 21077 Christa McAuliffe; 21078 Kalpana Chawla; 21079 Gene Cernan; 21080 Jack Swigert; 21081 Helen Sharman
+
+T famous_voyages | famous voyages
+W: 2925 odyssey; 6718 Vasco da Gama [explorer]; 6750 Mayflower [ship]; 6751 Santa Maria [ship]; 6752 Kon-Tiki; 6755 Apollo 11; 21082 Endeavour [Cook ship]; 21083 Golden Hind; 21084 Bounty [ship]; 21085 Titanic [ship]; 21086 Cutty Sark; 21087 Victoria [Magellan ship]; 21088 Pinta; 21089 Nina [Columbus ship]; 21090 Discovery [ship]; 21091 Resolution [Cook ship]; 21093 Ra II [Heyerdahl boat]; 21094 Trinidad [Magellan ship]; 21095 Lusitania [ship]; 21096 Calypso [Cousteau ship]; 21097 Hokule'a [canoe]; 34711 Mary Rose [ship]; 47528 Fram [ship]; 47532 Argo [ship]; 54268 Endurance [ship]; 54269 Terra Nova [ship]; 54270 Erebus [ship]; 54272 Nimrod [ship]; 62003 Beagle [ship]
+
+T discoveries | discoveries
+W: 25 Uranus [planet]; 26 Neptune [planet]; 2333 Machu Picchu; 2336 Angkor Wat; 3459 X-ray [medical]; 6623 Troy; 6656 Rosetta Stone; 6657 Terracotta Army; 6741 New World; 6745 Cape of Good Hope; 6874 Pompeii [ancient Roman city]; 6875 Tutankhamun; 6876 King Tut; 6877 Lascaux; 6898 Dead Sea Scrolls; 6908 Sutton Hoo; 7132 gravity; 15121 penicillin; 20596 Vinland; 21098 Lucy [fossil]; 21099 Pluto [dwarf planet]; 21100 electron; 21101 Higgs boson; 21102 radium; 21103 Piltdown Man; 21104 Cape Horn; 21105 Kennewick Man; 21106 Olduvai Gorge; 32062 Antarctica [continent]; 33743 DNA
+G: 6875 6876
+
+T silk_road | silk road
+W: 1002 camel [animal]; 2232 Venice [city]; 2247 Constantinople; 2520 caravanserai; 5039 silk; 6719 Marco Polo [explorer]; 6734 Ibn Battuta; 9687 Bactrian camel; 21107 caravan [desert convoy]; 21108 Samarkand; 21109 Kashgar; 21110 Bukhara; 21111 Gobi Desert; 21112 Taklamakan; 21113 merchant; 21114 trade route; 21115 Dunhuang; 21116 Zhang Qian; 21117 porcelain [ceramic]; 21119 Merv; 21120 Tashkent; 21121 Khotan; 21122 Pamir Mountains; 21123 Sogdians [people]; 31662 jade [gem]
+
+T spice_trade | spice trade
+W: 717 cinnamon [spice]; 718 ginger [spice root]; 719 vanilla [flavouring]; 721 black pepper; 722 pepper [spice]; 740 nutmeg [spice]; 742 cumin; 743 cloves; 754 cilantro; 759 turmeric; 760 cardamom; 761 saffron [spice]; 763 allspice; 764 star anise; 781 mace [spice]; 21125 Moluccas [spice islands]; 21126 Maluku; 21127 Zanzibar; 21128 Banda Islands; 21129 Calicut; 21130 Malabar Coast; 21131 peppercorn; 21132 cassia; 21133 galangal; 21134 East India Company; 21135 Ternate
+G: 722 721; 21125 21126
+
+T polynesian_voyaging | polynesian voyaging
+W: 2781 canoe; 6747 navigator; 7566 Maori; 21137 wayfinding; 21138 Tahiti; 21139 Hawaii; 21140 Samoa; 21141 Tonga [country]; 21142 Easter Island; 21143 Aotearoa [Maori name]; 21144 Marquesas; 21145 Rarotonga; 21146 double canoe; 21147 star compass; 21148 Mau Piailug; 21149 Lapita [culture]; 21151 Maui [demigod]; 21152 Raiatea; 21154 stick chart; 21155 Rapa Nui; 21156 Society Islands; 21157 Tupaia; 22174 Kupe [navigator]; 22175 Hawaiki [homeland]; 43492 outrigger [canoe]
+
+T age_of_sail | age of sail
+W: 1317 man-of-war; 2793 schooner [ship]; 2794 galleon; 2815 clipper [ship]; 2821 sloop; 2822 frigate; 2833 crow's nest; 2842 carrack; 3403 scurvy; 6715 caravel; 6761 privateer; 6808 letter of marque; 6826 Trafalgar [battle]; 12473 rigging [ship]; 21158 cannon; 21159 brig [ship]; 21160 ship of the line; 21161 Royal Navy; 21162 hardtack; 21163 bowsprit; 21164 topsail; 21165 square rigger; 21166 ballast [ship]; 21167 press gang; 21168 gunwale; 21169 windward (adjective); 21170 HMS Victory; 21171 tall ship; 21172 jib; 21173 capstan [ship]
+
+T pirates | pirates
+W: 878 rum [drink]; 1065 parrot; 2403 treasure map; 2794 galleon; 2801 captain [ship]; 2821 sloop; 2825 gangplank; 2826 gangway; 2833 crow's nest; 2843 brigantine; 3403 scurvy; 4448 mutiny; 4971 bandana [headwear]; 6759 pirate [sea robber]; 6760 buccaneer; 6761 privateer; 6762 corsair; 6764 cutlass; 6765 treasure [loot]; 6766 Jolly Roger; 6767 walk the plank (verb); 6768 eye patch; 6770 peg leg; 6771 doubloon; 6772 pieces of eight; 6773 ahoy (other); 6774 matey (other); 6775 Blackbeard; 6776 Captain Kidd; 6777 Anne Bonny; 6778 Calico Jack; 6779 Henry Morgan; 6780 Black Bart [pirate]; 6781 Long John Silver; 6782 Captain Hook; 6783 Jack Sparrow; 6784 Bartholomew Roberts; 6785 Grace O'Malley; 6786 grog [rum drink]; 6787 keelhaul (verb); 6788 maroon [abandon] (verb); 6789 booty [plunder]; 6790 loot [plunder]; 6791 plunder; 6792 buried treasure; 6793 treasure chest; 6794 Tortuga; 6795 Port Royal; 6796 Barbary Coast; 6797 Spanish Main; 6798 tricorn; 6800 flintlock; 6801 cat o' nine tails; 6802 sea shanty; 6804 shiver me timbers (other); 6805 yo-ho-ho (other); 6806 swashbuckler; 6807 skull and crossbones; 6808 letter of marque; 6809 articles of agreement; 6810 Dread Pirate Roberts
+G: 2825 2826
+
+T famous_pirates | famous pirates
+W: 6775 Blackbeard; 6776 Captain Kidd; 6777 Anne Bonny; 6778 Calico Jack; 6779 Henry Morgan; 6780 Black Bart [pirate]; 6781 Long John Silver; 6782 Captain Hook; 6783 Jack Sparrow; 6784 Bartholomew Roberts; 6785 Grace O'Malley; 20650 Barbarossa [admiral]; 21191 Mary Read; 21192 Francis Drake; 21194 Stede Bonnet; 21195 Edward Teach; 21196 Ching Shih; 21197 Jean Lafitte; 21198 Henry Every; 21199 Captain Flint; 21200 Hector Barbossa; 21201 Redbeard; 21202 Captain Pugwash; 21203 William Dampier; 21204 Benjamin Hornigold; 50176 Captain Morgan [pirate]
+G: 6779 50176
+
+T treasure | treasure
+W: 4949 necklace; 6771 doubloon; 6790 loot [plunder]; 6884 hoard [find]; 21205 gold coin; 21206 jewel [gemstone]; 21211 gold bar; 21212 crown [royal]; 21213 bullion; 21214 ingot; 21216 gemstone; 21217 golden idol; 21218 El Dorado; 21219 Atocha [shipwreck]; 21220 Oak Island; 21221 Fabergé egg; 21222 Hope Diamond; 21223 Holy Grail; 21224 crown jewels; 21225 cache [hidden store]; 25491 chest [storage]; 31656 diamond [gem]; 31657 ruby [gem]; 31658 emerald [gem]; 31659 sapphire [gem]; 31660 pearl [gem]
+
+T lost_treasures | lost treasures
+W: 6654 Library of Alexandria; 6908 Sutton Hoo; 21218 El Dorado; 21219 Atocha [shipwreck]; 21220 Oak Island; 21223 Holy Grail; 54295 Amber Room; 54296 Ark of the Covenant; 54298 Lost Dutchman Mine; 54300 Yamashita's gold; 54301 Lima; 54302 Kidd's treasure; 54303 King John's jewels; 54304 Blackbeard's hoard; 54305 Montezuma's gold; 54306 Priam's treasure; 54307 Flor de la Mar [ship]; 54309 Lasseter's Reef; 54310 Cocos Island gold; 54311 Tsar's gold; 54312 Nazi gold; 54313 Templar; 54314 Inca gold; 54315 Fabergé eggs; 54316 Spear of Destiny; 62873 Beale ciphers
+
+T pirate_ships | pirate ships
+W: 2793 schooner [ship]; 2794 galleon; 2817 junk [ship]; 2818 dhow; 2821 sloop; 2822 frigate; 2841 pinnace; 2843 brigantine; 2849 lugger; 13785 pirate ship [ride]; 21226 Black Pearl [ship]; 21227 Queen Anne's Revenge; 21228 Adventure Galley; 21229 Whydah [pirate ship]; 21230 Royal Fortune; 21231 Flying Dutchman [ghost ship]; 21232 Hispaniola [Treasure Island ship]; 21233 xebec; 21234 warship; 21235 flagship; 21236 Interceptor [ship]; 21237 Revenge [Blackbeard ship]
+G: 21237 21227
+
+T pirate_weapons | pirate weapons
+W: 6764 cutlass; 6800 flintlock; 20135 knife [cutlery]; 20473 gunpowder [explosive]; 20683 sword [weapon]; 20784 dagger [weapon]; 20796 rapier; 20805 dirk; 20809 cudgel; 21158 cannon; 21238 pistol; 21239 musket; 21240 blunderbuss; 21241 cannonball [ammunition]; 21242 grappling hook; 21243 boarding axe; 21244 saber; 21246 grapeshot; 21247 chain shot; 21248 swivel gun; 21250 boarding pike; 21251 powder keg; 21252 culverin; 21253 carronade; 21255 matchlock; 21256 belaying pin; 34657 stiletto [knife]
+
+T pirate_places | pirate places
+W: 2157 Cuba; 2161 Jamaica; 2294 Havana; 6794 Tortuga; 6795 Port Royal; 6796 Barbary Coast; 6797 Spanish Main; 13460 Treasure Island; 21257 Caribbean [region]; 21258 Skull Island; 21259 Nassau; 21260 Madagascar; 21261 Davy Jones' Locker; 21262 Bahamas; 21263 Haiti; 21265 Saint-Malo; 21266 Cape Fear; 21267 Ocracoke; 21268 hidden cove; 21269 desert island; 21270 Strait of Malacca; 21271 Libertalia; 21272 Shipwreck Cove; 21273 Cayman Islands; 21274 Dry Tortugas; 35966 Cartagena [city]
+
+T pirate_crew | pirate crew
+W: 1065 parrot; 2801 captain [ship]; 4380 sailor; 4381 seaman; 4382 mariner; 4384 jack tar; 4467 quartermaster; 6747 navigator; 6760 buccaneer; 6761 privateer; 14687 lookout [person]; 20737 cooper [barrel maker]; 21275 first mate [ship]; 21276 cabin boy; 21277 boatswain; 21278 bosun; 21279 boatswain mate; 21280 gunner; 21282 deckhand; 21283 swabbie; 21284 powder monkey; 21285 sailing master; 21286 master gunner; 21287 coxswain; 21288 stowaway; 21289 ship's cat; 21290 sailmaker; 21291 crewmate; 21293 purser [ship]; 21294 midshipman
+G: 21278 21279; 4380 4384 4382 4381
+
+T pirate_punishments | pirate punishments | walk the plank, keelhaul, maroon, flogging, cat o' nine tails
+W: 6767 walk the plank (verb); 6787 keelhaul (verb); 6788 maroon [abandon] (verb); 6801 cat o' nine tails; 21296 hanging [punishment]; 21297 gibbet; 21298 irons [shackles]; 21300 lashes; 21301 whipping; 21303 yardarm [hanging place]; 21304 gallows; 21305 scourge; 21306 bilboes; 21307 execution; 21308 plank [pirate]; 21309 flog (verb); 21310 leg irons; 21311 hanging in chains; 33813 stocks [punishment]
+G: 21308 6767
+
+T pirate_clothing | pirate clothing
+W: 4883 vest [waistcoat]; 4971 bandana [headwear]; 5010 cravat; 6768 eye patch; 6770 peg leg; 6798 tricorn; 6807 skull and crossbones; 20829 breeches; 20832 jerkin; 21312 hat; 21313 striped shirt; 21314 sash [clothing]; 21315 boots; 21316 earring; 21317 frock coat; 21318 bicorn; 21319 bandolier; 21320 kerchief; 21321 neckerchief; 21322 slops; 21323 ruffled shirt; 21324 cocked hat; 21325 hook hand
+
+T wars_and_battles | wars and battles
+W: 3919 ally; 4370 army [military]; 4373 soldier [military person]; 4374 trooper; 4375 GI [soldier]; 4376 squaddie; 4377 digger [soldier]; 4378 grunt [soldier]; 4379 doughboy [WWI American]; 4392 war [conflict]; 4393 battle; 4394 victory; 4395 invasion; 4396 ambush; 4397 siege [military]; 4399 surrender [military]; 4400 capitulate (verb); 4401 retreat; 4404 trench [military]; 4424 frontline; 4426 infantry; 4427 cavalry; 4428 artillery; 4431 battalion; 4432 regiment; 4433 platoon; 4435 brigade [military unit]; 4441 ceasefire; 4443 truce; 4464 armistice; 4466 garrison; 4472 sortie; 6811 general [officer]; 6812 enemy; 6813 defeat; 6814 treaty; 6816 skirmish; 6817 campaign [military]; 6818 battlefield; 6819 conquest; 6820 rebellion; 6821 civil war; 6822 Waterloo [battle]; 6823 Hastings [battle]; 6824 Gettysburg; 6825 Thermopylae; 6826 Trafalgar [battle]; 6827 Stalingrad; 6828 Agincourt; 6829 Normandy [region]; 6830 D-Day; 6831 Pearl Harbor; 6832 Alamo; 6833 Bunker Hill; 6834 Hundred Years' War; 6837 Wars of the Roses; 6842 Vietnam; 6845 Seven Years' War; 6846 War of 1812; 6848 Austerlitz; 6849 Marathon [battle]; 6850 Somme; 6851 Verdun; 6852 flank [attack] (verb); 6853 rout [defeat]; 6854 enfilade; 6855 redoubt; 66000 Boer [South African conflict]; 66001 Crimean [Russian-Ottoman conflict]; 66002 Gulf [Iraq-Kuwait conflict]; 66003 Korean [1950s peninsula conflict]; 66004 Napoleonic [Bonaparte-era conflicts]; 66005 Peloponnesian [Athens versus Sparta]; 66006 Punic [Rome versus Carthage]; 66007 Trojan [Homeric siege conflict]; 66008 Zulu [British-Zulu conflict]
+G: 4399 4400; 4373 4374 4376 4377 4375 4378
+
+T famous_battles | famous battles
+W: 6822 Waterloo [battle]; 6823 Hastings [battle]; 6824 Gettysburg; 6825 Thermopylae; 6826 Trafalgar [battle]; 6827 Stalingrad; 6828 Agincourt; 6829 Normandy [region]; 6830 D-Day; 6831 Pearl Harbor; 6832 Alamo; 6833 Bunker Hill; 6848 Austerlitz; 6849 Marathon [battle]; 6850 Somme; 6851 Verdun; 20551 Salamis; 20649 Lepanto; 20655 Gallipoli; 21326 Antietam; 21327 Bull Run [battle]; 21328 Culloden; 21329 Bannockburn; 21330 Cannae; 21331 Actium; 21332 Midway [battle]; 21333 Iwo Jima; 21334 Ypres; 21335 Passchendaele; 21336 El Alamein; 21337 Dunkirk; 21338 Tannenberg; 21339 Borodino; 21340 Blenheim [battle]; 21341 Plassey; 21342 Yorktown
+
+T ancient_battles | ancient battles
+W: 6825 Thermopylae; 6849 Marathon [battle]; 20551 Salamis; 20553 Gaugamela; 21330 Cannae; 21331 Actium; 54317 Plataea; 54318 Issus; 54319 Zama; 54320 Pharsalus; 54321 Teutoburg Forest; 54322 Carrhae; 54323 Hydaspes; 54324 Granicus; 54325 Leuctra; 54326 Alesia; 54327 Kadesh; 54328 Megiddo; 54329 Adrianople; 54330 Milvian Bridge; 54331 Mantinea; 54332 Philippi; 54333 Pydna; 54334 Lake Trasimene; 54335 Chaeronea; 54336 Magnesia; 54337 Syracuse [city]; 54338 Trebia; 54339 Catalaunian Plains; 54340 Thapsus
+
+T medieval_battles | medieval battles
+W: 6823 Hastings [battle]; 6828 Agincourt; 20934 Hattin; 21329 Bannockburn; 27446 barnet; 54341 Crécy; 54342 Poitiers; 54343 Stirling Bridge; 54344 Bosworth Field; 54345 Towton; 54346 Manzikert; 54347 Courtrai; 54348 Legnano; 54349 Grunwald; 54350 Kosovo Polje; 54351 Bouvines; 54352 Lewes [battle]; 54353 Evesham; 54354 Falkirk; 54355 Castillon; 54356 Las Navas de Tolosa; 54357 Ain Jalut; 54358 Lechfeld; 54359 Clontarf; 54360 Mohi; 54361 Varna [battle]; 54362 Nicopolis; 54363 Tewkesbury; 54364 Lake Peipus; 54365 Roncevaux; 54366 Sluys; 54367 Orléans [siege]; 54368 Edington; 54369 Tours [battle]; 59412 Stamford Bridge [battle]
+
+T napoleonic_battles | napoleonic battles
+W: 6822 Waterloo [battle]; 6826 Trafalgar [battle]; 6848 Austerlitz; 21339 Borodino; 54370 Jena; 54371 Leipzig; 54372 Wagram; 54373 Marengo [battle]; 54374 Friedland; 54375 Eylau; 54376 Ulm; 54377 Aboukir; 54378 Salamanca [battle]; 54379 Vitoria; 54380 Talavera [battle]; 54381 Albuera; 54382 Quatre Bras; 54383 Ligny; 54384 Wavre; 54385 Aspern-Essling; 54386 Lützen; 54387 Bautzen; 54388 Dresden [battle]; 54389 Corunna; 54390 Busaco; 54391 Smolensk [battle]; 54392 Berezina; 54393 Pyramids [battle]; 54394 Nile; 54395 Copenhagen [battle]; 54396 Rivoli; 54397 Arcole; 54398 Toulon [siege]; 54399 Maloyaroslavets
+
+T world_war_i_battles | world war i battles
+W: 6850 Somme; 6851 Verdun; 20655 Gallipoli; 21334 Ypres; 21335 Passchendaele; 21338 Tannenberg; 36650 Jutland; 54328 Megiddo; 54400 Marne; 54401 Cambrai; 54402 Loos; 54403 Vimy Ridge; 54404 Amiens [battle]; 54405 Arras [battle]; 54406 Mons; 54407 Caporetto; 54408 Isonzo; 54409 Belleau Wood; 54410 Meuse-Argonne; 54411 Chemin des Dames; 54412 Messines; 54413 Neuve Chapelle; 54414 Masurian Lakes; 54415 Dogger Bank [battle]; 54416 Coronel; 54417 Beersheba; 54418 Kut; 54419 Aisne; 54420 Zeebrugge; 54421 Pozières; 54422 Saint-Mihiel; 54423 Lemberg; 54424 Vittorio Veneto
+
+T world_war_ii_battles | world war ii battles
+W: 6827 Stalingrad; 6829 Normandy [region]; 6830 D-Day; 6831 Pearl Harbor; 21332 Midway [battle]; 21333 Iwo Jima; 21336 El Alamein; 21337 Dunkirk; 21477 Battle of Britain; 36610 Okinawa; 36625 Omaha Beach; 37010 Coral Sea; 38095 Leningrad; 54425 Kursk; 54426 Battle of the Bulge; 54428 Guadalcanal; 54429 Battle of the Atlantic; 54430 Berlin [battle]; 54431 Monte Cassino; 54432 Arnhem; 54433 Tobruk; 54434 Anzio; 54435 Leyte Gulf; 54436 Tarawa; 54437 Saipan; 54438 Imphal; 54439 Kohima; 54440 Crete [battle]; 54441 Bataan; 54442 Corregidor; 54443 Peleliu; 54444 Market Garden [operation]; 54445 Falaise; 54446 Remagen; 54447 Sevastopol; 54448 Narvik; 54449 Dieppe; 54450 Taranto; 54451 River Plate [battle]; 54452 Salerno; 54453 Hürtgen Forest; 54454 Wake Island
+
+T civil_war_battles | civil war battles | American Civil War
+W: 6824 Gettysburg; 21326 Antietam; 21327 Bull Run [battle]; 54455 Shiloh; 54456 Vicksburg; 54457 Fort Sumter; 54458 Chancellorsville; 54459 Fredericksburg; 54460 Chickamauga; 54461 Wilderness [battle]; 54462 Spotsylvania; 54463 Cold Harbor; 54464 Petersburg [siege]; 54465 Appomattox; 54466 Fort Donelson; 54467 Pea Ridge; 54468 Stones River; 54469 Chattanooga [battle]; 54470 Lookout Mountain [battle]; 54471 Missionary Ridge; 54472 Seven Pines; 54473 Seven Days [battles]; 54474 Malvern Hill; 54475 Hampton Roads [battle]; 54476 Fort Wagner; 54477 Brandy Station; 54478 Perryville; 54479 Wilson's Creek; 54480 Kennesaw Mountain; 54481 Harpers Ferry [battle]; 54482 Fair Oaks; 54483 Mobile Bay; 54484 Five Forks; 54485 Sailor's Creek
+
+T armor | armor
+W: 6705 hauberk; 20684 shield [armor]; 20685 helmet [armor]; 20691 visor [helmet]; 20692 gauntlet; 20705 gorget; 20706 pauldron; 20835 coif; 20836 tabard; 20845 gambeson; 21343 chainmail; 21344 breastplate [armor]; 21345 greaves; 21346 suit of armor; 21347 buckler; 21348 cuirass; 21349 vambrace; 21350 sabaton; 21351 bascinet; 21353 kite shield; 21354 tower shield; 21355 lamellar; 21356 scale mail; 21357 brigandine; 21358 cuisses; 21359 poleyn; 21360 body armor; 50026 helm [helmet]; 66009 plate [full steel plates]; 66010 yoroi [Japanese warrior gear]
+
+T war_words | war words
+W: 3075 bivouac; 4370 army [military]; 4373 soldier [military person]; 4374 trooper; 4375 GI [soldier]; 4376 squaddie; 4377 digger [soldier]; 4378 grunt [soldier]; 4379 doughboy [WWI American]; 4390 troops; 4391 forces [troops]; 4393 battle; 4395 invasion; 4396 ambush; 4397 siege [military]; 4399 surrender [military]; 4400 capitulate (verb); 4401 retreat; 4424 frontline; 4431 battalion; 4432 regiment; 4439 reconnaissance; 4441 ceasefire; 4444 conscription; 4464 armistice; 4466 garrison; 4468 flank [military]; 4472 sortie; 6812 enemy; 6816 skirmish; 6853 rout [defeat]; 6854 enfilade; 21362 weapon; 21363 attack; 21364 casualty; 21365 barrage [bombardment]; 21366 muster [assemble] (verb); 21367 war crime; 21368 vanguard; 21369 salvo; 21370 sapper; 21371 attrition; 21372 foray; 21373 reinforcements
+G: 4399 4400; 4390 4391; 4373 4374 4376 4377 4375 4378
+
+T siege_weapons | siege weapons
+W: 6709 trebuchet [catapult]; 20611 Greek fire; 20715 arrow slit; 20724 ballista; 20725 catapult; 20794 battering ram; 20804 mangonel; 21158 cannon; 21241 cannonball [ammunition]; 21252 culverin; 21374 scaling ladder; 21375 bombard [cannon]; 21376 boiling oil; 21377 siege engine; 21378 springald; 21379 firepot; 21380 testudo; 21381 mantlet; 21382 petraria; 21383 grappling iron; 50066 onager [catapult]; 66011 belfry [wheeled assault structure]
+
+T soldiers_of_history | soldiers of history
+W: 36 knight [warrior]; 4379 doughboy [WWI American]; 6621 gladiator; 12540 Viking [raider]; 20362 hoplite; 20384 centurion; 20558 samurai; 20633 janissary; 20733 archer [job]; 20923 crusader; 20949 Mamluk; 21384 legionary; 21385 Spartan [warrior]; 21386 musketeer; 21387 redcoat; 21388 Mongol horseman; 21389 Zulu warrior; 21390 minuteman; 21391 Praetorian Guard; 21392 Cossack; 21393 Hussar; 21394 Landsknecht; 21395 Immortals [Persian soldiers]; 21396 pikeman; 21397 dragoon; 21398 grenadier [soldier]; 21399 Cataphract; 21400 Highlander; 21401 Rough Rider; 21402 Zouave

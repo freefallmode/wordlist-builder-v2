@@ -1,0 +1,411 @@
+T beach_vacation | beach vacation | things on a beach vacation: sunscreen, deck chair, sandcastle, cabana
+W: 604 ice cream [frozen dessert]; 896 cocktail [drink]; 1071 seagull; 1072 gull; 1780 aloe vera; 1781 aloe; 2807 pier [jetty]; 2979 resort; 3044 hammock [hanging bed]; 3745 sunscreen; 3746 sunblock; 5004 parasol [sunshade]; 5194 volleyball; 5290 swimming; 5292 surfing; 5303 paddleboarding; 5306 snorkeling; 14337 sunburn; 14338 tan [skin]; 16925 promenade [walk] (verb); 24624 flip-flops; 25810 sun lounger; 29570 jet ski; 30059 driftwood [beach]; 30169 boardwalk [walkway]; 30738 deck chair; 30875 sandbar; 30894 sand dune; 30968 rock pool; 31047 tide pool; 31127 riptide; 31237 sea breeze; 33021 lifeguard; 40197 seashell [shell]; 45031 parasailing; 48401 cabana; 48402 beach hut; 48859 sandcastle; 48860 sunbathing; 48861 sunset [beach]; 48862 waves; 48864 all-inclusive (adjective); 48865 banana boat [beach ride]; 48866 bar; 48867 kite surfing; 48868 tropical drink; 48869 pina colada [cocktail]
+G: 3745 3746; 1071 1072; 1781 1780; 30968 31047
+
+T ski_trip | ski trip | things on a ski trip: chairlift, chalet, piste, lift pass, apres-ski
+W: 127 chalet; 227 hot chocolate; 228 cocoa; 2979 resort; 4215 patrol; 4871 jacket [coat]; 5388 moguls; 16539 hot tub; 17938 raclette; 18013 fondue; 18025 tartiflette; 19468 mulled wine; 19475 glühwein; 21315 boots; 24499 balaclava; 31293 powder [snow]; 43521 ski [equipment]; 43523 slope [skiing]; 43524 piste [ski]; 43525 chairlift; 43527 gondola [ski]; 43531 bunny slope; 43535 off-piste (adjective); 43537 T-bar; 43555 ski school; 46858 tire chains; 47041 cable car; 47073 lift pass; 47074 pass [lift]; 48641 base layer; 48870 après-ski; 48871 snowboard; 48872 goggles [ski]; 48873 poles; 48874 lodge; 48876 black run; 48877 red run; 48878 blue run; 48879 snow bunny; 48880 rental; 48881 salopettes; 48882 avalanche beacon; 48883 fresh tracks; 48884 wax; 48885 sled [snow]; 57621 instructor [ski]; 60749 ski bum
+G: 227 228; 47073 47074
+
+T cruise_words | cruise words
+W: 1941 fjord [landform]; 1952 moor; 2778 ship; 2791 lifeboat; 2806 dock [port]; 2823 galley [ship kitchen]; 2824 porthole; 2826 gangway; 2827 life jacket; 2828 life vest; 2832 bilge [ship]; 2833 crow's nest; 2834 bridge [ship]; 2939 itinerary; 21293 purser [ship]; 26807 bon voyage (other); 28646 buffet [meal]; 34580 starboard [ship side]; 34583 deck [ship]; 37955 aft (adverb); 47168 captain [crew]; 47440 poop deck; 47493 berth [mooring]; 47599 port side; 47601 bow [ship front]; 48181 embark (verb); 48186 disembark (verb); 48886 cabin [ship]; 48887 port [cruise stop]; 48888 balcony cabin; 48889 shore excursion; 48890 cruise director; 48891 lido deck; 48892 muster drill; 48893 stern [ship back]; 48894 all aboard (other); 48895 tender [ship boat]; 48896 sea day; 48897 formal night; 48898 stateroom; 48899 cabin steward; 48900 promenade deck; 48901 sail away (verb); 48902 knots [ship speed]; 48903 cruise card; 48904 ship deck plan; 48905 transatlantic (adjective); 48906 maiden voyage; 48907 specialty dining; 48909 bulkhead [ship]; 63987 terminal [ship port]
+G: 2827 2828
+
+T cruise_lines | cruise lines | Carnival, Royal Caribbean, Cunard, Princess, MSC, Holland America
+W: 59348 Carnival [cruise line]; 59349 Royal Caribbean; 59350 Cunard; 59352 MSC [cruise line]; 59353 Holland America; 59354 Norwegian [cruise line]; 59355 Celebrity; 59356 Disney; 59357 Viking [cruise line]; 59358 P&O [cruise line]; 59359 Costa [cruise line]; 59360 Silversea; 59361 Seabourn; 59362 Oceania [cruise line]; 59363 Regent Seven Seas; 59364 Azamara; 59365 Hurtigruten; 59366 Virgin Voyages; 59367 Windstar; 59368 Star Clippers; 59369 Crystal; 59370 Saga [cruise line]; 59371 Fred. Olsen; 59372 AIDA [cruise line]; 59373 Hapag-Lloyd; 59374 Marella; 59375 Lindblad; 59376 American Cruise Lines; 59377 Ponant; 59378 Celestyal; 59379 Scenic [cruise line]; 62685 Princess [cruise line]
+
+T sightseeing_words | sightseeing words
+W: 2395 map [chart of places]; 2692 hop-on hop-off (adjective); 2921 tour (verb); 2922 excursion; 2939 itinerary; 2941 day trip; 2963 sightseeing; 4562 postcard; 7346 selfie stick; 8408 binoculars; 12084 panorama; 12138 audio guide; 12144 gift shop; 12471 ticket booth [cinema]; 13831 souvenir shop; 14687 lookout [person]; 16909 stroll (verb); 16915 wander (verb); 16937 rubberneck (verb); 26286 brochure; 28309 souvenir; 33094 tour guide; 35405 queue [line]; 37889 landmark; 46880 tour bus; 48144 tourist [sightseer]; 48145 sightseer; 48290 scenic route; 48660 vista; 48765 guidebook; 48910 walking tour; 48911 admission [ticket]; 48912 photo op; 48913 must-see (adjective); 48914 tourist trap; 48915 off the beaten path (other); 48916 travel guide; 48917 guided tour; 48918 sights; 48919 flaneur
+G: 48144 48145; 2921 48917
+
+T tourist_attractions | tourist attractions | kinds of attraction: museum, aquarium, gallery, viewpoint, old town
+W: 34 castle [building]; 128 palace; 1858 fountain [garden feature]; 1903 canyon; 1904 gulch; 1905 arroyo [dry gully]; 1913 cave [rock hollow]; 1914 waterfall; 1938 geyser [landform]; 2472 museum; 2474 lighthouse; 2488 cathedral; 2490 temple [building]; 2505 observatory; 2506 mausoleum; 2804 harbor [port]; 6301 gallery [art]; 6338 statue; 6553 tower [building]; 6818 battlefield; 6867 ruins; 7154 planetarium; 7379 bridge [structure]; 10169 aquarium; 12047 monument; 12340 opera house; 13776 Ferris wheel; 13850 theme park; 13851 amusement park; 21742 catacomb; 28477 market [shopping place]; 28885 zoo; 31938 hot spring; 32261 national park; 38455 old town; 47041 cable car; 48922 observation deck; 48923 viewpoint; 48924 night market; 48925 botanical garden; 48926 wax museum; 48927 historic site; 48928 vineyard; 48929 city walls
+G: 13850 13851; 1903 1904
+
+T famous_theme_parks | famous theme parks | Disneyland, Tivoli, Efteling, Europa-Park, Cedar Point, Everland
+W: 37441 Tivoli Gardens; 48930 Disneyland; 48931 Walt Disney World; 48932 Universal Studios; 48933 Legoland; 48934 Six Flags; 48935 SeaWorld; 48936 Magic Kingdom; 48937 Epcot; 48938 Disneyland Paris; 48939 Busch Gardens; 48940 Knott's Berry Farm; 48941 Dollywood; 48942 Alton Towers; 48944 Blackpool [resort town]; 48945 Efteling; 48946 Europa-Park; 48947 Cedar Point; 48948 Everland; 48949 Lotte World [Seoul theme park]; 48950 Ocean Park; 48951 Hersheypark; 48952 Islands of Adventure; 48953 Hollywood Studios; 48954 Gardaland; 48955 PortAventura; 48956 Liseberg; 48957 Phantasialand; 48958 Energylandia; 48959 Fuji-Q Highland; 48960 Ferrari World; 48961 Chessington [theme park]; 48962 Parc Asterix; 48963 Movie Park; 48964 Drayton Manor; 48965 Coney Island [amusement area]; 62686 Thorpe
+G: 48930 48938
+
+T beach_destinations | beach destinations | Bali, Cancun, Maldives, Ibiza, Phuket, Bodrum, Maui, Bondi
+W: 2161 Jamaica; 2259 Miami; 21127 Zanzibar; 21138 Tahiti; 21139 Hawaii; 21262 Bahamas; 21815 Santorini; 35696 Maldives; 35740 Seychelles; 35766 Fiji [country]; 35772 Mauritius [country]; 35839 Bodrum; 36020 Gold Coast [city]; 36103 Cancun; 36123 Tulum; 36358 Costa del Sol; 36406 Goa; 36434 Algarve; 36578 Majorca; 36580 Ibiza; 36581 Tenerife; 36582 Bali; 36597 Barbados [island]; 36600 Mykonos; 36611 Maui [island]; 36615 Copacabana [beach]; 36616 Waikiki; 36617 Malibu [beach]; 36618 Ipanema [beach]; 36620 Venice Beach; 36622 Daytona; 36623 Myrtle Beach; 48966 Phuket; 48967 Bondi [beach]; 48969 Punta Cana; 48970 Aruba; 48971 Bora Bora; 48972 Key West; 48973 Cabo; 48974 Boracay; 48975 Koh Samui; 48976 Krabi; 48977 Marbella; 48978 Benidorm; 48979 Lanzarote; 48980 Positano; 48981 Langkawi; 60752 Ko Lipe; 60753 Sveti Stefan; 60754 Zlatni Rat; 62687 Diani; 62688 Navagio; 65711 Whitehaven [Whitsunday Island shore]
+
+T island_getaways | island getaways
+W: 2161 Jamaica; 21127 Zanzibar; 21138 Tahiti; 21139 Hawaii; 21262 Bahamas; 21815 Santorini; 35696 Maldives; 35740 Seychelles; 35766 Fiji [country]; 35772 Mauritius [country]; 36578 Majorca; 36580 Ibiza; 36581 Tenerife; 36582 Bali; 36597 Barbados [island]; 36600 Mykonos; 36611 Maui [island]; 48966 Phuket; 48970 Aruba; 48971 Bora Bora; 48974 Boracay; 48975 Koh Samui; 48979 Lanzarote; 48981 Langkawi
+
+T famous_stretches_of_sand | famous stretches of sand
+W: 36615 Copacabana [beach]; 36616 Waikiki; 36617 Malibu [beach]; 36618 Ipanema [beach]; 36619 Whitehaven Beach; 36620 Venice Beach; 36623 Myrtle Beach; 48967 Bondi [beach]; 60754 Zlatni Rat; 62687 Diani; 62688 Navagio
+
+T american_holiday_spots | american holiday spots
+W: 2259 Miami; 21139 Hawaii; 36611 Maui [island]; 36616 Waikiki; 36617 Malibu [beach]; 36620 Venice Beach; 36623 Myrtle Beach; 48972 Key West; 59042 Daytona
+
+T famous_ski_resorts | famous ski resorts | Aspen, Whistler, Zermatt, Chamonix, St. Moritz, Niseko
+W: 12773 Telluride; 36839 Lake Louise; 36840 Lake Placid; 37443 Banff; 44432 Chamonix; 44434 Squaw Valley; 44435 Innsbruck; 48982 Whistler [ski resort]; 48983 Zermatt; 48984 St. Moritz; 48985 Niseko; 48986 Vail; 48987 Courchevel; 48988 Verbier; 48989 Kitzbühel; 48991 St. Anton; 48992 Val d'Isère; 48994 Jackson Hole; 48995 Park City; 48996 Breckenridge; 48997 Cortina [ski resort]; 48998 Davos; 48999 Gstaad; 49000 Val Thorens; 49001 Les Arcs; 49002 Tignes; 49003 Mammoth [ski resort]; 49004 Sun Valley; 49005 Stowe; 49006 Killington; 49007 Mont Tremblant; 49008 Hakuba; 49009 Ischgl; 49010 Sölden; 49012 Saas-Fee; 49013 Bansko; 49014 Cervinia; 49015 Lech [ski resort]; 49016 Garmisch; 49017 Åre; 50013 Aspen [ski town]; 60755 Beaver Creek; 60756 Heavenly; 60757 Alpe d'Huez; 60758 Sestriere; 60759 Zürs; 60760 Alta [ski resort]
+
+T special_vehicles | special vehicles | vehicles with a job: ambulance, snowplow, forklift, tractor, hearse
+W: 2655 school bus [yellow vehicle]; 3088 ambulance; 3089 fire truck; 3091 police car; 3093 cop car; 3094 snowplow [vehicle]; 3096 forklift; 3097 tractor; 3098 hearse; 3099 bulldozer; 3100 dozer; 3101 excavator; 3102 digger [machine]; 3103 JCB; 3104 crane [machine]; 3105 dump truck; 3108 cement mixer; 3109 concrete mixer; 3110 tow truck; 3113 garbage truck; 3117 street sweeper; 3119 tanker truck; 3121 ice cream truck; 3123 armored car; 3125 tank [military vehicle]; 3126 police van; 3127 backhoe; 3128 steamroller; 3130 Zamboni; 3131 ice resurfacer; 3133 combine [harvester]; 3134 cherry picker; 3135 aerial work platform; 3136 lunar rover; 3137 golf cart; 3139 snowmobile; 3141 sno-cat [tracked vehicle]; 3142 ATV; 3144 monster truck; 3145 food truck; 3146 flatbed truck; 3147 front loader; 3148 grader; 3149 road grader; 3150 mail truck; 3152 milk float; 3153 bookmobile; 3155 hovercraft; 3156 amphibious vehicle; 3157 skid steer; 3158 Bobcat [vehicle]; 3159 telehandler; 3160 pile driver [machine]; 3161 road train; 3162 tractor trailer; 3165 wheelchair van; 3166 hay baler; 3167 baler; 49252 patrol car; 49254 flatbed; 49255 tanker [truck]; 49258 refuse truck; 49260 main battle tank
+G: 3101 3102 3103; 3125 49260; 3108 3109; 49255 3119; 3091 49252 3093; 3134 3135; 3167 3166; 3099 3100; 3130 3131; 3113 49258; 49254 3146; 3148 3149; 3157 3158
+
+T emergency_vehicles | emergency vehicles
+W: 2791 lifeboat; 3088 ambulance; 3089 fire truck; 3091 police car; 3093 cop car; 3110 tow truck; 3126 police van; 30288 water bomber; 47108 air ambulance; 47958 police motorcycle; 49019 rescue helicopter; 49020 police helicopter; 49021 fireboat; 49023 rescue boat; 49024 ladder truck; 49025 paramedic car; 49027 hazmat truck; 49028 bomb disposal truck; 49029 rescue truck; 49030 coast guard cutter; 49031 riot van; 49033 pumper truck; 49034 hook and ladder; 49035 crash tender; 49036 brush truck; 49037 mobile command unit; 49038 snow rescue vehicle; 49039 police boat; 49040 tactical vehicle; 49041 incident response unit; 49042 rescue squad; 49252 patrol car; 62689 RRV; 62692 fire engine [emergency]
+G: 3091 49252 3093
+
+T construction_vehicles | construction vehicles
+W: 3096 forklift; 3099 bulldozer; 3100 dozer; 3101 excavator; 3102 digger [machine]; 3103 JCB; 3104 crane [machine]; 3105 dump truck; 3108 cement mixer; 3109 concrete mixer; 3127 backhoe; 3128 steamroller; 3134 cherry picker; 3135 aerial work platform; 3147 front loader; 3148 grader; 3149 road grader; 3157 skid steer; 3158 Bobcat [vehicle]; 3159 telehandler; 3160 pile driver [machine]; 23997 compactor; 49043 tower crane; 49044 mobile crane; 49045 crawler crane; 49046 wheel loader; 49047 paver [machine]; 49048 asphalt paver; 49049 scraper [machine]; 49050 mini digger; 49051 boom lift; 49052 scissor lift; 49053 concrete pump; 49054 site dumper; 49055 drilling rig; 49056 loader [machine]; 49057 rock crusher; 50141 trencher [digging machine]
+G: 3101 3102 3103 49050; 3108 3109; 3134 3135; 3099 3100; 3148 3149; 3157 3158; 49047 49048
+
+T farm_vehicles | farm vehicles
+W: 199 Land Rover; 1539 horse trailer; 2640 pickup truck; 3097 tractor; 3133 combine [harvester]; 3137 golf cart; 3142 ATV; 3162 tractor trailer; 3166 hay baler; 3167 baler; 38181 seed drill; 47088 crop duster; 47089 agricultural aircraft; 49059 manure spreader; 49060 crop sprayer; 49061 cotton picker; 49062 forage harvester; 49063 grain cart; 49064 hay wagon; 49065 livestock trailer; 49066 potato harvester; 49067 sugar beet harvester; 49068 windrower; 49069 swather; 49070 feed wagon; 49071 grain truck; 49072 silage truck; 49073 ride-on mower; 49074 John Deere; 49075 Massey Ferguson; 49076 Fendt; 49077 Kubota; 49078 New Holland; 49079 tracked tractor; 49080 plough [farm implement]; 49081 thresher [machine]; 49082 Gator [utility vehicle]; 62690 UTV
+G: 47088 47089; 3167 3166
+
+T military_vehicles | military vehicles
+W: 2822 frigate; 3123 armored car; 3125 tank [military vehicle]; 4452 aircraft carrier; 21234 warship; 21468 Spitfire [aircraft]; 21471 U-boat; 34572 submarine; 34574 battleship [warship]; 34577 minesweeper [ship]; 34597 gunboat; 34601 fighter jet; 34602 bomber [aircraft]; 34608 stealth bomber; 34703 cruiser [warship]; 34705 patrol boat; 34706 landing craft; 47256 Harrier [jet]; 47257 Apache [helicopter]; 48722 jeep [safari]; 49083 Humvee; 49084 personnel carrier; 49085 APC; 49086 troop carrier; 49088 helicopter gunship; 49089 Black Hawk [helicopter]; 49090 Chinook [helicopter]; 49091 destroyer [warship]; 49092 missile launcher; 49093 self-propelled gun; 49094 half-track; 49095 tank destroyer; 49096 Sherman [tank]; 49097 Abrams [tank]; 49098 Panzer; 49099 Tiger [tank]; 49100 Warthog [A-10 jet]; 49101 warplane; 49102 troop transport; 49103 supply truck; 49104 military truck; 49105 Stryker; 49106 Bradley [fighting vehicle]; 49107 T-34; 49108 Predator drone [drone]; 49260 main battle tank; 60761 Merkava; 60762 Leopard 2; 60763 Challenger 2; 60764 Stuka; 60765 Marder
+G: 3125 49260
+
+T naval_vessels | naval vessels
+W: 2822 frigate; 4452 aircraft carrier; 21234 warship; 21471 U-boat; 34572 submarine; 34574 battleship [warship]; 34577 minesweeper [ship]; 34597 gunboat; 34703 cruiser [warship]; 34705 patrol boat; 34706 landing craft; 49091 destroyer [warship]
+
+T military_aircraft | military aircraft
+W: 21468 Spitfire [aircraft]; 34601 fighter jet; 34602 bomber [aircraft]; 34608 stealth bomber; 47256 Harrier [jet]; 47257 Apache [helicopter]; 49088 helicopter gunship; 49089 Black Hawk [helicopter]; 49090 Chinook [helicopter]; 49100 Warthog [A-10 jet]; 49101 warplane; 49108 Predator drone [drone]; 60764 Stuka
+
+T army_ground_vehicles | army ground vehicles
+W: 3123 armored car; 3125 tank [military vehicle]; 49083 Humvee; 49084 personnel carrier; 49085 APC; 49093 self-propelled gun; 49094 half-track; 49095 tank destroyer; 49096 Sherman [tank]; 49097 Abrams [tank]; 49098 Panzer; 49099 Tiger [tank]; 49105 Stryker; 49106 Bradley [fighting vehicle]; 49107 T-34; 49260 main battle tank; 60761 Merkava; 60762 Leopard 2; 60763 Challenger 2
+G: 3125 49260
+
+T delivery_vehicles | delivery vehicles
+W: 2640 pickup truck; 2682 tuk-tuk; 2683 auto rickshaw; 3121 ice cream truck; 3145 food truck; 3146 flatbed truck; 3150 mail truck; 3152 milk float; 29601 moped; 40185 dray; 46631 van [vehicle]; 47011 pedicab; 47892 cargo bike; 49110 box truck; 49111 cargo van; 49112 courier van; 49113 postal van; 49114 bike courier; 49115 drone; 49116 robot; 49117 bread van; 49118 pizza delivery car; 49119 parcel truck; 49120 UPS truck [delivery truck]; 49121 FedEx van; 49122 DHL van; 49123 Amazon van; 49124 Royal Mail van; 49125 armored truck; 49126 refrigerated truck; 49127 moving truck; 49128 U-Haul [truck]; 49129 furniture van; 49130 cargo trike; 49131 Sprinter van; 49132 newspaper truck; 49133 freight van; 49134 sidewalk robot; 49136 Transit van [delivery van]; 49197 water truck; 49254 flatbed; 60766 Piaggio Ape; 67182 moving van
+G: 2682 2683; 49254 3146; 49127 49128; 49116 49134
+
+T space_vehicles | space vehicles
+W: 3136 lunar rover; 7119 rocket [spacecraft]; 7120 satellite [space]; 7124 spaceship; 7125 starship [spaceship]; 7126 spacecraft; 7141 space station; 7169 Sputnik; 41223 Challenger [space shuttle]; 41224 Columbia [space shuttle]; 41225 Discovery [space shuttle]; 41226 Endeavour [space shuttle]; 41229 Skylab; 41230 Mir [space station]; 41231 Salyut; 41234 Perseverance [rover]; 41237 Sojourner [rover]; 42577 capsule [spacecraft]; 42578 booster [rocket]; 49138 moon buggy; 49139 Mars rover; 49141 lander [spacecraft]; 49142 lunar module; 49143 ISS [space station]; 49144 Soyuz [spacecraft]; 49145 Apollo [spacecraft]; 49146 Saturn V [rocket]; 49147 Falcon 9 [rocket]; 49149 Voyager [space probe]; 49150 Atlantis [space shuttle]; 49151 Curiosity [rover]; 49152 Orion [spacecraft]; 49153 Gemini [spacecraft]; 49154 Mercury [spacecraft]; 49155 Hubble [space telescope]; 49156 orbiter; 49157 space plane; 49158 Millennium Falcon [spaceship]; 49159 Dragon [spacecraft]; 49917 Tiangong; 50483 Vostok; 50484 Voskhod; 50485 Buran; 57567 probe; 62691 SLS; 63990 shuttle [orbiter]
+G: 7124 7126 7125
+
+T horse_drawn_vehicles | horse-drawn vehicles | carriage, wagon, buggy, stagecoach, chariot, hansom cab, sleigh
+W: 20383 chariot; 22973 hansom cab; 22992 stagecoach [vehicle]; 23013 covered wagon; 25016 sleigh [Santa's ride]; 29373 wagon; 40184 gig [carriage]; 40185 dray; 47010 hackney carriage; 48228 dog sled; 48235 pony cart; 48239 troika; 48240 phaeton; 48241 landau; 49064 hay wagon; 49161 carriage [horse-drawn]; 49162 buggy [carriage]; 49163 cart [horse-drawn]; 49164 coach [carriage]; 49165 brougham; 49166 surrey [carriage]; 49167 trap [carriage]; 49168 tumbril; 49169 travois; 49170 chaise [carriage]; 49171 barouche; 49172 curricle; 49173 dogcart; 49174 jaunting car; 49175 vardo; 49176 wain; 49177 victoria [carriage]; 49178 caleche; 49180 omnibus [horse-drawn]; 49181 cabriolet [carriage]; 49182 Conestoga wagon; 49183 Concord coach; 50129 sulky [cart]
+
+T truck_types | truck types | pickup, semi, dump truck, tow truck, flatbed, tanker, box truck
+W: 2640 pickup; 2655 school bus [yellow vehicle]; 3108 cement mixer; 3113 garbage; 3121 ice cream; 3144 monster; 3145 food; 3150 mail; 3161 road train; 3162 tractor trailer; 30262 logging; 49110 box; 49125 armored; 49127 moving; 49128 U-Haul [truck]; 49184 delivery; 49186 big rig; 49187 18-wheeler; 49188 tractor unit; 49189 car transporter; 49190 car carrier; 49191 stake; 49192 crew cab; 49193 dually; 49194 low loader; 49195 bucket; 49196 fuel; 49197 water; 49198 cab-over [truck]; 49199 chassis cab; 49200 panel; 49201 concrete; 49254 flatbed; 49255 tanker [truck]; 62692 fire engine [emergency]; 62693 wrecker [tow]; 63991 dumper [tipping]; 63993 reefer [chilled cargo]
+G: 49189 49190; 49127 49128
+
+T electric_vehicles | electric vehicles
+W: 188 Tesla [car company]; 2652 streetcar; 2675 trolleybus; 3137 golf cart; 3152 milk float; 7356 Segway; 7369 hoverboard; 7370 e-scooter; 23150 car [automobile]; 28280 bike; 46641 hybrid [car]; 46882 bus; 48055 kick scooter; 48058 mobility scooter; 49219 plug-in hybrid; 49220 truck; 49221 motorbike; 49222 van; 49223 charging station; 49224 Nissan Leaf; 49225 Chevy Bolt; 49226 Tesla Model 3; 49227 Tesla Model S; 49228 Cybertruck; 49229 BMW i3; 49230 Rivian; 49231 Polestar; 49232 Renault Zoe; 49233 Hyundai Ioniq; 49234 Kia EV6; 49235 Porsche Taycan; 49236 Mustang Mach-E; 49237 Audi e-tron; 49238 Jaguar I-Pace; 49239 Lucid Air; 49240 F-150 Lightning; 49241 Fiat 500e; 49242 BYD; 49243 Mercedes EQS; 49244 Smart EQ; 49245 GM EV1; 49246 Tesla Roadster; 49247 electric vehicle; 49250 solar car; 60767 Rimac Nevera; 60768 Zeekr; 60769 NIO; 60770 VinFast; 60771 Sinclair C5; 60772 Renault Twizy; 60773 G-Wiz; 63994 e-bike [electric cycle]
+G: 63994 28280; 188 49226 49227 49246
+
+T battery_powered_cars | battery-powered cars
+W: 49224 Nissan Leaf; 49225 Chevy Bolt; 49226 Tesla Model 3; 49227 Tesla Model S; 49228 Cybertruck; 49229 BMW i3; 49232 Renault Zoe; 49233 Hyundai Ioniq; 49234 Kia EV6; 49235 Porsche Taycan; 49236 Mustang Mach-E; 49237 Audi e-tron; 49238 Jaguar I-Pace; 49239 Lucid Air; 49240 F-150 Lightning; 49241 Fiat 500e; 49243 Mercedes EQS; 49244 Smart EQ; 49245 GM EV1; 49246 Tesla Roadster; 60767 Rimac Nevera; 60771 Sinclair C5; 60772 Renault Twizy; 60773 G-Wiz
+
+T types_of_public_transport | types of public transport | kinds of public transport a person can ride: bus, train, tram, subway, ferry, taxi, cable car
+W: 2646 bus [public vehicle]; 2647 subway [train]; 2652 streetcar; 2654 ferry; 2669 light rail; 2670 monorail; 2671 minibus; 2674 coach [bus]; 2675 trolleybus; 2682 tuk-tuk; 2683 auto rickshaw; 2684 rickshaw; 2685 jeepney; 2686 matatu; 2687 funicular; 2691 water bus; 2866 bullet train; 2867 shinkansen [bullet train]; 39524 train [vehicle]; 40088 taxi; 40089 cab [yellow taxi]; 47014 water taxi; 47041 cable car; 47042 gondola [lift]
+G: 40088 40089; 2682 2683; 2866 2867
+
+T modes_of_transport | modes of transport | ways of getting around: car, bus, train, plane, boat, bike, on foot
+W: 2646 bus [public vehicle]; 2647 subway [train]; 2652 streetcar; 2654 ferry; 2707 airplane; 2709 plane [aircraft]; 2710 aircraft [flying vehicle]; 2712 helicopter; 2713 chopper; 2778 ship; 2779 boat [vessel]; 2781 canoe; 2782 kayak; 3155 hovercraft; 5954 scooter; 7356 Segway; 15808 walking; 23150 car [automobile]; 28280 bike; 28334 truck [vehicle]; 29601 moped; 34572 submarine; 39524 train [vehicle]; 39769 hot air balloon; 39770 montgolfier; 40088 taxi; 40089 cab [yellow taxi]; 40174 motorcycle; 43578 skateboard [skating]; 46631 van [vehicle]; 47041 cable car; 67182 moving van
+G: 39769 39770; 2712 2713; 40088 40089; 2707 2710 2709
+
+T body_parts | body parts
+W: 166 chest [body part]; 168 back [body part]; 169 waist; 170 hip [body part]; 172 navel [body part]; 173 belly button; 174 abdomen; 176 buttocks; 178 butt; 179 ass [buttocks]; 3168 head [body]; 3169 neck [body part]; 3170 shoulder [body part]; 3171 arm [body]; 3172 elbow; 3173 wrist; 3175 finger [body part]; 3176 thumb; 3177 leg [body part]; 3178 knee; 3179 ankle [body part]; 3180 foot [body]; 3181 toe; 3182 face [body part]; 3183 nose [body part]; 3184 mouth [body part]; 3185 eye [body part]; 3186 ear; 3187 chin [body part]; 3188 forehead; 3189 skin [body part]; 3190 hair; 3191 thigh; 3192 armpit; 3193 underarm; 3194 axilla; 3195 stomach; 3196 tummy; 3197 tum; 3198 groin [body part]; 3199 calf [leg]; 3200 shin; 3201 palm [hand]; 3202 knuckle; 3203 eyebrow; 3204 eyelid; 3205 lip; 3206 tongue [body part]; 3207 throat [body part]; 3208 torso; 3209 scalp; 3210 jaw; 3211 nostril; 3212 heel [foot]; 3213 sole [foot]; 3214 temple [head]; 3215 instep; 3216 Adam's apple; 3217 earlobe; 3218 kneecap; 3219 shoulder blade; 3220 funny bone; 3221 midriff; 3222 flank [body part]; 3223 limb; 3224 digit [finger]; 3225 nape; 3226 scruff [neck]; 3227 haunch; 3228 fontanelle; 3229 philtrum; 3230 glabella; 3231 lunula; 3232 hallux; 3233 big toe; 3234 frenulum; 3235 occiput; 3236 small of the back; 3237 ball of the foot
+G: 3225 3226; 172 173; 3232 3233; 3192 3194 3193; 3195 3196 3197; 176 179 178
+
+T face | face parts
+W: 3183 nose [body part]; 3184 mouth [body part]; 3185 eye [body part]; 3187 chin [body part]; 3188 forehead; 3203 eyebrow; 3204 eyelid; 3205 lip; 3210 jaw; 3211 nostril; 3214 temple [head]; 3229 philtrum; 3230 glabella; 14195 cheek [face]; 14196 eyelash; 14197 dimple; 14198 cheekbone; 14199 brow [face]; 14200 jawline; 14201 jowl; 14202 bridge of the nose; 14203 crow's feet; 14204 laugh lines; 14205 visage; 14206 countenance; 14207 mug [face]; 14208 tragus [face]; 14209 nasolabial fold; 14210 zygomatic arch
+G: 14205 14206
+
+T hands_and_feet | hands and feet
+W: 3173 wrist; 3175 finger [body part]; 3176 thumb; 3179 ankle [body part]; 3180 foot [body]; 3181 toe; 3201 palm [hand]; 3202 knuckle; 3212 heel [foot]; 3213 sole [foot]; 3215 instep; 3231 lunula; 3232 hallux; 3233 big toe; 3237 ball of the foot; 9138 cuticle [nail]; 14211 fingernail; 14212 toenail; 14213 little toe; 14214 arch [foot]; 14215 fist; 14216 fingertip; 14217 webbing [hand]; 14218 pinky toe; 14219 metacarpal; 14220 metatarsal; 14221 phalanges; 14222 phalanx; 14223 carpals; 14224 tarsals; 14225 thenar; 14226 hypothenar
+G: 14221 14222; 3232 3233; 14213 14218
+
+T hand_parts | hand parts | the parts of a hand: palm, fingers, thumb, knuckles, fingernails, wrist
+W: 3173 wrist; 3175 finger [body part]; 3176 thumb; 3201 palm [hand]; 3202 knuckle; 3231 lunula; 4225 fingerprint; 9138 cuticle [nail]; 14211 fingernail; 14216 fingertip; 14217 webbing [hand]; 14219 metacarpal; 14221 phalanges; 14223 carpals; 14225 thenar; 14226 hypothenar; 14376 index finger; 14377 forefinger; 14380 middle finger; 14382 ring finger; 14385 pinky; 16261 hangnail; 67261 nail bed; 67262 palm line; 67263 finger pad; 67264 ball of the thumb; 67265 tendon [hand]; 67266 skin [hand]
+
+T foot_parts | foot parts | the parts of a foot: toes, heel, sole, arch, ankle, instep
+W: 3179 ankle [body part]; 3181 toe; 3212 heel [foot]; 3213 sole [foot]; 3215 instep; 3232 hallux; 3233 big toe; 14212 toenail; 14213 little toe; 14214 arch [foot]; 14218 pinky toe; 14220 metatarsal; 14224 tarsals; 14339 callus [skin]; 14391 talus; 14392 calcaneus; 67267 achilles tendon; 67268 toe pad; 67270 bunion; 67271 plantar fascia; 67272 webbing [toes]
+
+T arms_and_legs | arms and legs
+W: 170 hip [body part]; 3170 shoulder [body part]; 3171 arm [body]; 3172 elbow; 3173 wrist; 3177 leg [body part]; 3178 knee; 3191 thigh; 3192 armpit; 3193 underarm; 3194 axilla; 3199 calf [leg]; 3200 shin; 3218 kneecap; 3220 funny bone; 3223 limb; 3285 femur; 3286 thigh bone; 9602 forearm; 14227 upper arm; 14230 hamstring; 14231 lower leg; 14232 quadriceps; 14233 crook of the arm; 14234 inner thigh; 14235 gastrocnemius; 14236 humerus; 14237 ulna; 14238 radius [bone]; 14239 tibia [leg bone]; 14240 shinbone; 14241 fibula [bone]; 14242 popliteal fossa; 14243 antecubital fossa; 14369 biceps; 14421 triceps
+G: 3285 3286; 3192 3194 3193; 14239 14240
+
+T torso | torso
+W: 166 chest [body part]; 167 belly [stomach]; 168 back [body part]; 169 waist; 170 hip [body part]; 171 ribs [body]; 172 navel [body part]; 173 belly button; 174 abdomen; 175 spine [body part]; 176 buttocks; 178 butt; 179 ass [buttocks]; 3170 shoulder [body part]; 3195 stomach; 3196 tummy; 3197 tum; 3221 midriff; 3222 flank [body part]; 3236 small of the back; 3283 sternum; 3284 breastbone; 3620 abs [abdominals]; 3621 abdominals; 3622 six-pack; 9126 thorax; 14244 rib cage; 14245 breast [body]; 14247 lower back; 14248 upper back; 14249 trunk [body]; 14250 love handles; 14251 pecs; 14252 loin [torso]; 14253 solar plexus; 14254 collarbone; 14255 clavicle; 14256 scapula; 14257 epigastrium; 14258 hypochondrium
+G: 3620 3621 3622; 172 173; 3283 3284; 3195 3196 3197; 176 179 178
+
+T joints | joints | elbow, knee, ankle, wrist, hip, shoulder, knuckle, jaw
+W: 170 hip [body part]; 3169 neck [body part]; 3170 shoulder [body part]; 3172 elbow; 3173 wrist; 3178 knee; 3179 ankle [body part]; 3202 knuckle; 3210 jaw; 3218 kneecap; 3274 ligament; 3275 cartilage; 14259 joint [body]; 14260 ball and socket; 14262 pivot; 14263 socket [joint]; 14264 synovial fluid; 14265 bursa [joint sac]; 14266 meniscus; 14267 rotator cuff; 14269 TMJ; 14270 gliding; 14271 saddle; 14273 facet; 23713 hinge; 62694 condyloid (adjective); 62695 sacroiliac (adjective)
+
+T hair | hair
+W: 14274 bangs; 14276 ponytail; 14277 braid; 14279 curls; 14280 bun [hair]; 14281 pigtails; 14282 mullet [haircut]; 14283 mohawk [haircut]; 14284 afro; 14285 bob [haircut]; 14286 buzz cut; 14287 crew cut; 14288 dreadlocks; 14290 beard; 14291 moustache; 14293 sideburns; 14294 goatee; 14295 stubble; 14296 bald [hairless] (adjective); 14297 wig; 14298 blonde [hair]; 14299 brunette; 14300 redhead [person]; 14301 cornrows; 14302 pompadour; 14303 beehive [hairstyle]; 14304 pixie cut; 14305 undercut [haircut]; 14306 perm [hair]; 14307 tonsure; 14308 comb-over; 14309 chignon; 14310 French twist; 14311 fishtail braid; 14312 Mohican; 14314 dandruff; 14315 cowlick; 14316 handlebar moustache; 14317 mutton chops; 14318 soul patch; 14319 topknot [hairstyle]; 14320 bouffant; 14321 quiff; 14322 sleek (adjective); 14323 shag [haircut]; 14324 marcel wave; 62696 follicle
+
+T hairstyles | hairstyles
+W: 14274 bangs; 14276 ponytail; 14277 braid; 14280 bun [hair]; 14281 pigtails; 14282 mullet [haircut]; 14283 mohawk [haircut]; 14284 afro; 14285 bob [haircut]; 14286 buzz cut; 14287 crew cut; 14288 dreadlocks; 14301 cornrows; 14302 pompadour; 14303 beehive [hairstyle]; 14304 pixie cut; 14305 undercut [haircut]; 14306 perm [hair]; 14307 tonsure; 14308 comb-over; 14309 chignon; 14311 fishtail braid; 14319 topknot [hairstyle]; 14320 bouffant; 14321 quiff; 14324 marcel wave; 53017 bowl cut; 53018 flat top; 53019 french braid; 53021 updo; 53022 pageboy; 53023 rat tail [hairstyle]; 53024 man bun; 53025 finger waves
+
+T beard_styles | beard styles
+W: 14291 moustache; 14293 sideburns; 14294 goatee; 14295 stubble; 14316 handlebar moustache; 14317 mutton chops; 14318 soul patch; 16336 five o'clock shadow; 53026 full; 53027 chin strap; 53028 Van Dyke [beard]; 53029 designer stubble; 53030 circle; 53031 balbo; 53032 anchor; 53033 Garibaldi [beard]; 53034 long; 53035 ducktail [beard]; 53036 pencil mustache; 53037 walrus mustache; 53038 toothbrush mustache; 53039 horseshoe mustache; 53040 Fu Manchu [mustache]; 53041 whiskers [beard]; 53042 imperial; 53043 spade; 53044 neckbeard
+
+T hair_colors | hair colors
+W: 5 blue [color]; 7666 pink [color] (adjective); 7667 brown [color] (adjective); 7668 black [color] (adjective); 7669 jet [color] (adjective); 7670 sable [color] (adjective); 7671 white [color] (adjective); 7672 gray [color] (adjective); 7675 golden [gold] (adjective); 7676 silver [color] (adjective); 7715 mahogany [color] (adjective); 7717 auburn (adjective); 7741 titian [color] (adjective); 9538 flaxen (adjective); 14298 blonde [hair]; 14299 brunette; 14300 redhead [person]; 29937 Sandy; 29938 Raven [color]; 38626 chestnut [color]; 38639 copper [color]; 50222 ginger [hair colour]; 53046 strawberry blonde; 53047 platinum blonde; 53048 dirty blonde; 53049 salt and pepper [hair]; 53050 jet black; 53051 mousy (adjective); 53053 ash blonde; 53054 towheaded (adjective); 53055 bleached [hair] (adjective); 53056 peroxide blonde; 53057 graying (adjective)
+G: 7668 7670 53050 7669
+
+T blonde_shades | blonde shades
+W: 53046 strawberry; 53047 platinum; 53048 dirty; 53053 ash; 53056 peroxide
+
+T skin_words | skin words
+W: 3189 skin [body part]; 3390 eczema; 9138 cuticle [nail]; 14325 pore; 14326 freckle; 14327 wrinkle; 14328 mole [skin]; 14329 scar; 14330 bruise; 14331 blister [skin bubble]; 14332 rash; 14333 pimple; 14334 zit; 14336 acne; 14337 sunburn; 14338 tan [skin]; 14339 callus [skin]; 14340 goosebumps; 14342 epidermis; 14343 dermis; 14344 blackhead; 14345 whitehead; 14346 birthmark; 14347 stretch marks; 14348 wart; 14349 complexion; 14350 sebum; 14351 melanin; 14352 keratin; 14353 collagen; 14354 hypodermis; 14355 sweat gland; 14356 sebaceous gland; 14357 psoriasis; 14358 dermatitis; 14359 hives; 14360 cyst [skin]; 14361 stratum corneum; 14362 keloid; 14363 vitiligo; 14364 rosacea; 14365 melasma; 14366 petechiae
+G: 14333 14334
+
+T paired_body_parts | paired body parts | body parts that come in twos: eye, ear, lung, kidney, knee, elbow
+W: 170 hip [body part]; 3170 shoulder [body part]; 3171 arm [body]; 3172 elbow; 3173 wrist; 3177 leg [body part]; 3178 knee; 3179 ankle [body part]; 3180 foot [body]; 3185 eye [body part]; 3186 ear; 3191 thigh; 3199 calf [leg]; 3203 eyebrow; 3204 eyelid; 3211 nostril; 3218 kneecap; 3219 shoulder blade; 3239 lung; 3241 kidney [organ]; 3247 rib [bone]; 3262 tonsils; 3288 adrenal gland; 3316 eardrum; 14195 cheek [face]; 14254 collarbone; 14367 testicle; 14368 ovary [organ]; 14369 biceps; 14370 fallopian tube; 14371 salivary gland; 14372 carotid artery; 14373 optic nerve; 14374 cerebral hemisphere; 14375 parathyroid
+
+T fingers | fingers | thumb, index finger, middle finger, ring finger, little finger
+W: 3176 thumb; 14376 index; 14377 forefinger; 14378 Pointer; 14381 longest finger; 14382 ring; 14383 fourth finger; 14385 pinky; 65737 little [smallest digit]; 65738 middle [central digit]
+G: 14378 14377 14376; 65738 14381; 14382 14383; 65737 14385
+
+T inside_the_body | inside the body
+W: 175 spine [body part]; 3195 stomach; 3196 tummy; 3197 tum; 3238 heart [organ]; 3239 lung; 3240 liver; 3241 kidney [organ]; 3242 brain; 3243 bone; 3244 muscle [body tissue]; 3245 blood [body fluid]; 3246 skull; 3247 rib [bone]; 3248 skeleton [body]; 3249 vein [blood vessel]; 3250 artery; 3251 nerve [body]; 3252 intestine; 3253 gut; 3254 bowel; 3255 bladder [organ]; 3256 appendix [organ]; 3257 spleen; 3258 pancreas; 3259 gallbladder; 3260 colon [intestine]; 3261 rectum; 3262 tonsils; 3263 oesophagus; 3265 gullet; 3266 windpipe; 3267 trachea; 3268 diaphragm [body]; 3269 thyroid [gland]; 3270 larynx; 3271 voice box; 3272 bone marrow; 3273 tendon [body part]; 3274 ligament; 3275 cartilage; 3276 gland; 3277 tissue [body]; 3278 cell [biology]; 3279 aorta; 3280 capillary [blood vessel]; 3281 pelvis; 3282 vertebra; 3283 sternum; 3284 breastbone; 3285 femur; 3286 thigh bone; 3287 lymph node; 3288 adrenal gland; 3289 bile; 3290 pharynx; 3291 duodenum; 3292 ventricle [heart]; 3293 atrium [heart]; 3294 pituitary gland; 3295 hypothalamus; 3296 gizzard; 3297 jejunum; 3298 ileum; 3299 epiglottis; 3300 alveoli; 3301 bronchi; 3302 uvula; 3303 coccyx; 3304 tailbone; 3305 sciatic nerve; 3306 fascia [body tissue]; 3307 sinuses; 3308 mucus
+G: 3303 3304; 3266 3267; 3285 3286; 3283 3284; 3263 3265; 3252 3254 3253; 3270 3271; 3195 3196 3197
+
+T bones | bones
+W: 175 spine [body part]; 3218 kneecap; 3246 skull; 3247 rib [bone]; 3248 skeleton [body]; 3281 pelvis; 3282 vertebra; 3284 breastbone; 3285 femur; 3304 tailbone; 9131 mandible; 14219 metacarpal; 14221 phalanges; 14222 phalanx; 14236 humerus; 14237 ulna; 14238 radius [bone]; 14240 shinbone; 14241 fibula [bone]; 14254 collarbone; 14255 clavicle; 14256 scapula; 14388 jawbone; 14389 patella; 14390 sacrum; 14391 talus; 14392 calcaneus; 14393 hyoid; 14394 stapes; 14395 malleus; 14396 incus; 14397 anvil [ear bone]; 14398 maxilla; 14399 sphenoid; 14400 ethmoid; 14401 scaphoid; 14402 trapezium [wrist bone]; 14403 hamate; 50189 Cranium [skull]; 50259 hammer [ear bone]; 50260 stirrup [ear bone]
+G: 14221 14222; 14395 50259; 14394 50260; 14396 14397; 3246 50189
+
+T sections_of_the_spine | sections of the spine | cervical, thoracic, lumbar, sacral, coccyx
+W: 3303 coccyx; 3304 tailbone; 14390 sacrum; 53059 neck vertebrae (adjective); 67004 cervical; 67005 thoracic; 67006 lumbar; 67007 sacral
+G: 67004 53059; 3303 3304
+
+T organs | organs
+W: 3185 eye [body part]; 3189 skin [body part]; 3195 stomach; 3196 tummy; 3197 tum; 3206 tongue [body part]; 3238 heart [organ]; 3239 lung; 3240 liver; 3241 kidney [organ]; 3242 brain; 3252 intestine; 3253 gut; 3254 bowel; 3255 bladder [organ]; 3256 appendix [organ]; 3257 spleen; 3258 pancreas; 3259 gallbladder; 3260 colon [intestine]; 3263 oesophagus; 3265 gullet; 3267 trachea; 3269 thyroid [gland]; 3270 larynx; 3271 voice box; 3287 lymph node; 3288 adrenal gland; 3290 pharynx; 3291 duodenum; 3294 pituitary gland; 3296 gizzard; 3536 placenta; 14368 ovary [organ]; 14375 parathyroid; 14404 small intestine; 14405 large intestine; 14406 uterus; 14407 thymus; 14408 prostate; 14409 testes; 14410 pineal gland; 14411 omentum
+G: 3263 3265; 3252 3254 3253; 3270 3271; 3195 3196 3197
+
+T muscles | muscles
+W: 3268 diaphragm [body]; 3620 abs [abdominals]; 3621 abdominals; 3622 six-pack; 14230 hamstring; 14232 quadriceps; 14235 gastrocnemius; 14251 pecs; 14267 rotator cuff; 14369 biceps; 14412 calf [muscle]; 14413 glutes; 14414 deltoid [muscle]; 14415 trapezius; 14417 latissimus dorsi; 14419 gluteus maximus; 14420 obliques; 14421 triceps; 14422 pectoralis major; 14423 rectus abdominis; 14424 soleus; 14425 sartorius; 14426 masseter; 14427 rhomboid [muscle]; 14428 brachialis; 14429 psoas; 14430 iliopsoas; 14431 gluteus medius; 14432 tibialis anterior; 14433 serratus anterior; 14434 transverse abdominis; 14435 external oblique; 14436 adductor; 14437 teres major; 14438 infraspinatus; 14439 supraspinatus; 14440 orbicularis oculi; 14441 platysma; 14442 sphincter; 14444 abductor; 14445 pronator; 62697 myocardium
+G: 3620 3621 3622
+
+T blood_words | blood words
+W: 3238 heart [organ]; 3245 blood [body fluid]; 3249 vein [blood vessel]; 3250 artery; 3272 bone marrow; 3279 aorta; 3280 capillary [blood vessel]; 3388 anemia; 3832 cholesterol; 14446 pulse [heartbeat]; 14447 blood pressure; 14448 blood type; 14449 plasma [blood]; 14450 platelet; 14451 white cell; 14452 red cell; 14453 hemoglobin; 14455 clot; 14456 transfusion; 14457 bleed (verb); 14458 circulation [blood]; 14459 type O; 14460 Rh factor; 14461 antibody; 14462 leukocyte; 14463 erythrocyte; 14464 thrombocyte; 14465 serum [blood]; 14466 hematocrit; 14467 lymphocyte; 14468 neutrophil; 14470 coagulation; 14471 hemophilia; 14473 blood vessel; 14474 fibrin; 14475 donor [blood]; 14476 A positive; 14477 AB negative; 14478 universal donor; 14479 eosinophil; 14480 basophil; 14481 monocyte
+
+T blood_components | blood components | Exactly: plasma, platelet, red blood cells, white blood cells.
+W: 14449 plasma [blood]; 14450 platelet; 53063 red blood cells; 53064 erythrocytes; 53066 white blood cells; 53067 leukocytes
+G: 53063 53064; 53066 53067
+
+T teeth | teeth
+W: 10328 tusk; 10333 fang; 14482 tooth; 14483 molar; 14484 canine [tooth]; 14485 incisor; 14486 wisdom tooth; 14487 baby tooth; 14489 premolar; 14490 enamel; 14491 gum [mouth]; 14493 filling [tooth]; 14494 crown [tooth]; 14495 root canal; 14496 braces [dental]; 14499 dentin; 14500 pulp [tooth]; 14501 eyetooth; 14502 cuspid; 14503 bicuspid; 14504 denture; 14506 implant [dental]; 14507 retainer [dental]; 14508 cementum; 14509 tooth socket; 14510 gingiva; 14511 third molar; 14512 bridge [dental]; 14513 buck tooth; 14515 gap tooth; 14516 periodontal ligament; 14517 dental floss; 14518 alveolar bone; 14519 bite [teeth]; 15413 cavity [tooth]; 15415 plaque [dental]; 15420 tartar [teeth]
+G: 14501 14502; 14486 14511
+
+T tooth_types | tooth types | Exactly: molar, canine, incisor, premolar.
+W: 14483 molar; 14484 canine [tooth]; 14485 incisor; 14489 premolar
+
+T brain_parts | brain parts
+W: 3242 brain; 3294 pituitary gland; 3295 hypothalamus; 14410 pineal gland; 14520 cerebrum; 14521 cerebellum; 14522 brain stem; 14523 cortex; 14524 hippocampus [brain part]; 14525 amygdala; 14526 thalamus; 14527 frontal lobe; 14528 temporal lobe; 14529 parietal lobe; 14530 occipital lobe; 14531 corpus callosum; 14532 medulla; 14533 pons; 14534 gray matter; 14536 white matter; 14537 neuron; 14538 synapse; 14539 basal ganglia; 14540 midbrain; 14541 forebrain; 14542 hindbrain; 14543 cerebral cortex; 14544 prefrontal cortex; 14545 limbic system; 14546 meninges; 14547 ventricle [brain]; 14548 Broca's area; 14549 Wernicke's area; 14550 amygdalae; 14551 dura mater; 14552 olfactory bulb; 14553 striatum; 14554 insula [brain part]; 14555 substantia nigra; 14556 fusiform gyrus; 14557 gyrus; 14558 sulcus; 14559 spinal cord; 14560 brainstem; 14561 motor cortex; 14562 visual cortex; 50248 hemisphere [brain]
+
+T brain_lobes | brain lobes | Exactly: frontal, occipital, parietal, temporal.
+W: 62698 frontal (adjective); 62699 occipital (adjective); 62700 parietal (adjective); 62701 temporal (adjective)
+
+T cortex_areas | cortex areas
+W: 14543 cerebral; 14544 prefrontal; 14561 motor; 14562 visual
+
+T body_systems | body systems | digestive, nervous, circulatory, respiratory, skeletal, immune
+W: 3329 sensory (adjective); 3848 metabolism; 14458 circulation [blood]; 14563 digestive; 14564 nervous; 14576 central nervous system; 14580 GI tract; 14581 CNS; 14583 blood; 14584 respiration; 14585 digestion; 14586 immune response; 14588 enteric nervous system; 14589 special senses; 62702 cardiovascular (adjective); 62703 circulatory (adjective); 62704 endocrine (adjective); 62705 excretory (adjective); 62706 immune (adjective); 62707 integumentary (adjective); 62708 limbic (adjective); 62709 lymphatic (adjective); 62710 muscular (adjective); 62711 renal (adjective); 62712 reproductive (adjective); 62713 respiratory (adjective); 62714 skeletal (adjective); 62715 urinary (adjective); 62716 vascular (adjective)
+
+T hormones | hormones
+W: 3700 melatonin; 14590 insulin; 14591 adrenaline; 14592 epinephrine; 14593 estrogen; 14595 testosterone; 14596 progesterone; 14597 cortisol; 14598 serotonin; 14599 dopamine; 14600 oxytocin; 14601 thyroxine; 14602 glucagon; 14603 growth; 14604 endorphin; 14605 leptin; 14606 ghrelin; 14607 prolactin; 14608 norepinephrine; 14610 aldosterone; 14611 vasopressin; 14612 calcitonin; 14613 parathyroid hormone; 14614 gastrin; 14615 secretin; 14616 erythropoietin; 14618 FSH; 14619 luteinizing hormone; 14621 HCG; 14622 androgen; 14623 thyroid; 14624 relaxin; 14625 renin; 14626 cholecystokinin; 14627 somatostatin; 14628 ACTH; 60774 angiotensin; 60775 adiponectin; 60776 inhibin; 60777 orexin; 60778 DHEA; 60779 estradiol; 62717 ADH; 62718 HGH
+G: 14591 14592
+
+T digestive_system | digestive system
+W: 3184 mouth [body part]; 3195 stomach; 3196 tummy; 3197 tum; 3240 liver; 3252 intestine; 3253 gut; 3254 bowel; 3256 appendix [organ]; 3258 pancreas; 3259 gallbladder; 3260 colon [intestine]; 3261 rectum; 3263 oesophagus; 3265 gullet; 3289 bile; 3290 pharynx; 3291 duodenum; 3296 gizzard; 3297 jejunum; 3298 ileum; 8368 crop [bird]; 14371 salivary gland; 14404 small intestine; 14405 large intestine; 14442 sphincter; 14630 anus; 14631 cecum; 14633 stomach acid; 14634 villi; 14635 pylorus; 14636 bile duct; 14637 gastric juice; 14638 enzyme; 14639 saliva; 14640 peristalsis; 14641 rumen; 14642 reticulum [stomach]; 14643 omasum; 14644 abomasum; 14646 chyme; 14647 sigmoid colon; 14648 transverse colon; 65743 alimentary canal
+G: 3263 3265; 3252 3254 3253; 3195 3196 3197
+
+T ruminant_stomachs | ruminant stomachs | Exactly: rumen, reticulum, omasum, abomasum.
+W: 14641 rumen; 14642 reticulum [stomach]; 14643 omasum; 14644 abomasum
+
+T plain_names_for_body_parts | plain names for body parts
+W: 3196 tummy; 3197 tum; 3253 gut; 3254 bowel; 3265 gullet; 3266 windpipe; 3271 voice box; 3284 breastbone; 3286 thigh bone; 3304 tailbone
+
+T throat_and_airway_parts | throat and airway parts
+W: 3239 lung; 3262 tonsils; 3266 windpipe; 3267 trachea; 3268 diaphragm [body]; 3270 larynx; 3271 voice box; 3290 pharynx; 3299 epiglottis; 3300 alveoli; 3301 bronchi; 3302 uvula; 3307 sinuses
+
+T senses | senses | the five senses and sense organs: sight, hearing, smell, taste, touch, eye, ear, nose, tongue, skin
+W: 38 sight [sense]; 39 hearing [sense]; 40 smell; 41 taste (verb); 42 touch; 3183 nose [body part]; 3185 eye [body part]; 3186 ear; 3189 skin [body part]; 3206 tongue [body part]; 3211 nostril; 3309 vision; 3310 eyesight; 3311 blind [unable to see] (adjective); 3312 deaf (adjective); 3313 sniff (verb); 3314 sixth sense; 3315 taste buds; 3316 eardrum; 3317 retina [eye part]; 3318 cornea; 3319 pupil [eye]; 3320 night vision; 3321 peripheral vision; 3322 scent; 3323 aroma; 3324 flavor; 3326 texture; 3327 sensation; 3328 perception; 3329 sensory (adjective); 3335 optic (adjective); 3337 receptor; 3338 stimulus; 3339 synesthesia; 3341 echolocation; 3342 perfect pitch; 3343 balance [sense]; 3344 olfaction; 3345 gustation; 3347 proprioception; 3348 thermoception; 3349 nociception; 3350 inner ear; 3351 eyeball; 3352 earwax; 50101 audition [hearing]
+G: 3309 3310
+
+T hearing_words | hearing words
+W: 3312 deaf (adjective); 3331 auditory (adjective); 3336 aural (adjective); 3537 ultrasound; 6094 timbre; 7333 earphones; 11136 loud (adjective); 14694 hear (verb); 14695 listen (verb); 14696 sound [noise]; 14697 noise [sound]; 14698 quiet [silent] (adjective); 14699 whisper; 14700 volume [sound]; 14701 echo [sound]; 14702 eavesdrop (verb); 14703 overhear (verb); 14704 hearing aid [ear device]; 14705 earplug; 14706 deafening (adjective); 14707 audible [can be heard] (adjective); 14708 inaudible (adjective); 14709 muffled (adjective); 14710 pitch [sound]; 14711 decibel; 14712 tinnitus; 14713 audio [sound]; 14714 acoustic [sound quality] (adjective); 14715 hard of hearing (adjective); 14716 tone deaf (adjective); 14717 stone deaf (adjective); 14718 sonic [sound] (adjective); 14719 audiology; 14720 audiometer; 14721 infrasound; 14723 frequency [sound]; 14724 amplify (verb); 14725 reverberate (verb); 14726 resonance; 14727 hush (verb); 14728 din; 14729 racket [noise]; 14730 cacophony; 14731 eavesdropper; 14732 all ears (other); 14733 tune in (verb); 14734 earshot; 14735 hearsay; 41873 hertz [unit]
+
+T ear_parts | ear parts
+W: 3217 earlobe; 3275 cartilage; 3316 eardrum; 3352 earwax; 14394 stapes; 14395 malleus; 14396 incus; 14397 anvil [ear bone]; 14776 middle; 14777 outer; 14779 cochlea; 14780 pinna; 14781 auricle; 14782 eustachian tube; 14783 semicircular canals; 14784 auditory nerve; 14785 tympanic membrane; 14786 ossicles; 14787 oval window; 14788 organ of Corti; 14789 tragus [ear]; 14790 helix [ear]; 14791 antihelix; 14792 lobe [ear]; 14793 cerumen; 14794 hair cells; 14795 utricle; 14796 saccule; 14797 vestibular nerve; 14798 concha; 14799 ear flap; 50098 round window [ear]; 50155 tympanum [eardrum]; 50245 vestibule [ear]; 50246 labyrinth [ear]; 50259 hammer [ear bone]; 50260 stirrup [ear bone]; 62719 auditory canal; 64000 inner
+G: 14395 50259; 14394 50260; 14396 14397
+
+T eye_parts | eye parts
+W: 3203 eyebrow; 3204 eyelid; 3317 retina [eye part]; 3318 cornea; 3319 pupil [eye]; 3351 eyeball; 14196 eyelash; 14373 optic nerve; 14844 iris [eye]; 14845 lens [eye]; 14846 tear duct; 14847 sclera; 14849 conjunctiva; 14850 macula; 14851 fovea; 14852 vitreous humor; 14854 aqueous humor; 14855 choroid; 14856 ciliary body; 14857 blind spot [eye]; 14858 rods [retina]; 14859 cones [retina]; 14860 socket; 14861 lacrimal gland; 14862 tear gland; 14864 pupillary (adjective); 14865 uvea; 14866 zonules; 14867 suspensory ligament; 14868 optic disc; 14869 canthus; 14870 meibomian gland; 14871 lid [eye]; 14872 tear [eye]; 50247 orbit [eye socket]; 64804 White [sclera]
+G: 64804 14847
+
+T the_five_senses | the five senses | sight, hearing, smell, taste, touch
+W: 38 sight [sense]; 39 hearing [sense]; 40 smell; 41 taste (verb); 42 touch
+
+T illnesses | illnesses
+W: 3355 cold [illness]; 3356 head cold; 3357 the sniffles; 3358 lurgy; 3359 flu; 3360 influenza; 3361 grippe; 3362 measles; 3363 mumps; 3364 chickenpox; 3366 cancer [disease]; 3367 diabetes; 3368 asthma; 3369 pneumonia; 3370 bronchitis; 3371 malaria; 3372 tuberculosis; 3374 consumption [tuberculosis]; 3375 cholera; 3376 smallpox; 3377 polio; 3378 typhoid; 3379 plague; 3380 dysentery; 3382 coronavirus; 3383 Covid; 3384 migraine; 3385 arthritis; 3386 stroke [illness]; 3387 epilepsy; 3388 anemia; 3390 eczema; 3391 allergy [illness]; 3392 fever; 3394 pyrexia; 3395 tonsillitis; 3396 appendicitis; 3397 meningitis; 3398 hepatitis; 3399 jaundice; 3400 rabies; 3401 tetanus; 3402 lockjaw; 3403 scurvy; 3404 rickets; 3405 gout; 3406 shingles [illness]; 3408 mono [illness]; 3409 kissing disease; 3410 whooping cough; 3411 strep throat; 3412 food poisoning; 3413 stomach bug; 3416 Delhi belly; 3417 gastroenteritis; 3418 sepsis; 3419 dementia; 3420 ague; 3421 rubella; 3422 German measles; 3423 scarlet fever; 3424 diphtheria; 3425 gangrene; 3426 pleurisy; 3427 lupus; 3428 hernia; 3429 conjunctivitis; 3431 athlete's foot; 3432 cold sore; 3433 ringworm; 3434 scabies; 3435 impetigo; 3436 croup [illness]; 3437 Ebola; 3438 dengue; 3439 lumbago; 3440 quinsy; 3441 dropsy; 3442 pellagra; 3443 beriberi; 3444 kidney stones; 3445 hay fever; 3446 headache; 3447 sore throat; 60799 pertussis
+G: 3355 3356 3357 3358; 3408 3409; 3372 3374; 3359 3361 3360; 3392 3394; 3401 3402; 3383 3382; 3421 3422; 3413 3416; 3410 60799
+
+T common_illnesses | common illnesses
+W: 3355 cold [illness]; 3356 head cold; 3358 lurgy; 3359 flu; 3360 influenza; 3361 grippe; 3362 measles; 3363 mumps; 3364 chickenpox; 3367 diabetes; 3368 asthma; 3369 pneumonia; 3370 bronchitis; 3384 migraine; 3385 arthritis; 3388 anemia; 3390 eczema; 3392 fever; 3394 pyrexia; 3395 tonsillitis; 3405 gout; 3406 shingles [illness]; 3412 food poisoning; 3413 stomach bug; 3416 Delhi belly; 3417 gastroenteritis; 3426 pleurisy; 3429 conjunctivitis; 3436 croup [illness]; 3439 lumbago; 3440 quinsy; 3445 hay fever; 3446 headache; 3447 sore throat; 14873 cough; 14874 stomachache; 14875 tummy ache; 14876 ear infection; 14877 sinusitis; 14878 laryngitis; 14879 indigestion; 14880 constipation; 14881 diarrhea; 14883 the runs; 14885 nausea; 14886 vomiting; 14887 hypertension; 14889 bursitis; 14890 vertigo; 14891 sniffles; 14892 sciatica; 14893 rhinitis; 14894 pharyngitis; 14895 stomach flu; 14958 cystitis; 15102 tendonitis; 60784 gastritis; 60785 dyspepsia
+G: 3355 3356 3358; 3359 3361 3360; 3392 3394; 3413 3416; 14881 14883; 14874 14875
+
+T digestive_problems | digestive problems
+W: 3412 food poisoning; 3413 stomach bug; 3416 Delhi belly; 3417 gastroenteritis; 14874 stomachache; 14875 tummy ache; 14879 indigestion; 14880 constipation; 14881 diarrhea; 14883 the runs; 14885 nausea; 14886 vomiting; 14895 stomach flu; 60784 gastritis; 60785 dyspepsia
+
+T upper_airway_problems | upper airway problems
+W: 3356 head cold; 3395 tonsillitis; 3436 croup [illness]; 3440 quinsy; 3445 hay fever; 3447 sore throat; 14873 cough; 14877 sinusitis; 14878 laryngitis; 14891 sniffles; 14893 rhinitis; 14894 pharyngitis
+
+T childhood_illnesses | childhood illnesses
+W: 3362 measles; 3363 mumps; 3364 chickenpox; 3377 polio; 3395 tonsillitis; 3397 meningitis; 3404 rickets; 3410 whooping cough; 3411 strep throat; 3413 stomach bug; 3421 rubella; 3422 German measles; 3423 scarlet fever; 3424 diphtheria; 3429 conjunctivitis; 3433 ringworm; 3435 impetigo; 3436 croup [illness]; 3542 teething; 3545 colic; 9242 pinworm; 14876 ear infection; 14896 head lice; 14897 nits [lice eggs]; 14898 roseola; 14899 fifth disease; 14900 diaper rash; 14902 cradle cap; 14903 bronchiolitis; 14904 RSV; 14905 slapped cheek; 14906 slapped cheek syndrome; 14907 rotavirus; 14908 Kawasaki disease; 14909 hand-foot-mouth; 14910 febrile seizure; 14911 glue ear; 14912 growing pains; 14913 bedwetting; 14914 epiglottitis; 60786 molluscum; 60787 Reye's syndrome; 60788 tinea capitis; 60799 pertussis
+G: 3421 3422; 3410 60799; 14905 14906
+
+T allergies | allergies
+W: 210 nickel [metal]; 518 egg [food from hens]; 658 wheat [cereal]; 3390 eczema; 3445 hay fever; 14359 hives; 14893 rhinitis; 14916 pollen; 14917 dust mites; 14918 pet dander; 14922 gluten intolerance; 14923 lactose intolerance; 14924 celiac disease; 14936 sneezing; 14937 itchy eyes; 14938 runny nose; 14939 anaphylaxis; 14940 anaphylactic shock; 14941 EpiPen; 14942 antihistamine; 14943 histamine; 14944 allergen; 14945 allergist; 14946 angioedema; 14947 contact dermatitis; 14948 sulfite sensitivity; 14950 food; 14951 allergic rhinitis; 14952 mast cell; 14953 immunoglobulin E; 14954 skin prick test; 15010 bee sting; 15121 penicillin; 16668 dairy [food group]; 16671 fish [food]; 17350 peanut [legume nut]; 17382 sesame; 17383 sesame seed; 30110 latex; 30330 mold [fungus]; 62543 soy; 62720 shellfish; 62721 tree nut; 65744 pollen-food syndrome
+G: 17382 17383; 14893 14951
+
+T infections | infections
+W: 3359 flu; 3360 influenza; 3361 grippe; 3369 pneumonia; 3371 malaria; 3372 tuberculosis; 3374 consumption [tuberculosis]; 3375 cholera; 3378 typhoid; 3382 coronavirus; 3383 Covid; 3397 meningitis; 3398 hepatitis; 3400 rabies; 3401 tetanus; 3402 lockjaw; 3406 shingles [illness]; 3411 strep throat; 3418 sepsis; 3425 gangrene; 3431 athlete's foot; 3433 ringworm; 3435 impetigo; 3438 dengue; 14956 common cold; 14957 UTI; 14958 cystitis; 14959 salmonella; 14960 E. coli; 14962 MRSA; 14963 HIV; 14964 Lyme disease; 14966 cellulitis; 14967 abscess; 14968 norovirus; 14969 giardia; 14970 listeria; 14971 mononucleosis; 14972 bacterial; 14973 viral; 14974 fungal; 14975 anthrax; 14976 leptospirosis; 14977 clostridium difficile; 14978 toxoplasmosis; 14979 schistosomiasis; 14980 trachoma; 14981 leishmaniasis; 14982 campylobacter; 14983 helicobacter pylori; 50249 thrush [infection]; 50250 sty [eye]; 62722 otitis media; 62723 staph; 62724 candidiasis
+G: 3372 3374; 3359 3361 3360; 3401 3402; 3383 3382; 14957 14958
+
+T viral_illnesses | viral illnesses
+W: 3359 flu; 3360 influenza; 3361 grippe; 3382 coronavirus; 3383 Covid; 3398 hepatitis; 3400 rabies; 3406 shingles [illness]; 3438 dengue; 14956 common cold; 14963 HIV; 14968 norovirus; 14971 mononucleosis
+
+T bacterial_illnesses | bacterial illnesses
+W: 3372 tuberculosis; 3374 consumption [tuberculosis]; 3375 cholera; 3378 typhoid; 3401 tetanus; 3402 lockjaw; 3411 strep throat; 3435 impetigo; 14959 salmonella; 14960 E. coli; 14962 MRSA; 14964 Lyme disease; 14966 cellulitis; 14970 listeria; 14975 anthrax; 14976 leptospirosis; 14977 clostridium difficile; 14980 trachoma; 14982 campylobacter; 14983 helicobacter pylori; 62723 staph
+
+T injuries | injuries
+W: 3428 hernia; 3476 stitches; 3477 sutures; 14330 bruise; 14331 blister [skin bubble]; 14337 sunburn; 14984 cut [injury]; 14985 sprain; 14986 fracture; 14987 broken bone; 14988 burn [injury]; 14989 scrape; 14990 graze; 14991 concussion; 14992 black eye [bruised eye]; 14993 nosebleed; 14994 whiplash; 14995 dislocation; 14996 strain [muscle]; 14997 pulled muscle; 14998 torn ligament; 14999 sprained ankle; 15000 splinter; 15002 laceration; 15003 gash; 15004 puncture [wound]; 15005 abrasion; 15006 contusion; 15007 hematoma; 15009 frostbite; 15010 bee sting; 15011 bite [injury]; 15012 tennis elbow; 15013 shin splints; 15014 torn ACL; 15015 ACL tear; 15016 herniated disc; 15017 slipped disc; 15018 pulled hamstring; 15019 charley horse; 15020 bump [injury]; 15021 goose egg; 15022 tendon rupture; 15023 Achilles tear; 15024 rotator cuff tear; 15025 compound fracture; 15026 hairline fracture; 15027 greenstick fracture; 15028 avulsion; 15029 crush; 15030 subluxation; 15031 bone spur; 15032 chilblains; 15033 trench foot; 15104 golfer's elbow; 15109 turf toe; 15112 stress fracture; 28785 wound [injury]; 60789 Colles fracture; 60790 boxer's fracture; 60791 mallet finger
+G: 15016 15017; 3476 3477
+
+T bone_and_joint_injuries | bone and joint injuries
+W: 14986 fracture; 14995 dislocation; 15025 compound fracture; 15026 hairline fracture; 15027 greenstick fracture; 15030 subluxation; 15112 stress fracture; 60789 Colles fracture; 60790 boxer's fracture
+
+T skin_breaking_injuries | skin-breaking injuries
+W: 14984 cut [injury]; 14989 scrape; 14990 graze; 15000 splinter; 15002 laceration; 15003 gash; 15004 puncture [wound]; 15005 abrasion
+
+T soft_tissue_injuries | soft tissue injuries
+W: 14985 sprain; 14994 whiplash; 14996 strain [muscle]; 14997 pulled muscle; 14998 torn ligament; 14999 sprained ankle; 15012 tennis elbow; 15013 shin splints; 15014 torn ACL; 15015 ACL tear; 15018 pulled hamstring; 15019 charley horse; 15022 tendon rupture; 15023 Achilles tear; 15024 rotator cuff tear; 15104 golfer's elbow
+
+T fracture_types | fracture types
+W: 15025 compound; 15026 hairline; 15027 greenstick; 15112 stress; 60789 Colles; 60790 boxer's
+
+T symptoms | illness symptoms
+W: 3392 fever; 3394 pyrexia; 3399 jaundice; 3446 headache; 3447 sore throat; 14332 rash; 14712 tinnitus; 14873 cough; 14881 diarrhea; 14883 the runs; 14885 nausea; 14886 vomiting; 14890 vertigo; 14936 sneezing; 14938 runny nose; 15034 fatigue [illness]; 15035 dizziness; 15036 chills; 15037 swelling; 15038 itching; 15039 wheezing; 15040 cramps; 15041 bloating; 15042 congestion [stuffy nose]; 15043 palpitations; 15044 lethargy; 15045 numbness; 15046 malaise; 15047 photophobia; 15048 dyspnea; 15049 pruritus; 15050 syncope; 15051 cyanosis; 15052 edema
+G: 3392 3394; 14881 14883
+
+T historic_diseases | historic diseases
+W: 3361 grippe; 3362 measles; 3372 tuberculosis; 3374 consumption [tuberculosis]; 3375 cholera; 3376 smallpox; 3377 polio; 3378 typhoid; 3379 plague; 3380 dysentery; 3403 scurvy; 3404 rickets; 3405 gout; 3410 whooping cough; 3420 ague; 3423 scarlet fever; 3424 diphtheria; 3440 quinsy; 3441 dropsy; 15053 leprosy; 15054 Black Death; 15055 bubonic plague; 15056 Spanish flu; 15057 typhus; 15058 yellow fever; 15059 St Anthony's fire; 15060 ergotism; 15061 sweating sickness; 15062 apoplexy; 15063 scrofula; 15064 tabes; 15065 the pox; 60799 pertussis
+G: 3372 3374; 3410 60799; 15054 15055 3379; 15059 15060
+
+T tropical_diseases | tropical diseases
+W: 3371 malaria; 3375 cholera; 3378 typhoid; 3400 rabies; 3437 Ebola; 3438 dengue; 9241 hookworm; 14979 schistosomiasis; 14980 trachoma; 14981 leishmaniasis; 15053 leprosy; 15058 yellow fever; 15066 Zika; 15067 sleeping sickness; 15068 chikungunya; 15069 river blindness; 15070 onchocerciasis; 15071 elephantiasis; 15073 Lassa fever; 15074 guinea worm; 15075 lymphatic filariasis; 15076 yaws; 15077 West Nile virus; 15078 Marburg virus; 15079 Japanese encephalitis; 15080 kala-azar; 15081 Rift Valley fever; 15082 Buruli ulcer; 62725 Chagas; 62726 Lyme
+G: 15069 15070
+
+T cold_weather_ailments | cold weather ailments | frostbite, hypothermia, snow blindness, chilblains, windburn
+W: 3369 pneumonia; 3370 bronchitis; 14956 common cold; 15009 frostbite; 15032 chilblains; 15033 trench foot; 15083 hypothermia; 15084 snow blindness; 15085 windburn; 15086 frostnip; 15087 chapped lips; 15088 dry skin; 15091 Raynaud's; 15092 cold urticaria; 15093 immersion foot; 15094 cold shock; 15095 seasonal depression; 15096 numb fingers; 15097 cracked skin; 15098 cold injury; 15099 rewarming shock; 65745 fever blisters
+
+T sports_injuries | sports injuries
+W: 14330 bruise; 14331 blister [skin bubble]; 14889 bursitis; 14985 sprain; 14986 fracture; 14991 concussion; 14992 black eye [bruised eye]; 14994 whiplash; 14995 dislocation; 14996 strain [muscle]; 14997 pulled muscle; 14998 torn ligament; 15012 tennis elbow; 15013 shin splints; 15015 ACL tear; 15019 charley horse; 15024 rotator cuff tear; 15100 runner's knee; 15101 cramp; 15102 tendonitis; 15104 golfer's elbow; 15105 hamstring tear; 15106 Achilles rupture; 15107 groin strain; 15108 plantar fasciitis; 15109 turf toe; 15110 jumper's knee; 15111 meniscus tear; 15112 stress fracture; 15113 cauliflower ear; 15114 stinger [nerve injury]; 15115 labral tear; 15116 compartment syndrome
+
+T medicine | medical words
+W: 2466 hospital [medical building]; 3088 ambulance; 3448 doctor; 3449 nurse [health worker]; 3450 surgery [operation]; 3451 patient [medical]; 3452 pill; 3453 vaccine; 3455 shot [vaccine]; 3456 prescription; 3458 antibiotic; 3459 X-ray [medical]; 3460 stethoscope; 3461 thermometer; 3462 syringe; 3463 needle [hypodermic]; 3464 bandage; 3465 dressing [wound]; 3466 diagnosis; 3467 treatment; 3468 therapy; 3469 clinic; 3470 surgeon; 3471 injection; 3472 dose; 3473 checkup; 3475 scalpel; 3476 stitches; 3477 sutures; 3478 anesthetic; 3480 transplant [medical]; 3481 antidote; 3482 placebo [medicine]; 3483 epidemic; 3484 pandemic [disease]; 3485 clinical trial; 3486 bedside manner; 3488 family doctor; 3489 general practitioner; 3490 paramedic; 3491 intensive care; 3492 triage; 3493 prognosis; 3494 remission; 3495 biopsy; 3496 MRI; 3497 CT scan; 3498 defibrillator; 3499 pacemaker; 3500 locum; 3501 pathology; 3502 epidemiology; 3503 pharmacology; 3504 acupuncture; 3505 homeopathy; 3506 hospice [care]; 3507 palliative care; 3508 iatrogenic (adjective); 3509 contraindication; 3510 etiology; 3512 medic; 3513 vital signs; 3514 second opinion; 3515 referral; 3516 dialysis; 3517 chemotherapy; 3519 immunization; 3521 sphygmomanometer; 3522 laparoscopy
+G: 3464 3465; 3476 3477; 3488 3489; 3453 3455
+
+T medicines | medications
+W: 3453 vaccine; 3455 shot [vaccine]; 3458 antibiotic; 14590 insulin; 14942 antihistamine; 15117 aspirin; 15118 ibuprofen; 15120 acetaminophen; 15121 penicillin; 15122 morphine; 15123 painkiller; 15124 codeine; 15125 antacid; 15126 steroid; 15127 amoxicillin; 15128 statin; 15129 antidepressant; 15130 laxative; 15131 decongestant; 15132 cortisone; 15133 warfarin; 15134 metformin; 15135 omeprazole; 15136 salbutamol; 15137 beta blocker; 15138 diazepam; 15139 tramadol; 15140 atorvastatin; 15141 lisinopril; 15142 levothyroxine; 15143 sertraline; 15144 doxycycline; 15145 loratadine; 15146 Tylenol; 15147 Advil; 15148 Prozac; 15149 Zoloft
+G: 3453 3455; 15120 15146; 15118 15147; 15143 15149
+
+T forms_of_medicine | forms of medicine | pill, capsule, syrup, ointment, drops, inhaler, injection, patch, lozenge
+W: 3452 pill; 3471 injection; 7036 elixir [potion]; 15150 tablet [medicine]; 15151 capsule [medicine]; 15152 syrup [medicine]; 15153 ointment; 15154 drops [medicine]; 15155 inhaler; 15156 patch [medical]; 15157 lozenge; 15158 cream [medical]; 15159 spray [medical]; 15160 suppository; 15161 gel [medical]; 15162 powder [medical]; 15163 liquid; 15164 tincture [medicine]; 15165 salve; 15166 balm [medical]; 15167 IV drip; 15168 intravenous drip; 15169 nasal spray; 15170 eye drops; 15171 chewable; 15172 effervescent tablet; 15173 pessary; 15174 linctus; 15175 poultice; 15176 caplet; 15177 gelcap; 15178 nebulizer; 15180 transdermal patch; 15181 enema
+G: 15167 15168
+
+T medical_equipment | medical equipment
+W: 3460 stethoscope; 3461 thermometer; 3462 syringe; 3463 needle [hypodermic]; 3464 bandage; 3465 dressing [wound]; 3475 scalpel; 3498 defibrillator; 3499 pacemaker; 3585 forceps; 14704 hearing aid [ear device]; 15167 IV drip; 15168 intravenous drip; 15178 nebulizer; 15182 crutches; 15183 wheelchair; 15184 stretcher [medical]; 15185 blood pressure cuff; 15186 ventilator; 15187 oxygen mask; 15188 otoscope; 15189 catheter; 15190 MRI scanner; 15191 X-ray machine; 15192 ultrasound machine; 15193 pulse oximeter; 15194 reflex hammer; 15195 speculum; 15196 tongue depressor; 15197 cannula; 15198 suture kit; 15199 ECG machine; 15200 endoscope; 15201 ophthalmoscope; 15202 curette; 15203 hemostat; 15204 retractor; 15205 trocar; 15206 dialysis machine; 15207 walking frame
+G: 3464 3465; 15167 15168
+
+T medical_specialties | medical specialties
+W: 3450 surgery [operation]; 3501 pathology; 3502 epidemiology; 3507 palliative care; 14719 audiology; 15209 cardiology; 15210 neurology; 15211 pediatrics; 15213 oncology; 15214 dermatology; 15215 psychiatry; 15216 orthopedics; 15218 radiology; 15219 obstetrics; 15220 gynecology; 15222 anesthesiology; 15224 urology; 15225 ophthalmology; 15226 gastroenterology; 15227 endocrinology; 15228 nephrology; 15229 hematology; 15231 immunology; 15232 geriatrics; 15233 rheumatology; 15234 pulmonology; 15235 otolaryngology; 15236 neonatology; 15237 podiatry; 15238 proctology; 15239 toxicology; 15240 sports medicine; 15241 emergency medicine; 15242 general practice; 15243 neurosurgery; 15244 virology; 50253 ENT [medicine]; 50254 ear nose and throat; 50255 dentistry; 50256 optometry
+G: 50253 50254
+
+T medical_tests | medical tests
+W: 3245 blood [body fluid]; 3459 X-ray [medical]; 3495 biopsy; 3496 MRI; 3497 CT scan; 3537 ultrasound; 15247 ECG; 15249 colonoscopy; 15250 mammogram; 15251 pap smear; 15252 allergy; 15253 swab; 15254 endoscopy; 15255 PET scan; 15256 EEG; 15257 glucose tolerance; 15258 spirometry; 15259 stress; 15260 bone density scan; 15261 DEXA scan; 15262 lumbar puncture; 15263 spinal tap; 15264 angiogram; 15265 amniocentesis; 15268 eye; 15269 DNA; 15270 cystoscopy; 15271 bronchoscopy; 15272 HbA1c; 15273 Doppler scan; 15274 echocardiogram; 15275 audiogram; 15276 cervical screening; 62727 lipid panel; 62728 audiometry; 62729 urinalysis
+G: 15260 15261; 15262 15263
+
+T hospital_words | hospital words
+W: 3088 ambulance; 3449 nurse [health worker]; 3470 surgeon; 3491 intensive care; 3492 triage; 3506 hospice [care]; 4152 intern; 4154 consultant; 15277 ward [hospital]; 15278 emergency room; 15282 patient [person]; 15283 gurney; 15284 waiting room; 15285 discharge [hospital]; 15286 admission [hospital]; 15287 maternity ward; 15288 outpatient; 15289 inpatient; 15290 matron; 15291 orderly; 15292 porter [hospital]; 15293 resident [doctor]; 15294 radiographer; 15295 phlebotomist; 15296 anaesthetist; 15298 isolation room; 15299 crash cart; 15300 bedpan; 15301 gown; 15302 visiting hours; 15303 charge nurse; 15304 code blue; 15305 rounds [hospital]; 15306 sluice room; 15307 nurses' station; 57506 operating room
+
+T doctor_s_office | doctor's office
+W: 3448 doctor; 3449 nurse [health worker]; 3456 prescription; 3460 stethoscope; 3461 thermometer; 3473 checkup; 3489 general practitioner; 3515 referral; 4103 receptionist; 7193 scale [weighing]; 15185 blood pressure cuff; 15188 otoscope; 15193 pulse oximeter; 15194 reflex hammer; 15196 tongue depressor; 15284 waiting room; 15308 examination table; 15309 exam table; 15311 appointment; 15312 clipboard; 15313 medical chart; 15314 patient file; 15315 paper gown; 15316 eye chart; 15317 height chart; 15318 flu shot; 15321 sample cup; 15322 hand sanitizer; 15323 examination gloves; 15324 health insurance card; 15325 co-pay; 15326 vaccination record; 15327 appointment card; 15328 specimen jar; 65746 family physician; 67186 sharps container; 67188 note
+G: 65746 3489; 15308 15309
+
+T pharmacy | pharmacy
+W: 3456 prescription; 3509 contraindication; 3745 sunscreen; 3746 sunblock; 4144 pharmacist; 15170 eye drops; 15329 pill bottle; 15330 bandages; 15331 vitamins; 15332 cough syrup; 15333 painkillers; 15334 dispensary; 15335 over-the-counter (adjective); 15336 pill counter; 15337 blister pack; 15338 child-proof cap; 15339 generic drug; 15340 refill; 15341 dosage; 15342 side effects; 15343 tablets; 15344 first aid kit [medical]; 15345 pregnancy test; 15346 mortar and pestle; 15347 compounding; 15348 pharmacy technician; 15349 formulary; 15350 controlled substance; 15351 apothecary; 15352 pill organizer; 15354 prescription pad; 15355 dispensing
+G: 3745 3746
+
+T operating_room | operating room
+W: 3470 surgeon; 3475 scalpel; 3476 stitches; 3477 sutures; 3585 forceps; 4906 scrubs [medical clothing]; 15186 ventilator; 15202 curette; 15203 hemostat; 15204 retractor; 15205 trocar; 15356 anesthesia; 15358 surgical mask; 15359 suture; 15360 table; 15361 surgical gloves; 15362 surgical gown; 15363 scrub nurse; 15364 anesthetist; 15365 sterile field; 15366 heart monitor; 15367 surgical clamp; 15368 cautery; 15369 tourniquet; 15370 autoclave; 15371 surgical light; 15372 scrub sink; 15373 sponge count; 15374 laparoscope; 15375 bone saw; 15376 surgical suction; 15377 electrocautery; 15378 surgical drape; 15379 gauze; 15380 Mayo stand; 15381 pre-op (adjective); 15382 post-op (adjective)
+G: 3476 3477
+
+T first_aid | first aid
+W: 1780 aloe vera; 1781 aloe; 3464 bandage; 3465 dressing [wound]; 3498 defibrillator; 3764 tweezers; 14941 EpiPen; 15369 tourniquet; 15379 gauze; 15383 plaster [adhesive]; 15385 antiseptic; 15386 sling [arm]; 15387 splint; 15388 CPR; 15389 recovery position; 15390 Heimlich maneuver; 15391 abdominal thrusts; 15392 ice pack; 15393 adhesive tape; 15394 safety pin; 15395 burn gel; 15396 eyewash; 15397 thermal blanket; 15398 space blanket; 15399 pressure bandage; 15400 butterfly stitch; 15401 Steri-Strip; 15402 triangular bandage; 15404 saline; 15405 antiseptic wipe; 15406 rescue breaths; 15407 calamine lotion; 15408 cold compress; 15409 hydrocortisone cream; 15410 chest compressions; 15411 shock blanket; 15412 burn dressing; 64015 kit [medical supplies]
+G: 15390 15391; 3464 3465; 15397 15398; 1781 1780; 15400 15401
+
+T dental_words | dental words
+W: 3729 toothbrush; 3730 toothpaste; 3731 floss [dental]; 3732 mouthwash; 4067 dentist; 14482 tooth; 14483 molar; 14485 incisor; 14486 wisdom tooth; 14489 premolar; 14490 enamel; 14493 filling [tooth]; 14494 crown [tooth]; 14495 root canal; 14496 braces [dental]; 14499 dentin; 14503 bicuspid; 14504 denture; 14506 implant [dental]; 14507 retainer [dental]; 14512 bridge [dental]; 15413 cavity [tooth]; 15414 gums; 15415 plaque [dental]; 15416 canine tooth; 15417 orthodontist; 15418 hygienist; 15419 veneer [dental]; 15420 tartar [teeth]; 15421 tooth abscess; 15422 gingivitis; 15425 scale and polish; 15426 tooth pulp; 15427 periodontist; 15428 fluoride; 15429 mouthguard; 15430 dental dam; 15431 probe; 15432 amalgam; 15433 caries; 15434 tooth extraction; 15435 drill; 15436 bite wing
+
+T smoking_words | smoking words | cigarette, cigar, pipe, ashtray, lighter, filter, vape, hookah, tobacco
+W: 7350 vape; 15437 cigarette; 15438 cigar [tobacco]; 15440 ashtray; 15441 cigarette lighter; 15442 tobacco; 15444 shisha [hookah]; 15445 narghile; 15446 cigarette filter; 15447 matches [smoking]; 15448 nicotine; 15449 snuff; 15450 chewing tobacco; 15451 rolling paper; 15452 cigarette butt; 15454 pack of cigarettes; 15455 humidor; 15456 cigar cutter; 15457 ban; 15458 nicotine patch; 15459 nicotine gum; 15460 roll-up; 15462 cigarillo; 15463 menthol; 15464 Zippo; 15465 light up (verb); 15466 chain smoker; 15467 calumet; 15468 snus; 15469 vape pen; 15470 kretek; 15471 bidi; 15472 smoking jacket; 15473 cigarette holder; 15474 no smoking (other); 15475 pipe cleaner; 46259 hookah [water pipe]; 46262 water pipe; 62730 tobacco pipe
+G: 46259 15445 15444 46262; 15441 15464; 7350 15469
+
+T illegal_drugs | illegal drugs
+W: 1758 salvia; 15476 cocaine; 15477 blow [cocaine]; 15478 heroin; 15479 smack [heroin]; 15480 marijuana; 15481 pot [drug]; 15482 cannabis; 15483 ganja; 15484 LSD; 15485 acid [drug]; 15486 ecstasy [drug]; 15487 MDMA; 15488 molly [drug]; 15489 methamphetamine; 15490 meth; 15491 crystal meth; 15492 ice [meth]; 15493 crack [cocaine]; 15494 opium; 15495 magic mushrooms; 15496 psilocybin; 15497 fentanyl; 15498 ketamine; 15499 special K; 15500 hashish; 15501 hash [drug]; 15502 amphetamine; 15503 barbiturate; 15504 PCP; 15505 angel dust; 15506 mescaline; 15507 peyote; 15508 GHB; 15509 spice [synthetic cannabis]; 15511 quaaludes; 15512 poppers; 15513 DMT; 15514 opioid; 15515 khat; 15516 nitrous oxide; 15517 laughing gas; 15518 dope [drug]; 50106 bath salts [drug]; 50257 uppers; 50258 downers; 50261 weed [drug]; 50262 grass [drug]; 50263 skunk [drug]; 50264 reefer [marijuana]; 50266 bud [drug]; 50267 joint [drug]; 50268 coke [cocaine]; 50269 snow [cocaine]; 50270 charlie [cocaine]; 50271 horse [heroin]; 50272 junk [heroin]; 50273 skag; 50274 crystal [meth]; 50275 crank [meth]; 50276 speed [drug]; 50277 shrooms
+G: 15486 15487 15488; 15478 50273 15479 50271 50272; 15498 15499; 15495 50277 15496; 15480 50266 50267 50261 15482 15481 15483 50264 50262 50263; 15489 50274 15491 15492 50275 15490; 15516 15517; 15476 15477 50268 50269 50270; 15500 15501; 15504 15505; 15502 50276; 15484 15485
+
+T street_names_for_hemp | street names for hemp
+W: 15481 pot [drug]; 15483 ganja; 15518 dope [drug]; 50261 weed [drug]; 50262 grass [drug]; 50263 skunk [drug]; 50264 reefer [marijuana]; 50266 bud [drug]; 50267 joint [drug]
+
+T stimulants | stimulant drugs
+W: 15476 cocaine; 15477 blow [cocaine]; 15489 methamphetamine; 15490 meth; 15492 ice [meth]; 15493 crack [cocaine]; 15502 amphetamine; 50257 uppers; 50268 coke [cocaine]; 50269 snow [cocaine]; 50270 charlie [cocaine]; 50274 crystal [meth]; 50275 crank [meth]; 50276 speed [drug]
+
+T hallucinogens | hallucinogens
+W: 1758 salvia; 15484 LSD; 15485 acid [drug]; 15495 magic mushrooms; 15496 psilocybin; 15506 mescaline; 15507 peyote; 15513 DMT; 50277 shrooms
+
+T cold_and_flu_remedies | cold and flu remedies
+W: 207 zinc; 4744 humidifier; 15118 ibuprofen; 15120 acetaminophen; 15131 decongestant; 15169 nasal spray; 15332 cough syrup; 15463 menthol; 15519 chicken soup; 15520 honey and lemon; 15521 tissues; 15522 throat lozenge; 15523 hot toddy; 15524 vapor rub; 15525 Vicks; 15527 steam inhalation; 15528 vitamin C; 15529 bed rest; 15530 hot tea; 15531 ginger tea; 15532 echinacea; 15533 elderberry syrup; 15534 saline rinse; 15535 neti pot; 15536 Lemsip; 15537 NyQuil; 15538 Beechams; 15539 Sudafed; 15540 Theraflu; 15541 hot water bottle; 15542 gargling salt water; 15543 onion syrup; 15544 black elderberry; 15545 cough drops; 15546 eucalyptus oil; 15547 hot lemon; 64017 shot [jab]
+G: 15534 15535; 15524 15525; 15131 15539
+
+T four_humours | four humours | blood, phlegm, yellow bile, black bile
+W: 3245 blood [body fluid]; 4023 melancholy; 4024 melancholia; 15548 phlegm; 15549 yellow bile; 15550 choler; 15551 black bile; 15553 choleric (adjective); 15554 melancholic (adjective); 15555 phlegmatic (adjective); 15556 Hippocrates; 15557 Galen; 32907 sanguine [temperament] (adjective)
+G: 4023 4024; 15549 15550
+
+T healthcare_workers | healthcare workers
+W: 3448 doctor; 3449 nurse [health worker]; 3470 surgeon; 3488 family doctor; 3489 general practitioner; 3490 paramedic; 3500 locum; 3512 medic
+
+T chinese_medicine | chinese medicine
+W: 380 jujube; 1665 ginkgo; 1666 maidenhair tree; 3504 acupuncture; 15558 qi; 15560 yin and yang; 15561 cupping [treatment]; 15562 moxibustion; 15563 ginseng; 15564 herbal tea; 15565 tai chi; 15566 acupressure; 15567 meridians; 15568 gua sha; 15569 tui na; 15570 goji berry; 15571 reishi; 15572 astragalus; 15573 cordyceps; 15574 licorice root; 15575 dong quai; 15576 Five Elements; 15577 pulse diagnosis; 15578 tongue diagnosis; 15579 qigong; 15580 rhubarb root; 15581 chrysanthemum tea; 15582 herbal decoction; 15583 cinnamon bark; 15584 antler velvet; 15585 rehmannia; 15586 bitter melon; 15587 Huang Di
+G: 1665 1666
+
+T middle_eastern_remedies | middle eastern remedies | black seed, cupping, miswak, frankincense, myrrh, rose water, honey
+W: 100 pomegranate; 626 licorice; 733 olive oil; 760 cardamom; 761 saffron [spice]; 779 fenugreek; 1780 aloe vera; 1781 aloe; 15561 cupping [treatment]; 15588 black seed; 15589 nigella; 15590 miswak; 15591 frankincense; 15592 myrrh; 15593 rose water; 15594 honey [food]; 15595 henna; 15596 mint tea; 15597 sage tea; 15598 dates [fruit]; 15599 camel milk; 15600 sidr honey; 15601 hijama; 15602 zamzam water; 15603 senna; 15604 mastic; 15605 anise [plant]; 15606 ruqyah; 15607 Unani; 15608 talbina; 15609 ajwa dates; 15610 hibiscus tea; 17396 black cumin
+G: 15588 17396 15589; 1781 1780
+
+T african_remedies | african remedies | rooibos, buchu, devil's claw, shea butter, baobab, moringa
+W: 1661 baobab; 1662 monkey bread tree; 1780 aloe vera; 1781 aloe; 15515 khat; 15612 buchu; 15613 devil's claw; 15614 shea butter; 15615 moringa; 15616 honeybush; 15617 hoodia; 15618 African potato; 15619 kigelia; 15620 sangoma [healer]; 15621 marula oil; 15622 kola nut; 15623 pelargonium; 15624 umckaloabo; 15625 cat's claw [herb]; 15626 argan oil; 15627 neem; 15628 traditional healer; 15629 witch doctor; 15630 iboga; 15631 sutherlandia; 15632 bitter leaf; 15633 prunus africana; 15635 nyanga [healer]; 19347 rooibos [tea]
+G: 1661 1662; 1781 1780
+
+T oceanian_remedies | oceanian remedies | tea tree oil, manuka honey, eucalyptus, kawakawa, kava, noni, lemon myrtle
+W: 1641 eucalyptus; 1674 sandalwood; 1716 hibiscus; 1780 aloe vera; 1781 aloe; 15546 eucalyptus oil; 15636 tea tree oil; 15637 manuka honey; 15638 kawakawa; 15639 kava; 15640 noni; 15641 lemon myrtle; 15642 rongoā; 15644 coconut oil; 15645 pawpaw ointment; 15646 emu oil; 15647 Kakadu plum; 15648 bush medicine; 15649 smoking ceremony; 15650 tamanu oil; 15651 native mint; 15652 harakeke; 15653 piripiri; 15654 lomilomi [massage]; 15655 ngangkari [healer]; 15656 lilly pilly; 15657 paperbark
+G: 1781 1780; 1641 15546
+
+T ayurveda_words | ayurveda words | dosha, turmeric, ghee, neem, ashwagandha, chakra, prana, triphala
+W: 539 ghee; 718 ginger [spice root]; 742 cumin; 759 turmeric; 4342 meditation; 15627 neem; 15658 dosha; 15659 ashwagandha; 15660 chakra; 15661 prana; 15662 triphala; 15663 vata; 15664 kapha; 15665 yoga; 15666 tulsi; 15667 holy basil; 15668 brahmi; 15669 panchakarma; 15670 abhyanga; 15671 shirodhara; 15672 amla; 15673 guggul; 15674 sesame oil; 15675 Charaka; 15676 Sushruta; 15677 ojas; 15678 agni [digestion]; 15679 ama [toxins]; 15680 chyawanprash; 15681 shatavari; 15682 pranayama; 15683 nasya; 15684 tridosha; 15685 rasayana; 50251 pitta [dosha]
+G: 15666 15667
+
+T native_american_remedies | native american remedies | echinacea, willow bark, goldenseal, witch hazel, yarrow, sweat lodge
+W: 735 sage [herb]; 780 sumac; 1637 cedar; 15507 peyote; 15532 echinacea; 15686 willow bark; 15687 goldenseal; 15688 witch hazel; 15689 yarrow; 15690 sweat lodge; 15691 sweetgrass; 15692 medicine man; 15693 medicine wheel; 15694 slippery elm; 15695 black cohosh; 15696 sassafras; 15697 wild ginseng; 15698 bloodroot; 15699 boneset; 15700 mullein; 15701 sarsaparilla; 15702 jewelweed; 15703 cherry bark; 15704 pine needle tea; 15705 balsam fir; 15706 Labrador tea; 15707 cattail; 15708 shaman; 15709 vision quest; 50124 smudging [ritual]; 50252 plantain [herb]
+
+T babies_and_birth | babies and birth
+W: 3228 fontanelle; 3523 baby [infant]; 3524 newborn; 3525 infant [baby]; 3526 toddler; 3527 pregnancy; 3528 birth; 3529 midwife [birth attendant]; 3530 labor [birth]; 3532 contractions; 3533 delivery [birth]; 3534 epidural; 3535 umbilical cord; 3536 placenta; 3537 ultrasound; 3538 due date [birth]; 3539 bump [pregnancy]; 3540 nursery [baby room]; 3541 lullaby; 3542 teething; 3543 formula [baby milk]; 3544 breastfeeding; 3545 colic; 3546 swaddle (verb); 3547 twins [siblings]; 3548 womb; 3549 cesarean; 3550 C-section; 3552 diaper; 3554 pacifier; 3557 stroller; 3561 crib [baby bed]; 3564 rattle [toy]; 3565 onesie; 3567 bib; 3568 high chair; 3569 cradle; 3570 car seat; 3572 playpen; 3574 crawling; 3575 first steps; 3576 burp [baby] (verb); 3577 obstetrician; 3578 doula; 3579 amniotic fluid; 3580 colostrum; 3581 meconium; 3582 vernix; 3583 lanugo; 3584 caul; 3585 forceps; 3586 Apgar score; 3587 Braxton Hicks; 3588 birthing pool; 3589 christening; 3591 gender reveal; 3592 maternity leave; 3593 breast pump; 3594 sleepsuit; 15761 bassinet; 25475 bottle [container]; 64018 monitor [nursery audio]; 64019 shower [gift party]
+G: 3549 3550
+
+T pregnancy_words | pregnancy words
+W: 3529 midwife [birth attendant]; 3535 umbilical cord; 3536 placenta; 3537 ultrasound; 3538 due date [birth]; 3577 obstetrician; 3578 doula; 3579 amniotic fluid; 3587 Braxton Hicks; 3590 baby shower; 3592 maternity leave; 14347 stretch marks; 15710 pregnant (adjective); 15711 trimester; 15712 baby bump; 15713 morning sickness; 15714 cravings; 15715 prenatal vitamins; 15717 expecting (verb); 15718 maternity clothes; 15719 fetus; 15721 embryo; 15722 gestation; 15723 conception; 15724 nesting [pregnancy]; 15725 gestational diabetes; 15726 preeclampsia; 15727 miscarriage; 15728 anomaly scan; 15729 gravida; 15730 quickening; 15731 prenatal class; 15732 birth plan; 15733 glucose test; 15734 mother-to-be; 28587 test [medical]
+
+T childbirth_words | childbirth words
+W: 3524 newborn; 3529 midwife [birth attendant]; 3530 labor [birth]; 3532 contractions; 3533 delivery [birth]; 3534 epidural; 3535 umbilical cord; 3536 placenta; 3550 C-section; 3577 obstetrician; 3578 doula; 3581 meconium; 3582 vernix; 3586 Apgar score; 3588 birthing pool; 15287 maternity ward; 15735 water breaking; 15736 pushing [birth]; 15737 crowning; 15738 breech; 15739 afterbirth; 15740 dilation; 15741 cervix; 15742 induction [labor]; 15743 forceps delivery; 15744 episiotomy; 15745 transition [labor]; 15746 effacement; 15747 lamaze; 15748 natural birth; 15749 home birth; 15750 gas and air; 15751 stillbirth; 15752 perineum; 15753 VBAC; 15754 bloody show; 15755 vacuum extraction; 15756 TENS machine

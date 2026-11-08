@@ -1,0 +1,413 @@
+T frozen_precipitation | frozen precipitation
+W: 1968 snowfall; 1985 snowflake [ice crystal]; 1987 hail [weather]; 1988 sleet; 1989 wintry mix; 2048 graupel; 31248 flurry; 31299 freezing rain; 31300 snow shower; 31302 ice pellet
+
+T polar_formations | polar formations
+W: 1911 glacier [ice]; 28525 sheet [glacier]; 28526 floe; 29374 iceberg; 30900 ice cap; 30902 crevasse; 30903 permafrost; 30905 ice shelf; 30909 sea ice; 30911 firn; 31303 pancake ice; 63778 pack [drifting floes]
+
+T weather_instruments | weather instruments
+W: 2762 wind sock; 3461 thermometer; 7230 barometer; 7239 anemometer; 7246 hygrometer; 31304 rain gauge; 31308 radar; 31309 psychrometer; 31310 pyranometer; 31311 sunshine recorder; 31312 ceilometer; 31313 barograph; 31314 thermograph; 31315 stevenson screen; 31316 weather station; 31317 wet bulb thermometer; 31318 radiosonde; 31319 disdrometer; 31320 aneroid barometer; 31321 mercury barometer; 31322 snow gauge; 31323 cup anemometer; 31324 lightning detector; 31325 weathercock; 31326 doppler radar; 31327 sling psychrometer; 31328 thermohygrometer; 31329 wind gauge; 31330 max-min thermometer; 31331 sunshine meter; 31332 storm glass; 31333 cloud camera; 60360 nephoscope; 60361 actinometer; 60362 pluviometer; 60363 dropsonde; 60364 transmissometer; 60365 anemograph; 60366 ombrometer; 60367 wind profiler; 60368 lysimeter; 63156 wind vane
+
+T named_winds | named winds | mistral, sirocco, chinook, foehn, bora, harmattan, khamsin, santa ana, haboob
+W: 1980 zephyr; 2010 monsoon; 2047 haboob; 25331 harmattan; 28625 chinook [wind]; 31239 trades; 31260 nor'easter; 31334 mistral [wind]; 31335 sirocco; 31336 foehn; 31337 bora; 31338 khamsin; 31339 santa ana; 31340 levanter; 31341 tramontane; 31342 meltemi; 31343 simoom; 31344 shamal; 31345 pampero; 31346 williwaw; 31347 fremantle doctor; 31348 brickfielder; 31349 southerly buster; 31350 diablo; 31351 sundowner [wind]; 31352 chubasco; 31353 berg wind; 31354 zonda; 31355 etesian; 31356 gregale; 31357 libeccio; 31358 bise; 31359 helm wind; 31360 sharav; 31361 kona [Hawaiian wind]; 31362 purga; 31363 lodos; 31364 yamase; 31365 ostro; 31366 fohn; 31367 scirocco; 31368 cape doctor
+
+T forecast_words | forecast words | front, pressure, isobar, humidity, outlook, dew point, wind chill, visibility
+W: 2002 humidity; 2003 forecast; 2018 cold front; 2033 warm front; 2036 wind chill; 2041 dew point; 2042 heat index; 2447 isobar [weather map]; 12849 weatherman; 16351 uv index; 31223 precipitation [weather]; 31370 front [weather]; 31371 pressure [weather]; 31372 outlook; 31373 visibility; 31374 temperature [weather]; 31375 high pressure; 31376 low pressure; 31377 occluded front; 31378 anticyclone; 31379 trough [weather]; 31380 ridge [weather]; 31381 chance of rain; 31382 wind speed; 31383 wind direction; 31384 overnight low; 31385 daytime high; 31386 heat advisory; 31387 weather warning; 31388 weather watch; 31389 storm warning; 31390 flood watch; 31391 frost warning; 31392 synoptic chart; 31393 weather map; 31395 mostly sunny (adjective); 31396 partly cloudy (adjective); 31397 scattered showers; 31398 isolated storms; 31399 meteorologist; 31400 sunny spells; 31401 bright intervals; 31402 pressure system; 31403 gale warning; 37869 isotherm; 37870 isohyet; 60369 lapse rate; 60370 nowcast; 60371 ensemble; 60372 baroclinic (adjective); 60373 cut-off low; 60374 atmospheric river; 60375 wind barb
+
+T atmospheric_patterns | atmospheric patterns
+W: 2018 cold front; 2033 warm front; 2447 isobar [weather map]; 31370 front [weather]; 31375 high pressure; 31376 low pressure; 31377 occluded front; 31378 anticyclone; 31379 trough [weather]; 31380 ridge [weather]; 31402 pressure system; 37869 isotherm; 37870 isohyet; 60373 cut-off low
+
+T lines_from_a_daily_bulletin | weather forecast phrases
+W: 31381 chance of rain; 31384 overnight low; 31385 daytime high; 31395 mostly sunny (adjective); 31396 partly cloudy (adjective); 31397 scattered showers; 31398 isolated storms; 31400 sunny spells; 31401 bright intervals
+
+T sky_phenomena | sky phenomena | rainbow, aurora, halo, sundog, moonbow, mirage, green flash, crepuscular rays
+W: 1982 rainbow [weather]; 2044 ball lightning; 7129 shooting star; 12099 golden hour; 25435 blue hour; 29280 mirage; 29903 Aurora [sky lights]; 31404 halo [light]; 31405 sundog; 31406 moonbow; 31407 green flash; 31408 crepuscular rays; 31409 northern lights; 31410 southern lights; 31411 aurora borealis; 31412 aurora australis; 31413 double rainbow; 31414 fogbow; 31415 glory [optical]; 31416 brocken spectre; 31417 sun pillar; 31418 circumhorizontal arc; 31419 parhelion; 31420 sun halo; 31421 moon halo; 31422 meteor shower; 31423 zodiacal light; 31424 airglow; 31425 noctilucent clouds; 31426 red sky; 31427 alpenglow; 31428 afterglow; 31429 earthshine; 31430 sprite [lightning]; 31431 st elmo's fire; 31432 gegenschein; 31433 sunbeams; 31434 mock sun; 31435 sun dog; 31436 moon dog; 31437 light pillar; 31438 iridescent clouds; 60376 Belt of Venus; 60377 circumzenithal arc; 60378 Lowitz arc; 60379 tangent arc; 60380 subsun; 60381 blue jet; 60382 anticrepuscular rays; 60383 Bishop's ring
+G: 29903 31411 31412
+
+T ice_crystal_effects | ice-crystal effects
+W: 31404 halo [light]; 31405 sundog; 31417 sun pillar; 31418 circumhorizontal arc; 31419 parhelion; 31420 sun halo; 31421 moon halo; 31434 mock sun; 31435 sun dog; 31436 moon dog; 31437 light pillar; 60377 circumzenithal arc; 60378 Lowitz arc; 60379 tangent arc; 60380 subsun
+
+T sunrise_and_sunset_sights | sunrise and sunset sights
+W: 12099 golden hour; 25435 blue hour; 31407 green flash; 31408 crepuscular rays; 31426 red sky; 31427 alpenglow; 31428 afterglow; 60376 Belt of Venus; 60382 anticrepuscular rays
+
+T night_sky_sights | night sky sights
+W: 7129 shooting star; 29903 Aurora [sky lights]; 31409 northern lights; 31410 southern lights; 31411 aurora borealis; 31412 aurora australis; 31422 meteor shower; 31423 zodiacal light; 31424 airglow; 31425 noctilucent clouds; 31429 earthshine; 31432 gegenschein
+G: 29903 31411 31412
+
+T hot_weather_words | hot weather words
+W: 1998 heatwave; 2020 sunny (adjective); 2027 muggy (adjective); 2028 balmy (adjective); 2029 sultry (adjective); 2042 heat index; 14337 sunburn; 14804 sticky [tacky] (adjective); 25319 estival (adjective); 28307 sweat; 28324 baking (adjective); 31386 heat advisory; 31439 scorching (adjective); 31440 sweltering (adjective); 31441 boiling (adjective); 31442 blistering [heat] (adjective); 31443 humid (adjective); 31444 roasting (adjective); 31445 sizzling (adjective); 31446 stifling (adjective); 31448 torrid (adjective); 31449 oppressive (adjective); 31450 heat haze; 31451 heatstroke; 31452 scorcher; 31453 hot spell; 31455 steamy (adjective); 31456 heat dome; 31457 dog days; 31458 sunstroke; 31459 parched (adjective); 31460 sun-baked (adjective); 31461 hot and dry (adjective); 31462 summery (adjective); 31463 warm [not hot] (adjective); 31464 broiling (adjective); 31465 searing (adjective); 31466 suffocating (adjective); 31467 tropical heat; 39936 canicular (adjective); 60384 scorchio (adjective); 60385 heat stress
+
+T kinds_of_precipitation | kinds of precipitation | rain, drizzle, sleet, hail, snow
+W: 1965 rain [weather]; 1966 rainfall; 1967 snow [weather]; 1968 snowfall; 1987 hail [weather]; 1988 sleet; 1989 wintry mix; 1990 drizzle [rain]; 1991 mizzle
+
+T signs_of_spring | signs of spring | buds, blossom, lambs, catkins, frogspawn, nesting, daffodils
+W: 1088 cuckoo [migrant bird]; 1725 crocus; 2540 cherry blossom; 3445 hay fever; 6247 maypole [festival pole]; 8416 birdsong; 8676 frogspawn; 9027 brimstone [butterfly]; 14916 pollen; 17570 wild garlic; 23969 spring cleaning; 25061 Ostara; 25321 vernal equinox; 29857 Blossom; 30142 wood anemone; 31468 buds; 31469 lambs; 31470 catkins; 31471 nesting [birds]; 31472 daffodils; 31473 snowdrops; 31474 tulips; 31475 bluebells; 31476 primroses; 31477 clocks going forward; 31478 longer days; 31479 showers; 31480 swallows return; 31481 tadpoles; 31482 bees emerging; 31483 fresh grass; 31484 green shoots; 31485 new leaves; 31486 baby birds; 31487 chicks; 31488 April showers; 31489 ducklings; 31490 seedlings; 31491 pussy willow; 31492 sap rising; 31493 blackbird song; 31494 migrating birds; 56540 lesser celandine; 59929 chiffchaff; 60387 coltsfoot
+G: 31479 31488
+
+T signs_of_summer | signs of summer | long days, heat haze, ripe berries, bees, hay, thunderstorms, sunflowers
+W: 604 ice cream [frozen dessert]; 1388 mayfly; 1703 lavender [flower]; 1998 heatwave; 14337 sunburn; 16347 sun hat; 19941 strawberries; 25307 solstice; 25311 midsummer [season]; 30304 elderflower; 31450 heat haze; 31495 long days; 31496 ripe berries; 31497 bees; 31498 hay [dried grass]; 31499 thunderstorms; 31500 sunflowers [flower]; 31501 sunshine [sun]; 31502 barbecues; 31503 picnics; 31504 swallows; 31505 dragonflies; 31506 butterflies [insects]; 31507 cicadas; 31508 fireflies; 31509 crickets; 31510 wasps; 31511 insect bites; 31512 wildflowers; 31513 haymaking; 31516 fruit ripening; 31517 late sunsets; 31518 golden fields; 31519 grasshoppers; 31520 sweet peas; 31521 summer storm; 31522 sandcastles; 31523 sprinklers; 31524 school holidays; 41365 strawberry moon; 55753 Litha; 57632 kiddie pool; 60388 glow-worms; 60389 heat lightning
+
+T signs_of_autumn | signs of autumn | falling leaves, acorns, conkers, migration, frost, fungi, harvest
+W: 1981 frost [icy coating]; 1986 mist [weather]; 5960 conkers; 16773 berries [fruit]; 20303 mushrooms; 23177 cobwebs; 23178 spider webs; 23400 apples [fruit]; 25084 harvest [crop gathering] (verb); 25306 equinox; 25313 Indian summer; 25332 leaf fall; 30133 fungi [organisms]; 31525 falling leaves; 31526 acorns; 31527 migration [animals]; 31528 red leaves; 31529 pumpkins; 31530 shorter days; 31531 spiders' webs; 31532 geese flying south; 31533 squirrels hoarding; 31534 hedgehog hibernating; 31535 rutting stags; 31536 blackberries; 31537 bonfire; 31538 harvest moon; 31539 woodsmoke; 31540 chestnuts; 31541 beech mast; 31542 scarlet leaves; 31543 swallows leaving; 31544 toadstools; 31545 clocks going back; 31546 darker evenings; 31547 crisp air; 31548 stubble fields; 31549 ploughing; 31550 leaf peeping; 31551 harvest festival; 31552 sloes; 31553 rosehips; 56557 Michaelmas daisy; 60390 haws; 60391 abscission; 60392 senescence; 60393 equinoctial gales; 60394 hazelnuts
+G: 23177 23178
+
+T signs_of_winter | signs of winter | frost, icicles, bare trees, hibernation, snow, short days, holly
+W: 1067 robin [bird]; 1644 evergreen; 1790 mistletoe; 1967 snow [weather]; 1968 snowfall; 1981 frost [icy coating]; 1988 sleet; 1989 wintry mix; 2016 black ice; 2017 thaw; 3698 hibernation; 5366 sledging [sledding or cricket banter]; 15032 chilblains; 15688 witch hazel; 25307 solstice; 29953 holly [tree]; 30341 hellebore; 30618 aconite; 30688 Christmas rose; 30915 hoarfrost; 31290 snowdrift; 31292 rime; 31473 snowdrops; 31554 icicles; 31555 bare trees; 31556 short days; 31557 snowflakes; 31558 freezing fog; 31559 frozen puddles; 31560 frozen pond; 31561 bare branches; 31562 cold snap; 31563 long nights; 31564 steaming breath; 31565 gritters; 31566 ice on windscreen; 31567 bird feeders; 31568 redwings; 31569 fieldfares; 31570 hard frost; 31571 dormant plants; 31572 leafless trees; 31573 woolly hats; 31574 short daylight; 31575 frozen ground; 39079 ice [frozen water]; 60395 torpor; 60396 overwintering; 60397 waxwings
+G: 30341 30688
+
+T nature_at_night | nature at night | owls, bats, moths, fireflies, dew, moonlight, glowworms, hedgehogs
+W: 1052 tarsier; 1086 heron; 1103 nightingale; 1130 nightjar; 2013 dew; 7110 moon [satellite]; 8028 pipistrelle; 8029 horseshoe bat; 8030 noctule; 8096 barn owl; 8098 tawny owl; 8231 kakapo; 9042 luna moth; 9045 death's-head hawkmoth; 23197 bats [animals]; 30521 moonflower; 30661 evening primrose; 31508 fireflies; 31509 crickets; 31576 owls; 31578 moths; 31579 moonlight; 31580 glowworms; 31581 hedgehogs; 31582 foxes; 31583 badgers; 31584 stars [sky]; 31585 night-blooming flowers; 31586 toads; 31587 owl hoot; 31588 nocturnal animals; 31589 bioluminescence; 31590 constellations; 31591 shooting stars; 31592 lightning bugs; 31593 night sky; 31594 tree frogs; 31595 hawkmoth; 31597 raccoons; 31598 moonbeams; 31599 starlight; 31600 luminous algae; 31601 fox cubs; 31602 firefly squid; 31603 moth trap; 40062 crepuscular (adjective); 60398 eyeshine; 60399 churring
+
+T monsoon_season | monsoon season | downpour, flood, paddy fields, leeches, humidity, puddles, umbrellas
+W: 1966 rainfall; 2001 flood [weather]; 2002 humidity; 2004 downpour; 2005 cloudburst; 2006 deluge [rain]; 2045 petrichor; 3438 dengue; 4918 raincoat; 24589 rubber boots; 25632 sandbags; 28051 mud [dirt]; 28340 damp (adjective); 30330 mold [fungus]; 30332 mildew; 31222 flash flood; 31455 steamy (adjective); 31604 paddy fields; 31605 leeches; 31606 puddles; 31607 umbrellas; 31608 rain clouds; 31609 torrential rain; 31610 landslide [land collapse]; 31611 monsoon winds; 31612 rice planting; 31613 overflowing rivers; 31614 waterlogged (adjective); 31615 mosquitoes; 31616 thunderclap; 31617 swollen river; 31618 rice terraces; 31619 rain-soaked (adjective); 31620 pouring rain; 31621 southwest; 31622 northeast; 31623 onset of monsoon; 31624 banana leaves; 31625 tropical rain; 31626 rain shower; 31627 muddy roads; 31628 wet markets; 60400 kharif; 60401 Cherrapunji; 60402 Mawsynram; 63808 the rains; 63809 the Wet [tropical rainy period]
+
+T dry_season | dry season | drought, dust, waterhole, cracked earth, bushfire, migration, thorn scrub
+W: 1265 lungfish; 1657 acacia; 1661 baobab; 1662 monkey bread tree; 1905 arroyo [dry gully]; 1922 savanna; 2000 drought; 23180 dust [dirt]; 25331 harmattan; 30269 wildfire; 30286 fire season; 30883 wadi; 30893 dust devil; 31257 dust storm; 31527 migration [animals]; 31629 waterhole; 31630 cracked earth; 31631 thorn scrub; 31633 parched land; 31634 wilting crops; 31635 dry grass; 31636 water shortage; 31637 hosepipe ban; 31638 water rationing; 31639 scorched grass; 31640 baked ground; 31641 dry wells; 31642 dry spell; 31643 low rivers; 31644 clear skies; 31645 cloudless sky; 31646 dry wind; 31647 brown grass; 31648 cracked mud; 31649 shrinking lake; 31650 wildebeest migration; 31651 watering hole [water source]; 31652 dry creek; 31653 dust cloud; 31654 rain dance; 31655 lack of rain; 37865 Sahel; 40847 heat [physics]; 60403 aestivation; 60404 veld fire; 60405 Llanos; 60406 dust bowl
+G: 1661 1662
+
+T rocks_and_minerals | rocks and minerals
+W: 1567 fossil; 2049 rock [stone]; 2050 stone [rock]; 2051 pebble [stone]; 2052 boulder; 2053 gravel [crushed stone]; 2054 coal; 2055 crystal [mineral]; 2056 granite; 2057 marble [stone]; 2058 limestone; 2059 sandstone; 2060 slate [rock]; 2061 quartz [crystal mineral]; 2062 chalk [rock]; 2063 sand [sediment]; 2064 clay [soil]; 2065 graphite; 2066 plumbago; 2067 sulfur; 2070 halite; 2071 ore; 2072 meteorite; 2073 pyrite; 2074 fool's gold; 2075 basalt; 2076 obsidian; 2077 volcanic glass; 2078 pumice; 2079 pumice stone; 2080 shale; 2081 flint; 2082 mica; 2083 gypsum; 2084 talc; 2085 malachite; 2086 geode; 2087 soapstone; 2091 feldspar; 2092 calcite; 2093 fluorite; 2094 magnetite; 2095 hematite; 2096 gneiss; 2097 schist; 2098 quartzite; 2099 dolomite; 2100 conglomerate [rock]; 2101 travertine; 2102 bauxite; 2103 galena; 2104 cinnabar [mineral]; 2105 corundum; 2106 serpentine [mineral]; 2107 mudstone; 2108 lodestone; 2110 azurite; 2111 olivine; 2112 breccia; 2113 tuff; 2114 chert; 2115 diorite; 2116 gabbro; 2117 rhyolite; 2118 andesite; 2119 siltstone; 21711 sedimentary; 66981 igneous; 66982 metamorphic
+G: 2065 2066; 2078 2079; 2073 2074; 2076 2077; 2049 2050
+
+T gemstones | gemstones
+W: 1615 amber [fossil resin]; 2061 quartz [crystal mineral]; 2076 obsidian; 2077 volcanic glass; 2085 malachite; 28347 opal [gem]; 29866 Beryl [gemstone]; 29867 Garnet [gemstone]; 29868 Jasper [gemstone]; 29870 Topaz [gemstone]; 29871 Amethyst [gemstone]; 29874 Citrine [gem]; 29876 Peridot [gem]; 29877 Zircon [gem]; 29878 Agate [gemstone]; 31656 diamond [gem]; 31657 ruby [gem]; 31658 emerald [gem]; 31659 sapphire [gem]; 31660 pearl [gem]; 31661 turquoise [gem]; 31662 jade [gem]; 31663 aquamarine [gemstone]; 31664 onyx [gem]; 31665 moonstone [gem]; 31666 tanzanite [gem]; 31667 alexandrite [gemstone]; 31668 tourmaline [gem]; 31669 spinel; 31670 lapis lazuli; 31671 tiger's eye; 31672 bloodstone; 31673 carnelian [gemstone]; 31674 coral [gem]; 31675 morganite; 31676 kunzite; 31677 iolite; 31678 sunstone; 31679 labradorite; 31680 rose quartz [gem]; 31681 smoky quartz; 31682 rhodonite; 31683 sodalite; 31684 chrysoprase; 31685 heliodor; 31686 tsavorite; 31687 demantoid; 31688 benitoite; 31689 cat's eye [gemstone]; 31690 black opal; 31691 jet [gem]; 31692 chalcedony; 31693 fire opal; 31694 star sapphire; 31695 cubic zirconia; 31696 birthstone; 31697 larimar; 31698 ametrine; 31699 rubellite; 31700 hiddenite; 31701 apatite
+G: 2076 2077
+
+T quartz_varieties | quartz varieties | amethyst, citrine, rose quartz, agate, onyx, jasper, carnelian, tiger's eye
+W: 2081 flint; 2114 chert; 29868 Jasper [gemstone]; 29871 Amethyst [gemstone]; 29874 Citrine [gem]; 29878 Agate [gemstone]; 31664 onyx [gem]; 31671 tiger's eye; 31672 bloodstone; 31673 carnelian [gemstone]; 31681 smoky; 31684 chrysoprase; 31689 cat's eye [gemstone]; 31692 chalcedony; 31698 ametrine; 38661 rose [color]; 56582 milky; 56583 rock crystal; 56584 aventurine; 56585 sard; 56586 rutilated; 56587 sardonyx; 56588 moss agate; 56589 heliotrope [gemstone]; 56590 hawk's eye; 56591 cairngorm; 56592 morion; 56593 prase
+
+T blue_gems | blue gems
+W: 31659 sapphire [gem]; 31661 turquoise [gem]; 31663 aquamarine [gemstone]; 31666 tanzanite [gem]; 31670 lapis lazuli; 31677 iolite; 31683 sodalite; 31688 benitoite; 31694 star sapphire
+
+T metals | metals
+W: 201 iron [metal]; 202 gold [metal]; 203 silver [metal]; 204 copper [metal]; 205 tin [metal]; 206 lead [metal]; 207 zinc; 208 aluminum; 210 nickel [metal]; 211 platinum; 212 titanium [metal element]; 213 tungsten; 214 mercury [element]; 3829 calcium; 3831 sodium; 7397 steel [metal]; 12038 bronze [metal]; 16652 magnesium; 16653 potassium; 16657 manganese; 16658 chromium; 16659 molybdenum; 16663 vanadium; 21102 radium; 31702 cobalt [metal]; 31703 lithium [metal]; 31704 uranium; 31705 plutonium; 31706 bismuth; 31707 cadmium [metal element]; 31708 antimony; 31709 palladium [element]; 31710 rhodium; 31711 iridium; 31712 osmium; 31713 gallium; 31714 indium; 31715 zirconium; 31716 tantalum; 31717 niobium; 31718 rhenium; 31719 ruthenium; 31720 thallium; 31721 beryllium; 31722 barium; 31723 strontium; 31724 cesium; 31725 rubidium; 31726 hafnium; 31727 brass [metal]; 31728 pewter [metal]; 31729 solder [metal]; 31730 electrum; 31731 nichrome; 31732 gunmetal [alloy]; 31733 duralumin; 31734 stainless steel; 31735 cast iron; 31736 wrought iron; 31737 pig iron; 31738 sterling silver; 31739 white gold; 31740 rose gold; 31741 polonium; 31742 thorium; 31743 scandium; 31744 yttrium; 31745 neodymium [metal]; 40349 lanthanum; 40350 cerium; 40354 europium; 40355 gadolinium; 40365 francium
+
+T precious_elements | precious elements
+W: 202 gold [metal]; 203 silver [metal]; 211 platinum; 31709 palladium [element]; 31710 rhodium; 31711 iridium; 31712 osmium; 31719 ruthenium
+
+T alkali_and_alkaline_earth_elements | alkali and alkaline earth elements
+W: 3829 calcium; 3831 sodium; 16652 magnesium; 16653 potassium; 21102 radium; 31703 lithium [metal]; 31721 beryllium; 31722 barium; 31723 strontium; 31724 cesium; 31725 rubidium; 40365 francium
+
+T rock_types | rock types
+W: 2054 coal; 2056 granite; 2058 limestone; 2059 sandstone; 2060 slate [rock]; 2062 chalk [rock]; 2075 basalt; 2076 obsidian; 2077 volcanic glass; 2078 pumice; 2079 pumice stone; 2080 shale; 2081 flint; 2087 soapstone; 2096 gneiss; 2097 schist; 2098 quartzite; 2100 conglomerate [rock]; 2101 travertine; 2107 mudstone; 2112 breccia; 2113 tuff; 2114 chert; 2115 diorite; 2116 gabbro; 2117 rhyolite; 2118 andesite; 2119 siltstone; 21711 sedimentary; 31073 lava; 31746 marble [rock]; 31747 scoria; 31750 peridotite; 31751 hornfels; 31752 dolostone; 31775 gritstone; 32328 lignite; 56596 pegmatite; 56606 ignimbrite; 56608 ironstone; 56609 greywacke; 60407 phyllite; 60408 amphibolite; 60409 dunite; 66981 igneous; 66982 metamorphic
+G: 2078 2079; 2076 2077
+
+T igneous_rocks | igneous rocks | granite, basalt, obsidian, pumice, gabbro, andesite, rhyolite, tuff
+W: 2056 granite; 2075 basalt; 2076 obsidian; 2077 volcanic glass; 2078 pumice; 2079 pumice stone; 2113 tuff; 2115 diorite; 2116 gabbro; 2117 rhyolite; 2118 andesite; 31073 lava rock; 31747 scoria; 31750 peridotite; 40158 porphyry; 56594 dolerite; 56595 syenite; 56596 pegmatite; 56597 dacite; 56598 komatiite; 56599 kimberlite; 56600 trachyte; 56601 diabase; 56602 felsite; 56603 anorthosite; 56604 granodiorite; 56605 pitchstone; 56606 ignimbrite; 56607 phonolite
+G: 2078 2079; 2076 2077
+
+T sedimentary_rocks | sedimentary rocks | sandstone, limestone, shale, chalk, coal, conglomerate, flint, mudstone
+W: 2054 coal; 2058 limestone; 2059 sandstone; 2062 chalk [rock]; 2070 halite; 2080 shale; 2081 flint; 2099 dolomite; 2100 conglomerate [rock]; 2101 travertine; 2107 mudstone; 2112 breccia; 2114 chert; 2119 siltstone; 24162 brownstone; 31775 gritstone; 31967 loess; 31985 marl; 32328 lignite; 32347 oil shale; 56608 ironstone; 56609 greywacke; 56610 claystone; 56611 oolite; 56612 tufa; 56613 coquina; 56614 arkose; 56615 diatomite; 56616 millstone grit
+
+T minerals | minerals
+W: 2061 quartz [crystal mineral]; 2065 graphite; 2066 plumbago; 2067 sulfur; 2069 rock salt; 2070 halite; 2073 pyrite; 2074 fool's gold; 2082 mica; 2083 gypsum; 2084 talc; 2085 malachite; 2091 feldspar; 2092 calcite; 2093 fluorite; 2094 magnetite; 2095 hematite; 2099 dolomite; 2102 bauxite; 2103 galena; 2104 cinnabar [mineral]; 2105 corundum; 2106 serpentine [mineral]; 2110 azurite; 2111 olivine; 23930 borax; 29866 Beryl [gemstone]; 29867 Garnet [gemstone]; 29870 Topaz [gemstone]; 29871 Amethyst [gemstone]; 29877 Zircon [gem]; 31656 diamond [gem]; 31668 tourmaline [gem]; 31669 spinel; 31701 apatite; 31753 kaolinite; 31754 rutile; 31755 orthoclase; 31756 sphalerite; 31757 barite; 31758 chalcopyrite; 60410 cassiterite; 60411 kyanite; 60412 stibnite; 60413 cuprite; 60414 realgar; 60415 wulfenite; 60416 rhodochrosite; 60417 scheelite; 60418 staurolite
+G: 2065 2066; 2073 2074; 2069 2070
+
+T mohs_scale_minerals | mohs scale minerals | talc, gypsum, calcite, fluorite, apatite, orthoclase, quartz, topaz, corundum, diamond
+W: 2061 quartz [crystal mineral]; 2083 gypsum; 2084 talc; 2092 calcite; 2093 fluorite; 2105 corundum; 29870 Topaz [gemstone]; 31656 diamond [gem]; 31701 apatite; 31755 orthoclase
+
+T metal_ores | metal ores
+W: 2085 malachite; 2094 magnetite; 2095 hematite; 2102 bauxite; 2103 galena; 2104 cinnabar [mineral]; 2110 azurite; 31756 sphalerite; 31758 chalcopyrite; 60410 cassiterite; 60412 stibnite; 60413 cuprite; 60415 wulfenite; 60416 rhodochrosite; 60417 scheelite
+
+T building_stones | building stones
+W: 2056 granite; 2058 limestone; 2059 sandstone; 2060 slate [rock]; 2081 flint; 2087 soapstone; 2101 travertine; 6579 keystone; 24030 brick [building block]; 24162 brownstone; 31746 marble [rock]; 31759 flagstone; 31760 cobblestone; 31761 fieldstone; 31762 bluestone; 31763 ashlar; 31764 Portland; 31765 Bath; 31766 paving; 31767 cornerstone; 31768 capstone; 31769 millstone; 31770 rubble; 31771 river rock; 31772 lava; 31773 curbstone; 31774 whinstone; 31775 gritstone; 31776 Cotswold; 31777 York; 31778 Carrara marble; 31779 sarsen; 31780 dressed; 31781 quarried; 31782 bedrock; 50304 adobe [brick]
+G: 31759 31766; 31763 31780
+
+T mining_words | mining words | shaft, seam, ore, quarry, nugget, vein, lode, pickaxe, slag, smelter
+W: 1093 canary [bird]; 2071 ore; 2074 fool's gold; 2572 headlamp; 4148 miner; 7381 tunnel [structure]; 21214 ingot; 21812 smelting; 22917 coal mine; 24454 hard hat; 25774 pickaxe; 28229 lode; 28834 dynamite; 31783 shaft [mine]; 31784 quarry [pit]; 31785 nugget; 31786 slag; 31787 smelter; 31788 mine [pit]; 31789 pit [mine]; 31790 adit; 31791 headframe; 31792 gangue; 31793 tailings; 31794 prospecting; 31795 mine cart; 31796 coal face; 31797 stope; 31798 assay; 31799 open pit; 31800 strip mining; 31801 colliery; 31802 pithead; 31803 collier [job]; 31804 gold mine; 50108 seam [coal layer]; 50152 vein [ore seam]; 60419 winze; 60420 firedamp; 60421 blackdamp; 60422 afterdamp; 60423 sump; 60424 overburden; 60425 Davy lamp; 60426 longwall; 60427 pit pony; 60428 cave-in
+
+T gold_rush_words | gold rush words | prospector, claim, panning, sluice, boomtown, forty-niner, Klondike
+W: 2073 pyrite; 22991 saloon [bar]; 23011 gold rush; 23023 prospector; 23024 Deadwood [Wild West town]; 23871 sluice [channel] (verb); 25774 pickaxe; 27579 tenderfoot; 29300 bonanza; 31785 nugget; 31805 claim [mining]; 31806 panning; 31807 boomtown; 31808 forty-niner; 31809 Klondike [region]; 31810 pan; 31811 dust; 31812 mother lode; 31813 placer; 31815 Sutter's Mill; 31816 Yukon [territory]; 31817 Dawson City; 31818 Chilkoot Pass; 31819 rocker box; 31820 grubstake; 31821 sourdough [prospector]; 31822 gold fever; 31823 ghost town; 31824 mining camp; 31825 assayer; 31826 Comstock Lode; 31827 Eldorado; 31828 stake a claim (verb)
+G: 31805 31828
+
+T natural_disasters | natural disasters
+W: 1993 hurricane [storm]; 1994 tornado [storm]; 1996 blizzard; 1997 snowstorm; 1998 heatwave; 2000 drought; 2001 flood [weather]; 2008 cyclone; 2009 typhoon; 2046 derecho; 28829 blight; 28911 earthquake; 29446 tsunami; 30172 sinkhole; 30269 wildfire; 30275 forest fire; 30284 firestorm; 31125 tidal wave; 31176 storm surge; 31199 seiche; 31222 flash flood; 31255 hailstorm; 31257 dust storm; 31258 ice storm; 31261 waterspout; 31610 landslide [land collapse]; 31829 volcanic eruption; 31830 famine; 31831 mudslide; 31832 lahar; 31833 pyroclastic flow; 31834 meteor strike; 31835 asteroid impact; 31836 supervolcano; 31837 landslip; 31838 locust plague; 43543 avalanche [skiing]
+
+T volcano_words | volcano words
+W: 1912 volcano; 1931 crater; 2076 obsidian; 2077 volcanic glass; 2078 pumice; 2079 pumice stone; 6874 Pompeii [ancient Roman city]; 16028 dormant (adjective); 28044 lava [molten rock]; 30939 lava tube; 31832 lahar; 31833 pyroclastic flow; 31839 magma; 31840 eruption; 31841 ash [volcanic]; 31842 vent [volcano]; 31843 caldera; 31844 cone [volcano]; 31845 ash cloud; 31846 volcanic bomb; 31847 tephra; 31848 fumarole; 31849 magma chamber; 31850 Vesuvius; 31851 Krakatoa; 31852 Mount St. Helens; 31853 Etna; 31854 Mauna Loa; 31855 lava flow; 31856 lava lake; 31857 volcanologist; 31858 Ring of Fire; 31859 hot spot; 31860 stratovolcano; 31861 cinder [ash]; 31862 spatter cone; 31864 Pinatubo; 31865 lapilli; 32018 shield; 32023 lava dome; 32024 volcanic dome; 50217 extinct [inactive volcano] (adjective); 59411 Stromboli [volcano]; 60429 pahoehoe; 60430 Plinian eruption; 60431 phreatic eruption; 60432 pillow lava
+G: 2078 2079; 2076 2077; 32023 32024
+
+T lava_forms | lava forms
+W: 30939 tube; 31855 flow; 31856 lake; 32023 dome; 60432 pillow
+
+T earthquake_words | earthquake words
+W: 7245 magnitude; 28537 quake; 28911 earthquake; 29446 tsunami; 31770 rubble; 31866 epicenter; 31868 fault [geology]; 31870 tremor; 31871 earth tremor; 31872 aftershock; 31873 seismograph; 31874 seismology; 31875 Richter scale; 31876 tectonic plate; 31877 seismic wave; 31878 seismic (adjective); 31879 foreshock; 31880 hypocenter; 31881 focus [earthquake]; 31882 liquefaction; 31883 San Andreas [fault]; 31884 rupture; 31885 rumble [sound]; 31886 temblor; 31887 moment magnitude; 31888 Mercalli scale; 31889 seismometer; 31890 P wave; 31891 S wave; 31892 surface wave; 31893 subduction; 31894 drop and cover; 31895 seismic zone; 31896 strike-slip; 31897 megathrust
+G: 31870 31871
+
+T layers_of_the_earth | layers of the earth
+W: 201 iron [metal]; 210 nickel [metal]; 20831 mantle [cloak]; 28647 crust; 31839 magma; 31876 tectonic plate; 31898 core [earth]; 31899 outer core; 31900 inner core; 31901 lithosphere; 31902 Moho [crust-mantle boundary]; 31903 asthenosphere; 31904 continental crust; 31905 oceanic crust; 31906 upper mantle; 31907 lower mantle; 31908 molten iron; 31909 geosphere; 31910 transition zone; 31913 solid core; 31914 liquid core
+
+T earth_s_layers | the four layers of the earth | Exactly: crust, mantle, outer core, inner core.
+W: 28647 crust; 31899 outer core; 31900 inner core; 56617 mantle [earth layer]
+
+T erosion_words | erosion words
+W: 1903 canyon; 1904 gulch; 1905 arroyo [dry gully]; 1911 glacier [ice]; 1944 delta [river]; 1951 badlands [terrain]; 1961 bluff [landform]; 15005 abrasion; 21371 attrition; 30137 topsoil; 30157 gully [channel]; 30172 sinkhole; 30850 scree; 30865 oxbow lake; 30887 hoodoo; 30894 sand dune; 31002 sea stack; 31074 headland; 31080 wave-cut platform; 31610 landslide [land collapse]; 31915 erosion; 31916 weathering [erosion]; 31918 sediment; 31919 deposition [erosion]; 31920 runoff [water runoff]; 31921 silt; 31922 wind; 31923 coastal; 31924 hydraulic action; 31925 river bank; 31926 frost wedging; 31927 freeze-thaw; 31928 wear away (verb); 31929 wear down (verb); 31930 rill; 31931 meander [river] (verb); 31932 deflation; 31933 denudation; 31934 mass wasting; 31935 slump; 31936 undercut [erosion]; 50075 plunge pool [waterfall basin]; 50096 scour [erode] (verb); 60433 saltation [erosion]; 60434 solifluction; 60435 exfoliation; 60436 interlocking spurs; 60437 lateral; 60438 cavitation
+G: 31928 31929; 1903 1904
+
+T geothermal_words | geothermal words | geyser, hot spring, fumarole, mud pool, steam vent, sulfur, onsen
+W: 1938 geyser [landform]; 2067 sulfur; 2167 Iceland; 16281 hot water; 16570 steam [vapor]; 28453 spa [hot tub]; 31848 fumarole; 31938 hot spring; 31939 mud pool; 31940 steam vent; 31941 onsen; 31942 Old Faithful [geyser]; 31943 Yellowstone; 31944 Rotorua; 31945 geothermal energy; 31946 thermal spring; 31947 hot pool; 31948 mud pot; 31949 boiling mud; 31950 sinter; 31951 travertine terrace; 31952 Blue Lagoon; 31953 Pamukkale; 31954 Strokkur [geyser]; 31955 hydrothermal vent; 31956 geothermal plant; 31957 thermal bath; 31958 mineral spring; 31959 fissure; 31960 Beppu; 31961 ground source heat; 31962 Wai-O-Tapu; 60439 solfatara; 60440 mofette; 60441 Larderello; 60442 Wairakei; 60443 binary cycle; 60444 dry steam; 60445 geothermal gradient; 60563 Cotton Castle
+G: 31953 60563
+
+T soil_words | soil words | clay, loam, silt, peat, humus, topsoil, subsoil, loess, compost
+W: 1366 earthworm; 1836 compost (verb); 1837 mulch (verb); 1839 fertilizer; 2053 gravel [crushed stone]; 2063 sand [sediment]; 2064 clay [soil]; 28051 mud [dirt]; 30136 humus; 30137 topsoil; 30903 permafrost; 31782 bedrock; 31921 silt; 31964 loam; 31965 peat; 31966 subsoil; 31967 loess; 31968 manure; 31969 Sandy; 31971 chalky; 31972 horizon; 31973 leaf mold; 31975 worm castings; 31976 loamy; 31977 dirt [soil]; 31978 nutrients; 31979 aeration; 31980 drainage; 31981 tilth; 31982 podzol; 31983 chernozem; 31984 regolith; 31985 marl; 31986 silty; 42122 pedology; 60446 rhizosphere; 60447 laterite; 60448 gley; 60449 hardpan; 60450 caliche; 60451 vertisol; 60452 terra preta; 60453 mycorrhiza; 60454 duff (adjective); 65517 potting mix
+
+T water_cycle_words | water cycle words | evaporation, condensation, precipitation, runoff, groundwater, aquifer
+W: 1908 river [water]; 1909 lake; 1965 rain [weather]; 1966 rainfall; 1970 cloud [weather]; 2002 humidity; 2013 dew; 2041 dew point; 7421 reservoir; 30152 stream [woodland]; 30879 watershed; 31223 precipitation [weather]; 31920 runoff [water runoff]; 31988 evaporation; 31990 condensation; 31991 groundwater; 31992 aquifer; 31993 transpiration; 31994 infiltration; 31995 percolation; 31996 sublimation; 31999 snowmelt; 32000 water table; 32001 evapotranspiration; 32002 surface water; 32003 hydrologic cycle; 32004 glacier melt; 32005 interception [rain catch]; 32006 hydrosphere; 32007 water cycle; 32008 collection [water]; 40475 vapor; 60374 atmospheric river; 60455 stemflow; 60456 throughfall; 60457 baseflow; 60458 overland flow; 60459 vadose zone; 60460 advection; 60461 recharge
+
+T layers_of_the_atmosphere | layers of the atmosphere | troposphere, stratosphere, mesosphere, thermosphere, exosphere
+W: 32009 troposphere; 32010 stratosphere [atmosphere layer]; 32011 mesosphere; 32012 thermosphere; 32013 exosphere
+
+T layers_of_a_rainforest | layers of a rainforest | emergent layer, canopy, understory, forest floor
+W: 30037 canopy [forest]; 30154 understory; 32014 emergent layer; 32016 forest floor; 32029 rainforest floor
+G: 32016 32029
+
+T types_of_volcano | types of volcano | shield, cinder cone, composite, lava dome, caldera
+W: 31843 caldera; 31860 stratovolcano; 32018 shield; 32019 cinder cone; 32020 scoria cone; 32022 composite; 32023 lava dome; 32024 volcanic dome
+G: 32023 32024; 32019 32020
+
+T rainforest | rainforest
+W: 219 jaguar [animal]; 982 monkey [animal]; 983 gorilla; 1017 sloth [animal]; 1023 orangutan; 1036 okapi; 1037 tapir; 1038 capybara; 1065 parrot; 1079 toucan; 1119 hornbill; 1151 chameleon; 1161 anaconda; 1167 tree frog; 1216 piranha; 1414 leafcutter ant; 1658 mahogany [wood]; 1698 orchid; 1773 vine [plant]; 1816 liana; 1817 bromeliad; 1824 epiphyte; 2002 humidity; 7772 ocelot; 7811 howler monkey; 8263 macaw; 8334 bird of paradise [bird]; 8640 poison dart frog; 16749 cacao; 28105 jungle [forest]; 30016 kapok; 30023 strangler fig; 30037 canopy [forest]; 30154 understory; 32016 forest floor; 32025 Amazon [region]; 32026 Congo [rainforest]; 32027 Borneo; 32028 tropical [hot climate] (adjective); 32029 rainforest floor; 50331 buttress root [tree]
+G: 32016 32029
+
+T ocean | ocean
+W: 480 octopus [animal]; 1071 seagull; 1072 gull; 1215 shark [fish]; 1284 whale [animal]; 1285 dolphin [sea mammal]; 1286 jellyfish; 1287 starfish; 1288 sea star; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 1292 kelp; 1293 sea turtle; 1301 krill; 1302 plankton; 1319 anglerfish; 1329 manta ray; 8805 gulper eel; 8831 vampire squid; 18034 brine (verb); 28110 sea [water body]; 31123 undertow; 31124 gulf stream; 31127 riptide; 31128 current [water]; 31131 whirlpool [water current]; 31132 gyre; 31133 upwelling; 31144 tide; 31589 bioluminescence; 31955 hydrothermal vent; 32031 coral reef; 32033 seabed; 32036 trench [ocean]; 32037 abyss; 32038 salt water; 32040 Pacific [ocean]; 32042 Indian Ocean [ocean]; 32043 continental shelf; 32044 seamount; 32046 abyssal plain; 32047 salinity; 32048 mid-ocean ridge; 32178 Southern Ocean; 36995 Atlantic; 37013 Sargasso Sea; 43383 wave [water]; 60462 thermocline; 60463 halocline; 60464 Mariana Trench; 60465 Challenger Deep; 60466 marine snow; 63825 Arctic [polar sea]; 66995 swell
+G: 1287 1288; 1071 1072
+
+T marine_animals | marine animals
+W: 480 octopus [animal]; 1215 shark [fish]; 1284 whale [animal]; 1285 dolphin [sea mammal]; 1286 jellyfish; 1287 starfish; 1288 sea star; 1293 sea turtle; 1301 krill; 1302 plankton; 1319 anglerfish; 1329 manta ray; 8805 gulper eel; 8831 vampire squid
+
+T seafloor_features | seafloor features
+W: 31955 hydrothermal vent; 32034 ocean floor; 32036 trench [ocean]; 32037 abyss; 32043 continental shelf; 32044 seamount; 32046 abyssal plain; 32048 mid-ocean ridge; 60464 Mariana Trench; 60465 Challenger Deep
+
+T moving_water | water movements
+W: 31123 undertow; 31124 gulf stream; 31127 riptide; 31128 current [water]; 31131 whirlpool [water current]; 31132 gyre; 31133 upwelling; 31144 tide; 32045 swell [ocean] (adjective); 43383 wave [water]
+
+T desert | desert
+W: 1002 camel [animal]; 1082 vulture [bird]; 1137 lizard [reptile]; 1157 rattlesnake; 1174 gila monster; 1184 horned lizard; 1363 scorpion [arachnid]; 1669 Joshua tree [tree]; 1768 cactus; 1785 tumbleweed; 1786 Russian thistle; 1802 yucca; 1905 arroyo [dry gully]; 1929 dune; 1937 oasis [desert]; 1950 mesa; 1962 butte; 7847 jerboa; 7858 kangaroo rat; 7960 coyote [animal]; 7967 fennec fox; 9731 roadrunner; 9783 addax; 21107 caravan [desert convoy]; 21112 Taklamakan; 27592 sidewinder [snake]; 29280 mirage; 29980 date palm; 30576 saguaro [cactus]; 30694 sagebrush; 30696 ocotillo; 30883 wadi; 30885 playa; 30886 sandstorm; 30888 erg [sand sea]; 30889 hamada; 30892 inselberg; 30895 barchan; 32049 Sahara [desert]; 32050 Gobi [desert]; 32051 Mojave [desert]; 32052 Sonoran [desert]; 32053 Kalahari [desert]; 32054 Atacama [desert]; 32055 nomad; 36566 Empty Quarter; 36567 Rub al Khali
+G: 36566 36567; 1785 1786
+
+T savanna | savanna
+W: 215 lion; 217 leopard [big cat]; 218 cheetah [animal]; 979 elephant [animal]; 980 giraffe; 981 zebra [animal]; 988 rhinoceros [animal]; 1020 hyena; 1021 meerkat; 1025 antelope [animal]; 1030 wildebeest; 1031 gnu; 1032 mongoose; 1033 jackal; 1034 aardvark; 1061 kudu; 1073 ostrich; 1082 vulture [bird]; 1657 acacia; 1661 baobab; 1662 monkey bread tree; 1935 grassland; 2176 Kenya; 2928 safari [expedition]; 7773 serval; 7774 caracal; 7923 gazelle; 7924 impala [animal]; 7925 eland; 7926 oryx; 7930 warthog [animal]; 8106 secretary bird; 9229 termite mound; 9630 hartebeest; 9633 dik-dik; 9636 Cape buffalo; 9794 topi; 9795 marabou stork; 25309 dry season; 31527 migration [animals]; 31651 watering hole [water source]; 32057 Serengeti [plain]; 32058 Masai Mara [reserve]; 32059 tall grass; 32060 Tanzania; 51103 hamerkop
+G: 1030 1031; 1661 1662
+
+T polar_regions | polar regions
+W: 118 igloo; 264 husky [dog]; 1027 walrus; 1028 seal [animal]; 1064 penguin [bird]; 1301 krill; 1303 narwhal; 1471 reindeer; 1911 glacier [ice]; 1921 tundra [biome]; 1941 fjord [landform]; 1967 snow [weather]; 1968 snowfall; 1996 blizzard; 1997 snowstorm; 2400 North Pole; 2401 South Pole [polar]; 7837 lemming; 7932 musk ox; 7943 polar bear; 7963 arctic fox; 8097 snowy owl; 8122 skua; 8234 emperor penguin; 8236 Adelie penguin; 8300 ptarmigan; 8902 leopard seal; 9450 sled dog; 9704 Weddell seal; 9705 snow petrel; 9730 caribou; 21005 Amundsen; 21006 Shackleton; 21052 ice floe; 21054 Ross Ice Shelf; 29374 iceberg; 29903 Aurora [sky lights]; 30901 ice sheet; 30902 crevasse; 30903 permafrost; 30904 pack ice; 30905 ice shelf; 30912 nunatak; 30918 polynya; 32061 Arctic [region]; 32062 Antarctica [continent]; 32063 Greenland [Arctic island]; 32064 Svalbard; 32065 midnight sun; 32066 polar night; 32067 research station; 32179 brash ice; 39079 ice [frozen water]
+
+T animals_of_the_far_north | animals of the far north
+W: 264 husky [dog]; 1027 walrus; 1303 narwhal; 1471 reindeer; 7837 lemming; 7932 musk ox; 7943 polar bear; 7963 arctic fox; 8097 snowy owl; 8300 ptarmigan; 9450 sled dog; 9730 caribou
+
+T animals_of_the_far_south | animals of the far south
+W: 1064 penguin [bird]; 1301 krill; 8122 skua; 8234 emperor penguin; 8236 Adelie penguin; 8902 leopard seal; 9704 Weddell seal; 9705 snow petrel
+
+T frozen_formations | frozen formations
+W: 1911 glacier [ice]; 21052 ice floe; 21054 Ross Ice Shelf; 29374 iceberg; 30901 ice sheet; 30902 crevasse; 30904 pack ice; 30905 ice shelf; 30912 nunatak; 30918 polynya; 32179 brash ice; 39079 ice [frozen water]
+
+T wetlands | wetlands
+W: 1010 beaver [dam-building rodent]; 1086 heron; 1115 spoonbill; 1116 ibis [bird]; 1132 bittern; 1138 crocodile; 1140 alligator; 1144 frog [amphibian]; 1358 dragonfly; 1671 mangrove; 1784 reed [plant]; 1800 pitcher plant; 1812 sundew; 1813 sphagnum; 1818 sedge; 1924 swamp [wooded wetland]; 1925 marsh [wetland]; 1926 bog [wetland]; 1927 mire; 1936 wetland; 1944 delta [river]; 1945 estuary; 1947 lagoon; 1955 fen; 7842 muskrat; 8197 egret; 9767 bulrush; 15707 cattail; 28728 bayou; 30651 sawgrass; 30866 floodplain; 31082 mudflat; 31083 salt marsh; 31965 peat; 32069 Everglades; 32070 marshland; 32071 waterfowl; 32072 wader; 32073 wet meadow; 32074 carr; 32075 slough [wetland]; 32076 quagmire; 32077 morass; 37673 Pantanal; 57249 Okavango; 60467 marsh harrier; 60468 Ramsar
+G: 1926 1927
+
+T mountains | mountains
+W: 1746 edelweiss; 1900 valley [landform]; 1902 vale; 1906 cliff; 1911 glacier [ice]; 1916 peak [mountain]; 1918 plateau [landform]; 1930 ridge [landform]; 1933 summit [mountaintop]; 1959 foothills; 1963 tarn [mountain lake]; 1964 moraine; 7841 marmot; 7927 ibex; 7929 chamois [animal]; 7934 mountain goat; 18416 mont blanc [mountain]; 20435 Andes; 21053 crampons; 29104 mountaineer; 30155 treeline; 30842 slope [hill]; 30843 pass [mountain]; 30844 crag; 30845 col [mountain]; 30846 arete; 30847 cirque; 30849 cwm [valley]; 30850 scree; 30851 snowline; 30854 massif; 30858 couloir; 30902 crevasse; 30908 serac; 32079 Everest [mountain]; 32080 Alps; 32081 Rockies [mountain range]; 32082 Himalayas; 32083 K2 [mountain]; 32084 Matterhorn; 32085 Kilimanjaro [mountain]; 32086 Denali; 32087 Fuji [mountain]; 32088 alpine meadow; 32089 snowcap; 32090 base camp; 32091 sherpa [mountain guide]; 32092 fell [hill]; 32093 saddle [mountain]; 43543 avalanche [skiing]; 60469 orogeny
+G: 1900 1902; 30847 30849
+
+T famous_mountains_and_ranges | famous mountains and ranges
+W: 18416 mont blanc [mountain]; 20435 Andes; 32079 Everest [mountain]; 32080 Alps; 32081 Rockies [mountain range]; 32082 Himalayas; 32083 K2 [mountain]; 32084 Matterhorn; 32085 Kilimanjaro [mountain]; 32086 Denali; 32087 Fuji [mountain]
+
+T landforms | mountain landforms
+W: 1900 valley [landform]; 1902 vale; 1906 cliff; 1911 glacier [ice]; 1916 peak [mountain]; 1918 plateau [landform]; 1930 ridge [landform]; 1933 summit [mountaintop]; 1959 foothills; 1963 tarn [mountain lake]; 1964 moraine; 30842 slope [hill]; 30843 pass [mountain]; 30844 crag; 30845 col [mountain]; 30846 arete; 30847 cirque; 30849 cwm [valley]; 30850 scree; 30854 massif; 30858 couloir; 30902 crevasse; 30908 serac; 32092 fell [hill]; 32093 saddle [mountain]
+
+T meadow | meadow | grass, poppies, clover, buttercups, butterflies, bees, hay, skylark
+W: 778 sorrel [herb]; 1120 lapwing; 1342 bee [insect]; 1348 butterfly [insect]; 1351 ladybug; 1353 lady beetle; 1354 grasshopper [insect]; 1355 cricket [insect]; 1358 dragonfly; 1383 bumblebee; 1695 daisy; 1698 orchid; 1701 poppy [red flower]; 1723 buttercup [flower]; 1727 dandelion [flower]; 1732 foxglove; 1740 lupin [flower]; 1747 cornflower [flower]; 1769 grass [plant]; 1776 clover; 1777 thistle [plant]; 7838 vole; 7850 field mouse; 8058 hare; 8150 skylark; 8187 meadowlark; 9036 meadow brown; 15689 yarrow; 25769 scythe; 28281 harebell; 28409 field [open land]; 30354 cowslip; 30355 oxeye daisy; 30356 meadowsweet; 30360 speedwell; 30364 bird's-foot trefoil; 30365 knapweed; 30367 ragwort; 30492 cuckoo flower; 30638 fescue; 31498 hay [dried grass]; 31513 haymaking; 32094 wildflower; 32097 corncrake; 32098 timothy grass; 32099 red clover; 60470 yellow rattle; 60471 ragged robin; 60472 lady's bedstraw; 60473 burnet moth; 60474 snake's head fritillary
+G: 1351 1353
+
+T grassland_blooms | grassland blooms
+W: 1695 daisy; 1701 poppy [red flower]; 1723 buttercup [flower]; 1727 dandelion [flower]; 1732 foxglove; 1740 lupin [flower]; 1747 cornflower [flower]; 1776 clover; 15689 yarrow; 28281 harebell; 30354 cowslip; 30355 oxeye daisy; 30356 meadowsweet; 30360 speedwell; 30364 bird's-foot trefoil; 30365 knapweed; 30367 ragwort; 30492 cuckoo flower; 60470 yellow rattle; 60471 ragged robin; 60472 lady's bedstraw; 60474 snake's head fritillary
+
+T minibeasts | minibeasts
+W: 1342 bee [insect]; 1348 butterfly [insect]; 1351 ladybug; 1353 lady beetle; 1354 grasshopper [insect]; 1355 cricket [insect]; 1358 dragonfly; 1383 bumblebee; 9036 meadow brown; 60473 burnet moth
+
+T pond | pond | frog, tadpole, newt, lily pad, reeds, dragonfly, pondweed, moorhen, frogspawn
+W: 155 duck [bird]; 1066 swan; 1086 heron; 1144 frog [amphibian]; 1145 toad [animal]; 1147 newt; 1148 eft; 1163 tadpole; 1211 smooth newt; 1214 goldfish; 1223 carp; 1239 koi; 1273 stickleback; 1358 dragonfly; 1367 snail; 1388 mayfly; 1421 water boatman; 1784 reed [plant]; 1791 water lily; 1810 duckweed; 1826 hornwort; 8199 moorhen; 8675 lily pad; 8676 frogspawn; 8682 great crested newt; 8868 water flea; 8966 algae; 9003 diving beetle; 9014 whirligig beetle; 9123 damselfly; 9207 caddisfly; 9244 leech; 9766 pondweed; 9767 bulrush; 9768 daphnia; 9772 water scorpion; 9773 backswimmer; 15707 cattail; 17734 mallard [duck]; 32100 pond life; 32101 water snail; 32102 pond dipping; 32103 water strider; 60475 ramshorn snail
+G: 1147 1148
+
+T taiga | taiga | spruce, larch, birch, wolf, lynx, moose, sable, Siberian tiger
+W: 994 bear [animal]; 995 wolf [animal]; 1008 moose; 1039 lynx [cat]; 1045 wolverine; 1063 owl; 1471 reindeer; 1629 pine [tree]; 1634 birch; 1638 fir; 1639 spruce; 1644 evergreen; 1653 larch; 1672 conifer; 1690 tamarack; 1926 bog [wetland]; 1927 mire; 1967 snow [weather]; 1968 snowfall; 2128 Canada; 7751 Siberian tiger; 7752 Amur tiger; 7922 elk [animal]; 7944 brown bear; 7945 grizzly; 7946 grizzly bear; 7947 Kodiak bear; 7948 Kodiak; 7949 American black bear; 7950 black bear; 7951 cinnamon bear; 7964 grey wolf; 7966 timber wolf; 8000 marten; 8061 snowshoe hare; 8176 crossbill; 8305 capercaillie; 9730 caribou; 15706 Labrador tea; 17184 lingonberry; 17185 cowberry; 17186 cloudberry; 30087 pine cone; 30176 boreal forest; 30237 lumberjack; 30903 permafrost; 31816 Yukon [territory]; 32105 sable [animal]; 32106 Siberia; 32107 muskeg; 32108 coniferous (adjective); 32109 fur trapper; 32110 Lake Baikal; 32111 Alaska [state]; 50534 wood bison; 50571 great grey owl; 60476 black spruce; 60477 jack pine; 60478 Siberian jay; 60479 pine grosbeak; 64801 Cinnamon [colour morph]
+G: 7950 7949 64801 7951; 7964 7966; 17184 17185; 7944 7945 7946 7948 7947; 7751 7752; 1926 1927
+
+T needle_leaf_trees | needle-leaf trees
+W: 1629 pine [tree]; 1638 fir; 1639 spruce; 1644 evergreen; 1653 larch; 1672 conifer; 1690 tamarack; 60476 black spruce; 60477 jack pine
+
+T oasis | oasis | date palm, well, spring, camel, caravan, shade, pool, nomad
+W: 359 date [fruit]; 861 water [liquid]; 1002 camel [animal]; 1469 dromedary; 1657 acacia; 1907 desert [wasteland]; 2063 sand [sediment]; 2306 Timbuktu; 2520 caravanserai; 3023 tent [shelter]; 16365 shade [sun]; 20457 Silk Road; 20527 irrigation; 21107 caravan [desert convoy]; 21114 trade route; 29280 mirage; 29974 fig tree; 29980 date palm; 31629 waterhole; 31991 groundwater; 31992 aquifer; 32055 nomad; 32112 well [water source]; 32113 spring [water source]; 32114 pool [water]; 32115 watering place; 32116 palm tree; 32118 Bedouin [desert nomad]; 32119 Siwa; 32120 Palmyra; 32121 camel train; 32122 rest stop; 32123 Tuareg; 32124 tamarisk; 32125 palm grove; 32126 Liwa; 32127 Tozeur; 36073 Turpan; 60480 qanat; 60481 foggara; 60482 falaj; 60483 Kharga; 60484 Dakhla; 60485 Ein Gedi; 60486 Al-Ahsa
+G: 32114 32115
+
+T outback | outback | red dirt, spinifex, billabong, kangaroo, dingo, road train, station, termite mound
+W: 151 sheep [farm animal]; 984 kangaroo; 1026 wombat; 1095 emu [bird]; 1114 cockatoo; 1198 thorny devil; 2358 Uluru; 2359 Ayers Rock; 2640 pickup truck; 3161 road train; 6032 didgeridoo; 7898 bilby; 7899 red kangaroo; 7961 dingo; 8276 galah [bird]; 8560 perentie; 8561 goanna; 9229 termite mound; 9703 brolga; 22729 boomerang; 22730 walkabout; 22745 Kata Tjuta; 30645 spinifex; 30967 billabong; 31257 dust storm; 31652 dry creek; 32128 red dirt; 32129 station [farm]; 32130 bush [countryside]; 32131 swagman; 32132 swaggie; 32133 jackaroo; 32135 jillaroo; 32136 sheep station; 32137 cattle station; 32138 flying doctor; 32139 Alice Springs; 32140 Coober Pedy; 32141 drover; 32142 swag [bedroll]; 32143 gibber plain; 32144 mulga; 32145 saltbush; 32146 Nullarbor; 36246 Kimberley [region]; 36256 Pilbara; 50585 wedge-tailed eagle; 60169 mallee; 60487 gidgee; 60488 Birdsville; 60489 Broken Hill; 60490 artesian bore; 60491 fossicking; 60492 stockman
+G: 32131 32132; 2358 2359
+
+T australian_wildlife | australian wildlife
+W: 984 kangaroo; 1026 wombat; 1095 emu [bird]; 1114 cockatoo; 1198 thorny devil; 7898 bilby; 7899 red kangaroo; 7961 dingo; 8276 galah [bird]; 8560 perentie; 8561 goanna; 9703 brolga; 50585 wedge-tailed eagle
+
+T places_in_remote_australia | places in remote australia
+W: 2358 Uluru; 2359 Ayers Rock; 22745 Kata Tjuta; 32139 Alice Springs; 32140 Coober Pedy; 32146 Nullarbor; 36246 Kimberley [region]; 36256 Pilbara; 60488 Birdsville; 60489 Broken Hill
+
+T andes | andes | llama, alpaca, condor, vicuna, glacier, terraces, altiplano, puna
+W: 160 llama; 161 alpaca [animal]; 665 quinoa [grain]; 1042 chinchilla; 1105 condor [bird]; 1911 glacier [ice]; 2158 Peru; 2159 Chile; 2303 La Paz; 2333 Machu Picchu; 2561 Andean condor; 4920 poncho; 7569 Quechua; 7591 Aymara; 7938 guanaco; 7939 vicuna [animal]; 7958 spectacled bear; 7959 Andean bear; 9721 rhea [bird]; 9724 viscacha; 10551 charango; 10564 pan flute; 10565 panpipes; 20433 Inca [Andean empire]; 20434 Cusco; 20451 Lake Titicaca; 30182 cloud forest; 32054 Atacama [desert]; 32147 terraces; 32148 altiplano; 32149 puna; 32150 Aconcagua; 32151 Bolivia; 32152 Ecuador; 32153 Quito; 32154 Cotopaxi; 32155 Chimborazo; 32156 salt flats; 32158 mountain range; 32159 Torres del Paine; 32160 Inca Trail; 32161 Sacred Valley; 36710 Colca Canyon; 37668 Patagonia [region]; 37671 Salar de Uyuni; 60493 Illimani; 60494 Huascarán
+G: 10564 10565; 7958 7959; 20433 32160; 1105 2561
+
+T prairie | prairie | bison, prairie dog, pronghorn, tallgrass, tornado, ranch, meadowlark
+W: 658 wheat [cereal]; 1006 bison; 1014 badger [animal]; 1059 pronghorn; 1080 hawk [bird]; 1696 sunflower; 1785 tumbleweed; 1786 Russian thistle; 1917 plain [landscape]; 1935 grassland; 1940 steppe; 1977 thunderstorm; 1978 electrical storm; 1994 tornado [storm]; 2475 windmill [building]; 6748 pioneer; 7840 prairie dog; 7960 coyote [animal]; 7976 swift fox; 8009 black-footed ferret; 8187 meadowlark; 8307 sage grouse; 8308 prairie chicken; 9784 burrowing owl; 12534 cowboy [cattle herder]; 23010 cattle drive; 23013 covered wagon; 27593 sodbuster; 29304 ranch [farm]; 30342 coneflower; 30640 switchgrass; 30956 great plains; 32162 tallgrass; 32163 sod house; 32165 cornfield; 32166 bluestem; 32167 homesteader; 32168 Kansas [state]; 32169 Nebraska; 32170 open range; 32172 Midwest; 36208 Saskatchewan [province]; 51269 bobolink; 60209 buffalo grass; 60495 dickcissel; 60496 blue grama; 60497 Flint Hills; 60498 horned lark
+G: 1785 1786
+
+T heartland_plants | plains plants
+W: 658 wheat [cereal]; 1696 sunflower; 1785 tumbleweed; 1786 Russian thistle; 30342 coneflower; 30640 switchgrass; 32162 tallgrass; 32166 bluestem; 60209 buffalo grass; 60496 blue grama
+
+T heartland_creatures | plains animals
+W: 1006 bison; 1014 badger [animal]; 1059 pronghorn; 1080 hawk [bird]; 7840 prairie dog; 7960 coyote [animal]; 7976 swift fox; 8009 black-footed ferret; 8187 meadowlark; 8307 sage grouse; 8308 prairie chicken; 9784 burrowing owl; 51269 bobolink; 60495 dickcissel; 60498 horned lark
+
+T settler_life | frontier life
+W: 2475 windmill [building]; 6748 pioneer; 12534 cowboy [cattle herder]; 23010 cattle drive; 23013 covered wagon; 27593 sodbuster; 29304 ranch [farm]; 32163 sod house; 32167 homesteader; 32170 open range; 32171 prairie schooner
+
+T antarctic_coast | antarctic coast | penguin, seal, iceberg, krill, ice shelf, research station, skua
+W: 1028 seal [animal]; 1064 penguin [bird]; 1301 krill; 1304 orca; 1305 killer whale; 1911 glacier [ice]; 1996 blizzard; 1997 snowstorm; 8122 skua; 8234 emperor penguin; 8236 Adelie penguin; 8237 chinstrap penguin; 8897 fur seal; 8898 elephant seal; 8902 leopard seal; 9704 Weddell seal; 9705 snow petrel; 9706 crabeater seal; 9708 sheathbill; 10175 rookery; 29374 iceberg; 30904 pack ice; 30905 ice shelf; 30909 sea ice; 30917 calving; 30918 polynya; 32062 Antarctica [continent]; 32067 research station; 32173 Ross Sea; 32174 McMurdo Station; 32175 fast ice; 32176 colony [animals]; 32177 tabular iceberg; 32178 Southern Ocean; 32179 brash ice; 64790 Killer [orca]
+G: 1304 64790 1305
+
+T pollution_words | pollution words
+W: 2011 haze; 2012 smog; 22928 smokestack; 23976 landfill; 28255 sewage; 30277 smoke [fire]; 31920 runoff [water runoff]; 32180 oil spill; 32181 litter [rubbish]; 32182 exhaust fumes; 32183 acid rain; 32184 toxic waste; 32185 pollutant; 32186 emissions; 32187 microplastics; 32188 contamination; 32189 noise; 32191 soot [residue]; 32192 particulates; 32193 carbon monoxide; 32194 effluent; 32196 dumping; 32197 air quality; 32198 nitrogen dioxide; 32199 eutrophication; 32200 slick [oil]; 32201 fallout; 32202 pesticide; 32203 greywater; 32204 dioxin; 32205 PCB [pollutant]; 32206 particulate matter; 65519 light [night glare]; 67158 illegal dumping
+
+T recycling_words | recycling words
+W: 1836 compost (verb); 4567 newspaper; 4568 paper [newspaper]; 4569 rag [newspaper]; 4570 daily [newspaper]; 4571 gazette [official journal]; 23860 rinse (verb); 23976 landfill; 23977 recycle (verb); 23978 bottle bank; 23982 cardboard; 23983 aluminum can; 24128 upcycle (verb); 31065 plastic bottle; 31158 salvage; 32207 reuse (verb); 32208 reduce [waste] (verb); 32210 glass jar; 32211 deposit scheme; 32212 curbside collection; 32214 scrap metal; 32215 recycling plant; 32216 repurpose (verb); 32217 pulp [paper]; 32218 bale [bundle]; 32219 downcycle (verb); 32220 closed loop; 32221 MRF [recycling]; 32222 refillable (adjective); 32223 reclaimed (adjective); 32224 recyclable (adjective); 32225 single stream; 32226 feedstock; 32227 reprocess (verb); 41011 sort [classify] (verb); 65520 bin [sorted waste]
+G: 4567 4570 4568 4569
+
+T renewable_energy | renewable energy
+W: 2475 windmill [building]; 7380 dam [barrier]; 23592 heat pump; 32228 solar power; 32229 wind turbine; 32230 hydropower; 32231 hydroelectric power; 32232 geothermal (adjective); 32233 biomass; 32234 tidal power; 32235 wind farm; 32236 solar panel; 32237 biofuel; 32238 wave; 32240 photovoltaic (adjective); 32242 solar farm; 32243 offshore wind; 32244 hydrogen; 32245 ethanol; 32246 biogas; 32247 battery storage; 32248 solar cell; 32249 rotor blade [wind turbine]; 32250 tidal barrage; 32251 concentrated solar; 32252 run-of-river (adjective); 32253 wave buoy; 32254 net metering; 32255 feed-in tariff; 32256 green hydrogen; 32257 biodiesel; 32258 geothermal well
+G: 32230 32231
+
+T conservation_words | conservation words
+W: 1614 extinction; 1936 wetland; 28927 habitat; 30175 rainforest; 30243 reforestation; 32259 conservation; 32260 wildlife reserve; 32261 national park; 32262 protected area; 32263 biodiversity; 32264 sanctuary [refuge]; 32265 rewilding; 32266 poaching; 32267 ranger; 32268 nature reserve; 32269 captive breeding; 32270 wildlife corridor; 32271 marine park; 32272 endangered species; 32273 ecosystem; 32274 restoration [habitat]; 32275 stewardship; 32276 seed bank; 32277 anti-poaching (adjective); 32278 biosphere reserve; 32279 Ramsar site; 32280 IUCN; 32281 WWF; 32282 Red List; 32283 green belt; 32284 invasive species; 32285 culling; 32286 reintroduction; 32287 sustainable (adjective); 32288 gene bank; 32289 buffer zone; 32290 SSSI; 41050 keystone species; 60499 CITES; 60500 flagship species; 60501 bycatch; 60502 ex situ (adjective); 60503 umbrella species; 60504 Natura 2000
+G: 32266 32277
+
+T climate_words | climate words
+W: 1998 heatwave; 2000 drought; 7480 anomaly; 22457 albedo [reflectivity]; 30244 deforestation; 30269 wildfire; 30900 ice cap; 30903 permafrost; 31135 el nino; 31136 la nina; 32291 global warming; 32292 climate change; 32293 greenhouse effect; 32294 carbon footprint; 32295 sea level rise; 32296 carbon dioxide; 32297 greenhouse gas; 32298 melting glacier; 32299 methane; 32300 carbon neutral (adjective); 32301 net zero; 32302 Paris Agreement; 32303 IPCC; 32304 tipping point; 32305 carbon offset; 32306 carbon tax; 32307 climate refugee; 32308 flooding; 32309 radiative forcing; 32310 ocean acidification; 32311 coral bleaching; 32312 Keeling Curve; 32313 emissions target; 32314 decarbonize (verb); 32316 COP [climate summit]; 32317 Kyoto Protocol; 32318 mitigation; 32319 adaptation
+
+T endangered_animals | endangered animals
+W: 216 tiger [animal]; 218 cheetah [animal]; 223 snow leopard; 1001 giant panda; 1004 chimpanzee; 1023 orangutan; 1035 pangolin; 1170 axolotl; 1293 sea turtle; 1306 blue whale; 7751 Siberian tiger; 7752 Amur tiger; 7755 Asiatic lion; 7770 Amur leopard; 7784 Iberian lynx; 7805 bonobo; 7823 mountain gorilla; 7887 vaquita; 7935 takin; 7943 polar bear; 8115 California condor; 8231 kakapo; 8610 loggerhead turtle; 8912 hawksbill turtle; 8974 bluefin tuna; 9638 African elephant; 9682 red panda; 9686 saola; 9739 whooping crane; 9792 Sumatran rhino; 32320 black rhino; 32321 Javan rhino; 32322 northern white rhino; 32323 Hawaiian monk seal; 32324 Philippine eagle; 32325 Cross River gorilla
+G: 7751 7752
+
+T fossil_fuels | fossil fuels | coal, oil, natural gas, peat, lignite, anthracite, petroleum, tar sands
+W: 2054 coal; 24060 bitumen; 29349 diesel [fuel]; 30100 charcoal [fuel]; 31965 peat; 32326 oil [fuel]; 32327 natural gas; 32328 lignite; 32329 anthracite [coal]; 32330 petroleum [fuel]; 32331 tar sands; 32332 crude oil; 32333 kerosene; 32334 bituminous coal; 32335 shale gas; 32336 fracking; 32339 drilling; 32340 refinery; 32341 pipeline; 32342 butane; 32343 LNG; 32344 natural gas liquids; 32345 coke [fuel]; 32347 oil shale; 32348 brent crude; 32349 methane hydrate; 32350 heating oil [fuel oil]; 32352 wellhead; 46781 propane [fuel]; 50000 gasoline; 58361 naphtha; 58362 bunker; 60505 sour crude; 60506 sweet crude; 60507 coalbed methane; 60508 cannel coal; 60509 gilsonite; 63828 jet [aviation kerosene]
+
+T green_living_words | green living words | composting, upcycling, carpooling, reusable, refill, solar panel, rewilding
+W: 1884 rain barrel; 6347 minimalism; 15340 refill; 15965 cycling; 23179 insulation; 23257 clothesline [laundry]; 24002 upcycling; 28302 thrift; 32236 solar panel; 32265 rewilding; 32353 composting; 32354 carpooling; 32355 reusable (adjective); 32356 reusable bag; 32357 public transport; 32358 LED bulb; 32359 secondhand (adjective); 32360 vegetable garden; 32362 electric car; 32363 bamboo toothbrush; 32364 reusable cup; 32365 beeswax wrap; 32366 zero waste (adjective); 32367 clothes swap; 32368 energy saving (adjective); 32369 wormery; 32370 bokashi; 32371 low flush (adjective); 32372 smart meter; 32373 farmers market; 32375 car share; 32376 ride share [ridesharing]; 32377 repair cafe; 32378 plastic-free (adjective); 32379 refillery; 67152 draft stopper
+
+T countries | countries
+W: 2120 United States; 2122 America; 2124 United Kingdom; 2125 UK; 2126 Britain; 2127 Great Britain; 2128 Canada; 2129 Mexico [country]; 2130 Brazil [country]; 2131 Argentina; 2132 France; 2133 Germany; 2135 Italy; 2136 Spain; 2137 Portugal; 2138 Ireland; 2139 Eire; 2140 Netherlands; 2141 Holland; 2142 The Netherlands; 2143 Switzerland; 2145 Sweden; 2146 Norway; 2147 Greece; 2149 Russia; 2150 China [country]; 2151 Japan; 2153 India; 2154 Egypt; 2155 Australia [country]; 2156 New Zealand; 2157 Cuba; 2158 Peru; 2159 Chile; 2160 Colombia; 2161 Jamaica; 2162 Belgium; 2163 Austria; 2164 Denmark; 2165 Finland; 2167 Iceland; 2168 Poland; 2169 Turkey [country]; 2171 Israel; 2172 Iran; 2173 Iraq; 2174 Saudi Arabia; 2175 South Africa; 2176 Kenya; 2177 Nigeria; 2178 Morocco; 2179 Thailand; 2180 Siam; 2181 Vietnam [country]; 2182 Indonesia; 2183 Philippines; 2184 South Korea; 2185 Ukraine; 2186 Pakistan; 2187 Singapore [island country]; 2188 Myanmar; 2189 Burma; 2190 Czech Republic; 2191 Czechia; 2192 Sri Lanka; 2193 Ceylon [old country name]; 2194 Georgia [country]; 2195 Jordan [country]; 2196 Ivory Coast; 2197 Côte d'Ivoire; 2198 Mongolia; 2199 Nepal; 2200 Bhutan; 2201 Brunei; 2202 Suriname; 2203 Lesotho; 2204 Djibouti; 2205 Moldova; 2206 Vanuatu; 2207 Liechtenstein; 2208 Turkmenistan; 2209 Burkina Faso; 2210 Eswatini; 2211 Swaziland; 2212 Timor-Leste; 2213 East Timor; 2214 Kiribati; 2215 Tuvalu; 2216 Nauru; 36146 Surinam [South American country]; 36147 Aotearoa [country]
+G: 2188 2189; 2179 2180; 2124 2126 2127 2125; 2190 2191; 2140 2141 2142; 2212 2213; 2192 2193; 2202 36146; 2210 2211; 2196 2197; 2156 36147; 2120 2122; 2138 2139
+
+T european_countries | european countries
+W: 2132 France; 2133 Germany; 2135 Italy; 2136 Spain; 2137 Portugal; 2138 Ireland; 2139 Eire; 2140 Netherlands; 2141 Holland; 2142 The Netherlands; 2143 Switzerland; 2145 Sweden; 2146 Norway; 2147 Greece; 2149 Russia; 2162 Belgium; 2163 Austria; 2164 Denmark; 2165 Finland; 2167 Iceland; 2168 Poland; 2185 Ukraine; 2190 Czech Republic; 2191 Czechia; 2205 Moldova; 2207 Liechtenstein; 34303 Vatican City; 35667 Hungary; 35668 Romania; 35669 Bulgaria; 35670 Croatia; 35671 Serbia; 35672 Slovakia; 35673 Slovenia; 35674 Estonia; 35675 Latvia; 35676 Lithuania; 35677 Belarus; 35678 Albania; 35679 Luxembourg; 35680 Malta [country]; 35682 Monaco [country]; 35683 Montenegro; 35684 North Macedonia; 35685 Bosnia and Herzegovina; 35686 Andorra; 35687 San Marino; 36139 Macedonia; 36140 Bosnia; 36576 Cyprus [island]
+G: 2190 2191; 2140 2141 2142; 36140 35685; 35684 36139; 2138 2139
+
+T eastern_european_countries | eastern european countries
+W: 2149 Russia; 2168 Poland; 2185 Ukraine; 2190 Czech Republic; 2191 Czechia; 2205 Moldova; 35667 Hungary; 35668 Romania; 35669 Bulgaria; 35670 Croatia; 35671 Serbia; 35672 Slovakia; 35673 Slovenia; 35674 Estonia; 35675 Latvia; 35676 Lithuania; 35677 Belarus; 35678 Albania; 35683 Montenegro; 35684 North Macedonia; 35685 Bosnia and Herzegovina; 36139 Macedonia; 36140 Bosnia; 37962 Kosovo
+G: 2190 2191; 36140 35685; 35684 36139
+
+T western_european_countries | western european countries
+W: 47 England; 48 Scotland; 49 Wales; 50 Northern Ireland; 2124 United Kingdom; 2125 UK; 2126 Britain; 2127 Great Britain; 2132 France; 2133 Germany; 2135 Italy; 2136 Spain; 2137 Portugal; 2138 Ireland; 2139 Eire; 2140 Netherlands; 2141 Holland; 2142 The Netherlands; 2143 Switzerland; 2162 Belgium; 2163 Austria; 2207 Liechtenstein; 35679 Luxembourg; 35682 Monaco [country]; 35686 Andorra; 60511 Gibraltar
+G: 2124 2126 2127 2125; 2140 2141 2142; 2138 2139 50
+
+T balkan_countries | balkan countries
+W: 35668 Romania; 35669 Bulgaria; 35670 Croatia; 35671 Serbia; 35673 Slovenia; 35678 Albania; 35683 Montenegro; 35684 North Macedonia; 35685 Bosnia and Herzegovina; 36139 Macedonia; 36140 Bosnia
+G: 36139 35684; 36140 35685
+
+T asian_countries | asian countries
+W: 2150 China [country]; 2151 Japan; 2153 India; 2171 Israel; 2172 Iran; 2173 Iraq; 2174 Saudi Arabia; 2179 Thailand; 2180 Siam; 2181 Vietnam [country]; 2182 Indonesia; 2183 Philippines; 2184 South Korea; 2186 Pakistan; 2187 Singapore [island country]; 2188 Myanmar; 2189 Burma; 2192 Sri Lanka; 2193 Ceylon [old country name]; 2195 Jordan [country]; 2198 Mongolia; 2199 Nepal; 2200 Bhutan; 2201 Brunei; 2208 Turkmenistan; 35688 North Korea; 35689 Malaysia [Asian country]; 35690 Bangladesh; 35691 Afghanistan; 35692 Kazakhstan; 35693 Cambodia; 35694 Laos; 35695 Uzbekistan; 35696 Maldives; 35697 Syria; 35698 Lebanon; 35699 Qatar; 35700 Kuwait; 35701 Oman; 35702 Yemen; 35703 United Arab Emirates; 35704 Bahrain; 35705 Kyrgyzstan; 35706 Tajikistan; 35707 Armenia; 35708 Azerbaijan
+G: 2188 2189; 2179 2180; 2192 2193
+
+T middle_eastern_countries | middle eastern countries | including Turkey and Egypt as commonly counted
+W: 2154 Egypt; 2169 Turkey [country]; 2171 Israel; 2172 Iran; 2173 Iraq; 2174 Saudi Arabia; 2195 Jordan [country]; 35697 Syria; 35698 Lebanon; 35699 Qatar; 35700 Kuwait; 35701 Oman; 35702 Yemen; 35703 United Arab Emirates; 35704 Bahrain; 36576 Cyprus [island]; 56834 Palestine; 60512 Gaza Strip; 60513 West Bank; 60514 Kurdistan
+
+T african_countries | african countries
+W: 2154 Egypt; 2175 South Africa; 2176 Kenya; 2177 Nigeria; 2178 Morocco; 2196 Ivory Coast; 2197 Côte d'Ivoire; 2203 Lesotho; 2204 Djibouti; 2209 Burkina Faso; 2210 Eswatini; 2211 Swaziland; 21260 Madagascar; 32060 Tanzania; 35709 Ethiopia; 35710 Ghana [country]; 35711 Algeria; 35712 Tunisia; 35713 Libya; 35714 Sudan; 35715 Uganda; 35716 Rwanda; 35717 Somalia; 35718 Zimbabwe; 35719 Zambia; 35720 Mozambique; 35721 Angola [country]; 35722 Namibia; 35723 Botswana; 35724 Senegal [country]; 35725 Mali [country]; 35726 Cameroon; 35727 Congo [country]; 35728 Gabon; 35729 Liberia; 35730 Sierra Leone; 35731 Malawi; 35732 Chad [country]; 35733 Niger [country]; 35734 Guinea [country]; 35735 Togo; 35736 Benin; 35737 Burundi; 35738 Mauritania; 35739 Eritrea; 35740 Seychelles; 35741 Cape Verde; 35742 Comoros; 35743 Equatorial Guinea; 35744 Guinea-Bissau; 35745 Sao Tome and Principe
+G: 2210 2211; 2196 2197; 35734 35743 35744
+
+T west_african_countries | west african countries
+W: 2177 Nigeria; 2196 Ivory Coast; 2197 Côte d'Ivoire; 2209 Burkina Faso; 35710 Ghana [country]; 35724 Senegal [country]; 35725 Mali [country]; 35729 Liberia; 35730 Sierra Leone; 35733 Niger [country]; 35734 Guinea [country]; 35735 Togo; 35736 Benin; 35738 Mauritania; 35741 Cape Verde; 35744 Guinea-Bissau; 38142 Gambia [country]
+G: 2196 2197; 35734 35744
+
+T east_african_countries | east african countries
+W: 2176 Kenya; 2204 Djibouti; 21260 Madagascar; 32060 Tanzania; 35709 Ethiopia; 35714 Sudan; 35715 Uganda; 35716 Rwanda; 35717 Somalia; 35718 Zimbabwe; 35719 Zambia; 35720 Mozambique; 35731 Malawi; 35737 Burundi; 35739 Eritrea; 35740 Seychelles; 35742 Comoros; 35772 Mauritius [country]; 35773 South Sudan; 60515 Réunion; 60516 Mayotte; 60517 Somaliland
+G: 35714 35773
+
+T southern_african_countries | southern african countries
+W: 2175 South Africa; 2203 Lesotho; 2210 Eswatini; 2211 Swaziland; 21260 Madagascar; 32060 Tanzania; 35718 Zimbabwe; 35719 Zambia; 35720 Mozambique; 35721 Angola [country]; 35722 Namibia; 35723 Botswana; 35731 Malawi; 35740 Seychelles; 35742 Comoros; 35772 Mauritius [country]; 60518 DR Congo
+G: 2210 2211
+
+T central_african_lands | central african countries
+W: 35716 Rwanda; 35726 Cameroon; 35727 Congo [country]; 35728 Gabon; 35732 Chad [country]; 35737 Burundi; 35743 Equatorial Guinea; 35745 Sao Tome and Principe
+
+T north_american_countries | north american countries | includes Central America and the Caribbean
+W: 2120 United States; 2122 America; 2128 Canada; 2129 Mexico [country]; 2157 Cuba; 2161 Jamaica; 21262 Bahamas; 21263 Haiti; 35746 Dominican Republic; 35748 Trinidad and Tobago; 35749 Costa Rica; 35750 Panama [country]; 35751 Guatemala; 35752 Honduras; 35753 Nicaragua; 35754 El Salvador; 35755 Belize; 35756 Grenada; 35757 Saint Lucia; 35758 Dominica; 35759 Antigua and Barbuda; 35760 Saint Kitts and Nevis; 35761 Saint Vincent; 36597 Barbados [island]
+G: 2120 2122
+
+T south_american_countries | south american countries | includes French Guiana
+W: 2130 Brazil [country]; 2131 Argentina; 2158 Peru; 2159 Chile; 2160 Colombia; 2202 Suriname; 32151 Bolivia; 32152 Ecuador; 33202 Uruguay [country]; 35762 Venezuela; 35763 Paraguay [country]; 35764 Guyana; 35765 French Guiana; 36146 Surinam [South American country]
+G: 2202 36146
+
+T oceanian_countries | oceanian countries | Exactly: Australia, New Zealand, Papua New Guinea, Fiji, Solomon Islands, Vanuatu, Samoa, Tonga, Kiribati, Tuvalu, Nauru, Palau, Marshall Islands, Micronesia.
+W: 2155 Australia [country]; 2156 New Zealand; 2206 Vanuatu; 2214 Kiribati; 2215 Tuvalu; 2216 Nauru; 21140 Samoa; 21141 Tonga [country]; 35766 Fiji [country]; 35767 Papua New Guinea; 35768 Solomon Islands; 35769 Palau; 35770 Marshall Islands; 35771 Micronesia; 36147 Aotearoa [country]
+G: 2156 36147
+
+T island_nations | island nations | countries made up of one or more islands, with no land border to a neighbour
+W: 2124 United Kingdom; 2125 UK; 2126 Britain; 2127 Great Britain; 2138 Ireland; 2139 Eire; 2151 Japan; 2156 New Zealand; 2157 Cuba; 2161 Jamaica; 2167 Iceland; 2182 Indonesia; 2183 Philippines; 2187 Singapore [island country]; 2192 Sri Lanka; 2193 Ceylon [old country name]; 2206 Vanuatu; 2214 Kiribati; 2215 Tuvalu; 2216 Nauru; 21140 Samoa; 21141 Tonga [country]; 21260 Madagascar; 21262 Bahamas; 35680 Malta [country]; 35696 Maldives; 35704 Bahrain; 35740 Seychelles; 35741 Cape Verde; 35742 Comoros; 35745 Sao Tome and Principe; 35748 Trinidad and Tobago; 35756 Grenada; 35757 Saint Lucia; 35758 Dominica; 35759 Antigua and Barbuda; 35760 Saint Kitts and Nevis; 35761 Saint Vincent; 35766 Fiji [country]; 35769 Palau; 35771 Micronesia; 35772 Mauritius [country]; 36147 Aotearoa [country]; 36576 Cyprus [island]; 36597 Barbados [island]; 37993 Taiwan; 63829 Marshalls; 63830 Solomons
+G: 2124 2126 2127 2125; 2192 2193; 2156 36147; 2138 2139
+
+T landlocked_countries | landlocked countries | countries with no coastline on the ocean
+W: 2143 Switzerland; 2163 Austria; 2190 Czech Republic; 2191 Czechia; 2198 Mongolia; 2199 Nepal; 2200 Bhutan; 2203 Lesotho; 2205 Moldova; 2207 Liechtenstein; 2208 Turkmenistan; 2209 Burkina Faso; 2210 Eswatini; 2211 Swaziland; 32151 Bolivia; 34303 Vatican City; 35667 Hungary; 35671 Serbia; 35672 Slovakia; 35677 Belarus; 35679 Luxembourg; 35684 North Macedonia; 35686 Andorra; 35687 San Marino; 35691 Afghanistan; 35692 Kazakhstan; 35694 Laos; 35695 Uzbekistan; 35705 Kyrgyzstan; 35706 Tajikistan; 35707 Armenia; 35709 Ethiopia; 35715 Uganda; 35716 Rwanda; 35718 Zimbabwe; 35719 Zambia; 35723 Botswana; 35725 Mali [country]; 35731 Malawi; 35732 Chad [country]; 35733 Niger [country]; 35737 Burundi; 35763 Paraguay [country]; 35773 South Sudan; 36139 Macedonia
+G: 2190 2191; 2210 2211; 35684 36139
+
+T tiny_countries | tiny countries | microstates: Monaco, Vatican, San Marino, Nauru, Tuvalu
+W: 2187 Singapore [island country]; 2201 Brunei; 2207 Liechtenstein; 2210 Eswatini; 2211 Swaziland; 2214 Kiribati; 2215 Tuvalu; 2216 Nauru; 21140 Samoa; 21141 Tonga [country]; 34303 Vatican City; 35679 Luxembourg; 35680 Malta [country]; 35682 Monaco [country]; 35686 Andorra; 35687 San Marino; 35696 Maldives; 35704 Bahrain; 35740 Seychelles; 35741 Cape Verde; 35742 Comoros; 35745 Sao Tome and Principe; 35748 Trinidad and Tobago; 35756 Grenada; 35757 Saint Lucia; 35758 Dominica; 35759 Antigua and Barbuda; 35760 Saint Kitts and Nevis; 35761 Saint Vincent; 35769 Palau; 35770 Marshall Islands; 35771 Micronesia; 35772 Mauritius [country]; 36576 Cyprus [island]; 36597 Barbados [island]; 38142 Gambia [country]
+G: 2210 2211
+
+T spanish_speaking_countries | spanish-speaking countries | Spanish is the official or main language
+W: 2129 Mexico [country]; 2131 Argentina; 2136 Spain; 2157 Cuba; 2158 Peru; 2159 Chile; 2160 Colombia; 32151 Bolivia; 32152 Ecuador; 33202 Uruguay [country]; 35743 Equatorial Guinea; 35746 Dominican Republic; 35749 Costa Rica; 35750 Panama [country]; 35751 Guatemala; 35752 Honduras; 35753 Nicaragua; 35754 El Salvador; 35762 Venezuela; 35763 Paraguay [country]
+
+T french_speaking_countries | french-speaking countries | French is an official or widely used language
+W: 2128 Canada; 2132 France; 2143 Switzerland; 2162 Belgium; 2178 Morocco; 2196 Ivory Coast; 2197 Côte d'Ivoire; 2204 Djibouti; 2206 Vanuatu; 2209 Burkina Faso; 21260 Madagascar; 21263 Haiti; 35679 Luxembourg; 35682 Monaco [country]; 35698 Lebanon; 35711 Algeria; 35712 Tunisia; 35716 Rwanda; 35724 Senegal [country]; 35725 Mali [country]; 35726 Cameroon; 35727 Congo [country]; 35728 Gabon; 35732 Chad [country]; 35733 Niger [country]; 35734 Guinea [country]; 35735 Togo; 35736 Benin; 35737 Burundi; 35740 Seychelles; 35742 Comoros; 35743 Equatorial Guinea; 35765 French Guiana; 35772 Mauritius [country]
+G: 2196 2197; 35734 35743
+
+T arabic_speaking_countries | arabic-speaking countries | Arabic is an official or main language
+W: 2154 Egypt; 2173 Iraq; 2174 Saudi Arabia; 2178 Morocco; 2195 Jordan [country]; 2204 Djibouti; 35697 Syria; 35698 Lebanon; 35699 Qatar; 35700 Kuwait; 35701 Oman; 35702 Yemen; 35703 United Arab Emirates; 35704 Bahrain; 35711 Algeria; 35712 Tunisia; 35713 Libya; 35714 Sudan; 35717 Somalia; 35732 Chad [country]; 35738 Mauritania; 35742 Comoros
+
+T uk_nations | uk nations | England, Scotland, Wales, Northern Ireland
+W: 47 England; 48 Scotland; 49 Wales; 50 Northern Ireland
+
+T nordic_countries | nordic countries | Denmark, Finland, Iceland, Norway, Sweden
+W: 2145 Sweden; 2146 Norway; 2164 Denmark; 2165 Finland; 2167 Iceland
+
+T central_american_countries | central american countries | Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama
+W: 35749 Costa Rica; 35750 Panama [country]; 35751 Guatemala; 35752 Honduras; 35753 Nicaragua; 35754 El Salvador; 35755 Belize
+
+T cities | cities
+W: 2217 London [city]; 2218 Paris [city]; 2219 New York; 2221 Big Apple; 2222 Rome [city]; 2224 Tokyo [city]; 2225 Sydney; 2226 Moscow [Russian capital]; 2227 Berlin [city]; 2228 Los Angeles; 2230 Chicago [city]; 2231 Madrid; 2232 Venice [city]; 2234 Beijing; 2235 Peking; 2236 Cairo; 2237 Dubai; 2238 Barcelona [city]; 2239 Amsterdam; 2240 Las Vegas; 2241 San Francisco; 2242 Frisco; 2243 Hong Kong; 2244 Vienna; 2246 Istanbul; 2247 Constantinople; 2248 Mumbai; 2249 Bombay; 2250 Delhi [Indian city]; 2251 Dublin; 2252 Edinburgh [city]; 2253 Athens; 2254 Lisbon; 2255 Prague [Czech capital]; 2257 Toronto; 2258 Boston [city]; 2259 Miami; 2260 Seattle; 2261 Melbourne; 2262 Rio de Janeiro; 2263 Rio; 2264 Shanghai; 2265 Bangkok; 2266 Seoul [Korean capital]; 2267 Mexico City; 2268 Buenos Aires; 2269 Stockholm; 2270 Florence; 2272 Munich; 2274 Nice [city]; 2275 Lima [city]; 2276 Nairobi; 2277 Johannesburg; 2278 Cape Town; 2279 Kolkata; 2280 Calcutta; 2282 Saigon; 2283 Kyiv; 2285 Copenhagen [city]; 2286 Oslo; 2287 Helsinki; 2288 Warsaw; 2289 Budapest; 2290 Brussels [Belgian capital]; 2291 Zurich; 2293 Marrakech; 2294 Havana; 2295 New Orleans; 2296 Kyoto; 2297 Auckland; 2298 Dubrovnik; 2299 Reykjavik; 2300 Marseille; 2301 Kraków; 2302 Kathmandu; 2303 La Paz; 2304 Asunción; 2305 Ulaanbaatar; 2306 Timbuktu; 2307 Tromsø; 2308 Valparaíso; 2309 Ouagadougou
+G: 2248 2249; 2234 2235; 2279 2280; 2263 2262; 2219 2221; 2246 2247; 2241 2242
+
+T capital_cities | capital cities | capitals from any continent
+W: 2217 London [city]; 2218 Paris [city]; 2222 Rome [city]; 2224 Tokyo [city]; 2226 Moscow [Russian capital]; 2227 Berlin [city]; 2231 Madrid; 2234 Beijing; 2235 Peking; 2236 Cairo; 2239 Amsterdam; 2244 Vienna; 2251 Dublin; 2253 Athens; 2254 Lisbon; 2255 Prague [Czech capital]; 2265 Bangkok; 2266 Seoul [Korean capital]; 2267 Mexico City; 2268 Buenos Aires; 2269 Stockholm; 2275 Lima [city]; 2276 Nairobi; 2283 Kyiv; 2285 Copenhagen [city]; 2286 Oslo; 2287 Helsinki; 2288 Warsaw; 2289 Budapest; 2290 Brussels [Belgian capital]; 2294 Havana; 2299 Reykjavik; 2302 Kathmandu; 2303 La Paz; 2304 Asunción; 2305 Ulaanbaatar; 22710 Baghdad; 29619 Sophia [name]; 35774 Washington DC; 35775 Ottawa [city]; 35776 Canberra; 35777 Wellington [city]; 35779 Bern; 35780 Santiago [city]; 35781 Bogotá; 35782 Caracas; 35783 Brasília; 35784 Abuja; 35785 Accra; 35786 Addis Ababa; 35787 Pretoria; 35788 New Delhi; 35789 Islamabad; 35790 Kabul; 35791 Tehran; 35792 Riyadh; 35793 Ankara [city]; 35794 Hanoi; 35795 Manila; 35796 Jakarta; 35797 Thimphu; 35798 Vaduz; 35799 Valletta; 35800 Tallinn; 35801 Riga; 35802 Vilnius; 35803 Minsk; 35804 Zagreb; 35805 Belgrade; 35806 Bucharest; 35807 Bratislava; 35808 Ljubljana; 35809 Tirana; 35810 Sarajevo; 35811 Skopje; 35812 Podgorica; 35813 Chisinau; 36158 Angora [city]
+G: 2234 2235; 35793 36158
+
+T european_capitals | european capitals
+W: 2217 London [city]; 2218 Paris [city]; 2222 Rome [city]; 2226 Moscow [Russian capital]; 2227 Berlin [city]; 2231 Madrid; 2239 Amsterdam; 2244 Vienna; 2251 Dublin; 2253 Athens; 2254 Lisbon; 2255 Prague [Czech capital]; 2269 Stockholm; 2283 Kyiv; 2285 Copenhagen [city]; 2286 Oslo; 2287 Helsinki; 2288 Warsaw; 2289 Budapest; 2290 Brussels [Belgian capital]; 2299 Reykjavik; 29619 Sophia [name]; 35779 Bern; 35798 Vaduz; 35799 Valletta; 35800 Tallinn; 35801 Riga; 35802 Vilnius; 35803 Minsk; 35804 Zagreb; 35805 Belgrade; 35806 Bucharest; 35807 Bratislava; 35808 Ljubljana; 35809 Tirana; 35810 Sarajevo; 35811 Skopje; 35812 Podgorica
+
+T asian_capitals | asian capitals
+W: 2224 Tokyo [city]; 2234 Beijing; 2235 Peking; 2265 Bangkok; 2266 Seoul [Korean capital]; 2302 Kathmandu; 2305 Ulaanbaatar; 21120 Tashkent; 22710 Baghdad; 35788 New Delhi; 35789 Islamabad; 35790 Kabul; 35791 Tehran; 35792 Riyadh; 35794 Hanoi; 35795 Manila; 35796 Jakarta; 35797 Thimphu; 35859 Damascus; 35860 Beirut; 35863 Amman; 35881 Kuala Lumpur; 35882 Dhaka; 35888 Taipei; 35896 Phnom Penh; 35897 Vientiane; 35899 Colombo; 35902 Pyongyang; 36081 Tbilisi; 36086 Bishkek; 56836 Naypyidaw; 56837 Astana; 56838 Baku [city]; 56839 Yerevan; 56840 Dushanbe
+G: 2234 2235
+
+T african_capitals | african capitals
+W: 2236 Cairo; 2276 Nairobi; 2278 Cape Town; 2309 Ouagadougou; 35784 Abuja; 35785 Accra; 35786 Addis Ababa; 35787 Pretoria; 35988 Dakar; 35989 Tunis; 35990 Algiers; 35991 Tripoli [city]; 35992 Kinshasa; 35993 Luanda; 35995 Khartoum; 35996 Kampala; 35997 Kigali; 35998 Harare; 35999 Lusaka; 36000 Maputo; 36006 Antananarivo; 36007 Windhoek; 36008 Gaborone; 36009 Bamako; 36010 Mogadishu; 36013 Freetown; 56841 Rabat; 56842 Brazzaville; 56843 Niamey; 56844 Monrovia; 56845 Nouakchott; 56846 Asmara; 56847 Lilongwe
+
+T american_capitals | american capitals | national capitals of North, Central and South America and the Caribbean
+W: 2267 Mexico City; 2268 Buenos Aires; 2275 Lima [city]; 2294 Havana; 2303 La Paz; 2304 Asunción; 21259 Nassau; 32153 Quito; 35775 Ottawa [city]; 35780 Santiago [city]; 35781 Bogotá; 35782 Caracas; 35783 Brasília; 35959 Kingston [city]; 35963 Montevideo; 35983 Georgetown [city]; 35984 Paramaribo; 38117 Washington [city]; 56848 Panama City; 56849 San José; 56850 Managua; 56851 Tegucigalpa; 56852 San Salvador; 56853 Guatemala City; 56854 Belmopan; 56855 Port-au-Prince; 56856 Santo Domingo; 56857 Bridgetown; 56858 Port of Spain; 56859 Sucre [city]
+
+T european_cities | european cities
+W: 2217 London [city]; 2218 Paris [city]; 2222 Rome [city]; 2226 Moscow [Russian capital]; 2227 Berlin [city]; 2231 Madrid; 2232 Venice [city]; 2238 Barcelona [city]; 2239 Amsterdam; 2244 Vienna; 2251 Dublin; 2252 Edinburgh [city]; 2253 Athens; 2254 Lisbon; 2255 Prague [Czech capital]; 2269 Stockholm; 2270 Florence; 2272 Munich; 2274 Nice [city]; 2289 Budapest; 2290 Brussels [Belgian capital]; 2291 Zurich; 2298 Dubrovnik; 2300 Marseille; 2301 Kraków; 35800 Tallinn; 35814 Milan; 35815 Naples [Italian city]; 35816 Lyon; 35817 Geneva [city]; 35818 Hamburg [city]; 35819 Frankfurt; 35820 Seville; 35821 Porto [city]; 35822 Bruges; 35823 Salzburg; 35824 Manchester [city]; 35825 Glasgow; 35826 Liverpool [city]; 35827 Turin; 35828 Valencia [city]; 35829 Antwerp; 35830 Rotterdam; 35831 Gothenburg; 35832 Bergen; 35833 Gdansk; 50167 Bologna [city]; 50183 Cologne [German city]

@@ -1,0 +1,400 @@
+T animal_coverings | animal coverings | fur, feathers, scales, quills
+W: 3189 skin [body part]; 3190 hair; 3308 mucus; 5040 wool; 8365 plumage; 8597 carapace; 8855 scutes; 9130 exoskeleton [outer skeleton]; 10125 feathers; 10352 shell [animal]; 10394 fur; 10395 scales [animal]; 10397 hide [animal]; 10398 pelt; 10399 fleece [sheep]; 10400 coat [animal]; 10401 down [feathers]; 10402 bristles; 10403 spines [animal]; 10404 blubber [fat]; 10405 armour [animal]; 10407 pelage; 10408 fuzz [animal]; 10409 cuticle [animal]; 10410 thorns [animal]; 10411 spikes [animal]; 10412 bony plates; 10413 velvet [antler]; 10414 lanolin; 50084 quill [spine]
+
+T animal_experts | animal experts | zoologist, ornithologist, entomologist, vet
+W: 4068 vet [animal]; 8411 birder; 10448 zoologist; 10449 zookeeper; 10450 veterinarian; 10451 ornithologist; 10452 entomologist; 10453 herpetologist; 10454 ichthyologist; 10455 mammalogist; 10456 primatologist; 10457 arachnologist; 10458 ethologist; 10459 naturalist; 10460 marine biologist; 10461 lepidopterist; 10462 beekeeper; 10463 apiarist; 10464 malacologist; 10465 conchologist; 10466 cetologist; 10467 oologist; 10468 game warden; 10469 wildlife biologist; 10470 behaviourist; 10471 myrmecologist; 10472 carcinologist; 10473 teuthologist; 10475 dog trainer; 10476 wildlife rescuer; 10477 veterinary surgeon; 10478 falconer; 10479 conservationist; 10480 herpetoculturist; 33120 mahout; 60135 cynologist; 60136 hippologist; 60137 ophiologist; 60138 nematologist; 60139 acarologist; 60140 helminthologist; 60141 coleopterist; 60142 dipterist; 63746 trainer [circus and zoo]
+
+T animal_diets | animal diets | carnivore, herbivore, omnivore, scavenger
+W: 1626 herbivore; 1627 carnivore [animal]; 10102 omnivore; 10112 predator; 10481 scavenger; 10482 insectivore; 10483 piscivore; 10484 frugivore; 10485 granivore; 10486 nectarivore; 10487 folivore; 10488 detritivore; 10489 grazer; 10490 browser [animal]; 10491 filter feeder; 10492 apex predator; 10493 carrion eater; 10494 planktivore; 10495 molluscivore; 10496 hypercarnivore; 10497 coprophage; 10498 myrmecophage; 10499 cannibal; 10500 parasite; 10501 insect eater; 10502 meat eater; 10503 plant eater; 10504 seed eater; 10505 fish eater; 10506 bloodsucker; 10507 obligate carnivore; 10508 saprophage; 60143 sanguivore; 60144 xylophage; 60145 mycophage; 60146 oophage; 60147 durophage; 60148 bacterivore; 60149 necrophage; 60150 gummivore
+G: 1627 10507
+
+T hybrid_animals | hybrid animals
+W: 163 mule [animal]; 1468 hinny; 7757 liger; 7758 tigon; 7993 coydog; 9323 savannah cat; 9618 zorse; 9619 zonkey; 9620 zebroid; 10509 beefalo; 10510 wholphin; 10511 geep; 10512 grolar bear; 10513 pizzly; 10514 labradoodle; 10515 cockapoo; 10516 puggle; 10517 leopon; 10518 coywolf; 10519 wolfdog; 10520 zeedonk; 10521 dzo; 10522 cattalo; 10523 goldendoodle; 10524 cavapoo; 10525 maltipoo; 10526 pomsky; 10527 chorkie; 10528 mulard; 10529 Bengal cat; 10530 yakow; 10531 cama; 10532 mongrel; 10533 crossbreed; 10534 designer dog; 60151 zony; 60152 zebrule; 60153 pumapard; 60154 jaglion; 60155 kunga; 60156 schnoodle; 60157 cavachon; 60158 yorkipoo
+
+T trees | trees
+W: 1628 oak [tree]; 1629 pine [tree]; 1630 maple; 1631 palm [tree]; 1632 ash [tree]; 1633 willow [tree]; 1634 birch; 1635 elm [tree]; 1636 beech; 1637 cedar; 1638 fir; 1639 spruce; 1640 redwood [tree]; 1643 bonsai; 1644 evergreen; 1645 sequoia [tree]; 1646 cypress; 1647 poplar; 1648 aspen [tree]; 1649 quaking aspen; 1650 sycamore; 1651 hawthorn [tree]; 1652 hazel [tree]; 1653 larch; 1654 yew; 1655 juniper; 1656 hickory; 1657 acacia; 1658 mahogany [wood]; 1659 ebony [tree]; 1660 teak; 1661 baobab; 1663 banyan; 1664 magnolia; 1665 ginkgo; 1667 monkey puzzle; 1668 Chile pine; 1669 Joshua tree [tree]; 1670 jacaranda; 1671 mangrove; 1672 conifer; 1673 deciduous (adjective); 1674 sandalwood; 1675 alder; 1676 linden; 1679 rowan; 1680 mountain ash; 1681 dogwood; 1682 cottonwood; 1683 hornbeam; 1685 sweetgum; 1686 plane; 1687 Douglas fir; 1688 kauri; 1689 balsa; 1690 tamarack; 1691 whitebeam; 1692 wych elm; 63124 tulip poplar; 64791 Gum [tree]; 64792 Lime [linden]
+G: 64792 1676; 1667 1668; 1679 1680; 1648 1649
+
+T deciduous_trees | deciduous trees
+W: 1628 oak [tree]; 1630 maple; 1632 ash [tree]; 1633 willow [tree]; 1634 birch; 1635 elm [tree]; 1636 beech; 1647 poplar; 1648 aspen [tree]; 1649 quaking aspen; 1650 sycamore; 1653 larch; 1656 hickory; 1664 magnolia; 1665 ginkgo; 1675 alder; 1676 linden; 1679 rowan; 1680 mountain ash; 1682 cottonwood; 1683 hornbeam; 1685 sweetgum; 1686 plane; 1691 whitebeam; 1692 wych elm; 15696 sassafras; 29945 chestnut [tree]; 29946 walnut [tree]; 29947 horse chestnut; 29948 field maple; 29949 silver birch; 29950 tupelo; 29951 black locust; 29952 bald cypress; 63124 tulip poplar; 64792 Lime [linden]
+G: 64792 1676; 1679 1680; 1648 1649
+
+T evergreen_trees | evergreen trees
+W: 1629 pine [tree]; 1637 cedar; 1638 fir; 1639 spruce; 1640 redwood [tree]; 1645 sequoia [tree]; 1646 cypress; 1654 yew; 1655 juniper; 1667 monkey puzzle; 1668 Chile pine; 1672 conifer; 1687 Douglas fir; 1688 kauri; 2559 cedar of Lebanon; 15705 balsam fir; 25007 Christmas tree [evergreen tree]; 29953 holly [tree]; 29954 hemlock [tree]; 29955 Scots pine; 29956 Norway spruce; 29958 holm oak; 29959 Sitka spruce; 29960 stone pine; 29961 lodgepole pine; 29962 Leyland cypress; 29963 ponderosa pine; 29964 giant sequoia; 29965 arborvitae; 29966 thuja; 30006 pine nut tree; 56471 bay laurel; 64791 Gum [tree]
+G: 1667 1668; 29960 30006 1629; 1637 2559; 1645 29964
+
+T pine_species | pine species
+W: 29955 Scots; 29960 stone; 29961 lodgepole; 29963 ponderosa
+
+T fruit_trees | fruit trees
+W: 79 mandarin [fruit]; 82 kumquat; 101 fig; 360 olive [fruit]; 17226 cherry plum; 29967 apple; 29968 pear; 29969 cherry; 29970 plum; 29971 peach; 29972 orange; 29973 lemon; 29975 apricot; 29977 mango; 29978 banana; 29979 coconut palm; 29980 date palm; 29981 grapefruit; 29982 pomegranate; 29983 quince; 29984 medlar; 29985 mulberry; 29986 avocado; 29987 nectarine; 29988 crab apple; 29989 damson; 29990 greengage; 29991 persimmon; 29992 loquat; 29994 tangerine; 29995 guava; 29996 mirabelle
+
+T nut_trees | nut trees
+W: 1628 oak [tree]; 1636 beech; 1652 hazel [tree]; 17363 hickory; 17373 black walnut; 17379 sweet chestnut; 29945 chestnut [tree]; 29946 walnut [tree]; 29947 horse chestnut; 29960 stone pine; 29979 coconut palm; 29997 almond; 29998 pecan; 29999 pistachio; 30000 cashew; 30001 macadamia; 30002 Brazil nut tree; 30003 butternut [tree]; 30004 filbert; 30005 cobnut; 30006 pine nut tree; 30007 shagbark hickory; 30009 betel palm; 30010 candlenut; 30011 buckeye [tree]; 30012 Spanish chestnut; 30013 English walnut; 56416 kola [tree]
+G: 29960 30006
+
+T tropical_trees | tropical trees
+W: 1631 palm [tree]; 1657 acacia; 1658 mahogany [wood]; 1659 ebony [tree]; 1660 teak; 1661 baobab; 1663 banyan; 1670 jacaranda; 1671 mangrove; 1674 sandalwood; 1689 balsa; 15627 neem; 16749 cacao; 29942 Rosewood [wood]; 29977 mango; 29978 banana; 29979 coconut palm; 29980 date palm; 30016 kapok; 30017 ceiba; 30018 breadfruit; 30019 papaya; 30020 royal palm; 30021 frangipani; 30023 strangler fig; 30024 cinnamon; 30025 clove; 30026 nutmeg; 30027 jackfruit; 30028 mopane; 30029 talipot palm; 30030 sago palm; 30031 ironwood; 63125 flamboyant [tree]; 65482 rubber [latex source]
+
+T palm_species | palm species
+W: 29979 coconut; 29980 date; 30020 royal; 30029 talipot; 30030 sago
+
+T tree_parts | tree parts
+W: 28205 branch [tree]; 29179 bough; 29837 Bud [name]; 30032 trunk [tree]; 30033 leaf; 30034 root [plant]; 30035 bark [tree]; 30036 twig; 30037 canopy [forest]; 30038 crown [tree]; 30039 knot [wood]; 30041 stump; 30043 heartwood; 30044 sapwood; 30045 cambium; 30046 taproot; 30047 foliage; 30048 needle [tree]; 30049 burl; 30050 phloem; 30051 xylem; 30052 lenticel; 30053 cone [tree]; 30054 rootlet; 30055 bole; 39065 sap [tree]; 50331 buttress root [tree]; 63126 growth ring
+
+T types_of_wood | types of wood
+W: 1628 oak [tree]; 1629 pine [tree]; 1630 maple; 1632 ash [tree]; 1634 birch; 1635 elm [tree]; 1637 cedar; 1640 redwood [tree]; 1646 cypress; 1654 yew; 1656 hickory; 1658 mahogany [wood]; 1659 ebony [tree]; 1660 teak; 1674 sandalwood; 1676 linden; 1689 balsa; 24039 plywood; 24053 MDF; 24054 chipboard; 24055 particle board; 29942 Rosewood [wood]; 29946 walnut [tree]; 30056 cherrywood; 30057 hardwood; 30058 softwood; 30059 driftwood [beach]; 30060 veneer [wood]; 30061 sapele; 30062 iroko; 30063 purpleheart; 30064 zebrawood; 30065 lignum vitae; 30066 bubinga; 30067 padauk; 30068 hardboard; 30069 pau ferro; 67024 beech
+G: 24054 24055
+
+T hedge_plants | hedge plants | shrubs and trees grown as hedges: privet, box, yew, hawthorn, beech, laurel
+W: 1636 beech; 1651 hawthorn [tree]; 1652 hazel [tree]; 1654 yew; 1681 dogwood; 1683 hornbeam; 1703 lavender [flower]; 7685 fuchsia [pink-purple] (adjective); 26741 privet (other); 29948 field maple; 29953 holly [tree]; 29965 arborvitae; 29966 thuja; 30070 box [shrub]; 30071 laurel [hedge]; 30072 leylandii; 30073 blackthorn; 30074 photinia; 30075 escallonia; 30076 cherry laurel; 30077 berberis; 30078 pyracantha; 30079 cotoneaster; 30080 forsythia; 30081 osage orange; 30082 hebe [shrub]; 30083 euonymus; 30084 elaeagnus; 30085 viburnum; 30086 griselinia
+
+T things_that_fall_from_trees | things that fall from trees | leaves, acorns, conkers, pine cones, sycamore keys, blossom, sap
+W: 87 apple [fruit]; 2540 cherry blossom; 16773 berries [fruit]; 17362 acorn [nut]; 17365 beechnut; 17411 seed [plant]; 28205 branch [tree]; 29857 Blossom; 30033 leaf; 30035 bark [tree]; 30036 twig; 30053 cone [tree]; 30087 pine cone; 30088 conker; 30089 fruit [tree]; 30090 petal [flower]; 30091 catkin; 30092 sycamore key; 30093 helicopter seed; 30094 samara [seed]; 30095 needles [pine leaves]; 30096 seed pod; 30097 buckeye [nut]; 30098 resin [tree]; 50195 Deadwood [dead branches]
+G: 30053 30087
+
+T african_trees | african trees
+W: 1657 acacia; 1659 ebony [tree]; 1661 baobab; 15619 kigelia; 17205 tamarind; 29980 date palm; 30028 mopane; 30061 sapele; 30062 iroko; 56408 marula; 56409 fever; 56411 shea [tree]; 56412 camel thorn; 56413 umbrella thorn; 56414 yellowwood; 56415 argan; 56416 kola [tree]; 56418 dragon; 56419 wild olive; 56420 knobthorn; 56421 oil palm; 60159 mahogany; 60160 African tulip tree; 60161 leadwood; 60162 jackalberry; 60163 msasa; 63127 mpingo
+
+T asian_trees | asian trees
+W: 106 jackfruit; 365 durian; 378 mangosteen; 1660 teak; 1663 banyan; 1665 ginkgo; 1674 sandalwood; 15627 neem; 17205 tamarind; 56422 sal [tree]; 56423 deodar; 56424 peepal; 56425 camphor [tree]; 56426 Japanese maple; 56427 sugi; 56429 dawn redwood; 56430 Himalayan cedar; 56432 sakura [cherry blossom]; 63128 bodhi; 63129 urushi; 63130 monkeypod; 65482 rubber [latex source]
+
+T australian_trees | australian trees
+W: 1641 eucalyptus; 2565 wattle [plant]; 15657 paperbark; 17357 macadamia; 32144 mulga; 38513 golden wattle; 56085 banksia; 56433 jarrah; 56434 boab; 56435 ghost gum; 56436 river red gum; 56437 bottlebrush; 56438 Moreton Bay fig; 56439 Wollemi pine; 56440 she-oak; 56441 karri; 56442 Norfolk Island pine; 56443 bunya pine; 56445 blue gum; 56446 silky oak; 56447 huon pine; 56448 snow gum; 60164 coolabah; 60165 ironbark; 60166 stringybark; 60167 kurrajong; 60168 bloodwood; 60169 mallee; 63131 xanthorrhoea; 65483 melaleuca
+
+T eucalypt_species | eucalypt species
+W: 56435 ghost gum; 56436 river red gum; 56445 blue gum; 56448 snow gum
+
+T south_american_trees | south american trees
+W: 104 guava; 1658 mahogany [wood]; 1667 monkey puzzle; 1668 Chile pine; 1670 jacaranda; 1689 balsa; 16749 cacao; 17356 brazil nut; 29942 Rosewood [wood]; 30000 cashew; 30016 kapok; 30017 ceiba; 30662 cinchona; 56449 quebracho; 56450 palo santo; 56451 brazilwood; 56452 cecropia; 56453 algarrobo; 56454 araucaria; 56455 ipe; 56456 acai palm; 56457 lapacho; 56458 pau-brasil; 65482 rubber [latex source]
+G: 1667 1668
+
+T north_american_trees | north american trees
+W: 1640 redwood [tree]; 1645 sequoia [tree]; 1648 aspen [tree]; 1649 quaking aspen; 1656 hickory; 1669 Joshua tree [tree]; 1681 dogwood; 1682 cottonwood; 1685 sweetgum; 1687 Douglas fir; 1690 tamarack; 15705 balsam fir; 17352 pecan [nut]; 17373 black walnut; 29952 bald cypress; 29963 ponderosa pine; 29964 giant sequoia; 30011 buckeye [tree]; 30469 redbud; 30690 blue spruce; 56459 sugar maple; 56460 live oak; 56461 white oak; 56462 red maple; 56463 elm; 56464 loblolly pine; 56465 bristlecone pine; 56466 paper birch; 56467 western red cedar; 56468 white pine; 63124 tulip poplar
+G: 1648 1649; 1645 29964
+
+T mediterranean_trees | mediterranean trees
+W: 101 fig; 360 olive [fruit]; 1628 oak [tree]; 1629 pine [tree]; 1646 cypress; 1686 plane; 2559 cedar of Lebanon; 15604 mastic; 29776 Myrtle; 29958 holm oak; 29960 stone pine; 29972 orange; 29973 lemon; 29980 date palm; 29982 pomegranate; 29997 almond; 29999 pistachio; 30006 pine nut tree; 32124 tamarisk; 56469 carob; 56470 cork oak; 56471 bay laurel; 56472 Aleppo pine; 56473 umbrella pine; 56475 Judas tree; 56476 Italian cypress; 56477 terebinth; 60170 lentisk; 63132 arbutus
+G: 29960 30006 1629
+
+T things_made_from_trees | things made from trees
+W: 342 rocking chair; 717 cinnamon [spice]; 2781 canoe; 3041 firewood; 4567 newspaper; 4569 rag [newspaper]; 4570 daily [newspaper]; 4571 gazette [official journal]; 6452 book; 12007 pencil [writing tool]; 12025 turpentine; 17917 sawdust [wood]; 18432 maple syrup; 19847 wooden spoon; 20150 chopsticks; 20472 paper [material]; 23885 clothespin; 23982 cardboard; 24037 timber; 24038 lumber [US timber] (verb); 24039 plywood; 24054 chipboard; 24055 particle board; 24084 shingle; 24849 rayon; 25480 barrel [container]; 25551 paper plate; 28014 cork [stopper material]; 29508 quinine; 30099 furniture; 30100 charcoal [fuel]; 30101 rubber [material]; 30102 matchstick; 30103 toothpick; 30104 wood pulp; 30105 fence post; 30106 cricket bat; 30107 cellulose; 30108 wood chips [material]; 30109 lacquer; 30110 latex; 30111 viscose; 30112 tannin; 62524 kindle [to light] (verb)
+G: 24054 24055; 4567 4570 4569
+
+T trees_native_to_britain | trees native to Britain
+W: 1628 oak [tree]; 1632 ash [tree]; 1633 willow [tree]; 1634 birch; 1635 elm [tree]; 1636 beech; 1648 aspen [tree]; 1651 hawthorn [tree]; 1652 hazel [tree]; 1654 yew; 1675 alder; 1679 rowan; 1680 mountain ash; 1683 hornbeam; 1691 whitebeam; 1692 wych elm
+
+T woodland | woodland
+W: 990 squirrel [tree rodent]; 996 fox; 997 deer; 1014 badger [animal]; 1063 owl; 1077 woodpecker; 1722 bluebell; 1766 fern; 1767 moss; 1795 bracken; 10156 holt; 27965 tree [plant]; 28392 forest [woodland]; 30037 canopy [forest]; 30113 wood [forest]; 30115 glade; 30116 clearing; 30117 grove; 30118 copse; 30119 coppice; 30120 thicket; 30121 spinney; 30122 undergrowth; 30123 walk; 30124 treetop; 30125 fallen log; 30126 dell [valley]; 30127 hanger [wood]; 30128 weald; 30129 greenwood; 30130 wildwood; 30131 path
+G: 30118 30119
+
+T forest_floor | forest floor | what lies on the ground in a forest: moss, leaf litter, fungi, ferns, beetles
+W: 1341 ant; 1350 beetle [insect]; 1364 centipede; 1365 millipede; 1366 earthworm; 1367 snail; 1368 slug [animal]; 1418 roly-poly; 1722 bluebell; 1766 fern; 1767 moss; 1788 seedling; 1795 bracken; 1808 bramble; 1825 liverwort; 1837 mulch (verb); 9000 ground beetle; 9717 springtail; 17362 acorn [nut]; 17618 truffle [fungus]; 17645 mushroom [fungus]; 22509 toadstool; 30036 twig; 30087 pine cone; 30132 leaf litter; 30133 fungi [organisms]; 30134 fallen leaves; 30135 log [wood]; 30136 humus; 30137 topsoil; 30138 roots; 30139 lichen; 30140 pine needles; 30141 mycelium; 30142 wood anemone; 30143 fallen branch; 30144 rotting wood; 30145 bark chip; 30146 detritus; 30147 wood sorrel; 30148 dead leaves; 30149 spore
+
+T woodland_features | woodland features | clearing, glade, thicket, canopy, undergrowth, stump, trail
+W: 1930 ridge [landform]; 1943 ravine; 28116 bower; 30037 canopy [forest]; 30041 stump; 30115 glade; 30116 clearing; 30117 grove; 30118 copse; 30119 coppice; 30120 thicket; 30122 undergrowth; 30125 fallen log; 30126 dell [valley]; 30150 trail [path]; 30151 path [woodland]; 30152 stream [woodland]; 30153 hollow [woodland]; 30154 understory; 30155 treeline; 30157 gully [channel]; 30158 footpath; 30159 bridleway; 30160 woodland edge; 30161 nursery log; 30162 snag [tree]; 30163 tree hollow; 30164 windfall; 30165 clear-cut; 30166 hedgerow; 30167 fire road; 30168 forest track; 30169 boardwalk [walkway]; 30170 firebreak; 30171 lookout tower; 30172 sinkhole; 30173 coppice stool; 30174 ride [woodland]
+G: 30153 30163
+
+T forest_types | forest types | boreal, cloud forest, mangrove, temperate, coniferous, bamboo forest
+W: 1671 mangrove; 28105 jungle [forest]; 30175 rainforest; 30176 boreal; 30177 taiga; 30178 temperate; 30179 tropical; 30180 coniferous; 30181 deciduous; 30182 cloud; 30183 bamboo; 30184 pine; 30185 ancient woodland; 30186 old-growth; 30187 monsoon; 30188 evergreen; 30189 mixed; 30190 dry; 30191 redwood; 30192 kelp; 30193 petrified; 30194 secondary; 30195 plantation; 30196 gallery; 30197 montane; 30198 subalpine; 30199 temperate rainforest; 30200 peat swamp; 30201 elfin; 30202 sclerophyll; 30203 dipterocarp; 30204 virgin; 30205 urban; 30206 community forest; 30207 cerrado
+G: 30178 30199
+
+T famous_forests | famous forests | Black Forest, Sherwood, Amazon, Daintree, Bialowieza, Sundarbans
+W: 30209 Sherwood; 30211 Amazon [rainforest]; 30212 Daintree; 30213 Bialowieza; 30214 Sundarbans; 30215 Fangorn; 30216 New Forest [English woodland]; 30218 Dean; 30219 Ardennes [forest]; 30220 Congo Basin; 30221 Tongass; 30222 Tijuca; 30223 Hoh Rainforest; 30224 Kielder; 30225 Thuringian; 30226 Hainich; 30227 Aokigahara; 30228 Sinharaja; 30229 Monteverde; 30230 Tarkine; 30231 Waipoua; 30232 Mirkwood; 30233 Hundred Acre Wood; 30234 Forbidden; 30235 Bavarian; 63133 Schwarzwald; 63134 Epping
+
+T forestry_words | forestry words | logging, lumberjack, sawmill, timber, felling, coppice, plantation
+W: 322 axe [tool]; 4806 chainsaw; 13370 woodcutter; 24037 timber; 24038 lumber [US timber] (verb); 28504 logger; 30119 coppice; 30135 log [wood]; 30237 lumberjack; 30238 sawmill; 30239 felling; 30240 plantation; 30241 forester; 30242 forest ranger; 30243 reforestation; 30244 deforestation; 30245 clear-cutting; 30246 pollarding; 30247 thinning; 30248 skidder; 30249 feller; 30250 woodlot; 30251 sustainable forestry; 30252 pulpwood; 30253 sawlog; 30254 timberland; 30255 forwarder; 30256 debarking; 30257 silviculture; 30258 dendrology; 30259 tree surgeon; 30260 arborist; 30261 lopping; 30262 logging truck; 30263 splitting maul; 30264 cant hook; 30265 crosscut saw; 30266 felling axe; 30267 log drive; 30268 stumpage
+
+T wildfire_words | wildfire words | blaze, embers, firebreak, smoke jumper, backburn, bushfire
+W: 2000 drought; 3077 tinder [fire]; 4083 firefighter; 4084 fireman; 29100 evacuation; 30170 firebreak; 30269 wildfire; 30270 blaze [fire]; 30271 embers; 30272 smoke jumper; 30273 backburn; 30275 forest fire; 30276 flames [fire]; 30277 smoke [fire]; 30278 fire line; 30279 controlled burn; 30280 prescribed burn; 30281 crown fire; 30282 spot fire; 30283 fire tornado; 30284 firestorm; 30285 scorched earth; 30286 fire season; 30287 red flag warning; 30288 water bomber; 30289 fire tower; 30290 fire lookout; 30291 hotshot [firefighter]; 30292 air tanker; 30293 fuel load; 30294 fire retardant; 30295 flashover; 30296 burn scar; 30297 wind-driven fire; 30298 ember attack; 30299 mop-up; 30300 flare-up; 30301 burnover; 30302 pyrocumulus; 30303 fire weather; 50202 dry brush [dead vegetation]
+G: 4083 4084; 30279 30280
+
+T foraging_finds | foraging finds
+W: 350 blackberry [phone]; 367 mulberry; 370 elderberry; 371 bilberry; 372 whortleberry; 454 samphire; 686 wild rice; 778 sorrel [herb]; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 1340 bladderwrack; 1727 dandelion [flower]; 1778 nettle; 1779 stinging nettle; 8940 dulse; 15707 cattail; 17187 juniper berry; 17224 sloe; 17354 hazelnut [nut]; 17355 filbert; 17359 pine nut; 17360 pignoli; 17361 pinon; 17362 acorn [nut]; 17443 burdock; 17570 wild garlic; 17614 chanterelle; 17615 porcini; 17617 morel; 17624 hen of the woods; 17628 puffball [fungus]; 17633 chicken of the woods; 17645 mushroom [fungus]; 20261 chestnut [nut]; 29988 crab apple; 30147 wood sorrel; 30304 elderflower; 30305 wild strawberry; 30306 rosehip; 30307 walnut [nut]; 30308 hawthorn berry; 30309 wild mint; 30310 fiddlehead; 30311 chickweed; 30312 hop shoots; 30313 mallow; 30314 cleavers; 30315 wild asparagus; 30316 girolle; 30317 purslane; 30318 hogweed; 30319 pawpaw; 30320 maple sap; 30328 jelly ear; 31097 sea beet; 31111 laver [seaweed]; 60171 alexanders; 60172 pignut; 60173 fat hen
+G: 17359 17360 17361; 1778 1779; 371 372; 17354 17355
+
+T hedgerow_fruits | hedgerow fruits
+W: 367 mulberry; 370 elderberry; 371 bilberry; 372 whortleberry; 17187 juniper berry; 17224 sloe; 29988 crab apple; 30305 wild strawberry; 30306 rosehip; 30308 hawthorn berry
+
+T leaves_and_shoots | foraged leaves and shoots
+W: 454 samphire; 778 sorrel [herb]; 1727 dandelion [flower]; 1778 nettle; 17443 burdock; 17570 wild garlic; 30147 wood sorrel; 30309 wild mint; 30310 fiddlehead; 30311 chickweed; 30313 mallow; 30314 cleavers; 30315 wild asparagus; 30317 purslane; 30318 hogweed; 31097 sea beet; 60171 alexanders; 60173 fat hen
+
+T fungi | fungi
+W: 577 yeast; 3431 athlete's foot; 3433 ringworm; 15573 cordyceps; 17610 button mushroom; 17611 portobello; 17612 shiitake; 17613 oyster mushroom; 17614 chanterelle; 17615 porcini; 17617 morel; 17618 truffle [fungus]; 17619 enoki; 17620 cremini; 17621 baby bella; 17623 maitake; 17624 hen of the woods; 17625 king oyster; 17628 puffball [fungus]; 17629 field mushroom; 17633 chicken of the woods; 17640 parasol mushroom; 17642 bolete; 17645 mushroom [fungus]; 22509 toadstool; 30141 mycelium; 30316 girolle; 30321 fly agaric; 30322 death cap; 30323 stinkhorn; 30324 bracket fungus; 30325 honey fungus; 30326 ink cap; 30327 lion's mane [fungus]; 30328 jelly ear; 30329 turkey tail [fungus]; 30330 mold [fungus]; 30332 mildew; 30333 earthstar; 30334 destroying angel; 30335 candlesnuff; 30336 blewit; 30337 amanita; 30338 penicillium; 50209 ergot [fungus]
+G: 17623 17624; 17620 17621
+
+T flowers | flowers
+W: 1693 rose [flower]; 1694 tulip; 1695 daisy; 1696 sunflower; 1697 lily; 1698 orchid; 1699 daffodil; 1700 narcissus [flower]; 1701 poppy [red flower]; 1702 violet [flower]; 1703 lavender [flower]; 1704 carnation; 1705 dianthus; 1706 marigold; 1707 pansy; 1708 petunia; 1709 geranium; 1710 chrysanthemum [flower]; 1712 iris [flower]; 1713 hyacinth; 1714 lilac [flower]; 1715 jasmine [flower]; 1716 hibiscus; 1717 peony [flower]; 1719 snapdragon; 1720 antirrhinum; 1721 sweet pea; 1722 bluebell; 1723 buttercup [flower]; 1724 snowdrop; 1725 crocus; 1726 forget-me-not; 1727 dandelion [flower]; 1728 lotus [flower]; 1729 hydrangea; 1730 dahlia; 1731 primrose [flower]; 1732 foxglove; 1733 zinnia; 1734 begonia; 1735 aster; 1736 gardenia; 1737 camellia; 1738 azalea; 1739 delphinium; 1740 lupin [flower]; 1742 gladiolus; 1743 sword lily; 1744 freesia; 1745 anemone [flower]; 1746 edelweiss; 1747 cornflower [flower]; 1749 hollyhock; 1750 nasturtium; 1751 amaryllis; 1752 bird of paradise [flower]; 1753 cosmos [flower]; 1754 sweet William; 1755 larkspur; 1756 columbine [flower]; 1757 verbena; 1758 salvia; 1759 protea; 1760 gerbera; 1761 ranunculus; 1762 agapanthus; 1763 celosia; 1764 lisianthus; 1765 astilbe
+G: 1719 1720; 1742 1743; 1699 1700; 1704 1705
+
+T garden_flowers | garden flowers
+W: 1693 rose [flower]; 1694 tulip; 1695 daisy; 1696 sunflower; 1697 lily; 1699 daffodil; 1700 narcissus [flower]; 1706 marigold; 1707 pansy; 1708 petunia; 1709 geranium; 1717 peony [flower]; 1719 snapdragon; 1720 antirrhinum; 1721 sweet pea; 1729 hydrangea; 1730 dahlia; 1732 foxglove; 1733 zinnia; 1734 begonia; 1735 aster; 1739 delphinium; 1740 lupin [flower]; 1742 gladiolus; 1743 sword lily; 1749 hollyhock; 1750 nasturtium; 1753 cosmos [flower]; 1757 verbena; 1758 salvia; 1762 agapanthus; 1765 astilbe; 7685 fuchsia [pink-purple] (adjective); 15532 echinacea; 15589 nigella; 30339 impatiens; 30340 phlox; 30341 hellebore; 30342 coneflower; 30343 lobelia; 30344 alyssum; 30345 rudbeckia; 30346 heuchera; 30347 penstemon; 30348 coreopsis; 30349 bleeding heart; 30350 lantana; 30351 sedum; 30352 verbascum; 30353 love-in-a-mist; 30688 Christmas rose
+G: 30341 30688; 1719 1720; 1742 1743; 1699 1700
+
+T bedding_plants | bedding plants
+W: 1706 marigold; 1707 pansy; 1708 petunia; 1709 geranium; 1719 snapdragon; 1733 zinnia; 1734 begonia; 1750 nasturtium; 1757 verbena; 1758 salvia; 30339 impatiens; 30343 lobelia; 30344 alyssum
+
+T wildflowers | wildflowers
+W: 1695 daisy; 1701 poppy [red flower]; 1702 violet [flower]; 1722 bluebell; 1723 buttercup [flower]; 1726 forget-me-not; 1727 dandelion [flower]; 1731 primrose [flower]; 1732 foxglove; 1740 lupin [flower]; 1747 cornflower [flower]; 1776 clover; 1777 thistle [plant]; 1821 bindweed; 15689 yarrow; 28281 harebell; 30313 mallow; 30354 cowslip; 30355 oxeye daisy; 30356 meadowsweet; 30357 cow parsley; 30358 red campion; 30359 stitchwort; 30360 speedwell; 30361 vetch; 30362 teasel; 30363 lady's smock; 30364 bird's-foot trefoil; 30365 knapweed; 30366 scabious; 30367 ragwort; 30368 Queen Anne's lace; 30369 black-eyed Susan; 30370 Indian paintbrush; 30371 bluebonnet; 30372 goldenrod; 30373 fireweed; 30374 milkweed; 30375 wild rose; 30376 celandine; 30377 campion; 30378 betony; 30379 selfheal; 30380 chicory [flower]
+
+T spring_flowers | spring flowers
+W: 1664 magnolia; 1694 tulip; 1695 daisy; 1699 daffodil; 1700 narcissus [flower]; 1702 violet [flower]; 1707 pansy; 1712 iris [flower]; 1713 hyacinth; 1714 lilac [flower]; 1717 peony [flower]; 1722 bluebell; 1724 snowdrop; 1725 crocus; 1726 forget-me-not; 1731 primrose [flower]; 1737 camellia; 1738 azalea; 1744 freesia; 1745 anemone [flower]; 1761 ranunculus; 2540 cherry blossom; 29549 wisteria [flower]; 30080 forsythia; 30142 wood anemone; 30341 hellebore; 30349 bleeding heart; 30354 cowslip; 30381 lily of the valley; 30382 grape hyacinth; 30383 rhododendron; 30384 primula; 30385 aubrieta; 30386 pasqueflower; 30387 scilla; 30388 winter aconite; 30389 apple blossom; 30390 chionodoxa; 30391 squill; 30392 lungwort; 30688 Christmas rose; 50223 fritillary [flower]
+G: 30341 30688; 1699 1700
+
+T tropical_flowers | tropical flowers
+W: 1698 orchid; 1715 jasmine [flower]; 1716 hibiscus; 1728 lotus [flower]; 1736 gardenia; 1751 amaryllis; 1752 bird of paradise [flower]; 1759 protea; 1791 water lily; 1817 bromeliad; 25023 poinsettia; 30021 frangipani; 30393 plumeria; 30394 bougainvillea; 30395 ginger; 30396 heliconia; 30397 anthurium; 30398 oleander; 30400 torch ginger; 30401 red ginger; 30402 allamanda; 30403 ixora; 30404 canna; 30405 angel's trumpet; 30406 flamboyant [flower]; 30407 blue lotus; 30408 vanda; 30409 tiare; 30410 pikake; 30411 kangaroo paw; 30412 waratah; 30413 king protea; 30414 dendrobium; 30415 moth orchid; 30416 peace lily; 30417 ylang-ylang; 30418 clerodendrum; 30419 crown of thorns; 56512 passionflower
+
+T flower_parts | flower parts
+W: 14368 ovary [organ]; 14916 pollen; 17411 seed [plant]; 17426 calyx; 17431 carpel; 17432 receptacle; 17437 pedicel; 28480 thorn; 29523 nectar [flower]; 29837 Bud [name]; 29857 Blossom; 30033 leaf; 30034 root [plant]; 30090 petal [flower]; 30420 stem [plant]; 30421 stamen; 30422 pistil; 30423 sepal; 30424 anther; 30425 stigma; 30426 style [flower]; 30427 ovule; 30428 filament [flower]; 30429 corolla [flower part]; 30430 bract; 30431 spadix; 30432 spathe; 30433 tepal; 30434 nectary; 30435 floret; 30436 bloom [flower]; 30437 pollen sac; 30438 stalk [plant stem]; 30439 perianth; 50067 peduncle [flower stalk]
+
+T bouquet_flowers | bouquet flowers
+W: 1693 rose [flower]; 1694 tulip; 1695 daisy; 1696 sunflower; 1697 lily; 1698 orchid; 1703 lavender [flower]; 1704 carnation; 1705 dianthus; 1710 chrysanthemum [flower]; 1712 iris [flower]; 1717 peony [flower]; 1719 snapdragon; 1720 antirrhinum; 1721 sweet pea; 1729 hydrangea; 1730 dahlia; 1735 aster; 1739 delphinium; 1742 gladiolus; 1743 sword lily; 1744 freesia; 1745 anemone [flower]; 1754 sweet William; 1755 larkspur; 1759 protea; 1760 gerbera; 1761 ranunculus; 1764 lisianthus; 30381 lily of the valley; 30441 gypsophila; 30442 baby's breath; 30443 alstroemeria; 30444 stock [flower]; 30445 ruscus; 30446 stephanotis; 30447 waxflower; 30448 statice; 30449 limonium; 30450 amaranthus; 30451 bouvardia; 30452 spray rose; 30453 calla lily; 30454 hypericum
+G: 1719 1720; 1742 1743; 1704 1705
+
+T edible_flowers | edible flowers | nasturtium, borage, violet, calendula, elderflower, squash blossom
+W: 789 borage; 1694 tulip; 1696 sunflower; 1702 violet [flower]; 1703 lavender [flower]; 1705 dianthus; 1706 marigold; 1707 pansy; 1714 lilac [flower]; 1715 jasmine [flower]; 1716 hibiscus; 1727 dandelion [flower]; 1731 primrose [flower]; 1734 begonia; 1747 cornflower [flower]; 1749 hollyhock; 1750 nasturtium; 1776 clover; 7685 fuchsia [pink-purple] (adjective); 30304 elderflower; 30313 mallow; 30455 calendula; 30456 squash blossom; 30458 rose petal; 30459 chamomile [plant]; 30461 chive blossom; 30462 honeysuckle [flower]; 30463 daylily; 30464 rosemary; 30465 basil; 30466 anise hyssop; 30467 bee balm; 30468 johnny jump-up; 30469 redbud; 30470 safflower
+
+T anatolian_flowers | anatolian flowers | flowers native to or iconic in Turkey: tulip, hyacinth, crocus, cyclamen, fritillary
+W: 1694 tulip; 1697 lily; 1698 orchid; 1699 daffodil; 1700 narcissus [flower]; 1701 poppy [red flower]; 1704 carnation; 1705 dianthus; 1712 iris [flower]; 1713 hyacinth; 1717 peony [flower]; 1724 snowdrop; 1725 crocus; 1745 anemone [flower]; 1747 cornflower [flower]; 30382 grape hyacinth; 30387 scilla; 30388 winter aconite; 30525 cyclamen [plant]; 50223 fritillary [flower]; 56478 saffron crocus; 56479 glory of the snow; 56480 Turkish tulip
+G: 1699 1700; 1704 1705
+
+T south_african_flowers | south african flowers | protea, strelitzia, agapanthus, freesia, clivia, gerbera
+W: 1742 gladiolus; 1743 sword lily; 1744 freesia; 1752 bird of paradise [flower]; 1759 protea; 1760 gerbera; 1762 agapanthus; 2066 plumbago; 15623 pelargonium; 30413 king protea; 30527 nerine; 30529 ixia; 56481 strelitzia; 56482 clivia; 56483 arum lily; 56484 watsonia; 56485 red hot poker; 56486 lachenalia; 56487 ice plant; 56488 osteospermum; 56490 leucospermum; 56491 disa; 59404 pincushion [flower]; 63135 Cape daisy
+G: 1742 1743
+
+T flowers_of_east_asia | flowers of east asia | cherry blossom, lotus, chrysanthemum, peony, camellia, wisteria
+W: 1664 magnolia; 1698 orchid; 1710 chrysanthemum [flower]; 1715 jasmine [flower]; 1717 peony [flower]; 1728 lotus [flower]; 1729 hydrangea; 1736 gardenia; 1737 camellia; 1738 azalea; 2540 cherry blossom; 17342 ume [plum]; 29549 wisteria [flower]; 30080 forsythia; 30383 rhododendron; 30480 spider lily; 30503 osmanthus; 30592 morning glory [flower]; 38514 plum blossom; 56091 kerria; 56432 sakura [cherry blossom]; 56492 tree peony; 56494 rose of Sharon; 63136 platycodon
+
+T australian_wildflowers | australian wildflowers | kangaroo paw, waratah, wattle, banksia, flannel flower
+W: 2565 wattle [plant]; 30411 kangaroo paw; 30412 waratah; 30479 spider orchid; 30519 boronia; 38513 golden wattle; 56085 banksia; 56437 bottlebrush; 56495 flannel flower; 56496 Sturt's desert pea; 56497 everlasting daisy; 56498 paper daisy; 56499 grevillea; 56500 eremophila; 56501 hakea; 56502 Christmas bush; 56503 Geraldton wax; 56504 trigger plant; 56505 sun orchid; 56506 hardenbergia; 56507 correa; 56508 pigface; 56509 running postman; 56510 billy buttons; 56511 Swan River daisy
+
+T south_american_flowers | south american flowers | passionflower, fuchsia, alstroemeria, bromeliad, heliconia
+W: 1708 petunia; 1734 begonia; 1750 nasturtium; 1757 verbena; 1758 salvia; 1817 bromeliad; 7685 fuchsia [pink-purple] (adjective); 30350 lantana; 30394 bougainvillea; 30396 heliconia; 30397 anthurium; 30405 angel's trumpet; 30443 alstroemeria; 30453 calla lily; 30558 air plant; 38516 ceibo; 56092 cattleya; 56512 passionflower; 56513 calceolaria; 56514 giant water lily; 56515 Peruvian lily; 56516 cantua; 56517 puya; 56520 tillandsia
+
+T alpine_flowers | alpine flowers | edelweiss, gentian, alpine rose, saxifrage, pasqueflower
+W: 1746 edelweiss; 1756 columbine [flower]; 28281 harebell; 30384 primula; 30385 aubrieta; 30386 pasqueflower; 39170 gentian; 56522 saxifrage; 56523 aster; 56524 alpenrose; 56525 soldanella; 56526 poppy; 56527 moss campion; 56528 glacier crowfoot; 56529 houseleek; 56530 trumpet gentian; 56531 stemless gentian; 56532 forget-me-not; 56533 auricula; 56534 mountain avens; 56535 purple saxifrage; 56536 cinquefoil; 56537 clematis
+
+T yellow_flowers | yellow flowers
+W: 1696 sunflower; 1699 daffodil; 1700 narcissus [flower]; 1706 marigold; 1723 buttercup [flower]; 1727 dandelion [flower]; 1731 primrose [flower]; 1796 gorse; 1797 furze; 1798 whin; 1801 mimosa [plant]; 2565 wattle [plant]; 15689 yarrow; 30080 forsythia; 30348 coreopsis; 30354 cowslip; 30369 black-eyed Susan; 30372 goldenrod; 30655 St John's wort; 30661 evening primrose; 40099 canola; 56091 kerria; 56538 tansy; 56539 rose; 56540 lesser celandine; 56541 iris; 56542 trollius; 56543 gazania; 56544 winter jasmine; 56545 sneezeweed; 59388 broom [plant]; 65494 touch-me-not
+G: 1699 1700; 1796 1797 1798; 1801 65494
+
+T blue_flowers | blue flowers
+W: 789 borage; 1712 iris [flower]; 1722 bluebell; 1726 forget-me-not; 1729 hydrangea; 1739 delphinium; 1740 lupin [flower]; 1747 cornflower [flower]; 1755 larkspur; 1762 agapanthus; 2066 plumbago; 28281 harebell; 30343 lobelia; 30353 love-in-a-mist; 30360 speedwell; 30380 chicory [flower]; 30382 grape hyacinth; 30387 scilla; 30537 muscari; 30592 morning glory [flower]; 30616 monkshood; 30617 wolfsbane [poisonous]; 30618 aconite; 30676 flax [plant]; 39170 gentian; 56546 periwinkle [flower]; 56548 cranesbill; 56549 anchusa; 56550 viper's bugloss; 63137 Meconopsis
+G: 30616 30618 30617
+
+T red_flowers | red flowers
+W: 1693 rose [flower]; 1694 tulip; 1701 poppy [red flower]; 1704 carnation; 1705 dianthus; 1709 geranium; 1716 hibiscus; 1717 peony [flower]; 1719 snapdragon; 1720 antirrhinum; 1730 dahlia; 1733 zinnia; 1734 begonia; 1737 camellia; 1742 gladiolus; 1743 sword lily; 1751 amaryllis; 1758 salvia; 1760 gerbera; 1761 ranunculus; 1763 celosia; 1776 clover; 25023 poinsettia; 30349 bleeding heart; 30397 anthurium; 30467 bee balm; 30525 cyclamen [plant]; 39759 pomegranate blossom; 56551 cardinal; 56552 scarlet pimpernel; 56553 cockscomb; 63138 torch lily
+G: 1719 1720; 1742 1743; 1704 1705
+
+T white_flowers | white flowers
+W: 1651 hawthorn [tree]; 1664 magnolia; 1681 dogwood; 1695 daisy; 1697 lily; 1698 orchid; 1700 narcissus [flower]; 1715 jasmine [flower]; 1724 snowdrop; 1736 gardenia; 1737 camellia; 1745 anemone [flower]; 1746 edelweiss; 30142 wood anemone; 30304 elderflower; 30355 oxeye daisy; 30357 cow parsley; 30368 Queen Anne's lace; 30381 lily of the valley; 30441 gypsophila; 30442 baby's breath; 30446 stephanotis; 30453 calla lily; 30501 tuberose; 30502 orange blossom; 30508 mock orange; 30653 feverfew; 56554 rose; 56555 clover; 56556 bridal wreath
+
+T purple_flowers | purple flowers
+W: 1698 orchid; 1702 violet [flower]; 1703 lavender [flower]; 1707 pansy; 1708 petunia; 1712 iris [flower]; 1713 hyacinth; 1714 lilac [flower]; 1721 sweet pea; 1725 crocus; 1732 foxglove; 1735 aster; 1740 lupin [flower]; 1757 verbena; 1758 salvia; 1777 thistle [plant]; 1794 heather [plant]; 15532 echinacea; 17586 allium; 29549 wisteria [flower]; 30366 scabious; 30386 pasqueflower; 30474 catmint; 30507 heliotrope [flower]; 30546 African violet; 30591 clematis; 30616 monkshood; 30617 wolfsbane [poisonous]; 30618 aconite; 31092 sea holly; 56080 buddleia; 56548 cranesbill; 56557 Michaelmas daisy; 56558 campanula
+G: 30616 30618 30617
+
+T sweet_smelling_flowers | sweet-smelling flowers
+W: 1664 magnolia; 1693 rose [flower]; 1700 narcissus [flower]; 1702 violet [flower]; 1703 lavender [flower]; 1704 carnation; 1705 dianthus; 1713 hyacinth; 1714 lilac [flower]; 1715 jasmine [flower]; 1717 peony [flower]; 1721 sweet pea; 1736 gardenia; 1744 freesia; 1801 mimosa [plant]; 29549 wisteria [flower]; 30021 frangipani; 30304 elderflower; 30344 alyssum; 30381 lily of the valley; 30417 ylang-ylang; 30444 stock [flower]; 30462 honeysuckle [flower]; 30501 tuberose; 30502 orange blossom; 30503 osmanthus; 30504 night-scented stock; 30505 daphne [shrub]; 30507 heliotrope [flower]; 30508 mock orange; 30509 philadelphus; 30510 nicotiana; 30511 four o'clock; 30512 jonquil [flower]; 30514 lime blossom; 30515 clove pink; 30516 wallflower [plant]; 30517 pittosporum; 30519 boronia; 30520 night jasmine; 30521 moonflower; 30522 tea rose; 30523 damask rose; 30524 sweetbriar; 63139 dame's rocket; 65494 touch-me-not
+G: 1704 1705; 1801 65494
+
+T flower_bulbs | flower bulbs
+W: 1694 tulip; 1697 lily; 1699 daffodil; 1700 narcissus [flower]; 1712 iris [flower]; 1713 hyacinth; 1722 bluebell; 1724 snowdrop; 1725 crocus; 1730 dahlia; 1734 begonia; 1742 gladiolus; 1743 sword lily; 1744 freesia; 1745 anemone [flower]; 1751 amaryllis; 1761 ranunculus; 17586 allium; 30382 grape hyacinth; 30387 scilla; 30388 winter aconite; 30390 chionodoxa; 30391 squill; 30404 canna; 30453 calla lily; 30501 tuberose; 30512 jonquil [flower]; 30525 cyclamen [plant]; 30526 crocosmia; 30527 nerine; 30528 camassia; 30529 ixia; 30530 tigridia; 30531 sternbergia; 30532 colchicum; 30533 autumn crocus; 30534 eucomis; 30535 pineapple lily; 30536 paperwhite; 30537 muscari; 30538 hippeastrum; 50223 fritillary [flower]
+G: 1742 1743; 1699 1700
+
+T flowers_used_as_girls_names | flowers used as girls' names
+W: 1693 rose [flower]; 1695 daisy; 1697 lily; 1701 poppy [red flower]; 1702 violet [flower]; 1712 iris [flower]; 1714 lilac [flower]; 1715 jasmine [flower]; 1730 dahlia; 1731 primrose [flower]; 1736 gardenia; 1737 camellia
+
+T plants | plants
+W: 1339 seagrass; 1766 fern; 1767 moss; 1768 cactus; 1769 grass [plant]; 1770 ivy; 1771 bush [shrub]; 1772 shrub; 1773 vine [plant]; 1774 bamboo [plant]; 1775 weed [plant]; 1776 clover; 1777 thistle [plant]; 1778 nettle; 1779 stinging nettle; 1780 aloe vera; 1781 aloe; 1782 venus flytrap; 1784 reed [plant]; 1785 tumbleweed; 1786 Russian thistle; 1787 shamrock; 1788 seedling; 1789 sapling; 1790 mistletoe; 1791 water lily; 1792 sugarcane; 1794 heather [plant]; 1795 bracken; 1796 gorse; 1797 furze; 1798 whin; 1799 papyrus [plant]; 1801 mimosa [plant]; 1802 yucca; 1803 agave; 1804 succulent [plant]; 1805 perennial [plant]; 1806 annual [plant]; 1807 rush [plant]; 1808 bramble; 1809 pampas grass; 1810 duckweed; 1811 tree fern; 1812 sundew; 1813 sphagnum; 1814 horsetail; 1815 cycad; 1816 liana; 1817 bromeliad; 1818 sedge; 1819 biennial [plant]; 1820 kudzu; 1821 bindweed; 1822 knotweed; 1824 epiphyte; 1825 liverwort; 1826 hornwort; 1827 club moss; 30701 century plant; 63760 pitcher [carnivorous plant]; 65494 touch-me-not
+G: 1778 1779; 1785 1786; 1796 1797 1798; 1781 1780; 1801 65494; 1803 30701
+
+T houseplants | houseplants
+W: 1643 bonsai; 1698 orchid; 1734 begonia; 1766 fern; 1768 cactus; 1770 ivy; 1780 aloe vera; 1781 aloe; 1782 venus flytrap; 1802 yucca; 1804 succulent [plant]; 25023 poinsettia; 30397 anthurium; 30416 peace lily; 30539 spider plant; 30540 snake plant; 30541 rubber plant; 30542 monstera; 30543 Swiss cheese plant; 30544 pothos; 30545 jade plant; 30546 African violet; 30547 philodendron; 30548 fiddle-leaf fig; 30549 umbrella plant; 30550 ZZ plant; 30551 Boston fern; 30552 weeping fig; 30553 dracaena; 30554 calathea; 30555 prayer plant; 30556 string of pearls; 30557 Christmas cactus; 30558 air plant; 30559 money plant; 30560 English ivy; 30561 cast iron plant; 30562 kentia palm; 30563 parlor palm; 30564 hoya; 30565 alocasia; 30566 coleus; 30567 dieffenbachia; 30568 croton [plant]; 30569 bird's nest fern; 30570 tradescantia; 30571 maidenhair fern; 30572 sansevieria; 30573 Chinese evergreen; 30578 echeveria; 30580 haworthia; 30583 kalanchoe; 60183 pilea; 60184 peperomia; 60185 fittonia; 60186 aglaonema; 60187 ctenanthe; 60188 aspidistra; 60189 schefflera
+G: 1781 1780
+
+T flowering_houseplants | flowering houseplants
+W: 1698 orchid; 1734 begonia; 25023 poinsettia; 30397 anthurium; 30416 peace lily; 30546 African violet; 30557 Christmas cactus; 30564 hoya; 30583 kalanchoe
+
+T cacti_and_succulents | cacti and succulents
+W: 1768 cactus; 1780 aloe vera; 1781 aloe; 1802 yucca; 1803 agave; 30351 sedum; 30540 snake plant; 30545 jade plant; 30556 string of pearls; 30557 Christmas cactus; 30574 prickly pear; 30575 opuntia; 30576 saguaro [cactus]; 30577 barrel cactus; 30578 echeveria; 30579 aeonium; 30580 haworthia; 30581 lithops; 30582 living stones; 30583 kalanchoe; 30584 hens and chicks; 30585 sempervivum; 30586 cholla; 30587 stonecrop; 30588 crassula; 30589 organ pipe cactus; 30701 century plant
+G: 30581 30582; 1781 1780; 30574 30575; 1803 30701
+
+T vines_and_climbers | vines and climbers
+W: 1715 jasmine [flower]; 1721 sweet pea; 1750 nasturtium; 1770 ivy; 1816 liana; 1820 kudzu; 1821 bindweed; 17549 runner bean; 29549 wisteria [flower]; 30394 bougainvillea; 30399 passion flower; 30462 honeysuckle [flower]; 30521 moonflower; 30590 grapevine [plant]; 30591 clematis; 30592 morning glory [flower]; 30593 climbing rose; 30594 virginia creeper; 30595 hops [plant]; 30597 creeper [plant]; 30598 boston ivy; 30599 dodder; 30600 bryony; 30601 woodbine; 63140 mile-a-minute; 63141 trumpet creeper
+
+T water_plants | water plants
+W: 437 watercress; 653 rice [grain]; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 1292 kelp; 1671 mangrove; 1728 lotus [flower]; 1784 reed [plant]; 1799 papyrus [plant]; 1810 duckweed; 1826 hornwort; 8953 eelgrass; 8966 algae; 9766 pondweed; 9767 bulrush; 15707 cattail; 17376 water chestnut; 21715 arrowhead; 30603 hyacinth; 30605 frogbit; 30606 marsh marigold; 30607 elodea; 30609 fern; 30610 azolla; 30611 pickerel weed; 60190 bladderwort; 60191 crowfoot; 60192 vallisneria; 60193 cabomba; 60194 flowering rush; 60195 water soldier; 60196 hydrilla; 60197 spatterdock; 63142 nymphaea; 63143 milfoil; 65495 Nile cabbage
+
+T poisonous_plants | poisonous plants
+W: 1654 yew; 1699 daffodil; 1700 narcissus [flower]; 1732 foxglove; 1790 mistletoe; 28917 mandrake; 29944 Hemlock [poison]; 29953 holly [tree]; 30381 lily of the valley; 30398 oleander; 30405 angel's trumpet; 30533 autumn crocus; 30612 deadly nightshade; 30613 belladonna; 30614 poison ivy [plant]; 30615 poison oak; 30616 monkshood; 30617 wolfsbane [poisonous]; 30618 aconite; 30619 castor bean; 30620 laburnum; 30621 poison sumac; 30622 water hemlock; 30623 jimsonweed; 30624 henbane; 30625 cuckoo pint; 30626 giant hogweed; 30627 rosary pea
+G: 1699 1700; 30616 30618 30617; 30612 30613
+
+T plant_parts | plant parts
+W: 14916 pollen; 17411 seed [plant]; 17426 calyx; 17431 carpel; 17432 receptacle; 17437 pedicel; 17667 tuber; 28205 branch [tree]; 28286 flower [plant]; 28480 thorn; 30032 trunk [tree]; 30033 leaf; 30034 root [plant]; 30035 bark [tree]; 30036 twig; 30045 cambium; 30046 taproot; 30050 phloem; 30051 xylem; 30052 lenticel; 30089 fruit [tree]; 30090 petal [flower]; 30420 stem [plant]; 30421 stamen; 30422 pistil; 30423 sepal; 30424 anther; 30425 stigma; 30430 bract; 30433 tepal; 30438 stalk [plant stem]; 30629 bud [plant]; 30631 node [plant]; 30632 rhizome; 30633 stomata; 30634 chloroplast; 30635 frond; 30636 tendril; 40957 bulb [plant]; 40958 cuticle [plant]; 60198 petiole; 60199 meristem; 60200 mesophyll; 60201 stipule
+
+T grasses_and_reeds | grasses and reeds | bamboo, pampas, papyrus, sedge, rush, cattail, marram, fescue
+W: 657 oats; 658 wheat [cereal]; 666 barley; 758 lemongrass; 1774 bamboo [plant]; 1784 reed [plant]; 1792 sugarcane; 1799 papyrus [plant]; 1807 rush [plant]; 1818 sedge; 9767 bulrush; 15707 cattail; 29507 pampas; 30637 marram; 30638 fescue; 30639 ryegrass; 30640 switchgrass; 30641 bermuda; 30642 timothy [grass]; 30643 esparto; 30644 cordgrass; 30645 spinifex; 30647 fountain; 30648 miscanthus; 30649 elephant; 30650 vetiver; 30651 sawgrass; 50166 bluegrass [grass]; 60202 cocksfoot; 60203 phragmites; 60204 quaking grass; 60205 Yorkshire fog; 60206 canary; 60207 lyme grass; 63144 tussock; 63763 buffalo [prairie type]; 63765 couch [weed type]
+
+T medicinal_plants | medicinal plants | aloe vera, ginseng, echinacea, valerian, witch hazel, feverfew, arnica
+W: 404 garlic; 718 ginger [spice root]; 759 turmeric; 1641 eucalyptus; 1665 ginkgo; 1666 maidenhair tree; 1703 lavender [flower]; 1780 aloe vera; 1781 aloe; 15532 echinacea; 15563 ginseng; 15574 licorice root; 15603 senna; 15686 willow bark; 15687 goldenseal; 15688 witch hazel; 15689 yarrow; 15694 slippery elm; 15695 black cohosh; 18360 peppermint [herb]; 30304 elderflower; 30455 calendula; 30459 chamomile [plant]; 30652 valerian [herb]; 30653 feverfew; 30654 arnica; 30655 St John's wort; 30656 comfrey; 30657 milk thistle; 30658 marshmallow root; 30659 skullcap [plant]; 30660 tea tree; 30661 evening primrose; 30662 cinchona; 50332 plantain [weed]
+G: 1665 1666; 1781 1780
+
+T weeds | weeds | dandelion, nettle, thistle, bindweed, dock, chickweed, ragwort, knotweed
+W: 1727 dandelion [flower]; 1767 moss; 1776 clover; 1777 thistle [plant]; 1778 nettle; 1779 stinging nettle; 1808 bramble; 1814 horsetail; 1821 bindweed; 1822 knotweed; 17443 burdock; 30311 chickweed; 30314 cleavers; 30317 purslane; 30318 hogweed; 30360 speedwell; 30367 ragwort; 30374 milkweed; 30646 couch grass; 30663 dock [plant]; 30664 crabgrass; 30665 groundsel; 30666 ground elder; 30667 creeping buttercup; 30668 mare's tail; 30669 goosegrass; 30670 lamb's quarters; 30671 shepherd's purse; 30672 bittercress; 30673 oxalis; 30674 ragweed; 30675 mugwort; 50332 plantain [weed]; 56552 scarlet pimpernel; 60173 fat hen; 60210 sow thistle; 60211 fumitory; 60212 charlock; 60213 fleabane; 60214 pineappleweed; 60215 spurge
+G: 1778 1779
+
+T fiber_plants | fiber plants | plants grown for fiber: cotton, flax, hemp, jute, sisal, coir, abaca
+W: 351 coconut [fruit]; 1774 bamboo [plant]; 1803 agave; 5038 cotton; 24866 jute [fabric]; 25211 raffia; 25534 sisal; 30016 kapok; 30643 esparto; 30676 flax [plant]; 30677 hemp [plant]; 30678 coir; 30679 abaca; 30680 ramie; 30681 rattan; 30682 wicker; 30683 kenaf; 30684 sunn hemp; 30685 henequen; 30686 phormium; 30701 century plant
+G: 1803 30701
+
+T plants_of_the_middle_east | plants of the middle east | date palm, cedar of Lebanon, frankincense, myrrh, henna, tamarisk
+W: 100 pomegranate; 101 fig; 380 jujube; 626 licorice; 761 saffron [spice]; 780 sumac; 1780 aloe vera; 1781 aloe; 1799 papyrus [plant]; 2559 cedar of Lebanon; 15588 black seed; 15589 nigella; 15591 frankincense; 15592 myrrh; 15595 henna; 15603 senna; 15604 mastic; 16297 sidr; 17396 black cumin; 18700 hyssop; 29976 olive tree; 29980 date palm; 30398 oleander; 30523 damask rose; 30698 desert rose; 32124 tamarisk; 39077 gum arabic; 56477 terebinth; 56559 ghaf; 56560 balm of Gilead; 56561 sycamore fig; 56562 oud [wood]
+G: 15588 17396 15589; 1781 1780
+
+T new_zealand_plants | new zealand plants | kauri, pohutukawa, silver fern, manuka, kowhai, harakeke
+W: 1688 kauri; 1811 tree fern; 2553 silver fern; 2554 ponga; 15638 kawakawa; 15652 harakeke; 25007 Christmas tree [evergreen tree]; 27116 rimu; 30082 hebe [shrub]; 30676 flax [plant]; 56563 pohutukawa; 56564 manuka; 56565 kowhai; 56566 totara; 56567 kahikatea; 56568 nikau; 56569 cabbage tree; 56570 mamaku; 56571 rata [tree]; 56572 toetoe; 56573 puriri; 56574 rewarewa; 56575 tawa [tree]; 56576 matai; 56577 kanuka; 56578 ngaio; 56579 karaka; 56580 horopito; 56581 Mount Cook lily
+G: 2553 2554
+
+T christmas_plants | christmas plants
+W: 716 rosemary [culinary herb]; 1629 pine [tree]; 1639 spruce; 1687 Douglas fir; 1751 amaryllis; 1770 ivy; 1790 mistletoe; 25023 poinsettia; 27965 tree [plant]; 29953 holly [tree]; 29955 Scots pine; 29956 Norway spruce; 30341 hellebore; 30525 cyclamen [plant]; 30536 paperwhite; 30583 kalanchoe; 30687 fir tree; 30689 nordmann fir; 30690 blue spruce; 30691 winterberry; 30692 snowberry; 30693 red amaryllis; 60216 butcher's broom; 60217 Jerusalem cherry; 60218 noble fir; 60219 Fraser fir; 65496 Holiday cactus
+
+T desert_plants | desert plants
+W: 1657 acacia; 1661 baobab; 1662 monkey bread tree; 1669 Joshua tree [tree]; 1768 cactus; 1780 aloe vera; 1781 aloe; 1785 tumbleweed; 1786 Russian thistle; 1802 yucca; 1803 agave; 29500 mesquite; 29980 date palm; 30031 ironwood; 30574 prickly pear; 30575 opuntia; 30576 saguaro [cactus]; 30577 barrel cactus; 30581 lithops; 30582 living stones; 30586 cholla; 30589 organ pipe cactus; 30645 spinifex; 30694 sagebrush; 30695 creosote bush; 30696 ocotillo; 30697 welwitschia; 30699 brittlebush; 30700 palo verde; 30701 century plant; 30702 desert willow; 32145 saltbush; 60220 jojoba; 60221 ephedra; 60222 quiver tree; 60223 boojum tree; 60224 candelilla; 60225 bursage; 63145 adenium
+G: 30581 30582; 1785 1786; 1661 1662; 1781 1780; 30574 30575; 1803 30701
+
+T thorny_plants | thorny plants
+W: 349 raspberry; 350 blackberry [phone]; 366 gooseberry [green berry]; 1651 hawthorn [tree]; 1657 acacia; 1693 rose [flower]; 1768 cactus; 1777 thistle [plant]; 1796 gorse; 1797 furze; 1798 whin; 1803 agave; 1808 bramble; 16748 sea buckthorn; 17194 barberry; 17224 sloe; 29500 mesquite; 29953 holly [tree]; 30073 blackthorn; 30077 berberis; 30078 pyracantha; 30081 osage orange; 30362 teasel; 30375 wild rose; 30394 bougainvillea; 30701 century plant; 30703 firethorn; 30704 bull thistle; 30705 honey locust; 31092 sea holly; 60226 buckthorn; 60227 caltrop; 60228 devil's club; 60229 prickly ash; 60230 Spanish bayonet; 60231 globe thistle
+G: 1796 1797 1798; 1803 30701
+
+T seeds_and_pips | seeds and pips
+W: 720 mustard; 1696 sunflower; 1701 poppy [red flower]; 17359 pine nut; 17360 pignoli; 17361 pinon; 17362 acorn [nut]; 17382 sesame; 17389 chia; 17390 hemp; 17411 seed [plant]; 17414 stone [fruit]; 17415 pit [fruit]; 30088 conker; 30092 sycamore key; 30094 samara [seed]; 30707 pip [seed]; 30708 kernel [seed]; 30710 apple; 30711 grape; 30712 achene; 30713 cotyledon; 30714 endosperm; 30715 peach stone; 30716 cherry stone; 30717 avocado stone; 60232 testa; 60233 radicle; 60234 plumule; 63146 linseed; 63301 pepita [pumpkin kernel]
+G: 17359 17360 17361
+
+T flowerless_plants | flowerless plants
+W: 1766 fern; 1767 moss; 1795 bracken; 1811 tree fern; 1813 sphagnum; 1814 horsetail; 1815 cycad; 1825 liverwort; 1826 hornwort; 1827 club moss
+
+T heath_and_moor_plants | heath and moor plants
+W: 1794 heather [plant]; 1795 bracken; 1796 gorse; 1797 furze; 1798 whin; 1807 rush [plant]; 1808 bramble; 1813 sphagnum; 1818 sedge
+
+T garden | garden
+W: 1828 lawn [garden]; 1829 flower bed; 1830 hedge [garden]; 1831 shed [garden building]; 1832 fence; 1833 path [garden]; 1834 patio; 1835 greenhouse; 1836 compost (verb); 1837 mulch (verb); 1838 soil; 1839 fertilizer; 1841 pond [garden water]; 1842 gate [garden]; 1843 wheelbarrow; 1844 hose [pipe]; 1845 watering can; 1846 sprinkler; 1847 lawnmower; 1849 mower; 1850 shovel; 1851 rake [garden] (verb); 1852 spade [digging tool]; 1853 trowel; 1854 hoe [tool]; 1855 plant pot; 1856 bird feeder; 1857 scarecrow [field figure]; 1858 fountain [garden feature]; 1859 birdbath; 1860 trellis [garden]; 1861 gnome; 1862 gazebo; 1863 raised bed; 1864 compost bin; 1865 potting shed; 1866 rock; 1867 rockery; 1868 vegetable patch; 1870 Kitchen; 1871 sundial; 1873 terrace [garden]; 1875 community; 1876 pergola; 1877 arbor; 1879 topiary; 1881 pruning shears; 1884 rain barrel; 1885 seed tray; 1886 herbaceous border; 1887 cold frame; 1888 cloche [garden]; 1889 trug; 1890 dibber; 1891 dibble; 1892 espalier (verb); 1893 ha-ha [garden wall]; 2050 stone [rock]; 67224 deck [patio]
+G: 1870 1868; 1890 1891; 1847 1849; 1867 1866
+
+T garden_tools | garden tools
+W: 1843 wheelbarrow; 1844 hose [pipe]; 1845 watering can; 1846 sprinkler; 1847 lawnmower; 1849 mower; 1850 shovel; 1851 rake [garden] (verb); 1852 spade [digging tool]; 1853 trowel; 1854 hoe [tool]; 1881 pruning shears; 1890 dibber; 1891 dibble; 23686 leaf blower; 23687 hedge trimmer; 25769 scythe; 29023 rotavator; 30718 fork [garden]; 30719 shears; 30720 loppers; 30722 weed whacker; 30724 edging iron; 30725 hand fork; 30727 pruning saw; 30728 cultivator; 30729 bulb planter; 30730 grass shears; 40288 sickle; 60235 billhook; 60236 mattock; 60237 hori hori; 60238 Dutch hoe; 60239 turf cutter
+G: 1890 1891; 1847 1849; 30719 1881 30730
+
+T garden_features | garden features
+W: 1828 lawn [garden]; 1829 flower bed; 1830 hedge [garden]; 1831 shed [garden building]; 1832 fence; 1833 path [garden]; 1834 patio; 1835 greenhouse; 1841 pond [garden water]; 1856 bird feeder; 1858 fountain [garden feature]; 1859 birdbath; 1860 trellis [garden]; 1861 gnome; 1862 gazebo; 1863 raised bed; 1867 rockery; 1868 vegetable patch; 1870 Kitchen; 1871 sundial; 1876 pergola; 1877 arbor; 1879 topiary; 1884 rain barrel; 1887 cold frame; 1893 ha-ha [garden wall]; 2512 orangery; 2513 folly [building]; 2519 belvedere; 30732 border [garden]; 30733 compost heap; 30734 herb; 30735 wildflower meadow; 30821 stepping stones; 30925 grotto; 31930 rill; 60240 pleached hedge; 60241 water; 67224 deck [patio]
+G: 1870 1868
+
+T garden_pests | garden pests
+W: 990 squirrel [tree rodent]; 997 deer; 1029 mole [animal]; 1070 pigeon [bird]; 1361 caterpillar; 1367 snail; 1368 slug [animal]; 1372 aphid; 1374 blackfly; 1377 earwig; 1406 thrips; 1407 whitefly; 1408 sawfly; 1418 roly-poly; 1443 rabbit; 1444 bunny; 7838 vole; 7848 gopher [pocket rodent]; 9008 japanese beetle; 9016 flea beetle; 9026 cabbage white; 9052 codling moth; 9117 vine weevil; 9118 cutworm; 9119 leatherjacket; 9120 mealybug; 9121 scale insect; 9122 red spider mite; 30736 wireworm; 30737 lily beetle; 60242 carrot fly; 60243 cabbage root fly; 60244 pea moth; 60245 leafminer; 60246 capsid; 60247 rosemary beetle; 60248 chafer grub; 60249 box tree moth
+G: 1443 1444; 1372 1374
+
+T garden_furniture | garden furniture
+W: 339 bench [seat]; 342 rocking chair; 346 chaise longue; 3043 fire pit; 3044 hammock [hanging bed]; 3055 picnic table; 4688 daybed; 5004 parasol [sunshade]; 19767 barbecue [grilled meat] (verb); 23407 folding chair; 23415 egg chair; 25810 sun lounger; 30738 deck chair; 30739 patio table; 30740 swing seat; 30741 adirondack chair; 30742 bistro set; 30744 patio heater; 30745 outdoor sofa; 30746 lounge chair; 30747 patio chair; 60250 glider [seat]; 60251 chiminea; 60252 Lutyens bench; 60253 tree seat; 60254 love seat; 60255 hanging chair; 60256 wicker chair; 60257 patio set; 60258 steamer chair
+
+T garden_birds | garden birds
+W: 1067 robin [bird]; 1068 sparrow; 1076 hummingbird; 1089 magpie; 1090 starling; 1091 blackbird; 1109 thrush [bird]; 1111 jackdaw; 1131 dunnock; 8103 sparrowhawk; 8151 wren [bird]; 8153 cardinal [bird]; 8154 mockingbird; 8155 blue jay; 8158 chickadee; 8159 nuthatch; 8160 goldfinch; 8161 chaffinch; 8162 bullfinch; 8163 greenfinch; 8166 blue tit [bird]; 8167 great tit; 8168 song thrush; 8169 mistle thrush; 8170 redwing; 8171 fieldfare; 8172 yellowhammer; 8173 linnet; 8174 siskin; 8175 redpoll; 8178 treecreeper; 8188 junco; 8189 towhee; 8192 house sparrow; 8462 collared dove; 9861 pied wagtail; 30748 woodpigeon; 30749 long-tailed tit; 30750 coal tit; 30751 goldcrest; 50614 brambling; 59933 waxwing; 60259 titmouse
+
+T gardening_verbs | gardening verbs
+W: 1836 compost (verb); 1837 mulch (verb); 1851 rake [garden] (verb); 1892 espalier (verb); 19791 trim [cut] (verb); 20004 aerate (verb); 25084 harvest [crop gathering] (verb); 28291 plant [garden] (verb); 30752 dig [soil] (verb); 30753 irrigate (verb); 30754 mow (verb); 30755 sow [seeds] (verb); 30756 grow (verb); 30757 fertilise (verb); 30759 deadhead [gardening] (verb); 30760 hoe [weeding] (verb); 30761 graft (verb); 30762 thin out (verb); 30763 prick out (verb); 30764 pinch out (verb); 30765 harden off (verb); 30766 scarify (verb); 30767 propagate (verb); 30768 cultivate (verb); 50081 prune [trim] (verb); 50144 transplant [garden] (verb); 50244 weed [remove weeds] (verb); 60260 earth up (verb); 60261 chit (verb); 60262 pot on (verb); 60263 bed out (verb); 60264 disbud (verb); 60265 pollard (verb); 60266 pleach (verb); 60267 tie in (verb)
+
+T garden_styles | garden styles | rock garden, cottage garden, kitchen garden, zen garden, knot garden, walled garden
+W: 1866 rock; 1867 rockery; 1870 Kitchen; 1927 mire; 2050 stone [rock]; 6565 quad [courtyard]; 30734 herb; 30769 cottage; 30770 zen; 30771 walled; 30772 knot; 30773 formal; 30774 English; 30775 Japanese; 30776 water; 30777 wildlife; 30778 prairie; 30779 Italian; 30780 French; 30781 parterre; 30782 sunken; 30783 courtyard; 30784 woodland; 30785 gravel; 30786 xeriscape; 30787 permaculture; 30788 container; 30789 roof; 30790 bog; 30791 alpine; 30792 moon; 30793 potager; 30794 landscape; 30795 tropical; 30828 karesansui; 60268 Mughal; 60269 Persian; 60270 stroll; 60271 physic garden; 60272 cloister; 60273 forest; 60274 chahar bagh; 60275 Mediterranean; 60276 sensory; 60277 Dutch; 60278 Victorian; 60279 rain
+G: 1867 1866
+
+T famous_gardens | famous gardens | Kew, Versailles, Keukenhof, Giverny, Butchart, Kirstenbosch, Boboli
+W: 30797 Versailles; 30798 Keukenhof; 30799 Giverny; 30801 Kirstenbosch; 30803 Eden Project; 30804 Stourhead; 30805 Sissinghurst; 30806 Villa d'Este; 30808 Gardens by the Bay; 30809 Kenroku-en; 30810 Hidcote; 30811 Powerscourt; 30812 Chatsworth; 30813 Bodnant; 30814 Chanticleer; 30815 Wisley; 30817 Ryoan-ji; 30818 Generalife; 60280 Villandry; 60281 Great Dixter; 60283 Tresco Abbey; 60284 Ninfa; 60285 Mount Stewart; 62578 Alnwick; 63147 Boboli; 63148 Butchart; 63149 Kew; 63150 Longwood; 63151 Majorelle
+
+T japanese_garden | japanese garden | koi, bonsai, stone lantern, raked gravel, moss, teahouse, stepping stones
+W: 1239 koi; 1643 bonsai; 1738 azalea; 1866 rock; 1867 rockery; 2050 stone [rock]; 2540 cherry blossom; 14049 stone lantern; 14056 koi pond; 30770 zen; 30819 raked gravel; 30820 teahouse; 30821 stepping stones; 30822 bamboo fence; 30823 arched bridge; 30824 red bridge; 30825 bamboo fountain; 30826 shishi-odoshi; 30827 tsukubai; 30828 karesansui; 30829 moss; 30830 sand; 30831 tea garden; 30832 stone basin; 30833 gravel path; 30834 pruned pine; 30835 bamboo spout; 30836 sand ripples; 60286 shakkei; 60287 tobi-ishi; 60288 ishidoro; 60289 tsuboniwa; 60291 chozubachi; 60292 kokedera
+
+T garden_helpers | garden helpers
+W: 1003 hedgehog [animal]; 1144 frog [amphibian]; 1145 toad [animal]; 1147 newt; 1148 eft; 1181 slow worm; 1342 bee [insect]; 1351 ladybug; 1353 lady beetle; 1364 centipede; 1366 earthworm; 1378 praying mantis [insect]; 1379 mantis; 1383 bumblebee; 1384 honeybee; 1389 lacewing; 1432 hoverfly; 9000 ground beetle; 9013 rove beetle; 9061 mason bee; 9071 ichneumon wasp; 30838 parasitic wasp; 30839 compost worm; 30840 pollinator; 30841 bug hotel; 60293 devil's coach horse; 60294 predatory mite
+G: 1379 1378; 1351 1353; 1147 1148
+
+T landscapes | landscapes
+W: 1894 mountain [landform]; 1895 mount [mountain]; 1896 hill [rise of land]; 1897 hillock; 1898 knoll; 1899 hummock; 1900 valley [landform]; 1902 vale; 1903 canyon; 1904 gulch; 1905 arroyo [dry gully]; 1906 cliff; 1907 desert [wasteland]; 1908 river [water]; 1909 lake; 1910 island [landmass]; 1911 glacier [ice]; 1912 volcano; 1913 cave [rock hollow]; 1914 waterfall; 1915 beach [sandy shore]; 1916 peak [mountain]; 1917 plain [landscape]; 1918 plateau [landform]; 1919 meadow; 1920 prairie; 1921 tundra [biome]; 1922 savanna; 1924 swamp [wooded wetland]; 1925 marsh [wetland]; 1926 bog [wetland]; 1927 mire; 1928 gorge; 1929 dune; 1930 ridge [landform]; 1931 crater; 1932 cove [bay]; 1933 summit [mountaintop]; 1934 peninsula; 1935 grassland; 1936 wetland; 1937 oasis [desert]; 1938 geyser [landform]; 1939 cape [headland]; 1940 steppe; 1941 fjord [landform]; 1943 ravine; 1944 delta [river]; 1945 estuary; 1946 archipelago; 1947 lagoon; 1948 atoll; 1949 isthmus; 1950 mesa; 1951 badlands [terrain]; 1952 moor; 1953 moorland; 1954 heath [landscape]; 1955 fen; 1956 glen; 1957 escarpment; 1958 scarp; 1959 foothills; 1960 outcrop; 1961 bluff [landform]; 1962 butte; 1963 tarn [mountain lake]; 1964 moraine
+G: 1894 1895; 1900 1902; 1896 1897 1899 1898; 1957 1958; 1926 1927; 1952 1953
+
+T mountain_features | mountain features
+W: 1900 valley [landform]; 1902 vale; 1906 cliff; 1911 glacier [ice]; 1916 peak [mountain]; 1918 plateau [landform]; 1928 gorge; 1930 ridge [landform]; 1933 summit [mountaintop]; 1943 ravine; 1959 foothills; 1963 tarn [mountain lake]; 1964 moraine; 30155 treeline; 30842 slope [hill]; 30843 pass [mountain]; 30844 crag; 30845 col [mountain]; 30846 arete; 30847 cirque; 30849 cwm [valley]; 30850 scree; 30851 snowline; 30852 spur [mountain]; 30853 crest [ridge]; 30854 massif; 30856 pinnacle; 30857 rock face; 30858 couloir; 30859 alp [mountain]; 30860 tor; 32093 saddle [mountain]; 43543 avalanche [skiing]; 50329 buttress [mountain]
+G: 1900 1902; 30847 30849
+
+T river_features | river features
+W: 1914 waterfall; 1944 delta [river]; 1945 estuary; 28728 bayou; 30152 stream [woodland]; 30861 bank [river]; 30862 source [river]; 30863 rapids; 30864 tributary; 30865 oxbow lake; 30866 floodplain; 30867 riverbed; 30868 ford [car brand]; 30869 weir; 30870 confluence; 30871 rivulet; 30873 brook; 30874 creek; 30875 sandbar; 30876 levee; 30877 eddy; 30878 headwaters; 30879 watershed; 30880 backwater; 30881 shallows; 30882 bend; 31931 meander [river] (verb); 50075 plunge pool [waterfall basin]; 50330 mouth [river]; 60295 thalweg; 60296 riffle; 60297 point bar; 60298 braided; 60299 knickpoint; 60300 cut bank
+
+T desert_features | desert features
+W: 1905 arroyo [dry gully]; 1929 dune; 1937 oasis [desert]; 1950 mesa; 1951 badlands [terrain]; 1962 butte; 2047 haboob; 29280 mirage; 30883 wadi; 30884 salt flat; 30885 playa; 30886 sandstorm; 30887 hoodoo; 30888 erg [sand sea]; 30889 hamada; 30890 sand sea; 30891 desert pavement; 30892 inselberg; 30893 dust devil; 30895 barchan; 30896 star dune; 30897 alluvial fan; 30898 wash; 30899 rock arch; 60301 yardang; 60302 ventifact; 60303 bajada; 60304 sabkha; 60305 nebkha; 60306 pediment [landform]
+
+T ice_features | ice features
+W: 1911 glacier [ice]; 1964 moraine; 2015 icicle; 28525 sheet [glacier]; 28526 floe; 29374 iceberg; 30847 cirque; 30849 cwm [valley]; 30900 ice cap; 30902 crevasse; 30903 permafrost; 30905 ice shelf; 30906 frozen lake; 30907 snowfield; 30908 serac; 30909 sea ice; 30910 cave; 30911 firn; 30912 nunatak; 30913 bergy bit; 30914 growler [ice]; 30915 hoarfrost; 30916 ice fall; 30917 calving; 30918 polynya; 30919 ice bridge; 30920 glacial stream; 30921 frozen waterfall; 39919 sastrugi; 39920 frazil; 45106 bergschrund; 60307 penitentes; 60308 brinicle; 60310 esker; 60311 drumlin; 63778 pack [drifting floes]
+G: 30847 30849
+
+T cave_features | cave features
+W: 30172 sinkhole; 30922 stalactite; 30923 stalagmite; 30924 cavern; 30925 grotto; 30926 underground river; 30927 flowstone; 30928 cave pearl; 30929 helictite; 30930 speleothem; 30931 underground lake; 30932 pothole [caving]; 30933 mouth; 30934 limestone; 30935 soda straw; 30936 dripstone; 30937 gour; 30938 crystal; 30939 lava tube; 30940 sea cave; 30941 rimstone; 30942 chamber; 30943 entrance; 30944 passage; 30946 wall; 60312 cenote; 60313 ponor; 60314 moonmilk; 60315 cave bacon; 60316 anthodite; 60317 doline; 60318 karst
+
+T flat_landscapes | flat landscapes | plain, plateau, prairie, steppe, tundra, moor, heath, fen, veld, pampas
+W: 1917 plain [landscape]; 1918 plateau [landform]; 1920 prairie; 1921 tundra [biome]; 1922 savanna; 1935 grassland; 1940 steppe; 1952 moor; 1953 moorland; 1954 heath [landscape]; 1955 fen; 29473 veld; 29507 pampas; 30207 cerrado; 30947 flatland; 30948 llano; 30949 lowland; 30950 downs; 30951 fenland; 30952 puszta; 30953 machair; 30954 heathland; 30955 scrubland; 30956 great plains; 32148 altiplano; 60319 polder; 60320 karoo; 60321 salt pan; 60322 tableland
+G: 1952 1953
+
+T bodies_of_water | bodies of water | lake, pond, lagoon, reservoir, loch, tarn, fjord, bay, gulf, estuary, sound
+W: 1841 pond [garden water]; 1908 river [water]; 1909 lake; 1932 cove [bay]; 1941 fjord [landform]; 1945 estuary; 1947 lagoon; 1963 tarn [mountain lake]; 2804 harbor [port]; 7421 reservoir; 27391 loch; 28110 sea [water body]; 28144 bay [inlet]; 28728 bayou; 28839 bight; 30152 stream [woodland]; 30865 oxbow lake; 30873 brook; 30874 creek; 30959 gulf [sea inlet]; 30960 sound [water]; 30961 ocean [water]; 30962 canal; 30963 strait; 30964 channel [water]; 30965 inlet; 30966 mere [lake]; 30967 billabong; 30968 rock pool; 30969 firth; 30970 lough; 30971 slough [water]; 30977 lochan; 60323 ria; 60324 turlough; 60325 kettle lake; 60326 inland sea
+G: 30970 27391
+
+T island_types | island types
+W: 1946 archipelago; 1948 atoll; 21269 desert; 30981 skerry; 30991 volcanic; 30992 coral; 30993 barrier; 30994 islet; 30995 cay; 30996 key [island]; 30997 tidal; 30998 continental; 30999 oceanic; 31000 river; 31001 island chain; 31002 sea stack; 31003 reef; 31004 holm; 31005 eyot; 31006 ait; 31007 man-made; 31008 floating; 31009 sandy cay; 31010 island arc; 31011 mid-ocean; 31012 hotspot; 31013 tropical; 31015 sand; 31016 barrier reef
+G: 30993 31016 31003
+
+T soggy_places | soggy places
+W: 1924 swamp [wooded wetland]; 1925 marsh [wetland]; 1926 bog [wetland]; 1927 mire; 1936 wetland; 1944 delta [river]; 1945 estuary; 1947 lagoon; 1955 fen
+
+T seashells | seashells | cowrie, conch, scallop, cockle, whelk, clam, abalone, nautilus, limpet, sand dollar
+W: 478 clam; 479 scallop [shellfish]; 505 whelk; 506 cockle; 507 abalone; 1299 nautilus [mollusk]; 1312 limpet; 1323 conch; 1324 cowrie; 1325 sand dollar; 7746 periwinkle [sea snail]; 8883 chiton; 8887 murex; 31017 oyster shell; 31018 mussel shell; 31019 razor shell; 31020 top shell; 31021 cone shell; 31022 turban shell; 31023 auger shell; 31024 spindle shell; 31025 tellin; 31026 slipper shell; 31027 moon snail; 31028 olive shell; 31029 spiral shell; 31030 angel wing; 31031 sundial shell; 31032 jingle shell; 31033 volute; 31034 tulip shell; 31035 pearl oyster; 31036 sea snail shell; 31037 queen conch; 31038 heart cockle
+
+T rock_pool | rock pool life | crab, starfish, limpet, anemone, barnacle, periwinkle, shrimp, blenny
+W: 469 lobster; 470 crab [animal]; 471 shrimp; 477 mussel; 502 sea urchin; 503 uni; 1287 starfish; 1288 sea star; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 1292 kelp; 1295 barnacle; 1296 sea anemone; 1297 anemone [sea creature]; 1311 hermit crab; 1312 limpet; 1313 sea slug; 1314 nudibranch; 1315 sea cucumber; 1316 brittle star; 1333 sea squirt; 1335 coralline algae; 1340 bladderwrack; 7746 periwinkle [sea snail]; 8883 chiton; 8885 sea hare; 8943 sea lettuce; 9881 sea snail; 31039 blenny; 31040 dog whelk; 31042 rockling; 31043 shanny; 31044 topshell; 31045 beadlet anemone; 31046 shore crab; 31047 tide pool; 31048 sandhopper; 31049 sea sponge; 31050 goby; 31051 tompot blenny; 60327 snakelocks anemone
+G: 1297 1296; 1287 1288; 1313 1314; 502 503
+
+T beachcombing_finds | beachcombing finds | driftwood, sea glass, shells, pebbles, mermaid's purse, cuttlebone, kelp
+W: 1287 starfish; 1288 sea star; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 1292 kelp; 1325 sand dollar; 1567 fossil; 1615 amber [fossil resin]; 2078 pumice; 2079 pumice stone; 2830 buoy; 8360 feather [bird]; 30059 driftwood [beach]; 31019 razor shell; 31052 sea glass; 31053 pebbles; 31054 shells [seashells]; 31055 mermaid's purse; 31056 cuttlebone; 31057 flotsam; 31058 jetsam; 31059 message in a bottle; 31060 fishing net; 31061 cork float; 31062 sea bean; 31063 crab shell; 31064 whalebone; 31065 plastic bottle; 31066 sea urchin shell; 31067 beach pottery; 31068 glass float; 31069 ambergris; 31070 sea pottery; 31071 lost flip-flop; 31072 bottle top; 31073 lava rock; 48700 rope [climbing]
+G: 2078 2079; 1287 1288
+
+T coastal_features | coastal features
+W: 1906 cliff; 1915 beach [sandy shore]; 1929 dune; 1932 cove [bay]; 1934 peninsula; 1939 cape [headland]; 1941 fjord [landform]; 1944 delta [river]; 1945 estuary; 1947 lagoon; 1949 isthmus; 28144 bay [inlet]; 28191 coast; 28839 bight; 30874 creek; 30875 sandbar; 30940 sea cave; 30959 gulf [sea inlet]; 30963 strait; 30965 inlet; 30981 skerry; 31002 sea stack; 31074 headland; 31075 spit [landform]; 31076 sea arch; 31077 reef [coral]; 31078 promontory; 31079 tombolo; 31080 wave-cut platform; 31081 shingle bank; 31082 mudflat; 31083 salt marsh; 31084 sea wall; 31085 barrier beach; 31086 raised beach; 31087 shoreline; 31088 natural arch; 31089 cuspate foreland; 31090 shingle beach; 50163 blowhole [coast]; 60328 wave-cut notch; 60329 storm beach; 60330 tidal flat
+
+T coastal_plants | coastal plants | marram grass, sea holly, samphire, thrift, sea kale, sea lavender, mangrove
+W: 454 samphire; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 1292 kelp; 1340 bladderwrack; 1671 mangrove; 8940 dulse; 8943 sea lettuce; 8945 carrageen; 8953 eelgrass; 8954 oarweed; 8967 bull kelp; 16748 sea buckthorn; 28302 thrift; 29979 coconut palm; 31091 marram grass; 31092 sea holly; 31093 sea kale; 31094 sea lavender; 31095 sea pink; 31096 sea campion; 31097 sea beet; 31098 glasswort; 31099 saltwort; 31100 sea rocket; 31101 sea aster; 31102 sea purslane; 31103 sea spurge; 31104 sea bindweed; 31105 rock samphire; 31106 yellow horned poppy; 31107 beach pea; 31108 dune grass; 31109 sea oats; 31110 sea grape; 31111 laver [seaweed]; 31112 sea fennel; 31113 sand sedge; 31114 marsh samphire
+G: 454 31105 31114
+
+T tides_and_currents | tides and currents
+W: 29370 maelstrom; 30877 eddy; 31115 high; 31116 low; 31117 spring; 31119 ebb; 31120 flood; 31121 slack water; 31122 rip; 31123 undertow; 31124 gulf stream; 31125 tidal wave; 31126 tidal bore; 31127 riptide; 31128 current [water]; 31129 tidal range; 31130 king; 31131 whirlpool [water current]; 31132 gyre; 31133 upwelling; 31134 longshore drift; 31135 el nino; 31136 la nina; 31138 kuroshio; 31139 tidal stream; 31141 tide table; 31142 tidal race; 31143 backwash; 31144 tide; 31145 rising; 31146 falling; 31147 tidal flow; 31148 tidal surge; 31149 cross current; 60333 Labrador Current; 60334 amphidromic point; 60335 Ekman spiral; 60336 Coriolis effect; 60337 tidal bulge; 63111 Humboldt; 63152 Agulhas; 63153 Benguela; 63154 neap
+
+T shipwreck_coast_words | shipwreck coast words | lighthouse, reef, rocks, wreck, shoal, sandbank, breakers, foghorn
+W: 1974 fog; 1975 pea-souper; 1976 haar; 1992 gale; 2474 lighthouse; 2791 lifeboat; 2830 buoy; 6788 maroon [abandon] (verb); 25999 mayday [distress call]; 31057 flotsam; 31058 jetsam; 31077 reef [coral]; 31123 undertow; 31151 rocks; 31152 wreck; 31153 sandbank; 31154 breakers; 31155 foghorn; 31157 shipwreck; 31158 salvage; 31159 ghost ship; 31160 cliffs; 31161 distress flare; 31163 SOS [signal]; 31164 castaway; 31165 run aground (verb); 31167 lantern room; 31168 fog signal; 31169 skerries; 31170 sunken ship; 31171 coastguard; 31172 bell buoy; 31175 foundering (verb); 31176 storm surge; 47486 lee shore; 47515 beacon [harbor]; 50111 shoal [sandbank]
+
+T wave_words | wave words
+W: 16291 foam [bath]; 20008 ripple (verb); 26230 swash; 27992 surf [waves]; 28527 breaker [wave]; 28689 spray [droplets] (verb); 29446 tsunami; 31143 backwash; 31178 whitecap; 31179 crest [wave]; 31180 trough [wave]; 31181 rogue; 31182 roller [wave]; 31183 wake [wave]; 31184 chop [wave]; 31185 undulation; 31186 barrel [wave]; 31187 wavelength; 31188 amplitude; 31189 sea state; 31190 spume; 31191 plunging; 31192 spilling; 31193 whitewater; 31195 wavelet; 31196 billow; 31197 comber; 31198 surge [wave]; 31199 seiche; 31200 wave train; 31201 ground swell; 31202 shorebreak; 31203 wash [wave]; 31204 white horses; 32045 swell [ocean] (adjective); 39628 lap [water] (verb); 40756 standing wave; 60338 fetch [waves]; 60339 capillary; 60341 sneaker wave; 63155 soliton
+G: 32045 31201
+
+T weather | weather
+W: 1965 rain [weather]; 1966 rainfall; 1967 snow [weather]; 1968 snowfall; 1969 wind [weather]; 1970 cloud [weather]; 1971 storm [bad weather]; 1972 thunder [storm]; 1973 lightning [storm]; 1974 fog; 1975 pea-souper; 1976 haar; 1977 thunderstorm; 1978 electrical storm; 1979 breeze; 1980 zephyr; 1981 frost [icy coating]; 1982 rainbow [weather]; 1983 shower [rain]; 1984 raindrop; 1985 snowflake [ice crystal]; 1986 mist [weather]; 1987 hail [weather]; 1988 sleet; 1989 wintry mix; 1990 drizzle [rain]; 1991 mizzle; 1992 gale; 1993 hurricane [storm]; 1994 tornado [storm]; 1996 blizzard; 1997 snowstorm; 1998 heatwave; 2000 drought; 2001 flood [weather]; 2002 humidity; 2003 forecast; 2004 downpour; 2005 cloudburst; 2006 deluge [rain]; 2008 cyclone; 2009 typhoon; 2010 monsoon; 2011 haze; 2012 smog; 2013 dew; 2014 gust; 2015 icicle; 2016 black ice; 2017 thaw; 2018 cold front; 2019 hailstone; 2032 squall [weather]; 2033 warm front; 2034 whiteout; 2035 jet stream; 2036 wind chill; 2037 polar vortex; 2038 El Niño; 2039 sun shower; 2040 La Niña; 2041 dew point; 2042 heat index; 2043 microburst; 2044 ball lightning; 2045 petrichor; 2046 derecho; 2047 haboob; 2048 graupel
+G: 1965 1966; 1967 1968; 1974 1975 1976; 1977 1978; 1979 1980; 1988 1989; 1990 1991; 1996 1997; 2004 2005 2006
+
+T storms | storms
+W: 1971 storm [bad weather]; 1972 thunder [storm]; 1973 lightning [storm]; 1977 thunderstorm; 1992 gale; 1993 hurricane [storm]; 1994 tornado [storm]; 1996 blizzard; 1997 snowstorm; 2005 cloudburst; 2008 cyclone; 2009 typhoon; 2010 monsoon; 2032 squall [weather]; 2043 microburst; 2046 derecho; 2047 haboob; 23180 dust [dirt]; 30284 firestorm; 30886 sandstorm; 30893 dust devil; 31198 surge [wave]; 31221 rainstorm; 31255 hailstorm; 31256 tempest; 31259 supercell; 31260 nor'easter; 31261 waterspout; 31262 tropical; 31263 superstorm; 31264 windstorm; 31265 downburst; 31266 bomb cyclone; 31267 tropical cyclone; 39079 ice [frozen water]; 60344 medicane; 60345 gustnado; 60346 landspout; 60347 thundersnow
+G: 1971 31256; 1996 1997; 31262 31267 2008
+
+T weather_conditions | weather conditions
+W: 1965 rain [weather]; 1969 wind [weather]; 1970 cloud [weather]; 1971 storm [bad weather]; 1972 thunder [storm]; 1974 fog; 1979 breeze; 1983 shower [rain]; 1986 mist [weather]; 1990 drizzle [rain]; 2007 overcast (adjective); 2011 haze; 2014 gust; 2020 sunny (adjective); 2026 chilly (adjective); 2027 muggy (adjective); 2028 balmy (adjective); 2029 sultry (adjective); 2030 blustery (adjective); 2031 wintry (adjective); 31443 humid (adjective); 39917 icy (adjective); 39945 frosty (adjective); 39964 snowy [covered in snow] (adjective)
+
+T cloud_types | cloud types
+W: 51 cirrus; 52 cirrocumulus; 53 cirrostratus; 54 altocumulus; 55 altostratus; 56 nimbostratus; 57 stratocumulus; 58 stratus; 59 cumulus; 60 cumulonimbus; 30302 pyrocumulus; 31268 nimbus; 31269 thundercloud; 31270 anvil; 31271 mammatus; 31273 noctilucent; 31274 contrail; 31275 shelf; 31276 roll; 31277 wall; 31278 storm; 31279 rain; 31280 cumulus congestus; 31281 virga; 31282 mackerel sky; 31283 castellanus; 31284 fractus; 31286 fluffy; 31287 cloud bank; 31288 banner; 31289 pileus; 60349 asperitas; 60350 undulatus; 60351 fallstreak hole; 60352 morning glory [cloud]; 60353 cumulus humilis; 60354 arcus; 66994 lenticular; 67051 nacreous
+
+T main_cloud_types | main cloud types | Exactly: cirrus, cirrocumulus, cirrostratus, altocumulus, altostratus, nimbostratus, stratocumulus, stratus, cumulus, cumulonimbus.
+W: 51 cirrus; 52 cirrocumulus; 53 cirrostratus; 54 altocumulus; 55 altostratus; 56 nimbostratus; 57 stratocumulus; 58 stratus; 59 cumulus; 60 cumulonimbus
+
+T snow_and_ice | snow and ice
+W: 1911 glacier [ice]; 1968 snowfall; 1971 storm [bad weather]; 1981 frost [icy coating]; 1985 snowflake [ice crystal]; 1987 hail [weather]; 1988 sleet; 1989 wintry mix; 1996 blizzard; 1997 snowstorm; 2015 icicle; 2034 whiteout; 2048 graupel; 25014 snowman; 28525 sheet [glacier]; 28526 floe; 29374 iceberg; 30851 snowline; 30900 ice cap; 30902 crevasse; 30903 permafrost; 30905 ice shelf; 30906 frozen lake; 30909 sea ice; 30911 firn; 30915 hoarfrost; 31248 flurry; 31290 snowdrift; 31291 snowball; 31292 rime; 31293 powder [snow]; 31294 slush; 31295 snowpack; 31296 verglas; 31297 neve; 31298 ice crystal; 31299 freezing rain; 31300 snow shower; 31301 cornice [snow]; 31303 pancake; 39919 sastrugi; 43543 avalanche [skiing]; 60355 depth hoar; 60356 diamond dust; 60357 corn; 60358 ice fog; 60359 wind slab; 63778 pack [drifting floes]; 65509 black [road hazard]

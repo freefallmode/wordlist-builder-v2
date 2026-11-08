@@ -1,0 +1,445 @@
+T dresses_and_skirts | dresses and skirts
+W: 4868 skirt; 4869 dress; 4930 pinafore; 6207 tutu; 20828 gown [dress]; 20833 kirtle; 22968 bustle [dress]; 22969 crinoline; 23359 evening gown; 24341 miniskirt; 24342 maxi; 24343 sundress; 24344 kilt; 24345 pencil; 24346 a-line; 24347 wrap; 24348 ball gown; 24349 cocktail; 24350 shift; 24351 sarong; 24352 pleated; 24353 tulle; 24354 hoop; 24355 cheongsam; 24356 sari; 24357 dirndl; 24358 muumuu; 24359 skort; 24360 puffball; 24361 bodycon (adjective); 24362 sheath; 24363 empire line; 24364 petticoat; 24365 tiered; 24366 denim; 24367 farthingale; 24368 pareo; 24369 smock; 62788 wedding gown
+
+T coats_and_jackets | coats and jackets
+W: 4872 coat [clothing]; 4885 tuxedo; 4917 blazer; 4918 raincoat; 4919 parka; 4920 poncho; 4924 cape [clothing]; 4928 gilet; 4929 bodywarmer; 24371 anorak; 24372 windbreaker; 24374 overcoat; 24380 peacoat; 24381 cagoule; 24383 tailcoat; 24384 mackintosh; 24387 sports [blazer]; 24388 sports coat; 24390 car coat; 24391 chesterfield; 24392 greatcoat; 24393 ulster; 24394 norfolk; 24395 donkey; 24397 shacket; 24398 sou'wester [coat]; 24399 mess jacket; 62789 bomber [outerwear]; 62790 fleece [garment]; 62791 Harrington; 62792 puffer [quilted outerwear]; 62793 letterman; 62794 Barbour; 64245 denim [upper-body jeanswear]; 64246 duffel [toggle style]; 64247 leather [biker style]; 64249 shell [waterproof layer]; 64250 trench [belted mac]
+G: 4928 4929; 24387 24388
+
+T underwear | underwear
+W: 4937 bloomers; 5015 garter [stocking band]; 16074 long johns; 20837 chemise; 20846 girdle; 22967 corset; 24400 underclothes; 24401 underpants; 24403 panties; 24404 undies; 24405 boxer shorts; 24406 boxers [underwear]; 24407 briefs [underwear]; 24408 bra; 24409 socks; 24410 thong; 24412 undershirt; 24413 stockings; 24414 slip [underwear]; 24415 shapewear; 24416 jockstrap; 24417 y-fronts; 24418 drawers [underwear]; 24419 stocking suspenders; 24420 teddy [lingerie]; 24421 bustier; 24422 pantyhose; 24423 trunks [underwear]; 24424 hipsters [underwear]; 24425 boy shorts; 24426 bralette; 24427 sports bra; 24428 thermals; 24429 combinations [underwear]; 24430 kecks; 24431 unmentionables
+G: 24401 24404 24403; 24405 24406
+
+T traditional_clothes | traditional clothes
+W: 4920 poncho; 4922 kaftan; 16065 kimono [robe]; 16572 clogs; 20638 fez [hat]; 23028 Stetson; 24317 dashiki; 24333 lederhosen; 24344 kilt; 24351 sarong; 24355 cheongsam; 24356 sari; 24357 dirndl; 24432 hanbok; 24433 yukata; 24434 obi [sash]; 24435 kente [cloth]; 24436 djellaba; 24437 abaya; 24438 kurta; 24439 salwar kameez; 24440 lungi; 24441 dhoti; 24442 lehenga; 24443 sherwani; 24444 chaps [cowboy]; 24446 sporran; 24447 lei; 24448 grass skirt; 24449 serape; 24450 mantilla; 38552 tartan [cloth]
+
+T ottoman_clothing | ottoman clothing | fez, kaftan, salvar, entari, yashmak, kalpak
+W: 4922 kaftan; 5008 veil; 16567 pestemal; 20638 fez [hat]; 21314 sash [clothing]; 24331 harem pants; 24691 turban [headwear]; 24758 headscarf; 55338 salvar; 55339 entari; 55340 yashmak; 55341 kalpak; 55342 dolman [robe]; 55343 mintan; 55344 cepken; 55345 yelek; 55346 kavuk; 55347 feredze; 55348 yemeni; 55349 bork [hat]; 55350 kusak; 55351 jubba; 55352 janissary hat; 55353 sultan robe
+
+T middle_eastern_clothing | middle eastern clothing | thobe, abaya, keffiyeh, dishdasha, bisht
+W: 4922 kaftan; 24436 djellaba; 24437 abaya; 24758 headscarf; 24776 keffiyeh; 34369 hijab; 34376 burqa; 34377 niqab; 34378 chador; 34391 thobe; 34392 kufi; 34400 burnous; 55354 agal; 55355 bisht; 55356 jalabiya; 55358 taqiyah; 55359 sirwal; 55360 shayla; 55361 mashlah; 55363 tarha
+
+T african_clothing | african clothing | dashiki, kente, boubou, agbada, gele, kanga
+W: 4921 tunic; 4922 kaftan; 24317 dashiki; 24435 kente [cloth]; 24436 djellaba; 24758 headscarf; 27016 kanga [cloth]; 34392 kufi; 38540 kanzu; 38547 shuka; 38548 boubou; 38549 agbada; 52346 mudcloth; 52365 kikoy; 55364 gele; 55365 kitenge; 55366 buba; 55367 iro [wrapper]; 55368 fila [cap]; 55369 ankara [fabric]; 55370 lappa; 55371 pagne; 55372 sokoto; 55373 adire; 55374 head wrap; 55375 fugu [smock]; 55376 gomesi; 61481 wrap skirt
+
+T japanese_clothing | japanese clothing | kimono, yukata, obi, hakama, geta, tabi
+W: 16065 kimono [robe]; 24336 hakama; 24433 yukata; 24434 obi [sash]; 24820 kanzashi; 55377 geta; 55378 tabi; 55379 haori; 55380 happi; 55381 zori; 55382 jinbei; 55383 juban; 55384 kasa [hat]; 55385 furisode; 55386 tomesode; 55387 uchikake; 55388 fundoshi; 55389 samue; 55390 waraji; 55391 tenugui; 55392 kosode; 55393 jikatabi; 55394 okobo; 55395 hanten; 55396 straw sandals; 55397 wooden clogs
+
+T indian_clothing | indian clothing | sari, kurta, dhoti, lehenga, sherwani, dupatta
+W: 4936 jodhpurs; 24337 salwar; 24356 sari; 24438 kurta; 24439 salwar kameez; 24440 lungi; 24441 dhoti; 24442 lehenga; 24443 sherwani; 55398 dupatta; 55399 churidar; 55400 angarakha; 55401 pagri; 55403 choli; 55404 ghagra; 55405 anarkali; 55406 mundu; 55407 veshti; 55408 Nehru jacket; 55409 mojari; 55410 kolhapuri [sandals]; 55411 jutti; 55412 pallu; 55413 achkan; 55414 bandhgala; 55415 phulkari; 55416 kurti; 55417 gamcha; 55418 pyjama [trousers]
+G: 24337 24439
+
+T pacific_island_clothing | pacific island clothing | lavalava, sulu, pareo, lei, aloha shirt, piupiu
+W: 24351 sarong; 24358 muumuu; 24368 pareo; 24447 lei; 24448 grass skirt; 24814 flower crown; 48830 shell necklace; 52338 hei tiki; 52343 feather cloak; 55419 lavalava; 55420 sulu [Pacific skirt]; 55421 aloha shirt; 55422 Hawaiian shirt; 55423 piupiu; 55424 tapa [cloth]; 55425 ie toga; 55426 puletasi; 55427 kihei; 55428 malo [loincloth]; 55429 hula skirt; 55430 haku lei; 55431 korowai; 55432 taovala; 55433 kikepa
+G: 55421 55422
+
+T south_american_clothing | south american clothing | poncho, chullo, pollera, ruana, bombachas
+W: 4920 poncho; 4924 cape [clothing]; 20848 sandals [shoes]; 22982 bowler hat; 24338 gaucho pants; 24497 shawl; 33198 bombachas; 33204 chiripa; 38545 pollera; 38546 chullo; 55435 ruana; 55436 manta [shawl]; 55437 aguayo; 55438 lliclla; 55439 alpaca sweater; 55440 ojotas; 55441 abarcas; 55442 chuspa; 55443 faja [sash]; 55444 alpargatas; 55445 vincha; 55446 unku; 55447 panama hat; 55448 jipijapa; 55449 gaucho hat; 55450 llama wool; 55451 woolen cap; 55452 knitted hat
+G: 55447 55448
+
+T western_wear | western wear | cowboy hat, chaps, bolo tie, bandana, duster
+W: 4866 jeans; 4971 bandana [headwear]; 5012 bolo tie; 9569 spurs [horse tack]; 21321 neckerchief; 22998 cowboy hat; 23027 ten-gallon hat; 23028 Stetson; 24377 denim jacket; 24444 chaps [cowboy]; 24596 slicker; 24652 cowboy boots; 24957 yoke [clothing]; 48632 gaiters; 55205 belt buckle; 55209 western shirt; 55453 duster [coat]; 55454 pearl snaps; 55455 string tie; 55456 fringe jacket; 55457 concho belt; 55458 buckskin jacket; 55459 rodeo shirt; 55460 cattleman crease; 55461 Wrangler [jeans]; 55463 sheepskin vest
+
+T european_folk_costume | european folk costume | kilt, lederhosen, dirndl, sporran, clogs, bunad
+W: 16572 clogs; 21314 sash [clothing]; 24333 lederhosen; 24344 kilt; 24357 dirndl; 24446 sporran; 24450 mantilla; 24679 beret; 24697 glengarry; 38543 bunad; 38551 kokoshnik; 38552 tartan [cloth]; 38554 tracht; 55464 tam o' shanter; 55465 sgian dubh; 55466 loden jacket; 55467 tyrolean hat; 55468 kosovorotka; 55469 sarafan; 55470 vyshyvanka; 55471 opanak; 55472 fustanella; 55473 tsarouhi; 55474 flamenco dress; 55475 barretina; 55476 gakti; 55477 ghillie brogues; 55478 dutch cap; 55479 lace bonnet
+
+T work_clothes | work clothes | overalls, apron, scrubs, lab coat, hi-vis vest, boiler suit
+W: 4891 overalls; 4904 apron [clothing]; 4905 uniform; 4906 scrubs [medical clothing]; 4907 jumpsuit; 4908 boilersuit; 4930 pinafore; 4935 smock; 11902 hairnet; 20836 tabard; 24451 lab coat; 24452 hi-vis vest; 24453 boiler suit; 24454 hard hat; 24455 steel-toe boots; 24456 tool belt; 24457 chef whites; 24458 safety goggles; 24459 gloves; 24460 bib overalls; 24461 high-vis jacket; 24462 kneepads; 24463 ear defenders; 24464 hazmat suit; 24465 toque [hat]; 24466 flight suit; 24467 name badge
+G: 4907 4908; 4891 24460
+
+T swimwear | swimwear
+W: 16356 rash guard; 24309 bandeau; 24334 board shorts; 24468 bikini; 24469 swimsuit; 24471 speedo [swimwear]; 24472 wetsuit; 24473 one-piece; 24474 tankini; 24475 swim cap; 24476 monokini; 24477 burkini; 24478 bathing suit; 24480 swim shorts; 24482 cover-up; 24483 swim briefs; 24484 jammers; 24485 drysuit; 24488 budgie smugglers; 24489 swim goggles; 43279 trunks [swimming]
+
+T knitwear | knitwear
+W: 4873 sweater; 4875 pullover; 4880 cardigan; 4933 bolero [jacket]; 4934 shrug [cropped cardigan]; 4955 scarf; 11886 leg warmers; 16064 bed socks; 20840 cowl; 24303 turtleneck; 24314 twinset; 24490 beanie; 24491 mittens; 24492 Aran jumper; 24493 Fair Isle; 24494 argyle [knit pattern]; 24495 cable knit; 24496 bobble hat; 24497 shawl; 24498 sweater vest; 24499 balaclava; 24500 snood; 24501 tea cosy; 24502 knitted gloves; 24503 wrist warmers
+G: 4873 4875; 24496 24490
+
+T fashion_styles | fashion styles | preppy, boho, grunge, punk, goth, streetwear, vintage
+W: 10786 grunge; 10812 rockabilly; 12547 hippie; 13075 kawaii (adjective); 24504 preppy (adjective); 24505 boho (adjective); 24506 punk [style]; 24507 goth [style]; 24508 streetwear; 24509 vintage [style] (adjective); 24510 retro (adjective); 24511 casual (adjective); 24512 formal (adjective); 24513 smart casual (adjective); 24514 athleisure; 24515 normcore; 24516 hipster; 24517 emo [style]; 24518 mod [style]; 24519 glam; 24520 minimalist (adjective); 24521 cottagecore; 24522 bohemian (adjective); 24523 haute couture; 24524 ready-to-wear (adjective); 24525 sportswear; 24526 workwear; 24527 dark academia; 24528 harajuku; 24529 nautical (adjective); 24530 tomboy; 24531 dandy (adjective)
+
+T fashion_designers | fashion designers | real designers and houses: Chanel, Dior, Versace, Armani, Prada
+W: 24532 Chanel; 24533 Dior; 24534 Versace; 24535 Armani; 24536 Prada; 24537 Gucci; 24538 Louis Vuitton; 24539 Calvin Klein; 24540 Ralph Lauren; 24541 Coco Chanel; 24542 Yves Saint Laurent; 24543 Givenchy; 24544 Balenciaga; 24545 Burberry; 24546 Hermes [fashion house]; 24547 Valentino; 24548 Fendi; 24549 Dolce & Gabbana; 24550 Vivienne Westwood; 24551 Alexander McQueen; 24552 Tom Ford; 24553 Stella McCartney; 24554 Jimmy Choo; 24555 Manolo Blahnik; 24556 Karl Lagerfeld; 24557 Oscar de la Renta; 24558 Vera Wang; 24559 Donatella Versace; 24560 Issey Miyake; 24561 Yohji Yamamoto; 24562 Mary Quant; 24563 Zandra Rhodes; 24564 Elsa Schiaparelli; 24565 Pierre Cardin; 24566 Paul Smith
+G: 24532 24541; 24534 24559
+
+T socks_and_hosiery | socks and hosiery
+W: 4894 leggings; 5015 garter [stocking band]; 11886 leg warmers; 16064 bed socks; 24409 socks; 24413 stockings; 24422 pantyhose; 24568 ankle; 24569 fishnets; 24570 hold-ups; 24572 nylons; 24573 bobby socks; 24574 argyle; 24576 trainer socks; 24577 no-show; 24578 toe socks; 24579 hosiery; 24581 stirrup tights; 24582 sheer tights; 24583 opaque tights; 24584 seamed stockings; 24585 hiking; 24586 crew; 24587 footless tights; 24661 thigh-high boots; 62795 knee-highs; 64254 compression [circulation support]; 64258 tube [long stretchy kind]
+
+T rain_gear | rain gear
+W: 4918 raincoat; 4919 parka; 4920 poncho; 4962 umbrella [rain shield]; 24371 anorak; 24372 windbreaker; 24373 trench coat; 24381 cagoule; 24384 mackintosh; 24389 shell jacket; 24589 rubber boots; 24591 galoshes; 24593 rain hat; 24594 waterproof jacket; 24595 oilskin; 24596 slicker; 24599 waterproofs; 24600 golf umbrella; 24601 rain cover; 24602 pac-a-mac; 24604 raincape; 24605 rainwear; 47487 sou'wester [hat]; 67175 pants
+G: 47487 24593
+
+T winter_clothes | winter clothes
+W: 4872 coat [clothing]; 4919 parka; 4944 hat [headwear]; 4955 scarf; 4956 gloves; 5002 earmuffs; 5046 fleece [fabric]; 16074 long johns; 24374 overcoat; 24375 duffel coat; 24379 puffer jacket; 24428 thermals; 24465 toque [hat]; 24491 mittens; 24496 bobble hat; 24499 balaclava; 24500 snood; 24606 thermal underwear; 24607 woolly hat; 24608 snow boots; 24609 down jacket; 24610 snowsuit; 24611 ski jacket; 24612 ushanka; 24613 neck warmer; 24614 hand warmers; 24615 sheepskin coat; 24617 snow pants; 24618 shearling; 24619 tuque [winter hat]
+
+T accessories | accessories
+W: 3030 backpack; 4943 belt [clothing]; 4944 hat [headwear]; 4945 tie [neckwear]; 4946 bow tie; 4947 watch [wristwatch]; 4948 ring [jewelry]; 4949 necklace; 4950 bracelet; 4951 earrings; 4952 sunglasses; 4953 shades; 4955 scarf; 4956 gloves; 4957 handbag; 4960 wallet; 4962 umbrella [rain shield]; 4963 cufflinks; 4964 brooch; 4965 headband; 4966 Alice band [hairband]; 4967 hair clip; 4970 scrunchie; 4971 bandana [headwear]; 4973 suspenders; 4975 handkerchief; 4978 pocket square; 4979 tie pin; 4980 tie clip; 4982 anklet; 4983 pendant [jewelry]; 4984 locket; 4985 choker [necklace]; 4986 bangle; 4988 fanny pack; 4991 tote bag; 4992 clutch [handbag]; 4993 satchel; 4994 messenger bag; 4995 briefcase; 4996 keychain; 4997 key ring; 4999 lanyard; 5000 wristband; 5001 sweatband; 5002 earmuffs; 5003 pocket watch; 5004 parasol [sunshade]; 5005 hand fan; 5006 folding fan; 5007 tiara; 5008 veil; 5009 money clip; 5010 cravat; 5011 ascot [cravat]; 5012 bolo tie; 5013 cummerbund; 5014 monocle; 5015 garter [stocking band]; 5016 pince-nez; 5017 lorgnette; 5018 hatpin; 5019 watch fob
+G: 4952 4953; 5005 5006; 4979 4980; 4996 4997; 4966 4965
+
+T shoes | shoes
+W: 11753 pointe; 11906 ballet slippers; 16572 clogs; 20848 sandals [shoes]; 24620 sneakers [shoes]; 24622 loafers; 24623 heels; 24624 flip-flops; 24625 oxfords; 24626 brogues; 24627 pumps; 24628 stilettos; 24629 wedges; 24630 flats; 24631 ballet flats; 24632 moccasins; 24633 espadrilles; 24634 mules [shoe]; 24635 plimsolls; 24636 Mary Janes; 24637 derby; 24638 monk straps; 24639 platforms; 24640 slingbacks; 24641 kitten heels; 24643 deck shoes; 24644 boat shoes; 24645 creepers [shoes]; 24646 winklepickers; 24647 gladiator sandals; 24650 cleats [shoes]; 24651 golf shoes; 34144 slippers [footwear]; 62796 jellies; 64261 taps [dance kind]; 64812 Court [plain pump]
+G: 64812 24627
+
+T shoe_parts | shoe parts | the parts of a shoe: sole, heel, upper, tongue, laces, eyelets, insole
+W: 5052 Velcro; 24979 buckle [fastener]; 24984 lace [shoelace]; 24990 eyelet [fastener]; 67230 sole [shoe]; 67231 heel [shoe]; 67232 upper [shoe]; 67233 tongue [shoe]; 67234 insole; 67235 outsole; 67236 midsole; 67237 toe cap; 67238 toe box; 67239 arch support; 67240 strap [shoe]; 67241 vamp [shoe]; 67242 quarter [shoe]; 67243 welt; 67244 shank [shoe]; 67245 aglet; 67246 heel counter; 67247 topline; 67248 sockliner; 67249 tread [shoe]; 67250 lining [shoe]; 67251 heel tab; 67252 pull tab; 67253 stitching [shoe]; 67254 last [shoe mold]; 67255 throat [shoe opening]; 67256 rand [shoe]; 67257 sidewall [shoe]; 67258 stud [shoe]
+
+T boots | boots
+W: 24589 rubber boots; 24591 galoshes; 24650 cleats [shoes]; 24653 hiking; 24654 ankle; 24655 chelsea; 24657 Doc Martens; 24660 work; 24661 thigh-highs; 24662 knee-high boots; 24663 desert; 24664 Timberlands; 24665 moon boots; 24667 ski boots; 24668 jackboots; 24669 go-go boots; 24670 hobnail boots; 24671 biker; 24672 waders; 24673 hessians [boots]; 24674 jodhpur boots; 24675 paddock boots; 24676 lace-up boots; 24677 mukluks; 62797 Uggs; 64265 combat [military style]; 64266 cowboy [western footwear]; 64269 riding [equestrian style]; 64270 snow [winter style]; 65833 steel-toes
+
+T hats | hats
+W: 6798 tricorn; 13720 top [hat]; 16347 sun; 19177 pork pie; 20638 fez [hat]; 23028 Stetson; 24465 toque [hat]; 24490 beanie; 24612 ushanka; 24678 baseball cap; 24679 beret; 24680 fedora; 24681 sombrero [hat]; 24682 straw; 24683 bucket; 24684 panama [hat]; 24685 trilby; 24686 flat cap; 24687 homburg; 24688 boater; 24690 deerstalker; 24691 turban [headwear]; 24692 bonnet [hat]; 24694 fascinator; 24695 cloche [hat]; 24696 balmoral [hat]; 24697 glengarry; 24698 busby; 24700 mortarboard; 24701 visor [hat]; 24702 snapback; 24703 newsboy cap; 24704 kepi; 24705 shako; 24706 pith helmet; 24707 akubra; 24708 coonskin cap; 24709 witch; 24710 party; 24711 chef; 29548 bowler [hat]; 33422 bearskin [hat]; 44963 montera; 55481 pillbox [hat]; 64273 cowboy [western headwear]
+
+T historical_hats | historical hats | bicorne, tricorne, top hat, bowler, boater, cloche
+W: 6798 tricorn; 13720 top [hat]; 19177 pork pie; 20834 wimple; 20835 coif; 20838 hennin; 21324 cocked; 24465 toque [hat]; 24500 snood; 24680 fedora; 24685 trilby; 24687 homburg; 24688 boater; 24690 deerstalker; 24692 bonnet [hat]; 24694 fascinator; 24695 cloche [hat]; 24698 busby; 24704 kepi; 24705 shako; 24706 pith helmet; 24708 coonskin cap; 29548 bowler [hat]; 55124 Phrygian cap; 55480 bicorne; 55481 pillbox [hat]; 55482 mob cap; 55483 capotain; 55484 liberty cap; 55485 beaver; 55486 poke bonnet; 55487 cavalier; 55489 wide-awake; 55490 opera; 62798 stovepipe
+
+T bags | bags
+W: 3030 backpack; 4957 handbag; 4988 fanny pack; 4993 satchel; 4995 briefcase; 9583 saddlebag; 15781 diaper; 19920 lunch; 23183 suitcase; 24712 clutch [bag]; 24713 duffel; 24714 shopping; 24715 shoulder; 24718 carpetbag; 24719 gym; 24720 sports; 24721 school; 24722 laptop; 24723 sling; 24724 bucket; 24725 baguette; 24726 reticule; 24727 pouch [bag]; 24728 hobo; 24729 Birkin [bag]; 24730 doctor's bag; 24731 knapsack; 24732 kit; 25486 tote [bag]; 28261 carrier [bag]; 28264 duffel [bag]; 28271 messenger
+G: 25486 24714
+
+T jewelry | jewelry
+W: 4948 ring [jewelry]; 4949 necklace; 4950 bracelet; 4951 earrings; 4963 cufflinks; 4964 brooch; 4979 tie pin; 4980 tie clip; 4982 anklet; 4983 pendant [jewelry]; 4984 locket; 4985 choker [necklace]; 4986 bangle; 5007 tiara; 20662 torc; 24734 charm bracelet; 24735 signet ring; 24736 wedding ring; 24737 engagement ring; 24738 diamond ring; 24739 stud earrings; 24740 hoop earrings; 24741 pearl necklace; 24742 nose ring; 24743 toe ring; 24744 cameo [brooch]; 24745 lavaliere; 24746 chatelaine; 24747 tennis bracelet; 24748 belly ring; 24749 cuff [bracelet]; 24750 eternity ring; 24751 dog tags; 24752 medallion; 24753 lapel pin; 24754 pearls
+G: 4979 4980
+
+T scarves_and_gloves | scarves and gloves
+W: 4955 scarf; 4956 gloves; 4971 bandana [headwear]; 20850 tippet [clothing]; 21321 neckerchief; 24491 mittens; 24497 shawl; 24500 snood; 24755 wrap [scarf]; 24756 stole [scarf]; 24757 pashmina; 24758 headscarf; 24759 muffler [scarf]; 24760 leather gloves; 24761 wool gloves; 24762 fingerless gloves; 24764 boxing gloves; 24765 driving gloves; 24766 evening gloves; 24767 gauntlets; 24768 opera gloves; 24770 latex gloves; 24771 ski gloves; 24772 silk scarf; 24773 infinity scarf; 24774 football scarf; 24775 boa [feather scarf]; 24776 keffiyeh; 24777 shemagh; 24778 mitts; 24779 fur stole; 24780 cashmere scarf; 24781 arm warmers; 64279 mitt [baseball]; 65835 marigolds
+
+T eyewear | eyewear
+W: 4952 sunglasses; 4953 shades; 5014 monocle; 5016 pince-nez; 5017 lorgnette; 6768 eye patch; 12804 3D glasses; 23330 reading glasses; 24782 glasses; 24783 spectacles; 24785 contact lenses; 24786 goggles [eyewear]; 24787 bifocals; 24788 aviators; 24789 wayfarers; 24791 swimming goggles; 24792 ski goggles; 24793 opera glasses; 24795 progressives; 24796 prescription glasses; 24797 half-moon glasses; 24798 cat-eye glasses; 24799 round glasses; 24800 readers; 24801 trifocals; 24802 clip-ons; 24803 blue-light glasses; 24804 eyeglasses; 24805 Ray-Bans; 24806 tinted lenses; 50008 safety glasses [goggles]
+G: 4952 4953; 24782 24783 24804; 24786 50008
+
+T glasses_types | glasses types
+W: 12804 3D; 23330 reading; 24793 opera; 24796 prescription; 24797 half-moon; 24798 cat-eye; 24799 round; 24803 blue-light; 50008 safety [goggles]
+
+T hair_accessories | hair accessories
+W: 3753 comb [hair tool]; 3798 tie; 3799 bobby pin; 4965 headband; 4966 Alice band [hairband]; 4970 scrunchie; 4971 bandana [headwear]; 5007 tiara; 5035 ribbon [fabric strip]; 11902 hairnet; 16174 rollers; 24694 fascinator; 24807 hairband; 24808 hairpin [hair pin]; 24809 claw clip; 24811 bun ring; 24812 hair stick; 24814 flower crown; 24815 extensions; 24816 banana clip; 24817 hair chalk; 24820 kanzashi; 24821 hair jewel; 24822 pick; 24993 clip [fastener]; 25204 bow [ribbon]; 55553 elastic [band]
+G: 4966 4965
+
+T neckwear | neckwear | tie, bow tie, cravat, ascot, choker, neckerchief
+W: 3567 bib; 4945 tie [neckwear]; 4946 bow tie; 4949 necklace; 4955 scarf; 4971 bandana [headwear]; 4985 choker [necklace]; 4999 lanyard; 5010 cravat; 5012 bolo tie; 21321 neckerchief; 24500 snood; 24756 stole [scarf]; 24823 ascot [neckwear]; 24824 necktie; 24825 jabot; 24826 ruff [collar]; 24828 clip-on tie; 24829 skinny tie; 24830 kipper tie; 24831 stock [neckwear]; 24832 school tie; 24833 dog collar [pet collar]; 24834 neck gaiter; 24836 neckcloth; 24837 foulard; 24838 Eton collar; 47558 Windsor knot [tie]
+
+T tie_types | tie types
+W: 4946 bow; 5012 bolo; 24828 clip-on; 24829 skinny; 24830 kipper; 24832 school
+
+T fabrics_and_sewing | fabrics and sewing
+W: 71 denim [fabric]; 4800 tape measure; 5020 needle [sewing]; 5021 thread [sewing]; 5022 button [sewing]; 5023 zipper [clothing]; 5025 fabric; 5026 scissors; 5027 thimble; 5028 pattern [sewing]; 5029 hem; 5030 seam [stitched join]; 5031 stitch; 5032 embroidery; 5033 cross-stitch; 5034 sewing kit; 5035 ribbon [fabric strip]; 5036 patch [sewing]; 5037 elastic [fabric]; 5038 cotton; 5039 silk; 5040 wool; 5041 linen; 5042 velvet [fabric]; 5043 satin [fabric]; 5044 lace [fabric]; 5045 polyester; 5046 fleece [fabric]; 5047 felt [fabric]; 5048 tweed [fabric]; 5049 chiffon [fabric]; 5050 muslin; 5051 calico; 5052 Velcro; 5053 hook-and-loop; 5054 dart [sewing]; 5055 pleat; 5056 bobbin; 5057 seam ripper; 5058 pincushion [sewing]; 5059 darning; 5060 quilting; 5061 patchwork; 5062 needlepoint; 5063 embroidery hoop; 5064 sequin; 5065 running stitch; 5066 zigzag stitch; 5067 pinking shears; 5068 pinking scissors; 5069 selvage; 5071 bias tape; 5072 interfacing; 5073 tailor's chalk; 5074 dress form; 5076 seam allowance; 5077 basting; 5080 serger; 5081 appliqué; 5083 backstitch; 5085 blanket stitch; 5086 chain stitch; 5087 topstitch (verb); 5088 rotary cutter; 5089 batting [quilting]; 5091 needle threader; 5092 rickrack; 5093 crochet hook; 5094 fat quarter; 5095 French seam; 5096 whipstitch; 5097 tracing wheel; 5098 tailor's ham; 5099 bodkin; 5100 blind hem; 64282 machine [stitching device]
+G: 5052 5053; 5067 5068
+
+T fabrics | fabrics
+W: 71 denim [fabric]; 161 alpaca [animal]; 5038 cotton; 5039 silk; 5040 wool; 5041 linen; 5042 velvet [fabric]; 5043 satin [fabric]; 5044 lace [fabric]; 5045 polyester; 5046 fleece [fabric]; 5047 felt [fabric]; 5048 tweed [fabric]; 5049 chiffon [fabric]; 5050 muslin; 5051 calico; 6287 canvas [painting surface]; 16051 sateen; 18039 cheesecloth; 19946 gingham; 24840 nylon [fabric]; 24841 leather [material]; 24842 corduroy [fabric]; 24843 flannel [fabric]; 24844 cashmere; 24845 suede [fabric]; 24846 spandex; 24847 Lycra; 24849 rayon; 24850 jersey [fabric]; 24851 taffeta; 24852 organza; 24853 tulle [fabric]; 24854 chambray; 24855 twill; 24856 gabardine; 24857 seersucker; 24858 brocade; 24859 damask; 24860 poplin; 24861 voile; 24862 crepe [fabric]; 24863 georgette; 24864 mohair; 24865 angora [fabric]; 24866 jute [fabric]; 24868 burlap; 24869 terrycloth; 24870 chenille; 24871 shantung
+G: 24846 24847
+
+T cotton_fabrics | cotton fabrics | denim, calico, muslin, gingham, poplin, corduroy
+W: 71 denim [fabric]; 5050 muslin; 5051 calico; 15379 gauze; 16050 percale; 16051 sateen; 18039 cheesecloth; 19946 gingham; 24842 corduroy [fabric]; 24850 jersey [fabric]; 24854 chambray; 24855 twill; 24857 seersucker; 24860 poplin; 24861 voile; 24869 terrycloth; 24929 toile; 24938 madras [fabric]; 29145 chintz; 48497 canvas [fabric]; 55491 flannelette; 55492 terry cloth; 55493 lawn [fabric]; 55494 cambric; 55495 batiste; 55496 moleskin [fabric]; 55497 velveteen; 55498 broadcloth; 55499 dimity; 55500 organdie; 55501 nainsook; 55502 oxford cloth; 59418 ticking [fabric] (other)
+
+T wool_fabrics | wool fabrics | tweed, flannel, cashmere, merino, mohair, felt
+W: 5040 wool; 5047 felt [fabric]; 5048 tweed [fabric]; 24757 pashmina; 24843 flannel [fabric]; 24844 cashmere; 24856 gabardine; 24864 mohair; 24865 angora [fabric]; 24923 houndstooth; 24924 herringbone [pattern]; 39062 merino [wool]; 55503 alpaca [wool]; 55504 lambswool; 55505 shetland [wool]; 55506 worsted; 55507 serge; 55508 Harris Tweed; 55509 boiled wool; 55510 boucle; 55511 melton; 55512 loden; 55513 vicuna; 55514 camel hair; 55515 challis; 55516 barathea; 55517 baize; 55518 duffle [cloth]; 55519 donegal tweed; 55520 cavalry twill; 55521 qiviut; 55522 yak
+G: 5048 55508
+
+T fabrics_from_animals | fabrics from animals
+W: 161 alpaca [animal]; 5039 silk; 5040 wool; 5047 felt [fabric]; 24841 leather [material]; 24844 cashmere; 24845 suede [fabric]; 24864 mohair; 24865 angora [fabric]
+
+T tough_fabrics | tough fabrics
+W: 71 denim [fabric]; 5048 tweed [fabric]; 6287 canvas [painting surface]; 24841 leather [material]; 24842 corduroy [fabric]; 24855 twill; 24856 gabardine; 24866 jute [fabric]; 24868 burlap
+
+T sewing_words | sewing words
+W: 4800 tape measure; 5020 needle [sewing]; 5021 thread [sewing]; 5027 thimble; 5028 pattern [sewing]; 5029 hem; 5030 seam [stitched join]; 5031 stitch; 5034 sewing kit; 5054 dart [sewing]; 5055 pleat; 5056 bobbin; 5057 seam ripper; 5058 pincushion [sewing]; 5059 darning; 5060 quilting; 5061 patchwork; 5063 embroidery hoop; 5065 running stitch; 5067 pinking shears; 5068 pinking scissors; 5069 selvage; 5072 interfacing; 5073 tailor's chalk; 5077 basting; 5080 serger; 5081 appliqué; 5083 backstitch; 5085 blanket stitch; 5086 chain stitch; 5087 topstitch (verb); 5099 bodkin; 24872 pins; 24873 gather [sewing] (verb); 24874 bias binding; 24875 mending; 24876 fabric scissors; 24877 cross stitch; 24878 satin stitch; 24879 french knot; 24880 feather stitch; 24881 whip stitch; 24882 hemstitch; 24883 presser foot; 64282 machine [stitching device]
+G: 5067 5068
+
+T embroidery_stitches | embroidery stitches
+W: 5033 cross; 5083 back; 24879 french knot; 55523 stem; 55524 split; 55525 couching; 55526 herringbone; 55527 lazy daisy; 55528 fly; 55529 long and short; 55530 bullion knot; 55531 fishbone; 55533 buttonhole; 55534 straight; 55535 petit point; 55536 gros point; 55537 tent; 55538 smocking; 55539 trellis; 55540 woven wheel; 55541 chevron; 55542 basket; 55543 pistil; 55544 padded satin; 55545 romanian; 62799 Cretan; 64286 blanket [needlework]; 64288 chain [needlework]; 64290 feather [needlework]; 64294 running [needlework]; 64295 satin [needlework]; 64296 seed [needlework]
+
+T sewing_kit | sewing kit
+W: 4800 tape measure; 5020 needle [sewing]; 5021 thread [sewing]; 5022 button [sewing]; 5023 zipper [clothing]; 5026 scissors; 5027 thimble; 5056 bobbin; 5057 seam ripper; 5063 embroidery hoop; 5067 pinking shears; 5068 pinking scissors; 5071 bias tape; 5073 tailor's chalk; 5088 rotary cutter; 5091 needle threader; 5097 tracing wheel; 5098 tailor's ham; 5099 bodkin; 12033 beeswax; 15394 safety pin; 24872 pins; 24876 fabric scissors; 24980 hook and eye; 29380 spool; 55546 pin cushion; 55547 sewing box; 55548 sewing basket; 55549 needle case; 55550 seam gauge; 55551 darning egg; 55552 pattern weights; 55553 elastic [band]; 55554 snaps
+G: 5067 5068
+
+T stitch_types | stitch types
+W: 5065 running; 5085 blanket; 5086 chain; 24877 cross; 24878 satin; 24880 feather; 24881 whip
+
+T knitting_words | knitting words
+W: 5040 wool; 5093 crochet hook; 5848 crochet; 24493 Fair Isle; 24884 knit (verb); 24885 purl [knitting stitch] (verb); 24886 yarn; 24888 cast on (verb); 24890 bind off (verb); 24892 skein; 24893 rib [knitting]; 24894 garter stitch; 24896 stockinette; 24897 moss stitch; 24898 seed stitch; 24899 cable [knitting]; 24900 intarsia; 24901 gauge [knitting]; 24902 tension [knitting]; 24903 dropped stitch; 24904 yarn over (verb); 24905 slip stitch; 24906 circular needles; 24907 double-pointed needles; 24908 stitch marker; 24909 row counter; 24910 swatch; 24911 blocking [knitting]; 24912 ply [yarn]; 24913 hank; 24914 roving; 24915 knit one purl one; 24916 fingering weight; 64301 needles [craft]
+
+T fabric_prints | fabric prints
+W: 4406 camouflage; 5885 tie-dye; 5917 batik; 12548 harlequin [clown character]; 19946 gingham; 20886 chevron [pattern]; 24494 argyle [knit pattern]; 24917 stripes [pattern]; 24918 polka dots; 24919 checks; 24920 plaid; 24921 floral (adjective); 24922 paisley; 24923 houndstooth; 24924 herringbone [pattern]; 24925 animal print; 24927 zebra; 24928 pinstripe; 24929 toile; 24930 ikat; 24931 Liberty; 24932 geometric (adjective); 24933 tropical; 24934 snakeskin; 24935 cow; 24936 dogtooth; 24937 windowpane check; 24938 madras [fabric]; 24939 glen check; 24940 seigaiha; 24941 block print; 24942 ditsy (adjective); 24943 tattersall; 24944 bandana; 24945 ombre; 24946 Aztec; 24947 pied-de-poule; 24948 moire [pattern]; 38552 tartan [cloth]; 64305 leopard [pattern]
+
+T clothing_parts | clothing parts
+W: 5022 button [sewing]; 5023 zipper [clothing]; 5029 hem; 5030 seam [stitched join]; 5055 pleat; 20827 hood [clothing]; 24949 sleeve; 24950 collar [clothing]; 24951 cuff [clothing]; 24952 pocket [clothing]; 24953 waistband; 24954 lapel; 24955 neckline; 24956 lining [clothing]; 24957 yoke [clothing]; 24958 placket; 24959 gusset; 24960 inseam; 24961 fly [trousers]; 24962 belt loop; 24964 epaulette [shoulder ornament]; 24965 shoulder pad; 24966 bodice; 24967 vent [jacket]; 24968 dart [clothing]; 24969 drawstring; 24970 armhole; 24971 cap sleeve; 24972 collar stay; 24973 buttonhole [clothing]; 24974 back pocket; 24975 peplum; 24976 godet; 24977 hemline; 24978 shoulder strap
+
+T necklines | necklines | V-neck, crew, scoop, boat, sweetheart, halter
+W: 24303 turtleneck; 24306 henley [shirt]; 24320 v-neck; 34375 surplice; 55555 crew neck; 55556 scoop neck; 55557 scoop [neckline]; 55558 boat neck; 55559 bateau; 55560 sweetheart; 55561 halter neck; 55562 halter [neckline]; 55563 mock neck; 55564 cowl neck; 55565 off-the-shoulder (adjective); 55566 square neck; 55567 round neck; 55568 plunging; 55569 keyhole; 55570 one-shoulder (adjective); 55571 asymmetric; 55572 jewel neck; 55573 strapless (adjective); 55574 Queen Anne; 55575 decollete; 55576 racerback; 55577 wrap; 55578 high neck; 55579 portrait; 55580 illusion; 55581 tie neck; 55582 funnel neck
+G: 55557 55556; 55562 55561; 55558 55559
+
+T fastenings | fastenings
+W: 3080 carabiner; 4943 belt [clothing]; 4964 brooch; 5022 button [sewing]; 5023 zipper [clothing]; 5052 Velcro; 5053 hook-and-loop; 15394 safety pin; 24969 drawstring; 24979 buckle [fastener]; 24980 hook and eye; 24982 snap [fastener]; 24984 lace [shoelace]; 24985 toggle; 24986 clasp; 24987 frog; 24988 cufflink; 24990 eyelet [fastener]; 24991 grommet; 24992 d-ring; 24993 clip [fastener]; 24994 covered button; 24995 shank button; 24996 toggle button; 24997 cord lock; 24998 magnetic clasp; 24999 lobster clasp; 25000 fly zip; 25001 invisible zip; 25002 pin [fastening]; 25003 hook [fastening]
+G: 5052 5053; 24985 24996; 25003 24980
+
+T sewing_tools | sewing tools
+W: 4800 tape measure; 5020 needle [sewing]; 5026 scissors; 5027 thimble; 5056 bobbin; 5057 seam ripper; 5058 pincushion [sewing]; 5063 embroidery hoop; 5067 pinking shears; 5068 pinking scissors; 5073 tailor's chalk; 5074 dress form; 5080 serger; 5088 rotary cutter; 5091 needle threader; 5093 crochet hook; 5097 tracing wheel; 5098 tailor's ham; 5099 bodkin; 64282 machine [stitching device]
+
+T holidays_and_celebrations | holidays and celebrations
+W: 3589 christening; 3590 baby shower; 3903 wedding; 3904 birthday [anniversary]; 3905 anniversary; 5101 Christmas; 5102 Halloween; 5103 Easter; 5104 Thanksgiving; 5105 New Year's Eve; 5106 Hogmanay; 5107 Valentine's Day; 5108 Mother's Day; 5109 Father's Day; 5110 Independence Day; 5111 Fourth of July; 5112 Hanukkah; 5114 Diwali; 5116 Eid; 5117 Ramadan; 5118 Passover; 5119 Pesach; 5120 Lent [season]; 5121 Mardi Gras; 5122 Shrove Tuesday; 5123 Pancake Day; 5124 Carnival [festival]; 5125 Oktoberfest; 5126 Holi; 5127 Chinese New Year; 5128 Lunar New Year; 5129 Spring Festival; 5130 Boxing Day; 5131 Bonfire Night; 5132 Guy Fawkes Night; 5133 Labor Day; 5135 Memorial Day; 5136 Veterans Day; 5137 Remembrance Day; 5138 Armistice Day; 5139 Anzac Day; 5140 Juneteenth; 5141 Martin Luther King Day; 5142 Groundhog Day [holiday]; 5143 Earth Day; 5144 Cinco de Mayo; 5145 Day of the Dead; 5146 Día de los Muertos; 5147 Kwanzaa; 5148 Good Friday; 5149 Epiphany [holiday]; 5150 Pentecost; 5151 St. Patrick's Day; 5153 Burns Night; 5154 Australia Day; 5155 Canada Day; 5156 Bastille Day; 5157 bank holiday; 5158 public holiday; 5159 Eid al-Adha; 5160 Rosh Hashanah; 5161 Yom Kippur; 5162 Purim; 5163 Sukkot; 5164 Navratri; 5165 Raksha Bandhan; 5166 Durga Puja; 5167 Onam; 5168 Pongal; 5169 Ganesh Chaturthi; 5170 Dussehra; 5171 Vijayadashami; 5172 Janmashtami; 5173 Baisakhi; 5174 Lohri; 5175 Songkran; 5176 Midsummer [festival]; 5177 Walpurgis Night; 5178 graduation; 5179 housewarming; 5180 retirement party; 5181 bachelor party; 5184 bachelorette party; 5187 bar mitzvah; 5188 quinceañera; 5189 Yule; 64799 Lunar [new year]
+G: 5137 5138; 5118 5119; 5110 5111; 5127 64799 5128 5129; 5157 5158; 5145 5146; 5170 5171; 5131 5132; 5121 5123; 5105 5106
+
+T christmas | christmas
+W: 621 candy cane; 887 eggnog; 1471 reindeer; 1790 mistletoe; 5130 Boxing Day; 15591 frankincense; 18130 stollen; 18131 panettone; 18141 gingerbread; 18178 mince pie; 20818 wassail [drink]; 20997 carols; 25004 Santa Claus [Christmas figure]; 25006 Saint Nick; 25008 presents; 25009 stocking [christmas]; 25010 tinsel; 25012 ornaments; 25014 snowman; 25015 elf [christmas]; 25016 sleigh [Santa's ride]; 25017 Rudolph; 25018 Nativity; 25019 advent calendar; 25020 cracker; 25021 yule log; 25022 wreath; 25023 poinsettia; 25024 Christmas Eve; 25025 Yuletide; 25026 Krampus; 25027 Santa's grotto; 25028 Scrooge; 25029 Noel; 25030 midnight mass; 25031 Saint Nicholas; 29953 holly [tree]; 64321 tree [festive]; 64742 plum pudding [plum duff]; 67155 string lights
+G: 25004 25006
+
+T santa_s_reindeer | santa's reindeer | Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner, Blitzen, Rudolph
+W: 25017 Rudolph; 55608 Dasher [reindeer]; 55609 Dancer [reindeer]; 55610 Prancer [reindeer]; 55611 Vixen [reindeer]; 55612 Comet [reindeer]; 55613 Cupid [reindeer]; 55614 Donner [reindeer]; 55616 Blitzen [reindeer]
+
+T twelve_days_of_christmas_gifts | twelve days of christmas gifts | partridge, turtle doves, French hens, calling birds, gold rings, geese, swans, maids, ladies, lords, pipers, drummers
+W: 1108 partridge; 55618 turtle doves; 55619 French hens; 55620 calling birds; 55621 gold rings; 55622 geese a-laying; 55623 swans a-swimming; 55624 maids a-milking; 55625 ladies dancing; 55626 lords a-leaping; 55627 pipers piping; 55628 drummers drumming
+
+T halloween | halloween
+W: 403 pumpkin [vegetable]; 607 candy; 993 bat [animal]; 1362 spider [animal]; 1857 scarecrow [field figure]; 3248 skeleton [body]; 5145 Day of the Dead; 5146 Día de los Muertos; 6965 Banshee; 6980 wizard [magic user]; 6981 witch [sorceress]; 6986 goblin [creature]; 7011 cauldron; 7013 broomstick; 7021 wraith; 9114 cobweb; 12247 costume [outfit]; 12529 ghost [spirit of the dead]; 12530 vampire [monster]; 12535 mummy [monster]; 12536 zombie [undead]; 12539 werewolf [monster]; 13834 haunted house; 14002 crypt; 18367 candy corn; 20186 candy apple [sweet]; 20669 Samhain; 21720 mask [face covering]; 21745 gravestone; 22423 black cat; 22780 poltergeist; 22793 ghoul; 25032 trick or treat (other); 25033 jack-o'-lantern; 25034 spooky (adjective); 25035 Frankenstein [monster]; 25036 apple bobbing; 25037 Count Dracula; 25038 fangs; 25039 All Hallows' Eve; 61483 soul cake; 61484 guising; 61485 barmbrack; 61486 Mischief Night; 61487 turnip lantern; 61488 Allhallowtide
+G: 5145 5146
+
+T easter | easter
+W: 620 jelly beans; 1443 rabbit; 1444 bunny; 1694 tulip; 1699 daffodil; 1700 narcissus [flower]; 5118 Passover; 5119 Pesach; 5120 Lent [season]; 5122 Shrove Tuesday; 5123 Pancake Day; 5148 Good Friday; 8088 Easter bunny; 18126 simnel cake; 25040 egg [easter]; 25041 chocolate egg; 25042 basket [easter]; 25043 egg hunt; 25044 lamb [animal]; 25045 hot cross bun; 25046 Easter Sunday; 25047 Palm Sunday; 25048 Ash Wednesday; 25049 Maundy Thursday; 25050 Holy Week; 25051 resurrection; 25052 bonnet; 25053 egg dyeing; 25054 egg rolling; 25055 lily; 25056 pysanka; 25057 Easter parade; 25058 bunny ears; 25059 Easter Monday; 25060 paschal candle; 25061 Ostara; 25062 Eastertide; 25063 egg and spoon race; 40090 chick [baby bird]
+G: 1443 1444 8088; 5118 5119; 1699 1700; 25040 25041
+
+T new_year | new year
+W: 876 champagne [drink]; 966 bubbly; 967 fizz [champagne]; 2314 Big Ben; 2315 Elizabeth Tower; 2350 Times Square; 5105 New Year's Eve; 5106 Hogmanay; 5114 Diwali; 5129 Spring Festival; 5160 Rosh Hashanah; 5175 Songkran; 7153 countdown [space]; 13848 fireworks; 13916 confetti; 16527 Dry January; 24710 party hat; 25064 midnight [time]; 25065 resolution [new year]; 25066 Auld Lang Syne; 25067 party [celebration]; 25068 toast [drinking]; 25069 ball drop; 25070 New Year's Day; 25071 first footing; 25072 party popper; 25073 streamers; 25074 sparkler; 25075 noisemaker; 25076 dragon dance; 25077 red envelope; 25078 lantern festival; 25079 Nowruz; 25080 black-eyed peas; 25081 twelve grapes; 25082 fresh start; 64799 Lunar [new year]
+G: 5105 5106; 876 966 967; 2314 2315
+
+T thanksgiving | thanksgiving
+W: 156 turkey [bird]; 402 sweet potato [vegetable]; 731 gravy; 4008 gratitude; 4009 thankfulness; 6672 feast; 6750 Mayflower [ship]; 8406 wishbone [bird]; 17869 corn on the cob; 18170 pumpkin pie; 18171 pecan pie; 18788 cranberry sauce; 19140 mashed potatoes; 19453 green bean casserole; 21515 Abraham Lincoln; 22389 cornucopia; 23029 Pilgrims; 23030 Plymouth Rock [landmark]; 23038 Squanto; 23397 leftovers; 25083 stuffing; 25084 harvest [crop gathering] (verb); 25085 Macy's Parade; 25086 Black Friday; 25087 yams; 25088 dinner rolls; 25089 Wampanoag; 25090 autumn leaves; 25091 carving [turkey]; 25092 thankful (adjective); 25093 family dinner; 25094 Sarah Hale; 25095 Friendsgiving; 25096 turkey trot; 25097 Plymouth Colony
+G: 4008 4009
+
+T weddings | weddings
+W: 559 cake [food]; 2464 church [building]; 4309 altar; 4948 ring [jewelry]; 5008 veil; 5015 garter [stocking band]; 5181 bachelor party; 5184 bachelorette party; 12802 aisle [walkway]; 12803 marquee [tent]; 13879 guest list; 13916 confetti; 25098 bride; 25099 groom [bridegroom]; 25100 bouquet [flowers]; 25101 best man; 25102 bridesmaid; 25103 vows; 25104 honeymoon; 25105 reception; 25106 groomsman; 25107 maid of honor; 25109 flower girl; 25110 page boy; 25111 usher [wedding]; 25112 registrar; 25113 officiant; 25114 first dance; 25115 wedding planner; 25116 save the date; 25117 invitation; 25118 seating plan; 25121 boutonniere; 25122 trousseau; 25123 dowry; 25124 banns; 25125 bridal shower; 25128 elopement; 25129 something old; 25130 bridezilla; 25131 silver anniversary; 25132 golden anniversary; 25133 paper anniversary; 25134 unity candle; 25135 ring bearer; 64322 bridal gown; 67201 head table
+
+T people_at_the_ceremony | wedding ceremony people
+W: 25098 bride; 25099 groom [bridegroom]; 25101 best man; 25102 bridesmaid; 25106 groomsman; 25107 maid of honor; 25109 flower girl; 25110 page boy; 25111 usher [wedding]; 25112 registrar; 25113 officiant; 25135 ring bearer
+
+T things_arranged_before_the_big_day | wedding preparations
+W: 5181 bachelor party; 5184 bachelorette party; 13879 guest list; 25116 save the date; 25117 invitation; 25118 seating plan; 25122 trousseau; 25123 dowry; 25124 banns; 25125 bridal shower
+
+T what_the_couple_wears_and_carries | wedding outfit items
+W: 4948 ring [jewelry]; 5008 veil; 5015 garter [stocking band]; 25100 bouquet [flowers]; 25121 boutonniere; 25129 something old; 64322 bridal gown
+
+T birthdays | birthdays
+W: 559 cake [food]; 560 cupcake [cake]; 604 ice cream [frozen dessert]; 5945 bouncy castle; 10955 birthday song; 12533 clown; 13860 musical chairs; 13861 pass the parcel; 13916 confetti; 16276 candles; 18104 birthday cake; 18259 cake topper; 23296 gift card; 24710 party hat; 25072 party popper; 25073 streamers; 25136 balloons; 25137 present [gift]; 25138 card [greeting]; 25139 pinata; 25141 make a wish (verb); 25142 goodie bag; 25145 party favor; 25147 surprise party; 25148 sweet sixteen [birthday]; 25149 pin the tail; 25150 party blower; 25151 birthday boy; 25152 birthday girl; 25153 birthday suit; 25154 over the hill (adjective); 25155 milestone; 25156 birthday bumps; 25157 party games; 25158 birthday banner; 25159 birthday wishes
+G: 559 18104
+
+T party_supplies | party supplies
+W: 13857 photo booth; 13916 confetti; 16276 candles; 18104 birthday cake; 18259 cake topper; 19937 paper plates; 19938 plastic cups; 19939 napkins; 19942 tablecloth; 24710 party hat; 25073 streamers; 25074 sparkler; 25075 noisemaker; 25136 balloons; 25139 pinata; 25142 goodie bag; 25203 gift wrap; 25566 crepe paper; 28410 bunting [flags]; 38267 cake stand; 40004 foil balloon; 55637 banner [party]; 55638 goody bag; 55639 invitations; 55640 party poppers; 55641 cupcakes; 55642 balloon pump; 55643 helium tank; 55644 favors; 55646 glow sticks; 55647 paper lanterns; 55648 garland [wreath]; 55649 name tags; 55650 tinsel curtain; 55651 party plates
+
+T valentine_s_day | valentine's day
+W: 3740 perfume; 5920 teddy bear; 6486 sonnet; 7666 pink [color] (adjective); 17097 kiss [affection] (verb); 24738 diamond ring; 25100 bouquet [flowers]; 25160 heart [symbol]; 25161 roses; 25162 chocolates; 25163 Cupid [cherub]; 25164 love letter; 25165 red rose; 25166 sweetheart [loved one]; 25167 romance [love]; 25168 candlelit dinner; 25169 date night; 25170 love note; 25171 secret admirer; 25173 conversation hearts; 25174 love heart; 25175 xoxo (other); 25176 hugs and kisses; 25177 my valentine (other); 25178 lovebirds; 25179 proposal; 25180 love poem; 25181 Galentine's Day; 25182 Singles Awareness Day; 25183 lonely hearts; 25184 be mine (other); 25185 St. Valentine; 25186 love token; 25187 romantic getaway; 25188 mix tape; 25189 flowers
+G: 25175 25176; 25160 25174
+
+T festivals_of_the_world | festivals of the world
+W: 5106 Hogmanay; 5112 Hanukkah; 5114 Diwali; 5116 Eid; 5117 Ramadan; 5121 Mardi Gras; 5122 Shrove Tuesday; 5123 Pancake Day; 5124 Carnival [festival]; 5125 Oktoberfest; 5126 Holi; 5128 Lunar New Year; 5139 Anzac Day; 5140 Juneteenth; 5144 Cinco de Mayo; 5145 Day of the Dead; 5146 Día de los Muertos; 5147 Kwanzaa; 5151 St. Patrick's Day; 5156 Bastille Day; 5161 Yom Kippur; 5162 Purim; 5163 Sukkot; 5164 Navratri; 5166 Durga Puja; 5167 Onam; 5168 Pongal; 5175 Songkran; 5176 Midsummer [festival]; 5594 running of the bulls; 11273 Burning Man [festival]; 20670 Beltane; 25078 lantern festival; 25079 Nowruz; 25191 La Tomatina; 25192 Up Helly Aa; 25194 Dragon Boat Festival; 25195 Vesak; 25196 Obon; 25197 Inti Raymi; 25198 Thaipusam; 25199 Notting Hill Carnival; 25200 Gion Matsuri; 25201 Eid al-Fitr; 62800 Mid-Autumn
+G: 5145 5146
+
+T diwali | diwali
+W: 648 gulab jamun; 1706 marigold; 20491 Ramayana; 21723 oil lamp; 21965 Ganesh [god]; 21967 Ganapati; 21970 Rama [god]; 21971 Lakshmi [goddess]; 34497 puja; 34523 rangoli; 34524 diya; 36067 Ayodhya; 39149 jalebi; 53158 barfi; 53160 ladoo; 53172 kaju katli; 55652 sparklers; 55653 firecrackers; 55654 mithai; 55655 toran; 55656 kandil; 55657 Dhanteras; 55658 Bhai Dooj; 55660 Govardhan Puja; 55661 festival of lights; 65838 Naraka Chaturdashi
+G: 21965 21967
+
+T lunar_new_year | lunar new year
+W: 810 dumplings; 5129 Spring Festival; 11814 lion dance; 13830 parade [procession]; 13848 fireworks; 18666 tangyuan; 20307 mandarin oranges; 20323 spring rolls; 22145 Kitchen God; 22150 Nian [beast]; 25076 dragon dance; 25077 red envelope; 25078 lantern festival; 29993 kumquat tree; 34134 lanterns; 38514 plum blossom; 55653 firecrackers; 55663 reunion dinner; 55664 spring couplets; 55665 Chinese zodiac; 55666 peach blossom; 55667 Tet [festival]; 55668 Seollal; 55669 longevity noodles; 55670 Gong Xi Fa Cai; 55671 lantern riddles; 55672 door gods; 55673 red decorations; 55674 new year cake
+
+T holi | holi
+W: 607 candy; 2153 India; 5114 Diwali; 5965 squirt gun; 19283 malpua; 19601 thandai; 20993 dancing; 21962 Vishnu [god]; 21969 Krishna [god]; 21985 Radha [goddess]; 25301 spring [season]; 31537 bonfire; 34523 rangoli; 36066 Mathura; 40254 water balloon; 51391 dhol; 53178 gujiya; 55654 mithai; 55675 colored powder; 55677 gulal; 55678 abir; 55679 pichkari; 55680 Holika Dahan; 55681 Prahlad; 55682 Holika; 55683 Hiranyakashipu; 55684 bhang; 55685 Vrindavan; 55686 Festival of Colors; 55688 Phagwah; 61490 water fight
+G: 55682 55680
+
+T mid_autumn_festival | mid-autumn festival
+W: 83 pomelo; 105 persimmon; 225 tea [drink]; 963 cuppa; 1443 rabbit; 1444 bunny; 3027 lantern; 18298 red bean; 22128 Chang'e [moon]; 23498 paper lantern; 30503 osmanthus; 31538 harvest moon; 41374 full moon; 53533 mooncake; 55689 Jade Rabbit; 55690 lotus seed paste; 55691 salted egg yolk; 55692 osmanthus wine; 55693 moon gazing; 55694 Wu Gang; 55695 Hou Yi; 55696 Moon Festival; 55697 Chuseok; 55698 Tsukimi; 55699 cassia tree; 55700 family reunion; 55701 lantern riddle; 55702 Tet Trung Thu
+G: 1443 1444; 225 963
+
+T ramadan_and_eid | ramadan and eid
+W: 2489 mosque; 2967 hajj; 4276 prayer; 4277 supplication; 4278 orison; 4291 Quran; 6672 feast; 14030 muezzin; 15595 henna; 15598 dates [fruit]; 28298 charity; 34296 Mecca; 34434 zakat; 34441 sawm; 34443 iftar; 34444 suhoor; 41356 crescent [moon]; 55703 Eid Mubarak; 55704 fasting; 55705 hilal; 55706 moon sighting; 55707 taraweeh; 55708 Laylat al-Qadr; 55709 fanous; 55710 qurbani; 55711 sewaiyan; 55712 maamoul; 55713 new clothes; 55714 eidi; 55715 adhan; 62801 al-Adha; 62802 al-Fitr
+G: 4276 4278 4277
+
+T hanukkah | hanukkah
+W: 526 sour cream; 568 doughnut; 733 olive oil; 4297 miracle; 7530 Hebrew [Semitic language]; 17674 brisket; 19150 latke; 19927 applesauce [food]; 20147 candle; 20922 Jerusalem; 25597 menorah; 34458 dreidel; 34461 Star of David; 55661 festival of lights; 55716 gelt; 55717 chocolate coins; 55718 sufganiyot; 55719 shamash [candle]; 55720 Maccabees; 55721 Judah Maccabee; 55722 Antiochus; 55723 Second Temple; 55724 eight nights; 55725 Hasmoneans; 55726 Mattathias; 55727 rededication; 55728 Kislev [Hebrew month]; 55729 Maoz Tzur; 55730 blue and white
+G: 55716 55717
+
+T day_of_the_dead | day of the dead
+W: 18 November; 1706 marigold; 2129 Mexico [country]; 3246 skull; 3248 skeleton [body]; 3961 ancestor; 3962 forebear; 3963 forefather; 4309 altar; 5146 Día de los Muertos; 9834 monarch butterfly; 10889 mariachi; 13830 parade [procession]; 14760 incense [smell]; 19127 tamale; 19490 atole; 20147 candle; 20409 Aztec [people]; 21739 grave [tomb]; 21744 tombstone [grave marker]; 21745 gravestone; 21746 headstone; 22068 Mictecacihuatl [goddess]; 22664 calavera; 25189 flowers; 29504 copal; 34190 offering [religion]; 36107 Oaxaca; 38479 cemetery; 39611 graveyard; 55731 sugar skull; 55732 cempasúchil; 55733 ofrenda; 55734 papel picado; 55735 pan de muerto; 55737 Catrina; 55738 face paint; 55739 remembrance; 55740 Coco [film]
+G: 21744 21745 21746; 3961 3962 3963
+
+T anzac_day | anzac day
+W: 15 April; 297 bugle [instrument]; 716 rosemary [culinary herb]; 1701 poppy [red flower]; 2155 Australia [country]; 2156 New Zealand; 2169 Turkey [country]; 4373 soldier [military person]; 4374 trooper; 4376 squaddie; 4377 digger [soldier]; 4378 grunt [soldier]; 4379 doughboy [WWI American]; 4388 veteran; 5706 two-up; 13830 parade [procession]; 18159 Anzac biscuit; 20655 Gallipoli; 21751 cenotaph; 25022 wreath; 25413 dawn; 29211 ANZAC; 36147 Aotearoa [country]; 36910 Dardanelles; 37479 Anzac Cove; 55741 dawn service; 55742 Last Post; 55743 Lest We Forget; 55744 Ode of Remembrance; 55745 memorial; 55746 medals; 55747 RSL; 55748 Lone Pine; 55749 slouch hat; 55750 Simpson [Anzac stretcher bearer]; 55751 one minute's silence
+G: 2156 36147; 4373 4374 4376 4377 4378
+
+T midsummer | midsummer
+W: 16 June; 493 herring; 910 schnapps; 2145 Sweden; 2165 Finland; 2322 Stonehenge; 6247 maypole [festival pole]; 7109 sun [star]; 16537 sauna; 19148 new potatoes; 19941 strawberries; 20658 druid [Celtic priest]; 24814 flower crown; 25022 wreath; 25307 solstice; 25323 summer solstice; 31537 bonfire; 32065 midnight sun; 32094 wildflower; 55648 garland [wreath]; 55752 folk dance; 55753 Litha; 55754 Juhannus; 55755 Ivan Kupala; 55756 longest day; 55757 daylight; 55758 picnic [meal]; 55759 Midsommar
+G: 25307 25323
+
+T oktoberfest | oktoberfest
+W: 570 pretzel; 874 beer; 968 brew [beer]; 969 brewski; 2272 Munich; 6008 accordion; 6009 squeezebox; 13776 Ferris wheel; 17739 bratwurst; 17756 weisswurst; 18161 lebkuchen; 18857 sauerkraut; 19684 lager; 19702 wheat beer; 24333 lederhosen; 24357 dirndl; 25506 mug [cup]; 29342 schnitzel; 30595 hops [plant]; 36388 Bavaria; 38554 tracht; 51844 oompah; 53336 schweinshaxe; 55760 stein; 55761 beer tent; 55762 beer hall; 55763 Prost (other); 55764 Theresienwiese; 55765 brass band; 55766 Paulaner; 55767 Hofbräu; 55768 Märzen; 55769 Wiesn
+G: 6008 6009; 874 968 969
+
+T st_patrick_s_day | st. patrick's day
+W: 4 green [color]; 202 gold [metal]; 282 harp [instrument]; 395 cabbage [vegetable]; 592 soda bread; 891 whisky; 1776 clover; 1787 shamrock; 1982 rainbow [weather]; 2138 Ireland; 2139 Eire; 2251 Dublin; 2496 pub; 10652 uilleann pipes; 11742 jig [dance]; 13830 parade [procession]; 17785 corned beef; 18952 irish stew; 19469 irish coffee; 19693 Guinness; 22263 leprechaun; 22581 four-leaf clover; 25266 March [month]; 34309 Croagh Patrick; 55770 pot of gold; 55771 Saint Patrick; 55772 snakes [animal]; 55773 Celtic cross; 55774 Irish dance; 55775 luck of the Irish; 55776 Blarney Stone; 55777 Erin go Bragh; 55778 Emerald Isle; 55780 Chicago River
+G: 2138 2139; 1776 22581
+
+T gift_wrapping | gift wrapping
+W: 5026 scissors; 5035 ribbon [fabric strip]; 23805 scotch tape; 23816 double-sided tape; 25137 present [gift]; 25202 wrapping paper; 25204 bow [ribbon]; 25205 gift tag; 25206 gift bag; 25207 tissue paper; 25208 gift box; 25209 curling ribbon; 25210 twine; 25211 raffia; 25212 cellophane; 25213 gift basket; 25215 kraft paper; 25216 washi tape; 25217 furoshiki; 25218 rosette [bow]; 25219 name tag; 25220 crinkle paper; 25221 shredded paper; 25222 gift receipt; 25223 unwrap (verb); 25224 wrap [gift] (verb); 25225 sticker; 25226 paper bow; 25227 stick-on bow; 25228 pom-pom [fluffy ball]; 25229 paper roll
+
+T fireworks | fireworks
+W: 11209 pyrotechnics; 16971 boom [sound] (verb); 20473 gunpowder [explosive]; 25074 sparkler; 25230 rocket [firework]; 25231 firecracker; 25232 Roman candle [firework]; 25233 Catherine wheel; 25234 bottle rocket; 25235 fountain [firework]; 25237 squib [firework]; 25238 smoke bomb; 25239 grand finale; 25240 firework display; 25241 star shell; 25242 chrysanthemum [firework burst]; 25243 peony [firework burst]; 25244 willow [firework burst]; 25245 crossette; 25246 fizzer; 25247 whizzbang; 25248 cracker [firework]; 25249 launch tube; 25250 black powder; 25251 M-80; 25252 cherry bomb; 25253 ground spinner; 25254 pyrotechnician; 25255 sparkle; 25256 bang; 25257 strobe; 25258 gerb; 25259 Bengal light; 25260 sky rocket; 25261 barrage [firework]; 40676 fuse [electric]; 50036 jumping jack [firework]
+G: 25230 25260
+
+T hindu_festivals | hindu festivals
+W: 5114 Diwali; 5126 Holi; 5164 Navratri; 5165 Raksha Bandhan; 5166 Durga Puja; 5167 Onam; 5168 Pongal; 5169 Ganesh Chaturthi; 5170 Dussehra; 5171 Vijayadashami; 5172 Janmashtami; 5173 Baisakhi; 5174 Lohri
+
+T life_milestones | life milestones
+W: 3589 christening; 3590 baby shower; 3903 wedding; 3904 birthday [anniversary]; 3905 anniversary; 5178 graduation; 5179 housewarming; 5180 retirement party; 5181 bachelor party; 5184 bachelorette party; 5187 bar mitzvah; 5188 quinceañera
+
+T months | months | January, February, March, April, May, June, July, August, September, October, November, December
+W: 15 April; 16 June; 17 September; 18 November; 25262 January; 25264 February; 25266 March [month]; 25268 May [month]; 25269 July; 25271 August [month]; 25273 October; 25275 December
+
+T months_with_30_days | months with 30 days | April, June, September, November
+W: 15 April; 16 June; 17 September; 18 November
+
+T months_with_31_days | months with 31 days | January, March, May, July, August, October, December
+W: 25262 January; 25266 March [month]; 25268 May [month]; 25269 July; 25271 August [month]; 25273 October; 25275 December
+
+T days_and_weeks | days and weeks | weekday names plus weekend, fortnight, midweek
+W: 8 Monday; 9 Tuesday; 10 Wednesday; 11 Thursday; 12 Friday; 13 Saturday; 14 Sunday [day of the week]; 5130 Boxing Day; 25277 weekend; 25278 weekday; 25279 week; 25280 fortnight; 25281 two weeks; 25282 midweek; 25283 sennight; 25284 work week; 25286 long weekend; 25287 Hump Day; 25290 yesterday; 25291 today; 25292 tomorrow; 25294 biweekly (adjective); 25295 Sabbath [day]; 25296 TGIF; 25297 payday; 25298 day off; 25299 school week
+G: 25280 25281
+
+T season_words | season words | season words: spring, autumn, monsoon, equinox, solstice
+W: 2010 monsoon; 2017 thaw; 2031 wintry (adjective); 25025 Yuletide; 25084 harvest [crop gathering] (verb); 25301 spring [season]; 25302 summer [season]; 25304 fall [season]; 25305 winter; 25306 equinox; 25307 solstice; 25308 wet; 25310 rainy; 25311 midsummer [season]; 25312 midwinter; 25313 Indian summer; 25314 springtime; 25315 wintertime; 25316 summertime; 25317 vernal (adjective); 25319 estival (adjective); 25320 hibernal (adjective); 25321 vernal equinox; 25322 autumnal equinox; 25323 summer solstice; 25324 winter solstice; 25325 high season; 25326 low season; 25327 off-season; 25328 peak season; 25329 shoulder season; 25330 mud; 25331 harmattan; 25332 leaf fall; 25333 seasonal (adjective); 25334 hurricane; 25335 flu season; 25336 growing season; 65839 dry [tropical rainless spell]
+G: 25306 25321 25322 25317; 25307 25323 25324
+
+T the_four_seasons | the four seasons | Exactly: spring, summer, autumn, winter.
+W: 25301 spring [season]; 25302 summer [season]; 25304 fall [season]; 25305 winter
+
+T time_units | time units
+W: 3949 generation [age group]; 4513 term [school]; 4514 semester; 25279 week; 25280 fortnight; 25281 two weeks; 25337 second [time unit]; 25338 minute [time unit]; 25339 hour; 25340 day; 25341 month; 25342 year; 25343 decade; 25344 century [100 years]; 25345 millennium [thousand years]; 25347 millisecond; 25348 microsecond; 25349 nanosecond; 25350 picosecond; 25351 femtosecond; 25352 leap year; 25353 jiffy; 25354 moment [time unit]; 25355 score [twenty years]; 25356 lustrum; 25357 quarter [three months]; 25358 epoch; 25359 eon; 25361 era [period of time]; 25362 biennium; 25363 quarter hour; 25364 half hour; 25365 shake [time unit]; 25366 olympiad; 25367 tick [clock sound]; 25368 instant [moment]; 25369 bicentennial
+G: 25280 25281
+
+T clocks_and_calendars | clocks and calendars
+W: 1871 sundial; 4947 watch [wristwatch]; 5003 pocket watch; 7219 stopwatch; 21022 hourglass; 21023 chronometer; 21042 almanac; 23113 mantel clock; 23239 desk calendar; 25019 advent; 25372 pendulum; 25373 atomic; 25374 digital; 25375 analog; 25378 calendar; 25379 planner; 25380 diary; 25381 wall calendar; 25383 Julian; 25384 lunar; 25385 Hebrew; 25386 Mayan; 25387 minute hand; 25388 hour hand; 25389 second hand; 25391 wristwatch; 25393 timer; 25394 egg timer; 25395 carriage clock; 25396 mainspring; 25397 escapement [clock]; 25398 balance wheel; 25399 bezel; 25400 chronograph; 25401 horologe; 25402 timepiece; 25403 Roman numerals; 25404 chime; 25405 dial [clock]; 25406 leap day; 25407 datebook; 25408 cog [gear]; 34783 clock [wall]; 55782 face [clock]; 55792 alarm [clock]; 62803 Gregorian; 65846 cuckoo [chiming novelty timepiece]; 65848 longcase [tall pendulum timepiece]; 65853 clepsydra [ancient water timepiece]
+
+T clock_parts | clock parts | hand, face, pendulum, chime, cog, escapement
+W: 7393 spring [coil]; 25372 pendulum; 25387 minute hand; 25388 hour hand; 25389 second hand; 25396 mainspring; 25397 escapement [clock]; 25398 balance wheel; 25399 bezel; 25404 chime; 25405 dial [clock]; 25408 cog [gear]; 49768 battery [component]; 55781 hand [clock]; 55782 face [clock]; 55784 hairspring; 55785 watch crystal; 55786 movement [clock]; 55787 numerals; 55788 bell [clock]; 55789 watch strap; 55790 tourbillon; 55791 crown [watch]; 55792 alarm [clock]; 55793 winding key; 55794 pendulum bob; 55795 gear [wheel]; 55796 case [clock]; 55797 pallet fork
+
+T clock_types | clock types | cuckoo, grandfather, sundial, hourglass, stopwatch
+W: 1871 sundial; 3685 alarm; 5003 pocket watch; 7219 stopwatch; 7329 smartwatch; 21022 hourglass; 21023 chronometer; 23113 mantel; 25371 cuckoo; 25373 atomic; 25374 digital; 25375 analog; 25377 wall; 25391 wristwatch; 25394 egg timer; 25395 carriage; 40263 kitchen timer; 40274 bedside; 45466 chess; 55798 candle; 55799 speaking; 55800 astronomical; 55801 quartz; 55802 tower clock; 55803 grandmother; 55804 pendulum; 55805 skeleton; 55806 flower clock; 65848 longcase [tall pendulum timepiece]; 65853 clepsydra [ancient water timepiece]
+
+T times_of_day | times of day
+W: 2668 rush hour; 3684 bedtime; 12099 golden hour; 13895 happy hour; 20109 breakfast; 20119 elevenses; 20858 vespers; 25064 midnight [time]; 25409 morning [time of day]; 25410 afternoon; 25411 evening; 25412 night [time]; 25413 dawn; 25414 dusk; 25415 noon; 25416 sunrise; 25417 sunset [time of day]; 25418 daybreak; 25419 twilight [evening dusk]; 25420 midday; 25421 high noon; 25422 nightfall; 25423 sundown; 25425 gloaming; 25426 crack of dawn; 25427 witching hour; 25428 small hours; 25429 lunchtime; 25430 teatime; 25431 first light; 25432 cockcrow; 25433 eventide; 25434 forenoon; 25435 blue hour; 25436 break of day; 25437 wee hours; 25438 nighttime; 25439 daytime; 25440 dead of night; 25441 half-light; 25442 early hours; 25443 late night; 25444 crepuscule; 25445 dayspring; 25447 dinnertime; 25448 suppertime
+G: 25420 25421 25415; 25413 25426
+
+T zodiac_signs | zodiac signs | Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces
+W: 25449 Aries [zodiac]; 25450 the Ram; 25451 Taurus [zodiac]; 25452 the Bull; 25453 Gemini [zodiac sign]; 25454 the Twins; 25455 Cancer [star sign]; 25456 the Crab; 25457 Leo [zodiac sign]; 25458 the Lion; 25459 Virgo [zodiac]; 25460 the Maiden; 25461 Libra [zodiac sign]; 25462 the Scales; 25463 Scorpio [zodiac sign]; 25464 the Scorpion; 25465 Sagittarius; 25466 the Archer; 25467 Capricorn [zodiac]; 25468 the Sea-Goat; 25469 Aquarius [zodiac]; 25470 the Water Bearer; 25472 the Fish; 41190 Pisces [constellation]
+G: 25453 25454; 25457 25458; 25465 25466; 25455 25456; 25461 25462; 25451 25452; 25467 25468; 25469 25470; 25463 25464; 25449 25450; 41190 25472; 25459 25460
+
+T chinese_zodiac | chinese zodiac | rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, pig
+W: 150 pig [animal]; 153 horse [animal]; 154 goat [animal]; 162 ox; 216 tiger [animal]; 982 monkey [animal]; 992 rat [animal]; 1135 snake [animal]; 1136 serpent [snake]; 1435 dog [pet animal]; 1436 hound; 1437 pooch; 1439 doggo; 1443 rabbit; 1444 bunny; 1449 rooster; 6982 dragon [creature]
+G: 1435 1439 1436 1437; 1135 1136; 1443 1444
+
+T days_of_the_week | days of the week | Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+W: 8 Monday; 9 Tuesday; 10 Wednesday; 11 Thursday; 12 Friday; 13 Saturday; 14 Sunday [day of the week]
+
+T weekdays | weekdays | Monday, Tuesday, Wednesday, Thursday, Friday
+W: 8 Monday; 9 Tuesday; 10 Wednesday; 11 Thursday; 12 Friday
+
+T morning_routine | morning routine | what people do after waking up
+W: 16104 brush teeth (verb); 16855 stretch (verb); 66189 wake up; 66190 get dressed; 66191 eat breakfast; 66192 make the bed; 66193 have a shower; 66194 wash your face; 66195 comb hair; 66196 pack a bag
+
+T containers | containers
+W: 4801 toolbox; 6650 amphora; 16209 ampoule; 20138 bowl [dish]; 20168 cruet; 21718 urn; 23176 trunk [storage]; 23207 tureen; 23211 decanter; 23251 trash can [household]; 23378 bucket [pail]; 25213 gift basket; 25473 box [container]; 25474 jar [glass container]; 25475 bottle [container]; 25476 can [container]; 25477 tin [container]; 25479 crate; 25480 barrel [container]; 25481 jug [container]; 25482 pot [container]; 25483 tub; 25484 carton; 25486 tote [bag]; 25487 canister; 25488 flask; 25489 vat [tub]; 25490 drum [container]; 25491 chest [storage]; 25492 pail; 25493 cask; 25494 keg; 25495 tank [storage tank]; 25496 vessel; 25497 caddy [tea caddy]; 25498 pitcher [jug]; 25499 vial; 25500 flagon; 25501 demijohn; 25502 firkin; 25503 hogshead; 25504 carboy; 25506 mug [cup]; 25507 cup [mug]; 25508 Mason jar; 25509 lunch box; 25510 cookie jar; 25511 punnet; 25512 pannier; 25513 creel; 25514 phial; 25515 tun; 25516 casket [small box]; 25517 coffer; 25518 carafe; 33998 basket [shopping]; 34004 bag [shopping]
+
+T brewery_containers | brewery containers
+W: 25480 barrel [container]; 25489 vat [tub]; 25490 drum [container]; 25493 cask; 25494 keg; 25502 firkin; 25503 hogshead; 25515 tun
+
+T glass_vessels | glass vessels
+W: 16209 ampoule; 20168 cruet; 23211 decanter; 25474 jar [glass container]; 25475 bottle [container]; 25488 flask; 25499 vial; 25501 demijohn; 25504 carboy; 25508 Mason jar; 25514 phial; 25518 carafe
+
+T things_with_a_carrying_handle | things with a carrying handle
+W: 4801 toolbox; 23378 bucket [pail]; 25213 gift basket; 25486 tote [bag]; 25492 pail; 25509 lunch box; 25511 punnet; 25512 pannier; 25513 creel; 33998 basket [shopping]; 34004 bag [shopping]
+
+T cords_and_strings | cords and strings | rope, twine, cord, lace, ribbon, yarn, cable
+W: 3058 guy rope; 3059 guy line; 3079 paracord; 3798 hair tie; 4999 lanyard; 5021 thread [sewing]; 5035 ribbon [fabric strip]; 5040 wool; 5936 jump rope; 14277 braid; 22996 lasso; 23164 extension cord; 23257 clothesline [laundry]; 23267 string [cord]; 23716 cable tie; 23717 zip tie; 24886 yarn; 24969 drawstring; 25210 twine; 25211 raffia; 25520 cord [rope]; 25521 shoelace; 25523 hawser; 25524 cordage; 25525 lariat; 25526 tether; 25527 leash [lead]; 25528 power cord; 25529 guitar string; 25530 fishing line; 25531 kite string; 25532 tow rope; 25533 tightrope; 25534 sisal; 25535 baling twine; 25537 piping [sewing]; 25538 sash cord; 25539 shock cord; 25540 halyard; 25541 embroidery floss; 25542 macrame cord; 25543 hemp rope; 25544 rubber band; 25545 strand; 25546 filament [thread]; 25547 shoestring; 48700 rope [climbing]; 62804 bungee [cord]
+G: 23716 23717; 3058 3059
+
+T paper_goods | paper goods | tissue, napkin, paper towel, envelope, wrapping paper
+W: 4504 notebook [paper]; 4508 composition book; 4610 flyer; 12029 vellum; 12745 envelope [mail]; 17901 butcher paper; 19926 napkin; 19942 tablecloth; 20137 plate [dinner dish]; 20140 placemat; 23219 notepad; 23311 sticky note; 23982 cardboard; 25203 gift wrap; 25207 tissue paper; 25507 cup [mug]; 25548 tissue [paper]; 25549 paper towel; 25553 writing paper; 25554 printer paper; 25555 cardstock; 25556 index card; 25557 stationery; 25558 letterhead; 25561 baking paper; 25562 parchment; 25564 wax paper; 25565 tracing paper; 25566 crepe paper; 25567 construction paper; 25568 coffee filter; 25569 doily; 25571 Kleenex; 25572 Post-it; 25575 carbon paper; 25577 cupcake liner; 25580 photo paper; 25581 graph paper; 25582 lined paper; 25584 manila folder; 27559 serviette; 28323 greaseproof (adjective); 34004 bag [shopping]; 39013 glassine; 40400 filter paper; 62380 kraft; 65855 blotter [ink-absorbing sheet]; 65856 origami [folding sheets]; 65857 straw [drinking tube]; 65858 toilet roll
+G: 25561 25562; 4504 4508; 25548 25207 25571; 23311 25572
+
+T things_used_for_wiping | things used for wiping
+W: 19926 napkin; 23138 toilet paper; 25207 tissue paper; 25548 tissue [paper]; 25549 paper towel; 25571 Kleenex; 27559 serviette
+G: 25548 25207 25571
+
+T office_and_school_supplies | office and school supplies
+W: 4504 notebook [paper]; 4508 composition book; 4610 flyer; 12745 envelope [mail]; 23219 notepad; 23311 sticky note; 25554 printer paper; 25556 index card; 25557 stationery; 25558 letterhead; 25572 Post-it; 25581 graph paper; 25582 lined paper; 25584 manila folder
+G: 23311 25572
+
+T candle_words | candle words | candle types and parts: taper, votive, tealight, wick, wax, candelabra
+W: 12033 beeswax; 20147 candle; 20744 chandler [job]; 23202 candlestick; 23208 candelabra; 23489 sconce; 25585 taper [candle]; 25586 votive; 25587 tealight; 25589 wick; 25590 wax [candle]; 25591 pillar; 25592 paraffin [wax]; 25593 soy wax; 25594 snuffer; 25595 candle snuffer; 25596 candle holder; 25597 menorah; 25598 birthday; 25599 scented; 25600 jar; 25601 floating; 25602 tallow; 25603 wax melt; 25604 wick trimmer; 25605 candlelight; 25606 Advent; 25607 bobeche; 25608 dipped; 25609 rushlight; 25610 spermaceti; 25611 flame; 25612 drip tray; 25613 candlewick; 25614 church candle; 25615 dinner candle; 25619 stearin; 25620 dripless (adjective)
+G: 25594 25595
+
+T emergency_supplies | emergency supplies
+W: 2398 compass [navigation]; 2827 life jacket; 2828 life vest; 3025 sleeping bag; 3026 bedroll; 3028 flashlight; 3032 tarp [waterproof sheet]; 3033 tarpaulin; 3066 matches [fire]; 3078 ferro rod; 3668 blanket [bedding]; 4578 radio; 7338 power bank; 7339 portable charger; 7401 generator; 11210 glow stick; 15322 hand sanitizer; 15344 first aid kit [medical]; 15369 tourniquet; 15394 safety pin; 15398 space blanket; 16276 candles; 19845 can opener; 23261 batteries; 23399 bottled water; 23802 duct tape; 24276 smoke alarm; 24277 smoke detector; 24278 fire extinguisher; 25621 canned food; 25622 whistle [signal]; 25623 multitool; 25624 water purifier; 25625 gas mask; 25626 dust mask; 25627 hand-crank radio; 25628 go bag; 25629 bug-out bag; 25630 MRE; 25631 road flare; 25632 sandbags; 25633 survival kit; 25634 water tablets; 25635 iodine tablets; 25636 dried food; 25637 energy bars; 25638 emergency kit; 25639 sleeping mat; 25640 trauma kit; 25641 water barrel; 46852 jumper cables; 48700 rope [climbing]
+G: 3025 3026; 3032 3033; 24276 24277; 7338 7339; 2827 2828
+
+T energy_and_light_sources | blackout supplies
+W: 3028 flashlight; 3066 matches [fire]; 3078 ferro rod; 7338 power bank; 7339 portable charger; 7401 generator; 11210 glow stick; 16276 candles; 23261 batteries; 25627 hand-crank radio; 25631 road flare
+
+T retro_household_items | retro household items | rotary phone, VCR, typewriter, mangle, washboard, record player
+W: 3087 percolator; 3793 hair straightener; 3795 GHDs; 4633 pager; 4716 fridge [refrigerator]; 4795 mangle [wringer]; 7357 Walkman; 7366 transistor radio; 10614 washboard; 10986 boombox; 11307 record player; 11311 cassette player; 11312 tape deck; 11318 eight-track; 12096 polaroid [camera]; 15440 ashtray; 23235 rolodex; 23367 trouser press; 23486 lava lamp; 23563 VCR; 23606 fondue set; 23847 carpet sweeper; 25642 rotary phone; 25643 typewriter; 25644 floppy disk; 25645 CRT television; 25646 slide projector; 25647 film camera; 25648 VHS; 25649 laserdisc; 25650 Betamax; 25651 answering machine; 25652 dial-up modem; 25653 fax machine; 25654 wringer; 25655 chamber pot; 25656 bed warmer; 25657 warming pan; 25658 Teasmade; 25659 hostess trolley; 25660 SodaStream; 25661 coal scuttle; 25662 tape recorder; 25663 cine camera; 25664 Bakelite phone; 25665 wind-up clock; 25666 butter churn; 25667 tin bath; 25668 washing dolly; 25669 mimeograph; 25670 slide rule; 25671 cathode ray tube; 25672 party line [phone]; 25673 console television; 49491 instant camera; 50006 message machine; 64818 Instant [self-developing]
+G: 12096 64818 49491; 25651 50006; 11311 11312 7357; 3793 3795
+
+T old_music_gear | old music gear
+W: 7357 Walkman; 7366 transistor radio; 10986 boombox; 11307 record player; 11311 cassette player; 11312 tape deck; 11318 eight-track; 25662 tape recorder
+G: 11311 7357
+
+T things_without_a_plug | things without a plug
+W: 3087 percolator; 4716 fridge [refrigerator]; 4795 mangle [wringer]; 10614 washboard; 23847 carpet sweeper; 25654 wringer; 25655 chamber pot; 25656 bed warmer; 25657 warming pan; 25661 coal scuttle; 25665 wind-up clock; 25666 butter churn; 25667 tin bath; 25668 washing dolly; 25670 slide rule
+
+T old_office_tech | old office tech
+W: 4633 pager; 23235 rolodex; 25643 typewriter; 25644 floppy disk; 25651 answering machine; 25652 dial-up modem; 25653 fax machine; 25669 mimeograph; 50006 message machine
+
+T home_decor | home decor | vase, ornament, picture frame, figurine, candlestick
+W: 4564 poster; 5855 painting; 6286 sculpture; 6671 tapestry; 12046 figurine; 16040 throw [blanket]; 20146 centerpiece; 20161 table runner; 21719 vase; 23104 cushion [pillow]; 23105 rug [carpet]; 23107 curtains; 23109 mantelpiece; 23111 picture frame; 23116 throw pillow; 23136 mirror [glass]; 23202 candlestick; 23211 decanter; 23489 sconce; 23497 lampshade; 23515 antimacassar; 25022 wreath; 25569 doily; 25596 candle holder; 25674 ornament; 25675 wall art; 25676 houseplant; 25677 wall hanging; 25678 bookend; 25679 knick-knack; 25681 trinket; 25682 wind chime; 25683 potpourri; 25684 terrarium; 25685 snow globe; 25686 macrame [wall hanging]; 25687 tchotchke; 25688 bric-a-brac; 25689 curio; 25690 jardiniere; 25691 epergne; 25692 objet d'art; 25693 dried flowers; 25694 planter; 25695 bud vase; 25696 wall sticker; 25697 gallery wall; 34783 clock [wall]; 67155 string lights
+
+T cutlery | cutlery
+W: 3081 spork; 19841 ladle; 19861 bread knife; 19950 tablespoon; 19952 teaspoon; 20135 knife [cutlery]; 20136 spoon [cutlery]; 20143 soup spoon; 20150 chopsticks; 20151 dinner fork; 20152 salad fork; 20153 dessert spoon; 20154 butter knife; 20155 steak knife; 20165 fish knife; 20166 cake fork; 20169 oyster fork; 23206 carving knife; 23213 serving spoon; 40192 fork [cutlery]; 55807 pastry fork; 55808 grapefruit spoon; 55809 cheese knife; 55810 dessert fork; 55811 demitasse spoon; 55812 fruit knife; 55813 caviar spoon; 55814 fish fork; 55815 butter spreader
+
+T knife_types | knife types
+W: 19861 bread; 20154 butter; 20155 steak; 20165 fish; 23206 carving; 55809 cheese; 55812 fruit
+
+T spoon_types | spoon types
+W: 20143 soup; 20153 dessert; 23213 serving; 55808 grapefruit; 55811 demitasse; 55813 caviar
+
+T crockery | crockery
+W: 19828 ramekin; 20137 plate [dinner dish]; 20138 bowl [dish]; 20144 teacup [cup]; 20157 salad plate; 20160 saucer [dish]; 20162 gravy boat; 20814 trencher [medieval plate]; 23207 tureen; 25506 mug [cup]; 25507 cup [mug]; 25766 teapot; 25789 coffee cup; 25790 sugar bowl; 25791 butter dish; 38268 milk jug; 46010 stoneware; 46011 earthenware; 53783 demitasse; 55816 dinner plate; 55817 side plate; 55818 soup bowl; 55819 cereal bowl; 55820 egg cup; 55821 dessert bowl; 55822 pudding bowl; 55823 platter; 55824 espresso cup; 55825 bone china; 55827 tea set; 55828 cake plate; 55829 pasta bowl; 55830 noodle bowl; 67150 dinnerware
+G: 20137 55816
+
+T bowl_types | bowl types
+W: 25790 sugar; 55818 soup; 55819 cereal; 55821 dessert; 55822 pudding; 55829 pasta; 55830 noodle
+
+T drinking_vessels | drinking vessels
+W: 15828 sippy cup; 19921 water bottle; 20139 glass [drinking]; 20141 wine glass; 20142 water glass; 20144 teacup [cup]; 20163 champagne flute; 25488 flask; 25506 mug [cup]; 25507 cup [mug]; 25552 paper cup; 25800 jam jar; 28709 tankard; 48819 shot glass; 55760 stein; 55831 tumbler [glass]; 55832 goblet [wine glass]; 55833 pint glass; 55834 chalice; 55835 coffee mug; 55836 highball glass; 55837 rocks glass; 55838 snifter; 55839 coupe [glass]; 55840 martini glass; 55841 schooner [beer glass]; 55842 quaich; 55843 drinking horn; 55844 hip flask; 55845 loving cup; 55846 stirrup cup; 55847 kiddush cup [Jewish ritual]; 55848 cocktail glass; 55850 yard of ale
+
+T drinking_glass_types | drinking glass types
+W: 20141 wine; 20142 water; 48819 shot; 55833 pint; 55836 highball; 55837 rocks; 55840 martini; 55848 cocktail
+
+T cup_types | cup types
+W: 15828 sippy; 25552 paper; 55845 loving; 55846 stirrup; 55847 kiddush [Jewish ritual]
+
+T serving_dishes | serving dishes
+W: 18018 cheese board; 19822 pie; 20162 gravy boat; 23207 tureen; 23212 bread basket; 25691 epergne; 25766 teapot; 25790 sugar bowl; 25791 butter; 38267 cake stand; 38268 milk jug; 39795 lazy Susan; 55823 platter; 55851 bowl; 55852 salad bowl; 55853 tray; 55854 chafing; 55855 plate; 55856 sauce boat; 55857 punch bowl; 55858 fruit bowl; 55859 compote; 55860 salver; 55861 cruet set; 55862 gratin; 55863 tagine [pot]; 55864 relish tray; 55865 fondue pot; 55866 warming tray; 55867 bonbon; 55868 charger plate; 64324 casserole [oven vessel]
+
+T locks_and_keys | locks and keys
+W: 4997 key ring; 24104 lock [door]; 24114 deadbolt; 24115 latch [door]; 25698 padlock; 25699 key [lock]; 25700 keyhole [lock part]; 25701 combination; 25702 bolt [door]; 25703 skeleton; 25704 master; 25705 fob; 25706 keycard; 25708 pick; 25710 Yale; 25711 chain; 25712 door chain; 25713 mortise; 25714 cylinder; 25715 tumbler [lock]; 25716 bike lock; 25717 bicycle lock; 25718 D-lock; 25719 key safe; 25720 smart; 25721 keypad; 25722 hasp; 25723 warded; 25724 lever; 25725 pin tumbler; 25726 house key; 25727 car key; 25729 locksmith; 25730 bump; 25731 strike plate; 25732 latchkey; 25733 ignition; 25734 time; 25735 dead latch; 25738 rim; 25739 night latch; 25740 cabinet lock; 25741 luggage lock; 25742 TSA lock; 50212 escutcheon [keyhole plate]; 62805 Chubb; 65872 spare [extra type]
+G: 25711 25712; 25716 25717 24104
+
+T things_on_wheels | things on wheels | everyday things that roll on wheels
+W: 2646 bus [public vehicle]; 5954 scooter; 5955 tricycle; 23150 car [automobile]; 23183 suitcase; 25767 trolley [cart]; 27364 lorry; 28280 bike; 29373 wagon; 43578 skateboard [skating]; 48054 roller skates; 59131 pram [boat]
+
+T things_you_brush | things you brush | things people brush: teeth, hair, shoes
+W: 153 horse [animal]; 1435 dog [pet animal]; 3190 hair; 4872 coat [clothing]; 23349 shoes; 23501 carpet [floor covering]; 24064 floor [house part]; 26649 teeth [plural]; 39504 crumb
+
+T things_you_open | things you open | things people open: door, jar, present
+W: 4586 letter [mail]; 4962 umbrella [rain shield]; 6452 book; 23107 curtains; 24066 door [house]; 24067 window [house]; 25137 present [gift]; 25473 box [container]; 25474 jar [glass container]; 25475 bottle [container]; 25476 can [container]; 40292 eyes
+
+T things_you_pour | things you pour | liquids and loose things people pour
+W: 225 tea [drink]; 226 coffee [drink]; 514 milk [drink]; 659 cereal; 731 gravy; 861 water [liquid]; 862 juice [drink]; 1965 rain [weather]; 3830 sugar [food]; 12008 paint [pigment]; 66187 sauce
+
+T things_you_plug_in | things you plug in | mains-powered household items
+W: 3571 baby monitor; 3767 hair dryer; 3796 curling iron; 4572 television; 4575 tube [television]; 4576 idiot box; 4577 small screen; 4578 radio; 4716 fridge [refrigerator]; 4718 freezer; 4722 microwave [appliance]; 4723 microwave oven; 4724 dishwasher [appliance]; 4725 washing machine; 4727 dryer [clothes dryer]; 4729 toaster; 4730 kettle [appliance]; 4731 blender; 4732 coffee maker; 4733 coffee machine; 4734 vacuum cleaner; 4735 vacuum [vacuum cleaner]; 4736 Hoover [vacuum cleaner]; 4742 fan [electric fan]; 4743 heater; 4744 humidifier; 4745 dehumidifier; 4748 food processor; 4749 rice cooker; 4750 slow cooker; 4751 Crock-Pot [slow cooker]; 4754 air fryer; 4755 deep fryer; 4756 waffle iron; 4757 waffle maker; 4759 juicer; 4761 bread maker; 4762 bread machine; 4765 electric blanket; 4766 sewing machine; 4781 immersion blender; 4783 hand blender; 4784 popcorn maker; 5845 game console; 7251 laptop [portable computer]; 7252 notebook [computer]; 7257 printer; 7298 router [network]; 7341 smart speaker; 11315 stereo [music]; 11330 clock radio; 16114 night light; 16317 electric shaver; 23164 extension cord; 23215 monitor [computer]; 23367 trouser press; 23486 lava lamp; 23535 mixer [kitchen]; 23562 soundbar; 23572 phone charger; 23578 space heater; 23600 electric toothbrush; 23612 hot plate; 23793 sump pump; 25760 iron [appliance]; 25761 desktop computer; 25763 heat lamp; 25764 Christmas lights; 34150 lamp [light]; 61439 towel warmer; 61491 aquarium pump; 61492 garage door opener; 67223 flat iron [hair]
+G: 4761 4762; 4722 4723; 4732 4733; 4735 4734 4736; 4756 4757; 4572 4576 4577 4575; 4781 4783; 7251 7252; 4750 4751

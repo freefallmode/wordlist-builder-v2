@@ -1,0 +1,418 @@
+T fruits | fruits
+W: 74 lemon [fruit]; 75 lime [fruit]; 76 orange [fruit]; 77 grapefruit [citrus fruit]; 78 tangerine; 79 mandarin [fruit]; 80 clementine; 82 kumquat; 87 apple [fruit]; 88 banana [fruit]; 89 pear [fruit]; 90 grape; 91 strawberry [berry]; 92 cherry [fruit]; 93 peach [fruit]; 94 plum [fruit]; 95 mango [tropical fruit]; 96 pineapple; 97 watermelon; 98 kiwi [fruit]; 99 kiwifruit; 100 pomegranate; 101 fig; 102 papaya; 103 lychee; 104 guava; 105 persimmon; 106 jackfruit; 107 passion fruit; 108 quince; 109 rambutan; 110 tomato [fruit]; 111 avocado; 348 blueberry [fruit]; 349 raspberry; 351 coconut [fruit]; 352 apricot; 353 nectarine; 354 cranberry [red berry]; 355 honeydew; 356 honeydew melon; 357 cantaloupe; 359 date [fruit]; 360 olive [fruit]; 361 dragon fruit; 362 pitaya; 363 starfruit; 364 carambola; 365 durian; 366 gooseberry [green berry]; 367 mulberry; 368 currant; 369 plantain [fruit]; 370 elderberry; 371 bilberry; 372 whortleberry; 373 damson; 374 greengage; 375 loquat; 376 soursop; 377 custard apple; 378 mangosteen; 379 longan; 380 jujube; 381 feijoa; 382 tamarillo; 383 ackee; 384 cherimoya; 385 cape gooseberry; 386 physalis; 387 goldenberry; 388 medlar; 389 salak; 390 sapodilla; 49261 BlackBerry [fruit]
+G: 385 387 386; 98 99; 363 364; 361 362; 355 356; 371 372; 78 79
+
+T citrus_fruits | citrus fruits
+W: 74 lemon [fruit]; 75 lime [fruit]; 76 orange [fruit]; 77 grapefruit [citrus fruit]; 78 tangerine; 79 mandarin [fruit]; 80 clementine; 81 satsuma; 82 kumquat; 83 pomelo; 84 yuzu; 85 bergamot; 86 citron; 17160 blood orange; 17161 navel orange; 17163 key lime; 17164 tangelo; 17166 minneola; 17167 calamansi; 17168 calamondin; 17169 finger lime; 17170 sudachi; 17171 kaffir lime; 17172 meyer lemon; 17173 valencia orange; 17174 sweet lime; 17175 etrog [citron]; 17176 buddha's hand; 50241 navel [orange]; 62525 ugli; 67185 bitter orange
+G: 17167 17168; 50241 17161; 78 79
+
+T orange_varieties | orange varieties
+W: 17160 blood; 17161 navel; 17173 valencia; 67185 bitter
+
+T lime_varieties | lime varieties
+W: 17163 key; 17169 finger; 17171 kaffir; 17174 sweet
+
+T berries | berries
+W: 91 strawberry [berry]; 348 blueberry [fruit]; 349 raspberry; 350 blackberry [phone]; 354 cranberry [red berry]; 366 gooseberry [green berry]; 367 mulberry; 368 currant; 370 elderberry; 371 bilberry; 372 whortleberry; 1655 juniper; 16748 sea buckthorn; 17178 blackcurrant; 17179 redcurrant; 17180 boysenberry; 17181 loganberry; 17182 tayberry; 17183 huckleberry; 17184 lingonberry; 17185 cowberry; 17186 cloudberry; 17188 acai; 17190 dewberry; 17191 salmonberry; 17192 chokeberry; 17193 aronia; 17194 barberry; 17195 marionberry; 17196 olallieberry; 17197 serviceberry; 17199 black raspberry; 17200 golden raspberry [fruit]; 17201 wineberry; 17202 crowberry; 17203 jostaberry; 28140 goji
+G: 17184 17185; 17192 17193; 371 372
+
+T tropical_fruits | tropical fruits
+W: 83 pomelo; 88 banana [fruit]; 95 mango [tropical fruit]; 96 pineapple; 98 kiwi [fruit]; 99 kiwifruit; 102 papaya; 103 lychee; 104 guava; 106 jackfruit; 107 passion fruit; 109 rambutan; 351 coconut [fruit]; 361 dragon fruit; 362 pitaya; 363 starfruit; 364 carambola; 365 durian; 369 plantain [fruit]; 376 soursop; 377 custard apple; 378 mangosteen; 381 feijoa; 382 tamarillo; 383 ackee; 384 cherimoya; 389 salak; 390 sapodilla; 15640 noni; 17204 breadfruit; 17205 tamarind; 17206 mamey; 17207 langsat; 17208 acerola; 17209 cupuacu; 17210 soncoya; 17211 genip; 17212 jabuticaba; 17213 white sapote; 17214 star apple
+G: 98 99; 363 364; 361 362
+
+T stone_fruits | stone fruits
+W: 92 cherry [fruit]; 93 peach [fruit]; 94 plum [fruit]; 95 mango [tropical fruit]; 103 lychee; 351 coconut [fruit]; 352 apricot; 353 nectarine; 359 date [fruit]; 360 olive [fruit]; 373 damson; 374 greengage; 375 loquat; 380 jujube; 17215 prune [dried plum]; 17216 sour cherry; 17217 morello cherry; 17218 bing cherry; 17219 rainier cherry; 17221 pluot; 17222 plumcot; 17223 aprium; 17224 sloe; 17225 mirabelle; 17226 cherry plum; 17227 victoria plum; 17228 santa rosa plum; 17229 white peach; 17230 donut peach; 17233 bullace; 17234 cornelian cherry; 17235 almond [nut]; 17236 black cherry
+
+T cherry_varieties | cherry varieties
+W: 17216 sour; 17217 morello; 17218 bing; 17219 rainier; 17236 black
+
+T plum_varieties | plum varieties
+W: 17226 cherry; 17227 victoria; 17228 santa rosa; 17231 yellow
+
+T melons | melons
+W: 97 watermelon; 355 honeydew; 357 cantaloupe; 17237 galia; 17238 charentais; 17240 casaba; 17241 crenshaw; 17242 piel de sapo; 17248 sugar baby [watermelon]; 17249 seedless watermelon; 17250 yellow watermelon; 17256 gac; 17258 orange flesh; 17259 green; 17260 mini watermelon; 17261 moon and stars [watermelon]; 17263 snap melon; 17264 chilacayote; 39175 karela; 62526 Hami; 62527 wax gourd; 63277 canary [yellow-skinned]; 63278 musk [sweet-scented]; 63379 kiwano [spiky fruit]; 64656 bailan; 64657 cassaba; 64659 ogen; 64660 persian; 64661 santa claus; 64662 sprite; 64663 tigger
+
+T dried_fruits | dried fruits
+W: 359 date [fruit]; 368 currant; 380 jujube; 17215 prune [dried plum]; 17265 raisin; 17267 dried apricot; 17268 dried fig; 17269 dried cranberry; 17270 craisins; 17271 dried mango; 17272 banana chips; 17273 dried apple; 17274 apple rings; 17275 golden raisin; 17276 dried cherry; 17277 dried blueberry; 17279 dried pineapple; 17280 dried papaya; 17281 mixed peel; 17282 candied peel; 17284 fruit leather; 17285 dried mulberry; 17286 dried coconut; 17287 dried pear; 17288 dried peach; 17291 medjool date; 17294 zante currant; 28140 goji; 63385 lychee nut; 63386 hoshigaki; 64664 dried lychee; 64665 dried persimmon; 67163 candied cherry
+G: 63386 64665; 63385 64664; 17269 17270
+
+T apple_varieties | apple varieties | named apple cultivars; they only read as apples within this theme
+W: 17297 Granny Smith; 17298 Golden Delicious; 17299 Red Delicious; 17300 Gala [apple]; 17301 Fuji [apple]; 17302 McIntosh; 17303 Braeburn; 17304 Pink Lady; 17305 Honeycrisp; 17306 Cox's Orange Pippin; 17308 Bramley; 17309 Jazz [apple]; 17310 Jonagold; 17311 Empire [apple]; 17312 Cortland; 17313 Rome Beauty; 17314 Winesap; 17315 Jonathan [apple]; 17316 Gravenstein; 17317 Ambrosia [apple]; 17318 Spartan [apple]; 17319 Egremont Russet; 17320 Discovery [apple]; 17321 Worcester Pearmain; 17322 Macoun; 17323 Idared; 17324 Opal [apple]; 17325 Newtown Pippin; 17326 Northern Spy; 17327 Arkansas Black; 17328 Ashmead's Kernel; 17329 Kanzi; 17330 Crispin [apple]; 17331 Mutsu; 17333 Elstar; 17334 Pippin [apple]; 50225 Envy [apple]; 50226 Cameo [apple]; 50227 Cosmic Crisp; 50228 SweeTango; 63387 Pomme d'Api; 64666 Lady Apple
+G: 63387 64666; 17334 17306 17325
+
+T asian_fruits | asian fruits | lychee, durian, rambutan, mangosteen, longan, yuzu
+W: 82 kumquat; 83 pomelo; 84 yuzu; 103 lychee; 105 persimmon; 106 jackfruit; 109 rambutan; 361 dragon fruit; 362 pitaya; 363 starfruit; 364 carambola; 365 durian; 375 loquat; 378 mangosteen; 379 longan; 380 jujube; 389 salak; 390 sapodilla; 15586 bitter melon; 17167 calamansi; 17168 calamondin; 17170 sudachi; 17204 breadfruit; 17205 tamarind; 17207 langsat; 17336 nashi pear; 17337 santol; 17338 sugar apple; 17339 wax apple; 17340 pulasan; 17341 bael; 17342 ume [plum]; 17343 mangostin; 17344 jambu; 17345 chiku; 17346 sala; 17347 lanzones; 17348 marang; 62528 nashi
+G: 17167 17168; 62528 17336; 363 364; 361 362
+
+T nuts | nuts | culinary nuts: almond, cashew, pecan, walnut, pistachio, peanut
+W: 351 coconut [fruit]; 17235 almond [nut]; 17350 peanut [legume nut]; 17351 cashew; 17352 pecan [nut]; 17353 pistachio [nut]; 17354 hazelnut [nut]; 17355 filbert; 17357 macadamia; 17360 pignoli; 17362 acorn [nut]; 17363 hickory; 17364 cobnut; 17365 beechnut; 17367 candlenut; 17370 groundnut; 17371 marcona almond; 17372 ginkgo; 17373 black walnut; 17374 soy nut; 17375 chinquapin; 17379 sweet chestnut; 17381 hazel [nut]; 20261 chestnut [nut]; 30307 walnut [nut]; 50240 butternut [nut]; 56416 kola [tree]; 62529 chufa; 63355 areca; 63388 brazil [tree seed]; 64667 pili; 64668 shea
+G: 17354 17355; 20261 17379
+
+T edible_seeds | edible seeds
+W: 432 fennel; 665 quinoa [grain]; 682 millet [grain]; 683 buckwheat [grain]; 699 sorghum; 700 amaranth [grain]; 707 teff [grain]; 720 mustard; 737 dill [herb]; 742 cumin; 754 cilantro; 766 tahini [sesame paste]; 779 fenugreek; 1696 sunflower; 15589 nigella; 15605 anise [plant]; 16742 flaxseed; 17359 pine nut; 17360 pignoli; 17361 pinon; 17382 sesame; 17389 chia; 17399 celery; 17401 pomegranate; 17402 watermelon; 17403 lotus; 17405 sacha inchi; 17406 cacao nib; 17407 pea; 17408 apple; 17409 wattleseed; 18705 caraway; 30677 hemp [plant]; 62530 pepitas; 64669 basil; 64988 poppy [bagel topping]
+G: 17359 17360 17361
+
+T parts_of_a_fruit | parts of a fruit
+W: 862 juice [drink]; 941 zest [citrus peel]; 17410 peel [fruit]; 17411 seed [plant]; 17412 core [fruit]; 17413 stem [fruit]; 17414 stone [fruit]; 17415 pit [fruit]; 17416 pulp [fruit]; 17417 flesh [fruit]; 17418 rind [fruit]; 17419 pip [fruit]; 17420 pith; 17421 segment [fruit]; 17422 stalk [fruit]; 17423 kernel [fruit]; 17424 husk; 17425 shell [nut]; 17426 calyx; 17427 pericarp; 17428 endocarp; 17429 mesocarp; 17430 exocarp; 17431 carpel; 17432 receptacle; 17433 bloom [fruit]; 17434 membrane [fruit]; 17435 vesicle [citrus]; 17436 seed coat; 17437 pedicel; 17439 aril; 17440 septum [fruit]; 19799 hull [fruit] (verb); 50229 skin [fruit]
+G: 17419 17411
+
+T colours_named_after_fruit | colours named after fruit
+W: 74 lemon [fruit]; 75 lime [fruit]; 76 orange [fruit]; 78 tangerine; 92 cherry [fruit]; 93 peach [fruit]; 94 plum [fruit]; 95 mango [tropical fruit]; 111 avocado; 349 raspberry; 352 apricot; 360 olive [fruit]; 367 mulberry
+
+T vegetables | vegetables
+W: 110 tomato [fruit]; 391 carrot [vegetable]; 392 potato [vegetable]; 393 onion [bulb vegetable]; 394 lettuce [vegetable]; 395 cabbage [vegetable]; 396 broccoli; 397 cauliflower; 398 spinach [leafy green]; 399 peas; 400 cucumber; 401 celery; 402 sweet potato [vegetable]; 403 pumpkin [vegetable]; 404 garlic; 405 radish; 406 corn [vegetable]; 408 maize; 409 bell pepper; 411 sweet pepper; 412 eggplant; 415 zucchini; 417 green beans; 420 beet; 422 scallion; 424 asparagus; 425 turnip; 426 parsnip; 427 leek; 428 kale; 429 artichoke [thistle vegetable]; 430 yam; 431 shallot; 432 fennel; 433 okra; 435 cassava [root crop]; 436 chard; 437 watercress; 438 endive; 439 radicchio; 440 edamame; 441 bok choy; 443 arugula; 445 rutabaga; 448 snow peas; 449 kohlrabi; 450 celeriac; 451 daikon; 452 jicama; 453 tomatillo; 454 samphire; 455 bamboo shoots; 456 salsify; 457 chayote; 458 romanesco; 64789 Green [scallion]
+G: 406 408; 422 64789; 409 411
+
+T root_vegetables | root vegetables
+W: 391 carrot [vegetable]; 392 potato [vegetable]; 393 onion [bulb vegetable]; 402 sweet potato [vegetable]; 404 garlic; 405 radish; 420 beet; 425 turnip; 426 parsnip; 430 yam; 435 cassava [root crop]; 445 rutabaga; 449 kohlrabi; 450 celeriac; 451 daikon; 452 jicama; 456 salsify; 718 ginger [spice root]; 759 turmeric; 17376 water chestnut; 17441 taro; 17442 horseradish; 17443 burdock; 17444 jerusalem artichoke; 17447 oca; 17450 skirret; 17451 arrowroot; 17452 chicory; 17453 malanga; 17454 yacon; 17455 scorzonera; 17456 purple carrot; 63395 renkon; 63396 Hamburg parsley; 64670 parsley root
+G: 63396 64670
+
+T leafy_greens | leafy greens
+W: 394 lettuce [vegetable]; 395 cabbage [vegetable]; 398 spinach [leafy green]; 428 kale; 436 chard; 437 watercress; 438 endive; 439 radicchio; 441 bok choy; 443 arugula; 778 sorrel [herb]; 17458 romaine; 17460 iceberg lettuce; 17462 escarole; 17463 lamb's lettuce; 17464 mache; 17469 mizuna; 17470 tatsoi; 17471 frisee; 17472 butterhead lettuce; 17473 little gem [lettuce]; 17474 spring greens; 17475 cavolo nero; 17476 lacinato kale; 17477 dinosaur kale; 17478 amaranth leaves; 17479 pea shoots; 17480 microgreens; 17481 cress; 17482 oak leaf lettuce; 17483 komatsuna; 17484 callaloo; 17485 water spinach; 17486 perilla; 17487 baby spinach; 62531 collards; 63397 beet tops; 63398 dandelion [salad leaf]; 63399 gai choy; 63400 turnip tops; 64671 beet greens
+G: 17475 17476 17477; 63397 64671; 17463 17464
+
+T lettuce_varieties | lettuce varieties
+W: 17460 iceberg; 17463 lamb's; 17472 butterhead; 17482 oak leaf
+
+T squashes | squashes
+W: 403 pumpkin [vegetable]; 415 zucchini; 457 chayote; 17489 butternut [squash]; 17491 spaghetti; 17492 summer; 17493 winter; 17494 yellow; 17495 delicata; 17496 kabocha; 17497 Japanese pumpkin; 17499 pattypan; 17500 scallop; 17502 marrow [vegetable]; 17503 cucuzza; 17505 red kuri; 17506 hokkaido; 17507 calabaza; 17509 banana; 17511 sweet dumpling; 17513 cushaw; 17514 tromboncino; 17515 honeynut; 17516 gourd; 17517 bottle gourd; 17518 cheese pumpkin; 17519 jarrahdale; 17520 sugar pumpkin; 17521 kombucha; 17522 crown prince [squash]; 17523 lagenaria; 17524 cucurbit; 62532 crookneck; 62533 Hubbard; 63279 acorn [ribbed variety]; 64672 buttercup; 64673 carnival; 64674 gem; 64675 turban
+G: 17505 17506; 17499 17500; 17496 17497; 62532 17494
+
+T beans_and_pulses | beans and pulses
+W: 440 edamame; 448 snow peas; 17526 black [bean variety]; 17527 lentil; 17528 chickpea; 17530 pea [vegetable]; 17531 soybean; 17538 black-eyed pea; 17545 split pea; 17546 red lentil; 17547 puy lentil; 17548 baked beans; 17550 flageolet; 17552 pigeon pea; 17553 urad dal; 17554 moong dal; 17555 toor dal; 17556 chana dal; 17558 fava [bean]; 17559 snap pea; 17561 jack bean; 50237 lupini; 50239 lupin [bean]; 62534 adzuki; 62535 borlotti; 62536 cannellini; 62537 haricot; 62538 mung; 63356 great northern; 63405 haricot vert; 63406 kidney [red legume]; 64676 green; 64677 lima; 64678 pinto; 64679 tepary; 64991 runner [climbing legume]
+G: 50237 50239; 64676 63405 62537
+
+T onion_family | onion family
+W: 393 onion [bulb vegetable]; 404 garlic; 422 scallion; 427 leek; 431 shallot; 738 chives; 17565 sweet; 17567 pearl; 17568 cipollini; 17569 ramps [wild leek]; 17570 wild garlic; 17572 elephant garlic; 17573 garlic chives; 17574 Chinese chives; 17575 welsh onion; 17576 egyptian onion; 17577 walking onion; 17579 black garlic; 17580 bermuda; 17581 spanish; 17582 torpedo onion; 17585 tree onion; 17586 allium; 17588 rakkyo; 17589 scapes; 17590 baby leek; 17591 white spring onion; 62539 Vidalia; 63410 red [cooking type]; 64680 white; 64681 yellow
+G: 17573 17574; 17576 17577 17585
+
+T onion_varieties | onion varieties
+W: 17575 welsh; 17576 egyptian; 17577 walking; 17582 torpedo; 17585 tree
+G: 17576 17577 17585
+
+T cabbage_family | cabbage family
+W: 395 cabbage [vegetable]; 396 broccoli; 397 cauliflower; 405 radish; 425 turnip; 428 kale; 437 watercress; 441 bok choy; 443 arugula; 445 rutabaga; 449 kohlrabi; 458 romanesco; 750 wasabi; 17442 horseradish; 17457 collard greens; 17461 mustard greens; 17469 mizuna; 17470 tatsoi; 17474 spring greens; 17475 cavolo nero; 17476 lacinato kale; 17477 dinosaur kale; 17592 brussels sprout; 17597 Chinese; 17598 broccolini; 17599 rapini; 17600 broccoli rabe; 17601 white; 17605 choy sum; 17606 gai lan; 17607 chinese broccoli; 17608 rocket [salad]; 17609 cruciferous (adjective); 38129 Savoy [cabbage]; 62540 Hispi; 63414 Chinese leaf; 64682 napa cabbage; 64683 Pointed; 64996 red [purple head]
+G: 17475 17476 17477; 64683 62540; 17597 63414 64682; 17606 17607; 17599 17600
+
+T mushrooms | mushrooms
+W: 15571 reishi; 15573 cordyceps; 17610 button; 17611 portobello; 17612 shiitake; 17614 chanterelle; 17615 porcini; 17617 morel; 17618 truffle [fungus]; 17619 enoki; 17620 cremini; 17621 baby bella; 17623 maitake; 17624 hen of the woods; 17625 king oyster; 17627 wood ear; 17628 puffball [fungus]; 17629 field mushroom; 17631 black trumpet; 17633 chicken of the woods; 17634 shimeji; 17635 matsutake; 17636 nameko; 17637 straw; 17638 fairy ring; 17639 horse mushroom; 17641 saffron milk cap; 17642 bolete; 17643 giant puffball; 17645 mushroom [fungus]; 17646 cloud ear; 17647 paddy straw; 17648 agaricus; 17649 champignon; 30327 lion's mane [fungus]; 63418 oyster [fungus]; 63419 parasol [fungus]; 64685 hedgehog
+G: 17623 17624; 17620 17621
+
+T andean_crops | andean crops | first grown in South America: potato, quinoa, cassava, oca, peanut
+W: 110 tomato [fruit]; 382 tamarillo; 384 cherimoya; 392 potato [vegetable]; 402 sweet potato [vegetable]; 403 pumpkin [vegetable]; 408 maize; 435 cassava [root crop]; 665 quinoa [grain]; 700 amaranth [grain]; 1446 guinea pig; 1447 cavy; 16746 maca; 16749 cacao; 16752 lucuma; 17350 peanut [legume nut]; 17388 chia seed; 17389 chia; 17447 oca; 17454 yacon; 17525 kidney bean; 17651 ulluco; 17652 mashua; 17653 arracacha; 17654 kiwicha; 17655 canihua; 17657 Andean lupin; 17658 chili pepper; 17659 coca; 17660 chuno; 17661 purple corn; 17662 tree tomato; 17663 pepino; 17664 squash [vegetable]; 17665 peruvian potato; 17667 tuber; 17668 chicha
+G: 1446 1447; 17389 17388
+
+T vegetables_that_are_really_fruits | vegetables that are really fruits
+W: 110 tomato [fruit]; 400 cucumber; 403 pumpkin [vegetable]; 409 bell pepper; 411 sweet pepper; 412 eggplant; 415 zucchini; 433 okra; 453 tomatillo; 457 chayote
+
+T meat_and_seafood | meat and seafood
+W: 152 chicken [bird]; 155 duck [bird]; 156 turkey [bird]; 157 goose; 459 beef; 460 pork; 461 lamb [meat]; 462 bacon; 463 ham [cured meat]; 464 sausage; 465 steak; 466 salmon [fish]; 467 tuna; 468 cod; 469 lobster; 470 crab [animal]; 471 shrimp; 473 ground beef; 475 veal; 476 oyster [shellfish]; 477 mussel; 478 clam; 479 scallop [shellfish]; 480 octopus [animal]; 481 sardine; 482 anchovy; 483 trout; 484 swordfish; 485 squid; 486 calamari; 487 venison; 488 mutton; 489 haddock; 490 halibut; 491 sea bass; 492 mackerel; 493 herring; 494 tilapia; 495 eel; 496 oxtail; 498 organ; 499 crayfish; 502 sea urchin; 503 uni; 504 tripe [food]; 505 whelk; 506 cockle; 507 abalone; 508 monkfish; 509 langoustine; 510 skate [fish]; 511 hogget; 512 sweetbreads; 513 lamprey
+G: 502 503
+
+T cuts_of_meat | cuts of meat
+W: 496 oxtail; 17669 sirloin; 17670 ribeye; 17671 fillet [meat]; 17672 rump [steak]; 17673 T-bone; 17674 brisket; 17675 shank [cut of meat]; 17676 chuck [beef]; 17677 tenderloin; 17678 flank steak; 17679 skirt steak; 17680 short ribs; 17681 porterhouse; 17682 strip steak; 17683 hanger steak; 17684 tri-tip; 17686 silverside; 17687 pork belly; 17688 pork shoulder; 17689 leg of lamb; 17690 rack of lamb; 17691 pork chop; 17692 ham hock; 17693 spare ribs; 17694 bavette; 17695 onglet; 17696 picanha; 17697 tomahawk [steak]; 17698 filet mignon; 17699 chateaubriand; 17700 prime rib; 17701 neck fillet; 17702 osso buco; 17703 loin [meat]; 17704 round [beef]; 17705 cheek [meat]; 17706 gammon; 17707 culotte; 17708 denver steak; 17709 top blade; 17710 clod; 17711 thick flank; 50042 Lamb Chop [meat cut]; 50230 saddle [lamb cut]; 50232 flat iron [steak]; 67202 top round
+
+T poultry | poultry
+W: 152 chicken [bird]; 155 duck [bird]; 156 turkey [bird]; 157 goose; 165 hen [chicken]; 959 spatchcock (verb); 1070 pigeon [bird]; 1073 ostrich; 1095 emu [bird]; 1106 quail; 1107 pheasant; 1108 partridge; 1449 rooster; 1455 guinea fowl; 1467 capon; 1473 bantam; 1483 muscovy duck; 3296 gizzard; 8406 wishbone [bird]; 8486 squab; 10318 pullet [animal]; 17713 poussin; 17714 cornish hen; 17715 broiler; 17717 drumstick [chicken]; 17723 giblets; 17727 foie gras; 17729 fowl; 17730 pekin duck
+
+T game_meats | game meats | venison, rabbit, pheasant, boar, quail, grouse, bison
+W: 487 venison; 984 kangaroo; 990 squirrel [tree rodent]; 1006 bison; 1008 moose; 1025 antelope [animal]; 1030 wildebeest; 1031 gnu; 1059 pronghorn; 1061 kudu; 1073 ostrich; 1095 emu [bird]; 1106 quail; 1107 pheasant; 1108 partridge; 1125 snipe; 1138 crocodile; 1140 alligator; 1157 rattlesnake; 1443 rabbit; 1444 bunny; 1471 reindeer; 2555 springbok; 7932 musk ox; 8058 hare; 8299 grouse; 8300 ptarmigan; 8301 woodcock; 8302 wild turkey; 8305 capercaillie; 8318 wood pigeon; 9677 fallow deer; 9678 wild boar; 9679 roe deer; 9689 muntjac; 9730 caribou; 9734 mule deer; 9856 sika deer; 17733 wild duck; 17734 mallard [duck]; 17735 elk [meat]; 17736 wild goose; 17737 game bird; 17738 teal [duck]
+G: 1443 1444; 1030 1031
+
+T sausages | sausages
+W: 808 hot dog; 846 haggis; 17739 bratwurst; 17740 chorizo; 17741 salami; 17742 pepperoni; 17743 bologna [sausage]; 17744 kielbasa; 17745 andouille; 17746 mortadella; 17747 liverwurst; 17748 black pudding; 17752 breakfast; 17753 Italian; 17754 merguez; 17755 boudin; 17756 weisswurst; 17757 currywurst; 17758 saveloy; 17759 cervelat; 17760 sobrasada; 17761 linguica; 17762 lap cheong; 17764 chipolata; 17765 knackwurst; 17766 bockwurst; 17767 thuringer; 17768 summer; 17769 pork; 17771 cocktail; 17773 cotechino; 17774 butifarra; 17775 drisheen; 29341 wiener; 62541 Cumberland [sausage]; 62542 Toulouse [sausage]; 64686 lincolnshire; 64687 vienna
+G: 29341 64687
+
+T cured_meats | cured meats
+W: 462 bacon; 463 ham [cured meat]; 17706 gammon; 17740 chorizo; 17741 salami; 17742 pepperoni; 17746 mortadella; 17776 prosciutto; 17777 pancetta; 17778 jamon; 17779 jamon iberico; 17780 serrano ham; 17781 biltong; 17782 jerky; 17783 beef jerky; 17784 pastrami; 17785 corned beef; 17786 bresaola; 17787 speck [cured meat]; 17788 coppa; 17789 capicola; 17790 guanciale; 17791 lardo; 17792 lox [salmon]; 17793 country ham; 17794 smoked ham; 17795 back bacon; 17796 streaky bacon; 17797 canadian bacon [meat]; 17798 parma ham; 17799 black forest ham; 17801 nduja; 17802 lomo; 17803 basturma; 17804 droewors; 17805 cecina; 17806 smoked sausage; 17807 saucisson; 17809 pemmican; 17810 bunderfleisch; 17811 culatello; 19099 pork rinds
+G: 17782 17783; 17788 17789; 463 17794; 17778 17779
+
+T shellfish | shellfish
+W: 469 lobster; 470 crab [animal]; 471 shrimp; 476 oyster [shellfish]; 477 mussel; 478 clam; 479 scallop [shellfish]; 499 crayfish; 502 sea urchin; 503 uni; 505 whelk; 506 cockle; 507 abalone; 509 langoustine; 1295 barnacle; 1301 krill; 1312 limpet; 1323 conch; 7746 periwinkle [sea snail]; 8862 king crab; 8863 blue crab; 8871 scampi; 8872 dungeness crab; 8877 spiny lobster; 8881 razor clam; 8884 geoduck; 8890 quahog; 17813 tiger prawn; 17814 king prawn; 17815 goose barnacle; 17816 cherrystone; 17817 littleneck; 17818 langostino; 17819 moreton bay bug; 17820 razorfish
+G: 502 503
+
+T fish_to_eat | fish to eat
+W: 466 salmon [fish]; 467 tuna; 468 cod; 481 sardine; 482 anchovy; 483 trout; 484 swordfish; 489 haddock; 490 halibut; 491 sea bass; 492 mackerel; 493 herring; 494 tilapia; 495 eel; 508 monkfish; 510 skate [fish]; 1221 catfish [fish]; 1222 plaice; 1223 carp; 1224 pike [fish]; 1225 perch [fish]; 1226 bass [fish]; 1227 sole [fish]; 1228 flounder [fish]; 1240 sturgeon [freshwater fish]; 1241 bream; 1249 whitebait; 1250 snapper [fish]; 1251 grouper; 1252 mahi-mahi; 1253 dolphinfish; 1254 dorado [fish]; 1257 bonito; 1258 pollock; 1260 hake [fish]; 1277 barramundi; 1278 John Dory; 1279 turbot; 8735 whiting; 8737 sprat; 8738 pilchard; 9755 Arctic char; 17821 red mullet; 17822 dover sole; 17824 smoked salmon; 17825 lemon sole; 17826 pomfret; 17827 orange roughy; 19904 kipper [fish] (verb)
+G: 1252 1253 1254; 1226 491
+
+T fish_from_rivers_and_lakes | fish from rivers and lakes
+W: 483 trout; 494 tilapia; 1221 catfish [fish]; 1223 carp; 1224 pike [fish]; 1225 perch [fish]; 1240 sturgeon [freshwater fish]; 1241 bream; 9755 Arctic char
+
+T small_oily_fish | small oily fish
+W: 481 sardine; 482 anchovy; 492 mackerel; 493 herring; 1249 whitebait; 8737 sprat; 8738 pilchard; 19904 kipper [fish] (verb)
+
+T seafood_dishes | seafood dishes | fish and chips, clam chowder, crab cakes, lobster roll, calamari, scampi
+W: 486 calamari; 800 sushi [rice and fish]; 817 fish and chips; 823 paella; 829 tempura; 851 bouillabaisse; 8871 scampi; 17828 clam chowder; 17829 crab cakes; 17830 lobster roll; 17831 shrimp cocktail; 17832 sashimi; 17833 fish sticks; 17835 fish tacos; 17836 cioppino; 17837 gumbo; 17838 jambalaya; 17839 ceviche; 17840 kedgeree; 17841 fish pie; 17842 tuna melt; 17843 shrimp scampi; 17844 oysters rockefeller; 17845 moules frites; 17846 lobster thermidor; 17847 lobster bisque; 17848 crab rangoon; 17849 salmon teriyaki; 17850 poke bowl; 17851 fish curry; 17852 taramasalata; 17853 fritto misto; 17854 paella marinera; 17855 shrimp and grits; 17856 lox and bagel; 17857 surf and turf; 17859 clams casino; 17860 gravlax; 17861 tuna salad; 17863 stargazy pie; 17864 whitebait fritters; 17865 fish stew; 18926 chowder
+G: 823 17854; 8871 17843; 18926 17828
+
+T barbecue_foods | barbecue foods | brisket, ribs, pulled pork, burnt ends, wings, corn on the cob
+W: 464 sausage; 465 steak; 575 cornbread; 808 hot dog; 811 burger; 812 hamburger; 813 kebab; 815 mac and cheese; 17548 baked beans; 17674 brisket; 17684 tri-tip; 17688 pork shoulder; 17693 spare ribs; 17739 bratwurst; 17806 smoked sausage; 17866 pulled pork; 17867 burnt ends; 17868 wings [chicken]; 17869 corn on the cob; 17870 grilled chicken; 17871 baby back ribs; 17872 coleslaw; 17873 potato salad; 17874 grilled corn; 17875 skewers; 17876 shish kebab; 17877 pork ribs; 17878 jerk chicken; 17879 beef ribs; 17880 smoked turkey; 17881 chicken thighs; 17882 sliders; 17883 pit beef; 17884 hot links; 17885 kansas city ribs; 17886 carolina pulled pork; 17887 texas brisket; 17888 grilled vegetables; 17889 grilled shrimp; 17890 bbq sauce; 17891 marshmallows; 17892 s'mores; 50091 ribs [food]
+G: 811 812; 813 17876; 17674 17887; 17866 17886; 50091 17693 17871 17877 17879 17885
+
+T butcher_shop | butcher shop
+W: 318 saw [tool]; 464 sausage; 473 ground beef; 496 oxtail; 498 organ meats; 504 tripe [food]; 512 sweetbreads; 923 chop [cut] (verb); 3206 tongue [body part]; 3240 liver; 3241 kidney [organ]; 3243 bone; 4904 apron [clothing]; 8455 suet [animal fat]; 16576 cold room; 17669 sirloin; 17893 butcher [shop]; 17894 cleaver; 17895 meat hook; 17896 joint [meat]; 17897 lard; 17898 dripping; 17899 marrow bone; 17901 butcher paper; 17902 meat grinder; 17904 boning knife; 17905 carcass; 17906 side of beef; 17907 trotters; 17908 pig's trotter; 17909 hock [pork cut]; 17910 chuck steak; 17912 diced beef; 17913 meat slicer; 17914 trussing (verb); 17915 tenderiser; 17916 sausage casing; 17917 sawdust [wood]; 17918 hanging [meat] (verb); 17919 chitterlings; 50230 saddle [lamb cut]; 50232 flat iron [steak]; 50233 honing steel; 50235 meat mallet; 63357 chopping block; 67194 stew meat
+
+T meat_from_mammals | meat from mammals
+W: 459 beef; 460 pork; 461 lamb [meat]; 462 bacon; 463 ham [cured meat]; 465 steak; 473 ground beef; 475 veal; 487 venison; 488 mutton; 496 oxtail; 498 organ; 504 tripe [food]; 511 hogget; 512 sweetbreads
+
+T dairy_and_eggs | dairy
+W: 251 ricotta; 514 milk [drink]; 515 cheese [dairy food]; 516 butter; 517 cream [dairy]; 522 yogurt [cultured dairy]; 524 milkshake; 525 margarine; 526 sour cream; 527 buttermilk; 528 whipped cream; 529 cottage cheese; 530 cream cheese; 531 condensed milk; 532 omelet; 534 heavy cream; 536 powdered milk; 538 evaporated milk; 539 ghee; 540 kefir; 541 clotted cream; 542 half and half; 543 whey; 544 crème fraîche; 546 skyr; 547 quark [dairy]; 548 curds; 549 custard powder; 550 labneh; 551 filmjölk; 604 ice cream [frozen dessert]; 17922 mascarpone; 17935 burrata
+
+T cheeses | cheeses
+W: 238 cheddar [cheese]; 239 mozzarella; 240 brie; 241 parmesan; 242 feta; 243 gouda; 244 camembert; 245 edam; 246 stilton; 247 gorgonzola; 248 halloumi; 249 roquefort [cheese]; 250 manchego; 251 ricotta; 252 emmental; 253 gruyere; 254 paneer; 548 curds; 17922 mascarpone; 17923 provolone; 17924 pecorino; 17925 havarti; 17926 monterey jack; 17927 colby [cheese]; 17930 red leicester; 17931 wensleydale [cheese]; 17932 cheshire [cheese]; 17933 double gloucester; 17934 jarlsberg; 17935 burrata; 17936 taleggio; 17937 comte; 17938 raclette; 17939 limburger; 17940 boursin; 17941 babybel; 17943 string cheese; 17944 queso fresco; 17945 fontina; 17946 asiago; 17947 gjetost; 17948 epoisses; 17949 reblochon; 17950 cotija; 17951 velveeta; 17952 pepper jack; 17954 quark [cheese]; 17955 pimento cheese; 17956 swiss [cheese]; 53089 appenzeller [cheese]; 53092 chèvre; 53100 cabrales; 53114 livarot; 59443 Caerphilly; 59444 Stinking Bishop; 59445 Vacherin; 59446 Tete de Moine; 63422 american [processed slice]; 63423 blue [veined type]; 64999 cottage [curd type]; 65000 cream [soft spread]
+
+T hard_cheeses | hard cheeses
+W: 238 cheddar [cheese]; 241 parmesan; 243 gouda; 245 edam; 250 manchego; 252 emmental; 253 gruyere; 17924 pecorino; 17926 monterey jack; 17927 colby [cheese]; 17930 red leicester; 17931 wensleydale [cheese]; 17932 cheshire [cheese]; 17933 double gloucester; 17934 jarlsberg; 17946 asiago; 17952 pepper jack; 17956 swiss [cheese]; 53084 grana padano; 53085 comté; 53086 mimolette; 53087 sbrinz; 53088 cantal; 53089 appenzeller [cheese]; 53090 lancashire [cheese]
+
+T soft_cheeses | soft cheeses
+W: 239 mozzarella; 240 brie; 242 feta; 244 camembert; 248 halloumi; 251 ricotta; 254 paneer; 550 labneh; 17922 mascarpone; 17925 havarti; 17935 burrata; 17936 taleggio; 17940 boursin; 17944 queso fresco; 17949 reblochon; 17954 quark [cheese]; 53091 fromage frais; 53092 chèvre; 53093 neufchâtel; 53094 brillat-savarin; 53095 stracchino; 53096 saint-nectaire; 64999 cottage [curd type]; 65000 cream [soft spread]
+
+T blue_cheeses | blue cheeses
+W: 246 stilton; 247 gorgonzola; 249 roquefort [cheese]; 17929 blue cheese [cheese]; 53098 cambozola; 53099 bleu d'auvergne; 53100 cabrales; 53102 dolcelatte; 53103 fourme d'ambert; 53105 saint agur; 53106 blue vinney; 53107 stichelton; 53108 bleu de gex; 53111 bleu de bresse; 53112 bleu [cheese]; 63280 danablu; 64689 cashel; 64690 maytag; 64691 picos; 64692 shropshire
+G: 53112 53099 53108 53111
+
+T french_cheeses | french cheeses
+W: 240 brie; 244 camembert; 249 roquefort [cheese]; 17938 raclette; 17940 boursin; 17949 reblochon; 39725 munster [cheese]; 53085 comté; 53086 mimolette; 53088 cantal; 53092 chèvre; 53094 brillat-savarin; 53096 saint-nectaire; 53099 bleu d'auvergne; 53105 saint agur; 53113 époisses; 53114 livarot; 53115 pont-l'évêque; 53116 morbier; 53117 port-salut; 53118 fromage blanc; 53119 tomme de savoie; 53120 crottin de chavignol; 53121 ossau-iraty
+
+T italian_cheeses | italian cheeses
+W: 239 mozzarella; 241 parmesan; 247 gorgonzola; 251 ricotta; 17922 mascarpone; 17923 provolone; 17924 pecorino; 17935 burrata; 17936 taleggio; 17945 fontina; 17946 asiago; 53084 grana padano; 53095 stracchino; 53102 dolcelatte; 53122 parmigiano-reggiano; 53123 scamorza; 53124 caciocavallo; 53125 bel paese; 53126 montasio; 53127 robiola; 53128 pecorino romano; 53129 caprino; 53130 bocconcini
+G: 17924 53128
+
+T british_cheeses | british cheeses
+W: 238 cheddar [cheese]; 246 stilton; 17930 red leicester; 17931 wensleydale [cheese]; 17932 cheshire [cheese]; 17933 double gloucester; 59443 Caerphilly; 59444 Stinking Bishop
+
+T cheese_dishes | cheese dishes | fondue, raclette, mac and cheese, grilled cheese, quesadilla, welsh rarebit
+W: 548 curds; 606 cheesecake; 807 nachos; 826 quesadilla; 840 poutine; 859 khachapuri; 17938 raclette; 17989 soufflé; 18010 grilled cheese; 18012 cheeseburger; 18013 fondue; 18014 welsh rarebit; 18016 cheese sauce; 18018 cheese board; 18019 cauliflower cheese; 18020 croque monsieur; 18021 cheese straws; 18022 cheese fries; 18023 saganaki; 18024 halloumi fries; 18025 tartiflette; 18026 aligot; 18027 fonduta; 18028 queso fundido; 18029 cacio e pepe; 18030 paneer tikka; 63448 mac [baked pasta]
+
+T cheesemaking_words | cheesemaking words | curd, whey, rennet, rind, wheel, brine, aging, culture
+W: 543 whey; 548 curds; 14470 coagulation; 18031 rennet; 18032 rind [cheese]; 18033 cheese wheel; 18034 brine (verb); 18035 aging [cheese] (verb); 18037 culture [cheese]; 18038 affinage; 18039 cheesecloth; 18040 cheese press; 18041 mold [cheese]; 18042 pasteurization; 18043 cheddaring; 18044 cutting the curd; 18045 mesophilic (adjective); 18046 thermophilic (adjective); 18047 washed rind; 18048 bloomy rind; 18049 cheese vat; 18050 cheese harp; 18051 lipase; 18052 starter culture; 18053 cheese cave; 18054 ripening (verb); 18055 acidification
+G: 18037 18052
+
+T breads_and_baking | breads and baking
+W: 552 bread [food]; 553 loaf; 554 roll [bread]; 555 bagel [bread]; 556 baguette [bread]; 557 croissant; 558 muffin; 559 cake [food]; 560 cupcake [cake]; 561 brownie [dessert]; 562 pie; 563 flour; 564 dough [food]; 565 toast [bread]; 566 cookie [biscuit]; 568 doughnut; 570 pretzel; 571 tortilla; 572 naan; 573 sourdough [bread]; 574 flatbread [unleavened bread]; 575 cornbread; 576 scone; 577 yeast; 578 pita; 580 icing; 582 sprinkles; 584 baking powder; 588 focaccia; 589 ciabatta; 590 brioche; 591 crumpet; 592 soda bread; 593 danish [pastry]; 594 chapati; 595 roti; 596 rolling pin; 597 pumpernickel; 598 challah; 599 matzo; 600 bannock; 601 proofing; 602 sourdough starter; 603 lamination; 64823 soda [leavener]
+G: 594 595
+
+T breads | breads
+W: 555 bagel [bread]; 556 baguette [bread]; 570 pretzel; 571 tortilla; 572 naan; 573 sourdough [bread]; 574 flatbread [unleavened bread]; 575 cornbread; 578 pita; 588 focaccia; 589 ciabatta; 590 brioche; 591 crumpet; 594 chapati; 595 roti; 597 pumpernickel; 598 challah; 599 matzo; 600 bannock; 18061 English muffin; 18063 lavash; 18064 injera; 18065 stottie; 18066 bloomer [bread]; 18067 pandesal; 18068 paratha; 18069 arepa; 18070 pain de campagne; 18071 batard; 62546 multigrain; 62547 rye [loaf]; 64707 white; 64808 Brown [loaf]; 65005 soda [Irish loaf]
+G: 594 595
+
+T flatbreads | flatbreads | pita, naan, tortilla, lavash, chapati, injera, pide, yufka, arepa
+W: 571 tortilla; 572 naan; 574 flatbread [unleavened bread]; 578 pita; 588 focaccia; 594 chapati; 595 roti; 599 matzo; 18063 lavash; 18064 injera; 18068 paratha; 18069 arepa; 19301 pide; 19307 gözleme; 20289 crispbread; 38518 pupusa; 53131 piadina; 53132 puri; 53133 bhatura; 53134 yufka; 53135 sangak; 53136 barbari; 53137 roti canai; 53138 kulcha; 53139 bazlama; 53140 lefse; 53141 pappadum; 53144 tlayuda
+G: 594 595 53137
+
+T pastries | pastries
+W: 557 croissant; 568 doughnut; 593 danish [pastry]; 637 baklava; 642 macaron; 18072 eclair; 18074 cream puff; 18075 turnover [pastry]; 18076 strudel; 18077 cinnamon roll; 18079 cannoli; 18080 palmier; 18081 profiterole; 18082 pain au chocolat; 18083 mille-feuille; 18084 napoleon [pastry]; 18086 choux; 18087 sfogliatelle; 18088 kouign-amann; 18089 beignet; 18090 apple fritter; 18091 sausage roll; 18092 bear claw; 18093 cruller; 18094 churro; 18095 Chelsea bun; 18096 Eccles cake; 18097 vol-au-vent; 18098 rugelach; 18099 custard slice; 18100 cream horn; 18101 conchas; 65006 puff [flaky dough]
+G: 18083 18084
+
+T french_pastries | french pastries
+W: 557 croissant; 590 brioche; 593 danish [pastry]; 642 macaron; 18072 eclair; 18080 palmier; 18081 profiterole; 18082 pain au chocolat; 18083 mille-feuille; 18084 napoleon [pastry]; 18088 kouign-amann; 18089 beignet; 18163 tuile; 18180 tarte tatin; 18428 clafoutis; 20274 madeleine; 53145 canelé; 53146 religieuse; 53147 paris-brest; 53148 chouquette; 53149 financier; 53150 saint-honoré; 53151 gougère; 53152 croquembouche; 53153 pain aux raisins; 53154 chausson aux pommes; 53155 fraisier; 53156 galette des rois; 53157 sablé
+G: 18083 18084
+
+T cakes | cakes
+W: 560 cupcake [cake]; 606 cheesecake; 624 tiramisu; 18104 birthday; 18105 pound; 18107 red velvet; 18110 fruitcake; 18111 lemon drizzle; 18114 coffee; 18116 wedding; 18118 layer; 18119 Battenberg; 18122 Sachertorte; 18124 Genoise; 18127 lamington; 18128 tres leches; 18130 stollen; 18131 panettone; 18132 gugelhupf; 18133 ice cream; 18136 lemon; 28037 sponge [cake]; 28039 angel food; 28042 simnel; 28043 upside-down (adjective); 28047 dundee; 28049 madeira [cake]; 28050 bundt; 30208 Black Forest; 64708 carrot; 64709 chiffon; 64710 chocolate; 64711 marble; 64712 opera; 67197 jelly roll [cake]
+G: 18136 18111
+
+T pies_and_tarts | pies and tarts
+W: 17163 key lime; 18175 banana cream; 18176 custard; 18177 fruit; 18178 mince pie; 18179 treacle; 18180 tarte tatin; 18183 mud pie; 18188 tarte au citron; 18189 Linzer torte; 18190 frangipane; 18191 Manchester tart; 18192 gooseberry; 18193 sugar pie; 18195 Dutch apple; 19177 pork pie; 19187 tourtière; 19193 scotch pie; 19196 pithivier; 38127 Bakewell; 53156 galette des rois; 59452 gypsy tart; 59453 jam; 62879 banoffee; 62880 lemon meringue; 62881 Mississippi mud; 62882 shoofly; 62883 stargazy (adjective); 63456 apple [dessert]; 63459 pecan [dessert]; 63460 pumpkin [dessert]; 63462 sweet potato [dessert]; 64713 blueberry; 64714 cherry; 64715 rhubarb; 65019 chess [Southern custard]
+G: 63456 18195
+
+T baking_ingredients | baking ingredients
+W: 516 butter; 527 buttermilk; 563 flour; 577 yeast; 582 sprinkles; 584 baking powder; 602 sourdough starter; 3830 sugar [food]; 8455 suet [animal fat]; 16678 eggs [food]; 18196 vanilla extract; 18197 brown sugar; 18198 powdered sugar; 18201 cocoa powder; 18202 cornstarch; 18204 shortening; 18205 cream of tartar; 18206 chocolate chips; 18207 food coloring; 18208 almond extract; 18209 golden syrup; 18211 xanthan gum; 18212 ammonium carbonate; 18213 vital wheat gluten; 18214 pectin; 64823 soda [leavener]; 67141 superfine sugar
+
+T cake_decorations | cake decorations
+W: 528 whipped cream; 580 icing; 582 sprinkles; 635 marzipan; 16276 candles; 18255 fondant; 18256 buttercream; 18257 edible glitter; 18258 piping bag; 18260 royal icing; 18261 ganache; 18262 gum paste; 18263 sugar flowers; 18264 edible pearls; 18265 dragées; 18266 rainbow sprinkles; 18267 chocolate curls; 18268 gold leaf; 18270 sugar paste; 18271 sanding sugar; 18272 nonpareils; 18273 silver balls; 18274 petal dust; 18275 modeling chocolate; 18276 isomalt; 18277 rolled fondant; 18278 sugar pearls; 18279 confetti sprinkles; 18454 edible flowers; 59460 dragee; 59462 angelica; 59463 piping gel; 59464 luster dust; 59465 pastillage; 59466 candied violets; 63488 topper; 67138 dragees; 67163 candied cherry
+G: 18264 18265; 582 18266 18279; 18255 18277
+
+T desserts_and_sweets | desserts and sweets
+W: 559 cake [food]; 560 cupcake [cake]; 561 brownie [dessert]; 562 pie; 566 cookie [biscuit]; 604 ice cream [frozen dessert]; 605 chocolate [sweet]; 606 cheesecake; 607 candy; 609 lollipop; 610 lolly [lollipop or ice pop]; 611 marshmallow; 612 caramel; 613 gummy bear; 614 pudding; 615 custard [egg dessert]; 616 sundae; 617 fudge [sweet]; 618 toffee; 619 mousse [dessert]; 620 jelly beans; 621 candy cane; 622 sorbet; 623 gelato; 624 tiramisu; 625 truffle [chocolate]; 626 licorice; 628 cotton candy; 631 Kit Kat; 632 Snickers; 633 Skittles [candy]; 634 nougat; 635 marzipan; 636 panna cotta; 637 baklava; 638 churros; 639 trifle; 640 pavlova; 641 mochi; 642 macaron; 643 Turkish delight; 644 crème brûlée; 646 halva; 647 kulfi; 648 gulab jamun; 649 blancmange; 650 semifreddo; 651 syllabub
+G: 610 609
+
+T ice_cream_flavors | ice cream flavors
+W: 91 strawberry [berry]; 95 mango [tropical fruit]; 226 coffee [drink]; 605 chocolate [sweet]; 628 cotton candy; 719 vanilla [flavouring]; 961 java [coffee]; 16741 green tea; 17236 black cherry; 17353 pistachio [nut]; 17373 black walnut; 17441 taro; 18104 birthday cake; 18280 mint chocolate chip; 18281 cookies and cream; 18282 cookie dough; 18284 butter pecan; 18286 rum raisin; 18287 salted caramel; 18288 bubblegum [candy]; 18289 tutti frutti; 18290 praline; 18291 butterscotch [flavour]; 18292 dulce de leche; 18293 raspberry ripple; 18294 stracciatella; 18295 Moose Tracks; 18296 Chunky Monkey; 18297 black sesame; 18298 red bean; 18299 spumoni; 18300 pralines and cream; 18301 ube; 18302 stem ginger; 18395 gianduja; 19394 hokey pokey [ice cream]; 20205 rocky road [ice cream]; 20207 neapolitan [ice cream]; 59467 pandan [flavor]; 59468 fior di latte; 59469 nocciola; 59470 maple walnut
+G: 226 961
+
+T frozen_desserts | frozen desserts | sorbet, gelato, sundae, popsicle, granita, frozen yogurt, kulfi
+W: 604 ice cream [frozen dessert]; 616 sundae; 622 sorbet; 623 gelato; 647 kulfi; 650 semifreddo; 18303 popsicle; 18305 ice pop; 18306 paddle pop; 18307 sherbet [dessert]; 18310 ice cream sandwich; 18311 granita; 18312 snow cone; 18313 shaved ice; 18314 slushie; 18315 banana split; 18316 frozen custard; 18317 affogato; 18318 baked Alaska; 18319 soft serve; 18320 Italian ice; 18321 cassata; 18322 bombe [dessert]; 18323 mochi ice cream; 18324 kakigori; 18325 halo-halo; 18326 bingsu; 18327 dondurma; 18328 ice cream float; 18329 root beer float; 18330 choc ice; 59471 sorbetto; 59472 cremolada; 59473 paletas; 59474 tartufo; 59475 zuccotto; 62885 froyo
+G: 18312 18313; 18328 18329; 18303 18305 18306
+
+T candy | candy
+W: 609 lollipop; 610 lolly [lollipop or ice pop]; 611 marshmallow; 612 caramel; 617 fudge [sweet]; 618 toffee; 620 jelly beans; 621 candy cane; 626 licorice; 628 cotton; 634 nougat; 18288 bubblegum [candy]; 18291 butterscotch [flavour]; 18357 gummy bears; 18358 gumdrop; 18359 jawbreaker; 18362 rock candy; 18363 bonbon; 18364 jelly babies; 18365 wine gum; 18366 lemon drop; 18367 candy corn; 18368 sherbet lemon; 18369 pear drop; 18370 barley sugar; 18371 aniseed ball; 18372 brittle [candy]; 18373 sour belts; 18374 fruit chews; 18375 butter mint; 18376 peanut brittle; 18377 saltwater taffy; 18379 fizzy cola bottles; 18380 rock sugar; 50079 peppermint [mint candy]; 59481 humbug [sweet]; 59482 horehound; 59483 pontefract cake; 59484 kendal mint cake; 59485 cinder toffee; 59486 sugared almonds; 59487 divinity [candy]; 59488 penuche; 59489 Necco wafers; 59490 comfit; 64745 hard candy
+G: 18372 18376; 610 609
+
+T desserts_of_the_world | desserts of the world
+W: 623 gelato; 624 tiramisu; 636 panna cotta; 637 baklava; 638 churros; 640 pavlova; 641 mochi; 642 macaron; 643 Turkish delight; 644 crème brûlée; 646 halva; 648 gulab jamun; 650 semifreddo; 18079 cannoli; 18083 mille-feuille; 18084 napoleon [pastry]; 18112 black forest cake; 18113 Black Forest gateau; 18122 Sachertorte; 18127 lamington; 18180 tarte tatin; 18318 baked Alaska; 18410 flan [dessert]; 18411 apple strudel; 18412 tres leches cake; 18413 profiteroles; 18414 zabaglione; 18415 sticky rice with mango; 18417 knafeh; 18419 alfajores; 18420 brigadeiro; 18421 pastel de nata; 18422 loukoumades; 18423 dorayaki; 18424 taiyaki; 18425 kransekake; 18426 bibingka; 18427 galaktoboureko; 18428 clafoutis; 19348 melktert; 19354 koeksister; 39149 jalebi; 50059 mont blanc [chestnut dessert]; 53165 rasmalai; 53296 tarta de santiago; 53365 trdelnik; 59491 dobos torte; 59492 tembleque; 59493 qatayef; 59494 mhalabiya
+G: 18112 18113; 18083 18084
+
+T indian_sweets | indian sweets | gulab jamun, jalebi, barfi, ladoo, rasgulla, kheer
+W: 647 kulfi; 648 gulab jamun; 18662 modak; 19283 malpua; 39149 jalebi; 53158 barfi; 53160 ladoo; 53162 rasgulla; 53163 kheer; 53164 halwa; 53165 rasmalai; 53166 peda; 53167 gajar halwa; 53168 sandesh; 53169 mysore pak; 53170 soan papdi; 53171 imarti; 53172 kaju katli; 53173 rabri; 53174 payasam; 53175 shrikhand; 53176 cham cham; 53177 petha; 53178 gujiya; 53179 basundi; 53180 phirni; 53181 kalakand; 53182 chikki; 53183 sheer khurma
+
+T french_desserts | french desserts
+W: 642 macaron; 644 crème brûlée; 18083 mille-feuille; 18084 napoleon [pastry]; 18180 tarte tatin; 18413 profiteroles; 18428 clafoutis; 50059 mont blanc [chestnut dessert]
+
+T eastern_mediterranean_sweets | eastern mediterranean sweets
+W: 637 baklava; 643 Turkish delight; 646 halva; 18417 knafeh; 18422 loukoumades; 18427 galaktoboureko; 59493 qatayef; 59494 mhalabiya
+
+T toppings | dessert toppings
+W: 528 whipped cream; 541 clotted cream; 544 crème fraîche; 582 sprinkles; 672 granola; 18206 chocolate chips; 18292 dulce de leche; 18398 cacao nibs; 18429 chocolate sauce; 18430 hot fudge; 18431 caramel sauce; 18432 maple syrup; 18433 cherry on top; 18434 crushed nuts; 18435 shredded coconut; 18436 strawberry sauce; 18437 marshmallow fluff; 18438 butterscotch sauce; 18439 crushed Oreos; 18440 streusel; 18441 crumble [topping]; 18442 meringue; 18443 candied pecans; 18444 toasted almonds; 18445 cinnamon sugar; 18446 fresh berries; 18447 coulis; 18448 compote; 18449 chocolate shavings; 18450 cookie crumbs; 18451 toffee bits; 18452 mini marshmallows; 18453 pistachio crumble; 18454 edible flowers; 18455 brandy butter; 18456 custard sauce; 18457 golden syrup drizzle; 18458 candied orange peel; 18830 Nutella; 59495 chantilly cream; 59496 creme anglaise; 59497 hard sauce; 59498 cajeta; 59499 Magic Shell; 59500 Cool Whip
+G: 528 59500; 18450 18439
+
+T sweeteners | sweeteners | sugar, honey, maple syrup, agave, molasses, stevia, treacle, jaggery
+W: 1803 agave; 3830 sugar [food]; 3879 fructose; 15594 honey [food]; 18197 brown sugar; 18209 golden syrup; 18276 isomalt; 18432 maple syrup; 18460 stevia; 18461 aspartame; 18462 saccharin; 18463 sucralose; 18464 molasses; 18465 corn syrup; 18466 cane sugar; 18467 raw sugar; 18468 treacle [golden syrup]; 18469 jaggery; 18470 xylitol; 18471 erythritol; 18472 monk fruit; 18473 coconut sugar; 18474 date syrup; 18475 rice syrup; 18476 demerara; 18477 demerara sugar; 18478 muscovado; 18479 turbinado; 18480 HFCS; 18481 sorbitol; 18482 maltitol; 18483 sorghum syrup; 18484 palm sugar; 18485 piloncillo; 18486 allulose; 30701 century plant; 39150 panela; 59501 neotame; 59502 advantame; 59503 acesulfame K; 59504 thaumatin; 59505 mannitol; 59506 tagatose; 59507 invert sugar; 59508 birch syrup; 59509 Splenda; 59510 glucose syrup; 59511 maltose; 67141 superfine sugar
+G: 18476 18477; 1803 30701; 18463 59509; 18468 18209
+
+T sugar_types | sugar types
+W: 18197 brown; 18466 cane; 18467 raw; 18473 coconut; 18477 demerara; 18484 palm; 59507 invert; 67141 superfine
+
+T jam_flavours | jam flavours | fruits that jam and marmalade are made from
+W: 91 strawberry [berry]; 92 cherry [fruit]; 93 peach [fruit]; 94 plum [fruit]; 101 fig; 348 blueberry [fruit]; 349 raspberry; 352 apricot; 17178 blackcurrant; 18828 marmalade
+
+T pasta_rice_and_grains | pasta, rice and grains
+W: 406 corn [vegetable]; 408 maize; 652 pasta; 653 rice [grain]; 654 noodles; 655 spaghetti [long pasta]; 656 macaroni [pasta]; 657 oats; 658 wheat [cereal]; 659 cereal; 660 lasagna; 662 penne; 663 ravioli; 664 couscous; 665 quinoa [grain]; 666 barley; 667 rye [grain]; 668 risotto; 670 ramen; 671 instant noodles; 672 granola; 673 bran [cereal]; 674 fusilli; 675 linguine; 676 fettuccine; 677 tortellini; 678 rigatoni; 679 farfalle; 680 orzo; 681 gnocchi; 682 millet [grain]; 683 buckwheat [grain]; 684 spelt [grain]; 685 polenta; 687 basmati; 688 udon; 689 vermicelli; 691 muesli; 692 grits; 693 semolina [wheat grain]; 694 cornmeal; 695 bulgur; 697 pilaf; 699 sorghum; 700 amaranth [grain]; 701 farro; 702 arborio; 703 soba; 704 orecchiette; 705 pappardelle; 706 bucatini; 707 teff [grain]; 708 freekeh; 709 kasha; 710 trofie; 711 triticale; 977 rolled oats; 978 breakfast cereal; 63503 brown [variety]; 63504 wild [variety]
+G: 406 408; 659 978; 657 977
+
+T pasta_shapes | pasta shapes
+W: 655 spaghetti [long pasta]; 656 macaroni [pasta]; 660 lasagna; 662 penne; 663 ravioli; 674 fusilli; 675 linguine; 676 fettuccine; 677 tortellini; 678 rigatoni; 679 farfalle; 680 orzo; 689 vermicelli; 704 orecchiette; 705 pappardelle; 706 bucatini; 710 trofie; 18487 angel hair; 18488 capellini; 18489 rotini; 18490 shells [pasta]; 18491 elbow macaroni; 18492 cannelloni; 18493 manicotti; 18494 ziti; 18495 tagliatelle; 18496 conchiglie; 18497 cavatappi; 18498 radiatori; 18499 paccheri; 18500 strozzapreti; 18501 casarecce; 18502 campanelle; 18503 gemelli; 18504 ditalini; 18505 stelline; 18506 agnolotti; 18507 cappelletti; 18508 mafalde; 18509 tortelloni; 18510 mezzelune; 18511 pici; 18512 fregola; 18513 ruote; 18514 tagliolini; 18515 spaghettini; 59512 garganelli; 59513 busiate; 59514 malloreddus; 59515 trenette; 59516 scialatielli; 59517 maltagliati; 59518 cavatelli; 59519 lumache; 59520 anelli; 59521 corzetti; 59522 pizzoccheri; 59523 fideo; 59524 tripoline
+G: 18487 18488
+
+T long_pasta | long pasta
+W: 655 spaghetti [long pasta]; 675 linguine; 676 fettuccine; 689 vermicelli; 705 pappardelle; 706 bucatini; 18487 angel hair; 18488 capellini; 18495 tagliatelle; 18508 mafalde; 18514 tagliolini; 18515 spaghettini; 59515 trenette
+
+T stuffed_pasta | stuffed pasta
+W: 663 ravioli; 677 tortellini; 18492 cannelloni; 18493 manicotti; 18506 agnolotti; 18507 cappelletti; 18509 tortelloni; 18510 mezzelune
+
+T tube_pasta | tube pasta
+W: 656 macaroni [pasta]; 662 penne; 678 rigatoni; 706 bucatini; 18491 elbow macaroni; 18492 cannelloni; 18493 manicotti; 18494 ziti; 18497 cavatappi; 18499 paccheri; 59512 garganelli
+
+T pasta_dishes | pasta dishes | carbonara, lasagna, bolognese, alfredo, cacio e pepe, puttanesca
+W: 660 lasagna; 798 salad [cold dish]; 815 mac and cheese; 818 spaghetti bolognese; 18029 cacio e pepe; 18492 cannelloni; 18516 carbonara; 18517 spaghetti carbonara; 18518 bolognese [sauce]; 18519 ragù; 18520 fettuccine alfredo; 18521 alfredo; 18523 pesto; 18524 baked ziti; 18525 puttanesca; 18526 arrabbiata; 18527 amatriciana; 18528 aglio e olio; 18530 pasta e fagioli; 18531 tortellini in brodo; 18532 stuffed shells; 18533 linguine with clams; 18534 alla norma; 18535 spaghetti pomodoro; 18537 spaghetti al limone; 18538 al forno; 18539 con le sarde; 18540 spaghetti vongole; 18541 pastitsio; 18542 penne arrabbiata; 59526 pasta e ceci; 59527 timballo; 59528 alla Genovese; 59529 penne alla vodka; 59530 all'assassina; 59531 bake; 62889 gricia; 63282 tuna bake; 63363 primavera
+G: 18516 18517; 18521 18520; 18518 18519 818; 18526 18542
+
+T noodles | noodles
+W: 670 ramen; 688 udon; 689 vermicelli; 690 rice; 703 soba; 824 pad thai; 844 pho; 18543 egg; 18544 lo mein; 18545 chow mein; 18547 cellophane; 18549 yakisoba; 18550 somen; 18551 laksa; 18552 pancit; 18553 ho fun; 18554 hand-pulled; 18555 mee goreng; 18556 kway teow; 18557 japchae; 18558 shirataki; 18559 mei fun; 18560 wonton noodles; 18561 singapore; 18562 bean thread; 18565 cup noodles; 18568 kuy teav; 18569 cold noodles; 18570 naengmyeon; 59532 lamian; 59533 dangmyeon; 59534 hiyamugi; 59535 saimin; 59536 mee pok; 59537 misua; 59538 yi mein; 59539 banh canh; 59540 rice sticks; 62890 dan dan; 63505 bean threads; 64752 glass noodles; 64821 Glass [transparent]; 65053 instant [quick-cook]
+G: 64821 63505 18547 64752; 690 59540
+
+T noodle_dishes | noodle dishes | pad thai, ramen, pho, chow mein, laksa, japchae, yakisoba
+W: 670 ramen; 688 udon; 703 soba; 824 pad thai; 844 pho; 18544 lo mein; 18545 chow mein; 18549 yakisoba; 18551 laksa; 18552 pancit; 18556 kway teow; 18557 japchae; 18561 singapore; 18569 cold noodles; 18570 naengmyeon; 53184 pad see ew; 53185 tantanmen; 53186 bún chả; 53187 mie goreng; 53189 zha jiang mian; 53190 tsukemen; 53192 jajangmyeon; 53193 khao soi; 53194 bun bo hue; 53610 cao lau; 59541 char kway teow; 59542 hokkien mee; 59543 wanton mee; 59544 bak chor mee; 59545 kitsune udon; 59546 zaru soba; 59547 kalguksu; 59548 mohinga; 59550 yaki udon; 59551 miso ramen; 59552 tonkotsu ramen; 62890 dan dan; 62891 niu rou mian; 62892 biang biang; 62893 pad kee mao
+G: 670 59551 59552; 688 59545 59550; 703 59546; 18556 59541
+
+T rice_dishes | rice dishes
+W: 614 pudding; 668 risotto; 697 pilaf; 800 sushi [rice and fish]; 823 paella; 838 biryani; 853 bibimbap; 5168 Pongal; 17838 jambalaya; 17840 kedgeree; 18572 congee [rice porridge]; 18574 jook; 18575 rice and beans; 18576 onigiri; 18578 arroz con pollo; 18579 dirty rice; 18580 nasi goreng; 18581 pulao; 18582 khichdi; 18583 hoppin' John; 18584 chicken and rice; 18585 coconut; 18586 Spanish; 18587 gallo pinto; 18588 nasi lemak; 18589 donburi; 18591 plov; 18592 mujaddara; 18593 maqluba; 18594 kimbap; 18595 musubi; 18596 moros y cristianos; 18597 kabsa; 19125 arancini; 19369 thieboudienne; 53409 tahdig; 53457 waakye; 59553 ochazuke; 59554 omurice; 59555 bisi bele bath; 59556 khao man gai; 59557 nasi kuning; 59558 risi e bisi; 59559 arroz negro; 59561 tamago kake gohan; 62894 jollof; 63443 fried; 65057 egg fried [wok-cooked with egg]; 65058 jeera [cumin-flavored]; 65059 lemon [tangy south Indian]; 65062 sticky [glutinous]
+G: 18572 18574; 63443 65057
+
+T east_asian_dishes | east asian grain dishes
+W: 800 sushi [rice and fish]; 806 fried rice; 853 bibimbap; 17993 egg fried rice; 18572 congee [rice porridge]; 18574 jook; 18576 onigiri; 18589 donburi; 18594 kimbap; 18595 musubi; 59553 ochazuke; 59554 omurice; 59561 tamago kake gohan
+G: 806 17993
+
+T indian_dishes | indian grain dishes
+W: 838 biryani; 5168 Pongal; 17840 kedgeree; 18581 pulao; 18582 khichdi; 18590 lemon rice; 59555 bisi bele bath; 59560 jeera rice
+
+T grains | grains
+W: 406 corn [vegetable]; 408 maize; 653 rice [grain]; 657 oats; 658 wheat [cereal]; 665 quinoa [grain]; 666 barley; 667 rye [grain]; 669 brown rice; 682 millet [grain]; 683 buckwheat [grain]; 684 spelt [grain]; 686 wild rice; 695 bulgur; 699 sorghum; 700 amaranth [grain]; 701 farro; 707 teff [grain]; 708 freekeh; 709 kasha; 711 triticale; 977 rolled oats; 3857 whole grain; 18598 kamut [grain]; 18599 einkorn [grain]; 18600 emmer; 18601 cracked wheat; 18602 pearl barley; 18603 wheat berries; 18604 durum [wheat]; 18605 fonio; 18606 job's tears; 18607 hulled barley; 59562 groats; 59563 pearl millet; 59564 finger millet; 59565 foxtail millet; 59566 ragi [grain]; 59567 jowar; 59568 bajra [grain]; 59569 kaniwa
+G: 406 408; 657 977
+
+T breakfast_cereals | breakfast cereals
+W: 672 granola; 691 muesli; 18608 cornflakes; 18610 oatmeal [food]; 18612 bran flakes; 18613 Cheerios; 18614 Froot Loops; 18615 Frosted Flakes; 18617 Lucky Charms; 18618 Cap'n Crunch; 18619 Rice Krispies; 18620 Cocoa Puffs; 18621 Honey Nut Cheerios; 18622 Weetabix; 18623 Shredded Wheat; 18624 Raisin Bran; 18625 Grape-Nuts; 18626 Cinnamon Toast Crunch; 18627 Trix; 18628 Cookie Crisp; 18629 Apple Jacks; 18630 Golden Grahams; 18631 Coco Pops; 18632 Alpen; 18633 Ready Brek; 18634 puffed rice; 18635 puffed wheat; 18636 Count Chocula; 18637 Chex; 18638 Wheaties; 18639 Shreddies; 18640 Fruity Pebbles; 59570 Ricicles; 59571 Sugar Puffs; 59572 Corn Pops; 59573 Kix; 59574 Product 19; 59575 Quisp; 59576 Franken Berry; 59577 Boo Berry; 59578 Honey Smacks; 59579 Crunchy Nut; 59580 Golden Nuggets; 59581 Mueslix
+G: 18613 18621
+
+T dumplings | dumplings
+W: 681 gnocchi; 839 dim sum; 841 pierogi; 18641 gyoza; 18642 potsticker; 18643 wonton; 18644 matzo ball; 18645 xiaolongbao; 18647 har gow; 18648 siu mai; 18649 momo; 18650 mandu; 18651 pelmeni; 18652 vareniki; 18653 manti; 18654 spaetzle; 18655 kreplach; 18656 chicken and dumplings; 18657 apple; 18658 steamed; 18659 fried; 18660 jiaozi; 18661 khinkali; 18662 modak; 18663 suet; 18664 shumai; 18665 dango; 18666 tangyuan; 18667 kluski; 18668 knedlíky; 18670 boiled; 20237 dumpling; 53331 knödel; 53337 maultaschen; 59582 gnudi; 59583 canederli; 59584 halusky; 59585 kopytka; 59586 uszka; 59587 nokedli; 59588 buuz; 59589 chuchvara; 65065 soup [filled with broth]
+G: 18645 65065
+
+T rice_varieties | rice varieties
+W: 669 brown; 686 wild; 687 basmati; 702 arborio; 18577 sticky; 18673 sushi; 18677 Forbidden; 18679 carnaroli; 18680 bomba [rice]; 18681 calrose; 18682 parboiled; 18684 instant; 18685 sona masoori; 18686 ponni; 18687 koshihikari; 18688 Thai jasmine; 18691 aromatic; 18692 Texmati; 18693 Uncle Ben's; 57029 Patna; 59590 Carolina Gold; 59591 Vialone Nano; 59592 gobindobhog; 59594 akitakomachi; 59595 sasanishiki; 59596 Wehani; 59597 valencia; 59598 glutinous; 59599 Black Japonica; 59600 bhutanese red; 62895 jasmine; 62896 matta; 63506 black; 64754 long-grain; 64755 medium-grain; 64756 red; 64757 short-grain; 64758 white
+G: 18677 63506; 62895 18688
+
+T herbs_spices_and_sauces | herbs, spices and sauces
+W: 712 salt [seasoning]; 713 basil [culinary herb]; 714 parsley; 715 mint [herb]; 716 rosemary [culinary herb]; 717 cinnamon [spice]; 718 ginger [spice root]; 719 vanilla [flavouring]; 720 mustard; 721 black pepper; 722 pepper [spice]; 723 ketchup; 725 mayonnaise; 730 vinegar; 731 gravy; 732 salsa [sauce]; 733 olive oil; 734 thyme; 735 sage [herb]; 736 oregano; 737 dill [herb]; 738 chives; 739 bay leaf; 740 nutmeg [spice]; 741 paprika; 742 cumin; 743 cloves; 744 chili powder; 745 curry powder; 746 pesto; 747 hummus; 748 relish; 749 chutney; 750 wasabi; 751 tartar; 753 ranch [dressing]; 754 cilantro; 756 tarragon; 757 marjoram; 758 lemongrass; 759 turmeric; 760 cardamom; 761 saffron [spice]; 762 cayenne [pepper]; 763 allspice; 764 star anise; 765 marinara; 766 tahini [sesame paste]; 767 miso [fermented paste]; 769 aioli; 770 vinaigrette; 772 salad cream; 774 Tabasco [hot sauce]; 775 béchamel; 777 chervil; 778 sorrel [herb]; 779 fenugreek; 780 sumac; 781 mace [spice]; 782 hoisin; 783 harissa; 784 chimichurri; 785 tapenade; 786 mirin; 787 mole [sauce]; 788 lovage; 789 borage; 790 epazote; 791 gochujang; 792 ponzu; 793 asafoetida; 29563 worcestershire; 39197 shoyu; 49301 HP; 65074 barbecue [smoky glaze]; 65075 fish [fermented seasoning]; 65076 hot [chili-based]
+G: 722 721; 65076 774
+
+T herbs | herbs
+W: 713 basil [culinary herb]; 714 parsley; 715 mint [herb]; 716 rosemary [culinary herb]; 734 thyme; 735 sage [herb]; 736 oregano; 737 dill [herb]; 738 chives; 739 bay leaf; 754 cilantro; 756 tarragon; 757 marjoram; 758 lemongrass; 777 chervil; 778 sorrel [herb]; 788 lovage; 789 borage; 790 epazote; 15667 holy basil; 17486 perilla; 18360 peppermint [herb]; 18694 savory [herb]; 18695 curry leaf; 18696 Thai basil; 18697 spearmint [herb]; 18698 lemon balm; 18699 shiso; 18700 hyssop; 18701 culantro; 18702 lemon verbena; 59462 angelica; 59601 rau ram; 59602 mitsuba; 59603 salad burnet; 59604 sweet cicely; 59605 papalo; 59606 hoja santa; 59607 winter savory; 59608 costmary; 59609 pennyroyal
+
+T spices | spices
+W: 717 cinnamon [spice]; 721 black pepper; 722 pepper [spice]; 740 nutmeg [spice]; 741 paprika; 742 cumin; 743 cloves; 744 chili powder; 745 curry powder; 759 turmeric; 760 cardamom; 761 saffron [spice]; 762 cayenne [pepper]; 763 allspice; 764 star anise; 779 fenugreek; 780 sumac; 781 mace [spice]; 793 asafoetida; 15589 nigella; 17187 juniper berry; 17392 fennel seed; 17393 coriander seed; 17394 mustard seed; 18703 garam masala; 18704 cinnamon stick; 18705 caraway; 18706 za'atar; 18707 ras el hanout; 18709 Sichuan peppercorn; 18710 annatto; 18711 grains of paradise; 18712 smoked paprika; 18713 white pepper; 18714 red pepper flakes; 18715 pumpkin pie spice; 18716 aniseed; 18719 five-spice powder; 21132 cassia; 39156 amchur; 59610 ajwain; 59611 mahleb; 59612 cubeb; 59613 long pepper; 59614 sansho; 59615 kokum; 59616 black cardamom
+G: 722 721; 717 18704
+
+T spice_blends | spice blends
+W: 744 chili powder; 745 curry powder; 18703 garam masala; 18706 za'atar; 18707 ras el hanout; 18718 five spice; 18719 five-spice powder; 18720 Cajun seasoning; 18721 Creole seasoning; 18722 jerk seasoning; 18723 taco seasoning; 18725 Italian seasoning; 18726 Old Bay; 18727 mixed; 18728 apple pie spice; 18729 pickling; 18730 poultry seasoning; 18731 lemon pepper; 18732 seasoned salt; 18733 bouquet garni; 18734 herbes de Provence; 18735 fines herbes; 18736 baharat; 18737 dukkah; 18739 berbere; 18740 chaat masala; 18741 tandoori masala; 18742 panch phoron; 18743 shichimi togarashi; 18744 furikake; 18745 quatre épices; 18746 hawaij; 18747 sazon; 18748 adobo seasoning; 65080 pumpkin [autumn flavor]
+G: 18718 18719
+
+T chili_peppers | chili peppers
+W: 762 cayenne [pepper]; 17658 chili pepper; 18749 jalapeño; 18751 habanero; 18752 serrano; 18753 poblano; 18754 chipotle; 18755 ancho; 18756 scotch bonnet; 18759 bhut jolokia; 18760 Carolina Reaper; 18761 trinidad scorpion; 18764 pasilla; 18765 guajillo; 18766 cascabel; 18767 chile de arbol; 18768 piri piri; 18771 banana; 18772 fresno [chili]; 18773 cherry; 18775 pepperoncini; 18776 hatch chile; 18777 mulato; 18778 naga viper; 18779 red; 18780 green; 18781 tabasco; 18782 cubanelle; 18783 datil [pepper]; 18784 peter; 35868 Aleppo; 62897 Anaheim; 62898 Padrón; 62899 bird's eye; 64759 thai chili; 64822 Thai [small hot]
+G: 64822 62899 64759
+
+T sauces_and_condiments | sauces and condiments
+W: 720 mustard; 723 ketchup; 725 mayonnaise; 731 gravy; 732 salsa [sauce]; 746 pesto; 748 relish; 749 chutney; 750 wasabi; 751 tartar; 765 marinara; 766 tahini [sesame paste]; 769 aioli; 772 salad cream; 774 Tabasco [hot sauce]; 775 béchamel; 782 hoisin; 783 harissa; 784 chimichurri; 791 gochujang; 17442 horseradish; 18785 tomato; 18786 sriracha; 18789 apple; 18791 hollandaise; 18794 mint; 18796 béarnaise; 18797 piccalilli; 18798 romesco; 18799 sambal; 29452 teriyaki; 29563 worcestershire; 39197 shoyu; 49301 HP; 53256 sweet chili; 65074 barbecue [smoky glaze]; 65075 fish [fermented seasoning]; 65076 hot [chili-based]; 65088 cranberry [festive tart]; 65090 oyster [savory Chinese]
+G: 65076 774
+
+T french_sauces | french sauces | béchamel, hollandaise, velouté, béarnaise, beurre blanc, mornay
+W: 725 mayonnaise; 769 aioli; 770 vinaigrette; 775 béchamel; 785 tapenade; 18447 coulis; 18791 hollandaise; 18796 béarnaise; 53195 velouté; 53197 beurre blanc; 53198 mornay; 53199 espagnole; 53200 demi-glace; 53201 bordelaise; 53202 remoulade; 53203 rouille [sauce]; 53204 chasseur [sauce]; 53206 beurre noisette; 53208 gribiche; 53209 Robert; 53210 pistou; 53211 choron; 53213 beurre rouge; 62900 allemande [velouté-based]; 62901 poulette; 62902 soubise
+
+T asian_sauces | asian sauces | soy, oyster, fish, hoisin, teriyaki, gochujang, ponzu, sambal
+W: 782 hoisin; 786 mirin; 791 gochujang; 792 ponzu; 15674 sesame oil; 18786 sriracha; 18799 sambal; 23404 miso paste; 29452 teriyaki; 39194 tamari; 39197 shoyu; 53214 black bean; 53215 plum; 53217 tonkatsu; 53218 sweet and sour; 53219 satay; 53220 peanut; 53221 doubanjiang; 53222 chili crisp; 53223 nuoc cham; 53224 kecap manis; 53225 ssamjang; 53226 yuzu kosho; 53227 tentsuyu; 53256 sweet chili; 65075 fish [fermented seasoning]; 65090 oyster [savory Chinese]; 65098 XO [seafood chili]
+
+T salad_dressings | salad dressings | ranch, vinaigrette, caesar, thousand island, honey mustard, green goddess
+W: 753 ranch [dressing]; 770 vinaigrette; 772 salad cream; 17387 poppy seed; 17566 vidalia onion; 19292 thousand island; 53228 caesar [dressing]; 53229 honey mustard; 53230 green goddess; 53231 blue cheese [dressing]; 53233 balsamic [dressing]; 53236 catalina [dressing]; 53237 oil and vinegar; 53238 sesame ginger; 53239 lemon vinaigrette; 53240 tahini; 53241 miso; 53242 Louis; 53243 yogurt; 53244 creamy garlic; 53245 coleslaw dressing; 53246 bacon ranch; 53248 raspberry vinaigrette; 53249 Hidden Valley; 59619 carrot ginger; 59620 Seven Seas; 59621 Zesty Italian; 59622 Wishbone [dressing]; 64760 French; 64761 goma; 64762 Italian; 64763 Roquefort; 64764 Russian; 64765 wafu
+G: 753 53246; 770 53239 53248
+
+T dips | dips | hummus, guacamole, salsa, tzatziki, baba ganoush, queso, raita
+W: 550 labneh; 732 salsa [sauce]; 747 hummus; 753 ranch [dressing]; 785 tapenade; 16768 guacamole; 17852 taramasalata; 18800 tzatziki; 18801 queso; 18802 cheese; 18804 onion; 18806 spinach; 18807 pico de gallo; 18808 nacho cheese; 18810 cheese fondue; 18811 baba ganoush; 18813 raita; 18814 artichoke; 18815 crab; 18817 chili con queso; 18818 dill; 18819 whipped feta; 18820 bagna cauda; 18821 skordalia; 18822 muhammara; 18823 melitzanosalata; 18824 mutabal; 18825 ajvar [dip]; 18826 cacik; 64766 blue cheese; 64767 buffalo chicken; 64768 French onion; 65104 bean [refried]
+G: 18801 18817; 18802 18808; 18804 64768
+
+T spreads | spreads | jam, marmalade, peanut butter, Nutella, Marmite, Vegemite, lemon curd, pâté
+W: 516 butter; 525 margarine; 530 cream cheese; 766 tahini [sesame paste]; 15594 honey [food]; 17747 liverwurst; 18292 dulce de leche; 18827 jam [preserve]; 18828 marmalade; 18829 peanut butter; 18830 Nutella; 18831 jelly [spread]; 18832 almond butter; 18833 cheese; 18834 hazelnut; 18835 Marmite; 18836 Vegemite; 18837 lemon curd; 18838 pâté; 18840 cashew butter; 18841 apple butter; 18842 cookie butter; 18843 Biscoff; 18844 rillettes; 18845 yeast extract; 18846 Bovril; 18847 fish paste; 18848 speculoos; 18849 braunschweiger; 18850 Promite; 18851 kaya; 18852 guava paste; 18853 fruit preserves; 65112 chocolate [cocoa]
+G: 18845 18835 18836; 18842 18843; 18831 18827
+
+T pickles_and_preserves | pickles and preserves
+W: 748 relish; 749 chutney; 845 kimchi; 960 confit; 17284 fruit leather; 17583 pickled onion; 18448 compote; 18797 piccalilli; 18827 jam [preserve]; 18828 marmalade; 18854 pickle [food]; 18856 gherkin [pickle]; 18857 sauerkraut; 18858 sweet; 18859 caper [pickled bud]; 18860 pickled beetroot; 18861 pickled herring; 18862 pickled ginger; 18863 gari [pickled ginger]; 18864 pickled egg; 18865 pickled peppers; 18866 cornichon; 18868 mango; 18869 preserved lemon; 18870 conserve; 18871 quince paste; 18872 membrillo; 18873 rollmop; 18874 giardiniera; 18875 curtido; 18876 umeboshi; 18877 tsukemono; 18878 achar; 18879 chow-chow; 18880 kasundi; 63521 dill [briny cucumber]; 65115 lime [Indian tangy]
+G: 18862 18863; 18871 18872
+
+T oils_and_vinegars | oils and vinegars | olive, sesame, canola, coconut, balsamic, malt, cider, rice vinegar
+W: 111 avocado; 351 coconut [fruit]; 360 olive [fruit]; 406 corn [vegetable]; 408 maize; 720 mustard; 904 sherry [wine]; 1696 sunflower; 16742 flaxseed; 17350 peanut [legume nut]; 17354 hazelnut [nut]; 17382 sesame; 17383 sesame seed; 17385 pumpkin seed; 17386 pepita [pumpkin seed]; 17486 perilla; 17531 soybean; 18881 vegetable; 18888 palm; 18893 truffle; 18895 linseed [cooking]; 18900 extra virgin (adjective); 18904 cider; 18905 apple cider vinegar; 18907 rice; 18909 distilled; 18911 black; 18912 champagne; 18913 coconut vinegar; 18914 verjuice; 18918 sake; 19645 red wine; 30307 walnut [nut]; 30470 safflower; 30677 hemp [plant]; 40099 canola; 56415 argan; 62960 balsamic [aged] (adjective); 62961 grapeseed; 62962 malt; 62963 rice bran; 63522 white [clear kitchen liquid]; 65120 Chinkiang; 67181 canola
+G: 406 408; 17382 17383; 17385 17386; 16742 18895; 18904 18905; 18911 65120
+
+T dishes | prepared dishes
+W: 660 lasagna; 668 risotto; 670 ramen; 795 pizza; 796 sandwich; 797 soup [liquid dish]; 798 salad [cold dish]; 799 curry; 800 sushi [rice and fish]; 801 taco; 802 burrito; 803 meatballs; 804 pancakes; 805 waffles; 806 fried rice; 807 nachos; 808 hot dog; 809 stew [dish]; 810 dumplings; 811 burger; 812 hamburger; 813 kebab; 815 mac and cheese; 817 fish and chips; 818 spaghetti bolognese; 820 meatloaf; 821 casserole [dish]; 822 stir-fry [dish]; 823 paella; 824 pad thai; 825 quiche; 826 quesadilla; 827 falafel; 828 samosa; 829 tempura; 830 pot roast [dish]; 831 roast dinner; 832 French toast; 833 moussaka; 834 goulash; 835 ratatouille; 836 shawarma; 837 tagine [dish]; 838 biryani; 839 dim sum; 840 poutine; 841 pierogi; 842 frittata; 843 gazpacho; 844 pho; 845 kimchi; 846 haggis; 847 borscht; 849 bangers and mash; 850 cassoulet; 851 bouillabaisse; 852 jollof rice; 853 bibimbap; 854 toad in the hole [dish]; 855 chili [dish]; 856 shakshuka; 857 rendang; 858 feijoada; 859 khachapuri; 860 cullen skink
+G: 811 812
+
+T soups | soups
+W: 110 tomato [fruit]; 392 potato [vegetable]; 403 pumpkin [vegetable]; 670 ramen; 767 miso [fermented paste]; 843 gazpacho; 844 pho; 847 borscht; 851 bouillabaisse; 860 cullen skink; 17527 lentil; 17545 split pea; 17828 clam chowder; 17847 lobster bisque; 18294 stracciatella; 18551 laksa; 18643 wonton; 18921 noodle; 18923 vegetable; 18924 broth; 18925 minestrone; 18926 chowder; 18933 cream of mushroom; 18934 bisque [soup]; 18936 tom yum; 18937 scotch broth; 18938 vichyssoise; 18939 mulligatawny; 18940 consommé; 18941 pozole; 18942 tom kha; 18944 cock-a-leekie; 18945 ribollita; 18946 avgolemono; 18947 caldo verde; 49986 egg drop; 62964 bird's nest [edible]; 62965 chicken noodle; 62966 French onion [soup]; 62967 hot and sour
+G: 18921 62965; 18926 17828; 18934 17847
+
+T stews | stews | goulash, chili, cassoulet, tagine, gumbo, bourguignon, stroganoff, hotpot
+W: 496 oxtail; 799 curry; 821 casserole [dish]; 830 pot roast [dish]; 834 goulash; 835 ratatouille; 837 tagine [dish]; 850 cassoulet; 855 chili [dish]; 857 rendang; 858 feijoada; 17702 osso buco; 17836 cioppino; 17837 gumbo; 17838 jambalaya; 18948 beef; 18949 chicken; 18950 vegetable; 18951 lamb; 18953 chili con carne; 18954 beef bourguignon; 18955 boeuf bourguignon; 18956 beef stroganoff; 18957 stroganoff; 18958 coq au vin; 18959 chicken cacciatore; 18961 hotpot; 18962 ragout; 18964 scouse [stew]; 18965 cholent; 18966 daube; 18967 navarin; 18968 bigos; 18969 carbonnade; 18970 étouffée; 18971 burgoo; 18972 stifado; 18973 pot-au-feu; 18974 blanquette; 63523 Brunswick [southern pork-and-corn pot]; 65132 fish [seafood]; 65133 Irish [lamb and potato]
+G: 18954 18955; 18957 18956; 855 18953
+
+T salads | salads
+W: 392 potato [vegetable]; 467 tuna; 518 egg [food from hens]; 652 pasta; 17872 coleslaw; 18978 side; 18979 chicken [dish]; 18980 spinach; 18981 tomato; 18984 macaroni; 18985 kale; 18986 taco; 18987 cucumber; 18988 beet; 18989 quinoa; 18995 tabbouleh; 18998 seaweed; 18999 couscous; 19000 fattoush; 19001 panzanella; 19002 Russian; 19003 larb; 19004 som tam; 19006 mesclun; 19007 ambrosia [salad]; 38130 Waldorf [salad]; 53228 caesar [dressing]; 53268 caprese; 62968 Cobb; 62969 green papaya; 62970 niçoise; 62971 Olivier [salad]; 62972 Shopska; 62973 three bean; 63365 wedge [iceberg lettuce]; 63526 Greek [feta and olive dish]; 64769 chef; 64770 garden; 64771 house; 65136 fruit [mixed fresh]
+
+T sandwiches | sandwiches
+W: 400 cucumber; 463 ham [cured meat]; 518 egg [food from hens]; 17830 lobster roll; 17842 tuna melt; 17866 pulled pork; 18010 grilled cheese; 18020 croque monsieur; 19012 chicken; 19014 BLT; 19015 PB&J; 19017 wrap [sandwich]; 19018 panini; 19019 gyro [food]; 19020 sloppy joe [sandwich]; 19024 grinder [sandwich]; 19026 finger; 19027 patty melt; 19028 Reuben; 19029 cheesesteak; 19030 philly cheesesteak; 19031 po' boy; 19032 banh mi; 19034 open sandwich; 19035 bacon butty; 19036 bacon; 19037 toastie; 19038 croque madame; 19039 monte cristo; 19040 muffuletta; 19041 chip butty; 19042 fish finger; 19043 french dip; 19044 bocadillo; 19045 smørrebrød; 19046 tramezzino; 19047 dagwood; 19048 katsu sando; 19049 chacarero; 63366 club [triple-decker]; 63367 Cuban [pressed pork and ham]; 63368 sub [long roll]
+G: 19029 19030; 19035 19036; 63368 19024; 19026 19042
+
+T fast_food | fast food
+W: 524 milkshake; 795 pizza; 801 taco; 802 burrito; 807 nachos; 808 hot dog; 812 hamburger; 817 fish and chips; 826 quesadilla; 17720 chicken wings; 18012 cheeseburger; 18319 soft serve; 19050 french fries; 19051 chicken nuggets; 19052 fried chicken; 19053 onion rings; 19054 Big Mac; 19055 corn dog; 19056 Whopper; 19057 Happy Meal; 19058 combo meal; 19059 kids meal; 19060 hash brown; 19061 double cheeseburger; 19062 mozzarella sticks; 19063 tater tots; 19064 popcorn chicken; 19065 chicken tenders; 19066 curly fries; 19067 value meal; 19068 fish sandwich; 19069 chili cheese fries; 19070 breakfast burrito; 19071 fountain drink; 19072 slider [burger]; 19073 McFlurry; 19074 footlong; 19075 Chalupa; 19076 Crunchwrap; 19077 supersize (verb)
+G: 802 19070; 18012 19061
+
+T breakfast_foods | breakfast foods
+W: 462 bacon; 464 sausage; 522 yogurt [cultured dairy]; 532 omelet; 555 bagel [bread]; 557 croissant; 558 muffin; 565 toast [bread]; 591 crumpet; 659 cereal; 672 granola; 691 muesli; 692 grits; 796 sandwich; 802 burrito; 804 pancakes; 805 waffles; 832 French toast; 842 frittata; 856 shakshuka; 978 breakfast cereal; 16678 eggs [food]; 17548 baked beans; 17748 black pudding; 17749 blood sausage; 17840 kedgeree; 17981 scrambled eggs; 17982 fried egg; 17985 eggs benedict; 17991 huevos rancheros; 18004 menemen; 18061 English muffin; 18572 congee [rice porridge]; 18573 rice porridge; 18574 jook; 18608 cornflakes; 18610 oatmeal [food]; 19078 hash browns; 19080 avocado toast; 19081 overnight oats; 19082 Pop-Tart; 19083 full English; 19084 biscuits and gravy; 19085 home fries; 19086 fry-up; 19087 smoothie bowl; 19088 steak and eggs; 19089 kippers; 19158 bubble and squeak; 20185 scrapple; 20218 idli; 53312 laverbread; 53446 ful medames; 53729 chilaquiles; 59623 upma; 59624 tattie scone; 59625 lorne sausage
+G: 659 978; 17748 17749; 18572 18574 18573; 16678 17981
+
+T british_morning_foods | british morning foods
+W: 462 bacon; 464 sausage; 565 toast [bread]; 591 crumpet; 17548 baked beans; 17748 black pudding; 17840 kedgeree; 19083 full English; 19086 fry-up; 19089 kippers; 19158 bubble and squeak; 53312 laverbread; 59624 tattie scone; 59625 lorne sausage
+
+T snacks | snacks
+W: 440 edamame; 3074 trail mix; 6418 popcorn; 16756 rice cakes; 16760 mixed nuts; 16764 granola bar; 16766 kale chips; 16769 seaweed; 16770 roasted chickpeas; 16775 rice crackers; 17272 banana chips; 17783 beef jerky; 17943 string cheese; 18021 cheese straws; 18357 gummy bears; 18383 chocolate bar; 19090 potato chips; 19092 pretzels; 19093 peanuts; 19094 crackers; 19095 tortilla chips; 19096 candy bar; 19097 cheese puffs; 19098 fruit; 19099 pork rinds; 19101 cheese sticks; 19102 Pringles; 19103 Doritos; 19104 Cheetos; 19105 pita chips; 19106 veggie straws; 19107 Cheez-It; 19108 Chex Mix; 19109 prawn crackers; 19110 Cracker Jack; 19111 bombay mix; 19112 Twiglets; 19113 wasabi peas; 19114 bhel puri; 19115 murukku
+G: 19096 18383
+
+T chip_flavors | chip flavors
+W: 152 chicken [bird]; 238 cheddar [cheese]; 526 sour cream; 716 rosemary [culinary herb]; 723 ketchup; 741 paprika; 750 wasabi; 845 kimchi; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 17583 pickled onion; 17725 roast chicken; 17831 shrimp cocktail; 18749 jalapeño; 18808 nacho cheese; 18835 Marmite; 18855 dill pickle; 19767 barbecue [grilled meat] (verb); 39037 sea salt; 39179 cajun [cuisine]; 53250 salt and vinegar; 53251 sour cream and onion; 53252 original; 53254 cheese and onion; 53255 smoky bacon; 53256 sweet chili; 53257 roast beef [flavour]; 53258 worcester sauce; 53259 Flamin' Hot; 53260 truffle [flavor]; 53261 lime and chili; 53262 steak and onion; 53263 honey bbq; 53264 chili cheese; 59415 salt and pepper [flavor]; 59626 Szechuan; 59627 Cajun squirrel; 59628 Chinese curry; 67229 plain [crisp flavor] (adjective)
+G: 152 17725; 526 53251
+
+T street_food | street food
+W: 604 ice cream [frozen dessert]; 638 churros; 654 noodles; 795 pizza; 801 taco; 808 hot dog; 810 dumplings; 811 burger; 812 hamburger; 813 kebab; 824 pad thai; 827 falafel; 828 samosa; 836 shawarma; 885 coconut water; 6418 popcorn; 17739 bratwurst; 17757 currywurst; 18069 arepa; 18313 shaved ice; 18649 momo; 19019 gyro [food]; 19032 banh mi; 19116 soft pretzel; 19117 crepe [pancake]; 19118 spring roll; 19119 funnel cake; 19120 roasted chestnuts; 19121 satay [skewered meat]; 19122 bao; 19123 empanada; 19124 doner kebab; 19125 arancini; 19126 elote; 19127 tamale; 19128 kettle corn; 19129 takoyaki; 19130 yakitori; 19131 pani puri; 19132 golgappa; 19133 vada pav; 19134 tteokbokki; 19135 chaat; 19136 dosa; 19137 stinky tofu; 19138 egg waffle; 19139 bubble waffle; 59629 fries
+G: 19131 19132; 811 812; 813 19124
+
+T potato_dishes | potato dishes | fries, mashed, hash browns, gratin, rosti, latkes, tater tots, gnocchi
+W: 681 gnocchi; 840 poutine; 841 pierogi; 18026 aligot; 19050 french fries; 19063 tater tots; 19066 curly fries; 19078 hash browns; 19085 home fries; 19140 mashed potatoes; 19141 baked; 19142 roast potatoes; 19144 scalloped potatoes; 19147 potato pancake; 19148 new potatoes; 19149 smashed potatoes; 19150 latke; 19151 waffle fries; 19152 shoestring fries; 19153 steak fries; 19155 dauphinoise potatoes; 19157 twice baked; 19158 bubble and squeak; 19159 patatas bravas; 19160 aloo gobi; 19162 rösti; 19164 colcannon; 19165 hasselback potatoes; 19166 duchess potatoes; 19167 fondant potatoes; 19169 champ [potato dish]; 19170 boxty; 19171 pommes anna; 20338 croquettes; 24629 wedges; 39159 chips [food]; 62974 gratin; 62975 kugel; 64772 skins; 65145 baked [oven roasted whole]; 65146 salad [cold mayo]
+G: 62974 19155; 65145 19157

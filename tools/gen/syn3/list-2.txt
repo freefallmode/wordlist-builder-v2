@@ -1,0 +1,386 @@
+T savory_pies | savory pies | shepherd's pie, pot pie, pork pie, quiche, pasty, empanada, tourtière, börek
+W: 460 pork; 825 quiche; 16670 meat; 18091 sausage roll; 18097 vol-au-vent; 19123 empanada; 19127 tamale; 19173 chicken pot pie; 19174 pot pie; 19175 shepherd's pie; 19176 cottage pie; 19178 steak; 19179 pasty [pie]; 19180 Cornish pasty; 19182 spanakopita; 19183 game; 19185 beef wellington; 19187 tourtière; 19189 börek; 19192 pie and mash; 19196 pithivier; 19197 coulibiac; 19198 pirozhki; 19199 kulebyaka; 19200 bridie; 19201 bierock; 19202 Runza; 19203 pastilla; 53254 cheese and onion; 62883 stargazy (adjective); 62976 chicken and leek; 62977 Melton Mowbray; 62978 steak and kidney; 65148 fish [creamy seafood]; 65150 scotch [mutton hand]
+G: 19174 19173; 19178 62978; 19179 19180
+
+T pizza_toppings | pizza toppings
+W: 96 pineapple; 110 tomato [fruit]; 152 chicken [bird]; 239 mozzarella; 241 parmesan; 242 feta; 251 ricotta; 393 onion [bulb vegetable]; 396 broccoli; 398 spinach [leafy green]; 404 garlic; 406 corn [vegetable]; 408 maize; 443 arugula; 462 bacon; 463 ham [cured meat]; 464 sausage; 473 ground beef; 482 anchovy; 518 egg [food from hens]; 713 basil [culinary herb]; 736 oregano; 746 pesto; 17562 red onion; 17645 mushroom [fungus]; 17740 chorizo; 17741 salami; 17742 pepperoni; 17776 prosciutto; 17777 pancetta; 17801 nduja; 17928 goat cheese; 18749 jalapeño; 18775 pepperoncini; 18859 caper [pickled bud]; 19244 extra cheese; 19245 green pepper; 19246 black olive; 19247 meatball; 19248 artichoke heart; 19249 sun-dried tomato
+G: 406 408
+
+T pancakes_of_the_world | pancakes of the world
+W: 18064 injera; 19117 crepe [pancake]; 19136 dosa; 19150 latke; 19250 pancake [food]; 19251 buttermilk; 19252 hotcake [pancake]; 19254 blini; 19255 crêpe suzette; 19257 scallion; 19258 cong you bing; 19259 Swedish; 19260 Chinese; 19261 buckwheat; 19262 okonomiyaki; 19263 dutch baby; 19264 drop scone; 19265 johnnycake; 19266 poffertjes; 19267 blintz; 19268 galette [crepe]; 19270 pannekoek; 19271 palatschinke; 19272 appam; 19273 uttapam; 19274 banh xeo; 19275 pajeon; 19276 jianbing; 19277 oladi; 19278 syrniki; 19279 ebelskiver; 19280 pikelet; 19281 socca; 19282 farinata; 19283 malpua; 19284 msemen; 19285 baghrir; 19286 kaiserschmarrn; 65156 potato [grated fried]
+G: 19257 19258
+
+T burger_toppings | burger toppings
+W: 96 pineapple; 110 tomato [fruit]; 111 avocado; 238 cheddar [cheese]; 240 brie; 393 onion [bulb vegetable]; 394 lettuce [vegetable]; 420 beet; 443 arugula; 462 bacon; 515 cheese [dairy food]; 720 mustard; 723 ketchup; 725 mayonnaise; 729 barbecue sauce; 732 salsa [sauce]; 748 relish; 769 aioli; 855 chili [dish]; 16768 guacamole; 17645 mushroom [fungus]; 17866 pulled pork; 17872 coleslaw; 17920 swiss cheese [cheese]; 17929 blue cheese [cheese]; 17942 american cheese; 17952 pepper jack; 17982 fried egg; 18749 jalapeño; 18829 peanut butter; 18854 pickle [food]; 19287 grilled onion; 19288 special sauce; 19289 onion ring; 19290 burger sauce; 19291 caramelized onion; 19292 thousand island; 19293 gruyère; 19294 alfalfa sprouts; 19295 smoked gouda
+G: 393 19287 19291; 515 17920 17929 17942
+
+T asian_dishes | asian dishes
+W: 670 ramen; 799 curry; 800 sushi [rice and fish]; 806 fried rice; 810 dumplings; 822 stir-fry [dish]; 824 pad thai; 828 samosa; 829 tempura; 838 biryani; 839 dim sum; 844 pho; 845 kimchi; 853 bibimbap; 857 rendang
+
+T european_dishes | european dishes
+W: 660 lasagna; 668 risotto; 817 fish and chips; 818 spaghetti bolognese; 823 paella; 825 quiche; 832 French toast; 833 moussaka; 834 goulash; 835 ratatouille; 841 pierogi; 842 frittata; 843 gazpacho; 846 haggis; 847 borscht; 849 bangers and mash; 850 cassoulet; 851 bouillabaisse; 854 toad in the hole [dish]; 859 khachapuri; 860 cullen skink
+
+T sandwich_fillings | sandwich fillings | what goes between two slices of bread
+W: 110 tomato [fruit]; 152 chicken [bird]; 156 turkey [bird]; 394 lettuce [vegetable]; 400 cucumber; 462 bacon; 463 ham [cured meat]; 467 tuna; 515 cheese [dairy food]; 518 egg [food from hens]; 18827 jam [preserve]; 18829 peanut butter
+
+T salad_ingredients | salad ingredients | things that go in a salad
+W: 110 tomato [fruit]; 360 olive [fruit]; 391 carrot [vegetable]; 393 onion [bulb vegetable]; 394 lettuce [vegetable]; 398 spinach [leafy green]; 400 cucumber; 401 celery; 405 radish; 722 pepper [spice]; 66178 crouton
+
+T italian_food | italian food
+W: 588 focaccia; 589 ciabatta; 623 gelato; 624 tiramisu; 636 panna cotta; 655 spaghetti [long pasta]; 660 lasagna; 663 ravioli; 668 risotto; 681 gnocchi; 685 polenta; 710 trofie; 746 pesto; 795 pizza; 17702 osso buco; 17773 cotechino; 17776 prosciutto; 17786 bresaola; 17790 guanciale; 17791 lardo; 17801 nduja; 17853 fritto misto; 18029 cacio e pepe; 18079 cannoli; 18131 panettone; 18146 biscotti; 18164 pizzelle; 18317 affogato; 18321 cassata; 18414 zabaglione; 18500 strozzapreti; 18516 carbonara; 18517 spaghetti carbonara; 18518 bolognese [sauce]; 18519 ragù; 18527 amatriciana; 18820 bagna cauda; 18925 minestrone; 18945 ribollita; 19125 arancini; 19216 calzone; 53265 bruschetta; 53266 saltimbocca; 53268 caprese; 53269 vitello tonnato; 53270 porchetta; 59522 pizzoccheri; 59630 sfogliatella; 59631 lampredotto; 59632 bottarga; 59633 culurgiones
+G: 18516 18517; 18518 18519
+
+T pasta_meals | pasta meals
+W: 655 spaghetti [long pasta]; 660 lasagna; 663 ravioli; 681 gnocchi; 710 trofie; 18029 cacio e pepe; 18500 strozzapreti; 18516 carbonara; 18518 bolognese [sauce]; 18519 ragù; 18527 amatriciana; 59522 pizzoccheri; 59633 culurgiones
+
+T french_food | french food
+W: 556 baguette [bread]; 557 croissant; 590 brioche; 644 crème brûlée; 825 quiche; 835 ratatouille; 850 cassoulet; 851 bouillabaisse; 960 confit; 17727 foie gras; 17845 moules frites; 17989 soufflé; 18020 croque monsieur; 18025 tartiflette; 18026 aligot; 18088 kouign-amann; 18180 tarte tatin; 18428 clafoutis; 18838 pâté; 18844 rillettes; 18938 vichyssoise; 18954 beef bourguignon; 18955 boeuf bourguignon; 18958 coq au vin; 18967 navarin; 18973 pot-au-feu; 19038 croque madame; 19156 gratin dauphinois; 19281 socca; 20262 escargot; 53145 canelé; 53149 financier; 53203 rouille [sauce]; 53271 crêpe; 53272 steak frites; 53273 salade niçoise; 53274 blanquette de veau; 53275 tartare; 53276 andouillette; 53277 pissaladière; 53278 petit four; 59634 gougères; 59635 choucroute; 59636 flammekueche; 59637 pommes dauphine; 59638 brandade; 59639 cervelle de canut; 62982 onion soup
+G: 18954 18955
+
+T spanish_food | spanish food
+W: 250 manchego; 638 churros; 823 paella; 843 gazpacho; 906 horchata; 17740 chorizo; 17760 sobrasada; 17774 butifarra; 17780 serrano ham; 18003 tortilla española; 18410 flan [dessert]; 18798 romesco; 19123 empanada; 19159 patatas bravas; 19616 sangria [drink]; 53279 tapas; 53280 jamón ibérico; 53281 croquetas; 53282 pimientos de padrón; 53283 gambas al ajillo; 53284 albondigas; 53285 fabada; 53286 pulpo a la gallega; 53287 salmorejo; 53288 turrón; 53289 crema catalana; 53290 pan con tomate; 53291 calamares; 53292 morcilla; 53293 migas; 53294 pisto; 53295 ensaimada; 53296 tarta de santiago; 53297 fideuà; 53298 cocido madrileño; 53299 boquerones; 59640 ajoblanco; 59641 calçots; 59642 marmitako; 59643 txangurro; 59644 escalivada; 59645 papas arrugadas; 59646 gofio; 59647 zarangollo
+
+T british_food | british food | fish and chips, sunday roast, toad in the hole, scotch egg, crumpets
+W: 541 clotted cream; 639 trifle; 817 fish and chips; 846 haggis; 849 bangers and mash; 854 toad in the hole [dish]; 860 cullen skink; 17748 black pudding; 17749 blood sausage; 17750 cumberland sausage; 17840 kedgeree; 17863 stargazy pie; 17994 scotch egg; 18014 welsh rarebit; 18091 sausage roll; 18095 Chelsea bun; 18096 Eccles cake; 18181 Bakewell tart; 18194 banoffee pie; 18336 sticky toffee pudding; 18342 jam roly-poly; 19041 chip butty; 19083 full English; 19158 bubble and squeak; 19164 colcannon; 19175 shepherd's pie; 19176 cottage pie; 19177 pork pie; 19180 Cornish pasty; 19185 beef wellington; 19192 pie and mash; 20121 cream tea; 20122 Sunday roast; 20821 pease pudding; 53300 crumpets; 53301 yorkshire pudding; 53302 ploughman's lunch; 53303 scones; 53304 spotted dick; 53305 eton mess; 53306 lancashire hotpot; 53307 jellied eels; 53308 mushy peas; 53309 faggots; 53310 cranachan; 53311 bara brith; 53312 laverbread; 59484 kendal mint cake; 59648 stovies; 59649 clapshot; 59650 tattie scones; 59651 Forfar bridie; 59652 Arbroath smokie; 59653 cawl; 59654 haslet; 59655 lardy cake; 59656 Bedfordshire clanger
+G: 17748 17749
+
+T sweet_treats | british sweet treats
+W: 541 clotted cream; 639 trifle; 18095 Chelsea bun; 18096 Eccles cake; 18181 Bakewell tart; 18194 banoffee pie; 18336 sticky toffee pudding; 18342 jam roly-poly; 53303 scones; 53304 spotted dick; 53305 eton mess; 53310 cranachan; 53311 bara brith; 59484 kendal mint cake; 59655 lardy cake
+
+T scottish_dishes | scottish dishes
+W: 846 haggis; 860 cullen skink; 53310 cranachan; 59648 stovies; 59649 clapshot; 59650 tattie scones; 59651 Forfar bridie; 59652 Arbroath smokie
+
+T greek_food | greek food | moussaka, souvlaki, gyros, spanakopita, dolmades, pastitsio
+W: 242 feta; 248 halloumi; 637 baklava; 646 halva; 747 hummus; 833 moussaka; 17852 taramasalata; 18023 saganaki; 18422 loukoumades; 18427 galaktoboureko; 18541 pastitsio; 18800 tzatziki; 18821 skordalia; 18823 melitzanosalata; 18946 avgolemono; 18972 stifado; 18976 greek salad; 19182 spanakopita; 19734 ouzo; 20250 souvlaki; 53313 gyros; 53314 dolmades; 53315 keftedes; 53316 tiropita; 53317 kleftiko; 53318 gemista; 53319 fasolada; 53321 kalamata olives; 53322 bougatsa; 53323 kokoretsi; 53324 fava [dip]; 53325 gigantes; 53326 paximadia; 53327 koulourakia; 53901 tsipouro; 59657 trahana; 59658 revithada; 59659 mastiha; 59660 soutzoukakia; 59661 kataifi; 59662 loukaniko; 59663 kopanisti; 59664 tirokafteri; 59665 diples; 59666 rizogalo
+
+T german_food | german food | sauerkraut, pretzel, schnitzel, spätzle, strudel, sauerbraten
+W: 570 pretzel; 597 pumpernickel; 17739 bratwurst; 17747 liverwurst; 17756 weisswurst; 17757 currywurst; 17766 bockwurst; 18076 strudel; 18112 black forest cake; 18113 Black Forest gateau; 18130 stollen; 18161 lebkuchen; 18857 sauerkraut; 19162 rösti; 19286 kaiserschmarrn; 29342 schnitzel; 29351 frankfurter; 53328 spätzle; 53329 sauerbraten; 53330 rouladen; 53331 knödel; 53332 käsespätzle; 53333 kartoffelsalat; 53334 leberkäse; 53335 eisbein; 53336 schweinshaxe; 53337 maultaschen; 53338 bienenstich; 53339 königsberger klopse; 53340 reibekuchen; 53341 zwiebelkuchen; 53342 apfelstrudel; 53343 kartoffelpuffer; 53344 brezel; 53345 spekulatius; 53346 labskaus; 53347 obatzda; 53348 dampfnudel; 59667 grünkohl; 59668 rote grütze; 59669 mettwurst; 59670 flammkuchen; 59671 saumagen; 59672 handkäse; 59673 streuselkuchen; 59674 teewurst; 59675 sülze; 59676 himmel und erde
+G: 18112 18113
+
+T eastern_european_food | eastern european food | pierogi, borscht, goulash, kielbasa, blini, pelmeni
+W: 646 halva; 709 kasha; 834 goulash; 841 pierogi; 847 borscht; 912 kvass; 17744 kielbasa; 18651 pelmeni; 18825 ajvar [dip]; 18956 beef stroganoff; 18957 stroganoff; 18968 bigos; 19008 olivier salad; 19189 börek; 19198 pirozhki; 19199 kulebyaka; 19254 blini; 19278 syrniki; 19305 sarma; 20242 chicken Kiev; 53349 golabki; 53350 placek; 53351 shchi; 53352 solyanka; 53353 varenyky; 53354 paprikash; 53355 langos; 53356 chimney cake; 53357 mamaliga; 53358 halushky; 53359 cevapi; 53360 zurek; 53361 okroshka; 53362 draniki; 53363 paska; 53364 kolache; 53365 trdelnik; 53366 svickova; 59677 lecsó; 59678 sarmale; 59679 pljeskavica; 59680 kajmak; 59681 kutia; 59682 medovik; 59683 zacuscă; 59684 kolduny; 59685 holodets
+G: 18957 18956
+
+T turkish_food | turkish food
+W: 637 baklava; 813 kebab; 911 ayran; 17876 shish kebab; 18004 menemen; 18653 manti; 18826 cacik; 19124 doner kebab; 19189 börek; 19296 turkish coffee; 19297 dolma; 19298 raki; 19299 simit; 19300 lahmacun; 19301 pide; 19302 köfte; 19304 adana kebab; 19305 sarma; 19306 iskender; 19307 gözleme; 19309 imam bayildi; 19310 künefe; 19312 pilav; 19313 sucuk; 19314 helva; 19315 kaymak; 19316 ezme; 19317 sütlaç; 19319 karniyarik; 19320 hunkar begendi; 19321 pastirma; 19322 tulumba; 19323 lokma; 19324 su boregi; 19325 şalgam; 19326 boza; 19327 cig kofte; 19328 kebap; 26960 çay; 26961 lokum
+
+T turkish_breakfast | turkish breakfast | simit, menemen, sucuk, beyaz peynir, kaymak, gözleme, çay
+W: 766 tahini [sesame paste]; 15594 honey [food]; 16580 Turkish tea; 18004 menemen; 19189 börek; 19296 turkish coffee; 19299 simit; 19307 gözleme; 19313 sucuk; 19315 kaymak; 20304 olives; 26960 çay; 53139 bazlama; 53367 beyaz peynir; 53368 pekmez; 53369 pastırma; 53370 sigara böreği; 53371 kuymak; 53372 tulum peyniri; 53373 bal kaymak; 53374 poğaça; 53375 mıhlama; 53376 reçel; 53377 sahanda yumurta; 53378 açma; 59686 pişi; 59687 çılbır; 59688 kaşar; 59689 lor peyniri; 59690 otlu peynir; 59691 çökelek; 59692 tereyağı; 59693 sucuklu yumurta
+
+T kebab_types | kebab types | adana, urfa, iskender, döner, şiş, beyti, cağ kebab
+W: 836 shawarma; 17876 shish; 19124 doner; 19304 adana; 19306 iskender; 19329 kofta; 20250 souvlaki; 53380 urfa; 53381 beyti; 53384 tikka; 53385 gyro [kebab]; 53386 patlıcan; 53387 testi; 53388 tavuk şiş; 53389 kuzu şiş; 53392 alinazik; 53393 ciğer şiş; 53394 şiş köfte; 53395 inegöl köfte; 53396 kuşbaşı; 59695 kağıt kebabı; 59696 çöp şiş; 59698 yoğurtlu; 59699 tas kebabı; 59700 orman kebabı; 59701 kuyu kebabı; 62983 Antep; 62984 cağ; 62985 chapli; 62986 seekh; 62987 shami; 62989 Tokat; 67050 Bursa
+
+T middle_eastern_food | middle eastern food
+W: 248 halloumi; 550 labneh; 578 pita; 637 baklava; 646 halva; 664 couscous; 695 bulgur; 708 freekeh; 747 hummus; 766 tahini [sesame paste]; 780 sumac; 783 harissa; 813 kebab; 827 falafel; 836 shawarma; 856 shakshuka; 15593 rose water; 15596 mint tea; 18063 lavash; 18417 knafeh; 18592 mujaddara; 18593 maqluba; 18706 za'atar; 18736 baharat; 18811 baba ganoush; 18995 tabbouleh; 19000 fattoush; 19297 dolma; 19329 kofta; 19330 arabic coffee; 19331 kibbeh; 19332 pomegranate molasses; 19333 fatteh; 19334 mansaf; 19335 manakish; 19336 sabich; 19337 musakhan; 19338 basbousa; 19339 umm ali; 19340 shish taouk
+
+T meze | meze | small shared plates: hummus, tabbouleh, dolma, muhammara, falafel
+W: 248 halloumi; 550 labneh; 578 pita; 747 hummus; 827 falafel; 17852 taramasalata; 18800 tzatziki; 18811 baba ganoush; 18822 muhammara; 18995 tabbouleh; 19000 fattoush; 19297 dolma; 19316 ezme; 19331 kibbeh; 20304 olives; 53325 gigantes; 53370 sigara böreği; 53398 stuffed vine leaves; 53399 haydari; 53400 cacık; 53401 pickled turnips; 53402 shanklish; 53403 mutabbal; 53404 sambousek; 53405 warak enab; 53406 tarator; 53407 şakşuka; 53408 fried calamari; 59702 kısır; 59703 çiğ köfte; 59704 midye dolma; 59705 topik; 59706 girit ezmesi; 59707 atom [meze]; 59708 arnavut ciğeri; 59709 yalancı dolma
+
+T persian_food | persian food | tahdig, ghormeh sabzi, fesenjan, koobideh, ash reshteh
+W: 53135 sangak; 53136 barbari; 53409 tahdig; 53410 ghormeh sabzi; 53411 fesenjan; 53412 koobideh; 53413 ash reshteh; 53414 joojeh kabab; 53415 zereshk polo; 53416 baghali polo; 53417 kuku sabzi; 53418 mirza ghasemi; 53419 kashk-e bademjan; 53420 gheymeh; 53421 dizi [dish]; 53422 tahchin; 53423 sabzi polo; 53424 barg kabab; 53425 faloodeh; 53426 bastani sonnati; 53427 sholeh zard; 53428 gaz [nougat]; 53429 sohan; 53430 doogh; 53431 halim; 53432 abgoosht; 53433 mast-o-khiar; 53434 kalam polo; 53435 chelo kabab; 53436 saffron rice; 53437 shirazi salad; 53438 ranginak; 59710 torshi; 59711 sekanjabin; 59712 kashk; 59713 albaloo polo; 59714 reshteh polo; 59715 khoresh karafs; 59716 kufteh tabrizi; 59717 lubia polo; 59718 nargesi; 59719 dami gojeh
+
+T african_food | african food
+W: 369 plantain [fruit]; 664 couscous; 783 harissa; 827 falafel; 837 tagine [dish]; 852 jollof rice; 856 shakshuka; 15596 mint tea; 17754 merguez; 17781 biltong; 18064 injera; 18739 berbere; 18768 piri piri; 19203 pastilla; 19341 fufu; 19342 bobotie; 19343 boerewors; 19344 bunny chow; 19345 ugali; 19346 braai; 19347 rooibos [tea]; 19348 melktert; 19349 groundnut stew; 19350 harira; 19351 doro wat; 19352 nyama choma; 19353 suya; 19354 koeksister; 19355 egusi; 19356 moi moi; 19357 pap [maize porridge]; 19358 chakalaka; 19359 sadza; 19360 tibs; 19361 kitfo; 19362 mandazi; 19363 brik; 19364 chermoula; 19365 mechoui; 19366 kenkey; 19367 banku; 19368 attieke; 19369 thieboudienne; 19370 chicken yassa
+
+T north_african_food | north african food | couscous, tagine, harira, shakshuka, merguez, b'stilla, brik
+W: 637 baklava; 664 couscous; 783 harissa; 827 falafel; 837 tagine [dish]; 856 shakshuka; 15596 mint tea; 17754 merguez; 18707 ras el hanout; 19203 pastilla; 19284 msemen; 19350 harira; 19363 brik; 19365 mechoui; 53439 b'stilla; 53440 preserved lemons; 53441 kefta; 53442 chakchouka; 53443 makroud; 53444 zaalouk; 53445 bissara; 53446 ful medames; 53447 koshari; 53448 molokhia; 53449 lablabi; 53450 rfissa; 53451 chebakia; 53452 ghriba; 53453 mechouia; 53454 bourek; 59720 briouat; 59721 sfenj; 59722 mhajeb; 59723 kesra; 59724 chorba; 59725 bsisa; 59726 tangia; 59727 mrouzia; 59728 tfaya; 59729 bazin
+
+T west_african_food | west african food | jollof rice, fufu, egusi, suya, banku, puff-puff, moi moi
+W: 369 plantain [fruit]; 852 jollof rice; 19341 fufu; 19349 groundnut stew; 19353 suya; 19355 egusi; 19356 moi moi; 19366 kenkey; 19367 banku; 19368 attieke; 19369 thieboudienne; 53455 puff-puff; 53456 kelewele; 53457 waakye; 53458 akara; 53459 pounded yam; 53460 ogbono; 53461 eba; 53462 peanut stew; 53463 yassa; 53464 mafe; 53465 chin chin; 53466 pepper soup; 53467 fried plantain; 53468 okra soup; 53469 red red; 53470 gari [cassava]; 53471 efo riro; 53472 kuli-kuli; 53473 palm wine; 59730 tuo zaafi; 59731 ewa agoyin; 59732 gbegiri; 59733 ofada rice; 59734 banga soup; 59735 afang soup; 59736 akple; 59737 dawadawa; 59738 alloco; 59739 domoda; 59740 benachin; 59741 foutou; 59742 bofrot
+G: 369 53467
+
+T east_african_food | east african food | injera, ugali, nyama choma, sukuma wiki, mandazi, kitfo
+W: 594 chapati; 595 roti; 697 pilaf; 828 samosa; 18064 injera; 18739 berbere; 19345 ugali; 19351 doro wat; 19352 nyama choma; 19360 tibs; 19361 kitfo; 19362 mandazi; 53474 sukuma wiki; 53475 githeri; 53476 mukimo; 53477 irio; 53478 matoke; 53479 posho; 53480 mishkaki; 53481 chipsi mayai; 53482 shiro; 53483 gomen; 53484 kocho; 53485 dabo; 53486 mahamri; 53487 kachumbari; 53488 maharagwe; 53489 luwombo; 53490 injera firfir; 53491 tej; 53492 mursik; 57879 zigni; 57880 misir wat; 59743 kuku paka; 59744 wali wa nazi; 59745 bhajia; 59746 urojo; 59747 mkate mayai; 59748 kik alicha; 59749 dulet; 59750 canjeero; 59751 suqaar; 59752 sambusa
+G: 594 595
+
+T south_african_food | south african food | bobotie, biltong, boerewors, bunny chow, chakalaka, pap
+W: 17781 biltong; 18768 piri piri; 19270 pannekoek; 19342 bobotie; 19343 boerewors; 19344 bunny chow; 19346 braai; 19347 rooibos [tea]; 19348 melktert; 19354 koeksister; 19357 pap [maize porridge]; 19358 chakalaka; 20260 sosatie; 53493 potjiekos; 53494 vetkoek; 53495 rusks [biscuit]; 53496 droëwors; 53497 malva pudding; 53498 bredie; 53499 gatsby [sandwich]; 53500 samp and beans; 53501 umngqusho; 53502 amasi; 53503 snoek; 53504 walkie talkies; 53505 roosterkoek; 53506 hertzoggie; 53507 mopane worms; 53508 amarula; 53509 mielie; 53510 mageu; 59753 kota [sandwich]; 59754 magwinya; 59755 mogodu; 59756 morogo; 59757 phutu; 59758 melkkos; 59759 mosbolletjies; 59760 pampoenkoekies; 59761 frikkadel; 59762 denningvleis; 59763 skilpadjies; 59764 mebos
+
+T asian_food | asian food
+W: 254 paneer; 572 naan; 594 chapati; 595 roti; 670 ramen; 688 udon; 703 soba; 799 curry; 800 sushi [rice and fish]; 806 fried rice; 810 dumplings; 824 pad thai; 828 samosa; 829 tempura; 838 biryani; 839 dim sum; 844 pho; 845 kimchi; 853 bibimbap; 857 rendang; 899 lassi; 17731 peking duck; 17832 sashimi; 18544 lo mein; 18545 chow mein; 18551 laksa; 18580 nasi goreng; 18641 gyoza; 18799 sambal; 19003 larb; 19118 spring roll; 19121 satay [skewered meat]; 19262 okonomiyaki; 19371 tofu; 19372 butter chicken; 19373 kung pao chicken; 19374 sweet and sour pork; 19375 hot pot [dish]; 19376 chicken tikka masala; 19377 mapo tofu; 19378 adobo; 19379 katsu; 19380 tandoori chicken; 19381 dal; 19382 vindaloo; 19383 korma; 53193 khao soi; 53578 bulgogi; 53622 lumpia; 53625 balut; 59765 gado-gado; 59766 kaya toast
+G: 594 595
+
+T indian_food | indian food
+W: 233 chai; 254 paneer; 572 naan; 594 chapati; 595 roti; 648 gulab jamun; 749 chutney; 799 curry; 813 kebab; 828 samosa; 838 biryani; 899 lassi; 5168 Pongal; 18068 paratha; 18813 raita; 19114 bhel puri; 19131 pani puri; 19132 golgappa; 19133 vada pav; 19160 aloo gobi; 19273 uttapam; 19329 kofta; 19372 butter chicken; 19380 tandoori chicken; 19381 dal; 19382 vindaloo; 19383 korma; 20218 idli; 20226 pakora; 39178 tikka masala; 53138 kulcha; 53141 pappadum; 53183 sheer khurma; 53511 masala dosa; 53512 saag paneer; 53513 bhaji; 53514 rogan josh; 53515 chana masala; 53516 pav bhaji; 53517 rasam; 53518 thali; 53519 dhokla; 53520 jalfrezi; 53521 madras [curry]; 53522 tadka dal; 59410 sambar [dish]; 59555 bisi bele bath; 59767 litti chokha; 59768 pesarattu; 59769 puran poli; 59770 sarson ka saag; 59771 undhiyu; 59772 thepla; 59773 avial; 59774 kadhi; 59775 dal baati churma; 59776 gatte ki sabzi
+G: 594 595; 19131 19132
+
+T curries | curries
+W: 799 curry; 19160 aloo gobi; 19372 butter chicken; 19382 vindaloo; 19383 korma; 39178 tikka masala; 53512 saag paneer; 53514 rogan josh; 53515 chana masala; 53520 jalfrezi; 53521 madras [curry]
+
+T street_snacks | indian street snacks
+W: 828 samosa; 19114 bhel puri; 19131 pani puri; 19132 golgappa; 19133 vada pav; 20226 pakora; 53513 bhaji; 53516 pav bhaji; 53519 dhokla
+
+T south_indian_dishes | south indian dishes
+W: 5168 Pongal; 19273 uttapam; 20218 idli; 53511 masala dosa; 53517 rasam; 59410 sambar [dish]; 59555 bisi bele bath; 59768 pesarattu; 59773 avial
+
+T chinese_food | chinese food
+W: 806 fried rice; 810 dumplings; 839 dim sum; 17731 peking duck; 17992 egg drop soup; 18007 century egg; 18147 fortune cookie; 18544 lo mein; 18545 chow mein; 18548 dan dan noodles; 18572 congee [rice porridge]; 18573 rice porridge; 18574 jook; 18643 wonton; 18645 xiaolongbao; 18646 soup dumpling; 18647 har gow; 18648 siu mai; 18666 tangyuan; 18935 hot and sour soup; 18943 bird's nest soup; 19118 spring roll; 19122 bao; 19276 jianbing; 19373 kung pao chicken; 19374 sweet and sour pork; 19375 hot pot [dish]; 19377 mapo tofu; 29461 chop suey; 37529 Lion's Head; 53523 egg roll; 53524 general tso's chicken; 53525 char siu; 53526 orange chicken; 53527 beef and broccoli; 53528 sesame chicken; 53529 moo shu pork; 53530 twice-cooked pork; 53531 hainanese chicken; 53532 zongzi; 53533 mooncake; 53534 cheung fun; 53535 crispy duck; 59777 dongpo pork; 59778 zhajiangmian; 59779 liangpi; 59780 red braised pork; 59781 drunken chicken; 59782 tea eggs; 59783 chicken feet; 59784 ants climbing a tree
+G: 18645 18646; 18572 18574 18573
+
+T yum_cha_dishes | yum cha dishes
+W: 810 dumplings; 18643 wonton; 18645 xiaolongbao; 18646 soup dumpling; 18647 har gow; 18648 siu mai; 19118 spring roll; 19122 bao; 53525 char siu; 53534 cheung fun
+
+T takeaway_orders | chinese takeaway orders
+W: 806 fried rice; 18147 fortune cookie; 18544 lo mein; 18545 chow mein; 18935 hot and sour soup; 19373 kung pao chicken; 19374 sweet and sour pork; 29461 chop suey; 53523 egg roll; 53524 general tso's chicken; 53526 orange chicken; 53527 beef and broccoli; 53528 sesame chicken; 53529 moo shu pork; 53535 crispy duck
+
+T japanese_food | japanese food
+W: 440 edamame; 670 ramen; 688 udon; 703 soba; 750 wasabi; 800 sushi [rice and fish]; 829 tempura; 17832 sashimi; 17995 tamagoyaki; 18009 chawanmushi; 18549 yakisoba; 18576 onigiri; 18641 gyoza; 18744 furikake; 18929 miso soup; 19129 takoyaki; 19130 yakitori; 19262 okonomiyaki; 19931 bento; 20217 natto; 20230 tonkatsu [breaded cutlet]; 20233 karaage; 29452 teriyaki; 39186 dashi; 53536 katsu curry; 53537 sukiyaki; 53538 shabu-shabu; 53539 unagi; 53540 oyakodon; 53541 gyudon
+
+T japanese_sweets | japanese sweets
+W: 641 mochi; 18324 kakigori; 18423 dorayaki; 18424 taiyaki; 18665 dango; 53542 daifuku; 53543 anmitsu; 53544 yokan; 53545 wagashi; 53546 manju; 53547 castella; 53548 red bean paste; 53549 anko; 53550 warabimochi; 53551 senbei; 53552 melon pan; 53553 imagawayaki; 53554 matcha ice cream; 53555 Pocky; 53556 konpeito; 53557 mitarashi dango; 53558 monaka
+G: 53548 53549
+
+T sushi_types | sushi types | nigiri, maki, sashimi, temaki, uramaki, chirashi, inari
+W: 17832 sashimi; 19448 california roll; 53559 nigiri; 53560 maki; 53561 temaki; 53562 uramaki; 53563 chirashi; 53564 inari [sushi]; 53565 hand roll; 53566 futomaki; 53567 hosomaki; 53568 gunkan; 53569 oshizushi; 53570 narezushi; 53571 spicy tuna roll; 53572 dragon roll; 53573 rainbow roll; 53574 philadelphia roll; 53575 tekka maki; 59785 makizushi; 59786 nigirizushi; 59788 kappa maki; 59789 funazushi; 59790 hakozushi; 59791 sasazushi; 59792 tamago nigiri; 61815 temari; 62990 chakin
+G: 53559 59792
+
+T korean_food | korean food | kimchi, bibimbap, bulgogi, tteokbokki, japchae, kimbap
+W: 791 gochujang; 845 kimchi; 853 bibimbap; 18326 bingsu; 18557 japchae; 18570 naengmyeon; 18594 kimbap; 18650 mandu; 19134 tteokbokki; 19275 pajeon; 20222 doenjang; 53192 jajangmyeon; 53578 bulgogi; 53579 Korean BBQ; 53580 galbi; 53581 sundubu jjigae; 53582 kimchi jjigae; 53583 samgyeopsal; 53584 banchan; 53585 gochugaru; 53586 dakgalbi; 53587 soondae; 53588 hotteok; 53589 Korean fried chicken; 53590 tteok; 53591 samgyetang; 65160 yangnyeom chicken
+G: 65160 53589
+
+T thai_food | thai food
+W: 758 lemongrass; 768 fish sauce; 824 pad thai; 18577 sticky rice; 18936 tom yum; 19003 larb; 19004 som tam; 19121 satay [skewered meat]; 20323 spring rolls; 21133 galangal; 53184 pad see ew; 53188 drunken noodles; 53193 khao soi; 53592 green curry; 53593 red curry; 53594 tom kha gai; 53595 massaman curry; 53596 panang curry; 53597 papaya salad; 53598 pad kra pao; 53599 mango sticky rice; 53600 khao pad; 53601 moo ping; 53602 nam prik; 53603 gai yang; 53604 tod mun pla; 53605 yum woon sen; 62991 horapha; 62992 cha yen
+
+T vietnamese_food | vietnamese food | pho, banh mi, goi cuon, bun cha, com tam, banh xeo
+W: 844 pho; 19032 banh mi; 19274 banh xeo; 53194 bun bo hue; 53223 nuoc cham; 53606 goi cuon; 53607 bun cha; 53608 com tam; 53609 summer rolls; 53610 cao lau; 53611 cha gio; 53612 banh cuon; 53613 bun rieu; 53614 ca phe sua da; 53615 hu tieu; 53616 mi quang; 53617 banh bao; 53618 canh chua; 53619 nem nuong; 59539 banh canh; 59793 banh khot; 59794 banh tet; 59795 banh beo; 59796 bo kho; 59797 cha ca; 59798 nem chua; 59799 xoi; 59800 bun mam; 59801 bo la lot; 59802 chao long; 59803 bun thit nuong
+
+T filipino_food | filipino food | adobo, sinigang, lechon, lumpia, pancit, sisig, kare-kare
+W: 17167 calamansi; 17168 calamondin; 18067 pandesal; 18301 ube; 18325 halo-halo; 18426 bibingka; 18552 pancit; 19378 adobo; 53620 sinigang; 53621 lechon; 53622 lumpia; 53623 sisig; 53624 kare-kare; 53625 balut; 53626 tapsilog; 53627 longganisa; 53628 tocino; 53629 puto; 53630 leche flan; 53631 ube halaya; 53632 turon; 53633 dinuguan; 53634 bulalo; 53635 pinakbet; 53636 lugaw; 53637 kinilaw; 53638 sinangag; 53639 taho
+G: 17167 17168
+
+T oceanian_food | oceanian food
+W: 99 kiwifruit; 351 coconut [fruit]; 402 sweet potato [vegetable]; 461 lamb [meat]; 499 crayfish; 507 abalone; 640 pavlova; 817 fish and chips; 1277 barramundi; 10732 damper [instrument]; 17204 breadfruit; 17357 macadamia; 17441 taro; 18091 sausage roll; 18127 lamington; 18159 Anzac biscuit; 18836 Vegemite; 19172 meat pie; 19384 Tim Tam; 19385 Milo [drink]; 19386 kangaroo meat; 19387 poke [dish]; 19388 sausage sizzle; 19389 witchetty grub; 19390 fairy bread; 19391 chicken parmigiana; 19392 hangi; 19394 hokey pokey [ice cream]; 19395 whitebait fritter; 19396 Chiko Roll; 19397 dim sim; 19398 green-lipped mussel; 19399 loco moco; 19400 kalua pork; 19401 spam musubi; 19402 poi [taro paste]; 19403 pineapple lump; 19404 afghan biscuit; 19405 toheroa; 19406 lau lau; 19407 haupia; 19408 kokoda; 19409 palusami
+
+T australian_food | australian food | lamington, pavlova, meat pie, damper, anzac biscuit, fairy bread
+W: 591 crumpet; 640 pavlova; 1277 barramundi; 18091 sausage roll; 18127 lamington; 18159 Anzac biscuit; 18836 Vegemite; 19172 meat pie; 19384 Tim Tam; 19385 Milo [drink]; 19388 sausage sizzle; 19390 fairy bread; 19391 chicken parmigiana; 19396 Chiko Roll; 20267 peach melba; 27486 snag [sausage]; 48557 damper [bread]; 53640 kangaroo steak; 53641 balmain bug; 53642 Golden Gaytime [ice cream]; 53643 Cherry Ripe; 53644 musk sticks; 53645 vanilla slice; 53646 lolly cake; 53647 Weet-Bix; 53648 Arnott's Shapes
+
+T bush_tucker | bush tucker | Australian native foods: witchetty grub, wattleseed, finger lime, quandong
+W: 499 crayfish; 984 kangaroo; 1095 emu [bird]; 1138 crocodile; 15641 lemon myrtle; 15647 Kakadu plum; 17169 finger lime; 17357 macadamia; 17409 wattleseed; 19389 witchetty grub; 53649 quandong; 53650 bunya nut; 53651 warrigal greens; 53653 davidson plum; 53654 riberry; 53655 pepperberry; 53656 yam daisy; 53657 honey ant; 53658 bogong moth; 53659 mulga seed; 53660 sea celery; 53661 desert raisin; 53663 billy tea; 62993 akudjura; 65161 sugarbag [native bee honey]
+
+T pacific_islands_food | pacific islands food | taro, poi, kokoda, palusami, breadfruit, kalua pig, umu
+W: 96 pineapple; 369 plantain [fruit]; 402 sweet potato [vegetable]; 435 cassava [root crop]; 8873 coconut crab; 15639 kava; 17204 breadfruit; 17441 taro; 19387 poke [dish]; 19392 hangi; 19399 loco moco; 19401 spam musubi; 19402 poi [taro paste]; 19406 lau lau; 19407 haupia; 19408 kokoda; 19409 palusami; 53664 kalua pig; 53665 umu; 53666 coconut cream; 53667 lu sipi; 53668 oka; 53669 panipopo; 53670 sapasui; 53671 rourou; 53672 pani keke; 53673 lovo
+
+T south_american_food | south american food
+W: 226 coffee [drink]; 392 potato [vegetable]; 465 steak; 665 quinoa [grain]; 784 chimichurri; 858 feijoada; 961 java [coffee]; 13914 caipirinha; 17839 ceviche; 18069 arepa; 18292 dulce de leche; 18412 tres leches cake; 18420 brigadeiro; 18575 rice and beans; 19123 empanada; 19410 asado; 19411 churrasco; 19412 tapioca [starch]; 19413 açaí bowl; 19415 pisco sour; 19416 mate [drink]; 19417 pão de queijo; 19419 alfajor; 19420 lomo saltado; 19421 milanesa; 19422 yuca; 19423 guarana; 19424 cachaça; 19426 anticuchos; 19427 choripan; 19428 moqueca; 19429 coxinha; 19430 sancocho; 19431 aji amarillo; 19432 cuy; 19433 locro; 19434 humita; 19435 farofa; 19436 bandeja paisa; 19437 cachapa; 19438 provoleta; 19439 matambre; 19440 bife de chorizo; 19441 tiradito; 19442 causa [potato dish]
+G: 226 961
+
+T peruvian_food | peruvian food | ceviche, lomo saltado, anticuchos, causa, ají de gallina
+W: 665 quinoa [grain]; 17839 ceviche; 18419 alfajores; 18578 arroz con pollo; 19415 pisco sour; 19420 lomo saltado; 19426 anticuchos; 19431 aji amarillo; 19432 cuy; 19441 tiradito; 19442 causa [potato dish]; 19555 Inca Kola; 53674 ají de gallina; 53675 papa a la huancaína; 53676 rocoto relleno; 53677 chicha morada; 53678 pollo a la brasa; 53679 tacu tacu; 53680 picarones; 53681 chifa; 53682 chuño; 53683 pachamanca; 53684 suspiro limeño; 53685 choclo; 53686 lúcuma
+
+T brazilian_food | brazilian food | feijoada, pão de queijo, coxinha, moqueca, farofa, açaí
+W: 858 feijoada; 13914 caipirinha; 17696 picanha; 18420 brigadeiro; 19411 churrasco; 19412 tapioca [starch]; 19417 pão de queijo; 19424 cachaça; 19428 moqueca; 19429 coxinha; 19435 farofa; 53687 açaí; 53688 pastel [snack]; 53689 vatapá; 53690 acarajé; 53691 guaraná; 53692 rodízio; 53693 pamonha; 53694 quindim; 53695 beijinho; 53696 linguiça; 53697 galinhada; 53698 mandioca; 53699 empadão; 53700 paçoca; 57906 cocada; 57913 canjica; 59804 tacacá; 59805 baião de dois; 59806 pirão; 59807 caruru; 59808 bobó de camarão; 59809 feijão tropeiro; 59810 maniçoba
+
+T argentinian_food | argentinian food | asado, empanadas, chimichurri, milanesa, choripán, locro
+W: 784 chimichurri; 18292 dulce de leche; 18419 alfajores; 19410 asado; 19416 mate [drink]; 19421 milanesa; 19433 locro; 19434 humita; 19438 provoleta; 19439 matambre; 19440 bife de chorizo; 53292 morcilla; 53701 empanadas; 53702 choripán; 53703 parrilla; 53704 fainá; 53705 medialunas; 53706 tarta pascualina; 53707 revuelto gramajo; 53708 vitel toné; 53709 chinchulines; 53710 fernet con coca; 53711 sandwich de miga; 53712 carbonada; 53713 pionono; 53714 mollejas
+
+T south_american_drinks | south american drinks | non-alcoholic: mate, chicha morada, Inca Kola, guaraná
+W: 17668 chicha; 19416 mate [drink]; 19555 Inca Kola; 19581 sugarcane juice; 53677 chicha morada; 53691 guaraná; 53715 tereré; 53716 Guaraná Antarctica; 53717 mocochinchi; 53718 api morado; 53719 colada morada; 53720 aguapanela; 53721 caldo de cana; 53722 emoliente; 53723 Colombian coffee; 53724 mazamorra morada; 53725 batido; 53726 Kola Real; 53727 mate de coca; 53728 maracuyá juice
+G: 53691 53716; 17668 53677
+
+T north_american_food | north american food
+W: 575 cornbread; 600 bannock; 808 hot dog; 812 hamburger; 815 mac and cheese; 820 meatloaf; 840 poutine; 17457 collard greens; 17674 brisket; 17828 clam chowder; 17830 lobster roll; 17836 cioppino; 17837 gumbo; 17838 jambalaya; 17866 pulled pork; 17892 s'mores; 18089 beignet; 18153 whoopie pie; 18168 apple pie; 18170 pumpkin pie; 18171 pecan pie; 18174 key lime pie; 18187 sweet potato pie; 18432 maple syrup; 18788 cranberry sauce; 19052 fried chicken; 19119 funnel cake; 19187 tourtière; 19265 johnnycake; 19443 brownies; 19444 barbecue ribs; 19445 buffalo wings; 19446 fajitas; 19447 enchiladas; 19448 california roll; 19449 tuna casserole; 19450 Twinkie; 19451 tex-mex [cuisine]; 19452 cobbler [dessert]; 19453 green bean casserole; 19454 crab cake; 19455 hush puppies; 19456 chicken fried steak; 19457 chimichanga; 19458 corn chowder; 19459 nanaimo bar; 20185 scrapple; 59811 frybread; 59812 butter tart
+
+T mexican_food | mexican food
+W: 571 tortilla; 638 churros; 732 salsa [sauce]; 787 mole [sauce]; 801 taco; 802 burrito; 807 nachos; 826 quesadilla; 906 horchata; 16768 guacamole; 17991 huevos rancheros; 18128 tres leches; 18749 jalapeño; 18807 pico de gallo; 18941 pozole; 19126 elote; 19127 tamale; 19446 fajitas; 19457 chimichanga; 19490 atole; 20221 tepache; 20239 enchilada; 20310 refried beans; 53144 tlayuda; 53729 chilaquiles; 53730 tostada; 53731 carnitas; 53732 al pastor; 53733 carne asada; 53734 barbacoa; 53735 menudo; 53736 sopes; 53737 cochinita pibil; 53738 chiles en nogada; 53739 birria; 53740 gordita; 59498 cajeta; 59813 tlacoyo; 59814 chapulines; 59815 huitlacoche; 59816 pambazo; 59817 esquites; 59818 cemita; 59819 capirotada
+
+T southern_food | southern food | US South: grits, fried chicken, hush puppies, collard greens, biscuits
+W: 433 okra; 575 cornbread; 692 grits; 1221 catfish [fish]; 17457 collard greens; 17755 boudin; 17793 country ham; 17837 gumbo; 17838 jambalaya; 17855 shrimp and grits; 17955 pimento cheese; 18089 beignet; 18171 pecan pie; 18184 chess pie; 18334 banana pudding; 18583 hoppin' John; 18879 chow-chow; 18963 brunswick stew; 18971 burgoo; 19031 po' boy; 19052 fried chicken; 19084 biscuits and gravy; 19455 hush puppies; 19456 chicken fried steak; 19498 sweet tea; 19628 mint julep; 19905 souse (verb); 25080 black-eyed peas; 29496 succotash; 53741 red velvet cake; 53742 crawfish boil; 53743 fried green tomatoes; 53744 chitlins; 53745 peach cobbler; 53746 livermush; 53747 redeye gravy; 53748 Moon Pie [snack]; 53749 pralines [candy]; 59820 pot likker; 59821 spoonbread; 59822 Frogmore stew; 59823 tomato pie; 59824 Lane cake
+
+T canadian_food | canadian food | poutine, butter tarts, nanaimo bars, tourtière, bannock
+W: 600 bannock; 840 poutine; 17795 back bacon; 17809 pemmican; 18432 maple syrup; 19187 tourtière; 19676 ice wine; 27554 caesar [cocktail]; 27558 Kraft Dinner; 27560 ketchup chips; 53750 butter tarts; 53751 nanaimo bars; 53752 Montreal bagel; 53753 smoked meat; 53754 beavertails; 53755 peameal bacon; 53756 Timbits; 53757 saskatoon berry; 53758 fiddleheads; 53759 Tim Hortons; 53760 Coffee Crisp; 53761 Halifax donair; 53762 flapper pie; 53763 pouding chômeur; 53764 maple taffy; 53765 Hawkins Cheezies; 53766 Jiggs dinner; 53767 bakeapple; 53768 Oh Henry [candy bar]
+
+T drinks | drinks
+W: 225 tea [drink]; 226 coffee [drink]; 227 hot chocolate; 228 cocoa; 514 milk [drink]; 524 milkshake; 861 water [liquid]; 862 juice [drink]; 863 lemonade; 864 smoothie; 865 cola; 866 iced tea; 867 soda [fizzy drink]; 873 Pepsi; 874 beer; 875 wine [alcoholic drink]; 876 champagne [drink]; 877 vodka; 878 rum [drink]; 879 sparkling water; 882 mineral water; 883 tonic water; 884 ginger ale; 885 coconut water; 886 energy drink; 887 eggnog; 888 root beer; 889 Red Bull; 890 squash [drink]; 891 whisky; 893 gin [drink]; 894 tequila; 895 brandy; 896 cocktail [drink]; 897 cider [alcoholic]; 898 kombucha; 899 lassi; 900 cordial; 901 prosecco; 902 sake [Japanese drink]; 903 mead; 904 sherry [wine]; 905 port [wine]; 906 horchata; 907 yerba mate; 908 absinthe; 909 vermouth; 910 schnapps; 911 ayran; 912 kvass; 913 baijiu; 961 java [coffee]; 963 cuppa; 965 vino; 966 bubbly; 967 fizz [champagne]; 968 brew [beer]; 969 brewski
+G: 227 228; 874 968 969; 226 961; 875 965; 225 963; 876 966 967
+
+T hot_drinks | hot drinks
+W: 225 tea [drink]; 226 coffee [drink]; 229 latte; 230 cappuccino; 231 espresso; 232 mocha [coffee]; 233 chai; 234 americano; 235 macchiato; 236 flat white; 237 matcha; 514 milk [drink]; 907 yerba mate; 961 java [coffee]; 963 cuppa; 15520 honey and lemon; 15564 herbal tea; 16741 green tea; 19296 turkish coffee; 19460 cocoa; 19461 peppermint tea; 19462 instant coffee; 19463 decaf; 19464 chai latte; 19465 filter coffee; 19466 drip coffee; 19467 cider; 19468 mulled wine; 19469 irish coffee; 19470 mulled cider; 19471 café au lait; 19473 Horlicks; 19474 Ovaltine; 19475 glühwein; 19477 cortado; 19478 doppio; 19479 ristretto; 19480 long black; 19481 butter tea; 19482 golden milk; 19484 red eye [coffee]; 19485 babyccino; 19486 lungo; 19487 piccolo [coffee]; 19488 salep; 19489 champurrado; 19490 atole; 19491 kopi luwak; 20818 wassail [drink]; 62994 buttered rum; 62995 toddy; 65163 chocolate [cocoa-based]
+G: 65163 19460; 226 961; 225 963; 233 19464; 19467 19470
+
+T teas | teas
+W: 233 chai; 237 matcha; 432 fennel; 514 milk [drink]; 718 ginger [spice root]; 898 kombucha; 907 yerba mate; 1715 jasmine [flower]; 1716 hibiscus; 1778 nettle; 1779 stinging nettle; 15564 herbal; 16741 green; 18360 peppermint [herb]; 19347 rooibos [tea]; 19492 black; 19493 lemon; 19494 Earl Grey; 19495 English breakfast; 19496 chamomile [tea]; 19499 bubble; 19502 fruit; 19503 white; 19505 Darjeeling [tea]; 19506 Assam [tea]; 19509 thai; 19514 lapsang souchong; 19515 pu-erh; 19517 sencha; 19518 gunpowder [tea]; 19519 Lady Grey; 19520 nilgiri; 19521 Irish breakfast; 19522 tisane; 19589 oolong [tea]; 30306 rosehip; 63369 Ceylon [Sri Lankan black]; 63372 boba [drink]; 63536 builder's [tea]; 65166 iced [chilled-brewed]; 65168 sweet [Southern-style]
+G: 15564 19522; 19499 63372; 1778 1779
+
+T coffee_drinks | coffee drinks
+W: 229 latte; 230 cappuccino; 231 espresso; 232 mocha [coffee]; 234 americano; 235 macchiato; 236 flat white; 18317 affogato; 19463 decaf; 19471 café au lait; 19477 cortado; 19478 doppio; 19479 ristretto; 19480 long black; 19484 red eye [coffee]; 19486 lungo; 19487 piccolo [coffee]; 19525 cold brew; 19526 frappé; 19529 café con leche; 19530 mochaccino; 19531 cortadito; 19532 breve [coffee]; 63370 drip [filter brew]; 63539 instant [freeze-dried granules]; 63540 Irish [whiskey and cream drink]; 63541 Turkish [ibrik-brewed style]; 63542 Vietnamese [condensed milk style]; 64779 black [drink]; 65170 iced [over ice]
+
+T coffee_words | coffee words | bean, roast, grind, barista, crema, arabica, robusta, decaf, moka pot
+W: 3087 percolator; 4760 espresso machine; 19463 decaf; 19479 ristretto; 19486 lungo; 23604 milk frother; 28259 bean [legume]; 32999 barista; 38269 portafilter; 38270 tamper; 38271 steam wand; 40515 caffeine; 53770 arabica; 53771 robusta; 53772 crema; 53773 moka pot; 53774 dark roast; 53775 light roast; 53776 french press; 53777 pour over; 53778 grinder [coffee]; 53779 single origin; 53780 aeropress; 53781 chemex; 53782 latte art; 53783 demitasse; 53784 burr grinder; 53785 roaster; 53787 siphon [coffee]; 53788 green; 53789 first crack; 59292 cezve; 59391 cupping [tasting]; 59825 cascara; 59826 peaberry; 59827 second crack; 59828 degassing; 59829 honey process; 59830 natural process; 59831 tamping; 59832 bloom [coffee]; 62996 grounds; 63370 drip [filter brew]; 63371 filter [paper brewing disc]
+
+T soft_drinks | soft drinks
+W: 863 lemonade; 865 cola; 873 Pepsi; 883 tonic water; 884 ginger ale; 888 root beer; 15701 sarsaparilla; 19533 orange soda; 19534 diet cola; 19535 grape soda; 19536 cherry cola; 19537 lemon-lime soda; 19538 Sprite [drink]; 19539 Fanta; 19540 7 Up; 19541 Dr Pepper; 19542 Mountain Dew; 19543 club soda; 19544 cream soda; 19545 ginger beer; 19546 Schweppes; 19547 Orangina; 19548 Irn-Bru; 19549 Vimto; 19550 birch beer; 19551 Ramune; 19552 Squirt [soda]; 19553 Tizer; 19554 Moxie [soda]; 19555 Inca Kola
+G: 865 873 19534 19536; 19537 19538 19540
+
+T soda_flavors | soda flavors
+W: 75 lime [fruit]; 76 orange [fruit]; 77 grapefruit [citrus fruit]; 90 grape; 91 strawberry [berry]; 92 cherry [fruit]; 93 peach [fruit]; 95 mango [tropical fruit]; 96 pineapple; 97 watermelon; 100 pomegranate; 103 lychee; 107 passion fruit; 351 coconut [fruit]; 361 dragon fruit; 362 pitaya; 400 cucumber; 628 cotton candy; 715 mint [herb]; 719 vanilla [flavouring]; 865 cola; 884 ginger ale; 888 root beer; 15701 sarsaparilla; 17160 blood orange; 17205 tamarind; 17236 black cherry; 18291 butterscotch [flavour]; 19550 birch beer; 30304 elderflower; 39076 bubble gum; 39152 green apple; 53790 lemon-lime; 53791 tropical punch; 53792 blue raspberry; 63543 cream [vanilla-ish flavor]
+G: 361 362
+
+T juices | juices
+W: 74 lemon [fruit]; 75 lime [fruit]; 76 orange [fruit]; 77 grapefruit [citrus fruit]; 87 apple [fruit]; 90 grape; 92 cherry [fruit]; 95 mango [tropical fruit]; 96 pineapple; 97 watermelon; 100 pomegranate; 103 lychee; 104 guava; 107 passion fruit; 110 tomato [fruit]; 354 cranberry [red berry]; 391 carrot [vegetable]; 401 celery; 1792 sugarcane; 15640 noni; 16750 wheatgrass; 17215 prune [dried plum]; 18914 verjuice; 19570 green; 19571 apple cider; 19576 beet; 19579 Tropicana; 19580 Ocean Spray; 19585 nectar [fruit juice]; 50150 V8 [juice]; 62997 açai
+
+T asian_drinks | asian drinks | non-alcoholic: bubble tea, matcha, lassi, chai, thai iced tea, teh tarik
+W: 233 chai; 237 matcha; 899 lassi; 15581 chrysanthemum tea; 16741 green tea; 17961 soy milk; 19497 jasmine tea; 19499 bubble tea; 19500 boba tea; 19501 milk tea; 19528 Vietnamese coffee; 19551 Ramune; 19581 sugarcane juice; 19587 mango lassi; 19588 Thai iced tea; 19589 oolong [tea]; 19590 Yakult; 19591 teh tarik; 19592 cendol; 19593 falooda; 19594 nimbu pani; 19595 barley tea; 19596 dalgona coffee; 19597 Hong Kong milk tea; 19598 aloe vera; 19599 sikhye; 19600 jaljeera; 19601 thandai; 19602 Calpis; 19603 amazake; 19604 Pocari Sweat
+G: 19499 19500; 19501 19597
+
+T cocktails | cocktails
+W: 13914 caipirinha; 19605 margarita [cocktail]; 19606 mojito; 19607 martini; 19608 cosmopolitan [cocktail]; 19609 daiquiri; 19610 old fashioned; 19611 manhattan [cocktail]; 19612 piña colada; 19614 Bloody Mary [cocktail]; 19615 mimosa [cocktail]; 19616 sangria [drink]; 19617 Moscow Mule; 19618 Tequila Sunrise; 19619 White Russian; 19620 screwdriver [cocktail]; 19621 espresso martini; 19622 Aperol spritz; 19623 whiskey sour; 19624 negroni; 19625 mai tai; 19626 Tom Collins; 19627 Cuba libre; 19628 mint julep; 19630 Black Russian; 19631 Long Island Iced Tea; 19632 sex on the beach; 19633 sidecar [cocktail]; 19634 sazerac; 19635 Singapore Sling; 19636 paloma [cocktail]; 19637 grasshopper [cocktail]; 19638 zombie [cocktail]; 19639 hurricane [cocktail]; 19640 boulevardier; 19641 vesper [cocktail]; 19642 aviation [cocktail]; 19643 gibson [cocktail]; 19644 rob roy; 20276 Bellini [cocktail]; 50221 gimlet [cocktail]
+
+T wines | wines
+W: 876 champagne [drink]; 901 prosecco; 904 sherry [wine]; 905 port [wine]; 966 bubbly; 967 fizz [champagne]; 19475 glühwein; 19647 rosé [wine]; 19651 cava [wine]; 19653 table; 19654 dessert; 19655 fortified; 19656 merlot; 19657 chardonnay; 19658 pinot noir; 19659 cabernet sauvignon; 19660 sauvignon blanc; 19661 riesling; 19662 Chianti [wine]; 19663 Bordeaux [wine]; 19664 Burgundy [wine]; 19665 Rioja; 19666 malbec; 19667 shiraz [wine]; 19668 zinfandel; 19669 pinot grigio; 19670 Beaujolais; 19671 Chablis; 19672 Barolo; 19673 Lambrusco; 19674 madeira [wine]; 19675 marsala [wine]; 19678 retsina; 19679 vinho verde; 19680 Sauternes; 19681 Tokaji; 19682 Amarone; 19683 vin santo; 62998 Eiswein; 63546 red [dark grape style]; 63548 white [pale grape style]; 64780 house; 64781 orange; 64782 sparkling
+G: 876 966 967
+
+T red_wines | red wines | grapes and styles: merlot, pinot noir, shiraz, malbec, chianti, rioja
+W: 905 port [wine]; 19656 merlot; 19658 pinot noir; 19659 cabernet sauvignon; 19662 Chianti [wine]; 19663 Bordeaux [wine]; 19664 Burgundy [wine]; 19665 Rioja; 19666 malbec; 19667 shiraz [wine]; 19668 zinfandel; 19670 Beaujolais; 19672 Barolo; 19673 Lambrusco; 19682 Amarone; 53793 syrah; 53794 tempranillo; 53795 sangiovese; 53796 grenache; 53797 nebbiolo; 53798 cabernet franc; 53799 petit verdot; 53800 carménère; 53801 gamay; 53802 montepulciano; 53803 primitivo; 53804 mourvèdre; 53805 pinotage; 53806 tannat; 53807 valpolicella; 53808 côtes du rhône; 53809 châteauneuf-du-pape; 53810 Brunello; 53811 blend; 53812 dolcetto; 53813 barbera; 59833 Xinomavro; 59834 Nero d'Avola; 59835 Aglianico; 59836 Touriga Nacional; 59837 Blaufränkisch; 59838 Zweigelt; 59839 Saperavi; 59840 Corvina; 59841 Mencía; 59842 Negroamaro; 59843 Cinsault; 59844 Carignan; 59845 Sagrantino; 59846 Agiorgitiko; 59847 Dornfelder
+
+T grape_varieties | red wine grapes
+W: 19656 merlot; 19658 pinot noir; 19659 cabernet sauvignon; 19666 malbec; 19667 shiraz [wine]; 19668 zinfandel; 53793 syrah; 53794 tempranillo; 53795 sangiovese; 53796 grenache; 53797 nebbiolo; 53798 cabernet franc; 53799 petit verdot; 53800 carménère; 53801 gamay; 53804 mourvèdre; 53805 pinotage; 53806 tannat; 53812 dolcetto; 53813 barbera; 59843 Cinsault; 59844 Carignan
+
+T wines_named_for_places | wines named for places
+W: 19662 Chianti [wine]; 19663 Bordeaux [wine]; 19664 Burgundy [wine]; 19665 Rioja; 19670 Beaujolais; 19672 Barolo; 19673 Lambrusco; 19682 Amarone; 53807 valpolicella; 53808 côtes du rhône; 53809 châteauneuf-du-pape; 53810 Brunello
+
+T white_wines | white wines | chardonnay, sauvignon blanc, riesling, pinot grigio, chablis, sancerre
+W: 901 prosecco; 19657 chardonnay; 19660 sauvignon blanc; 19661 riesling; 19668 zinfandel; 19669 pinot grigio; 19671 Chablis; 19679 vinho verde; 19680 Sauternes; 19681 Tokaji; 36456 Sancerre; 53814 pinot gris; 53815 moscato; 53816 chenin blanc; 53817 viognier; 53818 gewürztraminer; 53819 albariño; 53820 semillon; 53821 muscadet; 53822 soave; 53823 verdejo; 53824 grüner veltliner; 53825 vermentino; 53826 picpoul; 53827 trebbiano; 53828 gavi; 53829 orvieto; 53830 frascati; 53832 liebfraumilch; 53833 white burgundy; 53834 muscat [wine]; 53835 pouilly-fuissé; 53836 blend; 53837 Müller-Thurgau; 53838 marsanne; 53839 fiano; 53840 assyrtiko; 53841 torrontés; 59848 Furmint; 59849 Godello; 59850 Arneis; 59851 Savagnin; 59852 Roussanne; 59853 Garganega; 59854 Vernaccia; 59855 Falanghina; 59856 Silvaner; 59857 Malvasia
+
+T wine_words | wine words | vintage, cork, sommelier, tannin, bouquet, decant, cellar, terroir
+W: 2511 chateau; 3323 aroma; 14757 bouquet [wine]; 20029 sommelier [wine]; 20755 vintner; 24075 cellar [basement]; 25084 harvest [crop gathering] (verb); 25518 carafe; 28014 cork [stopper material]; 30112 tannin; 31918 sediment; 31979 aeration; 39215 fruity (adjective); 40536 fermentation; 48928 vineyard; 53842 vintage [wine]; 53843 decant (verb); 53844 terroir; 53845 corked [wine] (adjective); 53846 legs [wine]; 53847 varietal; 53848 appellation; 53849 viticulture; 53850 oenology; 53852 magnum [bottle]; 53853 dry [wine] (adjective); 53854 full-bodied (adjective); 53855 oaky (adjective); 53856 crisp [wine] (adjective); 53857 finish [wine]; 53858 crush [wine]; 53859 must [wine]; 53860 barrique; 53861 lees; 53862 sulfites; 53863 cuvée; 53864 nose [wine]; 53865 grand cru; 59858 malolactic (adjective); 59859 racking; 59860 fining; 59861 veraison; 59862 pomace; 59863 maceration; 59864 ullage; 59865 phylloxera; 59866 chaptalization; 59867 solera; 59868 noble rot; 59869 botrytis; 59870 minerality; 59871 Brix; 59872 tirage; 59873 riddling; 59874 punt [wine]
+
+T tasting_notes | wine tasting notes
+W: 3323 aroma; 14757 bouquet [wine]; 39215 fruity (adjective); 53845 corked [wine] (adjective); 53846 legs [wine]; 53853 dry [wine] (adjective); 53854 full-bodied (adjective); 53855 oaky (adjective); 53856 crisp [wine] (adjective); 53857 finish [wine]; 53864 nose [wine]; 59870 minerality
+
+T winemaking_terms | winemaking terms
+W: 25084 harvest [crop gathering] (verb); 40536 fermentation; 53858 crush [wine]; 53859 must [wine]; 53860 barrique; 53861 lees; 53862 sulfites; 59858 malolactic (adjective); 59859 racking; 59860 fining; 59862 pomace; 59863 maceration; 59866 chaptalization; 59872 tirage; 59873 riddling
+
+T beers | beers
+W: 19684 lager; 19685 ale [beer]; 19686 stout [beer]; 19687 IPA; 19688 pale ale; 19689 pilsner; 19693 Guinness; 19694 Heineken; 19695 Budweiser; 19696 Corona [beer]; 19697 Stella Artois; 19698 Carlsberg; 19699 Coors; 19700 Miller [beer]; 19701 porter [beer]; 19703 amber ale; 19704 brown ale; 19705 shandy; 19706 bitter [beer]; 19707 real ale; 19708 Foster's [beer]; 19709 Asahi; 19711 Modelo; 19712 Blue Moon [beer]; 19713 Peroni; 19714 hefeweizen; 19715 bock; 19717 Tsingtao; 19718 Kirin [beer]; 19719 Pabst; 19720 Singha; 19721 malt liquor; 19722 lambic; 19723 gose; 19724 saison; 19725 tripel; 19726 kölsch; 19727 Chimay; 50099 Sapporo [beer]; 62999 weissbier; 64783 craft; 64784 light; 64785 sour
+
+T ale_types | ale types
+W: 19688 pale; 19703 amber; 19704 brown; 19707 real
+
+T spirits | spirits
+W: 877 vodka; 878 rum [drink]; 891 whisky; 893 gin [drink]; 894 tequila; 895 brandy; 19298 raki; 19424 cachaça; 19728 bourbon [whiskey]; 19729 scotch [whisky]; 19730 Scotch whisky; 19731 cognac; 19732 mezcal; 19733 moonshine; 19734 ouzo; 19735 soju; 19736 white rum; 19737 dark rum; 19738 spiced rum; 19739 single malt; 19740 rye [whiskey]; 19741 Jack Daniel's; 19742 Smirnoff; 19743 Bacardi; 19744 Johnnie Walker; 19745 Jameson; 19746 Absolut; 19747 Grey Goose; 19748 Hennessy; 19749 Captain Morgan [rum brand]; 19750 Jim Beam; 19751 grappa; 19752 pisco; 19753 calvados; 19754 eau de vie; 19755 aquavit; 19756 armagnac; 19757 arak; 19758 genever; 19759 shochu; 19760 slivovitz; 19761 kirsch; 19762 poitín
+G: 19729 19730 891
+
+T liqueurs | liqueurs | amaretto, cointreau, limoncello, sambuca, chartreuse, triple sec
+W: 908 absinthe; 910 schnapps; 19947 Pimm's; 53508 amarula; 53866 amaretto; 53867 cointreau; 53868 limoncello; 53869 sambuca; 53870 chartreuse [liqueur]; 53871 triple sec; 53872 Baileys; 53873 Kahlúa; 53874 Grand Marnier; 53875 Drambuie; 53876 Frangelico; 53877 Jägermeister; 53878 crème de menthe; 53879 crème de cassis; 53880 Disaronno; 53881 Midori; 53882 Southern Comfort; 53883 Galliano; 53884 Campari [aperitif]; 53885 Aperol; 53886 curaçao [liqueur]; 53887 advocaat; 53888 Tia Maria; 53889 St-Germain; 53890 maraschino; 53891 sloe gin; 53892 Irish cream; 53893 Cynar; 53894 crème de violette; 53895 Strega; 53896 Malibu [liqueur]; 53897 Goldschläger; 53898 Fireball [liqueur]; 59381 Benedictine [liqueur]; 59382 Chambord [liqueur]; 59875 Nocino; 59876 Mirto; 59877 Becherovka; 59878 Unicum; 59879 Kümmel; 59880 Averna; 59881 Pacharán; 59882 Licor 43; 59883 Tuaca; 59884 Fernet-Branca
+G: 53892 53872; 53866 53880
+
+T national_spirits | national spirits | a country's signature spirit: ouzo, rakı, tequila, soju, pisco, cachaça
+W: 877 vodka; 878 rum [drink]; 891 whisky; 893 gin [drink]; 894 tequila; 902 sake [Japanese drink]; 913 baijiu; 19424 cachaça; 19728 bourbon [whiskey]; 19731 cognac; 19732 mezcal; 19734 ouzo; 19735 soju; 19751 grappa; 19752 pisco; 19753 calvados; 19755 aquavit; 19756 armagnac; 19757 arak; 19758 genever; 19759 shochu; 19760 slivovitz; 19761 kirsch; 19762 poitín; 26967 rakı; 53899 palinka; 53900 rakia; 53901 tsipouro; 53902 feni; 53903 mastika; 53904 chacha; 53905 horilka; 53906 tuica; 53907 singani; 53908 aguardiente; 53909 umeshu; 59885 zivania; 59886 lambanog; 59887 awamori; 59888 arrack; 59889 sotol; 59890 orujo; 59891 lao-lao; 59892 bacanora
+
+T nicknames_for_drinks | nicknames for drinks
+W: 225 tea [drink]; 226 coffee [drink]; 961 java [coffee]; 963 cuppa; 965 vino; 966 bubbly; 967 fizz [champagne]; 968 brew [beer]; 969 brewski
+
+T alcoholic_drinks | alcoholic drinks
+W: 874 beer; 875 wine [alcoholic drink]; 876 champagne [drink]; 877 vodka; 878 rum [drink]; 887 eggnog; 891 whisky; 893 gin [drink]; 894 tequila; 895 brandy; 896 cocktail [drink]; 897 cider [alcoholic]; 901 prosecco; 902 sake [Japanese drink]; 903 mead; 904 sherry [wine]; 905 port [wine]; 908 absinthe; 909 vermouth; 910 schnapps; 913 baijiu
+
+T cooking | cooking
+W: 914 recipe; 915 ingredient; 916 chef [cook]; 917 bake (verb); 918 boil (verb); 919 fry [cook] (verb); 920 roast [cooking] (verb); 921 grill (verb); 922 stir [to mix] (verb); 923 chop [cut] (verb); 924 slice [cut] (verb); 925 melt (verb); 926 simmer (verb); 928 whisk [stir] (verb); 929 steam [cooking] (verb); 930 preheat (verb); 931 sift (verb); 932 mince [chop finely] (verb); 933 season [cooking] (verb); 934 knead (verb); 935 marinate (verb); 936 poach (verb); 937 braise (verb); 938 sear (verb); 939 baste (verb); 940 garnish (verb); 941 zest [citrus peel]; 942 fold [cooking] (verb); 943 reduce [cooking] (verb); 944 sous chef; 945 sauté (verb); 947 blanch (verb); 948 deglaze (verb); 949 julienne (verb); 951 proof [dough] (verb); 952 flambé (verb); 954 coddle (verb); 955 mise en place; 956 sous vide; 957 temper [chocolate] (verb); 958 chiffonade; 959 spatchcock (verb); 960 confit; 970 cook [person]; 971 cuisinier; 972 broil (verb); 973 sieve [to strain] (verb); 974 beat [cooking] (verb); 44583 dice [chop] (verb)
+G: 916 970 971; 928 974; 921 972
+
+T cooking_methods | cooking methods
+W: 917 bake (verb); 918 boil (verb); 919 fry [cook] (verb); 920 roast [cooking] (verb); 921 grill (verb); 926 simmer (verb); 936 poach (verb); 937 braise (verb); 938 sear (verb); 945 sauté (verb); 947 blanch (verb); 952 flambé (verb); 954 coddle (verb); 956 sous vide; 960 confit; 972 broil (verb); 16570 steam [vapor]; 19765 toast [cook] (verb); 19766 microwave [cook] (verb); 19767 barbecue [grilled meat] (verb); 19768 stir-fry [cook] (verb); 19769 deep-fry (verb); 19770 pan-fry (verb); 19771 stew [cook] (verb); 19772 scramble [eggs] (verb); 19773 air fry (verb); 19774 slow cook (verb); 19775 pressure cook (verb); 19776 smoke [food] (verb); 19777 griddle (verb); 19778 caramelize (verb); 19779 chargrill (verb); 19781 parboil (verb); 19782 spit-roast (verb); 19783 en papillote (other)
+G: 921 972
+
+T cookware | cookware
+W: 3086 Dutch oven [cast iron pot]; 4749 rice cooker; 4750 slow cooker; 4752 pressure cooker; 4754 air fryer; 19808 skillet; 19809 saucepan; 19810 pot [cookware]; 19811 wok; 19812 stockpot; 19813 casserole dish; 19815 baking sheet; 19816 roasting pan; 19818 muffin tin; 19820 cake pan; 19821 loaf pan; 19822 pie dish; 19823 cast iron pan; 19824 griddle pan; 19825 sauté pan; 19826 steamer [cookware]; 19827 tagine [cookware]; 19828 ramekin; 19829 springform pan; 19830 paella pan; 19831 double boiler; 19832 bain-marie; 19833 bundt pan; 19834 terrine [dish]; 19835 karahi; 19836 tava; 19837 cocotte; 19838 sauteuse
+G: 19831 19832
+
+T kitchen_utensils | kitchen utensils
+W: 596 rolling pin; 19839 spatula; 19840 whisk [utensil]; 19841 ladle; 19842 tongs; 19843 peeler [kitchen tool]; 19844 grater; 19845 can opener; 19847 wooden spoon; 19848 measuring cup; 19849 measuring spoon; 19850 cutting board; 19852 colander; 19853 sieve [utensil]; 19854 corkscrew; 19855 potato masher; 19856 slotted spoon; 19857 garlic press; 19858 pizza cutter; 19859 cookie cutter; 19860 paring knife; 19861 bread knife; 19862 oven mitt; 19863 ice cream scoop; 19864 nutcracker [tool]; 19865 pastry brush; 19866 melon baller; 19867 apple corer; 19868 salad spinner; 19869 egg slicer; 19870 pastry cutter; 19871 funnel [tool]; 19872 zester; 19874 skimmer [kitchen]; 19875 ricer; 19876 baster; 19877 trivet; 19878 bench scraper; 19879 fish slice; 19880 Microplane; 19881 offset spatula; 19882 mezzaluna; 19883 chinois; 19884 splatter guard; 23132 mandoline [slicer]; 50233 honing steel; 50235 meat mallet
+G: 19879 19839
+
+T ways_to_preserve_food | ways to preserve food | smoking, salting, pickling, canning, freezing, drying, curing, fermenting
+W: 960 confit; 18034 brine (verb); 18854 pickle [food]; 19776 smoke [food] (verb); 19885 salt [preserve] (verb); 19887 can [preserve] (verb); 19888 freeze [preserve] (verb); 19889 dry [food] (verb); 19890 cure [food] (verb); 19891 ferment (verb); 19892 refrigerate (verb); 19893 chill (verb); 19894 dehydrate (verb); 19895 vacuum seal (verb); 19896 sun-dry (verb); 19897 freeze-dry (verb); 19898 pasteurize (verb); 19899 bottle [preserve] (verb); 19900 air-dry (verb); 19901 salt-cure (verb); 19902 jerk [meat] (verb); 19903 dry-age (verb); 19904 kipper [fish] (verb); 19905 souse (verb); 19906 irradiate (verb); 19907 lacto-ferment (verb); 19908 corn [meat] (verb)
+
+T in_the_pantry | in the pantry
+W: 531 condensed milk; 538 evaporated milk; 563 flour; 577 yeast; 584 baking powder; 585 baking soda; 652 pasta; 653 rice [grain]; 654 noodles; 657 oats; 659 cereal; 664 couscous; 665 quinoa [grain]; 685 polenta; 694 cornmeal; 712 salt [seasoning]; 727 soy sauce; 730 vinegar; 733 olive oil; 766 tahini [sesame paste]; 977 rolled oats; 978 breakfast cereal; 3830 sugar [food]; 13640 breadcrumbs; 15594 honey [food]; 16744 lentils; 17451 arrowroot; 18196 vanilla extract; 18201 cocoa powder; 18202 cornstarch; 18205 cream of tartar; 18214 pectin; 18223 self-rising flour; 18240 masa harina; 18432 maple syrup; 18464 molasses; 18827 jam [preserve]; 18829 peanut butter; 19910 canned tomatoes; 19912 canned tuna; 19913 dried beans; 19915 bouillon cube; 19916 gelatin; 19917 agar [gelling agent]; 64823 soda [leavener]
+G: 659 978; 657 977; 585 64823
+
+T lunchbox | lunchbox
+W: 87 apple [fruit]; 88 banana [fruit]; 522 yogurt [cultured dairy]; 558 muffin; 566 cookie [biscuit]; 796 sandwich; 3063 Thermos; 3064 vacuum flask; 3074 trail mix; 4526 packed lunch [meal taken from home]; 15392 ice pack; 16754 carrot sticks; 16759 hard-boiled egg; 16764 granola bar; 17284 fruit leather; 18340 pudding cup; 18576 onigiri; 19010 ham sandwich; 19015 PB&J; 19017 wrap [sandwich]; 19092 pretzels; 19918 juice box; 19919 raisins; 19920 lunch bag; 19921 water bottle; 19922 cheese stick; 19924 fruit snack; 19925 sandwich bag; 19926 napkin; 19927 applesauce [food]; 19928 Capri-Sun; 19929 Tupperware; 19930 Lunchables; 19931 bento; 19932 fruit cup; 19933 Fruit Roll-Up; 19934 lunch note; 59893 Dunkaroos; 59894 Gushers; 59895 Uncrustables; 59896 Go-Gurt; 59897 Fruit by the Foot
+G: 3063 3064; 19918 19928; 17284 19933
+
+T picnic_basket | picnic basket
+W: 97 watermelon; 515 cheese [dairy food]; 556 baguette [bread]; 825 quiche; 863 lemonade; 3035 cooler; 3052 bug spray; 3053 insect repellent; 3668 blanket [bedding]; 3745 sunscreen; 3746 sunblock; 16757 grapes; 17872 coleslaw; 17873 potato salad; 17986 deviled eggs; 17994 scotch egg; 18091 sausage roll; 18529 pasta salad; 19016 cucumber sandwich; 19052 fried chicken; 19094 crackers; 19177 pork pie; 19854 corkscrew; 19936 sandwiches; 19937 paper plates; 19938 plastic cups; 19939 napkins; 19940 bottle opener; 19941 strawberries; 19942 tablecloth; 19944 wet wipes; 19946 gingham; 19947 Pimm's; 19948 trash bag [picnic]; 30682 wicker; 63283 hamper [wicker food carrier]
+G: 3745 3746; 3052 3053
+
+T recipe_amounts | recipe amounts
+W: 19949 cup [measure]; 19950 tablespoon; 19952 teaspoon; 19954 dash [measure]; 19955 gram; 19958 pound [weight]; 19960 kilogram; 19961 milliliter; 19963 liter; 19964 pint [measure]; 19965 quart; 19966 gallon; 19967 fluid ounce; 19969 handful; 19970 drizzle [amount]; 19971 sprinkle [amount]; 19972 dollop; 19973 sprig; 19974 bunch [amount]; 19975 clove [garlic]; 19976 stick [butter]; 19977 to taste (other); 19978 smidgen; 19979 knob [butter]; 19980 dessertspoon; 19981 jigger; 19982 scant (adjective); 19983 heaping (adjective); 19984 gill [measure]; 19985 peck [measure]; 41762 ounce [unit]; 43291 splash [water]; 50073 pinch [small amount] (verb)
+
+T ways_to_mix | ways to mix
+W: 922 stir [to mix] (verb); 928 whisk [stir] (verb); 934 knead (verb); 942 fold [cooking] (verb); 974 beat [cooking] (verb); 19986 mix (verb); 19987 blend (verb); 19988 toss [salad] (verb); 19989 shake [drink] (verb); 19990 whip [mix] (verb); 19991 combine [mix] (verb); 19992 mash [squash] (verb); 19993 swirl (verb); 19994 puree (verb); 19995 churn (verb); 19996 cream [cooking] (verb); 19997 froth (verb); 19998 pulse [blender] (verb); 19999 dissolve (verb); 20000 layer [cooking] (verb); 20001 whizz [blend] (verb); 20002 muddle (verb); 20003 emulsify (verb); 20004 aerate (verb); 20005 incorporate (verb); 20006 cut in (verb); 20007 marble [batter] (verb); 20008 ripple (verb); 20009 swizzle (verb); 20010 rub in (verb); 20011 agitate (verb); 20012 homogenize (verb)
+
+T restaurant_words | restaurant words
+W: 3568 high chair; 4110 waiter; 4111 server [waiter]; 4112 waitress [server]; 13880 cover charge; 13881 dress code; 13886 bar tab; 20014 reservation [restaurant]; 20015 tip [gratuity]; 20016 bill [restaurant]; 20017 table [restaurant]; 20018 takeout [food]; 20019 specials; 20020 host [restaurant]; 20021 hostess; 20022 kids menu; 20023 doggy bag; 20024 booth [restaurant]; 20025 wine list; 20027 maître d'; 20029 sommelier [wine]; 20030 busboy; 20031 tasting menu; 20032 gratuity; 20033 service charge; 20034 à la carte (other); 20035 walk-in; 20036 on the house (other); 20037 prix fixe; 20038 corkage; 20039 amuse-bouche; 20040 comp [restaurant] (verb); 20041 table d'hôte; 20042 degustation; 20043 covers [restaurant]; 20044 eighty-six (verb); 26281 menu [restaurant]
+G: 4110 4112 4111
+
+T kitchen_brigade | kitchen brigade | restaurant kitchen roles: head chef, sous chef, pastry chef, line cook, commis
+W: 944 sous chef; 20045 head chef; 20046 pastry chef; 20047 line cook; 20048 executive chef; 20049 dishwasher [person]; 20050 prep cook; 20051 fry cook; 20052 grill cook; 20053 short-order cook; 20054 sushi chef; 20056 baker [job]; 20057 butcher [kitchen]; 20058 commis [chef]; 20060 chef de partie; 20061 chef de cuisine; 20062 saucier; 20063 expediter; 20065 pot washer; 20066 kitchen hand; 20067 garde manger; 20068 rôtisseur; 20069 poissonnier; 20070 entremetier; 20071 pâtissier; 20073 chef tournant; 20074 aboyeur; 20075 communard; 20076 pizzaiolo; 20077 sauté cook; 20078 brigade [kitchen]; 64787 porter
+
+T courses_of_a_meal | courses of a meal | appetizer, starter, entrée, main, side, dessert, amuse-bouche, digestif
+W: 226 coffee [drink]; 515 cheese [dairy food]; 614 pudding; 622 sorbet; 797 soup [liquid dish]; 798 salad [cold dish]; 961 java [coffee]; 13901 nightcap [drink]; 16671 fish [food]; 20039 amuse-bouche; 20079 appetizer; 20081 main; 20083 dessert [sweet course]; 20085 side dish; 20090 entrée [course]; 20091 aperitif; 20092 digestif; 20093 palate cleanser; 20094 hors d'oeuvre; 20096 canapé; 20098 antipasto; 20099 petit fours; 20100 primo [Italian course]; 20101 secondo [Italian course]; 20102 dolce [Italian course]; 20103 contorno; 20104 mignardises; 20105 intermezzo [course]; 20106 entremets; 20107 pre-dessert
+G: 226 961
+
+T table_setting | table setting | fork, knife, napkin, placemat, charger, wine glass, salad fork, napkin ring
+W: 19926 napkin; 19942 tablecloth; 20135 knife [cutlery]; 20136 spoon [cutlery]; 20137 plate [dinner dish]; 20138 bowl [dish]; 20139 glass [drinking]; 20140 placemat; 20141 wine glass; 20142 water glass; 20143 soup spoon; 20144 teacup [cup]; 20146 centerpiece; 20147 candle; 20148 salt shaker; 20149 pepper shaker; 20150 chopsticks; 20151 dinner fork; 20152 salad fork; 20153 dessert spoon; 20154 butter knife; 20155 steak knife; 20156 bread plate; 20157 salad plate; 20158 napkin ring; 20159 place card; 20160 saucer [dish]; 20162 gravy boat; 20163 champagne flute; 20164 charger [plate]; 20165 fish knife; 20166 cake fork; 20167 finger bowl; 20168 cruet; 20169 oyster fork; 20170 knife rest; 23115 coaster [drink mat]; 40192 fork [cutlery]; 63554 runner [long cloth strip]
+
+T fork_types | fork types
+W: 20151 dinner; 20152 salad; 20166 cake; 20169 oyster
+
+T diner | diner
+W: 338 stool; 524 milkshake; 804 pancakes; 811 burger; 812 hamburger; 820 meatloaf; 11314 jukebox [music machine]; 17842 tuna melt; 17999 sunny side up (adjective); 18000 over easy (adjective); 18010 grilled cheese; 18012 cheeseburger; 18168 apple pie; 18329 root beer float; 19013 club sandwich; 19014 BLT; 19027 patty melt; 19050 french fries; 19078 hash browns; 19084 biscuits and gravy; 19456 chicken fried steak; 20024 booth [restaurant]; 20171 counter [diner]; 20172 coffee pot; 20173 bottomless coffee; 20174 neon sign; 20175 checkered floor; 20176 order pad; 20177 greasy spoon; 20178 ice cream soda; 20179 sugar dispenser; 20180 napkin dispenser; 20181 short stack [pancake order]; 20182 blue plate special; 20183 malted milkshake; 20184 egg cream; 20185 scrapple
+G: 811 812; 524 20183
+
+T fairground_food | fairground food
+W: 617 fudge [sweet]; 628 cotton candy; 638 churros; 807 nachos; 808 hot dog; 817 fish and chips; 863 lemonade; 6418 popcorn; 17721 turkey leg; 17739 bratwurst; 17869 corn on the cob; 17953 cheese curds; 18309 ice cream cone; 18312 snow cone; 18313 shaved ice; 18314 slushie; 18377 saltwater taffy; 19055 corn dog; 19116 soft pretzel; 19119 funnel cake; 19128 kettle corn; 20186 candy apple [sweet]; 20188 caramel apple; 20189 fried dough; 20190 mini doughnuts; 20191 candied nuts; 20192 fried Oreos; 20193 elephant ear [pastry]; 20194 fried pickles; 20195 stroopwafel; 20196 deep-fried Mars bar; 20197 tornado potato
+G: 20186 20188; 18312 18313
+
+T ice_cream_parlor | ice cream parlor
+W: 91 strawberry [berry]; 524 milkshake; 582 sprinkles; 605 chocolate [sweet]; 616 sundae; 622 sorbet; 623 gelato; 719 vanilla [flavouring]; 16776 frozen yogurt; 18281 cookies and cream; 18282 cookie dough; 18284 butter pecan; 18286 rum raisin; 18299 spumoni; 18307 sherbet [dessert]; 18310 ice cream sandwich; 18315 banana split; 18317 affogato; 18319 soft serve; 18321 cassata; 18430 hot fudge; 18433 cherry on top; 20198 cone [ice cream]; 20199 scoop [ice cream]; 20200 float [ice cream]; 20201 waffle cone; 20202 topping [ice cream]; 20203 sugar cone; 20204 mint chip; 20205 rocky road [ice cream]; 20206 pistachio [flavor]; 20207 neapolitan [ice cream]; 20209 parfait; 20210 wafer [ice cream]; 20211 knickerbocker glory; 20212 tutti-frutti; 20214 flake [chocolate]; 65176 whipped [topping]
+
+T fermented_foods | fermented foods | kimchi, sauerkraut, yogurt, miso, kefir, kombucha, tempeh
+W: 515 cheese [dairy food]; 522 yogurt [cultured dairy]; 526 sour cream; 527 buttermilk; 540 kefir; 544 crème fraîche; 546 skyr; 550 labneh; 573 sourdough [bread]; 727 soy sauce; 730 vinegar; 767 miso [fermented paste]; 768 fish sauce; 791 gochujang; 845 kimchi; 898 kombucha; 912 kvass; 17579 black garlic; 17741 salami; 18064 injera; 18857 sauerkraut; 19136 dosa; 19137 stinky tofu; 20215 tempeh; 20216 pickles; 20217 natto; 20218 idli; 20219 surströmming; 20220 garum; 20221 tepache; 20222 doenjang; 63000 sufu
+
+T deep_fried_foods | deep-fried foods | doughnut, tempura, falafel, churros, onion rings, hush puppies
+W: 486 calamari; 568 doughnut; 638 churros; 817 fish and chips; 827 falafel; 828 samosa; 829 tempura; 17994 scotch egg; 18089 beignet; 19050 french fries; 19051 chicken nuggets; 19052 fried chicken; 19053 onion rings; 19055 corn dog; 19062 mozzarella sticks; 19063 tater tots; 19064 popcorn chicken; 19118 spring roll; 19119 funnel cake; 19125 arancini; 19379 katsu; 19455 hush puppies; 19457 chimichanga; 20192 fried Oreos; 20194 fried pickles; 20224 fritter; 20225 croquette; 20226 pakora; 20227 onion bhaji; 20228 jalapeño poppers; 20229 fried ice cream; 20230 tonkatsu [breaded cutlet]; 20231 crullers; 20232 vada; 20233 karaage; 20234 zeppole; 20235 sopapilla; 20236 youtiao
+
+T stuffed_foods | stuffed foods | food with a filling: ravioli, burrito, samosa, empanada, dolma, pierogi
+W: 663 ravioli; 677 tortellini; 801 taco; 802 burrito; 828 samosa; 841 pierogi; 846 haggis; 17986 deviled eggs; 17994 scotch egg; 18074 cream puff; 18079 cannoli; 18490 shells [pasta]; 18492 cannelloni; 18493 manicotti; 18506 agnolotti; 18641 gyoza; 18643 wonton; 18649 momo; 18651 pelmeni; 18653 manti; 18655 kreplach; 19118 spring roll; 19122 bao; 19123 empanada; 19125 arancini; 19127 tamale; 19216 calzone; 19297 dolma; 20228 jalapeño poppers; 20237 dumpling; 20238 peppers; 20239 enchilada; 20240 mushrooms; 20241 cabbage roll; 20242 chicken Kiev; 20243 pasty [pastry]; 20244 knish; 20245 cordon bleu; 20246 involtini
+
+T foods_on_a_stick | foods on a stick | kebab, corn dog, lollipop, popsicle, satay, candy apple, yakitori
+W: 609 lollipop; 610 lolly [lollipop or ice pop]; 813 kebab; 17876 shish kebab; 18303 popsicle; 18305 ice pop; 18306 paddle pop; 18362 rock candy; 18665 dango; 19055 corn dog; 19121 satay [skewered meat]; 19130 yakitori; 19329 kofta; 19426 anticuchos; 20186 candy apple [sweet]; 20188 caramel apple; 20247 cake pop; 20248 chicken skewers; 20249 fruit kebab; 20250 souvlaki; 20251 chicken tikka; 20252 shashlik; 20253 brochette; 20254 pincho; 20255 frozen banana; 20256 pretzel rod; 20257 tanghulu; 20258 kushikatsu; 20259 espetada; 20260 sosatie
+G: 20186 20188; 813 17876; 610 609 18303 18305 18306
+
+T foods_with_shells | foods with shells | eaten from or with a shell: egg, pistachio, crab, oyster, coconut, peanut
+W: 351 coconut [fruit]; 469 lobster; 470 crab [animal]; 471 shrimp; 476 oyster [shellfish]; 477 mussel; 478 clam; 479 scallop [shellfish]; 499 crayfish; 505 whelk; 506 cockle; 507 abalone; 509 langoustine; 518 egg [food from hens]; 1295 barnacle; 1323 conch; 1367 snail; 7746 periwinkle [sea snail]; 8881 razor clam; 17235 almond [nut]; 17350 peanut [legume nut]; 17351 cashew; 17352 pecan [nut]; 17353 pistachio [nut]; 17354 hazelnut [nut]; 17355 filbert; 17356 brazil nut; 17357 macadamia; 17359 pine nut; 17360 pignoli; 17361 pinon; 17384 sunflower seed; 17385 pumpkin seed; 17386 pepita [pumpkin seed]; 20261 chestnut [nut]; 20262 escargot; 20263 duck egg [egg]; 20264 quail egg; 30307 walnut [nut]
+G: 17385 17386; 17359 17360 17361; 17354 17355
+
+T foods_with_holes | foods with holes
+W: 252 emmental; 360 olive [fruit]; 555 bagel [bread]; 568 doughnut; 570 pretzel; 591 crumpet; 599 matzo; 656 macaroni [pasta]; 662 penne; 678 rigatoni; 706 bucatini; 17446 lotus root; 17920 swiss cheese [cheese]; 17934 jarlsberg; 18061 English muffin; 18093 cruller; 18115 bundt cake; 18492 cannelloni; 18494 ziti; 18613 Cheerios; 18614 Froot Loops; 19053 onion rings; 19293 gruyère; 20286 Life Savers; 20287 Polo mints; 20288 Hula Hoops; 20289 crispbread; 20290 Maasdam; 20291 Ryvita; 20292 bublik; 20293 taralli
+G: 20289 20291
+
+T foods_you_peel | foods you peel
+W: 74 lemon [fruit]; 75 lime [fruit]; 76 orange [fruit]; 77 grapefruit [citrus fruit]; 78 tangerine; 79 mandarin [fruit]; 80 clementine; 81 satsuma; 83 pomelo; 87 apple [fruit]; 88 banana [fruit]; 89 pear [fruit]; 93 peach [fruit]; 95 mango [tropical fruit]; 96 pineapple; 98 kiwi [fruit]; 99 kiwifruit; 100 pomegranate; 102 papaya; 103 lychee; 105 persimmon; 106 jackfruit; 107 passion fruit; 109 rambutan; 110 tomato [fruit]; 111 avocado; 357 cantaloupe; 365 durian; 369 plantain [fruit]; 378 mangosteen; 379 longan; 391 carrot [vegetable]; 392 potato [vegetable]; 393 onion [bulb vegetable]; 400 cucumber; 402 sweet potato [vegetable]; 404 garlic; 420 beet; 425 turnip; 426 parsnip; 430 yam; 431 shallot; 435 cassava [root crop]; 449 kohlrabi; 450 celeriac; 452 jicama; 456 salsify; 471 shrimp; 718 ginger [spice root]; 16759 hard-boiled egg; 17488 butternut squash; 17489 butternut [squash]; 20294 melon [fruit]
+G: 98 99; 17489 17488; 78 79
+
+T canned_foods | canned foods
+W: 96 pineapple; 106 jackfruit; 399 peas; 406 corn [vegetable]; 408 maize; 417 green beans; 455 bamboo shoots; 466 salmon [fish]; 467 tuna; 531 condensed milk; 538 evaporated milk; 663 ravioli; 797 soup [liquid dish]; 855 chili [dish]; 16744 lentils; 17548 baked beans; 17785 corned beef; 17967 coconut milk; 18788 cranberry sauce; 20295 Spam [canned meat]; 20297 tomatoes; 20298 sardines [canned]; 20299 chickpeas; 20300 kidney beans; 20301 peaches; 20302 fruit cocktail; 20303 mushrooms; 20304 olives; 20305 pears; 20306 black beans; 20307 mandarin oranges; 20308 Campbell's [soup]; 20309 anchovies; 20310 refried beans; 20311 water chestnuts; 20312 creamed corn; 20313 pumpkin puree; 20314 artichoke hearts; 20315 spaghetti hoops; 20316 luncheon meat; 20317 Chef Boyardee; 20318 Vienna sausages; 20319 corned beef hash; 20320 Dinty Moore; 20321 potted meat
+G: 406 408; 20316 20295
+
+T frozen_foods | frozen foods
+W: 398 spinach [leafy green]; 399 peas; 406 corn [vegetable]; 408 maize; 440 edamame; 604 ice cream [frozen dessert]; 622 sorbet; 623 gelato; 660 lasagna; 795 pizza; 805 waffles; 810 dumplings; 841 pierogi; 17833 fish sticks; 18078 puff pastry; 18282 cookie dough; 18303 popsicle; 18305 ice pop; 18306 paddle pop; 18307 sherbet [dessert]; 18641 gyoza; 19050 french fries; 19051 chicken nuggets; 19063 tater tots; 19078 hash browns; 19174 pot pie; 20322 berries; 20323 spring rolls; 20324 garlic bread; 20325 mixed vegetables; 20326 Hot Pockets; 20327 Magnum [ice cream]; 20328 Cornetto; 20329 TV dinner; 20331 Birds Eye; 20333 Eggo; 20334 Fudgsicle; 20335 Dippin' Dots; 20336 Viennetta; 20337 Klondike bar; 20338 croquettes; 20339 Arctic roll; 20340 Findus; 62885 froyo; 67174 oven fries
+G: 406 408; 18303 18305 18306; 805 20333
+
+T eggs | eggs
+W: 518 egg [food from hens]; 521 yolk; 20263 duck [egg]; 20264 quail; 25040 Easter [easter]; 57815 ostrich; 62428 carton; 63421 albumen [protein]; 66176 shell [hen shell]; 66177 free-range
+
+T egg_dishes | egg dishes
+W: 532 omelet; 825 quiche; 842 frittata; 856 shakshuka; 17988 egg salad; 17989 soufflé; 17991 huevos rancheros; 17992 egg drop soup; 17993 egg fried rice; 17994 scotch egg; 17995 tamagoyaki; 17997 eggs royale; 17999 sunny side up (adjective); 18000 over easy (adjective); 18002 Spanish omelette; 18003 tortilla española; 18004 menemen; 18008 egg in a basket; 18009 chawanmushi; 62544 foo young; 62545 Benedict [brunch]; 63439 pidan; 63441 deviled; 63443 fried; 63445 scrambled; 64701 boiled; 64702 coddled; 64703 florentine; 64704 poached; 64705 shirred; 64706 soft-boiled
+G: 18002 18003
+
+T ways_to_cook_eggs | ways to cook eggs | styles of cooked egg: boiled, fried, scrambled
+W: 532 omelet; 13177 hard-boiled (adjective); 17999 sunny side up (adjective); 63443 fried; 63445 scrambled; 66179 boiled; 66180 poached; 66181 soft-boiled; 66182 devilled; 66183 coddled
+
+T mammals | mammals
+W: 218 cheetah [animal]; 979 elephant [animal]; 980 giraffe; 981 zebra [animal]; 982 monkey [animal]; 983 gorilla; 984 kangaroo; 986 hippopotamus; 987 hippo; 988 rhinoceros [animal]; 990 squirrel [tree rodent]; 991 mouse [animal]; 992 rat [animal]; 993 bat [animal]; 994 bear [animal]; 995 wolf [animal]; 996 fox; 997 deer; 998 koala; 999 koala bear; 1000 panda [animal]; 1001 giant panda; 1002 camel [animal]; 1003 hedgehog [animal]; 1004 chimpanzee; 1006 bison; 1008 moose; 1009 otter; 1010 beaver [dam-building rodent]; 1011 raccoon; 1013 skunk [animal]; 1014 badger [animal]; 1015 porcupine; 1016 armadillo; 1017 sloth [animal]; 1018 anteater; 1019 platypus; 1020 hyena; 1021 meerkat; 1022 lemur; 1023 orangutan; 1024 baboon; 1025 antelope [animal]; 1026 wombat; 1027 walrus; 1028 seal [animal]; 1029 mole [animal]; 1030 wildebeest; 1031 gnu; 1032 mongoose; 1033 jackal; 1034 aardvark; 1035 pangolin; 1036 okapi; 1037 tapir; 1038 capybara; 1039 lynx [cat]; 1040 gibbon; 1041 manatee; 1042 chinchilla; 1043 ferret; 1044 stoat; 1045 wolverine; 1046 opossum; 1047 possum; 1048 groundhog; 1049 woodchuck; 1050 quokka; 1051 numbat; 1052 tarsier; 1053 hyrax; 1054 bandicoot; 1055 dugong; 1056 coati; 1057 civet; 1058 echidna [animal]; 1059 pronghorn; 1060 aye-aye; 1061 kudu; 9909 spiny anteater
+G: 1058 9909; 1030 1031; 998 999; 1000 1001; 986 987; 1048 1049; 1047 1046

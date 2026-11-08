@@ -1,0 +1,403 @@
+T manual_woodworking_tools | manual woodworking tools
+W: 318 saw [tool]; 323 chisel; 324 mallet [tool]; 327 spirit level; 329 plane [tool]; 331 adze; 4844 coping saw; 4848 try square; 4850 spokeshave; 4851 drawknife; 4852 drawshave; 12056 gouge; 23741 marking gauge; 55280 fret saw; 61832 froe; 61833 card scraper
+
+T wood_joints | wood joints
+W: 40224 tongue and groove [joint]; 46036 dovetail [joint]; 46037 mortise; 46038 tenon [joint part]; 46045 rabbet; 46046 dado; 46054 pocket hole; 50052 miter [joint]; 61836 bird's mouth
+
+T hobbies_done_outdoors | hobbies done outdoors
+W: 1643 bonsai; 5857 photography; 5858 gardening; 5859 birdwatching; 5891 stargazing; 5905 rock collecting; 5906 fossil hunting; 5907 metal detecting; 5909 trainspotting
+
+T thread_crafts | thread crafts
+W: 5032 embroidery; 5033 cross-stitch; 5060 quilting; 5061 patchwork; 5062 needlepoint; 5081 appliqué; 5849 sewing; 5874 tatting; 5910 sashiko; 5911 kumihimo
+
+T toys_and_play | toys and play
+W: 3564 rattle [toy]; 5920 teddy bear; 5921 doll [toy]; 5922 jigsaw puzzle; 5923 building blocks; 5924 Lego; 5925 Barbie [fashion doll]; 5926 yo-yo; 5927 kite [toy]; 5928 spinning top; 5929 marbles [toy]; 5930 rocking horse; 5931 jack-in-the-box; 5932 Slinky; 5933 Frisbee; 5934 flying disc; 5936 jump rope; 5937 hula hoop; 5938 seesaw; 5940 swing [playground]; 5941 slide [playground]; 5944 trampoline; 5945 bouncy castle; 5946 Play-Doh; 5947 action figure; 5950 train set; 5951 puppet; 5952 kaleidoscope; 5953 pogo stick; 5954 scooter; 5955 tricycle; 5956 hopscotch; 5957 hide-and-seek; 5958 tag [game]; 5959 leapfrog [game] (verb); 5960 conkers; 5961 cat's cradle; 5962 jacks [game]; 5963 pick-up sticks; 5965 squirt gun; 5967 Etch A Sketch; 5968 Rubik's Cube; 5969 fidget spinner; 5970 stuffed animal; 5974 dollhouse; 5976 monkey bars; 5977 merry-go-round; 5979 carousel [playground]; 5981 jungle gym; 5982 bubble wand; 5984 Hot Wheels; 5985 Tamagotchi; 5986 Beyblade; 5987 Transformers [toy]; 5988 clockwork toy; 5990 diabolo; 5991 bilboquet; 5992 whirligig [toy]; 5993 rag doll; 5994 Russian doll; 5995 matryoshka; 5996 ball pit; 5997 hobby horse; 46075 sandbox [play area]; 64356 tin soldier; 64800 Plush; 65906 car [miniature vehicle]; 65907 soldier [miniature figure]; 65908 wind-up [clockwork-powered plaything]
+G: 5977 5979; 5933 5934; 64800 5970; 5994 5995; 64356 65907; 5923 5924
+
+T toys | toys
+W: 3564 rattle [toy]; 5920 teddy bear; 5921 doll [toy]; 5923 building blocks; 5924 Lego; 5925 Barbie [fashion doll]; 5926 yo-yo; 5927 kite [toy]; 5928 spinning top; 5929 marbles [toy]; 5930 rocking horse; 5931 jack-in-the-box; 5932 Slinky; 5933 Frisbee; 5934 flying disc; 5936 jump rope; 5937 hula hoop; 5946 Play-Doh; 5947 action figure; 5952 kaleidoscope; 5953 pogo stick; 5965 squirt gun; 5967 Etch A Sketch; 5970 stuffed animal; 5984 Hot Wheels; 5985 Tamagotchi; 40333 Furby; 45647 nerf (verb); 46057 ball [toy]; 46059 jacks [toy]; 46060 Tonka; 46061 Cabbage Patch Kid; 46062 Beanie Baby; 46063 Stretch Armstrong; 46064 Magic 8 Ball; 46065 View-Master; 46066 pull toy; 46067 Newton's cradle [toy]; 46068 Clackers; 46069 Spirograph; 46070 rubber duck [toy]; 46071 Tickle Me Elmo; 46072 Fisher-Price; 46073 zoetrope; 46074 Weeble; 64356 tin soldier; 64800 Plush; 65906 car [miniature vehicle]; 65907 soldier [miniature figure]; 65908 wind-up [clockwork-powered plaything]; 65909 train [miniature railway set]
+G: 5933 5934; 64800 5970; 64356 65907; 5923 5924
+
+T old_fashioned_playthings | old-fashioned playthings
+W: 5926 yo-yo; 5928 spinning top; 5929 marbles [toy]; 5930 rocking horse; 5931 jack-in-the-box; 5949 toy soldier; 5952 kaleidoscope; 5989 wind-up toy; 46059 jacks [toy]; 46066 pull toy; 46073 zoetrope; 64356 tin soldier
+
+T playground | playground
+W: 3055 picnic table; 5234 tetherball; 5938 seesaw; 5940 swing [playground]; 5941 slide [playground]; 5944 trampoline; 5945 bouncy castle; 5956 hopscotch; 5976 monkey bars; 5977 merry-go-round; 5979 carousel [playground]; 5981 jungle gym; 14089 rope bridge; 15798 baby swing; 39815 tire swing; 43577 skate park [skating]; 46075 sandbox [play area]; 46076 spring rider; 46077 balance beam [playground]; 46078 tunnel [playground]; 46079 zip line; 46081 wood chips [playground]; 46082 safety surfacing; 46083 climbing wall [playground]; 46084 rope ladder; 46085 fireman's pole; 46086 playhouse; 46087 bark chippings; 46088 spinner [playground]; 46089 rocker [playground]; 46090 wet pour; 46091 pirate ship [playground]; 46092 cargo net [playground]
+G: 5977 5979
+
+T party_games | party games
+W: 5748 Pictionary; 5750 Jenga; 5751 Twister [game]; 5778 Cranium [board game]; 13856 karaoke; 13860 musical chairs; 13861 pass the parcel; 13871 treasure hunt; 25063 egg and spoon race; 25139 pinata; 45423 Cards Against Humanity; 45556 charades; 46093 Blind Man's Buff; 46094 hide and seek; 46095 truth or dare; 46096 Simon says; 46097 limbo [game]; 46098 bobbing for apples; 46099 Werewolf [party game]; 46100 Mafia [party game]; 46101 beer pong; 46102 scavenger hunt; 46103 sardines [game]; 46104 murder mystery; 46106 Chinese Whispers; 46107 never have I ever; 46108 would you rather; 46109 telephone [game]; 46110 wink murder; 46111 sack race; 46112 Heads Up; 46113 Guess Who; 46114 Mad Gab; 46115 spin the bottle; 46116 Apples to Apples; 46117 The Floor Is Lava; 46118 mingle [party] (verb); 46119 Kings Cup; 48312 trivia [quiz]
+
+T outdoor_games | outdoor games
+W: 5199 dodgeball; 5200 kickball; 5205 rounders; 5215 bocce; 5216 petanque; 5217 boules; 5218 croquet; 5219 lawn bowls; 5233 stickball; 5234 tetherball; 5237 pesäpallo; 5242 badminton; 5271 horseshoes [game]; 5272 cornhole; 5273 quoits; 5279 kubb; 5929 marbles [toy]; 5933 Frisbee; 5934 flying disc; 5936 jump rope; 5956 hopscotch; 5958 tag [game]; 5959 leapfrog [game] (verb); 25063 egg and spoon race; 40235 Wiffle ball; 42642 ultimate frisbee; 44072 tug of war; 46094 hide and seek; 46111 sack race; 46120 capture the flag; 46121 red rover; 46122 ladder toss; 46123 relay race; 46124 kick the can; 46125 Spikeball; 46126 bean bag toss; 46127 giant Jenga; 46128 Molkky; 46129 British bulldog; 46130 stuck in the mud; 46131 red light green light; 46132 Mr Wolf [game]; 46133 water balloon toss; 46134 musical statues; 46135 spud [game]; 46136 horseshoe pitching; 46514 caber toss; 46515 tossing the caber; 46516 caber; 46535 skittles [game]; 46541 aunt sally; 58950 French cricket; 61837 Pooh sticks; 61838 klootschieten; 61839 gaga ball
+G: 46516 46514 46515; 5216 5217; 5933 5934
+
+T yard_games | yard games
+W: 5200 kickball; 5215 bocce; 5216 petanque; 5217 boules; 5218 croquet; 5219 lawn bowls; 5233 stickball; 5234 tetherball; 5242 badminton; 5271 horseshoes [game]; 5272 cornhole; 5273 quoits; 5277 disc golf; 5279 kubb; 5933 Frisbee; 5934 flying disc; 5956 hopscotch; 5958 tag [game]; 40235 Wiffle ball; 44072 tug of war; 46093 Blind Man's Buff; 46094 hide and seek; 46111 sack race; 46120 capture the flag; 46121 red rover; 46122 ladder toss; 46123 relay race; 46124 kick the can; 46125 Spikeball; 46126 bean bag toss; 46127 giant Jenga; 46128 Molkky; 46133 water balloon toss; 46189 three-legged race; 58939 egg and spoon; 58940 slip and slide; 58942 lawn darts; 58943 Jarts; 58944 ring toss; 58945 washer toss; 58946 ladder golf; 58947 giant chess; 58948 giant connect four; 58949 Kan Jam; 58950 French cricket
+G: 5216 5217; 5933 5934; 58942 58943
+
+T chasing_games | chasing games
+W: 5958 tag [game]; 46120 capture the flag; 46121 red rover; 46124 kick the can; 46129 British bulldog; 46130 stuck in the mud; 46131 red light green light; 46132 Mr Wolf [game]; 46135 spud [game]
+
+T building_toys | building toys
+W: 5750 Jenga; 5783 Minecraft; 5924 Lego; 45928 baseplate [building base]; 46137 Duplo; 46138 Meccano; 46139 K'Nex; 46140 Lincoln Logs; 46141 Tinkertoy; 46142 Mega Bloks; 46143 wooden blocks; 46144 Erector Set; 46145 Magna-Tiles; 46146 magnetic tiles; 46147 bricks [toy]; 46148 Technic; 46149 Mindstorms; 46150 Stickle Bricks; 46151 Plus-Plus; 46152 Zoob; 46153 Kapla; 46154 Snap Circuits; 46155 construction set; 46156 interlocking bricks; 46157 minifigure; 46158 stud [Lego]; 46159 Playmobil; 46160 Brio; 46161 Bayko; 46162 Rokenbok; 46163 Citiblocs; 46164 marble run; 46165 Cuboro; 62841 blocks
+G: 46146 46145; 46155 46144; 46147 46156; 62841 46143
+
+T dolls_and_figures | dolls and figures
+W: 5925 Barbie [fashion doll]; 5947 action figure; 5951 puppet; 5974 dollhouse; 5987 Transformers [toy]; 5993 rag doll; 5995 matryoshka; 12046 figurine; 12356 finger puppet; 12361 marionette; 12365 ventriloquist dummy; 22425 voodoo doll; 22656 kachina; 45991 paper doll; 46061 Cabbage Patch Kid; 46062 Beanie Baby; 46159 Playmobil; 46166 Ken [doll]; 46167 porcelain doll; 46168 G.I. Joe; 46169 Bratz; 46170 Polly Pocket; 46171 Sylvanian Families; 46172 Funko Pop; 46173 Troll doll; 46174 Raggedy Ann; 46176 American Girl; 46177 baby doll; 46178 Weebles; 46179 Action Man; 46180 kokeshi; 46181 He-Man; 46182 Monster High; 46183 Hatchimals; 46184 Teddy Ruxpin; 46185 Hummel figurine; 46186 Lalaloopsy; 46187 Blythe [doll]; 46188 daruma [doll]; 48836 worry doll; 61841 Frozen Charlotte; 61842 ball-jointed doll; 61843 corn dolly; 61844 Sindy; 61845 Tiny Tears; 62842 Kewpie
+G: 12046 46185
+
+T sports_day_events | sports day events
+W: 25063 egg and spoon race; 29561 marathon [race]; 39841 long jump (verb); 39842 high jump (verb); 39846 triple jump (verb); 42635 relay [electronics]; 43895 100 metres; 43898 200 metres; 43900 400 metres; 43913 hurdles; 43932 sprint relay; 43933 shot put [event]; 43934 discus [sport]; 43935 discus throw; 43936 javelin [sport]; 43937 javelin throw; 44009 finish line; 44072 tug of war; 46111 sack race; 46189 three-legged race; 46190 sprint [race] (verb); 46191 obstacle course; 46192 wheelbarrow race; 46193 skipping race; 46194 bean bag race; 46195 parents race; 46196 potato race; 46197 hoop race; 46198 welly wanging; 46199 cross-country [running]; 46200 rope climbing; 46201 balloon race; 46202 water relay; 46203 hopping race; 46204 sponge relay; 46205 baton [relay]; 46206 starter pistol; 46207 rosette [award]; 46208 house points; 46209 flag race; 46210 obstacle race; 46211 running race; 46212 standing jump; 61846 slow bike race; 61847 tunnel ball
+G: 43936 43937; 43934 43935
+
+T toy_brands | toy brands
+W: 5924 Lego; 5925 Barbie [fashion doll]; 5932 Slinky; 5933 Frisbee; 5946 Play-Doh; 5967 Etch A Sketch; 5968 Rubik's Cube; 5983 Matchbox car; 5984 Hot Wheels; 5985 Tamagotchi; 5986 Beyblade; 5987 Transformers [toy]
+
+T traditional_playthings | traditional playthings
+W: 5928 spinning top; 5929 marbles [toy]; 5930 rocking horse; 5931 jack-in-the-box; 5952 kaleidoscope; 5960 conkers; 5961 cat's cradle; 5962 jacks [game]; 5963 pick-up sticks; 5988 clockwork toy; 5989 wind-up toy; 5990 diabolo; 5991 bilboquet; 5992 whirligig [toy]; 5997 hobby horse; 64356 tin soldier
+
+T turkish_football_clubs | turkish football clubs
+W: 46213 Galatasaray; 46214 Cim Bom; 46215 Fenerbahçe; 46218 Beşiktaş; 46220 Kara Kartallar; 46221 Trabzonspor; 46222 Başakşehir; 46224 Istanbul Basaksehir; 46225 Konyaspor; 46226 Sivasspor; 46227 Antalyaspor; 46228 Alanyaspor; 46229 Kayserispor; 46230 Rizespor; 46231 Caykur Rizespor; 46232 Gaziantep FK; 46233 Samsunspor; 46234 Bursaspor; 46235 Göztepe; 46237 Kasımpaşa; 46239 Hatayspor; 46240 Eyüpspor; 46242 Gençlerbirliği; 46244 Ankaragücü; 46246 Adana Demirspor; 46247 Karagümrük; 46249 Fatih Karagumruk; 46250 Eskişehirspor; 46251 Kocaelispor; 46252 Sakaryaspor; 46253 Boluspor; 46254 Giresunspor; 46255 Denizlispor; 46256 Pendikspor; 46257 Bandırmaspor
+G: 46230 46231; 46247 46249; 46222 46224; 46218 46220; 46213 46214
+
+T middle_eastern_pastimes | middle eastern pastimes | backgammon, falconry, camel racing, baloot
+W: 5343 pearl diving; 5568 camel racing; 5569 falconry; 5591 camel wrestling; 5600 hawking [falconry]; 5716 backgammon; 5732 dominoes; 5736 rummy; 5769 mancala; 15444 shisha [hookah]; 15445 narghile; 46258 baloot; 46259 hookah [water pipe]; 46262 water pipe; 46263 tawla; 46265 dama [checkers game]; 46266 okey [tile game]; 46267 oil wrestling; 46269 jereed; 46270 horse archery; 46271 saluki racing; 46272 dune bashing; 46273 sand skiing; 46274 zurkhaneh; 46275 senet; 46276 tarneeb; 46277 sheesh besh
+G: 46259 15445 15444 46262
+
+T african_soccer_clubs | african soccer clubs
+W: 46279 Al Ahly; 46281 Zamalek; 46282 Kaizer Chiefs; 46283 Orlando Pirates; 46284 Mamelodi Sundowns; 46286 TP Mazembe; 46288 Wydad Casablanca; 46289 Wydad; 46290 Raja Casablanca; 46291 Raja; 46292 Espérance; 46294 Asante Kotoko; 46295 Hearts of Oak; 46296 Enyimba; 46297 Simba SC; 46299 Yanga [Tanzanian football club]; 46300 Étoile du Sahel; 46302 Club Africain; 46303 JS Kabylie; 46304 CR Belouizdad; 46305 Pyramids FC; 46306 Al Masry; 46307 Gor Mahia; 46308 Rangers International; 46309 Plateau United; 46311 SuperSport United; 46312 Cape Town City; 46313 Stellenbosch FC; 46314 Horoya AC; 46315 CS Sfaxien; 46316 Al Merrikh; 46317 Petro de Luanda; 46318 Kano Pillars; 46319 Lobi Stars; 62843 AS Vita
+G: 46288 46289; 46290 46291
+
+T south_asian_games | south asian games | kabaddi, kho kho, carrom, gilli danda
+W: 5444 kalaripayattu; 5728 Ludo; 5729 Parchís; 5730 snakes and ladders; 5956 hopscotch; 38522 kabaddi; 46320 kho kho; 46321 carrom; 46323 gilli danda; 46324 danda goli; 46325 pachisi; 46326 chaupar; 46327 pallanguzhi; 46328 lagori; 46329 seven stones; 46330 marbles [game]; 46331 kancha; 46332 goli; 46333 kite fighting; 46334 mallakhamba; 46335 kushti; 46336 pehlwani; 46337 chaturanga; 46338 langdi; 46339 atya patya; 46340 lattu [spinning top]; 46341 antakshari; 46342 chinnidandu; 46343 vamana guntalu
+G: 46335 46336; 46328 46329; 46331 46332 46323 46324; 5728 5729; 46325 46326
+
+T afl_clubs | afl clubs
+W: 46385 Collingwood; 46386 Magpies [AFL club]; 46387 Pies [AFL club]; 46388 Carlton [AFL club]; 46389 Blues [AFL club]; 46390 Essendon; 46391 Bombers [AFL club]; 46392 Richmond [AFL club]; 46393 Tigers [AFL club]; 46394 Hawthorn [AFL club]; 46395 Hawks [AFL club]; 46396 Geelong Cats; 46399 Melbourne Demons; 46401 North Melbourne; 46402 Kangaroos [AFL club]; 46403 Roos; 46404 Western Bulldogs; 46405 Doggies; 46406 St Kilda; 46407 Saints [AFL club]; 46408 Sydney Swans; 46409 Swans [AFL club]; 46410 West Coast Eagles; 46411 Eagles [AFL club]; 46412 Adelaide Crows; 46414 Port Adelaide; 46415 Power [AFL club]; 46416 Fremantle [AFL club]; 46417 Dockers [AFL club]; 46418 Brisbane Lions; 46420 Gold Coast Suns; 46421 Suns [AFL club]; 46422 GWS Giants; 46423 Greater Western Sydney; 46424 Giants [AFL club]; 46425 Fitzroy [AFL club]; 46426 Brisbane Bears; 46427 South Melbourne [AFL club]; 46428 Footscray [AFL club]
+G: 46401 46402 46403; 46406 46407; 46416 46417; 46392 46393; 46385 46386 46387; 46422 46424 46423; 46414 46415; 46408 46409; 46388 46389; 46420 46421; 46390 46391; 46410 46411; 46394 46395; 46404 46405
+
+T south_american_soccer_clubs | south american soccer clubs
+W: 46429 Boca Juniors; 46431 River Plate [soccer club]; 46432 Flamengo; 46433 Corinthians; 46434 Palmeiras; 46435 Santos [Brazilian club]; 46436 São Paulo [Brazilian club]; 46438 Grêmio; 46440 Internacional [Brazilian club]; 46441 Cruzeiro [club]; 46442 Atlético Mineiro; 46444 Galo [Brazilian club]; 46445 Fluminense; 46446 Botafogo; 46447 Peñarol; 46449 Nacional [Uruguayan club]; 46450 Independiente; 46452 San Lorenzo; 46453 Estudiantes; 46454 Vélez Sarsfield; 46456 Newell's Old Boys; 46457 Rosario Central; 46458 Colo-Colo; 46459 Universidad de Chile; 46460 Olimpia [Paraguayan club]; 46461 Cerro Porteño; 46463 Libertad [Paraguayan club]; 46464 LDU Quito; 46465 Barcelona SC; 46466 Millonarios; 46467 Atlético Nacional; 46469 América de Cali; 46470 Alianza Lima; 46471 Universitario; 46472 Sporting Cristal; 46473 Bolívar [Bolivian club]; 46475 The Strongest; 50148 Vasco da Gama [soccer club]; 63343 Racing [Avellaneda]
+G: 46442 46444; 46449 46467
+
+T capoeira_words | capoeira words
+W: 5438 capoeira; 38536 berimbau; 46476 roda [capoeira circle]; 46477 ginga; 46478 atabaque; 46479 pandeiro [tambourine]; 46480 agogô; 46482 reco-reco; 46483 caxixi; 46484 mestre [capoeira master]; 46485 capoeirista; 46486 aú [cartwheel]; 46487 rasteira; 46488 meia lua de frente; 46489 armada [capoeira kick]; 46490 bênção [capoeira kick]; 46491 queixada; 46492 martelo [capoeira kick]; 46493 negativa; 46494 rolê; 46495 esquiva; 46496 cocorinha; 46497 malícia; 46499 jogo [capoeira game]; 46500 bateria [capoeira band]; 46501 ladainha; 46502 corrido; 46503 batizado; 46504 cordão; 46505 corda; 46506 mandinga; 46507 Angola; 46508 Regional; 46509 Mestre Bimba; 46510 Mestre Pastinha; 46511 chamada [capoeira call]; 46512 volta ao mundo; 46513 meia-lua; 61848 chapa [capoeira kick]; 61849 cabeçada [capoeira]; 61850 tesoura [capoeira]; 61851 ponteira [capoeira]; 61852 gunga [capoeira]
+G: 46504 46505
+
+T highland_games | highland games
+W: 6020 bagpipes; 11800 highland fling; 11803 sword dance; 24344 kilt; 28273 piping [bagpipes]; 38552 tartan [cloth]; 43938 hammer throw; 44072 tug of war; 46198 welly wanging; 46514 caber toss; 46515 tossing the caber; 46516 caber; 46517 stone put; 46518 putting the stone; 46519 Braemar stone; 46520 weight over the bar; 46521 weight for distance; 46522 sheaf toss; 46523 hill race; 46524 Highland dancing; 46525 pipe band; 46526 Scottish dancing; 46527 Braemar Gathering; 46528 Cowal Gathering; 46529 heavy events; 46530 light events; 46531 clan tent; 46532 haggis hurling; 46533 Seann Triubhas; 46534 heavies
+G: 46516 46514 46515; 46517 46519 46518
+
+T british_pub_games | british pub games
+W: 5249 darts; 5251 snooker; 5252 pool [cue sport]; 5273 quoits; 5278 shuffleboard; 5418 arm wrestling; 5662 slot machine; 5665 pokies; 5732 dominoes; 5738 cribbage; 5739 whist; 5740 euchre; 5764 nine men's morris; 20998 shove ha'penny; 45500 shut the box; 46535 skittles [game]; 46536 bar billiards; 46537 bar skittles; 46538 table skittles; 46539 table football; 46540 foosball; 46541 aunt sally; 46542 bat and trap; 46543 toad in the hole [pub game]; 46544 devil among the tailors; 46545 ring the bull; 46546 bull and ring; 46547 quiz; 46548 spoof [guessing game]; 46549 three-card brag; 46551 dwile flonking; 46552 hood skittles; 46553 killer [darts game]
+G: 46545 46546; 46539 46540; 5662 5665
+
+T instruments | instruments
+W: 279 guitar; 280 violin; 281 cello; 282 harp [instrument]; 283 viola [instrument]; 284 double bass; 285 banjo; 286 ukulele; 287 mandolin; 289 sitar; 292 trumpet [instrument]; 293 trombone; 294 tuba; 295 French horn; 296 cornet [instrument]; 5998 piano; 5999 pianoforte; 6003 flute; 6004 saxophone; 6006 clarinet; 6007 organ [instrument]; 6008 accordion; 6009 squeezebox; 6010 harmonica; 6011 mouth organ; 6012 tambourine; 6013 triangle [instrument]; 6014 xylophone; 6015 recorder [instrument]; 6016 oboe; 6017 bassoon; 6018 piccolo [instrument]; 6019 harpsichord; 6020 bagpipes; 6022 kazoo; 6023 maracas; 6024 cymbals; 6025 timpani; 6026 kettledrums; 6027 glockenspiel; 6028 marimba; 6029 synthesizer; 6032 didgeridoo; 6034 bongos; 6035 castanets; 6036 tabla; 6037 lyre; 6038 ocarina; 6039 melodica; 6040 dulcimer; 6041 theremin; 6042 hurdy-gurdy; 6043 sackbut; 6044 serpent [instrument]; 6045 shawm; 6046 cimbalom; 6047 nyckelharpa; 6048 ondes Martenot; 6049 crwth; 6050 hang drum; 6051 glass harmonica; 6052 spinet; 6053 bodhrán; 6055 vuvuzela; 10595 drum [instrument]
+G: 6008 6009; 5998 5999; 6010 6011; 6025 6026
+
+T string_instruments | string instruments
+W: 279 guitar; 280 violin; 281 cello; 282 harp [instrument]; 283 viola [instrument]; 284 double bass; 285 banjo; 286 ukulele; 287 mandolin; 288 lute; 289 sitar; 290 balalaika; 291 zither; 6019 harpsichord; 6037 lyre; 6040 dulcimer; 6042 hurdy-gurdy; 10535 bass guitar; 10536 electric guitar; 10537 acoustic guitar; 10538 bouzouki; 10539 koto; 10540 oud [instrument]; 10541 banjolele; 10542 theorbo; 10543 viol [instrument]; 10544 rebec; 10545 cittern; 10546 autoharp; 10547 psaltery; 10548 erhu; 10549 pedal steel; 10550 violone; 10551 charango; 50422 axe [guitar]
+
+T guitar_types | guitar types
+W: 10535 bass; 10536 electric; 10537 acoustic; 10549 pedal steel; 51338 classical; 51339 twelve-string; 51341 steel-string; 51342 flamenco; 51343 lap steel; 51344 slide; 51345 resonator; 51346 dobro; 51348 hollow-body; 51349 semi-acoustic; 51350 acoustic-electric; 51351 baritone; 51352 Stratocaster; 51353 Telecaster; 51354 Les Paul [guitar]; 51355 Flying V; 51356 Gibson SG; 51357 Hawaiian; 51358 seven-string; 51359 fretless; 51360 travel; 51361 parlor; 51363 dreadnought; 51364 jumbo; 51365 gypsy jazz; 51366 guitalele; 51367 harp guitar; 51368 cigar box; 62844 archtop
+G: 51345 51346
+
+T bowed_instruments | bowed instruments
+W: 280 violin; 281 cello; 283 viola [instrument]; 284 double bass; 6047 nyckelharpa; 6049 crwth; 10543 viol [instrument]; 10544 rebec; 10548 erhu; 10550 violone; 10654 fiddle [violin]; 20981 vielle; 38532 hardanger fiddle; 51369 viola da gamba; 51370 gamba [instrument]; 51371 viola d'amore; 51372 sarangi; 51373 kemenche; 51374 morin khuur; 51375 horsehead fiddle; 51376 gadulka; 51377 octobass; 51378 musical saw; 51379 bowed psaltery; 51380 rebab; 51381 gusle; 51382 baryton; 51383 tromba marina; 51384 kokyu; 51385 lyra [bowed lyre]; 51386 violino piccolo
+G: 51369 51370; 51374 51375
+
+T woodwind_instruments | woodwind instruments
+W: 6003 flute; 6004 saxophone; 6006 clarinet; 6015 recorder [instrument]; 6016 oboe; 6017 bassoon; 6018 piccolo [instrument]; 6020 bagpipes; 6038 ocarina; 6045 shawm; 10552 tin whistle; 10553 penny whistle; 10554 English horn; 10555 cor anglais; 10556 contrabassoon; 10557 bass clarinet; 10558 alto flute; 10559 bass flute; 10560 alto saxophone; 10561 tenor saxophone; 10562 baritone sax; 10563 soprano sax; 10564 pan flute; 10565 panpipes; 10566 bass oboe; 10567 basset horn; 10568 crumhorn; 10569 sopranino; 10570 heckelphone; 10571 fife [instrument]; 10572 shakuhachi; 10573 duduk; 10574 chalumeau; 10575 oboe d'amore; 10576 bansuri
+G: 10552 10553; 10564 10565; 10554 10555
+
+T brass_instruments | brass instruments
+W: 292 trumpet [instrument]; 293 trombone; 294 tuba; 295 French horn; 296 cornet [instrument]; 297 bugle [instrument]; 298 euphonium; 299 flugelhorn; 300 sousaphone; 6043 sackbut; 6044 serpent [instrument]; 6055 vuvuzela; 10578 bass trombone; 10579 piccolo trumpet; 10580 baritone horn; 10581 tenor horn; 10582 alto horn; 10583 mellophone; 10584 bass tuba; 10585 natural horn; 10586 alphorn; 10587 ophicleide; 10588 post horn; 10589 cimbasso; 10590 wagner tuba; 10591 slide trombone; 10592 hunting horn; 10593 shofar; 10594 horn [instrument]
+G: 10594 295
+
+T horn_types | horn types
+W: 295 French; 10580 baritone; 10581 tenor; 10582 alto; 10585 natural; 10588 post; 10592 hunting
+
+T percussion_instruments | percussion instruments
+W: 6002 drum kit; 6012 tambourine; 6013 triangle [instrument]; 6014 xylophone; 6023 maracas; 6024 cymbals; 6025 timpani; 6026 kettledrums; 6027 glockenspiel; 6028 marimba; 6034 bongos; 6035 castanets; 6036 tabla; 6053 bodhrán; 10595 drum [instrument]; 10596 gong [instrument]; 10597 tam-tam; 10598 snare drum; 10599 bass drum; 10600 vibraphone; 10601 cowbell; 10602 woodblock; 10603 congas; 10604 tom-tom; 10605 hi-hat; 10606 djembe; 10607 cajon; 10608 steel drum; 10609 steelpan; 10610 tubular bells; 10611 guiro; 10612 claves; 10613 timbales; 10614 washboard; 10615 rainstick; 10616 cabasa; 10617 agogo [percussion]; 10618 vibraslap; 10619 cuica; 10620 crash cymbal; 10621 ride cymbal; 10622 chimes [instrument]; 10623 sleigh bells; 10624 spoons [instrument]; 10625 rattle [instrument]; 10626 shaker [instrument]; 50423 skins [drums]
+G: 10608 10609; 6025 6026
+
+T drums | drums
+W: 6012 tambourine; 6025 timpani; 6026 kettledrums; 6036 tabla; 6053 bodhrán; 10604 tom-tom; 10606 djembe; 10607 cajon; 10609 steelpan; 10613 timbales; 10619 cuica; 10662 taiko; 10669 darbuka; 13911 surdo; 20984 tabor [small drum]; 35290 talking; 46479 pandeiro [tambourine]; 51387 floor tom; 51388 bongo [drum]; 51389 conga [drum]; 51390 frame; 51391 dhol; 51392 mridangam; 51394 slit; 51395 udu; 51396 tsuzumi; 51397 tenors; 51398 dholak; 51400 kettle [drum]; 62845 bata; 63347 snare [percussion]; 64375 bass [kick]; 65914 kit [full percussion set]; 65916 goblet [darbuka-style drum]; 65917 steel pan
+G: 65917 10609; 10669 65916; 6025 6026
+
+T keyboard_instruments | keyboard instruments
+W: 5998 piano; 5999 pianoforte; 6007 organ [instrument]; 6008 accordion; 6009 squeezebox; 6019 harpsichord; 6029 synthesizer; 6039 melodica; 6052 spinet; 10627 keyboard [instrument]; 10628 grand piano; 10629 upright piano; 10630 electric piano; 10631 celesta; 10632 clavichord; 10633 harmonium; 10634 pipe organ; 10637 virginal [instrument]; 10638 fortepiano; 10639 mellotron; 10640 clavinet; 10641 player piano; 10642 pianola; 10643 baby grand; 10644 digital piano; 10645 stage piano; 10646 toy piano; 10647 concert grand; 10648 wurlitzer; 10649 cathedral organ; 10651 carillon; 13711 calliope [instrument]
+G: 6008 6009; 5998 5999; 10641 10642
+
+T folk_instruments | folk instruments
+W: 282 harp [instrument]; 285 banjo; 286 ukulele; 287 mandolin; 288 lute; 289 sitar; 290 balalaika; 6008 accordion; 6009 squeezebox; 6010 harmonica; 6011 mouth organ; 6012 tambourine; 6020 bagpipes; 6028 marimba; 6032 didgeridoo; 6036 tabla; 6037 lyre; 6040 dulcimer; 6042 hurdy-gurdy; 6053 bodhrán; 10537 acoustic guitar; 10538 bouzouki; 10539 koto; 10540 oud [instrument]; 10548 erhu; 10551 charango; 10552 tin whistle; 10553 penny whistle; 10565 panpipes; 10606 djembe; 10652 uilleann pipes; 10653 concertina; 10654 fiddle [violin]; 10656 mbira; 10657 thumb piano; 10658 kalimba; 10659 shamisen; 10660 pipa; 10661 guzheng; 10662 taiko; 10663 santoor; 10664 sarod; 10665 veena; 10666 tanpura; 10667 ney; 10668 saz; 10669 darbuka; 10670 balafon; 10671 quena; 10672 zampona; 10673 cuatro [guitar]; 10674 jaw harp; 10675 bandura; 10676 gaida; 10677 zurna; 10678 sheng; 10679 gamelan; 38530 kora [harp-lute]; 51393 goblet drum
+G: 10552 10553; 6008 6009; 10669 51393; 6010 6011; 10656 10658 10657
+
+T middle_eastern_instruments | middle eastern instruments
+W: 288 lute; 6012 tambourine; 10540 oud [instrument]; 10573 duduk; 10667 ney; 10668 saz; 10669 darbuka; 10677 zurna; 10757 finger cymbals; 51373 kemenche; 51380 rebab; 51393 goblet drum; 51401 qanun; 51403 daf; 51404 baglama; 51405 santur; 51406 kamancheh; 51407 tar [lute]; 51408 setar; 51409 riq; 51410 mizmar; 51411 tanbur; 51412 tombak; 51413 mijwiz; 51414 buzuq; 51415 arghul; 51416 bendir; 51417 cumbus; 51418 lavta; 51419 doumbek; 51420 rababa; 51421 kudum
+G: 10669 51393
+
+T african_instruments | african instruments
+W: 6014 xylophone; 6028 marimba; 6055 vuvuzela; 10606 djembe; 10617 agogo [percussion]; 10656 mbira; 10657 thumb piano; 10658 kalimba; 10670 balafon; 35290 talking drum; 38530 kora [harp-lute]; 46483 caxixi; 51395 udu; 51422 shekere; 51423 ngoni; 51424 xalam; 51425 dunun; 51427 krar; 51428 masenqo; 51429 adungu; 51430 ilimba; 51431 likembe; 51432 sanza; 51433 gankogui; 51434 atumpan; 51435 ngoma [drum]; 51436 kudu horn; 51437 embaire; 51438 ekwe; 51439 bougarabou; 51440 mouth bow; 51441 sistrum; 61853 drum
+G: 10656 10658 10657
+
+T chinese_instruments | chinese instruments
+W: 10548 erhu; 10597 tam-tam; 10660 pipa; 10661 guzheng; 10678 sheng; 51442 dizi [flute]; 51443 flute; 51444 suona; 51445 yangqin; 51446 guqin; 51447 xiao [flute]; 51448 hulusi; 51449 ruan; 51450 zhongruan; 51451 liuqin; 51452 sanxian; 51453 yunluo; 51454 paiban; 51455 bianzhong; 51456 xun [ocarina]; 51457 gaohu; 51458 banhu; 51459 yueqin; 51460 gong; 51461 konghou; 51462 bangu; 51463 muyu [wood block]; 51464 paixiao; 51465 jinghu; 61854 zither; 61855 lute
+
+T japanese_instruments | japanese instruments
+W: 10539 koto; 10572 shakuhachi; 10659 shamisen; 10662 taiko; 51384 kokyu; 51396 tsuzumi; 51466 biwa; 51467 shinobue; 51468 hichiriki; 51469 sho [mouth organ]; 51470 ryuteki; 51471 kakko; 51472 wadaiko; 51473 taishogoto; 51474 sanshin; 51475 odaiko; 51476 hyoshigi; 51477 mokugyo; 51478 suzu [bell]; 51479 nohkan; 51480 yokobue; 51481 sasara; 51482 tsuri-daiko; 51483 okedo; 51484 gekkin; 51485 kagurabue; 51486 kane [gong]; 51487 uchiwa-daiko; 51488 sanbasou; 61856 drum; 61857 harp
+
+T indian_instruments | indian instruments
+W: 289 sitar; 6036 tabla; 10576 bansuri; 10633 harmonium; 10663 santoor; 10664 sarod; 10665 veena; 10666 tanpura; 51372 sarangi; 51391 dhol; 51392 mridangam; 51398 dholak; 51489 shehnai; 51490 ektara; 51491 pakhawaj; 51492 tumbi; 51493 nadaswaram; 51494 ghatam; 51495 jal tarang; 51496 esraj; 51497 dilruba; 51498 rudra veena; 51499 algoza; 51500 morsing; 51501 kartal; 51502 manjira; 51503 damru; 51504 sursingar; 51505 swarmandal; 51506 tavil; 51507 khol; 51508 gubgubi; 51509 sarinda; 51510 tabla tarang; 51511 sundari
+
+T pacific_instruments | pacific instruments
+W: 286 ukulele; 6032 didgeridoo; 18838 pâté; 22750 clapsticks; 35460 bullroarer; 51394 slit drum; 51512 nose flute; 51513 pahu; 51514 ipu [gourd drum]; 51515 koauau; 51516 putorino; 51517 pukaea; 51518 putatara; 51519 purerehua; 51520 toere; 51521 nguru; 51522 lali; 51523 garamut; 51524 kundu; 51525 uliuli; 51526 puniu; 51527 kalaau; 51528 ukeke; 51529 conch shell; 51530 pu [conch trumpet]; 51531 hapi; 51532 tokere; 51533 tifa [drum]; 51534 vivo; 51535 gumleaf; 51536 bamboo flute; 61858 steel guitar; 61859 log drum
+
+T andean_instruments | andean instruments
+W: 279 guitar; 6023 maracas; 6038 ocarina; 10551 charango; 10564 pan flute; 10565 panpipes; 10607 cajon; 10671 quena; 10672 zampona; 10673 cuatro [guitar]; 51537 siku; 51538 bombo [drum]; 51539 tarka; 51540 pinkillo; 51541 erke; 51542 guitarron; 51543 bandurria; 51544 chajchas; 51545 antara; 51546 rondador; 51547 quenacho; 51548 moseno; 51549 wankara; 51550 charrasca; 51551 tiple; 51552 requinto; 51553 bandola; 51554 pututu; 51555 sikuri; 51556 ayarachi; 51557 huaylaquepa; 51558 vihuela; 51559 zamponia; 61860 flute
+G: 10564 10565
+
+T celtic_instruments | celtic instruments
+W: 282 harp [instrument]; 6008 accordion; 6009 squeezebox; 6020 bagpipes; 6042 hurdy-gurdy; 6049 crwth; 6053 bodhrán; 10538 bouzouki; 10545 cittern; 10552 tin whistle; 10553 penny whistle; 10652 uilleann pipes; 10653 concertina; 10654 fiddle [violin]; 51560 bombarde; 51561 Highland bagpipes; 51562 Scottish smallpipes; 51563 clarsach; 51564 low whistle; 51565 Irish flute; 51566 melodeon; 51567 pibgorn; 51568 hornpipe [instrument]; 51569 lambeg drum; 51570 bones [percussion]; 51571 spoons [percussion]; 51572 mandola; 51573 Irish harp; 51574 Northumbrian pipes; 51575 gaita; 51576 biniou; 51577 triple harp; 51578 Welsh harp
+G: 10552 10553; 6008 6009
+
+T blown_instruments | blown instruments
+W: 6010 harmonica; 6011 mouth organ; 6020 bagpipes; 6032 didgeridoo; 10552 tin whistle; 10553 penny whistle; 10565 panpipes; 10652 uilleann pipes; 10667 ney; 10671 quena; 10672 zampona; 10676 gaida; 10677 zurna; 10678 sheng
+
+T struck_instruments | struck instruments
+W: 6012 tambourine; 6028 marimba; 6036 tabla; 6053 bodhrán; 10606 djembe; 10662 taiko; 10669 darbuka; 10670 balafon; 10679 gamelan; 51393 goblet drum
+
+T electronic_instruments | electronic instruments
+W: 6029 synthesizer; 6041 theremin; 6048 ondes Martenot; 10536 electric guitar; 10630 electric piano; 10635 Hammond organ; 10636 Rhodes piano; 10639 mellotron; 10680 drum machine; 10681 sampler [music]; 10682 keytar; 10683 vocoder; 10684 sequencer; 10685 electronic drums; 10686 MIDI controller; 10687 turntable [record player]; 10688 Moog; 10689 Stylophone; 10690 TB-303; 10691 TR-808; 10692 Fairlight; 10693 electric organ; 10694 electric bass; 10695 talk box; 10696 loop pedal; 10697 groovebox; 10698 modular synth; 10699 drum pad; 10700 launchpad [music]; 10701 analog synth; 10702 digital synth; 10703 Casio keyboard; 10704 keyboard; 10705 wavetable synth; 10706 Minimoog
+G: 10693 10635; 10630 10636; 10704 10703
+
+T instrument_parts | instrument parts
+W: 6067 key [music]; 10707 string [music]; 10709 bow [music]; 10711 pedal [music]; 10712 guitar neck; 10713 fretboard; 10714 fingerboard; 10715 fret [guitar part]; 10716 bridge [music]; 10717 tuning peg; 10718 machine head; 10719 tuning key; 10720 headstock; 10721 soundboard; 10722 sound hole; 10723 pickup [music]; 10724 whammy bar; 10725 tremolo arm; 10726 mouthpiece; 10727 reed [music]; 10728 valve [music]; 10729 bell [music]; 10730 slide [music]; 10731 mute [music]; 10732 damper [instrument]; 10733 soundpost; 10734 f-hole; 10735 nut [music]; 10736 tailpiece; 10737 chin rest; 10738 endpin; 10739 capo; 10740 plectrum; 10741 pick [music]; 10742 rosin [violin]; 10743 wrest pin; 10744 keyboard [music]; 10745 pitch pipe; 10746 truss rod; 10747 pickguard; 10748 octave key; 10749 thumb rest; 10750 stop [organ]; 50419 neck [instrument]; 50420 scroll [instrument]; 50421 head [drum]
+G: 10713 10714; 10717 10718 10719; 10724 10725; 10740 10741
+
+T guitar_parts | guitar parts
+W: 10707 string [music]; 10713 fretboard; 10714 fingerboard; 10715 fret [guitar part]; 10716 bridge [music]; 10717 tuning peg; 10718 machine head; 10719 tuning key; 10720 headstock; 10721 soundboard; 10723 pickup [music]; 10724 whammy bar; 10725 tremolo arm; 10735 nut [music]; 10736 tailpiece; 10746 truss rod; 10747 pickguard; 35267 volume knob; 50419 neck [instrument]; 51579 saddle [guitar]; 51580 soundhole; 51581 body [instrument]; 51582 tone knob; 51583 strap button; 51584 binding [guitar]; 51585 heel [guitar]; 51586 cutaway [guitar]; 51587 inlay [fretboard]; 51588 output jack; 51589 pickup selector; 51591 rosette [guitar]; 51592 string tree; 51593 position marker; 51594 humbucker
+G: 10713 10714; 10717 10718 10719; 10724 10725
+
+T piano_parts | piano parts
+W: 6067 key [music]; 10707 string [music]; 10711 pedal [music]; 10721 soundboard; 10732 damper [instrument]; 10744 keyboard [music]; 11048 music stand; 51595 black keys; 51596 white keys; 51597 sustain pedal; 51598 soft pedal; 51599 sostenuto pedal; 51600 lid [piano]; 51601 hammer [piano]; 51602 fallboard; 51603 pin block; 51604 tuning pins; 51605 cast iron frame; 51606 bridge [piano]; 51607 action [piano]; 51608 wippen; 51609 jack [piano]; 51610 escapement [piano]; 51611 keybed; 51612 music desk; 51613 bench; 51614 una corda; 51615 key slip; 51616 capstan [piano]; 51617 legs [piano]; 51618 case [piano]; 51619 felt [piano]; 51620 hitch pin; 51621 back check; 51622 pedal lyre
+
+T classroom_instruments | classroom instruments
+W: 286 ukulele; 6010 harmonica; 6011 mouth organ; 6012 tambourine; 6013 triangle [instrument]; 6014 xylophone; 6015 recorder [instrument]; 6022 kazoo; 6023 maracas; 6027 glockenspiel; 6034 bongos; 6035 castanets; 6039 melodica; 10601 cowbell; 10602 woodblock; 10611 guiro; 10612 claves; 10615 rainstick; 10616 cabasa; 10623 sleigh bells; 10626 shaker [instrument]; 10627 keyboard [instrument]; 10751 hand drum; 10752 jingle bells; 10753 handbells; 10754 metallophone; 10755 chime bars; 10756 tone block; 10757 finger cymbals; 10758 rhythm sticks; 10759 egg shaker; 10760 whistle [instrument]; 10761 slide whistle; 10762 tone bars; 10763 boomwhackers
+G: 6010 6011
+
+T orchestra_instruments | orchestra instruments
+W: 280 violin; 281 cello; 282 harp [instrument]; 283 viola [instrument]; 284 double bass; 292 trumpet [instrument]; 293 trombone; 294 tuba; 295 French horn; 6003 flute; 6006 clarinet; 6013 triangle [instrument]; 6014 xylophone; 6016 oboe; 6017 bassoon; 6018 piccolo [instrument]; 6024 cymbals; 6025 timpani; 6027 glockenspiel
+
+T plucked_instruments | plucked instruments
+W: 279 guitar; 282 harp [instrument]; 285 banjo; 286 ukulele; 287 mandolin; 289 sitar; 6019 harpsichord; 6037 lyre; 6040 dulcimer
+
+T music_genres | music genres
+W: 6212 disco; 10764 rock; 10765 pop [music]; 10766 jazz [music]; 10767 blues [music]; 10768 country [music]; 10769 hip hop [music]; 10771 classical [music]; 10772 reggae; 10773 metal [music]; 10774 heavy metal; 10775 punk [music]; 10776 folk [music]; 10777 soul [music]; 10778 funk; 10779 gospel [music]; 10780 rap [music]; 10781 R&B; 10782 opera [stage art]; 10783 techno; 10785 indie [music genre]; 10786 grunge; 10787 ska; 10788 swing [music]; 10789 bluegrass [music]; 10790 salsa [music]; 10791 trance [music]; 10792 dubstep; 10793 emo [music]; 10794 drum and bass; 10795 ambient [music]; 10796 new wave; 10797 Motown; 10798 K-pop; 10799 Britpop; 10800 shoegaze; 10801 trip hop; 10802 math rock; 10803 doo-wop; 10804 zydeco; 10805 vaporwave; 10806 bossa nova; 10807 krautrock; 10808 trap [music]; 10809 synthpop; 10810 glam rock; 10811 psychedelia; 10812 rockabilly; 10813 easy listening; 51656 house [music]
+G: 10773 10774
+
+T rock_styles | rock styles
+W: 10774 heavy metal; 10775 punk [music]; 10785 indie [music genre]; 10786 grunge; 10793 emo [music]; 10796 new wave; 10799 Britpop; 10800 shoegaze; 10802 math; 10807 krautrock; 10810 glam; 10812 rockabilly; 51623 rock and roll; 51624 hard; 51626 classic; 51627 soft; 51629 alternative; 51630 folk; 51631 blues; 51633 prog; 51634 psychedelic; 51635 acid; 51636 garage; 51637 southern; 51638 surf; 51639 pop punk; 51640 post-punk; 51641 art; 51642 stoner; 51643 yacht; 51644 hair metal; 51645 nu metal; 51646 thrash metal; 51647 death metal; 51648 post-rock; 51649 noise; 51650 power pop; 51651 arena; 51652 country; 51653 hardcore punk; 51654 Madchester; 51655 proto-punk; 59414 space [music]
+G: 51634 51635
+
+T electronic_music_styles | electronic music styles
+W: 10783 techno; 10791 trance [music]; 10792 dubstep; 10794 drum and bass; 10795 ambient [music]; 10801 trip hop; 10805 vaporwave; 10809 synthpop; 10990 lo-fi (adjective); 51656 house [music]; 51657 EDM; 51659 synthwave; 51660 electro [music]; 51661 IDM; 51662 breakbeat; 51663 UK garage; 51664 jungle [music]; 51665 hardstyle; 51666 chillwave; 51667 acid house; 51668 deep house; 51669 electroclash; 51670 big beat; 51671 glitch [music]; 51672 downtempo; 51673 eurodance; 51674 psytrance; 51675 gabber; 51676 dub techno; 51677 future bass; 51678 chiptune; 51679 happy hardcore; 51680 minimal techno; 51681 progressive house; 51682 Detroit techno; 51683 Italo disco; 51684 moombahton; 51685 tech house; 51686 hardcore techno; 51687 dark ambient; 51688 electro swing
+
+T techno_styles | techno styles
+W: 51676 dub; 51680 minimal; 51682 Detroit; 51686 hardcore
+
+T classical_forms | classical music forms
+W: 6081 overture; 6100 fugue; 6129 rhapsody; 6130 cantata; 6208 waltz; 6263 mazurka; 6264 gavotte; 6265 minuet; 10782 opera [stage art]; 10814 symphony [musical work]; 10815 concerto; 10816 sonata; 10817 suite [music]; 10818 requiem; 10819 mass [music]; 10820 oratorio; 10821 nocturne; 10822 prelude; 10823 etude; 10824 serenade; 10825 toccata; 10826 partita; 10827 divertimento; 10828 concerto grosso; 10829 string quartet; 10830 piano trio; 10831 symphonic poem; 10832 tone poem; 10833 scherzo; 10834 impromptu; 10835 bagatelle; 10836 capriccio; 10837 passacaglia; 10838 chaconne; 10839 sinfonia; 10840 rondo; 10841 intermezzo [interlude]; 10842 berceuse; 10843 barcarolle; 10844 polonaise; 10845 lied; 10846 madrigal [song]; 10847 motet; 10848 aria [solo song]; 10849 arioso; 10850 fantasia; 10851 variations; 10852 theme and variations; 10853 sarabande; 10854 gigue
+G: 10831 10832; 10851 10852
+
+T classical_dances | dances in classical music
+W: 6208 waltz; 6263 mazurka; 6264 gavotte; 6265 minuet; 10837 passacaglia; 10838 chaconne; 10844 polonaise; 10853 sarabande; 10854 gigue
+
+T works_for_voices | classical vocal works
+W: 6130 cantata; 10782 opera [stage art]; 10818 requiem; 10819 mass [music]; 10820 oratorio; 10845 lied; 10846 madrigal [song]; 10847 motet; 10848 aria [solo song]; 10849 arioso
+
+T orchestral_pieces | orchestral pieces
+W: 6081 overture; 6129 rhapsody; 10814 symphony [musical work]; 10815 concerto; 10817 suite [music]; 10827 divertimento; 10828 concerto grosso; 10831 symphonic poem; 10832 tone poem; 10839 sinfonia; 10841 intermezzo [interlude]
+
+T world_music_styles | world music styles
+W: 6209 tango; 6235 flamenco [dance]; 6236 polka; 6250 ceilidh; 6257 samba; 6261 rumba; 6275 tarantella; 10679 gamelan; 10772 reggae; 10787 ska; 10789 bluegrass [music]; 10790 salsa [music]; 10798 K-pop; 10804 zydeco; 10806 bossa nova; 10888 calypso [music]; 10889 mariachi; 10890 fado; 10891 afrobeat; 10892 bhangra; 10893 merengue; 10894 bachata; 10895 cumbia; 10896 reggaeton [music]; 10897 highlife; 10898 soca; 10899 zouk; 10900 qawwali; 10901 rai [music]; 10902 raga; 10903 klezmer; 10904 J-pop; 10906 mbaqanga; 10907 juju [music]; 10908 mento; 10909 dancehall [music]; 10910 tejano; 10911 norteno; 10912 joik; 10913 rebetiko; 10914 tropicalia; 10915 gqom; 10916 amapiano; 10917 kuduro; 10918 kizomba; 10919 forro; 10920 choro; 10921 chanson; 10922 schlager; 10923 gagaku; 10924 enka; 10925 dangdut; 51757 bollywood
+
+T african_music_styles | african music styles
+W: 10891 afrobeat; 10897 highlife; 10901 rai [music]; 10906 mbaqanga; 10907 juju [music]; 10915 gqom; 10916 amapiano; 10917 kuduro; 10918 kizomba; 51689 soukous; 51690 mbalax; 51691 kwaito; 51693 makossa; 51694 benga [music]; 51695 Congolese rumba; 51696 isicathamiya; 51697 marabi; 51698 chimurenga; 51699 taarab; 51700 gnawa; 51701 fuji [music]; 51702 palm-wine; 51703 coupe-decale; 51704 semba; 51705 morna; 51706 bikutsi; 51707 ndombolo; 51708 bongo flava; 51709 hiplife; 51710 township jive; 51711 mbube; 51712 sungura; 51713 kwela; 51714 jit [music]; 51715 zouglou; 51716 azonto; 51717 afro-pop; 51718 afro-house; 51719 apala; 51720 genge; 61861 African drumming; 61862 African jazz
+
+T arabic_music_words | arabic music words
+W: 6245 raqs sharqi; 10540 oud [instrument]; 10669 darbuka; 11805 dabke; 51393 goblet drum; 51401 qanun; 51410 mizmar; 51420 rababa; 51721 maqam; 51722 taqsim; 51723 tarab; 51724 mawwal; 51725 muwashshah; 51726 qasida; 51727 iqa; 51728 wasla; 51729 samai; 51730 bashraf; 51731 longa [music]; 51732 dulab; 51733 jins; 51734 zajal; 51735 takht; 51736 nashid; 51737 ataba; 51738 mijana; 51739 dawr; 51740 zaghrouta; 51741 shaabi; 51742 khaleeji; 51743 mizan [rhythm]; 51744 rast [maqam]; 51745 bayati; 51746 hijaz [maqam]; 51747 nahawand; 51748 saba [maqam]; 51749 sikah; 51750 ajam [maqam]; 51751 kurd [maqam]; 51752 tahmila; 61863 Umm Kulthum; 61864 Fairuz
+G: 10669 51393
+
+T asian_music_styles | asian music styles
+W: 10679 gamelan; 10798 K-pop; 10892 bhangra; 10900 qawwali; 10902 raga; 10904 J-pop; 10923 gagaku; 10924 enka; 10925 dangdut; 12457 pansori; 13265 ghazal; 51753 C-pop; 51754 Mandopop; 51755 Cantopop; 51756 kirtan; 51757 Bollywood; 51758 filmi; 51760 Hindustani classical; 51761 dhrupad; 51762 thumri; 51763 khayal; 51764 kroncong; 51765 trot [music]; 51766 minyo; 51767 city pop; 51768 visual kei; 51769 T-pop; 51770 V-pop; 51771 OPM [music]; 51772 luk thung; 51773 mor lam; 51774 nagauta; 51775 bhajan; 51776 baul [music]; 51777 lavani; 51778 Indipop; 51779 kayokyoku; 51780 shidaiqu; 51781 anime; 51782 Hindi pop; 62848 Carnatic; 64396 anison
+G: 64396 51781; 51758 51757
+
+T latin_music_styles | latin music styles
+W: 6209 tango; 6255 cha-cha; 6257 samba; 6261 rumba; 10790 salsa [music]; 10806 bossa nova; 10889 mariachi; 10893 merengue; 10894 bachata; 10895 cumbia; 10896 reggaeton [music]; 10910 tejano; 10911 norteno; 10914 tropicalia; 10919 forro; 10920 choro; 11787 lambada; 11789 milonga; 11790 danzon; 11792 joropo; 11794 marinera; 46502 corrido; 51783 mambo [music]; 51784 bolero [music]; 51785 ranchera; 51786 vallenato; 51787 banda [music]; 51788 son cubano; 51789 bomba [music]; 51790 plena; 51791 conjunto [music]; 51792 latin trap; 51793 dembow; 51794 pagode; 51795 axe [music]; 51796 sertanejo; 51797 MPB; 51798 baile funk; 51799 nueva cancion; 51800 huayno; 51801 champeta; 51802 timba; 51803 guaracha; 51804 candombe; 51805 Latin jazz; 51806 boogaloo [music]; 51807 Latin pop; 51808 charanga
+
+T american_roots_music | american roots music
+W: 10767 blues [music]; 10768 country [music]; 10776 folk [music]; 10779 gospel [music]; 10789 bluegrass [music]; 10804 zydeco; 10812 rockabilly; 10868 ragtime; 51809 Cajun; 51810 Appalachian folk; 51812 honky-tonk; 51813 western swing; 51814 Delta blues; 51815 Chicago blues; 51816 Piedmont blues; 51817 spirituals; 51818 work songs; 51819 field hollers; 51820 string band; 51821 Hillbilly; 51822 outlaw country; 51823 Americana [music]; 51824 jug band; 51825 swamp pop; 51826 swamp blues; 51827 Texas blues; 51828 sacred harp; 51829 shape-note singing; 51830 mountain; 51831 bluegrass gospel; 51832 Creole; 51833 hokum [music]; 51834 country blues; 51835 newgrass; 51836 southern gospel; 51837 Cajun two-step; 51838 banjo; 51839 fiddle tune; 59416 tex-mex [music]; 62849 old-time
+G: 51821 62849
+
+T blues_styles | blues styles
+W: 51814 Delta; 51815 Chicago; 51816 Piedmont; 51826 swamp; 51827 Texas; 51834 country
+
+T european_folk_music | european folk music
+W: 6235 flamenco [dance]; 6236 polka; 6263 mazurka; 6266 fandango; 6275 tarantella; 6802 sea shanty; 10844 polonaise; 10874 gypsy jazz [gypsy swing music]; 10890 fado; 10903 klezmer; 10912 joik; 10922 schlager; 11750 czardas; 11798 hora; 11806 sirtaki; 11808 kolo; 11810 jota; 51840 yodeling; 51842 ceilidh; 51843 rembetika; 51844 oompah; 51845 Volksmusik; 51846 polska [dance]; 51847 Romani; 51848 manele; 51849 chalga; 51850 turbo-folk; 51851 Balkan brass; 51852 tamburica; 51853 sardana; 51854 muneira; 51855 Nordic; 51856 Irish; 51857 Celtic; 51858 bagpipe music; 51859 skiffle; 51860 laiko; 51861 canzone napoletana; 51862 waltz musette
+
+T song_types | song types
+W: 3541 lullaby; 4308 hymn; 6077 duet; 6510 elegy; 6511 ballad; 6802 sea shanty; 10824 serenade; 10846 madrigal [song]; 10848 aria [solo song]; 10921 chanson; 10926 anthem [song]; 10927 carol; 10928 love; 10929 nursery rhyme; 10930 jingle; 10931 theme; 10932 lament (verb); 10933 folk; 10934 pop; 10935 protest; 10936 drinking; 10937 spiritual [music]; 10938 chant [music]; 10939 round [music]; 10940 canon [music]; 10941 ditty; 10942 power ballad; 10943 torch song; 10944 dirge; 10945 threnody; 10946 roundelay; 10947 chorale; 10948 psalm; 10949 work song; 10950 cover version; 10951 single [music]; 10952 party anthem; 10953 campfire; 10954 marching; 10955 birthday; 10957 paean; 55607 wassail
+
+T music_words | music words
+W: 6056 melody; 6057 rhythm [musical beat]; 6058 harmony [music]; 6059 beat [music]; 6060 chorus [group of singers]; 6061 verse; 6062 lyrics; 6063 tune; 6064 song [music]; 6065 chord [music]; 6066 scale [music]; 6067 key [music]; 6068 note [music]; 6069 pitch [music]; 6071 measure [music]; 6072 refrain; 6073 bridge [song]; 6074 riff [music]; 6075 hook [music]; 6076 solo; 6077 duet; 6078 trio; 6079 quartet; 6080 ensemble [group of performers]; 6081 overture; 6082 interlude; 6083 octave; 6084 treble [music]; 6085 clef; 6087 staff [music]; 6088 staccato (adverb); 6089 legato (adverb); 6090 crescendo; 6091 arpeggio; 6092 syncopation; 6093 counterpoint; 6094 timbre; 6095 cadence [musical ending]; 6096 coda; 6097 motif; 6098 leitmotif; 6099 theme [music]; 6100 fugue; 6101 ostinato; 6102 cadenza; 6103 glissando; 6104 vibrato; 6105 tremolo; 6106 fermata; 6107 pause [music]; 6108 hemiola; 6109 melisma; 6110 tessitura; 6111 a cappella (adverb); 6112 key signature; 6113 time signature; 6114 accidental [music]; 6115 transposition [music]; 6116 sharp [music]; 6117 downbeat; 6118 dissonance; 6119 consonance; 6120 sforzando; 6121 appoggiatura; 6122 arrangement [music]; 6123 composition [music]; 6124 improvisation; 6126 ad lib [music] (adverb); 6127 rest [music]; 6128 tie [music]; 6129 rhapsody; 6130 cantata
+G: 6124 6126; 6106 6107
+
+T music_terms | music terms
+W: 6056 melody; 6057 rhythm [musical beat]; 6058 harmony [music]; 6059 beat [music]; 6065 chord [music]; 6066 scale [music]; 6067 key [music]; 6068 note [music]; 6069 pitch [music]; 6071 measure [music]; 6072 refrain; 6076 solo; 6083 octave; 6087 staff [music]; 6088 staccato (adverb); 6089 legato (adverb); 6091 arpeggio; 6092 syncopation; 6093 counterpoint; 6094 timbre; 6095 cadence [musical ending]; 6096 coda; 6098 leitmotif; 6101 ostinato; 6103 glissando; 6104 vibrato; 6105 tremolo; 6106 fermata; 6107 pause [music]; 6108 hemiola; 6112 key signature; 6113 time signature; 6114 accidental [music]; 6116 sharp [music]; 6121 appoggiatura; 10991 tempo [music]; 10992 treble clef; 10993 bass clef; 10994 flat sign; 10995 natural [music]; 10996 interval [music]; 10997 tone [music]; 10998 modulation [music]; 10999 polyphony; 11000 harmonic [music]; 11001 tonic [music]; 11002 dominant [music]; 11003 trill [music]; 11004 cantabile (adverb); 11005 enharmonic (adjective); 11006 mordent; 11007 sotto voce (adverb); 11008 da capo (other); 11009 rubato
+G: 6106 6107
+
+T ways_to_play_a_note | ways to play a note
+W: 6088 staccato (adverb); 6089 legato (adverb); 6091 arpeggio; 6103 glissando; 6104 vibrato; 6105 tremolo; 11003 trill [music]; 11004 cantabile (adverb); 11006 mordent; 11007 sotto voce (adverb); 11009 rubato
+
+T music_theory_ideas | music theory ideas
+W: 6058 harmony [music]; 6065 chord [music]; 6066 scale [music]; 6083 octave; 6092 syncopation; 6093 counterpoint; 6095 cadence [musical ending]; 6108 hemiola; 10996 interval [music]; 10998 modulation [music]; 10999 polyphony; 11001 tonic [music]; 11002 dominant [music]; 11005 enharmonic (adjective)
+
+T marks_on_sheet_music | marks on sheet music
+W: 6071 measure [music]; 6087 staff [music]; 6096 coda; 6106 fermata; 6107 pause [music]; 6112 key signature; 6113 time signature; 6114 accidental [music]; 6116 sharp [music]; 10992 treble clef; 10993 bass clef; 10994 flat sign; 10995 natural [music]; 11008 da capo (other)
+
+T voice_types | voice types
+W: 6084 treble [music]; 6132 vocalist; 6188 chorister; 6189 choirboy; 6195 tenor [singer]; 6196 soprano [singer]; 11010 alto; 11011 bass [voice]; 11012 baritone [voice]; 11014 contralto; 11015 countertenor; 11016 falsetto; 11017 castrato; 11018 coloratura; 11019 bass-baritone; 11020 lyric tenor; 11021 dramatic soprano; 11022 heldentenor; 11023 basso profondo; 11024 chest; 11025 head; 11026 whistle register; 11027 boy soprano; 11028 spinto; 11029 soubrette; 11030 lead vocal; 11031 backing vocal; 11032 harmony vocal; 11033 mezzo; 11034 descant
+
+T classical_voice_types | classical voice types
+W: 6084 treble [music]; 6195 tenor [singer]; 6196 soprano [singer]; 11010 alto; 11011 bass [voice]; 11012 baritone [voice]; 11014 contralto; 11015 countertenor; 11016 falsetto; 11017 castrato; 11018 coloratura; 11019 bass-baritone; 11020 lyric tenor; 11021 dramatic soprano; 11022 heldentenor; 11023 basso profondo; 11027 boy soprano; 11028 spinto; 11029 soubrette; 11033 mezzo; 51863 lyric soprano; 51864 dramatic tenor; 51865 bass buffo; 51866 sopranist; 51867 baritenor; 51868 lyric baritone; 51869 leggero; 51870 basso cantante; 51871 tenore di grazia; 51872 dramatic mezzo
+
+T orchestra_words | orchestra words
+W: 6081 overture; 6117 downbeat; 6140 conductor [orchestra]; 6141 maestro [conductor]; 6156 soloist; 6182 concertmaster; 6198 kapellmeister; 6233 rehearsal; 10707 string [music]; 11039 baton [conductor]; 11040 podium [conductor's stand]; 11041 first violin; 11042 second violin; 11043 string section; 11044 woodwind section; 11045 brass section; 11046 percussion section; 11047 score [music]; 11048 music stand; 11049 tuning up; 11050 pit [orchestra]; 11051 symphony; 11052 chamber orchestra; 11053 philharmonic; 11054 tutti (adverb); 11055 principal [orchestra]; 11056 section leader; 11057 movement [music]; 11058 tuning fork; 11059 repertoire; 11060 divisi (adverb); 11061 first chair; 11063 assistant conductor; 11064 guest conductor; 11065 music director; 11066 sheet music; 11067 full score; 11068 concert hall; 11069 woodwinds; 11070 brass [music]; 11071 percussion [music]; 11072 continuo; 11073 ripieno
+G: 6140 6141; 10707 11043; 11070 11045; 11071 11046
+
+T orchestra_sections | orchestra sections | Exactly: string, woodwinds, brass, percussion.
+W: 10707 string [music]; 11069 woodwinds; 11070 brass [music]; 11071 percussion [music]
+
+T tempo_words | tempo words
+W: 11074 allegro [tempo]; 11075 andante; 11076 adagio [tempo]; 11077 presto [tempo]; 11078 largo; 11079 moderato (adverb); 11080 vivace (adverb); 11081 lento (adverb); 11082 allegretto; 11083 larghetto; 11084 prestissimo (adverb); 11085 grave [music] (adjective); 11086 andantino; 11087 adagietto; 11088 accelerando (adverb); 11089 ritardando (adverb); 11090 rallentando (adverb); 11091 ritenuto (adverb); 11092 a tempo (other); 11093 allargando (adverb); 11094 stringendo (adverb); 11095 vivacissimo (adverb); 11096 con brio (adverb); 11097 maestoso (adverb); 11098 tempo giusto (adverb); 11099 sostenuto (adverb); 11100 slow (adjective); 11101 fast (adjective); 11102 lively (adjective); 11103 allegro con brio (adverb); 11104 molto allegro (adverb); 11105 meno mosso (adverb); 11106 piu mosso (adverb); 11107 affrettando (adverb); 11108 largamente (adverb); 11109 lentissimo (adverb); 11110 tempo primo (other); 11111 agitato (adverb); 11112 animato (adverb)
+
+T dynamics_markings | dynamics markings
+W: 6090 crescendo; 6120 sforzando; 11113 forte (adverb); 11114 pianissimo (adverb); 11115 fortissimo (adverb); 11116 mezzo piano (adverb); 11117 mezzo forte (adverb); 11118 diminuendo; 11119 decrescendo; 11120 morendo (adverb); 11121 calando (adverb); 11122 smorzando (adverb); 11123 perdendosi (adverb); 11124 rinforzando (adverb); 11125 pp [dynamics] (adverb); 11126 ff [dynamics] (adverb); 11127 mp [dynamics] (adverb); 11128 mf [dynamics] (adverb); 11129 sf [dynamics] (adverb); 11130 fff [dynamics] (adverb); 11131 ppp [dynamics] (adverb); 11132 fortississimo (adverb); 11133 pianississimo (adverb); 11134 marcato (adverb); 11135 accent [music]; 11136 loud (adjective); 11138 hairpin [music]; 11139 poco a poco (adverb); 11140 al niente (adverb); 11141 subito (adverb); 11142 con forza (adverb); 11143 dolce [soft] (adverb); 50115 soft [quiet] (adjective)
+
+T concert_words | concert words
+W: 4563 microphone; 6203 roadie [music]; 6278 mosh pit; 6416 box office; 6600 amphitheater; 10882 gig [music]; 11183 stage [concert]; 11184 audience; 11185 encore [music]; 11186 ticket [concert]; 11187 setlist; 11188 support act; 11189 headliner; 11190 soundcheck; 11191 backstage (adverb); 11192 crowd [concert]; 11193 venue; 11194 arena [concert]; 11195 spotlight [concert]; 11196 speakers [concert]; 11197 amplifier; 11199 world tour; 11200 fan [concert]; 11201 merch stand; 11202 merchandise; 11203 VIP pass; 11204 front row; 11205 standing room; 11206 stage diving; 11207 crowd surfing; 11208 light show; 11209 pyrotechnics; 11210 glow stick; 11211 mixing desk; 11212 stage left; 11213 green room [backstage]; 11214 curtain call; 11215 intermission; 11216 sold out; 11217 opening act; 11218 rider [concert]; 11219 foldback; 11220 sound engineer; 11221 lighting rig
+
+T recording_studio_words | recording studio words
+W: 4563 microphone; 7330 headphones; 7331 cans [headphones]; 11211 mixing desk; 11220 sound engineer; 11222 monitors; 11223 pop filter; 11224 booth [recording]; 11225 take [recording]; 11226 overdub; 11227 multitrack; 11228 mixdown; 11229 mastering; 11230 producer [music]; 11232 reverb [studio]; 11233 echo [recording]; 11234 compressor [recording]; 11235 equalizer; 11238 fader; 11239 preamp; 11240 DAW; 11241 click track; 11242 demo [music]; 11243 bounce [recording]; 11244 punch in (verb); 11245 sound booth; 11246 control room; 11247 live room; 11248 patch bay; 11249 cable [recording]; 11250 XLR; 11251 phantom power; 11252 gain [recording]; 11253 mute [recording]; 11254 pan [recording]; 11255 reel-to-reel; 11256 tape machine; 11257 Pro Tools; 11258 Ableton; 11259 GarageBand; 11260 sample rate; 11261 latency [recording]; 11262 clipping [recording]; 11263 de-esser; 11264 sidechain; 11265 stem [recording]; 11266 acoustic panel; 11267 isolation booth; 11268 vocal booth
+G: 7330 7331
+
+T music_festivals | music festivals
+W: 11269 Glastonbury; 11270 Coachella; 11271 Woodstock; 11272 Lollapalooza; 11273 Burning Man [festival]; 11274 Reading and Leeds; 11275 Isle of Wight [festival]; 11276 Download; 11277 Bonnaroo; 11278 Tomorrowland; 11279 Ultra [festival]; 11280 Sziget; 11281 Primavera Sound; 11282 Roskilde; 11283 Wacken Open Air; 11284 Montreux Jazz; 11285 Newport Folk; 11286 Newport Jazz; 11287 Monterey Pop; 11288 Altamont [festival]; 11289 Live Aid; 11290 Live 8; 11291 Latitude; 11292 Bestival; 11293 Creamfields; 11294 Rock in Rio; 11295 Austin City Limits; 11296 Lowlands [festival]; 11297 Fuji Rock; 11298 Pinkpop; 11299 Governors Ball; 11300 SXSW; 11301 Edinburgh Fringe [festival]; 11302 Stagecoach [festival]; 11303 Summerfest; 11304 Hellfest; 11305 Benicassim; 11306 Mad Cool
+
+T music_players | music players
+W: 4578 radio; 7341 smart speaker; 7351 Bluetooth speaker; 7357 Walkman; 7359 Alexa [assistant]; 7366 transistor radio; 7372 Discman; 10687 turntable [record player]; 10986 boombox; 11255 reel-to-reel; 11307 record player; 11313 iPod; 11314 jukebox [music machine]; 11315 stereo [music]; 11316 music box; 11317 Victrola; 11318 eight-track; 11320 hi-fi [stereo system]; 11321 music centre; 11323 Sonos; 11324 MiniDisc; 11325 Zune; 11326 Spotify; 11327 car stereo; 11328 vinyl player; 11329 portable speaker; 11330 clock radio; 11331 MP4; 11332 orchestrion; 64423 cassette [playback]; 64424 CD [playback]; 64425 MP3 [playback]
+G: 11307 11317; 11320 11321
+
+T rock_band_lineup | rock band lineup
+W: 6078 trio; 6079 quartet; 6131 singer; 6132 vocalist; 6133 drummer; 6134 guitarist; 6135 axeman [guitarist]; 6143 bassist; 6144 bass player; 6151 saxophonist; 6152 sax player; 6158 bandleader; 6162 session musician; 6174 percussionist; 6191 backup singer; 6193 lead singer; 6194 frontwoman; 6202 sideman; 6203 roadie [music]; 11188 support act; 11220 sound engineer; 11230 producer [music]; 11333 lead guitarist; 11334 rhythm guitarist; 11335 keyboardist; 11336 keys player; 11337 backing vocalist; 11338 manager; 11339 tour manager; 11340 guitar tech; 11341 drum tech; 11342 frontperson; 11343 singer-songwriter; 11344 multi-instrumentalist; 11345 stage manager; 11346 groupie; 11348 power trio; 11349 supergroup; 11350 boy band; 11351 tribute; 11352 wedding band; 11353 bass guitarist; 11354 vocals; 11355 lead vocals; 11356 rhythm section; 11357 horn section
+G: 6151 6152; 6134 6135; 6131 6132 6193; 6143 6144; 11335 11336; 11354 11355
+
+T musical_modes | musical modes | Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian
+W: 11358 Ionian [mode]; 11359 Dorian; 11360 Phrygian; 11361 Lydian; 11362 Mixolydian; 11363 Aeolian; 11364 Locrian
+
+T note_values | note values | whole note, half note, quarter note, eighth note, sixteenth note
+W: 11144 whole; 11146 half; 11148 quarter; 11150 eighth; 11152 sixteenth
+
+T italian_music_words | italian music words
+W: 6088 staccato (adverb); 6089 legato (adverb); 6090 crescendo; 6091 arpeggio; 6096 coda; 6100 fugue; 6101 ostinato; 6102 cadenza; 6103 glissando; 6105 tremolo; 6106 fermata; 6111 a cappella (adverb); 6120 sforzando; 6121 appoggiatura; 6130 cantata
+
+T musicians | musicians
+W: 4137 musician; 6131 singer; 6132 vocalist; 6133 drummer; 6134 guitarist; 6135 axeman [guitarist]; 6136 pianist; 6137 piano player; 6138 violinist; 6139 fiddler; 6140 conductor [orchestra]; 6141 maestro [conductor]; 6142 composer; 6143 bassist; 6144 bass player; 6145 DJ; 6146 disc jockey; 6148 cellist; 6150 flutist; 6151 saxophonist; 6152 sax player; 6153 trumpeter [musician]; 6154 organist; 6155 harpist; 6156 soloist; 6157 accompanist; 6158 bandleader; 6159 virtuoso; 6160 busker; 6163 songwriter; 6164 tunesmith; 6165 lyricist; 6166 crooner; 6167 diva; 6168 child prodigy; 6169 piper [bagpipe player]; 6170 minstrel; 6171 troubadour; 6172 bard; 6173 cantor [singer]; 6174 percussionist; 6175 trombonist; 6176 clarinetist; 6178 oboist; 6179 bassoonist; 6180 cornetist; 6181 lutenist; 6182 concertmaster; 6184 violist; 6185 banjoist; 6186 harmonica player; 6187 choirmaster; 6188 chorister; 6189 choirboy; 6191 backup singer; 6192 frontman; 6193 lead singer; 6194 frontwoman; 6195 tenor [singer]; 6196 soprano [singer]; 6197 repetiteur; 6198 kapellmeister; 6199 prima donna; 6200 one-man band; 6201 arranger; 6202 sideman; 6203 roadie [music]; 64428 session [hired]
+G: 6136 6137; 6151 6152; 6134 6135; 6145 6146; 6192 6193; 6140 6141; 6163 6164; 6131 6132; 6188 6189; 6138 6139; 6143 6144
+
+T composers | composers
+W: 11378 Mozart; 11379 Beethoven; 11380 Bach [composer]; 11381 Chopin; 11382 Tchaikovsky; 11383 Vivaldi; 11384 Handel [composer]; 11385 Brahms; 11386 Haydn; 11387 Schubert; 11388 Liszt; 11389 Wagner [composer]; 11390 Verdi [composer]; 11391 Puccini; 11392 Debussy; 11393 Ravel; 11394 Stravinsky; 11395 Mahler; 11396 Dvorak; 11397 Rachmaninoff; 11399 Elgar; 11400 Holst; 11401 Copland; 11402 Gershwin; 11403 Bernstein [composer]; 11404 Grieg; 11405 Sibelius; 11406 Schumann [composer]; 11407 Mendelssohn; 11408 Rossini; 11409 Bizet; 11410 Saint-Saens; 11411 Satie; 11412 Vaughan Williams; 11413 Britten; 11414 Shostakovich; 11415 Prokofiev; 11416 Mussorgsky; 11417 Rimsky-Korsakov; 11418 Purcell; 11419 Monteverdi; 11420 Telemann; 11421 Pachelbel; 11422 Philip Glass; 11423 Steve Reich; 11424 John Cage; 11425 Schoenberg; 11426 Bartok; 11427 Janacek; 11428 Palestrina; 11429 Hildegard von Bingen; 11430 Allegri; 11431 Scarlatti [composer]; 11432 Faure [composer]; 11433 Messiaen; 11434 Ligeti; 11435 Arvo Part
+
+T baroque_composers | baroque composers
+W: 11380 Bach [composer]; 11383 Vivaldi; 11384 Handel [composer]; 11418 Purcell; 11419 Monteverdi; 11420 Telemann; 11421 Pachelbel; 11430 Allegri; 11431 Scarlatti [composer]; 51873 Corelli; 51874 Rameau; 51875 Jean-Philippe Rameau; 51876 Couperin; 51877 Albinoni; 51878 Buxtehude; 51879 Lully; 51880 Charpentier; 51881 Biber [composer]; 51882 Heinrich Schutz; 51883 Frescobaldi; 51884 Tartini; 51885 Locatelli; 51886 Geminiani; 51887 Torelli; 51888 Zelenka; 51889 Froberger; 51890 Cavalli [composer]; 51891 Carissimi; 51892 Bononcini; 51893 Marais [composer]; 51894 Leclair [composer]
+G: 51874 51875
+
+T romantic_composers | romantic composers
+W: 11381 Chopin; 11382 Tchaikovsky; 11385 Brahms; 11387 Schubert; 11388 Liszt; 11389 Wagner [composer]; 11395 Mahler; 11396 Dvorak; 11397 Rachmaninoff; 11399 Elgar; 11404 Grieg; 11405 Sibelius; 11406 Schumann [composer]; 11407 Mendelssohn; 11409 Bizet; 11410 Saint-Saens; 11416 Mussorgsky; 11417 Rimsky-Korsakov; 11432 Faure [composer]; 51895 Berlioz; 51896 Bruckner; 51897 Smetana; 51898 Paganini; 51899 Borodin; 51900 Carl Maria von Weber; 51901 Cesar Franck; 51902 Glinka; 51903 Balakirev; 51904 Bruch [composer]; 51905 Lalo [composer]; 51906 Massenet; 51907 Richard Strauss; 51908 Clara Schumann; 51909 Fanny Mendelssohn; 51910 Cesar Cui; 51911 Wieniawski
+G: 11406 51908; 11407 51909
+
+T opera_composers | opera composers
+W: 11378 Mozart; 11382 Tchaikovsky; 11384 Handel [composer]; 11389 Wagner [composer]; 11390 Verdi [composer]; 11391 Puccini; 11408 Rossini; 11409 Bizet; 11413 Britten; 11415 Prokofiev; 11416 Mussorgsky; 11418 Purcell; 11419 Monteverdi; 11422 Philip Glass; 11427 Janacek; 51879 Lully; 51897 Smetana; 51906 Massenet; 51907 Richard Strauss; 51912 Donizetti; 51913 Gaetano Donizetti; 51914 Bellini [composer]; 51915 Vincenzo Bellini; 51916 Gounod; 51917 Gluck; 51918 Leoncavallo; 51919 Mascagni; 51920 Offenbach; 51921 Humperdinck; 51922 Alban Berg; 51923 Menotti; 51924 John Adams [composer]; 51925 Weber [composer]; 51926 Poulenc; 51927 Meyerbeer
+G: 51914 51915; 51912 51913
+
+T film_composers | film composers
+W: 51928 John Williams [composer]; 51929 Hans Zimmer; 51930 Ennio Morricone; 51931 Howard Shore; 51932 James Horner; 51933 Danny Elfman; 51934 Alan Silvestri; 51935 Jerry Goldsmith; 51936 Bernard Herrmann; 51937 Max Steiner; 51938 John Barry [composer]; 51939 Henry Mancini; 51940 Vangelis; 51941 Alexandre Desplat; 51942 Thomas Newman; 51943 Randy Newman; 51944 Michael Giacchino; 51945 Ludwig Goransson; 51946 Hildur Gudnadottir; 51947 Nino Rota; 51948 Elmer Bernstein; 51949 Maurice Jarre; 51950 Bear McCreary; 51951 Trent Reznor; 51952 Clint Mansell; 51953 Ramin Djawadi; 51954 Rachel Portman; 51955 Ryuichi Sakamoto; 51956 Lalo Schifrin; 51957 Dimitri Tiomkin; 51958 Miklos Rozsa; 51959 Basil Poledouris; 51960 Carter Burwell; 51961 Jonny Greenwood; 51962 Mychael Danna; 51963 Joe Hisaishi; 51964 Elliot Goldenthal; 51965 Patrick Doyle; 51966 Johann Johannsson
+
+T twentieth_century_composers | twentieth-century composers
+W: 11392 Debussy; 11393 Ravel; 11394 Stravinsky; 11397 Rachmaninoff; 11399 Elgar; 11400 Holst; 11401 Copland; 11402 Gershwin; 11403 Bernstein [composer]; 11405 Sibelius; 11411 Satie; 11412 Vaughan Williams; 11413 Britten; 11414 Shostakovich; 11415 Prokofiev; 11422 Philip Glass; 11423 Steve Reich; 11424 John Cage; 11425 Schoenberg; 11426 Bartok; 11427 Janacek; 11433 Messiaen; 11434 Ligeti; 11435 Arvo Part
+
+T famous_bands | famous bands
+W: 11436 Beatles; 11437 Rolling Stones; 11438 ABBA [band]; 11439 U2; 11440 Coldplay; 11441 Metallica; 11442 Pink Floyd; 11443 AC/DC; 11444 Led Zeppelin; 11445 The Who; 11446 Fleetwood Mac; 11447 Eagles [band]; 11448 Blur [band]; 11449 Radiohead; 11450 Aerosmith; 11451 Bon Jovi; 11452 Guns N Roses; 11453 Genesis [band]; 11454 Kiss [band]; 11455 Journey [band]; 11456 Cream [band]; 11457 The Doors; 11458 Black Sabbath; 11459 Duran Duran; 11460 Depeche Mode; 11461 The Smiths; 11462 Joy Division; 11463 Talking Heads; 11464 Kinks; 11465 Yes [band]; 11466 Slayer; 11467 Pixies [band]; 11468 Mott the Hoople; 11469 Steely Dan; 11470 Spandau Ballet; 11471 The Zombies; 11472 Traffic [band]; 50386 Queen [band]; 50387 Camel [band]; 50388 Oasis [band]; 50389 Boston [band]; 50390 Nirvana [band]; 50391 Cake [band]; 50392 Heart [band]; 50393 Kansas [band]; 50394 Styx [band]; 50395 Chicago [band]; 50396 Europe [band]; 50397 Asia [band]; 50398 Suede [band]; 50399 Pulp [band]; 50400 Muse [band]; 50401 Train [band]; 50402 Wings [band]; 50403 Rush [band]; 50404 Bush [band]; 50405 Free [band]; 50406 Jet [band]; 50407 The Police; 50408 The Clash; 50409 The Cure; 59424 Sublime [band]; 59425 Tool [band]; 59426 Garbage [band]; 59427 Placebo [band]
+
+T the_beatles | the beatles | Exactly: John Lennon, McCartney, George Harrison, Ringo Starr.
+W: 11722 Ringo Starr; 51967 John Lennon; 51968 Lennon [Beatle]; 51970 McCartney; 51971 Macca; 51972 George Harrison
+G: 51968 51967; 51970 51971
+
+T queen_members | queen members | Freddie Mercury, Brian May, Roger Taylor, John Deacon
+W: 11553 Brian May; 51973 Freddie Mercury; 51974 Farrokh Bulsara; 51975 Roger Taylor [drummer]; 51976 John Deacon
+G: 51973 51974
+
+T abba_members | abba members | Agnetha, Bjorn, Benny, Anni-Frid
+W: 51977 Agnetha Faltskog; 51978 Agnetha; 51979 Bjorn Ulvaeus; 51981 Benny Andersson; 51982 Benny [ABBA]; 51983 Anni-Frid Lyngstad; 51984 Frida
+G: 51983 51984; 51981 51982; 51977 51978
+
+T led_zeppelin_members | led zeppelin members | Robert Plant, Jimmy Page, John Paul Jones, John Bonham
+W: 11552 Jimmy Page; 11724 John Bonham; 51985 Robert Plant; 51986 John Paul Jones
+
+T british_bands | british bands
+W: 11436 Beatles; 11437 Rolling Stones; 11440 Coldplay; 11442 Pink Floyd; 11444 Led Zeppelin; 11445 The Who; 11446 Fleetwood Mac; 11448 Blur [band]; 11449 Radiohead; 11453 Genesis [band]; 11456 Cream [band]; 11458 Black Sabbath; 11459 Duran Duran; 11460 Depeche Mode; 11461 The Smiths; 11462 Joy Division; 11464 Kinks; 11465 Yes [band]; 11468 Mott the Hoople; 11470 Spandau Ballet; 11471 The Zombies; 11472 Traffic [band]; 50386 Queen [band]; 50387 Camel [band]; 50388 Oasis [band]; 50398 Suede [band]; 50399 Pulp [band]; 50400 Muse [band]; 50402 Wings [band]; 50405 Free [band]; 50407 The Police; 50408 The Clash; 50409 The Cure; 59427 Placebo [band]
+
+T american_bands | american bands
+W: 11441 Metallica; 11447 Eagles [band]; 11450 Aerosmith; 11451 Bon Jovi; 11452 Guns N Roses; 11454 Kiss [band]; 11455 Journey [band]; 11457 The Doors; 11463 Talking Heads; 11466 Slayer; 11467 Pixies [band]; 11469 Steely Dan; 50389 Boston [band]; 50390 Nirvana [band]; 50391 Cake [band]; 50392 Heart [band]; 50393 Kansas [band]; 50394 Styx [band]; 50395 Chicago [band]; 50401 Train [band]; 59424 Sublime [band]; 59425 Tool [band]; 59426 Garbage [band]
+
+T pop_stars | pop stars
+W: 11473 Madonna; 11474 Beyonce; 11475 Rihanna; 11476 Taylor Swift; 11477 Britney Spears; 11478 Lady Gaga; 11479 Katy Perry; 11480 Justin Bieber; 11481 Ariana Grande; 11482 Shakira; 11483 Michael Jackson; 11484 Prince [singer]; 11485 Adele; 11486 Ed Sheeran; 11487 Billie Eilish; 11488 Harry Styles; 11489 Dua Lipa; 11490 Kylie Minogue; 11491 Cher; 11492 Celine Dion; 11493 Justin Timberlake; 11494 Bruno Mars; 11495 The Weeknd; 11496 Selena Gomez; 11497 Miley Cyrus; 11498 Olivia Rodrigo; 11499 Sabrina Carpenter; 11500 Charli XCX; 11501 Lorde; 11502 Robyn; 11503 Carly Rae Jepsen; 11504 Jessie J; 11505 Sia; 11506 Tiffany [singer]; 11507 Debbie Gibson; 11508 Sophie Ellis-Bextor; 11509 Lizzo; 11510 Troye Sivan; 11511 Janet Jackson; 50411 Sting [singer]; 50412 Seal [singer]; 50413 Pink [singer]; 50414 Usher [singer]; 50415 Drake [rapper]; 50416 Bono; 50417 Moby; 50418 Enya
+
+T jazz_musicians | jazz musicians
+W: 11512 Louis Armstrong; 11513 Duke Ellington; 11514 Miles Davis; 11515 Ella Fitzgerald; 11516 John Coltrane; 11517 Billie Holiday; 11518 Count Basie; 11519 Dizzy Gillespie; 11520 Charlie Parker; 11521 Thelonious Monk; 11522 Nina Simone; 11523 Dave Brubeck; 11524 Herbie Hancock; 11525 Chet Baker; 11526 Sarah Vaughan; 11527 Benny Goodman; 11528 Glenn Miller; 11529 Stan Getz; 11530 Charles Mingus; 11531 Art Blakey; 11532 Sun Ra; 11533 Ornette Coleman; 11534 Bill Evans [pianist]; 11535 Wes Montgomery; 11536 Django Reinhardt; 11537 Cab Calloway; 11538 Fats Waller; 11539 Jelly Roll Morton; 11540 Sidney Bechet; 11541 Lester Young; 11542 Coleman Hawkins; 11543 Max Roach; 11544 Esperanza Spalding; 11545 Kamasi Washington; 11546 Norah Jones; 11547 Diana Krall; 11548 Ray Charles; 11549 Oscar Peterson
+
+T rock_guitarists | rock guitarists
+W: 11484 Prince [singer]; 11550 Jimi Hendrix; 11551 Eric Clapton; 11552 Jimmy Page; 11553 Brian May; 11554 Slash [guitarist]; 11555 Keith Richards; 11556 Eddie Van Halen; 11557 Angus Young; 11558 David Gilmour; 11559 Carlos Santana; 11560 Chuck Berry; 11561 B.B. King; 11562 Jeff Beck; 11563 Mark Knopfler; 11564 Stevie Ray Vaughan; 11565 Tony Iommi; 11566 Randy Rhoads; 11567 Kirk Hammett; 11568 Joe Satriani; 11569 Steve Vai; 11570 Jack White; 11571 The Edge; 11572 Johnny Marr; 11573 Nile Rodgers; 11574 Peter Frampton; 11575 Duane Allman; 11576 Ritchie Blackmore; 11577 Yngwie Malmsteen; 11578 Robert Fripp; 11579 Chet Atkins; 11580 Les Paul [guitarist]; 11581 Dimebag Darrell; 11582 Tom Morello; 11583 John Frusciante; 11584 Rory Gallagher; 11585 Joe Perry; 11586 Bo Diddley
+
+T turkish_singers | turkish singers
+W: 11587 Tarkan; 11588 Sezen Aksu; 11589 Ajda Pekkan; 11590 Sertab Erener; 11591 Orhan Gencebay; 11592 Baris Manco; 11593 Ibrahim Tatlises; 11594 Mustafa Sandal; 11595 Mabel Matiz; 11596 Hadise; 11597 Muslum Gurses; 11598 Zeki Muren; 11599 Bulent Ersoy; 11600 Kenan Dogulu; 11601 Gulsen; 11602 Yildiz Tilbe; 11603 Murat Boz; 11604 Demet Akalin; 11605 Kayahan; 11606 Cem Karaca; 11607 Sebnem Ferah; 11608 Haluk Levent; 61865 Ahmet Kaya; 61866 Ferdi Tayfur; 61867 Ebru Gundes
+
+T african_musicians | african musicians
+W: 11609 Fela Kuti; 11610 Miriam Makeba; 11611 Youssou N'Dour; 11612 Salif Keita; 11613 Angelique Kidjo; 11614 Hugh Masekela; 11615 Burna Boy; 11616 Wizkid; 11617 Davido; 11618 Tiwa Savage; 11619 Yemi Alade; 11620 Manu Dibango; 11621 King Sunny Ade; 11622 Oumou Sangare; 11623 Ali Farka Toure; 11624 Toumani Diabate; 11625 Cesaria Evora; 11626 Mory Kante; 11627 Tinariwen; 11628 Sade; 11629 Black Coffee [DJ]; 11630 Master KG; 11631 Tems; 11632 Rema; 11633 Fally Ipupa; 11634 Koffi Olomide; 11635 Thomas Mapfumo; 11636 Johnny Clegg; 11637 Brenda Fassie; 11638 Sauti Sol; 11639 Diamond Platnumz; 11640 Papa Wemba; 11641 Alpha Blondy; 61868 Tyla; 61869 CKay; 61870 Ayra Starr; 61871 Femi Kuti
+
+T south_american_singers | south american singers
+W: 11482 Shakira; 11642 Carlos Gardel; 11643 Mercedes Sosa; 11644 Violeta Parra; 11645 Victor Jara; 11646 Astrud Gilberto; 11647 Caetano Veloso; 11648 Gilberto Gil; 11649 Maria Bethania; 11650 Tom Jobim; 11651 Joao Gilberto; 11652 Elis Regina; 11653 Roberto Carlos [singer]; 11654 Anitta; 11655 J Balvin; 11656 Maluma; 11657 Karol G; 11658 Juanes; 11659 Carlos Vives; 11660 Soda Stereo; 11661 Gustavo Cerati; 11662 Charly Garcia; 11663 Los Prisioneros; 11664 Susana Baca; 11665 Yma Sumac; 11666 Ney Matogrosso; 11667 Bebel Gilberto; 11668 Seu Jorge; 11669 Sebastian Yatra; 11670 Rauw Alejandro; 11671 Daddy Yankee; 61872 Feid; 61873 Tini [singer]; 61874 Paulo Londra; 61875 Marisa Monte; 61876 Gal Costa; 61877 Mon Laferte
+
+T country_singers | country singers
+W: 11476 Taylor Swift; 11672 Johnny Cash; 11673 Dolly Parton; 11674 Willie Nelson; 11675 Garth Brooks; 11676 Shania Twain; 11677 Kenny Rogers; 11678 Hank Williams; 11679 Patsy Cline; 11680 Loretta Lynn; 11681 Merle Haggard; 11682 Tim McGraw; 11683 Faith Hill; 11684 Carrie Underwood; 11685 Blake Shelton; 11686 Luke Combs; 11687 Keith Urban; 11688 Kacey Musgraves; 11689 Chris Stapleton; 11690 Reba McEntire; 11691 George Strait; 11692 Alan Jackson; 11693 Waylon Jennings; 11694 Tammy Wynette; 11695 Conway Twitty; 11696 Randy Travis; 11697 Vince Gill; 11698 Emmylou Harris; 11699 Lainey Wilson; 11700 Morgan Wallen; 11701 Jimmie Rodgers; 11702 Bill Monroe; 11703 Gram Parsons; 11704 Brad Paisley; 11705 Miranda Lambert; 11706 Glen Campbell
+
+T instrument_players | instrument players
+W: 11512 Louis Armstrong; 11514 Miles Davis; 11520 Charlie Parker; 11550 Jimi Hendrix; 11551 Eric Clapton; 11552 Jimmy Page; 11556 Eddie Van Halen; 11559 Carlos Santana; 11707 Yo-Yo Ma [cellist]; 11708 Itzhak Perlman; 11709 Jascha Heifetz; 11710 Niccolo Paganini; 11711 Nigel Kennedy; 11712 Lang Lang; 11713 Vladimir Horowitz; 11714 Glenn Gould; 11715 Arthur Rubinstein; 11716 Jacqueline du Pre; 11717 Pablo Casals; 11718 Andres Segovia; 11719 Ravi Shankar; 11720 James Galway; 11721 Wynton Marsalis; 11722 Ringo Starr; 11723 Keith Moon; 11724 John Bonham; 11725 Neil Peart; 11726 Buddy Rich; 11727 Gene Krupa; 11728 Phil Collins; 11729 Jaco Pastorius; 11730 John Entwistle; 11731 Victor Wooten; 11732 Rick Wakeman; 11733 Jon Lord; 11734 Elton John; 11735 Stevie Wonder; 11736 Evelyn Glennie; 11737 Bela Fleck; 11738 Clarence Clemons; 11739 Sheila E; 11740 Dave Grohl; 11741 Ginger Baker; 50410 Flea [bassist]
+
+T voice_performers | voice performers
+W: 6131 singer; 6132 vocalist; 6166 crooner; 6167 diva; 6173 cantor [singer]; 6188 chorister; 6189 choirboy; 6191 backup singer; 6193 lead singer; 6195 tenor [singer]; 6196 soprano [singer]; 6199 prima donna
+
+T dance | dance
+W: 3346 audition [tryout]; 6204 dancer [performer]; 6205 ballet; 6206 ballerina; 6207 tutu; 6208 waltz; 6209 tango; 6212 disco; 6213 breakdancing; 6214 breaking [dance]; 6215 b-boying; 6216 square; 6217 line dancing; 6218 choreographer; 6219 choreography; 6220 routine [dance]; 6221 step [dance]; 6222 twirl; 6223 pirouette; 6224 leotard; 6227 pointe shoes; 6228 barre; 6229 dance floor; 6230 partner [dance]; 6231 troupe [dance]; 6232 recital; 6233 rehearsal; 6234 dance card; 6235 flamenco [dance]; 6236 polka; 6237 conga [dance]; 6238 limbo [dance]; 6240 hokey pokey [dance]; 6241 Macarena; 6242 twist [dance]; 6243 hula; 6244 belly; 6245 raqs sharqi; 6247 maypole [festival pole]; 6248 barn; 6249 hoedown; 6250 ceilidh; 6252 rave [party]; 6253 moonwalk [dance]; 6254 can-can; 6255 cha-cha; 6257 samba; 6258 foxtrot; 6259 quickstep; 6260 jive [dance]; 6261 rumba; 6263 mazurka; 6264 gavotte; 6265 minuet; 6266 fandango; 6267 pas de deux; 6268 plié; 6270 jeté; 6272 arabesque; 6273 entrechat; 6274 fouetté; 6275 tarantella; 6276 pole dancing; 6277 lap; 6278 mosh pit; 6279 twerk (verb); 6280 jitterbug; 6281 lindy hop; 6282 charleston [dance]; 6283 bunny hop; 7747 salsa [dance]; 24422 pantyhose; 62850 morris [English]; 64433 tap [rhythm]
+G: 6213 6215 6214; 6244 6245; 6248 6249
+
+T dances | dances
+W: 6205 ballet; 6208 waltz; 6209 tango; 6213 breakdancing; 6214 breaking [dance]; 6215 b-boying; 6216 square; 6235 flamenco [dance]; 6236 polka; 6237 conga [dance]; 6241 Macarena; 6242 twist [dance]; 6243 hula; 6254 can-can; 6255 cha-cha; 6257 samba; 6258 foxtrot; 6259 quickstep; 6260 jive [dance]; 6261 rumba; 6263 mazurka; 6264 gavotte; 6265 minuet; 6266 fandango; 6275 tarantella; 6281 lindy hop; 6282 charleston [dance]; 7747 salsa [dance]; 10806 bossa nova; 10844 polonaise; 10853 sarabande; 11742 jig [dance]; 11744 line; 11745 mambo [dance]; 11746 bolero [dance]; 11747 paso doble; 11748 galliard; 11749 hornpipe [dance]; 11750 czardas; 11751 reel [dance]; 11752 hustle [dance]; 62850 morris [English]; 64433 tap [rhythm]
+G: 6213 6215 6214
+
+T ballet_terms | ballet terms
+W: 6206 ballerina; 6207 tutu; 6218 choreographer; 6223 pirouette; 6224 leotard; 6227 pointe shoes; 6228 barre; 6267 pas de deux; 6268 plié; 6270 jeté; 6272 arabesque; 6273 entrechat; 11753 pointe; 11754 grand jete; 11755 prima ballerina; 11756 fouette; 11757 port de bras; 11758 tendu; 11759 releve; 11760 battement; 11761 chasse; 11762 glissade; 11763 sissonne; 11764 cabriole [ballet]; 11765 assemble; 11766 adagio [ballet]; 11767 corps; 11768 tour en lair; 11769 passe; 11770 rond de jambe; 11771 attitude [ballet]; 11772 demi-plie; 11773 danseur; 11774 premier danseur; 11775 allegro [ballet]
+G: 11773 11774

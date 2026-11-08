@@ -1,0 +1,386 @@
+T big_cats | big cats
+W: 215 lion; 216 tiger [animal]; 217 leopard [big cat]; 218 cheetah [animal]; 219 jaguar [animal]; 220 cougar; 221 puma; 222 mountain lion; 223 snow leopard; 224 clouded leopard; 7748 black panther [cat]; 7749 panther [animal]; 7750 Bengal tiger; 7751 Siberian tiger; 7752 Amur tiger; 7753 white tiger; 7754 African lion; 7755 Asiatic lion; 7756 lioness; 7757 liger; 7758 tigon; 7759 Sumatran tiger; 7760 Barbary lion; 7761 white lion; 7762 cub [animal]; 7763 pride [lions]; 7764 Persian leopard; 7765 Sunda clouded leopard; 7766 king of the jungle; 7767 maneater; 7768 Indochinese tiger; 7769 Malayan tiger; 7770 Amur leopard
+G: 220 222 221; 215 7754 7755 7760; 216 7750 7751 7752 7759 7768 7769; 217 7764 7770 224 7765
+
+T tiger_subspecies | tiger subspecies
+W: 7750 Bengal; 7751 Siberian; 7752 Amur; 7759 Sumatran; 7768 Indochinese; 7769 Malayan
+G: 7751 7752
+
+T small_wild_cats | small wild cats
+W: 1039 lynx [cat]; 7771 wildcat; 7772 ocelot; 7773 serval; 7774 caracal; 7775 margay; 7777 jaguarundi; 7778 fishing; 7781 leopard; 7782 Eurasian lynx; 7783 Canada lynx; 7784 Iberian lynx; 7785 rusty-spotted; 7786 black-footed; 7787 oncilla; 7790 jungle; 7791 marbled; 7792 flat-headed; 7793 bay; 7794 Asian golden cat; 7795 African golden cat; 7796 kodkod; 7797 European wildcat; 7798 Scottish wildcat; 7799 African wildcat; 7800 Andean mountain cat; 7801 Bornean bay cat; 7803 tigrina; 51077 bobcat [cat]; 63001 Pallas's; 63002 Geoffroy's; 63284 colocolo; 65179 sand [desert dweller]
+G: 7771 7797 7798 7799; 7793 7801; 7803 7787
+
+T primates | primates
+W: 982 monkey [animal]; 983 gorilla; 1004 chimpanzee; 1022 lemur; 1023 orangutan; 1024 baboon; 1040 gibbon; 1052 tarsier; 1060 aye-aye; 7804 ape [animal]; 7805 bonobo; 7806 macaque; 7807 mandrill; 7808 marmoset; 7809 tamarin; 7810 capuchin; 7811 howler monkey; 7812 spider monkey; 7813 squirrel monkey; 7814 rhesus monkey; 7815 proboscis monkey; 7816 colobus; 7817 langur; 7818 loris; 7819 slow loris; 7820 bushbaby; 7821 galago; 7822 siamang; 7823 mountain gorilla; 7824 silverback; 7825 vervet; 7826 guenon; 7827 potto; 7828 sifaka; 7829 ring-tailed lemur; 7830 golden lion tamarin; 7831 Barbary macaque; 7832 Barbary ape; 7833 titi [monkey]; 7834 saki [monkey]; 7835 mangabey
+G: 7831 7832; 7820 7821
+
+T monkeys | monkeys
+W: 982 monkey [animal]; 1024 baboon; 7806 macaque; 7807 mandrill; 7808 marmoset; 7809 tamarin; 7810 capuchin; 7816 colobus; 7817 langur; 7825 vervet; 7826 guenon; 7830 golden lion tamarin; 7831 Barbary macaque; 7832 Barbary ape; 7833 titi [monkey]; 7834 saki [monkey]; 7835 mangabey; 9790 pygmy marmoset; 9807 gelada; 50487 uakari; 50488 snub-nosed monkey; 50490 drill [monkey]; 50493 woolly monkey; 50494 Japanese macaque; 50496 diana; 50497 emperor tamarin; 51129 bonnet macaque; 51131 lion-tailed macaque; 51133 hanuman langur; 51180 pig-tailed macaque; 59900 talapoin; 59901 muriqui; 59902 kipunji; 59903 douc langur; 59905 cotton-top tamarin; 63003 De Brazza's; 63004 Goeldi's; 63005 howler; 63006 douroucouli; 63007 patas; 63008 rhesus; 65181 proboscis [long-nosed]; 65182 spider [prehensile-tailed]; 65183 squirrel [tiny primate]
+G: 7831 7832
+
+T macaque_species | macaque species
+W: 7831 Barbary; 50494 Japanese; 51129 bonnet; 51131 lion-tailed; 51180 pig-tailed
+
+T rodents | rodents
+W: 990 squirrel [tree rodent]; 991 mouse [animal]; 992 rat [animal]; 1010 beaver [dam-building rodent]; 1015 porcupine; 1038 capybara; 1042 chinchilla; 1048 groundhog; 1049 woodchuck; 1445 hamster; 1446 guinea pig; 1447 cavy; 1448 gerbil; 7836 chipmunk; 7837 lemming; 7838 vole; 7839 dormouse; 7840 prairie dog; 7841 marmot; 7842 muskrat; 7844 nutria; 7845 agouti; 7846 paca; 7847 jerboa; 7848 gopher [pocket rodent]; 7849 harvest mouse; 7850 field mouse; 7851 house mouse; 7852 brown rat; 7853 black rat; 7854 flying squirrel; 7855 red squirrel; 7856 grey squirrel; 7858 kangaroo rat; 7859 mole rat; 7860 naked mole-rat; 7861 springhare; 7862 degu; 7863 hutia; 7864 pocket gopher; 7865 wood mouse
+G: 1446 1447; 1048 1049
+
+T whales_and_dolphins | whales and dolphins
+W: 1284 whale [animal]; 1303 narwhal; 1309 beluga [whale]; 1310 porpoise; 7877 pygmy sperm whale; 7880 dusky; 7885 harbour porpoise; 7887 vaquita; 7888 baiji; 7890 false killer whale; 7892 white-beaked dolphin; 7893 cetacean; 7894 baleen; 9857 dolphin; 36797 Irrawaddy; 59907 tucuxi; 59908 franciscana; 59909 Dall's porpoise; 59910 melon-headed whale; 59912 finless porpoise; 59914 rough-toothed dolphin; 63009 boto [Amazon]; 63010 bottlenose; 63011 bowhead; 63012 Bryde's; 63013 Commerson's; 63014 Cuvier's; 63015 finback; 63016 Fraser's; 63017 Hector's; 63018 humpback [whale]; 63019 minke; 63020 Risso's; 63021 cachalot; 63556 blue [cetacean]; 63557 gray [cetacean]; 63558 pilot [cetacean]; 63559 right [cetacean]; 63560 river [cetacean]; 63561 sei [cetacean]; 63562 spinner [cetacean]; 64790 Killer [orca]; 65184 beaked; 65185 common [widespread]
+
+T marsupials | marsupials
+W: 984 kangaroo; 998 koala; 999 koala bear; 1026 wombat; 1046 opossum; 1047 possum; 1050 quokka; 1051 numbat; 1054 bandicoot; 1606 thylacine; 7895 Tasmanian devil; 7896 wallaby; 7897 sugar glider; 7898 bilby; 7899 red kangaroo; 7900 grey kangaroo; 7901 tree kangaroo; 7902 wallaroo; 7903 pademelon; 7904 potoroo; 7905 bettong; 7906 quoll; 7907 dunnart; 7908 antechinus; 7909 marsupial mole; 7910 cuscus; 7911 ringtail possum; 7912 brushtail possum; 7913 honey possum; 7914 Virginia opossum; 7915 planigale; 7916 musky rat-kangaroo; 7918 pouch [marsupial]; 7919 marsupial; 7920 yapok; 7921 monito del monte; 9702 joey [baby kangaroo]; 9940 gliding possum
+G: 7897 9940; 998 999; 1046 7914 1047
+
+T hoofed_mammals | hoofed mammals
+W: 149 cow [animal]; 150 pig [animal]; 151 sheep [farm animal]; 153 horse [animal]; 154 goat [animal]; 158 donkey [farm animal]; 159 ass [donkey]; 160 llama; 161 alpaca [animal]; 980 giraffe; 981 zebra [animal]; 986 hippopotamus; 987 hippo; 988 rhinoceros [animal]; 997 deer; 1002 camel [animal]; 1006 bison; 1008 moose; 1025 antelope [animal]; 1030 wildebeest; 1031 gnu; 1036 okapi; 1037 tapir; 1059 pronghorn; 1061 kudu; 1453 yak [animal]; 1454 water buffalo; 1471 reindeer; 1534 wild ass; 2555 springbok; 7922 elk [animal]; 7923 gazelle; 7924 impala [animal]; 7925 eland; 7926 oryx; 7927 ibex; 7928 mouflon; 7929 chamois [animal]; 7930 warthog [animal]; 7931 boar [animal]; 7932 musk ox; 7933 bighorn sheep; 7934 mountain goat; 7935 takin; 7936 saiga; 7937 nilgai; 7938 guanaco; 7939 vicuna [animal]; 7940 onager [wild ass]; 7941 quagga; 7942 peccary; 9483 Przewalski's horse; 9630 hartebeest; 9632 gerenuk; 9633 dik-dik; 9686 saola; 9689 muntjac; 9727 pudu; 9800 markhor; 9801 argali; 9867 gemsbok; 9868 nyala; 9870 babirusa; 50510 bongo [antelope]; 50512 duiker; 50518 sitatunga; 50520 bontebok; 50525 banteng; 50529 tamaraw; 50536 tahr
+G: 1030 1031; 158 159; 986 987
+
+T deer | deer
+W: 1008 moose; 1471 reindeer; 7922 elk [animal]; 9689 muntjac; 9727 pudu; 9730 caribou; 9732 wapiti; 9780 stag [deer]; 9781 doe [deer]; 9855 chital; 10130 fawn [deer]; 10288 hart [stag]; 25017 Rudolph; 50498 sambar [deer]; 50501 water; 50503 hog deer; 50504 hind [deer]; 50505 roebuck; 50506 Bambi [deer]; 50507 barasingha; 50508 marsh; 60118 brocket; 63022 milu; 63023 sika; 63024 whitetail; 63563 fallow; 63564 mule [antlered animal]; 63565 red [antlered animal]; 63566 roe [antlered animal]; 65188 musk [perfume-yielding]
+
+T antelopes | antelopes
+W: 1025 antelope [animal]; 1030 wildebeest; 1031 gnu; 1059 pronghorn; 1061 kudu; 2555 springbok; 7923 gazelle; 7924 impala [animal]; 7925 eland; 7926 oryx; 7936 saiga; 7937 nilgai; 9630 hartebeest; 9632 gerenuk; 9633 dik-dik; 9634 klipspringer; 9783 addax; 9794 topi; 9797 Thomson's gazelle; 9868 nyala; 50509 waterbuck; 50510 bongo [antelope]; 50511 roan; 50512 duiker; 50513 steenbok; 50514 oribi; 50515 blackbuck; 50516 bushbuck; 50517 reedbuck; 50518 sitatunga; 50519 lechwe; 50520 bontebok; 50521 blesbok; 50522 chiru; 63568 sable [African grazer]
+G: 1030 1031
+
+T wild_cattle | wild cattle
+W: 1006 bison; 1453 yak [animal]; 1454 water buffalo; 1602 aurochs; 7932 musk ox; 9636 Cape buffalo; 9684 gaur; 9686 saola; 9741 European bison; 9793 buffalo [animal]; 50523 American bison; 50525 banteng; 50526 kouprey; 50527 anoa; 50528 gayal; 50529 tamaraw; 50530 African buffalo; 50531 forest buffalo; 50532 dwarf buffalo; 50534 wood bison; 50535 plains bison; 63025 Chillingham
+
+T wild_goats_and_sheep | wild goats and sheep
+W: 7927 ibex; 7928 mouflon; 7929 chamois [animal]; 7935 takin; 9653 Nubian ibex; 9694 goral; 9800 markhor; 9801 argali; 9802 Himalayan tahr; 9810 Alpine ibex; 50536 tahr; 50539 urial; 50540 bharal; 50542 serow; 50543 wild goat; 50544 bezoar [wild goat]; 50545 snow; 50546 Siberian ibex; 50547 Walia ibex; 50548 Rocky Mountain goat; 50549 wild sheep; 50550 Stone's sheep; 63026 aoudad [North African]; 63027 bighorn; 63569 Dall; 63570 Marco Polo [Pamir argali]; 65190 mountain [white-coated]
+
+T wild_pigs | wild pigs
+W: 7930 warthog [animal]; 7931 boar [animal]; 7942 peccary; 9736 javelina; 9870 babirusa; 9872 tusker; 9874 bushpig; 9875 giant forest hog; 10298 hog [pig]; 50551 red river hog; 50552 pygmy hog; 50553 Visayan warty pig; 50554 bearded; 50555 razorback [wild pig]; 50556 feral; 50557 collared peccary; 50558 white-lipped peccary; 50559 Chacoan peccary; 50560 Sulawesi warty pig; 50561 sounder [boars]; 50562 Pumbaa [warthog]
+
+T odd_toed_animals | odd-toed animals
+W: 153 horse [animal]; 158 donkey [farm animal]; 159 ass [donkey]; 981 zebra [animal]; 988 rhinoceros [animal]; 1037 tapir; 1534 wild ass; 7940 onager [wild ass]; 7941 quagga; 9483 Przewalski's horse
+
+T bears | bears | Exactly: giant panda, moon bear, sun bear, sloth bear, spectacled bear, black, brown, polar.
+W: 1001 giant panda; 7954 Himalayan black bear; 7956 honey bear; 63571 black [large mammal]; 63572 brown [large mammal]; 63573 polar [large mammal]; 64802 Moon [crescent chest]; 65192 Andean; 65193 sloth [shaggy-coated]; 65194 spectacled [South American]; 65195 sun [smallest]
+G: 65195 7956; 65194 65192; 64802 7954
+
+T wild_dogs_and_foxes | wild dogs and foxes
+W: 995 wolf [animal]; 996 fox; 1033 jackal; 7582 Tibetan; 7960 coyote [animal]; 7961 dingo; 7964 grey wolf; 7966 timber wolf; 7968 dhole; 7971 maned wolf; 7972 bush dog; 7975 red wolf; 7977 kit; 7978 gray; 7981 corsac; 7982 crab-eating; 7983 Ethiopian wolf; 7984 golden jackal; 7985 black-backed jackal; 7986 side-striped jackal; 7987 pampas; 7988 Darwin's fox; 7989 island; 7993 coydog; 7994 Tasmanian wolf; 7995 vixen [fox]; 7996 Cape fox; 63028 fennec; 63029 tanuki [Japanese]; 63574 painted wolf; 63575 arctic [canid]; 63577 red [canid]; 65196 bat-eared; 65198 swift [small prairie]
+G: 7964 7966
+
+T weasel_family | weasel family
+W: 1009 otter; 1013 skunk [animal]; 1014 badger [animal]; 1043 ferret; 1044 stoat; 1045 wolverine; 1322 sea otter; 7997 weasel; 7998 mink [animal]; 7999 polecat; 8000 marten; 8001 pine marten; 8002 fisher [animal]; 8003 honey badger; 8004 river otter; 8005 giant otter; 8006 American badger; 8007 European badger; 8008 hog badger; 8009 black-footed ferret; 8010 least weasel; 8011 long-tailed weasel; 8012 steppe polecat; 8013 American mink; 8014 European mink; 8015 stone marten; 8016 beech marten; 8017 tayra; 8018 grison; 8019 zorilla; 8020 ratel; 8021 hooded skunk; 8022 striped skunk; 8023 spotted skunk; 8024 hog-nosed skunk; 32105 sable [animal]
+
+T bats | bats
+W: 993 bat [animal]; 3341 echolocation; 8026 fruit; 8027 flying fox [bat]; 8028 pipistrelle; 8030 noctule; 8031 long-eared bat; 8032 brown; 8033 little brown; 8034 big brown; 8037 serotine; 8038 barbastelle; 8039 free-tailed; 8040 Mexican free-tailed bat; 8041 leaf-nosed; 8042 bulldog; 8043 ghost; 8044 hoary; 8045 red; 8046 Indiana; 8047 tomb; 8048 vesper; 8049 mouse-eared; 8050 Egyptian fruit bat; 8051 spectral; 8052 Kitti's hog-nosed bat; 8053 vampire; 8054 megabat; 8055 microbat; 8056 roost [bats]; 8057 colony [bats]; 63030 Daubenton's; 63031 Natterer's; 63579 horseshoe [flying mammal]
+
+T rabbits_and_hares | rabbits and hares
+W: 1443 rabbit; 1444 bunny; 8058 hare; 8059 jackrabbit; 8060 cottontail; 8063 European rabbit; 8066 pika; 8067 lop [rabbit]; 8068 Flemish giant; 8070 Netherland dwarf; 8073 swamp; 8074 pygmy; 8076 hispid; 8077 doe [rabbit]; 8078 buck [rabbit]; 8079 kit [rabbit]; 8080 leveret; 8081 warren [rabbit]; 8082 burrow [rabbit]; 8083 cony; 8084 coney; 8085 Belgian hare; 8086 antelope jackrabbit; 8087 Eastern cottontail; 8089 hutch [rabbit]; 8090 March hare; 63285 teporingo; 63581 Angora [fluffy breed]; 63582 Arctic [lagomorph]; 63583 Dutch [lagomorph]; 63584 rex; 63585 snowshoe [lagomorph]; 65202 brown [large European]; 65204 marsh [wetland swimmer]; 65205 mountain [white in winter]
+G: 1443 1444
+
+T mammals_that_live_in_water | mammals that live in water
+W: 979 elephant [animal]; 986 hippopotamus; 987 hippo; 1009 otter; 1010 beaver [dam-building rodent]; 1019 platypus; 1027 walrus; 1028 seal [animal]; 1038 capybara; 1041 manatee; 1055 dugong
+
+T birds | birds
+W: 152 chicken [bird]; 155 duck [bird]; 156 turkey [bird]; 157 goose; 1062 eagle [bird]; 1063 owl; 1064 penguin [bird]; 1065 parrot; 1066 swan; 1067 robin [bird]; 1068 sparrow; 1069 crow [bird]; 1070 pigeon [bird]; 1071 seagull; 1072 gull; 1073 ostrich; 1074 flamingo; 1075 peacock [bird]; 1076 hummingbird; 1077 woodpecker; 1078 pelican; 1079 toucan; 1080 hawk [bird]; 1081 falcon; 1082 vulture [bird]; 1083 raven [bird]; 1084 dove [bird]; 1085 stork; 1086 heron; 1087 kingfisher; 1088 cuckoo [migrant bird]; 1089 magpie; 1090 starling; 1091 blackbird; 1092 finch; 1093 canary [bird]; 1094 budgie; 1095 emu [bird]; 1096 kiwi [bird]; 1097 albatross [bird]; 1098 puffin; 1099 cormorant; 1100 crane [bird]; 1101 swift [bird]; 1102 swallow [bird]; 1103 nightingale; 1104 osprey; 1105 condor [bird]; 1106 quail; 1107 pheasant; 1108 partridge; 1109 thrush [bird]; 1110 jay [bird]; 1111 jackdaw; 1112 lark [bird]; 1113 kookaburra; 1114 cockatoo; 1115 spoonbill; 1116 ibis [bird]; 1117 kite [bird]; 1118 cassowary; 1119 hornbill; 1120 lapwing; 1123 curlew; 1124 plover; 1125 snipe; 1126 avocet; 1127 oystercatcher; 1128 tern; 1129 gannet; 1130 nightjar; 1131 dunnock; 1132 bittern; 1133 merlin [bird]; 1134 kestrel; 7745 rook [bird]
+G: 1071 1072
+
+T birds_of_prey | birds of prey
+W: 1062 eagle [bird]; 1063 owl; 1080 hawk [bird]; 1081 falcon; 1082 vulture [bird]; 1104 osprey; 1105 condor [bird]; 1117 kite [bird]; 1133 merlin [bird]; 1134 kestrel; 2528 bald eagle; 2561 Andean condor; 8091 buzzard; 8092 harrier [bird]; 8093 golden eagle; 8094 peregrine falcon; 8095 red-tailed hawk; 8096 barn owl; 8097 snowy owl; 8098 tawny owl; 8099 great horned owl; 8100 eagle owl; 8101 hobby [bird]; 8102 goshawk; 8103 sparrowhawk; 8104 gyrfalcon; 8105 lammergeier; 8107 caracara; 8108 harpy eagle; 8109 white-tailed eagle; 8110 sea eagle; 8111 fish eagle; 8112 turkey vulture; 8113 griffon vulture; 8114 bearded vulture; 8115 California condor; 8116 little owl; 8117 screech owl; 8118 raptor [bird]; 8119 bird of prey; 8120 talon [bird]; 9649 saker falcon; 9655 Egyptian vulture; 9896 red kite; 32324 Philippine eagle; 50582 Steller's sea eagle; 50583 crowned eagle; 50584 martial eagle; 50587 Bonelli's eagle; 50593 bateleur; 50599 lappet-faced vulture; 51284 snail kite; 51299 hen harrier; 59916 Harris's hawk; 59917 Cooper's hawk; 59918 honey buzzard; 65208 secretary [snake-stomping]
+
+T owls | owls
+W: 9853 owl; 10135 owlet; 50564 long-eared; 50565 short-eared; 50566 barred; 50567 elf; 50569 pygmy; 50570 boreal; 50572 Ural; 50573 fish; 50574 scops; 50575 hawk; 50576 masked; 50577 spectacled; 50578 Eurasian eagle-owl; 50579 Hedwig [owl]; 50580 Blakiston's fish owl; 50581 hoot; 51110 pel's fishing owl; 51203 morepork; 59919 boobook; 59921 flammulated; 59922 powerful; 59923 sooty; 59924 marsh; 59925 grass; 59926 ferruginous pygmy owl; 63032 saw-whet; 63033 Tengmalm's; 63586 barn [night bird]; 63588 burrowing; 63589 great grey; 63590 great horned; 63593 screech [night bird]; 63595 snowy [night bird]; 63596 spotted [owl species]; 63597 tawny [night bird]; 65210 eagle [large horned]; 65216 little [Athena's]
+G: 65210 50578
+
+T eagles | eagles
+W: 1062 eagle [bird]; 10134 eaglet; 50582 Steller's sea eagle; 50586 booted; 50588 imperial; 50590 tawny; 50591 African fish eagle; 50592 short-toed eagle; 50593 bateleur; 50594 serpent; 50595 snake; 50596 black; 50597 American; 50598 Madagascar fish eagle; 63034 Bonelli's; 63035 Haast's; 63598 bald [raptor]; 63599 golden [raptor]; 63600 harpy [raptor]; 65225 crowned [African forest hunter]; 65226 fish [river fisher]; 65228 martial [Africa's largest]; 65229 Philippine [eagle species]; 65230 sea [coastal]; 65232 wedge-tailed; 65233 white-tailed
+
+T vultures | vultures
+W: 1082 vulture [bird]; 1105 condor [bird]; 2561 Andean condor; 8091 buzzard; 8105 lammergeier; 8115 California condor; 50600 white-backed; 50601 cinereous; 50602 hooded; 50603 palm-nut; 50604 Himalayan griffon; 50605 Cape; 50606 white-headed; 50607 turkey buzzard; 50608 Old World vulture; 50609 New World vulture; 50610 Ruppell's; 50611 ossifrage; 50612 griffon [vulture]; 50613 red-headed; 65234 black [scavenger]; 65237 Egyptian [small white scavenger]; 65239 king [colorful scavenger]; 65240 lappet-faced; 65244 turkey [red-headed scavenger]
+G: 65244 50607
+
+T british_raptors | british raptors
+W: 1104 osprey; 1117 kite [bird]; 1133 merlin [bird]; 1134 kestrel; 8091 buzzard; 8092 harrier [bird]; 8093 golden eagle; 8094 peregrine falcon; 8096 barn owl; 8098 tawny owl; 8101 hobby [bird]; 8102 goshawk; 8103 sparrowhawk; 8109 white-tailed eagle; 8116 little owl; 9896 red kite; 51299 hen harrier; 59918 honey buzzard
+
+T american_raptors | american raptors
+W: 2528 bald eagle; 2561 Andean condor; 8095 red-tailed hawk; 8099 great horned owl; 8107 caracara; 8108 harpy eagle; 8112 turkey vulture; 8115 California condor; 8117 screech owl; 51284 snail kite; 59916 Harris's hawk; 59917 Cooper's hawk
+
+T seabirds | seabirds
+W: 1064 penguin [bird]; 1071 seagull; 1072 gull; 1078 pelican; 1097 albatross [bird]; 1098 puffin; 1099 cormorant; 1128 tern; 1129 gannet; 1603 great auk; 8110 sea eagle; 8121 petrel; 8122 skua; 8123 shearwater; 8124 fulmar; 8125 guillemot; 8126 razorbill; 8127 auk; 8128 kittiwake; 8129 frigatebird; 8130 booby [bird]; 8131 storm petrel; 8132 Arctic tern; 8133 herring gull; 8134 black-headed gull; 8135 great skua; 8136 bonxie; 8137 shag [bird]; 8138 little auk; 8139 tropicbird; 8140 noddy [bird]; 8141 sooty tern; 8142 Manx shearwater; 8143 royal albatross; 8144 wandering albatross; 8145 brown pelican; 8146 blue-footed booby; 8147 pomarine skua; 8148 phalarope; 8149 murre
+G: 1071 1072
+
+T songbirds | songbirds
+W: 1067 robin [bird]; 1068 sparrow; 1090 starling; 1091 blackbird; 1092 finch; 1093 canary [bird]; 1102 swallow [bird]; 1103 nightingale; 1109 thrush [bird]; 1112 lark [bird]; 1131 dunnock; 8150 skylark; 8151 wren [bird]; 8152 bluebird; 8153 cardinal [bird]; 8154 mockingbird; 8155 blue jay; 8156 oriole; 8157 warbler; 8158 chickadee; 8159 nuthatch; 8160 goldfinch; 8161 chaffinch; 8162 bullfinch; 8163 greenfinch; 8164 bunting [bird]; 8165 tit [bird]; 8166 blue tit [bird]; 8167 great tit; 8168 song thrush; 8169 mistle thrush; 8170 redwing; 8171 fieldfare; 8172 yellowhammer; 8173 linnet; 8174 siskin; 8175 redpoll; 8176 crossbill; 8177 hawfinch; 8178 treecreeper; 8179 wagtail; 8180 pipit; 8181 flycatcher; 8182 redstart; 8183 stonechat; 8184 whinchat; 8185 wheatear; 8186 lyrebird; 8187 meadowlark; 8188 junco; 8189 towhee; 8190 tanager; 8191 grosbeak; 8192 house sparrow; 8193 song sparrow; 8194 American robin; 50618 twite; 51269 bobolink; 51302 wallcreeper; 59927 ortolan; 59928 firecrest; 59929 chiffchaff; 59930 whitethroat; 59931 blackcap; 59932 dipper; 59933 waxwing; 59934 veery; 59935 bushtit; 59936 phainopepla
+
+T finches | finches
+W: 1092 finch; 1093 canary [bird]; 8160 goldfinch; 8161 chaffinch; 8162 bullfinch; 8163 greenfinch; 8173 linnet; 8174 siskin; 8175 redpoll; 8176 crossbill; 8177 hawfinch; 8191 grosbeak; 50614 brambling; 50615 house; 50616 purple; 50617 serin; 50618 twite; 50619 rosefinch; 50620 evening grosbeak; 50621 pine siskin; 50622 American goldfinch; 50623 lesser redpoll; 50624 European goldfinch; 50625 trumpeter; 50626 citril; 50627 society; 50628 Bengalese; 50629 waxbill; 50630 Java sparrow; 50631 snowfinch; 50632 hoary redpoll; 50633 rose-breasted grosbeak; 63036 Gouldian; 65249 Darwin's [Galapagos songbirds]; 65254 zebra [striped-cheek songbird]
+
+T crows_and_ravens | crows and ravens
+W: 1069 crow [bird]; 1083 raven [bird]; 1089 magpie; 1110 jay [bird]; 1111 jackdaw; 7745 rook [bird]; 8155 blue jay; 9803 alpine chough; 10240 murder [crows]; 50634 chough; 50635 nutcracker [bird]; 50636 hooded; 50637 common; 50638 American; 50639 fish; 50640 Eurasian jay; 50641 Steller's jay; 50642 scrub jay; 50643 Clark's nutcracker; 50644 treepie; 50645 red-billed chough; 50646 hoodie [crow]; 50647 house; 50648 pied; 50649 white-necked; 50650 Australian; 50651 pinyon jay; 50652 Canada jay; 50653 corvid; 50655 azure-winged magpie; 50656 black-billed magpie; 50657 gray jay; 65257 carrion [black corvid scavenger]
+
+T new_world_birds | american songbirds
+W: 8152 bluebird; 8153 cardinal [bird]; 8154 mockingbird; 8155 blue jay; 8156 oriole; 8158 chickadee; 8187 meadowlark; 8188 junco; 8189 towhee; 8190 tanager; 8191 grosbeak; 8193 song sparrow; 51269 bobolink; 59934 veery; 59935 bushtit; 59936 phainopepla
+
+T birds_named_after_a_colour | birds named after a colour
+W: 1091 blackbird; 8152 bluebird; 8155 blue jay; 8160 goldfinch; 8163 greenfinch; 8166 blue tit [bird]; 8170 redwing; 8172 yellowhammer; 8175 redpoll; 8182 redstart; 59930 whitethroat; 59931 blackcap
+
+T waterbirds | waterbirds
+W: 155 duck [bird]; 157 goose; 1066 swan; 1074 flamingo; 1078 pelican; 1085 stork; 1086 heron; 1087 kingfisher; 1100 crane [bird]; 1115 spoonbill; 1116 ibis [bird]; 1120 lapwing; 1123 curlew; 1124 plover; 1125 snipe; 1126 avocet; 1127 oystercatcher; 1132 bittern; 1483 muscovy duck; 8196 teal [bird]; 8197 egret; 8198 coot; 8199 moorhen; 8200 grebe; 8201 loon [bird]; 8202 gadwall; 8203 pintail; 8204 wigeon; 8205 shoveler; 8206 pochard; 8207 goldeneye; 8208 eider; 8209 merganser; 8210 mute swan; 8211 black swan; 8212 trumpeter swan; 8213 whooper swan; 8214 Canada goose; 8215 greylag goose; 8216 barnacle goose; 8217 brent goose; 8218 snow goose; 8219 Egyptian goose; 8220 sandpiper; 8221 godwit; 8222 redshank; 8223 wood duck; 8224 mandarin duck; 8226 great blue heron; 8227 water rail; 8228 jacana; 8229 whistling duck; 9862 harlequin duck; 9917 anhinga; 17734 mallard [duck]; 50662 canvasback; 50663 bufflehead; 50664 long-tailed duck; 50665 smew; 50667 shelduck; 50669 ruddy duck; 50670 scoter; 50671 garganey
+
+T ducks | ducks
+W: 1480 drake [duck]; 1483 muscovy; 8202 gadwall; 8203 pintail; 8204 wigeon; 8205 shoveler; 8206 pochard; 8207 goldeneye; 8208 eider; 8209 merganser; 8224 mandarin; 9862 harlequin; 10128 duckling; 17734 mallard [duck]; 17738 teal [duck]; 50658 tufted; 50659 scaup; 50661 Indian runner [duck]; 50662 canvasback; 50663 bufflehead; 50665 smew; 50666 goosander; 50667 shelduck; 50668 redhead [duck]; 50669 ruddy; 50670 scoter; 50671 garganey; 50672 ringed teal; 50673 black; 50674 Khaki Campbell [duck]; 50675 Rouen; 63037 Aylesbury; 63038 Pekin; 65265 long-tailed; 65266 rubber [bath toy]; 65268 whistling; 65269 wood [colorful waterfowl]
+
+T geese_and_swans | geese and swans
+W: 157 goose; 1066 swan; 1481 gander [male goose]; 8210 mute; 8211 black; 8212 trumpeter; 8214 Canada goose; 8215 greylag goose; 8216 barnacle goose; 8217 brent goose; 8218 snow goose; 8219 Egyptian goose; 10131 gosling; 10287 cob [male swan]; 17736 wild goose; 27070 nene [goose]; 41073 cygnet [young swan]; 50676 pink-footed goose; 50677 white-fronted goose; 50678 bean goose; 50679 bar-headed goose; 50680 emperor goose; 50681 Ross's goose; 50683 tundra; 50684 black-necked; 50685 coscoroba; 50686 pen [female swan]; 50687 brant [goose]; 50688 Hawaiian goose; 50689 Chinese goose; 50690 Toulouse goose; 50691 Embden goose; 63039 Bewick's; 63040 whooper
+G: 157 17736
+
+T wading_birds | wading birds
+W: 1074 flamingo; 1085 stork; 1086 heron; 1100 crane [bird]; 1115 spoonbill; 1116 ibis [bird]; 1120 lapwing; 1123 curlew; 1124 plover; 1125 snipe; 1126 avocet; 1127 oystercatcher; 1132 bittern; 8148 phalarope; 8197 egret; 8220 sandpiper; 8221 godwit; 8222 redshank; 8226 great blue heron; 8228 jacana; 8301 woodcock; 8336 scarlet ibis; 9656 sacred ibis; 9739 whooping crane; 9742 white stork; 9795 marabou stork; 31596 night heron; 32072 wader; 50692 stilt [wader]; 50693 greenshank; 50694 turnstone [bird]; 50695 knot [bird]; 50696 dunlin; 50697 sanderling; 50698 whimbrel; 50699 ruff [bird]; 50700 limpkin; 50701 grey heron; 50702 little egret; 50703 cattle egret; 50704 sandhill crane; 50705 shoebill; 50706 hammerkop; 50707 glossy ibis; 50708 jabiru; 50709 killdeer; 50710 yellowlegs; 51108 saddle-billed stork; 51283 wood stork; 59937 dowitcher; 59938 stint; 59939 tattler; 59940 willet; 59941 surfbird; 59942 wrybill; 59943 stone-curlew; 59944 openbill; 59945 adjutant stork; 59946 pratincole; 59947 boat-billed heron; 59948 purple sandpiper
+
+T flightless_birds | flightless birds
+W: 1064 penguin [bird]; 1073 ostrich; 1095 emu [bird]; 1096 kiwi [bird]; 1118 cassowary; 1603 great auk; 1604 moa; 1605 dodo; 8231 kakapo; 8232 takahe; 8233 weka; 8234 emperor penguin; 8235 king penguin; 8236 Adelie penguin; 8237 chinstrap penguin; 8238 gentoo penguin; 8239 macaroni penguin; 8240 rockhopper penguin; 8241 little penguin; 8242 fairy penguin; 8243 African penguin; 8244 Galapagos penguin; 8247 steamer duck; 8248 Atitlan grebe; 8249 Tasmanian native hen; 8250 Stephens Island wren; 8252 greater rhea; 8253 southern cassowary; 8254 great spotted kiwi; 8255 brown kiwi; 8256 flightless (adjective); 8257 ratite; 8258 Somali ostrich; 8259 lesser rhea; 8260 Magellanic penguin; 8261 yellow-eyed penguin; 8262 Humboldt penguin; 9721 rhea [bird]; 63041 Aepyornis; 63286 Galapagos cormorant
+G: 8241 8242
+
+T penguin_species | penguin species
+W: 8234 emperor; 8235 king; 8236 Adelie; 8237 chinstrap; 8238 gentoo; 8239 macaroni; 8240 rockhopper; 8241 little; 8242 fairy; 8243 African; 8244 Galapagos; 8260 Magellanic; 8261 yellow-eyed; 8262 Humboldt
+G: 8241 8242
+
+T parrots | parrots
+W: 1065 parrot; 1094 budgie; 1114 cockatoo; 1452 cockatiel; 1472 lovebird; 8231 kakapo; 8263 macaw; 8264 lorikeet; 8265 African grey; 8266 kea; 8267 conure; 8268 rosella; 8269 amazon; 8270 eclectus; 8271 lory; 8272 parrotlet; 8273 scarlet macaw; 8274 blue and gold macaw; 8275 hyacinth macaw; 8276 galah [bird]; 8277 corella; 8278 rainbow lorikeet; 8279 ring-necked parakeet; 8280 monk parakeet; 8281 Carolina parakeet; 8282 sun conure; 8284 kaka [parrot]; 8285 night; 8286 ground; 8287 owl; 8288 pygmy; 8289 hanging; 8290 fig; 8291 Senegal; 8293 palm cockatoo; 8294 black cockatoo; 8295 pink cockatoo; 8296 gang-gang; 8297 polly [parrot]; 8298 Norwegian blue [parrot]; 63042 Meyer's; 63287 quaker [pet bird]
+
+T game_birds | game birds
+W: 156 turkey [bird]; 1106 quail; 1107 pheasant; 1108 partridge; 1125 snipe; 1455 guinea fowl; 8196 teal [bird]; 8203 pintail; 8204 wigeon; 8299 grouse; 8300 ptarmigan; 8301 woodcock; 8302 wild turkey; 8303 red grouse; 8304 black grouse; 8305 capercaillie; 8306 ruffed grouse; 8307 sage grouse; 8308 prairie chicken; 8309 bobwhite; 8310 red-legged partridge; 8311 grey partridge; 8312 chukar; 8313 francolin; 8314 ring-necked pheasant; 8315 golden pheasant; 8316 Reeves's pheasant; 8317 jungle fowl; 8318 wood pigeon; 8319 brace [game]; 8320 covey; 8321 gun dog [game]; 8322 beater [game]; 8323 shoot [game]; 8324 Gambel's quail; 8325 California quail; 8326 sharp-tailed grouse; 8327 willow ptarmigan; 8328 rock ptarmigan; 8329 hazel grouse; 8330 Hungarian partridge; 8331 button quail; 8332 Japanese quail; 8333 helmeted guineafowl; 17734 mallard [duck]
+
+T colorful_birds | colorful birds | birds known for bright plumage: peacock, toucan, macaw, kingfisher
+W: 1065 parrot; 1074 flamingo; 1075 peacock [bird]; 1076 hummingbird; 1079 toucan; 1087 kingfisher; 1094 budgie; 1114 cockatoo; 1115 spoonbill; 1119 hornbill; 1456 peafowl; 2560 quetzal [bird]; 8152 bluebird; 8153 cardinal [bird]; 8155 blue jay; 8156 oriole; 8160 goldfinch; 8190 tanager; 8223 wood duck; 8224 mandarin duck; 8263 macaw; 8264 lorikeet; 8273 scarlet macaw; 8275 hyacinth macaw; 8278 rainbow lorikeet; 8315 golden pheasant; 8334 bird of paradise [bird]; 8335 parakeet; 8336 scarlet ibis; 8337 roller [bird]; 8338 bee-eater; 8339 hoopoe; 8340 scarlet tanager; 8341 painted bunting; 8342 indigo bunting; 8343 rainbow bee-eater; 8344 resplendent quetzal; 8345 cock-of-the-rock; 8346 lilac-breasted roller; 8347 turaco; 8348 sunbird; 8349 keel-billed toucan; 8350 red-crested cardinal; 8351 Gouldian finch; 8352 splendid fairywren; 8353 green jay; 8354 violet-eared waxbill; 8355 paradise tanager; 8356 rosy-faced lovebird; 8357 bluethroat; 50243 pitta [bird]
+
+T new_world_songbirds | new world songbirds
+W: 8152 bluebird; 8153 cardinal [bird]; 8155 blue jay; 8156 oriole; 8160 goldfinch; 8190 tanager; 8340 scarlet tanager; 8341 painted bunting; 8342 indigo bunting; 8350 red-crested cardinal; 8353 green jay; 8355 paradise tanager
+
+T bird_body_parts | bird body parts
+W: 167 belly [stomach]; 3181 toe; 3207 throat [body part]; 3232 hallux; 3284 breastbone; 3296 gizzard; 8120 talon [bird]; 8358 beak; 8359 bill [bird]; 8360 feather [bird]; 8361 wing [bird]; 8362 tail [bird]; 8363 claw [bird]; 8364 crest [bird]; 8365 plumage; 8366 flanks [bird]; 8367 wattle [bird]; 8368 crop [bird]; 8369 down [bird]; 8370 vent [bird]; 8371 breast [bird]; 8372 crown [bird]; 8373 auriculars; 8374 mantle [bird]; 8375 rump [bird]; 8376 primaries [bird]; 8377 secondaries [bird]; 8378 covert [bird]; 8379 syrinx [bird organ]; 8380 cere; 8381 hackle [bird]; 8382 spur [bird]; 8383 tarsus; 8384 alula; 8385 barb [bird]; 8386 rachis; 8387 vane [bird]; 8388 preen gland; 8389 wing tip; 8390 tail feather; 8391 flight feather; 8392 webbed foot; 8393 eye ring; 8394 tertials; 8395 crown feather; 8396 foot; 8397 scapulars; 8398 beak tip; 8399 lore [bird]; 8400 supercilium; 8401 eyebrow stripe; 8402 wing bar; 8403 cloaca; 8404 air sac [bird]; 8405 furcula; 8406 wishbone [bird]; 8407 drumstick [bird]; 10342 comb [bird]; 50278 keel [bird]
+
+T parts_of_a_bird_s_head | parts of a bird's head
+W: 3207 throat [body part]; 8358 beak; 8359 bill [bird]; 8364 crest [bird]; 8367 wattle [bird]; 8372 crown [bird]; 8373 auriculars; 8380 cere; 8393 eye ring; 8395 crown feather; 8398 beak tip; 8399 lore [bird]; 8400 supercilium; 8401 eyebrow stripe; 10342 comb [bird]
+
+T what_a_bird_stands_on | what a bird stands on
+W: 3181 toe; 3232 hallux; 8120 talon [bird]; 8363 claw [bird]; 8382 spur [bird]; 8383 tarsus; 8392 webbed foot
+
+T inner_organs_and_bones | bird organs and bones
+W: 3284 breastbone; 3296 gizzard; 8368 crop [bird]; 8379 syrinx [bird organ]; 8388 preen gland; 8403 cloaca; 8404 air sac [bird]; 8405 furcula; 8406 wishbone [bird]; 50278 keel [bird]
+
+T birdwatching_words | birdwatching words
+W: 1856 bird feeder; 1859 birdbath; 8365 plumage; 8402 wing bar; 8408 binoculars; 8409 field guide; 8410 birdwatcher; 8411 birder; 8412 twitcher [rare-bird chaser]; 8413 hide [birdwatching]; 8414 nest box; 8415 birdhouse; 8416 birdsong; 8417 bird call; 8418 dawn chorus; 8419 migration [birds]; 8420 flock [birds]; 8421 roost [birds]; 8422 lifer [birder]; 8423 life list; 8424 spotting scope; 8425 checklist [birdwatching]; 8426 hotspot [birdwatching]; 8427 tick [birdwatching]; 8428 rarity [birdwatching]; 8429 vagrant [birds]; 8430 fledgling; 8431 juvenile [birds]; 8432 fall-out; 8433 jizz; 8434 mobbing [birds]; 8435 flyover; 8437 bird banding; 8438 mist net; 8439 eBird; 8440 RSPB; 8441 Audubon; 8442 big year; 8443 bird count; 8444 birdathon; 8445 pishing; 8446 dip [birdwatching]; 8448 passerine (adjective); 8449 non-passerine (adjective); 8450 summer visitor; 8451 winter visitor; 8452 resident [birds]; 8453 lek [display]; 8454 seed feeder; 8455 suet [animal fat]; 8456 bird table; 8457 telephoto lens; 8458 field notes; 8459 bird sighting; 8460 bird of the year
+G: 8410 8411
+
+T observer_s_kit | birdwatching kit
+W: 8408 binoculars; 8409 field guide; 8413 hide [birdwatching]; 8423 life list; 8424 spotting scope; 8425 checklist [birdwatching]; 8438 mist net; 8439 eBird; 8457 telephoto lens; 8458 field notes
+
+T local_status_labels | birdwatching status labels
+W: 8419 migration [birds]; 8428 rarity [birdwatching]; 8429 vagrant [birds]; 8432 fall-out; 8435 flyover; 8447 accidental [birdwatching] (adjective); 8450 summer visitor; 8451 winter visitor; 8452 resident [birds]
+
+T pigeons_and_doves | pigeons and doves
+W: 1084 dove [bird]; 1605 dodo; 4629 carrier; 8463 turtle; 8467 stock; 8469 white; 8470 ringneck; 8471 Eurasian collared; 8472 spotted; 8473 laughing; 8474 zebra; 8475 diamond; 8476 crested; 8477 bronzewing; 8478 fruit; 8479 imperial; 8480 crowned; 8482 band-tailed; 8483 white-winged; 8484 ground; 8485 Inca; 8486 squab; 8487 fantail; 8488 tumbler; 8489 racing; 8491 dovecote; 8493 coo [dove] (verb); 8494 olive; 8495 green; 8497 Barbary; 8498 emerald; 8500 cuckoo-dove; 9921 pigeon; 10174 loft [pigeon home]; 63043 Nicobar; 63044 pouter; 63613 homer [pigeon]; 65273 collared; 65280 feral [city]; 65287 mourning [cooing]; 65289 passenger [extinct]; 65292 rock [wild city]; 65299 wood [large grey]
+G: 8491 10174; 65273 8471
+
+T reptiles_and_amphibians | reptiles and amphibians
+W: 1135 snake [animal]; 1136 serpent [snake]; 1137 lizard [reptile]; 1138 crocodile; 1140 alligator; 1142 turtle [shelled reptile]; 1143 tortoise; 1144 frog [amphibian]; 1145 toad [animal]; 1146 salamander; 1147 newt; 1148 eft; 1149 gecko; 1150 iguana; 1151 chameleon; 1152 Komodo dragon; 1153 Komodo monitor; 1154 python [animal]; 1155 cobra [snake]; 1156 viper [animal]; 1157 rattlesnake; 1159 boa constrictor; 1160 boa [snake]; 1161 anaconda; 1162 adder [animal]; 1163 tadpole; 1166 bullfrog; 1167 tree frog; 1168 cane toad; 1169 dart frog; 1170 axolotl; 1171 mamba [snake]; 1172 skink; 1173 monitor lizard; 1174 gila monster; 1175 bearded dragon; 1176 beardie; 1177 tuatara; 1178 caiman; 1179 gharial; 1180 terrapin; 1181 slow worm; 1183 anole; 1184 horned lizard; 1185 basilisk [animal]; 1186 bullsnake; 1187 hellbender; 1188 mudpuppy; 1189 olm; 1190 caecilian; 1191 coral snake; 1192 garter snake; 1193 copperhead [animal]; 1194 sidewinder [animal]; 1195 taipan; 1196 king cobra; 1197 boomslang; 1198 thorny devil; 1199 frilled lizard; 1200 marine iguana; 1201 snapping turtle; 1202 leatherback [turtle]; 1203 glass frog; 1204 natterjack; 1205 spadefoot; 1206 green anole; 1207 fire salamander; 1208 giant salamander; 1209 blue-tongued skink; 1210 horned toad; 1211 smooth newt; 1212 crested newt; 1213 Gaboon viper
+G: 1135 1136; 1175 1176; 1152 1153; 1160 1159; 1147 1148
+
+T snakes | snakes
+W: 1135 snake [animal]; 1136 serpent [snake]; 1154 python [animal]; 1155 cobra [snake]; 1156 viper [animal]; 1157 rattlesnake; 1159 boa constrictor; 1160 boa [snake]; 1161 anaconda; 1162 adder [animal]; 1171 mamba [snake]; 1186 bullsnake; 1191 coral; 1192 garter; 1193 copperhead [animal]; 1194 sidewinder [animal]; 1195 taipan; 1196 king cobra; 1197 boomslang; 1213 Gaboon viper; 1328 sea; 8501 black mamba; 8502 cottonmouth; 8503 water moccasin; 8505 smooth; 8506 milk; 8507 corn; 8508 king; 8509 rat; 8510 ball python; 8511 Burmese python; 8512 reticulated python; 8513 green tree python; 8514 emerald tree boa; 8515 rainbow boa; 8516 whip; 8517 bull; 8519 puff adder; 8520 pit viper; 8521 bushmaster; 8522 fer-de-lance; 8523 eastern brown; 8524 tiger; 8525 death adder; 8526 inland taipan; 8527 krait; 8528 asp [animal]; 8529 Egyptian cobra; 8530 spitting cobra; 8531 blind; 8532 vine; 8533 cat; 8534 flying; 8535 sand boa; 63045 hognose; 65302 grass [harmless ringed]
+G: 1135 1136; 1160 1159
+
+T venomous_snakes | venomous snakes
+W: 1155 cobra [snake]; 1156 viper [animal]; 1157 rattlesnake; 1162 adder [animal]; 1171 mamba [snake]; 1191 coral; 1195 taipan; 1196 king cobra; 1197 boomslang; 1213 Gaboon viper; 1328 sea snake; 8501 black mamba; 8502 cottonmouth; 8503 water moccasin; 8519 puff adder; 8520 pit viper; 8521 bushmaster; 8522 fer-de-lance; 8524 tiger; 8525 death adder; 8526 inland taipan; 8527 krait; 8528 asp [animal]; 8530 spitting cobra; 9646 horned viper; 9695 Indian cobra; 27592 sidewinder [snake]; 40108 green mamba; 50711 copperhead [snake]; 50712 brown; 50713 diamondback; 50714 eastern diamondback; 50715 western diamondback; 50716 timber rattlesnake; 50717 saw-scaled viper; 50718 Russell's viper; 50719 banded krait; 50720 lancehead; 50721 terciopelo; 50722 rinkhals; 50724 venomous snake; 63288 king brown
+
+T constrictor_snakes | constrictor snakes
+W: 1154 python [animal]; 1159 boa constrictor; 1160 boa [snake]; 1161 anaconda; 1596 Titanoboa; 8506 milk; 8507 corn; 8509 rat; 8510 ball python; 8511 Burmese python; 8512 reticulated python; 8513 green tree python; 8514 emerald tree boa; 8515 rainbow boa; 8517 bull; 8535 sand boa; 9923 rosy boa; 50725 green anaconda; 50726 royal python; 50727 rock python; 50728 African rock python; 50729 carpet python; 50730 rubber boa; 50731 tree boa; 50732 kingsnake; 50733 gopher; 50734 pine snake; 50735 Indian python; 50736 amethystine python; 50737 scrub python; 50738 Madagascar boa; 50739 yellow anaconda; 50740 black rat snake; 50741 constrictor; 50742 woma python; 50743 Children's python; 50744 spotted python; 50745 Kaa [python]; 50746 Dumeril's boa
+G: 1160 1159 50741
+
+T american_serpents | american serpents
+W: 1157 rattlesnake; 1186 bullsnake; 1193 copperhead [animal]; 1194 sidewinder [animal]; 8502 cottonmouth; 8503 water moccasin; 8506 milk snake; 8508 king snake; 8509 rat snake; 8517 bull snake; 63045 hognose; 63615 coral [snake]; 63616 corn [snake]; 63617 garter [snake]
+
+T lizards | lizards
+W: 1137 lizard [reptile]; 1149 gecko; 1150 iguana; 1151 chameleon; 1152 Komodo dragon; 1153 Komodo monitor; 1172 skink; 1174 gila monster; 1175 bearded dragon; 1176 beardie; 1177 tuatara; 1181 slow worm; 1183 anole; 1185 basilisk [animal]; 1198 thorny devil; 1200 marine iguana; 1209 blue-tongued skink; 8536 green iguana; 8537 leopard gecko; 8538 tokay gecko; 8539 house gecko; 8540 leaf-tailed gecko; 8541 crested gecko; 8542 veiled chameleon; 8543 Jackson's chameleon; 8544 panther chameleon; 8545 water dragon; 8546 sand; 8548 wall; 8549 glass; 8550 collared; 8551 fence lizard; 8552 chuckwalla; 8553 desert iguana; 8554 rhinoceros iguana; 8555 tegu; 8556 whiptail; 8557 agama; 8558 Nile monitor; 8559 water monitor; 8560 perentie; 8561 goanna; 8562 shingleback; 8563 bobtail [lizard]; 8564 flying dragon; 8565 legless; 8566 girdled; 8567 spiny; 8568 side-blotched; 63289 monitor [reptile]; 65305 common [European reptile]; 65306 frilled [Australian frilled]; 65309 horned [spiky desert]
+G: 1175 1176; 1152 1153
+
+T turtles_and_tortoises | turtles and tortoises
+W: 1142 turtle [shelled reptile]; 1143 tortoise; 1180 terrapin; 1202 leatherback [turtle]; 1293 sea turtle; 8569 loggerhead [turtle]; 8571 hawksbill; 8572 box; 8573 painted; 8574 red-eared slider; 8578 desert; 8579 Hermann's; 8580 Russian; 8581 leopard; 8582 sulcata; 8584 mud; 8585 musk; 8586 map; 8587 wood; 8588 spotted; 8589 diamondback terrapin; 8590 matamata; 8591 Kemp's ridley; 8592 olive ridley; 8593 flatback turtle; 8595 river; 8596 hatchling [turtle]; 8597 carapace; 8598 plastron [shell]; 8599 shell [turtle]; 8600 slider [turtle]; 8601 cooter; 8602 pancake; 8604 Indian star; 8605 Greek; 8607 bog; 8608 stinkpot [musk turtle]; 8611 Lonesome George [tortoise]; 63046 Aldabra; 63623 snapper [turtle]; 65318 Galapagos [island giant]; 65319 giant [huge shelled]; 65320 gopher [burrowing shelled]; 65322 green [large marine]; 65331 pond [freshwater]; 65332 radiated [Madagascar]; 65335 softshell [leathery-shelled]
+G: 8608 8585; 8600 8574
+
+T crocodilians | crocodilians
+W: 1138 crocodile; 1140 alligator; 1178 caiman; 1179 gharial; 8612 saltwater crocodile; 8614 Nile crocodile; 8615 American alligator; 8616 Chinese alligator; 8617 black caiman; 8618 spectacled caiman; 8619 American crocodile; 8620 freshwater crocodile; 8621 dwarf crocodile; 8622 false gharial; 8623 Orinoco crocodile; 8625 Siamese crocodile; 8626 Cuban crocodile; 8627 Philippine crocodile; 8628 Morelet's crocodile; 8629 Johnston's crocodile; 8630 broad-snouted caiman; 8631 yacare caiman; 8632 gavial; 8633 mugger [animal]; 8634 crocodilian (adjective); 8635 swamp crocodile; 8636 estuarine crocodile; 8637 marsh crocodile; 8638 sacred crocodile; 8639 Tomistoma
+
+T frogs_and_toads | frogs and toads
+W: 1144 frog [amphibian]; 1145 toad [animal]; 1163 tadpole; 1166 bullfrog; 1204 natterjack; 1205 spadefoot; 8641 common frog; 8642 common toad; 8643 leopard; 8644 green; 8646 marsh; 8647 edible; 8648 pool frog; 8649 midwife; 8650 fire-bellied; 8651 golden poison; 8652 strawberry poison; 8653 goliath; 8654 African clawed; 8655 Surinam; 8657 pacman; 8658 White's tree; 8659 American; 8660 Fowler's; 8661 giant; 8662 gray tree; 8663 spring peeper; 8664 chorus; 8666 cricket frog; 8667 barking tree; 8668 tailed frog; 8669 Darwin's; 8670 Kermit [frog]; 8671 froglet; 8672 spawn [frog]; 8673 croak [frog] (verb); 8674 ribbit [frog]; 8675 lily pad; 8676 frogspawn; 8677 toadlet; 8678 harlequin; 8680 hairy; 63624 cane; 63625 dart [poisonous rainforest]; 63626 glass [see-through skin]; 63630 tomato [red round]; 63631 tree [climbing]; 65347 flying [gliding amphibian]; 65351 golden [extinct orange amphibian]; 65357 horned [horned amphibian]; 65360 red-eyed tree; 65364 wood [woodland amphibian]
+
+T salamanders_and_newts | salamanders and newts
+W: 1146 salamander; 1147 newt; 1148 eft; 1170 axolotl; 1187 hellbender; 1188 mudpuppy; 1189 olm; 8683 palmate; 8684 alpine; 8685 marbled; 8686 red-spotted; 8687 eastern; 8688 rough-skinned; 8689 California; 8690 spotted; 8691 tiger; 8692 marbled salamander; 8693 red-backed; 8694 slimy; 8695 two-lined; 8696 dusky; 8697 cave; 8698 lungless; 8699 siren [animal]; 8700 amphiuma; 8701 congo eel; 8702 waterdog; 8703 mole; 8704 Pyrenean brook; 8705 Italian crested; 8706 caudate; 8707 urodele; 8708 Mexican walking fish; 8709 gills [salamander]; 8710 larva [amphibian]; 8711 red eft; 8712 Ozark hellbender; 8713 Eastern hellbender; 8714 Alpine salamander; 8715 black; 8716 Jordan's; 8717 ensatina; 8718 Jefferson; 63632 fire [black and yellow]; 65369 crested [crested amphibian]; 65372 giant [huge amphibian giant]; 65373 great crested; 65385 smooth [smooth water amphibian]
+G: 1147 1148 8711; 65369 65373
+
+T animals_with_a_poisonous_bite | animals with a poisonous bite
+W: 1155 cobra [snake]; 1156 viper [animal]; 1157 rattlesnake; 1162 adder [animal]; 1171 mamba [snake]; 1174 gila monster; 1191 coral snake; 1193 copperhead [animal]; 1194 sidewinder [animal]; 1195 taipan; 1196 king cobra; 1197 boomslang; 1213 Gaboon viper
+
+T exotic_pets | pet reptiles and amphibians
+W: 1143 tortoise; 1149 gecko; 1150 iguana; 1151 chameleon; 1154 python [animal]; 1159 boa constrictor; 1167 tree frog; 1169 dart frog; 1170 axolotl; 1175 bearded dragon; 1176 beardie; 1183 anole; 1192 garter snake; 1209 blue-tongued skink
+
+T fish | fish
+W: 466 salmon [fish]; 467 tuna; 468 cod; 481 sardine; 482 anchovy; 483 trout; 484 swordfish; 489 haddock; 490 halibut; 492 mackerel; 493 herring; 494 tilapia; 495 eel; 513 lamprey; 1214 goldfish; 1215 shark [fish]; 1216 piranha; 1217 clownfish; 1218 angelfish; 1219 seahorse; 1221 catfish [fish]; 1222 plaice; 1223 carp; 1224 pike [fish]; 1225 perch [fish]; 1226 bass [fish]; 1227 sole [fish]; 1228 flounder [fish]; 1229 marlin; 1230 barracuda; 1231 pufferfish; 1232 blowfish; 1233 fugu [pufferfish]; 1234 globefish; 1235 stingray; 1236 ray [fish]; 1237 guppy; 1238 minnow; 1239 koi; 1240 sturgeon [freshwater fish]; 1241 bream; 1242 roach [fish]; 1243 tench; 1244 chub; 1245 dace; 1246 grayling; 1247 char [fish]; 1249 whitebait; 1250 snapper [fish]; 1251 grouper; 1252 mahi-mahi; 1253 dolphinfish; 1254 dorado [fish]; 1255 wahoo [fish]; 1256 tarpon; 1257 bonito; 1258 pollock; 1260 hake [fish]; 1263 gar [fish]; 1264 bowfin; 1265 lungfish; 1266 coelacanth; 1267 oarfish; 1268 sunfish; 1269 archerfish; 1270 wrasse; 1271 remora; 1272 hagfish; 1273 stickleback; 1274 zander; 1275 pikeperch; 1276 walleye [North American fish]; 1277 barramundi; 1278 John Dory; 1279 turbot; 1280 dab [fish]; 1281 tetra; 1282 betta; 1283 rainbow trout
+G: 1252 1253 1254; 1231 1232 1233 1234; 1235 1236; 1274 1275
+
+T freshwater_fish | freshwater fish
+W: 466 salmon [fish]; 483 trout; 495 eel; 1214 goldfish; 1216 piranha; 1221 catfish [fish]; 1223 carp; 1224 pike [fish]; 1225 perch [fish]; 1226 bass [fish]; 1237 guppy; 1238 minnow; 1239 koi; 1240 sturgeon [freshwater fish]; 1241 bream; 1242 roach [fish]; 1243 tench; 1244 chub; 1245 dace; 1246 grayling; 1247 char [fish]; 1264 bowfin; 1268 sunfish; 1273 stickleback; 1274 zander; 1275 pikeperch; 1276 walleye [North American fish]; 1283 rainbow trout; 8719 bluegill; 8720 crappie; 8721 largemouth bass; 8722 smallmouth bass; 8723 brown trout; 8724 brook trout; 8725 lake trout; 8726 steelhead; 8727 sockeye; 8728 muskellunge; 8730 northern pike; 8731 yellow perch; 8732 rudd; 8733 barbel; 8734 gudgeon; 8792 loach; 51230 arapaima; 51289 alligator gar; 59949 burbot; 59950 vendace; 59951 paddlefish; 59952 mahseer; 59953 ruffe
+G: 1274 1275
+
+T salmon_and_trout | salmon and trout
+W: 466 salmon [fish]; 483 trout; 8726 steelhead; 8727 sockeye; 9755 Arctic char; 10142 parr; 10143 smolt; 17792 lox [salmon]; 41059 fingerling; 50747 Atlantic; 50748 chinook [salmon]; 50750 coho; 50751 silver; 50752 chum; 50753 cutthroat; 50754 sea trout; 50755 Dolly Varden [trout]; 50756 golden; 50757 bull; 50758 kokanee; 50759 grilse; 50760 alevin; 50761 kelt; 50762 redd; 50764 Pacific; 50766 tiger; 50767 splake; 50768 ferox; 50769 huchen; 50770 Danube; 50771 landlocked; 63047 masu; 63635 brookie; 63636 brown [stream catch]; 63640 laker; 63641 pink [small Pacific catch]; 63642 rainbow [stocked catch]
+G: 50750 50751
+
+T coarse_fish | coarse fish
+W: 1223 carp; 1224 pike [fish]; 1225 perch [fish]; 1238 minnow; 1241 bream; 1242 roach [fish]; 1243 tench; 1244 chub; 1245 dace; 1274 zander; 8732 rudd; 8733 barbel; 8734 gudgeon; 59953 ruffe
+
+T north_american_game_fish | north american game fish
+W: 1226 bass [fish]; 1264 bowfin; 1268 sunfish; 1276 walleye [North American fish]; 8719 bluegill; 8720 crappie; 8721 largemouth bass; 8722 smallmouth bass; 8728 muskellunge; 8730 northern pike; 8731 yellow perch; 51289 alligator gar
+
+T sea_fish | sea fish
+W: 466 salmon [fish]; 467 tuna; 468 cod; 481 sardine; 482 anchovy; 484 swordfish; 489 haddock; 490 halibut; 492 mackerel; 493 herring; 508 monkfish; 510 skate [fish]; 1222 plaice; 1226 bass [fish]; 1227 sole [fish]; 1228 flounder [fish]; 1229 marlin; 1230 barracuda; 1241 bream; 1250 snapper [fish]; 1251 grouper; 1252 mahi-mahi; 1253 dolphinfish; 1254 dorado [fish]; 1255 wahoo [fish]; 1257 bonito; 1258 pollock; 1260 hake [fish]; 1270 wrasse; 1279 turbot; 1280 dab [fish]; 8735 whiting; 8736 mullet [fish]; 8737 sprat; 8738 pilchard; 8739 gurnard; 8740 brill; 8741 ling [fish]
+G: 1252 1253 1254
+
+T flatfish | flatfish
+W: 490 halibut; 1222 plaice; 1227 sole [fish]; 1228 flounder [fish]; 1279 turbot; 1280 dab [fish]; 8740 brill; 17822 dover sole; 17825 lemon sole; 50772 megrim; 50773 Greenland halibut; 50774 Atlantic halibut; 50775 Pacific halibut; 50776 summer flounder; 50777 fluke [fish]; 50778 winter flounder; 50779 witch [flatfish]; 50780 sand dab; 50781 tonguefish; 50782 petrale sole; 50783 rock sole; 50784 yellowtail flounder; 50785 European plaice; 50786 common sole; 50787 Senegalese sole; 50788 scaldfish; 50789 topknot [flatfish]; 50790 windowpane [flatfish]; 50791 American plaice; 50792 starry flounder; 50793 California halibut; 50794 hogchoker; 50795 peacock flounder
+
+T sharks | sharks
+W: 1330 great white [shark]; 1331 hammerhead [shark]; 1576 megalodon; 8745 bull; 8748 mako; 8750 nurse; 8751 blue; 8752 lemon; 8754 dogfish; 8755 wobbegong; 8759 blacktip; 8760 porbeagle; 8761 carpet; 8763 leopard; 8765 angel; 8766 frilled shark; 8767 zebra; 8768 bamboo; 8769 tope [shark]; 8770 silky; 8772 epaulette; 63048 cookiecutter; 63049 sand tiger; 63050 sixgill; 63051 thresher [fish]; 63643 basking [slow filter feeder]; 63647 goblin [pink-snouted]; 63651 reef [coral patrol]; 63652 tiger [striped predator]; 63653 whale [plankton eater]; 65400 Greenland [Arctic fish]
+
+T tropical_fish | tropical fish
+W: 1214 goldfish; 1216 piranha; 1217 clownfish; 1218 angelfish; 1219 seahorse; 1231 pufferfish; 1232 blowfish; 1233 fugu [pufferfish]; 1234 globefish; 1237 guppy; 1239 koi; 1282 betta; 1321 lionfish; 8773 neon tetra; 8774 parrotfish; 8775 surgeonfish; 8776 blue tang; 8777 butterflyfish; 8778 discus [fish]; 8779 molly [fish]; 8780 platy; 8781 swordtail [fish]; 8782 zebra danio; 8783 cichlid; 8784 oscar [fish]; 8786 triggerfish; 8787 damselfish; 8788 moorish idol; 8789 cardinalfish; 8790 rainbowfish; 8791 barb [fish]; 8792 loach; 8793 gourami; 8794 pleco
+G: 1231 1232 1233 1234
+
+T rays_and_eels | rays and eels
+W: 495 eel; 510 skate [fish]; 513 lamprey; 1235 stingray; 1236 ray [fish]; 1272 hagfish; 8798 sawfish; 8799 torpedo; 8800 torpedo; 8801 guitarfish; 8802 devil; 8803 garden; 8804 wolf; 8806 snake eel; 8808 elver; 8810 cownose; 8811 butterfly; 8812 spotted eagle; 63052 conger; 63053 gulper; 63054 manta [fish]; 63055 moray [fish]; 63056 thornback; 63656 eagle [flat swimmer]; 63657 electric [Amazon shocker]; 65404 glass [transparent young]
+G: 1235 1236
+
+T deep_sea_fish | deep sea fish
+W: 1266 coelacanth; 1267 oarfish; 1272 hagfish; 1318 giant squid; 1319 anglerfish; 8756 goblin shark; 8757 cookiecutter shark; 8762 greenland shark; 8766 frilled shark; 8805 gulper eel; 8813 pelican eel; 8814 viperfish; 8815 lanternfish; 8816 hatchetfish; 8817 fangtooth; 8818 dragonfish; 8819 barreleye; 8820 blobfish; 8821 grenadier [fish]; 8822 rattail; 8823 football fish; 8824 black swallower; 8825 telescopefish; 8826 tripod fish; 8827 snailfish; 8828 bristlemouth; 8829 stoplight loosejaw; 8830 humpback anglerfish; 8831 vampire squid; 8832 dumbo octopus
+
+T fish_body_parts | fish body parts
+W: 8733 barbel; 8833 fin [fish]; 8834 tail [animal]; 8836 scale [fish]; 8837 dorsal fin; 8838 pectoral fin; 8839 pelvic fin; 8840 anal fin; 8841 tail fin; 8842 caudal fin; 8843 swim bladder; 8844 air bladder; 8845 lateral line; 8846 gill cover; 8847 operculum; 8848 fin ray; 8849 adipose fin; 8850 gill raker; 8851 gill slit; 8852 roe [fish eggs]; 8853 backbone; 8855 scutes; 8856 peduncle [fish tail base]; 8857 milt; 8858 whiskers [fish]; 8859 pharyngeal teeth; 8860 bones; 10334 gill [animal]; 17671 fillet [meat]
+G: 8834 8841
+
+T fish_on_the_menu | fish on the menu
+W: 466 salmon [fish]; 467 tuna; 468 cod; 481 sardine; 482 anchovy; 483 trout; 484 swordfish; 489 haddock; 490 halibut; 492 mackerel; 493 herring; 494 tilapia; 495 eel; 1222 plaice; 1227 sole [fish]; 1228 flounder [fish]; 1240 sturgeon [freshwater fish]; 1241 bream; 1249 whitebait; 1250 snapper [fish]; 1251 grouper; 1252 mahi-mahi; 1258 pollock; 1260 hake [fish]; 1279 turbot
+
+T sea_life | sea life
+W: 469 lobster; 470 crab [animal]; 471 shrimp; 476 oyster [shellfish]; 477 mussel; 478 clam; 479 scallop [shellfish]; 480 octopus [animal]; 485 squid; 486 calamari; 503 uni; 505 whelk; 507 abalone; 1009 otter; 1027 walrus; 1028 seal [animal]; 1041 manatee; 1055 dugong; 1142 turtle [shelled reptile]; 1215 shark [fish]; 1217 clownfish; 1219 seahorse; 1235 stingray; 1236 ray [fish]; 1284 whale [animal]; 1285 dolphin [sea mammal]; 1286 jellyfish; 1287 starfish; 1288 sea star; 1289 coral [marine animal]; 1290 seaweed [sea plant]; 1291 sea grass [seagrass]; 1292 kelp; 1294 sea lion; 1295 barnacle; 1297 anemone [sea creature]; 1298 sponge [sea creature]; 1299 nautilus [mollusk]; 1300 cuttlefish; 1301 krill; 1302 plankton; 1303 narwhal; 1304 orca; 1305 killer whale; 1306 blue whale; 1307 humpback whale; 1308 sperm whale; 1309 beluga [whale]; 1310 porpoise; 1311 hermit crab; 1312 limpet; 1313 sea slug; 1314 nudibranch; 1315 sea cucumber; 1316 brittle star; 1317 man-of-war; 1318 giant squid; 1319 anglerfish; 1320 moray eel; 1321 lionfish; 1323 conch; 1324 cowrie; 1325 sand dollar; 1326 sea fan; 1327 giant clam; 1328 sea snake; 1329 manta ray; 1330 great white [shark]; 1331 hammerhead [shark]; 1332 mantis shrimp; 1333 sea squirt; 1334 copepod; 1335 coralline algae; 1336 sea pen; 1337 tube worm; 1338 zooplankton; 1339 seagrass; 1340 bladderwrack; 7746 periwinkle [sea snail]; 28370 urchin; 64790 Killer [orca]
+G: 1287 1288; 1235 1236; 1313 1314; 28370 503; 1304 64790 1305
+
+T crustaceans | crustaceans
+W: 469 lobster; 470 crab [animal]; 471 shrimp; 499 crayfish; 509 langoustine; 1295 barnacle; 1301 krill; 1311 hermit crab; 1332 mantis shrimp; 1334 copepod; 1418 roly-poly; 8861 spider crab; 8862 king crab; 8863 blue crab; 8864 fiddler crab; 8865 horseshoe crab; 8866 amphipod; 8867 isopod; 8868 water flea; 8869 brine shrimp; 8871 scampi; 8872 dungeness crab; 8873 coconut crab; 8874 snow crab; 8875 mud crab; 8876 slipper lobster; 8877 spiny lobster; 8878 rock lobster; 8879 sand hopper; 8880 ostracod
+
+T crab_types | crab types
+W: 1311 hermit; 8861 spider; 8862 king; 8863 blue; 8864 fiddler; 8865 horseshoe; 8872 dungeness; 8873 coconut; 8874 snow; 8875 mud
+
+T mollusks | mollusks
+W: 476 oyster [shellfish]; 477 mussel; 478 clam; 479 scallop [shellfish]; 480 octopus [animal]; 485 squid; 486 calamari; 505 whelk; 506 cockle; 507 abalone; 1299 nautilus [mollusk]; 1300 cuttlefish; 1312 limpet; 1313 sea slug; 1314 nudibranch; 1323 conch; 1324 cowrie; 1327 giant clam; 1367 snail; 1368 slug [animal]; 7746 periwinkle [sea snail]; 8881 razor clam; 8883 chiton; 8884 geoduck; 8885 sea hare; 8886 tusk shell; 8887 murex; 8888 cone snail; 8889 land snail; 8890 quahog; 8891 pipi; 8893 bivalve; 8894 gastropod; 8895 cephalopod; 8896 mollusc
+G: 1313 1314
+
+T cephalopods | cephalopods | octopus, squid, cuttlefish, nautilus and their kinds
+W: 480 octopus [animal]; 485 squid; 486 calamari; 1299 nautilus [mollusk]; 1300 cuttlefish; 1318 giant squid; 1569 ammonite; 6947 Kraken [sea monster]; 8831 vampire squid; 8832 dumbo octopus; 8895 cephalopod; 8933 tentacle; 8970 colossal squid; 8973 giant pacific octopus; 9701 blue-ringed octopus; 9890 mimic octopus; 9932 bobtail squid; 9934 argonaut [octopus]; 21702 belemnite; 31602 firefly squid; 50796 Humboldt squid; 50797 common octopus; 50798 paper nautilus; 50799 flamboyant cuttlefish; 50800 spirula; 50801 chambered nautilus; 50802 pearly nautilus; 50803 reef squid; 50804 glass squid; 50805 wunderpus
+
+T squid_types | squid types
+W: 1318 giant; 8831 vampire; 8970 colossal; 9932 bobtail; 31602 firefly; 50796 Humboldt; 50803 reef; 50804 glass
+
+T sea_mammals | sea mammals
+W: 1009 otter; 1027 walrus; 1028 seal [animal]; 1041 manatee; 1055 dugong; 1284 whale [animal]; 1285 dolphin [sea mammal]; 1294 sea lion; 1303 narwhal; 1304 orca; 1305 killer whale; 1306 blue whale; 1307 humpback whale; 1308 sperm whale; 1309 beluga [whale]; 1310 porpoise; 7866 bottlenose dolphin; 7867 minke whale; 7868 fin whale; 7869 gray whale; 7871 right whale; 7872 bowhead whale; 7873 pilot whale; 7874 sei whale; 7876 beaked whale; 7878 common dolphin; 7879 spinner dolphin; 7881 river dolphin; 7887 vaquita; 7893 cetacean; 7943 polar bear; 8897 fur seal; 8898 elephant seal; 8899 harbor seal; 8901 grey seal; 8902 leopard seal; 8903 monk seal; 8904 harp seal; 8905 pinniped; 64790 Killer [orca]
+G: 1304 64790 1305
+
+T seals_and_sea_lions | seals and sea lions
+W: 1027 walrus; 1028 seal [animal]; 1294 sea lion; 8897 fur seal; 8905 pinniped; 10133 pup [young seal]; 10175 rookery; 22262 selkie; 50807 California; 50808 ribbon; 50809 northern fur seal; 50810 Galapagos; 50811 Australian; 50813 Caspian; 50814 spotted; 50815 common; 50816 southern elephant seal; 50818 haul-out; 63057 crabeater; 63058 Steller; 63059 Weddell; 63290 nerpa [Baikal animal]; 63662 elephant [huge blubbery]; 63663 harp [white-coated pup]; 63664 leopard [Antarctic predator]; 63665 monk [endangered hermit]; 65407 bearded [pinniped]; 65412 grey [pinniped]; 65413 harbor [pinniped]; 65415 hooded [pinniped]; 65417 ringed [pinniped]; 65418 Ross [pinniped]
+
+T whale_types | whale types
+W: 1305 killer; 1306 blue; 1307 humpback; 1308 sperm; 7867 minke; 7868 fin; 7869 gray; 7871 right; 7872 bowhead; 7873 pilot; 7874 sei; 7876 beaked
+
+T seal_types | seal types
+W: 8897 fur; 8898 elephant; 8899 harbor; 8901 grey; 8902 leopard; 8903 monk; 8904 harp
+
+T reef_life | reef life
+W: 480 octopus [animal]; 502 sea urchin; 503 uni; 1217 clownfish; 1218 angelfish; 1219 seahorse; 1230 barracuda; 1251 grouper; 1287 starfish; 1288 sea star; 1289 coral [marine animal]; 1293 sea turtle; 1296 sea anemone; 1297 anemone [sea creature]; 1298 sponge [sea creature]; 1314 nudibranch; 1315 sea cucumber; 1320 moray eel; 1321 lionfish; 1326 sea fan; 1327 giant clam; 1328 sea snake; 1329 manta ray; 1332 mantis shrimp; 8758 shark; 8774 parrotfish; 8776 blue tang; 8777 butterflyfish; 8786 triggerfish; 8787 damselfish; 8906 cleaner shrimp; 8907 cleaner wrasse; 8908 brain coral; 8909 staghorn coral; 8910 fan coral; 8911 crown-of-thorns; 8912 hawksbill turtle; 8913 stonefish; 8914 zooxanthellae; 8915 polyp; 8916 soft coral
+G: 1297 1296; 1287 1288; 502 503
+
+T jellyfish_and_relatives | jellyfish and relatives
+W: 1286 jellyfish; 1289 coral [marine animal]; 1296 sea anemone; 1297 anemone [sea creature]; 1317 man-of-war; 1326 sea fan; 1336 sea pen; 8908 brain coral; 8915 polyp; 8920 sea nettle; 8922 comb jelly; 8923 sea wasp; 8924 medusa [jellyfish]; 8925 by-the-wind sailor; 8926 siphonophore; 8927 immortal; 8928 cannonball; 8929 blue bottle [jellyfish]; 8930 ctenophore; 8931 hydroid; 8932 zoanthid; 8933 tentacle; 8934 nematocyst; 8935 upside-down; 8936 fire coral; 8937 cnidarian; 8938 sea jelly; 9933 moon jelly; 63060 lion's mane [jelly]
+G: 1297 1296
+
+T seaweeds | seaweeds
+W: 1291 sea grass [seagrass]; 1292 kelp; 1335 coralline algae; 1340 bladderwrack; 8939 nori; 8940 dulse; 8941 wakame; 8942 kombu; 8943 sea lettuce; 8944 irish moss; 8945 carrageen; 8948 giant kelp; 8949 spirulina; 8950 hijiki; 8951 arame; 8952 sargassum; 8953 eelgrass; 8954 oarweed; 8955 sugar kelp; 8956 thongweed; 8957 gutweed; 8958 sea spaghetti; 8959 dabberlocks; 8960 channelled wrack; 8961 knotted wrack; 8962 serrated wrack; 8963 red algae; 8964 green algae; 8965 brown algae; 8966 algae; 8967 bull kelp; 8968 dead man's fingers; 8969 pepper dulse; 18998 seaweed; 19917 agar [gelling agent]; 31111 laver [seaweed]
+
+T ocean_giants | ocean giants | the largest sea creatures: blue whale, whale shark, giant squid, manta ray
+W: 1027 walrus; 1267 oarfish; 1284 whale [animal]; 1304 orca; 1305 killer whale; 1306 blue whale; 1307 humpback whale; 1308 sperm whale; 1318 giant squid; 1327 giant clam; 1329 manta ray; 1331 hammerhead [shark]; 1576 megalodon; 6947 Kraken [sea monster]; 7868 fin whale; 7869 gray whale; 7872 bowhead whale; 7874 sei whale; 8609 leatherback turtle; 8612 saltwater crocodile; 8743 great white shark; 8746 whale shark; 8747 basking shark; 8762 greenland shark; 8898 elephant seal; 8921 lion's mane jellyfish; 8970 colossal squid; 8972 japanese spider crab; 8974 bluefin tuna; 8975 sailfish; 63061 mola; 64790 Killer [orca]; 65422 Pacific octopus
+G: 1304 64790 1305
+
+T starfish_and_sea_urchins | starfish and sea urchins
+W: 502 sea urchin; 503 uni; 1287 starfish; 1288 sea star; 1316 brittle star; 1325 sand dollar; 8911 crown-of-thorns; 8976 feather star; 8978 sunflower star; 8979 basket star; 8980 heart; 8981 pencil; 8982 cushion star; 8983 bat star; 8984 purple; 8985 sun star; 8986 echinoderm; 8987 tube feet; 8988 sea biscuit; 8989 red; 8990 blood star; 8991 sand star; 8992 sea apple; 8993 sea egg; 8994 flower; 8995 slate pencil; 21703 crinoid; 63062 holothurian
+G: 1287 1288; 502 503
+
+T insects_and_bugs | insects and bugs
+W: 1341 ant; 1342 bee [insect]; 1343 wasp; 1344 fly [insect]; 1345 mosquito; 1347 skeeter; 1348 butterfly [insect]; 1349 moth; 1350 beetle [insect]; 1351 ladybug; 1353 lady beetle; 1354 grasshopper [insect]; 1355 cricket [insect]; 1356 cockroach; 1358 dragonfly; 1359 firefly [insect]; 1361 caterpillar; 1362 spider [animal]; 1363 scorpion [arachnid]; 1364 centipede; 1365 millipede; 1366 earthworm; 1367 snail; 1368 slug [animal]; 1369 flea [insect]; 1370 tick [bug]; 1371 louse; 1372 aphid; 1374 blackfly; 1375 cicada; 1376 termite; 1377 earwig; 1378 praying mantis [insect]; 1379 mantis; 1382 hornet; 1383 bumblebee; 1384 honeybee; 1385 locust [insect]; 1386 crane fly; 1388 mayfly; 1389 lacewing; 1390 weevil; 1391 stag beetle; 1392 dung beetle; 1393 scarab [beetle]; 1394 silverfish; 1395 bedbug; 1396 horsefly; 1398 gadfly; 1399 gnat; 1400 midge; 1401 tarantula; 1402 black widow [spider]; 1403 katydid; 1405 leafhopper; 1406 thrips; 1407 whitefly; 1408 sawfly; 1409 yellowjacket; 1410 botfly; 1411 tsetse fly; 1412 fire ant; 1413 army ant; 1414 leafcutter ant; 1415 glowworm; 1420 planthopper; 1421 water boatman; 1422 pond skater; 1424 stink bug; 1425 lantern fly; 1426 harlequin ladybird; 1427 click beetle; 1428 cockchafer; 1429 maybug; 1431 mealworm; 1432 hoverfly; 1433 robber fly; 1434 antlion; 63063 phasmid; 63670 assassin [ambush hunter]
+G: 1379 1378; 1428 1429; 1351 1353; 1396 1398; 1345 1347; 1372 1374
+
+T beetles | beetles
+W: 1350 beetle [insect]; 1351 ladybug; 1359 firefly [insect]; 1390 weevil; 1392 dung; 1393 scarab [beetle]; 1427 click; 1428 cockchafer; 1429 maybug; 1431 mealworm; 8997 Hercules; 8998 Goliath; 8999 longhorn; 9002 bombardier; 9003 diving; 9004 Colorado; 9005 death watch; 9006 may bug; 9007 june bug; 9010 bark; 9011 jewel; 9012 blister; 9015 leaf beetle; 9016 flea; 9017 water; 9018 glow-worm; 9019 tortoise; 9020 darkling; 48192 rove (verb); 63676 ground [garden insect]; 63678 Japanese [garden pest]; 63680 rhinoceros [horned insect]; 63681 stag [antlered insect]; 63682 tiger [predatory insect]; 63683 whirligig [pond insect]; 65425 carpet [household pest]
+G: 1428 1429
+
+T butterflies_and_moths | butterflies and moths
+W: 1348 butterfly [insect]; 1349 moth; 9021 monarch [butterfly]; 9022 swallowtail; 9023 red admiral; 9026 cabbage white; 9027 brimstone [butterfly]; 9028 orange tip; 9029 comma [butterfly]; 9030 small tortoiseshell; 9031 holly blue; 9032 common blue; 9033 purple emperor; 9034 white admiral; 9035 large white; 9036 meadow brown; 9037 ringlet [butterfly]; 9038 gatekeeper [butterfly]; 9039 morpho; 9041 birdwing; 9043 atlas; 9045 death's-head hawkmoth; 9046 emperor; 9048 hummingbird hawk-moth; 9049 silk moth; 9050 gypsy; 9051 clothes moth; 9054 cinnabar; 9055 skipper [butterfly]; 9056 fritillary [butterfly]; 9836 painted lady [butterfly]; 63686 hawk [fast-flying insect]; 63687 luna [green insect]; 63688 peacock [eyespot insect]; 63689 tiger [striped insect]; 65429 codling; 65431 peppered
+G: 9046 9033
+
+T bees_and_wasps | bees and wasps
+W: 1342 bee [insect]; 1343 wasp; 1382 hornet; 1383 bumblebee; 1384 honeybee; 1409 yellowjacket; 9058 worker; 9059 drone [bee]; 9061 mason bee; 9063 killer; 9068 mud dauber; 9069 potter; 9072 gall; 9073 fig; 9074 cuckoo; 9075 asian hornet; 9076 european hornet; 9077 giant hornet; 9078 murder hornet; 9079 velvet ant; 9080 tarantula hawk; 9081 digger; 9082 cuckoo bee; 9083 orchid bee; 9084 solitary; 28307 sweat; 59954 spider wasp; 59955 pollen wasp; 59956 plasterer; 59957 cellophane; 59958 mason; 59960 ruby-tailed; 59961 bald-faced hornet; 59962 red mason; 59963 buff-tailed bumblebee; 59964 tree bumblebee; 59965 cuckoo bumblebee; 59966 blue orchard; 59967 mud; 63064 braconid; 63065 meliponine; 63066 horntail; 63291 ichneumon [parasitic insect]; 63690 carpenter [wood-boring pollinator]; 63692 leafcutter [leaf-cutting pollinator]; 63693 paper [nest builder]; 63694 queen [hive ruler]; 65433 mining
+
+T wasp_types | wasp types
+W: 9072 gall; 9073 fig; 9074 cuckoo; 9081 digger; 59954 spider; 59955 pollen; 59958 mason; 59967 mud
+
+T spiders | spiders
+W: 1401 tarantula; 1402 black widow [spider]; 9085 house spider; 9086 garden spider; 9087 wolf; 9090 huntsman [spider]; 9091 redback [spider]; 9092 funnel-web [spider]; 9093 brown recluse; 9094 orb weaver; 9096 money; 9097 daddy longlegs [spider]; 9098 bird-eating; 9099 goliath birdeater; 9101 water; 9102 diving bell; 9103 fishing; 9104 cellar; 9105 black house; 9106 false widow; 9108 peacock; 9109 sac; 9110 cobweb; 9111 hobo; 9112 arachnid; 9113 spiderling; 9115 spinneret; 63696 camel [desert hunter]; 63697 crab [sideways walker]; 63698 jumping [leaping hunter]; 63700 trapdoor [burrow ambusher]; 65444 zebra [jumping arachnid]
+
+T garden_bugs | garden bugs
+W: 1341 ant; 1342 bee [insect]; 1348 butterfly [insect]; 1351 ladybug; 1353 lady beetle; 1354 grasshopper [insect]; 1355 cricket [insect]; 1358 dragonfly; 1361 caterpillar; 1362 spider [animal]; 1364 centipede; 1365 millipede; 1367 snail; 1368 slug [animal]; 1372 aphid; 1374 blackfly; 1377 earwig; 1389 lacewing; 1390 weevil; 1405 leafhopper; 1406 thrips; 1407 whitefly; 1424 stink; 1432 hoverfly; 9000 ground beetle; 9026 cabbage white; 9116 worm [earthworm]; 9117 vine weevil; 9118 cutworm; 9119 leatherjacket; 9120 mealybug; 9121 scale insect; 9122 red spider mite; 9123 damselfly; 9124 cranefly
+G: 1351 1353; 1372 1374
+
+T insect_body_parts | insect body parts
+W: 174 abdomen; 4606 antenna [aerial]; 8383 tarsus; 9125 wing [animal]; 9126 thorax; 9127 head [animal]; 9128 leg [animal]; 9129 compound eye; 9130 exoskeleton [outer skeleton]; 9131 mandible; 9132 proboscis [elephantine nose]; 9133 stinger [insect]; 9134 feeler; 9135 antennae; 9136 spiracle; 9137 ovipositor; 9138 cuticle [nail]; 9139 elytra; 9140 wing case; 9141 palp; 9142 cercus; 9143 halteres; 9144 mouthparts; 9145 forewing; 9146 hindwing; 9147 ocelli; 9148 pincer [insect]; 9149 claw [animal]; 9150 segment [insect]; 9151 pronotum; 9152 tibia [insect]; 9153 coxa
+
+T biting_bugs | biting bugs | bugs that bite or suck blood: mosquito, flea, tick, bedbug
+W: 1342 bee [insect]; 1343 wasp; 1345 mosquito; 1347 skeeter; 1369 flea [insect]; 1370 tick [bug]; 1371 louse; 1382 hornet; 1395 bedbug; 1396 horsefly; 1398 gadfly; 1399 gnat; 1400 midge; 1411 tsetse fly; 1412 fire ant; 1430 assassin; 9154 mite [bug]; 9155 sandfly; 9157 deer fly; 9158 black fly; 9159 chigger; 9160 kissing bug; 9161 head louse; 9162 body louse; 9163 crab louse; 9164 stable fly; 9166 triatomine; 9167 harvest mite; 9168 scabies mite; 9169 bullet ant; 9170 no-see-um
+G: 1396 1398; 1345 1347
+
+T insect_life_cycle | insect life cycle
+W: 518 egg [food from hens]; 1361 caterpillar; 6922 nymph [myth]; 9171 larva [grub]; 9172 pupa; 9173 adult [animal]; 9174 chrysalis; 9175 cocoon; 9177 maggot [larva]; 9178 metamorphosis; 9179 molting; 9181 instar; 9182 imago; 9183 pupate (verb); 9184 hatch [emerge] (verb); 9186 exuvia; 9187 egg sac; 9188 larval stage; 9189 pupal stage; 9190 eclosion; 9191 simple metamorphosis; 9192 full metamorphosis; 9193 diapause; 9194 oviposition; 9195 hatchling [baby animal]; 41060 grub [larva]; 41066 wriggler [mosquito larva]
+
+T butterfly_life_stages | butterfly life stages | the four stages of a butterfly, with their common names
+W: 518 egg [food from hens]; 1348 butterfly [insect]; 1361 caterpillar; 9171 larva [grub]; 9172 pupa; 9173 adult [animal]; 9174 chrysalis; 9182 imago
+
+T flies | flies
+W: 1345 mosquito; 1347 skeeter; 1358 dragonfly; 1359 firefly [insect]; 1388 mayfly; 1396 horsefly; 1398 gadfly; 1399 gnat; 1400 midge; 1410 botfly; 1432 hoverfly; 9123 damselfly; 9155 sandfly; 9157 deer; 9196 housefly; 9199 bluebottle [fly]; 9200 greenbottle; 9201 blowfly; 9202 flesh; 9204 fungus gnat; 9205 bee fly; 9206 drone fly; 9207 caddisfly; 9208 stonefly; 9209 hessian; 9210 dung; 27954 robber; 27955 tsetse; 27957 cluster [bunch]; 63067 drosophila; 63068 syrphid; 65445 crane [long-legged insect]; 65446 stable [biting insect]
+G: 1396 1398; 1345 1347
+
+T ants_and_termites | ants and termites
+W: 1341 ant; 1376 termite; 1434 antlion; 9212 queen; 9213 worker; 9214 soldier; 9216 red ant; 9217 black ant; 9219 weaver; 9220 driver; 9221 honeypot; 9223 pharaoh; 9224 Argentine; 9225 white ant; 9226 flying ant; 9227 anthill; 9230 formicary; 9231 pavement; 9232 crazy; 9233 sugar ant; 9234 bulldog; 9235 jack jumper; 9236 drywood; 9237 subterranean; 10242 colony [ants]; 59968 trap-jaw; 59969 Matabele; 59970 meat ant; 59971 Dracula; 59972 garden ant; 59973 thief ant; 59974 ghost; 59975 yellow meadow ant; 59976 dampwood; 59977 Formosan; 59978 compass termite; 59979 alate; 63703 army [marching insect]; 63704 bullet [painful-sting insect]; 63705 carpenter [wood-boring insect]; 63706 fire [stinging insect]; 63707 harvester [seed-gathering insect]; 63712 wood [forest insect]; 65455 leafcutter [fungus-farming insect]
+
+T ant_types | ant types
+W: 9216 red; 9217 black; 9226 flying; 9233 sugar; 59970 meat; 59972 garden; 59973 thief; 59975 yellow meadow
+
+T worms | worms
+W: 1337 tube worm; 1366 earthworm; 1415 glowworm; 1431 mealworm; 3433 ringworm; 6533 bookworm; 9116 worm [earthworm]; 9238 tapeworm; 9239 roundworm; 9240 flatworm; 9241 hookworm; 9242 pinworm; 9245 lugworm; 9246 ragworm; 9247 bloodworm; 9249 redworm; 9250 silkworm; 9251 inchworm; 9252 woodworm; 9253 hairworm; 9254 whipworm; 9255 heartworm; 9262 fan worm; 9263 Christmas tree; 9936 feather duster; 15074 guinea; 59981 bobbit; 59982 peanut; 59983 arrow; 59984 acorn; 59985 Pompeii; 59986 spoon; 59987 lungworm; 59988 eelworm; 59989 giant tube worm; 66278 nematode; 66279 annelid; 66280 tubifex; 66281 red wiggler; 66282 polychaete; 66283 nemertean; 66284 palolo
+
+T domestic_animals | domestic animals
+W: 149 cow [animal]; 150 pig [animal]; 151 sheep [farm animal]; 152 chicken [bird]; 153 horse [animal]; 154 goat [animal]; 155 duck [bird]; 156 turkey [bird]; 157 goose; 158 donkey [farm animal]; 159 ass [donkey]; 160 llama; 161 alpaca [animal]; 162 ox; 163 mule [animal]; 164 bull [animal]; 165 hen [chicken]; 991 mouse [animal]; 992 rat [animal]; 1002 camel [animal]; 1042 chinchilla; 1043 ferret; 1065 parrot; 1070 pigeon [bird]; 1093 canary [bird]; 1094 budgie; 1143 tortoise; 1214 goldfish; 1435 dog [pet animal]; 1436 hound; 1437 pooch; 1438 mutt; 1439 doggo; 1440 cat [pet]; 1441 moggy; 1442 kitty [cat]; 1443 rabbit; 1444 bunny; 1445 hamster; 1446 guinea pig; 1447 cavy; 1448 gerbil; 1449 rooster; 1451 pony [horse]; 1452 cockatiel; 1453 yak [animal]; 1454 water buffalo; 1455 guinea fowl; 1456 peafowl; 1457 sow [pig]; 1458 boar [pig]; 1459 ewe [female sheep]; 1460 ram [animal]; 1461 heifer; 1462 steer [cattle]; 1463 stallion; 1464 mare [horse]; 1465 gelding; 1466 wether; 1467 capon; 1468 hinny; 1469 dromedary; 1470 zebu; 1471 reindeer; 1472 lovebird; 1473 bantam; 1474 sheepdog; 1475 cattle; 1476 livestock; 1477 nanny goat; 1478 billy goat; 1479 piglet; 1480 drake [duck]; 1481 gander [male goose]; 1482 tom [cat]; 1483 muscovy duck; 1484 Angora rabbit; 1485 Angora goat; 1486 carthorse
+G: 1440 1442 1441; 1435 1439 1436 1438 1437; 1446 1447; 1443 1444; 158 159; 154 1477 1478
+
+T farm_animals | farm animals
+W: 149 cow [animal]; 150 pig [animal]; 151 sheep [farm animal]; 152 chicken [bird]; 153 horse [animal]; 154 goat [animal]; 155 duck [bird]; 156 turkey [bird]; 157 goose; 158 donkey [farm animal]; 159 ass [donkey]; 160 llama; 161 alpaca [animal]; 162 ox; 163 mule [animal]; 164 bull [animal]; 165 hen [chicken]; 461 lamb [meat]; 1449 rooster; 1457 sow [pig]; 1458 boar [pig]; 1459 ewe [female sheep]; 1461 heifer; 1462 steer [cattle]; 1465 gelding; 1466 wether; 1467 capon; 1473 bantam; 1477 nanny goat; 1478 billy goat; 1479 piglet; 1480 drake [duck]; 1481 gander [male goose]; 1487 foal; 9267 calf [animal]; 9268 ram [sheep]; 9269 bullock; 9271 kid [goat]; 10311 gilt [animal]; 10318 pullet [animal]
+G: 158 159; 154 1477 1478
+
+T pets | pets
+W: 991 mouse [animal]; 992 rat [animal]; 1003 hedgehog [animal]; 1042 chinchilla; 1043 ferret; 1065 parrot; 1092 finch; 1093 canary [bird]; 1094 budgie; 1114 cockatoo; 1135 snake [animal]; 1136 serpent [snake]; 1142 turtle [shelled reptile]; 1143 tortoise; 1149 gecko; 1150 iguana; 1151 chameleon; 1167 tree frog; 1170 axolotl; 1175 bearded dragon; 1176 beardie; 1209 blue-tongued skink; 1214 goldfish; 1237 guppy; 1239 koi; 1282 betta; 1311 hermit crab; 1367 snail; 1378 praying mantis [insect]; 1379 mantis; 1381 walking stick [insect]; 1401 tarantula; 1435 dog [pet animal]; 1436 hound; 1437 pooch; 1438 mutt; 1439 doggo; 1440 cat [pet]; 1441 moggy; 1442 kitty [cat]; 1443 rabbit; 1444 bunny; 1445 hamster; 1446 guinea pig; 1447 cavy; 1448 gerbil; 1451 pony [horse]; 1452 cockatiel; 1472 lovebird; 7862 degu; 7897 sugar glider; 8263 macaw; 8265 African grey; 8335 parakeet; 8507 corn snake; 8510 ball python; 8537 leopard gecko; 8541 crested gecko; 9273 puppy; 9274 kitten; 9275 pot-bellied pig; 9940 gliding possum; 27973 bird; 50732 kingsnake; 50825 fancy rat; 51126 hissing cockroach; 59990 fish [animal]
+G: 1440 1442 1441; 1435 1439 1436 1438 1437; 1135 1136; 7897 9940; 1175 1176; 1446 1447; 1379 1378; 1443 1444; 992 50825
+
+T small_pets | small pets
+W: 991 mouse [animal]; 992 rat [animal]; 1003 hedgehog [animal]; 1042 chinchilla; 1043 ferret; 1443 rabbit; 1444 bunny; 1445 hamster; 1446 guinea pig; 1447 cavy; 1448 gerbil; 1484 Angora rabbit; 7836 chipmunk; 7839 dormouse; 7862 degu; 7897 sugar glider; 8068 Flemish giant; 8069 Dutch rabbit; 8070 Netherland dwarf; 8071 rex rabbit; 9905 spiny mouse; 9940 gliding possum; 50819 dwarf hamster; 50820 Syrian hamster; 50821 Roborovski hamster; 50822 Campbell's hamster; 50823 Holland lop [rabbit]; 50824 lop rabbit; 50825 fancy rat; 50826 fancy mouse; 50827 pygmy hedgehog; 50828 Mongolian gerbil; 50829 Himalayan rabbit; 50832 teddy bear hamster; 59991 Djungarian hamster; 59992 Chinese hamster; 59993 Jersey Wooly
+G: 7897 9940; 1446 1447; 1443 1444; 991 50826; 992 50825
