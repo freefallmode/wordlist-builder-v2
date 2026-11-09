@@ -76,6 +76,11 @@ A root is a **meaning** (`rain`), and its `form` aliases are its grammatical for
 - **In the game**, the player's region setting picks the member to show: the regional alias if the player's region is in its tags, otherwise the root. Only one is ever shown, so no clash rule is needed. Bucketing (for example US / UK / other, with AU, NZ, IE, IN and ZA following UK unless a word says otherwise) happens in the game, not in the data.
 - **In the web app**, a setting "default dialect" (US or UK) chooses which member the app shows in lists and uses as the export fallback. It does **not** move data: with default UK the app shows `flat` for the `apartment` set. Flipping roots in the data is never needed.
 - Spelling aliases: US and UK are enough.
+- **Spelling pairs (library v338-v339).** The root is the US spelling and the British one is a spelling alias tagged UK. When both spellings are standard in the US (doughnut/donut, whisky/whiskey) the usual one stays root and the other has no tag. Pairs that are not really spellings (hi-fi/music center, tadpole/pollywog) are regional aliases. The validator warns (`alias-us-root`) when a spelling alias is tagged US under a non-US root. Spelling-sensitive themes keep their own word (plough in `ough_words`).
+- **Rules in the game Word Balloon Safari** (its own level generator; recorded here so the data stays compatible):
+  1. British players see a UK-tagged spelling or regional alias, otherwise the root.
+  2. American players see a US-tagged *spelling* alias, otherwise the root. US regional-word aliases and the aliases of other regions (AU, NZ, IE, IN, CA and so on) are never shown by region.
+  3. Wordplay and compound themes show exactly their linked words, as locked themes do (all such themes are locked in v339 anyway).
 
 ### 3.5 Alias families in themes, and locked themes (2026-11-04)
 

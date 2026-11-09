@@ -29,7 +29,7 @@ Per theme:
   Glosses are short (1-2 words: fruit, language, body part). Only rename a word (e.g. "clothes iron") when that is how people actually say it. See the `FIXES` description in the header of `tools/apply-words.mjs`.
 - Many words will already exist in the library (the level-2 themes are filled). Reusing them is good: a word may sit in several themes. Do not re-describe them, just include the row with the same text/gloss.
 - Other agents are writing other chunks at the same time and cannot see your file, so give a `g` to anything ambiguous.
-- British/American variants: put the more common form as root, the other as a `spelling` alias with `reg` (e.g. `['colour','spelling',2,2,['UK']]`). Region-bound words get `reg`.
+- British/American variants: the root is the US spelling, the British one is a `spelling` alias tagged UK: `['color',1,1,{ al: [['colour','spelling',2,2,['UK']]] }]`. If both spellings are standard in the US (doughnut / donut, whisky / whiskey), keep the usual one as root and leave the other untagged. Region-bound words get `reg`.
 
 ## Test it (do not skip)
 Work on a scratch copy, never on the real library:

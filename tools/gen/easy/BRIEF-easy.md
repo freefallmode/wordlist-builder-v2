@@ -19,7 +19,7 @@ Follow `tools/gen/BRIEF-depth3.md` in full (entry rules, glosses, types, `FIXES`
 
 ## Aliases and synonym groups (required where they apply)
 - **Regional aliases** wherever the word differs between English-speaking regions: `['eraser', 1, 1, { al: [['rubber', 'regional', 2, 2, ['UK']]] }]`, flashlight / torch, cookie / biscuit, sweater / jumper, trash / rubbish, candy / sweets, pants / trousers, soccer / football. The root is the more general or US form unless the other is clearly the base; tag every region-bound word with `reg`.
-- **Spelling aliases** for UK/US spellings (`['gray', 'spelling', ...]`).
+- **Spelling aliases** for UK/US spellings: the root is the US spelling, the alias the British one tagged UK (`['gray', 1, 1, { al: [['grey', 'spelling', 2, 2, ['UK']]] }]`).
 - **Strict synonym aliases** only when the other word is ALWAYS the same answer (`couch` / `sofa`, `TV` / `television` is an abbreviation alias).
 - **Near synonyms that are both worth having** are separate entries and go in the theme's synonym group so a level never shows two of them: export `GROUPS`, `[themeId, 'text', 'text', ...]`, one line per group (`['ways_to_move', 'walk', 'stroll']`). Add `|gloss` to a member when its text has several meanings in the theme. Related but different things are not grouped (walk and run, a sum and addition).
 - In a verb theme (things you do with your eyes) forms of one verb (look / looking) are not separate words.

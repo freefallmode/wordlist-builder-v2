@@ -107,6 +107,7 @@ export function validate(P) {
         if (e.aliasKind && !ALIAS_KINDS.includes(e.aliasKind)) add('warn', 'alias-kind', `Alias "${label(e)}" has an unknown kind (${e.aliasKind}).`, loc);
         if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling, form, regional, abbreviation or translation).`, loc);
         if (e.aliasKind === 'form' && (e.nameOkIn || []).length && text.length > r.text.length && text.toLowerCase().includes(r.text.toLowerCase())) add('info', 'alias-fullname', `"${label(e)}" is kept as a form of "${label(r)}" but is a longer name: make it an entry of its own and give the theme a shown text (show).`, loc);
+        if (e.aliasKind === 'spelling' && e.region.includes('US') && !r.region.includes('US') && !(P.entries.some(x => x.aliasOf === r.id && x.aliasKind === 'spelling' && x.region.includes('UK')))) add('warn', 'alias-us-root', `"${label(r)}" is the root but its US-tagged spelling "${label(e)}" is the alias: make the US spelling the root and tag the other UK (or drop the US tag if both are standard).`, loc);
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
       }
       if ((e.aliasKind === 'spelling' || e.aliasKind === 'form') && Object.keys(e.typ).length) add('warn', 'alias-link-kind', `"${label(e)}" is a ${e.aliasKind} alias with links of its own; only regional, synonym, abbreviation and translation aliases can be linked on their own.`, loc);

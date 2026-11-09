@@ -172,3 +172,12 @@ test('theme-name check: the collected thing alone is fine, longer text and other
   assert.equal(nameLeak(T('police words'), E('police')), 'police');
   assert.equal(nameLeak(T('water park'), E('water')), 'water');
 });
+
+test('validate warns when a US-tagged spelling alias sits under a non-US root', () => {
+  const P = newProject();
+  const r = addEntry(P, 'theatre'), a = addEntry(P, 'theater', { aliasOf: r.id, aliasKind: 'spelling', region: ['US'] });
+  reindex(P);
+  assert.ok(validate(P).some(x => /alias-us-root/.test(x.kind || x.code || '') || /US spelling/.test(x.msg)));
+  r.region = ['US']; a.region = ['UK']; reindex(P);
+  assert.ok(!validate(P).some(x => /US spelling/.test(x.msg)));
+});
