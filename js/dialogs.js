@@ -51,9 +51,9 @@ export async function editTheme(t, isNew = false) {
     ident: select(IDENT_HELP.map((l, v) => [v, l]), w.ident || 0),
     locked: select([['auto', 'Follow the kind (locked for wordplay, compound and language-specific)'], ['locked', 'Locked: show exactly the linked word'], ['free', 'Allowed: regional and family words may stand in']], w.locked === undefined ? 'auto' : w.locked ? 'locked' : 'free'),
   };
-  const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang', 'nameOk'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
+  const flags = ['enabled', 'group', 'complete', 'adult', 'sensitive', 'tm', 'lang', 'foreign', 'nameOk'];   // adult, sensitive, trademark, language: the order of the Export window (themes have no vulgar flag)
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
-    tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)', nameOk: "Words may contain the theme's own words (wordplay themes)" };
+    tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)', foreign: 'Foreign language (the words are mostly not English)', nameOk: "Words may contain the theme's own words (wordplay themes)" };
   const boxes = Object.fromEntries(flags.map(k => [k, check(flagLabel[k], w[k])]));
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
   const body = h('div.form', {},
@@ -61,7 +61,7 @@ export async function editTheme(t, isNew = false) {
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
     h('div.flags', Object.values(boxes)),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).'),
-    h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang'].map(k => h('div', {}, FLAG_HELP[k]))),
+    h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang', 'foreign'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
     field('Rule', f.rule, 'Wordplay and compound themes only: how the game tests a word. hidden:<what>, rhyme:<ending>, palindrome, anagram, homophone, onomatopoeia, double-letters, starts:<what>, ends:<ending>, contains:<letters>, compound-end:<word> for ___ word, compound-start:<word> for word ___, or other.'),
     field('Word substitution', f.locked, 'Whether the game may show a regional, spelling or alias word in place of the one linked (US word for a UK player). Locked themes always show the linked word.'),

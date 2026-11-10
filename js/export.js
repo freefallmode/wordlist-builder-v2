@@ -35,7 +35,7 @@ export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r
 // Bit layouts, written into the file so the reader does not have to guess.
 // What a theme is: category (kinds of one thing), place, property (members share an attribute), wordplay (members chosen by spelling or sound; rule says how to test) and compound (members combine with a shared word).
 export const THEME_KINDS = ['category', 'place', 'property', 'wordplay', 'compound'];
-export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32, locked: 64 };   // locked: show exactly the linked word, no regional or family substitution
+export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32, locked: 64, foreign: 128 };   // locked: show exactly the linked word, no regional or family substitution
 export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256, synonym: 512 };
 
 export function buildExport(P, opt0 = {}) {
@@ -182,7 +182,7 @@ export function buildExport(P, opt0 = {}) {
 
   const themeRows = themes.map(t => {
     const f = eff(P, t.id);
-    const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0)
+    const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0) | (f.foreign ? THEME_BITS.foreign : 0)
       | (t.complete ? THEME_BITS.complete : 0)
       | (themeLocked(P, t) ? THEME_BITS.locked : 0)
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group

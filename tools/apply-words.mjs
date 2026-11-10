@@ -12,7 +12,7 @@
 //          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); split moves one theme link of an entry that was linked for a different meaning onto a new entry with its own meaning label; del removes one
 //   GROUPS [[themeId, 'text', 'text|gloss', ...], ...]  synonym groups for that theme: words of the theme that stand for one another (a level never shows two); each member is the text of a root linked to the theme (add '|gloss' when the text has several meanings there); joins an existing group when a member is already in one
 //   SETTINGS { maxWords: 4, ... }  library settings to set
-//   THEMES { themeId: { pop: 1-5 (theme popularity, 1 most popular), ident: 1-5 (identifiability, 1 obvious ... 5 obscure), ...flag overrides (complete, adult, sensitive, tm, lang, region, note) } }
+//   THEMES { themeId: { pop: 1-5 (theme popularity, 1 most popular), ident: 1-5 (identifiability, 1 obvious ... 5 obscure), ...flag overrides (complete, adult, sensitive, tm, lang, foreign (the words are mostly not English), region, note) } }
 // An entry that already exists (same text and gloss) is only linked to the theme (its own ratings and flags stay); a link already there is left alone.
 // Aliases inherit part of speech, type, adult, sensitive and trademark from the root unless the alias row says otherwise.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';

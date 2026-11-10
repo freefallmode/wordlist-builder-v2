@@ -6,7 +6,7 @@
 //
 // Tags in square brackets after the name:
 //   [complete]                      a finite, fixed set (months, planets)
-//   [adult] [sensitive] [trademark] [lang]   theme flags; [lang] = depends on English (spelling, sound, slang)
+//   [adult] [sensitive] [trademark] [lang] [foreign]   theme flags; [lang] = depends on English (spelling, sound, slang); [foreign] = the words are mostly not English
 //   [off]                           disabled
 //   [pop:3]                         theme popularity 1 (most popular) to 5 (unrated when absent); [d:n] is an old difficulty tag and is ignored
 //   [ident:3]                       identifiability 1 (obvious) to 5 (obscure), unrated when absent
@@ -21,7 +21,7 @@ export function slug(s) {
 
 export function newTheme(name, parent = null) {
   return { id: slug(name), name, parent, group: false, enabled: true, pop: 0, ident: 0, complete: false, adult: false, sensitive: false,
-    tm: false, lang: false, region: [], note: '' };
+    tm: false, lang: false, foreign: false, region: [], note: '' };
 }
 
 // Returns { themes, errors }. Themes are in outline order (parents before children).
@@ -58,6 +58,7 @@ export function parseOutline(text) {
       else if (g === 'sensitive') t.sensitive = true;
       else if (g === 'trademark') t.tm = true;
       else if (g === 'lang') t.lang = true;
+      else if (g === 'foreign') t.foreign = true;
       else if (g === 'off') t.enabled = false;
       else if (g.startsWith('pop:')) t.pop = Math.max(0, Math.min(5, +g.slice(4) || 0));
       else if (g.startsWith('ident:')) t.ident = Math.max(0, Math.min(5, +g.slice(6) || 0));
@@ -80,7 +81,7 @@ export function formatOutline(themes) {
     if (t.region.length) tags.push('region:' + t.region.join(','));
     if (t.pop) tags.push('pop:' + t.pop);
     if (t.ident) tags.push('ident:' + t.ident);
-    for (const [k, v] of [['complete', t.complete], ['adult', t.adult], ['sensitive', t.sensitive], ['trademark', t.tm], ['lang', t.lang], ['off', !t.enabled]]) if (v) tags.push(k);
+    for (const [k, v] of [['complete', t.complete], ['adult', t.adult], ['sensitive', t.sensitive], ['trademark', t.tm], ['lang', t.lang], ['foreign', t.foreign], ['off', !t.enabled]]) if (v) tags.push(k);
     return '  '.repeat(depth(t)) + t.name + (t.group ? ':' : '') + tags.map(g => ' [' + g + ']').join('') + (t.note ? ' -- ' + t.note : '');
   }).join('\n') + '\n';
 }

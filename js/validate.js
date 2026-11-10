@@ -24,6 +24,12 @@ const words = s => s.trim().split(/\s+/).length;
 const letters = s => s.replace(/[^\p{L}\p{N}]/gu, '').length;
 const label = e => e.text + (e.gloss ? ` (${e.gloss})` : '');
 
+// A theme named for words in another language (numbers in german, swahili words, days of the week in french) should carry the foreign flag.
+// Loanword themes (french phrases in english, words from french) are English and are left alone.
+const LANGS = 'french|german|spanish|italian|japanese|chinese|mandarin|cantonese|latin|korean|russian|arabic|portuguese|dutch|swedish|norwegian|danish|finnish|polish|turkish|greek|hindi|urdu|bengali|hebrew|yiddish|welsh|irish|gaelic|swahili|zulu|maori|hawaiian|thai|vietnamese|tagalog|persian|farsi|sanskrit|esperanto';
+const FOREIGN_OK = /\b(in english|words from|from other languages|speaking|languages?|letters?|cities|food|painters|writers|kings|gods|myth|cars?)\b/i;
+export const foreignListName = name => !FOREIGN_OK.test(name) && new RegExp(String.raw`\bin (${LANGS})\b|\b(${LANGS}) (everyday |basic )?(words|phrases|numbers|colou?rs|greetings|vocabulary)\b`, 'i').test(name);
+
 export function validate(P) {
   const out = [];
   const add = (sev, kind, msg, extra = {}) => out.push({ sev, kind, msg, ...extra });
@@ -42,6 +48,7 @@ export function validate(P) {
     }
     const st = themeStats(P, t.id);
     if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no theme popularity.`, { themeId: t.id }); else unrated++; }
+    if (!ef.foreign && foreignListName(t.name)) add('warn', 'foreign-flag', `"${t.name}" looks like a list of words in another language but is not flagged Foreign language; tick it if its words are mostly not English.`, { themeId: t.id });
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
     if (!t.nameOk) { const ws = themeNameWords(t); const locked = themeLocked(P, t); for (const e of direct) { if (locked && e.aliasOf && e.typ[t.id] === undefined) continue; const w = nameLeak(t, e.show?.[t.id] ? { ...e, text: e.show[t.id] } : e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }

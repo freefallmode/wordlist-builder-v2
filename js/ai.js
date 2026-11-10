@@ -78,7 +78,7 @@ Flags (true only when it really applies to this meaning of the word):
 - adult: ${FLAG_HELP.adult}
 - sensitive: ${FLAG_HELP.sensitive}
 - vulgar: crude or offensive wording in this meaning.
-Themes carry the same adult, sensitive and trademark flags, plus a language-specific flag.
+Themes carry the same adult, sensitive and trademark flags, plus a language-specific flag and a foreign-language flag (the theme's words are mostly not English).
 - ${FLAG_HELP.lang}
 Theme flags are inherited by its words' links, so a word does not need a flag only because its theme has one.
 region: only if the word is mainly known in particular regions, using the codes (US, CA, UK, IE, AU, NZ, ZA, IN, TR); otherwise empty.

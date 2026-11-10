@@ -1,6 +1,6 @@
 // Data model. Pure functions over a plain project object, so they can be tested in Node.
 //
-// Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, lang, region[], note }
+// Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, lang, foreign, region[], note }
 // Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, fam, adult, sensitive, tm, vulgar, region[],
 //         aliasOf, aliasKind, typ{ themeId: typicality }, status, note }
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
@@ -91,14 +91,14 @@ export const wordDifficulty = (P, e, tid) => blendRatings(e.fam, typicality(P, e
 // 0 when identifiability is unrated; identifiability alone when popularity is.
 export const themeDifficulty = t => !t.ident ? 0 : !t.pop ? t.ident : round1(Math.min(5, Math.max(1, t.ident + 0.5 * (t.pop - 3))));
 
-// Theme flags with inheritance: adult, sensitive, trademark, language-specific and disabled pass down the tree; regions are unioned.
+// Theme flags with inheritance: adult, sensitive, trademark, language-specific, foreign-language and disabled pass down the tree; regions are unioned.
 export function eff(P, tid) {
   const ix = P.ix;
   if (ix.eff.has(tid)) return ix.eff.get(tid);
   const t = ix.theme.get(tid);
-  if (!t) return { adult: false, sensitive: false, tm: false, lang: false, enabled: false, region: [] };
-  const p = t.parent && t.parent !== tid ? eff(P, t.parent) : { adult: false, sensitive: false, tm: false, lang: false, enabled: true, region: [] };
-  const r = { adult: p.adult || t.adult, sensitive: p.sensitive || t.sensitive, tm: p.tm || t.tm, lang: p.lang || t.lang,
+  if (!t) return { adult: false, sensitive: false, tm: false, lang: false, foreign: false, enabled: false, region: [] };
+  const p = t.parent && t.parent !== tid ? eff(P, t.parent) : { adult: false, sensitive: false, tm: false, lang: false, foreign: false, enabled: true, region: [] };
+  const r = { adult: p.adult || t.adult, sensitive: p.sensitive || t.sensitive, tm: p.tm || t.tm, lang: p.lang || t.lang, foreign: p.foreign || !!t.foreign,
     enabled: p.enabled && t.enabled, region: [...new Set([...p.region, ...t.region])] };
   ix.eff.set(tid, r);
   return r;
@@ -244,4 +244,5 @@ export const FLAG_HELP = {
   adult: 'Adult: drugs, sexual content, violence, and so on.',
   sensitive: 'Sensitive: religion, politics, death, and so on. The game can keep these out of early or easy levels.',
   lang: 'Language-specific: depends on the spelling, sound or slang of the library language, so it will not translate: rhymes, puns, slang, acronyms, anagrams, spoonerisms, wordplay, and so on.',
+  foreign: 'Foreign language: the words are mostly NOT English (numbers, days, colors or greetings in another language, Swahili or Maori words). English words of foreign origin (loanwords, french phrases used in English) do not count. The game can hold these back until later levels.',
 };

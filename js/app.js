@@ -55,6 +55,7 @@ function badges(t) {
   if (ef.sensitive) add('S', 'sens', 'Sensitive' + (t.sensitive ? '' : ' (inherited)'));
   if (ef.tm) add('T', 'tm', 'Trademark' + (t.tm ? '' : ' (inherited)'));
   if (ef.lang) add('L', 'lang', 'Language-specific' + (t.lang ? '' : ' (inherited)'));
+  if (ef.foreign) add('F', 'lang', 'Foreign language' + (t.foreign ? '' : ' (inherited)'));
   if (ef.region.length) add(ef.region.join('/'), 'region', 'Region-specific');
   return b;
 }
@@ -140,6 +141,7 @@ const THEME_FILTERS = [
   ['sensitive', 'Sensitive themes', (P, t, ef) => ef.sensitive],
   ['tm', 'Trademark / copyright themes', (P, t, ef) => ef.tm],
   ['lang', 'Language-specific themes', (P, t, ef) => ef.lang],
+  ['foreign', 'Foreign-language themes', (P, t, ef) => ef.foreign],
   ['region', 'Region-specific themes', (P, t, ef) => ef.region.length > 0],
   ['locked', 'Locked words (no substitution)', (P, t) => !t.group && themeLocked(P, t)],
   ['pop', 'Popularity…'],
