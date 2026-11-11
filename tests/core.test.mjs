@@ -181,3 +181,13 @@ test('validate warns when a US-tagged spelling alias sits under a non-US root', 
   r.region = ['US']; a.region = ['UK']; reindex(P);
   assert.ok(!validate(P).some(x => /US spelling/.test(x.msg)));
 });
+
+test('validate checks that a rule naming a category theme points at an existing theme', () => {
+  const P = newProject();
+  P.themes.push({ id: 'colors', name: 'colors', parent: null, group: false, enabled: true, region: [] });
+  P.themes.push({ id: 'starts_with_a_color', name: 'starts with a color', parent: null, group: false, enabled: true, tkind: 'wordplay', rule: 'starts:@colors', region: [] });
+  reindex(P);
+  assert.ok(!validate(P).some(x => /no theme with the id/.test(x.msg)));
+  P.themes.find(t => t.id === 'starts_with_a_color').rule = 'starts:@nosuch'; reindex(P);
+  assert.ok(validate(P).some(x => /no theme with the id nosuch/.test(x.msg)));
+});

@@ -139,6 +139,19 @@ export function buildExport(P, opt0 = {}) {
   };
   const cols = { text: [], pos: [], type: [], flags: [], familiarity: [], regions: [], regionsHi: [], root: [], clash: [], linkCount: [], links: [] };
   const nameWordLinks = [];                          // numbers of links (position in the concatenated link list, links[4n..4n+3]) whose shown text is just a word of the theme name
+  const nameKey = x => x.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim().replace(/s$/, '');   // a text and a theme name compare equal ignoring case, punctuation and a final s
+  const themeByName = new Map();                       // normalised theme name -> theme index (only the first when two themes share a name)
+  themes.forEach((t, i) => { const k = nameKey(t.name); if (k && !themeByName.has(k)) themeByName.set(k, i); });
+  const nameThemeLinks = [];                          // [link number, theme index] pairs: the link's shown text (or the entry's text) is the whole name of ANOTHER theme (a passenger word)
+  const shownUK = [];                                 // [link number, index+1 into shown]: what a British player sees for that link when it differs from the link's own shown text (spelling aliases only: gray -> grey)
+  const ukSpell = new Map();                          // root id -> its UK spelling alias entry
+  for (const id of ids) { const x = ix.entry.get(id); if (x.aliasOf && x.aliasKind === 'spelling' && (x.region || []).includes('UK') && !(x.region || []).includes('US') && !ukSpell.has(x.aliasOf)) ukSpell.set(x.aliasOf, x); }
+  const ukText = (root, uk, text) => {               // the British form of a short text: swap the words that differ between the root and its UK spelling alias
+    const a = root.text.split(/\s+/), b = uk.text.split(/\s+/); if (a.length !== b.length) return null;
+    const map = new Map(); a.forEach((w, i) => { if (w !== b[i]) map.set(w.toLowerCase(), b[i]); });
+    let changed = false; const out = text.split(/(\s+)/).map(w => { const r = map.get(w.toLowerCase()); if (r === undefined) return w; changed = true; return w[0] === w[0].toUpperCase() && w[0] !== w[0].toLowerCase() ? r[0].toUpperCase() + r.slice(1) : r; }).join('');
+    return changed ? out : null;
+  };
   const shown = [], shownAt = new Map();           // texts a theme shows instead of the entry's own: [text, pos]; a link points at one (index+1, 0 = the entry's own text)
   const clash = new Map(), find = x => { while (clash.has(x) && clash.get(x) !== x) x = clash.get(x); return x; };   // words that stand for one another in a theme (its groups) share a clash id: the level builder never puts two of them in one level
   for (const t of themes) for (const g of t.groups || []) { const m = g.filter(id => keep.has(id)); for (const id of m) if (!clash.has(id)) clash.set(id, id); for (const id of m.slice(1)) clash.set(find(id), find(m[0])); }
@@ -171,6 +184,11 @@ export function buildExport(P, opt0 = {}) {
     for (const [tid, r, p, sh] of links) {
       if (isNameWord(ix.theme.get(tid), sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text)) nameWordLinks.push(cols.links.length / 4);
       if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps, breakPoints(text)]); shownAt.set(sh, shown.length); }
+      { const txt = sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text, k = nameKey(txt), ot = k ? themeByName.get(k) : undefined; if (ot !== undefined && ot !== tIndex.get(tid)) nameThemeLinks.push([cols.links.length / 4, ot]); }
+      if (sh && !e.aliasOf && ukSpell.has(e.id)) {
+        const psn = +sh.slice(sh.lastIndexOf('|') + 1), ut = ukText(e, ukSpell.get(e.id), sh.slice(0, sh.lastIndexOf('|')));
+        if (ut) { const key = ut + '|' + psn; if (!shownAt.has(key)) { shown.push([ut, psn, breakPoints(ut)]); shownAt.set(key, shown.length); } shownUK.push([cols.links.length / 4, shownAt.get(key)]); }
+      }
       cols.links.push(tIndex.get(tid), r, p, sh ? shownAt.get(sh) : 0);
     }
     if (cols.zipf) { const z = zipf(e.text); cols.zipf.push(z == null ? 0 : Math.round(z * 10)); }
@@ -202,9 +220,10 @@ export function buildExport(P, opt0 = {}) {
     // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, typicality, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
     // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups): never put two with the same id in one level.
     // breaks[i] lists the character indexes in text[i] where a hyphen may be placed (a hyphen goes before that character); [] when the text has no break point. Words of 8+ letters only; spaces and existing hyphens are the game's own breaks. Shown texts carry the same list as a third value, and theme rows in the 'breaks' field.
+    // nameThemeLinks: [link number, theme index] pairs: the link's text as shown is the whole name of another theme (a passenger word); link number n is links[4n..4n+3]. shownUK: [link number, index+1 into shown]: the text a British player sees for that link when it differs from the shown text (the UK spelling of a short text, gray -> grey); links not listed show the same text to everyone.
     // root[i] is 0 for a root entry, else the index+1 of the root it is an alias of.
     entries: cols,
-    shown, nameWordLinks,
+    shown, nameWordLinks, nameThemeLinks, shownUK,
     linkFields: ['theme', 'difficulty', 'typicality', 'shown'],
   };
   return { file, report };

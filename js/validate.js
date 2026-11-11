@@ -39,6 +39,7 @@ export function validate(P) {
   // ----- themes -----
   let unrated = 0;
   for (const t of P.themes) {
+    { const rm = /^(?:starts|ends|hidden):@(.+)$/.exec(t.rule || ''); if (rm && !ix.theme.get(rm[1])) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rm[1]}.`, { themeId: t.id }); }
     const ef = eff(P, t.id);
     if (!ef.enabled) continue;
     const direct = (ix.byTheme.get(t.id) || []);
