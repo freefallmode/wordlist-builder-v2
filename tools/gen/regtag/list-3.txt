@@ -1,0 +1,346 @@
+chinese_cities | chinese cities | in asian cities | place | Beijing, Hong Kong, Shanghai, Guangzhou, Shenzhen, Chengdu, Chongqing, Hangzhou
+japanese_cities | japanese cities | in asian cities | place | Kyoto, Osaka, Tokyo, Hiroshima, Nagasaki, Yokohama, Fukuoka, Kobe
+south_american_cities | south american cities | in cities | place | Buenos Aires, Lima, Rio, Rio de Janeiro, São Paulo, Bogotá, Brasília, Caracas
+brazilian_cities | brazilian cities | in south american cities | place | Brasília, Rio, Rio de Janeiro, São Paulo, Manaus, Salvador, Belém, Belo Horizonte
+african_cities | african cities | in cities | place | Cairo, Cape Town, Johannesburg, Nairobi, Alexandria, Casablanca, Lagos, Marrakech
+oceanian_cities | oceanian cities | in cities | place | Melbourne, Sydney, Auckland, Canberra, Wellington, Adelaide, Alice Springs, Brisbane
+port_cities | port cities | in cities | place | Hong Kong, Rotterdam, Shanghai, Singapore, Alexandria, Antwerp, Calais, Dover
+ports_in_europe | ports in europe | in port cities | place | Rotterdam, Antwerp, Calais, Dover, Hamburg, Liverpool, Marseille, Piraeus
+ports_in_asia | ports in asia | in port cities | place | Hong Kong, Shanghai, Singapore, Mumbai, Bombay, Busan, Dubai, Yokohama
+ports_in_the_americas | ports in the americas | in port cities | place | New Orleans, Vancouver, Baltimore, Buenos Aires, Halifax, Santos, Charleston, Galveston
+holy_cities | holy cities | in cities | place | Jerusalem, Mecca, Medina, Bethlehem, Lhasa, Lourdes, Rome, Varanasi
+silk_road_cities | silk road cities | in cities | place | Bukhara, Samarkand, Xi'an, Istanbul, Kashgar, Khiva, Merv, Aleppo
+ancient_cities | ancient cities | in cities | place | Babylon, Pompeii, Rome, Sparta, Troy, Athens, Carthage, Petra
+mexican_cities | mexican cities | in cities | place | Cancun, Mexico City, Acapulco, Cabo San Lucas, Guadalajara, Monterrey, Playa del Carmen, Puerto Vallarta
+regions | regions | in Places & Geography | folder
+mexican_states | mexican states | in regions | place | Baja California, Chihuahua, Jalisco, Mexico City, Oaxaca, Quintana Roo, Yucatan, Baja California Sur
+french_regions | french regions | in regions | place | Brittany, Normandy, Provence, Alsace, Burgundy, Champagne, Corsica, Île-de-France
+spanish_regions | spanish regions | in regions | place | Andalusia, Canary Islands, Catalonia, Costa del Sol, Balearic Islands, Basque Country, Costa Brava, Galicia
+italian_regions | italian regions | in regions | place | Sardinia, Sicily, Tuscany, Lombardy, Veneto, Apulia, Calabria, Campania
+german_states | german states | in regions | place | Bavaria, Berlin, Hamburg, Baden-Württemberg, Brandenburg, Bremen, Hesse, Lower Saxony
+european_holiday_regions | european holiday regions | in regions | place | Algarve, Amalfi Coast, Costa del Sol, French Riviera, Provence, Tuscany, Andalusia, Brittany
+wine_regions | wine regions | in regions | place | Bordeaux, Burgundy, Champagne, Napa, Napa Valley, Rioja, Barossa Valley, Chablis
+famous_natural_features | famous natural features | in Places & Geography | folder
+mountain_ranges | mountain ranges | in famous natural features | place | Alps, Andes, Himalayas, Rockies, Appalachians, Dolomites, Pyrenees, Urals
+famous_mountains | famous mountains | in famous natural features | place | K2, Kilimanjaro, Matterhorn, mont blanc, Mount Everest, Ben Nevis, Eiger, Mount Fuji
+alpine_peaks | alpine peaks | in famous mountains | place | Eiger, Matterhorn, mont blanc, Jungfrau, Zugspitze, Grandes Jorasses, Grossglockner, Mönch
+himalayan_peaks | himalayan peaks | in famous mountains | place | Everest, K2, Annapurna, Kangchenjunga, Lhotse, Ama Dablam, Cho Oyu, Dhaulagiri
+famous_volcanoes | famous volcanoes | in famous mountains | place | Krakatoa, Mount St Helens, Vesuvius, Etna, Eyjafjallajökull, Kilauea, Pinatubo, Cotopaxi
+seven_summits | seven summits | in famous mountains | place | Everest, Kilimanjaro, Denali, Aconcagua, Elbrus, Kosciuszko, Vinson
+famous_deserts | famous deserts | in famous natural features | place | Gobi, Sahara, Arabian, Atacama, Kalahari, Mojave, Namib, Sonoran
+famous_islands | famous islands | in famous natural features | place | Bali, Cuba, Greenland, Iceland, Ireland, Madagascar, Sicily, Borneo
+caribbean_islands | caribbean islands | in famous islands | place | Cuba, Jamaica, Aruba, Bahamas, Barbados, Puerto Rico, Saint Lucia, Antigua
+greek_islands | greek islands | in famous islands | place | Crete, Mykonos, Rhodes, Santorini, Corfu, Zakynthos, Ios, Ithaca
+pacific_islands | pacific islands | in famous islands | place | Fiji, Hawaii, Tahiti, Bora Bora, Maui, Oahu, Rapa Nui, Samoa
+indonesian_islands | indonesian islands | in famous islands | place | Bali, Java, Sumatra, Borneo, Komodo, Lombok, Sulawesi, Celebes
+islands_near_britain | islands near britain | in famous islands | place | Ireland, Isle of Man, Isle of Wight, Jersey, Skye, Anglesey, Eire, Guernsey
+mediterranean_islands | mediterranean islands | in famous islands | place | Sicily, Crete, Cyprus, Ibiza, Majorca, Malta, Sardinia, Capri
+famous_beaches | famous beaches | in famous natural features | place | Bondi, Copacabana, Miami, Waikiki, Brighton, Ipanema, Malibu, Surfers Paradise
+peninsulas | peninsulas | in famous natural features | place | Crimea, Iberia, Iberian, Korean, Sinai, Arabian, Balkan, Balkans
+antarctic_places | antarctic places | in famous natural features | place | Antarctica, South Pole, Antarctic Peninsula, McMurdo Station, Ross Sea, Southern Ocean, Weddell Sea, Antarctic Circle
+famous_canyons_and_gorges | famous canyons and gorges | in famous natural features | place | Grand Canyon, Antelope, Bryce, Three Gorges, Zion, Cheddar, Colca, Copper Canyon
+famous_caves | famous caves | in famous natural features | place | Lascaux, Mammoth, Carlsbad Caverns, Fingal's Cave, Waitomo, Wookey Hole, Altamira, Batu
+famous_waters | famous waters | in Places & Geography | folder
+famous_rivers | famous rivers | in famous waters | place | Amazon, Danube, Mississippi, Nile, Thames, Colorado, Congo, Ganges
+african_rivers | african rivers | in famous rivers | place | Congo, Niger, Nile, Zambezi, White Nile, Blue Nile, Gambia, Limpopo
+asian_rivers | asian rivers | in famous rivers | place | Ganges, Indus, Mekong, Yangtze, Brahmaputra, Euphrates, Huang He, Tigris
+european_rivers | european rivers | in famous rivers | place | Danube, rhine, Seine, Thames, Volga, Elbe, Loire, Po
+north_american_rivers | north american rivers | in famous rivers | place | Colorado, Mississippi, Missouri, Columbia, Hudson, Ohio, Rio Grande, St. Lawrence
+south_american_rivers | south american rivers | in famous rivers | place | Amazon, Orinoco, Paraná, Iguazu, Madeira, Magdalena, Paraguay, Rio de la Plata
+british_and_irish_rivers | british and irish rivers | in famous rivers | place | Thames, Clyde, Mersey, Severn, Shannon, Liffey, Trent, Tyne
+famous_lakes | famous lakes | in famous waters | place | Lake Geneva, Loch Lomond, Loch Ness, Superior, Victoria, Baikal, Erie, Great Salt Lake
+famous_waterfalls | famous waterfalls | in famous waters | place | Niagara Falls, Victoria Falls, Angel Falls, Horseshoe Falls, Iguazu Falls, Bridal Veil Falls, Rhine Falls, Yosemite Falls
+straits_and_canals | straits and canals | in famous waters | place | Bosporus, Gibraltar, Panama, Suez, Bering, Dardanelles, Hormuz, Malacca
+gulfs_and_bays | gulfs and bays | in famous waters | place | Mexico, Persian Gulf, Bengal, Biscay, Hudson, San Francisco, Bay of Naples, Bay of Pigs
+oceans_and_seas | oceans and seas | in famous waters | place | Arctic, Atlantic, Indian, Mediterranean, Pacific, Baltic, Black, Caribbean
+the_five_oceans | the five oceans | in oceans and seas | place | Atlantic, Indian, Pacific, Arctic, Southern
+ocean_zones | ocean zones | in oceans and seas | category | sunlight, abyss, midnight, twilight, trench, bathypelagic, epipelagic, mesopelagic
+european_waters | european waters | in oceans and seas | place | Mediterranean, Baltic, Black Sea, North Sea, Adriatic, Aegean, Irish Sea, Barents
+asian_waters | asian waters | in oceans and seas | place | Arabian Sea, Caspian, Sea of Japan, South China Sea, Andaman, Aral, East China Sea, Java Sea
+landmarks | landmarks | in Places & Geography | place | Big Ben, Christ the Redeemer, Colosseum, Eiffel Tower, Empire State Building, Golden Gate, Golden Gate Bridge, Great Wall of China
+famous_buildings | famous buildings | in landmarks | place | Burj Khalifa, Colosseum, Empire State, Sydney Opera House, Taj Mahal, white house, Kremlin, Parthenon
+famous_bridges | famous bridges | in landmarks | place | Brooklyn, Golden Gate, London, Tower Bridge, Coathanger, Bridge of Sighs, Charles, Forth
+famous_towers | famous towers | in landmarks | place | Eiffel, Leaning Tower of Pisa, Big Ben, CN Tower, Space Needle, Blackpool, Galata, Petronas
+famous_statues | famous statues | in landmarks | place | Christ the Redeemer, David, Lady Liberty, Great Sphinx, Little Mermaid, Nelson's Column, The Thinker, Venus de Milo
+famous_palaces | famous palaces | in landmarks | place | Buckingham, Versailles, Forbidden City, Hampton Court, Kensington, Westminster, Alhambra, Blenheim
+famous_castles | famous castles | in landmarks | place | Neuschwanstein, Windsor, Bran, Edinburgh, Balmoral, Blarney, Cinderella, Dover
+ancient_wonders | wonders of the world | in landmarks | place | Great Pyramid of Giza, Great Wall of China, Pyramids of Giza, Taj Mahal, Christ the Redeemer, Colosseum, Colossus, Colossus of Rhodes
+seven_wonders_of_the_ancient_world | seven wonders of the ancient world | in wonders of the world | place | Great Pyramid, Colossus, Colossus of Rhodes, Hanging Gardens, Pharos of Alexandria, Statue of Zeus, Alexandria Lighthouse, Gardens of Babylon
+famous_squares | famous squares | in landmarks | place | Red Square, Tiananmen, Times Square, Trafalgar, Leicester, Piccadilly Circus, St Peter's Square, Alexanderplatz
+famous_streets | famous streets | in landmarks | place | Broadway, Champs-Elysees, Fifth Avenue, Oxford, Wall, Abbey Road, Baker, Downing
+famous_museums | famous museums | in landmarks | place | British, Louvre, The Met, Guggenheim, National Gallery, Natural History, Prado, Science
+famous_temples | famous temples | in landmarks | place | Angkor Wat, Parthenon, Abu Simbel, Borobudur, Harmandir Sahib, Karnak, Fushimi Inari, Golden Pavilion
+famous_mosques | famous mosques | in landmarks | place | Dome of the Rock, Masjid al-Haram, Sultan Ahmed, Al-Aqsa, Al-Masjid an-Nabawi, Great Mosque of Mecca, Sheikh Zayed, Hagia Sophia
+famous_churches | famous churches | in landmarks | place | Notre-Dame, St Paul's Cathedral, St Peter's Basilica, Westminster Abbey, Canterbury Cathedral, Duomo, Milan Cathedral, Sacre-Coeur
+famous_parks | famous parks | in landmarks | place | Central Park, Hyde, Yellowstone, Yosemite, Glacier, Kensington Gardens, Regent's, St James's
+landmarks_by_place | landmarks by place | in Places & Geography | folder
+egyptian_landmarks | egyptian landmarks | in landmarks by place | place | Great Pyramid of Giza, Great Sphinx, Nile, Pyramids of Giza, Valley of the Kings, Abu Simbel, Cairo Museum, Giza
+african_landmarks | african landmarks | in landmarks by place | place | Kilimanjaro, Sahara, Table Mountain, Victoria Falls, Cape of Good Hope, Kruger National Park, Masai Mara, Robben Island
+chinese_landmarks | chinese landmarks | in landmarks by place | place | Forbidden City, Great Wall of China, Terracotta Army, Summer Palace, Temple of Heaven, Three Gorges Dam, Tiananmen Square, Yangtze
+japanese_landmarks | japanese landmarks | in landmarks by place | place | Mount Fuji, Shibuya Crossing, Fushimi Inari, Himeji Castle, Kinkaku-ji, Osaka Castle, Tokyo Skytree, Tokyo Tower
+south_american_landmarks | south american landmarks | in landmarks by place | place | Amazon, Amazon River, Andes, Christ the Redeemer, Galapagos Islands, Machu Picchu, Angel Falls, Copacabana
+mexican_landmarks | mexican landmarks | in landmarks by place | place | Cancun, Chichen Itza, Acapulco, Cabo San Lucas, Pyramid of the Sun, Teotihuacan, Tulum, Angel of Independence
+city_sights | city sights | in landmarks by place | folder
+paris_landmarks | paris landmarks | in city sights | place | Arc de Triomphe, Champs-Élysées, Eiffel Tower, Louvre, Notre-Dame, Centre Pompidou, Montmartre, Moulin Rouge
+rome_landmarks | rome landmarks | in city sights | place | Colosseum, Pantheon, Roman Forum, Spanish Steps, Trevi Fountain, Vatican, Circus Maximus, Piazza Navona
+greek_landmarks | greek landmarks | in landmarks by place | place | Acropolis, Mount Olympus, Parthenon, Santorini, Delphi, Knossos, Mykonos, Olympia
+spanish_landmarks | spanish landmarks | in landmarks by place | place | Alhambra, Sagrada Família, Camp Nou, Canary Islands, Costa Brava, Costa del Sol, Guggenheim Bilbao, Las Ramblas
+maps_and_globes | maps and globes | in Places & Geography | category | atlas, compass, equator, globe, latitude, longitude, map, road
+continents_and_supercontinents | continents and supercontinents | in maps and globes | place | Africa, Asia, Europe, North America, Pangaea, South America, Antarctica, Australia
+world_regions | world regions | in maps and globes | place | Caribbean, Middle East, Scandinavia, Arabia, Balkans, Central America, Eastern Europe, Far East
+lines_on_a_map | lines on a map | in maps and globes | category | border, equator, latitude, longitude, prime meridian, Arctic Circle, coastline, contour
+map_words | map words | in maps and globes | category | key, legend, scale, cartographer, cartography, compass rose, coordinates, grid
+kinds_of_maps | kinds of maps | in maps and globes | category | atlas, city, globe, road, treasure, world, political, subway
+compass_directions | compass directions | in maps and globes | category | east, north, northeast, northwest, south, southeast, southwest, west
+cardinal_directions | cardinal directions | in compass directions | category | east, north, south, west
+intercardinal_directions | intercardinal directions | in compass directions | category | northeast, northwest, southeast, southwest
+directions | relative directions | in maps and globes | category | down, forward, left, right, up, above, ahead, backward
+continents | continents | in maps and globes | place | Africa, Asia, Europe, North America, South America, Antarctica, Oceania
+flags_of_the_world | flags of the world | in Places & Geography | folder
+flags_with_stars | flags with stars | in flags of the world | place | America, China, EU, European Union, United States, Australia, Brazil, Chile
+countries_in_africa | african countries with star flags | in flags with stars | place | Ghana, Morocco, Ethiopia, Somalia, Zimbabwe, Burkina Faso, Burundi, Cameroon
+countries_in_asia | asian countries with star flags | in flags with stars | place | China, Malaysia, Singapore, Turkey, Vietnam, Burma, Israel, Myanmar
+countries_in_oceania | oceanian countries with star flags | in flags with stars | place | Australia, New Zealand, Aotearoa, Marshall Islands, Papua New Guinea, Samoa, Micronesia, Nauru
+flags_with_crescents | flags with crescents | in flags of the world | place | Turkey, Algeria, Malaysia, Pakistan, Red Crescent, Tunisia, Libya, Maldives
+flags_with_crosses | flags with crosses | in flags of the world | place | Britain, England, Sweden, Switzerland, UK, United Kingdom, Denmark, Finland
+red_and_white_flags | red and white flags | in flags of the world | place | Canada, Japan, Poland, Austria, Peru, Singapore, Switzerland, Turkey
+tricolor_flags | tricolor flags | in flags of the world | place | France, Germany, Ireland, Italy, Mexico, Russia, Belgium, Holland
+flag_words | flag words | in flags of the world | place | flagpole, Stars and Stripes, Union Jack, white, banner, bunting, flagstaff, Jolly Roger
+flags_with_a_sun | flags with a sun | in flags of the world | place | Japan, rising sun, Argentina, Philippines, Kazakhstan, Macedonia, New Mexico, North Macedonia
+flags_with_animals | flags with animals | in flags of the world | place | Mexico, Wales, Welsh dragon, Albania, California, Gadsden, lion rampant, Scotland
+place_names | place names | in Places & Geography | folder
+nationalities | nationalities | in place names | category | American, Australian, Brazilian, British, Canadian, Chinese, Dutch, English
+old_country_names | old country names | in place names | place | Burma, East Germany, Persia, Rhodesia, Siam, Soviet Union, Yugoslavia, Ceylon
+old_city_names | old city names | in place names | place | Bombay, Constantinople, Leningrad, Peking, Saigon, Byzantium, Calcutta, Edo
+places_named_after_people | places named after people | in place names | place | Alexandria, Bolivia, Colombia, Ho Chi Minh City, Philippines, Virginia, Washington, Adelaide
+australian_places | australian places named after people | in places named after people | place | Adelaide, Queensland, Tasmania, Darwin, Hobart, Melbourne, Brisbane, Cooktown
+us_cities | us cities named after people | in places named after people | place | Washington, Austin, Jamestown, Baltimore, Bismarck, Charleston, Cleveland, Houston
+countries_and_archipelagos | countries and archipelagos named after people | in places named after people | place | Bolivia, Colombia, Philippines, Saudi Arabia, Cook Islands, Marshall Islands, Mauritius, Seychelles
+everyday_places | everyday places | in Places & Geography | folder
+farm | farm | in everyday places | category | barn, farmer, hay bale, haystack, scarecrow, tractor, chicken coop, combine
+restaurant | restaurant | in everyday places | category | appetizer, bill, chef, dessert, menu, napkin, reservation, waiter
+kitchen_crew | kitchen crew | in restaurant | category | chef, cook, head chef, sous chef, chef de partie, commis, cuisinier, expediter
+dining_room_staff | dining room staff | in restaurant | category | waiter, host, hostess, maître d', server, waitress, busboy, sommelier
+supermarket | supermarket | in everyday places | category | aisle, basket, cashier, checkout, receipt, shopping cart, barcode, cash register
+post_office | post office | in everyday places | category | envelope, letter, stamp, airmail, counter, mail, mail carrier, mailbox
+library | library | in everyday places | category | book, borrow, card, librarian, shelf, bookmark, due date, fine
+cafe | cafe | in everyday places | category | barista, cappuccino, coffee, croissant, latte, muffin, sandwich, tea
+bakery | bakery | in everyday places | category | baker, bread, cake, cookie, croissant, cupcake, doughnut, loaf
+hair_salon | hair salon | in everyday places | category | haircut, hairdresser, hairdryer, scissors, shampoo, barber, blow-dry, clippers
+street_market | street market | in everyday places | category | haggling, stall, trader, vendor, bargain, bazaar, fruit stand, produce
+park | park | in everyday places | category | bench, lawn, playground, slide, swing, tree, fountain, Frisbee
+shopping_mall | shopping mall | in everyday places | category | department store, escalator, food court, store, arcade, bag, bookstore, boutique
+workplaces | workplaces | in Places & Geography | folder
+hospital | hospital | in workplaces | category | ambulance, doctor, emergency room, nurse, patient, stethoscope, surgeon, wheelchair
+people_at_a_hospital | people at a hospital | in hospital | category | doctor, nurse, patient, surgeon, midwife, orderly, paramedic, porter
+at_the_doctor | at the doctor | in hospital | category | checkup, prescription, shot, stethoscope, thermometer, waiting room, appointment, bandage
+fire_station | fire station | in workplaces | category | hose, pole, firefighter, fireman, sliding pole, truck, chief, dalmatian
+police_station | police station | in workplaces | category | badge, car, handcuffs, officer, cuffs, detective, fingerprints, holding cell
+office | office | in workplaces | category | boss, computer, desk, meeting, printer, stapler, break room, conference room
+factory | factory | in workplaces | category | assembly line, conveyor belt, worker, forklift, hard hat, heavy machinery, mass production, robot arm
+construction_site | construction site | in workplaces | category | builder, bulldozer, crane, digger, excavator, hard hat, scaffolding, brick
+builders_tools | builders' tools | in construction site | category | hammer, jackhammer, shovel, crowbar, drill, nail gun, sledgehammer, spirit level
+vet_clinic | vet clinic | in workplaces | category | pet, stethoscope, vet, veterinarian, animal hospital, cone of shame, pet carrier, vaccination
+dentist_s_office | dentist's office | in workplaces | category | cavity, dental chair, dentist, drill, filling, tooth, crown, floss
+places_to_visit | places to visit | in Places & Geography | folder
+zoo | zoo | in places to visit | category | elephant, giraffe, lion, monkey, penguin, tiger, zookeeper, bear
+beach | beach | in places to visit | category | ball, bucket, sand, sandcastle, seashell, spade, sunscreen, wave
+things_you_do_at_the_beach | things you do at the beach | in beach | category | build a sandcastle, sunbathe, surf, swim, collect shells, dig, dive, eat ice cream
+airport | airport | in places to visit | category | arrivals, boarding pass, check-in, departures, gate, runway, terminal, baggage claim
+people_at_an_airport | people at an airport | in airport | category | baggage handler, customs officer, flight attendant, passenger, pilot, air traffic controller, captain, check-in agent
+museum | museum | in places to visit | category | artifact, dinosaur skeleton, exhibit, exhibition, collection, curator, display case, fossil
+art_gallery | art gallery | in places to visit | category | exhibition, oil painting, painting, portrait, sculpture, abstract, canvas, curator
+aquarium | aquarium | in places to visit | category | clownfish, fish tank, jellyfish, shark, glass tunnel, octopus, sea turtle, seahorse
+movie_theater | movie theater | in places to visit | category | candy, concession stand, popcorn, screen, seat, soda, ticket, 3D glasses
+swimming_pool | swimming pool | in places to visit | category | deep end, diving board, lifeguard, shallow end, bathing cap, changing room, chlorine, goggles
+ski_resort | ski resort | in places to visit | category | chairlift, lift, ski, slope, snowboard, boots, chalet, gondola
+water_park | water park | in places to visit | category | lazy river, slide, wave pool, inner tube, kiddie pool, lifeguard, splash pad, tube slide
+buildings | buildings | in Places & Geography | category | apartment, castle, church, factory, hospital, hotel, house, library
+buildings_to_live_in | buildings to live in | in buildings | category | apartment, house, mansion, bungalow, condo, cottage, mobile home, penthouse
+traditional_dwellings | traditional dwellings | in buildings | category | igloo, tepee, cave, hut, mud hut, wigwam, yurt, adobe house
+religious_buildings | religious buildings | in buildings | category | cathedral, church, mosque, synagogue, temple, abbey, chapel, monastery
+public_buildings | public buildings | in buildings | category | fire station, hospital, library, police station, post office, school, town hall, courthouse
+farm_buildings | farm buildings | in buildings | category | barn, farmhouse, silo, stable, cattle barn, cowshed, dairy, hay barn
+industrial_buildings | industrial buildings | in buildings | category | factory, power station, warehouse, foundry, mill, refinery, steelworks, assembly plant
+shops | shops | in buildings | category | bakery, bookstore, butcher, pet store, pharmacy, shoe store, supermarket, toy store
+towers_and_skyscrapers | towers and skyscrapers | in buildings | category | Big Ben, Eiffel, Empire State Building, skyscraper, Burj Khalifa, clock, high-rise, lighthouse
+middle_eastern_buildings | middle eastern buildings | in buildings | category | bazaar, minaret, mosque, souk, Al-Aqsa Mosque, bedouin tent, Dome of the Rock, Hagia Sophia
+east_asian_buildings | east asian buildings | in buildings | category | Forbidden City, pagoda, shrine, temple, dojo, Summer Palace, teahouse, Temple of Heaven
+streets_and_roads | streets and roads | in Places & Geography | folder
+road_types | road types | in streets and roads | category | avenue, freeway, highway, lane, street, alley, boulevard, country lane
+street_furniture | street furniture | in streets and roads | category | bench, bus stop, lamp post, streetlight, traffic light, trash can, bike rack, bus shelter
+parts_of_a_road | parts of a road | in streets and roads | category | lane, surface, sidewalk, asphalt, bike lane, center line, curb, cycle lane
+parts_of_a_town | parts of a town | in streets and roads | category | downtown, high street, mall, square, suburb, district, marketplace, neighborhood
+kinds_of_settlements | kinds of settlements | in streets and roads | category | city, town, village, capital, hamlet, metropolis, suburb, colony
+national_symbols | national symbols | in Places & Geography | category | bald eagle, coat of arms, flag, maple leaf, anthem, Stars and Stripes, Union Jack, Britannia
+national_animals | national animals | in national symbols | category | bald eagle, kangaroo, lion, Bengal tiger, dragon, elephant, emu, giant panda
+national_flowers | national flowers | in national symbols | category | rose, tulip, cherry blossom, daffodil, edelweiss, lotus, poppy, shamrock
+national_dishes | national dishes | in national symbols | category | fish and chips, paella, sushi, borscht, ceviche, fondue, goulash, haggis
+national_sports | national sports | in national symbols | category | baseball, cricket, rugby, Aussie rules, bullfighting, Gaelic football, hurling, ice hockey
+national_instruments | national instruments | in national symbols | category | bagpipes, didgeridoo, harp, sitar, accordion, balalaika, bouzouki, shamisen
+national_costumes | national costumes | in national symbols | category | kilt, kimono, lederhosen, sari, ao dai, clogs, dirndl, hanbok
+symbols_of_the_usa | symbols of the usa | in national symbols | category | bald eagle, Stars and Stripes, Statue of Liberty, Uncle Sam, Liberty Bell, Old Glory, Star-Spangled Banner, great seal
+british_isles_symbols | british isles symbols | in national symbols | category | Union Jack, Britannia, daffodil, harp, red dragon, shamrock, thistle, John Bull
+travel_transport | Travel & Transport | in - | folder
+cars | cars | in Travel & Transport | category | driver, engine, sports car, steering wheel, tire, windshield, dashboard, headlight
+car_brands | car brands | in cars | category | Audi, BMW, Chevrolet, Ferrari, ford, Honda, Lamborghini, Mercedes
+german_car_brands | german car brands | in car brands | category | Audi, BMW, Mercedes, Mercedes-Benz, Porsche, Volkswagen, Opel, Maybach
+japanese_car_brands | japanese car brands | in car brands | category | Honda, Nissan, Toyota, Lexus, Mazda, Mitsubishi, Subaru, Acura
+supercar_makers | supercar makers | in car brands | category | Ferrari, Lamborghini, Porsche, Aston Martin, Bugatti, Lotus, Maserati, McLaren
+car_parts | car parts | in cars | category | brake, engine, steering wheel, tire, wheel, windshield, accelerator, battery
+dashboard_items | dashboard items | in car parts | category | speedometer, fuel gauge, glove box, odometer, radio, rev counter, speedo, tachometer
+under_the_bonnet | engine bay parts | in car parts | category | battery, piston, radiator, spark plug, crankshaft, alternator, camshaft, carburetor
+exterior_parts | car exterior parts | in car parts | category | tire, wheel, windshield, bumper, door, headlight, hood, trunk
+car_types | car types | in cars | category | sedan, sports, SUV, convertible, coupe, electric, Estate, hatchback
+famous_car_models | famous car models | in car types | category | Beetle, Corolla, Corvette, Mini, Mustang, Tin Lizzie, Camaro, Civic
+driving_words | driving words | in cars | category | brake, test, park, speeding, steer, accelerate, hazard lights, honk
+motor_racing | motor racing | in cars | category | checkered flag, F1, Formula 1, Grand Prix, pit stop, pole position, lap, NASCAR
+famous_race_tracks | famous race tracks | in motor racing | place | Indianapolis, Monaco, Monza, Silverstone, Spa-Francorchamps, Daytona, Green Hell, Le Mans
+gas_station | gas station | in cars | category | nozzle, pump, service station, convenience store, diesel, fill up, gasoline, unleaded
+car_accessories | car accessories | in cars | category | floor mat, GPS, seat cover, air freshener, bumper sticker, child seat, dash cam, fuzzy dice
+things_inside_the_cabin | car interior items | in cars | category | steering wheel, dashboard, seat belt, speedometer, airbag, glove box, odometer, rearview mirror
+public_transportation | public transportation | in Travel & Transport | category | bus, bus station, bus stop, school bus, subway, train, bus pass, coach
+bus_types | bus types | in public transportation | category | city, double-decker, school, coach, minibus, open-top, shuttle, tour
+on_a_bus | on a bus | in public transportation | category | driver, passenger, seat, stop, bell, conductor, fare, rider
+ticket_words | ticket words | in public transportation | category | boarding pass, fare, one-way, round-trip, ticket, booth, day pass, e-ticket
+commuting_words | commuting words | in public transportation | category | commute, commuter, delay, rush hour, station, cancelled, carpool, gridlock
+cable_cars_and_lifts | cable cars and lifts | in public transportation | category | cable car, chairlift, gondola, aerial tram, funicular, San Francisco cable car, ski gondola, T-bar
+air_travel | air travel | in Travel & Transport | category | airline, airplane, airport, boarding pass, carry-on, check-in, flight, flight attendant
+aircraft_types | aircraft types | in air travel | category | airliner, airplane, fighter jet, helicopter, jet, plane, biplane, bomber
+plane_parts | plane parts | in air travel | category | cockpit, jet engine, landing gear, propeller, tail, wing, cabin, fuselage
+airport_words | airport words | in air travel | category | arrivals, boarding, boarding pass, check-in, departures, gate, luggage, runway
+flight_crew | flight crew | in air travel | category | attendant, captain, co-pilot, pilot, air traffic controller, airline pilot, first officer, stewardess
+airlines | airlines | in air travel | category | Air France, American, British Airways, Delta, Emirates, United, Air Canada, easyJet
+european_airlines | european airlines | in airlines | category | Air France, British Airways, Lufthansa, easyJet, KLM, Ryanair, Virgin Atlantic, Aer Lingus
+asian_airlines | asian airlines | in airlines | category | Cathay Pacific, JAL, Sia, Air China, Air India, AirAsia, Korean Air, Malaysia
+middle_eastern_airlines | middle eastern airlines | in airlines | category | Emirates, Qatar Airways, EgyptAir, El Al, Etihad, Turkish, FlyDubai, Gulf Air
+airlines_of_the_americas | airlines of the americas | in airlines | category | Delta, United, Air Canada, Southwest, Alaska, Hawaiian, JetBlue, Pan Am
+low_cost_airlines | low-cost airlines | in airlines | category | easyJet, Ryanair, Southwest, JetBlue, Frontier, Spirit, Wizz Air, Allegiant
+flying_machines | flying machines | in air travel | category | airplane, helicopter, hot air balloon, jet, plane, aircraft, balloon, cargo plane
+famous_airports | famous airports | in air travel | place | Heathrow, JFK, LAX, Changi, Charles de Gaulle, Dubai International, Gatwick, Kennedy
+in_flight_words | in-flight words | in air travel | category | overhead bin, seatbelt sign, tray table, turbulence, air sickness bag, airline meal, airplane food, aisle seat
+in_case_of_trouble | in-flight precautions | in in-flight words | category | seatbelt sign, air sickness bag, emergency exit, life jacket, oxygen mask, safety demonstration, crash position, emergency row
+places_you_can_sit | places to sit on a plane | in in-flight words | category | aisle seat, business class, economy class, first class, middle seat, window seat, emergency row, exit row
+aircraft_makers | aircraft makers | in air travel | category | Airbus, Boeing, Cessna, Embraer, Lockheed, Lockheed Martin, Antonov, BAE Systems
+hot_air_balloon_parts | hot air balloon parts | in air travel | category | basket, burner, envelope, hot air, propane, wicker, cables, crew
+boats_and_ships | boats and ships | in Travel & Transport | category | anchor, boat, captain, sail, sailboat, ship, yacht, canoe
+boat_types | boat types | in boats and ships | category | canoe, ferry, kayak, motorboat, rowboat, sailboat, speedboat, trawler
+small_boats | small boats | in boat types | category | canoe, dinghy, kayak, rowboat, inflatable, punt, raft, rubber dinghy
+sailing_ships | sailing ships | in boat types | category | galleon, tall ship, clipper, Mayflower, Santa Maria, schooner, brig, caravel
+working_boats | working boats | in boat types | category | cargo ship, container ship, fishing, tanker, tugboat, barge, ferry, freighter
+traditional_boats | traditional boats | in boat types | category | gondola, junk, Viking ship, dugout, kayak, longboat, longship, sampan
+pleasure_boats | pleasure boats | in boat types | category | motor yacht, motorboat, sailboat, speedboat, yacht, cabin cruiser, catamaran, dinghy
+ship_parts | ship parts | in boats and ships | category | anchor, bow, deck, hull, mast, porthole, sail, stern
+sailing_words | sailing words | in boats and ships | category | capsize, ahoy, anchor, crew, helm, knot, mainsail, moor
+sailing_actions | sailing actions | in sailing words | category | capsize, tack, heel, hoist, reef, furl, jibe, trim
+gear_above_the_deck | sailboat gear above deck | in sailing words | category | mainsail, spinnaker, boom, jib, rigging, Genoa, sheet, halyard
+ports_and_harbors | ports and harbors | in boats and ships | category | dock, harbor, harbor master, moor, pier, breakwater, buoy, crane
+famous_ships | famous ships | in boats and ships | category | Mayflower, Santa Maria, Titanic, Ark, Black Pearl, Bounty, Cutty Sark, Flying Dutchman
+ocean_liners | ocean liners | in famous ships | category | Titanic, Lusitania, Britannic, Carpathia, Costa Concordia, Queen Elizabeth 2, Queen Mary, Andrea Doria
+exploration_ships | exploration ships | in famous ships | category | Mayflower, Santa Maria, Golden Hind, HMS Beagle, Nina, Pinta, Endeavour, Endurance
+knots | knots | in boats and ships | category | reef, shoelace, square, bow, bowline, clove hitch, double, figure eight
+famous_canals | famous canals | in boats and ships | place | Panama, Suez, Grand Canal, Caledonian, Corinth, Erie, Grand Union, Kiel
+ship_crew | ship crew | in boats and ships | category | captain, first mate, sailor, seaman, bosun, cabin boy, deckhand, helmsman
+submarine_words | submarine words | in boats and ships | category | periscope, torpedo, conning tower, Nautilus, sonar, depth charge, minisub, sail
+wind_powered_vessels | wind-powered vessels | in boats and ships | category | sailboat, yacht, catamaran, clipper, galleon, junk, schooner, dhow
+human_powered_craft | human-powered craft | in boats and ships | category | canoe, kayak, rowboat, dinghy, gondola, raft, coracle, longboat
+trains | trains | in Travel & Transport | category | conductor, engine, locomotive, platform, railroad, Shinkansen, station, steam engine
+train_types | train types | in trains | category | bullet, passenger, steam, commuter, diesel, electric, express, freight
+parts_of_a_train | parts of a train | in trains | category | engine, locomotive, cab, caboose, passenger car, railcar, whistle, boiler
+railway_words | railway words | in trains | category | line, track, signal, tunnel, derailment, junction, main line, railroad crossing
+station_words | station words | in trains | category | departures board, platform, arrivals board, mind the gap, schedule, clock, terminus, ticket booth
+famous_trains | famous trains | in trains | category | Flying Scotsman, Orient Express, Thomas the Tank Engine, Eurostar, Hogwarts Express, Polar Express, Trans-Siberian, Chattanooga Choo Choo
+high_speed_trains | high-speed trains | in famous trains | category | bullet, Eurostar, TGV, Acela, ICE, maglev, AVE, Frecciarossa
+famous_locomotives | famous locomotives | in famous trains | category | Flying Scotsman, Rocket, Thomas, Big Boy, Mallard, City of Truro, Gordon, Locomotion No 1
+famous_train_stations | famous train stations | in trains | place | Grand Central, King's Cross, Gare du Nord, Grand Central Terminal, Paddington, Penn, Penn, St Pancras
+railroad_jobs | railroad jobs | in trains | category | conductor, engineer, locomotive engineer, ticket collector, locomotive driver, porter, station master, brakeman
+bikes_and_boards | bikes and boards | in Travel & Transport | folder
+bicycle_parts | bicycle parts | in bikes and boards | category | bike tire, brakes, chain, frame, handlebars, pedal, spokes, bell
+bike_types | bike types | in bikes and boards | category | bicycle, MTB, road, BMX, electric, folding, penny-farthing, racing
+motorcycle_brands | motorcycle brands | in bikes and boards | category | Harley, Harley-Davidson, Honda, Kawasaki, Yamaha, BMW, Ducati, Suzuki
+motorcycle_types | motorcycle types | in bikes and boards | category | custom chopper, dirt bike, moped, motor scooter, cruiser, motocross bike, sport bike, trike
+cycling_races | cycling races | in bikes and boards | category | Giro, Giro d'Italia, Tour de France, Vuelta a Espana, Paris-Roubaix, Tour of Flanders, Il Lombardia, Liege-Bastogne-Liege
+cycling_words | cycling words | in bikes and boards | category | cyclist, flat tire, peloton, yellow jersey, breakaway, polka dot jersey, stage, time trial
+skateboard_tricks | skateboard tricks | in bikes and boards | category | kickflip, ollie, air, grind, heelflip, pop shove-it, shove-it, 180
+ledge_tricks | skateboard ledge tricks | in skateboard tricks | category | grind, 5-0, 50-50, boardslide, nosegrind, noseslide, tailslide, blunt
+tricks_where_the_board_spins | tricks where the board spins | in skateboard tricks | category | kickflip, heelflip, pop shove-it, shove-it, 360 flip, bigspin, hardflip, impossible
+scooters_and_skates | scooters and skates | in bikes and boards | category | roller skates, scooter, skateboard, skates, ice, kick scooter, Razor, rollerblades
+motorcycle_parts | motorcycle parts | in bikes and boards | category | engine, fuel tank, handlebars, disc brake, drive chain, exhaust pipe, headlight, kickstand
+skate_park_features | skate park features | in bikes and boards | category | half pipe, quarter pipe, ramp, grind rail, halfpipe, ledge, mini ramp, rail
+skateboard_parts | skateboard parts | in bikes and boards | category | deck, skateboard wheels, truck, bearings, board, grip tape, axle, bushings
+journeys | journeys | in Travel & Transport | category | road trip, tour, trip, voyage, cruise, day trip, drive, excursion
+kinds_of_travelers | kinds of travelers | in journeys | category | backpacker, tourist, commuter, explorer, globetrotter, hitchhiker, passenger, vacationer
+travel_verbs | travel verbs | in journeys | category | arrive, depart, travel, board, embark, journey, set off, tour
+famous_routes | famous routes | in journeys | place | Mother Road, Oregon Trail, Silk Road, Appalachian Trail, Camino de Santiago, Inca Trail, Pacific Coast Highway, Pan-American Highway
+animal_powered_travel | animal-powered travel | in journeys | category | camel, horse and buggy, horse and cart, horse-drawn carriage, horseback, camel caravan, covered wagon, dog sled
+giving_directions | giving directions | in journeys | category | go straight, straight ahead, turn left, turn right, u-turn, first exit, first right, keep going
+road_trip_words | road trip words | in journeys | category | gas station, highway, motel, playlist, rest stop, snacks, are we there yet, detour
+road_trip_games | road trip games | in journeys | category | alphabet game, I spy, license plate, twenty questions, bingo, car bingo, count the cows, guess the song
+holiday_travel | holiday travel | in journeys | category | cruise, excursion, outing, getaway, jaunt, mini-break, safari, gap year
+arduous_trips | arduous trips | in journeys | category | expedition, trek, odyssey, pilgrimage, hajj, long haul, quest, hegira
+accommodation | accommodation | in Travel & Transport | category | bed and breakfast, hostel, hotel, motel, Airbnb, B&B, guesthouse, inn
+hotel | hotel | in accommodation | category | check-in, check-out, housekeeping, keycard, lobby, reception, room key, room service
+hotel_staff | hotel staff | in accommodation | category | concierge, housekeeper, manager, receptionist, bellboy, bellhop, chambermaid, chef
+vacation_homes | vacation homes | in accommodation | category | beach house, cabin, chalet, cottage, lake house, log cabin, rental, second home
+famous_hotels | famous hotels | in accommodation | category | Plaza, Ritz, Waldorf Astoria, Bellagio, Burj Al Arab, Caesars Palace, Raffles, Savoy
+hotel_chains | hotel chains | in accommodation | category | Hilton, Holiday Inn, Hyatt, Marriott, Best Western, Four Seasons, Premier Inn, Radisson
+traditional_lodgings | traditional lodgings | in accommodation | category | ryokan, yurt, igloo, inn, riad, tipi, wigwam, caravanserai
+campsite | campsite | in Travel & Transport | category | campfire, campground, firewood, flashlight, lantern, marshmallow, matches, sleeping bag
+camping_gear | camping gear | in campsite | category | camp stove, campfire, flashlight, lantern, sleeping bag, tent, backpack, bug spray
+tent_parts | tent parts | in campsite | category | door, peg, pole, flysheet, inner tent, stake, flap, vestibule
+tent_types | tent types | in campsite | category | dome, backpacking, bell, family, pop-up, ridge, teepee, tipi
+campfire_foods | campfire foods | in campsite | category | hot dog, marshmallow, s'mores, bacon, baked beans, baked potato, burgers, cocoa
+survival_skills | survival skills | in campsite | category | finding water, fire starting, first aid, shelter building, foraging, map reading, navigation, staying warm
+rvs_and_campers | rvs and campers | in campsite | category | motorhome, RV, van, Kombi, trailer, travel trailer, Winnebago, Airstream
+cooking_and_drinking_gear | outdoor cooking and drinking gear | in campsite | category | camp stove, canteen, cooler, mess kit, Thermos, billy can, Dutch oven, spork
+outdoors | outdoors | in Travel & Transport | folder
+hiking_gear | hiking gear | in outdoors | category | backpack, boots, map, water bottle, compass, daypack, first aid kit, rain jacket
+trail_words | trail words | in outdoors | category | footpath, summit, trailhead, cairn, switchback, waymarker, ascent, blaze
+outdoor_activities | outdoor activities | in outdoors | category | camping, cycling, fishing, hiking, rock climbing, skiing, backpacking, bird watching
+national_parks | national parks | in outdoors | folder
+african_national_parks | african national parks | in national parks | place | Kruger, Serengeti, Masai Mara, Ngorongoro, Tsavo, Amboseli, Chobe, Etosha
+famous_hiking_trails | famous hiking trails | in outdoors | place | Appalachian, Inca, Pacific Crest, Camino de Santiago, Everest Base Camp, Tour du Mont Blanc, Annapurna Circuit, Camino Frances
+climbing_gear | climbing gear | in outdoors | category | carabiner, harness, rock shoes, rope, belay device, chalk, helmet, quickdraw
+safari_words | safari words | in outdoors | category | big five, elephant, game drive, leopard, lion, rhinoceros, binoculars, buffalo
+african_landscape | african landscape | in safari words | category | savanna, watering hole, acacia, baobab, bush, Okavango Delta, donga, kopje
+southern_african_words | southern african words | in safari words | category | kraal, spoor, sundowner, boma, donga, kopje, marula, rondavel
+packing | packing | in Travel & Transport | folder
+luggage | luggage | in packing | category | carry-on, suitcase, backpack, briefcase, cabin bag, duffel bag, hand luggage, overnight bag
+things_to_pack | things to pack | in packing | category | clothes, jacket, pajamas, passport, phone charger, shoes, socks, sunscreen
+travel_documents | travel documents | in packing | category | boarding pass, passport, ticket, visa, driver's license, e-ticket, ID card, booking confirmation
+toiletries | toiletries | in packing | category | deodorant, razor, shampoo, soap, toothbrush, toothpaste, conditioner, hairbrush
+beach_gear | beach gear | in packing | category | beach ball, bucket, flip-flops, sand toys, sunglasses, sunscreen, swimsuit, towel
+souvenirs | souvenirs | in packing | category | keychain, magnet, postcard, T-shirt, key ring, mug, shot glass, snow globe
+japanese_souvenirs | japanese souvenirs | in souvenirs | category | chopsticks, green tea, kimono, Kit Kat, lucky cat, maneki-neko, manga, matcha
+mexican_souvenirs | mexican souvenirs | in souvenirs | category | sombrero, tequila, lucha libre mask, maracas, pinata, silver jewelry, sugar skull, alebrije
+moroccan_souvenirs | moroccan souvenirs | in souvenirs | category | argan oil, lantern, tagine, Berber carpet, fez, leather bag, leather pouf, leather slippers
+travel_accessories | travel accessories | in packing | category | earplugs, eye mask, neck pillow, adapter, travel pillow, luggage lock, luggage tag, packing cubes
+vacations | vacations | in Travel & Transport | folder
+beach_vacation | beach vacation | in vacations | category | deck chair, flip-flops, parasol, sandcastle, seashell, sunbathing, sunscreen, swimming
+ski_trip | ski trip | in vacations | category | chairlift, piste, resort, ski, poles, slope, boots, chalet
+cruise_words | cruise words | in vacations | category | cabin, deck, ship, buffet, captain, dock, life jacket, lifeboat
+cruise_lines | cruise lines | in cruise words | category | Carnival, Royal Caribbean, Cunard, Disney, Norwegian, Princess, Celebrity, Costa
+sightseeing_words | sightseeing words | in vacations | category | guided tour, sights, sightseeing, tour, tourist, day trip, excursion, guidebook
+tourist_attractions | tourist attractions | in vacations | category | museum, zoo, amusement park, cathedral, Ferris wheel, gallery, historic site, lighthouse
+famous_theme_parks | famous theme parks | in vacations | place | Disneyland, Walt Disney World, Disneyland Paris, Legoland, Magic Kingdom, Universal Studios, Alton Towers, Cedar Point
+beach_destinations | beach destinations | in vacations | place | Bali, Hawaii, Bondi, Cancun, Copacabana, Ibiza, Majorca, Maldives
+island_getaways | island getaways | in beach destinations | place | Bali, Hawaii, Ibiza, Majorca, Maldives, Phuket, Bahamas, Barbados
+famous_stretches_of_sand | famous stretches of sand | in beach destinations | place | Bondi, Copacabana, Waikiki, Ipanema, Malibu, Venice Beach, Myrtle Beach, Whitehaven Beach
+american_holiday_spots | american holiday spots | in beach destinations | place | Hawaii, Miami, Waikiki, Daytona, Malibu, Maui, Venice Beach, Key West
+famous_ski_resorts | famous ski resorts | in vacations | place | Vail, Whistler, Aspen, Chamonix, Davos, St. Moritz, Val d'Isère, Zermatt
+special_vehicles | special vehicles | in Travel & Transport | category | ambulance, bulldozer, digger, dump truck, fire truck, garbage truck, police car, snowplow
+emergency_vehicles | emergency vehicles | in special vehicles | category | ambulance, fire truck, police car, air ambulance, cop car, lifeboat, patrol car, rescue boat
+construction_vehicles | construction vehicles | in special vehicles | category | bulldozer, crane, digger, dump truck, excavator, backhoe, cement mixer, concrete mixer
+farm_vehicles | farm vehicles | in special vehicles | category | combine, tractor, John Deere, plough, ATV, baler, crop duster, crop sprayer
+military_vehicles | military vehicles | in special vehicles | category | fighter jet, submarine, tank, warship, Abrams, aircraft carrier, battleship, bomber
+naval_vessels | naval vessels | in military vehicles | category | submarine, warship, aircraft carrier, battleship, cruiser, destroyer, frigate, U-boat
+military_aircraft | military aircraft | in military vehicles | category | fighter jet, bomber, stealth bomber, warplane, Apache, Black Hawk, Chinook, helicopter gunship
+army_ground_vehicles | army ground vehicles | in military vehicles | category | tank, Abrams, APC, armored car, Humvee, main battle tank, Panzer, personnel carrier
+delivery_vehicles | delivery vehicles | in special vehicles | category | van, cargo van, mail truck, moving truck, parcel truck, pizza delivery car, UPS truck, Amazon van
+space_vehicles | space vehicles | in special vehicles | category | rocket, shuttle, spacecraft, spaceship, Apollo, ISS, Mars rover, satellite
+horse_drawn_vehicles | horse-drawn vehicles | in special vehicles | category | carriage, stagecoach, wagon, buggy, cart, chariot, coach, covered wagon
+truck_types | truck types | in special vehicles | category | delivery, dumper, fire engine, garbage, wrecker, big rig, cement mixer, concrete
+electric_vehicles | electric vehicles | in special vehicles | category | car, electric vehicle, Tesla, Tesla Model 3, bike, charging station, e-bike, e-scooter
+battery_powered_cars | battery-powered cars | in electric vehicles | category | Tesla Model 3, Nissan Leaf, Tesla Model S, Cybertruck, Audi e-tron, BMW i3, Chevy Bolt, F-150 Lightning
+types_of_public_transport | types of public transport | in Travel & Transport | category | bus, ferry, subway, taxi, train, cab, streetcar, auto rickshaw
+modes_of_transport | modes of transport | in Travel & Transport | category | aircraft, airplane, bike, boat, bus, car, plane, train

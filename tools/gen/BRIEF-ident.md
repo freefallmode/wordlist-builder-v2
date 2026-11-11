@@ -2,6 +2,8 @@
 
 The game shows a player four words and asks them to work out what links them (the theme). Identifiability (`ident`) is how easily a player works out the theme from four of its members. It is a property of the theme, judged separately from how hard the words are: assume the words shown are easy ones. Do not rate how popular or appealing the theme is.
 
+A theme tied to one country or culture (a country's sweets, clubs, cities) is rated for a general US or UK adult, not for a local; see tools/gen/BRIEF-regtag.md.
+
 ## The scale
 1. **Obvious.** Any four members point straight at the theme: colors, farm animals, fruits, kitchen tools.
 2. **Clear.** The theme is specific and natural; most players name it from three or four words: musical instruments, card games, chess pieces.

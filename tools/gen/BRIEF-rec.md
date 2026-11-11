@@ -14,7 +14,7 @@ Listing lines: `<id> | <text> [<meaning label>] | <type> | rec <current> | <up t
 Rules:
 - Rate what a typical adult actually knows, not how important the thing is. Be conservative: between two ratings pick the harder one.
 - A name is rated as the name: `Washington [state]` and `Washington [person]` are different entries with their own ratings.
-- Regional names (a UK or Australian TV show, a US state park) are rated for a general player of this game, so they are usually harder than for locals.
+- Regional names (a UK or Australian TV show, a US state park) are rated for a general player of this game, so they are usually harder than for locals. Words of a theme tied to one country (indian sweets, NHL teams) get the same treatment: see tools/gen/BRIEF-regrec.md.
 - Change a rating only when you are confident it is wrong by at least one step. Leave everything else out of the file: most lines will be fine.
 - Do not change anything else (text, labels, themes).
 
