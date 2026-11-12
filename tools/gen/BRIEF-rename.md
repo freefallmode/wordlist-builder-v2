@@ -7,7 +7,7 @@ Your chunk (`tools/gen/rename/list-<n>.txt`, n in your task) lists themes: `id |
 - **R** the name needs its parent (or is too vague, ambiguous, or misleading for its words): give a better name that describes the members by itself.
 
 ## Rules for a new name
-1. Short, lowercase, plural noun phrase like the existing names (`big cats`, `rain words`, `police equipment`); keep wordplay/language themes in their style (`words that start with ...`).
+1. Short, plural noun phrase like the existing names, lowercase except proper nouns and acronyms (`US states`, `African food`, `TV genres`; `big cats`, `rain words`, `police equipment`); keep wordplay/language themes in their style (`words that start with ...`).
 2. Say what the members are, not where they sit: bring the needed word from the parent into the name (`equipment` under police words -> `police equipment`).
 3. **The name must not give the members away**: no name word may appear in a member (rule of the library: `tomato things` for tomato soup is a leak; `police equipment` is fine unless a member is `police baton`). If the needed word would leak into members, choose a different word or `K`. A member that is only the name's head noun is fine (`bug` in `garden bugs`).
 4. Do not merge or duplicate: the new name must differ from every other theme name (names in your listing and the paths show many; if two themes would end with the same name, make the names tell them apart by what they hold).

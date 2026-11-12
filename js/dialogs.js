@@ -30,9 +30,9 @@ function themePicker(placeholder, { groups = true } = {}) {
   const P = A.P, id = 'tl' + listSeq++;
   const list = h('datalist', { id });
   const byName = new Map();
-  for (const t of P.themes) { if (!groups && t.group) continue; byName.set(t.name, t.id); list.append(h('option', { value: t.name }, pathOf(P, t.id).slice(0, -1).join(' > '))); }
+  for (const t of P.themes) { if (!groups && t.group) continue; byName.set(t.name.toLowerCase(), t.id); list.append(h('option', { value: t.name }, pathOf(P, t.id).slice(0, -1).join(' > '))); }
   const input = h('input', { list: id, placeholder });
-  return { node: h('span.picker', {}, input, list), input, get: () => byName.get(input.value.trim()) || null };
+  return { node: h('span.picker', {}, input, list), input, get: () => byName.get(input.value.trim().toLowerCase()) || null };
 }
 
 // ---------- theme ----------
