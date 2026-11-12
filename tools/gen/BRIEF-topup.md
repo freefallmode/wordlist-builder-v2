@@ -16,3 +16,6 @@ Do not list two words for the same answer in one theme as if they were separate 
 
 ## Long words get line-break points afterwards
 See the last section of `tools/gen/BRIEF-depth3.md`: words of 8+ letters get hyphenation points in a follow-up pass that `apply-words.mjs` reminds the user to run; nothing to add to your module.
+
+## Kinds themes: full term, shown short
+In a "kinds of X" theme (eagles, sharks, cakes, hats, seals) the member is the FULL term as an entry (`bald eagle`, `tiger shark`, `red velvet cake`). If the short word identifies the kind on its own, the link gets a `show` of that short word (`bald`, `tiger`, `red velvet`). Never add the bare short word as its own entry just for this theme (a stub `bald` or `tiger` linked only to eagles or sharks): its part of speech, rating and meaning would describe a different thing, and the game cannot show the full term. The exception is a short word that really is how people name the thing and the full term is not used (`husky`, `panama`, `harpy`): keep that as the entry. See DESIGN-entries.md 3.6 and `tools/gen/BRIEF-shortmem.md`.
