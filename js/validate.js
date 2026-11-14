@@ -2,6 +2,7 @@
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
 import { eff, difficultyBand, linkIds, themeStats, pathOf, sameText, themeLocked, ALIAS_KINDS } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
+import { caseLint } from './caselint.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
 const NAME_STOP = new Set(('a an and or the of in on at to for from with by as is are that this these those your my our their its words word names name types type kinds kind famous common things thing parts part ' +

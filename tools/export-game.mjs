@@ -6,6 +6,7 @@ import { parseProject } from '../js/store.js';
 import { reindex } from '../js/model.js';
 import { buildExport, PRESETS } from '../js/export.js';
 import { parseFreq, setFreq } from '../js/freq.js';
+import { caseLint } from '../js/caselint.js';
 import { parseBreaks, setBreaks } from '../js/breaks.js';
 const preset = process.argv[2] || 'family', out = process.argv[3] || 'data/export/wordlist-game-family.json';
 if (!PRESETS[preset]) { console.error('No preset ' + preset + '. Presets: ' + Object.keys(PRESETS).join(', ')); process.exit(2); }
@@ -17,3 +18,4 @@ fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, JSON.stringify(file));
 console.log(`${out}: ${(fs.statSync(out).size / 1e6).toFixed(1)} MB, library v${P.lib.version}, ${report.themesOut} themes, ${report.entriesOut} entries`);
 for (const n of report.notes) console.log(' ', n);
+{ const c = caseLint(P).filter(i => i.kind !== 'cap-common'); console.log(`  case lint: ${c.length} issue${c.length === 1 ? '' : 's'} (capital or sense mismatches; see js/caselint.js)`); if (process.argv.includes('--strict') && c.length) process.exit(1); }
