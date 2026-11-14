@@ -1,7 +1,7 @@
 [
  {
-  "id": "fruits",
-  "name": "fruits",
+  "id": "berries",
+  "name": "berries",
   "kind": "capitalised among lowercase",
   "odd": [
    "BlackBerry"
@@ -11,69 +11,14 @@
   ]
  },
  {
-  "id": "vegetables",
-  "name": "vegetables",
+  "id": "black_and_white_animals",
+  "name": "black and white animals",
   "kind": "capitalised among lowercase",
   "odd": [
-   "Green"
+   "Holstein"
   ],
   "twin": [
-   "green"
-  ]
- },
- {
-  "id": "sea_life",
-  "name": "sea life",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Killer"
-  ],
-  "twin": [
-   "killer"
-  ]
- },
- {
-  "id": "sea_mammals",
-  "name": "sea mammals",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Killer"
-  ],
-  "twin": [
-   "killer"
-  ]
- },
- {
-  "id": "fast_animals",
-  "name": "fast animals",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Killer"
-  ],
-  "twin": [
-   "killer"
-  ]
- },
- {
-  "id": "deciduous_trees",
-  "name": "deciduous trees",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Lime"
-  ],
-  "twin": [
-   "lime"
-  ]
- },
- {
-  "id": "tree_parts",
-  "name": "tree parts",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Bud"
-  ],
-  "twin": [
-   "bud"
+   "holstein"
   ]
  },
  {
@@ -88,25 +33,14 @@
   ]
  },
  {
-  "id": "flower_parts",
-  "name": "flower parts",
+  "id": "foraging_finds",
+  "name": "foraging finds",
   "kind": "capitalised among lowercase",
   "odd": [
-   "Bud"
+   "BlackBerry"
   ],
   "twin": [
-   "bud"
-  ]
- },
- {
-  "id": "poisonous_plants",
-  "name": "poisonous plants",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Hemlock"
-  ],
-  "twin": [
-   "hemlock"
+   "blackberry"
   ]
  },
  {
@@ -121,14 +55,25 @@
   ]
  },
  {
-  "id": "city_demonyms",
-  "name": "city demonyms",
-  "kind": "lowercase among capitalised",
+  "id": "thorny_plants",
+  "name": "thorny plants",
+  "kind": "capitalised among lowercase",
   "odd": [
-   "neapolitan"
+   "BlackBerry"
   ],
   "twin": [
-   "Neapolitan"
+   "blackberry"
+  ]
+ },
+ {
+  "id": "river_features",
+  "name": "river features",
+  "kind": "capitalised among lowercase",
+  "odd": [
+   "Ford"
+  ],
+  "twin": [
+   "ford"
   ]
  },
  {
@@ -165,28 +110,6 @@
   ]
  },
  {
-  "id": "car_brands",
-  "name": "car brands",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "ford"
-  ],
-  "twin": [
-   "Ford"
-  ]
- },
- {
-  "id": "american_car_brands",
-  "name": "American car brands",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "ford"
-  ],
-  "twin": [
-   "Ford"
-  ]
- },
- {
   "id": "public_transportation",
   "name": "public transportation",
   "kind": "capitalised among lowercase",
@@ -209,28 +132,6 @@
   ]
  },
  {
-  "id": "trains",
-  "name": "trains",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Shinkansen"
-  ],
-  "twin": [
-   "shinkansen"
-  ]
- },
- {
-  "id": "famous_trains",
-  "name": "famous trains",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "shinkansen"
-  ],
-  "twin": [
-   "Shinkansen"
-  ]
- },
- {
   "id": "construction_vehicles",
   "name": "construction vehicles",
   "kind": "capitalised among lowercase",
@@ -239,28 +140,6 @@
   ],
   "twin": [
    "bobcat"
-  ]
- },
- {
-  "id": "hair_colors",
-  "name": "hair colors",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Raven"
-  ],
-  "twin": [
-   "raven"
-  ]
- },
- {
-  "id": "eye_parts",
-  "name": "eye parts",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "White"
-  ],
-  "twin": [
-   "white"
   ]
  },
  {
@@ -294,17 +173,6 @@
   ],
   "twin": [
    "shellac"
-  ]
- },
- {
-  "id": "old_time_jobs",
-  "name": "old-time jobs",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Iceman"
-  ],
-  "twin": [
-   "iceman"
   ]
  },
  {
@@ -385,17 +253,6 @@
   ]
  },
  {
-  "id": "antique_furniture",
-  "name": "antique furniture",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Secretary"
-  ],
-  "twin": [
-   "secretary"
-  ]
- },
- {
   "id": "western_wear",
   "name": "western wear",
   "kind": "capitalised among lowercase",
@@ -404,30 +261,6 @@
   ],
   "twin": [
    "wrangler"
-  ]
- },
- {
-  "id": "shoes",
-  "name": "shoes",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Court"
-  ],
-  "twin": [
-   "court"
-  ]
- },
- {
-  "id": "wedding_anniversaries",
-  "name": "wedding anniversaries",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Topaz",
-   "Amethyst"
-  ],
-  "twin": [
-   "topaz",
-   "amethyst"
   ]
  },
  {
@@ -453,28 +286,6 @@
   ]
  },
  {
-  "id": "golf_terms",
-  "name": "golf terms",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Clubhouse"
-  ],
-  "twin": [
-   "clubhouse"
-  ]
- },
- {
-  "id": "golf_course_features",
-  "name": "golf course features",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Clubhouse"
-  ],
-  "twin": [
-   "clubhouse"
-  ]
- },
- {
   "id": "rowing_words",
   "name": "rowing words",
   "kind": "capitalised among lowercase",
@@ -483,39 +294,6 @@
   ],
   "twin": [
    "henley"
-  ]
- },
- {
-  "id": "famous_racehorses",
-  "name": "famous racehorses",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "man o' war"
-  ],
-  "twin": [
-   "Man o' War"
-  ]
- },
- {
-  "id": "photography_words",
-  "name": "photography words",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Instant"
-  ],
-  "twin": [
-   "instant"
-  ]
- },
- {
-  "id": "medieval_pastimes",
-  "name": "medieval pastimes",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Skittles"
-  ],
-  "twin": [
-   "skittles"
   ]
  },
  {
@@ -563,17 +341,6 @@
   ]
  },
  {
-  "id": "stars",
-  "name": "stars",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "sun"
-  ],
-  "twin": [
-   "Sun"
-  ]
- },
- {
   "id": "algebra_words",
   "name": "algebra words",
   "kind": "capitalised among lowercase",
@@ -582,39 +349,6 @@
   ],
   "twin": [
    "foil"
-  ]
- },
- {
-  "id": "file_types",
-  "name": "file types",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "midi"
-  ],
-  "twin": [
-   "Midi"
-  ]
- },
- {
-  "id": "sound_and_video_formats",
-  "name": "audio and video file formats",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "midi"
-  ],
-  "twin": [
-   "Midi"
-  ]
- },
- {
-  "id": "hidden_body_parts",
-  "name": "hidden body parts",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "China"
-  ],
-  "twin": [
-   "china"
   ]
  },
  {
@@ -662,14 +396,14 @@
   ]
  },
  {
-  "id": "starts_with_a_bird",
-  "name": "starts with a bird",
+  "id": "starts_with_a_color",
+  "name": "starts with a color",
   "kind": "capitalised among lowercase",
   "odd": [
-   "Hawker"
+   "BlackBerry"
   ],
   "twin": [
-   "hawker"
+   "blackberry"
   ]
  },
  {
@@ -684,39 +418,6 @@
   ]
  },
  {
-  "id": "boys_names",
-  "name": "boys' names",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "jack"
-  ],
-  "twin": [
-   "Jack"
-  ]
- },
- {
-  "id": "biblical_names",
-  "name": "Biblical names",
-  "kind": "lowercase among capitalised",
-  "odd": [
-   "john"
-  ],
-  "twin": [
-   "John"
-  ]
- },
- {
-  "id": "shades_of_black",
-  "name": "shades of black",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Raven"
-  ],
-  "twin": [
-   "raven"
-  ]
- },
- {
   "id": "blue_green_shades",
   "name": "blue-green shades",
   "kind": "capitalised among lowercase",
@@ -728,39 +429,6 @@
   ]
  },
  {
-  "id": "jewel_tones",
-  "name": "jewel tones",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Bordeaux"
-  ],
-  "twin": [
-   "bordeaux"
-  ]
- },
- {
-  "id": "colors_named_after_animals",
-  "name": "colors named after animals",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Raven"
-  ],
-  "twin": [
-   "raven"
-  ]
- },
- {
-  "id": "tiny_things",
-  "name": "tiny things",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Dot"
-  ],
-  "twin": [
-   "dot"
-  ]
- },
- {
   "id": "things_that_spin",
   "name": "things that spin",
   "kind": "capitalised among lowercase",
@@ -769,17 +437,6 @@
   ],
   "twin": [
    "earth"
-  ]
- },
- {
-  "id": "ways_to_jump",
-  "name": "ways to jump",
-  "kind": "capitalised among lowercase",
-  "odd": [
-   "Star"
-  ],
-  "twin": [
-   "star"
   ]
  }
 ]
