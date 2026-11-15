@@ -36,8 +36,9 @@ Groups:
 
 Follow mainstream dictionary usage (Merriam-Webster, Oxford, Collins) for the sense given by the meaning label and the themes.
 - **Where dictionaries capitalise, or disagree, or give both forms: `P`, keep the capital.** The library already writes `French toast`, `Danish pastry`,
-  `Turkish delight`, `Brussels sprouts`, `Swiss cheese`, so `french fries`, `irish stew`, `persian cat`, `bermuda shorts`, `brazil nut`, `easter egg`
-  become `P`.
+  `Turkish delight`, `Brussels sprouts`, `Swiss cheese`, so `french fries`, `irish stew`, `persian cat`, `bermuda shorts`, `easter egg`
+  become `P`. (One exception by the owner's own decision of 2026-11-14: `brazil nut` and `brazil nut tree` stay lowercase. The first run of this
+  pass capitalised them because this brief then listed `brazil nut` as a `P` example; they were restored at v372.)
 - **`C` only where dictionaries agree on lowercase** because the word has stopped being felt as a name in that phrase: `venetian blind`, `manila folder`,
   `china clay`, `plaster of paris`, `morocco leather`, `alpine skiing`, `italic type`, `roman type`. (`French kiss` is not one of these: dictionaries
   capitalise it.) If you are not sure dictionaries agree on lowercase, it is `P`.

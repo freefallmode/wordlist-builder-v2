@@ -2,10 +2,11 @@
 // the proper-word review confirmed (tools/gen/propword-apply.mjs wrote the second part; add a word by hand when a new one turns up).
 // The case lint (js/caselint.js, kind lower-proper-word) flags a lowercase entry typed common or phrase that contains one of them: french fries,
 // yorkshire terrier. Lowercase here; a word that is also an ordinary word (china, turkey, savannah) does not belong in the list.
+// Not in the list on purpose: brazil (Simon decided on 2026-11-14 that brazil nut is written with a lowercase b).
 export const PROPER_WORDS = new Set(`
 achilles advent african alaska alaskan albanian aleppo algerian alpine amazon american andean angelus anna antarctic arabian arabic argentine
 argentinian armenian asian australian austrian aztec balinese bavarian belgian benedict bengal bengali berber bermuda bohemian bolivian bolognese
-bombay boston brazil brazilian breton british brunswick brussels bulgarian burmese byzantine cajun california californian cambodian canadian cantonese
+bombay boston brazilian breton british brunswick brussels bulgarian burmese byzantine cajun california californian cambodian canadian cantonese
 caribbean carolina castile catalan celtic chelsea chilean chinese christmas cobb colombian colorado congo cornish corsican covid creole cretan
 croatian cuban cumberland cypriot czech danish delaware denver devon diana doppler dover dracula dutch easter egyptian english eskimo ethernet
 ethiopian eton european filipino finnish flemish florentine foley fremantle french frisbee gaelic galapagos genovese georgian german ghanaian gila
