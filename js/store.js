@@ -12,16 +12,29 @@ function idb() {
     r.onerror = () => rej(r.error);
   });
 }
+// One connection per transaction, closed when it settles. An aborted transaction (quota exceeded) fires onabort, not always onerror, so both reject.
 async function kv(mode, fn) {
   const db = await idb();
   return new Promise((res, rej) => {
-    const tx = db.transaction('kv', mode), st = tx.objectStore('kv'), rq = fn(st);
-    tx.oncomplete = () => res(rq && rq.result);
-    tx.onerror = () => rej(tx.error);
+    const fail = e => { db.close(); rej(e || Error('Browser storage transaction failed.')); };
+    let tx, rq;
+    try { tx = db.transaction('kv', mode); rq = fn(tx.objectStore('kv')); } catch (e) { try { tx && tx.abort(); } catch {} return fail(e); }
+    const val = r => Array.isArray(r) ? r.map(val) : r && r.result;
+    tx.oncomplete = () => { db.close(); res(val(rq)); };
+    tx.onerror = () => fail(tx.error);
+    tx.onabort = () => fail(tx.error || Error('Browser storage write was aborted.'));
   });
 }
-export const loadLocal = async () => { try { const s = await kv('readonly', st => st.get('project')); return s ? parseProject(s) : null; } catch { return null; } };
-export const saveLocal = P => kv('readwrite', st => st.put(serializeProject(P), 'project'));
+// The project text and the dirty flag (differs from the last project file) are written in one transaction so they cannot disagree.
+// loadLocal: null when nothing is stored; { P, dirty } when it reads; throws when something is stored but cannot be read,
+// with err.raw = the stored text when it was read but would not parse. A record from before the flag existed counts as dirty.
+export async function loadLocal() {
+  const [s, d] = await kv('readonly', st => [st.get('project'), st.get('dirty')]);
+  if (s === undefined || s === null) return null;
+  try { return { P: parseProject(s), dirty: d === undefined ? true : !!d }; }
+  catch (e) { throw Object.assign(Error('The library stored in this browser could not be read: ' + e.message), { raw: typeof s === 'string' ? s : undefined }); }
+}
+export const saveLocal = (P, dirty) => { const s = serializeProject(P); return kv('readwrite', st => [st.put(s, 'project'), st.put(!!dirty, 'dirty')]); };
 
 // ---------- file format ----------
 
@@ -49,7 +62,9 @@ export function parseProject(text) {
   P.settings = Object.assign(newProject().settings, j.project.settings);
   P.themes = j.themes.map(({ geo, kind, ...t }) => t);
   P.entries = j.entries.map(e => Object.assign(entryDefaults(), e));
-  P.nextId = Math.max(P.nextId || 1, ...P.entries.map(e => e.id + 1), 1);
+  let n = Math.max(P.nextId || 1, 1);
+  for (const e of P.entries) if (e.id + 1 > n) n = e.id + 1;   // a loop, not Math.max(...entries): spreading overflows the stack above ~120,000 entries
+  P.nextId = n;
   return P;
 }
 
@@ -68,6 +83,7 @@ export function pickFile(accept) {
     const i = document.createElement('input');
     i.type = 'file'; i.accept = accept;
     i.onchange = async () => res(i.files[0] ? { name: i.files[0].name, text: await i.files[0].text() } : null);
+    i.oncancel = () => res(null);   // otherwise a dialog button that picks a file stays disabled after Cancel
     i.click();
   });
 }

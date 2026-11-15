@@ -1,7 +1,7 @@
 // App shell: loading, the theme tree, the theme view, file actions.
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
-import { parseOutline, formatOutline } from './outline.js';
+import { parseOutline, formatOutline, mergeOutline } from './outline.js';
 import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, nowStamp, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
@@ -15,9 +15,10 @@ const VERSION = '2';
 
 // ---------- change handling ----------
 
-let savedAt = '';
+let savedAt = '', held = null;   // held: the error when the library stored in the browser could not be read; autosave writes nothing until the user chooses (unreadable())
 const autosave = debounce(async () => {
-  try { await saveLocal(A.P); savedAt = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); } catch { savedAt = 'failed'; }
+  if (held) return renderStatus();
+  try { await saveLocal(A.P, A.dirty); savedAt = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); } catch { savedAt = 'failed'; }
   renderStatus();
 }, 700);
 
@@ -25,7 +26,7 @@ A.changed = () => { reindex(A.P); A.dirty = true; autosave(); render(); };
 A.render = keep => render(keep);
 
 function renderStatus() {
-  $('#save').textContent = (A.dirty ? 'Unsaved to file · ' : 'File saved · ') + (savedAt === 'failed' ? 'autosave failed' : savedAt ? 'autosaved ' + savedAt : '');
+  $('#save').textContent = (A.dirty ? 'Unsaved to file · ' : 'File saved · ') + (held ? 'autosave off: browser copy unreadable (click for choices)' : savedAt === 'failed' ? 'autosave failed' : savedAt ? 'autosaved ' + savedAt : '');
   const P = A.P, themes = P.themes.filter(t => !t.group).length;
   $('#lib').textContent = `library v${P.lib.version} · ${P.lib.modified} · ${themes.toLocaleString()} themes · ${P.entries.length.toLocaleString()} words (${P.entries.filter(e => e.enabled).length.toLocaleString()} enabled)`;
 }
@@ -409,17 +410,6 @@ async function loadSkeleton() {
   return P;
 }
 
-function mergeOutline(text) {
-  const P = A.P, { themes, errors } = parseOutline(text);
-  let added = 0, changed = 0;
-  for (const n of themes) {
-    const o = P.ix.theme.get(n.id);
-    if (!o) { P.themes.push(n); added++; } else { Object.assign(o, n); changed++; }
-  }
-  sortDepthFirst(P); reindex(P);
-  return { added, changed, errors };
-}
-
 const menuItem = (label, fn) => h('button.mi', { onclick: ev => { ev.target.closest('details').open = false; fn(); } }, label);
 
 // The starter library shipped with the app (data/wordlist-en.project.json). Used when the browser holds no library, and offered when it is newer than the one in the browser.
@@ -447,13 +437,39 @@ Cancel keeps yours; you will not be asked again for this version.`)) {
   } else { try { localStorage.setItem('wlb2-starter-declined', String(S.lib.version)); } catch {} }
 }
 
+// Throws on a file that is not a project; the caller shows the message.
+function openProject(f) {
+  const P = parseProject(f.text);
+  A.P = P; reindex(P); A.sel = null; A.dirty = false; held = null; autosave(); render(); toast('Opened ' + f.name);
+}
+
+// The browser holds a library that could not be read (DESIGN.md section 7: nothing replaces it unless the user chooses). Autosave stays off until
+// the user opens a project file or chooses the library on screen (the starter); the stored text, when it was read, can be downloaded first.
+function unreadable() {
+  const raw = held.raw;
+  return dialog('Browser library could not be read', h('div', {},
+    h('p', held.message),
+    h('p', 'The copy stored in this browser has not been changed. Autosave is off, so it stays that way until you choose: the starter library is shown meanwhile and edits to it are not saved to the browser.'),
+    raw ? h('p', `The stored text (${raw.length.toLocaleString()} characters) can be downloaded so it can be repaired or kept.`) : h('p', 'Reloading the page tries to read it again.')), [
+    raw && { label: 'Download stored text', action: () => { download('wordlist-browser-copy.project.json', raw); return false; } },
+    { label: 'Keep autosave off', primary: true },
+    { label: 'Open project file…', action: async () => { const f = await pickFile('.json'); if (!f) return false; openProject(f); } },
+    { label: 'Use the starter library', action: () => {
+      if (!confirm('Replace the library stored in this browser with the one on screen? The stored copy is lost; this cannot be undone.')) return false;
+      held = null; autosave(); render(); toast('Autosave is on again.');
+    } },
+  ].filter(Boolean));
+}
+
 async function boot() {
   $('#version').textContent = 'v' + VERSION;
-  let P = await loadLocal();
+  let P = null, dirty = false;
+  try { const L = await loadLocal(); if (L) ({ P, dirty } = L); } catch (e) { held = e; console.error(e); }
   const fresh = !P || !P.themes.length;
-  if (fresh) P = (await fetchStarter()) || await loadSkeleton();
-  A.P = P; reindex(P);
-  if (fresh) autosave();
+  if (fresh) { P = (await fetchStarter()) || await loadSkeleton(); dirty = false; }
+  A.P = P; A.dirty = dirty; reindex(P);
+  if (fresh) autosave();   // writes nothing while held
+  $('#save').onclick = () => { if (held) unreadable(); };
   loadFreq().then(() => A.render()).catch(() => toast('Frequency list did not load (serve the folder over http).', true));
   $('#search').addEventListener('input', debounce(ev => { A.search = ev.target.value; renderTree(); }, 120));
   $('#btn-checks').onclick = showValidation;
@@ -492,11 +508,12 @@ async function boot() {
     }),
     menuItem('Open project file…', async () => {
       const f = await pickFile('.json'); if (!f) return;
-      try { A.P = parseProject(f.text); reindex(A.P); A.sel = null; A.dirty = false; autosave(); render(); toast('Opened ' + f.name); } catch (e) { toast(e.message, true); }
+      try { openProject(f); } catch (e) { toast(e.message, true); }
     }),
     menuItem('Import theme outline…', async () => {
       const f = await pickFile('.txt'); if (!f) return;
-      const r = mergeOutline(f.text); A.changed();
+      const r = mergeOutline(A.P, f.text);
+      if (r.added || r.changed) { sortDepthFirst(A.P); A.changed(); }
       toast(`${r.added} themes added, ${r.changed} updated` + (r.errors.length ? `; ${r.errors.length} problems (see console)` : ''), r.errors.length > 0); if (r.errors.length) console.warn(r.errors);
     }),
     menuItem('Export theme outline', () => download('themes.txt', formatOutline(A.P.themes), 'text/plain')),
@@ -506,7 +523,7 @@ async function boot() {
     }));
   render();
   A.checkStarter = offerStarterUpdate;
-  if (!fresh) offerStarterUpdate();
+  if (held) unreadable(); else if (!fresh) offerStarterUpdate();
 }
 
 boot().catch(e => { document.body.append(h('pre.fatal', String(e && e.stack || e))); console.error(e); });

@@ -232,3 +232,60 @@ test('loadFreq fails on an HTTP error or an empty list and leaves the list unloa
     assert.equal(zipf('ice'), 5);
   } finally { globalThis.fetch = realFetch; setFreq(null); }
 });
+
+test('parseProject works out nextId for 200,000 entries without overflowing the stack', () => {
+  const P = newProject();
+  P.themes = parseOutline('fruits\n').themes;
+  P.entries = Array.from({ length: 200000 }, (_, i) => ({ id: i + 1, text: 'w' + i }));
+  P.nextId = 1;
+  const Q = parseProject(serializeProject(P));
+  assert.equal(Q.entries.length, 200000);
+  assert.equal(Q.nextId, 200001);
+});
+
+test('outline [id:] tag: written when the id is not the slug of the name, read back, and used by the children', async () => {
+  const { mergeOutline } = await import('../js/outline.js');
+  const P = project();
+  const dairy = P.themes.find(t => t.id === 'fruits');
+  dairy.name = 'dairy';
+  const text = formatOutline(P.themes);
+  assert.match(text, /^ {2}dairy \[id:fruits\]$/m);
+  assert.ok(!/citrus \[id:/.test(text));
+  const { themes, errors } = parseOutline(text);
+  assert.deepEqual(errors, []);
+  assert.equal(themes.find(t => t.name === 'dairy').id, 'fruits');
+  assert.equal(themes.find(t => t.name === 'citrus').parent, 'fruits');
+  assert.deepEqual(mergeOutline(P, text), { added: 0, changed: 0, errors: [] });
+  assert.equal(P.themes.length, 6);
+  // A line without the tag behaves as before: matched by the slug of its name.
+  assert.equal(parseOutline('dairy\n  milk\n').themes[1].parent, 'dairy');
+});
+
+test('outline merge writes only what differs, counts real changes and leaves fields the outline cannot carry alone', async () => {
+  const { mergeOutline } = await import('../js/outline.js');
+  const P = project(), c = P.themes.find(t => t.id === 'citrus');
+  Object.assign(c, { tkind: 'list', rule: 'r', locked: true, nameOk: ['x'], groups: [['a', 'b']] });
+  delete c.foreign; delete c.ident;
+  const before = structuredClone(c);
+  let r = mergeOutline(P, formatOutline(P.themes));
+  assert.deepEqual([r.added, r.changed], [0, 0]);
+  assert.deepEqual(c, before);   // absent keys stay absent
+  r = mergeOutline(P, formatOutline(P.themes).replace(/^( +)citrus$/m, '$1citrus [pop:2] -- sour'));
+  assert.deepEqual([r.added, r.changed], [0, 1]);
+  assert.deepEqual(c, { ...before, pop: 2, note: 'sour' });
+});
+
+test('outline round trip of the real library changes nothing (format, parse, merge as the app does)', async () => {
+  const { mergeOutline } = await import('../js/outline.js');
+  const { sortDepthFirst } = await import('../js/model.js');
+  const P = parseProject(readFileSync(new URL('../data/wordlist-en.project.json', import.meta.url), 'utf8'));
+  const before = structuredClone(P.themes);
+  const text = formatOutline(P.themes);
+  const r = mergeOutline(P, text);
+  sortDepthFirst(P); reindex(P);
+  assert.deepEqual(r.errors, []);
+  assert.deepEqual([r.added, r.changed], [0, 0]);
+  assert.equal(P.themes.length, before.length);
+  assert.deepEqual(P.themes.map(t => [t.id, t.parent]), before.map(t => [t.id, t.parent]));
+  assert.deepEqual(P.themes, before);
+});

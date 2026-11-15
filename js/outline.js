@@ -11,6 +11,7 @@
 //   [pop:3]                         theme popularity 1 (most popular) to 5 (unrated when absent); [d:n] is an old difficulty tag and is ignored
 //   [ident:3]                       identifiability 1 (obvious) to 5 (obscure), unrated when absent
 //   [region:US,UK]                 only widely known in those regions (audience)
+//   [id:dairy_and_eggs]             the theme's id, written only when it is not the slug of the name (ids stay when a theme is renamed)
 
 
 export function slug(s) {
@@ -46,10 +47,6 @@ export function parseOutline(text) {
     stack.length = Math.min(depth, stack.length);
     const t = newTheme(body, stack.length ? stack[stack.length - 1].id : null);
     t.group = group; t.note = note;
-    let id = t.id, n = 2;
-    while (ids.has(id)) id = t.id + '_' + n++;
-    if (id !== t.id) errors.push(`line ${i + 1}: duplicate name "${body}", id ${id}`);
-    t.id = id; ids.add(id);
     for (const g of tags) {
       if (g === 'place' || g === 'property') continue; // retired tags, ignored
       if (g === 'wordplay') { t.lang = true; continue; } // retired tag: wordplay is language-specific
@@ -65,8 +62,14 @@ export function parseOutline(text) {
       else if (g.startsWith('d:')) continue;   // retired difficulty tag, ignored
       else if (g.startsWith('region:')) t.region = g.slice(7).split(',').map(s => s.trim()).filter(Boolean);
       else if (g.startsWith('geo:')) continue; // retired tag, ignored
+      else if (g.startsWith('id:') && g.slice(3).trim()) t.id = g.slice(3).trim();
       else errors.push(`line ${i + 1}: unknown tag [${g}]`);
     }
+    // After the tags, so an [id:] tag is the id children link to.
+    let id = t.id, n = 2;
+    while (ids.has(id)) id = t.id + '_' + n++;
+    if (id !== t.id) errors.push(`line ${i + 1}: duplicate ${t.id === slug(body) ? 'name' : 'id'} "${t.id === slug(body) ? body : t.id}", id ${id}`);
+    t.id = id; ids.add(id);
     themes.push(t);
     stack.push(t);
   });
@@ -82,8 +85,30 @@ export function formatOutline(themes) {
     if (t.pop) tags.push('pop:' + t.pop);
     if (t.ident) tags.push('ident:' + t.ident);
     for (const [k, v] of [['complete', t.complete], ['adult', t.adult], ['sensitive', t.sensitive], ['trademark', t.tm], ['lang', t.lang], ['foreign', t.foreign], ['off', !t.enabled]]) if (v) tags.push(k);
+    if (t.id !== slug(t.name)) tags.push('id:' + t.id);
     return '  '.repeat(depth(t)) + t.name + (t.group ? ':' : '') + tags.map(g => ' [' + g + ']').join('') + (t.note ? ' -- ' + t.note : '');
   }).join('\n') + '\n';
+}
+
+// Import theme outline: themes are matched by id; a new id is added. On an existing theme only the fields the outline carries are written,
+// and only where they differ (a missing field counts as its default), so tkind, rule, locked, nameOk, groups and absent keys are left alone.
+// A line sets every field it carries: one with no tags resets enabled, pop, ident, the flags and region; no " -- " clears the note.
+// The caller re-sorts (sortDepthFirst) and reindexes. Returns { added, changed, errors }; changed counts themes that really changed.
+const THEME_DEFAULTS = newTheme('');
+export function mergeOutline(P, text) {
+  const { themes, errors } = parseOutline(text), byId = new Map(P.themes.map(t => [t.id, t]));
+  let added = 0, changed = 0;
+  for (const n of themes) {
+    const o = byId.get(n.id);
+    if (!o) { P.themes.push(n); byId.set(n.id, n); added++; continue; }
+    let diff = false;
+    for (const [k, v] of Object.entries(n)) {
+      if (k === 'id' || JSON.stringify(o[k] ?? THEME_DEFAULTS[k]) === JSON.stringify(v)) continue;
+      o[k] = v; diff = true;
+    }
+    if (diff) changed++;
+  }
+  return { added, changed, errors };
 }
 
 export function childrenOf(themes) {

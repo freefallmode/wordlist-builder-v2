@@ -86,10 +86,13 @@ Food & Drink:
     citrus fruits
   months with 30 days [complete] -- April, June, September, November
   rude words [adult] [lang]
-  national dishes [region:UK,US] [d:3]
+  national dishes [region:UK,US] [pop:3] [ident:2]
+  dairy [id:dairy_and_eggs]
 ```
 
-Tags: `[complete] [adult] [sensitive] [trademark] [lang] [off] [d:3] [region:US,UK]`. Retired tags `[geo:..] [place] [property]` are ignored and `[wordplay]` means `[lang]`, so old files still load.
+Tags: `[complete] [adult] [sensitive] [trademark] [lang] [foreign] [off] [pop:3] [ident:2] [region:US,UK] [id:dairy_and_eggs]`. `[pop:n]` is the theme popularity and `[ident:n]` the identifiability, both 1 to 5 and unrated when absent. `[id:...]` gives the theme's id and is written only when the id is not the slug of the name: ids stay when a theme is renamed, and without the tag a renamed theme would be read as a new one. Retired tags `[geo:..] [place] [property] [d:n]` are ignored and `[wordplay]` means `[lang]`, so old files still load.
+
+**Import theme outline** matches themes by id. A new id is added; on an existing theme only the fields the outline carries are written, and only where they differ, so kind, rule, locked, the name-words flag and synonym groups are left alone. Exporting the outline and importing it again changes nothing (a test checks this on the working library). A line sets every field the format carries: a hand-written line with no tags resets that theme to enabled, unrated popularity and identifiability, no flags and no regions, and a line without ` -- ` clears the note, because the format cannot tell "not mentioned" from "cleared".
 
 **What makes a good theme set.** A mixture of general themes (fruits), focused ones (citrus fruits) and complete sets. A word must belong to its theme unambiguously: a thoughtful player must not be able to argue it fits a different, ordinary theme better.
 
@@ -122,9 +125,11 @@ Each issue has a severity (error breaks the model, warn is probably a mistake, i
 
 ## 7. Storage and file formats
 
-**Autosave** goes to the browser (IndexedDB, database `wordlist-builder-v2`, key `project`), debounced, with a status line ("Unsaved to file · autosaved 18:42"). **File ▾ → Save project file** downloads the project JSON and **bumps `lib.version` and `lib.modified`** (the library's own change counter); it does nothing if nothing changed. **Open project file** loads one. Other File items: Import theme outline, Export theme outline, Reset to the starter theme tree.
+**Autosave** goes to the browser (IndexedDB, database `wordlist-builder-v2`, key `project`), debounced, with a status line ("Unsaved to file · autosaved 18:42"). Whether the browser copy differs from the last project file is stored with it (key `dirty`, written in the same transaction), so "Unsaved to file" survives a reload; a copy stored before that key existed counts as unsaved. **File ▾ → Save project file** downloads the project JSON and **bumps `lib.version` and `lib.modified`** (the library's own change counter); it does nothing if nothing changed. **Open project file** loads one. Other File items: Import theme outline, Export theme outline, Reset to the starter theme tree.
 
 **Starter library.** `data/wordlist-en.project.json` is the library shipped with the app. On start: if the browser holds no library (or one with no themes) the starter is loaded and autosaved; if it holds one and the starter has the same language and a higher `lib.version`, the app asks once whether to open it (replacing the browser copy, with a reminder to save a file first); Cancel remembers that version in localStorage (`wlb2-starter-declined`) so it is not asked again. If the starter file is missing it falls back to the empty outline `data/themes.txt`. Nothing else ever replaces the browser library without the user choosing Open project file or Reset.
+
+**A browser copy that cannot be read** (storage fails to open, or the stored text does not parse) is never treated as "no library". The starter is shown, autosave is switched off so the stored copy stays as it is, and a dialog says what happened and offers: download the stored text (when it could be read), keep autosave off, open a project file, or go on with the starter (asks again, then replaces the stored copy). The status line says autosave is off and reopens the dialog when clicked. Autosave comes back only through the last two choices.
 
 **Project file** (`wordlist-en.project.json`): `{"project":{schema, lang, lib, nextId, settings},"themes":[...],"entries":[...]}` with one JSON record per line; entry fields equal to their default are left out; retired theme fields (`geo`, `kind`) are dropped on read and write.
 
