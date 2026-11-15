@@ -397,3 +397,12 @@ test('case lint style-capital: a style word shown with a capital in a theme of s
   reindex(P);
   assert.deepEqual(caseLint(P).filter(i => i.kind === 'style-capital').map(i => P.ix.entry.get(i.entryId).text).sort(), ['Art Deco', 'Gothic']);
 });
+
+test('case lint checks a link an alias holds itself (B22), not the links it only inherits from its root', async () => {
+  const { caseLint } = await import('../js/caselint.js');
+  const P = project();
+  const r = addEntry(P, 'ladybug', { fam: 1, typ: { fruits: 1 } });
+  addEntry(P, 'ladybird', { fam: 1, aliasOf: r.id, aliasKind: 'regional', region: ['UK'], typ: { citrus: 2 }, show: { citrus: 'Lady', fruits: 'Lady' } });
+  reindex(P);
+  assert.deepEqual(caseLint(P).map(i => [i.kind, i.themeId, P.ix.entry.get(i.entryId).text]), [['cap-common', 'citrus', 'ladybird']]);
+});

@@ -8,6 +8,7 @@ import { PROPER_WORDS, LOWER_OK, STYLE_WORDS } from './caselint-words.js';
 
 const PROPER = new Set(['person', 'place', 'org', 'title', 'proper']);
 const isProper = e => PROPER.has(e.type) || !!e.tm;
+const own = tid => e => !e.aliasOf || e.typ[tid] != null;   // the theme's members: roots, and aliases that hold a link of their own there (B22); an alias that only inherits its root's link is the same word
 const startsCap = s => /^\p{Lu}/u.test(s);
 export const initialism = s => /^\p{Lu}{2,}[a-z]?$/u.test(s) || /^\p{L}-\p{L}/u.test(s) && /^\p{Lu}-/u.test(s) || /^\p{Lu}[\d-]/u.test(s);   // GI, MIDI, MPs, X-ray, T-bar, B6
 const norm = s => s.toLowerCase();
@@ -21,7 +22,7 @@ export function caseLint(P) {
   for (const a of P.entries) if (a.aliasOf && (a.aliasKind === 'regional' || a.aliasKind === 'spelling') && a.region && a.region.length) hasUkAlias.set(a.aliasOf, true);
   for (const t of P.themes) {
     if (t.group) continue;
-    const members = (ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf);
+    const members = (ix.byTheme.get(t.id) || []).filter(own(t.id));
     if (!members.length) continue;
     const textOf = e => (e.show && e.show[t.id]) || e.text;
     const caps = members.filter(e => startsCap(textOf(e))).length, share = caps / members.length;
@@ -58,7 +59,7 @@ export function caseLint(P) {
   const stems = w => new Set([w, w.replace(/s$/, ''), w.replace(/ies$/, 'y')]);   // pies -> pie, berries -> berry
   const STOP = new Set(['and', 'of', 'the', 'in', 'for', 'with', 'things', 'kinds', 'types', 'words', 'names', 'a', 'to']);
   for (const e of P.entries) {
-    if (e.aliasOf || isProper(e) || e.type === 'acronym' || /\s/.test(e.text) || !startsCap(e.text) || initialism(e.text) || !e.typ) continue;
+    if (isProper(e) || e.type === 'acronym' || /\s/.test(e.text) || !startsCap(e.text) || initialism(e.text) || !e.typ) continue;
     for (const tid of Object.keys(e.typ)) {
       const t = ix.theme.get(tid); if (!t || t.group || e.show?.[tid]) continue;
       const ws = t.name.toLowerCase().split(/[^a-z]+/).filter(w => w && !STOP.has(w));
@@ -85,7 +86,7 @@ export function nameThemeCommons(P) {
   const res = [];
   for (const t of P.themes) {
     if (t.group || !/\bnames?\b/i.test(t.name)) continue;
-    const ms = (P.ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf); if (ms.length < 8) continue;
+    const ms = (P.ix.byTheme.get(t.id) || []).filter(own(t.id)); if (ms.length < 8) continue;
     const share = ms.filter(e => isProper(e)).length / ms.length; if (share < 0.8) continue;
     for (const e of ms) if (!isProper(e) && e.type !== 'acronym' && e.type !== 'phrase') res.push([t, e, share]);
   }
