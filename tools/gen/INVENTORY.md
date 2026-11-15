@@ -124,6 +124,7 @@ BATCH by family: level-2 root batch (<root>.mjs): 14; d3-*: 67; d45-*: 25; easy/
 | bare-apply.mjs | 2026-11-05 v288 | 2026-11-06 | doc: ENTRIES v283-288 |
 | bare-sample.mjs | 2026-11-05 v288 | 2026-11-06 | doc: ENTRIES v283-288 |
 | batch375.mjs | 2026-11-15 v375 | 2026-11-15 | ISSUES.md T1, B23, B14 (data); added after this inventory; rerunnable, prints 0 changes when the library is right; details in batch375-changes.txt |
+| batch376.mjs | 2026-11-15 v376 | 2026-11-15 | ISSUES.md T15 (high list of t15-candidates.txt, 102 entries capitalised and typed proper) and T18 (Composite lowercase); added after this inventory; rerunnable, prints 0 changes when the library is right; details and exclusions in batch376-changes.txt |
 | capmark-apply.mjs | 2026-11-15 v363-365 | 2026-11-15 | DESIGN-entries names the family by glob (tools/gen/capmark-*.mjs); no exact-name mention |
 | capmark-fix.mjs | 2026-11-15 v363-365 | 2026-11-15 | doc: ENTRIES; named in scripts: g:capmark-fix2.mjs |
 | capmark-fix2.mjs | 2026-11-15 v363-365 | 2026-11-15 | DESIGN-entries names the family by glob (tools/gen/capmark-*.mjs); no exact-name mention |
