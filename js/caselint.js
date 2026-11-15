@@ -4,7 +4,7 @@
 // Returns issues { kind, msg, themeId, entryId }; the kinds are listed below. validate() adds each as a warning of kind `case-<kind>`; the export prints the count.
 import { themeLocked } from './model.js';
 import { CASE_OK } from './caselint-allow.js';
-import { PROPER_WORDS, LOWER_OK } from './caselint-words.js';
+import { PROPER_WORDS, LOWER_OK, STYLE_WORDS } from './caselint-words.js';
 
 const PROPER = new Set(['person', 'place', 'org', 'title', 'proper']);
 const isProper = e => PROPER.has(e.type) || !!e.tm;
@@ -27,6 +27,7 @@ export function caseLint(P) {
     const caps = members.filter(e => startsCap(textOf(e))).length, share = caps / members.length;
     const wordplay = t.tkind === 'wordplay' || t.tkind === 'compound' || themeLocked(P, t);
     const properShare = members.filter(isProper).length / members.length;
+    const styleTheme = /\b(styles?|movements?|genres?)$/i.test(t.name);
     for (const e of members) {
       const shown = textOf(e), cap = startsCap(shown), sh = e.show && e.show[t.id];
       // 1. the capital disagrees with the entry's own proper/common mark
@@ -34,6 +35,8 @@ export function caseLint(P) {
         if (cap && !isProper(e) && e.type !== 'acronym' && e.type !== 'phrase') add('cap-common', `"${shown}" is shown with a capital in "${t.name}" but "${e.text}" is not marked as a proper noun (type ${e.type}).`, t, e);
         if (!cap && startsCap(e.text) && isProper(e) && !wordplay && members.length >= 8 && share >= 0.8) add('lower-proper', `"${shown}" is shown lowercase in "${t.name}" but "${e.text}" is a ${e.type || 'trademark'} name.`, t, e);
       }
+      // 1b. the style rule: a style or movement name is lowercase unless its word is only ever a name (gothic, baroque, art deco; but Victorian, Tudor)
+      if (styleTheme && cap && STYLE_WORDS.has(norm(shown.split(/\s+/)[0]))) add('style-capital', `"${shown}" is shown with a capital in "${t.name}", but "${norm(shown.split(/\s+/)[0])}" is lowercase as the name of a style or movement (js/caselint-words.js, STYLE_WORDS; allow the link if the capital is intended).`, t, e);
       // 2. wrong sense: a proper entry in a theme of common words (or the reverse) while an entry of the same spelling with the other mark exists
       if (members.length >= 8 && !wordplay) {
         const twins = (byText.get(norm(e.text)) || []).filter(x => x !== e && x.text !== e.text);

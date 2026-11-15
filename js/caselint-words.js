@@ -2,15 +2,16 @@
 // the proper-word review confirmed (tools/gen/propword-apply.mjs wrote the second part; add a word by hand when a new one turns up).
 // The case lint (js/caselint.js, kind lower-proper-word) flags a lowercase entry typed common or phrase that contains one of them: french fries,
 // yorkshire terrier. Lowercase here; a word that is also an ordinary word (china, turkey, savannah) does not belong in the list.
-// Not in the list on purpose: brazil (Simon decided on 2026-11-14 that brazil nut is written with a lowercase b).
+// Not in the list on purpose: brazil (Simon decided on 2026-11-14 that brazil nut is written with a lowercase b); gothic and byzantine (style
+// words, lowercase by the style rule below).
 export const PROPER_WORDS = new Set(`
 achilles advent african alaska alaskan albanian aleppo algerian alpine amazon american andean angelus anna antarctic arabian arabic argentine
 argentinian armenian asian australian austrian aztec balinese bavarian belgian benedict bengal bengali berber bermuda bohemian bolivian bolognese
-bombay boston brazilian breton british brunswick brussels bulgarian burmese byzantine cajun california californian cambodian canadian cantonese
+bombay boston brazilian breton british brunswick brussels bulgarian burmese cajun california californian cambodian canadian cantonese
 caribbean carolina castile catalan celtic chelsea chilean chinese christmas cobb colombian colorado congo cornish corsican covid creole cretan
 croatian cuban cumberland cypriot czech danish delaware denver devon diana doppler dover dracula dutch easter egyptian english eskimo ethernet
 ethiopian eton european filipino finnish flemish florentine foley fremantle french frisbee gaelic galapagos genovese georgian german ghanaian gila
-gilead gladstone gloucester gothic greek greenland guatemalan haitian hanuman harlem havana hawaiian hebrew hercules himalayan hindu hokkien hungarian
+gilead gladstone gloucester greek greenland guatemalan haitian hanuman harlem havana hawaiian hebrew hercules himalayan hindu hokkien hungarian
 icelandic incan india indian indonesian iranian iraqi irish ironman islamic israeli italian jamaican japan japanese javanese jenga jerusalem jewish
 jordanian june kenyan kiev kirby korean kurdish lapita larry latin lebanese lebanon leicester lhasa libyan lincoln lincolnshire linzer lithuanian
 maasai maat maine malaysian maltese manx maori martenot maui mayan mccoy mediterranean melba melbourne mentos mexican miranda mongolian moorish
@@ -35,9 +36,7 @@ export const LOWER_OK = new Set([
   56521, // alpine rose
   5362, // alpine skiing
   45105, // alpine start
-  11994, // byzantine art (lowercase among the art movements by Simon's decision of 2026-11-15)
   23914, // furniture polish
-  11993, // gothic art (as byzantine art)
   39077, // gum arabic
   3751, // nail polish
   16244, // nail polish remover
@@ -49,3 +48,14 @@ export const LOWER_OK = new Set([
   55234, // venetian blind
   23506, // venetian blinds
 ]);
+
+// The style rule: the name of a style, movement or school is lowercase; a word in it keeps a capital only when English has that word only as a
+// name or the adjective of a name (Victorian, Tudor, Palladian, Greek, Moorish, Romanesque, Bauhaus). These are the words that are also ordinary
+// lowercase words and therefore lowercase as style names, even where they began as a name. The case lint (kind style-capital) flags one of them
+// shown with a capital as the first word of a member of a theme of styles, movements or genres. The period of the same name is a name and keeps
+// its capital in themes of periods (the Renaissance, the Baroque, the Regency).
+export const STYLE_WORDS = new Set(`
+art baroque beaux-arts brutalism brutalist byzantine classical colonial craftsman dada dadaism deconstructivism empire gothic international
+mid-century mission modern modernism modernist neoclassical neoclassicism perpendicular postmodern postmodernism prairie regency renaissance rococo
+streamline
+`.split(/\s+/).filter(Boolean));

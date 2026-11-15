@@ -3,7 +3,7 @@
 // are already right, so it can be run again after a later pass as a check.
 //   brazil nut, brazil nut tree   decided 2026-11-14 (commit 501dda4, v357); restored at v372. `brazil` is kept out of PROPER_WORDS.
 //   gothic art, byzantine art     decided 2026-11-15: in "art movements" they are lowercase like cubism and surrealism; restored at v373.
-//                                 Both ids are in LOWER_OK (js/caselint-words.js), since gothic and byzantine are capitalised elsewhere.
+//                                 Since v374 this is what the style rule gives for every style name (tools/gen/style-case.mjs holds them too).
 // Run: node tools/gen/propword-exceptions.mjs [--apply]
 import fs from 'node:fs';
 import { parseProject, serializeProject, stampSave } from '../../js/store.js';

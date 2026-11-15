@@ -326,3 +326,16 @@ test('case lint lower-proper-word: a lowercase phrase with a nationality word is
   try { assert.deepEqual(caseLint(P).filter(i => i.kind === 'lower-proper-word').map(i => i.entryId), LOWER_OK.has(a.id) ? [] : [a.id]); }
   finally { if (added) LOWER_OK.delete(b.id); }
 });
+
+test('case lint style-capital: a style word shown with a capital in a theme of styles is flagged, a name is not', async () => {
+  const { caseLint } = await import('../js/caselint.js');
+  const P = newProject();
+  P.themes = parseOutline('Things:\n  building styles\n  historical periods\n').themes;
+  addEntry(P, 'Gothic', { type: 'proper', fam: 2, typ: { building_styles: 2 } });
+  addEntry(P, 'Art Deco', { type: 'proper', fam: 2, typ: { building_styles: 2 } });
+  addEntry(P, 'baroque', { fam: 3, typ: { building_styles: 3 } });
+  addEntry(P, 'Victorian', { type: 'proper', fam: 2, typ: { building_styles: 2 } });
+  addEntry(P, 'Renaissance', { type: 'proper', fam: 2, typ: { historical_periods: 1 } });   // the period, in a theme of periods
+  reindex(P);
+  assert.deepEqual(caseLint(P).filter(i => i.kind === 'style-capital').map(i => P.ix.entry.get(i.entryId).text).sort(), ['Art Deco', 'Gothic']);
+});

@@ -47,9 +47,10 @@ Follow mainstream dictionary usage (Merriam-Webster, Oxford, Collins) for the se
 - Dishes and drinks named after a place or person keep it: `Irish stew`, `Cobb salad`, `Brunswick stew`, `Black Forest cake`, `eggs Benedict`.
 - A word that only looks like a name is not one: `wild`, `death`, `traffic`, `lady`, `lunar`, `southern`, `sergeant`, `matter`, `tool` in ordinary
   phrases are `K`. Compass and season words are lowercase unless part of a real place name.
-- Styles, periods and movements: a named historical period or style keeps its capital (`Byzantine art`, `Gothic architecture`, `Victorian house`,
-  `Roman numerals`); a generic style word does not (`colonial` as a loose description, `gothic` for the music subculture). If the list gives no way to
-  tell which is meant, use `?`.
+- Styles and movements are lowercase (rule of 2026-11-15, after this pass; `tools/gen/style-case.mjs`): `gothic`, `byzantine art`, `baroque`, `colonial`,
+  `art deco`. A word in the name keeps a capital only when English has it only as a name or the adjective of a name (`Victorian house`,
+  `Greek revival`, `Moorish`, `Romanesque`). A historical period is a name and keeps its capital (`the Renaissance`, `Roman numerals` is not a style).
+  The first run of this pass followed the opposite line here (`Byzantine art`, `Gothic architecture`); those were put back.
 - Trademarks: if the capital belongs to a brand name the entry is not flagged for (`Frisbee`, `Jacuzzi`), use `X` with the note `trademark`.
 - Do not change spelling, hyphens, spaces or accents. `P` and `C` may change only the case of letters. If the spelling itself is wrong, use `X`.
 
