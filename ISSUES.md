@@ -89,11 +89,11 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 
 ## No longer needed
 
-- **U1** `open` Dead AI code: `rateThemes`, `RATE_SCHEMA`, `THEME_SCALE`; no button calls them and they ask for the retired theme `d` (js/ai.js:128-135). *seen*
-- **U2** `open` Unused imports. app.js: descendants, nowStamp, entryDefaults. dialogs.js: `$`, TYPICALITY_HELP, linkIds, difficultyBand, eff, themeLocked, descendants, PRESETS, SPREADS. export.js: REGIONS, freqLoaded. (validate.js: removed 2026-11-15.) *run (script and grep)*
-- **U3** `open` Exports nothing uses: model.js `rootOf`, `wordDifficulty`, `linkEntry`, `unlinkEntry`; dom.js `$$`, `option`; the `onopen` option of `dialog()`; `A.checkStarter`. *run (script and grep)*
-- **U4** `open` CSS for elements that no longer exist: `.groups` and its two child rules, `.arrow`, `.row.nowrap` (style.css:79, :106, :146-148). *read*
-- **U5** `open` Dead expression `Math.max(0, i - 0)` in tools/brk-merge.mjs:22. (The `&& false` in js/caselint.js was removed 2026-11-15.) *read*
+- **U1** `fixed 2026-11-15` (rateThemes, RATE_SCHEMA and THEME_SCALE removed; IDENT_SCALE and its comment, which still names rateThemes, are left because they are not listed) Dead AI code: `rateThemes`, `RATE_SCHEMA`, `THEME_SCALE`; no button calls them and they ask for the retired theme `d` (js/ai.js:128-135). *seen*
+- **U2** `open` (partly done 2026-11-15: the unused imports were removed except app.js descendants, dialogs.js TYPICALITY_HELP and PRESETS, export.js REGIONS, which are used) Unused imports. app.js: descendants, nowStamp, entryDefaults. dialogs.js: `$`, TYPICALITY_HELP, linkIds, difficultyBand, eff, themeLocked, descendants, PRESETS, SPREADS. export.js: REGIONS, freqLoaded. (validate.js: removed 2026-11-15.) *run (script and grep)*
+- **U3** `open` (partly done 2026-11-15: all removed except `unlinkEntry`, which dialogs.js and the tests use) Exports nothing uses: model.js `rootOf`, `wordDifficulty`, `linkEntry`, `unlinkEntry`; dom.js `$$`, `option`; the `onopen` option of `dialog()`; `A.checkStarter`. *run (script and grep)*
+- **U4** `fixed 2026-11-15` CSS for elements that no longer exist: `.groups` and its two child rules, `.arrow`, `.row.nowrap` (style.css:79, :106, :146-148). *read*
+- **U5** `fixed 2026-11-15` Dead expression `Math.max(0, i - 0)` in tools/brk-merge.mjs:22. (The `&& false` in js/caselint.js was removed 2026-11-15.) *read*
 - **U6** `open` Compatibility code with nothing left to read: the `geo`/`kind` strip (js/store.js:38, :50; 0 themes have them), retired outline tags (js/outline.js:54-67; only data/old-themes.txt has them), export mode `only` (the screen cannot choose it). Cheap, and needed only to open old files: keep or drop is a decision. *read*
 - **U7** `open` Spent one-off tools: tools/migrate-pop.mjs and tools/retype-phrases.mjs change nothing on v366 but still bump the version and rewrite the file if run; tools/convert-tree.mjs and data/old-themes.txt are kept as a record; tools/pilot.mjs (T3); tools/game/ (T9). *run*
 - **U8** `open` tools/gen: see the section below (G1, G2, G5, G6).

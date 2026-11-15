@@ -1,14 +1,14 @@
 // Dialogs: theme, entry, bulk add, generate, validation, export, settings.
-import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
+import { h, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
-import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, difficultyBand, eff,
-  FLAG_HELP, pathOf, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, themeLocked, descendants } from './model.js';
+import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex,
+  FLAG_HELP, pathOf, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } from './export.js';
 import { download } from './store.js';
-import { MODELS, getKey, setKey, getModel, setModel, generateWords, SPREADS } from './ai.js';
+import { MODELS, getKey, setKey, getModel, setModel, generateWords } from './ai.js';
 
 const FAMILIARITY_OPTS = FAMILIARITY_HELP.map((l, i) => [i, l]);
 const TYPICALITY_OPTS = [[0, 'auto'], ...TYPICALITY_HELP.slice(1).map((l, i) => [i + 1, l])];

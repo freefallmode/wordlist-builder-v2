@@ -60,8 +60,6 @@ export function reindex(P) {
   return ix;
 }
 
-export const rootOf = (P, e) => (e.aliasOf && P.ix.entry.get(e.aliasOf)) || e;
-
 // Theme ids an entry belongs to: its own links, plus its root's when it is an alias.
 export function linkIds(P, e) {
   if (!e.aliasOf) return Object.keys(e.typ);
@@ -88,7 +86,6 @@ export const blendRatings = (a, b) => {
   const hi = Math.max(a || 0, b || 0), lo = Math.min(a || 0, b || 0);
   return !hi ? 0 : !lo ? hi : round1(DIFF_WEIGHT * hi + (1 - DIFF_WEIGHT) * lo);
 };
-export const wordDifficulty = (P, e, tid) => blendRatings(e.fam, typicality(P, e, tid));
 // A theme's difficulty: its identifiability, moved up or down by popularity (1 most popular ... 5 least) by at most 1: ident + 0.5 x (pop - 3), kept between 1 and 5, one decimal.
 // 0 when identifiability is unrated; identifiability alone when popularity is.
 export const themeDifficulty = t => !t.ident ? 0 : !t.pop ? t.ident : round1(Math.min(5, Math.max(1, t.ident + 0.5 * (t.pop - 3))));
@@ -162,7 +159,6 @@ export function dialectMember(P, e) {
 
 // ---------- edits ----------
 
-export function linkEntry(P, e, tid, typ = 0) { e.typ[tid] = typ; }
 // Rewrites the synonym groups of theme t through fix (which returns the group itself when it has nothing to change); a changed group left with fewer than two members goes.
 function editGroups(t, fix) {
   if (!t?.groups) return;

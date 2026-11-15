@@ -5,7 +5,7 @@
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
 import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, POS, TYPES, REGIONS } from './model.js';
-import { zipf, freqLoaded } from './freq.js';
+import { zipf } from './freq.js';
 import { isNameWord } from './validate.js';
 import { breakPoints } from './breaks.js';
 

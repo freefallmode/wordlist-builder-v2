@@ -76,7 +76,7 @@ th, td { text-align: left; padding: 3px 8px; border-bottom: 1px solid var(--line
 th { font-size: 12px; color: var(--dim); font-weight: 600; background: var(--bg); } th.sortable { cursor: pointer; } th.on { color: var(--text); }
 td.on, th.on { width: 70px; white-space: nowrap; }
 td.word { cursor: pointer; font-weight: 500; } td.word:hover { text-decoration: underline; }
-.gloss, .arrow { color: var(--dim); font-weight: 400; } .dim { color: var(--dim); font-size: 12px; }
+.gloss { color: var(--dim); font-weight: 400; } .dim { color: var(--dim); font-size: 12px; }
 tr.alias td.word { padding-left: 22px; font-weight: 400; } tr.off { opacity: .45; }
 .rs { padding: 1px 2px; width: 64px; } .rs.r1 { background: var(--r1); } .rs.r2 { background: var(--r2); } .rs.r3 { background: var(--r3); } .rs.r4 { background: var(--r4); } .rs.r5 { background: var(--r5); } .rs.r0 { color: var(--dim); }
 .diffcell { display: inline-block; min-width: 26px; padding: 1px 6px; border-radius: 3px; text-align: center; } .diffcell.r1 { background: var(--r1); } .diffcell.r2 { background: var(--r2); } .diffcell.r3 { background: var(--r3); } .diffcell.r4 { background: var(--r4); } .diffcell.r5 { background: var(--r5); } .diffcell.r0 { color: var(--dim); }
@@ -103,7 +103,6 @@ table.links, table.gen { font-size: 13px; } tr.inherited { color: var(--dim); } 
 .fatal { padding: 20px; color: var(--bad); white-space: pre-wrap; }
 @media (max-width: 800px) { #layout { grid-template-columns: 1fr; } aside { max-height: 40vh; } .two, .three { grid-template-columns: 1fr; } }
 
-.row.nowrap { flex-wrap: nowrap; } .row.nowrap input { flex: 1; min-width: 0; }
 h3.sect { margin: 14px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--line); } .form > h3.sect:first-child { margin-top: 0; }
 
 .tree-tools { display: flex; gap: 6px; padding: 4px 8px; border-bottom: 1px solid var(--line); align-items: center; }
@@ -143,9 +142,6 @@ table.aw td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 table.aw tr.alias td.word { padding-left: 8px; }   /* flat list: no indent, aliases are not grouped under their root here */
 .regionbox { display: flex; flex-direction: column; gap: 4px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; }
 
-.groups { margin: .5rem 0; font-size: .9em; }
-.groups .group { display: inline-block; margin: .15rem .6rem .15rem 0; padding: .1rem .5rem; border: 1px solid var(--line, #ccc); border-radius: 1rem; }
-.groups a { text-decoration: none; }
 .root { color: var(--dim, #888); }
 .useform { margin-left: .4rem; padding: 0 .35rem; border: 1px solid var(--line, #ccc); border-radius: .3rem; text-decoration: none; color: var(--dim, #888); cursor: pointer; }
 .etable td.syn { white-space: normal; }

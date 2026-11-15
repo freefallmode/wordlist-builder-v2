@@ -20,7 +20,7 @@ for (const f of fs.readdirSync(dir).filter(f => new RegExp('^' + prefix + '-\\d+
     for (let i = 0; i < parts.length && parts.length > 1;) {
       if (parts[i].replace(/'/g, '').length < 2 || parts[i].startsWith("'")) {
         if (i > 0) { parts.splice(i - 1, 2, parts[i - 1] + parts[i]); i--; } else parts.splice(i, 2, parts[i] + parts[i + 1]);   // join to the piece before, or the one after at the start
-        single++; i = Math.max(0, i - 0);
+        single++;
       } else i++;
     }
     h = parts.join('-');

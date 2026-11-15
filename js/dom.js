@@ -19,9 +19,7 @@ export function h(sel, attrs, ...kids) {
   return el;
 }
 export const $ = (s, r = document) => r.querySelector(s);
-export const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
-export function option(value, label, selected) { return h('option', { value, selected: selected }, label ?? value); }
 export function select(values, current, attrs = {}) {
   const s = h('select', attrs);
   for (const v of values) { const [val, label] = Array.isArray(v) ? v : [v, v || '(none)']; s.append(h('option', { value: val }, label)); }
@@ -33,7 +31,7 @@ export const field = (label, control, hint) => h('label.field', {}, h('span.lab'
 
 // Modal dialog. `body` is a node; `buttons` is [{ label, primary, action: () => result | false | Promise }]. Returns when closed.
 // An action returning false keeps the dialog open.
-export function dialog(title, body, buttons = [{ label: 'Close' }], { wide = false, onopen } = {}) {
+export function dialog(title, body, buttons = [{ label: 'Close' }], { wide = false } = {}) {
   return new Promise(resolve => {
     const d = h('dialog' + (wide ? '.wide' : ''));
     const st = h('div.st');
@@ -50,7 +48,6 @@ export function dialog(title, body, buttons = [{ label: 'Close' }], { wide = fal
     d.addEventListener('cancel', ev => { ev.preventDefault(); close(false); });
     document.body.append(d);
     d.showModal();
-    if (onopen) onopen(d);
   });
 }
 

@@ -2,14 +2,13 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline, mergeOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, nowStamp, FAMILIARITY_HELP, themeDifficulty } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, showValidation, showExport, showSettings, openPath } from './dialogs.js';
 import { isAncestor } from './model.js';
 import { allWordsView } from './allwords.js';
 import { allThemesView } from './allthemes.js';
-import { entryDefaults } from './model.js';
 
 const VERSION = '2';
 
@@ -524,7 +523,6 @@ async function boot() {
       A.P = await loadSkeleton(); reindex(A.P); A.sel = null; A.changed();
     }));
   render();
-  A.checkStarter = offerStarterUpdate;
   if (held) unreadable(); else if (!fresh) offerStarterUpdate();
 }
 
