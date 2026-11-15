@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":365,"modified":"2026-11-15 10:30"},"nextId":67399,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":366,"modified":"2026-11-15 10:35"},"nextId":67399,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]],"ident":1},
@@ -3664,7 +3664,7 @@
 {"id":347,"text":"pew","fam":3,"typ":{"seating":3,"church_parts":1,"rhymes_with_blue":4,"things_made_of_wood":4},"status":"gen"},
 {"id":348,"text":"blueberry","gloss":"fruit","fam":1,"typ":{"fruits":2,"berries":1,"colors_named_after_foods":2,"blue_things":1,"fruit_shades":2,"jam_flavours":1,"blank_berry":1,"blue_blank":1},"status":"gen","nameOkIn":["blank_berry","blue_blank"],"show":{"blank_berry":"blue","blue_blank":"berry"}},
 {"id":349,"text":"raspberry","fam":1,"typ":{"fruits":2,"berries":1,"thorny_plants":5,"shades_of_pink":3,"colors_named_after_foods":3,"red_things":3,"fruit_shades":3,"colours_named_after_fruit":2,"jam_flavours":1,"blank_berry":1,"red_fruits":1},"status":"gen","nameOkIn":["blank_berry"],"show":{"blank_berry":"rasp"}},
-{"id":350,"text":"BlackBerry","gloss":"phone","type":"proper","fam":1,"typ":{"gadgets":3,"berries":1,"starts_with_a_color":2,"foraging_finds":1,"thorny_plants":5,"handheld_gadgets":3},"status":"gen"},
+{"id":350,"text":"BlackBerry","gloss":"phone","type":"proper","fam":1,"typ":{"gadgets":3,"starts_with_a_color":2,"handheld_gadgets":3},"status":"gen"},
 {"id":351,"text":"coconut","gloss":"fruit","fam":1,"typ":{"fruits":3,"tropical_fruits":1,"stone_fruits":5,"nuts":3,"oceanian_food":5,"foods_with_shells":2,"fiber_plants":4,"candle_scents":2,"white_things":3,"brown_things":3,"things_with_shells":2,"soda_flavors":4},"status":"gen"},
 {"id":352,"text":"apricot","fam":2,"typ":{"fruits":2,"stone_fruits":2,"words_from_arabic":3,"shades_of_orange":2,"pastel_colors":4,"colors_named_after_foods":2,"orange_things":3,"fruit_shades":2,"colours_named_after_fruit":2,"jam_flavours":2},"status":"gen"},
 {"id":353,"text":"nectarine","fam":3,"typ":{"fruits":2,"stone_fruits":2},"status":"gen"},
@@ -33315,7 +33315,7 @@
 {"id":31654,"text":"rain dance","fam":2,"typ":{"dry_season":4,"rain_blank":3},"status":"gen","nameOkIn":["rain_blank"],"show":{"rain_blank":"dance"}},
 {"id":31655,"text":"lack of rain","fam":1,"typ":{"dry_season":2},"status":"gen"},
 {"id":31656,"text":"diamond","gloss":"gem","fam":1,"typ":{"gemstones":1,"treasure":2,"names_that_are_gems":2,"minerals":3,"precious_materials":1,"hard_materials":1,"shiny_things":2,"things_with_faces":3,"things_that_cut":5,"wedding_anniversaries":1,"mohs_scale_minerals":1},"status":"gen"},
-{"id":31657,"text":"ruby","gloss":"gem","fam":1,"typ":{"gemstones":1,"treasure":3,"girls_names":3,"names_that_are_gems":1,"names_that_are_colors":3,"precious_materials":1,"red_things":2,"wedding_anniversaries":1},"status":"gen"},
+{"id":31657,"text":"ruby","gloss":"gem","fam":1,"typ":{"gemstones":1,"treasure":3,"names_that_are_gems":1,"names_that_are_colors":3,"precious_materials":1,"red_things":2,"wedding_anniversaries":1},"status":"gen"},
 {"id":31658,"text":"emerald","gloss":"gem","fam":1,"typ":{"gemstones":1,"treasure":3,"names_that_are_gems":1,"precious_materials":1,"green_things":1,"wedding_anniversaries":3},"status":"gen"},
 {"id":31659,"text":"sapphire","gloss":"gem","fam":1,"typ":{"gemstones":1,"treasure":3,"names_that_are_gems":2,"precious_materials":1,"blue_things":1,"wedding_anniversaries":3,"blue_gems":1},"status":"gen"},
 {"id":31660,"text":"pearl","gloss":"gem","fam":1,"typ":{"gemstones":2,"treasure":3,"hidden_body_parts":4,"hidden_fruits":2,"names_that_are_gems":1,"names_that_are_colors":4,"precious_materials":2,"shiny_things":3,"white_things":3,"wedding_anniversaries":2,"round_things":3},"status":"gen"},
@@ -50182,7 +50182,7 @@
 {"id":49258,"text":"refuse truck","fam":4,"typ":{"special_vehicles":4},"status":"gen","nameOkIn":["truck_types"]},
 {"id":49259,"text":"four-wheeler","fam":3,"region":["US"],"aliasOf":3142,"aliasKind":"regional","status":"gen"},
 {"id":49260,"text":"main battle tank","fam":4,"adult":true,"sensitive":true,"typ":{"military_vehicles":3,"special_vehicles":4,"army_words":3,"army_ground_vehicles":3},"status":"gen"},
-{"id":49261,"text":"blackberry","gloss":"fruit","fam":1,"typ":{"fruits":2,"blank_berry":1,"black_blank":1},"status":"gen","nameOkIn":["blank_berry","black_blank"],"show":{"blank_berry":"black","black_blank":"berry"}},
+{"id":49261,"text":"blackberry","gloss":"fruit","fam":1,"typ":{"fruits":2,"blank_berry":1,"black_blank":1,"berries":1,"foraging_finds":1,"thorny_plants":5},"status":"gen","nameOkIn":["blank_berry","black_blank"],"show":{"blank_berry":"black","black_blank":"berry"}},
 {"id":49262,"text":"double-click","pos":"verb","fam":1,"typ":{"computer_actions":2},"status":"gen"},
 {"id":49263,"text":"right-click","pos":"verb","fam":1,"typ":{"computer_actions":2},"status":"gen"},
 {"id":49264,"text":"scroll","gloss":"screen","pos":"verb","fam":1,"typ":{"computer_actions":2},"status":"gen"},
@@ -65590,5 +65590,6 @@
 {"id":67395,"text":"thin","gloss":"slim","pos":"adjective","fam":2,"typ":{"opposites":3},"status":"gen"},
 {"id":67396,"text":"thick","pos":"adjective","fam":2,"typ":{"opposites":3},"status":"gen"},
 {"id":67397,"text":"physician","fam":2,"aliasOf":3448,"aliasKind":"synonym","status":"gen"},
-{"id":67398,"text":"anchorage","gloss":"mooring area","fam":3,"typ":{"ports_and_harbors":5},"status":"gen"}
+{"id":67398,"text":"anchorage","gloss":"mooring area","fam":3,"typ":{"ports_and_harbors":5},"status":"gen"},
+{"id":67399,"text":"Ruby","gloss":"girl's name","type":"person","fam":1,"typ":{"girls_names":3},"status":"gen"}
 ]}

@@ -3,6 +3,7 @@
 // The game shows words in lowercase while playing, so this only appears on a finished theme, but there every mismatch shows.
 // Returns issues { kind, msg, themeId, entryId }; the kinds are listed below. Used by validate() and by the export (count printed).
 import { themeLocked } from './model.js';
+import { CASE_OK } from './caselint-allow.js';
 
 const PROPER = new Set(['person', 'place', 'org', 'title', 'proper']);
 const isProper = e => PROPER.has(e.type) || !!e.tm;
@@ -12,7 +13,7 @@ const norm = s => s.toLowerCase();
 
 export function caseLint(P) {
   const out = [], ix = P.ix;
-  const add = (kind, msg, t, e) => out.push({ kind, msg, themeId: t && t.id, entryId: e && e.id });
+  const add = (kind, msg, t, e) => !(kind !== 'cap-common' && e && t && CASE_OK.has(e.id + '|' + t.id)) && out.push({ kind, msg, themeId: t && t.id, entryId: e && e.id });
   const byText = new Map();
   for (const e of P.entries) if (!e.aliasOf) { const k = norm(e.text); if (!byText.has(k)) byText.set(k, []); byText.get(k).push(e); }
   const hasUkAlias = new Map();
