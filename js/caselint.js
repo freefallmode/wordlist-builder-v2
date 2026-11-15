@@ -29,7 +29,7 @@ export function caseLint(P) {
       // 1. the capital disagrees with the entry's own proper/common mark
       if (!initialism(shown)) {
         if (cap && !isProper(e) && e.type !== 'acronym' && e.type !== 'phrase' && !(sh && startsCap(e.text) === false && false)) add('cap-common', `"${shown}" is shown with a capital in "${t.name}" but "${e.text}" is not marked as a proper noun (type ${e.type}).`, t, e);
-        if (!cap && isProper(e) && !wordplay && members.length >= 8 && share >= 0.8) add('lower-proper', `"${shown}" is shown lowercase in "${t.name}" but "${e.text}" is a ${e.type || 'trademark'} name.`, t, e);
+        if (!cap && startsCap(e.text) && isProper(e) && !wordplay && members.length >= 8 && share >= 0.8) add('lower-proper', `"${shown}" is shown lowercase in "${t.name}" but "${e.text}" is a ${e.type || 'trademark'} name.`, t, e);
       }
       // 2. wrong sense: a proper entry in a theme of common words (or the reverse) while an entry of the same spelling with the other mark exists
       if (members.length >= 8 && !wordplay) {

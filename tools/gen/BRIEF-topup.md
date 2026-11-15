@@ -19,3 +19,14 @@ See the last section of `tools/gen/BRIEF-depth3.md`: words of 8+ letters get hyp
 
 ## Kinds themes: full term, shown short
 In a "kinds of X" theme (eagles, sharks, cakes, hats, seals) the member is the FULL term as an entry (`bald eagle`, `tiger shark`, `red velvet cake`). If the short word identifies the kind on its own, the link gets a `show` of that short word (`bald`, `tiger`, `red velvet`). Never add the bare short word as its own entry just for this theme (a stub `bald` or `tiger` linked only to eagles or sharks): its part of speech, rating and meaning would describe a different thing, and the game cannot show the full term. The exception is a short word that really is how people name the thing and the full term is not used (`husky`, `panama`, `harpy`): keep that as the entry. See DESIGN-entries.md 3.6 and `tools/gen/BRIEF-shortmem.md`.
+
+## Capital rule (applies to every entry, link and shown text you create)
+
+One rule decides the capital of every word: **a word is written the way it is correctly written for the sense it has in that theme.**
+
+- An entry's text is **lowercase unless it is a proper noun** (person, place, organisation, title, brand, named period) or an acronym/initialism in capitals. Mark proper entries with `type` person/place/org/title/proper, acronyms `acronym`; common words need no type.
+- **Never copy a capital** from a stub, a list heading or another entry. "garnet" the gem is lowercase even when a list prints "Garnet".
+- Link the entry whose **sense fits the theme**. If a theme wants the common noun (gemstone, raven the bird, hemlock the poison) and only a proper entry exists, create the lowercase common-noun entry with its own short gloss; do not link the proper one.
+- Do **not** use a `show` text just to change case where a correctly cased entry can be linked (a case-only show text changes UK alias behaviour and wordplay rules).
+- Theme names carry their own capitals (proper nouns only).
+- Checked automatically: `node tools/export-game.mjs` prints a `case lint` count (`--strict` fails on any); `node tools/gen/lint-show.mjs` lists each issue.
