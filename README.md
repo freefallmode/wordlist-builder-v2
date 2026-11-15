@@ -12,7 +12,8 @@ Run it: `node serve.mjs` then open http://localhost:8100/ (opened as `file://` t
 - `data/freq-en.txt`: English word frequencies (Zipf x 10), from [wordfreq](https://github.com/rspeer/wordfreq) by Robyn Speer, CC BY-SA 4.0 (includes Google Books Ngrams, Wikipedia, OpenSubtitles, SUBTLEX and other sources listed in the wordfreq README).
 - `data/wordlist-en.project.json`: the working library (load it with File ▾ → Open project file). `tools/apply-words.mjs` adds a generated batch from `tools/gen/*.mjs` to it (the depth-3 batches are `tools/gen/d3-*.mjs`; `tools/gen/recon*` settles same-text entries, see DESIGN.md section 12); the first load in an empty browser uses it as the starter library, and a newer version is offered on reload; `data/pilot.project.json` is the earlier 29-theme pilot.
 - `data/old-themes.txt` and `tools/convert-tree.mjs`: the old app's tree and the one-off script that produced `data/themes.txt` (kept as a record; `themes.txt` is now maintained by hand or in the app).
-- `DESIGN.md`: the design record: decisions and reasons, data model, file formats, screens, how to rebuild the app.
+- `DESIGN.md`: the design record: decisions and reasons, data model, file formats, screens, how to rebuild the app. `DESIGN-entries.md`: the design for synonym groups, word forms and regional variants, with the decisions log.
+- `ISSUES.md`: everything known to be broken, inconsistent, inefficient or no longer needed, one line each with its status. `tools/gen/INVENTORY.md`: what each script, brief and data folder in `tools/gen` is and whether anything still uses it.
 
 ## Working
 
