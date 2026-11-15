@@ -32,8 +32,8 @@ In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archiv
 
 | # | Task (ISSUES.md ids) | Difficulty | Model |
 |---|---|---|---|
-| 10 | Performance: full reindex per edit (E1-E4) | deep reasoning | Opus |
-| 11 | Single-word names, classical orders (T15, T18): a library pass, ask Simon first | judgement | Opus |
+| 10 | In progress: E1-E4 (measure first, incremental indexes with a full-reindex test) | deep reasoning | Opus |
+| 11 | Approved 2026-11-15, start after E1-E4 lands: T18 (Composite lowercase in column styles; Doric, Ionic, Corinthian, Tuscan stay capital) and T15 (read-only Opus candidate pass over single-word names stored lowercase; tighten the rule first, Simon approves per word; one library version for both) | judgement | Opus |
 
 ## 5. Subagents
 
