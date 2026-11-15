@@ -8,3 +8,4 @@ One rule decides the capital of every word: **a word is written the way it is co
 - Do **not** use a `show` text just to change case where a correctly cased entry can be linked (a case-only show text changes UK alias behaviour and wordplay rules).
 - Theme names carry their own capitals (proper nouns only).
 - Checked automatically: `node tools/export-game.mjs` prints a `case lint` count (`--strict` fails on any); `node tools/gen/lint-show.mjs` lists each issue.
+- Themes of names (title says "names", almost all members proper) take only proper entries: link "Daisy" (person), never the flower "daisy". An entry shown lowercase in one theme and capitalised in another is a fault: if it is a common word, type it common and lowercase it everywhere; if the capital is intended on that link, it goes in `js/caselint-allow.js` after checking.

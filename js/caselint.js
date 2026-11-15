@@ -25,6 +25,7 @@ export function caseLint(P) {
     const textOf = e => (e.show && e.show[t.id]) || e.text;
     const caps = members.filter(e => startsCap(textOf(e))).length, share = caps / members.length;
     const wordplay = t.tkind === 'wordplay' || t.tkind === 'compound' || themeLocked(P, t);
+    const properShare = members.filter(isProper).length / members.length;
     for (const e of members) {
       const shown = textOf(e), cap = startsCap(shown), sh = e.show && e.show[t.id];
       // 1. the capital disagrees with the entry's own proper/common mark
@@ -38,6 +39,8 @@ export function caseLint(P) {
         if (isProper(e) && share <= 0.2 && twins.some(x => !isProper(x))) add('sense-proper', `"${e.text}" (${e.type || 'trademark'}) is linked in "${t.name}", a theme of common words, and a common entry with the same spelling exists.`, t, e);
         if (!isProper(e) && share >= 0.8 && twins.some(x => isProper(x))) add('sense-common', `"${e.text}" is linked in "${t.name}", a theme of names, and a proper entry with the same spelling exists.`, t, e);
       }
+      // 2c. the same entry shown lowercase (case-only) in one theme and capitalised in another
+      if (!sh && startsCap(e.text) && e.show && Object.entries(e.show).some(([k, v]) => v !== e.text && norm(v) === norm(e.text) && !startsCap(v) && k !== t.id && !/phonetic alphabet/i.test(ix.theme.get(k)?.name || ''))) add('case-split', `"${e.text}" is shown lowercase in another theme but capitalised in "${t.name}": type the entry common and lowercase it, or allow the link.`, t, e);
       // 3. a shown text that only changes the case, where it does harm
       if (sh && norm(sh) === norm(e.text) && sh !== e.text) {
         if (t.tkind === 'wordplay' || t.tkind === 'compound') add('case-shown-wordplay', `"${e.text}" has a case-only shown text "${sh}" in "${t.name}", a wordplay/compound theme (the game reads a shown text there as a leftover part).`, t, e);
@@ -45,6 +48,8 @@ export function caseLint(P) {
       }
     }
   }
+  // 2b. a common entry in a theme of names: nameThemeCommons() below
+  for (const [t, e, share] of nameThemeCommons(P)) add('common-in-names', `"${e.text}" is a common word in "${t.name}", a theme of names (${Math.round(share * 100)}% proper).`, t, e);
   // 4. a bare capitalised single word (not proper) in a theme, with "<word> <theme word>" existing as another entry not linked to the theme
   const stem = w => w.replace(/ies$/, 'y').replace(/s$/, '');
   const STOP = new Set(['and', 'of', 'the', 'in', 'for', 'with', 'things', 'kinds', 'types', 'words', 'names', 'a', 'to']);
@@ -57,4 +62,16 @@ export function caseLint(P) {
     }
   }
   return out;
+}
+
+// themes whose title says "names" and whose members are almost all proper: [theme, entry, proper share] for each member that is a common word
+export function nameThemeCommons(P) {
+  const res = [];
+  for (const t of P.themes) {
+    if (t.group || !/\bnames?\b/i.test(t.name)) continue;
+    const ms = (P.ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf); if (ms.length < 8) continue;
+    const share = ms.filter(e => isProper(e)).length / ms.length; if (share < 0.8) continue;
+    for (const e of ms) if (!isProper(e) && e.type !== 'acronym' && e.type !== 'phrase') res.push([t, e, share]);
+  }
+  return res;
 }

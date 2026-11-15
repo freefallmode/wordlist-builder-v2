@@ -1,5 +1,5 @@
 // Links where the capital (or lowercase) is intended for the sense the word has in that theme, so the case lint does not flag them.
-// Key: entryId|themeId. Add a line only after checking the word is right as shown. Generated first by tools/gen/caselint-allow.mjs.
+// Key: entryId|themeId. Add a line only after checking the word is right as shown. Merged on each run (existing keys kept) by tools/gen/caselint-allow.mjs.
 export const CASE_OK = new Set([
   '633|desserts_and_sweets', // Skittles in desserts and sweets
   '20295|canned_foods', // Spam in canned foods
@@ -54,4 +54,23 @@ export const CASE_OK = new Set([
   '22|red_things', // Mars in red things
   '38122|orange_things', // Cheddar in orange things
   '7354|things_with_screens', // Kindle in things with screens
+  '20962|italian_cities', // Genoa in Italian cities
+  '20962|port_cities', // Genoa in port cities
+  '20962|ports_in_europe', // Genoa in ports in Europe
+  '2357|landmarks', // Sphinx in landmarks
+  '20690|honorifics', // Sir in honorifics
+  '32568|honorifics', // Dame in honorifics
+  '32569|honorifics', // Professor in honorifics
+  '32572|honorifics', // Lady in honorifics
+  '32575|honorifics', // Major in honorifics
+  '32576|honorifics', // Sergeant in honorifics
+  '5728|table_games', // Ludo in table games
+  '5728|board_games', // Ludo in board games
+  '5728|asian_board_games', // Ludo in Asian board games
+  '2357|ancient_egypt', // Sphinx in ancient Egypt
+  '20962|black_death', // Genoa in Black Death
+  '27376|street_names', // high street in street names
+  '1680|unisex_names', // mountain ash in unisex names
+  '29776|old_fashioned_names', // myrtle in old-fashioned names
+  '29903|names_that_are_places', // aurora in names that are places
 ]);
