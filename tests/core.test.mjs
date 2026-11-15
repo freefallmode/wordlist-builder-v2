@@ -406,3 +406,20 @@ test('case lint checks a link an alias holds itself (B22), not the links it only
   reindex(P);
   assert.deepEqual(caseLint(P).map(i => [i.kind, i.themeId, P.ix.entry.get(i.entryId).text]), [['cap-common', 'citrus', 'ladybird']]);
 });
+
+test('validate reports a type or part of speech that is not in the lists (B14, B23)', () => {
+  const P = newProject();
+  const a = addEntry(P, 'South Beach diet', { type: 'name' }), b = addEntry(P, 'single room', { pos: 'noun phrase' }); addEntry(P, 'fine');
+  reindex(P);
+  const v = validate(P);
+  assert.deepEqual(v.filter(x => x.kind === 'bad-type').map(x => x.entryId), [a.id]);
+  assert.deepEqual(v.filter(x => x.kind === 'bad-pos').map(x => x.entryId), [b.id]);
+});
+
+test('debounce flush runs a pending call at once and only once', async () => {
+  const { debounce } = await import('../js/dom.js'); let n = 0;
+  const d = debounce(() => n++, 20);
+  d.flush(); assert.equal(n, 0);
+  d(); d.flush(); assert.equal(n, 1);
+  await new Promise(r => setTimeout(r, 50)); assert.equal(n, 1);
+});

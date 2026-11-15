@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, ALIAS_KINDS } from './model.js';
+import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, ALIAS_KINDS, POS, TYPES } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
 
@@ -88,6 +88,8 @@ export function validate(P) {
     const text = e.text.trim();
     if (!text) { add('error', 'empty-text', `Entry ${e.id} has no text.`, loc); continue; }
     if (text !== e.text) add('warn', 'spaces', `"${e.text}" has spaces at the start or end.`, loc);
+    if (!TYPES.includes(e.type)) add('error', 'bad-type', `"${text}" has type "${e.type}", which is not one of: ${TYPES.join(', ')} (the export writes -1).`, loc);
+    if (!POS.includes(e.pos)) add('error', 'bad-pos', `"${text}" has part of speech "${e.pos}", which is not one of: ${POS.join(', ')} (the export writes -1).`, loc);
     const key = text.toLowerCase() + '|' + (e.gloss || '').toLowerCase();
     if (seen.has(key)) add('error', 'duplicate', `"${label(e)}" appears twice (entries ${seen.get(key)} and ${e.id}).`, loc); else seen.set(key, e.id);
 

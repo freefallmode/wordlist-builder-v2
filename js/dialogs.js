@@ -432,12 +432,12 @@ export async function showExport() {
 
 // ---------- settings ----------
 
-export const LANGUAGES = [['en', 'en: English'], ['pt', 'pt: Portuguese'], ['de', 'de: German'], ['es', 'es: Spanish'], ['fr', 'fr: French'], ['jp', 'jp: Japanese']];
+export const LANGUAGES = [['en', 'en: English'], ['pt', 'pt: Portuguese'], ['de', 'de: German'], ['es', 'es: Spanish'], ['fr', 'fr: French'], ['ja', 'ja: Japanese']];
 
 export async function showSettings() {
   const P = A.P, S = P.settings;
   const key = h('input', { type: 'password', value: getKey(), placeholder: 'sk-ant-…', autocomplete: 'off' });
-  const remember = check('Remember the key in this browser (localStorage)', !!localStorage.getItem('wlb2-key'));
+  const remember = check('Remember the key in this browser (localStorage)', !!(() => { try { return localStorage.getItem('wlb2-key'); } catch { return ''; } })());
   const f = { model: select(MODELS, getModel()), lang: select(LANGUAGES, P.lang), min: h('input', { type: 'number', value: S.minWords, min: 1 }),
     maxW: h('input', { type: 'number', value: S.maxWords, min: 1 }), maxL: h('input', { type: 'number', value: S.maxLen, min: 3 }),
     dialect: select([['', '(none)'], ...REGIONS.map(c => [c, c])], dialectOf(P)) };

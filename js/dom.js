@@ -62,6 +62,6 @@ export function toast(msg, err = false) {
   toastTimer = setTimeout(() => t.classList.remove('show'), err ? 6000 : 2500);
 }
 
-export const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
+export const debounce = (fn, ms) => { let t, a; const d = (...x) => { a = x; clearTimeout(t); t = setTimeout(() => { t = 0; fn(...a); }, ms); }; d.flush = () => { if (t) { clearTimeout(t); t = 0; fn(...a); } }; return d; };
 export const plural = (n, w) => `${n.toLocaleString()} ${n === 1 ? w : w.endsWith('y') ? w.slice(0, -1) + 'ies' : w + 's'}`;
 export const fmtBytes = n => n > 1e6 ? (n / 1e6).toFixed(2) + ' MB' : (n / 1e3).toFixed(0) + ' KB';

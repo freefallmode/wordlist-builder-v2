@@ -21,6 +21,7 @@ const autosave = debounce(async () => {
   try { await saveLocal(A.P, A.dirty); savedAt = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); } catch { savedAt = 'failed'; }
   renderStatus();
 }, 700);
+addEventListener('pagehide', () => autosave.flush());
 
 A.changed = () => { reindex(A.P); A.dirty = true; autosave(); render(); };
 A.render = keep => render(keep);
@@ -471,7 +472,7 @@ async function boot() {
   A.P = P; A.dirty = dirty; reindex(P);
   if (fresh) autosave();   // writes nothing while held
   $('#save').onclick = () => { if (held) unreadable(); };
-  loadFreq().then(() => A.render()).catch(() => toast('Frequency list did not load (serve the folder over http).', true));
+  loadFreq().then(() => A.render()).catch(e => toast('Frequency list did not load: ' + (e instanceof TypeError ? 'could not fetch it (serve the folder over http)' : e.message) + '.', true));
   $('#search').addEventListener('input', debounce(ev => { A.search = ev.target.value; renderTree(); }, 120));
   $('#btn-checks').onclick = showValidation;
   $('#btn-export').onclick = showExport;
