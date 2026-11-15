@@ -10,6 +10,8 @@ How to read an item: **id** `status` statement (place). *check*.
 
 Baseline: read-only audit of 2026-11-15 at library v366 (commit 6a15bee), by four agents (app code, tooling and data, tools/gen inventory, docs against code). 14 of 14 tests pass.
 
+Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 69c6f4b and 5a508bc by another session): B2, B3, B14, T1 and T10 are unchanged (Checks: 3 errors, the same three; case lint: 48 `cap-common`, nothing else; 99 `aliasOf: null`; entry 67019 still type `name`). js/caselint.js gained two kinds (`case-split`, `common-in-names`), so its line numbers below are one or more lines lower than in the file now (the `&& false` of U5 is at line 33).
+
 ## Broken: app (js/)
 
 - **B1** `open` The export filter "Longest entry in words" splits on the letter s (`/s+/`), not on whitespace. With a limit of 1 it keeps "Northern Ireland" and drops "Venus" (js/export.js:58). No test covers it. *seen, run*
@@ -91,6 +93,17 @@ The per-file classification behind these items is tools/gen/INVENTORY.md (static
 - **G6** `open` Briefs: 44, of which about 10 are current (depth3, rest, topup, rec, ident, regtag, CAPITAL-RULE, brk/BRIEF-brk, recon/BRIEF, recon/AUDIT-BRIEF). Superseded: leak, leak2, leak3 (by leak4), overlap (by overlap3), pos (by pos2), disp (by disp2), ident2/BRIEF-ident2. About 20 belong to finished passes. The capital rule was appended to four briefs of finished passes (pop, full, kind, capmark), so "has the rule" does not mean "in use". *read*
 - **G7** `open` Unclear whether still wanted: syn3-make and syn3-apply (the briefs point at them for later runs, the log records the sweep as done), the starts-with and ends-with generator briefs, recon/REPAIR-BRIEF, easy/BRIEF-easy, the done.json files of passes that could be rerun (regtag, regrec, pos, syn, leak), and five top-level lists nothing reads (alias-extra-list.md, connections-titles.txt, inflection-dups-list.md, long-names-list.md, nameok-list.txt). *read*
 - **G8** `open` shortmem-find.mjs and shortmem-make.mjs only work from the repo root (paths relative to the current directory). The applied data modules still use the pre-v301 names (`rec`), which apply-words accepts as an old option. *read*
+
+## Open between the library and the game
+
+Reported by the Word Safari manager session on 2026-11-15; not checked on the game side. These are decisions waiting on Simon or work not built, not defects.
+
+- **W1** `open` Art movements were made lowercase everywhere at v370 (cubism, surrealism, impressionism); earlier they were kept capitalised as named movements. Which is wanted is undecided.
+- **W2** `open` The "Names that are ..." themes mix capitals on purpose (cedar, elm, Ash, laurel); whether they should be uniform is undecided.
+- **W3** `open` The game does not read the theme region tags (`regions`, `regionsHi`); holding region-tied themes back by level is not built.
+- **W4** `open` The game's generator has no related-word rule (joy and joyful, fish and goldfish); a word-family column in the export was discussed as the way to supply it, undecided.
+- **W5** `open` Whether the game should treat a shown text that differs from its entry only in case as a plain case fix (a game change).
+- **W6** `open` The game manager understands case lint to run in Checks and the strict export to fail on any issue. Neither is so: B2 (not in Checks) and B3 (the 48 `cap-common` hits are left out of the count and of `--strict`).
 
 ## Documentation out of date
 
