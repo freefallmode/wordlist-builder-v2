@@ -4,7 +4,7 @@ Everything known to be broken, inconsistent, inefficient or no longer needed in 
 
 How to read an item: **id** `status` statement (place). *check*.
 
-- Status: `open`, `fixed` (with date and commit), `dropped` (with the reason).
+- Status: `open`, `fixed` (with the date; the commit is the one that changed the line), `dropped` (with the reason).
 - Check: *seen* = the manager read the code or data and confirmed it; *run* = an audit agent reproduced it by running code; *read* = an audit agent traced it by reading only; *suspected* = plausible, not proven.
 - Ids are never reused. Fixed and dropped items move to the end of their section.
 
@@ -14,17 +14,12 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 
 ## Broken: app (js/)
 
-- **B1** `open` The export filter "Longest entry in words" splits on the letter s (`/s+/`), not on whitespace. With a limit of 1 it keeps "Northern Ireland" and drops "Venus" (js/export.js:58). No test covers it. *seen, run*
 - **B2** `open` Case lint never runs in Checks: `validate()` imports `caseLint` and never calls it, although caselint.js:4, commit dff5793 and DESIGN-entries.md say it does (js/validate.js:5). *seen*
 - **B3** `open` The 48 `cap-common` lint issues (Vidalia in onion family, Chinese in cabbage family) are shown nowhere: tools/export-game.mjs:21 filters that kind out before printing "case lint: 0", the allow-list cannot suppress it (js/caselint.js:16), and B2 hides it in the app. *seen, run*
-- **B4** `open` Saving a theme or an entry in its dialog drops every region code outside the 9 tick-boxes. The library uses 55 codes; 69 entries and 49 themes carry others (js/dialogs.js:91, :237; `REGIONS` in js/model.js:17). *seen*
 - **B5** `open` The unsaved state is lost on reload: `A.dirty` starts false and is not stored, so after a reload edits that exist only in the browser autosave show as "File saved" and Save project file answers "No changes since the last file save" (js/state.js:10, js/app.js:488). *seen*
 - **B6** `open` A failed autosave read replaces the browser library: `loadLocal` turns every error (IndexedDB failure, parse error) into "empty", boot then loads the starter and autosaves over the stored copy (js/store.js:23, js/app.js:450-456). How often the trigger happens is unknown. *seen*
 - **B7** `open` Import theme outline matches themes by the slug of the name, but 165 themes have an id that differs from it (`dairy_and_eggs` / "dairy"). Exporting the outline and importing it again adds 165 duplicate themes and moves 39 children under them (js/app.js:412, js/outline.js:23). *seen, run*
 - **B8** `open` Import theme outline resets fields of existing themes: the merge is `Object.assign`, so `pop` and `ident` go to 0 when the line has no tag, and the outline format does not carry `tkind`, `rule`, `locked`, `nameOk` or `groups` at all (js/app.js:417, js/outline.js:76-87). *seen*
-- **B9** `open` Deleting a root gives the promoted alias the wrong in-theme rating: it stores `difficultyBand` (the harder of familiarity and typicality) as the typicality (js/model.js:171). *seen, run*
-- **B10** `open` The theme popularity dropdown uses the typicality wording ("1 the first words anyone thinks of") (js/dialogs.js:50). *seen*
-- **B11** `open` A missing frequency file is not detected: `loadFreq` does not check the response status, a 404 body parses to an empty list and counts as loaded, so the "did not load" message never shows and Checks would warn about every easy common word (js/freq.js:20). *seen*
 - **B12** `open` Deleting or unlinking leaves stale references: `deleteTheme` leaves `show`, `use`, `nameOkIn` and `@theme` rules pointing at the theme; `deleteEntry` leaves the id in theme `groups` and in other entries' `use`; unlinking in the entry dialog removes `show` but not `use` or `nameOkIn` (js/model.js:166, :178, js/dialogs.js:169). The library has none today. *read*
 - **B13** `open` Case lint details: a `break` leaves only an inner one-item loop, so one link can be reported twice; `stem('pies')` gives `py`; `hasUkAlias` counts an alias with any region (js/caselint.js:56 and nearby). *run*
 - **B14** `open` Validation does not check that an entry's `type` is one of `TYPES`; entry 67019 "South Beach diet" has type `name` (js/validate.js, js/model.js:14). *seen*
@@ -33,20 +28,29 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 - **B17** `open` `parseProject` spreads every entry id into `Math.max(...)`; this overflowed the call stack at about 130,000 entries in one run. The library has 62,273 (js/store.js:52). *suspected*
 - **B18** `open` Settings reads localStorage without try/catch, unlike every other access, so the dialog could fail to open where storage is blocked (js/dialogs.js:437). *read*
 
+- **B19** `open` When a root is deleted, the alias promoted in its place does not inherit the root's `show`, `use`, `nameOkIn`, synonym-group membership (the old id stays in theme `groups`, see B12), region or flags (adult, sensitive, trademark, vulgar); the export judges region on the root only. The other aliases are re-pointed with their kind unchanged, so a spelling of the old root becomes a "spelling" of what was a synonym (js/model.js `deleteEntry`). *read*
+- **B1** `fixed 2026-11-15` The export filter "Longest entry in words" split on the letter s, not on whitespace (js/export.js:58). Now whitespace; test added.
+- **B4** `fixed 2026-11-15` Saving a theme or an entry in its dialog dropped every region code outside the 9 tick-boxes. Codes without a tick-box are now kept (`mergeRegions` in js/model.js) and shown beside the ticks as "also: BR, JP"; test added. They cannot be removed in the dialog: see I12.
+- **B9** `fixed 2026-11-15` Deleting a root gave the promoted alias the harder of familiarity and typicality as its in-theme rating; it now takes the old root's rating (js/model.js `deleteEntry`); test added. What else the promoted alias should inherit is B19.
+- **B10** `fixed 2026-11-15` The theme popularity dropdown used the typicality wording. It now has its own scale (`POPULARITY_OPTS` in js/dialogs.js): 1 and 3 and 5 are the wording of DESIGN.md section 5; "2 popular" and "4 less popular" were written for the fix.
+- **B11** `fixed 2026-11-15` A missing frequency file was not detected. `loadFreq` now fails on an HTTP error or an empty list and leaves the list unloaded, so the app's message shows (js/freq.js); test added.
+
 ## Broken: tools and data
 
 - **T1** `open` The library has 3 Checks errors (`needs-gloss`): "lupin" (ids 1740, 50239), "grey" (7673, 9526), "colours" (37976, 43131). In each case a UK spelling alias has no meaning label. DESIGN.md section 12 says the library is correct only with no errors. *seen*
 - **T2** `open` data/pilot.project.json is in the retired format (themes carry `d`, entries `rec` and `th`). Read by the current code its 347 entries have no ratings and no theme links. tools/apply-words.mjs:33 still falls back to it when the library file is missing, and README and DESIGN.md present it as usable. *seen (themes), run (entries)*
 - **T3** `open` tools/pilot.mjs writes the retired theme field `d` and no `pop`; its own validation reports every pilot theme as unrated. *run*
-- **T4** `open` tools/export-game.mjs finds data/breaks-en.txt and its default output relative to the current directory, the library relative to the script. Run from another directory it writes an export with no break points and says nothing. tools/brk-tokens.mjs and brk-merge.mjs depend on the current directory throughout. *seen, run*
-- **T5** `open` `--strict` works only as the third argument of tools/export-game.mjs: as the first it is taken as the preset name, as the second as the output path (a file named `--strict`) (tools/export-game.mjs:11). *seen*
+- **T4** `open` tools/brk-tokens.mjs and tools/brk-merge.mjs find their files relative to the current directory, so they only work from the repo root. (tools/export-game.mjs had the same fault for the break table and its default output, where it silently wrote an export with no break points; fixed 2026-11-15.) *read*
 - **T6** `open` Line breaks cover only the family export: tools/brk-tokens.mjs reads the committed family export, so 403 long words that appear only in adult or vulgar entries (prosecco, absinthe, artillery) never get queued, while tools/apply-words.mjs counts over the whole library and reports them on every run. *run*
 - **T7** `open` data/breaks-en.txt line 12604 is `sightseer=sight-see-er` (an extra e), so that word gets no breaks. tools/brk-merge.mjs validates only new lines, never the existing table. *seen*
 - **T8** `open` tools/gen/stats.mjs and tools/gen/list-topup.mjs still read the retired theme field `t.d` (stats.mjs:8, :11; list-topup.mjs:14, :24), so "unrated filled themes" lists every theme and the top-up thresholds use `undefined`. DESIGN.md section 12 names both as live tools. *seen*
 - **T9** `open` tools/game/LoadV3.cs.txt reads the column `entries.rec`, renamed `familiarity` at v301, and casts the now-decimal difficulties to integers. It is a kept copy of a reverted Unity reader, not a live tool. *suspected (not compiled)*
 - **T10** `open` Leftovers in the project file: `settings.model` (nothing reads it; the model is a browser setting), 99 entries with `aliasOf: null` instead of 0, `nextId` 67399 while the highest id is 67399 (corrected on load, but a tool wrote an entry without advancing it). *seen*
-- **T11** `open` serve.mjs: a malformed URL (`/%E0%A4%A`) throws outside the try block and stops the server; it listens on every network interface and serves the whole folder including .git/. *seen, run*
-- **T12** `open` The run line at the top of tests/core.test.mjs (`node --test tests`) fails on Node 24; package.json has no `scripts`, so `npm test` and `npm start` do nothing. *seen*
+
+- **T13** `open` serve.mjs listens on every network interface, so anyone on the local network can read the served folder. Restricting it to this machine would stop the app being opened from a phone: a decision. *seen*
+- **T5** `fixed 2026-11-15` `--strict` worked only as the third argument of tools/export-game.mjs. Flags are now separate from the preset and output arguments; an unknown flag exits with an error.
+- **T11** `fixed 2026-11-15` serve.mjs stopped on a malformed URL and served dot folders. It now answers 400, and 403 for any path with a segment starting with a dot (.git/, .claude/). The network interface is T13.
+- **T12** `fixed 2026-11-15` The run line at the top of tests/core.test.mjs failed on Node 24 and package.json had no scripts. The line is corrected; `npm test` and `npm start` work.
 
 ## Inconsistent
 
@@ -61,6 +65,8 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 - **I9** `open` Language code `jp` in Settings; the standard code is `ja` (js/dialogs.js:432). *read*
 - **I10** `open` The starter-update check compares the shipped library version with the browser copy's, but Save project file raises the same counter, so the comparison means little after a save (js/app.js:437). *suspected*
 - **I11** `open` Status: 62,271 of 62,273 entries are still `gen`; the review the status exists for has not happened, so it currently carries no information. *run*
+- **I12** `open` The app knows 9 region codes, the library uses 55. The theme and entry dialogs can tick only the 9 (other codes are kept and shown but cannot be added or removed there), the Export screen's region filter and the Default dialect setting offer only the 9 (js/model.js `REGIONS`, js/dialogs.js). *read*
+- **I13** `open` The app shows "Frequency list did not load (serve the folder over http)" for every load failure, including a missing or empty file on a working server (js/app.js:457). *read*
 
 ## Inefficient
 
@@ -117,7 +123,7 @@ Each item is one area to rewrite, checked against the code on 2026-11-15. Line n
 - **D6** `open` Screens (DESIGN.md section 10) describe things that are gone or different: "Rate themes…", sub-theme chips, a theme difficulty field, word-table columns, "a search overrides the filter" (the code narrows the search by the filter), longest entry default 3 (it is 4). Not described: the All themes screen, the Foreign / Locked / Popularity / Identifiability / Difficulty tree filters, `nameOk`, the "Shown as" column, the other-names expander, the Default dialect setting.
 - **D7** `open` Validation (DESIGN.md section 6) lacks `rule-theme`, `family-twice`, `alias-link-kind`, `alias-fullname`, `alias-us-root`, `overlap`, `theme-name`, `bad-rating`, `type`, and the case lint with its seven kinds and allow-list; "no difficulty" should read "no theme popularity".
 - **D8** `open` Outline format (DESIGN.md:89, :92) lists the dead tag `[d:3]` and lacks `[pop:n]`, `[ident:n]`, `[foreign]`.
-- **D9** `open` File layouts and commands: README and DESIGN.md section 11 leave out js/allthemes.js, breaks.js, caselint.js, caselint-allow.js (README also dom.js, state.js), data/breaks-en.txt, data/export/, tools/export-game.mjs, brk-tokens.mjs, brk-merge.mjs, migrate-pop.mjs, retype-phrases.mjs, tools/game/; README does not mention DESIGN-entries.md; "9 tests" is 14; the `GROUPS` block and the library-file argument of apply-words and the arguments of export-game are not documented.
+- **D9** `open` File layouts and commands: README and DESIGN.md section 11 leave out js/allthemes.js, breaks.js, caselint.js, caselint-allow.js (README also dom.js, state.js), data/breaks-en.txt, data/export/, tools/export-game.mjs, brk-tokens.mjs, brk-merge.mjs, migrate-pop.mjs, retype-phrases.mjs, tools/game/; README does not mention DESIGN-entries.md; "9 tests" is 18; the `GROUPS` block and the library-file argument of apply-words and the arguments of export-game are not documented.
 - **D10** `open` Stale counts and references: 134 closed sets and "all 49 have a note" (131 complete themes, all with notes); "1,327 information notes" for capitals (161); "section 6 of DESIGN.md" for the export (it is 8); a brief called "easy" (it is BRIEF-ease.md); the pilot described as 29 themes and usable (T2).
 - **D11** `open` Open items that are closed: DESIGN-entries.md section 8 (all three questions are answered later in the file), "the game repo is still on export format 1", "23 theme-name leaks still to settle" (3 warnings remain), "not yet applied: see phases 1-2", the 25 via-alias compound links (looks done), DESIGN.md section 13 "rating review pass" (partly done).
 - **D12** `open` DESIGN-entries.md section 10 is a dated log that mixes rules still in force with records of finished passes, and later entries reverse earlier ones without the earlier text changing. About 25 of its 55 entries state a rule that belongs in the main body.

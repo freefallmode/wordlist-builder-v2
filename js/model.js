@@ -15,6 +15,8 @@ export const TYPES = ['common', 'person', 'place', 'org', 'title', 'proper', 'ac
 export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named person or character', place: 'a named place', org: 'company, brand, team, group',
   title: 'book, film, song, game, artwork', proper: 'other proper name (event, era, deity)', acronym: 'letters said as letters or a word (NASA, UFO)', phrase: 'idiom or set phrase' };
 export const REGIONS = ['US', 'CA', 'UK', 'IE', 'AU', 'NZ', 'ZA', 'IN', 'TR'];
+// Regions after a dialog save: the ticked tick-box codes plus the codes that have no tick-box (BR, JP), kept as they were.
+export const mergeRegions = (old, ticked) => [...ticked, ...old.filter(c => !REGIONS.includes(c))];
 export const FAMILIARITY_HELP = ['not rated', '1 every child knows it', '2 nearly every adult', '3 many adults, not all', '4 interest, job or region', '5 few people'];
 export const TYPICALITY_HELP = ['not rated', '1 the first words anyone thinks of', '2 typical', '3 ordinary member', '4 less typical', '5 real but peripheral'];
 export const IDENT_HELP = ['not rated', '1 obvious: four members and the theme is clear', '2 clear', '3 needs a moment', '4 hard: broad, or the link is a trick', '5 obscure: hard to guess even with all four'];
@@ -168,7 +170,7 @@ export function deleteEntry(P, e) {
   if (als.length) {
     // The first alias becomes the root; it keeps what it was getting from the old root.
     const [first, ...rest] = als;
-    for (const [tid, v] of Object.entries(e.typ)) if (!(tid in first.typ)) first.typ[tid] = difficultyBand(P, first, tid);
+    for (const [tid, v] of Object.entries(e.typ)) if (!(tid in first.typ)) first.typ[tid] = v;
     first.aliasOf = 0; first.aliasKind = '';
     for (const a of rest) a.aliasOf = first.id;
   }

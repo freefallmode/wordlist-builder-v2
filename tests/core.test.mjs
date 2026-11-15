@@ -1,13 +1,13 @@
-// Run: node --test tests
+// Run: node --test tests/core.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, moveTheme, descendants, blendRatings, themeDifficulty } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
-import { parseFreq, setFreq, zipf } from '../js/freq.js';
+import { parseFreq, setFreq, zipf, loadFreq, freqLoaded } from '../js/freq.js';
 
 const tree = `Things:
   fruits
@@ -190,4 +190,45 @@ test('validate checks that a rule naming a category theme points at an existing 
   assert.ok(!validate(P).some(x => /no theme with the id/.test(x.msg)));
   P.themes.find(t => t.id === 'starts_with_a_color').rule = 'starts:@nosuch'; reindex(P);
   assert.ok(validate(P).some(x => /no theme with the id nosuch/.test(x.msg)));
+});
+
+test('export: longest entry in words counts words split on whitespace', () => {
+  const P = project();
+  for (const w of ['apple', 'pear', 'plum', 'grapes', 'star fruit']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  reindex(P);
+  const t = buildExport(P, { maxEntryWords: 1 }).file.entries.text;
+  assert.ok(t.includes('grapes'));
+  assert.ok(!t.includes('star fruit'));
+});
+
+test('dialog save keeps region codes that have no tick-box', () => {
+  assert.deepEqual(mergeRegions(['US', 'BR', 'JP'], ['UK']), ['UK', 'BR', 'JP']);
+  assert.deepEqual(mergeRegions(['US', 'UK'], []), []);
+  assert.deepEqual(mergeRegions([], ['US']), ['US']);
+});
+
+test('deleting a root gives the promoted alias the root rating in each theme', () => {
+  const P = project();
+  const root = addEntry(P, 'couch', { fam: 1, typ: { fruits: 1 } });
+  const al = addEntry(P, 'divan', { fam: 4, aliasOf: root.id, aliasKind: 'synonym' });
+  reindex(P);
+  deleteEntry(P, root); reindex(P);
+  assert.equal(al.aliasOf, 0);
+  assert.equal(al.typ.fruits, 1);
+});
+
+test('loadFreq fails on an HTTP error or an empty list and leaves the list unloaded', async () => {
+  const realFetch = globalThis.fetch, reply = (status, body) => async () => new Response(body, { status });
+  try {
+    setFreq(null);
+    globalThis.fetch = reply(404, 'not found');
+    await assert.rejects(loadFreq('x'));
+    assert.equal(freqLoaded(), false);
+    globalThis.fetch = reply(200, '');
+    await assert.rejects(loadFreq('x'));
+    assert.equal(freqLoaded(), false);
+    globalThis.fetch = reply(200, '50 ice\n');
+    await loadFreq('x');
+    assert.equal(zipf('ice'), 5);
+  } finally { globalThis.fetch = realFetch; setFreq(null); }
 });

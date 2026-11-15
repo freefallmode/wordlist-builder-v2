@@ -9,7 +9,9 @@ const port = +process.argv[2] || 8100;
 const types = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.txt': 'text/plain; charset=utf-8', '.svg': 'image/svg+xml' };
 
 createServer(async (req, res) => {
-  let p = decodeURIComponent(new URL(req.url, 'http://x').pathname);
+  let p;
+  try { p = decodeURIComponent(new URL(req.url, 'http://x').pathname); } catch { res.writeHead(400).end('bad request'); return; }
+  if (p.split(/[\\/]/).some(s => s.startsWith('.'))) { res.writeHead(403).end(); return; }   // .git, .claude and other dot folders are not served
   if (p.endsWith('/')) p += 'index.html';
   const file = normalize(join(root, p));
   if (!file.startsWith(root)) { res.writeHead(403).end(); return; }

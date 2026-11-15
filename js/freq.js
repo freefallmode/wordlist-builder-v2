@@ -17,7 +17,11 @@ export function parseFreq(text) {
 
 export async function loadFreq(url = 'data/freq-en.txt') {
   if (F) return F;
-  F = parseFreq(await (await fetch(url)).text());
+  const r = await fetch(url);
+  if (!r.ok) throw Error(`Frequency list: HTTP ${r.status}`);
+  const m = parseFreq(await r.text());
+  if (!m.size) throw Error('Frequency list is empty');   // the list stays unloaded, so the app says so
+  F = m;
   return F;
 }
 export function setFreq(m) { F = m; }

@@ -2,7 +2,7 @@
 
 A browser tool for building theme-based word libraries for a sorting game: levels show sets of four words from 8 to 12 themes, and the player sorts each word into its theme. Static files, no build step.
 
-Run it: `node serve.mjs` then open http://localhost:8100/ (opened as `file://` the modules and frequency list cannot load). Tests: `node --test tests/core.test.mjs`.
+Run it: `node serve.mjs` (or `npm start`) then open http://localhost:8100/ (opened as `file://` the modules and frequency list cannot load). Tests: `npm test` (`node --test tests/core.test.mjs`).
 
 ## Files
 

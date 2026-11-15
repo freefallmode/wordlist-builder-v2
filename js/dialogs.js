@@ -2,7 +2,7 @@
 import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
-import { POS, TYPES, TYPE_HELP, REGIONS, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, difficultyBand, eff,
+import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, difficultyBand, eff,
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, themeLocked, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
@@ -12,16 +12,17 @@ import { MODELS, getKey, setKey, getModel, setModel, generateWords, SPREADS } fr
 
 const FAMILIARITY_OPTS = FAMILIARITY_HELP.map((l, i) => [i, l]);
 const TYPICALITY_OPTS = [[0, 'auto'], ...TYPICALITY_HELP.slice(1).map((l, i) => [i + 1, l])];
+const POPULARITY_OPTS = [[0, 'not rated'], [1, '1 headline themes people love (fruits, weather, the planets)'], [2, '2 popular'], [3, '3 ordinary'], [4, '4 less popular'], [5, '5 narrow, dry or niche']];   // theme popularity, DESIGN.md section 5
 
 // Region ticks in the same box, with all / none links, as the region section of the Export window.
 // The region section: the "region-specific" checkbox, which switches the region ticks on and off, with all / none and the ticks on one line in a box (sits right after the flag checkboxes).
-const regionBox = (boxes, label, hint) => {
+const regionBox = (boxes, label, hint, extra = []) => {   // extra: codes without a tick-box, shown as text and kept on save
   const all = on => boxes.forEach(b => { b.querySelector('input').checked = on; });
   const btns = [h('button.link', { type: 'button', onclick: () => all(true) }, 'all'), h('button.link', { type: 'button', onclick: () => all(false) }, 'none')];
   const lock = () => { const off = !toggle.querySelector('input').checked; boxes.forEach(b => { b.querySelector('input').disabled = off; }); btns.forEach(b => { b.disabled = off; }); };
   const toggle = check(label, boxes.some(b => b.querySelector('input').checked), { onchange: ev => { if (!ev.target.checked) all(false); lock(); } });
   lock();
-  return h('div.regionbox', {}, h('div.chips', [toggle, ...btns, ...boxes]), h('div.hint', hint));
+  return h('div.regionbox', {}, h('div.chips', [toggle, ...btns, ...boxes, extra.length > 0 && h('span.hint', 'also: ' + extra.join(', '))]), h('div.hint', hint));
 };
 
 // Theme picker by name: a text box with a datalist. Returns { input, get() } where get() gives a theme id or null.
@@ -47,7 +48,7 @@ export async function editTheme(t, isNew = false) {
     note: h('textarea', { rows: 3 }, w.note),
     tkind: select(THEME_KINDS.map(k => [k, k]), w.tkind || 'category'),
     rule: h('input', { value: w.rule || '', placeholder: 'hidden:tree, rhyme:ake, palindrome, compound-end:bag, compound-start:snow' }),
-    pop: select(TYPICALITY_OPTS.map(([v, l]) => [v, v ? l : 'not rated']), w.pop || 0),
+    pop: select(POPULARITY_OPTS, w.pop || 0),
     ident: select(IDENT_HELP.map((l, v) => [v, l]), w.ident || 0),
     locked: select([['auto', 'Follow the kind (locked for wordplay, compound and language-specific)'], ['locked', 'Locked: show exactly the linked word'], ['free', 'Allowed: regional and family words may stand in']], w.locked === undefined ? 'auto' : w.locked ? 'locked' : 'free'),
   };
@@ -60,7 +61,7 @@ export async function editTheme(t, isNew = false) {
     field('Name', f.name),
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
     h('div.flags', Object.values(boxes)),
-    regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).'),
+    regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).', w.region.filter(c => !REGIONS.includes(c))),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang', 'foreign'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
     field('Rule', f.rule, 'Wordplay and compound themes only: how the game tests a word. hidden:<what>, rhyme:<ending>, palindrome, anagram, homophone, onomatopoeia, double-letters, starts:<what>, ends:<ending> (for a category, name the theme by id: starts:@colors, hidden:@birds), contains:<letters>, compound-end:<word> for ___ word, compound-start:<word> for word ___, or other.'),
@@ -88,7 +89,7 @@ export async function editTheme(t, isNew = false) {
       if (tk === 'category') delete w.tkind; else w.tkind = tk;
       if ((tk === 'wordplay' || tk === 'compound') && rule) w.rule = rule; else delete w.rule;
       for (const k of flags) w[k] = boxes[k].querySelector('input').checked;
-      w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
+      w.region = mergeRegions(t.region, regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c));
       const oldParent = t.parent;
       Object.assign(t, w, { parent: oldParent });
       if (!w.tkind) delete t.tkind;
@@ -207,7 +208,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
     h('div.two', {}, field('Familiarity (the word itself)', f.fam, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
     h('div.flags', Object.values(boxes)),
-    regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).'),
+    regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).', w.region.filter(c => !REGIONS.includes(c))),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
     h('h3', 'Themes'), linksBox,
     aliasBlock,
@@ -234,7 +235,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     Object.assign(w, { text, gloss, pos: f.pos.value, type: f.type.value, fam: +f.fam.value, status: f.status.value, note: f.note.value.trim(), aliasOf,
       aliasKind: aliasOf ? (f.kind.value || 'synonym') : '' });
     for (const k of Object.keys(flags)) w[k] = boxes[k].querySelector('input').checked;
-    w.region = regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c);
+    w.region = mergeRegions(e.region, regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c));
     Object.assign(e, w);
     if (isNew) { e.id = P.nextId++; P.entries.push(e); }
     A.changed();
