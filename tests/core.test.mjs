@@ -8,6 +8,7 @@ import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
 import { parseFreq, setFreq, zipf, loadFreq, freqLoaded } from '../js/freq.js';
+import { setBreaks, loadBreaks, breaksLoaded } from '../js/breaks.js';
 
 const tree = `Things:
   fruits
@@ -289,6 +290,30 @@ test('loadFreq fails on an HTTP error or an empty list and leaves the list unloa
     await loadFreq('x');
     assert.equal(zipf('ice'), 5);
   } finally { globalThis.fetch = realFetch; setFreq(null); }
+});
+
+test('loadBreaks fails on an HTTP error or an empty table; a loaded table puts break points in the export', async () => {
+  const realFetch = globalThis.fetch, reply = (status, body) => async () => new Response(body, { status });
+  const P = newProject(); P.themes = parseOutline('fruits\n').themes;
+  for (const w of ['apple', 'pear', 'plum', 'fig', 'grapefruit']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  reindex(P);
+  const brk = f => f.entries.breaks[f.entries.text.indexOf('grapefruit')];
+  try {
+    setBreaks(new Map());
+    globalThis.fetch = reply(404, 'not found');
+    await assert.rejects(loadBreaks('x'));
+    globalThis.fetch = reply(200, '');
+    await assert.rejects(loadBreaks('x'));
+    assert.equal(breaksLoaded(), false);
+    assert.deepEqual(brk(buildExport(P).file), []);
+    globalThis.fetch = reply(200, 'grapefruit=grape-fruit\n');
+    await loadBreaks('x');
+    assert.equal(breaksLoaded(), true);
+    const { file } = buildExport(P);
+    assert.deepEqual(brk(file), [5]);
+    assert.equal(file.entries.breaks.length, file.entries.text.length);
+    assert.equal(file.themeFields.at(-1), 'breaks');
+  } finally { globalThis.fetch = realFetch; setBreaks(new Map()); }
 });
 
 test('parseProject works out nextId for 200,000 entries without overflowing the stack', () => {

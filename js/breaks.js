@@ -16,7 +16,18 @@ export function parseBreaks(text) {
   }
   return m;
 }
-export function setBreaks(m) { table = m; }
+let loaded = false;
+export function setBreaks(m) { table = m; loaded = m.size > 0; }
+export const breaksLoaded = () => loaded;
+export async function loadBreaks(url = 'data/breaks-en.txt') {   // browser: like loadFreq, an HTTP error or an empty table throws and leaves the table unloaded
+  if (loaded) return table;
+  const r = await fetch(url);
+  if (!r.ok) throw Error(`Break table: HTTP ${r.status}`);
+  const m = parseBreaks(await r.text());
+  if (!m.size) throw Error('Break table is empty');
+  setBreaks(m);
+  return table;
+}
 
 // The letter offsets inside a word where its hyphenated form has a hyphen (apostrophes count as characters).
 export function offsetsOf(word, hyphenated) {

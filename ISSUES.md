@@ -63,7 +63,7 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 
 ## Inconsistent
 
-- **I1** `open` The browser export and the Node export differ for the same library. Browser: no break points at all (nothing calls `setBreaks`), Zipf only if ticked and all zeros if the list has not loaded, no case lint, the report notes are not shown, file name `wordlist-en-v366.json`. Node: breaks, Zipf always, lint count, built-in presets only, file name `wordlist-game-family.json`. The committed export matches a fresh Node export of v366. *run*
+- **I1** `fixed 2026-11-15` (break points only: the app now loads data/breaks-en.txt with `loadBreaks` and the Export dialog retries the load and says when it failed; the other differences below remain, listed as I16) The browser export and the Node export differ for the same library. Browser: no break points at all (nothing calls `setBreaks`), Zipf only if ticked and all zeros if the list has not loaded, no case lint, the report notes are not shown, file name `wordlist-en-v366.json`. Node: breaks, Zipf always, lint count, built-in presets only, file name `wordlist-game-family.json`. The committed export matches a fresh Node export of v366. *run*
 - **I2** `open` A browser export carries the last saved library version even when the browser copy has unsaved edits, so two different exports can have the same version (js/store.js:77). *read*
 - **I4** `open` "+ Add words…" links whichever entry matches the text, including a spelling or form alias, and does not check the alias family; generation handles both (js/dialogs.js:263 against :313-315). *read*
 - **I5** `open` The Export screen starts from a fixed minimum of 4 words per theme and ignores the library setting `minWords` (js/dialogs.js:377). *read*
@@ -77,6 +77,7 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 - **I13** `fixed 2026-11-15` (the message separates a failed fetch from an HTTP error or an empty list and shows the reason) The app shows "Frequency list did not load (serve the folder over http)" for every load failure, including a missing or empty file on a working server (js/app.js:457). *read*
 - **I14** `open` js/app.js is stored with CRLF line endings, the other source files with LF. *read*
 - **I15** `open` While autosave is off because the browser copy is unreadable, the status line still begins "File saved"; and in a browser where IndexedDB never works the unreadable-library dialog appears on every load (js/app.js). *read*
+- **I16** `open` Remaining browser/Node export differences from I1: Zipf only if ticked (all zeros if the list has not loaded), no case lint, no report notes shown, file name `wordlist-<lang>-v<version>.json`, presets beyond the built-in ones. *read*
 - **I3** `fixed 2026-11-15` Two capital rules disagreed. Checks keeps one entry-level note (`case`: an entry typed common whose own text starts with a capital) and now uses the lint's definition of a letter-shaped term and skips trademarks, as the lint does: 161 notes became 47. What a theme shows is the lint's job (B2).
 
 ## Inefficient

@@ -5,6 +5,7 @@ import { parseOutline, formatOutline, mergeOutline } from './outline.js';
 import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
+import { loadBreaks } from './breaks.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, showValidation, showExport, showSettings, openPath } from './dialogs.js';
 import { isAncestor } from './model.js';
 import { allWordsView } from './allwords.js';
@@ -472,6 +473,7 @@ async function boot() {
   if (fresh) autosave();   // writes nothing while held
   $('#save').onclick = () => { if (held) unreadable(); };
   loadFreq().then(() => A.render()).catch(e => toast('Frequency list did not load: ' + (e instanceof TypeError ? 'could not fetch it (serve the folder over http)' : e.message) + '.', true));
+  loadBreaks().catch(e => console.warn('Break table did not load; exports will have no break points.', e));   // the Export dialog retries and says so
   $('#search').addEventListener('input', debounce(ev => { A.search = ev.target.value; renderTree(); }, 120));
   $('#btn-checks').onclick = showValidation;
   $('#btn-export').onclick = showExport;

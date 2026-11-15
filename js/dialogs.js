@@ -5,6 +5,7 @@ import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex,
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
+import { loadBreaks } from './breaks.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } from './export.js';
 import { download } from './store.js';
@@ -409,12 +410,14 @@ export async function showExport() {
   let last = null;
   const run = async () => {
     reindex(P);
+    let brkErr = null; try { await loadBreaks(); } catch (e) { brkErr = e instanceof TypeError ? 'could not fetch it (serve the folder over http)' : e.message; }   // the table is English-only, as in the CLI export
     last = buildExport(P, o);
     const text = JSON.stringify(last.file);
     const s = await sizeOf(text);
     const r = last.report;
     info.replaceChildren(...[h('p', {}, `${plural(r.entriesOut, 'entry')} of ${r.entriesIn.toLocaleString()} · ${plural(r.themesOut, 'theme')} of ${r.themesIn.toLocaleString()}`),
       h('p', {}, `Size ${fmtBytes(s.raw)}${s.gz ? ' · gzipped ' + fmtBytes(s.gz) : ''}`),
+      brkErr && h('p.hint', `Break table did not load (${brkErr}): this file has no break points, so the game will not hyphenate long words.`),
       r.droppedThin.length > 0 && h('p.hint', `${r.droppedThin.length} themes left out for having fewer than ${o.minWords} words after filtering.`)].filter(Boolean));
     return text;
   };
