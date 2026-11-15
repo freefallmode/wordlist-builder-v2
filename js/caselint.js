@@ -4,6 +4,7 @@
 // Returns issues { kind, msg, themeId, entryId }; the kinds are listed below. validate() adds each as a warning of kind `case-<kind>`; the export prints the count.
 import { themeLocked } from './model.js';
 import { CASE_OK } from './caselint-allow.js';
+import { PROPER_WORDS, LOWER_OK } from './caselint-words.js';
 
 const PROPER = new Set(['person', 'place', 'org', 'title', 'proper']);
 const isProper = e => PROPER.has(e.type) || !!e.tm;
@@ -13,7 +14,7 @@ const norm = s => s.toLowerCase();
 
 export function caseLint(P) {
   const out = [], ix = P.ix;
-  const add = (kind, msg, t, e) => !(kind !== 'cap-common' && e && t && CASE_OK.has(e.id + '|' + t.id)) && out.push({ kind, msg, themeId: t && t.id, entryId: e && e.id });
+  const add = (kind, msg, t, e) => !(e && t && CASE_OK.has(e.id + '|' + t.id)) && out.push({ kind, msg, themeId: t && t.id, entryId: e && e.id });
   const byText = new Map();
   for (const e of P.entries) if (!e.aliasOf) { const k = norm(e.text); if (!byText.has(k)) byText.set(k, []); byText.get(k).push(e); }
   const hasUkAlias = new Map();
@@ -61,7 +62,19 @@ export function caseLint(P) {
       stub: for (const w of ws) for (const s of stems(w)) { const f = (byText.get(norm(e.text) + ' ' + s) || []).find(x => !(x.typ && x.typ[tid] != null)); if (f) { add('bare-stub', `"${e.text}" is a bare capitalised word in "${t.name}" and the full term "${f.text}" exists but is not linked there.`, t, e); break stub; } }   // one issue per link
     }
   }
+  // 5. a lowercase entry typed common or phrase that contains a word always written with a capital (french fries, yorkshire terrier): by entry, not by link
+  for (const e of P.entries) {
+    if ((e.type !== 'common' && e.type !== 'phrase') || LOWER_OK.has(e.id) || /\p{Lu}/u.test(e.text)) continue;
+    const ws = properWordsIn(e.text);
+    if (ws.length) add('lower-proper-word', `"${e.text}" is lowercase and typed ${e.type} but "${ws[0]}" is written with a capital: capitalise it and type the entry proper, or list the entry in LOWER_OK (js/caselint-words.js) if the word is not a name here.`, null, e);
+  }
   return out;
+}
+
+// the words of a phrase (two or more words) that are in PROPER_WORDS, lowercase
+export function properWordsIn(text) {
+  const ws = text.toLowerCase().split(/[\s/]+/).map(w => w.replace(/^[^\p{L}\d]+|[^\p{L}\d]+$/gu, '')).filter(Boolean);
+  return ws.length < 2 ? [] : ws.filter(w => PROPER_WORDS.has(w));
 }
 
 // themes whose title says "names" and whose members are almost all proper: [theme, entry, proper share] for each member that is a common word

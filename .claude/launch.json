@@ -4,8 +4,20 @@
     {
       "name": "wordlist-builder-v2",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["serve.mjs", "8100"],
+      "runtimeArgs": [
+        "serve.mjs",
+        "8100"
+      ],
       "port": 8100
+    },
+    {
+      "name": "wordlist-builder-v2-test",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "serve.mjs",
+        "8141"
+      ],
+      "port": 8141
     }
   ]
 }

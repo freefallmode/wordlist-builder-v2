@@ -293,8 +293,8 @@ test('outline round trip of the real library changes nothing (format, parse, mer
 test('case lint runs in validate: a capital shown on an entry typed common is a case-cap-common warning', async () => {
   const { caseLint } = await import('../js/caselint.js');
   const P = project();
-  addEntry(P, 'vidalia onion', { fam: 3, typ: { fruits: 3 }, show: { fruits: 'Vidalia' } });
-  addEntry(P, 'Vidalia onion', { type: 'proper', fam: 3, typ: { citrus: 3 }, show: { citrus: 'Vidalia' } });
+  addEntry(P, 'zembla onion', { fam: 3, typ: { fruits: 3 }, show: { fruits: 'Zembla' } });
+  addEntry(P, 'Zembla onion', { type: 'proper', fam: 3, typ: { citrus: 3 }, show: { citrus: 'Zembla' } });
   addEntry(P, 'X-ray', { fam: 1, typ: { fruits: 1 } });   // letter-shaped: fine in the lint and in the entry check
   reindex(P);
   assert.deepEqual(caseLint(P).map(i => [i.kind, i.themeId]), [['cap-common', 'fruits']]);
@@ -311,4 +311,18 @@ test('case lint bare-stub: one issue per link, and the full term is found throug
   reindex(P);
   const stubs = caseLint(P).filter(i => i.kind === 'bare-stub').map(i => i.themeId).sort();
   assert.deepEqual(stubs, ['apple_pies', 'cakes_and_cake_pops']);
+});
+
+test('case lint lower-proper-word: a lowercase phrase with a nationality word is flagged, the capitalised proper entry is not', async () => {
+  const { caseLint } = await import('../js/caselint.js');
+  const { LOWER_OK } = await import('../js/caselint-words.js');
+  const P = project();
+  const a = addEntry(P, 'french fries', { fam: 1, typ: { fruits: 1 } });
+  addEntry(P, 'French toast', { type: 'proper', fam: 1, typ: { fruits: 1 } });
+  addEntry(P, 'french', { fam: 1, typ: { fruits: 1 } });   // one word alone is not judged by this rule
+  const b = addEntry(P, 'venetian blind', { fam: 2, typ: { fruits: 2 } });
+  const added = !LOWER_OK.has(b.id); LOWER_OK.add(b.id);   // judged right in lowercase (the real list holds library ids, so leave it as it was)
+  reindex(P);
+  try { assert.deepEqual(caseLint(P).filter(i => i.kind === 'lower-proper-word').map(i => i.entryId), LOWER_OK.has(a.id) ? [] : [a.id]); }
+  finally { if (added) LOWER_OK.delete(b.id); }
 });

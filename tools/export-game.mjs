@@ -25,6 +25,6 @@ fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, JSON.stringify(file));
 console.log(`${out}: ${(fs.statSync(out).size / 1e6).toFixed(1)} MB, library v${P.lib.version}, ${report.themesOut} themes, ${report.entriesOut} entries`);
 for (const n of report.notes) console.log(' ', n);
-{ const all = caseLint(P), c = all.filter(i => i.kind !== 'cap-common'), cc = all.length - c.length;
-  console.log(`  case lint: ${c.length} issue${c.length === 1 ? '' : 's'} (capital or sense mismatches; see js/caselint.js)` + (cc ? `, plus ${cc} capital${cc === 1 ? '' : 's'} shown on entries typed common (cap-common: listed in Checks and by tools/gen/lint-show.mjs, not yet counted by --strict; ISSUES.md B3)` : ''));
+{ const c = caseLint(P);   // every kind counts
+  console.log(`  case lint: ${c.length} issue${c.length === 1 ? '' : 's'} (capital or sense mismatches; see js/caselint.js; Checks and tools/gen/lint-show.mjs list them)`);
   if (flags.includes('--strict') && c.length) process.exit(1); }

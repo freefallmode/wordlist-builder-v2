@@ -73,4 +73,8 @@ export const CASE_OK = new Set([
   '1680|unisex_names', // mountain ash in unisex names
   '29776|old_fashioned_names', // myrtle in old-fashioned names
   '29903|names_that_are_places', // aurora in names that are places
+  '7109|stars', // sun in stars: shown Sun, the name of the star among Sirius and Vega (the entry is the everyday word)
+  '15383|brand_names_used_as_words', // plaster in brand names used as words: shown Band-Aid, the brand the theme is about
+  '23024|wild_west_town', // Deadwood (the town) in Wild West town, beside the common word deadwood
+  '7691|colors_named_after_places', // burgundy the colour in colors named after places, beside Burgundy the wine and the region
 ]);
