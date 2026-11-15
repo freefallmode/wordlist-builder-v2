@@ -3,7 +3,7 @@ import { h, $, select, check, field, dialog, toast, plural, fmtBytes } from './d
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, linkIds, difficultyBand, eff,
-  FLAG_HELP, pathOf, deleteEntry, deleteTheme, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, themeLocked, descendants } from './model.js';
+  FLAG_HELP, pathOf, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf, themeLocked, descendants } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } from './export.js';
@@ -236,7 +236,9 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
       aliasKind: aliasOf ? (f.kind.value || 'synonym') : '' });
     for (const k of Object.keys(flags)) w[k] = boxes[k].querySelector('input').checked;
     w.region = mergeRegions(e.region, regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c));
+    const unlinked = isNew ? [] : Object.keys(e.typ).filter(tid => !(tid in w.typ));
     Object.assign(e, w);
+    for (const tid of unlinked) unlinkEntry(P, e, tid);   // also drops its form used, name allowance and synonym groups there
     if (isNew) { e.id = P.nextId++; P.entries.push(e); }
     A.changed();
   };

@@ -163,25 +163,69 @@ export function dialectMember(P, e) {
 // ---------- edits ----------
 
 export function linkEntry(P, e, tid, typ = 0) { e.typ[tid] = typ; }
-export function unlinkEntry(P, e, tid) { delete e.typ[tid]; }
+// Rewrites the synonym groups of theme t through fix (which returns the group itself when it has nothing to change); a changed group left with fewer than two members goes.
+function editGroups(t, fix) {
+  if (!t?.groups) return;
+  const gs = [];
+  for (const g of t.groups) { const n = fix(g); if (n === g || n.length > 1) gs.push(n); }
+  t.groups = gs; if (!gs.length) delete t.groups;
+}
+const dropIds = ids => g => g.some(id => ids.has(id)) ? g.filter(id => !ids.has(id)) : g;
+// Unlinking also drops what the entry held for that theme: its shown text, and (once it is no longer in the theme at all) the form it used, its name allowance and its place in the theme's synonym groups (with its aliases that leave with it).
+export function unlinkEntry(P, e, tid) {
+  delete e.typ[tid]; if (e.show) delete e.show[tid];
+  const r = e.aliasOf && P.entries.find(x => x.id === e.aliasOf);
+  if (r && tid in r.typ) return;   // an alias still in the theme through its root
+  if (e.use) delete e.use[tid];
+  if (e.nameOkIn?.includes(tid)) e.nameOkIn = e.nameOkIn.filter(x => x !== tid);
+  editGroups(P.themes.find(t => t.id === tid), dropIds(new Set([e.id, ...(e.aliasOf ? [] : P.entries.filter(a => a.aliasOf === e.id && !(tid in a.typ)).map(a => a.id))])));
+}
 
+const SAME_WORD = ['spelling', 'form'];   // alias kinds that are the root's own word written another way: the root's word-level data fits them
+// Deleting a root promotes an alias: the first spelling, else the first that is not a form, else the first. It takes the root's place everywhere:
+// its links (with the root's rating where it had none of its own), its synonym groups, adult and sensitive (they follow the meaning), its region when it has none of its own (the export judged it on the root's),
+// and the shown text of a theme when it is the same word or its text contains that text. When it is the same word (spelling, form) it also takes trademark, vulgar, the name allowances and the forms the themes used.
+// When it is another word, the root's spellings and abbreviations become its synonyms (a spelling of the old root is not a spelling of the new one); forms keep their kind.
+// The deleted id leaves every synonym group and every `use`.
 export function deleteEntry(P, e) {
   const als = P.entries.filter(a => a.aliasOf === e.id);
+  let first = null;
   if (als.length) {
-    // The first alias becomes the root; it keeps what it was getting from the old root.
-    const [first, ...rest] = als;
+    first = als.find(a => a.aliasKind === 'spelling') || als.find(a => a.aliasKind !== 'form') || als[0];
+    const same = SAME_WORD.includes(first.aliasKind);
     for (const [tid, v] of Object.entries(e.typ)) if (!(tid in first.typ)) first.typ[tid] = v;
+    first.adult ||= e.adult; first.sensitive ||= e.sensitive;
+    if (!first.region.length) first.region = [...e.region];
+    first.show ||= {};
+    for (const [tid, s] of Object.entries(e.show || {})) if (!first.show[tid] && (same || first.text.toLowerCase().includes(s.toLowerCase()))) first.show[tid] = s;
+    if (same) {
+      first.tm ||= e.tm; first.vulgar ||= e.vulgar;
+      first.nameOkIn = [...new Set([...(first.nameOkIn || []), ...(e.nameOkIn || [])])];
+      first.use ||= {};
+      for (const [tid, id] of Object.entries(e.use || {})) if (id !== first.id && !first.use[tid] && als.some(a => a.id === id)) first.use[tid] = id;
+    }
     first.aliasOf = 0; first.aliasKind = '';
-    for (const a of rest) a.aliasOf = first.id;
+    for (const a of als) if (a !== first) { a.aliasOf = first.id; if (!same && (a.aliasKind === 'spelling' || a.aliasKind === 'abbreviation')) a.aliasKind = 'synonym'; }
   }
+  for (const t of P.themes) {
+    editGroups(t, first ? g => g.includes(e.id) ? [...new Set(g.map(id => id === e.id ? first.id : id))] : g : dropIds(new Set([e.id])));
+    const hit = first && (t.groups || []).filter(g => g.includes(first.id));
+    if (hit?.length > 1) t.groups = [...t.groups.filter(g => !hit.includes(g)), [...new Set(hit.flat())]];   // a word is in one group per theme
+  }
+  for (const x of P.entries) if (x.use) for (const [tid, id] of Object.entries(x.use)) if (id === e.id) delete x.use[tid];
   P.entries = P.entries.filter(x => x !== e);
 }
 
+// The theme a wordplay rule names (starts:@colors), or ''.
+export const ruleTheme = t => /^(?:starts|ends|hidden):@(.+)$/.exec(t.rule || '')?.[1] || '';
+// Deleting a theme also drops what entries held for it (shown text, form used, name allowance). It is refused while another theme's rule names it.
 export function deleteTheme(P, tid) {
   const t = P.ix.theme.get(tid);
   if (!t) return;
+  const by = P.themes.filter(x => x !== t && ruleTheme(x) === tid);
+  if (by.length) throw Error(`"${t.name}" cannot be deleted: the rule of ${by.map(x => `"${x.name}"`).join(', ')} names it. Change that rule first.`);
   for (const k of P.themes) if (k.parent === tid) k.parent = t.parent;
-  for (const e of P.entries) delete e.typ[tid];
+  for (const e of P.entries) { delete e.typ[tid]; if (e.show) delete e.show[tid]; if (e.use) delete e.use[tid]; if (e.nameOkIn?.includes(tid)) e.nameOkIn = e.nameOkIn.filter(x => x !== tid); }
   P.themes = P.themes.filter(x => x !== t);
 }
 

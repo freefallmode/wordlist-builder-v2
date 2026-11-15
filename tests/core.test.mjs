@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
@@ -215,6 +215,64 @@ test('deleting a root gives the promoted alias the root rating in each theme', (
   deleteEntry(P, root); reindex(P);
   assert.equal(al.aliasOf, 0);
   assert.equal(al.typ.fruits, 1);
+});
+
+test('B12: deleting a theme or an entry, or unlinking, leaves no stale reference', () => {
+  const P = project();
+  const fr = P.themes.find(t => t.id === 'fruits'), ci = P.themes.find(t => t.id === 'citrus');
+  const rain = addEntry(P, 'rain', { typ: { fruits: 1, citrus: 2 }, show: { citrus: 'r' }, nameOkIn: ['fruits', 'citrus'] });
+  const rainy = addEntry(P, 'rainy', { aliasOf: rain.id, aliasKind: 'form' });
+  const fall = addEntry(P, 'rainfall', { typ: { fruits: 2, citrus: 2 } }), fig = addEntry(P, 'fig', { typ: { fruits: 1, citrus: 1 } });
+  rain.use = { fruits: rainy.id, citrus: rainy.id };
+  fr.groups = [[rain.id, fall.id, fig.id], [7, 8]]; ci.groups = [[rain.id, fall.id]];
+  P.themes.push({ id: 'starts_fruit', name: 'starts with a fruit', parent: null, group: false, enabled: true, tkind: 'wordplay', rule: 'starts:@fruits', region: [] });
+  reindex(P);
+  // a theme named in another theme's rule cannot go, and nothing changes
+  const before = structuredClone(P.entries);
+  assert.throws(() => deleteTheme(P, 'fruits'), /starts with a fruit/);
+  assert.deepEqual(P.entries, before);
+  // deleting citrus drops its shown text, form used and name allowance
+  deleteTheme(P, 'citrus'); reindex(P);
+  assert.deepEqual([rain.typ, rain.show, rain.use, rain.nameOkIn], [{ fruits: 1 }, {}, { fruits: rainy.id }, ['fruits']]);
+  // unlinking drops the form used, the name allowance and the synonym group place; an untouched group stays as it was
+  unlinkEntry(P, rain, 'fruits'); reindex(P);
+  assert.deepEqual([rain.use, rain.nameOkIn, fr.groups], [{}, [], [[fall.id, fig.id], [7, 8]]]);
+  // deleting an entry takes it out of the groups (a group left with one member goes) and out of other entries' use
+  rain.typ.fruits = 1; rain.use = { fruits: rainy.id }; fr.groups = [[rain.id, fall.id], [7, 8]]; reindex(P);
+  deleteEntry(P, rainy); deleteEntry(P, fall); reindex(P);
+  assert.deepEqual([rain.use, fr.groups], [{}, [[7, 8]]]);
+  assert.ok(!validate(P).some(i => /^(group-small|rule-theme)$/.test(i.kind)));
+});
+
+test('B19: the promoted alias takes the root place: links, groups, meaning flags, region, shown text; a spelling is preferred', () => {
+  const P = project();
+  const fr = P.themes.find(t => t.id === 'fruits');
+  const root = addEntry(P, 'color', { fam: 1, typ: { fruits: 2 }, adult: true, sensitive: true, tm: true, vulgar: true, region: ['US'], show: { fruits: 'col' }, nameOkIn: ['fruits'] });
+  const syn = addEntry(P, 'hue', { fam: 3, aliasOf: root.id, aliasKind: 'synonym' });
+  const sp = addEntry(P, 'colour', { fam: 1, aliasOf: root.id, aliasKind: 'spelling', region: ['UK'] });
+  const form = addEntry(P, 'colors', { aliasOf: root.id, aliasKind: 'form' });
+  const other = addEntry(P, 'tint', { typ: { fruits: 3 } });
+  root.use = { fruits: form.id }; fr.groups = [[root.id, other.id]];
+  reindex(P);
+  deleteEntry(P, root); reindex(P);
+  assert.equal(sp.aliasOf, 0);   // the spelling, not the first alias, takes the root place
+  assert.deepEqual([syn.aliasOf, syn.aliasKind, form.aliasOf, form.aliasKind], [sp.id, 'synonym', sp.id, 'form']);
+  assert.deepEqual([sp.typ, sp.show, sp.use, sp.nameOkIn, sp.region], [{ fruits: 2 }, { fruits: 'col' }, { fruits: form.id }, ['fruits'], ['UK']]);
+  assert.deepEqual([sp.adult, sp.sensitive, sp.tm, sp.vulgar], [true, true, true, true]);
+  assert.deepEqual(fr.groups, [[sp.id, other.id]]);
+
+  // another word promoted: meaning flags and region only; the root's spellings and abbreviations become its synonyms
+  const Q = project(), qf = Q.themes.find(t => t.id === 'fruits');
+  const r = addEntry(Q, 'personal computer', { typ: { fruits: 1 }, sensitive: true, tm: true, region: ['US'], show: { fruits: 'computer' }, nameOkIn: ['fruits'] });
+  const home = addEntry(Q, 'home computer', { aliasOf: r.id, aliasKind: 'synonym' });
+  const pc = addEntry(Q, 'PC', { aliasOf: r.id, aliasKind: 'abbreviation' });
+  const x = addEntry(Q, 'laptop', { typ: { fruits: 1 } });
+  qf.groups = [[r.id, x.id], [home.id, 99]];   // the promoted word already in a group: the two groups become one
+  reindex(Q);
+  deleteEntry(Q, r); reindex(Q);
+  assert.deepEqual([home.aliasOf, home.sensitive, home.tm, home.region, home.show, home.nameOkIn], [0, true, false, ['US'], { fruits: 'computer' }, []]);
+  assert.deepEqual([pc.aliasOf, pc.aliasKind], [home.id, 'synonym']);
+  assert.deepEqual(qf.groups.map(g => [...g].sort((a, b) => a - b)), [[x.id, home.id, 99].sort((a, b) => a - b)]);
 });
 
 test('loadFreq fails on an HTTP error or an empty list and leaves the list unloaded', async () => {

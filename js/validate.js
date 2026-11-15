@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, linkIds, themeStats, sameText, themeLocked, ALIAS_KINDS } from './model.js';
+import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, ALIAS_KINDS } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
 
@@ -40,7 +40,7 @@ export function validate(P) {
   // ----- themes -----
   let unrated = 0;
   for (const t of P.themes) {
-    { const rm = /^(?:starts|ends|hidden):@(.+)$/.exec(t.rule || ''); if (rm && !ix.theme.get(rm[1])) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rm[1]}.`, { themeId: t.id }); }
+    { const rt = ruleTheme(t); if (rt && !ix.theme.get(rt)) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rt}.`, { themeId: t.id }); }
     const ef = eff(P, t.id);
     if (!ef.enabled) continue;
     const direct = (ix.byTheme.get(t.id) || []);

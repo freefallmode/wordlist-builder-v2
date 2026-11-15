@@ -64,7 +64,7 @@ Pure functions over a plain project object (`js/model.js`), so the core can be t
 - `use` `{ themeId: id of one of its form aliases }`: that theme shows the form (rainy) instead of the entry (rain). `show` `{ themeId: text }`: that theme shows a shorter text (rock for rock garden). Both are theme-local display choices: the entry keeps its identity, ratings and links. Neither is an alias.
 - `vulgar` (crude or offensive wording) is an entry flag only; themes have no vulgar flag. Entries have no language-specific flag; that flag is for themes.
 
-**Aliases.** `aliasOf` is the id of the root; an alias is never the root of another alias (chains are an error). An alias takes its themes from its root and has its own flags, ratings, `region` and `aliasKind`: `spelling` (colour/color), `form` (the same word in another grammatical form: an inflection or derivation such as skis for ski or rainy for rain; a compound or a longer name is NOT a form), `regional` (bonnet for hood: the same thing under another regional name, tagged with its `region`), `abbreviation` (PC for personal computer), `translation` (Danmark for Denmark, Gaeilge for Irish: the same thing named in another language) or `synonym` (another name rated on its own with its own `th[theme]`; being phased out in favour of theme synonym groups, DESIGN-entries.md); spellings and forms never have their own popularity, they take the root's. Its difficulty in a theme is the harder of its popularity there (own `th`, else its root's) and its own `fam`. Deleting a root promotes its first alias to root (it keeps the ratings it was getting). In the entry editor, "This is an alias of" and "Aliases of this entry" are a single block in a single place, both shown as tappable links that open the other entry.
+**Aliases.** `aliasOf` is the id of the root; an alias is never the root of another alias (chains are an error). An alias takes its themes from its root and has its own flags, ratings, `region` and `aliasKind`: `spelling` (colour/color), `form` (the same word in another grammatical form: an inflection or derivation such as skis for ski or rainy for rain; a compound or a longer name is NOT a form), `regional` (bonnet for hood: the same thing under another regional name, tagged with its `region`), `abbreviation` (PC for personal computer), `translation` (Danmark for Denmark, Gaeilge for Irish: the same thing named in another language) or `synonym` (another name rated on its own with its own `th[theme]`; being phased out in favour of theme synonym groups, DESIGN-entries.md); spellings and forms never have their own popularity, they take the root's. Its difficulty in a theme is the harder of its popularity there (own `th`, else its root's) and its own `fam`. Deleting a root promotes an alias to root: the first spelling alias, else the first that is not a form, else the first. It takes the root's links and synonym groups, adult, sensitive and (if it has none) region; if it is the same word (spelling, form) it also takes trademark, vulgar, name allowances and the forms the themes used, otherwise the old root's spellings and abbreviations become its synonyms. Deleting or unlinking also removes the entry's shown text, `use` and group places for that theme, and a theme named by another theme's wordplay rule cannot be deleted. In the entry editor, "This is an alias of" and "Aliases of this entry" are a single block in a single place, both shown as tappable links that open the other entry.
 
 **Indexes** (`reindex`, rebuilt after every edit): theme by id, children by parent, entry by id, aliases by root, entries by theme (an alias appears under its root's themes), entries by lower-cased text.
 
@@ -139,27 +139,123 @@ Each issue has a severity (error breaks the model, warn is probably a mistake, i
 
 ## 8. Library export (Export…)
 
-Filters, each applied **per link** (a link is flagged when the entry, its theme, or any ancestor theme has the flag):
-- region-specific filter: judged on root words only; an alias (synonym or spelling variant) is kept or dropped with its root and its own region tag is ignored (its tag is still written to the file);
-- longest entry in words (`maxEntryWords`, 0 = no limit): entries with more words are left out, aliases included;
+The export is the only thing the Word Safari game reads from this project (the file `data/export/wordlist-game-family.json`). This section is its specification; the code is `buildExport` in `js/export.js`, and `tools/export-game.mjs` runs it from the command line. Checked against the code and the committed file at library v374 (2026-11-15).
 
-- adult, sensitive, trademark, vulgar, language-specific: **include / leave out** (the export code still understands "only", the screen does not offer it);
-- region-specific: one tick-box "Include region-specific words and themes", plus region boxes (all ticked by default, with all / none links) saying which regions the setting applies to; none ticked = nothing is left out. Presets saved before `region.v: 2` used an empty list for "every region" and are converted when read. Every option is a tick-box (flag filters: ticked = include), laid out in two columns on wide screens;
-- include synonyms, include spelling variants (on/off);
-- rating range and "include unrated";
-- minimum words per theme.
+### 8.1 Two ways to run it
 
-Process: filter links; drop entries with no link left; drop themes under the minimum (counted in distinct roots); repeat until stable; the report lists the dropped themes and the sizes (with a gzip estimate). If an alias's root is filtered out, the first surviving alias becomes the root. Ancestors kept only to hold the tree together are written with the group bit. **Two words that read the same in one theme** (a shown text equal to another word's, two synonyms with one text) are allowed in the library; the export keeps the more popular one in that theme (then the easier) and leaves the other out of it, and the report lists each. Presets: full; family (adult and vulgar left out, sensitive kept); family without trademarks. More can be saved with the project. Optional columns: Zipf, meanings (gloss), notes.
+- **Export… in the app**: presets "full" (the default), "family", "family, no trademarks", plus any saved with the project (`settings.exportPresets`). Preview shows entries and themes out of those in, the size and a gzip estimate, and how many themes were dropped as too small. Download saves `wordlist-<lang>-v<lib.version>.json`. The dialog does not list the dropped themes or the same-text cases by name (the report object holds them: `droppedThin`, `sameText`).
+- **`node tools/export-game.mjs [preset] [out] [--strict]`** (any directory): reads `data/wordlist-en.project.json`, `data/freq-en.txt` and `data/breaks-en.txt` (missing: a warning, and every `breaks` list is empty); preset default `family`, always with `zipf: true`; `out` default is the committed `data/export/wordlist-game-family.json` (an explicit `out` is relative to the current directory). It prints the size, library version, theme and entry counts and the report notes, then runs the case lint over the **whole library** (not the export) and prints its count. `--strict` exits 1 when the lint finds anything, **after the file has been written**. An unknown flag or preset exits 2 without writing.
 
-Output is columnar JSON to keep the file small:
+### 8.2 Options (`options`, echoed into the file)
 
-```
-{ v, lang, lib, generated, options, regions[], posNames[], typeNames[], themeBits, entryBits, shown[], linkFields[],
-  themeFields: [id, name, parent, flags, difficulty, regions, (+ note)], themes: [rows],
-  entries: { text[], pos[], type[], flags[], rec[], regions[], root[], clash[], linkCount[], links[] (+ zipf[], gloss[], note[]) } }
-```
+| key | default | meaning |
+|---|---|---|
+| `adult`, `sensitive`, `tm` | `include` | `include` or `exclude` (`only` still works in code, the screen does not offer it). Judged per link: flagged when the entry or the theme (with inheritance) has the flag. |
+| `vulgar` | `include` | entry flag only. |
+| `lang` | `include` | the theme's language-specific flag (inherited) only. |
+| `region` | `{mode:'all', codes:[9 codes], v:2}` | `mode` `all` keeps everything; `exclude` drops themes whose inherited regions, and entries whose **root's** regions, meet `codes` (an alias follows its root; its own tag is ignored here but still written). Presets without `v: 2` used `[]` for every region and are converted on read. |
+| `synonyms` | true | keep aliases of kind synonym, regional, abbreviation, translation. |
+| `spellings` | true | keep aliases of kind spelling and form. |
+| `recMin`, `recMax`, `unrated` | 1, 5, true | range on the whole-number band of the link (the harder of familiarity, typicality and the `use` form's familiarity); band 0 is kept only when `unrated`. |
+| `minWords` | 4 | a theme with fewer distinct roots among its kept links is dropped. |
+| `maxEntryWords` | 0 | entries with more whitespace-separated words are dropped; 0 = no limit. |
+| `zipf`, `gloss`, `notes` | false | optional columns (below). |
 
-Entry i is `text[i]` etc.; its themes are the next `linkCount[i]` groups of four numbers `(themeIndex, difficulty, popularity, shown)` in `links`; `shown` is 0, or index+1 into the top-level `shown` list of `[text, pos]` pairs: the text and part of speech that theme displays instead of the entry's own (an entry's `show` text, or its `use` form; the difficulty is then the harder of the entry and that form). `clash[i]` is 0, or an id shared by words that stand for one another in a theme (its synonym `groups`): the level builder never puts two of them in one level. `root[i]` is 0 for a root, else index+1 of the root it aliases. Theme `flags` bits: adult 1, sensitive 2, trademark 4, language 8, complete 16, group 32, locked 64, foreign 128 (the words are mostly not English: numbers, days, colors or greetings in another language, Swahili or Maori words; set per theme and inherited down the tree like the other flags; English words of foreign origin such as french phrases in english do not count). Entry `flags` bits: adult 1, sensitive 2, trademark 4, vulgar 8, spelling alias 16, form alias 32, regional alias 64, abbreviation 128, translation 256. Theme rows are `id, name, parent, flags, difficulty (median), regions, popularity, counts (roots at difficulty 1-5), range (difficulty of the 4th easiest and 4th hardest root)`; the file version is 3. `regions` is a bit mask over `regions[]`. Balloon text is not stored; derive it.
+Presets: `family` = adult and vulgar `exclude`; `family, no trademarks` adds `tm: exclude`.
+
+### 8.3 Process
+
+1. Candidates are enabled entries. A link (entry in theme) is kept when the theme is not a group, is enabled with its ancestors, passes `lang` and `region`, and the entry and link pass the rest of 8.2. An alias's themes are its root's plus any of its own (`linkIds`).
+2. **Same text in one theme**: links are grouped by theme and lowercased displayed text (shown text, else the entry text; an alias's inherited links are not counted). Of two or more, the one with the lower typicality number wins (unrated counts as 9), then lower familiarity, then lower id; the others leave that theme, and when a root leaves, its aliases leave with it.
+3. **Thin themes**: themes under `minWords` distinct roots are dropped, and entries left with no link; repeated (at most 6 passes) until nothing changes.
+4. Written themes are the themes with a kept link plus all their ancestors. If an alias's root did not survive, the first surviving alias of it (in entry order) is written as the root and the other aliases point to it.
+
+### 8.4 File layout
+
+One JSON object, no whitespace. Top-level keys in this order:
+
+| key | type | content |
+|---|---|---|
+| `v` | number | format version, 3. |
+| `lang` | string | library language (`en`). |
+| `lib` | `{version, modified}` | library change counter and its time, local `YYYY-MM-DD HH:MM`. |
+| `generated` | string | export time, ISO 8601 UTC. |
+| `dialect` | string | the library's default dialect (`settings.dialect`, else `US` for English): the variant the app shows for a word that has a regional or spelling alternative. |
+| `options` | object | the options used, 8.2. |
+| `regions` | string[] | region codes used by any written theme or entry: `UK`, `US`, then the rest alphabetically. |
+| `regionBits` | number | 30: `regions[i]` is bit i of the low mask for i < 30, else bit i-30 of the high mask. |
+| `kindNames` | string[] | `category, place, property, wordplay, compound`. |
+| `posNames` | string[] | `noun, verb, adjective, adverb, other`. |
+| `typeNames` | string[] | `common, person, place, org, title, proper, acronym, phrase`. |
+| `themeBits`, `entryBits` | object | the bit values below, name to number. |
+| `themeFields` | string[] | names of the theme row positions. |
+| `themes` | array[] | one row per theme. |
+| `entries` | object | columns, one value per entry. |
+| `shown` | array[] | display texts, `[text, pos, breaks]`. |
+| `nameWordLinks` | number[] | link numbers. |
+| `nameThemeLinks` | `[number, number][]` | link number, theme index. |
+| `shownUK` | `[number, number][]` | link number, index+1 into `shown`. |
+| `linkFields` | string[] | `theme, difficulty, typicality, shown`. |
+
+A **link number** n is the n-th link in file order: `entries.links[4n .. 4n+3]`. Read positions by name from `themeFields` and `linkFields`: positions have moved within version 3 (8.6).
+
+**Themes**, in library order, filtered (every parent comes before its children in the committed file; the export does not sort). Row = `themeFields`:
+
+| # | field | type | content |
+|---|---|---|---|
+| 0 | `id` | string | the theme's id (a slug, stable across versions). |
+| 1 | `name` | string | display name. |
+| 2 | `parent` | number | index of the parent row, -1 at the top. |
+| 3 | `flags` | number | theme bits: adult 1, sensitive 2, trademark 4, lang 8, complete 16, group 32, locked 64, foreign 128. Adult, sensitive, trademark, lang and foreign are inherited down the tree; complete is the theme's own; locked is the theme's own setting, else on for wordplay and compound themes and language-specific ones (show exactly the linked word, no regional, spelling or family substitute); group is set on group themes and on ancestors written only to hold the tree, which have no links. Foreign: the words are mostly not English (numbers, days, greetings in another language; Swahili or Maori words), not English words of foreign origin. |
+| 4 | `regions` | number | low region mask, inherited (union up the tree). |
+| 5 | `popularity` | number | theme popularity 1 (most) to 5, 0 unrated. |
+| 6 | `counts` | number[5] | words at band 1..5 (root and band pairs, unrated counted as 5), from **every enabled word** of the theme, not only those that passed the filters; zeros for a group. |
+| 7 | `range` | number[2] | band of the 4th easiest and the 4th hardest root (same basis as counts); `[0,0]` under 4 roots or for a group. With fewer than 7 roots the first can exceed the second. |
+| 8 | `regionsHi` | number | high region mask. |
+| 9 | `kind` | number | index into `kindNames` (missing kind = 0, category). |
+| 10 | `rule` | string | membership test for wordplay themes (e.g. `starts:@colors`), `''` if none. |
+| 11 | `identifiability` | number | 1 (obvious) to 5 (obscure), 0 unrated. |
+| 12 | `difficulty` | number | identifiability + 0.5 x (popularity - 3), kept to 1..5, one decimal; identifiability alone when popularity is unrated; 0 when identifiability is unrated. |
+| 13 | `breaks` | number[] | hyphen points in `name` (as for entries). |
+| 14 | `note` | string | only with the `notes` option. |
+
+**Entries**, in library order (an alias can come before its root). Columns, each the same length:
+
+| column | type | content |
+|---|---|---|
+| `text` | string | the word as stored, capitals included. |
+| `breaks` | number[] | character indexes in `text` where a hyphen may go (before that character); words of 8+ letters found in `data/breaks-en.txt`; spaces and existing hyphens are never listed; `[]` for none. |
+| `pos` | number | index into `posNames`. |
+| `type` | number | index into `typeNames`. |
+| `flags` | number | entry bits: adult 1, sensitive 2, trademark 4, vulgar 8 (the entry's own flags, not the theme's), then the alias kind: spelling 16, form 32, regional 64, abbreviation 128, translation 256, synonym 512. A root has none of 16-512; an alias written as root (8.3 step 4) keeps its kind bit, so tell roots by `root`, not by `flags`. |
+| `familiarity` | number | 1 (every child knows it) to 5, 0 unrated. |
+| `regions`, `regionsHi` | number | the entry's own region tags as low and high masks (an alias's own tags). |
+| `root` | number | 0 for a root, else index+1 of its root entry (always a root itself). |
+| `clash` | number | 0, or an id shared by entries that stand for one another in some theme's synonym `groups` (merged across themes; an alias carries its root's): never put two with the same id in one level. |
+| `linkCount` | number | how many links follow in `links` (at least 1). |
+| `links` | number[] | all links, 4 numbers each, entry by entry: the entry's links are the next `linkCount[i]` groups. |
+| `zipf` | number | only with `zipf` and language `en`: Zipf frequency x 10, rounded, 0 unknown. |
+| `gloss`, `note` | string | only with the `gloss` / `notes` options. |
+
+**A link** = `linkFields`: `theme` (row index into `themes`), `difficulty` (decimal 1.0-5.0, 0 unrated: 0.7 x the harder plus 0.3 x the easier of familiarity and typicality, one decimal, the one set if only one is; familiarity is the harder of the entry's and its `use` form's), `typicality` (1-5, 0 unrated; an alias without its own value takes its root's), `shown` (0 = show `text`, else index+1 into `shown`). Links come in the entry's stored order (an alias: its root's themes, then its own).
+
+**Aliases**: an alias is a separate entry with `root` pointing at its root and its kind in `flags`. It carries links to every theme of its root (and any of its own), so it can be played in its root's themes. The library's per-theme display choices travel as `shown`: an entry's `show` text for that theme (with the entry's part of speech) or its `use` form (another enabled entry: its text and part of speech). An alias's inherited link (no typicality of its own in that theme) never has a shown text.
+
+**`shown`**: each distinct `[text, pos]` once, with its `breaks` as the third value. **`nameWordLinks`**: links whose displayed text is a single word that is a word of the theme's name or its singular or plural (`isNameWord` in `js/validate.js`). **`nameThemeLinks`**: links whose displayed text is the whole name of another written theme (compared lowercase, punctuation as spaces, one final s dropped; the first theme of that name), a "passenger" word; the theme may be a group. **`shownUK`**: for a root entry with a shown text and a UK-only spelling alias in the export, the British form of the shown text (the words that differ between root and alias swapped, gray to grey) when it differs; links not listed show the same text to everyone. Balloon text is not stored; derive it.
+
+Out of range: an entry or shown text whose stored part of speech or type is not in the list is written as -1 (9 entries with `noun phrase` and one with type `name` at v374; ISSUES.md B14, B23).
+
+Size at v374, family preset: 3.9 MB, 3,240 themes (118 groups), 60,533 entries (2,047 aliases), 106,730 links, 3,758 shown texts, 55 region codes. The two masks hold at most 61 codes.
+
+### 8.5 Two words that read the same
+
+Allowed in the library (a shown text equal to another word's, two synonyms with one text); the export keeps one per theme (8.3 step 2). The game additionally keeps every displayed text unique within a level, compared in lowercase.
+
+### 8.6 Versions and pinning
+
+- `v` is the format version. It has been 3 since 2026-10-31, while fields were added and moved (theme `difficulty` was dropped from position 4 and came back at 12; the link field `popularity` became `typicality`; the entry column `rec` became `familiarity`; `dialect`, `regionBits`, `kindNames`, `regionsHi`, `breaks`, `nameWordLinks`, `nameThemeLinks`, `shownUK` and entry bit 512 were added). A reader must find theme and link positions by name and treat unknown keys as optional.
+- `lib.version` identifies the content: it rises on every Save project file that changed something. The export must be regenerated after every library version and a library change must come with a new version, since the game tells exports apart by it.
+- The game **pins** one library version: it re-slims the committed export into its own copy and runs its checks in its three difficulty modes, only when Simon asks. A pin rebuilds saved level histories and any change to a theme's links shifts most levels, so library changes are best batched into one version. The pinned version is recorded in ISSUES.md, section "Open between the library and the game".
 
 ## 9. Claude generation
 

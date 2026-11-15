@@ -68,7 +68,8 @@ function rowButtons(t) {
     btn('✎', 'Rename', () => renameTheme(t)),
     btn('🗑', 'Delete', () => {
       if (!confirm(`Delete "${t.name}"? Its sub-themes move up a level and words stay but lose this link.`)) return;
-      deleteTheme(A.P, t.id); if (A.sel === t.id) A.sel = t.parent; A.changed();
+      try { deleteTheme(A.P, t.id); } catch (err) { return toast(err.message, true); }
+      if (A.sel === t.id) A.sel = t.parent; A.changed();
     }));
 }
 
