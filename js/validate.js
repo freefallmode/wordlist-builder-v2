@@ -1,8 +1,8 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, difficultyBand, linkIds, themeStats, pathOf, sameText, themeLocked, ALIAS_KINDS } from './model.js';
+import { eff, linkIds, themeStats, sameText, themeLocked, ALIAS_KINDS } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
-import { caseLint } from './caselint.js';
+import { caseLint, initialism } from './caselint.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
 const NAME_STOP = new Set(('a an and or the of in on at to for from with by as is are that this these those your my our their its words word names name types type kinds kind famous common things thing parts part ' +
@@ -101,9 +101,9 @@ export function validate(P) {
     if (e.type === 'phrase' && /^[A-ZÀ-Ý]/.test(text)) add('warn', 'type', `"${text}" is typed phrase but looks like a name; use person, place, org, title or proper (phrase is for ordinary expressions).`, loc);
     if (letters(text) > (S.maxLen || 20)) add('warn', 'long', `"${text}" is longer than ${S.maxLen || 20} letters.`, loc);
 
-    if (e.type === 'acronym' && text !== text.toUpperCase()) add('warn', 'case', `"${text}" is typed as an acronym but is not in capitals.`, loc);
+    if (e.type === 'acronym' && text !== text.toUpperCase() && !initialism(text)) add('warn', 'case', `"${text}" is typed as an acronym but is not in capitals.`, loc);
     if (['person', 'place', 'org', 'title', 'proper'].includes(e.type) && !/\p{Lu}|^\d/u.test(text)) add('warn', 'case', `"${text}" is a ${e.type} name but has no capital letter.`, loc);
-    if (e.type === 'common' && /^\p{Lu}/u.test(text) && !/^\p{Lu}+$/u.test(text) && !e.aliasOf) add('info', 'case', `"${text}" is typed as a common word but starts with a capital.`, loc);
+    if (e.type === 'common' && !e.tm && /^\p{Lu}/u.test(text) && !initialism(text) && !e.aliasOf) add('info', 'case', `"${text}" is typed as a common word but starts with a capital.`, loc);   // the entry itself; what each theme shows is the case lint at the end (letter-shaped terms and trademarks are fine, as there)
 
     const ids = linkIds(P, e);
     if (e.aliasOf) {
@@ -146,6 +146,8 @@ export function validate(P) {
       if (e.fam >= 4 && z != null && z > 5) add('info', 'rating-vs-zipf', `"${label(e)}" has familiarity ${e.fam} (hard) but is very common in text (Zipf ${z.toFixed(1)}).`, loc);
     }
   }
+  // ----- capitals of shown words (js/caselint.js): one warning per link -----
+  for (const i of caseLint(P)) add('warn', 'case-' + i.kind, i.msg, { themeId: i.themeId, entryId: i.entryId });
   return out;
 }
 

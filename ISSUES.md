@@ -14,16 +14,16 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 
 ## Broken: app (js/)
 
-- **B2** `open` Case lint never runs in Checks: `validate()` imports `caseLint` and never calls it, although caselint.js:4, commit dff5793 and DESIGN-entries.md say it does (js/validate.js:5). *seen*
-- **B3** `open` The 48 `cap-common` lint issues (Vidalia in onion family, Chinese in cabbage family) are shown nowhere: tools/export-game.mjs:21 filters that kind out before printing "case lint: 0", the allow-list cannot suppress it (js/caselint.js:16), and B2 hides it in the app. *seen, run*
+- **B3** `open` The `cap-common` lint kind (a capital shown on an entry typed common) is not counted by `--strict`: 48 hits at v370. Since 2026-11-15 they are listed in Checks, by tools/gen/lint-show.mjs and as their own figure on the export line; before that they were shown nowhere. The allow-list does not apply to this kind by design, so the entries have to be settled (T14) before the kind can join the count (tools/export-game.mjs). *seen, run*
 - **B12** `open` Deleting or unlinking leaves stale references: `deleteTheme` leaves `show`, `use`, `nameOkIn` and `@theme` rules pointing at the theme; `deleteEntry` leaves the id in theme `groups` and in other entries' `use`; unlinking in the entry dialog removes `show` but not `use` or `nameOkIn` (js/model.js:166, :178, js/dialogs.js:169). The library has none today. *read*
-- **B13** `open` Case lint details: a `break` leaves only an inner one-item loop, so one link can be reported twice; `stem('pies')` gives `py`; `hasUkAlias` counts an alias with any region (js/caselint.js:56 and nearby). *run*
 - **B14** `open` Validation does not check that an entry's `type` is one of `TYPES`; entry 67019 "South Beach diet" has type `name` (js/validate.js, js/model.js:14). *seen*
 - **B15** `open` js/ai.js: the cache-read prices for Opus 5.5 and Sonnet 5.5 are reported as twice the current price; a reply from a fallback model is priced as Opus 5.5; the Haiku entry is the previous generation (`claude-haiku-4-5`) and the no-effort, no-fallback special case is keyed on that one id; `wordsPrompt` checks the theme's own language flag, not the inherited one (js/ai.js:5-6, :36, :99). Model ids and structure *seen*; prices *read* against the API reference by the agent, to be checked again when fixed.
 - **B18** `open` Settings reads localStorage without try/catch, unlike every other access, so the dialog could fail to open where storage is blocked (js/dialogs.js:437). *read*
 - **B19** `open` When a root is deleted, the alias promoted in its place does not inherit the root's `show`, `use`, `nameOkIn`, synonym-group membership (the old id stays in theme `groups`, see B12), region or flags (adult, sensitive, trademark, vulgar); the export judges region on the root only. The other aliases are re-pointed with their kind unchanged, so a spelling of the old root becomes a "spelling" of what was a synonym (js/model.js `deleteEntry`). *read*
 - **B20** `open` Autosave waits 0.7 s after an edit and nothing is written when the page closes, so a reload within 0.7 s of an edit loses that edit from the browser copy (js/app.js `autosave`). *read*
 - **B21** `open` A theme name containing `[`, ` -- ` or ending in `:` does not survive an outline export and import. No theme has one today (js/outline.js). *read*
+- **B2** `fixed 2026-11-15` Case lint never ran in Checks: `validate()` imported `caseLint` and never called it. Every lint hit is now a Checks warning of kind `case-<kind>` (js/validate.js); test added.
+- **B13** `fixed 2026-11-15` Case lint details: `bare-stub` could report one link twice and missed plural theme words (`pies` was stemmed to `py`); both corrected, test added. The message for a case-only shown text on an entry with a regional alias no longer says "British" (js/caselint.js).
 - **B5** `fixed 2026-11-15` The unsaved state was lost on reload. Whether the browser copy differs from the last project file is now stored with the autosave in one transaction and restored at start (js/store.js, js/app.js). Checked in a browser; a copy stored before the change counts as unsaved once.
 - **B6** `fixed 2026-11-15` A failed autosave read replaced the browser library. A stored copy that cannot be read now switches autosave off and opens a dialog (download the stored text, keep autosave off, open a project file, or go on with the starter); nothing is overwritten until the user chooses. Checked in a browser with a corrupted record.
 - **B7** `fixed 2026-11-15` Import theme outline duplicated the 165 themes whose id is not the slug of their name. The outline now carries `[id:...]` for those and the import uses it (js/outline.js); tests added.
@@ -48,6 +48,7 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 - **T9** `open` tools/game/LoadV3.cs.txt reads the column `entries.rec`, renamed `familiarity` at v301, and casts the now-decimal difficulties to integers. It is a kept copy of a reverted Unity reader, not a live tool. *suspected (not compiled)*
 - **T10** `open` Leftovers in the project file: `settings.model` (nothing reads it; the model is a browser setting), 99 entries with `aliasOf: null` instead of 0, `nextId` 67399 while the highest id is 67399 (corrected on load, but a tool wrote an entry without advancing it). *seen*
 - **T13** `open` serve.mjs listens on every network interface, so anyone on the local network can read the served folder. Restricting it to this machine would stop the app being opened from a phone: a decision. *seen*
+- **T14** `open` Entries typed common that contain a proper word (a nationality, place or person name used as a modifier) are cased inconsistently, and no lint rule covers them. Three groups at v370: 48 stored lowercase but shown with the capital (`vidalia onion` shown `Vidalia`, `irish stew` shown `Irish`; these are the B3 hits); 47 stored with a capital but typed common, some shown lowercase (`Neapolitan pizza` shown `neapolitan`, `Genoise` shown `genoise`; the Checks `case` notes); and lowercase entries with no shown text (`french fries`, `brussels sprouts`, `persian cat`, `yorkshire terrier`, `texas longhorn`), about 290 candidates by a rough scan that also catches false ones (`wild rice`, `lady beetle`). The written rule (tools/gen/BRIEF-capmark.md: a phrase containing a proper word is capitalised and typed proper) is followed by 303 entries (`German shepherd`, `French toast`). `swiss cheese` (common) and `Swiss cheese` (proper) both exist. Needs one library pass and a lint rule for the lowercase group. *seen, run*
 - **T5** `fixed 2026-11-15` `--strict` worked only as the third argument of tools/export-game.mjs. Flags are now separate from the preset and output arguments; an unknown flag exits with an error.
 - **T11** `fixed 2026-11-15` serve.mjs stopped on a malformed URL and served dot folders. It now answers 400, and 403 for any path with a segment starting with a dot (.git/, .claude/). The network interface is T13.
 - **T12** `fixed 2026-11-15` The run line at the top of tests/core.test.mjs failed on Node 24 and package.json had no scripts. The line is corrected; `npm test` and `npm start` work.
@@ -56,7 +57,6 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 
 - **I1** `open` The browser export and the Node export differ for the same library. Browser: no break points at all (nothing calls `setBreaks`), Zipf only if ticked and all zeros if the list has not loaded, no case lint, the report notes are not shown, file name `wordlist-en-v366.json`. Node: breaks, Zipf always, lint count, built-in presets only, file name `wordlist-game-family.json`. The committed export matches a fresh Node export of v366. *run*
 - **I2** `open` A browser export carries the last saved library version even when the browser copy has unsaved edits, so two different exports can have the same version (js/store.js:77). *read*
-- **I3** `open` Two capital rules: Checks has its own simpler `case` rule (161 notes) while caselint.js has the full one (48 `cap-common`); they disagree on forms such as "MPs" (js/validate.js:104-106). Goes with B2. *run*
 - **I4** `open` "+ Add words…" links whichever entry matches the text, including a spelling or form alias, and does not check the alias family; generation handles both (js/dialogs.js:263 against :313-315). *read*
 - **I5** `open` The Export screen starts from a fixed minimum of 4 words per theme and ignores the library setting `minWords` (js/dialogs.js:377). *read*
 - **I6** `open` The Export screen shows only counts: the dropped theme names, the same-text drops and the report notes are computed and not shown, though DESIGN.md section 8 says they are listed (js/dialogs.js:413-415). *read*
@@ -69,6 +69,7 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 - **I13** `open` The app shows "Frequency list did not load (serve the folder over http)" for every load failure, including a missing or empty file on a working server (js/app.js:457). *read*
 - **I14** `open` js/app.js is stored with CRLF line endings, the other source files with LF. *read*
 - **I15** `open` While autosave is off because the browser copy is unreadable, the status line still begins "File saved"; and in a browser where IndexedDB never works the unreadable-library dialog appears on every load (js/app.js). *read*
+- **I3** `fixed 2026-11-15` Two capital rules disagreed. Checks keeps one entry-level note (`case`: an entry typed common whose own text starts with a capital) and now uses the lint's definition of a letter-shaped term and skips trademarks, as the lint does: 161 notes became 47. What a theme shows is the lint's job (B2).
 
 ## Inefficient
 
@@ -81,10 +82,10 @@ Re-check at library v370 (commit 5a508bc, same day, after the case-lint commits 
 ## No longer needed
 
 - **U1** `open` Dead AI code: `rateThemes`, `RATE_SCHEMA`, `THEME_SCALE`; no button calls them and they ask for the retired theme `d` (js/ai.js:128-135). *seen*
-- **U2** `open` Unused imports. app.js: descendants, nowStamp, entryDefaults. dialogs.js: `$`, TYPICALITY_HELP, linkIds, difficultyBand, eff, themeLocked, descendants, PRESETS, SPREADS. export.js: REGIONS, freqLoaded. validate.js: difficultyBand, pathOf (caseLint is B2). *run (script and grep)*
+- **U2** `open` Unused imports. app.js: descendants, nowStamp, entryDefaults. dialogs.js: `$`, TYPICALITY_HELP, linkIds, difficultyBand, eff, themeLocked, descendants, PRESETS, SPREADS. export.js: REGIONS, freqLoaded. (validate.js: removed 2026-11-15.) *run (script and grep)*
 - **U3** `open` Exports nothing uses: model.js `rootOf`, `wordDifficulty`, `linkEntry`, `unlinkEntry`; dom.js `$$`, `option`; the `onopen` option of `dialog()`; `A.checkStarter`. *run (script and grep)*
 - **U4** `open` CSS for elements that no longer exist: `.groups` and its two child rules, `.arrow`, `.row.nowrap` (style.css:79, :106, :146-148). *read*
-- **U5** `open` Dead expressions: `&& false` makes a condition in js/caselint.js:32 always true; `Math.max(0, i - 0)` in tools/brk-merge.mjs:22. *seen (caselint)*
+- **U5** `open` Dead expression `Math.max(0, i - 0)` in tools/brk-merge.mjs:22. (The `&& false` in js/caselint.js was removed 2026-11-15.) *read*
 - **U6** `open` Compatibility code with nothing left to read: the `geo`/`kind` strip (js/store.js:38, :50; 0 themes have them), retired outline tags (js/outline.js:54-67; only data/old-themes.txt has them), export mode `only` (the screen cannot choose it). Cheap, and needed only to open old files: keep or drop is a decision. *read*
 - **U7** `open` Spent one-off tools: tools/migrate-pop.mjs and tools/retype-phrases.mjs change nothing on v366 but still bump the version and rewrite the file if run; tools/convert-tree.mjs and data/old-themes.txt are kept as a record; tools/pilot.mjs (T3); tools/game/ (T9). *run*
 - **U8** `open` tools/gen: see the section below (G1, G2, G5, G6).
@@ -111,7 +112,7 @@ Reported by the Word Safari manager session on 2026-11-15; not checked on the ga
 - **W3** `open` The game does not read the theme region tags (`regions`, `regionsHi`); holding region-tied themes back by level is not built.
 - **W4** `open` The game's generator has no related-word rule (joy and joyful, fish and goldfish); a word-family column in the export was discussed as the way to supply it, undecided.
 - **W5** `open` Whether the game should treat a shown text that differs from its entry only in case as a plain case fix (a game change).
-- **W6** `open` The game manager understands case lint to run in Checks and the strict export to fail on any issue. Neither is so: B2 (not in Checks) and B3 (the 48 `cap-common` hits are left out of the count and of `--strict`).
+- **W6** `fixed 2026-11-15` The game manager understood case lint to run in Checks and the strict export to fail on any issue. Checks now runs it (B2); the 48 `cap-common` hits are printed by the export but still outside `--strict` (B3). The game manager has been told.
 
 ## Documentation out of date
 

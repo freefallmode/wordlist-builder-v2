@@ -1,14 +1,14 @@
 // Capital letters of shown words. One rule: a word is shown the way it is correctly written for the sense it has in the theme.
 // A capital is for a proper noun (person, place, org, title, proper; trademarks), an acronym or a letter-shaped term (GI, MIDI, X-ray, T-bar); everything else is lowercase.
 // The game shows words in lowercase while playing, so this only appears on a finished theme, but there every mismatch shows.
-// Returns issues { kind, msg, themeId, entryId }; the kinds are listed below. Used by validate() and by the export (count printed).
+// Returns issues { kind, msg, themeId, entryId }; the kinds are listed below. validate() adds each as a warning of kind `case-<kind>`; the export prints the count.
 import { themeLocked } from './model.js';
 import { CASE_OK } from './caselint-allow.js';
 
 const PROPER = new Set(['person', 'place', 'org', 'title', 'proper']);
 const isProper = e => PROPER.has(e.type) || !!e.tm;
 const startsCap = s => /^\p{Lu}/u.test(s);
-const initialism = s => /^\p{Lu}{2,}[a-z]?$/u.test(s) || /^\p{L}-\p{L}/u.test(s) && /^\p{Lu}-/u.test(s) || /^\p{Lu}[\d-]/u.test(s);   // GI, MIDI, MPs, X-ray, T-bar, B6
+export const initialism = s => /^\p{Lu}{2,}[a-z]?$/u.test(s) || /^\p{L}-\p{L}/u.test(s) && /^\p{Lu}-/u.test(s) || /^\p{Lu}[\d-]/u.test(s);   // GI, MIDI, MPs, X-ray, T-bar, B6
 const norm = s => s.toLowerCase();
 
 export function caseLint(P) {
@@ -30,7 +30,7 @@ export function caseLint(P) {
       const shown = textOf(e), cap = startsCap(shown), sh = e.show && e.show[t.id];
       // 1. the capital disagrees with the entry's own proper/common mark
       if (!initialism(shown)) {
-        if (cap && !isProper(e) && e.type !== 'acronym' && e.type !== 'phrase' && !(sh && startsCap(e.text) === false && false)) add('cap-common', `"${shown}" is shown with a capital in "${t.name}" but "${e.text}" is not marked as a proper noun (type ${e.type}).`, t, e);
+        if (cap && !isProper(e) && e.type !== 'acronym' && e.type !== 'phrase') add('cap-common', `"${shown}" is shown with a capital in "${t.name}" but "${e.text}" is not marked as a proper noun (type ${e.type}).`, t, e);
         if (!cap && startsCap(e.text) && isProper(e) && !wordplay && members.length >= 8 && share >= 0.8) add('lower-proper', `"${shown}" is shown lowercase in "${t.name}" but "${e.text}" is a ${e.type || 'trademark'} name.`, t, e);
       }
       // 2. wrong sense: a proper entry in a theme of common words (or the reverse) while an entry of the same spelling with the other mark exists
@@ -44,21 +44,21 @@ export function caseLint(P) {
       // 3. a shown text that only changes the case, where it does harm
       if (sh && norm(sh) === norm(e.text) && sh !== e.text) {
         if (t.tkind === 'wordplay' || t.tkind === 'compound') add('case-shown-wordplay', `"${e.text}" has a case-only shown text "${sh}" in "${t.name}", a wordplay/compound theme (the game reads a shown text there as a leftover part).`, t, e);
-        if (hasUkAlias.get(e.id)) add('case-shown-alias', `"${e.text}" has a case-only shown text "${sh}" in "${t.name}" but also a regional/spelling alias (British players would lose it).`, t, e);
+        if (hasUkAlias.get(e.id)) add('case-shown-alias', `"${e.text}" has a case-only shown text "${sh}" in "${t.name}" but also a regional/spelling alias (players in that region would lose it).`, t, e);
       }
     }
   }
   // 2b. a common entry in a theme of names: nameThemeCommons() below
   for (const [t, e, share] of nameThemeCommons(P)) add('common-in-names', `"${e.text}" is a common word in "${t.name}", a theme of names (${Math.round(share * 100)}% proper).`, t, e);
   // 4. a bare capitalised single word (not proper) in a theme, with "<word> <theme word>" existing as another entry not linked to the theme
-  const stem = w => w.replace(/ies$/, 'y').replace(/s$/, '');
+  const stems = w => new Set([w, w.replace(/s$/, ''), w.replace(/ies$/, 'y')]);   // pies -> pie, berries -> berry
   const STOP = new Set(['and', 'of', 'the', 'in', 'for', 'with', 'things', 'kinds', 'types', 'words', 'names', 'a', 'to']);
   for (const e of P.entries) {
     if (e.aliasOf || isProper(e) || e.type === 'acronym' || /\s/.test(e.text) || !startsCap(e.text) || initialism(e.text) || !e.typ) continue;
     for (const tid of Object.keys(e.typ)) {
       const t = ix.theme.get(tid); if (!t || t.group || e.show?.[tid]) continue;
       const ws = t.name.toLowerCase().split(/[^a-z]+/).filter(w => w && !STOP.has(w));
-      for (const w of ws) for (const s of [w, stem(w)]) for (const c of [norm(e.text) + ' ' + s]) { const f = (byText.get(c) || []).find(x => !(x.typ && x.typ[tid] != null)); if (f) { add('bare-stub', `"${e.text}" is a bare capitalised word in "${t.name}" and the full term "${f.text}" exists but is not linked there.`, t, e); break; } }
+      stub: for (const w of ws) for (const s of stems(w)) { const f = (byText.get(norm(e.text) + ' ' + s) || []).find(x => !(x.typ && x.typ[tid] != null)); if (f) { add('bare-stub', `"${e.text}" is a bare capitalised word in "${t.name}" and the full term "${f.text}" exists but is not linked there.`, t, e); break stub; } }   // one issue per link
     }
   }
   return out;

@@ -289,3 +289,26 @@ test('outline round trip of the real library changes nothing (format, parse, mer
   assert.deepEqual(P.themes.map(t => [t.id, t.parent]), before.map(t => [t.id, t.parent]));
   assert.deepEqual(P.themes, before);
 });
+
+test('case lint runs in validate: a capital shown on an entry typed common is a case-cap-common warning', async () => {
+  const { caseLint } = await import('../js/caselint.js');
+  const P = project();
+  addEntry(P, 'vidalia onion', { fam: 3, typ: { fruits: 3 }, show: { fruits: 'Vidalia' } });
+  addEntry(P, 'Vidalia onion', { type: 'proper', fam: 3, typ: { citrus: 3 }, show: { citrus: 'Vidalia' } });
+  addEntry(P, 'X-ray', { fam: 1, typ: { fruits: 1 } });   // letter-shaped: fine in the lint and in the entry check
+  reindex(P);
+  assert.deepEqual(caseLint(P).map(i => [i.kind, i.themeId]), [['cap-common', 'fruits']]);
+  const v = validate(P).filter(i => /^case/.test(i.kind));
+  assert.deepEqual(v.map(i => [i.sev, i.kind, i.themeId]), [['warn', 'case-cap-common', 'fruits']]);
+});
+
+test('case lint bare-stub: one issue per link, and the full term is found through a plural theme word', async () => {
+  const { caseLint } = await import('../js/caselint.js');
+  const P = newProject();
+  P.themes = parseOutline('Things:\n  apple pies\n  cakes and cake pops\n').themes;
+  addEntry(P, 'Cherry', { fam: 1, typ: { apple_pies: 1 } }); addEntry(P, 'cherry pie', { fam: 1 });
+  addEntry(P, 'Carrot', { fam: 1, typ: { cakes_and_cake_pops: 1 } }); addEntry(P, 'carrot cake', { fam: 1 });
+  reindex(P);
+  const stubs = caseLint(P).filter(i => i.kind === 'bare-stub').map(i => i.themeId).sort();
+  assert.deepEqual(stubs, ['apple_pies', 'cakes_and_cake_pops']);
+});
