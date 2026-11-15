@@ -35,7 +35,9 @@ export const LOWER_OK = new Set([
   56521, // alpine rose
   5362, // alpine skiing
   45105, // alpine start
+  11994, // byzantine art (lowercase among the art movements by Simon's decision of 2026-11-15)
   23914, // furniture polish
+  11993, // gothic art (as byzantine art)
   39077, // gum arabic
   3751, // nail polish
   16244, // nail polish remover

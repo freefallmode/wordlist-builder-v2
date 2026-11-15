@@ -50,6 +50,9 @@ S	1352	blank_bird	lady
 66828	K		air miles: the theme shows "miles" for the general sense; the reviewer's capital would have shown "Miles"
 31135	K		el nino: merged into El Niño below
 M	31135	2038
-# --- after the pass: Simon's earlier decision restored (tools/gen/propword-fix-brazil.mjs, library v372; these two lines are a record, that script applied them) ---
+# --- after the pass: Simon's earlier decision restored (tools/gen/propword-exceptions.mjs, library v372; these two lines are a record, that script applied them) ---
 17356	C	brazil nut	Simon asked for the lowercase b on 2026-11-14 (commit 501dda4); the pass had capitalised it
 30002	C	brazil nut tree	as above
+# --- Simon's decision of 2026-11-15, applied by tools/gen/propword-exceptions.mjs at v373 (a record, as above) ---
+11993	C	gothic art	lowercase among the art movements, like cubism
+11994	C	byzantine art	as gothic art

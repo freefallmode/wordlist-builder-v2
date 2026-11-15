@@ -114,7 +114,7 @@ reindex(P);
 
 // ----- the lint's word list -----
 const commonSingle = new Set(P.entries.filter(e => (e.type === 'common' || e.type === 'phrase') && !/\s/.test(e.text) && !cap(e.text)).map(e => e.text));
-const NOT_LEARNED = new Set(['colonial', 'brazil']);   // colonial: capitalised in one phrase (Colonial architecture) but an ordinary word in most; brazil: brazil nut is lowercase by Simon's decision of 2026-11-14 (propword-fix-brazil.mjs)
+const NOT_LEARNED = new Set(['colonial', 'brazil']);   // colonial: capitalised in one phrase (Colonial architecture) but an ordinary word in most; brazil: brazil nut is lowercase by Simon's decision of 2026-11-14 (propword-exceptions.mjs)
 const newWords = [...capitalised.keys()].filter(w => w.length > 2 && !PROPER_WORDS.has(w) && !keptLower.has(w) && !commonSingle.has(w) && !NOT_LEARNED.has(w)).sort();
 for (const w of newWords) PROPER_WORDS.add(w);
 const lowerOk = P.entries.filter(e => (e.type === 'common' || e.type === 'phrase') && !/\p{Lu}/u.test(e.text) && properWordsIn(e.text).length && (LOWER_OK.has(e.id) || ['K', 'C'].includes(V.get(e.id)?.v)));
