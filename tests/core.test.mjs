@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
@@ -472,4 +472,57 @@ test('ai: every model has a price, and cost counts cache writes at 1.25x and cac
   for (const [id] of MODELS) assert.ok(cost(id, { input_tokens: 1e6 }) > 0, id);
   assert.ok(Math.abs(cost('claude-opus-5-5', { input_tokens: 1e6, output_tokens: 1e6, cache_creation_input_tokens: 1e6, cache_read_input_tokens: 1e6 }) - (4 + 20 + 5 + 0.2)) < 1e-9);
   assert.ok(Math.abs(cost('claude-haiku-5-5', { cache_read_input_tokens: 1e6 }) - 0.01) < 1e-9);
+});
+
+// E1: the indexes an edit updates in place (updateIndex) must equal a full reindex, list order included. A fresh reindex on a copy of the project is the reference.
+// Compared as ids, key by key (a failed deepStrictEqual of the real library's maps takes minutes to print); the entry map must hold the very objects.
+const ixOf = P => Object.fromEntries(['theme', 'kids', 'entry', 'aliases', 'byTheme', 'byText'].map(n => [n, new Map([...P.ix[n]].map(([k, v]) => [k, Array.isArray(v) ? v.map(x => x.id).join() : v]))]));
+const sameAsFull = (P, step) => {
+  const Q = { ...P }; reindex(Q); const a = ixOf(P), b = ixOf(Q);
+  for (const n of Object.keys(a)) { assert.equal(a[n].size, b[n].size, `ix.${n} has ${a[n].size} keys, a full reindex ${b[n].size}, after ${step}`); for (const [k, v] of b[n]) assert.ok(a[n].get(k) === v, `ix.${n} "${k}" differs from a full reindex after ${step}`); }
+};
+
+test('E1: indexes updated by each edit equal a full reindex (add, text, alias, link, unlink, delete, themes)', () => {
+  const P = project(); reindex(P);
+  const step = (name, touch) => { updateIndex(P, touch); sameAsFull(P, name); };
+  const sofa = addEntry(P, 'sofa', { typ: { fruits: 1, citrus: 2 } }); step('add', { entries: [sofa] });
+  const couch = addEntry(P, 'couch', { aliasOf: sofa.id, aliasKind: 'synonym' }), lime = addEntry(P, 'lime', { typ: { citrus: 1 } });
+  step('add two, one an alias', { entries: [couch, lime] });
+  const settee = addEntry(P, 'Settee', { aliasOf: sofa.id, aliasKind: 'regional', typ: { colors: 3 } }); indexEntry(P, settee); sameAsFull(P, 'indexEntry');
+  lime.text = 'Lime'; step('same text, other case', { entries: [lime] });
+  lime.text = 'key lime'; step('text', { entries: [lime] });
+  sofa.typ.colors = 2; step('link a root (its aliases follow)', { entries: [sofa] });
+  unlinkEntry(P, sofa, 'fruits'); step('unlink', { entries: [sofa] });
+  couch.aliasOf = lime.id; step('alias moves to another root', { entries: [couch] });
+  couch.aliasOf = 0; couch.aliasKind = ''; couch.typ = { fruits: 4 }; step('alias becomes a root', { entries: [couch] });
+  lime.aliasOf = sofa.id; lime.aliasKind = 'synonym'; step('root becomes an alias', { entries: [lime] });
+  const navy = addEntry(P, 'navy', { typ: { shades_of_blue: 1 } }); step('add', { entries: [navy] });
+  step('delete a root with aliases', deleteEntry(P, sofa));
+  assert.equal(lime.aliasOf, 0); assert.equal(settee.aliasOf, lime.id);   // lime promoted, settee moved to it
+  const sky = addEntry(P, 'sky', { typ: { shades_of_blue: 2 } }); step('add after a delete', { entries: [sky] });
+  step('delete the promoted root', deleteEntry(P, lime));
+  step('delete a theme', deleteTheme(P, 'shades_of_blue'));
+  moveTheme(P, 'citrus', 'colors'); step('move a theme', { themes: true });
+  assert.ok(placeTheme(P, 'citrus', 'fruits', 'before')); step('drag a theme', { themes: true });
+  P.entries.splice(0, 0, Object.assign(addEntry(P, 'early', { typ: { fruits: 1 } }), {})); P.entries.pop();
+  step('an entry put first (not appended): rebuilt in full', { entries: [P.entries[0]] });
+  step('no touch: rebuilt in full', undefined);
+});
+
+test('E1: a seeded run of random edits on the real library keeps the indexes equal to a full reindex', () => {
+  const P = parseProject(readFileSync(new URL('../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
+  let seed = 7; const rnd = n => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed % n; };
+  const themes = P.themes.filter(t => !t.group).map(t => t.id), pick = () => P.entries[rnd(P.entries.length)];
+  for (let i = 1; i <= 300; i++) {
+    const e = pick(), k = rnd(8);
+    if (k === 0) { const n = addEntry(P, 'zz' + i, { typ: { [themes[rnd(themes.length)]]: 3 } }); updateIndex(P, { entries: [n] }); }
+    else if (k === 1) { e.text = e.text + ' x'; updateIndex(P, { entries: [e] }); }
+    else if (k === 2) { e.typ[themes[rnd(themes.length)]] = 2; updateIndex(P, { entries: [e] }); }
+    else if (k === 3) { const tid = Object.keys(e.typ)[0]; if (tid) unlinkEntry(P, e, tid); updateIndex(P, { entries: [e] }); }
+    else if (k === 4) updateIndex(P, deleteEntry(P, P.ix.aliases.has(e.id) ? e : pick()));
+    else if (k === 5) { const r = pick(); if (!r.aliasOf && r !== e && !P.ix.aliases.has(e.id)) { e.aliasOf = r.id; e.aliasKind = 'synonym'; } updateIndex(P, { entries: [e] }); }
+    else if (k === 6 && i % 50 === 6) { const tid = themes[rnd(themes.length)]; try { updateIndex(P, deleteTheme(P, tid)); } catch { /* a rule names it */ } }
+    else { const n = addEntry(P, 'yy' + i, { aliasOf: e.aliasOf || e.id, aliasKind: 'spelling' }); updateIndex(P, { entries: [n] }); }
+    if (i % 75 === 0) sameAsFull(P, 'edit ' + i);
+  }
 });

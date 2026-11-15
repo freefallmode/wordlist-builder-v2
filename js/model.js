@@ -41,24 +41,60 @@ export function addEntry(P, text, over = {}) {
   return e;
 }
 
-// ---------- indexes (rebuilt after edits) ----------
+// ---------- indexes ----------
+// reindex builds them all. An edit can instead re-file only what it touched (updateIndex); every list stays in P.entries order, so the result equals a full reindex (tested).
+// ix.at remembers where each entry was filed (o its place in P.entries, k its text key, a its root, t its themes) so it can be taken out again; ix.n is the next place.
 
 export function reindex(P) {
-  const ix = { theme: new Map(P.themes.map(t => [t.id, t])), kids: childrenOf(P.themes), entry: new Map(P.entries.map(e => [e.id, e])),
-    aliases: new Map(), byTheme: new Map(), byText: new Map(), eff: new Map() };
-  P.ix = ix;
-  for (const e of P.entries) {
-    if (e.aliasOf) { if (!ix.aliases.has(e.aliasOf)) ix.aliases.set(e.aliasOf, []); ix.aliases.get(e.aliasOf).push(e); }
-    const k = e.text.toLowerCase();
-    if (!ix.byText.has(k)) ix.byText.set(k, []);
-    ix.byText.get(k).push(e);
-  }
-  for (const e of P.entries) for (const tid of linkIds(P, e)) {
-    if (!ix.byTheme.has(tid)) ix.byTheme.set(tid, []);
-    ix.byTheme.get(tid).push(e);
-  }
+  const ix = { theme: null, kids: null, entry: new Map(), aliases: new Map(), byTheme: new Map(), byText: new Map(), eff: null, at: new Map(), n: P.entries.length };
+  P.ix = ix; reindexThemes(P);
+  const rs = P.entries.map((e, o) => { const r = { e, o, k: '', a: 0, t: null }; if (ix.at.has(e.id)) ix.dup = true; ix.entry.set(e.id, e); ix.at.set(e.id, r); fileText(ix, e, r, true); return r; });
+  for (const r of rs) fileThemes(P, r.e, r, true);
+  if (ix.dup) ix.at = null;   // two entries share an id (validate reports it): no record can be trusted, so every update rebuilds everything
   return ix;
 }
+export function reindexThemes(P) { const ix = P.ix; ix.theme = new Map(P.themes.map(t => [t.id, t])); ix.kids = childrenOf(P.themes); ix.eff = new Map(); return ix; }
+const rec = (ix, e) => { const r = ix.at.get(e.id); return r && r.e === e ? r : null; };   // by id (a Map keyed by the entry objects is several times slower), checked against the entry
+const put = (ix, m, k, e, last) => {   // into its place by P.entries order; last: it comes after everything filed so far (a full reindex, a new entry)
+  const l = m.get(k); if (!l) return m.set(k, [e]);
+  if (last) return l.push(e);
+  const o = rec(ix, e).o, ord = x => rec(ix, x).o; let lo = 0, hi = l.length;
+  if (ord(l[hi - 1]) < o) return l.push(e);
+  while (lo < hi) { const mid = (lo + hi) >> 1; if (ord(l[mid]) < o) lo = mid + 1; else hi = mid; }
+  l.splice(lo, 0, e);
+};
+const take = (m, k, e) => { const l = m.get(k), i = l ? l.indexOf(e) : -1; if (i < 0) return; l.splice(i, 1); if (!l.length) m.delete(k); };
+function fileText(ix, e, r, last) { r.k = e.text.toLowerCase(); r.a = e.aliasOf; put(ix, ix.byText, r.k, e, last); if (r.a) put(ix, ix.aliases, r.a, e, last); }
+function fileThemes(P, e, r, last) { r.t = linkIds(P, e); for (const tid of r.t) put(P.ix, P.ix.byTheme, tid, e, last); }
+function unfile(ix, e) { const r = rec(ix, e); if (!r || r.t === null) return; take(ix.byText, r.k, e); if (r.a) take(ix.aliases, r.a, e); for (const tid of r.t) take(ix.byTheme, tid, e); r.k = ''; r.a = 0; r.t = null; }
+
+// Re-files the entries whose text, root or links may have changed (new ones too: they must be the last of P.entries), with the aliases of each, and drops the deleted ones (gone).
+// An entry is new when it has no record yet, and a record is matched by id and entry, so a deleted id handed out again cannot be confused with the old entry.
+export function reindexEntries(P, es, gone = []) {
+  const ix = P.ix; if (!ix?.at) return reindex(P);
+  const all = new Set(es), out = new Set(gone);
+  for (const e of [...es, ...gone]) for (const a of ix.aliases.get(e.id) || []) all.add(a);   // an alias takes its root's links
+  for (const e of gone) all.delete(e);
+  const fresh = [...all].filter(e => !rec(ix, e)), N = P.entries.length;
+  if (fresh.length) {
+    const pos = new Map(fresh.map(e => [e, P.entries.lastIndexOf(e)]));
+    if (fresh.some(e => pos.get(e) < N - fresh.length) || fresh.some(e => ix.at.has(e.id))) return reindex(P);   // not appended, or an id in use: rebuild everything
+    fresh.sort((a, b) => pos.get(a) - pos.get(b)); for (const e of fresh) ix.at.set(e.id, { e, o: ix.n++, k: '', a: 0, t: null });
+  }
+  for (const e of [...out, ...all]) unfile(ix, e);
+  for (const e of out) if (rec(ix, e)) { ix.at.delete(e.id); if (ix.entry.get(e.id) === e) ix.entry.delete(e.id); }
+  for (const e of all) { ix.entry.set(e.id, e); fileText(ix, e, rec(ix, e)); }
+  for (const e of all) fileThemes(P, e, rec(ix, e));
+  return ix;
+}
+// After an edit. touch names what changed: { entries (text, root or links may have changed, or new), gone (deleted entries), themes (added, removed, moved, renamed or flags) }.
+// Without touch (or without indexes yet) everything is rebuilt: the safe choice for any edit that does not say.
+export function updateIndex(P, touch) {
+  if (!touch || !P.ix?.at) return reindex(P);
+  if (touch.themes) reindexThemes(P);
+  return reindexEntries(P, touch.entries || [], touch.gone || []);
+}
+export const indexEntry = (P, e) => reindexEntries(P, [e]);
 
 // Theme ids an entry belongs to: its own links, plus its root's when it is an alias.
 export function linkIds(P, e) {
@@ -182,7 +218,7 @@ const SAME_WORD = ['spelling', 'form'];   // alias kinds that are the root's own
 // its links (with the root's rating where it had none of its own), its synonym groups, adult and sensitive (they follow the meaning), its region when it has none of its own (the export judged it on the root's),
 // and the shown text of a theme when it is the same word or its text contains that text. When it is the same word (spelling, form) it also takes trademark, vulgar, the name allowances and the forms the themes used.
 // When it is another word, the root's spellings and abbreviations become its synonyms (a spelling of the old root is not a spelling of the new one); forms keep their kind.
-// The deleted id leaves every synonym group and every `use`.
+// The deleted id leaves every synonym group and every `use`. Returns what updateIndex needs.
 export function deleteEntry(P, e) {
   const als = P.entries.filter(a => a.aliasOf === e.id);
   let first = null;
@@ -210,19 +246,22 @@ export function deleteEntry(P, e) {
   }
   for (const x of P.entries) if (x.use) for (const [tid, id] of Object.entries(x.use)) if (id === e.id) delete x.use[tid];
   P.entries = P.entries.filter(x => x !== e);
+  return { entries: als, gone: [e] };
 }
 
 // The theme a wordplay rule names (starts:@colors), or ''.
 export const ruleTheme = t => /^(?:starts|ends|hidden):@(.+)$/.exec(t.rule || '')?.[1] || '';
-// Deleting a theme also drops what entries held for it (shown text, form used, name allowance). It is refused while another theme's rule names it.
+// Deleting a theme also drops what entries held for it (shown text, form used, name allowance). It is refused while another theme's rule names it. Returns what updateIndex needs.
 export function deleteTheme(P, tid) {
   const t = P.ix.theme.get(tid);
-  if (!t) return;
+  if (!t) return { themes: true };
   const by = P.themes.filter(x => x !== t && ruleTheme(x) === tid);
   if (by.length) throw Error(`"${t.name}" cannot be deleted: the rule of ${by.map(x => `"${x.name}"`).join(', ')} names it. Change that rule first.`);
   for (const k of P.themes) if (k.parent === tid) k.parent = t.parent;
-  for (const e of P.entries) { delete e.typ[tid]; if (e.show) delete e.show[tid]; if (e.use) delete e.use[tid]; if (e.nameOkIn?.includes(tid)) e.nameOkIn = e.nameOkIn.filter(x => x !== tid); }
+  const es = [];
+  for (const e of P.entries) { if (tid in e.typ) es.push(e); delete e.typ[tid]; if (e.show) delete e.show[tid]; if (e.use) delete e.use[tid]; if (e.nameOkIn?.includes(tid)) e.nameOkIn = e.nameOkIn.filter(x => x !== tid); }
   P.themes = P.themes.filter(x => x !== t);
+  return { themes: true, entries: es };
 }
 
 // Is `a` an ancestor of `b`? (A theme can't move under its own descendant.)

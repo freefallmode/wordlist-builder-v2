@@ -2,7 +2,7 @@
 import { h, select, check, field, dialog, toast, plural, fmtBytes } from './dom.js';
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
-import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex,
+import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, reindexThemes, indexEntry,
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded } from './freq.js';
 import { loadBreaks } from './breaks.js';
@@ -75,7 +75,7 @@ export async function editTheme(t, isNew = false) {
     { label: 'Cancel' },
     !isNew && { label: 'Delete', action: async () => {
       if (!confirm(`Delete "${t.name}"? Its sub-themes move up a level and words stay but lose this link.`)) return false;
-      deleteTheme(P, t.id); if (A.sel === t.id) A.sel = t.parent; A.changed(); } },
+      const touch = deleteTheme(P, t.id); if (A.sel === t.id) A.sel = t.parent; A.changed(touch); } },
     { label: 'Save', primary: true, action: () => {
       const name = f.name.value.trim();
       if (!name) throw Error('A theme needs a name.');
@@ -96,9 +96,9 @@ export async function editTheme(t, isNew = false) {
       if (!w.tkind) delete t.tkind;
       if (!w.rule) delete t.rule;
       if (f.locked.value === 'auto') delete t.locked; else t.locked = f.locked.value === 'locked';
-      if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindex(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
-      else if ((parent || null) !== (oldParent || null)) { reindex(P); moveTheme(P, t.id, parent); if (parent) A.open.add(parent); }
-      A.changed();
+      if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindexThemes(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
+      else if ((parent || null) !== (oldParent || null)) { reindexThemes(P); moveTheme(P, t.id, parent); if (parent) A.open.add(parent); }
+      A.changed({ themes: true });
     } },
   ].filter(Boolean), { wide: true });
 }
@@ -241,11 +241,11 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     Object.assign(e, w);
     for (const tid of unlinked) unlinkEntry(P, e, tid);   // also drops its form used, name allowance and synonym groups there
     if (isNew) { e.id = P.nextId++; P.entries.push(e); }
-    A.changed();
+    A.changed({ entries: [e] });   // its aliases are re-filed with it
   };
   return dialog(isNew ? 'New entry' : `Entry: ${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''}`, body, [
     { label: 'Cancel' },
-    !isNew && { label: 'Delete', action: () => { if (!confirm(`Delete "${e.text}"?`)) return false; deleteEntry(P, e); A.changed(); } },
+    !isNew && { label: 'Delete', action: () => { if (!confirm(`Delete "${e.text}"?`)) return false; A.changed(deleteEntry(P, e)); } },
     { label: 'Save', primary: true, action: save },
   ].filter(Boolean), { wide: true });
 }
@@ -259,17 +259,16 @@ export async function bulkAdd(tid) {
   const body = h('div.form', {}, h('p', {}, `Adding to "${t.name}". Words that already exist are just linked.`), ta,
     h('div.two', {}, field('Part of speech', d.pos), field('Type', d.type)), h('div.two', {}, field('Familiarity', d.fam), field('Typicality in this theme', d.typicality)));
   return dialog('Add words', body, [{ label: 'Cancel' }, { label: 'Add', primary: true, action: () => {
-    let added = 0, linked = 0; const problems = [];
+    let added = 0, linked = 0; const problems = [], touched = [];
     for (const line of ta.value.split('\n')) {
       if (!line.trim()) continue;
       const [text, gloss = '', fam = '', typ = ''] = line.split('|').map(s => s.trim());
       const same = sameText(P, text), hit = same.find(x => (x.gloss || '').toLowerCase() === gloss.toLowerCase());
-      if (hit) { if (!(tid in hit.typ)) { hit.typ[tid] = +typ || +d.typicality.value; linked++; } continue; }
+      if (hit) { if (!(tid in hit.typ)) { hit.typ[tid] = +typ || +d.typicality.value; touched.push(hit); linked++; } continue; }
       if (same.length && !gloss) { problems.push(text); continue; }
-      addEntry(P, text, { gloss, pos: d.pos.value, type: d.type.value, fam: +fam || +d.fam.value, typ: { [tid]: +typ || +d.typicality.value } });
-      reindex(P); added++;
+      indexEntry(P, addEntry(P, text, { gloss, pos: d.pos.value, type: d.type.value, fam: +fam || +d.fam.value, typ: { [tid]: +typ || +d.typicality.value } })); added++;   // filed at once: a later line may repeat it
     }
-    A.changed();
+    A.changed({ entries: touched });
     toast(`${plural(added, 'word')} added, ${linked} linked` + (problems.length ? `; need a meaning/context: ${problems.join(', ')}` : ''), problems.length > 0);
   } }], { wide: true });
 }
@@ -309,29 +308,29 @@ export async function generate(tid) {
       })));
   };
   const add = () => {
-    let created = 0, linked = 0;
+    let created = 0, linked = 0; const touched = [];
     for (const x of result.filter(r => r.take)) {
       const text = x.text.trim(); if (!text) continue;
       const gloss = (x.gloss || '').trim();
       let root = sameText(P, text).find(o => (o.gloss || '').toLowerCase() === gloss.toLowerCase());
       if (root) {   // an existing word (or one of its alias family) is linked if no member of the family is in the theme yet; spelling and form aliases are linked through their root
         const fam = root.aliasOf ? P.ix.entry.get(root.aliasOf) : root;
-        if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.typ)) { (['spelling', 'form'].includes(root.aliasKind) ? fam : root).typ[tid] = clamp(x.typicality); linked++; }
+        if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.typ)) { const m = ['spelling', 'form'].includes(root.aliasKind) ? fam : root; m.typ[tid] = clamp(x.typicality); touched.push(m); linked++; }
         root = fam;
       } else {
         root = addEntry(P, text, { gloss, pos: x.pos, type: x.type, fam: clamp(x.familiarity), adult: x.adult, sensitive: x.sensitive, tm: x.tm, vulgar: x.vulgar, region: x.region,
           status: 'gen', typ: { [tid]: clamp(x.typicality) } });
-        reindex(P); created++;
+        indexEntry(P, root); created++;
       }
       for (const a of x.aliases) {
         const at = a.text.trim(); if (!at || at.toLowerCase() === text.toLowerCase()) continue;
         if (sameText(P, at).some(o => (o.gloss || '').toLowerCase() === (a.gloss || '').toLowerCase())) continue;
         const al = addEntry(P, at, { gloss: (a.gloss || '').trim(), pos: root.pos, type: root.type, fam: clamp(a.familiarity), aliasOf: root.id, aliasKind: a.kind, region: a.region, status: 'gen',
           adult: root.adult, sensitive: root.sensitive, tm: root.tm, vulgar: root.vulgar });
-        reindex(P); created++;   // the alias follows its root's links; a family has only one member linked in a theme
+        indexEntry(P, al); created++;   // the alias follows its root's links; a family has only one member linked in a theme
       }
     }
-    A.changed();
+    A.changed({ entries: touched });
     toast(`${plural(created, 'entry')} added, ${linked} linked. Status "gen": review them.`);
   };
   const body = h('div.form', {}, h('p', {}, `Generate words for "${t.name}". ${getKey() ? '' : 'You need an API key: Settings.'}`),

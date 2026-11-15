@@ -2,7 +2,7 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline, mergeOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, eff, themeStats, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, FAMILIARITY_HELP, themeDifficulty } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
@@ -23,7 +23,8 @@ const autosave = debounce(async () => {
 }, 700);
 addEventListener('pagehide', () => autosave.flush());
 
-A.changed = () => { reindex(A.P); A.dirty = true; autosave(); render(); };
+// touch names what the edit changed so only that is re-indexed (model.js updateIndex); without it every index is rebuilt.
+A.changed = touch => { updateIndex(A.P, touch); memo = null; A.dirty = true; autosave(); render(); };
 A.render = keep => render(keep);
 
 function renderStatus() {
@@ -34,7 +35,12 @@ function renderStatus() {
 
 // ---------- tree ----------
 
+let memo = null;   // counts() of the last render, kept until the next edit (A.changed) or another library (its indexes are another object)
 function counts() {
+  if (memo?.ix === A.P.ix) return memo.c;
+  const c = countsNow(); memo = { ix: A.P.ix, c }; return c;
+}
+function countsNow() {
   const P = A.P, own = new Map(), tot = new Map(), ready = new Map(), play = new Map();
   const min = P.settings.minWords || 4;
   for (const t of P.themes) if (!t.group) own.set(t.id, themeStats(P, t.id).roots);
@@ -69,8 +75,8 @@ function rowButtons(t) {
     btn('✎', 'Rename', () => renameTheme(t)),
     btn('🗑', 'Delete', () => {
       if (!confirm(`Delete "${t.name}"? Its sub-themes move up a level and words stay but lose this link.`)) return;
-      try { deleteTheme(A.P, t.id); } catch (err) { return toast(err.message, true); }
-      if (A.sel === t.id) A.sel = t.parent; A.changed();
+      let touch; try { touch = deleteTheme(A.P, t.id); } catch (err) { return toast(err.message, true); }
+      if (A.sel === t.id) A.sel = t.parent; A.changed(touch);
     }));
 }
 
@@ -82,7 +88,7 @@ function renameTheme(t) {
       const name = input.value.trim();
       if (!name) throw Error('A theme needs a name.');
       if (A.P.themes.some(x => x !== t && x.name.toLowerCase() === name.toLowerCase())) throw Error('Another theme already has this name.');
-      t.name = name; A.changed();
+      t.name = name; A.changed({ themes: true });
     } },
   ]);
   setTimeout(() => { input.focus(); input.select(); }, 30);
@@ -126,7 +132,7 @@ document.addEventListener('drop', e => {
   const w = where(e, r);
   if (canDrop(drag, r, w) && placeTheme(A.P, drag, r.dataset.id || null, w)) {
     if (w === 'in') A.open.add(r.dataset.id);
-    A.changed();
+    A.changed({ themes: true });
   }
   drag = null; clearZones();
 });
@@ -291,12 +297,11 @@ function entryTable(t) {
   // With "sub-themes" on, the table holds the words of this theme and of every theme below it (each word once).
   const subIds = new Set([t.id, ...descendants(P, t.id).map(x => x.id)]);
   const pool = sub ? [...new Map([...subIds].flatMap(id => P.ix.byTheme.get(id) || []).map(e => [e.id, e])).values()] : (P.ix.byTheme.get(t.id) || []);
-  const tools = h('div.tools', {}, h('input.filter', { placeholder: 'filter words…', value: A.filter, oninput: ev => { A.filter = ev.target.value; render(true); } }),
+  const tools = h('div.tools', {}, h('input.filter', { placeholder: 'filter words…', value: A.filter, oninput: debounce(ev => { A.filter = ev.target.value; render(true); }, 150) }),
     h('label.chk', {}, h('input', { type: 'checkbox', checked: A.showOff, onchange: ev => { A.showOff = ev.target.checked; render(); } }), ' show disabled'),
     h('label.chk', { title: 'Also list the words of every sub-theme' }, h('input', { type: 'checkbox', checked: sub, onchange: ev => { A.showSub = ev.target.checked; render(); } }), ' show words in sub-themes'));
   if (t.group && !sub) return h('div.etable', {}, tools);
-  const formsOf = new Map();   // a word's forms (rainy for rain) are not rows of their own: the row shows the form this theme uses, with the root after an arrow
-  for (const a of P.entries) if (a.aliasKind === 'form' && a.aliasOf) { if (!formsOf.has(a.aliasOf)) formsOf.set(a.aliasOf, []); formsOf.get(a.aliasOf).push(a); }
+  const formsOf = { get: id => (P.ix.aliases.get(id) || []).filter(a => a.aliasKind === 'form') };   // a word's forms (rainy for rain) are not rows of their own: the row shows the form this theme uses, with the root after an arrow
   const shown = e => (!e.aliasOf && P.ix.entry.get(e.use?.[t.id])) || e;
   const own = e => e.typ[t.id] !== undefined;   // an alias linked in this theme on its own is a word of the theme like any other (public house in ___ house); otherwise it only sits under its root
   const locked = themeLocked(P, t);   // a locked theme never swaps in an alias it does not link itself, so such aliases are not listed under their root
@@ -308,10 +313,12 @@ function entryTable(t) {
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
   const key = { text: e => label(e).toLowerCase(), fam: e => e.fam || 9, pos: e => e.pos, typ: e => typicality(P, e, t.id) || 9, diff: e => difficultyBand(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey, syn: e => groupMates(t, e).toLowerCase() || '￿' }[A.sort] || (e => e.text.toLowerCase());
   const dir = A.sortDesc ? -1 : 1;
-  roots.sort((a, b) => dir * (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0));
+  const kv = new Map(roots.map(e => [e, key(e)])), kf = e => kv.get(e);   // each key worked out once, not at every comparison
+  roots.sort((a, b) => dir * (kf(a) < kf(b) ? -1 : kf(a) > kf(b) ? 1 : 0));
   let rows = [];
   const under = new Map(), openRows = A.expanded || (A.expanded = new Set());   // other names of a word (spellings, regional words ...) sit behind a button on its row
-  for (const e of roots) { const as = list.filter(x => x.aliasOf === e.id && x.aliasKind !== 'form' && !(locked && !own(x))); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dm(e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
+  const inRoot = new Map(); for (const x of list) if (x.aliasOf) { if (!inRoot.has(x.aliasOf)) inRoot.set(x.aliasOf, []); inRoot.get(x.aliasOf).push(x); }   // the aliases in the list by root, in list order (filtering the list once per root was quadratic)
+  for (const e of roots) { const as = (inRoot.get(e.id) || []).filter(x => x.aliasKind !== 'form' && !(locked && !own(x))); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dm(e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
   const underRow = new Set([...under].filter(([id]) => openRows.has(id)).flatMap(([, as]) => as.map(a => a.id)));
   const total = rows.length;
   if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
@@ -324,22 +331,22 @@ function entryTable(t) {
   const synCell = (t, e) => [...mateIds(t, e).map(id => h('span.chip', {}, groupName(t, id), h('a.x', { href: '#', title: 'Not a synonym', onclick: ev => { ev.preventDefault(); leaveGroup(t, id); } }, '✕'))),
     h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => pool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
   // another name of a word (an alias, or the root when the row shows a dialect variant) sits under its row with its own part of speech, type, familiarity, flags and status
-  const subRow = (a, note) => h('tr.alias', { class: a.enabled ? '' : 'off' }, h('td.on', {}, h('div.onwrap', {}, h('span.expander.none'), h('input', { type: 'checkbox', checked: a.enabled, title: 'enabled', onchange: ev => { a.enabled = ev.target.checked; A.changed(); } }))),
-    h('td.word', { onclick: () => editEntry(a) }, a.show?.[t.id] || a.text, a.show?.[t.id] && h('span.root', {}, ' ← ', h('span.rootname', {}, a.text)), a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, familiaritySel(a.fam, ev => { a.fam = +ev.target.value; A.changed(); })), h('td'), h('td'),
+  const subRow = (a, note) => h('tr.alias', { class: a.enabled ? '' : 'off' }, h('td.on', {}, h('div.onwrap', {}, h('span.expander.none'), h('input', { type: 'checkbox', checked: a.enabled, title: 'enabled', onchange: ev => { a.enabled = ev.target.checked; A.changed({ entries: [a] }); } }))),
+    h('td.word', { onclick: () => editEntry(a) }, a.show?.[t.id] || a.text, a.show?.[t.id] && h('span.root', {}, ' ← ', h('span.rootname', {}, a.text)), a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, familiaritySel(a.fam, ev => { a.fam = +ev.target.value; A.changed({ entries: [a] }); })), h('td'), h('td'),
     h('td', flagsOf(a)), h('td', h('span.dot.' + a.status, { title: a.status }, a.status === 'rev' ? '✓' : a.status === 'gen' ? 'g' : '·')));
   return h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
     h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('familiarity', 'fam'), sub ? h('th', { title: 'Themes below this one that hold the word, with the typicality in each' }, 'themes') : th('typicality', 'typ'), th('difficulty', 'diff'), th('flags', 'flags'), th('status', 'status')),
       rows.length ? rows.map(e => { if (e.asRoot) return subRow(e.asRoot, '(root)'); if (e.aliasOf && underRow.has(e.id)) return subRow(e, '(' + (e.aliasKind || 'unknown') + ' alias)'); const s = shown(e), v = s !== e ? s : dm(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];   // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
          return h('tr', { class: [e.aliasOf && !own(e) ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
-        h('td.on', {}, h('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } }))),
+        h('td.on', {}, h('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed({ entries: [e] }); } }))),
         h('td.word', { onclick: () => editEntry(s !== e ? e : v) },
           s !== e ? h('span.shownform', { title: 'Open this form', onclick: ev => { ev.stopPropagation(); editEntry(s); } }, label(e)) : label(e),
           label(e) !== e.text && h('span.root', { title: 'Open the entry behind it' }, ' ← ', h('span.rootname', {}, e.text)), e.gloss && needLabel(e) && h('span.gloss', ` (${e.gloss})`),
-          forms.length > 0 && h('a.useform', { href: '#', title: 'Choose the form this theme shows', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); formMenu(ev.currentTarget, [[0, e.text], ...forms.map(a => [a.id, a.text])], s === e ? 0 : s.id, v => { if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed(); render(); }); } }, '▾'), e.aliasKind && h('span.hint', ` (${e.aliasKind} alias${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''})`)),
+          forms.length > 0 && h('a.useform', { href: '#', title: 'Choose the form this theme shows', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); formMenu(ev.currentTarget, [[0, e.text], ...forms.map(a => [a.id, a.text])], s === e ? 0 : s.id, v => { if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed({ entries: [e] }); }); } }, '▾'), e.aliasKind && h('span.hint', ` (${e.aliasKind} alias${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''})`)),
         h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, e.aliasOf ? '' : synCell(t, e)),
-        h('td.dim', v.pos), h('td.dim', v.type), h('td', {}, familiaritySel(v.fam, ev => { v.fam = +ev.target.value; A.changed(); })),
-        sub ? h('td.dim', where(e)) : h('td', {}, familiaritySel(e.typ[t.id] || 0, ev => { e.typ[t.id] = +ev.target.value; A.changed(); }, true)),
+        h('td.dim', v.pos), h('td.dim', v.type), h('td', {}, familiaritySel(v.fam, ev => { v.fam = +ev.target.value; A.changed({ entries: [v] }); })),
+        sub ? h('td.dim', where(e)) : h('td', {}, familiaritySel(e.typ[t.id] || 0, ev => { e.typ[t.id] = +ev.target.value; A.changed({ entries: [e] }); }, true)),
         h('td', {}, sub ? '' : h('span.diffcell.' + RECCLASS[difficultyBand(P, e, t.id)], { title: 'Difficulty: the harder of familiarity and typicality (worked out, not editable)' }, difficultyBand(P, e, t.id) || '–')),
         h('td', flagsOf(v)), h('td', h('span.dot.' + v.status, { title: v.status }, v.status === 'rev' ? '✓' : v.status === 'gen' ? 'g' : '·'))); }) :
         h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
@@ -381,12 +388,12 @@ function joinSynonyms(t, a, b) {   // a and b (and the words already grouped wit
   const all = new Set([a, b]);
   for (const g of t.groups || []) if (g.includes(a) || g.includes(b)) g.forEach(id => all.add(id));
   t.groups = (t.groups || []).filter(g => !g.includes(a) && !g.includes(b));
-  t.groups.push([...all]); A.changed(); render();
+  t.groups.push([...all]); A.changed({});   // synonym groups are not indexed
 }
 function leaveGroup(t, id) {
   t.groups = (t.groups || []).map(g => g.filter(x => x !== id)).filter(g => g.length > 1);
   if (!t.groups.length) delete t.groups;
-  A.changed(); render();
+  A.changed({});
 }
 
 // ---------- shell ----------
@@ -395,7 +402,7 @@ function render(keepFocus = false) {
   const main = $('#main'), top = main.scrollTop;
   const focus = keepFocus && document.activeElement && document.activeElement.classList.contains('filter');
   const pos = focus ? document.activeElement.selectionStart : 0;
-  renderTree();
+  if (!keepFocus) renderTree();   // render(true) is a filter keystroke or a column width: the tree is unchanged
   const t = A.sel && A.P.ix.theme.get(A.sel);
   main.replaceChildren(...[].concat(t ? themeView(t) : A.view === 'words' ? allWordsView() : A.view === 'themes' ? allThemesView(counts(), select_) : overview()));
   main.scrollTop = top;

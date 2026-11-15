@@ -1,5 +1,5 @@
 // The "All themes" screen: every theme and group in the library in one sortable, filterable table.
-import { h, select, plural } from './dom.js';
+import { h, select, plural, debounce } from './dom.js';
 import { A } from './state.js';
 import { eff, pathOf, themeDifficulty } from './model.js';
 
@@ -44,7 +44,7 @@ export function allThemesView(c, open) {
       h('p.hint', `${plural(P.themes.length, 'theme')} in the library (${P.themes.filter(t => !t.group).length.toLocaleString()} playable, the rest groups). Click a heading to sort, click a theme to open it.`),
       h('div.actions', {}, h('button', { onclick: () => { A.view = null; A.render(); } }, '← Overview'))),
     h('div.tools.wrap', {},
-      h('input.filter', { placeholder: 'filter by name, path or note…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
+      h('input.filter', { placeholder: 'filter by name, path or note…', value: S.q, oninput: debounce(ev => { S.q = ev.target.value; S.page = 0; A.render(true); }, 150) }),
       pick(select(SHOW, S.show))),
     pager(),
     h('div.awrap', {}, h('table.aw.ath', {}, h('tr', {}, th('theme', 'name'), th('parent', 'parent'), th('words', 'words', 'Distinct words in the theme itself'), th('with sub-themes', 'total', 'Distinct words in the theme and its sub-themes'),

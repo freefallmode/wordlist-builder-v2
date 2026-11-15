@@ -1,5 +1,5 @@
 // The "All words" screen: every entry in the library in one sortable, filterable table.
-import { h, select, plural } from './dom.js';
+import { h, select, plural, debounce } from './dom.js';
 import { A } from './state.js';
 import { linkIds, flagKey } from './model.js';
 import { editEntry } from './dialogs.js';
@@ -83,7 +83,8 @@ export function allWordsView() {
     themes: e => linkIds(P, e).length, aliases: e => (aliasesOf.get(e.id)?.[0]?.text || '￿').toLowerCase(),
   };
   const key = keys[S.sort] || keys.text;
-  const list = P.entries.filter(e => matches(P, e, aliasesOf)).sort((a, b) => (key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : a.id - b.id) * S.dir);
+  const list = P.entries.filter(e => matches(P, e, aliasesOf)), kv = new Map(list.map(e => [e, key(e)])), kf = e => kv.get(e);   // each key worked out once, not at every comparison
+  list.sort((a, b) => (kf(a) < kf(b) ? -1 : kf(a) > kf(b) ? 1 : a.id - b.id) * S.dir);
   const pages = Math.max(1, Math.ceil(list.length / PAGE));
   if (S.page >= pages) S.page = pages - 1;
   const rows = list.slice(S.page * PAGE, (S.page + 1) * PAGE);
@@ -108,13 +109,13 @@ export function allWordsView() {
       h('p.hint', `${plural(P.entries.length, 'entry')} in the library (${P.entries.filter(e => e.enabled).length.toLocaleString()} enabled). Click a heading to sort, click a word to edit it.`),
       h('div.actions', {}, h('button', { onclick: () => { A.view = null; A.render(); } }, '← Overview'))),
     h('div.tools.wrap', {},
-      h('input.filter', { placeholder: 'filter…', value: S.q, oninput: ev => { S.q = ev.target.value; S.page = 0; A.render(true); } }),
+      h('input.filter', { placeholder: 'filter…', value: S.q, oninput: debounce(ev => { S.q = ev.target.value; S.page = 0; A.render(true); }, 150) }),
       pick('in', SCOPE), pick('mode', MODES), pick('show', SHOW), pick('flag', FLAGS), pick('fam', familiarityOpts), pick('status', STATUS)),
     pager(),
     h('div.awrap', {}, h('table.aw', { style: 'min-width:' + tableMin() + 'px' }, h('tr', {}, colGrip('on', h('th.on', '')), th('word', 'text', 'text'), th('meaning', 'gloss', 'gloss'), th('aliases', 'aliases', 'aliases'), th('alias of', 'alias', 'aliasof'), th('themes', 'themes', 'themes'), th('pos', 'pos', 'pos'), th('type', 'type', 'type'), th('familiarity', 'fam', 'fam'),
       th('flags', 'flags', 'flags'), th('status', 'status', 'status')),
       rows.length ? rows.map(e => h('tr', { class: [e.aliasOf ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
-        h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed(); } })),
+        h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed({ entries: [e] }); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.text),
         h('td.dim', e.gloss || ''), h('td.dim', aliasCell(e)), h('td.dim', rootOf(e) ? `${rootOf(e).text}${e.aliasKind ? ' (' + e.aliasKind + ' alias)' : ''}` : ''),
         h('td.dim', themesCell(e)), h('td.dim', e.pos), h('td.dim', e.type), h('td', e.fam || h('span.hint', '?')),

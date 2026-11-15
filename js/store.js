@@ -38,12 +38,21 @@ export const saveLocal = (P, dirty) => { const s = serializeProject(P); return k
 
 // ---------- file format ----------
 
-const DEFAULTS = entryDefaults();
+const DEFAULTS = entryDefaults(), DEF_JSON = Object.fromEntries(Object.entries(DEFAULTS).map(([k, v]) => [k, JSON.stringify(v)]));
+// Is v the default for k, as JSON? Plain values compare directly and empty arrays and objects by length, without writing them out (most fields are defaults: this was most of an 8 MB autosave).
+const isDefault = (k, v) => {
+  if (v === null || typeof v !== 'object') return v === DEFAULTS[k];
+  const d = DEFAULTS[k];
+  if (Array.isArray(v) && Array.isArray(d) && !v.length && !d.length) return true;
+  if (d && typeof d === 'object' && !Array.isArray(d) && !Array.isArray(v) && !d.toJSON && !v.toJSON && !Object.keys(d).length) { for (const x in v) if (Object.hasOwn(v, x) && v[x] !== undefined && typeof v[x] !== 'function') return false; return true; }
+  return JSON.stringify(v) === DEF_JSON[k];
+};
 function packEntry(e) {
   const o = {};
-  for (const [k, v] of Object.entries(e)) {
-    if (k === 'id' || k === 'text') continue;
-    if (JSON.stringify(v) === JSON.stringify(DEFAULTS[k])) continue;
+  for (const k in e) {
+    if (!Object.hasOwn(e, k) || k === 'id' || k === 'text') continue;
+    const v = e[k];
+    if (isDefault(k, v)) continue;
     o[k] = v;
   }
   return JSON.stringify({ id: e.id, text: e.text, ...o });
