@@ -423,3 +423,10 @@ test('debounce flush runs a pending call at once and only once', async () => {
   d(); d.flush(); assert.equal(n, 1);
   await new Promise(r => setTimeout(r, 50)); assert.equal(n, 1);
 });
+
+test('ai: every model has a price, and cost counts cache writes at 1.25x and cache reads at the read price', async () => {
+  const { MODELS, cost } = await import('../js/ai.js');
+  for (const [id] of MODELS) assert.ok(cost(id, { input_tokens: 1e6 }) > 0, id);
+  assert.ok(Math.abs(cost('claude-opus-5-5', { input_tokens: 1e6, output_tokens: 1e6, cache_creation_input_tokens: 1e6, cache_read_input_tokens: 1e6 }) - (4 + 20 + 5 + 0.2)) < 1e-9);
+  assert.ok(Math.abs(cost('claude-haiku-5-5', { cache_read_input_tokens: 1e6 }) - 0.01) < 1e-9);
+});
