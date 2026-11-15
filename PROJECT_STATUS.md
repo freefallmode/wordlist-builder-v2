@@ -14,7 +14,7 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: baseline audit, two bug batches, case lint wired into Checks, proper-word pass (v371), style rule (v374), B12/B19 (stale refs, alias promotion), B22 (lint covers alias links), D1 (DESIGN.md section 8 rewritten), docs D2-D12, small fixes B14/B18/B20/I9/I13 (T7 data line waits for the batch). New issues T21 (case-case-split label). Library still v374. The game has **v374 pinned**; its checks passed.
+Done: baseline audit, two bug batches, case lint wired into Checks, proper-word pass (v371), style rule (v374), B12/B19 (stale refs, alias promotion), B22 (lint covers alias links), D1 (DESIGN.md section 8 rewritten), docs D2-D12, small fixes B14/B18/B20/I9/I13 (T7 data line waits for the batch). New issues T21 (case-case-split label). Library is now v375 (batch: T1 glosses, 9 room entries pos noun, South Beach diet type proper, sightseer break; tools/gen/batch375.mjs). Also done since: B15 ai.js, U1/U4/U5 (U2/U3 partly), I1 break points (English libraries only). The game had v374 pinned; v375 is committed and waits for `_WS_Manager` to check and pin it.
 
 In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archive in `tools/gen` (G1, G2), and decisions: should `--strict` fail before writing the output; bump export format version 3 (needs `_WS_Manager`); confirm the alias-promotion rule (DESIGN.md section 3); ask `_WS_Manager` to check the pinning text in DESIGN.md 8.6. New issues B23, T19, T20.
 
@@ -32,10 +32,6 @@ In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archiv
 
 | # | Task (ISSUES.md ids) | Difficulty | Model |
 |---|---|---|---|
-| 6 | Next library batch (Simon approved): lupin, grey, colours (T1); the 9 `noun phrase` entries and entry 67019 flagged by new Checks bad-pos/bad-type (B23); `sightseer=sight-see-er` in data/breaks-en.txt (T7); one library version | simple | Sonnet |
-| 7 | `js/ai.js` prices and model ids (B15); check current API docs first | lookup + standard | Sonnet |
-| 8 | Dead code and unused imports (U1-U5) | simple | Haiku or Sonnet |
-| 9 | Browser export lacks break points (I1) | standard | Sonnet |
 | 10 | Performance: full reindex per edit (E1-E4) | deep reasoning | Opus |
 | 11 | Single-word names, classical orders (T15, T18): a library pass, ask Simon first | judgement | Opus |
 

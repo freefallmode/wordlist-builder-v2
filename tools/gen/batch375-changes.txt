@@ -1,0 +1,30 @@
+Library batch v374 -> v375, 2026-11-15, script tools/gen/batch375.mjs (approved by Simon). 13 entry fields changed, one break-table line.
+
+T1 (needs-gloss): the UK spelling alias takes its root's gloss, as grey [color] 7673 (alias of gray [color] 7672) already did
+  1740   lupin           gloss: "" -> "flower"        (alias of 1741 lupine [flower]; the other lupin is 50239 [bean])
+  9526   grey            gloss: "" -> "horse color"   (alias of 9527 gray [horse color]; the other grey is 7673 [color])
+  37976  colours         gloss: "" -> "flag"          (alias of 37977 colors [flag]; the other colours is 43131 [snooker])
+
+B23 (bad-pos): `noun phrase` was written by the one-off tools/gen/rooms-fix.mjs (v288); BRIEF-pos2.md says noun phrases are nouns; every other "... room" entry is a noun
+  48358  single room     pos: "noun phrase" -> "noun"
+  48359  double room     pos: "noun phrase" -> "noun"
+  48360  twin room       pos: "noun phrase" -> "noun"
+  63321  deluxe room     pos: "noun phrase" -> "noun"
+  63322  king room       pos: "noun phrase" -> "noun"
+  63323  quad room       pos: "noun phrase" -> "noun"
+  63324  queen room      pos: "noun phrase" -> "noun"
+  63325  standard room   pos: "noun phrase" -> "noun"
+  63326  triple room     pos: "noun phrase" -> "noun"
+
+B14 data (bad-type): `name` came from a verdict line of the kinds pass (tools/gen/bare/v-2.txt, v288); the bare entry "South Beach" (16715) was `proper`, as are Zone diet, Mediterranean diet, Atkins, Dukan, Whole30 in "diet types"
+  67019  South Beach diet  type: "name" -> "proper"     (tm flag and shown text "South Beach" unchanged)
+
+T7 (data/breaks-en.txt, not versioned with the library)
+  sightseer=sight-see-er -> sightseer=sight-seer
+
+Checks (warnings and errors) before: needs-gloss 3, bad-pos 9, bad-type 1 (errors); theme-name 3, long 5, maybe-duplicate 1 (warnings)
+Checks after: errors 0; warnings unchanged (theme-name 3, long 5, maybe-duplicate 1); info unchanged (overlap 4917, orphan 131, same-display 10, alias-fullname 7, case 6)
+
+Family export (data/export/wordlist-game-family.json) against v374: pos of the 9 room entries -1 -> 0 (noun); type of South Beach diet -1 -> 5 (proper);
+sightseer breaks [] -> [5]; shown table: the 9 shown texts with pos -1 are gone, 3 new (twin, deluxe, triple, pos noun); the other 6 reuse existing noun shown texts,
+so shown indices after that point shift by up to 6 (links and shownUK renumbered, same content). The glosses of aliases are not in the export.

@@ -245,7 +245,7 @@ A **link number** n is the n-th link in file order: `entries.links[4n .. 4n+3]`.
 
 **`shown`**: each distinct `[text, pos]` once, with its `breaks` as the third value. **`nameWordLinks`**: links whose displayed text is a single word that is a word of the theme's name or its singular or plural (`isNameWord` in `js/validate.js`). **`nameThemeLinks`**: links whose displayed text is the whole name of another written theme (compared lowercase, punctuation as spaces, one final s dropped; the first theme of that name), a "passenger" word; the theme may be a group. **`shownUK`**: for a root entry with a shown text and a UK-only spelling alias in the export, the British form of the shown text (the words that differ between root and alias swapped, gray to grey) when it differs; links not listed show the same text to everyone. Balloon text is not stored; derive it.
 
-Out of range: an entry or shown text whose stored part of speech or type is not in the list is written as -1 (9 entries with `noun phrase` and one with type `name` at v374; ISSUES.md B14, B23).
+Out of range: an entry or shown text whose stored part of speech or type is not in the list is written as -1 (9 entries with `noun phrase` and one with type `name` at v374, corrected at v375; Checks reports any new one as `bad-pos` or `bad-type`; ISSUES.md B14, B23).
 
 Size at v374, family preset: 3.9 MB, 3,240 themes (118 groups), 60,533 entries (2,047 aliases), 106,730 links, 3,758 shown texts, 55 region codes. The two masks hold at most 61 codes.
 
