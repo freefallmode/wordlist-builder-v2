@@ -4,7 +4,7 @@ Written 2026-11-15, updated at commit `a116a9c`, library v374, clean tree. Read 
 
 ## 1. Overview
 
-Wordlist Builder v2: a browser tool that builds a library of themes and words for the Word Safari sorting game (Unity, separate repo, separate manager session `_WS_Manager`). Vanilla JavaScript ES modules, no build step, no dependencies. Node runs only the dev server, tests and tools.
+Wordlist Builder v2: a browser tool that builds a library of themes and words for the Word Safari sorting game (Unity, separate repo, separate manager session `_WS_`). Vanilla JavaScript ES modules, no build step, no dependencies. Node runs only the dev server, tests and tools.
 
 - `js/`: the app. `model.js` data, `validate.js` Checks, `caselint*.js` capital rules, `export.js`, `store.js`, `outline.js`, `app.js`/`dialogs.js` UI.
 - `data/wordlist-en.project.json`: the library (8 MB, one record per line). `data/export/wordlist-game-family.json`: the export the game reads, written by `tools/export-game.mjs`.
@@ -14,9 +14,9 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: baseline audit, two bug batches, case lint wired into Checks, proper-word pass (v371), style rule (v374), B12/B19 (stale refs, alias promotion), B22 (lint covers alias links), D1 (DESIGN.md section 8 rewritten), docs D2-D12, small fixes B14/B18/B20/I9/I13 (T7 data line waits for the batch). New issues T21 (case-case-split label). Library is now v375 (batch: T1 glosses, 9 room entries pos noun, South Beach diet type proper, sightseer break; tools/gen/batch375.mjs). Also done since: B15 ai.js, U1/U4/U5 (U2/U3 partly), I1 break points (English libraries only). The game had v374 pinned; v375 is committed and waits for `_WS_Manager` to check and pin it.
+Done: baseline audit, two bug batches, case lint wired into Checks, proper-word pass (v371), style rule (v374), B12/B19 (stale refs, alias promotion), B22 (lint covers alias links), D1 (DESIGN.md section 8 rewritten), docs D2-D12, small fixes B14/B18/B20/I9/I13 (T7 data line waits for the batch). New issues T21 (case-case-split label). Library is now v375 (batch: T1 glosses, 9 room entries pos noun, South Beach diet type proper, sightseer break; tools/gen/batch375.mjs). Also done since: B15 ai.js, U1/U4/U5 (U2/U3 partly), I1 break points (English libraries only). The game had v374 pinned; v375 is committed and waits for `_WS_` to check and pin it.
 
-In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archive in `tools/gen` (G1, G2), and decisions: should `--strict` fail before writing the output; bump export format version 3 (needs `_WS_Manager`); confirm the alias-promotion rule (DESIGN.md section 3); ask `_WS_Manager` to check the pinning text in DESIGN.md 8.6. New issues B23, T19, T20.
+In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archive in `tools/gen` (G1, G2), and decisions: should `--strict` fail before writing the output; bump export format version 3 (needs `_WS_`); confirm the alias-promotion rule (DESIGN.md section 3); ask `_WS_` to check the pinning text in DESIGN.md 8.6. New issues B23, T19, T20.
 
 ## 3. Decisions (do not reopen)
 
@@ -50,7 +50,7 @@ Flag: an Agent call with no `model` inherits the manager's model. Always pass `m
 - Tests: `npm test`. Strict export: `node tools/export-game.mjs --strict` (rewrites the committed export; give an output path to avoid that).
 - **Never use port 8100** (Simon's stored library). Use 8141, launch config `wordlist-builder-v2-test`.
 - Code style is dense: long lines, short names, few comments. Match it.
-- Library change workflow: script in `tools/gen` with a dry run, then `--apply`; run tests and the strict export; then rerun `tools/gen/style-case.mjs` and `tools/gen/propword-exceptions.mjs` (both must print 0 changes); commit; message `_WS_Manager` with version, changes, what to check.
+- Library change workflow: script in `tools/gen` with a dry run, then `--apply`; run tests and the strict export; then rerun `tools/gen/style-case.mjs` and `tools/gen/propword-exceptions.mjs` (both must print 0 changes); commit; message `_WS_` with version, changes, what to check.
 - **Before any pass, search git history for Simon's earlier decisions on those words.** The proper-word pass reversed `brazil nut` by not doing this.
 - Commit with explicit paths (`git commit -- file ...`); other sessions may edit this tree.
 - Bash heredocs mangle backslashes: write scripts with the Write tool, not `cat <<EOF`.
