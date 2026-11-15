@@ -1,0 +1,210 @@
+T15 candidates (read-only pass, library v375, 2026-11-15). Nothing in the library was changed.
+Format: id | text | theme path (last two levels) | gloss | proposed written form | confidence | reason
+
+RULE USED
+Base set: single-word entries (no space or hyphen) whose text is all lowercase, typed common (or untyped), with at least one theme link.
+Measured signals first (tools/gen/t15-scan.mjs): capitalised twin entry with the same letters 888 hits; word in PROPER_WORDS 20;
+loose origin-theme regex 5,538; twin + theme 261 (mostly turkey, olive, rose, bridge: false). All too loose to read as verdict lists.
+Rule kept: the base set restricted to ~90 named origin themes (breeds of every animal, cheeses and their sub-themes, wines, grape varieties,
+liqueurs, spirits, beers, teas, cocktails, sauces, dressings, dishes and their sub-themes, pastries, cookies, breads, pies, sausages, pizza
+styles, melons, squashes, chili peppers, fabrics, prints, dances, hats, boots, shoes, clothes, words/foods/colours named after places or
+people, ideologies named after people) = 1,387 words, read as bare word lists by theme (text only), plus lowercase entries linked to
+place, language and nationality themes (regions, cities, islands, rivers, counties, languages, conquistadors) = 194, plus the 20 PROPER_WORDS
+hits and the 888 twin words read as a bare list. Judged by own knowledge (Oxford and Merriam-Webster usage), then detailed with
+tools/gen/t15-show.mjs. Result: 119 high, 36 medium.
+History: tools/gen/t15-hist.mjs compared the text of every candidate id at 11 earlier library versions (before each case pass: v353, v355,
+v359, v363, v367, v371, and the early fill versions): none was ever capitalised and then lowercased, so no candidate reverses an earlier
+decision. Case logs (capmark, lone, case-fix, propword, style-case) and DESIGN-entries.md mention none of them as single words.
+Precedent used: Labrador, Pomeranian, Dobermann (51073), Devon, Gloucester cattle, Sussex chicken, Wensleydale sheep, Appenzeller chicken,
+Bordeaux wine, Holstein (9863, black and white animals), Fuji, Gala, Cox apples are already capital and typed proper.
+
+LEFT LOWERCASE DELIBERATELY (ordinary nouns, or not a name)
+cheddar, champagne, cognac, armagnac, calvados, bourbon, port, sherry, prosecco, cava, curaçao, genever, pilsner; fabrics from places
+(denim, jersey, calico, muslin, cambric, chambray, madras, tweed, cashmere, angora, worsted, melton, loden, gingham, argyle, paisley);
+clothes (bikini, cardigan, mackintosh, balaclava, jodhpurs, chesterfield, homburg, trilby, fedora, balmoral, glengarry, oxfords, brogues);
+foods (hamburger, frankfurter, wiener, bologna, thuringer, sardine, tangerine, mandarin, cantaloupe, currant, casaba, crenshaw, mayonnaise,
+hollandaise, béarnaise, bordelaise, soubise, allemande, espagnole, sriracha, stroganoff, pavlova, lamington, chateaubriand, praline,
+madeleine, carpaccio, napoleon, stromboli, fiorentina); cocktails daiquiri, margarita, martini, negroni, cosmopolitan; breeds not named
+after a place or person (poodle, saluki, borzoi, ragdoll, munchkin, ocicat, snowshoe, longhorn, shorthorn, wagyu, bantam, criollo);
+greyhound; grape varieties (merlot, shiraz, syrah ...: dictionaries split, not place names; a question for Simon only if he wants
+them capital); eponyms and units (sandwich, boycott, diesel, saxophone, guillotine, watt, volt, erlang as a unit); flowers named after
+people (dahlia, magnolia); colour names (burgundy, magenta, sienna, turquoise, chartreuse the colour, byzantium, bordeaux in French
+colours, negro in Spanish colours); carriages victoria, surrey, landau; cox (rowing), brooklyn (bowling), tonga (cart), midsummer
+(season), pacific (calm), bohemian (fashion style: style rule), alpine (tree zone), polish (verb), yemeni (Ottoman headscarf, a Turkish
+loan word), biro (genericised; Biro 34769 exists as proper).
+Not listed because unlinked (no theme): 53379 adana (kebab), 65695 bedouin (tent).
+
+=== HIGH ===
+# cat breeds (all named after places or peoples; registries and dictionaries capitalise)
+9303 | siamese | domestic animals>cat breeds | cat | Siamese | high | named after Siam
+9310 | burmese | domestic animals>cat breeds | cat | Burmese | high | named after Burma
+9311 | abyssinian | domestic animals>cat breeds | - | Abyssinian | high | named after Abyssinia
+9313 | siberian | domestic animals>cat breeds | cat | Siberian | high | named after Siberia
+9315 | manx | domestic animals>cat breeds | cat | Manx | high | of the Isle of Man
+9316 | birman | domestic animals>cat breeds | - | Birman | high | named after Burma (sacred cat of Burma)
+9317 | himalayan | domestic animals>cat breeds | cat | Himalayan | high | named after the Himalayas
+9326 | tonkinese | domestic animals>cat breeds | - | Tonkinese | high | named after Tonkin
+9327 | balinese | domestic animals>cat breeds | cat | Balinese | high | adjective of Bali
+9329 | chartreux | domestic animals>cat breeds | - | Chartreux | high | named after the Carthusians (Chartreuse)
+9330 | korat | domestic animals>cat breeds | - | Korat | high | named after the Thai province
+9331 | singapura | domestic animals>cat breeds | - | Singapura | high | Malay name of Singapore
+9332 | somali | domestic animals>cat breeds | cat | Somali | high | named after Somalia
+63088 | persian | domestic animals>cat breeds | long-haired | Persian | high | Persian cat is already capital (9304)
+# dog breeds
+265 | dalmatian | domestic animals>dog breeds; spotted animals; words named after places | - | Dalmatian | high | from Dalmatia; Labrador precedent
+266 | rottweiler | domestic animals>dog breeds; dogs from Germany | - | Rottweiler | high | from Rottweil
+9276 | doberman | domestic animals>dog breeds; dogs from Germany | - | Doberman | high | after Louis Dobermann; 51073 Dobermann already proper (duplicate, see ISSUES T23)
+9290 | weimaraner | domestic animals>dog breeds; sporting dogs | - | Weimaraner | high | from Weimar
+9293 | newfoundland | domestic animals>dog breeds; working dogs | dog | Newfoundland | high | from Newfoundland
+9294 | airedale | domestic animals>dog breeds; terriers | - | Airedale | high | from Airedale, Yorkshire
+9296 | pekingese | domestic animals>dog breeds; toy dogs | - | Pekingese | high | from Peking
+# cattle breeds (Devon and Gloucester already capital in the same theme)
+9339 | holstein | domestic animals>cattle breeds | cattle | Holstein | high | 9863 Holstein is capital in black and white animals
+9340 | jersey | domestic animals>cattle breeds | cattle | Jersey | high | island; this entry is cattle only (fabric 24850, sports 44229, top 4876 stay lowercase)
+9341 | angus | domestic animals>cattle breeds | - | Angus | high | Scottish county
+9342 | hereford | domestic animals>cattle breeds | - | Hereford | high | English city
+9343 | guernsey | domestic animals>cattle breeds | cattle | Guernsey | high | island; sweater 24313 stays lowercase
+9344 | highland | domestic animals>cattle breeds | cattle | Highland | high | Highland cow 40202 already capital; landscape 30974 stays lowercase
+9346 | brahman | domestic animals>cattle breeds | cattle | Brahman | high | named after the Hindu caste/god; capital in breed use
+9347 | charolais | domestic animals>cattle breeds | - | Charolais | high | from Charolles
+9349 | simmental | domestic animals>cattle breeds | - | Simmental | high | Swiss valley
+9351 | ayrshire | domestic animals>cattle breeds | cattle | Ayrshire | high | Scottish county
+9353 | dexter | domestic animals>cattle breeds | cattle | Dexter | high | after a Mr Dexter; heraldry dexter 20900 stays lowercase
+9355 | galloway | domestic animals>cattle breeds | cattle | Galloway | high | Scottish region
+9359 | sussex | domestic animals>cattle breeds | cattle | Sussex | high | Sussex chicken 9379 already capital
+9363 | ankole | domestic animals>cattle breeds | - | Ankole | high | Ugandan kingdom
+9365 | piedmontese | domestic animals>cattle breeds | - | Piedmontese | high | adjective of Piedmont
+9367 | salers | domestic animals>cattle breeds | - | Salers | high | French town
+9375 | kerry | domestic animals>cattle breeds | cattle | Kerry | high | Irish county
+50045 | limousin | domestic animals>cattle breeds | cattle breed | Limousin | high | French region
+# cheeses named after places (proper in Oxford and M-W), and trademarks
+243 | gouda | dairy>cheeses; foods named after places | - | Gouda | high | Dutch town
+245 | edam | dairy>cheeses; foods named after places | - | Edam | high | Dutch town
+246 | stilton | dairy>cheeses; British cheeses | - | Stilton | high | village; protected name
+247 | gorgonzola | dairy>cheeses; Italian cheeses | - | Gorgonzola | high | Italian town
+249 | roquefort | dairy>cheeses; words named after places | cheese | Roquefort | high | village; protected name (Roquefort dressing is capital)
+250 | manchego | dairy>cheeses; Spanish food | - | Manchego | high | of La Mancha
+252 | emmental | dairy>cheeses; foods with holes | - | Emmental | high | Swiss valley
+253 | gruyere | dairy>cheeses; hard cheeses | - | Gruyère | high | Swiss district; duplicate of 19293 (ISSUES T23)
+19293 | gruyère | burger toppings; foods with holes; foods named after places | - | Gruyère | high | as 253
+17927 | colby | dairy>cheeses | cheese | Colby | high | Wisconsin town
+17931 | wensleydale | dairy>cheeses; British cheeses | cheese | Wensleydale | high | Wensleydale sheep 9436 already capital
+17932 | cheshire | dairy>cheeses; British cheeses | cheese | Cheshire | high | county
+17934 | jarlsberg | dairy>cheeses; foods with holes | - | Jarlsberg | high | trademark and place
+17939 | limburger | dairy>cheeses; pungent foods | - | Limburger | high | from Limburg
+17940 | boursin | dairy>cheeses; French cheeses | - (tm) | Boursin | high | trademark, flagged tm
+17941 | babybel | dairy>cheeses | - (tm) | Babybel | high | trademark, flagged tm
+17951 | velveeta | dairy>cheeses | - (tm) | Velveeta | high | trademark, flagged tm
+17946 | asiago | dairy>cheeses; Italian cheeses | - | Asiago | high | Italian plateau
+17937 | comte | dairy>cheeses | - | Comté | high | from Franche-Comté; duplicate of 53085 (ISSUES T23)
+53085 | comté | hard cheeses; French cheeses | - | Comté | high | as 17937
+17948 | epoisses | dairy>cheeses; pungent foods | - | Époisses | high | village; duplicate of 53113 (ISSUES T23)
+53113 | époisses | cheeses>French cheeses | - | Époisses | high | as 17948
+39725 | munster | pungent foods; French cheeses | cheese | Munster | high | Alsatian town
+53087 | sbrinz | cheeses>hard cheeses | - | Sbrinz | high | Swiss place name
+53088 | cantal | hard cheeses; French cheeses | - | Cantal | high | French département
+53089 | appenzeller | hard cheeses; dairy>cheeses | cheese | Appenzeller | high | of Appenzell; Appenzeller chicken 9411 capital
+53090 | lancashire | cheeses>hard cheeses | cheese | Lancashire | high | county
+53093 | neufchâtel | cheeses>soft cheeses | - | Neufchâtel | high | French town
+53098 | cambozola | cheeses>blue cheeses | - | Cambozola | high | trademark
+53100 | cabrales | blue cheeses; dairy>cheeses | - | Cabrales | high | Asturian municipality
+53102 | dolcelatte | blue cheeses; Italian cheeses | - | Dolcelatte | high | trademark
+53114 | livarot | French cheeses; dairy>cheeses | - | Livarot | high | Norman town
+53116 | morbier | cheeses>French cheeses | - | Morbier | high | French village
+53126 | montasio | cheeses>Italian cheeses | - | Montasio | high | Friulian massif
+63422 | american | dairy>cheeses | processed slice | American | high | American cheese; nationality word
+# wines and liqueurs (Bordeaux 19663 is already capital in the same themes)
+19674 | madeira | drinks>wines | wine | Madeira | high | island; Oxford capital
+19675 | marsala | drinks>wines | wine | Marsala | high | Sicilian town; Oxford capital
+53807 | valpolicella | red wines; wines named for places | - | Valpolicella | high | district, and in "wines named for places"
+53822 | soave | wines>white wines | - | Soave | high | Veneto town
+53828 | gavi | wines>white wines | - | Gavi | high | Piedmont town
+53829 | orvieto | wines>white wines | - | Orvieto | high | Umbrian town
+53830 | frascati | wines>white wines | - | Frascati | high | town near Rome
+53832 | liebfraumilch | wines>white wines | - | Liebfraumilch | high | Oxford and M-W capital
+53867 | cointreau | spirits>liqueurs | - | Cointreau | high | brand name
+53870 | chartreuse | spirits>liqueurs | liqueur | Chartreuse | high | brand of the monks; colour 7708 stays lowercase
+53508 | amarula | South African food; liqueurs | - | Amarula | high | brand name
+# other food, drink, dress, dance
+19729 | scotch | drinks>spirits | whisky | Scotch | high | Scotch whisky; capital in Oxford and M-W
+65150 | scotch | prepared dishes>savory pies | mutton hand | Scotch | high | Scotch pie
+39179 | cajun | spicy foods; chip flavors | cuisine | Cajun | high | name of a people
+18521 | alfredo | pasta dishes; foods named after people | - | Alfredo | high | fettuccine Alfredo, after Alfredo di Lelio
+29563 | worcestershire | words named after places; English counties | - | Worcestershire | high | a county (typed common in English counties) and the sauce
+18772 | fresno | herbs, spices and sauces>chili peppers | chili | Fresno | high | Fresno chili, after the city
+6282 | charleston | dance; ballroom dances; Roaring Twenties | dance | Charleston | high | capital in Oxford and M-W
+24707 | akubra | accessories>hats | - | Akubra | high | trademark
+55505 | shetland | fabrics>wool fabrics | wool | Shetland | high | Shetland wool; Shetland pony 9518 capital
+18157 | biscoff | breads and baking>cookies | cookie brand | Biscoff | high | brand name (gloss says so)
+19227 | detroit-style | prepared dishes>pizza styles | - | Detroit-style | high | city name (hyphenated, outside the single-word scan)
+# ideologies named after people (no lowercase use; style rule keeps the capital)
+33499 | marxism | ideologies named after people | - | Marxism | high | after Marx
+33505 | maoism | ideologies named after people | - | Maoism | high | after Mao
+33506 | leninism | ideologies named after people | - | Leninism | high | after Lenin
+33507 | stalinism | ideologies named after people | - | Stalinism | high | after Stalin
+33508 | trotskyism | ideologies named after people | - | Trotskyism | high | after Trotsky
+33515 | thatcherism | ideologies named after people | - | Thatcherism | high | after Thatcher
+33516 | keynesianism | ideologies named after people | - | Keynesianism | high | after Keynes
+33522 | peronism | ideologies named after people | - | Peronism | high | after Perón
+61046 | georgism | ideologies named after people | - | Georgism | high | after Henry George
+61049 | gaullism | ideologies named after people | - | Gaullism | high | after de Gaulle
+61050 | bonapartism | ideologies named after people | - | Bonapartism | high | after Bonaparte
+61051 | kemalism | ideologies named after people | - | Kemalism | high | after Kemal Atatürk
+61052 | titoism | ideologies named after people | - | Titoism | high | after Tito
+61057 | luxemburgism | ideologies named after people | - | Luxemburgism | high | after Rosa Luxemburg
+61059 | blairism | ideologies named after people | - | Blairism | high | after Blair
+61060 | reaganism | ideologies named after people | - | Reaganism | high | after Reagan
+# places and names typed common (found by the place-theme check; outside T15's food/breed scope but plainly wrong)
+9348 | limousin | regions>French regions | French region | Limousin (type place) | high | a region typed common
+17506 | hokkaido | famous islands; vegetables>squashes | - | Hokkaido (place; squash sense proper) | high | island; Hokkaido squash
+28047 | dundee | European cities>British cities | - | Dundee (type place) | high | city typed common
+28233 | rhine | famous rivers; European rivers | - | Rhine (type place) | high | river typed common
+59409 | samara | European cities>Russian cities | city | Samara (type place) | high | city entry; the seed 30094 stays lowercase
+41887 | erlang | units named after people; programming languages | - | split: Erlang (language, proper) + erlang (unit) | high | one entry holds two senses
+11783 | balboa | ballroom dances; explorers>conquistadors | dance | split: Balboa (person) in conquistadors + dance (see medium) | high | one entry holds a person and a dance
+
+=== MEDIUM ===
+261 | chihuahua | dog breeds; words named after places; toy dogs | dog | Chihuahua | medium | Oxford capital, M-W lowercase; Labrador precedent says capital
+9300 | bergamasco | dog breeds>herding dogs | - | Bergamasco | medium | of Bergamo; usually capital in breed lists
+9362 | watusi | domestic animals>cattle breeds | - | Watusi | medium | Ankole-Watusi, named after a people
+9366 | chianina | domestic animals>cattle breeds | - | Chianina | medium | from Val di Chiana; capital in English breed use
+240 | brie | dairy>cheeses; soft cheeses; foods named after places | - | Brie | medium | Oxford capital, M-W lowercase; close to the cheddar case
+241 | parmesan | dairy>cheeses; pizza toppings; words named after places | - | Parmesan | medium | Oxford capital, M-W lowercase; close to cheddar
+244 | camembert | dairy>cheeses; soft cheeses; French cheeses | - | Camembert | medium | Oxford capital, M-W lowercase; close to cheddar
+17956 | swiss | dairy>cheeses; hard cheeses | cheese | Swiss | medium | Swiss cheese; nationality word, but American usage often lowercase
+17936 | taleggio | soft cheeses; Italian cheeses | - | Taleggio | medium | Val Taleggio; English texts vary
+63280 | danablu | cheeses>blue cheeses | - | Danablu | medium | protected name
+53107 | stichelton | cheeses>blue cheeses | - | Stichelton | medium | named after Stilton's old name; maker's name
+17950 | cotija | dairy>cheeses | - | Cotija | medium | Mexican town; M-W lowercase
+19611 | manhattan | drinks>cocktails | cocktail | Manhattan | medium | Oxford and M-W print lowercase, but capital is common
+19643 | gibson | drinks>cocktails | cocktail | Gibson | medium | after a person; usage varies
+19634 | sazerac | drinks>cocktails | - | Sazerac | medium | brand name of the cognac it was made from
+19641 | vesper | drinks>cocktails | cocktail | Vesper | medium | after Vesper Lynd
+18160 | florentine | breads and baking>cookies | cookie | Florentine | medium | Oxford capital (Florentine biscuit)
+593 | danish | breads and baking; bakery | pastry | Danish | medium | Oxford Danish pastry; US often lowercase danish
+24684 | panama | accessories>hats | hat | Panama | medium | Oxford capital; M-W often capitalised
+24673 | hessians | accessories>boots | boots | Hessians | medium | Hessian boots, after the soldiers (55149 Hessians proper)
+55410 | kolhapuri | traditional clothes>Indian clothing | sandals | Kolhapuri | medium | from Kolhapur
+55369 | ankara | traditional clothes>African clothing | fabric | Ankara | medium | usually capital in Nigerian usage
+11783 | balboa | dance>ballroom dances | dance | Balboa | medium | after the Balboa Peninsula (after the split above)
+11850 | carlton | dance>dance moves | dance | Carlton | medium | named after the TV character
+16288 | jacuzzi | bath time; spa; brand names used as words | - | Jacuzzi | medium | trademark; Oxford and M-W capital; theme says used as a word
+29559 | bakelite | brand names used as words; plastics | - | Bakelite | medium | trademark; Oxford and M-W capital
+45428 | klondike | table games>card games | solitaire | Klondike | medium | after the region; usage varies
+53236 | catalina | sauces and condiments>salad dressings | dressing | Catalina | medium | after Santa Catalina Island
+53211 | choron | sauces and condiments>French sauces | - | Choron | medium | after the chef Choron; French lowercase
+17237 | galia | fruits>melons | - | Galia | medium | cultivar name (after Galia, a daughter of the breeder)
+17238 | charentais | fruits>melons | - | Charentais | medium | of Charente
+17519 | jarrahdale | vegetables>squashes | - | Jarrahdale | medium | Western Australian town
+19520 | nilgiri | drinks>teas | - | Nilgiri | medium | Nilgiri Hills (as Darjeeling, Assam)
+19726 | kölsch | drinks>beers | - | Kölsch | medium | of Köln; protected name
+53780 | aeropress | coffee words | - | AeroPress | medium | trademark
+53781 | chemex | coffee words | - | Chemex | medium | trademark
+
+Typing note for an apply script: as with Labrador and Devon, a capitalised breed, cheese, wine or dish takes type proper; trademarks also
+get tm; the place entries take type place; the two splits need a new entry each. Check that no shown text repeats the old lowercase form.
+
+=== T18 ===
+14142 | Composite | architecture>column styles | column | composite (type common) | high | the order's name is an ordinary word;
+  Doric 14138, Corinthian 14140, Tuscan 14141 stay capital, and Ionic is the entry 14139 "Ionic column" (stays). 49791 composite (material)
+  is a separate entry with the same text after the change; gloss "column" tells them apart.
