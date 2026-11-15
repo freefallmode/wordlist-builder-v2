@@ -110,6 +110,8 @@ The per-file classification behind these items is tools/gen/INVENTORY.md (static
 
 ## Open between the library and the game
 
+State of the game: library v374 is pinned (2026-11-15, at Simon's word). The game manager's report: every check passes in all three difficulty modes, the people-theme count is unchanged from v366 (100 themes, 20 of first names), the line-break table is identical, and its scan for a lone capital among lowercase words found no gap in the capital rules. Any later change to library content needs a new version and a new pin.
+
 Reported by the Word Safari manager session on 2026-11-15; not checked on the game side. These are decisions waiting on Simon or work not built, not defects.
 
 - **W2** `open` The "Names that are ..." themes mix capitals on purpose (cedar, elm, Ash, laurel); whether they should be uniform is undecided. The proper-word pass changed one shown text there: `pine tree` now shows `pine` in "names that are trees" (it showed `Pine`), to match cedar and elm.
