@@ -157,7 +157,8 @@ export function buildExport(P, opt0 = {}) {
   for (const t of themes) for (const g of t.groups || []) { const m = g.filter(id => keep.has(id)); for (const id of m) if (!clash.has(id)) clash.set(id, id); for (const id of m.slice(1)) clash.set(find(id), find(m[0])); }
   const clashN = new Map(); for (const id of clash.keys()) { const c = find(id); clashN.set(c, (clashN.get(c) || 0) + 1); }
   const clashId = new Map([...clashN].filter(([, n]) => n > 1).map(([c], i) => [c, i + 1]));
-  cols.breaks = [];                                   // character indexes in text[i] where a hyphen may go, [] for none
+  const bp = t => P.lang === 'en' ? breakPoints(t) : [];   // the break table is English-only: other languages get empty lists
+  cols.breaks = [];                                 // character indexes in text[i] where a hyphen may go, [] for none
   if (o.zipf && P.lang === "en") cols.zipf = [];
   if (o.gloss) cols.gloss = [];
   if (o.notes) cols.note = [];
@@ -172,7 +173,7 @@ export function buildExport(P, opt0 = {}) {
     if (e.aliasOf && e.aliasKind === 'translation') flags |= ENTRY_BITS.translation;
     if (e.aliasOf && e.aliasKind === 'synonym') flags |= ENTRY_BITS.synonym;
     cols.text.push(e.text);
-    cols.breaks.push(breakPoints(e.text));
+    cols.breaks.push(bp(e.text));
     cols.pos.push(POS.indexOf(e.pos));
     cols.type.push(TYPES.indexOf(e.type));
     cols.flags.push(flags);
@@ -183,11 +184,11 @@ export function buildExport(P, opt0 = {}) {
     cols.linkCount.push(links.length);
     for (const [tid, r, p, sh] of links) {
       if (isNameWord(ix.theme.get(tid), sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text)) nameWordLinks.push(cols.links.length / 4);
-      if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps, breakPoints(text)]); shownAt.set(sh, shown.length); }
+      if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps, bp(text)]); shownAt.set(sh, shown.length); }
       { const txt = sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text, k = nameKey(txt), ot = k ? themeByName.get(k) : undefined; if (ot !== undefined && ot !== tIndex.get(tid)) nameThemeLinks.push([cols.links.length / 4, ot]); }
       if (sh && !e.aliasOf && ukSpell.has(e.id)) {
         const psn = +sh.slice(sh.lastIndexOf('|') + 1), ut = ukText(e, ukSpell.get(e.id), sh.slice(0, sh.lastIndexOf('|')));
-        if (ut) { const key = ut + '|' + psn; if (!shownAt.has(key)) { shown.push([ut, psn, breakPoints(ut)]); shownAt.set(key, shown.length); } shownUK.push([cols.links.length / 4, shownAt.get(key)]); }
+        if (ut) { const key = ut + '|' + psn; if (!shownAt.has(key)) { shown.push([ut, psn, bp(ut)]); shownAt.set(key, shown.length); } shownUK.push([cols.links.length / 4, shownAt.get(key)]); }
       }
       cols.links.push(tIndex.get(tid), r, p, sh ? shownAt.get(sh) : 0);
     }
@@ -206,7 +207,7 @@ export function buildExport(P, opt0 = {}) {
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
     const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
     const [rlo, rhi] = rMask(f.region);
-    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || '', t.ident || 0, themeDifficulty(t), breakPoints(t.name)];
+    const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || '', t.ident || 0, themeDifficulty(t), bp(t.name)];
     if (o.notes) row.push(t.note);
     return row;
   });

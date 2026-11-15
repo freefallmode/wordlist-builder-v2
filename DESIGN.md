@@ -226,7 +226,7 @@ A **link number** n is the n-th link in file order: `entries.links[4n .. 4n+3]`.
 | column | type | content |
 |---|---|---|
 | `text` | string | the word as stored, capitals included. |
-| `breaks` | number[] | character indexes in `text` where a hyphen may go (before that character); words of 8+ letters found in `data/breaks-en.txt`; spaces and existing hyphens are never listed; `[]` for none. |
+| `breaks` | number[] | character indexes in `text` where a hyphen may go (before that character); words of 8+ letters found in `data/breaks-en.txt`, and only when the library language is `en` (otherwise every list is `[]`); spaces and existing hyphens are never listed; `[]` for none. |
 | `pos` | number | index into `posNames`. |
 | `type` | number | index into `typeNames`. |
 | `flags` | number | entry bits: adult 1, sensitive 2, trademark 4, vulgar 8 (the entry's own flags, not the theme's), then the alias kind: spelling 16, form 32, regional 64, abbreviation 128, translation 256, synonym 512. A root has none of 16-512; an alias written as root (8.3 step 4) keeps its kind bit, so tell roots by `root`, not by `flags`. |

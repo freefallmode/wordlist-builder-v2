@@ -316,6 +316,24 @@ test('loadBreaks fails on an HTTP error or an empty table; a loaded table puts b
   } finally { globalThis.fetch = realFetch; setBreaks(new Map()); }
 });
 
+test('the break table is applied to English libraries only', async () => {
+  const realFetch = globalThis.fetch;
+  const P = newProject(); P.themes = parseOutline('fruits\n').themes;
+  for (const w of ['apple', 'pear', 'plum', 'fig', 'grapefruit']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  reindex(P);
+  const brk = f => f.entries.breaks[f.entries.text.indexOf('grapefruit')];
+  try {
+    globalThis.fetch = async () => new Response('grapefruit=grape-fruit\n', { status: 200 });
+    await loadBreaks('x');
+    assert.deepEqual(brk(buildExport(P).file), [5]);
+    P.lang = 'fr';
+    const { file } = buildExport(P);
+    assert.deepEqual(brk(file), []);
+    assert.equal(file.entries.breaks.length, file.entries.text.length);
+    assert.equal(file.themeFields.at(-1), 'breaks');
+  } finally { globalThis.fetch = realFetch; setBreaks(new Map()); }
+});
+
 test('parseProject works out nextId for 200,000 entries without overflowing the stack', () => {
   const P = newProject();
   P.themes = parseOutline('fruits\n').themes;

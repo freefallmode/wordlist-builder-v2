@@ -410,7 +410,7 @@ export async function showExport() {
   let last = null;
   const run = async () => {
     reindex(P);
-    let brkErr = null; try { await loadBreaks(); } catch (e) { brkErr = e instanceof TypeError ? 'could not fetch it (serve the folder over http)' : e.message; }   // the table is English-only, as in the CLI export
+    let brkErr = null; if (P.lang === 'en') try { await loadBreaks(); } catch (e) { brkErr = e instanceof TypeError ? 'could not fetch it (serve the folder over http)' : e.message; }   // the table is English-only: other languages are not fetched for and get no break points
     last = buildExport(P, o);
     const text = JSON.stringify(last.file);
     const s = await sizeOf(text);
