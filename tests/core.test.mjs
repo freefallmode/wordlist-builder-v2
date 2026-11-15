@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
@@ -525,4 +525,15 @@ test('E1: a seeded run of random edits on the real library keeps the indexes equ
     else { const n = addEntry(P, 'yy' + i, { aliasOf: e.aliasOf || e.id, aliasKind: 'spelling' }); updateIndex(P, { entries: [n] }); }
     if (i % 75 === 0) sameAsFull(P, 'edit ' + i);
   }
+});
+
+test('B24: an alias made in the entry dialog (entryDefaults, id given at save, then filed with updateIndex) is linked to its root and indexed like a full reindex', () => {
+  const P = project(); reindex(P);
+  const root = addEntry(P, 'sofa', { typ: { fruits: 1 } }); updateIndex(P, { entries: [root] });
+  const a = Object.assign(entryDefaults(), { aliasOf: root.id, aliasKind: 'synonym', pos: root.pos, type: root.type, text: 'couch' });
+  assert.equal(a.id, 0);   // while the dialog is open the new alias has no id, so "has aliases of its own" must not look at it (a root has aliasOf 0)
+  assert.ok(P.entries.some(x => x.aliasOf === a.id), 'the id-0 hazard: every root matches');
+  a.id = P.nextId++; P.entries.push(a); updateIndex(P, { entries: [a] });
+  sameAsFull(P, 'dialog alias');
+  assert.deepEqual(P.ix.aliases.get(root.id), [a]); assert.ok(P.ix.byTheme.get('fruits').includes(a));
 });

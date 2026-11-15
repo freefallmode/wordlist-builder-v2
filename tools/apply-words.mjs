@@ -18,7 +18,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { resolve } from 'node:path';
-import { addEntry, reindex, sameText, linkIds, deleteEntry } from '../js/model.js';
+import { addEntry, reindex, indexEntry, sameText, linkIds, deleteEntry } from '../js/model.js';
 import { parseProject, serializeProject, stampSave } from '../js/store.js';
 import { validate } from '../js/validate.js';
 import { parseFreq, setFreq } from '../js/freq.js';
@@ -79,13 +79,13 @@ for (const [tid, rows] of Object.entries(DATA)) {
     if (e) { if (e.typ[tid] === undefined) { e.typ[tid] = typ; stats.linked++; } else stats.kept++; continue; }
     e = addEntry(P, text, { gloss: o.g || '', pos: o.pos || 'noun', type: o.type || 'common', fam: clampRating(r), typ: { [tid]: typ }, tm: !!o.tm, adult: !!o.adult,
       vulgar: !!o.vulgar, sensitive: !!o.sens, region: o.reg || [], note: o.note || '', status: 'gen' });
-    reindex(P); stats.made++;
+    indexEntry(P, e); stats.made++;
     for (const [at, kind, ar, ai, areg = [], ao = {}] of o.al || []) {
       if (!(ar >= 1 && ar <= 5 && ai >= 1 && ai <= 5)) throw Error(`bad alias rating on "${at}"`);
       const a = addEntry(P, at, { gloss: ao.g || '', pos: e.pos, type: ao.type || e.type, fam: clampRating(ar), aliasOf: e.id, aliasKind: kind, region: areg,
         tm: ao.tm ?? e.tm, adult: ao.adult ?? e.adult, sensitive: ao.sens ?? e.sensitive, vulgar: !!ao.vulgar, status: 'gen' });
       if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
-      reindex(P); stats.aliases++;
+      indexEntry(P, a); stats.aliases++;
     }
   }
 }
@@ -98,7 +98,7 @@ for (const [tid, rootText, rootGloss, rows] of ALIASES || []) {
     const a = addEntry(P, at, { gloss: ao.g || '', pos: root.pos, type: ao.type || root.type, fam: clampRating(ar), aliasOf: root.id, aliasKind: kind, region: areg,
       tm: ao.tm ?? root.tm, adult: ao.adult ?? root.adult, sensitive: ao.sens ?? root.sensitive, vulgar: !!ao.vulgar, status: 'gen' });
     if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
-    reindex(P); stats.aliases++;
+    indexEntry(P, a); stats.aliases++;
   }
 }
 for (const [tid, t] of Object.entries(THEMES || {})) {

@@ -232,7 +232,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (aliasOf === -1 || (aliasOf && !P.ix.entry.get(aliasOf))) throw Error('Pick the alias target from the list.');
     if (aliasOf && P.ix.entry.get(aliasOf).aliasOf) throw Error('Point the alias at the root entry, not at another alias.');
     if (aliasOf && aliasOf === e.id) throw Error('An entry cannot be an alias of itself.');
-    if (aliasOf && P.entries.some(a => a.aliasOf === e.id)) throw Error('This entry has aliases of its own; move them first.');
+    if (aliasOf && e.id && P.entries.some(a => a.aliasOf === e.id)) throw Error('This entry has aliases of its own; move them first.');
     Object.assign(w, { text, gloss, pos: f.pos.value, type: f.type.value, fam: +f.fam.value, status: f.status.value, note: f.note.value.trim(), aliasOf,
       aliasKind: aliasOf ? (f.kind.value || 'synonym') : '' });
     for (const k of Object.keys(flags)) w[k] = boxes[k].querySelector('input').checked;
