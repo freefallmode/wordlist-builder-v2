@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-15 at commit `2526913`, library v374, clean tree. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-15, updated at commit `a116a9c`, library v374, clean tree. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
@@ -14,9 +14,9 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: baseline audit, two bug batches, case lint wired into Checks, proper-word pass (v371), style rule (v374). The game has **v374 pinned**; its checks passed.
+Done: baseline audit, two bug batches, case lint wired into Checks, proper-word pass (v371), style rule (v374), B12/B19 (stale refs, alias promotion), B22 (lint covers alias links), D1 (DESIGN.md section 8 rewritten). Library still v374. The game has **v374 pinned**; its checks passed.
 
-In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archive in `tools/gen` (G1, G2).
+In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archive in `tools/gen` (G1, G2), and decisions: should `--strict` fail before writing the output; bump export format version 3 (needs `_WS_Manager`); confirm the alias-promotion rule (DESIGN.md section 3); ask `_WS_Manager` to check the pinning text in DESIGN.md 8.6. New issues B23, T19, T20.
 
 ## 3. Decisions (do not reopen)
 
@@ -32,9 +32,6 @@ In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archiv
 
 | # | Task (ISSUES.md ids) | Difficulty | Model |
 |---|---|---|---|
-| 1 | Delete/unlink leaves stale references; promoted alias inheritance (B12, B19) | deep reasoning | Opus |
-| 2 | Lint skips links held by aliases (B22) | standard | Opus |
-| 3 | Rewrite `DESIGN.md` section 8, export format (D1): the game depends on it | standard, high precision | Opus |
 | 4 | Other doc drift (D2-D12) | standard | Sonnet |
 | 5 | Small fixes: B14, B18, B20, I9, I13, T7 | standard | Sonnet |
 | 6 | Three Checks errors: lupin, grey, colours (T1); changes content, so batch it | simple | Sonnet |
