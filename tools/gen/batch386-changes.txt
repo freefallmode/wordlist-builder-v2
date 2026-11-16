@@ -1,0 +1,61 @@
+Library v386 (tools/gen/batch386.mjs, 2026-11-16 20:32): 3 changes (amended rule 8: v385's plain roots re-checked; döner, droëwors accented roots, agogo plain root, raki unchanged).
+Checks: changed kinds none
+
+Root swaps under the amended rule 8 (3):
+29440 before: text="doner" type="common" pos="noun" fam=3 links={words_from_turkish:1,turkish_everyday_words:1} show={"turkish_everyday_words":"döner"}
+26966 before: text="döner" type="common" pos="noun" fam=3 aliasOf=29440 aliasKind="spelling" links={}
+26966 after:  text="döner" type="common" pos="noun" fam=3 links={words_from_turkish:1,turkish_everyday_words:1}
+29440 after:  text="doner" type="common" pos="noun" fam=3 aliasOf=26966 aliasKind="spelling" links={}
+  roles swapped: links, ratings, shown texts, use, name allowances move to 26966; shown text dropped (now the root's own text): turkish_everyday_words
+  (döner: amended rule 8: Cambridge English Dictionary prints the headword "döner kebab"; the root takes the diacritic, doner stays its spelling alias; "Turkish everyday words" no longer needs a shown text, "words from Turkish" (locked, Turkish) now shows döner)
+17804 before: text="droewors" type="common" pos="noun" fam=5 links={cured_meats:5,south_african_food:4}
+53496 before: text="droëwors" type="common" pos="noun" fam=5 aliasOf=17804 aliasKind="spelling" links={}
+53496 after:  text="droëwors" type="common" pos="noun" fam=5 links={cured_meats:5,south_african_food:4}
+17804 after:  text="droewors" type="common" pos="noun" fam=5 aliasOf=53496 aliasKind="spelling" links={}
+  roles swapped: links, ratings, shown texts, use, name allowances move to 53496
+  (droëwors: amended rule 8: the Dictionary of South African English (dsae.co.za) prints the headword droëwors ("Also droewors"); a regional English dictionary, so the root takes the diaeresis, droewors stays its spelling alias)
+46480 before: text="agogô" type="common" pos="noun" fam=5 links={capoeira_words:3,percussion_instruments:5,brazilian_carnival_words:4,african_instruments:4}
+46481 before: text="agogo" gloss="capoeira" type="common" pos="noun" fam=4 aliasOf=46480 aliasKind="spelling" links={}
+46481 after:  text="agogo" type="common" pos="noun" fam=5 links={capoeira_words:3,percussion_instruments:5,brazilian_carnival_words:4,african_instruments:4}
+46480 after:  text="agogô" gloss="capoeira" type="common" pos="noun" fam=4 aliasOf=46481 aliasKind="spelling" links={}
+  roles swapped: links, ratings, shown texts, use, name allowances move to 46481
+  (agogo: amended rule 8: no English dictionary prints agogô (Oxford Learner's prints agogo, plural agogos; Wiktionary agogo); the root is plain, agogô stays its spelling alias; "capoeira words" is not a locked foreign-language theme, so no shown text)
+
+Rule 8 as amended (Simon, 2026-11-16; DESIGN-entries.md "Single-word names: rules 6 to 9"): an accent pair's root keeps the diacritics of the language of origin
+  when at least one major English dictionary prints them, regional ones included; it is plain only when all English dictionaries print it plain; the
+  plain form is always kept as a spelling alias.
+Method: dictionary pages read on 2026-11-16 in the built-in browser (read-only, no sign-in, no cookie choices made): Oxford Learner's
+  (oxfordlearnersdictionaries.com), Cambridge (dictionary.cambridge.org), Dictionary.com (Random House Unabridged and Collins English Dictionary),
+  Wordnik (American Heritage 5th edition, Century, Wiktionary), Dictionary of South African English (dsae.co.za). britannica.com/dictionary answered
+  with a bot check (403): not used. Wiktionary alone does not decide a root.
+
+Evidence per word (the form each dictionary prints for the sense):
+  raki (19298) STAYS the root, rakı (26967) its spelling alias; "Turkish everyday words" keeps showing rakı.
+    Oxford Learner's: raki (no rakı on the page). Dictionary.com: Random House raki ("Or rakee"), Collins raki; the etymology cites Turkish "raki".
+    Wordnik: American Heritage raki; "rakı" has no definitions. Cambridge: no entry. v385: Merriam-Webster raki. No English dictionary prints rakı.
+  döner (26966) BECOMES the root, doner (29440) its spelling alias.
+    Cambridge: headword "döner kebab" (UK, "also kebab"). Oxford Learner's: "doner kebab" (British English). Dictionary.com: Collins "doner kebab"
+    (ö only in the etymology, "Turkish döner rotating"). One major dictionary prints the diacritic: the root takes it. 19124 "doner kebab" (separate
+    entry, shown "doner" in "kebab types") is NOT changed: outside this check; the same Cambridge evidence would make it "döner kebab" (for Simon).
+  droëwors (53496) BECOMES the root, droewors (17804) its spelling alias.
+    Dictionary of South African English: headword droëwors, "Forms: Also droewors", origin Afrikaans. Oxford Learner's, Cambridge, Dictionary.com,
+    Wordnik: no entry. v385 read Wiktionary only (droewors). The DSAE is the national historical dictionary of South African English (the
+    regional-dictionary clause of rule 8, as Oxford's New Zealand edition for Māori words): call for Simon if it should not count as major.
+  agogo (46481) BECOMES the root, agogô (46480) its spelling alias.
+    Oxford Learner's: agogo ("plural agogos"; v385 recorded "no entry": wrong). Wordnik: only Wiktionary, agogo. Cambridge, Dictionary.com: no
+    entry. No English dictionary prints agogô, so the root is plain. The alias agogô keeps the gloss "capoeira" it had as 46481's (word-level
+    fields swap with the role: the root keeps gloss "", fam 5).
+Locked themes: "words from Turkish" now shows döner (was doner); "Turkish everyday words" shows döner as the root's own text (its shown text dropped).
+No entry is added or deleted; ids and export positions are unchanged.
+Verification (2026-11-16): npm test 37/37 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (case lint 0); style-case.mjs and
+  propword-exceptions.mjs print 0 changes, case lint 0; Checks over the library: 0 errors, warnings unchanged (theme-name 3, long 5, maybe-duplicate 1);
+  rerunning batch386.mjs prints 0 changes.
+Family export (data/export/wordlist-game-family.json, node tools/export-game.mjs --strict, exit 0) against v385: entries 60536, no index shifts.
+  By field: flags (6: three roots became aliases, three aliases became roots), root (6, same entries), familiarity (2: agogô 5 -> 4, agogo 4 -> 5,
+  each keeps its role's value), links (point at the new roots; shown-text indices above 1836 move down by 1), shown 3754 -> 3753 (the "döner" shown
+  text in "Turkish everyday words" is gone: the root now is döner), shownUK (9 index references shift by 1), lib.version 385 -> 386, lib.modified,
+  generated. text, pos, type, regions, regionsHi, clash, linkCount, breaks, zipf and themes unchanged.
+
+Notice for _WS_ (v381 to v386 together; nothing pinned, the game pins only when Simon asks): see the v385 notice, plus v386: rule 8 amended (a root
+  keeps the accents when any major English dictionary prints them); döner and droëwors are now roots (doner, droewors spelling aliases), agogo is the
+  root (agogô its alias), raki unchanged; no index shifts in v386; check the Turkish themes show döner and the instrument themes agogo.
