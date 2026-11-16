@@ -14,9 +14,9 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: baseline audit, bug batches, case lint in Checks, proper-word pass (v371), style rule (v374), B12/B19, B22, B14/B15/B18/B20/B23/B24, D1-D12, E1-E4 (incremental indexes), I1 (break points, English libraries only), U1/U4/U5 (U2/U3 partly), T1/T7/T15/T18/T23. Library is now v386 (batches 375-386, scripts tools/gen/batch375-386.mjs; rules 1-9 in DESIGN-entries.md; the five single-word capital rules are in DESIGN-entries.md). The game contact is the local session `_WS_` (58bb35); it has the v375-v380 notices; the v381-v386 notice is HELD at Simon's request: send when he says. The game had v374 pinned; nothing newer is pinned (it pins only when Simon asks).
+Done: baseline audit, bug batches, case lint in Checks, proper-word pass (v371), style rule (v374), B12/B14/B15/B18/B19/B20/B22/B23/B24, D1-D12, E1-E4 and E6 (incremental indexes, in-place table patching), I1 and most of I16, `--strict` now fails before writing, U1/U4/U5 (U2/U3 partly), T1/T7/T15/T18/T23/T24/T25. Library is now v389 (batches 375-389, scripts tools/gen/batch375-389.mjs; the nine single-word capital rules are in DESIGN-entries.md "Single-word names"). The game contact is the local session `_WS_` (58bb35); it has the v375-v380 notices; the v381-v389 notice is HELD at Simon's request (text at the end of tools/gen/batch389-changes.txt; hoover drops out of the family export at v389, later indices -1): send when he says. The game had v374 pinned; nothing newer is pinned (it pins only when Simon asks).
 
-In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, what to archive in `tools/gen` (G1, G2); whether `--strict` should fail before writing the output; bump export format version 3 (needs `_WS_`); confirm the alias-promotion rule (DESIGN.md section 3); `_WS_` to check the pinning text in DESIGN.md 8.6; T24 decisions per group.
+In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, what to archive in `tools/gen` (G1, G2); whether to bump export format version 3 (needs `_WS_`); confirm the alias-promotion rule (DESIGN.md section 3); `_WS_` to check the pinning text in DESIGN.md 8.6; hoover: accept it is not in the family export, or give it another link; unverified rule-9 words (Gavi, Côtes du Rhône, Liebfraumilch).
 
 ## 3. Decisions (do not reopen)
 
@@ -32,8 +32,7 @@ In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, what to archive in
 
 | # | Task (ISSUES.md ids) | Difficulty | Model |
 |---|---|---|---|
-| 1 | T25: Māori macron pairs, duplicates needing a delete (vicuna, agogo, maitre d', Vuelta a España, dragées), type/region calls (Ancien Régime, droëwors, Pokémon, rakı, döner), doubtful tm (aspirin, cellophane, laundromat), Burgundy; see ISSUES.md T25 | judgement | Opus |
-| 2 | E6 theme table render cost; `--strict` writes before failing; export format version; I16 browser vs CLI export differences | standard | Sonnet |
+| 1 | E7: Language & Wordplay with sub-themes still opens in 340-420 ms (labels and sort keys computed for 8,017 words before the 500-row cap); I16 Zipf-only-if-ticked; I6 dropped theme names and same-text drops not listed in the Export dialog | standard | Sonnet |
 
 ## 5. Subagents
 
