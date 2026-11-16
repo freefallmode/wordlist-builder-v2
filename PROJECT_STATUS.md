@@ -14,9 +14,9 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: baseline audit, two bug batches, case lint wired into Checks, proper-word pass (v371), style rule (v374), B12/B19 (stale refs, alias promotion), B22 (lint covers alias links), D1 (DESIGN.md section 8 rewritten), docs D2-D12, small fixes B14/B18/B20/I9/I13 (T7 data line waits for the batch). New issues T21 (case-case-split label). Library is now v377 (v375: T1 glosses, room types pos noun, South Beach diet proper, sightseer break; v376: T15 high list capitalised + Composite lowercase; v377: tm flag on 7 brands; scripts tools/gen/batch375-377.mjs). T15 still open: medium list, 5 places, Erlang/Balboa splits, T23; chartreuse tm and a few type inconsistencies (cointreau/amarula proper vs org siblings) await Simon. Also done since: B15 ai.js, U1/U4/U5 (U2/U3 partly), I1 break points (English libraries only). The game had v374 pinned; v377 is committed; `_WS_` was told (pins only when Simon asks).
+Done: baseline audit, bug batches, case lint in Checks, proper-word pass (v371), style rule (v374), B12/B19, B22, B14/B15/B18/B20/B23/B24, D1-D12, E1-E4 (incremental indexes), I1 (break points, English libraries only), U1/U4/U5 (U2/U3 partly), T1/T7/T15/T18/T23. Library is now v382 (batches 375-382, scripts tools/gen/batch375-382.mjs; the five single-word capital rules are in DESIGN-entries.md). The game contact is the local session `_WS_` (58bb35); it has the v375-v380 notices; the v381+v382 notice is HELD at Simon's request: send when he says. The game had v374 pinned; nothing newer is pinned (it pins only when Simon asks).
 
-In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archive in `tools/gen` (G1, G2), and decisions: should `--strict` fail before writing the output; bump export format version 3 (needs `_WS_`); confirm the alias-promotion rule (DESIGN.md section 3); ask `_WS_` to check the pinning text in DESIGN.md 8.6. New issues B23, T19, T20.
+In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, what to archive in `tools/gen` (G1, G2); whether `--strict` should fail before writing the output; bump export format version 3 (needs `_WS_`); confirm the alias-promotion rule (DESIGN.md section 3); `_WS_` to check the pinning text in DESIGN.md 8.6; T24 decisions per group.
 
 ## 3. Decisions (do not reopen)
 
@@ -32,8 +32,8 @@ In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, and what to archiv
 
 | # | Task (ISSUES.md ids) | Difficulty | Model |
 |---|---|---|---|
-| 10 | In progress: E1-E4 (measure first, incremental indexes with a full-reindex test) | deep reasoning | Opus |
-| 11 | Approved 2026-11-15, start after E1-E4 lands: T18 (Composite lowercase in column styles; Doric, Ionic, Corinthian, Tuscan stay capital) and T15 (read-only Opus candidate pass over single-word names stored lowercase; tighten the rule first, Simon approves per word; one library version for both) | judgement | Opus |
+| 1 | T24: other trademarks used as words (20 capital brands in "brand names used as words", ~30 lowercase trademarks without tm, jeep split, Lycra/Kevlar/Gore-Tex/Tyvek typed common), lowercase place-named wines vs rule 3, 61 accent-only root pairs; Simon decides per group | judgement | Opus |
+| 2 | E6 theme table render cost; `--strict` writes before failing; export format version; I16 browser vs CLI export differences | standard | Sonnet |
 
 ## 5. Subagents
 
