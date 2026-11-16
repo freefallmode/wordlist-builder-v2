@@ -1,0 +1,104 @@
+Library v381 (tools/gen/batch381.mjs, 2026-11-16 17:48): 51 changes (recase, merges into spelling aliases, a split, two moved links).
+
+9348 "limousin" -> "Limousin"  type common -> place  [French region]  (French region; every sibling in "French regions" is place)
+17506 "hokkaido" -> "Hokkaido"  type common -> place  (Japanese island; every sibling in "famous islands" is place (squash sense split off, below))
+28047 "dundee" -> "Dundee"  type common -> place  (Scottish city; "British cities" is place but for Lincoln)
+28233 "rhine" -> "Rhine"  type common -> place  (river; every sibling in "famous rivers" and "European rivers" is place)
+59409 "samara" -> "Samara"  type common -> place  [city]  (Russian city; siblings place; 30094 samara [seed] stays common, glosses differ)
+29563 "worcestershire" -> "Worcestershire"  type common -> place  (English county; siblings place (its "words named after places" link moved to the sauce, below))
+50045 "limousin" -> "Limousin"  type common -> proper  [cattle breed]  (cattle breed, after the region; breed names are proper (Charolais, Simmental); differs from 9348 [French region] by gloss, no shared theme)
+53780 "AeroPress" -> "AeroPress"  type proper -> org  tm (kept)  (brand name (the maker sells under it), not a model within a range: org with tm (Brand types; Thermos, Crock-Pot, Hoover))
+53781 "Chemex" -> "Chemex"  type proper -> org  tm (kept)  (brand name (Chemex Corporation), as AeroPress: org with tm)
+17950 "Cotija" -> "cotija"  type proper -> common  (reverted: M-W enters it lowercase, Oxford has no entry; an ordinary supermarket cheese name (cheddar rule; brie, camembert stay lowercase))
+24684 "Panama" -> "panama"  type proper -> common  [hat]  (reverted: M-W "panama" lowercase (often capitalized), Oxford "Panama"; dictionaries disagree, ordinary noun; 55447 panama hat is lowercase)
+45428 "Klondike" -> "klondike"  type proper -> common  [solitaire]  (reverted: M-W "klondike" lowercase (often capitalized), Oxford capital; card-game names are lowercase (canasta, spider); grouped with solitaire)
+17956 "swiss" -> "Swiss"  type common -> proper  [cheese]  (cheese: M-W and Oxford write Swiss cheese / Swiss with a capital; American [processed slice] is proper in the same theme; nationality word)
+261 "chihuahua" -> "Chihuahua"  type common -> proper  [dog]  (dog: M-W and Oxford capital; Pomeranian, Maltese, Pekingese proper; 50321 Chihuahua [city] differs by gloss)
+16288 "jacuzzi" -> "Jacuzzi"  type common -> org  tm false -> true  (trademark; M-W and Oxford capital; brand name: org with tm (Brand types; Hoover, Velcro in the same theme))
+29559 "bakelite" -> "Bakelite"  type common -> org  tm false -> true  (trademark; M-W and Oxford capital; brand name: org with tm (Velcro, Lexan, Delrin))
+18975 "caesar salad" -> "Caesar salad"  type common -> proper  show salads "caesar" -> "Caesar"  (the salad of the same name, capital in both dictionaries; its shown text in "salads" follows)
+53228 "caesar" -> "Caesar"  type common -> proper  [dressing]  (dressing: M-W and Oxford Caesar salad, capital (after Caesar Cardini); Catalina, Louis dressing proper in the theme)
+19292 "thousand island" -> "Thousand Island"  type common -> proper  (dressing: M-W and Oxford Thousand Island dressing, capital (the Thousand Islands))
+27554 "caesar" -> "Caesar"  type common -> proper  [cocktail]  (Canadian cocktail: Canadian Oxford and Canadian usage "Caesar"; same name as the dressing)
+50224 "florentine" -> "Florentine"  type common -> proper  [of Florence]  (demonym (of Florence): dictionaries capital; all 39 siblings in "city demonyms" proper; florentine [cookie] stays lowercase)
+59833 "Xinomavro" -> "xinomavro"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59835 "Aglianico" -> "aglianico"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59836 "Touriga Nacional" -> "touriga nacional"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59837 "Blaufränkisch" -> "blaufränkisch"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59838 "Zweigelt" -> "zweigelt"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59839 "Saperavi" -> "saperavi"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59840 "Corvina" -> "corvina"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59841 "Mencía" -> "mencía"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59842 "Negroamaro" -> "negroamaro"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59845 "Sagrantino" -> "sagrantino"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59846 "Agiorgitiko" -> "agiorgitiko"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59847 "Dornfelder" -> "dornfelder"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59848 "Furmint" -> "furmint"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59849 "Godello" -> "godello"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59850 "Arneis" -> "arneis"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59851 "Savagnin" -> "savagnin"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59852 "Roussanne" -> "roussanne"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59853 "Garganega" -> "garganega"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59854 "Vernaccia" -> "vernaccia"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59855 "Falanghina" -> "falanghina"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59856 "Silvaner" -> "silvaner"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59857 "Malvasia" -> "malvasia"  type proper -> common  (grape variety: lowercase (group decision: M-W, AP and Chicago lowercase varietals, Oxford capitalises; dictionaries disagree for an ordinary noun, cheddar rule; as merlot, syrah, chardonnay))
+59834 "Nero d'Avola" -> "nero d'Avola"  (grape variety: lowercase by the group decision; Avola (a town) keeps its capital, so the phrase stays proper)
+19293 before: text="gruyère" gloss="" type="common" pos="noun" fam=4 tm=false status="gen" typ={"burger_toppings":5,"foods_with_holes":3,"foods_named_after_places":3}
+253 before: text="gruyere" gloss="" type="common" pos="noun" fam=3 tm=false status="gen" typ={"cheeses":3,"umami_foods":4,"hard_cheeses":2}
+19293 after:  text="Gruyère" gloss="" type="proper" pos="noun" fam=3 tm=false status="gen" typ={"burger_toppings":5,"foods_with_holes":3,"foods_named_after_places":3,"cheeses":3,"umami_foods":4,"hard_cheeses":2}
+253 after:  text="Gruyere" gloss="" type="proper" pos="noun" fam=3 tm=false aliasOf=19293 aliasKind="spelling" status="gen" typ={}
+  links moved to 19293: cheeses, umami_foods, hard_cheeses
+  (cheese of Gruyères: Oxford and M-W capital; root keeps the accent, the plain spelling is its alias (as crème brûlée / creme brulee); fam 3 (the more familiar of 3 and 4))
+53085 before: text="comté" gloss="" type="common" pos="noun" fam=4 tm=false status="gen" typ={"hard_cheeses":3,"french_cheeses":2}
+17937 before: text="comte" gloss="" type="common" pos="noun" fam=4 tm=false status="gen" typ={"cheeses":4}
+53085 after:  text="Comté" gloss="" type="proper" pos="noun" fam=4 tm=false status="gen" typ={"hard_cheeses":3,"french_cheeses":2,"cheeses":4}
+17937 after:  text="Comte" gloss="" type="proper" pos="noun" fam=4 tm=false aliasOf=53085 aliasKind="spelling" status="gen" typ={}
+  links moved to 53085: cheeses
+  (cheese of Franche-Comté; capital as Gruyère; root keeps the accent)
+53113 before: text="époisses" gloss="" type="common" pos="noun" fam=5 tm=false status="gen" typ={"french_cheeses":4}
+17948 before: text="epoisses" gloss="" type="common" pos="noun" fam=5 tm=false status="gen" typ={"cheeses":5,"pungent_foods":5}
+53113 after:  text="Époisses" gloss="" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"french_cheeses":4,"cheeses":5,"pungent_foods":5}
+17948 after:  text="Epoisses" gloss="" type="proper" pos="noun" fam=5 tm=false aliasOf=53113 aliasKind="spelling" status="gen" typ={}
+  links moved to 53113: cheeses, pungent_foods
+  (cheese of Époisses (village); capital; root keeps the accent)
+9276 before: text="doberman" gloss="" type="common" pos="noun" fam=2 tm=false status="gen" typ={"dog_breeds":2,"dogs_from_germany":2}
+51073 before: text="Dobermann" gloss="" type="proper" pos="noun" fam=3 tm=false region=["UK"] status="gen" typ={"working_dogs":3}
+9276 after:  text="Doberman" gloss="" type="proper" pos="noun" fam=2 tm=false status="gen" typ={"dog_breeds":2,"dogs_from_germany":2,"working_dogs":3}
+51073 after:  text="Dobermann" gloss="" type="proper" pos="noun" fam=2 tm=false region=["UK"] aliasOf=9276 aliasKind="spelling" status="gen" typ={}
+  links moved to 9276: working_dogs; groups: working_dogs [51054,9276]
+  (one breed: US spelling Doberman (AKC) is the root, UK Dobermann (Kennel Club) a spelling alias tagged UK (spelling pairs); proper, as Dobermann was)
+17506 Hokkaido [island]: link squashes moved; fam 5 -> 4, famous_islands typicality 5 -> 4 (as Honshu f4t4; the merged 5/5 was the squash's)  typ={"famous_islands":4}
+67413 new: text="Hokkaido squash" gloss="" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"squashes":5} show={"squashes":"Hokkaido"}  group squashes [17505,67413]
+  (the squash is called Hokkaido squash or Hokkaido pumpkin (also red kuri, its group partner); a full term shown short, as butternut squash shown "butternut")
+29563 Worcestershire [county]: link "words named after places" (typicality 3) moved to 773 Worcestershire sauce, shown "Worcestershire" there; 29563 keeps English counties
+  (the word named after a place is the sauce's name; one entry per sense, as erlang and balboa at v380)
+17197 serviceberry: link "Canadian cities" removed (typ {"berries":5})
+67414 new: text="Saskatoon" gloss="city" type="place" pos="noun" fam=4 tm=false status="gen" typ={"canadian_cities":4}
+  (the link meant the city Saskatoon, which had no entry: only 17198 saskatoon [serviceberry], a regional alias of the berry; fam 4 and typicality 4 as Regina, a smaller city; the old 5/5 was the berry's)
+
+Method: each call from Oxford and Merriam-Webster usage, the library's rules (DESIGN-entries.md: capital rule, style rule, Brand types) and the
+siblings in the same theme. Where the dictionaries disagree for a word that has become an ordinary noun, it stays lowercase (the cheddar rule).
+Git history: none of these words was set by Simon before (T15 candidate pass, tools/gen/t15-hist.mjs; git log); Balboa [dance] capital is Simon's ruling of 2026-11-16.
+
+Left unchanged (decided lowercase, common; dictionaries disagree, ordinary nouns):
+  240 brie (M-W brie, Oxford Brie), 241 parmesan (M-W parmesan often capitalized, Oxford Parmesan), 244 camembert (M-W camembert, Oxford Camembert),
+  593 danish [pastry] (M-W danish, Oxford Danish; 62422 Danish pastry stays proper, a phrase with the nationality word),
+  18160 florentine [cookie] (M-W florentine, Oxford florentine for the biscuit), 19611 manhattan [cocktail] (M-W manhattan, Oxford Manhattan),
+  19643 gibson [cocktail] (M-W gibson, Oxford Gibson); siblings martini, negroni, daiquiri are lowercase.
+  Grape varieties already lowercase (merlot, shiraz, syrah, malbec, zinfandel, chardonnay, riesling and the rest): kept.
+Kept capital (v379 medium list re-judged): 55369 Ankara [fabric] (no dictionary entry; Nigerian and fashion usage capitalise; a fabric named after
+  the city, not an ordinary English noun), 53211 Choron (sauce Choron, after the chef; Mornay sauce and sauce Robert are capital in the same theme).
+Grape varieties, group decision: a grape variety name is a lowercase common noun (M-W, AP and Chicago lowercase varietals; Oxford capitalises;
+  cheddar rule). A word in it that is only a name keeps its capital: 53837 Müller-Thurgau (after Hermann Müller of Thurgau) stays,
+  nero d'Avola keeps Avola. Wines named after places stay capital (Chianti, Bordeaux, Soave, Gavi, Chablis, Valpolicella, Brunello, Lambrusco,
+  Liebfraumilch, Sauternes, Tokaji). The 22 grapes lowercased here were capitalised by the capital marking pass (v363-v365, capmark r-1), not by Simon.
+Brand types: AeroPress and Chemex are each the maker's brand (not a model in a range), so org with tm; Jacuzzi and Bakelite likewise.
+  Other trademarks used as words in "brand names used as words" and the material themes (xerox, teflon, formica, styrofoam, plexiglas, taser,
+  photoshop, sharpie, astroturf, muzak, jell-o, rollerblade, portakabin and others) are still lowercase common: not part of this batch (ISSUES.md T24).
+Merges: both ids kept; the alias holds no links (a spelling alias never does, DESIGN.md 3.1) and takes the root's type and fam. Root fam: the
+  lower (more familiar) of the two. The cheese aliases have no region, as the other accent-free spellings (creme brulee, jalapeno).
+  Not checked or changed: the other 61 pairs of roots that differ only by accents (quinceañera / quinceanera, déjà vu / deja vu ...): ISSUES.md T24.
+Same-text pairs: Limousin [French region] / Limousin [cattle breed], Samara [city] / samara [seed], Chihuahua [dog] / Chihuahua [city],
+  Swiss [cheese] / [nationality] / [airline], Caesar [dressing] / [cocktail] / [Roman], Florentine [of Florence] / florentine [cookie]: glosses
+  differ and no two share a theme (Checks maybe-duplicate unchanged at 1).

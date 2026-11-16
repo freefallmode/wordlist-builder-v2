@@ -55,7 +55,7 @@ export const LOWER_OK = new Set([
 // shown with a capital as the first word of a member of a theme of styles, movements or genres. The period of the same name is a name and keeps
 // its capital in themes of periods (the Renaissance, the Baroque, the Regency).
 export const STYLE_WORDS = new Set(`
-art baroque beaux-arts brutalism brutalist byzantine classical colonial craftsman dada dadaism deconstructivism empire gothic international
+art baroque beaux-arts brutalism brutalist byzantine classical colonial composite craftsman dada dadaism deconstructivism empire gothic international
 mid-century mission modern modernism modernist neoclassical neoclassicism perpendicular postmodern postmodernism prairie regency renaissance rococo
 streamline
 `.split(/\s+/).filter(Boolean));
