@@ -1,0 +1,23 @@
+Library v380 (tools/gen/batch380.mjs, 2026-11-16 13:52): 2 entries split into two, one entry per sense.
+
+41887 before: text="erlang" gloss="" type="common" pos="noun" fam=5 tm=false status="gen" typ={"units_named_after_people":5,"programming_languages":4}
+41887 after:  text="erlang" gloss="unit" type="common" pos="noun" fam=5 tm=false status="gen" typ={"units_named_after_people":5}
+67411 new:    text="Erlang" gloss="language" type="proper" pos="noun" fam=4 tm=false status="gen" typ={"programming_languages":4}
+  (unit of telephone traffic (after A. K. Erlang), lowercase as volt, watt; the language is a name (Ericsson), proper as its siblings)
+11783 before: text="balboa" gloss="dance" type="common" pos="noun" fam=5 tm=false status="gen" typ={"ballroom_dances":5,"conquistadors":5}
+11783 after:  text="Balboa" gloss="dance" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"ballroom_dances":5}
+67412 new:    text="Balboa" gloss="conquistador" type="person" pos="noun" fam=4 tm=false status="gen" typ={"conquistadors":2}
+  moved: conquistadors group [67412,54124]
+  (the dance is named after the Balboa Peninsula and capitalised in usage (Charleston [dance] proper); the conquistador is a person, as Cortés, Pizarro)
+
+Choices:
+  Kept ids: 41887 keeps the unit (it had no gloss and was typed common, which fits the unit); 11783 keeps the dance (its gloss was "dance").
+  Erlang [language] is proper, like every named language in the theme (Python, Haskell, Elixir; only acronyms differ); no tm (Java, Swift have none).
+  Balboa [dance] is capital: named after the Balboa Peninsula, Newport Beach; swing-dance writing and Wikipedia write "Balboa", "Pure Balboa", "Bal-Swing";
+    no Oxford or Merriam-Webster entry for the dance was found. Siblings: Charleston [dance] proper; lindy hop and peabody are lowercase in the same theme
+    (doubtful for Simon: lowercase "balboa" would follow them). The T15 medium list proposed Balboa.
+  Balboa [conquistador] is typed person, as Cortés, Pizarro, de Soto in the theme; it takes the theme's group with 54124 Vasco Núñez de Balboa (one per level).
+  Ratings: fam copied except Erlang [language] 4 (the merged 5 suited the unit; Elixir, Clojure, Haskell are 4) and Balboa [conquistador] fam 4, typicality 2,
+    as 54124 (the same man; the merged 5/5 suited the dance). Typicality otherwise copied (erlang in languages 4). status copied ("gen"). pos noun for all.
+  The three "balboa" entries now differ by gloss: Balboa [dance], Balboa [conquistador], balboa [currency] 56799; erlang [unit] and Erlang [language] likewise.
+    No two of them share a theme. The game keeps displayed text unique within a level (lowercase), so two of them never meet in one level.

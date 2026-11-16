@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":379,"modified":"2026-11-16 12:56"},"nextId":67411,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":380,"modified":"2026-11-16 13:52"},"nextId":67413,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]],"ident":1},
@@ -2324,7 +2324,7 @@
 {"id":"medieval_pastimes","name":"medieval pastimes","parent":"medieval_times","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":3,"ident":3,"groups":[[5569,5600]]},
 {"id":"exploration","name":"exploration","parent":"history_myth","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":2,"groups":[[2412,2413],[6748,6749]],"ident":2},
 {"id":"explorers","name":"explorers","parent":"exploration","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":2,"ident":2},
-{"id":"conquistadors","name":"conquistadors","parent":"explorers","group":false,"enabled":true,"complete":false,"adult":true,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":4,"groups":[[20437,54123],[11783,54124]],"ident":3},
+{"id":"conquistadors","name":"conquistadors","parent":"explorers","group":false,"enabled":true,"complete":false,"adult":true,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":4,"groups":[[20437,54123],[67412,54124]],"ident":3},
 {"id":"portuguese_explorers","name":"Portuguese explorers","parent":"explorers","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":4,"groups":[[54128,54129]],"ident":4},
 {"id":"australian_explorers","name":"Australian explorers","parent":"explorers","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":["AU"],"note":"","pop":4,"ident":4,"groups":[[54150,54151,54152]]},
 {"id":"explorers_of_africa","name":"explorers of Africa","parent":"explorers","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":4,"groups":[[54174,54175]],"ident":3},
@@ -14919,7 +14919,7 @@
 {"id":11780,"text":"Argentine tango","type":"proper","fam":4,"typ":{"ballroom_dances":3},"status":"gen"},
 {"id":11781,"text":"two-step","fam":3,"typ":{"ballroom_dances":4},"status":"gen"},
 {"id":11782,"text":"peabody","gloss":"dance","fam":5,"typ":{"ballroom_dances":5},"status":"gen"},
-{"id":11783,"text":"balboa","gloss":"dance","fam":5,"typ":{"ballroom_dances":5,"conquistadors":5},"status":"gen"},
+{"id":11783,"text":"Balboa","gloss":"dance","type":"proper","fam":5,"typ":{"ballroom_dances":5},"status":"gen"},
 {"id":11784,"text":"smooth foxtrot","fam":5,"typ":{"ballroom_dances":5},"status":"gen"},
 {"id":11785,"text":"slow waltz","fam":4,"typ":{"ballroom_dances":3},"status":"gen"},
 {"id":11786,"text":"maxixe","fam":5,"typ":{"ballroom_dances":5},"status":"gen"},
@@ -43015,7 +43015,7 @@
 {"id":41884,"text":"bel","fam":4,"typ":{"units_named_after_people":4},"status":"gen"},
 {"id":41885,"text":"mach","gloss":"unit","fam":2,"typ":{"units_named_after_people":3},"status":"gen"},
 {"id":41886,"text":"baud","fam":4,"typ":{"units_named_after_people":4,"data_units":5},"status":"gen"},
-{"id":41887,"text":"erlang","fam":5,"typ":{"units_named_after_people":5,"programming_languages":4},"status":"gen"},
+{"id":41887,"text":"erlang","gloss":"unit","fam":5,"typ":{"units_named_after_people":5},"status":"gen"},
 {"id":41888,"text":"jansky","fam":5,"typ":{"units_named_after_people":5},"status":"gen"},
 {"id":41889,"text":"sverdrup","fam":5,"typ":{"units_named_after_people":5},"status":"gen"},
 {"id":41890,"text":"rayleigh","fam":5,"typ":{"units_named_after_people":5},"status":"gen"},
@@ -65598,5 +65598,7 @@
 {"id":67405,"text":"Pat","gloss":"name","type":"person","fam":1,"typ":{"unisex_names":2},"status":"gen"},
 {"id":67408,"text":"Hank","gloss":"given name","type":"person","fam":5,"typ":{"short_forms_of_names":5},"status":"gen"},
 {"id":67409,"text":"Sue","gloss":"given name","type":"person","fam":2,"typ":{"short_forms_of_names":4},"status":"gen"},
-{"id":67410,"text":"Taro","gloss":"given name","type":"person","fam":3,"typ":{"japanese_names":3},"status":"gen"}
+{"id":67410,"text":"Taro","gloss":"given name","type":"person","fam":3,"typ":{"japanese_names":3},"status":"gen"},
+{"id":67411,"text":"Erlang","gloss":"language","type":"proper","fam":4,"typ":{"programming_languages":4},"status":"gen"},
+{"id":67412,"text":"Balboa","gloss":"conquistador","type":"person","fam":4,"typ":{"conquistadors":2},"status":"gen"}
 ]}
