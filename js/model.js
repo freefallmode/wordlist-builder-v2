@@ -166,6 +166,12 @@ export function themeStats(P, tid) {
   }
   return { entries: list.length, roots: roots.size, bands, rootBands };
 }
+// themeStats(P, tid).roots alone, about ten times faster: the tree counts every theme after each edit.
+export function themeRoots(P, tid) {
+  const s = new Set();
+  for (const e of P.ix.byTheme.get(tid) || []) if (usable(e)) s.add(e.aliasOf || e.id);
+  return s.size;
+}
 
 // What a theme can serve a level: its distinct roots by difficulty. `counts[1..5]` roots at each difficulty (an alias group counts at every difficulty one of its words has),
 // `median` the middle root's difficulty, `lo` and `hi` the difficulty of the 4th easiest and 4th hardest root (the range in which it can fill a 4-word set), `reach` the root count.

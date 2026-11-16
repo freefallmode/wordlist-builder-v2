@@ -2,7 +2,7 @@
 import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline, mergeOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, FAMILIARITY_HELP, themeDifficulty } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeRoots, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
@@ -29,8 +29,10 @@ A.render = keep => render(keep);
 
 function renderStatus() {
   $('#save').textContent = (A.dirty ? 'Unsaved to file · ' : 'File saved · ') + (held ? 'autosave off: browser copy unreadable (click for choices)' : savedAt === 'failed' ? 'autosave failed' : savedAt ? 'autosaved ' + savedAt : '');
-  const P = A.P, themes = P.themes.filter(t => !t.group).length;
-  $('#lib').textContent = `library v${P.lib.version} · ${P.lib.modified} · ${themes.toLocaleString()} themes · ${P.entries.length.toLocaleString()} words (${P.entries.filter(e => e.enabled).length.toLocaleString()} enabled)`;
+  const P = A.P; let themes = 0, on = 0;   // counted in loops: filter() copied the 60,000 entries on every render
+  for (const t of P.themes) if (!t.group) themes++;
+  for (const e of P.entries) if (e.enabled) on++;
+  $('#lib').textContent = `library v${P.lib.version} · ${P.lib.modified} · ${themes.toLocaleString()} themes · ${P.entries.length.toLocaleString()} words (${on.toLocaleString()} enabled)`;
 }
 
 // ---------- tree ----------
@@ -43,7 +45,7 @@ function counts() {
 function countsNow() {
   const P = A.P, own = new Map(), tot = new Map(), ready = new Map(), play = new Map();
   const min = P.settings.minWords || 4;
-  for (const t of P.themes) if (!t.group) own.set(t.id, themeStats(P, t.id).roots);
+  for (const t of P.themes) if (!t.group) own.set(t.id, themeRoots(P, t.id));
   const sum = id => {
     const t = P.ix.theme.get(id);
     let n = t.group ? 0 : own.get(id), r = !t.group && own.get(id) >= min ? 1 : 0, p = t.group ? 0 : 1;
@@ -231,7 +233,11 @@ function select_(id) {
 
 const RECCLASS = ['r0', 'r1', 'r2', 'r3', 'r4', 'r5'];
 const themeBadge = (P, t) => { const p = themeProfile(P, t.id); return p.reach ? h('span.badge.d', { title: `Worked out from the words: the difficulty range in which the theme can fill a 4-word set. Roots at difficulty 1-5: ${p.counts.slice(1).join(' / ')}` }, (() => { const d = p.lo ? [p.lo, p.hi] : [1, 2, 3, 4, 5].filter(n => p.counts[n]); return `difficulty ${d[0]}–${d[d.length - 1]}`; })()) : null; };
-const familiaritySel = (value, onchange, auto = false) => select([[0, auto ? 'auto' : '–'], 1, 2, 3, 4, 5], value, { class: 'rs ' + RECCLASS[value], onchange });
+const famTpl = {};   // the rating select is built once per kind and cloned for each row (two per row of the word table)
+const familiaritySel = (value, onchange, auto = false) => {
+  const s = (famTpl[auto] ||= select([[0, auto ? 'auto' : '–'], 1, 2, 3, 4, 5], 0)).cloneNode(true);
+  s.className = 'rs ' + RECCLASS[value]; s.value = value; s.addEventListener('change', onchange); return s;
+};
 
 function overview() {
   const P = A.P, c = counts(), min = P.settings.minWords || 4;
@@ -328,17 +334,18 @@ function entryTable(t) {
   const readAs = new Map();   // the meaning label is left out when the theme already gives the meaning; it shows for words that read the same as another word of the table, and in the sub-theme view
   for (const x of roots) { const k = label(x).toLowerCase(); readAs.set(k, (readAs.get(k) || 0) + 1); }
   const needLabel = e => sub || readAs.get(label(e).toLowerCase()) > 1;
+  livePool = pool;
   const synCell = (t, e) => [...mateIds(t, e).map(id => h('span.chip', {}, groupName(t, id), h('a.x', { href: '#', title: 'Not a synonym', onclick: ev => { ev.preventDefault(); leaveGroup(t, id); } }, '✕'))),
-    h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => pool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
+    h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => livePool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
   // another name of a word (an alias, or the root when the row shows a dialect variant) sits under its row with its own part of speech, type, familiarity, flags and status
   const subRow = (a, note) => h('tr.alias', { class: a.enabled ? '' : 'off' }, h('td.on', {}, h('div.onwrap', {}, h('span.expander.none'), h('input', { type: 'checkbox', checked: a.enabled, title: 'enabled', onchange: ev => { a.enabled = ev.target.checked; A.changed({ entries: [a] }); } }))),
     h('td.word', { onclick: () => editEntry(a) }, a.show?.[t.id] || a.text, a.show?.[t.id] && h('span.root', {}, ' ← ', h('span.rootname', {}, a.text)), a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, familiaritySel(a.fam, ev => { a.fam = +ev.target.value; A.changed({ entries: [a] }); })), h('td'), h('td'),
     h('td', flagsOf(a)), h('td', h('span.dot.' + a.status, { title: a.status }, a.status === 'rev' ? '✓' : a.status === 'gen' ? 'g' : '·')));
-  return h('div.etable', {}, tools,
+  return Object.assign(h('div.etable', {}, tools,
     sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
     h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('familiarity', 'fam'), sub ? h('th', { title: 'Themes below this one that hold the word, with the typicality in each' }, 'themes') : th('typicality', 'typ'), th('difficulty', 'diff'), th('flags', 'flags'), th('status', 'status')),
-      rows.length ? rows.map(e => { if (e.asRoot) return subRow(e.asRoot, '(root)'); if (e.aliasOf && underRow.has(e.id)) return subRow(e, '(' + (e.aliasKind || 'unknown') + ' alias)'); const s = shown(e), v = s !== e ? s : dm(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];   // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
-         return h('tr', { class: [e.aliasOf && !own(e) ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
+      rows.length ? rows.map(e => { if (e.asRoot) return keyed(subRow(e.asRoot, '(root)'), 'R' + e.asRoot.id, [e.asRoot]); if (e.aliasOf && underRow.has(e.id)) return keyed(subRow(e, '(' + (e.aliasKind || 'unknown') + ' alias)'), 'U' + e.id, [e]); const s = shown(e), v = s !== e ? s : dm(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];   // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
+         return keyed(h('tr', { class: [e.aliasOf && !own(e) ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
         h('td.on', {}, h('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed({ entries: [e] }); } }))),
         h('td.word', { onclick: () => editEntry(s !== e ? e : v) },
           s !== e ? h('span.shownform', { title: 'Open this form', onclick: ev => { ev.stopPropagation(); editEntry(s); } }, label(e)) : label(e),
@@ -348,8 +355,25 @@ function entryTable(t) {
         h('td.dim', v.pos), h('td.dim', v.type), h('td', {}, familiaritySel(v.fam, ev => { v.fam = +ev.target.value; A.changed({ entries: [v] }); })),
         sub ? h('td.dim', where(e)) : h('td', {}, familiaritySel(e.typ[t.id] || 0, ev => { e.typ[t.id] = +ev.target.value; A.changed({ entries: [e] }); }, true)),
         h('td', {}, sub ? '' : h('span.diffcell.' + RECCLASS[difficultyBand(P, e, t.id)], { title: 'Difficulty: the harder of familiarity and typicality (worked out, not editable)' }, difficultyBand(P, e, t.id) || '–')),
-        h('td', flagsOf(v)), h('td', h('span.dot.' + v.status, { title: v.status }, v.status === 'rev' ? '✓' : v.status === 'gen' ? 'g' : '·'))); }) :
-        h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.'))));
+        h('td', flagsOf(v)), h('td', h('span.dot.' + v.status, { title: v.status }, v.status === 'rev' ? '✓' : v.status === 'gen' ? 'g' : '·'))), e.id, [e, s, v, ...forms, ...(e.aliasOf ? [] : mateIds(t, e))]); }) :
+        h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.')))), { _k: [P, t, sub] });
+}
+// Re-rendering the same word table keeps every row that comes out the same (render, patchTable): the browser then lays out only the rows that changed, a few ms instead of 25-200.
+// A row is the same when its elements and control values match and its handlers refer to the same entries (_ids); handlers read the theme's words through livePool, so a kept row never holds an old list.
+let livePool = [];
+const keyed = (tr, key, ids) => Object.assign(tr, { _key: key, _ids: ids });
+const ctl = r => [...r.querySelectorAll('select, input')].map(c => c.value + (c.checked ? '+' : ''));
+const sameRow = (a, b) => a._ids?.length === b._ids?.length && (a._ids || []).every((x, i) => x === b._ids[i]) && a.isEqualNode(b) && ctl(a).join('\n') === ctl(b).join('\n');
+function patchTable(old, neu) {   // old: the .etable on screen, neu: the one just built for the same theme, library and view; old takes neu's content, keeping the rows that did not change
+  const [ot, nt] = [old, neu].map(x => x.querySelector(':scope > table'));
+  [...old.children].filter(c => c !== ot).forEach(c => c.remove());
+  for (const c of [...neu.children]) if (c !== nt) old.insertBefore(c, ot);
+  if (!ot.firstElementChild.isEqualNode(nt.firstElementChild)) ot.firstElementChild.replaceWith(nt.firstElementChild); else nt.firstElementChild.remove();
+  const rows = [...ot.children].slice(1), olds = new Map(rows.map(r => [r._key, r]));
+  const want = [...nt.children].map(r => { const o = olds.get(r._key); if (o && sameRow(o, r)) { olds.delete(r._key); return o; } return r; }), keep = new Set(want);
+  rows.forEach(o => keep.has(o) || o.remove());
+  let ref = ot.firstElementChild.nextElementSibling;
+  for (const r of want) if (r === ref) ref = ref.nextElementSibling; else ot.insertBefore(r, ref);
 }
 
 function groupName(t, id) { const e = A.P.ix.entry.get(id); return (e && (e.show?.[t.id] || A.P.ix.entry.get(e.use?.[t.id])?.text)) || e?.text || '?'; }   // a group member is named as its theme shows it
@@ -404,7 +428,13 @@ function render(keepFocus = false) {
   const pos = focus ? document.activeElement.selectionStart : 0;
   if (!keepFocus) renderTree();   // render(true) is a filter keystroke or a column width: the tree is unchanged
   const t = A.sel && A.P.ix.theme.get(A.sel);
-  main.replaceChildren(...[].concat(t ? themeView(t) : A.view === 'words' ? allWordsView() : A.view === 'themes' ? allThemesView(counts(), select_) : overview()));
+  const next = [].concat(t ? themeView(t) : A.view === 'words' ? allWordsView() : A.view === 'themes' ? allThemesView(counts(), select_) : overview());
+  const old = main.querySelector(':scope > .etable'), neu = next.find(n => n.classList?.contains('etable'));   // the same word table again (same library, theme and view): patched in place, not replaced
+  if (old?._k && neu?._k && old._k.every((x, i) => x === neu._k[i]) && old.querySelector(':scope > table') && neu.querySelector(':scope > table')) {
+    [...main.childNodes].forEach(c => c !== old && c.remove());
+    let after = false; for (const n of next) if (n === neu) after = true; else if (after) main.append(n); else main.insertBefore(n, old);
+    patchTable(old, neu);
+  } else main.replaceChildren(...next);
   main.scrollTop = top;
   if (focus) { const f = $('.filter'); f.focus(); f.setSelectionRange(pos, pos); }
   renderStatus();

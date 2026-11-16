@@ -3,7 +3,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, themeRoots, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults } from '../js/model.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
@@ -55,6 +55,8 @@ test('aliases take the root themes and the harder rating', () => {
   reindex(P);
   assert.equal(themeStats(P, 'fruits').roots, 1);
   assert.equal(themeStats(P, 'fruits').entries, 2);
+  assert.equal(themeRoots(P, 'fruits'), 1);   // the tree's fast count agrees
+  settee.enabled = false; assert.equal(themeRoots(P, 'fruits'), themeStats(P, 'fruits').roots); settee.enabled = true;
   assert.equal(difficultyBand(P, settee, 'fruits'), 3);
   settee.typ.fruits = 2;
   assert.equal(difficultyBand(P, settee, 'fruits'), 3);   // its own popularity (2) is easier than how well known it is (3)

@@ -321,7 +321,7 @@ Commands: `node tools/apply-words.mjs <module> [library file]` applies a batch t
 
 Run: `node serve.mjs 8100` and open http://localhost:8100/ (opened as `file://` the modules and the frequency list cannot load). Tests: `npm test` (`node --test tests/core.test.mjs`: outline, model, aliases, validation, case lint, export). The browser UI is checked by driving the page.
 
-Conventions: the UI works at phone width too; dialogs use `dialog()` whose action may throw to show an error; after any edit call `A.changed(touch)` (update the indexes, mark dirty, autosave, render); `A.changed()` without a touch rebuilds every index, the safe choice when an edit does not say what it changed.
+Conventions: the UI works at phone width too; dialogs use `dialog()` whose action may throw to show an error; after any edit call `A.changed(touch)` (update the indexes, mark dirty, autosave, render); `A.changed()` without a touch rebuilds every index, the safe choice when an edit does not say what it changed. A render of the same word table patches it in place: rows that come out identical are kept (js/app.js `patchTable`), so a row's handlers must read anything that can change without changing the row (the theme's word list: `livePool`) at event time, and a new row value they act on goes in the row's `_ids`.
 
 ## 12. How the data is produced
 

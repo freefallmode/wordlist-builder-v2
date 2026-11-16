@@ -1,10 +1,17 @@
 // Small DOM helpers: element builder, dialogs, toasts.
 
 // h('div.cls#id', { onclick, title }, child, 'text', ...) -> element. Falsy children are skipped; arrays are flattened.
+const sels = new Map();   // each selector is parsed once: [tag, classes, id]
+const parse = sel => {
+  const m = sel.match(/^([a-z0-9]+)?((?:[.#][\w-]+)*)$/i), ps = m[2].match(/[.#][\w-]+/g) || [];
+  const r = [m[1] || 'div', ps.filter(p => p[0] === '.').map(p => p.slice(1)).join(' '), ps.filter(p => p[0] === '#').map(p => p.slice(1)).pop()];
+  sels.set(sel, r); return r;
+};
 export function h(sel, attrs, ...kids) {
-  const m = sel.match(/^([a-z0-9]+)?((?:[.#][\w-]+)*)$/i);
-  const el = document.createElement(m[1] || 'div');
-  for (const p of (m[2].match(/[.#][\w-]+/g) || [])) p[0] === '.' ? el.classList.add(p.slice(1)) : (el.id = p.slice(1));
+  const [tag, cls, id] = sels.get(sel) || parse(sel);
+  const el = document.createElement(tag);
+  if (cls) el.className = cls;
+  if (id) el.id = id;
   if (attrs != null && (typeof attrs !== "object" || attrs instanceof Node || Array.isArray(attrs))) { kids.unshift(attrs); attrs = null; }
   for (const [k, v] of Object.entries(attrs || {})) {
     if (v === false || v == null) continue;
