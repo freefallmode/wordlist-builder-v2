@@ -1,0 +1,493 @@
+Library v383 (tools/gen/batch383.mjs, 2026-11-16 19:08): 83 changes (ISSUES.md T24, all six groups). Supersedes v381 and v382 for the game.
+Checks: changed kinds none.
+
+A. tm set on trademarks used as words (23):
+29569 "xerox"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Xerox Corp.)
+29580 "teflon"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Chemours)
+29581 "formica"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Formica Corp.)
+29574 "styrofoam"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); DuPont)
+29575 "plexiglas"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Röhm/Trinseo)
+29571 "taser"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Axon)
+29576 "photoshop"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Adobe)
+29583 "sharpie"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Newell)
+29585 "astroturf"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); AstroTurf LLC)
+29587 "muzak"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Mood Media)
+29582 "jell-o"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Kraft Heinz)
+29573 "rollerblade"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Rollerblade Inc.)
+29578 "portakabin"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Portakabin Ltd)
+29586 "breathalyzer"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); M-W and Oxford mark it a trademark)
+29570 "jet ski"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Kawasaki)
+23980 "dumpster"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); M-W marks Dumpster a trademark)
+27387 "tarmac"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Tarmac (UK); M-W and Oxford mark it a trademark)
+28015 "ouija"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Hasbro)
+24245 "bubble wrap"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Sealed Air)
+3565 "onesie"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Gerber Childrenswear (Onesies); its regional alias Babygro has tm)
+39992 "mylar"  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); DuPont Teijin (siblings lucite, plexiglass in "plastics" have tm))
+29579 "jiffy bag" (alias of 67167)  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Jiffy Packaging (UK); a regional alias of padded envelope with its own link in "brand names used as words")
+48722 "jeep" [safari]  tm false -> true  (registered trademark used as a word (rule 4: lowercase common, tm); Jeep (Stellantis); the brand sense is split off below)
+
+B. capital brands in "brand names used as words" (2):
+3063 "Thermos" -> "thermos"  type org -> common  tm (kept)  (rule 1 tie-break: M-W "thermos" lowercase (genericised in the US, 1963), Oxford "Thermos"; rule 4: its themes (campsite, lunchbox, camping gear, heat science) mean the flask; tm kept)
+181 before: text="Google" type="org" pos="noun" fam=1 tm=true status="gen" typ={"silicon_valley_companies":1,"brand_names_used_as_words":1,"tech_companies":1}
+181 after:  text="Google" gloss="company" type="org" pos="noun" fam=1 tm=true status="gen" typ={"silicon_valley_companies":1,"tech_companies":1}
+67416 new:    text="google" gloss="search the web" type="common" pos="verb" fam=1 tm=true status="gen" typ={"brand_names_used_as_words":1}
+  (the word in "brand names used as words" is the verb (M-W "google", often capitalized; Oxford "google"): rule 1 tie-break and rule 4, lowercase common with tm; Google [company] stays capital org in the tech-company themes)
+
+C. material brands typed org (4):
+24847 "Lycra" -> "Lycra"  type common -> org  tm (kept)  (Brand types: a brand name (The Lycra Company), org with tm; capital in M-W and Oxford)
+38991 "Kevlar" -> "Kevlar"  type common -> org  tm (kept)  (Brand types: brand name (DuPont), org with tm; capital in M-W and Oxford)
+38995 "Gore-Tex" -> "Gore-Tex"  type common -> org  tm (kept)  (Brand types: brand name (W. L. Gore), org with tm; capital in M-W and Oxford)
+38996 "Tyvek" -> "Tyvek"  type common -> org  tm (kept)  (Brand types: brand name (DuPont), org with tm; capital in M-W)
+
+D. jeep split (1):
+48722 before: text="jeep" gloss="safari" type="common" pos="noun" fam=2 tm=true status="gen" typ={"safari_words":2,"brand_names_used_as_words":3,"car_brands":3,"car_types":3,"military_vehicles":3,"american_car_brands":3}
+48722 after:  text="jeep" gloss="safari" type="common" pos="noun" fam=2 tm=true status="gen" typ={"safari_words":2,"brand_names_used_as_words":3,"car_types":3,"military_vehicles":3}
+67415 new:    text="Jeep" gloss="car brand" type="org" pos="noun" fam=2 tm=true status="gen" typ={"car_brands":3,"american_car_brands":3}
+  (the car brand is a name (rule 4: brand sense capital, org, tm); siblings Ford, Chevrolet, Dodge [car brand] are org; tm as Rivian and the British car brands (Brand types); jeep [safari] keeps the vehicle (safari words, car types, military vehicles, brand names used as words))
+
+E. place-named wines (2):
+53809 "châteauneuf-du-pape" -> "Châteauneuf-du-Pape"  type common -> proper  (rule 1: M-W and Oxford both capitalise the wine; typed proper as Bordeaux, Côtes du Rhône in "wines named for places")
+53835 "pouilly-fuissé" -> "Pouilly-Fuissé"  type common -> proper  (rule 1: M-W and Oxford both capitalise the wine; proper as Chablis, Sancerre siblings)
+
+F. accent-only root pairs merged (51):
+5188 before: text="quinceañera" type="common" pos="noun" fam=4 tm=false status="gen" typ={"holidays_and_celebrations":4,"life_milestones":4}
+32559 before: text="quinceanera" type="common" pos="noun" fam=4 tm=false status="gen" typ={"life_events":4}
+5188 after:  text="quinceañera" type="common" pos="noun" fam=4 tm=false status="gen" typ={"holidays_and_celebrations":4,"life_milestones":4,"life_events":4}
+32559 after:  text="quinceanera" type="common" pos="noun" fam=4 tm=false aliasOf=5188 aliasKind="spelling" status="gen" typ={}
+  links moved to 5188: life_events
+  (quinceañera: M-W quinceañera; accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+5237 before: text="pesäpallo" type="common" pos="noun" fam=5 tm=false status="gen" typ={"ball_sports":5,"outdoor_games":5}
+38523 before: text="pesapallo" type="common" pos="noun" fam=5 tm=false status="gen" typ={"national_sports":5}
+5237 after:  text="pesäpallo" type="common" pos="noun" fam=5 tm=false status="gen" typ={"ball_sports":5,"outdoor_games":5,"national_sports":5}
+38523 after:  text="pesapallo" type="common" pos="noun" fam=5 tm=false aliasOf=5237 aliasKind="spelling" status="gen" typ={}
+  links moved to 5237: national_sports
+  (pesäpallo: the sport's name in English sources; accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+5529 before: text="Emil Zátopek" type="person" pos="noun" fam=4 tm=false status="gen" typ={"famous_athletes":4,"famous_runners":4}
+44647 before: text="Emil Zatopek" type="person" pos="noun" fam=4 tm=false status="gen" typ={"olympic_legends":4}
+5529 after:  text="Emil Zátopek" type="person" pos="noun" fam=4 tm=false status="gen" typ={"famous_athletes":4,"famous_runners":4,"olympic_legends":4}
+44647 after:  text="Emil Zatopek" type="person" pos="noun" fam=4 tm=false aliasOf=5529 aliasKind="spelling" status="gen" typ={}
+  links moved to 5529: olympic_legends
+  (Emil Zátopek: one person; the accented form is the standard spelling in English reference usage)
+5884 before: text="papier-mâché" type="common" pos="noun" fam=3 tm=false status="gen" typ={"hobbies_and_crafts":4,"french_phrases_in_english":5,"things_made_of_paper":3}
+12031 before: text="papier-mache" type="common" pos="noun" fam=3 tm=false status="gen" typ={"art_materials":3,"paper_crafts":3}
+5884 after:  text="papier-mâché" type="common" pos="noun" fam=3 tm=false status="gen" typ={"hobbies_and_crafts":4,"french_phrases_in_english":5,"things_made_of_paper":3,"art_materials":3,"paper_crafts":3}
+12031 after:  text="papier-mache" type="common" pos="noun" fam=3 tm=false aliasOf=5884 aliasKind="spelling" status="gen" typ={}
+  links moved to 5884: art_materials, paper_crafts
+  (papier-mâché: M-W and Oxford; accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+6274 before: text="fouetté" type="common" pos="noun" fam=5 tm=false status="gen" typ={"dance":5}
+11756 before: text="fouette" type="common" pos="noun" fam=4 tm=false status="gen" typ={"ballet_terms":4}
+6274 after:  text="fouetté" type="common" pos="noun" fam=4 tm=false status="gen" typ={"dance":5,"ballet_terms":4}
+11756 after:  text="fouette" type="common" pos="noun" fam=4 tm=false aliasOf=6274 aliasKind="spelling" status="gen" typ={}
+  links moved to 6274: ballet_terms
+  (fouetté: M-W and Oxford; as plié, jeté)
+6880 before: text="Ötzi" type="person" pos="noun" fam=4 tm=false status="gen" typ={"archaeology":3}
+21797 before: text="Otzi" gloss="Iceman" type="person" pos="noun" fam=4 tm=false status="gen" typ={"stone_age":3}
+6880 after:  text="Ötzi" type="person" pos="noun" fam=4 tm=false status="gen" typ={"archaeology":3,"stone_age":3}
+21797 after:  text="Otzi" gloss="Iceman" type="person" pos="noun" fam=4 tm=false aliasOf=6880 aliasKind="spelling" status="gen" typ={}
+  links moved to 6880: stone_age
+  (Ötzi: one person (the Iceman); the accented form is the standard spelling in English reference usage)
+6906 before: text="Çatalhöyük" type="place" pos="noun" fam=5 tm=false status="gen" typ={"archaeology":4}
+21788 before: text="Catalhoyuk" type="place" pos="noun" fam=5 tm=false status="gen" typ={"stone_age":4,"ancient_sites_of_turkey":3}
+6906 after:  text="Çatalhöyük" type="place" pos="noun" fam=5 tm=false status="gen" typ={"archaeology":4,"stone_age":4,"ancient_sites_of_turkey":3}
+21788 after:  text="Catalhoyuk" type="place" pos="noun" fam=5 tm=false aliasOf=6906 aliasKind="spelling" status="gen" typ={}
+  links moved to 6906: stone_age, ancient_sites_of_turkey
+  (Çatalhöyük: one site; the accented form is the standard spelling in English reference usage)
+6907 before: text="Göbekli Tepe" type="place" pos="noun" fam=5 tm=false status="gen" typ={"archaeology":4}
+21787 before: text="Gobekli Tepe" type="place" pos="noun" fam=5 tm=false status="gen" typ={"stone_age":4,"turkish_landmarks":3,"ancient_sites_of_turkey":3}
+6907 after:  text="Göbekli Tepe" type="place" pos="noun" fam=5 tm=false status="gen" typ={"archaeology":4,"stone_age":4,"turkish_landmarks":3,"ancient_sites_of_turkey":3}
+21787 after:  text="Gobekli Tepe" type="place" pos="noun" fam=5 tm=false aliasOf=6907 aliasKind="spelling" status="gen" typ={}
+  links moved to 6907: stone_age, turkish_landmarks, ancient_sites_of_turkey
+  (Göbekli Tepe: one site; the accented form is the standard spelling in English reference usage)
+38535 before: text="cajón" type="common" pos="noun" fam=4 tm=false status="gen" typ={"national_instruments":3}
+10607 before: text="cajon" type="common" pos="noun" fam=4 tm=false status="gen" typ={"percussion_instruments":4,"drums":3,"andean_instruments":4}
+38535 after:  text="cajón" type="common" pos="noun" fam=4 tm=false status="gen" typ={"national_instruments":3,"percussion_instruments":4,"drums":3,"andean_instruments":4}
+10607 after:  text="cajon" type="common" pos="noun" fam=4 tm=false aliasOf=38535 aliasKind="spelling" status="gen" typ={}
+  links moved to 38535: percussion_instruments, drums, andean_instruments
+  (cajón: one instrument; accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte, bodhrán)
+62513 before: text="grand jeté" type="common" pos="noun" fam=4 tm=false status="gen" typ={"ways_to_jump":4}
+11754 before: text="grand jete" type="common" pos="noun" fam=4 tm=false status="gen" typ={"ballet_terms":3}
+62513 after:  text="grand jeté" type="common" pos="noun" fam=4 tm=false status="gen" typ={"ways_to_jump":4,"ballet_terms":3}
+11754 after:  text="grand jete" type="common" pos="noun" fam=4 tm=false aliasOf=62513 aliasKind="spelling" status="gen" typ={}
+  links moved to 62513: ballet_terms
+  (grand jeté: as jeté)
+42174 before: text="García Márquez" type="person" pos="noun" fam=3 tm=false status="gen" typ={"nobel_laureates":3,"literature_prize_winners":3}
+13202 before: text="Garcia Marquez" type="person" pos="noun" fam=4 tm=false status="gen" typ={"authors":3}
+42174 after:  text="García Márquez" type="person" pos="noun" fam=3 tm=false status="gen" typ={"nobel_laureates":3,"literature_prize_winners":3,"authors":3}
+13202 after:  text="Garcia Marquez" type="person" pos="noun" fam=3 tm=false aliasOf=42174 aliasKind="spelling" status="gen" typ={}
+  links moved to 42174: authors
+  (García Márquez: one person; as Gabriel García Márquez)
+16082 before: text="déjà vu" type="common" pos="noun" fam=3 tm=false status="gen" typ={"dream_words":5,"french_phrases_in_english":1}
+29288 before: text="deja vu" type="common" pos="noun" fam=2 tm=false status="gen" typ={"words_from_french":2}
+16082 after:  text="déjà vu" type="common" pos="noun" fam=2 tm=false status="gen" typ={"dream_words":5,"french_phrases_in_english":1,"words_from_french":2}
+29288 after:  text="deja vu" type="common" pos="noun" fam=2 tm=false aliasOf=16082 aliasKind="spelling" status="gen" typ={}
+  links moved to 16082: words_from_french
+  (déjà vu: M-W and Oxford)
+53687 before: text="açaí" type="common" pos="noun" fam=3 tm=false status="gen" typ={"brazilian_food":1}
+16737 before: text="acai" gloss="fruit" type="common" pos="noun" fam=3 tm=false status="gen" typ={"superfoods":2,"words_from_south_american_languages":3,"purple_things":4}
+53687 after:  text="açaí" type="common" pos="noun" fam=3 tm=false status="gen" typ={"brazilian_food":1,"superfoods":2,"words_from_south_american_languages":3,"purple_things":4}
+16737 after:  text="acai" gloss="fruit" type="common" pos="noun" fam=3 tm=false aliasOf=53687 aliasKind="spelling" status="gen" typ={}
+  links moved to 53687: superfoods, words_from_south_american_languages, purple_things
+  (açaí: M-W and Oxford açaí; as açaí bowl)
+53687 before: text="açaí" type="common" pos="noun" fam=3 tm=false status="gen" typ={"brazilian_food":1,"superfoods":2,"words_from_south_american_languages":3,"purple_things":4}
+62997 before: text="açai" type="common" pos="noun" fam=4 tm=false status="gen" typ={"juices":5}
+53687 after:  text="açaí" type="common" pos="noun" fam=3 tm=false status="gen" typ={"brazilian_food":1,"superfoods":2,"words_from_south_american_languages":3,"purple_things":4,"juices":5}
+62997 after:  text="açai" type="common" pos="noun" fam=3 tm=false aliasOf=53687 aliasKind="spelling" status="gen" typ={}
+  links moved to 53687: juices
+  (açaí: a half-accented spelling of the same fruit)
+53686 before: text="lúcuma" type="common" pos="noun" fam=5 tm=false status="gen" typ={"peruvian_food":3}
+16752 before: text="lucuma" type="common" pos="noun" fam=5 tm=false status="gen" typ={"superfoods":5,"andean_crops":3}
+53686 after:  text="lúcuma" type="common" pos="noun" fam=5 tm=false status="gen" typ={"peruvian_food":3,"superfoods":5,"andean_crops":3}
+16752 after:  text="lucuma" type="common" pos="noun" fam=5 tm=false aliasOf=53686 aliasKind="spelling" status="gen" typ={}
+  links moved to 53686: superfoods, andean_crops
+  (lúcuma: accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+62451 before: text="frisée" type="common" pos="noun" fam=4 tm=false status="gen" typ={"bitter_foods":4}
+17471 before: text="frisee" type="common" pos="noun" fam=4 tm=false status="gen" typ={"leafy_greens":4}
+62451 after:  text="frisée" type="common" pos="noun" fam=4 tm=false status="gen" typ={"bitter_foods":4,"leafy_greens":4}
+17471 after:  text="frisee" type="common" pos="noun" fam=4 tm=false aliasOf=62451 aliasKind="spelling" status="gen" typ={}
+  links moved to 62451: leafy_greens
+  (frisée: M-W and Oxford)
+53682 before: text="chuño" type="common" pos="noun" fam=5 tm=false status="gen" typ={"peruvian_food":4}
+17660 before: text="chuno" type="common" pos="noun" fam=5 tm=false status="gen" typ={"andean_crops":4}
+53682 after:  text="chuño" type="common" pos="noun" fam=5 tm=false status="gen" typ={"peruvian_food":4,"andean_crops":4}
+17660 after:  text="chuno" type="common" pos="noun" fam=5 tm=false aliasOf=53682 aliasKind="spelling" status="gen" typ={}
+  links moved to 53682: andean_crops
+  (chuño: accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+53696 before: text="linguiça" type="common" pos="noun" fam=4 tm=false status="gen" typ={"brazilian_food":3}
+17761 before: text="linguica" type="common" pos="noun" fam=5 tm=false status="gen" typ={"sausages":5}
+53696 after:  text="linguiça" type="common" pos="noun" fam=4 tm=false status="gen" typ={"brazilian_food":3,"sausages":5}
+17761 after:  text="linguica" type="common" pos="noun" fam=4 tm=false aliasOf=53696 aliasKind="spelling" status="gen" typ={}
+  links moved to 53696: sausages
+  (linguiça: accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+53280 before: text="jamón ibérico" type="common" pos="noun" fam=3 tm=false status="gen" typ={"spanish_food":2}
+17779 before: text="jamon iberico" type="common" pos="noun" fam=4 tm=false status="gen" typ={"cured_meats":3}
+53280 after:  text="jamón ibérico" type="common" pos="noun" fam=3 tm=false status="gen" typ={"spanish_food":2,"cured_meats":3}
+17779 after:  text="jamon iberico" type="common" pos="noun" fam=3 tm=false aliasOf=53280 aliasKind="spelling" status="gen" typ={}
+  links moved to 53280: cured_meats; groups: cured_meats [17778,53280]
+  (jamón ibérico: accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+53400 before: text="cacık" type="common" pos="noun" fam=5 tm=false status="gen" typ={"meze":4}
+18826 before: text="cacik" type="common" pos="noun" fam=5 tm=false status="gen" typ={"dips":5,"turkish_food":4}
+53400 after:  text="cacık" type="common" pos="noun" fam=5 tm=false status="gen" typ={"meze":4,"dips":5,"turkish_food":4}
+18826 after:  text="cacik" type="common" pos="noun" fam=5 tm=false aliasOf=53400 aliasKind="spelling" status="gen" typ={}
+  links moved to 53400: dips, turkish_food; groups: dips [18800,53400]
+  (cacık: as köfte, börek (Turkish dishes keep the Turkish letters))
+53271 before: text="crêpe" type="common" pos="noun" fam=2 tm=false status="gen" typ={"french_food":1}
+19117 before: text="crepe" gloss="pancake" type="common" pos="noun" fam=2 tm=false status="gen" typ={"street_food":2,"pancakes_of_the_world":1}
+53271 after:  text="crêpe" type="common" pos="noun" fam=2 tm=false status="gen" typ={"french_food":1,"street_food":2,"pancakes_of_the_world":1}
+19117 after:  text="crepe" gloss="pancake" type="common" pos="noun" fam=2 tm=false aliasOf=53271 aliasKind="spelling" status="gen" typ={}
+  links moved to 53271: street_food, pancakes_of_the_world; groups: pancakes_of_the_world [53271,19268]
+  (crêpe: Oxford crêpe, M-W crepe (also crêpe); as crêpe Suzette; crepe [fabric] stays a separate root)
+53369 before: text="pastırma" type="common" pos="noun" fam=5 tm=false status="gen" typ={"turkish_breakfast":4}
+19321 before: text="pastirma" type="common" pos="noun" fam=5 tm=false status="gen" typ={"turkish_food":5}
+53369 after:  text="pastırma" type="common" pos="noun" fam=5 tm=false status="gen" typ={"turkish_breakfast":4,"turkish_food":5}
+19321 after:  text="pastirma" type="common" pos="noun" fam=5 tm=false aliasOf=53369 aliasKind="spelling" status="gen" typ={}
+  links moved to 53369: turkish_food
+  (pastırma: as köfte)
+59703 before: text="çiğ köfte" type="common" pos="noun" fam=4 tm=false status="gen" typ={"meze":5}
+19327 before: text="cig kofte" type="common" pos="noun" fam=5 tm=false status="gen" typ={"turkish_food":5}
+59703 after:  text="çiğ köfte" type="common" pos="noun" fam=4 tm=false status="gen" typ={"meze":5,"turkish_food":5}
+19327 after:  text="cig kofte" type="common" pos="noun" fam=4 tm=false aliasOf=59703 aliasKind="spelling" status="gen" typ={}
+  links moved to 59703: turkish_food
+  (çiğ köfte: as köfte)
+19423 before: text="guarana" type="common" pos="noun" fam=4 tm=false status="gen" typ={"south_american_food":3}
+53691 before: text="guaraná" type="common" pos="noun" fam=4 tm=false status="gen" typ={"brazilian_food":2,"south_american_drinks":1}
+19423 after:  text="guarana" type="common" pos="noun" fam=4 tm=false status="gen" typ={"south_american_food":3,"brazilian_food":2,"south_american_drinks":1}
+53691 after:  text="guaraná" type="common" pos="noun" fam=4 tm=false aliasOf=19423 aliasKind="spelling" status="gen" typ={}
+  links moved to 19423: brazilian_food, south_american_drinks; groups: south_american_drinks [19423,53716]
+  (guarana: M-W and Oxford write it without the accent, so the plain form is the root)
+53702 before: text="choripán" type="common" pos="noun" fam=4 tm=false status="gen" typ={"argentinian_food":1}
+19427 before: text="choripan" type="common" pos="noun" fam=5 tm=false status="gen" typ={"south_american_food":3}
+53702 after:  text="choripán" type="common" pos="noun" fam=4 tm=false status="gen" typ={"argentinian_food":1,"south_american_food":3}
+19427 after:  text="choripan" type="common" pos="noun" fam=4 tm=false aliasOf=53702 aliasKind="spelling" status="gen" typ={}
+  links moved to 53702: south_american_food
+  (choripán: accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+62457 before: text="ají amarillo" type="common" pos="noun" fam=4 tm=false status="gen" typ={"spicy_foods":5,"capsicums":5}
+19431 before: text="aji amarillo" type="common" pos="noun" fam=5 tm=false status="gen" typ={"south_american_food":3,"peruvian_food":2}
+62457 after:  text="ají amarillo" type="common" pos="noun" fam=4 tm=false status="gen" typ={"spicy_foods":5,"capsicums":5,"south_american_food":3,"peruvian_food":2}
+19431 after:  text="aji amarillo" type="common" pos="noun" fam=4 tm=false aliasOf=62457 aliasKind="spelling" status="gen" typ={}
+  links moved to 62457: south_american_food, peruvian_food
+  (ají amarillo: accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+19612 before: text="piña colada" type="common" pos="noun" fam=2 tm=false status="gen" typ={"cocktails":2}
+48869 before: text="pina colada" gloss="cocktail" type="phrase" pos="noun" fam=3 tm=false status="gen" typ={"beach_vacation":4}
+19612 after:  text="piña colada" type="common" pos="noun" fam=2 tm=false status="gen" typ={"cocktails":2,"beach_vacation":4}
+48869 after:  text="pina colada" gloss="cocktail" type="common" pos="noun" fam=2 tm=false aliasOf=19612 aliasKind="spelling" status="gen" typ={}
+  links moved to 19612: beach_vacation
+  (piña colada: M-W and Oxford; the phrase-typed duplicate becomes its alias)
+42215 before: text="Sacsayhuamán" type="place" pos="noun" fam=4 tm=false status="gen" typ={"inca_engineering":3}
+20441 before: text="Sacsayhuaman" type="place" pos="noun" fam=5 tm=false status="gen" typ={"inca_empire":4,"south_american_landmarks":5,"andean_sites":2}
+42215 after:  text="Sacsayhuamán" type="place" pos="noun" fam=4 tm=false status="gen" typ={"inca_engineering":3,"inca_empire":4,"south_american_landmarks":5,"andean_sites":2}
+20441 after:  text="Sacsayhuaman" type="place" pos="noun" fam=4 tm=false aliasOf=42215 aliasKind="spelling" status="gen" typ={}
+  links moved to 42215: inca_empire, south_american_landmarks, andean_sites
+  (Sacsayhuamán: one site; the accented form is the standard spelling in English reference usage)
+57375 before: text="Süleymaniye Mosque" type="place" pos="noun" fam=4 tm=false status="gen" typ={"istanbul_landmarks":3}
+20643 before: text="Suleymaniye Mosque" type="place" pos="noun" fam=5 tm=false status="gen" typ={"ottoman_empire":3,"famous_mosques":3} show={"famous_mosques":"Suleymaniye"}
+57375 after:  text="Süleymaniye Mosque" type="place" pos="noun" fam=4 tm=false status="gen" typ={"istanbul_landmarks":3,"ottoman_empire":3,"famous_mosques":3} show={"famous_mosques":"Süleymaniye"}
+20643 after:  text="Suleymaniye Mosque" type="place" pos="noun" fam=4 tm=false aliasOf=57375 aliasKind="spelling" status="gen" typ={} nameOkIn=["famous_mosques"]
+  links moved to 57375: ottoman_empire, famous_mosques
+  (Süleymaniye Mosque: one building; the accented form is the standard spelling in English reference usage)
+20677 before: text="Cú Chulainn" type="person" pos="noun" fam=4 tm=false status="gen" typ={"celts":3}
+22516 before: text="Cu Chulainn" type="person" pos="noun" fam=4 tm=false status="gen" typ={"legendary_heroes":3,"celtic_folklore":2}
+20677 after:  text="Cú Chulainn" type="person" pos="noun" fam=4 tm=false status="gen" typ={"celts":3,"legendary_heroes":3,"celtic_folklore":2}
+22516 after:  text="Cu Chulainn" type="person" pos="noun" fam=4 tm=false aliasOf=20677 aliasKind="spelling" status="gen" typ={}
+  links moved to 20677: legendary_heroes, celtic_folklore
+  (Cú Chulainn: one hero; Irish spelling, as in Oxford reference works)
+20682 before: text="Tuatha Dé Danann" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"celts":3}
+22250 before: text="Tuatha De Danann" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"celtic_gods":3,"celtic_folklore":2}
+20682 after:  text="Tuatha Dé Danann" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"celts":3,"celtic_gods":3,"celtic_folklore":2}
+22250 after:  text="Tuatha De Danann" type="proper" pos="noun" fam=5 tm=false aliasOf=20682 aliasKind="spelling" status="gen" typ={}
+  links moved to 20682: celtic_gods, celtic_folklore
+  (Tuatha Dé Danann: as Cú Chulainn)
+21439 before: text="détente" type="common" pos="noun" fam=4 tm=false status="gen" typ={"cold_war":4,"peace_words":4}
+33537 before: text="detente" type="common" pos="noun" fam=4 tm=false status="gen" typ={"diplomacy_words":4,"deals_between_countries":4,"borrowed_foreign_words":4}
+21439 after:  text="détente" type="common" pos="noun" fam=4 tm=false status="gen" typ={"cold_war":4,"peace_words":4,"diplomacy_words":4,"deals_between_countries":4,"borrowed_foreign_words":4}
+33537 after:  text="detente" type="common" pos="noun" fam=4 tm=false aliasOf=21439 aliasKind="spelling" status="gen" typ={}
+  links moved to 21439: diplomacy_words, deals_between_countries, borrowed_foreign_words; groups: diplomacy_words [21439,21511], borrowed_foreign_words [21439,21511]
+  (détente: M-W and Oxford)
+54512 before: text="Simón Bolívar" type="person" pos="noun" fam=2 tm=false status="gen" typ={"latin_american_liberators":1}
+21522 before: text="Simon Bolivar" type="person" pos="noun" fam=3 tm=false status="gen" typ={"famous_leaders":3}
+54512 after:  text="Simón Bolívar" type="person" pos="noun" fam=2 tm=false status="gen" typ={"latin_american_liberators":1,"famous_leaders":3}
+21522 after:  text="Simon Bolivar" type="person" pos="noun" fam=2 tm=false aliasOf=54512 aliasKind="spelling" status="gen" typ={}
+  links moved to 54512: famous_leaders
+  (Simón Bolívar: one person; the accented form is the standard spelling in English reference usage)
+54525 before: text="Benito Juárez" type="person" pos="noun" fam=4 tm=false status="gen" typ={"latin_american_liberators":5}
+21543 before: text="Benito Juarez" type="person" pos="noun" fam=4 tm=false status="gen" typ={"famous_leaders":5}
+54525 after:  text="Benito Juárez" type="person" pos="noun" fam=4 tm=false status="gen" typ={"latin_american_liberators":5,"famous_leaders":5}
+21543 after:  text="Benito Juarez" type="person" pos="noun" fam=4 tm=false aliasOf=54525 aliasKind="spelling" status="gen" typ={}
+  links moved to 54525: famous_leaders
+  (Benito Juárez: one person; the accented form is the standard spelling in English reference usage)
+26865 before: text="voilà" type="common" pos="other" fam=2 tm=false status="gen" typ={"french_phrases_in_english":2}
+26570 before: text="voila" gloss="interjection" type="common" pos="other" fam=2 tm=false status="gen" typ={"interjections":3}
+26865 after:  text="voilà" type="common" pos="other" fam=2 tm=false status="gen" typ={"french_phrases_in_english":2,"interjections":3}
+26570 after:  text="voila" gloss="interjection" type="common" pos="other" fam=2 tm=false aliasOf=26865 aliasKind="spelling" status="gen" typ={}
+  links moved to 26865: interjections
+  (voilà: M-W voilà (also voila); as olé)
+26808 before: text="tschüss" type="common" pos="other" fam=3 tm=false status="gen" typ={"goodbye_around_the_world":3}
+32512 before: text="tschuss" type="common" pos="other" fam=4 tm=false status="gen" typ={"ways_to_say_goodbye":5}
+26808 after:  text="tschüss" type="common" pos="other" fam=3 tm=false status="gen" typ={"goodbye_around_the_world":3,"ways_to_say_goodbye":5}
+32512 after:  text="tschuss" type="common" pos="other" fam=3 tm=false aliasOf=26808 aliasKind="spelling" status="gen" typ={}
+  links moved to 26808: ways_to_say_goodbye
+  (tschüss: German spelling; ü is standard)
+26864 before: text="bon appétit" type="phrase" pos="other" fam=2 tm=false status="gen" typ={"french_phrases_in_english":1}
+61438 before: text="bon appetit" type="phrase" pos="other" fam=2 tm=false status="gen" typ={"manners_and_etiquette":4,"polite_phrases":4}
+26864 after:  text="bon appétit" type="phrase" pos="other" fam=2 tm=false status="gen" typ={"french_phrases_in_english":1,"manners_and_etiquette":4,"polite_phrases":4}
+61438 after:  text="bon appetit" type="phrase" pos="other" fam=2 tm=false aliasOf=26864 aliasKind="spelling" status="gen" typ={}
+  links moved to 26864: manners_and_etiquette, polite_phrases
+  (bon appétit: M-W and Oxford)
+48667 before: text="arête" type="common" pos="noun" fam=5 tm=false status="gen" typ={"trail_words":5}
+30846 before: text="arete" type="common" pos="noun" fam=5 tm=false status="gen" typ={"mountain_features":4,"mountains":5,"mountaineering_words":4,"landforms":5}
+48667 after:  text="arête" type="common" pos="noun" fam=5 tm=false status="gen" typ={"trail_words":5,"mountain_features":4,"mountains":5,"mountaineering_words":4,"landforms":5}
+30846 after:  text="arete" type="common" pos="noun" fam=5 tm=false aliasOf=48667 aliasKind="spelling" status="gen" typ={}
+  links moved to 48667: mountain_features, mountains, mountaineering_words, landforms; groups: mountaineering_words [1930,48667]
+  (arête: M-W and Oxford)
+57154 before: text="Popocatépetl" type="place" pos="noun" fam=3 tm=false status="gen" typ={"famous_volcanoes":3,"words_from_nahuatl":4}
+36542 before: text="Popocatepetl" type="place" pos="noun" fam=4 tm=false status="gen" typ={"famous_mountains":4,"mexican_landmarks":3}
+57154 after:  text="Popocatépetl" type="place" pos="noun" fam=3 tm=false status="gen" typ={"famous_volcanoes":3,"words_from_nahuatl":4,"famous_mountains":4,"mexican_landmarks":3}
+36542 after:  text="Popocatepetl" type="place" pos="noun" fam=3 tm=false aliasOf=57154 aliasKind="spelling" status="gen" typ={}
+  links moved to 57154: famous_mountains, mexican_landmarks
+  (Popocatépetl: one volcano; the accented form is the standard spelling in English reference usage)
+57340 before: text="Paraná" type="place" pos="noun" fam=4 tm=false status="gen" typ={"south_american_rivers":2}
+36792 before: text="Parana" type="place" pos="noun" fam=4 tm=false status="gen" typ={"famous_rivers":4}
+57340 after:  text="Paraná" type="place" pos="noun" fam=4 tm=false status="gen" typ={"south_american_rivers":2,"famous_rivers":4}
+36792 after:  text="Parana" type="place" pos="noun" fam=4 tm=false aliasOf=57340 aliasKind="spelling" status="gen" typ={}
+  links moved to 57340: famous_rivers
+  (Paraná: one river; the accented form is the standard spelling in English reference usage)
+57284 before: text="Rhône" type="place" pos="noun" fam=3 tm=false status="gen" typ={"european_rivers":2}
+36801 before: text="Rhone" gloss="river" type="place" pos="noun" fam=3 tm=false status="gen" typ={"famous_rivers":3}
+57284 after:  text="Rhône" type="place" pos="noun" fam=3 tm=false status="gen" typ={"european_rivers":2,"famous_rivers":3}
+36801 after:  text="Rhone" gloss="river" type="place" pos="noun" fam=3 tm=false aliasOf=57284 aliasKind="spelling" status="gen" typ={}
+  links moved to 57284: famous_rivers
+  (Rhône: one river; Oxford and Britannica Rhône)
+57417 before: text="Place Vendôme" type="place" pos="noun" fam=4 tm=false status="gen" typ={"paris_landmarks":4}
+37238 before: text="Place Vendome" type="place" pos="noun" fam=4 tm=false status="gen" typ={"famous_squares":4}
+57417 after:  text="Place Vendôme" type="place" pos="noun" fam=4 tm=false status="gen" typ={"paris_landmarks":4,"famous_squares":4}
+37238 after:  text="Place Vendome" type="place" pos="noun" fam=4 tm=false aliasOf=57417 aliasKind="spelling" status="gen" typ={}
+  links moved to 57417: famous_squares
+  (Place Vendôme: one square; the accented form is the standard spelling in English reference usage)
+57404 before: text="Champs-Élysées" type="place" pos="noun" fam=2 tm=false status="gen" typ={"paris_landmarks":1}
+37254 before: text="Champs-Elysees" type="place" pos="noun" fam=2 tm=false status="gen" typ={"famous_streets":1}
+57404 after:  text="Champs-Élysées" type="place" pos="noun" fam=2 tm=false status="gen" typ={"paris_landmarks":1,"famous_streets":1}
+37254 after:  text="Champs-Elysees" type="place" pos="noun" fam=2 tm=false aliasOf=57404 aliasKind="spelling" status="gen" typ={}
+  links moved to 57404: famous_streets
+  (Champs-Élysées: one street; the accented form is the standard spelling in English reference usage)
+57407 before: text="Musée d'Orsay" type="place" pos="noun" fam=3 tm=false status="gen" typ={"paris_landmarks":2}
+37311 before: text="Musee d'Orsay" type="place" pos="noun" fam=3 tm=false status="gen" typ={"famous_museums":3}
+57407 after:  text="Musée d'Orsay" type="place" pos="noun" fam=3 tm=false status="gen" typ={"paris_landmarks":2,"famous_museums":3}
+37311 after:  text="Musee d'Orsay" type="place" pos="noun" fam=3 tm=false aliasOf=57407 aliasKind="spelling" status="gen" typ={}
+  links moved to 57407: famous_museums
+  (Musée d'Orsay: one museum; the accented form is the standard spelling in English reference usage)
+57165 before: text="Paricutín" type="place" pos="noun" fam=5 tm=false status="gen" typ={"famous_volcanoes":4}
+37697 before: text="Paricutin" type="place" pos="noun" fam=5 tm=false status="gen" typ={"mexican_landmarks":5}
+57165 after:  text="Paricutín" type="place" pos="noun" fam=5 tm=false status="gen" typ={"famous_volcanoes":4,"mexican_landmarks":5}
+37697 after:  text="Paricutin" type="place" pos="noun" fam=5 tm=false aliasOf=57165 aliasKind="spelling" status="gen" typ={}
+  links moved to 57165: mexican_landmarks
+  (Paricutín: one volcano; the accented form is the standard spelling in English reference usage)
+44386 before: text="Santiago Bernabéu" type="place" pos="noun" fam=3 tm=false status="gen" typ={"famous_stadiums":2}
+37800 before: text="Santiago Bernabeu" type="place" pos="noun" fam=4 tm=false status="gen" typ={"spanish_landmarks":2}
+44386 after:  text="Santiago Bernabéu" type="place" pos="noun" fam=3 tm=false status="gen" typ={"famous_stadiums":2,"spanish_landmarks":2}
+37800 after:  text="Santiago Bernabeu" type="place" pos="noun" fam=3 tm=false aliasOf=44386 aliasKind="spelling" status="gen" typ={}
+  links moved to 44386: spanish_landmarks
+  (Santiago Bernabéu: one stadium; the accented form is the standard spelling in English reference usage)
+57215 before: text="Galápagos" type="place" pos="noun" fam=2 tm=false status="gen" typ={"pacific_islands":3}
+41020 before: text="Galapagos" gloss="islands" type="place" pos="noun" fam=2 tm=false status="gen" typ={"evolution_words":3}
+57215 after:  text="Galápagos" type="place" pos="noun" fam=2 tm=false status="gen" typ={"pacific_islands":3,"evolution_words":3}
+41020 after:  text="Galapagos" gloss="islands" type="place" pos="noun" fam=2 tm=false aliasOf=57215 aliasKind="spelling" status="gen" typ={}
+  links moved to 57215: evolution_words
+  (Galápagos: the islands; the accented form is the standard spelling in English reference usage; Galapagos [island giant] tortoise stays separate)
+48870 before: text="après-ski" type="common" pos="noun" fam=3 tm=false status="gen" typ={"ski_trip":3} nameOkIn=["ski_trip"]
+43529 before: text="apres-ski" type="common" pos="noun" fam=3 tm=false status="gen" typ={"skiing_words":3}
+48870 after:  text="après-ski" type="common" pos="noun" fam=3 tm=false status="gen" typ={"ski_trip":3,"skiing_words":3} nameOkIn=["ski_trip"]
+43529 after:  text="apres-ski" type="common" pos="noun" fam=3 tm=false aliasOf=48870 aliasKind="spelling" status="gen" typ={} nameOkIn=["ski_trip"]
+  links moved to 48870: skiing_words
+  (après-ski: M-W and Oxford)
+53607 before: text="bun cha" type="common" pos="noun" fam=4 tm=false status="gen" typ={"vietnamese_food":2}
+53186 before: text="bún chả" type="common" pos="noun" fam=5 tm=false status="gen" typ={"noodle_dishes":5}
+53607 after:  text="bun cha" type="common" pos="noun" fam=4 tm=false status="gen" typ={"vietnamese_food":2,"noodle_dishes":5}
+53186 after:  text="bún chả" type="common" pos="noun" fam=4 tm=false aliasOf=53607 aliasKind="spelling" status="gen" typ={}
+  links moved to 53607: noodle_dishes
+  (bun cha: Vietnamese dish names are written without tone marks in English (as pho), so the plain form is the root)
+53288 before: text="turrón" type="common" pos="noun" fam=4 tm=false status="gen" typ={"spanish_food":3}
+62439 before: text="turron" type="common" pos="noun" fam=4 tm=false status="gen" typ={"sweet_foods":4}
+53288 after:  text="turrón" type="common" pos="noun" fam=4 tm=false status="gen" typ={"spanish_food":3,"sweet_foods":4}
+62439 after:  text="turron" type="common" pos="noun" fam=4 tm=false aliasOf=53288 aliasKind="spelling" status="gen" typ={}
+  links moved to 53288: sweet_foods; groups: sweet_foods [634,53288]
+  (turrón: accented root, plain spelling alias, as Gruyère, crème brûlée, jalapeño, köfte)
+54276 before: text="Gjøa" gloss="ship" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"expedition_ships":3}
+60650 before: text="Gjoa" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"famous_ships":5,"exploration_ships":5}
+54276 after:  text="Gjøa" gloss="ship" type="proper" pos="noun" fam=5 tm=false status="gen" typ={"expedition_ships":3,"famous_ships":5,"exploration_ships":5}
+60650 after:  text="Gjoa" type="proper" pos="noun" fam=5 tm=false aliasOf=54276 aliasKind="spelling" status="gen" typ={}
+  links moved to 54276: famous_ships, exploration_ships
+  (Gjøa: one ship; the accented form is the standard spelling in English reference usage)
+
+Accent groups found (90; root entries whose texts are equal after removing accents, case-insensitive, and differ in more than case):
+  indigo: 6 indigo [color] (common) / 57749 índigo (common) / 59398 IndiGo [airline] (org)  -> left: different words: índigo is the Spanish colour word (foreign theme), IndiGo an airline
+  yogurt: 522 yogurt [cultured dairy] (common) / 62335 yoğurt (common)  -> left: yoğurt is the Turkish word in "Turkish everyday words" (foreign theme); yogurt is the English word with its own alias yoghurt
+  rose: 1693 rose [flower] (common) / 7698 rose [color] (common) / 19647 rosé [wine] (common) / 29852 Rose [name] (proper) / 63811 rose [pink gem] (common)  -> left: different words and senses (rosé wine; rose flower, colour, name, gem)
+  quinceanera: 5188 quinceañera (common) / 32559 quinceanera (common)  -> merged
+  pesapallo: 5237 pesäpallo (common) / 38523 pesapallo (common)  -> merged
+  emil zatopek: 5529 Emil Zátopek (person) / 44647 Emil Zatopek (person)  -> merged
+  pokemon: 5787 Pokémon [video game] (title) / 13105 Pokemon [anime] (proper) / 45434 Pokemon [card game] (proper)  -> left: three senses with different types (Pokémon [video game] title; Pokemon [anime], [card game] proper): not one entry; the accent on the two is a separate call (the trademark is written Pokémon)
+  papier-mache: 5884 papier-mâché (common) / 12031 papier-mache (common)  -> merged
+  fouette: 6274 fouetté (common) / 11756 fouette (common)  -> merged
+  otzi: 6880 Ötzi (person) / 21797 Otzi [Iceman] (person)  -> merged
+  catalhoyuk: 6906 Çatalhöyük (place) / 21788 Catalhoyuk (place)  -> merged
+  gobekli tepe: 6907 Göbekli Tepe (place) / 21787 Gobekli Tepe (place)  -> merged
+  pantheon: 6920 pantheon [gods] (common) / 34293 pantheon [temple] (common) / 37040 Pantheon [Rome] (place) / 57409 Panthéon (place)  -> left: different buildings (Panthéon in Paris, Pantheon in Rome) and common senses
+  ancien regime: 7104 Ancien Régime (proper) / 55127 ancien regime (common)  -> left: types differ (Ancien Régime proper in historical periods, ancien regime common in French revolution): a capital call first (M-W and Oxford lowercase ancien régime): for Simon
+  sable: 7670 sable [color] (common) / 32105 sable [animal] (common) / 38717 sable [black] (common) / 53157 sablé (common) / 59451 sable [biscuit] (common) / 63568 sable [African grazer] (common)  -> left: different words (sablé biscuit; sable colour, animal, antelope)
+  vicuna: 7939 vicuna [animal] (common) / 9719 vicuña (common)  -> left: 9719 vicuña already has the spelling alias 9720 "vicuna"; making 7939 vicuna [animal] a second "vicuna" alias would repeat it: needs 7939 deleted after its links move (Simon)
+  kakapo: 8231 kakapo (common) / 27112 kākāpō (common)  -> left: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  kaka: 8284 kaka [parrot] (common) / 27117 kākā (common) / 44519 Kaká (person)  -> left: Kaká is a footballer; kaka [parrot] / kākā: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  cajon: 10607 cajon (common) / 38535 cajón (common)  -> merged
+  agogo: 10617 agogo [percussion] (common) / 46480 agogô (common)  -> left: 46480 agogô already has the spelling alias 46481 "agogo"; making 10617 a second one would repeat it: needs 10617 deleted after its links move (Simon)
+  grand jete: 11754 grand jete (common) / 62513 grand jeté (common)  -> merged
+  san sebastian: 12776 San Sebastian (proper) / 56949 San Sebastián (place)  -> left: different senses: San Sebastian [film festival] proper, San Sebastián the city
+  garcia marquez: 13202 Garcia Marquez (person) / 42174 García Márquez (person)  -> merged
+  deja vu: 16082 déjà vu (common) / 29288 deja vu (common)  -> merged
+  acai: 16737 acai [fruit] (common) / 53687 açaí (common) / 62997 açai (common)  -> merged
+  lucuma: 16752 lucuma (common) / 53686 lúcuma (common)  -> merged
+  frisee: 17471 frisee (common) / 62451 frisée (common)  -> merged
+  chuno: 17660 chuno (common) / 53682 chuño (common)  -> merged
+  linguica: 17761 linguica (common) / 53696 linguiça (common)  -> merged
+  jamon iberico: 17779 jamon iberico (common) / 53280 jamón ibérico (common)  -> merged
+  droewors: 17804 droewors (common) / 53496 droëwors (common)  -> left: regions differ (droewors tagged ZA, droëwors none): the root's region is a call; a spelling alias carries US or UK only
+  dragees: 18265 dragées (common) / 67138 dragees (common)  -> left: both are linked in "cake decorations" (a duplicate there), and dragees has the regional alias cachous to re-parent: needs a hand merge (Simon)
+  cacik: 18826 cacik (common) / 53400 cacık (common)  -> merged
+  crepe: 19117 crepe [pancake] (common) / 24862 crepe [fabric] (common) / 53271 crêpe (common)  -> merged
+  raki: 19298 raki (common) / 26967 rakı (common)  -> left: rakı is in "Turkish everyday words" (foreign theme), raki is the English word (M-W, Oxford) in English themes: two forms for two theme kinds
+  pastirma: 19321 pastirma (common) / 53369 pastırma (common)  -> merged
+  cig kofte: 19327 cig kofte (common) / 59703 çiğ köfte (common)  -> merged
+  guarana: 19423 guarana (common) / 53691 guaraná (common)  -> merged
+  choripan: 19427 choripan (common) / 53702 choripán (common)  -> merged
+  aji amarillo: 19431 aji amarillo (common) / 62457 ají amarillo (common)  -> merged
+  pina colada: 19612 piña colada (common) / 48869 pina colada [cocktail] (phrase)  -> merged
+  maitre d': 20027 maître d' (common) / 33023 maitre d' [restaurant host] (common)  -> left: 20027 maître d' already has the spelling alias 20028 "maitre d'"; 33023 would repeat it: needs 33023 deleted after its link moves (Simon)
+  sacsayhuaman: 20441 Sacsayhuaman (place) / 42215 Sacsayhuamán (place)  -> merged
+  suleymaniye mosque: 20643 Suleymaniye Mosque (place) / 57375 Süleymaniye Mosque (place)  -> merged
+  cu chulainn: 20677 Cú Chulainn (person) / 22516 Cu Chulainn (person)  -> merged
+  tuatha de danann: 20682 Tuatha Dé Danann (proper) / 22250 Tuatha De Danann (proper)  -> merged
+  detente: 21439 détente (common) / 33537 detente (common)  -> merged
+  simon bolivar: 21522 Simon Bolivar (person) / 54512 Simón Bolívar (person)  -> merged
+  benito juarez: 21543 Benito Juarez (person) / 54525 Benito Juárez (person)  -> merged
+  tane: 22161 Tane [god] (proper) / 27103 tāne (common)  -> left: different senses: Tane [god] proper, tāne the Māori word for man
+  sari: 24356 sari (common) / 57775 sarı [color] (common)  -> left: different words (sari garment; sarı Turkish yellow)
+  voila: 26570 voila [interjection] (common) / 26865 voilà (common)  -> merged
+  tschuss: 26808 tschüss (common) / 32512 tschuss (common)  -> merged
+  bon appetit: 26864 bon appétit (phrase) / 61438 bon appetit (phrase)  -> merged
+  cay: 26960 çay (common) / 30995 cay (common)  -> left: different words (çay Turkish tea; cay a small island)
+  doner: 26966 döner (common) / 29440 doner (common)  -> left: as raki: döner in "Turkish everyday words" (foreign), doner (M-W, Oxford doner kebab) in "words from Turkish"
+  whanau: 27084 whānau (common) / 35433 whanau (common)  -> left: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  pakeha: 27089 pākehā (common) / 35438 pakeha (common)  -> left: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  pukeko: 27111 pūkeko (common) / 51206 pukeko (common)  -> left: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  tui: 27113 tūī (common) / 51200 tui [bird] (common) / 59082 TUI [airline] (acronym)  -> left: TUI is an airline; tui / tūī: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  weta: 27114 wētā (common) / 51199 weta (common)  -> left: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  pohutukawa: 27115 pōhutukawa (common) / 56563 pohutukawa (common)  -> left: Māori word: English dictionaries write it without macrons, but "Māori words" (a foreign-language theme, locked) needs the macron form; one root would either drop the macrons there or put them in the English themes: for Simon (one decision for all Māori words; rongoā is a macron root)
+  are: 28736 are [verb] (common) / 49017 Åre (place)  -> left: different words (are verb; Åre ski resort)
+  arete: 30846 arete (common) / 48667 arête (common)  -> merged
+  bolivar: 33904 bolivar [currency] (common) / 46473 Bolívar [Bolivian club] (org)  -> left: different senses (bolivar currency; Bolívar club)
+  san jose: 35909 San Jose (place) / 56849 San José (place)  -> left: different places (San Jose, California; San José, Costa Rica)
+  cordoba: 35975 Córdoba [city] (place) / 56798 cordoba (common)  -> left: different senses (Córdoba city; cordoba currency)
+  medoc: 36474 Médoc (place) / 62816 Medoc (proper)  -> left: different senses (Médoc wine region; Medoc marathon)
+  munster: 36481 Munster [province] (place) / 39725 Munster [cheese] (proper) / 56917 Münster (place)  -> left: different senses (Munster province and cheese; Münster city)
+  popocatepetl: 36542 Popocatepetl (place) / 57154 Popocatépetl (place)  -> merged
+  parana: 36792 Parana (place) / 57340 Paraná (place)  -> merged
+  rhone: 36801 Rhone [river] (place) / 57284 Rhône (place)  -> merged
+  place vendome: 37238 Place Vendome (place) / 57417 Place Vendôme (place)  -> merged
+  champs-elysees: 37254 Champs-Elysees (place) / 57404 Champs-Élysées (place)  -> merged
+  musee d'orsay: 37311 Musee d'Orsay (place) / 57407 Musée d'Orsay (place)  -> merged
+  kaikoura: 37656 Kaikoura (place) / 57115 Kaikōura (place)  -> left: Māori place name (Kaikōura is the official spelling since 2016, English sources mostly Kaikoura): the same macron decision as the Māori words
+  paricutin: 37697 Paricutin (place) / 57165 Paricutín (place)  -> merged
+  santiago bernabeu: 37800 Santiago Bernabeu (place) / 44386 Santiago Bernabéu (place)  -> merged
+  lame: 39366 lame (common) / 40003 lamé (common)  -> left: different words (lame; lamé fabric)
+  galapagos: 41020 Galapagos [islands] (place) / 57215 Galápagos (place) / 65318 Galapagos [island giant] (proper)  -> merged
+  apres-ski: 43529 apres-ski (common) / 48870 après-ski (common)  -> merged
+  coupe: 43811 coupé [fencing] (common) / 46629 coupe [car] (common) / 55839 coupe [glass] (common)  -> left: different senses (coupé fencing; coupe car with its alias coupé; coupe glass)
+  vuelta a espana: 44325 Vuelta a España [race] (proper) / 47963 Vuelta a Espana (proper)  -> left: 47963 Vuelta a Espana already has the spelling alias 47965 "Vuelta a España", the text of root 44325: a three-way merge with its abbreviation alias the Vuelta re-parented: for Simon
+  bun cha: 53186 bún chả (common) / 53607 bun cha (common)  -> merged
+  turron: 53288 turrón (common) / 62439 turron (common)  -> merged
+  gjoa: 54276 Gjøa [ship] (proper) / 60650 Gjoa (proper)  -> merged
+  orleans: 54367 Orléans [siege] (place) / 55167 Orleans [royal house] (proper) / 56890 Orléans [city] (place)  -> left: different senses (siege of Orléans, house of Orleans, the city)
+  vitoria: 54379 Vitoria (place) / 57084 Vitória (place)  -> left: different places (Vitoria, Spain; Vitória, Brazil)
+  belem: 57073 Belém (place) / 62558 Belem (place)  -> left: different places (Belém, Brazil; Belem Tower, Lisbon)
+  marron: 57735 marrón (common) / 57755 marron (common)  -> left: different languages (marrón Spanish, marron French colour words)
+
+Method: Simon's five rules (DESIGN-entries.md "Single-word names: the five rules"), Brand types, Oxford and Merriam-Webster usage (from the
+dictionaries' known entries; the M-W site refused automated reading, so no page was fetched), and the siblings in each theme.
+Git history: none of the words was set by Simon before (git log --grep on each word; DESIGN-entries.md, ISSUES.md mention them only as T24 items).
+
+Left unchanged, and why:
+A. Lowercase words in "brand names used as words" and the material themes that are no longer trademarks (no tm): escalator, zipper, yo-yo,
+   trampoline, linoleum, granola, dry ice, celluloid, neoprene, coin laundry, vacuum flask, flying disc (generic terms). Doubtful, left for Simon:
+   aspirin (generic in the US and UK, a Bayer trademark in Canada and many other countries), cellophane (generic in the US, still a trademark in
+   some countries), laundromat (a former Westinghouse mark).
+B. Kept capital org with tm (rule 1: M-W and Oxford both capitalise the noun; rule 4's brand sense): Zamboni, Q-tip, Vaseline, ChapStick,
+   Hoover [vacuum cleaner] (the verb hoover is lowercase in both, but the entry is the noun, linked in appliance themes), Crock-Pot, Velcro,
+   Lego and Frisbee (also in "toy brands"), Walkman, Dictaphone, Tupperware, Kleenex (rule 4 names it), Post-it, Stanley knife (org, a phrase);
+   Scotch tape and Sellotape stay proper with tm (Brand types leaves adhesives proper). Uber stays: no dictionary uses it as a word (a split
+   would be needed only if Simon wants "uber" as a word). Thermos lowercased (dictionaries disagree), Google split (below).
+D. Jeep [car brand] takes the typicality the merged entry had (3) and fam 2; ratings may want a look (Ford and Chevrolet are 1).
+   Most American car brands (Ford, Chevrolet, Dodge ...) are org without tm; Jeep has tm as Rivian and the British car brands (Brand types).
+E. Lowercase, unchanged (rule 1 tie-break, dictionaries print it lowercase or disagree): prosecco (M-W often capitalized, Oxford lowercase),
+   port [wine] (both lowercase), sherry (both lowercase), cava, vinho verde (lowercase), muscadet (M-W often capitalized, Oxford Muscadet),
+   white burgundy (M-W burgundy often capitalized). Note: Burgundy [wine] 19664 and the other capital place-named wines (Bordeaux, Chianti,
+   Chablis ...) were not reviewed against the tie-break: rule 3 keeps them capital, so white burgundy and Burgundy [wine] now differ (for Simon).
+   montepulciano and primitivo in "red wines" are grape names (rule 3), not wines named after places.
+F. Merges follow batch381: both ids kept; the alias holds no links, takes the root's type and fam (the lower, more familiar, of the two), no
+   region; links, synonym groups and shown texts move to the root (Süleymaniye Mosque's shown "Suleymaniye" became "Süleymaniye"). An alias whose
+   own text would leak a theme name gets the name allowance the root has (apres-ski in "ski trip") or one where the root is shown short
+   (Suleymaniye Mosque in "famous mosques"), so Checks theme-name stays at 3. The root is the accented form, as the library's precedent (81
+   accented roots with plain spelling aliases: Gruyère, crème brûlée, jalapeño, köfte, Brasília), except guarana (M-W and Oxford unaccented)
+   and bun cha (Vietnamese dish names are written without tone marks in English, as pho). Locked themes now show the root's form: "words from
+   French" shows déjà vu, "interjections" shows voilà, "ways to say goodbye" shows tschüss.
+   The task named 61 pairs; the stricter search here (letters equal after removing accents, any case) finds the groups listed above, including
+   groups of different words that only look alike.
+Verification (2026-11-16): npm test 37/37 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (case lint 0); style-case.mjs and
+propword-exceptions.mjs print 0 changes, case lint 0; Checks over the library: 0 errors, warnings unchanged (theme-name 3, long 5, maybe-duplicate 1).
+Family export (data/export/wordlist-game-family.json, node tools/export-game.mjs --strict, exit 0) against v382:
+  entries 60536 -> 60540; themes 3240 (11 theme rows changed: their counts and rating bands, as links moved between merged entries).
+  Index shifts: two roots enter the family export because they took family-visible links from their aliases: piña colada (new index 18597;
+    before, all its links were in "cocktails", which the family preset leaves out; it took "beach vacation" from pina colada) and détente
+    (new index 20040; it took "diplomacy words" and two more from detente). Entries from 18597 move up by 1, from 20040 by 2. Jeep [car brand]
+    and google [search the web] are appended at 60538 and 60539.
+  By field: text (Thermos -> thermos at 3011, Châteauneuf-du-Pape, Pouilly-Fuissé, and the shifts), type (org/common/proper changes above),
+    flags (tm on the 23 entries of group A), root (51 entries now point at their accented root), links/linkCount/clash (links moved from the
+    aliases to the roots; groups follow), familiarity (merged roots take the lower fam), shown (Süleymaniye), plus the shifted positions in every
+    column; nameWordLinks, nameThemeLinks and shownUK are renumbered by the shifted link positions.

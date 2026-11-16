@@ -14,7 +14,7 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: baseline audit, bug batches, case lint in Checks, proper-word pass (v371), style rule (v374), B12/B19, B22, B14/B15/B18/B20/B23/B24, D1-D12, E1-E4 (incremental indexes), I1 (break points, English libraries only), U1/U4/U5 (U2/U3 partly), T1/T7/T15/T18/T23. Library is now v382 (batches 375-382, scripts tools/gen/batch375-382.mjs; the five single-word capital rules are in DESIGN-entries.md). The game contact is the local session `_WS_` (58bb35); it has the v375-v380 notices; the v381+v382 notice is HELD at Simon's request: send when he says. The game had v374 pinned; nothing newer is pinned (it pins only when Simon asks).
+Done: baseline audit, bug batches, case lint in Checks, proper-word pass (v371), style rule (v374), B12/B19, B22, B14/B15/B18/B20/B23/B24, D1-D12, E1-E4 (incremental indexes), I1 (break points, English libraries only), U1/U4/U5 (U2/U3 partly), T1/T7/T15/T18/T23. Library is now v383 (batches 375-383, scripts tools/gen/batch375-383.mjs; the five single-word capital rules are in DESIGN-entries.md). The game contact is the local session `_WS_` (58bb35); it has the v375-v380 notices; the v381-v383 notice is HELD at Simon's request: send when he says. The game had v374 pinned; nothing newer is pinned (it pins only when Simon asks).
 
 In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, what to archive in `tools/gen` (G1, G2); whether `--strict` should fail before writing the output; bump export format version 3 (needs `_WS_`); confirm the alias-promotion rule (DESIGN.md section 3); `_WS_` to check the pinning text in DESIGN.md 8.6; T24 decisions per group.
 
@@ -32,7 +32,7 @@ In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, what to archive in
 
 | # | Task (ISSUES.md ids) | Difficulty | Model |
 |---|---|---|---|
-| 1 | T24: other trademarks used as words (20 capital brands in "brand names used as words", ~30 lowercase trademarks without tm, jeep split, Lycra/Kevlar/Gore-Tex/Tyvek typed common), lowercase place-named wines vs rule 3, 61 accent-only root pairs; Simon decides per group | judgement | Opus |
+| 1 | T25: Māori macron pairs, duplicates needing a delete (vicuna, agogo, maitre d', Vuelta a España, dragées), type/region calls (Ancien Régime, droëwors, Pokémon, rakı, döner), doubtful tm (aspirin, cellophane, laundromat), Burgundy; see ISSUES.md T25 | judgement | Opus |
 | 2 | E6 theme table render cost; `--strict` writes before failing; export format version; I16 browser vs CLI export differences | standard | Sonnet |
 
 ## 5. Subagents
