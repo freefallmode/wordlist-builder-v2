@@ -7,7 +7,7 @@ import { newProject, addEntry, reindex, themeStats, themeRoots, difficultyBand, 
 import { sig } from '../js/dom.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
-import { buildExport } from '../js/export.js';
+import { buildExport, capLines, reportLists } from '../js/export.js';
 import { parseFreq, setFreq, zipf, loadFreq, freqLoaded } from '../js/freq.js';
 import { setBreaks, loadBreaks, breaksLoaded } from '../js/breaks.js';
 
@@ -578,4 +578,13 @@ test('E7: sig is the same for the same h() arguments whatever the handlers, and 
   for (const d of [{ on: false }, { text: 'puns' }, { gloss: 'joke' }, { pos: 'v' }, { title: 'u' }]) assert.notEqual(row({ ...a, ...d }), row(a), JSON.stringify(d));
   assert.notEqual(sig('td', 'ab'), sig('td', 'a', 'b')); assert.notEqual(sig('td', sig('b', 'x')), sig('td', 'x')); assert.notEqual(sig('td.a'), sig('td.b'));
   assert.equal(sig('td', 'x'), sig('td', null, 'x', null, false)); assert.equal(sig('td', ['x', ['y']]), sig('td', {}, 'x', 'y'));
+});
+
+test('reportLists: names of dropped themes and same-text drops, capped, empty ones left out', () => {
+  assert.deepEqual(capLines(['a', 'b', 'c'], 2), ['a', 'b', '... and 1 more']);
+  assert.deepEqual(capLines(['a', 'b'], 2), ['a', 'b']);
+  const ls = reportLists({ droppedThin: ['Fruits'], sameText: [] }, 4);
+  assert.equal(ls.length, 1); assert.equal(ls[0].title, 'Dropped themes (1)'); assert.deepEqual(ls[0].lines, ['Fruits']); assert.match(ls[0].why, /fewer than 4/);
+  assert.equal(reportLists({ droppedThin: [], sameText: [] }, 4).length, 0);
+  assert.equal(reportLists({ droppedThin: [], sameText: ['x in T (kept a, left out b)'] }, 4, 5)[0].title, 'Same-text drops (1)');
 });

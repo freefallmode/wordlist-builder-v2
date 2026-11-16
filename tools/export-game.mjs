@@ -6,7 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseProject } from '../js/store.js';
 import { reindex } from '../js/model.js';
-import { buildExport, PRESETS, exportName, lintLine } from '../js/export.js';
+import { buildExport, PRESETS, exportName, lintLine, reportLists } from '../js/export.js';
 import { parseFreq, setFreq } from '../js/freq.js';
 import { caseLint } from '../js/caselint.js';
 import { parseBreaks, setBreaks } from '../js/breaks.js';
@@ -22,7 +22,7 @@ if (fs.existsSync(brk)) setBreaks(parseBreaks(fs.readFileSync(brk, 'utf8')));
 else console.warn(`Warning: ${fileURLToPath(brk)} not found; the export has no break points.`);
 const { file, report } = buildExport(P, { ...PRESETS[preset], zipf: true });
 const c = caseLint(P), text = JSON.stringify(file);   // every kind counts
-const show = () => { console.log(`${out}: ${(Buffer.byteLength(text) / 1e6).toFixed(1)} MB, library v${P.lib.version}, ${report.themesOut} themes, ${report.entriesOut} entries`); for (const n of report.notes) console.log(' ', n); console.log('  ' + lintLine(c.length)); };
+const show = () => { console.log(`${out}: ${(Buffer.byteLength(text) / 1e6).toFixed(1)} MB, library v${P.lib.version}, ${report.themesOut} themes, ${report.entriesOut} entries`); for (const n of report.notes) console.log(' ', n); for (const l of reportLists(report, PRESETS[preset].minWords ?? 4, 20)) { console.log('  ' + l.title + ' (' + l.why + ')'); for (const x of l.lines) console.log('    ' + x); } console.log('  ' + lintLine(c.length)); };
 if (flags.includes('--strict') && c.length) { show(); console.error('--strict: case lint found issues; nothing written.'); process.exit(1); }
 fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, text);

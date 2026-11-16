@@ -8,7 +8,7 @@ import { zipf, freqLoaded } from './freq.js';
 import { loadBreaks } from './breaks.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { caseLint } from './caselint.js';
-import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, exportName, lintLine, THEME_KINDS } from './export.js';
+import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, exportName, lintLine, reportLists, THEME_KINDS } from './export.js';
 import { download } from './store.js';
 import { MODELS, getKey, setKey, getModel, setModel, generateWords } from './ai.js';
 
@@ -419,6 +419,7 @@ export async function showExport() {
       h('p', {}, `Size ${fmtBytes(s.raw)}${s.gz ? ' · gzipped ' + fmtBytes(s.gz) : ''}`),
       brkErr && h('p.hint', `Break table did not load (${brkErr}): this file has no break points, so the game will not hyphenate long words.`),
       r.droppedThin.length > 0 && h('p.hint', `${r.droppedThin.length} themes left out for having fewer than ${o.minWords} words after filtering.`),
+      ...reportLists(r, o.minWords).map(l => h('details', {}, h('summary', {}, l.title), h('p.hint', {}, l.why), h('ul.hint', {}, l.lines.map(x => h('li', {}, x))))),
       ...r.notes.map(n => h('p.hint', n)), h('p.hint', lintLine(caseLint(P).length))].filter(Boolean));
     return text;
   };

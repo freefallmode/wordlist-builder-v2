@@ -78,7 +78,7 @@ export function buildExport(P, opt0 = {}) {
   const out = new Set(); report.sameText = [];
   for (const [k, xs] of slot) if (xs.length > 1) {
     xs.sort((a, b) => a.typicality - b.typicality || a.familiarity - b.familiarity || a.id - b.id);
-    report.sameText.push(`${k} (kept ${ix.entry.get(xs[0].id).text}, left out ${xs.slice(1).map(x => ix.entry.get(x.id).text).join(', ')})`);
+    report.sameText.push(`${k.slice(k.indexOf(': ') + 2)} in ${ix.theme.get(xs[0].tid).name} (kept ${ix.entry.get(xs[0].id).text}, left out ${xs.slice(1).map(x => ix.entry.get(x.id).text).join(', ')})`);
     for (const x of xs.slice(1)) out.add(x.tid + '|' + x.id);
   }
   if (out.size) {
@@ -243,3 +243,9 @@ export async function sizeOf(text) {
   }
   return { raw, gz };
 }
+
+// Lists from a report for the dialog and the command line: [{ title, why, lines }] for the dropped themes (names) and the same-text drops, only those with entries, each cut to `cap` lines.
+export const capLines = (xs, cap = 200) => xs.length > cap ? [...xs.slice(0, cap), `... and ${xs.length - cap} more`] : xs.slice();
+export const reportLists = (report, minWords, cap = 200) => [
+  { title: `Dropped themes (${report.droppedThin.length})`, lines: capLines(report.droppedThin, cap), why: `fewer than ${minWords} words after filtering` },
+  { title: `Same-text drops (${report.sameText.length})`, lines: capLines(report.sameText, cap), why: 'two words read the same in one theme; the less popular is left out' }].filter(l => l.lines.length);
