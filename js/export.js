@@ -230,6 +230,10 @@ export function buildExport(P, opt0 = {}) {
   return { file, report };
 }
 
+// Shared by the Export window and tools/export-game.mjs: the file name (the preset, plus the library version when ver is true) and the one-line case lint summary.
+export const exportName = (P, preset, ver) => `wordlist-game-${String(preset).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'export'}${ver ? '-v' + P.lib.version : ''}.json`;
+export const lintLine = n => `case lint: ${n} issue${n === 1 ? '' : 's'} (capital or sense mismatches; see js/caselint.js; Checks and tools/gen/lint-show.mjs list them)`;
+
 export async function sizeOf(text) {
   const raw = new Blob([text]).size;
   let gz = null;

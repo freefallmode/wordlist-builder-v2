@@ -537,3 +537,20 @@ test('B24: an alias made in the entry dialog (entryDefaults, id given at save, t
   sameAsFull(P, 'dialog alias');
   assert.deepEqual(P.ix.aliases.get(root.id), [a]); assert.ok(P.ix.byTheme.get('fruits').includes(a));
 });
+
+test('export-game --strict exits 1 before writing; without it (or with a clean library) the file is written', async () => {
+  const { mkdtempSync, mkdirSync, cpSync, writeFileSync, existsSync, rmSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os'); const { join } = await import('node:path'); const { spawnSync } = await import('node:child_process');
+  const d = mkdtempSync(join(tmpdir(), 'wb-exp-')), out = join(d, 'o', 'x.json');
+  try {
+    cpSync(new URL('../js', import.meta.url), join(d, 'js'), { recursive: true }); mkdirSync(join(d, 'tools')); mkdirSync(join(d, 'data'));
+    cpSync(new URL('../tools/export-game.mjs', import.meta.url), join(d, 'tools', 'export-game.mjs')); writeFileSync(join(d, 'data', 'freq-en.txt'), '77 the\n');
+    const P = project(); addEntry(P, 'zembla onion', { fam: 3, typ: { fruits: 3 }, show: { fruits: 'Zembla' } }); reindex(P);
+    writeFileSync(join(d, 'data', 'wordlist-en.project.json'), serializeProject(P));
+    const run = (...a) => spawnSync(process.execPath, [join(d, 'tools', 'export-game.mjs'), 'full', out, ...a], { encoding: 'utf8' });
+    let r = run('--strict'); assert.equal(r.status, 1); assert.match(r.stdout, /case lint: 1 issue/); assert.ok(!existsSync(out), 'strict failure writes nothing');
+    r = run(); assert.equal(r.status, 0); assert.ok(existsSync(out)); rmSync(out);
+    P.entries[0].show = {}; writeFileSync(join(d, 'data', 'wordlist-en.project.json'), serializeProject(P));
+    r = run('--strict'); assert.equal(r.status, 0); assert.ok(existsSync(out));
+  } finally { rmSync(d, { recursive: true, force: true }); }
+});

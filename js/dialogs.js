@@ -7,7 +7,8 @@ import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICAL
 import { zipf, freqLoaded } from './freq.js';
 import { loadBreaks } from './breaks.js';
 import { validate, SEV_ORDER } from './validate.js';
-import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, THEME_KINDS } from './export.js';
+import { caseLint } from './caselint.js';
+import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, exportName, lintLine, THEME_KINDS } from './export.js';
 import { download } from './store.js';
 import { MODELS, getKey, setKey, getModel, setModel, generateWords } from './ai.js';
 
@@ -377,14 +378,14 @@ export function openPath(tid) {
 export async function showExport() {
   const P = A.P;
   const presets = { ...PRESETS, ...(P.settings.exportPresets || {}) };
-  let o = JSON.parse(JSON.stringify(DEFAULT_EXPORT));
+  let o = JSON.parse(JSON.stringify(DEFAULT_EXPORT)), presetName = 'full';
   const info = h('div.exportinfo', 'Press Preview to see the counts and size.');
   const stale = () => { info.textContent = 'Press Preview to update.'; };
   const num = (key, label, min, max) => field(label, h('input', { type: 'number', min, max, value: o[key], onchange: ev => { o[key] = +ev.target.value; stale(); } }));
   const tick = (label, key) => check(label, o[key], { onchange: ev => { o[key] = ev.target.checked; stale(); } });
   const inc = (label, key) => check(label, o[key] !== 'exclude', { onchange: ev => { o[key] = ev.target.checked ? 'include' : 'exclude'; stale(); } });   // flag filters: ticked = include, unticked = leave out
   const preset = select(Object.keys(presets), 'full', { onchange: ev => {
-    o = Object.assign(JSON.parse(JSON.stringify(DEFAULT_EXPORT)), JSON.parse(JSON.stringify(presets[ev.target.value])));
+    presetName = ev.target.value; o = Object.assign(JSON.parse(JSON.stringify(DEFAULT_EXPORT)), JSON.parse(JSON.stringify(presets[presetName])));
     form.replaceWith(form = build()); stale();
   } });
   const build = () => {
@@ -417,7 +418,8 @@ export async function showExport() {
     info.replaceChildren(...[h('p', {}, `${plural(r.entriesOut, 'entry')} of ${r.entriesIn.toLocaleString()} · ${plural(r.themesOut, 'theme')} of ${r.themesIn.toLocaleString()}`),
       h('p', {}, `Size ${fmtBytes(s.raw)}${s.gz ? ' · gzipped ' + fmtBytes(s.gz) : ''}`),
       brkErr && h('p.hint', `Break table did not load (${brkErr}): this file has no break points, so the game will not hyphenate long words.`),
-      r.droppedThin.length > 0 && h('p.hint', `${r.droppedThin.length} themes left out for having fewer than ${o.minWords} words after filtering.`)].filter(Boolean));
+      r.droppedThin.length > 0 && h('p.hint', `${r.droppedThin.length} themes left out for having fewer than ${o.minWords} words after filtering.`),
+      ...r.notes.map(n => h('p.hint', n)), h('p.hint', lintLine(caseLint(P).length))].filter(Boolean));
     return text;
   };
   const body = h('div', {}, field('Preset', preset), form, info);
@@ -427,7 +429,7 @@ export async function showExport() {
     { label: 'Preview', action: async () => { await run(); return false; } },
     { label: 'Download', primary: true, action: async () => {
       const text = await run();
-      download(`wordlist-${P.lang}-v${P.lib.version}.json`, text);
+      download(exportName(P, presetName, true), text);
     } },
   ], { wide: true });
 }
