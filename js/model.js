@@ -166,6 +166,17 @@ export function themeStats(P, tid) {
   }
   return { entries: list.length, roots: roots.size, bands, rootBands };
 }
+// Sorts list in place by key(e) (ascending, or descending with dir -1), each key worked out once: the same order as comparing key() at every step (both sorts are stable).
+// With a memo (an object kept between calls) the last call's order is reused when the list and every key are the same as then (an edit that changed nothing the sort looks at): the result is the same, without sorting again.
+export function sortByKey(list, key, dir = 1, memo = null) {
+  const ks = list.map(key);
+  if (memo && memo.dir === dir && memo.list?.length === list.length && memo.list.every((e, i) => e === list[i]) && memo.keys.every((k, i) => k === ks[i])) { memo.out.forEach((e, i) => { list[i] = e; }); return list; }
+  const pre = memo && [...list], d = list.map((e, i) => [ks[i], e]);
+  d.sort((a, b) => dir * (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
+  d.forEach((x, i) => { list[i] = x[1]; });
+  if (memo) Object.assign(memo, { dir, list: pre, keys: ks, out: [...list] });
+  return list;
+}
 // themeStats(P, tid).roots alone, about ten times faster: the tree counts every theme after each edit.
 export function themeRoots(P, tid) {
   const s = new Set();

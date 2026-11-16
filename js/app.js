@@ -1,8 +1,8 @@
 // App shell: loading, the theme tree, the theme view, file actions.
-import { h, $, select, dialog, toast, debounce, plural } from './dom.js';
+import { h, sig, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline, mergeOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeRoots, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, FAMILIARITY_HELP, themeDifficulty } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeRoots, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, sortByKey, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
@@ -311,66 +311,90 @@ function entryTable(t) {
   const shown = e => (!e.aliasOf && P.ix.entry.get(e.use?.[t.id])) || e;
   const own = e => e.typ[t.id] !== undefined;   // an alias linked in this theme on its own is a word of the theme like any other (public house in ___ house); otherwise it only sits under its root
   const locked = themeLocked(P, t);   // a locked theme never swaps in an alias it does not link itself, so such aliases are not listed under their root
-  const dm = e => themeLocked(P, t) ? e : dialectMember(P, e);   // a locked theme shows exactly the linked word, whatever the library's dialect
-  const label = e => ((!e.aliasOf || own(e)) && e.show?.[t.id]) ||(shown(e) !== e ? shown(e) : dm(e)).text;   // what the player sees for this word in this theme
+  const dm = e => locked ? e : dialectMember(P, e);   // a locked theme shows exactly the linked word, whatever the library's dialect
+  const label0 = e => ((!e.aliasOf || own(e)) && e.show?.[t.id]) ||(shown(e) !== e ? shown(e) : dm(e)).text;   // what the player sees for this word in this theme
+  const labs = new Map(), label = e => { let l = labs.get(e); if (l === undefined) labs.set(e, l = label0(e)); return l; };   // worked out once per render (sort key, readAs, row); handlers that run later use label0
   const f = A.filter.toLowerCase();
   const list = pool.filter(e => (A.showOff || e.enabled) && (!f || (e.text + ' ' + e.gloss).toLowerCase().includes(f) || (formsOf.get(e.id) || []).some(a => a.text.toLowerCase().includes(f))));
   const inList = new Set(list.map(e => e.id));
   const roots = list.filter(e => !e.aliasOf || !inList.has(e.aliasOf));
   const key = { text: e => label(e).toLowerCase(), fam: e => e.fam || 9, pos: e => e.pos, typ: e => typicality(P, e, t.id) || 9, diff: e => difficultyBand(P, e, t.id) || 9, status: e => e.status, type: e => e.type, flags: flagKey, syn: e => groupMates(t, e).toLowerCase() || '￿' }[A.sort] || (e => e.text.toLowerCase());
   const dir = A.sortDesc ? -1 : 1;
-  const kv = new Map(roots.map(e => [e, key(e)])), kf = e => kv.get(e);   // each key worked out once, not at every comparison
-  roots.sort((a, b) => dir * (kf(a) < kf(b) ? -1 : kf(a) > kf(b) ? 1 : 0));
+  sortByKey(roots, key, dir, sortMemo);   // the last order is reused when no key changed (most edits)
   let rows = [];
   const under = new Map(), openRows = A.expanded || (A.expanded = new Set());   // other names of a word (spellings, regional words ...) sit behind a button on its row
   const inRoot = new Map(); for (const x of list) if (x.aliasOf) { if (!inRoot.has(x.aliasOf)) inRoot.set(x.aliasOf, []); inRoot.get(x.aliasOf).push(x); }   // the aliases in the list by root, in list order (filtering the list once per root was quadratic)
-  for (const e of roots) { const as = (inRoot.get(e.id) || []).filter(x => x.aliasKind !== 'form' && !(locked && !own(x))); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dm(e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
-  const underRow = new Set([...under].filter(([id]) => openRows.has(id)).flatMap(([, as]) => as.map(a => a.id)));
+  for (const e of roots) { const as = !inRoot.has(e.id) ? NONE : inRoot.get(e.id).filter(x => x.aliasKind !== 'form' && !(locked && !own(x))); under.set(e.id, as); rows.push(e); if (openRows.has(e.id)) { const d = dm(e); rows.push(...(d !== e ? [{ asRoot: e }] : []), ...as.filter(a => a !== d)); } }   // the row already shows the dialect's word: list the root (if it is not the one shown) and the other names, never the one on the row
+  const underRow = new Set(); for (const id of openRows) for (const a of under.get(id) || []) underRow.add(a.id);
   const total = rows.length;
   if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
   const where = e => linkIds(P, e).filter(id => subIds.has(id)).map(id => `${P.ix.theme.get(id)?.name} ${difficultyBand(P, e, id) || ''}`.trim()).join(', ');
   const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: A.sort === k ? 'Click to reverse the order' : 'Click to sort by ' + label, onclick: () => { A.sortDesc = A.sort === k ? !A.sortDesc : false; A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? (A.sortDesc ? ' ▼' : ' ▲') : ' ⇅'));
-  const flagsOf = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
-  const readAs = new Map();   // the meaning label is left out when the theme already gives the meaning; it shows for words that read the same as another word of the table, and in the sub-theme view
-  for (const x of roots) { const k = label(x).toLowerCase(); readAs.set(k, (readAs.get(k) || 0) + 1); }
+  const flagsOf = (H, e) => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => H('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [H('span.badge.region', e.region.join('/'))] : []);
+  const readAs = new Map();   // the meaning label is left out when the theme already gives the meaning; it shows for words that read the same as another word of the table, and in the sub-theme view (which needs no count)
+  if (!sub) for (const x of roots) { const k = label(x).toLowerCase(); readAs.set(k, (readAs.get(k) || 0) + 1); }
   const needLabel = e => sub || readAs.get(label(e).toLowerCase()) > 1;
   livePool = pool;
-  const synCell = (t, e) => [...mateIds(t, e).map(id => h('span.chip', {}, groupName(t, id), h('a.x', { href: '#', title: 'Not a synonym', onclick: ev => { ev.preventDefault(); leaveGroup(t, id); } }, '✕'))),
-    h('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => livePool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label(x)]), id => joinSynonyms(t, e.id, id)) })];
+  // A row is written once for two builders (H, F): h and familiaritySel build it, sig and famSig give its signature, so a row whose signature, entries and control values are unchanged is not built again (rowFor).
+  const synCell = (H, t, e) => [...mateIds(t, e).map(id => H('span.chip', {}, groupName(t, id), H('a.x', { href: '#', title: 'Not a synonym', onclick: ev => { ev.preventDefault(); leaveGroup(t, id); } }, '✕'))),
+    H('input.synadd', { placeholder: '+', autocomplete: 'off', title: 'Type to find a word of this theme', ...lookup(() => livePool.filter(x => !x.aliasOf && x.id !== e.id && !mateIds(t, e).includes(x.id) && (x.enabled || A.showOff)).map(x => [x.id, label0(x)]), id => joinSynonyms(t, e.id, id)) })];
   // another name of a word (an alias, or the root when the row shows a dialect variant) sits under its row with its own part of speech, type, familiarity, flags and status
-  const subRow = (a, note) => h('tr.alias', { class: a.enabled ? '' : 'off' }, h('td.on', {}, h('div.onwrap', {}, h('span.expander.none'), h('input', { type: 'checkbox', checked: a.enabled, title: 'enabled', onchange: ev => { a.enabled = ev.target.checked; A.changed({ entries: [a] }); } }))),
-    h('td.word', { onclick: () => editEntry(a) }, a.show?.[t.id] || a.text, a.show?.[t.id] && h('span.root', {}, ' ← ', h('span.rootname', {}, a.text)), a.gloss && h('span.gloss', ` (${a.gloss})`), note && h('span.hint', ' ' + note)), h('td'), h('td.dim', a.pos), h('td.dim', a.type), h('td', {}, familiaritySel(a.fam, ev => { a.fam = +ev.target.value; A.changed({ entries: [a] }); })), h('td'), h('td'),
-    h('td', flagsOf(a)), h('td', h('span.dot.' + a.status, { title: a.status }, a.status === 'rev' ? '✓' : a.status === 'gen' ? 'g' : '·')));
-  return Object.assign(h('div.etable', {}, tools,
-    sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`),
-    h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('familiarity', 'fam'), sub ? h('th', { title: 'Themes below this one that hold the word, with the typicality in each' }, 'themes') : th('typicality', 'typ'), th('difficulty', 'diff'), th('flags', 'flags'), th('status', 'status')),
-      rows.length ? rows.map(e => { if (e.asRoot) return keyed(subRow(e.asRoot, '(root)'), 'R' + e.asRoot.id, [e.asRoot]); if (e.aliasOf && underRow.has(e.id)) return keyed(subRow(e, '(' + (e.aliasKind || 'unknown') + ' alias)'), 'U' + e.id, [e]); const s = shown(e), v = s !== e ? s : dm(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];   // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
-         return keyed(h('tr', { class: [e.aliasOf && !own(e) ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
-        h('td.on', {}, h('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? h('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : h('span.expander.none'), h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed({ entries: [e] }); } }))),
-        h('td.word', { onclick: () => editEntry(s !== e ? e : v) },
-          s !== e ? h('span.shownform', { title: 'Open this form', onclick: ev => { ev.stopPropagation(); editEntry(s); } }, label(e)) : label(e),
-          label(e) !== e.text && h('span.root', { title: 'Open the entry behind it' }, ' ← ', h('span.rootname', {}, e.text)), e.gloss && needLabel(e) && h('span.gloss', ` (${e.gloss})`),
-          forms.length > 0 && h('a.useform', { href: '#', title: 'Choose the form this theme shows', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); formMenu(ev.currentTarget, [[0, e.text], ...forms.map(a => [a.id, a.text])], s === e ? 0 : s.id, v => { if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed({ entries: [e] }); }); } }, '▾'), e.aliasKind && h('span.hint', ` (${e.aliasKind} alias${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''})`)),
-        h('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, e.aliasOf ? '' : synCell(t, e)),
-        h('td.dim', v.pos), h('td.dim', v.type), h('td', {}, familiaritySel(v.fam, ev => { v.fam = +ev.target.value; A.changed({ entries: [v] }); })),
-        sub ? h('td.dim', where(e)) : h('td', {}, familiaritySel(e.typ[t.id] || 0, ev => { e.typ[t.id] = +ev.target.value; A.changed({ entries: [e] }); }, true)),
-        h('td', {}, sub ? '' : h('span.diffcell.' + RECCLASS[difficultyBand(P, e, t.id)], { title: 'Difficulty: the harder of familiarity and typicality (worked out, not editable)' }, difficultyBand(P, e, t.id) || '–')),
-        h('td', flagsOf(v)), h('td', h('span.dot.' + v.status, { title: v.status }, v.status === 'rev' ? '✓' : v.status === 'gen' ? 'g' : '·'))), e.id, [e, s, v, ...forms, ...(e.aliasOf ? [] : mateIds(t, e))]); }) :
-        h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.')))), { _k: [P, t, sub] });
+  const subRow = (H, F, a, note) => H('tr.alias', { class: a.enabled ? '' : 'off' }, H('td.on', {}, H('div.onwrap', {}, H('span.expander.none'), H('input', { type: 'checkbox', checked: a.enabled, title: 'enabled', onchange: ev => { a.enabled = ev.target.checked; A.changed({ entries: [a] }); } }))),
+    H('td.word', { onclick: () => editEntry(a) }, a.show?.[t.id] || a.text, a.show?.[t.id] && H('span.root', {}, ' ← ', H('span.rootname', {}, a.text)), a.gloss && H('span.gloss', ` (${a.gloss})`), note && H('span.hint', ' ' + note)), H('td'), H('td.dim', a.pos), H('td.dim', a.type), H('td', {}, F(a.fam, ev => { a.fam = +ev.target.value; A.changed({ entries: [a] }); })), H('td'), H('td'),
+    H('td', flagsOf(H, a)), H('td', H('span.dot.' + a.status, { title: a.status }, a.status === 'rev' ? '✓' : a.status === 'gen' ? 'g' : '·')));
+  // v: the entry the row's columns describe (the form or dialect variant it shows, else the entry itself)
+  const mainRow = (H, F, e, s, v, forms) => H('tr', { class: [e.aliasOf && !own(e) ? 'alias' : '', e.enabled ? '' : 'off'].join(' ') },
+        H('td.on', {}, H('div.onwrap', {}, (under.get(e.id) || []).length > 0 ? H('a.expander', { href: '#', title: (openRows.has(e.id) ? 'Hide' : 'Show') + ' its ' + under.get(e.id).length + ' other name(s): spellings, regional words ...', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); openRows.has(e.id) ? openRows.delete(e.id) : openRows.add(e.id); render(); } }, openRows.has(e.id) ? '▾' : '▸') : H('span.expander.none'), H('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed({ entries: [e] }); } }))),
+        H('td.word', { onclick: () => editEntry(s !== e ? e : v) },
+          s !== e ? H('span.shownform', { title: 'Open this form', onclick: ev => { ev.stopPropagation(); editEntry(s); } }, label(e)) : label(e),
+          label(e) !== e.text && H('span.root', { title: 'Open the entry behind it' }, ' ← ', H('span.rootname', {}, e.text)), e.gloss && needLabel(e) && H('span.gloss', ` (${e.gloss})`),
+          forms.length > 0 && H('a.useform', { href: '#', title: 'Choose the form this theme shows', onclick: ev => { ev.preventDefault(); ev.stopPropagation(); formMenu(ev.currentTarget, [[0, e.text], ...forms.map(a => [a.id, a.text])], s === e ? 0 : s.id, v => { if (v) e.use = { ...e.use, [t.id]: v }; else { delete e.use[t.id]; if (!Object.keys(e.use).length) e.use = {}; } A.changed({ entries: [e] }); }); } }, '▾'), e.aliasKind && H('span.hint', ` (${e.aliasKind} alias${e.aliasOf && !inList.has(e.aliasOf) ? ' of ' + (P.ix.entry.get(e.aliasOf)?.text || '?') : ''})`)),
+        H('td.dim.syn', { title: 'Words of this theme that mean the same: only one of them appears in a level' }, e.aliasOf ? '' : synCell(H, t, e)),
+        H('td.dim', v.pos), H('td.dim', v.type), H('td', {}, F(v.fam, ev => { v.fam = +ev.target.value; A.changed({ entries: [v] }); })),
+        sub ? H('td.dim', where(e)) : H('td', {}, F(e.typ[t.id] || 0, ev => { e.typ[t.id] = +ev.target.value; A.changed({ entries: [e] }); }, true)),
+        H('td', {}, sub ? '' : H('span.diffcell.' + RECCLASS[difficultyBand(P, e, t.id)], { title: 'Difficulty: the harder of familiarity and typicality (worked out, not editable)' }, difficultyBand(P, e, t.id) || '–')),
+        H('td', flagsOf(H, v)), H('td', H('span.dot.' + v.status, { title: v.status }, v.status === 'rev' ? '✓' : v.status === 'gen' ? 'g' : '·')));
+  const K = [P, t, sub], rc = rowCache.k?.every((x, i) => x === K[i]) ? rowCache.rows : new Map(), nc = new Map();
+  const rowFor = (key, ids, make) => {   // the row built for the last render when it would come out the same, else a new one
+    const sg = make(sig, famSig), c = rc.get(key);
+    let tr = c && c._sig === sg && sameIds(c._ids, ids) && c._cs.every((x, i) => ctlv(x) === c._cv[i]) ? c : null;
+    if (!tr) { tr = keyed(make(h, familiaritySel), key, ids); tr._sig = sg; tr._cs = [...tr.querySelectorAll('select, input')]; tr._cv = tr._cs.map(ctlv); }
+    nc.set(key, tr); return tr;
+  };
+  const trs = rows.map(e => { if (e.asRoot) return rowFor('R' + e.asRoot.id, [e.asRoot], (H, F) => subRow(H, F, e.asRoot, '(root)')); if (e.aliasOf && underRow.has(e.id)) return rowFor('U' + e.id, [e], (H, F) => subRow(H, F, e, '(' + (e.aliasKind || 'unknown') + ' alias)'));
+    const s = shown(e), v = s !== e ? s : dm(e), forms = e.aliasOf ? [] : formsOf.get(e.id) || [];
+    return rowFor(e.id, [e, s, v, ...forms, ...(e.aliasOf ? [] : mateIds(t, e))], (H, F) => mainRow(H, F, e, s, v, forms)); });
+  rowCache = { k: K, rows: nc };
+  const tb = h('table', { class: sub ? 'sub' : '' }, h('tr', {}, h('th.on', ''), wordHead(th('word', 'text')), th('synonyms', 'syn'), th('pos', 'pos'), th('type', 'type'), th('familiarity', 'fam'), sub ? h('th', { title: 'Themes below this one that hold the word, with the typicality in each' }, 'themes') : th('typicality', 'typ'), th('difficulty', 'diff'), th('flags', 'flags'), th('status', 'status')));
+  const out = Object.assign(h('div.etable', {}, tools, sub && total > SUB_CAP && h('p.hint', `Showing the first ${SUB_CAP} of ${total} entries. Use the filter to narrow them.`), tb), { _k: K });
+  if (!trs.length) tb.append(h('tr', h('td', { colspan: 10, class: 'hint' }, 'No words yet. Use “Add words…” or “Generate with Claude…”.')));
+  else if (trs.some(r => r.isConnected)) out._rows = trs;   // rows kept from the table on screen stay where they are: patchTable puts the list in place (a fresh render appends it)
+  else tb.append(...trs);
+  return out;
 }
 // Re-rendering the same word table keeps every row that comes out the same (render, patchTable): the browser then lays out only the rows that changed, a few ms instead of 25-200.
 // A row is the same when its elements and control values match and its handlers refer to the same entries (_ids); handlers read the theme's words through livePool, so a kept row never holds an old list.
-let livePool = [];
+// A row is not even built again when its signature (sig: the row as h() would build it, handlers aside), entries and control values match the last render's (rowFor, rowCache).
+let livePool = [], rowCache = { k: null, rows: new Map() };
+const sortMemo = {}, NONE = Object.freeze([]);
+const famSig = (value, onchange, auto = false) => '\u0001rs' + (auto ? '+' : '-') + value + '\u0005';   // familiaritySel's signature: what it builds depends on these two only
 const keyed = (tr, key, ids) => Object.assign(tr, { _key: key, _ids: ids });
-const ctl = r => [...r.querySelectorAll('select, input')].map(c => c.value + (c.checked ? '+' : ''));
-const sameRow = (a, b) => a._ids?.length === b._ids?.length && (a._ids || []).every((x, i) => x === b._ids[i]) && a.isEqualNode(b) && ctl(a).join('\n') === ctl(b).join('\n');
+const ctlv = c => c.value + (c.checked ? '+' : '');
+const ctl = r => [...r.querySelectorAll('select, input')].map(ctlv);
+const sameIds = (a, b) => a?.length === b?.length && (a || []).every((x, i) => x === b[i]);
+const sameRow = (a, b) => sameIds(a._ids, b._ids) && a.isEqualNode(b) && ctl(a).join('\n') === ctl(b).join('\n');
 function patchTable(old, neu) {   // old: the .etable on screen, neu: the one just built for the same theme, library and view; old takes neu's content, keeping the rows that did not change
   const [ot, nt] = [old, neu].map(x => x.querySelector(':scope > table'));
   [...old.children].filter(c => c !== ot).forEach(c => c.remove());
   for (const c of [...neu.children]) if (c !== nt) old.insertBefore(c, ot);
   if (!ot.firstElementChild.isEqualNode(nt.firstElementChild)) ot.firstElementChild.replaceWith(nt.firstElementChild); else nt.firstElementChild.remove();
   const rows = [...ot.children].slice(1), olds = new Map(rows.map(r => [r._key, r]));
-  const want = [...nt.children].map(r => { const o = olds.get(r._key); if (o && sameRow(o, r)) { olds.delete(r._key); return o; } return r; }), keep = new Set(want);
+  const want = (neu._rows || [...nt.children]).map(r => {
+    if (r.parentNode === ot) { olds.delete(r._key); return r; }   // kept by rowFor
+    const o = olds.get(r._key); if (!o || !sameRow(o, r)) return r;
+    olds.delete(r._key); o._sig = r._sig; o._cv = r._cv; if (rowCache.rows.get(r._key) === r) rowCache.rows.set(r._key, o);   // built again but the same: the row on screen stays and stands for it next time
+    return o;
+  }), keep = new Set(want);
   rows.forEach(o => keep.has(o) || o.remove());
   let ref = ot.firstElementChild.nextElementSibling;
   for (const r of want) if (r === ref) ref = ref.nextElementSibling; else ot.insertBefore(r, ref);
@@ -434,7 +458,7 @@ function render(keepFocus = false) {
     [...main.childNodes].forEach(c => c !== old && c.remove());
     let after = false; for (const n of next) if (n === neu) after = true; else if (after) main.append(n); else main.insertBefore(n, old);
     patchTable(old, neu);
-  } else main.replaceChildren(...next);
+  } else { if (neu?._rows) neu.querySelector(':scope > table').append(...neu._rows); main.replaceChildren(...next); }
   main.scrollTop = top;
   if (focus) { const f = $('.filter'); f.focus(); f.setSelectionRange(pos, pos); }
   renderStatus();

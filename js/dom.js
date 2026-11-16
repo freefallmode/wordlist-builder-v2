@@ -25,6 +25,15 @@ export function h(sel, attrs, ...kids) {
   kids.forEach(add);
   return el;
 }
+// sig() takes h()'s arguments and returns a string, equal for two calls whenever h() would build the same elements, attributes and text (handlers aside): a cheap test of whether a table row needs building again.
+// Nested sig() results are elements, other strings text (data never holds the control characters used as markers).
+const kidSig = k => { let s = ''; for (const c of k) s += Array.isArray(c) ? kidSig(c) : c === false || c == null ? '' : typeof c === 'string' && c[0] === '\u0001' ? c : '\u0002' + c; return s; };
+export function sig(sel, attrs, ...kids) {
+  if (attrs != null && (typeof attrs !== 'object' || Array.isArray(attrs))) { kids.unshift(attrs); attrs = null; }
+  let s = '\u0001' + sel;
+  for (const k in attrs) { const v = attrs[k]; if (v !== false && v != null && typeof v !== 'function') s += '\u0003' + k + '=' + (typeof v === 'object' ? JSON.stringify(v) : v); }
+  return s + '\u0004' + kidSig(kids) + '\u0005';
+}
 export const $ = (s, r = document) => r.querySelector(s);
 
 export function select(values, current, attrs = {}) {

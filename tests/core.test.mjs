@@ -3,7 +3,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, themeRoots, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, themeRoots, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults, sortByKey, flagKey } from '../js/model.js';
+import { sig } from '../js/dom.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
 import { buildExport } from '../js/export.js';
@@ -555,4 +556,26 @@ test('export-game --strict exits 1 before writing; without it (or with a clean l
     P.entries[0].show = {}; writeFileSync(join(d, 'data', 'wordlist-en.project.json'), serializeProject(P));
     r = run('--strict'); assert.equal(r.status, 0); assert.ok(existsSync(out));
   } finally { rmSync(d, { recursive: true, force: true }); }
+});
+
+test('E7: sortByKey (each key worked out once) gives the order of the old sort that compared key() at every step, both directions, on the real library', () => {
+  const P = parseProject(readFileSync(new URL('../data/wordlist-en.project.json', import.meta.url), 'utf8'));
+  const old = (list, key, dir) => { const kv = new Map(list.map(e => [e, key(e)])), kf = e => kv.get(e); return [...list].sort((a, b) => dir * (kf(a) < kf(b) ? -1 : kf(a) > kf(b) ? 1 : 0)); };
+  const list = P.entries.slice(0, 9000);
+  for (const key of [e => e.text.toLowerCase(), e => e.fam || 9, e => e.pos, e => e.status, flagKey, e => (e.gloss || '').length % 3])
+    for (const dir of [1, -1]) assert.deepEqual(sortByKey([...list], key, dir).map(e => e.id), old(list, key, dir).map(e => e.id));
+  // with a memo: reused when nothing changed, sorted again when a key, the list or the direction changed; always the order of a sort from scratch
+  const memo = {}, fam = e => e.fam || 9, small = list.slice(0, 3000), same = (l, dir, why) => assert.deepEqual(sortByKey([...l], fam, dir, memo).map(e => e.id), old(l, fam, dir).map(e => e.id), why);
+  same(small, 1, 'first'); same(small, 1, 'unchanged'); const out = memo.out; same(small, 1, 'again'); assert.equal(memo.out, out, 'reused');
+  small[10].fam = (small[10].fam % 5) + 1; same(small, 1, 'a key changed'); assert.notEqual(memo.out, out);
+  same(small, -1, 'direction'); same(small.slice(1), -1, 'list shorter'); same([small[5], ...small.slice(0, 5), ...small.slice(6)], -1, 'list reordered');
+});
+
+test('E7: sig is the same for the same h() arguments whatever the handlers, and differs when an element, attribute or text differs', () => {
+  const row = (x, f) => sig('tr', { class: x.on ? '' : 'off', onclick: f }, sig('td.word', {}, x.text, x.gloss && sig('span.gloss', ` (${x.gloss})`)), sig('td', [x.pos, null, false]), sig('td', { title: x.title, checked: x.on }), sig('b', 3));
+  const a = { on: true, text: 'pun', gloss: '', pos: 'n', title: 't' };
+  assert.equal(row(a, () => 1), row({ ...a }, () => 2));
+  for (const d of [{ on: false }, { text: 'puns' }, { gloss: 'joke' }, { pos: 'v' }, { title: 'u' }]) assert.notEqual(row({ ...a, ...d }), row(a), JSON.stringify(d));
+  assert.notEqual(sig('td', 'ab'), sig('td', 'a', 'b')); assert.notEqual(sig('td', sig('b', 'x')), sig('td', 'x')); assert.notEqual(sig('td.a'), sig('td.b'));
+  assert.equal(sig('td', 'x'), sig('td', null, 'x', null, false)); assert.equal(sig('td', ['x', ['y']]), sig('td', {}, 'x', 'y'));
 });
