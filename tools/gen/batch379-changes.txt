@@ -1,0 +1,33 @@
+Library v379 (tools/gen/batch379.mjs, 2026-11-16 12:56): 24 entries changed (text, type; tm on 2).
+
+9300 "bergamasco" -> "Bergamasco"  type common -> proper  (dog breed, of Bergamo; kennel clubs capitalise)
+9362 "watusi" -> "Watusi"  type common -> proper  (cattle breed (Ankole-Watusi), after a people; Ankole 9363 is capital)
+9366 "chianina" -> "Chianina"  type common -> proper  (cattle breed, from Val di Chiana; capital in English breed use)
+17936 "taleggio" -> "Taleggio"  type common -> proper  (cheese, Val Taleggio; Oxford capital)
+63280 "danablu" -> "Danablu"  type common -> proper  (cheese, protected name (PGI, not a trademark))
+53107 "stichelton" -> "Stichelton"  type common -> proper  (cheese named by its dairy; brand cheeses stay proper (Brand types), tm not added)
+17950 "cotija" -> "Cotija"  type common -> proper  (cheese, after the Mexican town; capital in usage, M-W lowercase)
+19634 "sazerac" -> "Sazerac"  type common -> proper  (cocktail, after the cognac brand; M-W capital (trademark); tm not added (cocktail, not the brand))
+19641 "vesper" -> "Vesper"  type common -> proper  [cocktail]  (cocktail, after Vesper Lynd; capital in usage)
+24684 "panama" -> "Panama"  type common -> proper  [hat]  (hat; Oxford capital, M-W often capitalised; 35750 Panama [country], 62660 [waterway] differ by gloss)
+24673 "hessians" -> "Hessians"  type common -> proper  [boots]  (boots, after the soldiers; Oxford Hessian boot; 55149 Hessians [soldiers] differs by gloss)
+55410 "kolhapuri" -> "Kolhapuri"  type common -> proper  [sandals]  (sandals, from Kolhapur; capital in Indian usage)
+55369 "ankara" -> "Ankara"  type common -> proper  [fabric]  (fabric; capital in Nigerian and fashion usage; 35793 Ankara [city] differs by gloss)
+11850 "carlton" -> "Carlton"  type common -> proper  [dance]  (dance move, after the TV character Carlton Banks; 46388 Carlton [AFL club] differs by gloss)
+45428 "klondike" -> "Klondike"  type common -> proper  [solitaire]  (solitaire, after the region; Hoyle capital, M-W often capitalised; 31809 Klondike [region] differs by gloss)
+53236 "catalina" -> "Catalina"  type common -> proper  [dressing]  (dressing, after Santa Catalina Island; 56225 Catalina [name] differs by gloss)
+53211 "choron" -> "Choron"  type common -> proper  (sauce, after the chef; Mornay sauce and sauce Robert are capital in the same theme)
+17237 "galia" -> "Galia"  type common -> proper  (melon cultivar; Oxford Galia melon)
+17238 "charentais" -> "Charentais"  type common -> proper  (melon, of Charente; Oxford capital)
+17519 "jarrahdale" -> "Jarrahdale"  type common -> proper  (pumpkin, Western Australian town; Hubbard is capital in the same theme)
+19520 "nilgiri" -> "Nilgiri"  type common -> proper  (tea, Nilgiri Hills; Darjeeling and Assam are capital in the same theme)
+19726 "kölsch" -> "Kölsch"  type common -> proper  (beer of Cologne, protected name; Oxford capital)
+53780 "aeropress" -> "AeroPress"  type common -> proper  tm false -> true  (coffee device, trademark; a named product is proper with tm (Brand types))
+53781 "chemex" -> "Chemex"  type common -> proper  tm false -> true  (coffee device, trademark; a named product is proper with tm (Brand types))
+
+Left out (stay as they are):
+  Simon's doubtful cases on the medium list, not ruled on: 240 brie, 241 parmesan, 244 camembert, 17956 swiss [cheese], 261 chihuahua, 593 danish [pastry], 18160 florentine [cookie], 19611 manhattan, 19643 gibson, 16288 jacuzzi, 29559 bakelite.
+  11783 balboa [dance]: one entry serves the dance and the conquistador; the split is decided later (T15/T23).
+  Not part of this batch: the places typed common (limousin, dundee, rhine, samara, hokkaido), the erlang split, the T23 duplicates.
+Re-judged and kept (medium, for Simon to confirm if he wishes): Cotija (M-W lowercase), Panama and Klondike (M-W "often capitalized"), Ankara (fabric; no dictionary entry), Choron (no dictionary entry; follows Mornay, sauce Robert).
+tm: added to AeroPress and Chemex (Brand types: a named product is proper with tm; org would be the alternative). Not added to Sazerac (a cocktail named after a trademark) or Stichelton (brand cheeses left proper for Simon).
