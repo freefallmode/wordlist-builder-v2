@@ -1,0 +1,141 @@
+Library v390 (tools/gen/batch390.mjs, 2026-11-16 23:15): 196 changes.
+Checks: changed kinds none
+
+== A1 (36) ==
+7566 "Maori" -> "Māori"  was Maori (type proper, links languages:3,polynesian_voyaging:3,pacific_languages:1); new spelling alias 67421 "Maori"  (Te Aka headword "Māori" (noun: Māori, indigenous New Zealander; modifier: Māori))
+62326 "Cook Islands Maori" -> "Cook Islands Māori"  was Cook Islands Maori (type proper, links pacific_languages:5); new spelling alias 67422 "Cook Islands Maori"  (Te Aka prints Māori with the macron in every sense; Wiktionary English proper noun "Cook Islands Māori")
+21151 "Maui" -> "Māui"  was Maui (type proper, links polynesian_voyaging:3,maori_mythology:1,maori_culture:3,shapeshifters:3); new spelling alias 67423 "Maui" [demigod]  (Te Aka headwords "Māui-pōtiki", "Māui-tikitiki-a-Taranga" (personal name, the Polynesian character), "Te Ika-a-Māui"; 36611 Maui [island, Hawaii] is a different word and stays)
+22161 "Tane" -> "Tāne"  was Tane (type proper, links maori_mythology:2); new spelling alias 67424 "Tane" [god]  (Te Aka headword "Tāne Mahuta" (personal name, atua of the forest), "Tāne-whakapiripiri"; 27103 tāne [man] is a separate entry in Māori words)
+22171 "Tane Mahuta" -> "Tāne Mahuta"  was Tane Mahuta (type proper, links maori_mythology:2,maori_culture:4); new spelling alias 67425 "Tane Mahuta" [forest god]  (Te Aka headword "Tāne Mahuta")
+22168 "Papatuanuku" -> "Papatūānuku"  was Papatuanuku (type proper, links maori_mythology:1,maori_culture:4); new spelling alias 67426 "Papatuanuku"  (Te Aka headword "Papatūānuku" (personal name, Earth mother))
+22163 "Tawhirimatea" -> "Tāwhirimātea"  was Tawhirimatea (type proper, links maori_mythology:3); new spelling alias 67427 "Tawhirimatea"  (Te Aka headword "Tāwhirimātea" (personal name, atua of the wind))
+22164 "Tumatauenga" -> "Tūmatauenga"  was Tumatauenga (type proper, links maori_mythology:3); new spelling alias 67428 "Tumatauenga"  (Te Aka headword "Tūmatauenga" (personal name, atua of war))
+22169 "Hine-nui-te-po" -> "Hine-nui-te-pō"  was Hine-nui-te-po (type proper, links maori_mythology:3); new spelling alias 67429 "Hine-nui-te-po"  (Te Aka headword "Hine-nui-te-pō" (personal name))
+22183 "Tawhaki" -> "Tāwhaki"  was Tawhaki (type person, links maori_mythology:4); new spelling alias 67430 "Tawhaki"  (Te Aka names the hero Tāwhaki in "kanohi o Tāwhaki" and "Te Moana-tāpokopoko-a-Tāwhaki" (plain "tawhaki" is a different word, the Fiordland crested penguin))
+22181 "Te Ika-a-Maui" -> "Te Ika-a-Māui"  was Te Ika-a-Maui (type place, links maori_mythology:3); new spelling alias 67431 "Te Ika-a-Maui"  (Te Aka headword "Ika-a-Māui, Te" (location, North Island))
+22187 "Maui's fish hook" -> "Māui's fish hook"  was Maui's fish hook (type proper, links maori_mythology:2); new spelling alias 67432 "Maui's fish hook"  (the same Māui (Te Aka "Māui-pōtiki"); Te Aka "Matau-a-Māui, Te" (the fish hook of Māui, Hawke Bay))
+51215 "Maui dolphin" -> "Māui dolphin"  was Maui dolphin (type proper, links new_zealand_animals:3); new spelling alias 67433 "Maui dolphin"  (NZ Department of Conservation page title and text "Māui dolphin" (doc.govt.nz))
+35440 "powhiri" -> "pōwhiri"  was powhiri (type common, links maori_culture:3); new spelling alias 67434 "powhiri"  (Te Aka headword "pōwhiri" (to welcome))
+35444 "hapu" -> "hapū"  was hapu (type common, links maori_culture:4); new spelling alias 67435 "hapu"  (Te Aka headword "hapū" sense 3 (kinship group, subtribe))
+35445 "kaumatua" -> "kaumātua"  was kaumatua (type common, links maori_culture:5); new spelling alias 67436 "kaumatua"  (Te Aka headword "kaumātua" sense 3 (elder))
+51202 "piwakawaka" -> "pīwakawaka"  was piwakawaka (type common, links new_zealand_animals:5); new spelling alias 67437 "piwakawaka"  (Te Aka headword "pīwakawaka" (fantail))
+51205 "kakariki" -> "kākāriki"  was kakariki (type common, links new_zealand_animals:5); new spelling alias 67438 "kakariki"  (Te Aka headword "kākāriki" sense 3 (yellow- and red-crowned parakeet))
+51210 "kokako" -> "kōkako"  was kokako (type common, links new_zealand_animals:4); new spelling alias 67439 "kokako"  (Te Aka headword "kōkako" (Callaeas cinerea))
+51214 "kereru" -> "kererū"  was kereru (type common, links new_zealand_animals:4); new spelling alias 67440 "kereru"  (Te Aka headword "kererū" (New Zealand pigeon))
+51221 "karearea" -> "kārearea"  was karearea (type common, links new_zealand_animals:5); new spelling alias 67441 "karearea"  (Te Aka headword "kārearea" (New Zealand falcon))
+8232 "takahe" -> "takahē"  was takahe (type common, links flightless_birds:4,new_zealand_animals:3); new spelling alias 67442 "takahe"  (Te Aka headword "takahē" (South Island takahē))
+51515 "koauau" -> "kōauau"  was koauau (type common, links pacific_instruments:3); new spelling alias 67443 "koauau"  (Te Aka headword "kōauau" (cross-blown flute))
+51516 "putorino" -> "pūtōrino"  was putorino (type common, links pacific_instruments:4); new spelling alias 67444 "putorino"  (Te Aka headword "pūtōrino" (large traditional flute))
+51517 "pukaea" -> "pūkāea"  was pukaea (type common, links pacific_instruments:4); new spelling alias 67445 "pukaea"  (Te Aka headword "pūkāea" (long wooden trumpet))
+51518 "putatara" -> "pūtātara"  was putatara (type common, links pacific_instruments:3); new spelling alias 67446 "putatara"  (Te Aka headword "pūtātara" (knobbed triton, "the shell of which is used for conch shell trumpets"): the instrument is named after the shell)
+51519 "purerehua" -> "pūrerehua"  was purerehua (type common, links pacific_instruments:4); new spelling alias 67447 "purerehua"  (Te Aka headword "pūrerehua" sense 2 (bullroarer, a traditional Māori musical instrument))
+52336 "kowhaiwhai" -> "kōwhaiwhai"  was kowhaiwhai (type common, links pacific_art_words:5); new spelling alias 67448 "kowhaiwhai"  (Te Aka headword "kōwhaiwhai" (painted scroll patterns))
+56564 "manuka" -> "mānuka"  was manuka (type common, links new_zealand_plants:1); new spelling alias 67449 "manuka"  (Te Aka headword "mānuka" (tea-tree, Leptospermum scoparium))
+56565 "kowhai" -> "kōwhai"  was kowhai (type common, links new_zealand_plants:2); new spelling alias 67450 "kowhai"  (Te Aka headword "kōwhai" sense 2 (Sophora trees))
+56566 "totara" -> "tōtara"  was totara (type common, links new_zealand_plants:4); new spelling alias 67451 "totara"  (Te Aka headword "tōtara" (Podocarpus totara))
+56573 "puriri" -> "pūriri"  was puriri (type common, links new_zealand_plants:5); new spelling alias 67452 "puriri"  (Te Aka headword "pūriri" (Vitex lucens))
+56576 "matai" -> "mataī"  was matai (type common, links new_zealand_plants:5); new spelling alias 67453 "matai"  (Te Aka headword "mataī" (black pine, Prumnopitys taxifolia; "mātai" is a different word))
+56577 "kanuka" -> "kānuka"  was kanuka (type common, links new_zealand_plants:4); new spelling alias 67454 "kanuka"  (Te Aka headword "kānuka" (white tea-tree))
+57108 "Whangarei" -> "Whangārei"  was Whangarei (type place, links new_zealand_cities:4); new spelling alias 67455 "Whangarei"  (Te Aka headword "Whangārei-terenga-paraoa" (location: Whangārei))
+27103 "tāne" gloss "" -> "man"  (Te Aka "tāne": husband, male, man; Checks needs a gloss now that 22161 reads Tāne [god])
+
+== A2 (10) ==
+19124 "döner kebab" in kebab_types: shown "doner" -> "döner"  (root döner 26966 (v386) and döner kebab (v387) carry it; Cambridge "döner kebab")
+36838 "Lake Taupo" -> "Lake Taupō"  was Lake Taupo (type place, links new_zealand_landmarks:3,famous_lakes:3, show {"famous_lakes":"Taupo"}); new spelling alias 67456 "Lake Taupo" (name allowed in famous_lakes)  (Te Aka "Taupō-nui-a-Tia: Lake Taupō"; root Taupō 57111; the alias may name the lake in "famous lakes", as the doner kebab alias in "kebab types")
+36838 "Lake Taupō" in famous_lakes: shown "Taupo" -> "Taupō"  (Te Aka "Lake Taupō"; root Taupō 57111)
+55513 "vicuna wool" in wool_fabrics: shown "vicuna" -> "vicuña"  (root vicuña 9719 (v385), vicuna its spelling alias)
+8244 "Galapagos penguin" in penguin_species: shown "Galapagos" -> "Galápagos"  (root Galápagos 57215 (v383), Galapagos 41020 its spelling alias)
+8244 "Galapagos penguin" in penguins: shown "Galapagos" -> "Galápagos"  (root Galápagos 57215 (v383), Galapagos 41020 its spelling alias)
+36587 "Galapagos Islands" in famous_islands: shown "Galapagos" -> "Galápagos"  (root Galápagos 57215 (v383), Galapagos 41020 its spelling alias)
+50810 "Galapagos sea lion" in seals_and_sea_lions: shown "Galapagos" -> "Galápagos"  (root Galápagos 57215 (v383), Galapagos 41020 its spelling alias)
+17188 "acai berry" in berries: shown "acai" -> "açaí"  (root açaí 53687 (v383), acai 16737 and açai 62997 its spelling aliases)
+17188 "acai berry" in blank_berry: shown "acai" -> "açaí"  (root açaí 53687 (v383), acai 16737 and açai 62997 its spelling aliases)
+
+== B (1) ==
+62416 "Draconian" proper -> "draconian" common in words_named_after_people  (rule 1: M-W headword "draconian", "variants often Draconian"; Oxford Learner's and Cambridge "draconian"; Random House "Draconian" with sense 2 "often lowercase", Collins "draconian": the dictionaries disagree / M-W "often capitalized": lowercase)
+
+== C (7) ==
+names_that_are_flowers (27): 1664 magnolia -> Magnolia; 1694 tulip -> Tulip; 1695 daisy -> Daisy; 1697 lily -> Lily; 1698 orchid -> Orchid; 1701 poppy -> Poppy; 1706 marigold -> Marigold; 1707 pansy -> Pansy; 1708 petunia -> Petunia; 1713 hyacinth -> Hyacinth; 1715 jasmine -> Jasmine; 1717 peony -> Peony; 1722 bluebell -> Bluebell; 1723 buttercup -> Buttercup; 1730 dahlia -> Dahlia; 1733 zinnia -> Zinnia; 1736 gardenia -> Gardenia; 1737 camellia -> Camellia; 1738 azalea -> Azalea; 1744 freesia -> Freesia; 1751 amaryllis -> Amaryllis; 1770 ivy -> Ivy; 1776 clover -> Clover; 1794 heather -> Heather; 29549 wisteria -> Wisteria; 29857 blossom -> Blossom; 29953 holly -> Holly
+names_that_are_gems (19): 2055 crystal -> Crystal; 21206 jewel -> Jewel; 28347 opal -> Opal; 29866 beryl -> Beryl; 29867 garnet -> Garnet; 29868 jasper -> Jasper; 29870 topaz -> Topaz; 29871 amethyst -> Amethyst; 29874 citrine -> Citrine; 29876 peridot -> Peridot; 29877 zircon -> Zircon; 29878 agate -> Agate; 31656 diamond -> Diamond; 31657 ruby -> Ruby; 31658 emerald -> Emerald; 31659 sapphire -> Sapphire; 31660 pearl -> Pearl; 31662 jade -> Jade; 31664 onyx -> Onyx
+names_that_are_months (3): 27146 avril -> Avril; 27160 julio -> Julio; 27948 may -> May
+names_that_are_places (1): 29903 aurora -> Aurora
+names_that_are_virtues (9): 3972 joy -> Joy; 4000 hope -> Hope; 4030 serenity -> Serenity; 4184 justice -> Justice; 4273 faith -> Faith; 6058 harmony -> Harmony; 21504 unity -> Unity; 28278 liberty -> Liberty; 28298 charity -> Charity
+names_that_are_colors (22): 6 indigo -> Indigo; 64 azure -> Azure; 65 cyan -> Cyan; 92 cherry -> Cherry; 718 ginger -> Ginger; 7670 sable -> Sable; 7684 magenta -> Magenta; 7685 fuchsia -> Fuchsia; 7692 crimson -> Crimson; 7706 sepia -> Sepia; 7712 sienna -> Sienna; 7716 tawny -> Tawny; 7717 auburn -> Auburn; 7720 cerise -> Cerise; 7723 russet -> Russet; 7725 carmine -> Carmine; 28022 sky -> Sky; 29937 sandy -> Sandy; 29938 raven -> Raven; 31657 ruby -> Ruby; 31660 pearl -> Pearl; 31662 jade -> Jade
+names_that_are_trees (32): 1630 maple -> Maple; 1633 willow -> Willow; 1634 birch -> Birch; 1635 elm -> Elm; 1637 cedar -> Cedar; 1645 sequoia -> Sequoia; 1646 cypress -> Cypress; 1647 poplar -> Poplar; 1648 aspen -> Aspen; 1649 quaking aspen -> Quaking aspen; 1650 sycamore -> Sycamore; 1651 hawthorn -> Hawthorn; 1653 larch -> Larch; 1655 juniper -> Juniper; 1656 hickory -> Hickory; 1657 acacia -> Acacia; 1660 teak -> Teak; 1664 magnolia -> Magnolia; 1675 alder -> Alder; 1678 basswood -> Basswood; 1679 rowan -> Rowan; 1681 dogwood -> Dogwood; 28134 elder -> Elder; 29942 rosewood -> Rosewood; 29944 hemlock -> Hemlock; 29953 holly -> Holly; 29969 cherry -> Cherry; 29985 mulberry -> Mulberry; 30071 laurel -> Laurel; 39535 pine -> Pine; 55699 cassia -> Cassia; 64792 lime -> Lime
+
+Same text twice in a theme: new none; gone none
+Case-lint links in the names themes to allow: 112 (cap-common 112, case-shown-alias 2)
+
+Method: pages read on 2026-11-16 in the built-in browser (read-only, no sign-in, no cookie choices, no downloads): Te Aka Māori Dictionary
+  (maoridictionary.co.nz/search?keywords=...; the headword and senses as printed), Department of Conservation (doc.govt.nz, Māui dolphin),
+  Wiktionary (Cook Islands Māori), Merriam-Webster, Oxford Learner's, Dictionary.com (Random House, Collins), Cambridge. No site blocked.
+  Earlier decisions searched (git log -S / --grep, DESIGN-entries.md, propword-exceptions.mjs): none by Simon on these words. Draconian and
+  Bermudas were capitalised by the proper-word pass (v371; propword/out-1.txt) and lowercased before by the lone-capitals pass (v359-360):
+  both agent passes, neither Simon's ruling.
+
+PART A1: Māori macron roots (rule 8: one major English dictionary, regional included (Te Aka), prints the macron; the plain form is a new spelling alias,
+  appended, with the root's type, pos, fam and name allowances; links, ratings and shown texts stay on the root; ids kept).
+  35 roots changed (list above), 35 aliases added (ids 67421-67455). 27103 tāne [Māori words] got the gloss "man" (Checks: Tāne [god] now reads the same).
+  The alias Maui of Māui carries the gloss "demigod" so it stays apart from 36611 Maui [island, Hawaii], which is unchanged (a different word).
+  NOT changed (unverified or not Māori): 51520 toere: no Te Aka entry ("We couldn't find that"); it is the Cook Islands / Tahitian slit drum (tōʻere), not a
+    Māori word, so the Māori rule does not reach it. 51526 puniu: Te Aka has pūniu only as ferns (prickly shield fern, crape fern), no instrument sense;
+    in "Pacific instruments" it is most likely the Hawaiian pūniu (coconut knee drum), whose spelling was not checked. Both for Simon.
+  Weaker evidence (applied, flagged): Cook Islands Māori (Te Aka has no headword; Te Aka prints Māori with the macron, Wiktionary English "Cook Islands
+    Māori"); Māui's fish hook (Te Aka "Te Matau-a-Māui", Māui-pōtiki); Māui dolphin (DOC, not a dictionary; NZ English reference usage); pūtātara
+    (Te Aka sense is the shell "used for conch shell trumpets"); Tāwhaki (Te Aka shows the name inside "kanohi o Tāwhaki", no own headword).
+  Theme names NOT changed (for Simon): maori_culture "Maori culture", maori_mythology "Maori mythology", maori_words "Maori words"
+    (they now hold Māori-macron members: Māui, Tāne Mahuta, pōwhiri, ...).
+
+PART A2: shown texts. döner (kebab types), Taupō (famous lakes; the entry is now Lake Taupō with Lake Taupo a spelling alias allowed to name the lake there),
+  vicuña (wool fabrics), Galápagos (penguin species, penguins, famous islands, seals and sea lions), açaí (berries, blank berry). Entry texts NOT changed
+  (for Simon): vicuna wool 55513, Galapagos penguin 8244, Galapagos Islands 36587, Galapagos sea lion 50810, acai berry 17188 keep the plain spelling
+  in their own text (no dictionary read for the compounds). "blank berry" is a compound theme: its shown text is the part to fill, now "açaí".
+  Left as they are (deliberate plain shows in locked foreign-language themes, for Simon): months_in_french 27145 février/fevrier, 27150 août/aout,
+  27154 décembre/decembre; colors_in_turkish 57770 kırmızı/kirmizi, 57773 yeşil/yesil, 57784 altın/altin, 57786 gümüş/gumus.
+  Not the same word (left): New Orleans 'Orleans', rose window etc. 'rose', family reunion 'reunion', crepe paper 'crepe'.
+
+PART B: T17.
+  draconian (62416, words named after people): LOWERCASE, common. M-W: headword "draconian", "variants often Draconian"; Oxford Learner's "draconian";
+    Cambridge "draconian"; Dictionary.com: Random House "Draconian" (sense 2 "often lowercase"), Collins "draconian". Rule 1 tie-break (M-W
+    "often capitalized", Oxford lowercase) gives lowercase; rule 5: no other entry of the family (Draco the lawgiver is a separate name). The v371
+    verdict "M-W often capitalized; Oxford lowercase: keep the capital per brief" followed the brief of that time, which rule 1 replaced (v382).
+    The game manager read it as proper: Simon may override.
+  Bermudas (62786, pants and shorts): stays CAPITAL proper. M-W lists "Bermudas" and "Bermuda shorts"; Oxford Learner's "Bermuda shorts (also Bermudas)";
+    Cambridge "Bermuda shorts (also Bermudas)"; Random House "Bermudas". All capitalise (rule 1); rule 5: Bermuda shorts 24323 is capital too.
+  Easter egg [game secret] 5829 (video games) and [hidden feature] 45658 (gaming words): stay CAPITAL proper. M-W sense 2 "or less commonly Easter Egg
+    or easter egg ... a hidden feature in a commercially released product"; the main form is capital; Oxford Learner's "Easter egg ... a hidden message or
+    feature in a video game"; Random House "Easter egg ... hidden in a software program". Not "often capitalized": capital (rule 1); rule 5: Easter egg [easter].
+  colonial architecture 67021 (shown "colonial" in architecture styles) and colonial 13931 (house styles): stay lowercase (style rule, v374).
+  So T17 ends with one change (draconian); the other three stand as they are.
+
+PART C: W2 (Simon, 2026-11-16: uniform capital in the "names that are ..." themes; the theme's sense is a name).
+  Seven themes found by name: names that are flowers, gems, months, places, virtues, colors, trees. Every member shown lowercase now has a capital shown
+  text there (a `show` on the entry; the entry keeps its own text and type for its other themes). Shown texts changed per theme: flowers 27, gems 19,
+  months 3, places 1, virtues 9, colors 22, trees 32 (113; pine tree shown "Pine" again). Members already capital (Rose, Hazel, Ash, ...) unchanged.
+  No member is only the name sense under a common gloss, so no entry was retyped. 112 links went into js/caselint-allow.js (cap-common: a capital shown on
+  a common entry; 2 also case-shown-alias), the aurora link was allowed already. Checks warnings unchanged from v389.
+  For Simon: 27948 "may" (gloss "might", a verb) is linked only in names that are months: the wrong sense for the name May (25268 May is the month);
+    1649 quaking aspen is shown "Quaking aspen" (it shares a group with aspen; not a name); peony 1717 has the UK spelling alias paeony, so UK players
+    see "Paeony" there (export shownUK); lime 64792 has the UK alias lime tree; name entries exist for Daisy 67400, Lily 67401, Poppy 67402, Rowan 67404,
+    Ruby 67399 (girls'/unisex names): they could take the names-theme links of the common daisy, lily, poppy, rowan, ruby instead of a shown text.
+  Twins with a proper entry of the same spelling (allowed): aspen/Aspen [ski town], elm/Elm [road], sequoia/Sequoia [park], hawthorn/Hawthorn [AFL],
+    crystal, harmony, unity, opal, jasper, aurora, raven, rosewood, elder, indigo, may.
+
+Verification (2026-11-16): npm test 42/42 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (62143 -> 62179 entries, case lint 0,
+  same-text drops the same 10 as v389, no new one); style-case.mjs 0 changes and propword-exceptions.mjs 0 changes (case lint 0; no exception needed);
+  Checks over the library: 0 errors, warnings unchanged from v389 (theme-name 3, long 5, maybe-duplicate 1); rerunning batch390.mjs prints 0 changes.
+Family export (node tools/export-game.mjs --strict, exit 0) against v389: entries 60536 -> 60572; NO index shifts (36 spelling aliases appended at
+  indices 60536-60571, nothing deleted). By field: text 37 rows (35 macron roots, Lake Taupō, draconian; e.g. 7322 Maori -> Māori), type 1 row
+  (57974 draconian proper -> common), breaks 1 row (52936 Whangārei [4,6] -> [], the macron form is not in data/breaks-en.txt); every other per-entry
+  field unchanged in the common range, new rows appended (36 aliases with their roots' links, 180 link values); `shown` table re-ordered with new texts,
+  so the shown column of 6133 link values renumbers, of which 122 show a different text (113 W2 capitals, 9 diacritic shows); shownUK renumbered plus one
+  new pair (peony in names that are flowers: UK "Paeony"); themes, nameWordLinks (321), nameThemeLinks (2284) unchanged; lib.version 389 -> 390,
+  lib.modified, generated.
+
+Notice for _WS_ (v390, supersedes v389; nothing pinned, the game pins only when Simon asks): library v390 fixes the two gaps you reported. Māori words take
+  their macron forms (Te Aka): Māori, Cook Islands Māori, Māui [demigod] (the island Maui unchanged), Tāne, Tāne Mahuta, Papatūānuku, Tāwhirimātea,
+  Tūmatauenga, Hine-nui-te-pō, Tāwhaki, Te Ika-a-Māui, Māui's fish hook, Māui dolphin, pōwhiri, hapū, kaumātua, pīwakawaka, kākāriki, kōkako, kererū,
+  kārearea, takahē, kōauau, pūtōrino, pūkāea, pūtātara, pūrerehua, kōwhaiwhai, mānuka, kōwhai, tōtara, pūriri, mataī, kānuka, Whangārei, Lake Taupō;
+  each plain form is a new spelling alias. Shown texts keep the root's diacritics: döner (kebab types), Taupō, vicuña, Galápagos, açaí.
+  draconian is lowercase (words named after people); Bermudas and Easter egg stay capital. The seven "names that are ..." themes show every word with a
+  capital (Cedar, Elm, Pine, Ruby, Hope, ...). Index shifts: none; 36 aliases appended (60536 -> 60572 entries); the shown table is renumbered.
