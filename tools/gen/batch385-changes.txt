@@ -1,0 +1,195 @@
+Library v385 (tools/gen/batch385.mjs, 2026-11-16 19:51): 33 changes (ISSUES.md T25 closed; recheck wines settled from dictionary pages; Bordeaux kept). Supersedes v381 to v384 for the game.
+Checks: changed kinds none
+
+A. Māori words: macron root, plain spelling alias (T25 item 1) (9):
+27112 before: text="kākāpō" type="common" pos="noun" fam=4 links={maori_words:3}
+8231 before: text="kakapo" type="common" pos="noun" fam=4 links={flightless_birds:3,parrots:3,nocturnal_animals:4,endangered_animals:4,new_zealand_animals:1,nature_at_night:5,birds_awake_after_dark:4}
+27112 after:  text="kākāpō" type="common" pos="noun" fam=4 links={maori_words:3,flightless_birds:3,parrots:3,nocturnal_animals:4,endangered_animals:4,new_zealand_animals:1,nature_at_night:5,birds_awake_after_dark:4}
+8231 after:  text="kakapo" type="common" pos="noun" fam=4 aliasOf=27112 aliasKind="spelling" links={}
+  links moved to 27112: flightless_birds, parrots, nocturnal_animals, endangered_animals, new_zealand_animals, nature_at_night, birds_awake_after_dark; groups: parrots
+  (kākāpō: Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+27117 before: text="kākā" type="common" pos="noun" fam=4 links={maori_words:4}
+8284 before: text="kaka" gloss="parrot" type="common" pos="noun" fam=5 region=["NZ"] links={parrots:4,new_zealand_animals:3}
+27117 after:  text="kākā" type="common" pos="noun" fam=4 links={maori_words:4,parrots:4,new_zealand_animals:3}
+8284 after:  text="kaka" gloss="parrot" type="common" pos="noun" fam=4 aliasOf=27117 aliasKind="spelling" links={} (alias region NZ dropped, as batch383)
+  links moved to 27117: parrots, new_zealand_animals
+  (kākā (kaka [parrot]; Kaká the footballer 44519 is another entry, unchanged): Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+27084 before: text="whānau" type="common" pos="noun" fam=4 links={maori_words:1}
+35433 before: text="whanau" type="common" pos="noun" fam=4 links={maori_culture:1}
+27084 after:  text="whānau" type="common" pos="noun" fam=4 links={maori_words:1,maori_culture:1}
+35433 after:  text="whanau" type="common" pos="noun" fam=4 aliasOf=27084 aliasKind="spelling" links={}
+  links moved to 27084: maori_culture
+  (whānau: Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+27089 before: text="pākehā" type="common" pos="noun" fam=4 links={maori_words:2}
+35438 before: text="pakeha" type="common" pos="noun" fam=4 links={maori_culture:3}
+27089 after:  text="pākehā" type="common" pos="noun" fam=4 links={maori_words:2,maori_culture:3}
+35438 after:  text="pakeha" type="common" pos="noun" fam=4 aliasOf=27089 aliasKind="spelling" links={}
+  links moved to 27089: maori_culture
+  (pākehā: Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+27111 before: text="pūkeko" type="common" pos="noun" fam=5 links={maori_words:4}
+51206 before: text="pukeko" type="common" pos="noun" fam=4 links={new_zealand_animals:3}
+27111 after:  text="pūkeko" type="common" pos="noun" fam=4 links={maori_words:4,new_zealand_animals:3}
+51206 after:  text="pukeko" type="common" pos="noun" fam=4 aliasOf=27111 aliasKind="spelling" links={}
+  links moved to 27111: new_zealand_animals
+  (pūkeko: Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+27113 before: text="tūī" type="common" pos="noun" fam=5 links={maori_words:3}
+51200 before: text="tui" gloss="bird" type="common" pos="noun" fam=4 links={new_zealand_animals:3}
+27113 after:  text="tūī" type="common" pos="noun" fam=4 links={maori_words:3,new_zealand_animals:3}
+51200 after:  text="tui" gloss="bird" type="common" pos="noun" fam=4 aliasOf=27113 aliasKind="spelling" links={}
+  links moved to 27113: new_zealand_animals
+  (tūī (TUI [airline] 59082 is another entry, unchanged): Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+27114 before: text="wētā" type="common" pos="noun" fam=4 links={maori_words:3}
+51199 before: text="weta" type="common" pos="noun" fam=4 links={new_zealand_animals:3}
+27114 after:  text="wētā" type="common" pos="noun" fam=4 links={maori_words:3,new_zealand_animals:3}
+51199 after:  text="weta" type="common" pos="noun" fam=4 aliasOf=27114 aliasKind="spelling" links={}
+  links moved to 27114: new_zealand_animals
+  (wētā: Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+27115 before: text="pōhutukawa" type="common" pos="noun" fam=4 links={maori_words:4}
+56563 before: text="pohutukawa" type="common" pos="noun" fam=4 links={new_zealand_plants:1}
+27115 after:  text="pōhutukawa" type="common" pos="noun" fam=4 links={maori_words:4,new_zealand_plants:1}
+56563 after:  text="pohutukawa" type="common" pos="noun" fam=4 aliasOf=27115 aliasKind="spelling" links={}
+  links moved to 27115: new_zealand_plants; groups: new_zealand_plants
+  (pōhutukawa: Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+57115 before: text="Kaikōura" type="place" pos="noun" fam=4 links={new_zealand_cities:4}
+37656 before: text="Kaikoura" type="place" pos="noun" fam=4 links={new_zealand_landmarks:4}
+57115 after:  text="Kaikōura" type="place" pos="noun" fam=4 links={new_zealand_cities:4,new_zealand_landmarks:4}
+37656 after:  text="Kaikoura" type="place" pos="noun" fam=4 aliasOf=57115 aliasKind="spelling" links={}
+  links moved to 57115: new_zealand_landmarks
+  (Kaikōura: one town and peninsula; official spelling since 2016: Māori word, same sense: the macron form is the root (Simon, v385: New Zealand English dictionaries and official usage write macrons; rule 8 as for the cheeses); English themes now show the macron form)
+
+B. duplicates (T25 item 2) (11):
+9719 before: text="vicuña" type="common" pos="noun" fam=4 links={south_american_animals:3,mountain_animals:4,inca_empire:4,national_animals:4}
+7939 before: text="vicuna" gloss="animal" type="common" pos="noun" fam=4 links={hoofed_mammals:4,long_necked_animals:5,words_from_south_american_languages:4,andes:2,andean_animals:2}
+9719 after:  text="vicuña" type="common" pos="noun" fam=4 links={south_american_animals:3,mountain_animals:4,inca_empire:4,national_animals:4,hoofed_mammals:4,long_necked_animals:5,words_from_south_american_languages:4,andes:2,andean_animals:2}
+7939 after:  text="vicuna" gloss="animal" type="common" pos="noun" fam=4 aliasOf=9719 aliasKind="spelling" links={}
+  links moved to 9719: hoofed_mammals, long_necked_animals, words_from_south_american_languages, andes, andean_animals
+  (vicuña: one animal; M-W headword vicuña ("or vicuna"); 9720 "vicuna" already is its spelling alias)
+7939 deleted: text="vicuna" gloss="animal" type="common" pos="noun" fam=4 aliasOf=9719 aliasKind="spelling" links={}  (repeats 9720 "vicuna", spelling alias of 9719 vicuña; its links moved to 9719 above)
+46480 before: text="agogô" type="common" pos="noun" fam=5 links={capoeira_words:3}
+10617 before: text="agogo" gloss="percussion" type="common" pos="noun" fam=5 links={percussion_instruments:5,brazilian_carnival_words:4,african_instruments:4}
+46480 after:  text="agogô" type="common" pos="noun" fam=5 links={capoeira_words:3,percussion_instruments:5,brazilian_carnival_words:4,african_instruments:4}
+10617 after:  text="agogo" gloss="percussion" type="common" pos="noun" fam=5 aliasOf=46480 aliasKind="spelling" links={}
+  links moved to 46480: percussion_instruments, brazilian_carnival_words, african_instruments
+  (agogô: one instrument; M-W, Random House, Collins and Oxford Learner's have no entry, so rule 8 takes the original-language (Brazilian Portuguese) spelling, the library's existing root; Wiktionary prints agogo (call for Simon); 46481 "agogo" already is its spelling alias)
+10617 deleted: text="agogo" gloss="percussion" type="common" pos="noun" fam=5 aliasOf=46480 aliasKind="spelling" links={}  (repeats 46481 "agogo", spelling alias of 46480 agogô; its links moved to 46480 above)
+20027 before: text="maître d'" type="common" pos="noun" fam=3 links={restaurant_words:2,french_phrases_in_english:4,restaurant:2,hotel_staff:5,dining_room_staff:2}
+33023 before: text="maitre d'" gloss="restaurant host" type="common" pos="noun" fam=4 links={service_jobs:4}
+20027 after:  text="maître d'" type="common" pos="noun" fam=3 links={restaurant_words:2,french_phrases_in_english:4,restaurant:2,hotel_staff:5,dining_room_staff:2,service_jobs:4}
+33023 after:  text="maitre d'" gloss="restaurant host" type="common" pos="noun" fam=3 aliasOf=20027 aliasKind="spelling" links={}
+  links moved to 20027: service_jobs
+  (maître d': one sense (head waiter, restaurant host); 20028 "maitre d'" already is its spelling alias)
+33023 deleted: text="maitre d'" gloss="restaurant host" type="common" pos="noun" fam=3 aliasOf=20027 aliasKind="spelling" links={}  (repeats 20028 "maitre d'", spelling alias of 20027 maître d'; its link moved to 20027 above)
+47964 re-parented: text="the Vuelta" type="proper" pos="noun" fam=4 aliasOf=47963 aliasKind="abbreviation" links={}  ->  aliasOf=44325 aliasKind=abbreviation  (the abbreviation follows the race to the accented root before its old root becomes an alias)
+47965 deleted: text="Vuelta a España" gloss="unaccented" type="proper" pos="noun" fam=4 aliasOf=47963 aliasKind="spelling" links={}  (an alias of 47963 whose text repeats root 44325 Vuelta a España (same race): a true duplicate)
+44325 before: text="Vuelta a España" gloss="race" type="proper" pos="noun" fam=4 links={famous_sporting_events:4,famous_races:4,bike_races:4}
+47963 before: text="Vuelta a Espana" type="proper" pos="noun" fam=4 links={cycling_races:1}
+44325 after:  text="Vuelta a España" gloss="race" type="proper" pos="noun" fam=4 links={famous_sporting_events:4,famous_races:4,bike_races:4,cycling_races:1}
+47963 after:  text="Vuelta a Espana" type="proper" pos="noun" fam=4 aliasOf=44325 aliasKind="spelling" links={}
+  links moved to 44325: cycling_races; groups: cycling_races
+  (Vuelta a España: one race; the official Spanish spelling, as Santiago Bernabéu (v383); the plain form becomes its spelling alias)
+59461 re-parented: text="cachous" type="common" pos="noun" fam=5 region=["UK"] aliasOf=67138 aliasKind="regional" links={}  ->  aliasOf=18265 aliasKind=regional  (UK regional name for the same silver balls; follows the word to the root)
+18265 before: text="dragées" type="common" pos="noun" fam=4 links={cake_decorations:4}
+67138 before: text="dragees" type="common" pos="noun" fam=5 links={cake_decorations:5}
+18265 after:  text="dragées" type="common" pos="noun" fam=4 links={cake_decorations:4}
+67138 after:  text="dragees" type="common" pos="noun" fam=4 aliasOf=18265 aliasKind="spelling" links={}
+  links moved to 18265: none; cake_decorations (both linked: root keeps its rating 4, the alias's 5 dropped); groups: cake_decorations
+  (dragées: one thing; M-W and Oxford Learner's headword dragée (accented); both were linked in "cake decorations" and one synonym group)
+
+C. type, region and spelling calls (T25 item 3) (8):
+7104 gloss "" -> "period"  themes historical_periods  (kept capital proper in "historical periods": a period name, as every sibling there (Belle Époque, Regency); the style rule keeps period names capital as separate entries; gloss added because two entries now share the text)
+55127 "ancien regime" -> "ancien régime"  gloss "" -> "system"  themes french_revolution  (the political system in "French Revolution" (siblings sans-culottes, old regime common): M-W headword "ancien régime", lowercase and accented (rule 1, rule 8; ISSUES.md T16 noted the missing accent); a different sense from the period, so not merged)
+17804 "droewors" region ZA -> none  (sibling convention: biltong, boerewors, bobotie in "cured meats" and "South African food" carry no region)
+17804 before: text="droewors" type="common" pos="noun" fam=5 links={cured_meats:5}
+53496 before: text="droëwors" type="common" pos="noun" fam=5 links={south_african_food:4}
+17804 after:  text="droewors" type="common" pos="noun" fam=5 links={cured_meats:5,south_african_food:4}
+53496 after:  text="droëwors" type="common" pos="noun" fam=5 aliasOf=17804 aliasKind="spelling" links={}
+  links moved to 17804: south_african_food
+  (droewors: one sausage; rule 8: Wiktionary prints droewors (South Africa) and has no droëwors; M-W, Random House, Collins have no entry; the plain form is the root (call for Simon: the Afrikaans spelling is droëwors))
+13105 "Pokemon" -> "Pokémon"  themes anime_and_manga_words  (rule 8: the official spelling, as 5787 Pokémon [video game]; type stays proper with tm by its siblings in "anime and manga words" (Naruto, One Piece, Sailor Moon: proper, tm))
+45434 "Pokemon" -> "Pokémon"  themes card_games  (rule 8: the official spelling; type stays proper with tm by its siblings in "card games" (Magic: The Gathering, Phase 10, Skip-Bo: proper, tm; only Uno is org))
+19298 before: text="raki" type="common" pos="noun" fam=4 links={turkish_food:3,spirits:4,words_from_turkish:2}
+26967 before: text="rakı" type="common" pos="noun" fam=5 links={turkish_everyday_words:3,national_spirits:2}
+19298 after:  text="raki" type="common" pos="noun" fam=4 links={turkish_food:3,spirits:4,words_from_turkish:2,turkish_everyday_words:3,national_spirits:2} show={"turkish_everyday_words":"rakı"}
+26967 after:  text="rakı" type="common" pos="noun" fam=4 aliasOf=19298 aliasKind="spelling" links={}
+  links moved to 19298: turkish_everyday_words, national_spirits
+  (raki: one drink; M-W, Random House, Collins and Oxford Learner's all print raki: the root (rule 8); "Turkish everyday words" (locked) shows rakı)
+29440 before: text="doner" type="common" pos="noun" fam=3 links={words_from_turkish:1}
+26966 before: text="döner" type="common" pos="noun" fam=3 links={turkish_everyday_words:1}
+29440 after:  text="doner" type="common" pos="noun" fam=3 links={words_from_turkish:1,turkish_everyday_words:1} show={"turkish_everyday_words":"döner"}
+26966 after:  text="döner" type="common" pos="noun" fam=3 aliasOf=29440 aliasKind="spelling" links={}
+  links moved to 29440: turkish_everyday_words
+  (doner: one dish; Oxford Learner's "doner kebab", Wiktionary doner (döner an alternative form): the root (rule 8); "Turkish everyday words" (locked) shows döner)
+
+D. place-named wines (rule 9, dictionaries read this session) and Sancerre (5):
+19673 "Lambrusco" -> "lambrusco"  type proper -> common  themes wines, red_wines, wines_named_for_places  (rule 9: the dictionaries disagree, so lowercase (Random House lambrusco; M-W, Collins, Oxford Learner's, Wiktionary Lambrusco))
+19682 "Amarone" -> "amarone"  type proper -> common  themes wines, red_wines, wines_named_for_places  (rule 9: the dictionaries disagree, so lowercase (M-W amarone; Wiktionary Amarone; not in Random House, Collins, Oxford Learner's))
+53822 "Soave" -> "soave"  type proper -> common  themes white_wines  (rule 9: the dictionaries disagree, so lowercase (Random House soave; M-W, Collins, Wiktionary Soave))
+53807 "Valpolicella" -> "valpolicella"  type proper -> common  themes red_wines, wines_named_for_places  (rule 9: the dictionaries disagree, so lowercase (M-W valpolicella, "often Valpolicella": the cheddar rule; Random House, Collins, Wiktionary Valpolicella))
+36456 before: text="Sancerre" type="place" pos="noun" fam=4 links={wine_regions:3,white_wines:3}
+36456 after:  text="Sancerre" gloss="wine region" type="place" pos="noun" fam=4 links={wine_regions:3}
+67417 new:    text="Sancerre" gloss="wine" type="proper" pos="noun" fam=4 links={white_wines:3}
+  (the wine is typed proper with a capital, as its siblings Chablis, Sauternes, Gavi in "white wines" (M-W, Random House, Collins, Wiktionary all print Sancerre); the region stays place in "wine regions", gloss as Bordeaux [wine region]; one entry served both senses)
+
+Method: Simon's rules 1 to 9 (DESIGN-entries.md "Single-word names"), sibling convention in each theme, and dictionary pages read on 2026-11-16 in the
+  built-in browser (read-only, no sign-in): Merriam-Webster (merriam-webster.com), Dictionary.com (Random House Unabridged, US, and Collins English
+  Dictionary, UK, on one page), Oxford Learner's (oxfordlearnersdictionaries.com), Wiktionary. collinsdictionary.com answered with a bot check (403):
+  not used. Merges and deletes follow batch381/383; deletes go through deleteEntry after the links moved (no link lost; the survivor holds every theme
+  link the deleted entry had).
+Git history: no Simon decision on any of these words (git log --grep on each word; DESIGN-entries.md and ISSUES.md mention them only as T16/T24/T25 items).
+
+T25 item 4 (doubtful tm), decided by rule 7, no change:
+  aspirin: no tm. M-W, Random House, Oxford Learner's print it lowercase with no trademark label (Random House: "originally a German trademark").
+  cellophane: no tm. M-W lowercase, no label; Random House "formerly trademark"; Collins prints Cellophane but gives no trademark label.
+  laundromat: no tm, stays lowercase. M-W "Laundromat ... or laundromat ... formerly a U.S. registered trademark"; Random House laundromat ("formerly a
+    trademark"); Collins Laundromat: dictionaries disagree on the capital (rule 6: lowercase), and a former trademark takes no tm (rule 7).
+  Uber and Hoover (also in item 4): settled by rule 6 at v384 (Hoover capital org tm, both dictionaries capitalise the noun; Uber has no generic use). No change.
+T25 item 5 (Burgundy): settled at v384; its dictionary basis is confirmed below.
+
+Place-named wines: the dictionary evidence (wine sense; the form each prints). Rule 9: capital only when the dictionaries capitalise the sense; a
+disagreement, or M-W "often capitalized" on a lowercase headword, is lowercase. Verified = two dictionaries agree, or a clear disagreement.
+  Lowercased (above): Lambrusco, Amarone, Soave, Valpolicella.
+  Kept capital (verified capital; the v384 "recheck" expectations for Chablis, Sauternes, Madeira were wrong):
+    Barolo: M-W Barolo; Random House Barolo; Collins Barolo "(sometimes not capital)". Oxford Learner's: no entry.
+    Brunello: M-W Brunello; Wiktionary Brunello. Random House, Collins, Oxford Learner's: no entry.
+    Orvieto: M-W Orvieto; Random House Orvieto; Collins Orvieto (wine sense of the town entry).
+    Frascati: Random House Frascati; Collins Frascati; Wiktionary Frascati (M-W has only the town).
+    Chablis: M-W Chablis; Random House Chablis; Collins Chablis "(sometimes not capitals)"; Oxford Learner's Chablis.
+    Sauternes: M-W headword sauternes, sense 1 printed "Sauternes" (the French wine; sense 2 sauterne is the American blend); Random House
+      Sauternes; Collins Sauternes "(sometimes not capital)".
+    Madeira: M-W Madeira; Collins Madeira (wine sense of the island entry); Oxford Learner's Madeira; Random House Madeira "(often lowercase)".
+    Sancerre: M-W Sancerre; Random House Sancerre; Collins Sancerre; Wiktionary Sancerre. Split from the region (above).
+  Kept capital, a call for Simon: Tokaji: no major dictionary has "Tokaji"; M-W, Random House and Collins print the same wine as "Tokay", capital;
+    Wiktionary has only "tokaji", lowercase, as an alternative form of tokay. Read as capital (the three major dictionaries), unchanged.
+  Unverified, unchanged: Gavi (no entry in M-W, Random House, Collins, Oxford Learner's or Wiktionary). Stays capital proper; for Simon.
+  Found outside the recheck list (rule 9 would lowercase them; NOT changed, for Simon): Rioja (M-W rioja "often Rioja", Collins rioja; Random House
+    and Oxford Learner's Rioja), Marsala (M-W marsala "often Marsala"; Random House, Oxford Learner's Marsala; Collins "(sometimes not capital)"),
+    Chianti (Collins chianti "(sometimes capital)"; M-W, Random House, Oxford Learner's Chianti), Beaujolais (Collins beaujolais "(sometimes
+    capital)"; M-W, Oxford Learner's Beaujolais).
+  Burgundy [wine] (v384, lowercase) confirmed: M-W burgundy "or Burgundy"; Oxford Learner's burgundy; Random House Burgundy with "(often lowercase)".
+Bordeaux 19663 [wine]: kept capital proper (Simon's precedent: the model for capital wine names). M-W Bordeaux ("or less commonly bordeaux"), Random
+  House Bordeaux, Collins Bordeaux and Oxford Learner's Bordeaux all capitalise the wine, so rule 9 agrees and no rule exception is needed; it is
+  recorded in DESIGN-entries.md as an explicit decision all the same. Lowercasing three red wines made "red wines" a theme of mostly common words, so
+  the case lint warned on Bordeaux there (a common bordeaux [color] exists): allowed in js/caselint-allow.js ('19663|red_wines').
+
+Calls Simon may override: Māori roots with macrons (general dictionaries M-W, Random House, Collins print kakapo, without macrons; English themes now
+  show kākāpō, wētā ...); agogô root (only Wiktionary has the word, as agogo); droewors root (only Wiktionary, plain; the Afrikaans form is droëwors);
+  raki and doner roots with the Turkish spellings shown only in "Turkish everyday words" (yoğurt / yogurt were left as two entries at v383; the same
+  merge could apply); Lambrusco and Soave lowercased though only Random House prints them lowercase (rule 9 counts any disagreement); Tokaji kept capital;
+  Ancien Régime [period] and ancien régime [system] kept as two senses.
+Locked themes now show the root's form: "words from South American languages" shows vicuña (was vicuna); "Māori words" unchanged (its words were the
+  macron roots already); "Turkish everyday words" shows rakı and döner through show texts.
+Index shifts: four entries are deleted (7939 vicuna, 10617 agogo, 33023 maitre d', 47965 Vuelta a España alias); entries after each in the export move
+  up. Sancerre [wine] is appended.
+Verification (2026-11-16): npm test 37/37 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (case lint 0; 62144 -> 62141 entries:
+  4 deleted, Sancerre [wine] added); style-case.mjs and propword-exceptions.mjs print 0 changes, case lint 0; Checks over the library: 0 errors,
+  warnings unchanged (theme-name 3, long 5, maybe-duplicate 1); the one new warning in the dry run (case-sense-proper, Bordeaux in "red wines") is
+  allowed in js/caselint-allow.js. Rerunning batch385.mjs prints 0 changes.
+Family export (data/export/wordlist-game-family.json, node tools/export-game.mjs --strict, exit 0) against v384:
+  entries 60540 -> 60536; themes 3240 (rows whose counts and bands change as links moved).
+  Index shifts: four entries deleted, at old indices 7687 vicuna, 10256 agogo, 30607 maitre d', 44464 Vuelta a España (alias). Entries after
+    7687 move up by 1, after 10256 by 2, after 30607 by 3, after 44464 by 4. Nothing appended (Sancerre [wine] and the lowercased wines are in
+    wine themes, which the family preset leaves out).
+  By field: text (Pokemon -> Pokémon twice, ancien regime -> ancien régime), flags (13 entries now spelling aliases), root (15: the new aliases,
+    the Vuelta and cachous re-parented), familiarity (kaka, pūkeko, tūī, dragees take the lower fam), regionsHi (kaka NZ, droewors ZA dropped),
+    clash, linkCount and links (links moved to the roots), shown, nameWordLinks, nameThemeLinks, shownUK (renumbered by the shifts), lib.version
+    384 -> 385, lib.modified, generated.
