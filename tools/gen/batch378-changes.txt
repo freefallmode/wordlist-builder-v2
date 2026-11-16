@@ -1,0 +1,25 @@
+Library v378 (tools/gen/batch378.mjs, 2026-11-16 11:55): 23 entries changed (type, and tm where the group carries it; text unchanged).
+
+53508 "Amarula"  type proper -> org  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+53867 "Cointreau"  type proper -> org  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+59882 "Licor 43"  type proper -> org  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+59883 "Tuaca"  type proper -> org  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+59884 "Fernet-Branca"  type proper -> org  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+53870 "Chartreuse"  type proper -> org, tm false -> true  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked); trademark of the Carthusian distillery)  [liqueur]
+59381 "Benedictine"  type proper -> org, tm false -> true  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))  [liqueur]
+59382 "Chambord"  type proper -> org, tm false -> true  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))  [liqueur]
+59877 "Becherovka"  type proper -> org, tm false -> true  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+59878 "Unicum"  type proper -> org, tm false -> true  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+59880 "Averna"  type proper -> org, tm false -> true  (liqueur brand; the liqueurs are org+tm (20 of 25 trademarked))
+18157 "Biscoff"  type proper -> org  (cookie brand; Biscoff spread, Nutella, Marmite are org+tm)  [cookie brand]
+59893 "Dunkaroos"  type proper -> org  (snack brand; Capri-Sun, Lunchables, Fruit Roll-Up in lunchbox are org+tm)
+59894 "Gushers"  type proper -> org  (snack brand; Capri-Sun, Lunchables, Fruit Roll-Up in lunchbox are org+tm)
+59895 "Uncrustables"  type proper -> org  (snack brand; Capri-Sun, Lunchables, Fruit Roll-Up in lunchbox are org+tm)
+59896 "Go-Gurt"  type proper -> org  (snack brand; Capri-Sun, Lunchables, Fruit Roll-Up in lunchbox are org+tm)
+59897 "Fruit by the Foot"  type proper -> org  (snack brand; Capri-Sun, Lunchables, Fruit Roll-Up in lunchbox are org+tm)
+40150 "Starburst"  type proper -> org  (candy brand; American candy is org+tm (38))
+59403 "Milky Way"  type proper -> org, tm false -> true  (candy bar brand; American candy is org+tm (38))  [candy bar]
+50099 "Sapporo"  type proper -> org  (beer brand; beers are org+tm (18))  [beer]
+19710 "Sapporo"  type org -> place, tm true -> false  (the city (gloss city); was typed org with tm, swapped with the beer)  [city]
+40172 "Casio"  type proper -> org  (company; Asian tech companies are org+tm (13))
+50050 "Mastodon"  type proper -> org, tm false -> true  (platform; social media platforms are org+tm (39))  [social network]
