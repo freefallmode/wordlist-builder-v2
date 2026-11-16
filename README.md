@@ -2,7 +2,7 @@
 
 A browser tool for building theme-based word libraries for a sorting game: levels show sets of four words from 8 to 12 themes, and the player sorts each word into its theme. Static files, no build step.
 
-Run it: `node serve.mjs` (or `npm start`) then open http://localhost:8100/ (opened as `file://` the modules and frequency list cannot load). Tests: `npm test` (`node --test tests/core.test.mjs`). The browser keeps its copy of the library per address, so anything that tries the app out (an agent, a test) uses another port, `node serve.mjs 8141` (launch configuration `wordlist-builder-v2-test`), and never touches the working copy at 8100.
+Run it: `node serve.mjs [port]` (or `npm start`; it listens on 127.0.0.1 only) then open http://localhost:8100/ (opened as `file://` the modules and frequency list cannot load). Tests: `npm test` (`node --test tests/core.test.mjs`). The browser keeps its copy of the library per address, so anything that tries the app out (an agent, a test) uses another port, `node serve.mjs 8141` (launch configuration `wordlist-builder-v2-test`), and never touches the working copy at 8100. To open the app from a phone, add `--lan` (or set `HOST=0.0.0.0`): the server then listens on every network interface, so everything in this folder (except dot folders) is readable by anyone on the local network; it prints a warning and the URLs to use.
 
 ## Files
 

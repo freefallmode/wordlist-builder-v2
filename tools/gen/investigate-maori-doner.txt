@@ -1,0 +1,75 @@
+Investigation (read-only), library v389, family export generated 2026-11-16 12:03Z. Nothing applied.
+
+== 1. "Maori" ==
+Cause: root 7566 "Maori" (proper, fam 3) was never given a macron form. It was not among the 9 pairs of batch385 (kakapo, kaka, whanau, pakeha, pukeko, tui, weta, pohutukawa, Kaikoura); no "Maori" pair was in the batch383 F / T25 'left' lists, and no entry "Māori" exists at all. Export entry 7322 "Maori" is a root with no shown text on any link, so the game shows the entry text in all three themes:
+  7566 Maori               -> languages (typ 3), polynesian_voyaging (3), pacific_languages (1)
+  62326 Cook Islands Maori -> pacific_languages (5)   (export entry 57914, no shown text)
+The theme "Maori words" (maori_words, lang+foreign) does not contain 7566, so the 'Maori' the game showed was in one of those three themes (the export cannot tell which; all three show the plain text).
+Other plain "Maori" in names (theme names, not entries): themes maori_culture "Maori culture", maori_mythology "Maori mythology", maori_words "Maori words". Entries with plain Maori/Maui in the text: Te Ika-a-Maui 22181, Maui 21151, Maui's fish hook 22187, Maui dolphin 51215. No `show` or `use` text contains Maori.
+Minimal fix: change 7566 text to "Māori" (Te Aka / NZ print the macron) and add "Maori" as a spelling alias; same for 62326 "Cook Islands Māori" (verify in Te Aka). Theme names are a separate call.
+
+== Plain Māori-origin entries that have a macron form ==
+(macron forms from memory of Te Aka / NZ usage: verify each in Te Aka before applying)
+id: plain -> macron form   [themes]
+7566 Maori -> Māori [languages, polynesian_voyaging, pacific_languages]
+62326 Cook Islands Maori -> Cook Islands Māori [pacific_languages]
+21151 Maui -> Māui [polynesian_voyaging, maori_mythology, maori_culture, shapeshifters]  (36611 Maui, the Hawaiian island, stays Maui)
+22161 Tane -> Tāne [maori_mythology]   (27103 tāne already has the macron)
+22171 Tane Mahuta -> Tāne Mahuta [maori_mythology, maori_culture]
+22168 Papatuanuku -> Papatūānuku [maori_mythology, maori_culture]
+22163 Tawhirimatea -> Tāwhirimātea [maori_mythology]
+22164 Tumatauenga -> Tūmatauenga [maori_mythology]
+22169 Hine-nui-te-po -> Hine-nui-te-pō [maori_mythology]
+22183 Tawhaki -> Tāwhaki [maori_mythology]
+22181 Te Ika-a-Maui -> Te Ika-a-Māui [maori_mythology]
+22187 Maui's fish hook -> Māui's fish hook [maori_mythology]
+51215 Maui dolphin -> Māui dolphin [new_zealand_animals]
+27059 wahine -> wāhine only as plural; singular has no macron (leave)
+35440 powhiri -> pōwhiri [maori_culture]
+35444 hapu -> hapū [maori_culture]
+35445 kaumatua -> kaumātua [maori_culture]
+51202 piwakawaka -> pīwakawaka [new_zealand_animals]
+51205 kakariki -> kākāriki [new_zealand_animals]
+51210 kokako -> kōkako [new_zealand_animals]
+51214 kereru -> kererū [new_zealand_animals]
+51221 karearea -> kārearea [new_zealand_animals]
+8232 takahe -> takahē [flightless_birds, new_zealand_animals]
+51515 koauau -> kōauau [pacific_instruments]
+51516 putorino -> pūtōrino [pacific_instruments]
+51517 pukaea -> pūkāea [pacific_instruments]
+51518 putatara -> pūtātara [pacific_instruments]
+51519 purerehua -> pūrerehua [pacific_instruments]
+51520 toere -> tōere [pacific_instruments]
+51526 puniu -> pūniu [pacific_instruments]
+52336 kowhaiwhai -> kōwhaiwhai [pacific_art_words]
+56564 manuka -> mānuka [new_zealand_plants]
+56565 kowhai -> kōwhai [new_zealand_plants]
+56566 totara -> tōtara [new_zealand_plants]
+56573 puriri -> pūriri [new_zealand_plants]
+56576 matai -> mataī [new_zealand_plants]
+56577 kanuka -> kānuka [new_zealand_plants]
+57108 Whangarei -> Whangārei [new_zealand_cities]   (Whanganui 57113, Taupō 57111, Kaikōura 57115 already right)
+Count: 38 entries (incl. Maori and Cook Islands Maori).
+Not counted: ponga 2554 (unsure), kumara 19393 (regional alias of sweet potato 402; kūmara 27110 is a separate root in maori_words), Aotearoa, Tongariro, Ngauruhoe, Rotorua, haka, kiwi, marae, kai, iwi, waka, hui, mana, tapu, moko, koru, poi (no macron in Te Aka).
+Existing macron Māori entries (fine): rongoā 15642, whānau 27084, pākehā 27089, kōrero 27094, haere rā 27098, tēnā koe 27099, tāne 27103, kūmara 27110, pūkeko 27111, kākāpō 27112, tūī 27113, wētā 27114, pōhutukawa 27115, kākā 27117, ngā mihi 27121, Taupō, Kaikōura.
+Batch385 results check: the 9 pairs are in place (macron root, plain alias with the root's links); no root without macron was left over from them.
+
+== 2. doner ==
+Records: 19124 "döner kebab" (root; typ street_food, turkish_food, kebab_types; show {"kebab_types":"doner"}); alias 67418 "doner kebab" (spelling of 19124); 26966 "döner" (root; words_from_turkish, turkish_everyday_words; no show); alias 29440 "doner" (spelling of 26966, no links of its own).
+Export: entry 18175 "döner kebab" has a link to kebab_types with shown text ["doner"] (the only stored shown 'doner'). Export aliases carry inherited links: 27152 "doner" (root = döner) in words_from_turkish and turkish_everyday_words; 60535 "doner kebab" (root = döner kebab) in street_food, turkish_food, kebab_types (no shown text).
+So the plain 'doner' in the game is (a) kebab_types: root "döner kebab" shown as `show` 'doner' (kept at v387); (b) the alias 'doner' (29440) only if the game substitutes a spelling alias in words_from_turkish / turkish_everyday_words (locked themes: no substitution expected).
+Inconsistent under rule 8: yes. The root döner carries the diacritic (v386 decision, headword), döner kebab carries it (Cambridge); the shortened form shown in kebab_types should keep it.
+Minimal fix: set 19124 show kebab_types to "döner". Clash check: 26966 döner is not in kebab_types, so no same-text drop there. Root/alias structure stays (two headwords, each with its alias).
+
+== Other `show` texts of the same word that drop a diacritic the root has ==
+19124 döner kebab           kebab_types                       show doner    -> döner
+36838 Lake Taupo            famous_lakes                      show Taupo    -> Taupō  (root 57111 Taupō is only in new_zealand_cities; the entry itself, "Lake Taupo", would also become "Lake Taupō")
+55513 vicuna wool           wool_fabrics                      show vicuna   -> vicuña (root 9719, alias vicuna 9720)
+8244  Galapagos penguin     penguin_species, penguins         show Galapagos-> Galápagos (root 57215, alias Galapagos 41020)
+36587 Galapagos Islands     famous_islands                    show Galapagos-> Galápagos
+50810 Galapagos sea lion    seals_and_sea_lions               show Galapagos-> Galápagos
+17188 acai berry            berries, blank_berry              show acai     -> açaí (root 53687, aliases acai 16737, açai 62997)
+Count: 7 entries, 8 theme links (vicuna wool, acai berry and Galapagos penguin are the Spanish/Portuguese cases, to be decided with the same rule 8).
+Not the same word (leave): New Orleans 2295 'Orleans' vs Orléans, rose window / yellow rose / white rose / rosewood / rose quartz 'rose' vs rosé 19647, family reunion 55700 'reunion' vs Réunion, crepe paper 25566 'crepe' vs crêpe 53271 (different sense).
+Locked foreign themes with deliberate plain shows (not a problem unless Simon decides otherwise): months_in_french 27145 février/fevrier, 27150 août/aout, 27154 décembre/decembre; colors_in_turkish 57770 kırmızı/kirmizi, 57773 yeşil/yesil, 57784 altın/altin, 57786 gümüş/gumus (7 shows).
+Reverse direction (shows with the diacritic, on purpose): 522 yogurt shown yoğurt, 19298 raki shown rakı in turkish_everyday_words.

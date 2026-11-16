@@ -2,6 +2,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { spawn } from 'node:child_process';
+import { connect } from 'node:net';
+import { networkInterfaces } from 'node:os';
 import { parseOutline, formatOutline } from '../js/outline.js';
 import { newProject, addEntry, reindex, themeStats, themeRoots, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults, sortByKey, flagKey } from '../js/model.js';
 import { sig } from '../js/dom.js';
@@ -587,4 +590,14 @@ test('reportLists: names of dropped themes and same-text drops, capped, empty on
   assert.equal(ls.length, 1); assert.equal(ls[0].title, 'Dropped themes (1)'); assert.deepEqual(ls[0].lines, ['Fruits']); assert.match(ls[0].why, /fewer than 4/);
   assert.equal(reportLists({ droppedThin: [], sameText: [] }, 4).length, 0);
   assert.equal(reportLists({ droppedThin: [], sameText: ['x in T (kept a, left out b)'] }, 4, 5)[0].title, 'Same-text drops (1)');
+});
+
+test('dev server listens on 127.0.0.1 only unless --lan', async () => {
+  const up = (extra, port) => new Promise((ok, no) => { const c = spawn(process.execPath, ['serve.mjs', String(port), ...extra], { cwd: new URL('..', import.meta.url), stdio: ['ignore', 'pipe', 'ignore'] }); c.stdout.once('data', () => ok(c)); c.once('error', no); setTimeout(() => no(new Error('server did not start')), 5000).unref(); });
+  const reach = (host, port) => new Promise(ok => { const s = connect(port, host); s.once('connect', () => { s.destroy(); ok(true); }); s.once('error', () => ok(false)); });
+  const lanIp = Object.values(networkInterfaces()).flat().find(i => i.family === 'IPv4' && !i.internal)?.address;
+  let c = await up([], 18141);
+  try { assert.equal(await reach('127.0.0.1', 18141), true); if (lanIp) assert.equal(await reach(lanIp, 18141), false); } finally { c.kill(); }
+  c = await up(['--lan'], 18142);
+  try { assert.equal(await reach('127.0.0.1', 18142), true); if (lanIp) assert.equal(await reach(lanIp, 18142), true); } finally { c.kill(); }
 });
