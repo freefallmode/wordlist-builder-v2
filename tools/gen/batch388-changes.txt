@@ -1,0 +1,92 @@
+Library v388 (tools/gen/batch388.mjs, 2026-11-16 20:58): 7 changes (rule 9: rioja, beaujolais, chianti, marsala lowercased, Rioja and Beaujolais regions split off; yoğurt a spelling alias of yogurt; hoover [verb] not done, see below).
+Checks: changed kinds none
+
+A. place-named wines lowercased under rule 9 (dictionaries read this session), Rioja and Beaujolais split from their regions (6):
+19665 before: text="Rioja" type="proper" pos="noun" fam=3 links={wines:3,wine_regions:1,red_wines:2,wines_named_for_places:2}
+19665 after:  text="Rioja" type="proper" pos="noun" fam=3 links={wines:3,red_wines:2,wines_named_for_places:2}
+67419 new:    text="Rioja" gloss="wine region" type="place" pos="noun" fam=3 links={wine_regions:1}
+  (the region keeps its capital as a place in "wine regions" (siblings Bordeaux, Sancerre [wine region]: place); one entry served both senses; the wine is lowercased below)
+19665 "Rioja" -> "rioja"  type proper -> common  gloss "" -> "wine"  themes wines, red_wines, wines_named_for_places  (rule 9: the dictionaries disagree, so lowercase (M-W rioja "variants often Rioja"; Collins rioja; Random House Rioja; Oxford Learner's Rioja))
+19670 before: text="Beaujolais" type="proper" pos="noun" fam=4 links={wines:4,wine_regions:3,red_wines:3,wines_named_for_places:3}
+19670 after:  text="Beaujolais" type="proper" pos="noun" fam=4 links={wines:4,red_wines:3,wines_named_for_places:3}
+67420 new:    text="Beaujolais" gloss="wine region" type="place" pos="noun" fam=4 links={wine_regions:3}
+  (the region keeps its capital as a place in "wine regions" (siblings Bordeaux, Sancerre [wine region]: place); one entry served both senses; the wine is lowercased below)
+19670 "Beaujolais" -> "beaujolais"  type proper -> common  gloss "" -> "wine"  themes wines, red_wines, wines_named_for_places  (rule 9: the dictionaries disagree, so lowercase (Collins beaujolais "(sometimes capital)"; M-W Beaujolais; Random House Beaujolais; Oxford Learner's Beaujolais))
+19662 "Chianti" -> "chianti"  type proper -> common  themes wines, red_wines, wines_named_for_places  (rule 9: the dictionaries disagree, so lowercase (Collins chianti "(sometimes capital)"; M-W Chianti; Random House Chianti; Oxford Learner's Chianti); Chianti [region] 36455 stays a capital place)
+19675 "Marsala" -> "marsala"  type proper -> common  themes wines  (rule 9: the dictionaries disagree, so lowercase (M-W marsala "variants often Marsala"; Random House Marsala; Collins Marsala "(sometimes not capital)"; Oxford Learner's Marsala); Marsala [town] 38125 stays a capital place)
+
+B. yoğurt merged into yogurt (amended rule 8) (1):
+522 before: text="yogurt" gloss="cultured dairy" type="common" pos="noun" fam=1 links={dairy_and_eggs:1,healthy_snacks:2,breakfast_foods:2,lunchbox:3,fermented_foods:1,in_the_fridge:1,words_from_turkish:1,sour_foods:3,white_things:3,creamy_foods:1,fermented_foods_and_drinks:3,things_you_eat_with_a_spoon:1}
+62335 before: text="yoğurt" type="common" pos="noun" fam=3 links={turkish_everyday_words:2}
+522 after:  text="yogurt" gloss="cultured dairy" type="common" pos="noun" fam=1 links={dairy_and_eggs:1,healthy_snacks:2,breakfast_foods:2,lunchbox:3,fermented_foods:1,in_the_fridge:1,words_from_turkish:1,sour_foods:3,white_things:3,creamy_foods:1,fermented_foods_and_drinks:3,things_you_eat_with_a_spoon:1,turkish_everyday_words:2} show={"turkish_everyday_words":"yoğurt"}
+62335 after:  text="yoğurt" type="common" pos="noun" fam=1 aliasOf=522 aliasKind="spelling" links={}
+  links moved to 522: turkish_everyday_words
+  (yogurt: one food; amended rule 8: no English dictionary prints yoğurt (M-W yogurt "or less commonly yoghurt", Oxford Learner's yogurt "British English also yoghurt", Cambridge yogurt, Random House yogurt "Or yoghurt", Collins yogurt; yoğurt appears only in the etymologies of M-W and Dictionary.com; Wordnik has no definitions for yoğurt), so the plain root stays, yoğurt becomes its spelling alias; "Turkish everyday words" (locked) shows yoğurt, as raki/rakı)
+
+Method: Simon's rules 1, 8 (amended v386) and 9 (DESIGN-entries.md "Single-word names"); dictionary pages read on 2026-11-16 in the built-in browser
+  (read-only, no sign-in, no cookie choices made): Merriam-Webster (merriam-webster.com), Oxford Learner's (oxfordlearnersdictionaries.com),
+  Dictionary.com (Random House Unabridged, US, and Collins English Dictionary, UK, on one page), Cambridge (dictionary.cambridge.org), Wordnik,
+  Wiktionary. Splits follow Sancerre (batch385); the merge follows raki (batch385).
+Git history: no Simon decision on rioja, marsala, chianti, beaujolais, yogurt/yoğurt or hoover (git log -i --grep on each; DESIGN-entries.md
+  names Hoover only in rules 6 and the v383 line: Hoover capital org tm, "hoover [verb] is a candidate for a later split").
+
+Rule 9 evidence per wine (the form each dictionary prints for the wine sense; read this session):
+  Rioja -> rioja: M-W headword rioja, "variants often Rioja"; Collins rioja; Random House Rioja; Oxford Learner's Rioja. Disagree: lowercase.
+  Marsala -> marsala: M-W headword marsala, "variants often Marsala" (the town is a separate geographical entry); Random House Marsala; Collins
+    Marsala "(sometimes not capital)"; Oxford Learner's Marsala. Disagree: lowercase.
+  Chianti -> chianti: Collins chianti "(sometimes capital)" (sense 2; sense 1 Chianti the mountains); M-W Chianti; Random House Chianti; Oxford
+    Learner's Chianti. Disagree: lowercase.
+  Beaujolais -> beaujolais: Collins beaujolais "(sometimes capital)"; M-W Beaujolais; Random House Beaujolais (region and wine); Oxford Learner's
+    Beaujolais. Disagree: lowercase.
+  These four match what v385 recorded; v385 left them for Simon, and "do all" (rule 9) settles them.
+Not changed:
+  Côtes du Rhône (53808, capital proper): unverified. Only M-W has it (côtes du rhône, lowercase, "often capitalized C&R"); Oxford Learner's,
+    Dictionary.com, Cambridge, Wiktionary and Wordnik have no entry. One dictionary read, so unchanged (rule 9 would make it lowercase if a second
+    dictionary disagreed or agreed with M-W; for Simon).
+  Liebfraumilch (53832, capital proper, "white wines"): M-W liebfraumilch (lowercase); Oxford Learner's, Random House and Collins Liebfraumilch.
+    The dictionaries disagree, so rule 1 would make it lowercase, but it is named after a convent (Random House: Liebfrauenstift, Worms), not a wine
+    place, so it is outside this rule 9 pass: unchanged, for Simon.
+  Gavi (53828): unverified in every dictionary (v385: no entry in M-W, Random House, Collins, Oxford Learner's or Wiktionary). Unchanged.
+  Not re-decided (as instructed): Bordeaux (19663, Simon's explicit exception), Barolo, Brunello, Orvieto, Frascati, Chablis, Sauternes, Madeira,
+    Sancerre capital; lambrusco, amarone, soave, valpolicella lowercase; Châteauneuf-du-Pape, Pouilly-Fuissé, Tokaji capital.
+  Rioja and Beaujolais were one entry for the wine and the region; the region is now its own place entry (Rioja / Beaujolais [wine region], appended)
+    in "wine regions", the wine keeps the old id. Chablis and Barolo (proper) are also linked in "wine regions" in the same way; not touched (their
+    capital is already decided, and the split would change no capital).
+Case lint: "wines" became a theme of mostly common words, so Checks warned on Bordeaux [wine] and Madeira [wine] there (a common bordeaux [color]
+  and madeira [cake] exist). Both capitals are decided, so js/caselint-allow.js allows '19663|wines' and '19674|wines'.
+
+yoğurt / yogurt (item 2): merged, plain root (above). Dictionaries: M-W yogurt "or less commonly yoghurt" (yoğurt only in the etymology "Turkish
+  yoğurt"); Oxford Learner's yogurt "(British English also yoghurt)"; Cambridge yogurt; Dictionary.com: Random House yogurt "Or yoghurt", Collins
+  yogurt (yoğurt only in the etymology); Wordnik: no definitions for yoğurt. No English dictionary prints yoğurt as a headword or variant, so by
+  amended rule 8 the root is yogurt (522, unchanged; yoghurt 523 stays its UK spelling alias) and yoğurt (62335) is a spelling alias; "Turkish
+  everyday words" (locked) shows yoğurt through `show`; "words from Turkish" shows yogurt as before (as raki). yoğurtlu kebab (59698) not touched.
+
+hoover [verb] (item 3): NOT DONE, stopped as instructed: the split is unclear. A lowercase verb already exists: 23868 "hoover" [to vacuum], verb,
+  common, fam 2, region UK, a regional alias of 23859 "vacuum" [to clean] (verb, linked in "cleaning verbs"). A new root hoover [to vacuum] would
+  repeat that alias's text and gloss (batch383's split refuses such a twin), and aliases carry no theme links of their own. The brand entry 4736
+  "Hoover" [vacuum cleaner] (org, tm, region UK/IE) is the noun, linked in "brand names used as words" (1) and seven appliance themes; its
+  "brand names used as words" link is the one that would move. Options for Simon: (a) promote 23868 to a root (keeping its UK region, adding tm,
+  linking it in "brand names used as words", and letting "cleaning verbs" keep vacuum) and drop its alias tie to vacuum; (b) a new root hoover
+  [verb] with another gloss beside the alias (two entries with one text and near-identical sense); (c) leave the brand noun in the theme, as now.
+  No change made.
+Gavi (item 4): unverified, unchanged (above).
+
+Verification (2026-11-16): npm test 38/38 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (case lint 0; 62144 entries, two
+  wine regions added, none deleted); style-case.mjs and propword-exceptions.mjs print 0 changes, case lint 0; Checks over the library: 0 errors,
+  warnings unchanged from v387 (theme-name 3, long 5, maybe-duplicate 1) after the two allow entries; rerunning batch388.mjs prints 0 changes.
+Family export (data/export/wordlist-game-family.json, node tools/export-game.mjs --strict, exit 0) against v387: entries 60537, no index shifts,
+  nothing appended (the wine themes and "wine regions" are outside the family preset). By field: flags, familiarity (3 -> 1), root, clash (index
+  57924 yoğurt, now a spelling alias of yogurt), linkCount (yogurt, yoghurt, yoğurt 12/12/1 -> 13), links (13 rows: "Turkish everyday words"
+  moves to the yogurt family; values after it renumbered), shown 3753 -> 3754 (the "yoğurt" shown text added at index 30, later shown indices +1),
+  themes (one row: "Turkish everyday words"), nameWordLinks, nameThemeLinks, shownUK (renumbered by the shifts), lib.version 387 -> 388,
+  lib.modified, generated. text, pos, type, regions, regionsHi, breaks and zipf unchanged.
+
+Notice for _WS_ (v381 to v388 together; nothing pinned, the game pins only when Simon asks): library v388 holds the capital-rule batches v381 to
+  v388 (rules 1 to 9, DESIGN-entries.md "Single-word names"). Main changes: accent pairs merged into one root and a spelling alias (cheeses, Māori
+  words with macron roots, vicuña, maître d', dragées, Vuelta a España, döner, döner kebab, droëwors, agogo, and in v388 yoğurt as an alias of
+  yogurt, shown yoğurt in "Turkish everyday words"); genericised brands lowercase with tm in "brand names used as words", brands capital org
+  with tm (Hoover, Kleenex), google [search the web] and Jeep [car brand] split off; place-named wines lowercase where the dictionaries disagree
+  (burgundy, lambrusco, amarone, soave, valpolicella, and in v388 rioja, beaujolais, chianti, marsala; Bordeaux, Chablis, Barolo and others stay
+  capital), Sancerre, Rioja and Beaujolais split into a wine and a [wine region] place. Entry deletions at v385 shifted indices (vicuna, agogo,
+  maitre d', a Vuelta alias); v386 to v388 shift nothing in the family export. To check: "Turkish everyday words" shows döner, rakı and yoğurt;
+  the wine themes (full export) read rioja, chianti, beaujolais, marsala lowercase; "wine regions" shows Rioja and Beaujolais.

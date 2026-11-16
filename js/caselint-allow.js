@@ -79,4 +79,6 @@ export const CASE_OK = new Set([
   '7691|colors_named_after_places', // burgundy the colour in colors named after places, beside Burgundy the wine and the region
   '19664|wines_named_for_places', // burgundy the wine in wines named for places: lowercase by rule 9 (v384, both dictionaries), beside Burgundy the region
   '19663|red_wines', // Bordeaux the wine in red wines: capital kept (Simon's precedent; M-W, Random House, Collins, Oxford Learner's all capitalise it), beside bordeaux the colour (v385)
+  '19663|wines', // Bordeaux the wine in wines: capital kept as in red wines (v388 lowercased rioja, beaujolais, chianti, marsala there), beside bordeaux the colour
+  '19674|wines', // Madeira the wine in wines: capital kept (v385: M-W, Collins, Oxford Learner's capitalise it), beside madeira the cake (v388 made wines mostly common)
 ]);
