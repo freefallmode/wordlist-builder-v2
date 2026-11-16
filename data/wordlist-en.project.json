@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":386,"modified":"2026-11-16 20:32"},"nextId":67418,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":387,"modified":"2026-11-16 20:50"},"nextId":67419,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]],"ident":1},
@@ -21805,7 +21805,7 @@
 {"id":19121,"text":"satay","gloss":"skewered meat","fam":3,"typ":{"street_food":3,"asian_food":3,"foods_on_a_stick":2,"thai_food":2},"status":"gen"},
 {"id":19122,"text":"bao","fam":3,"typ":{"street_food":3,"stuffed_foods":3,"chinese_food":2,"yum_cha_dishes":2},"status":"gen"},
 {"id":19123,"text":"empanada","fam":3,"typ":{"street_food":3,"savory_pies":4,"south_american_food":1,"stuffed_foods":2,"gaucho_words":4,"national_dishes":3,"spanish_food":3,"finger_foods":3},"status":"gen"},
-{"id":19124,"text":"doner kebab","fam":3,"typ":{"street_food":2,"turkish_food":1,"kebab_types":1},"status":"gen","nameOkIn":["kebab_types"],"show":{"kebab_types":"doner"}},
+{"id":19124,"text":"döner kebab","fam":3,"typ":{"street_food":2,"turkish_food":1,"kebab_types":1},"status":"gen","nameOkIn":["kebab_types"],"show":{"kebab_types":"doner"}},
 {"id":19125,"text":"arancini","fam":3,"typ":{"street_food":4,"deep_fried_foods":3,"stuffed_foods":4,"italian_food":3,"rice_dishes":4},"status":"gen"},
 {"id":19126,"text":"elote","fam":3,"typ":{"street_food":3,"words_from_nahuatl":4,"mexican_food":2},"status":"gen"},
 {"id":19127,"text":"tamale","fam":3,"typ":{"street_food":3,"stuffed_foods":3,"words_from_nahuatl":2,"mexican_food":1,"day_of_the_dead":4,"savory_pies":5,"ends_with_ale":3},"status":"gen"},
@@ -65601,5 +65601,6 @@
 {"id":67414,"text":"Saskatoon","gloss":"city","type":"place","fam":4,"typ":{"canadian_cities":4},"status":"gen"},
 {"id":67415,"text":"Jeep","gloss":"car brand","type":"org","fam":2,"tm":true,"typ":{"car_brands":3,"american_car_brands":3},"status":"gen"},
 {"id":67416,"text":"google","gloss":"search the web","pos":"verb","fam":1,"tm":true,"typ":{"brand_names_used_as_words":1},"status":"gen"},
-{"id":67417,"text":"Sancerre","gloss":"wine","type":"proper","fam":4,"typ":{"white_wines":3},"status":"gen"}
+{"id":67417,"text":"Sancerre","gloss":"wine","type":"proper","fam":4,"typ":{"white_wines":3},"status":"gen"},
+{"id":67418,"text":"doner kebab","fam":3,"aliasOf":19124,"aliasKind":"spelling","status":"gen","nameOkIn":["kebab_types"]}
 ]}
