@@ -1,0 +1,38 @@
+Library v384 (tools/gen/batch384.mjs, 2026-11-16 19:32): 1 change (Burgundy [wine] lowercased under rule 9). Supersedes v381 to v383 for the game.
+
+19664 "Burgundy" -> "burgundy"  type proper -> common  [wine]  themes wines, red_wines, wines_named_for_places  (rule 9 (rule 1 tie-break): Oxford prints the wine lowercase (burgundy), M-W lowercase with "often capitalized"; matches 53833 white burgundy (v383); 36306 Burgundy [region] (place) and 7691 burgundy [color] are separate entries, unchanged; no Simon decision in git history (capital since the depth-3 fill, 518bb6b), DESIGN-entries.md or ISSUES.md (T25 item 5 asked for this call); dictionaries not reachable from this session (M-W 403): recheck)
+
+Rules: Simon's rules 6 to 9, approved 2026-11-16 (DESIGN-entries.md "Single-word names: rules 6 to 9"). Rule 9: a wine named after a place is
+  capital only when the dictionaries capitalise the sense; if both print it lowercase, or a dictionary could not be checked, it is lowercase. A call
+  made without checking a dictionary is marked "recheck" here.
+Git history: Burgundy [wine] has been capital since the depth-3 fill (518bb6b, v88); no Simon decision (git log -S, DESIGN-entries.md, ISSUES.md);
+  ISSUES.md T25 item 5 asked whether rule 1's tie-break applies to it. No aliases, use or show texts; the region (36306, place) and the colour
+  (7691, common) are separate entries and unchanged.
+Recheck: Merriam-Webster refused the fetch (HTTP 403) and Oxford was not reachable, so the Burgundy call and the audit below rest on the
+  dictionaries as remembered, not on a lookup made in this session. Earlier record: v383 found M-W "burgundy" lowercase, often capitalized
+  (tools/gen/batch383-changes.txt, white burgundy).
+
+Rule-9 audit (narrow: capital entries in the wine themes wines, red wines, white wines, wines named for places, red wine grapes, wine words). NOT applied;
+for Simon. Every line is "recheck": no dictionary could be opened from this session.
+  Both dictionaries print the wine lowercase (breaks rule 9): none found from memory besides Burgundy (applied above).
+  Dictionaries disagree or M-W "often capitalized" (lowercase under rule 1's tie-break and rule 9; recheck): 19671 Chablis, 19680 Sauternes,
+    19674 Madeira [wine]. Bordeaux below.
+  Not known to be in one dictionary or both (rule 9: lowercase if unchecked; recheck): 19672 Barolo, 19673 Lambrusco, 19682 Amarone,
+    53810 Brunello, 53828 Gavi, 53829 Orvieto, 53830 Frascati, 53822 Soave, 53807 Valpolicella, 19681 Tokaji (M-W has Tokay).
+  Expected capital in both (consistent; recheck): 19662 Chianti, 19665 Rioja, 19670 Beaujolais, 19675 Marsala [wine], 53808 Côtes du Rhône,
+    53832 Liebfraumilch, 53809 Châteauneuf-du-Pape and 53835 Pouilly-Fuissé (checked at v383).
+  Not wines: 53837 Müller-Thurgau and 59834 nero d'Avola (grapes, rule 3: proper word), 59871 Brix (a scale named after a person).
+  Type: 36456 Sancerre is typed place in "white wines" (the region sense shares the entry; seen at v382).
+Bordeaux (flag for Simon, not changed): 19663 Bordeaux [wine] stays capital proper as established (a precedent; one dictionary capitalises
+  it). Under rule 9 the dictionaries disagree, which would make it lowercase; Simon to decide.
+Lint: burgundy is not in PROPER_WORDS, STYLE_WORDS or the allow-list; a lowercase common entry raises no case-lint kind, so style-case.mjs and
+  propword-exceptions.mjs leave it as it is (both print 0 changes after v384). The case lint's sense-common check flagged burgundy in "wines
+  named for places" (11 of 12 members capital, Burgundy [region] exists), so the link is allowed in js/caselint-allow.js
+  ('19664|wines_named_for_places'), as 7691 burgundy [color] in "colors named after places" already was.
+Recheck log (rule 9): muscadet (v383, lowercase; the first call marked recheck), burgundy [wine] (v384), and every audit line above.
+
+Verification (2026-11-16): npm test 37/37 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (case lint 0); style-case.mjs and
+propword-exceptions.mjs print 0 changes, case lint 0; Checks over the library: 0 errors, warnings unchanged (theme-name 3, long 5, maybe-duplicate 1).
+Family export (data/export/wordlist-game-family.json, node tools/export-game.mjs --strict, exit 0) against v383: only lib.version (383 -> 384),
+  lib.modified and generated change. The wine themes are not in the family preset, so burgundy [wine] is not exported there; no index shifts.
+  The full export carries the change (text Burgundy -> burgundy, type proper -> common).

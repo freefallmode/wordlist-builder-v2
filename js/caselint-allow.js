@@ -77,4 +77,5 @@ export const CASE_OK = new Set([
   '15383|brand_names_used_as_words', // plaster in brand names used as words: shown Band-Aid, the brand the theme is about
   '23024|wild_west_town', // Deadwood (the town) in Wild West town, beside the common word deadwood
   '7691|colors_named_after_places', // burgundy the colour in colors named after places, beside Burgundy the wine and the region
+  '19664|wines_named_for_places', // burgundy the wine in wines named for places: lowercase by rule 9 (v384, both dictionaries), beside Burgundy the region
 ]);
