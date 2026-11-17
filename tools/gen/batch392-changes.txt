@@ -1,0 +1,98 @@
+Library v392 (tools/gen/batch392.mjs, 2026-11-17 13:45): 30 changes. Simon approved every change on 2026-11-17 (evidence: tools/gen/evidence392-names.txt,
+  tools/gen/evidence392-wine-pacific.txt; earlier decisions searched there: none by Simon on these words; W2 and v391 are the precedents).
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v391; no new or gone issue messages), counted by the script
+  with validate() before and after, as batch391.mjs.
+Not changed (Simon): toere 51520, puniu 51526, kalaau 51527, ukeke 51528, pu 51530 (Hawaiian dictionaries do not count under rule 8). Borderline names
+  Birch, Tulip, Petunia, Bluebell, Orchid, Wisteria, Topaz, Magenta stay linked.
+
+1 NAMES: 20 links with no given-name use leave their "names that are ..." theme (link, its capital shown text, its allow-list key); every entry keeps its
+  other themes. No synonym group in these themes held any of them (groups unchanged). SSA = US baby-name data, 1880-2025.
+  names_that_are_trees (12):
+    1678 basswood (typicality 5, shown "Basswood") -> unlinked; a US regional alias of linden 1676, so it now has no links of its own. No SSA record.
+    1681 dogwood (4, "Dogwood"); keeps 5 themes. No SSA record.
+    29944 hemlock [poison] (4, "Hemlock"); keeps poisonous_plants. No SSA record; also the wrong sense (hemlock [tree] is 29954).
+    1653 larch (4, "Larch"); keeps 4. No SSA record.
+    1660 teak (4, "Teak"); keeps 4. SSA 62 births in all since 1983, peak 9.
+    1656 hickory (4, "Hickory"); keeps 6. SSA 17 births in all 1973-2023.
+    1650 sycamore (3, "Sycamore"); keeps 2. No SSA record.
+    1647 poplar (3, "Poplar"); keeps 2. No SSA record.
+    29942 rosewood [wood] (5, "Rosewood"); keeps 4 (its lowercase shown texts there stay). No SSA record.
+    64792 lime [linden] (4, "Lime"); keeps trees, deciduous_trees. No SSA record; linden takes the name sense (part 2). Its UK alias lime tree 1677
+      loses the inherited link too.
+    29985 mulberry tree (4, "Mulberry"); keeps fruit_trees (shown "mulberry"). No SSA record.
+    1635 elm [tree] (2, "Elm"); keeps 4. No SSA record.
+  names_that_are_flowers (2): 1744 freesia (4, "Freesia"; SSA 7 births in all, all 2000); 1723 buttercup [flower] (3, "Buttercup"; no SSA record, a pet name).
+  names_that_are_gems (4): 29877 zircon (5, no SSA record); 29878 agate (4, no SSA record); 29876 peridot (4, SSA about 5 in all); 29874 citrine (4, SSA 28 in all).
+  names_that_are_colors (2): 7706 sepia (5, SSA 5 in all, 1973); 7723 russet (5, no SSA record).
+
+2 LINDEN: names_that_are_trees: 1676 linden linked, typicality 3, shown "Linden" (was in trees, deciduous_trees, types_of_wood).
+  Typicality choice: 3, as the sibling names with the same order of use: Alder 1675 (SSA 139 in 2025) 3 and Cypress 1646 (184 in 2025) 3; Linden had
+  210 in 2025 (6,100 since 1889). The theme's 1 and 2 are the common names (Willow, Aspen, Juniper, Ash, Rowan; Maple, Birch, Holly); 4 and 5 were the
+  marginal ones now gone (the links it replaces were Lime 4 and Basswood 5).
+  Case lint: the capital shown text on a common entry, and linden has a regional alias (basswood, US): key 1676|names_that_are_trees added to
+  js/caselint-allow.js, as lime 64792 (UK alias lime tree) had at v390. See "Looks broken" below.
+
+3 AURORA: new entry 67458 "Aurora" [name] person, fam 2, region none, status gen, as Peony 67457 / Daisy 67400 [name] person.
+  fam 2: Aurora is #15 for US girls (SSA 2025: 7,065); the girls' names of that rank are fam 2 (Nora, Stella, Hazel), the top ten fam 1.
+  names_that_are_places: 29903 aurora [sky lights] (typicality 4, shown "Aurora") -> 67458 Aurora [name] (typicality 4, no shown text: the entry is
+  capital). aurora keeps sky_phenomena, polar_regions, things_that_glow, night_sky_sights, things_in_the_sky with its lowercase text. Allow key
+  29903|names_that_are_places removed. Not added to girls_names (not asked). Aurora 21874 [goddess] and 54273 [ship] are other themes: no same text.
+
+4 WINES (rules 1, 9; every call "recheck", the dictionary sites answered 403):
+  53828 "Gavi" proper -> "gavi" common; white_wines 4 unchanged. Rule 9: no dictionary lists the wine; siblings soave, muscadet, vinho verde agree.
+  53808 "Côtes du Rhône" proper -> "côtes du rhône" common; red_wines 4, wines_named_for_places 4 unchanged. Rule 1: M-W, the one dictionary listing it,
+    prints it lowercase, "often capitalized".
+  new 67459 "cotes du rhone", spelling alias of 53808, common, fam 4 (the root's, as the evidence says), region none. Rule 8: M-W prints the accents.
+  53832 "Liebfraumilch" proper -> "liebfraumilch" common; white_wines 4 unchanged. Rule 1: M-W lowercase, Oxford/Collins/Random House capital.
+  Shown texts: none of the three has a shown text in any theme, and no other wine-theme shown text names them; nothing to follow.
+  Case lint: no hit (côtes du rhône common in wines_named_for_places sits with chianti, burgundy, rioja), so js/caselint-allow.js has no wine key.
+  The wines are not in the family export (adult themes); in the full export the three texts change case in place (type proper -> common).
+
+5 T26: pacific_instruments: 18838 pâté [spread] unlinked (typicality 5, no shown text); keeps spreads, french_food. Its alias pate 18839 loses the
+  inherited link. No new pate [drum] entry (Simon).
+
+6 T28: plain spelling aliases (rule 8), as v390's (same fields as the root: pos, fam, status, type; region none, no links, gloss none):
+  new 67460 "Chateauneuf-du-Pape", spelling alias of 53809 Châteauneuf-du-Pape (proper, fam 5).
+  new 67461 "Pouilly-Fuisse", spelling alias of 53835 Pouilly-Fuissé (proper, fam 5).
+  Decided differently from the brief: the brief wrote "chateauneuf-du-pape" and "pouilly-fuisse"; v390's plain aliases keep the root's case
+  (Maori for Māori, Cook Islands Maori), and a lowercase alias of a proper root is a Checks case warning (seen on the dry run: case 0 -> 2). Both
+  roots stay capital (not part of this batch).
+
+Allow-list (js/caselint-allow.js): 21 keys removed whose links are gone (the 20 of part 1 and 29903|names_that_are_places); 1 added,
+  1676|names_that_are_trees (part 2).
+
+Verification (2026-11-17): npm test 43/43 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (62179 -> 62183 entries; case lint 0;
+  the same 10 same-text drops); style-case.mjs 0 changes, propword-exceptions.mjs 0 changes (both case lint 0); Checks 0 errors, warnings theme-name 3,
+  long 5, maybe-duplicate 1 (unchanged); rerunning batch392.mjs prints 0 changes; node tools/export-game.mjs --strict exits 0.
+Full export against v391 (both built from the library, old one from git HEAD): no entry leaves; new at the end: 62179 Aurora, 62180 cotes du rhone,
+  62181 Chateauneuf-du-Pape, 62182 Pouilly-Fuisse; no index shift; texts Côtes du Rhône/Gavi/Liebfraumilch (51147, 51167, 51170) lowercased, type
+  proper -> common; links 439336 -> 439272 values; shown 3879 -> 3859.
+Family export (the committed file) against v391: entries 60572 -> 60573. No entry leaves and no index shifts: every old index 0-60571 is the same
+  entry; Aurora [name] is new at index 60572 (its only link: names that are places, typicality 4). By field: text, pos, type, flags, familiarity,
+  regions, regionsHi, root, clash, breaks, zipf unchanged for 0-60571. Links of 25 entries changed: names-theme link gone from elm, poplar, sycamore,
+  larch, hickory, teak, lime tree, dogwood, buttercup, freesia, sepia, russet, citrine, peridot, zircon, agate, aurora, rosewood, hemlock, mulberry
+  tree, lime; pâté and pate leave pacific instruments; linden gains names that are trees (shown Linden); basswood keeps that theme only through its
+  root linden (no own shown text now). Links 427944 -> 427860 values (106986 -> 106965 links), so link numbers after the first removed link
+  (elm's) shift; shown 3850 -> 3830 (renumbered); shownUK 25 -> 25 (same pairs); nameWordLinks 321, nameThemeLinks 2284 (same counts, renumbered
+  link numbers). Themes: the same 3240; counts changed for names that are trees [1,9,11,10,3] -> [1,8,9,4,1], flowers [4,4,16,13,1] ->
+  [4,4,15,12,1], gems [3,6,6,7,1] -> [3,6,6,4,0], colors [2,4,13,13,7] -> [2,4,13,13,5], pacific instruments [0,1,5,3,25] -> [0,1,5,3,24].
+  lib.version 391 -> 392, lib.modified, generated.
+
+Looks broken (not changed, for Simon / ISSUES.md):
+  - basswood 1678 (US regional alias of linden) now reaches names that are trees through its root with no shown text: in an unlocked theme a US
+    player could be given "basswood" in place of "Linden". lime tree (UK alias of lime) was in the same position before v392. The case lint warns
+    for this (case-shown-alias), allowed under 1676|names_that_are_trees as lime was.
+  - lime tree 1677 still lists names_that_are_trees in nameOkIn (harmless now that lime is unlinked).
+  - PROJECT_STATUS.md has an uncommitted change made by another session during this batch (not touched here).
+
+DRAFT notice for _WS_ (HELD, not sent; nothing is pinned until Simon asks):
+  Library v392 (supersedes v391; everything in v391 included). Family export: 60572 -> 60573 entries. No entry leaves and no entry index changes:
+  indices 0-60571 are the same entries as in v391. New: index 60572 "Aurora" (a given name, linked only in "names that are places"; the sky-lights
+  word aurora stays at its index but leaves that theme). Links removed from the "names that are ..." themes (the words stay in the export with their
+  other themes): trees: Elm, Poplar, Sycamore, Larch, Hickory, Teak, Dogwood, Rosewood, Hemlock, Mulberry, Lime (with lime tree), Basswood's own
+  shown link; flowers: Freesia, Buttercup; gems: Zircon, Agate, Peridot, Citrine; colors: Sepia, Russet. Linden joins names that are trees (shown
+  "Linden"). pâté/pate leave pacific instruments. Because the links array shrinks (427944 -> 427860 values), link numbers from elm's former
+  names-theme link on shift down, and the shown table is renumbered (3850 -> 3830); nameWordLinks (321), nameThemeLinks (2284) and shownUK (25)
+  keep their counts with renumbered link numbers. Theme rows: same 3240, counts changed for names that are trees/flowers/gems/colors and pacific
+  instruments. The wine changes (gavi, côtes du rhône, liebfraumilch lowercase; plain aliases cotes du rhone, Chateauneuf-du-Pape,
+  Pouilly-Fuisse) are not in the family export.

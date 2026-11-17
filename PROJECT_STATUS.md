@@ -1,10 +1,10 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-17, library v391. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-17, library v392. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
-Wordlist Builder v2: a browser tool that builds a library of themes and words for the Word Safari sorting game (Unity, separate repo, separate manager session `_WS_`, local ref 58bb35; `_WS_Manager` is old, never message it). Vanilla JavaScript ES modules, no build step, no dependencies. Node runs only the dev server, tests and tools.
+Wordlist Builder v2: a browser tool that builds a library of themes and words for the Word Safari sorting game (Unity, separate repo, separate manager session `_WS_` (upgraded 2026-11-17, its id may have changed from 58bb35: check ListAgents before sending); `_WS_Manager` is old, never message it). Vanilla JavaScript ES modules, no build step, no dependencies. Node runs only the dev server, tests and tools.
 
 - `js/`: the app. `model.js` data and indexes, `validate.js` Checks, `caselint*.js` capital rules and allow-list, `export.js`, `store.js`, `dialogs.js`/`app.js` UI.
 - `data/wordlist-en.project.json`: the library (8 MB, one record per line, ~62k entries, ~3.2k themes). `data/export/wordlist-game-family.json`: the export the game reads, written by `tools/export-game.mjs`.
@@ -14,20 +14,20 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v391.
+Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v392, E9, I16, T26-T28.
 
-Game side: it pinned v389 (its commit 2ad66b4); it pins only when Simon asks. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). **The v391 notice is HELD at Simon's request**: text is at the end of `tools/gen/batch391-changes.txt`; send only when he says. v391: May [month] replaces may [might] (may leaves the export; later indices shift -1), Quaking aspen unlinked, new Peony [name] entry (index 60571), Daisy/Lily/Poppy/Rowan/Ruby name entries hold the links.
+Game side: it pinned v389 (its commit 2ad66b4); it pins only when Simon asks. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). **The v391 and v392 notices are HELD at Simon's request**: drafts at the end of `tools/gen/batch391-changes.txt` and `batch392-changes.txt`; send only when he says (one combined notice is fine). v391: May [month] replaces may [might] (may leaves the export; later indices shift -1), Quaking aspen unlinked, new Peony [name] entry (index 60571), Daisy/Lily/Poppy/Rowan/Ruby name entries hold the links.
 
 In progress: nothing.
 
-Waiting on Simon: send the v391 notice; export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; what to archive in `tools/gen` (G1, G2); unverified wine words (Gavi, Côtes du Rhône, Liebfraumilch); Māori forms `toere`, `puniu`; doubtful W2 names (list in batch391-changes.txt); Draconian lowercase; deferred W4 (word-family column).
+Waiting on Simon: send the v391 notice; export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; what to archive in `tools/gen` (G1, G2); T29 (regional alias in names themes); Draconian lowercase; deferred W4 (word-family column).
 
 ## 3. Decisions (do not reopen)
 
 - **Capital rules** (DESIGN-entries.md "Single-word names", rules 1-9): a word is written as correctly written for its sense; dictionary rule with tie-break (disagree or "often capitalized" means lowercase); sibling convention when no entry; brand sense gets capital and tm, genericised sense lowercase; tm marks products not companies; wine varieties lowercase unless the name has a proper word; place-named wines capital only when dictionaries do; "names that are ..." themes are uniformly capital. Reason: consistency across 62k entries.
 - **Rule 8 (amended):** a root keeps diacritics when at least one major English dictionary prints them (regional ones count: Te Aka, Oxford NZ/AU, DSAE); plain form is kept as spelling alias.
 - **Style rule:** style and movement names lowercase unless the word exists only as a name; period names capital.
-- **Simon's rulings:** `brazil nut`, `brazil nut tree` lowercase; Balboa [dance] and Bordeaux stay capital; hoover (verb) drops out of the family export, accepted.
+- **Simon's rulings:** `brazil nut`, `brazil nut tree` lowercase; Balboa [dance] and Bordeaux stay capital; hoover (verb) drops out of the family export, accepted. 2026-11-17 (v392): names-that-are themes keep only words with real given-name use (borderline ones with hundreds of US births or UK use stay); gavi, côtes du rhône, liebfraumilch lowercase; Hawaiian dictionaries (Pukui-Elbert) do not count under rule 8.
 - **Allow-list** (`js/caselint-allow.js`): only for links whose capital is intended, each checked.
 - **Commits:** verified work goes straight to main without asking; never push.
 - **Library versions are batched,** because each pin rebuilds the game's saved levels.
@@ -39,9 +39,9 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | Send the v391 notice to `_WS_` when Simon says (re-confirm ref 58bb35 if the tool asks) | simple | manager |
+| 1 | Send the v391+v392 notices to `_WS_` when Simon says (look up the current `_WS_` in ListAgents; ask Simon if the tool wants a name-move confirm) | simple | manager |
 | 2 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
-| 3 | W2 doubtful names, unverified wine and Māori words: evidence check, then a library batch | deep reasoning | Opus |
+| 3 | T29: rule for regional aliases in names themes (needs Simon and maybe `_WS_`) | deep reasoning | Opus |
 | 4 | W4 word-family column (deferred) | standard | Opus |
 | 5 | Archive pass on `tools/gen` (G1, G2) | simple | Sonnet |
 
