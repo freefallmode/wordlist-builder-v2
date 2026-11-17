@@ -16,7 +16,7 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v392, E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
-Game side: it pinned v389 (its commit 2ad66b4); it pins only when Simon asks. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
+Game side: it pinned v392 on 2026-11-17 (its commit 6218de2; all checks passed); it pins only when Simon asks. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
 
 In progress: nothing.
 
@@ -39,8 +39,9 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
-| 2 | W4 word-family column (deferred by Simon until the game reports a problem) | standard | Opus |
+| 1 | W9 name entries for Avril, Julio (and check Mai) in names that are months; W8 font / plain-alias check if the game asks | deep reasoning | Opus |
+| 2 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
+| 3 | W4 word-family column (deferred by Simon until the game reports a problem) | standard | Opus |
 
 ## 5. Subagents
 
