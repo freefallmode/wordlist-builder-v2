@@ -6,7 +6,7 @@ import { spawn } from 'node:child_process';
 import { connect } from 'node:net';
 import { networkInterfaces } from 'node:os';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, themeRoots, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults, sortByKey, flagKey } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, themeRoots, themeCounts, touchedThemes, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults, sortByKey, flagKey } from '../js/model.js';
 import { sig } from '../js/dom.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
@@ -600,4 +600,22 @@ test('dev server listens on 127.0.0.1 only unless --lan', async () => {
   try { assert.equal(await reach('127.0.0.1', 18141), true); if (lanIp) assert.equal(await reach(lanIp, 18141), false); } finally { c.kill(); }
   c = await up(['--lan'], 18142);
   try { assert.equal(await reach('127.0.0.1', 18142), true); if (lanIp) assert.equal(await reach(lanIp, 18142), true); } finally { c.kill(); }
+});
+
+test('E9: theme counts recounted only for the themes an edit touched equal a full count (add, text, enable, link, unlink, alias, delete)', () => {
+  const P = parseProject(readFileSync(new URL('../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
+  let seed = 11; const rnd = n => { seed = (seed * 1103515245 + 12345) % 2147483648; return seed % n; };
+  const themes = P.themes.filter(t => !t.group).map(t => t.id), pick = () => P.entries[rnd(P.entries.length)];
+  let c = themeCounts(P);
+  const edit = (touch, fn) => { const ix = P.ix, d = touchedThemes(P, touch); fn(); updateIndex(P, touch); assert.equal(P.ix, ix); touchedThemes(P, touch, d); c = themeCounts(P, c, d); };
+  for (let i = 1; i <= 200; i++) {
+    const e = pick(), k = rnd(6);
+    if (k === 0) { const t = { entries: [] }, d = new Set(); t.entries.push(addEntry(P, 'zz' + i, { typ: { [themes[rnd(themes.length)]]: 3 } })); updateIndex(P, t); touchedThemes(P, t, d); c = themeCounts(P, c, d); }
+    else if (k === 1) edit({ entries: [e] }, () => { e.enabled = !e.enabled; });
+    else if (k === 2) edit({ entries: [e] }, () => { e.typ[themes[rnd(themes.length)]] = 2; });
+    else if (k === 3) { const tid = Object.keys(e.typ)[0]; edit({ entries: [e] }, () => { if (tid) unlinkEntry(P, e, tid); }); }
+    else if (k === 4) { const x = P.ix.aliases.has(e.id) ? e : pick(), d = new Set(); touchedThemes(P, { entries: [x] }, d); updateIndex(P, deleteEntry(P, x)); touchedThemes(P, { entries: [x] }, d); for (const id of d) if (!P.ix.theme.has(id)) d.delete(id); c = themeCounts(P, c, d); }
+    else if (k === 5) { const r = pick(); edit({ entries: [e] }, () => { if (!r.aliasOf && r !== e && !P.ix.aliases.has(e.id)) { e.aliasOf = r.id; e.aliasKind = 'synonym'; } }); }
+    if (i % 25 === 0) { const f = themeCounts(P); for (const m of ['own', 'tot', 'ready', 'play']) assert.deepEqual([...c[m]].sort(), [...f[m]].sort(), m + ' at edit ' + i); }
+  }
 });

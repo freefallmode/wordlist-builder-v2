@@ -2,7 +2,7 @@
 import { h, sig, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline, mergeOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeRoots, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, sortByKey, FAMILIARITY_HELP, themeDifficulty } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeCounts, touchedThemes, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, sortByKey, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
@@ -24,7 +24,10 @@ const autosave = debounce(async () => {
 addEventListener('pagehide', () => autosave.flush());
 
 // touch names what the edit changed so only that is re-indexed (model.js updateIndex); without it every index is rebuilt.
-A.changed = touch => { updateIndex(A.P, touch); memo = null; A.dirty = true; autosave(); render(); };
+A.changed = touch => {
+  const P = A.P, ix = P.ix, k = memo || kept, inc = k?.ix === ix && touch && !touch.themes && ix?.at, dirty = inc ? touchedThemes(P, touch, new Set(k.dirty)) : null;
+  updateIndex(P, touch); memo = null;
+  kept = dirty && P.ix === ix && touchedThemes(P, touch, dirty) ? { ix, c: k.c, dirty } : null; A.dirty = true; autosave(); render(); };
 A.render = keep => render(keep);
 
 function renderStatus() {
@@ -38,25 +41,11 @@ function renderStatus() {
 // ---------- tree ----------
 
 let memo = null;   // counts() of the last render, kept until the next edit (A.changed) or another library (its indexes are another object)
+let kept = null;   // the last counts and the themes edited since: only those are recounted (the indexes must still be the same object; an edit that names its themes or entries wrongly is outside that promise, as for updateIndex)
 function counts() {
   if (memo?.ix === A.P.ix) return memo.c;
-  const c = countsNow(); memo = { ix: A.P.ix, c }; return c;
+  const k = kept?.ix === A.P.ix ? kept : null, c = themeCounts(A.P, k && k.c, k && k.dirty); kept = null; memo = { ix: A.P.ix, c }; return c;
 }
-function countsNow() {
-  const P = A.P, own = new Map(), tot = new Map(), ready = new Map(), play = new Map();
-  const min = P.settings.minWords || 4;
-  for (const t of P.themes) if (!t.group) own.set(t.id, themeRoots(P, t.id));
-  const sum = id => {
-    const t = P.ix.theme.get(id);
-    let n = t.group ? 0 : own.get(id), r = !t.group && own.get(id) >= min ? 1 : 0, p = t.group ? 0 : 1;
-    for (const k of P.ix.kids.get(id) || []) { const c = sum(k.id); n += c[0]; r += c[1]; p += c[2]; }
-    tot.set(id, n); ready.set(id, r); play.set(id, p);
-    return [n, r, p];
-  };
-  for (const t of P.ix.kids.get('') || []) sum(t.id);
-  return { own, tot, ready, play };
-}
-
 function badges(t) {
   const ef = eff(A.P, t.id), b = [];
   const add = (txt, cls, title) => b.push(h('span.badge.' + cls, { title }, txt));

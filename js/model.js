@@ -184,6 +184,28 @@ export function themeRoots(P, tid) {
   return s.size;
 }
 
+// The themes whose word counts an edit can change: the links of the touched entries and of their aliases, as filed now. Called before updateIndex and after it (union), so removed links count too.
+export function touchedThemes(P, touch, into = new Set()) {
+  const ix = P.ix; if (!ix?.at) return null;
+  for (const e of [...(touch.entries || []), ...(touch.gone || [])]) for (const x of [e, ...(ix.aliases.get(e.id) || [])]) for (const id of ix.at.get(x.id)?.t || []) into.add(id);
+  return into;
+}
+// Distinct enabled roots per theme (own), summed up the tree (tot), with how many themes have min+ words (ready) and how many play (play). With prev (an earlier result of the same indexes) and dirty (touchedThemes) only those themes are recounted.
+export function themeCounts(P, prev = null, dirty = null) {
+  const own = prev ? prev.own : new Map(), tot = new Map(), ready = new Map(), play = new Map(), min = P.settings.minWords || 4;
+  if (prev) for (const id of dirty) { const t = P.ix.theme.get(id); if (t && !t.group) own.set(id, themeRoots(P, id)); }
+  else for (const t of P.themes) if (!t.group) own.set(t.id, themeRoots(P, t.id));
+  const sum = id => {
+    const t = P.ix.theme.get(id);
+    let n = t.group ? 0 : own.get(id), r = !t.group && own.get(id) >= min ? 1 : 0, p = t.group ? 0 : 1;
+    for (const k of P.ix.kids.get(id) || []) { const c = sum(k.id); n += c[0]; r += c[1]; p += c[2]; }
+    tot.set(id, n); ready.set(id, r); play.set(id, p);
+    return [n, r, p];
+  };
+  for (const t of P.ix.kids.get('') || []) sum(t.id);
+  return { own, tot, ready, play };
+}
+
 // What a theme can serve a level: its distinct roots by difficulty. `counts[1..5]` roots at each difficulty (an alias group counts at every difficulty one of its words has),
 // `median` the middle root's difficulty, `lo` and `hi` the difficulty of the 4th easiest and 4th hardest root (the range in which it can fill a 4-word set), `reach` the root count.
 export function themeProfile(P, tid) {

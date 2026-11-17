@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-17, library v391, last commit `6d3533e`, clean tree. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-17, library v391. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
@@ -9,12 +9,12 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 - `js/`: the app. `model.js` data and indexes, `validate.js` Checks, `caselint*.js` capital rules and allow-list, `export.js`, `store.js`, `dialogs.js`/`app.js` UI.
 - `data/wordlist-en.project.json`: the library (8 MB, one record per line, ~62k entries, ~3.2k themes). `data/export/wordlist-game-family.json`: the export the game reads, written by `tools/export-game.mjs`.
 - `tools/gen/`: one-off pass scripts (batch375-391.mjs with batchNNN-changes.txt), `INVENTORY.md` classifies it.
-- `tests/core.test.mjs`: 42 tests.
+- `tests/core.test.mjs`: 43 tests.
 - Docs: `DESIGN.md` (design record, export format in section 8), `DESIGN-entries.md` (capital and style rules, decisions log), `ISSUES.md`.
 
 ## 2. Current status
 
-Done: audit, bug batches, performance E1-E4/E6/E7, I1, I6, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v391.
+Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v391.
 
 Game side: it pinned v389 (its commit 2ad66b4); it pins only when Simon asks. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). **The v391 notice is HELD at Simon's request**: text is at the end of `tools/gen/batch391-changes.txt`; send only when he says. v391: May [month] replaces may [might] (may leaves the export; later indices shift -1), Quaking aspen unlinked, new Peony [name] entry (index 60571), Daisy/Lily/Poppy/Rowan/Ruby name entries hold the links.
 
@@ -40,7 +40,7 @@ All need Simon's go-ahead first (he approves every library change).
 | # | Task | Difficulty | Model |
 |---|---|---|---|
 | 1 | Send the v391 notice to `_WS_` when Simon says (re-confirm ref 58bb35 if the tool asks) | simple | manager |
-| 2 | E8, E9, I16 (Zipf-only-if-ticked) from ISSUES.md | standard | Sonnet |
+| 2 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
 | 3 | W2 doubtful names, unverified wine and Māori words: evidence check, then a library batch | deep reasoning | Opus |
 | 4 | W4 word-family column (deferred) | standard | Opus |
 | 5 | Archive pass on `tools/gen` (G1, G2) | simple | Sonnet |

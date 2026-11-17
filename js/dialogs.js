@@ -4,7 +4,7 @@ import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, reindexThemes, indexEntry,
   FLAG_HELP, pathOf, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
-import { zipf, freqLoaded } from './freq.js';
+import { zipf, freqLoaded, loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
 import { validate, SEV_ORDER } from './validate.js';
 import { caseLint } from './caselint.js';
@@ -410,7 +410,8 @@ export async function showExport() {
   let last = null;
   const run = async () => {
     reindex(P);
-    let brkErr = null; if (P.lang === 'en') try { await loadBreaks(); } catch (e) { brkErr = e instanceof TypeError ? 'could not fetch it (serve the folder over http)' : e.message; }   // the table is English-only: other languages are not fetched for and get no break points
+    let brkErr = null; if (P.lang === 'en') try { await loadBreaks(); } catch (e) { brkErr = e instanceof TypeError ? 'could not fetch it; serve the folder over http' : e.message; }   // the table is English-only: other languages are not fetched for and get no break points
+    let frqErr = null; if (o.zipf && P.lang === 'en' && !freqLoaded()) try { await loadFreq(); } catch (e) { frqErr = e instanceof TypeError ? 'could not fetch it; serve the folder over http' : e.message; }   // the Zipf column is zeros without the list
     last = buildExport(P, o);
     const text = JSON.stringify(last.file);
     const s = await sizeOf(text);
@@ -418,6 +419,7 @@ export async function showExport() {
     info.replaceChildren(...[h('p', {}, `${plural(r.entriesOut, 'entry')} of ${r.entriesIn.toLocaleString()} · ${plural(r.themesOut, 'theme')} of ${r.themesIn.toLocaleString()}`),
       h('p', {}, `Size ${fmtBytes(s.raw)}${s.gz ? ' · gzipped ' + fmtBytes(s.gz) : ''}`),
       brkErr && h('p.hint', `Break table did not load (${brkErr}): this file has no break points, so the game will not hyphenate long words.`),
+      frqErr && h('p.hint', `Frequency list did not load (${frqErr}): the Zipf column of this file is all zeros.`),
       r.droppedThin.length > 0 && h('p.hint', `${r.droppedThin.length} themes left out for having fewer than ${o.minWords} words after filtering.`),
       ...reportLists(r, o.minWords).map(l => h('details', {}, h('summary', {}, l.title), h('p.hint', {}, l.why), h('ul.hint', {}, l.lines.map(x => h('li', {}, x))))),
       ...r.notes.map(n => h('p.hint', n)), h('p.hint', lintLine(caseLint(P).length))].filter(Boolean));
