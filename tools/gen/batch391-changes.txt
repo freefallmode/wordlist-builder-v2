@@ -62,7 +62,7 @@ Family export (node tools/export-game.mjs --strict, exit 0) against v390: entrie
   May, Ruby no longer shown texts), so the shown column renumbers; shownUK 26 -> 25 (Paeony pair gone); themes: counts of names that are flowers,
   months, trees changed (no theme added or dropped); nameWordLinks (321), nameThemeLinks (2284) same count; lib.version 390 -> 391, lib.modified, generated.
 
-Notice for _WS_ (v391, supersedes v390; nothing pinned; the game pins only when Simon asks): library v391 settles three oddities of the v390
+Notice for _WS_ (sent 2026-11-17 combined with v392; v391, supersedes v390; nothing pinned; the game pins only when Simon asks): library v391 settles three oddities of the v390
   "names that are ..." work: names that are months links May [month] instead of may [might] (the verb leaves the export); quaking aspen leaves names
   that are trees; names that are flowers links new name entry Peony, so British players no longer see "Paeony" (shownUK 26 -> 25); the given-name
   entries Daisy, Lily, Poppy (flowers), Rowan (trees), Ruby (gems, colors) take those links instead of the common words. Everything in v390 is
