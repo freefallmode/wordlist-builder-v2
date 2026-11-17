@@ -1,71 +1,83 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-15, updated at commit `a116a9c`, library v374, clean tree. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-17, library v391, last commit `6d3533e`, clean tree. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
-Wordlist Builder v2: a browser tool that builds a library of themes and words for the Word Safari sorting game (Unity, separate repo, separate manager session `_WS_`). Vanilla JavaScript ES modules, no build step, no dependencies. Node runs only the dev server, tests and tools.
+Wordlist Builder v2: a browser tool that builds a library of themes and words for the Word Safari sorting game (Unity, separate repo, separate manager session `_WS_`, local ref 58bb35; `_WS_Manager` is old, never message it). Vanilla JavaScript ES modules, no build step, no dependencies. Node runs only the dev server, tests and tools.
 
-- `js/`: the app. `model.js` data, `validate.js` Checks, `caselint*.js` capital rules, `export.js`, `store.js`, `outline.js`, `app.js`/`dialogs.js` UI.
-- `data/wordlist-en.project.json`: the library (8 MB, one record per line). `data/export/wordlist-game-family.json`: the export the game reads, written by `tools/export-game.mjs`.
-- `tools/gen/`: one-off pass scripts, briefs and their data (`INVENTORY.md` classifies it).
-- `tests/core.test.mjs`: 26 tests.
-- Docs: `DESIGN.md` (design record), `DESIGN-entries.md` (capital and style rules, decisions log), `ISSUES.md` (72 open, 22 fixed).
+- `js/`: the app. `model.js` data and indexes, `validate.js` Checks, `caselint*.js` capital rules and allow-list, `export.js`, `store.js`, `dialogs.js`/`app.js` UI.
+- `data/wordlist-en.project.json`: the library (8 MB, one record per line, ~62k entries, ~3.2k themes). `data/export/wordlist-game-family.json`: the export the game reads, written by `tools/export-game.mjs`.
+- `tools/gen/`: one-off pass scripts (batch375-391.mjs with batchNNN-changes.txt), `INVENTORY.md` classifies it.
+- `tests/core.test.mjs`: 42 tests.
+- Docs: `DESIGN.md` (design record, export format in section 8), `DESIGN-entries.md` (capital and style rules, decisions log), `ISSUES.md`.
 
 ## 2. Current status
 
-Done: baseline audit, bug batches, case lint in Checks, proper-word pass (v371), style rule (v374), B12/B14/B15/B18/B19/B20/B22/B23/B24, D1-D12, E1-E4 and E6 (incremental indexes, in-place table patching), I1 and most of I16, `--strict` now fails before writing, U1/U4/U5 (U2/U3 partly), T1/T7/T15/T18/T23/T24/T25. Library is now v391 (batches 375-391, scripts tools/gen/batch375-391.mjs; the nine single-word capital rules are in DESIGN-entries.md "Single-word names"). The game contact is the local session `_WS_` (58bb35); it has the v375-v380 notices; the v381-v389 notice was SENT 2026-11-16 (not confirmed read). Nothing pinned. The game pinned v389 on 2026-11-16 (game commit 2ad66b4, from our export 19d2895; all its checks passed; v379-v388 included). Its two gaps (Māori without macron, plain "doner") were fixed in v390 (commit 2ca62a0); the v390 notice was sent 2026-11-17 (not confirmed read), nothing newer pinned. Open W2 oddities: `may` wrong sense in names that are months, `Quaking aspen` not a name, `Paeony` for UK.
+Done: audit, bug batches, performance E1-E4/E6/E7, I1, I6, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v391.
 
-In progress: nothing. Waiting on Simon: T13, T17, W2, W4, W5, what to archive in `tools/gen` (G1, G2); whether to bump export format version 3 (needs `_WS_`); confirm the alias-promotion rule (DESIGN.md section 3); `_WS_` to check the pinning text in DESIGN.md 8.6; hoover: accept it is not in the family export, or give it another link; unverified rule-9 words (Gavi, Côtes du Rhône, Liebfraumilch).
+Game side: it pinned v389 (its commit 2ad66b4); it pins only when Simon asks. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). **The v391 notice is HELD at Simon's request**: text is at the end of `tools/gen/batch391-changes.txt`; send only when he says. v391: May [month] replaces may [might] (may leaves the export; later indices shift -1), Quaking aspen unlinked, new Peony [name] entry (index 60571), Daisy/Lily/Poppy/Rowan/Ruby name entries hold the links.
+
+In progress: nothing.
+
+Waiting on Simon: send the v391 notice; export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; what to archive in `tools/gen` (G1, G2); unverified wine words (Gavi, Côtes du Rhône, Liebfraumilch); Māori forms `toere`, `puniu`; doubtful W2 names (list in batch391-changes.txt); Draconian lowercase; deferred W4 (word-family column).
 
 ## 3. Decisions (do not reopen)
 
-- **Capital rule:** a word is written as it is correctly written for its sense. A phrase with a proper word keeps that capital and is typed `proper` (French fries). Simon's rule from earlier sessions.
-- **Style rule:** style and movement names are lowercase unless a word exists only as a name (gothic, baroque lowercase; Victorian, Bauhaus capital). Period names stay capital as separate entries. Simon delegated the rule; full text in `DESIGN-entries.md`.
-- **Simon's exceptions:** `brazil nut`, `brazil nut tree` lowercase. Kept by `tools/gen/propword-exceptions.mjs`.
-- **Allow-list** (`js/caselint-allow.js`) is for links whose capital is intended, after checking each.
+- **Capital rules** (DESIGN-entries.md "Single-word names", rules 1-9): a word is written as correctly written for its sense; dictionary rule with tie-break (disagree or "often capitalized" means lowercase); sibling convention when no entry; brand sense gets capital and tm, genericised sense lowercase; tm marks products not companies; wine varieties lowercase unless the name has a proper word; place-named wines capital only when dictionaries do; "names that are ..." themes are uniformly capital. Reason: consistency across 62k entries.
+- **Rule 8 (amended):** a root keeps diacritics when at least one major English dictionary prints them (regional ones count: Te Aka, Oxford NZ/AU, DSAE); plain form is kept as spelling alias.
+- **Style rule:** style and movement names lowercase unless the word exists only as a name; period names capital.
+- **Simon's rulings:** `brazil nut`, `brazil nut tree` lowercase; Balboa [dance] and Bordeaux stay capital; hoover (verb) drops out of the family export, accepted.
+- **Allow-list** (`js/caselint-allow.js`): only for links whose capital is intended, each checked.
 - **Commits:** verified work goes straight to main without asking; never push.
-- **Agents:** up to 5 at once without asking; more needs Simon's OK.
-- **Library versions are batched,** because every pin rebuilds the game's saved levels.
+- **Library versions are batched,** because each pin rebuilds the game's saved levels.
+- **Notices to `_WS_`:** Simon decides each send; the game pins only when he asks; never write "please re-pin".
 
 ## 4. Open tasks, in priority order
 
-| # | Task (ISSUES.md ids) | Difficulty | Model |
+All need Simon's go-ahead first (he approves every library change).
+
+| # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | E7: Language & Wordplay with sub-themes still opens in 340-420 ms (labels and sort keys computed for 8,017 words before the 500-row cap); I16 Zipf-only-if-ticked; I6 dropped theme names and same-text drops not listed in the Export dialog | standard | Sonnet |
+| 1 | Send the v391 notice to `_WS_` when Simon says (re-confirm ref 58bb35 if the tool asks) | simple | manager |
+| 2 | E8, E9, I16 (Zipf-only-if-ticked) from ISSUES.md | standard | Sonnet |
+| 3 | W2 doubtful names, unverified wine and Māori words: evidence check, then a library batch | deep reasoning | Opus |
+| 4 | W4 word-family column (deferred) | standard | Opus |
+| 5 | Archive pass on `tools/gen` (G1, G2) | simple | Sonnet |
 
 ## 5. Subagents
 
-No custom agent definitions exist (`.claude/agents/` is absent). All delegation used the built-in `general-purpose` agent with an explicit `model`:
+No custom agent definitions exist (`.claude/agents/` absent). All delegation used the built-in `general-purpose` agent with an explicit `model`; none uses `inherit`. Keep passing `model` every time (an unset one inherits the manager's).
 
 - Code fix batch, one writer at a time: **Opus**.
-- Read-only audit or judgement pass over word lists: **Opus**.
-- Mechanical inventory or bulk listing: **Sonnet**.
-
-Flag: an Agent call with no `model` inherits the manager's model. Always pass `model`. Built-in `Explore` and `Plan` were not used; if used, set Haiku for `Explore`, Opus for `Plan`.
+- Library passes, capital or sense judgement, anything a script applies to the library: **Opus**.
+- Read-only inventory or bulk listing: **Sonnet**.
+- Mechanical lookups: Haiku. Fable only with Simon's permission.
+- Built-in `Explore`/`Plan` not used; if used, Haiku and Opus.
 
 ## 6. Conventions and gotchas
 
-- Tests: `npm test`. Strict export: `node tools/export-game.mjs --strict` (rewrites the committed export; give an output path to avoid that).
-- **Never use port 8100** (Simon's stored library). Use 8141, launch config `wordlist-builder-v2-test`.
 - Code style is dense: long lines, short names, few comments. Match it.
-- Library change workflow: script in `tools/gen` with a dry run, then `--apply`; run tests and the strict export; then rerun `tools/gen/style-case.mjs` and `tools/gen/propword-exceptions.mjs` (both must print 0 changes); commit; message `_WS_` with version, changes, what to check.
-- **Before any pass, search git history for Simon's earlier decisions on those words.** The proper-word pass reversed `brazil nut` by not doing this.
-- Commit with explicit paths (`git commit -- file ...`); other sessions may edit this tree.
-- Bash heredocs mangle backslashes: write scripts with the Write tool, not `cat <<EOF`.
-- `tools/gen/propword-apply.mjs` is spent; rerunning it reports problems.
-- `ISSUES.md`: one line per item; fixed items move to the end of their section with the date.
+- Tests: `npm test`. Strict export: `node tools/export-game.mjs --strict` rewrites the committed export; for a scratch path give the preset first: `node tools/export-game.mjs full <path> --strict`, outside the repo.
+- Library change workflow: script in `tools/gen` with dry run, then `--apply`; bump version/modified; `npm test`; strict export to scratch; rerun `tools/gen/style-case.mjs` and `propword-exceptions.mjs` (both 0 changes); Checks 0 errors (warnings theme-name 3, long 5, maybe-duplicate 1); regenerate the committed export; commit; draft the `_WS_` notice with index shifts.
+- **Before any pass, search git history for Simon's earlier decisions on those words.**
+- **Never use port 8100** (Simon's stored library). Use 8141, launch config `wordlist-builder-v2-test`.
+- Commit with explicit paths; `git add` untracked files first. Other sessions may edit this tree.
+- Bash heredocs and node one-liners mangle backslashes and quotes: write scripts with the Write tool.
+- `tools/gen/propword-apply.mjs` is spent. `ISSUES.md`: one line per item, fixed items move to the end of their section with the date.
+- Browser Preview once showed "case lint: 1 issue" while the CLI said 0; not reproduced, likely a stale browser copy.
 
 ## 7. Delegation rules
 
-- Brief: goal, exact files, what is already known, hard limits (no commits, files it may touch, port 8141), what done looks like.
-- Ask for, per item: what changed, how it was verified, what was not, choices made. Details go to a file; the reply stays under about 40 lines.
-- Review every diff and rerun tests yourself before committing.
-- Escalate to Opus for data-safety code, model semantics, capital judgement, or anything a script applies to the library.
+- Brief: goal, exact files, what is known, hard limits (no commits, files it may touch, port 8141), what done looks like.
+- Ask for, per item: what changed, how verified, what was not, choices made. Details go to a file; the reply stays under about 40 lines.
+- Review every diff and rerun tests yourself before committing. Up to 5 agents at once; more needs Simon's OK.
+- Escalate to Opus for data-safety code, model semantics, capital judgement, or anything a script applies to the library. Rewrite agent-drafted `_WS_` notices: they were vague on index shifts and wrongly asked to re-pin.
 
 ## 8. Token-saving notes
 
-- The four audit agents cost about 860k tokens. Do not repeat a broad audit.
-- Whole verdict lists, the 400-line inventory and full diffs in the manager's context were costly: pipe through `cut`, `head`, `grep`; never print library lines uncut.
-- The two design docs are 90 KB: grep for the section, do not read them whole.
-- A loose candidate rule wastes an agent (270 of 315 were false hits): tighten it first.
+- Whole verdict lists, big diffs and library lines printed uncut cost most: pipe through `cut`, `head`, `grep`.
+- The two design docs are 90 KB: grep for the section, never read whole.
+- Tighten a candidate rule before sending agents (270 of 315 hits were false once).
+- Do not repeat a broad audit (about 860k tokens).
+- Keep updates short; do not recap long lists Simon has already seen.
