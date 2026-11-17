@@ -16,11 +16,11 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v394 (W9, T30, I18), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
-Game side: it pinned v392 on 2026-11-17 (its commit 6218de2; all checks passed); it pins only when Simon asks. **The combined v393+v394 notice is HELD** (draft at the end of `tools/gen/batch394-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
+Game side: it pinned v392 on 2026-11-17 (its commit 6218de2; all checks passed); it pins only when Simon asks. The combined v393+v394 notice (with the format 4 check) was sent 2026-11-18 (text at the end of `tools/gen/batch394-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
 
 In progress: nothing.
 
-Waiting on Simon: deferred W4 (word-family column) and E8. Ruled 2026-11-18: export format is 4 (the held notice asks `_WS_` to check its reader and DESIGN.md 8.6); the alias-promotion rule in DESIGN.md 3 stands; draconian stays lowercase.
+Waiting on Simon: deferred W4 (word-family column) and E8. Ruled 2026-11-18: export format is 4 (the v394 notice asks `_WS_` to check its reader and DESIGN.md 8.6); the alias-promotion rule in DESIGN.md 3 stands; draconian stays lowercase.
 
 ## 3. Decisions (do not reopen)
 
