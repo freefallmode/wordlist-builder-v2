@@ -1,5 +1,5 @@
 // Links where the capital (or lowercase) is intended for the sense the word has in that theme, so the case lint does not flag them.
-// Key: entryId|themeId. Add a line only after checking the word is right as shown. Merged on each run (existing keys kept) by tools/gen/caselint-allow.mjs.
+// Key: entryId|themeId. Add a line only after checking the word is right as shown. Lines are added and removed by hand or by a library batch script (tools/gen/batchNNN.mjs).
 export const CASE_OK = new Set([
   '633|desserts_and_sweets', // Skittles in desserts and sweets
   '20295|canned_foods', // Spam in canned foods

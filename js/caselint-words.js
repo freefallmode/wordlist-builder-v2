@@ -1,5 +1,5 @@
 // Words that are written with a capital wherever they stand inside a phrase: nationality and language words, and the place and person names that
-// the proper-word review confirmed (tools/gen/propword-apply.mjs wrote the second part; add a word by hand when a new one turns up).
+// the proper-word review confirmed (the v371 proper-word pass wrote the second part; add a word by hand when a new one turns up).
 // The case lint (js/caselint.js, kind lower-proper-word) flags a lowercase entry typed common or phrase that contains one of them: french fries,
 // yorkshire terrier. Lowercase here; a word that is also an ordinary word (china, turkey, savannah) does not belong in the list.
 // Not in the list on purpose: brazil (Simon decided on 2026-11-14 that brazil nut is written with a lowercase b); gothic and byzantine (style

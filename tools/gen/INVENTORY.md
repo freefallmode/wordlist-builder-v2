@@ -20,7 +20,6 @@ What is left in tools/gen after the archive pass of 2026-11-17 (library v392, co
 | animals.mjs, food-drink.mjs | worked examples of finished batches, named by BRIEF-depth3 |
 | ident-make / ident-apply, regtag-make / regtag-apply | scripts of the two current briefs below |
 | starts-cands, ends-cands | write starts/ and ends/ candidate lists for the starts-with and ends-with briefs |
-| pop/metrics.mjs | G3: draft theme-popularity check; imports `effRec`, removed at v301, so it fails on import. Kept as undecided; fix or delete |
 
 ## Briefs
 
