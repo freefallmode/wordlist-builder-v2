@@ -8,19 +8,19 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 - `js/`: the app. `model.js` data and indexes, `validate.js` Checks, `caselint*.js` capital rules and allow-list, `export.js`, `store.js`, `dialogs.js`/`app.js` UI.
 - `data/wordlist-en.project.json`: the library (8 MB, one record per line, ~62k entries, ~3.2k themes). `data/export/wordlist-game-family.json`: the export the game reads, written by `tools/export-game.mjs`.
-- `tools/gen/`: one-off pass scripts (batch375-391.mjs with batchNNN-changes.txt), `INVENTORY.md` classifies it.
+- `tools/gen/`: one-off pass scripts (batch375-392.mjs with batchNNN-changes.txt; archived 2026-11-17, ~146 files left), `INVENTORY.md` classifies it.
 - `tests/core.test.mjs`: 43 tests.
 - Docs: `DESIGN.md` (design record, export format in section 8), `DESIGN-entries.md` (capital and style rules, decisions log), `ISSUES.md`.
 
 ## 2. Current status
 
-Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v392, E9, I16, T26-T28.
+Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v392, E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
 Game side: it pinned v389 (its commit 2ad66b4); it pins only when Simon asks. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). **The v391 and v392 notices are HELD at Simon's request**: drafts at the end of `tools/gen/batch391-changes.txt` and `batch392-changes.txt`; send only when he says (one combined notice is fine). v391: May [month] replaces may [might] (may leaves the export; later indices shift -1), Quaking aspen unlinked, new Peony [name] entry (index 60571), Daisy/Lily/Poppy/Rowan/Ruby name entries hold the links.
 
 In progress: nothing.
 
-Waiting on Simon: send the v391 notice; export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; what to archive in `tools/gen` (G1, G2); T29 (regional alias in names themes); Draconian lowercase; deferred W4 (word-family column).
+Waiting on Simon: send the v391 notice; export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; T29 (regional alias in names themes); Draconian lowercase; deferred W4 (word-family column).
 
 ## 3. Decisions (do not reopen)
 
@@ -43,7 +43,6 @@ All need Simon's go-ahead first (he approves every library change).
 | 2 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
 | 3 | T29: rule for regional aliases in names themes (needs Simon and maybe `_WS_`) | deep reasoning | Opus |
 | 4 | W4 word-family column (deferred) | standard | Opus |
-| 5 | Archive pass on `tools/gen` (G1, G2) | simple | Sonnet |
 
 ## 5. Subagents
 
@@ -64,7 +63,7 @@ No custom agent definitions exist (`.claude/agents/` absent). All delegation use
 - **Never use port 8100** (Simon's stored library). Use 8141, launch config `wordlist-builder-v2-test`.
 - Commit with explicit paths; `git add` untracked files first. Other sessions may edit this tree.
 - Bash heredocs and node one-liners mangle backslashes and quotes: write scripts with the Write tool.
-- `tools/gen/propword-apply.mjs` is spent. `ISSUES.md`: one line per item, fixed items move to the end of their section with the date.
+- tools/gen was archived 2026-11-17 (restore from `bc6e646`, see INVENTORY.md). `ISSUES.md`: one line per item, fixed items move to the end of their section with the date.
 - Browser Preview once showed "case lint: 1 issue" while the CLI said 0; not reproduced, likely a stale browser copy.
 
 ## 7. Delegation rules
