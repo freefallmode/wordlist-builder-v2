@@ -1,0 +1,69 @@
+Library v391 (tools/gen/batch391.mjs, 2026-11-17 11:19): 10 changes. Simon approved 2026-11-17: fix the three oddities left by W2 (v390).
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v390; no new or gone issue messages).
+Earlier decisions searched (git log --grep/-S, DESIGN-entries.md, tools/gen outside .tmp): none by Simon on may, quaking aspen, peony/paeony, or the
+  name entries Daisy/Lily/Poppy/Rowan/Ruby (created by the case-lint agent pass 69c6f4b; glosses set in 5a508bc, an agent tidy, not a ruling).
+
+ODDITY 1: may in "names that are months"
+  names_that_are_months: 27948 "may" [might] common, verb (typicality 2, shown "May") -> 25268 "May" [month] proper (same typicality 2).
+    Evidence: 27948 is the modal verb (gloss "might", pos verb); 25268 May [month] is the month entry (in months, months with 31 days). The theme's
+    convention is the month entry itself: April 15, June 16, July 25269, August 25271 [month] are the month entries, proper, no shown text.
+    No May [given name] entry exists. 27948 may [might] is now in no theme (it was in no other), so it leaves the game export (correct: it was
+    there only for the wrong sense). The entry is kept in the library, not deleted. No same text twice (Mai 29880 differs).
+  Other months checked: August 25271 is the month (fine); Augustus, Augusta, Augustine, Julius, Mai are name entries (fine); no march [walk] in the
+    theme. avril 27146 (French month, shown "Avril") and julio 27160 (Spanish month, shown "Julio") are month words in another language, the same
+    sense the theme means, shown with the name capital as in W2: not the may problem, left as they are (no Avril/Julio name entries exist).
+
+ODDITY 2: Quaking aspen in "names that are trees"
+  names_that_are_trees: 1649 "quaking aspen" common unlinked (typicality 5, shown "Quaking aspen"); keeps trees, deciduous trees, north american trees.
+    The theme's synonym group [[1648 aspen, 1649 quaking aspen]] went with it (a group of one is no group). Evidence: a species name, no given-name
+    use; the name sense is covered by aspen 1648 shown "Aspen"; there is no Aspen [given name] entry (50013 Aspen is the ski town).
+  Members with doubtful name use (NOT changed; for Simon: each is a word with little or no given-name use, unlike Rowan, Hazel, Willow, Ash):
+    trees: Basswood (1678, an alias of 1676 with its own link), Dogwood, Hemlock [poison], Larch, Teak, Hickory, Sycamore, Poplar, Alder, Rosewood,
+      Lime 64792 [linden], Mulberry (mulberry tree), Elder [tree], Elm, Birch, Cypress.
+    flowers: Tulip, Petunia, Gardenia, Freesia, Buttercup, Bluebell, Orchid, Wisteria.
+    gems: Zircon, Agate, Peridot, Citrine, Topaz.
+    colors: Cyan, Magenta, Sepia, Carmine (an Italian man's name), Russet, Crimson.
+    places: aurora 29903 [sky lights] shown "Aurora": a name, but the linked sense is the sky lights, not a place (no Aurora [place] entry; 21874 is
+      the goddess): the same kind of wrong-sense link as may; left because no right-sense entry exists and the link was allowed before W2.
+    virtues: none (all are used as given names).
+
+ODDITY 3: "Paeony" for UK players in "names that are flowers"
+  Cause: the export gives a British player the root's UK spelling alias inside a shown text (js/export.js ukText), so peony 1717 (UK spelling
+    alias paeony 1718) shown "Peony" gave shownUK "Paeony". There is no library field to turn this off, and only js/caselint-*.js may change.
+  Fix: new entry 67457 "Peony" [name] person, fam 2 (the flower's familiarity), region none, as Daisy 67400 [name] person; Peony is a girl's name in
+    use in England and Wales, always spelt Peony. names_that_are_flowers: 1717 "peony" [flower] (typicality 3, shown "Peony") -> 67457 "Peony"
+    (typicality 3); peony keeps its 13 other themes (paeony follows it). The export's shownUK loses the Paeony pair (26 -> 25).
+  The other v390 W2 shown texts: no other root with a shown text in the seven themes has a UK-only spelling alias (checked by the script: none
+    left); lime 64792 has the UK alias "lime tree", which is regional, not spelling, so it makes no UK shown text. No other region-specific spelling
+    among the 113.
+
+OPTION: existing given-name entries take the links (capital rule: the theme's sense is a name; the name entry is that sense)
+  names_that_are_flowers: 1695 "daisy" [flower] (typicality 1, shown "Daisy") -> 67400 "Daisy" [name] person; daisy keeps 11 other themes.
+  names_that_are_flowers: 1697 "lily" [flower] (typicality 1, shown "Lily") -> 67401 "Lily" [name] person; lily keeps 9 other themes.
+  names_that_are_flowers: 1701 "poppy" [red flower] (typicality 2, shown "Poppy") -> 67402 "Poppy" [name] person; poppy keeps 11 other themes.
+  names_that_are_trees: 1679 "rowan" [tree] (typicality 1, shown "Rowan") -> 67404 "Rowan" [name] person (in unisex names); rowan keeps 3 others.
+  names_that_are_gems: 31657 "ruby" [gem] (typicality 1, shown "Ruby") -> 67399 "Ruby" [girl's name] person; ruby keeps 6 other themes.
+  names_that_are_colors: 31657 "ruby" [gem] (typicality 3, shown "Ruby") -> 67399 "Ruby" [girl's name] person; ruby keeps 5 other themes.
+  None of the five name entries was in those themes before; each was already in the export (girls names / unisex names), so no word left the game.
+  No name-leak (theme-name) warning, no same text twice; difficulty of the links unchanged (same familiarity), except May (month fam 1, the verb 3).
+
+Allow-list (js/caselint-allow.js): 9 keys removed whose links are gone: 27948|names_that_are_months, 1649|names_that_are_trees,
+  1717|, 1695|, 1697|, 1701|names_that_are_flowers, 1679|names_that_are_trees, 31657|names_that_are_gems, 31657|names_that_are_colors. None added
+  (the moved links are on capital name entries; case lint 0). 112 -> 103 W2 entries.
+
+Verification (2026-11-17): npm test 42/42 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (62179 entries, same count as v390:
+  may out, Peony in; case lint 0; the same 10 same-text drops); style-case.mjs 0 changes, propword-exceptions.mjs 0 changes; Checks 0 errors, warnings
+  unchanged (theme-name 3, long 5, maybe-duplicate 1); rerunning batch391.mjs prints 0 changes.
+Family export (node tools/export-game.mjs --strict, exit 0) against v390: entries 60572 -> 60572. INDEX SHIFT: may [might] (old index 26234) is gone,
+  so every entry from old index 26235 to 60571 moves down by one (new 26234 to 60570); Peony [name] is appended at 60571. By field: text, pos, type,
+  flags, familiarity, regions, regionsHi, clash, breaks, zipf the same after the shift; root the same after the shift (886 values renumbered by the
+  shift only); links of 15 entries changed (quaking aspen, rowan, daisy, lily, poppy, peony, paeony lose the names-theme link; May, Ruby, Daisy, Lily,
+  Poppy, Rowan, Peony gain one; may gone); links 427952 -> 427944 values; shown 3859 -> 3850 (Quaking aspen, Rowan, Daisy, Lily, Poppy, Peony, Paeony,
+  May, Ruby no longer shown texts), so the shown column renumbers; shownUK 26 -> 25 (Paeony pair gone); themes: counts of names that are flowers,
+  months, trees changed (no theme added or dropped); nameWordLinks (321), nameThemeLinks (2284) same count; lib.version 390 -> 391, lib.modified, generated.
+
+Notice for _WS_ (v391, supersedes v390; nothing pinned; the game pins only when Simon asks): library v391 settles three oddities of the v390
+  "names that are ..." work: names that are months links May [month] instead of may [might] (the verb leaves the export); quaking aspen leaves names
+  that are trees; names that are flowers links new name entry Peony, so British players no longer see "Paeony" (shownUK 26 -> 25); the given-name
+  entries Daisy, Lily, Poppy (flowers), Rowan (trees), Ruby (gems, colors) take those links instead of the common words. Everything in v390 is
+  included. Index shifts: entries after old index 26234 (may) move down by one; Peony appended at 60571 (count stays 60572); shown table renumbered.
