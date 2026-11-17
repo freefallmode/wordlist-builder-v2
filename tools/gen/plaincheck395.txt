@@ -1,0 +1,389 @@
+Plain-alias check, library v395 (2026-11-18, W8 / rule 8): accented roots with no alias whose text is the plain spelling (diacritics stripped, case ignored). 386 roots of 571 accented: 327 in at least one theme that is not locked, 59 only in locked themes; 46 hold one of the 20 letters the game added to its font. Script: tools/gen/plaincheck.mjs
+--- in an open theme
+551 filmjölk (common) in dairy_and_eggs
+2038 El Niño (proper) in weather, tides_and_currents, climate_words
+2040 La Niña (proper) in weather, tides_and_currents, climate_words
+2197 Côte d'Ivoire (place) in countries, african_countries, west_african_countries, french_speaking_countries, tricolor_flags
+2301 Kraków (place) in cities, european_cities
+2304 Asunción (place) in cities, capital_cities, south_american_cities, american_capitals
+2307 Tromsø (place) in cities
+2308 Valparaíso (place) in cities, south_american_cities, port_cities, ports_in_the_americas
+5146 Día de los Muertos (proper) in day_of_the_dead, holidays_and_celebrations, halloween, festivals_of_the_world, latin_american_folklore
+5456 Pelé (person) in famous_athletes, famous_soccer_players, brazilian_players
+5481 Kylian Mbappé (person) in famous_athletes, famous_soccer_players
+5511 Björn Borg (person) in famous_athletes, tennis_champions
+5526 Zlatan Ibrahimović (person, fallback letter) in famous_athletes, famous_soccer_players
+5536 Ferenc Puskás (person) in famous_athletes, famous_soccer_players
+5551 Lasse Virén (person) in famous_athletes, famous_runners
+5554 Eusébio (person) in famous_athletes, famous_soccer_players
+5729 Parchís (proper) in table_games, board_games, asian_board_games, south_asian_games
+5787 Pokémon (title) in video_games
+7082 Belle Époque (proper) in historical_periods
+7104 Ancien Régime (proper) in historical_periods
+13105 Pokémon (proper) in anime_and_manga_words
+18003 tortilla española (common) in spanish_food, egg_dishes
+18519 ragù (common) in pasta_dishes, italian_food, pasta_meals
+18668 knedlíky (common) in dumplings
+18745 quatre épices (common) in spice_blends
+18796 béarnaise (common) in sauces_and_condiments, french_sauces
+18940 consommé (common) in soups
+18970 étouffée (common) in stews
+19045 smørrebrød (common) in sandwiches
+19325 şalgam (common, fallback letter) in turkish_food
+19529 café con leche (common) in coffee_drinks
+19647 rosé (common) in wines
+19726 Kölsch (proper) in beers
+19762 poitín (common) in spirits, national_spirits
+19825 sauté pan (common) in cookware
+20034 à la carte (phrase) in restaurant_words, french_phrases_in_english, restaurant
+20041 table d'hôte (phrase) in restaurant_words
+20068 rôtisseur (common) in kitchen_brigade
+20077 sauté cook (common) in kitchen_brigade
+20090 entrée (common) in courses_of_a_meal
+20219 surströmming (common) in fermented_foods, pungent_foods, things_that_smell_bad
+20228 jalapeño poppers (common) in deep_fried_foods, stuffed_foods
+20412 Cortés (person) in aztecs_and_maya, conquistadors
+20454 Qhapaq Ñan (place) in inca_empire, inca_engineering
+20668 La Tène (place) in celts
+21007 Hernán Cortés (person) in explorers
+21009 Ponce de León (person) in explorers, conquistadors
+21221 Fabergé egg (proper) in treasure, oval_things
+26733 olá (common) in hello_around_the_world
+26756 dzień dobry (common, fallback letter) in hello_around_the_world
+26758 buenos días (common) in hello_around_the_world
+26764 danke schön (common) in thank_you_around_the_world
+26789 teşekkürler (common, fallback letter) in thank_you_around_the_world, turkish_everyday_words
+26793 cảm ơn (common, fallback letter) in thank_you_around_the_world
+26794 mulțumesc (common, fallback letter) in thank_you_around_the_world
+26795 dziękuję (common, fallback letter) in thank_you_around_the_world
+26796 děkuji (common, fallback letter) in thank_you_around_the_world
+26797 köszönöm (common) in thank_you_around_the_world
+26810 hasta mañana (common) in goodbye_around_the_world
+26816 à bientôt (common) in goodbye_around_the_world
+26817 até logo (common) in goodbye_around_the_world
+26820 slán (common) in goodbye_around_the_world
+26821 hej då (common) in goodbye_around_the_world
+26826 à demain (common) in goodbye_around_the_world
+26866 touché (common) in french_phrases_in_english, fencing_terms
+26960 çay (common) in turkish_everyday_words, turkish_breakfast, turkish_bath, turkish_food
+34324 Częstochowa (place, fallback letter) in pilgrimage_sites
+34929 lycée (common) in school_types
+35781 Bogotá (place) in capital_cities, south_american_cities, american_capitals
+35962 São Paulo (place) in south_american_cities, brazilian_cities
+35964 Medellín (place) in south_american_cities
+35975 Córdoba (place) in south_american_cities, spanish_cities
+36108 Mérida (place) in mexican_cities
+36319 Île-de-France (place) in french_regions
+36323 Franche-Comté (place) in french_regions
+36325 Midi-Pyrénées (place) in french_regions
+36326 Rhône-Alpes (place) in french_regions
+36331 Béarn (place) in french_regions
+36335 Côte d'Azur (place) in french_regions, european_holiday_regions
+36354 Castile and León (place) in spanish_regions
+36401 Baden-Württemberg (place) in german_states
+36457 Rhône Valley (place) in wine_regions
+36474 Médoc (place) in wine_regions
+36476 Saint-Émilion (place) in wine_regions
+37967 Åland (place) in flags_with_crosses
+38099 Königsberg (place) in old_city_names
+38116 Lourenço Marques (place) in old_city_names
+39727 hákarl (common) in pungent_foods
+40003 lamé (common) in shiny_things, fencing_terms
+41963 Erwin Schrödinger (person) in scientists, nobel_laureates, famous_physicists, physics_prize_winners
+41977 Wilhelm Röntgen (person) in scientists
+41994 René Descartes (person) in famous_mathematicians
+42011 Évariste Galois (person) in famous_mathematicians
+42013 Kurt Gödel (person) in famous_mathematicians
+42015 Henri Poincaré (person) in famous_mathematicians, french_mathematicians
+42017 Paul Erdős (person, fallback letter) in famous_mathematicians
+42150 Schrödinger's cat (proper) in famous_experiments
+42205 Lech Wałęsa (person, fallback letter) in nobel_laureates, peace_prize_winners
+43811 coupé (common) in fencing_terms
+44336 Copa América (proper) in famous_sporting_events
+44518 Luka Modrić (person, fallback letter) in famous_soccer_players
+44519 Kaká (person) in famous_soccer_players, brazilian_players
+44529 Andrés Iniesta (person) in famous_soccer_players
+44533 Luis Suárez (person) in famous_soccer_players
+44535 Alfredo Di Stéfano (person) in famous_soccer_players
+44540 Vinícius Júnior (person) in famous_soccer_players, brazilian_players
+44555 Iga Świątek (person, fallback letter) in tennis_champions, women_s_tennis_stars
+44574 Goran Ivanišević (person, fallback letter) in tennis_champions
+45434 Pokémon (proper) in card_games
+45884 Pokémon cards (proper) in collecting_hobbies
+46250 Eskişehirspor (org, fallback letter) in turkish_football_clubs
+46257 Bandırmaspor (org) in turkish_football_clubs
+46292 Espérance (org) in african_soccer_clubs
+46436 São Paulo (org) in south_american_soccer_clubs
+46469 América de Cali (org) in south_american_soccer_clubs
+46486 aú (common) in capoeira_words
+46490 bênção (common) in capoeira_words
+46494 rolê (common) in capoeira_words
+46504 cordão (common) in capoeira_words
+52649 José Donoso (person) in latin_american_writers
+52653 Sor Juana Inés (person) in latin_american_writers
+52654 José Martí (person) in latin_american_writers, latin_american_liberators
+52655 Rubén Darío (person) in latin_american_writers
+52656 César Vallejo (person) in latin_american_writers
+52660 Guimarães Rosa (person) in latin_american_writers
+52661 César Aira (person) in latin_american_writers
+53092 chèvre (common) in soft_cheeses, french_cheeses, cheeses
+53093 Neufchâtel (proper) in soft_cheeses
+53115 pont-l'évêque (common) in french_cheeses
+53145 canelé (common) in french_pastries, french_food
+53150 saint-honoré (common) in french_pastries
+53151 gougère (common) in french_pastries
+53157 sablé (common) in french_pastries
+53273 salade niçoise (common) in french_food
+53277 pissaladière (common) in french_food
+53282 pimientos de Padrón (proper) in spanish_food
+53297 fideuà (common) in spanish_food
+53298 cocido madrileño (common) in spanish_food
+53328 spätzle (common) in german_food
+53331 knödel (common) in german_food, dumplings
+53332 käsespätzle (common) in german_food
+53334 leberkäse (common) in german_food
+53339 königsberger klopse (common) in german_food
+53370 sigara böreği (common, fallback letter) in turkish_breakfast, meze
+53374 poğaça (common, fallback letter) in turkish_breakfast
+53375 mıhlama (common) in turkish_breakfast
+53376 reçel (common) in turkish_breakfast
+53378 açma (common) in turkish_breakfast
+53386 patlıcan kebab (common) in kebab_types
+53388 tavuk şiş (common, fallback letter) in kebab_types
+53389 kuzu şiş (common, fallback letter) in kebab_types
+53393 ciğer şiş (common, fallback letter) in kebab_types
+53394 şiş köfte (common, fallback letter) in kebab_types
+53395 inegöl köfte (common) in kebab_types
+53396 kuşbaşı (common, fallback letter) in kebab_types
+53407 şakşuka (common, fallback letter) in meze
+53674 ají de gallina (common) in peruvian_food
+53675 papa a la huancaína (common) in peruvian_food
+53684 suspiro limeño (common) in peruvian_food, south_american_sweets
+53689 vatapá (common) in brazilian_food
+53690 acarajé (common) in brazilian_food
+53692 rodízio (common) in brazilian_food
+53699 empadão (common) in brazilian_food
+53700 paçoca (common) in brazilian_food, south_american_sweets
+53704 fainá (common) in argentinian_food
+53708 vitel toné (common) in argentinian_food
+53715 tereré (common) in south_american_drinks
+53716 Guaraná Antarctica (org) in south_american_drinks
+53728 maracuyá juice (common) in south_american_drinks
+53763 pouding chômeur (common) in canadian_food
+53800 carménère (common) in red_wines, grape_varieties
+53804 mourvèdre (common) in red_wines, grape_varieties
+53818 gewürztraminer (common) in white_wines
+53819 albariño (common) in white_wines
+53824 grüner veltliner (common) in white_wines
+53837 Müller-Thurgau (proper) in white_wines
+53841 torrontés (common) in white_wines
+53863 cuvée (common) in wine_words
+53873 Kahlúa (org) in liqueurs
+53877 Jägermeister (org) in liqueurs
+53878 crème de menthe (common) in liqueurs
+53879 crème de cassis (common) in liqueurs
+53886 curaçao (common) in liqueurs
+53894 crème de violette (common) in liqueurs
+53897 Goldschläger (org) in liqueurs
+54113 Narváez (person) in conquistadors
+54114 Belalcázar (person) in conquistadors
+54115 Jiménez de Quesada (person) in conquistadors
+54118 Bernal Díaz (person) in conquistadors
+54119 Juan de Oñate (person) in conquistadors
+54124 Vasco Núñez de Balboa (person) in conquistadors
+54126 Pedro Álvares Cabral (person) in portuguese_explorers
+54132 Diogo Cão (person) in portuguese_explorers
+54133 Pêro da Covilhã (person) in portuguese_explorers
+54135 Nuno Tristão (person) in portuguese_explorers
+54137 Jorge Álvares (person) in portuguese_explorers
+54138 Fernão Mendes Pinto (person) in portuguese_explorers
+54139 João Gonçalves Zarco (person) in portuguese_explorers
+54141 Estêvão Gomes (person) in portuguese_explorers
+54142 Tristão Vaz (person) in portuguese_explorers
+54143 João da Nova (person) in portuguese_explorers
+54179 René Caillié (person) in explorers_of_africa
+54215 Niccolò de Conti (person) in great_travelers
+54216 Ruy González de Clavijo (person) in great_travelers
+54252 Salomon Andrée (person) in arctic_explorers
+54315 Fabergé eggs (proper) in lost_treasures
+54341 Crécy (place) in medieval_battles
+54367 Orléans (place) in medieval_battles
+54386 Lützen (place) in napoleonic_battles
+54421 Pozières (place) in world_war_i_battles
+54453 Hürtgen Forest (place) in world_war_ii_battles
+54514 José de San Martín (person) in latin_american_liberators
+54516 Antonio José de Sucre (person) in latin_american_liberators
+54518 José María Morelos (person) in latin_american_liberators
+54520 Túpac Amaru II (person) in latin_american_liberators
+54521 Agustín de Iturbide (person) in latin_american_liberators
+54522 José Artigas (person) in latin_american_liberators
+54524 Francisco Morazán (person) in latin_american_liberators
+54528 Manuela Sáenz (person) in latin_american_liberators
+54535 José Gervasio Artigas (person) in latin_american_liberators
+55127 ancien régime (common) in french_revolution
+55732 cempasúchil (common) in day_of_the_dead
+55767 Hofbräu (org) in oktoberfest
+55768 märzen (common) in oktoberfest
+55960 fünf (common) in numbers_in_german
+55967 zwölf (common) in numbers_in_german
+55970 dreißig (common) in numbers_in_german
+55972 fünfzig (common) in numbers_in_german
+56849 San José (place) in american_capitals
+56890 Orléans (place) in french_cities
+56893 Nîmes (place) in french_cities
+56902 Düsseldorf (place) in german_cities
+56913 Lübeck (place) in german_cities
+56917 Münster (place) in german_cities
+56918 Würzburg (place) in german_cities
+56947 Cádiz (place) in spanish_cities
+56949 San Sebastián (place) in spanish_cities
+56952 Gijón (place) in spanish_cities
+56956 Ávila (place) in spanish_cities
+56959 Almería (place) in spanish_cities
+56960 León (place) in spanish_cities
+57073 Belém (place) in brazilian_cities
+57074 Goiânia (place) in brazilian_cities
+57077 Florianópolis (place) in brazilian_cities
+57080 Foz do Iguaçu (place) in brazilian_cities
+57081 Búzios (place) in brazilian_cities
+57082 São Luís (place) in brazilian_cities
+57083 Maceió (place) in brazilian_cities
+57084 Vitória (place) in brazilian_cities
+57085 Niterói (place) in brazilian_cities
+57086 Petrópolis (place) in brazilian_cities
+57088 Cuiabá (place) in brazilian_cities
+57090 João Pessoa (place) in brazilian_cities
+57111 Taupō (place, fallback letter) in new_zealand_cities
+57116 Mönch (place) in alpine_peaks
+57135 Säntis (place) in alpine_peaks
+57155 Eyjafjallajökull (place) in famous_volcanoes
+57157 Mount Pelée (place) in famous_volcanoes
+57264 Ogooué (place) in african_rivers
+57343 São Francisco (place) in south_american_rivers
+57351 Solimões (place) in south_american_rivers
+57352 Tapajós (place) in south_american_rivers
+57354 Juruá (place) in south_american_rivers
+57359 Marañón (place) in south_american_rivers
+57361 Caroní (place) in south_american_rivers
+57363 Mamoré (place) in south_american_rivers
+57366 Apurímac (place) in south_american_rivers
+57376 Dolmabahçe Palace (place) in istanbul_landmarks
+57382 Ortaköy Mosque (place) in istanbul_landmarks
+57402 Sacré-Cœur (place) in paris_landmarks
+57409 Panthéon (place) in paris_landmarks
+57411 Père Lachaise (place) in paris_landmarks
+57415 Île de la Cité (place) in paris_landmarks
+57416 La Défense (place) in paris_landmarks
+57420 Hôtel de Ville (place) in paris_landmarks
+57422 Musée Rodin (place) in paris_landmarks
+57435 Bocca della Verità (place) in rome_landmarks
+57909 pé de moça (common) in south_american_sweets
+59390 Curaçao (place) in caribbean_islands
+59634 gougères (common) in french_food
+59641 calçots (common) in spanish_food
+59667 grünkohl (common) in german_food
+59668 rote grütze (common) in german_food
+59672 handkäse (common) in german_food
+59675 sülze (common) in german_food
+59677 lecsó (common) in eastern_european_food
+59683 zacuscă (common, fallback letter) in eastern_european_food
+59686 pişi (common, fallback letter) in turkish_breakfast
+59687 çılbır (common) in turkish_breakfast
+59688 kaşar (common, fallback letter) in turkish_breakfast
+59691 çökelek (common) in turkish_breakfast
+59692 tereyağı (common, fallback letter) in turkish_breakfast
+59695 kağıt kebabı (common, fallback letter) in kebab_types
+59696 çöp şiş (common, fallback letter) in kebab_types
+59698 yoğurtlu kebab (common, fallback letter) in kebab_types
+59699 tas kebabı (common) in kebab_types
+59700 orman kebabı (common) in kebab_types
+59701 kuyu kebabı (common) in kebab_types
+59702 kısır (common) in meze
+59708 arnavut ciğeri (common, fallback letter) in meze
+59709 yalancı dolma (common) in meze
+59804 tacacá (common) in brazilian_food
+59805 baião de dois (common) in brazilian_food
+59806 pirão (common) in brazilian_food
+59808 bobó de camarão (common) in brazilian_food
+59809 feijão tropeiro (common) in brazilian_food
+59810 maniçoba (common) in brazilian_food
+59837 blaufränkisch (common) in red_wines
+59841 mencía (common) in red_wines
+59879 kümmel (common) in liqueurs
+59881 pacharán (common) in liqueurs
+60494 Huascarán (place) in andes
+60515 Réunion (place) in east_african_countries
+60520 Rías Baixas (place) in wine_regions
+60534 Tietê (place) in south_american_rivers
+60535 Biobío (place) in south_american_rivers
+60537 Guaporé (place) in south_american_rivers
+60759 Zürs (place) in famous_ski_resorts
+61784 Nílton Santos (person) in famous_soccer_players, brazilian_players
+61849 cabeçada (common) in capoeira_words
+62140 Tipón (place) in inca_engineering
+62143 Wiñay Wayna (place) in inca_engineering
+62474 chicharrón (common) in crunchy_foods
+62898 Padrón (proper) in chili_peppers
+62970 niçoise (common) in salads
+62984 cağ kebab (common, fallback letter) in kebab_types
+63175 Gaspé (place) in peninsulas
+--- only in locked themes
+19243 tarte flambée (common) in pizza_styles
+20278 crêpes Suzette (proper) in foods_named_after_people
+26842 dieciséis (common) in spanish_numbers
+26858 millón (common) in spanish_numbers
+26873 pièce de résistance (phrase) in french_phrases_in_english
+26874 raison d'être (phrase) in french_phrases_in_english
+26876 tête-à-tête (common) in french_phrases_in_english
+26877 vis-à-vis (common) in french_phrases_in_english
+26878 coup de grâce (phrase) in french_phrases_in_english
+26879 coup d'état (phrase) in french_phrases_in_english
+26881 crème de la crème (phrase) in french_phrases_in_english
+26882 bête noire (phrase) in french_phrases_in_english
+26886 mise en scène (phrase) in french_phrases_in_english
+26887 à la mode (phrase) in french_phrases_in_english
+26889 comme ci comme ça (phrase) in french_phrases_in_english
+26891 cause célèbre (phrase) in french_phrases_in_english
+26896 idée fixe (phrase) in french_phrases_in_english
+26897 prêt-à-porter (common) in french_phrases_in_english
+26958 hayır (common) in turkish_everyday_words
+26962 lütfen (common) in turkish_everyday_words
+26963 günaydın (common) in turkish_everyday_words
+26964 güle güle (common) in turkish_everyday_words
+26973 güzel (common) in turkish_everyday_words
+26974 hoş geldiniz (common, fallback letter) in turkish_everyday_words
+26977 canım (common) in turkish_everyday_words
+26981 çok (common) in turkish_everyday_words
+26983 nasılsın (common) in turkish_everyday_words
+26984 çarşı (common, fallback letter) in turkish_everyday_words
+26985 inşallah (common, fallback letter) in turkish_everyday_words
+26986 maşallah (common, fallback letter) in turkish_everyday_words
+27094 kōrero (common, fallback letter) in maori_words
+27098 haere rā (common, fallback letter) in maori_words
+27099 tēnā koe (common, fallback letter) in maori_words
+27103 tāne (common, fallback letter) in maori_words
+27110 kūmara (common, fallback letter) in maori_words
+27121 ngā mihi (common, fallback letter) in maori_words
+27132 miércoles (common) in days_of_the_week_in_spanish
+27135 sábado (common) in days_of_the_week_in_spanish
+27168 März (proper) in months_in_german
+27745 sacré bleu (common) in polite_swears
+38066 Madrileño (proper) in city_demonyms
+48385 pied-à-terre (common) in room_types
+57735 marrón (common) in colors_in_spanish
+57742 púrpura (common) in colors_in_spanish
+57747 carmesí (common) in colors_in_spanish
+57749 índigo (common) in colors_in_spanish
+57750 ámbar (common) in colors_in_spanish
+57757 doré (common) in colors_in_french
+57758 argenté (common) in colors_in_french
+57765 écarlate (common) in colors_in_french
+57775 sarı (common) in colors_in_turkish
+57794 kızıl (common) in colors_in_turkish
+57795 fildişi (common, fallback letter) in colors_in_turkish
+57797 füme (common) in colors_in_turkish
+57799 vişne (common, fallback letter) in colors_in_turkish
+57801 çivit (common) in colors_in_turkish
+57892 ekmek kadayıfı (common) in sweet_treats_of_turkey
+62336 teşekkür ederim (common, fallback letter) in turkish_everyday_words
+62337 türk kahvesi (common) in turkish_everyday_words
