@@ -256,6 +256,7 @@ Allowed in the library (a shown text equal to another word's, two synonyms with 
 ### 8.6 Versions and pinning
 
 - `v` is the format version: 4 since 2026-11-18 (Simon), with no change of layout from the last version 3 file; it marks the fields added and moved while it stayed 3 (2026-10-31 to 2026-11-17: theme `difficulty` was dropped from position 4 and came back at 12; the link field `popularity` became `typicality`; the entry column `rec` became `familiarity`; `dialect`, `regionBits`, `kindNames`, `regionsHi`, `breaks`, `nameWordLinks`, `nameThemeLinks`, `shownUK` and entry bit 512 were added). A reader must find theme and link positions by name and treat unknown keys as optional.
+- The game reads each link as four values in a fixed order (theme, difficulty, typicality, shown) without looking at `linkFields` (its issue I23, 2026-11-18): keep that order, or tell `_WS_` before it changes.
 - `lib.version` identifies the content: it rises on every Save project file that changed something. The export must be regenerated after every library version and a library change must come with a new version, since the game tells exports apart by it.
 - The game **pins** one library version: it re-slims the committed export into its own copy and runs its checks in its three difficulty modes, only when Simon asks. A pin rebuilds saved level histories and any change to a theme's links shifts most levels, so library changes are best batched into one version. The pinned version is recorded in ISSUES.md, section "Open between the library and the game".
 

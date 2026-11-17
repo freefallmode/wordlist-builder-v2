@@ -1,0 +1,316 @@
+Library v395 (tools/gen/batch395.mjs, 2026-11-18 00:25): 150 changes. Simon delegated T31 and I19 to the manager, who decided (ISSUES.md); the rule is
+  in DESIGN-entries.md after the I18 paragraph: every link in a given-name theme sits on a given-name entry (gloss "name", type person); another sense
+  of the same word is its own entry and keeps its own themes; a name entry holds no link of another sense.
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v394; no new or gone issue messages), counted by the script
+  with validate() before and after, as batch394.mjs.
+Counts: 47 new entries (45 roots, 2 spelling aliases), 51 links moved (same typicality), 23 type changes, 29 gloss changes. Given-name themes as
+  batch394 (22): the "names" folder without surnames, plus flowers_used_as_girls_names.
+
+Decisions beyond the manager's list (why):
+  - New [name] entries take the old entry's fam, so every moved name link keeps its difficulty (as batch394). Where the receiving entry is another
+    word (dot, ben, Sofia, Alexandria [city]) the link takes that entry's fam, so its difficulty changes (export section below).
+  - Sophia: no Sofia place entry existed; "Sofia" 29620 was a spelling alias of Sophia [name] and inherited the capital links, so the export
+    listed both Sophia and Sofia in capital cities. New Sofia [city] place, fam 2 (as Vienna; a capital most players know, less than Paris).
+    The alias keeps its place under Sophia (a real spelling of the name), gets gloss "name" (needs-gloss beside Sofia [city]) and type person.
+  - Ben: ben 27437 [mountain] existed (scottish_words), so it takes the link (fam 4: difficulty 1.7 -> 3.4). The link had no shown text, so the
+    game showed "Ben": the case-only display goes. Ben's place in the theme group with Ben Nevis 30980 goes to ben (one per level, since "ben"
+    is part of "Ben Nevis").
+  - Dot: the only lowercase dot was dot [music] 11169, so a new dot [small spot] common fam 1 (as ant, crumb) takes tiny_things.
+  - Persephone stays proper [goddess] (37 of 40 greek_gods members are proper; v394 did not retype deities). Leo stays proper [zodiac sign] (all
+    24 zodiac_signs members are proper).
+  - May: no May [name] existed (v391 put the link on May [month]; Mai [name] 29880 is a different name), so May [name] is new, as the other
+    months. April, June, July get gloss "month" (needs-gloss), as May and August [month] already had.
+  - Virtues: no lowercase honor ... honesty existed. The new commons take the old fam (the rating was of the word; the knightly_virtues
+    difficulties stay), gloss "virtue" (needs-gloss beside the name). honour and valour are added as UK spelling aliases (region UK, no links), as
+    colour, humour, armour; there were none before. Valor's and Honesty's places in the knightly_virtues synonym groups (with courage, bravery;
+    with truthfulness) go to valor and honesty. None of the six links had a shown text, so the case-only display ("Honor" ...) goes.
+  - Alexandria [name] 29905 was not only in name themes: its places_named_after_people link is the Egyptian city, so it moves to the existing
+    Alexandria [city] 35987 (fam 3: difficulty 1.7 -> 2.4), then the entry is retyped person.
+  - Glosses and types of the places: Siena [city], Montana [US state] (as Virginia), Lourdes [town], Ravi [river], Vladimir [city], Norma and
+    Carmen [opera]; type place for counties, continents, cities, states, rivers; Norma title (46 of 48 famous_operas are titles).
+  - Item 4 (same pattern, fixed): 18 entries typed place that held names_that_are_places (and Sydney unisex_names, Florence old_fashioned_names)
+    are split exactly as Lincoln and Devon: Holland, India, Israel, Kenya [country]; London, Paris, Sydney, Venice, Cairo, Vienna, Florence,
+    Denver, Orlando, Regina [city]; Troy [ancient city]; Brittany, Kimberley [region]; Virginia [US state]. Glosses added where the place had none
+    (needs-gloss). Their translation aliases Venezia, Wien, Firenze no longer inherit names_that_are_places (and Firenze old_fashioned_names).
+    Carmen [opera] (latin_american_names) split as Norma; myrtle (a plant, lowercase in old_fashioned_names, allow-listed) split: Myrtle [name]
+    takes the link, myrtle gets gloss "plant".
+
+Script log (dry run; --apply made the same changes):
+  T31.1: other sense holds a name link: split
+  new entry 67467 "Persephone" [name] person fam 2, region none, status gen  (fam 2 as 21833, so the moved links keep their difficulty)
+  girls_names: 21833 "Persephone" [goddess] proper (typicality 4) -> 67467 "Persephone" [name] person (same typicality)  (T31: the goddess keeps greek_gods; Persephone stays proper [goddess], as Hera, Athena, Demeter (37 of 40 in greek_gods are proper))
+  new entry 67468 "Leo" [name] person fam 1, region none, status gen  (fam 1 as 25457, so the moved links keep their difficulty)
+  boys_names: 25457 "Leo" [zodiac sign] proper (typicality 3) -> 67468 "Leo" [name] person (same typicality)  (T31: the sign keeps zodiac_signs; Leo stays proper [zodiac sign], as all 24 zodiac_signs members)
+  29782 "Norma" proper gloss none -> opera  (needs-gloss once the [name] entry exists)
+  29782 "Norma" [opera] proper type proper -> title  (an opera is a title (46 of 48 in famous_operas))
+  new entry 67469 "Norma" [name] person fam 3, region none, status gen  (fam 3 as 29782, so the moved links keep their difficulty)
+  old_fashioned_names: 29782 "Norma" [opera] title (typicality 4) -> 67469 "Norma" [name] person (same typicality)  (T31: Norma the opera keeps famous_operas)
+  56161 "Ravi" proper gloss none -> river  (needs-gloss once the [name] entry exists)
+  56161 "Ravi" [river] proper type proper -> place  (a river is a place (31 of 32 in asian_rivers))
+  new entry 67470 "Ravi" [name] person fam 3, region none, status gen  (fam 3 as 56161, so the moved links keep their difficulty)
+  indian_names: 56161 "Ravi" [river] place (typicality 3) -> 67470 "Ravi" [name] person (same typicality)  (T31: the Ravi river keeps asian_rivers)
+  56262 "Vladimir" proper gloss none -> city  (needs-gloss once the [name] entry exists)
+  56262 "Vladimir" [city] proper type proper -> place  (a city is a place (31 of 32 in russian_cities))
+  new entry 67471 "Vladimir" [name] person fam 2, region none, status gen  (fam 2 as 56262, so the moved links keep their difficulty)
+  russian_names: 56262 "Vladimir" [city] place (typicality 1) -> 67471 "Vladimir" [name] person (same typicality)  (T31: the city keeps russian_cities)
+
+  T31.2: Sophia in capital_cities and european_capitals (the city is Sofia; Sofia 29620 was a spelling alias of Sophia [name], so the export showed both in those themes)
+  new entry 67472 "Sofia" [city] place fam 2, region none, status gen  (T31: the capital of Bulgaria; no Sofia place entry existed. fam 2 as Vienna, Prague (a capital most players know, less than Paris or Cairo); gloss "city" as Paris, London [city])
+  capital_cities: 29619 "Sophia" [name] proper (typicality 3) -> 67472 "Sofia" [city] place (same typicality)  (T31: the city is Sofia)
+  european_capitals: 29619 "Sophia" [name] proper (typicality 3) -> 67472 "Sofia" [city] place (same typicality)  (T31: the city is Sofia)
+  29620 "Sofia" proper gloss none -> name  (needs-gloss: the alias "Sofia" (of Sophia [name]) now shares its text with Sofia [city])
+  29619 "Sophia" [name] proper type proper -> person  (I18: Sophia keeps only name themes (girls_names, latin_american_names))
+
+  T31.3: Ben in scottish_landscape_words
+  scottish_landscape_words: 29835 "Ben" [name] proper (typicality 2) -> 27437 "ben" [mountain] common (same typicality; its place in the theme group [27437,30980] goes with it (group with Ben Nevis 30980: one of the two per level, as "ben" is part of "Ben Nevis"; the same holds for ben [mountain]))  (T31: ben, a Scottish mountain (as in Ben Nevis), is the common word; ben 27437 [mountain] exists (scottish_words). The link had no shown text, so the export showed "Ben" in the theme: case-only, now "ben")
+  29835 "Ben" [name] proper type proper -> person  (I18: Ben [name] keeps only short_forms_of_names)
+
+  T31.4: Dot in tiny_things
+  new entry 67473 "dot" [small spot] common fam 1, region none, status gen  (T31: the small mark; the only lowercase dot was dot [music] 11169 (notes_and_rests). fam 1 as ant, crumb in tiny_things)
+  tiny_things: 29843 "Dot" [name] proper (typicality 4) -> 67473 "dot" [small spot] common (same typicality)  (T31: a dot is a tiny thing; the name is not)
+  29843 "Dot" [name] proper type proper -> person  (I18: Dot [name] keeps only short_forms_of_names)
+
+  I19.1: months in names_that_are_months: split as T30 (no May [name] existed: v391 put the link on May [month]; Mai [name] 29880 is another name)
+  15 "April" proper gloss none -> month  (needs-gloss once the [name] entry exists; as May, August [month])
+  new entry 67474 "April" [name] person fam 1, region none, status gen  (fam 1 as 15, so the moved links keep their difficulty)
+  names_that_are_months: 15 "April" [month] proper (typicality 1) -> 67474 "April" [name] person (same typicality)  (I19: the month keeps its month themes)
+  16 "June" proper gloss none -> month  (needs-gloss once the [name] entry exists; as May, August [month])
+  new entry 67475 "June" [name] person fam 1, region none, status gen  (fam 1 as 16, so the moved links keep their difficulty)
+  names_that_are_months: 16 "June" [month] proper (typicality 1) -> 67475 "June" [name] person (same typicality)  (I19: the month keeps its month themes)
+  25269 "July" proper gloss none -> month  (needs-gloss once the [name] entry exists; as May, August [month])
+  new entry 67476 "July" [name] person fam 1, region none, status gen  (fam 1 as 25269, so the moved links keep their difficulty)
+  names_that_are_months: 25269 "July" [month] proper (typicality 2) -> 67476 "July" [name] person (same typicality)  (I19: the month keeps its month themes)
+  new entry 67477 "May" [name] person fam 1, region none, status gen  (fam 1 as 25268, so the moved links keep their difficulty)
+  names_that_are_months: 25268 "May" [month] proper (typicality 2) -> 67477 "May" [name] person (same typicality)  (I19: the month keeps its month themes)
+  new entry 67478 "August" [name] person fam 1, region none, status gen  (fam 1 as 25271, so the moved links keep their difficulty)
+  names_that_are_months: 25271 "August" [month] proper (typicality 2) -> 67478 "August" [name] person (same typicality)  (I19: the month keeps its month themes)
+
+  I19.2: virtue names that also served knightly_virtues: the capitalised entry is the name, a lowercase common entry takes knightly_virtues
+  new entry 67479 "honor" [virtue] common fam 2, region none, status gen  (I19: the virtue; no lowercase "honor" existed. fam 2 as Honor 29911 (the rating was of the word), so the knightly_virtues link keeps its difficulty; gloss "virtue" (needs-gloss beside Honor [name]))
+  knightly_virtues: 29911 "Honor" proper (typicality 1) -> 67479 "honor" [virtue] common (same typicality)  (I19: the knightly virtue is the common word, as justice, faith, loyalty there. No shown text on the link, so the export showed "Honor": case-only, now "honor")
+  new entry 67480 "honour" common fam 2, spelling alias of 67479, region UK, status gen  (I19: UK spelling of honor, as colour, humour, armour (region UK, no links of its own))
+  29911 "Honor" proper gloss none -> name  (the rule: a given-name entry has gloss "name"; needs-gloss beside honor [virtue])
+  29911 "Honor" [name] proper type proper -> person  (I18: keeps only names_that_are_virtues)
+  new entry 67481 "mercy" [virtue] common fam 2, region none, status gen  (I19: the virtue; no lowercase "mercy" existed. fam 2 as Mercy 29914 (the rating was of the word), so the knightly_virtues link keeps its difficulty; gloss "virtue" (needs-gloss beside Mercy [name]))
+  knightly_virtues: 29914 "Mercy" proper (typicality 3) -> 67481 "mercy" [virtue] common (same typicality)  (I19: the knightly virtue is the common word, as justice, faith, loyalty there. No shown text on the link, so the export showed "Mercy": case-only, now "mercy")
+  29914 "Mercy" proper gloss none -> name  (the rule: a given-name entry has gloss "name"; needs-gloss beside mercy [virtue])
+  29914 "Mercy" [name] proper type proper -> person  (I18: keeps only names_that_are_virtues)
+  new entry 67482 "temperance" [virtue] common fam 3, region none, status gen  (I19: the virtue; no lowercase "temperance" existed. fam 3 as Temperance 29915 (the rating was of the word), so the knightly_virtues link keeps its difficulty; gloss "virtue" (needs-gloss beside Temperance [name]))
+  knightly_virtues: 29915 "Temperance" proper (typicality 4) -> 67482 "temperance" [virtue] common (same typicality)  (I19: the knightly virtue is the common word, as justice, faith, loyalty there. No shown text on the link, so the export showed "Temperance": case-only, now "temperance")
+  29915 "Temperance" proper gloss none -> name  (the rule: a given-name entry has gloss "name"; needs-gloss beside temperance [virtue])
+  29915 "Temperance" [name] proper type proper -> person  (I18: keeps only names_that_are_virtues)
+  new entry 67483 "valor" [virtue] common fam 3, region none, status gen  (I19: the virtue; no lowercase "valor" existed. fam 3 as Valor 29922 (the rating was of the word), so the knightly_virtues link keeps its difficulty; gloss "virtue" (needs-gloss beside Valor [name]))
+  knightly_virtues: 29922 "Valor" proper (typicality 2) -> 67483 "valor" [virtue] common (same typicality; its place in the theme group [67483,54076,54077] goes with it (synonym group with courage 54076, bravery 54077: the virtue valor))  (I19: the knightly virtue is the common word, as justice, faith, loyalty there. No shown text on the link, so the export showed "Valor": case-only, now "valor")
+  new entry 67484 "valour" common fam 3, spelling alias of 67483, region UK, status gen  (I19: UK spelling of valor, as colour, humour, armour (region UK, no links of its own))
+  29922 "Valor" proper gloss none -> name  (the rule: a given-name entry has gloss "name"; needs-gloss beside valor [virtue])
+  29922 "Valor" [name] proper type proper -> person  (I18: keeps only names_that_are_virtues)
+  new entry 67485 "humility" [virtue] common fam 3, region none, status gen  (I19: the virtue; no lowercase "humility" existed. fam 3 as Humility 29925 (the rating was of the word), so the knightly_virtues link keeps its difficulty; gloss "virtue" (needs-gloss beside Humility [name]))
+  knightly_virtues: 29925 "Humility" proper (typicality 4) -> 67485 "humility" [virtue] common (same typicality)  (I19: the knightly virtue is the common word, as justice, faith, loyalty there. No shown text on the link, so the export showed "Humility": case-only, now "humility")
+  29925 "Humility" proper gloss none -> name  (the rule: a given-name entry has gloss "name"; needs-gloss beside humility [virtue])
+  29925 "Humility" [name] proper type proper -> person  (I18: keeps only names_that_are_virtues)
+  new entry 67486 "honesty" [virtue] common fam 2, region none, status gen  (I19: the virtue; no lowercase "honesty" existed. fam 2 as Honesty 29926 (the rating was of the word), so the knightly_virtues link keeps its difficulty; gloss "virtue" (needs-gloss beside Honesty [name]))
+  knightly_virtues: 29926 "Honesty" proper (typicality 3) -> 67486 "honesty" [virtue] common (same typicality; its place in the theme group [67486,54083] goes with it (synonym group with truthfulness 54083: the virtue honesty))  (I19: the knightly virtue is the common word, as justice, faith, loyalty there. No shown text on the link, so the export showed "Honesty": case-only, now "honesty")
+  29926 "Honesty" proper gloss none -> name  (the rule: a given-name entry has gloss "name"; needs-gloss beside honesty [virtue])
+  29926 "Honesty" [name] proper type proper -> person  (I18: keeps only names_that_are_virtues)
+
+  I19.3: places in names_that_are_places
+  29724 "Devon" [county] proper type proper -> place  (a county is a place (39 of 40 in english_counties))
+  new entry 67487 "Devon" [name] person fam 3, region none, status gen  (fam 3 as 29724, so the moved links keep their difficulty)
+  unisex_names: 29724 "Devon" [county] place (typicality 4) -> 67487 "Devon" [name] person (same typicality)  (I19: Devon [county] keeps english_counties; the name entry takes unisex_names and names_that_are_places)
+  names_that_are_places: 29724 "Devon" [county] place (typicality 3) -> 67487 "Devon" [name] person (same typicality)  (I19: Devon [county] keeps english_counties; the name entry takes unisex_names and names_that_are_places)
+  29888 "Asia" [continent] proper type proper -> place  (a continent is a place (6 of 7 in continents))
+  new entry 67488 "Asia" [name] person fam 1, region none, status gen  (fam 1 as 29888, so the moved links keep their difficulty)
+  names_that_are_places: 29888 "Asia" [continent] place (typicality 3) -> 67488 "Asia" [name] person (same typicality)  (I19: Asia [continent] keeps continents, continents_and_supercontinents)
+  29892 "Lincoln" [city] proper type proper -> place  (a city is a place, as Denver, Augusta [city])
+  new entry 67489 "Lincoln" [name] person fam 2, region none, status gen  (fam 2 as 29892, so the moved links keep their difficulty)
+  names_that_are_places: 29892 "Lincoln" [city] place (typicality 3) -> 67489 "Lincoln" [name] person (same typicality)  (I19: Lincoln [city] keeps british_cities, us_state_capitals, places_named_after_people, us_cities)
+  29896 "Siena" proper gloss none -> city  (needs-gloss once the [name] entry exists)
+  29896 "Siena" [city] proper type proper -> place  (a city is a place (31 of 32 in italian_cities))
+  new entry 67490 "Siena" [name] person fam 3, region none, status gen  (fam 3 as 29896, so the moved links keep their difficulty)
+  names_that_are_places: 29896 "Siena" [city] place (typicality 3) -> 67490 "Siena" [name] person (same typicality)  (I19: Siena keeps italian_cities)
+  29899 "Cheyenne" [city] proper type proper -> place  (a city is a place, as Denver, Augusta [city])
+  new entry 67491 "Cheyenne" [name] person fam 3, region none, status gen  (fam 3 as 29899, so the moved links keep their difficulty)
+  names_that_are_places: 29899 "Cheyenne" [city] place (typicality 3) -> 67491 "Cheyenne" [name] person (same typicality)  (I19: Cheyenne [city] keeps us_state_capitals)
+  29900 "Montana" proper gloss none -> US state  (needs-gloss once the [name] entry exists; as Virginia [US state])
+  29900 "Montana" [US state] proper type proper -> place  (a state is a place (49 of 50 in us_states))
+  new entry 67492 "Montana" [name] person fam 2, region none, status gen  (fam 2 as 29900, so the moved links keep their difficulty)
+  names_that_are_places: 29900 "Montana" [US state] place (typicality 2) -> 67492 "Montana" [name] person (same typicality)  (I19: Montana keeps us_states)
+  29904 "Lourdes" proper gloss none -> town  (needs-gloss once the [name] entry exists)
+  29904 "Lourdes" [town] proper type proper -> place  (a town is a place (29 of 31 in french_cities))
+  new entry 67493 "Lourdes" [name] person fam 4, region none, status gen  (fam 4 as 29904, so the moved links keep their difficulty)
+  names_that_are_places: 29904 "Lourdes" [town] place (typicality 5) -> 67493 "Lourdes" [name] person (same typicality)  (I19: Lourdes keeps pilgrimage_sites, holy_cities, french_cities)
+  places_named_after_people: 29905 "Alexandria" [name] proper (typicality 1) -> 35987 "Alexandria" [city] place (same typicality)  (I19: that link is the city (Alexandria in Egypt, named after Alexander); Alexandria [city] 35987 exists (african_cities, port_cities). Not a plain retype: the [name] entry held a place link)
+  29905 "Alexandria" [name] proper type proper -> person  (I19: Alexandria [name] keeps only names_that_are_places)
+  29882 "Brooklyn" [borough] proper gloss borough -> name  (I19: Brooklyn was only in names_that_are_places: the entry is the name (Brooklyn Beckham ...), not the borough)
+  29882 "Brooklyn" [name] proper type proper -> person  (I19)
+  29897 "Carolina" [US state] proper gloss US state -> name  (I19: Carolina was only in names_that_are_places: the entry is the name, not the US state)
+  29897 "Carolina" [name] proper type proper -> person  (I19)
+
+  Same pattern found while checking (item 4): place entries holding given-name links
+  2141 "Holland" place gloss none -> country  (needs-gloss once the [name] entry exists)
+  new entry 67494 "Holland" [name] person fam 1, region none, status gen  (fam 1 as 2141, so the moved links keep their difficulty)
+  names_that_are_places: 2141 "Holland" [country] place (typicality 4) -> 67494 "Holland" [name] person (same typicality)  (item 4: Holland keeps its place themes (as Lincoln, Devon above))
+  2153 "India" place gloss none -> country  (needs-gloss once the [name] entry exists)
+  new entry 67495 "India" [name] person fam 1, region none, status gen  (fam 1 as 2153, so the moved links keep their difficulty)
+  names_that_are_places: 2153 "India" [country] place (typicality 2) -> 67495 "India" [name] person (same typicality)  (item 4: India keeps its place themes (as Lincoln, Devon above))
+  2171 "Israel" place gloss none -> country  (needs-gloss once the [name] entry exists)
+  new entry 67496 "Israel" [name] person fam 2, region none, status gen  (fam 2 as 2171, so the moved links keep their difficulty)
+  names_that_are_places: 2171 "Israel" [country] place (typicality 4) -> 67496 "Israel" [name] person (same typicality)  (item 4: Israel keeps its place themes (as Lincoln, Devon above))
+  2176 "Kenya" place gloss none -> country  (needs-gloss once the [name] entry exists)
+  new entry 67497 "Kenya" [name] person fam 2, region none, status gen  (fam 2 as 2176, so the moved links keep their difficulty)
+  names_that_are_places: 2176 "Kenya" [country] place (typicality 4) -> 67497 "Kenya" [name] person (same typicality)  (item 4: Kenya keeps its place themes (as Lincoln, Devon above))
+  new entry 67498 "London" [name] person fam 1, region none, status gen  (fam 1 as 2217, so the moved links keep their difficulty)
+  names_that_are_places: 2217 "London" [city] place (typicality 2) -> 67498 "London" [name] person (same typicality)  (item 4: London keeps its place themes (as Lincoln, Devon above))
+  new entry 67499 "Paris" [name] person fam 1, region none, status gen  (fam 1 as 2218, so the moved links keep their difficulty)
+  names_that_are_places: 2218 "Paris" [city] place (typicality 1) -> 67499 "Paris" [name] person (same typicality)  (item 4: Paris keeps its place themes (as Lincoln, Devon above))
+  2225 "Sydney" place gloss none -> city  (needs-gloss once the [name] entry exists)
+  new entry 67500 "Sydney" [name] person fam 1, region none, status gen  (fam 1 as 2225, so the moved links keep their difficulty)
+  unisex_names: 2225 "Sydney" [city] place (typicality 4) -> 67500 "Sydney" [name] person (same typicality)  (item 4: Sydney keeps its place themes (as Lincoln, Devon above))
+  names_that_are_places: 2225 "Sydney" [city] place (typicality 2) -> 67500 "Sydney" [name] person (same typicality)  (item 4: Sydney keeps its place themes (as Lincoln, Devon above))
+  new entry 67501 "Venice" [name] person fam 1, region none, status gen  (fam 1 as 2232, so the moved links keep their difficulty)
+  names_that_are_places: 2232 "Venice" [city] place (typicality 3) -> 67501 "Venice" [name] person (same typicality)  (item 4: Venice keeps its place themes (as Lincoln, Devon above))
+  2236 "Cairo" place gloss none -> city  (needs-gloss once the [name] entry exists)
+  new entry 67502 "Cairo" [name] person fam 1, region none, status gen  (fam 1 as 2236, so the moved links keep their difficulty)
+  names_that_are_places: 2236 "Cairo" [city] place (typicality 5) -> 67502 "Cairo" [name] person (same typicality)  (item 4: Cairo keeps its place themes (as Lincoln, Devon above))
+  2244 "Vienna" place gloss none -> city  (needs-gloss once the [name] entry exists)
+  new entry 67503 "Vienna" [name] person fam 2, region none, status gen  (fam 2 as 2244, so the moved links keep their difficulty)
+  names_that_are_places: 2244 "Vienna" [city] place (typicality 3) -> 67503 "Vienna" [name] person (same typicality)  (item 4: Vienna keeps its place themes (as Lincoln, Devon above))
+  2270 "Florence" place gloss none -> city  (needs-gloss once the [name] entry exists)
+  new entry 67504 "Florence" [name] person fam 2, region none, status gen  (fam 2 as 2270, so the moved links keep their difficulty)
+  old_fashioned_names: 2270 "Florence" [city] place (typicality 3) -> 67504 "Florence" [name] person (same typicality)  (item 4: Florence keeps its place themes (as Lincoln, Devon above))
+  names_that_are_places: 2270 "Florence" [city] place (typicality 2) -> 67504 "Florence" [name] person (same typicality)  (item 4: Florence keeps its place themes (as Lincoln, Devon above))
+  6623 "Troy" place gloss none -> ancient city  (needs-gloss once the [name] entry exists)
+  new entry 67505 "Troy" [name] person fam 2, region none, status gen  (fam 2 as 6623, so the moved links keep their difficulty)
+  names_that_are_places: 6623 "Troy" [ancient city] place (typicality 3) -> 67505 "Troy" [name] person (same typicality)  (item 4: Troy keeps its place themes (as Lincoln, Devon above))
+  new entry 67506 "Brittany" [name] person fam 3, region none, status gen  (fam 3 as 20664, so the moved links keep their difficulty)
+  names_that_are_places: 20664 "Brittany" [region] place (typicality 2) -> 67506 "Brittany" [name] person (same typicality)  (item 4: Brittany keeps its place themes (as Lincoln, Devon above))
+  new entry 67507 "Denver" [name] person fam 2, region none, status gen  (fam 2 as 35912, so the moved links keep their difficulty)
+  names_that_are_places: 35912 "Denver" [city] place (typicality 3) -> 67507 "Denver" [name] person (same typicality)  (item 4: Denver keeps its place themes (as Lincoln, Devon above))
+  new entry 67508 "Orlando" [name] person fam 2, region none, status gen  (fam 2 as 35921, so the moved links keep their difficulty)
+  names_that_are_places: 35921 "Orlando" [city] place (typicality 3) -> 67508 "Orlando" [name] person (same typicality)  (item 4: Orlando keeps its place themes (as Lincoln, Devon above))
+  new entry 67509 "Regina" [name] person fam 4, region none, status gen  (fam 4 as 35945, so the moved links keep their difficulty)
+  names_that_are_places: 35945 "Regina" [city] place (typicality 4) -> 67509 "Regina" [name] person (same typicality)  (item 4: Regina keeps its place themes (as Lincoln, Devon above))
+  new entry 67510 "Virginia" [name] person fam 1, region none, status gen  (fam 1 as 36170, so the moved links keep their difficulty)
+  names_that_are_places: 36170 "Virginia" [US state] place (typicality 2) -> 67510 "Virginia" [name] person (same typicality)  (item 4: Virginia keeps its place themes (as Lincoln, Devon above))
+  new entry 67511 "Kimberley" [name] person fam 4, region none, status gen  (fam 4 as 36246, so the moved links keep their difficulty)
+  names_that_are_places: 36246 "Kimberley" [region] place (typicality 3) -> 67511 "Kimberley" [name] person (same typicality)  (item 4: Kimberley keeps its place themes (as Lincoln, Devon above))
+
+  Same pattern found while checking (item 4): Carmen (as Norma), myrtle (a plant holding a name link)
+  52368 "Carmen" title gloss none -> opera  (needs-gloss once the [name] entry exists)
+  new entry 67512 "Carmen" [name] person fam 1, region none, status gen  (fam 1 as 52368, so the moved links keep their difficulty)
+  latin_american_names: 52368 "Carmen" [opera] title (typicality 3) -> 67512 "Carmen" [name] person (same typicality)  (item 4: Carmen the opera keeps famous_operas and stays title (as Norma))
+  29776 "myrtle" common gloss none -> plant  (needs-gloss once Myrtle [name] exists; myrtle is an evergreen shrub)
+  new entry 67513 "Myrtle" [name] person fam 3, region none, status gen  (fam 3 as 29776, so the moved links keep their difficulty)
+  old_fashioned_names: 29776 "myrtle" [plant] common (typicality 3) -> 67513 "Myrtle" [name] person (same typicality)  (item 4: myrtle the plant keeps mediterranean_trees; the old_fashioned_names link was lowercase (allow-listed))
+
+  Aliases typed proper whose root changed type follow it (as I18)
+  29620 "Sofia" [name] proper type proper -> person  (spelling alias of 29619 "Sophia" [name] person)
+
+Left for the manager (115 entries still in a given-name theme that are not person entries with only name themes; not changed):
+  W2 common words shown with a capital in a "names that are ..." theme (v390/v391: "otherwise the common word with a capital shown text"; the new
+    rule would need a [name] entry for each, about 75 words): colors indigo, azure, cyan, cherry, ginger, sable, magenta, fuchsia, crimson, sienna,
+    tawny, auburn, cerise, carmine, sky, sandy, raven; trees maple, willow, birch, cedar, sequoia, cypress, aspen, hawthorn, juniper, acacia,
+    magnolia, alder, linden, elder, holly, cherry tree, laurel, pine tree, cassia tree; flowers tulip, orchid, marigold, pansy, petunia, hyacinth,
+    jasmine, bluebell, dahlia, zinnia, gardenia, camellia, azalea, amaryllis, ivy, clover, heather, wisteria, blossom; gems crystal, jewel, opal,
+    beryl, garnet, jasper, topaz, amethyst, diamond, emerald, sapphire, pearl, jade, onyx; virtues joy, hope, serenity, justice, faith, harmony,
+    unity, liberty, charity.
+  flowers_used_as_girls_names on the flower entry, no shown text: rose, daisy, lily, poppy, violet, iris, lilac, primrose, jasmine, dahlia,
+    gardenia, camellia. The theme's things read as flowers, and most have a [name] entry already (Rose 29852, Violet 29853, Iris 29854, Lilac
+    29930, Primrose 29856 ...): whether the theme is a name theme is the question.
+  Given-name entries whose other themes are the same person (v394 accepted these as person): Penelope (greek_heroes), Percival (legendary_heroes,
+    famous_knights, arthurian_legend), Oisin (celtic_folklore), Nebuchadnezzar (mesopotamia), Beatrice, Rosalind, Cordelia, Gertrude
+    (Shakespeare), Matthew, Mark [name], John [name], Luke [saint] (evangelists), Peter, Mary [saint], Sebastian, Cuthbert (saints), Esther
+    (famous_queens), Meg, Beth (march_sisters); Paul [saint] only biblical_names. Strictly the character or saint is another sense; not the
+    clear pattern of a place or a thing, so left.
+  Word-play themes on a name entry (the link is about the spelling or sound, so the sense does not matter): Drew [name] rhymes_with_blue, Blake
+    rhymes_with_cake, Hannah palindromes.
+  Glosses that say name in other words: Charles [boy's name], Ruby [girl's name], Hank, Sue, Taro [given name], Salome [biblical]. Not changed
+    (gloss is not exported); the 355 given-name entries with no gloss were not given one either (a gloss is added only when needs-gloss asks).
+
+Allow-list (js/caselint-allow.js): 2 keys removed, spent (their links moved): '29843|tiny_things' (Dot in tiny things; now dot [small spot]),
+  '29776|old_fashioned_names' (myrtle in old-fashioned names; now Myrtle [name]). None added (case lint 0).
+
+Verification (2026-11-18): npm test 43/43 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (62188 -> 62235 entries; case lint 0;
+  the same 10 same-text drops); style-case.mjs 0 changes (Checks errors 0 -> 0; case lint: 0), propword-exceptions.mjs 0 changes (case lint: 0);
+  Checks 0 errors, warnings theme-name 3, long 5, maybe-duplicate 1 (unchanged); rerunning batch395.mjs prints 0 changes; node
+  tools/export-game.mjs --strict exits 0.
+Family export (the committed file) against the committed v394 file (checked by a script: every link matched by entry index and theme):
+  Format "v" 4 and linkFields ["theme","difficulty","typicality","shown"] unchanged. Entries 60578 -> 60625. No entry leaves and no index shifts:
+  every old index 0-60577 is the same entry; text, pos, flags, familiarity, regions, regionsHi, root, breaks, zipf unchanged for all of them.
+  type changes (23): Sophia 27311, Sofia 27312 (its alias), Ben 27522, Dot 27530, Brooklyn 27566, Carolina 27579, Alexandria 27585, Honor 27590,
+    Mercy 27593, Temperance 27594, Valor 27601, Humility 27604, Honesty 27605 proper -> person; Devon 27415, Asia 27572, Lincoln 27575, Siena 27578,
+    Cheyenne 27580, Montana 27581, Lourdes 27584, Ravi 52000, Vladimir 52101 proper -> place; Norma 27469 proper -> title.
+  clash changes (4): ben 25765 0 -> 775 and Ben 27522 775 -> 0 (the group with Ben Nevis); Valor 27601 3073 -> 0, Honesty 27605 3076 -> 0 (the new
+    valor and honesty carry 3073 and 3076 with courage, bravery and truthfulness).
+  New at the end (60578-60624), type person unless said, each with the links it took (same typicality; difficulty as before unless said):
+    60578 Persephone (girls names), 60579 Leo (boys names), 60580 Norma (old-fashioned names), 60581 Ravi (Indian names), 60582 Vladimir (Russian
+    names), 60583 Sofia place fam 2 (capital cities, European capitals: difficulty 2.4 -> 2.7), 60584 dot common fam 1 (tiny things: 3.7 -> 3.1),
+    60585 April, 60586 June, 60587 July, 60588 May, 60589 August (names that are months), 60590 honor, 60591 honour (spelling alias of 60590,
+    UK, flag 16), 60592 mercy, 60593 temperance, 60594 valor, 60595 valour (spelling alias of 60594, UK, flag 16), 60596 humility, 60597 honesty
+    (all common; knightly virtues), 60598 Devon (unisex names, names that are places), 60599 Asia, 60600 Lincoln, 60601 Siena, 60602 Cheyenne,
+    60603 Montana, 60604 Lourdes, 60605 Holland, 60606 India, 60607 Israel, 60608 Kenya, 60609 London, 60610 Paris (names that are places),
+    60611 Sydney (unisex names, names that are places), 60612 Venice, 60613 Cairo, 60614 Vienna (names that are places), 60615 Florence
+    (old-fashioned names, names that are places), 60616 Troy, 60617 Brittany, 60618 Denver, 60619 Orlando, 60620 Regina, 60621 Virginia,
+    60622 Kimberley (names that are places), 60623 Carmen (Latin American names), 60624 Myrtle (old-fashioned names).
+  Links 106964 -> 106958: 59 removed, 53 new. Removed (old numbers): 57 April, 61 June, 11235 Holland, 11301 India, 11427 Israel, 11451 Kenya,
+    11657 London, 11664 Paris, 11711-11712 Sydney, 11751 Venice, 11757 Venezia, 11778 Cairo, 11811 Vienna, 11816 Wien, 11937-11938 Florence,
+    11943-11944 Firenze, 25769 Troy, 49914 Brittany, 51620 Persephone, 57184 May, 57186 July, 57189 Jul, 57193 August, 57197 Aug, 57496 Leo,
+    62942 + 62944 Sophia, 62946 + 62948 Sofia (alias), 63077-63078 Devon, 63130 myrtle, 63137 Norma, 63196 Ben, 63205 Dot, 63280 Asia,
+    63285 Lincoln, 63292 Siena, 63295 Cheyenne, 63297 Montana, 63305 Lourdes, 63310 Alexandria [name], 63316 Honor, 63320 Mercy,
+    63322 Temperance, 63330 Valor, 63334 Humility, 63336 Honesty, 72370 Denver, 72397 Orlando, 72435 Regina, 72885 Virginia, 73004 Kimberley,
+    93336 Carmen, 97195 Ravi, 97297 Vladimir.
+  New links: 60352 ben (scottish landscape words, typicality 2, difficulty 3.4; old 1.7 on Ben), 72442 Alexandria [city] 33351 (places named after
+    people, typicality 1, difficulty 2.4; old 1.7), and 106907-106957 on the new entries (one each; two for Sofia, Devon, Sydney, Florence; the
+    aliases honour and valour list their root's link).
+  Shift of surviving links (old number range, change):
+    0-56 0, 58-60 -1, 62-11234 -2, 11236-11300 -3, 11302-11426 -4, 11428-11450 -5, 11452-11656 -6, 11658-11663 -7, 11665-11710 -8,
+    11713-11750 -10, 11752-11756 -11, 11758-11777 -12, 11779-11810 -13, 11812-11815 -14, 11817-11936 -15, 11939-11942 -17, 11945-25768 -19,
+    25770-49913 -20, 49915-51619 -21, 51621-57183 -22, 57185-57185 -23, 57187-57188 -24, 57190-57192 -25, 57194-57196 -26, 57198-57495 -27,
+    57497-60379 -28, 60380-62941 -27, 62943-62943 -28, 62945-62945 -29, 62947-62947 -30, 62949-63076 -31, 63079-63129 -33, 63131-63136 -34,
+    63138-63195 -35, 63197-63204 -36, 63206-63279 -37, 63281-63284 -38, 63286-63291 -39, 63293-63294 -40, 63296-63296 -41, 63298-63304 -42,
+    63306-63309 -43, 63311-63315 -44, 63317-63319 -45, 63321-63321 -46, 63323-63329 -47, 63331-63333 -48, 63335-63335 -49, 63337-72369 -50,
+    72371-72396 -51, 72398-72434 -52, 72436-72494 -53, 72495-72884 -52, 72886-73003 -53, 73005-93335 -54, 93337-97194 -55, 97196-97296 -56,
+    97298-106963 -57  Every surviving link has the same theme, difficulty, typicality and shown value. shown 3828 -> 3828, the same table (none of the moved links had
+  a shown text). nameWordLinks 321, nameThemeLinks 2284, shownUK 25: same counts and pairs once link numbers are renumbered as above.
+  Theme rows (3240, same order and ids): counts and range change for 5, because aliases stop inheriting or a link changes familiarity:
+    scottish_landscape_words counts [1,3,13,6,14] -> [1,2,13,7,14], range [2,5] -> [3,5]; places_named_after_people [2,11,21,9,9] -> [2,10,22,9,9];
+    old_fashioned_names [0,10,22,13,1] -> [0,10,22,12,1] (Firenze); names_that_are_months [2,3,5,4,0] -> [2,3,3,4,0] (Jul, Aug);
+    names_that_are_places [5,10,15,12,2] -> [5,10,15,9,2] (Venezia, Wien, Firenze). lib.version 394 -> 395, modified.
+
+HELD notice for _WS_ (draft, not sent; measured against the v394 export you were told about):
+  Library v395 (the given-name rule: every link in a given-name theme is on a given-name entry, and a name entry holds no link of another sense).
+  Family export: 60578 -> 60625 entries. No entry leaves and no entry index changes: indices 0-60577 are the same entries as in v394.
+  New at the end, 60578-60624 (47 entries). Given names (type person, linked only in name themes) taking the name links that sat on another sense
+  of the word: 60578 Persephone, 60579 Leo, 60580 Norma, 60581 Ravi, 60582 Vladimir, 60585-60589 April, June, July, May, August, 60598 Devon,
+  60599 Asia, 60600 Lincoln, 60601 Siena, 60602 Cheyenne, 60603 Montana, 60604 Lourdes, 60605-60622 Holland, India, Israel, Kenya, London, Paris,
+  Sydney, Venice, Cairo, Vienna, Florence, Troy, Brittany, Denver, Orlando, Regina, Virginia, Kimberley, 60623 Carmen, 60624 Myrtle. Other senses
+  taking links that sat on a name: 60583 Sofia (place; capital cities, European capitals, from Sophia 27311 and its alias Sofia 27312),
+  60584 dot (common; tiny things, from Dot 27530), 60590-60597 honor, honour, mercy, temperance, valor, valour, humility, honesty (common;
+  knightly virtues, from Honor 27590, Mercy 27593, Temperance 27594, Valor 27601, Humility 27604, Honesty 27605; honour and valour are UK spelling
+  aliases, flag 16). The moved links keep their typicality and difficulty, except Sofia 2.4 -> 2.7 and dot 3.7 -> 3.1.
+  Existing entries that gain a link: ben 25765 (Scottish landscape words, from Ben 27522; difficulty 1.7 -> 3.4; it also takes Ben's clash id 775,
+  shared with Ben Nevis) and Alexandria 33351 (places named after people, from Alexandria 27585; difficulty 1.7 -> 2.4). The entries that lose
+  links keep their index and their other links; the aliases Jul, Aug, Venezia, Wien and Firenze lose the name-theme links they inherited.
+  Types: 23 entries change type: 13 proper -> person (Sophia 27311, Sofia 27312, Ben 27522, Dot 27530, Brooklyn 27566, Carolina 27579, Alexandria
+  27585, Honor 27590, Mercy 27593, Temperance 27594, Valor 27601, Humility 27604, Honesty 27605); 9 proper -> place (Devon 27415, Asia 27572,
+  Lincoln 27575, Siena 27578, Cheyenne 27580, Montana 27581, Lourdes 27584, Ravi 52000, Vladimir 52101); Norma 27469 proper -> title.
+  clash: Valor 27601 and Honesty 27605 lose 3073 and 3076 (now on valor 60594 and honesty 60597); Ben 27522 loses 775 (now on ben 25765).
+  No other field of an existing entry changes.
+  Links 106964 -> 106958: 59 removed, 53 added. Link numbers 0-56 are unchanged. After that, each surviving link moves down by the number of
+  removed links before it and up by one after each of the two links added to existing entries. Removed (old numbers): 57, 61, 11235, 11301, 11427,
+  11451, 11657, 11664, 11711, 11712, 11751, 11757, 11778, 11811, 11816, 11937, 11938, 11943, 11944, 25769, 49914, 51620, 57184, 57186, 57189,
+  57193, 57197, 57496, 62942, 62944, 62946, 62948, 63077, 63078, 63130, 63137, 63196, 63205, 63280, 63285, 63292, 63295, 63297, 63305, 63310,
+  63316, 63320, 63322, 63330, 63334, 63336, 72370, 72397, 72435, 72885, 73004, 93336, 97195, 97297. Added to existing entries: new 60352 (ben,
+  after old 60379) and new 72442 (Alexandria 33351, after old 72494). The 51 links of the new entries are 106907-106957.
+  Shift by old number range: 0-56 0, 58-60 -1, 62-11234 -2, 11236-11300 -3, 11302-11426 -4, 11428-11450 -5, 11452-11656 -6, 11658-11663 -7,
+  11665-11710 -8, 11713-11750 -10, 11752-11756 -11, 11758-11777 -12, 11779-11810 -13, 11812-11815 -14, 11817-11936 -15, 11939-11942 -17,
+  11945-25768 -19, 25770-49913 -20, 49915-51619 -21, 51621-57183 -22, 57185 -23, 57187-57188 -24, 57190-57192 -25, 57194-57196 -26,
+  57198-57495 -27, 57497-60379 -28, 60380-62941 -27, 62943 -28, 62945 -29, 62947 -30, 62949-63076 -31, 63079-63129 -33, 63131-63136 -34,
+  63138-63195 -35, 63197-63204 -36, 63206-63279 -37, 63281-63284 -38, 63286-63291 -39, 63293-63294 -40, 63296 -41, 63298-63304 -42,
+  63306-63309 -43, 63311-63315 -44, 63317-63319 -45, 63321 -46, 63323-63329 -47, 63331-63333 -48, 63335 -49, 63337-72369 -50, 72371-72396 -51,
+  72398-72434 -52, 72436-72494 -53, 72495-72884 -52, 72886-73003 -53, 73005-93335 -54, 93337-97194 -55, 97196-97296 -56, 97298-106963 -57.
+  Every surviving link keeps its theme, difficulty, typicality and shown value. The shown table is unchanged (3828). nameWordLinks (321),
+  nameThemeLinks (2284) and shownUK (25) keep their counts and pairs with renumbered link numbers.
+  Theme rows: the same 3240 rows; the familiarity counts (and for Scottish landscape words the range, [2,5] -> [3,5]) change for Scottish landscape
+  words, places named after people, old-fashioned names, names that are months and names that are places.
+  Format: "v" stays 4; the link order stays theme, difficulty, typicality, shown.

@@ -42,7 +42,6 @@ export const CASE_OK = new Set([
   '26080|phonetic_alphabet', // Kilo in phonetic alphabet
   '26083|phonetic_alphabet', // Oscar in phonetic alphabet
   '26084|phonetic_alphabet', // Papa in phonetic alphabet
-  '29843|tiny_things', // Dot in tiny things
   '21|things_that_spin', // Earth in things that spin
   '22|red_things', // Mars in red things
   '38122|orange_things', // Cheddar in orange things
@@ -63,7 +62,6 @@ export const CASE_OK = new Set([
   '2357|ancient_egypt', // Sphinx in ancient Egypt
   '20962|black_death', // Genoa in Black Death
   '27376|street_names', // high street in street names
-  '29776|old_fashioned_names', // myrtle in old-fashioned names
   '7109|stars', // sun in stars: shown Sun, the name of the star among Sirius and Vega (the entry is the everyday word)
   '15383|brand_names_used_as_words', // plaster in brand names used as words: shown Band-Aid, the brand the theme is about
   '23024|wild_west_town', // Deadwood (the town) in Wild West town, beside the common word deadwood
