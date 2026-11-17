@@ -16,7 +16,7 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v395 (W9, T30, I18, T31, I19), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
-Game side: it pinned v392 on 2026-11-17 (its commit 6218de2; all checks passed); it pins only when Simon asks. The v393+v394 notice and the v395 notice (with the plain-alias result) were sent 2026-11-18 (texts at the end of `tools/gen/batch394-changes.txt` and `batch395-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
+Game side: it pinned v395 on 2026-11-18 (its commit f878b7a; all checks passed); it pins only when Simon asks. The v393+v394 notice and the v395 notice (with the plain-alias result) were sent 2026-11-18 (texts at the end of `tools/gen/batch394-changes.txt` and `batch395-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
 
 In progress: nothing.
 

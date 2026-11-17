@@ -135,7 +135,7 @@ The per-file classification behind these items is tools/gen/INVENTORY.md (static
 
 ## Open between the library and the game
 
-State of the game: library v392 is pinned (2026-11-17, at Simon's word; game commit 6218de2). The game reports: slim equals full on 400 levels per mode, all 2,000 levels per mode generate, split halves 0 clashes, verify 0 mismatches on levels 1-120, restart reproducible, play-test bot passes 100 sampled levels per mode, Unity compiles; levels differing from v389: Easy 1956, Medium 1958, Hard 1981 of 2,000. Any later change to library content needs a new pin, which only Simon asks for.
+State of the game: library v395 is pinned (2026-11-18, at Simon's word; game commit f878b7a). The game reports: slim equals full, 2,000 levels per mode, no clashing split halves, verify 0 mismatches, the play-test bot passes in all three modes; all 58 non-ASCII letters of the library are in its Fredoka font (W8). It reads links in a fixed order (its I23; DESIGN.md 8.6). Any later change to library content needs a new pin, which only Simon asks for.
 
 Reported by the Word Safari manager session on 2026-11-15; not checked on the game side. These are decisions waiting on Simon or work not built, not defects.
 
