@@ -41,7 +41,7 @@ All need Simon's go-ahead first (he approves every library change).
 |---|---|---|---|
 | 1 | Send the v391+v392 notices to `_WS_` when Simon says (look up the current `_WS_` in ListAgents; ask Simon if the tool wants a name-move confirm) | simple | manager |
 | 2 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
-| 3 | W4 word-family column (deferred) | standard | Opus |
+| 3 | W4 word-family column (deferred by Simon until the game reports a problem) | standard | Opus |
 
 ## 5. Subagents
 
