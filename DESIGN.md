@@ -312,7 +312,7 @@ js/    outline.js (theme text format)   model.js (model, indexes, ratings, edits
 data/  themes.txt   freq-en.txt   old-themes.txt (provenance)   pilot.project.json (retired format, see ISSUES.md T2)
        wordlist-en.project.json (working library)   breaks-en.txt (word=hyphenated form)   export/ (game file written by tools/export-game.mjs)
 tools/ convert-tree.mjs (one-off)   pilot.mjs (builds the pilot project)   apply-words.mjs + gen/*.mjs (generated word batches; gen/INVENTORY.md lists them)
-       export-game.mjs (writes the game file)   brk-tokens.mjs, brk-merge.mjs (line-break table)   migrate-pop.mjs, retype-phrases.mjs (one-off migrations)
+       export-game.mjs (writes the game file)   brk-tokens.mjs, brk-merge.mjs (line-break table)
        game/ (LoadV3.cs.txt: the game's format-3 reader, kept as a copy)
 tests/core.test.mjs   serve.mjs   .claude/launch.json
 ```
