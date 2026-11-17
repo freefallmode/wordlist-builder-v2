@@ -3,10 +3,8 @@
 export const CASE_OK = new Set([
   '633|desserts_and_sweets', // Skittles in desserts and sweets
   '20295|canned_foods', // Spam in canned foods
-  '25040|eggs', // Easter egg in eggs
   '1532|horse_breeds', // mustang in horse breeds
   '9863|black_and_white_animals', // Holstein in black and white animals
-  '32087|mountains', // Fuji in mountains
   '36859|famous_lakes', // Lake Biwa in famous lakes
   '50478|public_transportation', // Greyhound in public transportation
   '50478|bus_types', // Greyhound in bus types
@@ -15,20 +13,16 @@ export const CASE_OK = new Set([
   '3158|special_vehicles', // Bobcat in special vehicles
   '3158|construction_vehicles', // Bobcat in construction vehicles
   '3656|fitness', // Peloton in fitness
-  '61229|spiritual_concepts', // Brahman in Hindu spiritual concepts
   '4459|military', // Pentagon in military
   '32575|military_ranks', // Major in military ranks
   '4459|camps_and_fortifications', // Pentagon in camps and fortifications
   '29382|school_subjects', // Mandarin in school subjects
   '55461|western_wear', // Wrangler in western wear
   '43450|rowing_words', // Henley in rowing words
-  '61616|snowboard_tricks', // Canadian bacon in snowboard tricks
-  '61620|snowboard_tricks', // Swiss cheese in snowboard tricks
   '61743|tournament_words', // Sweet Sixteen in tournament words
   '61743|stages_of_a_tournament', // Sweet Sixteen in stages of a tournament
   '58909|pinball_words', // Stern in pinball words
   '5726|logic_puzzles', // Mastermind in logic puzzles
-  '6593|architecture', // Baroque in architecture
   '2357|egyptian_symbols', // Sphinx in Egyptian symbols
   '2552|navigation_tools', // Crux in navigation tools
   '6939|giants_of_legend', // cyclops in giants of legend
@@ -48,7 +42,6 @@ export const CASE_OK = new Set([
   '26080|phonetic_alphabet', // Kilo in phonetic alphabet
   '26083|phonetic_alphabet', // Oscar in phonetic alphabet
   '26084|phonetic_alphabet', // Papa in phonetic alphabet
-  '66145|blue_green_shades', // Persian in blue-green shades
   '29843|tiny_things', // Dot in tiny things
   '21|things_that_spin', // Earth in things that spin
   '22|red_things', // Mars in red things
@@ -70,13 +63,11 @@ export const CASE_OK = new Set([
   '2357|ancient_egypt', // Sphinx in ancient Egypt
   '20962|black_death', // Genoa in Black Death
   '27376|street_names', // high street in street names
-  '1680|unisex_names', // mountain ash in unisex names
   '29776|old_fashioned_names', // myrtle in old-fashioned names
   '7109|stars', // sun in stars: shown Sun, the name of the star among Sirius and Vega (the entry is the everyday word)
   '15383|brand_names_used_as_words', // plaster in brand names used as words: shown Band-Aid, the brand the theme is about
   '23024|wild_west_town', // Deadwood (the town) in Wild West town, beside the common word deadwood
   '7691|colors_named_after_places', // burgundy the colour in colors named after places, beside Burgundy the wine and the region
-  '19664|wines_named_for_places', // burgundy the wine in wines named for places: lowercase by rule 9 (v384, both dictionaries), beside Burgundy the region
   '19663|red_wines', // Bordeaux the wine in red wines: capital kept (Simon's precedent; M-W, Random House, Collins, Oxford Learner's all capitalise it), beside bordeaux the colour (v385)
   '19663|wines', // Bordeaux the wine in wines: capital kept as in red wines (v388 lowercased rioja, beaujolais, chianti, marsala there), beside bordeaux the colour
   '19674|wines', // Madeira the wine in wines: capital kept (v385: M-W, Collins, Oxford Learner's capitalise it), beside madeira the cake (v388 made wines mostly common)
