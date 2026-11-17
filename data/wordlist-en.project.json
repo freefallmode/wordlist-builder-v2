@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":392,"modified":"2026-11-17 13:45"},"nextId":67462,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
+{"project":{"schema":1,"lang":"en","lib":{"version":393,"modified":"2026-11-17 15:58"},"nextId":67464,"settings":{"minWords":4,"maxWords":4,"maxLen":20,"model":"claude-opus-5-5"}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]],"ident":1},
@@ -29492,7 +29492,7 @@
 {"id":27143,"text":"Sonntag","type":"proper","fam":3,"typ":{"days_of_the_week_in_german":2},"status":"gen"},
 {"id":27144,"text":"janvier","fam":3,"typ":{"months_in_french":1},"status":"gen"},
 {"id":27145,"text":"février","fam":4,"typ":{"months_in_french":3},"status":"gen","show":{"months_in_french":"fevrier"}},
-{"id":27146,"text":"avril","fam":3,"typ":{"months_in_french":3,"names_that_are_months":4},"status":"gen","show":{"names_that_are_months":"Avril"}},
+{"id":27146,"text":"avril","gloss":"French month","fam":3,"typ":{"months_in_french":3},"status":"gen"},
 {"id":27147,"text":"mai","gloss":"French month","fam":3,"typ":{"months_in_french":3},"status":"gen"},
 {"id":27148,"text":"juin","fam":3,"typ":{"months_in_french":2},"status":"gen"},
 {"id":27149,"text":"juillet","fam":4,"typ":{"months_in_french":3},"status":"gen"},
@@ -29506,7 +29506,7 @@
 {"id":27157,"text":"marzo","fam":3,"typ":{"months_in_spanish":2},"status":"gen"},
 {"id":27158,"text":"abril","fam":3,"typ":{"months_in_spanish":3},"status":"gen"},
 {"id":27159,"text":"junio","fam":3,"typ":{"months_in_spanish":2},"status":"gen"},
-{"id":27160,"text":"julio","gloss":"Spanish month","fam":3,"typ":{"months_in_spanish":3,"names_that_are_months":4},"status":"gen","show":{"names_that_are_months":"Julio"}},
+{"id":27160,"text":"julio","gloss":"Spanish month","fam":3,"typ":{"months_in_spanish":3},"status":"gen"},
 {"id":27161,"text":"agosto","fam":3,"typ":{"months_in_spanish":3},"status":"gen"},
 {"id":27162,"text":"septiembre","fam":4,"typ":{"months_in_spanish":3},"status":"gen"},
 {"id":27163,"text":"octubre","fam":3,"typ":{"months_in_spanish":2},"status":"gen"},
@@ -65645,5 +65645,7 @@
 {"id":67458,"text":"Aurora","gloss":"name","type":"person","fam":2,"typ":{"names_that_are_places":4},"status":"gen"},
 {"id":67459,"text":"cotes du rhone","fam":4,"aliasOf":53808,"aliasKind":"spelling","status":"gen"},
 {"id":67460,"text":"Chateauneuf-du-Pape","type":"proper","fam":5,"aliasOf":53809,"aliasKind":"spelling","status":"gen"},
-{"id":67461,"text":"Pouilly-Fuisse","type":"proper","fam":5,"aliasOf":53835,"aliasKind":"spelling","status":"gen"}
+{"id":67461,"text":"Pouilly-Fuisse","type":"proper","fam":5,"aliasOf":53835,"aliasKind":"spelling","status":"gen"},
+{"id":67462,"text":"Avril","gloss":"name","type":"person","fam":3,"typ":{"names_that_are_months":4},"status":"gen"},
+{"id":67463,"text":"Julio","gloss":"name","type":"person","fam":3,"typ":{"names_that_are_months":4},"status":"gen"}
 ]}

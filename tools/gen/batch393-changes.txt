@@ -1,0 +1,65 @@
+Library v393 (tools/gen/batch393.mjs, 2026-11-17 15:58): 5 changes. Simon approved W9 on 2026-11-17 (game report on v392, ISSUES.md W9).
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v392; no new or gone issue messages), counted by the script
+  with validate() before and after, as batch392.mjs.
+Earlier decisions searched (git log -i --grep avril/julio/names_that_are_months/Mai, git log -S "Avril"/"Julio"): only v390 (W2: avril, julio shown
+  capital, Simon 2026-11-16) and v391 (avril/julio left as month words because no Avril/Julio name entries existed; the month entries April, June,
+  May, July, August are the theme's convention). No ruling against name entries; W9 (Simon 2026-11-17) asks for them.
+
+W9: the names_that_are_months links of the French and Spanish month words move to new given-name entries (as aurora -> Aurora at v392, peony -> Peony at v391)
+  new 67462 "Avril" [name] person, fam 3, region none, status gen, no pos (noun), as Peony 67457 / Aurora 67458.
+    fam 3: known to English-speaking players mainly through Avril Lavigne; rare as a given name in the US and UK. The month word avril is fam 3 too.
+  names_that_are_months: 27146 avril (typicality 4, shown "Avril") -> 67462 Avril (typicality 4, no shown text: the entry is capital).
+    avril keeps months_in_french 3. Its abbreviation alias avr 62349 loses the inherited link.
+  27146 avril gloss none -> "French month": needed once Avril [name] exists (Checks needs-gloss error on the dry run: two entries "avril"); the gloss
+    of its siblings mai 27147 [French month], julio 27160 [Spanish month].
+  new 67463 "Julio" [name] person, fam 3, region none, status gen, as Avril.
+    fam 3: known through Julio Iglesias and the Paul Simon song; common among US Hispanic boys but not a mainstream English-speaking name; the
+    latin american names of that standing are fam 3 (Catalina, Paloma; Santiago 2). The month word julio is fam 3.
+  names_that_are_months: 27160 julio [Spanish month] (typicality 4, shown "Julio") -> 67463 Julio (typicality 4, no shown text). julio keeps
+    months_in_spanish 3.
+  Not added to girls_names / boys_names (not asked). No same text twice in any theme. Link difficulty unchanged (3.7: same fam and typicality).
+
+Other members of names_that_are_months, checked (not changed):
+  29880 Mai [name] proper, fam 4: a real given name (Vietnamese, Japanese; also a short form of Maria), linked on the name entry: right as is.
+    Type left proper: the siblings do not clearly use one type. The original "name" entries of the names-that-are themes (29852-29939: Rose,
+    Violet, Iris, Hazel, Jordan, Chelsea, Amber, Ash, Grace ... about 105 entries with gloss "name") are proper; the ones added since v391 (Daisy,
+    Lily, Poppy, Rowan, Peony, Aurora, and now Avril, Julio) are person. For Simon: pick one type for given-name entries (17 person, 105 proper).
+  15 April, 16 June, 25268 May [month], 25269 July, 25271 August [month]: the month entries, proper. Left: v391 (Simon-approved) made the month
+    entry the theme's convention (may [might] -> May [month]); no April/June/May/July/August [name] entries exist. Jul 25270, Aug 25272 are
+    abbreviation aliases that inherit the link; the theme is locked, so they are never shown.
+  62423 Julius person, no gloss, only this theme: the name; right.
+  Doubtful (for Simon, not changed):
+    29879 Augusta proper, no gloss: one entry for both the name (names_that_are_months 3) and the city (us_state_capitals 5). Two senses on one entry.
+    34344 Augustine [saint] person: the link sits on the saint, not on a given-name entry (no Augustine [name] exists): the W9 pattern, but a saint
+      bearing the name is closer to the name than a month word is.
+    20386 Augustus person, no gloss: the emperor (ancient_rome, emperors, roman_emperors) carries the name link; as Augustine.
+
+Allow-list (js/caselint-allow.js): 2 keys removed whose links are gone: 27146|names_that_are_months, 27160|names_that_are_months. None added (the
+  links are on capital name entries; case lint 0).
+
+Verification (2026-11-17): npm test 43/43 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (62183 -> 62185 entries; case lint 0;
+  the same 10 same-text drops); style-case.mjs 0 changes, propword-exceptions.mjs 0 changes (both case lint 0); Checks 0 errors, warnings theme-name 3,
+  long 5, maybe-duplicate 1 (unchanged); rerunning batch393.mjs prints 0 changes; node tools/export-game.mjs --strict exits 0.
+Family export (the committed file) against the committed v392 file (the one the game pinned): entries 60573 -> 60575. No entry leaves and no index
+  shifts: every old index 0-60572 is the same entry, and text, pos, type, flags, familiarity, regions, regionsHi, root, clash, breaks, zipf are
+  unchanged for all of them. New at the end: 60573 "Avril" (person, fam 3) and 60574 "Julio" (person, fam 3), each with one link: names that are
+  months, typicality 4, difficulty 3.7, no shown text. Links of 3 entries changed: avril 25484, julio 25498 and avr 57936 lose names that are months
+  (they keep months in French / Spanish). Links 106965 -> 106964 (427860 -> 427856 values): link numbers below 59993 are unchanged; from avril's old
+  link 59993 they shift down by 1, from julio's old link 60008 by 2, from avr's old link 103881 by 3; Avril and Julio's links are 106962 and 106963.
+  shown 3830 -> 3828: "Avril" (old 1877) and "Julio" (old 1880) gone, so shown entries from 1877 renumber (down 1, from 1880 down 2) and link shown
+  values follow. nameWordLinks 321, nameThemeLinks 2284, shownUK 25: same counts and pairs, link numbers renumbered by the shift above. Themes: the
+  same 3240 rows, unchanged (names that are months keeps its counts: two typicality-4 links out, two in). lib.version 392 -> 393, modified, generated.
+
+Looks broken (not changed, for Simon / ISSUES.md):
+  - Given-name entries use two types (proper for the original names-that-are entries, person for the new ones); see Mai above.
+  - Augusta 29879 holds the name and the state capital on one entry.
+
+Notice DRAFT for _WS_ (HELD, not sent; nothing is pinned until Simon asks):
+  Library v393 (W9 from your v392 report). Family export: 60573 -> 60575 entries. No entry leaves and no entry index changes: indices 0-60572 are
+  the same entries as in v392. New: index 60573 "Avril" and 60574 "Julio" (given names, person, familiarity 3), each linked only in "names that are
+  months" (typicality 4), taking the links that sat on the month words: avril (French month), its abbreviation avr, and julio (Spanish month) stay at
+  their indices with their months-in-French / months-in-Spanish links but leave names that are months. Because the links array changes
+  (106965 -> 106964 links), link numbers from avril's former link (59993) on shift down: by 1 from 59993, by 2 from 60008, by 3 from 103881;
+  the two new links are 106962-106963. The shown table loses "Avril" and "Julio" (3830 -> 3828) and renumbers from index 1877.
+  nameWordLinks (321), nameThemeLinks (2284) and shownUK (25) keep their counts with renumbered link numbers. Theme rows unchanged (3240).
+  Mai, Jul and Aug are as you found them (Mai is a given name; Jul/Aug are abbreviation aliases in a locked theme).

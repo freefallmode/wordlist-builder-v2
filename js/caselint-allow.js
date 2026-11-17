@@ -106,8 +106,6 @@ export const CASE_OK = new Set([
   '31660|names_that_are_gems', // pearl shown "Pearl" in names that are gems: capital for the name sense (W2, Simon 2026-11-16, v390)
   '31662|names_that_are_gems', // jade shown "Jade" in names that are gems: capital for the name sense (W2, Simon 2026-11-16, v390)
   '31664|names_that_are_gems', // onyx shown "Onyx" in names that are gems: capital for the name sense (W2, Simon 2026-11-16, v390)
-  '27146|names_that_are_months', // avril shown "Avril" in names that are months: capital for the name sense (W2, Simon 2026-11-16, v390)
-  '27160|names_that_are_months', // julio shown "Julio" in names that are months: capital for the name sense (W2, Simon 2026-11-16, v390)
   '3972|names_that_are_virtues', // joy shown "Joy" in names that are virtues: capital for the name sense (W2, Simon 2026-11-16, v390)
   '4000|names_that_are_virtues', // hope shown "Hope" in names that are virtues: capital for the name sense (W2, Simon 2026-11-16, v390)
   '4030|names_that_are_virtues', // serenity shown "Serenity" in names that are virtues: capital for the name sense (W2, Simon 2026-11-16, v390)
