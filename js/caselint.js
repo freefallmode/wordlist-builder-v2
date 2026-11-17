@@ -19,7 +19,7 @@ export function caseLint(P) {
   const byText = new Map();
   for (const e of P.entries) if (!e.aliasOf) { const k = norm(e.text); if (!byText.has(k)) byText.set(k, []); byText.get(k).push(e); }
   const hasUkAlias = new Map();
-  for (const a of P.entries) if (a.aliasOf && (a.aliasKind === 'regional' || a.aliasKind === 'spelling') && a.region && a.region.length) hasUkAlias.set(a.aliasOf, true);
+  for (const a of P.entries) if (a.aliasOf && (a.aliasKind === 'regional' || a.aliasKind === 'spelling') && a.region && a.region.length) hasUkAlias.set(a.aliasOf, hasUkAlias.get(a.aliasOf) === 'spelling' ? 'spelling' : a.aliasKind);   // a locked theme never swaps in a regional alias, but the export still gives a spelling alias's form (shownUK)
   for (const t of P.themes) {
     if (t.group) continue;
     const members = (ix.byTheme.get(t.id) || []).filter(own(t.id));
@@ -49,7 +49,7 @@ export function caseLint(P) {
       // 3. a shown text that only changes the case, where it does harm
       if (sh && norm(sh) === norm(e.text) && sh !== e.text) {
         if (t.tkind === 'wordplay' || t.tkind === 'compound') add('case-shown-wordplay', `"${e.text}" has a case-only shown text "${sh}" in "${t.name}", a wordplay/compound theme (the game reads a shown text there as a leftover part).`, t, e);
-        if (hasUkAlias.get(e.id)) add('case-shown-alias', `"${e.text}" has a case-only shown text "${sh}" in "${t.name}" but also a regional/spelling alias (players in that region would lose it).`, t, e);
+        if (hasUkAlias.get(e.id) === 'spelling' || hasUkAlias.get(e.id) === 'regional' && !themeLocked(P, t)) add('case-shown-alias', `"${e.text}" has a case-only shown text "${sh}" in "${t.name}" but also a regional/spelling alias (players in that region would lose it).`, t, e);
       }
     }
   }

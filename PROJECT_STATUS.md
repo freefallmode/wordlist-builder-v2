@@ -20,7 +20,7 @@ Game side: it pinned v389 (its commit 2ad66b4); it pins only when Simon asks. No
 
 In progress: nothing.
 
-Waiting on Simon: send the v391 notice; export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; T29 (regional alias in names themes); Draconian lowercase; deferred W4 (word-family column).
+Waiting on Simon: send the v391 notice; export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; Draconian lowercase; deferred W4 (word-family column).
 
 ## 3. Decisions (do not reopen)
 
@@ -41,7 +41,7 @@ All need Simon's go-ahead first (he approves every library change).
 |---|---|---|---|
 | 1 | Send the v391+v392 notices to `_WS_` when Simon says (look up the current `_WS_` in ListAgents; ask Simon if the tool wants a name-move confirm) | simple | manager |
 | 2 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
-| 3 | T29: rule for regional aliases in names themes (needs Simon and maybe `_WS_`) | deep reasoning | Opus |
+| 3 | I17: nine stale allow-list keys | simple | Sonnet |
 | 4 | W4 word-family column (deferred) | standard | Opus |
 
 ## 5. Subagents
