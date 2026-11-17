@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-17, library v393. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-18, library v394. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
@@ -14,9 +14,9 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v393 (W9), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
+Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v394 (W9, T30, I18), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
-Game side: it pinned v392 on 2026-11-17 (its commit 6218de2; all checks passed); it pins only when Simon asks. **The v393 notice is HELD** (draft at the end of `tools/gen/batch393-changes.txt`); send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
+Game side: it pinned v392 on 2026-11-17 (its commit 6218de2; all checks passed); it pins only when Simon asks. **The combined v393+v394 notice is HELD** (draft at the end of `tools/gen/batch394-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
 
 In progress: nothing.
 
@@ -39,8 +39,8 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | T30 name entries for Augusta, Augustine, Augustus; I18 one type for given-name entries (both need Simon) | deep reasoning | Opus |
-| 2 | E8 (tried 2026-11-17, no gain without changing row geometry; needs Simon to accept a fixed table layout or fewer rows) | standard | Sonnet |
+| 1 | T31 wrong-sense links (Persephone, Leo, Norma, Ravi, Vladimir, Sophia, Ben, Dot); I19 proper entries left in given-name themes (both need Simon) | deep reasoning | Opus |
+| 2 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
 | 3 | W4 word-family column (deferred by Simon until the game reports a problem) | standard | Opus |
 
 ## 5. Subagents

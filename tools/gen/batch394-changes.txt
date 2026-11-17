@@ -1,0 +1,136 @@
+Library v394 (tools/gen/batch394.mjs, 2026-11-18 00:08): 476 changes. Simon approved T30 and I18 (ISSUES.md; I18 ruling: given names use person).
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v393; no new or gone issue messages), counted by the script
+  with validate() before and after, as batch393.mjs.
+
+T30: the names_that_are_months links of Augusta, Augustine and Augustus move to new given-name entries (as Avril / Julio at v393)
+  29879 Augusta proper, no gloss, was in names_that_are_months 3 and us_state_capitals 5: one entry for the name and the city.
+    Decision: 29879 stays the city (gloss "city", type proper -> place) and keeps us_state_capitals; new 67464 "Augusta" [name] takes the name link.
+    Why this way round: either way moves one link (the entry has no other given-name theme), so the tie-break is the shape of T30 and W9: in every
+    case the new [name] entry takes exactly the names_that_are_months link and the old entry keeps the rest, unchanged in the game. The city gloss
+    and type follow its sibling capitals Lincoln 29892, Cheyenne 29899, Denver 35912 [city] (Denver is place; Lincoln and Cheyenne are still
+    proper, see "left" below).
+  new 67464 "Augusta" [name] person, fam 3 (as the old entry), region none, status gen. names_that_are_months typicality 3 (difficulty 3, as before).
+  new 67465 "Augustine" [name] person, fam 3 (as Augustine [saint]): names_that_are_months typicality 4 (difficulty 3.7) from 34344 Augustine [saint],
+    which keeps famous_saints 3.
+  20386 Augustus gloss none -> "emperor" (needs-gloss once Augustus [name] exists). new 67466 "Augustus" [name] person, fam 2 (as the emperor entry;
+    the name is well known through Augustus Gloop and the emperor): names_that_are_months typicality 3 (difficulty 2.7) from 20386, which keeps
+    ancient_rome, emperors, roman_emperors.
+  Fam kept equal to the old entries so the link difficulties are unchanged. Not added to girls_names / boys_names (not asked). No same text twice in
+  any theme.
+  names_that_are_months now: April, June, May [month], July (+ alias Jul), August [month] (+ alias Aug), Mai [name], Julius, Avril [name],
+  Julio [name], Augusta [name], Augustine [name], Augustus [name]. Every link that is not a month entry is on a person entry.
+
+I18: given names are typed person (Simon). 467 entries retyped proper -> person; 0 aliases (none of the retyped entries has a proper alias).
+  Given-name themes (22): girls_names, boys_names, unisex_names, biblical_names, old_fashioned_names, short_forms_of_names, names_that_are_flowers,
+    names_that_are_gems, names_that_are_months, names_that_are_places, names_that_are_virtues, names_that_are_colors, names_that_are_trees,
+    names_around_the_world (folder), turkish_names, arabic_names, indian_names, japanese_names, latin_american_names, irish_names, russian_names,
+    flowers_used_as_girls_names. Not: surnames and its three themes, hidden_names (words that hide a name).
+  Rule in the script: a root entry typed proper with at least one link in those themes is retyped when all its themes are given-name themes (457;
+    labels "name" 100, "boy's name" 1, "biblical" 1 Salome, none 355), except Brooklyn [borough] and Carolina [US state] (labelled places), plus 10
+    whose other themes are persons as well (type person: "a named person or character"): Beatrice 29641, Rosalind 29652, Cordelia 29654, Gertrude
+    29768 (Shakespeare characters), Matthew 29667, John [name] 56818 (evangelists), Esther 29732 (famous queens), Cuthbert 29798 (famous saints),
+    Meg 29818, Beth 29819 (March sisters).
+  Retyped (467):
+    29617 Emma [name], 29618 Olivia, 29621 Isabella, 29622 Charlotte [name], 29623 Amelia, 29624 Mia, 29625 Harper, 29626 Evelyn, 29627 Abigail,
+    29628 Emily, 29629 Ella, 29630 Elizabeth, 29631 Chloe, 29632 Victoria [name], 29633 Zoe, 29634 Natalie, 29635 Madison [name], 29636 Layla,
+    29637 Nora, 29638 Stella, 29639 Hazel [name], 29640 Imogen, 29641 Beatrice, 29642 Agnes [name], 29643 Bridget, 29644 Philippa, 29645 Saoirse,
+    29646 Xanthe, 29647 Ottoline, 29649 Ingrid, 29650 Sigrid, 29651 Gwendolyn, 29652 Rosalind, 29653 Tabitha, 29654 Cordelia, 29655 Liam, 29656 Noah,
+    29657 Oliver, 29658 James, 29659 Elijah, 29660 William, 29661 Henry [name], 29662 Lucas, 29663 Benjamin, 29664 Theodore, 29665 Samuel,
+    29666 Daniel, 29667 Matthew, 29668 Joseph [name], 29669 David [name], 29670 Michael [name], 29671 Thomas [name], 29672 Charles [boy's name],
+    29673 Harry, 29674 George [name], 29675 Arthur [name], 29676 Oscar [name], 29677 Freddie, 29678 Archie, 29679 Alfie, 29680 Hugo, 29681 Rupert,
+    29682 Barnaby, 29683 Cormac, 29684 Ambrose, 29685 Casper [name], 29686 Fergus, 29687 Gideon, 29688 Lachlan, 29689 Magnus, 29690 Torsten,
+    29691 Dominic, 29692 Ignatius, 29693 Alex, 29694 Jordan [name], 29695 Taylor [name], 29696 Casey, 29697 Riley [name], 29698 Morgan [name],
+    29699 Avery, 29700 Jamie, 29701 Charlie [name], 29702 Sam [name], 29703 Quinn, 29704 Skyler, 29705 Cameron [name], 29706 Kelly [name],
+    29707 Jesse, 29708 Dana, 29709 Lee [name], 29710 Kim, 29711 Sasha, 29712 Frankie, 29713 Max, 29714 Ashley, 29715 Leslie, 29716 Shannon [name],
+    29717 Terry, 29718 Tracy, 29719 Reese, 29720 Sage [name], 29721 Bailey [name], 29722 Peyton, 29723 Hayden, 29725 Ari, 29726 Billie, 29727 Remy,
+    29728 Kai [name], 29729 Eden, 29730 Moses, 29731 Ruth, 29732 Esther, 29733 Isaac, 29734 Adam, 29735 Eve, 29736 Abraham, 29737 Sarah,
+    29738 Rebecca, 29739 Jacob [name], 29741 Martha, 29745 Solomon, 29746 Samson, 29747 Delilah, 29748 Gabriel [name], 29749 Rachel, 29750 Leah,
+    29751 Naomi, 29752 Miriam, 29753 Aaron, 29754 Jonah, 29755 Job [name], 29756 Lazarus, 29757 Timothy [name], 29758 Bathsheba,
+    29759 Salome [biblical], 29760 Jezebel, 29761 Ezekiel, 29762 Josiah, 29763 Hosea, 29764 Obadiah, 29765 Methuselah, 29766 Zacchaeus, 29767 Mildred,
+    29768 Gertrude, 29769 Ethel, 29770 Herbert, 29771 Wilbur [name], 29772 Edna, 29773 Hilda, 29774 Doris, 29775 Bertha, 29777 Gladys, 29778 Beulah,
+    29779 Edith, 29780 Mabel, 29781 Maude, 29783 Bernice, 29784 Winifred, 29785 Eunice, 29786 Harold, 29787 Clarence, 29788 Cecil, 29789 Elmer [name],
+    29790 Horace, 29791 Humphrey, 29792 Norman [name], 29793 Percy [name], 29794 Reginald, 29795 Stanley [name], 29796 Walter, 29797 Alfred,
+    29798 Cuthbert, 29799 Ernest, 29800 Chester, 29801 Rufus, 29802 Lester, 29803 Roscoe, 29804 Hubert, 29805 Mortimer, 29806 Clyde [name],
+    29807 Wilfred, 29808 Lionel, 29809 Mavis, 29810 Peggy, 29811 Liz, 29812 Ted, 29813 Jim, 29814 Tom [name], 29815 Dave, 29816 Mike [name],
+    29817 Kate, 29818 Meg, 29819 Beth, 29820 Sally, 29821 Polly [name], 29822 Molly [name], 29823 Nell, 29824 Maggie, 29825 Betty, 29826 Bess,
+    29827 Fred, 29828 Hal, 29829 Ned, 29830 Nick [name], 29831 Rob, 29832 Rick, 29833 Tony [name], 29834 Andy, 29836 Joe [name], 29837 Bud [name],
+    29838 Jen, 29839 Becky, 29840 Abby, 29841 Lottie, 29842 Tess, 29844 Trixie, 29845 Will [name], 29846 Pete, 29847 Josh, 29848 Matt, 29849 Tim,
+    29850 Hattie, 29851 Sadie, 29852 Rose [name], 29853 Violet [name], 29854 Iris [name], 29855 Lavender [name], 29856 Primrose [name],
+    29858 Flora [name], 29859 Fleur, 29861 Posy, 29862 Anemone [name], 29863 Briar, 29864 Lotus [name], 29865 Amber [name], 29869 Coral [name],
+    29873 Gemma, 29875 Esmeralda [name], 29880 Mai [name], 29883 Chelsea [name], 29884 Georgia [name], 29885 Austin [name], 29886 Dallas [name],
+    29887 Dakota [name], 29889 Camden, 29891 Phoenix [name], 29894 Sierra [name], 29895 Adelaide [name], 29901 Kent [name], 29907 Preston,
+    29908 Grace [name], 29909 Patience [name], 29910 Prudence, 29912 Verity, 29913 Constance, 29916 Felicity, 29917 Clemency, 29918 Amity,
+    29919 Chastity, 29920 Modesty, 29921 Trinity, 29923 Fidelity, 29924 Sincerity, 29927 Scarlett, 29928 Ivory [name], 29929 Olive [name],
+    29930 Lilac [name], 29931 Ebony [name], 29932 Saffron [name], 29933 Teal [name], 29934 Fawn [name], 29935 Blanche, 29936 Rusty, 29939 Ash [name],
+    56093 Mehmet, 56094 Ayse, 56095 Elif, 56096 Emre, 56097 Zeynep, 56098 Mustafa, 56099 Fatma, 56100 Ahmet, 56101 Hasan, 56102 Yusuf, 56103 Murat,
+    56104 Burak, 56105 Deniz, 56106 Selin, 56107 Merve, 56108 Ece, 56109 Cem, 56110 Kemal, 56111 Orhan, 56112 Ozlem, 56113 Tolga, 56114 Seda,
+    56115 Gizem, 56116 Baris, 56117 Ibrahim, 56118 Suleyman, 56119 Hulya, 56120 Ismail, 56121 Omar, 56122 Fatima [name], 56123 Khalid, 56124 Yasmin,
+    56125 Ahmed, 56126 Mohammed, 56127 Ali [name], 56128 Hassan, 56129 Zainab, 56130 Aisha, 56131 Samir, 56132 Karim, 56133 Nadia, 56134 Rashid,
+    56135 Amira, 56136 Tariq, 56137 Salma, 56138 Youssef, 56139 Hamza, 56140 Leila, 56141 Jamal, 56142 Nour, 56143 Malik [name], 56144 Faisal [name],
+    56145 Rania, 56146 Imran, 56147 Sami [name], 56148 Mariam, 56149 Bashir, 56150 Priya, 56151 Arjun, 56152 Anjali, 56153 Rahul, 56154 Vikram,
+    56155 Raj [name], 56156 Amit, 56157 Neha, 56158 Sanjay, 56159 Deepak, 56160 Pooja, 56162 Sunita, 56163 Aditya, 56164 Kavita, 56165 Rohan,
+    56166 Divya, 56167 Ananya, 56168 Suresh, 56169 Meera, 56170 Krishna [name], 56171 Lakshmi [name], 56172 Gopal, 56173 Ishaan, 56174 Nikhil,
+    56175 Shreya, 56176 Vivek, 56177 Aarav, 56178 Devi, 56179 Hiroshi, 56180 Yuki, 56181 Sakura [name], 56182 Kenji, 56183 Akira [name],
+    56184 Takeshi, 56185 Haruto, 56186 Hana [name], 56187 Satoshi, 56188 Kazuo, 56189 Naoko, 56190 Keiko, 56191 Emiko, 56192 Hanako, 56193 Ichiro,
+    56194 Yoko, 56195 Kaito, 56196 Rin [name], 56197 Sora [name], 56198 Ren [name], 56199 Mei [name], 56200 Masashi, 56201 Haruka, 56202 Daisuke,
+    56203 Kenta, 56204 Tomoko, 56205 Mateo, 56206 Camila, 56207 Santiago [name], 56208 Valentina, 56209 Diego, 56210 Carlos, 56211 Maria, 56212 Jose,
+    56213 Lucia, 56214 Alejandro, 56215 Juan, 56216 Pedro, 56217 Luis, 56218 Miguel, 56219 Gabriela, 56220 Javier, 56221 Fernando, 56222 Rodrigo,
+    56223 Ximena, 56224 Emiliano, 56225 Catalina [name], 56226 Andres, 56227 Esperanza, 56228 Paloma [name], 56229 Xavier, 56230 Niamh, 56231 Siobhan,
+    56232 Declan, 56233 Patrick [name], 56234 Seamus, 56235 Aoife, 56236 Colm, 56237 Brigid [name], 56238 Padraig, 56239 Ciaran, 56240 Eamon,
+    56241 Fionn, 56242 Cian, 56243 Roisin, 56244 Sinead, 56245 Caoimhe, 56246 Clodagh, 56247 Eoin, 56248 Dermot, 56249 Fergal, 56250 Maeve,
+    56251 Brendan, 56252 Rory [name], 56253 Tadhg, 56254 Orla, 56255 Una, 56256 Aisling, 56257 Ivan, 56258 Olga, 56259 Natasha, 56260 Dmitri,
+    56261 Svetlana, 56263 Boris, 56264 Sergei, 56265 Anastasia, 56266 Nikolai, 56267 Katya, 56268 Mikhail, 56269 Alexei, 56270 Tatiana, 56271 Yuri,
+    56272 Igor, 56273 Vasily, 56274 Galina, 56275 Pavel, 56276 Irina, 56277 Oleg, 56278 Vera [name], 56279 Anya, 56280 Misha, 56281 Nadezhda,
+    56282 Leonid, 56283 Zoya, 56284 Grigori, 56285 Ludmila, 56286 Vanya, 56818 John [name]
+  Left proper (a given-name theme plus another sense that is not a person; for Simon, not changed):
+    Months, the theme's convention (v391): 15 April, 16 June, 25268 May [month], 25269 July, 25271 August [month].
+    Other sense holds a name link, a candidate for a [name] entry as T30: 21833 Persephone [goddess] (girls_names; deity: proper), 25457 Leo
+      [zodiac sign] (boys_names), 29782 Norma (old_fashioned_names + famous_operas, a title), 56161 Ravi (indian_names + asian_rivers), 56262
+      Vladimir (russian_names + russian_cities).
+    Name entry holds a link of another sense (looks wrong): 29619 Sophia [name] in capital_cities 3 and european_capitals 3 (the city is Sofia);
+      29835 Ben [name] in scottish_landscape_words (ben, a mountain); 29843 Dot [name] in tiny_things (a dot).
+    Virtue names that also serve knightly_virtues: 29911 Honor, 29914 Mercy, 29915 Temperance, 29922 Valor, 29925 Humility, 29926 Honesty (the
+      knightly virtue is the common word; justice and faith there are common entries).
+    Places in names_that_are_places (the theme mostly links place entries, typed place: Virginia, Denver, Paris): 29724 Devon [county] (also
+      unisex_names), 29888 Asia [continent], 29892 Lincoln [city], 29896 Siena, 29899 Cheyenne [city], 29900 Montana, 29904 Lourdes, 29905
+      Alexandria [name] (places_named_after_people: the city), and 29882 Brooklyn [borough], 29897 Carolina [US state] (only in this theme, but
+      labelled places). These are proper places: a separate cleanup could type them place, outside I18.
+  Not proper, so not this rule: 87 common entries in given-name themes (rose, jade, hope ... shown capital, W2), 18 place entries (Paris, Sydney,
+    Florence ...), the title Carmen 52368 (latin_american_names + famous_operas: the same pattern as Norma).
+
+Allow-list (js/caselint-allow.js): unchanged. No key spent (the moved links had none) and none needed (case lint 0; person and proper are both
+  capital types in caselint.js).
+
+Verification (2026-11-18): npm test 43/43 pass; node tools/export-game.mjs full <scratch path> --strict exits 0 (62185 -> 62188 entries; case lint 0;
+  the same 10 same-text drops); style-case.mjs 0 changes (Checks errors 0 -> 0; case lint: 0), propword-exceptions.mjs 0 changes (case lint: 0);
+  Checks 0 errors, warnings theme-name 3, long 5, maybe-duplicate 1 (unchanged); rerunning batch394.mjs prints 0 changes; node
+  tools/export-game.mjs --strict exits 0.
+Family export (the committed file) against the committed v393 file: entries 60575 -> 60578. No entry leaves and no index shifts: every old index
+  0-60574 is the same entry; text, pos, flags, familiarity, regions, regionsHi, root, clash, breaks, zipf unchanged for all of them. type changes
+  for 468 of them: 467 proper -> person (I18; every retyped entry is in the family export) and Augusta 27564 proper -> place.
+  New at the end: 60575 "Augusta", 60576 "Augustine", 60577 "Augustus" (person; fam 3, 3, 2), each with one link: names that are months,
+  typicality 3 / 4 / 3, difficulty 3 / 3.7 / 2.7, no shown text. Augustus 19204, Augusta 27564, Augustine 31809 lose names that are months and
+  keep their other links. Links 106964 -> 106964: link numbers 0-49400 unchanged; old 49401 (Augustus), 63273 (Augusta), 69959 (Augustine) gone;
+  49402-63272 shift down 1, 63274-69958 down 2, 69960-106963 down 3; the new links are 106961-106963. Every surviving link has the same theme,
+  difficulty, typicality and shown value. shown 3828 -> 3828, the same table. nameWordLinks 321, nameThemeLinks 2284, shownUK 25: same counts and
+  pairs, link numbers renumbered by the shift above. Themes: the same 3240 rows (names that are months keeps its counts). lib.version 393 -> 394,
+  modified.
+
+Notice DRAFT for _WS_ (HELD, not sent; covers v393 and v394 together, since the v393 notice was never sent; measured against the v392 export
+  you pinned):
+  Library v394 (v393 + v394; W9 from your v392 report, then the same fix for the other month names, and one type for given names).
+  Family export: 60573 -> 60578 entries. No entry leaves and no entry index changes: indices 0-60572 are the same entries as in v392.
+  New at the end: 60573 "Avril", 60574 "Julio", 60575 "Augusta", 60576 "Augustine", 60577 "Augustus" (given names, type person, familiarity
+  3, 3, 3, 3, 2), each linked only in "names that are months" (typicality 4, 4, 3, 4, 3), taking the links that sat on another sense of the
+  word: avril 25484 (French month) and its abbreviation avr 57936, julio 25498 (Spanish month), Augusta 27564 (now only the US state capital,
+  typed place), Augustine 31809 (the saint), Augustus 19204 (the emperor). Those entries keep their indices and their other links but leave names
+  that are months.
+  Types: 467 given-name entries change type from proper to person (girls' names, boys' names, the names-that-are themes, names around the world;
+  e.g. Emma, Rose, Jordan, Amber, Grace, Mai); Augusta 27564 proper -> place. No other entry field changes.
+  Links 106965 -> 106964. Link numbers 0-49400 are unchanged; from there they shift down: by 1 from 49402, by 2 from 59994, by 3 from 60009, by 4
+  from 63276, by 5 from 69962, by 6 from 103882 (removed: 49401 Augustus, 59993 avril, 60008 julio, 63275 Augusta, 69961 Augustine, 103881 avr,
+  all in names that are months). The five new links are 106959-106963.
+  The shown table loses "Avril" (old index 1877) and "Julio" (old 1880): 3830 -> 3828; shown entries renumber from 1877 (down 1, from 1880 down 2)
+  and link shown values follow. nameWordLinks (321), nameThemeLinks (2284) and shownUK (25) keep their counts and pairs with renumbered link and
+  shown numbers. Theme rows unchanged (3240).
+  Mai, Jul and Aug are as you found them (Mai is a given name; Jul/Aug are abbreviation aliases in a locked theme).
