@@ -1,4 +1,4 @@
-// Writes the game file (export format 3) from the working library: node tools/export-game.mjs [preset] [out] [--strict]
+// Writes the game file (export format 4) from the working library: node tools/export-game.mjs [preset] [out] [--strict]
 // Default: the "family" preset with Zipf, to data/export/wordlist-game-family.json in this repository (from any directory; an explicit out is relative to the current directory).
 // --strict (in any position): exit 1 when the case lint finds issues, before anything is written.
 import fs from 'node:fs';

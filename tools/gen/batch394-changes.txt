@@ -134,3 +134,6 @@ Notice DRAFT for _WS_ (HELD, not sent; covers v393 and v394 together, since the 
   and link shown values follow. nameWordLinks (321), nameThemeLinks (2284) and shownUK (25) keep their counts and pairs with renumbered link and
   shown numbers. Theme rows unchanged (3240).
   Mai, Jul and Aug are as you found them (Mai is a given name; Jul/Aug are abbreviation aliases in a locked theme).
+  Format: the file's "v" is now 4 (Simon, 2026-11-18). The layout is the same as the last version-3 file; 4 only marks the fields added and moved
+  while it stayed 3 (DESIGN.md 8.6 lists them). Your reader dispatches on "entries", not on "v", as far as tools/game/LoadV3.cs.txt shows: please
+  check nothing on your side compares "v" to 3, and read DESIGN.md 8.6 (versions and pinning) to confirm it matches what you do.

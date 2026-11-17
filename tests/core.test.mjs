@@ -150,7 +150,7 @@ test('zipf combines phrases', () => {
   assert.equal(zipf('ice zzz'), null);
 });
 
-test('export format 3: shown text, display form and clash ids travel with the link', () => {
+test('export format 4: shown text, display form and clash ids travel with the link', () => {
   const P = project();
   const rain = addEntry(P, 'rain', { fam: 1, typ: { fruits: 1 } }), rainy = addEntry(P, 'rainy', { pos: 'adjective', fam: 2, aliasOf: rain.id, aliasKind: 'form' });
   const fall = addEntry(P, 'rainfall', { fam: 2, typ: { fruits: 2 } });
@@ -161,7 +161,7 @@ test('export format 3: shown text, display form and clash ids travel with the li
   reindex(P);
   const { file } = buildExport(P), c = file.entries, at = text => c.text.indexOf(text);
   const link = text => { let o = 0; for (let k = 0; k < at(text); k++) o += c.linkCount[k] * 4; return c.links.slice(o, o + 4); };
-  assert.equal(file.v, 3);
+  assert.equal(file.v, 4);
   assert.deepEqual(file.shown[link('rock garden')[3] - 1], ['rock', 0, []]);
   assert.deepEqual(file.shown[link('rain')[3] - 1], ['rainy', 2, []]);
   assert.equal(link('rain')[1], 1.7);                                 // the form's own familiarity (2) counts: 0.7 x 2 + 0.3 x 1 (typicality)

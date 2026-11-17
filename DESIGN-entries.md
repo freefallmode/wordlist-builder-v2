@@ -129,7 +129,7 @@ Theme identifiability (2026-11-05, `ident` on a theme, 1 obvious to 5 obscure, 0
 
 Unchanged in meaning (`fam`: how well known the word is; theme link `typ`: how typical it is of the theme), applied as in the table in 3.1. A regional variant's `fam` is judged for the audience of its region.
 
-## 6. Export (format version 3)
+## 6. Export (format version 4; 3 until 2026-11-18)
 
 - Aliases keep the root pointer, with kind bits for spelling, form, regional, abbreviation and translation (16, 32, 64, 128, 256, 512 for a strict synonym).
 - Each alias row has its part of speech and region mask.
@@ -173,7 +173,7 @@ This section is a dated log: each entry records what was decided or done at the 
 - Roots are the US or neutral word and every region tag is kept. A theme's `region` and a word's `region` mean who knows it; ratings (`fam`, `typ`, `pop`, `ident`) are always for a general US/UK adult.
 - Theme difficulty is never stored; it is computed from `ident` and `pop`. A complete theme has a note listing its exact members.
 - Capitals: a word is shown the way it is written for its sense; the rule and the lint are in "Capital rule and lint" below. A case-only shown text is not used in wordplay or compound themes, nor on an entry that has regional or spelling aliases.
-- Export additions are additive within format 3; the field list is DESIGN.md section 8.
+- Export additions are additive within a format version (3 until 2026-11-18, now 4); the field list is DESIGN.md section 8.
 
 **Log**
 

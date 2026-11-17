@@ -20,7 +20,7 @@ Game side: it pinned v392 on 2026-11-17 (its commit 6218de2; all checks passed);
 
 In progress: nothing.
 
-Waiting on Simon: export format version bump (needs `_WS_`); alias-promotion rule (DESIGN.md 3); `_WS_` to check pinning text in DESIGN.md 8.6; Draconian lowercase; deferred W4 (word-family column).
+Waiting on Simon: deferred W4 (word-family column) and E8. Ruled 2026-11-18: export format is 4 (the held notice asks `_WS_` to check its reader and DESIGN.md 8.6); the alias-promotion rule in DESIGN.md 3 stands; draconian stays lowercase.
 
 ## 3. Decisions (do not reopen)
 
