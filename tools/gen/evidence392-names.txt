@@ -1,0 +1,56 @@
+Evidence for the doubtful members of the "names that are ..." themes (read-only check, 2026-11-17, for batch 392).
+Sources: US SSA national baby-name data via namealmanac.com (SSA file 1880-2025; SSA lists a name only in years with >=5 births,
+so "no SSA record" = never 5+ in any year). Cross-checked where namealmanac was unclear: namecensus.com, nameberry.com, babynamesyay.com.
+England & Wales ONS via namestack.co.uk (ONS publishes names with 3+ births). Verdicts: KEEP / DROP / BORDERLINE.
+Format: theme | word | id | verdict | evidence | note
+
+trees | Basswood | 1678 (regional alias of 1676 linden, own link) | DROP | no SSA record (namealmanac 404) | no name use; alias carries its own link, root linden is not in the theme
+trees | Dogwood | 1681 | DROP | no SSA record | none
+trees | Hemlock | 29944 [poison] | DROP | no SSA record | none; also WRONG SENSE: linked entry is hemlock [poison], hemlock [tree] 29954 exists
+trees | Larch | 1653 | DROP | no SSA record | none
+trees | Teak | 1660 | DROP | SSA 62 births total since 1983, peak 9 (2019), 5 in 2024 | marginal invented-nature name; a player would not take it for a name
+trees | Hickory | 1656 | DROP | SSA 17 births total 1973-2023, peak 7 (2023) (namealmanac via search; namecensus agrees) | Behind the Name has only a user-submitted entry with no meaning
+trees | Sycamore | 1650 | DROP | no SSA record; nameberry lists it as a nature name, no counts | none
+trees | Poplar | 1647 | DROP | no SSA record | none
+trees | Alder | 1675 | KEEP | SSA 1,431 births since 1903; 2025: 130 boys (#1,402) + 9 girls; peak 139 (2025) | rising nature name
+trees | Rosewood | 29942 [wood] | DROP | no SSA record | none
+trees | Lime | 64792 [linden] | DROP | no SSA record | none. Linden (1676, not in the theme) is a real name: SSA 6,100 since 1889, 210 in 2025 (#1,415 boys, #2,269 girls) -> candidate to link instead of Lime/Basswood
+trees | Mulberry | 29985 (mulberry tree, shown Mulberry) | DROP | no SSA record | none
+trees | Elder | 28134 [tree] | KEEP | SSA 2,320 since 1880; 47 boys in 2025 (#2,725); 98% boys | mostly Spanish/Latin American use (Elder); real but the tree link is incidental
+trees | Elm | 1635 [tree] | DROP | no SSA record (mynamestats: SSA estimate 0) | none
+trees | Birch | 1634 | BORDERLINE | SSA 340 births since 1913, peak 20 (2017/2018), 5 in 2025 (#12,290 boys) | real but very rare; a player might hesitate
+trees | Cypress | 1646 | KEEP | SSA 2,237 since 1978; 2025: 184 (110 boys #1,554, 74 girls #2,416); peak 207 (2024) | rising unisex nature name
+flowers | Tulip | 1694 | BORDERLINE | SSA 302 girls since 2006, peak 32 (2018), 20 in 2025 (#6,094) | rare but obviously flower-name style; players likely accept
+flowers | Petunia | 1708 | BORDERLINE | SSA 32 total 2014-2024, 8 in 2024 | known as a name through Petunia Dursley (Harry Potter); almost no real use
+flowers | Gardenia | 1736 | KEEP | SSA 1,354 girls since 1917, peak 70 (1992), 7 in 2025 | long-standing if rare flower name
+flowers | Freesia | 1744 | DROP | SSA 7 total, all in 2000 (namecensus, babynamesyay) | none since
+flowers | Buttercup | 1723 [flower] | DROP | no SSA record | a pet/nickname (Princess Bride, Powerpuff Girls), not a given name
+flowers | Bluebell | 1722 | BORDERLINE | no SSA record; England & Wales: 24 girls in 2024 (#1,353), peak 46 (2017), ~559 since 1996 (namestack, from ONS) | real small UK use, none in US; KEEP if UK use is enough
+flowers | Orchid | 1698 | BORDERLINE | SSA 304 girls since 1926, peak 14 (2021), 9 in 2025 (#10,708) | rare
+flowers | Wisteria | 29549 [flower] | BORDERLINE | SSA 99 girls since 1979, peak 19 (2025, #6,308) | rare but rising
+gems | Zircon | 29877 | DROP | no SSA record | none
+gems | Agate | 29878 | DROP | no SSA record (Agata is a separate name) | none
+gems | Peridot | 29876 | DROP | SSA ~5 total (2023 only) per aggregators | Steven Universe character; not a name in use
+gems | Citrine | 29874 | DROP | SSA 28 total 2019-2023, peak 10 (2021) | Steven Universe-era coinage
+gems | Topaz | 29870 [gemstone] | BORDERLINE | SSA 306 since 1971, peak 17 (1989), 7 in 2023 (#13,333 girls) | rare but long-standing; topaz [color] 38614 is a separate entry, fine
+colors | Cyan | 65 | KEEP | SSA 1,520 since 1986; 2025: 21 girls + 25 boys; peak 98 (1998) | e.g. Cyan Banister (investor)
+colors | Magenta | 7684 | BORDERLINE | SSA 256 girls since 1980, peak 12 (1998), 8 in 2025 | Magenta Devine (UK TV presenter, adopted name)
+colors | Sepia | 7706 | DROP | SSA 5 total (1973 only) | none
+colors | Carmine | 7725 | KEEP | SSA 14,437 since 1891, peak 267 (2006), 214 boys in 2025 (#1,035) | Italian-American (Carmine Infantino, Carmine Appice)
+colors | Russet | 7723 | DROP | no SSA record | none
+colors | Crimson | 7692 | KEEP | SSA 1,836 since 1974, peak 114 (2016), 47 in 2025; 70% girls | modern but real
+places | Aurora | 29903 [sky lights] | KEEP (name) / WRONG SENSE | SSA 99,209 since 1880; 2025: 7,065 girls, #15 | Places: Aurora, Colorado (~404,000, 2024 city estimate, 3rd-largest in CO) and Aurora, Illinois (~180,000, 2nd-largest in IL). No Aurora [place] or Aurora [name] entry; existing Aurora entries are 21874 [goddess] and 54273 [ship].
+  Proposal (not applied): add Aurora [name] (proper, person) and move the names_that_are_places link to it, as v391 did with Daisy/Lily/Poppy/Rowan/Ruby/Peony and as the theme's siblings Jordan/Chelsea/Georgia/Phoenix [name] already are; it could also serve girls'-name themes. Alternative: Aurora [city, Colorado] typed place, as Paris/Sydney/Orlando. aurora 29903 then keeps its sky themes only.
+
+Summary: trees KEEP 3 (Alder, Elder, Cypress) / DROP 12 / BORDERLINE 1 (Birch); flowers KEEP 1 (Gardenia) / DROP 2 (Freesia, Buttercup) / BORDERLINE 5 (Tulip, Petunia, Bluebell, Orchid, Wisteria);
+gems DROP 4 / BORDERLINE 1 (Topaz); colors KEEP 3 (Cyan, Carmine, Crimson) / DROP 2 (Sepia, Russet) / BORDERLINE 1 (Magenta); places KEEP 1 (Aurora, wrong sense).
+
+Earlier Simon decisions found:
+- W2 (Simon, 2026-11-16; ISSUES.md, DESIGN-entries.md line 316, tools/gen/batch390-changes.txt Part C): every shown text in the "names that are ..." themes is capital (the theme's sense is a name). About case, not membership.
+- v391 (Simon approved 2026-11-17; DESIGN-entries.md line 318): link the name sense (name entry when one exists); an entry with no name use leaves the theme (quaking aspen). This is the precedent for the DROPs above.
+- 73d6e84 (v361/362, 2026-11-14): aurora 29903 shown lowercase in polar_regions and things_in_the_sky (case only; its names_that_are_places link left alone).
+- tools/gen/nameok-list.txt line 720 "names that are trees: lime tree" (lime tree 1677 nameOkIn the theme). No ruling found on any individual word in this list.
+
+Possibly broken (for ISSUES.md):
+- hemlock 29944 [poison] is the entry linked in names_that_are_trees; hemlock [tree] 29954 exists (in evergreen_trees). Wrong-sense link, if the word stays.
+- basswood 1678 is a regional alias of linden 1676 but carries its own names_that_are_trees link (and show), while the root linden is not in the theme.

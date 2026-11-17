@@ -1,0 +1,126 @@
+Evidence check for v392: three wine words (Gavi, Côtes du Rhône, Liebfraumilch) and two Pacific instruments (toere, puniu).
+Read-only; nothing in data/ or js/ changed. 2026-11-17.
+
+Rules applied (DESIGN-entries.md "Single-word names"): rule 1 (dictionary rule; dictionaries disagree or M-W "often capitalized"
+=> lowercase), rule 2 (no dictionary entry => sibling convention), rule 9 (place-named wine capital only when the dictionaries capitalise;
+if a dictionary could not be checked => lowercase, marked recheck), rule 8 amended (a root keeps diacritics when at least one major English
+dictionary, regional ones included, prints them; plain form kept as a spelling alias).
+
+Git history / Simon decisions: none on these five words. git log -i --grep for gavi, liebfraumilch, toere, puniu, rhone finds only
+batch commits (v376, v381-v390). Gavi and Liebfraumilch were capitalised at v376 from the T15 "high" list Simon approved
+(tools/gen/t15-candidates.txt lines 121, 124: "Piedmont town"; "Oxford and M-W capital"). That approval predates rules 1 and 9, and the
+Liebfraumilch line rests on a wrong reading of M-W (v388 found M-W lowercase). v388 left all three wines and v390 left both instruments
+"for Simon"; PROJECT_STATUS.md lists them as waiting on Simon. No ruling by Simon on the words themselves.
+
+Fetch limits this session: merriam-webster.com, collinsdictionary.com, cambridge.org, oxfordlearnersdictionaries.com and
+thefreedictionary.com answered HTTP 403; M-W readings below come from search-result snippets of the M-W pages and the v385/v388 logs.
+Mark every wine call "recheck" (rule 9).
+
+========================================================================================================================
+53828 Gavi
+Current: {"id":53828,"text":"Gavi","type":"proper","fam":5,"typ":{"white_wines":4},"status":"gen"}
+  (v376 gavi -> Gavi, common -> proper)
+Sources:
+  Merriam-Webster: no entry for the wine (v385; search finds no M-W page).
+  Oxford (Learner's / OED): no entry found (v385; OED not indexed).
+  Collins: no entry (v385; the Dictionary.com Collins section has none).
+  Cambridge: not reachable (403); no entry known.
+  American Heritage: no entry known.
+  Random House / Dictionary.com: no entry (v385).
+  Wordnik: "no definitions found"; Wiktionary: no wine sense (v385).
+  Wine references (not dictionaries): Gavi / Cortese di Gavi DOCG, a white wine of Piedmont named after the comune of Gavi.
+Verdict: lowercase. Place-named wine with no dictionary entry: rule 9 ("a dictionary could not be checked => lowercase") governs, and
+  rule 2's sibling convention agrees: the place-named white wines with no dictionary capital are lowercase (soave, muscadet,
+  vinho verde, prosecco); the capital ones (Orvieto, Frascati, Chablis, Sancerre, Sauternes, Pouilly-Fuissé) each have a dictionary
+  capital on record (v383, v385). Recheck.
+Proposed change: 53828 text "Gavi" -> "gavi", type proper -> none (common). No alias needed. Links unchanged.
+
+========================================================================================================================
+53808 Côtes du Rhône
+Current: {"id":53808,"text":"Côtes du Rhône","type":"proper","fam":4,"typ":{"red_wines":4,"wines_named_for_places":4},"status":"gen"}
+  No plain-spelling alias exists. Related: 57284 Rhône [river] (place) with 36801 Rhone spelling alias.
+Sources:
+  Merriam-Webster: "côtes du rhône" noun, lowercase headword, label "often capitalized" (C and R), "a common red wine produced in the
+    Rhône region" (M-W page snippet in search results; same reading at v388). Prints the accents.
+  Oxford (Learner's / OED): no entry found (v388; OED not indexed).
+  Collins: no entry found (search returns none; site 403).
+  Cambridge: no entry (v388).
+  American Heritage: no entry known.
+  Random House / Dictionary.com: no entry (the lookup lands on Bouches-du-Rhône).
+  Wiktionary: no page (404); Wordnik: "no definitions found".
+  Reference: Oxford Companion to Wine has Côtes du Rhône (appellation, capital) -- a wine reference, not a general dictionary.
+Verdict: lowercase. The one dictionary that lists it prints it lowercase with "often capitalized": rule 1's tie-break makes it lowercase,
+  and rule 9 (capital only when the dictionaries capitalise) agrees. Shown spelling as M-W prints it: "côtes du rhône" (circumflexes kept,
+  no hyphens, "du" lowercase). Rule 8: M-W prints the accents, so the accented form is the root and "cotes du rhone" its spelling alias.
+  Recheck.
+Proposed change: 53808 text "Côtes du Rhône" -> "côtes du rhône", type proper -> none (common); add a spelling alias
+  {"text":"cotes du rhone","aliasOf":53808,"aliasKind":"spelling"} with the root's fam 4 (new id, appended).
+  The case lint will likely flag a common member in "wines_named_for_places" (mostly capital); allow
+  53808|wines_named_for_places in js/caselint-allow.js as was done for burgundy (19664) at v384.
+  Consistency note: Châteauneuf-du-Pape (53809) and Pouilly-Fuissé (53835) have no plain-spelling aliases either; rule 8 says the plain
+  form "is always kept", so Chateauneuf-du-Pape and Pouilly-Fuisse aliases would be consistent (outside this question).
+
+========================================================================================================================
+53832 Liebfraumilch
+Current: {"id":53832,"text":"Liebfraumilch","type":"proper","fam":4,"typ":{"white_wines":4},"status":"gen"}
+  (v376 liebfraumilch -> Liebfraumilch, common -> proper, from the T15 list's "Oxford and M-W capital")
+Sources:
+  Merriam-Webster: "liebfraumilch", lowercase headword (v388 reading; page 403 this session, not re-read: recheck).
+  Oxford Learner's: "Liebfraumilch" capital, "a type of German white wine" (v388; search snippet confirms the entry).
+  Collins (Dictionary.com British section): "Liebfraumilch" capital, "a white table wine from the Rhine vineyards".
+  Random House (Dictionary.com): "Liebfraumilch" capital, "a white wine produced chiefly in the region of Hesse in Germany".
+  American Heritage (ahdictionary.com): no entry ("No word definition found").
+  Cambridge: not reachable (403).
+  Webster's 1913 (old): lowercase. Wiktionary: "Liebfraumilch" capital, no lowercase form listed.
+  Etymology: German "Our Lady's milk", after the Liebfrauenkirche / Liebfrauenstift in Worms (a church, not a wine region).
+Verdict: lowercase under rule 1. M-W prints it lowercase while Oxford, Collins and Random House capitalise: the dictionaries disagree,
+  and rule 1's tie-break gives lowercase. Rule 9 need not decide it (named after a church, not a wine place), and rule 3's "proper word"
+  exception is for grape names and does not fit (one German compound). The v376 capital rests on "Oxford and M-W capital", which v388
+  found wrong for M-W. This flips only if M-W is re-read as capital (then all capital => keep). Recheck M-W.
+Proposed change: 53832 text "Liebfraumilch" -> "liebfraumilch", type proper -> none (common). No accents, no alias.
+  Alternative for Simon: keep capital as a precedent like Bordeaux (most dictionaries capitalise it).
+
+========================================================================================================================
+51520 toere  [pacific_instruments]
+Current: {"id":51520,"text":"toere","fam":5,"typ":{"pacific_instruments":4},"status":"gen"}
+  Related in the same theme: 51532 tokere (Cook Islands / Tuamotu / Mangareva name of the same slit drum), 51394 slit drum.
+Sources:
+  Merriam-Webster, Oxford, Collins, Cambridge, American Heritage, Random House: no entry found in any.
+  Te Aka (Māori): no entry (v390). Not a Māori word.
+  Wikipedia "Tahitian drumming": to'ere / to‘ere (also "toere"), the Tahitian slit log drum.
+  Museum and cultural pages: Tahitian tō‘ere; Cook Islands tokere (Te Papa: on Aitutaki pate are called tokere); the Tahitian glottal
+    stop stands for the k of other dialects.
+Answers: (1) No major English dictionary lists it, with or without marks. Native Tahitian spelling tō‘ere; English references mostly
+  write to'ere; "toere" is the common unmarked rendering. (2) n/a. (3) The word is real and fits the theme.
+Verdict: keep "toere" as is. Rule 8 keeps diacritics only when an English dictionary prints them; none prints the word at all, so the
+  root stays plain (as agogo, raki). Optional, for Simon: "to'ere" as a spelling alias, and whether tokere and toere stay two entries
+  (two languages' names for one drum; both fit a Pacific theme).
+Proposed change: none required.
+
+========================================================================================================================
+51526 puniu  [pacific_instruments]
+Current: {"id":51526,"text":"puniu","fam":5,"typ":{"pacific_instruments":4},"status":"gen"}
+Sources:
+  Merriam-Webster, Oxford, Collins, Cambridge, American Heritage, Random House: no entry found in any.
+  Te Aka (Māori): pūniu only as ferns (prickly shield fern, crape fern), no instrument sense (v390). Not the Māori word.
+  Pukui-Elbert Hawaiian Dictionary (1986), via wehe.colo.hawaii.edu: "pūniu" n. 1 polished coconut shell or bowl; 2 "Small knee drum
+    made of a coconut shell with fishskin cover, as of kala"; 3 human skull; 4 small fontanel; vi. to spin, dizzy.
+    Māmaka Kaiao: pūniu, cross-reference only (ʻukulele pūniu).
+  Metropolitan Museum of Art: object "Puniu (knee drum)", Hawaiian (title from search result; page rate-limited).
+  Other references: strapped to the thigh, played with the pahu by the same drummer; found only in Hawaii.
+Answers: (1) No major English dictionary lists it. The reference spelling is Hawaiian "pūniu" (kahakō on the first u, no ʻokina), as
+  Pukui-Elbert, the standard Hawaiian-English dictionary, prints it; museums write Puniu plain. (2) Yes: the Hawaiian coconut-shell knee
+  drum is real and is this theme's sense. (3) see verdict.
+Verdict: root "pūniu" with "puniu" as a spelling alias -- IF Simon counts Pukui-Elbert as a regional dictionary under rule 8, as Te Aka
+  is counted for Māori words (both bilingual native-language-to-English dictionaries). If only English dictionaries count, keep "puniu"
+  (none prints it). The word is not wrong; no unlink.
+Proposed change (if rule 8 reaches Pukui-Elbert): 51526 text "puniu" -> "pūniu" (id, links, fam kept); add spelling alias
+  {"text":"puniu","aliasOf":51526,"aliasKind":"spelling"} with fam 5 (new id, appended), as the v390 Māori roots.
+  Consistency: the same reasoning reaches the other Hawaiian members, all plain now: 51527 kalaau (Pukui-Elbert kālaʻau),
+  51528 ukeke (ʻūkēkē), 51530 pu [conch trumpet] (pū); 51525 uliuli, 51514 ipu, 51513 pahu carry no marks. Decide them together.
+
+========================================================================================================================
+Looks broken (not asked, not changed):
+  18838 pâté [spread] is linked in "pacific_instruments" (fam 5): {"id":18838,"text":"pâté",...,"typ":{"spreads":3,"french_food":3,
+  "pacific_instruments":5}}, with 18839 "pate" its spelling alias. The Cook Islands slit drum "pate" is a different word; the food
+  entry should be unlinked from pacific_instruments and, if wanted, a separate "pate" [slit drum] entry added there.
