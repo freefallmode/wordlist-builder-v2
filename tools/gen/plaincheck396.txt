@@ -1,0 +1,28 @@
+Plain-alias check, library v396 (2026-11-18, after tools/gen/batch396.mjs, T32): accented roots with no alias whose text is the plain spelling (diacritics stripped, case ignored). 25 roots: 19 in at least one theme that is not locked, 6 only in locked themes; all 25 are the skips of batch396 (20 different word, 3 same word stored twice, 2 misleading; reasons in tools/gen/batch396-changes.txt). Script: tools/gen/plaincheck.mjs
+--- in an open theme
+19647 rosé (common) in wines
+26960 çay (common) in turkish_everyday_words, turkish_breakfast, turkish_bath, turkish_food
+35975 Córdoba (place) in south_american_cities, spanish_cities
+36474 Médoc (place) in wine_regions
+40003 lamé (common) in shiny_things, fencing_terms
+43811 coupé (common) in fencing_terms
+44519 Kaká (person) in famous_soccer_players, brazilian_players
+46486 aú (common) in capoeira_words
+46494 rolê (common) in capoeira_words
+53157 sablé (common) in french_pastries
+54367 Orléans (place) in medieval_battles
+56849 San José (place) in american_capitals
+56890 Orléans (place) in french_cities
+56917 Münster (place) in german_cities
+56949 San Sebastián (place) in spanish_cities
+57073 Belém (place) in brazilian_cities
+57084 Vitória (place) in brazilian_cities
+57402 Sacré-Cœur (place) in paris_landmarks
+57409 Panthéon (place) in paris_landmarks
+--- only in locked themes
+27103 tāne (common, fallback letter) in maori_words
+27110 kūmara (common, fallback letter) in maori_words
+57735 marrón (common) in colors_in_spanish
+57749 índigo (common) in colors_in_spanish
+57775 sarı (common) in colors_in_turkish
+57797 füme (common) in colors_in_turkish

@@ -1,0 +1,531 @@
+Library v396 (tools/gen/batch396.mjs, 2026-11-18 10:29): 361 changes. Simon approved the batch (ISSUES.md T32). Rule 8 (DESIGN-entries.md,
+  "Single-word names" rule 8 and the rule-8 notes in section 10): an accented root keeps its plain form as a `spelling` alias, so nothing is harder
+  to find. At v395, 386 of 571 accented roots had none (tools/gen/plaincheck395.txt). This batch adds 361; 25 are left out, each with its reason.
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v395; no new or gone issue messages), counted by the
+  script with validate() before and after, as batch395.mjs. No new same-text-in-a-theme pair, no new case-lint hit; js/caselint-allow.js unchanged.
+  npm test 43 pass; strict export to scratch passes; tools/gen/style-case.mjs and tools/gen/propword-exceptions.mjs report 0 changes.
+  tools/gen/plaincheck.mjs after: 25 (19 in an open theme, 6 only in locked themes), exactly the 25 skips below (tools/gen/plaincheck396.txt).
+
+Counts: 361 new spelling aliases (no new roots, no links moved, no root changed): 308 of roots in at least one open theme, 53 of roots only in
+  locked themes. By type (the root's): common 173, place 81, person 62, proper 21, phrase 13, org 10, title 1.
+  Skipped 25: 20 the plain text is a different word, 3 the same word stored twice (for the manager), 2 misleading plain form.
+
+Alias shape (copied from the existing plain aliases: the cheeses of v381, the Māori aliases of v385/v390, doner and droewors of v386):
+  kind spelling; text = the root's text with diacritics stripped (plaincheck.mjs's mapping: NFD, and ı ł ø đ ß æ œ -> i l o d ss ae oe);
+  type, pos and fam of the root (of the 185 existing plain aliases, all take the root's type; 170 its fam); region none (as 183 of 185); status gen
+  (all 185); no links, shown texts or uses of its own; nameOkIn copied from the root (as batch390 did; 7 aliases, all kebab_types, as doner kebab).
+  Gloss: none (as Maori, doner, Gruyere; most plain aliases have none even when the root has one), except where two new aliases share a text:
+  then each takes its root's gloss, as grey [color] / grey [horse color] (needs-gloss): Pokemon [video game] / [anime] / [card game],
+  Sao Paulo [city] / [Brazilian club], curacao [liqueur] / Curacao [island], Ancien Regime [period] / ancien regime [system].
+
+Decisions (why):
+  - Collisions were compared case-insensitively with every root and alias text (byText). The script stops on any collision not classified by hand.
+  - Plain forms that are not English usage (Turkish dishes, "thank you" phrases, Spanish and Turkish color words, German numbers) are added, as
+    rule 8 says, unless the plain form is a common English word of another meaning that nobody writes for this word (MISLEAD: role, fume).
+    Not skipped though they are English words, because the plain form is the usual English spelling of this very word: Reunion (Réunion),
+    entree, touche, Cortes, Pele, saute pan. Leon, Merida, Cadiz and the like are plain spellings of the same place.
+  - German umlauts take the bare vowel (Dusseldorf, Jagermeister, Muller-Thurgau, funf, Marz), as plaincheck.mjs strips them and as the existing
+    alias gluhwein (of glühwein) does; ß -> ss (dreissig).
+  - People and places get the alias, typed as their root (person, place), as Simon Bolivar, Garcia Marquez, Sagrada Familia, Brasilia.
+  - Locked-only roots (53 added) get the alias too; the game never shows an alias in a locked theme.
+  - Rule 5 of the brief (alias of an alias): only roots get one. A plain text that is already an alias of another root is a collision (Tane, kaka, AU)
+    or, for kumara, the same word (DUP).
+
+Possibly related, not changed (for the manager): some colliding plain entries are named after the accented place and may themselves fall under
+  rule 8: Medoc 62816 (the Marathon du Médoc), San Sebastian 12776 (the San Sebastián film festival), Orleans 55167 (the House of Orléans),
+  Belem 62558 (the Belém Tower, Lisbon). Vitoria 54379 (battle) is the Spanish city, correctly plain. coupe [car] 46629 is the same word as coupé
+  but in the car sense; English prints both.
+Script log (dry run; --apply made the same changes; a rerun prints 0 changes):
+  Candidates (accented roots with no plain spelling alias): 386; added 361; skipped 25 (COLLIDE 20, DUP 3, MISLEAD 2)
+  
+  Skipped, plain text is a different word (COLLIDE):
+    19647 "rosé" [wine] common in wines -> "rose": rose [flower], rose [color], Rose [name], rose [pink gem]: other words; rosé is the wine
+    26960 "çay" common in turkish_everyday_words, turkish_breakfast, turkish_bath, turkish_food -> "cay": cay [island type]: another word; çay is Turkish tea
+    27103 "tāne" [man] common in maori_words -> "tane": Tane 67424 is the spelling alias of Tāne [god] 22161 (the atua); tāne [man] is the common Māori noun (rule 5 of the brief: alias of another root)
+    35975 "Córdoba" [city] place in south_american_cities, spanish_cities -> "Cordoba": cordoba 56798 is the Nicaraguan currency; Córdoba is the city
+    36474 "Médoc" place in wine_regions -> "Medoc": Medoc 62816 is the marathon (famous_marathons, the Marathon du Médoc), another entry; Médoc is the wine region
+    40003 "lamé" common in shiny_things, fencing_terms -> "lame": lame 39366 (words_for_bad) is another word; lamé is the fabric
+    43811 "coupé" [fencing] common in fencing_terms -> "coupe": coupe [car] 46629 and coupe [glass] 55839 are other senses; coupé here is the fencing cut
+    44519 "Kaká" person in famous_soccer_players, brazilian_players -> "Kaka": kaka 8284 is the spelling alias of kākā [parrot] 27117; Kaká is the footballer
+    46486 "aú" [cartwheel] common in capoeira_words -> "au": AU 64564 is the abbreviation alias of astronomical unit; aú is the capoeira cartwheel
+    54367 "Orléans" [siege] place in medieval_battles -> "Orleans": Orleans 55167 [royal house] is another entry (the House of Orléans); Orléans [siege] is the battle
+    56849 "San José" place in american_capitals -> "San Jose": San Jose 35909 is the Californian city (american_cities); San José is the capital of Costa Rica
+    56890 "Orléans" [city] place in french_cities -> "Orleans": Orleans 55167 [royal house] is another entry; Orléans [city] is the French city
+    56917 "Münster" place in german_cities -> "Munster": Munster 36481 [province] and Munster 39725 [cheese] are other words; Münster is the German city
+    56949 "San Sebastián" place in spanish_cities -> "San Sebastian": San Sebastian 12776 is the film festival (film_festivals), another entry; San Sebastián is the city
+    57073 "Belém" place in brazilian_cities -> "Belem": Belem 62558 is the tower in Lisbon (famous_towers), another place; Belém is the Brazilian city
+    57084 "Vitória" place in brazilian_cities -> "Vitoria": Vitoria 54379 is the battle in Spain (napoleonic_battles); Vitória is the Brazilian city
+    57409 "Panthéon" place in paris_landmarks -> "Pantheon": pantheon [gods], pantheon [temple], Pantheon [Rome] are other words; Panthéon is the Paris monument
+    57735 "marrón" common in colors_in_spanish -> "marron": marron 57755 is the French color word (colors_in_french); marrón is the Spanish one: another language's word
+    57749 "índigo" common in colors_in_spanish -> "indigo": indigo [color] 6 (the English color) and IndiGo [airline]: other entries; índigo is the Spanish color word (colors_in_spanish)
+    57775 "sarı" [color] common in colors_in_turkish -> "sari": sari 24356 is the Indian garment; sarı is Turkish yellow
+  
+  Skipped, the same word stored twice (DUP, for the manager):
+    27110 "kūmara" common in maori_words -> "kumara": kumara 19393 is a regional alias of sweet potato 402; kūmara 27110 (maori_words) is the same word (the Māori and NZ English name of the sweet potato): stored twice, as a root and as another root's alias
+    53157 "sablé" common in french_pastries -> "sable": sable [biscuit] 59451 (cookies) is the same biscuit as sablé 53157 (french_pastries): a plain duplicate root
+    57402 "Sacré-Cœur" place in paris_landmarks -> "Sacre-Coeur": Sacre-Coeur 37403 (famous_churches) is the same basilica as Sacré-Cœur 57402 (paris_landmarks): a plain duplicate root
+  
+  Skipped, misleading plain form (MISLEAD):
+    46494 "rolê" common in capoeira_words -> "role": "role" is a common English word; rolê (capoeira: a low circling movement) is never written so in English
+    57797 "füme" common in colors_in_turkish -> "fume": "fume" is a common English word; füme is Turkish smoke grey (colors_in_turkish, locked)
+  
+  Added (new id "text" [gloss] type fam -> root, root's links):
+    67514 "filmjolk" common fam 5 -> 551 "filmjölk" common in dairy_and_eggs
+    67515 "El Nino" proper fam 2 -> 2038 "El Niño" proper in weather, tides_and_currents, climate_words
+    67516 "La Nina" proper fam 3 -> 2040 "La Niña" proper in weather, tides_and_currents, climate_words
+    67517 "Cote d'Ivoire" place fam 4 -> 2197 "Côte d'Ivoire" place in countries, african_countries, west_african_countries, french_speaking_countries, tricolor_flags
+    67518 "Krakow" place fam 4 -> 2301 "Kraków" place in cities, european_cities
+    67519 "Asuncion" place fam 4 -> 2304 "Asunción" place in cities, capital_cities, south_american_cities, american_capitals
+    67520 "Tromso" place fam 5 -> 2307 "Tromsø" place in cities
+    67521 "Valparaiso" place fam 5 -> 2308 "Valparaíso" place in cities, south_american_cities, port_cities, ports_in_the_americas
+    67522 "Dia de los Muertos" proper fam 3 -> 5146 "Día de los Muertos" proper in day_of_the_dead, holidays_and_celebrations, halloween, festivals_of_the_world, latin_american_folklore
+    67523 "Pele" person fam 1 -> 5456 "Pelé" person in famous_athletes, famous_soccer_players, brazilian_players
+    67524 "Kylian Mbappe" person fam 2 -> 5481 "Kylian Mbappé" person in famous_athletes, famous_soccer_players
+    67525 "Bjorn Borg" person fam 3 -> 5511 "Björn Borg" person in famous_athletes, tennis_champions
+    67526 "Zlatan Ibrahimovic" person fam 3 -> 5526 "Zlatan Ibrahimović" person in famous_athletes, famous_soccer_players
+    67527 "Ferenc Puskas" person fam 5 -> 5536 "Ferenc Puskás" person in famous_athletes, famous_soccer_players
+    67528 "Lasse Viren" person fam 5 -> 5551 "Lasse Virén" person in famous_athletes, famous_runners
+    67529 "Eusebio" person fam 5 -> 5554 "Eusébio" person in famous_athletes, famous_soccer_players
+    67530 "Parchis" proper fam 5 -> 5729 "Parchís" proper in table_games, board_games, asian_board_games, south_asian_games
+    67531 "Pokemon" [video game] title fam 1 -> 5787 "Pokémon" [video game] title in video_games
+    67532 "Belle Epoque" proper fam 4 -> 7082 "Belle Époque" proper in historical_periods
+    67533 "Ancien Regime" [period] proper fam 5 -> 7104 "Ancien Régime" [period] proper in historical_periods
+    67534 "Pokemon" [anime] proper fam 1 -> 13105 "Pokémon" [anime] proper in anime_and_manga_words
+    67535 "tortilla espanola" common fam 4 -> 18003 "tortilla española" common in spanish_food, egg_dishes
+    67536 "ragu" common fam 4 -> 18519 "ragù" common in pasta_dishes, italian_food, pasta_meals
+    67537 "knedliky" common fam 5 -> 18668 "knedlíky" common in dumplings
+    67538 "quatre epices" common fam 5 -> 18745 "quatre épices" common in spice_blends
+    67539 "bearnaise" common fam 4 -> 18796 "béarnaise" common in sauces_and_condiments, french_sauces
+    67540 "consomme" common fam 4 -> 18940 "consommé" common in soups
+    67541 "etouffee" common fam 5 -> 18970 "étouffée" common in stews
+    67542 "smorrebrod" common fam 5 -> 19045 "smørrebrød" common in sandwiches
+    67543 "tarte flambee" common fam 5 -> 19243 "tarte flambée" common in pizza_styles
+    67544 "salgam" common fam 5 -> 19325 "şalgam" common in turkish_food
+    67545 "cafe con leche" common fam 4 -> 19529 "café con leche" common in coffee_drinks
+    67546 "Kolsch" proper fam 5 -> 19726 "Kölsch" proper in beers
+    67547 "poitin" common fam 5 -> 19762 "poitín" common in spirits, national_spirits
+    67548 "saute pan" common fam 3 -> 19825 "sauté pan" common in cookware
+    67549 "a la carte" phrase fam 2 -> 20034 "à la carte" phrase in restaurant_words, french_phrases_in_english, restaurant
+    67550 "table d'hote" phrase fam 5 -> 20041 "table d'hôte" phrase in restaurant_words
+    67551 "rotisseur" common fam 5 -> 20068 "rôtisseur" common in kitchen_brigade
+    67552 "saute cook" common fam 4 -> 20077 "sauté cook" common in kitchen_brigade
+    67553 "entree" common fam 3 -> 20090 "entrée" [course] common in courses_of_a_meal
+    67554 "surstromming" common fam 5 -> 20219 "surströmming" common in fermented_foods, pungent_foods, things_that_smell_bad
+    67555 "jalapeno poppers" common fam 3 -> 20228 "jalapeño poppers" common in deep_fried_foods, stuffed_foods
+    67556 "crepes Suzette" proper fam 4 -> 20278 "crêpes Suzette" proper in foods_named_after_people
+    67557 "Cortes" person fam 3 -> 20412 "Cortés" person in aztecs_and_maya, conquistadors
+    67558 "Qhapaq Nan" place fam 5 -> 20454 "Qhapaq Ñan" place in inca_empire, inca_engineering
+    67559 "La Tene" place fam 5 -> 20668 "La Tène" place in celts
+    67560 "Hernan Cortes" person fam 3 -> 21007 "Hernán Cortés" person in explorers
+    67561 "Ponce de Leon" person fam 3 -> 21009 "Ponce de León" person in explorers, conquistadors
+    67562 "Faberge egg" proper fam 3 -> 21221 "Fabergé egg" proper in treasure, oval_things
+    67563 "ola" common fam 3 -> 26733 "olá" common in hello_around_the_world
+    67564 "dzien dobry" common fam 5 -> 26756 "dzień dobry" common in hello_around_the_world
+    67565 "buenos dias" common fam 2 -> 26758 "buenos días" common in hello_around_the_world
+    67566 "danke schon" common fam 2 -> 26764 "danke schön" common in thank_you_around_the_world
+    67567 "tesekkurler" common fam 4 -> 26789 "teşekkürler" common in thank_you_around_the_world, turkish_everyday_words
+    67568 "cam on" common fam 5 -> 26793 "cảm ơn" common in thank_you_around_the_world
+    67569 "multumesc" common fam 5 -> 26794 "mulțumesc" common in thank_you_around_the_world
+    67570 "dziekuje" common fam 5 -> 26795 "dziękuję" common in thank_you_around_the_world
+    67571 "dekuji" common fam 5 -> 26796 "děkuji" common in thank_you_around_the_world
+    67572 "koszonom" common fam 5 -> 26797 "köszönöm" common in thank_you_around_the_world
+    67573 "hasta manana" common fam 3 -> 26810 "hasta mañana" common in goodbye_around_the_world
+    67574 "a bientot" common fam 4 -> 26816 "à bientôt" common in goodbye_around_the_world
+    67575 "ate logo" common fam 4 -> 26817 "até logo" common in goodbye_around_the_world
+    67576 "slan" common fam 5 -> 26820 "slán" common in goodbye_around_the_world
+    67577 "hej da" common fam 5 -> 26821 "hej då" common in goodbye_around_the_world
+    67578 "a demain" common fam 4 -> 26826 "à demain" common in goodbye_around_the_world
+    67579 "dieciseis" common fam 4 -> 26842 "dieciséis" common in spanish_numbers
+    67580 "millon" common fam 3 -> 26858 "millón" common in spanish_numbers
+    67581 "touche" common fam 3 -> 26866 "touché" common in french_phrases_in_english, fencing_terms
+    67582 "piece de resistance" phrase fam 3 -> 26873 "pièce de résistance" phrase in french_phrases_in_english
+    67583 "raison d'etre" phrase fam 3 -> 26874 "raison d'être" phrase in french_phrases_in_english
+    67584 "tete-a-tete" common fam 3 -> 26876 "tête-à-tête" common in french_phrases_in_english
+    67585 "vis-a-vis" common fam 3 -> 26877 "vis-à-vis" common in french_phrases_in_english
+    67586 "coup de grace" phrase fam 3 -> 26878 "coup de grâce" phrase in french_phrases_in_english
+    67587 "coup d'etat" phrase fam 3 -> 26879 "coup d'état" phrase in french_phrases_in_english
+    67588 "creme de la creme" phrase fam 3 -> 26881 "crème de la crème" phrase in french_phrases_in_english
+    67589 "bete noire" phrase fam 4 -> 26882 "bête noire" phrase in french_phrases_in_english
+    67590 "mise en scene" phrase fam 4 -> 26886 "mise en scène" phrase in french_phrases_in_english
+    67591 "a la mode" phrase fam 3 -> 26887 "à la mode" phrase in french_phrases_in_english
+    67592 "comme ci comme ca" phrase fam 4 -> 26889 "comme ci comme ça" phrase in french_phrases_in_english
+    67593 "cause celebre" phrase fam 4 -> 26891 "cause célèbre" phrase in french_phrases_in_english
+    67594 "idee fixe" phrase fam 5 -> 26896 "idée fixe" phrase in french_phrases_in_english
+    67595 "pret-a-porter" common fam 4 -> 26897 "prêt-à-porter" common in french_phrases_in_english
+    67596 "hayir" common fam 4 -> 26958 "hayır" common in turkish_everyday_words
+    67597 "lutfen" common fam 5 -> 26962 "lütfen" common in turkish_everyday_words
+    67598 "gunaydin" common fam 5 -> 26963 "günaydın" common in turkish_everyday_words
+    67599 "gule gule" common fam 5 -> 26964 "güle güle" common in turkish_everyday_words
+    67600 "guzel" common fam 4 -> 26973 "güzel" common in turkish_everyday_words
+    67601 "hos geldiniz" common fam 5 -> 26974 "hoş geldiniz" common in turkish_everyday_words
+    67602 "canim" common fam 5 -> 26977 "canım" common in turkish_everyday_words
+    67603 "cok" common fam 5 -> 26981 "çok" common in turkish_everyday_words
+    67604 "nasilsin" common fam 5 -> 26983 "nasılsın" common in turkish_everyday_words
+    67605 "carsi" common fam 5 -> 26984 "çarşı" common in turkish_everyday_words
+    67606 "insallah" common fam 5 -> 26985 "inşallah" common in turkish_everyday_words
+    67607 "masallah" common fam 5 -> 26986 "maşallah" common in turkish_everyday_words
+    67608 "korero" common fam 4 -> 27094 "kōrero" common in maori_words
+    67609 "haere ra" common fam 5 -> 27098 "haere rā" common in maori_words
+    67610 "tena koe" common fam 4 -> 27099 "tēnā koe" common in maori_words
+    67611 "nga mihi" common fam 5 -> 27121 "ngā mihi" common in maori_words
+    67612 "miercoles" common fam 4 -> 27132 "miércoles" common in days_of_the_week_in_spanish
+    67613 "sabado" common fam 3 -> 27135 "sábado" common in days_of_the_week_in_spanish
+    67614 "Marz" proper fam 3 -> 27168 "März" proper in months_in_german
+    67615 "sacre bleu" common fam 4 -> 27745 "sacré bleu" common in polite_swears
+    67616 "Czestochowa" place fam 5 -> 34324 "Częstochowa" place in pilgrimage_sites
+    67617 "lycee" common fam 4 -> 34929 "lycée" [French school] common in school_types
+    67618 "Bogota" place fam 3 -> 35781 "Bogotá" place in capital_cities, south_american_cities, american_capitals
+    67619 "Sao Paulo" [city] place fam 2 -> 35962 "São Paulo" [city] place in south_american_cities, brazilian_cities
+    67620 "Medellin" place fam 3 -> 35964 "Medellín" place in south_american_cities
+    67621 "Merida" place fam 4 -> 36108 "Mérida" [city] place in mexican_cities
+    67622 "Ile-de-France" place fam 4 -> 36319 "Île-de-France" place in french_regions
+    67623 "Franche-Comte" place fam 4 -> 36323 "Franche-Comté" place in french_regions
+    67624 "Midi-Pyrenees" place fam 4 -> 36325 "Midi-Pyrénées" place in french_regions
+    67625 "Rhone-Alpes" place fam 4 -> 36326 "Rhône-Alpes" place in french_regions
+    67626 "Bearn" place fam 5 -> 36331 "Béarn" place in french_regions
+    67627 "Cote d'Azur" place fam 3 -> 36335 "Côte d'Azur" place in french_regions, european_holiday_regions
+    67628 "Castile and Leon" place fam 4 -> 36354 "Castile and León" place in spanish_regions
+    67629 "Baden-Wurttemberg" place fam 4 -> 36401 "Baden-Württemberg" place in german_states
+    67630 "Rhone Valley" place fam 3 -> 36457 "Rhône Valley" place in wine_regions
+    67631 "Saint-Emilion" place fam 4 -> 36476 "Saint-Émilion" place in wine_regions
+    67632 "Aland" place fam 5 -> 37967 "Åland" place in flags_with_crosses
+    67633 "Madrileno" proper fam 4 -> 38066 "Madrileño" proper in city_demonyms
+    67634 "Konigsberg" place fam 4 -> 38099 "Königsberg" place in old_city_names
+    67635 "Lourenco Marques" place fam 5 -> 38116 "Lourenço Marques" place in old_city_names
+    67636 "hakarl" common fam 5 -> 39727 "hákarl" common in pungent_foods
+    67637 "Erwin Schrodinger" person fam 3 -> 41963 "Erwin Schrödinger" person in scientists, nobel_laureates, famous_physicists, physics_prize_winners
+    67638 "Wilhelm Rontgen" person fam 4 -> 41977 "Wilhelm Röntgen" person in scientists
+    67639 "Rene Descartes" person fam 2 -> 41994 "René Descartes" person in famous_mathematicians
+    67640 "Evariste Galois" person fam 5 -> 42011 "Évariste Galois" person in famous_mathematicians
+    67641 "Kurt Godel" person fam 4 -> 42013 "Kurt Gödel" person in famous_mathematicians
+    67642 "Henri Poincare" person fam 4 -> 42015 "Henri Poincaré" person in famous_mathematicians, french_mathematicians
+    67643 "Paul Erdos" person fam 4 -> 42017 "Paul Erdős" person in famous_mathematicians
+    67644 "Schrodinger's cat" proper fam 2 -> 42150 "Schrödinger's cat" proper in famous_experiments
+    67645 "Lech Walesa" person fam 4 -> 42205 "Lech Wałęsa" person in nobel_laureates, peace_prize_winners
+    67646 "Copa America" proper fam 3 -> 44336 "Copa América" proper in famous_sporting_events
+    67647 "Luka Modric" person fam 3 -> 44518 "Luka Modrić" person in famous_soccer_players
+    67648 "Andres Iniesta" person fam 3 -> 44529 "Andrés Iniesta" person in famous_soccer_players
+    67649 "Luis Suarez" person fam 3 -> 44533 "Luis Suárez" [footballer] person in famous_soccer_players
+    67650 "Alfredo Di Stefano" person fam 5 -> 44535 "Alfredo Di Stéfano" person in famous_soccer_players
+    67651 "Vinicius Junior" person fam 3 -> 44540 "Vinícius Júnior" person in famous_soccer_players, brazilian_players
+    67652 "Iga Swiatek" person fam 3 -> 44555 "Iga Świątek" person in tennis_champions, women_s_tennis_stars
+    67653 "Goran Ivanisevic" person fam 5 -> 44574 "Goran Ivanišević" person in tennis_champions
+    67654 "Pokemon" [card game] proper fam 2 -> 45434 "Pokémon" [card game] proper in card_games
+    67655 "Pokemon cards" proper fam 1 -> 45884 "Pokémon cards" proper in collecting_hobbies
+    67656 "Eskisehirspor" org fam 5 -> 46250 "Eskişehirspor" org in turkish_football_clubs
+    67657 "Bandirmaspor" org fam 5 -> 46257 "Bandırmaspor" org in turkish_football_clubs
+    67658 "Esperance" org fam 5 -> 46292 "Espérance" org in african_soccer_clubs
+    67659 "Sao Paulo" [Brazilian club] org fam 4 -> 46436 "São Paulo" [Brazilian club] org in south_american_soccer_clubs
+    67660 "America de Cali" org fam 5 -> 46469 "América de Cali" org in south_american_soccer_clubs
+    67661 "bencao" common fam 5 -> 46490 "bênção" [capoeira kick] common in capoeira_words
+    67662 "cordao" common fam 5 -> 46504 "cordão" common in capoeira_words
+    67663 "pied-a-terre" common fam 5 -> 48385 "pied-à-terre" [small second home] common in room_types
+    67664 "Jose Donoso" person fam 5 -> 52649 "José Donoso" person in latin_american_writers
+    67665 "Sor Juana Ines" person fam 5 -> 52653 "Sor Juana Inés" person in latin_american_writers
+    67666 "Jose Marti" person fam 4 -> 52654 "José Martí" person in latin_american_writers, latin_american_liberators
+    67667 "Ruben Dario" person fam 5 -> 52655 "Rubén Darío" person in latin_american_writers
+    67668 "Cesar Vallejo" person fam 5 -> 52656 "César Vallejo" person in latin_american_writers
+    67669 "Guimaraes Rosa" person fam 5 -> 52660 "Guimarães Rosa" person in latin_american_writers
+    67670 "Cesar Aira" person fam 5 -> 52661 "César Aira" person in latin_american_writers
+    67671 "chevre" common fam 4 -> 53092 "chèvre" common in soft_cheeses, french_cheeses, cheeses
+    67672 "Neufchatel" proper fam 5 -> 53093 "Neufchâtel" proper in soft_cheeses
+    67673 "pont-l'eveque" common fam 5 -> 53115 "pont-l'évêque" common in french_cheeses
+    67674 "canele" common fam 4 -> 53145 "canelé" common in french_pastries, french_food
+    67675 "saint-honore" common fam 5 -> 53150 "saint-honoré" common in french_pastries
+    67676 "gougere" common fam 4 -> 53151 "gougère" common in french_pastries
+    67677 "salade nicoise" common fam 3 -> 53273 "salade niçoise" common in french_food
+    67678 "pissaladiere" common fam 5 -> 53277 "pissaladière" common in french_food
+    67679 "pimientos de Padron" proper fam 4 -> 53282 "pimientos de Padrón" proper in spanish_food
+    67680 "fideua" common fam 5 -> 53297 "fideuà" common in spanish_food
+    67681 "cocido madrileno" common fam 5 -> 53298 "cocido madrileño" common in spanish_food
+    67682 "spatzle" common fam 3 -> 53328 "spätzle" common in german_food
+    67683 "knodel" common fam 4 -> 53331 "knödel" common in german_food, dumplings
+    67684 "kasespatzle" common fam 5 -> 53332 "käsespätzle" common in german_food
+    67685 "leberkase" common fam 4 -> 53334 "leberkäse" common in german_food
+    67686 "konigsberger klopse" common fam 5 -> 53339 "königsberger klopse" common in german_food
+    67687 "sigara boregi" common fam 5 -> 53370 "sigara böreği" common in turkish_breakfast, meze
+    67688 "pogaca" common fam 5 -> 53374 "poğaça" common in turkish_breakfast
+    67689 "mihlama" common fam 5 -> 53375 "mıhlama" common in turkish_breakfast
+    67690 "recel" common fam 5 -> 53376 "reçel" common in turkish_breakfast
+    67691 "acma" common fam 5 -> 53378 "açma" common in turkish_breakfast
+    67692 "patlican kebab" common fam 5 nameOkIn kebab_types -> 53386 "patlıcan kebab" common in kebab_types
+    67693 "tavuk sis" common fam 5 -> 53388 "tavuk şiş" common in kebab_types
+    67694 "kuzu sis" common fam 5 -> 53389 "kuzu şiş" common in kebab_types
+    67695 "ciger sis" common fam 5 -> 53393 "ciğer şiş" common in kebab_types
+    67696 "sis kofte" common fam 5 -> 53394 "şiş köfte" common in kebab_types
+    67697 "inegol kofte" common fam 5 -> 53395 "inegöl köfte" common in kebab_types
+    67698 "kusbasi" common fam 5 -> 53396 "kuşbaşı" common in kebab_types
+    67699 "saksuka" common fam 5 -> 53407 "şakşuka" common in meze
+    67700 "aji de gallina" common fam 5 -> 53674 "ají de gallina" common in peruvian_food
+    67701 "papa a la huancaina" common fam 5 -> 53675 "papa a la huancaína" common in peruvian_food
+    67702 "suspiro limeno" common fam 5 -> 53684 "suspiro limeño" common in peruvian_food, south_american_sweets
+    67703 "vatapa" common fam 5 -> 53689 "vatapá" common in brazilian_food
+    67704 "acaraje" common fam 5 -> 53690 "acarajé" common in brazilian_food
+    67705 "rodizio" common fam 4 -> 53692 "rodízio" common in brazilian_food
+    67706 "empadao" common fam 5 -> 53699 "empadão" common in brazilian_food
+    67707 "pacoca" common fam 5 -> 53700 "paçoca" common in brazilian_food, south_american_sweets
+    67708 "faina" common fam 5 -> 53704 "fainá" common in argentinian_food
+    67709 "vitel tone" common fam 5 -> 53708 "vitel toné" common in argentinian_food
+    67710 "terere" common fam 5 -> 53715 "tereré" common in south_american_drinks
+    67711 "Guarana Antarctica" org fam 4 -> 53716 "Guaraná Antarctica" org in south_american_drinks
+    67712 "maracuya juice" common fam 4 -> 53728 "maracuyá juice" common in south_american_drinks
+    67713 "pouding chomeur" common fam 5 -> 53763 "pouding chômeur" common in canadian_food
+    67714 "carmenere" common fam 5 -> 53800 "carménère" common in red_wines, grape_varieties
+    67715 "mourvedre" common fam 5 -> 53804 "mourvèdre" common in red_wines, grape_varieties
+    67716 "gewurztraminer" common fam 4 -> 53818 "gewürztraminer" common in white_wines
+    67717 "albarino" common fam 4 -> 53819 "albariño" common in white_wines
+    67718 "gruner veltliner" common fam 5 -> 53824 "grüner veltliner" common in white_wines
+    67719 "Muller-Thurgau" proper fam 5 -> 53837 "Müller-Thurgau" proper in white_wines
+    67720 "torrontes" common fam 5 -> 53841 "torrontés" common in white_wines
+    67721 "cuvee" common fam 5 -> 53863 "cuvée" common in wine_words
+    67722 "Kahlua" org fam 2 -> 53873 "Kahlúa" org in liqueurs
+    67723 "Jagermeister" org fam 3 -> 53877 "Jägermeister" org in liqueurs
+    67724 "creme de menthe" common fam 4 -> 53878 "crème de menthe" common in liqueurs
+    67725 "creme de cassis" common fam 4 -> 53879 "crème de cassis" common in liqueurs
+    67726 "curacao" [liqueur] common fam 3 -> 53886 "curaçao" [liqueur] common in liqueurs
+    67727 "creme de violette" common fam 5 -> 53894 "crème de violette" common in liqueurs
+    67728 "Goldschlager" org fam 5 -> 53897 "Goldschläger" org in liqueurs
+    67729 "Narvaez" person fam 5 -> 54113 "Narváez" person in conquistadors
+    67730 "Belalcazar" person fam 5 -> 54114 "Belalcázar" person in conquistadors
+    67731 "Jimenez de Quesada" person fam 5 -> 54115 "Jiménez de Quesada" person in conquistadors
+    67732 "Bernal Diaz" person fam 5 -> 54118 "Bernal Díaz" person in conquistadors
+    67733 "Juan de Onate" person fam 5 -> 54119 "Juan de Oñate" person in conquistadors
+    67734 "Vasco Nunez de Balboa" person fam 4 -> 54124 "Vasco Núñez de Balboa" person in conquistadors
+    67735 "Pedro Alvares Cabral" person fam 4 -> 54126 "Pedro Álvares Cabral" person in portuguese_explorers
+    67736 "Diogo Cao" person fam 5 -> 54132 "Diogo Cão" person in portuguese_explorers
+    67737 "Pero da Covilha" person fam 5 -> 54133 "Pêro da Covilhã" person in portuguese_explorers
+    67738 "Nuno Tristao" person fam 5 -> 54135 "Nuno Tristão" person in portuguese_explorers
+    67739 "Jorge Alvares" person fam 5 -> 54137 "Jorge Álvares" person in portuguese_explorers
+    67740 "Fernao Mendes Pinto" person fam 5 -> 54138 "Fernão Mendes Pinto" person in portuguese_explorers
+    67741 "Joao Goncalves Zarco" person fam 5 -> 54139 "João Gonçalves Zarco" person in portuguese_explorers
+    67742 "Estevao Gomes" person fam 5 -> 54141 "Estêvão Gomes" person in portuguese_explorers
+    67743 "Tristao Vaz" person fam 5 -> 54142 "Tristão Vaz" person in portuguese_explorers
+    67744 "Joao da Nova" person fam 5 -> 54143 "João da Nova" person in portuguese_explorers
+    67745 "Rene Caillie" person fam 5 -> 54179 "René Caillié" person in explorers_of_africa
+    67746 "Niccolo de Conti" person fam 5 -> 54215 "Niccolò de Conti" person in great_travelers
+    67747 "Ruy Gonzalez de Clavijo" person fam 5 -> 54216 "Ruy González de Clavijo" person in great_travelers
+    67748 "Salomon Andree" person fam 5 -> 54252 "Salomon Andrée" person in arctic_explorers
+    67749 "Faberge eggs" proper fam 4 -> 54315 "Fabergé eggs" proper in lost_treasures
+    67750 "Crecy" place fam 4 -> 54341 "Crécy" place in medieval_battles
+    67751 "Lutzen" place fam 5 -> 54386 "Lützen" place in napoleonic_battles
+    67752 "Pozieres" place fam 5 -> 54421 "Pozières" place in world_war_i_battles
+    67753 "Hurtgen Forest" place fam 5 -> 54453 "Hürtgen Forest" place in world_war_ii_battles
+    67754 "Jose de San Martin" person fam 4 -> 54514 "José de San Martín" person in latin_american_liberators
+    67755 "Antonio Jose de Sucre" person fam 5 -> 54516 "Antonio José de Sucre" person in latin_american_liberators
+    67756 "Jose Maria Morelos" person fam 5 -> 54518 "José María Morelos" person in latin_american_liberators
+    67757 "Tupac Amaru II" person fam 5 -> 54520 "Túpac Amaru II" person in latin_american_liberators
+    67758 "Agustin de Iturbide" person fam 5 -> 54521 "Agustín de Iturbide" person in latin_american_liberators
+    67759 "Jose Artigas" person fam 5 -> 54522 "José Artigas" person in latin_american_liberators
+    67760 "Francisco Morazan" person fam 5 -> 54524 "Francisco Morazán" person in latin_american_liberators
+    67761 "Manuela Saenz" person fam 5 -> 54528 "Manuela Sáenz" person in latin_american_liberators
+    67762 "Jose Gervasio Artigas" person fam 5 -> 54535 "José Gervasio Artigas" person in latin_american_liberators
+    67763 "ancien regime" [system] common fam 4 -> 55127 "ancien régime" [system] common in french_revolution
+    67764 "cempasuchil" common fam 5 -> 55732 "cempasúchil" common in day_of_the_dead
+    67765 "Hofbrau" org fam 4 -> 55767 "Hofbräu" org in oktoberfest
+    67766 "marzen" common fam 5 -> 55768 "märzen" common in oktoberfest
+    67767 "funf" common fam 2 -> 55960 "fünf" [German number] common in numbers_in_german
+    67768 "zwolf" common fam 3 -> 55967 "zwölf" [German number] common in numbers_in_german
+    67769 "dreissig" common fam 3 -> 55970 "dreißig" [German number] common in numbers_in_german
+    67770 "funfzig" common fam 3 -> 55972 "fünfzig" [German number] common in numbers_in_german
+    67771 "Nimes" place fam 4 -> 56893 "Nîmes" place in french_cities
+    67772 "Dusseldorf" place fam 3 -> 56902 "Düsseldorf" place in german_cities
+    67773 "Lubeck" place fam 4 -> 56913 "Lübeck" place in german_cities
+    67774 "Wurzburg" place fam 4 -> 56918 "Würzburg" place in german_cities
+    67775 "Cadiz" place fam 4 -> 56947 "Cádiz" place in spanish_cities
+    67776 "Gijon" place fam 4 -> 56952 "Gijón" place in spanish_cities
+    67777 "Avila" place fam 4 -> 56956 "Ávila" place in spanish_cities
+    67778 "Almeria" place fam 4 -> 56959 "Almería" place in spanish_cities
+    67779 "Leon" place fam 4 -> 56960 "León" place in spanish_cities
+    67780 "Goiania" place fam 4 -> 57074 "Goiânia" place in brazilian_cities
+    67781 "Florianopolis" place fam 4 -> 57077 "Florianópolis" place in brazilian_cities
+    67782 "Foz do Iguacu" place fam 4 -> 57080 "Foz do Iguaçu" place in brazilian_cities
+    67783 "Buzios" place fam 4 -> 57081 "Búzios" place in brazilian_cities
+    67784 "Sao Luis" place fam 4 -> 57082 "São Luís" place in brazilian_cities
+    67785 "Maceio" place fam 4 -> 57083 "Maceió" place in brazilian_cities
+    67786 "Niteroi" place fam 4 -> 57085 "Niterói" place in brazilian_cities
+    67787 "Petropolis" place fam 4 -> 57086 "Petrópolis" place in brazilian_cities
+    67788 "Cuiaba" place fam 5 -> 57088 "Cuiabá" place in brazilian_cities
+    67789 "Joao Pessoa" place fam 4 -> 57090 "João Pessoa" place in brazilian_cities
+    67790 "Taupo" place fam 4 -> 57111 "Taupō" place in new_zealand_cities
+    67791 "Monch" place fam 4 -> 57116 "Mönch" place in alpine_peaks
+    67792 "Santis" place fam 5 -> 57135 "Säntis" place in alpine_peaks
+    67793 "Eyjafjallajokull" place fam 3 -> 57155 "Eyjafjallajökull" place in famous_volcanoes
+    67794 "Mount Pelee" place fam 4 -> 57157 "Mount Pelée" place in famous_volcanoes
+    67795 "Ogooue" place fam 5 -> 57264 "Ogooué" place in african_rivers
+    67796 "Sao Francisco" place fam 4 -> 57343 "São Francisco" place in south_american_rivers
+    67797 "Solimoes" place fam 4 -> 57351 "Solimões" place in south_american_rivers
+    67798 "Tapajos" place fam 5 -> 57352 "Tapajós" place in south_american_rivers
+    67799 "Jurua" place fam 5 -> 57354 "Juruá" place in south_american_rivers
+    67800 "Maranon" place fam 5 -> 57359 "Marañón" place in south_american_rivers
+    67801 "Caroni" place fam 5 -> 57361 "Caroní" place in south_american_rivers
+    67802 "Mamore" place fam 5 -> 57363 "Mamoré" place in south_american_rivers
+    67803 "Apurimac" place fam 5 -> 57366 "Apurímac" place in south_american_rivers
+    67804 "Dolmabahce Palace" place fam 4 -> 57376 "Dolmabahçe Palace" place in istanbul_landmarks
+    67805 "Ortakoy Mosque" place fam 5 -> 57382 "Ortaköy Mosque" place in istanbul_landmarks
+    67806 "Pere Lachaise" place fam 4 -> 57411 "Père Lachaise" place in paris_landmarks
+    67807 "Ile de la Cite" place fam 4 -> 57415 "Île de la Cité" place in paris_landmarks
+    67808 "La Defense" place fam 4 -> 57416 "La Défense" place in paris_landmarks
+    67809 "Hotel de Ville" place fam 4 -> 57420 "Hôtel de Ville" place in paris_landmarks
+    67810 "Musee Rodin" place fam 5 -> 57422 "Musée Rodin" place in paris_landmarks
+    67811 "Bocca della Verita" place fam 5 -> 57435 "Bocca della Verità" place in rome_landmarks
+    67812 "purpura" common fam 4 -> 57742 "púrpura" common in colors_in_spanish
+    67813 "carmesi" common fam 5 -> 57747 "carmesí" common in colors_in_spanish
+    67814 "ambar" common fam 5 -> 57750 "ámbar" [color] common in colors_in_spanish
+    67815 "dore" common fam 4 -> 57757 "doré" common in colors_in_french
+    67816 "argente" common fam 4 -> 57758 "argenté" common in colors_in_french
+    67817 "ecarlate" common fam 5 -> 57765 "écarlate" common in colors_in_french
+    67818 "kizil" common fam 5 -> 57794 "kızıl" common in colors_in_turkish
+    67819 "fildisi" common fam 5 -> 57795 "fildişi" common in colors_in_turkish
+    67820 "visne" common fam 5 -> 57799 "vişne" [color] common in colors_in_turkish
+    67821 "civit" common fam 5 -> 57801 "çivit" common in colors_in_turkish
+    67822 "ekmek kadayifi" common fam 5 -> 57892 "ekmek kadayıfı" common in sweet_treats_of_turkey
+    67823 "pe de moca" common fam 5 -> 57909 "pé de moça" common in south_american_sweets
+    67824 "Curacao" [island] place fam 3 -> 59390 "Curaçao" [island] place in caribbean_islands
+    67825 "gougeres" common fam 4 -> 59634 "gougères" common in french_food
+    67826 "calcots" common fam 5 -> 59641 "calçots" common in spanish_food
+    67827 "grunkohl" common fam 4 -> 59667 "grünkohl" common in german_food
+    67828 "rote grutze" common fam 4 -> 59668 "rote grütze" common in german_food
+    67829 "handkase" common fam 5 -> 59672 "handkäse" common in german_food
+    67830 "sulze" common fam 5 -> 59675 "sülze" common in german_food
+    67831 "lecso" common fam 4 -> 59677 "lecsó" common in eastern_european_food
+    67832 "zacusca" common fam 5 -> 59683 "zacuscă" common in eastern_european_food
+    67833 "pisi" common fam 4 -> 59686 "pişi" common in turkish_breakfast
+    67834 "cilbir" common fam 4 -> 59687 "çılbır" common in turkish_breakfast
+    67835 "kasar" common fam 4 -> 59688 "kaşar" common in turkish_breakfast
+    67836 "cokelek" common fam 5 -> 59691 "çökelek" common in turkish_breakfast
+    67837 "tereyagi" common fam 4 -> 59692 "tereyağı" common in turkish_breakfast
+    67838 "kagit kebabi" common fam 5 nameOkIn kebab_types -> 59695 "kağıt kebabı" common in kebab_types
+    67839 "cop sis" common fam 5 -> 59696 "çöp şiş" common in kebab_types
+    67840 "yogurtlu kebab" common fam 4 nameOkIn kebab_types -> 59698 "yoğurtlu kebab" common in kebab_types
+    67841 "tas kebabi" common fam 5 nameOkIn kebab_types -> 59699 "tas kebabı" common in kebab_types
+    67842 "orman kebabi" common fam 5 nameOkIn kebab_types -> 59700 "orman kebabı" common in kebab_types
+    67843 "kuyu kebabi" common fam 5 nameOkIn kebab_types -> 59701 "kuyu kebabı" common in kebab_types
+    67844 "kisir" common fam 4 -> 59702 "kısır" common in meze
+    67845 "arnavut cigeri" common fam 5 -> 59708 "arnavut ciğeri" common in meze
+    67846 "yalanci dolma" common fam 5 -> 59709 "yalancı dolma" common in meze
+    67847 "tacaca" common fam 4 -> 59804 "tacacá" common in brazilian_food
+    67848 "baiao de dois" common fam 4 -> 59805 "baião de dois" common in brazilian_food
+    67849 "pirao" common fam 5 -> 59806 "pirão" common in brazilian_food
+    67850 "bobo de camarao" common fam 5 -> 59808 "bobó de camarão" common in brazilian_food
+    67851 "feijao tropeiro" common fam 5 -> 59809 "feijão tropeiro" common in brazilian_food
+    67852 "manicoba" common fam 5 -> 59810 "maniçoba" common in brazilian_food
+    67853 "blaufrankisch" common fam 5 -> 59837 "blaufränkisch" common in red_wines
+    67854 "mencia" common fam 5 -> 59841 "mencía" common in red_wines
+    67855 "kummel" common fam 5 -> 59879 "kümmel" common in liqueurs
+    67856 "pacharan" common fam 5 -> 59881 "pacharán" common in liqueurs
+    67857 "Huascaran" place fam 4 -> 60494 "Huascarán" place in andes
+    67858 "Reunion" place fam 4 -> 60515 "Réunion" place in east_african_countries
+    67859 "Rias Baixas" place fam 5 -> 60520 "Rías Baixas" place in wine_regions
+    67860 "Tiete" place fam 5 -> 60534 "Tietê" [river] place in south_american_rivers
+    67861 "Biobio" place fam 5 -> 60535 "Biobío" [river] place in south_american_rivers
+    67862 "Guapore" place fam 5 -> 60537 "Guaporé" [river] place in south_american_rivers
+    67863 "Zurs" place fam 5 -> 60759 "Zürs" place in famous_ski_resorts
+    67864 "Nilton Santos" person fam 5 -> 61784 "Nílton Santos" person in famous_soccer_players, brazilian_players
+    67865 "cabecada" common fam 5 -> 61849 "cabeçada" [capoeira] common in capoeira_words
+    67866 "Tipon" place fam 5 -> 62140 "Tipón" place in inca_engineering
+    67867 "Winay Wayna" place fam 5 -> 62143 "Wiñay Wayna" place in inca_engineering
+    67868 "tesekkur ederim" common fam 4 -> 62336 "teşekkür ederim" common in turkish_everyday_words
+    67869 "turk kahvesi" common fam 4 -> 62337 "türk kahvesi" common in turkish_everyday_words
+    67870 "chicharron" common fam 4 -> 62474 "chicharrón" common in crunchy_foods
+    67871 "Padron" proper fam 4 -> 62898 "Padrón" proper in chili_peppers
+    67872 "nicoise" common fam 3 -> 62970 "niçoise" common in salads
+    67873 "cag kebab" common fam 5 nameOkIn kebab_types -> 62984 "cağ kebab" common in kebab_types
+    67874 "Gaspe" place fam 5 -> 63175 "Gaspé" place in peninsulas
+  
+  Same text twice in a theme, new: none
+  Case lint, new hits: none
+  Checks: {"warn:theme-name":3,"warn:long":5,"warn:maybe-duplicate":1}; changed kinds: none
+  new issues: none
+  gone issues: none
+  
+  361 changes
+
+Family export (the committed file, node tools/export-game.mjs --strict) against the committed v395 file (git show HEAD), checked by a script:
+  every entry 0-60624 has the same text, pos, type, flags, familiarity, regions, regionsHi, root, clash, linkCount, breaks and zipf; every
+  link 0-106957 is the same link (theme, difficulty, typicality, shown) at the same number.
+  Format "v" 4 and linkFields ["theme","difficulty","typicality","shown"] unchanged. lib.version 395 -> 396, modified.
+  Entries 60625 -> 60950: 325 new at the end (60625-60949), all spelling aliases (flag 16) of existing roots. No entry leaves, no index shifts.
+  36 of the 361 new aliases are not in the family export because their root is not (wines, liqueurs, beers, battles, conquistadors, Oktoberfest).
+  Links 106958 -> 107346: 388 new (106958-107345), the links of the new aliases, which list their root's links (as every alias in the export):
+    284 aliases with 1 link, 27 with 2, 8 with 3, 4 with 4, 2 with 5. No link removed; no shift (0-106957 +0).
+    Each new alias link repeats its root's link (same theme, difficulty, typicality); all 388 have shown 0. 385 are identical to the root's link;
+    3 differ only in shown: patlican kebab 60799, yogurtlu kebab 60920, cag kebab 60948 in kebab types (theme 143) have shown 0, while their
+    roots patlıcan kebab 49595, yoğurtlu kebab 55444, cağ kebab 58463 show "patlıcan", "yoğurtlu", "cağ" there. As in v395 for doner kebab
+    60534 (shown 0) beside döner kebab 18175 (shown "döner"): an alias carries no shown text of its own (v387, v390).
+  shown 3828 -> 3828, nameWordLinks 321, nameThemeLinks 2284, shownUK 25: identical (same pairs and numbers).
+  Theme rows: the same 3240 rows, identical (counts and ranges count roots, not aliases).
+  New entries (index text (root index)):
+    60625 filmjolk (542), 60626 El Nino (1998), 60627 La Nina (2000), 60628 Cote d'Ivoire (2154), 60629 Krakow (2258), 60630 Asuncion (2261), 60631 
+    Tromso (2264), 60632 Valparaiso (2265), 60633 Dia de los Muertos (5065), 60634 Pele (5358), 60635 Kylian Mbappe (5383), 60636 Bjorn Borg (5413), 
+    60637 Zlatan Ibrahimovic (5428), 60638 Ferenc Puskas (5438), 60639 Lasse Viren (5453), 60640 Eusebio (5456), 60641 Parchis (5574), 60642 Pokemon 
+    (5632), 60643 Belle Epoque (6849), 60644 Ancien Regime (6868), 60645 Pokemon (12694), 60646 tortilla espanola (17206), 60647 ragu (17648), 60648 
+    knedliky (17788), 60649 quatre epices (17855), 60650 bearnaise (17899), 60651 consomme (18009), 60652 etouffee (18038), 60653 smorrebrod (18098), 
+    60654 tarte flambee (18272), 60655 salgam (18352), 60656 cafe con leche (18540), 60657 saute pan (18671), 60658 a la carte (18870), 60659 table 
+    d'hote (18877), 60660 rotisseur (18902), 60661 saute cook (18911), 60662 entree (18920), 60663 surstromming (19044), 60664 jalapeno poppers (19052), 
+    60665 crepes Suzette (19101), 60666 Cortes (19230), 60667 Qhapaq Nan (19267), 60668 La Tene (19473), 60669 Hernan Cortes (19734), 60670 Ponce de Leon 
+    (19736), 60671 Faberge egg (19932), 60672 ola (25076), 60673 dzien dobry (25099), 60674 buenos dias (25101), 60675 danke schon (25107), 60676 
+    tesekkurler (25132), 60677 cam on (25136), 60678 multumesc (25137), 60679 dziekuje (25138), 60680 dekuji (25139), 60681 koszonom (25140), 60682 hasta 
+    manana (25153), 60683 a bientot (25159), 60684 ate logo (25160), 60685 slan (25163), 60686 hej da (25164), 60687 a demain (25169), 60688 dieciseis 
+    (25185), 60689 millon (25201), 60690 touche (25209), 60691 piece de resistance (25216), 60692 raison d'etre (25217), 60693 tete-a-tete (25219), 60694 
+    vis-a-vis (25220), 60695 coup de grace (25221), 60696 coup d'etat (25222), 60697 creme de la creme (25224), 60698 bete noire (25225), 60699 mise en 
+    scene (25229), 60700 a la mode (25230), 60701 comme ci comme ca (25232), 60702 cause celebre (25234), 60703 idee fixe (25239), 60704 pret-a-porter 
+    (25240), 60705 hayir (25299), 60706 lutfen (25303), 60707 gunaydin (25304), 60708 gule gule (25305), 60709 guzel (25313), 60710 hos geldiniz (25314), 
+    60711 canim (25317), 60712 cok (25321), 60713 nasilsin (25323), 60714 carsi (25324), 60715 insallah (25325), 60716 masallah (25326), 60717 korero 
+    (25432), 60718 haere ra (25436), 60719 tena koe (25437), 60720 nga mihi (25459), 60721 miercoles (25470), 60722 sabado (25473), 60723 Marz (25506), 
+    60724 sacre bleu (26053), 60725 Czestochowa (31792), 60726 lycee (32323), 60727 Bogota (33145), 60728 Sao Paulo (33326), 60729 Medellin (33328), 
+    60730 Merida (33472), 60731 Ile-de-France (33682), 60732 Franche-Comte (33686), 60733 Midi-Pyrenees (33688), 60734 Rhone-Alpes (33689), 60735 Bearn 
+    (33694), 60736 Cote d'Azur (33698), 60737 Castile and Leon (33717), 60738 Baden-Wurttemberg (33764), 60739 Aland (35110), 60740 Madrileno (35209), 
+    60741 Konigsberg (35242), 60742 Lourenco Marques (35259), 60743 hakarl (36762), 60744 Erwin Schrodinger (38881), 60745 Wilhelm Rontgen (38895), 60746 
+    Rene Descartes (38912), 60747 Evariste Galois (38929), 60748 Kurt Godel (38931), 60749 Henri Poincare (38933), 60750 Paul Erdos (38935), 60751 
+    Schrodinger's cat (39065), 60752 Lech Walesa (39118), 60753 Copa America (41200), 60754 Luka Modric (41365), 60755 Andres Iniesta (41376), 60756 Luis 
+    Suarez (41380), 60757 Alfredo Di Stefano (41382), 60758 Vinicius Junior (41387), 60759 Iga Swiatek (41402), 60760 Goran Ivanisevic (41421), 60761 
+    Pokemon (42012), 60762 Pokemon cards (42456), 60763 Eskisehirspor (42810), 60764 Bandirmaspor (42817), 60765 Esperance (42850), 60766 Sao Paulo 
+    (42993), 60767 America de Cali (43025), 60768 bencao (43046), 60769 cordao (43060), 60770 pied-a-terre (44859), 60771 Jose Donoso (48883), 60772 Sor 
+    Juana Ines (48887), 60773 Jose Marti (48888), 60774 Ruben Dario (48889), 60775 Cesar Vallejo (48890), 60776 Guimaraes Rosa (48894), 60777 Cesar Aira 
+    (48895), 60778 chevre (49319), 60779 Neufchatel (49320), 60780 pont-l'eveque (49337), 60781 canele (49367), 60782 saint-honore (49372), 60783 gougere 
+    (49373), 60784 salade nicoise (49485), 60785 pissaladiere (49489), 60786 pimientos de Padron (49494), 60787 fideua (49509), 60788 cocido madrileno 
+    (49510), 60789 spatzle (49540), 60790 knodel (49543), 60791 kasespatzle (49544), 60792 leberkase (49546), 60793 konigsberger klopse (49551), 60794 
+    sigara boregi (49582), 60795 pogaca (49586), 60796 mihlama (49587), 60797 recel (49588), 60798 acma (49590), 60799 patlican kebab (49595), 60800 
+    tavuk sis (49597), 60801 kuzu sis (49598), 60802 ciger sis (49600), 60803 sis kofte (49601), 60804 inegol kofte (49602), 60805 kusbasi (49603), 60806 
+    saksuka (49613), 60807 aji de gallina (49876), 60808 papa a la huancaina (49877), 60809 suspiro limeno (49886), 60810 vatapa (49891), 60811 acaraje 
+    (49892), 60812 rodizio (49894), 60813 empadao (49901), 60814 pacoca (49902), 60815 faina (49906), 60816 vitel tone (49910), 60817 terere (49917), 
+    60818 Guarana Antarctica (49918), 60819 maracuya juice (49930), 60820 pouding chomeur (49965), 60821 Pedro Alvares Cabral (50165), 60822 Diogo Cao 
+    (50171), 60823 Pero da Covilha (50172), 60824 Nuno Tristao (50174), 60825 Jorge Alvares (50176), 60826 Fernao Mendes Pinto (50177), 60827 Joao 
+    Goncalves Zarco (50178), 60828 Estevao Gomes (50180), 60829 Tristao Vaz (50181), 60830 Joao da Nova (50182), 60831 Rene Caillie (50218), 60832 
+    Niccolo de Conti (50254), 60833 Ruy Gonzalez de Clavijo (50255), 60834 Salomon Andree (50291), 60835 Faberge eggs (50351), 60836 Jose de San Martin 
+    (50388), 60837 Antonio Jose de Sucre (50390), 60838 Jose Maria Morelos (50392), 60839 Tupac Amaru II (50394), 60840 Agustin de Iturbide (50395), 
+    60841 Jose Artigas (50396), 60842 Francisco Morazan (50398), 60843 Manuela Saenz (50402), 60844 Jose Gervasio Artigas (50409), 60845 ancien regime 
+    (50990), 60846 cempasuchil (51584), 60847 funf (51800), 60848 zwolf (51807), 60849 dreissig (51810), 60850 funfzig (51812), 60851 Nimes (52720), 
+    60852 Dusseldorf (52729), 60853 Lubeck (52740), 60854 Wurzburg (52745), 60855 Cadiz (52774), 60856 Gijon (52779), 60857 Avila (52783), 60858 Almeria 
+    (52786), 60859 Leon (52787), 60860 Goiania (52901), 60861 Florianopolis (52904), 60862 Foz do Iguacu (52907), 60863 Buzios (52908), 60864 Sao Luis 
+    (52909), 60865 Maceio (52910), 60866 Niteroi (52912), 60867 Petropolis (52913), 60868 Cuiaba (52915), 60869 Joao Pessoa (52917), 60870 Taupo (52938), 
+    60871 Monch (52943), 60872 Santis (52962), 60873 Eyjafjallajokull (52982), 60874 Mount Pelee (52984), 60875 Ogooue (53089), 60876 Sao Francisco 
+    (53168), 60877 Solimoes (53176), 60878 Tapajos (53177), 60879 Jurua (53179), 60880 Maranon (53184), 60881 Caroni (53186), 60882 Mamore (53188), 60883 
+    Apurimac (53191), 60884 Dolmabahce Palace (53201), 60885 Ortakoy Mosque (53207), 60886 Pere Lachaise (53236), 60887 Ile de la Cite (53240), 60888 La 
+    Defense (53241), 60889 Hotel de Ville (53245), 60890 Musee Rodin (53247), 60891 Bocca della Verita (53260), 60892 purpura (53560), 60893 carmesi 
+    (53565), 60894 ambar (53568), 60895 dore (53575), 60896 argente (53576), 60897 ecarlate (53583), 60898 kizil (53612), 60899 fildisi (53613), 60900 
+    visne (53617), 60901 civit (53619), 60902 ekmek kadayifi (53708), 60903 pe de moca (53725), 60904 Curacao (55150), 60905 gougeres (55382), 60906 
+    calcots (55389), 60907 grunkohl (55415), 60908 rote grutze (55416), 60909 handkase (55420), 60910 sulze (55423), 60911 lecso (55425), 60912 zacusca 
+    (55431), 60913 pisi (55434), 60914 cilbir (55435), 60915 kasar (55436), 60916 cokelek (55439), 60917 tereyagi (55440), 60918 kagit kebabi (55442), 
+    60919 cop sis (55443), 60920 yogurtlu kebab (55444), 60921 tas kebabi (55445), 60922 orman kebabi (55446), 60923 kuyu kebabi (55447), 60924 kisir 
+    (55448), 60925 arnavut cigeri (55454), 60926 yalanci dolma (55455), 60927 tacaca (55549), 60928 baiao de dois (55550), 60929 pirao (55551), 60930 
+    bobo de camarao (55553), 60931 feijao tropeiro (55554), 60932 manicoba (55555), 60933 Huascaran (56162), 60934 Reunion (56182), 60935 Tiete (56193), 
+    60936 Biobio (56194), 60937 Guapore (56196), 60938 Zurs (56402), 60939 Nilton Santos (57377), 60940 cabecada (57441), 60941 Tipon (57729), 60942 
+    Winay Wayna (57732), 60943 tesekkur ederim (57923), 60944 turk kahvesi (57924), 60945 chicharron (58030), 60946 Padron (58391), 60947 nicoise 
+    (58450), 60948 cag kebab (58463), 60949 Gaspe (58616)
+
+Notice for _WS_ (HELD: not sent; the manager reviews and sends; measured against the v395 export you pinned):
+  Library v396 (rule 8, T32: an accented root keeps its plain spelling as a spelling alias, so players who type or read without accents find it).
+  Family export: 60625 -> 60950 entries. No entry leaves and no entry index changes: indices 0-60624 are the same entries as in v395, with every
+  field unchanged (text, pos, type, flags, familiarity, regions, regionsHi, root, clash, linkCount, breaks, zipf).
+  New at the end, 60625-60949 (325 entries): each is a spelling alias (flag 16) of an existing root, its root field pointing to that root
+  (root index + 1, as for every alias). The list with each root index is in tools/gen/batch396-changes.txt ("New entries"). Examples:
+  60625 filmjolk (root 542 filmjölk), 60634 Pele (5358 Pelé), 60642, 60645, 60761 Pokemon (roots 5632, 12694, 42012: the video game, the anime, the card game),
+  60799 patlican kebab (49595 patlıcan kebab). Their type, familiarity and pos are the root's.
+  Links 106958 -> 107346: 388 added at the end (106958-107345), the links of the new aliases, which repeat their root's links (same theme,
+  difficulty, typicality, shown 0). No link is removed and no link number changes: links 0-106957 are the same links at the same numbers.
+  shown (3828), nameWordLinks (321), nameThemeLinks (2284) and shownUK (25) are identical. Theme rows: the same 3240 rows, identical.
+  As before, an alias does not take its root's shown text: patlican kebab 60799, yogurtlu kebab 60920 and cag kebab 60948 have shown 0 in kebab
+  types, where their roots show "patlıcan", "yoğurtlu", "cağ" (as doner kebab 60534 beside döner kebab 18175). 53 of the 325 new entries have
+  links only in locked themes (Māori words, colors in Spanish and Turkish, Turkish words ...); per your rule an alias is never shown there.
+  Format: "v" stays 4; the link order stays theme, difficulty, typicality, shown.
