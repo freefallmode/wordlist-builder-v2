@@ -1,0 +1,465 @@
+Library v397 (tools/gen/batch397.mjs, 2026-11-18 15:43): 210 changes. Simon approved the batch (ISSUES.md I20 and I21).
+  I20: the common words that v390/v391 showed with a capital in the "names that are ..." themes get given-name entries, by the v395 rule
+  (DESIGN-entries.md, after the I18 paragraph: every link in a given-name theme sits on a given-name entry, gloss "name", type person).
+  I21: sablé / sable [biscuit] and Sacré-Cœur / Sacre-Coeur, each one thing stored as two roots, are merged (rule 8); kūmara / kumara left.
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v396; no new or gone issue messages), counted by the
+  script with validate() before and after, as batch395.mjs. No new same-text-in-a-theme pair. Case lint 0.
+  npm test 43 pass; node tools/export-game.mjs full <scratch> --strict exits 0 (62671 entries, case lint 0, the same 10 same-text drops);
+  tools/gen/style-case.mjs 0 changes (Checks errors 0 -> 0; case lint 0); tools/gen/propword-exceptions.mjs 0 changes (case lint 0);
+  rerunning batch397.mjs prints 0 changes; node tools/export-game.mjs --strict exits 0.
+  tools/gen/plaincheck.mjs after: 23 (17 in an open theme, 6 only in locked themes) = the 25 skips of batch396 less sablé and Sacré-Cœur, whose
+  plain duplicates are now their spelling aliases. kūmara stays in the list (left by decision, below). tools/gen/plaincheck397.txt.
+
+Counts: 78 common entries held 82 given-name-theme links (names_that_are_colors, _trees, _flowers, _gems, _virtues); 77 name texts (Cherry takes
+  both cherry [fruit] and cherry tree). 74 new [name] entries (67875-67949 less 67927), each type person, gloss "name", pos noun, region none,
+  status gen, fam of the old entry; 3 entries become the name in place (Unity 21504, Elder 28134, Liberty 28278); 1 new common entry, unity
+  [harmony] 67927. 79 links moved to the new name entries (same typicality), 3 stay on the entry turned name, 1 (peace_words) moved to the new
+  unity; 82 case-only shown texts dropped. 41 glosses added to common entries (needs-gloss beside the new name). 2 merges (I21).
+  No entry deleted. No existing [name] entry existed for any of the 77 texts (checked: an exact-text root of type person), so none was reused.
+
+Decisions (why):
+  - New [name] entries take the old entry's fam, so every moved link keeps its difficulty (as batch394/395). Checked in the export: all 79 moved
+    links have the same theme, typicality and difficulty on the new entry.
+  - The name's text is the link's shown text (all were the word with a capital, so the text the game showed does not change): cherry tree, pine
+    tree, cassia tree showed "Cherry", "Pine", "Cassia", so the names are Cherry, Pine, Cassia. One name entry per text: Cherry (fam 1, as both
+    cherry and cherry tree) holds names_that_are_colors and names_that_are_trees; Magnolia, Holly (flowers, trees), Pearl, Jade (gems, colors) one
+    entry each with both links, as they were on one common entry.
+  - In place, not split: elder [tree] 28134 had no theme but names_that_are_trees and liberty [freedom] 28278 none but names_that_are_virtues;
+    unity [harmony] 21504 had only peace_words besides, and peace_words is not in the game export. Split as the others, each would have kept no
+    exported link and left the export, shifting every later entry index (a first run did exactly that: v396 indices 20054, 26295, 26332 dropped
+    out and 40894 indices shifted; reverted). So, as Brooklyn and Carolina at v395, the entry itself becomes the name (text Elder, Liberty, Unity;
+    gloss name; type person; the case-only shown text goes) and keeps its id and export index. The common senses elder [tree] and liberty
+    [freedom] had no other link, so no common entry is kept for them; unity [harmony] gets a new common entry 67927 (fam 2, gloss harmony) that
+    takes peace_words (typicality 3); it is not in the export, as peace_words is not.
+  - Glosses (needs-gloss: a common entry with no gloss now shares its text with the [name]): wording as the existing glosses of the group (willow
+    [tree], heather [plant], tawny [color], honor [virtue]): color (azure, cyan, magenta, crimson, sienna, auburn, cerise, carmine, sandy), tree
+    (maple, birch, cedar, cypress, juniper, acacia, magnolia, alder, linden), flower (tulip, orchid, marigold, pansy, petunia, hyacinth, bluebell,
+    dahlia, zinnia, gardenia, camellia, azalea, amaryllis), plant (ivy, clover), flowers (blossom), spice (cassia 21132, the spice, beside Cassia;
+    cassia tree keeps its own text), happiness (joy), wish (hope), calm (serenity), fairness (justice), belief (faith), giving (charity). Gloss is
+    not exported.
+  - Case lint: Magenta, Fuchsia and Sienna [name] made the lint flag magenta 7684, fuchsia 7685, sienna 7712 in colors_named_after_places (a
+    theme of names, with a proper-type entry of the same spelling). The colour is right there (it is the colour named after the place), so 3 keys
+    are added to js/caselint-allow.js after burgundy's, the same case: '7684|colors_named_after_places', '7685|colors_named_after_places',
+    '7712|colors_named_after_places'.
+  - linden's regional alias basswood 1678 no longer inherits names_that_are_trees (export link removed): Linden the name has no alias.
+  - flowers_used_as_girls_names left on the flowers (manager): jasmine, dahlia, gardenia, camellia keep that link while their
+    names_that_are_flowers links moved to the names.
+  - sablé (I21.1): rule 8 keeps the accent if any major English dictionary prints it. Evidence (read 2026-11-18):
+      Cambridge English Dictionary, dictionary.cambridge.org/dictionary/english/sable: headword "sablé", noun [C], "(also sable)", /ˈsæb.leɪ/,
+        a type of cookie. A major English dictionary prints the accent, so the root is sablé.
+      Merriam-Webster: merriam-webster.com/dictionary/sable has the headword sable only (the animal, its fur, the colour black); no biscuit sense.
+        The page /dictionary/sablé refused the automated fetch (HTTP 403), and a web search limited to merriam-webster.com found no sablé entry:
+        no M-W entry found for the biscuit, either spelling.
+      Oxford: Oxford Learner's Dictionaries search for "sablé" answers "Did you spell it correctly?" (no entry); its sable entry is the animal
+        and fur. OED lists sable n.1 (the animal), n.2 & adj. (the colour, heraldry), n.3 (obsolete, 1617), n.4 (1810, from Portuguese), sable v.,
+        sabled adj.; no sablé or biscuit sense (OED's search listing; its pages are scripted, so the full entries were not read).
+    So Oxford and M-W give no evidence either way; Cambridge decides it. sable [biscuit] 59451 becomes the spelling alias of sablé 53157 in
+    place; it keeps gloss "biscuit", needed beside sable [animal] 32105, [black] 38717, [color] 7670, [African grazer] 63568 and the new Sable
+    [name] 67917. The cookies link (typicality 4) moves to sablé. fam: the lower of the two, as batch385's merge: sablé 5 -> 4 (the alias 4).
+    Neither was in a theme group, had shown texts, uses, nameOkIn or region. cookies is locked: the game now shows sablé there, not sable.
+  - Sacré-Cœur (I21.2): Sacre-Coeur 37403 becomes the spelling alias of Sacré-Cœur 57402 in place (its second, beside Sacré-Coeur 57403); the
+    famous_churches link (typicality 2) moves to the root. fam the lower: the alias 3 -> 2 (root stays 2). sensitive: the alias takes the root's
+    flag (true), as Sacré-Coeur 57403 and as Notre-Dame / Notre Dame in both themes. No groups, shown texts, uses, nameOkIn or region.
+  - In place, not deleted: both duplicates keep their ids, so no export index moves (the manager's preference). batch385's merge did the same
+    (the alias keeps its id); deleteEntry would have removed two indices and shifted every later one.
+  - kūmara 27110 (maori_words, locked) and kumara 19393 (regional NZ alias of sweet potato 402): left unchanged on purpose. One is the Māori
+    word in a locked theme, the other the NZ English name for sweet potato; merging would move the Māori word under sweet potato or the NZ word
+    out of it. plaincheck.mjs keeps listing kūmara (it has no plain spelling alias of its own, by this decision).
+
+Left (as batch395 listed, not changed; 41 entries still in a given-name theme that are not person entries with only name themes):
+  flowers_used_as_girls_names on the flower entries: rose, daisy, lily, poppy, violet, iris, lilac, primrose, jasmine, dahlia, gardenia, camellia.
+  Same-person entries: Nebuchadnezzar, Penelope, Percival, Oisin, Mark, Matthew, Beatrice, Rosalind, Cordelia, Gertrude, Esther, Cuthbert, Meg,
+    Beth, Peter, Paul, Mary, Sebastian, Luke, John. Word-play links: Drew, Blake, Hannah. Gloss wording variants: Charles [boy's name], Ruby
+    [girl's name], Hank, Sue, Taro [given name], Salome [biblical]. The script's full list is in the log below.
+
+Allow-list (js/caselint-allow.js): 82 keys removed, spent (the links moved, or on Unity, Elder, Liberty the shown text went, so nothing to
+  allow): all 82 W2 lines "<word> shown "<Word>" in names that are ...: capital for the name sense (W2, ... v390)" and linden's (v392):
+  6, 64, 65, 92, 718, 7670, 7684, 7685, 7692, 7712, 7716, 7717, 7720, 7725, 28022, 29937, 29938, 31660, 31662 |names_that_are_colors (19);
+  1630, 1633, 1634, 1637, 1645, 1646, 1648, 1651, 1655, 1657, 1664, 1675, 1676, 28134, 29953, 29969, 30071, 39535, 55699 |names_that_are_trees (19);
+  1664, 1694, 1698, 1706, 1707, 1708, 1713, 1715, 1722, 1730, 1733, 1736, 1737, 1738, 1751, 1770, 1776, 1794, 29549, 29857, 29953
+    |names_that_are_flowers (21);
+  2055, 21206, 28347, 29866, 29867, 29868, 29870, 29871, 31656, 31658, 31659, 31660, 31662, 31664 |names_that_are_gems (14);
+  3972, 4000, 4030, 4184, 4273, 6058, 21504, 28278, 28298 |names_that_are_virtues (9).
+  3 keys added (above): 7684, 7685, 7712 |colors_named_after_places.
+
+Script log (dry run; --apply made the same changes; a rerun prints 0 changes):
+  I20 common entries: 78; name entries used: 77
+  I20: a [name] entry takes each given-name-theme link of a common word (flowers_used_as_girls_names stays on the flowers)
+    new entry 67875 "Indigo" [name] person fam 3, region none, status gen  (fam 3 as 6 "indigo", so the moved links keep their difficulty)
+    names_that_are_colors: 6 "indigo" [color] common (typicality 1, shown "Indigo") -> 67875 "Indigo" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Indigo; indigo keeps 5 other theme(s))
+    new entry 67876 "Azure" [name] person fam 3, region none, status gen  (fam 3 as 64 "azure", so the moved links keep their difficulty)
+    names_that_are_colors: 64 "azure" common (typicality 4, shown "Azure") -> 67876 "Azure" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Azure; azure keeps 6 other theme(s))
+    new entry 67877 "Cyan" [name] person fam 2, region none, status gen  (fam 2 as 65 "cyan", so the moved links keep their difficulty)
+    names_that_are_colors: 65 "cyan" common (typicality 5, shown "Cyan") -> 67877 "Cyan" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Cyan; cyan keeps 4 other theme(s))
+    new entry 67878 "Cherry" [name] person fam 1, region none, status gen  (fam 1 as 92 "cherry", so the moved links keep their difficulty)
+    names_that_are_colors: 92 "cherry" [fruit] common (typicality 4, shown "Cherry") -> 67878 "Cherry" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Cherry; cherry keeps 11 other theme(s))
+    new entry 67879 "Ginger" [name] person fam 1, region none, status gen  (fam 1 as 718 "ginger", so the moved links keep their difficulty)
+    names_that_are_colors: 718 "ginger" [spice root] common (typicality 3, shown "Ginger") -> 67879 "Ginger" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Ginger; ginger keeps 9 other theme(s))
+    new entry 67880 "Maple" [name] person fam 1, region none, status gen  (fam 1 as 1630 "maple", so the moved links keep their difficulty)
+    names_that_are_trees: 1630 "maple" common (typicality 2, shown "Maple") -> 67880 "Maple" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Maple; maple keeps 4 other theme(s))
+    new entry 67881 "Willow" [name] person fam 1, region none, status gen  (fam 1 as 1633 "willow", so the moved links keep their difficulty)
+    names_that_are_trees: 1633 "willow" [tree] common (typicality 1, shown "Willow") -> 67881 "Willow" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Willow; willow keeps 4 other theme(s))
+    new entry 67882 "Birch" [name] person fam 2, region none, status gen  (fam 2 as 1634 "birch", so the moved links keep their difficulty)
+    names_that_are_trees: 1634 "birch" common (typicality 2, shown "Birch") -> 67882 "Birch" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Birch; birch keeps 5 other theme(s))
+    new entry 67883 "Cedar" [name] person fam 2, region none, status gen  (fam 2 as 1637 "cedar", so the moved links keep their difficulty)
+    names_that_are_trees: 1637 "cedar" common (typicality 2, shown "Cedar") -> 67883 "Cedar" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Cedar; cedar keeps 7 other theme(s))
+    new entry 67884 "Sequoia" [name] person fam 3, region none, status gen  (fam 3 as 1645 "sequoia", so the moved links keep their difficulty)
+    names_that_are_trees: 1645 "sequoia" [tree] common (typicality 4, shown "Sequoia") -> 67884 "Sequoia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Sequoia; sequoia keeps 6 other theme(s))
+    new entry 67885 "Cypress" [name] person fam 3, region none, status gen  (fam 3 as 1646 "cypress", so the moved links keep their difficulty)
+    names_that_are_trees: 1646 "cypress" common (typicality 3, shown "Cypress") -> 67885 "Cypress" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Cypress; cypress keeps 4 other theme(s))
+    new entry 67886 "Aspen" [name] person fam 3, region none, status gen  (fam 3 as 1648 "aspen", so the moved links keep their difficulty)
+    names_that_are_trees: 1648 "aspen" [tree] common (typicality 1, shown "Aspen") -> 67886 "Aspen" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Aspen; aspen keeps 4 other theme(s))
+    new entry 67887 "Hawthorn" [name] person fam 3, region none, status gen  (fam 3 as 1651 "hawthorn", so the moved links keep their difficulty)
+    names_that_are_trees: 1651 "hawthorn" [tree] common (typicality 3, shown "Hawthorn") -> 67887 "Hawthorn" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Hawthorn; hawthorn keeps 8 other theme(s))
+    new entry 67888 "Juniper" [name] person fam 3, region none, status gen  (fam 3 as 1655 "juniper", so the moved links keep their difficulty)
+    names_that_are_trees: 1655 "juniper" common (typicality 1, shown "Juniper") -> 67888 "Juniper" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Juniper; juniper keeps 2 other theme(s))
+    new entry 67889 "Acacia" [name] person fam 3, region none, status gen  (fam 3 as 1657 "acacia", so the moved links keep their difficulty)
+    names_that_are_trees: 1657 "acacia" common (typicality 3, shown "Acacia") -> 67889 "Acacia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Acacia; acacia keeps 10 other theme(s))
+    new entry 67890 "Magnolia" [name] person fam 3, region none, status gen  (fam 3 as 1664 "magnolia", so the moved links keep their difficulty)
+    names_that_are_flowers: 1664 "magnolia" common (typicality 3, shown "Magnolia") -> 67890 "Magnolia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Magnolia; magnolia keeps 13 other theme(s))
+    names_that_are_trees: 1664 "magnolia" common (typicality 3, shown "Magnolia") -> 67890 "Magnolia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Magnolia; magnolia keeps 13 other theme(s))
+    new entry 67891 "Alder" [name] person fam 4, region none, status gen  (fam 4 as 1675 "alder", so the moved links keep their difficulty)
+    names_that_are_trees: 1675 "alder" common (typicality 3, shown "Alder") -> 67891 "Alder" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Alder; alder keeps 3 other theme(s))
+    new entry 67892 "Linden" [name] person fam 4, region none, status gen  (fam 4 as 1676 "linden", so the moved links keep their difficulty)
+    names_that_are_trees: 1676 "linden" common (typicality 3, shown "Linden") -> 67892 "Linden" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Linden; linden keeps 3 other theme(s))
+    new entry 67893 "Tulip" [name] person fam 1, region none, status gen  (fam 1 as 1694 "tulip", so the moved links keep their difficulty)
+    names_that_are_flowers: 1694 "tulip" common (typicality 3, shown "Tulip") -> 67893 "Tulip" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Tulip; tulip keeps 18 other theme(s))
+    new entry 67894 "Orchid" [name] person fam 1, region none, status gen  (fam 1 as 1698 "orchid", so the moved links keep their difficulty)
+    names_that_are_flowers: 1698 "orchid" common (typicality 3, shown "Orchid") -> 67894 "Orchid" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Orchid; orchid keeps 15 other theme(s))
+    new entry 67895 "Marigold" [name] person fam 2, region none, status gen  (fam 2 as 1706 "marigold", so the moved links keep their difficulty)
+    names_that_are_flowers: 1706 "marigold" common (typicality 3, shown "Marigold") -> 67895 "Marigold" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Marigold; marigold keeps 11 other theme(s))
+    new entry 67896 "Pansy" [name] person fam 2, region none, status gen  (fam 2 as 1707 "pansy", so the moved links keep their difficulty)
+    names_that_are_flowers: 1707 "pansy" common (typicality 4, shown "Pansy") -> 67896 "Pansy" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Pansy; pansy keeps 8 other theme(s))
+    new entry 67897 "Petunia" [name] person fam 2, region none, status gen  (fam 2 as 1708 "petunia", so the moved links keep their difficulty)
+    names_that_are_flowers: 1708 "petunia" common (typicality 4, shown "Petunia") -> 67897 "Petunia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Petunia; petunia keeps 6 other theme(s))
+    new entry 67898 "Hyacinth" [name] person fam 2, region none, status gen  (fam 2 as 1713 "hyacinth", so the moved links keep their difficulty)
+    names_that_are_flowers: 1713 "hyacinth" common (typicality 4, shown "Hyacinth") -> 67898 "Hyacinth" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Hyacinth; hyacinth keeps 10 other theme(s))
+    new entry 67899 "Jasmine" [name] person fam 2, region none, status gen  (fam 2 as 1715 "jasmine", so the moved links keep their difficulty)
+    names_that_are_flowers: 1715 "jasmine" [flower] common (typicality 2, shown "Jasmine") -> 67899 "Jasmine" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Jasmine; jasmine keeps 16 other theme(s))
+    new entry 67900 "Bluebell" [name] person fam 2, region none, status gen  (fam 2 as 1722 "bluebell", so the moved links keep their difficulty)
+    names_that_are_flowers: 1722 "bluebell" common (typicality 3, shown "Bluebell") -> 67900 "Bluebell" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Bluebell; bluebell keeps 13 other theme(s))
+    new entry 67901 "Dahlia" [name] person fam 3, region none, status gen  (fam 3 as 1730 "dahlia", so the moved links keep their difficulty)
+    names_that_are_flowers: 1730 "dahlia" common (typicality 2, shown "Dahlia") -> 67901 "Dahlia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Dahlia; dahlia keeps 9 other theme(s))
+    new entry 67902 "Zinnia" [name] person fam 3, region none, status gen  (fam 3 as 1733 "zinnia", so the moved links keep their difficulty)
+    names_that_are_flowers: 1733 "zinnia" common (typicality 5, shown "Zinnia") -> 67902 "Zinnia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Zinnia; zinnia keeps 6 other theme(s))
+    new entry 67903 "Gardenia" [name] person fam 3, region none, status gen  (fam 3 as 1736 "gardenia", so the moved links keep their difficulty)
+    names_that_are_flowers: 1736 "gardenia" common (typicality 3, shown "Gardenia") -> 67903 "Gardenia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Gardenia; gardenia keeps 10 other theme(s))
+    new entry 67904 "Camellia" [name] person fam 3, region none, status gen  (fam 3 as 1737 "camellia", so the moved links keep their difficulty)
+    names_that_are_flowers: 1737 "camellia" common (typicality 3, shown "Camellia") -> 67904 "Camellia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Camellia; camellia keeps 9 other theme(s))
+    new entry 67905 "Azalea" [name] person fam 3, region none, status gen  (fam 3 as 1738 "azalea", so the moved links keep their difficulty)
+    names_that_are_flowers: 1738 "azalea" common (typicality 3, shown "Azalea") -> 67905 "Azalea" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Azalea; azalea keeps 6 other theme(s))
+    new entry 67906 "Amaryllis" [name] person fam 3, region none, status gen  (fam 3 as 1751 "amaryllis", so the moved links keep their difficulty)
+    names_that_are_flowers: 1751 "amaryllis" common (typicality 4, shown "Amaryllis") -> 67906 "Amaryllis" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Amaryllis; amaryllis keeps 5 other theme(s))
+    new entry 67907 "Ivy" [name] person fam 2, region none, status gen  (fam 2 as 1770 "ivy", so the moved links keep their difficulty)
+    names_that_are_flowers: 1770 "ivy" common (typicality 2, shown "Ivy") -> 67907 "Ivy" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Ivy; ivy keeps 4 other theme(s))
+    new entry 67908 "Clover" [name] person fam 2, region none, status gen  (fam 2 as 1776 "clover", so the moved links keep their difficulty)
+    names_that_are_flowers: 1776 "clover" common (typicality 4, shown "Clover") -> 67908 "Clover" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Clover; clover keeps 9 other theme(s))
+    new entry 67909 "Heather" [name] person fam 3, region none, status gen  (fam 3 as 1794 "heather", so the moved links keep their difficulty)
+    names_that_are_flowers: 1794 "heather" [plant] common (typicality 3, shown "Heather") -> 67909 "Heather" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Heather; heather keeps 8 other theme(s))
+    new entry 67910 "Crystal" [name] person fam 1, region none, status gen  (fam 1 as 2055 "crystal", so the moved links keep their difficulty)
+    names_that_are_gems: 2055 "crystal" [mineral] common (typicality 4, shown "Crystal") -> 67910 "Crystal" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Crystal; crystal keeps 1 other theme(s))
+    new entry 67911 "Joy" [name] person fam 1, region none, status gen  (fam 1 as 3972 "joy", so the moved links keep their difficulty)
+    names_that_are_virtues: 3972 "joy" common (typicality 2, shown "Joy") -> 67911 "Joy" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Joy; joy keeps 1 other theme(s))
+    new entry 67912 "Hope" [name] person fam 1, region none, status gen  (fam 1 as 4000 "hope", so the moved links keep their difficulty)
+    names_that_are_virtues: 4000 "hope" common (typicality 1, shown "Hope") -> 67912 "Hope" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Hope; hope keeps 1 other theme(s))
+    new entry 67913 "Serenity" [name] person fam 3, region none, status gen  (fam 3 as 4030 "serenity", so the moved links keep their difficulty)
+    names_that_are_virtues: 4030 "serenity" common (typicality 3, shown "Serenity") -> 67913 "Serenity" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Serenity; serenity keeps 2 other theme(s))
+    new entry 67914 "Justice" [name] person fam 1, region none, status gen  (fam 1 as 4184 "justice", so the moved links keep their difficulty)
+    names_that_are_virtues: 4184 "justice" common (typicality 2, shown "Justice") -> 67914 "Justice" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Justice; justice keeps 2 other theme(s))
+    new entry 67915 "Faith" [name] person fam 1, region none, status gen  (fam 1 as 4273 "faith", so the moved links keep their difficulty)
+    names_that_are_virtues: 4273 "faith" common (typicality 1, shown "Faith") -> 67915 "Faith" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Faith; faith keeps 3 other theme(s))
+    new entry 67916 "Harmony" [name] person fam 1, region none, status gen  (fam 1 as 6058 "harmony", so the moved links keep their difficulty)
+    names_that_are_virtues: 6058 "harmony" [music] common (typicality 3, shown "Harmony") -> 67916 "Harmony" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Harmony; harmony keeps 4 other theme(s))
+    new entry 67917 "Sable" [name] person fam 5, region none, status gen  (fam 5 as 7670 "sable", so the moved links keep their difficulty)
+    names_that_are_colors: 7670 "sable" [color] common (typicality 4, shown "Sable") -> 67917 "Sable" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Sable; sable keeps 6 other theme(s))
+    new entry 67918 "Magenta" [name] person fam 2, region none, status gen  (fam 2 as 7684 "magenta", so the moved links keep their difficulty)
+    names_that_are_colors: 7684 "magenta" common (typicality 4, shown "Magenta") -> 67918 "Magenta" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Magenta; magenta keeps 8 other theme(s))
+    new entry 67919 "Fuchsia" [name] person fam 3, region none, status gen  (fam 3 as 7685 "fuchsia", so the moved links keep their difficulty)
+    names_that_are_colors: 7685 "fuchsia" [pink-purple] common (typicality 4, shown "Fuchsia") -> 67919 "Fuchsia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Fuchsia; fuchsia keeps 14 other theme(s))
+    new entry 67920 "Crimson" [name] person fam 2, region none, status gen  (fam 2 as 7692 "crimson", so the moved links keep their difficulty)
+    names_that_are_colors: 7692 "crimson" common (typicality 3, shown "Crimson") -> 67920 "Crimson" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Crimson; crimson keeps 2 other theme(s))
+    new entry 67921 "Sienna" [name] person fam 3, region none, status gen  (fam 3 as 7712 "sienna", so the moved links keep their difficulty)
+    names_that_are_colors: 7712 "sienna" common (typicality 1, shown "Sienna") -> 67921 "Sienna" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Sienna; sienna keeps 5 other theme(s))
+    new entry 67922 "Tawny" [name] person fam 3, region none, status gen  (fam 3 as 7716 "tawny", so the moved links keep their difficulty)
+    names_that_are_colors: 7716 "tawny" [color] common (typicality 4, shown "Tawny") -> 67922 "Tawny" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Tawny; tawny keeps 3 other theme(s))
+    new entry 67923 "Auburn" [name] person fam 3, region none, status gen  (fam 3 as 7717 "auburn", so the moved links keep their difficulty)
+    names_that_are_colors: 7717 "auburn" common (typicality 4, shown "Auburn") -> 67923 "Auburn" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Auburn; auburn keeps 3 other theme(s))
+    new entry 67924 "Cerise" [name] person fam 4, region none, status gen  (fam 4 as 7720 "cerise", so the moved links keep their difficulty)
+    names_that_are_colors: 7720 "cerise" common (typicality 5, shown "Cerise") -> 67924 "Cerise" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Cerise; cerise keeps 3 other theme(s))
+    new entry 67925 "Carmine" [name] person fam 4, region none, status gen  (fam 4 as 7725 "carmine", so the moved links keep their difficulty)
+    names_that_are_colors: 7725 "carmine" common (typicality 5, shown "Carmine") -> 67925 "Carmine" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Carmine; carmine keeps 3 other theme(s))
+    new entry 67926 "Jewel" [name] person fam 1, region none, status gen  (fam 1 as 21206 "jewel", so the moved links keep their difficulty)
+    names_that_are_gems: 21206 "jewel" [gemstone] common (typicality 2, shown "Jewel") -> 67926 "Jewel" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Jewel; jewel keeps 2 other theme(s))
+    new entry 67927 "unity" [harmony] common fam 2, region none, status gen  (the common sense of 21504, same text, gloss and fam, so the moved links keep their difficulty)
+    peace_words: 21504 "unity" [harmony] common (typicality 3) -> 67927 "unity" [harmony] common (same typicality)  (I20: the common sense keeps peace_words)
+    names_that_are_virtues: 21504 "unity" [harmony] common shown "Unity" -> none (the entry's text is now "Unity")
+    21504 "unity" [harmony] common text unity -> Unity  (I20: unity [harmony] had only peace_words besides names_that_are_virtues, and peace_words is not in the game export; a new unity [harmony] takes peace_words, so the entry becomes the name Unity in place (same id and export index, as Brooklyn and Carolina at v395))
+    21504 "Unity" [harmony] common gloss harmony -> name  (the rule: a given-name entry has gloss "name")
+    21504 "Unity" [name] common type common -> person  (I18)
+    new entry 67928 "Sky" [name] person fam 2, region none, status gen  (fam 2 as 28022 "sky", so the moved links keep their difficulty)
+    names_that_are_colors: 28022 "sky" [air above] common (typicality 4, shown "Sky") -> 67928 "Sky" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Sky; sky keeps 2 other theme(s))
+    names_that_are_trees: 28134 "elder" [tree] common shown "Elder" -> none (the entry's text is now "Elder")
+    28134 "elder" [tree] common text elder -> Elder  (I20: elder [tree] had no theme but names_that_are_trees, so the entry becomes the name Elder in place (same id and export index, as Brooklyn and Carolina at v395))
+    28134 "Elder" [tree] common gloss tree -> name  (the rule: a given-name entry has gloss "name")
+    28134 "Elder" [name] common type common -> person  (I18)
+    names_that_are_virtues: 28278 "liberty" [freedom] common shown "Liberty" -> none (the entry's text is now "Liberty")
+    28278 "liberty" [freedom] common text liberty -> Liberty  (I20: liberty [freedom] had no theme but names_that_are_virtues, so the entry becomes the name Liberty in place (same id and export index, as Brooklyn and Carolina at v395))
+    28278 "Liberty" [freedom] common gloss freedom -> name  (the rule: a given-name entry has gloss "name")
+    28278 "Liberty" [name] common type common -> person  (I18)
+    new entry 67929 "Charity" [name] person fam 1, region none, status gen  (fam 1 as 28298 "charity", so the moved links keep their difficulty)
+    names_that_are_virtues: 28298 "charity" common (typicality 2, shown "Charity") -> 67929 "Charity" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Charity; charity keeps 2 other theme(s))
+    new entry 67930 "Opal" [name] person fam 4, region none, status gen  (fam 4 as 28347 "opal", so the moved links keep their difficulty)
+    names_that_are_gems: 28347 "opal" [gem] common (typicality 3, shown "Opal") -> 67930 "Opal" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Opal; opal keeps 3 other theme(s))
+    new entry 67931 "Wisteria" [name] person fam 3, region none, status gen  (fam 3 as 29549 "wisteria", so the moved links keep their difficulty)
+    names_that_are_flowers: 29549 "wisteria" [flower] common (typicality 4, shown "Wisteria") -> 67931 "Wisteria" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Wisteria; wisteria keeps 10 other theme(s))
+    new entry 67932 "Blossom" [name] person fam 2, region none, status gen  (fam 2 as 29857 "blossom", so the moved links keep their difficulty)
+    names_that_are_flowers: 29857 "blossom" common (typicality 4, shown "Blossom") -> 67932 "Blossom" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Blossom; blossom keeps 3 other theme(s))
+    new entry 67933 "Beryl" [name] person fam 3, region none, status gen  (fam 3 as 29866 "beryl", so the moved links keep their difficulty)
+    names_that_are_gems: 29866 "beryl" [gemstone] common (typicality 3, shown "Beryl") -> 67933 "Beryl" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Beryl; beryl keeps 2 other theme(s))
+    new entry 67934 "Garnet" [name] person fam 3, region none, status gen  (fam 3 as 29867 "garnet", so the moved links keep their difficulty)
+    names_that_are_gems: 29867 "garnet" [gemstone] common (typicality 3, shown "Garnet") -> 67934 "Garnet" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Garnet; garnet keeps 3 other theme(s))
+    new entry 67935 "Jasper" [name] person fam 2, region none, status gen  (fam 2 as 29868 "jasper", so the moved links keep their difficulty)
+    names_that_are_gems: 29868 "jasper" [gemstone] common (typicality 3, shown "Jasper") -> 67935 "Jasper" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Jasper; jasper keeps 2 other theme(s))
+    new entry 67936 "Topaz" [name] person fam 3, region none, status gen  (fam 3 as 29870 "topaz", so the moved links keep their difficulty)
+    names_that_are_gems: 29870 "topaz" [gemstone] common (typicality 3, shown "Topaz") -> 67936 "Topaz" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Topaz; topaz keeps 6 other theme(s))
+    new entry 67937 "Amethyst" [name] person fam 3, region none, status gen  (fam 3 as 29871 "amethyst", so the moved links keep their difficulty)
+    names_that_are_gems: 29871 "amethyst" [gemstone] common (typicality 3, shown "Amethyst") -> 67937 "Amethyst" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Amethyst; amethyst keeps 6 other theme(s))
+    new entry 67938 "Sandy" [name] person fam 2, region none, status gen  (fam 2 as 29937 "sandy", so the moved links keep their difficulty)
+    names_that_are_colors: 29937 "sandy" common (typicality 3, shown "Sandy") -> 67938 "Sandy" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Sandy; sandy keeps 1 other theme(s))
+    new entry 67939 "Raven" [name] person fam 3, region none, status gen  (fam 3 as 29938 "raven", so the moved links keep their difficulty)
+    names_that_are_colors: 29938 "raven" [color] common (typicality 4, shown "Raven") -> 67939 "Raven" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Raven; raven keeps 5 other theme(s))
+    new entry 67940 "Holly" [name] person fam 2, region none, status gen  (fam 2 as 29953 "holly", so the moved links keep their difficulty)
+    names_that_are_flowers: 29953 "holly" [tree] common (typicality 4, shown "Holly") -> 67940 "Holly" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Holly; holly keeps 9 other theme(s))
+    names_that_are_trees: 29953 "holly" [tree] common (typicality 2, shown "Holly") -> 67940 "Holly" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Holly; holly keeps 9 other theme(s))
+    names_that_are_trees: 29969 "cherry tree" common (typicality 2, shown "Cherry") -> 67878 "Cherry" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Cherry; cherry tree keeps 1 other theme(s))
+    new entry 67941 "Laurel" [name] person fam 3, region none, status gen  (fam 3 as 30071 "laurel", so the moved links keep their difficulty)
+    names_that_are_trees: 30071 "laurel" [hedge] common (typicality 3, shown "Laurel") -> 67941 "Laurel" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Laurel; laurel keeps 1 other theme(s))
+    new entry 67942 "Diamond" [name] person fam 1, region none, status gen  (fam 1 as 31656 "diamond", so the moved links keep their difficulty)
+    names_that_are_gems: 31656 "diamond" [gem] common (typicality 2, shown "Diamond") -> 67942 "Diamond" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Diamond; diamond keeps 10 other theme(s))
+    new entry 67943 "Emerald" [name] person fam 1, region none, status gen  (fam 1 as 31658 "emerald", so the moved links keep their difficulty)
+    names_that_are_gems: 31658 "emerald" [gem] common (typicality 1, shown "Emerald") -> 67943 "Emerald" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Emerald; emerald keeps 5 other theme(s))
+    new entry 67944 "Sapphire" [name] person fam 1, region none, status gen  (fam 1 as 31659 "sapphire", so the moved links keep their difficulty)
+    names_that_are_gems: 31659 "sapphire" [gem] common (typicality 2, shown "Sapphire") -> 67944 "Sapphire" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Sapphire; sapphire keeps 6 other theme(s))
+    new entry 67945 "Pearl" [name] person fam 1, region none, status gen  (fam 1 as 31660 "pearl", so the moved links keep their difficulty)
+    names_that_are_gems: 31660 "pearl" [gem] common (typicality 1, shown "Pearl") -> 67945 "Pearl" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Pearl; pearl keeps 9 other theme(s))
+    names_that_are_colors: 31660 "pearl" [gem] common (typicality 4, shown "Pearl") -> 67945 "Pearl" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Pearl; pearl keeps 9 other theme(s))
+    new entry 67946 "Jade" [name] person fam 2, region none, status gen  (fam 2 as 31662 "jade", so the moved links keep their difficulty)
+    names_that_are_gems: 31662 "jade" [gem] common (typicality 2, shown "Jade") -> 67946 "Jade" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Jade; jade keeps 6 other theme(s))
+    names_that_are_colors: 31662 "jade" [gem] common (typicality 3, shown "Jade") -> 67946 "Jade" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Jade; jade keeps 6 other theme(s))
+    new entry 67947 "Onyx" [name] person fam 3, region none, status gen  (fam 3 as 31664 "onyx", so the moved links keep their difficulty)
+    names_that_are_gems: 31664 "onyx" [gem] common (typicality 4, shown "Onyx") -> 67947 "Onyx" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Onyx; onyx keeps 5 other theme(s))
+    new entry 67948 "Pine" [name] person fam 1, region none, status gen  (fam 1 as 39535 "pine tree", so the moved links keep their difficulty)
+    names_that_are_trees: 39535 "pine tree" common (typicality 2, shown "Pine") -> 67948 "Pine" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Pine; pine tree keeps 7 other theme(s))
+    new entry 67949 "Cassia" [name] person fam 5, region none, status gen  (fam 5 as 55699 "cassia tree", so the moved links keep their difficulty)
+    names_that_are_trees: 55699 "cassia tree" common (typicality 5, shown "Cassia") -> 67949 "Cassia" [name] person (same typicality, the case-only shown text goes)  (I20: the given name Cassia; cassia tree keeps 1 other theme(s))
+    
+    I20: glosses for common entries that now share their text with a [name] entry (needs-gloss)
+    64 "azure" common gloss none -> color  (needs-gloss beside Azure [name])
+    65 "cyan" common gloss none -> color  (needs-gloss beside Cyan [name])
+    1630 "maple" common gloss none -> tree  (needs-gloss beside Maple [name])
+    1634 "birch" common gloss none -> tree  (needs-gloss beside Birch [name])
+    1637 "cedar" common gloss none -> tree  (needs-gloss beside Cedar [name])
+    1646 "cypress" common gloss none -> tree  (needs-gloss beside Cypress [name])
+    1655 "juniper" common gloss none -> tree  (needs-gloss beside Juniper [name])
+    1657 "acacia" common gloss none -> tree  (needs-gloss beside Acacia [name])
+    1664 "magnolia" common gloss none -> tree  (needs-gloss beside Magnolia [name])
+    1675 "alder" common gloss none -> tree  (needs-gloss beside Alder [name])
+    1676 "linden" common gloss none -> tree  (needs-gloss beside Linden [name])
+    1694 "tulip" common gloss none -> flower  (needs-gloss beside Tulip [name])
+    1698 "orchid" common gloss none -> flower  (needs-gloss beside Orchid [name])
+    1706 "marigold" common gloss none -> flower  (needs-gloss beside Marigold [name])
+    1707 "pansy" common gloss none -> flower  (needs-gloss beside Pansy [name])
+    1708 "petunia" common gloss none -> flower  (needs-gloss beside Petunia [name])
+    1713 "hyacinth" common gloss none -> flower  (needs-gloss beside Hyacinth [name])
+    1722 "bluebell" common gloss none -> flower  (needs-gloss beside Bluebell [name])
+    1730 "dahlia" common gloss none -> flower  (needs-gloss beside Dahlia [name])
+    1733 "zinnia" common gloss none -> flower  (needs-gloss beside Zinnia [name])
+    1736 "gardenia" common gloss none -> flower  (needs-gloss beside Gardenia [name])
+    1737 "camellia" common gloss none -> flower  (needs-gloss beside Camellia [name])
+    1738 "azalea" common gloss none -> flower  (needs-gloss beside Azalea [name])
+    1751 "amaryllis" common gloss none -> flower  (needs-gloss beside Amaryllis [name])
+    1770 "ivy" common gloss none -> plant  (needs-gloss beside Ivy [name])
+    1776 "clover" common gloss none -> plant  (needs-gloss beside Clover [name])
+    3972 "joy" common gloss none -> happiness  (needs-gloss beside Joy [name])
+    4000 "hope" common gloss none -> wish  (needs-gloss beside Hope [name])
+    4030 "serenity" common gloss none -> calm  (needs-gloss beside Serenity [name])
+    4184 "justice" common gloss none -> fairness  (needs-gloss beside Justice [name])
+    4273 "faith" common gloss none -> belief  (needs-gloss beside Faith [name])
+    7684 "magenta" common gloss none -> color  (needs-gloss beside Magenta [name])
+    7692 "crimson" common gloss none -> color  (needs-gloss beside Crimson [name])
+    7712 "sienna" common gloss none -> color  (needs-gloss beside Sienna [name])
+    7717 "auburn" common gloss none -> color  (needs-gloss beside Auburn [name])
+    7720 "cerise" common gloss none -> color  (needs-gloss beside Cerise [name])
+    7725 "carmine" common gloss none -> color  (needs-gloss beside Carmine [name])
+    28298 "charity" common gloss none -> giving  (needs-gloss beside Charity [name])
+    29857 "blossom" common gloss none -> flowers  (needs-gloss beside Blossom [name])
+    29937 "sandy" common gloss none -> color  (needs-gloss beside Sandy [name])
+    21132 "cassia" common gloss none -> spice  (needs-gloss beside Cassia [name])
+    
+    I21.1: sablé / sable [biscuit]
+    53157 before: text="sablé" type=common fam=5 links={french_pastries:5}
+    59451 before: text="sable" gloss="biscuit" type=common fam=4 links={cookies:4}
+    53157 after:  text="sablé" type=common fam=4 links={french_pastries:5,cookies:4}
+    59451 after:  text="sable" gloss="biscuit" type=common fam=4 aliasOf=53157 aliasKind=spelling links={}
+      links moved to 53157: cookies (typicality 4)  (one biscuit; rule 8: the Cambridge English Dictionary prints the headword "sablé (also sable)", so the root keeps the accent (Oxford and Merriam-Webster have no entry for the biscuit, see batch397-changes.txt); "sable" keeps its gloss "biscuit" beside sable [animal], [black], [color], [African grazer], Sable [name]; fam the lower of the two, as batch385)
+    
+    I21.2: Sacré-Cœur / Sacre-Coeur
+    57402 before: text="Sacré-Cœur" type=place fam=2 sensitive links={paris_landmarks:2}
+    37403 before: text="Sacre-Coeur" type=place fam=3 links={famous_churches:2}
+    57402 after:  text="Sacré-Cœur" type=place fam=2 sensitive links={paris_landmarks:2,famous_churches:2}
+    37403 after:  text="Sacre-Coeur" type=place fam=2 sensitive aliasOf=57402 aliasKind=spelling links={}
+      links moved to 57402: famous_churches (typicality 2)  (one basilica; the root keeps the French spelling (paris_landmarks; its alias Sacré-Coeur 57403 already existed); "Sacre-Coeur" is the plain spelling alias rule 8 asks for; fam the lower of the two, as batch385; sensitive as the root and its other alias)
+  
+  Aliases that stop inheriting a given-name link: 1678 "basswood" common (regional alias of 1676) no longer inherits names_that_are_trees from 1676 "linden"
+  
+  Left in given-name themes (not a person entry with only name themes): 41
+      1693 "rose" [flower] common: flowers_used_as_girls_names | other: flowers, garden_flowers, bouquet_flowers, sweet_smelling_flowers, thorny_plants, national_flowers, perfume_notes, candle_scents, red_things, pink_things, red_flowers
+      1695 "daisy" [flower] common: flowers_used_as_girls_names | other: flowers, garden_flowers, wildflowers, spring_flowers, bouquet_flowers, meadow, colors_named_after_flowers, white_things, white_flowers, grassland_blooms
+      1697 "lily" [flower] common: flowers_used_as_girls_names | other: flowers, garden_flowers, bouquet_flowers, flower_bulbs, colors_named_after_flowers, white_things, anatolian_flowers, white_flowers
+      1701 "poppy" [red flower] common: flowers_used_as_girls_names | other: flowers, wildflowers, meadow, national_flowers, colors_named_after_flowers, red_things, anzac_day, anatolian_flowers, red_flowers, grassland_blooms
+      1702 "violet" [flower] common: flowers_used_as_girls_names | other: flowers, wildflowers, spring_flowers, edible_flowers, sweet_smelling_flowers, perfume_notes, purple_things, purple_flowers
+      1712 "iris" [flower] common: flowers_used_as_girls_names | other: flowers, spring_flowers, bouquet_flowers, flower_bulbs, national_flowers, perfume_notes, blue_things, purple_things, anatolian_flowers, blue_flowers, purple_flowers, flowers_named_after_people
+      1714 "lilac" [flower] common: flowers_used_as_girls_names | other: flowers, words_from_arabic, words_from_persian, spring_flowers, edible_flowers, sweet_smelling_flowers, things_that_smell_good, candle_scents, purple_things, purple_flowers, fragrant_flowers
+      1715 "jasmine" [flower] common: flowers_used_as_girls_names | other: flowers, words_from_arabic, words_from_persian, tropical_flowers, edible_flowers, sweet_smelling_flowers, vines_and_climbers, national_flowers, things_that_smell_good, perfume_notes, candle_scents, middle_eastern_scents, flowers_of_east_asia, white_flowers, fragrant_flowers
+      1730 "dahlia" [flower] common: flowers_used_as_girls_names | other: flowers, words_named_after_people, garden_flowers, bouquet_flowers, flower_bulbs, national_flowers, flowers_named_after_people, red_flowers
+      1731 "primrose" [flower] common: flowers_used_as_girls_names | other: flowers, hidden_colors, wildflowers, spring_flowers, edible_flowers, yellow_flowers
+      1736 "gardenia" [flower] common: flowers_used_as_girls_names | other: flowers, words_named_after_people, tropical_flowers, sweet_smelling_flowers, things_that_smell_good, flowers_named_after_people, flowers_of_east_asia, white_flowers, fragrant_flowers
+      1737 "camellia" [flower] common: flowers_used_as_girls_names | other: flowers, words_named_after_people, spring_flowers, colors_named_after_flowers, flowers_named_after_people, flowers_of_east_asia, red_flowers, white_flowers
+      20509 "Nebuchadnezzar" person: biblical_names | other: mesopotamia
+      22290 "Penelope" person: girls_names | other: greek_heroes
+      22522 "Percival" person: boys_names | other: legendary_heroes, famous_knights, arthurian_legend
+      22562 "Oisin" person: irish_names | other: celtic_folklore
+      28467 "Mark" [name] person: biblical_names | other: the_four_evangelists
+      28891 "Drew" [name] person: unisex_names | other: rhymes_with_blue
+      28918 "Blake" person: unisex_names | other: rhymes_with_cake
+      29015 "Hannah" person: girls_names | other: palindromes
+      29641 "Beatrice" person: girls_names | other: shakespeare_characters, characters_in_comedies
+      29652 "Rosalind" person: girls_names | other: shakespeare_characters, characters_in_comedies
+      29654 "Cordelia" person: girls_names | other: shakespeare_characters, characters_in_tragedies
+      29667 "Matthew" person: boys_names, biblical_names | other: the_four_evangelists
+      29672 "Charles" [boy's name] person: boys_names
+      29732 "Esther" person: biblical_names | other: famous_queens
+      29759 "Salome" [biblical] person: biblical_names
+      29768 "Gertrude" person: old_fashioned_names | other: shakespeare_characters, characters_in_tragedies
+      29798 "Cuthbert" person: old_fashioned_names | other: famous_saints
+      29818 "Meg" person: short_forms_of_names | other: march_sisters
+      29819 "Beth" person: short_forms_of_names | other: march_sisters
+      34339 "Peter" [saint] person: biblical_names | other: famous_saints
+      34340 "Paul" [saint] person: biblical_names
+      34342 "Mary" [saint] person: biblical_names | other: famous_saints
+      34360 "Sebastian" person: latin_american_names | other: famous_saints
+      34362 "Luke" [saint] person: biblical_names | other: famous_saints, the_four_evangelists
+      56818 "John" [name] person: biblical_names | other: the_four_evangelists
+      67399 "Ruby" [girl's name] person: girls_names, names_that_are_gems, names_that_are_colors
+      67408 "Hank" [given name] person: short_forms_of_names
+      67409 "Sue" [given name] person: short_forms_of_names
+      67410 "Taro" [given name] person: japanese_names
+  Same text twice in a theme, new: none
+  Allow-list keys removed (links gone): 82: 6|names_that_are_colors, 64|names_that_are_colors, 65|names_that_are_colors, 92|names_that_are_colors, 718|names_that_are_colors, 1630|names_that_are_trees, 1633|names_that_are_trees, 1634|names_that_are_trees, 1637|names_that_are_trees, 1645|names_that_are_trees, 1646|names_that_are_trees, 1648|names_that_are_trees, 1651|names_that_are_trees, 1655|names_that_are_trees, 1657|names_that_are_trees, 1664|names_that_are_flowers, 1664|names_that_are_trees, 1675|names_that_are_trees, 1676|names_that_are_trees, 1694|names_that_are_flowers, 1698|names_that_are_flowers, 1706|names_that_are_flowers, 1707|names_that_are_flowers, 1708|names_that_are_flowers, 1713|names_that_are_flowers, 1715|names_that_are_flowers, 1722|names_that_are_flowers, 1730|names_that_are_flowers, 1733|names_that_are_flowers, 1736|names_that_are_flowers, 1737|names_that_are_flowers, 1738|names_that_are_flowers, 1751|names_that_are_flowers, 1770|names_that_are_flowers, 1776|names_that_are_flowers, 1794|names_that_are_flowers, 2055|names_that_are_gems, 3972|names_that_are_virtues, 4000|names_that_are_virtues, 4030|names_that_are_virtues, 4184|names_that_are_virtues, 4273|names_that_are_virtues, 6058|names_that_are_virtues, 7670|names_that_are_colors, 7684|names_that_are_colors, 7685|names_that_are_colors, 7692|names_that_are_colors, 7712|names_that_are_colors, 7716|names_that_are_colors, 7717|names_that_are_colors, 7720|names_that_are_colors, 7725|names_that_are_colors, 21206|names_that_are_gems, 21504|names_that_are_virtues, 28022|names_that_are_colors, 28134|names_that_are_trees, 28278|names_that_are_virtues, 28298|names_that_are_virtues, 28347|names_that_are_gems, 29549|names_that_are_flowers, 29857|names_that_are_flowers, 29866|names_that_are_gems, 29867|names_that_are_gems, 29868|names_that_are_gems, 29870|names_that_are_gems, 29871|names_that_are_gems, 29937|names_that_are_colors, 29938|names_that_are_colors, 29953|names_that_are_flowers, 29953|names_that_are_trees, 29969|names_that_are_trees, 30071|names_that_are_trees, 31656|names_that_are_gems, 31658|names_that_are_gems, 31659|names_that_are_gems, 31660|names_that_are_gems, 31660|names_that_are_colors, 31662|names_that_are_gems, 31662|names_that_are_colors, 31664|names_that_are_gems, 39535|names_that_are_trees, 55699|names_that_are_trees
+  Allow-list keys added (case-lint hits checked by hand): 7684|colors_named_after_places (magenta the colour in colors named after places, beside Magenta [name] (v397)), 7685|colors_named_after_places (fuchsia the colour in colors named after places, beside Fuchsia [name] (v397)), 7712|colors_named_after_places (sienna the colour in colors named after places, beside Sienna [name] (v397))
+  Case lint after, not allowed: none
+  Checks: {"warn:theme-name":3,"warn:long":5,"warn:maybe-duplicate":1}; changed kinds: none
+  new issues: none
+  gone issues: none
+  
+  210 changes
+
+Family export (the committed file, node tools/export-game.mjs --strict) against the committed v396 file (git show HEAD), checked by a script:
+  Format "v" 4 and linkFields ["theme","difficulty","typicality","shown"] unchanged. lib.version 396 -> 397, modified.
+  Entries 60950 -> 61024. No entry leaves and no entry index shifts: every index 0-60949 is the same entry. Fields of existing entries that
+    change (all others, and pos, regions, regionsHi, clash, breaks, zipf of every entry, are unchanged):
+    text (case only) and type common -> person: 20054 unity -> Unity, 26295 elder -> Elder, 26332 liberty -> Liberty (the entry is now the name).
+    55209 sable (was the biscuit root): now a spelling alias of sablé 49379: flags 0 -> 16, root 0 -> 49380 (index + 1), familiarity 4 (same).
+    34559 Sacre-Coeur: now a spelling alias of Sacré-Cœur 53227: flags 0 -> 18 (spelling 16 + sensitive 2), root 0 -> 53228, familiarity 3 -> 2.
+    49379 sablé: familiarity 5 -> 4.
+    linkCount: 78 commons lose their given-name links (one each; magnolia, holly, pearl, jade two), basswood 1639 loses its inherited one; sablé
+    49379, sable 55209, Sacré-Cœur 53227, Sacré-Coeur 53228, Sacre-Coeur 34559 go 1 -> 2.
+  New at the end, 60950-61023 (74 entries), all type person, flags 0, root 0, clash 0, each with the given-name links it took (same typicality and
+    difficulty as on the old entry): 60950 Indigo, 60951 Azure, 60952 Cyan, 60953 Cherry (colors and trees), 60954 Ginger, 60955 Maple,
+    60956 Willow, 60957 Birch, 60958 Cedar, 60959 Sequoia, 60960 Cypress, 60961 Aspen, 60962 Hawthorn, 60963 Juniper, 60964 Acacia,
+    60965 Magnolia (flowers and trees), 60966 Alder, 60967 Linden, 60968 Tulip, 60969 Orchid, 60970 Marigold, 60971 Pansy, 60972 Petunia,
+    60973 Hyacinth, 60974 Jasmine, 60975 Bluebell, 60976 Dahlia, 60977 Zinnia, 60978 Gardenia, 60979 Camellia, 60980 Azalea, 60981 Amaryllis,
+    60982 Ivy, 60983 Clover, 60984 Heather, 60985 Crystal, 60986 Joy, 60987 Hope, 60988 Serenity, 60989 Justice, 60990 Faith, 60991 Harmony,
+    60992 Sable, 60993 Magenta, 60994 Fuchsia, 60995 Crimson, 60996 Sienna, 60997 Tawny, 60998 Auburn, 60999 Cerise, 61000 Carmine, 61001 Jewel,
+    61002 Sky, 61003 Charity, 61004 Opal, 61005 Wisteria, 61006 Blossom, 61007 Beryl, 61008 Garnet, 61009 Jasper, 61010 Topaz, 61011 Amethyst,
+    61012 Sandy, 61013 Raven, 61014 Holly (flowers and trees), 61015 Laurel, 61016 Diamond, 61017 Emerald, 61018 Sapphire, 61019 Pearl (gems and
+    colors), 61020 Jade (gems and colors), 61021 Onyx, 61022 Pine, 61023 Cassia. (unity [harmony] 67927 is not exported: peace_words is not.)
+  Links 107346 -> 107350: 80 removed, 84 added.
+    Removed (old numbers): 26, 220, 225, 391, 3798, 8672, 8682, 8687, 8704, 8753, 8759, 8766, 8776, 8801, 8810, 8855, 8856, 8918, 8924, 8930,
+      9000, 9048, 9148, 9159, 9169, 9203, 9228, 9297, 9367, 9393, 9415, 9426, 9435, 9532, 9621, 9639, 9759, 10849, 17560, 17602, 17652, 18110,
+      18345, 24056, 28686, 28740, 28748, 28792, 28876, 28892, 28896, 28905, 28922, 50787, 61071, 61240, 61279, 62781, 63185, 63197, 63200, 63204,
+      63209, 63216, 63298, 63300, 63329, 63330, 63365, 63580, 66066, 66082, 66088, 66097, 66098, 66108, 66109, 66118, 77132, 96644: the
+      given-name links of the 78 commons (79) and basswood's inherited names_that_are_trees link (8930).
+    Added: 107271-107349 (79), the links of the new name entries, in entry order. Five on existing entries (new numbers): 74271 Sacre-Coeur
+      34559 paris_landmarks (inherited from its new root), 94132 sablé 49379 cookies, 98360 Sacré-Cœur 53227 famous_churches, 98362 Sacré-Coeur
+      53228 famous_churches (inherited), 100524 sable 55209 french_pastries (inherited).
+    Surviving links (107266): same theme, typicality, difficulty and shown text, except 5: the given-name links of Unity 20054 (old 51038),
+      Elder 26295 (61149), Liberty 26332 (61210) lose their shown text ("Unity", "Elder", "Liberty", now the entry's own text; what the game
+      shows is the same); Sacre-Coeur 34559 famous_churches (old 74349) difficulty 2.7 -> 2 (familiarity 3 -> 2); sablé 49379 french_pastries
+      (old 94209) difficulty 5 -> 4.7 (familiarity 5 -> 4).
+    Shift by old number range: 0-25 0, 27-219 -1, 221-224 -2, 226-390 -3, 392-3797 -4, 3799-8671 -5, 8673-8681 -6, 8683-8686 -7, 8688-8703 -8,
+      8705-8752 -9, 8754-8758 -10, 8760-8765 -11, 8767-8775 -12, 8777-8800 -13, 8802-8809 -14, 8811-8854 -15, 8857-8917 -17, 8919-8923 -18,
+      8925-8929 -19, 8931-8999 -20, 9001-9047 -21, 9049-9147 -22, 9149-9158 -23, 9160-9168 -24, 9170-9202 -25, 9204-9227 -26, 9229-9296 -27,
+      9298-9366 -28, 9368-9392 -29, 9394-9414 -30, 9416-9425 -31, 9427-9434 -32, 9436-9531 -33, 9533-9620 -34, 9622-9638 -35, 9640-9758 -36,
+      9760-10848 -37, 10850-17559 -38, 17561-17601 -39, 17603-17651 -40, 17653-18109 -41, 18111-18344 -42, 18346-24055 -43, 24057-28685 -44,
+      28687-28739 -45, 28741-28747 -46, 28749-28791 -47, 28793-28875 -48, 28877-28891 -49, 28893-28895 -50, 28897-28904 -51, 28906-28921 -52,
+      28923-50786 -53, 50788-61070 -54, 61072-61239 -55, 61241-61278 -56, 61280-62780 -57, 62782-63184 -58, 63186-63196 -59, 63198-63199 -60,
+      63201-63203 -61, 63205-63208 -62, 63210-63215 -63, 63217-63297 -64, 63299 -65, 63301-63328 -66, 63331-63364 -68, 63366-63579 -69,
+      63581-66065 -70, 66067-66081 -71, 66083-66087 -72, 66089-66096 -73, 66099-66107 -75, 66110-66117 -77, 66119-74348 -78, 74349-77131 -77,
+      77133-94209 -78, 94210-96643 -77, 96645-98437 -78, 98438 -77, 98439-100599 -76, 100600-107345 -75.
+  shown table 3828 -> 3753: 75 texts gone (the case-only "Indigo" ... "Cassia" of the moved links; no new text). Removed old indices (0-based):
+    0, 3, 4, 9, 50, 137-140, 143-149, 151, 152, 155, 157-163, 166-173, 175, 335-337, 346, 348, 447, 510-518, 1577, 1583, 1883-1886, 1894-1902,
+    1904, 1943, 2056-2061, 2513, 3110. Shift of the rest (0-based old index range, change): 1-2 -1, 5-8 -3, 10-49 -4, 51-136 -5, 141-142 -9,
+    150 -16, 153-154 -18, 156 -19, 164-165 -26, 174 -34, 176-204 -35, 205 +2935 (["Crystal",0,[]], now first used later in the link list),
+    206-334 -36, 338-345 -39, 347 -40, 349-446 -41, 448-509 -42, 519-1576 -51, 1578-1582 -52, 1584-1882 -53, 1887-1893 -57, 1903 -66,
+    1905-1942 -67, 1944-2055 -68, 2062-2512 -74, 2514-3109 -75, 3111-3215 -76, 3216-3827 -75. Every surviving link's shown value points at the
+    same text (checked).
+  nameWordLinks (321), nameThemeLinks (2284), shownUK (25): same counts; identical once link numbers (and shownUK's shown indices) are
+    renumbered as above (checked).
+  type changes: 3 (Unity 20054, Elder 26295, Liberty 26332 common -> person). clash: no change (no entry in a theme group was touched).
+  Theme rows: the same 3240 rows in the same order; one changes: famous_churches counts [0,6,8,20,12] -> [0,7,7,20,12] (Sacré-Cœur, familiarity
+    2, now holds the link Sacre-Coeur held at familiarity 3). The name themes' rows are unchanged (the new names keep the old familiarity).
+
+Notice for _WS_ (draft; measured against the v396 export you were told about; v395 is the pinned version):
+  Library v397: I20 (common words shown with a capital in the "names that are ..." themes become given-name entries, the v395 rule) and I21
+  (two words stored twice merged: sablé, Sacré-Cœur).
+  Family export: 60950 -> 61024 entries. No entry leaves and no entry index changes: indices 0-60949 are the same entries as in v396.
+  Changed existing entries: 20054 unity -> Unity, 26295 elder -> Elder, 26332 liberty -> Liberty (text case and type common -> person: each
+  is now the given name; its link in names that are virtues / trees keeps its number's theme, typicality and difficulty and loses its shown
+  text, which was the same capitalised word). 55209 sable becomes a spelling alias (flag 16) of 49379 sablé (root 49380); 34559 Sacre-Coeur
+  becomes a spelling alias of 53227 Sacré-Cœur (flags 0 -> 18, root 53228, familiarity 3 -> 2); 49379 sablé familiarity 5 -> 4. Your rule
+  that an alias is never shown in a locked theme means cookies (locked) now shows sablé, not sable.
+  New at the end, 60950-61023 (74 entries, type person, linked only in the names that are ... themes), taking the links that sat on the common
+  word, at the same typicality and difficulty: 60950 Indigo, 60951 Azure, 60952 Cyan, 60953 Cherry (2 links), 60954 Ginger, 60955 Maple,
+  60956 Willow, 60957 Birch, 60958 Cedar, 60959 Sequoia, 60960 Cypress, 60961 Aspen, 60962 Hawthorn, 60963 Juniper, 60964 Acacia,
+  60965 Magnolia (2), 60966 Alder, 60967 Linden, 60968 Tulip, 60969 Orchid, 60970 Marigold, 60971 Pansy, 60972 Petunia, 60973 Hyacinth,
+  60974 Jasmine, 60975 Bluebell, 60976 Dahlia, 60977 Zinnia, 60978 Gardenia, 60979 Camellia, 60980 Azalea, 60981 Amaryllis, 60982 Ivy,
+  60983 Clover, 60984 Heather, 60985 Crystal, 60986 Joy, 60987 Hope, 60988 Serenity, 60989 Justice, 60990 Faith, 60991 Harmony, 60992 Sable,
+  60993 Magenta, 60994 Fuchsia, 60995 Crimson, 60996 Sienna, 60997 Tawny, 60998 Auburn, 60999 Cerise, 61000 Carmine, 61001 Jewel, 61002 Sky,
+  61003 Charity, 61004 Opal, 61005 Wisteria, 61006 Blossom, 61007 Beryl, 61008 Garnet, 61009 Jasper, 61010 Topaz, 61011 Amethyst, 61012 Sandy,
+  61013 Raven, 61014 Holly (2), 61015 Laurel, 61016 Diamond, 61017 Emerald, 61018 Sapphire, 61019 Pearl (2), 61020 Jade (2), 61021 Onyx,
+  61022 Pine, 61023 Cassia. The common entries (indigo 5, cherry 91, cherry tree 27644, pine tree 36575 ...) keep their index and other links.
+  Links 107346 -> 107350: 80 removed, 84 added. Removed (old numbers): 26, 220, 225, 391, 3798, 8672, 8682, 8687, 8704, 8753, 8759, 8766, 8776,
+  8801, 8810, 8855, 8856, 8918, 8924, 8930 (basswood 1639, inherited from linden), 9000, 9048, 9148, 9159, 9169, 9203, 9228, 9297, 9367, 9393,
+  9415, 9426, 9435, 9532, 9621, 9639, 9759, 10849, 17560, 17602, 17652, 18110, 18345, 24056, 28686, 28740, 28748, 28792, 28876, 28892, 28896,
+  28905, 28922, 50787, 61071, 61240, 61279, 62781, 63185, 63197, 63200, 63204, 63209, 63216, 63298, 63300, 63329, 63330, 63365, 63580, 66066,
+  66082, 66088, 66097, 66098, 66108, 66109, 66118, 77132, 96644. Added (new numbers): 74271 (Sacre-Coeur 34559, paris landmarks, from its root),
+  94132 (sablé 49379, cookies), 98360 (Sacré-Cœur 53227, famous churches), 98362 (Sacré-Coeur 53228, famous churches, from its root), 100524
+  (sable 55209, French pastries, from its root), and 107271-107349, the 79 links of the new entries.
+  Shift by old number range: 0-25 0, 27-219 -1, 221-224 -2, 226-390 -3, 392-3797 -4, 3799-8671 -5, 8673-8681 -6, 8683-8686 -7, 8688-8703 -8,
+  8705-8752 -9, 8754-8758 -10, 8760-8765 -11, 8767-8775 -12, 8777-8800 -13, 8802-8809 -14, 8811-8854 -15, 8857-8917 -17, 8919-8923 -18,
+  8925-8929 -19, 8931-8999 -20, 9001-9047 -21, 9049-9147 -22, 9149-9158 -23, 9160-9168 -24, 9170-9202 -25, 9204-9227 -26, 9229-9296 -27,
+  9298-9366 -28, 9368-9392 -29, 9394-9414 -30, 9416-9425 -31, 9427-9434 -32, 9436-9531 -33, 9533-9620 -34, 9622-9638 -35, 9640-9758 -36,
+  9760-10848 -37, 10850-17559 -38, 17561-17601 -39, 17603-17651 -40, 17653-18109 -41, 18111-18344 -42, 18346-24055 -43, 24057-28685 -44,
+  28687-28739 -45, 28741-28747 -46, 28749-28791 -47, 28793-28875 -48, 28877-28891 -49, 28893-28895 -50, 28897-28904 -51, 28906-28921 -52,
+  28923-50786 -53, 50788-61070 -54, 61072-61239 -55, 61241-61278 -56, 61280-62780 -57, 62782-63184 -58, 63186-63196 -59, 63198-63199 -60,
+  63201-63203 -61, 63205-63208 -62, 63210-63215 -63, 63217-63297 -64, 63299 -65, 63301-63328 -66, 63331-63364 -68, 63366-63579 -69,
+  63581-66065 -70, 66067-66081 -71, 66083-66087 -72, 66089-66096 -73, 66099-66107 -75, 66110-66117 -77, 66119-74348 -78, 74349-77131 -77,
+  77133-94209 -78, 94210-96643 -77, 96645-98437 -78, 98438 -77, 98439-100599 -76, 100600-107345 -75.
+  Every surviving link keeps its theme, typicality, difficulty and shown text, except: Unity, Elder, Liberty's name links (old 51038, 61149,
+  61210) now have shown 0 (the entry's own text, the same word); Sacre-Coeur's famous churches link (old 74349) difficulty 2.7 -> 2; sablé's
+  French pastries link (old 94209) difficulty 5 -> 4.7.
+  shown: 3828 -> 3753, the 75 capitalised texts of the moved links removed; the rest renumbered (table in tools/gen/batch397-changes.txt).
+  nameWordLinks (321), nameThemeLinks (2284), shownUK (25): same counts and pairs once link numbers and shown indices are renumbered.
+  clash: unchanged. Types: 3 changes (above). Theme rows: the same 3240 rows; only famous churches changes, counts [0,6,8,20,12] -> [0,7,7,20,12].
+  Format: "v" stays 4; the link order stays theme, difficulty, typicality, shown.
