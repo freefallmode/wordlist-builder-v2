@@ -136,7 +136,7 @@ The per-file classification behind these items is tools/gen/INVENTORY.md (static
 
 ## Open between the library and the game
 
-State of the game: library v395 is pinned (2026-11-18, at Simon's word; game commit f878b7a). The game reports: slim equals full, 2,000 levels per mode, no clashing split halves, verify 0 mismatches, the play-test bot passes in all three modes; all 58 non-ASCII letters of the library are in its Fredoka font (W8). It reads links in a fixed order (its I23; DESIGN.md 8.6). Any later change to library content needs a new pin, which only Simon asks for.
+State of the game: library v397 is pinned (2026-11-18, at Simon's word; game commit 45b3f56; v396 included). The game reports: slim equals full (0 of 400 per mode), 2,000 levels per mode, splitcheck 0 clashes, verify 1-120 0 mismatches, lazy restart gives the same level, the play-test bot passes in all three modes; all 58 non-ASCII letters (œ included) are in its Fredoka font; word breaks rebuilt (18,842 to 18,853 words); levels differing from v395: Easy 1,960, Medium 1,958, Hard 1,961 of 2,000. It reads links in a fixed order (its I23; DESIGN.md 8.6). Any later change to library content needs a new pin, which only Simon asks for.
 
 Reported by the Word Safari manager session on 2026-11-15; not checked on the game side. These are decisions waiting on Simon or work not built, not defects.
 
