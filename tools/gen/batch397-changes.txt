@@ -420,7 +420,7 @@ Family export (the committed file, node tools/export-game.mjs --strict) against 
   Theme rows: the same 3240 rows in the same order; one changes: famous_churches counts [0,6,8,20,12] -> [0,7,7,20,12] (Sacré-Cœur, familiarity
     2, now holds the link Sacre-Coeur held at familiarity 3). The name themes' rows are unchanged (the new names keep the old familiarity).
 
-Notice for _WS_ (draft; measured against the v396 export you were told about; v395 is the pinned version):
+Notice for _WS_ (sent 2026-11-18 to adcfe0 with Simon's request to pin v397; measured against the v396 export you were told about; v395 is the pinned version):
   Library v397: I20 (common words shown with a capital in the "names that are ..." themes become given-name entries, the v395 rule) and I21
   (two words stored twice merged: sablé, Sacré-Cœur).
   Family export: 60950 -> 61024 entries. No entry leaves and no entry index changes: indices 0-60949 are the same entries as in v396.
