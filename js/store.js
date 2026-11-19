@@ -57,7 +57,7 @@ function packEntry(e) {
   }
   return JSON.stringify({ id: e.id, text: e.text, ...o });
 }
-const packTheme = ({ geo, kind, ...t }) => JSON.stringify(t);
+const packTheme = t => JSON.stringify(t);
 
 export function serializeProject(P) {
   const head = { schema: P.schema, lang: P.lang, lib: P.lib, nextId: P.nextId, settings: P.settings };
@@ -69,7 +69,7 @@ export function parseProject(text) {
   if (!j.project || !j.themes) throw Error('Not a wordlist-builder project file.');
   const P = Object.assign(newProject(), j.project);
   P.settings = Object.assign(newProject().settings, j.project.settings);
-  P.themes = j.themes.map(({ geo, kind, ...t }) => t);
+  P.themes = j.themes.slice();
   P.entries = j.entries.map(e => Object.assign(entryDefaults(), e));
   let n = Math.max(P.nextId || 1, 1);
   for (const e of P.entries) if (e.id + 1 > n) n = e.id + 1;   // a loop, not Math.max(...entries): spreading overflows the stack above ~120,000 entries

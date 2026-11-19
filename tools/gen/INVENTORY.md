@@ -7,7 +7,7 @@ What is left in tools/gen after the archive pass of 2026-11-17 (library v392, co
 | script | use |
 |---|---|
 | audit-make / audit-apply | single unlabelled entries in unrelated roots; reads and writes recon/audited-ids.json, recon/audit-in/out-N.json |
-| find-word | shows existing entries of a text (named in BRIEF-depth3, BRIEF-rest, REPAIR-BRIEF) |
+| find-word | shows existing entries of a text (named in BRIEF-depth3, BRIEF-rest) |
 | lint-show | case-lint checker (named in CAPITAL-RULE and the creation briefs) |
 | list-depth, list-topup | list a depth-3 / rest chunk, thin themes (T8: list-topup and stats still read the retired `t.d`) |
 | near-dups2, near-fix | near-duplicate pairs in a theme, fold reviewed pairs into aliases |
@@ -19,18 +19,16 @@ What is left in tools/gen after the archive pass of 2026-11-17 (library v392, co
 | batch375 to batch392 (.mjs and -changes.txt), evidence392-*.txt | recent library batches and their evidence; the newest are in use |
 | animals.mjs, food-drink.mjs | worked examples of finished batches, named by BRIEF-depth3 |
 | ident-make / ident-apply, regtag-make / regtag-apply | scripts of the two current briefs below |
-| starts-cands, ends-cands | write starts/ and ends/ candidate lists for the starts-with and ends-with briefs |
 
 ## Briefs
 
 Current: BRIEF-depth3, BRIEF-rest, BRIEF-topup, BRIEF-rec, BRIEF-ident, BRIEF-regtag, CAPITAL-RULE, brk/BRIEF-brk, recon/BRIEF, recon/AUDIT-BRIEF.
-Kept, unclear whether wanted again (G7): BRIEF-starts-with, BRIEF-ends-with, recon/REPAIR-BRIEF, easy/BRIEF-easy.
 
 ## State and lists
 
 - rec/done.json (read by rec-make and apply-words), recon/audited-ids.json (read by audit-make), brk/in-N.txt and out-N.txt (read by tools/brk-merge.mjs).
-- done.json of passes that could be rerun: regtag, regrec, pos, syn, pop, leak/kept-done.json. The make/apply scripts of regrec, pos, syn, pop and leak are archived, so these are only records unless a pass is rebuilt.
-- Top-level lists nothing reads (G7): alias-extra-list.md, connections-titles.txt, inflection-dups-list.md, long-names-list.md, nameok-list.txt.
+- regtag/done.json (read by regtag-make and regtag-apply). The done.json files of the passes whose scripts are archived (regrec, pos, syn, pop, leak) were deleted 2026-11-19 (G7); `git show <commit>:tools/gen/<pass>/done.json` has them.
+- Deleted 2026-11-19 (G7), in git history: BRIEF-starts-with, BRIEF-ends-with and their starts-cands / ends-cands, recon/REPAIR-BRIEF, easy/BRIEF-easy, and the lists alias-extra-list.md, connections-titles.txt, inflection-dups-list.md, long-names-list.md, nameok-list.txt.
 - leak/.gitignore (ignores `.scratch-*`).
 - tools/gen/.tmp/ is untracked scratch (56 MB of old library snapshots); not part of the repository.
 

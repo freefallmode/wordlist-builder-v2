@@ -1,4 +1,4 @@
-// Adds generated words and theme ratings to the working library, data/wordlist-en.project.json (created from the pilot project if missing).
+// Adds generated words and theme ratings to the working library, data/wordlist-en.project.json.
 // Run: node tools/apply-words.mjs tools/gen/food-drink.mjs [library file]
 //
 // A data module exports:
@@ -16,7 +16,7 @@
 // An entry that already exists (same text and gloss) is only linked to the theme (its own ratings and flags stay); a link already there is left alone.
 // Aliases inherit part of speech, type, adult, sensitive and trademark from the root unless the alias row says otherwise.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
-import { pathToFileURL } from 'node:url';
+import { pathToFileURL, fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
 import { addEntry, reindex, indexEntry, sameText, linkIds, deleteEntry } from '../js/model.js';
 import { parseProject, serializeProject, stampSave } from '../js/store.js';
@@ -27,10 +27,11 @@ import { parseBreaks, MIN_BREAK_LETTERS } from '../js/breaks.js';
 const here = p => new URL(p, import.meta.url);
 const file = process.argv[2];
 const LIB = process.argv[3] ? pathToFileURL(resolve(process.argv[3])) : here('../data/wordlist-en.project.json');   // optional: another library file (a scratch copy for trying a batch)
-if (!file) throw Error('usage: node tools/apply-words.mjs <data module>');
+if (!file) throw Error('usage: node tools/apply-words.mjs <data module> [library file]');
+if (!existsSync(LIB)) throw Error('library file not found: ' + fileURLToPath(LIB));
 const { DATA = {}, THEMES, ALIASES, FIXES, SETTINGS, GROUPS } = await import(pathToFileURL(resolve(file)).href);
 
-const P = parseProject(readFileSync(existsSync(LIB) ? LIB : here('../data/pilot.project.json'), 'utf8'));
+const P = parseProject(readFileSync(LIB, 'utf8'));
 reindex(P);
 setFreq(parseFreq(readFileSync(here('../data/freq-en.txt'), 'utf8')));
 

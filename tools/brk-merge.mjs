@@ -1,8 +1,10 @@
 // Checks the generated out-N.txt files against in-N.txt / todo-N.txt and merges the valid lines into data/breaks-en.txt.
 // node tools/brk-merge.mjs [prefix: in|todo]  (todo-N.txt from tools/brk-tokens.mjs is answered in todo-out-N.txt)   Prints the problems; invalid lines are written to tools/gen/brk/bad.txt for a rerun.
 import fs from 'node:fs';
-const dir = 'tools/gen/brk/', prefix = process.argv[2] || 'in';
-const file = 'data/breaks-en.txt';
+import { fileURLToPath } from 'node:url';
+const R = p => fileURLToPath(new URL('../' + p, import.meta.url));   // paths from the repository root, whatever the current directory
+const dir = R('tools/gen/brk/'), prefix = process.argv[2] || 'in';
+const file = R('data/breaks-en.txt');
 const have = new Map(fs.existsSync(file) ? fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(Boolean).map(l => [l.slice(0, l.indexOf('=')), l.slice(l.indexOf('=') + 1)]) : []);
 const stale = [...have].filter(([w, h]) => h.replace(/-/g, '') !== w || h.split('-').some(p => !p)); if (stale.length) console.log('existing table lines that do not spell their word (fix by hand): ' + stale.map(([w, h]) => w + '=' + h).join(', '));   // the table is checked as well as the new lines
 let ok = 0, none = 0, missing = 0, single = 0; const bad = [];
