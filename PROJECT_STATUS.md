@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-19, library v399. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-19, library v400. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
@@ -14,9 +14,9 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 ## 2. Current status
 
-Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v398 (W9, T30, I18, T31, I19, T32, I20, I21, I22 in-theme pairs v398, kin pilot v399), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
+Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v398 (W9, T30, I18, T31, I19, T32, I20, I21, I22 in-theme pairs v398, kin pilot v399, kin pass v400), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
-Game side: it pinned v397 on 2026-11-18 (its commit 45b3f56, v396 included; all checks passed); it pins only when Simon asks. The combined v398+v399 notice was sent 2026-11-19 (end of `tools/gen/batch399-changes.txt`); the game measured v399 fine. Simon 2026-11-19: no pin yet, wait for the rest of the kin pass. The v396 and v397 notices were sent 2026-11-18 (ends of `tools/gen/batch396-changes.txt`, `batch397-changes.txt`); Simon asked the game to pin v397 and it did. The v393+v394 notice and the v395 notice (with the plain-alias result) were sent 2026-11-18 (texts at the end of `tools/gen/batch394-changes.txt` and `batch395-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
+Game side: it pinned v397 on 2026-11-18 (its commit 45b3f56, v396 included; all checks passed); it pins only when Simon asks. v398+v399 notice sent 2026-11-19, the game measured v399 fine (not pinned). **The v400 notice is HELD** (draft at the end of `tools/gen/batch400-changes.txt`); send when Simon says; then the game measures v400 against v397 and Simon decides the pin. The v396 and v397 notices were sent 2026-11-18 (ends of `tools/gen/batch396-changes.txt`, `batch397-changes.txt`); Simon asked the game to pin v397 and it did. The v393+v394 notice and the v395 notice (with the plain-alias result) were sent 2026-11-18 (texts at the end of `tools/gen/batch394-changes.txt` and `batch395-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
 
 In progress: nothing.
 
@@ -39,7 +39,7 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | I22 rest of the kin pass: ~6,800 family-kin suggestions after the v399 pilot (Simon to decide scope and route) | deep reasoning | Opus/Sonnet |
+| 1 | I24 check the data errors the kin reviewers saw (wrong links, glosses, accents) | standard | Sonnet |
 | 1b | I23 merge same-sense duplicate roots into form aliases (115 seen in the pilot; later) | deep reasoning | Opus |
 | 2 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
 | 3 | W4 word-family column: replaced by the word-family rule (DESIGN-entries.md 3.7, kin exported into clash); close when kin is built | - | - |

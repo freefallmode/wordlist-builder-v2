@@ -1,0 +1,35 @@
+Library batch v400 (I22): the kin pass over all family-kin suggestions left on v399. Approved by Simon 2026-11-19 ("Yes, apply v400"),
+with the v399 pilot's -s/-ing/-ed pairs brought under the same rule. Script tools/gen/batch400.mjs; decisions tools/gen/kin400/ (14 chunk
+reviews by Opus under BRIEF.md, notes.md, overrides.txt of the consistency pass); review list tools/gen/batch400-review.txt; duplicates for
+I23 in tools/gen/kin400/dups.txt.
+
+Counts: 6,823 suggestions + 6 pilot pairs. 3,979 kin set (840 kin?, 371 dup?); 558 kin but left unlinked (a clash group would exceed 8;
+they stay as family-kin suggestions); 2,292 not kin, allow-listed in js/family-allow.js; 6 pilot allow keys removed (tire/tired, training/train,
+bowling/bowl, rowing/row, boxing/box, bangs/bang; training/train too big, the other 5 now kin). 108 decisions changed by the consistency pass
+(rule: the same written word, or a plain -s/-ing/-ed form of it, is kin; a word derived from an unrelated other sense is not: porter/port,
+washer/wash, pitcher/pitch).
+
+Checks: apply 3,979 library changes, library v400; rerun 0 changes; npm test 49 pass; Checks errors 0, warnings theme-name 3, long 5,
+maybe-duplicate 1, clash-big 3 (kebab 11, ghost 10, cannabis 10, all as before), family-pair 0, kin-bad 0; family-kin 6,823 -> 558 (the
+too-big pairs). Strict full export to scratch exit 0, case lint 0; style-case.mjs 0 changes; propword-exceptions.mjs 0 changes.
+Applied by the manager session (the consolidation agent's --apply was stopped by a permission check; Simon's approval was in chat).
+
+Family export (data/export/wordlist-game-family.json, regenerated --strict) against the v399 file: 61,024 entries, texts and links identical,
+themes identical, no other column changed; only clash: words with a clash id 9,572 -> 13,566, clash ids 3,906 -> 4,862.
+Clash group sizes before: 2:2802 3:713 4:240 5:91 6:27 7:17 8:14 10:1 11:1
+Clash group sizes after:  2:3059 3:902 4:383 5:213 6:108 7:84 8:111 10:1 11:1
+Chains through a second sense can join unrelated synonym groups: (tin, headphones, cans, can ...), (bakery, bake, roast ...),
+(guitar, axe, guitarist, axeman ...), (sea bass, bass, bassist ...).
+
+Notice for _WS_ (DRAFT, not sent):
+  Library v400: the kin pass over all remaining word-family suggestions (I22), after the v399 pilot.
+  Export: data/export/wordlist-game-family.json, lib.version 400, format "v" 4, layout unchanged.
+  Family export: 61,024 entries; no entry index changes; texts, links and themes identical to v399. Only the clash column changes:
+  words with a clash id 9,572 -> 13,566 (about 22% of entries), clash ids 3,906 -> 4,862.
+  Clash group sizes v399 -> v400: 2: 2802 -> 3059, 3: 713 -> 902, 4: 240 -> 383, 5: 91 -> 213, 6: 27 -> 108, 7: 17 -> 84, 8: 14 -> 111;
+  above 8 only kebab (11) and ghost (10), as before. Kin through a second sense can join unrelated groups into one clash group
+  (tin / can / cans / headphones; bakery / bake / roast); they only stop those words meeting in a level.
+  558 family pairs were left unlinked because their group would exceed 8 (spin/spinner, tank/tanker, slide/slider, cut/cutter ...).
+  Please measure v400 against v397 as you did for v399 (all 2,000 levels in every mode, failures, relaxed-overlap steps, splitcheck,
+  word-phase and theme-pick losses, mean difficulty), especially whether the 111 eight-word groups starve any theme. Simon decides the pin
+  on that. v398 and v399 were not pinned; v400 includes both.
