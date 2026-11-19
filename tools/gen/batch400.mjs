@@ -23,7 +23,7 @@ import { parseProject, serializeProject, stampSave } from '../../js/store.js';
 import { reindex, setKin, eff } from '../../js/model.js';
 import { validate } from '../../js/validate.js';
 import { buildExport, PRESETS } from '../../js/export.js';
-import { CLASH_MAX } from '../../js/family.js';
+import { CLASH_SOFT as CLASH_MAX } from '../../js/family.js';   // this batch ran with the old limit of 8
 import { FAMILY_OK } from '../../js/family-allow.js';
 const LIB = new URL('../../data/wordlist-en.project.json', import.meta.url), ALLOW = new URL('../../js/family-allow.js', import.meta.url);
 const DIR = new URL('./kin400/', import.meta.url), COMMITTED = new URL('../../data/export/wordlist-game-family.json', import.meta.url);

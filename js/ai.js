@@ -3,7 +3,8 @@
 import { POS, TYPES, REGIONS, FLAG_HELP, pathOf, descendants, eff, themeLocked } from './model.js';
 
 export const MODELS = [['claude-opus-5-5', 'Claude Opus 5.5'], ['claude-sonnet-5-5', 'Claude Sonnet 5.5'], ['claude-haiku-5-5', 'Claude Haiku 5.5']];
-const PRICE = { 'claude-opus-5-5': [4, 20, 0.2], 'claude-sonnet-5-5': [2, 10, 0.1], 'claude-haiku-5-5': [0.1, 0.5, 0.01] };   // $ per million tokens: in, out, cache read (platform.claude.com/docs/en/about-claude/pricing, 2026-11-15; Haiku 5.5 costs 5x more for prompts over 100K tokens, not modelled)
+const PRICE = { 'claude-opus-5-5': [4, 20, 0.2], 'claude-sonnet-5-5': [2, 10, 0.1], 'claude-haiku-5-5': [0.1, 0.5, 0.01], 'claude-fable-5-2': [8, 40, 0.2] };   // $ per million tokens: in, out, cache read (platform.claude.com/docs/en/about-claude/pricing, 2026-11-15; fable-5-2 from the API reference, 2026-11-19)
+const HAIKU_LONG = 100000;   // Haiku 5.5 prompts over 100K tokens cost 5x ($0.50 / $2.50 per million, not $0.10 / $0.50)
 
 let sessionKey = '';
 export function setKey(k, remember) {
@@ -22,9 +23,13 @@ export function getModel() {
 }
 export function setModel(m) { try { localStorage.setItem('wlb2-model', m); } catch { /* ignore */ } }
 
-export const cost = (model, u) => {
-  const p = PRICE[model] || PRICE['claude-opus-5-5'];
-  return ((u.input_tokens || 0) * p[0] + (u.cache_creation_input_tokens || 0) * p[0] * 1.25 + (u.cache_read_input_tokens || 0) * p[2] + (u.output_tokens || 0) * p[1]) / 1e6;
+// `model` is the model that served the reply (response.model, which is the fallback model after a refusal fallback), `asked` the one requested: a served model with no listed price is
+// priced as the one asked for. The usage `iterations` entries are not split out: a reply that ran on a fallback model after a decline is priced whole at the serving model's rates.
+export const cost = (model, u, asked = model) => {
+  const p = PRICE[model] || PRICE[asked] || PRICE['claude-opus-5-5'];
+  const prompt = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
+  const k = (PRICE[model] ? model : asked) === 'claude-haiku-5-5' && prompt > HAIKU_LONG ? 5 : 1;
+  return k * ((u.input_tokens || 0) * p[0] + (u.cache_creation_input_tokens || 0) * p[0] * 1.25 + (u.cache_read_input_tokens || 0) * p[2] + (u.output_tokens || 0) * p[1]) / 1e6;
 };
 
 export async function claude({ model, system, prompt, schema, maxTokens = 12000, effort = 'medium', signal }) {
@@ -44,7 +49,7 @@ export async function claude({ model, system, prompt, schema, maxTokens = 12000,
   if (j.stop_reason === 'refusal') throw Error('Claude declined this request.');
   if (j.stop_reason === 'max_tokens') throw Error('The reply was cut off. Ask for fewer words.');
   const text = j.content.filter(c => c.type === 'text').map(c => c.text).join('');
-  return { data: JSON.parse(text), cost: j.usage ? cost(j.model || model, j.usage) : 0 };
+  return { data: JSON.parse(text), cost: j.usage ? cost(j.model || model, j.usage, model) : 0 };
 }
 
 // ---------- word generation ----------

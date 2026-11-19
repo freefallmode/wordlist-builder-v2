@@ -83,5 +83,6 @@ export function clashGroups(P, themes, keep) {
   return { has: id => clash.has(id), id: id => clash.has(id) ? clashId.get(find(id)) || 0 : 0, find, clashId, size, members: () => {
     const m = new Map(); for (const id of clash.keys()) { const c = find(id); if (clashId.has(c)) { if (!m.has(c)) m.set(c, []); m.get(c).push(id); } } return m; } };
 }
-// The largest a clash group may be before the clash-big check warns (DESIGN-entries.md 3.7, Group size).
-export const CLASH_MAX = 8;
+// Clash group size (DESIGN-entries.md 3.7, Group size): above CLASH_SOFT the clash-large check notes it, above CLASH_MAX (the hard limit) clash-big warns.
+export const CLASH_SOFT = 8;
+export const CLASH_MAX = 12;

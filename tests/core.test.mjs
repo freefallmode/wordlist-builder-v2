@@ -2,6 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { spawn } from 'node:child_process';
 import { connect } from 'node:net';
 import { networkInterfaces } from 'node:os';
@@ -480,7 +481,10 @@ test('ai: every model has a price, and cost counts cache writes at 1.25x and cac
   const { MODELS, cost } = await import('../js/ai.js');
   for (const [id] of MODELS) assert.ok(cost(id, { input_tokens: 1e6 }) > 0, id);
   assert.ok(Math.abs(cost('claude-opus-5-5', { input_tokens: 1e6, output_tokens: 1e6, cache_creation_input_tokens: 1e6, cache_read_input_tokens: 1e6 }) - (4 + 20 + 5 + 0.2)) < 1e-9);
-  assert.ok(Math.abs(cost('claude-haiku-5-5', { cache_read_input_tokens: 1e6 }) - 0.01) < 1e-9);
+  assert.ok(Math.abs(cost('claude-haiku-5-5', { cache_read_input_tokens: 1e5 }) - 0.001) < 1e-9);   // up to 100K tokens: listed rates
+  assert.ok(Math.abs(cost('claude-haiku-5-5', { input_tokens: 2e5, output_tokens: 1e5 }) - (2e5 * 0.5 + 1e5 * 2.5) / 1e6) < 1e-9);   // over 100K: 5x
+  assert.ok(Math.abs(cost('claude-fable-5-2', { input_tokens: 1e6 }, 'claude-opus-5-5') - 8) < 1e-9);   // priced by the model that served it
+  assert.ok(Math.abs(cost('claude-opus-4-8', { input_tokens: 1e6 }, 'claude-sonnet-5-5') - 2) < 1e-9);   // unlisted served model: the one asked for, not the Opus default
 });
 
 // E1: the indexes an edit updates in place (updateIndex) must equal a full reindex, list order included. A fresh reindex on a copy of the project is the reference.
@@ -668,20 +672,39 @@ test('family-kin suggests one-family words in different themes; kin silences it;
   assert.equal(count('kin-bad'), 1);
 });
 
-test('clash-big warns for a clash group (groups + kin across themes) of more than 8 words', () => {
+test('clash-large notes a clash group of 9-12 words, clash-big warns above 12', () => {
   const P = project();
   const a = Array.from({ length: 5 }, (_, i) => addEntry(P, 'fa' + i, { fam: 1, typ: { fruits: 1 } }));
   const b = Array.from({ length: 4 }, (_, i) => addEntry(P, 'cb' + i, { fam: 1, typ: { citrus: 1 } }));
   P.themes.find(t => t.id === 'fruits').groups = [a.map(e => e.id)];
   P.themes.find(t => t.id === 'citrus').groups = [b.map(e => e.id)];
   reindex(P);
-  const big = () => validate(P).filter(i => i.kind === 'clash-big');
-  assert.equal(big().length, 0);                             // 5 and 4
+  const of = k => validate(P).filter(i => i.kind === k);
+  assert.equal(of('clash-large').length + of('clash-big').length, 0);   // 5 and 4
   setKin(P, a[0], b[0]);                                     // kin joins them: 9
-  assert.equal(big().length, 1);
-  assert.match(big()[0].msg, /has 9 words/);
+  assert.equal(of('clash-large').length, 1);
+  assert.equal(of('clash-large')[0].sev, 'info');
+  assert.match(of('clash-large')[0].msg, /has 9 words/);
+  assert.equal(of('clash-big').length, 0);
   const g = clashGroups(P, P.themes, () => true);
   assert.ok(g.id(a[4].id) > 0 && g.id(a[4].id) === g.id(b[3].id));
+  const c = Array.from({ length: 4 }, (_, i) => addEntry(P, 'cc' + i, { fam: 1, typ: { citrus: 1 } }));   // 13 with a second group in citrus joined by kin
+  P.themes.find(t => t.id === 'citrus').groups.push(c.map(e => e.id));
+  reindex(P);
+  setKin(P, b[1], c[0]);
+  assert.equal(of('clash-large').length, 0);
+  assert.equal(of('clash-big').length, 1);
+  assert.equal(of('clash-big')[0].sev, 'warn');
+  assert.match(of('clash-big')[0].msg, /has 13 words/);
+});
+
+test('case lint kinds show once in Checks (case-split, not case-case-split)', () => {
+  const P = project();
+  addEntry(P, 'Apple', { fam: 1, type: 'proper', typ: { fruits: 1, citrus: 1 }, show: { citrus: 'apple' } });
+  reindex(P);
+  const kinds = validate(P).map(i => i.kind).filter(k => k.startsWith('case-'));
+  assert.ok(kinds.includes('case-split'), kinds.join());
+  assert.ok(!kinds.some(k => k.startsWith('case-case-')), kinds.join());
 });
 
 test('kin round-trips through the project file, joins the export clash column, and leaves with a deleted entry', () => {
@@ -712,4 +735,32 @@ test('kin: deleting a root hands its kin to the promoted alias', () => {
   assert.deepEqual(delight.kin, [joyful.id]);
   assert.deepEqual(joyful.kin, [delight.id]);
   assert.equal(validate(P).filter(i => i.kind === 'kin-bad').length, 0);
+});
+
+test('apply-words merge goes through deleteEntry: ids leave groups, use and kin; show, use, nameOkIn carry over', async () => {
+  const { mkdtempSync, writeFileSync, rmSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os'), { join } = await import('node:path'), { execFileSync } = await import('node:child_process');
+  const P = project();
+  const keep = addEntry(P, 'jam', { fam: 1, typ: { fruits: 1 } }), dup = addEntry(P, 'jam', { fam: 1, typ: { citrus: 1 } });
+  const other = addEntry(P, 'lime', { fam: 1, typ: { citrus: 1 } }), kinW = addEntry(P, 'jammy', { fam: 1, typ: { fruits: 1 } });
+  dup.show = { citrus: 'Jam' }; dup.nameOkIn = ['citrus'];
+  P.themes.find(t => t.id === 'citrus').groups = [[dup.id, other.id]];
+  other.use = { citrus: dup.id };
+  setKin(P, dup, kinW);
+  reindex(P);
+  const dir = mkdtempSync(join(tmpdir(), 'aw-'));
+  try {
+    writeFileSync(join(dir, 'lib.json'), serializeProject(P));
+    writeFileSync(join(dir, 'm.mjs'), "export const FIXES = [{ merge: ['jam', ['fruits', 'citrus'], 'spread'] }];");
+    execFileSync(process.execPath, [fileURLToPath(new URL('../tools/apply-words.mjs', import.meta.url)), join(dir, 'm.mjs'), join(dir, 'lib.json')], { stdio: 'pipe' });
+    const Q = parseProject(readFileSync(join(dir, 'lib.json'), 'utf8')); reindex(Q);
+    const k = Q.entries.find(e => e.id === keep.id);
+    assert.ok(!Q.entries.some(e => e.id === dup.id));
+    assert.deepEqual(Q.themes.find(t => t.id === 'citrus').groups, [[keep.id, other.id]]);
+    assert.equal(Q.entries.find(e => e.id === other.id).use?.citrus, undefined);
+    assert.equal(k.show.citrus, 'Jam');
+    assert.deepEqual(k.nameOkIn, ['citrus']);
+    assert.deepEqual(k.kin, [kinW.id]);
+    assert.deepEqual(Q.entries.find(e => e.id === kinW.id).kin, [keep.id]);
+  } finally { rmSync(dir, { recursive: true, force: true }); }
 });

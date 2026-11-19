@@ -3,7 +3,7 @@
 import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, ALIAS_KINDS, POS, TYPES } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
-import { familyPairs, clashGroups, CLASH_MAX } from './family.js';
+import { familyPairs, clashGroups, CLASH_SOFT, CLASH_MAX } from './family.js';
 import { FAMILY_OK } from './family-allow.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
@@ -153,7 +153,7 @@ export function validate(P) {
     }
   }
   // ----- capitals of shown words (js/caselint.js): one warning per link -----
-  for (const i of caseLint(P)) add('warn', 'case-' + i.kind, i.msg, { themeId: i.themeId, entryId: i.entryId });
+  for (const i of caseLint(P)) add('warn', i.kind.startsWith('case-') ? i.kind : 'case-' + i.kind, i.msg, { themeId: i.themeId, entryId: i.entryId });
   return out;
 }
 
@@ -177,9 +177,10 @@ function familyChecks(P, add) {
   const cg = clashGroups(P, playable, id => !!ix.entry.get(id)?.enabled);
   for (const [c, ids] of cg.members()) {   // counted as the export writes the clash column: each root and its enabled aliases (an alias carries its root's id)
     const rows = ids.flatMap(id => [ix.entry.get(id), ...(ix.aliases.get(id) || []).filter(a => a.enabled)]).filter(Boolean);
-    if (rows.length <= CLASH_MAX) continue;
+    if (rows.length <= CLASH_SOFT) continue;
     const names = rows.map(e => e.text + (e.aliasOf ? '*' : ''));
-    add('warn', 'clash-big', `A clash group (synonym groups and kin joined across themes) has ${rows.length} words (* an alias), more than ${CLASH_MAX}: ${names.join(', ')}. It can starve a theme of words; unlink the weaker family member instead of joining groups.`, { entryId: ids[0] });
+    if (rows.length <= CLASH_MAX) add('info', 'clash-large', `A clash group (synonym groups and kin joined across themes) has ${rows.length} words (* an alias), more than ${CLASH_SOFT} (up to ${CLASH_MAX} is allowed for real look-alikes in big themes): ${names.join(', ')}.`, { entryId: ids[0] });
+    else add('warn', 'clash-big', `A clash group (synonym groups and kin joined across themes) has ${rows.length} words (* an alias), more than ${CLASH_MAX}: ${names.join(', ')}. It can starve a theme of words; unlink the weaker family member instead of joining groups.`, { entryId: ids[0] });
   }
   // kin: symmetric, between existing root entries
   for (const e of P.entries) for (const id of e.kin || []) {

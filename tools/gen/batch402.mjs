@@ -18,7 +18,7 @@ import { parseProject, serializeProject, stampSave } from '../../js/store.js';
 import { reindex, addEntry, setKin, unlinkEntry } from '../../js/model.js';
 import { validate } from '../../js/validate.js';
 import { buildExport, PRESETS } from '../../js/export.js';
-import { CLASH_MAX } from '../../js/family.js';
+import { CLASH_SOFT as CLASH_MAX } from '../../js/family.js';   // this batch ran with the old limit of 8
 import { FAMILY_OK } from '../../js/family-allow.js';
 const ALLOW = new URL('../../js/family-allow.js', import.meta.url), LIB = new URL('../../data/wordlist-en.project.json', import.meta.url), COMMITTED = new URL('../../data/export/wordlist-game-family.json', import.meta.url);
 const arg = k => { const i = process.argv.indexOf(k); return i < 0 ? null : process.argv[i + 1]; };

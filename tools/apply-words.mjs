@@ -18,7 +18,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
-import { addEntry, reindex, indexEntry, sameText, linkIds, deleteEntry } from '../js/model.js';
+import { addEntry, reindex, indexEntry, sameText, linkIds, deleteEntry, setKin } from '../js/model.js';
 import { parseProject, serializeProject, stampSave } from '../js/store.js';
 import { validate } from '../js/validate.js';
 import { parseFreq, setFreq } from '../js/freq.js';
@@ -51,7 +51,16 @@ for (const f of FIXES || []) {
       for (const [t, v] of Object.entries(d.typ)) if (keep.typ[t] === undefined) keep.typ[t] = v;
       for (const a of P.entries) if (a.aliasOf === d.id) a.aliasOf = keep.id;
       keep.adult ||= d.adult; keep.sensitive ||= d.sensitive; keep.tm ||= d.tm;
-      P.entries = P.entries.filter(x => x !== d);
+      for (const [t, s] of Object.entries(d.show || {})) { keep.show ||= {}; if (!keep.show[t]) keep.show[t] = s; }
+      for (const [t, id] of Object.entries(d.use || {})) { keep.use ||= {}; if (!keep.use[t] && id !== keep.id) keep.use[t] = id; }
+      if (d.nameOkIn?.length) keep.nameOkIn = [...new Set([...(keep.nameOkIn || []), ...d.nameOkIn])];
+      for (const t of P.themes) if (t.groups?.some(g => g.includes(d.id))) {   // the kept word takes the duplicate's place in each synonym group (one group per theme)
+        t.groups = t.groups.map(g => g.includes(d.id) ? [...new Set(g.map(id => id === d.id ? keep.id : id))] : g);
+        const hit = t.groups.filter(g => g.includes(keep.id));
+        if (hit.length > 1) t.groups = [...t.groups.filter(g => !hit.includes(g)), [...new Set(hit.flat())]];
+      }
+      for (const id of d.kin || []) { const k = P.entries.find(x => x.id === id); if (k && k !== keep) setKin(P, keep, k, true); }
+      deleteEntry(P, d);   // the duplicate's id leaves synonym groups, other entries' use and kin (its own aliases were moved to keep above)
     }
     keep.gloss = gloss;
   } else if (f.split) {

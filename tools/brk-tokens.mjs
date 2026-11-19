@@ -1,13 +1,14 @@
-// Lists the long words (8+ letters) that appear in the game export's entries, shown texts and theme names but are missing from data/breaks-en.txt,
-// and writes them in chunks of 700 to tools/gen/brk/todo-N.txt. Run from anywhere: node tools/brk-tokens.mjs [export.json]
+// Lists the long words (8+ letters) that appear in the whole library's enabled entries and theme names (what tools/apply-words.mjs counts, adult and vulgar
+// entries included, whatever a preset leaves out of the export) but are missing from data/breaks-en.txt,
+// and writes them in chunks of 700 to tools/gen/brk/todo-N.txt. Run from anywhere: node tools/brk-tokens.mjs [library.project.json]
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 const R = p => fileURLToPath(new URL('../' + p, import.meta.url));   // paths from the repository root, whatever the current directory
 import { parseBreaks, MIN_BREAK_LETTERS } from '../js/breaks.js';
-const src = process.argv[2] || R('data/export/wordlist-game-family.json');
-const o = JSON.parse(fs.readFileSync(src, 'utf8'));
-const ni = o.themeFields.indexOf('name');
-const texts = [...o.entries.text, ...o.themes.map(r => r[ni]), ...(o.shown || []).map(s => s[0])];
+import { parseProject } from '../js/store.js';
+const src = process.argv[2] || R('data/wordlist-en.project.json');
+const P = parseProject(fs.readFileSync(src, 'utf8'));
+const texts = [...P.entries.filter(e => e.enabled).map(e => e.text), ...P.themes.map(t => t.name)];
 const have = fs.existsSync(R('data/breaks-en.txt')) ? parseBreaks(fs.readFileSync(R('data/breaks-en.txt'), 'utf8')) : new Map();
 const WORD = /\p{L}[\p{L}']*\p{L}|\p{L}/gu;
 const todo = new Set();
