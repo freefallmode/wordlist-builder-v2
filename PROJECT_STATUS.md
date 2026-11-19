@@ -40,6 +40,8 @@ All need Simon's go-ahead first (he approves every library change).
 | # | Task | Difficulty | Model |
 |---|---|---|---|
 | 1 | Re-link the 558 kin pairs left unlinked at v400 under the loosened clash limit (soft 8, up to 12 for real look-alikes in big themes; DESIGN-entries.md 3.7), after v403 (Simon 2026-11-19) | deep reasoning | Opus |
+| 1a | Code cleanup with the clash-big change, after v403 (Simon 2026-11-19): T6 line breaks for adult-only words, T9 stale LoadV3.cs.txt, T19 apply-words merge via deleteEntry, T21 case-case-split label, T22 ai.js cost() for fallback and long Haiku prompts | standard | Sonnet |
+| 1b | Data leftovers T10 (settings.model, aliasOf null, nextId), T16 (proper-word pass oddities), T20 (51 dead show keys on aliases): fold into the v404 batch (Simon 2026-11-19) | standard | Opus |
 | 1b | I23 merge same-sense duplicate roots into form aliases (115 seen in the pilot; later) | deep reasoning | Opus |
 | 2 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
 
