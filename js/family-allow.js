@@ -2430,6 +2430,4 @@ export const FAMILY_OK = new Set([
   '19094|57960', // crackers / crack: allowed: trimmed for clash (v401); crackers (biscuit) / crack (impact sound): judgement call; the last bridge from crackers to the crack cluster (crack, crack, cracking)
   '25248|57960', // cracker / crack: allowed: trimmed for clash (v401); cracker (firework) / crack (impact sound): judgement call; the last bridge from the firework group to the crack cluster
   '28814|51795', // axes / axé: allowed (v402); axé is a different written word from axes, and the kin link made a 9-word clash group
-  '2485|33709|law_and_order', // prison / prisoner in law and order: kept as separate answers (v402): grouping would make a 10-word clash group
-  '2486|64106|law_and_order', // jail / jailer in law and order: as above (v402)
 ]);

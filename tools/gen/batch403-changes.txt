@@ -1,0 +1,69 @@
+Library batch v403: one word in one sense stored as two roots (apple/apples) merged into one entry with a `form` alias (ISSUES.md I23; DESIGN-entries.md
+3.7 rule A), plus Simon's prison/jail addition. Approved by Simon 2026-11-19. Script tools/gen/batch403.mjs (1,367 library changes, library v403); one line
+per pair in tools/gen/batch403-review.txt. No entry deleted, no entry added. Not committed.
+
+== Input and outcome ==
+495 pairs (380 dup? of the v400 kin pass, tools/gen/kin400/dups.txt; 115 dup? of the v399 pilot), 462 clusters (chains such as washer/washers, hieroglyph(s)).
+  439  merged: the other entry is now aliasOf the root, aliasKind form, same id
+   30  skipped, same text: a cluster's second entry of the word (pot [container], lamb [meat], matches [smoking], washer [tap] ...); a form alias cannot
+       have the root's text. These are same-text duplicates (some another sense) for a hand look; kin unchanged
+   17  skipped, other sense or not a form: spike (volleyball), antique (adjective), hieroglyphic (adjective) x2, hieroglyphics (derived word),
+       dominoes/quoits (the game vs one piece), knitting needles, bonnie/bonny (spelling pair), nubbly/nubby, tiebreak/tiebreaker, animatronics,
+       streamer (flag), ornament (decor vs baubles), name tag (gift tag), yams (US sweet potatoes), terraces (Inca farming)
+    6  skipped, the form is the theme's name: bat/bats, snake/snakes, microbe/microbes, egg/eggs, dumpling/dumplings, fossil/fossils (themes "bats",
+       "snakes" ...): merged, the alias would sit in its own-named theme (is-theme-name warning). Left as two entries
+    2  skipped, both have aliases: bobby pin/bobby pins (hair grip, Kirby grip / Kirby grips), thumbtack/thumbtacks (drawing pin / drawing pins)
+    1  skipped, flags differ: keelhaul (adult) / keelhauling (not): a merge would take keelhauling out of the family export
+
+Root choice: clearly more links (at least 2x and 3 more), else better known (lower familiarity), else the one with aliases, else the base form.
+Merges: 642 links moved to the root at the alias's typicality (627 with use = the alias, so the theme shows the form with its own part of speech and
+familiarity; 15 with show = the alias's shown text); 2 alias links dropped where both forms were in one theme (firecrackers in fire_blank, shown
+"crackers"; foothill in foot_blank, shown "hill": the root's "cracker" and "hills" stay); 71 synonym-group places moved to the root; 4 aliases
+re-pointed (cotton wool, sprouts, beer mats, mangetout); 41 name allowances (nameOkIn) on new aliases where their text holds a theme-name word in a root
+theme (as existing form aliases do: egg sandwich); kin moved to the roots; tm (beavertails) and sensitive (spirituals) made as strict as the root.
+16 roots and aliases have different region tags (kept on each; e.g. crumpet [UK] root, crumpets alias; trash bags [US] root, trash bag alias).
+Status: 924 entries set to "rev" (both entries of every merge and of the 17 sense skips; prison, prisoner, jail, jailer).
+
+== Simon's addition: prison/prisoner, jail/jailer ==
+The v402 allow keys 2485|33709|law_and_order and 2486|64106|law_and_order are removed from js/family-allow.js (axes/axé kept). law_and_order has no
+inmate/convict group, so prisoner 33709 and jailer 64106 joined its group [prison, jail] (rule B: without a group they are family-pair warnings), and kin
+prison/prisoner and jail/jailer is set. Clash group (full library, as clash-big counts): 10 words (prison, gaol*, jail, prisoner, jailer, penitentiary,
+slammer, clink, correctional facility, clinker); in the family export: 5 (prison, jail, gaol, prisoner, jailer).
+
+== Checks ==
+apply 1,367 library changes, library v403 (2026-11-19 15:46); rerun 0 changes; npm test 49 pass; strict full export exit 0 (62,672 entries), case lint 0;
+style-case.mjs and propword-exceptions.mjs 0 changes; Checks errors 0, warnings theme-name 3, long 5, maybe-duplicate 1, family-pair 0, kin-bad 0,
+family-twice 0, clash-big 3 -> 8. Info: alias-fullname 7 -> 44, family-kin 560 -> 502, overlap 4922 -> 4930.
+clash-big (full library) after: kebab 14 (kebabs*, gyros* joined; was 11), peel 11 (peels* joined: pot and peel were "too big" in v400 and not kin),
+prison 10 (Simon), marijuana 10 (as before), lead vocal 9 (lead vocals*), pot [cookware] 10 (pots*: potter, pottery ... pot), ghost 10 (as before),
+counter 10 (counters*: token, count, countess ...). The merges join what were "too big: left unlinked" pairs in v400 (pot, kebab, peel, lead vocal, gyro,
+counter); the brief said merge them anyway.
+
+== Family export against the committed v402 file ==
+The committed v402 file equals the in-memory export before the changes. 61,027 -> 61,032 entries. 5 rows added: strobe lights 13883 (row 13449),
+fleas 20952 (row 19704), jaywalking 33651 (row 31197), antlers 45162 (row 41966), lucky numbers 45378 (row 41975). Each was linked only in an adult
+theme (nightclub_words, black_death, crimes, hunting_words, lottery_words), so it was not in the family export; as a form alias it follows its root.
+So rows after 13448 shift by 1 to 5. No row removed.
+435 rows became form aliases (root column set, form flag 32); no other flags or familiarity changed.
+Links 107,351 -> 109,626 (an alias row lists its root's themes; the root lists the alias's themes). 16,679 rows changed link count; link positions shift
+from row 87 on (16,673 ranges, up to +2,268 at the end): every link index after row 86 must be re-read.
+What players see (root rows, theme + shown text): 2 answers gone (fire_blank "crackers", foot_blank "hill"; their other form stays), none new.
+12 difficulty changes where a form's own familiarity differs from the root's: crumpets (british_food) 2.7 -> 3, meat (blank_ball) 1.7 -> 1, kneading
+(pottery_words) 2.7 -> 3, icicles (signs_of_winter) 1.7 -> 2, cuff (hand_blank) 2 -> 1.7, bumper (boat_types) 4.7 -> 4.4, crab (blank_cake) 2.7 -> 2,
+empanadas (argentinian_food) 1.7 -> 2.4, candles (birthdays) 1.7 -> 1, snow globes (collecting_hobbies) 2.4 -> 2.7, monitors (recording_studio_words)
+3.4 -> 2.7, turtle (pigeons_and_doves) 2.7 -> 2. Typicality unchanged everywhere.
+Clash: words with a clash id 13,564 -> 13,105; ids 4,865 -> 4,636; sizes 8: 108 -> 104, 9: 0 -> 2, 10: 1 -> 2, 11: 1 -> 1, 14: 0 -> 1 (kebab 14,
+peel 11, ghost 10, counter 10, pot 9, lead vocal 9).
+
+Notice DRAFT for _WS_ (NOT SENT), covering v402 and v403:
+  Library v402 and v403. Export: lib.version 403; 61,032 entries (v401 61,024: +3 in v402, +5 in v403). Re-pin if you pin by index.
+  v402: data fixes from the v400 kin review, plus two words back in a theme. New rows: prisoner (row 31,235), jailer (58,883) and "axe" (the spelling
+  alias of "axé"). Link changes: pin (fastening) leaves banking_words and PIN joins it; hawkish leaves words_for_cold; reading -> Reading (town, type
+  place) in places that are also words; atomic -> "atomic family" (shown "atomic") in family and friends; prisoner and jailer in law and order. Text
+  changes: Reading, axé, atomic family.
+  v403: 439 same-word pairs (apple/apples, egg-style plurals, knead/kneading) are now one entry with a form alias (flag 32, root column set; same rows).
+  The root lists the alias's themes and shows the alias's text there through the link's shown text, so what players see is unchanged except: fire_blank
+  loses "crackers" (keeps "cracker"), foot_blank loses "hill" (keeps "hills"), and 12 links change difficulty a little. 5 new rows (strobe lights,
+  fleas, jaywalking, antlers, lucky numbers: before only in adult themes, now form aliases): rows after 13,448 shift by 1 to 5. Link counts change for
+  16,679 rows, so link positions move almost everywhere. prisoner and jailer are now grouped with prison and jail in law and order. Clash groups
+  over 8: kebab 14, peel 11, ghost 10, counter 10, pot 9, lead vocal 9 (groups of 8: 108 -> 104).
