@@ -1,0 +1,64 @@
+Library batch v402: the data errors of ISSUES.md I24 (seen by the v400 kin reviewers, tools/gen/kin400/notes.md) checked one by one, and prisoner 33709 /
+jailer 64106 linked into law_and_order (no theme since v398). Approved by Simon 2026-11-19. Script tools/gen/batch402.mjs (21 library changes, library v402).
+No entry deleted; one new alias entry (axe 67950). Not committed.
+
+== I24 items: verdict and change ==
+- silky 14822 (gloss "long-haired terrier", touch_words, texture_words): WRONG GLOSS. The links are right (the adjective); the gloss came from the entry
+  "Silky terrier" (shown "silky" in terriers). Fix: gloss cleared (no other entry has the text "silky").
+- pin 25002 [fastening] in banking_words: WRONG SENSE. Fix: unlinked from banking_words (typicality 2). PIN 29221 [bank code] (acronym entry, linked only in
+  acronyms) joins banking_words at typicality 2: no new entry needed.
+- "65890 atomic": the id is wrong (65890 is "bookies", betting shop, betting_words: fine). The entry is atomic 64815, gloss "atomic", in family_and_friends: WRONG.
+  It stood next to nuclear family 3942 (shown "nuclear"). Fix: it is the "atomic family" (a dated synonym of nuclear family): text "atomic family", shown
+  "atomic" in family_and_friends, gloss cleared, familiarity 3 -> 4, typicality 2 -> 4, new synonym group [nuclear family, atomic family] in family_and_friends;
+  kin link to atom 39502 removed (it belonged to the adjective). To judge: drop it from the theme instead if Simon does not want a rare synonym there.
+- hawkish 39967 in words_for_cold: WRONG SENSE (hawkish = aggressive). Fix: unlinked from words_for_cold; stays in hidden_birds (hawk), typicality 4.
+- sleep 28696 in hidden_names: FINE. It hides "Lee" (s-LEE-p), like compete (Pete), broken (Ken), vocal (Val?) etc. in that theme.
+- set 62396 "French seven" in sounds_like_a_number: FINE. The gloss is the number the word sounds like, as its siblings sank [French five] and dry [German three];
+  "set" sounds like French "sept" (seven). Nothing changed.
+- axe 51795 (Latin music): FIX, rule 8 (Oxford prints axé). Root text now "axé"; new spelling alias "axe" 67950 (gloss "music", familiarity 5, no links). Kin link
+  axé / axes 28814 removed (a different written word now; it also would have made a 9-word clash group), allow-listed. The other axe entries (tool, weapon, guitar)
+  are untouched. Not done (out of scope): other plain Latin-music names that may carry accents (norteno, tropicalia, danzon, forro, ...), to check against rule 8.
+- Bobcats 61496 as a current NBA team: FINE. nba_teams deliberately holds former teams at typicality 5 (SuperSonics, Bullets, Buffalo Braves, Rochester
+  Royals, Bobcats), with groups pairing them with the current names. Nothing changed.
+- reading 50087 in places_that_are_also_words: FIX (capital rule, shown text). It is the town: text "Reading", type place, familiarity 1 -> 3, typicality 1 -> 3
+  (like Rugby, Bury); gloss "town" kept (the reading [pastime] entry 16529 has the lowercase text). Its kin links to read/readers are unchanged.
+- chattering 50912 glossed "cat", chat 28156: FINE. cat_behaviors glosses every member "[cat]" (scratching, marking ...); chattering is the cat's teeth-chatter
+  and the only entry with that text. chat is a plain word in the wordplay themes rhymes_with_cat and animals_plus_a_letter (cat + h), single entry, no gloss needed.
+- object 26310 (grammar) / 28788 (thing), mine 26416 (pronoun) / 31788 (pit): FINE. Different senses, each with its own gloss and themes (the data model
+  keeps one entry per sense); object's two entries share the same kin and so one clash group.
+- entries without a gloss: polis 20373 "city-state", mumming 20995 "folk play", livery 20841 "servants' uniform" added (sense unclear; livery also has the
+  other senses stable / paint scheme). chess 65019 [Southern custard] (pies_and_tarts) already has a gloss: FINE.
+
+== prisoner and jailer into law_and_order ==
+- prisoner 33709: typicality 2 (as jail, criminal, defendant; inmate and convict are not in this theme). jailer 64106: typicality 3 (as sheriff, constable).
+- No synonym group: inmate, convict, prison guard and warden are not members of law_and_order (only prison_words has them), and grouping prisoner/jailer with
+  prison/jail (needed so prison/prisoner and jail/jailer are not family-pair) would join prison_words' clash group (prison, jail, gaol, clinker, penitentiary,
+  slammer, clink, correctional facility: 8) to 10 words, above the limit 8. So the two family pairs are allow-listed in js/family-allow.js for law_and_order
+  (2485|33709|law_and_order, 2486|64106|law_and_order): prison and prisoner, jail and jailer can meet in one level. For Simon: or group them and accept a 10 group.
+
+== Not in I24, found on the way (not changed) ==
+- bath 27983 [tub] is linked in places_that_are_also_words (and wet_things): wrong sense; Bath 16586 [English city] exists and would fit. Likewise mold [fungus]
+  30330 there (Mold the Welsh town?).
+
+== Checks ==
+apply 21 library changes, library v402 (2026-11-19 15:25); rerun 0 changes; npm test 49 pass; strict full export exit 0, case lint 0; style-case.mjs and
+propword-exceptions.mjs 0 changes; Checks errors 0, warnings theme-name 3, long 5, maybe-duplicate 1, clash-big 3, family-pair 0, kin-bad 0.
+Info changes: family-kin 558 -> 560 (suggestions), orphan 134 -> 132 (prisoner, jailer linked).
+
+== Family export against the committed v401 file ==
+61,024 -> 61,027 entries. Added rows: prisoner 33709 (row 31235), jailer 64106 (row 58883), axe 67950 (spelling alias, last row 61026): 29,789 existing rows
+change index (everything after row 31235). Link changes (theme:typicality):
+  pin 25002: fastenings, banking_words -> fastenings only      PIN 29221: acronyms -> acronyms, banking_words (1.7)
+  hawkish 39967: words_for_cold, hidden_birds -> hidden_birds   Reading 50087: places_that_are_also_words 1 -> 3
+  atomic family 64815: family_and_friends 2.7 -> 4              prisoner 33709: law_and_order 1.7 (new row)
+  jailer 64106: law_and_order 2.7 (new row)                     axe 67950: latin_music_styles 5 (new row, alias of axé)
+Texts: reading -> Reading, axe -> axé, atomic -> atomic family. Other columns: Reading type 0 -> 2 (place), familiarity 1 -> 3; atomic family familiarity 3 -> 4;
+root pointers of aliases follow the index shifts. Clash: words with a clash id 13,565 -> 13,564, ids 4,865 -> 4,865; sizes 7:83 -> 84, 8:109 -> 108 (above 8:
+11 and 10 only, as before).
+
+Notice DRAFT for _WS_ (NOT SENT):
+  Library v402: data fixes from the v400 kin review, plus two words back in a theme. Export: lib.version 402; 61,027 entries (+3: prisoner, jailer, and
+  "axe" the spelling alias of "axé"). Entry indices shift: rows after 31,234 move by one or two (prisoner is row 31,235; jailer 58,883; axe the last row).
+  Link changes: pin (fastening) leaves banking_words and PIN joins it; hawkish leaves words_for_cold; reading -> Reading (town, type place) in places that are
+  also words; atomic -> "atomic family" (shown "atomic") in family and friends; prisoner and jailer in law and order. Text changes: Reading, axé, atomic
+  family. Clash: groups of 8 109 -> 108. Please re-pin if you pin by index.
