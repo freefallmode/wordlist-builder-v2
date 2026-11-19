@@ -1,0 +1,80 @@
+Pattern: two themes that collect the same kind of words become one (the twin merged into the theme with sub-themes, the place name or the better ident; that one keeps its id, name and folder); a twin that mixed two sharper themes is cut so its members stay in the sharper one. Parent topic / "X words" child pairs and habitat / "X animals" pairs are sub-themes and stay.
+A. merges (9):
+  pond_life "pond life" -> pond "pond": 42 links; added 12: terrapin 1180 4, minnow 1238 3, coot 8198 3, great diving beetle 9764 4, freshwater shrimp 9769 4, water vole 9770 4, mosquito larva 9771 3, hydra 9774 4, amoeba 9775 3, paramecium 9776 4, caddisfly larva 9777 4, mayfly nymph 9778 4; better rating taken 11: heron 1086 3 -> 2, goldfish 1214 3 -> 1, carp 1223 3 -> 2, koi 1239 3 -> 2, dragonfly 1358 2 -> 1, duckweed 1810 3 -> 2, algae 8966 3 -> 2, pond snail 9765 3 -> 2, bulrush 9767 4 -> 3, backswimmer 9773 5 -> 4, water strider 32103 3 -> 2; skipped 0: none; groups 3: diving beetle / great diving beetle; caddisfly / caddisfly larva; mayfly / mayfly nymph; now unlinked 0: none; pond_life deleted; pond now 56 words
+  airport_words "airport words" -> airport "airport": 45 links; added 16: red-eye 2746 4, standby 2757 4, holding pattern 2765 5, boarding 47146 1, delay 47149 2, luggage 47150 1, landing strip 47152 3, helipad 47153 4, marshaller 47157 4, pushback 47158 4, de-icing 47159 4, ILS 47160 5, overbooked 47161 4, transit 47162 3, valet 47163 5, skybridge 47164 5; better rating taken 7: immigration 2727 3 -> 2, wind sock 2762 3 -> 2, customs 33969 3 -> 2, security 47142 2 -> 1, taxiway 47147 4 -> 3, lounge 47148 3 -> 2, concourse 47155 4 -> 3; skipped 1: airport shuttle 46895 (shuttle bus 46881 is there); groups 2: runway / landing strip; apron / tarmac; now unlinked 0: none; airport_words deleted; airport now 51 words
+  movie_theater_words "movie theater words" -> movie_theater "movie theater": 40 links; added 13: front row 11204 3, intermission 11215 3, sold out 11216 3, ticket booth 12471 3, drive-in 12805 3, midnight screening 12806 4, armrest 12808 4, projectionist 12815 3, flicks 12816 3, silver screen 12818 3, back row 12819 3, pick and mix 12820 4, cinemagoer 12822 5; better rating taken 2: ticket stub 12812 3 -> 2, double feature 12821 4 -> 3; skipped 2: recliner 341 (reclining seat 57605 is there), movie theater 2477 (the theme's own name); groups 1: box office / ticket booth; now unlinked 0: none; movie_theater_words deleted; movie_theater now 50 words
+  restaurant_words "restaurant words" -> restaurant "restaurant": 37 links; added 14: dress code 13881 3, bar tab 13886 4, table 20017 2, takeout 20018 3, specials 20019 2, gratuity 20032 3, walk-in 20035 4, on the house 20036 3, prix fixe 20037 4, comp 20040 5, table d'hôte 20041 5, degustation 20042 5, covers 20043 5, eighty-six 20044 5; better rating taken 1: tip 20015 2 -> 1; skipped 1: kids menu 20022 (kids' menu 38190 is there); groups 4: tip / gratuity; prix fixe / table d'hôte; tasting menu / degustation; specials / specials board; now unlinked 1: kids menu 20022; restaurant_words deleted; restaurant now 65 words
+    hospital: nurses station 60575 unlinked (was 3): nurses' station 15307 (the usual spelling) comes in
+  hospital_words "hospital words" -> hospital "hospital": 36 links; added 18: intensive care 3491 2, hospice 3506 4, intern 4152 4, consultant 4154 3, admission 15286 3, outpatient 15288 3, inpatient 15289 3, matron 15290 3, porter 15292 4, resident 15293 4, radiographer 15294 4, isolation room 15298 4, visiting hours 15302 2, charge nurse 15303 4, code blue 15304 4, rounds 15305 4, sluice room 15306 5, nurses' station 15307 3; better rating taken 3: triage 3492 4 -> 3, ward 15277 2 -> 1, hospital gown 15301 3 -> 2; skipped 1: patient 15282 (patient 3451 is there); groups 2: intensive care / ICU; rounds / ward round; now unlinked 0: none; hospital_words deleted; hospital now 66 words
+    art_gallery: dealer 45206 unlinked (was 4): the casino dealer (gloss "card handler"); the art dealer 12152 shown "dealer" comes in
+  art_gallery_words "art gallery words" -> art_gallery "art gallery": 40 links; added 27: museum 2472 2, masterpiece 6305 3, magnum opus 6306 5, chef-d'oeuvre 6307 5, plinth 6588 4, provenance 6894 4, collection 12136 2, audio guide 12138 3, catalog 12140 3, gift shop 12144 3, docent 12145 5, wall label 12146 3, display case 12147 3, security guard 12148 4, permanent collection 12149 3, touring exhibition 12150 4, biennale 12151 5, art dealer 12152 3 shown "dealer", patron 12153 4, acquisition 12154 4, conservator 12155 4, restoration 12156 4, white cube 12157 5, portrait gallery 12158 4, opening night 12159 4, guest book 12160 4, cloakroom 12161 4; better rating taken 2: curator 6325 2 -> 1, auction 12137 4 -> 2; skipped 1: gallery 6301 (the theme's own name); groups 2: masterpiece / chef-d'oeuvre / magnum opus; vernissage / private view / opening night; now unlinked 0: none; art_gallery_words deleted; art_gallery now 63 words
+  religious_buildings "religious buildings" -> places_of_worship "places of worship": 36 links; added 3: zendo 57662 5, chantry 57663 5, gompa 57664 5; better rating taken 4: convent 4281 4 -> 3, cloister 6566 5 -> 4, abbey 6667 3 -> 2, hermitage 34291 5 -> 4; skipped 3: minaret 6556 (a part of a mosque (stays in mosque parts)), bell tower 14001 (a part of a church (stays in church parts)), baptistry 57661 (baptistery 14011 is there (other spelling)); groups 0: none; now unlinked 1: baptistry 57661; religious_buildings deleted; places_of_worship now 40 words
+  thread_crafts "thread crafts" -> needlework "needlework": 10 links; added 0: none; better rating taken 0: none; skipped 2: tatting 5874 (lace, in yarn and thread crafts), kumihimo 5911 (braiding, in yarn and thread crafts); groups 0: none; now unlinked 0: none; thread_crafts deleted; needlework now 13 words
+  national_instruments "national instruments" -> folk_instruments "folk instruments": 48 links; added 12: cimbalom 6046 4, nyckelharpa 6047 4, duduk 10573 4, steel drum 10608 2, steelpan 10609 4, gayageum 38529 4, bandoneon 38531 3, hardanger fiddle 38532 4, kantele 38533 4, kokle 38534 5, cajón 38535 3, berimbau 38536 3; better rating taken 12: harp 282 2 -> 1, ukulele 286 3 -> 2, sitar 289 2 -> 1, didgeridoo 6032 3 -> 1, tabla 6036 3 -> 2, bouzouki 10538 3 -> 2, erhu 10548 4 -> 3, shamisen 10659 3 -> 2, santoor 10663 5 -> 4, saz 10668 5 -> 4, quena 10671 5 -> 4, cuatro 10673 5 -> 4; skipped 0: none; groups 2: steel drum / steelpan; fiddle / hardanger fiddle; now unlinked 0: none; national_instruments deleted; folk_instruments now 71 words
+B. duplicates made spelling aliases: kids menu 20022 -> spelling alias of kids' menu 38190 (fam 2 kept, no region); nurses station 60575 -> spelling alias of nurses' station 15307 (fam 4 kept, no region); baptistry 57661 -> spelling alias of baptistery 14011 (fam 4 kept, no region)
+Listed, not changed:
+  parent topic / its "X words" child: fitness / fitness words (J 0.36), sleep / sleep words (0.34), religion / religion words (0.31), archaeology / archaeology words (0.31), pirates / pirate words (0.16): sub-themes, kept
+  habitat or place / "X animals", "X features": savanna (0.46), zoo (0.38), rainforest, desert, woodland animals; mountain (0.47), garden (0.38), desert, woodland features: a kind within the place, kept
+  X / "X words" with no shared words (wines / wine words, dinosaurs / dinosaur words, card games / card game words, ...): different sets, kept
+  days_of_the_week / weekdays and the other subset pairs: kept (not re-judged)
+library changes 517; status set to rev 330; entries touched 338
+Checks: changed kinds: info:clash-large 59 -> 60, info:overlap 4930 -> 4927
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 60
+Committed family export equals the in-memory export of v407 before the changes: yes
+Themes 3233 -> 3224; gone restaurant_words, pond_life, religious_buildings, national_instruments, airport_words, hospital_words, thread_crafts, art_gallery_words, movie_theater_words; new none; theme indexes shift from index 200 (kitchen_brigade)
+Entries 61029 -> 61029; first row whose entry changed: none; added none; removed none
+Row text changes: none; flags changed: kids menu 20022, baptistry 57661, nurses station 60575
+Links 109503 -> 109262; rows whose link count changed: 243
+Link-index shifts: from row 153 (turkey 156) on, link positions move
+Links by theme + shown text + row: gone 362 (pond_life 48, national_instruments 53, movie_theater_words 44, religious_buildings 36, art_gallery_words 41, airport_words 47, hospital_words 40, restaurant_words 41, thread_crafts 11, art_gallery 1), new 121 (pond 12, art_gallery 28, airport 16, hospital 18, folk_instruments 13, movie_theater 13, restaurant 16, church_parts 1, places_of_worship 4), rating changed 45
+  rating: folk_instruments: "harp" (row of 282) 1.7/2 -> 1/1
+  rating: folk_instruments: "ukulele" (row of 286) 2.7/3 -> 2/2
+  rating: folk_instruments: "sitar" (row of 289) 2.7/2 -> 2.4/1
+  rating: pond: "heron" (row of 1086) 2.7/3 -> 2/2
+  rating: pond: "goldfish" (row of 1214) 2.4/3 -> 1/1
+  rating: pond: "carp" (row of 1223) 2.7/3 -> 2/2
+  rating: pond: "koi" (row of 1239) 2.7/3 -> 2/2
+  rating: pond: "dragonfly" (row of 1358) 1.7/2 -> 1/1
+  rating: pond: "duckweed" (row of 1810) 3/3 -> 2.7/2
+  rating: airport: "immigration" (row of 2727) 2.7/3 -> 2/2
+  rating: airport: "wind sock" (row of 2762) 3/3 -> 2.7/2
+  rating: airport: "windsock" (row of 2763) 3/3 -> 2.7/2
+  rating: hospital: "triage" (row of 3492) 3.7/4 -> 3/3
+  rating: places_of_worship: "convent" (row of 4281) 3.7/4 -> 3/3
+  rating: folk_instruments: "didgeridoo" (row of 6032) 3/3 -> 2.4/1
+  rating: folk_instruments: "didjeridu" (row of 6033) 4.4/3 -> 3.8/1
+  rating: folk_instruments: "tabla" (row of 6036) 3.7/3 -> 3.4/2
+  rating: art_gallery: "curator" (row of 6325) 2.7/2 -> 2.4/1
+  rating: places_of_worship: "cloister" (row of 6566) 4.7/5 -> 4/4
+  rating: places_of_worship: "abbey" (row of 6667) 2.7/3 -> 2/2
+  rating: pond: "algae" (row of 8966) 2.7/3 -> 2/2
+  rating: pond: "snail" (row of 9765) 3/3 -> 2.7/2
+  rating: pond: "bulrush" (row of 9767) 3.7/4 -> 3/3
+  rating: pond: "backswimmer" (row of 9773) 5/5 -> 4.7/4
+  rating: folk_instruments: "bouzouki" (row of 10538) 3.7/3 -> 3.4/2
+  rating: folk_instruments: "erhu" (row of 10548) 4/4 -> 3.7/3
+  rating: folk_instruments: "shamisen" (row of 10659) 3.7/3 -> 3.4/2
+  rating: folk_instruments: "santoor" (row of 10663) 5/5 -> 4.7/4
+  rating: folk_instruments: "saz" (row of 10668) 5/5 -> 4.7/4
+  rating: folk_instruments: "quena" (row of 10671) 5/5 -> 4.7/4
+  rating: folk_instruments: "cuatro" (row of 10673) 5/5 -> 4.7/4
+  rating: art_gallery: "auction" (row of 12137) 3.4/4 -> 2/2
+  rating: movie_theater: "ticket stub" (row of 12812) 2.7/3 -> 2/2
+  rating: movie_theater: "double feature" (row of 12821) 3.7/4 -> 3/3
+  rating: hospital: "ward" (row of 15277) 2/2 -> 1.7/1
+  rating: hospital: "gown" (row of 15301) 2.4/3 -> 1.7/2
+  rating: restaurant: "tip" (row of 20015) 1.7/2 -> 1/1
+  rating: pond: "dragonflies" (row of 31505) 2.7/2 -> 2.4/1
+  rating: pond: "water strider" (row of 32103) 3.7/3 -> 3.4/2
+  rating: airport: "customs" (row of 33969) 2.7/3 -> 2/2
+  rating: places_of_worship: "hermitage" (row of 34291) 4.7/5 -> 4/4
+  rating: airport: "security" (row of 47142) 1.7/2 -> 1/1
+  rating: airport: "taxiway" (row of 47147) 3.7/4 -> 3/3
+  rating: airport: "lounge" (row of 47148) 2.7/3 -> 2/2
+  rating: airport: "concourse" (row of 47155) 3.7/4 -> 3/3
+  gone (theme kept): art_gallery: "dealer" (row of 45206)
+Clash (family export): words with an id 13149 -> 13159; ids 4602 -> 4606; sizes before 2:2830 3:886 4:371 5:204 6:105 7:79 8:69 9:21 10:16 11:11 12:9 14:1; after 2:2834 3:885 4:372 5:204 6:105 7:79 8:68 9:22 10:16 11:11 12:9 14:1
+  groups over 8 after: 59
+new issues: none
