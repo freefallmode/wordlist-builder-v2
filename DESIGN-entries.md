@@ -111,6 +111,34 @@ What the player is asked to recognise is the **full term**, so the entry, its ra
 - **Shown text** repeats across entries more often now (several members show `board`); the generator treats two words with the same shown text as clashing in one level, as for synonym groups.
 - Done in the library: all compound themes (v274 pilot, then the other 48 in v275: 130 links dropped, 923 moved to existing full terms, 703 new full-term entries, 394 emptied bare words deleted). Tools: `tools/gen/compound-make.mjs`, `BRIEF-compound.md`, `compound-apply.mjs`; modifiers: `BRIEF-modifier.md`, `compound-apply.mjs --prefix m`.
 
+### 3.7 Word families (adopted 2026-11-19, Simon; I22)
+
+The game advised on this rule (`_WS_`, 2026-11-19). The draft and its review are in `tools/gen/word-family-spec-draft.md`.
+
+The rule exists because a player must never be able to pair two words just because they look alike. Two same-family words in one group of a level give the answer away. Split across two groups, they make an unfair ambiguity.
+
+- **One family:** a word and its inflection or derivation, or two words from one root (buck/bucks, vote/voter, gamer/gaming, joy/joyful, murk/murky, host/hostess), plus pet and short forms (dad/daddy, tum/tummy, pup/puppy). These are **not** one family:
+  - words that only share letters (tea/teach, earl/early, ban/banishment);
+  - compounds (fish/goldfish), which the Overlap rule (section 4) covers.
+- **A. Same word, same sense** (a grammatical form): one entry; the other text is a `form` alias. A theme shows the form it needs through `show` / `use`.
+- **B. Related but different words** (gamer/gaming, cork/corked, pup/puppy, mom/mommy):
+  - Both may be linked in a theme only inside **one synonym group**. Otherwise keep the better one.
+  - Generation keeps one.
+- **C. The form is the point:** separate answers with no group. This applies in:
+  - locked themes (`themeLocked`: wordplay, compound, language-specific);
+  - themes marked `familyOk` by hand. That covers male/female titles (royal titles, peerage ranks), grammar themes (tenses, comparatives, plurals as a theme) and anagram themes. Generation never sets `familyOk`.
+- **Across themes (kin):** one-family entries in different themes (joy in emotions, joyful in happy words) are related by a library-wide **kin** relation. A check suggests pairs and a person or agent confirms them. The export joins kin into the `clash` column with the synonym groups (union, transitive), so kin never meet in a level and the export format is unchanged. The game reads clash only as "keep apart in a level" (DynGenerator.cs), so groups and kin need not be told apart.
+- **Group size:** clash is one id per entry, so groups and kin merge across themes. An exported clash group over **8** members is a warning (`clash-big`): it can starve a theme of words. Instead of merging two groups into one large one, unlink the weaker family member (v398: prisoner, jailer, trooper, mariner).
+- **Checks:**
+  - `family-pair` (warn): two separate entries of one family in a theme, not in one group. It does not fire in locked or `familyOk` themes or for pairs on an allow list.
+  - `family-kin` (info): one-family entries in different themes with no kin relation.
+  - `clash-big` (warn): see Group size.
+  - Detection is by suffix stripping (as `tools/gen/famscan.mjs`), with a stop list and a list of pet forms.
+- **Generation prompt** (js/ai.js, after Overlap): never list two forms of the same word; of words that share a root but are different words, list only the one that fits the theme best; a player should never be able to pair two members just because they look alike; wordplay themes are the exception.
+- **State:**
+  - v398 fixed the in-theme pairs found at v397: 119 grouped, three families unlinked, buck's wrong-sense link dropped, onion ring made a form alias.
+  - Not yet done: the prompt text, the checks, the `familyOk` setting, kin in the data and export, and the kin pass.
+
 ## 4. Splitting themes
 
 Many themes can yield new themes of 4 or more words, especially once forms are queryable (`weather`: 58 nouns and 8 adjectives could give a `weather conditions` theme of adjectives and a `rough weather` theme of storms). Rules:

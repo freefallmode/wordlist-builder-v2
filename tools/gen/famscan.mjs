@@ -1,7 +1,7 @@
-// Word-family scan: pairs of separate entries (different alias families) linked in one theme whose texts share a root by suffix stripping (joy/joyful, gamer/gaming). Rough: catches unrelated words too. Usage: node tools/gen/famscan.mjs <out.tsv>  (columns: theme, L if locked, derived|siblings, word a, word b, GROUP if in one synonym group, glosses)
+// Word-family scan: pairs of separate entries (different alias families) linked in one theme whose texts share a root by suffix stripping (joy/joyful, gamer/gaming). Rough: catches unrelated words too. Usage: node tools/gen/famscan.mjs <out.tsv>  (columns: theme, L if locked (themeLocked: wordplay, compound or language theme, or t.locked), derived|siblings, word a, word b, GROUP if in one synonym group, glosses, id a, id b)
 import fs from 'node:fs';
 import { parseProject } from '../../js/store.js';
-import { reindex } from '../../js/model.js';
+import { reindex, themeLocked } from '../../js/model.js';
 const P = parseProject(fs.readFileSync(new URL('../../data/wordlist-en.project.json', import.meta.url),'utf8')); reindex(P);
 const SUF = ['fulness','lessness','ousness','iness','ness','ments','ment','ings','ing','ers','er','est','ed','ful','ous','ious','less','ish','ily','ly','ies','es','s','y','ic','al','ical','ion','ions','ity','ive','able','ible','ist','ists','ism'];
 SUF.sort((a,b)=>b.length-a.length);
@@ -22,8 +22,8 @@ for (const t of P.themes) {
     let kind=null;
     if(l.st.has(s.w)) kind='derived'; else { for(const x of s.st) if(x!==s.w&&x.length>=4&&l.st.has(x)&&x.length>=s.w.length-4){kind='siblings';break;} }
     if(!kind) continue;
-    res.push({t:t.id,locked:!!t.locked,kind,a:s.w,b:l.w,sense:[s.e.gloss||'',l.e.gloss||''],grp:inGroup(a.e,b.e)});
+    res.push({t:t.id,locked:themeLocked(P,t),kind,a:s.w,b:l.w,ia:s.e.id,ib:l.e.id,sense:[s.e.gloss||'',l.e.gloss||''],grp:inGroup(a.e,b.e)});
   }
 }
-fs.writeFileSync(process.argv[2], res.map(r=>[r.t,r.locked?'L':'',r.kind,r.a,r.b,r.grp?'GROUP':'',r.sense.join('|')].join('\t')).join('\n'));
+fs.writeFileSync(process.argv[2], res.map(r=>[r.t,r.locked?'L':'',r.kind,r.a,r.b,r.grp?'GROUP':'',r.sense.join('|'),r.ia,r.ib].join('\t')).join('\n'));
 console.log('pairs',res.length,'themes',new Set(res.map(r=>r.t)).size,'in groups',res.filter(r=>r.grp).length,'locked',res.filter(r=>r.locked).length);

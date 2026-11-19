@@ -1,6 +1,6 @@
 # Word-family rule: draft for review (I22, 2026-11-19)
 
-Status: DRAFT. Not in force. To be agreed by Simon (with the game's advice), then moved into DESIGN-entries.md, the generation prompt (js/ai.js) and a check (js/validate.js).
+Status: ADOPTED by Simon 2026-11-19 with cross-theme kin and the game's amendments; the rule in force is DESIGN-entries.md 3.7. Kept as the record of the draft and the game's review.
 
 ## 1. What counts as one word family
 

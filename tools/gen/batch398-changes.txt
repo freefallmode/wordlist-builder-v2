@@ -1,0 +1,197 @@
+Library v398 (tools/gen/batch398.mjs, 2026-11-19 12:53): 118 changes. Simon approved the word-family batch (review: tools/gen/batch398-review.txt)
+  with three changes: instead of merging groups, prisoner 33709 and jailer 64106 leave prison_words, trooper 4374 leaves military and war_words,
+  mariner 4382 leaves military, navy_words, naval_people and service_members.
+  Two entries of one word family linked in one theme (gamer/gaming) give the answer away in one group of a level, or make an unfair ambiguity
+  across two groups. Source: tools/gen/famscan.mjs on v397 (225 single-word pairs; its locked column now uses themeLocked) plus onion ring /
+  onion rings (a quick check of multi-word "X" beside "Xs").
+Checks: changed kinds none (0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, as v397; no new or gone issue messages), counted by the
+  script with validate() before and after. npm test 43 pass. node tools/export-game.mjs full <scratch> --strict exits 0 (62669 entries, case
+  lint 0, the same 10 same-text drops); tools/gen/style-case.mjs 0 changes (Checks errors 0 -> 0; case lint 0); tools/gen/propword-exceptions.mjs
+  0 changes (case lint 0); rerunning batch398.mjs prints 0 changes; node tools/export-game.mjs --strict exits 0.
+
+Counts (226 pairs): 1 form alias; 1 wrong-sense link dropped; 8 links removed (Simon's changes); 70 new groups; 31 pairs added to an existing
+  group; 7 merges of two groups; 3 pairs already joined by a group made earlier in the batch; 19 kept apart (wordplay or compound theme); 8 kept
+  apart (other); 24 not a family; 54 already grouped. No entry deleted, no entry added.
+  Entries left with no theme (not deleted, as instructed): prisoner 33709 and jailer 64106 (prison_words was their only theme).
+
+Decisions (why):
+  - Groups, not form aliases, for every pair of different words of one family (gamer/gaming, vote/voter, yuck/yucky, pet names such as
+    dad/daddy). A word already in a group of the theme brings the other into it; two groups are merged (7: special_vehicles tank/tanker,
+    sightseeing_words tour/tourist, words_for_mother mom/mommy, rock_band_lineup vocals/vocalist, fantasy sorcerer/sorceress, wizard_words
+    sorcery/sorcerer, coding_words code/coder). Groups are theme-local, but the export joins them into one clash id across themes.
+  - Different senses are grouped, not merged: knot/knots (rope, speed), shade/shades (sunglasses), mitt [baseball]/mitts (mittens).
+  - Kept apart: male/female titles in royal_titles and ranks_of_the_british_peerage (baron, prince, count, viscount); sleepy/sleeplessness in
+    sleep and sleep_words, and bubbly/bubble in things_that_pop (both words already in groups that a merge would join everywhere).
+  - Wordplay and compound themes (themeLocked, tkind wordplay or compound): no change, the form is the point.
+  - money_slang: buck [male animal] 10284 was linked there (typicality 1, wrong sense) beside bucks [dollars] 34023; the link goes, buck keeps
+    male_animals.
+  - onion ring 19289 becomes the form alias of onion rings 19053 (the plural is the root: it has all six links and is the name people use); its
+    own burger_toppings link (typicality 3) goes, the root's stays (typicality 3), so the theme still shows "onion rings". Not the usual
+    direction (plural alias of the singular); Simon accepted it.
+  - Simon's changes: prisoner and jailer leave prison_words (inmate, convict, prison guard stay; (inmate, prisoner, convict) -> (inmate, convict),
+    (jailer, prison guard) goes); trooper leaves military and war_words ((soldier, trooper, squaddie, digger, GI, grunt) loses trooper);
+    mariner leaves military, navy_words, naval_people, service_members (the sailor groups lose mariner). Cleanup by the app's unlinkEntry
+    (shown text, use, name allowance, group places; none had a shown text, use or allowance there).
+
+Script log (dry run; --apply made the same changes; a rerun prints 0 changes):
+  226 pairs; outcomes: {"already grouped":54,"new group":70,"not a family":24,"added to a group":31,"two groups merged":7,"keep apart (other)":8,"group made above":3,"unlinked (Simon)":8,"wrong-sense link dropped":1,"keep apart (wordplay)":19,"form alias":1}
+  
+  wine_words: cork 28014 / corked 53845: new group -> (cork, corked) (2 of 55 roots)
+  big_cats: lion 215 / lioness 7756: added to a group (lion, African lion, Asiatic lion, Barbary lion) -> (lion, African lion, Asiatic lion, Barbary lion, lioness) (5 of 33 roots)
+  dinosaur_words: extinct 10100 / extinction 1614: new group -> (extinct, extinction) (2 of 48 roots)
+  dinosaur_words: paleontology 6887 / paleontologist 1616: new group -> (paleontology, paleontologist) (2 of 48 roots)
+  baby_animals: pup 10133 / puppy 9273: new group -> (pup, puppy) (2 of 49 roots)
+  forestry_words: log 30135 / logger 28504: added to a group (woodcutter, logger, lumberjack, feller) -> (woodcutter, logger, lumberjack, feller, log) (5 of 40 roots)
+  forestry_words: feller 30249 / felling 30239: added to a group (woodcutter, logger, lumberjack, feller, log) -> (woodcutter, logger, lumberjack, feller, log, felling) (6 of 40 roots)
+  flower_parts: nectar 29523 / nectary 30434: new group -> (nectar, nectary) (2 of 35 roots)
+  hot_weather_words: scorcher 31452 / scorching 31439: added to a group (scorching, broiling) -> (scorching, broiling, scorcher) (3 of 42 roots)
+  mining_words: mine 31788 / miner 4148: added to a group (mine, pit) -> (mine, pit, miner) (3 of 47 roots)
+  mining_words: smelter 31787 / smelting 21812: new group -> (smelter, smelting) (2 of 47 roots)
+  mining_words: collier 31803 / colliery 31801: added to a group (coal mine, colliery) -> (coal mine, colliery, collier) (3 of 47 roots)
+  green_living_words: refill 15340 / refillery 32379: new group -> (refill, refillery) (2 of 36 roots)
+  maps_and_globes: cartography 2428 / cartographer 2412: added to a group (cartographer, mapmaker) -> (cartographer, mapmaker, cartography) (3 of 63 roots)
+  map_words: cartography 2428 / cartographer 2412: added to a group (cartographer, mapmaker) -> (cartographer, mapmaker, cartography) (3 of 33 roots)
+  flag_words: vexillology 37978 / vexillologist 37979: new group -> (vexillology, vexillologist) (2 of 35 roots)
+  hair_salon: stylist 33255 / styling 57478: added to a group (hairdresser, stylist) -> (hairdresser, stylist, styling) (3 of 37 roots)
+  commuting_words: commute 2931 / commuter 2662: added to a group (commuter, straphanger) -> (commuter, straphanger, commute) (3 of 47 roots)
+  sailing_words: knot 47467 / knots 47473: new group -> (knot, knots) (2 of 51 roots)
+  sightseeing_words: tour 2921 / tourist 48144: two groups merged (tour, guided tour) + (tourist, sightseer) -> (tour, guided tour, tourist, sightseer) (4 of 40 roots)
+  sightseeing_words: sightseer 48145 / sightseeing 2963: added to a group (tour, guided tour, tourist, sightseer) -> (tour, guided tour, tourist, sightseer, sightseeing) (5 of 40 roots)
+  special_vehicles: tank 3125 / tanker 49255: two groups merged (tank, main battle tank) + (tanker, tanker truck) -> (tank, main battle tank, tanker, tanker truck) (4 of 63 roots)
+  sight_words: vision 3309 / visible 14673: added to a group (vision, eyesight) -> (vision, eyesight, visible) (3 of 50 roots)
+  hearing_words: eavesdrop 14702 / eavesdropper 14731: new group -> (eavesdrop, eavesdropper) (2 of 49 roots)
+  smell_words: odor 14736 / odorless 14768: new group -> (odor, odorless) (2 of 43 roots)
+  four_humours: melancholy 4023 / melancholic 15554: added to a group (melancholy, melancholia, black bile) -> (melancholy, melancholia, black bile, melancholic) (4 of 13 roots)
+  four_humours: choler 15550 / choleric 15553: added to a group (yellow bile, choler) -> (yellow bile, choler, choleric) (3 of 13 roots)
+  sleep: bed 3666 / bedding 3722: added to a group (bedclothes, bedding) -> (bedclothes, bedding, bed) (3 of 62 roots)
+  nail_care: manicure 16238 / manicurist 33016: new group -> (manicure, manicurist) (2 of 40 roots)
+  sun_care: shade 16365 / shades 4953: added to a group (sunglasses, shades) -> (sunglasses, shades, shade) (3 of 36 roots)
+  mental_health_words: therapy 3468 / therapist 16379: added to a group (therapy, counseling) -> (therapy, counseling, therapist) (3 of 46 roots)
+  ways_of_crying: blub 17015 / blubber 50164: new group -> (blub, blubber) (2 of 29 roots)
+  terms_of_endearment: dear 32457 / dearest 32471: new group -> (dear, dearest) (2 of 43 roots)
+  terms_of_endearment: love 32459 / lover 32469: new group -> (love, lover) (2 of 43 roots)
+  terms_of_endearment: love 32459 / lovey 50294: added to a group (love, lover) -> (love, lover, lovey) (3 of 43 roots)
+  terms_of_endearment: babe 32460 / baby 50281: new group -> (babe, baby) (2 of 43 roots)
+  terms_of_endearment: duck 50279 / ducky 50290: new group -> (duck, ducky) (2 of 43 roots)
+  words_for_mother: mom 28997 / mommy 56619: two groups merged (mam, mom) + (mammy, mommy) -> (mam, mom, mammy, mommy) (4 of 17 roots)
+  words_for_father: dad 32381 / daddy 56632: added to a group (father, dad, da) -> (father, dad, da, daddy) (4 of 20 roots)
+  words_for_grandparents: gran 56644 / granny 32390: added to a group (grandmother, granny, nan, grandma) -> (grandmother, granny, nan, grandma, gran) (5 of 26 roots)
+  words_for_grandparents: nan 32391 / nanny 56648: added to a group (grandmother, granny, nan, grandma, gran) -> (grandmother, granny, nan, grandma, gran, nanny) (6 of 26 roots)
+  sad_words: teary 32718 / tearful 32705: new group -> (teary, tearful) (2 of 33 roots)
+  angry_words: wrath 3976 / wrathful 32742: new group -> (wrath, wrathful) (2 of 31 roots)
+  angry_words: fury 4019 / furious 32725: new group -> (fury, furious) (2 of 31 roots)
+  disgust_words: yuck 26555 / yucky 32869: new group -> (yuck, yucky) (2 of 39 roots)
+  disgust_words: revolted 32860 / revolting 32855: new group -> (revolted, revolting) (2 of 39 roots)
+  disgust_words: sickened 32858 / sickening 60918: new group -> (sickened, sickening) (2 of 39 roots)
+  disgust_words: nauseated 32861 / nauseating 32873: new group -> (nauseated, nauseating) (2 of 39 roots)
+  nicknames_for_workers: cop 4088 / copper 4089: new group -> (cop, copper) (2 of 15 roots)
+  election_words: vote 33286 / voter 33314: new group -> (vote, voter) (2 of 51 roots)
+  law_and_order: law 4183 / lawyer 4069: added to a group (lawyer, counsel) -> (lawyer, counsel, law) (3 of 92 roots)
+  law_and_order: felon 4243 / felony 4242: new group -> (felon, felony) (2 of 92 roots)
+  prison_words: prison 2485 / prisoner 33709: prisoner 33709 loses its prison_words link (typicality 1); its group (inmate, prisoner, convict) -> (inmate, convict)
+  prison_words: jail 2486 / jailer 64106: jailer 64106 loses its prison_words link (typicality 2); its group (jailer, prison guard) -> group gone (fewer than 2 left)
+  wrongdoers: felon 4243 / felony 4242: new group -> (felon, felony) (2 of 9 roots)
+  tax_words: tax 33285 / taxable 33988: added to a group (tax, levy) -> (tax, levy, taxable) (3 of 40 roots)
+  money_slang: buck 10284 / bucks 34023: buck 10284 loses its money_slang link (typicality 1)
+  military: marines 4372 / mariner 4382: mariner 4382 loses its military link (typicality 4); its group (sailor, jack tar, mariner, seaman) -> (sailor, jack tar, seaman)
+  military: troops 4390 / trooper 4374: trooper 4374 loses its military link (typicality 3); its group (soldier, trooper, squaddie, digger, GI, grunt) -> (soldier, squaddie, digger, GI, grunt)
+  navy_words: marines 4372 / mariner 4382: mariner 4382 loses its navy_words link (typicality 3); its group (sailor, jack tar, mariner, seaman) -> (sailor, jack tar, seaman)
+  naval_people: marines 4372 / mariner 4382: mariner 4382 loses its naval_people link (typicality 3); its group (sailor, seaman, mariner, jack tar) -> (sailor, seaman, jack tar)
+  service_members: marines 4372 / mariner 4382: mariner 4382 loses its service_members link (typicality 4); its group (sailor, seaman, mariner, jack tar) -> (sailor, seaman, jack tar)
+  stationery: stapler 23218 / staples 34766: new group -> (stapler, staples) (2 of 49 roots)
+  university_words: lecture 4539 / lecturer 34873: new group -> (lecture, lecturer) (2 of 53 roots)
+  university_words: bursar 33090 / bursary 61278: added to a group (scholarship, bursary) -> (scholarship, bursary, bursar) (3 of 53 roots)
+  media_and_communication: editor 4614 / editorial 4642: new group -> (editor, editorial) (2 of 101 roots)
+  newspaper_words: editor 4614 / editorial 4642: new group -> (editor, editorial) (2 of 47 roots)
+  social_media_words: follow 35063 / follower 35064: new group -> (follow, follower) (2 of 52 roots)
+  charity_words: philanthropy 61429 / philanthropist 35388: added to a group (philanthropist, benefactor) -> (philanthropist, benefactor, philanthropy) (3 of 57 roots)
+  scarves_and_gloves: mitt 64279 / mitts 24778: added to a group (mittens, mitts) -> (mittens, mitts, mitt) (3 of 35 roots)
+  fireworks: sparkle 25255 / sparkler 25074: new group -> (sparkle, sparkler) (2 of 37 roots)
+  baseball_terms: bat 42803 / batter 42802: new group -> (bat, batter) (2 of 50 roots)
+  hitting_terms: bat 42803 / batter 42802: new group -> (bat, batter) (2 of 13 roots)
+  volleyball_terms: set 42933 / setter 42940: new group -> (set, setter) (2 of 38 roots)
+  racket_and_target_sports: bowls 5289 / bowling 5250: new group -> (bowls, bowling) (2 of 47 roots)
+  curling_words: curl 43693 / curling 5350: new group -> (curl, curling) (2 of 34 roots)
+  running_words: pace 43995 / pacer 44015: new group -> (pace, pacer) (2 of 45 roots)
+  tournament_words: final 44340 / finalist 44366: added to a group (final, grand final) -> (final, grand final, finalist) (3 of 61 roots)
+  air_sports: skydiver 45046 / skydiving 5611: new group -> (skydiver, skydiving) (2 of 38 roots)
+  air_sports: paraglider 45045 / paragliding 5613: new group -> (paraglider, paragliding) (2 of 38 roots)
+  card_game_words: deal 45508 / dealer 45206: new group -> (deal, dealer) (2 of 31 roots)
+  esports_words: gamer 5826 / gaming 61793: new group -> (gamer, gaming) (2 of 41 roots)
+  pottery_words: potter 33027 / pottery 5853: added to a group (pottery, ceramics) -> (pottery, ceramics, potter) (3 of 44 roots)
+  woodworking_words: joint 46039 / jointer 23700: new group -> (joint, jointer) (2 of 67 roots)
+  music_terms: harmony 6058 / harmonic 11000: new group -> (harmony, harmonic) (2 of 54 roots)
+  rock_band_lineup: vocals 11354 / vocalist 6132: two groups merged (vocals, lead vocals) + (singer, vocalist, lead singer) -> (vocals, lead vocals, singer, vocalist, lead singer) (5 of 46 roots)
+  dance: choreography 6219 / choreographer 6218: new group -> (choreography, choreographer) (2 of 74 roots)
+  dance_studio_words: choreography 6219 / choreographer 6218: new group -> (choreography, choreographer) (2 of 35 roots)
+  art: painter 6323 / painting 5855: new group -> (painter, painting) (2 of 80 roots)
+  musicals_words: choreography 6219 / choreographer 6218: new group -> (choreography, choreographer) (2 of 39 roots)
+  jobs_with_uniforms: cop 4088 / copper 4089: new group -> (cop, copper) (2 of 15 roots)
+  literature: novel 6453 / novelist 6459: new group -> (novel, novelist) (2 of 89 roots)
+  magic_show_words: illusion 13723 / illusionist 13735: added to a group (magician, conjurer, illusionist) -> (magician, conjurer, illusionist, illusion) (4 of 32 roots)
+  war_words: troops 4390 / trooper 4374: trooper 4374 loses its war_words link (typicality 3); its group (soldier, trooper, squaddie, digger, GI, grunt) -> (soldier, squaddie, digger, GI, grunt)
+  mythology: god 4275 / goddess 6913: added to a group (god, deity) -> (god, deity, goddess) (3 of 71 roots)
+  fantasy: sorcerer 6994 / sorceress 7029: two groups merged (wizard, sorcerer, mage) + (sorceress, enchantress) -> (wizard, sorcerer, mage, sorceress, enchantress) (5 of 75 roots)
+  wizard_words: sorcery 22405 / sorcerer 6994: two groups merged (magic, sorcery) + (wizard, sorcerer, mage) -> (magic, sorcery, wizard, sorcerer, mage) (5 of 48 roots)
+  wizard_words: thaumaturge 62047 / thaumaturgy 62051: new group -> (thaumaturge, thaumaturgy) (2 of 48 roots)
+  magnet_words: magnet 40727 / magnetism 40618: new group -> (magnet, magnetism) (2 of 33 roots)
+  magnet_words: electromagnet 40733 / electromagnetic 40748: new group -> (electromagnet, electromagnetic) (2 of 33 roots)
+  nuclear_words: radioactive 40839 / radioactivity 40813: new group -> (radioactive, radioactivity) (2 of 42 roots)
+  classification_words: taxonomy 40872 / taxonomist 41007: new group -> (taxonomy, taxonomist) (2 of 36 roots)
+  coding_words: code 7290 / coder 4079: two groups merged (code, source code) + (programmer, coder, developer) -> (code, source code, programmer, coder, developer) (5 of 78 roots)
+  coding_words: compile 42298 / compiler 7322: new group -> (compile, compiler) (2 of 78 roots)
+  cybersecurity_words: hacker 33044 / hacking 33656: new group -> (hacker, hacking) (2 of 76 roots)
+  tenses: imperfect 26369 / imperfective 26378: new group -> (imperfect, imperfective) (2 of 29 roots)
+  tenses: perfect 26370 / perfective 26377: new group -> (perfect, perfective) (2 of 29 roots)
+  words_from_french: cuisine 29275 / cuisinier 971: added to a group (chef, cook, cuisinier) -> (chef, cook, cuisinier, cuisine) (4 of 58 roots)
+  food_and_dining_words: cuisine 29275 / cuisinier 971: new group -> (cuisine, cuisinier) (2 of 13 roots)
+  short_forms_of_names: Peg 28013 / Peggy 29810: new group -> (Peg, Peggy) (2 of 48 roots)
+  words_for_small: teeny 39272 / teensy 39281: new group -> (teeny, teensy) (2 of 32 roots)
+  words_for_good: spiffy 27289 / spiffing 39340: new group -> (spiffy, spiffing) (2 of 47 roots)
+  words_for_pretty: beautiful 39444 / beauteous 39445: new group -> (beautiful, beauteous) (2 of 31 roots)
+  fire_words: combust 39903 / combustion 39911: new group -> (combust, combustion) (2 of 41 roots)
+  words_for_cold: chill 19893 / chilly 2026: new group -> (chill, chilly) (2 of 36 roots)
+  words_for_dark: murk 40074 / murky 40049: new group -> (murk, murky) (2 of 41 roots)
+  words_for_dark: shady 40057 / shaded 40070: new group -> (shady, shaded) (2 of 41 roots)
+  burger_toppings: onion ring 19289 / onion rings 19053: onion ring 19289 becomes the form alias of onion rings 19053; burger_toppings: own link (typicality 3) dropped, the root's stays (typicality 3)
+  
+  Entries left with no theme (not deleted): prisoner 33709, jailer 64106
+  
+  Export (family preset) index shifts: 0; words with a clash id 8918 -> 9065
+  Checks: {"warn:theme-name":3,"warn:long":5,"warn:maybe-duplicate":1}; changed kinds: none
+  new issues: none
+  gone issues: none
+  
+  118 changes
+
+Family export (the committed file, node tools/export-game.mjs --strict) against the v397 file, checked by a script:
+  Format "v" 4 and linkFields unchanged. lib.version 397 -> 398, modified.
+  Entries 61024 -> 61024. No entry leaves and no entry index shifts (prison_words is adult/sensitive, so prisoner and jailer were never in the
+    family export). Fields of existing entries that change: 18317 onion ring flags 0 -> 32 (form), root 0 -> 18107 (onion rings 18106 + 1);
+    linkCount: 4311 trooper 5 -> 4 (war_words is not in the family export), 4319 mariner 10 -> 6, 9931 buck 2 -> 1, 18317 onion ring 1 -> 6.
+  Links 107350 -> 107349: 6 removed, 5 added. Removed (old numbers): 18558 (trooper, military), 18609, 18610, 18613, 18614 (mariner: military,
+    navy_words, naval_people, service_members), 33703 (buck, money_slang). Added (new numbers): 47581-47585, onion ring's links inherited from
+    its root (fast_food, deep_fried_foods, foods_with_holes, crunchy_foods, finger_foods; its burger_toppings link keeps its place).
+    Surviving links: same theme, typicality, difficulty and shown text (checked).
+    Shift by old number range: 0-18557 0, 18559-18608 -1, 18611-18612 -3, 18615-33702 -5, 33704-47586 -6, 47587-107349 -1.
+  shown (3753), nameWordLinks (321), nameThemeLinks (2284), shownUK (25): same counts.
+  clash: words with a clash id 8918 -> 9065, clash ids 3719 -> 3766. Largest: 11 (kebab, as before), 10 (wraith ... shade, as before), then 8s
+    (anger/ire/wrath/rage/fury/furious/raging/wrathful, garbage collector, television, soap). No new or changed clash group above 8.
+  Theme rows: the same 3240 rows; counts change in burger_toppings [9,7,14,9,9] -> [9,7,13,9,9], deep_fried_foods [4,7,15,8,4] -> [4,8,15,8,4]
+    (onion ring's own familiarity 2 now counts beside onion rings), money_slang [1,10,17,10,3] -> [1,9,17,10,3], military [8,17,47,20,9] ->
+    [8,17,46,19,9], navy_words [4,9,20,19,9] -> [4,9,19,19,9], naval_people [1,0,5,1,3] -> [1,0,4,1,3], service_members [1,4,6,4,3] -> [1,4,6,3,3].
+  Full export (not committed): 62671 -> 62669 entries: prisoner and jailer leave it (no links), so indices from 31945 shift there.
+
+Notice for _WS_ (DRAFT, not sent):
+  Library v398: word-family pairs in one theme (gamer/gaming, fury/furious, mom/mommy ...) are now kept out of one level by synonym groups.
+  Family export: 61024 entries, as v397. No entry leaves and no entry index changes.
+  Clash: 70 new groups and 38 grown or merged ones, so more words share a clash id: words with a clash id 8918 -> 9065, clash ids 3719 -> 3766.
+  Largest clash group still 11 (kebab); no new one above 8.
+  Links removed (old numbers): 18558 trooper 4311 in military; 18609, 18610, 18613, 18614 mariner 4319 in military, navy words, naval people,
+  service members; 33703 buck 9931 in money slang (the male-animal entry, beside bucks). Links added: 47581-47585 (new numbers).
+  18317 onion ring becomes a form alias (flag 32) of 18106 onion rings (root 18107) and takes its root's links (it was linked only in burger
+  toppings, which keeps its link number); what burger toppings shows is unchanged.
+  Link shift by old number range: 0-18557 0, 18559-18608 -1, 18611-18612 -3, 18615-33702 -5, 33704-47586 -6, 47587-107349 -1.
+  Every surviving link keeps its theme, typicality, difficulty and shown text. shown, nameWordLinks, nameThemeLinks, shownUK unchanged.
+  Theme counts change in 7 themes (burger toppings, deep-fried foods, money slang, military, navy words, naval people, service members).
+  Export index shifts: 0. Please check that levels still generate in all modes and report the words-failed counts.
