@@ -1,0 +1,23 @@
+Library batch v401 (I22 follow-up): trim of the kin chains that grew the clash groups of "salty foods" after v400. Approved by Simon
+2026-11-19 ("Yes, apply v401") after the game's v400 measurement (salty foods in Hard: 16 -> 3 appearances, 34 -> 12 distinct words).
+Script tools/gen/batch401.mjs; analysis and every removed link in tools/gen/batch401-review.txt.
+
+Change: 13 kin links removed in three chains, each pair allow-listed in js/family-allow.js (trimmed for clash):
+  chips (food) / chip (electronics); salt / salts (bath salts), salty / salts, salty in its slang sense; crackers / crack (drug, sound)
+  and cracking (chemistry), 4 of them against the v400 rule (a word derived from an unrelated sense is not kin), 2 judgement calls.
+  Kept: salt/salty (taste), crackers/cracker (firework), crackle/crackling, jerky/jerk, brine/briny and all dup? pairs.
+  Salty foods' clash groups 8,8,8,8,8,7,6,6 -> 5,4,4,4,4,5,6,6; other themes holding words of its groups 110 -> 86 (35 at v397).
+
+Checks: apply 13 library changes, library v401; rerun 0; npm test 49 pass; Checks errors 0, warnings theme-name 3, long 5,
+maybe-duplicate 1, clash-big 3, family-pair 0, kin-bad 0; strict full export exit 0, case lint 0; style-case.mjs and
+propword-exceptions.mjs 0 changes. Applied by the manager session.
+
+Family export against v400: 61,024 entries; texts, links, themes identical; only clash: words with a clash id 13,566 -> 13,565,
+clash ids 4,862 -> 4,865; sizes 2:3059->3061 4:383->385 5:213->215 7:84->83 8:111->109 (others same; above 8 only kebab 11, ghost 10).
+
+Notice for _WS_ (DRAFT, not sent):
+  Library v401: a small trim after your v400 measurement. 13 kin links removed in three chains that had joined salty foods'
+  words into 8-word clash groups (chips food/electronics; salt/salts bath salts and salty slang; crackers/crack, cracking).
+  Export: lib.version 401; 61,024 entries; no entry index changes; texts, links and themes identical to v400; only clash changes:
+  salty foods' groups 8,8,8,8,8,7,6,6 -> 5,4,4,4,4,5,6,6; groups of 8 overall 111 -> 109; clash ids 4,862 -> 4,865.
+  Please measure v401 against v397 as before, and say whether salty foods recovers in Hard. Simon decides the pin on that.

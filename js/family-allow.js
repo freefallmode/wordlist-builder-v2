@@ -2416,4 +2416,17 @@ export const FAMILY_OK = new Set([
   '6589|59860', // finial / fining: not one family (v400 kin pass)
   '905|19701', // port / porter: not one family (v400 kin pass); consistency (was K?, chunk 11:343): porter (carrier, and the beer named after porters) is not from port (rule, chunk 09: porter/port)
   '21366|53859', // muster / must: not one family (v400 kin pass); letters only
+  '39159|49787', // chips / chip: allowed: trimmed for clash (v401); chips (food) / chip (electronics): second sense; joins the food group (French fries, potato chips, crisps, chips) to the electronics group (chip, microchip, silicon chip, integrated circuit): 4 + 4 = 8
+  '712|64060', // salt / salts: allowed: trimmed for clash (v401); bath salts: another sense; brings the bath_time group (salts, Epsom salts) into salt
+  '19885|64060', // salt / salts: allowed: trimmed for clash (v401); as above (salt for preserving / bath salts)
+  '39201|64060', // salty / salts: allowed: trimmed for clash (v401); salty (taste) / bath salts: chains taste words to bath_time
+  '27229|64060', // salty / salts: allowed: trimmed for clash (v401); salty (slang, upset) / bath salts: two unrelated second senses
+  '712|27229', // salt / salty: allowed: trimmed for clash (v401); salty (Gen Z slang, upset) is a second sense; brings gen_z_slang into salt
+  '19885|27229', // salt / salty: allowed: trimmed for clash (v401); as above (salt for preserving / salty slang)
+  '15493|19094', // crack / crackers: allowed: trimmed for clash (v401); crack (drug) / crackers (biscuit): judgement call, and against the v400 rule (a derived word, crackers from the crack sound, vs the base in an unrelated sense)
+  '15493|25248', // crack / cracker: allowed: trimmed for clash (v401); crack (drug) / cracker (firework): against the v400 rule as above; chains illegal_drugs to fireworks
+  '19094|40552', // crackers / cracking: allowed: trimmed for clash (v401); crackers (biscuit) / cracking (chemical reaction): against the v400 rule as above
+  '25248|40552', // cracker / cracking: allowed: trimmed for clash (v401); cracker (firework) / cracking (chemical reaction): against the v400 rule as above
+  '19094|57960', // crackers / crack: allowed: trimmed for clash (v401); crackers (biscuit) / crack (impact sound): judgement call; the last bridge from crackers to the crack cluster (crack, crack, cracking)
+  '25248|57960', // cracker / crack: allowed: trimmed for clash (v401); cracker (firework) / crack (impact sound): judgement call; the last bridge from the firework group to the crack cluster
 ]);

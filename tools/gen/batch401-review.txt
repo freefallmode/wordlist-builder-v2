@@ -1,0 +1,145 @@
+Library batch v401 (PROPOSAL for Simon, not applied): trim the clash groups that may be starving "salty foods" (I22). tools/gen/batch401.mjs, on v400.
+
+Why. The game measured v400: salty foods in Hard fell from 16 to 3 appearances over 2,000 levels (34 -> 12 distinct words). In the family export
+its 54 rows went from 21 with a clash id (v397; largest group 5) to 30 (v400), five of them in 8-word groups (salt; French fries, potato chips,
+crisps, chips). Counting, for each salty-foods row, the other themes (not its own) that hold a word of its clash group (any of them in a
+level shuts the row out), summed over the rows: 35 at v397, 110 at v400, 86 after this trim. Inside the theme nothing changed (the same rows
+share ids as at v397), so the loss is the outside exposure. Not proven to be the cause; the game can measure it. The trim recovers about a
+third of the rise; most of the rest is dup? pairs (olives 10 themes, pretzels 8, anchovies 7, pickles 6), true families left alone.
+
+Where the exposure comes from (v400):
+  - salt 712 (8): salt/salty (v399 K and v400 K, x2 each), salt/salts (bath salts), salty/salts. Joins chemical_compounds, ways_to_preserve_food
+    (salt 19885, salt-cure), basic_tastes and taste_words (salty 39201), gen_z_slang (salty 27229, "upset"), bath_time (salts, Epsom salts).
+  - French fries / potato chips (+ crisps) / chips (8): one link, chips/chip (v400 K, food / electronics), joins the food group (4, as v397)
+    to the electronics group (chip, microchip, silicon chip, integrated circuit: 4).
+  - crackers (7): crackers/cracker (firework), and the crack family (crack drug 15493, crack sound 57960, cracking chemistry 40552) bridged
+    to it by six links, four of them against the v400 consistency rule (a derived word, cracker(s) from the crack sound, paired with the base
+    in an unrelated sense, is not kin) and two judgement calls (K?).
+  - pork rinds / pork scratchings (6): v397's group of 5 plus crackle/crackling (K?). Kept: crackling is the -ing of crackle (the v400 rule).
+  - olives (3, 10 themes), pretzels (3, 8), anchovies (2, 7), pickles (2, 6), kippers, capers, rollmops: dup? pairs (one word, singular and
+    plural) and olive (colour). Kept: they would give a level away. They are small groups; their exposure comes from the singular's many themes
+    (merging them into one entry, I23, would not change that).
+  - jerky/jerk, brine/briny, capers/caper (jump): kept (small; jerky/jerk and brine/briny are food look-alikes).
+
+Proposal: remove 13 kin pairs; add their all-theme keys to js/family-allow.js ("allowed: trimmed for clash (v401)") so family-kin
+does not suggest them again. Kept on purpose: salt 712 / salty 39201 (taste) and salt 19885 / salty 39201 (a level with salt in salty foods and
+salty in basic tastes would give itself away; they also keep the two "salt" entries in one group), crackers / cracker (firework: "crackers"
+would fit a fireworks group), crack / crack / cracking (one written word).
+Judgement calls for Simon: chips/chip (a level with "chips" among snacks and "microchip" among electronic parts is possible again, as at v397);
+salty 27229 (slang) and salty 39201 (taste) are now in different groups, as salt 712 and salt 19885 were at v397 (same text: the game's own
+same-text rule, if any, applies); bath "salts" can meet "salt" (rare: bath_time with a food theme).
+
+13 kin pairs to remove: 13 removed now; allow-list lines to add: 13
+Family export after vs the committed file: entry index shifts 0; links identical; words with a clash id 13566 -> 13565; clash ids 4862 -> 4865; groups of 8: 111 -> 109; over 8: 2 -> 2
+Clash group sizes (size:count) before: 2:3059 3:902 4:383 5:213 6:108 7:84 8:111 10:1 11:1
+Clash group sizes (size:count) after:  2:3061 3:902 4:385 5:215 6:108 7:83 8:109 10:1 11:1
+salty_foods: 54 export rows; with a clash id 30 -> 30; group sizes before 1:24 2:13 3:6 4:3 6:2 7:1 8:5; after 1:24 2:13 3:6 4:7 5:2 6:2; other themes holding a clash mate (sum over rows) 110 -> 86
+Checks: changed kinds: none
+Checks after (errors and warnings): clash-big 3, long 5, maybe-duplicate 1, theme-name 3
+
+== Removed kin (13) ==
+  [chips] chips/chip (39159 / 49787; salty_foods, bar_snacks ~ electronic_parts, computer_parts, semiconductor_devices; v400 K (01)): removed -- chips (food) / chip (electronics): second sense; joins the food group (French fries, potato chips, crisps, chips) to the electronics group (chip, microchip, silicon chip, integrated circuit): 4 + 4 = 8
+  [salt] salt/salts (712 / 64060; herbs_spices_and_sauces, nutrition, dietary_minerals, in_the_pantry, shades_of_white, salty_foods, white_things, chemical_compounds ~ bath_time; v400 K (03)): removed -- bath salts: another sense; brings the bath_time group (salts, Epsom salts) into salt
+  [salt] salt/salts (19885 / 64060; ways_to_preserve_food ~ bath_time; v400 K (04)): removed -- as above (salt for preserving / bath salts)
+  [salt] salty/salts (39201 / 64060; taste_words, basic_tastes ~ bath_time; v400 K (05)): removed -- salty (taste) / bath salts: chains taste words to bath_time
+  [salt] salty/salts (27229 / 64060; gen_z_slang ~ bath_time; v400 K (09)): removed -- salty (slang, upset) / bath salts: two unrelated second senses
+  [salt] salt/salty (712 / 27229; herbs_spices_and_sauces, nutrition, dietary_minerals, in_the_pantry, shades_of_white, salty_foods, white_things, chemical_compounds ~ gen_z_slang; v400 K (01)): removed -- salty (Gen Z slang, upset) is a second sense; brings gen_z_slang into salt
+  [salt] salt/salty (19885 / 27229; ways_to_preserve_food ~ gen_z_slang; v400 K (02)): removed -- as above (salt for preserving / salty slang)
+  [crackers] crack/crackers (15493 / 19094; illegal_drugs, stimulants ~ snacks, picnic_basket, salty_foods, crunchy_foods, bar_snacks, finger_foods; v400 K? (02)): removed -- crack (drug) / crackers (biscuit): judgement call, and against the v400 rule (a derived word, crackers from the crack sound, vs the base in an unrelated sense)
+  [crackers] crack/cracker (15493 / 25248; illegal_drugs, stimulants ~ fireworks; v400 K (07)): removed -- crack (drug) / cracker (firework): against the v400 rule as above; chains illegal_drugs to fireworks
+  [crackers] crackers/cracking (19094 / 40552; snacks, picnic_basket, salty_foods, crunchy_foods, bar_snacks, finger_foods ~ chemical_reactions; v400 K (05)): removed -- crackers (biscuit) / cracking (chemical reaction): against the v400 rule as above
+  [crackers] cracker/cracking (25248 / 40552; fireworks ~ chemical_reactions; v400 K (10)): removed -- cracker (firework) / cracking (chemical reaction): against the v400 rule as above
+  [crackers] crackers/crack (19094 / 57960; snacks, picnic_basket, salty_foods, crunchy_foods, bar_snacks, finger_foods ~ impact_sounds; v399 K?): removed -- crackers (biscuit) / crack (impact sound): judgement call; the last bridge from crackers to the crack cluster (crack, crack, cracking)
+  [crackers] cracker/crack (25248 / 57960; fireworks ~ impact_sounds; v400 K? (02)): removed -- cracker (firework) / crack (impact sound): judgement call; the last bridge from the firework group to the crack cluster
+
+== salty_foods: clash groups before -> after (export rows; "themes" = other themes holding a clash mate) ==
+  parmesan: 2 [parmesan, parmigiano-reggiano] themes 0 (unchanged)
+  samphire: 4 [samphire, glasswort, rock samphire, marsh samphire] themes 0 (unchanged)
+  ham: 2 [ham, smoked ham] themes 0 (unchanged)
+  salt: 8 [salt, salt, salt-cure, salty, salty, sodium chloride, Epsom salts, salts] themes 5
+      -> 5 [salt, salt, salt-cure, salty, sodium chloride] themes 3
+  soy sauce: 2 [soy sauce, shoyu] themes 3 (unchanged)
+  fish sauce: 3 [fish sauce, garum, colatura] themes 1 (unchanged)
+  popcorn: 2 [popcorn, air-popped popcorn] themes 0 (unchanged)
+  prosciutto: 2 [prosciutto, Parma ham] themes 0 (unchanged)
+  jerky: 3 [jerky, beef jerky, jerk] themes 3 (unchanged)
+  beef jerky: 3 [jerky, beef jerky, jerk] themes 1 (unchanged)
+  pork scratchings: 6 [pork scratchings, pork rinds, crackle, crackling, chicharrón, chicharron] themes 1 (unchanged)
+  pecorino: 2 [pecorino, pecorino romano] themes 0 (unchanged)
+  brine: 2 [brine, briny] themes 1 (unchanged)
+  Marmite: 4 [Marmite, Vegemite, yeast extract, Promite] themes 2 (unchanged)
+  Vegemite: 4 [Marmite, Vegemite, yeast extract, Promite] themes 4 (unchanged)
+  French fries: 8 [French fries, potato chips, crisps, chips, integrated circuit, microchip, chip, silicon chip] themes 10
+      -> 4 [French fries, potato chips, crisps, chips] themes 5
+  kippers: 2 [kippers, kipper] themes 3 (unchanged)
+  potato chips: 8 [French fries, potato chips, crisps, chips, integrated circuit, microchip, chip, silicon chip] themes 9
+      -> 4 [French fries, potato chips, crisps, chips] themes 4
+  crisps: 8 [French fries, potato chips, crisps, chips, integrated circuit, microchip, chip, silicon chip] themes 9
+      -> 4 [French fries, potato chips, crisps, chips] themes 4
+  pretzels: 3 [pretzel, pretzels, brezel] themes 8 (unchanged)
+  crackers: 7 [crackers, firecracker, banger, cracker, cracking, firecrackers, crack] themes 7
+      -> 5 [crackers, firecracker, banger, cracker, firecrackers] themes 5
+  pork rinds: 6 [pork scratchings, pork rinds, crackle, crackling, chicharrón, chicharron] themes 1 (unchanged)
+  pickles: 2 [pickle, pickles] themes 6 (unchanged)
+  olives: 3 [olive, olive, olives] themes 10 (unchanged)
+  anchovies: 2 [anchovy, anchovies] themes 7 (unchanged)
+  capers: 3 [caper, capers, caper] themes 3 (unchanged)
+  chips: 8 [French fries, potato chips, crisps, chips, integrated circuit, microchip, chip, silicon chip] themes 15
+      -> 4 [French fries, potato chips, crisps, chips] themes 10
+  salt cod: 2 [salt cod, bacalao] themes 0 (unchanged)
+  rollmops: 2 [rollmop, rollmops] themes 1 (unchanged)
+  bacalao: 2 [salt cod, bacalao] themes 0 (unchanged)
+  no clash id: feta, halloumi, bacon, tapenade, salami, pancetta, corned beef, bresaola, guanciale, lardo, lox, salt beef, smoked salmon, salted caramel, miso soup, caviar, salted peanuts, salted butter, bouillon, salted herring, bottarga, mojama, salted egg, saltines
+
+== Other themes affected (rows whose clash group shrank; all groups only get smaller) ==
+  accidental_inventions: potato chips 8->4, crisps 8->4
+  bar_snacks: potato chips 8->4, crisps 8->4, crackers 7->5, chips 8->4
+  basic_tastes: salty 8->5
+  bath_time: Epsom salts 8->2, salts 8->2
+  british_english_words: potato chips 8->4, crisps 8->4
+  chemical_compounds: salt 8->5, sodium chloride 8->5
+  chemical_reactions: cracking 7->2
+  computer_parts: chip 8->4
+  crunchy_foods: potato chips 8->4, crisps 8->4, crackers 7->5
+  deep_fried_foods: French fries 8->4
+  dietary_minerals: salt 8->5
+  diner: French fries 8->4
+  diwali: firecrackers 7->5
+  electronic_parts: integrated circuit 8->4, microchip 8->4, chip 8->4, silicon chip 8->4
+  electronics_workbench: integrated circuit 8->4
+  fast_food: French fries 8->4
+  finger_foods: French fries 8->4, potato chips 8->4, crisps 8->4, crackers 7->5
+  fire_blank: firecracker 7->5, banger 7->5, firecrackers 7->5
+  fireworks: firecracker 7->5, banger 7->5, cracker 7->5
+  frozen_foods: French fries 8->4
+  gen_z_slang: salty 8->1
+  herbs_spices_and_sauces: salt 8->5
+  impact_sounds: crack 7->2
+  in_the_pantry: salt 8->5
+  lunar_new_year: firecrackers 7->5
+  nutrition: salt 8->5
+  picnic_basket: crackers 7->5
+  potato_dishes: French fries 8->4, potato chips 8->4, crisps 8->4
+  semiconductor_devices: integrated circuit 8->4, microchip 8->4, chip 8->4, silicon chip 8->4
+  shades_of_white: salt 8->5
+  snacks: potato chips 8->4, crisps 8->4, crackers 7->5
+  taste_words: salty 8->5
+  things_that_pop: firecracker 7->5, banger 7->5
+  vet_clinic: microchip 8->4, silicon chip 8->4
+  ways_to_preserve_food: salt 8->5, salt-cure 8->5
+  white_things: salt 8->5
+
+== Allow-list lines (js/family-allow.js, on --apply) ==
+  '39159|49787', // chips / chip: allowed: trimmed for clash (v401); chips (food) / chip (electronics): second sense; joins the food group (French fries, potato chips, crisps, chips) to the electronics group (chip, microchip, silicon chip, integrated circuit): 4 + 4 = 8
+  '712|64060', // salt / salts: allowed: trimmed for clash (v401); bath salts: another sense; brings the bath_time group (salts, Epsom salts) into salt
+  '19885|64060', // salt / salts: allowed: trimmed for clash (v401); as above (salt for preserving / bath salts)
+  '39201|64060', // salty / salts: allowed: trimmed for clash (v401); salty (taste) / bath salts: chains taste words to bath_time
+  '27229|64060', // salty / salts: allowed: trimmed for clash (v401); salty (slang, upset) / bath salts: two unrelated second senses
+  '712|27229', // salt / salty: allowed: trimmed for clash (v401); salty (Gen Z slang, upset) is a second sense; brings gen_z_slang into salt
+  '19885|27229', // salt / salty: allowed: trimmed for clash (v401); as above (salt for preserving / salty slang)
+  '15493|19094', // crack / crackers: allowed: trimmed for clash (v401); crack (drug) / crackers (biscuit): judgement call, and against the v400 rule (a derived word, crackers from the crack sound, vs the base in an unrelated sense)
+  '15493|25248', // crack / cracker: allowed: trimmed for clash (v401); crack (drug) / cracker (firework): against the v400 rule as above; chains illegal_drugs to fireworks
+  '19094|40552', // crackers / cracking: allowed: trimmed for clash (v401); crackers (biscuit) / cracking (chemical reaction): against the v400 rule as above
+  '25248|40552', // cracker / cracking: allowed: trimmed for clash (v401); cracker (firework) / cracking (chemical reaction): against the v400 rule as above
+  '19094|57960', // crackers / crack: allowed: trimmed for clash (v401); crackers (biscuit) / crack (impact sound): judgement call; the last bridge from crackers to the crack cluster (crack, crack, cracking)
+  '25248|57960', // cracker / crack: allowed: trimmed for clash (v401); cracker (firework) / crack (impact sound): judgement call; the last bridge from the firework group to the crack cluster
