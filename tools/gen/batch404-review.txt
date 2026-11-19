@@ -1,0 +1,653 @@
+Library batch v404 (approved by Simon 2026-11-19): tools/gen/batch404.mjs on v403. Changes and the export comparison: tools/gen/batch404-changes.txt.
+Part 1: the kin pairs decided kin in the v400 pass (kin400/decisions-*.txt + overrides.txt) still not kin on v403: 544 (v400 left 558 as too big;
+ids merged at v403 resolve to their root). Order: both words in the family export first (FF), then one, then none; chunk order inside.
+Rule (DESIGN-entries.md 3.7, Group size): kin when the clash group stays <= 8; 9-12 when the pair's themes are big (K or KD, not K?, and every playable theme of
+each word has at least 20 members, the lower quartile); over 12 left unlinked. Sizes as clash-big counts.
+Code first column: K kin, K? kin (judgement: one written word in another sense), KD kin and one word (not merged at v403).
+
+== Linked, group <= 8 (6) ==
+K  chips / chip (39159 / 49787; FF; 01:149): kin (clash group 8) -- the same word in another sense: look-alike (food / electronics)
+K  salt / salty (712 / 27229; FF; 01:243): kin (clash group 6) -- salty (slang) is from salt
+K? cracker / crack (25248 / 57960; FF; 02:490): kin (clash group 8) -- crackers are named from crack
+K  salt / salts (712 / 64060; FF; 03:393): kin (clash group 8) -- bath salts: the same word in another sense
+K? atom / atomic family (39502 / 64815; FF; 10:5): kin (clash group 3) -- atomic is from atom; the atomic entry's gloss "atomic" in family_and_friends looks odd
+K  axes / axe (28814 / 34648; F-; 05:39): kin (clash group 8) -- axes is the plural of axe: tool vs weapon sense
+
+== Linked, group 9-12 (big themes) (66) ==
+K  engine / engineer (2567 / 50476; FF; 01:3): kin, clash group 9 (9-12: themes big, smallest 30 / 26 members)
+K  rib / ribs (3247 / 50091; FF; 01:8): kin, clash group 11 (9-12: themes big, smallest 35 / 43 members) -- the same word in another sense: look-alike (ribs as food)
+K  stroller / stroll (3557 / 16909; FF; 01:9): kin, clash group 12 (9-12: themes big, smallest 32 / 39 members)
+K  sweater / sweaty (4873 / 39941; FF; 01:11): kin, clash group 11 (9-12: themes big, smallest 25 / 40 members)
+K  glass / glasses (24032 / 24782; FF; 01:30): kin, clash group 12 (9-12: themes big, smallest 24 / 21 members) -- glasses (eyewear) are named from glass
+K  digger / dig (3102 / 42935; FF; 01:350): kin, clash group 9 (9-12: themes big, smallest 38 / 38 members)
+K  sponge / spongy (3817 / 14828; FF; 01:391): kin, clash group 11 (9-12: themes big, smallest 21 / 42 members)
+K  coder / code (4079 / 33833; FF; 01:422): kin, clash group 9 (9-12: themes big, smallest 42 / 42 members)
+K  gray / graying (9527 / 53057; FF; 02:129): kin, clash group 10 (9-12: themes big, smallest 30 / 33 members)
+K  steam / steamy (16570 / 31455; FF; 02:315): kin, clash group 12 (9-12: themes big, smallest 24 / 42 members)
+K  tie / tie (4945 / 64040; FF; 02:417): kin, clash group 10 (9-12: themes big, smallest 28 / 40 members) -- the same word in another sense: look-alike (neckties / hair tie)
+K  scale / scales (45902 / 49966; FF; 03:328): kin, clash group 9 (9-12: themes big, smallest 46 / 54 members) -- the same word in another sense: look-alike (weighing scales)
+K  sprinkler / sprinkle (1846 / 19971; FF; 03:438): kin, clash group 9 (9-12: themes big, smallest 34 / 33 members)
+K  sleepy / sleeper (3686 / 47699; FF; 04:15): kin, clash group 11 (9-12: themes big, smallest 36 / 34 members) -- a sleeper car is for sleeping
+K  bumpy / bumper (14808 / 45720; FF; 04:287): kin, clash group 12 (9-12: themes big, smallest 42 / 38 members)
+K  wings / wing (17868 / 61259; FF; 04:365): kin, clash group 9 (9-12: themes big, smallest 43 / 43 members)
+K  arrow / arrows (20782 / 43194; FF; 04:397): kin, clash group 9 (9-12: themes big, smallest 36 / 39 members) -- arrows (darts) is the same word in another sense
+K  drawers / drawer (24418 / 25765; FF; 04:449): kin, clash group 11 (9-12: themes big, smallest 36 / 44 members) -- drawers (underwear) and drawer: the same word in another sense
+K  rock / rock (2049 / 65292; FF; 05:62): kin, clash group 9 (9-12: themes big, smallest 25 / 43 members) -- rock dove is named from rock: same word
+K  star / star (7108 / 64806; FF; 05:68): kin, clash group 9 (9-12: themes big, smallest 27 / 32 members) -- star (jump) is star in another sense
+K  arrow / arrows (38875 / 43194; FF; 05:107): kin, clash group 10 (9-12: themes big, smallest 36 / 39 members) -- arrows (darts) is arrow in another sense
+K  fishing / fish (5631 / 63332; FF; 05:322): kin, clash group 11 (9-12: themes big, smallest 41 / 35 members) -- fish (yoga pose) is fish in another sense
+K  marble / marbling (31746 / 45859; FF; 06:122): kin, clash group 10 (9-12: themes big, smallest 36 / 27 members)
+K  binder / binding (34764 / 51584; FF; 06:145): kin, clash group 9 (9-12: themes big, smallest 31 / 34 members)
+K  locker / lock (34795 / 42905; FF; 06:146): kin, clash group 9 (9-12: themes big, smallest 34 / 43 members)
+K  string / stringer (23267 / 50131; FF; 06:363): kin, clash group 11 (9-12: themes big, smallest 27 / 60 members)
+K  tanker / tank (2810 / 25495; FF; 07:13): kin, clash group 9 (9-12: themes big, smallest 32 / 57 members)
+K  tanker / tank (2810 / 47419; FF; 07:15): kin, clash group 10 (9-12: themes big, smallest 32 / 36 members)
+K  shades / shade (4953 / 62781; FF; 07:88): kin, clash group 10 (9-12: themes big, smallest 31 / 24 members) -- shades and shade (blind): the same word in another sense
+K  ceramics / ceramic (5887 / 38998; FF; 07:103): kin, clash group 11 (9-12: themes big, smallest 37 / 32 members)
+K  scale / scaly (8836 / 39117; FF; 07:161): kin, clash group 11 (9-12: themes big, smallest 29 / 42 members)
+K  vocals / vocal (11354 / 28698; FF; 07:201): kin, clash group 10 (9-12: themes big, smallest 46 / 51 members)
+K  spook / spooky (22783 / 25034; FF; 07:328): kin, clash group 12 (9-12: themes big, smallest 37 / 46 members)
+K  checks / checker (24919 / 45534; FF; 07:361): kin, clash group 11 (9-12: themes big, smallest 40 / 29 members)
+K  snap / snappy (24982 / 32922; FF; 07:362): kin, clash group 11 (9-12: themes big, smallest 31 / 33 members)
+K  weightless / weight (41337 / 58804; FF; 08:53): kin, clash group 9 (9-12: themes big, smallest 38 / 31 members)
+K  bolt / bolt (45091 / 23703; FF; 08:89): kin, clash group 9 (9-12: themes big, smallest 40 / 27 members)
+K  stewardess / stewards (2725 / 44854; FF; 08:215): kin, clash group 9 (9-12: themes big, smallest 20 / 44 members)
+K  movers / movement (24247 / 55786; FF; 09:229): kin, clash group 10 (9-12: themes big, smallest 33 / 29 members)
+K  hook / hooker (25003 / 42901; FF; 09:255): kin, clash group 10 (9-12: themes big, smallest 31 / 43 members)
+K  greenery / green (29239 / 64789; FF; 09:355): kin, clash group 11 (9-12: themes big, smallest 48 / 56 members)
+K  beaming / beam (32683 / 47614; FF; 09:397): kin, clash group 9 (9-12: themes big, smallest 33 / 38 members) -- the same word in another sense
+K  carrier / carry (40942 / 41623; FF; 10:28): kin, clash group 9 (9-12: themes big, smallest 41 / 39 members)
+K  hooker / hook (42901 / 43711; FF; 10:51): kin, clash group 11 (9-12: themes big, smallest 43 / 47 members)
+K  flip / flipper (43564 / 45707; FF; 10:76): kin, clash group 9 (9-12: themes big, smallest 27 / 28 members)
+K  tank / tanker (45666 / 47104; FF; 10:101): kin, clash group 11 (9-12: themes big, smallest 44 / 47 members)
+K  gliding / glider (5635 / 60250; FF; 10:216): kin, clash group 9 (9-12: themes big, smallest 38 / 30 members)
+K  creep / creeper (10380 / 23166; FF; 10:286): kin, clash group 11 (9-12: themes big, smallest 39 / 34 members)
+K  flies / fly (12283 / 58795; FF; 10:313): kin, clash group 9 (9-12: themes big, smallest 38 / 31 members)
+K  dash / dasher (19954 / 39831; FF; 10:380): kin, clash group 10 (9-12: themes big, smallest 33 / 44 members) -- dasher is from dash (other sense)
+K  whites / white (23891 / 64804; FF; 10:421): kin, clash group 9 (9-12: themes big, smallest 30 / 36 members) -- the same word in another sense (laundry / eye)
+K  snappy / snap (32922 / 46370; FF; 11:26): kin, clash group 12 (9-12: themes big, smallest 33 / 49 members)
+K  score / scorer (41489 / 44197; FF; 11:87): kin, clash group 10 (9-12: themes big, smallest 33 / 51 members) -- the same word in another sense: look-alike
+K  carry / carrier (41623 / 47069; FF; 11:89): kin, clash group 11 (9-12: themes big, smallest 39 / 41 members)
+K  shaker / shake (10626 / 25365; FF; 11:220): kin, clash group 9 (9-12: themes big, smallest 35 / 37 members) -- a shake (time unit) is the same written word
+K  wedges / wedging (24629 / 46007; FF; 11:259): kin, clash group 12 (9-12: themes big, smallest 36 / 44 members)
+K  creek / creeking (30874 / 61589; FF; 11:283): kin, clash group 9 (9-12: themes big, smallest 35 / 52 members) -- creeking is paddling down creeks
+K  flick / flicks (6365 / 12816; FF; 11:457): kin, clash group 11 (9-12: themes big, smallest 37 / 40 members) -- flicks (movies) from flick
+K  conjure / conjurer (7043 / 13734; FF; 11:476): kin, clash group 10 (9-12: themes big, smallest 48 / 32 members)
+K  hooker / hook (42901 / 43216; FF; 12:288): kin, clash group 12 (9-12: themes big, smallest 43 / 40 members) -- hooker (rugby) / hook (bowling): the same word in another sense
+K  flies / fly (12283 / 24961; FF; 13:44): kin, clash group 10 (9-12: themes big, smallest 38 / 35 members) -- the same word in another sense: look-alike
+K  rods / rod (14858 / 41751; FF; 13:72): kin, clash group 12 (9-12: themes big, smallest 36 / 35 members) -- the same word in another sense: look-alike
+K  crowning / crown (15737 / 47403; FF; 13:80): kin, clash group 9 (9-12: themes big, smallest 38 / 36 members)
+K  saddler / saddle (33282 / 50230; FF; 14:221): kin, clash group 9 (9-12: themes big, smallest 45 / 46 members) -- the same word in another sense: look-alike (saddle of lamb)
+K  tank / tanker (4451 / 47104; -F; 08:297): kin, clash group 12 (9-12: themes big, smallest 46 / 47 members)
+K  down / downers (28179 / 50258; F-; 09:323): kin, clash group 11 (9-12: themes big, smallest 36 / 62 members)
+
+== Linked, in one clash group already (154) ==
+KD pot / pot (25482 / 19810; FF; 01:51): kin (one clash group already) -- same sense: one entry with a form alias?
+KD pot / pot (25788 / 19810; FF; 01:57): kin (one clash group already) -- same sense (cooking pot): one entry with a form alias?
+K  sweater / sweating (4873 / 16585; FF; 01:458): kin (one clash group already)
+K  spongy / sponge (14828 / 23835; FF; 02:251): kin (one clash group already)
+K  spongy / sponge (14828 / 28037; FF; 02:253): kin (one clash group already)
+K  steam / steaming (16570 / 39925; FF; 02:316): kin (one clash group already)
+K  salt / salty (19885 / 27229; FF; 02:371): kin (one clash group already)
+K  glass / glassy (20139 / 40030; FF; 02:381): kin (one clash group already)
+K  glasses / glassy (24782 / 40030; FF; 02:474): kin (one clash group already)
+K  steamer / steam (2788 / 16570; FF; 03:464): kin (one clash group already)
+K  sweater / sweat (4873 / 28307; FF; 04:64): kin (one clash group already)
+K  bump / bumper (15020 / 45720; FF; 04:308): kin (one clash group already)
+K  peel / peeler (16191 / 19843; FF; 04:329): kin (one clash group already)
+K  steam / steamer (16570 / 19826; FF; 04:337): kin (one clash group already)
+K  salt / salts (19885 / 64060; FF; 04:381): kin (one clash group already)
+K  sponge / sponge (23835 / 43089; FF; 04:427): kin (one clash group already)
+K? drawers / draw (24418 / 45454; FF; 04:451): kin (one clash group already) -- drawers (underwear) is from draw (pull on): look-alike
+K? drawers / draw (24418 / 45513; FF; 04:452): kin (one clash group already) -- drawers (underwear) is from draw (pull on): look-alike
+K? drawers / draw (24418 / 67300; FF; 04:453): kin (one clash group already) -- drawers (underwear) is from draw (pull on): look-alike
+K  rib / ribs (24893 / 50091; FF; 04:461): kin (one clash group already) -- ribs (food) is the same word in another sense
+K  sleep / sleeper (28696 / 47699; FF; 05:36): kin (one clash group already) -- sleeper (train car) is from sleep
+K  salty / salts (39201 / 64060; FF; 05:113): kin (one clash group already) -- salts (bath) and salty both from salt
+K  rib / ribs (46030 / 50091; FF; 05:186): kin (one clash group already) -- ribs (food) and rib (pottery tool): one word, other sense
+K? drawing / draw (5856 / 43676; FF; 05:325): kin (one clash group already) -- draw (curling) is the same word in another sense
+K? fisher / fish (8002 / 16671; FF; 05:351): kin (one clash group already) -- fisher (animal) looks like fish + er (origin disputed)
+K? fisher / fish (8002 / 26652; FF; 05:352): kin (one clash group already) -- as fisher/fish
+K? fisher / fish (8002 / 59990; FF; 05:353): kin (one clash group already) -- as fisher/fish
+K? bumpy / bumper (14808 / 44870; FF; 05:436): kin (one clash group already) -- bumper and bumpy both from bump, as pilot
+K? bump / bumper (15020 / 44870; FF; 05:446): kin (one clash group already) -- bumper is from bump
+K  crackers / cracking (19094 / 40552; FF; 05:480): kin (one clash group already)
+K  peeler / peel (19843 / 43687; FF; 05:483): kin (one clash group already)
+K  glass / glassy (20139 / 61585; FF; 05:490): kin (one clash group already) -- glassy (calm sea) is from glass
+K  glasses / glass (24782 / 43631; FF; 06:51): kin (one clash group already) -- the same word in another sense: look-alike
+K  glasses / glassy (24782 / 61585; FF; 06:52): kin (one clash group already)
+K  drawer / draw (25765 / 43676; FF; 06:66): kin (one clash group already) -- the draw shot: same word, other sense
+K  lock / locker (42905 / 57611; FF; 06:190): kin (one clash group already)
+K  marbling / marbles (45859 / 46330; FF; 06:218): kin (one clash group already)
+K? bumper / bumps (2573 / 43446; FF; 06:254): kin (one clash group already) -- bumper and bumps both from bump
+K  bumpy / bumps (14808 / 43446; FF; 06:335): kin (one clash group already)
+K  bump / bumps (15020 / 43446; FF; 06:338): kin (one clash group already)
+K  shading / shade (12204 / 62781; FF; 07:212): kin (one clash group already)
+K  spook / spooked (22783 / 32758; FF; 07:329): kin (one clash group already)
+K  snap / snappy (24982 / 50127; FF; 07:363): kin (one clash group already)
+K  snap / snaps (24982 / 55554; FF; 07:364): kin (one clash group already)
+K  tank / tanker (25495 / 49255; FF; 07:376): kin (one clash group already)
+K  scale / scale (7193 / 45902; FF; 08:9): kin (one clash group already) -- the same word in another sense
+K  checkered / checker (38904 / 45534; FF; 08:16): kin (one clash group already)
+K  shady / shade (40057 / 62781; FF; 08:44): kin (one clash group already)
+K  shaded / shade (40070 / 62781; FF; 08:45): kin (one clash group already)
+K  tank / tanker (47419 / 49255; FF; 08:101): kin (one clash group already)
+KD gyro / gyro (19019 / 53385; FF; 08:116): kin (one clash group already) -- the same dish: one entry with a form alias?
+K  sprinkles / sprinkle (582 / 19971; FF; 08:141): kin (one clash group already)
+K? snapper / snap (1250 / 24982; FF; 08:172): kin (one clash group already) -- the snapper (fish) is named from snap
+K? drawers / draw (24418 / 43142; FF; 09:236): kin (one clash group already) -- drawers is from draw
+K? drawers / draw (24418 / 44351; FF; 09:237): kin (one clash group already) -- drawers is from draw
+K? drawers / draw (24418 / 50349; FF; 09:238): kin (one clash group already) -- drawers is from draw
+K? snap / snapper (24982 / 63623; FF; 09:254): kin (one clash group already) -- the snapping turtle is named for its snap
+K  tank / tanker (25495 / 47104; FF; 09:264): kin (one clash group already)
+K  salty / salts (27229 / 64060; FF; 09:288): kin (one clash group already)
+K  winger / wing (42691 / 61259; FF; 10:43): kin (one clash group already)
+K  bump / bumper (42936 / 45720; FF; 10:53): kin (one clash group already)
+K  stewards / steward (44854 / 47627; FF; 10:87): kin (one clash group already) -- the same word in another sense (race stewards / ship steward)
+K  flipper / flip (45707 / 61612; FF; 10:102): kin (one clash group already)
+K  tanker / tank (47104 / 47419; FF; 10:114): kin (one clash group already)
+K  marble / marbling (2057 / 45859; FF; 10:162): kin (one clash group already)
+K? fisher / fishy (8002 / 14749; FF; 10:256): kin (one clash group already) -- fisher (the animal) reads as fish + er; look-alike with fishy
+K? scale / scaler (8836 / 57568; FF; 10:270): kin (one clash group already) -- tartar scale is the same word as fish scale; the scaler removes it
+K  glide / glider (10366 / 60250; FF; 10:284): kin (one clash group already)
+K  creep / creepers (10380 / 24645; FF; 10:287): kin (one clash group already)
+K  fishy / fish (14749 / 63332; FF; 10:335): kin (one clash group already)
+K  creepers / creeper (24645 / 30597; FF; 10:429): kin (one clash group already)
+K  hook / hooking (25003 / 43626; FF; 10:434): kin (one clash group already)
+K  cracker / cracking (25248 / 40552; FF; 10:436): kin (one clash group already)
+K  ceramicist / ceramic (33028 / 38998; FF; 11:29): kin (one clash group already)
+K? scale / scaler (7193 / 57568; FF; 11:56): kin (one clash group already) -- scale (tartar) is the same written word as scale (weighing)
+K  marble / marbling (39869 / 45859; FF; 11:74): kin (one clash group already)
+K  string / stringer (42300 / 55314; FF; 11:93): kin (one clash group already)
+K  string / stringer (42300 / 58803; FF; 11:94): kin (one clash group already)
+K  bump / bumper (42936 / 44870; FF; 11:101): kin (one clash group already)
+K  hooking / hook (43626 / 43711; FF; 11:114): kin (one clash group already)
+K  snap / snappy (46370 / 50127; FF; 11:132): kin (one clash group already)
+K  snap / snaps (46370 / 55554; FF; 11:133): kin (one clash group already) -- snaps (press studs) is the same word in another sense
+K? hooky / hook (4545 / 25003; FF; 11:180): kin (one clash group already) -- play hooky is perhaps from hook it: look-alike
+K? hooky / hook (4545 / 43711; FF; 11:182): kin (one clash group already) -- play hooky is perhaps from hook it: look-alike
+K  creep / creeper (7438 / 30597; FF; 11:202): kin (one clash group already)
+K  stringer / string (35209 / 42300; FF; 11:296): kin (one clash group already)
+K  wedge / wedging (38896 / 46007; FF; 11:299): kin (one clash group already)
+K  bump / bumps (42936 / 43446; FF; 11:309): kin (one clash group already)
+K  bumps / bumper (43446 / 45711; FF; 11:315): kin (one clash group already)
+K  wedging / wedge (46007 / 50355; FF; 11:323): kin (one clash group already)
+K  rockery / rock (1867 / 65292; FF; 11:368): kin (one clash group already) -- the rock dove is named from rock
+K  sleeplessness / sleeper (3682 / 47699; FF; 11:400): kin (one clash group already)
+K  wings / wing (12275 / 61259; FF; 12:50): kin (one clash group already) -- the same word in another sense: look-alike
+K  steward / stewards (20743 / 44854; FF; 12:141): kin (one clash group already) -- estate steward / racing stewards: the same word in another sense
+K  starless / star (40071 / 64806; FF; 12:273): kin (one clash group already) -- starless / star jump: the same word in another sense
+K  carrier / carry (40942 / 45779; FF; 12:276): kin (one clash group already) -- carrier (genetics) / carry (esports): the same word in another sense
+K  bumpers / bumper (43231 / 45720; FF; 12:294): kin (one clash group already) -- bumpers (bowling) / bumper (controller): the same word in another sense
+K  steward / stewards (44199 / 44854; FF; 12:305): kin (one clash group already) -- sports steward / racing stewards: the same word in another sense
+K? snapper / snap (1250 / 46370; FF; 12:349): kin (one clash group already) -- snapper (fish) and snap (AFL kick): one root, look-alike
+K? fisher / fish (8002 / 65075; FF; 12:471): kin (one clash group already) -- fisher (animal) looks like it comes from fish
+K? fisher / fish (8002 / 65148; FF; 12:472): kin (one clash group already) -- fisher (animal) looks like it comes from fish
+K? whiting / white (8735 / 64804; FF; 12:485): kin (one clash group already) -- consistency (was N?, chunk 12:485): whiting is white + -ing, named for its white flesh (as 04:171, 04:188)
+K  locking / lock (11857 / 42905; FF; 13:32): kin (one clash group already)
+K  greenie / green (35608 / 64789; FF; 13:263): kin (one clash group already)
+K  marbled / marbling (38912 / 45859; FF; 13:270): kin (one clash group already)
+K  score / scoring (41489 / 45994; FF; 13:282): kin (one clash group already) -- the same word in another sense: look-alike
+K  hook / hooking (43216 / 43626; FF; 13:292): kin (one clash group already)
+K  bumpers / bumper (43231 / 44870; FF; 13:293): kin (one clash group already) -- the same word in another sense: look-alike
+K  bindings / binding (43528 / 51584; FF; 13:304): kin (one clash group already)
+K  carry / carrier (45779 / 47069; FF; 13:317): kin (one clash group already)
+K  snap / snapper (46370 / 63623; FF; 13:321): kin (one clash group already)
+K? hooky / hook (4545 / 43216; FF; 13:365): kin (one clash group already) -- hooky (truancy, from hook it) looks built on hook
+K  wedge / wedging (28562 / 46007; FF; 13:468): kin (one clash group already)
+K? bumpers / bumps (43231 / 43446; FF; 14:28): kin (one clash group already) -- bumpers and bumps both from bump
+K? wedging / wedge (46007 / 63365; FF; 14:36): kin (one clash group already) -- wedging clay and a wedge of lettuce: one word wedge
+K? string / stringer (10270 / 55314; FF; 14:116): kin (one clash group already) -- stringer (stairs) is from string: look-alike
+K? string / stringer (10270 / 58803; FF; 14:117): kin (one clash group already) -- as string/stringer above
+K  marble / marbling (20007 / 45859; FF; 14:169): kin (one clash group already)
+K  rod / rods (41751 / 45596; FF; 14:229): kin (one clash group already) -- the same word in another sense: look-alike (tarot suit)
+K  saddling / saddle (44875 / 50230; FF; 14:245): kin (one clash group already)
+K? string / stringer (10270 / 35209; FF; 14:303): kin (one clash group already) -- stringer (reporter) is from string: look-alike
+K? wedge / wedging (34043 / 46007; FF; 14:377): kin (one clash group already) -- wedge (money) and wedging: one word wedge
+K? checkers / check (5714 / 45248; F-; 01:13): kin (one clash group already) -- checkers is from check; check (poker) is another sense
+K? pottery / pot (5853 / 45244; F-; 01:15): kin (one clash group already) -- pottery is from pot; pot (poker) is another sense
+K? drawing / draw (5856 / 45365; F-; 01:16): kin (one clash group already) -- draw (lottery) is the same word in another sense
+K? potty / pot (15799 / 45244; F-; 01:22): kin (one clash group already) -- potty is from pot (chamber pot); pot (poker) is another sense
+K? drawer / draw (25765 / 45365; F-; 01:53): kin (one clash group already) -- drawer (pulled out) is from draw; draw (lottery) is another sense
+K  fishing / fish (5631 / 45269; F-; 01:484): kin (one clash group already) -- fish (poker player) is the same word in another sense
+K? crack / crackers (15493 / 19094; -F; 02:275): kin (one clash group already) -- crackers are named from crack
+K  checks / check (24919 / 45248; F-; 02:479): kin (one clash group already) -- the same word in another sense: fabric checks / poker check
+K? potter / pot (33027 / 45244; F-; 03:154): kin (one clash group already) -- potter is from pot; pot in poker is the same written word
+K? checkered / check (38904 / 45248; F-; 03:206): kin (one clash group already) -- checkered is from checker/check (chess)
+K  fishy / fish (14749 / 45269; F-; 07:234): kin (one clash group already) -- fish (weak poker player) is the same word in another sense
+K  crack / cracker (15493 / 25248; -F; 07:243): kin (one clash group already) -- crack (drug) and cracker (firework): the same written word in another sense
+K  sponge / sponge (1298 / 23835; FF; 01:270): kin (in one clash group by now) -- the same word in another sense: look-alike (sea creature / bath sponges)
+K  checkers / checker (5714 / 45534; FF; 01:488): kin (in one clash group by now)
+K  scale / scaly (10351 / 39117; FF; 02:153): kin (in one clash group by now)
+K  flippers / flipper (43275 / 45707; FF; 05:166): kin (in one clash group by now) -- flipper (pinball) is flipper in another sense
+K  marbles / marbling (5929 / 45859; FF; 05:327): kin (in one clash group by now)
+K  scale / scaler (10351 / 57568; FF; 05:385): kin (in one clash group by now) -- scaler removes scale (flakes): same word
+K  string / stringer (10707 / 50131; FF; 06:312): kin (in one clash group by now)
+K  vocalist / vocal (6132 / 28698; FF; 07:113): kin (in one clash group by now)
+K? scale / scale (10351 / 45902; FF; 02:157): kin (in one clash group by now) -- the same written word: animal scales / scale model
+K? check / checker (45435 / 45534; FF; 03:317): kin (in one clash group by now) -- checker (game piece) is from check (pilot checkers/check K?)
+K? fishing / fisher (5631 / 8002; FF; 05:321): kin (in one clash group by now) -- fisher (animal) looks like fish + er (origin disputed)
+K? scales / scaler (49966 / 57568; FF; 06:230): kin (in one clash group by now) -- scaler (removes dental scale) and scales (weighing): same written word, other sense
+K? tanker / tank (2810 / 45666; FF; 07:14): kin (in one clash group by now) -- tank (game role) is the same word in another sense
+K? movement / movers (11057 / 24247; FF; 07:197): kin (in one clash group by now) -- movement (music) and movers both from move
+K? tank / tanker (45666 / 49255; FF; 08:94): kin (in one clash group by now) -- tank (game role) is named after the armored tank; tanker is from tank
+K? flicks / flicker (12816 / 39898; FF; 09:42): kin (in one clash group by now) -- flicks (films) is from flicker
+K? flip / flipper (27737 / 45707; FF; 09:307): kin (in one clash group by now) -- flip (swear) and flipper: the same written word, other sense
+K? down / downs (28179 / 30950; FF; 10:478): kin (in one clash group by now) -- down (direction) and downs (hills) are different words, same look
+K? tanker / tank (2810 / 4451; F-; 07:12): kin (in one clash group by now) -- tanker carries a tank; the armored tank is the same word in another sense
+K? tank / tanker (4451 / 49255; -F; 07:74): kin (in one clash group by now) -- tanker is from tank (storage); the armored tank is the same word
+
+== Left unlinked: group over 12 (223) ==
+K  engine / engineer (2851 / 4075; FF; 01:4): too big: left unlinked (clash groups 5 + 9 = 14 > 12)
+K  engine / engineer (2851 / 50475; FF; 01:5): too big: left unlinked (clash groups 5 + 9 = 14 > 12)
+K  engine / engineer (2851 / 50476; FF; 01:6): too big: left unlinked (clash groups 5 + 9 = 14 > 12)
+K  digger / dig (3102 / 67334; FF; 01:7): too big: left unlinked (clash groups 8 + 8 = 16 > 12)
+K  travels / travel (2953 / 28275; FF; 01:343): too big: left unlinked (clash groups 7 + 8 = 15 > 12)
+K  travels / traveler (2953 / 67354; FF; 01:344): too big: left unlinked (clash groups 7 + 8 = 15 > 12)
+K? set / setting (3612 / 6470; FF; 01:382): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- setting is from set (other sense)
+K? set / setter (3612 / 51085; FF; 01:383): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- setter (dog) is named from set (to crouch)
+K? setting / set (6470 / 41468; FF; 02:39): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- setting is from set (math set is the same word in another sense)
+K  setting / settings (6470 / 42379; FF; 02:40): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- the same word in another sense: story setting / software settings
+K? setting / set (6470 / 42933; FF; 02:41): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- setting is from set; set (volleyball) is the same word in another sense
+K? setting / set (6470 / 42989; FF; 02:42): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- setting is from set; set (tennis) is the same word in another sense
+K? setting / set (6470 / 62396; FF; 02:43): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- setting is from set; set here is the English word read as French sept
+K? sneakers / sneaking (24620 / 39613; FF; 02:465): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- sneakers are named from sneak (quiet soles)
+K? sneakers / sneaky (24620 / 56725; FF; 02:466): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- sneakers are named from sneak (quiet soles)
+K? sneakers / sneak (24620 / 67310; FF; 02:467): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- sneakers are named from sneak (quiet soles)
+K  cup / cups (25507 / 45599; FF; 03:5): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- the same word in another sense: look-alike (tarot cups)
+K  cup / cupping (25507 / 59391; FF; 03:6): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- cupping is done with cups
+K  chips / chip (39159 / 43058; FF; 03:213): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense: look-alike (golf chip)
+K  chips / chip (39159 / 44281; FF; 03:214): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense: look-alike (golf chip)
+K  chips / chip (39159 / 45539; FF; 03:215): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense: look-alike (game chips)
+K? sneaking / sneakers (39613 / 45868; FF; 03:236): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- sneakers are from sneak
+K? set / setter (41468 / 51085; FF; 03:264): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the setter dog is named from set (to crouch)
+K? settings / setter (42379 / 51085; FF; 03:276): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the setter dog is named from set; settings is from set
+K? set / setter (42933 / 51085; FF; 03:280): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the setter dog is named from set (to crouch)
+K? set / setter (42989 / 51085; FF; 03:282): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the setter dog is named from set (to crouch)
+K  trunks / trunk (43279 / 48743; FF; 03:287): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense: look-alike (pilot)
+K? sneakers / sneaky (45868 / 56725; FF; 03:325): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- sneakers are from sneak
+K? sneakers / sneak (45868 / 67310; FF; 03:326): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- sneakers are from sneak
+K  boarding / board (47146 / 48176; FF; 03:333): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  roll / roller (554 / 31182; FF; 03:389): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- roller (wave) is from roll
+K  trunk / trunks (2577 / 24423; FF; 03:457): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense: look-alike (pilot)
+K  skin / skins (3189 / 50423; FF; 03:487): too big: left unlinked (clash groups 11 + 8 = 19 > 12) -- the same word in another sense: look-alike (drum skins)
+K  heel / heeler (3212 / 63725; FF; 03:490): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the heeler dog nips heels
+K? dressing / dress (3465 / 4869; FF; 04:5): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- a wound dressing is from dress (to dress a wound): look-alike
+K  breaking / break (6214 / 28901; FF; 04:117): too big: left unlinked (clash groups 5 + 8 = 13 > 12)
+K  heel / heeler (9606 / 63725; FF; 04:197): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- heeler dogs nip at heels
+K  trunk / trunks (10325 / 24423; FF; 04:217): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense: look-alike
+K  spin / spinner (11823 / 45135; FF; 04:245): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spin / spinner (11823 / 46088; FF; 04:246): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  trunk / trunks (14249 / 43279; FF; 04:269): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- the same word in another sense: look-alike (swimming trunks)
+K  cupping / cup (15561 / 25507; FF; 04:319): too big: left unlinked (clash groups 8 + 8 = 16 > 12)
+K  walking / walkies (15808 / 50881; FF; 04:323): too big: left unlinked (clash groups 12 + 5 = 17 > 12)
+K  walking / walker (15808 / 55010; FF; 04:324): too big: left unlinked (clash groups 12 + 5 = 17 > 12) -- the zombie walker walks
+K  walk / walkies (16849 / 50881; FF; 04:344): too big: left unlinked (clash groups 12 + 5 = 17 > 12)
+K  walk / walker (16849 / 55010; FF; 04:345): too big: left unlinked (clash groups 12 + 5 = 17 > 12) -- the zombie walker walks
+K  spin / spinner (16863 / 45135; FF; 04:348): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spin / spinner (16863 / 46088; FF; 04:349): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  roll / roller (16874 / 31182; FF; 04:350): too big: left unlinked (clash groups 5 + 8 = 13 > 12)
+K  key / key (25699 / 42734; FF; 04:421): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- key (basketball) is the same word in another sense
+K  trunks / trunk (24423 / 30032; FF; 04:454): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- the same word in another sense: look-alike
+K  heels / heeler (24623 / 63725; FF; 04:458): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K? skinny / skins (29231 / 50423; FF; 05:52): too big: left unlinked (clash groups 11 + 8 = 19 > 12) -- skins (drumheads) is skin in another sense; skinny is from skin
+K? settings / set (42379 / 43418; FF; 05:151): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- settings is from set (other sense), as pilot
+K  spin / spinner (43559 / 45135; FF; 05:171): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spin / spinner (43559 / 46088; FF; 05:172): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  skin / skins (50229 / 50423; FF; 05:204): too big: left unlinked (clash groups 11 + 8 = 19 > 12) -- skins (drums) is skin in another sense
+K  skins / skin (50423 / 67266; FF; 05:207): too big: left unlinked (clash groups 8 + 11 = 19 > 12) -- skins (drums) is skin in another sense
+K  heeler / heel (63725 / 67231; FF; 05:217): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- heeler nips heels
+K  fly / flies (1344 / 12283; FF; 05:245): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- flies (theatre) is fly in another sense
+K? trunk / trunking (2577 / 61477; FF; 05:267): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- trunking is from trunk
+K  skin / skinner (3189 / 20751; FF; 05:281): too big: left unlinked (clash groups 11 + 8 = 19 > 12)
+K  digger / dig (4377 / 6859; FF; 05:302): too big: left unlinked (clash groups 8 + 9 = 17 > 12) -- digger (soldier) is named from digging trenches
+K  digger / dig (4377 / 30752; FF; 05:303): too big: left unlinked (clash groups 8 + 9 = 17 > 12) -- digger (soldier) is named from digging trenches
+K  slide / slider (5941 / 8600; FF; 05:328): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- slider (turtle) is named for sliding
+K  slide / slider (5941 / 43689; FF; 05:330): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- slider (curling) is from slide
+K  slider / slide (8600 / 10730; FF; 05:360): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- slider (turtle) is named for sliding
+K  slider / slide (8600 / 39762; FF; 05:361): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- slider (turtle) is named for sliding
+K  slider / slide (8600 / 41079; FF; 05:362): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- slider (turtle) is named for sliding
+K  slider / slide (8600 / 44279; FF; 05:363): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- slider (turtle) is named for sliding
+K? trunk / trunking (10325 / 61477; FF; 05:384): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- trunking is from trunk
+K  slide / slider (10730 / 43689; FF; 05:391): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- slider (curling) is from slide
+K  spin / spinner (11823 / 42871; FF; 05:405): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spin / spinner (11823 / 58899; FF; 05:406): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  flies / fly (12283 / 67311; FF; 05:414): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- fly (move) is fly in another sense
+K  cut / cutter (14984 / 59139; FF; 05:441): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  cut / cutting (14984 / 62664; FF; 05:442): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  spin / spinner (16863 / 42871; FF; 05:467): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spin / spinner (16863 / 58899; FF; 05:468): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K? skinner / skinny (20751 / 29231; FF; 06:7): too big: left unlinked (clash groups 8 + 11 = 19 > 12) -- skinner and skinny both from skin
+K  skinner / skin (20751 / 50229; FF; 06:8): too big: left unlinked (clash groups 8 + 11 = 19 > 12) -- skinner from skin (fruit skin: same word, other sense)
+K  skinner / skin (20751 / 67266; FF; 06:9): too big: left unlinked (clash groups 8 + 11 = 19 > 12) -- skinner from skin
+K  heels / heel (24623 / 51585; FF; 06:50): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense: look-alike
+K  chippy / chips (27344 / 39159; FF; 06:91): too big: left unlinked (clash groups 5 + 8 = 13 > 12)
+K? chippy / chip (27344 / 49787; FF; 06:93): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- chippy (chip shop) and chip (electronics): same written word, other sense
+K  board / boarding (28153 / 43625; FF; 06:98): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  board / boardies (28153 / 64231; FF; 06:99): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- boardies are from board
+K? trunk / trunking (30032 / 61477; FF; 06:113): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- trunking is from trunk
+K  slide / slider (39762 / 43689; FF; 06:168): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  slide / slider (41079 / 43689; FF; 06:178): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  spinner / spin (42871 / 43559; FF; 06:189): too big: left unlinked (clash groups 5 + 8 = 13 > 12)
+K? trunks / trunking (43279 / 61477; FF; 06:194): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- trunks and trunking: both from trunk
+K  spin / spinner (43559 / 58899; FF; 06:200): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  boarding / board (43625 / 60687; FF; 06:202): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  slider / slide (43689 / 44279; FF; 06:204): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  cut / cutter (45526 / 59139; FF; 06:215): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  cut / cutting (45526 / 62664; FF; 06:216): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K? boarding / boardies (47146 / 64231; FF; 06:224): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- boarding and boardies: both from board
+K  cut / cutter (49265 / 59139; FF; 06:227): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  cut / cutting (49265 / 62664; FF; 06:228): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  board / boardies (60687 / 64231; FF; 06:236): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  skin / skins (3189 / 43552; FF; 06:256): too big: left unlinked (clash groups 11 + 8 = 19 > 12) -- skins (skiing) and skin: the same word in another sense
+K  cutting / cut (5581 / 14984; FF; 06:281): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  cutting / cut (5581 / 45526; FF; 06:282): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  cutting / cut (5581 / 49265; FF; 06:283): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  bubble / bubbler (39566 / 43342; FF; 06:369): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K? skinny / skins (29231 / 43552; FF; 06:384): too big: left unlinked (clash groups 11 + 8 = 19 > 12) -- skinny and skins both from skin
+K  forwarder / forward (30255 / 58438; FF; 06:387): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  bubble / bubbler (43298 / 43342; FF; 06:416): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  skins / skin (43552 / 50229; FF; 06:417): too big: left unlinked (clash groups 8 + 11 = 19 > 12) -- skins (skiing) and skin: the same word in another sense
+K  skins / skin (43552 / 67266; FF; 06:418): too big: left unlinked (clash groups 8 + 11 = 19 > 12) -- skins (skiing) and skin: the same word in another sense
+K  steam / steamy (929 / 31455; FF; 06:457): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K  steam / steaming (929 / 39925; FF; 06:458): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K  humidity / humid (2002 / 31443; FF; 06:485): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K? flyer / fly (4610 / 43268; FF; 07:76): too big: left unlinked (clash groups 8 + 8 = 16 > 12) -- fly (stroke) is short for butterfly; the same written word as flyer's fly
+K  matey / mate (6774 / 47628; FF; 07:135): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spinning / spin (15966 / 50884; FF; 07:250): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spinner / spin (45537 / 50884; FF; 08:93): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  steam / steamer (929 / 2788; FF; 08:148): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K  steam / steamer (929 / 19826; FF; 08:149): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K  beat / beater (974 / 8322; FF; 08:155): too big: left unlinked (clash groups 7 + 6 = 13 > 12) -- the beater in a shoot is from beat
+K  travels / traveling (2953 / 42736; FF; 08:230): too big: left unlinked (clash groups 7 + 8 = 15 > 12)
+K  trooper / troops (4374 / 4390; FF; 08:285): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  shades / shade (4953 / 34278; FF; 08:309): too big: left unlinked (clash groups 10 + 12 = 22 > 12) -- shade (ghost) is the same word in another sense
+K  spinning / spin (5898 / 50884; FF; 08:339): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K? breaking / breaker (6214 / 28527; FF; 08:359): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- breaker (wave) is from break
+K? breaking / break (6214 / 43104; FF; 08:360): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- break (billiards) is the same word in another sense
+K  cut / cutting (6375 / 15981; FF; 08:370): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  setting / setter (6470 / 42940; FF; 08:373): too big: left unlinked (clash groups 5 + 8 = 13 > 12)
+K? shading / shade (12204 / 34278; FF; 09:35): too big: left unlinked (clash groups 10 + 12 = 22 > 12) -- shade (ghost) is the same word shade
+K  spinning / spinner (15966 / 45135; FF; 09:106): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spinning / spinner (15966 / 46088; FF; 09:107): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  cutting / cut (15981 / 50378; FF; 09:108): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- the same word in another sense
+K  rollers / roller (16174 / 31182; FF; 09:111): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- the same word in another sense
+K  wander / wanderer (16915 / 48151; FF; 09:128): too big: left unlinked (clash groups 12 + 7 = 19 > 12)
+K  goggle / goggles (16936 / 24786; FF; 09:132): too big: left unlinked (clash groups 3 + 12 = 15 > 12) -- goggles is from goggle
+K? slider / slid (19072 / 26622; FF; 09:148): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- slider is from slide; slid its past tense
+K  trunk / trunks (23176 / 24423; FF; 09:197): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- trunks (underwear) and trunk: the same word in another sense
+K? eyeglasses / eyeglass (24804 / 66914; FF; 09:249): too big: left unlinked (clash groups 12 + 1 = 13 > 12) -- eyeglass is one lens; eyeglasses the spectacles
+K  breaker / break (28527 / 43387; FF; 09:331): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- the same word in another sense
+K  snappy / snap (32922 / 42772; FF; 09:408): too big: left unlinked (clash groups 11 + 2 = 13 > 12)
+K? shade / shady (34278 / 40057; FF; 09:454): too big: left unlinked (clash groups 12 + 10 = 22 > 12) -- shade (ghost) and shady: from shade
+K? shade / shaded (34278 / 40070; FF; 09:455): too big: left unlinked (clash groups 12 + 10 = 22 > 12) -- shade (ghost) and shaded: from shade
+K  snap / snappy (42772 / 50127; FF; 10:44): too big: left unlinked (clash groups 2 + 11 = 13 > 12)
+K  snap / snaps (42772 / 55554; FF; 10:45): too big: left unlinked (clash groups 2 + 11 = 13 > 12) -- snaps (fasteners) is the same word in another sense
+K  walk / walkies (42818 / 50881; FF; 10:47): too big: left unlinked (clash groups 12 + 5 = 17 > 12)
+K  walk / walker (42818 / 55010; FF; 10:48): too big: left unlinked (clash groups 12 + 5 = 17 > 12)
+K  break / breaking (43387 / 44066; FF; 10:65): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- breaking is from break (other sense)
+K  skin / skins (45655 / 50423; FF; 10:99): too big: left unlinked (clash groups 11 + 8 = 19 > 12) -- the same word in another sense (game skin / drum skins)
+K  heel / heeler (50868 / 63725; FF; 10:129): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  beat / beats (974 / 40769; FF; 10:145): too big: left unlinked (clash groups 7 + 6 = 13 > 12)
+K  wanderings / wander (2952 / 16915; FF; 10:171): too big: left unlinked (clash groups 7 + 12 = 19 > 12)
+K  cutting / cut (3653 / 6375; FF; 10:177): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  cutting / cut (3653 / 50378; FF; 10:178): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  digger / dig (4377 / 42935; FF; 10:195): too big: left unlinked (clash groups 8 + 9 = 17 > 12)
+K  cut / cutting (6375 / 44910; FF; 10:232): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  spinning / spinner (15966 / 42871; FF; 10:348): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spinning / spinner (15966 / 58899; FF; 10:349): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  skinner / skin (20751 / 45655; FF; 10:395): too big: left unlinked (clash groups 8 + 11 = 19 > 12)
+K  trunk / trunking (23176 / 61477; FF; 10:410): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  slid / slider (26622 / 42822; FF; 10:450): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  board / boarding (35510 / 43625; FF; 11:52): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  board / boardies (35510 / 64231; FF; 11:53): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- boardies from board(shorts)
+K  snap / snappy (43413 / 50127; FF; 11:107): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K  snap / snaps (43413 / 55554; FF; 11:108): too big: left unlinked (clash groups 1 + 12 = 13 > 12) -- snaps (press studs) is the same word in another sense
+K  cutting / cut (44910 / 50378; FF; 11:123): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  beat / beating (974 / 43472; FF; 11:156): too big: left unlinked (clash groups 7 + 6 = 13 > 12) -- the same word in another sense: look-alike
+K  bubbler / bubbles (43342 / 64062; FF; 11:312): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  skins / skin (43552 / 45655; FF; 11:316): too big: left unlinked (clash groups 8 + 11 = 19 > 12) -- the same word in another sense: look-alike
+K  snapper / snap (1250 / 42772; FF; 11:356): too big: left unlinked (clash groups 12 + 2 = 14 > 12) -- the snapper is named from snap
+K  trooper / troop (4374 / 10245; FF; 11:419): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  trooper / troop (4374 / 34694; FF; 11:420): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  spinning / spinner (5898 / 45135; FF; 11:443): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  spinning / spinner (5898 / 46088; FF; 11:444): too big: left unlinked (clash groups 8 + 5 = 13 > 12)
+K  breaking / breaker (6214 / 23646; FF; 11:451): too big: left unlinked (clash groups 5 + 8 = 13 > 12)
+K? sett / setter (10152 / 42940; FF; 12:7): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- consistency (was N?, chunk 12:7): sett is a spelling of set, and setter/set is kin? in every other sense of set
+K? breaker / break (23646 / 43387; FF; 12:151): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- breaker and break (surfing): both from break
+K  roaming / roam (35142 / 48182; FF; 12:255): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K  key / keyless (42734 / 66805; FF; 12:283): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- the basketball key / keyless: the same word in another sense
+K  snap / snapper (42772 / 63623; FF; 12:284): too big: left unlinked (clash groups 2 + 12 = 14 > 12)
+K  setter / set (42940 / 43418; FF; 12:289): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- setter (volleyball) / set (surfing): the same written word in another sense
+K? heel / heeler (43774 / 63725; FF; 12:303): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- heeler (dog) is from heel; the wrestling heel is the same written word
+K? heel / heeler (47465 / 63725; FF; 12:321): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- heeler is from heel; heel (a boat leaning) is the same written word
+K? snapper / snap (1250 / 43413; FF; 12:348): too big: left unlinked (clash groups 12 + 1 = 13 > 12) -- snapper (fish) and snap: one root, look-alike
+K? dressing / dresser (3465 / 12315; FF; 12:389): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- dressing (wound) and dresser (theatre): both from dress
+K  spinning / spinner (5898 / 42871; FF; 12:435): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- spinning (wool) / spinner (cricket): from spin, another sense
+K  spinning / spinner (5898 / 58899; FF; 12:436): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- spinning (wool) / spinner (pinball): from spin, another sense
+K  slider / slider (8600 / 19072; FF; 12:482): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- slider (turtle) / sliders (burgers): the same written word in another sense
+K? cutting / cutter (15981 / 59139; FF; 13:84): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- the cutter boat and cutting a diet both from cut
+K  slider / slide (19072 / 43441; FF; 13:106): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  slider / slider (19072 / 43689; FF; 13:107): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- the same word in another sense: look-alike
+K  snap / snapper (43413 / 63623; FF; 13:298): too big: left unlinked (clash groups 1 + 12 = 13 > 12)
+K? heeling / heeler (43475 / 63725; FF; 13:302): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- heeler is from heel; heeling here is the boat's tilt: same look
+K  cable / cable (4596 / 28704; FF; 13:366): too big: left unlinked (clash groups 6 + 7 = 13 > 12)
+K  baton / batons (33682 / 45598; FF; 14:6): too big: left unlinked (clash groups 3 + 12 = 15 > 12) -- the same word in another sense: look-alike (batons the tarot suit)
+K? cutting / cutter (3653 / 59139; FF; 14:71): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- as cutting/cutter above
+K  slider / slide (42822 / 43441; FF; 14:232): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K? heeling / heel (43475 / 51585; FF; 14:239): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- heeling (boat leans) and heel (guitar): one written word
+K? cutting / cutter (44910 / 59139; FF; 14:246): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- as cutting/cutter above
+K  rover / rove (46350 / 48192; FF; 14:248): too big: left unlinked (clash groups 2 + 12 = 14 > 12)
+K? roving / rove (24914 / 48192; FF; 14:351): too big: left unlinked (clash groups 2 + 12 = 14 > 12) -- roving (wool) and rove: one written word
+K  chips / chip (45207 / 49787; -F; 01:188): too big: left unlinked (clash groups 5 + 8 = 13 > 12) -- the same word in another sense: look-alike (casino / electronics)
+K? pottery / pot (5853 / 15481; F-; 02:2): too big: left unlinked (clash groups 11 + 10 = 21 > 12) -- pottery is from pot (vessel); pot the drug is the same written word
+K? pot / potty (15481 / 15799; -F; 02:273): too big: left unlinked (clash groups 10 + 11 = 21 > 12) -- potty is from pot (chamber pot); pot the drug is the same written word
+K  pot / pot (15481 / 19810; -F; 02:274): too big: left unlinked (clash groups 10 + 11 = 21 > 12) -- the same word in another sense: look-alike (pot drug / pots)
+K  weeding / weed (23948 / 50261; F-; 02:442): too big: left unlinked (clash groups 3 + 10 = 13 > 12)
+K? board / boarding (45286 / 47146; -F; 03:313): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- boarding is from board (a ship's board); poker board is the same written word
+K  bubbly / bubble (966 / 39566; -F; 03:402): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  bubbly / bubble (966 / 43298; -F; 03:404): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K? settings / set (42379 / 45285; F-; 05:152): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- as settings/set
+K  cut / cutter (14984 / 34718; F-; 05:439): too big: left unlinked (clash groups 8 + 6 = 14 > 12)
+K  cutter / cut (34718 / 45526; -F; 06:141): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  cutter / cut (34718 / 49265; -F; 06:142): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K? pot / potter (15481 / 33027; -F; 07:242): too big: left unlinked (clash groups 10 + 11 = 21 > 12) -- pot (drug) is the same written word as the potter's pot
+K  spectacles / spectacle (24783 / 44976; F-; 07:359): too big: left unlinked (clash groups 12 + 1 = 13 > 12) -- spectacle (show) is the same word in another sense
+K  bubbly / bubbles (966 / 64062; -F; 08:153): too big: left unlinked (clash groups 6 + 8 = 14 > 12)
+K  beat / beater (974 / 45170; F-; 08:156): too big: left unlinked (clash groups 7 + 6 = 13 > 12)
+K  jointer / joint (23700 / 50267; F-; 11:252): too big: left unlinked (clash groups 4 + 10 = 14 > 12)
+K  setter / set (42940 / 45285; F-; 12:290): too big: left unlinked (clash groups 8 + 5 = 13 > 12) -- setter (volleyball) / set (poker): the same written word in another sense
+K? cutting / cutter (15981 / 34718; F-; 13:83): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- the cutter boat and cutting a diet both from cut
+K? quad / quads (43569 / 58915; F-; 13:305): too big: left unlinked (clash groups 8 + 7 = 15 > 12) -- quad (skating) and quads (poker) are both short forms of quad-
+K? cutting / cutter (3653 / 34718; F-; 14:70): too big: left unlinked (clash groups 8 + 6 = 14 > 12) -- the cutter ship and cutting (fitness) both from cut
+K? cutter / cutting (34718 / 44910; -F; 14:225): too big: left unlinked (clash groups 6 + 8 = 14 > 12) -- cutter (ship) and cutting (horse event) both from cut
+
+== Left unlinked: group 9-12 but a theme under 20 members (55) ==
+K  singer / sing (6131 / 28863; FF; 01:17): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 12 / 20 members, under 20)
+K  dog / dogs (1435 / 27280; FF; 01:277): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 9 / 51 members, under 20) -- the same word in another sense: look-alike (animal / slang for feet)
+K  ghost / ghosting (12529 / 27233; FF; 02:213): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 8 / 49 members, under 20)
+K  key / key (25699 / 30996; FF; 02:416): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 12 / 29 members, under 20) -- the same word in another sense: look-alike (keys / island key)
+K  cell / cell (3278 / 65783; FF; 03:274): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 15 / 51 members, under 20) -- cell phone is the same word in another sense
+K  fin / fin (8833 / 47124; FF; 04:190): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 9 / 26 members, under 20) -- the same word in another sense: look-alike (rocket fins)
+K  cans / can (7331 / 27908; FF; 05:348): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 17 / 41 members, under 20) -- cans (headphones) and can (toilet): one word, other sense
+K  can / cannery (25476 / 57704; FF; 06:60): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 12 / 46 members, under 20)
+K  header / head (42680 / 50421; FF; 08:59): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 13 / 46 members, under 20)
+K  cup / cups (43054 / 45599; FF; 08:69): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 19 / 10 members, under 20) -- the same word in another sense (tarot suit)
+K  fins / fin (43346 / 43404; FF; 08:75): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 19 / 60 members, under 20) -- the same word in another sense (diving fins vs surfboard fin)
+K  buzz / buzzer (3994 / 49774; FF; 08:271): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 91 / 11 members, under 20)
+K  trekking / trekker (5608 / 48160; FF; 08:328): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 11 / 30 members, under 20)
+K  spurs / spur (9569 / 30852; FF; 08:442): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 9 / 34 members, under 20) -- the same word in another sense (mountain spur)
+K  cupping / cup (15561 / 43054; FF; 09:99): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 33 / 19 members, under 20) -- the same word in another sense
+K  bird / birdie (27973 / 42657; FF; 09:315): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 14 / 38 members, under 20)
+K  spitting / spit (31212 / 45413; FF; 09:377): left unlinked: group would be 12 (9-12) and a theme is small (smallest theme 37 / 14 members, under 20) -- the same word in another sense
+K  hooker / hook (42901 / 43040; FF; 10:50): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 43 / 16 members, under 20)
+K  fins / fin (43346 / 47124; FF; 10:63): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 19 / 26 members, under 20) -- the same word in another sense (diving fins / aircraft fin)
+K  counsel / counseling (4071 / 16377; FF; 10:184): left unlinked: group would be 12 (9-12) and a theme is small (smallest theme 12 / 46 members, under 20)
+K  hack / hacker (4133 / 33044; FF; 10:185): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 11 / 42 members, under 20) -- hacker is from hack (other sense)
+K  hack / hacking (4133 / 33656; FF; 10:186): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 11 / 58 members, under 20) -- hacking is from hack (other sense)
+K  hack / hacking (4133 / 50016; FF; 10:187): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 11 / 36 members, under 20) -- the same word in another sense (hack journalist / hacking ride)
+K  cans / can (7331 / 19887; FF; 10:243): left unlinked: group would be 11 (9-12) and a theme is small (smallest theme 17 / 27 members, under 20) -- the same word in another sense (cans headphones / can)
+K  skipper / skip (29360 / 43672; FF; 11:1): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 13 / 34 members, under 20) -- skip (curling) is short for skipper
+K  brook / brookie (30873 / 63635; FF; 11:8): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 6 / 37 members, under 20) -- brookie is the brook trout
+K  snappy / snap (32922 / 43413; FF; 11:25): left unlinked: group would be 12 (9-12) and a theme is small (smallest theme 33 / 11 members, under 20)
+K  hook / hooking (43040 / 43626; FF; 11:103): left unlinked: group would be 12 (9-12) and a theme is small (smallest theme 16 / 47 members, under 20)
+K  spur / spurs (2898 / 9569; FF; 11:167): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 32 / 9 members, under 20) -- the same word in another sense: look-alike
+K  spurs / spur (9569 / 23671; FF; 11:211): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 9 / 40 members, under 20) -- the same word in another sense: look-alike
+K  comb / comber (10342 / 31197; FF; 11:218): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 10 / 41 members, under 20) -- comber (wave) from comb
+K  batons / baton (45598 / 46205; FF; 11:322): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 10 / 45 members, under 20) -- the same word in another sense: look-alike
+K  tube / tubing (4575 / 5327; FF; 11:424): left unlinked: group would be 12 (9-12) and a theme is small (smallest theme 11 / 8 members, under 20)
+K  lolly / lolly (610 / 34039; FF; 12:186): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 15 / 40 members, under 20) -- lollies (sweets) / lolly (money): the same word in another sense
+K  chalices / chalice (45600 / 55834; FF; 13:316): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 10 / 34 members, under 20) -- the same word in another sense: look-alike
+K  pentacle / pentacles (22434 / 45602; FF; 14:184): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 31 / 10 members, under 20) -- the same word in another sense: look-alike (tarot suit)
+K  folder / fold (34765 / 45247; F-; 03:184): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 31 / 12 members, under 20)
+K  iron / irons (201 / 21298; F-; 03:375): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 21 / 19 members, under 20) -- irons (shackles) is the same word in another sense
+K  leg / legs (3177 / 53846; F-; 03:483): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 35 / 12 members, under 20) -- the same word in another sense: look-alike (wine legs)
+K  leg / legs (9128 / 53846; F-; 04:194): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 32 / 12 members, under 20) -- the same word in another sense: look-alike (wine legs)
+K  iron / irons (16651 / 21298; F-; 04:338): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 25 / 19 members, under 20) -- irons (shackles) is the same word in another sense
+K  irons / ironing (21298 / 23941; -F; 04:401): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 19 / 37 members, under 20) -- irons (shackles) is the same word in another sense
+K  irons / iron (21298 / 25760; -F; 04:402): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 19 / 30 members, under 20) -- irons (shackles) is the same word in another sense
+K  irons / iron (21298 / 50353; -F; 04:403): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 19 / 24 members, under 20) -- irons (shackles) is the same word in another sense
+K  dryly / dry (29083 / 53853; F-; 05:47): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 40 / 12 members, under 20)
+K  nose / nosy (53864 / 56714; -F; 05:211): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 12 / 44 members, under 20) -- nosy is from nose (wine nose is the same word)
+K  bud / bud (30629 / 50266; F-; 09:381): left unlinked: group would be 12 (9-12) and a theme is small (smallest theme 28 / 9 members, under 20) -- the same word in another sense
+K  stocks / stock (33813 / 34058; -F; 09:435): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 19 / 46 members, under 20) -- the same word in another sense
+K  stake / stake (45212 / 48493; -F; 10:94): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 15 / 38 members, under 20) -- the same written word in another sense (gambling / tent)
+K  stakes / stake (44855 / 45212; F-; 11:120): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 44 / 15 members, under 20) -- the same word in another sense: look-alike
+K  leg / legs (2968 / 53846; F-; 11:389): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 53 / 12 members, under 20) -- legs (wine) is the same word in another sense
+K  stock / stocks (30444 / 33813; F-; 12:211): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 44 / 19 members, under 20) -- stock (flower) / stocks (punishment): the same written word in another sense
+K  stocks / stock (33813 / 45517; -F; 12:245): left unlinked: group would be 10 (9-12) and a theme is small (smallest theme 19 / 31 members, under 20) -- stocks (punishment) / stock (cards): the same written word in another sense
+K  leg / legs (43175 / 53846; F-; 13:291): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 39 / 12 members, under 20) -- the same word in another sense: look-alike
+K  nose / nosing (53864 / 55315; -F; 13:337): left unlinked: group would be 9 (9-12) and a theme is small (smallest theme 12 / 29 members, under 20)
+
+== Left unlinked: group 9-12, a judgement call (K?, another sense): not a sure look-alike (40) ==
+K? server / serve (7274 / 42932; FF; 02:78): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- server is from serve; serve (volleyball) is the same word in another sense
+K? server / serve (7274 / 42985; FF; 02:79): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- server is from serve; serve (tennis) is the same word in another sense
+K? server / serve (7274 / 43075; FF; 02:80): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- server is from serve; serve (table tennis) is the same word in another sense
+K? beans / beanie (16683 / 24490; FF; 02:322): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- a beanie is named from bean (head): look-alike
+K? beanie / bean (24490 / 28259; FF; 02:462): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- a beanie is named from bean (head): look-alike
+K? trail / trailer (30150 / 48599; FF; 03:116): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- trailer is from trail (to drag)
+K? dog / dogged (1435 / 67057; FF; 03:418): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- dogged is from dog
+K? doggy / dogged (27624 / 67057; FF; 05:17): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- dogged and doggy both from dog
+K? skate / skate (510 / 40182; FF; 05:232): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- skate (fish) is another word, same look as the plural skates
+K? comb / comber (3753 / 31197; FF; 06:264): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- a comber (wave) is from comb
+K? stock / stocking (24831 / 25009; FF; 06:371): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- stocking is from stock (leg covering)
+K? flyer / fly (4610 / 58795; FF; 07:77): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- fly (fishing lure) is the same written word as flyer's fly
+K? nanny / nan (10304 / 32391; FF; 07:171): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- nanny (goat) and nan (grandma) are both pet forms of a name; look-alikes
+K? cup / cupping (43054 / 59391; FF; 08:70): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- cupping (coffee tasting) is from cup
+K? flyer / fly (4610 / 24961; FF; 08:301): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- flyer (leaflet) is from fly; fly (trousers) is the same word in another sense
+K? lead / leading (12323 / 26213; FF; 09:41): left unlinked: group would be 11 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- leading (typography) is the same written word as leading (lead role)
+K? lead / leading (13536 / 26213; FF; 09:44): left unlinked: group would be 11 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- leading (typography) is the same written word as leading (lead role)
+K? tailings / tail (31793 / 48123; FF; 11:13): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- tailings (mining waste) from tail: look-alike
+K? hooky / hook (4545 / 43040; FF; 11:181): left unlinked: group would be 12 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- play hooky is perhaps from hook it: look-alike
+K? stockings / stock (24413 / 24831; FF; 11:257): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- stocking is from stock; stock (neckwear) same word
+K? birder / birdie (8411 / 42657; FF; 12:1): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- birdie (shuttlecock) is named from bird, as birder is: look-alike
+K? pluck / plucky (16901 / 56681; FF; 12:108): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- plucky is from pluck (courage); the hand action is the same written word
+K? courtesy / court (35411 / 64812; FF; 12:258): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- consistency (was N?, chunk 12:258): the court shoe is named from court (court dress), the court of courtesy (as 04:29)
+K? hawking / hawker (5600 / 57482; FF; 12:428): left unlinked: group would be 11 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- hawking (falconry) / hawker (trader): one written word hawk
+K? cans / canister (7331 / 25487; FF; 12:465): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- cans (headphones) and canister: look-alike, felt as can
+K? leading / lead (26213 / 43692; FF; 13:171): left unlinked: group would be 11 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- leading (metal strips) is from lead the metal; lead the player is the verb: same look
+K? felling / fell (30239 / 32092; FF; 13:219): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- fell (hill) is another word, but felling reads as its form
+K? principal / principality (11055 / 34272; FF; 13:407): left unlinked: group would be 11 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- principal and principality both from prince
+K? axes / axé (28814 / 51795; FF; 13:469): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- axe (axé music) is another word, but axes looks like its plural
+K? dryer / dry (4727 / 53853; F-; 01:10): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- dryer is from dry; dry wine is another sense
+K? folder / fold (7267 / 45247; F-; 02:73): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- folder is from fold; fold (poker) is the same word in another sense
+K? mugging / mug (33639 / 48818; -F; 03:161): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- mugging is from mug (slang), look-alike
+K? stocking / stocks (25009 / 33813; F-; 04:467): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- stocking and stocks (punishment): look-alikes, same old root
+K? slammer / slam (33718 / 57962; -F; 05:82): left unlinked: group would be 11 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- slammer (prison) is from the door slamming
+K? mug / mugging (14207 / 33639; F-; 07:227): left unlinked: group would be 11 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- mugging is from mug (face); look-alikes
+K? mug / mugging (27325 / 33639; F-; 07:391): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- mug (fool) and mugging both from mug (face)
+K? wage / wager (33859 / 45211; F-; 07:485): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- wage and wager share a root and a look
+K? mugger / mugging (8633 / 33639; F-; 10:265): left unlinked: group would be 10 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- mugger the crocodile is spelled like the mugger who mugs
+K? cranky / crank (32916 / 50275; F-; 11:22): left unlinked: group would be 12 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- cranky from crank; crank (the drug) is the same written word
+K? legless / legs (27333 / 53846; F-; 13:186): left unlinked: group would be 9 (9-12) and the pair is a judgement call (another sense), not a sure look-alike -- legless and legs (of wine) both from leg
+
+== Clash groups after (full library, as the check counts) ==
+clash-big (> 12, warn): 1
+  14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (9-12, info): 59
+  11 (peel, peels*, rind, skin, skin, skinny, ..)
+  11 (scallion, spring onion*, green onion*, green, green, putting green, ..)
+  11 (ribs, spare ribs, baby back ribs, pork ribs, beef ribs, Kansas City ribs, ..)
+  9 (sprinkles, hundreds and thousands*, jimmies*, rainbow sprinkles, confetti sprinkles, sprinkler, ..)
+  10 (dash, pinch, smidgen, sprint, dash, dash, ..)
+  9 (crown, crown feather, crowning, crown, crown, crown, ..)
+  9 (feral pigeon, rock, pigeon, rock dove, rockery, rock garden, ..)
+  11 (down, lie down, down, downward, downwards*, down, ..)
+  9 (paw, give paw, shake, paw, pawing, shaker, ..)
+  12 (kneading, making biscuits, wedging, knead, kneading*, wedge, ..)
+  9 (pass, col, saddle, col, saddle, saddler, ..)
+  9 (brook, rivulet, creek, stream, streaming, streamers, ..)
+  12 (muggy, humid, steamy, steamship, steamer, steam, ..)
+  12 (goggles, safety glasses, glasses, specs*, spectacles, eyeglasses, ..)
+  9 (excavator, digger, JCB, mini digger, excavation, dig, ..)
+  9 (flight attendant, air hostess*, stewardess, attendant, cabin crew, steward, ..)
+  10 (prison, gaol*, jail, prisoner, jailer, penitentiary, ..)
+  11 (carrier, cabin, baby sling, carrier, baby wrap, tote bag, ..)
+  9 (glider, sailplane, gliding, soaring, hang glider, glide, ..)
+  9 (engineer, chief engineer, locomotive driver, engineer, locomotive engineer, train driver*, ..)
+  11 (sleeper car, sleeping car, Pullman, sleeper, insomnia, sleeplessness, ..)
+  12 (wander, roam, rove, stroll, walk, saunter, ..)
+  10 (sunglasses, sunnies*, shades, shade, shady, shaded, ..)
+  12 (tank, main battle tank, tanker, road tanker*, tanker truck, tanker, ..)
+  10 (gray, grey*, graying, light gray, light grey*, dark gray, ..)
+  9 (white, white of the eye*, eye white*, sclera, white, whiting, ..)
+  12 (bump, goose egg, bumper, pop bumper, bumper, shoulder button, ..)
+  10 (marijuana, bud, joint, weed, cannabis, pot, ..)
+  9 (jumping jack, star jump*, star, star, Super Star, star, ..)
+  11 (loofah, luffa*, sponge, bath pouf, pouf, sponge, ..)
+  10 (hair elastic, tie, hair tie, hair ties*, bobble*, tie, ..)
+  11 (fish, seafood, fishing, fisher, fishy, fish, ..)
+  9 (smile, grin, beaming, beam*, ray, beam, ..)
+  11 (sneak, creep, sneaky, sly, tiptoe, sneaking, ..)
+  9 (programmer, coder, developer, cipher, code, software, ..)
+  10 (singer, vocalist, vocals, lead vocal, lead vocals*, lead singer, ..)
+  11 (potter, ceramicist, pottery, ceramics, pot, pots*, ..)
+  12 (ghost, ghostly*, spirit, specter, spectre*, wraith, ..)
+  12 (truancy, bunking off*, wagging*, hooky, hook, hook and eye, ..)
+  9 (binder, folder, fold, folder, fold, fold, ..)
+  11 (string, twine, string, strings*, string section, string, ..)
+  11 (jumpers, sweater, jumper*, jersey*, woolly*, sweaters*, ..)
+  9 (bike lock, bicycle lock, lock, D-lock, locking, locker, ..)
+  9 (quarrel, bolt, bolt, bolt, bolts*, bolt, ..)
+  10 (dart, arrows, dart, darts, dart, dart, ..)
+  10 (fly, butterfly, flies, fly tower, butterfly, butterflies*, ..)
+  9 (fins, flippers, fin, flipper, flip, flipping*, ..)
+  10 (scorer, scorekeeper, twenty, score, score, scoring, ..)
+  9 (sinker, weight, zero gravity, weightless, microgravity, weight, ..)
+  11 (checker, draughtsman, checkered, checkerboard, draughtboard*, chessboard, ..)
+  10 (token, counter, counters*, counter, count, count, ..)
+  12 (wands, batons, rods, staves, rod, perch, ..)
+  10 (marbling, ebru, marble, marbles, marble*, marbled, ..)
+  11 (movie, film*, pic*, flick, picture, movement, ..)
+  10 (magician, conjurer, illusionist, illusion, strolling magician, conjure, ..)
+  12 (snapper, snap, snap, snap, snap, press stud*, ..)
+  11 (scale, scale, scales*, scale, scales*, scales, ..)
+  11 (drawing, draw, draw, draw, draw, draw, ..)
+  9 (wing, wings, wings, winger, wing, wing, ..)
+
+== Part 2: T10 ==
+  settings.model removed (nothing reads it; the model is a browser setting, js/ai.js getModel)
+  aliasOf null -> 0 on 99 entries
+  nextId 67954, highest id 67953: right
+
+== Part 3: T16 (verdict and change per item) ==
+  plaster/Band-Aid: HELD: moving the link from plaster 15383 to the alias Band-Aid 15384 (tm) tips "brand names used as words" to 80% names (53 of 66), and the case lint then warns common-in-names on its 12 genericised words (granola, zipper, aspirin ...), failing the strict export; unchanged
+  great Indian bustard 51130: shown "great bustard" (another species) removed in indian_animals; nameOkIn indian_animals (the full name is the bird's name)
+  atomic: fixed at v402 (atomic family): nothing to do
+  Forbidden 64811 [no gloss]: deleted (no themes, no aliases, no kin, use or group refers to it, not in the export)
+  Quarter 63729 [American stock]: deleted (no themes, no aliases, no kin, use or group refers to it, not in the export)
+  Easter egg: [hidden feature] 45658 merged into [game secret] 5829 (one meaning): gaming_words moves to 5829 (typicality 4), 45658 is now its form alias "Easter eggs" (same id)
+  parc ferme 46710 -> "parc fermé"
+    spelling alias "parc ferme" 67951 added
+  ancien regime: fixed before (Ancien Régime 7104 and ancien régime 55127 with unaccented spelling aliases): nothing to do
+  dada: 6359 is the art movement (gloss "art movement"; art, art_movements, grouped with dadaism), leaves baby_talk; new entry dada [baby talk] 67952 (familiarity 1, typicality 2) in baby_talk
+  brutalism/brutalist: already one synonym group in architecture_styles (rule B): confirmed
+  case kept: special K 15499 (the drug slang, written so), premium bonds 5703, great northern 63356, land art 12006, promised land 34430 (common uses, lowercase as the style rule has it): confirmed
+
+== Part 4: places that are also words ==
+  bath [tub] 27983 leaves places_that_are_also_words; Bath 16586 (English city) linked at typicality 1
+  new entry Mold 67953 (Welsh town, type place, region UK, familiarity 5, typicality 4: a small county town, less known than Slough or Sale, 4)
+  mold [fungus] 30330 leaves places_that_are_also_words
+
+== Field changes ==
+  dada 6359: gloss "" -> "art movement"

@@ -1,0 +1,96 @@
+Library batch v404 (approved by Simon 2026-11-19): tools/gen/batch404.mjs on v403; review list tools/gen/batch404-review.txt.
+Applied: 498 library changes, library v404 (2026-11-19 16:00); rerun 0 changes; npm test 51 pass; strict full export (scratch) exit 0, 62,675 entries;
+style-case.mjs and propword-exceptions.mjs 0 changes, case lint 0; Checks errors 0; warnings clash-big 1 (kebab 14, as before), long 5, maybe-duplicate 1,
+theme-name 3 (all as before). Info: clash-large 7 -> 59, family-kin 502 -> 307, case 6 -> 4, orphan 132 -> 130. Status "rev" set on 258 entries.
+
+== Part 1: kin re-link ==
+544 decided-kin pairs (by root) still not kin on v403 (the 558 "too big" of v400 and a few more; 335 pairs were joined into one entry by v403).
+Linked 226: 6 with a clash group <= 8, 66 at 9-12 (sure look-alike K/KD and every theme of both words has >= 20 members), 154 whose words were in one
+clash group already. Left unlinked 318: 223 over 12, 55 at 9-12 with a theme under 20 members, 40 at 9-12 that are K? judgement calls (another sense).
+
+== Part 3: T16 ==
+plaster/Band-Aid HELD: moving the brand_names_used_as_words link to the Band-Aid alias makes that theme 80% names (53 of 66), so the case lint flags
+its 12 genericised words (granola, zipper, aspirin ...) as common-in-names and the strict export fails. Simon's call (lint exception or accept).
+Other items: see the summary below and the review file.
+
+== Part 4: places that are also words ==
+Bath 16586 linked (typicality 1) instead of bath [tub]; new entry Mold 67953 (Welsh town, place, UK, familiarity 5, typicality 4) instead of mold [fungus].
+Same mistake in the theme, reported, not changed: paradise 29430 and hell 34404 are the common words (no place entries Paradise or Hell exist).
+Also seen: Greece, Hungary, Cuba, Eyam, Jordan are linked although they are not words as written (puns at best: grease, hungry); mould allergy 14935
+is a "spelling" alias of mold [fungus].
+
+== Script summary (dry run on v403) ==
+Part 1 kin: 544 decided-kin pairs still not kin on v403 (pairs whose ids now share one root: 335); linked 6 (group <= 8) + 66 (group 9-12, big themes) + 154 (one clash group already); left unlinked: 223 over 12, 55 9-12 with a small theme (under 20 members), 40 9-12 judgement calls (K?)
+Part 2 T10: settings.model removed (nothing reads it; the model is a browser setting, js/ai.js getModel); aliasOf null -> 0 on 99 entries; nextId 67954, highest id 67953: right
+Part 3 T16:
+  plaster/Band-Aid: HELD: moving the link from plaster 15383 to the alias Band-Aid 15384 (tm) tips "brand names used as words" to 80% names (53 of 66), and the case lint then warns common-in-names on its 12 genericised words (granola, zipper, aspirin ...), failing the strict export; unchanged
+  great Indian bustard 51130: shown "great bustard" (another species) removed in indian_animals; nameOkIn indian_animals (the full name is the bird's name)
+  atomic: fixed at v402 (atomic family): nothing to do
+  Forbidden 64811 [no gloss]: deleted (no themes, no aliases, no kin, use or group refers to it, not in the export)
+  Quarter 63729 [American stock]: deleted (no themes, no aliases, no kin, use or group refers to it, not in the export)
+  Easter egg: [hidden feature] 45658 merged into [game secret] 5829 (one meaning): gaming_words moves to 5829 (typicality 4), 45658 is now its form alias "Easter eggs" (same id)
+  parc ferme 46710 -> "parc fermé"
+    spelling alias "parc ferme" 67951 added
+  ancien regime: fixed before (Ancien Régime 7104 and ancien régime 55127 with unaccented spelling aliases): nothing to do
+  dada: 6359 is the art movement (gloss "art movement"; art, art_movements, grouped with dadaism), leaves baby_talk; new entry dada [baby talk] 67952 (familiarity 1, typicality 2) in baby_talk
+  brutalism/brutalist: already one synonym group in architecture_styles (rule B): confirmed
+  case kept: special K 15499 (the drug slang, written so), premium bonds 5703, great northern 63356, land art 12006, promised land 34430 (common uses, lowercase as the style rule has it): confirmed
+Part 4 places: bath [tub] 27983 leaves places_that_are_also_words; Bath 16586 (English city) linked at typicality 1; new entry Mold 67953 (Welsh town, type place, region UK, familiarity 5, typicality 4: a small county town, less known than Slough or Sale, 4); mold [fungus] 30330 leaves places_that_are_also_words
+library changes 498; status set to rev 258
+Checks: changed kinds: info:case 6 -> 4, info:clash-large 7 -> 59, info:family-kin 502 -> 307, info:orphan 132 -> 130
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 59
+Committed family export equals the in-memory export of v403 before the changes: yes
+Entries 61032 -> 61035; first row whose entry changed: 61032; added parc ferme 67951 (row 61032), dada 67952 (row 61033), Mold 67953 (row 61034); removed none
+Row text changes: Easter egg -> Easter eggs (45658), parc ferme -> parc fermé (46710); flags changed: Easter eggs 45658; familiarity changed: none; root column changed: Easter eggs 45658
+Links 109626 -> 109627; rows whose link count changed: 8 (Easter egg 5829, dada 6359, mould allergy 14935, Bath 16586, bath 27983, mold 30330, mould 30331, Easter eggs 45658)
+Link-index shifts: from row 5668 (save point 5830) on, link positions move
+Links by theme + shown text + row: gone 8, new 9, rating changed 0
+  gone: baby_talk: "dada" (row of 6359)
+  gone: places_that_are_also_words: "mould allergy" (row of 14935)
+  gone: places_that_are_also_words: "bath" (row of 27983)
+  gone: places_that_are_also_words: "mold" (row of 30330)
+  gone: places_that_are_also_words: "mould" (row of 30331)
+  gone: gaming_words: "Easter egg" (row of 45658)
+  gone: motor_racing: "parc ferme" (row of 46710)
+  gone: indian_animals: "great bustard" (row of 51130)
+  new: gaming_words: "Easter egg" (row of 5829)
+  new: places_that_are_also_words: "Bath" (row of 16586)
+  new: video_games: "Easter eggs" (row of 45658)
+  new: gaming_words: "Easter eggs" (row of 45658)
+  new: motor_racing: "parc fermé" (row of 46710)
+  new: indian_animals: "great Indian bustard" (row of 51130)
+  new: motor_racing: "parc ferme" (row of 67951)
+  new: baby_talk: "dada" (row of 67952)
+  new: places_that_are_also_words: "Mold" (row of 67953)
+Clash (family export): words with an id 13105 -> 13149; ids 4636 -> 4602; rows whose clash id changed 11065; sizes before 2:2843 3:892 4:383 5:216 6:108 7:84 8:104 9:2 10:2 11:1 14:1; after 2:2830 3:886 4:371 5:204 6:105 7:79 8:69 9:21 10:16 11:11 12:9 14:1
+  groups over 8 after: 14 (kebab, kabob, shawarma, shish kebab, gyro, ..); 12 (knead, wedges, wedge, wedge, wedge, ..); 12 (perch, wand, baton, rods, perched, ..); 12 (snapper, snap, snap, snap, press stud, ..); 12 (muggy, steamship, steamer, steam, steam, ..); 12 (bumper, bumpy, bump, goose egg, bump, ..); 12 (stroller, pushchair, pram, buggy, saunter, ..); 12 (truancy, hooky, bunking off, wagging, hook, ..); 12 (wraith, ghost, spirit, phantom, specter, ..); 12 (glass, glass, safety goggles, glasses, spectacles, ..); 11 (green, spring onion, scallion, green onion, greenery, ..); 11 (ribs, rib, rib cage, spare ribs, baby back ribs, ..); 11 (sponge, loofah, luffa, sponge, spongy, ..); 11 (scale, scale, scale, scale, scale, ..); 11 (sleeper car, sleeping car, Pullman, insomnia, sleeplessness, ..); 11 (skin, peel, peel, rind, peeler, ..); 11 (sweater, jumper, pullover, jersey, woolly, ..); 11 (tote bag, baby sling, baby wrap, shopping bag, carrier, ..); 11 (movie, film, flick, picture, pic, ..); 11 (creep, creep, tiptoe, creeper, creepers, ..); 11 (string, string, strings, string section, string, ..); 10 (butterfly, flies, fly tower, butterfly, fly, ..); 10 (marble, marbles, marble, marble, marbled, ..); 10 (hair tie, tie, tie, hair elastic, hair ties, ..); 10 (sunglasses, shades, sunnies, shade, shading, ..); 10 (dart, darts, dart, arrow, dart, ..); 10 (fishing, fisher, fishy, fish, seafood, ..); 10 (checkers, draughts, checks, checkered, checkerboard, ..); 10 (pottery, ceramics, potty, pot, pot, ..); 10 (drawing, drawers, drawer, draw, draw, ..); 10 (singer, vocalist, frontman, lead singer, frontwoman, ..); 10 (conjure, summoning, magician, illusion, conjurer, ..); 10 (gray, grey, grey, gray, light gray, ..); 10 (down, down, lie down, down, downs, ..); 10 (score, score, score, score, score, ..); 10 (dash, smidgen, dash, dash, sprinter, ..); 10 (counter, count, counter, countess, count, ..); 9 (sprinkles, hundreds and thousands, sprinkler, rainbow sprinkles, confetti sprinkles, ..); 9 (fold, folder, binding, binder, folder, ..); 9 (pigeon, rock garden, rockery, rock, stone, ..); 9 (saddle, pass, col, saddle, saddler, ..); 9 (engine, engineer, motor, train driver, locomotive driver, ..); 9 (flight attendant, air hostess, stewardess, steward, cabin crew, ..); 9 (glider, gliding, glider, soar, glide, ..); 9 (tanker, tanker truck, road tanker, tank, tank, ..); 9 (excavator, digger, JCB, excavation, dig, ..); 9 (programmer, coder, developer, software, program, ..); 9 (streaming, streamers, stream, rivulet, brook, ..); 9 (star, jumping jack, star jump, stars, star, ..); 9 (zero gravity, weight, sink, sinker, weightless, ..); 9 (bolt, bolt, bolt, bolt, bolt, ..); 9 (beam, beam, smile, grin, beam, ..); 9 (white, whiting, white, sclera, white of the eye, ..); 9 (wing, wing, wings, wings, winger, ..); 9 (crown, crown feather, crown, crowning, crown, ..); 9 (fin, flipper, flip, flipping, flippers, ..); 9 (paw, shaker, shake, shake, paw, ..); 9 (locking, lock, bike lock, bicycle lock, D-lock, ..)
+new issues: none
+
+== Family export against the committed v403 file (after regeneration) ==
+61,032 -> 61,035 entries. 3 rows added at the end: parc ferme 67951 (row 61,032, spelling alias of parc fermé), dada [baby talk] 67952 (61,033),
+Mold 67953 (61,034). No row removed, no row moves. Text changes: row 42,240 Easter egg -> Easter eggs (45658, now a form alias of Easter egg 5829:
+root column set, flag 32), row 43,272 parc ferme -> parc fermé. Links 109,626 -> 109,627; link positions shift from row 5,668 on.
+Link changes: gaming_words Easter egg now on the root 5829; places_that_are_also_words Bath (city) for bath, Mold for mold; baby_talk dada on the new
+row; indian_animals shows "great Indian bustard" (was "great bustard"). Clash column: ids renumbered (11,065 rows changed); ids 4,636 -> 4,602; sizes
+8: 104 -> 69, 9: 2 -> 21, 10: 2 -> 16, 11: 1 -> 11, 12: 0 -> 9, 14: 1 -> 1 (kebab).
+
+Notice DRAFT for _WS_ (NOT SENT), covering v402, v403 and v404:
+  Library v402, v403 and v404. Export: lib.version 404; 61,035 entries (v401 61,024: +3 in v402, +5 in v403, +3 in v404). Re-pin if you pin by index.
+  v402: data fixes from the v400 kin review, plus two words back in a theme. New rows: prisoner (row 31,235), jailer (58,883) and "axe" (the spelling
+  alias of "axé"). Link changes: pin (fastening) leaves banking_words and PIN joins it; hawkish leaves words_for_cold; reading -> Reading (town, type
+  place) in places that are also words; atomic -> "atomic family" (shown "atomic") in family and friends; prisoner and jailer in law and order. Text
+  changes: Reading, axé, atomic family.
+  v403: 439 same-word pairs (apple/apples, knead/kneading) are now one entry with a form alias (flag 32, root column set; same rows). The root lists
+  the alias's themes and shows the alias's text there through the link's shown text, so what players see is unchanged except: fire_blank loses
+  "crackers" (keeps "cracker"), foot_blank loses "hill" (keeps "hills"), and 12 links change difficulty a little. 5 new rows (strobe lights, fleas,
+  jaywalking, antlers, lucky numbers): rows after 13,448 shift by 1 to 5. Link positions move almost everywhere. prisoner and jailer are grouped with
+  prison and jail in law and order.
+  v404: 226 more kin pairs (the v400 "too big" pairs, under the limit loosened to 12 for real look-alikes in big themes). 3 new rows at the end
+  (parc ferme, dada [baby talk], Mold); no row moves. Text: Easter eggs (row 42,240, now a form alias of Easter egg; gaming_words moves to the root),
+  parc fermé (row 43,272). Links: places that are also words has Bath (city) and Mold (town) instead of bath and mold; dada in baby_talk is its own row;
+  great Indian bustard shows its full name. Link positions shift from row 5,668 on. Clash ids are renumbered (re-read the column).
+  Clash groups over 8 (family export): after v403 6 (kebab 14, peel 11, ghost 10, counter 10, pot 9, lead vocal 9); after v404 58 (9: 21, 10: 16,
+  11: 11, 12: 9, kebab 14); groups of 8: 104 -> 69.
+  Please re-measure starvation with the bigger groups.
