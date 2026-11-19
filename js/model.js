@@ -23,7 +23,7 @@ export const TYPICALITY_HELP = ['not rated', '1 the first words anyone thinks of
 export const IDENT_HELP = ['not rated', '1 obvious: four members and the theme is clear', '2 clear', '3 needs a moment', '4 hard: broad, or the link is a trick', '5 obscure: hard to guess even with all four'];
 export const ALIAS_KINDS = ['', 'synonym', 'spelling', 'form', 'regional', 'abbreviation', 'translation'];   // spelling and form (skis for ski, rainy for rain) are the same word, so they take the root's popularity; a synonym is rated on its own. regional (bonnet for hood), abbreviation (PC for personal computer) and translation (Danmark for Denmark: the same thing named in another language) are the same thing under another name: they follow the root's themes and are rated on their own. Synonyms are to become theme-level groups (DESIGN-entries.md)
 export const STATUS = ['new', 'gen', 'rev'];
-export const STATUS_HELP = { new: 'added by hand, unchecked', gen: 'generated, not reviewed', rev: 'reviewed' };
+export const STATUS_HELP = { new: 'added by hand, unchecked', gen: 'generated, not reviewed', rev: 'reviewed by hand or by an approved batch' };
 
 export const nowStamp = () => { const d = new Date(), p = n => String(n).padStart(2, '0'); return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; };
 
