@@ -33,6 +33,7 @@ const LANGS = 'french|german|spanish|italian|japanese|chinese|mandarin|cantonese
 const FOREIGN_OK = /\b(in english|words from|from other languages|speaking|languages?|letters?|cities|food|painters|writers|kings|gods|myth|cars?)\b/i;
 export const foreignListName = name => !FOREIGN_OK.test(name) && new RegExp(String.raw`\bin (${LANGS})\b|\b(${LANGS}) (everyday |basic )?(words|phrases|numbers|colou?rs|greetings|vocabulary)\b`, 'i').test(name);
 
+export const THEME_NAME_SOFT = 24, THEME_NAME_MAX = 30;   // theme name length (DESIGN-entries.md): soft = two lines in the game's narrowest column, hard = the check warns above it
 export function validate(P) {
   const out = [];
   const add = (sev, kind, msg, extra = {}) => out.push({ sev, kind, msg, ...extra });
@@ -43,6 +44,7 @@ export function validate(P) {
   let unrated = 0;
   for (const t of P.themes) {
     { const rt = ruleTheme(t); if (rt && !ix.theme.get(rt)) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rt}.`, { themeId: t.id }); }
+    { const len = [...t.name].length; if (len > THEME_NAME_MAX) add('warn', 'theme-name-long', `The theme name "${t.name}" has ${len} characters; keep it to ${THEME_NAME_MAX} at most (aim for ${THEME_NAME_SOFT}).`, { themeId: t.id }); }
     const ef = eff(P, t.id);
     if (!ef.enabled) continue;
     const direct = (ix.byTheme.get(t.id) || []);

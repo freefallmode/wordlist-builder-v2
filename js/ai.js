@@ -95,6 +95,7 @@ Overlap. Never list two words for the same thing in a theme, or a word and a mor
 
 Word families. Never list two forms of the same word in a theme (vote and votes, ski and skiing): list the one the theme uses. Of words that share a root but are different words (gamer and gaming, joy and joyful, pup and puppy, host and hostess), list only the one that fits the theme best. A player should never be able to pair two members just because they look alike. Wordplay themes, where the spelling or form is the point, are the exception.
 
+Theme names. Follow the entry case rule (capital only for proper names and their adjectives) and the spelling of the root entry, diacritics included. Keep the name as short as it can be without losing its meaning: aim for 24 characters at most, never over 30. Clear and specific beats short.
 Complete themes are a finite set: list EVERY member exactly and correctly, nothing else, however many that is.`;
 
 export function wordsPrompt(P, t, n, spread, extra) {

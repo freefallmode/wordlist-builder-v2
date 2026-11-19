@@ -174,6 +174,15 @@ test('export format 4: shown text, display form and clash ids travel with the li
   assert.ok(validate(P).every(x => !/not one of its forms|display text/.test(x.msg)));
 });
 
+test('theme-name-long: warns above 30 characters (code points), not at 30', () => {
+  const P = newProject();
+  const T = (id, name) => ({ id, name, parent: null, group: false, enabled: true, region: [] });
+  P.themes.push(T('ok30', 'a'.repeat(30)), T('long31', 'b'.repeat(31)), T('maori', 'Māori ' + 'c'.repeat(24)));
+  reindex(P);
+  const w = validate(P).filter(i => i.kind === 'theme-name-long');
+  assert.deepEqual(w.map(i => i.themeId), ['long31']);
+});
+
 test('theme-name check: the collected thing alone is fine, longer text and other name words are not', () => {
   const T = name => ({ id: 'x', name }), E = text => ({ text, nameOkIn: [] });
   assert.equal(nameLeak(T('pants and shorts'), E('pants')), null);
