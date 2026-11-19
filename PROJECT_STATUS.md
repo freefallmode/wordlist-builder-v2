@@ -39,7 +39,7 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | I24 check the data errors the kin reviewers saw (wrong links, glosses, accents) | standard | Sonnet |
+| 1 | Re-link the 558 kin pairs left unlinked at v400 under the loosened clash limit (soft 8, up to 12 for real look-alikes in big themes; DESIGN-entries.md 3.7), after v403 (Simon 2026-11-19) | deep reasoning | Opus |
 | 1b | I23 merge same-sense duplicate roots into form aliases (115 seen in the pilot; later) | deep reasoning | Opus |
 | 2 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
 
