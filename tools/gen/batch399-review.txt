@@ -1,0 +1,537 @@
+Library batch v399 (APPLIED 2026-11-19 13:38, approved by Simon as proposed): pilot kin pass over word-family pairs in different themes (I22), plus three in-theme items. tools/gen/batch399.mjs, on v398.
+Applied as listed (changes: tools/gen/batch399-changes.txt). "?" in the first column: a judgement call. Decisions: kin (one family a player sees as look-alikes, also one written word in another sense),
+kin ? (judgement), dup? (kin, and the two look like one word in one sense: perhaps one entry with a form alias; not merged), not kin (allow-listed in js/family-allow.js),
+too big (kin, but the exported clash group would exceed 8: left unlinked).
+
+Sample: the first 500 of 4,540 family-kin suggestions (of 7,324 on v398) where both entries are in the family export and have familiarity 1-3,
+easier member first. Real-kin rate in the sample: 375 of 500 (75%) are one family; 125 (25%) are not.
+
+Counts:
+   363  kin
+    36    of which kin?
+   115    of which dup?
+   125  not kin (allow-listed)
+    15    of which not kin?
+    12  too big (unlinked)
+   125  allow-list lines added
+     2  familyOk set (royal_titles, ranks_of_the_british_peerage); 2 suggested (short_forms_of_names?, feudal_ranks?)
+     6  family-pair hits of the -ie/-sy endings: all grouped (see Part 3)
+
+Export (family preset): entry index shifts 0; link changes 0; words with a clash id 9065 -> 9572; clash ids 3766 -> 3906; groups over 8: 2 -> 2
+Largest clash groups before: 11 (kebab, kabob, shawarma, shish kebab, ..); 10 (wraith, ghost, spirit, phantom, ..); 8 (soap, bar soap, hand soap, antibacterial soap, ..); 8 (anger, ire, wrath, rage, ..); 8 (garbage collector, binman, dustman, refuse collector, ..); 8 (television, TV, telly, tube, ..)
+Largest clash groups after:  11 (kebab, kabob, shawarma, shish kebab, ..); 10 (wraith, ghost, spirit, phantom, ..); 8 (dog, hound, pooch, mutt, ..); 8 (excavator, digger, JCB, excavation, ..); 8 (soap, bar soap, hand soap, antibacterial soap, ..); 8 (loofah, luffa, sponge, sponges, ..)
+Checks: changed kinds: info:family-kin 7324 -> 6823, warn:family-pair 11 -> 0
+
+Part 3: in-theme items
+  royal_titles: familyOk set
+  ranks_of_the_british_peerage: familyOk set
+? short_forms_of_names: familyOk suggested, not set -- collects short forms (Peg/Peggy, grouped at v398); familyOk would let such pairs stand as separate answers
+? feudal_ranks: familyOk suggested, not set -- only marquess/marquis now (grouped: spellings); would matter if male/female ranks are added
+  outback: swag / swaggie (32142 / 32132): added to a group (swagman, swaggie) -> (swagman, swaggie, swag) -- swag (the bedroll) joins (swagman, swaggie): the swaggie carries the swag
+? nutrition: ketosis / keto (3870 / 3854): added to a group (keto, ketogenic diet) -> (keto, ketogenic diet, ketosis) -- ketosis joins (keto, ketogenic diet): keto is short for ketogenic, the diet that aims at ketosis; one gives the other away
+  police_words: gendarme / gendarmerie (33700 / 61133): new group (gendarme, gendarmerie) -- the officer and the force
+  forces_of_europe: gendarme / gendarmerie (33700 / 61133): new group (gendarme, gendarmerie) -- as in police words
+? army_words: squad / squaddie (34685 / 4376): added to a group (soldier, trooper, squaddie, digger, GI, grunt) -> (soldier, trooper, squaddie, digger, GI, grunt, squad) -- squad joins the soldier group (soldier, trooper, squaddie, digger, GI, grunt): 7 words, within 8; or unlink squaddie (the weaker: typicality 3, fam 4)
+  soccer_terms: goal / goalie (42666 / 42673): added to a group (goalkeeper, goalie) -> (goalkeeper, goalie, goal) -- goal joins (goalkeeper, goalie): 4 words with keeper
+
+Part 1/2: the 500 pairs (a / b (ids; up to 3 themes each): decision -- reason)
+? blue / blues (5 / 10767; colors_of_the_rainbow,colors,shades_of_blue,.. ~ music_genres,american_roots_music): kin -- blues (the music) is named from blue: look-alike
+  hearts / heart (27 / 3238; card_suits ~ inside_the_body,organs,blood_words,..): kin -- the same word in another sense: look-alike
+  hearts / heart (27 / 25160; card_suits ~ valentine_s_day): kin -- the same word in another sense: look-alike
+  hearts / heart (27 / 38848; card_suits ~ 2d_shapes): kin -- the same word in another sense: look-alike
+  diamonds / diamond (28 / 31656; card_suits ~ gemstones,treasure,minerals,..): kin -- the same word in another sense: look-alike
+  diamonds / diamond (28 / 38849; card_suits ~ 2d_shapes): kin -- the same word in another sense: look-alike
+  clubs / club (29 / 35505; card_suits ~ groups_of_people): kin -- the same word in another sense: look-alike
+  spades / spade (30 / 1852; card_suits ~ garden,things_with_handles,garden_tools,..): kin -- the same word in another sense: look-alike
+  hearing / hear (39 / 14694; the_five_senses,senses ~ hearing_words): kin
+  taste / tasty (41 / 39212; the_five_senses,senses,mouth_actions ~ taste_words): kin
+  apple / apples (87 / 23400; fruits,lunchbox,foods_you_peel,.. ~ in_the_fridge,signs_of_autumn): kin, dup? -- same sense: one entry with a form alias?
+  grape / grapes (90 / 16757; fruits,shades_of_purple,colors_named_after_foods,.. ~ healthy_snacks,picnic_basket): kin, dup? -- same sense: one entry with a form alias?
+  tomato / tomatoes (110 / 20297; fruits,vegetables,andean_crops,.. ~ canned_foods,in_the_fridge): kin, dup? -- same sense: one entry with a form alias?
+  mansion / mane (117 / 1502; buildings_to_live_in,buildings,house_styles ~ horses,parts_of_a_horse,animal_body_parts,..): not kin -- letters only
+  mansion / man (117 / 35499; buildings_to_live_in,buildings,house_styles ~ words_for_a_person): not kin -- letters only
+  bakery / bake (129 / 917; shops ~ cooking,cooking_methods,rhymes_with_cake): kin
+  bakery / baker (129 / 20056; shops ~ kitchen_brigade,medieval_jobs,food_jobs,..): kin
+  belly / bell (167 / 4495; torso,animal_body_parts,bird_body_parts ~ school,classroom_items): not kin -- letters only
+  belly / bell (167 / 10729; torso,animal_body_parts,bird_body_parts ~ instrument_parts): not kin -- letters only
+  belly / bell (167 / 28550; torso,animal_body_parts,bird_body_parts ~ things_made_of_metal): not kin -- letters only
+  belly / bell (167 / 40219; torso,animal_body_parts,bird_body_parts ~ things_with_tongues,things_that_ring): not kin -- letters only
+  belly / bell (167 / 46906; torso,animal_body_parts,bird_body_parts ~ on_a_bus): not kin -- letters only
+  belly / bell (167 / 55788; torso,animal_body_parts,bird_body_parts ~ clock_parts): not kin -- letters only
+  ribs / rib (171 / 3247; torso ~ inside_the_body,paired_body_parts,bones): kin, dup? -- same sense: one entry with a form alias?
+  butt / butter (178 / 516; torso,body_parts ~ dairy_and_eggs,baking_ingredients,spreads,..): not kin -- letters only
+  iron / ironing (201 / 23941; metals,things_that_sink,things_that_melt,.. ~ chores): kin -- the iron for clothes is named from the metal
+? copper / cop (204 / 33680; metals,dietary_minerals,bronze_age,.. ~ police_words,slang_terms): not kin -- copper here is the metal; cop comes from copper only in its police sense
+  tin / tiny (205 / 39269; metals,bronze_age,metallic_colors,.. ~ words_for_small,size_labels): not kin -- letters only
+? lead / leader (206 / 35526; metals,homographs,heavy_things,.. ~ words_for_leader): not kin -- lead here is the metal, not the lead of leader
+  guitar / guitarist (279 / 6134; string_instruments,instruments,things_with_necks,.. ~ musicians,rock_band_lineup): kin
+  violin / violinist (280 / 6138; string_instruments,instruments,things_with_necks,.. ~ musicians,arts_jobs,people_who_work_with_sound): kin
+  hammer / ham (316 / 463; hand_tools,tools,garage,.. ~ meat_and_seafood,cured_meats,pizza_toppings,..): not kin -- letters only
+  blueberry / blueberries (348 / 16735; fruits,berries,colors_named_after_foods,.. ~ superfoods): kin, dup? -- same sense: one entry with a form alias?
+  carrot / carrots (391 / 23401; vegetables,root_vegetables,foods_you_peel,.. ~ in_the_fridge): kin, dup? -- same sense: one entry with a form alias?
+  peas / pea (399 / 17530; vegetables,canned_foods,frozen_foods,.. ~ beans_and_pulses,sounds_like_a_letter,tiny_things): kin, dup? -- same sense: one entry with a form alias?
+  pumpkin / pumpkins (403 / 31529; vegetables,squashes,andean_crops,.. ~ signs_of_autumn): kin, dup? -- same sense: one entry with a form alias?
+  corn / corner (406 / 43719; vegetables,pasta_rice_and_grains,grains,.. ~ boxing_terms): not kin -- letters only
+  green beans / green bean (417 / 64676; vegetables,canned_foods ~ beans_and_pulses): kin, dup? -- same sense: one entry with a form alias?
+  lamb / lambs (461 / 31469; meat_and_seafood,farm_animals,baby_animals,.. ~ signs_of_spring): kin, dup? -- same sense: one entry with a form alias?
+  sausage / sausages (464 / 23402; meat_and_seafood,barbecue_foods,butcher_shop,.. ~ in_the_fridge,campfire_foods): kin, dup? -- same sense: one entry with a form alias?
+  butter / but (516 / 26499; dairy_and_eggs,baking_ingredients,spreads,.. ~ conjunctions): not kin -- letters only
+  egg / eggs (518 / 16678; insect_life_cycle,pizza_toppings,foods_with_shells,.. ~ food_groups,baking_ingredients,breakfast_foods,..): kin, dup? -- same sense: one entry with a form alias?
+  egg / eggs (518 / 48550; insect_life_cycle,pizza_toppings,foods_with_shells,.. ~ campfire_foods): kin, dup? -- same sense: one entry with a form alias?
+  cupcake / cupcakes (560 / 55641; breads_and_baking,desserts_and_sweets,cakes,.. ~ party_supplies): kin, dup? -- same sense: one entry with a form alias?
+? brownie / brown (561 / 7667; breads_and_baking,desserts_and_sweets,starts_with_a_color,.. ~ colors,shades_of_brown,earth_tones,..): kin -- brownie is brown + ie, named for its color
+  brownie / brownies (561 / 19443; breads_and_baking,desserts_and_sweets,starts_with_a_color,.. ~ north_american_food): kin, dup? -- same sense: one entry with a form alias?
+? brownie / brown (561 / 50338; breads_and_baking,desserts_and_sweets,starts_with_a_color,.. ~ cue_sports_terms): kin -- as brownie/brown
+  toast / toaster (565 / 4729; breads_and_baking,breakfast_foods,things_that_smell_good,.. ~ appliances,kitchen,kitchen_appliances,..): kin
+? cookie / cook (566 / 970; breads_and_baking,desserts_and_sweets,lunchbox,.. ~ food_jobs,restaurant,hotel_staff,..): not kin -- cookie is from Dutch koekje, not from cook (looks alike)
+  chocolate / chocolates (605 / 25162; desserts_and_sweets,ice_cream_flavors,ice_cream_parlor,.. ~ valentine_s_day): kin -- chocolates = a box of sweets
+  marshmallow / marshmallows (611 / 17891; desserts_and_sweets,campsite,candy,.. ~ barbecue_foods,cozy_things): kin, dup? -- same sense: one entry with a form alias?
+  gummy bear / gummy bears (613 / 18357; desserts_and_sweets,sweet_foods,confectionery ~ candy,snacks,chewy_foods): kin, dup? -- same sense: one entry with a form alias?
+  jelly beans / jelly bean (620 / 39144; desserts_and_sweets,candy,easter,.. ~ sweet_foods,confectionery): kin, dup? -- same sense: one entry with a form alias?
+  noodles / noodle (654 / 29337; in_the_pantry,street_food,dinner_foods ~ words_from_german,long_things,german_foods_and_drinks): kin, dup? -- same sense: one entry with a form alias?
+  salt / salty (712 / 39201; herbs_spices_and_sauces,nutrition,dietary_minerals,.. ~ taste_words,basic_tastes): kin
+  mint / mints (715 / 23317; herbs_spices_and_sauces,herbs,pastel_colors,.. ~ in_a_handbag,in_a_pocket): kin -- the same word in another sense: look-alike (mints = sweets)
+  gravy / gravity (731 / 7132; herbs_spices_and_sauces,sauces_and_condiments,thanksgiving,.. ~ space,physics_words,forces,..): not kin -- letters only
+  gravy / grave (731 / 21739; herbs_spices_and_sauces,sauces_and_condiments,thanksgiving,.. ~ tombs_and_burials,day_of_the_dead): not kin -- letters only
+  sandwich / sandwiches (796 / 19936; dishes,lunchbox,foods_named_after_people,.. ~ picnic_basket): kin, dup? -- same sense: one entry with a form alias?
+  pancakes / pancake (804 / 19250; dishes,breakfast_foods,diner,.. ~ pancakes_of_the_world,rhymes_with_cake,round_things,..): kin, dup? -- same sense: one entry with a form alias?
+  waffles / waffle (805 / 29363; dishes,breakfast_foods,frozen_foods ~ words_from_dutch,square_things,food_and_drink_words): kin, dup? -- same sense: one entry with a form alias?
+  nachos / nacho (807 / 29315; dishes,movie_theater_words,cheese_dishes,.. ~ words_from_spanish,triangular_things,foods_and_flavors): kin, dup? -- same sense: one entry with a form alias?
+  dumplings / dumpling (810 / 20237; dishes,street_food,asian_food,.. ~ stuffed_foods,chewy_foods,dumplings): kin, dup? -- same sense: one entry with a form alias?
+  burger / burgers (811 / 48559; dishes,barbecue_foods,diner,.. ~ campfire_foods): kin, dup? -- same sense: one entry with a form alias?
+? smoothie / smooth (864 / 14802; drinks,healthy_snacks ~ touch_words,texture_words,opposites): kin -- smoothie is from smooth
+  bake / baker (917 / 20056; cooking,cooking_methods,rhymes_with_cake ~ kitchen_brigade,medieval_jobs,food_jobs,..): kin
+  boil / boiling (918 / 31441; cooking,cooking_methods ~ hot_weather_words,words_for_hot,states_of_matter,..): kin
+  fry / fries (919 / 59629; cooking,cooking_methods,no_vowels ~ street_food): kin -- fries (French fries) from fry
+  fry / fried (919 / 63443; cooking,cooking_methods,no_vowels ~ ways_to_cook_eggs): kin
+  rat / rats (992 / 20951; mammals,domestic_animals,rodents,.. ~ black_death,polite_swears): kin -- the same word in another sense: look-alike (rats! as an exclamation)
+  bat / batteries (993 / 23261; mammals,bats,city_animals,.. ~ junk_drawer,emergency_supplies,energy_and_light_sources): not kin -- letters only
+? bat / batter (993 / 42802; mammals,bats,city_animals,.. ~ baseball_terms,hitting_terms): not kin -- bat here is the animal; batter comes from the baseball bat
+  bat / battery (993 / 46608; mammals,bats,city_animals,.. ~ car_parts,under_the_bonnet): not kin -- letters only (battery is not from bat)
+  bat / battery (993 / 49768; mammals,bats,city_animals,.. ~ electronic_parts,electricity_words,inventions,..): not kin -- letters only (battery is not from bat)
+  bat / battery (993 / 52270; mammals,bats,city_animals,.. ~ camera_parts): not kin -- letters only (battery is not from bat)
+  fox / foxes (996 / 31582; mammals,wild_dogs_and_foxes,woodland_animals,.. ~ nature_at_night): kin, dup? -- same sense: one entry with a form alias?
+  owl / owls (1063 / 31576; birds,birds_of_prey,woodland_animals,.. ~ nature_at_night): kin, dup? -- same sense: one entry with a form alias?
+  bee / bees (1342 / 31497; insects_and_bugs,bees_and_wasps,garden_bugs,.. ~ signs_of_summer): kin, dup? -- same sense: one entry with a form alias?
+  wasp / wasps (1343 / 31510; insects_and_bugs,bees_and_wasps,biting_bugs,.. ~ signs_of_summer): kin, dup? -- same sense: one entry with a form alias?
+  mosquito / mosquitoes (1345 / 31615; insects_and_bugs,biting_bugs,flies,.. ~ monsoon_season): kin, dup? -- same sense: one entry with a form alias?
+  butterfly / butterflies (1348 / 31506; insects_and_bugs,butterflies_and_moths,garden_bugs,.. ~ signs_of_summer): kin, dup? -- same sense: one entry with a form alias?
+  dog / doggy (1435 / 27624; domestic_animals,pets,male_animals,.. ~ baby_talk): kin
+  kitty / kit (1442 / 64015; baby_talk,domestic_animals,pets,.. ~ first_aid): not kin -- kitty (cat) is not from kit
+  bunny / bun (1444 / 14280; rabbits_and_hares,hopping_animals,baby_animals,.. ~ hair,hairstyles): not kin -- letters only
+  bunny / bun (1444 / 67291; rabbits_and_hares,hopping_animals,baby_animals,.. ~ burger_toppings): not kin -- letters only
+  rider / ride (1505 / 2950; horses ~ journeys): kin
+  fossil / fossils (1567 / 42091; prehistoric_life,rocks_and_minerals,archaeology,.. ~ famous_discoveries,collecting_hobbies): kin, dup? -- same sense: one entry with a form alias?
+  pine / pins (1629 / 24872; types_of_wood,christmas_plants,taiga,.. ~ sewing_words,sewing_kit): not kin -- letters only
+? ash / ashes (1632 / 55272; trees,deciduous_trees,types_of_wood,.. ~ fireplace_words,hidden_trees): kin -- the ash tree vs ashes of a fire: other word, same look
+  tulip / tulips (1694 / 31474; flowers,easter,hidden_body_parts,.. ~ signs_of_spring): kin, dup? -- same sense: one entry with a form alias?
+  daisy / day (1695 / 25340; flowers,garden_flowers,wildflowers,.. ~ time_units,opposites): not kin -- daisy (day's eye) is no longer felt as day
+  sunflower / sunflowers (1696 / 31500; flowers,garden_flowers,bouquet_flowers,.. ~ signs_of_summer): kin, dup? -- same sense: one entry with a form alias?
+  daffodil / daffodils (1699 / 31472; flowers,national_symbols,easter,.. ~ signs_of_spring): kin, dup? -- same sense: one entry with a form alias?
+  poppy / pop (1701 / 10765; flowers,wildflowers,meadow,.. ~ music_genres,palindromes): not kin -- letters only
+  poppy / pop (1701 / 39580; flowers,wildflowers,meadow,.. ~ onomatopoeia): not kin -- letters only
+  grass / gray (1769 / 7672; plants,meadow,green_things ~ colors,shades_of_gray,hair_colors): not kin -- letters only
+  grass / gray (1769 / 9527; plants,meadow,green_things ~ horse_colors): not kin -- letters only
+  cliff / cliffs (1906 / 31160; landscapes,mountain_features,coastal_features,.. ~ shipwreck_coast_words): kin, dup? -- same sense: one entry with a form alias?
+? cave / cavity (1913 / 15413; landscapes,stone_age,things_that_drip,.. ~ dental_words,teeth,dentist_s_office): not kin -- cavity and cave share a Latin root, not felt
+  snow / snowy (1967 / 39964; weather,kinds_of_precipitation,signs_of_winter,.. ~ words_for_cold,weather_conditions): kin
+  frost / frosty (1981 / 39945; weather,snow_and_ice,signs_of_autumn,.. ~ words_for_cold,weather_conditions): kin
+  shower / show (1983 / 6304; weather,rain_words,weather_conditions,.. ~ art,museum,art_gallery,..): not kin -- letters only
+  snowflake / snowflakes (1985 / 31557; weather,snow_and_ice,lightweight_things,.. ~ signs_of_winter): kin, dup? -- same sense: one entry with a form alias?
+  sunny / sun (2020 / 7109; hot_weather_words,words_for_hot,weather_conditions ~ space,hot_things,things_that_glow,..): kin
+  rock / rocks (2049 / 31151; rocks_and_minerals,things_that_sink,things_you_throw ~ shipwreck_coast_words): kin, dup? -- same sense: one entry with a form alias?
+  pebble / pebbles (2051 / 31053; rocks_and_minerals,smooth_things,things_that_sink,.. ~ beachcombing_finds): kin, dup? -- same sense: one entry with a form alias?
+  sand / sandals (2063 / 20848; rocks_and_minerals,building_materials,soil_words,.. ~ medieval_clothing,shoes,things_to_pack,..): not kin -- letters only
+? sand / sanding (2063 / 46041; rocks_and_minerals,building_materials,soil_words,.. ~ woodworking_words): kin -- sanding is done with sandpaper
+  clay / class (2064 / 4475; rocks_and_minerals,soil_words,natural_materials ~ school): not kin -- letters only
+  driver / drive (2566 / 2949; cars ~ journeys): kin
+  engine / engineer (2567 / 4075; cars,engineering,things_that_tick,.. ~ jobs): kin
+  engine / engineer (2567 / 50475; cars,engineering,things_that_tick,.. ~ ship_crew): kin
+  engine / engineer (2567 / 50476; cars,engineering,things_that_tick,.. ~ railroad_jobs): too big: left unlinked (clash groups 5 + 4 > 8)
+  headlight / headlights (2571 / 66696; cars,car_parts,motorcycle_parts,.. ~ head_blank): kin, dup? -- same sense: one entry with a form alias?
+? bumper / bumpy (2573 / 14808; cars,car_parts,exterior_parts ~ touch_words,texture_words): kin -- bumper and bumpy both from bump
+  bumper / bump (2573 / 15020; cars,car_parts,exterior_parts ~ injuries): kin
+  trunk / trunks (2577 / 43279; cars,car_parts,exterior_parts ~ swimwear): kin -- the same word in another sense: look-alike (swimming trunks)
+  hood / hoodie (2579 / 4878; cars,car_parts,exterior_parts ~ clothes,tops,things_with_strings,..): kin
+  tire / tired (2585 / 62393; cars,garage,things_that_roll,.. ~ hidden_colors): not kin -- letters only
+  wiper / wipe (2587 / 16904; cars,car_parts,exterior_parts ~ hand_actions,cleaning_verbs,things_you_do_with_your_hands): kin
+  bus / busy (2646 / 28703; public_transportation,things_with_wheels,reversible_words,.. ~ hidden_vehicles,starts_with_bus,starts_with_public_transport): not kin -- letters only
+  sail / sailing (2799 / 5296; boats_and_ships,homophones,ship_parts,.. ~ water_sports,sailing_sports,olympic_sports,..): kin
+  engine / engineer (2851 / 4075; trains,parts_of_a_train,industrial_revolution,.. ~ jobs): too big: left unlinked (clash groups 5 + 5 > 8)
+  engine / engineer (2851 / 50475; trains,parts_of_a_train,industrial_revolution,.. ~ ship_crew): too big: left unlinked (clash groups 5 + 5 > 8)
+  engine / engineer (2851 / 50476; trains,parts_of_a_train,industrial_revolution,.. ~ railroad_jobs): too big: left unlinked (clash groups 5 + 4 > 8)
+  hike / hiking (2932 / 5604; journeys,ways_of_walking,things_you_do_with_your_feet ~ adventure_and_outdoor_sports,healthy_habits,outdoor_activities,..): kin
+  matches / match (3066 / 28078; campsite,junk_drawer,emergency_supplies,.. ~ things_made_of_wood): kin, dup? -- same sense: one entry with a form alias?
+  digger / dig (3102 / 6859; special_vehicles,construction_vehicles,construction_site,.. ~ archaeology,archaeology_words): kin
+  digger / dig (3102 / 30752; special_vehicles,construction_vehicles,construction_site,.. ~ gardening_verbs): kin
+  digger / dig (3102 / 67334; special_vehicles,construction_vehicles,construction_site,.. ~ things_you_do_at_the_beach): too big: left unlinked (clash groups 8 + 1 > 8)
+  arm / army (3171 / 4370; body_parts,arms_and_legs,paired_body_parts ~ military,wars_and_battles,war_words,..): not kin -- army is from Latin arma, not arm
+  leg / legal (3177 / 29227; body_parts,arms_and_legs,paired_body_parts ~ starts_with_a_body_part): not kin -- letters only
+  leg / legs (3177 / 51617; body_parts,arms_and_legs,paired_body_parts ~ piano_parts): kin -- the same word in another sense: look-alike (piano legs)
+  face / facial (3182 / 16536; body_parts,things_with_eyes ~ spa): kin
+  nose / nosy (3183 / 56714; body_parts,senses,face,.. ~ negative_traits): kin
+  eye / eyes (3185 / 40292; body_parts,senses,face,.. ~ things_that_come_in_pairs,things_you_open): kin, dup? -- same sense: one entry with a form alias?
+  ear / earrings (3186 / 4951; body_parts,senses,paired_body_parts,.. ~ accessories,jewelry,things_that_come_in_pairs,..): not kin -- a compound (ear + ring): the Overlap rule's work
+  ear / earring (3186 / 21316; body_parts,senses,paired_body_parts,.. ~ pirate_clothing,starts_with_a_body_part): not kin -- a compound (ear + ring): the Overlap rule's work
+  ear / early (3186 / 28112; body_parts,senses,paired_body_parts,.. ~ starts_with_a_body_part,opposites): not kin -- letters only
+  ear / ears (3186 / 40259; body_parts,senses,paired_body_parts,.. ~ things_that_pop,things_that_come_in_pairs,things_that_ring): kin, dup? -- same sense: one entry with a form alias?
+? skin / skinny (3189 / 29231; body_parts,senses,animal_coverings,.. ~ starts_with_a_body_part): kin -- skinny is from skin
+  heel / heels (3212 / 24623; body_parts,hands_and_feet,homophones,.. ~ shoes): kin -- the same word in another sense: look-alike (shoe heels)
+  lung / lungs (3239 / 40293; inside_the_body,paired_body_parts,organs,.. ~ things_that_come_in_pairs): kin, dup? -- same sense: one entry with a form alias?
+  liver / lives (3240 / 26656; inside_the_body,organs,digestive_system,.. ~ irregular_plurals): not kin -- letters only
+  liver / live (3240 / 28783; inside_the_body,organs,digestive_system,.. ~ homographs,reversible_words,anagrams_of_each_other): not kin -- letters only
+  liver / lived (3240 / 29041; inside_the_body,organs,digestive_system,.. ~ reversible_words): not kin -- letters only
+  rib / ribs (3247 / 50091; inside_the_body,paired_body_parts,bones ~ barbecue_foods): too big: left unlinked (clash groups 3 + 6 > 8) -- the same word in another sense: look-alike (ribs as food)
+? nurse / nursery (3449 / 3540; medicine,jobs,dress_up_costumes,.. ~ babies_and_birth): kin -- nursery is from nurse
+  needle / needles (3463 / 64301; medicine,hospital,vet_clinic,.. ~ knitting_words): kin
+  bandage / bandages (3464 / 15330; medicine,medical_equipment,first_aid,.. ~ pharmacy,medicine_cabinet): kin, dup? -- same sense: one entry with a form alias?
+  treatment / treat (3467 / 57554; medicine ~ vet_clinic): kin
+  stitches / stitch (3476 / 5031; medicine,injuries,operating_room ~ fabrics_and_sewing,sewing_words): kin
+  baby / babe (3523 / 32460; babies_and_birth,ages_and_stages,things_with_eyes,.. ~ terms_of_endearment): kin -- babe is a short form of baby
+  twins / twin (3547 / 3899; babies_and_birth,things_that_come_in_pairs ~ family_and_friends,family_members): kin, dup? -- same sense: one entry with a form alias?
+  twins / twin (3547 / 39554; babies_and_birth,things_that_come_in_pairs ~ size_labels): kin -- the same word in another sense: look-alike (twin bed)
+  stroller / stroll (3557 / 16909; babies_and_birth,baby_gear,things_that_roll,.. ~ ways_of_walking,motion_verbs,sightseeing_words,..): too big: left unlinked (clash groups 4 + 6 > 8)
+  crawling / crawl (3574 / 10354; babies_and_birth,baby_milestones ~ animal_movements,body_actions,motion_verbs,..): kin
+? training / train (3601 / 39524; fitness ~ long_things,things_with_wheels,types_of_public_transport,..): not kin -- train here is the vehicle; training is from the verb
+? set / settings (3612 / 42379; fitness,fitness_words ~ software_words): kin -- settings is from set (other sense)
+  nap / napkins (3665 / 19939; sleep,sleep_words,reversible_words,.. ~ picnic_basket,party_supplies): not kin -- letters only
+  nap / napping (3665 / 50908; sleep,sleep_words,reversible_words,.. ~ cat_behaviors): kin
+  bed / bedding (3666 / 50862; sleep,furniture,bedroom,.. ~ pet_supplies): kin
+  dream / dreamy (3678 / 28690; sleep,dream_words ~ hidden_names): kin
+  sleepy / sleep (3686 / 28696; sleep,sleep_words ~ hidden_names): kin
+  sponge / sponges (3817 / 23369; personal_care,toiletries_for_washing,bath_time,.. ~ under_the_sink): kin, dup? -- same sense: one entry with a form alias?
+  vitamin / vitamins (3825 / 15331; nutrition,nutrients ~ pharmacy): kin, dup? -- same sense: one entry with a form alias?
+  calorie / calories (3827 / 16701; nutrition,heat_science ~ nutrients): kin, dup? -- same sense: one entry with a form alias?
+  friend / friendly (3895 / 56682; family_and_friends,words_for_friend ~ positive_traits): kin
+  sadness / sad (3973 / 32693; emotions ~ sad_words,opposites): kin
+  surprise / surprised (3979 / 32776; emotions ~ surprised_words): kin
+  love / lovely (3981 / 39446; emotions,love_words,opposites ~ words_for_pretty): kin
+  excitement / excited (3992 / 32670; emotions ~ happy_words): kin
+  farmer / farm (4081 / 27964; jobs,outdoor_jobs,food_jobs,.. ~ hidden_body_parts): kin
+  builder / building (4099 / 6543; jobs,trades,outdoor_jobs,.. ~ architecture,things_with_faces): kin
+  cashier / cash (4101 / 23285; jobs,service_jobs,banking_words,.. ~ in_a_wallet,money_words): kin
+  cleaner / clean (4109 / 23855; jobs,service_jobs,people_at_a_hospital,.. ~ cleaning_verbs,opposites): kin
+  waiter / wait (4110 / 50878; jobs,restaurant_words,service_jobs,.. ~ dog_commands): kin -- waiter is from wait
+  reporter / report (4132 / 26285; newspaper_words,journalism_words,jobs,.. ~ things_you_read,ends_with_a_drink,ends_with_port): kin
+  photographer / photography (4135 / 5857; jobs,arts_jobs,visual_creators ~ hobbies_and_crafts,hobbies_done_outdoors): kin
+  writer / write (4138 / 7603; jobs,literature,arts_jobs ~ alphabets_and_writing,homophones,rhymes_with_light,..): kin
+  artist / art (4139 / 34726; jobs,art ~ school_subjects): kin
+  designer / design (4140 / 56066; jobs ~ silent_g_words): kin
+  gardener / gardening (4150 / 5858; jobs,outdoor_jobs ~ hobbies_and_crafts,chores,hobbies_done_outdoors): kin
+  gardener / garden (4150 / 23241; jobs,outdoor_jobs ~ outside_the_house): kin
+  arrest / arr (4198 / 21174; law_and_order,police_words ~ pirate_words): not kin -- letters only
+  arrest / arrive (4198 / 48172; law_and_order,police_words ~ travel_verbs): not kin -- letters only
+  fine / final (4218 / 34834; law_and_order,punishments,library ~ exam_words): not kin -- fine (penalty) and final share Latin finis, not felt
+  fine / final (4218 / 44340; law_and_order,punishments,library ~ tournament_words,stages_of_a_tournament): not kin -- fine (penalty) and final share Latin finis, not felt
+  holy / hole (4302 / 28476; religion_words,religion ~ homophones): not kin -- letters only
+  holy / hole (4302 / 50346; religion_words,religion ~ golf_course_features): not kin -- letters only
+  army / arm (4370 / 41090; military,wars_and_battles,war_words,.. ~ microscope_parts): not kin -- army is from Latin arma, not arm
+  soldier / sold (4373 / 24211; military,wars_and_battles,war_words,.. ~ real_estate_words): not kin -- letters only
+? class / classic (4475 / 6501; school ~ literature): not kin -- classic is from Latin classicus, not felt as class
+? class / classical (4475 / 10771; school ~ music_genres): not kin -- classic is from Latin classicus, not felt as class
+  class / clay (4475 / 12010; school ~ art_materials,sculpture_words): not kin -- letters only
+  class / clay (4475 / 46002; school ~ pottery_words): not kin -- letters only
+? news / new (4556 / 28884; media_and_communication,tv_genres ~ rhymes_with_blue,homophones_of_animals,opposites): kin -- news is from new
+? news / new (4556 / 41354; media_and_communication,tv_genres ~ moon_phases_and_moods,phases_of_the_moon): kin -- news is from new
+  postcard / postcards (4562 / 45869; media_and_communication,mail_words,souvenirs,.. ~ collecting_hobbies): kin, dup? -- same sense: one entry with a form alias?
+? poster / post (4564 / 28052; media_and_communication,home_decor,classroom_items,.. ~ anagrams_of_each_other): kin -- poster from post (to post a bill)
+? poster / post (4564 / 35060; media_and_communication,home_decor,classroom_items,.. ~ social_media_words,online_actions): kin -- poster from post (to post a bill)
+? poster / post (4564 / 50363; media_and_communication,home_decor,classroom_items,.. ~ soccer_terms): kin -- poster from post (to post a bill)
+  freezer / freeze (4718 / 19888; appliances,kitchen_appliances,things_you_plug_in,.. ~ ways_to_preserve_food,ice_words): kin
+  freezer / freezing (4718 / 39944; appliances,kitchen_appliances,things_you_plug_in,.. ~ words_for_cold,states_of_matter,temperature_words): kin
+  dryer / dry (4727 / 19889; appliances,laundry_words,cleaning_appliances,.. ~ ways_to_preserve_food,no_vowels): kin
+  dryer / dry (4727 / 62397; appliances,laundry_words,cleaning_appliances,.. ~ sounds_like_a_number): kin -- the same word in another sense: look-alike (dry, sounds like drei: the same written word)
+  dryer / dry (4727 / 67366; appliances,laundry_words,cleaning_appliances,.. ~ opposites): kin
+  toaster / toast (4729 / 19765; appliances,kitchen,kitchen_appliances,.. ~ cooking_methods): kin
+  blender / blend (4731 / 19987; appliances,kitchen_appliances,small_appliances,.. ~ ways_to_mix): kin
+  vacuum / vacuuming (4735 / 23935; appliances,cleaning_appliances,cleaning_items,.. ~ chores): kin
+  heater / heating (4743 / 24222; appliances,heating_and_cooling,things_you_plug_in,.. ~ household_bills): kin
+  heater / heat (4743 / 40847; appliances,heating_and_cooling,things_you_plug_in,.. ~ heat_science,dry_season,temperature_words): kin
+  shirt / shirts (4859 / 23346; clothes,tops,things_with_buttons,.. ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  shorts / short (4867 / 39557; clothes,pants_and_shorts,things_with_legs,.. ~ size_labels): kin -- shorts are from short
+  skirt / skirts (4868 / 23351; clothes,dresses_and_skirts ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  dress / dresses (4869 / 23345; clothes,dresses_and_skirts ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  jacket / jackets (4871 / 23344; clothes,things_with_buttons,things_with_arms,.. ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  coat / coats (4872 / 23341; clothes,coats_and_jackets,winter_clothes,.. ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  sweater / sweaters (4873 / 23353; clothes,tops,knitwear,.. ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  sweater / sweaty (4873 / 39941; clothes,tops,knitwear,.. ~ words_for_hot): too big: left unlinked (clash groups 8 + 1 > 8)
+  hoodie / hood (4878 / 20827; clothes,tops,things_with_strings,.. ~ medieval_clothing,clothing_parts): kin
+  suit / suits (4884 / 23350; clothes ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  belt / belts (4943 / 23343; accessories,fastenings,things_with_holes,.. ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  tie / ties (4945 / 23347; accessories,neckwear ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  earrings / earring (4951 / 21316; accessories,jewelry,things_that_come_in_pairs,.. ~ pirate_clothing,starts_with_a_body_part): kin, dup? -- same sense: one entry with a form alias?
+  handbag / handbags (4957 / 23354; blank_bag,hand_blank,accessories,.. ~ wardrobe): kin, dup? -- same sense: one entry with a form alias?
+  umbrella / umbrellas (4962 / 31607; accessories,in_a_handbag,rain_gear,.. ~ monsoon_season): kin, dup? -- same sense: one entry with a form alias?
+  needle / needles (5020 / 64301; fabrics_and_sewing,sewing_words,things_with_eyes,.. ~ knitting_words): kin, dup? -- same sense: one entry with a form alias?
+  zipper / zip (5023 / 48494; fabrics_and_sewing,brand_names_used_as_words,things_with_teeth,.. ~ tent_parts): kin
+  tennis / ten (5241 / 29033; racket_and_target_sports,hidden_numbers,starts_with_a_number,.. ~ reversible_words,numbers,numbers_one_to_ten,..): not kin -- letters only
+  archery / archer (5248 / 20733; racket_and_target_sports,medieval_pastimes,olympic_sports,.. ~ medieval_jobs,soldiers_of_history,archery_terms,..): kin
+  darts / dart (5249 / 39774; racket_and_target_sports,british_pub_games ~ things_that_fly,things_you_throw): kin
+  darts / dart (5249 / 43170; racket_and_target_sports,british_pub_games ~ darts_terms): kin
+? bowling / bowl (5250 / 20138; racket_and_target_sports ~ table_setting,containers,crockery,..): not kin -- bowling (a bowl = a ball) vs bowl (dish): different words
+  swimming / swim (5290 / 10355; water_sports,workout_types,olympic_sports,.. ~ animal_movements,motion_verbs,sports_verbs,..): kin
+  diving / dive (5291 / 43304; water_sports,olympic_sports,aquatic_sports ~ diving_terms,animal_movements,ways_to_jump,..): kin
+  surfing / surf (5292 / 27992; water_sports,board_and_paddle_sports,olympic_sports,.. ~ wave_words,things_you_do_at_the_beach): kin
+  rowing / row (5293 / 28786; water_sports,workout_types,olympic_sports,.. ~ homographs): not kin -- row (argument) is another word
+  rowing / row (5293 / 44282; water_sports,workout_types,olympic_sports,.. ~ sports_verbs): kin
+  snorkeling / snorkel (5306 / 29352; water_sports,beach_vacation ~ words_from_german,scuba_words,sports_equipment,..): kin
+  skiing / ski (5345 / 43521; winter_sports,national_sports,snow_sports,.. ~ skiing_words,things_that_come_in_pairs,sports_equipment,..): kin
+  skiing / ski (5345 / 44289; winter_sports,national_sports,snow_sports,.. ~ sports_verbs,things_you_do_with_your_feet): kin
+  snowboarding / snowboard (5346 / 48871; winter_sports,snow_sports,olympic_sports,.. ~ ski_trip,ski_resort,blank_board,..): kin
+  sledding / sled (5364 / 48885; winter_sports,snow_sports ~ ski_trip,things_you_ride): kin
+? boxing / boxer (5395 / 9277; combat_sports,olympic_sports,ancient_olympics ~ dog_breeds,working_dogs,dogs_from_germany): kin -- the boxer dog is named after boxing
+? boxing / boxers (5395 / 24406; combat_sports,olympic_sports,ancient_olympics ~ underwear): kin -- boxer shorts are named after boxers
+  boxing / box (5395 / 25473; combat_sports,olympic_sports,ancient_olympics ~ containers,things_with_lids,things_you_open): not kin -- letters only
+  camping / camp (5609 / 48730; adventure_and_outdoor_sports,outdoor_activities ~ safari_words): kin
+  skydiving / skydive (5611 / 39845; adventure_and_outdoor_sports,extreme_sports,air_sports ~ ways_to_jump): kin
+  fishing / fish (5631 / 16671; adventure_and_outdoor_sports,survival_skills,outdoor_activities ~ food_groups,things_with_eyes,things_with_tails,..): kin
+  fishing / fish (5631 / 26652; adventure_and_outdoor_sports,survival_skills,outdoor_activities ~ irregular_plurals): kin
+  fishing / fish (5631 / 59990; adventure_and_outdoor_sports,survival_skills,outdoor_activities ~ pets,things_that_swim,things_you_catch,..): kin
+  chess / cheers (5713 / 27316; table_games,medieval_pastimes,words_from_persian,.. ~ british_slang): not kin -- letters only
+  chess / cheerful (5713 / 32666; table_games,medieval_pastimes,words_from_persian,.. ~ happy_words,moods,positive_traits): not kin -- letters only
+  chess / cheer (5713 / 44081; table_games,medieval_pastimes,words_from_persian,.. ~ cheerleading_words): not kin -- letters only
+? checkers / check (5714 / 45435; table_games,board_games,two_player_games ~ chess_terms): kin -- checkers from check (chess)
+  dominoes / domino (5732 / 45535; table_games,middle_eastern_pastimes,british_pub_games ~ game_pieces): kin, dup? -- same sense: one entry with a form alias?
+  knitting / knit (5847 / 24884; hobbies_and_crafts,crafts,yarn_and_thread_crafts ~ knitting_words,hidden_insects,silent_k_words,..): kin
+? pottery / potty (5853 / 15799; hobbies_and_crafts,artifacts,pottery_words,.. ~ baby_gear,baby_talk,words_for_toilet): not kin -- potty and pottery both come from pot, but are not look-alikes
+  pottery / pot (5853 / 19810; hobbies_and_crafts,artifacts,pottery_words,.. ~ cookware): kin -- pottery is from potter, from pot
+  pottery / pot (5853 / 25482; hobbies_and_crafts,artifacts,pottery_words,.. ~ containers): kin -- pottery is from potter, from pot
+  pottery / pot (5853 / 25788; hobbies_and_crafts,artifacts,pottery_words,.. ~ things_with_lids): kin -- pottery is from potter, from pot
+  painting / paint (5855 / 12008; hobbies_and_crafts,art,home_decor,.. ~ art_materials,things_that_drip,things_you_pour): kin
+  painting / paint (5855 / 67316; hobbies_and_crafts,art,home_decor,.. ~ things_you_do_at_school): kin
+  drawing / drawer (5856 / 25765; hobbies_and_crafts,art ~ things_with_handles,reversible_words,anagrams_of_each_other): not kin -- drawer (furniture) is another word
+? drawing / draw (5856 / 45454; hobbies_and_crafts,art ~ chess_terms,ways_a_game_ends): kin -- draw (chess, cards) is the same word in another sense
+? drawing / draw (5856 / 45513; hobbies_and_crafts,art ~ card_game_words): kin -- draw (chess, cards) is the same word in another sense
+  drawing / draw (5856 / 67300; hobbies_and_crafts,art ~ things_you_do_with_your_hands,things_you_do_at_school): kin
+  gardening / garden (5858 / 23241; hobbies_and_crafts,chores,hobbies_done_outdoors ~ outside_the_house): kin
+  jigsaw puzzles / jigsaw puzzle (5888 / 5922; hobbies_and_crafts ~ toys_and_play): kin, dup? -- same sense: one entry with a form alias?
+  crosswords / crossword (5889 / 35040; hobbies_and_crafts ~ newspaper_words,word_games,puzzles,..): kin, dup? -- same sense: one entry with a form alias?
+  doll / dolls (5921 / 45875; toys_and_play,things_with_eyes,things_with_faces,.. ~ collecting_hobbies): kin, dup? -- same sense: one entry with a form alias?
+  marbles / marble (5929 / 31746; toys_and_play,toys,outdoor_games,.. ~ rock_types,building_stones): kin -- the same word in another sense: look-alike (marble the stone)
+  marbles / marble (5929 / 39777; toys_and_play,toys,outdoor_games,.. ~ things_that_roll,game_pieces): kin, dup? -- same sense: one entry with a form alias?
+  recorder / record (6015 / 7499; instruments,woodwind_instruments,classroom_instruments,.. ~ scientific_method): kin
+  recorder / record (6015 / 28789; instruments,woodwind_instruments,classroom_instruments,.. ~ homographs): kin
+  recorder / record (6015 / 39792; instruments,woodwind_instruments,classroom_instruments,.. ~ things_that_spin): kin
+  singer / sing (6131 / 28863; musicians,rock_band_lineup,arts_jobs,.. ~ rhymes_with_ring,voice_sounds,things_you_do_at_school,..): too big: left unlinked (clash groups 8 + 1 > 8)
+  drummer / drum (6133 / 10595; musicians,rock_band_lineup ~ percussion_instruments,medieval_instruments,loud_things,..): kin
+  dancer / dancing (6204 / 20993; dance,arts_jobs ~ medieval_pastimes,holi): kin
+  sketch / sketching (6294 / 12210; art,art_gallery ~ drawing_techniques): kin
+  show / shower (6304 / 16272; art,museum,art_gallery,.. ~ bath_time,bathroom,bathroom_fixtures,..): not kin -- letters only
+  print / printer (6316 / 7257; art ~ computers,home_office,home_electronics,..): kin
+  painter / paint (6323 / 12008; art,arts_jobs,visual_creators ~ art_materials,things_that_drip,things_you_pour): kin
+  painter / paint (6323 / 67316; art,arts_jobs,visual_creators ~ things_you_do_at_school): kin
+  series / serious (6385 / 32896; film_and_tv,tv_words ~ personality_traits): not kin -- letters only
+  classic / classical (6501 / 10771; literature ~ music_genres): kin
+? comedy / comic (6523 / 26279; literature,theater_words,stage_genres,.. ~ things_you_read,periodicals): kin -- comic and comedy share a root, both felt as funny
+  comedy / come (6523 / 28605; literature,theater_words,stage_genres,.. ~ dog_commands): not kin -- letters only
+  comedy / comment (6523 / 35065; literature,theater_words,stage_genres,.. ~ social_media_words,online_actions): not kin -- letters only
+  comedy / comment (6523 / 42419; literature,theater_words,stage_genres,.. ~ internet_words): not kin -- letters only
+  dig / digestion (6859 / 14585; archaeology,archaeology_words ~ body_systems): not kin -- letters only
+  fairy / fair (6989 / 28843; fantasy,dress_up_costumes,fairy_tale_characters,.. ~ rhymes_with_bear,words_for_pretty): not kin -- fairy is not from fair
+? spell / spelling (6992 / 7602; fantasy,wizard_words,witchcraft ~ alphabets_and_writing): kin -- spell (magic) and spelling: the same word, other sense
+  potion / pot (6993 / 19810; fantasy,magic_items,wizard_words,.. ~ cookware): not kin -- letters only
+  potion / pot (6993 / 25482; fantasy,magic_items,wizard_words,.. ~ containers): not kin -- letters only
+  potion / pot (6993 / 25788; fantasy,magic_items,wizard_words,.. ~ things_with_lids): not kin -- letters only
+  potion / pots (6993 / 29129; fantasy,magic_items,wizard_words,.. ~ anagrams_of_each_other,reversible_words): not kin -- letters only
+  star / stars (7108 / 31584; space,reversible_words,things_that_glow,.. ~ nature_at_night): kin, dup? -- same sense: one entry with a form alias?
+  star / staring (7108 / 50931; space,reversible_words,things_that_glow,.. ~ cat_behaviors): not kin -- letters only
+  shooting star / shooting stars (7129 / 31591; superstitions,sky_phenomena,things_with_tails,.. ~ nature_at_night): kin, dup? -- same sense: one entry with a form alias?
+  gravity / grave (7132 / 21739; space,physics_words,forces,.. ~ tombs_and_burials,day_of_the_dead): not kin -- grave (tomb) is not from Latin gravis
+  scale / scales (7193 / 10395; measurement,doctor_s_office,measuring_tools,.. ~ animal_coverings): kin -- the same word in another sense: look-alike (fish scales)
+  scale / scales (7193 / 49966; measurement,doctor_s_office,measuring_tools,.. ~ science_lab): kin, dup? -- same sense: one entry with a form alias?
+  speed / speeding (7201 / 46663; measurement,physics_words,physical_properties ~ driving_words): kin
+  printer / print (7257 / 26175; computers,home_office,home_electronics,.. ~ handwriting_words): kin
+  printer / print (7257 / 49272; computers,home_office,home_electronics,.. ~ computer_actions): kin
+  folder / fold (7267 / 67303; computers ~ things_you_do_with_your_hands): kin
+  tablet / tablets (7328 / 15343; gadgets,home_electronics,things_with_screens,.. ~ pharmacy): kin -- the same word in another sense: look-alike (pills)
+  headphones / headphone (7330 / 66693; gadgets,recording_studio_words,home_electronics,.. ~ head_blank): kin, dup? -- same sense: one entry with a form alias?
+  gear / gears (7384 / 47855; engineering,things_with_teeth,simple_machines,.. ~ bicycle_parts): kin, dup? -- same sense: one entry with a form alias?
+  pump / pumpkins (7389 / 31529; engineering ~ signs_of_autumn): not kin -- letters only
+  result / results (7456 / 49976; scientific_method,steps_of_an_investigation ~ science_fair,parts_of_an_experiment): kin, dup? -- same sense: one entry with a form alias?
+? pink / pinky (7666 / 14385; colors,valentine_s_day,shades_of_pink,.. ~ fingers,hand_parts): not kin -- pinky is from Dutch pink (small), not the color
+? brown / brownies (7667 / 19443; colors,shades_of_brown,earth_tones,.. ~ north_american_food): kin -- brownies are named for brown
+  rose / roses (7698 / 25161; colors,shades_of_pink,colors_named_after_flowers,.. ~ valentine_s_day,things_that_smell_good,fragrant_flowers): kin -- the same word in another sense: look-alike (the color rose is from the flower)
+  beak / beaker (8358 / 40416; bird_body_parts,animal_body_parts,parts_of_a_bird_s_head ~ lab_equipment,science_lab,things_made_of_glass,..): not kin -- letters only
+  feather / feathers (8360 / 10125; bird_body_parts,animal_body_parts,beachcombing_finds,.. ~ dinosaur_words,animal_coverings): kin, dup? -- same sense: one entry with a form alias?
+  wing / wings (8361 / 17868; bird_body_parts,rhymes_with_ring ~ barbecue_foods): kin -- the same word in another sense: look-alike
+  shell / shells (8599 / 31054; turtles_and_tortoises ~ beachcombing_finds): kin -- the same word in another sense: look-alike
+  fin / final (8833 / 34834; fish_body_parts,animal_body_parts,parts_of_water_animals ~ exam_words): not kin -- letters only
+  fin / final (8833 / 44340; fish_body_parts,animal_body_parts,parts_of_water_animals ~ tournament_words,stages_of_a_tournament): not kin -- letters only
+  wing / wings (9125 / 17868; insect_body_parts,animal_body_parts,bug_parts ~ barbecue_foods): kin -- the same word in another sense: look-alike
+  leg / legal (9128 / 29227; insect_body_parts ~ starts_with_a_body_part): not kin -- letters only
+  leg / legs (9128 / 51617; insect_body_parts ~ piano_parts): kin -- the same word in another sense: look-alike
+  boxer / boxers (9277 / 24406; dog_breeds,working_dogs,dogs_from_germany ~ underwear): kin -- the same word in another sense: look-alike (boxer dog / boxer shorts)
+? boxer / box (9277 / 25473; dog_breeds,working_dogs,dogs_from_germany ~ containers,things_with_lids,things_you_open): not kin -- the dog is named after boxing, not box
+  heel / heels (9606 / 24623; parts_of_a_horse ~ shoes): kin -- the same word in another sense: look-alike
+  dinosaur bones / dinosaur bone (10120 / 21696; dinosaur_words,famous_discoveries ~ fossils): kin, dup? -- same sense: one entry with a form alias?
+  duckling / ducklings (10128 / 31489; baby_animals,yellow_things,ducks,.. ~ signs_of_spring): kin, dup? -- same sense: one entry with a form alias?
+  meow / meowing (10184 / 50903; animal_sounds,onomatopoeia ~ cat_behaviors): kin
+  hiss / his (10191 / 26418; animal_sounds,ways_of_speaking,onomatopoeia,.. ~ pronouns): not kin -- letters only
+  hiss / hissing (10191 / 50902; animal_sounds,ways_of_speaking,onomatopoeia,.. ~ cat_behaviors): kin
+  purr / purring (10200 / 50900; animal_sounds,machine_sounds,vehicle_sounds ~ cat_behaviors): kin
+  squeak / squeaky (10201 / 62505; animal_sounds,ways_of_speaking ~ sound_qualities): kin
+  growl / growling (10202 / 50928; animal_sounds,hidden_birds,ends_with_a_bird,.. ~ cat_behaviors): kin
+  chirp / chirping (10203 / 50927; animal_sounds ~ cat_behaviors): kin
+? pack / packing (10236 / 24248; collective_nouns ~ moving_house): kin -- pack (of wolves) and packing: one word, other sense
+  trunk / trunks (10325 / 43279; animal_body_parts ~ swimwear): kin
+  scale / scales (10351 / 10395; animal_body_parts,parts_of_water_animals ~ animal_coverings): kin, dup? -- same sense: one entry with a form alias?
+  scale / scales (10351 / 49966; animal_body_parts,parts_of_water_animals ~ science_lab): kin -- the same word in another sense: look-alike
+  shell / shells (10352 / 31054; animal_body_parts,animal_coverings ~ beachcombing_finds): kin -- the same word in another sense: look-alike
+  coat / coats (10400 / 23341; animal_coverings ~ wardrobe): kin -- the same word in another sense: look-alike
+  string / stress (10707 / 16373; instrument_parts,orchestra_words,guitar_parts,.. ~ mental_health_words): not kin -- letters only
+  jingle bells / jingle bell (10752 / 66551; classroom_instruments,christmas_carols ~ blank_bell): kin, dup? -- same sense: one entry with a form alias?
+? blues / blue (10767 / 50339; music_genres,american_roots_music ~ cue_sports_terms): kin -- as blue/blues
+  metal / meter (10773 / 41729; music_genres ~ length_units,metric_units,si_base_units): not kin -- letters only
+  metal / meter (10773 / 49818; music_genres ~ power_grid_words,smart_home): not kin -- letters only
+  bass / basement (11011 / 24074; voice_types,classical_voice_types ~ parts_of_a_house): not kin -- letters only
+  bass / base (11011 / 41091; voice_types,classical_voice_types ~ microscope_parts): not kin -- letters only
+  bass / basis (11011 / 67108; voice_types,classical_voice_types ~ ends_with_a_family_member,ends_with_sis): not kin -- letters only
+  brass / bra (11070 / 24408; orchestra_words,orchestra_sections,starts_with_bra ~ underwear): not kin -- letters only
+  speakers / speaker (11196 / 23559; concert_words ~ home_electronics,computer_parts,audio_gear,..): kin, dup? -- same sense: one entry with a form alias?
+  speakers / speak (11196 / 50875; concert_words ~ dog_commands): kin
+? stretching / stretcher (11890 / 15184; dance_studio_words,workout_types,bedtime_routine,.. ~ medical_equipment,hospital): kin -- the stretcher is from stretch
+  stretching / stretch (11890 / 16855; dance_studio_words,workout_types,bedtime_routine,.. ~ body_actions,morning_routine): kin
+  selfie / selfish (12071 / 56704; photography_words,social_media_words,internet_words ~ negative_traits,ends_with_a_pet): not kin -- letters only
+  curtain / curtains (12242 / 23107; theater_words,parts_of_a_stage,theater_building_parts,.. ~ living_room,soft_furnishings,home_decor,..): kin, dup? -- same sense: one entry with a form alias?
+  musical / music (12245 / 28084; theater_words,stage_genres,movie_genres ~ words_from_mythology): kin
+  musical / music (12245 / 34727; theater_words,stage_genres,movie_genres ~ school_subjects): kin
+  act / action (12249 / 12559; theater_words ~ movie_genres): kin
+  princess / prince (12531 / 20762; dress_up_costumes,royal_titles,titles_for_women ~ feudal_ranks,royal_titles): kin -- male/female pair across themes
+  winner / win (12733 / 67378; award_words ~ opposites): kin
+  comic book / comic books (13566 / 45863; things_made_of_paper,reading_material,blank_book,.. ~ collecting_hobbies): kin, dup? -- same sense: one entry with a form alias?
+  juggler / juggling (13687 / 20999; circus,street_performers ~ medieval_pastimes): kin
+? joke / joker (13748 / 45515; comedy_words ~ card_game_words): kin -- the joker card is from joker
+? joke / joker (13748 / 45593; comedy_words ~ mahjong_words): kin -- the joker card is from joker
+? bangs / bang (14274 / 25256; hair,hairstyles ~ fireworks,onomatopoeia,impact_sounds): not kin -- bangs (hair) is not felt as bang
+  freckle / freckles (14326 / 16367; skin_words ~ sun_care): kin, dup? -- same sense: one entry with a form alias?
+  scar / scared (14329 / 28634; skin_words ~ hidden_colors,scared_words): not kin -- letters only
+? pinky / pink (14385 / 50340; fingers,hand_parts ~ cue_sports_terms): not kin -- as pink/pinky
+  gum / gums (14491 / 15414; teeth ~ dental_words,dentist_s_office): kin, dup? -- same sense: one entry with a form alias?
+  digestion / dig (14585 / 30752; body_systems ~ gardening_verbs): not kin -- letters only
+  digestion / dig (14585 / 67334; body_systems ~ things_you_do_at_the_beach): not kin -- letters only
+  see / sees (14649 / 29009; sight_words,sounds_like_a_letter,things_you_do_with_your_eyes ~ palindromes,sounds_like_a_number): kin
+  stare / stars (14652 / 31584; sight_words,ways_of_looking,rhymes_with_bear,.. ~ nature_at_night): not kin -- letters only
+  stare / staring (14652 / 50931; sight_words,ways_of_looking,rhymes_with_bear,.. ~ cat_behaviors): kin
+  rough / roughly (14801 / 29195; touch_words,ough_words,texture_words,.. ~ ough_words): kin
+  sticky / sticker (14804 / 25225; touch_words,hot_weather_words,words_for_hot,.. ~ gift_wrapping,sticky_things,at_the_doctor,..): kin
+  slimy / slime (14805 / 28640; touch_words,texture_words ~ hidden_colors,hidden_fruits,slippery_things,..): kin
+  bumpy / bump (14808 / 15020; touch_words,texture_words ~ injuries): kin
+  rub / ruby (14817 / 31657; touch_words,hand_actions,things_you_do_with_your_hands ~ gemstones,treasure,precious_materials,..): not kin -- letters only
+  rub / rubbing (14817 / 50917; touch_words,hand_actions,things_you_do_with_your_hands ~ cat_behaviors): kin
+  tear / tears (14872 / 40324; eye_parts ~ things_that_drip,wet_things): kin, dup? -- same sense: one entry with a form alias?
+  vomiting / vomit (14886 / 39703; common_illnesses,symptoms,digestive_problems ~ things_that_smell_bad): kin
+  sneezing / sneeze (14936 / 16982; allergies,symptoms ~ body_noises,voice_sounds): kin
+  burn / burning (14988 / 39931; injuries ~ words_for_hot,chemical_reactions): kin
+  painkiller / painkillers (15123 / 15333; medicines ~ pharmacy,in_a_handbag): kin, dup? -- same sense: one entry with a form alias?
+  tablet / tablets (15150 / 15343; forms_of_medicine ~ pharmacy): kin, dup? -- same sense: one entry with a form alias?
+  drops / drop (15154 / 41795; forms_of_medicine ~ volume_units,computer_actions): kin
+  stretcher / stretch (15184 / 16855; medical_equipment,hospital ~ body_actions,morning_routine): kin
+  plaster / plastic (15383 / 28262; first_aid,brand_names_used_as_words ~ man_made_materials,smooth_things,things_that_melt,..): not kin -- letters only
+? gums / gum (15414 / 39064; dental_words,dentist_s_office ~ sticky_things,mouth_actions,in_a_pocket): kin -- gum (mouth) and chewing gum: other words, same look
+  tissues / tissue (15521 / 25548; cold_and_flu_remedies,in_a_handbag,in_a_school_bag ~ paper_goods,hidden_names,lightweight_things,..): kin, dup? -- same sense: one entry with a form alias?
+  honey / honest (15594 / 56674; middle_eastern_remedies,sweeteners,spreads,.. ~ positive_traits): not kin -- letters only
+  dates / dated (15598 / 28679; middle_eastern_remedies,bazaar,sweet_foods,.. ~ hidden_fruits,words_for_old): not kin -- dated (old) is not from the fruit
+  dates / dating (15598 / 32431; middle_eastern_remedies,bazaar,sweet_foods,.. ~ relationships): not kin -- dating is not from the fruit
+  pushing / push (15736 / 40622; childbirth_words ~ forces,hand_actions,things_you_do_with_your_hands,..): kin
+? potty / pot (15799 / 19810; baby_gear,baby_talk,words_for_toilet ~ cookware): kin -- potty is from pot (chamber pot)
+? potty / pot (15799 / 25482; baby_gear,baby_talk,words_for_toilet ~ containers): kin -- potty is from pot (chamber pot)
+? potty / pot (15799 / 25788; baby_gear,baby_talk,words_for_toilet ~ things_with_lids): kin -- potty is from pot (chamber pot)
+  walking / walk (15808 / 16849; baby_milestones,healthy_habits,modes_of_transport ~ body_actions,motion_verbs,things_you_do_with_your_feet,..): kin
+  lunge / lungs (15841 / 40293; exercises,ways_to_jump ~ things_that_come_in_pairs): not kin -- letters only
+  running / runner (15964 / 44021; workout_types ~ running_words): kin
+  running / run (15964 / 67308; workout_types ~ things_you_do_with_your_feet,ways_to_move): kin
+  cycling / cyclist (15965 / 47990; workout_types,healthy_habits,green_living_words,.. ~ cycling_words): kin
+  stress / string (16373 / 23267; mental_health_words ~ junk_drawer,cords_and_strings,rhymes_with_ring,..): not kin -- letters only
+  stress / stressed (16373 / 29030; mental_health_words ~ reversible_words): kin
+  snacking / snack (16477 / 20115; bad_habits ~ meals_of_the_day,in_a_school_bag): kin
+  snacking / snacks (16477 / 48273; bad_habits ~ road_trip_words,things_to_pack): kin
+  reading / read (16529 / 28784; healthy_habits ~ homographs,things_you_do_with_your_eyes,things_you_do_at_school,..): kin
+  facial / face (16536 / 55782; spa ~ clock_parts,clocks_and_calendars): kin
+  iron / ironing (16651 / 23941; dietary_minerals ~ chores): kin
+  beans / bean (16683 / 28259; food_groups,on_toast ~ coffee_words): kin -- the same word in another sense: look-alike (coffee beans)
+  almonds / almond (16739 / 17235; superfoods,healthy_snacks,crunchy_foods ~ stone_fruits,nuts,foods_with_shells,..): kin, dup? -- same sense: one entry with a form alias?
+  walnuts / walnut (16740 / 30307; superfoods ~ foraging_finds,nuts,foods_with_shells,..): kin, dup? -- same sense: one entry with a form alias?
+  wave / waves (16812 / 48862; gestures,hand_actions,things_you_do_with_your_hands ~ beach_vacation): kin
+  sit / sitting (16850 / 17064; body_actions,dog_commands,things_you_do_at_school,.. ~ body_positions): kin
+  stand / standing (16851 / 17063; body_actions,hidden_colors ~ body_positions): kin
+  kneel / kneeling (16852 / 17066; body_actions,hidden_body_parts,starts_with_a_body_part,.. ~ body_positions): kin
+  lean / leaning (16858 / 17087; body_actions ~ body_positions): kin
+  scratch / scratching (16891 / 50904; hand_actions,things_you_do_with_your_hands ~ cat_behaviors): kin
+  cry / crisis (17018 / 67109; ways_of_crying,no_vowels,voice_sounds,.. ~ ends_with_sis): not kin -- letters only
+  standing / stand (17063 / 50883; body_positions ~ dog_commands): kin
+  raisin / raisins (17265 / 19919; dried_fruits,chewy_foods ~ lunchbox): kin, dup? -- same sense: one entry with a form alias?
+  peanut / peanuts (17350 / 19093; nuts,andean_crops,foods_with_shells,.. ~ snacks): kin, dup? -- same sense: one entry with a form alias?
+  peel / peeler (17410 / 19843; parts_of_a_fruit,ways_to_cut_food ~ kitchen_utensils,things_with_handles,kitchen_tools): kin
+  shell / shells (17425 / 31054; parts_of_a_fruit ~ beachcombing_finds): kin -- the same word in another sense: look-alike
+  wings / wing (17868 / 47110; barbecue_foods ~ plane_parts): kin
+  chocolate chip / chocolate chips (18137 / 18206; cookies ~ baking_ingredients,toppings): kin, dup? -- same sense: one entry with a form alias?
+  broth / brother (18924 / 32383; soups,starts_with_bro ~ family_members): not kin -- letters only
+  wrap / wrapper (19017 / 56062; sandwiches,lunchbox ~ silent_w_words): kin
+? crackers / crack (19094 / 57960; snacks,picnic_basket,salty_foods,.. ~ impact_sounds): kin -- crackers are named from crack
+? brownies / brown (19443 / 50338; north_american_food ~ cue_sports_terms): kin -- as brownies/brown
+  barbecue / barbecues (19767 / 31502; cooking_methods,outside_the_house,words_from_spanish,.. ~ signs_of_summer): kin, dup? -- same sense: one entry with a form alias?
+  pot / pots (19810 / 29129; cookware ~ anagrams_of_each_other,reversible_words): too big: left unlinked (clash groups 8 + 1 > 8) -- same sense: one entry with a form alias?
+  salt / salty (19885 / 39201; ways_to_preserve_food ~ taste_words,basic_tastes): kin
+  freeze / freezing (19888 / 39944; ways_to_preserve_food,ice_words ~ words_for_cold,states_of_matter,temperature_words): kin
+  napkin / napkins (19926 / 19939; lunchbox,table_setting,dining_room,.. ~ picnic_basket,party_supplies): kin, dup? -- same sense: one entry with a form alias?
+  paper plates / paper plate (19937 / 25551; picnic_basket,party_supplies ~ things_made_from_trees): kin, dup? -- same sense: one entry with a form alias?
+  bill / billion (20016 / 41530; restaurant_words,restaurant ~ big_numbers): not kin -- billion is not from bill
+  dessert / desserts (20083 / 29039; courses_of_a_meal,restaurant ~ reversible_words): kin, dup? -- same sense: one entry with a form alias?
+  snack / snacks (20115 / 48273; meals_of_the_day,in_a_school_bag ~ road_trip_words,things_to_pack): kin, dup? -- same sense: one entry with a form alias?
+  spoon / spoons (20136 / 45891; table_setting,dining_room,shiny_things,.. ~ collecting_hobbies): kin, dup? -- same sense: one entry with a form alias?
+  glass / glasses (20139 / 24782; table_setting,drinking_vessels ~ eyewear,things_that_come_in_pairs,pairs_you_wear,..): kin -- the same word in another sense: look-alike (glasses = spectacles)
+  sandals / sand (20848 / 38790; medieval_clothing,shoes,things_to_pack,.. ~ earth_tones): not kin -- letters only
+  sandals / sanding (20848 / 46041; medieval_clothing,shoes,things_to_pack,.. ~ woodworking_words): not kin -- letters only
+  cards / card (21000 / 25138; medieval_pastimes ~ birthdays): kin -- the same word in another sense: look-alike
+  arr / arrive (21174 / 48172; pirate_words ~ travel_verbs): not kin -- letters only
+  boots / boot (21315 / 27381; pirate_clothing,fire_station,hiking_gear,.. ~ british_english_words): kin -- the same word in another sense: look-alike (boot = car trunk)
+  coin / coins (21717 / 23292; artifacts,money_words,things_that_roll,.. ~ in_a_wallet,in_a_pocket): kin, dup? -- same sense: one entry with a form alias?
+  toilet / toilets (23134 / 63307; bathroom,bathroom_fixtures,plumbing_words,.. ~ public_buildings): kin, dup? -- same sense: one entry with a form alias?
+  car / caring (23150 / 56684; garage,things_with_keys,things_with_wheels,.. ~ positive_traits): not kin -- letters only
+  dust / duster (23180 / 23837; attic,dry_season,lightweight_things ~ cleaning_items): kin
+  dust / dusting (23180 / 23938; attic,dry_season,lightweight_things ~ chores): kin
+  paper clips / paper clip (23224 / 34761; home_office,junk_drawer ~ stationery,office,paper_blank,..): kin, dup? -- same sense: one entry with a form alias?
+  batteries / batter (23261 / 42802; junk_drawer,emergency_supplies,energy_and_light_sources ~ baseball_terms,hitting_terms): not kin -- letters only
+  batteries / bat (23261 / 42803; junk_drawer,emergency_supplies,energy_and_light_sources ~ baseball_terms,hitting_terms): not kin -- letters only
+  batteries / battery (23261 / 46608; junk_drawer,emergency_supplies,energy_and_light_sources ~ car_parts,under_the_bonnet): kin, dup? -- same sense: one entry with a form alias?
+  batteries / battery (23261 / 49768; junk_drawer,emergency_supplies,energy_and_light_sources ~ electronic_parts,electricity_words,inventions,..): kin, dup? -- same sense: one entry with a form alias?
+  batteries / battery (23261 / 52270; junk_drawer,emergency_supplies,energy_and_light_sources ~ camera_parts): kin, dup? -- same sense: one entry with a form alias?
+  rubber bands / rubber band (23262 / 25544; junk_drawer ~ cords_and_strings,stationery,stretchy_things,..): kin, dup? -- same sense: one entry with a form alias?
+  pens / pen (23266 / 34758; junk_drawer ~ stationery,in_a_handbag,things_you_write_with,..): kin, dup? -- same sense: one entry with a form alias?
+  coins / coin (23292 / 45781; in_a_wallet,in_a_pocket ~ power_ups_and_pickups): kin -- the same word in another sense: look-alike
+  keys / key (23316 / 25699; in_a_handbag,in_a_pocket ~ locks_and_keys,things_that_sink,things_with_teeth,..): kin, dup? -- same sense: one entry with a form alias?
+  keys / key (23316 / 45787; in_a_handbag,in_a_pocket ~ power_ups_and_pickups): kin -- the same word in another sense: look-alike
+  belts / belt (23343 / 49844; wardrobe ~ machine_parts): kin -- the same word in another sense: look-alike
+  ties / tie (23347 / 67301; wardrobe ~ things_you_do_with_your_hands): kin -- the same word in another sense: look-alike
+  shoes / shoe (23349 / 28077; wardrobe,things_that_come_in_pairs,things_that_squeak,.. ~ rhymes_with_blue,things_with_tongues): kin, dup? -- same sense: one entry with a form alias?
+  sweaters / sweaty (23353 / 39941; wardrobe ~ words_for_hot): too big: left unlinked (clash groups 8 + 1 > 8)
+  sponges / sponge (23369 / 23835; under_the_sink ~ cleaning_items,washing_up,lightweight_things,..): kin, dup? -- same sense: one entry with a form alias?
+  sponges / sponge (23369 / 28037; under_the_sink ~ cakes): kin -- the same word in another sense: look-alike (sponge cake)
+  rubber gloves / rubber glove (23375 / 39106; under_the_sink,cleaning_items,washing_up,.. ~ stretchy_things,things_made_of_rubber): kin, dup? -- same sense: one entry with a form alias?
+  speaker / speak (23559 / 50875; home_electronics,computer_parts,audio_gear,.. ~ dog_commands): kin
+  staple / staples (23706 / 34766; fixings ~ stationery): kin, dup? -- same sense: one entry with a form alias?
+  mop / mopping (23834 / 23937; cleaning_items,cleaning_verbs,things_with_handles,.. ~ chores): kin
+  duster / dust (23837 / 23858; cleaning_items ~ cleaning_verbs): kin
+  duster / dusting (23837 / 23938; cleaning_items ~ chores): kin
+? cloth / clothes (23840 / 28192; cleaning_items ~ things_to_pack): kin -- clothes is from cloth
+  sweep / sweeping (23857 / 23936; cleaning_verbs ~ chores): kin
+  dust / dusting (23858 / 23938; cleaning_verbs ~ chores): kin
+  vacuum / vacuuming (23859 / 23935; cleaning_verbs ~ chores): kin
+  tidy / tide (23866 / 31144; cleaning_verbs ~ tides_and_currents,ocean,beach,..): not kin -- tidy (from tide) is no longer felt as tide
+  ironing / iron (23941 / 25760; chores ~ things_you_plug_in,hot_things,cleaning_appliances,..): kin
+  ironing / iron (23941 / 50353; chores ~ golf_clubs): kin
+  bubbles / bubble (24005 / 39566; washing_up ~ lightweight_things,water_sounds,things_that_pop,..): kin, dup? -- same sense: one entry with a form alias?
+  bubbles / bubble (24005 / 43298; washing_up ~ swimming_words): kin -- the same word in another sense: look-alike
+  brick / bricks (24030 / 46147; building_materials,building_stones,man_made_materials,.. ~ building_toys): kin -- the same word in another sense: look-alike
+  glass / glasses (24032 / 24782; building_materials,things_that_melt,shiny_things,.. ~ eyewear,things_that_come_in_pairs,pairs_you_wear,..): too big: left unlinked (clash groups 1 + 8 > 8) -- the same word in another sense: look-alike
+  attic / at (24072 / 26448; parts_of_a_house ~ prepositions,rhymes_with_cat): not kin -- letters only
+? basement / base (24074 / 41091; parts_of_a_house ~ microscope_parts): kin -- basement is from base
+  basement / basis (24074 / 67108; parts_of_a_house ~ ends_with_a_family_member,ends_with_sis): not kin -- letters only
+  lock / locker (24104 / 34795; windows_and_doors,locks_and_keys,things_with_keys,.. ~ classroom_items,storage_furniture): kin
+  lock / locker (24104 / 57611; windows_and_doors,locks_and_keys,things_with_keys,.. ~ swimming_pool,water_park): kin
+  electricity / electric (24214 / 63346; household_bills,famous_discoveries,physics_discoveries ~ scooters_and_skates): kin
+  heating / heat (24222 / 40847; household_bills ~ heat_science,dry_season,temperature_words): kin
+? boxers / box (24406 / 25473; underwear ~ containers,things_with_lids,things_you_open): not kin -- boxers (shorts) are named after boxing, not box
+  bra / brass (24408 / 31727; underwear ~ metals,bazaar,man_made_materials,..): not kin -- letters only
+  socks / sock (24409 / 40228; underwear,socks_and_hosiery,things_that_come_in_pairs,.. ~ things_with_holes): kin, dup? -- same sense: one entry with a form alias?
+  sneakers / sneaker (24620 / 40217; shoes,things_that_squeak,sports_clothing ~ things_with_tongues): kin, dup? -- same sense: one entry with a form alias?

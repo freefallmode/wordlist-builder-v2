@@ -1,0 +1,52 @@
+Library v399 (tools/gen/batch399.mjs, 2026-11-19 13:38): 371 changes. Simon approved the proposal as made (review: tools/gen/batch399-review.txt):
+  same-sense look-alikes count as kin; the 115 dup? pairs get kin now (merging each into one entry with a form alias is a later issue); squad joins
+  the soldier group in army_words.
+  A pilot kin pass (I22, DESIGN-entries.md 3.7): one-family entries in DIFFERENT themes (joy in emotions, joyful in happy words) could meet in one
+  level in two groups and lure a wrong drop. Kin is exported into the shared clash id, so the game never puts them in one level.
+  Source: the family-kin suggestions of validate() on v398 (7,324); 4,540 have both entries in the family export with familiarity 1-3; the first
+  500 of those, easier member first (min fam, then max fam, then ids). Decisions: tools/gen/batch399-pairs.txt.
+Checks: 0 errors; warnings theme-name 3, long 5, maybe-duplicate 1, clash-big 3 (kebab 11, ghost 10, marijuana 10: as v398), family-pair 11 -> 0;
+  info family-kin 7324 -> 6823; no new issue messages. 614 entries now carry kin (363 pairs). npm test 49 pass. node tools/export-game.mjs full
+  <scratch> --strict exits 0 (62669 entries, case lint 0, the same 10 same-text drops); tools/gen/style-case.mjs 0 changes (Checks errors 0 -> 0;
+  case lint 0); tools/gen/propword-exceptions.mjs 0 changes (case lint 0); rerunning batch399.mjs prints 0 library changes; node
+  tools/export-game.mjs --strict exits 0.
+
+Counts (500 pairs): 363 kin set (36 judgement calls "kin?", 115 "dup?"); 125 not kin, put on the allow list js/family-allow.js as all-theme keys
+  (15 judgement calls); 12 too big (kin, but the exported clash group would pass 8: engine/engineer x4, digger/dig, rib/ribs, stroller/stroll,
+  sweater/sweaty, sweaters/sweaty, singer/sing, pot/pots, glass/glasses), left unlinked and still suggested by family-kin.
+  Real-kin rate in the sample: 375 of 500 (75%).
+  Part 3: familyOk set on royal_titles and ranks_of_the_british_peerage (the 5 male/female title pairs). Suggested, not set: short_forms_of_names,
+  feudal_ranks. The six -ie/-sy pairs grouped: outback swag joins (swagman, swaggie); nutrition ketosis joins (keto, ketogenic diet); police_words
+  and forces_of_europe new group (gendarme, gendarmerie); army_words squad joins (soldier, trooper, squaddie, digger, GI, grunt), 7 words;
+  soccer_terms goal joins (goalkeeper, goalie), 4 words with keeper. No entry deleted, added or unlinked.
+
+Decisions (why):
+  - Kin: one word family a player sees as look-alikes (bake/baker, snow/snowy, dog/doggy), and one written word in another sense (hearts [suit] /
+    heart [organ], trunk/trunks [swimming]): 44 such pairs.
+  - Not kin: letters only (belly/bell, tin/tiny, corn/corner), compounds (ear/earring: the Overlap rule), related long ago and not felt now
+    (army/arm, daisy/day, tidy/tide), or a homograph whose sense is not the base (copper [metal] / cop, bat [animal] / batter).
+  - Too big is worked out pair by pair in list order with the export's own counting (exported themes' groups + kin, each root with its exported
+    aliases), so a rerun cannot change the outcome.
+
+Family export (the committed file, node tools/export-game.mjs --strict) against the v398 file, checked by a script:
+  Format "v" 4 unchanged. lib.version 398 -> 399, modified. Entries 61024 -> 61024, the same texts in the same order: no entry index shifts.
+  Links identical (every column but clash identical; every top-level part identical but lib and generated).
+  clash: words with a clash id 9065 -> 9572, clash ids 3766 -> 3906. Above 8: kebab 11 and wraith/ghost 10, as before; groups of exactly 8: 8 -> 14.
+  No new clash group above 8.
+
+Notice for _WS_ (DRAFT, not sent; covers v398 and v399, as Simon asked):
+  Library v398 and v399: word-family pairs (gamer/gaming, joy/joyful, mom/mommy ...) are now kept out of one level by the clash column.
+  v398 (in one theme: synonym groups):
+  Family export: 61024 entries, as v397. No entry leaves and no entry index changes.
+  Clash: 70 new groups and 38 grown or merged ones: words with a clash id 8918 -> 9065, clash ids 3719 -> 3766.
+  Links removed (old numbers): 18558 trooper 4311 in military; 18609, 18610, 18613, 18614 mariner 4319 in military, navy words, naval people,
+  service members; 33703 buck 9931 in money slang (the male-animal entry, beside bucks). Links added: 47581-47585 (new numbers).
+  18317 onion ring becomes a form alias (flag 32) of 18106 onion rings (root 18107) and takes its root's links (it was linked only in burger
+  toppings, which keeps its link number); what burger toppings shows is unchanged.
+  Link shift by old number range: 0-18557 0, 18559-18608 -1, 18611-18612 -3, 18615-33702 -5, 33704-47586 -6, 47587-107349 -1.
+  Every surviving link keeps its theme, typicality, difficulty and shown text. shown, nameWordLinks, nameThemeLinks, shownUK unchanged.
+  Theme counts change in 7 themes (burger toppings, deep-fried foods, money slang, military, navy words, naval people, service members).
+  v399 (across themes: a pilot kin pass, 363 pairs such as bake/baker, snow/snowy, hearts/heart; plus 6 small synonym groups):
+  Family export: 61024 entries, no entry index changes, links identical to v398. Only the clash column changes:
+  words with a clash id 9065 -> 9572, clash ids 3766 -> 3906. Largest clash group still 11 (kebab); no new one above 8 (groups of 8: 8 -> 14).
+  Please check that levels still generate in all modes and report the words-failed counts (v399 against v397 if you can).
