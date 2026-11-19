@@ -1,0 +1,74 @@
+A. merges (8):
+  fish_from_rivers_and_lakes "fish from rivers and lakes" -> freshwater_fish "freshwater fish": 9 links; added 2: tilapia 494 3, Arctic char 9755 4; better rating taken 0: none; skipped 0: none; fish_from_rivers_and_lakes deleted
+  colours_named_after_fruit "colours named after fruit" -> fruit_shades "colors named after fruits": 13 links; added 3: lime 75 as lime 7683 (colour sense) 2, orange 76 as orange 2 (colour sense) 1, olive 360 as olive 7694 (colour sense) 2; better rating taken 5: tangerine 78 3 -> 2, cherry 92 2 -> 1, mango 95 3 -> 2, raspberry 349 3 -> 2, mulberry 367 4 -> 3; skipped 0: none; colours_named_after_fruit deleted
+  fish_on_the_menu "fish on the menu" -> fish_to_eat "fish to eat": 25 links; added 0: none; better rating taken 3: eel 495 4 -> 3, sturgeon 1240 5 -> 3, grouper 1251 4 -> 3; skipped 0: none; fish_on_the_menu deleted
+  horse_races "horse races" -> famous_horse_races "famous horse races": 8 links; added 0: none; better rating taken 0: none; skipped 0: none; horse_races deleted
+  golf_scores "golf scores" -> scoring_terms "golf scoring terms": 9 links; added 2: stableford 43066 4, condor 61719 5; better rating taken 0: none; skipped 0: none; golf_scores deleted
+  landforms "mountain landforms" -> mountain_features "mountain features": 25 links; added 3: crevasse 30902 3, serac 30908 5, fell 32092 4; better rating taken 1: plateau 1918 4 -> 3; skipped 0: none; landforms deleted
+    ship_parts: galley 47431 (gloss "ship", the vessel) unlinked (was 3); the part is the galley kitchen 2823
+  parts_of_a_ship "parts of a ship" -> ship_parts "ship parts": 19 links; added 6: galley 2823 3, binnacle 21041 5, gun deck 34595 4, bulkhead 48909 4, taffrail 61242 5, orlop 61243 5; better rating taken 0: none; skipped 0: none; parts_of_a_ship deleted
+B. toys and characters with eyes: mask 21720 unlinked (a face covering, not a toy or character; stays in things with eyes); Argus and Sauron stay (characters known for their eyes)
+C. public transport: public_transportation: "public transportation" -> "public transport words"; note set
+Listed, not changed:
+  places_of_worship / religious_buildings (J 0.70, 30 shared): worship places vs buildings (monastery, minaret, bell tower vs mausoleum, ziggurat): kept
+  snow_sports / winter_sports (parent, 34 shared): winter has ice sports: kept
+  bears (complete species set) / bear_types (grizzly, Kodiak, cinnamon under hibernating animals): kept
+  days_of_the_week / weekdays; fracture_types / bone_and_joint_injuries; Oceanian countries / star flags of Oceania; alkali themes: subsets with their own meaning: kept
+  needlework / thread crafts (J 0.53); folk / national instruments (J 0.51); African capitals / cities; aircraft / aircraft types: overlap, different meaning: kept
+  place topic vs "X words" pairs: airport / airport words (J 0.54), pond / pond life (0.54), movie theater / movie theater words (0.48), restaurant / restaurant words, hospital / hospital words, art gallery / art gallery words: a pattern for Simon
+library changes 138; status set to rev 102; entries touched 109
+Checks: changed kinds: none
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 59
+Committed family export equals the in-memory export of v406 before the changes: yes
+Themes 3240 -> 3233; gone colours_named_after_fruit, fish_from_rivers_and_lakes, fish_on_the_menu, landforms, parts_of_a_ship, golf_scores, horse_races; new none; theme indexes shift from index 17 (vegetables)
+Entries 61029 -> 61029; first row whose entry changed: none; added none; removed none
+Row text changes: none; flags changed: none
+Links 109610 -> 109503; rows whose link count changed: 110
+Link-index shifts: from row 2 (yellow 3) on, link positions move
+Links by theme + shown text + row: gone 123 (colours_named_after_fruit 15, fish_on_the_menu 30, fish_from_rivers_and_lakes 9, landforms 30, parts_of_a_ship 20, toys_and_characters 1, golf_scores 9, horse_races 8, ship_parts 1), new 16, rating changed 9
+  new: fruit_shades: "orange" (row of 2)
+  new: freshwater_fish: "tilapia" (row of 494)
+  new: ship_parts: "galley" (row of 2823)
+  new: fruit_shades: "lime" (row of 7683)
+  new: fruit_shades: "olive" (row of 7694)
+  new: freshwater_fish: "Arctic char" (row of 9755)
+  new: ship_parts: "binnacle" (row of 21041)
+  new: mountain_features: "crevasse" (row of 30902)
+  new: mountain_features: "serac" (row of 30908)
+  new: mountain_features: "fell" (row of 32092)
+  new: ship_parts: "gun deck" (row of 34595)
+  new: scoring_terms: "stableford" (row of 43066)
+  new: ship_parts: "bulkhead" (row of 48909)
+  new: ship_parts: "taffrail" (row of 61242)
+  new: ship_parts: "orlop" (row of 61243)
+  new: scoring_terms: "condor" (row of 61719)
+  rating: fruit_shades: "tangerine" (row of 78) 2.7/3 -> 2/2
+  rating: fruit_shades: "cherry" (row of 92) 1.7/2 -> 1/1
+  rating: fruit_shades: "mango" (row of 95) 2.4/3 -> 1.7/2
+  rating: fruit_shades: "raspberry" (row of 349) 2.4/3 -> 1.7/2
+  rating: fruit_shades: "mulberry" (row of 367) 3.7/4 -> 3/3
+  rating: fish_to_eat: "eel" (row of 495) 3.7/4 -> 3/3
+  rating: fish_to_eat: "sturgeon" (row of 1240) 4.4/5 -> 3/3
+  rating: fish_to_eat: "grouper" (row of 1251) 3.7/4 -> 3/3
+  rating: mountain_features: "plateau" (row of 1918) 3.4/4 -> 2.7/3
+  gone (theme kept): toys_and_characters: "mask" (row of 21720)
+  gone (theme kept): ship_parts: "galley" (row of 47431)
+Clash (family export): words with an id 13149 -> 13149; ids 4602 -> 4602; sizes before 2:2830 3:886 4:371 5:204 6:105 7:79 8:69 9:21 10:16 11:11 12:9 14:1; after 2:2830 3:886 4:371 5:204 6:105 7:79 8:69 9:21 10:16 11:11 12:9 14:1
+  groups over 8 after: 58
+new issues: none
+
+Checks: apply 138 library changes, library v407; rerun 0; npm test 53 pass; strict full export exit 0; style-case and propword-exceptions 0 changes; Checks errors 0, warnings theme-name 3, long 5, maybe-duplicate 1, clash-big 1.
+
+=== Notice to _WS_ for v406 + v407 (send when Simon says) ===
+Library v407 is in the export (data/export/wordlist-game-family.json). It covers v406 and v407 plus an export fix. No pin until Simon asks.
+v406:
+1. D2 sponge: "sponge cake" 66357 now carries cakes (shown "sponge"); the bare sponge 28037 is its alias (kind abbreviation, id kept, kin moved to the root). Players see no change.
+2. blank_cake shows "Dundee" and "Madeira" with capitals.
+3. "Maori culture/mythology/words" are now "Māori culture", "Māori mythology", "Māori words"; "tennis Grand Slams" kept.
+4. 66 theme names shortened (ids unchanged; list at the end of tools/gen/batch406-changes.txt). None is over 30 characters; 124 are 25-30. A new check (theme-name-long) keeps it so; the rule is in the design notes and the theme-generation prompt.
+5. Correction: I said the old sponge cake rollback was an unrelated v340-era change. I could not find it: no commit between v301 and v399 touched sponge 28037. The recommendation stands.
+Export fix (our I25): an alias that only inherits a theme is no longer exported there when its root already shows the same text. 19 links dropped (sponge x2, lasagne, Kiev, EVA, pinkie, Band-Aid, hiccough, thigh-highs, knickknack, kirmizi, yesil, altin, gumus, yoğurt, fevrier, aout, decembre, pickup); 8 alias rows have no link left and are gone (sponge 28037 and the 7 Turkish/French plain aliases). Players lose nothing: the root shows the same text.
+v407 (our I26, duplicate themes): 7 themes merged into their twins and deleted: fish_from_rivers_and_lakes -> freshwater fish, colours_named_after_fruit -> colors named after fruits, fish_on_the_menu -> fish to eat, horse_races -> famous horse races, golf_scores -> golf scoring terms, landforms (mountain landforms) -> mountain features, parts_of_a_ship -> ship parts. "public transportation" renamed "public transport words" (id unchanged). mask unlinked from toys and characters with eyes; galley in ship parts is now the kitchen sense.
+Export: themes 3,240 -> 3,233, theme indexes shift from index 17 (vegetables); rows 61,037 -> 61,029; links 109,629 (v406) -> 109,610 (I25) -> 109,503 (v407; link positions shift from row 2 on). Please measure against v405.

@@ -71,6 +71,21 @@ export function buildExport(P, opt0 = {}) {
     }
     if (links.length) keep.set(e.id, links);
   }
+  // An alias that only inherits a theme from its root adds nothing there when the root shows the same text (case-insensitive) in that theme: its link is dropped.
+  report.inheritedSame = [];
+  for (const [id, links] of [...keep]) {
+    const e = ix.entry.get(id); if (!e.aliasOf || e.aliasKind === 'form') continue;   // a form alias is the row a root's `use` points at: it stays
+    const rl = keep.get(e.aliasOf); if (!rl) continue;
+    const root = ix.entry.get(e.aliasOf), shownText = (x, sh) => (sh ? sh.slice(0, sh.lastIndexOf('|')) : x.text).trim().toLowerCase();
+    const rest = links.filter(([tid, , , sh]) => {
+      if (e.typ[tid] !== undefined) return true;
+      const r = rl.find(l => l[0] === tid);
+      if (!r || shownText(root, r[3]) !== shownText(e, sh)) return true;
+      report.inheritedSame.push(`${e.text} in ${ix.theme.get(tid).name} (root ${root.text} already shows it)`);
+      return false;
+    });
+    if (rest.length) keep.set(id, rest); else keep.delete(id);
+  }
 
   // Two words that read the same in one theme cannot both be placed: the less popular one (then the harder one) is left out of that theme.
   const slot = new Map();                            // themeId + shown text -> [{ id, typicality, familiarity }]
@@ -246,4 +261,5 @@ export async function sizeOf(text) {
 export const capLines = (xs, cap = 200) => xs.length > cap ? [...xs.slice(0, cap), `... and ${xs.length - cap} more`] : xs.slice();
 export const reportLists = (report, minWords, cap = 200) => [
   { title: `Dropped themes (${report.droppedThin.length})`, lines: capLines(report.droppedThin, cap), why: `fewer than ${minWords} words after filtering` },
-  { title: `Same-text drops (${report.sameText.length})`, lines: capLines(report.sameText, cap), why: 'two words read the same in one theme; the less popular is left out' }].filter(l => l.lines.length);
+  { title: `Same-text drops (${report.sameText.length})`, lines: capLines(report.sameText, cap), why: 'two words read the same in one theme; the less popular is left out' },
+  { title: `Inherited alias links dropped (${(report.inheritedSame || []).length})`, lines: capLines(report.inheritedSame || [], cap), why: 'an alias that only inherits a theme is left out where its root already shows the same text' }].filter(l => l.lines.length);

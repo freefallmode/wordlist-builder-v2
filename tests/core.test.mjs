@@ -599,6 +599,20 @@ test('E7: sig is the same for the same h() arguments whatever the handlers, and 
   assert.equal(sig('td', 'x'), sig('td', null, 'x', null, false)); assert.equal(sig('td', ['x', ['y']]), sig('td', {}, 'x', 'y'));
 });
 
+test('export: an alias that only inherits a theme is dropped where its root shows the same text', () => {
+  const P = project();
+  const cake = addEntry(P, 'sponge cake', { fam: 1, typ: { fruits: 1 } }), sp = addEntry(P, 'Sponge', { fam: 2, aliasOf: cake.id, aliasKind: 'synonym' });
+  cake.show = { fruits: 'sponge' };
+  const keepIt = addEntry(P, 'cob', { fam: 1, typ: { fruits: 1 } }), loaf = addEntry(P, 'bun', { fam: 2, aliasOf: keepIt.id, aliasKind: 'synonym' });
+  for (const w of ['fig', 'plum']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  reindex(P);
+  const r = buildExport(P);
+  assert.deepEqual(r.file.entries.text.filter(x => /^sponge/i.test(x)), ['sponge cake']);   // the alias row had no other link, so it goes
+  assert.ok(r.file.entries.text.includes('bun'));                                           // other text than the root's: kept
+  assert.equal(r.report.inheritedSame.length, 1); assert.match(r.report.inheritedSame[0], /^Sponge in /);
+  assert.equal(reportLists(r.report, 4).filter(l => /Inherited/.test(l.title)).length, 1);
+});
+
 test('reportLists: names of dropped themes and same-text drops, capped, empty ones left out', () => {
   assert.deepEqual(capLines(['a', 'b', 'c'], 2), ['a', 'b', '... and 1 more']);
   assert.deepEqual(capLines(['a', 'b'], 2), ['a', 'b']);

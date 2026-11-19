@@ -171,6 +171,7 @@ Presets: `family` = adult and vulgar `exclude`; `family, no trademarks` adds `tm
 
 1. Candidates are enabled entries. A link (entry in theme) is kept when the theme is not a group, is enabled with its ancestors, passes `lang` and `region`, and the entry and link pass the rest of 8.2. An alias's themes are its root's plus any of its own (`linkIds`).
 2. **Same text in one theme**: links are grouped by theme and lowercased displayed text (shown text, else the entry text; an alias's inherited links are not counted). Of two or more, the one with the lower typicality number wins (unrated counts as 9), then lower familiarity, then lower id; the others leave that theme, and when a root leaves, its aliases leave with it.
+   **Inherited alias, same text as its root**: before that, a non-`form` alias's link that is only inherited (no `typ` of its own in the theme) is dropped when the root keeps a link in that theme showing the same lowercased text; the alias row goes when that was its last link. Reported as `inheritedSame` ("Inherited alias links dropped" in the Export window and the command line). Form aliases stay (a root's `use` points at them).
 3. **Thin themes**: themes under `minWords` distinct roots are dropped, and entries left with no link; repeated (at most 6 passes) until nothing changes.
 4. Written themes are the themes with a kept link plus all their ancestors. If an alias's root did not survive, the first surviving alias of it (in entry order) is written as the root and the other aliases point to it.
 
