@@ -137,7 +137,8 @@ The rule exists because a player must never be able to pair two words just becau
 - **Generation prompt** (js/ai.js, after Overlap): never list two forms of the same word; of words that share a root but are different words, list only the one that fits the theme best; a player should never be able to pair two members just because they look alike; wordplay themes are the exception.
 - **State:**
   - v398 fixed the in-theme pairs found at v397: 119 grouped, three families unlinked, buck's wrong-sense link dropped, onion ring made a form alias.
-  - Not yet done: the prompt text, the checks, the `familyOk` setting, kin in the data and export, and the kin pass.
+  - Built (2026-11-19): the prompt paragraph (js/ai.js); the detector and clash union-find (js/family.js); the checks `family-pair`, `family-kin`, `clash-big` and `kin-bad`, with the allow list js/family-allow.js; the theme setting `familyOk` (theme dialog); the entry relation `kin` (stored on both root entries, never on an alias; entry editor block "Related words (kin)"); kin in the export clash. On v398: `family-pair` 11 (5 male/female title pairs in royal titles and peerage, waiting for `familyOk`; 6 found by the new pet endings -ie/-sy that famscan lacked: swag/swaggie, keto/ketosis, gendarme/gendarmerie x2, squad/squaddie, goal/goalie), `family-kin` about 7,300 (suggestions, noisy), `clash-big` 3 (kebab 11, ghost 10, marijuana 10).
+  - Not yet done: `familyOk` on the title themes, and the kin pass (no kin in the data yet).
 
 ## 4. Splitting themes
 

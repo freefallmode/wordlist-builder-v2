@@ -3,6 +3,8 @@
 import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, ALIAS_KINDS, POS, TYPES } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
+import { familyPairs, clashGroups, CLASH_MAX } from './family.js';
+import { FAMILY_OK } from './family-allow.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
 const NAME_STOP = new Set(('a an and or the of in on at to for from with by as is are that this these those your my our their its words word names name types type kinds kind famous common things thing parts part ' +
@@ -81,6 +83,8 @@ export function validate(P) {
     }
   }
 
+  familyChecks(P, add);
+
   // ----- entries -----
   const seen = new Map();
   for (const e of P.entries) {
@@ -151,6 +155,51 @@ export function validate(P) {
   // ----- capitals of shown words (js/caselint.js): one warning per link -----
   for (const i of caseLint(P)) add('warn', 'case-' + i.kind, i.msg, { themeId: i.themeId, entryId: i.entryId });
   return out;
+}
+
+// ----- word families (DESIGN-entries.md 3.7) -----
+const pairKey = (a, b) => a < b ? a + '|' + b : b + '|' + a;
+export const familyAllowed = (a, b, tid) => FAMILY_OK.has(pairKey(a, b)) || (tid !== undefined && FAMILY_OK.has(pairKey(a, b) + '|' + tid));
+function familyChecks(P, add) {
+  const ix = P.ix, playable = P.themes.filter(t => !t.group && eff(P, t.id).enabled), isPlay = new Set(playable.map(t => t.id));
+  // family-pair: two separate entries (different alias families) of one word family linked in one theme, not in one of its synonym groups
+  for (const t of playable) {
+    if (t.familyOk || themeLocked(P, t)) continue;
+    const items = (ix.byTheme.get(t.id) || []).filter(e => e.enabled && e.typ[t.id] !== undefined).map(e => ({ id: e.id, text: e.text, r: e.aliasOf || e.id }));
+    if (items.length < 2) continue;
+    const grp = new Map(); (t.groups || []).forEach((g, i) => { for (const id of g) grp.set(id, i); });
+    for (const [a, b] of familyPairs(items)) {
+      if (a.r === b.r || (grp.has(a.r) && grp.get(a.r) === grp.get(b.r)) || familyAllowed(a.id, b.id, t.id) || familyAllowed(a.r, b.r, t.id)) continue;
+      add('warn', 'family-pair', `"${a.text}" and "${b.text}" are one word family and both separate answers in "${t.name}": put them in one synonym group, or keep the one that fits best (mark the theme familyOk only when the form is the point).`, { themeId: t.id, entryId: b.id });
+    }
+  }
+  // clash groups as the export makes them (synonym groups + kin, union across themes)
+  const cg = clashGroups(P, playable, id => !!ix.entry.get(id)?.enabled);
+  for (const [c, ids] of cg.members()) {   // counted as the export writes the clash column: each root and its enabled aliases (an alias carries its root's id)
+    const rows = ids.flatMap(id => [ix.entry.get(id), ...(ix.aliases.get(id) || []).filter(a => a.enabled)]).filter(Boolean);
+    if (rows.length <= CLASH_MAX) continue;
+    const names = rows.map(e => e.text + (e.aliasOf ? '*' : ''));
+    add('warn', 'clash-big', `A clash group (synonym groups and kin joined across themes) has ${rows.length} words (* an alias), more than ${CLASH_MAX}: ${names.join(', ')}. It can starve a theme of words; unlink the weaker family member instead of joining groups.`, { entryId: ids[0] });
+  }
+  // kin: symmetric, between existing root entries
+  for (const e of P.entries) for (const id of e.kin || []) {
+    const k = ix.entry.get(id);
+    if (e.aliasOf || !k || k === e || k.aliasOf || !(k.kin || []).includes(e.id)) add('warn', 'kin-bad', `"${e.text}" has kin ${id}${k ? ` ("${k.text}")` : ''}, which is ${e.aliasOf ? 'set on an alias (kin belongs on the root)' : !k ? 'missing' : k === e ? 'itself' : k.aliasOf ? 'an alias (kin belongs on the root)' : 'not kin back (kin is stored on both)'}.`, { entryId: e.id });
+  }
+  // family-kin: one-family root entries linked in different themes, with no kin relation and not kept apart already by one clash group
+  const items = [];
+  for (const e of P.entries) {
+    if (e.aliasOf || !e.enabled) continue;
+    const ts = Object.keys(e.typ).filter(tid => isPlay.has(tid));
+    if (ts.length) items.push({ id: e.id, text: e.text, ts: new Set(ts), e });
+  }
+  for (const [a, b] of familyPairs(items)) {
+    if ((a.e.kin || []).includes(b.id) || familyAllowed(a.id, b.id)) continue;
+    if (a.e.type !== b.e.type || /^\p{Lu}/u.test(a.text) !== /^\p{Lu}/u.test(b.text)) continue;   // a name and a common word (Skinner / skin) are rarely one family
+    if (cg.id(a.id) && cg.id(a.id) === cg.id(b.id)) continue;
+    if (![...a.ts].some(t => !b.ts.has(t)) && ![...b.ts].some(t => !a.ts.has(t))) continue;   // the same themes: family-pair's work
+    add('info', 'family-kin', `"${a.text}" and "${b.text}" look like one word family in different themes: if they are, make them kin (Related words) so the game keeps them apart in a level.`, { entryId: a.id });
+  }
 }
 
 function shares(P, a, b) {

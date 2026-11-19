@@ -39,7 +39,7 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | I22 word-family rule: prompt text, checks family-pair / family-kin / clash-big, theme setting familyOk, entry kin (editor + export into clash), tests; then a kin pass batch (DESIGN-entries.md 3.7) | deep reasoning | Opus |
+| 1 | I22 kin pass batch: confirm cross-theme kin from the family-kin check (7,324 suggestions), familyOk on the title themes, decide 6 new family-pair hits; the rule is built (DESIGN-entries.md 3.7) | deep reasoning | Opus |
 | 2 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
 | 3 | W4 word-family column: replaced by the word-family rule (DESIGN-entries.md 3.7, kin exported into clash); close when kin is built | - | - |
 

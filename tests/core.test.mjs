@@ -13,6 +13,9 @@ import { validate, nameLeak } from '../js/validate.js';
 import { buildExport, capLines, reportLists } from '../js/export.js';
 import { parseFreq, setFreq, zipf, loadFreq, freqLoaded } from '../js/freq.js';
 import { setBreaks, loadBreaks, breaksLoaded } from '../js/breaks.js';
+import { isFamily, familyPairs, clashGroups } from '../js/family.js';
+import { setKin } from '../js/model.js';
+import { FAMILY_OK } from '../js/family-allow.js';
 
 const tree = `Things:
   fruits
@@ -618,4 +621,95 @@ test('E9: theme counts recounted only for the themes an edit touched equal a ful
     else if (k === 5) { const r = pick(); edit({ entries: [e] }, () => { if (!r.aliasOf && r !== e && !P.ix.aliases.has(e.id)) { e.aliasOf = r.id; e.aliasKind = 'synonym'; } }); }
     if (i % 25 === 0) { const f = themeCounts(P); for (const m of ['own', 'tot', 'ready', 'play']) assert.deepEqual([...c[m]].sort(), [...f[m]].sort(), m + ' at edit ' + i); }
   }
+});
+
+// ---------- word families (DESIGN-entries.md 3.7) ----------
+test('isFamily: forms, derivations and pet forms are one family; look-alikes on the stop list, compounds and other words are not', () => {
+  for (const [a, b] of [['pup', 'puppy'], ['dad', 'daddy'], ['tum', 'tummy'], ['joy', 'joyful'], ['gamer', 'gaming'], ['vote', 'voter'], ['murk', 'murky'], ['host', 'hostess'],
+    ['buck', 'bucks'], ['cork', 'corked'], ['mom', 'mommy'], ['teeny', 'teensy'], ['Peg', 'Peggy'], ['onion ring', 'onion rings'], ['sorcery', 'sorcerer']]) assert.ok(isFamily(a, b), a + '/' + b);
+  for (const [a, b] of [['earl', 'early'], ['tone', 'tonic'], ['organ', 'organism'], ['busy', 'business'], ['can', 'canister'], ['archer', 'archive'], ['legal', 'legion'],
+    ['tension', 'tenement'], ['century', 'centurion'], ['battery', 'battalion'], ['policy', 'polity'], ['solute', 'solution'], ['ban', 'banishment'], ['pet', 'petal'], ['tea', 'teach'],
+    ['fish', 'goldfish'], ['ski', 'ski'], ['onion ring', 'onion ring'], ['onion ring', 'ring'], ['cat', 'dog'], ['T-shirt', 'T-shirts']]) assert.ok(!isFamily(a, b), a + '/' + b);
+  const pairs = familyPairs([{ id: 1, text: 'joy' }, { id: 2, text: 'joyful' }, { id: 3, text: 'early' }, { id: 4, text: 'earl' }, { id: 5, text: 'joyous' }]);
+  assert.deepEqual(pairs.map(p => p.map(x => x.id).sort().join('/')).sort(), ['1/2', '1/5', '2/5']);
+});
+
+test('family-pair warns for two family members as separate answers; not when grouped, locked, familyOk or allowed', () => {
+  const P = project();
+  const pup = addEntry(P, 'pup', { fam: 1, typ: { fruits: 1, citrus: 1, wild: 1 } }), puppy = addEntry(P, 'puppy', { fam: 1, typ: { fruits: 1, citrus: 1, wild: 1 } });
+  addEntry(P, 'earl', { fam: 1, typ: { fruits: 1 } }); addEntry(P, 'early', { fam: 1, typ: { fruits: 1 } });
+  reindex(P);
+  const pairs = () => validate(P).filter(i => i.kind === 'family-pair').map(i => i.themeId).sort();
+  assert.deepEqual(pairs(), ['citrus', 'fruits', 'wild']);   // earl/early is on the stop list
+  P.ix.theme.get('fruits').groups = [[pup.id, puppy.id]];
+  P.ix.theme.get('citrus').familyOk = true;
+  P.ix.theme.get('wild').tkind = 'wordplay';                 // locked
+  assert.deepEqual(pairs(), []);
+  assert.equal(parseProject(serializeProject(P)).themes.find(t => t.id === 'citrus').familyOk, true);   // familyOk round-trips
+  assert.equal(buildExport(P).file.themeFields.includes('familyOk'), false);                            // and is not exported
+  delete P.ix.theme.get('wild').tkind;
+  assert.deepEqual(pairs(), ['wild']);
+  const key = Math.min(pup.id, puppy.id) + '|' + Math.max(pup.id, puppy.id) + '|wild';
+  FAMILY_OK.add(key);
+  try { assert.deepEqual(pairs(), []); } finally { FAMILY_OK.delete(key); }
+});
+
+test('family-kin suggests one-family words in different themes; kin silences it; one-sided kin is kin-bad', () => {
+  const P = project();
+  const joy = addEntry(P, 'joy', { fam: 1, typ: { fruits: 1 } }), joyful = addEntry(P, 'joyful', { fam: 1, typ: { citrus: 1 } });
+  reindex(P);
+  const count = k => validate(P).filter(i => i.kind === k).length;
+  assert.equal(count('family-kin'), 1);
+  setKin(P, joy, joyful);
+  assert.deepEqual([joy.kin, joyful.kin], [[joyful.id], [joy.id]]);
+  assert.equal(count('family-kin'), 0);
+  assert.equal(count('kin-bad'), 0);
+  joyful.kin = [];
+  assert.equal(count('kin-bad'), 1);
+});
+
+test('clash-big warns for a clash group (groups + kin across themes) of more than 8 words', () => {
+  const P = project();
+  const a = Array.from({ length: 5 }, (_, i) => addEntry(P, 'fa' + i, { fam: 1, typ: { fruits: 1 } }));
+  const b = Array.from({ length: 4 }, (_, i) => addEntry(P, 'cb' + i, { fam: 1, typ: { citrus: 1 } }));
+  P.themes.find(t => t.id === 'fruits').groups = [a.map(e => e.id)];
+  P.themes.find(t => t.id === 'citrus').groups = [b.map(e => e.id)];
+  reindex(P);
+  const big = () => validate(P).filter(i => i.kind === 'clash-big');
+  assert.equal(big().length, 0);                             // 5 and 4
+  setKin(P, a[0], b[0]);                                     // kin joins them: 9
+  assert.equal(big().length, 1);
+  assert.match(big()[0].msg, /has 9 words/);
+  const g = clashGroups(P, P.themes, () => true);
+  assert.ok(g.id(a[4].id) > 0 && g.id(a[4].id) === g.id(b[3].id));
+});
+
+test('kin round-trips through the project file, joins the export clash column, and leaves with a deleted entry', () => {
+  const P = project();
+  const joy = addEntry(P, 'joy', { fam: 1, typ: { fruits: 1 } }), joyful = addEntry(P, 'joyful', { fam: 1, typ: { citrus: 1 } });
+  for (const w of ['fig', 'plum', 'pear']) { addEntry(P, w, { fam: 1, typ: { fruits: 1 } }); addEntry(P, w + 'x', { fam: 1, typ: { citrus: 1 } }); }
+  reindex(P);
+  assert.ok(buildExport(P).file.entries.clash.every(c => c === 0));
+  setKin(P, joy, joyful);
+  const text = serializeProject(P);
+  assert.ok(!text.includes('"kin":[]'));                     // empty kin is a default: not written
+  const Q = parseProject(text); reindex(Q);
+  assert.deepEqual(Q.entries.find(e => e.text === 'joy').kin, [joyful.id]);
+  assert.deepEqual(Q.entries.find(e => e.text === 'joyful').kin, [joy.id]);
+  assert.deepEqual(Q.entries.find(e => e.text === 'fig').kin, []);
+  const c = buildExport(Q).file.entries, at = t => c.text.indexOf(t);
+  assert.ok(c.clash[at('joy')] > 0 && c.clash[at('joy')] === c.clash[at('joyful')] && c.clash[at('fig')] === 0);
+  deleteEntry(Q, Q.entries.find(e => e.text === 'joyful')); reindex(Q);
+  assert.deepEqual(Q.entries.find(e => e.text === 'joy').kin, []);
+});
+
+test('kin: deleting a root hands its kin to the promoted alias', () => {
+  const P = project();
+  const joy = addEntry(P, 'joy', { fam: 1, typ: { fruits: 1 } }), joyful = addEntry(P, 'joyful', { fam: 1, typ: { citrus: 1 } });
+  const delight = addEntry(P, 'delight', { fam: 1, aliasOf: joy.id, aliasKind: 'synonym' });
+  reindex(P); setKin(P, joy, joyful);
+  deleteEntry(P, joy); reindex(P);
+  assert.deepEqual(delight.kin, [joyful.id]);
+  assert.deepEqual(joyful.kin, [delight.id]);
+  assert.equal(validate(P).filter(i => i.kind === 'kin-bad').length, 0);
 });

@@ -1,6 +1,6 @@
 // Claude, called straight from the browser with the user's own API key (kept for the session unless "remember" is ticked).
 // Replies use structured outputs, so they are always valid JSON of the shape in the schema.
-import { POS, TYPES, REGIONS, FLAG_HELP, pathOf, descendants, eff } from './model.js';
+import { POS, TYPES, REGIONS, FLAG_HELP, pathOf, descendants, eff, themeLocked } from './model.js';
 
 export const MODELS = [['claude-opus-5-5', 'Claude Opus 5.5'], ['claude-sonnet-5-5', 'Claude Sonnet 5.5'], ['claude-haiku-5-5', 'Claude Haiku 5.5']];
 const PRICE = { 'claude-opus-5-5': [4, 20, 0.2], 'claude-sonnet-5-5': [2, 10, 0.1], 'claude-haiku-5-5': [0.1, 0.5, 0.01] };   // $ per million tokens: in, out, cache read (platform.claude.com/docs/en/about-claude/pricing, 2026-11-15; Haiku 5.5 costs 5x more for prompts over 100K tokens, not modelled)
@@ -88,6 +88,8 @@ Aliases. Add aliases only when there is a real, commonly used alternative that f
 
 Overlap. Never list two words for the same thing in a theme, or a word and a more specific form of it (cola and Coca-Cola, pasta and pasta sauce). Keep the generic word. In a theme of a general category (soft drinks), a brand and its generic word are one answer, so list one of them; in a theme of examples or kinds (fizzy drinks), brands and generic names may be separate members. If a theme has four or more subtypes of one thing, they belong in their own sub-theme; with fewer, list only the best-known. A member is one of the theme's things, never a mixture, collection or the whole category (not "mixed nuts" in nuts, "assorted sweets" in sweets, "fruit salad" in fruits), and never the bare category word in a theme of its kinds (not "road" in road types, "aircraft" in aircraft types). A longer entry that merely contains a member's word is not a member because of that; check it against the theme on its own. A part, product, food, person, place or event built on a member is a different thing (not "oil well" in fossil fuels, "chicken wings" or "duck breast" in poultry, "candle maker" in candle words, "elephant seal" in animals with tusks, "engagement party" in life events). When a player would take two entries as the same answer (pruning shears and shears, user interface and interface, stand mixer and mixer, spinning top and top), list only the shorter.
 
+Word families. Never list two forms of the same word in a theme (vote and votes, ski and skiing): list the one the theme uses. Of words that share a root but are different words (gamer and gaming, joy and joyful, pup and puppy, host and hostess), list only the one that fits the theme best. A player should never be able to pair two members just because they look alike. Wordplay themes, where the spelling or form is the point, are the exception.
+
 Complete themes are a finite set: list EVERY member exactly and correctly, nothing else, however many that is.`;
 
 export function wordsPrompt(P, t, n, spread, extra) {
@@ -100,6 +102,7 @@ export function wordsPrompt(P, t, n, spread, extra) {
   if (lang) lines.push('This theme is language-specific (spelling, sound, slang or wordplay): every word you list must satisfy its rule exactly.');
   if (t.tkind === 'compound' && /^compound-(end|start):./.test(t.rule || '')) lines.push(`This is a compound theme (rule ${t.rule}): every member is a FULL TERM people say as a unit (break room, firefly), written in full as the entry text. The game shows the player only the short word. Rate familiarity, typicality, pos, type and the flags for the full term, never for the bare word. Skip loose phrases that are only an ordinary word plus the shared word.`);
   else if (!t.group && !lang) lines.push('If the theme collects kinds of one thing, a member that is only a modifier (green, herbal, solid, igneous) is written as the full term (green tea, solid line, igneous rock), and the ratings describe the full term. A word that already means the thing on its own (pine, tote, Pacific, merino, Gala, axe) stays as it is, and so do closed compounds (buttermilk, redwood), hyphenated terms (A-road, post-rock) and phrases with the theme word first (island chain, massage gun). The test: seen alone in the theme, would the short word still identify the kind? If not (town car, toy train), keep the full term as the text.');
+  if (themeLocked(P, t) || t.familyOk) lines.push('Here the form of the word is part of the theme, so two words of one family may both be members when the theme calls for it.');
   if (t.complete) lines.push('COMPLETE theme: list every member of the set (use the note), exactly, with no extras.');
   if (kids.length) lines.push(`Sub-themes exist (${kids.join(', ')}); words here should be typical of this theme itself, not copies of what the sub-themes will hold.`);
   if (have.length) lines.push(`Already in the theme (do not repeat): ${have.slice(0, 150).join(', ')}`);

@@ -8,6 +8,7 @@ import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themePr
 import { zipf } from './freq.js';
 import { isNameWord } from './validate.js';
 import { breakPoints } from './breaks.js';
+import { clashGroups } from './family.js';
 
 export const DEFAULT_EXPORT = {
   adult: 'include', sensitive: 'include', tm: 'include', vulgar: 'include', lang: 'include',
@@ -153,10 +154,7 @@ export function buildExport(P, opt0 = {}) {
     return changed ? out : null;
   };
   const shown = [], shownAt = new Map();           // texts a theme shows instead of the entry's own: [text, pos]; a link points at one (index+1, 0 = the entry's own text)
-  const clash = new Map(), find = x => { while (clash.has(x) && clash.get(x) !== x) x = clash.get(x); return x; };   // words that stand for one another in a theme (its groups) share a clash id: the level builder never puts two of them in one level
-  for (const t of themes) for (const g of t.groups || []) { const m = g.filter(id => keep.has(id)); for (const id of m) if (!clash.has(id)) clash.set(id, id); for (const id of m.slice(1)) clash.set(find(id), find(m[0])); }
-  const clashN = new Map(); for (const id of clash.keys()) { const c = find(id); clashN.set(c, (clashN.get(c) || 0) + 1); }
-  const clashId = new Map([...clashN].filter(([, n]) => n > 1).map(([c], i) => [c, i + 1]));
+  const clash = clashGroups(P, themes, id => keep.has(id));   // words that stand for one another in a theme (its groups) or are kin (one word family across themes) share a clash id: the level builder never puts two of them in one level
   const bp = t => P.lang === 'en' ? breakPoints(t) : [];   // the break table is English-only: other languages get empty lists
   cols.breaks = [];                                 // character indexes in text[i] where a hyphen may go, [] for none
   if (o.zipf && P.lang === "en") cols.zipf = [];
@@ -180,7 +178,7 @@ export function buildExport(P, opt0 = {}) {
     cols.familiarity.push(e.fam);
     { const [lo, hi] = rMask(e.region); cols.regions.push(lo); cols.regionsHi.push(hi); }
     cols.root.push(rootIndex(id));
-    const cr = ix.entry.get(e.aliasOf || e.id).id; cols.clash.push(clash.has(cr) ? clashId.get(find(cr)) || 0 : 0);
+    cols.clash.push(clash.id(ix.entry.get(e.aliasOf || e.id).id));
     cols.linkCount.push(links.length);
     for (const [tid, r, p, sh] of links) {
       if (isNameWord(ix.theme.get(tid), sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text)) nameWordLinks.push(cols.links.length / 4);
@@ -197,7 +195,7 @@ export function buildExport(P, opt0 = {}) {
     if (o.notes) cols.note.push(e.note);
   }
   report.entriesOut = ids.length;
-  report.notes.push(`${shown.length} texts are shown in place of an entry's own text in some themes; ${clashId.size} groups of words stand for one another.`);
+  report.notes.push(`${shown.length} texts are shown in place of an entry's own text in some themes; ${clash.clashId.size} groups of words stand for one another.`);
 
   const themeRows = themes.map(t => {
     const f = eff(P, t.id);
@@ -219,7 +217,7 @@ export function buildExport(P, opt0 = {}) {
     themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty', 'breaks'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
     // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, typicality, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
-    // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups): never put two with the same id in one level.
+    // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups) or are kin (one word family across themes): never put two with the same id in one level.
     // breaks[i] lists the character indexes in text[i] where a hyphen may be placed (a hyphen goes before that character); [] when the text has no break point. Words of 8+ letters only; spaces and existing hyphens are the game's own breaks. Shown texts carry the same list as a third value, and theme rows in the 'breaks' field.
     // nameThemeLinks: [link number, theme index] pairs: the link's text as shown is the whole name of another theme (a passenger word); link number n is links[4n..4n+3]. shownUK: [link number, index+1 into shown]: the text a British player sees for that link when it differs from the shown text (the UK spelling of a short text, gray -> grey); links not listed show the same text to everyone.
     // root[i] is 0 for a root entry, else the index+1 of the root it is an alias of.

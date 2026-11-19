@@ -2,7 +2,8 @@
 //
 // Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, lang, foreign, region[], note }
 // Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, fam, adult, sensitive, tm, vulgar, region[],
-//         aliasOf, aliasKind, typ{ themeId: typicality }, status, note }
+//         aliasOf, aliasKind, typ{ themeId: typicality }, status, note, kin[] }
+//         kin: ids of other root entries of the same word family linked in other themes (joy / joyful); stored on both entries (symmetric), never on an alias. The export keeps kin apart in a level (clash).
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
 //         between themes is the typicality in `typ` (1 the first words anyone thinks of for the theme ... 5 real but peripheral). An alias (aliasOf = id of its root) takes its themes from the root.
 // `fam` (familiarity) is 1 to 5 (1 every child knows it ... 5 few people), 0 = not rated. A theme's `pop` is how good a pick the theme is (1 most popular ... 5 least), 0 = not rated.
@@ -32,7 +33,7 @@ export function newProject() {
 
 export function entryDefaults() {
   return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, fam: 0, adult: false, sensitive: false, tm: false, vulgar: false,
-    region: [], aliasOf: 0, aliasKind: '', typ: {}, status: 'new', note: '', nameOkIn: [], use: {}, show: {} };   // nameOkIn: themes where the full text is the real name and may contain the theme's words (dried apple in dried fruits); use: { themeId: id of a form alias to show instead of the root in that theme }; show: { themeId: text } the theme shows this shorter text for the entry (rock for rock garden)
+    region: [], aliasOf: 0, aliasKind: '', typ: {}, status: 'new', note: '', nameOkIn: [], use: {}, show: {}, kin: [] };   // nameOkIn: themes where the full text is the real name and may contain the theme's words (dried apple in dried fruits); use: { themeId: id of a form alias to show instead of the root in that theme }; show: { themeId: text } the theme shows this shorter text for the entry (rock for rock garden)
 }
 
 export function addEntry(P, text, over = {}) {
@@ -254,7 +255,7 @@ export function unlinkEntry(P, e, tid) {
 
 const SAME_WORD = ['spelling', 'form'];   // alias kinds that are the root's own word written another way: the root's word-level data fits them
 // Deleting a root promotes an alias: the first spelling, else the first that is not a form, else the first. It takes the root's place everywhere:
-// its links (with the root's rating where it had none of its own), its synonym groups, adult and sensitive (they follow the meaning), its region when it has none of its own (the export judged it on the root's),
+// its links (with the root's rating where it had none of its own), its synonym groups, its kin, adult and sensitive (they follow the meaning), its region when it has none of its own (the export judged it on the root's),
 // and the shown text of a theme when it is the same word or its text contains that text. When it is the same word (spelling, form) it also takes trademark, vulgar, the name allowances and the forms the themes used.
 // When it is another word, the root's spellings and abbreviations become its synonyms (a spelling of the old root is not a spelling of the new one); forms keep their kind.
 // The deleted id leaves every synonym group and every `use`. Returns what updateIndex needs.
@@ -284,8 +285,31 @@ export function deleteEntry(P, e) {
     if (hit?.length > 1) t.groups = [...t.groups.filter(g => !hit.includes(g)), [...new Set(hit.flat())]];   // a word is in one group per theme
   }
   for (const x of P.entries) if (x.use) for (const [tid, id] of Object.entries(x.use)) if (id === e.id) delete x.use[tid];
+  // kin: the promoted alias takes the root's kin; otherwise the deleted id leaves every kin list
+  const kin = new Set(e.kin || []);
+  for (const x of P.entries) if (x.kin?.includes(e.id)) { kin.add(x.id); x.kin = x.kin.filter(id => id !== e.id); }
+  if (first) {
+    kin.delete(first.id); const ks = P.entries.filter(x => kin.has(x.id));
+    first.kin = (first.kin || []).filter(id => id !== e.id);
+    for (const x of ks) setKin(P, first, x, true);
+  }
   P.entries = P.entries.filter(x => x !== e);
   return { entries: als, gone: [e] };
+}
+
+// Kin (word family across themes, DESIGN-entries.md 3.7): symmetric, stored on both root entries, sorted by id. An alias has no kin of its own: its root's apply.
+export function setKin(P, a, b, on = true) {
+  if (!a || !b || a === b) return;
+  for (const [x, y] of [[a, b], [b, a]]) {
+    const l = (x.kin || []).filter(id => id !== y.id);
+    if (on) l.push(y.id);
+    x.kin = l.sort((p, q) => p - q);
+  }
+}
+// An entry that becomes an alias hands its kin to its root (the entry editor calls this when it saves the alias).
+export function moveKin(P, from, to) {
+  for (const id of from.kin || []) { const k = P.ix.entry.get(id); if (k) { setKin(P, from, k, false); if (k !== to) setKin(P, to, k, true); } }
+  from.kin = [];
 }
 
 // The theme a wordplay rule names (starts:@colors), or ''.

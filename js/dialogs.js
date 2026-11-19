@@ -3,7 +3,7 @@ import { h, select, check, field, dialog, toast, plural, fmtBytes } from './dom.
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, reindexThemes, indexEntry,
-  FLAG_HELP, pathOf, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
+  FLAG_HELP, pathOf, setKin, moveKin, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded, loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
 import { validate, SEV_ORDER } from './validate.js';
@@ -58,11 +58,12 @@ export async function editTheme(t, isNew = false) {
   const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', sensitive: 'Sensitive topic',
     tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)', foreign: 'Foreign language (the words are mostly not English)', nameOk: "Words may contain the theme's own words (wordplay themes)" };
   const boxes = Object.fromEntries(flags.map(k => [k, check(flagLabel[k], w[k])]));
+  const famBox = check('Same-family words may be separate answers (tenses, male/female titles, anagrams)', !!w.familyOk, { title: 'familyOk: the family-pair check skips this theme. Only for themes where the form of the word is the point. This theme only (not inherited); generation never sets it.' });
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
   const body = h('div.form', {},
     field('Name', f.name),
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
-    h('div.flags', Object.values(boxes)),
+    h('div.flags', [...Object.values(boxes), famBox]),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).', w.region.filter(c => !REGIONS.includes(c))),
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm', 'lang', 'foreign'].map(k => h('div', {}, FLAG_HELP[k]))),
     field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
@@ -97,6 +98,7 @@ export async function editTheme(t, isNew = false) {
       if (!w.tkind) delete t.tkind;
       if (!w.rule) delete t.rule;
       if (f.locked.value === 'auto') delete t.locked; else t.locked = f.locked.value === 'locked';
+      if (famBox.querySelector('input').checked) t.familyOk = true; else delete t.familyOk;
       if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindexThemes(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
       else if ((parent || null) !== (oldParent || null)) { reindexThemes(P); moveTheme(P, t.id, parent); if (parent) A.open.add(parent); }
       A.changed({ themes: true });
@@ -134,9 +136,38 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     aliasList.replaceChildren(...(q.length < 2 ? [] : P.entries.filter(x => x !== e && !x.aliasOf && x.text.toLowerCase().startsWith(q)).slice(0, 12).map(x => h('option', { value: labelOf(x) }))));
   });
 
+  // Related words (kin): root entries of the same word family in other themes (DESIGN-entries.md 3.7). Kept on both entries; applied at save.
+  const kin = [...(e.kin || [])];
+  const kinList = h('datalist', { id: 'kl' + listSeq });
+  const kinInput = h('input', { list: 'kl' + listSeq++, placeholder: 'type a word, pick from the list' });
+  kinInput.addEventListener('input', () => {
+    const q = kinInput.value.toLowerCase().replace(/ #\d+$/, '');
+    kinList.replaceChildren(...(q.length < 2 ? [] : P.entries.filter(x => x !== e && !x.aliasOf && !kin.includes(x.id) && x.text.toLowerCase().startsWith(q)).slice(0, 12).map(x => h('option', { value: labelOf(x) }))));
+  });
+  const kinBox = h('div.kin');
+  const kinRow = id => {
+    const k = P.ix.entry.get(id), n = k ? Object.keys(k.typ).length : 0;
+    return h('div.row', {},
+      h('a', { href: '#', onclick: async ev => { ev.preventDefault(); if (k && await editEntry(k)) A.changed(); } }, k ? labelOf(k).replace(/ #\d+$/, '') : '#' + id + ' (missing)'),
+      k && ` · ${n} theme${n === 1 ? '' : 's'} `,
+      h('button.link', { type: 'button', title: 'Remove this kin', onclick: () => { kin.splice(kin.indexOf(id), 1); drawKin(); } }, '✕'));
+  };
+  const drawKin = () => kinBox.replaceChildren(
+    ...(kin.length ? kin.map(kinRow) : [h('p.hint', 'None.')]),
+    h('div.row', {}, h('span.picker', {}, kinInput, kinList), h('button', { type: 'button', onclick: () => {
+      const m = kinInput.value.match(/#(\d+)$/), k = m && P.ix.entry.get(+m[1]);
+      if (!k || k === e) return toast('Pick a word from the list.', true);
+      if (k.aliasOf) return toast('Pick the root entry, not an alias.', true);
+      if (!kin.includes(k.id)) kin.push(k.id);
+      kinInput.value = ''; drawKin();
+    } }, 'Add kin')));
+  drawKin();
+  const kinBlock = !w.aliasOf && h('div', {}, h('h3', 'Related words (kin)'),
+    h('p.hint', 'The same word family in other themes (joy in emotions, joyful in happy words). The game never puts kin in one level. Stored on both words.'), kinBox);
+
   // Has anything been changed since the dialog opened? (Used to ask before leaving for a theme.)
   const sig = () => JSON.stringify([f.text.value, f.gloss.value, f.pos.value, f.type.value, f.fam.value, f.status.value, f.note.value, f.kind.value, aliasInput.value,
-    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.typ, w.show]);
+    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.typ, w.show, kin]);
   const initialSig = sig();
   const linksBox = h('div.links');
   const addPick = themePicker('add a theme…', { groups: false });
@@ -214,6 +245,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     h('div.hint.flaghelp', {}, ['adult', 'sensitive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
     h('h3', 'Themes'), linksBox,
     aliasBlock,
+    kinBlock,
     !e.aliasOf && !isNew && h('div.row', {}, h('button', { type: 'button', onclick: async () => {
       const a = Object.assign(entryDefaults(), { aliasOf: e.id, aliasKind: 'synonym', pos: e.pos, type: e.type });
       if (await editEntry(a, { isNew: true })) A.changed();
@@ -239,10 +271,15 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     for (const k of Object.keys(flags)) w[k] = boxes[k].querySelector('input').checked;
     w.region = mergeRegions(e.region, regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c));
     const unlinked = isNew ? [] : Object.keys(e.typ).filter(tid => !(tid in w.typ));
+    const kinOld = e.kin || [];
+    delete w.kin;
     Object.assign(e, w);
     for (const tid of unlinked) unlinkEntry(P, e, tid);   // also drops its form used, name allowance and synonym groups there
-    if (isNew) { e.id = P.nextId++; P.entries.push(e); }
-    A.changed({ entries: [e] });   // its aliases are re-filed with it
+    if (isNew) { e.id = P.nextId++; e.kin = []; P.entries.push(e); }
+    const kinTouched = [...new Set([...kinOld, ...kin])].map(id => P.ix.entry.get(id)).filter(Boolean);
+    for (const k of kinTouched) setKin(P, e, k, kin.includes(k.id));
+    if (e.aliasOf && e.kin.length) { const r = P.ix.entry.get(e.aliasOf); kinTouched.push(r); moveKin(P, e, r); }   // kin lives on the root
+    A.changed({ entries: [e, ...kinTouched] });   // its aliases are re-filed with it
   };
   return dialog(isNew ? 'New entry' : `Entry: ${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''}`, body, [
     { label: 'Cancel' },
