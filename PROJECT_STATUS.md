@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-19, library v401. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-19, library v405. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
@@ -16,7 +16,7 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v398 (W9, T30, I18, T31, I19, T32, I20, I21, I22 in-theme pairs v398, kin pilot v399, kin pass v400, salty-foods trim v401), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
-Game side: it pinned v397 on 2026-11-18 (its commit 45b3f56, v396 included; all checks passed); it pins only when Simon asks. v398+v399 notice sent 2026-11-19, the game measured v399 fine (not pinned). v400 notice sent and measured 2026-11-19 (all levels generate; salty foods squeezed in Hard); not pinned, the game stays on v397. The v401 notice was sent 2026-11-19 (end of `tools/gen/batch401-changes.txt`); the game measures it against v397, then Simon decides the pin. The v396 and v397 notices were sent 2026-11-18 (ends of `tools/gen/batch396-changes.txt`, `batch397-changes.txt`); Simon asked the game to pin v397 and it did. The v393+v394 notice and the v395 notice (with the plain-alias result) were sent 2026-11-18 (texts at the end of `tools/gen/batch394-changes.txt` and `batch395-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read).
+Game side: it pinned v397 on 2026-11-18 (its commit 45b3f56, v396 included; all checks passed); it pins only when Simon asks. v398+v399 notice sent 2026-11-19, the game measured v399 fine (not pinned). v400 notice sent and measured 2026-11-19 (all levels generate; salty foods squeezed in Hard); not pinned, the game stays on v397. The v401 notice was sent 2026-11-19 (end of `tools/gen/batch401-changes.txt`); the game measures it against v397, then Simon decides the pin. The v396 and v397 notices were sent 2026-11-18 (ends of `tools/gen/batch396-changes.txt`, `batch397-changes.txt`); Simon asked the game to pin v397 and it did. The v393+v394 notice and the v395 notice (with the plain-alias result) were sent 2026-11-18 (texts at the end of `tools/gen/batch394-changes.txt` and `batch395-changes.txt`); the correction on its v392 points 1-2 was sent 2026-11-18; send when Simon says. Notices v375-v390 were sent to `_WS_` (v390 sent 2026-11-17; not confirmed read). A combined v391+v392 notice was sent to `_WS_` (adcfe0) on 2026-11-17 (not confirmed read). v401 measured (levels identical to v400), not pinned; the game stays on v397. v402-v405 (I24 fixes, I23 duplicate merges, kin re-link, cleanups) applied 2026-11-19; one notice for v402-v405 sent 2026-11-19 (end of `tools/gen/batch405-changes.txt`).
 
 In progress: nothing.
 
@@ -39,10 +39,7 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | Re-link the 558 kin pairs left unlinked at v400 under the loosened clash limit (soft 8, up to 12 for real look-alikes in big themes; DESIGN-entries.md 3.7), after v403 (Simon 2026-11-19) | deep reasoning | Opus |
-| 1a | Code cleanup with the clash-big change, after v403 (Simon 2026-11-19): T6 line breaks for adult-only words, T9 stale LoadV3.cs.txt, T19 apply-words merge via deleteEntry, T21 case-case-split label, T22 ai.js cost() for fallback and long Haiku prompts | standard | Sonnet |
-| 1b | Data leftovers T10 (settings.model, aliasOf null, nextId), T16 (proper-word pass oddities), T20 (51 dead show keys on aliases), and in places_that_are_also_words: link the place, not the common word (Bath 16586 for bath [tub] 27983; Mold, the Welsh town, for mold [fungus], a new place entry if none): fold into the v404 batch (Simon 2026-11-19) | standard | Opus |
-| 1b | I23 merge same-sense duplicate roots into form aliases (115 seen in the pilot; later) | deep reasoning | Opus |
+| 1 | Julia's branch julia-category-fixes (built on v365): replay as a new batch on the current library if Simon wants it | deep reasoning | Opus |
 | 2 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
 
 ## 5. Subagents
