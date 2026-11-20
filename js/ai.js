@@ -122,9 +122,10 @@ export function wordsPrompt(P, t, n, spread, extra) {
 }
 
 export const SPREADS = {
-  even: 'Spread them across the difficulty range: roughly a third very well known (familiarity 1 to 2), a third in the middle (familiarity 3), and a third harder or more specialist (familiarity 4 to 5), but only words that really belong.',
-  easy: 'Give the best-known words first: mostly familiarity 1 to 2.',
-  hard: 'Give harder words that still clearly belong: mostly familiarity 3 to 5, skipping the obvious ones already listed.',
+  // By word difficulty: the harder of a word's familiarity and its typicality in this theme (the game's band). Simon, 2026-11-20.
+  even: "Spread them across the difficulty range, where a word's difficulty is the harder of its familiarity and its typicality in this theme: roughly a third easy (both 1 to 2), a third in the middle (the harder is 3), and a third hard (the harder is 4 to 5), but only words that really belong.",
+  easy: 'Give the easiest words first: mostly words whose familiarity and typicality in this theme are both 1 to 2.',
+  hard: 'Give harder words that still clearly belong: mostly words whose familiarity or typicality in this theme is 3 to 5, skipping the obvious ones already listed.',
 };
 
 export async function generateWords(P, t, { n = 20, spread = 'even', extra = '', model, signal }) {
