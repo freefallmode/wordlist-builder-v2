@@ -1,0 +1,498 @@
+Fixes: alias-as-answer links (the game never reads alias links); regional roots with an equivalent in the other dialect (contract-root-region).
+1. alias links: 109 actions; through 88, root 15, move 4, drop 2
+  through: bookshop 137 in blank_shop -> bookstore 138 (typicality 1, shown "book", locked)
+  root: joe 962 [US] (was a regional alias of coffee 226): slang for coffee, a word of its own; keeps nicknames_for_drinks 3
+  root: char 964 [UK] (was a regional alias of tea 225): slang for tea (from Chinese cha); keeps nicknames_for_drinks 4
+  move: buffalo 1007 in hidden_colors (typicality 3) -> buffalo 9793: buffalo [animal] has the same letters and no dialect
+  root: mozzie 1346 [AU,NZ] (was a regional alias of mosquito 1345): AU clipping of mosquito; keeps australian_slang 2; kin mosquito 1345
+  through: ladybird 1352 in blank_bird -> ladybug 1351 (typicality 2, shown "lady", locked)
+  through: greenfly 1373 in blank_fly -> aphid 1372 (typicality 4, shown "green", locked)
+  through: horsebox 1538 in blank_box -> horse trailer 1539 (typicality 3, shown "horse", locked)
+  through: gum tree 1642 in trees -> eucalyptus 1641 (typicality 2, its own text): unlocked: eucalyptus is the clearer answer, and "gum" alone also names the US sweetgum
+  through: gum tree 1642 in evergreen_trees -> eucalyptus 1641 (typicality 3, its own text): as trees
+  through: public house 2497 in blank_house -> pub 2496 (typicality 3, shown "public", locked)
+  root: banger 2644 [UK] (was a regional alias of clunker 67131): UK slang for an old car; keeps 1920s_slang 5
+  through: tram 2651 in things_you_ride -> streetcar 2652 (typicality 2, its own text)
+  through: air hostess 2724 in air_blank -> flight attendant 2723 (typicality 3, shown "hostess", locked)
+  through: signal box 2905 in blank_box -> signal tower 67189 (typicality 3, shown "signal", locked)
+  through: rucksack 3031 in words_from_german -> backpack 3030 (typicality 2, shown "rucksack", locked)
+  root: esky 3037 [AU] (was a regional alias of cooler 3035): AU word for a cool box (from a brand); keeps australian_slang 2
+  root: binky 3556 [US] (was a regional alias of pacifier 3554): US baby talk for a pacifier; keeps baby_talk 2
+  through: cot 3562 in british_english_words -> crib 3561 (typicality 2, shown "cot", locked)
+  through: cotton wool 3778 in fluffy_things -> cotton ball 39052 (typicality 1, its own text)
+  root: firie 4085 [AU] (was a regional alias of firefighter 4083): AU pet form of firefighter; keeps nicknames_for_workers 5; kin firefighter 4083
+  root: sparky 4092 [UK,AU,NZ] (was a regional alias of electrician 4091): slang for an electrician; keeps nicknames_for_workers 4
+  root: chippy 4096 [UK,AU] (was a synonym alias of carpenter 4094): slang for a carpenter; keeps nicknames_for_workers 4
+  through: postman 4121 in blank_man -> mail carrier 4120 (typicality 1, shown "post", locked)
+  through: dustman 4127 in blank_man -> garbage collector 4125 (typicality 3, shown "dust", locked)
+  root: telly 4574 [UK,AU,IE] (was a regional alias of television 4572): clipping of television; keeps british_slang 2; kin television 4572
+  through: dressing table 4690 in table_types -> vanity 4691 (typicality 3, shown "dressing", locked)
+  through: icebox 4717 in blank_box -> fridge 4716 (typicality 3, shown "ice", locked)
+  through: icebox 4717 in ice_blank -> fridge 4716 (typicality 3, shown "box", locked)
+  through: hob 4768 in british_english_words -> cooktop 4767 (typicality 4, shown "hob", locked)
+  move: jersey 4876 in words_named_after_places (typicality 3) -> jersey 24850: jersey [fabric] is the same word (named after Jersey) and has no dialect; no shown text needed
+  root: sunnies 4954 [AU,NZ] (was a regional alias of sunglasses 4952): AU pet form of sunglasses; keeps australian_slang 3; kin sunglasses 4952
+  through: bum bag 4989 in blank_bag -> fanny pack 4988 (typicality 4, shown "bum", locked)
+  through: football 5191 in double_letters -> soccer 5190 (typicality 4, shown "football", locked)
+  through: football 5191 in blank_ball -> soccer 5190 (typicality 1, shown "foot", locked)
+  through: football 5191 in foot_blank -> soccer 5190 (typicality 1, shown "ball", locked)
+  through: water pistol 5964 in water_blank -> squirt gun 5965 (typicality 3, shown "pistol", locked)
+  root: joanna 6000 [UK] (was a regional alias of piano 5998): Cockney rhyming slang for piano; keeps cockney_rhyming_slang 4
+  through: tights 6225 in things_with_legs -> pantyhose 24422 (typicality 5, shown "tights", locked)
+  move: film 6364 in letters_in_alphabetical_order (typicality 3) -> film 52276: film [camera] has the same letters and no dialect
+  through: clapboard 6402 in blank_board -> clapperboard 6401 (typicality 4, shown "clap", locked)
+  through: mobile 7327 in british_english_words -> cell phone 7325 (typicality 2, shown "mobile", locked)
+  through: minim 11147 in palindromes -> half note 11146 (typicality 5, shown "minim", locked)
+  drop: minim 11147 in imperial_units: wrong sense: minim [half note] is not the fluid unit
+  through: door staff 13890 in door_blank -> bouncer 13876 (typicality 4, shown "staff", locked)
+  through: ice lolly 18304 in ice_blank -> popsicle 18303 (typicality 3, shown "lolly", locked)
+  through: jacket potato 19146 in british_english_words -> baked potato 19141 (typicality 3, shown "jacket potato", locked)
+  through: chopping board 19851 in blank_board -> cutting board 19850 (typicality 1, shown "chopping", locked)
+  root: brekkie 20110 [AU,UK] (was a regional alias of breakfast 20109): pet form of breakfast; keeps australian_slang 1; kin breakfast 20109
+  through: tea towel 23126 in british_english_words -> dish towel 67199 (typicality 3, shown "tea towel", locked)
+  through: fairy lights 23485 in cozy_things -> string lights 67155 (typicality 3, shown "fairy lights", locked)
+  through: cistern 23618 in hidden_birds -> toilet tank 67144 (typicality 5, shown "cistern", locked)
+  through: cistern 23618 in ends_with_tern -> toilet tank 67144 (typicality 3, shown "cistern", locked)
+  through: skirting board 23768 in blank_board -> baseboard 23769 (typicality 3, shown "skirting", locked)
+  move: tap 23781 in reversible_words (typicality 2) -> tap 64433: tap [rhythm] has the same letters and no dialect
+  drop: tap 23781 in computer_actions: wrong sense: a tap [faucet] is not tapping a screen
+  through: plasterboard 24035 in blank_board -> drywall 24036 (typicality 3, shown "plaster", locked)
+  root: togs 24487 [NZ,AU] (was a regional alias of swimsuit 24469): AU/NZ word for swimwear; keeps australian_slang 3
+  through: Wellington boots 24590 in british_english_words -> rubber boots 24589 (typicality 3, shown "wellies", locked): the root's UK word, lowercase; a capital in a shown text needs a proper-noun root
+  through: carrier bag 24716 in blank_bag -> grocery bag 67140 (typicality 3, shown "carrier", locked)
+  through: knitted jumper 25746 in cozy_things -> sweater 4873 (typicality 2, shown "knitted jumper", locked)
+  through: dustbin 25798 in british_english_words -> trash can 23251 (typicality 3, shown "dustbin", locked)
+  through: pavement 27365 in british_english_words -> sidewalk 38436 (typicality 2, shown "pavement", locked)
+  through: motorway 27366 in british_english_words -> freeway 38303 (typicality 2, shown "motorway", locked)
+  through: nought 29187 in ough_words -> zero 29418 (typicality 4, shown "nought", locked)
+  through: jiffy bag 29579 in brand_names_used_as_words -> padded envelope 67167 (typicality 4, shown "jiffy bag", locked)
+  through: barman 33001 in blank_man -> bartender 33000 (typicality 3, shown "bar", locked)
+  through: cattle grid 38184 in road_signs -> cattle guard 67142 (typicality 4, shown "cattle grid", locked)
+  through: phone box 38362 in blank_box -> telephone booth 38363 (typicality 2, shown "phone", locked)
+  through: tailback 38387 in traffic_words -> traffic jam 38385 (typicality 3, shown "tailback", locked)
+  through: roadworks 38389 in traffic_words -> road construction 67183 (typicality 2, shown "roadworks", locked)
+  through: roadworks 38389 in blank_works -> road construction 67183 (typicality 2, shown "road", locked)
+  through: overtake 38391 in traffic_words -> pass 67225 (typicality 2, shown "overtake", locked)
+  through: hard shoulder 38403 in traffic_words -> shoulder 38416 (typicality 4, shown "hard shoulder", locked)
+  through: stop-start 38413 in traffic_words -> stop-and-go 67195 (typicality 3, shown "stop-start", locked)
+  through: knobbly 39123 in texture_words -> knobby 67169 (typicality 3, shown "knobbly", locked)
+  through: knobbly 39123 in silent_k_words -> knobby 67169 (typicality 4, shown "knobbly", locked)
+  through: abseil 45055 in words_from_german -> rappel 45054 (typicality 4, shown "abseil", locked)
+  through: betting shop 45350 in blank_shop -> bookies 65890 (typicality 3, shown "betting", locked)
+  through: gearbox 46614 in blank_box -> transmission 46613 (typicality 2, shown "gear", locked)
+  through: sick bag 47340 in blank_bag -> air sickness bag 47339 (typicality 4, shown "sick", locked)
+  through: toilet bag 48803 in blank_bag -> toiletry bag 48843 (typicality 3, shown "toilet", locked)
+  through: hooter 49208 in vehicle_sounds -> horn 46600 (typicality 4, shown "hooter", locked)
+  through: panda car 49253 in british_english_words -> police car 3091 (typicality 5, shown "panda car", locked)
+  root: shonky 62484 [AU] (was a regional alias of dodgy 27323): AU slang for dodgy; keeps words_for_bad 5
+  through: handbrake 62643 in hand_blank -> emergency brake 46812 (typicality 4, shown "brake", locked)
+  through: Christmas pud 63490 in puddings -> plum pudding 64742 (typicality 2, shown "plum", locked): a capital in a shown text needs a proper-noun root; shown by its modifier, as rice, bread and summer pudding are
+  through: rank 63911 in taxis_of_the_world -> taxi stand 67180 (typicality 3, shown "rank", locked)
+  through: letterbox 65785 in blank_box -> mail slot 35174 (typicality 2, shown "letterbox", locked)
+  through: knickers 66204 in silent_k_words -> panties 24403 (typicality 3, shown "knickers", locked)
+  through: bottom 66208 in hidden_names -> butt 178 (typicality 4, shown "bottom", locked)
+  through: strongroom 66239 in blank_room -> vault 33919 (typicality 5, shown "strong", locked)
+  through: fire brigade 66270 in fire_blank -> fire department 67157 (typicality 2, shown "brigade", locked)
+  through: fireguard 66274 in fire_blank -> fire screen 23586 (typicality 5, shown "guard", locked)
+  through: draughtboard 66326 in blank_board -> checkerboard 38905 (typicality 4, shown "draught", locked)
+  through: lollipop man 66367 in blank_man -> crossing guard 34812 (typicality 3, shown "lollipop", locked)
+  through: punch bag 66535 in blank_bag -> punching bag 15876 (typicality 2, shown "punch", locked)
+  through: diplomatic bag 66543 in blank_bag -> diplomatic pouch 33540 (typicality 5, shown "diplomatic", locked)
+  through: fusspot 66567 in blank_pot -> fussbudget 67160 (typicality 5, shown "fuss", locked)
+  through: pound shop 66579 in blank_shop -> dollar store 67177 (typicality 5, shown "pound", locked)
+  through: farm shop 66581 in blank_shop -> farm stand 67156 (typicality 4, shown "farm", locked)
+  through: shoe shop 66584 in blank_shop -> shoe store 57500 (typicality 2, shown "shoe", locked)
+  through: corner shop 66587 in blank_shop -> convenience store 46773 (typicality 2, shown "corner", locked)
+  through: charity shop 66591 in blank_shop -> thrift store 62628 (typicality 1, shown "charity", locked)
+  through: sweet shop 66592 in blank_shop -> candy store 62630 (typicality 2, shown "sweet", locked)
+  through: kitchen paper 66610 in blank_paper -> paper towel 25549 (typicality 3, shown "kitchen", locked)
+  through: star sign 66653 in star_blank -> zodiac sign 67193 (typicality 2, shown "sign", locked)
+  through: head teacher 66687 in head_blank -> principal 4497 (typicality 2, shown "teacher", locked)
+  through: key worker 66808 in key_blank -> essential worker 67168 (typicality 4, shown "worker", locked)
+   aliases with links of their own after part 1: 0
+2. regional roots merged into their equivalent: 44 pairs; re-pointed 1, regional 29, synonym 9, spelling 5, abbreviation 1
+  kind: greaseproof paper 66614 under parchment paper 25562: regional -> synonym: an uncoated paper, a near match; baking paper becomes the UK display word
+  re-point: metre rule 7225 [UK] (regional) from yardstick 7223 to meter stick 7224: the UK word for a meter stick, not for a yardstick
+  regional: newsagent 145 [UK] root -> regional [UK] of newsstand 146 [US]: the UK word (Simon's example); shops: both linked, the root's link kept (typicality 4; the alias's 3 dropped); shopkeepers: link moved (typicality 2), shown "newsagent"; shops group (newsagent, newsstand) -> gone
+  regional: lorry 27364 [] root -> regional [UK] of truck 28334: the UK word; was untagged; british_english_words: link moved (typicality 1), shown "lorry" (locked); things_on_wheels: link moved (typicality 2); land_vehicles: both linked, the root's link kept (typicality 1; the alias's 2 dropped); land_vehicles group (truck, lorry) -> gone
+  regional: postcode 27370 [] root -> regional [UK] of zip code 26017: the UK word; was untagged; british_english_words: link moved (typicality 3), shown "postcode" (locked); post_office: link moved (typicality 3)
+  regional: ring road 27375 [] root -> regional [UK] of beltway 63888: the UK word for a road round a city; was untagged; british_english_words: link moved (typicality 4), shown "ring road" (locked); traffic_words: link moved (typicality 4), shown "ring road" (locked)
+  regional: primary school 4522 [UK,AU,NZ,IE] root -> regional [UK,AU,NZ,IE] of elementary school 4523 [US,CA]: the UK word; school: both linked, the root's link kept (typicality 2; the alias's 2 dropped); school group (primary school, elementary school) -> gone
+  synonym: estate 64794 [] root -> synonym [UK] of station wagon 2604: the UK clipping; its alias estate car (regional UK) becomes the display word; cars: both linked, the root's link kept (typicality 3; the alias's 3 dropped); car_types: both linked, the root's link kept (typicality 2; the alias's 2 dropped); cars group (estate, station wagon) -> gone; car_types group (estate, station wagon) -> gone; alias estate car [UK,AU] re-pointed to the root
+  regional: post 28052 [] root -> regional [UK] of mail 28070: the UK word for the letters; was untagged; anagrams_of_each_other: link moved (typicality 3), shown "post" (locked); kin poster dropped (not the root's word family)
+  regional: public toilet 38380 [] root -> regional [UK] of restroom 27904: the UK word; was untagged; street_furniture: link moved (typicality 3)
+  regional: washing up 23944 [UK] root -> regional [UK] of dishes 23934: the UK word for the chore; chores: both linked, the root's link kept (typicality 1; the alias's 1 dropped); chores group (dishes, washing up) -> gone
+  regional: bank holiday 5157 [UK,IE] root -> regional [UK,IE] of public holiday 5158: the UK word; holidays_and_celebrations: both linked, the root's link kept (typicality 2; the alias's 3 dropped); holidays_and_celebrations group (bank holiday, public holiday) -> gone
+  synonym: face cloth 3791 [] root -> synonym [UK] of washcloth 3789: second UK word (flannel is the display word); personal_care: both linked, the root's link kept (typicality 3; the alias's 4 dropped); toiletries_for_washing: both linked, the root's link kept (typicality 3; the alias's 4 dropped); bath_time: both linked, the root's link kept (typicality 3; the alias's 4 dropped); grooming_tools: both linked, the root's link kept (typicality 3; the alias's 4 dropped); personal_care group (washcloth, face cloth) -> gone; toiletries_for_washing group (washcloth, face cloth) -> gone; bath_time group (washcloth, face cloth) -> gone; grooming_tools group (washcloth, face cloth) -> gone
+  regional: hand luggage 48744 [UK] root -> regional [UK] of carry-on 2730: the UK word; luggage: both linked, the root's link kept (typicality 1; the alias's 2 dropped); hand_blank: link moved (typicality 3), shown "luggage" (locked); luggage group (carry-on, hand luggage, cabin bag) -> (carry-on, cabin bag)
+  regional: baking paper 25561 [] root -> regional [UK] of parchment paper 25562: the UK word; greaseproof paper (an uncoated paper, a near match) becomes a synonym; paper_goods: both linked, the root's link kept (typicality 3; the alias's 3 dropped); blank_paper: both linked, the root's link kept (typicality 4; the alias's 3 dropped); paper_goods group (baking paper, parchment paper, greaseproof) -> (parchment paper, greaseproof)
+  regional: wholemeal 64810 [] root -> regional [UK] of whole wheat 62548: the UK word; was untagged; flours: both linked, the root's link kept (typicality 2; the alias's 2 dropped); flours group (wholemeal, whole wheat, wheat flour) -> (whole wheat, wheat flour); alias wholemeal flour [UK] re-pointed to the root (abbreviation -> synonym)
+  regional: washing line 40325 [] root -> regional [UK] of clothesline 23257: the UK word; was untagged; things_that_drip: link moved (typicality 5); blank_line: both linked, the root's link kept (typicality 2; the alias's 2 dropped)
+  regional: rockery 1867 [UK] root -> regional [UK] of rock garden 1866: the UK word; garden_features: link moved (typicality 3), shown "rock"; japanese_garden: both linked, the root's link kept (typicality 2; the alias's 2 dropped); garden: both linked, the root's link kept (typicality 3; the alias's 3 dropped); garden_styles: both linked, the root's link kept (typicality 3; the alias's 3 dropped); garden group (rockery, rock garden) -> gone; garden_styles group (rockery, rock garden) -> gone; kin rock, rock dropped (not the root's word family)
+  regional: camp bed 23447 [UK] root -> regional [UK] of cot 3049: the UK word for a cot [camp bed]; things_with_legs: link moved (typicality 3), shown "camp bed" (locked); things_that_fold: link moved (typicality 2); beds: link moved (typicality 3)
+  regional: school disco 61315 [UK] root -> regional [UK] of school dance 34996: the UK word; school_events: both linked, the root's link kept (typicality 2; the alias's 3 dropped); school_events group (school dance, school disco) -> gone
+  regional: Whitsun 34194 [UK] root -> regional [UK] of Pentecost 5150: the UK name of the feast; religious_festivals: both linked, the root's link kept (typicality 3; the alias's 3 dropped); religious_festivals group (Pentecost, Whitsun) -> gone
+  spelling: chilli 39183 [UK] root -> spelling [UK] of chili 29499: UK spelling of chili [pepper]; spicy_foods: both linked, the root's link kept (typicality 1; the alias's 1 dropped); spicy_foods group (chili, chilli) -> gone
+  spelling: neighbourhood watch 24301 [UK] root -> spelling [UK] of neighborhood watch 4251: UK spelling; the root, now a US spelling with its UK alias, is untagged as color is; home_safety: link moved (typicality 4); root region [US] -> []
+  spelling: chequered 46707 [UK] root -> spelling [UK] of checkered 38904: UK spelling; motor_racing: link dropped (checkered flag is the member there; chequered was grouped with it); motor_racing group (checkered flag, chequered) -> gone; kin cheque dropped (cheque and checkered only share letters (DESIGN-entries.md 3.7))
+  spelling: devilled 66182 [] root -> spelling [UK] of deviled 63441: UK spelling; was untagged; ways_to_cook_eggs: link moved (typicality 3)
+  regional: net curtains 23508 [UK] root -> regional [UK] of sheers 23509: the UK word; soft_furnishings: both linked, the root's link kept (typicality 4; the alias's 3 dropped); window_coverings: both linked, the root's link kept (typicality 3; the alias's 3 dropped); soft_furnishings group (net curtains, sheers) -> gone; window_coverings group (net curtains, sheers) -> gone
+  regional: Mohican 14312 [UK] root -> regional [UK] of mohawk 14283: the UK word for the haircut; hair: both linked, the root's link kept (typicality 2; the alias's 4 dropped); hair group (mohawk, Mohican) -> gone
+  regional: BSc 34937 [] root -> regional [UK] of BS 34951 [US]: the UK abbreviation of the degree; was untagged; university_degrees: both linked, the root's link kept (typicality 3; the alias's 2 dropped); university_degrees group (bachelor of science, BSc, BS) -> (bachelor of science, BS)
+  regional: tallboy 4670 [UK,AU,NZ] root -> regional [UK,AU,NZ] of highboy 23472: the UK word; bedroom: link moved (typicality 4); storage_furniture: both linked, the root's link kept (typicality 5; the alias's 4 dropped); antique_furniture: both linked, the root's link kept (typicality 4; the alias's 4 dropped); furniture: link moved (typicality 4); storage_furniture group (tallboy, highboy) -> gone; antique_furniture group (tallboy, highboy) -> gone
+  regional: longshoreman 4173 [US] root -> regional [US] of stevedore 4172: the US word (docker is the UK one); transport_jobs: both linked, the root's link kept (typicality 5; the alias's 5 dropped); ports_and_harbors: both linked, the root's link kept (typicality 4; the alias's 4 dropped); jobs: both linked, the root's link kept (typicality 5; the alias's 5 dropped); words_from_spanish: both linked, the root's link kept (typicality 5; the alias's 5 dropped); ports_and_harbors group (stevedore, longshoreman) -> gone; jobs group (stevedore, longshoreman) -> gone; transport_jobs group (stevedore, longshoreman) -> gone; words_from_spanish group (stevedore, longshoreman) -> gone
+  synonym: club soda 19543 [US] root -> synonym [US] of sparkling water 879: second US word (soda water is the regional one); soft_drinks: link moved (typicality 2); fizzy_drinks: both linked, the root's link kept (typicality 1; the alias's 3 dropped); fizzy_drinks group (sparkling water, seltzer, club soda) -> (sparkling water, seltzer)
+  spelling: campervan 3070 [UK,AU,NZ] root -> spelling [UK,AU,NZ] of camper van 48282: closed UK spelling; campsite: link moved (typicality 4)
+  synonym: jacket potatoes 48561 [UK] root -> synonym [UK] of baked potato 19141: plural of the UK word (jacket potato is the display word); campfire_foods: both linked, the root's link kept (typicality 2; the alias's 3 dropped); campfire_foods group (baked potato, jacket potatoes) -> gone
+  regional: black pudding 17748 [UK] root -> regional [UK] of blood sausage 17749: the UK word; sausages: link moved (typicality 2), shown "blood"; breakfast_foods: both linked, the root's link kept (typicality 3; the alias's 3 dropped); british_food: both linked, the root's link kept (typicality 4; the alias's 3 dropped); british_morning_foods: link moved (typicality 3); black_blank: link moved (typicality 3), shown "pudding" (locked); breakfast_foods group (black pudding, blood sausage) -> gone; british_food group (black pudding, blood sausage) -> gone
+  regional: baby bella 17621 [US] root -> regional [US] of cremini 17620: the US shop name; mushrooms: both linked, the root's link kept (typicality 2; the alias's 3 dropped); fungi: both linked, the root's link kept (typicality 3; the alias's 4 dropped); mushrooms group (cremini, baby bella) -> gone; fungi group (cremini, baby bella) -> gone
+  synonym: life vest 2828 [US] root -> synonym [US] of life jacket 2827: second US word (life preserver is the regional one); water_park: link moved (typicality 4); in_flight_words: both linked, the root's link kept (typicality 2; the alias's 3 dropped); boats_and_ships: both linked, the root's link kept (typicality 2; the alias's 3 dropped); beach_gear: both linked, the root's link kept (typicality 4; the alias's 4 dropped); cruise_words: both linked, the root's link kept (typicality 2; the alias's 3 dropped); emergency_supplies: both linked, the root's link kept (typicality 4; the alias's 4 dropped); things_that_float: both linked, the root's link kept (typicality 3; the alias's 3 dropped); orange_things: both linked, the root's link kept (typicality 3; the alias's 3 dropped); in_case_of_trouble: both linked, the root's link kept (typicality 2; the alias's 3 dropped); in_flight_words group (life jacket, life vest) -> gone; boats_and_ships group (life jacket, life vest) -> gone; beach_gear group (life jacket, life vest) -> gone; cruise_words group (life jacket, life vest) -> gone; emergency_supplies group (life jacket, life vest) -> gone; things_that_float group (life jacket, life vest) -> gone; orange_things group (life jacket, life vest) -> gone
+  synonym: model railways 5908 [UK] root -> synonym [UK] of model railroad 2908: plural of the UK word (model railway is the display word); hobbies_and_crafts: link moved (typicality 2)
+  regional: Murphy bed 23449 [US] root -> regional [US] of wall bed 23450: the US word; beds: both linked, the root's link kept (typicality 3; the alias's 3 dropped); beds group (Murphy bed, wall bed) -> gone
+  regional: dust ruffle 23521 [US] root -> regional [US] of bed skirt 16039: the US word; soft_furnishings: link moved (typicality 4); soft_furnishings group (valance, dust ruffle) -> (valance, bed skirt)
+  abbreviation: vet nurse 33119 [UK] root -> abbreviation [UK] of veterinary nurse 57558: clipping of the UK word; animal_jobs: link moved (typicality 3)
+  regional: Chinese Whispers 46106 [UK] root -> regional [UK] of telephone 46109: the UK name of the game; party_games: both linked, the root's link kept (typicality 3; the alias's 3 dropped); party_games group (Chinese Whispers, telephone) -> gone
+  regional: no entry 38411 [] root -> regional [UK] of do not enter 46721 [US]: the UK sign; was untagged (the US form stays the root); traffic_words: link moved (typicality 4), shown "no entry" (locked); road_signs: both linked, the root's link kept (typicality 2; the alias's 1 dropped)
+  regional: poste restante 35188 [] root -> regional [UK] of general delivery 61358 [US]: the UK word; was untagged (the US form stays the root); mail_words: both linked, the root's link kept (typicality 5; the alias's 5 dropped); mail_words group (poste restante, general delivery) -> gone
+  synonym: court 64812 [UK] root -> synonym [UK] of pumps 24627: clipping of the UK word (court shoes is the display word); shoes: both linked, the root's link kept (typicality 2; the alias's 3 dropped); shoes group (court, pumps) -> gone; alias courts [UK] re-pointed to the root (form -> synonym)
+  synonym: jumpers 23352 [UK] root -> synonym [UK] of sweater 4873: plural of the UK word (jumper is the display word); wardrobe: both linked, the root's link kept (typicality 1; the alias's 2 dropped); wardrobe group (jumpers, sweater) -> gone
+  synonym: candyfloss 66188 [] root -> synonym [UK] of cotton candy 628: closed form of the UK word (candy floss is the display word); was untagged; fluffy_things: link moved (typicality 3)
+   answers no longer separate (both were linked): 53
+    shops: "newsagent" 145 no longer a separate answer; "newsstand" 146 stays
+    land_vehicles: "lorry" 27364 no longer a separate answer; "truck" 28334 stays
+    school: "primary" 4522 no longer a separate answer; "elementary" 4523 stays
+    cars: "estate" 64794 no longer a separate answer; "station wagon" 2604 stays
+    car_types: "estate" 64794 no longer a separate answer; "station wagon" 2604 stays
+    chores: "washing up" 23944 no longer a separate answer; "dishes" 23934 stays
+    holidays_and_celebrations: "bank holiday" 5157 no longer a separate answer; "public holiday" 5158 stays
+    personal_care: "face cloth" 3791 no longer a separate answer; "washcloth" 3789 stays
+    toiletries_for_washing: "face cloth" 3791 no longer a separate answer; "washcloth" 3789 stays
+    bath_time: "face cloth" 3791 no longer a separate answer; "washcloth" 3789 stays
+    grooming_tools: "face cloth" 3791 no longer a separate answer; "washcloth" 3789 stays
+    luggage: "hand luggage" 48744 no longer a separate answer; "carry-on" 2730 stays
+    paper_goods: "baking paper" 25561 no longer a separate answer; "parchment" 25562 stays
+    blank_paper (locked): "baking" 25561 no longer a separate answer; "parchment" 25562 stays
+    flours (locked): "wholemeal" 64810 no longer a separate answer; "whole wheat" 62548 stays
+    blank_line (locked): "washing" 40325 no longer a separate answer; "clothes" 23257 stays
+    japanese_garden: "rockery" 1867 no longer a separate answer; "rock" 1866 stays
+    garden: "rockery" 1867 no longer a separate answer; "rock" 1866 stays
+    garden_styles: "rockery" 1867 no longer a separate answer; "rock" 1866 stays
+    school_events: "disco" 61315 no longer a separate answer; "dance" 34996 stays
+    religious_festivals: "Whitsun" 34194 no longer a separate answer; "pentecost" 5150 stays
+    spicy_foods: "chilli" 39183 no longer a separate answer; "chili" 29499 stays
+    motor_racing: "chequered" 46707 dropped: checkered flag is the member there; chequered was grouped with it
+    soft_furnishings: "net curtains" 23508 no longer a separate answer; "sheers" 23509 stays
+    window_coverings: "net curtains" 23508 no longer a separate answer; "sheers" 23509 stays
+    hair: "Mohican" 14312 no longer a separate answer; "mohawk" 14283 stays
+    university_degrees: "BSc" 34937 no longer a separate answer; "bs" 34951 stays
+    storage_furniture: "tallboy" 4670 no longer a separate answer; "highboy" 23472 stays
+    antique_furniture: "tallboy" 4670 no longer a separate answer; "highboy" 23472 stays
+    transport_jobs: "longshoreman" 4173 no longer a separate answer; "stevedore" 4172 stays
+    ports_and_harbors: "longshoreman" 4173 no longer a separate answer; "stevedore" 4172 stays
+    jobs: "longshoreman" 4173 no longer a separate answer; "stevedore" 4172 stays
+    words_from_spanish (locked): "longshoreman" 4173 no longer a separate answer; "stevedore" 4172 stays
+    fizzy_drinks: "club soda" 19543 no longer a separate answer; "sparkling water" 879 stays
+    campfire_foods: "jacket potatoes" 48561 no longer a separate answer; "baked potato" 19141 stays
+    breakfast_foods: "black pudding" 17748 no longer a separate answer; "blood sausage" 17749 stays
+    british_food: "black pudding" 17748 no longer a separate answer; "blood sausage" 17749 stays
+    mushrooms: "baby bella" 17621 no longer a separate answer; "cremini" 17620 stays
+    fungi: "baby bella" 17621 no longer a separate answer; "cremini" 17620 stays
+    in_flight_words: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    boats_and_ships: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    beach_gear: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    cruise_words: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    emergency_supplies: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    things_that_float: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    orange_things: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    in_case_of_trouble: "life vest" 2828 no longer a separate answer; "life jacket" 2827 stays
+    beds: "Murphy" 23449 no longer a separate answer; "wall bed" 23450 stays
+    party_games: "Chinese Whispers" 46106 no longer a separate answer; "telephone" 46109 stays
+    road_signs (locked): "no entry" 38411 no longer a separate answer; "do not enter" 46721 stays
+    mail_words: "poste restante" 35188 no longer a separate answer; "general delivery" 61358 stays
+    shoes: "court" 64812 no longer a separate answer; "pumps" 24627 stays
+    wardrobe: "jumpers" 23352 no longer a separate answer; "sweaters" 4873 stays
+   shown texts rated at the root's familiarity: british_english_words: "lorry" now rated at truck's familiarity 1 (was 2); british_english_words: "postcode" now rated at zip code's familiarity 1 (was 2); anagrams_of_each_other: "post" now rated at mail's familiarity 2 (was 1); hand_blank: "luggage" now rated at carry-on's familiarity 1 (was 2); garden_features: "rock" now rated at rock garden's familiarity 2 (was 3); traffic_words: "no entry" now rated at do not enter's familiarity 3 (was 1)
+   skipped (doubtful or out of scope): 16
+    mummy / mommy: words for mother is locked and lists both as answers
+    brandy butter / hard sauce: brandy butter is flagged adult and hard sauce is not; merged, a word would move into or out of the family export
+    rock pool / tide pool: tide pool is in the theme "rock pool"; the alias would carry the theme's own name
+    satsuma / mandarin, tangerine, clementine: different fruits
+    chips [food] / French fries, potato chips: the UK sense differs and the entry mixes both
+    fortnight / two weeks: "two weeks" is a phrase used everywhere; fortnight is the word
+    fresher / freshman, cop car / patrol car, copper, bobby / police officer, mate / buddy, nan / grandma: slang or informal words in their own right
+    Hoover, Stanley knife, vacuum flask / thermos, Sellotape, rawlplug, Q-tip, Meccano / Erector Set: brand names used as words
+    hoarding / billboard, lumber / timber, fanlight / transom, emulsion / latex paint: the regional entry or its partner mixes two senses
+    boot, bonnet, fringe, plaster [bandage], lay-by, skip, fire engine, roundabout: untagged second roots of words the root already has as aliases (need a delete)
+    main course / entrée, server / waiter, end table / side table, chocolate bar / candy bar: the other word is used in both dialects or is not the same thing
+    fairy cake / cupcake, cottage pie / shepherd's pie, back bacon / Canadian bacon, digestive / graham cracker, crumpet / English muffin: different things
+    Remembrance Day / Veterans Day, Pancake Day, Shrove Tuesday / Mardi Gras, Hogmanay / New Year's Eve: different observances
+    boilersuit / coveralls: overalls holds both the bib (dungarees) and the one-piece (coveralls) sense
+    mitre [joint], mitre [angle cutting]: senses unclear (a saw in saws and things with teeth); need a sense check first
+    give way (root) / yield, sledge (root) / sled: the UK word is the root with a US alias; flipping roots is out of scope
+name allowances given to aliases now in a theme whose name holds their word: 10: gum tree 1642 in trees, gum tree 1642 in evergreen_trees, primary school 4522 in school_types, primary school 4522 in school, camp bed 23447 in beds, Murphy bed 23449 in beds, ring road 27375 in road_types, post 28052 in post_office, vet nurse 33119 in vet_clinic, school disco 61315 in school_events
+aliases with links of their own after the batch: 0
+library changes 184; entries changed 265; status set to rev 247
+Checks: changed kinds: info:alias-kind-suspect 52 -> 53, info:clash-large 60 -> 59, info:family-kin 322 -> 344, info:nameOk-stale 72 -> 70, info:orphan 225 -> 214, info:rating-vs-zipf 1660 -> 1659, info:sense-twin 240 -> 241, info:theme-twin 55 -> 56, warn:rating-vs-zipf 248 -> 246
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 246, theme-name 3
+same-display (info) new: 0
+Export contract (family export, zipf): contract-dup-root 186 -> 185, contract-root-region 1802 -> 1785, contract-thin 6 -> 5, contract-type-common 43 -> 42; after: contract-dup-root 185, contract-root-region 1785, contract-rule-unknown 15, contract-thin 5, contract-type-common 42; contract-alias-dialect after: 0
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 59
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3235 -> 3235; gone none; new none; theme indexes shift from none
+Entries 61036 -> 61048; first row whose entry changed: 2858 (model railway 2907, was commuter train 2909); rows that moved: 57738; added model railway 2907 (row 2858), model railroad 2908 (row 2859), bouncer 13876 (row 13448), taxi rank 13899 (row 13457), bookies 65890 (row 59195), farm stand 67156 (row 60192), fire department 67157 (row 60193), fussbudget 67160 (row 60196), padded envelope 67167 (row 60203), essential worker 67168 (row 60204), knobby 67169 (row 60205), dollar store 67177 (row 60213), taxi stand 67180 (row 60215), road construction 67183 (row 60217), zodiac sign 67193 (row 60227), stop-and-go 67195 (row 60229); removed jiffy bag 29579, stop-start 38413, knobbly 39123, rank 63911
+First row with any change (entry, text, flags, root, link count or familiarity): 124 (terraced house 125)
+Row text changes: none; flags changed on 62 rows; root -> alias 53: newsagent 145, rockery 1867, life vest 2828, campervan 3070, face cloth 3791, longshoreman 4173, primary school 4522, tallboy 4670, bank holiday 5157, model railways 5908, door staff 13890, Mohican 14312, baby bella 17621, black pudding 17748, club soda 19543, jumpers 23352, camp bed 23447, Murphy bed 23449, net curtains 23508, dust ruffle 23521, washing up 23944, neighbourhood watch 24301, baking paper 25561, lorry 27364, postcode 27370, ring road 27375, post 28052, vet nurse 33119, Whitsun 34194, BSc 34937, poste restante 35188, public toilet 38380, roadworks 38389, no entry 38411, chilli 39183, washing line 40325, betting shop 45350, Chinese Whispers 46106, chequered 46707, jacket potatoes 48561, hand luggage 48744, school disco 61315, estate 64794, wholemeal 64810, court 64812, devilled 66182, candyfloss 66188, fire brigade 66270, fusspot 66567, pound shop 66579, farm shop 66581, star sign 66653, key worker 66808; alias -> root 15: joe 962, char 964, mozzie 1346, banger 2644, esky 3037, binky 3556, firie 4085, sparky 4092, chippy 4096, telly 4574, sunnies 4954, joanna 6000, brekkie 20110, togs 24487, shonky 62484
+Links 109197 -> 109252; rows whose link count changed: 195
+Link-index shifts: from row 137 (greengrocer 139) on, link positions move
+Links by theme + shown text + row, root rows (what the game reads): gone 98, new 137, rating changed 0
+  gone: shops: "newsagent" (row of 145)
+  gone: shopkeepers: "newsagent" (row of 145)
+  gone: garden_features: "rockery" (row of 1867)
+  gone: japanese_garden: "rockery" (row of 1867)
+  gone: garden: "rockery" (row of 1867)
+  gone: garden_styles: "rockery" (row of 1867)
+  gone: water_park: "life vest" (row of 2828)
+  gone: in_flight_words: "life vest" (row of 2828)
+  gone: boats_and_ships: "life vest" (row of 2828)
+  gone: beach_gear: "life vest" (row of 2828)
+  gone: cruise_words: "life vest" (row of 2828)
+  gone: emergency_supplies: "life vest" (row of 2828)
+  gone: things_that_float: "life vest" (row of 2828)
+  gone: orange_things: "life vest" (row of 2828)
+  gone: in_case_of_trouble: "life vest" (row of 2828)
+  gone: campsite: "campervan" (row of 3070)
+  gone: personal_care: "face cloth" (row of 3791)
+  gone: toiletries_for_washing: "face cloth" (row of 3791)
+  gone: bath_time: "face cloth" (row of 3791)
+  gone: grooming_tools: "face cloth" (row of 3791)
+  gone: transport_jobs: "longshoreman" (row of 4173)
+  gone: ports_and_harbors: "longshoreman" (row of 4173)
+  gone: jobs: "longshoreman" (row of 4173)
+  gone: words_from_spanish: "longshoreman" (row of 4173)
+  gone: school: "primary" (row of 4522)
+  gone: bedroom: "tallboy" (row of 4670)
+  gone: storage_furniture: "tallboy" (row of 4670)
+  gone: antique_furniture: "tallboy" (row of 4670)
+  gone: furniture: "tallboy" (row of 4670)
+  gone: holidays_and_celebrations: "bank holiday" (row of 5157)
+  gone: hobbies_and_crafts: "model railways" (row of 5908)
+  gone: door_blank: "staff" (row of 13890)
+  gone: hair: "Mohican" (row of 14312)
+  gone: mushrooms: "baby bella" (row of 17621)
+  gone: fungi: "baby bella" (row of 17621)
+  gone: sausages: "black pudding" (row of 17748)
+  gone: breakfast_foods: "black pudding" (row of 17748)
+  gone: british_food: "black pudding" (row of 17748)
+  gone: british_morning_foods: "black pudding" (row of 17748)
+  gone: black_blank: "pudding" (row of 17748)
+  gone: soft_drinks: "club soda" (row of 19543)
+  gone: fizzy_drinks: "club soda" (row of 19543)
+  gone: wardrobe: "jumpers" (row of 23352)
+  gone: things_with_legs: "camp bed" (row of 23447)
+  gone: things_that_fold: "camp bed" (row of 23447)
+  gone: beds: "camp" (row of 23447)
+  gone: beds: "Murphy" (row of 23449)
+  gone: soft_furnishings: "net curtains" (row of 23508)
+  gone: window_coverings: "net curtains" (row of 23508)
+  gone: soft_furnishings: "dust ruffle" (row of 23521)
+  gone: chores: "washing up" (row of 23944)
+  gone: home_safety: "neighbourhood watch" (row of 24301)
+  gone: paper_goods: "baking paper" (row of 25561)
+  gone: blank_paper: "baking" (row of 25561)
+  gone: british_english_words: "lorry" (row of 27364)
+  gone: things_on_wheels: "lorry" (row of 27364)
+  gone: land_vehicles: "lorry" (row of 27364)
+  gone: british_english_words: "postcode" (row of 27370)
+  gone: post_office: "postcode" (row of 27370)
+  gone: british_english_words: "ring road" (row of 27375)
+  gone: traffic_words: "ring road" (row of 27375)
+  gone: anagrams_of_each_other: "post" (row of 28052)
+  gone: brand_names_used_as_words: "jiffy bag" (row of 29579)
+  gone: animal_jobs: "vet nurse" (row of 33119)
+  gone: religious_festivals: "Whitsun" (row of 34194)
+  gone: university_degrees: "BSc" (row of 34937)
+  gone: mail_words: "poste restante" (row of 35188)
+  gone: street_furniture: "public toilet" (row of 38380)
+  gone: traffic_words: "roadworks" (row of 38389)
+  gone: blank_works: "road" (row of 38389)
+  gone: traffic_words: "no entry" (row of 38411)
+  gone: road_signs: "no entry" (row of 38411)
+  gone: traffic_words: "stop-start" (row of 38413)
+  gone: texture_words: "knobbly" (row of 39123)
+  gone: silent_k_words: "knobbly" (row of 39123)
+  gone: spicy_foods: "chilli" (row of 39183)
+  gone: things_that_drip: "washing line" (row of 40325)
+  gone: blank_line: "washing" (row of 40325)
+  gone: blank_shop: "betting" (row of 45350)
+  gone: party_games: "Chinese Whispers" (row of 46106)
+  gone: motor_racing: "chequered" (row of 46707)
+  gone: campfire_foods: "jacket potatoes" (row of 48561)
+  gone: luggage: "hand luggage" (row of 48744)
+  gone: hand_blank: "luggage" (row of 48744)
+  gone: school_events: "disco" (row of 61315)
+  gone: taxis_of_the_world: "rank" (row of 63911)
+  gone: cars: "estate" (row of 64794)
+  gone: car_types: "estate" (row of 64794)
+  gone: flours: "wholemeal" (row of 64810)
+  gone: shoes: "court" (row of 64812)
+  gone: ways_to_cook_eggs: "devilled" (row of 66182)
+  gone: fluffy_things: "candyfloss" (row of 66188)
+  gone: fire_blank: "brigade" (row of 66270)
+  gone: blank_pot: "fuss" (row of 66567)
+  gone: blank_shop: "pound" (row of 66579)
+  gone: blank_shop: "farm" (row of 66581)
+  gone: star_blank: "sign" (row of 66653)
+  gone: key_blank: "worker" (row of 66808)
+  new: blank_shop: "book" (row of 138)
+  new: shopkeepers: "newsagent" (row of 146)
+  new: hidden_names: "bottom" (row of 178)
+  new: fluffy_things: "cotton candy" (row of 628)
+  new: soft_drinks: "sparkling water" (row of 879)
+  new: nicknames_for_drinks: "joe" (row of 962)
+  new: nicknames_for_drinks: "char" (row of 964)
+  new: australian_slang: "mozzie" (row of 1346)
+  new: blank_bird: "lady" (row of 1351)
+  new: blank_fly: "green" (row of 1372)
+  new: blank_box: "horse" (row of 1539)
+  new: trees: "eucalyptus" (row of 1641)
+  new: evergreen_trees: "eucalyptus" (row of 1641)
+  new: garden_features: "rock" (row of 1866)
+  new: blank_house: "public" (row of 2496)
+  new: 1920s_slang: "banger" (row of 2644)
+  new: things_you_ride: "streetcar" (row of 2652)
+  new: air_blank: "hostess" (row of 2723)
+  new: hand_blank: "luggage" (row of 2730)
+  new: water_park: "life jacket" (row of 2827)
+  new: hobbies_and_crafts: "model railroad" (row of 2908)
+  new: words_from_german: "rucksack" (row of 3030)
+  new: australian_slang: "esky" (row of 3037)
+  new: things_with_legs: "camp bed" (row of 3049)
+  new: things_that_fold: "cot" (row of 3049)
+  new: beds: "cot" (row of 3049)
+  new: british_english_words: "panda car" (row of 3091)
+  new: baby_talk: "binky" (row of 3556)
+  new: british_english_words: "cot" (row of 3561)
+  new: nicknames_for_workers: "firie" (row of 4085)
+  new: nicknames_for_workers: "sparky" (row of 4092)
+  new: nicknames_for_workers: "chippy" (row of 4096)
+  new: blank_man: "post" (row of 4120)
+  new: blank_man: "dust" (row of 4125)
+  new: home_safety: "neighborhood watch" (row of 4251)
+  new: head_blank: "teacher" (row of 4497)
+  new: british_slang: "telly" (row of 4574)
+  new: table_types: "dressing" (row of 4691)
+  new: blank_box: "ice" (row of 4716)
+  new: ice_blank: "box" (row of 4716)
+  new: british_english_words: "hob" (row of 4767)
+  new: cozy_things: "knitted jumper" (row of 4873)
+  new: australian_slang: "sunnies" (row of 4954)
+  new: blank_bag: "bum" (row of 4988)
+  new: double_letters: "football" (row of 5190)
+  new: blank_ball: "foot" (row of 5190)
+  new: foot_blank: "ball" (row of 5190)
+  new: water_blank: "pistol" (row of 5965)
+  new: cockney_rhyming_slang: "joanna" (row of 6000)
+  new: blank_board: "clap" (row of 6401)
+  new: british_english_words: "mobile" (row of 7325)
+  new: hidden_colors: "buffalo" (row of 9793)
+  new: palindromes: "minim" (row of 11146)
+  new: door_blank: "staff" (row of 13876)
+  new: blank_bag: "punch" (row of 15876)
+  new: soft_furnishings: "bed skirt" (row of 16039)
+  new: sausages: "blood" (row of 17749)
+  new: british_morning_foods: "blood sausage" (row of 17749)
+  new: black_blank: "pudding" (row of 17749)
+  new: ice_blank: "lolly" (row of 18303)
+  new: british_english_words: "jacket potato" (row of 19141)
+  new: blank_board: "chopping" (row of 19850)
+  new: australian_slang: "brekkie" (row of 20110)
+  new: british_english_words: "dustbin" (row of 23251)
+  new: things_that_drip: "clothesline" (row of 23257)
+  new: bedroom: "highboy" (row of 23472)
+  new: furniture: "highboy" (row of 23472)
+  new: fire_blank: "guard" (row of 23586)
+  new: blank_board: "skirting" (row of 23769)
+  new: blank_board: "plaster" (row of 24036)
+  new: silent_k_words: "knickers" (row of 24403)
+  new: things_with_legs: "tights" (row of 24422)
+  new: australian_slang: "togs" (row of 24487)
+  new: british_english_words: "wellies" (row of 24589)
+  new: words_named_after_places: "jersey" (row of 24850)
+  new: blank_paper: "kitchen" (row of 25549)
+  new: british_english_words: "postcode" (row of 26017)
+  new: post_office: "zip code" (row of 26017)
+  new: street_furniture: "restroom" (row of 27904)
+  new: anagrams_of_each_other: "post" (row of 28070)
+  new: british_english_words: "lorry" (row of 28334)
+  new: things_on_wheels: "truck" (row of 28334)
+  new: ough_words: "nought" (row of 29418)
+  new: blank_man: "bar" (row of 33000)
+  new: blank_bag: "diplomatic" (row of 33540)
+  new: blank_room: "strong" (row of 33919)
+  new: blank_man: "lollipop" (row of 34812)
+  new: blank_box: "letterbox" (row of 35174)
+  new: british_english_words: "motorway" (row of 38303)
+  new: blank_box: "phone" (row of 38363)
+  new: traffic_words: "tailback" (row of 38385)
+  new: traffic_words: "hard shoulder" (row of 38416)
+  new: british_english_words: "pavement" (row of 38436)
+  new: blank_board: "draught" (row of 38905)
+  new: fluffy_things: "cotton ball" (row of 39052)
+  new: words_from_german: "abseil" (row of 45054)
+  new: vehicle_sounds: "hooter" (row of 46600)
+  new: blank_box: "gear" (row of 46613)
+  new: traffic_words: "no entry" (row of 46721)
+  new: blank_shop: "corner" (row of 46773)
+  new: hand_blank: "brake" (row of 46812)
+  new: blank_bag: "sick" (row of 47339)
+  new: campsite: "camper van" (row of 48282)
+  new: blank_bag: "toilet" (row of 48843)
+  new: letters_in_alphabetical_order: "film" (row of 52276)
+  new: blank_shop: "shoe" (row of 57500)
+  new: animal_jobs: "veterinary nurse" (row of 57558)
+  new: words_for_bad: "shonky" (row of 62484)
+  new: blank_shop: "charity" (row of 62628)
+  new: blank_shop: "sweet" (row of 62630)
+  new: ways_to_cook_eggs: "deviled" (row of 63441)
+  new: british_english_words: "ring road" (row of 63888)
+  new: traffic_words: "ring road" (row of 63888)
+  new: reversible_words: "tap" (row of 64433)
+  new: puddings: "plum" (row of 64742)
+  new: blank_shop: "betting" (row of 65890)
+  new: blank_bag: "carrier" (row of 67140)
+  new: road_signs: "cattle grid" (row of 67142)
+  new: hidden_birds: "cistern" (row of 67144)
+  new: ends_with_tern: "cistern" (row of 67144)
+  new: cozy_things: "fairy lights" (row of 67155)
+  new: blank_shop: "farm" (row of 67156)
+  new: fire_blank: "brigade" (row of 67157)
+  new: blank_pot: "fuss" (row of 67160)
+  new: brand_names_used_as_words: "jiffy bag" (row of 67167)
+  new: key_blank: "worker" (row of 67168)
+  new: texture_words: "knobbly" (row of 67169)
+  new: silent_k_words: "knobbly" (row of 67169)
+  new: blank_shop: "pound" (row of 67177)
+  new: taxis_of_the_world: "rank" (row of 67180)
+  new: traffic_words: "roadworks" (row of 67183)
+  new: blank_works: "road" (row of 67183)
+  new: blank_box: "signal" (row of 67189)
+  new: star_blank: "sign" (row of 67193)
+  new: traffic_words: "stop-start" (row of 67195)
+  new: british_english_words: "tea towel" (row of 67199)
+  new: traffic_words: "overtake" (row of 67225)
+Links by theme + shown text + row, all rows: gone 219, new 274, rating changed 27
+Clash (family export): words with an id 13143 -> 13094; ids 4596 -> 4578; sizes before 2:2829 3:879 4:368 5:209 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1; after 2:2817 3:876 4:368 5:204 6:109 7:77 8:69 9:20 10:16 11:11 12:10 14:1
+  groups over 8 after: 58
+new issues: none
+
+Checks: apply, library v413; rerun 0; npm run gate PASS 10/10 (23.8 s).
+
+=== Notice to _WS_ for v413 (send when Simon says) ===
+Library v413 is in the export (data/export/wordlist-game-family.json). It covers v412 and v413. No pin until Simon asks.
+v412: one display alias per dialect. 177 aliases under 79 roots were settled: 79 kept, 87 became synonym aliases (no longer display variants), and 8 were retagged. Wrong tags were fixed (green onion, pill bug, gas and garbage are now US). off-ramp is now a root. The alias flags match their roots (9 sensitive, 9 tm). Also, door staff and betting shop now carry their root's clash id.
+v413 (your answers 2 and 4):
+- No alias row holds a link of its own any more. Of the 100 aliases that had one, 88 links now go through the root with a shown text. In locked themes the shown text is exact, e.g. ladybird -> ladybug shown "lady" in ___bird. 15 aliases became roots (slang and clippings such as telly, brekkie, sunnies, mozzie, firie, with kin to their words). 4 links moved and 2 were dropped.
+- 44 regional roots with a same-sense equivalent became aliases of it, e.g. newsagent -> newsstand, lorry -> truck, postcode -> zip code, Whitsun -> Pentecost, wholemeal -> whole wheat, camp bed -> cot, black pudding -> blood sausage. 52 duplicate answers drop where both were linked. contract-root-region goes from 1,802 to 1,785; the rest stay regional roots, for your +1/+2 band.
+Export: rows 61,036 -> 61,048; links 109,197 -> 109,252; theme indexes unchanged; the first changed row is 124; link positions shift from row 137. Please measure against v411 under g24.
+Next: the export stops writing alias links (your slim already drops them), and v414 brings the wordplay rule strings (no-vowels, roman, reversible, curated on 11), deletes the alphabetical theme and makes the data fixes.
