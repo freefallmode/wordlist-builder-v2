@@ -56,3 +56,21 @@ Recommended option A, cost 1-2 h: raise the band by +1 for a one-dialect root wi
 **3. Text lookup.** Two live uses keep only the first root: everyday split halves and the shared-theme-word test. Accepting any root costs about 1 h. 351 texts would newly qualify as split halves. After that change, the 186 same-text flags stop mattering for splits.
 
 **4. Alias links.** Confirmed never read: by design an alias is a variant, not a word, and one level serves both dialects. The variety gain would be tiny: 8,343 of 8,437 alias links duplicate the root's own link. The other ~94 are mostly alias-as-answer cases. Using alias links would cost 1-2 days, with risks. Its recommendation: express those ~94 as root links with a `shown` text, then stop exporting alias links. That saves bytes and changes no levels.
+
+## Simon's decisions and the agreed rule strings (2026-11-20)
+
+Decisions:
+- No members rule; the 9 untestable themes stay wordplay with rule `curated`, which plays from links with no property test.
+- The alphabetical-order theme is deleted.
+- Game g24 builds the 5 rule tests, the regional band raise (option A) and the any-root text lookup.
+- Alias links are no longer exported.
+
+The game confirmed the rule strings:
+- `no-vowels`: letters only, no a, e, i, o, u; y is not a vowel; spaces and hyphens are ignored.
+- `roman`: every letter is one of i, v, x, l, c, d, m.
+- `reversible`: the reversed text is a different library word; palindromes don't count.
+- `first-letter-changed:@id`: same length as a member of @id, with only the first letter different. @numbers is fine.
+- `plus-letter:@id`: a member of @id with one letter inserted anywhere. It needs a new, narrow reference theme of everyday one-word animal names of about 3-6 letters, because `animals` is too broad. The theme can be kept from playing on its own.
+- `curated`: links only. Any other unknown rule still never plays, so the contract check stays strict.
+
+@id members include the whole subtree. An unplayable reference theme works too.
