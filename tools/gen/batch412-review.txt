@@ -1,0 +1,138 @@
+Fixes: one display alias per dialect (contract-alias-dialect); alias flags as the root (alias-flags).
+1. dialect aliases: 177 aliases under 79 roots; actions keep 79, retag 8, synonym 87, spelling 2, root 1
+  retag: green onion 423 under scallion 422: regional [UK] -> regional [US]: green onion is the US word, not British
+  synonym: crawdad 501 under crayfish 499: regional [US] -> synonym [US]: a second, more colloquial US word
+  synonym: fizzy pop 57861 under soda 867: regional [UK] -> synonym [UK]: informal UK variant
+  synonym: peewit 1121 under lapwing 1120: regional [UK] -> synonym [UK]: lapwing is the standard UK word; peewit is a folk name
+  synonym: green plover 1122 under lapwing 1120: regional [UK] -> synonym [UK]: lapwing is the standard UK word; green plover is an old name
+  synonym: polliwog 1164 under tadpole 1163: regional [US] -> synonym [US]: tadpole is the standard US word; polliwog is dialect
+  synonym: pollywog 1165 under tadpole 1163: regional [US] -> synonym [US]: tadpole is the standard US word; a variant of polliwog
+  synonym: saithe 1262 under pollock 1258: regional [UK] -> synonym [UK]: the less common UK name
+  retag: pill bug 1417 under roly-poly 1418: regional [UK,IE] -> regional [US]: pill bug is American, not British
+  synonym: shield 63671 under stink bug 1424: regional [UK] -> synonym [UK]: a clipping of shield bug, not the display word
+  retag: pruners 1882 under pruning shears 1881: regional [UK] -> regional [US]: pruners is American usage, not British
+  synonym: satnav 2417 under GPS 2415: spelling [UK] -> synonym [UK]: the closed form of sat nav, not a spelling of GPS
+  synonym: picture house 2478 under movie theater 2477: regional [UK] -> synonym [UK]: dated UK word
+  spelling: movie theatre 64832 under movie theater 2477: spelling [UK] -> spelling [CA]: Canadian spelling; British players say cinema
+  synonym: registration plate 2583 under license plate 2581: regional [UK] -> synonym [UK]: formal UK term
+  synonym: number plate game 48295 under license plate 2581: spelling [UK] -> synonym [UK]: the UK name of the license plate game, not a spelling of license plate (it would replace license plate in cars)
+  synonym: tube 2649 under subway 2647: regional [UK] -> synonym [UK]: the London Underground only
+  synonym: metro 2650 under subway 2647: regional [UK,AU] -> synonym []: not British: metro is used in the US, Australia and Europe alike
+  synonym: coach 2861 under railcar 2859: regional [UK,IN] -> synonym [UK,IN]: second UK word
+  synonym: ticket inspector 2892 under conductor 2862: regional [UK] -> synonym [UK]: checks tickets only; a near match
+  synonym: brake van 47693 under caboose 2870: regional [UK] -> synonym [UK]: railway term for the same van
+  retag: grade crossing 2878 under railroad crossing 2879: regional [UK,AU,IE,NZ] -> regional [US]: grade crossing is American, not British
+  synonym: holiday home 3004 under vacation rental 3002: regional [UK,AU] -> synonym [UK,AU]: a second home one owns; a near match
+  synonym: lilo 3051 under air mattress 3050: regional [UK] -> synonym [UK]: a pool float (from the Li-Lo brand)
+  synonym: dumper 3107 under dump truck 3105: regional [UK] -> synonym [UK]: a site dumper; variant
+  synonym: tipper 49256 under dump truck 3105: regional [UK] -> synonym [UK]: short form of tipper truck
+  synonym: dumper truck 49257 under dump truck 3105: regional [UK] -> synonym [UK]: variant
+  synonym: dustcart 3115 under garbage truck 3113: regional [UK] -> synonym [UK]: older UK word
+  synonym: pram 3559 under stroller 3557: regional [UK,AU,NZ,IE] -> synonym [UK,AU,NZ,IE]: a pram is a lie-flat carriage; a near match
+  synonym: buggy 3560 under stroller 3557: regional [UK,IE] -> synonym [UK,IE]: informal UK word
+  synonym: suntan lotion 3747 under sunscreen 3745: regional [UK] -> synonym []: not British only: common in the US too
+  synonym: Kirby grip 3801 under bobby pin 3799: regional [UK] -> synonym [UK]: second UK word (from a brand)
+  synonym: roughage 3824 under fiber 3822: regional [UK] -> synonym []: another word, used in the US too
+  synonym: housemate 3933 under roommate 3931: regional [UK,AU,NZ] -> synonym [UK,AU,NZ]: someone sharing a house; a near match
+  synonym: slumber party 3936 under sleepover 3935: regional [US] -> synonym [US]: sleepover is the standard US word
+  synonym: pajama party 3937 under sleepover 3935: regional [US] -> synonym [US]: sleepover is the standard US word
+  synonym: chippy 4096 under carpenter 4094: regional [UK,AU] -> synonym [UK,AU]: slang nickname
+  synonym: postie 66207 under mail carrier 4120: regional [UK,AU,NZ] -> synonym [UK,AU,NZ]: informal nickname
+  synonym: dustman 4127 under garbage collector 4125: regional [UK] -> synonym [UK]: older UK word
+  synonym: refuse collector 4128 under garbage collector 4125: regional [UK] -> synonym [UK]: formal UK term
+  synonym: bin man 23988 under garbage collector 4125: regional [UK] -> synonym [UK]: open form of binman
+  synonym: call-up 4446 under conscription 4444: regional [UK] -> synonym [UK]: conscription is the standard UK word
+  synonym: national service 4447 under conscription 4444: regional [UK] -> synonym [UK]: the historical UK scheme; conscription is the standard word
+  synonym: head 4501 under principal 4497: regional [UK] -> synonym [UK]: short form
+  synonym: head teacher 66687 under principal 4497: regional [UK] -> synonym [UK]: open form of headteacher
+  synonym: jotter 4506 under notebook 4504: regional [UK] -> synonym [UK]: Scottish and informal
+  synonym: dinner hall 4531 under cafeteria 4528: regional [UK] -> synonym [UK]: a school dinner hall only
+  synonym: staffroom 4542 under teachers' lounge 4543: spelling [UK] -> synonym [UK]: closed form of staff room, not a spelling of teachers' lounge
+  synonym: bedside cabinet 4678 under nightstand 4676: regional [UK] -> synonym [UK]: variant
+  synonym: extractor fan 66205 under range hood 4773: regional [UK,AU] -> synonym [UK,AU]: the fan in it; a near match
+  synonym: jersey 4876 under sweater 4873: regional [UK] -> synonym [UK]: second UK word
+  synonym: woolly 4877 under sweater 4873: regional [UK] -> synonym [UK]: informal
+  synonym: knitted jumper 25746 under sweater 4873: regional [UK] -> synonym [UK]: longer form
+  synonym: trackies 4903 under sweatpants 4901: regional [AU,NZ,UK] -> synonym [AU,NZ,UK]: slang
+  synonym: pocketbook 4959 under handbag 4957: regional [US] -> synonym [US]: dated US word
+  synonym: waist pack 4990 under fanny pack 4988: regional [UK,AU] -> synonym []: not British: a retail term used in the US too
+  synonym: stag do 25126 under bachelor party 5181: regional [UK] -> synonym [UK]: informal variant
+  synonym: hen do 5186 under bachelorette party 5184: regional [UK] -> synonym [UK]: informal variant
+  synonym: hen party 25127 under bachelorette party 5184: regional [UK] -> synonym [UK]: variant
+  synonym: mobile 7327 under cell phone 7325: regional [UK,AU,IE,IN] -> synonym [UK,AU,IE,IN]: short form of mobile phone
+  synonym: the trots 14884 under diarrhea 14881: regional [UK] -> synonym []: slang, not British only
+  synonym: dosette box 15353 under pill organizer 15352: regional [UK] -> synonym [UK]: pharmacy term
+  synonym: jacket 63528 under baked potato 19141: regional [UK] -> synonym [UK]: short form
+  synonym: oven gloves 24763 under oven mitt 19862: regional [UK] -> synonym [UK]: plural of oven glove
+  synonym: appetiser 64886 under appetizer 20079: spelling [UK] -> synonym [UK]: UK spelling, less usual than starter for the course
+  synonym: dustbin 25798 under trash can 23251: regional [UK] -> synonym [UK]: older UK word
+  synonym: rubbish bin 39709 under trash can 23251: regional [UK] -> synonym [UK]: longer form
+  synonym: log burner 23599 under wood stove 23583: regional [UK] -> synonym [UK]: variant
+  retag: garbage 23973 under trash 23972: regional [UK] -> regional [US]: garbage is American, not British
+  synonym: tip 24001 under recycling center 23999: regional [UK] -> synonym [UK]: informal: the dump
+  synonym: Wellington boots 24590 under rubber boots 24589: regional [UK] -> synonym [UK]: full form
+  synonym: Wellingtons 65834 under rubber boots 24589: regional [UK] -> synonym [UK]: variant
+  synonym: popper 24983 under snap 24982: regional [UK] -> synonym [UK]: informal
+  synonym: kitchen paper 66610 under paper towel 25549: regional [UK] -> synonym [UK]: variant
+  synonym: speech marks 26103 under quotation marks 26101: regional [UK] -> synonym [UK]: school term
+  synonym: mould allergy 14935 under mold 30330: spelling [UK] -> synonym [UK]: an allergy, not a spelling of mold
+  retag: weed eater 30723 under weed whacker 30722: regional [UK] -> regional [US]: weed eater is American (from a US brand), not British
+  synonym: cover teacher 34805 under substitute teacher 34803: regional [UK] -> synonym [UK]: a near match
+  spelling: guidance counsellor 64910 under guidance counselor 34809: spelling [UK] -> spelling [IE,CA]: Irish and Canadian usage; British players say school counsellor
+  synonym: lollipop man 66367 under crossing guard 34812: regional [UK] -> synonym [UK]: the male form
+  synonym: post box 40084 under mailbox 38221: regional [UK] -> synonym [UK]: open form of postbox
+  synonym: pillar box 61356 under mailbox 38221: regional [UK] -> synonym [UK]: the old pillar type
+  root: off-ramp 38433 (was regional [UK] under on-ramp 38432): the opposite thing (an exit ramp), not a UK word for on-ramp; linked parts_of_a_road 3, giving_directions 5
+  synonym: city centre 38449 under downtown 38450: regional [UK] -> synonym [UK]: a city's; variant
+  synonym: water vapour 31998 under vapor 40475: spelling [UK] -> synonym [UK]: a longer term, not a spelling of vapor
+  synonym: gala 43301 under swim meet 43300: regional [UK] -> synonym [UK]: short form
+  synonym: L-plater 35606 under student driver 46671: regional [UK,AU] -> synonym [UK,AU]: informal
+  retag: blinker 46675 under turn signal 46674: regional [UK] -> regional [US]: blinker is American, not British
+  synonym: lay-by 46738 under rest area 46736: regional [UK] -> synonym [UK]: a roadside pull-in; a near match
+  synonym: snow chains 46859 under tire chains 46858: regional [UK] -> synonym []: not British only: used in the US too
+  synonym: trunk organiser 64948 under trunk organizer 46864: spelling [UK] -> synonym [UK]: mixed form
+  synonym: puncture 47992 under flat tire 47991: regional [UK] -> synonym [UK]: the hole; a near match
+  retag: gas 46761 under gasoline 50000: regional [UK] -> regional [US]: gas is American, not British
+  synonym: colour powder 55676 under colored powder 55675: spelling [UK] -> synonym [UK]: variant
+  synonym: optical fibre 57825 under fiber optic cable 57824: regional [UK] -> synonym [UK]: the fibre itself; a near match
+  synonym: cuddly toy 5973 under plush 64800: regional [UK] -> synonym [UK]: variant
+  synonym: rank 63911 under taxi stand 67180: regional [UK] -> synonym [UK]: short form
+  synonym: terraced 64222 under row house 67200: regional [UK] -> synonym [UK]: the adjective alone
+   roots still with two display aliases of one dialect, or an alias tagged UK and US: none
+2. alias flags (19):
+  Suleymaniye Mosque 20643 (spelling of Süleymaniye Mosque 57375): sensitive on, as the root
+  hymns 29086 (form of hymn 4308): sensitive on, as the root
+  quinceanera 32559 (spelling of quinceañera 5188): sensitive on, as the root
+  pakeha 35438 (spelling of pākehā 27089): sensitive on, as the root
+  Slip n Slide 58941 under slip and slide 58940: spelling -> synonym (the Wham-O brand name of the generic root, not its spelling; tm kept)
+  Dia de los Muertos 67522 (spelling of Día de los Muertos 5146): sensitive on, as the root
+  Pokemon 67531 (spelling of Pokémon 5787): tm on, as the root
+  Pokemon 67534 (spelling of Pokémon 13105): tm on, as the root
+  insallah 67606 (spelling of inşallah 26985): sensitive on, as the root
+  masallah 67607 (spelling of maşallah 26986): sensitive on, as the root
+  Lech Walesa 67645 (spelling of Lech Wałęsa 42205): sensitive on, as the root
+  Pokemon 67654 (spelling of Pokémon 45434): tm on, as the root
+  Pokemon cards 67655 (spelling of Pokémon cards 45884): tm on, as the root
+  Guarana Antarctica 67711 (spelling of Guaraná Antarctica 53716): tm on, as the root
+  Kahlua 67722 (spelling of Kahlúa 53873): tm on, as the root
+  Jagermeister 67723 (spelling of Jägermeister 53877): tm on, as the root
+  Goldschlager 67728 (spelling of Goldschläger 53897): tm on, as the root
+  Hofbrau 67765 (spelling of Hofbräu 55767): tm on, as the root
+  Ortakoy Mosque 67805 (spelling of Ortaköy Mosque 57382): sensitive on, as the root
+library changes 295; status set to rev 178; entries touched 196
+Checks: changed kinds: info:alias-kind-suspect 58 -> 52, warn:alias-flags 19 -> 0
+Checks after (errors and warnings): alias-flags 0, clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 248, theme-name 3
+Export contract (family export, zipf): contract-alias-dialect 71 -> 0; contract-alias-dialect after: 0
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 60
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3235 -> 3235; gone none; new none; theme indexes shift from none
+Entries 61036 -> 61036; first row whose entry changed: none; rows that moved: 0; added none; removed none
+First row with any change (entry, text, flags, root, link count or familiarity): 495 (crawdad 501)
+Row text changes: none; flags changed on 102 rows; alias/root changed: off-ramp 38433
+Links 109197 -> 109197; rows whose link count changed: 0 (none)
+Link-index shifts: none
+Links by theme + shown text + row: gone 0, new 0, rating changed 0
+Clash (family export): words with an id 13143 -> 13143; ids 4596 -> 4596; sizes before 2:2829 3:879 4:368 5:209 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1; after 2:2829 3:879 4:368 5:209 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1
+  groups over 8 after: 59
+new issues: none

@@ -1,8 +1,8 @@
 {
-  "note": "Most warnings of each kind the library may have; tools/gate.mjs fails when a count is higher, and also when a warning or error is new by identity (kind + theme/entry) against the base library. A kind not listed counts as 0. warn: the Checks (js/validate.js, as the batch scripts run them, without the frequency list). contract: the export contract (tools/export-contract.mjs, GAME-CONTRACT.md) on the family export. accept: issue keys (tools/checks-core.mjs issueKey) Simon approved to appear new. Written from library v411. Raising a count or adding a key needs Simon's approval and an explicit edit of this file, committed with the change (the gate prints it as \"needs Simon's approval\"); lower a count when a batch fixes warnings.",
-  "library": 411,
+  "note": "Most warnings of each kind the library may have; tools/gate.mjs fails when a count is higher, and also when a warning or error is new by identity (kind + theme/entry) against the base library. A kind not listed counts as 0. warn: the Checks (js/validate.js, as the batch scripts run them, without the frequency list). contract: the export contract (tools/export-contract.mjs, GAME-CONTRACT.md) on the family export. accept: issue keys (tools/checks-core.mjs issueKey) Simon approved to appear new. Written from library v411; alias-flags and contract-alias-dialect lowered to 0 for v412. Raising a count or adding a key needs Simon's approval and an explicit edit of this file, committed with the change (the gate prints it as \"needs Simon's approval\"); lower a count when a batch fixes warnings.",
+  "library": 412,
   "warn": {
-    "alias-flags": 19,
+    "alias-flags": 0,
     "clash-big": 1,
     "complete-extra": 0,
     "complete-missing": 0,
@@ -12,7 +12,7 @@
     "theme-name-long": 0
   },
   "contract": {
-    "contract-alias-dialect": 71,
+    "contract-alias-dialect": 0,
     "contract-dup-root": 186,
     "contract-root-region": 1802,
     "contract-rule-unknown": 15,
