@@ -157,7 +157,7 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
 - Spelling aliases are tagged US or UK for a US/UK difference and untagged for a plain (accent) form. A regional alias always carries its region codes. [`alias-region` (info)]
 - One display alias per dialect: a root has at most one UK-tagged and one US-tagged spelling or regional alias (the dialect's standard everyday word); other true variants are `synonym` aliases, keeping a region when specific to it. None of a dialect when the root is that dialect's word. No alias tagged both UK and US. [`contract-alias-dialect`]
 - A spelling or form alias has the root's adult, vulgar, sensitive and tm flags. [`alias-flags`]
-- Every alias has its own honest familiarity for a general UK/US adult (a rarer alias a higher number). [`unrated` (error)]
+- Every alias has its own honest familiarity for a general UK/US adult (a rarer alias a higher number). A `spelling` alias tagged UK or US has its root's familiarity (the game shows it and raises the band by it); an untagged spelling the root's by default, higher only when that spelling is clearly rarer; a spelling is never easier than its root (Simon, 2026-11-20). [`unrated` (error), `spelling-fam`]
 - Link the root, never the alias. Where a theme needs the alias's text (a locked theme, a regional answer), link the root and `show` the alias's text. [`alias-links` (error), `contract-alias-links` (error)]
 - One alias family (a root and its aliases) has at most one member in a theme and one in a level. [`family-twice`]
 - A regional root with a same-sense equivalent becomes an alias of it in place (id kept): links the root lacks move to it (with `show` where the theme needs the regional word), group places and kin pass to the root. [`contract-root-region`]
@@ -209,5 +209,5 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
 - (Settled 2026-11-20, v419: the drink themes are sensitive, not adult.)
 - (Settled 2026-11-20, Simon: adult stays as it is, covering drugs, sexual content and violence, including war, weapons, gambling and stag nights; alcohol is sensitive only.)
 - I30 leftovers: places of worship and religious festivals (easy words sensitive) are for Simon; no gap check exists.
-- Spelling alias familiarity: DESIGN-entries.md 3.1 says a spelling alias takes the root's ratings; the prompt and the briefs give it its own (colour 2 under color 1).
+- (Settled 2026-11-20, Simon: a UK/US spelling alias has its root's familiarity; an untagged variant the root's by default, higher only when clearly rarer; never easier than its root. Check `spelling-fam`; v420.)
 - (Settled 2026-11-20, re-checked on dictionary pages: liebfraumilch, gavi and côtes du rhône stay lowercase (v392, Simon; gavi and côtes du rhône marked recheck); hoover [verb] is already its own lowercase root (v389); Doric, Ionic, Corinthian, Tuscan stay capital, Composite lowercase (v376). Evidence: tools/gen/words-evidence-2026-11-20.txt.)

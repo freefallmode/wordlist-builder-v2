@@ -149,6 +149,10 @@ export function validate(P) {
         if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling, form, regional, abbreviation or translation).`, loc);
         if (e.aliasKind === 'form' && (e.nameOkIn || []).length && text.length > r.text.length && text.toLowerCase().includes(r.text.toLowerCase())) add('info', 'alias-fullname', `"${label(e)}" is kept as a form of "${label(r)}" but is a longer name: make it an entry of its own and give the theme a shown text (show).`, loc);
         if (e.aliasKind === 'spelling' && e.region.includes('US') && !r.region.includes('US') && !(P.entries.some(x => x.aliasOf === r.id && x.aliasKind === 'spelling' && x.region.includes('UK')))) add('warn', 'alias-us-root', `"${label(r)}" is the root but its US-tagged spelling "${label(e)}" is the alias: make the US spelling the root and tag the other UK (or drop the US tag if both are standard).`, loc);
+        if (e.aliasKind === 'spelling' && e.fam && r.fam) {   // Simon 2026-11-20: a UK/US display spelling has its root's familiarity; no spelling is easier than its root
+          if ((e.region.includes('UK') || e.region.includes('US')) && e.fam !== r.fam) add('warn', 'spelling-fam', `"${label(e)}" is a ${e.region.filter(x => x === 'UK' || x === 'US').join('/')} spelling of "${label(r)}" with familiarity ${e.fam}, root ${r.fam}: a dialect spelling has its root's familiarity.`, loc);
+          else if (e.fam < r.fam) add('warn', 'spelling-fam', `"${label(e)}" is a spelling of "${label(r)}" rated easier (${e.fam}) than its root (${r.fam}): raise the alias, lower the root, or make the better-known form the root.`, loc);
+        }
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
         if (e.aliasKind === 'spelling' && e.enabled) { const why = spellingSuspect(e, r); if (why) add('info', 'alias-kind-suspect', `"${label(e)}" is a spelling alias of "${label(r)}" but ${why}: the same word? Otherwise make it regional, a synonym or its own entry.`, loc); }
       }

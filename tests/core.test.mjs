@@ -1007,6 +1007,17 @@ test('severities: a dangling group or kin id is an error; complete-missing and a
   assert.deepEqual(one('thin').filter((s, i) => v.filter(x => x.kind === 'thin')[i].themeId === 'set'), ['warn']);
 });
 
+test('spelling-fam: a UK/US spelling has its root familiarity; no spelling is easier than its root', () => {
+  const P = contractProject(), apple = P.entries.find(e => e.text === 'apple');
+  apple.fam = 2;
+  addEntry(P, 'appel', { fam: 3, aliasOf: apple.id, aliasKind: 'spelling', region: ['UK'] });   // UK spelling rated harder: warn
+  addEntry(P, 'aple', { fam: 4, aliasOf: apple.id, aliasKind: 'spelling' });                    // untagged and rarer: fine
+  addEntry(P, 'appl', { fam: 1, aliasOf: apple.id, aliasKind: 'spelling' });                    // easier than the root: warn
+  addEntry(P, 'appul', { fam: 2, aliasOf: apple.id, aliasKind: 'spelling', region: ['US'] });  // same as root: fine
+  reindex(P);
+  assert.deepEqual(kinds(P, 'spelling-fam').map(i => [i.sev, P.ix.entry.get(i.entryId).text]).sort(), [['warn', 'appel'], ['warn', 'appl']]);
+});
+
 test('new checks: alias-flags, nameOk-stale, alias-kind-suspect', () => {
   const P = contractProject(), apple = P.entries.find(e => e.text === 'apple');
   apple.tm = true;
