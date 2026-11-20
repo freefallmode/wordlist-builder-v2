@@ -135,6 +135,6 @@ export async function generateWords(P, t, { n = 20, spread = 'even', extra = '',
 // ---------- theme difficulty ----------
 
 
-// Identifiability is a second, separate judgement (tools/gen/BRIEF-ident.md): how easily a player works out the theme from four of its members, whatever the difficulty of those words. Rate it for every theme a generation creates (`ident` in a THEMES block, or `i` in rateThemes).
+// Identifiability is a second, separate judgement (tools/gen/BRIEF-ident.md): how easily a player works out the theme from four of its members, whatever the difficulty of those words. Rate it for every theme a generation creates (`ident` in a THEMES block).
 export const IDENT_SCALE = 'Identifiability, 1 to 5: how easily a player works out the theme from four of its members, assuming the words shown are easy ones. 1 = obvious (colors, farm animals); 2 = clear and specific (musical instruments, chess pieces); 3 = needs a moment (a loose property such as things that are round, a compound word theme); 4 = hard: broad or a trick (things made of metal, hidden words, starts-with and rhyme themes); 5 = obscure (unusual letter patterns, rules a player would not think to test). Judge the theme alone; popularity and appeal are separate.';
 

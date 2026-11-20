@@ -61,7 +61,7 @@ The short form of the content rules. Detail: DESIGN-entries.md (3.1-3.7, 4, "Rul
 ## Doc conflicts found
 
 - `clash-big`: settled 2026-11-20: warn above 12, info `clash-large` for 9-12 (DESIGN.md 6, DESIGN-entries.md 3.7 and the code agree).
-- Spelling alias regions: DESIGN-entries.md 3.1 says US or UK only; 3.4 says every tag is kept; DESIGN.md 6 says a spelling alias needs a region only for a US/UK difference. 44 aliases carry other codes. Brief: US/UK spellings tagged, plain (accent) aliases untagged, as batch396 made them; Simon to settle the rest.
+- Spelling alias regions: settled in the docs 2026-11-20: DESIGN-entries.md 3.1 and 3.4 now say US/UK for a US/UK difference, untagged for a plain form; the 44 aliases with other codes stay for now, until Simon settles them (the only open point).
 - Regional fam: settled 2026-11-20: familiarity is always for a general UK/US adult ("Rules in force"); DESIGN-entries.md 5's regional audience no longer applies.
-- Theme-name rule (DESIGN-entries.md, v406) cites "the theme-generation prompt"; the app has none: the rule sits in the word prompt `GAME`. DESIGN.md 9 still names `rateThemes`, which js/ai.js no longer has.
-- DESIGN.md 12 describes batches through `tools/apply-words.mjs`; CLAUDE.md's batchNNN workflow is the current one.
+- Theme-name rule: fixed 2026-11-20: DESIGN-entries.md names the word prompt `GAME`; the stale `rateThemes` mention in js/ai.js is gone.
+- Batch tool: fixed 2026-11-20: DESIGN.md 12 says the batchNNN workflow is current and `tools/apply-words.mjs` is the generation-era tool.

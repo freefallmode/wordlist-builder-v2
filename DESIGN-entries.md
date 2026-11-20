@@ -38,7 +38,7 @@ An entry is still one word in one sense (text plus meaning label). A root is the
 
 A `synonym` alias is a **strict** synonym only: a word that is always the same answer as its root and can always substitute for it (same answer test, 3.3); the game may show whichever of the two suits the level difficulty. Near matches (`sofa`/`couch`) are separate entries with a synonym group. A regional, synonym, abbreviation or translation alias **may have theme links of its own** (decided 2026-11-04, see 3.5); a spelling or form alias never does. An alias with no link of its own appears in every theme its root is in. `swede` and `rutabaga` become two separate entries (or a `regional` pair, since `swede` is the UK word).
 
-A regional variant carries `region` tags (UK, AU...). Spelling aliases carry US or UK only.
+A regional variant carries `region` tags (UK, AU...). Spelling aliases are tagged US or UK for a US/UK spelling difference and carry no tag for a plain (accent) form or when both spellings are standard in the US; 44 spelling aliases still carry other region codes, kept for now (Simon, 2026-11-20) until he settles them.
 
 ### 3.2 Synonym groups (theme-local)
 
@@ -76,7 +76,7 @@ A root is a **meaning** (`rain`), and its `form` aliases are its grammatical for
 - The regional alias carries its tags. `region` tags stay fully detailed in the data (UK, AU, NZ, IE, IN, CA, ZA and others). **No tag is merged or removed.**
 - **In the game**, the player's region setting picks the member to show: the regional alias if the player's region is in its tags, otherwise the root. Only one is ever shown, so no clash rule is needed. Bucketing (for example US / UK / other, with AU, NZ, IE, IN and ZA following UK unless a word says otherwise) happens in the game, not in the data.
 - **In the web app**, a setting "default dialect" (US or UK) chooses which member the app shows in lists and uses as the export fallback. It does **not** move data: with default UK the app shows `flat` for the `apartment` set. Flipping roots in the data is never needed.
-- Spelling aliases: US and UK are enough.
+- Spelling aliases: see 3.1 (US or UK for a US/UK difference, untagged for a plain form; the "no tag is merged or removed" rule above is about regional aliases).
 - **Spelling pairs (library v338-v339).** The root is the US spelling and the British one is a spelling alias tagged UK. When both spellings are standard in the US (doughnut/donut, whisky/whiskey) the usual one stays root and the other has no tag. Pairs that are not really spellings (hi-fi/music center, tadpole/pollywog) are regional aliases. The validator warns (`alias-us-root`) when a spelling alias is tagged US under a non-US root. Spelling-sensitive themes keep their own word (plough in `ough_words`).
 - **Rules in the game Word Balloon Safari** (its own level generator; recorded here so the data stays compatible):
   1. British players see a UK-tagged spelling or regional alias, otherwise the root.
@@ -197,7 +197,7 @@ This section is a dated log: each entry records what was decided or done at the 
 **Rules in force**
 - A theme shows a word through `use` (a form) or `show` (a shorter text); the entry keeps its identity, ratings and links. Shortening is not aliasing. Two words that display the same in a theme are allowed in the library; the export keeps the more popular.
 - A theme name must describe its members by itself, outside the tree, and carries its own capitals only for proper nouns and acronyms. The theme-name check uses the shown text.
-- A theme name follows the entry case rule (capital only for proper names and their adjectives) and the root entry's spelling, diacritics included. Keep it as short as it can be without losing its meaning: soft limit 24 characters (two lines in the game's narrowest column), hard limit 30 (check `theme-name-long`). Clear and specific beats short. (v406; the same rule is in the theme-generation prompt, js/ai.js.)
+- A theme name follows the entry case rule (capital only for proper names and their adjectives) and the root entry's spelling, diacritics included. Keep it as short as it can be without losing its meaning: soft limit 24 characters (two lines in the game's narrowest column), hard limit 30 (check `theme-name-long`). Clear and specific beats short. (v406; the same rule is in the word-generation prompt `GAME`, js/ai.js; the app has no separate theme-generation prompt.)
 - A member is the full term (3.6); containing a member's word does not make an entry a member (overlap rule). Bare short members are a `show` on the full term.
 - `synonym` is an alias kind for a strict synonym only (the same answer as its root); near matches are separate entries in a theme synonym group (3.1, 3.2). Aliases of the kinds regional, synonym, abbreviation and translation may hold links of their own (3.5).
 - Roots are the US or neutral word and every region tag is kept. A theme's `region` and a word's `region` mean who knows it; ratings (`fam`, `typ`, `pop`, `ident`) are always for a general US/UK adult.
