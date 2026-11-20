@@ -74,3 +74,5 @@ The game confirmed the rule strings:
 - `curated`: links only. Any other unknown rule still never plays, so the contract check stays strict.
 
 @id members include the whole subtree. An unplayable reference theme works too.
+
+**Change (Simon, 2026-11-20):** "numbers, first letter changed" and "animals plus a letter" are exempt from property rules too: both are `curated`, with no reference theme. Tested: no-vowels, roman, reversible (3); curated: 11.
