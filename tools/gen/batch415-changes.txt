@@ -1,0 +1,88 @@
+Issue I27: theme memberships (kitchen brigade, greenhouse gases, Earth's layers, renewable energy, courtroom words, whales and dolphins, nicknames for workers, river features, sidewinder, the five oceans, Platonic solids, Queen members, socks and hosiery, places of worship, pufferfish).
+1. kitchen brigade
+  unlinked: pizzaiolo 20076 from kitchen_brigade: a pizza maker, not a brigade station (stays in food jobs)
+  unlinked: sushi chef 20054 from kitchen_brigade: a cuisine specialist, not a brigade station (stays in food jobs)
+  kept: baker 20056, butcher 20057 [kitchen]: the classic brigade de cuisine has a boulanger and a boucher
+2. greenhouse gases: water vapor
+  new root: water vapor 68071 (familiarity 2, noun, common): water as a gas, the most abundant greenhouse gas
+  re-pointed: water vapour 31998 [UK] from synonym of vapor 40475 to spelling of water vapor 68071; its name allowance for water_cycle_words stays (the alias is shown to UK players there) and the root gets the same
+  linked: water vapor 68071 in greenhouse_gases (typicality 3): the most abundant greenhouse gas, seldom named first
+  linked: water vapor 68071 in water_cycle_words (typicality 3, name allowed): evaporation makes it, condensation turns it back (the alias carried a name allowance for this theme)
+3. Earth's layers
+  unlinked: liquid core 31914 from layers_of_the_earth: a description of the outer core (in the theme, grouped with it), not a layer name (now in no theme: not exported)
+  unlinked: solid core 31913 from layers_of_the_earth: a description of the inner core (in the theme, grouped with it), not a layer name (now in no theme: not exported)
+4. renewable energy
+  unlinked: dam 7380 from renewable_energy: not a source; a barrier, in engineering and huge things (hydropower and hydro stay)
+  unlinked: heat pump 23592 from renewable_energy: not a source; in heating and cooling and eco home
+  unlinked: battery storage 32247 from renewable_energy: storage, not a source of energy (now in no theme: not exported)
+5. courtroom words (no note)
+  unlinked: tort 4272 from courtroom_words: general (civil) law, not a courtroom word; stays in law and order
+  linked: estoppel 61126 in law_and_order (typicality 5): general law, moved from courtroom words
+  unlinked: estoppel 61126 from courtroom_words: a doctrine of general law, not a courtroom word; moved to law and order
+6. whales and dolphins: full names for the bare possessives
+  text: Bryde's 63012 -> "Bryde's whale", shown in full (name allowed in whales_and_dolphins, as white-beaked dolphin)
+  text: Commerson's 63013 -> "Commerson's dolphin", shown in full (name allowed in whales_and_dolphins, as white-beaked dolphin)
+  text: Cuvier's 63014 -> "Cuvier's beaked whale", shown in full (name allowed in whales_and_dolphins, as white-beaked dolphin)
+  text: Fraser's 63016 -> "Fraser's dolphin", shown in full (name allowed in whales_and_dolphins, as white-beaked dolphin)
+  text: Risso's 63020 -> "Risso's dolphin", shown in full (name allowed in whales_and_dolphins, as white-beaked dolphin)
+  Hector's dolphin 7891: shown "Hector's" -> shown in full (name allowed), as the five above
+  group in whales_and_dolphins: beaked whale 7876, Cuvier's beaked whale 63014: Cuvier's beaked whale is a beaked whale (a word and a more specific form of it: one per level)
+7. nicknames for workers
+  unlinked: trucker 4118 from nicknames_for_workers: the ordinary job name (stays in jobs, transport jobs)
+  unlinked: garbageman 4130 from nicknames_for_workers: the ordinary job name (stays in jobs, bins and recycling)
+8. river features: watercourse types to bodies of water
+  unlinked: stream 30152 from river_features: a kind of watercourse, not a feature of a river; stays in bodies of water
+  unlinked: brook 30873 from river_features: a kind of watercourse, not a feature of a river; stays in bodies of water
+  unlinked: creek 30874 from river_features: a kind of watercourse, not a feature of a river; stays in bodies of water
+  unlinked: bayou 28728 from river_features: a kind of watercourse, not a feature of a river; stays in bodies of water
+  linked: rivulet 30871 in bodies_of_water (typicality 5): a small stream, the fourth member of the stream group in river features
+  unlinked: rivulet 30871 from river_features: a kind of watercourse; moved to bodies of water
+  group in bodies_of_water: stream 30152, brook 30873, creek 30874, rivulet 30871: rivulet joins stream, brook, creek (as in river features)
+9. sidewinder: the snake and the slang sense
+  linked: sidewinder 1194 in desert (typicality 3): the snake; moved from 27592
+  unlinked: sidewinder 27592 from desert: the snake sense belongs to 1194
+  gloss: sidewinder 27592 [snake] -> [sneaky person]: its cowboy-slang sense ("you low-down sidewinder"); 1194 [animal] is the snake
+10. the five oceans: one root per ocean
+  linked: Southern Ocean 32178 in the_five_oceans (typicality 4, shown "Southern"): in place of Southern 65542 [major water], the same ocean
+  deleted: Southern 65542 [major water] (typicality 4 carried to Southern Ocean 32178): a second root for one ocean
+  linked: Pacific Ocean 36993 in the_five_oceans (typicality 1, shown "Pacific"): in place of Pacific 32040 [ocean], the same ocean
+  deleted: Pacific 32040 [ocean] (typicality 1 carried to Pacific Ocean 36993): a second root for one ocean
+  linked: Indian Ocean 32042 in the_five_oceans (typicality 1, shown "Indian"): in place of Indian 65531 [major water], the same ocean
+  deleted: Indian 65531 [major water] (typicality 1 carried to Indian Ocean 32042): a second root for one ocean
+11. Platonic solids
+  synonym alias: triangular pyramid 58209 of tetrahedron 38881 (familiarity 3, its own): the same solid by another name (was grouped with it in Platonic solids and 3D shapes)
+12. Queen members
+  unlinked: Farrokh Bulsara 51974 from queen_members: Freddie Mercury's birth name, never the answer (a synonym alias would let the game show it) (now in no theme: not exported)
+13. socks and hosiery
+  unlinked: thigh-high boots 24661 from socks_and_hosiery: footwear, not hosiery; stays in boots
+14. places of worship
+  unlinked: mausoleum 2506 from places_of_worship: a tomb, not a place of worship; stays in tombs and burials
+15. animals covered in spikes: one pufferfish
+  linked: fugu 1233 in japanese_food (typicality 4): the pufferfish delicacy
+  unlinked: fugu 1233 from spotted_animals: fugu is the dish in English (the fish is pufferfish)
+  unlinked: fugu 1233 from spiny_animals: fugu is the dish in English (the fish is pufferfish)
+  unlinked: fugu 1233 from aquarium: fugu is the dish in English (the fish is pufferfish)
+  unlinked: fugu 1233 from fish: fugu is the dish in English (the fish is pufferfish)
+  unlinked: fugu 1233 from tropical_fish: fugu is the dish in English (the fish is pufferfish)
+  unlinked: fugu 1233 from prickly_things: fugu is the dish in English (the fish is pufferfish)
+  unlinked: fugu 1233 from animals_covered_in_spikes: fugu is the dish in English (the fish is pufferfish)
+  gloss: fugu 1233 [pufferfish] -> [dish] (fugu [smock] 55375 is the other)
+  synonym alias: blowfish 1232 of pufferfish 1231 (familiarity 3, its own): the same fish; its links go (pufferfish is in all its themes; ___fish loses "blow")
+  synonym alias: globefish 1234 of pufferfish 1231 (familiarity 5, its own): the same fish; its links go (pufferfish is in all its themes; ___fish loses "globe")
+Entries left in no theme (not exported): liquid core 31914, solid core 31913, battery storage 32247, Farrokh Bulsara 51974
+Surviving ocean roots in the five oceans: Southern Ocean 32178, Pacific Ocean 36993, Indian Ocean 32042 (batch416 rates Southern 65542: re-target it to 32178)
+library changes 54; entries changed 36; status set to rev 28
+Checks: changed kinds: info:nameOk-stale 70 -> 69, info:orphan 226 -> 230, info:overlap 4918 -> 4920, info:sense-twin 241 -> 239
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 246, theme-name 3
+Export contract (family export, zipf): contract-dup-root 185 -> 184; after: contract-dup-root 184, contract-root-region 1784, contract-thin 5, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3234 -> 3234; gone none; new none; theme indexes shift: none
+Entries 61044 -> 61037; first row whose entry changed: 22972 (nylons 24572, was thigh-highs 24571); rows that moved: 38064; added water vapor 68071 (row 61036); removed thigh-highs 24571 (row 22972), solid core 31913 (row 29500), liquid core 31914 (row 29501), Pacific 32040 (row 29609), battery storage 32247 (row 29783), Farrokh Bulsara 51974 (row 48131), Indian 65531 (row 59138), Southern 65542 (row 59139)
+root -> alias rows 3: blowfish 1232, globefish 1234, triangular pyramid 58209
+Links 100764 -> 100725; rows whose link count changed: 22
+Link-index shifts: from row 1159 (taipan 1195) on, link positions move
+Root links by theme + shown text + row: gone 54, new 15, rating changed 0
+  gone: spiny_animals: "blowfish" (1232), spotted_animals: "blowfish" (1232), aquarium: "blowfish" (1232), fish: "blowfish" (1232), tropical_fish: "blowfish" (1232), prickly_things: "blowfish" (1232), animals_covered_in_spikes: "blowfish" (1232), blank_fish: "blow" (1232), spotted_animals: "fugu" (1233), spiny_animals: "fugu" (1233), aquarium: "fugu" (1233), fish: "fugu" (1233), tropical_fish: "fugu" (1233), prickly_things: "fugu" (1233), animals_covered_in_spikes: "fugu" (1233), spotted_animals: "globefish" (1234), spiny_animals: "globefish" (1234), aquarium: "globefish" (1234), fish: "globefish" (1234), tropical_fish: "globefish" (1234), prickly_things: "globefish" (1234), animals_covered_in_spikes: "globefish" (1234), blank_fish: "globe" (1234), places_of_worship: "mausoleum" (2506), nicknames_for_workers: "trucker" (4118), nicknames_for_workers: "garbageman" (4130), courtroom_words: "tort" (4272), renewable_energy: "dam" (7380), whales_and_dolphins: "Hector's" (7891), kitchen_brigade: "sushi chef" (20054), kitchen_brigade: "pizzaiolo" (20076), renewable_energy: "heat pump" (23592), socks_and_hosiery: "thigh-high boots" (24661), desert: "sidewinder" (27592), river_features: "bayou" (28728), river_features: "stream" (30152), river_features: "rivulet" (30871), river_features: "brook" (30873), river_features: "creek" (30874), layers_of_the_earth: "solid core" (31913), layers_of_the_earth: "liquid core" (31914), the_five_oceans: "Pacific" (32040), renewable_energy: "battery storage" (32247), queen_members: "Farrokh Bulsara" (51974), platonic_solids: "triangular pyramid" (58209), 3d_shapes: "triangular pyramid" (58209), courtroom_words: "estoppel" (61126), whales_and_dolphins: "Bryde's" (63012), whales_and_dolphins: "Commerson's" (63013), whales_and_dolphins: "Cuvier's" (63014), whales_and_dolphins: "Fraser's" (63016), whales_and_dolphins: "Risso's" (63020), the_five_oceans: "Indian" (65531), the_five_oceans: "Southern" (65542)
+  new: desert: "sidewinder" (1194), japanese_food: "fugu" (1233), whales_and_dolphins: "Hector's dolphin" (7891), bodies_of_water: "rivulet" (30871), the_five_oceans: "Indian" (32042), the_five_oceans: "Southern" (32178), the_five_oceans: "Pacific" (36993), law_and_order: "estoppel" (61126), whales_and_dolphins: "Bryde's whale" (63012), whales_and_dolphins: "Commerson's dolphin" (63013), whales_and_dolphins: "Cuvier's beaked whale" (63014), whales_and_dolphins: "Fraser's dolphin" (63016), whales_and_dolphins: "Risso's dolphin" (63020), greenhouse_gases: "water vapor" (68071), water_cycle_words: "water vapor" (68071)
+  rating: none
+new issues: none
