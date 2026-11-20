@@ -11,8 +11,9 @@
 // Otherwise it checks out the target content into a temporary directory (so staged content that differs from the working tree is what is
 // checked, and nothing in the repository is written) and runs, in parallel:
 //   a. npm test passes.
-//   b. Checks (js/validate.js, no frequency list, as the batch scripts run them): 0 errors; each warning kind at most its count in
-//      tools/checks-baseline.json (a kind not listed there counts as 0). Info is reported, not gated.
+//   b. Checks (tools/checks-core.mjs, shared with npm run check: js/validate.js, no frequency list, as the batch scripts run them): 0 errors; each
+//      warning kind at most its count in tools/checks-baseline.json (a kind not listed there counts as 0). Info is reported, not gated. WARN when the
+//      counts are within the baseline but an error or warning is new by identity (kind + message + location) against the base library.
 //   c. A strict full export (tools/export-game.mjs --strict) to a temporary file exits 0.
 //   d. tools/gen/style-case.mjs and tools/gen/propword-exceptions.mjs, without --apply, report 0 changes.
 //   e. The committed data/export/wordlist-game-family.json equals a fresh export (parsed JSON, `generated` ignored).
@@ -28,22 +29,24 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const LIB = 'data/wordlist-en.project.json', EXPORT = 'data/export/wordlist-game-family.json', BASELINE = 'tools/checks-baseline.json';
 const CHECK_SCRIPTS = ['tools/gen/style-case.mjs', 'tools/gen/propword-exceptions.mjs'];
-const GATE_FILES = ['tools/gate.mjs', BASELINE, 'tools/export-game.mjs', ...CHECK_SCRIPTS];
+const GATE_FILES = ['tools/gate.mjs', 'tools/checks-core.mjs', BASELINE, 'tools/export-game.mjs', ...CHECK_SCRIPTS];
 const BATCH = /^tools\/gen\/batch\d+\.mjs$/;
 const STEP_TIMEOUT = 600000;
 const args = process.argv.slice(2);
 
 // ---------- internal: the Checks counts of a checked-out tree, as JSON (run as a child so it runs beside the other steps) ----------
 if (args[0] === '--checks-json') {
-  const R = args[1], imp = f => import(pathToFileURL(path.join(R, f)).href);
-  const { parseProject } = await imp('js/store.js'), { reindex } = await imp('js/model.js'), { validate } = await imp('js/validate.js');
-  const P = parseProject(fs.readFileSync(path.join(R, LIB), 'utf8')); reindex(P);
+  const R = args[1], baseLib = args[2], imp = f => import(pathToFileURL(path.join(R, f)).href);
+  const { loadAndCheck, newIssues, where } = await imp('tools/checks-core.mjs');
+  const cur = await loadAndCheck(path.join(R, LIB), R);
   const counts = {}, msgs = {};
-  for (const i of validate(P)) {
+  for (const i of cur.issues) {
     const k = i.sev + ':' + i.kind; counts[k] = (counts[k] || 0) + 1;
     if (i.sev !== 'info') { (msgs[k] ||= []); if (msgs[k].length < 5) msgs[k].push(i.msg); }
   }
-  process.stdout.write(JSON.stringify({ version: P.lib.version, counts, msgs }));
+  let fresh = null;
+  if (baseLib) { try { fresh = newIssues(cur.issues, (await loadAndCheck(baseLib, R)).issues).map(i => `${i.sev} ${i.kind}: ${i.msg}${where(i) ? ' (' + where(i) + ')' : ''}`); } catch { fresh = null; } }
+  process.stdout.write(JSON.stringify({ version: cur.version, counts, msgs, fresh }));
   process.exit(0);
 }
 
@@ -134,10 +137,13 @@ try {
     r.code === 0 ? (r.out.match(/ℹ pass \d+/)?.[0]?.replace('ℹ ', '') || '') : 'npm test failed:\n' + tail(r.out, 25)));
 
   // b. Checks against the baseline
-  const stepB = node(fileURLToPath(import.meta.url), '--checks-json', T).then(r => {
+  const baseBlobB = base === EMPTY_TREE ? null : tryGit(['rev-parse', '-q', '--verify', `${base}:${LIB}`])?.trim();
+  let baseLibFile = null;
+  if (baseBlobB) { baseLibFile = path.join(OUTS, 'base-lib.json'); fs.writeFileSync(baseLibFile, git(['cat-file', 'blob', baseBlobB], { encoding: 'buffer' })); }
+  const stepB = node(fileURLToPath(import.meta.url), '--checks-json', T, ...(baseLibFile ? [baseLibFile] : [])).then(r => {
     if (r.code !== 0) return result('b', 'Checks', 'FAIL', r.ms, 'the Checks did not run:\n' + tail(r.out));
     let bl; try { bl = JSON.parse(fs.readFileSync(path.join(T, BASELINE), 'utf8')).warn; } catch (e) { return result('b', 'Checks', 'FAIL', r.ms, `${BASELINE} missing or unreadable: ${e.message}`); }
-    const { counts, msgs } = JSON.parse(r.out), bad = [], below = [];
+    const { counts, msgs, fresh } = JSON.parse(r.out), bad = [], below = [];
     const errs = Object.entries(counts).filter(([k]) => k.startsWith('error:'));
     for (const [k, n] of errs) bad.push(`error ${k.slice(6)}: ${n}\n${(msgs[k] || []).map(m => '        ' + m).join('\n')}`);
     const kinds = new Set([...Object.keys(bl), ...Object.keys(counts).filter(k => k.startsWith('warn:')).map(k => k.slice(5))]);
@@ -151,7 +157,12 @@ try {
     let d = `errors ${errs.reduce((s, [, n]) => s + n, 0)}; warn (count/baseline): ${warnLine.join(', ')}\n      info (not gated): ${info || 'none'}`;
     if (below.length) d += `\n      below the baseline (lower it in ${BASELINE} to lock the gain): ${below.join(', ')}`;
     if (bad.length) d += `\n      over the limit:\n      - ${bad.join('\n      - ')}\n      Errors must be fixed. A warning count above the baseline must be fixed, or the baseline raised by an explicit, approved edit of ${BASELINE} committed with the change.`;
-    result('b', 'Checks (0 errors, warnings within tools/checks-baseline.json)', bad.length ? 'FAIL' : 'PASS', r.ms, d);
+    let status = bad.length ? 'FAIL' : 'PASS';
+    if (fresh?.length) {
+      d += '\n      ' + fresh.length + ' error/warning issue' + (fresh.length === 1 ? '' : 's') + ' new by identity against the base library (a fixed one can hide a new one; npm run check -- <file> --diff <base file>):\n      - ' + fresh.slice(0, 10).join('\n      - ') + (fresh.length > 10 ? '\n      .. and ' + (fresh.length - 10) + ' more' : '');
+      if (status === 'PASS') status = 'WARN';
+    }
+    result('b', 'Checks (0 errors, warnings within tools/checks-baseline.json)', status, r.ms, d);
   });
 
   // c. strict export, then e. the committed export equals a fresh one

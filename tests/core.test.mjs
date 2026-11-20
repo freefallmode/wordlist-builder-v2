@@ -805,3 +805,16 @@ test('complete themes: extras, aliases, group partners, alternatives, "and" in a
   assert.deepEqual(v.filter(i => i.kind === 'complete-missing').map(i => i.msg.match(/"(.*?)"/)[1]), ['Gone.']);
   assert.deepEqual(v.filter(i => i.kind === 'complete-no-note').map(i => i.themeId), ['n']);
 });
+
+test('checks-core: issues match by identity, counts by baseline', async () => {
+  const { newIssues, summarize, issueKey } = await import('../tools/checks-core.mjs');
+  const a = { sev: 'warn', kind: 'long', msg: 'old', entryId: 1 }, b = { sev: 'warn', kind: 'long', msg: 'new', entryId: 2 };
+  assert.notEqual(issueKey(a), issueKey({ ...a, entryId: 2 }));
+  // one fixed, one added: the count is equal but the swap is visible
+  assert.deepEqual(newIssues([b], [a]), [b]);
+  assert.deepEqual(newIssues([a, a], [a]), [a]);   // multiset
+  assert.deepEqual(newIssues([{ sev: 'info', kind: 'overlap', msg: 'x' }], []), []);
+  const s = summarize([a, b, { sev: 'error', kind: 'bad-type', msg: 'e' }], { long: 1, thin: 2 });
+  assert.equal(s.errors.length, 1);
+  assert.deepEqual(s.warn.map(w => [w.kind, w.n, w.max, w.status]), [['long', 2, 1, 'OVER'], ['thin', 0, 2, 'below']]);
+});

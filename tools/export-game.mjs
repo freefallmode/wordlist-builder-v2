@@ -1,5 +1,6 @@
-// Writes the game file (export format 4) from the working library: node tools/export-game.mjs [preset] [out] [--strict]
+// Writes the game file (export format 4) from the working library: node tools/export-game.mjs [preset] [out] [--strict] [--lib <file>]
 // Default: the "family" preset with Zipf, to data/export/wordlist-game-family.json in this repository (from any directory; an explicit out is relative to the current directory).
+// --lib <file>: export that library file instead of data/wordlist-en.project.json (e.g. a draft; the frequency list and break points are still this repository's).
 // --strict (in any position): exit 1 when the case lint finds issues, before anything is written.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -10,12 +11,14 @@ import { buildExport, PRESETS, exportName, lintLine, reportLists } from '../js/e
 import { parseFreq, setFreq } from '../js/freq.js';
 import { caseLint } from '../js/caselint.js';
 import { parseBreaks, setBreaks } from '../js/breaks.js';
-const args = process.argv.slice(2), flags = args.filter(a => a.startsWith('--')), pos = args.filter(a => !a.startsWith('--'));
+let args = process.argv.slice(2), libArg = null;
+{ const i = args.indexOf('--lib'); if (i >= 0) { libArg = args[i + 1]; if (!libArg || libArg.startsWith('--')) { console.error('--lib needs a file'); process.exit(2); } args = args.filter((_, j) => j !== i && j !== i + 1); } }
+const flags = args.filter(a => a.startsWith('--')), pos = args.filter(a => !a.startsWith('--'));
 const bad = flags.filter(a => a !== '--strict');
-if (bad.length) { console.error('Unknown option ' + bad.join(', ') + '. Options: --strict'); process.exit(2); }
+if (bad.length) { console.error('Unknown option ' + bad.join(', ') + '. Options: --strict, --lib <file>'); process.exit(2); }
 const preset = pos[0] || 'family', out = pos[1] || fileURLToPath(new URL('../data/export/' + exportName({}, pos[0] || 'family'), import.meta.url));
 if (!PRESETS[preset]) { console.error('No preset ' + preset + '. Presets: ' + Object.keys(PRESETS).join(', ')); process.exit(2); }
-const P = parseProject(fs.readFileSync(new URL('../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
+const P = parseProject(fs.readFileSync(libArg ? path.resolve(libArg) : new URL('../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
 setFreq(parseFreq(fs.readFileSync(new URL('../data/freq-en.txt', import.meta.url), 'utf8')));
 const brk = new URL('../data/breaks-en.txt', import.meta.url);
 if (fs.existsSync(brk)) setBreaks(parseBreaks(fs.readFileSync(brk, 'utf8')));

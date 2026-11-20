@@ -15,7 +15,7 @@ Library: `data/wordlist-en.project.json` (8 MB, one theme or entry per line). Ga
 ## Changing the library
 
 1. Simon approves every library change before it is applied.
-2. Changes go only through a script `tools/gen/batchNNN.mjs` (the next number; copy the shape of the latest one): dry run first, then `--apply`, then rerun to 0 changes.
+2. Changes go only through a script `tools/gen/batchNNN.mjs` (the next number; copy the shape of the latest one): dry run first, then `--apply`, then rerun to 0 changes. Check the `--out` draft with `npm run check -- <file> --diff data/wordlist-en.project.json` before `--apply`.
 3. Every entry the batch touches gets status `"rev"`. The version is bumped (`stampSave`, as `--apply` does).
 4. Regenerate the export: `node tools/export-game.mjs`.
 5. `npm run gate` must pass before the commit. The pre-commit hook runs it again (`--staged`) and CI runs it on main.
@@ -33,6 +33,7 @@ Raising a warning count in `tools/checks-baseline.json` is an explicit edit that
 
 ## Handy
 
+- `npm run check -- [file] [--diff <other>] [--kind <k>] [--export] [--json]`: the gate's Checks (errors, warnings against `tools/checks-baseline.json`) on a draft library, default the real one; exit 1 on an error or a kind over its baseline; `--diff` shows only issues new compared with another file (kind + message + location). Code shared with the gate: `tools/checks-core.mjs`.
 - `npm test`, `npm run gate`, `node tools/gate.mjs --base HEAD~1`.
 - One-time per clone: `git config core.hooksPath .githooks`.
 - Write scripts with the Write tool: shell heredocs and node one-liners mangle backslashes and quotes.
