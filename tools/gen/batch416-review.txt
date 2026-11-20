@@ -1,0 +1,12 @@
+Theme difficulty against usable words (I30, reported by the game under g24): word ratings fixed (B) and themes rated too easy raised (C).
+Not changed (A, Simon decides): places of worship and religious festivals lose their easy words because those entries are flagged sensitive.
+B. word ratings: 0
+C. theme ratings: 0
+Themes with a gap of 2+ bands: before 2, after 2
+  left: religious_festivals 2 (4th word band 4, gap 2); places_of_worship 1 (4th word band 4, gap 3)
+  changed: 
+library changes 0; entries changed 0; status set to rev 0
+Checks: changed kinds: none
+Export contract (family export, zipf): no change
+Export shape: themes 3234 -> 3234, entries 61037 -> 61037; theme order unchanged; entry texts unchanged; link counts unchanged (no index shifts)
+new issues: none

@@ -1,0 +1,54 @@
+Theme difficulty against usable words (I30, reported by the game under g24): word ratings fixed (B) and themes rated too easy raised (C).
+Not changed (A, Simon decides): places of worship and religious festivals lose their easy words because those entries are flagged sensitive.
+B. word ratings: 10
+  Arctic Ocean 36998: typicality in the_five_oceans 3 -> 1: one of the five oceans every child names (Pacific, Atlantic, Indian are 1)
+  Southern Ocean 32178: typicality in the_five_oceans 4 -> 2: a full member of the five (a complete set), only named later than the other four; 4 is for peripheral members
+  sea urchin 502: familiarity 4 -> 2 (all its themes): a well-known sea creature (rock pools, sushi); familiarity 4 is "few people know it"
+  sodium 3831: familiarity 3 -> 2 (all its themes): an everyday word (salt, food labels), as well known as potassium (2)
+  krypton 40345: typicality in noble_gases 3 -> 2: one of the first noble gases named after helium, neon and argon (xenon the same)
+  xenon 40348: typicality in noble_gases 3 -> 2: as krypton
+  gas 28023: familiarity 2 -> 1 (all its themes): gas [state of matter]: a word every child knows (liquid is 1)
+  solid 28626: familiarity 2 -> 1 (all its themes): solid [state of matter]: as gas
+  plasma 40461: familiarity 3 -> 2 (all its themes): plasma [physics]: the same word as plasma [screen] (2); the fourth state of matter is school science
+  pantyhose 24422: familiarity 3 -> 2 (all its themes): the everyday US word (its UK alias tights is 1)
+C. theme ratings: 21
+  dwarf_planets "dwarf planets": identifiability 2 -> 4 (difficulty 2 -> 4): beyond Pluto the members are Ceres, Eris, Haumea, Makemake: few adults could name four
+  layers_of_the_atmosphere "atmosphere layers": identifiability 2 -> 3 (difficulty 1.5 -> 2.5): troposphere, stratosphere, mesosphere, thermosphere: school science, not everyday
+  layers_of_the_atmosphere "atmosphere layers": popularity 2 -> 3 (difficulty 2.5 -> 3): a dry science list, not a popular theme
+  abba_members "ABBA members": identifiability 2 -> 3 (difficulty 2 -> 3): the band is famous, its four members (Agnetha, Bjorn, Benny, Frida) much less so
+  alkali_metals "alkali metals": identifiability 2 -> 3 (difficulty 2 -> 3): lithium, sodium, potassium are known; that they are the alkali metals, and cesium, rubidium, francium, are school chemistry
+  british_cheeses "British cheeses": identifiability 2 -> 3 (difficulty 2 -> 3): beyond cheddar and Stilton the members are UK-only names (Wensleydale, red Leicester, Caerphilly)
+  cat_breeds "cat breeds": identifiability 1 -> 2 (difficulty 1 -> 1.5): Siamese and Persian are obvious; most of the 48 members are breeder names (Burmese, Birman, Devon rex)
+  deep_sea_fish "deep sea fish": identifiability 2 -> 3 (difficulty 2 -> 3): anglerfish and blobfish aside, the members are specialist names (viperfish, oarfish, fangtooth)
+  famous_cricketers "famous cricketers": identifiability 2 -> 3 (difficulty 2 -> 3): cricket is little known in the US; the members are all familiarity 3-5
+  fundamental_forces "fundamental forces": identifiability 3 -> 4 (difficulty 3 -> 4): gravity aside (electromagnetism, strong and weak interaction) it is physics, a complete set of four
+  galilean_moons "Galilean moons": identifiability 2 -> 3 (difficulty 2 -> 3): Io, Europa, Ganymede, Callisto: astronomy, a complete set of four
+  greek_buildings "Greek buildings": identifiability 2 -> 3 (difficulty 2 -> 3): Acropolis and Parthenon aside, the members are named temples and sites (Knossos, Erechtheion)
+  indian_clothing "Indian clothing": identifiability 2 -> 3 (difficulty 2 -> 3): sari aside, the members are Hindi names (kurta, dhoti, dupatta, lehenga)
+  indian_sweets "Indian sweets": identifiability 2 -> 3 (difficulty 2 -> 3): every member is familiarity 4-5 (gulab jamun, jalebi, barfi)
+  japanese_clothing "Japanese clothing": identifiability 2 -> 3 (difficulty 2 -> 3): kimono aside, the members are Japanese names (yukata, obi, geta, tabi)
+  marx_brothers "Marx Brothers": identifiability 2 -> 3 (difficulty 2 -> 3): Groucho and Harpo aside (Chico, Zeppo, Gummo), old film trivia
+  nucleobases "nucleobases": identifiability 2 -> 3 (difficulty 2 -> 3): adenine, thymine, guanine, cytosine, uracil: biochemistry
+  platonic_solids "Platonic solids": identifiability 2 -> 3 (difficulty 2 -> 3): cube aside (tetrahedron, octahedron, dodecahedron, icosahedron), geometry terms
+  queen_members "Queen members": identifiability 2 -> 3 (difficulty 2 -> 3): Freddie Mercury and Brian May are famous; Roger Taylor and John Deacon much less
+  starts_with_sun "starts with sun": identifiability 3 -> 4 (difficulty 3 -> 4): only four members, two of them hard (sundries, sunder); the library has no easy word starting "sun" that is unrelated to the sun
+  vietnamese_food "Vietnamese food": identifiability 2 -> 3 (difficulty 2 -> 3): pho and banh mi aside, the members are Vietnamese dish names (bun cha, com tam)
+Themes with a gap of 2+ bands: before 27, after 2
+  left: religious_festivals 2 (4th word band 4, gap 2); places_of_worship 1 (4th word band 4, gap 3)
+  changed: british_cheeses 2/4/2 -> 3/4/1; indian_sweets 2/4/2 -> 3/4/1; vietnamese_food 2/4/2 -> 3/4/1; deep_sea_fish 2/4/2 -> 3/4/1; cat_breeds 1/3/2 -> 1.5/3/1.5; spiny_animals 3.5/3/-0.5 -> 3.5/2/-1.5; layers_of_the_atmosphere 1.5/4/2.5 -> 3/4/1; the_five_oceans 1/3/2 -> 1/1/0; greek_buildings 2/4/2 -> 3/4/1; japanese_clothing 2/4/2 -> 3/4/1; indian_clothing 2/4/2 -> 3/4/1; socks_and_hosiery 1/3/2 -> 1/2/1; famous_cricketers 2/4/2 -> 3/4/1; queen_members 2/4/2 -> 3/4/1; abba_members 2/4/2 -> 3/4/1; marx_brothers 2/4/2 -> 3/4/1; four_states_of_matter 1/3/2 -> 1/2/1; noble_gases 1/3/2 -> 1/2/1; alkali_metals 2/4/2 -> 3/4/1; fundamental_forces 3/5/2 -> 4/5/1; nucleobases 2/4/2 -> 3/4/1; galilean_moons 2/4/2 -> 3/4/1; dwarf_planets 2/5/3 -> 4/5/1; platonic_solids 2/4/2 -> 3/4/1; starts_with_sun 3/5/2 -> 4/5/1; animals_covered_in_spikes 2/4/2 -> 2/3/1
+library changes 31; entries changed 10; status set to rev 8
+Checks: changed kinds: info:rating-vs-zipf 1659 -> 1661
+Export contract (family export, zipf): no change
+Export shape: themes 3234 -> 3234, entries 61037 -> 61037; theme order unchanged; entry texts unchanged; link counts unchanged (no index shifts)
+new issues: none
+
+=== Notice to _WS_ for v412 to v416 (send when Simon says) ===
+Library v416 is in the export (data/export/wordlist-game-family.json). It covers v412 to v416 and an export change. No pin until Simon asks. The v412-v414 part is the notice at the end of tools/gen/batch414-changes.txt (one display alias per dialect; alias links through roots and 44 regional roots merged; alias rows carry no links; wordplay rule strings for g24, alphabetical-order theme deleted at theme row 2842, reversible words fixed). Since then:
+v415 (membership fixes, our I27):
+- Unlinked where they don't belong: pizzaiolo, sushi chef (kitchen brigade); liquid core, solid core (Earth's layers); dam, heat pump, battery storage (renewable energy); tort, estoppel (courtroom words); trucker, garbageman (nicknames for workers); stream, brook, creek, bayou (river features); Farrokh Bulsara (Queen members); thigh-high boots (socks and hosiery); mausoleum (places of worship).
+- water vapor is a new root in greenhouse gases (water vapour its UK spelling). Whales and dolphins show full names (Risso's dolphin, Bryde's whale, Cuvier's beaked whale ...). The sidewinder desert link moved to the snake.
+- Short-name duplicates merged: Southern, Pacific, Indian into Southern Ocean, Pacific Ocean, Indian Ocean (shown "Southern" etc. where they were). triangular pyramid is a synonym alias of tetrahedron; blowfish and globefish are synonym aliases of pufferfish (so ___fish loses blow and globe); fugu is now the dish, in Japanese food.
+- 4 entries now have no theme (liquid core, solid core, battery storage, Farrokh Bulsara). Theme indexes don't shift. Entry rows 61,044 -> 61,037, shifting from row 22,972; links 100,764 -> 100,725, link positions shift from row 1,159.
+v416 (your rating-gap report): themes rated 2+ bands below their 4th-easiest usable word go from 27 to 2. 10 wrong word ratings fixed (Arctic Ocean and Southern Ocean typicality in the five oceans, krypton, xenon, gas, solid, plasma, sea urchin, sodium, pantyhose); 21 theme rating rises (dwarf planets, fundamental forces, starts with sun to 4; atmosphere layers, ABBA members, British cheeses, deep sea fish, Indian sweets, Vietnamese food and 10 more to 3; cat breeds to 1.5). No index shifts. The 2 left, places of worship and religious festivals, lose their easy words because they are flagged sensitive (church, Christmas); Simon will decide on those.
+Silly-sounding words: its rating fits its words (2.5, 4th word band 3). It and silly rhyming pairs inherit the lang bit (8) from the group slang_and_sayings; is that why they never play under your plans? Please check.
+Export v411 -> v416: themes 3,116 -> 3,115; rows 61,036 -> 61,037; links 109,197 -> 100,725. Please measure against v411 under g24 and tell us whether silly rhyming pairs now appears.
