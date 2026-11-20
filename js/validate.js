@@ -152,7 +152,8 @@ export function validate(P) {
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
         if (e.aliasKind === 'spelling' && e.enabled) { const why = spellingSuspect(e, r); if (why) add('info', 'alias-kind-suspect', `"${label(e)}" is a spelling alias of "${label(r)}" but ${why}: the same word? Otherwise make it regional, a synonym or its own entry.`, loc); }
       }
-      if ((e.aliasKind === 'spelling' || e.aliasKind === 'form') && Object.keys(e.typ).length) add('warn', 'alias-link-kind', `"${label(e)}" is a ${e.aliasKind} alias with links of its own; only regional, synonym, abbreviation and translation aliases can be linked on their own.`, loc);
+      { const own = [['theme links', Object.keys(e.typ || {}).length], ['shown texts', Object.keys(e.show || {}).length], ['forms used', Object.keys(e.use || {}).length], ['kin', (e.kin || []).length]].filter(x => x[1]).map(x => x[0]);
+        if (own.length) add('error', 'alias-links', `Alias "${label(e)}" has ${own.join(', ')} of its own; an alias holds none: link the root (and show the alias's text there).`, loc); }
     } else if (!ids.length) add('info', 'orphan', `"${label(e)}" is not linked to any theme.`, loc);
 
     for (const tid of ids) {

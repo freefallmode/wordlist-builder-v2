@@ -7,7 +7,7 @@ import { spawn } from 'node:child_process';
 import { connect } from 'node:net';
 import { networkInterfaces } from 'node:os';
 import { parseOutline, formatOutline } from '../js/outline.js';
-import { newProject, addEntry, reindex, themeStats, themeRoots, themeCounts, touchedThemes, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults, sortByKey, flagKey } from '../js/model.js';
+import { newProject, addEntry, reindex, themeStats, themeRoots, themeCounts, touchedThemes, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, linkTarget, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults, sortByKey, flagKey } from '../js/model.js';
 import { sig } from '../js/dom.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
@@ -1099,4 +1099,21 @@ test('theme tree: a missing parent, a cycle and a duplicate id are errors; a cyc
   P.themes.find(t => t.id === 'food').parent = 'fruits'; reindex(P);
   const v = validate(P);
   assert.ok(v.length >= 2 && v.every(i => i.kind === 'theme-parent'));
+});
+
+test('alias-links: an alias with a theme link, shown text or kin is an error; the root is the link target', () => {
+  const P = project();
+  const r = addEntry(P, 'sofa', { fam: 1, typ: { fruits: 1 } });
+  const a = addEntry(P, 'settee', { fam: 3, aliasOf: r.id, aliasKind: 'synonym' });
+  const sp = addEntry(P, 'sofah', { fam: 3, aliasOf: r.id, aliasKind: 'spelling' });
+  reindex(P);
+  assert.ok(!validate(P).some(x => x.kind === 'alias-links'));
+  a.typ.fruits = 2; reindex(P);
+  const bad = validate(P).filter(x => x.kind === 'alias-links');
+  assert.equal(bad.length, 1); assert.equal(bad[0].sev, 'error');
+  delete a.typ.fruits; sp.typ.citrus = 1; reindex(P);   // any kind
+  assert.equal(validate(P).filter(x => x.kind === 'alias-links').length, 1);
+  // the "+ Add words" and generate paths link linkTarget(entry), never an alias
+  assert.equal(linkTarget(P, a), r); assert.equal(linkTarget(P, sp), r); assert.equal(linkTarget(P, r), r);
+  const m = linkTarget(P, a); m.typ.citrus = 2; assert.equal(a.typ.citrus, undefined);
 });

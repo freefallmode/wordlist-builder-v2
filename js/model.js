@@ -257,6 +257,8 @@ function editGroups(t, fix) {
 }
 const dropIds = ids => g => g.some(id => ids.has(id)) ? g.filter(id => !ids.has(id)) : g;
 // Unlinking also drops what the entry held for that theme: its shown text, and (once it is no longer in the theme at all) the form it used, its name allowance and its place in the theme's synonym groups (with its aliases that leave with it).
+// The entry a theme link goes on: an alias holds no links of its own (alias-links), so a link aimed at an alias goes on its root.
+export function linkTarget(P, e) { return (e.aliasOf && P.ix.entry.get(e.aliasOf)) || e; }
 export function unlinkEntry(P, e, tid) {
   delete e.typ[tid]; if (e.show) delete e.show[tid];
   const r = e.aliasOf && P.entries.find(x => x.id === e.aliasOf);

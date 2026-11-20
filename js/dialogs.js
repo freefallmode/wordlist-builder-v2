@@ -3,7 +3,7 @@ import { h, select, check, field, dialog, toast, plural, fmtBytes } from './dom.
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, reindexThemes, indexEntry,
-  FLAG_HELP, pathOf, setKin, moveKin, deleteEntry, deleteTheme, unlinkEntry, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
+  FLAG_HELP, pathOf, setKin, moveKin, deleteEntry, deleteTheme, unlinkEntry, linkTarget, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded, loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
 import { validate, SEV_ORDER } from './validate.js';
@@ -197,12 +197,12 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
               A.sel = tid; openPath(tid); A.filter = '';
               dlg.dispatchEvent(new Event('cancel'));   // closes the entry dialog
               A.render();
-            } }, P.ix.theme.get(tid)?.name || tid + ' (missing)'), inherited && h('span.hint', ' from root')),
-            h('td', {}, select(TYPICALITY_OPTS, w.typ[tid] || 0, { onchange: ev => { w.typ[tid] = +ev.target.value; } })),
+            } }, P.ix.theme.get(tid)?.name || tid + ' (missing)'), inherited && h('span.hint', ' from root (links live on the root)')),
+            h('td', {}, inherited ? select(TYPICALITY_OPTS, root.typ[tid] || 0, { disabled: true }) : select(TYPICALITY_OPTS, w.typ[tid] || 0, { onchange: ev => { w.typ[tid] = +ev.target.value; } })),
             h('td', {}, own && h('input.shown', { value: w.show[tid] || '', placeholder: 'full text', size: 14, oninput: ev => { const v = ev.target.value.trim(); if (v) w.show[tid] = v; else delete w.show[tid]; } })),
             h('td', {}, (own || !root) && h('button.link', { type: 'button', title: 'Unlink', onclick: () => { delete w.typ[tid]; delete w.show[tid]; drawLinks(); } }, '✕')));
         })) : h('p.hint', 'Not linked to any theme yet.'),
-      h('div.row', {}, addPick.node, h('button', { type: 'button', onclick: () => {
+      root ? h('p.hint', 'An alias holds no links of its own: the themes are those of the root. Edit the root to link a theme.') : h('div.row', {}, addPick.node, h('button', { type: 'button', onclick: () => {
         const tid = addPick.get();
         if (!tid) return toast('Pick a theme from the list.', true);
         if (!(tid in w.typ)) w.typ[tid] = 0;
@@ -265,6 +265,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     if (aliasOf === -1 || (aliasOf && !P.ix.entry.get(aliasOf))) throw Error('Pick the alias target from the list.');
     if (aliasOf && P.ix.entry.get(aliasOf).aliasOf) throw Error('Point the alias at the root entry, not at another alias.');
     if (aliasOf && aliasOf === e.id) throw Error('An entry cannot be an alias of itself.');
+    if (aliasOf && Object.keys(w.typ).length) throw Error('An alias holds no links of its own: unlink it from its themes (✕) and link the root instead.');
     if (aliasOf && e.id && P.entries.some(a => a.aliasOf === e.id)) throw Error('This entry has aliases of its own; move them first.');
     Object.assign(w, { text, gloss, pos: f.pos.value, type: f.type.value, fam: +f.fam.value, status: f.status.value, note: f.note.value.trim(), aliasOf,
       aliasKind: aliasOf ? (f.kind.value || 'synonym') : '' });
@@ -297,17 +298,17 @@ export async function bulkAdd(tid) {
   const body = h('div.form', {}, h('p', {}, `Adding to "${t.name}". Words that already exist are just linked.`), ta,
     h('div.two', {}, field('Part of speech', d.pos), field('Type', d.type)), h('div.two', {}, field('Familiarity', d.fam), field('Typicality in this theme', d.typicality)));
   return dialog('Add words', body, [{ label: 'Cancel' }, { label: 'Add', primary: true, action: () => {
-    let added = 0, linked = 0; const problems = [], touched = [];
+    let added = 0, linked = 0; const problems = [], touched = [], viaRoot = [];
     for (const line of ta.value.split('\n')) {
       if (!line.trim()) continue;
       const [text, gloss = '', fam = '', typ = ''] = line.split('|').map(s => s.trim());
       const same = sameText(P, text), hit = same.find(x => (x.gloss || '').toLowerCase() === gloss.toLowerCase());
-      if (hit) { if (!(tid in hit.typ)) { hit.typ[tid] = +typ || +d.typicality.value; touched.push(hit); linked++; } continue; }
+      if (hit) { const m = linkTarget(P, hit); if (m !== hit) viaRoot.push(text); if (!(tid in m.typ)) { m.typ[tid] = +typ || +d.typicality.value; touched.push(m); linked++; } continue; }   // an alias holds no links: its root is linked
       if (same.length && !gloss) { problems.push(text); continue; }
       indexEntry(P, addEntry(P, text, { gloss, pos: d.pos.value, type: d.type.value, fam: +fam || +d.fam.value, typ: { [tid]: +typ || +d.typicality.value } })); added++;   // filed at once: a later line may repeat it
     }
     A.changed({ entries: touched });
-    toast(`${plural(added, 'word')} added, ${linked} linked` + (problems.length ? `; need a meaning/context: ${problems.join(', ')}` : ''), problems.length > 0);
+    toast(`${plural(added, 'word')} added, ${linked} linked` + (viaRoot.length ? `; ${viaRoot.join(', ')} ${viaRoot.length === 1 ? 'is an alias' : 'are aliases'}: the root was linked` : '') + (problems.length ? `; need a meaning/context: ${problems.join(', ')}` : ''), problems.length > 0);
   } }], { wide: true });
 }
 
@@ -351,9 +352,9 @@ export async function generate(tid) {
       const text = x.text.trim(); if (!text) continue;
       const gloss = (x.gloss || '').trim();
       let root = sameText(P, text).find(o => (o.gloss || '').toLowerCase() === gloss.toLowerCase());
-      if (root) {   // an existing word (or one of its alias family) is linked if no member of the family is in the theme yet; spelling and form aliases are linked through their root
+      if (root) {   // an existing word (or one of its alias family) is linked if no member of the family is in the theme yet; an alias is linked through its root
         const fam = root.aliasOf ? P.ix.entry.get(root.aliasOf) : root;
-        if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.typ)) { const m = ['spelling', 'form'].includes(root.aliasKind) ? fam : root; m.typ[tid] = clamp(x.typicality); touched.push(m); linked++; }
+        if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.typ)) { const m = linkTarget(P, root); m.typ[tid] = clamp(x.typicality); touched.push(m); linked++; }
         root = fam;
       } else {
         root = addEntry(P, text, { gloss, pos: x.pos, type: x.type, fam: clamp(x.familiarity), adult: x.adult, sensitive: x.sensitive, tm: x.tm, vulgar: x.vulgar, region: x.region,
