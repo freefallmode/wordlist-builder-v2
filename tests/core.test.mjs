@@ -787,3 +787,21 @@ test('apply-words merge goes through deleteEntry: ids leave groups, use and kin;
     assert.deepEqual(Q.entries.find(e => e.id === kinW.id).kin, [keep.id]);
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
+
+test('complete themes: extras, aliases, group partners, alternatives, "and" in an item, empty note', () => {
+  const P = newProject();
+  P.themes.push({ id: 'c', name: 'Closed', parent: null, group: false, enabled: true, region: [], complete: true, note: 'Exactly: the Salt and Pepper, Pharos of Alexandria (Lighthouse of Alexandria), Blood, Phlegm, Gone.', groups: [] });
+  P.themes.push({ id: 'n', name: 'No note', parent: null, group: false, enabled: true, region: [], complete: true, note: '' });
+  const L = (text, over = {}) => addEntry(P, text, { typ: { c: 3 }, enabled: true, ...over });
+  const salt = L('salt and pepper'), lh = L('Lighthouse of Alexandria'), blood = L('blood'), tmp = L('temperament');
+  const ph = L('mucus'); addEntry(P, 'Phlegm', { aliasOf: ph.id, aliasKind: 'synonym' });
+  const partner = L('black bile'); const gm = L('melancholy'); P.themes[0].groups.push([partner.id, gm.id]);
+  P.themes[0].note += ', Black Bile';
+  const t = L('Hippocrates');
+  reindex(P);
+  const v = validate(P);
+  const extra = v.filter(i => i.kind === 'complete-extra').map(i => i.entryId).sort((a, b) => a - b);
+  assert.deepEqual(extra, [tmp.id, t.id].sort((a, b) => a - b));   // alias, partner, alternative and "and" items are accepted
+  assert.deepEqual(v.filter(i => i.kind === 'complete-missing').map(i => i.msg.match(/"(.*?)"/)[1]), ['Gone.']);
+  assert.deepEqual(v.filter(i => i.kind === 'complete-no-note').map(i => i.themeId), ['n']);
+});

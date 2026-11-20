@@ -42,6 +42,8 @@ export function validate(P) {
 
   // ----- themes -----
   let unrated = 0;
+  const aliasTexts = new Map();   // root id -> texts of its aliases (for the complete-set check)
+  for (const e of P.entries) if (e.aliasOf) { if (!aliasTexts.has(e.aliasOf)) aliasTexts.set(e.aliasOf, []); aliasTexts.get(e.aliasOf).push(e.text); }
   for (const t of P.themes) {
     { const rt = ruleTheme(t); if (rt && !ix.theme.get(rt)) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rt}.`, { themeId: t.id }); }
     { const len = [...t.name].length; if (len > THEME_NAME_MAX) add('warn', 'theme-name-long', `The theme name "${t.name}" has ${len} characters; keep it to ${THEME_NAME_MAX} at most (aim for ${THEME_NAME_SOFT}).`, { themeId: t.id }); }
@@ -68,7 +70,7 @@ export function validate(P) {
     const fam = new Map();   // an alias family (a root and its aliases) may have only one member linked in a theme
     for (const e of direct) { if (e.typ[t.id] === undefined) continue; const r = e.aliasOf || e.id; if (!fam.has(r)) fam.set(r, []); fam.get(r).push(e); }
     for (const [r, es] of fam) if (es.length > 1) add('warn', 'family-twice', `"${es.map(e => e.text).join('" and "')}" are the same word (one alias family) and both linked in "${t.name}"; keep one.`, { themeId: t.id, entryId: es[0].id });
-    if (t.complete && st.roots >= minWords && !t.note) add('info', 'complete-note', `"${t.name}" is complete but has no note listing the exact members.`, { themeId: t.id });
+    if (t.complete) completeCheck(P, t, direct, aliasTexts, add);
   }
   if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no theme popularity yet.`);
 
@@ -157,6 +159,34 @@ export function validate(P) {
   // ----- capitals of shown words (js/caselint.js): one warning per link -----
   for (const i of caseLint(P)) add('warn', i.kind.startsWith('case-') ? i.kind : 'case-' + i.kind, i.msg, { themeId: i.themeId, entryId: i.entryId });
   return out;
+}
+
+// ----- complete themes (DESIGN.md 6): the note lists the exact members, separated by commas -----
+// Note: an optional label before a colon is ignored; "(a)" in an item holds alternatives. Items compare folded, without a trailing full stop or a leading "the".
+const noteKey = s => fold(s).replace(/\s+/g, ' ').trim().replace(/\.$/, '').trim().replace(/^the /, '');
+export function noteItems(note) {
+  let s = String(note || ''); const c = s.indexOf(':'); if (c >= 0 && !/[,(]/.test(s.slice(0, c))) s = s.slice(c + 1);
+  const parts = []; let depth = 0, cur = '';
+  for (const ch of s) { if (ch === '(') depth++; else if (ch === ')') depth = Math.max(0, depth - 1); if (ch === ',' && !depth) { parts.push(cur); cur = ''; } else cur += ch; }
+  parts.push(cur);
+  return parts.map(p => p.trim()).filter(Boolean).map(p => { const m = p.match(/^(.*?)\s*\(([^)]*)\)\s*\.?$/); const alts = m ? [m[1], m[2]] : [p]; return { raw: p, keys: alts.map(noteKey).filter(Boolean) }; });
+}
+function completeCheck(P, t, direct, aliasTexts, add) {
+  const loc = { themeId: t.id };
+  if (!String(t.note || '').trim()) { add('warn', 'complete-no-note', `"${t.name}" is complete but has no note listing the exact members.`, loc); return; }
+  const items = noteItems(t.note), known = new Map();
+  for (const it of items) for (const k of it.keys) known.set(k, it);
+  const shown = e => e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text;
+  const own = e => { const r = e.aliasOf || e.id, root = P.ix.entry.get(r) || e; return [shown(e), e.text, root.text, ...(aliasTexts.get(r) || [])]; };
+  const partners = new Map(); for (const g of t.groups || []) { const es = g.map(id => P.ix.entry.get(id)).filter(Boolean); for (const e of es) partners.set(e.id, es); }
+  const covered = new Set();
+  for (const e of direct) {
+    if (!e.enabled || e.typ[t.id] === undefined) continue;
+    const texts = [...own(e), ...(partners.get(e.id) || []).flatMap(own)];
+    let hit = false; for (const x of texts) { const it = known.get(noteKey(x)); if (it) { hit = true; covered.add(it); } }
+    if (!hit) add('warn', 'complete-extra', `"${shown(e)}" is in the complete theme "${t.name}" but is not in its note; the note lists the exact members, so remove it or fix the note.`, { themeId: t.id, entryId: e.id });
+  }
+  for (const it of items) if (!covered.has(it)) add('info', 'complete-missing', `"${it.raw}" is in the note of the complete theme "${t.name}" but no word covers it.`, loc);
 }
 
 // ----- word families (DESIGN-entries.md 3.7) -----

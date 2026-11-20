@@ -1,0 +1,128 @@
+Pattern: a complete theme's note is the exact comma list of its members (label before a colon ignored, "(x)" an alternative); an alternative name of a member is in a synonym group with it or in the note; a word that is not one of the set is unlinked.
+A. notes rewritten (32):
+  bears "bears" (8 items): "Exactly: giant panda, moon bear, sun bear, sloth bear, spectacled bear, black, brown, polar." -> "Exactly: giant panda, moon bear (moon), sun bear (sun), sloth bear (sloth), spectacled bear (spectacled), black bear (black), brown bear (brown), polar bear (po ..."
+  butterfly_life_stages "butterfly life stages" (4 items): "the four stages of a butterfly, with their common names" -> "the four stages: egg, larva (caterpillar), pupa (chrysalis), adult (imago)"
+  north_american_countries "North American countries" (23 items): "includes Central America and the Caribbean" -> "the 23 countries with Central America and the Caribbean: Canada, United States, Mexico, Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama, ..."
+  south_american_countries "South American countries" (13 items): "includes French Guiana" -> "the 12 countries and French Guiana: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela, French Guiana"
+  spanish_speaking_countries "Spanish-speaking countries" (20 items): "Spanish is the official or main language" -> "the 20 countries where Spanish is the official or main language: Spain, Mexico, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panama, Cuba, Dominican ..."
+  us_state_capitals "US state capitals" (50 items): "Exactly the 50 US state capitals; see the words." -> "the 50 state capitals: Montgomery, Juneau, Phoenix, Little Rock, Sacramento, Denver, Hartford, Dover, Tallahassee, Atlanta, Honolulu, Boise, Springfield, Indian ..."
+  us_states "US states" (50 items): "Exactly the 50 US states; see the words." -> "the 50 states: Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas ..."
+  canadian_provinces "Canadian provinces" (13 items): "provinces and territories" -> "the 10 provinces and 3 territories: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador (Newfoundland), Nova Scotia, Ontario, Prince E ..."
+  mexican_states "Mexican states" (32 items): "Exactly the 32 federal entities of Mexico (31 states plus Mexico City); see the words." -> "the 31 states and Mexico City: Aguascalientes, Baja California, Baja California Sur, Campeche, Chiapas, Chihuahua, Coahuila, Colima, Durango, Guanajuato, Guerre ..."
+  original_thirteen_colonies "Thirteen Colonies" (13 items): "Delaware, Pennsylvania, New Jersey, Georgia, Connecticut, Massachusetts, Maryland, South Carolina, New Hampshire, Virginia, New York, North Carolina, Rhode Island" -> "Delaware, Pennsylvania, New Jersey, Georgia, Connecticut, Massachusetts, Maryland, South Carolina, New Hampshire, Virginia, New York (New York State), North Car ..."
+  the_five_oceans "the five oceans" (5 items): "Exactly: Pacific, Atlantic Ocean, Indian Ocean, Southern Ocean, Arctic Ocean." -> "Exactly: Pacific Ocean (Pacific), Atlantic Ocean (Atlantic), Indian Ocean (Indian), Southern Ocean (Southern), Arctic Ocean (Arctic)."
+  ocean_zones "ocean zones" (5 items): "the five depth layers of the open ocean, from sunlit surface to the deepest trenches" -> "the five depth layers of the open ocean from the surface down: sunlight zone (sunlight), twilight zone (twilight), midnight zone (midnight), abyssal zone (abyss ..."
+  seven_wonders_of_the_ancient_world "Seven Ancient Wonders" (7 items): "Great Pyramid of Giza, Hanging Gardens of Babylon, Statue of Zeus, Temple of Artemis, Mausoleum at Halicarnassus, Colossus of Rhodes, Lighthouse of Alexandria" -> "Great Pyramid of Giza (Great Pyramid), Hanging Gardens of Babylon (Hanging Gardens), Statue of Zeus, Temple of Artemis, Mausoleum at Halicarnassus (Tomb of Maus ..."
+  compass_directions "compass directions" (16 items): "the 16 points of the compass" -> "the 16 points: north, north-northeast, northeast, east-northeast, east, east-southeast, southeast, south-southeast, south, south-southwest, southwest, west-sout ..."
+  fingers "fingers" (5 items): "thumb, index finger, middle finger, ring finger, little finger" -> "thumb, index finger (index), middle finger (middle), ring finger (ring), little finger (little)"
+  ranks_of_the_british_peerage "British peerage ranks" (10 items): "duke, marquess, earl, viscount, baron" -> "the five ranks with their female titles: duke, duchess, marquess (marquis), marchioness, earl, countess, viscount, viscountess, baron, baroness"
+  us_coins "US coins" (6 items): "Exactly: penny, nickel, dime, quarter, half dollar, dollar coin." -> "Exactly: penny (cent), nickel, dime, quarter, half dollar, dollar coin (dollar)."
+  golf_majors "golf majors" (4 items): "Exactly: The Masters, US Open, PGA Championship, The Open Championship." -> "Exactly: the Masters, US Open, PGA Championship, the Open Championship (British Open)."
+  four_horsemen_of_the_apocalypse "horsemen of the apocalypse" (4 items): "Exactly: pestilence, war, famine, Death." -> "Exactly: pestilence (conquest), war, famine, Death."
+  twelve_days_of_christmas_gifts "Twelve Days of Christmas" (12 items): "partridge, turtle doves, French hens, calling birds, gold rings, geese, swans, maids, ladies, lords, pipers, drummers" -> "partridge, turtle doves, French hens, calling birds, gold rings, geese a-laying, swans a-swimming, maids a-milking, ladies dancing, lords a-leaping, pipers pipi ..."
+  baseball_bases "baseball bases" (4 items): "Exactly: first base, second base, third base, home plate." -> "Exactly: first base (first), second base (second), third base (third), home plate."
+  card_suits "card suits" (4 items): "the four suits of a playing-card deck" -> "the four suits: hearts, diamonds, clubs, spades"
+  note_values "note values" (5 items): "whole note, half note, quarter note, eighth note, sixteenth note" -> "whole note (whole), half note (half), quarter note (quarter), eighth note (eighth), sixteenth note (sixteenth)"
+  abba_members "ABBA members" (4 items): "Agnetha, Bjorn, Benny, Anni-Frid" -> "Agnetha, Bjorn, Benny, Anni-Frid (Frida)"
+  labors_of_hercules "labors of Hercules" (12 items): "the twelve labors, exactly" -> "the twelve labors: Nemean Lion, Lernaean Hydra (hydra), Ceryneian hind, Erymanthian Boar, Augean stables, Stymphalian Birds, Cretan Bull, Mares of Diomedes, Bel ..."
+  chemical_elements "chemical elements" (118 items): "all 118 named elements" -> "the 118 named elements: hydrogen, helium, lithium, beryllium, boron, carbon, nitrogen, oxygen, fluorine, neon, sodium, magnesium, aluminum (aluminium), silicon, ..."
+  phases_of_the_moon "phases of the moon" (8 items): "new moon, waxing crescent, first quarter, waxing gibbous, full moon, waning gibbous, last quarter, waning crescent" -> "new moon (new), waxing crescent, first quarter, waxing gibbous, full moon (full), waning gibbous, last quarter (third quarter), waning crescent"
+  metric_prefixes "metric prefixes" (24 items): "the 24 SI prefixes from quecto to quetta (deca also spelled deka)" -> "the 24 SI prefixes: quecto, ronto, yocto, zepto, atto, femto, pico, nano, micro, milli, centi, deci, deca (deka), hecto, kilo, mega, giga, tera, peta, exa, zett ..."
+  si_base_units "SI base units" (7 items): "the seven SI base units" -> "the seven SI base units: meter (metre), kilogram, second, ampere, kelvin, mole, candela"
+  greek_letters "Greek letters" (24 items): "the 24 letters: alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega" -> "the 24 letters: alpha, beta, gamma, delta, epsilon, zeta, eta, theta, iota, kappa, lambda, mu, nu, xi, omicron, pi, rho, sigma, tau, upsilon, phi, chi, psi, ome ..."
+  phonetic_alphabet "phonetic alphabet" (26 items): "the 26 NATO code words: Alpha Bravo Charlie Delta Echo Foxtrot Golf Hotel India Juliett Kilo Lima Mike November Oscar Papa Quebec Romeo Sierra Tango Uniform Victor Whiskey X-ray Yankee Zulu" -> "the 26 NATO code words: Alpha (Alfa), Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett (Juliet), Kilo, Lima, Mike, November, Oscar, Papa, Quebe ..."
+  parts_of_speech "parts of speech" (9 items): "the nine parts of speech: noun verb adjective adverb pronoun preposition conjunction interjection determiner" -> "the nine parts of speech: noun, verb, adjective, adverb, pronoun, preposition, conjunction, interjection, determiner"
+B. alternatives grouped (2):
+  sections_of_the_spine: sacrum 14390 / sacral spine 67007: sacrum is the sacral section (sacrum / sacral: one family, so one group)
+  four_horsemen_of_the_apocalypse: pestilence 20961 / conquest 6819: the first (white) horseman is called Pestilence or Conquest
+C. unlinked / linked:
+  kinds_of_precipitation: wintry mix 1989 unlinked (was 4): a forecast word for a mix of rain, sleet and snow, not one of the kinds; still in weather, snow_and_ice, signs_of_winter, cold_things, ice_words, frozen_precipitation
+  butterfly_life_stages: butterfly 1348 unlinked (was 2): the insect itself, not a stage (the adult stage is adult / imago); grouping it with adult would join its fly clash group into one of 13; still in insects_and_bugs, butterflies_and_moths, garden_bugs, pollinators, meadow, lightweight_things, things_that_fly, winged_creatures, minibeasts, blank_fly, things_in_the_sky, things_you_catch, things_with_wings, egg_laying_animals, signs_of_summer
+  chinese_zodiac: doggo 1439 unlinked (was 5): a loose synonym; the sign is Dog; still in domestic_animals, pets, male_animals, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails, police_station
+  chinese_zodiac: hound 1436 unlinked (was 4): a loose synonym; the sign is Dog; still in hunting_words, hounds, domestic_animals, pets, male_animals, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails
+  chinese_zodiac: pooch 1437 unlinked (was 4): a loose synonym; the sign is Dog; still in domestic_animals, pets, male_animals, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails
+  chinese_zodiac: bunny 1444 unlinked (was 2): a loose synonym; the sign is Rabbit; still in rabbits_and_hares, hopping_animals, baby_animals, dress_up_costumes, baby_talk, soft_things, small_pets, game_meats, domestic_animals, pets, burrowing_animals, garden_pests, easter, mid_autumn_festival, things_that_bounce, fluffy_things
+  chinese_zodiac: serpent 1136 unlinked (was 4): a loose synonym; the sign is Snake; still in pets, hibernating_animals, reptiles_and_amphibians, snakes, long_things, things_with_eyes, things_with_tongues
+  cmyk_inks: sable 7670 unlinked (was 5): a heraldic black, not a name for the ink; still in heraldry, hair_colors, colors, olympic_ring_colors, words_for_dark
+  olympic_ring_colors: sable 7670 unlinked (was 5): a heraldic black, not a name for the ring; still in heraldry, hair_colors, colors, words_for_dark
+  fingers: longest finger 14381 unlinked (was 5): a description of the middle finger, not its name; still in no theme
+  fingers: fourth finger 14383 unlinked (was 4): a description of the ring finger, not its name; still in no theme
+  labors_of_hercules: man-eating mares 55048 unlinked (was 3): a description of the Mares of Diomedes, not a name in use; still in no theme
+  labors_of_hercules: red cattle 55052 unlinked (was 4): a description of the Cattle of Geryon, not a name in use; still in no theme
+  kinds_of_precipitation: mizzle 1991 unlinked (was 4): a UK dialect word for misty drizzle, not a name of the kind; still in rain_words, weather, water_sounds
+  sections_of_the_spine: neck vertebrae 53059 unlinked (was 3): a description of the cervical section, not its name; still in no theme
+  dwarf_planets: Xena 41417 unlinked (was 4): Eris's informal nickname before it was named (2005), not a name in use; still in no theme
+  us_states: New York 2219 unlinked (was 1): the city entry (cities, American cities); the state entry New York State 36163 comes in shown "New York"; still in cities, american_cities, places_named_after_people, places_after_new
+  us_states: New York State 36163 linked 1 shown "New York"
+E. Hydra and the Masters:
+  hydra 6940 -> Hydra, type proper (themes mythology, mythical_creatures, greek_monsters, sea_monsters, labors_of_hercules, greek_myth_creatures)
+  The Masters 44305 -> spelling alias of Masters 58912 (bare name the root, as Bahamas / The Bahamas): famous_sporting_events: both linked, root's 2 kept (alias's 2 dropped); golf_majors: both linked, root's 1 kept (alias's 1 dropped); golf_majors group (Masters, The Masters) -> gone; famous_sporting_events group (Masters, The Masters) -> gone
+D. complete-* check after: none
+Listed, not changed (doubts):
+  ranks_of_the_british_peerage: familyOk (male and female titles are separate answers), so the set is the five ranks and their five female titles (10), not 5
+  south_american_countries: French Guiana is a French region, not a country; kept as the note said
+  canadian_provinces: named "provinces" but holds the 3 territories too; kept as the note said
+  si_base_units: Kelvin 40846 is stored with a capital; the unit is written kelvin (case rule); not changed here
+  labors_of_hercules: Hesperides 6970 is the nymphs (mythology, legendary places) standing for the apples of the Hesperides; kept as the note allows
+  ocean_zones: trench 32036 and abyss 32037 are the general words standing for the hadal and abyssal zones; kept
+  kept as accepted names (group partners): honey bear, Andean bear, Himalayan black bear, volcanic dome, scoria cone, stratovolcano, rainforest floor, America, Surinam, Aotearoa, Orissa, epipelagic/mesopelagic/bathypelagic zone, the five wonders alternatives, pointer finger, forefinger, pinky, tailbone, erythrocyte, leukocyte, avarice, the zodiac animals, first sacker, backstop, home base, hot corner, leg before wicket, Roland Garros, javelin/discus throw, fourth/fifth street, one pair, quads, trips, castle, the tarot suit names, Lennon, Macca, Farrokh Bulsara, the ABBA full names, Teddy Roosevelt, girdle of Hippolyta, protista, triangular pyramid, the school names of parts of speech (naming, doing, describing word, connective, exclamation)
+  original_thirteen_colonies: New York State 36163 is shown in full there; the note takes it as an alternative of New York
+library changes 77; status set to rev 23; entries touched 24
+Checks: changed kinds: info:complete-missing 38 -> 0, info:orphan 216 -> 222, warn:complete-extra 495 -> 0
+Checks after (errors and warnings): clash-big 1, complete-extra 0, long 5, maybe-duplicate 1, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 60
+Committed family export equals the in-memory export of v409 before the changes: yes
+Themes 3235 -> 3235; gone none; new none; theme indexes shift from none
+Entries 61045 -> 61039; first row whose entry changed: 13898; added none; removed longest finger 14381, fourth finger 14383, Xena 41417, neck vertebrae 53059, man-eating mares 55048, red cattle 55052
+Row text changes: hydra -> Hydra (6940); flags changed: The Masters 44305
+Links 109220 -> 109202; rows whose link count changed: 13 (serpent 1136, butterfly 1348, hound 1436, pooch 1437, doggo 1439, bunny 1444, wintry mix 1989, mizzle 1991, New York 2219, NYC 2220, sable 7670, butterflies 31506, New York State 36163)
+Link-index shifts: from row 1101 (lizard 1137) on, link positions move
+Links by theme + shown text + row: gone 25, new 7, rating changed 0
+  gone: chinese_zodiac: "serpent" (row of 1136)
+  gone: butterfly_life_stages: "butterfly" (row of 1348)
+  gone: chinese_zodiac: "hound" (row of 1436)
+  gone: chinese_zodiac: "pooch" (row of 1437)
+  gone: chinese_zodiac: "doggo" (row of 1439)
+  gone: chinese_zodiac: "bunny" (row of 1444)
+  gone: kinds_of_precipitation: "wintry mix" (row of 1989)
+  gone: kinds_of_precipitation: "mizzle" (row of 1991)
+  gone: us_states: "New York" (row of 2219)
+  gone: us_states: "NYC" (row of 2220)
+  gone: mythology: "hydra" (row of 6940)
+  gone: mythical_creatures: "hydra" (row of 6940)
+  gone: greek_monsters: "hydra" (row of 6940)
+  gone: sea_monsters: "hydra" (row of 6940)
+  gone: labors_of_hercules: "hydra" (row of 6940)
+  gone: greek_myth_creatures: "hydra" (row of 6940)
+  gone: cmyk_inks: "sable" (row of 7670)
+  gone: olympic_ring_colors: "sable" (row of 7670)
+  gone: fingers: "longest finger" (row of 14381)
+  gone: fingers: "fourth finger" (row of 14383)
+  gone: butterfly_life_stages: "butterflies" (row of 31506)
+  gone: dwarf_planets: "Xena" (row of 41417)
+  gone: sections_of_the_spine: "neck vertebrae" (row of 53059)
+  gone: labors_of_hercules: "man-eating mares" (row of 55048)
+  gone: labors_of_hercules: "red cattle" (row of 55052)
+  new: mythology: "Hydra" (row of 6940)
+  new: mythical_creatures: "Hydra" (row of 6940)
+  new: greek_monsters: "Hydra" (row of 6940)
+  new: sea_monsters: "Hydra" (row of 6940)
+  new: labors_of_hercules: "Hydra" (row of 6940)
+  new: greek_myth_creatures: "Hydra" (row of 6940)
+  new: us_states: "New York" (row of 36163)
+Clash (family export): words with an id 13153 -> 13141; ids 4602 -> 4596; sizes before 2:2835 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1; after 2:2829 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1
+  groups over 8 after: 59
+new issues: none
+
+Checks: apply 77 library changes, library v410; rerun 0; npm test 54 pass; strict full export exit 0; style-case and propword-exceptions 0 changes; Checks errors 0, warnings theme-name 3, long 5, maybe-duplicate 1, clash-big 1, complete-extra 0 (new check).
+
+=== Notice to _WS_ for v409 + v410 (send when Simon says) ===
+Library v410 is in the export (data/export/wordlist-game-family.json). It covers v409 and v410. No pin until Simon asks.
+v409: Julia's branch (julia-category-fixes, her v366-v382, built on v365), replayed by word text on top of v408 with Simon's decisions.
+- 25 new themes: kitchen (bakeware, kitchen linens, food storage), Ancient Greece, outdoor (s'mores, hiking snacks, hiking dangers, bike gear, climbing styles, climbing holds, bike tricks, bike park), environment and earth science.
+- 14 themes merged into others and deleted: penguin_species, animals_with_a_poisonous_bite (into venomous snakes; copperhead and sidewinder moved in, Gila monster out), whale_types, seal_types, bear_types (into bears, no animal twice), soggy_places, animals_of_the_far_north, animals_of_the_far_south, kitchen_crew, famous_stretches_of_sand, chef_roles, poem_forms, renewable_sources, buried_fuels. 16 themes renamed (ids unchanged), e.g. "layers of the Earth" -> "Earth's layers".
+- four humours now holds exactly blood, phlegm, yellow bile, black bile.
+- 109 new entries (ids from 67956); where her word already existed, the existing entry is linked (kneepads, multitool, wallride, skateboard manual, helmet, pump, light/lights). Her new words are only in her themes; ratings reviewed (29 changed).
+v410: complete sets made exact. New checks complete-extra / complete-missing / complete-no-note; 32 notes rewritten as exact lists; members that are not names of set members unlinked (Chinese zodiac doggo, hound, pooch, bunny, serpent; sable in CMYK inks and Olympic ring colors; longest finger, fourth finger; mizzle; wintry mix; neck vertebrae; Xena; man-eating mares; red cattle; butterfly from butterfly life stages; New York city from US states, New York State shown "New York" instead). Hydra 6940 is now proper "Hydra" (the monster in all its themes). The Masters 44305 is a spelling alias of Masters 58912.
+Export (v408 -> v410): themes 3,224 -> 3,235 (theme indexes shift from index 192); rows 61,029 -> 61,045 (v409) -> 61,039 (v410: 6 entries left with no theme drop out: longest finger, fourth finger, Xena, neck vertebrae, man-eating mares, red cattle); first changed row 14948 (v409) and 13898 (v410); links 109,262 -> 109,220 -> 109,202 (link positions shift from row 87 on). Please measure against v408.
