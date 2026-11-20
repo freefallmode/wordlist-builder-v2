@@ -818,3 +818,262 @@ test('checks-core: issues match by identity, counts by baseline', async () => {
   assert.equal(s.errors.length, 1);
   assert.deepEqual(s.warn.map(w => [w.kind, w.n, w.max, w.status]), [['long', 2, 1, 'OVER'], ['thin', 0, 2, 'below']]);
 });
+
+// ---------- check improvements (v411 review: tools/gen/review-checks-correctness.md, review-checks-coverage.md) ----------
+const T = (id, name, over = {}) => ({ id, name, parent: null, group: false, enabled: true, region: [], pop: 2, ident: 2, ...over });
+const kinds = (P, k) => validate(P).filter(i => i.kind === k);
+
+// A small library whose family export meets the contract: fruits (5 words, a UK spelling alias), palindromes (wordplay).
+function contractProject() {
+  const P = newProject();
+  P.themes.push(T('food', 'Food', { group: true }), T('fruits', 'fruits', { parent: 'food' }), T('pals', 'palindromes', { tkind: 'wordplay', rule: 'palindrome', pop: 3, ident: 3, region: ['US'] }));
+  for (const w of ['apple', 'pear', 'plum', 'fig', 'kiwi']) addEntry(P, w, { fam: 1, typ: { fruits: 2 }, status: 'rev' });
+  const gray = addEntry(P, 'gray', { fam: 1, typ: { fruits: 4 } }); addEntry(P, 'grey', { fam: 1, aliasOf: gray.id, aliasKind: 'spelling', region: ['UK'] });
+  for (const w of ['level', 'kayak', 'radar', 'civic']) addEntry(P, w, { fam: 2, typ: { pals: 2 } });
+  reindex(P);
+  return P;
+}
+const contractOf = async X => (await import('../tools/export-contract.mjs')).checkContract(X);
+const exportOf = P => JSON.parse(JSON.stringify(buildExport(P, { adult: 'exclude', vulgar: 'exclude', zipf: true }).file));
+
+test('export contract: a clean export passes; each broken rule is an error of its kind', async () => {
+  const X0 = exportOf(contractProject());
+  assert.deepEqual(await contractOf(X0), []);
+  const broken = async (fix, kind) => { const X = structuredClone(X0); fix(X); const is = await contractOf(X); assert.ok(is.some(i => i.sev === 'error' && i.kind === kind), `${kind}: ${JSON.stringify(is)}`); };
+  const ti = (X, id) => X.themes.findIndex(r => r[0] === id), tf = (X, f) => X.themeFields.indexOf(f), row = (X, text) => X.entries.text.indexOf(text);
+  await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'parent')] = 99; }, 'contract-parent');                                       // past the end
+  await broken(X => { X.themes[0][tf(X, 'parent')] = ti(X, 'fruits'); }, 'contract-parent');                                        // a cycle
+  await broken(X => { X.themes[ti(X, 'pals')][tf(X, 'rule')] = 'starts:a'; }, 'contract-rule');                                    // X under 2 letters
+  await broken(X => { X.themes[ti(X, 'pals')][tf(X, 'rule')] = 'hidden:@nothing'; }, 'contract-rule');                             // @id not a theme
+  await broken(X => { X.themes[ti(X, 'pals')][tf(X, 'rule')] = ''; }, 'contract-rule');
+  await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'popularity')] = 0; }, 'contract-popularity');
+  await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'difficulty')] = 0; }, 'contract-difficulty');
+  await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'name')] = 'x'.repeat(31); }, 'contract-theme-name');
+  await broken(X => { X.themes[ti(X, 'pals')][0] = 'FRUITS'; }, 'contract-theme-id');                                              // ids match case-insensitively
+  await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'kind')] = 5; }, 'contract-kind');
+  await broken(X => { X.entries.links[2] = 0; }, 'contract-link');                                                                   // typicality 0
+  await broken(X => { X.entries.links[1] = 5.5; }, 'contract-link');
+  await broken(X => { X.entries.familiarity[0] = 0; }, 'contract-familiarity');
+  await broken(X => { X.entries.pos[0] = 7; }, 'contract-pos');
+  await broken(X => { X.entries.zipf[0] = 80; }, 'contract-zipf');
+  await broken(X => { X.entries.breaks[0] = [0]; }, 'contract-breaks');
+  await broken(X => { X.entries.text[0] = ' '; }, 'contract-text');
+  await broken(X => { X.entries.clash[0] = -1; }, 'contract-clash');
+  await broken(X => { const g = row(X, 'grey'); X.entries.root[g] = g + 1; }, 'contract-root');                                     // points at itself
+  await broken(X => { const g = row(X, 'grey'); X.entries.text.push('greye'); for (const c of Object.keys(X.entries)) if (!['text', 'links'].includes(c)) X.entries[c].push(c === 'root' ? g + 1 : c === 'familiarity' ? 1 : c === 'breaks' ? [] : 0); }, 'contract-root');   // an alias of an alias
+  await broken(X => { X.entries.linkCount[0]++; }, 'contract-links');
+  await broken(X => { X.kindNames = ['category', 'place']; }, 'contract-top');
+  await broken(X => { X.regions = ['US']; }, 'contract-top');
+  await broken(X => { X.regionBits = 32; }, 'contract-top');
+  await broken(X => { delete X.lib; }, 'contract-top');
+  await broken(X => { X.linkFields = ['theme', 'typicality', 'difficulty', 'shown']; }, 'contract-columns');
+  await broken(X => { X.shown.push(['', 0, []]); }, 'contract-shown');
+  await broken(X => { X.shownUK.push([0, 99]); }, 'contract-shown');
+});
+
+test('export contract: the unknown rule is a warning; warnings for what skews play; the summary gates them against a baseline', async () => {
+  const { contractSummary, parseRule } = await import('../tools/export-contract.mjs');
+  for (const r of ['palindrome', 'homophone', 'homophone:animals', 'rhyme:at', 'contains:aeiou', 'contains:silent-b', 'compound-start:air', 'starts:@birds', 'ends:ma', 'hidden:@x']) assert.equal(parseRule(r).state, 'ok', r);
+  for (const r of ['other', 'letter:animals:plus']) assert.equal(parseRule(r).state, 'unknown', r);
+  for (const r of ['starts:a', 'hidden:abc', 'rhyme:', 'compound-end:@x']) assert.equal(parseRule(r).state, 'bad', r);
+  const P = contractProject(), pals = P.themes.find(t => t.id === 'pals');
+  pals.rule = 'other';
+  P.entries.find(e => e.text === 'apple').region = ['AU'];                            // a root with a region
+  P.entries.find(e => e.text === 'grey').region = ['UK', 'US'];                       // an alias tagged both
+  const gray = P.entries.find(e => e.text === 'gray'); addEntry(P, 'graye', { fam: 1, aliasOf: gray.id, aliasKind: 'regional', region: ['UK'] });   // a second UK display alias
+  addEntry(P, 'Plum', { gloss: 'company', type: 'org', fam: 2, typ: { fruits: 5 } }); P.entries.find(e => e.text === 'plum').gloss = 'fruit';
+  addEntry(P, 'kiwi', { gloss: 'bird', type: 'common', fam: 1, typ: { pals: 5 } });   // after an earlier common kiwi: not reported
+  addEntry(P, 'level', { gloss: 'tool', type: 'phrase', fam: 1, typ: { fruits: 5 } }); // a lower-case word typed phrase
+  P.themes.push(T('few', 'few things')); for (const w of ['ant', 'bee', 'cat', 'dog']) addEntry(P, w, { fam: 1, typ: { few: 1 }, sensitive: w !== 'ant' });
+  reindex(P);
+  const X = buildExport(P, { adult: 'exclude', vulgar: 'exclude', zipf: true, minWords: 1 }).file;
+  const is = await contractOf(X), n = k => is.filter(i => i.kind === k).length;
+  assert.deepEqual(is.filter(i => i.sev === 'error'), []);
+  assert.equal(n('contract-rule-unknown'), 1);
+  assert.equal(n('contract-root-region'), 1);
+  assert.equal(n('contract-alias-dialect'), 2);    // tagged both, and two UK display aliases
+  assert.equal(n('contract-dup-root'), 0);         // Plum (org) comes after the common plum
+  assert.equal(n('contract-type-common'), 1);      // level typed phrase
+  assert.equal(n('contract-thin'), 1);             // few things: 1 shown word (3 sensitive)
+  const s = contractSummary(is, { 'contract-rule-unknown': 1, 'contract-root-region': 1, 'contract-alias-dialect': 2, 'contract-type-common': 1 });
+  assert.deepEqual(s.over.map(w => w.kind), ['contract-thin']);
+  // the order in the export decides contract-dup-root: a place row first hides the common word
+  const Y = structuredClone(X), r = Y.entries.text.indexOf('fig'); Y.entries.type[r] = 2; Y.entries.text.push('fig'); for (const c of Object.keys(Y.entries)) if (!['text', 'links'].includes(c)) Y.entries[c].push(c === 'familiarity' ? 1 : c === 'breaks' ? [] : 0);
+  Y.entries.linkCount[Y.entries.linkCount.length - 1] = 1; Y.entries.links.push(Y.themes.findIndex(t => t[0] === 'fruits'), 2, 2, 0);
+  assert.equal((await contractOf(Y)).filter(i => i.kind === 'contract-dup-root').length, 1);
+});
+
+test('rating rule: a theme with words needs popularity and identifiability; an enabled entry needs familiarity 1-5; a link typicality 1-5', () => {
+  const P = contractProject();
+  assert.deepEqual(validate(P).filter(i => i.sev === 'error'), []);
+  P.themes.find(t => t.id === 'fruits').ident = 0;
+  P.entries.find(e => e.text === 'apple').fam = 0;
+  P.entries.find(e => e.text === 'grey').fam = 6;                         // an alias too
+  P.entries.find(e => e.text === 'pear').typ.fruits = 0;                  // 0 is no longer allowed
+  const off = addEntry(P, 'quince', { fam: 0, enabled: false });          // disabled: not required
+  reindex(P);
+  const v = validate(P), err = k => v.filter(i => i.sev === 'error' && i.kind === k);
+  assert.deepEqual(err('theme-unrated').map(i => i.themeId), ['fruits']);
+  assert.match(err('theme-unrated')[0].msg, /identifiability/);
+  assert.deepEqual(err('unrated').map(i => P.ix.entry.get(i.entryId).text).sort(), ['apple', 'grey']);
+  assert.ok(!err('unrated').some(i => i.entryId === off.id));
+  assert.deepEqual(err('bad-rating').map(i => i.entryId), [P.entries.find(e => e.text === 'pear').id]);
+  P.themes.push(T('empty', 'empty', { pop: 0, ident: 0 })); reindex(P);  // no words: info only
+  assert.ok(!validate(P).some(i => i.sev === 'error' && i.themeId === 'empty'));
+});
+
+test('export: an alias promoted to a row of its own keeps its left-out root\'s clash id', () => {
+  const P = contractProject();
+  const rude = addEntry(P, 'rude', { fam: 1, vulgar: true, typ: { fruits: 3 } }), polite = addEntry(P, 'polite', { fam: 1, aliasOf: rude.id, aliasKind: 'synonym' });
+  const bread = P.entries.find(e => e.text === 'fig');
+  P.themes.find(t => t.id === 'fruits').groups = [[rude.id, bread.id]];
+  reindex(P);
+  const X = buildExport(P, { adult: 'exclude', vulgar: 'exclude' }).file, row = t => X.entries.text.indexOf(t);
+  assert.equal(row('rude'), -1); assert.equal(X.entries.root[row('polite')], 0);   // promoted
+  assert.ok(X.entries.clash[row('fig')] > 0);
+  assert.equal(X.entries.clash[row('polite')], X.entries.clash[row('fig')]);
+});
+
+test('same-display matches the export: accents kept apart, an alias with its own link counted, disabled entries skipped', () => {
+  const P = contractProject();
+  addEntry(P, 'café', { fam: 1, typ: { fruits: 3 } }); addEntry(P, 'cafe', { gloss: 'x', fam: 1, typ: { fruits: 3 } });   // the export keeps both
+  const truck = addEntry(P, 'truck', { fam: 1, typ: { fruits: 3 } }); addEntry(P, 'Truck', { gloss: 'regional', fam: 2, aliasOf: truck.id, aliasKind: 'regional', region: ['UK'], typ: { fruits: 4 } });
+  addEntry(P, 'Kiwi', { gloss: 'off', fam: 1, typ: { fruits: 3 }, enabled: false });
+  reindex(P);
+  const sd = kinds(P, 'same-display');
+  assert.deepEqual(sd.map(i => P.ix.entry.get(i.entryId).text), ['Truck']);
+  const r = buildExport(P, { minWords: 1 }).report;
+  assert.deepEqual(r.sameText.map(s => s.split(' in ')[0]), ['truck']);
+});
+
+test('noteItems: a colon is a label only after "Exactly", "the ...", a number, or before a second colon', async () => {
+  const { noteItems } = await import('../js/validate.js');
+  const keys = n => noteItems(n).map(i => i.keys[0]);
+  assert.deepEqual(keys('Star Wars: A New Hope, Jaws'), ['star wars: a new hope', 'jaws']);
+  assert.deepEqual(keys('Exactly: north, south'), ['north', 'south']);
+  assert.deepEqual(keys('the four suits: hearts, spades'), ['hearts', 'spades']);
+  assert.deepEqual(keys('12 signs: Aries, Leo'), ['aries', 'leo']);
+  assert.deepEqual(keys('Films: Star Wars: A New Hope, Jaws'), ['star wars: a new hope', 'jaws']);
+});
+
+test('alias-same fires on its own; alias-self alone; overlap tokens are Unicode words', () => {
+  const P = contractProject(), apple = P.entries.find(e => e.text === 'apple');
+  addEntry(P, 'Apple', { fam: 1, aliasOf: apple.id, aliasKind: 'spelling' });
+  const self = addEntry(P, 'selfie', { fam: 1, aliasKind: 'spelling' }); self.aliasOf = self.id;
+  addEntry(P, 'kākā', { fam: 3, typ: { fruits: 3 } }); addEntry(P, 'kākāpō', { fam: 3, typ: { fruits: 3 } });
+  addEntry(P, 'tea', { fam: 1, typ: { fruits: 3 } }); addEntry(P, 'green tea', { fam: 1, typ: { fruits: 3 } });
+  reindex(P);
+  const v = validate(P), at = (k, id) => v.filter(i => i.kind === k && i.entryId === id);
+  const alias = P.entries.find(e => e.text === 'Apple');
+  assert.equal(at('alias-same', alias.id).length, 1);
+  assert.equal(at('duplicate', alias.id).length + at('needs-gloss', alias.id).length + at('needs-gloss', apple.id).length, 0);
+  assert.deepEqual(v.filter(i => i.entryId === self.id && i.sev !== 'info').map(i => i.kind), ['alias-self']);
+  assert.deepEqual(v.filter(i => i.kind === 'overlap').map(i => P.ix.entry.get(i.entryId).text), ['green tea']);
+});
+
+test('severities: a dangling group or kin id is an error; complete-missing and a thin complete set are warnings', () => {
+  const P = contractProject(), fruits = P.themes.find(t => t.id === 'fruits'), apple = P.entries.find(e => e.text === 'apple');
+  fruits.groups = [[apple.id, 99999]]; apple.kin = [88888];
+  P.themes.push(T('set', 'set', { complete: true, note: 'Exactly: one, two, three' })); addEntry(P, 'one', { fam: 1, typ: { set: 1 } }); addEntry(P, 'two', { fam: 1, typ: { set: 1 } });
+  reindex(P);
+  const v = validate(P), one = k => v.filter(i => i.kind === k).map(i => i.sev);
+  assert.deepEqual(one('group-missing'), ['error']);
+  assert.deepEqual(one('kin-missing'), ['error']);
+  assert.deepEqual(one('kin-bad'), []);
+  assert.deepEqual(one('complete-missing'), ['warn']);
+  assert.deepEqual(one('thin').filter((s, i) => v.filter(x => x.kind === 'thin')[i].themeId === 'set'), ['warn']);
+});
+
+test('new checks: alias-flags, nameOk-stale, alias-kind-suspect', () => {
+  const P = contractProject(), apple = P.entries.find(e => e.text === 'apple');
+  apple.tm = true;
+  addEntry(P, 'apples', { fam: 1, aliasOf: apple.id, aliasKind: 'form' });                                  // tm missing: alias-flags
+  addEntry(P, 'appel', { fam: 1, aliasOf: apple.id, aliasKind: 'regional' });                               // other kinds are rated on their own
+  apple.nameOkIn = ['fruits', 'pals'];                                                                      // pals: not linked
+  const gps = addEntry(P, 'GPS', { type: 'acronym', fam: 1, typ: { fruits: 4 } }); addEntry(P, 'satnav', { fam: 2, aliasOf: gps.id, aliasKind: 'spelling', region: ['UK'] });
+  reindex(P);
+  assert.deepEqual(kinds(P, 'alias-flags').map(i => [i.sev, P.ix.entry.get(i.entryId).text]), [['warn', 'apples']]);
+  assert.deepEqual(kinds(P, 'nameOk-stale').map(i => [i.sev, i.entryId]), [['info', apple.id]]);
+  const s = kinds(P, 'alias-kind-suspect');
+  assert.deepEqual(s.map(i => P.ix.entry.get(i.entryId).text), ['satnav']);   // grey (gray) is a real spelling
+  assert.match(s[0].msg, /6 of 6 letters.*typed common/);
+});
+
+test('sense-twin: same-text roots that share a meaning word, or one linked where its twin\'s meaning names the theme; the allow list silences them', async () => {
+  const { SENSE_OK } = await import('../js/sense-allow.js');
+  const P = contractProject();
+  P.themes.push(T('dogs', 'dog breeds'));
+  const lang = addEntry(P, 'Maltese', { gloss: 'language', type: 'proper', fam: 3, typ: { dogs: 3 } }), dog = addEntry(P, 'Maltese', { gloss: 'dog', type: 'proper', fam: 3 });
+  const p1 = addEntry(P, 'port', { gloss: 'ship side', fam: 2 }), p2 = addEntry(P, 'port', { gloss: 'ship left', fam: 2 });
+  addEntry(P, 'bat', { gloss: 'animal', fam: 1 }); addEntry(P, 'bat', { gloss: 'club', fam: 1 });          // different senses: quiet
+  addEntry(P, 'kiwi', { gloss: 'bird fruit', pos: 'verb', fam: 1 });                                       // other part of speech
+  reindex(P);
+  let st = kinds(P, 'sense-twin');
+  assert.equal(st.length, 2);
+  assert.ok(st.some(i => i.entryId === p2.id && /share "ship"/.test(i.msg)));
+  assert.ok(st.some(i => i.entryId === lang.id && i.themeId === 'dogs' && /wrong sense/.test(i.msg)));
+  SENSE_OK.add(`${p1.id}|${p2.id}`); SENSE_OK.add(`${lang.id}|${dog.id}|dogs`);
+  try { assert.equal(kinds(P, 'sense-twin').length, 0); } finally { SENSE_OK.clear(); }
+});
+
+test('theme-twin: two themes, neither inside the other, sharing 80% of the smaller one\'s 8+ words; the allow list silences them', async () => {
+  const { THEME_TWIN_OK } = await import('../js/theme-twin-allow.js');
+  const P = contractProject();
+  P.themes.push(T('bike', 'bike races'), T('cyc', 'cycling races'), T('sub', 'road races', { parent: 'cyc' }));
+  const ws = Array.from({ length: 10 }, (_, i) => addEntry(P, 'race' + 'abcdefghij'[i], { fam: 2, typ: {} }));
+  ws.forEach((e, i) => { if (i < 8) e.typ.bike = 2; e.typ.cyc = 2; if (i < 9) e.typ.sub = 2; });
+  reindex(P);
+  const tt = kinds(P, 'theme-twin');
+  assert.deepEqual(tt.map(i => i.themeId), ['bike', 'bike']);   // bike (8 words) in cycling races (10) and in road races (9); road races is inside cycling races: not reported
+  assert.match(tt[0].msg, /8 of its 8 words/);
+  THEME_TWIN_OK.add('bike|cyc'); THEME_TWIN_OK.add('bike|sub');
+  try { assert.equal(kinds(P, 'theme-twin').length, 0); } finally { THEME_TWIN_OK.clear(); }
+});
+
+test('diff rules: an added or changed entry needs status rev; an accented root the change touched keeps its plain alias (rule 8)', async () => {
+  const { diffRules, diffRuleLines } = await import('../tools/checks-core.mjs');
+  const { plainText } = await import('../js/model.js');
+  const base = contractProject();
+  const jal = addEntry(base, 'jalapeño', { fam: 2, typ: { fruits: 4 }, status: 'rev' }); addEntry(base, 'jalapeno', { fam: 2, aliasOf: jal.id, aliasKind: 'spelling', status: 'rev' });
+  const old = addEntry(base, 'açaí', { fam: 3, typ: { fruits: 5 }, status: 'gen' });   // an older gap: not this change's
+  for (const e of base.entries) e.status = 'rev'; old.status = 'gen';
+  reindex(base);
+  const next = parseProject(serializeProject(base)); reindex(next);
+  assert.deepEqual(diffRules(base, next, plainText), { notRev: [], lostPlain: [] });
+  next.entries.find(e => e.text === 'apple').fam = 2;                                  // changed, still rev: fine
+  next.entries.find(e => e.text === 'pear').fam = 3; next.entries.find(e => e.text === 'pear').status = 'gen';
+  addEntry(next, 'mango', { fam: 1, typ: { fruits: 2 }, status: 'gen' });
+  next.entries = next.entries.filter(e => e.text !== 'jalapeno');                      // the plain alias goes
+  addEntry(next, 'piñata', { fam: 2, typ: { fruits: 5 }, status: 'rev' });            // new, accented, no plain alias
+  reindex(next);
+  const d = diffRules(base, next, plainText);
+  assert.deepEqual(d.notRev.map(x => [x.text, x.how]), [['pear', 'changed'], ['mango', 'added']]);
+  assert.deepEqual(d.lostPlain.map(x => x.text), ['jalapeño', 'piñata']);
+  assert.equal(diffRuleLines(d).length, 4);
+});
+
+test('gate identity, accept list and approvals: a swap within the count is new; raised counts and added keys are reported', async () => {
+  const { newIssues, issueKey, baselineRaises, allowAdds } = await import('../tools/checks-core.mjs');
+  const a = { sev: 'warn', kind: 'theme-name', msg: 'old wording', themeId: 't', entryId: 1 };
+  assert.deepEqual(newIssues([{ ...a, msg: 'new wording' }], [a]), []);                // the same issue reworded
+  const b = { ...a, entryId: 2 };
+  assert.deepEqual(newIssues([b], [a]), [b]);                                          // one fixed, one added
+  assert.deepEqual(newIssues([b], [a], false, new Set([issueKey(b)])), []);            // accepted
+  assert.deepEqual(baselineRaises({ warn: { long: 5 }, contract: {} }, { note: 'x', library: 412, warn: { long: 6, x: 0 }, contract: { 'contract-thin': 1 }, accept: ['k'] }),
+    ['tools/checks-baseline.json warn.long: 5 -> 6', 'tools/checks-baseline.json contract.contract-thin: 0 -> 1', 'tools/checks-baseline.json accept: 1 key added (k)']);
+  assert.deepEqual(baselineRaises({ warn: { long: 5 } }, { warn: { long: 4 } }), []);
+  assert.deepEqual(allowAdds('f.js', 'X', new Set(['a']), new Set(['a', 'b'])), ['f.js X: 1 key added (b)']);
+  assert.deepEqual(allowAdds('f.js', 'X', undefined, new Set()), []);
+});
+
+test('theme tree: a missing parent, a cycle and a duplicate id are errors; a cycle stops the other checks', () => {
+  const P = contractProject();
+  P.themes.find(t => t.id === 'pals').parent = 'nowhere';
+  P.themes.push(T('fruits', 'fruits again'));
+  reindex(P);
+  assert.deepEqual(validate(P).filter(i => i.sev === 'error').map(i => i.kind).sort(), ['theme-dup-id', 'theme-parent']);
+  P.themes.pop(); P.themes.find(t => t.id === 'pals').parent = null;
+  P.themes.find(t => t.id === 'food').parent = 'fruits'; reindex(P);
+  const v = validate(P);
+  assert.ok(v.length >= 2 && v.every(i => i.kind === 'theme-parent'));
+});

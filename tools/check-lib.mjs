@@ -2,15 +2,20 @@
 // Run: npm run check -- [file] [--kind <k>] [--diff <otherFile>] [--export] [--json]
 //   file       library to check (default data/wordlist-en.project.json), e.g. a scratch copy written by a batch script's --out
 //   --kind k   list all issues of one kind
-//   --diff f   show only issues new in file compared with f (matched by kind + message + theme/entry id)
-//   --export   also run the strict export on the file (tools/export-game.mjs --strict --lib, to a temporary file)
+//   --diff f   show only issues new in file compared with f (matched by kind + theme/entry id, as the gate does), and the rules of record on
+//              the diff (gate step i): every entry added or changed has status rev; an accented root keeps its plain alias (rule 8)
+//   --export   also run the strict export on the file (tools/export-game.mjs --strict --lib, to a temporary file) and the export contract on it
+//              (tools/export-contract.mjs, GAME-CONTRACT.md; gate step h)
 //   --json     machine-readable output
-// Exit 0: no errors and no warning kind over tools/checks-baseline.json (and, with --export, the strict export passes); 1 otherwise; 2 usage.
+// Exit 0: no errors, no warning kind over tools/checks-baseline.json, and with --diff no new error or warning and no diff-rule problem (and,
+// with --export, the strict export and the export contract pass); 1 otherwise; 2 usage.
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { HERE, LIB, loadAndCheck, readBaseline, summarize, newIssues, where } from './checks-core.mjs';
+import { HERE, LIB, BASELINE, loadAndCheck, readBaseline, readAccept, summarize, newIssues, where, diffRules, diffRuleLines } from './checks-core.mjs';
+import { checkContract, contractSummary, contractReport, readContractBaseline } from './export-contract.mjs';
+import { plainText } from '../js/model.js';
 
 const argv = process.argv.slice(2);
 const usage = m => { console.error((m ? m + '\n' : '') + 'Usage: npm run check -- [file] [--kind <k>] [--diff <otherFile>] [--export] [--json]'); process.exit(2); };
@@ -31,23 +36,26 @@ for (const f of [file, diff].filter(Boolean)) if (!fs.existsSync(f)) usage('No s
 
 const [cur, other] = await Promise.all([loadAndCheck(file), diff ? loadAndCheck(diff) : null]);
 const baseline = readBaseline(), sum = summarize(cur.issues, baseline);
-const fresh = other ? newIssues(cur.issues, other.issues) : null;   // errors and warnings new in the file
+const fresh = other ? newIssues(cur.issues, other.issues, false, readAccept()) : null;   // errors and warnings new in the file
+const dlines = other ? diffRuleLines(diffRules(other.P, cur.P, plainText)) : [];
 const pick = list => kind ? list.filter(i => i.kind === kind) : list;
 
 let exp = null;
 if (doExport) {
   const tmp = path.join(os.tmpdir(), `wlb-check-${process.pid}.json`);
   const r = spawnSync(process.execPath, [path.join(HERE, 'tools/export-game.mjs'), 'family', tmp, '--strict', '--lib', file], { encoding: 'utf8', maxBuffer: 256 << 20 });
+  let con = null;
+  if (fs.existsSync(tmp)) { const sm = contractSummary(checkContract(JSON.parse(fs.readFileSync(tmp, 'utf8'))), readContractBaseline(path.join(HERE, BASELINE))); con = { ok: !sm.errors.length && !sm.over.length, lines: contractReport(sm) }; }
   try { fs.rmSync(tmp, { force: true }); } catch {}
-  exp = { ok: r.status === 0, out: ((r.stdout || '') + (r.stderr || '')).trim() };
+  exp = { ok: r.status === 0, out: ((r.stdout || '') + (r.stderr || '')).trim(), contract: con };
 }
-const ok = !sum.errors.length && !sum.over.length && (!exp || exp.ok);
+const ok = !sum.errors.length && !sum.over.length && (!fresh || !fresh.length) && !dlines.length && (!exp || exp.ok && exp.contract?.ok);
 
 if (json) {
   console.log(JSON.stringify({
     file, version: cur.version, ok, errors: sum.errors, warnings: sum.warn, info: sum.info,
     issues: kind ? cur.issues.filter(i => i.kind === kind) : undefined,
-    diff: other ? { against: diff, version: other.version, new: pick(fresh), gone: pick(newIssues(other.issues, cur.issues)) } : undefined,
+    diff: other ? { against: diff, version: other.version, new: pick(fresh), gone: pick(newIssues(other.issues, cur.issues)), rules: dlines } : undefined,
     export: exp || undefined,
   }, null, 1));
   process.exit(ok ? 0 : 1);
@@ -61,6 +69,7 @@ if (other) {
   for (const i of show) console.log('  ' + line(i));
   const gone = pick(newIssues(other.issues, cur.issues));
   if (gone.length) console.log(`(${gone.length} issue${gone.length === 1 ? '' : 's'} of the other file are gone here.)`);
+  console.log(dlines.length ? `${dlines.length} diff-rule problem${dlines.length === 1 ? '' : 's'} (status rev, rule 8):\n${dlines.map(l => '  ' + l).join('\n')}` : 'diff rules: every added or changed entry has status rev; no accented root lost its plain alias.');
   console.log(`counts: ${sum.errors.length} errors; ${sum.over.length ? 'over baseline: ' + sum.over.map(w => `${w.kind} by ${w.over}`).join(', ') : 'all warning kinds within the baseline'}`);
 } else if (kind) {
   const l = cur.issues.filter(i => i.kind === kind);
@@ -78,5 +87,6 @@ if (other) {
   for (const [k, l] of byKind) { console.log(`${k} (first ${Math.min(3, l.length)} of ${l.length}; --kind ${k} for all):`); for (const i of l.slice(0, 3)) console.log('  ' + where(i).padEnd(18) + ' ' + i.msg); }
 }
 if (exp) console.log(`strict export: ${exp.ok ? 'PASS' : 'FAIL'}\n${exp.out.split(/\r?\n/).slice(exp.ok ? 0 : -15, exp.ok ? 1 : undefined).map(l => '  ' + l.slice(0, 220)).join('\n')}`);
-console.log(ok ? 'check: OK' : `check: FAIL (${[sum.errors.length && sum.errors.length + ' errors', sum.over.length && 'over baseline: ' + sum.over.map(w => w.kind).join(', '), exp && !exp.ok && 'export'].filter(Boolean).join('; ')})`);
+if (exp?.contract) console.log(`export contract (GAME-CONTRACT.md): ${exp.contract.ok ? 'PASS' : 'FAIL'}\n${exp.contract.lines.map(l => '  ' + l.slice(0, 220)).join('\n')}`);
+console.log(ok ? 'check: OK' : `check: FAIL (${[sum.errors.length && sum.errors.length + ' errors', sum.over.length && 'over baseline: ' + sum.over.map(w => w.kind).join(', '), fresh?.length && fresh.length + ' new issues', dlines.length && dlines.length + ' diff-rule problems', exp && !exp.ok && 'export', exp?.contract && !exp.contract.ok && 'export contract'].filter(Boolean).join('; ')})`);
 process.exit(ok ? 0 : 1);

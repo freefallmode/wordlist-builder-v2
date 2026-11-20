@@ -35,6 +35,8 @@ Raising a warning count in `tools/checks-baseline.json` is an explicit edit that
 ## Handy
 
 - `npm run check -- [file] [--diff <other>] [--kind <k>] [--export] [--json]`: the gate's Checks (errors, warnings against `tools/checks-baseline.json`) on a draft library, default the real one; exit 1 on an error or a kind over its baseline; `--diff` shows only issues new compared with another file (kind + message + location). Code shared with the gate: `tools/checks-core.mjs`.
-- `npm test`, `npm run gate`, `node tools/gate.mjs --base HEAD~1`.
+- `--diff` also fails on a warning new by identity and on the diff rules (every added or changed entry has status `rev`; rule 8 plain aliases); `--export` also runs the export contract.
+- `node tools/export-contract.mjs [export.json] [--kind <k>]`: the export against GAME-CONTRACT.md (errors; warnings against the `contract` baseline).
+- `npm test`, `npm run gate`, `node tools/gate.mjs --base HEAD~1`. A raised baseline or an added allow-list key shows as "needs Simon's approval" (WARN): only with his OK.
 - One-time per clone: `git config core.hooksPath .githooks`.
 - Write scripts with the Write tool: shell heredocs and node one-liners mangle backslashes and quotes.

@@ -1,10 +1,12 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, ALIAS_KINDS, POS, TYPES } from './model.js';
+import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, displayKey, isAncestor, plainText, ALIAS_KINDS, POS, TYPES } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
 import { familyPairs, clashGroups, CLASH_SOFT, CLASH_MAX } from './family.js';
 import { FAMILY_OK } from './family-allow.js';
+import { SENSE_OK } from './sense-allow.js';
+import { THEME_TWIN_OK } from './theme-twin-allow.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
 const NAME_STOP = new Set(('a an and or the of in on at to for from with by as is are that this these those your my our their its words word names name types type kinds kind famous common things thing parts part ' +
@@ -26,6 +28,7 @@ export function nameLeak(t, e, words = themeNameWords(t)) {
 const words = s => s.trim().split(/\s+/).length;
 const letters = s => s.replace(/[^\p{L}\p{N}]/gu, '').length;
 const label = e => e.text + (e.gloss ? ` (${e.gloss})` : '');
+const isRating = v => Number.isInteger(v) && v >= 1 && v <= 5;   // pop, ident, fam, typ: 1 to 5
 
 // A theme named for words in another language (numbers in german, swahili words, days of the week in french) should carry the foreign flag.
 // Loanword themes (french phrases in english, words from french) are English and are left alone.
@@ -39,6 +42,15 @@ export function validate(P) {
   const add = (sev, kind, msg, extra = {}) => out.push({ sev, kind, msg, ...extra });
   const S = P.settings, minWords = S.minWords || 4;
   const ix = P.ix;
+
+  // ----- the theme tree: ids unique, parents existing, no cycle (a cycle would break every inherited flag, so the other checks wait for the fix) -----
+  { const ids = new Set(); let cycle = false;
+    for (const t of P.themes) {
+      if (ids.has(t.id)) add('error', 'theme-dup-id', `Two themes have the id ${t.id}.`, { themeId: t.id }); ids.add(t.id);
+      if (t.parent && !ix.theme.get(t.parent)) add('error', 'theme-parent', `"${t.name}" has the parent ${t.parent}, which does not exist (the theme and its words drop out of the export).`, { themeId: t.id });
+      for (let p = t.parent, n = 0; p; p = ix.theme.get(p)?.parent, n++) if (p === t.id || n > P.themes.length) { add('error', 'theme-parent', `"${t.name}" has a parent chain that loops (a theme inside itself).`, { themeId: t.id }); cycle = true; break; }
+    }
+    if (cycle) return out; }
 
   // ----- themes -----
   let unrated = 0;
@@ -55,27 +67,31 @@ export function validate(P) {
       continue;
     }
     const st = themeStats(P, t.id);
-    if (!t.pop) { if (st.entries) add('warn', 'theme-unrated', `"${t.name}" has words but no theme popularity.`, { themeId: t.id }); else unrated++; }
+    { const miss = [!isRating(t.pop) && 'popularity', !isRating(t.ident) && 'identifiability'].filter(Boolean);   // ratings: always all four (pop, ident, fam, typ), set in the batch that creates the theme, word or link
+      if (miss.length && st.entries) add('error', 'theme-unrated', `"${t.name}" has words but no theme ${miss.join(' and no ')} (1-5).`, { themeId: t.id }); else if (!t.pop) unrated++; }
     if (!ef.foreign && foreignListName(t.name)) add('warn', 'foreign-flag', `"${t.name}" looks like a list of words in another language but is not flagged Foreign language; tick it if its words are mostly not English.`, { themeId: t.id });
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
-    else if (st.roots < minWords) add(t.complete ? 'error' : 'warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
+    else if (st.roots < minWords) add('warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
     if (!t.nameOk) { const ws = themeNameWords(t); const locked = themeLocked(P, t); for (const e of direct) { if (locked && e.aliasOf && e.typ[t.id] === undefined) continue; const w = nameLeak(t, e.show?.[t.id] ? { ...e, text: e.show[t.id] } : e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
     for (const g of t.groups || []) {   // synonym groups: at most one member per level
       const mem = g.map(id => ix.entry.get(id));
       if (g.length < 2) add('warn', 'group-small', `A synonym group in "${t.name}" has fewer than two members.`, { themeId: t.id });
-      for (const [i, e] of mem.entries()) if (!e || e.aliasOf || !(e.typ[t.id] !== undefined)) add('warn', 'group-member', `Synonym group member ${g[i]} in "${t.name}" is not a word of that theme.`, { themeId: t.id });
+      for (const [i, e] of mem.entries()) {
+        if (!e) add('error', 'group-missing', `Synonym group member ${g[i]} in "${t.name}" does not exist.`, { themeId: t.id });
+        else if (e.aliasOf || e.typ[t.id] === undefined) add('warn', 'group-member', `Synonym group member ${g[i]} in "${t.name}" is not a word of that theme.`, { themeId: t.id });
+      }
     }
-    const shownAs = new Map();   // two words that read the same in one theme cannot both be placed
-    for (const e of direct) { if (e.aliasOf) continue; const x = fold(e.show?.[t.id] || P.ix.entry.get(e.use?.[t.id])?.text || e.text); if (shownAs.has(x)) add('info', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}"; the export keeps the more popular one.`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
+    const shownAs = new Map();   // two words that read the same in one theme cannot both be placed: compared as the export compares them (model.js displayKey: own links only, enabled, lower-cased, accents kept)
+    for (const e of direct) { if (!e.enabled || e.typ[t.id] === undefined) continue; const x = displayKey(P, e, t.id); if (shownAs.has(x)) add('info', 'same-display', `"${e.text}" and "${shownAs.get(x)}" both show as "${x}" in "${t.name}"; the export keeps the more popular one.`, { themeId: t.id, entryId: e.id }); else shownAs.set(x, e.text); }
     const fam = new Map();   // an alias family (a root and its aliases) may have only one member linked in a theme
     for (const e of direct) { if (e.typ[t.id] === undefined) continue; const r = e.aliasOf || e.id; if (!fam.has(r)) fam.set(r, []); fam.get(r).push(e); }
     for (const [r, es] of fam) if (es.length > 1) add('warn', 'family-twice', `"${es.map(e => e.text).join('" and "')}" are the same word (one alias family) and both linked in "${t.name}"; keep one.`, { themeId: t.id, entryId: es[0].id });
     if (t.complete) completeCheck(P, t, direct, aliasTexts, add);
   }
-  if (unrated) add('info', 'theme-unrated', `${unrated} empty themes have no theme popularity yet.`);
+  if (unrated) add('info', 'theme-unrated-empty', `${unrated} empty themes have no theme popularity yet.`);
 
   // ----- overlap: one word inside another in the same theme (cola / Coca-Cola, pasta / pasta sauce) -----
-  const toks = s => s.toLowerCase().match(/[a-z0-9]+/g) || [];
+  const toks = s => s.toLowerCase().match(/[\p{L}\p{N}]+/gu) || [];   // Unicode letters: kākā is one word, not k + k
   const hasRun = (big, small) => { for (let i = 0; i + small.length <= big.length; i++) if (small.every((w, j) => big[i + j] === w)) return true; return false; };
   for (const t of P.themes) {
     if (t.group || !eff(P, t.id).enabled) continue;
@@ -88,6 +104,8 @@ export function validate(P) {
   }
 
   familyChecks(P, add);
+  senseTwins(P, add);
+  themeTwins(P, add);
 
   // ----- entries -----
   const seen = new Map();
@@ -99,10 +117,11 @@ export function validate(P) {
     if (!TYPES.includes(e.type)) add('error', 'bad-type', `"${text}" has type "${e.type}", which is not one of: ${TYPES.join(', ')} (the export writes -1).`, loc);
     if (!POS.includes(e.pos)) add('error', 'bad-pos', `"${text}" has part of speech "${e.pos}", which is not one of: ${POS.join(', ')} (the export writes -1).`, loc);
     const key = text.toLowerCase() + '|' + (e.gloss || '').toLowerCase();
-    if (seen.has(key)) add('error', 'duplicate', `"${label(e)}" appears twice (entries ${seen.get(key)} and ${e.id}).`, loc); else seen.set(key, e.id);
+    const famOf = x => x.aliasOf || x.id, dupOf = seen.has(key) ? ix.entry.get(seen.get(key)) : null;   // a root and its own alias with one text: alias-same reports it
+    if (dupOf && famOf(dupOf) !== famOf(e)) add('error', 'duplicate', `"${label(e)}" appears twice (entries ${seen.get(key)} and ${e.id}).`, loc); else if (!dupOf) seen.set(key, e.id);
 
-    const same = sameText(P, text);
-    if (same.length > 1 && !e.gloss) add('error', 'needs-gloss', `"${text}" has ${same.length} entries; each needs a short meaning/context to tell them apart.`, loc);
+    const same = sameText(P, text), others = same.filter(o => o !== e && famOf(o) !== famOf(e));   // its own alias family: alias-same
+    if (others.length && !e.gloss) add('error', 'needs-gloss', `"${text}" has ${same.length} entries; each needs a short meaning/context to tell them apart.`, loc);
     if (same.length > 1) {
       for (const o of same) if (o.id > e.id && o.pos === e.pos && !e.aliasOf && !o.aliasOf && shares(P, e, o))
         add('warn', 'maybe-duplicate', `"${label(e)}" and "${label(o)}" have the same part of speech and share a theme: one entry or two meanings?`, loc);
@@ -119,15 +138,18 @@ export function validate(P) {
     if (e.aliasOf) {
       const r = ix.entry.get(e.aliasOf);
       if (!r) add('error', 'alias-missing', `"${label(e)}" is an alias of entry ${e.aliasOf}, which does not exist.`, loc);
+      else if (r.id === e.id) add('error', 'alias-self', `"${label(e)}" is an alias of itself.`, loc);
       else {
         if (r.aliasOf) add('error', 'alias-chain', `"${label(e)}" is an alias of "${label(r)}", which is itself an alias. Point it at the root.`, loc);
-        if (r.id === e.id) add('error', 'alias-self', `"${label(e)}" is an alias of itself.`, loc);
+        { const diff = (e.aliasKind === 'spelling' || e.aliasKind === 'form') ? ['adult', 'vulgar', 'sensitive', 'tm'].filter(f => !!e[f] !== !!r[f]) : [];   // the same word takes the root's flags
+          if (diff.length) add('warn', 'alias-flags', `"${label(e)}" is a ${e.aliasKind} alias of "${label(r)}" (the same word) but differs in ${diff.map(f => `${f} (${e[f] ? 'on' : 'off'}, root ${r[f] ? 'on' : 'off'})`).join(', ')}: give it the root's flags.`, loc); }
         if (r.text.toLowerCase() === text.toLowerCase()) add('warn', 'alias-same', `"${label(e)}" has the same text as its root.`, loc);
         if (e.aliasKind && !ALIAS_KINDS.includes(e.aliasKind)) add('warn', 'alias-kind', `Alias "${label(e)}" has an unknown kind (${e.aliasKind}).`, loc);
         if (!e.aliasKind) add('warn', 'alias-kind', `Alias "${label(e)}" has no kind (synonym, spelling, form, regional, abbreviation or translation).`, loc);
         if (e.aliasKind === 'form' && (e.nameOkIn || []).length && text.length > r.text.length && text.toLowerCase().includes(r.text.toLowerCase())) add('info', 'alias-fullname', `"${label(e)}" is kept as a form of "${label(r)}" but is a longer name: make it an entry of its own and give the theme a shown text (show).`, loc);
         if (e.aliasKind === 'spelling' && e.region.includes('US') && !r.region.includes('US') && !(P.entries.some(x => x.aliasOf === r.id && x.aliasKind === 'spelling' && x.region.includes('UK')))) add('warn', 'alias-us-root', `"${label(r)}" is the root but its US-tagged spelling "${label(e)}" is the alias: make the US spelling the root and tag the other UK (or drop the US tag if both are standard).`, loc);
         if (e.aliasKind === 'regional' && !e.region.length) add('info', 'alias-region', `Regional alias "${label(e)}" has no region (UK, AU ...).`, loc);
+        if (e.aliasKind === 'spelling' && e.enabled) { const why = spellingSuspect(e, r); if (why) add('info', 'alias-kind-suspect', `"${label(e)}" is a spelling alias of "${label(r)}" but ${why}: the same word? Otherwise make it regional, a synonym or its own entry.`, loc); }
       }
       if ((e.aliasKind === 'spelling' || e.aliasKind === 'form') && Object.keys(e.typ).length) add('warn', 'alias-link-kind', `"${label(e)}" is a ${e.aliasKind} alias with links of its own; only regional, synonym, abbreviation and translation aliases can be linked on their own.`, loc);
     } else if (!ids.length) add('info', 'orphan', `"${label(e)}" is not linked to any theme.`, loc);
@@ -138,14 +160,15 @@ export function validate(P) {
       if (t.group) add('warn', 'link-group', `"${label(e)}" is linked to "${t.name}", which is a group.`, loc);
       if (fold(t.name) === fold(text)) add('warn', 'is-theme-name', `"${text}" is the name of the theme it is in ("${t.name}").`, loc);
     }
-    for (const [tid, v] of Object.entries(e.typ)) if (!Number.isInteger(v) || v < 0 || v > 5) add('error', 'bad-rating', `"${label(e)}" has a typicality of ${JSON.stringify(v)} in ${tid}; it must be 0 to 5.`, loc);
+    for (const [tid, v] of Object.entries(e.typ)) if (!isRating(v)) add('error', 'bad-rating', `"${label(e)}" has a typicality of ${JSON.stringify(v)} in ${tid}; it must be 1 to 5 (rated in the batch that makes the link).`, loc);
     for (const [tid, txt] of Object.entries(e.show || {})) if (!ids.includes(tid) || !String(txt).trim()) add('warn', 'show-theme', `"${label(e)}" has a display text for ${tid}, which it is not in (or the text is empty).`, loc);
     for (const [tid, aid] of Object.entries(e.use || {})) {
       const a = ix.entry.get(aid);
       if (!ids.includes(tid)) add('warn', 'use-theme', `"${label(e)}" names a display form for ${tid}, which it is not in.`, loc);
       if (!a || a.aliasOf !== e.id || a.aliasKind !== 'form') add('warn', 'use-form', `"${label(e)}" shows entry ${aid} in ${tid}, which is not one of its forms.`, loc);
     }
-    if (!e.fam && e.enabled) add('info', 'unrated', `"${label(e)}" has no familiarity rating.`, loc);
+    if (e.enabled && !isRating(e.fam)) add('error', 'unrated', `"${label(e)}" has ${e.fam ? 'the familiarity ' + JSON.stringify(e.fam) : 'no familiarity'}; every enabled entry and alias needs 1 to 5 (for a general UK/US adult).`, loc);
+    for (const tid of e.nameOkIn || []) if (!ids.includes(tid)) add('info', 'nameOk-stale', `"${label(e)}" may contain the name of ${tid} (nameOkIn) but is not in that theme: drop the key, or it silently mutes the leak check if the word is linked there later.`, loc);
 
     if (freqLoaded() && P.lang === 'en' && e.type === 'common' && e.fam && !e.aliasOf) {
       const z = zipf(text);
@@ -165,7 +188,9 @@ export function validate(P) {
 // Note: an optional label before a colon is ignored; "(a)" in an item holds alternatives. Items compare folded, without a trailing full stop or a leading "the".
 const noteKey = s => fold(s).replace(/\s+/g, ' ').trim().replace(/\.$/, '').trim().replace(/^the /, '');
 export function noteItems(note) {
-  let s = String(note || ''); const c = s.indexOf(':'); if (c >= 0 && !/[,(]/.test(s.slice(0, c))) s = s.slice(c + 1);
+  // A label ends at the first colon when it is "Exactly", starts with "the" or a digit, or the note has a second colon; otherwise the colon belongs to the first item (Star Wars: A New Hope).
+  let s = String(note || ''); const c = s.indexOf(':'), head = c >= 0 ? s.slice(0, c).trim() : '';
+  if (c >= 0 && !/[,(]/.test(head) && (/^(exactly$|the\b|\d)/i.test(head) || s.indexOf(':', c + 1) >= 0)) s = s.slice(c + 1);
   const parts = []; let depth = 0, cur = '';
   for (const ch of s) { if (ch === '(') depth++; else if (ch === ')') depth = Math.max(0, depth - 1); if (ch === ',' && !depth) { parts.push(cur); cur = ''; } else cur += ch; }
   parts.push(cur);
@@ -186,7 +211,7 @@ function completeCheck(P, t, direct, aliasTexts, add) {
     let hit = false; for (const x of texts) { const it = known.get(noteKey(x)); if (it) { hit = true; covered.add(it); } }
     if (!hit) add('warn', 'complete-extra', `"${shown(e)}" is in the complete theme "${t.name}" but is not in its note; the note lists the exact members, so remove it or fix the note.`, { themeId: t.id, entryId: e.id });
   }
-  for (const it of items) if (!covered.has(it)) add('info', 'complete-missing', `"${it.raw}" is in the note of the complete theme "${t.name}" but no word covers it.`, loc);
+  for (const it of items) if (!covered.has(it)) add('warn', 'complete-missing', `"${it.raw}" is in the note of the complete theme "${t.name}" but no word covers it.`, loc);
 }
 
 // ----- word families (DESIGN-entries.md 3.7) -----
@@ -217,7 +242,8 @@ function familyChecks(P, add) {
   // kin: symmetric, between existing root entries
   for (const e of P.entries) for (const id of e.kin || []) {
     const k = ix.entry.get(id);
-    if (e.aliasOf || !k || k === e || k.aliasOf || !(k.kin || []).includes(e.id)) add('warn', 'kin-bad', `"${e.text}" has kin ${id}${k ? ` ("${k.text}")` : ''}, which is ${e.aliasOf ? 'set on an alias (kin belongs on the root)' : !k ? 'missing' : k === e ? 'itself' : k.aliasOf ? 'an alias (kin belongs on the root)' : 'not kin back (kin is stored on both)'}.`, { entryId: e.id });
+    if (!k) add('error', 'kin-missing', `"${e.text}" has kin ${id}, which does not exist.`, { entryId: e.id });
+    else if (e.aliasOf || k === e || k.aliasOf || !(k.kin || []).includes(e.id)) add('warn', 'kin-bad', `"${e.text}" has kin ${id} ("${k.text}"), which is ${e.aliasOf ? 'set on an alias (kin belongs on the root)' : k === e ? 'itself' : k.aliasOf ? 'an alias (kin belongs on the root)' : 'not kin back (kin is stored on both)'}.`, { entryId: e.id });
   }
   // family-kin: one-family root entries linked in different themes, with no kin relation and not kept apart already by one clash group
   const items = [];
@@ -232,6 +258,70 @@ function familyChecks(P, add) {
     if (cg.id(a.id) && cg.id(a.id) === cg.id(b.id)) continue;
     if (![...a.ts].some(t => !b.ts.has(t)) && ![...b.ts].some(t => !a.ts.has(t))) continue;   // the same themes: family-pair's work
     add('info', 'family-kin', `"${a.text}" and "${b.text}" look like one word family in different themes: if they are, make them kin (Related words) so the game keeps them apart in a level.`, { entryId: a.id });
+  }
+}
+
+// ----- heuristics for review (info; each has an allow list or a clear fix) -----
+// alias-kind-suspect: a spelling alias far from its root (edit distance at least 3 and above 40% of the longer text, accents plain), or of another type or capitalisation.
+function editDistance(a, b) {
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) { const cur = [i]; for (let j = 1; j <= b.length; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = cur; }
+  return prev[b.length];
+}
+function spellingSuspect(e, r) {
+  const a = plainText(e.text).toLowerCase(), b = plainText(r.text).toLowerCase(), d = editDistance(a, b), why = [];
+  if (d >= 3 && d > 0.4 * Math.max(a.length, b.length)) why.push(`differs in ${d} of ${Math.max(a.length, b.length)} letters`);
+  if (e.type !== r.type) why.push(`is typed ${e.type}, the root ${r.type}`);
+  if (/^\p{Lu}/u.test(e.text) !== /^\p{Lu}/u.test(r.text)) why.push('differs in its initial capital');
+  return why.join(' and ');
+}
+
+// sense-twin: two enabled roots with the same text, part of speech and type that look like one sense entered twice (their meanings share a word:
+// port [ship side] / port [ship left]), or a root linked in a theme whose name its twin's meaning names and its own does not (Maltese [language]
+// in dog breeds while Maltese [dog] exists: the link is probably on the wrong sense). Allow list: js/sense-allow.js.
+const GLOSS_STOP = new Set('also with from that this type kind sort used word name thing something someone other more very made like into small large'.split(' '));
+const glossToks = s => (fold(s || '').match(/[\p{L}\p{N}]+/gu) || []).map(nameStem);
+function senseTwins(P, add) {
+  const ix = P.ix, byText = new Map();
+  for (const e of P.entries) if (!e.aliasOf && e.enabled) { const k = e.text.trim().toLowerCase(); if (!byText.has(k)) byText.set(k, []); byText.get(k).push(e); }
+  const ok = (a, b, tid) => SENSE_OK.has(pairKey(a.id, b.id)) || (tid !== undefined && SENSE_OK.has(pairKey(a.id, b.id) + '|' + tid));
+  const live = tid => { const t = ix.theme.get(tid); return t && !t.group && eff(P, tid).enabled ? t : null; };
+  for (const es of byText.values()) {
+    if (es.length < 2) continue;
+    for (let i = 0; i < es.length; i++) for (let j = i + 1; j < es.length; j++) {
+      const a = es[i], b = es[j];
+      if (a.pos !== b.pos || a.type !== b.type || ok(a, b)) continue;
+      const ga = glossToks(a.gloss), gb = glossToks(b.gloss);
+      const shared = ga.filter(w => w.length >= 4 && !GLOSS_STOP.has(w) && gb.includes(w));
+      if (shared.length) { add('info', 'sense-twin', `"${label(a)}" and "${label(b)}" have the same text, part of speech and type, and their meanings share "${shared[0]}": one sense entered twice? Merge them, or list the pair in js/sense-allow.js.`, { entryId: b.id }); continue; }
+      for (const [x, y, gx, gy] of [[a, b, ga, gb], [b, a, gb, ga]]) for (const tid of Object.keys(x.typ)) {
+        const t = live(tid); if (!t || y.typ[tid] !== undefined || ok(a, b, tid)) continue;
+        const ws = themeNameWords(t), hit = ws.find(w => gy.includes(w));
+        if (hit && !ws.some(w => gx.includes(w))) add('info', 'sense-twin', `"${label(x)}" is in "${t.name}", but the meaning of "${label(y)}" names the theme ("${hit}"): is the link on the wrong sense? Move it, or list the pair in js/sense-allow.js.`, { themeId: tid, entryId: x.id });
+      }
+    }
+  }
+}
+
+// theme-twin: two playable themes, neither inside the other, where at least 80% of the smaller one's words (8 or more) are in the larger one:
+// a near-duplicate theme (bike races / cycling races). Allow list: js/theme-twin-allow.js.
+export const TWIN_SHARE = 0.8, TWIN_MIN = 8;
+function themeTwins(P, add) {
+  const ix = P.ix, words = new Map(), inv = new Map();
+  for (const t of P.themes) {
+    if (t.group || !eff(P, t.id).enabled) continue;
+    const s = new Set((ix.byTheme.get(t.id) || []).filter(e => e.enabled && e.typ[t.id] !== undefined).map(e => e.aliasOf || e.id));
+    words.set(t.id, s); for (const r of s) { if (!inv.has(r)) inv.set(r, []); inv.get(r).push(t.id); }
+  }
+  for (const [a, sa] of words) {
+    if (sa.size < TWIN_MIN) continue;
+    const n = new Map(); for (const r of sa) for (const b of inv.get(r)) if (b !== a) n.set(b, (n.get(b) || 0) + 1);
+    for (const [b, k] of n) {
+      const sb = words.get(b);
+      if (k < TWIN_SHARE * sa.size || sb.size < sa.size || (sb.size === sa.size && b < a)) continue;   // a is the smaller (ties: once, by id)
+      if (isAncestor(P, a, b) || isAncestor(P, b, a) || THEME_TWIN_OK.has(a < b ? a + '|' + b : b + '|' + a)) continue;
+      add('info', 'theme-twin', `"${ix.theme.get(a).name}" shares ${k} of its ${sa.size} words with "${ix.theme.get(b).name}" (${sb.size} words): a near-duplicate theme? Merge them, make one a sub-theme, or list the pair in js/theme-twin-allow.js.`, { themeId: a });
+    }
   }
 }
 

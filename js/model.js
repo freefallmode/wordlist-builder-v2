@@ -227,6 +227,19 @@ export const dialectOf = P => P.settings?.dialect ?? (P.lang === 'en' ? 'US' : '
 // A locked theme shows exactly the word linked, never a regional, spelling or family substitute: the spelling or sound of the word is the point (wordplay, compound, language-specific themes).
 // Derived from the theme's kind and language flag unless the theme says so itself (t.locked true or false).
 export const themeLocked = (P, t) => t.locked !== undefined ? !!t.locked : t.tkind === 'wordplay' || t.tkind === 'compound' || !!eff(P, t.id).lang;
+// The plain (unaccented) spelling of a text, as rule 8 needs it kept as an alias (jalapeño -> jalapeno); case is kept. As tools/gen/plaincheck.mjs.
+export const plainText = s => s.normalize('NFD').replace(/\p{M}/gu, '').replace(/ı/g, 'i').replace(/ł/g, 'l').replace(/ø/g, 'o').replace(/đ/g, 'd').replace(/ß/g, 'ss').replace(/æ/g, 'ae').replace(/œ/g, 'oe');
+// What a link shows in a theme instead of the entry's own text: its `show` text, else its enabled `use` form; null when it shows its own text,
+// or when the entry is an alias that only inherits the theme (the export ignores such a show). Returns { text, pos, fam? }. Shared by the export
+// and the same-display check, so the two cannot drift.
+export function shownFor(P, e, tid) {
+  if (e.aliasOf && e.typ[tid] === undefined) return null;
+  if (e.show?.[tid]) return { text: e.show[tid], pos: e.pos };
+  const u = P.ix.entry.get(e.use?.[tid]);
+  return u?.enabled ? u : null;
+}
+// The key two links compare on when they would read the same in one theme (the export keeps one): the shown text, trimmed and lower-cased.
+export const displayKey = (P, e, tid) => (shownFor(P, e, tid)?.text ?? e.text).trim().toLowerCase();
 export function dialectMember(P, e) {
   const d = dialectOf(P);
   if (!d || e.aliasOf || e.region.includes(d)) return e;

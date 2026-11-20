@@ -1,6 +1,8 @@
 # What the game reads from the export
 
-The Word Safari game's account, from its code (2026-11-20, export format v4, library v411). Its slimmer is P, DynLibrary.cs is L and DynGenerator.cs is G. A missing value never throws: it reads as 0 or "" and misbehaves silently. A missing column in `themeFields` does throw. The planned `export-contract` check enforces this file.
+The Word Safari game's account, from its code (2026-11-20, export format v4, library v411). Its slimmer is P, DynLibrary.cs is L and DynGenerator.cs is G. A missing value never throws: it reads as 0 or "" and misbehaves silently. A missing column in `themeFields` does throw.
+
+The export-contract check (`tools/export-contract.mjs`; gate step h on every fresh export, and `npm run check -- <library> --export`) enforces this file: errors for what crashes or silently drops, warnings (baselined in `tools/checks-baseline.json`, section `contract`) for what skews play. DESIGN.md 6 lists its kinds. A change here needs the matching change there.
 
 ## Themes (every row is kept, so theme indexes stay valid)
 

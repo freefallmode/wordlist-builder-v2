@@ -4,7 +4,7 @@
 // For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, POS, TYPES, REGIONS } from './model.js';
+import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, shownFor, POS, TYPES, REGIONS } from './model.js';
 import { zipf } from './freq.js';
 import { isNameWord } from './validate.js';
 import { breakPoints } from './breaks.js';
@@ -64,7 +64,7 @@ export function buildExport(P, opt0 = {}) {
       const f = eff(P, tid);
       if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, e.sensitive || f.sensitive) || !pass(o.tm, e.tm || f.tm)) continue;
       // A theme may show the entry under a shorter text (show) or as one of its forms (use); that text and its part of speech travel with the link.
-      const sh = e.aliasOf && e.typ[tid] === undefined ? null : e.show?.[tid] ?{ text: e.show[tid], pos: e.pos } : ix.entry.get(e.use?.[tid])?.enabled ? ix.entry.get(e.use[tid]) : null;
+      const sh = shownFor(P, e, tid);
       const r = Math.max(difficultyBand(P, e, tid), sh && sh.fam || 0);
       if (r === 0 ? !o.unrated : (r < o.recMin || r > o.recMax)) continue;
       links.push([tid, blendRatings(Math.max(e.fam || 0, sh && sh.fam || 0), typicality(P, e, tid)), typicality(P, e, tid), sh ? sh.text + '|' + POS.indexOf(sh.pos) : '']);   // difficulty is the decimal blend (model.js); the whole-number r above only filters
@@ -169,7 +169,7 @@ export function buildExport(P, opt0 = {}) {
     return changed ? out : null;
   };
   const shown = [], shownAt = new Map();           // texts a theme shows instead of the entry's own: [text, pos]; a link points at one (index+1, 0 = the entry's own text)
-  const clash = clashGroups(P, themes, id => keep.has(id));   // words that stand for one another in a theme (its groups) or are kin (one word family across themes) share a clash id: the level builder never puts two of them in one level
+  const clash = clashGroups(P, themes, id => keep.has(id) || promoted.has(id));   // a root left out but stood in for by a promoted alias stays in its groups, so the alias keeps the root's clash id. Words that stand for one another in a theme (its groups) or are kin (one word family across themes) share a clash id: the level builder never puts two of them in one level
   const bp = t => P.lang === 'en' ? breakPoints(t) : [];   // the break table is English-only: other languages get empty lists
   cols.breaks = [];                                 // character indexes in text[i] where a hyphen may go, [] for none
   if (o.zipf && P.lang === "en") cols.zipf = [];
