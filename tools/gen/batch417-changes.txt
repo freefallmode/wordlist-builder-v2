@@ -1,0 +1,11 @@
+Issue I31 (Simon: "Fix Roosevelt"): the wrong sensitive flag on Theodore and Teddy Roosevelt.
+  Theodore Roosevelt 42199: sensitive flag cleared (a US president; in Mount Rushmore presidents, Nobel laureates, Peace Prize winners)
+  Teddy Roosevelt 54998: sensitive flag cleared (a US president; in Mount Rushmore presidents, Nobel laureates, Peace Prize winners)
+library changes 2; entries changed 2; status set to rev 2
+Checks: changed kinds: none
+Export contract (family export, zipf): contract-thin 5 -> 4
+Export shape: themes 3234 -> 3234, entries 61037 -> 61037; entry texts unchanged; link counts unchanged; only the entry flags of the two rows change (no index shifts)
+new issues: none
+
+=== Notice to _WS_ for v417 (send when Simon says) ===
+Library v417 is in the export (data/export/wordlist-game-family.json). One change, from your sensitive-word answer: Theodore Roosevelt and Teddy Roosevelt are no longer flagged sensitive, so Mount Rushmore presidents has all four members. No index shifts: only the flags of those two entry rows change. contract-thin goes from 5 to 4. Simon decided the rest: alcoholic drinks stay sensitive; no wider narrowing of the flag and no theme flags added, so g25 holds back the words as flagged. No pin until Simon asks.

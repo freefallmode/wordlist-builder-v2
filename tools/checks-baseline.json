@@ -1,5 +1,5 @@
 {
-  "note": "Most warnings of each kind the library may have; tools/gate.mjs fails when a count is higher, and also when a warning or error is new by identity (kind + theme/entry) against the base library. A kind not listed counts as 0. warn: the Checks (js/validate.js, as the batch scripts run them, without the frequency list). contract: the export contract (tools/export-contract.mjs, GAME-CONTRACT.md) on the family export. accept: issue keys (tools/checks-core.mjs issueKey) Simon approved to appear new. Written from library v411; alias-flags and contract-alias-dialect lowered to 0 for v412; contract-root-region, contract-dup-root, contract-thin and contract-type-common lowered for v413; contract-rule-unknown made an error and removed, contract-reversible-missing added at 0, contract-root-region lowered for v414; contract-dup-root lowered for v415. Raising a count or adding a key needs Simon's approval and an explicit edit of this file, committed with the change (the gate prints it as \"needs Simon's approval\"); lower a count when a batch fixes warnings.",
+  "note": "Most warnings of each kind the library may have; tools/gate.mjs fails when a count is higher, and also when a warning or error is new by identity (kind + theme/entry) against the base library. A kind not listed counts as 0. warn: the Checks (js/validate.js, as the batch scripts run them, without the frequency list). contract: the export contract (tools/export-contract.mjs, GAME-CONTRACT.md) on the family export. accept: issue keys (tools/checks-core.mjs issueKey) Simon approved to appear new. Written from library v411; alias-flags and contract-alias-dialect lowered to 0 for v412; contract-root-region, contract-dup-root, contract-thin and contract-type-common lowered for v413; contract-rule-unknown made an error and removed, contract-reversible-missing added at 0, contract-root-region lowered for v414; contract-dup-root lowered for v415; contract-thin lowered for v417. Raising a count or adding a key needs Simon's approval and an explicit edit of this file, committed with the change (the gate prints it as \"needs Simon's approval\"); lower a count when a batch fixes warnings.",
   "library": 414,
   "warn": {
     "alias-flags": 0,
@@ -16,7 +16,7 @@
     "contract-dup-root": 184,
     "contract-reversible-missing": 0,
     "contract-root-region": 1784,
-    "contract-thin": 5,
+    "contract-thin": 4,
     "contract-type-common": 42
   },
   "accept": []

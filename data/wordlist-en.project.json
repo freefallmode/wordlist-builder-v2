@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":416,"modified":"2026-11-20 18:09"},"nextId":68072,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
+{"project":{"schema":1,"lang":"en","lib":{"version":417,"modified":"2026-11-20 21:41"},"nextId":68072,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[371,372],[78,79]],"ident":1},
@@ -43312,7 +43312,7 @@
 {"id":42196,"text":"Albert Schweitzer","type":"person","fam":4,"sensitive":true,"typ":{"nobel_laureates":4,"peace_prize_winners":4},"status":"gen"},
 {"id":42197,"text":"Aung San Suu Kyi","type":"person","fam":3,"sensitive":true,"typ":{"nobel_laureates":3,"peace_prize_winners":3},"status":"gen"},
 {"id":42198,"text":"Jimmy Carter","type":"person","fam":1,"sensitive":true,"typ":{"nobel_laureates":2,"peace_prize_winners":2},"status":"gen"},
-{"id":42199,"text":"Theodore Roosevelt","type":"person","fam":2,"sensitive":true,"typ":{"nobel_laureates":3,"mount_rushmore_presidents":2,"peace_prize_winners":3},"status":"gen"},
+{"id":42199,"text":"Theodore Roosevelt","type":"person","fam":2,"typ":{"nobel_laureates":3,"mount_rushmore_presidents":2,"peace_prize_winners":3},"status":"rev"},
 {"id":42200,"text":"Woodrow Wilson","type":"person","fam":2,"sensitive":true,"typ":{"nobel_laureates":4,"peace_prize_winners":4},"status":"gen"},
 {"id":42201,"text":"Henry Kissinger","type":"person","fam":3,"sensitive":true,"typ":{"nobel_laureates":3,"peace_prize_winners":3},"status":"gen"},
 {"id":42202,"text":"Al Gore","type":"person","fam":2,"sensitive":true,"typ":{"nobel_laureates":3,"peace_prize_winners":3},"status":"gen"},
@@ -55707,7 +55707,7 @@
 {"id":54995,"text":"Beast of Gevaudan","type":"proper","fam":5,"typ":{"cryptids":4},"status":"gen"},
 {"id":54996,"text":"Pope Lick Monster","type":"proper","fam":5,"typ":{"cryptids":5},"status":"gen"},
 {"id":54997,"text":"Lizard Man","type":"proper","fam":5,"typ":{"cryptids":4},"status":"gen"},
-{"id":54998,"text":"Teddy Roosevelt","type":"person","fam":2,"sensitive":true,"typ":{"mount_rushmore_presidents":2,"nobel_laureates":3,"peace_prize_winners":3},"status":"gen"},
+{"id":54998,"text":"Teddy Roosevelt","type":"person","fam":2,"typ":{"mount_rushmore_presidents":2,"nobel_laureates":3,"peace_prize_winners":3},"status":"rev"},
 {"id":54999,"text":"Kronos","gloss":"god","type":"proper","fam":4,"aliasOf":21846,"aliasKind":"spelling","status":"gen"},
 {"id":55000,"text":"Cronos","gloss":"god","type":"proper","fam":4,"aliasOf":21846,"aliasKind":"spelling","status":"gen"},
 {"id":55001,"text":"Sasquatch","type":"proper","fam":2,"typ":{"cryptids":1,"mythical_creatures":3},"status":"gen"},
