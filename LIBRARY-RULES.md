@@ -206,7 +206,7 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
 
 - Spelling aliases with region codes other than US/UK: kept "for now" (47 at v418; the docs say 44) until Simon settles them.
 - Alias links: DESIGN.md 3, DESIGN-entries.md 3.5, `alias-link-kind` and the entry dialog still allow regional, synonym, abbreviation and translation aliases to hold links; v413 removed every one and the export writes none. This file says link the root. A check for new alias links does not exist.
-- Drink themes: v418 made alcoholic drinks sensitive only, but the themes cocktails, wines, beers, spirits, liqueurs, national spirits, wine regions, wine words and oktoberfest still carry the theme `adult` flag, so they never play.
+- (Settled 2026-11-20, v419: the drink themes are sensitive, not adult.)
 - Adult scope: `FLAG_HELP` says drugs, sexual content, violence, and war, weapons and stag-night words are adult; no recorded decision narrows adult to sexual content.
 - I30 leftovers: places of worship and religious festivals (easy words sensitive) are for Simon; no gap check exists.
 - Generation spread: the app's prompt spreads familiarity in thirds; BRIEF-depth3 spreads typicality in thirds.

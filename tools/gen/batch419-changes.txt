@@ -1,0 +1,21 @@
+Issue I31 (Simon: "Yes, sensitive"): the drink themes lose the theme adult flag and are sensitive (held to the sensitive start level by game g25).
+  cocktails "cocktails": adult flag cleared (sensitive)
+  wines "wines": adult flag cleared (sensitive)
+  red_wines "red wines": adult flag cleared (sensitive through its parent)
+  white_wines "white wines": adult flag cleared (sensitive through its parent)
+  wine_words "wine words": adult flag cleared (sensitive through its parent)
+  beers "beers": adult flag cleared (sensitive)
+  spirits "spirits": adult flag cleared (sensitive)
+  liqueurs "liqueurs": adult flag cleared (sensitive through its parent)
+  national_spirits "national spirits": adult flag cleared (sensitive through its parent)
+  wine_regions "wine regions": adult flag cleared (sensitive)
+  oktoberfest "Oktoberfest": sensitive flag set (a beer festival)
+  oktoberfest "Oktoberfest": adult flag cleared (sensitive)
+library changes 12; entries changed 0; status set to rev 0
+Checks: changed kinds: none
+Export contract (family export, zipf): contract-dup-root 185 -> 190, contract-root-region 1787 -> 1790
+Export shape: themes 3235 -> 3251, entries 61079 -> 61468; entry texts CHANGED; link counts CHANGED; theme flags change; themes and rows are added (left out as adult)
+new issues: none
+
+=== Notice to _WS_ for v419 (send when Simon says) ===
+Library v419 is in the export (data/export/wordlist-game-family.json). Simon ("Yes, sensitive"): the drink themes lose the theme adult flag and are sensitive, so g25 holds them to the sensitive start level instead of their never playing: cocktails, wines, red wines, white wines, wine words, beers, spirits, liqueurs, national spirits, wine regions and Oktoberfest (which now carries the sensitive flag itself). No entry changes. Their members now export: themes 3,116 -> 3,132, entry rows 61,079 -> 61,468, so rows and links shift. New contract warnings, accepted by Simon: 5 same-text roots (Kirin, Madeira, Magnum, Miller, Muscat before the common word) and 3 regional roots (bitter, malt liquor, real ale). No pin until Simon asks; please measure against v418.
