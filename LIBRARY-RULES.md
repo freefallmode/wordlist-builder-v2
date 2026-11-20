@@ -66,7 +66,7 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
   - By kind: plain categories and places 1-2 (3+ when specialist or overlapping a neighbour); compound 3 (2 when the shared word is very common); property 3-4 (2 if concrete); wordplay 4 (3 for rhymes, double letters, palindromes; 5 for unusual patterns). Detail: tools/gen/BRIEF-ident.md. [`theme-unrated` (error)]
 - Theme difficulty is never stored: `ident + 0.5 x (pop - 3)`, 1.0-5.0 (`themeDifficulty` in js/model.js). [`contract-difficulty` (error)]
 - `complete`: a finite set with one agreed membership (months, planets, the four humours). Never for a set people disagree on (archangels). The game rates complete themes easier. [`complete-no-note`, `complete-extra`, `complete-missing`]
-- `adult` (inherited): drugs, sexual content, violence (`FLAG_HELP`). An adult theme never plays. Alcohol is not adult: alcoholic drinks are sensitive only (Simon, I31, v418). (no check: judgement)
+- `adult` (inherited): drugs, sexual content, violence (`FLAG_HELP`), and with them war, weapons, gambling and stag nights (Simon, 2026-11-20: they stay adult). An adult theme never plays. Alcohol is not adult: alcoholic drinks are sensitive only (Simon, I31, v418). (no check: judgement)
 - `sensitive` (inherited): religion, politics, death. The game holds sensitive themes and words back to its sensitive start level (31, game g25); below it a theme plays only with 4 non-sensitive usable words. (no check: judgement)
 - `tm` (inherited): brands, titles, characters. The game does not read it. (no check: judgement)
 - `lang` (inherited), language-specific: depends on English spelling, sound or slang and will not translate (rhymes, puns, slang, acronyms, anagrams, wordplay). Locks the theme by default; the game may drop it by plan. (no check: judgement)
@@ -207,7 +207,7 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
 - Spelling aliases with region codes other than US/UK: kept "for now" (47 at v418; the docs say 44) until Simon settles them.
 - Alias links: DESIGN.md 3, DESIGN-entries.md 3.5, `alias-link-kind` and the entry dialog still allow regional, synonym, abbreviation and translation aliases to hold links; v413 removed every one and the export writes none. This file says link the root. A check for new alias links does not exist.
 - (Settled 2026-11-20, v419: the drink themes are sensitive, not adult.)
-- Adult scope: `FLAG_HELP` says drugs, sexual content, violence, and war, weapons and stag-night words are adult; no recorded decision narrows adult to sexual content.
+- (Settled 2026-11-20, Simon: adult stays as it is, covering drugs, sexual content and violence, including war, weapons, gambling and stag nights; alcohol is sensitive only.)
 - I30 leftovers: places of worship and religious festivals (easy words sensitive) are for Simon; no gap check exists.
 - Spelling alias familiarity: DESIGN-entries.md 3.1 says a spelling alias takes the root's ratings; the prompt and the briefs give it its own (colour 2 under color 1).
 - Words left for Simon in the decisions log: `Liebfraumilch`, `hoover` [verb] split, unverified `Côtes du Rhône` and `Gavi`, the capitalised classical orders (`Doric`, `Ionic`; not swept by the style rule). Settled, not open: `Bordeaux` [wine] stays capital (Simon).
