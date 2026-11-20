@@ -1,6 +1,6 @@
-# Questions for the game session (_WS_), not yet sent
+# Questions for the game session (_WS_), sent 2026-11-20 to ref 38470e
 
-Drafted 2026-11-20. Not delivered: _WS_ was not reachable. Send when it is back, on Simon's word.
+Drafted 2026-11-20; first attempt failed (_WS_ unreachable); sent on Simon's word once it was back.
 
 Questions from Simon, following your field table (now recorded in wordlist-builder-v2 GAME-CONTRACT.md and enforced by a new export-contract gate step). Please answer from the code, with a rough cost for each change.
 
