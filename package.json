@@ -1,1 +1,1 @@
-{"type":"module","scripts":{"test":"node --test tests/core.test.mjs","start":"node serve.mjs"}}
+{"type":"module","scripts":{"test":"node --test tests/core.test.mjs","start":"node serve.mjs","gate":"node tools/gate.mjs"}}

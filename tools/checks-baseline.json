@@ -1,0 +1,12 @@
+{
+  "note": "Most warnings of each kind the library may have; tools/gate.mjs fails when a count is higher. A kind not listed counts as 0. Written from library v411 (Checks as the batch scripts run them, without the frequency list). Raising a count needs Simon's approval and an explicit edit of this file, committed with the change; lower a count when a batch fixes warnings.",
+  "library": 411,
+  "warn": {
+    "clash-big": 1,
+    "complete-extra": 0,
+    "long": 5,
+    "maybe-duplicate": 1,
+    "theme-name": 3,
+    "theme-name-long": 0
+  }
+}

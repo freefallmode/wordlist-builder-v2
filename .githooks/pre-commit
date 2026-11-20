@@ -1,0 +1,15 @@
+#!/bin/sh
+# Library gate before every commit: node tools/gate.mjs --staged checks what the commit would hold (see tools/gate.mjs).
+# It skips quickly when no library data, validation or export code is staged. Enable once per clone:
+#   git config core.hooksPath .githooks
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-commit: node not found on PATH; the library gate cannot run. Install Node, or commit from a shell where node works." >&2
+  exit 1
+fi
+node tools/gate.mjs --staged
+status=$?
+if [ $status -ne 0 ]; then
+  echo "pre-commit: the library gate failed (exit $status); commit blocked. Fix the issues above (see CLAUDE.md)." >&2
+  exit 1
+fi
+exit 0
