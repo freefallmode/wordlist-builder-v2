@@ -76,3 +76,5 @@ The game confirmed the rule strings:
 @id members include the whole subtree. An unplayable reference theme works too.
 
 **Change (Simon, 2026-11-20):** "numbers, first letter changed" and "animals plus a letter" are exempt from property rules too: both are `curated`, with no reference theme. Tested: no-vowels, roman, reversible (3); curated: 11.
+
+**Game g24 committed (Word Safari be895a3, 2026-11-20):** reads no-vowels, roman, reversible and curated (all 14 themes play on a v411 copy; rhyming_word_pairs appeared 0 times in 2,000 levels per mode). Regional roots +1/+2 band; shared texts looked up in every root; the slim drops alias links, so the export may stop writing them. Data fault: for 13 of 47 reversible_words members the reverse is not a library word (time/emit, trap/part, snap/pans, denim/mined, diaper/repaid, straw/warts); proposed contract check: every reversible member's reverse is an exported word.
