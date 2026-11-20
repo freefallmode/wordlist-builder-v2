@@ -5,6 +5,7 @@ Library: `data/wordlist-en.project.json` (8 MB, one theme or entry per line). Ga
 
 ## Read first
 
+- LIBRARY-RULES.md: read before generating or editing any words or themes.
 - `PROJECT_STATUS.md`: current state, the library change workflow, delegation rules, warnings baseline.
 - `DESIGN.md`: design record; section 6 lists the check kinds, "Enforcement" the gate.
 - `DESIGN-entries.md`: word families, synonym groups, forms, the capital (case) rule, decisions log.
