@@ -1,0 +1,40 @@
+Batch v420 review (2026-11-20): the five words left to judgement. Result: no library change; no batch script written.
+Dictionary pages read 2026-11-20 in the built-in browser or by page fetch (read-only, no sign-in): Merriam-Webster, Oxford Learner's, Dictionary.com
+(Random House US + Collins UK), Wiktionary. Collins's own site answered a Cloudflare challenge (not bypassed); Collins is read through Dictionary.com.
+
+Git history: Simon's decisions already exist.
+  v392 (a422a04, batch392-changes.txt; PROJECT_STATUS.md "Simon's rulings": "gavi, cotes du rhone, liebfraumilch lowercase"), v389 (19d2895:
+  hoover [to vacuum] its own root, "hoover verb drops out of the family export, accepted"), v376 (Doric, Ionic column, Corinthian, Tuscan stay capital;
+  Composite lowercase, Simon). The "left for Simon" line in LIBRARY-RULES.md section 7 and the v388 note in DESIGN-entries.md are stale on these.
+
+1. liebfraumilch (53832, lowercase common, white_wines): no change.
+   M-W https://www.merriam-webster.com/dictionary/liebfraumilch  headword "liebfraumilch", noun, "a fruity white Rhine wine".
+   Oxford Learner's .../definition/english/liebfraumilch  "Liebfraumilch" noun "a type of German white wine".
+   Dictionary.com/browse/liebfraumilch  Random House "Liebfraumilch"; Collins "Liebfraumilch".
+   Wiktionary /wiki/Liebfraumilch  "Liebfraumilch".
+   M-W lowercase vs all others capital: they disagree, so rules 1 and 9 give lowercase common (the v392 state). Not a place name but a
+   convent name; the rule 1 tie-break applies either way.
+2. hoover (23868, verb [to vacuum], UK, tm, root, linked only in "brand names used as words"): no change.
+   M-W /dictionary/hoover  verb "hoover" (chiefly British, to clean with a vacuum cleaner); separate entry "Hoover" trademark "used for a vacuum cleaner".
+   Oxford Learner's /definition/english/hoover  "hoover" verb (British English) lowercase.
+   Dictionary.com/browse/hoover  Random House verb "hoover (often initial capital letter)"; Collins "Hoover" capital, noun and verb.
+   Rule 6: the noun stays capital org tm (Hoover 4736, same theme); the verb is the separate lowercase entry, which already exists (v389) as google's
+   counterpart. Cleaning verbs already has vacuum [to clean]; a second root with the same sense would repeat it (overlap), so hoover is not linked
+   there; its brand-theme link is what the verb sense needs. Nothing to add.
+3. gavi (53828, lowercase common, white_wines): no change.
+   M-W /dictionary/gavi 404; Oxford Learner's .../gavi 404; Dictionary.com: no entry (search redirects to Ravi); Wiktionary: only an Italian
+   noun "Gavi", no English entry. Nothing checkable: rule 9 lowercase, still "recheck" (as v392).
+4. côtes du rhône (53808, lowercase common, alias cotes du rhone):
+   M-W /dictionary/côtes du rhône  headword "côtes du rhône", noun, "a common red wine produced in the Rhône region" (lowercase).
+   Oxford Learner's: no entry; Dictionary.com: no entry (nearest Bouches-du-Rhône); Wiktionary: 404.
+   One dictionary, lowercase: rule 1 lowercase, unchanged; "recheck" if a second dictionary is ever reachable.
+5. Classical orders in "column styles" (14138 Doric, 14139 Ionic column shown "Ionic", 14140 Corinthian, 14141 Tuscan: proper, capital): no change.
+   M-W: Doric (adj, "belonging to the oldest and simplest Greek architectural order"), Ionic (adj 2), Corinthian (adj 2), Tuscan (adj 2, "one of the
+   five classical orders ... Roman origin") all headwords capital, the ions sense "ionic" lowercase.
+   Oxford Learner's: Doric, Ionic (architecture), Corinthian capital; no Tuscan entry (404).
+   Dictionary.com: Random House and Collins capitalise Doric, Ionic, Corinthian, Tuscan for the order sense.
+   All dictionaries capitalise: rule 1 capital; the style rule's exception (English has the word only as a name or its adjective) applies, so
+   they stay capital proper. Composite is lowercase (v376, Simon) and not re-decided.
+
+No batch changes, no library version bump, no export shifts. LIBRARY-RULES.md (not edited here) section 7 line "Words left for Simon ..." can be
+removed or reworded: all five are settled as above.

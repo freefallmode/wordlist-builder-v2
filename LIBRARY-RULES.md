@@ -108,7 +108,7 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
 ### Alias fields (same dialog, "This is an alias of")
 
 - An alias has its own text, gloss, pos (forms), type, fam, flags and region; `aliasOf` the root's id; `aliasKind` one of spelling, form, regional, abbreviation, translation, synonym. [`alias-kind`, `unrated` (error)]
-- No links, `typ`, `show`, `use`, groups or kin of its own: it appears wherever its root is (0 aliases hold links since v413; the export writes none). [`alias-link-kind`, `contract-alias-links` (error), `kin-bad`, `group-member`]
+- No links, `typ`, `show`, `use`, groups or kin of its own: it appears wherever its root is (0 aliases hold links since v413; the export writes none). [`alias-links` (error), `contract-alias-links` (error), `kin-bad`, `group-member`]
 
 ## 5. Content rules
 
@@ -158,7 +158,7 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
 - One display alias per dialect: a root has at most one UK-tagged and one US-tagged spelling or regional alias (the dialect's standard everyday word); other true variants are `synonym` aliases, keeping a region when specific to it. None of a dialect when the root is that dialect's word. No alias tagged both UK and US. [`contract-alias-dialect`]
 - A spelling or form alias has the root's adult, vulgar, sensitive and tm flags. [`alias-flags`]
 - Every alias has its own honest familiarity for a general UK/US adult (a rarer alias a higher number). [`unrated` (error)]
-- Link the root, never the alias. Where a theme needs the alias's text (a locked theme, a regional answer), link the root and `show` the alias's text. [`alias-link-kind`, `contract-alias-links` (error)]
+- Link the root, never the alias. Where a theme needs the alias's text (a locked theme, a regional answer), link the root and `show` the alias's text. [`alias-links` (error), `contract-alias-links` (error)]
 - One alias family (a root and its aliases) has at most one member in a theme and one in a level. [`family-twice`]
 - A regional root with a same-sense equivalent becomes an alias of it in place (id kept): links the root lacks move to it (with `show` where the theme needs the regional word), group places and kin pass to the root. [`contract-root-region`]
 
@@ -205,9 +205,9 @@ Never hand-edit `data/*.json`. `data/breaks-en.txt` is written only by `tools/br
 ## 7. Open points for Simon
 
 - Spelling aliases with region codes other than US/UK: kept "for now" (47 at v418; the docs say 44) until Simon settles them.
-- Alias links: DESIGN.md 3, DESIGN-entries.md 3.5, `alias-link-kind` and the entry dialog still allow regional, synonym, abbreviation and translation aliases to hold links; v413 removed every one and the export writes none. This file says link the root. A check for new alias links does not exist.
+- Alias links (settled 2026-11-20, Simon): no alias holds a link; the root is linked. Enforced by the error `alias-links` and `contract-alias-links`; the app links the root, and the entry dialog of an alias shows the root's themes read-only.
 - (Settled 2026-11-20, v419: the drink themes are sensitive, not adult.)
 - (Settled 2026-11-20, Simon: adult stays as it is, covering drugs, sexual content and violence, including war, weapons, gambling and stag nights; alcohol is sensitive only.)
 - I30 leftovers: places of worship and religious festivals (easy words sensitive) are for Simon; no gap check exists.
 - Spelling alias familiarity: DESIGN-entries.md 3.1 says a spelling alias takes the root's ratings; the prompt and the briefs give it its own (colour 2 under color 1).
-- Words left for Simon in the decisions log: `Liebfraumilch`, `hoover` [verb] split, unverified `Côtes du Rhône` and `Gavi`, the capitalised classical orders (`Doric`, `Ionic`; not swept by the style rule). Settled, not open: `Bordeaux` [wine] stays capital (Simon).
+- (Settled 2026-11-20, re-checked on dictionary pages: liebfraumilch, gavi and côtes du rhône stay lowercase (v392, Simon; gavi and côtes du rhône marked recheck); hoover [verb] is already its own lowercase root (v389); Doric, Ionic, Corinthian, Tuscan stay capital, Composite lowercase (v376). Evidence: tools/gen/words-evidence-2026-11-20.txt.)
