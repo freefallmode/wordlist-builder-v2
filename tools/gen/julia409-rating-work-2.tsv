@@ -1,0 +1,311 @@
+# v409 rating review (Julia's themes). typ rows: re-judge the rating of each member in the theme (1 = the first words anyone names ... 5 = real but peripheral), relative to the other members.
+# fam rows: check the familiarity of each new word (1 every child knows it ... 5 few people) against the comparable main entries. Existing entries keep their own fam.
+# Answer in tools/gen/julia409-ratings.tsv: entryId<TAB>themeId or fam<TAB>oldValue<TAB>newValue<TAB>reason (only the changes).
+kind	themeId	theme	entryId	text	gloss	fam	rating	zipf	status	comparables
+typ	courtroom_words	courtroom words	33668	gavel		2	1	2.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4186	judge		1	1	5.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4187	jury		1	1	4.5	member (theme kept)	
+typ	courtroom_words	courtroom words	4069	lawyer		1	1	4.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4189	verdict		1	1	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4192	witness		1	1	4.5	member (theme kept)	
+typ	courtroom_words	courtroom words	33669	courtroom		1	2	3.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33670	cross-examination		3	2	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	4236	defendant		3	2	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4191	evidence		1	2	5.1	member (theme kept)	
+typ	courtroom_words	courtroom words	61129	jury box		1	2	4.4	member (theme kept)	
+typ	courtroom_words	courtroom words	33666	objection		2	2	3.8	member (theme kept)	
+typ	courtroom_words	courtroom words	4237	prosecutor		3	2	3.9	member (theme kept)	
+typ	courtroom_words	courtroom words	4235	testimony		3	2	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	4188	trial	court	1	2	4.9	member (theme kept)	
+typ	courtroom_words	courtroom words	33671	witness stand		2	2	4.4	member (theme kept)	
+typ	courtroom_words	courtroom words	4226	appeal	court	2	3	4.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4224	bail	court	2	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4263	bailiff		4	3	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4246	barrister		3	3	3.4	member (theme kept)	
+typ	courtroom_words	courtroom words	33678	closing argument		3	3	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	33673	court reporter		3	3	4.4	member (theme kept)	
+typ	courtroom_words	courtroom words	33672	dock	court	3	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	14735	hearsay		3	3	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	33674	hung jury		3	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	66956	overrule		2	3	2.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4238	plaintiff		3	3	3.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33667	plea		2	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	33665	sentence	court	2	3	4.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33675	sustained		3	3	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	4259	acquittal		4	4	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4254	affidavit		4	4	3.4	member (theme kept)	
+typ	courtroom_words	courtroom words	4270	arraignment		5	4	2.8	member (theme kept)	
+typ	courtroom_words	courtroom words	4267	contempt of court		4	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4071	counsel	lawyer	4	4	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	68058	deposition	court	3	4	3.5	new word	
+typ	courtroom_words	courtroom words	61127	gag order		3	4	3.6	member (theme kept)	
+typ	courtroom_words	courtroom words	26920	habeas corpus		3	4	2.8	member (theme kept)	
+typ	courtroom_words	courtroom words	4255	indictment		4	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4260	mistrial		4	4	2.6	member (theme kept)	
+typ	courtroom_words	courtroom words	4268	plea bargain		4	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4269	plea deal		3	4	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4247	solicitor	lawyer	3	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4253	subpoena		4	4	3.3	member (theme kept)	
+typ	courtroom_words	courtroom words	33677	summation	closing speech	4	4	2.9	member (theme kept)	
+typ	courtroom_words	courtroom words	33679	voir dire		5	4	2.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33783	amicus curiae		5	5	2.1	member (theme kept)	
+typ	courtroom_words	courtroom words	33799	certiorari		5	5	2.5	member (theme kept)	
+typ	courtroom_words	courtroom words	61126	estoppel		5	5	2.3	member (theme kept)	
+typ	courtroom_words	courtroom words	33782	in camera		5	5		member (theme kept)	
+typ	courtroom_words	courtroom words	33777	mens rea		4	5	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	33787	nolo contendere		5	5	1.5	member (theme kept)	
+typ	courtroom_words	courtroom words	33785	res judicata		5	5	1.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33784	stare decisis		5	5	1.8	member (theme kept)	
+typ	courtroom_words	courtroom words	33780	sub judice		5	5	1.8	member (theme kept)	
+typ	courtroom_words	courtroom words	61128	tipstaff		5	5		member (theme kept)	
+typ	courtroom_words	courtroom words	4272	tort		5	5	3.1	member (theme kept)	
+fam	courtroom_words	courtroom words	68058	deposition	court	3		3.5	new word	plaintiff fam 3 z 3.6; barrister fam 3 z 3.4; deposition (erosion) fam 4 z 3.5; deposition (phase change) fam 5 z 3.5
+typ	antarctic_animals	Antarctic animals	8234	emperor penguin		1	1	3.7	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1064	penguin	bird	1	1	3.8	linked by v409	
+typ	antarctic_animals	Antarctic animals	8236	Adelie penguin		4	2	1.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8237	chinstrap penguin		4	2	2.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8898	elephant seal		3	2	3.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8238	gentoo penguin		4	2	2.4	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8235	king penguin		2	2	3.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1301	krill		3	2	2.6	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8902	leopard seal		3	2	3.5	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1097	albatross	bird	2	3	2.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1306	blue whale		1	3	4.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9706	crabeater seal		4	3		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8897	fur seal		3	3	3.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1307	humpback whale		2	3	2.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1305	killer whale		1	3	3.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8239	macaroni penguin		4	3	3.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1304	orca		1	3	2.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8240	rockhopper penguin		4	3	1.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8144	wandering albatross		4	3	2.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9704	Weddell seal		4	3	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8970	colossal squid		3	4	3.1	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9711	icefish		4	4		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	7867	minke whale		4	4	2.3	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9712	Ross seal		5	4	4.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8122	skua		4	4	1.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9705	snow petrel		4	4	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9710	Antarctic midge		5	5	2.7	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9714	cape petrel		5	5	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9709	giant petrel		5	5	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9708	sheathbill		5	5		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9713	southern right whale		4	5	3.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1308	sperm whale		2	5	3.6	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9717	springtail		5	5		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9718	tardigrade		4	5	1.6	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1128	tern		4	5	2.7	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	63295	toothfish		5	5		member (theme kept)	
+typ	famous_beaches	famous beaches	36613	Bondi Beach		2	1	3.0	member (theme kept)	
+typ	famous_beaches	famous beaches	36615	Copacabana	beach	2	1	2.6	member (theme kept)	
+typ	famous_beaches	famous beaches	36621	Miami Beach		2	1	4.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36616	Waikiki		2	1	2.7	member (theme kept)	
+typ	famous_beaches	famous beaches	36630	Brighton Beach		3	2	3.8	member (theme kept)	
+typ	famous_beaches	famous beaches	36618	Ipanema	beach	3	2	2.3	member (theme kept)	
+typ	famous_beaches	famous beaches	36617	Malibu	beach	2	2	3.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36628	Surfers Paradise		3	2	3.2	member (theme kept)	
+typ	famous_beaches	famous beaches	36620	Venice Beach		2	2	3.9	member (theme kept)	
+typ	famous_beaches	famous beaches	36622	Daytona Beach		2	3	3.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36624	Huntington Beach		3	3	3.5	member (theme kept)	
+typ	famous_beaches	famous beaches	36640	Manly Beach		3	3	3.7	member (theme kept)	
+typ	famous_beaches	famous beaches	36625	Omaha Beach		2	3	3.6	member (theme kept)	
+typ	famous_beaches	famous beaches	63171	Patong		4	3	1.7	member (theme kept)	
+typ	famous_beaches	famous beaches	36115	Playa del Carmen		3	3	3.0	member (theme kept)	
+typ	famous_beaches	famous beaches	36635	Seven Mile Beach		4	3	4.3	member (theme kept)	
+typ	famous_beaches	famous beaches	16715	South Beach		4	3	4.8	member (theme kept)	
+typ	famous_beaches	famous beaches	36619	Whitehaven Beach		4	3	2.6	member (theme kept)	
+typ	famous_beaches	famous beaches	36632	Barceloneta		4	4	1.8	member (theme kept)	
+typ	famous_beaches	famous beaches	36627	Bells Beach		4	4	3.9	member (theme kept)	
+typ	famous_beaches	famous beaches	36629	Cable Beach		4	4	4.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36109	Cabo San Lucas		3	4	3.0	member (theme kept)	
+typ	famous_beaches	famous beaches	36637	Camps Bay		4	4	4.1	member (theme kept)	
+typ	famous_beaches	famous beaches	36641	Coogee		4	4	2.2	member (theme kept)	
+typ	famous_beaches	famous beaches	63170	Fistral		5	4	1.5	member (theme kept)	
+typ	famous_beaches	famous beaches	36626	Juno Beach		3	4	3.2	member (theme kept)	
+typ	famous_beaches	famous beaches	36623	Myrtle Beach		3	4	3.3	member (theme kept)	
+typ	famous_beaches	famous beaches	36642	Pink Sands Beach		4	4	3.7	member (theme kept)	
+typ	famous_beaches	famous beaches	63172	Railay		4	4		member (theme kept)	
+typ	famous_beaches	famous beaches	62687	Diani		5	5	1.7	linked by v409	
+typ	famous_beaches	famous beaches	36638	Muizenberg		5	5		member (theme kept)	
+typ	famous_beaches	famous beaches	62688	Navagio		5	5		linked by v409	
+typ	famous_beaches	famous beaches	36639	Praia da Rocha		5	5	2.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36636	Shipwreck Beach		4	5	3.1	member (theme kept)	
+typ	famous_beaches	famous beaches	60754	Zlatni Rat		5	5		linked by v409	
+typ	renewable_energy	renewable energy	32236	solar panel		1	1	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32228	solar power		1	1	4.5	member (theme kept)	
+typ	renewable_energy	renewable energy	32235	wind farm		1	1	4.5	member (theme kept)	
+typ	renewable_energy	renewable energy	32229	wind turbine		1	1	3.6	member (theme kept)	
+typ	renewable_energy	renewable energy	31945	geothermal energy		3	2	3.2	member (theme kept)	
+typ	renewable_energy	renewable energy	27545	hydro	electricity	4	2	3.6	linked by v409	
+typ	renewable_energy	renewable energy	49752	hydroelectric		2	2	3.1	linked by v409	
+typ	renewable_energy	renewable energy	32231	hydroelectric power		2	2	3.1	member (theme kept)	
+typ	renewable_energy	renewable energy	32230	hydropower		2	2	2.9	member (theme kept)	
+typ	renewable_energy	renewable energy	32242	solar farm		2	2	4.3	member (theme kept)	
+typ	renewable_energy	renewable energy	32234	tidal power		2	2	3.7	member (theme kept)	
+typ	renewable_energy	renewable energy	32237	biofuel		3	3	2.7	member (theme kept)	
+typ	renewable_energy	renewable energy	32246	biogas		3	3	2.6	member (theme kept)	
+typ	renewable_energy	renewable energy	32233	biomass		3	3	3.4	member (theme kept)	
+typ	renewable_energy	renewable energy	32243	offshore wind		3	3	3.8	member (theme kept)	
+typ	renewable_energy	renewable energy	32240	photovoltaic		4	3	3.0	member (theme kept)	
+typ	renewable_energy	renewable energy	32248	solar cell		2	3	4.4	member (theme kept)	
+typ	renewable_energy	renewable energy	32238	wave energy		3	3	4.5	member (theme kept)	
+typ	renewable_energy	renewable energy	2475	windmill	building	1	3	3.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32247	battery storage		3	4	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32257	biodiesel		4	4	2.7	member (theme kept)	
+typ	renewable_energy	renewable energy	7380	dam	barrier	1	4	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	23592	heat pump		3	4	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32249	rotor blade	wind turbine	3	4	3.3	member (theme kept)	
+typ	renewable_energy	renewable energy	32250	tidal barrage		4	4	3.2	member (theme kept)	
+typ	renewable_energy	renewable energy	62263	bagasse		5	5	1.8	linked by v409	
+typ	renewable_energy	renewable energy	49761	ocean thermal		5	5	3.9	linked by v409	
+typ	renewable_energy	renewable energy	62265	OTEC		5	5	1.5	linked by v409	
+typ	bike_tricks	bike tricks	68005	bunny hop	bike	3	1	3.8	new word	
+typ	bike_tricks	bike tricks	47993	wheelie		2	1	2.7	linked by v409	
+typ	bike_tricks	bike tricks	68008	barspin		4	2		new word	
+typ	bike_tricks	bike tricks	68009	endo		4	2	2.9	new word	
+typ	bike_tricks	bike tricks	48023	manual	trick	3	2	4.3	linked by v409	
+typ	bike_tricks	bike tricks	68006	no-hander		3	2	2.9	new word	
+typ	bike_tricks	bike tricks	68007	tailwhip		4	2		new word	
+typ	bike_tricks	bike tricks	11833	backflip		2	3	2.7	linked by v409	
+typ	bike_tricks	bike tricks	68010	stoppie		4	3		new word	
+typ	bike_tricks	bike tricks	68011	track stand		4	3	4.7	new word	
+typ	bike_tricks	bike tricks	68012	whip	bike trick	4	3	4.0	new word	
+typ	bike_tricks	bike tricks	68013	can-can	bike trick	5	4	6.2	new word	
+typ	bike_tricks	bike tricks	43636	fakie		3	4	1.6	linked by v409	
+fam	bike_tricks	bike tricks	68005	bunny hop	bike	3		3.8	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; gym bunny fam 4 z 3.8; bunny hop (dance) fam 3 z 3.8
+fam	bike_tricks	bike tricks	68008	barspin		4			new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; manual (trick) fam 3 z 4.3; fakie fam 3 z 1.6
+fam	bike_tricks	bike tricks	68009	endo		4		2.9	new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; fakie fam 3 z 1.6; Shusaku Endo fam 5 z 
+fam	bike_tricks	bike tricks	68006	no-hander		3		2.9	new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; fakie fam 3 z 1.6; manual (trick) fam 3 z 4.3
+fam	bike_tricks	bike tricks	68007	tailwhip		4			new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; manual (trick) fam 3 z 4.3; fakie fam 3 z 1.6
+fam	bike_tricks	bike tricks	68010	stoppie		4			new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; manual (trick) fam 3 z 4.3; fakie fam 3 z 1.6
+fam	bike_tricks	bike tricks	68011	track stand		4		4.7	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; eight-track fam 4 z 4.7; hall stand fam 3 z 4.7
+fam	bike_tricks	bike tricks	68012	whip	bike trick	4		4.0	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; whip (mix) fam 2 z 4.0; whip (politics) fam 3 z 4.0
+fam	bike_tricks	bike tricks	68013	can-can	bike trick	5		6.2	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; can-can (dance) fam 2 z 6.2; no can do fam 2 z 6.0
+typ	recycling_words	recyclables	23982	cardboard		1	1	3.7	member (theme kept)	
+typ	recycling_words	recyclables	68043	glass bottle		1	1	4.4	new word	
+typ	recycling_words	recyclables	68044	milk carton		1	1	3.2	new word	
+typ	recycling_words	recyclables	4567	newspaper		1	1	4.6	member (theme kept)	
+typ	recycling_words	recyclables	31065	plastic bottle		1	1	4.2	member (theme kept)	
+typ	recycling_words	recyclables	39028	tin can		1	1	4.0	linked by v409	
+typ	recycling_words	recyclables	23983	aluminum can		2	2	4.0	member (theme kept)	
+typ	recycling_words	recyclables	66386	cereal box		1	2	3.7	linked by v409	
+typ	recycling_words	recyclables	62428	egg carton		2	2	3.2	linked by v409	
+typ	recycling_words	recyclables	32210	glass jar		1	2	3.8	member (theme kept)	
+typ	recycling_words	recyclables	68045	juice carton		2	2	3.2	new word	
+typ	recycling_words	recyclables	35166	junk mail		1	2	3.9	linked by v409	
+typ	recycling_words	recyclables	4557	magazine	periodical	1	2	4.7	linked by v409	
+typ	recycling_words	recyclables	68046	pizza box		1	2	4.3	new word	
+typ	recycling_words	recyclables	32214	scrap metal		2	2	3.8	member (theme kept)	
+typ	recycling_words	recyclables	40255	soda can		1	2	4.0	linked by v409	
+typ	recycling_words	recyclables	12745	envelope	mail	1	3	3.9	linked by v409	
+typ	recycling_words	recyclables	25559	paper bag		1	3	4.6	linked by v409	
+fam	recycling_words	recyclables	68043	glass bottle		1		4.4	new word	newspaper fam 1 z 4.6; paper bag fam 1 z 4.6; sugar glass fam 4 z 4.4; glass mountain fam 5 z 4.4
+fam	recycling_words	recyclables	68044	milk carton		1		3.2	new word	egg carton fam 2 z 3.2; cardboard fam 1 z 3.7; saffron milk cap fam 5 z 3.2; carton fam 2 z 3.2
+fam	recycling_words	recyclables	68045	juice carton		2		3.2	new word	cardboard fam 1 z 3.7; cereal box fam 1 z 3.7; carton fam 2 z 3.2; egg carton fam 2 z 3.2
+fam	recycling_words	recyclables	68046	pizza box		1		4.3	new word	plastic bottle fam 1 z 4.2; newspaper fam 1 z 4.6; idiot box fam 4 z 4.3; New York-style pizza fam 2 z 4.3
+typ	hiking_dangers	hiking dangers	14331	blister	skin bubble	1	1	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	994	bear	animal	1	2	4.7	linked by v409	
+typ	hiking_dangers	hiking dangers	3851	dehydration		2	2	3.3	linked by v409	
+typ	hiking_dangers	hiking dangers	15083	hypothermia		1	2	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	1973	lightning	storm	1	2	4.2	linked by v409	
+typ	hiking_dangers	hiking dangers	30614	poison ivy	plant	1	2	3.6	linked by v409	
+typ	hiking_dangers	hiking dangers	1135	snake	animal	1	2	4.2	linked by v409	
+typ	hiking_dangers	hiking dangers	14999	sprained ankle		1	2	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	14337	sunburn		1	2	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	1370	tick	bug	2	2	3.8	linked by v409	
+typ	hiking_dangers	hiking dangers	31222	flash flood		2	3	4.0	linked by v409	
+typ	hiking_dangers	hiking dangers	1974	fog		1	3	3.9	linked by v409	
+typ	hiking_dangers	hiking dangers	15009	frostbite		2	3	2.8	linked by v409	
+typ	hiking_dangers	hiking dangers	31451	heatstroke		2	3	2.3	linked by v409	
+typ	hiking_dangers	hiking dangers	1345	mosquito		1	3	3.6	linked by v409	
+typ	hiking_dangers	hiking dangers	67984	rockfall		3	3	1.9	new word	
+typ	hiking_dangers	hiking dangers	1779	stinging nettle		2	3	2.6	linked by v409	
+typ	hiking_dangers	hiking dangers	43543	avalanche	skiing	2	4	3.5	linked by v409	
+fam	hiking_dangers	hiking dangers	67984	rockfall		3		1.9	new word	heatstroke fam 2 z 2.3; stinging nettle fam 2 z 2.6; frostbite fam 2 z 2.8; blister (skin bubble) fam 1 z 3.0
+typ	oil_industry	oil industry	32339	drilling		2	1	3.9	linked by v409	
+typ	oil_industry	oil industry	32337	oil rig		1	1	3.9	linked by v409	
+typ	oil_industry	oil industry	32340	refinery		2	1	3.5	linked by v409	
+typ	oil_industry	oil industry	25480	barrel	container	1	2	4.2	linked by v409	
+typ	oil_industry	oil industry	68033	derrick	oil well	3	2	3.5	new word	
+typ	oil_industry	oil industry	32336	fracking		3	2	3.3	linked by v409	
+typ	oil_industry	oil industry	32341	pipeline		2	2	4.0	linked by v409	
+typ	oil_industry	oil industry	2810	tanker	ship	2	2	3.4	linked by v409	
+typ	oil_industry	oil industry	68035	gusher	oil well	4	3	2.1	new word	
+typ	oil_industry	oil industry	29206	OPEC		2	3	3.2	linked by v409	
+typ	oil_industry	oil industry	68034	pump jack		4	3	4.2	new word	
+typ	oil_industry	oil industry	68036	roughneck	oil worker	4	4	1.8	new word	
+typ	oil_industry	oil industry	32352	wellhead		5	4	2.1	linked by v409	
+fam	oil_industry	oil industry	68033	derrick	oil well	3		3.5	new word	refinery fam 2 z 3.5; tanker (ship) fam 2 z 3.4; fracking fam 3 z 3.3; derrick (harbor) fam 4 z 3.5
+fam	oil_industry	oil industry	68035	gusher	oil well	4		2.1	new word	wellhead fam 5 z 2.1; OPEC fam 2 z 3.2; fracking fam 3 z 3.3; tanker (ship) fam 2 z 3.4
+fam	oil_industry	oil industry	68034	pump jack		4		4.2	new word	barrel (container) fam 1 z 4.2; pipeline fam 2 z 4.0; new jack swing fam 4 z 4.2; heat pump fam 3 z 4.2
+fam	oil_industry	oil industry	68036	roughneck	oil worker	4		1.8	new word	wellhead fam 5 z 2.1; OPEC fam 2 z 3.2; fracking fam 3 z 3.3; tanker (ship) fam 2 z 3.4
+typ	climbing_styles	climbing styles	5624	bouldering		3	1	2.3	linked by v409	
+typ	climbing_styles	climbing styles	5602	rock climbing		1	1	4.0	member (theme kept)	
+typ	climbing_styles	climbing styles	67993	indoor climbing		2	2	3.8	new word	
+typ	climbing_styles	climbing styles	5645	sport climbing		3	2	4.0	linked by v409	
+typ	climbing_styles	climbing styles	5638	free solo climbing		4	3	4.0	member (theme kept)	
+typ	climbing_styles	climbing styles	5368	ice climbing		3	3	4.0	member (theme kept)	
+typ	climbing_styles	climbing styles	45069	lead climbing		3	3	4.1	linked by v409	
+typ	climbing_styles	climbing styles	67994	speed climbing		3	3	4.0	new word	
+typ	climbing_styles	climbing styles	45070	top rope		3	3	4.1	linked by v409	
+typ	climbing_styles	climbing styles	67995	aid climbing		4	4	4.0	new word	
+typ	climbing_styles	climbing styles	67996	alpine climbing		4	4	3.5	new word	
+typ	climbing_styles	climbing styles	5646	trad climbing		4	4	2.9	member (theme kept)	
+fam	climbing_styles	climbing styles	67993	indoor climbing		2		3.8	new word	ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0; rope climbing fam 3 z 3.8; climbing gym fam 2 z 3.9
+fam	climbing_styles	climbing styles	67994	speed climbing		3		4.0	new word	free solo climbing fam 4 z 4.0; sport climbing fam 3 z 4.0; ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0
+fam	climbing_styles	climbing styles	67995	aid climbing		4		4.0	new word	free solo climbing fam 4 z 4.0; sport climbing fam 3 z 4.0; ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0
+fam	climbing_styles	climbing styles	67996	alpine climbing		4		3.5	new word	ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0; ants climbing a tree fam 5 z 3.5; alpine skiing fam 3 z 3.4
+typ	protected_areas	protected areas	32261	national park		1	1	5.0	linked by v409	
+typ	protected_areas	protected areas	32268	nature reserve		2	1	4.5	linked by v409	
+typ	protected_areas	protected areas	32260	wildlife reserve		2	1	4.1	linked by v409	
+typ	protected_areas	protected areas	48724	game reserve		3	2	4.6	linked by v409	
+typ	protected_areas	protected areas	32271	marine park		3	2	4.4	linked by v409	
+typ	protected_areas	protected areas	68038	marine reserve		3	2	4.2	new word	
+typ	protected_areas	protected areas	32264	sanctuary	refuge	2	2	3.9	linked by v409	
+typ	protected_areas	protected areas	68037	wildlife refuge		2	2	3.8	new word	
+typ	protected_areas	protected areas	32278	biosphere reserve		5	3	2.9	linked by v409	
+typ	protected_areas	protected areas	68039	national forest		2	3	4.6	new word	
+typ	protected_areas	protected areas	60504	Natura 2000		4	4		linked by v409	
+typ	protected_areas	protected areas	32279	Ramsar site		5	4	1.8	linked by v409	
+fam	protected_areas	protected areas	68038	marine reserve		3		4.2	new word	wildlife reserve fam 2 z 4.1; marine park fam 3 z 4.4; marine engineering fam 3 z 4.3; marine snow fam 5 z 4.3
+fam	protected_areas	protected areas	68037	wildlife refuge		2		3.8	new word	sanctuary (refuge) fam 2 z 3.9; wildlife reserve fam 2 z 4.1; wildlife corridor fam 4 z 3.8; refuge (mountain hut) fam 3 z 3.9
+fam	protected_areas	protected areas	68039	national forest		2		4.6	new word	game reserve fam 3 z 4.6; nature reserve fam 2 z 4.5; community forest fam 4 z 4.6; Black Forest fam 2 z 4.6
+typ	layers_of_the_earth	Earth's layers	31898	core	earth	1	1	4.7	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	28647	crust		1	1	3.7	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	56617	mantle	earth layer	2	1	3.6	linked by v409	
+typ	layers_of_the_earth	Earth's layers	31900	inner core		3	2	4.3	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31899	outer core		3	2	4.1	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31904	continental crust		4	3	3.5	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31914	liquid core		3	3	4.2	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31901	lithosphere		4	3	2.4	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31907	lower mantle		4	3	3.6	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31905	oceanic crust		4	3	3.2	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31913	solid core		3	3	4.4	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31906	upper mantle		4	3	3.6	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31903	asthenosphere		5	4	1.6	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31902	Moho	crust-mantle boundary	5	5	1.9	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31910	transition zone		5	5		member (theme kept)	
+typ	geothermal_wonders	geothermal wonders	31952	Blue Lagoon		3	1	3.4	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31942	Old Faithful	geyser	2	1	4.1	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31943	Yellowstone		2	1	3.3	linked by v409	
+typ	geothermal_wonders	geothermal wonders	68061	Geysir		4	2		new word	
+typ	geothermal_wonders	geothermal wonders	68062	Grand Prismatic Spring		4	2	2.8	new word	
+typ	geothermal_wonders	geothermal wonders	31953	Pamukkale		4	2	1.6	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31944	Rotorua		4	2	2.3	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31960	Beppu		5	3	1.6	linked by v409	
+typ	geothermal_wonders	geothermal wonders	60563	Cotton Castle		4	3	4.1	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31954	Strokkur	geyser	5	3		linked by v409	
+typ	geothermal_wonders	geothermal wonders	31962	Wai-O-Tapu		5	3	2.1	linked by v409	
+fam	geothermal_wonders	geothermal wonders	68061	Geysir		4			new word	Strokkur (geyser) fam 5 z ; Yellowstone fam 2 z 3.3; Blue Lagoon fam 3 z 3.4; Rotorua fam 4 z 2.3
+fam	geothermal_wonders	geothermal wonders	68062	Grand Prismatic Spring		4		2.8	new word	Strokkur (geyser) fam 5 z ; Yellowstone fam 2 z 3.3; Grand Teton fam 4 z 2.7; grand cru fam 4 z 2.7
+typ	volcano_parts	volcano parts	1931	crater		2	1	3.6	linked by v409	
+typ	volcano_parts	volcano parts	31849	magma chamber		3	1	3.2	linked by v409	
+typ	volcano_parts	volcano parts	31842	vent	volcano	3	1	3.8	linked by v409	
+typ	volcano_parts	volcano parts	31843	caldera		3	2	2.6	linked by v409	
+typ	volcano_parts	volcano parts	31844	cone	volcano	2	2	3.8	linked by v409	
+typ	volcano_parts	volcano parts	1933	summit	mountaintop	2	2	4.3	linked by v409	
+typ	volcano_parts	volcano parts	68059	conduit	volcano	4	3	3.3	new word	
+typ	volcano_parts	volcano parts	31959	fissure		4	3	2.8	linked by v409	
+typ	volcano_parts	volcano parts	68060	flank	volcano	4	3	3.6	new word	
+fam	volcano_parts	volcano parts	68059	conduit	volcano	4		3.3	new word	magma chamber fam 3 z 3.2; crater fam 2 z 3.6; vent (volcano) fam 3 z 3.8; conduit (electrical) fam 4 z 3.3
+fam	volcano_parts	volcano parts	68060	flank	volcano	4		3.6	new word	crater fam 2 z 3.6; vent (volcano) fam 3 z 3.8; flank (body part) fam 3 z 3.6; flank (military) fam 4 z 3.6

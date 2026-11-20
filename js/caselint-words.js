@@ -36,6 +36,7 @@ export const LOWER_OK = new Set([
   56521, // alpine rose
   5362, // alpine skiing
   45105, // alpine start
+  67996, // alpine climbing (made by tools/gen/batch409.mjs, v409)
   23914, // furniture polish
   39077, // gum arabic
   3751, // nail polish

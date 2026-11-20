@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-19, library v408. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-19, library v409. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
@@ -39,8 +39,7 @@ All need Simon's go-ahead first (he approves every library change).
 
 | # | Task | Difficulty | Model |
 |---|---|---|---|
-| 1 | Julia's branch julia-category-fixes (built on v365): replay as a new batch on the current library if Simon wants it | deep reasoning | Opus |
-| 2 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
+| 1 | E8 (low priority, later: Simon 2026-11-18; tried 2026-11-17, no gain without changing row geometry, so it needs a fixed table layout or fewer rows) | standard | Sonnet |
 
 ## 5. Subagents
 

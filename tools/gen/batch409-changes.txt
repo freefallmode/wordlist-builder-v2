@@ -1,0 +1,65 @@
+Julia's branch (origin/julia-category-fixes, her v366-v382) replayed by text on v408 (already applied: this run is a check). Plan and analysis: tools/gen/julia-integration-report.md.
+C1. clean-up 1
+  four humours: choler is an old name for yellow bile (a real synonym; not an answer here, left as it is); melancholy is Greek for "black bile" but means sadness now (not an alias)
+  done: animals_with_a_poisonous_bite is gone
+  note: sidewinder 27592 (gloss "snake") keeps cowboy slang and desert; the snake is sidewinder 1194 — a later gloss pass may split them
+  done: poem_forms is gone
+  done: kitchen_crew is gone
+  done: chef_roles is gone
+  done: whale_types is gone
+  done: seal_types is gone
+  done: penguin_species is gone
+  done: bear_types is gone
+  done: animals_of_the_far_north is gone
+  done: animals_of_the_far_south is gone
+  done: soggy_places is gone
+  done: famous_stretches_of_sand is gone
+C3. kitchen themes
+C3. kitchen words: 0 words made, 0 aliases, 0 existing words linked
+C4. Ancient Greece themes
+C4. Ancient Greece words: 0 words made, 0 aliases, 0 existing words linked
+C5. outdoor themes
+C5. outdoor words: 0 words made, 0 aliases, 0 existing words linked
+C6. hard outdoor themes
+C6. hard outdoor words: 0 words made, 0 aliases, 0 existing words linked
+C7. environment themes
+C7. environment words: 0 words made, 0 aliases, 0 existing words linked
+C7. environment fixes
+  bins and recycling: in reduce|waste 3
+  done: renewable_sources is gone
+  done: buried_fuels is gone
+C8. earth science themes
+C8. earth science words: 0 words made, 0 aliases, 0 existing words linked
+C8. earth science fixes
+D. kin
+E. ratings
+  reduce 32208 bins_and_recycling 3 -> 2: reduce pairs with reuse (2) in reduce-reuse-recycle
+  ratings applied 1; not applied (old value differs) 0
+Entries left in no theme by these steps (kept as they are, Simon): 0
+Rating worklist: not written on a rerun (it is made by the run on v408)
+library changes 2; status set to rev 0; entries touched 1; new entries from #68063
+Checks: changed kinds: none
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 248, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 60
+Committed family export equals the in-memory export of v409 before the changes: NO
+Themes 3235 -> 3235; gone none; new none; theme indexes shift from none
+Entries 61045 -> 61045; first row whose entry changed: none; added 0 (none); removed 0 (none)
+Row text changes: none; flags changed: none
+Links 109220 -> 109220; rows whose link count changed: 0
+Link-index shifts: none
+Links by theme + shown text + row: gone 0 (none), new 0 (none), rating changed 0
+Clash (family export): words with an id 13153 -> 13153; ids 4602 -> 4602; sizes before 2:2835 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1; after 2:2835 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1
+  groups over 8 after: 59
+new issues: none
+
+Checks: apply 1,665 library changes, library v409; rerun 2 changes (a harmless flip-flop: Julia's step sets reduce in bins_and_recycling to 3, the rating review sets it to 2; the applied library has 2); npm test 53 pass; strict full export exit 0; style-case and propword-exceptions 0 changes; Checks errors 0, warnings theme-name 3, long 5, maybe-duplicate 1, clash-big 1 (this batch loads the frequency list, so it also counts rating-vs-zipf 248, unchanged by the batch).
+Rating review: 3 Opus reviewers checked 934 lines (827 theme ratings in 41 themes, 107 familiarity checks); 29 changes (tools/gen/julia409-ratings.tsv).
+
+=== Notice to _WS_ for v409 (send when Simon says) ===
+Library v409 is in the export (data/export/wordlist-game-family.json). It brings in Julia's branch (julia-category-fixes, her v366-v382, built on v365), replayed by word text on top of v408 with Simon's decisions. No pin until Simon asks.
+- 25 new themes: kitchen (bakeware, kitchen linens, food storage), Ancient Greece (Greek landmarks split, gods, goddesses, writers ...), outdoor (s'mores, hiking snacks, hiking dangers, bike gear, climbing styles, climbing holds, bike tricks, bike park), environment and earth science (shorter names, more specific themes).
+- 14 themes merged into others and deleted: penguin_species, animals_with_a_poisonous_bite (into venomous snakes; copperhead and sidewinder moved in, Gila monster out), whale_types, seal_types, bear_types (into bears, no animal twice), soggy_places, animals_of_the_far_north, animals_of_the_far_south, kitchen_crew, famous_stretches_of_sand, chef_roles, poem_forms, renewable_sources, buried_fuels. 16 themes renamed (ids unchanged), e.g. "layers of the Earth" -> "Earth's layers".
+- four humours now holds exactly blood, phlegm, yellow bile, black bile.
+- 109 new entries (new ids from 67956); where a word of hers already existed, the existing entry is linked instead (kneepads, multitool, wallride, the skateboard manual, helmet, pump, light with form alias lights). Her new words go only into her themes. All touched entries status rev; ratings reviewed (29 changed).
+Export: themes 3,224 -> 3,235 (theme indexes shift from index 192); rows 61,029 -> 61,045 (first changed row 14948, choler); links 109,262 -> 109,220 (link positions shift from row 87, banana, on). Please measure against v408.

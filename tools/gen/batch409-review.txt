@@ -1,0 +1,54 @@
+Julia's branch (origin/julia-category-fixes, her v366-v382) replayed by text on v408 (already applied: this run is a check). Plan and analysis: tools/gen/julia-integration-report.md.
+C1. clean-up 1
+  four humours: choler is an old name for yellow bile (a real synonym; not an answer here, left as it is); melancholy is Greek for "black bile" but means sadness now (not an alias)
+  done: animals_with_a_poisonous_bite is gone
+  note: sidewinder 27592 (gloss "snake") keeps cowboy slang and desert; the snake is sidewinder 1194 — a later gloss pass may split them
+  done: poem_forms is gone
+  done: kitchen_crew is gone
+  done: chef_roles is gone
+  done: whale_types is gone
+  done: seal_types is gone
+  done: penguin_species is gone
+  done: bear_types is gone
+  done: animals_of_the_far_north is gone
+  done: animals_of_the_far_south is gone
+  done: soggy_places is gone
+  done: famous_stretches_of_sand is gone
+C3. kitchen themes
+C3. kitchen words: 0 words made, 0 aliases, 0 existing words linked
+C4. Ancient Greece themes
+C4. Ancient Greece words: 0 words made, 0 aliases, 0 existing words linked
+C5. outdoor themes
+C5. outdoor words: 0 words made, 0 aliases, 0 existing words linked
+C6. hard outdoor themes
+C6. hard outdoor words: 0 words made, 0 aliases, 0 existing words linked
+C7. environment themes
+C7. environment words: 0 words made, 0 aliases, 0 existing words linked
+C7. environment fixes
+  bins and recycling: in reduce|waste 3
+  done: renewable_sources is gone
+  done: buried_fuels is gone
+C8. earth science themes
+C8. earth science words: 0 words made, 0 aliases, 0 existing words linked
+C8. earth science fixes
+D. kin
+E. ratings
+  reduce 32208 bins_and_recycling 3 -> 2: reduce pairs with reuse (2) in reduce-reuse-recycle
+  ratings applied 1; not applied (old value differs) 0
+Entries left in no theme by these steps (kept as they are, Simon): 0
+Rating worklist: not written on a rerun (it is made by the run on v408)
+library changes 2; status set to rev 0; entries touched 1; new entries from #68063
+Checks: changed kinds: none
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 248, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 60
+Committed family export equals the in-memory export of v409 before the changes: NO
+Themes 3235 -> 3235; gone none; new none; theme indexes shift from none
+Entries 61045 -> 61045; first row whose entry changed: none; added 0 (none); removed 0 (none)
+Row text changes: none; flags changed: none
+Links 109220 -> 109220; rows whose link count changed: 0
+Link-index shifts: none
+Links by theme + shown text + row: gone 0 (none), new 0 (none), rating changed 0
+Clash (family export): words with an id 13153 -> 13153; ids 4602 -> 4602; sizes before 2:2835 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1; after 2:2835 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1
+  groups over 8 after: 59
+new issues: none

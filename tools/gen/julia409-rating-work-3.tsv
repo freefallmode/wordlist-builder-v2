@@ -1,0 +1,317 @@
+# v409 rating review (Julia's themes). typ rows: re-judge the rating of each member in the theme (1 = the first words anyone names ... 5 = real but peripheral), relative to the other members.
+# fam rows: check the familiarity of each new word (1 every child knows it ... 5 few people) against the comparable main entries. Existing entries keep their own fam.
+# Answer in tools/gen/julia409-ratings.tsv: entryId<TAB>themeId or fam<TAB>oldValue<TAB>newValue<TAB>reason (only the changes).
+kind	themeId	theme	entryId	text	gloss	fam	rating	zipf	status	comparables
+typ	whales_and_dolphins	whales and dolphins	1306	blue whale		1	1	4.0	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1307	humpback whale		2	1	2.8	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1305	killer whale		1	1	3.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1284	whale	animal	1	1	4.0	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7866	bottlenose dolphin		2	2	2.4	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1303	narwhal		3	2	2.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1310	porpoise		3	2	2.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1308	sperm whale		2	2	3.6	linked by v409	
+typ	whales_and_dolphins	whales and dolphins	7894	baleen whale		3	3	2.1	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	9748	beluga whale		3	3	2.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63021	cachalot		4	3		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7893	cetacean		4	3	2.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7878	common dolphin		3	3	3.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7868	fin whale		3	3	3.5	linked by v409	
+typ	whales_and_dolphins	whales and dolphins	63015	finback		4	3		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7869	gray whale		3	3	3.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7886	harbor porpoise		4	3	2.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7867	minke whale		4	3	2.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7873	pilot whale		3	3	3.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7871	right whale		4	3	4.0	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7881	river dolphin		3	3	3.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7879	spinner dolphin		4	3	3.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	9857	spotted dolphin		4	3	3.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7876	beaked whale		4	4	2.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63009	boto	Amazon	5	4	1.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7872	bowhead whale		4	4	1.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7880	dusky dolphin		5	4	2.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7890	false killer whale		5	4	3.8	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63020	Risso's		5	4	1.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7874	sei whale		5	4	2.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7887	vaquita		4	4	1.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7888	baiji		5	5	1.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63012	Bryde's		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63013	Commerson's		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63014	Cuvier's		5	5	2.4	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59909	Dall's porpoise		5	5	2.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59912	finless porpoise		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59908	franciscana		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63016	Fraser's		5	5	3.8	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7891	Hector's dolphin		5	5	3.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	36797	Irrawaddy		4	5	2.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59910	melon-headed whale		5	5	3.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7877	pygmy sperm whale		5	5	2.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59914	rough-toothed dolphin		5	5	2.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59907	tucuxi		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7892	white-beaked dolphin		5	5	2.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1155	cobra	snake	2	1	3.5	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1157	rattlesnake		2	1	2.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50724	venomous snake		1	1	3.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1156	viper	animal	3	1	3.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1162	adder	animal	3	2	2.7	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8501	black mamba		2	2	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1193	copperhead	animal	3	2	2.3	linked by v409	
+typ	venomous_snakes	venomous snakes	1191	coral snake		4	2	3.7	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8502	cottonmouth		3	2	2.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50713	diamondback		3	2	2.4	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1196	king cobra		3	2	3.5	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1171	mamba	snake	3	2	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8503	water moccasin		4	2	2.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1197	boomslang		5	3		member (theme kept)	
+typ	venomous_snakes	venomous snakes	8525	death adder		4	3	2.7	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50714	eastern diamondback		4	3	2.4	member (theme kept)	
+typ	venomous_snakes	venomous snakes	40108	green mamba		4	3	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	9695	Indian cobra		3	3	3.5	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8526	inland taipan		5	3	1.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8527	krait		4	3	1.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8520	pit viper		4	3	3.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8519	puff adder		4	3	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1328	sea snake		3	3	4.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1194	sidewinder	animal	3	3	2.5	linked by v409	
+typ	venomous_snakes	venomous snakes	8530	spitting cobra		4	3	3.2	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1195	taipan		4	3	1.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50716	timber rattlesnake		4	3	2.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50715	western diamondback		4	3	2.4	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8528	asp	animal	4	4	3.0	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50719	banded krait		5	4	1.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50712	brown snake		3	4	4.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8521	bushmaster		5	4	2.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8522	fer-de-lance		5	4	3.0	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1213	Gaboon viper		5	4		member (theme kept)	
+typ	venomous_snakes	venomous snakes	9646	horned viper		4	4	2.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50718	Russell's viper		5	4	3.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50717	saw-scaled viper		5	4	3.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8524	tiger snake		4	4	3.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	63288	king brown		4	5	4.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50720	lancehead		5	5		member (theme kept)	
+typ	venomous_snakes	venomous snakes	50722	rinkhals		5	5		member (theme kept)	
+typ	venomous_snakes	venomous snakes	50721	terciopelo		5	5		member (theme kept)	
+typ	river_features	river features	30863	rapids		2	1	3.6	member (theme kept)	
+typ	river_features	river features	31925	river bank		2	1	4.8	member (theme kept)	
+typ	river_features	river features	30152	stream	woodland	1	1	4.6	member (theme kept)	
+typ	river_features	river features	30873	brook		2	2	3.7	member (theme kept)	
+typ	river_features	river features	30874	creek		2	2	4.4	member (theme kept)	
+typ	river_features	river features	1944	delta	river	3	2	4.1	member (theme kept)	
+typ	river_features	river features	31931	meander	river	3	2	2.7	member (theme kept)	
+typ	river_features	river features	50330	mouth	river	1	2	4.8	member (theme kept)	
+typ	river_features	river features	30867	riverbed		2	2	2.6	member (theme kept)	
+typ	river_features	river features	30862	source	river	2	2	5.2	member (theme kept)	
+typ	river_features	river features	30864	tributary		3	2	3.2	member (theme kept)	
+typ	river_features	river features	1914	waterfall		1	2	3.5	member (theme kept)	
+typ	river_features	river features	30880	backwater		3	3	2.8	member (theme kept)	
+typ	river_features	river features	28728	bayou		3	3	3.1	member (theme kept)	
+typ	river_features	river features	30870	confluence		4	3	3.1	member (theme kept)	
+typ	river_features	river features	30877	eddy		3	3	3.5	member (theme kept)	
+typ	river_features	river features	1945	estuary		3	3	3.3	member (theme kept)	
+typ	river_features	river features	30866	floodplain		3	3	2.7	member (theme kept)	
+typ	river_features	river features	48657	ford	river crossing	3	3	4.5	member (theme kept)	
+typ	river_features	river features	30878	headwaters		3	3	2.7	member (theme kept)	
+typ	river_features	river features	30876	levee		3	3	2.8	member (theme kept)	
+typ	river_features	river features	30865	oxbow lake		4	3	2.2	member (theme kept)	
+typ	river_features	river features	30882	river bend		2	3	4.0	member (theme kept)	
+typ	river_features	river features	30875	sandbar		3	3	2.3	member (theme kept)	
+typ	river_features	river features	30881	shallows		2	3	2.6	member (theme kept)	
+typ	river_features	river features	30879	watershed		3	3	3.5	member (theme kept)	
+typ	river_features	river features	30869	weir		4	3	3.5	member (theme kept)	
+typ	river_features	river features	60298	braided river		4	4	3.1	member (theme kept)	
+typ	river_features	river features	50075	plunge pool	waterfall basin	4	4	3.5	member (theme kept)	
+typ	river_features	river features	60296	riffle		4	4	2.2	member (theme kept)	
+typ	river_features	river features	30871	rivulet		4	4	2.0	member (theme kept)	
+typ	river_features	river features	60300	cut bank		5	5	4.9	member (theme kept)	
+typ	river_features	river features	60436	interlocking spurs		5	5	3.0	linked by v409	
+typ	river_features	river features	60299	knickpoint		5	5		member (theme kept)	
+typ	river_features	river features	60297	point bar		5	5	4.8	member (theme kept)	
+typ	river_features	river features	60295	thalweg		5	5		member (theme kept)	
+typ	bakeware	bakeware	19815	baking sheet		2	1	3.8	linked by v409	
+typ	bakeware	bakeware	19820	cake pan		2	1	4.1	linked by v409	
+typ	bakeware	bakeware	19818	muffin tin		2	1	3.3	linked by v409	
+typ	bakeware	bakeware	67956	baking dish		2	2	3.7	new word	
+typ	bakeware	bakeware	67957	cooling rack		2	2	3.7	new word	
+typ	bakeware	bakeware	19821	loaf pan		2	2	3.4	linked by v409	
+typ	bakeware	bakeware	19822	pie dish		2	2	3.9	linked by v409	
+typ	bakeware	bakeware	67959	brownie pan		2	3	3.2	new word	
+typ	bakeware	bakeware	19833	bundt pan		4	3	2.2	linked by v409	
+typ	bakeware	bakeware	19813	casserole dish		2	3	3.1	linked by v409	
+typ	bakeware	bakeware	67958	pizza stone		3	3	4.3	new word	
+typ	bakeware	bakeware	67962	quiche dish		3	3	2.6	new word	
+typ	bakeware	bakeware	19828	ramekin		3	3	1.7	linked by v409	
+typ	bakeware	bakeware	67963	soufflé dish		3	3	2.3	new word	
+typ	bakeware	bakeware	19829	springform pan		3	3	1.6	linked by v409	
+typ	bakeware	bakeware	67960	tart pan		3	3	3.4	new word	
+typ	bakeware	bakeware	67964	madeleine pan		4	4	3.4	new word	
+fam	bakeware	bakeware	67956	baking dish		2		3.7	new word	baking sheet fam 2 z 3.8; pie dish fam 2 z 3.9; baking powder fam 2 z 3.7; dish rack fam 2 z 3.7
+fam	bakeware	bakeware	67957	cooling rack		2		3.7	new word	baking sheet fam 2 z 3.8; pie dish fam 2 z 3.9; shoe rack fam 3 z 3.7; dish rack fam 2 z 3.7
+fam	bakeware	bakeware	67959	brownie pan		2		3.2	new word	muffin tin fam 2 z 3.3; casserole dish fam 2 z 3.1; brownie (dessert) fam 1 z 3.2; brownie (fairy) fam 2 z 3.2
+fam	bakeware	bakeware	67958	pizza stone		3		4.3	new word	cake pan fam 2 z 4.1; pie dish fam 2 z 3.9; New York-style pizza fam 2 z 4.3; Bath stone fam 4 z 4.3
+fam	bakeware	bakeware	67962	quiche dish		3		2.6	new word	bundt pan fam 4 z 2.2; casserole dish fam 2 z 3.1; quiche fam 2 z 2.6; evaporating dish fam 4 z 2.6
+fam	bakeware	bakeware	67963	soufflé dish		3		2.3	new word	bundt pan fam 4 z 2.2; ramekin fam 3 z 1.7; soufflé fam 3 z 2.3; compote dish fam 4 z 2.3
+fam	bakeware	bakeware	67960	tart pan		3		3.4	new word	loaf pan fam 2 z 3.4; muffin tin fam 2 z 3.3; pan flute fam 3 z 3.4; fruit tart fam 2 z 3.4
+fam	bakeware	bakeware	67964	madeleine pan		4		3.4	new word	muffin tin fam 2 z 3.3; casserole dish fam 2 z 3.1; pan flute fam 3 z 3.4; loaf pan fam 2 z 3.4
+fam	bakeware	bakeware	67961	tart tin		3		3.3	regional alias of tart pan UK	
+fam	bakeware	bakeware	67971	loaf tin		2		3.4	regional alias of loaf pan UK	
+fam	bakeware	bakeware	67972	cookie sheet		2		3.9	regional alias of baking sheet US	
+fam	bakeware	bakeware	67973	souffle dish		3		2.3	spelling alias of soufflé dish	
+typ	bike_gear	bike gear	20685	helmet	armor	1	1	4.0	linked by v409	
+typ	bike_gear	bike gear	7389	pump	machine	1	1	4.3	linked by v409	
+typ	bike_gear	bike gear	44237	cycling shorts		2	2	3.8	linked by v409	
+typ	bike_gear	bike gear	25718	D-lock		3	2	4.5	linked by v409	
+typ	bike_gear	bike gear	4956	gloves		1	2	4.0	linked by v409	
+typ	bike_gear	bike gear	57550	high-vis vest		2	2	3.2	linked by v409	
+typ	bike_gear	bike gear	27963	light	illumination	1	2	5.3	linked by v409	
+typ	bike_gear	bike gear	40016	reflective vest		2	2	3.3	linked by v409	
+typ	bike_gear	bike gear	19921	water bottle		1	2	4.5	linked by v409	
+typ	bike_gear	bike gear	67987	elbow pads		2	3	3.5	new word	
+typ	bike_gear	bike gear	48631	hydration pack		3	3	3.2	linked by v409	
+typ	bike_gear	bike gear	24462	kneepads		2	3	1.8	linked by v409	
+typ	bike_gear	bike gear	25623	multitool		3	3	1.5	linked by v409	
+typ	bike_gear	bike gear	67988	patch kit		3	3	4.0	new word	
+typ	bike_gear	bike gear	4952	sunglasses		1	3	3.7	linked by v409	
+typ	bike_gear	bike gear	67990	tire levers		3	3	3.0	new word	
+typ	bike_gear	bike gear	24786	goggles	eyewear	2	4	3.4	linked by v409	
+fam	bike_gear	bike gear	67987	elbow pads		2		3.5	new word	goggles (eyewear) fam 2 z 3.4; sunglasses fam 1 z 3.7; shin pads fam 2 z 3.4; tennis elbow fam 2 z 3.7
+fam	bike_gear	bike gear	67988	patch kit		3		4.0	new word	gloves fam 1 z 4.0; helmet (armor) fam 1 z 4.0; patch cable fam 3 z 4.0; rocket kit fam 3 z 4.0
+fam	bike_gear	bike gear	67990	tire levers		3		3.0	new word	hydration pack fam 3 z 3.2; high-vis vest fam 2 z 3.2; tire gauge fam 2 z 3.7; tire chains fam 3 z 3.7
+fam	bike_gear	bike gear	67985	lights		1		4.6	form alias of light	
+fam	bike_gear	bike gear	67986	knee pads		2		3.7	spelling alias of kneepads	
+fam	bike_gear	bike gear	67989	puncture repair kit		2		3.1	regional alias of patch kit UK	
+fam	bike_gear	bike gear	67991	tyre levers		3		3.0	spelling alias of tire levers UK	
+fam	bike_gear	bike gear	67992	multi-tool		3		4.2	spelling alias of multitool	
+fam	bike_gear	bike gear	67997	U-lock		3		4.4	regional alias of D-lock US	
+typ	food_storage	food storage	39989	aluminum foil		1	1	3.6	linked by v409	
+typ	food_storage	food storage	25474	jar	glass container	1	1	3.9	linked by v409	
+typ	food_storage	food storage	39010	plastic wrap		2	1	4.0	linked by v409	
+typ	food_storage	food storage	39990	tin foil		1	1	3.6	linked by v409	
+typ	food_storage	food storage	19929	Tupperware		2	1	2.8	linked by v409	
+typ	food_storage	food storage	66385	bread box		2	2	4.4	linked by v409	
+typ	food_storage	food storage	25487	canister		3	2	3.1	linked by v409	
+typ	food_storage	food storage	25510	cookie jar		1	2	3.7	linked by v409	
+typ	food_storage	food storage	67134	cookie tin		2	2	3.7	linked by v409	
+typ	food_storage	food storage	67968	freezer bag		2	2	3.7	new word	
+typ	food_storage	food storage	19925	sandwich bag		2	2	4.0	linked by v409	
+typ	food_storage	food storage	67969	bag clip		2	3	4.2	new word	
+typ	food_storage	food storage	32365	beeswax wrap		4	3	2.7	linked by v409	
+typ	food_storage	food storage	25791	butter dish		2	3	4.0	linked by v409	
+typ	food_storage	food storage	3035	cooler		2	3	4.0	linked by v409	
+typ	food_storage	food storage	62428	egg carton		2	3	3.2	linked by v409	
+typ	food_storage	food storage	25564	wax paper		2	3	3.9	linked by v409	
+fam	food_storage	food storage	67968	freezer bag		2		3.7	new word	cookie jar fam 1 z 3.7; cookie tin fam 2 z 3.7; freezer fam 1 z 3.7; punching bag fam 1 z 3.7
+fam	food_storage	food storage	67969	bag clip		2		4.2	new word	cooler fam 2 z 4.0; sandwich bag fam 2 z 4.0; hair clip fam 2 z 4.2; paper clip fam 1 z 4.2
+fam	food_storage	food storage	67970	chip clip		2		4.0	regional alias of bag clip US	
+typ	eco_swaps	eco swaps	32363	bamboo toothbrush		3	1	3.2	linked by v409	
+typ	eco_swaps	eco swaps	68051	metal straw		2	1	3.9	new word	
+typ	eco_swaps	eco swaps	32356	reusable bag		1	1	3.2	linked by v409	
+typ	eco_swaps	eco swaps	32364	reusable cup		2	1	3.2	linked by v409	
+typ	eco_swaps	eco swaps	32365	beeswax wrap		4	2	2.7	linked by v409	
+typ	eco_swaps	eco swaps	32358	LED bulb		2	2	3.7	linked by v409	
+typ	eco_swaps	eco swaps	49603	rechargeable battery		1	2	2.9	linked by v409	
+typ	eco_swaps	eco swaps	68052	shampoo bar		3	2	3.6	new word	
+typ	eco_swaps	eco swaps	4991	tote bag		2	2	3.3	linked by v409	
+typ	eco_swaps	eco swaps	48287	travel mug		3	2	3.7	linked by v409	
+typ	eco_swaps	eco swaps	16151	bar soap		1	3	4.1	linked by v409	
+typ	eco_swaps	eco swaps	68054	cloth diaper		2	3	3.4	new word	
+typ	eco_swaps	eco swaps	68053	cloth napkin		2	3	3.1	new word	
+typ	eco_swaps	eco swaps	4975	handkerchief		2	3	3.2	linked by v409	
+typ	eco_swaps	eco swaps	16316	safety razor		2	3	3.7	linked by v409	
+fam	eco_swaps	eco swaps	68051	metal straw		2		3.9	new word	bar soap fam 1 z 4.1; safety razor fam 2 z 3.7; straw hat fam 1 z 3.9; straw poll fam 3 z 3.9
+fam	eco_swaps	eco swaps	68052	shampoo bar		3		3.6	new word	safety razor fam 2 z 3.7; LED bulb fam 2 z 3.7; shampoo fam 1 z 3.6; dry shampoo fam 3 z 3.6
+fam	eco_swaps	eco swaps	68054	cloth diaper		2		3.4	new word	tote bag fam 2 z 3.3; handkerchief fam 2 z 3.2; diaper fam 1 z 3.5; diaper rash fam 1 z 3.3
+fam	eco_swaps	eco swaps	68053	cloth napkin		2		3.1	new word	handkerchief fam 2 z 3.2; reusable bag fam 1 z 3.2; napkin fam 1 z 3.2; napkin ring fam 3 z 3.2
+fam	eco_swaps	eco swaps	68055	cloth nappy		2		2.9	regional alias of cloth diaper UK	
+typ	hiking_snacks	hiking snacks	48638	energy bar		2	1	4.7	linked by v409	
+typ	hiking_snacks	hiking snacks	16764	granola bar		2	1	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	3074	trail mix		2	1	4.2	linked by v409	
+typ	hiking_snacks	hiking snacks	88	banana	fruit	1	2	4.0	linked by v409	
+typ	hiking_snacks	hiking snacks	17783	beef jerky		1	2	3.1	linked by v409	
+typ	hiking_snacks	hiking snacks	16763	dried fruit		2	2	3.9	linked by v409	
+typ	hiking_snacks	hiking snacks	17350	peanut	legume nut	1	2	3.9	linked by v409	
+typ	hiking_snacks	hiking snacks	16772	protein bar		2	2	4.4	linked by v409	
+typ	hiking_snacks	hiking snacks	87	apple	fruit	1	3	4.8	linked by v409	
+typ	hiking_snacks	hiking snacks	605	chocolate	sweet	1	3	4.5	linked by v409	
+typ	hiking_snacks	hiking snacks	19094	crackers		1	3	3.4	linked by v409	
+typ	hiking_snacks	hiking snacks	17267	dried apricot		2	3	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	44013	energy gel		3	3	3.8	linked by v409	
+typ	hiking_snacks	hiking snacks	19092	pretzels		1	3	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	17265	raisin		1	3	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	796	sandwich		1	3	4.1	linked by v409	
+typ	hiking_snacks	hiking snacks	59484	kendal mint cake		4	4	2.8	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	20367	Homer	poet	2	1	3.9	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	12497	Sophocles		3	1	2.6	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	12499	Aeschylus		4	2	2.4	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	67977	Aesop		2	2	2.5	new word	
+typ	ancient_greek_writers	ancient Greek writers	12500	Aristophanes		4	2	2.4	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	12498	Euripides		4	2	2.6	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	20371	Herodotus		4	2	2.8	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	21685	Sappho		4	2	2.4	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	67979	Hesiod		4	3	2.2	new word	
+typ	ancient_greek_writers	ancient Greek writers	67980	Pindar		4	3	2.4	new word	
+typ	ancient_greek_writers	ancient Greek writers	67978	Plutarch		3	3	2.7	new word	
+typ	ancient_greek_writers	ancient Greek writers	20370	Thucydides		4	3	2.4	linked by v409	
+fam	ancient_greek_writers	ancient Greek writers	67977	Aesop		2		2.5	new word	Sophocles fam 3 z 2.6; Euripides fam 4 z 2.6; Aeschylus fam 4 z 2.4; Aristophanes fam 4 z 2.4
+fam	ancient_greek_writers	ancient Greek writers	67979	Hesiod		4		2.2	new word	Aeschylus fam 4 z 2.4; Aristophanes fam 4 z 2.4; Thucydides fam 4 z 2.4; Sappho fam 4 z 2.4
+fam	ancient_greek_writers	ancient Greek writers	67980	Pindar		4		2.4	new word	Aeschylus fam 4 z 2.4; Aristophanes fam 4 z 2.4; Thucydides fam 4 z 2.4; Sappho fam 4 z 2.4
+fam	ancient_greek_writers	ancient Greek writers	67978	Plutarch		3		2.7	new word	Herodotus fam 4 z 2.8; Sophocles fam 3 z 2.6; Euripides fam 4 z 2.6; Aeschylus fam 4 z 2.4
+typ	greek_myth_objects	Greek myth objects	6929	Golden Fleece	myth	3	1	3.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	6927	Pandora's box		2	1	3.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	6928	Trojan Horse		1	1	3.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	54890	golden apple		3	2	4.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	67974	Icarus's wings		3	2	3.0	new word	
+typ	greek_myth_objects	Greek myth objects	22398	aegis	shield	4	3	3.1	linked by v409	
+typ	greek_myth_objects	Greek myth objects	29524	ambrosia	god food	3	3	2.7	linked by v409	
+typ	greek_myth_objects	Greek myth objects	47532	Argo	ship	3	3	3.0	linked by v409	
+typ	greek_myth_objects	Greek myth objects	54888	thunderbolt	Zeus	2	3	3.1	linked by v409	
+typ	greek_myth_objects	Greek myth objects	54889	trident	Poseidon	2	3	3.3	linked by v409	
+typ	greek_myth_objects	Greek myth objects	67975	Ariadne's thread		4	4	2.6	new word	
+typ	greek_myth_objects	Greek myth objects	38958	caduceus		4	4	2.0	linked by v409	
+typ	greek_myth_objects	Greek myth objects	22389	cornucopia		3	4	2.6	linked by v409	
+fam	greek_myth_objects	Greek myth objects	67974	Icarus's wings		3		3.0	new word	Argo (ship) fam 3 z 3.0; aegis (shield) fam 4 z 3.1; Cham Wings fam 5 z 2.7; buffalo wings fam 2 z 3.9
+fam	greek_myth_objects	Greek myth objects	67975	Ariadne's thread		4		2.6	new word	cornucopia fam 3 z 2.6; ambrosia (god food) fam 3 z 2.7; thread the needle fam 3 z ; bean thread fam 4 z 3.9
+typ	eco_habits	eco habits	32354	carpooling		3	1	2.2	linked by v409	
+typ	eco_habits	eco habits	32353	composting		2	1	2.7	linked by v409	
+typ	eco_habits	eco habits	68047	recycling		1	1	3.8	new word	
+typ	eco_habits	eco habits	15965	cycling		1	2	4.1	linked by v409	
+typ	eco_habits	eco habits	68049	line drying		3	2	3.7	new word	
+typ	eco_habits	eco habits	68050	thrifting		3	2	2.2	new word	
+typ	eco_habits	eco habits	68048	tree planting		2	2	3.8	new word	
+typ	eco_habits	eco habits	24002	upcycling		4	2	2.0	linked by v409	
+typ	eco_habits	eco habits	15808	walking		1	2	4.9	linked by v409	
+typ	eco_habits	eco habits	32367	clothes swap		3	3	3.8	linked by v409	
+typ	eco_habits	eco habits	24875	mending		2	3	2.9	linked by v409	
+fam	eco_habits	eco habits	68047	recycling		1		3.8	new word	clothes swap fam 3 z 3.8; cycling fam 1 z 4.1; recycling center fam 3 z 3.8; recycling plant fam 2 z 3.8
+fam	eco_habits	eco habits	68049	line drying		3		3.7	new word	clothes swap fam 3 z 3.8; cycling fam 1 z 4.1; chalk line fam 5 z 3.7; dash-dot line fam 4 z 3.7
+fam	eco_habits	eco habits	68050	thrifting		3		2.2	new word	carpooling fam 3 z 2.2; upcycling fam 4 z 2.0; composting fam 2 z 2.7; mending fam 2 z 2.9
+fam	eco_habits	eco habits	68048	tree planting		2		3.8	new word	clothes swap fam 3 z 3.8; cycling fam 1 z 4.1; tree frog fam 2 z 3.8; Joshua tree (tree) fam 3 z 3.8
+typ	nicknames_for_workers	nicknames for workers	4088	cop	police	2	1	4.4	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4118	trucker		2	2	3.0	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4115	cabbie		3	3	2.6	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4089	copper	police officer	3	3	4.3	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4130	garbageman		3	3	1.5	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4074	bean counter		4	4	3.9	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4090	bobby	police officer	4	4	4.2	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4096	chippy	carpenter	4	4	2.6	linked by v409	
+typ	nicknames_for_workers	nicknames for workers	4098	grease monkey		4	4	3.6	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4133	hack	journalist	4	4	4.0	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4073	number cruncher		4	4	1.9	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4123	postie	UK term	4	4	1.9	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4092	sparky	electrician	4	4	2.8	linked by v409	
+typ	nicknames_for_workers	nicknames for workers	4085	firie		5	5		linked by v409	
+typ	nicknames_for_workers	nicknames for workers	4134	newshound		5	5		member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	968	brew	beer	2	1	3.6	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	966	bubbly		3	2	3.2	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	963	cuppa		4	2	2.7	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	967	fizz	champagne	4	2	3.0	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	961	java	coffee	3	2	4.0	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	965	vino		3	2	2.8	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	969	brewski		4	3	1.6	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	962	joe	coffee	4	3	4.8	linked by v409	
+typ	nicknames_for_drinks	nicknames for drinks	964	char	tea	5	4	3.5	linked by v409	
+typ	smores	s'mores	605	chocolate	sweet	1	1	4.5	linked by v409	
+typ	smores	s'mores	20265	graham cracker		2	1	3.3	linked by v409	
+typ	smores	s'mores	611	marshmallow		1	1	3.2	linked by v409	
+typ	smores	s'mores	3024	campfire	outdoor fire	1	2	3.1	linked by v409	
+typ	smores	s'mores	67983	roasting stick		2	2	3.3	new word	
+typ	smores	s'mores	18158	digestive	biscuit	3	3	3.5	linked by v409	
+fam	smores	s'mores	67983	roasting stick		2		3.3	new word	graham cracker fam 2 z 3.3; marshmallow fam 1 z 3.2; incense stick fam 2 z 3.3; sunscreen stick fam 3 z 3.3

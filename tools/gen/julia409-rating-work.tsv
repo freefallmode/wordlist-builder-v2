@@ -1,0 +1,938 @@
+# v409 rating review (Julia's themes). typ rows: re-judge the rating of each member in the theme (1 = the first words anyone names ... 5 = real but peripheral), relative to the other members.
+# fam rows: check the familiarity of each new word (1 every child knows it ... 5 few people) against the comparable main entries. Existing entries keep their own fam.
+# Answer in tools/gen/julia409-ratings.tsv: entryId<TAB>themeId or fam<TAB>oldValue<TAB>newValue<TAB>reason (only the changes).
+kind	themeId	theme	entryId	text	gloss	fam	rating	zipf	status	comparables
+typ	bakeware	bakeware	19815	baking sheet		2	1	3.8	linked by v409	
+typ	bakeware	bakeware	19820	cake pan		2	1	4.1	linked by v409	
+typ	bakeware	bakeware	19818	muffin tin		2	1	3.3	linked by v409	
+typ	bakeware	bakeware	67956	baking dish		2	2	3.7	new word	
+typ	bakeware	bakeware	67957	cooling rack		2	2	3.7	new word	
+typ	bakeware	bakeware	19821	loaf pan		2	2	3.4	linked by v409	
+typ	bakeware	bakeware	19822	pie dish		2	2	3.9	linked by v409	
+typ	bakeware	bakeware	67959	brownie pan		2	3	3.2	new word	
+typ	bakeware	bakeware	19833	bundt pan		4	3	2.2	linked by v409	
+typ	bakeware	bakeware	19813	casserole dish		2	3	3.1	linked by v409	
+typ	bakeware	bakeware	67958	pizza stone		3	3	4.3	new word	
+typ	bakeware	bakeware	67962	quiche dish		3	3	2.6	new word	
+typ	bakeware	bakeware	19828	ramekin		3	3	1.7	linked by v409	
+typ	bakeware	bakeware	67963	soufflé dish		3	3	2.3	new word	
+typ	bakeware	bakeware	19829	springform pan		3	3	1.6	linked by v409	
+typ	bakeware	bakeware	67960	tart pan		3	3	3.4	new word	
+typ	bakeware	bakeware	67964	madeleine pan		4	4	3.4	new word	
+fam	bakeware	bakeware	67956	baking dish		2		3.7	new word	baking sheet fam 2 z 3.8; pie dish fam 2 z 3.9; baking powder fam 2 z 3.7; dish rack fam 2 z 3.7
+fam	bakeware	bakeware	67957	cooling rack		2		3.7	new word	baking sheet fam 2 z 3.8; pie dish fam 2 z 3.9; shoe rack fam 3 z 3.7; dish rack fam 2 z 3.7
+fam	bakeware	bakeware	67959	brownie pan		2		3.2	new word	muffin tin fam 2 z 3.3; casserole dish fam 2 z 3.1; brownie (dessert) fam 1 z 3.2; brownie (fairy) fam 2 z 3.2
+fam	bakeware	bakeware	67958	pizza stone		3		4.3	new word	cake pan fam 2 z 4.1; pie dish fam 2 z 3.9; New York-style pizza fam 2 z 4.3; Bath stone fam 4 z 4.3
+fam	bakeware	bakeware	67962	quiche dish		3		2.6	new word	bundt pan fam 4 z 2.2; casserole dish fam 2 z 3.1; quiche fam 2 z 2.6; evaporating dish fam 4 z 2.6
+fam	bakeware	bakeware	67963	soufflé dish		3		2.3	new word	bundt pan fam 4 z 2.2; ramekin fam 3 z 1.7; soufflé fam 3 z 2.3; compote dish fam 4 z 2.3
+fam	bakeware	bakeware	67960	tart pan		3		3.4	new word	loaf pan fam 2 z 3.4; muffin tin fam 2 z 3.3; pan flute fam 3 z 3.4; fruit tart fam 2 z 3.4
+fam	bakeware	bakeware	67964	madeleine pan		4		3.4	new word	muffin tin fam 2 z 3.3; casserole dish fam 2 z 3.1; pan flute fam 3 z 3.4; loaf pan fam 2 z 3.4
+fam	bakeware	bakeware	67961	tart tin		3		3.3	regional alias of tart pan UK	
+fam	bakeware	bakeware	67971	loaf tin		2		3.4	regional alias of loaf pan UK	
+fam	bakeware	bakeware	67972	cookie sheet		2		3.9	regional alias of baking sheet US	
+fam	bakeware	bakeware	67973	souffle dish		3		2.3	spelling alias of soufflé dish	
+typ	kitchen_linens	kitchen linens	4904	apron	clothing	2	1	3.4	linked by v409	
+typ	kitchen_linens	kitchen linens	67199	dish towel		2	1	3.7	linked by v409	
+typ	kitchen_linens	kitchen linens	19926	napkin		1	1	3.2	linked by v409	
+typ	kitchen_linens	kitchen linens	19862	oven mitt		2	1	3.2	linked by v409	
+typ	kitchen_linens	kitchen linens	19942	tablecloth		1	1	2.7	linked by v409	
+typ	kitchen_linens	kitchen linens	23379	dishcloth		3	2	1.7	linked by v409	
+typ	kitchen_linens	kitchen linens	20140	placemat		3	2	1.7	linked by v409	
+typ	kitchen_linens	kitchen linens	67965	pot holder		2	2	4.0	new word	
+typ	kitchen_linens	kitchen linens	67966	dish drying mat		3	3	3.4	new word	
+typ	kitchen_linens	kitchen linens	20161	table runner		3	3	4.1	linked by v409	
+typ	kitchen_linens	kitchen linens	24501	tea cosy		3	3	3.3	linked by v409	
+typ	kitchen_linens	kitchen linens	25569	doily		3	4	2.1	linked by v409	
+typ	kitchen_linens	kitchen linens	67967	toaster cover		3	4	3.3	new word	
+fam	kitchen_linens	kitchen linens	67965	pot holder		2		4.0	new word	table runner fam 3 z 4.1; dish towel fam 2 z 3.7; Instant Pot (electric multicooker) fam 3 z 4.0; pot pie fam 2 z 4.0
+fam	kitchen_linens	kitchen linens	67966	dish drying mat		3		3.4	new word	apron (clothing) fam 2 z 3.4; tea cosy fam 3 z 3.3; mat racer fam 4 z 3.3; lick mat fam 4 z 3.5
+fam	kitchen_linens	kitchen linens	67967	toaster cover		3		3.3	new word	tea cosy fam 3 z 3.3; oven mitt fam 2 z 3.2; toaster fam 1 z 3.3; dashboard cover fam 3 z 3.3
+typ	food_storage	food storage	39989	aluminum foil		1	1	3.6	linked by v409	
+typ	food_storage	food storage	25474	jar	glass container	1	1	3.9	linked by v409	
+typ	food_storage	food storage	39010	plastic wrap		2	1	4.0	linked by v409	
+typ	food_storage	food storage	39990	tin foil		1	1	3.6	linked by v409	
+typ	food_storage	food storage	19929	Tupperware		2	1	2.8	linked by v409	
+typ	food_storage	food storage	66385	bread box		2	2	4.4	linked by v409	
+typ	food_storage	food storage	25487	canister		3	2	3.1	linked by v409	
+typ	food_storage	food storage	25510	cookie jar		1	2	3.7	linked by v409	
+typ	food_storage	food storage	67134	cookie tin		2	2	3.7	linked by v409	
+typ	food_storage	food storage	67968	freezer bag		2	2	3.7	new word	
+typ	food_storage	food storage	19925	sandwich bag		2	2	4.0	linked by v409	
+typ	food_storage	food storage	67969	bag clip		2	3	4.2	new word	
+typ	food_storage	food storage	32365	beeswax wrap		4	3	2.7	linked by v409	
+typ	food_storage	food storage	25791	butter dish		2	3	4.0	linked by v409	
+typ	food_storage	food storage	3035	cooler		2	3	4.0	linked by v409	
+typ	food_storage	food storage	62428	egg carton		2	3	3.2	linked by v409	
+typ	food_storage	food storage	25564	wax paper		2	3	3.9	linked by v409	
+fam	food_storage	food storage	67968	freezer bag		2		3.7	new word	cookie jar fam 1 z 3.7; cookie tin fam 2 z 3.7; freezer fam 1 z 3.7; punching bag fam 1 z 3.7
+fam	food_storage	food storage	67969	bag clip		2		4.2	new word	cooler fam 2 z 4.0; sandwich bag fam 2 z 4.0; hair clip fam 2 z 4.2; paper clip fam 1 z 4.2
+fam	food_storage	food storage	67970	chip clip		2		4.0	regional alias of bag clip US	
+typ	greek_goddesses	Greek goddesses	21827	Aphrodite	goddess	1	1	2.9	linked by v409	
+typ	greek_goddesses	Greek goddesses	21825	Artemis	goddess	2	1	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21823	Athena	goddess	1	1	3.2	linked by v409	
+typ	greek_goddesses	Greek goddesses	21821	Hera	goddess	2	1	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21830	Demeter	goddess	2	2	2.4	linked by v409	
+typ	greek_goddesses	Greek goddesses	21844	Gaia	goddess	2	2	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21834	Hestia	goddess	3	2	2.1	linked by v409	
+typ	greek_goddesses	Greek goddesses	21837	Nike	goddess	1	2	3.9	linked by v409	
+typ	greek_goddesses	Greek goddesses	21833	Persephone	goddess	2	2	2.6	linked by v409	
+typ	greek_goddesses	Greek goddesses	21840	Eos	goddess	4	3	3.2	linked by v409	
+typ	greek_goddesses	Greek goddesses	21857	Eris	goddess	4	3	2.5	linked by v409	
+typ	greek_goddesses	Greek goddesses	21848	Hecate	goddess	4	3	2.3	linked by v409	
+typ	greek_goddesses	Greek goddesses	21849	Iris	goddess	2	3	3.8	linked by v409	
+typ	greek_goddesses	Greek goddesses	21850	Nemesis	goddess	2	3	3.3	linked by v409	
+typ	greek_goddesses	Greek goddesses	21841	Nyx	goddess	3	3	2.7	linked by v409	
+typ	greek_goddesses	Greek goddesses	21847	Rhea	goddess	3	3	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21839	Selene	goddess	3	3	2.5	linked by v409	
+typ	greek_goddesses	Greek goddesses	21854	Hebe	goddess	4	4	2.1	linked by v409	
+typ	greek_goddesses	Greek goddesses	54904	Leto	Titaness	4	4	3.1	linked by v409	
+typ	greek_goddesses	Greek goddesses	21855	Themis	goddess	4	4	2.2	linked by v409	
+typ	greek_myth_objects	Greek myth objects	6929	Golden Fleece	myth	3	1	3.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	6927	Pandora's box		2	1	3.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	6928	Trojan Horse		1	1	3.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	54890	golden apple		3	2	4.4	linked by v409	
+typ	greek_myth_objects	Greek myth objects	67974	Icarus's wings		3	2	3.0	new word	
+typ	greek_myth_objects	Greek myth objects	22398	aegis	shield	4	3	3.1	linked by v409	
+typ	greek_myth_objects	Greek myth objects	29524	ambrosia	god food	3	3	2.7	linked by v409	
+typ	greek_myth_objects	Greek myth objects	47532	Argo	ship	3	3	3.0	linked by v409	
+typ	greek_myth_objects	Greek myth objects	54888	thunderbolt	Zeus	2	3	3.1	linked by v409	
+typ	greek_myth_objects	Greek myth objects	54889	trident	Poseidon	2	3	3.3	linked by v409	
+typ	greek_myth_objects	Greek myth objects	67975	Ariadne's thread		4	4	2.6	new word	
+typ	greek_myth_objects	Greek myth objects	38958	caduceus		4	4	2.0	linked by v409	
+typ	greek_myth_objects	Greek myth objects	22389	cornucopia		3	4	2.6	linked by v409	
+fam	greek_myth_objects	Greek myth objects	67974	Icarus's wings		3		3.0	new word	Argo (ship) fam 3 z 3.0; aegis (shield) fam 4 z 3.1; Cham Wings fam 5 z 2.7; buffalo wings fam 2 z 3.9
+fam	greek_myth_objects	Greek myth objects	67975	Ariadne's thread		4		2.6	new word	cornucopia fam 3 z 2.6; ambrosia (god food) fam 3 z 2.7; thread the needle fam 3 z ; bean thread fam 4 z 3.9
+typ	greek_city_states	Greek city-states	2253	Athens		2	1	3.9	linked by v409	
+typ	greek_city_states	Greek city-states	6622	Sparta		2	1	3.2	linked by v409	
+typ	greek_city_states	Greek city-states	20379	Corinth	city	4	2	3.0	linked by v409	
+typ	greek_city_states	Greek city-states	36090	Thebes	ancient city	3	2	2.8	linked by v409	
+typ	greek_city_states	Greek city-states	67976	Argos	city	4	3	3.0	new word	
+typ	greek_city_states	Greek city-states	54737	Miletus		4	3	2.0	linked by v409	
+typ	greek_city_states	Greek city-states	21807	Mycenae		4	3	2.1	linked by v409	
+typ	greek_city_states	Greek city-states	36601	Rhodes	island	3	3	3.7	linked by v409	
+typ	greek_city_states	Greek city-states	54337	Syracuse	city	3	3	3.6	linked by v409	
+typ	greek_city_states	Greek city-states	57203	Aegina		4	4	1.8	linked by v409	
+typ	greek_city_states	Greek city-states	20609	Byzantium	city	3	4	2.8	linked by v409	
+typ	greek_city_states	Greek city-states	36092	Ephesus		3	4	2.7	linked by v409	
+typ	greek_city_states	Greek city-states	57196	Samos		4	4	2.3	linked by v409	
+fam	greek_city_states	Greek city-states	67976	Argos	city	4		3.0	new word	Corinth (city) fam 4 z 3.0; Sparta fam 2 z 3.2; Byzantium (city) fam 3 z 2.8; Thebes (ancient city) fam 3 z 2.8
+typ	ancient_greek_writers	ancient Greek writers	20367	Homer	poet	2	1	3.9	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	12497	Sophocles		3	1	2.6	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	12499	Aeschylus		4	2	2.4	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	67977	Aesop		2	2	2.5	new word	
+typ	ancient_greek_writers	ancient Greek writers	12500	Aristophanes		4	2	2.4	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	12498	Euripides		4	2	2.6	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	20371	Herodotus		4	2	2.8	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	21685	Sappho		4	2	2.4	linked by v409	
+typ	ancient_greek_writers	ancient Greek writers	67979	Hesiod		4	3	2.2	new word	
+typ	ancient_greek_writers	ancient Greek writers	67980	Pindar		4	3	2.4	new word	
+typ	ancient_greek_writers	ancient Greek writers	67978	Plutarch		3	3	2.7	new word	
+typ	ancient_greek_writers	ancient Greek writers	20370	Thucydides		4	3	2.4	linked by v409	
+fam	ancient_greek_writers	ancient Greek writers	67977	Aesop		2		2.5	new word	Sophocles fam 3 z 2.6; Euripides fam 4 z 2.6; Aeschylus fam 4 z 2.4; Aristophanes fam 4 z 2.4
+fam	ancient_greek_writers	ancient Greek writers	67979	Hesiod		4		2.2	new word	Aeschylus fam 4 z 2.4; Aristophanes fam 4 z 2.4; Thucydides fam 4 z 2.4; Sappho fam 4 z 2.4
+fam	ancient_greek_writers	ancient Greek writers	67980	Pindar		4		2.4	new word	Aeschylus fam 4 z 2.4; Aristophanes fam 4 z 2.4; Thucydides fam 4 z 2.4; Sappho fam 4 z 2.4
+fam	ancient_greek_writers	ancient Greek writers	67978	Plutarch		3		2.7	new word	Herodotus fam 4 z 2.8; Sophocles fam 3 z 2.6; Euripides fam 4 z 2.6; Aeschylus fam 4 z 2.4
+typ	greek_buildings	Greek buildings	2334	Acropolis	ancient citadel	2	1	2.7	linked by v409	
+typ	greek_buildings	Greek buildings	2335	Parthenon		2	1	2.7	linked by v409	
+typ	greek_buildings	Greek buildings	21806	Knossos		4	2	2.2	linked by v409	
+typ	greek_buildings	Greek buildings	37346	Temple of Apollo		4	2	3.7	linked by v409	
+typ	greek_buildings	Greek buildings	37347	Temple of Poseidon		4	2	3.1	linked by v409	
+typ	greek_buildings	Greek buildings	37771	Panathenaic Stadium		4	3		linked by v409	
+typ	greek_buildings	Greek buildings	67981	Temple of Hephaestus		4	3	2.2	new word	
+typ	greek_buildings	Greek buildings	37356	Temple of Olympian Zeus		5	3	3.1	linked by v409	
+typ	greek_buildings	Greek buildings	67982	Tower of the Winds		4	3		new word	
+typ	greek_buildings	Greek buildings	37355	Erechtheion		5	4		linked by v409	
+typ	greek_buildings	Greek buildings	37782	Lion Gate		5	4	4.0	linked by v409	
+typ	greek_buildings	Greek buildings	37777	Propylaea		5	4		linked by v409	
+typ	greek_buildings	Greek buildings	37783	Treasury of Atreus		5	4	2.1	linked by v409	
+fam	greek_buildings	Greek buildings	67981	Temple of Hephaestus		4		2.2	new word	Knossos fam 4 z 2.2; Treasury of Atreus fam 5 z 2.1; Hephaestus (god) fam 3 z 2.2; Meenakshi Temple fam 4 z 2.2
+fam	greek_buildings	Greek buildings	67982	Tower of the Winds		4			new word	Erechtheion fam 5 z ; Panathenaic Stadium fam 4 z ; toad in the hole (dish) fam 4 z ; The Netherlands fam 2 z 
+typ	smores	s'mores	605	chocolate	sweet	1	1	4.5	linked by v409	
+typ	smores	s'mores	20265	graham cracker		2	1	3.3	linked by v409	
+typ	smores	s'mores	611	marshmallow		1	1	3.2	linked by v409	
+typ	smores	s'mores	3024	campfire	outdoor fire	1	2	3.1	linked by v409	
+typ	smores	s'mores	67983	roasting stick		2	2	3.3	new word	
+typ	smores	s'mores	18158	digestive	biscuit	3	3	3.5	linked by v409	
+fam	smores	s'mores	67983	roasting stick		2		3.3	new word	graham cracker fam 2 z 3.3; marshmallow fam 1 z 3.2; incense stick fam 2 z 3.3; sunscreen stick fam 3 z 3.3
+typ	hiking_snacks	hiking snacks	48638	energy bar		2	1	4.7	linked by v409	
+typ	hiking_snacks	hiking snacks	16764	granola bar		2	1	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	3074	trail mix		2	1	4.2	linked by v409	
+typ	hiking_snacks	hiking snacks	88	banana	fruit	1	2	4.0	linked by v409	
+typ	hiking_snacks	hiking snacks	17783	beef jerky		1	2	3.1	linked by v409	
+typ	hiking_snacks	hiking snacks	16763	dried fruit		2	2	3.9	linked by v409	
+typ	hiking_snacks	hiking snacks	17350	peanut	legume nut	1	2	3.9	linked by v409	
+typ	hiking_snacks	hiking snacks	16772	protein bar		2	2	4.4	linked by v409	
+typ	hiking_snacks	hiking snacks	87	apple	fruit	1	3	4.8	linked by v409	
+typ	hiking_snacks	hiking snacks	605	chocolate	sweet	1	3	4.5	linked by v409	
+typ	hiking_snacks	hiking snacks	19094	crackers		1	3	3.4	linked by v409	
+typ	hiking_snacks	hiking snacks	17267	dried apricot		2	3	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	44013	energy gel		3	3	3.8	linked by v409	
+typ	hiking_snacks	hiking snacks	19092	pretzels		1	3	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	17265	raisin		1	3	3.0	linked by v409	
+typ	hiking_snacks	hiking snacks	796	sandwich		1	3	4.1	linked by v409	
+typ	hiking_snacks	hiking snacks	59484	kendal mint cake		4	4	2.8	linked by v409	
+typ	hiking_dangers	hiking dangers	14331	blister	skin bubble	1	1	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	994	bear	animal	1	2	4.7	linked by v409	
+typ	hiking_dangers	hiking dangers	3851	dehydration		2	2	3.3	linked by v409	
+typ	hiking_dangers	hiking dangers	15083	hypothermia		1	2	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	1973	lightning	storm	1	2	4.2	linked by v409	
+typ	hiking_dangers	hiking dangers	30614	poison ivy	plant	1	2	3.6	linked by v409	
+typ	hiking_dangers	hiking dangers	1135	snake	animal	1	2	4.2	linked by v409	
+typ	hiking_dangers	hiking dangers	14999	sprained ankle		1	2	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	14337	sunburn		1	2	3.0	linked by v409	
+typ	hiking_dangers	hiking dangers	1370	tick	bug	2	2	3.8	linked by v409	
+typ	hiking_dangers	hiking dangers	31222	flash flood		2	3	4.0	linked by v409	
+typ	hiking_dangers	hiking dangers	1974	fog		1	3	3.9	linked by v409	
+typ	hiking_dangers	hiking dangers	15009	frostbite		2	3	2.8	linked by v409	
+typ	hiking_dangers	hiking dangers	31451	heatstroke		2	3	2.3	linked by v409	
+typ	hiking_dangers	hiking dangers	1345	mosquito		1	3	3.6	linked by v409	
+typ	hiking_dangers	hiking dangers	67984	rockfall		3	3	1.9	new word	
+typ	hiking_dangers	hiking dangers	1779	stinging nettle		2	3	2.6	linked by v409	
+typ	hiking_dangers	hiking dangers	43543	avalanche	skiing	2	4	3.5	linked by v409	
+fam	hiking_dangers	hiking dangers	67984	rockfall		3		1.9	new word	heatstroke fam 2 z 2.3; stinging nettle fam 2 z 2.6; frostbite fam 2 z 2.8; blister (skin bubble) fam 1 z 3.0
+typ	bike_gear	bike gear	20685	helmet	armor	1	1	4.0	linked by v409	
+typ	bike_gear	bike gear	7389	pump	machine	1	1	4.3	linked by v409	
+typ	bike_gear	bike gear	44237	cycling shorts		2	2	3.8	linked by v409	
+typ	bike_gear	bike gear	25718	D-lock		3	2	4.5	linked by v409	
+typ	bike_gear	bike gear	4956	gloves		1	2	4.0	linked by v409	
+typ	bike_gear	bike gear	57550	high-vis vest		2	2	3.2	linked by v409	
+typ	bike_gear	bike gear	27963	light	illumination	1	2	5.3	linked by v409	
+typ	bike_gear	bike gear	40016	reflective vest		2	2	3.3	linked by v409	
+typ	bike_gear	bike gear	19921	water bottle		1	2	4.5	linked by v409	
+typ	bike_gear	bike gear	67987	elbow pads		2	3	3.5	new word	
+typ	bike_gear	bike gear	48631	hydration pack		3	3	3.2	linked by v409	
+typ	bike_gear	bike gear	24462	kneepads		2	3	1.8	linked by v409	
+typ	bike_gear	bike gear	25623	multitool		3	3	1.5	linked by v409	
+typ	bike_gear	bike gear	67988	patch kit		3	3	4.0	new word	
+typ	bike_gear	bike gear	4952	sunglasses		1	3	3.7	linked by v409	
+typ	bike_gear	bike gear	67990	tire levers		3	3	3.0	new word	
+typ	bike_gear	bike gear	24786	goggles	eyewear	2	4	3.4	linked by v409	
+fam	bike_gear	bike gear	67987	elbow pads		2		3.5	new word	goggles (eyewear) fam 2 z 3.4; sunglasses fam 1 z 3.7; shin pads fam 2 z 3.4; tennis elbow fam 2 z 3.7
+fam	bike_gear	bike gear	67988	patch kit		3		4.0	new word	gloves fam 1 z 4.0; helmet (armor) fam 1 z 4.0; patch cable fam 3 z 4.0; rocket kit fam 3 z 4.0
+fam	bike_gear	bike gear	67990	tire levers		3		3.0	new word	hydration pack fam 3 z 3.2; high-vis vest fam 2 z 3.2; tire gauge fam 2 z 3.7; tire chains fam 3 z 3.7
+fam	bike_gear	bike gear	67985	lights		1		4.6	form alias of light	
+fam	bike_gear	bike gear	67986	knee pads		2		3.7	spelling alias of kneepads	
+fam	bike_gear	bike gear	67989	puncture repair kit		2		3.1	regional alias of patch kit UK	
+fam	bike_gear	bike gear	67991	tyre levers		3		3.0	spelling alias of tire levers UK	
+fam	bike_gear	bike gear	67992	multi-tool		3		4.2	spelling alias of multitool	
+fam	bike_gear	bike gear	67997	U-lock		3		4.4	regional alias of D-lock US	
+typ	climbing_holds	climbing holds	45056	crimp		3	1	2.6	linked by v409	
+typ	climbing_holds	climbing holds	45057	jug	climbing hold	2	1	3.3	linked by v409	
+typ	climbing_holds	climbing holds	45058	sloper		4	1	1.9	linked by v409	
+typ	climbing_holds	climbing holds	68000	edge	climbing hold	4	2	4.7	new word	
+typ	climbing_holds	climbing holds	67998	pinch	climbing hold	4	2	3.8	new word	
+typ	climbing_holds	climbing holds	67999	pocket	climbing hold	4	2	4.5	new word	
+typ	climbing_holds	climbing holds	68003	flake	rock	4	3	3.2	new word	
+typ	climbing_holds	climbing holds	68001	sidepull		5	3		new word	
+typ	climbing_holds	climbing holds	45081	undercling		5	3		linked by v409	
+typ	climbing_holds	climbing holds	68002	volume	climbing hold	4	3	4.8	new word	
+typ	climbing_holds	climbing holds	45083	gaston	climbing	5	4	3.2	linked by v409	
+typ	climbing_holds	climbing holds	68004	jib	climbing hold	5	4	2.8	new word	
+fam	climbing_holds	climbing holds	68000	edge	climbing hold	4		4.7	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; edge (geometry) fam 2 z 4.7; edge (skiing) fam 3 z 4.7
+fam	climbing_holds	climbing holds	67998	pinch	climbing hold	4		3.8	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; pinch (squeeze) fam 1 z 3.8; pinch out fam 5 z 3.8
+fam	climbing_holds	climbing holds	67999	pocket	climbing hold	4		4.5	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; pocket (clothing) fam 1 z 4.5; back pocket fam 4 z 4.5
+fam	climbing_holds	climbing holds	68003	flake	rock	4		3.2	new word	gaston (climbing) fam 5 z 3.2; jug (climbing hold) fam 2 z 3.3; undercling fam 5 z ; flake (chocolate) fam 4 z 3.2
+fam	climbing_holds	climbing holds	68001	sidepull		5			new word	undercling fam 5 z ; gaston (climbing) fam 5 z 3.2; jug (climbing hold) fam 2 z 3.3; crimp fam 3 z 2.6
+fam	climbing_holds	climbing holds	68002	volume	climbing hold	4		4.8	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; volume (capacity) fam 2 z 4.8; volume (sound) fam 1 z 4.8
+fam	climbing_holds	climbing holds	68004	jib	climbing hold	5		2.8	new word	crimp fam 3 z 2.6; undercling fam 5 z ; gaston (climbing) fam 5 z 3.2; jib (sail) fam 4 z 2.8
+typ	bike_tricks	bike tricks	68005	bunny hop	bike	3	1	3.8	new word	
+typ	bike_tricks	bike tricks	47993	wheelie		2	1	2.7	linked by v409	
+typ	bike_tricks	bike tricks	68008	barspin		4	2		new word	
+typ	bike_tricks	bike tricks	68009	endo		4	2	2.9	new word	
+typ	bike_tricks	bike tricks	48023	manual	trick	3	2	4.3	linked by v409	
+typ	bike_tricks	bike tricks	68006	no-hander		3	2	2.9	new word	
+typ	bike_tricks	bike tricks	68007	tailwhip		4	2		new word	
+typ	bike_tricks	bike tricks	11833	backflip		2	3	2.7	linked by v409	
+typ	bike_tricks	bike tricks	68010	stoppie		4	3		new word	
+typ	bike_tricks	bike tricks	68011	track stand		4	3	4.7	new word	
+typ	bike_tricks	bike tricks	68012	whip	bike trick	4	3	4.0	new word	
+typ	bike_tricks	bike tricks	68013	can-can	bike trick	5	4	6.2	new word	
+typ	bike_tricks	bike tricks	43636	fakie		3	4	1.6	linked by v409	
+fam	bike_tricks	bike tricks	68005	bunny hop	bike	3		3.8	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; gym bunny fam 4 z 3.8; bunny hop (dance) fam 3 z 3.8
+fam	bike_tricks	bike tricks	68008	barspin		4			new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; manual (trick) fam 3 z 4.3; fakie fam 3 z 1.6
+fam	bike_tricks	bike tricks	68009	endo		4		2.9	new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; fakie fam 3 z 1.6; Shusaku Endo fam 5 z 
+fam	bike_tricks	bike tricks	68006	no-hander		3		2.9	new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; fakie fam 3 z 1.6; manual (trick) fam 3 z 4.3
+fam	bike_tricks	bike tricks	68007	tailwhip		4			new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; manual (trick) fam 3 z 4.3; fakie fam 3 z 1.6
+fam	bike_tricks	bike tricks	68010	stoppie		4			new word	backflip fam 2 z 2.7; wheelie fam 2 z 2.7; manual (trick) fam 3 z 4.3; fakie fam 3 z 1.6
+fam	bike_tricks	bike tricks	68011	track stand		4		4.7	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; eight-track fam 4 z 4.7; hall stand fam 3 z 4.7
+fam	bike_tricks	bike tricks	68012	whip	bike trick	4		4.0	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; whip (mix) fam 2 z 4.0; whip (politics) fam 3 z 4.0
+fam	bike_tricks	bike tricks	68013	can-can	bike trick	5		6.2	new word	manual (trick) fam 3 z 4.3; backflip fam 2 z 2.7; can-can (dance) fam 2 z 6.2; no can do fam 2 z 6.0
+typ	bike_park	bike park	68014	berm		4	1	2.4	new word	
+typ	bike_park	bike park	68015	pump track		3	1	4.2	new word	
+typ	bike_park	bike park	68016	dirt jump		3	2	4.1	new word	
+typ	bike_park	bike park	68017	drop	trail feature	3	2	5.0	new word	
+typ	bike_park	bike park	48097	kicker	ramp	4	2	3.4	linked by v409	
+typ	bike_park	bike park	68020	gap jump		4	3	4.3	new word	
+typ	bike_park	bike park	68018	rock garden	trail	4	3	4.6	new word	
+typ	bike_park	bike park	68022	step-down	jump	4	3	5.0	new word	
+typ	bike_park	bike park	48109	step-up		5	3	5.1	linked by v409	
+typ	bike_park	bike park	68019	tabletop	jump	4	3	3.1	new word	
+typ	bike_park	bike park	48037	wallride		4	3		linked by v409	
+typ	bike_park	bike park	43525	chairlift		2	4	2.3	linked by v409	
+typ	bike_park	bike park	68025	foam pit		3	4	3.7	new word	
+typ	bike_park	bike park	68024	ladder bridge		5	4	3.9	new word	
+typ	bike_park	bike park	68023	skinny	narrow plank	5	4	4.0	new word	
+fam	bike_park	bike park	68014	berm		4		2.4	new word	chairlift fam 2 z 2.3; wallride fam 4 z ; kicker (ramp) fam 4 z 3.4; step-up fam 5 z 5.1
+fam	bike_park	bike park	68015	pump track		3		4.2	new word	kicker (ramp) fam 4 z 3.4; step-up fam 5 z 5.1; track lighting fam 3 z 4.2; heat pump fam 3 z 4.2
+fam	bike_park	bike park	68016	dirt jump		3		4.1	new word	kicker (ramp) fam 4 z 3.4; step-up fam 5 z 5.1; standing triple jump fam 5 z 4.1; dirt track fam 1 z 4.1
+fam	bike_park	bike park	68017	drop	trail feature	3		5.0	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; drop (unit) fam 1 z 5.0; drop it fam 2 z 5.0
+fam	bike_park	bike park	68020	gap jump		4		4.3	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; broad jump fam 4 z 4.3; johnny jump-up fam 5 z 4.2
+fam	bike_park	bike park	68018	rock garden	trail	4		4.6	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; rock garden (garden) fam 2 z 4.6; French garden fam 3 z 4.6
+fam	bike_park	bike park	68022	step-down	jump	4		5.0	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; step-down (electrical) fam 4 z 5.0; top step fam 1 z 5.0
+fam	bike_park	bike park	68019	tabletop	jump	4		3.1	new word	wallride fam 4 z ; kicker (ramp) fam 4 z 3.4; chairlift fam 2 z 2.3; tabletop (yoga) fam 3 z 3.1
+fam	bike_park	bike park	68025	foam pit		3		3.7	new word	kicker (ramp) fam 4 z 3.4; wallride fam 4 z ; pit pony fam 3 z 3.7; orchestra pit fam 2 z 3.8
+fam	bike_park	bike park	68024	ladder bridge		5		3.9	new word	kicker (ramp) fam 4 z 3.4; wallride fam 4 z ; arch bridge fam 2 z 3.9; walking under a ladder fam 1 z 3.9
+fam	bike_park	bike park	68023	skinny	narrow plank	5		4.0	new word	kicker (ramp) fam 4 z 3.4; wallride fam 4 z ; skinny (thin) fam 1 z 4.0; skinny tie fam 3 z 3.9
+fam	bike_park	bike park	68021	wall ride		4		4.6	spelling alias of wallride	
+typ	pollution_types	pollution types	68026	air pollution		1	1	4.2	new word	
+typ	pollution_types	pollution types	32189	noise pollution		2	1	4.1	linked by v409	
+typ	pollution_types	pollution types	68028	plastic pollution		1	1	4.0	new word	
+typ	pollution_types	pollution types	68027	water pollution		1	1	4.2	new word	
+typ	pollution_types	pollution types	68030	land pollution		2	2	4.2	new word	
+typ	pollution_types	pollution types	32190	light pollution		2	2	4.2	linked by v409	
+typ	pollution_types	pollution types	68029	soil pollution		2	2	4.0	new word	
+typ	pollution_types	pollution types	68031	thermal pollution		4	3	3.8	new word	
+typ	pollution_types	pollution types	68032	visual pollution		4	4	4.0	new word	
+fam	pollution_types	pollution types	68026	air pollution		1		4.2	new word	light pollution fam 2 z 4.2; noise pollution fam 2 z 4.1; air raid fam 2 z 4.2; air rifle fam 3 z 4.2
+fam	pollution_types	pollution types	68028	plastic pollution		1		4.0	new word	noise pollution fam 2 z 4.1; light pollution fam 2 z 4.2; plastic cups fam 1 z 4.0; plastic surgeon fam 2 z 4.0
+fam	pollution_types	pollution types	68027	water pollution		1		4.2	new word	light pollution fam 2 z 4.2; noise pollution fam 2 z 4.1; water spider fam 4 z 4.2; water barrel fam 3 z 4.2
+fam	pollution_types	pollution types	68030	land pollution		2		4.2	new word	noise pollution fam 2 z 4.1; Candy Land fam 3 z 4.2; light pollution fam 2 z 4.2
+fam	pollution_types	pollution types	68029	soil pollution		2		4.0	new word	noise pollution fam 2 z 4.1; light pollution fam 2 z 4.2; soil pipe fam 4 z 4.0; sandy soil fam 2 z 4.0
+fam	pollution_types	pollution types	68031	thermal pollution		4		3.8	new word	noise pollution fam 2 z 4.1; light pollution fam 2 z 4.2; thermal radiation fam 4 z 3.8; thermal blanket fam 3 z 3.7
+fam	pollution_types	pollution types	68032	visual pollution		4		4.0	new word	light pollution fam 2 z 4.2; visual cliff fam 5 z 4.0; noise pollution fam 2 z 4.1
+typ	oil_industry	oil industry	32339	drilling		2	1	3.9	linked by v409	
+typ	oil_industry	oil industry	32337	oil rig		1	1	3.9	linked by v409	
+typ	oil_industry	oil industry	32340	refinery		2	1	3.5	linked by v409	
+typ	oil_industry	oil industry	25480	barrel	container	1	2	4.2	linked by v409	
+typ	oil_industry	oil industry	68033	derrick	oil well	3	2	3.5	new word	
+typ	oil_industry	oil industry	32336	fracking		3	2	3.3	linked by v409	
+typ	oil_industry	oil industry	32341	pipeline		2	2	4.0	linked by v409	
+typ	oil_industry	oil industry	2810	tanker	ship	2	2	3.4	linked by v409	
+typ	oil_industry	oil industry	68035	gusher	oil well	4	3	2.1	new word	
+typ	oil_industry	oil industry	29206	OPEC		2	3	3.2	linked by v409	
+typ	oil_industry	oil industry	68034	pump jack		4	3	4.2	new word	
+typ	oil_industry	oil industry	68036	roughneck	oil worker	4	4	1.8	new word	
+typ	oil_industry	oil industry	32352	wellhead		5	4	2.1	linked by v409	
+fam	oil_industry	oil industry	68033	derrick	oil well	3		3.5	new word	refinery fam 2 z 3.5; tanker (ship) fam 2 z 3.4; fracking fam 3 z 3.3; derrick (harbor) fam 4 z 3.5
+fam	oil_industry	oil industry	68035	gusher	oil well	4		2.1	new word	wellhead fam 5 z 2.1; OPEC fam 2 z 3.2; fracking fam 3 z 3.3; tanker (ship) fam 2 z 3.4
+fam	oil_industry	oil industry	68034	pump jack		4		4.2	new word	barrel (container) fam 1 z 4.2; pipeline fam 2 z 4.0; new jack swing fam 4 z 4.2; heat pump fam 3 z 4.2
+fam	oil_industry	oil industry	68036	roughneck	oil worker	4		1.8	new word	wellhead fam 5 z 2.1; OPEC fam 2 z 3.2; fracking fam 3 z 3.3; tanker (ship) fam 2 z 3.4
+typ	protected_areas	protected areas	32261	national park		1	1	5.0	linked by v409	
+typ	protected_areas	protected areas	32268	nature reserve		2	1	4.5	linked by v409	
+typ	protected_areas	protected areas	32260	wildlife reserve		2	1	4.1	linked by v409	
+typ	protected_areas	protected areas	48724	game reserve		3	2	4.6	linked by v409	
+typ	protected_areas	protected areas	32271	marine park		3	2	4.4	linked by v409	
+typ	protected_areas	protected areas	68038	marine reserve		3	2	4.2	new word	
+typ	protected_areas	protected areas	32264	sanctuary	refuge	2	2	3.9	linked by v409	
+typ	protected_areas	protected areas	68037	wildlife refuge		2	2	3.8	new word	
+typ	protected_areas	protected areas	32278	biosphere reserve		5	3	2.9	linked by v409	
+typ	protected_areas	protected areas	68039	national forest		2	3	4.6	new word	
+typ	protected_areas	protected areas	60504	Natura 2000		4	4		linked by v409	
+typ	protected_areas	protected areas	32279	Ramsar site		5	4	1.8	linked by v409	
+fam	protected_areas	protected areas	68038	marine reserve		3		4.2	new word	wildlife reserve fam 2 z 4.1; marine park fam 3 z 4.4; marine engineering fam 3 z 4.3; marine snow fam 5 z 4.3
+fam	protected_areas	protected areas	68037	wildlife refuge		2		3.8	new word	sanctuary (refuge) fam 2 z 3.9; wildlife reserve fam 2 z 4.1; wildlife corridor fam 4 z 3.8; refuge (mountain hut) fam 3 z 3.9
+fam	protected_areas	protected areas	68039	national forest		2		4.6	new word	game reserve fam 3 z 4.6; nature reserve fam 2 z 4.5; community forest fam 4 z 4.6; Black Forest fam 2 z 4.6
+typ	greenhouse_gases	greenhouse gases	32296	carbon dioxide		2	1	3.7	linked by v409	
+typ	greenhouse_gases	greenhouse gases	32299	methane		3	1	3.5	linked by v409	
+typ	greenhouse_gases	greenhouse gases	15516	nitrous oxide		3	2	2.9	linked by v409	
+typ	greenhouse_gases	greenhouse gases	68040	CFC		3	3	2.8	new word	
+typ	greenhouse_gases	greenhouse gases	40477	ozone		2	3	3.4	linked by v409	
+typ	greenhouse_gases	greenhouse gases	68041	sulfur hexafluoride		5	4	1.9	new word	
+fam	greenhouse_gases	greenhouse gases	68040	CFC		3		2.8	new word	nitrous oxide fam 3 z 2.9; ozone fam 2 z 3.4; methane fam 3 z 3.5; carbon dioxide fam 2 z 3.7
+fam	greenhouse_gases	greenhouse gases	68041	sulfur hexafluoride		5		1.9	new word	nitrous oxide fam 3 z 2.9; ozone fam 2 z 3.4; sulfur dioxide fam 3 z 3.3; sulfur fam 2 z 3.4
+fam	greenhouse_gases	greenhouse gases	68042	sulphur hexafluoride		5		1.9	spelling alias of sulfur hexafluoride UK	
+typ	eco_habits	eco habits	32354	carpooling		3	1	2.2	linked by v409	
+typ	eco_habits	eco habits	32353	composting		2	1	2.7	linked by v409	
+typ	eco_habits	eco habits	68047	recycling		1	1	3.8	new word	
+typ	eco_habits	eco habits	15965	cycling		1	2	4.1	linked by v409	
+typ	eco_habits	eco habits	68049	line drying		3	2	3.7	new word	
+typ	eco_habits	eco habits	68050	thrifting		3	2	2.2	new word	
+typ	eco_habits	eco habits	68048	tree planting		2	2	3.8	new word	
+typ	eco_habits	eco habits	24002	upcycling		4	2	2.0	linked by v409	
+typ	eco_habits	eco habits	15808	walking		1	2	4.9	linked by v409	
+typ	eco_habits	eco habits	32367	clothes swap		3	3	3.8	linked by v409	
+typ	eco_habits	eco habits	24875	mending		2	3	2.9	linked by v409	
+fam	eco_habits	eco habits	68047	recycling		1		3.8	new word	clothes swap fam 3 z 3.8; cycling fam 1 z 4.1; recycling center fam 3 z 3.8; recycling plant fam 2 z 3.8
+fam	eco_habits	eco habits	68049	line drying		3		3.7	new word	clothes swap fam 3 z 3.8; cycling fam 1 z 4.1; chalk line fam 5 z 3.7; dash-dot line fam 4 z 3.7
+fam	eco_habits	eco habits	68050	thrifting		3		2.2	new word	carpooling fam 3 z 2.2; upcycling fam 4 z 2.0; composting fam 2 z 2.7; mending fam 2 z 2.9
+fam	eco_habits	eco habits	68048	tree planting		2		3.8	new word	clothes swap fam 3 z 3.8; cycling fam 1 z 4.1; tree frog fam 2 z 3.8; Joshua tree (tree) fam 3 z 3.8
+typ	eco_swaps	eco swaps	32363	bamboo toothbrush		3	1	3.2	linked by v409	
+typ	eco_swaps	eco swaps	68051	metal straw		2	1	3.9	new word	
+typ	eco_swaps	eco swaps	32356	reusable bag		1	1	3.2	linked by v409	
+typ	eco_swaps	eco swaps	32364	reusable cup		2	1	3.2	linked by v409	
+typ	eco_swaps	eco swaps	32365	beeswax wrap		4	2	2.7	linked by v409	
+typ	eco_swaps	eco swaps	32358	LED bulb		2	2	3.7	linked by v409	
+typ	eco_swaps	eco swaps	49603	rechargeable battery		1	2	2.9	linked by v409	
+typ	eco_swaps	eco swaps	68052	shampoo bar		3	2	3.6	new word	
+typ	eco_swaps	eco swaps	4991	tote bag		2	2	3.3	linked by v409	
+typ	eco_swaps	eco swaps	48287	travel mug		3	2	3.7	linked by v409	
+typ	eco_swaps	eco swaps	16151	bar soap		1	3	4.1	linked by v409	
+typ	eco_swaps	eco swaps	68054	cloth diaper		2	3	3.4	new word	
+typ	eco_swaps	eco swaps	68053	cloth napkin		2	3	3.1	new word	
+typ	eco_swaps	eco swaps	4975	handkerchief		2	3	3.2	linked by v409	
+typ	eco_swaps	eco swaps	16316	safety razor		2	3	3.7	linked by v409	
+fam	eco_swaps	eco swaps	68051	metal straw		2		3.9	new word	bar soap fam 1 z 4.1; safety razor fam 2 z 3.7; straw hat fam 1 z 3.9; straw poll fam 3 z 3.9
+fam	eco_swaps	eco swaps	68052	shampoo bar		3		3.6	new word	safety razor fam 2 z 3.7; LED bulb fam 2 z 3.7; shampoo fam 1 z 3.6; dry shampoo fam 3 z 3.6
+fam	eco_swaps	eco swaps	68054	cloth diaper		2		3.4	new word	tote bag fam 2 z 3.3; handkerchief fam 2 z 3.2; diaper fam 1 z 3.5; diaper rash fam 1 z 3.3
+fam	eco_swaps	eco swaps	68053	cloth napkin		2		3.1	new word	handkerchief fam 2 z 3.2; reusable bag fam 1 z 3.2; napkin fam 1 z 3.2; napkin ring fam 3 z 3.2
+fam	eco_swaps	eco swaps	68055	cloth nappy		2		2.9	regional alias of cloth diaper UK	
+typ	eco_home	eco home	23592	heat pump		3	1	4.2	linked by v409	
+typ	eco_home	eco home	23179	insulation		3	1	3.7	linked by v409	
+typ	eco_home	eco home	32236	solar panel		1	1	4.2	linked by v409	
+typ	eco_home	eco home	1864	compost bin		2	2	3.2	linked by v409	
+typ	eco_home	eco home	67151	double-pane windows		2	2	3.1	linked by v409	
+typ	eco_home	eco home	67152	draft stopper		3	2	3.1	linked by v409	
+typ	eco_home	eco home	1884	rain barrel		2	2	4.1	linked by v409	
+typ	eco_home	eco home	32372	smart meter		3	2	4.0	linked by v409	
+typ	eco_home	eco home	68056	solar water heater		3	2	3.5	new word	
+typ	eco_home	eco home	23257	clothesline	laundry	2	3	2.4	linked by v409	
+typ	eco_home	eco home	14126	green roof		2	3	4.5	linked by v409	
+typ	eco_home	eco home	68057	smart thermostat		3	3	3.1	new word	
+typ	eco_home	eco home	32369	wormery		5	4		linked by v409	
+fam	eco_home	eco home	68056	solar water heater		3		3.5	new word	insulation fam 3 z 3.7; compost bin fam 2 z 3.2; solar flare fam 3 z 3.5; water beetle fam 4 z 3.5
+fam	eco_home	eco home	68057	smart thermostat		3		3.1	new word	double-pane windows fam 2 z 3.1; draft stopper fam 3 z 3.1; thermostat fam 2 z 3.1; Smart EQ fam 5 z 3.3
+typ	volcano_parts	volcano parts	1931	crater		2	1	3.6	linked by v409	
+typ	volcano_parts	volcano parts	31849	magma chamber		3	1	3.2	linked by v409	
+typ	volcano_parts	volcano parts	31842	vent	volcano	3	1	3.8	linked by v409	
+typ	volcano_parts	volcano parts	31843	caldera		3	2	2.6	linked by v409	
+typ	volcano_parts	volcano parts	31844	cone	volcano	2	2	3.8	linked by v409	
+typ	volcano_parts	volcano parts	1933	summit	mountaintop	2	2	4.3	linked by v409	
+typ	volcano_parts	volcano parts	68059	conduit	volcano	4	3	3.3	new word	
+typ	volcano_parts	volcano parts	31959	fissure		4	3	2.8	linked by v409	
+typ	volcano_parts	volcano parts	68060	flank	volcano	4	3	3.6	new word	
+fam	volcano_parts	volcano parts	68059	conduit	volcano	4		3.3	new word	magma chamber fam 3 z 3.2; crater fam 2 z 3.6; vent (volcano) fam 3 z 3.8; conduit (electrical) fam 4 z 3.3
+fam	volcano_parts	volcano parts	68060	flank	volcano	4		3.6	new word	crater fam 2 z 3.6; vent (volcano) fam 3 z 3.8; flank (body part) fam 3 z 3.6; flank (military) fam 4 z 3.6
+typ	geothermal_wonders	geothermal wonders	31952	Blue Lagoon		3	1	3.4	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31942	Old Faithful	geyser	2	1	4.1	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31943	Yellowstone		2	1	3.3	linked by v409	
+typ	geothermal_wonders	geothermal wonders	68061	Geysir		4	2		new word	
+typ	geothermal_wonders	geothermal wonders	68062	Grand Prismatic Spring		4	2	2.8	new word	
+typ	geothermal_wonders	geothermal wonders	31953	Pamukkale		4	2	1.6	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31944	Rotorua		4	2	2.3	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31960	Beppu		5	3	1.6	linked by v409	
+typ	geothermal_wonders	geothermal wonders	60563	Cotton Castle		4	3	4.1	linked by v409	
+typ	geothermal_wonders	geothermal wonders	31954	Strokkur	geyser	5	3		linked by v409	
+typ	geothermal_wonders	geothermal wonders	31962	Wai-O-Tapu		5	3	2.1	linked by v409	
+fam	geothermal_wonders	geothermal wonders	68061	Geysir		4			new word	Strokkur (geyser) fam 5 z ; Yellowstone fam 2 z 3.3; Blue Lagoon fam 3 z 3.4; Rotorua fam 4 z 2.3
+fam	geothermal_wonders	geothermal wonders	68062	Grand Prismatic Spring		4		2.8	new word	Strokkur (geyser) fam 5 z ; Yellowstone fam 2 z 3.3; Grand Teton fam 4 z 2.7; grand cru fam 4 z 2.7
+typ	soil_layers	soil layers	31782	bedrock		3	1	3.3	linked by v409	
+typ	soil_layers	soil layers	31966	subsoil		3	1	2.2	linked by v409	
+typ	soil_layers	soil layers	30137	topsoil		2	1	2.6	linked by v409	
+typ	soil_layers	soil layers	30136	humus		3	2	2.4	linked by v409	
+typ	soil_layers	soil layers	30132	leaf litter		3	2	3.6	linked by v409	
+typ	soil_layers	soil layers	31972	soil horizon		4	2	3.9	linked by v409	
+typ	soil_layers	soil layers	60449	hardpan		5	3	1.6	linked by v409	
+typ	soil_layers	soil layers	31984	regolith		5	3	2.2	linked by v409	
+typ	antarctic_animals	Antarctic animals	8234	emperor penguin		1	1	3.7	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1064	penguin	bird	1	1	3.8	linked by v409	
+typ	antarctic_animals	Antarctic animals	8236	Adelie penguin		4	2	1.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8237	chinstrap penguin		4	2	2.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8898	elephant seal		3	2	3.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8238	gentoo penguin		4	2	2.4	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8235	king penguin		2	2	3.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1301	krill		3	2	2.6	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8902	leopard seal		3	2	3.5	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1097	albatross	bird	2	3	2.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1306	blue whale		1	3	4.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9706	crabeater seal		4	3		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8897	fur seal		3	3	3.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1307	humpback whale		2	3	2.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1305	killer whale		1	3	3.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8239	macaroni penguin		4	3	3.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1304	orca		1	3	2.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8240	rockhopper penguin		4	3	1.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8144	wandering albatross		4	3	2.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9704	Weddell seal		4	3	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8970	colossal squid		3	4	3.1	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9711	icefish		4	4		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	7867	minke whale		4	4	2.3	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9712	Ross seal		5	4	4.0	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	8122	skua		4	4	1.8	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9705	snow petrel		4	4	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9710	Antarctic midge		5	5	2.7	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9714	cape petrel		5	5	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9709	giant petrel		5	5	2.2	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9708	sheathbill		5	5		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9713	southern right whale		4	5	3.9	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1308	sperm whale		2	5	3.6	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9717	springtail		5	5		member (theme kept)	
+typ	antarctic_animals	Antarctic animals	9718	tardigrade		4	5	1.6	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	1128	tern		4	5	2.7	member (theme kept)	
+typ	antarctic_animals	Antarctic animals	63295	toothfish		5	5		member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23977	recycle		1	1	3.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23970	recycling bin		1	1	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23972	trash		1	1	4.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23251	trash can	household	1	1	4.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	3113	garbage truck		1	2	4.1	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23976	landfill		2	2	3.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	32208	reduce	waste	2	2	4.7	linked by v409	
+typ	bins_and_recycling	bins and recycling	32207	reuse		2	2	3.4	linked by v409	
+typ	bins_and_recycling	bins and recycling	23985	wheelie bin		2	2	2.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23983	aluminum can		2	3	4.0	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23978	bottle bank		3	3	4.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23982	cardboard		1	3	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	1836	compost		2	3	3.2	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	1864	compost bin		2	3	3.2	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23986	curbside pickup		3	3	2.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23980	dumpster		2	3	3.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23981	food waste		2	3	4.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4125	garbage collector		2	3	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4130	garbageman		3	3	1.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23998	pedal bin		2	3	3.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23999	recycling center		3	3	3.8	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	32215	recycling plant		2	3	3.8	linked by v409	
+typ	bins_and_recycling	bins and recycling	23990	recycling symbol		3	3	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23996	waste disposal		2	3	3.9	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23991	deposit return		4	4	4.2	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23993	e-waste		4	4	4.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4770	garbage disposal		3	4	3.8	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23992	hazardous waste		3	4	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	24002	upcycling		4	4	2.0	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23997	compactor		4	5	2.3	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23995	incinerator		3	5	2.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4772	InSinkErator	garbage disposal	5	5		member (theme kept)	
+typ	climbing_styles	climbing styles	5624	bouldering		3	1	2.3	linked by v409	
+typ	climbing_styles	climbing styles	5602	rock climbing		1	1	4.0	member (theme kept)	
+typ	climbing_styles	climbing styles	67993	indoor climbing		2	2	3.8	new word	
+typ	climbing_styles	climbing styles	5645	sport climbing		3	2	4.0	linked by v409	
+typ	climbing_styles	climbing styles	5638	free solo climbing		4	3	4.0	member (theme kept)	
+typ	climbing_styles	climbing styles	5368	ice climbing		3	3	4.0	member (theme kept)	
+typ	climbing_styles	climbing styles	45069	lead climbing		3	3	4.1	linked by v409	
+typ	climbing_styles	climbing styles	67994	speed climbing		3	3	4.0	new word	
+typ	climbing_styles	climbing styles	45070	top rope		3	3	4.1	linked by v409	
+typ	climbing_styles	climbing styles	67995	aid climbing		4	4	4.0	new word	
+typ	climbing_styles	climbing styles	67996	alpine climbing		4	4	3.5	new word	
+typ	climbing_styles	climbing styles	5646	trad climbing		4	4	2.9	member (theme kept)	
+fam	climbing_styles	climbing styles	67993	indoor climbing		2		3.8	new word	ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0; rope climbing fam 3 z 3.8; climbing gym fam 2 z 3.9
+fam	climbing_styles	climbing styles	67994	speed climbing		3		4.0	new word	free solo climbing fam 4 z 4.0; sport climbing fam 3 z 4.0; ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0
+fam	climbing_styles	climbing styles	67995	aid climbing		4		4.0	new word	free solo climbing fam 4 z 4.0; sport climbing fam 3 z 4.0; ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0
+fam	climbing_styles	climbing styles	67996	alpine climbing		4		3.5	new word	ice climbing fam 3 z 4.0; rock climbing fam 1 z 4.0; ants climbing a tree fam 5 z 3.5; alpine skiing fam 3 z 3.4
+typ	courtroom_words	courtroom words	33668	gavel		2	1	2.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4186	judge		1	1	5.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4187	jury		1	1	4.5	member (theme kept)	
+typ	courtroom_words	courtroom words	4069	lawyer		1	1	4.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4189	verdict		1	1	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4192	witness		1	1	4.5	member (theme kept)	
+typ	courtroom_words	courtroom words	33669	courtroom		1	2	3.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33670	cross-examination		3	2	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	4236	defendant		3	2	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4191	evidence		1	2	5.1	member (theme kept)	
+typ	courtroom_words	courtroom words	61129	jury box		1	2	4.4	member (theme kept)	
+typ	courtroom_words	courtroom words	33666	objection		2	2	3.8	member (theme kept)	
+typ	courtroom_words	courtroom words	4237	prosecutor		3	2	3.9	member (theme kept)	
+typ	courtroom_words	courtroom words	4235	testimony		3	2	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	4188	trial	court	1	2	4.9	member (theme kept)	
+typ	courtroom_words	courtroom words	33671	witness stand		2	2	4.4	member (theme kept)	
+typ	courtroom_words	courtroom words	4226	appeal	court	2	3	4.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4224	bail	court	2	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4263	bailiff		4	3	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4246	barrister		3	3	3.4	member (theme kept)	
+typ	courtroom_words	courtroom words	33678	closing argument		3	3	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	33673	court reporter		3	3	4.4	member (theme kept)	
+typ	courtroom_words	courtroom words	33672	dock	court	3	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	14735	hearsay		3	3	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	33674	hung jury		3	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	66956	overrule		2	3	2.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4238	plaintiff		3	3	3.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33667	plea		2	3	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	33665	sentence	court	2	3	4.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33675	sustained		3	3	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	4259	acquittal		4	4	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4254	affidavit		4	4	3.4	member (theme kept)	
+typ	courtroom_words	courtroom words	4270	arraignment		5	4	2.8	member (theme kept)	
+typ	courtroom_words	courtroom words	4267	contempt of court		4	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4071	counsel	lawyer	4	4	4.2	member (theme kept)	
+typ	courtroom_words	courtroom words	68058	deposition	court	3	4	3.5	new word	
+typ	courtroom_words	courtroom words	61127	gag order		3	4	3.6	member (theme kept)	
+typ	courtroom_words	courtroom words	26920	habeas corpus		3	4	2.8	member (theme kept)	
+typ	courtroom_words	courtroom words	4255	indictment		4	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4260	mistrial		4	4	2.6	member (theme kept)	
+typ	courtroom_words	courtroom words	4268	plea bargain		4	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4269	plea deal		3	4	4.0	member (theme kept)	
+typ	courtroom_words	courtroom words	4247	solicitor	lawyer	3	4	3.7	member (theme kept)	
+typ	courtroom_words	courtroom words	4253	subpoena		4	4	3.3	member (theme kept)	
+typ	courtroom_words	courtroom words	33677	summation	closing speech	4	4	2.9	member (theme kept)	
+typ	courtroom_words	courtroom words	33679	voir dire		5	4	2.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33783	amicus curiae		5	5	2.1	member (theme kept)	
+typ	courtroom_words	courtroom words	33799	certiorari		5	5	2.5	member (theme kept)	
+typ	courtroom_words	courtroom words	61126	estoppel		5	5	2.3	member (theme kept)	
+typ	courtroom_words	courtroom words	33782	in camera		5	5		member (theme kept)	
+typ	courtroom_words	courtroom words	33777	mens rea		4	5	3.0	member (theme kept)	
+typ	courtroom_words	courtroom words	33787	nolo contendere		5	5	1.5	member (theme kept)	
+typ	courtroom_words	courtroom words	33785	res judicata		5	5	1.6	member (theme kept)	
+typ	courtroom_words	courtroom words	33784	stare decisis		5	5	1.8	member (theme kept)	
+typ	courtroom_words	courtroom words	33780	sub judice		5	5	1.8	member (theme kept)	
+typ	courtroom_words	courtroom words	61128	tipstaff		5	5		member (theme kept)	
+typ	courtroom_words	courtroom words	4272	tort		5	5	3.1	member (theme kept)	
+fam	courtroom_words	courtroom words	68058	deposition	court	3		3.5	new word	plaintiff fam 3 z 3.6; barrister fam 3 z 3.4; deposition (erosion) fam 4 z 3.5; deposition (phase change) fam 5 z 3.5
+typ	famous_beaches	famous beaches	36613	Bondi Beach		2	1	3.0	member (theme kept)	
+typ	famous_beaches	famous beaches	36615	Copacabana	beach	2	1	2.6	member (theme kept)	
+typ	famous_beaches	famous beaches	36621	Miami Beach		2	1	4.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36616	Waikiki		2	1	2.7	member (theme kept)	
+typ	famous_beaches	famous beaches	36630	Brighton Beach		3	2	3.8	member (theme kept)	
+typ	famous_beaches	famous beaches	36618	Ipanema	beach	3	2	2.3	member (theme kept)	
+typ	famous_beaches	famous beaches	36617	Malibu	beach	2	2	3.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36628	Surfers Paradise		3	2	3.2	member (theme kept)	
+typ	famous_beaches	famous beaches	36620	Venice Beach		2	2	3.9	member (theme kept)	
+typ	famous_beaches	famous beaches	36622	Daytona Beach		2	3	3.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36624	Huntington Beach		3	3	3.5	member (theme kept)	
+typ	famous_beaches	famous beaches	36640	Manly Beach		3	3	3.7	member (theme kept)	
+typ	famous_beaches	famous beaches	36625	Omaha Beach		2	3	3.6	member (theme kept)	
+typ	famous_beaches	famous beaches	63171	Patong		4	3	1.7	member (theme kept)	
+typ	famous_beaches	famous beaches	36115	Playa del Carmen		3	3	3.0	member (theme kept)	
+typ	famous_beaches	famous beaches	36635	Seven Mile Beach		4	3	4.3	member (theme kept)	
+typ	famous_beaches	famous beaches	16715	South Beach		4	3	4.8	member (theme kept)	
+typ	famous_beaches	famous beaches	36619	Whitehaven Beach		4	3	2.6	member (theme kept)	
+typ	famous_beaches	famous beaches	36632	Barceloneta		4	4	1.8	member (theme kept)	
+typ	famous_beaches	famous beaches	36627	Bells Beach		4	4	3.9	member (theme kept)	
+typ	famous_beaches	famous beaches	36629	Cable Beach		4	4	4.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36109	Cabo San Lucas		3	4	3.0	member (theme kept)	
+typ	famous_beaches	famous beaches	36637	Camps Bay		4	4	4.1	member (theme kept)	
+typ	famous_beaches	famous beaches	36641	Coogee		4	4	2.2	member (theme kept)	
+typ	famous_beaches	famous beaches	63170	Fistral		5	4	1.5	member (theme kept)	
+typ	famous_beaches	famous beaches	36626	Juno Beach		3	4	3.2	member (theme kept)	
+typ	famous_beaches	famous beaches	36623	Myrtle Beach		3	4	3.3	member (theme kept)	
+typ	famous_beaches	famous beaches	36642	Pink Sands Beach		4	4	3.7	member (theme kept)	
+typ	famous_beaches	famous beaches	63172	Railay		4	4		member (theme kept)	
+typ	famous_beaches	famous beaches	62687	Diani		5	5	1.7	linked by v409	
+typ	famous_beaches	famous beaches	36638	Muizenberg		5	5		member (theme kept)	
+typ	famous_beaches	famous beaches	62688	Navagio		5	5		linked by v409	
+typ	famous_beaches	famous beaches	36639	Praia da Rocha		5	5	2.4	member (theme kept)	
+typ	famous_beaches	famous beaches	36636	Shipwreck Beach		4	5	3.1	member (theme kept)	
+typ	famous_beaches	famous beaches	60754	Zlatni Rat		5	5		linked by v409	
+typ	garden	garden	1829	flower bed		1	1	4.3	member (theme kept)	
+typ	garden	garden	1835	greenhouse		1	1	3.8	member (theme kept)	
+typ	garden	garden	1830	hedge	garden	1	1	3.7	member (theme kept)	
+typ	garden	garden	1844	hose	pipe	1	1	3.7	member (theme kept)	
+typ	garden	garden	1828	lawn	garden	1	1	4.0	member (theme kept)	
+typ	garden	garden	1847	lawnmower		1	1	2.7	member (theme kept)	
+typ	garden	garden	1851	rake	garden	1	1	3.4	member (theme kept)	
+typ	garden	garden	1831	shed	garden building	1	1	4.2	member (theme kept)	
+typ	garden	garden	1850	shovel		1	1	3.5	member (theme kept)	
+typ	garden	garden	1852	spade	digging tool	1	1	3.3	member (theme kept)	
+typ	garden	garden	1845	watering can		1	1	3.6	member (theme kept)	
+typ	garden	garden	1843	wheelbarrow		1	1	2.7	member (theme kept)	
+typ	garden	garden	1856	bird feeder		1	2	3.5	member (theme kept)	
+typ	garden	garden	1836	compost		2	2	3.2	member (theme kept)	
+typ	garden	garden	1832	fence		1	2	4.2	member (theme kept)	
+typ	garden	garden	1861	garden gnome		2	2	3.2	member (theme kept)	
+typ	garden	garden	1854	hoe	tool	2	2	3.2	member (theme kept)	
+typ	garden	garden	1870	kitchen garden		3	2	4.4	member (theme kept)	
+typ	garden	garden	1849	mower		2	2	3.1	member (theme kept)	
+typ	garden	garden	1833	path	garden	1	2	4.7	member (theme kept)	
+typ	garden	garden	1834	patio		1	2	3.4	member (theme kept)	
+typ	garden	garden	1855	plant pot		1	2	4.3	member (theme kept)	
+typ	garden	garden	1841	pond	garden water	1	2	4.0	member (theme kept)	
+typ	garden	garden	1838	soil		1	2	4.4	member (theme kept)	
+typ	garden	garden	1846	sprinkler		1	2	3.0	member (theme kept)	
+typ	garden	garden	1853	trowel		2	2	2.4	member (theme kept)	
+typ	garden	garden	1868	vegetable patch		2	2	3.7	member (theme kept)	
+typ	garden	garden	1859	birdbath		2	3	1.7	member (theme kept)	
+typ	garden	garden	1875	community garden		2	3	4.7	member (theme kept)	
+typ	garden	garden	1864	compost bin		2	3	3.2	member (theme kept)	
+typ	garden	garden	67224	deck	patio	2	3	4.4	member (theme kept)	
+typ	garden	garden	1839	fertilizer		2	3	3.4	member (theme kept)	
+typ	garden	garden	1858	fountain	garden feature	1	3	3.9	member (theme kept)	
+typ	garden	garden	1842	gate	garden	1	3	4.5	member (theme kept)	
+typ	garden	garden	1862	gazebo		2	3	2.7	member (theme kept)	
+typ	garden	garden	31973	leaf mold		3	3	3.7	linked by v409	
+typ	garden	garden	1837	mulch		2	3	2.9	member (theme kept)	
+typ	garden	garden	1876	pergola		3	3	2.3	member (theme kept)	
+typ	garden	garden	65517	potting mix		2	3	2.7	linked by v409	
+typ	garden	garden	1865	potting shed		2	3	2.7	member (theme kept)	
+typ	garden	garden	1881	pruning shears		3	3	2.6	member (theme kept)	
+typ	garden	garden	1863	raised bed		2	3	4.6	member (theme kept)	
+typ	garden	garden	1866	rock garden	garden	2	3	4.6	member (theme kept)	
+typ	garden	garden	1867	rockery		3	3	1.8	member (theme kept)	
+typ	garden	garden	2050	stone	rock	1	3	4.8	member (theme kept)	
+typ	garden	garden	1873	terrace	garden	2	3	3.9	member (theme kept)	
+typ	garden	garden	1860	trellis	garden	2	3	2.6	member (theme kept)	
+typ	garden	garden	1877	arbor		3	4	3.5	member (theme kept)	
+typ	garden	garden	1888	cloche	garden	4	4	2.1	member (theme kept)	
+typ	garden	garden	1887	cold frame		4	4	4.5	member (theme kept)	
+typ	garden	garden	1890	dibber		4	4		member (theme kept)	
+typ	garden	garden	1886	herbaceous border		3	4	2.8	member (theme kept)	
+typ	garden	garden	1884	rain barrel		2	4	4.1	member (theme kept)	
+typ	garden	garden	1857	scarecrow	field figure	1	4	3.1	member (theme kept)	
+typ	garden	garden	1885	seed tray		3	4	3.7	member (theme kept)	
+typ	garden	garden	1871	sundial		2	4	2.5	member (theme kept)	
+typ	garden	garden	1879	topiary		3	4	2.3	member (theme kept)	
+typ	garden	garden	31975	worm castings		4	4	2.8	linked by v409	
+typ	garden	garden	1891	dibble		5	5	2.3	member (theme kept)	
+typ	garden	garden	1892	espalier		4	5	1.5	member (theme kept)	
+typ	garden	garden	1893	ha-ha	garden wall	5	5	4.3	member (theme kept)	
+typ	garden	garden	1889	trug		4	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	916	chef	cook	1	1	4.2	linked by v409	
+typ	kitchen_brigade	kitchen brigade	20045	head chef		1	1	4.2	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20047	line cook		2	1	4.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	944	sous chef		3	1	3.1	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	970	cook	person	1	2	4.6	linked by v409	
+typ	kitchen_brigade	kitchen brigade	20048	executive chef		3	2	4.1	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20046	pastry chef		2	2	3.4	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20061	chef de cuisine		4	3	3.6	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20060	chef de partie		4	3	2.3	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20049	dishwasher	person	2	3	3.3	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20051	fry cook		3	3	3.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20052	grill cook		3	3	3.7	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	64787	kitchen porter		3	3	3.9	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20065	pot washer		4	3	3.3	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20050	prep cook		3	3	3.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20062	saucier		4	3	2.0	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20077	sauté cook		4	3	2.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20053	short-order cook		3	3	4.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20056	baker	job	1	4	4.2	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20078	brigade	kitchen	4	4	3.9	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20057	butcher	kitchen	2	4	3.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20058	commis	chef	4	4	1.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20063	expediter		4	4	1.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20067	garde manger		5	4	2.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20066	kitchen hand		4	4	4.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20071	pâtissier		5	4	1.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20069	poissonnier		5	4		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20068	rôtisseur		5	4		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20054	sushi chef		3	4	3.6	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20074	aboyeur		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20073	chef tournant		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20075	communard		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	971	cuisinier		5	5		linked by v409	
+typ	kitchen_brigade	kitchen brigade	20070	entremetier		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20076	pizzaiolo		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	60570	plongeur		5	5		linked by v409	
+typ	layers_of_the_earth	Earth's layers	31898	core	earth	1	1	4.7	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	28647	crust		1	1	3.7	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	56617	mantle	earth layer	2	1	3.6	linked by v409	
+typ	layers_of_the_earth	Earth's layers	31900	inner core		3	2	4.3	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31899	outer core		3	2	4.1	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31904	continental crust		4	3	3.5	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31914	liquid core		3	3	4.2	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31901	lithosphere		4	3	2.4	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31907	lower mantle		4	3	3.6	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31905	oceanic crust		4	3	3.2	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31913	solid core		3	3	4.4	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31906	upper mantle		4	3	3.6	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31903	asthenosphere		5	4	1.6	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31902	Moho	crust-mantle boundary	5	5	1.9	member (theme kept)	
+typ	layers_of_the_earth	Earth's layers	31910	transition zone		5	5		member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	968	brew	beer	2	1	3.6	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	966	bubbly		3	2	3.2	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	963	cuppa		4	2	2.7	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	967	fizz	champagne	4	2	3.0	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	961	java	coffee	3	2	4.0	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	965	vino		3	2	2.8	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	969	brewski		4	3	1.6	member (theme kept)	
+typ	nicknames_for_drinks	nicknames for drinks	962	joe	coffee	4	3	4.8	linked by v409	
+typ	nicknames_for_drinks	nicknames for drinks	964	char	tea	5	4	3.5	linked by v409	
+typ	nicknames_for_workers	nicknames for workers	4088	cop	police	2	1	4.4	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4118	trucker		2	2	3.0	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4115	cabbie		3	3	2.6	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4089	copper	police officer	3	3	4.3	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4130	garbageman		3	3	1.5	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4074	bean counter		4	4	3.9	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4090	bobby	police officer	4	4	4.2	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4096	chippy	carpenter	4	4	2.6	linked by v409	
+typ	nicknames_for_workers	nicknames for workers	4098	grease monkey		4	4	3.6	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4133	hack	journalist	4	4	4.0	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4073	number cruncher		4	4	1.9	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4123	postie	UK term	4	4	1.9	member (theme kept)	
+typ	nicknames_for_workers	nicknames for workers	4092	sparky	electrician	4	4	2.8	linked by v409	
+typ	nicknames_for_workers	nicknames for workers	4085	firie		5	5		linked by v409	
+typ	nicknames_for_workers	nicknames for workers	4134	newshound		5	5		member (theme kept)	
+typ	penguins	penguins	8234	emperor penguin		1	1	3.7	member (theme kept)	
+typ	penguins	penguins	8235	king penguin		2	1	3.8	member (theme kept)	
+typ	penguins	penguins	8236	Adelie penguin		4	2	1.8	member (theme kept)	
+typ	penguins	penguins	8237	chinstrap penguin		4	2	2.0	member (theme kept)	
+typ	penguins	penguins	8238	gentoo penguin		4	2	2.4	member (theme kept)	
+typ	penguins	penguins	63736	jackass	black-footed	4	2	3.3	member (theme kept)	
+typ	penguins	penguins	8239	macaroni penguin		4	2	3.0	member (theme kept)	
+typ	penguins	penguins	8240	rockhopper penguin		4	2	1.8	member (theme kept)	
+typ	penguins	penguins	8243	African penguin		3	3	3.8	linked by v409	
+typ	penguins	penguins	51222	blue penguin		3	3	3.8	member (theme kept)	
+typ	penguins	penguins	8242	fairy penguin		4	3	3.6	member (theme kept)	
+typ	penguins	penguins	8244	Galapagos penguin		4	3	2.8	member (theme kept)	
+typ	penguins	penguins	63115	hoiho		5	3		member (theme kept)	
+typ	penguins	penguins	8262	Humboldt penguin		5	3	3.1	member (theme kept)	
+typ	penguins	penguins	63112	korora		5	3		member (theme kept)	
+typ	penguins	penguins	8241	little penguin		4	3	3.8	linked by v409	
+typ	penguins	penguins	8260	Magellanic penguin		5	3	2.2	member (theme kept)	
+typ	penguins	penguins	51223	royal penguin		4	3	3.8	member (theme kept)	
+typ	penguins	penguins	51227	Antarctic penguin		2	4	3.4	member (theme kept)	
+typ	penguins	penguins	51229	banded penguin		4	4	3.0	member (theme kept)	
+typ	penguins	penguins	51228	crested penguin		4	4	2.8	member (theme kept)	
+typ	penguins	penguins	63109	tawaki		5	4		member (theme kept)	
+typ	penguins	penguins	8261	yellow-eyed penguin		5	4	3.6	linked by v409	
+typ	penguins	penguins	51225	erect-crested penguin		5	5	2.8	member (theme kept)	
+typ	penguins	penguins	51226	Snares penguin		5	5	2.7	member (theme kept)	
+typ	recycling_words	recyclables	23982	cardboard		1	1	3.7	member (theme kept)	
+typ	recycling_words	recyclables	68043	glass bottle		1	1	4.4	new word	
+typ	recycling_words	recyclables	68044	milk carton		1	1	3.2	new word	
+typ	recycling_words	recyclables	4567	newspaper		1	1	4.6	member (theme kept)	
+typ	recycling_words	recyclables	31065	plastic bottle		1	1	4.2	member (theme kept)	
+typ	recycling_words	recyclables	39028	tin can		1	1	4.0	linked by v409	
+typ	recycling_words	recyclables	23983	aluminum can		2	2	4.0	member (theme kept)	
+typ	recycling_words	recyclables	66386	cereal box		1	2	3.7	linked by v409	
+typ	recycling_words	recyclables	62428	egg carton		2	2	3.2	linked by v409	
+typ	recycling_words	recyclables	32210	glass jar		1	2	3.8	member (theme kept)	
+typ	recycling_words	recyclables	68045	juice carton		2	2	3.2	new word	
+typ	recycling_words	recyclables	35166	junk mail		1	2	3.9	linked by v409	
+typ	recycling_words	recyclables	4557	magazine	periodical	1	2	4.7	linked by v409	
+typ	recycling_words	recyclables	68046	pizza box		1	2	4.3	new word	
+typ	recycling_words	recyclables	32214	scrap metal		2	2	3.8	member (theme kept)	
+typ	recycling_words	recyclables	40255	soda can		1	2	4.0	linked by v409	
+typ	recycling_words	recyclables	12745	envelope	mail	1	3	3.9	linked by v409	
+typ	recycling_words	recyclables	25559	paper bag		1	3	4.6	linked by v409	
+fam	recycling_words	recyclables	68043	glass bottle		1		4.4	new word	newspaper fam 1 z 4.6; paper bag fam 1 z 4.6; sugar glass fam 4 z 4.4; glass mountain fam 5 z 4.4
+fam	recycling_words	recyclables	68044	milk carton		1		3.2	new word	egg carton fam 2 z 3.2; cardboard fam 1 z 3.7; saffron milk cap fam 5 z 3.2; carton fam 2 z 3.2
+fam	recycling_words	recyclables	68045	juice carton		2		3.2	new word	cardboard fam 1 z 3.7; cereal box fam 1 z 3.7; carton fam 2 z 3.2; egg carton fam 2 z 3.2
+fam	recycling_words	recyclables	68046	pizza box		1		4.3	new word	plastic bottle fam 1 z 4.2; newspaper fam 1 z 4.6; idiot box fam 4 z 4.3; New York-style pizza fam 2 z 4.3
+typ	renewable_energy	renewable energy	32236	solar panel		1	1	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32228	solar power		1	1	4.5	member (theme kept)	
+typ	renewable_energy	renewable energy	32235	wind farm		1	1	4.5	member (theme kept)	
+typ	renewable_energy	renewable energy	32229	wind turbine		1	1	3.6	member (theme kept)	
+typ	renewable_energy	renewable energy	31945	geothermal energy		3	2	3.2	member (theme kept)	
+typ	renewable_energy	renewable energy	27545	hydro	electricity	4	2	3.6	linked by v409	
+typ	renewable_energy	renewable energy	49752	hydroelectric		2	2	3.1	linked by v409	
+typ	renewable_energy	renewable energy	32231	hydroelectric power		2	2	3.1	member (theme kept)	
+typ	renewable_energy	renewable energy	32230	hydropower		2	2	2.9	member (theme kept)	
+typ	renewable_energy	renewable energy	32242	solar farm		2	2	4.3	member (theme kept)	
+typ	renewable_energy	renewable energy	32234	tidal power		2	2	3.7	member (theme kept)	
+typ	renewable_energy	renewable energy	32237	biofuel		3	3	2.7	member (theme kept)	
+typ	renewable_energy	renewable energy	32246	biogas		3	3	2.6	member (theme kept)	
+typ	renewable_energy	renewable energy	32233	biomass		3	3	3.4	member (theme kept)	
+typ	renewable_energy	renewable energy	32243	offshore wind		3	3	3.8	member (theme kept)	
+typ	renewable_energy	renewable energy	32240	photovoltaic		4	3	3.0	member (theme kept)	
+typ	renewable_energy	renewable energy	32248	solar cell		2	3	4.4	member (theme kept)	
+typ	renewable_energy	renewable energy	32238	wave energy		3	3	4.5	member (theme kept)	
+typ	renewable_energy	renewable energy	2475	windmill	building	1	3	3.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32247	battery storage		3	4	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32257	biodiesel		4	4	2.7	member (theme kept)	
+typ	renewable_energy	renewable energy	7380	dam	barrier	1	4	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	23592	heat pump		3	4	4.2	member (theme kept)	
+typ	renewable_energy	renewable energy	32249	rotor blade	wind turbine	3	4	3.3	member (theme kept)	
+typ	renewable_energy	renewable energy	32250	tidal barrage		4	4	3.2	member (theme kept)	
+typ	renewable_energy	renewable energy	62263	bagasse		5	5	1.8	linked by v409	
+typ	renewable_energy	renewable energy	49761	ocean thermal		5	5	3.9	linked by v409	
+typ	renewable_energy	renewable energy	62265	OTEC		5	5	1.5	linked by v409	
+typ	river_features	river features	30863	rapids		2	1	3.6	member (theme kept)	
+typ	river_features	river features	31925	river bank		2	1	4.8	member (theme kept)	
+typ	river_features	river features	30152	stream	woodland	1	1	4.6	member (theme kept)	
+typ	river_features	river features	30873	brook		2	2	3.7	member (theme kept)	
+typ	river_features	river features	30874	creek		2	2	4.4	member (theme kept)	
+typ	river_features	river features	1944	delta	river	3	2	4.1	member (theme kept)	
+typ	river_features	river features	31931	meander	river	3	2	2.7	member (theme kept)	
+typ	river_features	river features	50330	mouth	river	1	2	4.8	member (theme kept)	
+typ	river_features	river features	30867	riverbed		2	2	2.6	member (theme kept)	
+typ	river_features	river features	30862	source	river	2	2	5.2	member (theme kept)	
+typ	river_features	river features	30864	tributary		3	2	3.2	member (theme kept)	
+typ	river_features	river features	1914	waterfall		1	2	3.5	member (theme kept)	
+typ	river_features	river features	30880	backwater		3	3	2.8	member (theme kept)	
+typ	river_features	river features	28728	bayou		3	3	3.1	member (theme kept)	
+typ	river_features	river features	30870	confluence		4	3	3.1	member (theme kept)	
+typ	river_features	river features	30877	eddy		3	3	3.5	member (theme kept)	
+typ	river_features	river features	1945	estuary		3	3	3.3	member (theme kept)	
+typ	river_features	river features	30866	floodplain		3	3	2.7	member (theme kept)	
+typ	river_features	river features	48657	ford	river crossing	3	3	4.5	member (theme kept)	
+typ	river_features	river features	30878	headwaters		3	3	2.7	member (theme kept)	
+typ	river_features	river features	30876	levee		3	3	2.8	member (theme kept)	
+typ	river_features	river features	30865	oxbow lake		4	3	2.2	member (theme kept)	
+typ	river_features	river features	30882	river bend		2	3	4.0	member (theme kept)	
+typ	river_features	river features	30875	sandbar		3	3	2.3	member (theme kept)	
+typ	river_features	river features	30881	shallows		2	3	2.6	member (theme kept)	
+typ	river_features	river features	30879	watershed		3	3	3.5	member (theme kept)	
+typ	river_features	river features	30869	weir		4	3	3.5	member (theme kept)	
+typ	river_features	river features	60298	braided river		4	4	3.1	member (theme kept)	
+typ	river_features	river features	50075	plunge pool	waterfall basin	4	4	3.5	member (theme kept)	
+typ	river_features	river features	60296	riffle		4	4	2.2	member (theme kept)	
+typ	river_features	river features	30871	rivulet		4	4	2.0	member (theme kept)	
+typ	river_features	river features	60300	cut bank		5	5	4.9	member (theme kept)	
+typ	river_features	river features	60436	interlocking spurs		5	5	3.0	linked by v409	
+typ	river_features	river features	60299	knickpoint		5	5		member (theme kept)	
+typ	river_features	river features	60297	point bar		5	5	4.8	member (theme kept)	
+typ	river_features	river features	60295	thalweg		5	5		member (theme kept)	
+typ	venomous_snakes	venomous snakes	1155	cobra	snake	2	1	3.5	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1157	rattlesnake		2	1	2.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50724	venomous snake		1	1	3.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1156	viper	animal	3	1	3.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1162	adder	animal	3	2	2.7	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8501	black mamba		2	2	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1193	copperhead	animal	3	2	2.3	linked by v409	
+typ	venomous_snakes	venomous snakes	1191	coral snake		4	2	3.7	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8502	cottonmouth		3	2	2.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50713	diamondback		3	2	2.4	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1196	king cobra		3	2	3.5	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1171	mamba	snake	3	2	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8503	water moccasin		4	2	2.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1197	boomslang		5	3		member (theme kept)	
+typ	venomous_snakes	venomous snakes	8525	death adder		4	3	2.7	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50714	eastern diamondback		4	3	2.4	member (theme kept)	
+typ	venomous_snakes	venomous snakes	40108	green mamba		4	3	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	9695	Indian cobra		3	3	3.5	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8526	inland taipan		5	3	1.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8527	krait		4	3	1.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8520	pit viper		4	3	3.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8519	puff adder		4	3	2.6	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1328	sea snake		3	3	4.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1194	sidewinder	animal	3	3	2.5	linked by v409	
+typ	venomous_snakes	venomous snakes	8530	spitting cobra		4	3	3.2	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1195	taipan		4	3	1.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50716	timber rattlesnake		4	3	2.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50715	western diamondback		4	3	2.4	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8528	asp	animal	4	4	3.0	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50719	banded krait		5	4	1.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50712	brown snake		3	4	4.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8521	bushmaster		5	4	2.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8522	fer-de-lance		5	4	3.0	member (theme kept)	
+typ	venomous_snakes	venomous snakes	1213	Gaboon viper		5	4		member (theme kept)	
+typ	venomous_snakes	venomous snakes	9646	horned viper		4	4	2.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50718	Russell's viper		5	4	3.3	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50717	saw-scaled viper		5	4	3.1	member (theme kept)	
+typ	venomous_snakes	venomous snakes	8524	tiger snake		4	4	3.9	member (theme kept)	
+typ	venomous_snakes	venomous snakes	63288	king brown		4	5	4.8	member (theme kept)	
+typ	venomous_snakes	venomous snakes	50720	lancehead		5	5		member (theme kept)	
+typ	venomous_snakes	venomous snakes	50722	rinkhals		5	5		member (theme kept)	
+typ	venomous_snakes	venomous snakes	50721	terciopelo		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1306	blue whale		1	1	4.0	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1307	humpback whale		2	1	2.8	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1305	killer whale		1	1	3.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1284	whale	animal	1	1	4.0	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7866	bottlenose dolphin		2	2	2.4	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1303	narwhal		3	2	2.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1310	porpoise		3	2	2.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	1308	sperm whale		2	2	3.6	linked by v409	
+typ	whales_and_dolphins	whales and dolphins	7894	baleen whale		3	3	2.1	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	9748	beluga whale		3	3	2.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63021	cachalot		4	3		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7893	cetacean		4	3	2.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7878	common dolphin		3	3	3.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7868	fin whale		3	3	3.5	linked by v409	
+typ	whales_and_dolphins	whales and dolphins	63015	finback		4	3		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7869	gray whale		3	3	3.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7886	harbor porpoise		4	3	2.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7867	minke whale		4	3	2.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7873	pilot whale		3	3	3.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7871	right whale		4	3	4.0	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7881	river dolphin		3	3	3.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7879	spinner dolphin		4	3	3.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	9857	spotted dolphin		4	3	3.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7876	beaked whale		4	4	2.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63009	boto	Amazon	5	4	1.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7872	bowhead whale		4	4	1.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7880	dusky dolphin		5	4	2.7	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7890	false killer whale		5	4	3.8	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63020	Risso's		5	4	1.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7874	sei whale		5	4	2.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7887	vaquita		4	4	1.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7888	baiji		5	5	1.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63012	Bryde's		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63013	Commerson's		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63014	Cuvier's		5	5	2.4	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59909	Dall's porpoise		5	5	2.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59912	finless porpoise		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59908	franciscana		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	63016	Fraser's		5	5	3.8	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7891	Hector's dolphin		5	5	3.3	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	36797	Irrawaddy		4	5	2.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59910	melon-headed whale		5	5	3.2	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7877	pygmy sperm whale		5	5	2.6	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59914	rough-toothed dolphin		5	5	2.9	member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	59907	tucuxi		5	5		member (theme kept)	
+typ	whales_and_dolphins	whales and dolphins	7892	white-beaked dolphin		5	5	2.3	member (theme kept)	

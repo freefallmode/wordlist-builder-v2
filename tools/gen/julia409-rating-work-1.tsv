@@ -1,0 +1,318 @@
+# v409 rating review (Julia's themes). typ rows: re-judge the rating of each member in the theme (1 = the first words anyone names ... 5 = real but peripheral), relative to the other members.
+# fam rows: check the familiarity of each new word (1 every child knows it ... 5 few people) against the comparable main entries. Existing entries keep their own fam.
+# Answer in tools/gen/julia409-ratings.tsv: entryId<TAB>themeId or fam<TAB>oldValue<TAB>newValue<TAB>reason (only the changes).
+kind	themeId	theme	entryId	text	gloss	fam	rating	zipf	status	comparables
+typ	garden	garden	1829	flower bed		1	1	4.3	member (theme kept)	
+typ	garden	garden	1835	greenhouse		1	1	3.8	member (theme kept)	
+typ	garden	garden	1830	hedge	garden	1	1	3.7	member (theme kept)	
+typ	garden	garden	1844	hose	pipe	1	1	3.7	member (theme kept)	
+typ	garden	garden	1828	lawn	garden	1	1	4.0	member (theme kept)	
+typ	garden	garden	1847	lawnmower		1	1	2.7	member (theme kept)	
+typ	garden	garden	1851	rake	garden	1	1	3.4	member (theme kept)	
+typ	garden	garden	1831	shed	garden building	1	1	4.2	member (theme kept)	
+typ	garden	garden	1850	shovel		1	1	3.5	member (theme kept)	
+typ	garden	garden	1852	spade	digging tool	1	1	3.3	member (theme kept)	
+typ	garden	garden	1845	watering can		1	1	3.6	member (theme kept)	
+typ	garden	garden	1843	wheelbarrow		1	1	2.7	member (theme kept)	
+typ	garden	garden	1856	bird feeder		1	2	3.5	member (theme kept)	
+typ	garden	garden	1836	compost		2	2	3.2	member (theme kept)	
+typ	garden	garden	1832	fence		1	2	4.2	member (theme kept)	
+typ	garden	garden	1861	garden gnome		2	2	3.2	member (theme kept)	
+typ	garden	garden	1854	hoe	tool	2	2	3.2	member (theme kept)	
+typ	garden	garden	1870	kitchen garden		3	2	4.4	member (theme kept)	
+typ	garden	garden	1849	mower		2	2	3.1	member (theme kept)	
+typ	garden	garden	1833	path	garden	1	2	4.7	member (theme kept)	
+typ	garden	garden	1834	patio		1	2	3.4	member (theme kept)	
+typ	garden	garden	1855	plant pot		1	2	4.3	member (theme kept)	
+typ	garden	garden	1841	pond	garden water	1	2	4.0	member (theme kept)	
+typ	garden	garden	1838	soil		1	2	4.4	member (theme kept)	
+typ	garden	garden	1846	sprinkler		1	2	3.0	member (theme kept)	
+typ	garden	garden	1853	trowel		2	2	2.4	member (theme kept)	
+typ	garden	garden	1868	vegetable patch		2	2	3.7	member (theme kept)	
+typ	garden	garden	1859	birdbath		2	3	1.7	member (theme kept)	
+typ	garden	garden	1875	community garden		2	3	4.7	member (theme kept)	
+typ	garden	garden	1864	compost bin		2	3	3.2	member (theme kept)	
+typ	garden	garden	67224	deck	patio	2	3	4.4	member (theme kept)	
+typ	garden	garden	1839	fertilizer		2	3	3.4	member (theme kept)	
+typ	garden	garden	1858	fountain	garden feature	1	3	3.9	member (theme kept)	
+typ	garden	garden	1842	gate	garden	1	3	4.5	member (theme kept)	
+typ	garden	garden	1862	gazebo		2	3	2.7	member (theme kept)	
+typ	garden	garden	31973	leaf mold		3	3	3.7	linked by v409	
+typ	garden	garden	1837	mulch		2	3	2.9	member (theme kept)	
+typ	garden	garden	1876	pergola		3	3	2.3	member (theme kept)	
+typ	garden	garden	65517	potting mix		2	3	2.7	linked by v409	
+typ	garden	garden	1865	potting shed		2	3	2.7	member (theme kept)	
+typ	garden	garden	1881	pruning shears		3	3	2.6	member (theme kept)	
+typ	garden	garden	1863	raised bed		2	3	4.6	member (theme kept)	
+typ	garden	garden	1866	rock garden	garden	2	3	4.6	member (theme kept)	
+typ	garden	garden	1867	rockery		3	3	1.8	member (theme kept)	
+typ	garden	garden	2050	stone	rock	1	3	4.8	member (theme kept)	
+typ	garden	garden	1873	terrace	garden	2	3	3.9	member (theme kept)	
+typ	garden	garden	1860	trellis	garden	2	3	2.6	member (theme kept)	
+typ	garden	garden	1877	arbor		3	4	3.5	member (theme kept)	
+typ	garden	garden	1888	cloche	garden	4	4	2.1	member (theme kept)	
+typ	garden	garden	1887	cold frame		4	4	4.5	member (theme kept)	
+typ	garden	garden	1890	dibber		4	4		member (theme kept)	
+typ	garden	garden	1886	herbaceous border		3	4	2.8	member (theme kept)	
+typ	garden	garden	1884	rain barrel		2	4	4.1	member (theme kept)	
+typ	garden	garden	1857	scarecrow	field figure	1	4	3.1	member (theme kept)	
+typ	garden	garden	1885	seed tray		3	4	3.7	member (theme kept)	
+typ	garden	garden	1871	sundial		2	4	2.5	member (theme kept)	
+typ	garden	garden	1879	topiary		3	4	2.3	member (theme kept)	
+typ	garden	garden	31975	worm castings		4	4	2.8	linked by v409	
+typ	garden	garden	1891	dibble		5	5	2.3	member (theme kept)	
+typ	garden	garden	1892	espalier		4	5	1.5	member (theme kept)	
+typ	garden	garden	1893	ha-ha	garden wall	5	5	4.3	member (theme kept)	
+typ	garden	garden	1889	trug		4	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	916	chef	cook	1	1	4.2	linked by v409	
+typ	kitchen_brigade	kitchen brigade	20045	head chef		1	1	4.2	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20047	line cook		2	1	4.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	944	sous chef		3	1	3.1	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	970	cook	person	1	2	4.6	linked by v409	
+typ	kitchen_brigade	kitchen brigade	20048	executive chef		3	2	4.1	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20046	pastry chef		2	2	3.4	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20061	chef de cuisine		4	3	3.6	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20060	chef de partie		4	3	2.3	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20049	dishwasher	person	2	3	3.3	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20051	fry cook		3	3	3.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20052	grill cook		3	3	3.7	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	64787	kitchen porter		3	3	3.9	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20065	pot washer		4	3	3.3	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20050	prep cook		3	3	3.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20062	saucier		4	3	2.0	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20077	sauté cook		4	3	2.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20053	short-order cook		3	3	4.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20056	baker	job	1	4	4.2	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20078	brigade	kitchen	4	4	3.9	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20057	butcher	kitchen	2	4	3.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20058	commis	chef	4	4	1.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20063	expediter		4	4	1.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20067	garde manger		5	4	2.8	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20066	kitchen hand		4	4	4.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20071	pâtissier		5	4	1.5	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20069	poissonnier		5	4		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20068	rôtisseur		5	4		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20054	sushi chef		3	4	3.6	member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20074	aboyeur		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20073	chef tournant		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20075	communard		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	971	cuisinier		5	5		linked by v409	
+typ	kitchen_brigade	kitchen brigade	20070	entremetier		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	20076	pizzaiolo		5	5		member (theme kept)	
+typ	kitchen_brigade	kitchen brigade	60570	plongeur		5	5		linked by v409	
+typ	bins_and_recycling	bins and recycling	23977	recycle		1	1	3.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23970	recycling bin		1	1	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23972	trash		1	1	4.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23251	trash can	household	1	1	4.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	3113	garbage truck		1	2	4.1	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23976	landfill		2	2	3.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	32208	reduce	waste	2	2	4.7	linked by v409	
+typ	bins_and_recycling	bins and recycling	32207	reuse		2	2	3.4	linked by v409	
+typ	bins_and_recycling	bins and recycling	23985	wheelie bin		2	2	2.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23983	aluminum can		2	3	4.0	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23978	bottle bank		3	3	4.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23982	cardboard		1	3	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	1836	compost		2	3	3.2	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	1864	compost bin		2	3	3.2	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23986	curbside pickup		3	3	2.4	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23980	dumpster		2	3	3.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23981	food waste		2	3	4.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4125	garbage collector		2	3	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4130	garbageman		3	3	1.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23998	pedal bin		2	3	3.5	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23999	recycling center		3	3	3.8	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	32215	recycling plant		2	3	3.8	linked by v409	
+typ	bins_and_recycling	bins and recycling	23990	recycling symbol		3	3	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23996	waste disposal		2	3	3.9	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23991	deposit return		4	4	4.2	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23993	e-waste		4	4	4.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4770	garbage disposal		3	4	3.8	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23992	hazardous waste		3	4	3.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	24002	upcycling		4	4	2.0	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23997	compactor		4	5	2.3	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	23995	incinerator		3	5	2.7	member (theme kept)	
+typ	bins_and_recycling	bins and recycling	4772	InSinkErator	garbage disposal	5	5		member (theme kept)	
+typ	bike_park	bike park	68014	berm		4	1	2.4	new word	
+typ	bike_park	bike park	68015	pump track		3	1	4.2	new word	
+typ	bike_park	bike park	68016	dirt jump		3	2	4.1	new word	
+typ	bike_park	bike park	68017	drop	trail feature	3	2	5.0	new word	
+typ	bike_park	bike park	48097	kicker	ramp	4	2	3.4	linked by v409	
+typ	bike_park	bike park	68020	gap jump		4	3	4.3	new word	
+typ	bike_park	bike park	68018	rock garden	trail	4	3	4.6	new word	
+typ	bike_park	bike park	68022	step-down	jump	4	3	5.0	new word	
+typ	bike_park	bike park	48109	step-up		5	3	5.1	linked by v409	
+typ	bike_park	bike park	68019	tabletop	jump	4	3	3.1	new word	
+typ	bike_park	bike park	48037	wallride		4	3		linked by v409	
+typ	bike_park	bike park	43525	chairlift		2	4	2.3	linked by v409	
+typ	bike_park	bike park	68025	foam pit		3	4	3.7	new word	
+typ	bike_park	bike park	68024	ladder bridge		5	4	3.9	new word	
+typ	bike_park	bike park	68023	skinny	narrow plank	5	4	4.0	new word	
+fam	bike_park	bike park	68014	berm		4		2.4	new word	chairlift fam 2 z 2.3; wallride fam 4 z ; kicker (ramp) fam 4 z 3.4; step-up fam 5 z 5.1
+fam	bike_park	bike park	68015	pump track		3		4.2	new word	kicker (ramp) fam 4 z 3.4; step-up fam 5 z 5.1; track lighting fam 3 z 4.2; heat pump fam 3 z 4.2
+fam	bike_park	bike park	68016	dirt jump		3		4.1	new word	kicker (ramp) fam 4 z 3.4; step-up fam 5 z 5.1; standing triple jump fam 5 z 4.1; dirt track fam 1 z 4.1
+fam	bike_park	bike park	68017	drop	trail feature	3		5.0	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; drop (unit) fam 1 z 5.0; drop it fam 2 z 5.0
+fam	bike_park	bike park	68020	gap jump		4		4.3	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; broad jump fam 4 z 4.3; johnny jump-up fam 5 z 4.2
+fam	bike_park	bike park	68018	rock garden	trail	4		4.6	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; rock garden (garden) fam 2 z 4.6; French garden fam 3 z 4.6
+fam	bike_park	bike park	68022	step-down	jump	4		5.0	new word	step-up fam 5 z 5.1; kicker (ramp) fam 4 z 3.4; step-down (electrical) fam 4 z 5.0; top step fam 1 z 5.0
+fam	bike_park	bike park	68019	tabletop	jump	4		3.1	new word	wallride fam 4 z ; kicker (ramp) fam 4 z 3.4; chairlift fam 2 z 2.3; tabletop (yoga) fam 3 z 3.1
+fam	bike_park	bike park	68025	foam pit		3		3.7	new word	kicker (ramp) fam 4 z 3.4; wallride fam 4 z ; pit pony fam 3 z 3.7; orchestra pit fam 2 z 3.8
+fam	bike_park	bike park	68024	ladder bridge		5		3.9	new word	kicker (ramp) fam 4 z 3.4; wallride fam 4 z ; arch bridge fam 2 z 3.9; walking under a ladder fam 1 z 3.9
+fam	bike_park	bike park	68023	skinny	narrow plank	5		4.0	new word	kicker (ramp) fam 4 z 3.4; wallride fam 4 z ; skinny (thin) fam 1 z 4.0; skinny tie fam 3 z 3.9
+fam	bike_park	bike park	68021	wall ride		4		4.6	spelling alias of wallride	
+typ	penguins	penguins	8234	emperor penguin		1	1	3.7	member (theme kept)	
+typ	penguins	penguins	8235	king penguin		2	1	3.8	member (theme kept)	
+typ	penguins	penguins	8236	Adelie penguin		4	2	1.8	member (theme kept)	
+typ	penguins	penguins	8237	chinstrap penguin		4	2	2.0	member (theme kept)	
+typ	penguins	penguins	8238	gentoo penguin		4	2	2.4	member (theme kept)	
+typ	penguins	penguins	63736	jackass	black-footed	4	2	3.3	member (theme kept)	
+typ	penguins	penguins	8239	macaroni penguin		4	2	3.0	member (theme kept)	
+typ	penguins	penguins	8240	rockhopper penguin		4	2	1.8	member (theme kept)	
+typ	penguins	penguins	8243	African penguin		3	3	3.8	linked by v409	
+typ	penguins	penguins	51222	blue penguin		3	3	3.8	member (theme kept)	
+typ	penguins	penguins	8242	fairy penguin		4	3	3.6	member (theme kept)	
+typ	penguins	penguins	8244	Galapagos penguin		4	3	2.8	member (theme kept)	
+typ	penguins	penguins	63115	hoiho		5	3		member (theme kept)	
+typ	penguins	penguins	8262	Humboldt penguin		5	3	3.1	member (theme kept)	
+typ	penguins	penguins	63112	korora		5	3		member (theme kept)	
+typ	penguins	penguins	8241	little penguin		4	3	3.8	linked by v409	
+typ	penguins	penguins	8260	Magellanic penguin		5	3	2.2	member (theme kept)	
+typ	penguins	penguins	51223	royal penguin		4	3	3.8	member (theme kept)	
+typ	penguins	penguins	51227	Antarctic penguin		2	4	3.4	member (theme kept)	
+typ	penguins	penguins	51229	banded penguin		4	4	3.0	member (theme kept)	
+typ	penguins	penguins	51228	crested penguin		4	4	2.8	member (theme kept)	
+typ	penguins	penguins	63109	tawaki		5	4		member (theme kept)	
+typ	penguins	penguins	8261	yellow-eyed penguin		5	4	3.6	linked by v409	
+typ	penguins	penguins	51225	erect-crested penguin		5	5	2.8	member (theme kept)	
+typ	penguins	penguins	51226	Snares penguin		5	5	2.7	member (theme kept)	
+typ	greek_goddesses	Greek goddesses	21827	Aphrodite	goddess	1	1	2.9	linked by v409	
+typ	greek_goddesses	Greek goddesses	21825	Artemis	goddess	2	1	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21823	Athena	goddess	1	1	3.2	linked by v409	
+typ	greek_goddesses	Greek goddesses	21821	Hera	goddess	2	1	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21830	Demeter	goddess	2	2	2.4	linked by v409	
+typ	greek_goddesses	Greek goddesses	21844	Gaia	goddess	2	2	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21834	Hestia	goddess	3	2	2.1	linked by v409	
+typ	greek_goddesses	Greek goddesses	21837	Nike	goddess	1	2	3.9	linked by v409	
+typ	greek_goddesses	Greek goddesses	21833	Persephone	goddess	2	2	2.6	linked by v409	
+typ	greek_goddesses	Greek goddesses	21840	Eos	goddess	4	3	3.2	linked by v409	
+typ	greek_goddesses	Greek goddesses	21857	Eris	goddess	4	3	2.5	linked by v409	
+typ	greek_goddesses	Greek goddesses	21848	Hecate	goddess	4	3	2.3	linked by v409	
+typ	greek_goddesses	Greek goddesses	21849	Iris	goddess	2	3	3.8	linked by v409	
+typ	greek_goddesses	Greek goddesses	21850	Nemesis	goddess	2	3	3.3	linked by v409	
+typ	greek_goddesses	Greek goddesses	21841	Nyx	goddess	3	3	2.7	linked by v409	
+typ	greek_goddesses	Greek goddesses	21847	Rhea	goddess	3	3	3.0	linked by v409	
+typ	greek_goddesses	Greek goddesses	21839	Selene	goddess	3	3	2.5	linked by v409	
+typ	greek_goddesses	Greek goddesses	21854	Hebe	goddess	4	4	2.1	linked by v409	
+typ	greek_goddesses	Greek goddesses	54904	Leto	Titaness	4	4	3.1	linked by v409	
+typ	greek_goddesses	Greek goddesses	21855	Themis	goddess	4	4	2.2	linked by v409	
+typ	climbing_holds	climbing holds	45056	crimp		3	1	2.6	linked by v409	
+typ	climbing_holds	climbing holds	45057	jug	climbing hold	2	1	3.3	linked by v409	
+typ	climbing_holds	climbing holds	45058	sloper		4	1	1.9	linked by v409	
+typ	climbing_holds	climbing holds	68000	edge	climbing hold	4	2	4.7	new word	
+typ	climbing_holds	climbing holds	67998	pinch	climbing hold	4	2	3.8	new word	
+typ	climbing_holds	climbing holds	67999	pocket	climbing hold	4	2	4.5	new word	
+typ	climbing_holds	climbing holds	68003	flake	rock	4	3	3.2	new word	
+typ	climbing_holds	climbing holds	68001	sidepull		5	3		new word	
+typ	climbing_holds	climbing holds	45081	undercling		5	3		linked by v409	
+typ	climbing_holds	climbing holds	68002	volume	climbing hold	4	3	4.8	new word	
+typ	climbing_holds	climbing holds	45083	gaston	climbing	5	4	3.2	linked by v409	
+typ	climbing_holds	climbing holds	68004	jib	climbing hold	5	4	2.8	new word	
+fam	climbing_holds	climbing holds	68000	edge	climbing hold	4		4.7	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; edge (geometry) fam 2 z 4.7; edge (skiing) fam 3 z 4.7
+fam	climbing_holds	climbing holds	67998	pinch	climbing hold	4		3.8	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; pinch (squeeze) fam 1 z 3.8; pinch out fam 5 z 3.8
+fam	climbing_holds	climbing holds	67999	pocket	climbing hold	4		4.5	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; pocket (clothing) fam 1 z 4.5; back pocket fam 4 z 4.5
+fam	climbing_holds	climbing holds	68003	flake	rock	4		3.2	new word	gaston (climbing) fam 5 z 3.2; jug (climbing hold) fam 2 z 3.3; undercling fam 5 z ; flake (chocolate) fam 4 z 3.2
+fam	climbing_holds	climbing holds	68001	sidepull		5			new word	undercling fam 5 z ; gaston (climbing) fam 5 z 3.2; jug (climbing hold) fam 2 z 3.3; crimp fam 3 z 2.6
+fam	climbing_holds	climbing holds	68002	volume	climbing hold	4		4.8	new word	jug (climbing hold) fam 2 z 3.3; gaston (climbing) fam 5 z 3.2; volume (capacity) fam 2 z 4.8; volume (sound) fam 1 z 4.8
+fam	climbing_holds	climbing holds	68004	jib	climbing hold	5		2.8	new word	crimp fam 3 z 2.6; undercling fam 5 z ; gaston (climbing) fam 5 z 3.2; jib (sail) fam 4 z 2.8
+typ	kitchen_linens	kitchen linens	4904	apron	clothing	2	1	3.4	linked by v409	
+typ	kitchen_linens	kitchen linens	67199	dish towel		2	1	3.7	linked by v409	
+typ	kitchen_linens	kitchen linens	19926	napkin		1	1	3.2	linked by v409	
+typ	kitchen_linens	kitchen linens	19862	oven mitt		2	1	3.2	linked by v409	
+typ	kitchen_linens	kitchen linens	19942	tablecloth		1	1	2.7	linked by v409	
+typ	kitchen_linens	kitchen linens	23379	dishcloth		3	2	1.7	linked by v409	
+typ	kitchen_linens	kitchen linens	20140	placemat		3	2	1.7	linked by v409	
+typ	kitchen_linens	kitchen linens	67965	pot holder		2	2	4.0	new word	
+typ	kitchen_linens	kitchen linens	67966	dish drying mat		3	3	3.4	new word	
+typ	kitchen_linens	kitchen linens	20161	table runner		3	3	4.1	linked by v409	
+typ	kitchen_linens	kitchen linens	24501	tea cosy		3	3	3.3	linked by v409	
+typ	kitchen_linens	kitchen linens	25569	doily		3	4	2.1	linked by v409	
+typ	kitchen_linens	kitchen linens	67967	toaster cover		3	4	3.3	new word	
+fam	kitchen_linens	kitchen linens	67965	pot holder		2		4.0	new word	table runner fam 3 z 4.1; dish towel fam 2 z 3.7; Instant Pot (electric multicooker) fam 3 z 4.0; pot pie fam 2 z 4.0
+fam	kitchen_linens	kitchen linens	67966	dish drying mat		3		3.4	new word	apron (clothing) fam 2 z 3.4; tea cosy fam 3 z 3.3; mat racer fam 4 z 3.3; lick mat fam 4 z 3.5
+fam	kitchen_linens	kitchen linens	67967	toaster cover		3		3.3	new word	tea cosy fam 3 z 3.3; oven mitt fam 2 z 3.2; toaster fam 1 z 3.3; dashboard cover fam 3 z 3.3
+typ	pollution_types	pollution types	68026	air pollution		1	1	4.2	new word	
+typ	pollution_types	pollution types	32189	noise pollution		2	1	4.1	linked by v409	
+typ	pollution_types	pollution types	68028	plastic pollution		1	1	4.0	new word	
+typ	pollution_types	pollution types	68027	water pollution		1	1	4.2	new word	
+typ	pollution_types	pollution types	68030	land pollution		2	2	4.2	new word	
+typ	pollution_types	pollution types	32190	light pollution		2	2	4.2	linked by v409	
+typ	pollution_types	pollution types	68029	soil pollution		2	2	4.0	new word	
+typ	pollution_types	pollution types	68031	thermal pollution		4	3	3.8	new word	
+typ	pollution_types	pollution types	68032	visual pollution		4	4	4.0	new word	
+fam	pollution_types	pollution types	68026	air pollution		1		4.2	new word	light pollution fam 2 z 4.2; noise pollution fam 2 z 4.1; air raid fam 2 z 4.2; air rifle fam 3 z 4.2
+fam	pollution_types	pollution types	68028	plastic pollution		1		4.0	new word	noise pollution fam 2 z 4.1; light pollution fam 2 z 4.2; plastic cups fam 1 z 4.0; plastic surgeon fam 2 z 4.0
+fam	pollution_types	pollution types	68027	water pollution		1		4.2	new word	light pollution fam 2 z 4.2; noise pollution fam 2 z 4.1; water spider fam 4 z 4.2; water barrel fam 3 z 4.2
+fam	pollution_types	pollution types	68030	land pollution		2		4.2	new word	noise pollution fam 2 z 4.1; Candy Land fam 3 z 4.2; light pollution fam 2 z 4.2
+fam	pollution_types	pollution types	68029	soil pollution		2		4.0	new word	noise pollution fam 2 z 4.1; light pollution fam 2 z 4.2; soil pipe fam 4 z 4.0; sandy soil fam 2 z 4.0
+fam	pollution_types	pollution types	68031	thermal pollution		4		3.8	new word	noise pollution fam 2 z 4.1; light pollution fam 2 z 4.2; thermal radiation fam 4 z 3.8; thermal blanket fam 3 z 3.7
+fam	pollution_types	pollution types	68032	visual pollution		4		4.0	new word	light pollution fam 2 z 4.2; visual cliff fam 5 z 4.0; noise pollution fam 2 z 4.1
+typ	greek_buildings	Greek buildings	2334	Acropolis	ancient citadel	2	1	2.7	linked by v409	
+typ	greek_buildings	Greek buildings	2335	Parthenon		2	1	2.7	linked by v409	
+typ	greek_buildings	Greek buildings	21806	Knossos		4	2	2.2	linked by v409	
+typ	greek_buildings	Greek buildings	37346	Temple of Apollo		4	2	3.7	linked by v409	
+typ	greek_buildings	Greek buildings	37347	Temple of Poseidon		4	2	3.1	linked by v409	
+typ	greek_buildings	Greek buildings	37771	Panathenaic Stadium		4	3		linked by v409	
+typ	greek_buildings	Greek buildings	67981	Temple of Hephaestus		4	3	2.2	new word	
+typ	greek_buildings	Greek buildings	37356	Temple of Olympian Zeus		5	3	3.1	linked by v409	
+typ	greek_buildings	Greek buildings	67982	Tower of the Winds		4	3		new word	
+typ	greek_buildings	Greek buildings	37355	Erechtheion		5	4		linked by v409	
+typ	greek_buildings	Greek buildings	37782	Lion Gate		5	4	4.0	linked by v409	
+typ	greek_buildings	Greek buildings	37777	Propylaea		5	4		linked by v409	
+typ	greek_buildings	Greek buildings	37783	Treasury of Atreus		5	4	2.1	linked by v409	
+fam	greek_buildings	Greek buildings	67981	Temple of Hephaestus		4		2.2	new word	Knossos fam 4 z 2.2; Treasury of Atreus fam 5 z 2.1; Hephaestus (god) fam 3 z 2.2; Meenakshi Temple fam 4 z 2.2
+fam	greek_buildings	Greek buildings	67982	Tower of the Winds		4			new word	Erechtheion fam 5 z ; Panathenaic Stadium fam 4 z ; toad in the hole (dish) fam 4 z ; The Netherlands fam 2 z 
+typ	eco_home	eco home	23592	heat pump		3	1	4.2	linked by v409	
+typ	eco_home	eco home	23179	insulation		3	1	3.7	linked by v409	
+typ	eco_home	eco home	32236	solar panel		1	1	4.2	linked by v409	
+typ	eco_home	eco home	1864	compost bin		2	2	3.2	linked by v409	
+typ	eco_home	eco home	67151	double-pane windows		2	2	3.1	linked by v409	
+typ	eco_home	eco home	67152	draft stopper		3	2	3.1	linked by v409	
+typ	eco_home	eco home	1884	rain barrel		2	2	4.1	linked by v409	
+typ	eco_home	eco home	32372	smart meter		3	2	4.0	linked by v409	
+typ	eco_home	eco home	68056	solar water heater		3	2	3.5	new word	
+typ	eco_home	eco home	23257	clothesline	laundry	2	3	2.4	linked by v409	
+typ	eco_home	eco home	14126	green roof		2	3	4.5	linked by v409	
+typ	eco_home	eco home	68057	smart thermostat		3	3	3.1	new word	
+typ	eco_home	eco home	32369	wormery		5	4		linked by v409	
+fam	eco_home	eco home	68056	solar water heater		3		3.5	new word	insulation fam 3 z 3.7; compost bin fam 2 z 3.2; solar flare fam 3 z 3.5; water beetle fam 4 z 3.5
+fam	eco_home	eco home	68057	smart thermostat		3		3.1	new word	double-pane windows fam 2 z 3.1; draft stopper fam 3 z 3.1; thermostat fam 2 z 3.1; Smart EQ fam 5 z 3.3
+typ	greek_city_states	Greek city-states	2253	Athens		2	1	3.9	linked by v409	
+typ	greek_city_states	Greek city-states	6622	Sparta		2	1	3.2	linked by v409	
+typ	greek_city_states	Greek city-states	20379	Corinth	city	4	2	3.0	linked by v409	
+typ	greek_city_states	Greek city-states	36090	Thebes	ancient city	3	2	2.8	linked by v409	
+typ	greek_city_states	Greek city-states	67976	Argos	city	4	3	3.0	new word	
+typ	greek_city_states	Greek city-states	54737	Miletus		4	3	2.0	linked by v409	
+typ	greek_city_states	Greek city-states	21807	Mycenae		4	3	2.1	linked by v409	
+typ	greek_city_states	Greek city-states	36601	Rhodes	island	3	3	3.7	linked by v409	
+typ	greek_city_states	Greek city-states	54337	Syracuse	city	3	3	3.6	linked by v409	
+typ	greek_city_states	Greek city-states	57203	Aegina		4	4	1.8	linked by v409	
+typ	greek_city_states	Greek city-states	20609	Byzantium	city	3	4	2.8	linked by v409	
+typ	greek_city_states	Greek city-states	36092	Ephesus		3	4	2.7	linked by v409	
+typ	greek_city_states	Greek city-states	57196	Samos		4	4	2.3	linked by v409	
+fam	greek_city_states	Greek city-states	67976	Argos	city	4		3.0	new word	Corinth (city) fam 4 z 3.0; Sparta fam 2 z 3.2; Byzantium (city) fam 3 z 2.8; Thebes (ancient city) fam 3 z 2.8
+typ	greenhouse_gases	greenhouse gases	32296	carbon dioxide		2	1	3.7	linked by v409	
+typ	greenhouse_gases	greenhouse gases	32299	methane		3	1	3.5	linked by v409	
+typ	greenhouse_gases	greenhouse gases	15516	nitrous oxide		3	2	2.9	linked by v409	
+typ	greenhouse_gases	greenhouse gases	68040	CFC		3	3	2.8	new word	
+typ	greenhouse_gases	greenhouse gases	40477	ozone		2	3	3.4	linked by v409	
+typ	greenhouse_gases	greenhouse gases	68041	sulfur hexafluoride		5	4	1.9	new word	
+fam	greenhouse_gases	greenhouse gases	68040	CFC		3		2.8	new word	nitrous oxide fam 3 z 2.9; ozone fam 2 z 3.4; methane fam 3 z 3.5; carbon dioxide fam 2 z 3.7
+fam	greenhouse_gases	greenhouse gases	68041	sulfur hexafluoride		5		1.9	new word	nitrous oxide fam 3 z 2.9; ozone fam 2 z 3.4; sulfur dioxide fam 3 z 3.3; sulfur fam 2 z 3.4
+fam	greenhouse_gases	greenhouse gases	68042	sulphur hexafluoride		5		1.9	spelling alias of sulfur hexafluoride UK	
+typ	soil_layers	soil layers	31782	bedrock		3	1	3.3	linked by v409	
+typ	soil_layers	soil layers	31966	subsoil		3	1	2.2	linked by v409	
+typ	soil_layers	soil layers	30137	topsoil		2	1	2.6	linked by v409	
+typ	soil_layers	soil layers	30136	humus		3	2	2.4	linked by v409	
+typ	soil_layers	soil layers	30132	leaf litter		3	2	3.6	linked by v409	
+typ	soil_layers	soil layers	31972	soil horizon		4	2	3.9	linked by v409	
+typ	soil_layers	soil layers	60449	hardpan		5	3	1.6	linked by v409	
+typ	soil_layers	soil layers	31984	regolith		5	3	2.2	linked by v409	
