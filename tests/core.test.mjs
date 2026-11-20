@@ -884,7 +884,7 @@ test('export contract: the rule grammar; warnings for what skews play; the summa
   addEntry(P, 'Plum', { gloss: 'company', type: 'org', fam: 2, typ: { fruits: 5 } }); P.entries.find(e => e.text === 'plum').gloss = 'fruit';
   addEntry(P, 'kiwi', { gloss: 'bird', type: 'common', fam: 1, typ: { pals: 5 } });   // after an earlier common kiwi: not reported
   addEntry(P, 'level', { gloss: 'tool', type: 'phrase', fam: 1, typ: { fruits: 5 } }); // a lower-case word typed phrase
-  P.themes.push(T('few', 'few things')); for (const w of ['ant', 'bee', 'cat', 'dog']) addEntry(P, w, { fam: 1, typ: { few: 1 }, sensitive: w !== 'ant' });
+  P.themes.push(T('few', 'few things')); for (const w of ['ant', 'bee', 'cat', 'dog']) addEntry(P, w, { fam: 1, typ: { few: 1 }, sensitive: w === 'bee', vulgar: w === 'cat' || w === 'dog' });   // vulgar is dropped; sensitive is held back (g25) and counts
   reindex(P);
   const X = buildExport(P, { adult: 'exclude', vulgar: 'exclude', zipf: true, minWords: 1 }).file;
   const is = await contractOf(X), n = k => is.filter(i => i.kind === k).length;
@@ -893,7 +893,7 @@ test('export contract: the rule grammar; warnings for what skews play; the summa
   assert.equal(n('contract-alias-dialect'), 2);    // tagged both, and two UK display aliases
   assert.equal(n('contract-dup-root'), 0);         // Plum (org) comes after the common plum
   assert.equal(n('contract-type-common'), 1);      // level typed phrase
-  assert.equal(n('contract-thin'), 1);             // few things: 1 shown word (3 sensitive)
+  assert.equal(n('contract-thin'), 1);             // few things: 2 usable words (ant, sensitive bee); cat and dog are vulgar
   const s = contractSummary(is, { 'contract-root-region': 1, 'contract-alias-dialect': 2, 'contract-type-common': 1 });
   assert.deepEqual(s.over.map(w => w.kind), ['contract-thin']);
   // the order in the export decides contract-dup-root: a place row first hides the common word

@@ -20,7 +20,7 @@ export const ENTRY_COLUMNS = ['text', 'pos', 'type', 'flags', 'familiarity', 're
 export const LINK_FIELDS = ['theme', 'difficulty', 'typicality', 'shown'];   // Links table: the full-JSON reader assumes stride 4 in this order
 export const MAX_DEPTH = 40, NAME_MAX = 30, MIN_WORDS = 4;
 const T_ADULT = 1, T_GROUP = 32;                                     // theme flags the game hard-codes (Themes: flags)
-const E_DROP = 1 | 2 | 8, E_SPELLING = 16, E_REGIONAL = 64;          // entry flags: adult, sensitive, vulgar are dropped; spelling / regional pick the dialect text
+const E_DROP = 1 | 8, E_SPELLING = 16, E_REGIONAL = 64;              // entry flags: adult and vulgar are dropped (game g25 holds sensitive, 2, back to the plan's sensitive start level instead); spelling / regional pick the dialect text
 
 // Themes: rule. The game's wordplay grammar lives in js/model.js (parseRule), shared with js/validate.js; see wordplayRuleIssues below.
 import { parseRule } from '../js/model.js';
@@ -179,7 +179,7 @@ export function checkContract(X) {
   for (let l = 0; l < nL; l++) { const i = ownerOf[l]; if (!shownRoot[i]) continue; const t = links[4 * l]; if (!usable.has(t)) usable.set(t, new Set()); usable.get(t).add(i); }
   for (let t = 0; t < nT; t++) if (linked[t] && !(themes[t][cFlags] & (T_ADULT | T_GROUP))) {
     const k = usable.get(t)?.size || 0;
-    if (k < MIN_WORDS) add('warn', 'contract-thin', `${k} usable word${k === 1 ? '' : 's'} (shown roots: not adult, sensitive or vulgar); a theme needs at least ${MIN_WORDS}`, tName(t));
+    if (k < MIN_WORDS) add('warn', 'contract-thin', `${k} usable word${k === 1 ? '' : 's'} (shown roots: not adult or vulgar); a theme needs at least ${MIN_WORDS}`, tName(t));
   }
   return out;
 }

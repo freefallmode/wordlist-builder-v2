@@ -26,13 +26,13 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 | text | Balloon text, lower-case key, known-word set, alias forms | Empty: a blank balloon. A duplicate root text: lookup by text keeps the first (splits, compound tests) | Non-empty |
 | pos | Same part of speech within a theme (0-3 filter; 4 "other" means no filter) | 8 or more is ignored | 0-4 |
 | type | A split half counts as an everyday word only if type is 0 | Non-zero on common words: fewer real splits | 0 means common |
-| flags | 1, 2 and 8 (adult, sensitive, vulgar): the entry and its aliases are dropped (sensitive too, despite options). 512 synonym: the first one is the strict-synonym alternative. 16 spelling or 64 regional with a UK region: British text. 16 spelling with a US region: American text. 32, 128 and 256: leak-test forms only. 4 trademark: unread | An alias tagged both UK and US becomes British only; the first matching alias in row order wins | At most one UK and one US display alias per root |
+| flags | 1 and 8 (adult, vulgar): the entry and its aliases are dropped. 2 sensitive: from game g25 (e1eb544) the entry and its aliases are held to the plan's sensitive start level (31 in every plan); below it they are not picked, and a theme plays there only with 4 other usable words (until g24 they were dropped). 512 synonym: the first one is the strict-synonym alternative. 16 spelling or 64 regional with a UK region: British text. 16 spelling with a US region: American text. 32, 128 and 256: leak-test forms only. 4 trademark: unread | An alias tagged both UK and US becomes British only; the first matching alias in row order wins | At most one UK and one US display alias per root |
 | familiarity | Word band = max(familiarity, typicality, rounded link difficulty); an alias's familiarity raises the band | 0 is treated as 1; above 5 is clamped in the band but not in the weight (skews) | 1-5 |
 | regions, regionsHi | Read on aliases only, as the UK/US tag | Root regions are never read, so a regional word stored as a root shows to everyone | Regional words must be aliases, not roots |
 | root | 0 for a root; otherwise the 1-based row of its root | Out of range, pointing at an alias, or pointing at a hidden root: the alias is silently dropped; chains aren't followed | A valid row whose target is a root; no chains |
 | clash | One member per level | A shared id on unrelated words wrongly keeps them apart | 0 or more |
 | linkCount | Link offsets | A wrong value shifts every later entry's links (the packed loader checks the total; JSON doesn't) | Sum equals links/4 |
-| breaks | wordbreaks.bytes (adult, sensitive and vulgar entries left out) | For splitting, offsets outside [2, len-2], or leaving a half under a quarter of the word, are ignored. Balloon wrapping uses [3, len-3] on letters-only words of 10 or more letters | Integer offsets inside the word |
+| breaks | wordbreaks.bytes (adult and vulgar entries left out; sensitive ones included from g25) | For splitting, offsets outside [2, len-2], or leaving a half under a quarter of the word, are ignored. Balloon wrapping uses [3, len-3] on letters-only words of 10 or more letters | Integer offsets inside the word |
 | zipf | An everyday split half needs zipf of at least 30 | 0 or missing: no everyday-word splits | zipf x10, 0-74 |
 
 ## Links (the full-JSON reader assumes stride 4 in this order; the slimmer reads linkFields by name)
@@ -63,7 +63,7 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 
 - **Playable theme:** not a group, not adult, popularity at least 1.
 - **Theme size:** a theme needs at least 4 usable words after the band, gap and shape filters. An anagram theme needs 4 in one anagram set; a passenger source needs at least 6.
-- **Shown words:** a word shows only if it is a root, not adult, sensitive or vulgar, with at least 1 link to a playable theme.
+- **Shown words:** a word shows only if it is a root, not adult or vulgar, with at least 1 link to a playable theme; a sensitive one only from the sensitive start level (g25).
 - **Split words:** 5-12 letters, with one spelling for both dialects. A real split needs both halves of 3 or more letters, both halves existing lower-case roots, zipf of at least 30, type 0, and a link difficulty below 2.5.
 
 ## Gaps the game logged (its I25-I27 and E17; Simon decides the fixes)

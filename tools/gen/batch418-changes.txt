@@ -1,0 +1,51 @@
+Issue I31 (Simon: "Sensitive only"): alcoholic drinks lose the adult flag and stay sensitive (held to the sensitive start level by game g25).
+  beer 874: adult flag cleared, stays sensitive
+  wine 875: adult flag cleared, stays sensitive
+  champagne 876: adult flag cleared, stays sensitive
+  vodka 877: adult flag cleared, stays sensitive
+  rum 878: adult flag cleared, stays sensitive
+  whisky 891: adult flag cleared, stays sensitive
+  whiskey 892 (alias of whisky): adult flag cleared, stays sensitive
+  gin 893: adult flag cleared, stays sensitive
+  tequila 894: adult flag cleared, stays sensitive
+  brandy 895: adult flag cleared, stays sensitive
+  cocktail 896: adult flag cleared, stays sensitive
+  cider 897: adult flag cleared, stays sensitive
+  prosecco 901: adult flag cleared, stays sensitive
+  sake 902: adult flag cleared, stays sensitive
+  mead 903: adult flag cleared, stays sensitive
+  sherry 904: adult flag cleared, stays sensitive
+  port 905: adult flag cleared, stays sensitive
+  absinthe 908: adult flag cleared, stays sensitive
+  vermouth 909: adult flag cleared, stays sensitive
+  schnapps 910: adult flag cleared, stays sensitive
+  baijiu 913: adult flag cleared, stays sensitive
+  vino 965: adult flag cleared, stays sensitive
+  bubbly 966: adult flag cleared, stays sensitive
+  fizz 967: adult flag cleared, stays sensitive
+  brew 968: adult flag cleared, stays sensitive
+  brewski 969: adult flag cleared, stays sensitive
+  grog 6786: adult flag cleared, stays sensitive
+  caipirinha 13914: adult flag cleared, stays sensitive
+  raki 19298: adult flag cleared, stays sensitive
+  cachaça 19424: adult flag cleared, stays sensitive
+  cachaca 19425 (alias of cachaça): adult flag cleared, stays sensitive
+  mulled wine 19468: adult flag cleared, stays sensitive
+  Irish coffee 19469: adult flag cleared, stays sensitive
+  glühwein 19475: adult flag cleared, stays sensitive
+  gluhwein 19476 (alias of glühwein): adult flag cleared, stays sensitive
+  ale 19685: adult flag cleared, stays sensitive
+  Pimm's 19947: adult flag cleared, stays sensitive
+  Bellini 20276: adult flag cleared, stays sensitive
+  rakı 26967 (alias of raki): adult flag cleared, stays sensitive
+  grog 50017: adult flag cleared, stays sensitive
+  Amarula 53508: adult flag cleared, stays sensitive
+  buttered rum 62994: adult flag cleared, stays sensitive
+library changes 42; entries changed 42; status set to rev 42
+Checks: changed kinds: none
+Export contract (family export, zipf): contract-root-region 1784 -> 1787
+Export shape: themes 3234 -> 3235, entries 61037 -> 61079; entry texts CHANGED; link counts CHANGED; entry flags change; rows may be added (drinks were left out as adult)
+new issues: none
+
+=== Notice to _WS_ for v418 (send when Simon says) ===
+Library v418 is in the export (data/export/wordlist-game-family.json). From your g25 change and Simon's decision ("Sensitive only"): 42 alcoholic drinks lose the adult flag and stay sensitive, so g25 holds them to the sensitive start level instead of their being dropped. They are beer, wine, champagne, vodka, rum, whisky (and its alias whiskey), gin, tequila, brandy, cocktail, cider, ale, prosecco, sake, mead, sherry, port, absinthe, vermouth, schnapps, mulled wine, Irish coffee, Pimm's, Bellini, grog and the rest. Alcoholic drinks (theme id alcoholic_drinks) is now exported: themes 3,115 -> 3,116, a new theme row. Entry rows 61,037 -> 61,079 (the drinks were left out as adult), so rows and links shift. Our export contract now follows g25: sensitive entries count as usable, so contract-thin goes to 0 (religion, world religions and the rest). No pin until Simon asks; please measure it against v417.
