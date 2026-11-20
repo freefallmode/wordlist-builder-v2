@@ -846,6 +846,7 @@ test('export contract: a clean export passes; each broken rule is an error of it
   await broken(X => { X.themes[ti(X, 'pals')][tf(X, 'rule')] = 'starts:a'; }, 'contract-rule');                                    // X under 2 letters
   await broken(X => { X.themes[ti(X, 'pals')][tf(X, 'rule')] = 'hidden:@nothing'; }, 'contract-rule');                             // @id not a theme
   await broken(X => { X.themes[ti(X, 'pals')][tf(X, 'rule')] = ''; }, 'contract-rule');
+  await broken(X => { X.themes[ti(X, 'pals')][tf(X, 'rule')] = 'other'; }, 'contract-rule-unknown');                             // not in the game's grammar: an error since v414
   await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'popularity')] = 0; }, 'contract-popularity');
   await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'difficulty')] = 0; }, 'contract-difficulty');
   await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'name')] = 'x'.repeat(31); }, 'contract-theme-name');
@@ -871,13 +872,12 @@ test('export contract: a clean export passes; each broken rule is an error of it
   await broken(X => { X.shownUK.push([0, 99]); }, 'contract-shown');
 });
 
-test('export contract: the unknown rule is a warning; warnings for what skews play; the summary gates them against a baseline', async () => {
+test('export contract: the rule grammar; warnings for what skews play; the summary gates them against a baseline', async () => {
   const { contractSummary, parseRule } = await import('../tools/export-contract.mjs');
-  for (const r of ['palindrome', 'homophone', 'homophone:animals', 'rhyme:at', 'contains:aeiou', 'contains:silent-b', 'compound-start:air', 'starts:@birds', 'ends:ma', 'hidden:@x']) assert.equal(parseRule(r).state, 'ok', r);
-  for (const r of ['other', 'letter:animals:plus']) assert.equal(parseRule(r).state, 'unknown', r);
-  for (const r of ['starts:a', 'hidden:abc', 'rhyme:', 'compound-end:@x']) assert.equal(parseRule(r).state, 'bad', r);
-  const P = contractProject(), pals = P.themes.find(t => t.id === 'pals');
-  pals.rule = 'other';
+  for (const r of ['palindrome', 'homophone', 'homophone:animals', 'rhyme:at', 'contains:aeiou', 'contains:silent-b', 'compound-start:air', 'starts:@birds', 'ends:ma', 'hidden:@x', 'no-vowels', 'roman', 'reversible', 'curated']) assert.equal(parseRule(r).state, 'ok', r);
+  for (const r of ['other', 'letter:animals:plus', 'alphabetical', 'plus-letter:@animals']) assert.equal(parseRule(r).state, 'unknown', r);
+  for (const r of ['starts:a', 'hidden:abc', 'rhyme:', 'compound-end:@x', 'roman:x', 'curated:x']) assert.equal(parseRule(r).state, 'bad', r);
+  const P = contractProject();
   P.entries.find(e => e.text === 'apple').region = ['AU'];                            // a root with a region
   P.entries.find(e => e.text === 'grey').region = ['UK', 'US'];                       // an alias tagged both
   const gray = P.entries.find(e => e.text === 'gray'); addEntry(P, 'graye', { fam: 1, aliasOf: gray.id, aliasKind: 'regional', region: ['UK'] });   // a second UK display alias
@@ -889,18 +889,31 @@ test('export contract: the unknown rule is a warning; warnings for what skews pl
   const X = buildExport(P, { adult: 'exclude', vulgar: 'exclude', zipf: true, minWords: 1 }).file;
   const is = await contractOf(X), n = k => is.filter(i => i.kind === k).length;
   assert.deepEqual(is.filter(i => i.sev === 'error'), []);
-  assert.equal(n('contract-rule-unknown'), 1);
   assert.equal(n('contract-root-region'), 1);
   assert.equal(n('contract-alias-dialect'), 2);    // tagged both, and two UK display aliases
   assert.equal(n('contract-dup-root'), 0);         // Plum (org) comes after the common plum
   assert.equal(n('contract-type-common'), 1);      // level typed phrase
   assert.equal(n('contract-thin'), 1);             // few things: 1 shown word (3 sensitive)
-  const s = contractSummary(is, { 'contract-rule-unknown': 1, 'contract-root-region': 1, 'contract-alias-dialect': 2, 'contract-type-common': 1 });
+  const s = contractSummary(is, { 'contract-root-region': 1, 'contract-alias-dialect': 2, 'contract-type-common': 1 });
   assert.deepEqual(s.over.map(w => w.kind), ['contract-thin']);
   // the order in the export decides contract-dup-root: a place row first hides the common word
   const Y = structuredClone(X), r = Y.entries.text.indexOf('fig'); Y.entries.type[r] = 2; Y.entries.text.push('fig'); for (const c of Object.keys(Y.entries)) if (!['text', 'links'].includes(c)) Y.entries[c].push(c === 'familiarity' ? 1 : c === 'breaks' ? [] : 0);
   Y.entries.linkCount[Y.entries.linkCount.length - 1] = 1; Y.entries.links.push(Y.themes.findIndex(t => t[0] === 'fruits'), 2, 2, 0);
   assert.equal((await contractOf(Y)).filter(i => i.kind === 'contract-dup-root').length, 1);
+});
+
+test('wordplay rules (v414): validate and the contract accept the game grammar only; a reversible member needs its reverse in the export', async () => {
+  const P = contractProject(), pals = P.themes.find(t => t.id === 'pals');
+  assert.deepEqual(kinds(P, 'rule-unknown'), []);
+  for (const r of ['other', 'letter:animals:plus', '', 'roman:x']) { pals.rule = r; assert.equal(kinds(P, 'rule-unknown').length, 1, r); }
+  for (const r of ['no-vowels', 'roman', 'reversible', 'curated']) { pals.rule = r; assert.deepEqual(kinds(P, 'rule-unknown'), [], r); }
+  P.themes.push(T('rev', 'reversible words', { tkind: 'wordplay', rule: 'reversible', pop: 3, ident: 3 }));
+  for (const w of ['stop', 'live', 'evil', 'trap', 'kayak']) addEntry(P, w, { fam: 1, typ: { rev: 2 } });
+  addEntry(P, 'pots', { fam: 1, aliasOf: P.entries.find(e => e.text === 'plum').id, aliasKind: 'synonym' });   // an alias row counts as a word of the export
+  reindex(P);
+  const is = (await contractOf(exportOf(P))).filter(i => i.kind === 'contract-reversible-missing');
+  assert.deepEqual(is.map(i => i.msg.split('"')[1]).sort(), ['kayak', 'trap']);                                  // part is no word; kayak is a palindrome
+  assert.ok(is.every(i => i.sev === 'warn'));
 });
 
 test('rating rule: a theme with words needs popularity and identifiability; an enabled entry needs familiarity 1-5; a link typicality 1-5', () => {
@@ -934,6 +947,16 @@ test('export: an alias promoted to a row of its own keeps its left-out root\'s c
   assert.equal(X.entries.clash[row('polite')], X.entries.clash[row('fig')]);
 });
 
+test('export: alias rows are written with linkCount 0 and no links; the contract check flags one that has links', async () => {
+  const X = exportOf(contractProject()), c = X.entries;
+  const aliases = c.root.map((r, i) => r ? i : -1).filter(i => i >= 0);
+  assert.ok(aliases.length > 0 && aliases.every(i => c.linkCount[i] === 0));
+  assert.equal(c.linkCount.reduce((a, b) => a + b, 0), c.links.length / 4);
+  assert.deepEqual(await contractOf(X), []);
+  const a = aliases[0], at0 = c.linkCount.slice(0, a).reduce((x, y) => x + y, 0) * 4;
+  c.linkCount[a] = 1; c.links.splice(at0, 0, 0, 2, 2, 0);
+  assert.ok((await contractOf(X)).some(i => i.sev === 'error' && i.kind === 'contract-alias-links'));
+});
 test('same-display matches the export: accents kept apart, an alias with its own link counted, disabled entries skipped', () => {
   const P = contractProject();
   addEntry(P, 'café', { fam: 1, typ: { fruits: 3 } }); addEntry(P, 'cafe', { gloss: 'x', fam: 1, typ: { fruits: 3 } });   // the export keeps both

@@ -194,8 +194,10 @@ export function buildExport(P, opt0 = {}) {
     { const [lo, hi] = rMask(e.region); cols.regions.push(lo); cols.regionsHi.push(hi); }
     cols.root.push(rootIndex(id));
     cols.clash.push(clash.id(ix.entry.get(e.aliasOf || e.id).id));
-    cols.linkCount.push(links.length);
-    for (const [tid, r, p, sh] of links) {
+    // An alias row carries no links (the game never reads them): `keep` still holds them so the filters and drops above decide which alias rows exist, but they are not written.
+    const written = rootIndex(id) ? [] : links;   // a promoted alias (its root left out) is a root row and keeps its links
+    cols.linkCount.push(written.length);
+    for (const [tid, r, p, sh] of written) {
       if (isNameWord(ix.theme.get(tid), sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text)) nameWordLinks.push(cols.links.length / 4);
       if (sh && !shownAt.has(sh)) { const [text, ps] = [sh.slice(0, sh.lastIndexOf('|')), +sh.slice(sh.lastIndexOf('|') + 1)]; shown.push([text, ps, bp(text)]); shownAt.set(sh, shown.length); }
       { const txt = sh ? sh.slice(0, sh.lastIndexOf('|')) : e.text, k = nameKey(txt), ot = k ? themeByName.get(k) : undefined; if (ot !== undefined && ot !== tIndex.get(tid)) nameThemeLinks.push([cols.links.length / 4, ot]); }
@@ -231,7 +233,7 @@ export function buildExport(P, opt0 = {}) {
     // identifiability 1 (obvious) to 5 (obscure), 0 unrated; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
     themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty', 'breaks'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
-    // entries are columns: entry i is text[i], pos[i] ... ; its themes are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, typicality, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
+    // entries are columns: entry i is text[i], pos[i] ... ; its themes (roots only: an alias row has linkCount 0) are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, typicality, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
     // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups) or are kin (one word family across themes): never put two with the same id in one level.
     // breaks[i] lists the character indexes in text[i] where a hyphen may be placed (a hyphen goes before that character); [] when the text has no break point. Words of 8+ letters only; spaces and existing hyphens are the game's own breaks. Shown texts carry the same list as a third value, and theme rows in the 'breaks' field.
     // nameThemeLinks: [link number, theme index] pairs: the link's text as shown is the whole name of another theme (a passenger word); link number n is links[4n..4n+3]. shownUK: [link number, index+1 into shown]: the text a British player sees for that link when it differs from the shown text (the UK spelling of a short text, gray -> grey); links not listed show the same text to everyone.

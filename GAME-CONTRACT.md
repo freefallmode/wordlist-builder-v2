@@ -69,6 +69,7 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 ## Gaps the game logged (its I25-I27 and E17; Simon decides the fixes)
 
 - No British theme name exists in the export.
-- 2,931 aliases carry links nobody reads (dead bytes).
+- Alias rows carry no links (linkCount 0): the export stopped writing them, closing the old dead-bytes gap. The contract check `contract-alias-links` enforces it.
 - The full-JSON reader still assumes the link order.
 - The 15 untestable wordplay rules listed above.
+- Rule row, from game g24 and library v414: the grammar also has no-vowels (no a, e, i, o, u; y is not a vowel; spaces and hyphens ignored), roman (only i, v, x, l, c, d, m), reversible (the reverse is another word of the export; not a palindrome) and curated (links only, no property test). Any other rule is an error (`contract-rule-unknown`); a reversible member whose reverse is no export word is `contract-reversible-missing` (warning, baseline 0). The 15 untestable rules are gone: 14 themes carry these strings and letters in alphabetical order was deleted.

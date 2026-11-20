@@ -22,22 +22,31 @@ export const MAX_DEPTH = 40, NAME_MAX = 30, MIN_WORDS = 4;
 const T_ADULT = 1, T_GROUP = 32;                                     // theme flags the game hard-codes (Themes: flags)
 const E_DROP = 1 | 2 | 8, E_SPELLING = 16, E_REGIONAL = 64;          // entry flags: adult, sensitive, vulgar are dropped; spelling / regional pick the dialect text
 
-// Themes: rule. The game's wordplay grammar. X is at least 2 letters, or @id where allowed; contains:X takes letters (silent-b style hyphens too).
-const RULE_FORMS = [
-  [/^(palindrome|double-letters|onomatopoeia|anagram)$/, null],
-  [/^homophone(:[a-z-]+)?$/, null],
-  [/^rhyme:([a-z]{2,})$/, null],
-  [/^contains:([a-z]+(-[a-z]+)*)$/, null],
-  [/^compound-(start|end):([a-z]{2,})$/, null],
-  [/^(starts|ends):(?:[a-z]{2,}|@(.+))$/, 2],
-  [/^hidden:@(.+)$/, 1],
-];
-const RULE_NAMES = /^(palindrome|double-letters|homophone|onomatopoeia|anagram|rhyme|contains|compound-start|compound-end|starts|ends|hidden)(:|$)/;
-// 'ok', 'unknown' (a rule name the game does not have: silently never used), or 'bad' (a known name with a bad argument); ref: the @id, if any
-export function parseRule(rule) {
-  const r = String(rule ?? '');
-  for (const [re, g] of RULE_FORMS) { const m = re.exec(r); if (m) return { state: 'ok', ref: g ? m[g] || null : null }; }
-  return { state: RULE_NAMES.test(r) ? 'bad' : 'unknown', ref: null };
+// Themes: rule. The game's wordplay grammar lives in js/model.js (parseRule), shared with js/validate.js; see wordplayRuleIssues below.
+import { parseRule } from '../js/model.js';
+export { parseRule };
+
+// ----- Themes: rule (wordplay rule grammar and the tested rules' data; batch v414, game g24) -----
+// rule: a wordplay or compound theme whose rule is not in the game's grammar never plays: an error (`contract-rule-unknown`; it was a warning
+// until v414). reversible: the game's test is "the reversed text is a different library word; palindromes don't count", so a member whose
+// reverse is no word of the export (any row, root or alias) is a member the game would not accept (`contract-reversible-missing`, warning).
+export function wordplayRuleIssues(X, { add, err, tName, cKind, cRule, ownerOf, shownRoot }) {
+  const themes = X.themes, ent = X.entries, links = ent.links, shown = Array.isArray(X.shown) ? X.shown : [];
+  const rev = new Set();
+  for (let i = 0; i < themes.length; i++) {
+    const r = themes[i]; if (!Array.isArray(r) || !(r[cKind] === 3 || r[cKind] === 4)) continue;
+    const pr = parseRule(r[cRule]);
+    if (pr.state === 'unknown' && r[cRule]) err('contract-rule-unknown', `the ${KIND_NAMES[r[cKind]]} rule "${r[cRule]}" is not in the game's grammar: the theme is silently never used`, tName(i));
+    else if (pr.state !== 'ok') err('contract-rule', `the ${KIND_NAMES[r[cKind]]} rule ${JSON.stringify(r[cRule])} ${r[cRule] ? 'has a bad argument' : 'is empty'}: the theme is silently never used`, tName(i));
+    else if (r[cRule] === 'reversible') rev.add(i);
+  }
+  if (!rev.size) return;
+  const words = new Set(ent.text.map(t => String(t).toLowerCase()));
+  for (let l = 0; l < ownerOf.length; l++) {
+    const t = links[4 * l], i = ownerOf[l]; if (!rev.has(t) || !shownRoot[i]) continue;
+    const sh = links[4 * l + 3], text = String(sh ? shown[sh - 1]?.[0] : ent.text[i]).toLowerCase(), back = [...text].reverse().join('');
+    if (back === text || !words.has(back)) add('warn', 'contract-reversible-missing', `"${text}" reversed is "${back}", ${back === text ? 'the same word (a palindrome)' : 'which is no word of the export'}: the game's reversible test fails`, `link ${l} (entry ${i} ${ent.text[i]}) in ${tName(t)}`);
+  }
 }
 
 const isInt = (v, lo, hi) => Number.isInteger(v) && v >= lo && v <= hi;
@@ -72,6 +81,7 @@ export function checkContract(X) {
   if (links.length % 4 || sum !== links.length / 4) { err('contract-links', `the linkCount values add up to ${sum}, but links holds ${links.length / 4} links: every later entry's links would shift`); return out; }
   const linked = new Uint8Array(nT), ownerOf = new Int32Array(nL);
   for (let i = 0, l = 0; i < n; i++) for (let k = 0; k < ent.linkCount[i]; k++, l++) { ownerOf[l] = i; const t = links[4 * l]; if (isInt(t, 0, nT - 1)) linked[t] = 1; }
+  for (let i = 0; i < n; i++) if (ent.root[i] && ent.linkCount[i] !== 0) err('contract-alias-links', `an alias row has linkCount ${ent.linkCount[i]}; aliases carry no links (the game never reads them)`, `entry ${i} ${ent.text[i]}`);
 
   // ----- Themes -----
   const ids = new Map(), tName = i => `theme ${i} ${themes[i]?.[cId]}`;
@@ -92,11 +102,7 @@ export function checkContract(X) {
       if (!isInt(r[cPop], 1, 5)) err('contract-popularity', `popularity ${JSON.stringify(r[cPop])} on a playable theme; 1-5 (0: the theme never plays)`, tName(i));
       if (!isNum(r[cDiff], 1, 5)) err('contract-difficulty', `difficulty ${JSON.stringify(r[cDiff])} on a playable theme; 1.0-5.0`, tName(i));
     }
-    if (r[cKind] === 3 || r[cKind] === 4) {   // wordplay, compound: exact, and need a rule in the game's grammar
-      const pr = parseRule(r[cRule]);
-      if (pr.state === 'unknown' && r[cRule]) add('warn', 'contract-rule-unknown', `the ${KIND_NAMES[r[cKind]]} rule "${r[cRule]}" is not in the game's grammar: the theme is silently never used`, tName(i));
-      else if (pr.state !== 'ok') err('contract-rule', `the ${KIND_NAMES[r[cKind]]} rule ${JSON.stringify(r[cRule])} ${r[cRule] ? 'has a bad argument' : 'is empty'}: the theme is silently never used`, tName(i));
-    }
+    // wordplay, compound: exact, and need a rule in the game's grammar (wordplayRuleIssues, after the links)
     breaksOk(r[cBreaks], r[cName], `theme name breaks`, tName(i));
   }
   // @id targets (after every id is known), parent cycles and depth
@@ -144,6 +150,8 @@ export function checkContract(X) {
   (X.shownUK || []).forEach((p, k) => { if (!Array.isArray(p) || !isInt(p[0], 0, nL - 1) || !isInt(p[1], 1, shown.length)) err('contract-shown', `shownUK[${k}] ${JSON.stringify(p)} needs a link number and an index+1 into shown`, `shownUK ${k}`); });
   (X.nameWordLinks || []).forEach((l, k) => { if (!isInt(l, 0, nL - 1)) err('contract-shown', `nameWordLinks[${k}] ${JSON.stringify(l)} is not a link number`, `nameWordLinks ${k}`); });
   (X.nameThemeLinks || []).forEach((p, k) => { if (!Array.isArray(p) || !isInt(p[0], 0, nL - 1) || !isInt(p[1], 0, nT - 1)) err('contract-shown', `nameThemeLinks[${k}] ${JSON.stringify(p)} needs a link number and a theme index`, `nameThemeLinks ${k}`); });
+
+  wordplayRuleIssues(X, { add, err, tName, cKind, cRule, ownerOf, shownRoot });   // Themes: rule
 
   // ----- Warnings: what skews play -----
   const ukI = X.regions.indexOf('UK'), usI = X.regions.indexOf('US'), bits = X.regionBits;

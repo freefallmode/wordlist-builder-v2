@@ -1,0 +1,81 @@
+Wordplay rules for game g24, the alphabetical-order theme deleted, the data faults the game found.
+1. rule strings: 14
+  no_vowels "no vowels": "other" -> no-vowels
+  words_made_of_roman_numerals "words made of Roman numerals": "other" -> roman
+  reversible_words "reversible words": "other" -> reversible
+  places_that_are_also_words "places that are also words": "other" -> curated
+  homographs "homographs": "other" -> curated
+  acronyms "acronyms": "other" -> curated
+  portmanteau_words "portmanteau words": "other" -> curated
+  tech_blends "tech word blends": "other" -> curated
+  entertainment_blends "entertainment word blends": "other" -> curated
+  zigzag_words "zigzag words": "other" -> curated
+  rhyming_pairs "rhyming pairs": "other" -> curated
+  rhyming_word_pairs "silly rhyming pairs": "other" -> curated
+  numbers_with_the_first_letter_changed "numbers, first letter changed": "letter:numbers:first" -> curated
+  animals_plus_a_letter "animals plus a letter": "letter:animals:plus" -> curated
+2. theme deleted: 1
+  letters_in_alphabetical_order "letters in alphabetical order" deleted: 31 links dropped (chimpanzee 1004, biopsy 3495, abbey 6667, accent 7621, bellow 10216, chops 10884, ghost 12529, flop 12652, first 28028, almost 29143, begin 29144, chintz 29145, beefy 29146, billowy 29147, adopt 29148, dirty 29150, empty 29151, forty 29152, below 29154, deft 29156, glow 29157, hilt 29158, most 29160, aegilops 29161, bijou 29162, access 29163, effort 29164, glory 31415, abort 41344, knot 47467, film 52276); members left with no theme (no longer exported): almost 29143, beefy 29146, billowy 29147, adopt 29148, deft 29156, glow 29157, most 29160, aegilops 29161, access 29163, effort 29164
+3. data faults: 24
+  unlinked: model 49429 from animals_plus_a_letter: no animal plus one letter makes "model" (mole + d is "modle")
+  re-pointed: fitness centre 3600 [UK,AU,NZ,IE,CA] (spelling) from gym 3597 to fitness center 3599: the UK spelling of fitness center, not of gym; gym (in no vowels) no longer has a UK display text
+  root region: fitness center 3599 [US] -> []: a US spelling with its UK alias is untagged, as color (and neighborhood watch in v413)
+  spelling: hodge podge 28943 -> spelling alias of hodgepodge 27803 (familiarity 3 -> 3, the root's): rhyming_pairs (typicality 4) moved, shown as "hodgepodge"
+  spelling: namby pamby 28949 -> spelling alias of namby-pamby 27817 (familiarity 3 -> 3, the root's): rhyming_pairs (typicality 3) moved, shown as "namby-pamby"
+  spelling: higgledy piggledy 28940 -> spelling alias of higgledy-piggledy 27818 (familiarity 3 -> 3, the root's): rhyming_pairs (typicality 2) moved, shown as "higgledy-piggledy"
+  spelling: topsy turvy 28941 -> spelling alias of topsy-turvy 27819 (familiarity 2 -> 2, the root's): rhyming_pairs (typicality 2) moved, shown as "topsy-turvy"
+  spelling: willy nilly 28938 -> spelling alias of willy-nilly 27820 (familiarity 2 -> 2, the root's): rhyming_pairs (typicality 3) moved, shown as "willy-nilly"
+  spelling: wishy washy 28978 -> spelling alias of wishy-washy 27821 (familiarity 3 -> 2, the root's): zigzag_words (typicality 3) moved, shown as "wishy-washy"
+  spelling: hanky panky 28933 -> spelling alias of hanky-panky 27822 (familiarity 2 -> 3, the root's): rhyming_pairs (typicality 2) moved, shown as "hanky-panky"
+  spelling: mish mash 28973 -> spelling alias of mishmash 27823 (familiarity 3 -> 3, the root's): zigzag_words (typicality 3) moved, shown as "mishmash"
+  spelling: fuddy duddy 28947 -> spelling alias of fuddy-duddy 27827 (familiarity 3 -> 3, the root's): rhyming_pairs (typicality 4) moved, shown as "fuddy-duddy"
+  spelling: pitter patter 28979 -> spelling alias of pitter-patter 27828 (familiarity 2 -> 2, the root's): zigzag_words (typicality 2) moved, shown as "pitter-patter"
+  spelling: walkie talkie 28932 -> spelling alias of walkie-talkie 4601 (familiarity 1 -> 2, the root's): rhyming_pairs (typicality 1) moved, shown as "walkie-talkie"
+  spelling: okey dokey 28946 -> spelling alias of okey-dokey 32634 (familiarity 2 -> 3, the root's): rhyming_pairs (typicality 3) moved, shown as "okey-dokey"
+  spelling: rootin tootin 28966 -> spelling alias of rootin' tootin' 27612 (familiarity 4 -> 4, the root's): rhyming_pairs (typicality 5) moved, shown as "rootin' tootin'"
+  spelling: bees knees 28968 -> spelling alias of bee's knees 27264 (familiarity 3 -> 3, the root's): rhyming_pairs (typicality 4) moved, shown as "bee's knees"
+  spelling: tick tock 28969 -> spelling alias of tick-tock 39584 (familiarity 1 -> 1, the root's): zigzag_words (typicality 1) moved, shown as "tick-tock"
+  spelling: see saw 28976 -> spelling alias of seesaw 5938 (familiarity 1 -> 1, the root's): zigzag_words (typicality 2) moved, shown as "seesaw"
+  spelling: tip top 28977 -> spelling alias of tip-top 62482 (familiarity 2 -> 2, the root's): zigzag_words (typicality 3) moved, shown as "tip-top"
+  spelling: knick knack 28981 -> spelling alias of knick-knack 25679 (familiarity 3 -> 3, the root's): zigzag_words (typicality 3) moved, shown as "knick-knack"
+  spelling: fiddle faddle 28991 -> spelling alias of fiddle-faddle 27783 (familiarity 4 -> 4, the root's): zigzag_words (typicality 4) moved, shown as "fiddle-faddle"
+  spelling: chiff chaff 28992 -> spelling alias of chiffchaff 59929 (familiarity 4 -> 4, the root's): zigzag_words (typicality 5) moved, shown as "chiffchaff"
+  spelling: hee haw 62401 -> spelling alias of hee-haw 10220 (familiarity 3 -> 1, the root's): zigzag_words (typicality 3) moved, shown as "hee-haw"
+   skipped: 2
+    roly poly 28950 (plump, in rhyming pairs) / roly-poly 1418 (the pill bug): different senses
+    teeter totter 28990 (zigzag words): the same thing as seesaw, whose teeter-totter 5939 is already a regional alias of seesaw; seesaw is now in zigzag words through see saw, so the two stand for one thing there (an alias of an alias is not allowed): left for Simon
+4. reversible words: 14
+  form alias: pools 68063 of pool 32114 (familiarity 1, noun): the reverse of sloop; plural of pool [water]
+  form alias: pans 68064 of pan 28035 (familiarity 1, noun): the reverse of snap; plural of pan [cookware]
+  form alias: tips 68065 of tip 20015 (familiarity 1, noun): the reverse of spit; plural of tip [gratuity]
+  form alias: warts 68066 of wart 14348 (familiarity 2, noun): the reverse of straw; plural of wart
+  form alias: snoops 68067 of snoop 29372 (familiarity 2, verb): the reverse of spoons; third person of snoop
+  new root: part 68068 [hair] (familiarity 2, noun, common) in hair (typicality 3): the line where hair is divided; the reverse of trap
+  regional alias: parting 68069 [UK] of part 68068 (familiarity 2): the UK word for a hair part
+  form alias: parts 68070 of part 68068 (familiarity 2, noun): the reverse of strap; plural of part [hair]
+  unlinked: denim 71 from reversible_words: the reverse "mined" is only a verb form of mine, and the library's mine entries are the pronoun and the pit (no verb, no theme for it)
+  unlinked: diaper 3552 from reversible_words: the reverse "repaid" needs repay, whose one fitting theme (things you do with money) holds pay: one word family, so repay would have to be grouped with it (DESIGN-entries.md 3.7 B)
+  unlinked: decaf 19463 from reversible_words: the reverse "faced" is a verb form of face, and the library's face entries are nouns (body part, clock); typicality 5
+  unlinked: time 28515 from reversible_words: the reverse "emit" has no fitting theme
+  unlinked: smart 29046 from reversible_words: the reverse "trams" would be the plural of tram, which is a regional alias of streetcar (a form cannot hang off an alias)
+  unlinked: retool 62412 from reversible_words: the reverse "looter" has no fitting theme (crimes and stealing crimes list crimes, not criminals); retool is familiarity 4, typicality 5
+5. silly rhyming pairs: rhyming_word_pairs "silly rhyming pairs": identifiability 2 -> 3 (popularity 2; difficulty 1.5 -> 2.5): its 14 words are all band 3-4, so at difficulty 1.5 none fit the theme's band
+The game's tests (no vowels, roman, reversible) on root links of the family export: members before {"reversible_words":48,"words_made_of_roman_numerals":21,"no_vowels":39}, failing 13: reversible_words: "denim" 71, reversible_words: "sloop" 2821, reversible_words: "diaper" 3552, reversible_words: "snap" 5747, reversible_words: "spit" 17103, reversible_words: "decaf" 19463, reversible_words: "straw" 28060, reversible_words: "time" 28515, reversible_words: "smart" 29046, reversible_words: "trap" 45171, reversible_words: "spoons" 45416, reversible_words: "strap" 46907, reversible_words: "retool" 62412; after {"words_made_of_roman_numerals":21,"no_vowels":39,"reversible_words":42}, failing 0: none
+library changes 53; entries changed 90; status set to rev 80
+Checks: changed kinds: error:rule-unknown 15 -> 0, info:alias-kind-suspect 53 -> 52, info:family-kin 344 -> 346, info:orphan 214 -> 226
+Checks after (errors and warnings): rule-unknown 0, clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 246, theme-name 3
+Export contract (family export, zipf): contract-root-region 1785 -> 1784, contract-rule-unknown 15 -> 0; after: contract-dup-root 185, contract-root-region 1784, contract-rule-unknown 0, contract-thin 5, contract-type-common 42
+  contract-rule* after: 0; contract-reversible-missing before 0, after 0
+Committed family export equals the in-memory export of the library before the changes: NO (the export code changed since it was written: compared with the in-memory export before the changes)
+Themes 3235 -> 3234; gone letters_in_alphabetical_order (index 2842); new none; theme indexes shift from index 2842 (words_made_of_roman_numerals, was letters_in_alphabetical_order): every later theme index is one lower
+Theme rows changed (rule, difficulty, identifiability): 16: places_that_are_also_words rule "other" -> "curated"; rhyming_word_pairs rule "other" -> "curated"; rhyming_word_pairs difficulty 1.5 -> 2.5; rhyming_word_pairs identifiability 2 -> 3; homographs rule "other" -> "curated"; rhyming_pairs rule "other" -> "curated"; zigzag_words rule "other" -> "curated"; reversible_words rule "other" -> "reversible"; no_vowels rule "other" -> "no-vowels"; words_made_of_roman_numerals rule "other" -> "roman"; acronyms rule "other" -> "curated"; numbers_with_the_first_letter_changed rule "letter:numbers:first" -> "curated"; animals_plus_a_letter rule "letter:animals:plus" -> "curated"; portmanteau_words rule "other" -> "curated"; tech_blends rule "other" -> "curated"; entertainment_blends rule "other" -> "curated"
+Entries 61048 -> 61044; first row whose entry changed: 26392 (rink 28523, was time 28515); rows that moved: 34644; added pools 68063 (row 61036), pans 68064 (row 61037), tips 68065 (row 61038), warts 68066 (row 61039), snoops 68067 (row 61040), part 68068 (row 61041), parting 68069 (row 61042), parts 68070 (row 61043); removed time 28515, almost 29143, beefy 29146, billowy 29147, adopt 29148, deft 29156, glow 29157, most 29160, aegilops 29161, access 29163, effort 29164, retool 62412
+First row with any change (entry, text, flags, root, link count or familiarity): 70 (denim 71)
+root -> alias rows 21: walkie talkie 28932, hanky panky 28933, willy nilly 28938, higgledy piggledy 28940, topsy turvy 28941, hodge podge 28943, okey dokey 28946, fuddy duddy 28947, namby pamby 28949, rootin tootin 28966, bees knees 28968, tick tock 28969, mish mash 28973, see saw 28976, tip top 28977, wishy washy 28978, pitter patter 28979, knick knack 28981, fiddle faddle 28991, chiff chaff 28992, hee haw 62401
+Links 100801 -> 100764; rows whose link count changed: 68
+Link-index shifts: from row 71 (ultramarine 72) on, link positions move
+Root links by theme + shown text + row: gone 59, new 22, rating changed 0
+  gone: reversible_words: "denim" (71), letters_in_alphabetical_order: "chimpanzee" (1004), letters_in_alphabetical_order: "biopsy" (3495), reversible_words: "diaper" (3552), letters_in_alphabetical_order: "abbey" (6667), letters_in_alphabetical_order: "accent" (7621), letters_in_alphabetical_order: "bellow" (10216), letters_in_alphabetical_order: "chops" (10884), letters_in_alphabetical_order: "ghost" (12529), letters_in_alphabetical_order: "flop" (12652), reversible_words: "decaf" (19463), letters_in_alphabetical_order: "first" (28028), reversible_words: "time" (28515), rhyming_pairs: "walkie talkie" (28932), rhyming_pairs: "hanky panky" (28933), rhyming_pairs: "willy nilly" (28938), rhyming_pairs: "higgledy piggledy" (28940), rhyming_pairs: "topsy turvy" (28941), rhyming_pairs: "hodge podge" (28943), rhyming_pairs: "okey dokey" (28946), rhyming_pairs: "fuddy duddy" (28947), rhyming_pairs: "namby pamby" (28949), rhyming_pairs: "rootin tootin" (28966), rhyming_pairs: "bees knees" (28968), zigzag_words: "tick tock" (28969), zigzag_words: "mish mash" (28973), zigzag_words: "see saw" (28976), zigzag_words: "tip top" (28977), zigzag_words: "wishy washy" (28978), zigzag_words: "pitter patter" (28979), zigzag_words: "knick knack" (28981), zigzag_words: "fiddle faddle" (28991), zigzag_words: "chiff chaff" (28992), reversible_words: "smart" (29046), letters_in_alphabetical_order: "almost" (29143), letters_in_alphabetical_order: "begin" (29144), letters_in_alphabetical_order: "chintz" (29145), letters_in_alphabetical_order: "beefy" (29146), letters_in_alphabetical_order: "billowy" (29147), letters_in_alphabetical_order: "adopt" (29148), letters_in_alphabetical_order: "dirty" (29150), letters_in_alphabetical_order: "empty" (29151), letters_in_alphabetical_order: "forty" (29152), letters_in_alphabetical_order: "below" (29154), letters_in_alphabetical_order: "deft" (29156), letters_in_alphabetical_order: "glow" (29157), letters_in_alphabetical_order: "hilt" (29158), letters_in_alphabetical_order: "most" (29160), letters_in_alphabetical_order: "aegilops" (29161), letters_in_alphabetical_order: "bijou" (29162), letters_in_alphabetical_order: "access" (29163), letters_in_alphabetical_order: "effort" (29164), letters_in_alphabetical_order: "glory" (31415), letters_in_alphabetical_order: "abort" (41344), letters_in_alphabetical_order: "knot" (47467), animals_plus_a_letter: "model" (49429), letters_in_alphabetical_order: "film" (52276), zigzag_words: "hee haw" (62401), reversible_words: "retool" (62412)
+  new: rhyming_pairs: "walkie-talkie" (4601), zigzag_words: "seesaw" (5938), zigzag_words: "hee-haw" (10220), zigzag_words: "knick-knack" (25679), rhyming_pairs: "bee's knees" (27264), rhyming_pairs: "rootin' tootin'" (27612), zigzag_words: "fiddle-faddle" (27783), rhyming_pairs: "hodgepodge" (27803), rhyming_pairs: "namby-pamby" (27817), rhyming_pairs: "higgledy-piggledy" (27818), rhyming_pairs: "topsy-turvy" (27819), rhyming_pairs: "willy-nilly" (27820), zigzag_words: "wishy-washy" (27821), rhyming_pairs: "hanky-panky" (27822), zigzag_words: "mishmash" (27823), rhyming_pairs: "fuddy-duddy" (27827), zigzag_words: "pitter-patter" (27828), rhyming_pairs: "okey-dokey" (32634), zigzag_words: "tick-tock" (39584), zigzag_words: "chiffchaff" (59929), zigzag_words: "tip-top" (62482), hair: "part" (68068)
+  rating: none
+new issues: none

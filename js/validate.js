@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, displayKey, isAncestor, plainText, ALIAS_KINDS, POS, TYPES } from './model.js';
+import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, parseRule, displayKey, isAncestor, plainText, ALIAS_KINDS, POS, TYPES } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
 import { familyPairs, clashGroups, CLASH_SOFT, CLASH_MAX } from './family.js';
@@ -58,6 +58,7 @@ export function validate(P) {
   for (const e of P.entries) if (e.aliasOf) { if (!aliasTexts.has(e.aliasOf)) aliasTexts.set(e.aliasOf, []); aliasTexts.get(e.aliasOf).push(e.text); }
   for (const t of P.themes) {
     { const rt = ruleTheme(t); if (rt && !ix.theme.get(rt)) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rt}.`, { themeId: t.id }); }
+    if (t.tkind === 'wordplay' || t.tkind === 'compound') { const pr = parseRule(t.rule); if (pr.state !== 'ok') add('error', 'rule-unknown', `"${t.name}" is a ${t.tkind} theme with ${t.rule ? `the rule "${t.rule}", which ${pr.state === 'bad' ? 'has a bad argument' : "is not in the game's grammar"}` : 'no rule'} (GAME-CONTRACT.md: palindrome, double-letters, homophone, onomatopoeia, anagram, no-vowels, roman, reversible, curated, rhyme:X, contains:X, compound-start:X, compound-end:X, starts:X, ends:X, hidden:@id): the game never plays it.`, { themeId: t.id }); }
     { const len = [...t.name].length; if (len > THEME_NAME_MAX) add('warn', 'theme-name-long', `The theme name "${t.name}" has ${len} characters; keep it to ${THEME_NAME_MAX} at most (aim for ${THEME_NAME_SOFT}).`, { themeId: t.id }); }
     const ef = eff(P, t.id);
     if (!ef.enabled) continue;

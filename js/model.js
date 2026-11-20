@@ -327,6 +327,27 @@ export function moveKin(P, from, to) {
 
 // The theme a wordplay rule names (starts:@colors), or ''.
 export const ruleTheme = t => /^(?:starts|ends|hidden):@(.+)$/.exec(t.rule || '')?.[1] || '';
+// The game's wordplay rule grammar (GAME-CONTRACT.md, Themes: rule), the one copy shared by js/validate.js (`rule-unknown`) and
+// tools/export-contract.mjs (`contract-rule`, `contract-rule-unknown`). X is at least 2 letters, or @id where allowed; contains:X takes letters
+// (silent-b style hyphens too). Game g24 added the tested rules no-vowels, roman, reversible and `curated` (links only, no property test).
+// Any other rule name keeps the theme out of play.
+const RULE_FORMS = [
+  [/^(palindrome|double-letters|onomatopoeia|anagram)$/, null],
+  [/^(no-vowels|roman|reversible|curated)$/, null],
+  [/^homophone(:[a-z-]+)?$/, null],
+  [/^rhyme:([a-z]{2,})$/, null],
+  [/^contains:([a-z]+(-[a-z]+)*)$/, null],
+  [/^compound-(start|end):([a-z]{2,})$/, null],
+  [/^(starts|ends):(?:[a-z]{2,}|@(.+))$/, 2],
+  [/^hidden:@(.+)$/, 1],
+];
+const RULE_NAMES = /^(palindrome|double-letters|homophone|onomatopoeia|anagram|no-vowels|roman|reversible|curated|rhyme|contains|compound-start|compound-end|starts|ends|hidden)(:|$)/;
+// 'ok', 'unknown' (a rule name the game does not have: the theme never plays), or 'bad' (a known name with a bad argument); ref: the @id, if any
+export function parseRule(rule) {
+  const r = String(rule ?? '');
+  for (const [re, g] of RULE_FORMS) { const m = re.exec(r); if (m) return { state: 'ok', ref: g ? m[g] || null : null }; }
+  return { state: RULE_NAMES.test(r) ? 'bad' : 'unknown', ref: null };
+}
 // Deleting a theme also drops what entries held for it (shown text, form used, name allowance). It is refused while another theme's rule names it. Returns what updateIndex needs.
 export function deleteTheme(P, tid) {
   const t = P.ix.theme.get(tid);
