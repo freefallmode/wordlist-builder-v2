@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-19, library v410. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-19, library v411. Read this, then `ISSUES.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
@@ -16,7 +16,7 @@ Wordlist Builder v2: a browser tool that builds a library of themes and words fo
 
 Done: audit, bug batches, performance E1-E4/E6/E7/E9, I1, I6, I16, T13, `--strict` fails before writing, T1/T7/T15/T18/T23/T24/T25, W2/W5/T17, library batches v375-v398 (W9, T30, I18, T31, I19, T32, I20, I21, I22 in-theme pairs v398, kin pilot v399, kin pass v400, salty-foods trim v401), E9, I16, T26-T28, tools/gen archive (G1, G4-G6; G2 dropped).
 
-Game side: it pinned v408 on 2026-11-19 on Simon's word (its commit 305a761 on branch regional-words-g17, not pushed; source wordlist-builder-v2 commit 1a65723). All its checks passed (slim equals full, verify 0 mismatches, restart test, splitcheck 0, bot samples in all modes, fonts, compile); wordbreaks.bytes rebuilt 18,853 -> 18,841 words. Its generator is g23 (a shown text never returns within 5 levels). Earlier pins: v405 (f7dac62), v397 (45b3f56); v406 and v407 were measured clean but never pinned on their own. The game's D2 (sponge, theme-name capitals) is closed. It pins only when Simon asks and wants his yes in its own session. Send each new version's notice to `_WS_` (cc19ae); notice texts are at the end of each `tools/gen/batchNNN-changes.txt`. v409 (Julia's branch replayed) and v410 (complete sets fixed, new complete-* checks) applied 2026-11-20; one notice for both drafted at the end of `tools/gen/batch410-changes.txt`, not yet sent (Simon: not yet).
+Game side: it pinned v408 on 2026-11-19 on Simon's word (its commit 305a761 on branch regional-words-g17, not pushed; source wordlist-builder-v2 commit 1a65723). All its checks passed (slim equals full, verify 0 mismatches, restart test, splitcheck 0, bot samples in all modes, fonts, compile); wordbreaks.bytes rebuilt 18,853 -> 18,841 words. Its generator is g23 (a shown text never returns within 5 levels). Earlier pins: v405 (f7dac62), v397 (45b3f56); v406 and v407 were measured clean but never pinned on their own. The game's D2 (sponge, theme-name capitals) is closed. It pins only when Simon asks and wants his yes in its own session. Send each new version's notice to `_WS_` (cc19ae); notice texts are at the end of each `tools/gen/batchNNN-changes.txt`. v409 (Julia's branch replayed), v410 (complete sets fixed, new complete-* checks) and v411 (three set fixes) applied 2026-11-20; one notice for all three drafted at the end of `tools/gen/batch411-changes.txt`, not yet sent (Simon: not yet).
 
 In progress: nothing.
 

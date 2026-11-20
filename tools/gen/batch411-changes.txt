@@ -1,0 +1,59 @@
+Fixes: French Guiana out of South America and French-speaking countries; territories out of Canadian provinces; kelvin lowercase common.
+A. notes rewritten (2):
+  south_american_countries "South American countries" (12 items): "the 12 countries and French Guiana: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela, French Guiana" -> "the 12 countries: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela"
+  canadian_provinces "Canadian provinces" (10 items): "the 10 provinces and 3 territories: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador (Newfoundland), Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan, Northwest Territories, Nunavut, Yukon" -> "the 10 provinces: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador (Newfoundland), Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan"
+C. unlinked:
+  south_american_countries: French Guiana 35765 unlinked (part of France, not a country); groups it was in: none; still in french_speaking_countries
+  french_speaking_countries: French Guiana 35765 unlinked (part of France, not a country); groups it was in: none; still in NO THEME
+  canadian_provinces: Yukon 31816 unlinked (a territory, not a province); groups it was in: none; still in gold_rush_words, taiga, cold_things, polar_and_frozen_places
+  canadian_provinces: Northwest Territories 36214 unlinked (a territory, not a province); groups it was in: none; still in NO THEME
+  canadian_provinces: Nunavut 36213 unlinked (a territory, not a province); groups it was in: none; still in NO THEME
+E. kelvin:
+  Kelvin 40846 -> kelvin, type proper -> common; show texts {}; themes heat_science 3, temperature_words 2, units_named_after_people 1, si_base_units 2, words_named_after_people 3; aliases none
+D. complete-* check after: none
+Entries with no theme now: Northwest Territories 36214, Nunavut 36213, French Guiana 35765
+Listed, not changed:
+  an alias "Kelvin" (the scale is also called the Kelvin scale; the name is also a given name) is not added; say if wanted
+library changes 13; status set to rev 5; entries touched 5
+Checks: changed kinds: info:orphan 222 -> 225
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 60
+Committed family export equals the in-memory export of v410 before the changes: yes
+Themes 3235 -> 3235; gone none; new none; theme indexes shift from none
+Entries 61039 -> 61036; first row whose entry changed: 33054; added none; removed French Guiana 35765, Nunavut 36213, Northwest Territories 36214
+Row text changes: Kelvin -> kelvin (40846); flags changed: none
+Links 109202 -> 109197; rows whose link count changed: 1 (Yukon 31816)
+Link-index shifts: from row 29430 (Dawson City 31817) on, link positions move
+Links by theme + shown text + row: gone 10, new 5, rating changed 0
+  gone: canadian_provinces: "Yukon" (row of 31816)
+  gone: south_american_countries: "French Guiana" (row of 35765)
+  gone: french_speaking_countries: "French Guiana" (row of 35765)
+  gone: canadian_provinces: "Nunavut" (row of 36213)
+  gone: canadian_provinces: "Northwest Territories" (row of 36214)
+  gone: heat_science: "Kelvin" (row of 40846)
+  gone: temperature_words: "Kelvin" (row of 40846)
+  gone: units_named_after_people: "Kelvin" (row of 40846)
+  gone: si_base_units: "Kelvin" (row of 40846)
+  gone: words_named_after_people: "Kelvin" (row of 40846)
+  new: heat_science: "kelvin" (row of 40846)
+  new: temperature_words: "kelvin" (row of 40846)
+  new: units_named_after_people: "kelvin" (row of 40846)
+  new: si_base_units: "kelvin" (row of 40846)
+  new: words_named_after_people: "kelvin" (row of 40846)
+Clash (family export): words with an id 13141 -> 13141; ids 4596 -> 4596; sizes before 2:2829 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1; after 2:2829 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1
+  groups over 8 after: 59
+new issues: none
+
+Checks: apply 13 library changes, library v411; rerun 0; npm test 54 pass; strict full export exit 0; style-case and propword-exceptions 0 changes; Checks errors 0, warnings at baseline, complete-* 0.
+
+=== Notice to _WS_ for v409 + v410 + v411 (send when Simon says) ===
+Library v411 is in the export (data/export/wordlist-game-family.json). It covers v409, v410 and v411. No pin until Simon asks.
+v409: Julia's branch (julia-category-fixes, her v366-v382, built on v365), replayed by word text on top of v408 with Simon's decisions.
+- 25 new themes: kitchen (bakeware, kitchen linens, food storage), Ancient Greece, outdoor (s'mores, hiking snacks, hiking dangers, bike gear, climbing styles, climbing holds, bike tricks, bike park), environment and earth science.
+- 14 themes merged into others and deleted: penguin_species, animals_with_a_poisonous_bite (into venomous snakes; copperhead and sidewinder moved in, Gila monster out), whale_types, seal_types, bear_types (into bears, no animal twice), soggy_places, animals_of_the_far_north, animals_of_the_far_south, kitchen_crew, famous_stretches_of_sand, chef_roles, poem_forms, renewable_sources, buried_fuels. 16 themes renamed (ids unchanged), e.g. "layers of the Earth" -> "Earth's layers".
+- four humours now holds exactly blood, phlegm, yellow bile, black bile.
+- 109 new entries (ids from 67956); where her word already existed, the existing entry is linked (kneepads, multitool, wallride, skateboard manual, helmet, pump, light/lights). Her new words are only in her themes; ratings reviewed (29 changed).
+v410: complete sets made exact. New checks complete-extra / complete-missing / complete-no-note; 32 notes rewritten as exact lists; members that are not names of set members unlinked (Chinese zodiac doggo, hound, pooch, bunny, serpent; sable in CMYK inks and Olympic ring colors; longest finger, fourth finger; mizzle; wintry mix; neck vertebrae; Xena; man-eating mares; red cattle; butterfly from butterfly life stages; New York city from US states, New York State shown "New York" instead). Hydra 6940 is now proper "Hydra" (the monster in all its themes). The Masters 44305 is a spelling alias of Masters 58912.
+v411: three set fixes. French Guiana (part of France) unlinked from South American countries and French-speaking countries; Canadian provinces holds exactly the 10 provinces (Yukon, Northwest Territories, Nunavut unlinked; Yukon keeps its other themes); Kelvin 40846 is now "kelvin" (common, like watt and newton).
+Export (v408 -> v411): themes 3,224 -> 3,235 (theme indexes shift from index 192); rows 61,029 -> 61,045 (v409) -> 61,039 (v410) -> 61,036 (v411; French Guiana, Nunavut, Northwest Territories have no theme left and drop out). v410 also dropped longest finger, fourth finger, Xena, neck vertebrae, man-eating mares, red cattle. Links 109,262 -> 109,197 (link positions shift from row 87 on). Please measure against v408.

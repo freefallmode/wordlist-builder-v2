@@ -1,0 +1,46 @@
+Fixes: French Guiana out of South America and French-speaking countries; territories out of Canadian provinces; kelvin lowercase common.
+A. notes rewritten (2):
+  south_american_countries "South American countries" (12 items): "the 12 countries and French Guiana: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela, French Guiana" -> "the 12 countries: Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela"
+  canadian_provinces "Canadian provinces" (10 items): "the 10 provinces and 3 territories: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador (Newfoundland), Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan, Northwest Territories, Nunavut, Yukon" -> "the 10 provinces: Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador (Newfoundland), Nova Scotia, Ontario, Prince Edward Island, Quebec, Saskatchewan"
+C. unlinked:
+  south_american_countries: French Guiana 35765 unlinked (part of France, not a country); groups it was in: none; still in french_speaking_countries
+  french_speaking_countries: French Guiana 35765 unlinked (part of France, not a country); groups it was in: none; still in NO THEME
+  canadian_provinces: Yukon 31816 unlinked (a territory, not a province); groups it was in: none; still in gold_rush_words, taiga, cold_things, polar_and_frozen_places
+  canadian_provinces: Northwest Territories 36214 unlinked (a territory, not a province); groups it was in: none; still in NO THEME
+  canadian_provinces: Nunavut 36213 unlinked (a territory, not a province); groups it was in: none; still in NO THEME
+E. kelvin:
+  Kelvin 40846 -> kelvin, type proper -> common; show texts {}; themes heat_science 3, temperature_words 2, units_named_after_people 1, si_base_units 2, words_named_after_people 3; aliases none
+D. complete-* check after: none
+Entries with no theme now: Northwest Territories 36214, Nunavut 36213, French Guiana 35765
+Listed, not changed:
+  an alias "Kelvin" (the scale is also called the Kelvin scale; the name is also a given name) is not added; say if wanted
+library changes 13; status set to rev 5; entries touched 5
+Checks: changed kinds: info:orphan 222 -> 225
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, theme-name 3
+clash-big (full library, > 12) after: 1: 14 (kebab, kabob*, kebabs*, shish kebab, döner kebab, doner kebab*, ..)
+clash-large (full library, 9-12) after: 60
+Committed family export equals the in-memory export of v410 before the changes: yes
+Themes 3235 -> 3235; gone none; new none; theme indexes shift from none
+Entries 61039 -> 61036; first row whose entry changed: 33054; added none; removed French Guiana 35765, Nunavut 36213, Northwest Territories 36214
+Row text changes: Kelvin -> kelvin (40846); flags changed: none
+Links 109202 -> 109197; rows whose link count changed: 1 (Yukon 31816)
+Link-index shifts: from row 29430 (Dawson City 31817) on, link positions move
+Links by theme + shown text + row: gone 10, new 5, rating changed 0
+  gone: canadian_provinces: "Yukon" (row of 31816)
+  gone: south_american_countries: "French Guiana" (row of 35765)
+  gone: french_speaking_countries: "French Guiana" (row of 35765)
+  gone: canadian_provinces: "Nunavut" (row of 36213)
+  gone: canadian_provinces: "Northwest Territories" (row of 36214)
+  gone: heat_science: "Kelvin" (row of 40846)
+  gone: temperature_words: "Kelvin" (row of 40846)
+  gone: units_named_after_people: "Kelvin" (row of 40846)
+  gone: si_base_units: "Kelvin" (row of 40846)
+  gone: words_named_after_people: "Kelvin" (row of 40846)
+  new: heat_science: "kelvin" (row of 40846)
+  new: temperature_words: "kelvin" (row of 40846)
+  new: units_named_after_people: "kelvin" (row of 40846)
+  new: si_base_units: "kelvin" (row of 40846)
+  new: words_named_after_people: "kelvin" (row of 40846)
+Clash (family export): words with an id 13141 -> 13141; ids 4596 -> 4596; sizes before 2:2829 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1; after 2:2829 3:879 4:370 5:207 6:105 7:78 8:69 9:21 10:17 11:10 12:10 14:1
+  groups over 8 after: 59
+new issues: none
