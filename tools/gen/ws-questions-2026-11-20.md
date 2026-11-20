@@ -32,3 +32,27 @@ Questions from Simon, following your field table (now recorded in wordlist-build
    - If you'll never use them, we'll stop exporting them.
 
 A table per question is ideal.
+
+## The game's answers (2026-11-20, from its code and v411)
+
+Proposals only; Simon decides. Any game change bumps its generator to g24.
+
+**1. Wordplay rules.** The game tests every other word on a level against an exact theme's rule. Category themes get no property test, so turning these into plain categories is unsafe (another word with the property gets through). Options:
+- A, cost 0.5 h: no-vowels, alphabetical, roman. Members all pass except chimpanzee.
+- B: reversible (the reverse is a library word). 16 members' reverses aren't library words (denim/mined, diaper/repaid, knits).
+- C, cost 1 h: plus-letter:@id and first-letter-changed:@id. "model" fails in animals plus a letter. @animals is too broad (it bars about 1,007 roots), so point it at a narrow species theme.
+- D, cost 2 h: zigzag and rhyming pair, approximate.
+- F, cost 1 h: a `members` rule that bars any level word whose text equals a member text. It's safe only if every root with the property is linked. Meant for homographs, acronyms, blends, places that are also words.
+Its suggestion: A, B and C now (8 of 15 themes), F for the untestable ones with exhaustive linking, and D or F for zigzag and rhyming.
+Library fixes it asked for: chimpanzee in alphabetical order; model in animals plus a letter; "fitness centre" in no vowels (inherited from gym); the duplicates in different spellings between the rhyming and zigzag themes (mishmash/mish mash, hodgepodge/hodge podge, wishy-washy/wishy washy).
+
+**2. Root regions.** Levels are the same for both dialects, so the game can't drop a word for one dialect. In v411:
+- 1,097 UK-only roots have no US alias;
+- 293 US-only roots have no UK alias;
+- 194 US-only roots have a UK alias;
+- 187 roots have neither tag.
+Recommended option A, cost 1-2 h: raise the band by +1 for a one-dialect root with no variant, and by +2 for one with neither tag. Option B, holding them out of early levels, only if A isn't enough. Library: make regional words regional aliases where an equivalent exists.
+
+**3. Text lookup.** Two live uses keep only the first root: everyday split halves and the shared-theme-word test. Accepting any root costs about 1 h. 351 texts would newly qualify as split halves. After that change, the 186 same-text flags stop mattering for splits.
+
+**4. Alias links.** Confirmed never read: by design an alias is a variant, not a word, and one level serves both dialects. The variety gain would be tiny: 8,343 of 8,437 alias links duplicate the root's own link. The other ~94 are mostly alias-as-answer cases. Using alias links would cost 1-2 days, with risks. Its recommendation: express those ~94 as root links with a `shown` text, then stop exporting alias links. That saves bytes and changes no levels.
