@@ -6,7 +6,7 @@ export const fold = s => s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase
 
 export function parseFreq(text) {
   const m = new Map();
-  for (const line of text.split('\n')) {
+  for (const line of text.split(/\r?\n/)) {   // CRLF too: a Windows checkout (core.autocrlf) must not leave '\r' on each line's last word
     const sp = line.split(' ');
     const z = +sp[0];
     if (!z) continue;
