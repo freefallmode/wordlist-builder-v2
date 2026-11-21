@@ -1,0 +1,61 @@
+Babies and birth (Body & Health): maternity ward keeps what is found in the ward (birth words out, lochia to childbirth words); duplicate crib, its cot and the monitor stub deleted; baby bottle replaces bottle; Lamaze capitalised; sippy cup out of baby milestones; fontanelle out of newborn care.
+1. maternity ward keeps what is found in the ward (people, rooms, equipment, procedures)
+  out of maternity_ward: labor 3530: a stage of the birth itself, not something in the ward (stays in babies_and_birth, childbirth_words)
+  out of maternity_ward: contractions 3532: a stage of the birth itself, not something in the ward (stays in babies_and_birth, childbirth_words)
+  out of maternity_ward: water breaking 15735: a stage of the birth itself, not something in the ward (stays in childbirth_words)
+  out of maternity_ward: crowning 15737: a stage of the birth itself, not something in the ward (stays in childbirth_words)
+  out of maternity_ward: dilation 15740: a stage of the birth itself, not something in the ward (stays in childbirth_words)
+  out of maternity_ward: placenta 3536: a part or product of the body at birth, not something in the ward (stays in babies_and_birth, organs, pregnancy_words, childbirth_words)
+  out of maternity_ward: umbilical cord 3535: a part or product of the body at birth, not something in the ward (stays in babies_and_birth, pregnancy_words, childbirth_words)
+  out of maternity_ward: meconium 3581: a part or product of the body at birth, not something in the ward (stays in babies_and_birth, childbirth_words)
+  out of maternity_ward: vernix 3582: a part or product of the body at birth, not something in the ward (stays in babies_and_birth, childbirth_words)
+  out of maternity_ward: colostrum 3580: a part or product of the body at birth, not something in the ward (stays in babies_and_birth)
+  out of maternity_ward: swaddle 3546: a verb for wrapping a baby; newborn care holds it (stays in babies_and_birth, newborn_care)
+  linked: lochia 60792 in childbirth_words (typicality 5): a word for the time after birth, beside afterbirth
+  out of maternity_ward: lochia 60792: moved to childbirth words (stays in childbirth_words)
+2. Duplicate entries
+  linked: crib 3561 in baby_gear (typicality 1): crib [baby bed] takes the place of its duplicate crib [baby]
+  deleted entry: cot 15779 [baby]: the cot alias of the duplicate crib [baby]; crib [baby bed] has cot as its own regional alias
+  deleted entry: crib 15778 [baby]: the same baby bed as crib [baby bed] 3561, which takes its link in baby gear
+  linked: baby monitor 3571 in baby_gear (typicality 2, shown "monitor"): the full term, shown short as in babies and birth
+  deleted entry: monitor 64018 [nursery audio]: a stub for baby monitor 3571, which takes its place in baby gear (LIBRARY-RULES 5: never a bare stub for one theme)
+3. babies and birth
+  linked: baby bottle 3563 in babies_and_birth (typicality 1, shown "bottle"): the baby sense, shown short
+  out of babies_and_birth: bottle 25475: the general container; baby bottle takes its place (stays in containers, things_with_necks, things_made_of_glass, glass_vessels, things_you_open, things_made_of_plastic)
+4. childbirth words
+  spelling: lamaze 15747 -> "Lamaze": named after Fernand Lamaze
+  Lamaze 15747: type "common" -> "proper": a name (the capital stays)
+5. baby milestones
+  out of baby_milestones: sippy cup 15828: an object, not a milestone (stays in baby_talk, drinking_vessels, cup_types)
+  rolling over 15805: pos "verb" -> "noun": a milestone named as an activity, like crawling and waving
+  sitting up 15806: pos "verb" -> "noun": a milestone named as an activity, like crawling and waving
+  pulling up 15813: pos "verb" -> "noun": a milestone named as an activity, like crawling and waving
+  holding head up 15816: pos "verb" -> "noun": a milestone named as an activity, like crawling and waving
+  sleeping through 15817: pos "verb" -> "noun": a milestone named as an activity, like crawling and waving
+6. newborn care
+  out of newborn_care: fontanelle 3228: a body part, not care (stays in body_parts, babies_and_birth)
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  babies_and_birth: 63 words, easy/middle/hard 26/17/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 63 words, easy/middle/hard 26/17/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  childbirth_words: 38 words, easy/middle/hard 8/16/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 39 words, easy/middle/hard 8/16/15, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  newborn_care: 37 words, easy/middle/hard 9/15/13, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 36 words, easy/middle/hard 9/15/12, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  baby_gear: 32 words, easy/middle/hard 11/12/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 32 words, easy/middle/hard 11/12/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  baby_milestones: 30 words, easy/middle/hard 9/12/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 29 words, easy/middle/hard 9/12/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  maternity_ward: 38 words, easy/middle/hard 9/14/15, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> 26 words, easy/middle/hard 6/11/9, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries deleted 3: cot 15779, crib 15778, monitor 64018
+library changes 29; entries changed 24; status set to rev 22
+Checks: changed kinds: info:sense-twin 238 -> 237
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3253 -> 3253; gone none; new none; theme indexes shift: none
+Entries 61419 -> 61416; first row whose entry changed: 15136 (changing table 15780, was 15778); rows that moved: 46280; added none; removed 15778 (row 15136), 15779 (row 15137), 64018 (row 59051)
+root -> alias rows 0: none
+Links 101182 -> 101169; rows whose link count changed: 17
+Link-index shifts: from row 3202 (philtrum 3229) on, link positions move
+Rows whose text changed: Lamaze 15747 (was "lamaze")
+Root links by theme + shown text + row: gone 18, new 5, rating changed 0
+  gone: newborn_care: "fontanelle" (3228), maternity_ward: "labor" (3530), maternity_ward: "contractions" (3532), maternity_ward: "umbilical cord" (3535), maternity_ward: "placenta" (3536), maternity_ward: "swaddle" (3546), maternity_ward: "colostrum" (3580), maternity_ward: "meconium" (3581), maternity_ward: "vernix" (3582), maternity_ward: "water breaking" (15735), maternity_ward: "crowning" (15737), maternity_ward: "dilation" (15740), childbirth_words: "lamaze" (15747), baby_gear: "crib" (15778), baby_milestones: "sippy cup" (15828), babies_and_birth: "bottle" (25475), maternity_ward: "lochia" (60792), baby_gear: "monitor" (64018)
+  new: baby_gear: "crib" (3561), babies_and_birth: "bottle" (3563), baby_gear: "monitor" (3571), childbirth_words: "Lamaze" (15747), childbirth_words: "lochia" (60792)
+  rating: none
+new issues: none
