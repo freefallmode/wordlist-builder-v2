@@ -1,0 +1,105 @@
+Nutrition (Body & Health): vitamins keep vitamins (vitamin C in; B4, B8, B10, B11, B13, B15, B17, P, choline and multivitamin out); cobalt [metal] in dietary minerals and chemical elements; groups of minerals out of dietary minerals; non-food-groups out of food groups; diets and single vitamins out of nutrition; monkey bread tree and sea grass out of superfoods; new theme supplements; feeling tired loses its groups.
+1. feeling tired (v424): a theme of synonyms takes no groups (LIBRARY-RULES 5)
+  group dropped in feeling_tired: sleepy 3686 = drowsy 3687: feeling tired is a theme of synonyms
+  group dropped in feeling_tired: lethargic 32933 = listless 32934: feeling tired is a theme of synonyms
+2. vitamins
+  linked: vitamin C 15528 in vitamins (typicality 1, may contain the theme name (nameOkIn)): one of the best-known vitamins; it was missing
+  group in vitamins: vitamin C 15528 = ascorbic acid 40507: same answer: ascorbic acid is vitamin C
+  out of vitamins: vitamin B4 16644: not a vitamin: an old or unofficial name for another substance (now in no theme: not exported)
+  out of vitamins: vitamin B8 16645: not a vitamin: an old or unofficial name for another substance (now in no theme: not exported)
+  out of vitamins: vitamin B10 16646: not a vitamin: an old or unofficial name for another substance (now in no theme: not exported)
+  out of vitamins: vitamin B11 16647: not a vitamin: an old or unofficial name for another substance (now in no theme: not exported)
+  out of vitamins: vitamin B13 16648: not a vitamin: an old or unofficial name for another substance (now in no theme: not exported)
+  out of vitamins: vitamin B15 16649: not a vitamin: an old or unofficial name for another substance (now in no theme: not exported)
+  out of vitamins: vitamin P 16643: not a vitamin: an old or unofficial name for another substance (now in no theme: not exported)
+  out of vitamins: vitamin B17 16650: not a vitamin: the name a disproven cancer cure (laetrile) is sold under (now in no theme: not exported)
+  linked: choline 16641 in nutrients (typicality 4): an essential nutrient, not classed as a vitamin
+  out of vitamins: choline 16641: an essential nutrient, not classed as a vitamin (stays in nutrients)
+  new theme: supplements "supplements" under nutrition, after healthy_snacks (pop 3, ident 2, note "multivitamin, fish oil, vitamin D, protein powder, zinc"): no theme had supplements
+  linked: multivitamin 16639 in supplements (typicality 1): a pill of several vitamins, not a vitamin (never a mixture)
+  out of vitamins: multivitamin 16639: a pill of several vitamins, not a vitamin (never a mixture) (stays in supplements)
+3. dietary minerals
+  linked: cobalt 31702 in dietary_minerals (typicality 5): the metal sense of cobalt
+  out of dietary_minerals: cobalt 63: the colour sense; cobalt [metal] takes its place (stays in shades_of_blue, colors, words_from_german, jewel_tones, blue_things, chemical_elements)
+  linked: cobalt 31702 in chemical_elements (typicality 3): the metal sense of cobalt
+  out of chemical_elements: cobalt 63: the colour sense; cobalt [metal] takes its place (stays in shades_of_blue, colors, words_from_german, jewel_tones, blue_things)
+  out of dietary_minerals: trace elements 62760: a group of minerals, not a mineral (stays in nutrition)
+  out of dietary_minerals: electrolyte 3863: a group of minerals, not a mineral (stays in nutrition, chemistry_words, nutrients)
+4. food groups
+  out of food_groups: sugar 3830: not a food group (stays in nutrition, nutrients, baking_ingredients, sweeteners, in_the_pantry, words_from_arabic, sweet_foods, things_that_melt, white_things, wedding_anniversaries, things_you_pour)
+  out of food_groups: candy 607: not a food group (stays in desserts_and_sweets, halloween, hidden_names, words_from_arabic, words_from_persian, sweet_foods, movie_theater, holi, confectionery, in_a_pocket)
+  out of food_groups: junk food 3871: not a food group (stays in nutrition, bad_habits)
+  out of food_groups: empty calories 3873: not a food group (stays in nutrition)
+5. nutrition
+  out of nutrition: vegan 3837: a diet, typicality 5 here; diet types holds it (stays in diet_types)
+  out of nutrition: vegetarian 3838: a diet, typicality 5 here; diet types holds it (stays in diet_types)
+  out of nutrition: keto 3854: a diet, typicality 5 here; diet types holds it (stays in diet_types)
+  out of nutrition: ketogenic diet 3855: a diet, typicality 5 here; diet types holds it (stays in diet_types)
+  out of nutrition: paleo 3856: a diet, typicality 5 here; diet types holds it (stays in diet_types)
+  out of nutrition: intermittent fasting 3853: a diet, typicality 5 here; diet types holds it (stays in healthy_habits, diet_types)
+  out of nutrition: thiamine 3886: a single vitamin, typicality 5 here; vitamins holds it (stays in vitamins)
+  out of nutrition: riboflavin 3887: a single vitamin, typicality 5 here; vitamins holds it (stays in vitamins)
+  out of nutrition: niacin 3888: a single vitamin, typicality 5 here; vitamins holds it (stays in vitamins)
+  kin: keto 3854 <-> ketosis 3870: one word family; the nutrition group kept them apart in a level before
+6. superfoods
+  out of superfoods: monkey bread tree 1662: the baobab tree, not a food (baobab stays) (stays in desert_plants, dry_season, savanna, safari_words, african_remedies, african_landscape)
+  out of superfoods: sea grass 1291: seagrass is not eaten (stays in seaweeds, foraging_finds, water_plants, rock_pool, beachcombing_finds, coastal_plants, ocean, beach, chip_flavors, sea_life, slippery_things, umami_foods, things_that_float, green_things)
+7. New theme: supplements
+  linked: vitamin C 15528 in supplements (typicality 1): taken as a supplement
+  linked: vitamin D 16618 in supplements (typicality 1): taken as a supplement
+  linked: iron 16651 in supplements (typicality 2): taken as a supplement
+  linked: zinc 207 in supplements (typicality 3): taken as a supplement
+  linked: magnesium 16652 in supplements (typicality 3): taken as a supplement
+  linked: melatonin 3700 in supplements (typicality 2): taken as a supplement
+  linked: collagen 14353 in supplements (typicality 2): taken as a supplement
+  linked: probiotic 3835 in supplements (typicality 2): taken as a supplement
+  linked: ginseng 15563 in supplements (typicality 3): taken as a supplement
+  linked: echinacea 15532 in supplements (typicality 3): taken as a supplement
+  linked: biotin 16637 in supplements (typicality 3): taken as a supplement
+  linked: creatine 3648 in supplements (typicality 2): taken as a supplement
+  linked: spirulina 8949 in supplements (typicality 3): taken as a supplement
+  linked: ginkgo 1665 in supplements (typicality 4): taken as a supplement
+  linked: St John's wort 30655 in supplements (typicality 4): taken as a supplement
+  new word: fish oil 68104 (noun, common, familiarity 2): a common supplement
+  linked: fish oil 68104 in supplements (typicality 1): taken as a supplement
+  new word: protein powder 68105 (noun, common, familiarity 2): a common supplement
+  linked: protein powder 68105 in supplements (typicality 2): taken as a supplement
+  new word: glucosamine 68106 (noun, common, familiarity 3): a common supplement
+  linked: glucosamine 68106 in supplements (typicality 3): taken as a supplement
+  new word: evening primrose oil 68107 (noun, common, familiarity 4): a common supplement
+  linked: evening primrose oil 68107 in supplements (typicality 4): taken as a supplement
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  nutrition: 72 words, easy/middle/hard 13/21/38, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> 63 words, easy/middle/hard 13/21/29, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  vitamins: 40 words, easy/middle/hard 5/9/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 31 words, easy/middle/hard 6/8/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  dietary_minerals: 25 words, easy/middle/hard 8/6/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 23 words, easy/middle/hard 8/5/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  food_groups: 25 words, easy/middle/hard 10/9/6, theme difficulty 1, 4th-easiest band 1, gap 0 -> 21 words, easy/middle/hard 10/9/2, theme difficulty 1, 4th-easiest band 1, gap 0
+  nutrients: 37 words, easy/middle/hard 8/8/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 38 words, easy/middle/hard 8/8/22, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  superfoods: 43 words, easy/middle/hard 4/14/25, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 41 words, easy/middle/hard 4/14/23, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  supplements: no theme -> 20 words, easy/middle/hard 6/9/5, theme difficulty 2, 4th-easiest band 2, gap 0
+  feeling_tired: 18 words, easy/middle/hard 6/7/5, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 18 words, easy/middle/hard 6/7/5, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  food groups keeps few hard words: the hard ones were the words that are not food groups. vitamins stays hard-heavy: most real vitamin names are technical.
+Entries left in no theme (kept in the library, not exported) 8: vitamin B4 16644, vitamin B8 16645, vitamin B10 16646, vitamin B11 16647, vitamin B13 16648, vitamin B15 16649, vitamin P 16643, vitamin B17 16650
+library changes 62; entries changed 49; status set to rev 40
+Checks: changed kinds: info:orphan 298 -> 306
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3253 -> 3254; gone none; new supplements; theme indexes shift: from index 1275 ("supplements", was "body_movement")
+Entries 61423 -> 61419; first row whose entry changed: 15941 (iron 16651, was vitamin P 16643); rows that moved: 45474; added fish oil 68104 (row 61415), protein powder 68105 (row 61416), glucosamine 68106 (row 61417), evening primrose oil 68107 (row 61418); removed vitamin P 16643 (row 15941), vitamin B4 16644 (row 15942), vitamin B8 16645 (row 15943), vitamin B10 16646 (row 15944), vitamin B11 16647 (row 15945), vitamin B13 16648 (row 15946), vitamin B15 16649 (row 15947), vitamin B17 16650 (row 15948)
+root -> alias rows 0: none
+Links 101230 -> 101225; rows whose link count changed: 34
+Link-index shifts: from row 63 (azure 64) on, link positions move
+Root links by theme + shown text + row: gone 29, new 24, rating changed 0
+  gone: dietary_minerals: "cobalt" (63), chemical_elements: "cobalt" (63), food_groups: "candy" (607), superfoods: "sea grass" (1291), superfoods: "monkey bread tree" (1662), food_groups: "sugars" (3830), nutrition: "vegan" (3837), nutrition: "vegetarian" (3838), nutrition: "intermittent fasting" (3853), nutrition: "keto" (3854), nutrition: "ketogenic diet" (3855), nutrition: "paleo" (3856), dietary_minerals: "electrolytes" (3863), food_groups: "junk" (3871), food_groups: "empty calories" (3873), nutrition: "thiamine" (3886), nutrition: "riboflavin" (3887), nutrition: "niacin" (3888), vitamins: "multivitamin" (16639), vitamins: "choline" (16641), vitamins: "vitamin P" (16643), vitamins: "b4" (16644), vitamins: "B8" (16645), vitamins: "B10" (16646), vitamins: "B11" (16647), vitamins: "B13" (16648), vitamins: "B15" (16649), vitamins: "B17" (16650), dietary_minerals: "trace elements" (62760)
+  new: supplements: "zinc" (207), supplements: "ginkgo" (1665), supplements: "creatine" (3648), supplements: "melatonin" (3700), supplements: "probiotic" (3835), supplements: "spirulina" (8949), supplements: "collagen" (14353), vitamins: "vitamin C" (15528), supplements: "vitamin C" (15528), supplements: "echinacea" (15532), supplements: "ginseng" (15563), supplements: "vitamin D" (16618), supplements: "biotin" (16637), supplements: "multivitamin" (16639), nutrients: "choline" (16641), supplements: "iron" (16651), supplements: "magnesium" (16652), supplements: "St John's wort" (30655), dietary_minerals: "cobalt" (31702), chemical_elements: "cobalt" (31702), supplements: "fish oil" (68104), supplements: "protein powder" (68105), supplements: "glucosamine" (68106), supplements: "evening primrose oil" (68107)
+  rating: none
+new issues: none
+
+=== Notice to _WS_ for v425 (send when Simon says) ===
+Library v425 is in the export (data/export/wordlist-game-family.json). It cleans up the nutrition folder (Body & Health > nutrition) and adds one theme. No pin until Simon asks.
+- vitamins: vitamin C joins (same group as ascorbic acid). vitamin B4, B8, B10, B11, B13, B15, B17 and vitamin P left (not vitamins); they now have no theme and leave the export. choline moved to nutrients, multivitamin to the new supplements theme.
+- New theme supplements (under nutrition, after healthy snacks): 20 words, 6 easy, 9 middle and 5 hard; pop 3, ident 2. 4 new entries: fish oil, protein powder, glucosamine, evening primrose oil.
+- cobalt in dietary minerals and chemical elements is now cobalt [metal] 31702 (was cobalt [color] 63).
+- Out of their themes: trace elements and electrolyte (dietary minerals); sugar, candy, junk food and empty calories (food groups); vegan, vegetarian, keto, ketogenic diet, paleo, intermittent fasting, thiamine, riboflavin and niacin (nutrition, where they were typicality 5); monkey bread tree and sea grass (superfoods). All stay in other themes.
+- Groups: keto = ketogenic diet = ketosis in nutrition is gone (keto and ketosis are now kin); feeling tired (v424) has no groups any more (sleepy = drowsy, lethargic = listless), as a theme of synonyms takes none.
+Export v424 -> v425: themes 3,253 -> 3,254 (supplements new); theme indexes shift from index 1,275 (supplements, was body movement). Rows 61,423 -> 61,419, shifting from row 15,941 (8 rows gone, 4 new rows at the end, 61,415-61,418); links 101,230 -> 101,225, link positions shift from row 63 (azure, right after cobalt).
