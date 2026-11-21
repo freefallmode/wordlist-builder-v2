@@ -1,0 +1,27 @@
+The difficulty spread of words for noise and eyesight (v421 themes): three hard words for noise; two easy and two hard eyesight words.
+1. words for noise: hard words (it had 3 easy, 7 middle, 1 hard)
+2. eyesight: easy and hard words (it had 5 easy, 6 middle, 3 hard)
+Entries left in no theme (kept in the library, not exported) 0: none
+library changes 0; entries changed 0; status set to rev 0
+Checks: changed kinds: none
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
+Themes 3253 -> 3253; gone none; new none; theme indexes shift: none
+Entries 61439 -> 61439; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none
+Links 101285 -> 101285; rows whose link count changed: 0
+Link-index shifts: none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone: none
+  new: none
+  rating: none
+new issues: none
+
+=== Notice to _WS_ for v422 (send when Simon says; send with the v421 notice above it in batch421-changes.txt) ===
+Library v422 is in the export (data/export/wordlist-game-family.json). It evens the difficulty spread of two v421 themes. No pin until Simon asks.
+- words for noise gains three hard words: brouhaha, hurly-burly, pother.
+- eyesight gains tunnel vision and lazy eye (easy) and presbyopia and visual acuity (hard).
+- 6 new rows at the end (68083-68088); one new break point (presbyopia=pres-by-opia).
+Export v421 -> v422: themes 3,253 (no change, no theme index shift); rows 61,433 -> 61,439, new rows only at the end (no row shift); links 101,278 -> 101,285, link positions shift from row 26,241 (flummox, after brouhaha).
+Also since v420: the export's zipf column now has values for 679 words that Windows exports left at 0 (Zurich, New Zealand, forget-me-not ...): a library-tool fix, so more everyday split halves may qualify.

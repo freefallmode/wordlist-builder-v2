@@ -152,6 +152,9 @@ test('zipf combines phrases', () => {
   assert.equal(zipf('ice'), 5);
   assert.equal(zipf('ice cream'), 4.7);
   assert.equal(zipf('ice zzz'), null);
+  setFreq(parseFreq('50 ice cream\r\n40 cone\r\n'));   // a Windows checkout of data/freq-en.txt: the last word of a line still counts
+  assert.equal(zipf('cream'), 5);
+  assert.equal(zipf('cone'), 4);
 });
 
 test('export format 4: shown text, display form and clash ids travel with the link', () => {
