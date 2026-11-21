@@ -1,0 +1,252 @@
+The senses branch (Body & Health > senses): senses a folder, new sense organs and words for noise, sight words renamed eyesight, the sense themes trimmed to their own words, ear and eye parts trimmed; spy and longsighted fixed.
+1. senses becomes a folder; new theme sense organs
+  new theme: sense_organs "sense organs" under senses, after the_five_senses (pop 2, ident 2, complete): the five sense organs, a set every child learns beside the five senses (they were in senses)
+  linked: eye 3185 in sense_organs (typicality 1): a sense organ
+  linked: ear 3186 in sense_organs (typicality 1): a sense organ
+  linked: nose 3183 in sense_organs (typicality 1): a sense organ
+  linked: tongue 3206 in sense_organs (typicality 1): a sense organ
+  linked: skin 3189 in sense_organs (typicality 2): a sense organ
+  linked: blind 3311 in sight_words (typicality 1): how well you see (was in senses)
+  linked: peripheral vision 3321 in sight_words (typicality 3): how well you see (was in senses)
+  out of senses: sight 38: senses is now a folder with no words (stays in the_five_senses, sight_words, rhymes_with_light)
+  out of senses: hearing 39: senses is now a folder with no words (stays in the_five_senses)
+  out of senses: smell 40: senses is now a folder with no words (stays in the_five_senses, smell_words)
+  out of senses: taste 41: senses is now a folder with no words (stays in the_five_senses, mouth_actions)
+  out of senses: touch 42: senses is now a folder with no words (stays in the_five_senses, touch_words)
+  out of senses: nose 3183: senses is now a folder with no words (stays in body_parts, face, smell_words, things_that_drip, sense_organs)
+  out of senses: eye 3185: senses is now a folder with no words (stays in body_parts, face, paired_body_parts, organs, sounds_like_a_letter, palindromes, things_that_come_in_pairs, things_you_open, sense_organs)
+  out of senses: ear 3186: senses is now a folder with no words (stays in body_parts, paired_body_parts, things_with_holes, bullfighting_words, things_that_pop, things_that_come_in_pairs, things_that_ring, sense_organs)
+  out of senses: skin 3189: senses is now a folder with no words (stays in body_parts, animal_coverings, skin_words, organs, sense_organs)
+  out of senses: tongue 3206: senses is now a folder with no words (stays in body_parts, organs, butcher_shop, pink_things, sense_organs)
+  out of senses: nostril 3211: senses is now a folder with no words (stays in body_parts, parts_of_a_horse, face, paired_body_parts)
+  out of senses: vision 3309: senses is now a folder with no words (stays in sight_words)
+  out of senses: eyesight 3310: senses is now a folder with no words (stays in sight_words, eye_blank)
+  out of senses: blind 3311: senses is now a folder with no words (stays in sight_words)
+  out of senses: deaf 3312: senses is now a folder with no words (stays in hearing_words)
+  out of senses: sniff 3313: senses is now a folder with no words (stays in smell_words, body_noises, ways_of_breathing)
+  out of senses: sixth sense 3314: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: taste buds 3315: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: eardrum 3316: senses is now a folder with no words (stays in paired_body_parts, ear_parts, ends_with_rum)
+  out of senses: retina 3317: senses is now a folder with no words (stays in eye_parts)
+  out of senses: cornea 3318: senses is now a folder with no words (stays in eye_parts)
+  out of senses: pupil 3319: senses is now a folder with no words (stays in eye_parts, starts_with_pup, starts_with_a_pet)
+  out of senses: night vision 3320: senses is now a folder with no words (stays in superpowers)
+  out of senses: peripheral vision 3321: senses is now a folder with no words (stays in sight_words)
+  out of senses: scent 3322: senses is now a folder with no words (stays in smell_words, homophones)
+  out of senses: aroma 3323: senses is now a folder with no words (stays in smell_words, wine_words, tasting_notes)
+  out of senses: flavor 3324: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: texture 3326: senses is now a folder with no words (stays in touch_words)
+  out of senses: sensation 3327: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: perception 3328: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: sensory 3329: senses is now a folder with no words (stays in body_systems)
+  out of senses: optic 3335: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: receptor 3337: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: stimulus 3338: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: synesthesia 3339: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: echolocation 3341: senses is now a folder with no words (stays in bats, acoustics_words)
+  out of senses: perfect pitch 3342: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: balance 3343: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: olfaction 3344: senses is now a folder with no words (stays in smell_words)
+  out of senses: gustation 3345: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: proprioception 3347: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: thermoception 3348: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: nociception 3349: senses is now a folder with no words (now in no theme: not exported)
+  out of senses: inner ear 3350: senses is now a folder with no words (stays in ear_parts)
+  out of senses: eyeball 3351: senses is now a folder with no words (stays in sight_words, eye_parts, ways_of_looking, things_that_reflect, blank_ball, eye_blank)
+  out of senses: earwax 3352: senses is now a folder with no words (stays in ear_parts)
+  out of senses: audition 50101: senses is now a folder with no words (now in no theme: not exported)
+  senses: now a group (folder) of the sense themes, no words
+2. sight words -> eyesight
+  sight_words: name "sight words" -> "eyesight": "sight words" is also the name of the reading words children learn by sight
+  sight_words: lang true -> false: the slang that made it language-specific is out
+  sight_words: note "" -> "how well people see: blind, nearsighted, farsighted, blurry, color-blind, double vision, 20/20 vision, eagle-eyed": what the theme holds now
+  sight_words: pop 2 -> 3: a narrower, ordinary theme now
+  out of sight_words: see 14649: a looking verb: ways of looking and things your eyes do hold them (stays in sounds_like_a_letter, things_you_do_with_your_eyes)
+  out of sight_words: look 14650: a looking verb: ways of looking and things your eyes do hold them (stays in things_you_do_with_your_eyes)
+  out of sight_words: watch 14651: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: stare 14652: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, rhymes_with_bear, things_you_do_with_your_eyes)
+  out of sight_words: glance 14653: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: gaze 14654: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: glimpse 14655: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: peek 14656: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: squint 14657: a looking verb: ways of looking and things your eyes do hold them (stays in facial_expressions, ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: blink 14658: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: wink 14659: a looking verb: ways of looking and things your eyes do hold them (stays in facial_expressions, things_you_do_with_your_eyes)
+  out of sight_words: glare 14660: a looking verb: ways of looking and things your eyes do hold them (stays in facial_expressions, ways_of_looking, rhymes_with_bear)
+  out of sight_words: peer 14661: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: gawk 14662: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: ogle 14663: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: spot 14665: a looking verb: ways of looking and things your eyes do hold them (stays in things_you_do_with_your_eyes)
+  out of sight_words: notice 14666: a looking verb: ways of looking and things your eyes do hold them (stays in ends_with_ice, things_you_do_with_your_eyes)
+  out of sight_words: behold 14667: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: scan 14668: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: scrutinize 14669: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: peruse 14671: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: view 14672: a looking verb: ways of looking and things your eyes do hold them (stays in rhymes_with_blue, things_you_do_with_your_eyes)
+  out of sight_words: observe 7497: a looking verb: ways of looking and things your eyes do hold them (stays in scientific_method, ways_of_looking, things_you_do_with_your_eyes)
+  out of sight_words: espy 14689: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: descry 14690: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: gander 50242: a looking verb: ways of looking and things your eyes do hold them (stays in ways_of_looking)
+  out of sight_words: eyeball 3351: a looking verb: ways of looking and things your eyes do hold them (stays in eye_parts, ways_of_looking, things_that_reflect, blank_ball, eye_blank)
+  out of sight_words: discern 14691: a seeing word, not about how well you see (stays in starts_with_disc)
+  out of sight_words: perceive 14692: a seeing word, not about how well you see (now in no theme: not exported)
+  out of sight_words: visualize 14693: a seeing word, not about how well you see (now in no theme: not exported)
+  out of sight_words: clock 14688: a seeing word, not about how well you see (now in no theme: not exported)
+  out of sight_words: visible 14673: a seeing word, not about how well you see (now in no theme: not exported)
+  out of sight_words: sight 38: the theme name's own word (stays in the_five_senses, rhymes_with_light)
+  out of sight_words: eyesight 3310: the theme name's own word (stays in eye_blank)
+  out of sight_words: vision 3309: the theme name's own word (now in no theme: not exported)
+  out of sight_words: witness 4192: a person, a camera view, rhyming slang: not eyesight (stays in law_and_order, courtroom_words, people_at_a_trial)
+  out of sight_words: lookout 14687: a person, a camera view, rhyming slang: not eyesight (stays in pirate_crew, ship_crew, sightseeing_words)
+  out of sight_words: bird's-eye view 13140: a person, a camera view, rhyming slang: not eyesight (stays in camera_shots)
+  out of sight_words: butcher's 131: a person, a camera view, rhyming slang: not eyesight (now in no theme: not exported)
+  linked: spy 14664 in ways_of_looking (typicality 3): the looking verb (to spy, catch sight of)
+  out of ways_of_looking: spy 16942: the secret-agent spy, not a way of looking (stays in no_vowels, spy_words)
+  pos: spy 16942 [agent] verb -> noun: the secret agent
+  out of sight_words: spy 14664: a looking verb; moves to ways of looking (stays in ways_of_looking)
+  linked: shufti 14685 in ways_of_looking (typicality 4): UK slang for a look, like gander and squiz
+  linked: dekko 14686 in ways_of_looking (typicality 4): UK slang for a look, like gander and squiz
+  out of sight_words: shufti 14685: UK slang for a look; moves to ways of looking (stays in ways_of_looking)
+  out of sight_words: dekko 14686: UK slang for a look; moves to ways of looking (stays in ways_of_looking)
+  typicality: nearsighted 14677 in sight_words 3 -> 1: a first eyesight word
+  typicality: farsighted 14679 in sight_words 3 -> 1: a first eyesight word
+  typicality: blurry 14674 in sight_words 3 -> 2: typical
+  typicality: blurred 14675 in sight_words 3 -> 2: typical (grouped with blurry)
+  typicality: myopic 14678 in sight_words 4 -> 3: the medical word for nearsighted
+  typicality: hyperopic 14681 in sight_words 5 -> 4: the medical word for farsighted, specialist
+  typicality: eagle-eyed 14684 in sight_words 4 -> 3: very good eyesight
+  new word: color-blind 68072 (adjective, familiarity 2): unable to tell some colors apart (Merriam-Webster headword color-blind)
+  new alias: colour-blind 68073, spelling [UK] of color-blind 68072 (familiarity 2): the UK spelling (Oxford)
+  linked: color-blind 68072 in sight_words (typicality 2): an eyesight condition
+  new word: double vision 68074 (noun, familiarity 2): seeing two of everything
+  linked: double vision 68074 in sight_words (typicality 2): an eyesight problem
+  new word: astigmatism 68075 (noun, familiarity 3): blurred sight from an unevenly curved eye
+  linked: astigmatism 68075 in sight_words (typicality 3): an eyesight condition
+  new word: 20/20 vision 68076 (noun, familiarity 3): normal sharp eyesight
+  linked: 20/20 vision 68076 in sight_words (typicality 2): normal eyesight
+  alias kind: longsighted 14680 [UK] of farsighted 14679 spelling -> regional: the UK word, not a spelling (as shortsighted 14676 is for nearsighted)
+3. hearing words
+  hearing_words: note "" -> "hearing and listening: hear, listen, deaf, overhear, eavesdrop, earshot, hearing aid, tinnitus": what the theme holds now
+  hearing_words: ident 3 -> 2: without the sound words, four members (hear, listen, deaf, hearing aid) name it at once
+  out of hearing_words: loud 11136: a sound quality: sound qualities holds it (stays in dynamics_markings, sound_qualities, opposites)
+  out of hearing_words: quiet 14698: a sound quality: sound qualities holds it (stays in sound_qualities, opposites)
+  out of hearing_words: deafening 14706: a sound quality: sound qualities holds it (stays in sound_qualities)
+  out of hearing_words: muffled 14709: a sound quality: sound qualities holds it (stays in sound_qualities)
+  out of hearing_words: timbre 6094: a sound quality: sound qualities holds it (stays in music_words, music_terms, acoustics_words, sound_qualities)
+  out of hearing_words: decibel 14711: a word about sound: acoustics words holds it (stays in acoustics_words, units_named_after_people)
+  out of hearing_words: hertz 41873: a word about sound: acoustics words holds it (stays in units_named_after_people, metric_units, acoustics_words)
+  out of hearing_words: echo 14701: a word about sound: acoustics words holds it (stays in words_from_mythology, acoustics_words)
+  out of hearing_words: ultrasound 3537: a word about sound: acoustics words holds it (stays in babies_and_birth, medical_tests, pregnancy_words, maternity_ward, acoustics_words, vet_clinic)
+  out of hearing_words: infrasound 14721: a word about sound: acoustics words holds it (stays in acoustics_words)
+  out of hearing_words: resonance 14726: a word about sound: acoustics words holds it (stays in acoustics_words)
+  out of hearing_words: volume 14700: a word about sound: acoustics words holds it (stays in acoustics_words)
+  out of hearing_words: acoustic 14714: a word about sound: acoustics words holds it (stays in acoustics_words)
+  out of hearing_words: pitch 14710: a second copy of pitch [music] 6069 / frequency [radio] 35258, which acoustics words holds (now in no theme: not exported)
+  out of hearing_words: frequency 14723: a second copy of pitch [music] 6069 / frequency [radio] 35258, which acoustics words holds (now in no theme: not exported)
+  out of hearing_words: sound 14696: a word about sound, not hearing (stays in fast_things)
+  out of hearing_words: noise 14697: a word about sound, not hearing (now in no theme: not exported)
+  out of hearing_words: audio 14713: a word about sound, not hearing (now in no theme: not exported)
+  out of hearing_words: sonic 14718: a word about sound, not hearing (stays in fast_things, blue_things, starts_with_son)
+  out of hearing_words: amplify 14724: a word about sound, not hearing (now in no theme: not exported)
+  out of hearing_words: reverberate 14725: a word about sound, not hearing (now in no theme: not exported)
+  out of hearing_words: hush 14727: a word about sound, not hearing (stays in quiet_things)
+  out of hearing_words: din 14728: a word for noise: moves to words for noise (now in no theme: not exported)
+  out of hearing_words: racket 14729: a word for noise: moves to words for noise (now in no theme: not exported)
+  out of hearing_words: cacophony 14730: a word for noise: moves to words for noise (now in no theme: not exported)
+  out of hearing_words: whisper 14699: speaking, law, audio gear: not hearing (stays in ways_of_speaking, quiet_things, voice_sounds, mouth_actions)
+  out of hearing_words: hearsay 14735: speaking, law, audio gear: not hearing (stays in courtroom_words)
+  out of hearing_words: earphones 7333: speaking, law, audio gear: not hearing (stays in audio_gear, gadgets, wearable_tech, things_that_run_on_batteries)
+  group in hearing_words: deaf 3312 = stone deaf 14717: stone deaf is a stronger form of deaf: one answer (LIBRARY-RULES Overlap)
+4. words for noise (new)
+  new theme: words_for_noise "words for noise" under synonyms, after words_for_old (pop 2, ident 2): synonyms of noise, beside words for bad, old, strange (din, racket and cacophony were in hearing words)
+  linked: din 14728 in words_for_noise (typicality 1): loud noise
+  linked: racket 14729 in words_for_noise (typicality 1): loud noise
+  linked: cacophony 14730 in words_for_noise (typicality 3): harsh mixed noise
+  linked: hubbub 27838 in words_for_noise (typicality 2): noisy busy sound
+  linked: hullabaloo 27797 in words_for_noise (typicality 3): noisy fuss
+  linked: rumpus 67075 in words_for_noise (typicality 3): noisy disturbance
+  new word: uproar 68077 (noun, familiarity 2): loud noisy disturbance
+  linked: uproar 68077 in words_for_noise (typicality 1): loud noise
+  new word: commotion 68078 (noun, familiarity 2): noisy confusion
+  linked: commotion 68078 in words_for_noise (typicality 2): noisy confusion
+  new word: ruckus 68079 (noun, familiarity 3): noisy disturbance (common in the US)
+  linked: ruckus 68079 in words_for_noise (typicality 2): noisy disturbance
+  new word: clamor 68080 (noun, familiarity 3): loud continuous noise (US spelling)
+  new alias: clamour 68081, spelling [UK] of clamor 68080 (familiarity 3): the UK spelling
+  linked: clamor 68080 in words_for_noise (typicality 2): loud noise
+  new word: tumult 68082 (noun, familiarity 3): loud confused noise
+  linked: tumult 68082 in words_for_noise (typicality 3): loud confused noise
+5. smell words
+  smell_words: note "" -> "words for smells and smelling: scent, aroma, odor, stench, whiff, sniff, musty, pungent": what the theme holds now
+  out of smell_words: nose 3183: the organ: sense organs holds it (stays in body_parts, face, things_that_drip, sense_organs)
+  out of smell_words: perfume 3740: a thing, not a word for a smell (stays in personal_care, in_a_handbag, valentine_s_day, things_that_smell_good, toiletries)
+  out of smell_words: musk 14759: a thing, not a word for a smell (stays in middle_eastern_grooming, perfume_notes, middle_eastern_scents)
+  out of smell_words: incense 14760: a thing, not a word for a smell (stays in bazaar, middle_eastern_scents, day_of_the_dead)
+  out of smell_words: sniffer dog 9459: a thing, not a word for a smell (stays in working_animals)
+  out of smell_words: smelling salts 14766: a thing, not a word for a smell (stays in medicine_cabinet, in_a_handbag)
+  out of smell_words: scratch and sniff 14765: a thing, not a word for a smell (now in no theme: not exported)
+  out of smell_words: nasal 14764: a voice quality / crying, not smelling (stays in sound_qualities)
+  out of smell_words: sniffle 14775: a voice quality / crying, not smelling (stays in body_noises, ways_of_crying)
+6. touch words
+  touch_words: note "" -> "touching and feeling: feel, stroke, pat, tickle, pinch, rub, tingle, numb, goosebumps": what the theme holds now
+  linked: hard 14803 in texture_words (typicality 2): a texture (was in touch words only)
+  linked: sticky 14804 in texture_words (typicality 2): a texture (was in touch words only)
+  linked: slippery 14809 in texture_words (typicality 2): a texture (was in touch words only)
+  linked: gooey 14825 in texture_words (typicality 3): a texture (was in touch words only)
+  linked: clammy 14827 in texture_words (typicality 4): a texture (was in touch words only)
+  group in texture_words: sticky 14804 = tacky 14826: sticky and tacky are one answer
+  out of touch_words: soft 11137: a texture: texture words holds the textures (stays in texture_words, opposites)
+  out of touch_words: rough 14801: a texture: texture words holds the textures (stays in ough_words, texture_words, opposites)
+  out of touch_words: smooth 14802: a texture: texture words holds the textures (stays in texture_words, opposites)
+  out of touch_words: hard 14803: a texture: texture words holds the textures (stays in opposites, texture_words)
+  out of touch_words: sticky 14804: a texture: texture words holds the textures (stays in hot_weather_words, words_for_hot, hidden_insects, texture_words)
+  out of touch_words: slimy 14805: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: fuzzy 14806: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: prickly 14807: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: bumpy 14808: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: slippery 14809: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: squishy 14810: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: velvety 14821: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: silky 14822: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: gritty 14823: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: coarse 14824: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: gooey 14825: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: tacky 14826: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: clammy 14827: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: spongy 14828: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: leathery 14829: a texture: texture words holds the textures (stays in texture_words)
+  out of touch_words: fleecy 14830: a texture: texture words holds the textures (now in no theme: not exported)
+  out of touch_words: abrasive 14831: a texture: texture words holds the textures (now in no theme: not exported)
+  out of touch_words: sandpapery 14842: a texture: texture words holds the textures (now in no theme: not exported)
+  out of touch_words: nubbly 14843: a texture: texture words holds the textures (now in no theme: not exported)
+  out of touch_words: wet 14811: a texture: texture words holds the textures (stays in opposites)
+  out of touch_words: grope 14820: a sexual sense (now in no theme: not exported)
+  out of touch_words: fondle 14835: a sexual sense (now in no theme: not exported)
+  out of touch_words: feel up 14837: a sexual sense (now in no theme: not exported)
+  out of touch_words: mechanoreceptor 60780: a specialist term (now in no theme: not exported)
+  out of touch_words: paresthesia 60781: a specialist term (now in no theme: not exported)
+  out of touch_words: somatosensory 60782: a specialist term (now in no theme: not exported)
+7. ear parts
+  out of ear_parts: cartilage 3275: a tissue, not a part of the ear (stays in inside_the_body, joints)
+  out of ear_parts: earwax 3352: a substance, not a part of the ear (now in no theme: not exported)
+  out of ear_parts: cerumen 14793: a substance, not a part of the ear (now in no theme: not exported)
+8. eye parts
+  out of eye_parts: tear 14872: a liquid, not a part of the eye (stays in things_that_drip, wet_things)
+  out of eye_parts: eyebrow 3203: above the eye, a part of the face (stays in body_parts, face, paired_body_parts, eye_blank)
+  out of eye_parts: pupillary 14864: an adjective, not a part (now in no theme: not exported)
+Entries left in no theme (kept in the library, not exported) 42: sixth sense 3314, taste buds 3315, flavor 3324, sensation 3327, perception 3328, optic 3335, receptor 3337, stimulus 3338, synesthesia 3339, perfect pitch 3342, balance 3343, gustation 3345, proprioception 3347, thermoception 3348, nociception 3349, audition 50101, perceive 14692, visualize 14693, clock 14688, visible 14673, vision 3309, butcher's 131, pitch 14710, frequency 14723, noise 14697, audio 14713, amplify 14724, reverberate 14725, scratch and sniff 14765, fleecy 14830, abrasive 14831, sandpapery 14842, nubbly 14843, grope 14820, fondle 14835, feel up 14837, mechanoreceptor 60780, paresthesia 60781, somatosensory 60782, earwax 3352, cerumen 14793, pupillary 14864
+library changes 227; entries changed 180; status set to rev 163
+Checks: changed kinds: info:orphan 230 -> 272, info:overlap 4920 -> 4911, info:theme-twin 56 -> 55
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): contract-root-region 1790 -> 1788; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3251 -> 3253; gone none; new sense_organs, words_for_noise; theme indexes shift: from index 1180 ("sense_organs", was "illnesses")
+Entries 61468 -> 61433; first row whose entry changed: 129 (pharmacy 132, was butcher's 131); rows that moved: 61293; added color-blind 68072 (row 61422), colour-blind 68073 (row 61423), double vision 68074 (row 61424), astigmatism 68075 (row 61425), 20/20 vision 68076 (row 61426), uproar 68077 (row 61427), commotion 68078 (row 61428), ruckus 68079 (row 61429), clamor 68080 (row 61430), clamour 68081 (row 61431), tumult 68082 (row 61432); removed butcher's 131 (row 129), vision 3309 (row 3283), sixth sense 3314 (row 3288), taste buds 3315 (row 3289), flavor 3324 (row 3298), flavour 3325 (row 3299), sensation 3327 (row 3301), perception 3328 (row 3302), visual 3330 (row 3304), gustatory 3333 (row 3307), optic 3335 (row 3309), receptor 3337 (row 3311), stimulus 3338 (row 3312), synesthesia 3339 (row 3313), synaesthesia 3340 (row 3314), perfect pitch 3342 (row 3316), balance 3343 (row 3317), gustation 3345 (row 3319), proprioception 3347 (row 3321), thermoception 3348 (row 3322), nociception 3349 (row 3323), earwax 3352 (row 3326), visible 14673 (row 14196), clock 14688 (row 14211), perceive 14692 (row 14215), visualize 14693 (row 14216), noise 14697 (row 14220), pitch 14710 (row 14233), audio 14713 (row 14236), frequency 14723 (row 14245), amplify 14724 (row 14246), reverberate 14725 (row 14247), scratch and sniff 14765 (row 14287), cerumen 14793 (row 14314), grope 14820 (row 14341), fleecy 14830 (row 14351), abrasive 14831 (row 14352), feel up 14837 (row 14357), sandpapery 14842 (row 14362), nubbly 14843 (row 14363), pupillary 14864 (row 14384), audition 50101 (row 46579), mechanoreceptor 60780 (row 56692), paresthesia 60781 (row 56693), somatosensory 60782 (row 56694), visualise 64862 (row 59375)
+root -> alias rows 0: none
+Links 101411 -> 101278; rows whose link count changed: 102
+Link-index shifts: from row 38 (hearing 39) on, link positions move
+Root links by theme + shown text + row: gone 163, new 30, rating changed 7
+  gone: senses: "sight" (38), sight_words: "sight" (38), senses: "hearing" (39), senses: "smell" (40), senses: "taste" (41), senses: "touch" (42), sight_words: "butcher's" (131), senses: "nose" (3183), smell_words: "nose" (3183), senses: "eye" (3185), senses: "ear" (3186), senses: "skin" (3189), eye_parts: "eyebrow" (3203), senses: "tongue" (3206), senses: "nostril" (3211), ear_parts: "cartilage" (3275), senses: "vision" (3309), sight_words: "vision" (3309), senses: "eyesight" (3310), sight_words: "eyesight" (3310), senses: "blind" (3311), senses: "deaf" (3312), senses: "sniff" (3313), senses: "sixth sense" (3314), senses: "taste buds" (3315), senses: "eardrum" (3316), senses: "retina" (3317), senses: "cornea" (3318), senses: "pupil" (3319), senses: "night vision" (3320), senses: "peripheral vision" (3321), senses: "scent" (3322), senses: "aroma" (3323), senses: "flavor" (3324), senses: "texture" (3326), senses: "sensation" (3327), senses: "perception" (3328), senses: "sensory" (3329), senses: "optic" (3335), senses: "receptor" (3337), senses: "stimulus" (3338), senses: "synesthesia" (3339), senses: "echolocation" (3341), senses: "perfect pitch" (3342), senses: "balance" (3343), senses: "olfaction" (3344), senses: "gustation" (3345), senses: "proprioception" (3347), senses: "thermoception" (3348), senses: "nociception" (3349), senses: "inner ear" (3350), senses: "eyeball" (3351), sight_words: "eyeball" (3351), senses: "earwax" (3352), ear_parts: "earwax" (3352), hearing_words: "ultrasound" (3537), smell_words: "perfume" (3740), sight_words: "witness" (4192), hearing_words: "timbre" (6094), hearing_words: "earphones" (7333), sight_words: "observe" (7497), smell_words: "sniffer dog" (9459), hearing_words: "loud" (11136), touch_words: "soft" (11137), sight_words: "bird's-eye view" (13140), sight_words: "see" (14649), sight_words: "look" (14650), sight_words: "watch" (14651), sight_words: "stare" (14652), sight_words: "glance" (14653), sight_words: "gaze" (14654), sight_words: "glimpse" (14655), sight_words: "peek" (14656), sight_words: "squint" (14657), sight_words: "blink" (14658), sight_words: "wink" (14659), sight_words: "glare" (14660), sight_words: "peer" (14661), sight_words: "gawk" (14662), sight_words: "ogle" (14663), sight_words: "spy" (14664), sight_words: "spot" (14665), sight_words: "notice" (14666), sight_words: "behold" (14667), sight_words: "scan" (14668), sight_words: "scrutinize" (14669), sight_words: "peruse" (14671), sight_words: "view" (14672), sight_words: "visible" (14673), sight_words: "shufti" (14685), sight_words: "dekko" (14686), sight_words: "lookout" (14687), sight_words: "clock" (14688), sight_words: "espy" (14689), sight_words: "descry" (14690), sight_words: "discern" (14691), sight_words: "perceive" (14692), sight_words: "visualize" (14693), hearing_words: "sound" (14696), hearing_words: "noise" (14697), hearing_words: "quiet" (14698), hearing_words: "whisper" (14699), hearing_words: "volume" (14700), hearing_words: "echo" (14701), hearing_words: "deafening" (14706), hearing_words: "muffled" (14709), hearing_words: "pitch" (14710), hearing_words: "decibel" (14711), hearing_words: "audio" (14713), hearing_words: "acoustic" (14714), hearing_words: "sonic" (14718), hearing_words: "infrasound" (14721), hearing_words: "frequency" (14723), hearing_words: "amplify" (14724), hearing_words: "reverberate" (14725), hearing_words: "resonance" (14726), hearing_words: "hush" (14727), hearing_words: "din" (14728), hearing_words: "racket" (14729), hearing_words: "cacophony" (14730), hearing_words: "hearsay" (14735), smell_words: "musk" (14759), smell_words: "incense" (14760), smell_words: "nasal" (14764), smell_words: "scratch and sniff" (14765), smell_words: "smelling salts" (14766), smell_words: "sniffle" (14775), ear_parts: "cerumen" (14793), touch_words: "rough" (14801), touch_words: "smooth" (14802), touch_words: "hard" (14803), touch_words: "sticky" (14804), touch_words: "slimy" (14805), touch_words: "fuzzy" (14806), touch_words: "prickly" (14807), touch_words: "bumpy" (14808), touch_words: "slippery" (14809), touch_words: "squishy" (14810), touch_words: "wet" (14811), touch_words: "grope" (14820), touch_words: "velvety" (14821), touch_words: "silky" (14822), touch_words: "gritty" (14823), touch_words: "coarse" (14824), touch_words: "gooey" (14825), touch_words: "tacky" (14826), touch_words: "clammy" (14827), touch_words: "spongy" (14828), touch_words: "leathery" (14829), touch_words: "fleecy" (14830), touch_words: "abrasive" (14831), touch_words: "feel up" (14837), touch_words: "sandpapery" (14842), touch_words: "nubbly" (14843), eye_parts: "pupillary" (14864), eye_parts: "tear" (14872), ways_of_looking: "spy" (16942), hearing_words: "hertz" (41873), senses: "audition" (50101), sight_words: "gander" (50242), touch_words: "mechanoreceptor" (60780), touch_words: "paresthesia" (60781), touch_words: "somatosensory" (60782)
+  new: sense_organs: "nose" (3183), sense_organs: "eye" (3185), sense_organs: "ear" (3186), sense_organs: "skin" (3189), sense_organs: "tongue" (3206), sight_words: "blind" (3311), sight_words: "peripheral vision" (3321), ways_of_looking: "spy" (14664), ways_of_looking: "shufti" (14685), ways_of_looking: "dekko" (14686), words_for_noise: "din" (14728), words_for_noise: "racket" (14729), words_for_noise: "cacophony" (14730), texture_words: "hard" (14803), texture_words: "sticky" (14804), texture_words: "slippery" (14809), texture_words: "gooey" (14825), texture_words: "clammy" (14827), words_for_noise: "hullabaloo" (27797), words_for_noise: "hubbub" (27838), words_for_noise: "rumpus" (67075), sight_words: "color-blind" (68072), sight_words: "double vision" (68074), sight_words: "astigmatism" (68075), sight_words: "20/20 vision" (68076), words_for_noise: "uproar" (68077), words_for_noise: "commotion" (68078), words_for_noise: "ruckus" (68079), words_for_noise: "clamor" (68080), words_for_noise: "tumult" (68082)
+  rating: sight_words: "blurry" (14674) 2.7/3 -> 2/2, sight_words: "blurred" (14675) 2.7/3 -> 2/2, sight_words: "nearsighted" (14677) 3/3 -> 2.4/1, sight_words: "myopic" (14678) 4/4 -> 3.7/3, sight_words: "farsighted" (14679) 3/3 -> 2.4/1, sight_words: "hyperopic" (14681) 5/5 -> 4.7/4, sight_words: "eagle-eyed" (14684) 3.7/4 -> 3/3
+new issues: none
