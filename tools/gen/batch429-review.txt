@@ -1,0 +1,105 @@
+Fixes from the review of v423-v428 (Body & Health): Prunus africana back in African remedies; feeling tired renamed words for tired under synonyms (tired out); CPAP in sleep; vitamins keep single vitamins (vitamin B, B complex, beta-carotene out; vitamin B12); calcium, omega-3, folic acid and B complex in supplements; eight non-vitamin stubs, star [arms-out] and IT band deleted; fitness keeps the better typicality of the merged words; boot camp and basic training common; Mariánské Lázně an alias of Marienbad; carrier -> baby carrier.
+1. Prunus africana (v423 healing traditions)
+  text: prunus africana 15633 -> "Prunus africana": a binomial: the genus name takes a capital, the species epithet does not
+  Prunus africana 15633: type "common" -> "proper": a scientific name with a capital (a proper word)
+  linked: Prunus africana 15633 in african_remedies (typicality 3): its pre-v423 typicality: the bark is a well-known African remedy; v423 took it out only for its lowercase spelling
+2. feeling tired -> words for tired, under synonyms
+  theme feeling_tired: name "feeling tired" -> "words for tired": a theme of synonyms, named like words for big and words for noise (the id stays: ids are kept on a rename)
+  theme feeling_tired: note "tired, sleepy, exhausted, worn out, weary" -> "sleepy, exhausted, worn out, weary": tired is no longer a member
+  theme feeling_tired moved from sleep to synonyms, after words_for_noise: the folder of the "words for X" themes (pop 2, ident 2 as there; lang from the folder)
+  out of feeling_tired: tired 62393: the theme name may not contain a member's word (stays in hidden_colors)
+3. sleep
+  linked: CPAP 16148 in sleep (typicality 4): the breathing machine for sleep apnea, beside apnea (v424 took it out of sleep disorders)
+4. run-down
+  run-down 68103: gloss "" -> "tired": the tired sense (a run-down building is another)
+5. vitamins: collections and a provitamin out
+  out of vitamins: vitamin B 16638: the B vitamins together, not one vitamin (never a collection) (now in no theme: not exported)
+  out of vitamins: B complex 62758: the B vitamins together, not one vitamin (never a collection) (now in no theme: not exported)
+  out of vitamins: beta-carotene 3885: a provitamin (the body makes vitamin A from it), not a vitamin (stays in nutrition)
+  linked: B complex 62758 in supplements (typicality 2): a common supplement of the B vitamins
+6. vitamin B12
+  text: B12 62759 -> "vitamin B12": the full term, like vitamin B1 to B7
+  vitamin B12 62759 shown "B12" in vitamins: shown short like vitamin B1 to B7 (B1 ... B7)
+7. supplements
+  linked: calcium 3829 in supplements (typicality 2): one of the commonest supplements
+  linked: omega-3 3834 in supplements (typicality 3): sold as a supplement (supplements has no groups; fish oil is its usual source)
+  linked: folic acid 3865 in supplements (typicality 2): the supplement taken in pregnancy
+8. Non-vitamin stubs in no theme deleted
+  deleted entry: vitamin P 16643: not a vitamin; in no theme since v425, no alias, group or kin
+  deleted entry: vitamin B4 16644: not a vitamin; in no theme since v425, no alias, group or kin
+  deleted entry: vitamin B8 16645: not a vitamin; in no theme since v425, no alias, group or kin
+  deleted entry: vitamin B10 16646: not a vitamin; in no theme since v425, no alias, group or kin
+  deleted entry: vitamin B11 16647: not a vitamin; in no theme since v425, no alias, group or kin
+  deleted entry: vitamin B13 16648: not a vitamin; in no theme since v425, no alias, group or kin
+  deleted entry: vitamin B15 16649: not a vitamin; in no theme since v425, no alias, group or kin
+  deleted entry: vitamin B17 16650: not a vitamin; in no theme since v425, no alias, group or kin
+9. fitness: the merged words keep the better typicality (fitness words at v422)
+  typicality: flexibility 3607 in fitness 3 -> 2: its typicality in fitness words, the better of the two
+  typicality: warm-up 3608 in fitness 2 -> 1: its typicality in fitness words, the better of the two
+  typicality: cool-down 3609 in fitness 3 -> 2: its typicality in fitness words, the better of the two
+  typicality: rep 3610 in fitness 2 -> 1: its typicality in fitness words, the better of the two
+  typicality: repetition 3611 in fitness 3 -> 2: its typicality in fitness words, the better of the two
+  typicality: set 3612 in fitness 2 -> 1: its typicality in fitness words, the better of the two
+  typicality: personal best 3619 in fitness 3 -> 2: its typicality in fitness words, the better of the two
+  typicality: protein shake 3634 in fitness 3 -> 2: its typicality in fitness words, the better of the two
+  typicality: heart rate 3637 in fitness 3 -> 2: its typicality in fitness words, the better of the two
+  typicality: BMI 3638 in fitness 4 -> 3: its typicality in fitness words, the better of the two
+  typicality: one-rep max 3640 in fitness 4 -> 3: its typicality in fitness words, the better of the two
+  typicality: DOMS 3642 in fitness 5 -> 4: its typicality in fitness words, the better of the two
+  typicality: macros 3646 in fitness 4 -> 3: its typicality in fitness words, the better of the two
+  typicality: creatine 3648 in fitness 4 -> 3: its typicality in fitness words, the better of the two
+  typicality: bulking 3652 in fitness 4 -> 3: its typicality in fitness words, the better of the two
+  typicality: gains 3654 in fitness 3 -> 2: its typicality in fitness words, the better of the two
+  typicality: progressive overload 3662 in fitness 5 -> 4: its typicality in fitness words, the better of the two
+  typicality: hypertrophy 3663 in fitness 5 -> 4: its typicality in fitness words, the better of the two
+  typicality: cutting 3653 in fitness 4 -> 3: the typicality of its deleted duplicate cutting [diet] 15981 in fitness words, the better of the two
+10. star [arms-out]
+  out of ways_to_jump: star 64806: a bare stub; jumping jack (alias star jump) is in ways to jump (now in no theme: not exported)
+  deleted entry: star 64806 [arms-out]: a bare stub for one theme (LIBRARY-RULES 5); jumping jack 15844 with its alias star jump covers it (its kin entries lose it)
+11. boot camp and basic training
+  boot camp 4412: type "phrase" -> "common": an ordinary noun, not an idiom
+  basic training 4413: type "phrase" -> "common": an ordinary noun, not an idiom
+12. IT band
+  deleted entry: IT band 62747: in no theme since v426 (a band of tissue, not a stretch), no alias, group or kin
+13. cutting [fitness]
+  cutting 3653: fam 4 -> 3: the familiarity of its deleted duplicate cutting [diet] 15981 (gloss fitness stays: it names the sense)
+14. Mariánské Lázně: translation alias of Marienbad
+  out of european_spa_towns: Mariánské Lázně 16592: the Czech name of Marienbad, which is in the theme; becomes its translation alias (now in no theme: not exported)
+  alias: Mariánské Lázně 16592 -> translation alias of Marienbad 16591: Marienbad is the usual English name
+  alias: Marianske Lazne 68109 re-pointed from Mariánské Lázně 16592 to Marienbad 16591 (an alias cannot point at an alias)
+  alias: Marianske Lazne 68109 kind spelling -> translation: the Czech name written plain, not a spelling of Marienbad
+15. carrier [sling] -> baby carrier
+  text: carrier 64021 -> "baby carrier": the full term, shown short in baby gear like baby monitor
+  baby carrier 64021: gloss "sling" -> "": the text is now unique: no gloss needed
+  baby carrier 64021 shown "carrier" in baby_gear: shown short, as baby monitor is shown "monitor" and baby sling "sling"
+  kin dropped: baby carrier 64021 <-> carry 41623: not one word family
+  kin dropped: baby carrier 64021 <-> carry 45779: not one word family
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  african_remedies: 20 words, easy/middle/hard 3/2/15, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> 21 words, easy/middle/hard 3/2/16, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  sleep: 71 words, easy/middle/hard 23/32/16, theme difficulty 1, 4th-easiest band 1, gap 0 -> 72 words, easy/middle/hard 23/32/17, theme difficulty 1, 4th-easiest band 1, gap 0
+  feeling_tired: 18 words, easy/middle/hard 6/7/5, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 17 words, easy/middle/hard 5/7/5, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  vitamins: 31 words, easy/middle/hard 6/8/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 28 words, easy/middle/hard 5/7/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  supplements: 20 words, easy/middle/hard 6/9/5, theme difficulty 2, 4th-easiest band 2, gap 0 -> 24 words, easy/middle/hard 7/12/5, theme difficulty 2, 4th-easiest band 2, gap 0
+  fitness: 72 words, easy/middle/hard 23/24/25, theme difficulty 1, 4th-easiest band 1, gap 0 -> 72 words, easy/middle/hard 28/21/23, theme difficulty 1, 4th-easiest band 1, gap 0
+  ways_to_jump: 44 words, easy/middle/hard 10/15/19, theme difficulty 3, 4th-easiest band 1, gap -2 -> 43 words, easy/middle/hard 10/14/19, theme difficulty 3, 4th-easiest band 1, gap -2
+  european_spa_towns: 40 words, easy/middle/hard 0/6/34, theme difficulty 5, 4th-easiest band 3, gap -2 -> 39 words, easy/middle/hard 0/6/33, theme difficulty 5, 4th-easiest band 3, gap -2
+  baby_gear: 32 words, easy/middle/hard 11/12/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 32 words, easy/middle/hard 11/12/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+Entries left in no theme (kept in the library, not exported) 1: vitamin B 16638
+Entries deleted 10: vitamin P 16643, vitamin B4 16644, vitamin B8 16645, vitamin B10 16646, vitamin B11 16647, vitamin B13 16648, vitamin B15 16649, vitamin B17 16650, star 64806, IT band 62747
+library changes 60; entries changed 39; status set to rev 9
+Checks: changed kinds: info:orphan 313 -> 303
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3253 -> 3253; gone none; new none; theme indexes shift: from index 1242 ("personal_care", was "feeling_tired") to index 3142 ("feeling_tired", was "words_for_noise")
+Entries 61416 -> 61416; first row whose entry changed: 15004 (Prunus africana 15633, was tea tree oil 15636); rows that moved: 44230; added Prunus africana 15633 (row 15004), CPAP 16148 (row 15462); removed vitamin B 16638 (row 15930), 64806 (row 59235)
+root -> alias rows 1: Mariánské Lázně 16592
+Links 101169 -> 101169; rows whose link count changed: 6
+Link-index shifts: from row 3776 (sugar 3830) on, link positions move
+Rows whose text changed: vitamin B12 62759 (was "B12"), baby carrier 64021 (was "carrier")
+Theme rows whose fields changed (parent compared by id): african_remedies (index 1217 -> 1217: counts [0,3,2,12,4] -> [0,3,2,12,5]); fitness (index 1228 -> 1228: counts [10,14,26,18,7] -> [11,18,24,16,7]); sleep (index 1235 -> 1235: counts [8,15,32,9,7] -> [8,15,32,10,7]); vitamins (index 1267 -> 1266: counts [3,3,8,7,10] -> [3,2,7,7,9]); supplements (index 1274 -> 1273: counts [2,4,9,5,0] -> [2,5,12,5,0]); feeling_tired (index 1242 -> 3142: name "feeling tired" -> "words for tired", parent "sleep" -> "synonyms", flags 0 -> 72, counts [3,3,7,5,0] -> [2,3,7,5,0]); ways_to_jump (index 3182 -> 3182: counts [5,5,15,11,8] -> [5,5,14,11,8])
+Root links by theme + shown text + row: gone 6, new 6, rating changed 19
+  gone: vitamins: "beta-carotene" (3885), european_spa_towns: "Mariánské Lázně" (16592), vitamins: "vitamin B" (16638), feeling_tired: "tired" (62393), vitamins: "B complex" (62758), ways_to_jump: "star" (64806)
+  new: supplements: "calcium" (3829), supplements: "omega-3" (3834), supplements: "folic acid" (3865), african_remedies: "Prunus africana" (15633), sleep: "CPAP" (16148), supplements: "B complex" (62758)
+  rating: fitness: "flexibility" (3607) 2.7/3 -> 2/2, fitness: "warm-up" (3608) 2/2 -> 1.7/1, fitness: "cool-down" (3609) 2.7/3 -> 2/2, fitness: "rep" (3610) 2/2 -> 1.7/1, fitness: "repetition" (3611) 3/3 -> 2.7/2, fitness: "set" (3612) 1.7/2 -> 1/1, fitness: "personal best" (3619) 2.7/3 -> 2/2, fitness: "protein shake" (3634) 2.7/3 -> 2/2, fitness: "heart rate" (3637) 2.7/3 -> 2/2, fitness: "BMI" (3638) 3.4/4 -> 2.7/3, fitness: "one-rep max" (3640) 4/4 -> 3.7/3, fitness: "DOMS" (3642) 5/5 -> 4.7/4, fitness: "macros" (3646) 4/4 -> 3.7/3, fitness: "creatine" (3648) 4/4 -> 3.7/3, fitness: "bulking" (3652) 4/4 -> 3.7/3, fitness: "cutting" (3653) 4/4 -> 3/3, fitness: "gains" (3654) 3/3 -> 2.7/2, fitness: "progressive overload" (3662) 5/5 -> 4.7/4, fitness: "hypertrophy" (3663) 5/5 -> 4.7/4
+new issues: none
