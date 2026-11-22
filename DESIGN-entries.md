@@ -140,6 +140,41 @@ The rule exists because a player must never be able to pair two words just becau
   - Built (2026-11-19): the prompt paragraph (js/ai.js); the detector and clash union-find (js/family.js); the checks `family-pair`, `family-kin`, `clash-big` and `kin-bad`, with the allow list js/family-allow.js; the theme setting `familyOk` (theme dialog); the entry relation `kin` (stored on both root entries, never on an alias; entry editor block "Related words (kin)"); kin in the export clash. On v398: `family-pair` 11 (5 male/female title pairs in royal titles and peerage, waiting for `familyOk`; 6 found by the new pet endings -ie/-sy that famscan lacked: swag/swaggie, keto/ketosis, gendarme/gendarmerie x2, squad/squaddie, goal/goalie), `family-kin` about 7,300 (suggestions, noisy), `clash-big` 3 (kebab 11, ghost 10, marijuana 10).
   - Not yet done: `familyOk` on the title themes, and the kin pass (no kin in the data yet).
 
+### 3.8 Offensive words (adopted 2026-11-22, Simon)
+
+The game must be able to leave out every word some players have objected to. The `offensive` flag replaces `vulgar` and is broader. Base list: LDNOOBW (Simon's `en_offensive.txt`), cleaned, plus Simon's additions.
+
+- **Two tests, applied separately:**
+  - **Delete** an entry whose meaning is crude, vulgar or a slur (`ass` [buttocks], `bollocks`, `spotted dick`). Mild insults are not deleted.
+  - **Flag `offensive`** on any entry that is kept if some players have objected to the written word, in any of its meanings.
+- **Independent of `adult` and `sensitive`.** Those describe the topic; `offensive` describes the word. An entry can have all three.
+- **What gets the flag:**
+  - the clean meaning of a crude word: `ass` [donkey], `bitch` [female dog], `tit` [bird], `booby` [bird], `hooker` [rugby], `jizz` [birding term], `faggots` [food];
+  - a spelling that is also a slur: `negro` [Spanish for black];
+  - medical and sexual words: penis, vagina, anus, rectum, condom, nude, gay, homosexual, bisexual;
+  - serious topics: heroin, suicide, slave, swastika;
+  - religious and occult words: hell, devil, Satan, witch, wizard, cult;
+  - mild insults: idiot, moron, ninny.
+- **Derived words** take the flag (witchcraft, witches, wizardry, shitty, shitstorm). Letters inside an unrelated word never do (cocktail, Dickens, scrape, switch, shell, culture).
+- **Phrases** are flagged when the offensive word keeps its offending meaning in them (`wicked witch`, `witch hat`, `idiot box`). They are not flagged when the phrase names something harmless (`witch hazel`, `devil ray`, `thorny devil`, `dust devil`, `Tasmanian devil`).
+- **Names and hyphenated phrases** are never flagged, unless the whole name is the offensive word: `Negro` [river], `Hell` [Michigan town], `Wizards` [NBA team] and `Devils` [NHL team] are flagged. `Moby Dick`, `Dick Tracy`, `Salem witch trials` and `cock-a-doodle-doo` are not. A name is decided by the entry's type (person, place, org, title, proper), never by a capital letter.
+- **Spellings and forms** take their root's flag (`alias-flags`). The rule covers words in every language.
+- **Themes** get the flag when their topic is offensive (witchcraft, wizard words, illegal drugs). It reaches the theme's links the way a theme's `adult` does. A theme name containing an offensive word means the theme is flagged.
+- **Export:** a toggle in the web app and in `tools/export-game.mjs` includes flagged entries and themes; it is **off by default**. Flagged words do not count toward a theme's 4 usable words (`thin`).
+- **Line breaks:** no break may leave an offensive piece (`cock|tail`).
+- **The 15 `vulgar` entries at v429:**
+  - `bitch` [female dog]: kept and flagged.
+  - `gitch`: kept, unflagged (ordinary slang for underwear).
+  - Deleted: `ass` [buttocks], `lap dance`, `twerk`, `gyatt`, `bollocks`, `bugger`, `tosser`, `WTF`, `Brainfuck`, `schmuck`, `putz`, `tuchus`, `fart`.
+  - Also deleted: `butt` (body parts) and `spotted dick`.
+- **To build:**
+  - the cleaned list `tools/offensive-words.txt` and an allow list for names and harmless phrases;
+  - the field rename in the code, the export (bit 8), the tests, the generation prompts and GAME-CONTRACT.md, and a notice to the game when Simon says;
+  - the theme flag and the export toggle;
+  - the checks: an error for an entry or theme name that matches the list and is not flagged or allowed; a warning for a flagged entry whose word is not on the list; a check for offensive pieces at line breaks;
+  - LIBRARY-RULES.md;
+  - a batch for the 15 entries, then a full pass over the library: list matches, judge them, and get Simon's approval. The slang, insult and anime themes get a judgement pass too, since no list catches all slang.
+
 ## 4. Splitting themes
 
 Many themes can yield new themes of 4 or more words, especially once forms are queryable (`weather`: 58 nouns and 8 adjectives could give a `weather conditions` theme of adjectives and a `rough weather` theme of storms). Rules:
@@ -204,6 +239,7 @@ This section is a dated log: each entry records what was decided or done at the 
 - Theme difficulty is never stored; it is computed from `ident` and `pop`. A complete theme has a note listing its exact members.
 - Capitals: a word is shown the way it is written for its sense; the rule and the lint are in "Capital rule and lint" below. A case-only shown text is not used in wordplay or compound themes, nor on an entry that has regional or spelling aliases.
 - Export additions are additive within a format version (3 until 2026-11-18, now 4); the field list is DESIGN.md section 8.
+- Offensive words (3.8, Simon, 2026-11-22): delete an entry whose meaning is crude, vulgar or a slur; flag `offensive` on any kept entry whose word some players object to, independent of adult and sensitive; names and hyphenated phrases only when the whole text is the word; the export leaves flagged words out by default. Not yet built.
 - A theme and its "X words" theme of the same topic are one theme (Simon, 2026-11-22; replaces v408's "parent topic / X words child: kept"). An "X words" theme of how people talk about X (pirate talk, wine tasting) stays and is renamed for that. LIBRARY-RULES.md section 6.
 
 **Log**
