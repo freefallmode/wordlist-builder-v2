@@ -8,6 +8,9 @@ const S = { q: '', show: '', sort: 'name', dir: 1, page: 0 };
 const SHOW = [['', 'all themes'], ['play', 'playable themes'], ['group', 'groups'], ['adult', 'adult'], ['sensitive', 'sensitive'], ['tm', 'trademark'], ['lang', 'language-specific'], ['foreign', 'foreign language'], ['region', 'region-specific'],
   ['complete', 'complete sets'], ['off', 'disabled'], ['empty', 'with no words'], ['thin', 'with too few words']];
 
+// A rating 1-5 in the colours of the theme table's rating cells (.diffcell.rN); a half (difficulty 2.5) takes the harder colour.
+const rated = (n, text = n) => h('span.diffcell.r' + Math.min(5, Math.max(1, Math.round(n))), {}, text);
+
 // c is the counts() of app.js (own = distinct words per playable theme, tot = words in the theme and its sub-themes, play / ready = playable themes below).
 export function allThemesView(c, open) {
   const P = A.P, min = P.settings.minWords || 4;
@@ -54,7 +57,7 @@ export function allThemesView(c, open) {
         h('td.dim', parentName(t)),
         t.group ? h('td.num') : num(own(t), own(t) < min),
         h('td.num', c.tot.get(t.id) || ''), h('td.num', kids(t) || ''),
-        h('td.num', themeDifficulty(t) ? themeDifficulty(t).toFixed(1) : ''), h('td.num', t.pop || ''), h('td.num', t.ident || ''),
+        h('td.num', themeDifficulty(t) ? rated(themeDifficulty(t), themeDifficulty(t).toFixed(1)) : ''), h('td.num', t.pop ? rated(t.pop) : ''), h('td.num', t.ident ? rated(t.ident) : ''),
         h('td', flagsOf(t).join(' ')))) :
         h('tr', h('td', { colspan: 9, class: 'hint' }, 'No themes match.')))),
     list.length > 40 && pager(),

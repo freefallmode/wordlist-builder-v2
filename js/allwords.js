@@ -118,7 +118,7 @@ export function allWordsView() {
         h('td.on', {}, h('input', { type: 'checkbox', checked: e.enabled, title: 'enabled', onchange: ev => { e.enabled = ev.target.checked; A.changed({ entries: [e] }); } })),
         h('td.word', { onclick: () => editEntry(e) }, e.text),
         h('td.dim', e.gloss || ''), h('td.dim', aliasCell(e)), h('td.dim', rootOf(e) ? `${rootOf(e).text}${e.aliasKind ? ' (' + e.aliasKind + ' alias)' : ''}` : ''),
-        h('td.dim', themesCell(e)), h('td.dim', e.pos), h('td.dim', e.type), h('td', e.fam || h('span.hint', '?')),
+        h('td.dim', themesCell(e)), h('td.dim', e.pos), h('td.dim', e.type), h('td', e.fam ? h('span.diffcell.r' + e.fam, {}, e.fam) : h('span.hint', '?')),
         h('td', flagBadges(e)), h('td', h('span.dot.' + e.status, { title: e.status }, e.status === 'rev' ? '✓' : e.status === 'gen' ? 'g' : '·')))) :
         h('tr', h('td', { colspan: 11, class: 'hint' }, 'No words match.')))),
     list.length > 40 && pager(),
