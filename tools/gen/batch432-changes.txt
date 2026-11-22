@@ -241,4 +241,4 @@ Library v432 is in the export (data/export/wordlist-game-family.json). It is the
 - Themes flagged offensive and gone from the family export: witchcraft, wizard words, old-fashioned insults (illegal drugs and street names for hemp are flagged too; they were adult already).
 - Deleted: ecchi 13089. Renamed: kaffir lime 17171 -> makrut lime (shown "makrut" in lime varieties); gypsy moth 9050 -> spongy moth (shown "spongy"). lived 29041 left reversible words (its reverse, devil, is offensive), so it is no longer exported.
 - Line breaks: 76 break points that left an offensive piece were removed from data/breaks-en.txt (cock|tail, jew|ellery, homo|phones, hun|dredth ...): those words now break elsewhere or not at all.
-Export v431 -> v432: themes 3,245 -> 3,242 (wizard words, witchcraft, old-fashioned insults gone; indexes shift from 2,377); rows 61,420 -> 61,255, shifting from row 155; links 100,958 -> 100,667.
+Export v431 -> v432: theme rows 3,245 -> 3,242 (wizard words, witchcraft, old-fashioned insults gone; indexes shift from 2,377); rows 61,420 -> 61,255, shifting from row 155; links 100,958 -> 100,667.
