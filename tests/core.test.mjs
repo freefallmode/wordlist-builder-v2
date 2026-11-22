@@ -11,6 +11,7 @@ import { newProject, addEntry, reindex, themeStats, themeRoots, themeCounts, tou
 import { sig } from '../js/dom.js';
 import { serializeProject, parseProject } from '../js/store.js';
 import { validate, nameLeak } from '../js/validate.js';
+import { offensiveMatch, offensivePiece } from '../js/offensive.js';
 import { buildExport, capLines, reportLists } from '../js/export.js';
 import { parseFreq, setFreq, zipf, loadFreq, freqLoaded } from '../js/freq.js';
 import { setBreaks, loadBreaks, breaksLoaded } from '../js/breaks.js';
@@ -88,11 +89,11 @@ test('project file round-trips and keeps defaults out', () => {
   const P = project();
   addEntry(P, 'lemon', { fam: 1, typ: { citrus: 1, fruits: 2 } });
   const text = serializeProject(P);
-  assert.ok(!text.includes('"adult":false'.replace('adult', 'vulgar')));
+  assert.ok(!text.includes('"adult":false'.replace('adult', 'offensive')));
   const Q = parseProject(text);
   assert.equal(Q.entries.length, 1);
   assert.deepEqual(Q.entries[0].typ, { citrus: 1, fruits: 2 });
-  assert.equal(Q.entries[0].vulgar, false);
+  assert.equal(Q.entries[0].offensive, false);
   assert.equal(Q.themes.length, P.themes.length);
 });
 
@@ -106,18 +107,19 @@ test('moving a theme keeps outline order', () => {
 
 test('export filters by flag, drops thin themes, promotes aliases', () => {
   const P = project();
-  // 5 clean words in fruits, one adult-theme word set, aliases of a vulgar root.
+  // 5 clean words in fruits, one adult-theme word set, aliases of a offensive root.
   for (const w of ['apple', 'pear', 'plum', 'fig', 'grape']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
   for (const w of ['navy', 'sky', 'teal', 'cyan']) addEntry(P, w, { fam: 2, typ: { shades_of_blue: 2 } });
-  const rude = addEntry(P, 'rude', { fam: 2, vulgar: true, typ: { fruits: 3 } });
+  const rude = addEntry(P, 'rude', { fam: 2, offensive: true, typ: { fruits: 3 } });
   addEntry(P, 'cheeky', { fam: 2, aliasOf: rude.id, aliasKind: 'synonym' });
   reindex(P);
-  const all = buildExport(P);
+  const all = buildExport(P, { offensive: 'include' });
   assert.equal(all.file.entries.text.length, 11);
+  assert.equal(buildExport(P).file.entries.text.length, 10);   // offensive words are left out by default (the alias stands in)
   assert.equal(all.file.themes.filter(r => !(r[3] & 32)).length, 2);
 
-  const family = buildExport(P, { adult: 'exclude', vulgar: 'exclude' });
-  // the adult "colors" branch goes, so shades_of_blue disappears; vulgar root goes, its alias stays as a root
+  const family = buildExport(P, { adult: 'exclude', offensive: 'exclude' });
+  // the adult "colors" branch goes, so shades_of_blue disappears; offensive root goes, its alias stays as a root
   assert.equal(family.file.entries.text.length, 6);
   assert.ok(family.file.entries.text.includes('cheeky'));
   assert.equal(family.file.entries.root[family.file.entries.text.indexOf('cheeky')], 0);
@@ -270,7 +272,7 @@ test('B12: deleting a theme or an entry, or unlinking, leaves no stale reference
 test('B19: the promoted alias takes the root place: links, groups, meaning flags, region, shown text; a spelling is preferred', () => {
   const P = project();
   const fr = P.themes.find(t => t.id === 'fruits');
-  const root = addEntry(P, 'color', { fam: 1, typ: { fruits: 2 }, adult: true, sensitive: true, tm: true, vulgar: true, region: ['US'], show: { fruits: 'col' }, nameOkIn: ['fruits'] });
+  const root = addEntry(P, 'color', { fam: 1, typ: { fruits: 2 }, adult: true, sensitive: true, tm: true, offensive: true, region: ['US'], show: { fruits: 'col' }, nameOkIn: ['fruits'] });
   const syn = addEntry(P, 'hue', { fam: 3, aliasOf: root.id, aliasKind: 'synonym' });
   const sp = addEntry(P, 'colour', { fam: 1, aliasOf: root.id, aliasKind: 'spelling', region: ['UK'] });
   const form = addEntry(P, 'colors', { aliasOf: root.id, aliasKind: 'form' });
@@ -281,7 +283,7 @@ test('B19: the promoted alias takes the root place: links, groups, meaning flags
   assert.equal(sp.aliasOf, 0);   // the spelling, not the first alias, takes the root place
   assert.deepEqual([syn.aliasOf, syn.aliasKind, form.aliasOf, form.aliasKind], [sp.id, 'synonym', sp.id, 'form']);
   assert.deepEqual([sp.typ, sp.show, sp.use, sp.nameOkIn, sp.region], [{ fruits: 2 }, { fruits: 'col' }, { fruits: form.id }, ['fruits'], ['UK']]);
-  assert.deepEqual([sp.adult, sp.sensitive, sp.tm, sp.vulgar], [true, true, true, true]);
+  assert.deepEqual([sp.adult, sp.sensitive, sp.tm, sp.offensive], [true, true, true, true]);
   assert.deepEqual(fr.groups, [[sp.id, other.id]]);
 
   // another word promoted: meaning flags and region only; the root's spellings and abbreviations become its synonyms
@@ -837,7 +839,7 @@ function contractProject() {
   return P;
 }
 const contractOf = async X => (await import('../tools/export-contract.mjs')).checkContract(X);
-const exportOf = P => JSON.parse(JSON.stringify(buildExport(P, { adult: 'exclude', vulgar: 'exclude', zipf: true }).file));
+const exportOf = P => JSON.parse(JSON.stringify(buildExport(P, { adult: 'exclude', offensive: 'exclude', zipf: true }).file));
 
 test('export contract: a clean export passes; each broken rule is an error of its kind', async () => {
   const X0 = exportOf(contractProject());
@@ -887,16 +889,16 @@ test('export contract: the rule grammar; warnings for what skews play; the summa
   addEntry(P, 'Plum', { gloss: 'company', type: 'org', fam: 2, typ: { fruits: 5 } }); P.entries.find(e => e.text === 'plum').gloss = 'fruit';
   addEntry(P, 'kiwi', { gloss: 'bird', type: 'common', fam: 1, typ: { pals: 5 } });   // after an earlier common kiwi: not reported
   addEntry(P, 'level', { gloss: 'tool', type: 'phrase', fam: 1, typ: { fruits: 5 } }); // a lower-case word typed phrase
-  P.themes.push(T('few', 'few things')); for (const w of ['ant', 'bee', 'cat', 'dog']) addEntry(P, w, { fam: 1, typ: { few: 1 }, sensitive: w === 'bee', vulgar: w === 'cat' || w === 'dog' });   // vulgar is dropped; sensitive is held back (g25) and counts
+  P.themes.push(T('few', 'few things')); for (const w of ['ant', 'bee', 'cat', 'dog']) addEntry(P, w, { fam: 1, typ: { few: 1 }, sensitive: w === 'bee', offensive: w === 'cat' || w === 'dog' });   // offensive is dropped; sensitive is held back (g25) and counts
   reindex(P);
-  const X = buildExport(P, { adult: 'exclude', vulgar: 'exclude', zipf: true, minWords: 1 }).file;
+  const X = buildExport(P, { adult: 'exclude', offensive: 'exclude', zipf: true, minWords: 1 }).file;
   const is = await contractOf(X), n = k => is.filter(i => i.kind === k).length;
   assert.deepEqual(is.filter(i => i.sev === 'error'), []);
   assert.equal(n('contract-root-region'), 1);
   assert.equal(n('contract-alias-dialect'), 2);    // tagged both, and two UK display aliases
   assert.equal(n('contract-dup-root'), 0);         // Plum (org) comes after the common plum
   assert.equal(n('contract-type-common'), 1);      // level typed phrase
-  assert.equal(n('contract-thin'), 1);             // few things: 2 usable words (ant, sensitive bee); cat and dog are vulgar
+  assert.equal(n('contract-thin'), 1);             // few things: 2 usable words (ant, sensitive bee); cat and dog are offensive
   const s = contractSummary(is, { 'contract-root-region': 1, 'contract-alias-dialect': 2, 'contract-type-common': 1 });
   assert.deepEqual(s.over.map(w => w.kind), ['contract-thin']);
   // the order in the export decides contract-dup-root: a place row first hides the common word
@@ -940,11 +942,11 @@ test('rating rule: a theme with words needs popularity and identifiability; an e
 
 test('export: an alias promoted to a row of its own keeps its left-out root\'s clash id', () => {
   const P = contractProject();
-  const rude = addEntry(P, 'rude', { fam: 1, vulgar: true, typ: { fruits: 3 } }), polite = addEntry(P, 'polite', { fam: 1, aliasOf: rude.id, aliasKind: 'synonym' });
+  const rude = addEntry(P, 'rude', { fam: 1, offensive: true, typ: { fruits: 3 } }), polite = addEntry(P, 'polite', { fam: 1, aliasOf: rude.id, aliasKind: 'synonym' });
   const bread = P.entries.find(e => e.text === 'fig');
   P.themes.find(t => t.id === 'fruits').groups = [[rude.id, bread.id]];
   reindex(P);
-  const X = buildExport(P, { adult: 'exclude', vulgar: 'exclude' }).file, row = t => X.entries.text.indexOf(t);
+  const X = buildExport(P, { adult: 'exclude', offensive: 'exclude' }).file, row = t => X.entries.text.indexOf(t);
   assert.equal(row('rude'), -1); assert.equal(X.entries.root[row('polite')], 0);   // promoted
   assert.ok(X.entries.clash[row('fig')] > 0);
   assert.equal(X.entries.clash[row('polite')], X.entries.clash[row('fig')]);
@@ -1130,4 +1132,44 @@ test('alias-links: an alias with a theme link, shown text or kin is an error; th
   // the "+ Add words" and generate paths link linkTarget(entry), never an alias
   assert.equal(linkTarget(P, a), r); assert.equal(linkTarget(P, sp), r); assert.equal(linkTarget(P, r), r);
   const m = linkTarget(P, a); m.typ.citrus = 2; assert.equal(a.typ.citrus, undefined);
+});
+
+test('offensive: the old vulgar field loads as offensive; the matcher follows the name, hyphen and whole-word rules', () => {
+  const Q = parseProject('{"project":{"schema":1,"lang":"en","lib":{"version":1}},"themes":[],"entries":[{"id":1,"text":"bitch","gloss":"female dog","vulgar":true}]}');
+  assert.equal(Q.entries[0].offensive, true); assert.ok(!('vulgar' in Q.entries[0]));
+  assert.ok(serializeProject(Q).includes('"offensive":true'));
+  const m = (text, type = 'common') => offensiveMatch({ text, type });
+  assert.equal(m('witch'), 'witch'); assert.equal(m('witches'), 'witch'); assert.equal(m('wicked witch'), 'witch'); assert.equal(m("devil's claw"), 'devil');
+  assert.equal(m('switch'), null); assert.equal(m('cocktail'), null); assert.equal(m('scrape'), null); assert.equal(m('shell'), null);
+  assert.equal(m('Moby Dick', 'title'), null); assert.equal(m('Negro', 'place'), 'negro'); assert.equal(m('cock-a-doodle-doo'), null);
+  assert.equal(m('choc ice'), 'choc ice'); assert.equal(m('cow'), null); assert.equal(m('spade'), null);
+  assert.equal(offensivePiece('cock'), 'cock'); assert.equal(offensivePiece('tail'), null);
+});
+
+test('offensive: checks report an unflagged word, a theme name, and thin counts leave offensive words out', () => {
+  const P = project();
+  for (const w of ['apple', 'pear', 'plum']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  const bad = addEntry(P, 'witch', { gloss: 'sorceress', fam: 1, typ: { fruits: 2 } });
+  addEntry(P, 'witch', { gloss: 'flatfish', fam: 4, offensive: true });
+  P.themes.push(T('wiz', 'wizard words'));
+  reindex(P);
+  const kinds = k => validate(P).filter(i => i.kind === k);
+  assert.deepEqual(kinds('offensive-word').map(i => i.entryId), [bad.id]);
+  assert.equal(kinds('offensive-theme').length, 1);
+  assert.equal(kinds('thin').filter(i => i.themeId === 'fruits').length, 0);   // 4 words, none offensive yet
+  bad.offensive = true; P.themes.find(t => t.id === 'wiz').offensive = true; reindex(P);
+  assert.equal(kinds('offensive-word').length, 0); assert.equal(kinds('offensive-theme').length, 0);
+  assert.equal(kinds('thin').filter(i => i.themeId === 'fruits').length, 1);   // 3 words that are not offensive
+});
+
+test('offensive: a flagged theme leaves the default export with its words and carries theme bit 256 when included', () => {
+  const P = project();
+  for (const w of ['apple', 'pear', 'plum', 'fig']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  P.themes.find(t => t.id === 'fruits').offensive = true;
+  reindex(P);
+  const fruitsRow = X => X.themes.find(r => r[0] === 'fruits');
+  assert.equal(buildExport(P).file.entries.text.length, 0);
+  const inc = buildExport(P, { offensive: 'include' }).file;
+  assert.equal(inc.entries.text.length, 4); assert.ok(fruitsRow(inc)[3] & 256);
+  assert.equal(buildExport(P, { vulgar: 'include' }).file.entries.text.length, 4);   // a preset saved before the rename
 });

@@ -51,6 +51,7 @@ function badges(t) {
   const add = (txt, cls, title) => b.push(h('span.badge.' + cls, { title }, txt));
   if (t.complete) add('✓', 'complete', 'Complete set');
   if (ef.adult) add('A', 'adult', 'Adult' + (t.adult ? '' : ' (inherited)'));
+  if (ef.offensive) add('O', 'offensive', 'Offensive' + (t.offensive ? '' : ' (inherited)'));
   if (ef.sensitive) add('S', 'sens', 'Sensitive' + (t.sensitive ? '' : ' (inherited)'));
   if (ef.tm) add('T', 'tm', 'Trademark' + (t.tm ? '' : ' (inherited)'));
   if (ef.lang) add('L', 'lang', 'Language-specific' + (t.lang ? '' : ' (inherited)'));
@@ -138,6 +139,7 @@ const THEME_FILTERS = [
   ['group', 'Groups (folders)', (P, t) => t.group],
   ['complete', 'Complete sets', (P, t) => t.complete],
   ['adult', 'Adult themes', (P, t, ef) => ef.adult],
+  ['offensive', 'Offensive themes', (P, t, ef) => ef.offensive],
   ['sensitive', 'Sensitive themes', (P, t, ef) => ef.sensitive],
   ['tm', 'Trademark / copyright themes', (P, t, ef) => ef.tm],
   ['lang', 'Language-specific themes', (P, t, ef) => ef.lang],
@@ -319,7 +321,7 @@ function entryTable(t) {
   if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
   const where = e => linkIds(P, e).filter(id => subIds.has(id)).map(id => `${P.ix.theme.get(id)?.name} ${difficultyBand(P, e, id) || ''}`.trim()).join(', ');
   const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: A.sort === k ? 'Click to reverse the order' : 'Click to sort by ' + label, onclick: () => { A.sortDesc = A.sort === k ? !A.sortDesc : false; A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? (A.sortDesc ? ' ▼' : ' ▲') : ' ⇅'));
-  const flagsOf = (H, e) => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]).map(k => H('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [H('span.badge.region', e.region.join('/'))] : []);
+  const flagsOf = (H, e) => ['adult', 'sensitive', 'tm', 'offensive'].filter(k => e[k]).map(k => H('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [H('span.badge.region', e.region.join('/'))] : []);
   const readAs = new Map();   // the meaning label is left out when the theme already gives the meaning; it shows for words that read the same as another word of the table, and in the sub-theme view (which needs no count)
   if (!sub) for (const x of roots) { const k = label(x).toLowerCase(); readAs.set(k, (readAs.get(k) || 0) + 1); }
   const needLabel = e => sub || readAs.get(label(e).toLowerCase()) > 1;

@@ -7,6 +7,8 @@ import { familyPairs, clashGroups, CLASH_SOFT, CLASH_MAX } from './family.js';
 import { FAMILY_OK } from './family-allow.js';
 import { SENSE_OK } from './sense-allow.js';
 import { THEME_TWIN_OK } from './theme-twin-allow.js';
+import { offensiveMatch, offensiveWord } from './offensive.js';
+import { OFFENSIVE_OK } from './offensive-allow.js';
 
 // A word of the theme's name inside an entry's text ("soup" in "tomato soup" under "soups") gives the theme away. Themes marked nameOk (wordplay, where the shared word is the point) are skipped.
 const NAME_STOP = new Set(('a an and or the of in on at to for from with by as is are that this these those your my our their its words word names name types type kinds kind famous common things thing parts part ' +
@@ -37,6 +39,29 @@ const FOREIGN_OK = /\b(in english|words from|from other languages|speaking|langu
 export const foreignListName = name => !FOREIGN_OK.test(name) && new RegExp(String.raw`\bin (${LANGS})\b|\b(${LANGS}) (everyday |basic )?(words|phrases|numbers|colou?rs|greetings|vocabulary)\b`, 'i').test(name);
 
 export const THEME_NAME_SOFT = 24, THEME_NAME_MAX = 30;   // theme name length (DESIGN-entries.md): soft = two lines in the game's narrowest column, hard = the check warns above it
+// Distinct concepts of a theme that are not offensive: an alias family counts when one of its enabled members is not offensive.
+function cleanRoots(P, tid) {
+  const s = new Set();
+  for (const e of P.ix.byTheme.get(tid) || []) if (e.enabled && !e.offensive) s.add(e.aliasOf || e.id);
+  return s.size;
+}
+
+// Offensive words (DESIGN-entries.md 3.8; list js/offensive-words.js, allow list js/offensive-allow.js).
+// offensive-word (warn): an entry whose text contains a list word, not flagged and not allowed: flag it, delete it (a crude, vulgar or slur meaning), or allow it (a harmless phrase, Simon's approval).
+// offensive-theme (warn): a theme name with a list word, and the theme not offensive.
+// offensive-unlisted (info): a flagged entry with no list word: right when it is a judgement (a phrase); else add the word to the list.
+function offensiveChecks(P, add) {
+  for (const e of P.entries) {
+    const w = offensiveMatch(e);
+    if (w && !e.offensive && !OFFENSIVE_OK.has(e.id)) add('warn', 'offensive-word', `"${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''}" contains the offensive word "${w}" but is not flagged offensive: flag it, delete it if this meaning is crude, vulgar or a slur, or (a harmless phrase, with Simon's approval) add it to js/offensive-allow.js.`, { entryId: e.id });
+    else if (!w && e.offensive) add('info', 'offensive-unlisted', `"${e.text}" is flagged offensive but contains no word of the offensive list (js/offensive-words.js): add the word there if it is offensive wherever it appears.`, { entryId: e.id });
+  }
+  for (const t of P.themes) {
+    const w = offensiveWord(t.name);
+    if (w && !eff(P, t.id).offensive) add('warn', 'offensive-theme', `The theme name "${t.name}" contains the offensive word "${w}": flag the theme offensive (its words leave the default export with it) or rename it.`, { themeId: t.id });
+  }
+}
+
 export function validate(P) {
   const out = [];
   const add = (sev, kind, msg, extra = {}) => out.push({ sev, kind, msg, ...extra });
@@ -72,7 +97,8 @@ export function validate(P) {
       if (miss.length && st.entries) add('error', 'theme-unrated', `"${t.name}" has words but no theme ${miss.join(' and no ')} (1-5).`, { themeId: t.id }); else if (!t.pop) unrated++; }
     if (!ef.foreign && foreignListName(t.name)) add('warn', 'foreign-flag', `"${t.name}" looks like a list of words in another language but is not flagged Foreign language; tick it if its words are mostly not English.`, { themeId: t.id });
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
-    else if (st.roots < minWords) add('warn', 'thin', `"${t.name}" has ${st.roots} distinct word${st.roots === 1 ? '' : 's'}; a theme needs at least ${minWords}.`, { themeId: t.id });
+    else { const n = ef.offensive ? st.roots : cleanRoots(P, t.id);   // offensive words do not count toward a theme's minimum (the export leaves them out by default; DESIGN-entries.md 3.8), unless the theme is offensive itself
+      if (n < minWords) add('warn', 'thin', `"${t.name}" has ${n} distinct word${n === 1 ? '' : 's'}${n < st.roots ? ` that are not offensive (${st.roots} in all)` : ''}; a theme needs at least ${minWords}.`, { themeId: t.id }); }
     if (!t.nameOk) { const ws = themeNameWords(t); const locked = themeLocked(P, t); for (const e of direct) { if (locked && e.aliasOf && e.typ[t.id] === undefined) continue; const w = nameLeak(t, e.show?.[t.id] ? { ...e, text: e.show[t.id] } : e, ws); if (w) add('warn', 'theme-name', `"${e.text}" contains "${w}" from its theme name "${t.name}", which gives the theme away.`, { themeId: t.id, entryId: e.id }); } }
     for (const g of t.groups || []) {   // synonym groups: at most one member per level
       const mem = g.map(id => ix.entry.get(id));
@@ -105,6 +131,7 @@ export function validate(P) {
   }
 
   familyChecks(P, add);
+  offensiveChecks(P, add);
   senseTwins(P, add);
   themeTwins(P, add);
 
@@ -142,7 +169,7 @@ export function validate(P) {
       else if (r.id === e.id) add('error', 'alias-self', `"${label(e)}" is an alias of itself.`, loc);
       else {
         if (r.aliasOf) add('error', 'alias-chain', `"${label(e)}" is an alias of "${label(r)}", which is itself an alias. Point it at the root.`, loc);
-        { const diff = (e.aliasKind === 'spelling' || e.aliasKind === 'form') ? ['adult', 'vulgar', 'sensitive', 'tm'].filter(f => !!e[f] !== !!r[f]) : [];   // the same word takes the root's flags
+        { const diff = (e.aliasKind === 'spelling' || e.aliasKind === 'form') ? ['adult', 'offensive', 'sensitive', 'tm'].filter(f => !!e[f] !== !!r[f]) : [];   // the same word takes the root's flags
           if (diff.length) add('warn', 'alias-flags', `"${label(e)}" is a ${e.aliasKind} alias of "${label(r)}" (the same word) but differs in ${diff.map(f => `${f} (${e[f] ? 'on' : 'off'}, root ${r[f] ? 'on' : 'off'})`).join(', ')}: give it the root's flags.`, loc); }
         if (r.text.toLowerCase() === text.toLowerCase()) add('warn', 'alias-same', `"${label(e)}" has the same text as its root.`, loc);
         if (e.aliasKind && !ALIAS_KINDS.includes(e.aliasKind)) add('warn', 'alias-kind', `Alias "${label(e)}" has an unknown kind (${e.aliasKind}).`, loc);

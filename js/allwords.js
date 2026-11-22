@@ -9,7 +9,7 @@ const S = { q: '', in: 'wordalias', mode: 'contains', flag: '', fam: '', status:
 
 const SCOPE = [['wordalias', 'search word or alias'], ['word', 'search the word'], ['alias', 'search the alias'], ['meaning', 'search the meaning'], ['theme', 'search the themes'], ['any', 'search everything']];
 const MODES = [['contains', 'contains'], ['starts', 'starts with'], ['exact', 'exactly']];
-const FLAGS = [['', 'any flags'], ['adult', 'adult'], ['sensitive', 'sensitive'], ['tm', 'trademark'], ['vulgar', 'vulgar'], ['region', 'region-specific'], ['none', 'no flags']];
+const FLAGS = [['', 'any flags'], ['adult', 'adult'], ['sensitive', 'sensitive'], ['tm', 'trademark'], ['offensive', 'offensive'], ['region', 'region-specific'], ['none', 'no flags']];
 const SHOW = [['', 'all words'], ['on', 'enabled only'], ['off', 'disabled only'], ['roots', 'roots only'], ['alias', 'aliases only'], ['orphan', 'not in any theme']];
 const STATUS = [['', 'any status'], ['new', 'new (by hand)'], ['gen', 'generated, not reviewed'], ['rev', 'reviewed']];
 
@@ -46,7 +46,7 @@ function colGrip(k, thEl) {
   return thEl;
 }
 
-const flagList = e => ['adult', 'sensitive', 'tm', 'vulgar'].filter(k => e[k]);
+const flagList = e => ['adult', 'sensitive', 'tm', 'offensive'].filter(k => e[k]);
 const themeNames = (P, e) => linkIds(P, e).map(id => P.ix.theme.get(id)?.name).filter(Boolean);
 
 // The other names of an entry: the aliases that point at it (and, for an alias, the word it is an alias of).

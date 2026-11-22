@@ -1,7 +1,7 @@
 // Data model. Pure functions over a plain project object, so they can be tested in Node.
 //
-// Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, lang, foreign, region[], note }
-// Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, fam, adult, sensitive, tm, vulgar, region[],
+// Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, offensive, lang, foreign, region[], note }   (offensive: written only when true)
+// Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, fam, adult, sensitive, tm, offensive, region[],
 //         aliasOf, aliasKind, typ{ themeId: typicality }, status, note, kin[] }
 //         kin: ids of other root entries of the same word family linked in other themes (joy / joyful); stored on both entries (symmetric), never on an alias. The export keeps kin apart in a level (clash).
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
@@ -11,7 +11,7 @@
 import { childrenOf } from './outline.js';
 
 export const POS = ['noun', 'verb', 'adjective', 'adverb', 'other'];
-export const flagKey = e => (e.adult ? 'a' : 'z') + (e.sensitive ? 's' : 'z') + (e.tm ? 't' : 'z') + (e.vulgar ? 'v' : 'z') + (e.region.length ? 'r' : 'z');   // flagged words sort first: adult, sensitive, trademark, vulgar, region
+export const flagKey = e => (e.adult ? 'a' : 'z') + (e.sensitive ? 's' : 'z') + (e.tm ? 't' : 'z') + (e.offensive ? 'o' : 'z') + (e.region.length ? 'r' : 'z');   // flagged words sort first: adult, sensitive, trademark, offensive, region
 export const TYPES = ['common', 'person', 'place', 'org', 'title', 'proper', 'acronym', 'phrase'];
 export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named person or character', place: 'a named place', org: 'company, brand, team, group',
   title: 'book, film, song, game, artwork', proper: 'other proper name (event, era, deity)', acronym: 'letters said as letters or a word (NASA, UFO)', phrase: 'idiom or set phrase' };
@@ -32,7 +32,7 @@ export function newProject() {
 }
 
 export function entryDefaults() {
-  return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, fam: 0, adult: false, sensitive: false, tm: false, vulgar: false,
+  return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, fam: 0, adult: false, sensitive: false, tm: false, offensive: false,
     region: [], aliasOf: 0, aliasKind: '', typ: {}, status: 'new', note: '', nameOkIn: [], use: {}, show: {}, kin: [] };   // nameOkIn: themes where the full text is the real name and may contain the theme's words (dried apple in dried fruits); use: { themeId: id of a form alias to show instead of the root in that theme }; show: { themeId: text } the theme shows this shorter text for the entry (rock for rock garden)
 }
 
@@ -127,14 +127,14 @@ export const blendRatings = (a, b) => {
 // 0 when identifiability is unrated; identifiability alone when popularity is.
 export const themeDifficulty = t => !t.ident ? 0 : !t.pop ? t.ident : round1(Math.min(5, Math.max(1, t.ident + 0.5 * (t.pop - 3))));
 
-// Theme flags with inheritance: adult, sensitive, trademark, language-specific, foreign-language and disabled pass down the tree; regions are unioned.
+// Theme flags with inheritance: adult, sensitive, trademark, offensive, language-specific, foreign-language and disabled pass down the tree; regions are unioned.
 export function eff(P, tid) {
   const ix = P.ix;
   if (ix.eff.has(tid)) return ix.eff.get(tid);
   const t = ix.theme.get(tid);
-  if (!t) return { adult: false, sensitive: false, tm: false, lang: false, foreign: false, enabled: false, region: [] };
-  const p = t.parent && t.parent !== tid ? eff(P, t.parent) : { adult: false, sensitive: false, tm: false, lang: false, foreign: false, enabled: true, region: [] };
-  const r = { adult: p.adult || t.adult, sensitive: p.sensitive || t.sensitive, tm: p.tm || t.tm, lang: p.lang || t.lang, foreign: p.foreign || !!t.foreign,
+  if (!t) return { adult: false, sensitive: false, tm: false, offensive: false, lang: false, foreign: false, enabled: false, region: [] };
+  const p = t.parent && t.parent !== tid ? eff(P, t.parent) : { adult: false, sensitive: false, tm: false, offensive: false, lang: false, foreign: false, enabled: true, region: [] };
+  const r = { adult: p.adult || t.adult, sensitive: p.sensitive || t.sensitive, tm: p.tm || t.tm, offensive: p.offensive || !!t.offensive, lang: p.lang || t.lang, foreign: p.foreign || !!t.foreign,
     enabled: p.enabled && t.enabled, region: [...new Set([...p.region, ...t.region])] };
   ix.eff.set(tid, r);
   return r;
@@ -271,7 +271,7 @@ export function unlinkEntry(P, e, tid) {
 const SAME_WORD = ['spelling', 'form'];   // alias kinds that are the root's own word written another way: the root's word-level data fits them
 // Deleting a root promotes an alias: the first spelling, else the first that is not a form, else the first. It takes the root's place everywhere:
 // its links (with the root's rating where it had none of its own), its synonym groups, its kin, adult and sensitive (they follow the meaning), its region when it has none of its own (the export judged it on the root's),
-// and the shown text of a theme when it is the same word or its text contains that text. When it is the same word (spelling, form) it also takes trademark, vulgar, the name allowances and the forms the themes used.
+// and the shown text of a theme when it is the same word or its text contains that text. When it is the same word (spelling, form) it also takes trademark, offensive, the name allowances and the forms the themes used.
 // When it is another word, the root's spellings and abbreviations become its synonyms (a spelling of the old root is not a spelling of the new one); forms keep their kind.
 // The deleted id leaves every synonym group and every `use`. Returns what updateIndex needs.
 export function deleteEntry(P, e) {
@@ -286,7 +286,7 @@ export function deleteEntry(P, e) {
     first.show ||= {};
     for (const [tid, s] of Object.entries(e.show || {})) if (!first.show[tid] && (same || first.text.toLowerCase().includes(s.toLowerCase()))) first.show[tid] = s;
     if (same) {
-      first.tm ||= e.tm; first.vulgar ||= e.vulgar;
+      first.tm ||= e.tm; first.offensive ||= e.offensive;
       first.nameOkIn = [...new Set([...(first.nameOkIn || []), ...(e.nameOkIn || [])])];
       first.use ||= {};
       for (const [tid, id] of Object.entries(e.use || {})) if (id !== first.id && !first.use[tid] && als.some(a => a.id === id)) first.use[tid] = id;
@@ -423,6 +423,7 @@ export const FLAG_HELP = {
   tm: 'Trademarks or copyrighted names: brands, titles, characters, and so on.',
   adult: 'Adult: drugs, sexual content, violence, and so on.',
   sensitive: 'Sensitive: religion, politics, death, and so on. The game can keep these out of early or easy levels.',
+  offensive: 'Offensive: some players object to this word, in any of its meanings: swear words, slurs, sexual and body words, mild insults, and the harmless meaning of a word whose rude meaning comes to mind first (ass [donkey]). Independent of adult and sensitive. Left out of the export unless included (DESIGN-entries.md 3.8).',
   lang: 'Language-specific: depends on the spelling, sound or slang of the library language, so it will not translate: rhymes, puns, slang, acronyms, anagrams, spoonerisms, wordplay, and so on.',
   foreign: 'Foreign language: the words are mostly NOT English (numbers, days, colors or greetings in another language, Swahili or Maori words). English words of foreign origin (loanwords, french phrases used in English) do not count. The game can hold these back until later levels.',
 };

@@ -1,7 +1,8 @@
 // Library export: themes and words filtered by flags, written as a compact columnar JSON file.
 //
 // Filters are applied per link (entry in theme), because a flag can come from the entry or from the theme it sits in.
-// For adult, sensitive and trademark a link is flagged when the entry OR the theme (or any ancestor) has the flag.
+// For adult, sensitive, trademark and offensive a link is flagged when the entry OR the theme (or any ancestor) has the flag.
+// Offensive words and themes are left out unless the options include them (DESIGN-entries.md 3.8: the toggle is off by default).
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
 import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, shownFor, POS, TYPES, REGIONS } from './model.js';
@@ -11,7 +12,7 @@ import { breakPoints } from './breaks.js';
 import { clashGroups } from './family.js';
 
 export const DEFAULT_EXPORT = {
-  adult: 'include', sensitive: 'include', tm: 'include', vulgar: 'include', lang: 'include',
+  adult: 'include', sensitive: 'include', tm: 'include', offensive: 'exclude', lang: 'include',
   region: { mode: 'all', codes: [...REGIONS], v: 2 }, // 'all' | 'exclude'; codes = the regions the setting applies to (none ticked = nothing is left out)
   synonyms: true, spellings: true,                  // include aliases of each kind
   zipf: false, gloss: false, notes: false,
@@ -19,9 +20,9 @@ export const DEFAULT_EXPORT = {
   maxEntryWords: 0,                                 // longest entry (in words) to include; 0 = no limit
 };
 export const PRESETS = {
-  'full': {},
-  'family': { adult: 'exclude', vulgar: 'exclude' },
-  'family, no trademarks': { adult: 'exclude', vulgar: 'exclude', tm: 'exclude' },
+  'full': { offensive: 'include' },
+  'family': { adult: 'exclude', offensive: 'exclude' },
+  'family, no trademarks': { adult: 'exclude', offensive: 'exclude', tm: 'exclude' },
 };
 
 const pass = (mode, flagged) => mode === 'include' || (mode === 'exclude' ? !flagged : flagged);
@@ -36,11 +37,12 @@ export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r
 // Bit layouts, written into the file so the reader does not have to guess.
 // What a theme is: category (kinds of one thing), place, property (members share an attribute), wordplay (members chosen by spelling or sound; rule says how to test) and compound (members combine with a shared word).
 export const THEME_KINDS = ['category', 'place', 'property', 'wordplay', 'compound'];
-export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32, locked: 64, foreign: 128 };   // locked: show exactly the linked word, no regional or family substitution
-export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, vulgar: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256, synonym: 512 };
+export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32, locked: 64, foreign: 128, offensive: 256 };   // locked: show exactly the linked word, no regional or family substitution
+export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, offensive: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256, synonym: 512 };
 
 export function buildExport(P, opt0 = {}) {
   const o = Object.assign({}, DEFAULT_EXPORT, opt0);
+  if (opt0.offensive === undefined && opt0.vulgar !== undefined) o.offensive = opt0.vulgar;   // presets saved before the flag was renamed (2026-11-22)
   o.region = fixRegion(o.region);
   const report = { themesIn: 0, themesOut: 0, entriesIn: 0, entriesOut: 0, droppedThin: [], notes: [] };
   const ix = P.ix;
@@ -57,12 +59,12 @@ export function buildExport(P, opt0 = {}) {
   for (const e of candidates) {
     if (e.aliasOf && !(['synonym', 'regional', 'abbreviation', 'translation'].includes(e.aliasKind) ? o.synonyms : o.spellings)) continue;   // spellings and forms (skis for ski) go together; other names for the thing follow the synonyms option
     if (o.maxEntryWords > 0 && e.text.trim().split(/\s+/).length > o.maxEntryWords) continue;
-    if (!pass(o.vulgar, e.vulgar) || !regionPass(o.region, ix.entry.get(e.aliasOf || e.id).region)) continue;   // region is judged on the root only: an alias follows its root, never its own tag
+    if (!regionPass(o.region, ix.entry.get(e.aliasOf || e.id).region)) continue;   // region is judged on the root only: an alias follows its root, never its own tag
     const links = [];
     for (const tid of linkIds(P, e)) {
       if (!okTheme.get(tid)) continue;
       const f = eff(P, tid);
-      if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, e.sensitive || f.sensitive) || !pass(o.tm, e.tm || f.tm)) continue;
+      if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, e.sensitive || f.sensitive) || !pass(o.tm, e.tm || f.tm) || !pass(o.offensive, e.offensive || f.offensive)) continue;
       // A theme may show the entry under a shorter text (show) or as one of its forms (use); that text and its part of speech travel with the link.
       const sh = shownFor(P, e, tid);
       const r = Math.max(difficultyBand(P, e, tid), sh && sh.fam || 0);
@@ -178,7 +180,7 @@ export function buildExport(P, opt0 = {}) {
   for (const id of ids) {
     const e = ix.entry.get(id), links = keep.get(id);
     let flags = 0;
-    if (e.adult) flags |= ENTRY_BITS.adult; if (e.sensitive) flags |= ENTRY_BITS.sensitive; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.vulgar) flags |= ENTRY_BITS.vulgar;
+    if (e.adult) flags |= ENTRY_BITS.adult; if (e.sensitive) flags |= ENTRY_BITS.sensitive; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.offensive) flags |= ENTRY_BITS.offensive;
     if (e.aliasOf && e.aliasKind === 'spelling') flags |= ENTRY_BITS.spelling;
     if (e.aliasOf && e.aliasKind === 'form') flags |= ENTRY_BITS.form;
     if (e.aliasOf && e.aliasKind === 'regional') flags |= ENTRY_BITS.regional;
@@ -216,7 +218,7 @@ export function buildExport(P, opt0 = {}) {
 
   const themeRows = themes.map(t => {
     const f = eff(P, t.id);
-    const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0) | (f.foreign ? THEME_BITS.foreign : 0)
+    const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0) | (f.foreign ? THEME_BITS.foreign : 0) | (f.offensive ? THEME_BITS.offensive : 0)
       | (t.complete ? THEME_BITS.complete : 0)
       | (themeLocked(P, t) ? THEME_BITS.locked : 0)
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group

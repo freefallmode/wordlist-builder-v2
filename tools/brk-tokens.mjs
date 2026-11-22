@@ -1,4 +1,4 @@
-// Lists the long words (8+ letters) that appear in the whole library's enabled entries and theme names (what tools/apply-words.mjs counts, adult and vulgar
+// Lists the long words (8+ letters) that appear in the whole library's enabled entries and theme names (what tools/apply-words.mjs counts, adult and offensive
 // entries included, whatever a preset leaves out of the export) but are missing from data/breaks-en.txt,
 // and writes them in chunks of 700 to tools/gen/brk/todo-N.txt. Run from anywhere: node tools/brk-tokens.mjs [library.project.json]
 import fs from 'node:fs';

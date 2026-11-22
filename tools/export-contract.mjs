@@ -20,10 +20,11 @@ export const ENTRY_COLUMNS = ['text', 'pos', 'type', 'flags', 'familiarity', 're
 export const LINK_FIELDS = ['theme', 'difficulty', 'typicality', 'shown'];   // Links table: the full-JSON reader assumes stride 4 in this order
 export const MAX_DEPTH = 40, NAME_MAX = 30, MIN_WORDS = 4;
 const T_ADULT = 1, T_GROUP = 32;                                     // theme flags the game hard-codes (Themes: flags)
-const E_DROP = 1 | 8, E_SPELLING = 16, E_REGIONAL = 64;              // entry flags: adult and vulgar are dropped (game g25 holds sensitive, 2, back to the plan's sensitive start level instead); spelling / regional pick the dialect text
+const E_DROP = 1 | 8, E_SPELLING = 16, E_REGIONAL = 64;              // entry flags: adult and offensive (8, called vulgar until 2026-11-22) are dropped (game g25 holds sensitive, 2, back to the plan's sensitive start level instead); spelling / regional pick the dialect text
 
 // Themes: rule. The game's wordplay grammar lives in js/model.js (parseRule), shared with js/validate.js; see wordplayRuleIssues below.
 import { parseRule } from '../js/model.js';
+import { offensivePiece } from '../js/offensive.js';
 export { parseRule };
 
 // ----- Themes: rule (wordplay rule grammar and the tested rules' data; batch v414, game g24) -----
@@ -179,8 +180,14 @@ export function checkContract(X) {
   for (let l = 0; l < nL; l++) { const i = ownerOf[l]; if (!shownRoot[i]) continue; const t = links[4 * l]; if (!usable.has(t)) usable.set(t, new Set()); usable.get(t).add(i); }
   for (let t = 0; t < nT; t++) if (linked[t] && !(themes[t][cFlags] & (T_ADULT | T_GROUP))) {
     const k = usable.get(t)?.size || 0;
-    if (k < MIN_WORDS) add('warn', 'contract-thin', `${k} usable word${k === 1 ? '' : 's'} (shown roots: not adult or vulgar); a theme needs at least ${MIN_WORDS}`, tName(t));
+    if (k < MIN_WORDS) add('warn', 'contract-thin', `${k} usable word${k === 1 ? '' : 's'} (shown roots: not adult or offensive); a theme needs at least ${MIN_WORDS}`, tName(t));
   }
+  // Line breaks (DESIGN-entries.md 3.8): no break may leave an offensive piece on either side (cock|tail, Hitch|cock). Entry texts, shown texts and theme names
+  // that are not offensive themselves; fix one by editing its line in data/breaks-en.txt.
+  const pieces = (text, brk, at) => { for (const b of Array.isArray(brk) ? brk : []) { const l = text.slice(0, b).match(/[\p{L}']+$/u)?.[0], r = text.slice(b).match(/^[\p{L}']+/u)?.[0], w = (l && offensivePiece(l)) || (r && offensivePiece(r)); if (w) { add('warn', 'contract-offensive-break', `the break ${text.slice(0, b)}-${text.slice(b)} leaves the offensive piece "${w}"`, at); return; } } };
+  for (let i = 0; i < n; i++) if (!(ent.flags[i] & 8)) pieces(String(ent.text[i]), ent.breaks[i], eName(i));
+  shown.forEach((x, j) => { if (Array.isArray(x)) pieces(String(x[0]), x[2], `shown text ${j + 1} "${x[0]}"`); });
+  for (let t = 0; t < nT; t++) if (!(themes[t][cFlags] & 256)) pieces(String(themes[t][cName]), themes[t][cBreaks], tName(t));
   return out;
 }
 

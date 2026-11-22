@@ -61,9 +61,9 @@ const int = { type: 'integer' };
 const aliasSchema = { type: 'object', additionalProperties: false, required: ['text', 'gloss', 'kind', 'region', 'familiarity', 'typicality'],
   properties: { text: str, gloss: str, kind: { type: 'string', enum: ['synonym', 'regional', 'spelling'] }, region: { type: 'array', items: { type: 'string', enum: REGIONS } }, familiarity: int, typicality: int } };
 const entrySchema = { type: 'object', additionalProperties: false,
-  required: ['text', 'gloss', 'pos', 'type', 'familiarity', 'typicality', 'adult', 'sensitive', 'tm', 'vulgar', 'region', 'aliases'],
+  required: ['text', 'gloss', 'pos', 'type', 'familiarity', 'typicality', 'adult', 'sensitive', 'tm', 'offensive', 'region', 'aliases'],
   properties: { text: str, gloss: str, pos: { type: 'string', enum: POS }, type: { type: 'string', enum: TYPES }, familiarity: int, typicality: int,
-    adult: bool, sensitive: bool, tm: bool, vulgar: bool, region: { type: 'array', items: { type: 'string', enum: REGIONS } }, aliases: { type: 'array', items: aliasSchema } } };
+    adult: bool, sensitive: bool, tm: bool, offensive: bool, region: { type: 'array', items: { type: 'string', enum: REGIONS } }, aliases: { type: 'array', items: aliasSchema } } };
 export const WORDS_SCHEMA = { type: 'object', additionalProperties: false, required: ['entries'], properties: { entries: { type: 'array', items: entrySchema } } };
 
 export const GAME = `You build the word lists for a themed word-sorting game. A level shows words from 8 to 12 themes, four words per theme, mixed together; the player sorts each word into its theme (and the theme's name is revealed when it is complete). Players are typical adult English readers, and the game has five difficulty modes from easy to ultra-hard, so every theme needs words across the whole range of how well known they are.
@@ -85,8 +85,8 @@ Flags (true only when it really applies to this meaning of the word):
 - tm: ${FLAG_HELP.tm}
 - adult: ${FLAG_HELP.adult}
 - sensitive: ${FLAG_HELP.sensitive}
-- vulgar: crude or offensive wording in this meaning.
-Themes carry the same adult, sensitive and trademark flags, plus a language-specific flag and a foreign-language flag (the theme's words are mostly not English).
+- offensive: ${FLAG_HELP.offensive} Never list a word whose meaning here is crude, vulgar or a slur; mild insults are fine but offensive. A phrase is offensive when the word keeps its offending meaning (wicked witch), not when the phrase names something harmless (witch hazel); a name only when the whole name is the word.
+Themes carry the same adult, offensive, sensitive and trademark flags, plus a language-specific flag and a foreign-language flag (the theme's words are mostly not English).
 - ${FLAG_HELP.lang}
 Theme flags are inherited by its words' links, so a word does not need a flag only because its theme has one.
 region: only if the word is mainly known in particular regions, using the codes (US, CA, UK, IE, AU, NZ, ZA, IN, TR); otherwise empty.

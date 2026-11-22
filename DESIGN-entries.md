@@ -98,7 +98,7 @@ A root and all its aliases form an **alias family**: one meaning, one primary (t
 
 What the player is asked to recognise is the **full term**, so the entry, its ratings, part of speech, type and flags describe the full term, never the bare word.
 
-- **Compound themes** (`tkind` compound, rule `compound-end:room` or `compound-start:fire`): each member is an entry for the full term (`break room`, `firefly`); the theme shows the short word through `show` (`break`, `fly`). The entry carries `nameOkIn` for the theme, since the full term contains the theme's shared word. `fam`, the link rating, pos, type, adult, sensitive, tm, vulgar and region are judged for the full term (a harmless word can make a sensitive term: `crack house`). Loose phrases (an ordinary word plus the shared word: `good time`) are not members; only fixed terms are.
+- **Compound themes** (`tkind` compound, rule `compound-end:room` or `compound-start:fire`): each member is an entry for the full term (`break room`, `firefly`); the theme shows the short word through `show` (`break`, `fly`). The entry carries `nameOkIn` for the theme, since the full term contains the theme's shared word. `fam`, the link rating, pos, type, adult, sensitive, tm, offensive and region are judged for the full term (a harmless word can make a sensitive term: `crack house`). Loose phrases (an ordinary word plus the shared word: `good time`) are not members; only fixed terms are.
 - **Kinds-of-X themes with modifier members:** a member that is only a modifier and does not mean the thing without its head noun (`green`, `herbal`, `bubble` in teas; `mute` in swans; `igneous` in rocks; `solid` in line types; `prime` in number types) is the full-term entry (`green tea`) shown as the modifier. A bare word that already means the thing (`pine`, `tote`, `leatherback`, `Pacific`, a saint's first name) stays as it is.
 - **Kinds themes: the test for the short display (2026-11-06).** The question is whether the short form, seen alone in the theme, still identifies the kind.
   - *Names the thing alone* stays bare: breed and variety names people say alone (`merino`, `Gala`, `Siberian`, `Newfoundland`), genre and material names (`axe`, `bomba`, `veneer`), sibling notations (`9-volt`, `AA`).
@@ -169,8 +169,9 @@ The game must be able to leave out every word some players have objected to. The
   - `gitch`: kept, unflagged (ordinary slang for underwear).
   - Deleted: `ass` [buttocks], `lap dance`, `twerk`, `gyatt`, `bollocks`, `bugger`, `tosser`, `WTF`, `Brainfuck`, `schmuck`, `putz`, `tuchus`, `fart`.
   - Also deleted: `butt` (body parts) and `spotted dick`.
+- **Built (2026-11-22, code only; the library is unchanged):** the items below except the two batches and the notice. Checks: `offensive-word` and `offensive-theme` (warn), `offensive-unlisted` (info), `contract-offensive-break` (warn, export contract). Counts at v429: 111, 2, 1 and 107.
 - **To build:**
-  - the cleaned list `tools/offensive-words.txt` and an allow list for names and harmless phrases;
+  - the cleaned list `js/offensive-words.js` (built by `tools/gen/offensive-list-make.mjs`), the matcher `js/offensive.js` and the allow list `js/offensive-allow.js` (entry ids, Simon's approval);
   - the field rename in the code, the export (bit 8), the tests, the generation prompts and GAME-CONTRACT.md, and a notice to the game when Simon says;
   - the theme flag and the export toggle;
   - the checks: an error for an entry or theme name that matches the list and is not flagged or allowed; a warning for a flagged entry whose word is not on the list; a check for offensive pieces at line breaks;

@@ -50,7 +50,7 @@ aside { border-right: 1px solid var(--line); display: flex; flex-direction: colu
 .badge { font-size: 10px; border-radius: 4px; padding: 0 4px; border: 1px solid var(--line); color: var(--dim); flex: none; line-height: 15px; }
 .badge.complete { color: var(--ok); border-color: var(--ok); } .badge.adult { color: var(--bad); border-color: var(--bad); }
 .badge.sens { color: var(--warn); border-color: var(--warn); } .badge.tm { color: #7a5aa8; border-color: #7a5aa8; }
-.badge.lang { color: #2b76a8; border-color: #2b76a8; } .badge.region { color: #a8572b; border-color: #a8572b; } .badge.vulgar { color: var(--bad); border-color: var(--bad); }
+.badge.lang { color: #2b76a8; border-color: #2b76a8; } .badge.region { color: #a8572b; border-color: #a8572b; } .badge.offensive { color: var(--bad); border-color: var(--bad); }
 .sechead { padding: 8px 10px 2px; font-size: 12px; color: var(--dim); text-transform: uppercase; letter-spacing: .04em; }
 .hit { padding: 3px 10px; cursor: pointer; display: flex; flex-direction: column; } .hit:hover { background: var(--hover); }
 .hit .path { color: var(--dim); font-size: 12px; }

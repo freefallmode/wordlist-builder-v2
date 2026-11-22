@@ -14,9 +14,9 @@ export function allThemesView(c, open) {
   const own = t => (t.group ? 0 : c.own.get(t.id) || 0);
   const kids = t => (P.ix.kids.get(t.id) || []).length;
   const parentName = t => (t.parent && P.ix.theme.get(t.parent)?.name) || '';
-  const flagsOf = t => { const ef = eff(P, t.id); return [ef.adult && 'A', ef.sensitive && 'S', ef.tm && 'T', ef.lang && 'L', ef.foreign && 'F', t.complete && '✓'].filter(Boolean); };
+  const flagsOf = t => { const ef = eff(P, t.id); return [ef.adult && 'A', ef.offensive && 'O', ef.sensitive && 'S', ef.tm && 'T', ef.lang && 'L', ef.foreign && 'F', t.complete && '✓'].filter(Boolean); };
   const keep = {
-    play: t => !t.group, group: t => t.group, adult: t => eff(P, t.id).adult, sensitive: t => eff(P, t.id).sensitive, tm: t => eff(P, t.id).tm, lang: t => eff(P, t.id).lang, foreign: t => eff(P, t.id).foreign,
+    play: t => !t.group, group: t => t.group, adult: t => eff(P, t.id).adult, offensive: t => eff(P, t.id).offensive, sensitive: t => eff(P, t.id).sensitive, tm: t => eff(P, t.id).tm, lang: t => eff(P, t.id).lang, foreign: t => eff(P, t.id).foreign,
     region: t => eff(P, t.id).region.length > 0, complete: t => t.complete, off: t => !eff(P, t.id).enabled, empty: t => !t.group && own(t) === 0, thin: t => !t.group && own(t) < min,
   }[S.show];
   const q = S.q.trim().toLowerCase();

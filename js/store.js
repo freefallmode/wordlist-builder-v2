@@ -71,6 +71,7 @@ export function parseProject(text) {
   P.settings = Object.assign(newProject().settings, j.project.settings);
   P.themes = j.themes.slice();
   P.entries = j.entries.map(e => Object.assign(entryDefaults(), e));
+  for (const e of P.entries) if ('vulgar' in e) { e.offensive ||= !!e.vulgar; delete e.vulgar; }   // the flag was called vulgar until 2026-11-22 (DESIGN-entries.md 3.8): an older file still loads, and saving writes the new name
   let n = Math.max(P.nextId || 1, 1);
   for (const e of P.entries) if (e.id + 1 > n) n = e.id + 1;   // a loop, not Math.max(...entries): spreading overflows the stack above ~120,000 entries
   P.nextId = n;

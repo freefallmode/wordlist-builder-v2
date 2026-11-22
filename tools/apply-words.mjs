@@ -5,8 +5,8 @@
 //   DATA   { themeId: [row, ...] }  row = [text, familiarity, typicality, opts]
 //            familiarity  how well known the word itself is (1 every child ... 5 few people)
 //            typicality  how typical the word is of THIS theme (1 the first words anyone names for it ... 5 real but peripheral)
-//            opts   g gloss, pos, type, tm, adult, sens, vulgar, reg [regions], note,
-//                   al [[text, kind, familiarity, typicality, regions, { g, type, adult, sens, tm, vulgar }], ...]
+//            opts   g gloss, pos, type, tm, adult, sens, offensive (old name: vulgar), reg [regions], note,
+//                   al [[text, kind, familiarity, typicality, regions, { g, type, adult, sens, tm, offensive }], ...]
 //   ALIASES [[themeId, rootText, rootGloss, [alias row, ...]], ...]  adds aliases to a root that already exists (e.g. from an earlier batch)
 //   FIXES  [{ gloss: [text, themeId, newGloss] } | { merge: [text, [themeId, ...], gloss] } | { split: [text, themeId, newGloss, {type, pos, fam}] } | { del: [text, themeId] }, ...]  edits existing entries first (the entry is found by its text and a theme it is in):
 //          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); split moves one theme link of an entry that was linked for a different meaning onto a new entry with its own meaning label; del removes one
@@ -88,12 +88,12 @@ for (const [tid, rows] of Object.entries(DATA)) {
     let e = sameText(P, text).find(x => (x.gloss || '') === (o.g || ''));
     if (e) { if (e.typ[tid] === undefined) { e.typ[tid] = typ; stats.linked++; } else stats.kept++; continue; }
     e = addEntry(P, text, { gloss: o.g || '', pos: o.pos || 'noun', type: o.type || 'common', fam: clampRating(r), typ: { [tid]: typ }, tm: !!o.tm, adult: !!o.adult,
-      vulgar: !!o.vulgar, sensitive: !!o.sens, region: o.reg || [], note: o.note || '', status: 'gen' });
+      offensive: !!(o.offensive ?? o.vulgar), sensitive: !!o.sens, region: o.reg || [], note: o.note || '', status: 'gen' });
     indexEntry(P, e); stats.made++;
     for (const [at, kind, ar, ai, areg = [], ao = {}] of o.al || []) {
       if (!(ar >= 1 && ar <= 5 && ai >= 1 && ai <= 5)) throw Error(`bad alias rating on "${at}"`);
       const a = addEntry(P, at, { gloss: ao.g || '', pos: e.pos, type: ao.type || e.type, fam: clampRating(ar), aliasOf: e.id, aliasKind: kind, region: areg,
-        tm: ao.tm ?? e.tm, adult: ao.adult ?? e.adult, sensitive: ao.sens ?? e.sensitive, vulgar: !!ao.vulgar, status: 'gen' });
+        tm: ao.tm ?? e.tm, adult: ao.adult ?? e.adult, sensitive: ao.sens ?? e.sensitive, offensive: !!(ao.offensive ?? ao.vulgar), status: 'gen' });
       if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
       indexEntry(P, a); stats.aliases++;
     }
@@ -106,7 +106,7 @@ for (const [tid, rootText, rootGloss, rows] of ALIASES || []) {
   for (const [at, kind, ar, ai, areg = [], ao = {}] of rows) {
     if (sameText(P, at).some(x => (x.gloss || '') === (ao.g || '') && x.aliasOf === root.id)) continue;
     const a = addEntry(P, at, { gloss: ao.g || '', pos: root.pos, type: ao.type || root.type, fam: clampRating(ar), aliasOf: root.id, aliasKind: kind, region: areg,
-      tm: ao.tm ?? root.tm, adult: ao.adult ?? root.adult, sensitive: ao.sens ?? root.sensitive, vulgar: !!ao.vulgar, status: 'gen' });
+      tm: ao.tm ?? root.tm, adult: ao.adult ?? root.adult, sensitive: ao.sens ?? root.sensitive, offensive: !!(ao.offensive ?? ao.vulgar), status: 'gen' });
     if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
     indexEntry(P, a); stats.aliases++;
   }
