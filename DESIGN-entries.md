@@ -204,6 +204,7 @@ This section is a dated log: each entry records what was decided or done at the 
 - Theme difficulty is never stored; it is computed from `ident` and `pop`. A complete theme has a note listing its exact members.
 - Capitals: a word is shown the way it is written for its sense; the rule and the lint are in "Capital rule and lint" below. A case-only shown text is not used in wordplay or compound themes, nor on an entry that has regional or spelling aliases.
 - Export additions are additive within a format version (3 until 2026-11-18, now 4); the field list is DESIGN.md section 8.
+- A theme and its "X words" theme of the same topic are one theme (Simon, 2026-11-22; replaces v408's "parent topic / X words child: kept"). An "X words" theme of how people talk about X (pirate talk, wine tasting) stays and is renamed for that. LIBRARY-RULES.md section 6.
 
 **Log**
 

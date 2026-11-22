@@ -88,3 +88,5 @@ Rule used: two themes holding the same kind of words become one; the place theme
 Wrong senses unlinked: dealer (casino sense) from art gallery (the art dealer comes in, shown "dealer"); nurses station from hospital (nurses' station comes in).
 Three entries became spelling aliases of their twins (ids kept): kids menu -> kids' menu, nurses station -> nurses' station, baptistry -> baptistery.
 Export: themes 3,233 -> 3,224, theme indexes shift from index 200 (kitchen_brigade); rows 61,029 unchanged; links 109,503 -> 109,262 (link positions shift from row 153, turkey, on). Please measure against v405 (the pinned version; v407 was not pinned).
+
+Superseded 2026-11-22 (Simon): topic / "X words" pairs are no longer kept; same-topic twins merge, and an "X words" theme of how people talk about X is renamed for that (pirate talk, wine tasting). LIBRARY-RULES.md section 6.
