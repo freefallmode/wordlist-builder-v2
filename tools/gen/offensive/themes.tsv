@@ -1,0 +1,3185 @@
+id	name	parent	flags	name has a list word
+fruits	fruits	Food & Drink		
+citrus_fruits	citrus fruits	fruits		
+orange_varieties	orange varieties	citrus fruits		
+lime_varieties	lime varieties	citrus fruits		
+berries	berries	fruits		
+tropical_fruits	tropical fruits	fruits		
+stone_fruits	stone fruits	fruits		
+cherry_varieties	cherry varieties	stone fruits		
+plum_varieties	plum varieties	stone fruits		
+melons	melons	fruits		
+dried_fruits	dried fruits	fruits		
+apple_varieties	apple varieties	fruits		
+asian_fruits	Asian fruits	fruits		
+nuts	nuts	fruits		
+edible_seeds	edible seeds	fruits		
+parts_of_a_fruit	parts of a fruit	fruits		
+vegetables	vegetables	Food & Drink		
+root_vegetables	root vegetables	vegetables		
+leafy_greens	leafy greens	vegetables		
+lettuce_varieties	lettuce varieties	leafy greens		
+squashes	squashes	vegetables		
+beans_and_pulses	beans and pulses	vegetables		
+onion_family	onion family	vegetables		
+onion_varieties	onion varieties	onion family		
+cabbage_family	cabbage family	vegetables		
+mushrooms	mushrooms	vegetables		
+andean_crops	Andean crops	vegetables		
+vegetables_that_are_really_fruits	vegetables that are fruits	vegetables		
+meat_and_seafood	meat and seafood	Food & Drink		
+cuts_of_meat	cuts of meat	meat and seafood		
+poultry	poultry	meat and seafood		
+game_meats	game meats	meat and seafood		
+sausages	sausages	meat and seafood		
+cured_meats	cured meats	meat and seafood		
+shellfish	shellfish	meat and seafood		
+fish_to_eat	fish to eat	meat and seafood		
+small_oily_fish	small oily fish	fish to eat		
+seafood_dishes	seafood dishes	meat and seafood		
+barbecue_foods	barbecue foods	meat and seafood		
+butcher_shop	butcher shop	meat and seafood		
+meat_from_mammals	meat from mammals	meat and seafood		
+dairy_and_eggs	dairy	Food & Drink		
+cheeses	cheeses	dairy		
+hard_cheeses	hard cheeses	cheeses		
+soft_cheeses	soft cheeses	cheeses		
+blue_cheeses	blue cheeses	cheeses		
+french_cheeses	French cheeses	cheeses		
+italian_cheeses	Italian cheeses	cheeses		
+british_cheeses	British cheeses	cheeses		
+types_of_milk	types of milk	dairy		
+cheese_dishes	cheese dishes	dairy		
+cheesemaking_words	cheesemaking words	dairy		
+breads_and_baking	breads and baking	Food & Drink		
+breads	breads	breads and baking		
+flatbreads	flatbreads	breads		
+pastries	pastries	breads and baking		
+french_pastries	French pastries	pastries		
+cakes	cakes	breads and baking		
+cookies	cookies	breads and baking		
+pies_and_tarts	pies and tarts	breads and baking		
+baking_ingredients	baking ingredients	breads and baking		
+flours	flours	breads and baking		
+cake_decorations	cake decorations	breads and baking		
+desserts_and_sweets	desserts and sweets	Food & Drink		
+ice_cream_flavors	ice cream flavors	desserts and sweets		
+frozen_desserts	frozen desserts	desserts and sweets		
+puddings	puddings	desserts and sweets		
+candy	candy	desserts and sweets		
+chocolates	chocolates	desserts and sweets		
+desserts_of_the_world	desserts of the world	desserts and sweets		
+indian_sweets	Indian sweets	desserts of the world		
+french_desserts	French desserts	desserts of the world		
+eastern_mediterranean_sweets	Eastern Mediterranean sweets	desserts of the world		
+toppings	dessert toppings	desserts and sweets		
+sweeteners	sweeteners	desserts and sweets		
+sugar_types	sugar types	sweeteners		
+jam_flavours	jam flavours	desserts and sweets		
+pasta_rice_and_grains	pasta, rice and grains	Food & Drink		
+pasta_shapes	pasta shapes	pasta, rice and grains		
+long_pasta	long pasta	pasta shapes		
+stuffed_pasta	stuffed pasta	pasta shapes		
+tube_pasta	tube pasta	pasta shapes		
+pasta_dishes	pasta dishes	pasta, rice and grains		
+noodles	noodles	pasta, rice and grains		
+noodle_dishes	noodle dishes	noodles		
+rice_dishes	rice dishes	pasta, rice and grains		
+east_asian_dishes	East Asian grain dishes	rice dishes		
+indian_dishes	Indian grain dishes	rice dishes		
+grains	grains	pasta, rice and grains		
+breakfast_cereals	breakfast cereals	pasta, rice and grains		
+dumplings	dumplings	pasta, rice and grains		
+rice_varieties	rice varieties	pasta, rice and grains		
+herbs_spices_and_sauces	herbs, spices and sauces	Food & Drink		
+herbs	herbs	herbs, spices and sauces		
+spices	spices	herbs, spices and sauces		
+spice_blends	spice blends	herbs, spices and sauces		
+chili_peppers	chili peppers	herbs, spices and sauces		
+sauces_and_condiments	sauces and condiments	herbs, spices and sauces		
+french_sauces	French sauces	sauces and condiments		
+asian_sauces	Asian sauces	sauces and condiments		
+salad_dressings	salad dressings	sauces and condiments		
+dips	dips	herbs, spices and sauces		
+spreads	spreads	herbs, spices and sauces		
+pickles_and_preserves	pickles and preserves	herbs, spices and sauces		
+oils_and_vinegars	oils and vinegars	herbs, spices and sauces		
+dishes	prepared dishes	Food & Drink		
+soups	soups	prepared dishes		
+stews	stews	prepared dishes		
+salads	salads	prepared dishes		
+sandwiches	sandwiches	prepared dishes		
+fast_food	fast food	prepared dishes		
+breakfast_foods	breakfast foods	prepared dishes		
+british_morning_foods	British morning foods	breakfast foods		
+snacks	snacks	prepared dishes		
+chip_flavors	chip flavors	snacks		
+street_food	street food	prepared dishes		
+potato_dishes	potato dishes	prepared dishes		
+savory_pies	savory pies	prepared dishes		
+pizza_styles	pizza styles	prepared dishes		
+pizza_toppings	pizza toppings	prepared dishes		
+pancakes_of_the_world	pancakes of the world	prepared dishes		
+burger_toppings	burger toppings	prepared dishes		
+asian_dishes	Asian dishes	prepared dishes		
+european_dishes	European dishes	prepared dishes		
+sandwich_fillings	sandwich fillings	prepared dishes		
+salad_ingredients	salad ingredients	prepared dishes		
+italian_food	Italian food	European food		
+pasta_meals	pasta meals	Italian food		
+french_food	French food	European food		
+spanish_food	Spanish food	European food		
+british_food	British food	European food		
+sweet_treats	British sweet treats	British food		
+scottish_dishes	Scottish dishes	British food		
+greek_food	Greek food	European food		
+german_food	German food	European food		
+eastern_european_food	Eastern European food	European food		
+turkish_food	Turkish food	cuisines		
+turkish_breakfast	Turkish breakfast	Turkish food		
+kebab_types	kebab types	Turkish food		
+middle_eastern_food	Middle Eastern food	cuisines		
+meze	meze	Middle Eastern food		
+persian_food	Persian food	Middle Eastern food		
+african_food	African food	cuisines		
+north_african_food	North African food	African food		
+west_african_food	West African food	African food		
+east_african_food	East African food	African food		
+south_african_food	South African food	African food		
+asian_food	Asian food	cuisines		
+indian_food	Indian food	Asian food		
+curries	curries	Indian food		
+street_snacks	Indian street snacks	Indian food		
+south_indian_dishes	South Indian dishes	Indian food		
+chinese_food	Chinese food	Asian food		
+yum_cha_dishes	yum cha dishes	Chinese food		
+takeaway_orders	Chinese takeaway orders	Chinese food		
+japanese_food	Japanese food	Asian food		
+japanese_sweets	Japanese sweets	Japanese food		
+sushi_types	sushi types	Asian food		
+korean_food	Korean food	Asian food		
+thai_food	Thai food	Asian food		
+vietnamese_food	Vietnamese food	Asian food		
+filipino_food	Filipino food	Asian food		
+oceanian_food	Oceanian food	cuisines		
+australian_food	Australian food	Oceanian food		
+bush_tucker	bush tucker	Oceanian food		
+pacific_islands_food	Pacific Islands food	Oceanian food		
+south_american_food	South American food	cuisines		
+peruvian_food	Peruvian food	South American food		
+brazilian_food	Brazilian food	South American food		
+argentinian_food	Argentinian food	South American food		
+south_american_drinks	South American drinks	South American food		
+north_american_food	North American food	cuisines		
+mexican_food	Mexican food	North American food		
+southern_food	Southern food	North American food		
+canadian_food	Canadian food	North American food		
+drinks	drinks	Food & Drink		
+hot_drinks	hot drinks	drinks		
+teas	teas	drinks		
+coffee_drinks	coffee drinks	drinks		
+coffee_words	coffee words	coffee drinks		
+soft_drinks	soft drinks	drinks		
+soda_flavors	soda flavors	soft drinks		
+juices	juices	drinks		
+asian_drinks	Asian drinks	drinks		
+cocktails	cocktails	drinks	S	
+wines	wines	drinks	S	
+red_wines	red wines	wines	S	
+grape_varieties	red wine grapes	red wines	S	
+wines_named_for_places	wines named for places	red wines	S	
+white_wines	white wines	wines	S	
+wine_words	wine world	wines	S	
+tasting_notes	wine tasting notes	wine world	S	
+winemaking_terms	winemaking terms	wine world	S	
+beers	beers	drinks	S	
+ale_types	ale types	beers	S	
+spirits	spirits	drinks	S	
+liqueurs	liqueurs	spirits	S	
+national_spirits	national spirits	spirits	S	
+nicknames_for_drinks	nicknames for drinks	drinks		
+alcoholic_drinks	alcoholic drinks	drinks		
+cooking	cooking	Food & Drink		
+cooking_methods	cooking methods	cooking		
+ways_to_cut_food	ways to cut food	cooking		
+cookware	cookware	cooking		
+bakeware	bakeware	cookware		
+kitchen_utensils	kitchen utensils	cooking		
+ways_to_preserve_food	ways to preserve food	cooking		
+in_the_pantry	in the pantry	cooking		
+lunchbox	lunchbox	cooking		
+picnic_basket	picnic basket	cooking		
+recipe_amounts	recipe amounts	cooking		
+ways_to_mix	ways to mix	cooking		
+kitchen_brigade	kitchen brigade	eating out		
+courses_of_a_meal	courses of a meal	eating out		
+meals_of_the_day	meals of the day	eating out		
+table_setting	table setting	eating out		
+fork_types	fork types	table setting		
+diner	diner	eating out		
+fairground_food	fairground food	eating out		
+ice_cream_parlor	ice cream parlor	eating out		
+fermented_foods	fermented foods	food properties		
+deep_fried_foods	deep-fried foods	food properties		
+stuffed_foods	stuffed foods	food properties		
+foods_on_a_stick	foods on a stick	food properties		
+foods_with_shells	foods with shells	food properties		
+foods_named_after_people	foods named after people	food properties		
+foods_with_holes	foods with holes	food properties		
+foods_you_peel	foods you peel	food properties		
+canned_foods	canned foods	food properties		
+frozen_foods	frozen foods	food properties		
+on_toast	on toast	food properties		
+red_fruits	red fruits	food properties		
+yellow_fruits	yellow fruits	food properties		
+green_vegetables	green vegetables	food properties		
+finger_foods	finger foods	food properties		
+dinner_foods	dinner foods	food properties		
+eggs	eggs	Food & Drink		
+egg_dishes	egg dishes	eggs		
+ways_to_cook_eggs	ways to cook eggs	eggs		
+mammals	mammals	Animals		
+big_cats	big cats	mammals		
+tiger_subspecies	tiger subspecies	big cats		
+small_wild_cats	small wild cats	mammals		
+primates	primates	mammals		
+monkeys	monkeys	primates		
+macaque_species	macaque species	monkeys		
+rodents	rodents	mammals		
+whales_and_dolphins	whales and dolphins	mammals		
+marsupials	marsupials	mammals		
+hoofed_mammals	hoofed mammals	mammals		
+deer	deer	hoofed mammals		
+antelopes	antelopes	hoofed mammals		
+wild_cattle	wild cattle	hoofed mammals		
+wild_goats_and_sheep	wild goats and sheep	hoofed mammals		
+wild_pigs	wild pigs	hoofed mammals		
+odd_toed_animals	odd-toed animals	hoofed mammals		
+bears	bears	mammals		
+wild_dogs_and_foxes	wild dogs and foxes	mammals		
+weasel_family	weasel family	mammals		
+bats	bats	mammals		
+rabbits_and_hares	rabbits and hares	mammals		
+mammals_that_live_in_water	aquatic mammals	mammals		
+birds	birds	Animals		
+birds_of_prey	birds of prey	birds		
+owls	owls	birds of prey		
+eagles	eagles	birds of prey		
+vultures	vultures	birds of prey		
+british_raptors	British raptors	birds of prey		
+american_raptors	American raptors	birds of prey		
+seabirds	seabirds	birds		
+songbirds	songbirds	birds		
+finches	finches	songbirds		
+crows_and_ravens	crows and ravens	songbirds		
+new_world_birds	American songbirds	songbirds		
+birds_named_after_a_colour	birds named after a colour	songbirds		
+waterbirds	waterbirds	birds		
+ducks	ducks	waterbirds		
+geese_and_swans	geese and swans	waterbirds		
+wading_birds	wading birds	waterbirds		
+flightless_birds	flightless birds	birds		
+penguins	penguins	flightless birds		
+parrots	parrots	birds		
+game_birds	game birds	birds		
+colorful_birds	colorful birds	birds		
+new_world_songbirds	New World songbirds	colorful birds		
+bird_body_parts	bird body parts	birds		
+parts_of_a_bird_s_head	parts of a bird's head	bird body parts		
+what_a_bird_stands_on	what a bird stands on	bird body parts		
+inner_organs_and_bones	bird organs and bones	bird body parts		
+birdwatching_words	birdwatching words	birds		
+observer_s_kit	birdwatching kit	birdwatching words		
+local_status_labels	birdwatching status labels	birdwatching words		
+pigeons_and_doves	pigeons and doves	birds		
+reptiles_and_amphibians	reptiles and amphibians	Animals		
+snakes	snakes	reptiles and amphibians		
+venomous_snakes	venomous snakes	snakes		
+constrictor_snakes	constrictor snakes	snakes		
+american_serpents	American serpents	snakes		
+lizards	lizards	reptiles and amphibians		
+turtles_and_tortoises	turtles and tortoises	reptiles and amphibians		
+crocodilians	crocodilians	reptiles and amphibians		
+frogs_and_toads	frogs and toads	reptiles and amphibians		
+salamanders_and_newts	salamanders and newts	reptiles and amphibians		
+exotic_pets	pet reptiles and amphibians	reptiles and amphibians		
+fish	fish	Animals		
+freshwater_fish	freshwater fish	fish		
+salmon_and_trout	salmon and trout	freshwater fish		
+coarse_fish	coarse fish	freshwater fish		
+north_american_game_fish	North American game fish	freshwater fish		
+sea_fish	sea fish	fish		
+flatfish	flatfish	sea fish		
+sharks	sharks	fish		
+tropical_fish	tropical fish	fish		
+rays_and_eels	rays and eels	fish		
+deep_sea_fish	deep sea fish	fish		
+fish_body_parts	fish body parts	fish		
+sea_life	sea life	Animals		
+crustaceans	crustaceans	sea life		
+crab_types	crab types	crustaceans		
+mollusks	mollusks	sea life		
+cephalopods	cephalopods	mollusks		
+squid_types	squid types	cephalopods		
+sea_mammals	sea mammals	sea life		
+seals_and_sea_lions	seals and sea lions	sea mammals		
+reef_life	reef life	sea life		
+jellyfish_and_relatives	jellyfish and relatives	sea life		
+seaweeds	seaweeds	sea life		
+ocean_giants	ocean giants	sea life		
+starfish_and_sea_urchins	starfish and sea urchins	sea life		
+insects_and_bugs	insects and bugs	Animals		
+beetles	beetles	insects and bugs		
+butterflies_and_moths	butterflies and moths	insects and bugs		
+bees_and_wasps	bees and wasps	insects and bugs		
+wasp_types	wasp types	bees and wasps		
+spiders	spiders	insects and bugs		
+garden_bugs	garden bugs	insects and bugs		
+insect_body_parts	insect body parts	insects and bugs		
+biting_bugs	biting bugs	insects and bugs		
+insect_life_cycle	insect life cycle	insects and bugs		
+butterfly_life_stages	butterfly life stages	insect life cycle		
+flies	flies	insects and bugs		
+ants_and_termites	ants and termites	insects and bugs		
+ant_types	ant types	ants and termites		
+worms	worms	insects and bugs		
+domestic_animals	domestic animals	Animals		
+farm_animals	farm animals	domestic animals		
+pets	pets	domestic animals		
+small_pets	small pets	pets		
+pet_supplies	pet supplies	pets		
+canine_gear	canine gear	pet supplies		
+feline_gear	feline gear	pet supplies		
+dog_commands	dog commands	pets		
+cat_behaviors	cat behaviors	pets		
+cage_birds	cage birds	pets		
+dog_breeds	dog breeds	domestic animals		
+terriers	terriers	dog breeds		
+hounds	hounds	dog breeds		
+toy_dogs	toy dogs	dog breeds		
+herding_dogs	herding dogs	dog breeds		
+working_dogs	working dogs	dog breeds		
+sporting_dogs	sporting dogs	dog breeds		
+spaniel_types	spaniel types	sporting dogs		
+dogs_from_asia	dogs from Asia	dog breeds		
+dogs_from_germany	dogs from Germany	dog breeds		
+cat_breeds	cat breeds	domestic animals		
+cattle_breeds	cattle breeds	domestic animals		
+chicken_breeds	chicken breeds	domestic animals		
+sheep_breeds	sheep breeds	domestic animals		
+working_animals	working animals	domestic animals		
+pet_snacks_and_feed	pet snacks and feed	domestic animals		
+horses	horses	Animals		
+horse_breeds	horse breeds	horses		
+pony_breeds	pony breeds	horses		
+horse_colors	horse colors	horses		
+horse_tack	horse tack	horses		
+parts_of_a_horse	parts of a horse	horses		
+horse_family	horse family	horses		
+african_animals	African animals	animals of the world		
+african_birds	African birds	African animals		
+madagascar_animals	Madagascar animals	African animals		
+middle_eastern_animals	Middle Eastern animals	animals of the world		
+turkish_animals	Turkish animals	animals of the world		
+asian_animals	Asian animals	animals of the world		
+indian_animals	Indian animals	Asian animals		
+himalayan_animals	Himalayan animals	Asian animals		
+japanese_animals	Japanese animals	Asian animals		
+southeast_asian_animals	Southeast Asian animals	Asian animals		
+australian_animals	Australian animals	animals of the world		
+australian_birds	Australian birds	Australian animals		
+new_zealand_animals	New Zealand animals	Australian animals		
+deadly_creatures	deadly Australian animals	Australian animals		
+antarctic_animals	Antarctic animals	animals of the world		
+south_american_animals	South American animals	animals of the world		
+amazon_animals	Amazon animals	South American animals		
+andean_animals	Andean animals	South American animals		
+galapagos_animals	Galapagos animals	South American animals		
+north_american_animals	North American animals	animals of the world		
+north_american_birds	North American birds	North American animals		
+everglades_animals	Everglades animals	North American animals		
+european_animals	European animals	animals of the world		
+british_wildlife	British wildlife	European animals		
+alpine_animals	Alpine animals	European animals		
+arctic_animals	Arctic animals	animals of the world		
+woodland_animals	woodland animals	animal habitats		
+forest_birds	forest birds	woodland animals		
+desert_animals	desert animals	animal habitats		
+rainforest_animals	rainforest animals	animal habitats		
+savanna_animals	savanna animals	animal habitats		
+mountain_animals	mountain animals	animal habitats		
+city_animals	city animals	animal habitats		
+zoo_animals	zoo animals	animal habitats		
+nocturnal_animals	nocturnal animals	animal traits		
+birds_awake_after_dark	birds awake after dark	nocturnal animals		
+venomous_animals	venomous animals	animal traits		
+hibernating_animals	hibernating animals	animal traits		
+migrating_animals	migrating animals	animal traits		
+long_distance_birds	long-distance birds	migrating animals		
+ocean_animals	migrating ocean animals	migrating animals		
+striped_animals	striped animals	animal traits		
+spotted_animals	spotted animals	animal traits		
+black_and_white_animals	black and white animals	animal traits		
+animals_with_horns	animals with horns	animal traits		
+animals_with_tusks	animals with tusks	animal traits		
+animals_with_shells	animals with shells	animal traits		
+burrowing_animals	burrowing animals	animal traits		
+camouflaged_animals	camouflaged animals	animal traits		
+scavengers	scavengers	animal traits		
+pollinators	pollinators	animal traits		
+fast_animals	fast animals	animal traits		
+spiny_animals	spiny animals	animal traits		
+hopping_animals	hopping animals	animal traits		
+long_necked_animals	long-necked animals	animal traits		
+pink_animals	pink animals	animal traits		
+tentacled_animals	tentacled animals	animal traits		
+gliding_animals	gliding animals	animal traits		
+insect_eaters	insect eaters	animal traits		
+cold_blooded_animals	cold-blooded animals	insect eaters		
+four_legged_animals	four-legged animals	animal traits		
+egg_laying_animals	egg-laying animals	animal traits		
+tree_dwelling_animals	tree-dwelling animals	animal traits		
+prehistoric_life	prehistoric life	Animals		
+dinosaurs	dinosaurs	prehistoric life		
+meat_eating_dinosaurs	meat-eating dinosaurs	dinosaurs		
+plant_eating_dinosaurs	plant-eating dinosaurs	dinosaurs		
+long_necked_giants	long-necked dinosaurs	dinosaurs		
+horned_and_armored_beasts	horned and armored dinosaurs	dinosaurs		
+flying_reptiles	flying reptiles	prehistoric life		
+sea_reptiles	prehistoric sea reptiles	prehistoric life		
+ice_age_animals	ice age animals	prehistoric life		
+extinct_animals	extinct animals	prehistoric life		
+extinct_birds	extinct birds	extinct animals		
+prehistoric_periods	prehistoric periods	prehistoric life		
+geological_epochs	geological epochs	prehistoric periods		
+dinosaur_words	dinosaur science	prehistoric life		
+baby_animals	baby animals	animal words		
+animal_homes	animal homes	animal words		
+homes_of_wild_mammals	homes of wild mammals	animal homes		
+homes_for_birds	homes for birds	animal homes		
+farmyard_shelters	farmyard shelters	animal homes		
+animal_sounds	animal sounds	animal words		
+collective_nouns	collective nouns	animal words		
+male_animals	male animals	animal words		
+female_animals	female animals	animal words		
+animal_body_parts	animal body parts	animal words		
+bird_parts	bird-only parts	animal body parts		
+parts_of_water_animals	parts of water animals	animal body parts		
+bug_parts	arthropod parts	animal body parts		
+animal_movements	animal movements	animal words		
+animal_coverings	animal coverings	animal words		
+animal_adjectives	animal adjectives	animal words		
+animal_experts	animal experts	animal words		
+animal_diets	animal diets	animal words		
+hybrid_animals	hybrid animals	animal words		
+trees	trees	Nature & Earth		
+deciduous_trees	deciduous trees	trees		
+evergreen_trees	evergreen trees	trees		
+pine_species	pine species	evergreen trees		
+fruit_trees	fruit trees	trees		
+nut_trees	nut trees	trees		
+tropical_trees	tropical trees	trees		
+palm_species	palm species	tropical trees		
+tree_parts	tree parts	trees		
+types_of_wood	types of wood	trees		
+hedge_plants	hedge plants	trees		
+things_that_fall_from_trees	things that fall from trees	trees		
+african_trees	African trees	trees of the world		
+asian_trees	Asian trees	trees of the world		
+australian_trees	Australian trees	trees of the world		
+eucalypt_species	eucalypt species	Australian trees		
+south_american_trees	South American trees	trees of the world		
+north_american_trees	North American trees	trees of the world		
+mediterranean_trees	Mediterranean trees	trees of the world		
+things_made_from_trees	things made from trees	trees		
+trees_native_to_britain	trees native to Britain	trees		
+woodland	woodland	forests		
+forest_floor	forest floor	forests		
+woodland_features	woodland features	forests		
+forest_types	forest types	forests		
+famous_forests	famous forests	forests		
+forestry_words	forestry words	forests		
+wildfire_words	wildfire words	forests		
+foraging_finds	foraging finds	forests		
+hedgerow_fruits	hedgerow fruits	foraging finds		
+leaves_and_shoots	foraged leaves and shoots	foraging finds		
+fungi	fungi	forests		
+flowers	flowers	Nature & Earth		
+garden_flowers	garden flowers	flowers		
+bedding_plants	bedding plants	garden flowers		
+wildflowers	wildflowers	flowers		
+spring_flowers	spring flowers	flowers		
+tropical_flowers	tropical flowers	flowers		
+flower_parts	flower parts	flowers		
+bouquet_flowers	bouquet flowers	flowers		
+edible_flowers	edible flowers	flowers		
+flowers_with_animal_names	flowers with animal names	flowers		
+anatolian_flowers	Anatolian flowers	flowers of the world		
+south_african_flowers	South African flowers	flowers of the world		
+flowers_of_east_asia	flowers of East Asia	flowers of the world		
+australian_wildflowers	Australian wildflowers	flowers of the world		
+south_american_flowers	South American flowers	flowers of the world		
+alpine_flowers	Alpine flowers	flowers of the world		
+yellow_flowers	yellow flowers	flowers by color		
+blue_flowers	blue flowers	flowers by color		
+red_flowers	red flowers	flowers by color		
+white_flowers	white flowers	flowers by color		
+purple_flowers	purple flowers	flowers by color		
+sweet_smelling_flowers	sweet-smelling flowers	flowers		
+flower_bulbs	flower bulbs	flowers		
+flowers_used_as_girls_names	flowers used as girls' names	flowers		
+plants	plants	Nature & Earth		
+houseplants	houseplants	plants		
+flowering_houseplants	flowering houseplants	houseplants		
+cacti_and_succulents	cacti and succulents	plants		
+vines_and_climbers	vines and climbers	plants		
+water_plants	water plants	plants		
+poisonous_plants	poisonous plants	plants	S	
+plant_parts	plant parts	plants		
+grasses_and_reeds	grasses and reeds	plants		
+medicinal_plants	medicinal plants	plants	S	
+weeds	weeds	plants		
+fiber_plants	fiber plants	plants		
+plants_of_the_middle_east	plants of the Middle East	plants of the world		
+new_zealand_plants	New Zealand plants	plants of the world		
+christmas_plants	Christmas plants	plants		
+desert_plants	desert plants	plants		
+thorny_plants	thorny plants	plants		
+seeds_and_pips	seeds and pips	plants		
+flowerless_plants	flowerless plants	plants		
+heath_and_moor_plants	heath and moor plants	plants		
+garden	garden	Nature & Earth		
+garden_tools	garden tools	garden		
+garden_features	garden features	garden		
+garden_pests	garden pests	garden		
+garden_furniture	garden furniture	garden		
+garden_birds	garden birds	garden		
+gardening_verbs	gardening verbs	garden		
+garden_styles	garden styles	garden		
+famous_gardens	famous gardens	garden		
+japanese_garden	Japanese garden	garden		
+garden_helpers	garden helpers	garden		
+landscapes	landscapes	Nature & Earth		
+mountain_features	mountain features	landscapes		
+river_features	river features	landscapes		
+desert_features	desert features	landscapes		
+ice_features	ice features	landscapes		
+cave_features	cave features	landscapes		
+flat_landscapes	flat landscapes	landscapes		
+bodies_of_water	bodies of water	landscapes		
+scottish_landscape_words	Scottish landscape words	landscapes		
+island_types	island types	landscapes		
+seashells	seashells	seashore		
+rock_pool	rock pool life	seashore		
+beachcombing_finds	beachcombing finds	seashore		
+coastal_features	coastal features	seashore		
+coastal_plants	coastal plants	seashore		
+tides_and_currents	tides and currents	seashore		
+shipwreck_coast_words	shipwreck coast words	seashore		
+wave_words	wave words	seashore		
+weather	weather	Nature & Earth		
+rain_words	rain words	weather		
+wind_words	wind words	weather		
+storms	storms	weather		
+weather_conditions	weather conditions	weather		
+cloud_types	cloud types	weather		
+main_cloud_types	main cloud types	cloud types		
+snow_and_ice	snow and ice	weather		
+frozen_precipitation	frozen precipitation	snow and ice		
+polar_formations	polar formations	snow and ice		
+weather_instruments	weather instruments	weather		
+named_winds	named winds	weather		
+forecast_words	forecast words	weather		
+atmospheric_patterns	atmospheric patterns	forecast words		
+lines_from_a_daily_bulletin	weather forecast phrases	forecast words		
+sky_phenomena	sky phenomena	weather		
+ice_crystal_effects	ice-crystal effects	sky phenomena		
+sunrise_and_sunset_sights	sunrise and sunset sights	sky phenomena		
+night_sky_sights	night sky sights	sky phenomena		
+hot_weather_words	hot weather words	weather		
+kinds_of_precipitation	kinds of precipitation	weather		
+signs_of_spring	signs of spring	seasons in nature		
+signs_of_summer	signs of summer	seasons in nature		
+signs_of_autumn	signs of autumn	seasons in nature		
+signs_of_winter	signs of winter	seasons in nature		
+nature_at_night	nature at night	seasons in nature		
+monsoon_season	monsoon season	seasons in nature		
+dry_season	dry season	seasons in nature		
+rocks_and_minerals	rocks and minerals	Nature & Earth		
+gemstones	gemstones	rocks and minerals		
+quartz_varieties	quartz varieties	gemstones		
+blue_gems	blue gems	gemstones		
+metals	metals	rocks and minerals		
+precious_elements	precious elements	metals		
+alkali_and_alkaline_earth_elements	alkali and alkaline earths	metals		
+rock_types	rock types	rocks and minerals		
+igneous_rocks	igneous rocks	rock types		
+sedimentary_rocks	sedimentary rocks	rock types		
+minerals	minerals	rocks and minerals		
+mohs_scale_minerals	Mohs scale minerals	minerals		
+metal_ores	metal ores	minerals		
+building_stones	building stones	rocks and minerals		
+mining_words	mining words	rocks and minerals		
+gold_rush_words	gold rush words	rocks and minerals		
+natural_disasters	natural disasters	earth science		
+volcano_words	volcanoes	earth science		
+lava_forms	lava forms	volcanoes		
+types_of_volcano	volcano types	volcanoes		
+volcano_parts	volcano parts	volcanoes		
+earthquake_words	earthquakes	earth science		
+layers_of_the_earth	Earth's layers	earth science		
+earth_s_layers	Earth's four layers	Earth's layers		
+erosion_words	erosion	earth science		
+geothermal_words	geothermal features	earth science		
+geothermal_wonders	geothermal wonders	geothermal features		
+soil_words	soil types	earth science		
+soil_layers	soil layers	soil types		
+water_cycle_words	water cycle	earth science		
+layers_of_the_atmosphere	atmosphere layers	earth science		
+rainforest	rainforest	habitats		
+layers_of_a_rainforest	rainforest layers	rainforest		
+ocean	ocean	habitats		
+marine_animals	marine animals	ocean		
+seafloor_features	seafloor features	ocean		
+moving_water	water movements	ocean		
+desert	desert	habitats		
+savanna	savanna	habitats		
+polar_regions	polar regions	habitats		
+frozen_formations	frozen formations	polar regions		
+wetlands	wetlands	habitats		
+mountains	mountains	habitats		
+famous_mountains_and_ranges	famous mountains and ranges	mountains		
+meadow	meadow	habitats		
+grassland_blooms	grassland blooms	meadow		
+minibeasts	minibeasts	meadow		
+pond	pond	habitats		
+taiga	taiga	habitats		
+needle_leaf_trees	needle-leaf trees	taiga		
+oasis	oasis	habitats		
+outback	outback	habitats		
+australian_wildlife	Australian wildlife	outback		
+places_in_remote_australia	outback places	outback		
+andes	Andes	habitats		
+prairie	prairie	habitats		
+heartland_plants	plains plants	prairie		
+heartland_creatures	plains animals	prairie		
+settler_life	frontier life	prairie		
+antarctic_coast	Antarctic coast	habitats		
+pollution_words	pollution	environment		
+pollution_types	pollution types	pollution		
+recycling_words	recyclables	environment		
+renewable_energy	renewable energy	environment		
+conservation_words	conservation	environment		
+protected_areas	protected areas	conservation		
+climate_words	climate change	environment	S	
+greenhouse_gases	greenhouse gases	climate change	S	
+endangered_animals	endangered animals	environment		
+fossil_fuels	fossil fuels	environment		
+oil_industry	oil industry	fossil fuels		
+eco_habits	eco habits	green living		
+eco_swaps	eco swaps	green living		
+eco_home	eco home	green living		
+countries	countries	Places & Geography		
+european_countries	European countries	countries		
+eastern_european_countries	Eastern European countries	European countries		
+western_european_countries	Western European countries	European countries		
+balkan_countries	Balkan countries	European countries		
+asian_countries	Asian countries	countries		
+middle_eastern_countries	Middle Eastern countries	Asian countries		
+african_countries	African countries	countries		
+west_african_countries	West African countries	African countries		
+east_african_countries	East African countries	African countries		
+southern_african_countries	Southern African countries	African countries		
+central_african_lands	Central African countries	African countries		
+north_american_countries	North American countries	countries		
+south_american_countries	South American countries	countries		
+oceanian_countries	Oceanian countries	countries		
+island_nations	island nations	countries		
+landlocked_countries	landlocked countries	countries		
+tiny_countries	tiny countries	countries		
+spanish_speaking_countries	Spanish-speaking countries	countries		
+french_speaking_countries	French-speaking countries	countries		
+arabic_speaking_countries	Arabic-speaking countries	countries		
+uk_nations	UK nations	countries		
+nordic_countries	Nordic countries	countries		
+central_american_countries	Central American countries	countries		
+cities	cities	Places & Geography		
+capital_cities	capital cities	cities		
+european_capitals	European capitals	capital cities		
+asian_capitals	Asian capitals	capital cities		
+african_capitals	African capitals	capital cities		
+american_capitals	American capitals	capital cities		
+european_cities	European cities	cities		
+british_cities	British cities	European cities		
+french_cities	French cities	European cities		
+german_cities	German cities	European cities		
+italian_cities	Italian cities	European cities		
+spanish_cities	Spanish cities	European cities		
+russian_cities	Russian cities	European cities		
+turkish_cities	Turkish cities	cities		
+middle_eastern_cities	Middle Eastern cities	cities		
+asian_cities	Asian cities	cities		
+chinese_cities	Chinese cities	Asian cities		
+japanese_cities	Japanese cities	Asian cities		
+indian_cities	Indian cities	Asian cities		
+american_cities	American cities	cities		
+us_state_capitals	US state capitals	American cities		
+canadian_cities	Canadian cities	cities		
+south_american_cities	South American cities	cities		
+brazilian_cities	Brazilian cities	South American cities		
+african_cities	African cities	cities		
+oceanian_cities	Oceanian cities	cities		
+australian_cities	Australian cities	Oceanian cities		
+new_zealand_cities	New Zealand cities	Oceanian cities		
+port_cities	port cities	cities		
+ports_in_europe	ports in Europe	port cities		
+ports_in_asia	ports in Asia	port cities		
+ports_in_the_americas	ports in the Americas	port cities		
+holy_cities	holy cities	cities	S	
+silk_road_cities	Silk Road cities	cities		
+ancient_cities	ancient cities	cities		
+mexican_cities	Mexican cities	cities		
+us_states	US states	regions		
+canadian_provinces	Canadian provinces	regions		
+mexican_states	Mexican states	regions		
+australian_states_and_regions	Australian states and regions	regions		
+english_counties	English counties	regions		
+french_regions	French regions	regions		
+spanish_regions	Spanish regions	regions		
+italian_regions	Italian regions	regions		
+german_states	German states	regions		
+indian_states	Indian states	regions		
+european_holiday_regions	European holiday regions	regions		
+wine_regions	wine regions	regions	S	
+irish_provinces	Irish provinces	regions		
+new_england_states	New England states	regions		
+original_thirteen_colonies	Thirteen Colonies	regions		
+mountain_ranges	mountain ranges	famous natural features		
+famous_mountains	famous mountains	famous natural features		
+alpine_peaks	alpine peaks	famous mountains		
+himalayan_peaks	Himalayan peaks	famous mountains		
+famous_volcanoes	famous volcanoes	famous mountains		
+seven_summits	Seven Summits	famous mountains		
+famous_deserts	famous deserts	famous natural features		
+famous_islands	famous islands	famous natural features		
+caribbean_islands	Caribbean islands	famous islands		
+greek_islands	Greek islands	famous islands		
+pacific_islands	Pacific islands	famous islands		
+indonesian_islands	Indonesian islands	famous islands		
+islands_near_britain	islands near Britain	famous islands		
+mediterranean_islands	Mediterranean islands	famous islands		
+famous_beaches	famous beaches	famous natural features		
+peninsulas	peninsulas	famous natural features		
+antarctic_places	Antarctic places	famous natural features		
+famous_canyons_and_gorges	famous canyons and gorges	famous natural features		
+famous_caves	famous caves	famous natural features		
+famous_rivers	famous rivers	famous waters		
+african_rivers	African rivers	famous rivers		
+asian_rivers	Asian rivers	famous rivers		
+european_rivers	European rivers	famous rivers		
+north_american_rivers	North American rivers	famous rivers		
+south_american_rivers	South American rivers	famous rivers		
+british_and_irish_rivers	British and Irish rivers	famous rivers		
+famous_lakes	famous lakes	famous waters		
+great_lakes	Great Lakes	famous lakes		
+famous_waterfalls	famous waterfalls	famous waters		
+straits_and_canals	straits and canals	famous waters		
+gulfs_and_bays	gulfs and bays	famous waters		
+oceans_and_seas	oceans and seas	famous waters		
+the_five_oceans	the five oceans	oceans and seas		
+ocean_zones	ocean zones	oceans and seas		
+european_waters	European waters	oceans and seas		
+asian_waters	Asian waters	oceans and seas		
+landmarks	landmarks	Places & Geography		
+famous_buildings	famous buildings	landmarks		
+famous_bridges	famous bridges	landmarks		
+famous_towers	famous towers	landmarks		
+famous_statues	famous statues	landmarks		
+famous_palaces	famous palaces	landmarks		
+famous_castles	famous castles	landmarks		
+ancient_wonders	wonders of the world	landmarks		
+seven_wonders_of_the_ancient_world	Seven Ancient Wonders	wonders of the world		
+famous_squares	famous squares	landmarks		
+famous_streets	famous streets	landmarks		
+famous_museums	famous museums	landmarks		
+famous_temples	famous temples	landmarks		
+famous_mosques	famous mosques	landmarks	S	
+famous_churches	famous churches	landmarks	S	
+famous_parks	famous parks	landmarks		
+turkish_landmarks	Turkish landmarks	landmarks by place		
+egyptian_landmarks	Egyptian landmarks	landmarks by place		
+african_landmarks	African landmarks	landmarks by place		
+indian_landmarks	Indian landmarks	landmarks by place		
+chinese_landmarks	Chinese landmarks	landmarks by place		
+japanese_landmarks	Japanese landmarks	landmarks by place		
+australian_landmarks	Australian landmarks	landmarks by place		
+new_zealand_landmarks	New Zealand landmarks	landmarks by place		
+south_american_landmarks	South American landmarks	landmarks by place		
+mexican_landmarks	Mexican landmarks	landmarks by place		
+us_landmarks	US landmarks	landmarks by place		
+american_natural_wonders	American natural wonders	US landmarks		
+capital_sights	capital city landmarks	US landmarks		
+canadian_landmarks	Canadian landmarks	landmarks by place		
+istanbul_landmarks	Istanbul landmarks	city sights		
+london_landmarks	London landmarks	city sights		
+paris_landmarks	Paris landmarks	city sights		
+rome_landmarks	Rome landmarks	city sights		
+new_york_landmarks	New York landmarks	city sights		
+greek_landmarks	Greek landmarks	landmarks by place		
+greek_buildings	Greek buildings	Greek landmarks		
+spanish_landmarks	Spanish landmarks	landmarks by place		
+maps_and_globes	maps and globes	Places & Geography		
+continents_and_supercontinents	continents and supercontinents	maps and globes		
+world_regions	world regions	maps and globes		
+lines_on_a_map	lines on a map	maps and globes		
+kinds_of_maps	kinds of maps	maps and globes		
+compass_directions	compass directions	maps and globes		
+cardinal_directions	cardinal directions	compass directions		
+intercardinal_directions	intercardinal directions	compass directions		
+directions	relative directions	maps and globes		
+continents	continents	maps and globes		
+flags_with_stars	flags with stars	flags of the world		
+countries_in_africa	star flags of Africa	flags with stars		
+countries_in_asia	star flags of Asia	flags with stars		
+countries_in_oceania	star flags of Oceania	flags with stars		
+flags_with_crescents	flags with crescents	flags of the world		
+flags_with_crosses	flags with crosses	flags of the world		
+red_and_white_flags	red and white flags	flags of the world		
+tricolor_flags	tricolor flags	flags of the world		
+flag_words	flag words	flags of the world		
+flags_with_a_sun	flags with a sun	flags of the world		
+flags_with_animals	flags with animals	flags of the world		
+nationalities	nationalities	place names		
+city_demonyms	city demonyms	place names		
+old_country_names	old country names	place names		
+old_city_names	old city names	place names		
+places_named_after_people	places named after people	place names		
+australian_places	Australian eponymous places	places named after people		
+us_cities	US cities named after people	places named after people		
+countries_and_archipelagos	lands named after people	places named after people		
+foods_named_after_places	foods named after places	place names		
+places_that_are_also_words	places that are also words	place names		
+countries_ending_in_ia	countries ending in ia	place names		
+places_after_new	places after new	place names		
+places_ending_in_land	places ending in land	place names		
+farm	farm	everyday places		
+restaurant	restaurant	everyday places		
+dining_room_staff	dining room staff	restaurant		
+supermarket	supermarket	everyday places		
+post_office	post office	everyday places		
+library	library	everyday places		
+cafe	cafe	everyday places		
+bakery	bakery	everyday places		
+hair_salon	hair salon	everyday places		
+street_market	street market	everyday places		
+park	park	everyday places		
+shopping_mall	shopping mall	everyday places		
+hospital	hospital	workplaces		
+people_at_a_hospital	people at a hospital	hospital		
+at_the_doctor	at the doctor	hospital		
+fire_station	fire station	workplaces		
+police_station	police station	workplaces	S	
+office	office	workplaces		
+factory	factory	workplaces		
+construction_site	construction site	workplaces		
+builders_tools	builders' tools	construction site		
+vet_clinic	vet clinic	workplaces		
+dentist_s_office	dentist's office	workplaces		
+zoo	zoo	places to visit		
+beach	beach	places to visit		
+things_you_do_at_the_beach	things you do at the beach	beach		
+airport	airport	places to visit		
+people_at_an_airport	people at an airport	airport		
+museum	museum	places to visit		
+art_gallery	art gallery	places to visit		
+aquarium	aquarium	places to visit		
+movie_theater	movie theater	places to visit		
+swimming_pool	swimming pool	places to visit		
+ski_resort	ski resort	places to visit		
+water_park	water park	places to visit		
+buildings	buildings	Places & Geography		
+buildings_to_live_in	buildings to live in	buildings		
+traditional_dwellings	traditional dwellings	buildings		
+public_buildings	public buildings	buildings		
+farm_buildings	farm buildings	buildings		
+industrial_buildings	industrial buildings	buildings		
+shops	shops	buildings		
+towers_and_skyscrapers	towers and skyscrapers	buildings		
+middle_eastern_buildings	Middle Eastern buildings	buildings		
+east_asian_buildings	East Asian buildings	buildings		
+road_types	road types	streets and roads		
+street_names	street names	streets and roads		
+street_furniture	street furniture	streets and roads		
+traffic_words	traffic words	streets and roads		
+parts_of_a_road	parts of a road	streets and roads		
+parts_of_a_town	parts of a town	streets and roads		
+kinds_of_settlements	kinds of settlements	streets and roads		
+national_symbols	national symbols	Places & Geography		
+national_animals	national animals	national symbols		
+national_flowers	national flowers	national symbols		
+national_dishes	national dishes	national symbols		
+national_sports	national sports	national symbols		
+national_costumes	national costumes	national symbols		
+symbols_of_the_usa	symbols of the USA	national symbols		
+british_isles_symbols	British Isles symbols	national symbols		
+cars	cars	Travel & Transport		
+car_brands	car brands	cars		
+german_car_brands	German car brands	car brands		
+japanese_car_brands	Japanese car brands	car brands		
+american_car_brands	American car brands	car brands		
+british_car_brands	British car brands	car brands		
+supercar_makers	supercar makers	car brands		
+car_parts	car parts	cars		
+dashboard_items	dashboard items	car parts		
+under_the_bonnet	engine bay parts	car parts		
+exterior_parts	car exterior parts	car parts		
+car_types	car types	cars		
+famous_car_models	famous car models	car types		
+driving_words	driving words	cars		
+motor_racing	motor racing	cars		
+famous_race_tracks	famous race tracks	motor racing		
+road_signs	road signs	cars		
+gas_station	gas station	cars		
+parking_words	parking words	cars		
+car_accessories	car accessories	cars		
+things_inside_the_cabin	car interior items	cars		
+public_transportation	public transport words	Travel & Transport		
+bus_types	bus types	public transport words		
+on_a_bus	on a bus	public transport words		
+ticket_words	ticket words	public transport words		
+commuting_words	commuting words	public transport words		
+taxis_of_the_world	taxis of the world	public transport words		
+cable_cars_and_lifts	cable cars and lifts	public transport words		
+air_travel	air travel	Travel & Transport		
+aircraft_types	aircraft types	air travel		
+plane_parts	plane parts	air travel		
+flight_crew	flight crew	air travel		
+airlines	airlines	air travel		
+european_airlines	European airlines	airlines		
+asian_airlines	Asian airlines	airlines		
+middle_eastern_airlines	Middle Eastern airlines	airlines		
+airlines_of_the_americas	airlines of the Americas	airlines		
+low_cost_airlines	low-cost airlines	airlines		
+flying_machines	flying machines	air travel		
+famous_airports	famous airports	air travel		
+in_flight_words	in-flight words	air travel		
+in_case_of_trouble	in-flight precautions	in-flight words		
+places_you_can_sit	places to sit on a plane	in-flight words		
+aircraft_makers	aircraft makers	air travel		
+hot_air_balloon_parts	hot air balloon parts	air travel		
+boats_and_ships	boats and ships	Travel & Transport		
+boat_types	boat types	boats and ships		
+small_boats	small boats	boat types		
+sailing_ships	sailing ships	boat types		
+working_boats	working boats	boat types		
+traditional_boats	traditional boats	boat types		
+pleasure_boats	pleasure boats	boat types		
+ship_parts	ship parts	boats and ships		
+sailing_words	sailing words	boats and ships		
+sailing_actions	sailing actions	sailing words		
+gear_above_the_deck	sailboat gear above deck	sailing words		
+ports_and_harbors	ports and harbors	boats and ships		
+famous_ships	famous ships	boats and ships		
+ocean_liners	ocean liners	famous ships		
+exploration_ships	exploration ships	famous ships		
+knots	knots	boats and ships		
+famous_canals	famous canals	boats and ships		
+nautical_directions	nautical directions	boats and ships		
+ship_crew	ship crew	boats and ships		
+submarine_words	submarine words	boats and ships		
+wind_powered_vessels	wind-powered vessels	boats and ships		
+human_powered_craft	human-powered craft	boats and ships		
+trains	trains	Travel & Transport		
+train_types	train types	trains		
+parts_of_a_train	parts of a train	trains		
+railway_words	railway words	trains		
+station_words	station words	trains		
+famous_trains	famous trains	trains		
+high_speed_trains	high-speed trains	famous trains		
+famous_locomotives	famous locomotives	famous trains		
+metro_systems	metro systems	trains		
+famous_train_stations	famous train stations	trains		
+railroad_jobs	railroad jobs	trains		
+bicycle_parts	bicycle parts	bikes and boards		
+bike_types	bike types	bikes and boards		
+motorcycle_brands	motorcycle brands	bikes and boards		
+motorcycle_types	motorcycle types	bikes and boards		
+cycling_races	cycling races	bikes and boards		
+cycling_words	cycling words	bikes and boards		
+skateboard_tricks	skateboard tricks	bikes and boards		
+ledge_tricks	skateboard ledge tricks	skateboard tricks		
+tricks_where_the_board_spins	board-spinning tricks	skateboard tricks		
+scooters_and_skates	scooters and skates	bikes and boards		
+motorcycle_parts	motorcycle parts	bikes and boards		
+skate_park_features	skate park features	bikes and boards		
+skateboard_parts	skateboard parts	bikes and boards		
+bike_gear	bike gear	bikes and boards		
+bike_tricks	bike tricks	bikes and boards		
+bike_park	bike park	bikes and boards		
+journeys	journeys	Travel & Transport		
+kinds_of_travelers	kinds of travelers	journeys		
+travel_verbs	travel verbs	journeys		
+famous_routes	famous routes	journeys		
+animal_powered_travel	animal-powered travel	journeys		
+giving_directions	giving directions	journeys		
+road_trip_words	road trip words	journeys		
+road_trip_games	road trip games	journeys		
+holiday_travel	holiday travel	journeys		
+arduous_trips	arduous trips	journeys		
+accommodation	accommodation	Travel & Transport		
+hotel	hotel	accommodation		
+hotel_staff	hotel staff	accommodation		
+room_types	hotel room types	accommodation		
+vacation_homes	vacation homes	accommodation		
+famous_hotels	famous hotels	accommodation		
+hotel_chains	hotel chains	accommodation		
+traditional_lodgings	traditional lodgings	accommodation		
+campsite	campsite	Travel & Transport		
+camping_gear	camping gear	campsite		
+tent_parts	tent parts	campsite		
+tent_types	tent types	campsite		
+campfire_foods	campfire foods	campsite		
+smores	s'mores	campfire foods		
+survival_skills	survival skills	campsite		
+rvs_and_campers	RVs and campers	campsite		
+cooking_and_drinking_gear	outdoor kitchen gear	campsite		
+hiking_gear	hiking gear	outdoors		
+trail_words	trail words	outdoors		
+outdoor_activities	outdoor activities	outdoors		
+us_national_parks	US national parks	national parks		
+desert_parks	desert national parks	US national parks		
+california_parks	California national parks	US national parks		
+eastern_parks	eastern US national parks	US national parks		
+african_national_parks	African national parks	national parks		
+famous_hiking_trails	famous hiking trails	outdoors		
+climbing_gear	climbing gear	outdoors		
+safari_words	safari words	outdoors		
+african_landscape	African landscape	safari words		
+southern_african_words	Southern African words	safari words		
+hiking_snacks	hiking snacks	outdoors		
+hiking_dangers	hiking dangers	outdoors		
+luggage	luggage	packing		
+things_to_pack	things to pack	packing		
+travel_documents	travel documents	packing		
+toiletries	toiletries	packing		
+beach_gear	beach gear	packing		
+souvenirs	souvenirs	packing		
+turkish_souvenirs	Turkish souvenirs	souvenirs		
+japanese_souvenirs	Japanese souvenirs	souvenirs		
+mexican_souvenirs	Mexican souvenirs	souvenirs		
+moroccan_souvenirs	Moroccan souvenirs	souvenirs		
+travel_accessories	travel accessories	packing		
+beach_vacation	beach vacation	vacations		
+ski_trip	ski trip	vacations		
+cruise_words	cruise words	vacations		
+cruise_lines	cruise lines	cruise words		
+sightseeing_words	sightseeing words	vacations		
+tourist_attractions	tourist attractions	vacations		
+famous_theme_parks	famous theme parks	vacations		
+beach_destinations	beach destinations	vacations		
+island_getaways	island getaways	beach destinations		
+american_holiday_spots	American holiday spots	beach destinations		
+famous_ski_resorts	famous ski resorts	vacations		
+special_vehicles	special vehicles	Travel & Transport		
+emergency_vehicles	emergency vehicles	special vehicles		
+construction_vehicles	construction vehicles	special vehicles		
+farm_vehicles	farm vehicles	special vehicles		
+military_vehicles	military vehicles	special vehicles	AS	
+naval_vessels	naval vessels	military vehicles	AS	
+military_aircraft	military aircraft	military vehicles	AS	
+army_ground_vehicles	army ground vehicles	military vehicles	AS	
+delivery_vehicles	delivery vehicles	special vehicles		
+space_vehicles	space vehicles	special vehicles		
+horse_drawn_vehicles	horse-drawn vehicles	special vehicles		
+truck_types	truck types	special vehicles		
+vehicle_sounds	vehicle sounds	special vehicles		
+electric_vehicles	electric vehicles	special vehicles		
+battery_powered_cars	battery-powered cars	electric vehicles		
+types_of_public_transport	types of public transport	Travel & Transport		
+modes_of_transport	modes of transport	Travel & Transport		
+land_vehicles	land vehicles	Travel & Transport		
+water_vehicles	water vehicles	Travel & Transport		
+body_parts	body parts	Body & Health		
+face	face parts	body parts		
+hands_and_feet	hands and feet	body parts		
+hand_parts	hand parts	body parts		
+foot_parts	foot parts	body parts		
+arms_and_legs	arms and legs	body parts		
+torso	torso	body parts		
+joints	joints	body parts		
+hair	hair	body parts		
+hairstyles	hairstyles	hair		
+beard_styles	beard styles	hair		
+hair_colors	hair colors	hair		
+blonde_shades	blonde shades	hair colors		
+skin_words	skin words	body parts		
+paired_body_parts	paired body parts	body parts		
+fingers	fingers	body parts		
+inside_the_body	inside the body	Body & Health		
+bones	bones	inside the body		
+sections_of_the_spine	sections of the spine	bones		
+organs	organs	inside the body		
+muscles	muscles	inside the body		
+blood_words	blood words	inside the body		
+blood_components	blood components	blood words		
+teeth	teeth	inside the body		
+tooth_types	tooth types	teeth		
+brain_parts	brain parts	inside the body		
+brain_lobes	brain lobes	brain parts		
+cortex_areas	cortex areas	brain parts		
+body_systems	body systems	inside the body		
+hormones	hormones	inside the body		
+digestive_system	digestive system	inside the body		
+ruminant_stomachs	ruminant stomachs	digestive system		
+plain_names_for_body_parts	plain names for body parts	inside the body		
+throat_and_airway_parts	throat and airway parts	inside the body		
+sight_words	eyesight	senses		
+hearing_words	hearing words	senses		
+smell_words	smell words	senses		
+ear_parts	ear parts	senses		
+touch_words	touch words	senses		
+eye_parts	eye parts	senses		
+the_five_senses	the five senses	senses		
+sense_organs	sense organs	senses		
+illnesses	illnesses	Body & Health	S	
+common_illnesses	common illnesses	illnesses	S	
+digestive_problems	digestive problems	common illnesses	S	
+upper_airway_problems	upper airway problems	common illnesses	S	
+childhood_illnesses	childhood illnesses	illnesses	S	
+allergies	allergies	illnesses	S	
+infections	infections	illnesses	S	
+viral_illnesses	viral illnesses	infections	S	
+bacterial_illnesses	bacterial illnesses	infections	S	
+injuries	injuries	illnesses	S	
+bone_and_joint_injuries	bone and joint injuries	injuries	S	
+skin_breaking_injuries	skin-breaking injuries	injuries	S	
+soft_tissue_injuries	soft tissue injuries	injuries	S	
+fracture_types	fracture types	injuries	S	
+symptoms	illness symptoms	illnesses	S	
+historic_diseases	historic diseases	illnesses	S	
+tropical_diseases	tropical diseases	illnesses	S	
+cold_weather_ailments	cold weather ailments	illnesses	S	
+sports_injuries	sports injuries	illnesses	S	
+medicine	medical words	Body & Health		
+medicines	medications	medical words		
+forms_of_medicine	forms of medicine	medical words		
+medical_equipment	medical equipment	medical words		
+medical_specialties	medical specialties	medical words	S	
+medical_tests	medical tests	medical words		
+doctor_s_office	doctor's office	medical words		
+pharmacy	pharmacy	medical words		
+operating_room	operating room	medical words	S	
+first_aid	first aid	medical words		
+smoking_words	smoking words	medical words	AS	
+illegal_drugs	illegal drugs	medical words	AS	
+street_names_for_hemp	street names for hemp	illegal drugs	AS	
+stimulants	stimulant drugs	illegal drugs	AS	
+hallucinogens	hallucinogens	illegal drugs	AS	
+cold_and_flu_remedies	cold and flu remedies	medical words		
+four_humours	four humours	medical words		
+healthcare_workers	healthcare workers	medical words		
+chinese_medicine	Chinese medicine	healing traditions		
+middle_eastern_remedies	Middle Eastern remedies	healing traditions		
+african_remedies	African remedies	healing traditions		
+oceanian_remedies	Oceanian remedies	healing traditions		
+ayurveda_words	Ayurveda words	healing traditions		
+native_american_remedies	Native American remedies	healing traditions		
+babies_and_birth	babies and birth	Body & Health		
+pregnancy_words	pregnancy words	babies and birth	S	
+childbirth_words	childbirth words	babies and birth	S	
+newborn_care	newborn care	babies and birth		
+baby_gear	baby gear	babies and birth		
+baby_milestones	baby milestones	babies and birth		
+maternity_ward	maternity ward	babies and birth	S	
+fitness	fitness	Body & Health		
+exercises	fitness exercises	fitness		
+gym_equipment	gym equipment	fitness		
+yoga_poses	yoga poses	fitness		
+yoga_words	yoga words	fitness		
+workout_types	workout types	fitness		
+stretches	stretches	fitness		
+sleep	sleep	Body & Health		
+bedding	bedding	sleep		
+nightwear	nightwear	sleep		
+dream_words	dream words	sleep		
+bedtime_routine	bedtime routine	sleep		
+sleep_disorders	sleep disorders	sleep		
+short_sleeps	short sleeps	sleep		
+personal_care	personal care	Body & Health		
+toiletries_for_washing	toiletries for washing	personal care		
+soap_types	soap types	toiletries for washing		
+hair_care	hair care	personal care		
+skincare_products	skincare products	personal care		
+korean_skincare	Korean skincare	skincare products		
+makeup	makeup	personal care		
+nail_care	nail care	personal care		
+bath_time	bath time	personal care		
+things_you_do_in_the_bath	things you do in the bath	bath time		
+middle_eastern_grooming	Middle Eastern grooming	personal care		
+shaving	shaving	personal care		
+sun_care	sun care	personal care		
+grooming_tools	grooming tools	personal care		
+mental_health_words	mental health words	mind and wellbeing	S	
+phobias	phobias	mind and wellbeing		
+massage_types	massage types	mind and wellbeing		
+bad_habits	bad habits	mind and wellbeing		
+healthy_habits	healthy habits	mind and wellbeing		
+spa	spa	mind and wellbeing		
+turkish_bath	Turkish bath	mind and wellbeing		
+european_spa_towns	European spa towns	mind and wellbeing		
+nutrition	nutrition	Body & Health		
+vitamins	vitamins	nutrition		
+dietary_minerals	dietary minerals	nutrition		
+food_groups	food groups	nutrition		
+nutrients	nutrients	nutrition		
+diet_types	diet types	nutrition		
+superfoods	superfoods	nutrition		
+healthy_snacks	healthy snacks	nutrition		
+supplements	supplements	nutrition		
+facial_expressions	facial expressions	body movement		
+gestures	gestures	body movement		
+body_actions	body actions	body movement		
+hand_actions	hand actions	body movement		
+ways_of_walking	ways of walking	body movement		
+ways_of_looking	ways of looking	body movement		
+ways_of_speaking	ways of speaking	body movement		
+body_noises	body noises	body movement		
+ways_of_crying	ways of crying	body movement		
+ways_of_breathing	ways of breathing	body movement		
+body_positions	body positions	body movement		
+mouth_actions	mouth actions	body movement		
+ways_of_laughing	ways of laughing	body movement		
+things_you_do_with_your_hands	things your hands do	body movement		
+things_you_do_with_your_eyes	things your eyes do	body movement		
+things_you_do_with_your_feet	things your feet do	body movement		
+ways_to_move	ways to move	body movement		
+family_and_friends	family and friends	People & Society		
+family_members	family members	family and friends		
+extended_family	extended family	family and friends		
+relationships	relationships	family and friends	S	
+terms_of_endearment	terms of endearment	family and friends		
+greetings	greetings	family and friends		
+ways_to_say_goodbye	ways to say goodbye	family and friends		
+ages_and_stages	stages of life	family and friends		
+words_for_friend	words for friend	family and friends		
+life_events	life events	family and friends	S	
+honorifics	honorifics	family and friends		
+words_for_mother	words for mother	family nicknames		
+words_for_father	words for father	family nicknames		
+words_for_grandparents	words for grandparents	family nicknames		
+words_for_kids	words for kids	family nicknames		
+kinds_of_party	kinds of party	family and friends		
+ways_to_say_yes	ways to say yes	family and friends		
+ways_to_say_no	ways to say no	family and friends		
+emotions	emotions	People & Society		
+happy_words	happy words	emotions		
+sad_words	sad words	emotions		
+angry_words	angry words	emotions		
+scared_words	scared words	emotions		
+surprised_words	surprised words	emotions		
+love_words	love words	emotions		
+calm_words	calm words	emotions		
+disgust_words	disgust words	emotions		
+personality_traits	personality traits	emotions		
+positive_traits	positive personality traits	personality traits		
+negative_traits	negative personality traits	personality traits		
+moods	moods	emotions		
+jobs	jobs	People & Society		
+medical_jobs	medical jobs	jobs		
+trades	skilled trades	jobs		
+science_jobs	science jobs	jobs		
+service_jobs	service jobs	jobs		
+arts_jobs	arts jobs	jobs		
+people_who_work_with_sound	people who work with sound	arts jobs		
+visual_creators	visual creators	arts jobs		
+theatre_and_movie_crew	theatre and movie crew	arts jobs		
+tech_jobs	tech jobs	jobs		
+developer_roles	developer roles	tech jobs		
+office_jobs	office jobs	jobs		
+outdoor_jobs	outdoor jobs	jobs		
+food_jobs	food jobs	jobs		
+animal_jobs	animal jobs	jobs		
+old_time_jobs	old-time jobs	jobs		
+workplace_words	workplace words	jobs		
+cowboy_words	cowboy words	jobs		
+western_outfits	cowboy outfits	cowboy words		
+riding_gear	cowboy riding gear	cowboy words		
+people_of_the_frontier	people of the frontier	cowboy words		
+gaucho_words	gaucho words	jobs		
+emergency_workers	emergency workers	jobs		
+transport_jobs	transport jobs	jobs		
+beauty_jobs	beauty jobs	jobs		
+shopkeepers	shopkeepers	jobs		
+nicknames_for_workers	nicknames for workers	jobs		
+government_words	government words	government		
+legal_rules	legal rules	government words		
+institutions_of_state	institutions of state	government words		
+election_words	election words	government	S	
+american_campaign_terms	American campaign terms	election words	S	
+british_campaign_terms	British campaign terms	election words	S	
+political_titles	political titles	government		
+minister_titles	minister titles	political titles		
+royal_titles	royal titles	government		
+ottoman_titles	Ottoman titles	royal titles		
+ranks_of_the_british_peerage	British peerage ranks	royal titles		
+titles_for_women	female royal titles	royal titles		
+south_asian_titles	South Asian royal titles	royal titles		
+central_and_eastern_european_titles	Central European royal titles	royal titles		
+royal_things	royal things	government		
+ceremonial_objects	royal ceremonial objects	royal things		
+types_of_government	types of government	government	S	
+ruled_by_one_leader	ruled by one leader	types of government	S	
+words_ending_in_cracy	words ending in -cracy	types of government	S	
+parts_of_parliament	parts of parliament	government		
+political_ideologies	political ideologies	government	S	
+ideologies_named_after_people	ideologies named after people	political ideologies	S	
+diplomacy_words	diplomacy words	government		
+government_representatives_abroad	diplomatic titles	diplomacy words		
+deals_between_countries	deals between countries	diplomacy words		
+borrowed_foreign_words	foreign diplomatic terms	diplomacy words		
+international_organizations	international organizations	government		
+us_government	US government	government	S	
+government_agencies	US government agencies	US government	S	
+office_holders	US government officials	US government	S	
+british_politics	British politics	government	S	
+law_and_order	law and order	People & Society		
+crimes	crimes	law and order	AS	
+stealing_crimes	stealing crimes	crimes	AS	
+financial_crimes	financial crimes	crimes	AS	
+crimes_against_people	crimes against people	crimes	AS	
+courtroom_words	courtroom words	law and order		
+people_at_a_trial	people at a trial	courtroom words		
+police_words	police words	law and order		
+slang_terms	police slang	police words		
+forces_of_europe	European police forces	police words		
+officer_s_equipment	police equipment	police words		
+prison_words	prison words	law and order	AS	
+detective_words	detective words	law and order		
+legal_documents	legal documents	law and order		
+legal_latin	legal Latin	law and order		
+punishments	punishments	law and order	AS	
+spy_words	spy words	law and order	S	
+wrongdoers	wrongdoers	law and order		
+money_words	money words	money		
+currencies	currencies	money		
+african_currencies	African currencies	currencies		
+asian_currencies	Asian currencies	currencies		
+european_currencies	European currencies	currencies		
+latin_american_currencies	Latin American currencies	currencies		
+banking_words	banking words	money		
+coins	coins	money		
+historic_coins	historic coins	coins		
+us_coins	US coins	coins		
+tax_words	tax words	money		
+shopping_words	shopping words	money		
+money_slang	money slang	money		
+stock_market_words	stock market words	money		
+business_words	business words	money		
+bazaar	bazaar	money		
+things_you_do_with_money	things you do with money	money		
+religion	religion	People & Society	S	
+the_four_evangelists	the four evangelists	religion	S	
+four_horsemen_of_the_apocalypse	horsemen of the apocalypse	religion	S	
+seven_deadly_sins	seven deadly sins	religion	S	
+parts_of_a_religious_service	parts of a religious service	religion	S	
+religious_festivals	religious festivals	religion	S	
+religious_leaders	religious leaders	religion	S	
+holy_books	holy books	religion	S	
+angels_and_spirits	angels and spirits	religion	S	
+archangels	archangels	angels and spirits	S	
+places_of_worship	places of worship	religion	S	
+pilgrimage_sites	pilgrimage sites	religion	S	
+famous_saints	famous saints	religion	S	
+religious_clothing	religious clothing	religion	S	
+afterlife_words	afterlife words	religion	S	
+islam_words	Islam words	religion	S	
+pilgrimage_words	Islamic pilgrimage words	Islam words	S	
+judaism_words	Judaism words	religion	S	
+jewish_holidays	Jewish holidays	Judaism words	S	
+jewish_ritual_objects	Jewish ritual objects	Judaism words	S	
+buddhism_words	Buddhism words	religion	S	
+key_teachings	Buddhist teachings	Buddhism words	S	
+contemplative_practices	Buddhist practices	Buddhism words	S	
+temple_sights	Buddhist temple sights	Buddhism words	S	
+hinduism_words	Hinduism words	religion	S	
+hindu_gods_and_goddesses	Hindu gods and goddesses	Hinduism words	S	
+spiritual_concepts	Hindu spiritual concepts	Hinduism words	S	
+world_religions	world religions	religion	S	
+military	military	People & Society	S	
+military_ranks	military ranks	military	S	
+navy_ranks	navy ranks	military ranks	S	
+army_words	army words	military	S	
+kinds_of_soldier	kinds of soldier	army words	S	
+army_kit	army kit	army words	S	
+navy_words	navy words	military	S	
+naval_people	naval people	navy words	S	
+air_force_words	air force words	military	S	
+medals_and_honors	medals and honors	military	S	
+historic_weapons	historic weapons	military	AS	
+modern_weapons	modern weapons	military	AS	
+military_units	military units	military	S	
+warships	warships	military	AS	
+service_members	service members	military	S	
+camps_and_fortifications	camps and fortifications	military	S	
+school	school	People & Society		
+school_subjects	school subjects	school		
+stationery	stationery	school		
+classroom_items	classroom items	school		
+school_staff	school staff	school		
+exam_words	exam words	school		
+university_words	university words	school		
+academic_staff	university staff	university words		
+school_types	school types	school		
+university_degrees	university degrees	school		
+graduation_words	graduation words	school		
+school_events	school events	school		
+places_in_a_school	places in a school	school		
+things_you_do_at_school	things you do at school	school		
+people_at_school	people at school	school		
+media_and_communication	media and communication	People & Society		
+newspaper_words	newspaper words	media and communication		
+social_media_words	social media words	media and communication		
+online_actions	social media actions	social media words		
+internet_users	social media users	social media words		
+social_media_platforms	social media platforms	media and communication		
+phone_words	phone words	media and communication		
+journalism_words	journalism words	media and communication		
+news_roles	news roles	journalism words		
+advertising_words	advertising words	media and communication		
+online_promotion_terms	online promotion terms	advertising words		
+radio_words	radio words	media and communication		
+old_ways_to_communicate	old ways to communicate	media and communication		
+media_slang	media slang	media and communication		
+social_classes	social classes	society	S	
+protest_words	protest words	society	S	
+workplace_disputes	workplace disputes	protest words	S	
+charity_words	charity words	society		
+fundraising_events	fundraising events	charity words		
+helping_groups	aid organizations	charity words		
+manners_and_etiquette	manners and etiquette	society		
+polite_phrases	polite phrases	manners and etiquette		
+polite_gestures	polite gestures	manners and etiquette		
+maori_culture	Māori culture	society		
+aboriginal_culture	Aboriginal culture	society	S	
+words_for_a_person	words for a person	kinds of people		
+groups_of_people	groups of people	kinds of people		
+words_for_leader	words for leader	kinds of people		
+words_for_expert	words for expert	kinds of people		
+words_for_beginner	words for beginner	kinds of people		
+fans_and_followers	fans and followers	kinds of people		
+troublemakers	troublemakers	kinds of people		
+living_room	living room	rooms		
+kitchen	kitchen	rooms		
+kitchen_linens	kitchen linens	kitchen		
+bathroom	bathroom	rooms		
+bedroom	bedroom	rooms		
+garage	garage	rooms		
+attic	attic	rooms		
+dining_room	dining room	rooms		
+home_office	home office	rooms		
+outside_the_house	outside the house	rooms		
+junk_drawer	junk drawer	where things are kept		
+in_a_wallet	in a wallet	where things are kept		
+in_a_handbag	in a handbag	where things are kept		
+medicine_cabinet	medicine cabinet	where things are kept		
+wardrobe	closet contents	where things are kept		
+under_the_sink	under the sink	where things are kept		
+in_the_fridge	in the fridge	where things are kept		
+in_a_school_bag	in a school bag	where things are kept		
+in_a_pencil_case	in a pencil case	where things are kept		
+in_a_toy_box	in a toy box	where things are kept		
+in_a_toolbox	in a toolbox	where things are kept		
+in_a_pocket	in a pocket	where things are kept		
+furniture	furniture	Home & Everyday		
+seating	seating	furniture		
+tables_and_desks	tables and desks	furniture		
+beds	beds	furniture		
+storage_furniture	storage furniture	furniture		
+lights_and_lamps	lights and lamps	furniture		
+soft_furnishings	soft furnishings	furniture		
+window_coverings	window coverings	soft furnishings		
+rugs_and_carpets	rugs and carpets	soft furnishings		
+antique_furniture	antique furniture	furniture		
+appliances	appliances	Home & Everyday		
+kitchen_appliances	kitchen appliances	appliances		
+cleaning_appliances	cleaning appliances	appliances		
+home_electronics	home electronics	appliances		
+things_for_watching_shows	things for watching shows	home electronics		
+things_that_play_music	things that play music	home electronics		
+heating_and_cooling	heating and cooling	appliances		
+fireplace_words	fireplace words	heating and cooling		
+small_appliances	small appliances	appliances		
+bathroom_fixtures	bathroom fixtures	appliances		
+electrical_fittings	electrical fittings	appliances		
+tools	tools	Home & Everyday		
+hand_tools	hand tools	tools		
+saws	saws	hand tools		
+power_tools	power tools	tools		
+fixings	fixings	tools		
+measuring_tools	measuring tools	tools		
+painting_and_decorating	painting and decorating	tools		
+plumbing_words	plumbing words	tools		
+adhesives	adhesives	tools		
+things_with_a_sharp_blade	things with a sharp blade	tools		
+cleaning_items	cleaning items	cleaning		
+brooms_and_brushes	brooms and brushes	cleaning items		
+cleaning_verbs	cleaning verbs	cleaning		
+laundry_words	laundry words	cleaning		
+cleaning_products	cleaning products	cleaning		
+chores	chores	cleaning		
+bins_and_recycling	bins and recycling	cleaning		
+washing_up	washing up	cleaning		
+household_pests	household pests	cleaning		
+building_materials	building materials	house and building		
+parts_of_a_house	parts of a house	house and building		
+staircase_parts	staircase parts	parts of a house		
+roof_parts	roof parts	house and building		
+windows_and_doors	windows and doors	house and building		
+parts_of_a_door	parts of a door	windows and doors		
+diy_words	DIY words	house and building		
+house_styles	house styles	house and building		
+real_estate_words	real estate words	house and building		
+household_bills	household bills	house and building		
+moving_house	moving house	house and building		
+home_safety	home safety	house and building		
+clothes	clothes	Home & Everyday		
+tops	tops	clothes		
+pants_and_shorts	pants and shorts	clothes		
+dresses_and_skirts	dresses and skirts	clothes		
+coats_and_jackets	coats and jackets	clothes		
+underwear	underwear	clothes		
+traditional_clothes	traditional clothes	clothes		
+ottoman_clothing	Ottoman clothing	traditional clothes		
+middle_eastern_clothing	Middle Eastern clothing	traditional clothes		
+african_clothing	African clothing	traditional clothes		
+japanese_clothing	Japanese clothing	traditional clothes		
+indian_clothing	Indian clothing	traditional clothes		
+pacific_island_clothing	Pacific Island clothing	traditional clothes		
+south_american_clothing	South American clothing	traditional clothes		
+western_wear	western wear	traditional clothes		
+european_folk_costume	European folk costume	traditional clothes		
+work_clothes	work clothes	clothes		
+swimwear	swimwear	clothes		
+knitwear	knitwear	clothes		
+fashion_styles	fashion styles	clothes		
+fashion_designers	fashion designers	clothes		
+socks_and_hosiery	socks and hosiery	clothes		
+rain_gear	rain gear	clothes		
+winter_clothes	winter clothes	clothes		
+accessories	accessories	Home & Everyday		
+shoes	shoes	accessories		
+shoe_parts	shoe parts	accessories		
+boots	boots	accessories		
+hats	hats	accessories		
+historical_hats	historical hats	hats		
+bags	bags	accessories		
+jewelry	jewelry	accessories		
+scarves_and_gloves	scarves and gloves	accessories		
+eyewear	eyewear	accessories		
+glasses_types	glasses types	eyewear		
+hair_accessories	hair accessories	accessories		
+neckwear	neckwear	accessories		
+tie_types	tie types	neckwear		
+fabrics_and_sewing	fabrics and sewing	Home & Everyday		
+fabrics	fabrics	fabrics and sewing		
+cotton_fabrics	cotton fabrics	fabrics		
+wool_fabrics	wool fabrics	fabrics		
+fabrics_from_animals	fabrics from animals	fabrics		
+tough_fabrics	tough fabrics	fabrics		
+embroidery_stitches	embroidery stitches	fabrics and sewing		
+sewing_kit	sewing kit	fabrics and sewing		
+stitch_types	stitch types	fabrics and sewing		
+knitting_words	knitting words	fabrics and sewing		
+fabric_prints	fabric prints	fabrics and sewing		
+clothing_parts	clothing parts	fabrics and sewing		
+necklines	necklines	clothing parts		
+fastenings	fastenings	fabrics and sewing		
+sewing_tools	sewing tools	fabrics and sewing		
+holidays_and_celebrations	holidays and celebrations	Home & Everyday		
+christmas	Christmas	holidays and celebrations		
+christmas_carols	Christmas carols	Christmas		
+santa_s_reindeer	Santa's reindeer	Christmas		
+twelve_days_of_christmas_gifts	Twelve Days of Christmas	Christmas		
+halloween	Halloween	holidays and celebrations		
+easter	Easter	holidays and celebrations		
+new_year	New Year	holidays and celebrations		
+thanksgiving	Thanksgiving	holidays and celebrations		
+weddings	weddings	holidays and celebrations		
+wedding_anniversaries	wedding anniversaries	weddings		
+wedding_rhyme	wedding rhyme	weddings		
+people_at_the_ceremony	wedding ceremony people	weddings		
+things_arranged_before_the_big_day	wedding preparations	weddings		
+what_the_couple_wears_and_carries	wedding outfit items	weddings		
+birthdays	birthdays	holidays and celebrations		
+party_supplies	party supplies	birthdays		
+valentine_s_day	Valentine's Day	holidays and celebrations		
+festivals_of_the_world	festivals of the world	holidays and celebrations	S	
+diwali	Diwali	festivals of the world	S	
+lunar_new_year	Lunar New Year	festivals of the world	S	
+holi	Holi	festivals of the world	S	
+mid_autumn_festival	Mid-Autumn Festival	festivals of the world	S	
+ramadan_and_eid	Ramadan and Eid	festivals of the world	S	
+hanukkah	Hanukkah	festivals of the world	S	
+day_of_the_dead	Day of the Dead	festivals of the world	S	
+anzac_day	ANZAC Day	festivals of the world	S	
+midsummer	Midsummer	festivals of the world	S	
+oktoberfest	Oktoberfest	festivals of the world	S	
+st_patrick_s_day	St. Patrick's Day	festivals of the world	S	
+gift_wrapping	gift wrapping	holidays and celebrations		
+fireworks	fireworks	holidays and celebrations		
+hindu_festivals	Hindu festivals	holidays and celebrations		
+life_milestones	life milestones	holidays and celebrations		
+months	months	time		
+months_with_30_days	months with 30 days	months		
+months_with_31_days	months with 31 days	months		
+days_and_weeks	days and weeks	time		
+season_words	season words	time		
+the_four_seasons	the four seasons	season words		
+time_units	time units	time		
+clocks_and_calendars	clocks and calendars	time		
+clock_parts	clock parts	clocks and calendars		
+clock_types	clock types	clocks and calendars		
+times_of_day	times of day	time		
+zodiac_signs	zodiac signs	time		
+chinese_zodiac	Chinese zodiac	time		
+days_of_the_week	days of the week	time		
+weekdays	weekdays	time		
+morning_routine	morning routine	time		
+containers	containers	household objects		
+brewery_containers	brewery containers	containers		
+glass_vessels	glass vessels	containers		
+things_with_a_carrying_handle	things with a carrying handle	containers		
+food_storage	food storage	containers		
+cords_and_strings	cords and strings	household objects		
+paper_goods	paper goods	household objects		
+things_used_for_wiping	things used for wiping	paper goods		
+office_and_school_supplies	office and school supplies	paper goods		
+candle_words	candle words	household objects		
+emergency_supplies	emergency supplies	household objects		
+energy_and_light_sources	blackout supplies	emergency supplies		
+retro_household_items	retro household items	household objects		
+old_music_gear	old music gear	retro household items		
+things_without_a_plug	things without a plug	retro household items		
+old_office_tech	old office tech	retro household items		
+home_decor	home decor	household objects		
+cutlery	cutlery	tableware		
+knife_types	knife types	cutlery		
+spoon_types	spoon types	cutlery		
+crockery	crockery	tableware		
+bowl_types	bowl types	crockery		
+drinking_vessels	drinking vessels	tableware		
+drinking_glass_types	drinking glass types	drinking vessels		
+cup_types	cup types	drinking vessels		
+serving_dishes	serving dishes	tableware		
+locks_and_keys	locks and keys	household objects		
+things_on_wheels	things on wheels	household objects		
+things_you_brush	things you brush	household objects		
+things_you_open	things you open	household objects		
+things_you_pour	things you pour	household objects		
+cozy_things	cozy things	household properties		
+things_you_plug_in	things you plug in	household properties		
+kitchen_gadgets	kitchen electricals	things you plug in		
+things_with_handles	things with handles	household properties		
+kitchen_tools	kitchen tools	things with handles		
+things_with_buttons	things with buttons	household properties		
+things_you_wear	buttoned clothing	things with buttons		
+things_you_switch_on	push-button devices	things with buttons		
+things_with_lids	things with lids	household properties		
+things_with_legs	things with legs	household properties		
+table_types	table types	things with legs		
+ball_sports	ball sports	Sports & Games		
+team_ball_sports	team ball sports	ball sports		
+sports_balls	sports balls	ball sports		
+soccer_terms	soccer terms	ball sports		
+soccer_positions	soccer positions	soccer terms		
+european_soccer_clubs	European soccer clubs	soccer terms		
+ball_skills	soccer skills	soccer terms		
+basketball_terms	basketball terms	ball sports		
+nba_teams	NBA teams	basketball terms		
+american_football_terms	American football terms	ball sports		
+nfl_teams	NFL teams	American football terms		
+american_football_positions	American football positions	American football terms		
+baseball_terms	baseball terms	ball sports		
+mlb_teams	MLB teams	baseball terms		
+baseball_positions	baseball positions	baseball terms		
+baseball_bases	baseball bases	baseball terms		
+ballpark_parts	ballpark parts	baseball terms		
+pitching_terms	baseball pitching terms	baseball terms		
+hitting_terms	baseball hitting terms	baseball terms		
+cricket_terms	cricket terms	ball sports		
+cricket_fielding_positions	cricket fielding positions	cricket terms		
+cricket_dismissals	cricket dismissals	cricket terms		
+bowling_deliveries	cricket deliveries	cricket terms		
+players_and_officials	cricket players and officials	cricket terms		
+rugby_terms	rugby terms	ball sports		
+volleyball_terms	volleyball terms	ball sports		
+sports_with_a_net	sports with a net	ball sports		
+sports_played_with_sticks	sports played with sticks	ball sports		
+racket_and_target_sports	racket and target sports	Sports & Games		
+racket_sports	racket sports	racket and target sports		
+tennis_terms	tennis terms	racket and target sports		
+tennis_shots	tennis shots	tennis terms		
+tennis_grand_slams	tennis Grand Slams	tennis terms		
+golf_terms	golf terms	racket and target sports		
+golf_shots	golf shots	golf terms		
+golf_course_features	golf course features	golf terms		
+golf_clubs	golf clubs	golf terms		
+wedge_types	wedge types	golf clubs		
+golf_majors	golf majors	golf terms		
+scoring_terms	golf scoring terms	golf terms		
+table_tennis_terms	table tennis terms	racket and target sports		
+cue_sports_terms	cue sports terms	racket and target sports		
+cue_strokes	cue strokes	cue sports terms		
+archery_terms	archery terms	racket and target sports		
+darts_terms	darts terms	racket and target sports		
+bowling_terms	bowling terms	racket and target sports		
+water_sports	water sports	Sports & Games		
+swimming_strokes	swimming strokes	water sports		
+main_swimming_strokes	main swimming strokes	swimming strokes		
+swimming_words	swimming words	water sports		
+diving_terms	diving terms	water sports		
+dive_types	dive types	diving terms		
+scuba_words	scuba words	water sports		
+underwater_gear	underwater gear	scuba words		
+surfing_words	surfing words	water sports		
+surfer_slang	surfer slang	surfing words		
+surf_moves	surf moves	surfing words		
+rowing_words	rowing words	water sports		
+sailing_sports	sailing sports	water sports		
+board_and_paddle_sports	board and paddle sports	water sports		
+paddled_boat_sports	paddled boat sports	board and paddle sports		
+sports_ridden_on_a_board	sports ridden on a board	board and paddle sports		
+engine_powered_sports	motorboat sports	water sports		
+winter_sports	winter sports	Sports & Games		
+snow_sports	snow sports	winter sports		
+olympic_snow_sports	Olympic snow sports	snow sports		
+skiing_words	skiing words	winter sports		
+skating_words	skating words	winter sports		
+figure_skating_moves	figure skating moves	skating words		
+ice_hockey_terms	ice hockey terms	winter sports		
+nhl_teams	NHL teams	ice hockey terms		
+snowboard_tricks	snowboard tricks	winter sports		
+snowboard_grabs	snowboard grabs	snowboard tricks		
+curling_words	curling words	winter sports		
+combat_sports	combat sports	Sports & Games		
+martial_arts	martial arts	combat sports		
+japanese_martial_arts	Japanese martial arts	martial arts		
+chinese_martial_arts	Chinese martial arts	martial arts		
+southeast_asian_martial_arts	Southeast Asian martial arts	martial arts		
+weapon_based_martial_arts	weapon-based martial arts	martial arts		
+grappling_arts	grappling arts	martial arts		
+boxing_terms	boxing terms	combat sports		
+boxing_weight_classes	boxing weight classes	boxing terms		
+wrestling_terms	wrestling terms	combat sports		
+sumo_words	sumo words	wrestling terms		
+fencing_terms	fencing terms	combat sports		
+karate_words	karate words	combat sports		
+strikes_kicks_and_blocks	karate moves	karate words		
+judo_words	judo words	combat sports		
+throwing_moves	judo throws	judo words		
+pins_and_chokes	judo groundwork	judo words		
+track_events	track events	athletics and gymnastics		
+decathlon_events	decathlon events	track events		
+field_events	field events	athletics and gymnastics		
+gymnastics	gymnastics	athletics and gymnastics		
+gymnastics_apparatus	gymnastics apparatus	gymnastics		
+gymnastics_moves	gymnastics moves	gymnastics		
+running_words	running words	athletics and gymnastics		
+famous_marathons	famous marathons	running words		
+triathlon_words	triathlon words	athletics and gymnastics		
+kit_and_equipment	triathlon kit	triathlon words		
+olympic_sports	Olympic sports	athletics and gymnastics		
+team_sports	Olympic team sports	Olympic sports		
+aquatic_sports	Olympic aquatic sports	Olympic sports		
+cheerleading_words	cheerleading words	athletics and gymnastics		
+paralympic_sports	Paralympic sports	athletics and gymnastics		
+sports_equipment	sports equipment	sports gear and places		
+gym_gear	gym gear	sports equipment		
+protective_gear	protective sports gear	sports equipment		
+things_you_swing	things you swing	sports equipment		
+sports_venues	sports venues	sports gear and places		
+places_for_winter_sports	places for winter sports	sports venues		
+playing_surfaces	playing surfaces	sports venues		
+sports_officials	sports officials	sports gear and places		
+trackside_officials	motor racing officials	sports officials		
+sports_clothing	sports clothing	sports gear and places		
+layers_for_cold_weather	layers for cold weather	sports clothing		
+scoring_words	scoring words	sports gear and places		
+sports_verbs	sports verbs	sports gear and places		
+famous_sporting_events	famous sporting events	sporting events		
+multi_sport_events	multi-sport events	famous sporting events		
+tournament_words	tournament words	sporting events		
+tournament_formats	tournament formats	tournament words		
+stages_of_a_tournament	stages of a tournament	tournament words		
+famous_stadiums	famous stadiums	sporting events		
+american_sports_venues	American sports venues	famous stadiums		
+english_football_grounds	English football grounds	famous stadiums		
+rugby_grounds	rugby grounds	famous stadiums		
+olympic_host_cities	Olympic host cities	sporting events		
+trophies_and_prizes	trophies and prizes	sporting events		
+prizes_you_can_wear	prizes you can wear	trophies and prizes		
+famous_races	famous races	sporting events		
+motor_races	motor races	famous races		
+bike_races	bike races	famous races		
+famous_athletes	famous athletes	Sports & Games		
+famous_soccer_players	famous soccer players	famous athletes		
+english_players	English soccer players	famous soccer players		
+brazilian_players	Brazilian soccer players	famous soccer players		
+tennis_champions	tennis champions	famous athletes		
+women_s_tennis_stars	women's tennis stars	tennis champions		
+american_tennis_stars	American tennis stars	tennis champions		
+famous_boxers	famous boxers	famous athletes		
+basketball_legends	basketball legends	famous athletes		
+olympic_legends	Olympic legends	famous athletes		
+formula_one_drivers	Formula One drivers	famous athletes		
+famous_golfers	famous golfers	famous athletes		
+famous_cricketers	famous cricketers	famous athletes		
+baseball_legends	baseball legends	famous athletes		
+american_football_legends	American football legends	famous athletes		
+women_athletes	women athletes	famous athletes		
+famous_runners	famous runners	famous athletes		
+horse_and_animal_sports	horse and animal sports	Sports & Games		
+horse_riding_words	horse riding words	horse and animal sports		
+horse_racing_terms	horse racing terms	horse and animal sports		
+famous_horse_races	famous horse races	horse and animal sports		
+equestrian_events	equestrian events	horse and animal sports		
+rodeo_words	rodeo words	horse and animal sports		
+bullfighting_words	bullfighting words	horse and animal sports	AS	
+famous_racehorses	famous racehorses	horse and animal sports		
+canine_contests	canine contests	horse and animal sports		
+races_between_animals	races between animals	horse and animal sports		
+adventure_and_outdoor_sports	outdoor adventure sports	Sports & Games		
+extreme_sports	extreme sports	outdoor adventure sports		
+air_sports	air sports	outdoor adventure sports		
+climbing_words	climbing words	outdoor adventure sports		
+climbing_holds	climbing holds	climbing words		
+mountaineering_words	mountaineering words	outdoor adventure sports		
+fishing_words	fishing words	outdoor adventure sports		
+fishing_tackle	fishing tackle	fishing words		
+hunting_words	hunting words	outdoor adventure sports	AS	
+activities_on_foot	activities on foot	outdoor adventure sports		
+climbing_styles	climbing styles	outdoor adventure sports		
+games_of_chance	games of chance	Sports & Games	AS	
+casino_games	casino games	games of chance	AS	
+casino_words	casino words	games of chance	AS	
+people_in_a_casino	people in a casino	casino words	AS	
+money_terms_in_gambling	money terms in gambling	casino words	AS	
+poker_terms	poker terms	games of chance	AS	
+poker_betting_rounds	poker betting rounds	poker terms	AS	
+poker_hands	poker hands	poker terms	AS	
+player_actions	poker player actions	poker terms	AS	
+blackjack_terms	blackjack terms	games of chance	AS	
+betting_words	betting words	games of chance	AS	
+kinds_of_wager	kinds of wager	betting words	AS	
+lottery_words	lottery words	games of chance	AS	
+games_with_things_you_throw	games with things you throw	games of chance	AS	
+games_played_with_a_deck	games played with a deck	games of chance	AS	
+table_games	table games	Sports & Games		
+board_games	board games	table games		
+asian_board_games	Asian board games	board games		
+card_games	card games	table games		
+children_s_card_games	children's card games	card games		
+trick_taking_games	trick-taking games	card games		
+chess_terms	chess terms	table games		
+chess_openings	chess openings	chess terms		
+famous_chess_players	famous chess players	chess terms		
+chess_pieces	chess pieces	chess terms		
+tactical_motifs	chess tactics	chess terms		
+ways_a_game_ends	ways a chess game ends	chess terms		
+dice_games	dice games	table games		
+card_game_words	card game terms	table games		
+game_pieces	game pieces	table games		
+word_games	word games	table games		
+mahjong_words	mahjong words	table games		
+card_suits	card suits	table games		
+tarot_suits	tarot suits	table games		
+two_player_games	two-player games	table games		
+video_games	video games	Sports & Games		
+video_game_genres	video game genres	video games		
+gaming_words	gaming words	video games		
+gaming_hardware	gaming hardware	video games		
+arcade_words	arcade words	video games		
+pinball_words	pinball words	arcade words		
+game_controls	game controls	video games		
+esports_words	esports words	video games		
+power_ups_and_pickups	power-ups and pickups	video games		
+video_game_characters	video game characters	video games		
+nintendo_characters	Nintendo characters	video game characters		
+villains_and_monsters	video game villains	video game characters		
+arcade_classics	arcade classics	video games		
+hobbies_and_crafts	hobbies and crafts	Sports & Games		
+crafts	crafts	hobbies and crafts		
+needlework	needlework	crafts		
+yarn_and_thread_crafts	yarn and thread crafts	crafts		
+collecting_hobbies	collecting hobbies	hobbies and crafts		
+model_making	model making	hobbies and crafts		
+puzzles	puzzles	hobbies and crafts		
+logic_puzzles	logic puzzles	puzzles		
+magic_tricks	magic shows	hobbies and crafts		
+famous_magicians	famous magicians	magic shows		
+paper_crafts	paper crafts	hobbies and crafts		
+pottery_words	pottery words	hobbies and crafts		
+woodworking_words	woodworking words	hobbies and crafts		
+manual_woodworking_tools	manual woodworking tools	woodworking words		
+wood_joints	wood joints	woodworking words		
+hobbies_done_outdoors	hobbies done outdoors	hobbies and crafts		
+toys_and_play	toys and play	Sports & Games		
+toys	toys	toys and play		
+old_fashioned_playthings	old-fashioned playthings	toys		
+playground	playground	toys and play		
+party_games	party games	toys and play		
+outdoor_games	outdoor games	toys and play		
+yard_games	yard games	outdoor games		
+chasing_games	chasing games	outdoor games		
+building_toys	building toys	toys and play		
+dolls_and_figures	dolls and figures	toys and play		
+sports_day_events	sports day events	toys and play		
+toy_brands	toy brands	toys and play		
+traditional_playthings	traditional playthings	toys and play		
+turkish_football_clubs	Turkish football clubs	regional sports		
+middle_eastern_pastimes	Middle Eastern pastimes	regional sports		
+african_soccer_clubs	African soccer clubs	regional sports		
+south_asian_games	South Asian games	regional sports		
+aussie_rules_terms	Aussie rules terms	regional sports		
+afl_clubs	AFL clubs	regional sports		
+south_american_soccer_clubs	South American soccer clubs	regional sports		
+capoeira_words	capoeira words	regional sports		
+highland_games	Highland games	regional sports		
+british_pub_games	British pub games	regional sports		
+instruments	instruments	Arts & Entertainment		
+string_instruments	string instruments	instruments		
+guitar_types	guitar types	string instruments		
+bowed_instruments	bowed instruments	string instruments		
+woodwind_instruments	woodwind instruments	instruments		
+brass_instruments	brass instruments	instruments		
+horn_types	horn types	brass instruments		
+percussion_instruments	percussion instruments	instruments		
+drums	drums	percussion instruments		
+keyboard_instruments	keyboard instruments	instruments		
+folk_instruments	folk instruments	instruments		
+middle_eastern_instruments	Middle Eastern instruments	folk instruments		
+african_instruments	African instruments	folk instruments		
+chinese_instruments	Chinese instruments	folk instruments		
+japanese_instruments	Japanese instruments	folk instruments		
+indian_instruments	Indian instruments	folk instruments		
+pacific_instruments	Pacific instruments	folk instruments		
+andean_instruments	Andean instruments	folk instruments		
+celtic_instruments	Celtic instruments	folk instruments		
+blown_instruments	blown instruments	folk instruments		
+struck_instruments	struck instruments	folk instruments		
+electronic_instruments	electronic instruments	instruments		
+instrument_parts	instrument parts	instruments		
+guitar_parts	guitar parts	instrument parts		
+piano_parts	piano parts	instrument parts		
+classroom_instruments	classroom instruments	instruments		
+orchestra_instruments	orchestra instruments	instruments		
+plucked_instruments	plucked instruments	instruments		
+music_genres	music genres	music styles		
+rock_styles	rock styles	music genres		
+electronic_music_styles	electronic music styles	music genres		
+techno_styles	techno styles	electronic music styles		
+classical_forms	classical music forms	music styles		
+classical_dances	dances in classical music	classical music forms		
+works_for_voices	classical vocal works	classical music forms		
+orchestral_pieces	orchestral pieces	classical music forms		
+jazz_words	jazz words	music styles		
+world_music_styles	world music styles	music styles		
+african_music_styles	African music styles	world music styles		
+arabic_music_words	Arabic music words	world music styles		
+asian_music_styles	Asian music styles	world music styles		
+latin_music_styles	Latin music styles	world music styles		
+american_roots_music	American roots music	world music styles		
+blues_styles	blues styles	American roots music		
+european_folk_music	European folk music	world music styles		
+song_types	song types	music styles		
+hip_hop_words	hip hop words	music styles		
+music_words	music words	Arts & Entertainment		
+music_terms	music terms	music words		
+ways_to_play_a_note	ways to play a note	music terms		
+music_theory_ideas	music theory ideas	music terms		
+marks_on_sheet_music	marks on sheet music	music terms		
+voice_types	voice types	music words		
+classical_voice_types	classical voice types	voice types		
+orchestra_words	orchestra words	music words		
+orchestra_sections	orchestra sections	orchestra words		
+tempo_words	tempo words	music words		
+dynamics_markings	dynamics markings	music words		
+notes_and_rests	notes and rests	music words		
+concert_words	concert words	music words		
+recording_studio_words	recording studio words	music words		
+music_festivals	music festivals	music words		
+music_players	music players	music words		
+rock_band_lineup	rock band lineup	music words		
+musical_modes	musical modes	music words		
+solfege_notes	solfege notes	music words		
+note_values	note values	music words		
+italian_music_words	Italian music words	music words		
+musicians	musicians	Arts & Entertainment		
+composers	composers	musicians		
+baroque_composers	Baroque composers	composers		
+romantic_composers	Romantic composers	composers		
+opera_composers	opera composers	composers		
+film_composers	film composers	composers		
+twentieth_century_composers	20th-century composers	composers		
+famous_bands	famous bands	musicians		
+the_beatles	the Beatles	famous bands		
+queen_members	Queen members	famous bands		
+abba_members	ABBA members	famous bands		
+led_zeppelin_members	Led Zeppelin members	famous bands		
+british_bands	British bands	famous bands		
+american_bands	American bands	famous bands		
+pop_stars	pop stars	musicians		
+jazz_musicians	jazz musicians	musicians		
+rock_guitarists	rock guitarists	musicians		
+turkish_singers	Turkish singers	musicians		
+african_musicians	African musicians	musicians		
+south_american_singers	South American singers	musicians		
+country_singers	country singers	musicians		
+instrument_players	instrument players	musicians		
+voice_performers	voice performers	musicians		
+dance	dance	Arts & Entertainment		
+dances	dances	dance		
+ballet_terms	ballet terms	dance		
+famous_ballets	famous ballets	ballet terms		
+ballroom_dances	ballroom dances	dance		
+latin_dances	Latin dances	dance		
+folk_dances	folk dances	dance		
+middle_eastern_dances	Middle Eastern dances	folk dances	S	
+african_dances	African dances	folk dances		
+asian_dances	Asian dances	folk dances		
+polynesian_dances	Polynesian dances	folk dances		
+latin_american_folk_dances	Latin American folk dances	folk dances		
+north_american_folk_dances	North American folk dances	folk dances		
+european_folk_dances	European folk dances	folk dances		
+dance_moves	dance moves	dance		
+street_dance_styles	street dance styles	dance		
+dance_studio_words	dance studio words	dance		
+art	art	Arts & Entertainment		
+painting_words	painting words	art		
+painters	painters	art		
+renaissance_painters	Renaissance painters	painters		
+impressionist_painters	Impressionist painters	painters		
+modern_artists	modern artists	painters		
+dutch_painters	Dutch painters	painters		
+spanish_painters	Spanish painters	painters		
+latin_american_artists	Latin American artists	painters		
+french_painters	French painters	painters		
+american_painters	American painters	painters		
+art_movements	art movements	art		
+art_materials	art materials	art		
+sculpture_words	sculpture words	art		
+famous_sculptors	famous sculptors	sculpture words		
+photography_words	photography words	art		
+camera_parts	camera parts	photography words		
+famous_paintings	famous paintings	art		
+color_theory_words	color theory words	art		
+drawing_techniques	drawing techniques	art		
+islamic_art_words	Islamic art words	world art		
+turkish_arts	Turkish arts	world art		
+asian_art_forms	Asian art forms	world art		
+pacific_art_words	Pacific art words	world art		
+african_art_words	African art words	world art		
+theater_words	theater words	theater		
+parts_of_a_stage	parts of a stage	theater		
+theater_jobs	theater jobs	theater		
+opera_words	opera words	theater		
+famous_operas	famous operas	opera words		
+puppets	puppets	theater		
+musicals_words	musicals words	theater		
+famous_musicals	famous musicals	musicals words		
+one_word_musical_titles	one-word musical titles	famous musicals		
+stage_genres	stage genres	theater		
+asian_theater_forms	Asian theater forms	theater		
+theater_building_parts	theater building parts	theater		
+playwrights	playwrights	theater		
+english_stage_writers	English stage writers	playwrights		
+american_stage_writers	American stage writers	playwrights		
+continental_stage_writers	continental stage writers	playwrights		
+dress_up_costumes	dress-up costumes	theater		
+spooky_costumes	spooky costumes	dress-up costumes		
+jobs_with_uniforms	jobs with uniforms	dress-up costumes		
+film_and_tv	film and TV	Arts & Entertainment		
+movie_genres	movie genres	film and TV		
+genres_that_scare_people	scary movie genres	movie genres		
+tv_genres	TV genres	film and TV		
+drama_types	drama types	TV genres		
+film_words	film words	film and TV		
+behind_the_camera	movie crew roles	film and TV		
+cartoon_words	cartoon words	film and TV		
+award_words	award words	film and TV		
+entertainment_awards	entertainment awards	award words		
+film_festivals	film festivals	film and TV		
+tv_words	TV words	film and TV		
+television_equipment	television equipment	TV words		
+special_effects_words	special effects words	film and TV		
+film_directors	film directors	film and TV		
+european_directors	European film directors	film directors		
+asian_directors	Asian film directors	film directors		
+directors_from_cinema_s_early_decades	classic film directors	film directors		
+classic_film_stars	classic film stars	film and TV		
+marx_brothers	Marx Brothers	classic film stars		
+leading_ladies	classic film leading ladies	classic film stars		
+silent_movie_stars	silent movie stars	classic film stars		
+bollywood_stars	Bollywood stars	film and TV		
+anime_and_manga_words	anime and manga words	film and TV		
+camera_shots	camera shots	film and TV		
+literature	literature	Arts & Entertainment		
+book_genres	book genres	literature		
+factual_books	factual books	book genres		
+speculative_genres	speculative genres	book genres		
+tales_of_suspense	tales of suspense	book genres		
+authors	authors	literature		
+british_novelists	British novelists	authors		
+american_novelists	American novelists	authors		
+russian_writers	Russian writers	authors		
+turkish_writers	Turkish writers	authors		
+african_writers	African writers	authors		
+japanese_writers	Japanese writers	authors		
+latin_american_writers	Latin American writers	authors		
+children_s_authors	children's authors	authors		
+sci_fi_and_fantasy_authors	sci-fi and fantasy authors	authors		
+women_writers	women writers	authors		
+poetry_terms	poetry terms	literature		
+poets	poets	poetry terms		
+persian_poets	Persian poets	poetry terms		
+rhythm_words	poetry rhythm words	poetry terms		
+poetry_forms	poetry forms	literature		
+shakespeare_plays	Shakespeare plays	literature		
+shakespeare_characters	Shakespeare characters	Shakespeare plays		
+characters_in_tragedies	Shakespeare tragedy roles	Shakespeare characters		
+characters_in_comedies	Shakespeare comedy roles	Shakespeare characters		
+fairy_tales	fairy tales	literature		
+fairy_tale_characters	fairy tale characters	literature		
+magical_beings	magical beings	fairy tale characters		
+young_heroes_and_heroines	fairy tale heroes	fairy tale characters		
+parts_of_a_book	parts of a book	literature		
+opening_sections	book opening sections	parts of a book		
+closing_sections	book closing sections	parts of a book		
+outer_parts	book outer parts	parts of a book		
+publishing_words	publishing words	literature		
+classic_novels	classic novels	literature		
+march_sisters	March sisters	classic novels		
+three_musketeers	Three Musketeers	classic novels		
+comic_book_words	comic book words	literature		
+superheroes	superheroes	superhero world		
+superpowers	superpowers	superhero world		
+supervillains	supervillains	superhero world		
+story_roles	story roles	literature		
+book_formats	book formats	literature		
+fictional_detectives	fictional detectives	literature		
+fairy_tale_villains	fairy tale villains	literature		
+fairy_tale_objects	fairy tale objects	literature		
+children_s_book_characters	children's book characters	literature		
+circus	circus	shows and fun		
+comedy_words	comedy words	shows and fun		
+comedians	comedians	comedy words		
+comics_from_britain	comics from Britain	comedians		
+comics_from_the_usa	comics from the USA	comedians		
+funny_women	female comedians	comedians		
+fairground_rides	fairground rides	shows and fun		
+street_performers	street performers	shows and fun		
+theme_park_words	theme park words	shows and fun		
+party_entertainment	party entertainment	shows and fun		
+nightclub_words	nightclub words	shows and fun	AS	
+brazilian_carnival_words	Brazilian carnival words	shows and fun		
+architecture	architecture	Arts & Entertainment		
+architecture_styles	architecture styles	architecture		
+architects	architects	architecture		
+church_parts	church parts	architecture	S	
+mosque_parts	mosque parts	architecture	S	
+asian_temple_features	Asian temple features	architecture		
+bridge_types	bridge types	architecture		
+roof_styles	roof styles	architecture		
+column_styles	column styles	architecture		
+architectural_features	architectural features	architecture		
+window_styles	window styles	architecture		
+spaces_you_walk_through	spaces you walk through	architecture		
+ancient_civilizations	ancient civilizations	History & Myth		
+ancient_egypt	ancient Egypt	ancient civilizations		
+pharaohs	pharaohs	ancient Egypt		
+egyptian_afterlife	Egyptian afterlife	ancient Egypt	S	
+egyptian_symbols	Egyptian symbols	ancient Egypt		
+ancient_greece	ancient Greece	ancient civilizations		
+greek_philosophers	Greek philosophers	ancient Greece		
+ancient_olympics	ancient Olympics	ancient Greece		
+greek_city_states	Greek city-states	ancient Greece		
+ancient_greek_writers	ancient Greek writers	ancient Greece		
+ancient_rome	ancient Rome	ancient civilizations		
+roman_life	Roman life	ancient Rome		
+roman_army	Roman army	ancient Rome	A	
+aztecs_and_maya	Aztecs and Maya	ancient civilizations		
+inca_empire	Inca empire	ancient civilizations		
+ancient_china	ancient China	ancient civilizations		
+ancient_india	ancient India	ancient civilizations		
+mesopotamia	Mesopotamia	ancient civilizations		
+ancient_persia	ancient Persia	ancient civilizations		
+feudal_japan	feudal Japan	ancient civilizations		
+vikings	Vikings	ancient civilizations		
+byzantine_empire	Byzantine empire	ancient civilizations		
+ottoman_empire	Ottoman empire	ancient civilizations	S	
+ottoman_sultans	Ottoman sultans	Ottoman empire	S	
+celts	Celts	ancient civilizations		
+famous_ruins_and_monuments	famous ruins and monuments	ancient civilizations		
+medieval_times	medieval times	History & Myth		
+knights	knights	medieval times		
+orders_of_knighthood	orders of knighthood	knights		
+knightly_virtues	knightly virtues	knights		
+famous_knights	famous knights	knights		
+castles	castles	medieval times		
+castle_parts	castle parts	castles		
+medieval_jobs	medieval jobs	medieval times		
+feudal_ranks	feudal ranks	medieval times		
+medieval_weapons	medieval weapons	medieval times	A	
+medieval_food	medieval food	medieval times		
+medieval_clothing	medieval clothing	medieval times		
+monastery	monastery	medieval times	S	
+heraldry	heraldry	medieval times		
+jousting_tournament	jousting tournament	medieval times		
+crusades	Crusades	medieval times	AS	
+black_death	Black Death	medieval times	AS	
+medieval_instruments	medieval instruments	medieval times		
+medieval_pastimes	medieval pastimes	medieval times		
+exploration	exploration	History & Myth		
+explorers	explorers	exploration		
+conquistadors	conquistadors	explorers	A	
+portuguese_explorers	Portuguese explorers	explorers		
+australian_explorers	Australian explorers	explorers		
+explorers_of_africa	explorers of Africa	explorers		
+great_travelers	great travelers	explorers		
+navigation_tools	navigation tools	exploration		
+polar_exploration	polar exploration	exploration		
+antarctic_explorers	Antarctic explorers	polar exploration		
+arctic_explorers	Arctic explorers	polar exploration		
+expedition_ships	expedition ships	polar exploration		
+astronauts	astronauts	exploration		
+famous_voyages	famous voyages	exploration		
+discoveries	discoveries	exploration		
+silk_road	Silk Road	exploration		
+spice_trade	spice trade	exploration		
+polynesian_voyaging	Polynesian voyaging	exploration		
+age_of_sail	age of sail	exploration		
+pirates	pirates	History & Myth		
+pirate_words	pirate talk	pirates		
+famous_pirates	famous pirates	pirates		
+treasure	treasure	pirates		
+lost_treasures	lost treasures	treasure		
+pirate_ships	pirate ships	pirates		
+pirate_weapons	pirate weapons	pirates		
+pirate_places	pirate places	pirates		
+pirate_crew	pirate crew	pirates		
+pirate_punishments	pirate punishments	pirates	AS	
+pirate_clothing	pirate clothing	pirates		
+wars_and_battles	wars and battles	History & Myth	AS	
+famous_battles	famous battles	wars and battles	AS	
+ancient_battles	ancient battles	famous battles	AS	
+medieval_battles	medieval battles	famous battles	AS	
+napoleonic_battles	Napoleonic battles	famous battles	AS	
+world_war_i_battles	World War I battles	famous battles	AS	
+world_war_ii_battles	World War II battles	famous battles	AS	
+civil_war_battles	Civil War battles	famous battles	AS	
+armor	armor	wars and battles	AS	
+siege_weapons	siege weapons	wars and battles	AS	
+soldiers_of_history	soldiers of history	wars and battles	AS	
+famous_generals	famous generals	wars and battles	AS	
+cold_war	Cold War	wars and battles	AS	
+world_war_ii_terms	World War II terms	wars and battles	AS	
+peace_words	peace words	wars and battles	AS	
+conflicts_in_history	conflicts in history	wars and battles	AS	
+famous_leaders	famous leaders	famous people	S	
+african_historical_leaders	African historical leaders	famous leaders	S	
+latin_american_liberators	Latin American liberators	famous leaders	S	
+founding_fathers	Founding Fathers	famous leaders	S	
+english_monarchs	English monarchs	monarchs		
+tudor_monarchs	Tudor monarchs	English monarchs		
+wives_of_henry_viii	wives of Henry VIII	English monarchs		
+french_kings	French kings	monarchs		
+famous_queens	famous queens	monarchs		
+emperors	emperors	famous people		
+roman_emperors	Roman emperors	emperors		
+chinese_emperors	Chinese emperors	emperors		
+us_presidents	US presidents	famous people	S	
+mount_rushmore_presidents	Mount Rushmore presidents	US presidents	S	
+inventors	inventors	famous people		
+reformers	reformers	famous people	S	
+civil_rights_figures	civil rights figures	reformers	S	
+suffragists	suffragists	reformers	S	
+famous_women_in_history	famous women in history	famous people		
+archaeology	archaeology	History & Myth		
+ancient_sites_of_turkey	ancient sites of Turkey	ancient sites		
+ancient_sites_of_the_middle_east	ancient Middle East sites	ancient sites		
+ancient_sites_of_africa	ancient sites of Africa	ancient sites		
+ancient_sites_of_europe	ancient sites of Europe	ancient sites		
+ancient_sites_of_asia	ancient sites of Asia	ancient sites		
+maya_and_aztec_sites	Maya and Aztec sites	ancient sites		
+andean_sites	Andean sites	ancient sites		
+fossils	fossils	archaeology		
+artifacts	artifacts	archaeology		
+tombs_and_burials	tombs and burials	archaeology	S	
+ancient_writing	ancient writing	archaeology		
+stone_age	Stone Age	archaeology		
+bronze_age	Bronze Age	archaeology		
+mythology	mythology	History & Myth		
+greek_gods	Greek gods	mythology		
+titans	Titans	Greek gods		
+greek_monsters	Greek monsters	Greek gods		
+trojan_war	Trojan War	Greek gods		
+symbols_of_the_greek_gods	symbols of the Greek gods	Greek gods		
+greek_wind_gods	Greek wind gods	Greek gods		
+second_generation_titans	second-generation Titans	Greek gods		
+the_nine_muses	the nine Muses	Greek gods		
+twelve_olympians	twelve Olympians	Greek gods		
+greek_goddesses	Greek goddesses	Greek gods		
+greek_myth_objects	Greek myth objects	Greek gods		
+roman_gods	Roman gods	mythology		
+norse_gods	Norse gods	mythology		
+norse_mythology	Norse myth places and things	Norse gods		
+egyptian_gods	Egyptian gods	mythology		
+hindu_gods	Hindu gods	mythology	S	
+mesopotamian_gods	Mesopotamian gods	mythology		
+aztec_gods	Aztec gods	mythology		
+inca_gods	Inca gods	mythology		
+shinto_kami	Shinto kami	mythology	S	
+chinese_mythology	Chinese mythology	mythology		
+maori_mythology	Māori mythology	mythology		
+yoruba_orishas	Yoruba orishas	mythology	S	
+celtic_gods	Celtic gods	mythology		
+mythical_creatures	mythical creatures	mythology		
+sea_monsters	sea monsters	mythical creatures		
+winged_beasts	winged beasts	mythical creatures		
+shapeshifters	shapeshifters	mythical creatures		
+cryptids	cryptids	mythical creatures		
+undead	undead	mythical creatures		
+giants_of_legend	giants of legend	mythical creatures		
+greek_myth_creatures	Greek myth creatures	mythical creatures		
+greek_heroes	Greek heroes	mythology		
+labors_of_hercules	labors of Hercules	Greek heroes		
+legendary_places	legendary places	mythology		
+legendary_horses	legendary horses	mythology		
+rivers_of_the_underworld	rivers of the underworld	mythology		
+fantasy	fantasy	History & Myth		
+fantasy_races	fantasy races	fantasy		
+elf_types	elf types	fantasy races		
+magic_items	magic items	fantasy		
+wizard_words	wizard words	fantasy		YES
+witchcraft	witchcraft	fantasy	S	YES
+alchemy	alchemy	fantasy		
+dragons	dragons	fantasy		
+fairy_folk	fairy folk	fantasy		
+legendary_heroes	legendary heroes	fantasy		
+arthurian_legend	Arthurian legend	legendary heroes		
+robin_hood_legend	Robin Hood legend	legendary heroes		
+japanese_folklore	Japanese folklore	folklore		
+yokai	yokai	Japanese folklore		
+celtic_folklore	Celtic folklore	folklore		
+african_folklore	African folklore	folklore		
+slavic_folklore	Slavic folklore	folklore		
+native_american_folklore	Native American folklore	folklore	S	
+latin_american_folklore	Latin American folklore	folklore		
+turkish_folklore	Turkish folklore	folklore		
+arabian_nights	Arabian Nights	folklore		
+aboriginal_dreaming	Aboriginal Dreaming	folklore	S	
+american_tall_tales	American tall tales	folklore		
+ghosts_and_spirits	ghosts and spirits	folklore		
+superstitions	superstitions	folklore		
+historical_periods	historical periods	History & Myth		
+ages_of_history	ages of history	historical periods		
+french_revolution	French Revolution	revolutions		
+american_revolution	American Revolution	revolutions		
+dynasties	dynasties	historical periods		
+chinese_dynasties	Chinese dynasties	dynasties		
+royal_houses	royal houses	dynasties		
+empires	empires	historical periods		
+industrial_revolution	Industrial Revolution	historical periods		
+renaissance	Renaissance	historical periods		
+victorian_era	Victorian era	historical periods		
+wild_west	Wild West	historical periods		
+wild_west_legends	Wild West legends	Wild West		
+cowboy_gear	cowboy gear	Wild West		
+wild_west_town	Wild West town	Wild West		
+lawmen_of_the_west	lawmen of the West	Wild West		
+bad_guys_of_the_west	bad guys of the West	Wild West		
+colonial_america	colonial America	historical periods		
+roaring_twenties	Roaring Twenties	historical periods		
+historic_documents	historic documents	historical periods		
+periods_named_after_rulers	periods named after rulers	historical periods		
+chemical_elements	chemical elements	chemistry		
+lab_equipment	lab equipment	chemistry		
+lab_glassware	lab glassware	lab equipment		
+flask_types	flask types	lab glassware		
+lab_safety_gear	lab safety gear	lab equipment		
+chemistry_words	chemistry words	chemistry		
+states_of_matter	states of matter	chemistry		
+four_states_of_matter	four states of matter	states of matter		
+gases	gases	chemistry		
+acids_and_bases	acids and bases	chemistry		
+chemical_compounds	chemical compounds	chemistry		
+chemical_reactions	chemical reactions	chemistry		
+plastics	plastics	chemistry		
+household_chemicals	household chemicals	chemistry		
+classical_elements	classical elements	chemistry		
+noble_gases	noble gases	chemistry		
+halogens	halogens	chemistry		
+alkali_metals	alkali metals	chemistry		
+alkaline_earth_metals	alkaline earth metals	chemistry		
+physics_words	physics words	physics		
+forces	forces	physics		
+fundamental_forces	fundamental forces	forces		
+energy_types	energy types	physics		
+electricity_words	electricity words	physics		
+light_words	light words	physics		
+optical_instruments	optical instruments	light words		
+magnet_words	magnet words	physics		
+acoustics_words	acoustics words	physics		
+particle_physics	particle physics	physics		
+quark_flavours	quark flavours	particle physics		
+nuclear_words	nuclear words	physics	S	
+heat_science	heat science	physics		
+biology_words	biology words	biology		
+cell_parts	cell parts	biology		
+genetics_words	genetics words	biology		
+nucleobases	nucleobases	genetics words		
+plant_biology	plant biology	biology		
+microbes	microbes	biology		
+viruses	viruses	microbes		
+classification_words	classification words	biology		
+evolution_words	evolution words	biology		
+ecology_words	ecology words	biology		
+life_cycle_words	life cycle words	biology		
+microscope_parts	microscope parts	biology		
+phases_of_mitosis	phases of mitosis	biology		
+kingdoms_of_life	kingdoms of life	biology		
+taxonomic_ranks	taxonomic ranks	biology		
+space	space	Science & Tech		
+planets	planets	space		
+inner_planets	inner planets	planets		
+outer_planets	outer planets	planets		
+moons	moons	space		
+galilean_moons	Galilean moons	moons		
+constellations	constellations	space		
+southern_sky	southern sky	space		
+space_missions	space missions	space		
+astronomy_terms	astronomy terms	space		
+stars	stars	space		
+star_types	star types	stars		
+space_rocks	space rocks	space		
+spaceflight_words	spaceflight words	space		
+rocket_parts	rocket parts	spaceflight words		
+astronaut_gear	astronaut gear	spaceflight words		
+moon_phases_and_moods	moon phases and moods	space		
+galaxies_and_nebulae	galaxies and nebulae	space		
+named_nebulae	named nebulae	galaxies and nebulae		
+dwarf_planets	dwarf planets	space		
+phases_of_the_moon	phases of the moon	space		
+types_of_galaxy	types of galaxy	space		
+math_terms	math terms	math		
+numbers	numbers	math		
+ordinal_numbers	ordinal numbers	numbers		
+numbers_one_to_ten	numbers one to ten	numbers		
+teen_numbers	teen numbers	numbers		
+multiples_of_ten	multiples of ten	numbers		
+number_types	number types	math		
+big_numbers	big numbers	math		
+geometry	geometry	math		
+polygons	polygons	geometry		
+circle_parts	circle parts	geometry		
+angle_words	angle words	geometry		
+types_of_triangle	types of triangle	geometry		
+platonic_solids	Platonic solids	geometry		
+conic_sections	conic sections	geometry		
+fractions	fractions	math		
+math_operations	math operations	math		
+arithmetic_operations	arithmetic operations	math operations		
+algebra_words	algebra words	math		
+statistics_words	statistics words	math		
+summary_measures	summary statistics	statistics words		
+data_displays	data displays	statistics words		
+math_tools	math tools	math		
+measurement	measurement	Science & Tech		
+length_units	length units	measurement		
+weight_units	weight units	measurement		
+volume_units	volume units	measurement		
+temperature_words	temperature words	measurement		
+metric_prefixes	metric prefixes	measurement		
+measuring_instruments	measuring instruments	measurement		
+instruments_for_measuring_length	length measuring tools	measuring instruments		
+imperial_units	imperial units	measurement		
+units_named_after_people	units named after people	measurement		
+old_units	old units	measurement		
+metric_units	metric units	measurement		
+si_base_units	SI base units	measurement		
+physical_properties	measurable quantities	measurement		
+scientists	scientists	science history		
+women_in_science	women in science	scientists		
+islamic_golden_age_scholars	Islamic Golden Age scholars	scientists		
+ancient_greek_thinkers	ancient Greek thinkers	scientists		
+famous_physicists	famous physicists	scientists		
+famous_naturalists	famous naturalists	scientists		
+chemists	chemists	scientists		
+medical_pioneers	medical pioneers	scientists		
+famous_mathematicians	famous mathematicians	science history		
+ancient_greek_mathematicians	ancient Greek mathematicians	famous mathematicians		
+french_mathematicians	French mathematicians	famous mathematicians		
+german_mathematicians	German mathematicians	famous mathematicians		
+famous_engineers	famous engineers	science history		
+inventions	inventions	science history		
+chinese_inventions	Chinese inventions	inventions		
+four_great_chinese_inventions	four great Chinese inventions	Chinese inventions		
+japanese_inventions	Japanese inventions	inventions		
+middle_eastern_inventions	Middle Eastern inventions	inventions		
+european_inventions	European inventions	inventions		
+american_inventions	American inventions	inventions		
+australian_inventions	Australian inventions	inventions		
+accidental_inventions	accidental inventions	inventions		
+household_gadgets	household gadgets	inventions		
+famous_discoveries	famous discoveries	science history		
+medical_discoveries	medical discoveries	famous discoveries		
+astronomy_discoveries	astronomy discoveries	famous discoveries		
+physics_discoveries	physics discoveries	famous discoveries		
+science_fields	science fields	science history		
+branches_of_biology	branches of biology	science fields		
+earth_sciences	earth sciences	science fields		
+sciences_of_animals	sciences of animals	science fields		
+famous_experiments	famous experiments	science history		
+nobel_laureates	Nobel laureates	science history		
+peace_prize_winners	Nobel Peace Prize winners	Nobel laureates		
+literature_prize_winners	Nobel literature winners	Nobel laureates		
+physics_prize_winners	Nobel physics winners	Nobel laureates		
+inca_engineering	Inca engineering	science history		
+computers	computers	Science & Tech		
+computer_parts	computer parts	computers		
+keyboard_keys	keyboard keys	computer parts		
+input_devices	input devices	computer parts		
+data_storage_devices	data storage devices	computer parts		
+internal_components	inside a computer	computer parts		
+programming_languages	programming languages	computers		
+old_languages_from_last_century	old programming languages	programming languages		
+coding_words	coding words	computers		
+data_structures_and_types	data types and structures	coding words		
+coding_mishaps	coding mishaps	coding words		
+software_words	software words	computers		
+kinds_of_software	kinds of software	software words		
+screen_controls	on-screen controls	software words		
+internet_words	internet words	computers		
+networking	networking	computers		
+cables_and_connectors	cables and connectors	networking		
+connecting_hardware	network devices	networking		
+internet_protocols	internet protocols	networking		
+file_types	file types	computers		
+picture_formats	image file formats	file types		
+document_formats	document file formats	file types		
+sound_and_video_formats	audio and video formats	file types		
+cybersecurity_words	cybersecurity words	computers		
+malicious_programs	malicious programs	cybersecurity words		
+ways_to_prove_who_you_are	ways to prove who you are	cybersecurity words		
+tricks_that_fool_people	tricks that fool people	cybersecurity words		
+computer_actions	computer actions	computers		
+tech_companies	tech companies	computers		
+silicon_valley_companies	Silicon Valley companies	tech companies		
+asian_tech_companies	Asian tech companies	tech companies		
+european_tech_companies	European tech companies	tech companies		
+chip_makers	chip makers	tech companies		
+app_makers	app makers	tech companies		
+gadget_makers	gadget makers	tech companies		
+data_units	data units	computers		
+computer_storage	computer storage	computers		
+kinds_of_machines	kinds of machines	computers		
+gadgets	gadgets	Science & Tech		
+handheld_gadgets	handheld gadgets	gadgets		
+phone_features	phone features	gadgets		
+telephone_extras	telephone services	phone features		
+robots	robots	gadgets		
+ai_words	AI words	gadgets		
+assistants_and_apps	AI assistants	AI words		
+inside_a_model	AI model internals	AI words		
+smart_home	smart home	gadgets		
+cameras	cameras	gadgets		
+retro_tech	retro tech	gadgets		
+old_ways_to_hear_music	old ways to hear music	retro tech		
+old_computer_gear	old computer gear	retro tech		
+old_ways_to_keep_in_touch	old ways to keep in touch	retro tech		
+wearable_tech	wearable tech	gadgets		
+audio_gear	audio gear	gadgets		
+display_tech	display tech	gadgets		
+screen_types	screen types	display tech		
+display_specs	display specs	display tech		
+battery_types	battery types	gadgets		
+science_fiction_gadgets	science fiction gadgets	gadgets		
+engineering	engineering	Science & Tech		
+simple_machines	simple machines	engineering		
+engines	engines	engineering		
+engineering_fields	engineering fields	engineering		
+energy_sources	energy sources	engineering		
+fuels	fuels	energy sources		
+electronic_parts	electronic parts	engineering		
+semiconductor_devices	semiconductor devices	electronic parts		
+passive_components	passive electronic parts	electronic parts		
+maker_kit	hobby electronics parts	electronic parts		
+materials_science	materials science	engineering		
+alloys	alloys	materials science		
+steel_grades	steel grades	alloys		
+material_properties	material properties	materials science		
+power_grid_words	power grid words	engineering		
+electrical_problems	electrical problems	power grid words		
+machine_parts	machine parts	engineering		
+engine_parts	engine parts	machine parts		
+bridge_parts	bridge parts	engineering		
+bridge_supports	bridge supports	bridge parts		
+bridge_cable_types	bridge cable types	bridge parts		
+mechanical_forces	mechanical forces	engineering		
+load_bearing_supports	load-bearing supports	engineering		
+antarctic_research_station	Antarctic research base	science places		
+polar_vehicles	polar vehicles	Antarctic research base		
+space_station	space station	science places		
+observatory	observatory	science places		
+telescope_parts	telescope parts	observatory		
+famous_stargazing_sites	famous stargazing sites	observatory		
+science_lab	science lab	science places		
+experiment_glassware	experiment glassware	science lab		
+protective_equipment	lab protective equipment	science lab		
+science_fair	science fair	science places		
+science_experiments_for_kids	science experiments for kids	science fair		
+parts_of_an_experiment	parts of an experiment	science fair		
+launch_pad	launch pad	science places		
+data_center	data center	science places		
+nuclear_power_plant	nuclear power plant	science places	S	
+electronics_workbench	electronics workbench	science places		
+scientific_method	scientific method	Science & Tech		
+steps_of_an_investigation	steps of an investigation	scientific method		
+statistics_terms	statistics terms	scientific method		
+languages	languages	Language & Wordplay		
+european_languages	European languages	languages		
+romance_languages	Romance languages	European languages		
+germanic_languages	Germanic languages	European languages		
+slavic_languages	Slavic languages	European languages		
+celtic_languages	Celtic languages	European languages		
+asian_languages	Asian languages	languages		
+languages_of_india	languages of India	Asian languages		
+languages_of_china	languages of China	Asian languages		
+african_languages	African languages	languages		
+languages_of_southern_africa	languages of Southern Africa	African languages		
+languages_of_west_africa	languages of West Africa	African languages		
+languages_of_east_africa	languages of East Africa	African languages		
+middle_eastern_languages	Middle Eastern languages	languages		
+turkic_languages	Turkic languages	languages		
+pacific_languages	Pacific languages	languages		
+ancient_languages	ancient languages	languages		
+languages_of_the_americas	languages of the Americas	languages		
+native_north_american_languages	Native American languages	languages of the Americas		
+indigenous_south_american_languages	native South American tongues	languages of the Americas		
+codes_and_signals	codes and signals	languages		
+constructed_languages	constructed languages	languages		
+alphabets_and_writing	alphabets and writing	Language & Wordplay		
+greek_letters	Greek letters	alphabets and writing		
+phonetic_alphabet	phonetic alphabet	alphabets and writing		
+punctuation	punctuation	alphabets and writing		
+keyboard_symbols	keyboard symbols	alphabets and writing		
+writing_systems	writing systems	alphabets and writing		
+handwriting_words	handwriting words	alphabets and writing		
+typography_words	typography words	alphabets and writing		
+fonts	fonts	alphabets and writing		
+typefaces_with_serifs	typefaces with serifs	fonts		
+typefaces_without_serifs	typefaces without serifs	fonts		
+things_you_read	things you read	alphabets and writing		
+periodicals	periodicals	things you read		
+literary_works	literary works	things you read		
+parts_of_speech	parts of speech	grammar		
+grammar_terms	grammar terms	grammar		
+tenses	tenses	grammar		
+sentence_parts	sentence parts	grammar		
+clause_types	clause types	sentence parts		
+pronouns	pronouns	grammar		
+prepositions	prepositions	grammar		
+conjunctions	conjunctions	grammar		
+interjections	interjections	grammar		
+irregular_past_tenses	irregular past tenses	grammar		
+past_tenses_ending_in_silent_e	past tenses ending in silent e	irregular past tenses		
+i_to_a_past_tenses	i-to-a past tenses	irregular past tenses		
+irregular_plurals	irregular plurals	grammar		
+figures_of_speech	figures of speech	grammar		
+hello_around_the_world	hello around the world	foreign words		
+thank_you_around_the_world	thank you around the world	foreign words		
+goodbye_around_the_world	goodbye around the world	foreign words		
+spanish_numbers	Spanish numbers	foreign words		
+french_phrases_in_english	French phrases in English	foreign words		
+latin_phrases	Latin phrases	foreign words		
+turkish_everyday_words	Turkish everyday words	foreign words		
+swahili_words	Swahili words	foreign words		
+hindi_everyday_words	Hindi everyday words	foreign words		
+hawaiian_words	Hawaiian words	foreign words		
+maori_words	Māori words	foreign words		
+numbers_in_french	numbers in French	numbers in other languages		
+numbers_in_german	numbers in German	numbers in other languages		
+numbers_in_italian	numbers in Italian	numbers in other languages		
+numbers_in_japanese	numbers in Japanese	numbers in other languages		
+days_of_the_week_in_french	French days of the week	foreign words		
+days_of_the_week_in_spanish	Spanish days of the week	foreign words		
+days_of_the_week_in_german	German days of the week	foreign words		
+months_in_french	months in French	foreign words		
+months_in_spanish	months in Spanish	foreign words		
+months_in_german	months in German	foreign words		
+text_speak	text speak	slang and sayings		
+gen_z_slang	Gen Z slang	slang and sayings		
+1920s_slang	1920s slang	slang and sayings		
+british_slang	British slang	slang and sayings		
+british_english_words	British English words	slang and sayings		
+scottish_words	Scottish words	slang and sayings		
+cockney_rhyming_slang	Cockney rhyming slang	slang and sayings		
+australian_slang	Australian slang	slang and sayings		
+canadian_slang	Canadian slang	slang and sayings		
+cowboy_slang	cowboy slang	slang and sayings		
+baby_talk	baby talk	slang and sayings		
+old_fashioned_insults	old-fashioned insults	slang and sayings	S	
+polite_swears	polite swears	slang and sayings	S	
+british_exclamations	British exclamations	polite swears	S	
+american_exclamations	American exclamations	polite swears	S	
+words_meaning_nonsense	words meaning nonsense	slang and sayings		
+silly_sounding_words	silly-sounding words	slang and sayings		
+rhyming_word_pairs	silly rhyming pairs	silly-sounding words		
+old_fashioned_english_words	old-fashioned words	slang and sayings		
+archaic_pronouns_and_verb_forms	archaic pronouns and verbs	old-fashioned words		
+old_exclamations	old-fashioned exclamations	old-fashioned words		
+old_adverbs_and_prepositions	old adverbs and prepositions	old-fashioned words		
+words_for_toilet	words for toilet	slang and sayings		
+blank_ball	___ball	words before		
+blank_fly	___fly	words before		
+blank_house	___house	words before		
+blank_board	___board	words before		
+blank_light	___light	words before		
+blank_cake	___cake	words before		
+blank_man	___man	words before		
+blank_box	___box	words before		
+blank_book	___book	words before		
+blank_bird	___bird	words before		
+blank_fish	___fish	words before		
+blank_berry	___berry	words before		
+blank_room	___room	words before		
+blank_time	___time	words before		
+blank_line	___line	words before		
+blank_wood	___wood	words before		
+blank_stone	___stone	words before		
+blank_ship	___ship	words before		
+blank_works	___works	words before		
+blank_bag	___bag	words before		
+blank_bell	___bell	words before		
+blank_pot	___pot	words before		
+blank_shop	___shop	words before		
+blank_paper	___paper	words before		
+fire_blank	fire___	words after		
+sun_blank	sun___	words after		
+sea_blank	sea___	words after		
+star_blank	star___	words after		
+rain_blank	rain___	words after		
+snow_blank	snow___	words after		
+head_blank	head___	words after		
+back_blank	back___	words after		
+foot_blank	foot___	words after		
+hand_blank	hand___	words after		
+water_blank	water___	words after		
+black_blank	black___	words after		
+home_blank	home___	words after		
+key_blank	key___	words after		
+air_blank	air___	words after		
+ice_blank	ice___	words after		
+moon_blank	moon___	words after		
+paper_blank	paper___	words after		
+door_blank	door___	words after		
+blue_blank	blue___	words after		
+sand_blank	sand___	words after		
+eye_blank	eye___	words after		
+life_blank	life___	words after		
+over_blank	over___	words after		
+hidden_birds	hidden birds	hidden animals		
+hidden_insects	hidden insects	hidden animals		
+hidden_body_parts	hidden body parts	hidden words		
+hidden_colors	hidden colors	hidden words		
+hidden_numbers	hidden numbers	hidden words		
+hidden_fruits	hidden fruits	hidden words		
+hidden_names	hidden names	hidden words		
+hidden_vehicles	hidden vehicles	hidden words		
+hidden_trees	hidden trees	hidden words		
+sounds_like_a_letter	sounds like a letter	sound-alikes		
+sounds_like_a_number	sounds like a number	sound-alikes		
+homophones	homophones	sound-alikes		
+homographs	homographs	sound-alikes		
+rhymes_with_light	rhymes with light	sound-alikes		
+rhymes_with_bear	rhymes with bear	sound-alikes		
+rhymes_with_ring	rhymes with ring	sound-alikes		
+rhymes_with_blue	rhymes with blue	sound-alikes		
+rhymes_with_cake	rhymes with cake	sound-alikes		
+rhyming_pairs	rhyming pairs	sound-alikes		
+zigzag_words	zigzag words	sound-alikes		
+rhymes_with_cat	rhymes with cat	sound-alikes		
+palindromes	palindromes	letter play		
+reversible_words	reversible words	letter play		
+double_letters	double letters	letter play		
+no_vowels	no vowels	letter play		
+all_five_vowels	all five vowels	letter play		
+anagrams_of_each_other	anagrams of each other	letter play		
+words_made_of_roman_numerals	words made of Roman numerals	letter play		
+ough_words	ough words	letter play		
+acronyms	acronyms	letter play		
+silent_k_words	silent k words	silent letter words		
+silent_b_words	silent b words	silent letter words		
+silent_w_words	silent w words	silent letter words		
+silent_g_words	silent g words	silent letter words		
+starts_with_a_body_part	starts with a body part	letter play		
+starts_with_a_color	starts with a color	letter play		
+starts_with_a_number	starts with a number	letter play		
+starts_with_a_pet	starts with a pet	letter play		
+starts_with_dog	starts with dog	starts with a pet		
+starts_with_cat	starts with cat	starts with a pet		
+starts_with_rat	starts with rat	starts with a pet		
+starts_with_pig	starts with pig	starts with a pet		
+starts_with_hen	starts with hen	starts with a pet		
+starts_with_cow	starts with cow	starts with a pet		
+starts_with_lamb	starts with lamb	starts with a pet		
+starts_with_pup	starts with pup	starts with a pet		
+starts_with_public_transport	starts with public transport	letter play		
+starts_with_bus	starts with bus	starts with public transport		
+starts_with_cab	starts with cab	starts with public transport		
+starts_with_metro	starts with metro	starts with public transport		
+starts_with_a_bird	starts with a bird	letter play		
+starts_with_a_piece_of_clothing	starts with clothing	letter play		
+starts_with_cap	starts with cap	starts with clothing		
+starts_with_bra	starts with bra	starts with clothing		
+starts_with_bib	starts with bib	starts with clothing		
+starts_with_a_drink	starts with a drink	letter play		
+starts_with_tea	starts with tea	starts with a drink		
+starts_with_gin	starts with gin	starts with a drink		
+starts_with_rum	starts with rum	starts with a drink		
+starts_with_ale	starts with ale	starts with a drink		
+starts_with_port	starts with port	starts with a drink		
+starts_with_a_family_member	starts with a relative	letter play		
+starts_with_son	starts with son	starts with a relative		
+starts_with_gran	starts with gran	starts with a relative		
+starts_with_bro	starts with bro	starts with a relative		
+starts_with_pa	starts with pa	starts with a relative		
+starts_with_ma	starts with ma	starts with a relative		
+starts_with_a_musical_instrument	starts with an instrument	letter play		
+starts_with_horn	starts with horn	starts with an instrument		
+starts_with_bell	starts with bell	starts with an instrument		
+starts_with_viol	starts with viol	starts with an instrument		
+starts_with_a_shape	starts with a shape	letter play		
+starts_with_ball	starts with ball	starts with a shape		
+starts_with_disc	starts with disc	starts with a shape		
+starts_with_star	starts with star	starts with a shape		
+starts_with_arc	starts with arc	starts with a shape		
+starts_with_a_tree	starts with a tree	letter play		
+starts_with_fir	starts with fir	starts with a tree		
+starts_with_ash	starts with ash	starts with a tree		
+starts_with_plum	starts with plum	starts with a tree		
+starts_with_a_weather_word	starts with a weather word	letter play		
+starts_with_sun	starts with sun	starts with a weather word		
+ends_with_a_bird	ends with a bird	letter play		
+ends_with_owl	ends with owl	ends with a bird		
+ends_with_tern	ends with tern	ends with a bird		
+ends_with_a_body_part	ends with a body part	letter play		
+ends_with_arm	ends with arm	ends with a body part		
+ends_with_lip	ends with lip	ends with a body part		
+ends_with_ear	ends with ear	ends with a body part		
+ends_with_back	ends with back	ends with a body part		
+ends_with_head	ends with head	ends with a body part		
+ends_with_a_piece_of_clothing	ends with clothing	letter play		
+ends_with_bra	ends with bra	ends with clothing		
+ends_with_a_color	ends with a color	letter play		
+ends_with_red	ends with red	ends with a color		
+ends_with_tan	ends with tan	ends with a color		
+ends_with_rust	ends with rust	ends with a color		
+ends_with_a_drink	ends with a drink	letter play		
+ends_with_gin	ends with gin	ends with a drink		
+ends_with_rum	ends with rum	ends with a drink		
+ends_with_ale	ends with ale	ends with a drink		
+ends_with_port	ends with port	ends with a drink		
+ends_with_a_family_member	ends with a relative	letter play		
+ends_with_son	ends with son	ends with a relative		
+ends_with_mum	ends with mum	ends with a relative		
+ends_with_sis	ends with sis	ends with a relative		
+ends_with_ma	ends with ma	ends with a relative		
+ends_with_a_musical_instrument	ends with an instrument	letter play		
+ends_with_lute	ends with lute	ends with an instrument		
+ends_with_a_number	ends with a number	letter play		
+ends_with_one	ends with one	ends with a number		
+ends_with_ten	ends with ten	ends with a number		
+ends_with_nine	ends with nine	ends with a number		
+ends_with_eight	ends with eight	ends with a number		
+ends_with_a_pet	ends with a pet	letter play		
+ends_with_rat	ends with rat	ends with a pet		
+ends_with_hen	ends with hen	ends with a pet		
+ends_with_a_shape	ends with a shape	letter play		
+ends_with_line	ends with line	ends with a shape		
+ends_with_ring	ends with ring	ends with a shape		
+ends_with_public_transport	ends with public transport	letter play		
+ends_with_bus	ends with bus	ends with public transport		
+ends_with_train	ends with train	ends with public transport		
+ends_with_a_tree	ends with a tree	letter play		
+ends_with_ash	ends with ash	ends with a tree		
+ends_with_pine	ends with pine	ends with a tree		
+ends_with_a_weather_word	ends with a weather word	letter play		
+ends_with_ice	ends with ice	ends with a weather word		
+ends_with_rain	ends with rain	ends with a weather word		
+homophones_of_animals	homophones of animals	letter play		
+homophones_of_body_parts	homophones of body parts	letter play		
+numbers_with_the_first_letter_changed	numbers, first letter changed	letter play		
+animals_plus_a_letter	animals plus a letter	letter play		
+starts_with_a_metal	starts with a metal	letter play		
+starts_with_tin	starts with tin	starts with a metal		
+words_from_french	words from French	word origins		
+food_and_dining_words	French food and dining words	words from French		
+words_from_spanish	words from Spanish	word origins		
+foods_and_flavors	Spanish food words	words from Spanish		
+wild_west_words	Spanish Wild West words	words from Spanish		
+words_from_italian	words from Italian	word origins		
+italian_food_words	Italian food words	words from Italian		
+musical_terms	Italian musical terms	words from Italian		
+words_from_german	words from German	word origins		
+german_foods_and_drinks	German foods and drinks	words from German		
+words_from_dutch	words from Dutch	word origins		
+food_and_drink_words	Dutch food and drink words	words from Dutch		
+ships_and_sailing_words	Dutch sailing words	words from Dutch		
+words_from_yiddish	words from Yiddish	word origins		
+words_from_arabic	words from Arabic	word origins		
+words_from_persian	words from Persian	word origins		
+words_from_turkish	words from Turkish	word origins		
+words_from_japanese	words from Japanese	word origins		
+words_from_chinese	words from Chinese	word origins		
+words_from_afrikaans	words from Afrikaans	word origins		
+words_from_native_american_languages	Native American words	word origins		
+words_from_nahuatl	words from Nahuatl	word origins		
+words_from_south_american_languages	words from South America	word origins		
+words_from_mythology	words from mythology	word origins		
+words_named_after_people	words named after people	word origins		
+flowers_named_after_people	flowers named after people	words named after people		
+words_named_after_places	words named after places	word origins		
+brand_names_used_as_words	brand names used as words	word origins		
+portmanteau_words	portmanteau words	word origins		
+tech_blends	tech word blends	portmanteau words		
+entertainment_blends	entertainment word blends	portmanteau words		
+girls_names	girls' names	names		
+boys_names	boys' names	names		
+unisex_names	unisex names	names		
+biblical_names	Biblical names	names	S	
+old_fashioned_names	old-fashioned names	names		
+short_forms_of_names	short forms of names	names		
+names_that_are_flowers	names that are flowers	names		
+names_that_are_gems	names that are gems	names		
+names_that_are_months	names that are months	names		
+names_that_are_places	names that are places	names		
+names_that_are_virtues	names that are virtues	names		
+names_that_are_colors	names that are colors	names		
+names_that_are_trees	names that are trees	names		
+turkish_names	Turkish names	names around the world		
+arabic_names	Arabic names	names around the world		
+indian_names	Indian names	names around the world		
+japanese_names	Japanese names	names around the world		
+latin_american_names	Latin American names	names around the world		
+irish_names	Irish names	names around the world		
+russian_names	Russian names	names around the world		
+surnames_that_are_jobs	surnames that are jobs	surnames		
+scottish_clan_names	Scottish clan names	surnames		
+chinese_surnames	Chinese surnames	surnames		
+opposites	opposites	Language & Wordplay		
+colors	colors	Qualities		
+shades_of_red	shades of red	colors		
+shades_of_blue	shades of blue	colors		
+shades_of_green	shades of green	colors		
+shades_of_yellow	shades of yellow	colors		
+shades_of_purple	shades of purple	colors		
+shades_of_brown	shades of brown	colors		
+shades_of_orange	shades of orange	colors		
+shades_of_pink	shades of pink	colors		
+shades_of_gray	shades of gray	colors		
+metallic_colors	metallic colors	colors		
+colors_in_spanish	colors in Spanish	colors in other languages		
+colors_in_french	colors in French	colors in other languages		
+colors_in_turkish	colors in Turkish	colors in other languages		
+shades_of_white	shades of white	colors		
+cmyk_inks	CMYK inks	colors		
+colors_of_the_rainbow	colors of the rainbow	colors		
+olympic_ring_colors	Olympic ring colors	colors		
+shades_of_black	shades of black	colors		
+blue_green_shades	blue-green shades	colors		
+pastel_colors	pastel colors	colors		
+neon_colors	neon colors	colors		
+earth_tones	earth tones	colors		
+jewel_tones	jewel tones	colors		
+colors_named_after_foods	colors named after foods	colors		
+fruit_shades	colors named after fruits	colors named after foods		
+drink_shades	colors named after drinks	colors named after foods		
+colors_named_after_flowers	colors named after flowers	colors		
+colors_named_after_gems	colors named after gems	colors		
+colors_named_after_animals	colors named after animals	colors		
+colors_named_after_places	colors named after places	colors		
+2d_shapes	2D shapes	shapes and patterns		
+3d_shapes	3D shapes	shapes and patterns		
+patterns	patterns	shapes and patterns		
+line_types	line types	shapes and patterns		
+symbols	symbols	shapes and patterns		
+curves_and_spirals	curves and spirals	shapes and patterns		
+round_things	round things	shaped things		
+square_things	square things	shaped things		
+triangular_things	triangular things	shaped things		
+oval_things	oval things	shaped things		
+natural_materials	natural materials	materials		
+man_made_materials	man-made materials	materials		
+precious_materials	precious materials	materials		
+hard_materials	hard materials	materials		
+see_through_materials	see-through materials	materials		
+things_that_rust	things that rust	materials		
+things_made_of_wood	things made of wood	made of…		
+things_made_of_glass	things made of glass	made of…		
+things_made_of_paper	things made of paper	made of…		
+reading_material	reading material	things made of paper		
+things_made_of_rubber	things made of rubber	made of…		
+things_made_of_leather	things made of leather	made of…		
+things_made_of_metal	things made of metal	made of…		
+things_made_of_plastic	things made of plastic	made of…		
+rough_things	rough things	textures		
+smooth_things	smooth things	textures		
+soft_things	soft things	textures		
+sticky_things	sticky things	textures		
+slippery_things	slippery things	textures		
+prickly_things	prickly things	textures		
+plants_with_spines	plants with spines	prickly things		
+animals_covered_in_spikes	animals covered in spikes	prickly things		
+stretchy_things	stretchy things	textures		
+texture_words	texture words	textures		
+fluffy_things	fluffy things	textures		
+wet_things	wet things	textures		
+sweet_foods	sweet foods	tastes		
+confectionery	confectionery	sweet foods		
+baked_treats	baked treats	sweet foods		
+sour_foods	sour foods	tastes		
+fermented_foods_and_drinks	fermented foods and drinks	sour foods		
+salty_foods	salty foods	tastes		
+cured_fish	cured fish	salty foods		
+bar_snacks	bar snacks	salty foods		
+bitter_foods	bitter foods	tastes		
+spicy_foods	spicy foods	tastes		
+capsicums	capsicums	spicy foods		
+umami_foods	umami foods	tastes		
+japanese_ingredients	Japanese ingredients	umami foods		
+ocean_ingredients	ocean ingredients	umami foods		
+taste_words	taste words	tastes		
+crunchy_foods	crunchy foods	food textures		
+chewy_foods	chewy foods	food textures		
+creamy_foods	creamy foods	food textures		
+creamy_desserts	creamy desserts	creamy foods		
+sauces_and_dips	creamy sauces and dips	creamy foods		
+fizzy_drinks	fizzy drinks	food textures		
+spicy_dishes_of_asia	spicy dishes of Asia	tastes by region		
+spicy_dishes_of_africa	spicy dishes of Africa	tastes by region		
+sweet_treats_of_turkey	sweet treats of Turkey	tastes by region		
+south_american_sweets	South American sweets	tastes by region		
+american_candy	American candy	tastes by region		
+basic_tastes	basic tastes	tastes		
+words_for_big	words for big	synonyms		
+words_for_small	words for small	synonyms		
+words_for_fast	words for fast	synonyms		
+words_for_good	words for good	synonyms		
+words_for_bad	words for bad	synonyms		
+words_for_smart	words for smart	synonyms		
+words_for_strange	words for strange	synonyms		
+words_for_pretty	words for pretty	synonyms		
+words_for_old	words for old	synonyms		
+words_for_noise	words for noise	synonyms		
+feeling_tired	words for tired	synonyms		
+huge_things	huge things	size and weight		
+tiny_things	tiny things	size and weight		
+heavy_things	heavy things	size and weight		
+long_things	long things	size and weight		
+tall_things	tall things	size and weight		
+size_labels	size labels	size and weight		
+lightweight_things	lightweight things	size and weight		
+onomatopoeia	onomatopoeia	sounds		
+eating_sounds	eating sounds	onomatopoeia		
+impact_sounds	impact sounds	onomatopoeia		
+loud_things	loud things	sounds		
+quiet_things	quiet things	sounds		
+water_sounds	water sounds	sounds		
+machine_sounds	machine sounds	sounds		
+voice_sounds	voice sounds	sounds		
+sound_qualities	sound qualities	sounds		
+things_that_smell_good	things that smell good	smells		
+fragrant_flowers	fragrant flowers	things that smell good		
+smells_from_the_kitchen	smells from the kitchen	things that smell good		
+woody_and_resin_scents	woody and resin scents	things that smell good		
+things_that_smell_bad	things that smell bad	smells		
+pungent_foods	pungent foods	smells		
+perfume_notes	perfume notes	smells		
+candle_scents	candle scents	smells		
+middle_eastern_scents	Middle Eastern scents	smells		
+motion_verbs	motion verbs	motion		
+things_that_fly	things that fly	motion		
+aircraft	aircraft	things that fly		
+winged_creatures	winged creatures	things that fly		
+things_that_roll	things that roll	motion		
+things_that_spin	things that spin	motion		
+things_that_bounce	things that bounce	motion		
+ball_types	ball types	things that bounce		
+things_that_float	things that float	motion		
+fast_things	fast things	motion		
+ways_to_jump	ways to jump	motion		
+slow_things	slow things	motion		
+things_that_sink	things that sink	motion		
+hot_things	hot things	temperature		
+cold_things	cold things	temperature		
+polar_and_frozen_places	polar and frozen places	cold things		
+food_chillers	food chillers	cold things		
+things_that_melt	things that melt	temperature		
+fire_words	fire words	temperature		
+words_for_hot	words for hot	temperature		
+words_for_cold	words for cold	temperature		
+things_that_glow	things that glow	light and dark		
+shiny_things	shiny things	light and dark		
+things_that_reflect	things that reflect	light and dark		
+words_for_shiny	words for shiny	light and dark		
+words_for_dark	words for dark	light and dark		
+red_things	red things	things by color		
+yellow_things	yellow things	things by color		
+green_things	green things	things by color		
+blue_things	blue things	things by color		
+white_things	white things	things by color		
+black_things	black things	things by color		
+dark_foods_and_drinks	dark foods and drinks	black things		
+dark_creatures	dark creatures	black things		
+orange_things	orange things	things by color		
+pink_things	pink things	things by color		
+purple_things	purple things	things by color		
+brown_things	brown things	things by color		
+things_with_keys	things with keys	things with…		
+things_with_wheels	things with wheels	things with…		
+things_with_teeth	things with teeth	things with…		
+things_with_shells	things with shells	things with…		
+things_with_horns	things with horns	things with…		
+things_with_eyes	things with eyes	things with…		
+toys_and_characters	toys and characters with eyes	things with eyes		
+things_with_necks	things with necks	things with…		
+things_with_faces	things with faces	things with…		
+things_with_tongues	things with tongues	things with…		
+things_with_arms	things with arms	things with…		
+things_with_holes	things with holes	things with…		
+things_with_tails	things with tails	things with…		
+things_with_screens	things with screens	things with…		
+things_with_strings	things with strings	things with…		
+things_with_wings	things with wings	things with…		
+things_that_sting	things that sting	things that…		
+things_that_pop	things that pop	things that…		
+things_that_tick	things that tick	things that…		
+things_that_fold	things that fold	things that…		
+things_that_cut	things that cut	things that…		
+things_that_come_in_pairs	things that come in pairs	things that…		
+pairs_you_wear	pairs you wear	things that come in pairs		
+things_that_ring	things that ring	things that…		
+bell_types	bell types	things that ring		
+things_that_squeak	things that squeak	things that…		
+things_that_drip	things that drip	things that…		
+things_that_run_on_batteries	battery-powered things	things that…		
+things_that_swim	things that swim	things that…		
+things_in_the_sky	things in the sky	things that…		
+things_in_space	things in space	things that…		
+things_you_ride	things you ride	things that…		
+things_you_throw	things you throw	things that…		
+things_you_kick	things you kick	things that…		
+things_you_catch	things you catch	things that…		
+things_you_write_with	things you write with	things that…		
+things_you_eat_with_a_spoon	things you eat with a spoon	things that…		

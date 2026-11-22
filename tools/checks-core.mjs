@@ -74,7 +74,7 @@ export const diffRuleLines = d => [
 
 // ----- approvals: a baseline count raised or an allow-list key added needs Simon's approval (gate step j) -----
 // Baselines: every section of tools/checks-baseline.json that maps kinds to counts (warn, contract). Allow lists: the Sets below.
-export const ALLOW_LISTS = { 'js/family-allow.js': ['FAMILY_OK'], 'js/caselint-allow.js': ['CASE_OK'], 'js/caselint-words.js': ['LOWER_OK'], 'js/sense-allow.js': ['SENSE_OK'], 'js/theme-twin-allow.js': ['THEME_TWIN_OK'] };
+export const ALLOW_LISTS = { 'js/family-allow.js': ['FAMILY_OK'], 'js/caselint-allow.js': ['CASE_OK'], 'js/caselint-words.js': ['LOWER_OK'], 'js/sense-allow.js': ['SENSE_OK'], 'js/theme-twin-allow.js': ['THEME_TWIN_OK'], 'js/offensive-allow.js': ['OFFENSIVE_OK'], 'js/offensive-words.js': ['OFFENSIVE_WORDS'] };
 export function baselineRaises(oldB, newB) {
   const out = [];
   for (const [sec, m] of Object.entries(newB || {})) {
@@ -85,6 +85,6 @@ export function baselineRaises(oldB, newB) {
   return out;
 }
 export function allowAdds(file, name, oldSet, newSet) {
-  const added = [...(newSet || [])].filter(k => !(oldSet || new Set()).has(k));
+  const was = new Set(oldSet || []), added = [...(newSet || [])].filter(k => !was.has(k));   // a Set or an array (OFFENSIVE_WORDS)
   return added.length ? [`${file} ${name}: ${added.length} key${added.length === 1 ? '' : 's'} added (${added.slice(0, 5).join(', ')}${added.length > 5 ? ', ..' : ''})`] : [];
 }

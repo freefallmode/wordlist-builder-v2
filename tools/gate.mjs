@@ -26,7 +26,7 @@
 //   i. On the diff against the base library: every entry added or changed has status "rev", and no accented root the change touched is left
 //      without its plain spelling alias (rule 8) (checks-core.mjs diffRules).
 //   j. Approvals, WARN only: a count raised in tools/checks-baseline.json, an "accept" key added, or a key added to an allow list
-//      (js/family-allow.js, js/caselint-allow.js, LOWER_OK in js/caselint-words.js, js/sense-allow.js, js/theme-twin-allow.js) against the base
+//      (js/family-allow.js, js/caselint-allow.js, LOWER_OK in js/caselint-words.js, js/sense-allow.js, js/theme-twin-allow.js, js/offensive-allow.js, OFFENSIVE_WORDS in js/offensive-words.js) against the base
 //      is printed as "!! needs Simon's approval".
 // Exit 1 on any FAIL, 2 on a usage or git error.
 import fs from 'node:fs';
