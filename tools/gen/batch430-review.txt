@@ -1,0 +1,384 @@
+Library batch v430. Topic / "X words" twins (Simon, 2026-11-22; replaces v408): religion words, archaeology words, sewing words, map words, war words, magic show words, ice words, dental words and mail words merge into religion, archaeology, fabrics and sewing, maps and globes, wars and battles, magic tricks, snow and ice, dentist's office and post office; pirate words keeps the speech and is renamed pirate talk (its pirate things go to pirates); wine words -> wine world; card game words -> card game terms; dinosaur words -> dinosaur science (shooting star and falling star out); magic tricks -> magic shows; pirate talk gains five attested words. Card senses: shuffle, talon, grand slam, wild card, kicker and showdown get card-sense entries; grand slam split into baseball and tennis; fold, floss and top hat each lose a second root. Wrong senses fixed in army words (trench) and horse riding words (pommel, bit; the duplicate bit deleted).
+1. religion words merges into religion (a theme and its same-topic "X words" twin)
+  religion_words "religion words": 56 words, 37 already in religion, 18 move, 1 stay out
+  linked: absolution 34187 in religion (typicality 4): from religion words, at the same typicality
+  linked: apotheosis 61173 in religion (typicality 5): from religion words, at the same typicality
+  linked: canon 34188 in religion (typicality 4): from religion words, at the same typicality
+  linked: catechism 34191 in religion (typicality 4): from religion words, at the same typicality
+  linked: covenant 33756 in religion (typicality 4): from religion words, at the same typicality
+  linked: creed 34184 in religion (typicality 3): from religion words, at the same typicality
+  linked: divine 34186 in religion (typicality 2): from religion words, at the same typicality
+  linked: exorcism 22790 in religion (typicality 2): from religion words, at the same typicality
+  linked: grace 34189 in religion (typicality 2): from religion words, at the same typicality
+  linked: numinous 61172 in religion (typicality 5): from religion words, at the same typicality
+  linked: offering 34190 in religion (typicality 2): from religion words, at the same typicality
+  linked: pantheon 6920 in religion (typicality 3): from religion words, at the same typicality
+  linked: pilgrim 6690 in religion (typicality 2): from religion words, at the same typicality
+  linked: pray 34183 in religion (typicality 1): from religion words, at the same typicality
+  linked: soul 34181 in religion (typicality 2): from religion words, at the same typicality
+  linked: syncretism 61171 in religion (typicality 5): from religion words, at the same typicality
+  linked: theodicy 61170 in religion (typicality 5): from religion words, at the same typicality
+  linked: atheism 34185 in religion (typicality 3): from religion words, at the same typicality
+  typicality: transgression 4299 in religion 4 -> 3: its typicality in religion words, the better of the two (a merge keeps the better typicality)
+  typicality: trespass 4300 in religion 4 -> 3: its typicality in religion words, the better of the two (a merge keeps the better typicality)
+  typicality: holy 4302 in religion 2 -> 1: its typicality in religion words, the better of the two (a merge keeps the better typicality)
+  typicality: scripture 4313 in religion 3 -> 2: its typicality in religion words, the better of the two (a merge keeps the better typicality)
+  group in religion: prayer 4276 = orison 4278 = supplication 4277 = pray 34183: pray joins the prayer group (prayer, orison, supplication), as in religion words
+  group in religion: atheist 4318 = nonbeliever 4319 = unbeliever 4320 = atheism 34185: atheism joins atheist, nonbeliever and unbeliever: one word family (atheist / atheism) may share a theme only inside one group (Simon: keep atheism in the game)
+  deleted theme: religion_words "religion words": merged into religion "religion"; 56 links go with it; its sub-themes move up to religion: the_four_evangelists, four_horsemen_of_the_apocalypse, seven_deadly_sins, parts_of_a_religious_service
+  not moved: bless 34182: bless: blessing 4304, its kin, is in religion (one word family gives one answer in a theme) (stays in parts_of_a_religious_service)
+2. archaeology words merges into archaeology (a theme and its same-topic "X words" twin)
+  archaeology_words "archaeology words": 32 words, 22 already in archaeology, 10 move, 0 stay out
+  linked: antiquity 7073 in archaeology (typicality 4): from archaeology words, at the same typicality
+  linked: dig site 10106 in archaeology (typicality 2): from archaeology words, at the same typicality
+  linked: field walking 21694 in archaeology (typicality 4): from archaeology words, at the same typicality
+  linked: geophysics 21691 in archaeology (typicality 5): from archaeology words, at the same typicality
+  linked: Mortimer Wheeler 21695 in archaeology (typicality 5): from archaeology words, at the same typicality
+  linked: relic 21688 in archaeology (typicality 3): from archaeology words, at the same typicality
+  linked: site survey 21693 in archaeology (typicality 3): from archaeology words, at the same typicality
+  linked: trench 21689 in archaeology (typicality 2): from archaeology words, at the same typicality
+  linked: typology 21690 in archaeology (typicality 4): from archaeology words, at the same typicality
+  linked: unearth 21692 in archaeology (typicality 3): from archaeology words, at the same typicality
+  typicality: lithics 6891 in archaeology 5 -> 4: its typicality in archaeology words, the better of the two (a merge keeps the better typicality)
+  typicality: grid square 6904 in archaeology 4 -> 3: its typicality in archaeology words, the better of the two (a merge keeps the better typicality)
+  group in archaeology: excavation 6858 = dig 6859 = dig site 10106: dig site joins excavation and dig, as in archaeology words
+  group in archaeology: artifact 6860 = relic 21688: artifact and relic, the same answer, as in archaeology words
+  deleted theme: archaeology_words "archaeology words": merged into archaeology "archaeology"; 32 links go with it
+3. pirate words: pirate people, ships and things to pirates; the speech stays, renamed "pirate talk"
+  linked: freebooter 21186 in pirates (typicality 4): from pirate words, at the same typicality: a pirate thing or figure, not pirate speech
+  linked: Black Spot 62004 in pirates (typicality 3): from pirate words, at the same typicality: a pirate thing or figure, not pirate speech
+  linked: Davy Jones 21180 in pirates (typicality 3): from pirate words, at the same typicality: a pirate thing or figure, not pirate speech
+  group in pirates: pirate 6759 = buccaneer 6760 = corsair 6762 = freebooter 21186: freebooter is another word for a pirate, like buccaneer and corsair
+  out of pirate_words: buccaneer 6760: a pirate or sea figure, not pirate speech (in pirates) (stays in pirates, pirate_crew)
+  out of pirate_words: corsair 6762: a pirate or sea figure, not pirate speech (in pirates) (stays in pirates)
+  out of pirate_words: freebooter 21186: a pirate or sea figure, not pirate speech (in pirates) (stays in pirates)
+  out of pirate_words: privateer 6761: a pirate or sea figure, not pirate speech (in pirates) (stays in pirates, age_of_sail, pirate_crew, warships)
+  out of pirate_words: swashbuckler 6806: a pirate or sea figure, not pirate speech (in pirates) (stays in pirates, movie_genres)
+  out of pirate_words: Davy Jones 21180: a pirate or sea figure, not pirate speech (in pirates) (stays in pirates)
+  out of pirate_words: doubloon 6771: a pirate thing, not pirate speech (in pirates) (stays in pirates, treasure, coins, historic_coins)
+  out of pirate_words: pieces of eight 6772: a pirate thing, not pirate speech (in pirates) (stays in pirates)
+  out of pirate_words: plunder 6791: a pirate thing, not pirate speech (in pirates) (stays in pirates)
+  out of pirate_words: grog 6786: a pirate thing, not pirate speech (in pirates) (stays in pirates)
+  out of pirate_words: keelhaul 6787: a pirate thing, not pirate speech (in pirates) (stays in pirates, pirate_punishments, words_from_dutch, ships_and_sailing_words)
+  out of pirate_words: letter of marque 6808: a pirate thing, not pirate speech (in pirates) (stays in pirates, age_of_sail)
+  out of pirate_words: Black Spot 62004: a pirate thing, not pirate speech (in pirates) (stays in pirates)
+  theme pirate_words: name "pirate words" -> "pirate talk": how pirates talk (LIBRARY-RULES 6: an "X words" theme of how people talk about X is renamed for what it is); the id stays
+  pirate talk keeps 18 words: ahoy, arr, avast, aye aye, bilge rat, hornswoggle, landlubber, lubber, matey, me hearties, parley, scallywag, scurvy dog, sea dog, shiver me timbers, thar she blows, yarr, yo ho ho
+4. wine words -> wine world
+  theme wine_words: name "wine words" -> "wine world": the general vocabulary of wine (sommelier, vintner, vineyard, cellar, carafe, chateau, cork, vintage, terroir, tannin and tasting and making words); not tasting language alone, and its two sharper sets are already its sub-themes (wine tasting notes, winemaking terms); the id stays
+5. card game words -> card game terms
+  theme card_game_words: name "card game words" -> "card game terms": terms of play (shuffle, deal, trump, ante, trick), not card games; the id stays
+6. dinosaur words -> dinosaur science
+  out of dinosaur_words: shooting star 7129: a meteor as seen in the sky, typicality 5; meteor stays (stays in superstitions, sky_phenomena, things_with_tails, space, space_rocks, fast_things, night_sky_sights, things_in_the_sky, nature_at_night)
+  out of dinosaur_words: falling star 7130: a meteor as seen in the sky, typicality 5; meteor stays (stays in space, space_rocks, fast_things)
+  theme dinosaur_words: name "dinosaur words" -> "dinosaur science": fossils, anatomy, classification, extinction and the people who study them (paleontology is a member, so it cannot be the name); the id stays
+  theme dinosaur_words: pop 4 -> 3: dinosaurs appeal widely, the science side a little less: ordinary
+  theme dinosaur_words: ident 4 -> 3: fossil, extinct, paleontologist, dinosaur bone point at dinosaurs, but fossils and prehistoric life fit too: needs a moment
+7. Card senses in card game terms and poker terms
+  new entry: shuffle 68116 [cards] verb, common, familiarity 1: mixing the cards, the sense card game terms means (shuffle [walk] is dragging the feet)
+  linked: shuffle 68116 in card_game_words (typicality 1): the cards sense, at the typicality of the old link
+  out of card_game_words: shuffle 16872: wrong sense: shuffle 68116 [cards] takes the link (stays in body_actions, ways_of_walking, motion_verbs, things_you_do_with_your_feet, ways_to_move)
+  kin: shuffle 68116 <-> shuffling 11878: one word family (shuffle / shuffling), as shuffle [walk] and shuffle [dance move] are kin of shuffling
+  new entry: talon 68117 [cards] noun, common, familiarity 5: the undealt cards left after the deal (talon [bird] is a claw)
+  linked: talon 68117 in card_game_words (typicality 4): the cards sense, at the typicality of the old link
+  out of card_game_words: talon 8120: wrong sense: talon 68117 [cards] takes the link (stays in birds_of_prey, bird_body_parts, animal_body_parts, what_a_bird_stands_on, bird_parts)
+  new entry: grand slam 68118 [bridge] noun, common, familiarity 4: winning all thirteen tricks in bridge; the old entry is the sports sense
+  linked: grand slam 68118 in card_game_words (typicality 4): the bridge sense, at the typicality of the old link
+  out of card_game_words: grand slam 42810: wrong sense: grand slam 68118 [bridge] takes the link (stays in baseball_terms, tennis_terms, scoring_words, hitting_terms)
+  grand slam 42810: gloss "" -> "baseball": its text is now shared; 42810 keeps the baseball sense (baseball terms, hitting terms, scoring words)
+  new entry: grand slam 68119 [tennis] noun, common, familiarity 2: winning all four major tournaments in a year (Simon: split the baseball and tennis senses); same text, so no kin
+  linked: grand slam 68119 in tennis_terms (typicality 3): the tennis sense, at the typicality of the old link
+  out of tennis_terms: grand slam 42810: wrong sense: grand slam 68119 [tennis] takes the link (stays in baseball_terms, scoring_words, hitting_terms)
+  new entry: wild card 68120 [cards] noun, common, familiarity 2: a card that stands for any other; the old entry is the tournament sense (an extra entrant)
+  linked: wild card 68120 in card_game_words (typicality 2, may contain a word of the theme name (nameOkIn): the full name of the thing): the cards sense, at the typicality of the old link
+  out of card_game_words: wild card 44348: wrong sense: wild card 68120 [cards] takes the link (stays in tournament_words)
+  wild card 44348: gloss "" -> "tournament": its text is now shared
+  new entry: kicker 68121 [poker] noun, common, familiarity 4: the side card that breaks a tie (kicker [football] kicks the ball)
+  linked: kicker 68121 in poker_terms (typicality 4): the poker sense, at the typicality of the old link
+  out of poker_terms: kicker 42794: wrong sense: kicker 68121 [poker] takes the link (stays in american_football_terms, american_football_positions)
+  kin: kicker 68121 <-> kick 16865: one word family (kick / kicker), as every other kicker
+  new entry: showdown 68122 [poker] noun, common, familiarity 3: showing the hands at the end of the betting; the old entry is the confrontation (Wild West)
+  linked: showdown 68122 in poker_terms (typicality 2): the poker sense, at the typicality of the old link
+  out of poker_terms: showdown 23020: wrong sense: showdown 68122 [poker] takes the link (stays in wild_west)
+  showdown 23020: gloss "" -> "confrontation": its text is now shared
+  7b. Two roots for one sense merged
+  linked: fold 45247 in card_game_words (typicality 3): from fold 45511 [cards], the same sense
+  kin of fold 45511 moves to fold 45247: folder 7267, folder 34765
+  deleted entry: fold 45511 [cards]: a second root of the sense of fold 45247 [poker]: folding a hand is one sense in poker and in other card games
+  fold 45247: gloss "poker" -> "cards": fits both former roots
+  linked: floss 3731 in bedtime_routine (typicality 3): from floss 16116 [teeth], the same sense
+  linked: floss 3731 in dentist_s_office (typicality 2): from floss 16116 [teeth], the same sense
+  kin of floss 16116 moves to floss 3731: flossing 16508
+  deleted entry: floss 16116 [teeth]: a second root of the sense of floss 3731 [dental]: dental floss and flossing are one word in one sense (the noun root; the verb use needs no entry of its own)
+  linked: top hat 13720 in magic_tricks (typicality 2): from top hat 45963 [magic], the same sense
+  deleted entry: top hat 45963 [magic]: a second root of the sense of top hat 13720 [hat]: the magician's top hat is the hat itself; gloss "hat" fits both
+  8a. sewing words merges into fabrics and sewing (its parent, named for its topic)
+  sewing_words "sewing words": 45 words, 33 already in fabrics_and_sewing, 12 move, 0 stay out
+  linked: gather 24873 in fabrics_and_sewing (typicality 3): from sewing words, at the same typicality
+  linked: bias binding 24874 in fabrics_and_sewing (typicality 4): from sewing words, at the same typicality
+  linked: mending 24875 in fabrics_and_sewing (typicality 3): from sewing words, at the same typicality
+  linked: fabric scissors 24876 in fabrics_and_sewing (typicality 3, may contain a word of the theme name (nameOkIn): the full name of the thing): from sewing words, at the same typicality
+  linked: cross stitch 24877 in fabrics_and_sewing (typicality 3): from sewing words, at the same typicality
+  linked: satin stitch 24878 in fabrics_and_sewing (typicality 4): from sewing words, at the same typicality
+  linked: French knot 24879 in fabrics_and_sewing (typicality 4): from sewing words, at the same typicality
+  linked: feather stitch 24880 in fabrics_and_sewing (typicality 4): from sewing words, at the same typicality
+  linked: whip stitch 24881 in fabrics_and_sewing (typicality 4): from sewing words, at the same typicality
+  linked: hemstitch 24882 in fabrics_and_sewing (typicality 5): from sewing words, at the same typicality
+  linked: presser foot 24883 in fabrics_and_sewing (typicality 4): from sewing words, at the same typicality
+  linked: pin 25002 in fabrics_and_sewing (typicality 2): from sewing words, at the same typicality
+  typicality: hem 5029 in fabrics_and_sewing 3 -> 2: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  typicality: dart 5054 in fabrics_and_sewing 4 -> 3: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  typicality: pleat 5055 in fabrics_and_sewing 4 -> 3: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  typicality: bobbin 5056 in fabrics_and_sewing 3 -> 2: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  typicality: darning 5059 in fabrics_and_sewing 3 -> 2: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  typicality: backstitch 5083 in fabrics_and_sewing 4 -> 3: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  typicality: blanket stitch 5085 in fabrics_and_sewing 4 -> 3: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  typicality: chain stitch 5086 in fabrics_and_sewing 4 -> 3: its typicality in sewing words, the better of the two (a merge keeps the better typicality)
+  group in fabrics_and_sewing: darning 5059 = mending 24875: darning and mending, the same answer, as in sewing words
+  deleted theme: sewing_words "sewing words": merged into fabrics_and_sewing "fabrics and sewing"; 45 links go with it; its sub-themes move up to fabrics_and_sewing: embroidery_stitches, sewing_kit, stitch_types
+  8b. map words merges into maps and globes (its parent, named for its topic)
+  map_words "map words": 33 words, 21 already in maps_and_globes, 12 move, 0 stay out
+  linked: map reference 2437 in maps_and_globes (typicality 3, may contain a word of the theme name (nameOkIn): the full name of the thing): from map words, at the same typicality
+  linked: cartouche 20356 in maps_and_globes (typicality 5): from map words, at the same typicality
+  linked: compass rose 21021 in maps_and_globes (typicality 2): from map words, at the same typicality
+  linked: north arrow 37883 in maps_and_globes (typicality 2): from map words, at the same typicality
+  linked: grid 37884 in maps_and_globes (typicality 2): from map words, at the same typicality
+  linked: map symbol 37885 in maps_and_globes (typicality 2, may contain a word of the theme name (nameOkIn): the full name of the thing): from map words, at the same typicality
+  linked: inset 37886 in maps_and_globes (typicality 4): from map words, at the same typicality
+  linked: orientation 37887 in maps_and_globes (typicality 4): from map words, at the same typicality
+  linked: landmark 37889 in maps_and_globes (typicality 3): from map words, at the same typicality
+  linked: scale bar 37890 in maps_and_globes (typicality 2): from map words, at the same typicality
+  linked: neatline 37891 in maps_and_globes (typicality 5): from map words, at the same typicality
+  linked: toponym 37892 in maps_and_globes (typicality 5): from map words, at the same typicality
+  typicality: legend 2406 in maps_and_globes 2 -> 1: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: key 2407 in maps_and_globes 3 -> 1: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: scale 2408 in maps_and_globes 2 -> 1: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: mapmaker 2413 in maps_and_globes 3 -> 2: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: cartography 2428 in maps_and_globes 3 -> 2: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: topography 2429 in maps_and_globes 4 -> 3: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: isoline 2432 in maps_and_globes 5 -> 3: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: elevation 2433 in maps_and_globes 4 -> 3: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  typicality: projection 2434 in maps_and_globes 3 -> 2: its typicality in map words, the better of the two (a merge keeps the better typicality)
+  group in maps_and_globes: grid reference 2436 = map reference 2437: grid reference and map reference, the same answer, as in map words
+  deleted theme: map_words "map words": merged into maps_and_globes "maps and globes"; 33 links go with it
+  8c. war words merges into wars and battles (its parent, named for its topic)
+  war_words "war words": 43 words, 25 already in wars_and_battles, 16 move, 2 stay out
+  linked: bivouac 3075 in wars_and_battles (typicality 4): from war words, at the same typicality
+  linked: forces 4391 in wars_and_battles (typicality 3): from war words, at the same typicality
+  linked: reconnaissance 4439 in wars_and_battles (typicality 3): from war words, at the same typicality
+  linked: conscription 4444 in wars_and_battles (typicality 3): from war words, at the same typicality
+  linked: weapon 21362 in wars_and_battles (typicality 1): from war words, at the same typicality
+  linked: attack 21363 in wars_and_battles (typicality 2): from war words, at the same typicality
+  linked: casualty 21364 in wars_and_battles (typicality 2): from war words, at the same typicality
+  linked: barrage 21365 in wars_and_battles (typicality 3): from war words, at the same typicality
+  linked: muster 21366 in wars_and_battles (typicality 4): from war words, at the same typicality
+  linked: war crime 21367 in wars_and_battles (typicality 3, may contain a word of the theme name (nameOkIn): the full name of the thing): from war words, at the same typicality
+  linked: vanguard 21368 in wars_and_battles (typicality 4): from war words, at the same typicality
+  linked: salvo 21369 in wars_and_battles (typicality 4): from war words, at the same typicality
+  linked: sapper 21370 in wars_and_battles (typicality 4): from war words, at the same typicality
+  linked: attrition 21371 in wars_and_battles (typicality 4): from war words, at the same typicality
+  linked: foray 21372 in wars_and_battles (typicality 5): from war words, at the same typicality
+  linked: reinforcements 21373 in wars_and_battles (typicality 3): from war words, at the same typicality
+  typicality: invasion 4395 in wars_and_battles 3 -> 2: its typicality in war words, the better of the two (a merge keeps the better typicality)
+  typicality: surrender 4399 in wars_and_battles 4 -> 3: its typicality in war words, the better of the two (a merge keeps the better typicality)
+  typicality: retreat 4401 in wars_and_battles 3 -> 2: its typicality in war words, the better of the two (a merge keeps the better typicality)
+  typicality: enemy 6812 in wars_and_battles 2 -> 1: its typicality in war words, the better of the two (a merge keeps the better typicality)
+  typicality: skirmish 6816 in wars_and_battles 4 -> 3: its typicality in war words, the better of the two (a merge keeps the better typicality)
+  deleted theme: war_words "war words": merged into wars_and_battles "wars and battles"; 43 links go with it
+  not moved: troops 4390: troops: trooper 4374, of its word family, is in wars and battles (in the soldier group) (stays in military)
+  not moved: flank 4468: flank [military]: wars and battles has flank [attack] 6852, which shows the same text (stays in military, army_words)
+  8d. magic show words merges into magic tricks (the same topic: magic tricks already holds magician, wand, top hat, abracadabra)
+  magic_show_words "magic show words": 32 words, 19 already in magic_tricks, 12 move, 1 stay out
+  linked: vanishing act 13726 in magic_tricks (typicality 2): from magic show words, at the same typicality
+  linked: patter 13731 in magic_tricks (typicality 4): from magic show words, at the same typicality
+  linked: false bottom 13732 in magic_tricks (typicality 4): from magic show words, at the same typicality
+  linked: hocus pocus 13733 in magic_tricks (typicality 2): from magic show words, at the same typicality
+  linked: conjurer 13734 in magic_tricks (typicality 3): from magic show words, at the same typicality
+  linked: illusionist 13735 in magic_tricks (typicality 2): from magic show words, at the same typicality
+  linked: prestidigitation 13738 in magic_tricks (typicality 4): from magic show words, at the same typicality
+  linked: legerdemain 13739 in magic_tricks (typicality 5): from magic show words, at the same typicality
+  linked: black art 13741 in magic_tricks (typicality 5): from magic show words, at the same typicality
+  linked: forcing 13743 in magic_tricks (typicality 5): from magic show words, at the same typicality
+  linked: magic box 13746 in magic_tricks (typicality 3, may contain a word of the theme name (nameOkIn): the full name of the thing): from magic show words, at the same typicality
+  linked: mentalist 13729 in magic_tricks (typicality 3): from magic show words, at the same typicality
+  typicality: top hat 13720 in magic_tricks 2 -> 1: its typicality in magic show words, the better of the two (a merge keeps the better typicality)
+  typicality: disappearing act 13745 in magic_tricks 3 -> 2: its typicality in magic show words, the better of the two (a merge keeps the better typicality)
+  group in magic_tricks: magician 13719 = conjurer 13734 = illusionist 13735 = illusion 13723: magician, conjurer, illusionist and illusion, as in magic show words (illusion and illusionist are one word family)
+  group in magic_tricks: abracadabra 13721 = hocus pocus 13733 = presto 50083: magic words, the same answer, as in magic show words
+  group in magic_tricks: sleight of hand 13722 = prestidigitation 13738 = legerdemain 13739: sleight of hand, as in magic show words
+  group in magic_tricks: disappearing act 13745 = vanish 45959 = vanishing act 13726: vanishing act joins disappearing act and vanish
+  group in magic_tricks: mind reading 13747 = mentalism 45962 = mentalist 13729: mentalist joins mind reading and mentalism: one word family (mentalism / mentalist) may share a theme only inside one group
+  group in magic_tricks: forcing 13743 = card force 45969: forcing is the card force
+  deleted theme: magic_show_words "magic show words": merged into magic_tricks "magic tricks"; 32 links go with it; its sub-themes move up to shows_and_fun: famous_magicians
+  now in no theme: magic trick 13744: magic trick: the general word beside its kinds (card trick, coin trick, rope trick) breaks the overlap rule (LIBRARY-RULES 5), and it would show a word of the theme name
+  8d2. magic tricks -> magic shows (Simon): it holds magician, wand and top hat as well as the tricks
+  theme magic_tricks: name "magic tricks" -> "magic shows": the theme now holds the performers, props and words of a magic show as well as the tricks (Simon); the id stays
+  theme famous_magicians moved from shows_and_fun to magic_tricks (magic shows): the magicians of the magic show (it was under magic show words)
+  stage magic 45974: nameOkIn magic_tricks: "magic" of "magic shows" is part of its full name
+  close-up magic 45975: nameOkIn magic_tricks: "magic" of "magic shows" is part of its full name
+  8e. ice words merges into snow and ice (named for its topic)
+  ice_words "ice words": 39 words, 20 already in snow_and_ice, 15 move, 4 stay out
+  linked: moraine 1964 in snow_and_ice (typicality 4): from ice words, at the same typicality
+  linked: thaw 2017 in snow_and_ice (typicality 3): from ice words, at the same typicality
+  linked: hailstone 2019 in snow_and_ice (typicality 3): from ice words, at the same typicality
+  linked: pack ice 30904 in snow_and_ice (typicality 3, may contain a word of the theme name (nameOkIn): the full name of the thing): from ice words, at the same typicality
+  linked: serac 30908 in snow_and_ice (typicality 5): from ice words, at the same typicality
+  linked: nunatak 30912 in snow_and_ice (typicality 5): from ice words, at the same typicality
+  linked: bergy bit 30913 in snow_and_ice (typicality 5): from ice words, at the same typicality
+  linked: brash ice 32179 in snow_and_ice (typicality 5, may contain a word of the theme name (nameOkIn): the full name of the thing): from ice words, at the same typicality
+  linked: glaze 39915 in snow_and_ice (typicality 4): from ice words, at the same typicality
+  linked: frozen 39916 in snow_and_ice (typicality 1): from ice words, at the same typicality
+  linked: icy 39917 in snow_and_ice (typicality 1): from ice words, at the same typicality
+  linked: calve 39918 in snow_and_ice (typicality 4): from ice words, at the same typicality
+  linked: frazil 39920 in snow_and_ice (typicality 5): from ice words, at the same typicality
+  linked: cryosphere 39921 in snow_and_ice (typicality 5): from ice words, at the same typicality
+  linked: freeze-up 39922 in snow_and_ice (typicality 4): from ice words, at the same typicality
+  typicality: glacier 1911 in snow_and_ice 2 -> 1: its typicality in ice words, the better of the two (a merge keeps the better typicality)
+  typicality: iceberg 29374 in snow_and_ice 2 -> 1: its typicality in ice words, the better of the two (a merge keeps the better typicality)
+  typicality: ice cap 30900 in snow_and_ice 4 -> 2: its typicality in ice words, the better of the two (a merge keeps the better typicality)
+  typicality: ice sheet 30901 in snow_and_ice 4 -> 2: its typicality in ice words, the better of the two (a merge keeps the better typicality)
+  typicality: crevasse 30902 in snow_and_ice 4 -> 3: its typicality in ice words, the better of the two (a merge keeps the better typicality)
+  typicality: permafrost 30903 in snow_and_ice 4 -> 3: its typicality in ice words, the better of the two (a merge keeps the better typicality)
+  typicality: ice shelf 30905 in snow_and_ice 4 -> 3: its typicality in ice words, the better of the two (a merge keeps the better typicality)
+  deleted theme: ice_words "ice words": merged into snow_and_ice "snow and ice"; 39 links go with it
+  not moved: Ice Age 1613: Ice Age: a period, not snow or ice (stays in prehistoric_life, historical_periods, prehistoric_periods, stone_age, ages_of_history, ice_blank)
+  not moved: frostbite 15009: frostbite: an injury (in cold-weather ailments) (stays in injuries, cold_weather_ailments, polar_exploration, mountaineering_words, hiking_dangers)
+  not moved: freeze 19888: freeze [preserve]: the food sense, not ice (stays in ways_to_preserve_food)
+  not moved: ice rink 39043: ice rink: a venue (stays in smooth_things, cold_things, skating_words, sports_venues, shopping_mall, places_for_winter_sports, ice_blank, ice_hockey_terms)
+  8f. dental words merges into dentist's office (the place of the topic, as airport words went into airport in v408)
+  dental_words "dental words": 43 words, 21 already in dentist_s_office, 22 move, 0 stay out
+  linked: toothpaste 3730 in dentist_s_office (typicality 1): from dental words, at the same typicality
+  linked: wisdom tooth 14486 in dentist_s_office (typicality 2): from dental words, at the same typicality
+  linked: premolar 14489 in dentist_s_office (typicality 3): from dental words, at the same typicality
+  linked: enamel 14490 in dentist_s_office (typicality 2): from dental words, at the same typicality
+  linked: dentin 14499 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: bicuspid 14503 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: implant 14506 in dentist_s_office (typicality 3): from dental words, at the same typicality
+  linked: bridge 14512 in dentist_s_office (typicality 3): from dental words, at the same typicality
+  linked: canine tooth 15416 in dentist_s_office (typicality 3): from dental words, at the same typicality
+  linked: veneer 15419 in dentist_s_office (typicality 3): from dental words, at the same typicality
+  linked: tooth abscess 15421 in dentist_s_office (typicality 3): from dental words, at the same typicality
+  linked: gingivitis 15422 in dentist_s_office (typicality 3): from dental words, at the same typicality
+  linked: scale and polish 15425 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: tooth pulp 15426 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: periodontist 15427 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: dental dam 15430 in dentist_s_office (typicality 5): from dental words, at the same typicality
+  linked: dental probe 15431 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: amalgam 15432 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: caries 15433 in dentist_s_office (typicality 4): from dental words, at the same typicality
+  linked: tooth extraction 15434 in dentist_s_office (typicality 2): from dental words, at the same typicality
+  linked: dental drill 15435 in dentist_s_office (typicality 2): from dental words, at the same typicality
+  linked: bite wing 15436 in dentist_s_office (typicality 5): from dental words, at the same typicality
+  typicality: toothbrush 3729 in dentist_s_office 2 -> 1: its typicality in dental words, the better of the two (a merge keeps the better typicality)
+  typicality: mouthwash 3732 in dentist_s_office 3 -> 2: its typicality in dental words, the better of the two (a merge keeps the better typicality)
+  typicality: molar 14483 in dentist_s_office 3 -> 2: its typicality in dental words, the better of the two (a merge keeps the better typicality)
+  typicality: incisor 14485 in dentist_s_office 4 -> 3: its typicality in dental words, the better of the two (a merge keeps the better typicality)
+  typicality: braces 14496 in dentist_s_office 3 -> 2: its typicality in dental words, the better of the two (a merge keeps the better typicality)
+  typicality: denture 14504 in dentist_s_office 3 -> 2: its typicality in dental words, the better of the two (a merge keeps the better typicality)
+  group in dentist_s_office: bicuspid 14503 = premolar 14489: bicuspid and premolar, the same answer
+  group in dentist_s_office: cavity 15413 = caries 15433: cavity and caries, the same answer
+  deleted theme: dental_words "dental words": merged into dentist_s_office "dentist's office"; 43 links go with it
+  8g. mail words merges into post office (the place of the topic, as airport words went into airport in v408)
+  mail_words "mail words": 43 words, 19 already in post_office, 21 move, 3 stay out
+  linked: postcard 4562 in post_office (typicality 2): from mail words, at the same typicality
+  linked: Penny Black 22986 in post_office (typicality 4): from mail words, at the same typicality
+  linked: address 35161 in post_office (typicality 2): from mail words, at the same typicality
+  linked: junk mail 35166 in post_office (typicality 2): from mail words, at the same typicality
+  linked: first class 35169 in post_office (typicality 3): from mail words, at the same typicality
+  linked: chain letter 35175 in post_office (typicality 4): from mail words, at the same typicality
+  linked: dead letter 35176 in post_office (typicality 4): from mail words, at the same typicality
+  linked: return to sender 35177 in post_office (typicality 4): from mail words, at the same typicality
+  linked: parcel post 35179 in post_office (typicality 4, may contain a word of the theme name (nameOkIn): the full name of the thing): from mail words, at the same typicality
+  linked: mail bag 35180 in post_office (typicality 3): from mail words, at the same typicality
+  linked: air letter 35181 in post_office (typicality 4): from mail words, at the same typicality
+  linked: aerogramme 35182 in post_office (typicality 5): from mail words, at the same typicality
+  linked: express mail 35183 in post_office (typicality 3): from mail words, at the same typicality
+  linked: franking 35184 in post_office (typicality 5): from mail words, at the same typicality
+  linked: mail order 35185 in post_office (typicality 3): from mail words, at the same typicality
+  linked: sealing wax 35187 in post_office (typicality 4): from mail words, at the same typicality
+  linked: bulk mail 35189 in post_office (typicality 4): from mail words, at the same typicality
+  linked: cancellation 61355 in post_office (typicality 5): from mail words, at the same typicality
+  linked: postal code 61357 in post_office (typicality 2): from mail words, at the same typicality
+  linked: general delivery 61358 in post_office (typicality 5): from mail words, at the same typicality
+  linked: postal worker 61359 in post_office (typicality 3): from mail words, at the same typicality
+  typicality: mail carrier 4120 in post_office 2 -> 1: its typicality in mail words, the better of the two (a merge keeps the better typicality)
+  typicality: forwarding address 24250 in post_office 4 -> 3: its typicality in mail words, the better of the two (a merge keeps the better typicality)
+  typicality: zip code 26017 in post_office 3 -> 2: its typicality in mail words, the better of the two (a merge keeps the better typicality)
+  typicality: package 35158 in post_office 2 -> 1: its typicality in mail words, the better of the two (a merge keeps the better typicality)
+  typicality: sorting office 35173 in post_office 4 -> 3: its typicality in mail words, the better of the two (a merge keeps the better typicality)
+  group in post_office: air letter 35181 = aerogramme 35182: air letter and aerogramme
+  group in post_office: zip code 26017 = postal code 61357: zip code and postal code
+  group in post_office: postmark 35168 = cancellation 61355: postmark and cancellation
+  group in post_office: mail carrier 4120 = postal worker 61359: mail carrier and postal worker
+  deleted theme: mail_words "mail words": merged into post_office "post office"; 43 links go with it
+  not moved: pen pal 3958: pen pal: a friend you write to (in family and friends) (stays in family_and_friends)
+  not moved: philately 5863: philately: stamp collecting (in collecting hobbies) (stays in collecting_hobbies, hobbies_and_crafts)
+  not moved: post office 35160: post office: the theme's own name (stays in public_buildings)
+  out of post_office: first class 38233: wrong sense: first class [mail] 35169 is the postal sense (stays in in_flight_words, places_you_can_sit)
+9. Wrong senses in army words and horse riding words
+  linked: trench 4404 in army_words (typicality 3): the military trench
+  out of army_words: trench 32036: wrong sense: trench 4404 [military] takes the link (stays in ocean, ocean_zones, seafloor_features)
+  linked: pommel 9581 in horse_riding_words (typicality 4): the front of the saddle
+  out of horse_riding_words: pommel 43807: wrong sense: pommel 9581 [saddle part] takes the link (stays in fencing_terms)
+  linked: bit 1536 in horse_riding_words (typicality 2): the same sense: bit [horse tack] 1536 is the root
+  out of horse_riding_words: bit 44843: wrong sense: bit 1536 [horse tack] takes the link (now in no theme: not exported)
+  deleted entry: bit 44843 [horse bit]: a second root of bit [horse tack] 1536 (same sense, same kin), now in no theme (LIBRARY-RULES 5: two roots for one sense are merged)
+10. pirate talk: attested hard words of pirate and sailor speech (sources: Wiktionary entries, checked 2026-11-22)
+  new entry: bucko 68123 noun, common, familiarity 4: Wiktionary "bucko": nautical slang, a swaggering bully; also a term of address
+  linked: bucko 68123 in pirate_words (typicality 3): Wiktionary "bucko": nautical slang, a swaggering bully; also a term of address
+  new entry: splice the mainbrace 68124 verb, phrase, familiarity 5: Wiktionary "splice the mainbrace": nautical idiom, to have a drink (of rum)
+  linked: splice the mainbrace 68124 in pirate_words (typicality 3): Wiktionary "splice the mainbrace": nautical idiom, to have a drink (of rum)
+  new entry: dance the hempen jig 68125 verb, phrase, familiarity 5: Wiktionary "dance the hempen jig": colloquial, to be hanged
+  linked: dance the hempen jig 68125 in pirate_words (typicality 3): Wiktionary "dance the hempen jig": colloquial, to be hanged
+  new entry: blow me down 68126 other, phrase, familiarity 3: Wiktionary "blow me down": an exclamation of surprise, sailor speech
+  linked: blow me down 68126 in pirate_words (typicality 3): Wiktionary "blow me down": an exclamation of surprise, sailor speech
+  new entry: belay 68127 [stop] verb, common, familiarity 4: Wiktionary "belay", nautical sense: stop, cease ("Belay that!"); the climbing sense is another entry
+  linked: belay 68127 in pirate_words (typicality 3): Wiktionary "belay", nautical sense: stop, cease ("Belay that!"); the climbing sense is another entry
+  belay 45052: gloss "" -> "climbing": its text is now shared with belay [stop]
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  religion: "religion" pop 2 ident 2: 102 words, easy/middle/hard 38/34/30, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "religion" pop 2 ident 2: 120 words, easy/middle/hard 45/37/38, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  religion_words: "religion words" pop 2 ident 2: 56 words, easy/middle/hard 26/10/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> no theme
+  archaeology: "archaeology" pop 3 ident 2: 60 words, easy/middle/hard 12/14/34, theme difficulty 2, 4th-easiest band 2, gap 0 -> "archaeology" pop 3 ident 2: 70 words, easy/middle/hard 13/17/40, theme difficulty 2, 4th-easiest band 2, gap 0
+  archaeology_words: "archaeology words" pop 3 ident 2: 32 words, easy/middle/hard 5/9/18, theme difficulty 2, 4th-easiest band 2, gap 0 -> no theme
+  pirates: "pirates" pop 1 ident 1: 55 words, easy/middle/hard 20/15/20, theme difficulty 1, 4th-easiest band 1, gap 0 -> "pirates" pop 1 ident 1: 58 words, easy/middle/hard 20/16/22, theme difficulty 1, 4th-easiest band 1, gap 0
+  pirate_words: "pirate words" pop 2 ident 2: 30 words, easy/middle/hard 9/12/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "pirate talk" pop 2 ident 2: 23 words, easy/middle/hard 8/8/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  wine_words: "wine words" pop 3 ident 2: 55 words, easy/middle/hard 8/12/35, theme difficulty 2, 4th-easiest band 2, gap 0 -> "wine world" pop 3 ident 2: 55 words, easy/middle/hard 8/12/35, theme difficulty 2, 4th-easiest band 2, gap 0
+  card_game_words: "card game words" pop 3 ident 2: 31 words, easy/middle/hard 12/5/14, theme difficulty 2, 4th-easiest band 1, gap -1 -> "card game terms" pop 3 ident 2: 31 words, easy/middle/hard 12/5/14, theme difficulty 2, 4th-easiest band 1, gap -1
+  dinosaur_words: "dinosaur words" pop 4 ident 4: 48 words, easy/middle/hard 13/13/22, theme difficulty 4.5, 4th-easiest band 1, gap -3.5 -> "dinosaur science" pop 3 ident 3: 46 words, easy/middle/hard 13/13/20, theme difficulty 3, 4th-easiest band 1, gap -2
+  poker_terms: "poker terms" pop 3 ident 2: 60 words, easy/middle/hard 15/14/31, theme difficulty 2, 4th-easiest band 2, gap 0 -> "poker terms" pop 3 ident 2: 60 words, easy/middle/hard 14/15/31, theme difficulty 2, 4th-easiest band 2, gap 0
+  fabrics_and_sewing: "fabrics and sewing" pop 2 ident 3: 76 words, easy/middle/hard 19/23/34, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "fabrics and sewing" pop 2 ident 3: 88 words, easy/middle/hard 21/28/39, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  sewing_words: "sewing words" pop 2 ident 2: 45 words, easy/middle/hard 11/13/21, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> no theme
+  maps_and_globes: "maps and globes" pop 2 ident 2: 63 words, easy/middle/hard 18/23/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "maps and globes" pop 2 ident 2: 75 words, easy/middle/hard 21/29/25, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  map_words: "map words" pop 3 ident 3: 33 words, easy/middle/hard 6/15/12, theme difficulty 3, 4th-easiest band 2, gap -1 -> no theme
+  wars_and_battles: "wars and battles" pop 2 ident 2: 30 words, easy/middle/hard 3/12/15, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "wars and battles" pop 2 ident 2: 46 words, easy/middle/hard 6/19/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  war_words: "war words" pop 2 ident 2: 35 words, easy/middle/hard 6/12/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> no theme
+  magic_tricks: "magic tricks" pop 2 ident 2: 38 words, easy/middle/hard 10/12/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "magic shows" pop 2 ident 2: 50 words, easy/middle/hard 14/14/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  magic_show_words: "magic show words" pop 2 ident 2: 32 words, easy/middle/hard 11/9/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> no theme
+  snow_and_ice: "snow and ice" pop 2 ident 3: 49 words, easy/middle/hard 14/10/25, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "snow and ice" pop 2 ident 3: 64 words, easy/middle/hard 16/18/30, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  ice_words: "ice words" pop 3 ident 3: 39 words, easy/middle/hard 6/16/17, theme difficulty 3, 4th-easiest band 1, gap -2 -> no theme
+  dentist_s_office: "dentist's office" pop 2 ident 2: 40 words, easy/middle/hard 13/22/5, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "dentist's office" pop 2 ident 2: 62 words, easy/middle/hard 22/26/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  dental_words: "dental words" pop 2 ident 2: 43 words, easy/middle/hard 18/13/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> no theme
+  post_office: "post office" pop 2 ident 2: 37 words, easy/middle/hard 10/17/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "post office" pop 2 ident 2: 57 words, easy/middle/hard 15/22/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  mail_words: "mail words" pop 2 ident 2: 43 words, easy/middle/hard 13/13/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> no theme
+  army_words: "army words" pop 2 ident 2: 56 words, easy/middle/hard 15/19/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "army words" pop 2 ident 2: 56 words, easy/middle/hard 15/20/21, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  horse_riding_words: "horse riding words" pop 3 ident 2: 42 words, easy/middle/hard 17/13/12, theme difficulty 2, 4th-easiest band 1, gap -1 -> "horse riding words" pop 3 ident 2: 42 words, easy/middle/hard 17/13/12, theme difficulty 2, 4th-easiest band 1, gap -1
+Entries left in no theme (kept in the library, not exported) 1: magic trick 13744
+Entries added 12: shuffle 68116 [cards], talon 68117 [cards], grand slam 68118 [bridge], grand slam 68119 [tennis], wild card 68120 [cards], kicker 68121 [poker], showdown 68122 [poker], bucko 68123 [], splice the mainbrace 68124 [], dance the hempen jig 68125 [], blow me down 68126 [], belay 68127 [stop]
+Entries deleted 4: fold 45511, floss 16116, top hat 45963, bit 44843
+library changes 297; entries changed 416; status set to rev 370
+Checks: changed kinds: info:family-kin 354 -> 352, info:nameOk-stale 69 -> 68, info:orphan 303 -> 304, info:overlap 4908 -> 4919, info:sense-twin 237 -> 235
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, offensive-theme 2, offensive-word 110, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-offensive-break 107, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3253 -> 3245; gone map_words (index 861), dental_words (index 1210), religion_words (index 1415), mail_words (index 1477), sewing_words (index 1628), magic_show_words (index 2211), archaeology_words (index 2327), ice_words (index 3192); new none; theme indexes shift: from index 861 ("kinds_of_maps", was "map_words") to index 3244 ("things_you_eat_with_a_spoon", was "things_that_swim")
+Entries 61416 -> 61422; first row whose entry changed: 13322 (disappearing act 13745, was magic trick 13744); rows that moved: 48089; added fold 45247 (row 41978), shuffle 68116 (row 61412), talon 68117 (row 61413), grand slam 68118 (row 61414), grand slam 68119 (row 61415), wild card 68120 (row 61416), bucko 68123 (row 61417), splice the mainbrace 68124 (row 61418), dance the hempen jig 68125 (row 61419), blow me down 68126 (row 61420), belay 68127 (row 61421); removed magic trick 13744 (row 13322), 16116 (row 15431), 44843 (row 41701), 45511 (row 42104), 45963 (row 42550)
+root -> alias rows 0: none
+Links 101169 -> 100961; rows whose link count changed: 220
+Link-index shifts: from row 1523 (girth 1537) on, link positions move
+Rows whose text changed: none
+Theme rows whose fields changed (parent compared by id): wine_words (index 193 -> 193: name "wine words" -> "wine world"); dinosaur_words (index 462 -> 462: name "dinosaur words" -> "dinosaur science", popularity 4 -> 3, counts [4,9,13,7,15] -> [4,9,13,7,13], identifiability 4 -> 3, difficulty 4.5 -> 3); snow_and_ice (index 602 -> 602: counts [2,12,10,14,11] -> [6,10,18,13,17], range [2,5] -> [1,5]); maps_and_globes (index 857 -> 857: counts [6,12,25,10,12] -> [6,15,31,10,15]); post_office (index 899 -> 898: counts [2,8,18,9,3] -> [4,12,23,15,7], range [2,4] -> [2,5]); dentist_s_office (index 918 -> 917: counts [6,7,22,4,1] -> [8,14,26,10,4], range [1,4] -> [1,5]); religion (index 1414 -> 1412: counts [10,28,34,19,11] -> [12,33,37,23,15]); the_four_evangelists (index 1416 -> 1413: parent "religion_words" -> "religion"); seven_deadly_sins (index 1417 -> 1414: parent "religion_words" -> "religion"); parts_of_a_religious_service (index 1418 -> 1415: parent "religion_words" -> "religion"); army_words (index 1445 -> 1442: counts [6,12,22,14,10] -> [6,12,23,14,9]); fabrics_and_sewing (index 1622 -> 1618: counts [7,12,25,24,10] -> [7,14,30,26,13]); embroidery_stitches (index 1629 -> 1624: parent "sewing_words" -> "fabrics_and_sewing"); sewing_kit (index 1630 -> 1625: parent "sewing_words" -> "fabrics_and_sewing"); stitch_types (index 1631 -> 1626: parent "sewing_words" -> "fabrics_and_sewing"); card_game_words (index 1921 -> 1916: name "card game words" -> "card game terms", counts [4,8,5,8,6] -> [5,7,5,7,7]); magic_tricks (index 1949 -> 1944: name "magic tricks" -> "magic shows", counts [4,6,12,10,6] -> [5,9,14,13,9]); famous_magicians (index 2212 -> 1945: parent "magic_show_words" -> "magic_tricks"); pirates (index 2295 -> 2289: counts [8,14,17,17,6] -> [8,14,18,19,6]); pirate_words (index 2296 -> 2290: name "pirate words" -> "pirate talk", counts [2,7,12,8,2] -> [2,6,8,4,3]); archaeology (index 2326 -> 2320: counts [1,11,14,19,15] -> [1,12,17,22,18])
+Root links by theme + shown text + row: gone 350 (ice_words 39, archaeology_words 32, map_words 33, religion_words 56, dental_words 43, mail_words 43, sewing_words 45, pirate_words 12, magic_show_words 32, dinosaur_words 2, card_game_words 5, bedtime_routine 1, dentist_s_office 1, army_words 1, post_office 1, tennis_terms 1, horse_riding_words 2, magic_tricks 1), new 142 (horse_riding_words 2, snow_and_ice 15, maps_and_globes 12, dentist_s_office 23, bedtime_routine 1, army_words 1, post_office 21, religion 18, archaeology 10, magic_tricks 13, pirates 3, fabrics_and_sewing 12, card_game_words 5, tennis_terms 1, pirate_words 5), rating changed 42
+  gone (other than the deleted themes): pirate_words: "buccaneer" (6760), pirate_words: "privateer" (6761), pirate_words: "corsair" (6762), pirate_words: "doubloon" (6771), pirate_words: "pieces of eight" (6772), pirate_words: "grog" (6786), pirate_words: "plunder" (6791), pirate_words: "swashbuckler" (6806), pirate_words: "letter of marque" (6808), dinosaur_words: "shooting star" (7129), dinosaur_words: "falling star" (7130), card_game_words: "talon" (8120), bedtime_routine: "floss" (16116), dentist_s_office: "floss" (16116), card_game_words: "shuffle" (16872), pirate_words: "Davy Jones" (21180), pirate_words: "freebooter" (21186), army_words: "trench" (32036), post_office: "first class" (38233), tennis_terms: "grand slam" (42810), card_game_words: "grand slam" (42810), horse_riding_words: "pommel" (43807), card_game_words: "wild card" (44348), horse_riding_words: "bit" (44843), card_game_words: "fold" (45511), magic_tricks: "top hat" (45963), pirate_words: "Black Spot" (62004)
+  new: horse_riding_words: "bit" (1536), snow_and_ice: "moraine" (1964), snow_and_ice: "thaw" (2017), snow_and_ice: "hailstone" (2019), maps_and_globes: "map reference" (2437), dentist_s_office: "toothpaste" (3730), bedtime_routine: "floss" (3731), dentist_s_office: "floss" (3731), army_words: "trench" (4404), post_office: "postcard" (4562), religion: "pilgrim" (6690), religion: "pantheon" (6920), archaeology: "antiquity" (7073), horse_riding_words: "pommel" (9581), archaeology: "dig site" (10106), magic_tricks: "top hat" (13720), magic_tricks: "vanishing act" (13726), magic_tricks: "mentalist" (13729), magic_tricks: "patter" (13731), magic_tricks: "false bottom" (13732), magic_tricks: "hocus pocus" (13733), magic_tricks: "conjurer" (13734), magic_tricks: "illusionist" (13735), magic_tricks: "prestidigitation" (13738), magic_tricks: "legerdemain" (13739), magic_tricks: "black art" (13741), magic_tricks: "forcing" (13743), magic_tricks: "magic box" (13746), dentist_s_office: "wisdom tooth" (14486), dentist_s_office: "premolar" (14489), dentist_s_office: "enamel" (14490), dentist_s_office: "dentin" (14499), dentist_s_office: "bicuspid" (14503), dentist_s_office: "implant" (14506), dentist_s_office: "bridge" (14512), dentist_s_office: "canine tooth" (15416), dentist_s_office: "veneer" (15419), dentist_s_office: "tooth abscess" (15421), dentist_s_office: "gingivitis" (15422), dentist_s_office: "scale and polish" (15425), dentist_s_office: "tooth pulp" (15426), dentist_s_office: "periodontist" (15427), dentist_s_office: "dental dam" (15430), dentist_s_office: "dental probe" (15431), dentist_s_office: "amalgam" (15432), dentist_s_office: "caries" (15433), dentist_s_office: "tooth extraction" (15434), dentist_s_office: "dental drill" (15435), dentist_s_office: "bite wing" (15436), maps_and_globes: "cartouche" (20356), maps_and_globes: "compass rose" (21021), pirates: "Davy Jones" (21180), pirates: "freebooter" (21186), archaeology: "relic" (21688), archaeology: "trench" (21689), archaeology: "typology" (21690), archaeology: "geophysics" (21691), archaeology: "unearth" (21692), archaeology: "site survey" (21693), archaeology: "field walking" (21694), archaeology: "Mortimer Wheeler" (21695), religion: "exorcism" (22790), post_office: "Penny Black" (22986), fabrics_and_sewing: "gather" (24873), fabrics_and_sewing: "bias binding" (24874), fabrics_and_sewing: "mending" (24875), fabrics_and_sewing: "fabric scissors" (24876), fabrics_and_sewing: "cross stitch" (24877), fabrics_and_sewing: "satin stitch" (24878), fabrics_and_sewing: "French knot" (24879), fabrics_and_sewing: "feather stitch" (24880), fabrics_and_sewing: "whip stitch" (24881), fabrics_and_sewing: "hemstitch" (24882), fabrics_and_sewing: "presser foot" (24883), fabrics_and_sewing: "pin" (25002), snow_and_ice: "pack ice" (30904), snow_and_ice: "serac" (30908), snow_and_ice: "nunatak" (30912), snow_and_ice: "bergy bit" (30913), snow_and_ice: "brash ice" (32179), religion: "covenant" (33756), religion: "soul" (34181), religion: "pray" (34183), religion: "creed" (34184), religion: "atheism" (34185), religion: "divine" (34186), religion: "absolution" (34187), religion: "canon" (34188), religion: "grace" (34189), religion: "offering" (34190), religion: "catechism" (34191), post_office: "address" (35161), post_office: "junk mail" (35166), post_office: "first class" (35169), post_office: "chain letter" (35175), post_office: "dead letter" (35176), post_office: "return to sender" (35177), post_office: "parcel post" (35179), post_office: "mail bag" (35180), post_office: "air letter" (35181), post_office: "aerogramme" (35182), post_office: "express mail" (35183), post_office: "franking" (35184), post_office: "mail order" (35185), post_office: "sealing wax" (35187), post_office: "bulk mail" (35189), maps_and_globes: "north arrow" (37883), maps_and_globes: "grid" (37884), maps_and_globes: "map symbol" (37885), maps_and_globes: "inset" (37886), maps_and_globes: "orientation" (37887), maps_and_globes: "landmark" (37889), maps_and_globes: "scale bar" (37890), maps_and_globes: "neatline" (37891), maps_and_globes: "toponym" (37892), snow_and_ice: "glaze" (39915), snow_and_ice: "frozen" (39916), snow_and_ice: "icy" (39917), snow_and_ice: "calve" (39918), snow_and_ice: "frazil" (39920), snow_and_ice: "cryosphere" (39921), snow_and_ice: "freeze-up" (39922), card_game_words: "fold" (45247), religion: "theodicy" (61170), religion: "syncretism" (61171), religion: "numinous" (61172), religion: "apotheosis" (61173), post_office: "cancellation" (61355), post_office: "postal code" (61357), post_office: "general delivery" (61358), post_office: "postal worker" (61359), pirates: "Black Spot" (62004), card_game_words: "shuffle" (68116), card_game_words: "talon" (68117), card_game_words: "grand slam" (68118), tennis_terms: "grand slam" (68119), card_game_words: "wild card" (68120), pirate_words: "bucko" (68123), pirate_words: "splice the mainbrace" (68124), pirate_words: "dance the hempen jig" (68125), pirate_words: "blow me down" (68126), pirate_words: "belay" (68127)
+  rating: snow_and_ice: "glacier" (1911) 1.7/2 -> 1/1, maps_and_globes: "legend" (2406) 2/2 -> 1.7/1, maps_and_globes: "key" (2407) 2.7/3 -> 1.7/1, maps_and_globes: "scale" (2408) 2/2 -> 1.7/1, maps_and_globes: "mapmaker" (2413) 2.7/3 -> 2/2, maps_and_globes: "cartography" (2428) 3/3 -> 2.7/2, maps_and_globes: "topography" (2429) 3.7/4 -> 3/3, maps_and_globes: "isoline" (2432) 5/5 -> 4.4/3, maps_and_globes: "elevation" (2433) 3.7/4 -> 3/3, maps_and_globes: "projection" (2434) 3/3 -> 2.7/2, dentist_s_office: "toothbrush" (3729) 1.7/2 -> 1/1, dentist_s_office: "mouthwash" (3732) 2.7/3 -> 2/2, post_office: "mail carrier" (4120) 2/2 -> 1.7/1, religion: "transgression" (4299) 4/4 -> 3.7/3, religion: "trespass" (4300) 4/4 -> 3.7/3, religion: "holy" (4302) 1.7/2 -> 1/1, religion: "scripture" (4313) 3/3 -> 2.7/2, fabrics_and_sewing: "hem" (5029) 2.7/3 -> 2/2, fabrics_and_sewing: "dart" (5054) 3.7/4 -> 3/3, fabrics_and_sewing: "pleat" (5055) 3.7/4 -> 3/3, fabrics_and_sewing: "bobbin" (5056) 3/3 -> 2.7/2, fabrics_and_sewing: "darning" (5059) 3/3 -> 2.7/2, fabrics_and_sewing: "backstitch" (5083) 4/4 -> 3.7/3, fabrics_and_sewing: "blanket stitch" (5085) 4/4 -> 3.7/3, fabrics_and_sewing: "chain stitch" (5086) 4/4 -> 3.7/3, archaeology: "lithics" (6891) 5/5 -> 4.7/4, archaeology: "grid square" (6904) 4/4 -> 3.7/3, magic_tricks: "disappearing act" (13745) 2.7/3 -> 2/2, dentist_s_office: "molar" (14483) 2.7/3 -> 2/2, dentist_s_office: "incisor" (14485) 3.7/4 -> 3/3, dentist_s_office: "braces" (14496) 2.4/3 -> 1.7/2, dentist_s_office: "denture" (14504) 2.7/3 -> 2/2, post_office: "forwarding address" (24250) 3.7/4 -> 3/3, post_office: "zip code" (26017) 2.4/3 -> 1.7/2, snow_and_ice: "iceberg" (29374) 1.7/2 -> 1/1, snow_and_ice: "ice cap" (30900) 3.7/4 -> 2.7/2, snow_and_ice: "sheet" (30901) 3.7/4 -> 2.7/2, snow_and_ice: "crevasse" (30902) 3.7/4 -> 3/3, snow_and_ice: "permafrost" (30903) 3.7/4 -> 3/3, snow_and_ice: "ice shelf" (30905) 3.7/4 -> 3/3, post_office: "package" (35158) 1.7/2 -> 1/1, post_office: "sorting office" (35173) 3.7/4 -> 3/3
+new issues: none
