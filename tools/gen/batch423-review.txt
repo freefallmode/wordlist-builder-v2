@@ -1,0 +1,80 @@
+Healing traditions (Body & Health): the remedy themes keep remedies. Drugs out and flagged adult; healers, ceremonies, tradition names and people out; aloe, neem and a few others left the themes they fit least; brahmi split into herb and script.
+1. Drugs leave the remedy themes and are flagged adult (like coca and ayahuasca)
+  out of native_american_remedies: peyote 15507: a hallucinogenic drug; this theme is not adult, so it played in the family game (stays in illegal_drugs, words_from_nahuatl, hallucinogens)
+  out of african_remedies: khat 15515: a stimulant drug; this theme is not adult, so it played in the family game (stays in illegal_drugs)
+  out of african_remedies: iboga 15630: a hallucinogenic drug; this theme is not adult, so it played in the family game (now in no theme: not exported)
+  peyote 15507: adult false -> true: the sense is a drug (LIBRARY-RULES 4: adult)
+  khat 15515: adult false -> true: the sense is a drug (LIBRARY-RULES 4: adult)
+  iboga 15630: adult false -> true: the sense is a drug (LIBRARY-RULES 4: adult)
+2. Healers are people, not remedies
+  out of african_remedies: witch doctor 15629: a healer, not a remedy; the term is also widely felt to be disrespectful (now in no theme: not exported)
+  out of african_remedies: traditional healer 15628: a healer, not a remedy (now in no theme: not exported)
+  out of african_remedies: sangoma 15620: a healer, not a remedy (now in no theme: not exported)
+  out of african_remedies: nyanga 15635: a healer, not a remedy (now in no theme: not exported)
+  out of native_american_remedies: medicine man 15692: a healer, not a remedy (stays in native_american_folklore)
+  out of native_american_remedies: shaman 15708: a healer, not a remedy (stays in religious_leaders)
+  out of oceanian_remedies: ngangkari 15655: a healer, not a remedy (now in no theme: not exported)
+3. Ceremonies and religious rites are not remedies
+  out of native_american_remedies: sweat lodge 15690: a ceremony or sacred symbol, not a remedy (stays in native_american_folklore)
+  out of native_american_remedies: vision quest 15709: a ceremony or sacred symbol, not a remedy (stays in native_american_folklore)
+  out of native_american_remedies: smudging 50124: a ceremony or sacred symbol, not a remedy (now in no theme: not exported)
+  out of native_american_remedies: medicine wheel 15693: a ceremony or sacred symbol, not a remedy (now in no theme: not exported)
+  linked: smudging 50124 in native_american_folklore (typicality 3): a cleansing ceremony, beside sweat lodge and vision quest
+  linked: medicine wheel 15693 in native_american_folklore (typicality 4): a sacred symbol and ceremony, beside sweat lodge and vision quest
+  out of oceanian_remedies: smoking ceremony 15649: a ceremony, not a remedy (stays in aboriginal_culture)
+  out of middle_eastern_remedies: ruqyah 15606: a religious rite and holy water, not a remedy (Zamzam is in the Islam themes) (now in no theme: not exported)
+  out of middle_eastern_remedies: Zamzam water 15602: a religious rite and holy water, not a remedy (Zamzam is in the Islam themes) (now in no theme: not exported)
+4. The name of a tradition, not one of its remedies
+  out of middle_eastern_remedies: Unani 15607: the name of the tradition itself (now in no theme: not exported)
+  out of oceanian_remedies: bush medicine 15648: the name of the tradition itself (now in no theme: not exported)
+  out of oceanian_remedies: rongoā 15642: the name of the tradition itself (now in no theme: not exported)
+  out of ayurveda_words: tridosha 15684: the three doshas together; vata, pitta and kapha are the members (now in no theme: not exported)
+5. People, not medicine
+  out of chinese_medicine: Huang Di 15587: a legendary emperor, not a practice, herb or idea of the medicine (now in no theme: not exported)
+  out of ayurveda_words: Charaka 15675: an ancient physician, not a practice, herb or idea of Ayurveda (now in no theme: not exported)
+  out of ayurveda_words: Sushruta 15676: an ancient physician, not a practice, herb or idea of Ayurveda (now in no theme: not exported)
+6. Middle Eastern remedies
+  out of middle_eastern_remedies: aloe 1781: typicality 5 here; African remedies keeps it (stays in desert_plants, plants_of_the_middle_east, plants, houseplants, cacti_and_succulents, medicinal_plants, beach_vacation, first_aid, african_remedies, oceanian_remedies, sun_care)
+  out of middle_eastern_remedies: aloe vera 1780: typicality 5 here; African remedies keeps it (stays in desert_plants, plants_of_the_middle_east, plants, houseplants, cacti_and_succulents, medicinal_plants, beach_vacation, first_aid, african_remedies, oceanian_remedies, sun_care)
+  out of middle_eastern_remedies: sidr honey 15600: a more specific form of honey and dates, which the theme holds (now in no theme: not exported)
+  out of middle_eastern_remedies: ajwa dates 15609: a more specific form of honey and dates, which the theme holds (now in no theme: not exported)
+7. African remedies
+  out of african_remedies: cat's claw 15625: a South American plant (now in no theme: not exported)
+  out of african_remedies: neem 15627: an Indian tree; Ayurveda words keeps it (stays in ayurveda_words, tropical_trees, asian_trees)
+  out of african_remedies: prunus africana 15633: a Latin species name, written without its capital (now in no theme: not exported)
+8. Oceanian remedies
+  out of oceanian_remedies: aloe 1781: not native to Oceania (typicality 5) (stays in desert_plants, plants_of_the_middle_east, plants, houseplants, cacti_and_succulents, medicinal_plants, beach_vacation, first_aid, african_remedies, sun_care)
+  out of oceanian_remedies: aloe vera 1780: not native to Oceania (typicality 5) (stays in desert_plants, plants_of_the_middle_east, plants, houseplants, cacti_and_succulents, medicinal_plants, beach_vacation, first_aid, african_remedies, sun_care)
+  out of oceanian_remedies: piripiri 15653: reads as the chili piri piri, its own entry (now in no theme: not exported)
+9. Native American remedies
+  typicality: witch hazel 15688 in native_american_remedies 3 -> 2: one of the best-known Native American remedies
+  native_american_remedies: note "echinacea, willow bark, goldenseal, witch hazel, yarrow, sweat lodge" -> "echinacea, willow bark, goldenseal, witch hazel, yarrow, sage": sweat lodge left the theme
+10. brahmi: the herb and the script are two senses
+  new word: Brahmi 68089 (noun, proper, familiarity 4, gloss script): the ancient Indian script, its own sense (capital, like Ogham and Cyrillic)
+  brahmi 15668: gloss "" -> "herb": the Ayurvedic herb; the script is now its own entry
+  linked: Brahmi 68089 in writing_systems (typicality 4): the script sense
+  out of writing_systems: brahmi 15668: the herb sense; the script is the new Brahmi entry (stays in ayurveda_words)
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  chinese_medicine: 33 words, easy/middle/hard 5/11/17, theme difficulty 3, 4th-easiest band 2, gap -1 -> 32 words, easy/middle/hard 5/11/16, theme difficulty 3, 4th-easiest band 2, gap -1
+  middle_eastern_remedies: 33 words, easy/middle/hard 5/7/21, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> 26 words, easy/middle/hard 5/7/14, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  african_remedies: 29 words, easy/middle/hard 4/3/22, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> 20 words, easy/middle/hard 3/2/15, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  oceanian_remedies: 27 words, easy/middle/hard 3/4/20, theme difficulty 5, 4th-easiest band 3, gap -2 -> 20 words, easy/middle/hard 3/3/14, theme difficulty 5, 4th-easiest band 3, gap -2
+  ayurveda_words: 35 words, easy/middle/hard 0/5/30, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> 32 words, easy/middle/hard 0/5/27, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  native_american_remedies: 31 words, easy/middle/hard 3/9/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> 24 words, easy/middle/hard 2/4/18, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  These traditions are niche (popularity 4-5): no easy word that really belongs was found to add; existing candidates (oil pulling, neti pot, golden milk, tongue scraper) are no easier.
+Entries left in no theme (kept in the library, not exported) 20: iboga 15630, witch doctor 15629, traditional healer 15628, sangoma 15620, nyanga 15635, ngangkari 15655, ruqyah 15606, Zamzam water 15602, Unani 15607, bush medicine 15648, rongoā 15642, tridosha 15684, Huang Di 15587, Charaka 15675, Sushruta 15676, sidr honey 15600, ajwa dates 15609, cat's claw 15625, prunus africana 15633, piripiri 15653
+library changes 45; entries changed 35; status set to rev 34
+Checks: changed kinds: info:orphan 272 -> 292, info:overlap 4911 -> 4909
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3253 -> 3253; gone none; new none; theme indexes shift: none
+Entries 61439 -> 61417; first row whose entry changed: 14901 (bath salts 15510, was peyote 15507); rows that moved: 46515; added Brahmi 68089 (row 61416); removed peyote 15507 (row 14901), khat 15515 (row 14903), Huang Di 15587 (row 14972), sidr honey 15600 (row 14985), Zamzam water 15602 (row 14987), ruqyah 15606 (row 14991), Unani 15607 (row 14992), ajwa dates 15609 (row 14994), sangoma 15620 (row 15004), cat's claw 15625 (row 15009), traditional healer 15628 (row 15012), witch doctor 15629 (row 15013), iboga 15630 (row 15014), prunus africana 15633 (row 15017), nyanga 15635 (row 15018), rongoā 15642 (row 15025), rongoa 15643 (row 15026), bush medicine 15648 (row 15031), piripiri 15653 (row 15036), ngangkari 15655 (row 15038), Charaka 15675 (row 15058), Sushruta 15676 (row 15059), tridosha 15684 (row 15067)
+root -> alias rows 0: none
+Links 101285 -> 101252; rows whose link count changed: 9
+Link-index shifts: from row 1766 (aloe 1781) on, link positions move
+Root links by theme + shown text + row: gone 36, new 3, rating changed 1
+  gone: middle_eastern_remedies: "aloe vera" (1780), oceanian_remedies: "aloe vera" (1780), middle_eastern_remedies: "aloe" (1781), oceanian_remedies: "aloe" (1781), native_american_remedies: "peyote" (15507), words_from_nahuatl: "peyote" (15507), african_remedies: "khat" (15515), chinese_medicine: "Huang Di" (15587), middle_eastern_remedies: "sidr honey" (15600), middle_eastern_remedies: "Zamzam water" (15602), middle_eastern_remedies: "ruqyah" (15606), middle_eastern_remedies: "Unani" (15607), middle_eastern_remedies: "ajwa dates" (15609), african_remedies: "sangoma" (15620), african_remedies: "cat's claw" (15625), african_remedies: "neem" (15627), african_remedies: "traditional healer" (15628), african_remedies: "witch doctor" (15629), african_remedies: "iboga" (15630), african_remedies: "prunus africana" (15633), african_remedies: "nyanga" (15635), oceanian_remedies: "rongoā" (15642), oceanian_remedies: "bush medicine" (15648), oceanian_remedies: "smoking ceremony" (15649), oceanian_remedies: "piripiri" (15653), oceanian_remedies: "ngangkari" (15655), writing_systems: "brahmi" (15668), ayurveda_words: "Charaka" (15675), ayurveda_words: "Sushruta" (15676), ayurveda_words: "tridosha" (15684), native_american_remedies: "sweat lodge" (15690), native_american_remedies: "medicine man" (15692), native_american_remedies: "medicine wheel" (15693), native_american_remedies: "shaman" (15708), native_american_remedies: "vision quest" (15709), native_american_remedies: "smudging" (50124)
+  new: native_american_folklore: "medicine wheel" (15693), native_american_folklore: "smudging" (50124), writing_systems: "Brahmi" (68089)
+  rating: native_american_remedies: "witch hazel" (15688) 2.7/3 -> 2/2
+new issues: none

@@ -1,0 +1,113 @@
+Sleep (Body & Health): sleep words merged into sleep; duplicates fixed (sheet, rem sleep, the apnea alias text); words that are not bedding, nightwear, dream words or disorders out; say prayers sensitive; new theme feeling tired; body clock and all-nighter added to sleep.
+1. sleep words merges into sleep (a theme and its "X words" twin)
+  linked: sleep in 16021 in sleep (typicality 2, may contain the theme name (nameOkIn)): from sleep words, at the same typicality
+  linked: dead to the world 16022 in sleep (typicality 3): from sleep words, at the same typicality
+  linked: out like a light 16023 in sleep (typicality 3): from sleep words, at the same typicality
+  linked: hit the hay 16024 in sleep (typicality 3): from sleep words, at the same typicality
+  linked: sandman 16025 in sleep (typicality 3): from sleep words, at the same typicality
+  linked: repose 16027 in sleep (typicality 4): from sleep words, at the same typicality
+  linked: soporific 16026 in sleep (typicality 5): from sleep words, at the same typicality
+  group in sleep: sleep in 16021 = lie-in 3706: same answer, as in sleep words
+  group in sleep: dead to the world 16022 = out like a light 16023: same answer, as in sleep words
+  deleted theme: sleep_words "sleep words": merged into sleep; 36 links go with it
+  now in no theme: hibernate 16020: hibernate: sleep has hibernation, its kin
+  now in no theme: somnambulist 16029: somnambulist: sleep has somnambulism, its kin
+2. sleep
+  new word: body clock 68090 (noun, common, familiarity 2): the everyday word for circadian rhythm
+  linked: body clock 68090 in sleep (typicality 3): the everyday word for circadian rhythm
+  group in sleep: circadian rhythm 3701 = body clock 68090: same answer
+  new word: all-nighter 68091 (noun, common, familiarity 2): a night without sleep
+  linked: all-nighter 68091 in sleep (typicality 3): a night without sleep
+3. bedding
+  linked: sheet 3673 in bedding (typicality 1): sheet [bed] takes the place of its duplicate sheet [bedding]
+  group in bedding: sheet 16030 = flat sheet 16046 = top sheet 16042 = sheet 3673: the same group sheet [bedding] was in
+  deleted entry: sheet 16030: a duplicate of sheet [bed] 3673 (same sense, same kin), which takes its link and group
+  out of bedding: headboard 16053: part of the bed frame, not bedding (stays in bedroom, blank_board, head_blank)
+  out of bedding: thread count 16054: a measure of fabric, not bedding (now in no theme: not exported)
+  out of bedding: percale 16050: a fabric, not bedding (stays in cotton_fabrics)
+  out of bedding: sateen 16051: a fabric, not bedding (stays in fabrics, cotton_fabrics)
+  out of bedding: memory foam 16047: a material, not bedding (stays in soft_things)
+4. nightwear
+  out of nightwear: romper 4909: daywear (a playsuit) (stays in clothes)
+5. dream words
+  linked: REM 3699 in dream_words (typicality 3): REM sleep is the dreaming stage; REM takes the place of its lowercase duplicate
+  deleted entry: rem sleep 16081: a lowercase duplicate of REM 3699, which takes its place in dream words; as an alias "REM sleep" would give away the theme sleep
+  out of dream_words: sleepwalking 3696: a sleep disorder, not a dream word (stays in sleep, sleep_disorders)
+  out of dream_words: somnambulism 3697: a sleep disorder, not a dream word (stays in sleep_disorders, sleep)
+  out of dream_words: vivid 16079: a general word, not a dream word (stays in words_made_of_roman_numerals)
+  out of dream_words: nocturnal 16093: a general word, not a dream word (now in no theme: not exported)
+  out of dream_words: déjà vu 16082: a general word, not a dream word (stays in french_phrases_in_english, words_from_french)
+  linked: sleep talking 16085 in sleep_disorders (typicality 2, may contain the theme name (nameOkIn)): a sleep disorder (somniloquy)
+  out of dream_words: sleep talking 16085: a sleep disorder; moved to sleep disorders (stays in sleep_disorders)
+6. sleep disorders
+  group in sleep_disorders: sleep talking 16085 = somniloquy 16139: same answer: somniloquy is the medical word for sleep talking
+  out of sleep_disorders: CPAP 16148: a breathing machine that treats sleep apnea, not a disorder (now in no theme: not exported)
+  out of sleep_disorders: exploding head 16150: the disorder is exploding head syndrome; the short form is misleading (now in no theme: not exported)
+  alias text: sleep apnoea 3714 -> "apnoea", nameOkIn ["sleep","sleep_disorders"] -> []: the UK spelling of its root "apnea"
+7. bedtime routine
+  say prayers 16121: sensitive false -> true: religion (LIBRARY-RULES 4: sensitive)
+8. New theme: feeling tired
+  new theme: feeling_tired "feeling tired" under sleep, after short_sleeps (pop 2, ident 2, note "tired, sleepy, exhausted, worn out, weary"): words for being tired; no theme had them
+  linked: tired 62393 in feeling_tired (typicality 1): the theme word itself
+  linked: sleepy 3686 in feeling_tired (typicality 1): a first word for tired
+  linked: drowsy 3687 in feeling_tired (typicality 2): a common word for tired
+  linked: knackered 27311 in feeling_tired (typicality 3): British slang for tired
+  linked: lethargic 32933 in feeling_tired (typicality 4): lacking energy
+  linked: listless 32934 in feeling_tired (typicality 4): lacking energy
+  new word: exhausted 68092 (adjective, common, familiarity 1): a word for tired
+  linked: exhausted 68092 in feeling_tired (typicality 1): a word for tired
+  new word: worn out 68093 (adjective, common, familiarity 1): a word for tired
+  linked: worn out 68093 in feeling_tired (typicality 2): a word for tired
+  new word: weary 68094 (adjective, common, familiarity 2): a word for tired
+  linked: weary 68094 in feeling_tired (typicality 2): a word for tired
+  new word: drained 68095 (adjective, common, familiarity 2): a word for tired
+  linked: drained 68095 in feeling_tired (typicality 3): a word for tired
+  new word: groggy 68096 (adjective, common, familiarity 2): a word for tired
+  linked: groggy 68096 in feeling_tired (typicality 3): a word for tired
+  new word: sluggish 68097 (adjective, common, familiarity 2): a word for tired
+  linked: sluggish 68097 in feeling_tired (typicality 3): a word for tired
+  new word: shattered 68098 (adjective, common, familiarity 3): a word for tired
+  linked: shattered 68098 in feeling_tired (typicality 3): a word for tired
+  new word: pooped 68099 (adjective, common, familiarity 3): a word for tired
+  linked: pooped 68099 in feeling_tired (typicality 3): a word for tired
+  new word: fatigued 68100 (adjective, common, familiarity 3): a word for tired
+  linked: fatigued 68100 in feeling_tired (typicality 2): a word for tired
+  new word: bushed 68101 (adjective, common, familiarity 4): a word for tired
+  linked: bushed 68101 in feeling_tired (typicality 3): a word for tired
+  new word: bleary-eyed 68102 (adjective, common, familiarity 3): a word for tired
+  linked: bleary-eyed 68102 in feeling_tired (typicality 4): a word for tired
+  new word: run-down 68103 (adjective, common, familiarity 3): a word for tired
+  linked: run-down 68103 in feeling_tired (typicality 4): a word for tired
+  kin: exhausted 68092 <-> exhaustion 29115: one word family
+  kin: fatigued 68100 <-> fatigue 15034: one word family
+  kin: bleary-eyed 68102 <-> bleary 14682: one word family
+  kin: drained 68095 <-> drain 23628: one word family (drained is the past participle of drain), so the game keeps them apart in a level
+  group in feeling_tired: sleepy 3686 = drowsy 3687: same answer, as in sleep
+  group in feeling_tired: lethargic 32933 = listless 32934: same answer, as in moods
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  sleep: 62 words, easy/middle/hard 23/25/14, theme difficulty 1, 4th-easiest band 1, gap 0 -> 71 words, easy/middle/hard 23/32/16, theme difficulty 1, 4th-easiest band 1, gap 0
+  sleep_words: 36 words, easy/middle/hard 14/13/9, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> no theme
+  bedding: 33 words, easy/middle/hard 10/8/15, theme difficulty 1, 4th-easiest band 1, gap 0 -> 28 words, easy/middle/hard 10/8/10, theme difficulty 1, 4th-easiest band 1, gap 0
+  nightwear: 24 words, easy/middle/hard 5/10/9, theme difficulty 1, 4th-easiest band 2, gap 1 -> 23 words, easy/middle/hard 5/10/8, theme difficulty 1, 4th-easiest band 2, gap 1
+  dream_words: 33 words, easy/middle/hard 3/14/16, theme difficulty 3, 4th-easiest band 3, gap 0 -> 27 words, easy/middle/hard 3/14/10, theme difficulty 3, 4th-easiest band 3, gap 0
+  bedtime_routine: 38 words, easy/middle/hard 14/11/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 38 words, easy/middle/hard 14/11/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  sleep_disorders: 30 words, easy/middle/hard 3/9/18, theme difficulty 2, 4th-easiest band 3, gap 1 -> 29 words, easy/middle/hard 4/9/16, theme difficulty 2, 4th-easiest band 2, gap 0
+  short_sleeps: 10 words, easy/middle/hard 4/6/0, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 10 words, easy/middle/hard 4/6/0, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  feeling_tired: no theme -> 18 words, easy/middle/hard 6/7/5, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+Entries left in no theme (kept in the library, not exported) 6: hibernate 16020, somnambulist 16029, thread count 16054, nocturnal 16093, CPAP 16148, exploding head 16150
+Entries deleted 2: sheet 16030, rem sleep 16081
+library changes 75; entries changed 76; status set to rev 60
+Checks: changed kinds: info:alias-kind-suspect 52 -> 51, info:family-kin 346 -> 358, info:orphan 292 -> 298, info:rating-vs-zipf 1680 -> 1682, info:theme-twin 55 -> 54
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3253 -> 3253; gone sleep_words; new feeling_tired; theme indexes shift: from index 1237 ("bedding", was "sleep_words")
+Entries 61417 -> 61423; first row whose entry changed: 15348 (sleep in 16021, was hibernate 16020); rows that moved: 46061; added body clock 68090 (row 61409), all-nighter 68091 (row 61410), exhausted 68092 (row 61411), worn out 68093 (row 61412), weary 68094 (row 61413), drained 68095 (row 61414), groggy 68096 (row 61415), sluggish 68097 (row 61416), shattered 68098 (row 61417), pooped 68099 (row 61418), fatigued 68100 (row 61419), bushed 68101 (row 61420), bleary-eyed 68102 (row 61421), run-down 68103 (row 61422); removed hibernate 16020 (row 15348), somnambulist 16029 (row 15357), 16030 (row 15358), thread count 16054 (row 15382), 16081 (row 15405), nocturnal 16093 (row 15417), CPAP 16148 (row 15470), exploding head 16150 (row 15472)
+root -> alias rows 0: none
+Links 101252 -> 101230; rows whose link count changed: 38
+Link-index shifts: from row 2699 (turbulence 2721) on, link positions move
+Root links by theme + shown text + row: gone 52, new 30, rating changed 0
+  gone: sleep_words: "jet lag" (2720), sleep_words: "lullaby" (3541), sleep_words: "nap" (3665), sleep_words: "snore" (3680), sleep_words: "insomnia" (3681), sleep_words: "sleeplessness" (3682), sleep_words: "yawn" (3683), sleep_words: "bedtime" (3684), sleep_words: "sleepy" (3686), sleep_words: "drowsy" (3687), sleep_words: "snooze" (3688), sleep_words: "doze" (3689), sleep_words: "nod off" (3690), sleep_words: "slumber" (3691), sleep_words: "siesta" (3692), sleep_words: "forty winks" (3693), sleep_words: "shut-eye" (3695), dream_words: "sleepwalking" (3696), dream_words: "somnambulism" (3697), sleep_words: "REM" (3699), sleep_words: "melatonin" (3700), sleep_words: "circadian rhythm" (3701), sleep_words: "power nap" (3703), sleep_words: "catnap" (3704), sleep_words: "lie-in" (3706), sleep_words: "somnolent" (3716), sleep_words: "hypnagogic" (3717), sleep_words: "sleepover" (3935), nightwear: "romper" (4909), sleep_words: "hibernate" (16020), sleep_words: "sleep in" (16021), sleep_words: "dead to the world" (16022), sleep_words: "out like a light" (16023), sleep_words: "hit the hay" (16024), sleep_words: "sandman" (16025), sleep_words: "soporific" (16026), sleep_words: "repose" (16027), sleep_words: "dormant" (16028), sleep_words: "somnambulist" (16029), bedding: "sheet" (16030), bedding: "memory foam" (16047), bedding: "percale" (16050), bedding: "sateen" (16051), bedding: "headboard" (16053), bedding: "thread count" (16054), dream_words: "vivid" (16079), dream_words: "rem sleep" (16081), dream_words: "déjà vu" (16082), dream_words: "sleep talking" (16085), dream_words: "nocturnal" (16093), sleep_disorders: "CPAP" (16148), sleep_disorders: "exploding head" (16150)
+  new: bedding: "sheet" (3673), feeling_tired: "sleepy" (3686), feeling_tired: "drowsy" (3687), dream_words: "REM" (3699), sleep: "sleep in" (16021), sleep: "dead to the world" (16022), sleep: "out like a light" (16023), sleep: "hit the hay" (16024), sleep: "sandman" (16025), sleep: "soporific" (16026), sleep: "repose" (16027), sleep_disorders: "sleep talking" (16085), feeling_tired: "knackered" (27311), feeling_tired: "lethargic" (32933), feeling_tired: "listless" (32934), feeling_tired: "tired" (62393), sleep: "body clock" (68090), sleep: "all-nighter" (68091), feeling_tired: "exhausted" (68092), feeling_tired: "worn out" (68093), feeling_tired: "weary" (68094), feeling_tired: "drained" (68095), feeling_tired: "groggy" (68096), feeling_tired: "sluggish" (68097), feeling_tired: "shattered" (68098), feeling_tired: "pooped" (68099), feeling_tired: "fatigued" (68100), feeling_tired: "bushed" (68101), feeling_tired: "bleary-eyed" (68102), feeling_tired: "run-down" (68103)
+  rating: none
+new issues: none

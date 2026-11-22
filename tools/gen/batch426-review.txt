@@ -1,0 +1,59 @@
+Fitness (Body & Health): fitness words merged into fitness (cutting duplicate deleted, PB an abbreviation alias of personal best); Weight Watchers, star, Sanskrit, basic training and IT band out; child's pose in yoga poses; boot camp split into its military and workout senses; hip flexor and cross-body renamed to their stretches.
+1. fitness words merges into fitness (a theme and its "X words" twin)
+  linked: muscle 3244 in fitness (typicality 1): from fitness words, at the same typicality
+  linked: pump 15984 in fitness (typicality 3): from fitness words, at the same typicality
+  linked: cheat meal 15987 in fitness (typicality 3): from fitness words, at the same typicality
+  linked: superset 15982 in fitness (typicality 3): from fitness words, at the same typicality
+  linked: drop set 15983 in fitness (typicality 4): from fitness words, at the same typicality
+  linked: tempo 15986 in fitness (typicality 4): from fitness words, at the same typicality
+  linked: dad bod 15985 in fitness (typicality 5): from fitness words, at the same typicality
+  deleted entry: cutting 15981: the same sense as cutting [fitness] 3653 (the fat-loss phase), which fitness has
+  deleted theme: fitness_words "fitness words": merged into fitness; 35 links go with it
+  alias: PB 15980 becomes the abbreviation alias of personal best 3619 (region UK, AU, NZ, IE; US runners say PR), as PT is of personal trainer
+2. fitness
+  out of fitness: Weight Watchers 3659: a diet programme, typicality 5 here (stays in diet_types)
+3. fitness exercises
+  out of exercises: star 64806: a bare stub beside jumping jack, whose UK name star jump is already its alias (stays in ways_to_jump)
+4. yoga poses
+  linked: child's pose 15901 in yoga_poses (typicality 1, shown "child"): one of the best-known yoga poses; shown without "pose" like the other poses (cobra, tree, corpse), so the name does not give the theme away
+  group in yoga_poses: child's pose 15901 = balasana 65747: same answer: balasana is the Sanskrit name of child's pose
+5. yoga words
+  out of yoga_words: Sanskrit 7559: a language, not a yoga word (stays in languages, ancient_india, ancient_writing, ancient_languages, languages_of_india)
+6. workout types
+  out of workout_types: basic training 4413: military training, not a workout (stays in military, army_words)
+  boot camp 4412: gloss "" -> "military": the military sense; the fitness class is now its own entry
+  new word: boot camp 68108 (noun, common, familiarity 2, gloss workout): the group fitness class, its own sense
+  out of workout_types: boot camp 4412: the military sense; boot camp [workout] takes its place (stays in military, army_words)
+  linked: boot camp 68108 in workout_types (typicality 2): the fitness-class sense
+  kin: boot camp 68108 <-> boot camp 4412: one written word in two senses
+7. stretches
+  renamed: hip flexor 62746 -> "hip flexor stretch", shown {"stretches":"hip flexor"}: a hip flexor is a muscle; the stretch is the member, shown short like hamstring stretch
+  renamed: cross-body 62744 -> "cross-body stretch" (noun), shown {"stretches":"cross-body"}: cross-body alone is an adjective; the stretch is the member, shown short
+  out of stretches: IT band 62747: a band of tissue in the leg, not a stretch (now in no theme: not exported)
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  fitness: 66 words, easy/middle/hard 22/22/22, theme difficulty 1, 4th-easiest band 1, gap 0 -> 72 words, easy/middle/hard 23/24/25, theme difficulty 1, 4th-easiest band 1, gap 0
+  fitness_words: 36 words, easy/middle/hard 15/9/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> no theme
+  exercises: 32 words, easy/middle/hard 14/8/10, theme difficulty 1, 4th-easiest band 1, gap 0 -> 31 words, easy/middle/hard 14/7/10, theme difficulty 1, 4th-easiest band 1, gap 0
+  yoga_poses: 35 words, easy/middle/hard 6/18/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 36 words, easy/middle/hard 7/18/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  yoga_words: 34 words, easy/middle/hard 3/8/23, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 33 words, easy/middle/hard 3/8/22, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  workout_types: 44 words, easy/middle/hard 16/12/16, theme difficulty 1, 4th-easiest band 1, gap 0 -> 43 words, easy/middle/hard 16/12/15, theme difficulty 1, 4th-easiest band 1, gap 0
+  stretches: 38 words, easy/middle/hard 5/17/16, theme difficulty 3, 4th-easiest band 2, gap -1 -> 37 words, easy/middle/hard 5/17/15, theme difficulty 3, 4th-easiest band 2, gap -1
+  yoga words stays hard-heavy: a niche theme (popularity 4) whose easy words are few.
+Entries left in no theme (kept in the library, not exported) 1: IT band 62747
+Entries deleted 1: cutting 15981
+library changes 24; entries changed 48; status set to rev 45
+Checks: changed kinds: info:clash-large 59 -> 58, info:family-kin 358 -> 354, info:orphan 306 -> 307, info:overlap 4909 -> 4908, info:sense-twin 239 -> 238
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3254 -> 3253; gone fitness_words; new none; theme indexes shift: from index 1234 ("stretches", was "fitness_words")
+Entries 61419 -> 61418; first row whose entry changed: 15316 (superset 15982, was 15981); rows that moved: 46101; added boot camp 68108 (row 61417); removed 15981 (row 15316), IT band 62747 (row 58449)
+root -> alias rows 1: PB 15980
+Links 101225 -> 101192; rows whose link count changed: 34
+Link-index shifts: from row 3553 (endurance 3606) on, link positions move
+Rows whose text changed: cross-body stretch 62744 (was "cross-body"), hip flexor stretch 62746 (was "hip flexor")
+Root links by theme + shown text + row: gone 42, new 9, rating changed 0
+  gone: fitness_words: "muscle" (3244), fitness_words: "stamina" (3605), fitness_words: "endurance" (3606), fitness_words: "flexibility" (3607), fitness_words: "warm-up" (3608), fitness_words: "cool-down" (3609), fitness_words: "rep" (3610), fitness_words: "repetition" (3611), fitness_words: "set" (3612), fitness_words: "personal trainer" (3613), fitness_words: "personal best" (3619), fitness_words: "abs" (3620), fitness_words: "abdominals" (3621), fitness_words: "six-pack" (3622), fitness_words: "core" (3623), fitness_words: "protein shake" (3634), fitness_words: "heart rate" (3637), fitness_words: "BMI" (3638), fitness_words: "VO2 max" (3639), fitness_words: "one-rep max" (3640), fitness_words: "DOMS" (3642), fitness_words: "rest day" (3644), fitness_words: "macros" (3646), fitness_words: "creatine" (3648), fitness_words: "bulking" (3652), fitness_words: "gains" (3654), fitness: "Weight Watchers" (3659), fitness_words: "progressive overload" (3662), fitness_words: "hypertrophy" (3663), workout_types: "boot camp" (4412), workout_types: "basic training" (4413), yoga_words: "Sanskrit" (7559), fitness_words: "PB" (15980), fitness_words: "cutting" (15981), fitness_words: "superset" (15982), fitness_words: "drop set" (15983), fitness_words: "pump" (15984), fitness_words: "dad bod" (15985), fitness_words: "tempo" (15986), fitness_words: "cheat meal" (15987), stretches: "IT band" (62747), exercises: "star" (64806)
+  new: fitness: "muscle" (3244), yoga_poses: "child" (15901), fitness: "superset" (15982), fitness: "drop set" (15983), fitness: "pump" (15984), fitness: "dad bod" (15985), fitness: "tempo" (15986), fitness: "cheat meal" (15987), workout_types: "boot camp" (68108)
+  rating: none
+new issues: none

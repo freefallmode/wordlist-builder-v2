@@ -1,0 +1,64 @@
+Mind and wellbeing (Body & Health): prejudices, a symptom and a joke word out of phobias; massage gun to gym equipment; massage strokes out of massage types; fez, lokum and çay out of Turkish bath; seven spa towns get their diacritics.
+1. phobias
+  out of phobias: xenophobia 16413: a prejudice against people, not a fear (now in no theme: not exported)
+  out of phobias: homophobia 16414: a prejudice against people, not a fear (now in no theme: not exported)
+  out of phobias: photophobia 15047: sensitivity to light, a medical symptom rather than a fear (stays in symptoms)
+  out of phobias: arachibutyrophobia 60846: a joke word (fear of peanut butter sticking to the roof of the mouth) (now in no theme: not exported)
+2. massage types
+  linked: massage gun 16465 in gym_equipment (typicality 4): a recovery device, beside foam roller
+  out of massage_types: massage gun 16465: a device, not a type of massage; moved to gym equipment (stays in gym_equipment)
+  out of massage_types: effleurage 16472: a stroke used within a massage, not a type of massage (now in no theme: not exported)
+  out of massage_types: petrissage 16473: a stroke used within a massage, not a type of massage (now in no theme: not exported)
+  out of massage_types: tapotement 60849: a stroke used within a massage, not a type of massage (now in no theme: not exported)
+3. Turkish bath
+  out of turkish_bath: fez 20638: Turkish, but not part of a bath (stays in ottoman_empire, traditional_clothes, hats, bazaar, words_from_turkish, national_costumes, ottoman_clothing, turkish_souvenirs, moroccan_souvenirs)
+  out of turkish_bath: lokum 26961: Turkish, but not part of a bath (stays in turkish_everyday_words, sweet_treats_of_turkey, turkish_souvenirs, words_from_turkish, turkish_food)
+  out of turkish_bath: çay 26960: Turkish, but not part of a bath (stays in turkish_everyday_words, turkish_breakfast, turkish_food)
+4. European spa towns: diacritics, the plain spelling kept as an alias
+  spelling: Marianske Lazne 16592 -> "Mariánské Lázně"
+  alias: Marianske Lazne 68109, the plain spelling of Mariánské Lázně 16592
+  spelling: Piestany 16605 -> "Piešťany"
+  alias: Piestany 68110, the plain spelling of Piešťany 16605
+  spelling: Heviz 16606 -> "Hévíz"
+  alias: Heviz 68111, the plain spelling of Hévíz 16606
+  spelling: Luhacovice 16615 -> "Luhačovice"
+  alias: Luhacovice 68112, the plain spelling of Luhačovice 16615
+  spelling: Rogaska Slatina 60863 -> "Rogaška Slatina"
+  alias: Rogaska Slatina 68113, the plain spelling of Rogaška Slatina 60863
+  spelling: Sliac 60867 -> "Sliač"
+  alias: Sliac 68114, the plain spelling of Sliač 60867
+  spelling: Contrexeville 16610 -> "Contrexéville"
+  alias: Contrexeville 68115, the plain spelling of Contrexéville 16610
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  phobias: 39 words, easy/middle/hard 2/5/32, theme difficulty 3, 4th-easiest band 3, gap 0 -> 35 words, easy/middle/hard 2/5/28, theme difficulty 3, 4th-easiest band 3, gap 0
+  massage_types: 43 words, easy/middle/hard 8/14/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 39 words, easy/middle/hard 8/14/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  gym_equipment: 34 words, easy/middle/hard 9/14/11, theme difficulty 1, 4th-easiest band 1, gap 0 -> 35 words, easy/middle/hard 9/14/12, theme difficulty 1, 4th-easiest band 1, gap 0
+  turkish_bath: 29 words, easy/middle/hard 5/9/15, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> 26 words, easy/middle/hard 5/9/12, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  european_spa_towns: 40 words, easy/middle/hard 0/6/34, theme difficulty 5, 4th-easiest band 3, gap -2 -> 40 words, easy/middle/hard 0/6/34, theme difficulty 5, 4th-easiest band 3, gap -2
+  phobias and European spa towns stay hard-heavy: most phobia names are technical, and the spa towns are a niche theme (popularity 5).
+Entries left in no theme (kept in the library, not exported) 6: xenophobia 16413, homophobia 16414, arachibutyrophobia 60846, effleurage 16472, petrissage 16473, tapotement 60849
+library changes 26; entries changed 25; status set to rev 18
+Checks: changed kinds: info:orphan 307 -> 313
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): no change; after: contract-dup-root 190, contract-root-region 1788, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3253 -> 3253; gone none; new none; theme indexes shift: none
+Entries 61418 -> 61419; first row whose entry changed: 15719 (aerophobia 16415, was xenophobia 16413); rows that moved: 45693; added Marianske Lazne 68109 (row 61412), Piestany 68110 (row 61413), Heviz 68111 (row 61414), Luhacovice 68112 (row 61415), Rogaska Slatina 68113 (row 61416), Sliac 68114 (row 61417), Contrexeville 68115 (row 61418); removed xenophobia 16413 (row 15719), homophobia 16414 (row 15720), effleurage 16472 (row 15775), petrissage 16473 (row 15776), arachibutyrophobia 60846 (row 56671), tapotement 60849 (row 56674)
+root -> alias rows 0: none
+Links 101192 -> 101182; rows whose link count changed: 4
+Link-index shifts: from row 14509 (dyspnea 15048) on, link positions move
+Rows whose text changed: Mariánské Lázně 16592 (was "Marianske Lazne"), Piešťany 16605 (was "Piestany"), Hévíz 16606 (was "Heviz"), Contrexéville 16610 (was "Contrexeville"), Luhačovice 16615 (was "Luhacovice"), Rogaška Slatina 60863 (was "Rogaska Slatina"), Sliač 60867 (was "Sliac")
+Rows whose familiarity changed: none
+Root links by theme + shown text + row: gone 18, new 8, rating changed 0
+  gone: phobias: "photophobia" (15047), phobias: "xenophobia" (16413), phobias: "homophobia" (16414), massage_types: "massage gun" (16465), massage_types: "effleurage" (16472), massage_types: "petrissage" (16473), european_spa_towns: "Marianske Lazne" (16592), european_spa_towns: "Piestany" (16605), european_spa_towns: "Heviz" (16606), european_spa_towns: "Contrexeville" (16610), european_spa_towns: "Luhacovice" (16615), turkish_bath: "fez" (20638), turkish_bath: "çay" (26960), turkish_bath: "lokum" (26961), phobias: "arachibutyrophobia" (60846), massage_types: "tapotement" (60849), european_spa_towns: "Rogaska Slatina" (60863), european_spa_towns: "Sliac" (60867)
+  new: gym_equipment: "massage gun" (16465), european_spa_towns: "Mariánské Lázně" (16592), european_spa_towns: "Piešťany" (16605), european_spa_towns: "Hévíz" (16606), european_spa_towns: "Contrexéville" (16610), european_spa_towns: "Luhačovice" (16615), european_spa_towns: "Rogaška Slatina" (60863), european_spa_towns: "Sliač" (60867)
+  rating: none
+new issues: none
+
+=== Notice to _WS_ for v427 (send when Simon says) ===
+Library v427 is in the export (data/export/wordlist-game-family.json). It cleans up the mind and wellbeing folder (Body & Health > mind and wellbeing), the last one in Body & Health. No pin until Simon asks.
+- phobias: xenophobia and homophobia (prejudices, not fears) and arachibutyrophobia (a joke word) left and now have no theme; photophobia left too (stays in symptoms).
+- massage types: massage gun moved to gym equipment (typicality 4); effleurage, petrissage and tapotement (strokes, not types) left and now have no theme.
+- Turkish bath: fez, lokum and çay left (they stay in the Turkish themes).
+- European spa towns: seven names now carry their diacritics (Mariánské Lázně, Piešťany, Hévíz, Luhačovice, Rogaška Slatina, Sliač, Contrexéville); each keeps its plain spelling as a new spelling alias (7 new alias rows at the end, 61,412-61,418).
+Export v426 -> v427: themes 3,253 (no change, no theme index shift). Rows 61,418 -> 61,419, shifting from row 15,719 (6 rows gone, 7 alias rows new); links 101,192 -> 101,182, link positions shift from row 14,509 (dyspnea, right after photophobia).
