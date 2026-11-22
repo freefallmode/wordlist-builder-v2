@@ -169,7 +169,7 @@ The game must be able to leave out every word some players have objected to. The
   - `gitch`: kept, unflagged (ordinary slang for underwear).
   - Deleted: `ass` [buttocks], `lap dance`, `twerk`, `gyatt`, `bollocks`, `bugger`, `tosser`, `WTF`, `Brainfuck`, `schmuck`, `putz`, `tuchus`, `fart`.
   - Also deleted: `butt` (body parts) and `spotted dick`.
-- **Built (2026-11-22, code only; the library is unchanged):** the items below except the two batches and the notice. Checks: `offensive-word` and `offensive-theme` (warn), `offensive-unlisted` (info), `contract-offensive-break` (warn, export contract). Counts at v429: 111, 2, 1 and 107.
+- **Built (2026-11-22, code only; the library is unchanged):** the items below except the two batches and the notice. Checks: `offensive-word` and `offensive-theme` (warn), `offensive-unlisted` (info), `contract-offensive-break` (warn, export contract). Counts at v429: 111, 2, 1 and 107. Batch 431 (v431) settled the 15 vulgar entries as decided (plus twerking; butt became bottom [body part], keeping its id): 108, 2, 0 and 106.
 - **To build:**
   - the cleaned list `js/offensive-words.js` (built by `tools/gen/offensive-list-make.mjs`), the matcher `js/offensive.js` and the allow list `js/offensive-allow.js` (entry ids, Simon's approval);
   - the field rename in the code, the export (bit 8), the tests, the generation prompts and GAME-CONTRACT.md, and a notice to the game when Simon says;

@@ -1,0 +1,99 @@
+Offensive words, part 1: the 15 entries flagged vulgar at v429 settled (bitch [female dog] keeps the flag, now offensive; gitch unflagged; ass [buttocks], lap dance, twerk, twerking, gyatt, bollocks, bugger, tosser, schmuck, putz, tuchus, Brainfuck, WTF and fart deleted); butt -> bottom [body part] (same entry), its alias bottom deleted; spotted dick deleted.
+1. bitch [female dog] keeps its flag (now called offensive)
+  bitch 10316: status rev (the vulgar field is now written as offensive)
+2. gitch: ordinary Canadian slang for underwear, not offensive
+  gitch 27542: offensive true -> false: not crude: Canadian slang for underwear (Simon left it to the batch)
+3. Entries whose meaning is crude, vulgar or a slur: out of their themes and groups, then deleted
+  theme body_parts: ass 179 leaves its synonym group
+  theme torso: ass 179 leaves its synonym group
+  out of torso: ass 179: buttocks: a crude word for a body part (buttocks and bottom stay in body parts and torso) (stays in body_parts)
+  out of body_parts: ass 179: buttocks: a crude word for a body part (buttocks and bottom stay in body parts and torso) (now in no theme: not exported)
+  deleted entry: ass 179 [buttocks]: buttocks: a crude word for a body part (buttocks and bottom stay in body parts and torso)
+  out of dance: lap dance 6277: sexual (now in no theme: not exported)
+  deleted entry: lap dance 6277: sexual
+  out of dance: twerk 6279: a sexual dance move (stays in dance_moves)
+  out of dance_moves: twerk 6279: a sexual dance move (now in no theme: not exported)
+  deleted entry: twerk 6279: a sexual dance move (its kin entries lose it)
+  out of street_dance_styles: twerking 11883: the same word as twerk (added by the batch: one word family) (now in no theme: not exported)
+  deleted entry: twerking 11883: the same word as twerk (added by the batch: one word family)
+  out of body_noises: fart 16985: crude (Simon) (stays in things_that_smell_bad)
+  out of things_that_smell_bad: fart 16985: crude (Simon) (now in no theme: not exported)
+  deleted entry: fart 16985: crude (Simon)
+  out of gen_z_slang: gyatt 27256: sexual slang (now in no theme: not exported)
+  deleted entry: gyatt 27256: sexual slang
+  out of british_slang: bollocks 27352: a swear word (stays in words_meaning_nonsense)
+  out of words_meaning_nonsense: bollocks 27352: a swear word (now in no theme: not exported)
+  deleted entry: bollocks 27352: a swear word
+  out of british_slang: bugger 27353: a swear word (now in no theme: not exported)
+  deleted entry: bugger 27353: a swear word
+  out of british_slang: tosser 27354: a vulgar insult (now in no theme: not exported)
+  deleted entry: tosser 27354: a vulgar insult (its kin entries lose it)
+  out of words_from_yiddish: schmuck 29407: Yiddish for penis, a vulgar insult (now in no theme: not exported)
+  deleted entry: schmuck 29407: Yiddish for penis, a vulgar insult
+  out of words_from_yiddish: putz 29408: Yiddish for penis, a vulgar insult (now in no theme: not exported)
+  deleted entry: putz 29408: Yiddish for penis, a vulgar insult
+  out of words_from_yiddish: tuchus 29414: Yiddish for backside, crude (now in no theme: not exported)
+  deleted entry: tuchus 29414: Yiddish for backside, crude
+  out of programming_languages: Brainfuck 42288: the name is a swear word (now in no theme: not exported)
+  deleted entry: Brainfuck 42288: the name is a swear word
+  out of internet_words: WTF 42437: stands for a swear phrase (now in no theme: not exported)
+  deleted entry: WTF 42437: stands for a swear phrase
+  out of british_food: spotted dick 53304: the name invites the crude reading (Simon) (stays in puddings, sweet_treats)
+  out of puddings: spotted dick 53304: the name invites the crude reading (Simon) (stays in sweet_treats)
+  out of sweet_treats: spotted dick 53304: the name invites the crude reading (Simon) (now in no theme: not exported)
+  deleted entry: spotted dick 53304: the name invites the crude reading (Simon)
+4. butt (Simon: out) -> bottom [body part]: the entry keeps its id, links and group places; its alias bottom 66208 is deleted
+  deleted entry: bottom 66208 [body part] (regional alias of butt): its root takes its text
+  text: butt 178 -> "bottom": butt is offensive (Simon: out); bottom is the everyday word for the same body part, said in the UK and the US
+  bottom 178: gloss "" -> "body part": Bottom [weaver] shares the text
+  bottom 178: region ["US"] -> []: said in the UK and the US
+  bottom 178: shown "bottom" in hidden_names dropped (now its own text)
+  bottom 178 in: torso 3, body_parts 2, hidden_names 4
+Difficulty spread and gap (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  body_parts: 78 words, easy/middle/hard 33/16/29, theme difficulty 1, 4th-easiest band 1, gap 0 -> 78 words, easy/middle/hard 33/16/29, theme difficulty 1, 4th-easiest band 1, gap 0
+  torso: 39 words, easy/middle/hard 11/16/12, theme difficulty 1, 4th-easiest band 1, gap 0 -> 39 words, easy/middle/hard 11/16/12, theme difficulty 1, 4th-easiest band 1, gap 0
+  hidden_names: 52 words, easy/middle/hard 7/6/39, theme difficulty 4.5, 4th-easiest band 1, gap -3.5 -> 52 words, easy/middle/hard 7/6/39, theme difficulty 4.5, 4th-easiest band 1, gap -3.5
+  female_animals: 30 words, easy/middle/hard 5/8/17, theme difficulty 3, 4th-easiest band 2, gap -1 -> 30 words, easy/middle/hard 5/8/17, theme difficulty 3, 4th-easiest band 2, gap -1
+  dance: 70 words, easy/middle/hard 25/23/22, theme difficulty 1, 4th-easiest band 1, gap 0 -> 70 words, easy/middle/hard 25/23/22, theme difficulty 1, 4th-easiest band 1, gap 0
+  dance_moves: 37 words, easy/middle/hard 10/18/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 37 words, easy/middle/hard 10/18/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  street_dance_styles: 32 words, easy/middle/hard 2/7/23, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 31 words, easy/middle/hard 2/6/23, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  body_noises: 37 words, easy/middle/hard 11/9/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 37 words, easy/middle/hard 11/9/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_smell_bad: 40 words, easy/middle/hard 17/12/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 40 words, easy/middle/hard 17/12/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  gen_z_slang: 48 words, easy/middle/hard 11/20/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 48 words, easy/middle/hard 11/20/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  british_slang: 59 words, easy/middle/hard 12/26/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 59 words, easy/middle/hard 12/26/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  words_meaning_nonsense: 47 words, easy/middle/hard 6/17/24, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 47 words, easy/middle/hard 6/17/24, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  canadian_slang: 41 words, easy/middle/hard 2/5/34, theme difficulty 3, 4th-easiest band 3, gap 0 -> 42 words, easy/middle/hard 2/5/35, theme difficulty 3, 4th-easiest band 3, gap 0
+  words_from_yiddish: 33 words, easy/middle/hard 2/15/16, theme difficulty 3, 4th-easiest band 3, gap 0 -> 33 words, easy/middle/hard 2/15/16, theme difficulty 3, 4th-easiest band 3, gap 0
+  programming_languages: 58 words, easy/middle/hard 5/15/38, theme difficulty 2, 4th-easiest band 2, gap 0 -> 58 words, easy/middle/hard 5/15/38, theme difficulty 2, 4th-easiest band 2, gap 0
+  internet_words: 86 words, easy/middle/hard 31/36/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> 86 words, easy/middle/hard 31/36/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  british_food: 56 words, easy/middle/hard 7/16/33, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 55 words, easy/middle/hard 7/15/33, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  puddings: 40 words, easy/middle/hard 6/10/24, theme difficulty 3, 4th-easiest band 2, gap -1 -> 39 words, easy/middle/hard 6/9/24, theme difficulty 3, 4th-easiest band 2, gap -1
+  sweet_treats: 15 words, easy/middle/hard 1/5/9, theme difficulty 3, 4th-easiest band 3, gap 0 -> 14 words, easy/middle/hard 1/4/9, theme difficulty 3, 4th-easiest band 3, gap 0
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries deleted 16: ass 179, lap dance 6277, twerk 6279, twerking 11883, fart 16985, gyatt 27256, bollocks 27352, bugger 27353, tosser 27354, schmuck 29407, putz 29408, tuchus 29414, Brainfuck 42288, WTF 42437, spotted dick 53304, bottom 66208
+library changes 45; entries changed 3; status set to rev 2
+Checks: changed kinds: info:offensive-unlisted 1 -> 0, info:rating-vs-zipf 1682 -> 1681, warn:offensive-word 110 -> 108
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, offensive-theme 2, offensive-word 108, rating-vs-zipf 162, spelling-fam 5, theme-name 3
+Export contract (family export, zipf): contract-offensive-break 107 -> 106, contract-root-region 1788 -> 1787; after: contract-dup-root 190, contract-offensive-break 106, contract-root-region 1787, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Themes 3245 -> 3245; gone none; new none; theme indexes shift: none
+Entries 61422 -> 61420; first row whose entry changed: 11511 (mirror 11884, was 11883); rows that moved: 26334; added gitch 27542 (row 25946); removed 11883 (row 11511), 53304 (row 49521), 66208 (row 59530)
+root -> alias rows 0: none
+Links 100961 -> 100958; rows whose link count changed: 0
+Link-index shifts: from row 11511 (mirror 11884) on, link positions move
+Rows whose text changed: bottom 178 (was "butt")
+Theme rows whose fields changed (parent compared by id): puddings (index 67 -> 67: counts [2,4,10,10,14] -> [2,4,9,10,14]); british_food (index 133 -> 133: counts [1,6,16,17,16] -> [1,6,15,17,16]); sweet_treats (index 134 -> 134: counts [0,1,5,5,4] -> [0,1,4,5,4]); body_parts (index 1137 -> 1137: counts [19,14,17,12,17] -> [19,14,16,12,17]); torso (index 1143 -> 1143: counts [6,5,16,11,2] -> [6,5,16,10,2]); body_noises (index 1280 -> 1280: counts [7,5,10,12,5] -> [6,5,10,12,5]); dance (index 2069 -> 2069: counts [8,17,25,18,8] -> [8,17,25,16,8]); dance_moves (index 2083 -> 2083: counts [1,9,18,7,3] -> [1,9,18,6,3]); street_dance_styles (index 2084 -> 2084: counts [1,1,8,10,13] -> [1,1,7,10,13]); programming_languages (index 2576 -> 2576: counts [3,2,15,21,18] -> [3,2,15,20,18]); internet_words (index 2584 -> 2584: counts [8,24,37,11,8] -> [8,24,36,11,8]); gen_z_slang (index 2749 -> 2749: counts [0,11,20,13,5] -> [0,11,20,12,5]); british_slang (index 2751 -> 2751: counts [0,12,28,21,1] -> [0,12,26,20,1]); words_meaning_nonsense (index 2763 -> 2763: counts [1,5,18,18,6] -> [1,5,17,18,6]); words_from_yiddish (index 2975 -> 2975: counts [1,1,17,15,2] -> [1,1,15,14,2]); things_that_smell_bad (index 3159 -> 3159: counts [7,11,12,6,5] -> [7,10,12,6,5])
+Root links by theme + shown text + row: gone 6, new 3, rating changed 0
+  gone: torso: "butt" (178), body_parts: "butt" (178), street_dance_styles: "twerking" (11883), british_food: "spotted dick" (53304), puddings: "spotted dick" (53304), sweet_treats: "spotted dick" (53304)
+  new: torso: "bottom" (178), body_parts: "bottom" (178), canadian_slang: "gitch" (27542)
+  rating: none
+new issues: none
+
+=== Notice to _WS_ for v431 (send when Simon says) ===
+Library v431 is in the export (data/export/wordlist-game-family.json). It starts the offensive-word rule (Simon, 2026-11-22; DESIGN-entries.md 3.8). No pin until Simon asks.
+- Export format, from library v429 code (no format version change): entry flag bit 8 is now named "offensive" (it was "vulgar"; same bit, same meaning for the game: drop the entry and its aliases). The export's entryBits map names it offensive. Themes have a new flag bit 256 "offensive"; the family export never contains such themes, so nothing to read yet.
+- The family export leaves out offensive words and themes, as it left out vulgar ones. The offensive flag is broader than vulgar was: it will mark every word some players object to (swear words, slurs, sexual and body words, mild insults, occult words, and the harmless meaning of a word whose rude meaning comes to mind first, such as ass [donkey]). Later batches set it; those words then leave the family export.
+- This batch: deleted ass [buttocks] 179, lap dance 6277, twerk 6279, twerking 11883, fart 16985, gyatt 27256, bollocks 27352, bugger 27353, tosser 27354, schmuck 29407, putz 29408, tuchus 29414, Brainfuck 42288, WTF 42437, spotted dick 53304. Only twerking and spotted dick were in the family export before (the others were vulgar).
+- butt 178 is now "bottom" [body part] (same id and row; links in body parts, torso and hidden names, rated as before); its alias row bottom 66208 is deleted.
+- gitch 27542 is no longer flagged and joins the export (Canadian slang).
+Export v430 -> v431: themes 3,125 (no change); rows 61,422 -> 61,420 (gitch new at row 25,946; twerking, spotted dick and the bottom alias gone), shifting from row 11,511; links 100,961 -> 100,958.
