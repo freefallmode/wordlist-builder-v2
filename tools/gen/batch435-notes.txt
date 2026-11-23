@@ -1,0 +1,75 @@
+Checks in the Animals group (items on its themes or on entries linked to them), v433 -> this draft:
+  warnings long, theme-name, clash-big, maybe-duplicate, theme-gap: 0 in the group (the baseline items are elsewhere); 0 after.
+  contract-dup-root 14 -> 9: 5 fixed (crest [helmet emblem] 2527 typed common clears crest 8364 and 9604; the stubs luna, moray and boto are gone).
+    The 9 left are by design: a common animal word after a same-text name row (jaguar/Jaguar, ram/RAM, medusa/Medusa, hydra/Hydra, earth/Earth,
+    kindle/Kindle, bobcat/Bobcat, labour/Labour, homer/Homer). Both rows are right; only the export's row order or the contract's lookup could
+    change it. Proposal: accept them in the baseline note ("two senses, the name first by id"), or have the contract prefer the common row.
+  contract-root-region 57 -> 42: 13 real ones fixed (including possum and woodchuck, merged on Simon's word) (skeeter, moggy, maybug, bonxie, bin chicken, shippon become synonym aliases with their
+    region; mollusc becomes mollusk with a UK spelling alias; dapple grey and harlequin ladybird become US roots with UK aliases; katydid loses the US tag on the US root);
+    2 left the group with their link (lumber [US timber] 24038: real, the US root of a lumber/timber pair, for the group of its timber themes;
+    frogspawn: by design). Of the 42 left, stoat (kept apart from ermine, Simon) and
+    about 41 are by design: a local animal or local term with no same-sense word in the other dialect (plaice, tench, rudd, bream, gudgeon,
+    barbel, walleye, crappie, barramundi, galah, corella, goanna, bobtail [lizard], weka, tuatara, pipi, brushtail possum, Scottish wildcat,
+    tigrina, slow worm, natterjack, crested newt, money spider, jackdaw, dunnock, yellowhammer, shag, cockchafer, blackfly, yellowjacket,
+    springbok, skewbald, twitcher, RSPB, walkies, mosey, and six UK chicken and sheep breeds). LIBRARY-RULES 4 keeps such a word a root with
+    its region ("the game raises its band"), while the contract says the game never reads root regions. Proposal: accept the by-design
+    roots in the baseline note as "regional words with no equivalent", and ask the game session whether it should read root regions
+    (then the contract kind could skip a root with no regional alias).
+  contract-type-common: 0 in the group (the crest fix lowers the count by 1 elsewhere).
+  info: sense-twin 17 -> 4, sense-link 7 -> 3, theme-twin 4 -> 0, alias-fullname 4 -> 3, orphan (animal words) 4 -> 36 (the 7 fictional
+    animals and the real category words kept, below), clash-large 6 -> 6, family-kin 28 -> 28, same-display 1 -> 1.
+
+Cross-group moves (for the tree batch at the end of step 3; not in this batch):
+  - seaweeds (Animals > sea life > seaweeds, 36 words): algae and sea plants, not animals -> Nature & Earth (plants).
+  - prehistoric periods with its child geological epochs (Animals > prehistoric life): geological time and Stone Age periods, not
+    creatures -> Nature & Earth (geology) or History & Myth (the Stone Age half).
+  - animal experts (zoologist, vet, beekeeper ...): could join the jobs themes in People & Society; it reads fine where it is.
+  - Links for other groups: Bambi, Kaa, Toto, Hedwig (kids' book characters, Arts), Lassie, Pumbaa (film characters), Norwegian blue
+    (comedy): fictional animals now in no theme. nymph [myth] 6922 and egg [food from hens] 518 still carry life cycle words (Science):
+    the insect senses (nymph 10146, egg 68128) fit there. cardinal [bird] in red things (sense-link) is for that group.
+
+For Simon:
+  1. Four themes go: new world songbirds merges into American songbirds (the same US/CA topic); bird-only parts (all 10 words in bird body
+     parts and animal body parts), arthropod parts (7 of 8 in insect body parts) and cold-blooded animals (all 10 in reptiles and
+     amphibians, filed under insect eaters) are deleted as twins. Theme indexes shift from 290 to the end. Alternative for cold-blooded
+     animals: keep it under animal traits and add fish and insects (it would need about 10 new links).
+  2. Holstein: v376 kept holstein [cattle] 9339 lowercase beside Holstein [cow] 9863 because capitalising would duplicate it; this batch
+     merges them (one breed, capital, gloss cattle). Not a reversal, but it changes v376's outcome.
+  3-5. Decided by Simon ("Take all", in this batch): the six Galápagos entries take the diacritic with plain spelling aliases (rule 8);
+     possum 1047 becomes a US synonym alias of opossum and woodchuck a US/CA synonym alias of groundhog (words from Native American languages
+     shows "woodchuck"); bullsnake becomes a spelling alias of bull snake; budgerigar a synonym alias of budgie; stoat and ermine stay apart,
+     and royal things now links ermine [fur] instead of ermine [animal].
+  6. Category words that left their only theme are kept as orphans (marsupial, arachnid, echinoderm, pinniped, livestock, corvid, ratite,
+     equid, wader, constrictor, raptor, bird of prey, toy dog, venomous snake, megafauna, sighthound ...; reviewer: LIBRARY-RULES 2 deletes
+     only stubs). Only stubs and descriptions made for one theme are deleted (31).
+  7. Offensive flags (Simon): jackass [black-footed] is a synonym alias of African penguin and keeps its flag; shag [bird] and shag [haircut]
+     are flagged offensive (snigger test). "shag" is not in js/offensive-words.js (offensive-unlisted info 92 -> 94): add it with Simon's OK.
+  8. Dinosaur case (Simon: a separate batch later) is mixed: Stegosaurus, Velociraptor, Brachiosaurus ... capital (proper), triceratops, apatosaurus, oviraptor, baryonyx and
+     most pterosaurs and sea reptiles lowercase (common). M-W prints the animals lowercase (stegosaurus, tyrannosaurus). About 150 entries:
+     a case pass of its own, not in this batch.
+  9. Short dog-breed names kept as they are (Bedlington, Kerry blue, Lakeland, Patterdale, Cesky, Sealyham, Bernese, Jack Russell): people
+     use them alone. Pharaoh [dog] and Ibizan read oddly without "hound": full terms with a show?
+ 10. Entries of other groups touched to finish a sense fix: man-of-war 1317 keeps only the warship themes (gloss warship); lumber [move
+     heavily] takes ways of walking too; lumber 24038 becomes a noun; crest 2527 typed common; pink things now links pink river dolphin
+     (shown "river dolphin"); Ice Age 1613 loses tm (no film theme holds it).
+ 11. Kept on your earlier decisions: horse coat colors (chestnut, bay, dun, pinto, champagne) stay separate from the plain colors; flank and
+     breast stay split (2026-11-23).
+ 12. Not done in this batch (it would pass a clean point): a full ratings pass (pop/ident and typicality consistency across the 230 themes),
+     spread tuning of the themes with few easy words (antelopes 2/3/30, salamanders and newts 2/1/45, flying reptiles 1/4/35, sea reptiles),
+     and family-kin pairs (spurs [horse tack] / spur [bird], heeler / heel could be kin).
+
+Left as is (flagged by a check, correct):
+  - sense-twin pinto [horse] / [horse color], chestnut [horse color] / [horse leg], flank [body part] / [animal part]: Simon, 2026-11-23.
+  - sense-twin and sense-link trunk [elephant] in animal body parts: the right sense (trunk [body] is the torso).
+  - sense-link boom [bittern] in animal sounds: the bittern's booming call is the right sense.
+  - contract-dup-root (9) and contract-root-region (about 42): by design, above.
+  - clash-large (6): crown, down, paw, kneading, snapper, wing families, all within 12.
+  - family-kin (28): other words or senses that share letters (theater flies, birdie, Spurs, trunks [swimming], sett / setter ...).
+  - alias-fullname: dinosaur bones, tree frogs and Darwin's finches are plural forms of their roots.
+  - same-display fish / fish in things with tails: not an Animals theme.
+  - orphans horse race, lone wolf, wolf pack, duck breast: no theme in this group fits (racing, people, food).
+  - Topic themes kept broad: horses (gallop, jockey, saddle beside the animals), deer (stag, doe, fawn), dog breeds (terrier, spaniel).
+  - Theme names: American serpents (snake would leak into rat snake, king snake), deadly Aussie animals, birds awake after dark.
+
+Baselines this batch would lower (tools/checks-baseline.json, at apply time): contract-dup-root 185 -> 177, contract-root-region 1781 -> 1768,
+contract-type-common 42 -> 41. No warning kind changes.

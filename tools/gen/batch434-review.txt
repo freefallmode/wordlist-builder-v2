@@ -1,0 +1,552 @@
+Library batch v434: tidy-up step 3, Food & Drink (TIDY-UP.md). The group: 239 themes with words before (and 5 folders), 236 after; every one read against the checklist.
+library changes 279; entries changed 267; status set to rev 191; new entries 34: brown bread 68128, apple juice 68129, orange juice 68130, cranberry juice 68131, grapefruit juice 68132, pineapple juice 68133, carrot juice 68134, cherry juice 68135, lime juice 68136, mango juice 68137, pomegranate juice 68138, prune juice 68139, tomato juice 68140, celery juice 68141, guava juice 68142, passion fruit juice 68143, watermelon juice 68144, tomato soup 68145, lentil soup 68146, potato soup 68147, pumpkin soup 68148, split pea soup 68149, wonton soup 68150, sunflower oil 68151, peanut oil 68152, avocado oil 68153, corn oil 68154, walnut oil 68155, red wine vinegar 68156, safflower oil 68157, nettle tea 68158, rosehip tea 68159, fennel tea 68160, shoofly pie 68161
+Entries deleted 31: apple 63456, pecan 63459, pumpkin 63460, sweet potato 63462, chess 65019, stargazy 62883, fish 65148, Scotch 65150, cottage 64999, cream 65000, blue 63423, American 63422, Swiss 17956, barbecue 65074, hot 65076, fish 65075, oyster 65090, chocolate 65163, soda 64823, Benedict 62545, scrambled 63445, deviled 63441, fried 63443, dan dan 62890, navel 50241, gyro 53385, kombucha squash 17521, green 64789, cruciferous 17609, rocket 17608, bleu 53112
+Left in no theme by this batch (real words, kept): extra virgin 18900
+
+Changes by theme (spreads before and after: usable words, easy/middle/hard bands, theme difficulty, 4th-easiest band):
+citrus fruits [citrus_fruits]
+  spread before: 31 words, easy/middle/hard 10/4/17, difficulty 1.5, 4th-easiest band 1
+  spread after:  30 words, easy/middle/hard 9/4/17, difficulty 1.5, 4th-easiest band 1
+  navel 50241 [orange] into navel orange 17161; deleted: a stub of navel orange, both in citrus fruits in one group
+berries [berries]
+  spread before: 37 words, easy/middle/hard 5/10/22, difficulty 1.5, 4th-easiest band 1
+  spread after:  37 words, easy/middle/hard 5/10/22, difficulty 1.5, 4th-easiest band 1
+  goji 28140 into goji berry 15570; links move: berries:3 shown "goji", dried_fruits:4; goji becomes its synonym alias (familiarity 2): one berry
+melons [melons]
+  spread before: 31 words, easy/middle/hard 3/1/27, difficulty 1.5, 4th-easiest band 3
+  spread after:  28 words, easy/middle/hard 3/2/23, difficulty 1.5, 4th-easiest band 3
+  out: karela 39175: a bitter gourd, not a melon (reviewer) (stays in bitter_foods)
+  karela 39175 into bitter melon 15586; links move: bitter_foods:4 nameOkIn; karela becomes its regional alias (familiarity 5): one vegetable: karela is its Hindi name (reviewer)
+  out: wax gourd 62527: a gourd, not a melon (reviewer) (now in no theme)
+  out: chilacayote 17264: a gourd, not a melon (reviewer) (now in no theme)
+  text: musk 63278 [sweet-scented] -> "muskmelon" (gloss dropped), shown "musk": the melon; the stub had no full term (reviewer)
+edible seeds [edible_seeds]
+  spread before: 36 words, easy/middle/hard 4/12/20, difficulty 3, 4th-easiest band 2
+  spread after:  36 words, easy/middle/hard 4/12/20, difficulty 3, 4th-easiest band 2
+  linked: coriander seed 17393 (typicality 3, shown "coriander"): the seed is coriander seed (spices); cilantro is the leaf
+  out: cilantro 754: coriander seed 17393 takes the link (stays in herbs_spices_and_sauces, herbs, words_from_spanish, spice_trade, foods_and_flavors)
+vegetables [vegetables]
+  spread before: 56 words, easy/middle/hard 22/15/19, difficulty 1, 4th-easiest band 1
+  spread after:  55 words, easy/middle/hard 22/14/19, difficulty 1, 4th-easiest band 1
+  out: green 64789 [scallion]: a stub; scallion is there (now in no theme)
+leafy greens [leafy_greens]
+  spread before: 41 words, easy/middle/hard 6/12/23, difficulty 1.5, 4th-easiest band 2
+  spread after:  41 words, easy/middle/hard 6/11/24, difficulty 1.5, 4th-easiest band 2
+  collards 62531 into collard greens 17457; links move: leafy_greens:3 shown "collards", green_vegetables:4 shown "collards"; collards becomes its synonym alias (familiarity 3): one vegetable
+squashes [squashes]
+  spread before: 39 words, easy/middle/hard 3/5/31, difficulty 3, 4th-easiest band 3
+  spread after:  40 words, easy/middle/hard 3/5/32, difficulty 3, 4th-easiest band 3
+  out: kombucha squash 17521: a mistaken name of kabocha (there), which shows "kombucha", a drink (now in no theme)
+  linked: wax gourd 62527 (typicality 5): a gourd of the squash family (bottle gourd is there)
+  linked: chilacayote 17264 (typicality 5): a gourd of the squash family (bottle gourd is there)
+beans and pulses [beans_and_pulses]
+  spread before: 36 words, easy/middle/hard 9/10/17, difficulty 1.5, 4th-easiest band 2
+  spread after:  36 words, easy/middle/hard 9/10/17, difficulty 1.5, 4th-easiest band 2
+    alias fava beans 67295 of fava 17558: nameOkIn beans_and_pulses ("bean" of the theme name is part of the alias)
+    alias broad beans 67296 of fava 17558: nameOkIn beans_and_pulses ("bean" of the theme name is part of the alias)
+cabbage family [cabbage_family]
+  spread before: 39 words, easy/middle/hard 7/9/23, difficulty 3, 4th-easiest band 1
+  spread after:  37 words, easy/middle/hard 7/9/21, difficulty 3, 4th-easiest band 1
+  out: rocket 17608 [salad]: a second root of arugula (rocket is its UK alias; arugula is there) (now in no theme)
+  out: cruciferous 17609: an adjective, not a vegetable (now in no theme)
+Andean crops [andean_crops]
+  spread before: 36 words, easy/middle/hard 2/3/31, difficulty 5, 4th-easiest band 3
+  spread after:  32 words, easy/middle/hard 2/2/28, difficulty 5, 4th-easiest band 3
+  out: guinea pig 1446: an animal, not a crop (stays in domestic_animals, rodents, pets, south_american_animals, things_that_squeak, small_pets, andean_animals, four_legged_animals)
+  out: cavy 1447: an animal, not a crop (stays in domestic_animals, pets, small_pets, south_american_animals, andean_animals, rodents, things_that_squeak)
+  out: tuber 17667: a plant part, not a crop (stays in plant_parts, plant_biology, starts_with_public_transport)
+  out: chicha 17668: a maize drink (in South American drinks), not a crop (stays in south_american_drinks)
+cuts of meat [cuts_of_meat]
+  spread before: 47 words, easy/middle/hard 6/20/21, difficulty 1.5, 4th-easiest band 2
+  spread after:  48 words, easy/middle/hard 8/19/21, difficulty 1.5, 4th-easiest band 2
+  text: Lamb Chop 50042 -> "lamb chop": the meat cut is a common noun; the capital, the US tag and tm belonged to the puppet Lamb Chop
+  lamb chop 50042: region ["US"] -> []: a cut of meat known everywhere (the US tag was the puppet's)
+  lamb chop 50042: tm true -> false: not a trademark (the puppet's flag)
+  lamb chop 50042: fam 3 -> 2: nearly every adult knows a lamb chop (3 was the puppet's rating; reviewer)
+  linked: chicken breast 17718 (typicality 2): in no theme (v433 left it for this pass): the commonest cut of chicken
+poultry [poultry]
+  spread before: 29 words, easy/middle/hard 7/5/17, difficulty 1.5, 4th-easiest band 1
+  spread after:  28 words, easy/middle/hard 7/5/16, difficulty 1.5, 4th-easiest band 1
+  out: wishbone 8406 [bird]: a bone of a bird, not poultry (stays in bird_body_parts, superstitions, thanksgiving, inner_organs_and_bones)
+game meats [game_meats]
+  spread before: 44 words, easy/middle/hard 8/14/22, difficulty 3.5, 4th-easiest band 2
+  spread after:  43 words, easy/middle/hard 7/14/22, difficulty 3.5, 4th-easiest band 2
+  out: bunny 1444: a pet word for a rabbit (rabbit is there) (stays in rabbits_and_hares, hopping_animals, baby_animals, dress_up_costumes, baby_talk, soft_things, small_pets, domestic_animals, pets, burrowing_animals, garden_pests, easter, mid_autumn_festival, things_that_bounce, fluffy_things)
+barbecue foods [barbecue_foods]
+  spread before: 43 words, easy/middle/hard 14/14/15, difficulty 1, 4th-easiest band 1
+  spread after:  43 words, easy/middle/hard 14/14/15, difficulty 1, 4th-easiest band 1
+  chicken thighs 17881 into chicken thigh 17719; links move: barbecue_foods:3; chicken thighs becomes its form alias (familiarity 2): one food: the singular is the root and the plural its form, as with other foods (reviewer); barbecue foods keeps showing the plural through use
+  chicken thigh 17719: barbecue foods shows the form chicken thighs 17881 (use)
+dairy [dairy_and_eggs]
+  spread before: 33 words, easy/middle/hard 8/12/13, difficulty 1, 4th-easiest band 1
+  spread after:  30 words, easy/middle/hard 8/10/12, difficulty 1, 4th-easiest band 1
+  out: omelet 532: an egg dish (in egg dishes), not dairy (stays in egg_dishes, breakfast_foods, ways_to_cook_eggs)
+  out: margarine 525: a vegetable-oil spread (in spreads), not dairy (stays in spreads, things_that_melt, on_toast)
+  out: custard powder 549: a starch powder, not dairy (now in no theme)
+cheeses [cheeses]
+  spread before: 61 words, easy/middle/hard 11/18/32, difficulty 1.5, 4th-easiest band 1
+  spread after:  61 words, easy/middle/hard 11/18/32, difficulty 1.5, 4th-easiest band 1
+  cottage 64999 [curd type] into cottage cheese 529; links move: cheeses:3 shown "cottage", soft_cheeses:2 shown "cottage"; deleted: a stub made for this theme (3.6: the full term shown short)
+  cream 65000 [soft spread] into cream cheese 530; links move: cheeses:3 shown "cream", soft_cheeses:2 shown "cream"; deleted: a stub made for this theme (3.6: the full term shown short)
+    kin of blue 63423 moves to blue cheese 17929: blues 10767, bluing 23907
+  blue 63423 [veined type] into blue cheese 17929; links move: cheeses:1 shown "blue"; deleted: a stub made for this theme (3.6: the full term shown short)
+  American 63422 [processed slice] into American cheese 17942; links move: cheeses:2 shown "American"; deleted: a stub made for this theme (3.6: the full term shown short)
+  Swiss 17956 [cheese] into Swiss cheese 17920; links move: cheeses:2 shown "Swiss", hard_cheeses:1 shown "Swiss"; deleted: a stub made for this theme (3.6: the full term shown short)
+blue cheeses [blue_cheeses]
+  spread before: 20 words, easy/middle/hard 1/4/15, difficulty 2, 4th-easiest band 3
+  spread after:  19 words, easy/middle/hard 1/3/15, difficulty 2, 4th-easiest band 3
+  out: bleu 53112 [cheese]: French for blue, not a cheese (now in no theme)
+  group removed: bleu d'auvergne 53099 = bleu de gex 53108 = bleu de bresse 53111: bleu d'Auvergne, bleu de Gex and bleu de Bresse are three cheeses, not one answer
+cheese dishes [cheese_dishes]
+  spread before: 27 words, easy/middle/hard 7/7/13, difficulty 1.5, 4th-easiest band 2
+  spread after:  27 words, easy/middle/hard 7/7/13, difficulty 1.5, 4th-easiest band 2
+    alias macaroni cheese 816 of mac and cheese 815: nameOkIn cheese_dishes ("cheese" of the theme name is part of the alias)
+  mac 63448 [baked pasta] into mac and cheese 815; links move: cheese_dishes:1 nameOkIn; mac becomes its abbreviation alias (familiarity 2): the same dish (cheese dishes takes mac and cheese, like grilled cheese and cheese fries); mac is the short name, typed phrase (contract-type-common): now a common abbreviation
+  mac and cheese 815: type "phrase" -> "common": a dish name, not an idiom (reviewer)
+breads [breads]
+  spread before: 34 words, easy/middle/hard 8/9/17, difficulty 1.5, 4th-easiest band 2
+  spread after:  34 words, easy/middle/hard 9/8/17, difficulty 1.5, 4th-easiest band 2
+  linked: brown bread 68128 (typicality 1, shown "brown"): the bread sense
+  out: brown bread 18059 [rhyming slang for dead]: brown bread 68128 [bread] takes the link (stays in cockney_rhyming_slang)
+pies and tarts [pies_and_tarts]
+  spread before: 36 words, easy/middle/hard 8/9/19, difficulty 1.5, 4th-easiest band 2
+  spread after:  36 words, easy/middle/hard 9/8/19, difficulty 1.5, 4th-easiest band 2
+  linked: key lime pie 18174 (typicality 2, shown "key lime"): the pie, not the fruit
+  out: key lime 17163: key lime pie 18174 takes the link (stays in citrus_fruits, sour_foods, lime_varieties, key_blank)
+  linked: shoofly pie 68161 (typicality 5, shown "shoofly"): the pie, shown short
+  out: shoofly 62882: shoofly pie 68161 takes the link (stays in blank_fly)
+    kin of apple 63456 moves to apple pie 18168: apple 87
+  apple 63456 [dessert] into apple pie 18168; links move: pies_and_tarts:1 shown "apple"; deleted: a stub made for this theme (3.6: the full term shown short)
+  pecan 63459 [dessert] into pecan pie 18171; links move: pies_and_tarts:2 shown "pecan"; deleted: a stub made for this theme (3.6: the full term shown short)
+    kin of pumpkin 63460 moves to pumpkin pie 18170: pumpkin 403
+  pumpkin 63460 [dessert] into pumpkin pie 18170; links move: pies_and_tarts:1 shown "pumpkin"; deleted: a stub made for this theme (3.6: the full term shown short)
+  sweet potato 63462 [dessert] into sweet potato pie 18187; links move: pies_and_tarts:3 shown "sweet potato"; deleted: a stub made for this theme (3.6: the full term shown short)
+  chess 65019 [Southern custard] into chess pie 18184; links move: pies_and_tarts:5 shown "chess"; deleted: a stub made for this theme (3.6: the full term shown short)
+    kin of stargazy 62883 moves to stargazy pie 17863: stargazing 5891, stargaze 66651, stargazer 66657
+  stargazy 62883 into stargazy pie 17863; links move: pies_and_tarts:5 shown "stargazy", savory_pies:5 shown "stargazy"; deleted: a stub made for this theme (3.6: the full term shown short)
+baking ingredients [baking_ingredients]
+  spread before: 27 words, easy/middle/hard 10/6/11, difficulty 1.5, 4th-easiest band 1
+  spread after:  28 words, easy/middle/hard 10/6/12, difficulty 1.5, 4th-easiest band 1
+  linked: custard powder 549 (typicality 4): a baking powder for custard (it was only in dairy)
+ice cream flavors [ice_cream_flavors]
+  spread before: 42 words, easy/middle/hard 10/13/19, difficulty 1, 4th-easiest band 1
+  spread after:  42 words, easy/middle/hard 9/14/19, difficulty 1, 4th-easiest band 1
+  linked: pistachio 20206 (typicality 2): the flavor, not the nut (sense-link, sense-twin; ice cream parlor links the flavor)
+  out: pistachio 17353 [nut]: pistachio 20206 [flavor] takes the link (stays in nuts, foods_with_shells, words_from_italian, words_from_persian, shades_of_green, pastel_colors, colors_named_after_foods, green_things, things_with_shells, italian_food_words, bazaar)
+candy [candy]
+  spread before: 46 words, easy/middle/hard 14/15/17, difficulty 1, 4th-easiest band 1
+  spread after:  46 words, easy/middle/hard 14/15/17, difficulty 1, 4th-easiest band 1
+  bubblegum 18288 [candy] into bubble gum 39076; links move: ice_cream_flavors:3, candy:1; bubblegum becomes its spelling alias (familiarity 1): one candy, both in pink things; M-W writes bubble gum
+dessert toppings [toppings]
+  spread before: 44 words, easy/middle/hard 10/19/15, difficulty 2.5, 4th-easiest band 2
+  spread after:  44 words, easy/middle/hard 10/19/15, difficulty 2.5, 4th-easiest band 2
+  brandy butter 18455 into hard sauce 59497; better typicality kept: toppings 5 -> 4; brandy butter becomes its regional alias (familiarity 4): one topping: brandy butter is the UK name of hard sauce (reviewer; v413 skipped them only because brandy butter was adult)
+jam flavors [jam_flavours]
+  spread before: 10 words, easy/middle/hard 7/3/0, difficulty 1, 4th-easiest band 1
+  spread after:  9 words, easy/middle/hard 6/3/0, difficulty 1, 4th-easiest band 1
+  out: marmalade 18828: a preserve, not a flavor (it is in spreads and pickles and preserves) (stays in spreads, pickles_and_preserves, on_toast)
+  theme jam_flavours: name "jam flavours" -> "jam flavors": US spelling (LIBRARY-RULES 6, Names); the id stays
+noodles [noodles]
+  spread before: 42 words, easy/middle/hard 7/11/24, difficulty 1.5, 4th-easiest band 2
+  spread after:  41 words, easy/middle/hard 7/11/23, difficulty 1.5, 4th-easiest band 2
+  bean thread 18562 into bean threads 63505; bean thread becomes its form alias (familiarity 4): one noodle, both in noodles in one group
+noodle dishes [noodle_dishes]
+  spread before: 40 words, easy/middle/hard 5/6/29, difficulty 3, 4th-easiest band 2
+  spread after:  40 words, easy/middle/hard 5/6/29, difficulty 3, 4th-easiest band 2
+  dan dan 62890 into dan dan noodles 18548; links move: noodle_dishes:3 shown "dan dan"; deleted: a stub made for this theme (3.6: the full term shown short)
+  mie goreng 53187 into mee goreng 18555; links move: noodle_dishes:4, spicy_dishes_of_asia:4; mie goreng becomes its spelling alias (familiarity 4): one dish (Malay and Indonesian spellings)
+dumplings [dumplings]
+  spread before: 43 words, easy/middle/hard 4/8/31, difficulty 2, 4th-easiest band 2
+  spread after:  41 words, easy/middle/hard 4/7/30, difficulty 2, 4th-easiest band 2
+  out: dim sum 839: a meal of small dishes, not a dumpling (reviewer) (stays in dishes, asian_food, words_from_chinese, chinese_food, asian_dishes)
+  siu mai 18648 into shumai 18664; links move: chinese_food:3, yum_cha_dishes:3; siu mai becomes its spelling alias (familiarity 4): one dish, two spellings (reviewer); shumai is the M-W headword
+herbs, spices and sauces [herbs_spices_and_sauces]
+  spread before: 77 words, easy/middle/hard 28/20/29, difficulty 1, 4th-easiest band 1
+  spread after:  77 words, easy/middle/hard 28/20/29, difficulty 1, 4th-easiest band 1
+    alias bbq sauce 17890 of barbecue sauce 729: nameOkIn herbs_spices_and_sauces ("sauce" of the theme name is part of the alias)
+sauces and condiments [sauces_and_condiments]
+  spread before: 40 words, easy/middle/hard 12/14/14, difficulty 1, 4th-easiest band 1
+  spread after:  40 words, easy/middle/hard 12/14/14, difficulty 1, 4th-easiest band 1
+    kin of barbecue 65074 moves to barbecue sauce 729: barbecue 19767
+  barbecue 65074 [smoky glaze] into barbecue sauce 729; links move: sauces_and_condiments:1 shown "barbecue"; deleted: a stub made for this theme (3.6: the full term shown short)
+  hot 65076 [chili-based] into hot sauce 728; links move: sauces_and_condiments:1 shown "hot"; deleted: a stub made for this theme (3.6: the full term shown short)
+    alias bbq sauce 17890 of barbecue sauce 729: nameOkIn sauces_and_condiments ("sauce" of the theme name is part of the alias)
+Asian sauces [asian_sauces]
+  spread before: 28 words, easy/middle/hard 2/7/19, difficulty 3, 4th-easiest band 3
+  spread after:  28 words, easy/middle/hard 2/7/19, difficulty 3, 4th-easiest band 3
+    kin of fish 65075 is not moved: fish sauce is not of the family of fishing, fisher, fishy (moving it would join a clash group of 13, clash-big)
+  fish 65075 [fermented seasoning] into fish sauce 768; links move: asian_sauces:2 shown "fish"; deleted: a stub made for this theme (3.6: the full term shown short)
+  oyster 65090 [savory Chinese] into oyster sauce 18793; links move: asian_sauces:2 shown "oyster"; deleted: a stub made for this theme (3.6: the full term shown short)
+salad dressings [salad_dressings]
+  spread before: 34 words, easy/middle/hard 7/12/15, difficulty 1.5, 4th-easiest band 2
+  spread after:  33 words, easy/middle/hard 7/12/14, difficulty 1.5, 4th-easiest band 2
+  out: Vidalia onion 17566: the onion, not a dressing (stays in onion_family, onion_varieties)
+oils and vinegars [oils_and_vinegars]
+  spread before: 44 words, easy/middle/hard 12/14/18, difficulty 2.5, 4th-easiest band 2
+  spread after:  32 words, easy/middle/hard 11/10/11, difficulty 2.5, 4th-easiest band 2
+  linked: sunflower oil 68151 (typicality 1, shown "sunflower"): the full term, shown short
+  out: sunflower 1696: sunflower oil 68151 takes the link (stays in flowers, garden_flowers, bouquet_flowers, edible_flowers, prairie, national_flowers, shades_of_yellow, colors_named_after_flowers, tall_things, yellow_things, yellow_flowers, heartland_plants, sun_blank, signs_of_summer)
+  linked: peanut oil 68152 (typicality 2, shown "peanut"): the full term, shown short
+  out: peanut 17350 [legume nut]: peanut oil 68152 takes the link (stays in nuts, andean_crops, foods_with_shells, things_with_shells, allergies, snacks, hiking_snacks)
+  linked: avocado oil 68153 (typicality 3, shown "avocado"): the full term, shown short
+  out: avocado 111: avocado oil 68153 takes the link (stays in fruits, superfoods, burger_toppings, foods_you_peel, words_from_spanish, words_from_nahuatl, shades_of_green, colors_named_after_foods, green_things, creamy_foods, foods_and_flavors, fruit_shades, on_toast)
+  linked: corn oil 68154 (typicality 3, shown "corn"): the full term, shown short
+    group: corn oil 68154 takes the place of corn 406
+  out: corn 406 [vegetable]: corn oil 68154 takes the link (stays in vegetables, pasta_rice_and_grains, grains, pizza_toppings, canned_foods, frozen_foods, yellow_things)
+  linked: walnut oil 68155 (typicality 3, shown "walnut"): the full term, shown short
+  out: walnut 30307 [nut]: walnut oil 68155 takes the link (stays in foraging_finds, nuts, foods_with_shells, brown_things, things_with_shells, superfoods)
+  linked: red wine vinegar 68156 (typicality 2, shown "red wine"): the full term, shown short
+  out: red wine 19645: red wine vinegar 68156 takes the link (stays in red_things, wines, shades_of_red)
+  linked: safflower oil 68157 (typicality 4, shown "safflower"): the full term, shown short
+  out: safflower 30470: safflower oil 68157 takes the link (stays in edible_flowers)
+  text: malt 62962 -> "malt vinegar" (familiarity 3 -> 2), shown "malt": a stub made for this theme; the member is the vinegar
+    kin malt 62962 <-> maltings 57721 removed: the vinegar is not of the family of maltings
+  text: grapeseed 62961 -> "grapeseed oil" (familiarity 3 -> 3), shown "grapeseed": a stub made for this theme; the member is the oil
+  text: rice bran 62963 -> "rice bran oil" (familiarity 4 -> 4), shown "rice bran": a stub made for this theme; the member is the oil
+  out: sesame seed 17383: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in tiny_things, allergies, burger_toppings)
+  out: maize 408: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in andean_crops, grains, aztecs_and_maya, words_from_native_american_languages, shades_of_yellow, vegetables, pasta_rice_and_grains, pizza_toppings, canned_foods, frozen_foods, yellow_things)
+  out: soybean 17531: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in beans_and_pulses)
+  out: flaxseed 16742: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in superfoods, edible_seeds)
+  out: hazelnut 17354 [nut]: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in nuts, foods_with_shells, foraging_finds, brown_things, things_with_shells, starts_with_a_weather_word, signs_of_autumn)
+  out: hemp 30677 [plant]: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in fiber_plants, natural_materials, edible_seeds)
+  out: mustard 720: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in herbs_spices_and_sauces, sauces_and_condiments, burger_toppings, in_the_fridge, shades_of_yellow, colors_named_after_foods, spicy_foods, pungent_foods, yellow_things)
+  out: pepitas 62530: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in edible_seeds, foods_with_shells)
+  out: perilla 17486: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in leafy_greens, herbs)
+  out: pumpkin seed 17385: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in foods_with_shells)
+  out: canola 40099: a plant, seed or condiment, not an oil or vinegar (the oil is there where it is a common one: sesame oil, linseed oil, canola oil) (stays in yellow_flowers, yellow_things)
+  out: extra virgin 18900: a grade of olive oil beside olive oil (a word and a more specific form of it, LIBRARY-RULES 5 Overlap) (now in no theme)
+soups [soups]
+  spread before: 41 words, easy/middle/hard 11/14/16, difficulty 1, 4th-easiest band 1
+  spread after:  41 words, easy/middle/hard 11/14/16, difficulty 1, 4th-easiest band 1
+  linked: tomato soup 68145 (typicality 1, shown "tomato"): the soup, shown short
+  out: tomato 110 [fruit]: tomato soup 68145 takes the link (stays in fruits, vegetables, andean_crops, pizza_toppings, burger_toppings, foods_you_peel, hidden_names, words_from_spanish, words_from_nahuatl, shades_of_red, colors_named_after_foods, red_things, foods_and_flavors, vegetables_that_are_really_fruits, fruit_shades, sandwich_fillings, salad_ingredients, things_you_throw, on_toast, red_fruits, canned_foods, in_the_fridge)
+  linked: lentil soup 68146 (typicality 1, shown "lentil"): the soup, shown short
+  out: lentil 17527: lentil soup 68146 takes the link (stays in beans_and_pulses, superfoods, in_the_pantry, canned_foods)
+  linked: potato soup 68147 (typicality 3, shown "potato"): the soup, shown short
+  out: potato 392 [vegetable]: potato soup 68147 takes the link (stays in vegetables, root_vegetables, andean_crops, foods_you_peel, words_from_spanish, brown_things, things_with_eyes, south_american_food, foods_and_flavors)
+  linked: pumpkin soup 68148 (typicality 3, shown "pumpkin"): the soup, shown short
+  out: pumpkin 403 [vegetable]: pumpkin soup 68148 takes the link (stays in vegetables, squashes, andean_crops, halloween, shades_of_orange, colors_named_after_foods, orange_things, vegetables_that_are_really_fruits, signs_of_autumn)
+  linked: split pea soup 68149 (typicality 2, shown "split pea"): the soup, shown short
+  out: split pea 17545: split pea soup 68149 takes the link (stays in beans_and_pulses)
+  linked: wonton soup 68150 (typicality 3, shown "wonton"): the soup, shown short
+  out: wonton 18643: wonton soup 68150 takes the link (stays in dumplings, stuffed_foods, words_from_chinese, chinese_food, yum_cha_dishes)
+  typicality: lentil soup 68146 1 -> 2 (reviewer)
+stews [stews]
+  spread before: 42 words, easy/middle/hard 9/12/21, difficulty 2.5, 4th-easiest band 2
+  spread after:  41 words, easy/middle/hard 9/11/21, difficulty 2.5, 4th-easiest band 2
+  out: oxtail 496: the cut of meat (in meat and seafood), not a stew (stays in meat_and_seafood, cuts_of_meat, butcher_shop, meat_from_mammals)
+salads [salads]
+  spread before: 40 words, easy/middle/hard 12/15/13, difficulty 2.5, 4th-easiest band 1
+  spread after:  40 words, easy/middle/hard 12/15/13, difficulty 2.5, 4th-easiest band 1
+  Waldorf 38130: type "place" -> "proper": the salad named after the hotel: proper, not a place
+sandwiches [sandwiches]
+  spread before: 42 words, easy/middle/hard 9/16/17, difficulty 1.5, 4th-easiest band 2
+  spread after:  42 words, easy/middle/hard 9/16/17, difficulty 1.5, 4th-easiest band 2
+  egg sandwich 19011: a form alias of egg 518 becomes its own root (alias-fullname: a longer name, not a form)
+  linked: egg sandwich 19011 (typicality 3, shown "egg"): the sandwich, shown "egg"
+  out: egg 518 [food from hens]: egg sandwich 19011 takes the link (stays in insect_life_cycle, pizza_toppings, foods_with_shells, smooth_things, white_things, things_with_shells, life_cycle_words, butterfly_life_stages, oval_things, allergies, dragons, eggs, sandwich_fillings, on_toast)
+  group removed: finger sandwich 19026 = fish finger sandwich 19042: a finger sandwich (a small tea sandwich) is not a fish finger sandwich
+chip flavors [chip_flavors]
+  spread before: 39 words, easy/middle/hard 12/12/15, difficulty 1.5, 4th-easiest band 2
+  spread after:  38 words, easy/middle/hard 12/11/15, difficulty 1.5, 4th-easiest band 2
+  out: chicken 152 [bird]: the bird; the flavor is roast chicken (there, in one group) (stays in farm_animals, meat_and_seafood, birds, domestic_animals, poultry, pizza_toppings, sandwich_fillings, things_with_wings, egg_laying_animals)
+street food [street_food]
+  spread before: 48 words, easy/middle/hard 10/20/18, difficulty 1.5, 4th-easiest band 1
+  spread after:  48 words, easy/middle/hard 10/20/18, difficulty 1.5, 4th-easiest band 1
+    kin of fries 59629 moves to French fries 19050: fry 919, fry 10136
+  fries 59629 into French fries 19050; links move: street_food:3; fries becomes its synonym alias (familiarity 1): one food; fries is the everyday short name
+savory pies [savory_pies]
+  spread before: 35 words, easy/middle/hard 7/6/22, difficulty 4, 4th-easiest band 2
+  spread after:  35 words, easy/middle/hard 7/6/22, difficulty 3, 4th-easiest band 2
+  linked: meat pie 19172 (typicality 1, shown "meat"): the pie, not meat itself
+  out: meat 16670: meat pie 19172 takes the link (stays in food_groups, homophones, anagrams_of_each_other)
+  linked: pork pie 19177 (typicality 2, shown "pork"): the pie, not pork itself
+  out: pork 460: pork pie 19177 takes the link (stays in meat_and_seafood, words_from_french, meat_from_mammals, food_and_dining_words)
+    kin of fish 65148 is not moved: fish pie is not of the family of fishing, fisher, fishy (moving it would join a clash group of 13, clash-big)
+  fish 65148 [creamy seafood] into fish pie 17841; links move: savory_pies:3 shown "fish"; deleted: a stub made for this theme (3.6: the full term shown short)
+  Scotch 65150 [mutton hand] into Scotch pie 19193; links move: savory_pies:4 shown "Scotch"; deleted: a stub made for this theme (3.6: the full term shown short)
+  theme savory_pies: pop 5 -> 3: shepherd's pie, pot pie, quiche, pasties: an ordinary theme, not niche (theme difficulty 4 -> 3)
+burger toppings [burger_toppings]
+  spread before: 45 words, easy/middle/hard 16/12/17, difficulty 1.5, 4th-easiest band 1
+  spread after:  44 words, easy/middle/hard 16/11/17, difficulty 1.5, 4th-easiest band 1
+  bbq sauce 17890 into barbecue sauce 729; links move: barbecue_foods:2 nameOkIn; better typicality kept: burger_toppings 3 -> 2; bbq sauce becomes its abbreviation alias (familiarity 1): one sauce, two roots in burger toppings (both linked)
+salad ingredients [salad_ingredients]
+  spread before: 11 words, easy/middle/hard 9/2/0, difficulty 1, 4th-easiest band 1
+  spread after:  12 words, easy/middle/hard 9/3/0, difficulty 1, 4th-easiest band 1
+  linked: bell pepper 409 (typicality 2): a salad takes the vegetable, not the ground spice
+  out: pepper 722 [spice]: bell pepper 409 takes the link (stays in spice_trade, herbs_spices_and_sauces, spices, spicy_foods)
+  linked: bacon bits 17808 (typicality 3): in no theme (v433 left it for this pass): a salad topping
+Italian food [italian_food]
+  spread before: 51 words, easy/middle/hard 9/16/26, difficulty 1.5, 4th-easiest band 2
+  spread after:  51 words, easy/middle/hard 9/16/26, difficulty 1.5, 4th-easiest band 2
+  theme pasta_meals "pasta meals" merges into italian_food "Italian food": 13 words, 13 already there, 0 move: all 13 words are in Italian food; a muddle of pasta shapes and sauces beside pasta shapes and pasta dishes
+  deleted theme: pasta_meals "pasta meals"
+kebab types [kebab_types]
+  spread before: 33 words, easy/middle/hard 0/8/25, difficulty 4, 4th-easiest band 3
+  spread after:  33 words, easy/middle/hard 0/8/25, difficulty 4, 4th-easiest band 3
+    kin of gyro 53385 moves to gyro 19019: gyro 19019
+  gyro 53385 [kebab] into gyro 19019; links move: kebab_types:3; deleted: one dish (the clash group of kebab had 14 words, clash-big)
+Asian food [asian_food]
+  spread before: 52 words, easy/middle/hard 14/24/14, difficulty 1.5, 4th-easiest band 1
+  spread after:  53 words, easy/middle/hard 14/25/14, difficulty 1.5, 4th-easiest band 1
+  theme asian_dishes "Asian dishes" merges into asian_food "Asian food": 15 words, 14 already there, 1 move: a twin (14 of its 15 words are in Asian food; theme-twin)
+  linked: stir-fry 822 (typicality 3): from Asian dishes, at the same typicality
+  deleted theme: asian_dishes "Asian dishes"
+Chinese food [chinese_food]
+  spread before: 51 words, easy/middle/hard 8/19/24, difficulty 1.5, 4th-easiest band 2
+  spread after:  50 words, easy/middle/hard 8/19/23, difficulty 1.5, 4th-easiest band 2
+  text: general tso's chicken 53524 -> "General Tso's chicken", type proper: named after General Tso (LIBRARY-RULES 5: a phrase with a proper word keeps the capital; M-W capitalises it)
+  General Tso chicken 20272 into General Tso's chicken 53524; links move: foods_named_after_people:3; General Tso chicken becomes its spelling alias (familiarity 3): one dish
+  out: Lion's Head 37529: the Cape Town mountain (a place), not the Chinese meatball dish (stays in african_landmarks)
+Oceanian food [oceanian_food]
+  spread before: 43 words, easy/middle/hard 6/8/29, difficulty 4.5, 4th-easiest band 2
+  spread after:  43 words, easy/middle/hard 6/8/29, difficulty 4.5, 4th-easiest band 2
+  linked: damper 48557 (typicality 3): the bush bread (Australian food links it), not the damper of a piano
+  out: damper 10732 [instrument]: damper 48557 [bread] takes the link (stays in instrument_parts, piano_parts)
+South American food [south_american_food]
+  spread before: 44 words, easy/middle/hard 4/10/30, difficulty 3, 4th-easiest band 2
+  spread after:  44 words, easy/middle/hard 4/11/29, difficulty 3, 4th-easiest band 2
+  out: java 961 [coffee]: US slang for coffee, not South American food (coffee is there) (stays in ice_cream_flavors, cafe, drinks, hot_drinks, shades_of_brown, colors_named_after_foods, bitter_foods, things_that_smell_good, candle_scents, hot_things, black_things, brown_things, courses_of_a_meal, campfire_foods, dark_foods_and_drinks, drink_shades, smells_from_the_kitchen, nicknames_for_drinks)
+hot drinks [hot_drinks]
+  spread before: 52 words, easy/middle/hard 24/10/18, difficulty 1, 4th-easiest band 1
+  spread after:  52 words, easy/middle/hard 24/10/18, difficulty 1, 4th-easiest band 1
+    kin of chocolate 65163 moves to hot chocolate 227: chocolatier 18409, chocolates 25162
+  chocolate 65163 [cocoa-based] into hot chocolate 227; links move: hot_drinks:1 shown "chocolate"; deleted: a stub made for this theme (3.6: the full term shown short)
+teas [teas]
+  spread before: 41 words, easy/middle/hard 15/16/10, difficulty 2.5, 4th-easiest band 1
+  spread after:  40 words, easy/middle/hard 15/14/11, difficulty 2.5, 4th-easiest band 1
+  linked: nettle tea 68158 (typicality 3, shown "nettle"): the tea, shown short
+    group: nettle tea 68158 takes the place of nettle 1778
+  out: nettle 1778: nettle tea 68158 takes the link (stays in plants, foraging_finds, weeds, prickly_things, things_that_sting, plants_with_spines, leaves_and_shoots)
+  out: stinging nettle 1779: the plant; nettle tea is the member (stays in foraging_finds, plants, weeds, prickly_things, things_that_sting, hiking_dangers)
+  linked: rosehip tea 68159 (typicality 3, shown "rosehip"): the tea, shown short
+  out: rosehip 30306: rosehip tea 68159 takes the link (stays in foraging_finds, hedgerow_fruits, red_fruits, signs_of_autumn)
+  linked: fennel tea 68160 (typicality 3, shown "fennel"): the tea, shown short
+  out: fennel 432: fennel tea 68160 takes the link (stays in vegetables, green_vegetables)
+coffee words [coffee_words]
+  spread before: 44 words, easy/middle/hard 11/7/26, difficulty 2, 4th-easiest band 2
+  spread after:  44 words, easy/middle/hard 11/7/26, difficulty 2, 4th-easiest band 2
+  bean 28259: gloss "legume" -> "coffee": its one theme is coffee words: the coffee bean, not a legume
+juices [juices]
+  spread before: 31 words, easy/middle/hard 6/9/16, difficulty 1.5, 4th-easiest band 2
+  spread after:  28 words, easy/middle/hard 6/9/13, difficulty 1.5, 4th-easiest band 2
+  linked: apple juice 68129 (typicality 1, shown "apple"): the juice, shown short
+  out: apple 87 [fruit]: apple juice 68129 takes the link (stays in fruits, lunchbox, foods_you_peel, things_that_fall_from_trees, things_that_float, red_things, crunchy_foods, in_a_school_bag, red_fruits, in_the_fridge, signs_of_autumn, hiking_snacks)
+  linked: orange juice 68130 (typicality 1, shown "orange"): the juice, shown short
+  out: orange 76 [fruit]: orange juice 68130 takes the link (stays in citrus_fruits, fruits, foods_you_peel, words_from_arabic, words_from_persian, orange_things)
+  linked: cranberry juice 68131 (typicality 2, shown "cranberry"): the juice, shown short
+  out: cranberry 354 [red berry]: cranberry juice 68131 takes the link (stays in fruits, berries, shades_of_red, colors_named_after_foods, sour_foods, candle_scents, red_things, fruit_shades, blank_berry, red_fruits)
+  linked: grapefruit juice 68132 (typicality 2, shown "grapefruit"): the juice, shown short
+  out: grapefruit 77 [citrus fruit]: grapefruit juice 68132 takes the link (stays in citrus_fruits, fruits, foods_you_peel, sour_foods, bitter_foods, pink_things, soda_flavors, yellow_fruits)
+  linked: pineapple juice 68133 (typicality 2, shown "pineapple"): the juice, shown short
+  out: pineapple 96: pineapple juice 68133 takes the link (stays in fruits, tropical_fruits, pizza_toppings, burger_toppings, foods_you_peel, canned_foods, hidden_fruits, hidden_trees, prickly_things, yellow_things, things_with_eyes, pacific_islands_food, soda_flavors, yellow_fruits)
+  linked: carrot juice 68134 (typicality 3, shown "carrot"): the juice, shown short
+  out: carrot 391 [vegetable]: carrot juice 68134 takes the link (stays in vegetables, root_vegetables, foods_you_peel, hidden_vehicles, shades_of_orange, colors_named_after_foods, orange_things, crunchy_foods, salad_ingredients, pet_snacks_and_feed, in_the_fridge)
+  linked: cherry juice 68135 (typicality 3, shown "cherry"): the juice, shown short
+  out: cherry 92 [fruit]: cherry juice 68135 takes the link (stays in fruits, stone_fruits, shades_of_red, colors_named_after_foods, red_things, soda_flavors, fruit_shades, jam_flavours, red_fruits)
+  linked: lime juice 68136 (typicality 3, shown "lime"): the juice, shown short
+  out: lime 75 [fruit]: lime juice 68136 takes the link (stays in citrus_fruits, fruits, foods_you_peel, sour_foods, green_things, soda_flavors)
+  linked: mango juice 68137 (typicality 3, shown "mango"): the juice, shown short
+  out: mango 95 [tropical fruit]: mango juice 68137 takes the link (stays in fruits, tropical_fruits, stone_fruits, foods_you_peel, shades_of_orange, colors_named_after_foods, orange_things, soda_flavors, ice_cream_flavors, fruit_shades, starts_with_a_family_member, starts_with_ma, yellow_fruits)
+  linked: pomegranate juice 68138 (typicality 3, shown "pomegranate"): the juice, shown short
+  out: pomegranate 100: pomegranate juice 68138 takes the link (stays in fruits, middle_eastern_remedies, superfoods, foods_you_peel, red_things, soda_flavors, symbols_of_the_greek_gods, plants_of_the_middle_east, colors_named_after_foods, fruit_shades, red_fruits)
+  linked: prune juice 68139 (typicality 3, shown "prune"): the juice, shown short
+  out: prune 17215 [dried plum]: prune juice 68139 takes the link (stays in stone_fruits, dried_fruits)
+  linked: tomato juice 68140 (typicality 3, shown "tomato"): the juice, shown short
+  out: tomato 110 [fruit]: tomato juice 68140 takes the link (stays in fruits, vegetables, andean_crops, pizza_toppings, burger_toppings, foods_you_peel, hidden_names, words_from_spanish, words_from_nahuatl, shades_of_red, colors_named_after_foods, red_things, soups, foods_and_flavors, vegetables_that_are_really_fruits, fruit_shades, sandwich_fillings, salad_ingredients, things_you_throw, on_toast, red_fruits, canned_foods, in_the_fridge)
+  linked: celery juice 68141 (typicality 4, shown "celery"): the juice, shown short
+  out: celery 401: celery juice 68141 takes the link (stays in vegetables, green_things, crunchy_foods, salad_ingredients, green_vegetables)
+  linked: guava juice 68142 (typicality 4, shown "guava"): the juice, shown short
+  out: guava 104: guava juice 68142 takes the link (stays in fruits, tropical_fruits, words_from_south_american_languages)
+  linked: passion fruit juice 68143 (typicality 4, shown "passion fruit"): the juice, shown short
+  out: passion fruit 107: passion fruit juice 68143 takes the link (stays in fruits, tropical_fruits, foods_you_peel, purple_things, soda_flavors)
+  linked: watermelon juice 68144 (typicality 4, shown "watermelon"): the juice, shown short
+  out: watermelon 97: watermelon juice 68144 takes the link (stays in fruits, melons, picnic_basket, shades_of_pink, pink_things, soda_flavors, oval_things, water_blank, red_fruits)
+  out: açaí 53687: the fruit, not a juice people order (typicality 5; no juice entry is worth adding) (stays in brazilian_food, superfoods, words_from_south_american_languages, purple_things)
+  out: lychee 103: the fruit, not a juice people order (typicality 5; no juice entry is worth adding) (stays in fruits, tropical_fruits, stone_fruits, asian_fruits, foods_you_peel, words_from_chinese, soda_flavors, red_fruits)
+  out: noni 15640: the fruit, not a juice people order (typicality 5; no juice entry is worth adding) (stays in oceanian_remedies, superfoods, tropical_fruits)
+winemaking [winemaking_terms]
+  spread before: 15 words, easy/middle/hard 1/2/12, difficulty 4, 4th-easiest band 4
+  spread after:  15 words, easy/middle/hard 1/2/12, difficulty 4, 4th-easiest band 4
+  theme winemaking_terms: name "winemaking terms" -> "winemaking": its words are the making of wine (steps and materials), a sub-topic of wine world, not talk about it (xwords-twin; LIBRARY-RULES 6)
+cooking methods [cooking_methods]
+  spread before: 35 words, easy/middle/hard 12/12/11, difficulty 1, 4th-easiest band 1
+  spread after:  36 words, easy/middle/hard 12/12/12, difficulty 1, 4th-easiest band 1
+  linked: steam 929 (typicality 2): the cooking method, not water vapor (sense-link)
+  out: steam 16570 [vapor]: steam 929 [cooking] takes the link (stays in turkish_bath, hot_things, states_of_matter)
+  linked: pot roast 19780 (typicality 4): in no theme (v433 left it for this pass): to cook meat slowly in a covered pot (the dish is pot roast [dish])
+ways to cut food [ways_to_cut_food]
+  spread before: 33 words, easy/middle/hard 10/6/17, difficulty 1.5, 4th-easiest band 2
+  spread after:  33 words, easy/middle/hard 10/6/17, difficulty 1.5, 4th-easiest band 2
+  linked: dice 44583 (typicality 1): to cut into cubes, not the gaming cubes (cooking links dice [chop])
+  out: dice 927 [game]: dice 44583 [chop] takes the link (stays in games_of_chance, medieval_pastimes, things_that_roll, things_with_faces, things_that_come_in_pairs, casino_games, casino_words, games_with_things_you_throw)
+  dice 927: pos "verb" -> "noun": the cubes (reviewer)
+ways to preserve food [ways_to_preserve_food]
+  spread before: 27 words, easy/middle/hard 6/9/12, difficulty 2.5, 4th-easiest band 2
+  spread after:  26 words, easy/middle/hard 6/9/11, difficulty 2.5, 4th-easiest band 2
+  out: kipper 19904 [fish]: the smoked fish, not a way to preserve (stays in fish_to_eat, small_oily_fish, breakfast_foods, pungent_foods, salty_foods, cured_fish, british_morning_foods)
+in the pantry [in_the_pantry]
+  spread before: 45 words, easy/middle/hard 20/14/11, difficulty 1, 4th-easiest band 1
+  spread after:  45 words, easy/middle/hard 19/15/11, difficulty 1, 4th-easiest band 1
+  soda 64823 [leavener] into baking soda 585; deleted: a stub of baking soda, both in the pantry in one group
+  linked: onion powder 17584 (typicality 3): in no theme (v433 left it for this pass): a pantry seasoning
+foods on a stick [foods_on_a_stick]
+  spread before: 30 words, easy/middle/hard 10/5/15, difficulty 3, 4th-easiest band 1
+  spread after:  30 words, easy/middle/hard 10/5/15, difficulty 3, 4th-easiest band 1
+  group: shashlik 20252, brochette 20253 leave kebab 813 = shish kebab 17876 = shashlik 20252 = brochette 20253: shashlik and brochette are other dishes, not another name for a kebab (the group joined them into the kebab clash group of 14, clash-big)
+green vegetables [green_vegetables]
+  spread before: 25 words, easy/middle/hard 11/11/3, difficulty 1.5, 4th-easiest band 1
+  spread after:  25 words, easy/middle/hard 11/11/3, difficulty 1.5, 4th-easiest band 1
+    alias broad beans 67296 (regional) moves to fava 17558
+  fava beans 67295 into fava 17558; links move: green_vegetables:3; fava beans becomes its synonym alias (familiarity 3): one bean (fava [bean] in beans and pulses)
+egg dishes [egg_dishes]
+  spread before: 31 words, easy/middle/hard 7/8/16, difficulty 1.5, 4th-easiest band 1
+  spread after:  32 words, easy/middle/hard 9/7/16, difficulty 1.5, 4th-easiest band 1
+  Benedict 62545 [brunch] into eggs Benedict 17985; links move: egg_dishes:2 shown "Benedict"; deleted: a stub made for this theme (3.6: the full term shown short)
+    kin of scrambled 63445 moves to scrambled eggs 17981: scrambling 5653, scramble 19772, scramble 34613, scramble 43068, scrambler 47947, scramble 48649
+  scrambled 63445 into scrambled eggs 17981; links move: egg_dishes:1 shown "scrambled", ways_to_cook_eggs:1 shown "scrambled"; deleted: a stub made for this theme (3.6: the full term shown short)
+  devilled 66182: spelling -> synonym (UK kept): it moves to deviled eggs, which has its UK spelling devilled eggs already (one UK display alias per dialect)
+    alias devilled 66182 (synonym) moves to deviled eggs 17986
+    kin of deviled 63441 moves to deviled eggs 17986: devil 4296
+    alias devilled eggs 17987 of deviled eggs 17986: nameOkIn egg_dishes ("egg" of the theme name is part of the alias)
+  deviled 63441 into deviled eggs 17986; links move: egg_dishes:3 shown "deviled", ways_to_cook_eggs:3 shown "deviled"; deleted: a stub made for this theme (3.6: the full term shown short) (reviewer)
+    kin of fried 63443 moves to fried egg 17982: fry 919, fry 10136
+  fried 63443 into fried egg 17982; links move: ways_to_cook_eggs:1 shown "fried"; deleted: a stub made for this theme (3.6: the full term shown short); egg dishes has fried egg already
+  theme ways_to_cook_eggs "ways to cook eggs" merges into egg_dishes "egg dishes": 10 words, 9 already there, 1 move: a twin (8 of its 10 words are in egg dishes; theme-twin)
+  linked: hard-boiled egg 16759 (typicality 2, shown "hard-boiled"): from ways to cook eggs, at the same typicality
+  typicality: coddled egg 64702 5 -> 4: its typicality in ways to cook eggs, the better of the two
+  deleted theme: ways_to_cook_eggs "ways to cook eggs"
+ways_to_cook_eggs [ways_to_cook_eggs]
+    alias devilled eggs 17987 of deviled eggs 17986: nameOkIn ways_to_cook_eggs ("egg" of the theme name is part of the alias)
+Entries (no one theme)
+  new entry: brown bread 68128 [bread] noun, common, familiarity 2: the bread; the old entry is the cockney rhyming slang for dead
+  new entry: apple juice 68129 noun, common, familiarity 1: the juice (juices linked the apple itself)
+  new entry: orange juice 68130 noun, common, familiarity 1: the juice (juices linked the orange itself)
+  new entry: cranberry juice 68131 noun, common, familiarity 2: the juice (juices linked the cranberry itself)
+  new entry: grapefruit juice 68132 noun, common, familiarity 2: the juice (juices linked the grapefruit itself)
+  new entry: pineapple juice 68133 noun, common, familiarity 1: the juice (juices linked the pineapple itself)
+  new entry: carrot juice 68134 noun, common, familiarity 2: the juice (juices linked the carrot itself)
+  new entry: cherry juice 68135 noun, common, familiarity 3: the juice (juices linked the cherry itself)
+  new entry: lime juice 68136 noun, common, familiarity 2: the juice (juices linked the lime itself)
+  new entry: mango juice 68137 noun, common, familiarity 2: the juice (juices linked the mango itself)
+  new entry: pomegranate juice 68138 noun, common, familiarity 2: the juice (juices linked the pomegranate itself)
+  new entry: prune juice 68139 noun, common, familiarity 2: the juice (juices linked the prune itself)
+  new entry: tomato juice 68140 noun, common, familiarity 2: the juice (juices linked the tomato itself)
+  new entry: celery juice 68141 noun, common, familiarity 3: the juice (juices linked the celery itself)
+  new entry: guava juice 68142 noun, common, familiarity 3: the juice (juices linked the guava itself)
+  new entry: passion fruit juice 68143 noun, common, familiarity 3: the juice (juices linked the passion fruit itself)
+  new entry: watermelon juice 68144 noun, common, familiarity 3: the juice (juices linked the watermelon itself)
+  new entry: tomato soup 68145 noun, common, familiarity 1: the soup (soups linked the tomato itself)
+  new entry: lentil soup 68146 noun, common, familiarity 2: the soup (soups linked the lentil itself)
+  new entry: potato soup 68147 noun, common, familiarity 2: the soup (soups linked the potato itself)
+  new entry: pumpkin soup 68148 noun, common, familiarity 2: the soup (soups linked the pumpkin itself)
+  new entry: split pea soup 68149 noun, common, familiarity 2: the soup (soups linked the split pea itself)
+  new entry: wonton soup 68150 noun, common, familiarity 3: the soup (soups linked the wonton itself)
+  new entry: sunflower oil 68151 noun, common, familiarity 1: the oil (oils and vinegars linked the sunflower itself)
+  new entry: peanut oil 68152 noun, common, familiarity 2: the oil (oils and vinegars linked the peanut itself)
+  new entry: avocado oil 68153 noun, common, familiarity 2: the oil (oils and vinegars linked the avocado itself)
+  new entry: corn oil 68154 noun, common, familiarity 2: the oil (oils and vinegars linked the corn itself)
+  new entry: walnut oil 68155 noun, common, familiarity 3: the oil (oils and vinegars linked the walnut itself)
+  new entry: red wine vinegar 68156 noun, common, familiarity 2: the vinegar (oils and vinegars linked the red wine itself)
+  new entry: safflower oil 68157 noun, common, familiarity 4: the oil (oils and vinegars linked the safflower itself)
+  new entry: nettle tea 68158 noun, common, familiarity 3: the tea (teas linked the plant)
+  new entry: rosehip tea 68159 noun, common, familiarity 3: the tea (teas linked the plant)
+  new entry: fennel tea 68160 noun, common, familiarity 4: the tea (teas linked the plant)
+  new entry: shoofly pie 68161 noun, common, familiarity 4: the Pennsylvania Dutch molasses pie (pies and tarts linked shoofly of ___fly)
+  deleted entry: kombucha squash 17521: a mistaken name of kabocha, in no other theme
+  deleted entry: green 64789 [scallion]: a stub of scallion made for vegetables
+  deleted entry: cruciferous 17609: an adjective, in no other theme
+  deleted entry: rocket 17608 [salad]: a second root of arugula (rocket 444 is its UK alias)
+  deleted entry: bleu 53112 [cheese]: a stub made for blue cheeses
+  arugula 443: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  rutabaga 445: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  heavy cream 534: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  cilantro 754: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  trash bags 23370: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  superfine sugar 67141: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  oven fries 67174: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  canola oil 67181: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  stew meat 67194: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  jelly roll 67197: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  top round 67202: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  plain 67229: region ["US"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  cooler 3035: region ["US","CA"] -> []: the US word is the root and its UK word a regional alias: the root takes no tag (LIBRARY-RULES 5; the game never reads root regions, contract-root-region)
+  yuzu 84: region ["AU"] -> []: a Japanese citrus, not an Australian word
+  Birds Eye 20331: region ["UK","US"] -> []: known in the UK and the US: no tag
+  text: lancashire hotpot 53306 -> "Lancashire hotpot", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  text: kendal mint cake 59484 -> "Kendal mint cake", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  text: pontefract cake 59483 -> "Pontefract cake", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  text: hainanese chicken 53531 -> "Hainanese chicken", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  text: tex-mex 19451 -> "Tex-Mex", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  text: tex-mex 59416 -> "Tex-Mex", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  text: nanaimo bar 19459 -> "Nanaimo bar", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  text: nanaimo bars 53751 -> "Nanaimo bars", type common -> proper: named after a place (Lancashire, Kendal, Pontefract, Hainan, Texas, Nanaimo; LIBRARY-RULES 5: a phrase with a proper word keeps the capital, as M-W and Oxford print it)
+  pisco sour 19415: adult true -> false: alcohol is not adult, only sensitive (Simon, I31, v418/v419; LIBRARY-RULES 4)
+  brandy butter 18455: adult true -> false: alcohol is not adult, only sensitive (Simon, I31, v418/v419; LIBRARY-RULES 4)
+  Caesar 27554: adult true -> false: alcohol is not adult, only sensitive (Simon, I31, v418/v419; LIBRARY-RULES 4)
+
+Checks: changed kinds: info:alias-fullname 44 -> 43, info:clash-large 56 -> 59, info:orphan 225 -> 221, info:overlap 4926 -> 4927, info:rating-vs-zipf 1679 -> 1677, info:same-display 10 -> 9, info:sense-link 41 -> 39, info:sense-twin 105 -> 104, info:theme-twin 56 -> 54, info:xwords-twin 88 -> 87, warn:clash-big 1 -> 0, warn:rating-vs-zipf 161 -> 160
+Checks after (errors and warnings): clash-big 0, long 5, maybe-duplicate 1, rating-vs-zipf 160, theme-gap 1, theme-name 3
+Export contract (family export, zipf): contract-root-region 1781 -> 1762, contract-type-common 42 -> 41; after: contract-dup-root 185, contract-root-region 1762, contract-type-common 41
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3242 -> 3239; gone asian_dishes, pasta_meals, ways_to_cook_eggs; new none; theme indexes shift: from index 123 ("european_dishes", was "asian_dishes") to index 3241 ("undefined", was "things_you_eat_with_a_spoon")
+Entry rows 61116 -> 61128; first row whose entry changed: 16670 (crown prince 17522, was 17521); rows that moved: 43634; added onion powder 17584 (row 16716), chicken breast 17718 (row 16835), chicken thigh 17719 (row 16836), bacon bits 17808 (row 16916), brandy butter 18455 (row 17467), rapeseed oil 18884 (row 17864), pisco sour 19415 (row 18326), pot roast 19780 (row 18649), Caesar 27554 (row 25821), canola oil 67181 (row 60168), brown bread 68128 (row 61094), apple juice 68129 (row 61095), orange juice 68130 (row 61096), cranberry juice 68131 (row 61097), grapefruit juice 68132 (row 61098), pineapple juice 68133 (row 61099), carrot juice 68134 (row 61100), cherry juice 68135 (row 61101), lime juice 68136 (row 61102), mango juice 68137 (row 61103), pomegranate juice 68138 (row 61104), prune juice 68139 (row 61105), tomato juice 68140 (row 61106), celery juice 68141 (row 61107), guava juice 68142 (row 61108), passion fruit juice 68143 (row 61109), watermelon juice 68144 (row 61110), tomato soup 68145 (row 61111), lentil soup 68146 (row 61112), potato soup 68147 (row 61113), pumpkin soup 68148 (row 61114), split pea soup 68149 (row 61115), wonton soup 68150 (row 61116), sunflower oil 68151 (row 61117), peanut oil 68152 (row 61118), avocado oil 68153 (row 61119), corn oil 68154 (row 61120), walnut oil 68155 (row 61121), red wine vinegar 68156 (row 61122), safflower oil 68157 (row 61123), nettle tea 68158 (row 61124), rosehip tea 68159 (row 61125), fennel tea 68160 (row 61126), shoofly pie 68161 (row 61127); removed 17521 (row 16670), 17608 (row 16735), 17609 (row 16736), 17956 (row 17059), 18900 (row 17866), 50241 (row 46349), 53112 (row 49060), 53385 (row 49318), 62545 (row 57977), 62883 (row 58254), 62890 (row 58260), 63422 (row 58670), 63423 (row 58671), 63441 (row 58673), 63443 (row 58674), 63445 (row 58675), 63456 (row 58677), 63459 (row 58678), 63460 (row 58679), 63462 (row 58680), 64789 (row 58920), 64823 (row 58937), 64999 (row 59095), 65000 (row 59096), 65019 (row 59097), 65074 (row 59098), 65075 (row 59099), 65076 (row 59100), 65090 (row 59101), 65148 (row 59105), 65150 (row 59106), 65163 (row 59110)
+root -> alias rows 13: chicken thighs 17881, bbq sauce 17890, bubblegum 18288, bean thread 18562, siu mai 18648, General Tso chicken 20272, goji 28140, karela 39175, mie goreng 53187, fries 59629, collards 62531, mac 63448, fava beans 67295; alias -> root rows 1: egg sandwich 19011
+Links 100684 -> 100613; rows whose link count changed: 161
+Link-index shifts: from row 75 (orange 76) on, link positions move
+Rows whose text changed: Tex-Mex 19451 (was "tex-mex"), Nanaimo bar 19459 (was "nanaimo bar"), lamb chop 50042 (was "Lamb Chop"), Lancashire hotpot 53306 (was "lancashire hotpot"), General Tso's chicken 53524 (was "general tso's chicken"), Hainanese chicken 53531 (was "hainanese chicken"), Nanaimo bars 53751 (was "nanaimo bars"), Tex-Mex 59416 (was "tex-mex"), Pontefract cake 59483 (was "pontefract cake"), Kendal mint cake 59484 (was "kendal mint cake"), grapeseed oil 62961 (was "grapeseed"), malt vinegar 62962 (was "malt"), rice bran oil 62963 (was "rice bran"), muskmelon 63278 (was "musk")
+New characters in the export (list them in the notice: the game font needs them): none
+Theme rows whose fields changed (parent compared by id): citrus_fruits (index 2 -> 2: counts [4,6,4,12,5] -> [4,5,4,12,5]); melons (index 10 -> 10: counts [1,2,2,14,13] -> [1,2,3,12,11]); asian_fruits (index 13 -> 13: counts [0,1,5,17,16] -> [0,1,5,17,17]); vegetables (index 17 -> 17: counts [9,14,16,16,6] -> [9,14,15,16,6]); leafy_greens (index 19 -> 19: counts [2,4,13,16,7] -> [2,4,13,17,7]); squashes (index 21 -> 21: counts [1,2,5,14,17] -> [1,2,5,14,18]); cabbage_family (index 25 -> 25: counts [4,4,9,17,7] -> [4,4,10,16,6]); andean_crops (index 27 -> 27: counts [1,1,4,16,15] -> [1,1,3,15,13]); cuts_of_meat (index 30 -> 30: counts [1,5,20,14,7] -> [1,7,19,14,7]); poultry (index 31 -> 31: counts [4,3,6,10,7] -> [4,3,6,10,6]); game_meats (index 32 -> 32: counts [1,7,14,15,7] -> [1,6,14,15,7]); dairy_and_eggs (index 42 -> 42: counts [6,2,12,9,4] -> [6,2,10,9,3], range [1,5] -> [1,4]); cheeses (index 43 -> 43: counts [5,6,18,22,11] -> [6,5,18,22,11]); hard_cheeses (index 44 -> 44: counts [2,3,4,14,3] -> [3,2,4,14,3]); blue_cheeses (index 46 -> 46: counts [1,0,4,6,9] -> [1,0,3,6,9]); cheese_dishes (index 51 -> 51: counts [1,6,8,11,3] -> [2,6,8,11,3]); breads (index 54 -> 54: counts [2,6,9,8,9] -> [2,7,8,8,9]); pies_and_tarts (index 60 -> 60: counts [1,7,9,9,10] -> [3,6,8,9,10]); baking_ingredients (index 61 -> 61: counts [4,7,7,8,5] -> [4,7,7,9,5]); ice_cream_flavors (index 65 -> 65: counts [6,6,13,11,8] -> [6,5,14,11,8]); jam_flavours (index 77 -> 77: name "jam flavours" -> "jam flavors", counts [4,4,3,0,0] -> [4,3,3,0,0], breaks [7] -> []); noodles (index 84 -> 84: counts [1,6,11,15,9] -> [1,6,11,14,9]); dumplings (index 91 -> 91: counts [1,3,8,15,16] -> [1,3,7,14,16]); salad_dressings (index 101 -> 101: counts [3,4,12,8,7] -> [3,4,12,8,6]); oils_and_vinegars (index 105 -> 105: counts [3,9,16,8,11] -> [3,8,11,5,6]); soups (index 107 -> 107: counts [5,7,14,10,7] -> [4,7,14,10,7]); stews (index 108 -> 108: counts [1,8,12,10,11] -> [1,8,11,10,11]); chip_flavors (index 115 -> 115: counts [3,9,12,11,4] -> [3,9,11,11,4]); savory_pies (index 118 -> 118: popularity 5 -> 3, difficulty 4 -> 3); burger_toppings (index 122 -> 122: counts [9,8,13,8,9] -> [9,8,12,8,9]); salad_ingredients (index 126 -> 125: counts [7,3,2,0,0] -> [7,3,3,0,0]); asian_food (index 150 -> 148: counts [4,10,24,10,4] -> [4,10,25,10,4]); chinese_food (index 155 -> 153: counts [3,5,19,12,12] -> [3,5,19,12,11]); south_american_food (index 169 -> 167: counts [2,3,11,12,18] -> [2,3,11,12,17]); north_american_food (index 174 -> 172: counts [9,14,14,12,1] -> [9,14,15,12,1]); southern_food (index 176 -> 174: counts [1,7,13,13,10] -> [1,7,14,13,10]); teas (index 180 -> 178: counts [6,9,16,10,1] -> [6,9,14,11,1]); juices (index 185 -> 183: counts [3,3,9,10,6] -> [3,3,9,10,3], range [2,5] -> [2,4]); winemaking_terms (index 195 -> 193: name "winemaking terms" -> "winemaking"); cooking_methods (index 204 -> 202: counts [4,8,12,7,4] -> [4,8,12,8,4]); ways_to_preserve_food (index 209 -> 207: counts [3,4,9,6,6] -> [3,4,9,5,6]); in_the_pantry (index 210 -> 208: counts [10,11,15,7,5] -> [10,10,16,7,5]); egg_dishes (index 242 -> 240: counts [4,3,8,9,7] -> [4,5,7,9,7]); bitter_foods (index 3100 -> 3097: counts [2,5,11,21,8] -> [2,5,11,22,8]); pink_things (index 3200 -> 3197: counts [4,13,15,15,4] -> [4,12,15,15,4])
+Root links by theme + shown text + row: gone 188, new 117, rating changed 5
+  gone: juices: "lime" (75), juices: "orange" (76), juices: "grapefruit" (77), juices: "apple" (87), juices: "cherry" (92), juices: "mango" (95), juices: "pineapple" (96), juices: "watermelon" (97), juices: "pomegranate" (100), juices: "lychee" (103), juices: "guava" (104), juices: "passion fruit" (107), soups: "tomato" (110), juices: "tomato" (110), oils_and_vinegars: "avocado" (111), chip_flavors: "chicken" (152), juices: "cranberry" (354), juices: "carrot" (391), soups: "potato" (392), juices: "celery" (401), soups: "pumpkin" (403), oils_and_vinegars: "corn" (406), oils_and_vinegars: "maize" (408), teas: "fennel" (432), savory_pies: "pork" (460), stews: "oxtail" (496), sandwiches: "egg" (518), dairy_and_eggs: "margarine" (525), dairy_and_eggs: "omelet" (532), ways_to_cook_eggs: "omelet" (532), dairy_and_eggs: "custard powder" (549), pasta_meals: "spaghetti" (655), pasta_meals: "lasagna" (660), pasta_meals: "ravioli" (663), asian_dishes: "ramen" (670), pasta_meals: "gnocchi" (681), pasta_meals: "trofie" (710), oils_and_vinegars: "mustard" (720), salad_ingredients: "pepper" (722), edible_seeds: "cilantro" (754), asian_dishes: "curry" (799), asian_dishes: "sushi" (800), asian_dishes: "fried rice" (806), asian_dishes: "dumplings" (810), asian_dishes: "stir-fry" (822), asian_dishes: "pad Thai" (824), asian_dishes: "samosa" (828), asian_dishes: "tempura" (829), asian_dishes: "biryani" (838), dumplings: "dim sum" (839), asian_dishes: "dim sum" (839), asian_dishes: "pho" (844), asian_dishes: "kimchi" (845), asian_dishes: "bibimbap" (853), asian_dishes: "rendang" (857), ways_to_cut_food: "dice" (927), south_american_food: "java" (961), game_meats: "bunny" (1444), andean_crops: "guinea pig" (1446), andean_crops: "cavy" (1447), oils_and_vinegars: "sunflower" (1696), teas: "nettle" (1778), teas: "stinging nettle" (1779), poultry: "wishbone" (8406), oceanian_food: "damper" (10732), juices: "noni" (15640), cooking_methods: "steam" (16570), savory_pies: "meat" (16670), oils_and_vinegars: "flaxseed" (16742), ways_to_cook_eggs: "hard-boiled" (16759), pies_and_tarts: "key lime" (17163), juices: "prune" (17215), melons: "chilacayote" (17264), oils_and_vinegars: "peanut" (17350), ice_cream_flavors: "pistachio" (17353), oils_and_vinegars: "hazelnut" (17354), oils_and_vinegars: "sesame seed" (17383), oils_and_vinegars: "pumpkin seed" (17385), oils_and_vinegars: "perilla" (17486), squashes: "kombucha" (17521), soups: "lentil" (17527), oils_and_vinegars: "soybean" (17531), soups: "split pea" (17545), salad_dressings: "Vidalia onion" (17566), cabbage_family: "rocket" (17608), cabbage_family: "cruciferous" (17609), andean_crops: "tuber" (17667), andean_crops: "chicha" (17668), barbecue_foods: "chicken thighs" (17881), barbecue_foods: "bbq sauce" (17890), burger_toppings: "bbq sauce" (17890), cheeses: "Swiss" (17956), hard_cheeses: "Swiss" (17956), ways_to_cook_eggs: "sunny side up" (17999), pasta_meals: "cacio e pepe" (18029), breads: "brown" (18059), ice_cream_flavors: "bubblegum" (18288), candy: "bubblegum" (18288), pink_things: "bubblegum" (18288), pasta_meals: "strozzapreti" (18500), pasta_meals: "carbonara" (18516), pasta_meals: "Bolognese" (18518), pasta_meals: "ragù" (18519), pasta_meals: "amatriciana" (18527), noodles: "bean thread" (18562), soups: "wonton" (18643), dumplings: "siu mai" (18648), chinese_food: "siu mai" (18648), yum_cha_dishes: "siu mai" (18648), jam_flavours: "marmalade" (18828), oils_and_vinegars: "extra virgin" (18900), north_american_food: "tex-mex" (19451), north_american_food: "nanaimo bar" (19459), canadian_slang: "nanaimo bar" (19459), canadian_food: "nanaimo bars" (19459), oils_and_vinegars: "red wine" (19645), ways_to_preserve_food: "kipper" (19904), foods_named_after_people: "General Tso chicken" (20272), berries: "goji" (28140), dried_fruits: "goji" (28140), teas: "rosehip" (30306), oils_and_vinegars: "walnut" (30307), oils_and_vinegars: "safflower" (30470), oils_and_vinegars: "hemp" (30677), chinese_food: "Lion's Head" (37529), bitter_foods: "karela" (39175), melons: "karela" (39175), oils_and_vinegars: "canola" (40099), cuts_of_meat: "Lamb Chop" (50042), citrus_fruits: "navel" (50241), blue_cheeses: "bleu" (53112), noodle_dishes: "mie goreng" (53187), spicy_dishes_of_asia: "mie goreng" (53187), british_food: "lancashire hotpot" (53306), kebab_types: "gyro" (53385), chinese_food: "general tso's chicken" (53524), takeaway_orders: "general tso's chicken" (53524), chinese_food: "hainanese chicken" (53531), juices: "açaí" (53687), american_roots_music: "tex-mex" (59416), candy: "pontefract cake" (59483), candy: "kendal mint cake" (59484), british_food: "kendal mint cake" (59484), sweet_treats: "kendal mint cake" (59484), hiking_snacks: "kendal mint cake" (59484), pasta_meals: "pizzoccheri" (59522), street_food: "fries" (59629), pasta_meals: "culurgiones" (59633), melons: "wax gourd" (62527), oils_and_vinegars: "pepita" (62530), leafy_greens: "collards" (62531), green_vegetables: "collards" (62531), egg_dishes: "Benedict" (62545), pies_and_tarts: "shoofly" (62882), pies_and_tarts: "stargazy" (62883), savory_pies: "stargazy" (62883), noodle_dishes: "dan dan" (62890), cheeses: "American" (63422), cheeses: "blue" (63423), egg_dishes: "deviled" (63441), ways_to_cook_eggs: "deviled" (63441), ways_to_cook_eggs: "fried" (63443), egg_dishes: "scrambled" (63445), ways_to_cook_eggs: "scrambled" (63445), cheese_dishes: "mac" (63448), pies_and_tarts: "apple" (63456), pies_and_tarts: "pecan" (63459), pies_and_tarts: "pumpkin" (63460), pies_and_tarts: "sweet potato" (63462), ways_to_cook_eggs: "boiled" (64701), ways_to_cook_eggs: "coddled" (64702), ways_to_cook_eggs: "poached" (64704), ways_to_cook_eggs: "soft-boiled" (64706), vegetables: "green" (64789), in_the_pantry: "soda" (64823), cheeses: "cottage" (64999), soft_cheeses: "cottage" (64999), cheeses: "cream" (65000), soft_cheeses: "cream" (65000), pies_and_tarts: "chess" (65019), sauces_and_condiments: "barbecue" (65074), asian_sauces: "fish" (65075), sauces_and_condiments: "hot" (65076), asian_sauces: "oyster" (65090), savory_pies: "fish" (65148), savory_pies: "Scotch" (65150), hot_drinks: "chocolate" (65163), green_vegetables: "fava beans" (67295)
+  new: hot_drinks: "chocolate" (227), salad_ingredients: "bell pepper" (409), cheeses: "cottage" (529), soft_cheeses: "cottage" (529), cheeses: "cream" (530), soft_cheeses: "cream" (530), baking_ingredients: "custard powder" (549), sauces_and_condiments: "hot" (728), sauces_and_condiments: "barbecue" (729), barbecue_foods: "barbecue sauce" (729), asian_sauces: "fish" (768), cheese_dishes: "mac and cheese" (815), asian_food: "stir-fry" (822), cooking_methods: "steam" (929), berries: "goji" (15570), dried_fruits: "goji berry" (15570), bitter_foods: "bitter melon" (15586), egg_dishes: "hard-boiled" (16759), squashes: "chilacayote" (17264), edible_seeds: "coriander" (17393), leafy_greens: "collards" (17457), green_vegetables: "collards" (17457), green_vegetables: "fava" (17558), in_the_pantry: "onion powder" (17584), cuts_of_meat: "chicken breast" (17718), barbecue_foods: "chicken thighs" (17719), salad_ingredients: "bacon bits" (17808), savory_pies: "fish" (17841), pies_and_tarts: "stargazy" (17863), savory_pies: "stargazy" (17863), cheeses: "Swiss" (17920), hard_cheeses: "Swiss" (17920), cheeses: "blue" (17929), cheeses: "American" (17942), egg_dishes: "scrambled" (17981), egg_dishes: "Benedict" (17985), egg_dishes: "deviled" (17986), pies_and_tarts: "apple" (18168), pies_and_tarts: "pumpkin" (18170), pies_and_tarts: "pecan" (18171), pies_and_tarts: "key lime" (18174), pies_and_tarts: "chess" (18184), pies_and_tarts: "sweet potato" (18187), noodle_dishes: "dan dan" (18548), noodle_dishes: "mee goreng" (18555), spicy_dishes_of_asia: "mee goreng" (18555), chinese_food: "shumai" (18664), yum_cha_dishes: "shumai" (18664), asian_sauces: "oyster" (18793), sandwiches: "egg" (19011), kebab_types: "gyro" (19019), street_food: "French fries" (19050), savory_pies: "meat" (19172), savory_pies: "pork" (19177), savory_pies: "Scotch" (19193), south_american_food: "pisco sour" (19415), peruvian_food: "pisco sour" (19415), north_american_food: "Tex-Mex" (19451), north_american_food: "Nanaimo bar" (19459), canadian_slang: "Nanaimo bar" (19459), canadian_food: "Nanaimo bars" (19459), cooking_methods: "pot roast" (19780), ice_cream_flavors: "pistachio" (20206), canadian_slang: "Caesar" (27554), canadian_food: "Caesar" (27554), ice_cream_flavors: "bubble gum" (39076), candy: "bubble gum" (39076), ways_to_cut_food: "dice" (44583), oceanian_food: "damper" (48557), cuts_of_meat: "lamb chop" (50042), british_food: "Lancashire hotpot" (53306), chinese_food: "General Tso's chicken" (53524), takeaway_orders: "General Tso's chicken" (53524), foods_named_after_people: "General Tso's chicken" (53524), chinese_food: "Hainanese chicken" (53531), american_roots_music: "Tex-Mex" (59416), candy: "Pontefract cake" (59483), candy: "Kendal mint cake" (59484), british_food: "Kendal mint cake" (59484), sweet_treats: "Kendal mint cake" (59484), hiking_snacks: "Kendal mint cake" (59484), squashes: "wax gourd" (62527), oils_and_vinegars: "canola" (67181), breads: "brown" (68128), juices: "apple" (68129), juices: "orange" (68130), juices: "cranberry" (68131), juices: "grapefruit" (68132), juices: "pineapple" (68133), juices: "carrot" (68134), juices: "cherry" (68135), juices: "lime" (68136), juices: "mango" (68137), juices: "pomegranate" (68138), juices: "prune" (68139), juices: "tomato" (68140), juices: "celery" (68141), juices: "guava" (68142), juices: "passion fruit" (68143), juices: "watermelon" (68144), soups: "tomato" (68145), soups: "lentil" (68146), soups: "potato" (68147), soups: "pumpkin" (68148), soups: "split pea" (68149), soups: "wonton" (68150), oils_and_vinegars: "sunflower" (68151), oils_and_vinegars: "peanut" (68152), oils_and_vinegars: "avocado" (68153), oils_and_vinegars: "corn" (68154), oils_and_vinegars: "walnut" (68155), oils_and_vinegars: "red wine" (68156), oils_and_vinegars: "safflower" (68157), teas: "nettle" (68158), teas: "rosehip" (68159), teas: "fennel" (68160), pies_and_tarts: "shoofly" (68161)
+  rating: burger_toppings: "barbecue sauce" (729) 2.4/3 -> 1.7/2, toppings: "hard sauce" (59497) 5/5 -> 4.7/4, oils_and_vinegars: "malt" (62962) 2.7/2 -> 2/2, melons: "musk" (63278) 3.7/3 -> 3/3, egg_dishes: "coddled" (64702) 5/5 -> 4.7/4
+
+Check items in the group (start of the batch, v433 -> after the batch):
+  warn clash-big 1 -> 0 (the kebab group of 14 -> 11: gyro [kebab] merged into gyro [food]; shashlik and brochette left the kebab group in foods on a stick).
+  warn maybe-duplicate 1 -> 1: fish [food] / fish [animal] share things with tails, a theme of another group (cross-group list).
+  warn long, theme-name, theme-gap: none in the group. Every theme's 4th-easiest band is within the I30 gap.
+  contract-root-region 294 -> 273 in the group (library 1781 -> 1762): see "For Simon" 1.
+  contract-type-common 1 -> 0 (mac [baked pasta], typed phrase, is now a common abbreviation of mac and cheese).
+  contract-dup-root 6 -> 6: left (below).
+  sense-link 6 -> 4, sense-twin 5 -> 4: fixed in the group (pistachio, steam); the rest are links in other groups' themes (cross-group list).
+  theme-twin 4 -> 3: Asian dishes and ways to cook eggs merged; jam flavors, green vegetables, European dishes left (For Simon 6).
+  xwords-twin 1 -> 0: winemaking terms renamed "winemaking".
+  alias-fullname 11 -> 10: egg sandwich is its own root; the 9 plural forms and dragon egg are left (below).
+  orphan: 5 orphans of this group linked or merged (chicken breast, chicken thigh, onion powder, bacon bits, pot roast [cook]); extra virgin is new in no theme.
+  same-display 2 -> 1 (canola / canola oil in oils and vinegars); clash-large 7 -> 10 in the group (each 12 or fewer: the merged stubs passed their kin to the full terms they now show as).
+
+Cross-group moves (for the tree batch at the end of step 3; not in this batch)
+  1. fermented foods and drinks (Qualities / tastes / sour foods) merges into fermented foods (Food & Drink / food properties): 9 of its 10 words are there; umeboshi moves at typicality 5. The twin v433 flagged; it is not inside Food & Drink, so it is listed here.
+  2. dragon egg 22473 is a form alias of egg [food from hens] with a longer name; dragons (History & Myth / fantasy) links egg for it. Make dragon egg its own root linked in dragons (typicality 2) and unlink egg there (alias-fullname).
+  3. Links of Food & Drink entries on the wrong sense in other groups' themes (sense-link, sense-twin, maybe-duplicate): applesauce [food] in words meaning nonsense (applesauce [nonsense] 27275 exists); Bordeaux [wine] in place-named colors (bordeaux [color] 57763); plum [fruit] in purple things (plum [color] 7699); fish [food] in things with eyes and things with tails (fish [animal] 59990; the maybe-duplicate warning); lamb [meat] in farm animals and baby animals (lamb [animal]); champagne [drink] in metallic colors (a color sense); pork pie 19177 in hats and historical hats (the porkpie hat, a different thing); honeydew 355 and honeydew melon 356 both in sticky things (the aphid honeydew is the sticky one).
+  4. egg 518 [food from hens] is linked in insect life cycle, butterfly life stages and life cycle words: the wrong sense (an egg as a life stage needs its own entry).
+  5. Done here although outside the group: tex-mex [music] 59416 is capitalised with tex-mex [cuisine] (Tex-Mex, both senses; otherwise case-sense-proper warns that a common tex-mex exists beside the proper one).
+
+For Simon
+  1. contract-root-region in this group: 294 hits at the start. Real and fixed (20 rows): 12 US roots with a UK regional alias lose their redundant US tag (arugula, rutabaga, heavy cream, cilantro, superfine sugar, oven fries, canola oil, stew meat, jelly roll, top round, plain [crisp flavor], trash bags), cooler (US, CA; it has UK and NZ aliases), yuzu (tagged AU, a Japanese citrus), Birds Eye (UK + US = no tag), lamb chop (the puppet's US tag), and the deleted UK stubs fish [creamy seafood], Scotch [mutton hand], stargazy, and brandy butter (UK), now the regional alias of hard sauce. By design (about 265): regional words with no same-sense word in the other dialect, rightly tagged (Stilton, crumpet, clotted cream, poutine, Vegemite, Irn-Bru, haggis, grits, root beer, the UK cheeses, puddings, sweets and cereals, the Australian and NZ foods). LIBRARY-RULES 4 says such a word stays a root with its region ("the game raises its band"), while the contract says the game never reads root regions. Proposal: the contract kind counts only roots whose region has a same-sense root elsewhere (the real kind), and the game raises the band of a region-tagged root for players outside the region; until then, keep these in the baseline with this reason in the note. Debatable (a word of the other dialect exists; kept for now): candy bar (US) / chocolate bar (batch 413 kept them apart: "the other word is used in both dialects or is not the same thing"), pip (UK) / seed, fish slice (UK) / spatula, vacuum flask (UK) / thermos, broil (US) / grill, jelly [spread] (US) / jam, hamper (UK) / picnic basket, packed lunch (UK) / bag lunch (not in the library), semi-skimmed milk (UK) / 2% milk (not in the library).
+  2. Adult removed from pisco sour, brandy butter and Caesar [cocktail]: alcohol is not adult (Simon, I31, v418/v419). pisco sour and Caesar [cocktail] are flagged sensitive and play from level 31; brandy butter has no sensitive flag and now plays at any level (as the UK alias of hard sauce). No earlier decision on these three was found.
+  3. 34 new entries, all full terms for links that sat on the bare word (DESIGN-entries.md 3.6: "the grain, not the milk"): 16 juices (apple juice ... watermelon juice), 6 soups (tomato, lentil, potato, pumpkin, split pea, wonton), 7 oils and vinegars (sunflower, peanut, avocado, corn, walnut, safflower oil; red wine vinegar), 3 teas (nettle, rosehip, fennel), shoofly pie, brown bread [bread]. Each shows the same short word as before, so the game's text is unchanged; the fruit, vegetable or plant rows leave those themes. Three stubs made for oils and vinegars were renamed in place instead (malt -> malt vinegar, grapeseed -> grapeseed oil, rice bran -> rice bran oil). All multi-word: no line-break work.
+  4. Case: Lancashire hotpot, Kendal mint cake, Pontefract cake, Hainanese chicken, Tex-Mex (both senses), Nanaimo bar(s), General Tso's chicken (merged with General Tso chicken, its spelling alias now) are capitalised and typed proper (LIBRARY-RULES 5, a phrase with a proper word). M-W prints Tex-Mex, Nanaimo bar and General Tso's chicken capitalised; the British ones follow the place name (Oxford). No earlier decision found.
+  5. Themes merged: Asian dishes into Asian food, ways to cook eggs into egg dishes (it was p1 i1; egg dishes p2 i2 keeps boiled, fried, scrambled, poached and now hard-boiled), pasta meals into Italian food (no words move). Theme indexes shift from 123 to the end (3 rows gone). savory pies pop 5 -> 3.
+  6. Twins left for the allow list (js/theme-twin-allow.js needs your OK): jam flavors / fruits (a flavors theme: 8 of its 9 words are fruits, by nature), green vegetables / vegetables (a color property theme), European dishes / prepared dishes (all its 21 words are in its parent; Asian dishes merged into Asian food, but European food is only a folder; the alternatives are to keep it, or to move it into the European food folder, which would make it a twin of prepared dishes by the check).
+  7. Two roots with one answer kept, each pair in a synonym group: honeydew / honeydew melon, kiwi / kiwifruit, starfruit / carambola, Scotch / Scotch whisky, plain / all-purpose (flours). Not merged (would need `use` forms or reach other groups): dumpling (dumplings theme) / dumplings (9 other themes); niçoise (salads) / salade niçoise (French food); onion soup (French food) / French onion [soup] (soups). Doubtful groups kept: French fries = potato chips in potato dishes (UK chips), whole wheat = wheat flour in flours.
+  8. Kept as they are: the dressing senses named bare (Caesar, blue cheese, balsamic, Catalina [dressing]) and wedge [iceberg lettuce] in salads: the short name names the thing in its theme (3.6 test). chip flavors keeps barbecue [grilled meat]. ways to cut food keeps cube [shape], fillet, peel, core (nouns for the cuts in a language theme). edible seeds keeps tahini and pea seed (typicality 5).
+  9. Spread: no theme in the group is over the I30 gap. The regional cuisine themes have no easy words (Indian sweets 0/0/29, Persian food 0/1/41, West African food 0/3/40): by design (region-tagged, ratings for a general UK/US adult).
+
+Left as is (flagged by a check but correct)
+  alias-fullname: pancakes, whole grains, fruit snacks, kidney beans, black beans, water chestnuts, Vienna sausages, dried apricots, runner beans: plural forms, rightly form aliases; their nameOkIn is needed (the theme-name check reads aliases of linked roots, and a test run without it raised 14 theme-name warnings). dragon egg: cross-group list.
+  alias-kind-suspect: catsup (M-W gives it as a variant spelling of ketchup), kunafa (a transliteration of knafeh), nicoise salad (see For Simon 7).
+  clash-large: peel/rind/skin, ribs, sprinkles, eggs/scramble, French fries/chips, cheese/blue cheese, dash/pinch, fish, snapper/snap, kebab: 9 to 12 words, look-alikes in big themes.
+  family-kin (25): steam/steamer, beat/beater, joe/joey, char/charity, bubbly/bubble, snapper/snap, nose/nosy, skin/skinny, slider/slide, beans/beanie, knob/knobby, roll/roller: other words or other senses, not one family.
+  contract-dup-root: ambrosia [salad], dash [measure], blackberry [fruit], inari [sushi], muscat [wine], magnum [bottle]: common senses that share their text with a proper or acronym entry; both are right.
+  same-display: cup / measuring cup in measuring tools (another group's theme).
+  overlap (446, info): kinds beside their generic word in kinds themes (lemon / meyer lemon in citrus fruits), allowed by LIBRARY-RULES 5.
+  extra virgin 18900: a real term, now in no theme (no theme of olive-oil grades).
+
+Second review ("apply after fixes"), done in this version:
+  mac and cheese typed common (was phrase); dice [game] pos noun; lamb chop familiarity 3 -> 2; deviled 63441, a stub, merged into deviled eggs 17986 (shown "deviled" in egg dishes; its UK alias devilled moves as a UK synonym, since deviled eggs has its UK spelling devilled eggs); brandy butter is the UK regional alias of hard sauce (one topping, both in dessert toppings; typicality 4 kept); lentil soup typicality 1 -> 2; chicken thigh is the root and chicken thighs its form (barbecue foods shows the plural through use); siu mai merged into shumai (the M-W headword; siu mai its spelling); karela the Hindi regional alias (IN) of bitter melon, out of melons (bitter melon was not in melons); musk [sweet-scented] retexted muskmelon, shown "musk"; wax gourd and chilacayote move from melons to squashes; dim sum out of dumplings.
+
+Baselines to lower at apply time (tools/checks-baseline.json): warn clash-big 1 -> 0; contract contract-root-region 1781 -> 1762, contract-type-common 42 -> 41.
+
+new issues: none

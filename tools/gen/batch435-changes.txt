@@ -1,0 +1,780 @@
+Library batch v435: tidy-up step 3, group Animals (TIDY-UP.md; for Simon's review). 17 links moved to the right sense, 100 second roots or stubs merged (aliases in place or deleted), 210 links out, 12 links added, 29 texts changed, 18 shown texts, 5 new entries and 11 new aliases, 31 orphans deleted; themes: 4 merged, 3 moved, 1 renamed.
+1. Wrong senses (LIBRARY-RULES 5, Entries: link the entry in the sense the theme means)
+  farm_animals: the link moves from lamb 461 [meat] to lamb 25044 [animal] (typicality 1): the animal, not the meat (sense-twin)
+  baby_animals: the link moves from lamb 461 [meat] to lamb 25044 [animal] (typicality 1): the young sheep, not the meat (sense-twin)
+  insect_life_cycle: the link moves from nymph 6922 [myth] to nymph 10146 [insect] (typicality 3): the young insect, not the spirit of myth (sense-twin)
+  insect_body_parts: the link moves from antenna 4606 [aerial] to antenna 10338 [animal] (typicality 1, its group place too): the feeler, not the radio aerial (sense-link); the antenna = feeler = antennae group follows
+  dog_breeds: the link moves from Maltese 7583 [language] to Maltese 50998 [dog] (typicality 3): the dog, not the language (sense-link)
+  hock 9588 [leg joint] goes into hock 10344 and is deleted; links move: parts_of_a_horse 3: hock [leg joint] and hock [animal] are one sense, the joint in the hind leg of an animal (sense-link): the second root goes
+  animals_with_tusks: the link moves from boar 1458 [pig] to wild boar 9678 [] (typicality 2): the tusked wild boar; boar [pig] 1458 is the male pig (male animals, farm animals) (sense-twin, sense-link)
+  sea_life: the link moves from man-of-war 1317 [] to Portuguese man o' war 9819 [] (typicality 4): the stinging sea creature; man-of-war 1317 also holds the warship themes (age of sail, warships, navy words, sailing ships)
+  jellyfish_and_relatives: the link moves from man-of-war 1317 [] to Portuguese man o' war 9819 [] (typicality 2, its group place too): the stinging sea creature (the blue bottle group follows)
+  man-of-war 1317: gloss "" -> "warship": it now holds only the warship sense (Portuguese man o' war 9819 is the sea creature)
+  out of seals_and_sea_lions: Ross Sea 32173: the sea (a place), not the seal; Ross seal 9712 takes its place (stays in antarctic_coast, antarctic_places, oceans_and_seas)
+  linked: Ross seal 9712 in seals_and_sea_lions (typicality 4, shown "Ross"): the Antarctic seal the theme meant (shown "Ross", as the Ross Sea link was)
+  new entry: egg 68128 [animal egg] noun, common, familiarity 1: the egg an animal lays, the first life stage; egg 518 is glossed [food from hens] and holds the food themes
+  insect_life_cycle: the link moves from egg 518 [food from hens] to egg 68128 [animal egg] (typicality 1): the life stage, not the food
+  butterfly_life_stages: the link moves from egg 518 [food from hens] to egg 68128 [animal egg] (typicality 1): the life stage, not the food
+  new entry: proboscis 68129 [mouthpart] noun, common, familiarity 4: the sucking mouthpart of a butterfly, moth or fly; proboscis 9132 is the elephant's trunk sense
+  insect_body_parts: the link moves from proboscis 9132 [elephantine nose] to proboscis 68129 [mouthpart] (typicality 3): the insect mouthpart, not the elephantine nose
+  bug_parts: the link moves from proboscis 9132 [elephantine nose] to proboscis 68129 [mouthpart] (typicality 4): the insect mouthpart, not the elephantine nose
+  new entry: puggle 68130 [baby echidna] noun, common, familiarity 4: the young of an echidna or platypus; puggle 10516 is the pug-beagle cross (hybrid animals)
+  baby_animals: the link moves from puggle 10516 [] to puggle 68130 [baby echidna] (typicality 4): the baby echidna, not the dog cross
+  puggle 10516: gloss "" -> "dog": its text is now shared with puggle [baby echidna]
+  new entry: lumber 68131 [move heavily] verb, common, familiarity 3: to move in a slow heavy way (Oxford, M-W); lumber 24038 is the US word for sawn timber
+  animal_movements: the link moves from lumber 24038 [US timber] to lumber 68131 [move heavily] (typicality 3): the way of moving, not timber
+  ways_of_walking: the link moves from lumber 24038 [US timber] to lumber 68131 [move heavily] (typicality 4): the way of moving, not timber
+  lumber 24038: pos "verb" -> "noun": the timber sense is a noun (its verb links moved to lumber [move heavily])
+  new entry: possum 68132 [Australian] noun, common, familiarity 2: the Australian possums (brushtail, ringtail), not the American opossum that possum 1047 [US] names
+  australian_animals: the link moves from possum 1047 [] to possum 68132 [Australian] (typicality 3): the Australian marsupial, not the American opossum
+  possum 1047: gloss "" -> "opossum": its text is now shared with possum [Australian]
+  possum 1047 becomes a synonym alias of opossum 1046 (familiarity 3, region US); links move: tree_dwelling_animals 3: the American possum is the opossum (Simon: merge); possum keeps its US tag as a synonym alias
+  crest 2527: type "phrase" -> "common": crest [helmet emblem] is a common noun, not a set phrase; typed phrase it made the animal crests (8364, 9604) never count as everyday words (contract-dup-root)
+  Ice Age 1613: tm true -> false: the period, not the film: every theme it is in is a period theme (LIBRARY-RULES 4: tm only for a brand, title or product)
+1b. Galápagos (Simon: rule 8, the root keeps the diacritic, the plain form is its spelling alias; v390 had left the texts plain)
+  text: Galapagos penguin 8244 -> "Galápagos penguin": Galápagos with its diacritic (M-W prints it; rule 8), as the shown texts and the theme name already write it
+  new alias: Galapagos penguin 68133 (spelling, familiarity 4) of Galápagos penguin 8244: the plain spelling (rule 8)
+    Galapagos penguin 68133: nameOkIn penguins, galapagos_animals (its text holds a word of the theme name; the root is linked)
+  text: Galapagos sea lion 50810 -> "Galápagos sea lion": Galápagos with its diacritic (M-W prints it; rule 8), as the shown texts and the theme name already write it
+  new alias: Galapagos sea lion 68134 (spelling, familiarity 4) of Galápagos sea lion 50810: the plain spelling (rule 8)
+    Galapagos sea lion 68134: nameOkIn seals_and_sea_lions, galapagos_animals (its text holds a word of the theme name; the root is linked)
+  text: Galapagos tortoise 8576 -> "Galápagos tortoise": Galápagos with its diacritic (M-W prints it; rule 8), as the shown texts and the theme name already write it
+  new alias: Galapagos tortoise 68135 (spelling, familiarity 3) of Galápagos tortoise 8576: the plain spelling (rule 8)
+    Galapagos tortoise 68135: nameOkIn galapagos_animals (its text holds a word of the theme name; the root is linked)
+  text: Galapagos cormorant 63286 -> "Galápagos cormorant": Galápagos with its diacritic (M-W prints it; rule 8), as the shown texts and the theme name already write it
+  new alias: Galapagos cormorant 68136 (spelling, familiarity 5) of Galápagos cormorant 63286: the plain spelling (rule 8)
+  text: Galapagos racer 51263 -> "Galápagos racer": Galápagos with its diacritic (M-W prints it; rule 8), as the shown texts and the theme name already write it
+  new alias: Galapagos racer 68137 (spelling, familiarity 5) of Galápagos racer 51263: the plain spelling (rule 8)
+    Galapagos racer 68137: nameOkIn galapagos_animals (its text holds a word of the theme name; the root is linked)
+  text: Galapagos rail 51265 -> "Galápagos rail": Galápagos with its diacritic (M-W prints it; rule 8), as the shown texts and the theme name already write it
+  new alias: Galapagos rail 68138 (spelling, familiarity 5) of Galápagos rail 51265: the plain spelling (rule 8)
+    Galapagos rail 68138: nameOkIn galapagos_animals (its text holds a word of the theme name; the root is linked)
+2. Bare stubs (LIBRARY-RULES 5, Kinds themes: the member is the full term, shown short; never a bare stub). The display in the theme stays the same.
+    kin of red 63577 dropped (set for the bare word, not the thing): redder 29011, reddish 29238
+  red 63577 [canid] goes into red fox 7962 and is deleted; links move: wild_dogs_and_foxes 1; shown: "red" in wild_dogs_and_foxes: a bare stub of the full term, which takes its link
+    kin of mule 63564 dropped (set for the bare word, not the thing): mules 24634
+  mule 63564 [antlered animal] goes into mule deer 9734 and is deleted; links move: deer 3; shown: "mule" in deer: a bare stub of mule deer (sense-twin with mule [animal]); mule deer takes the link
+  roe 63566 [antlered animal] goes into roe deer 9679 and is deleted; links move: deer 2; shown: "roe" in deer: a bare stub of the full term, which takes its link
+  sable 63568 [African grazer] goes into sable antelope 40205 and is deleted; links move: antelopes 3; shown: "sable" in antelopes: a bare stub of the full term, which takes its link
+  harpy 63600 [raptor] goes into harpy eagle 8108 and is deleted; links move: eagles 2; shown: "harpy" in eagles: a bare stub of the full term, which takes its link
+    kin of snapper 63623 dropped (set for the bare word, not the thing): snap 5747, snap 16892, snap 16965, snap 24982, snappy 32922, snap 46370, snappy 50127, snaps 55554
+  snapper 63623 [turtle] goes into snapping turtle 1201 and is deleted; links move: turtles_and_tortoises 2; shown: "snapping" in turtles_and_tortoises: snapper [turtle] is the snapping turtle; its eight kin were set for the word snapper (snap, snappy ...), not the turtle
+  giant 65319 [huge shelled] goes into giant tortoise 8575 and is deleted; links move: turtles_and_tortoises 2; shown: "giant" in turtles_and_tortoises: a bare stub of the full term, which takes its link
+  Galapagos 65318 [island giant] goes into Galápagos tortoise 8576 and is deleted; links move: turtles_and_tortoises 2; shown: "Galápagos" in turtles_and_tortoises: a bare stub of the full term, which takes its link
+    Galapagos tortoise 68135: nameOkIn turtles_and_tortoises (its text holds a word of the theme name; the root is linked)
+    kin of radiated 65332 dropped (set for the bare word, not the thing): radiation 40811
+  radiated 65332 [Madagascar] goes into radiated tortoise 8603 and is deleted; links move: turtles_and_tortoises 4; shown: "radiated" in turtles_and_tortoises: a bare stub of radiated tortoise; its kin radiation was set for the word, not the tortoise
+  gopher 65320 [burrowing shelled] goes into gopher tortoise 8606 and is deleted; links move: turtles_and_tortoises 4; shown: "gopher" in turtles_and_tortoises: a bare stub of gopher tortoise (sense-twin with gopher [pocket rodent])
+    kin of collared 65273 dropped (set for the bare word, not the thing): collar 4200, collar 24950, collar 50834
+  collared 65273 goes into Eurasian collared dove 8471 and is deleted; better typicality kept: pigeons_and_doves 3 -> 2: a bare stub of Eurasian collared dove, which is in the theme and in its group; its kin (collar) was set for the word
+    kin of mourning 65287 dropped (set for the bare word, not the thing): mournful 32704
+  mourning 65287 [cooing] goes into mourning dove 8464 and is deleted; links move: pigeons_and_doves 2; shown: "mourning" in pigeons_and_doves: a bare stub of mourning dove; its kin mournful was set for the word
+    kin of rock 65292 dropped (set for the bare word, not the thing): rock 2049
+  rock 65292 [wild city] goes into rock dove 8461 and is deleted; links move: pigeons_and_doves 2; shown: "rock" in pigeons_and_doves: a bare stub of rock dove (the feral pigeon group follows); its kin rock [stone] was set for the word
+  peacock 63688 [eyespot insect] goes into peacock butterfly 9024 and is deleted; links move: butterflies_and_moths 2; shown: "peacock" in butterflies_and_moths: a bare stub of the full term, which takes its link
+    kin of hawk 63686 dropped (set for the bare word, not the thing): hawking 5600, hawkish 39967
+  hawk 63686 [fast-flying insect] goes into hawk moth 9044 and is deleted; links move: butterflies_and_moths 3; shown: "hawk" in butterflies_and_moths: a bare stub of the full term, which takes its link
+  luna 63687 [green insect] goes into luna moth 9042 and is deleted; links move: butterflies_and_moths 2; shown: "luna" in butterflies_and_moths: a bare stub of luna moth (its bare text clashes with Luna, contract-dup-root)
+  queen 63694 [hive ruler] goes into queen bee 9057 and is deleted; links move: bees_and_wasps 2; shown: "queen" in bees_and_wasps: a bare stub of the full term, which takes its link
+  eagle 63656 [flat swimmer] goes into eagle ray 8797 and is deleted; links move: rays_and_eels 2; shown: "eagle" in rays_and_eels: a bare stub of the full term, which takes its link
+  manta 63054 [fish] goes into manta ray 1329 and is deleted; links move: rays_and_eels 1; shown: "manta" in rays_and_eels: a bare stub of the full term, which takes its link
+  moray 63055 [fish] goes into moray eel 1320 and is deleted; links move: rays_and_eels 2; shown: "moray" in rays_and_eels: a bare stub of moray eel (its bare text clashes with Moray, contract-dup-root)
+  great white 1330 [shark] goes into great white shark 8743 and is deleted; links move: sea_life 2: a second root of great white shark: the full term takes its link (sea life shows the full name)
+  hammerhead 1331 [shark] goes into hammerhead shark 51267 and is deleted; links move: sea_life 3, ocean_giants 4: a second root of hammerhead shark: the full term takes its links
+  Pacific octopus 65422 goes into giant Pacific octopus 8973 and is deleted; links move: ocean_giants 3; shown: "Pacific octopus" in ocean_giants: a second root of the giant Pacific octopus (shown as before: giant is a word of the theme name)
+  tanuki 63029 [Japanese] goes into tanuki 7974 and is deleted; links move: wild_dogs_and_foxes 4: a second root of tanuki: the Japanese raccoon dog is one animal in Japanese animals, Japanese folklore and wild dogs (left for step 3 by v433)
+    kin of bongo 9637 moves to bongo 50510: bongo 51388
+  bongo 9637 [animal] goes into bongo 50510 and is deleted; links move: african_animals 5, striped_animals 3: a second root of bongo [antelope]
+  boar 7931 [animal] goes into wild boar 9678 and is deleted; links move: hoofed_mammals 3: boar [animal] is the wild boar (sense-twin with boar [pig], the male pig): wild boar takes its link
+  Przewalski 63089 goes into Przewalski's horse 9483 and is deleted; links move: horses 5, horse_breeds 3, horse_family 3; shown: "Przewalski's" in horses, "Przewalski's" in horse_breeds, "Przewalski's" in horse_family: a bare stub of Przewalski's horse
+  Persian 63088 [long-haired] goes into Persian cat 9304 and is deleted; links move: cat_breeds 1; shown: "Persian" in cat_breeds: a second root of Persian cat
+  bobtail 63734 [cat] goes into Japanese bobtail 51171 and is deleted; links move: japanese_animals 2; shown: "bobtail" in japanese_animals: a bare stub of Japanese bobtail
+  Chin 63735 [dog] goes into Japanese Chin 51003 and is deleted; links move: japanese_animals 3; shown: "Chin" in japanese_animals: a bare stub of Japanese Chin
+  griffon 50612 [vulture] goes into Himalayan griffon 50604 and is deleted; links move: himalayan_animals 4; shown: "griffon" in himalayan_animals: the griffon of the Himalayas is the Himalayan griffon
+  Highland 9344 [cattle] goes into Highland cow 40202 and is deleted; links move: cattle_breeds 2; shown: "Highland" in cattle_breeds: the same breed as Highland cow 40202 (animals with horns)
+  holstein 9339 [cattle] goes into Holstein 9863 and is deleted; links move: cattle_breeds 1: the same breed as Holstein 9863 (proper: M-W and Oxford capitalise it); v376 kept the lowercase copy only because capitalising it would duplicate 9863, so the two now become one
+  Holstein 9863: gloss "cow" -> "cattle": fits both former roots (the breed)
+  cinnamon 64801 [colour morph] goes into cinnamon bear 7951 and is deleted: a bare stub of cinnamon bear, linked in the same three themes and grouped with it
+  text: Geoffroy's 63002 -> "Geoffroy's cat": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Geoffroy's cat 63002 in small_wild_cats: shown null -> "Geoffroy's": the theme shows the short word, as before
+  text: De Brazza's 63003 -> "De Brazza's monkey": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  De Brazza's monkey 63003 in monkeys: shown null -> "De Brazza's": the theme shows the short word, as before
+  text: Goeldi's 63004 -> "Goeldi's monkey": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Goeldi's monkey 63004 in monkeys: shown null -> "Goeldi's": the theme shows the short word, as before
+  text: Daubenton's 63030 -> "Daubenton's bat": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Daubenton's bat 63030 in bats: shown null -> "Daubenton's": the theme shows the short word, as before
+  text: Natterer's 63031 -> "Natterer's bat": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Natterer's bat 63031 in bats: shown null -> "Natterer's": the theme shows the short word, as before
+  text: Tengmalm's 63033 -> "Tengmalm's owl": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Tengmalm's owl 63033 in owls: shown null -> "Tengmalm's": the theme shows the short word, as before
+  text: saw-whet 63032 -> "saw-whet owl": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  saw-whet owl 63032 in owls: shown null -> "saw-whet": the theme shows the short word, as before
+  text: Bewick's 63039 -> "Bewick's swan": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Bewick's swan 63039 in geese_and_swans: shown null -> "Bewick's": the theme shows the short word, as before
+  text: Meyer's 63042 -> "Meyer's parrot": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Meyer's parrot 63042 in parrots: shown null -> "Meyer's": the theme shows the short word, as before
+  text: Nicobar 63043 -> "Nicobar pigeon": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Nicobar pigeon 63043 in pigeons_and_doves: shown null -> "Nicobar": the theme shows the short word, as before
+  text: Steller 63058 -> "Steller sea lion": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Steller sea lion 63058 in seals_and_sea_lions: shown null -> "Steller": the theme shows the short word, as before
+  text: Aldabra 63046 -> "Aldabra tortoise": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  Aldabra tortoise 63046 in turtles_and_tortoises: shown null -> "Aldabra": the theme shows the short word, as before
+  text: pink 63641 -> "pink salmon": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+  pink salmon 63641 in salmon_and_trout: shown null -> "pink": the theme shows the short word, as before
+  text: horned 65357 -> "horned frog": the full term; the bare possessive or modifier was a stub (LIBRARY-RULES 5)
+    its kin goes (it was set for the bare word): horn 10324, horn 10594, horn 46600
+  horned frog 65357 in frogs_and_toads: shown null -> "horned": the theme shows the short word, as before
+  jackass 63736 becomes a synonym alias of African penguin 8243 (familiarity 4); better typicality kept: penguins 3 -> 2: jackass penguin is another name of the African penguin: a synonym alias (reviewer); it keeps its offensive flag
+3. Two roots of one thing: the weaker becomes an alias in place (id kept) or goes into the stronger; the theme shows the old text where it needs it
+    alias mozzie 66206 (regional) moves to mosquito 1345
+  skeeter 1347 becomes a synonym alias of mosquito 1345 (familiarity 3, region US): US slang for mosquito, in all of mosquito's themes and grouped with it (contract-root-region); synonym, not regional: mosquito is the US word
+  moggy 1441 becomes a synonym alias of cat 1440 (familiarity 3, region UK/IE): British slang for a (non-pedigree) cat, grouped with cat in every theme it is in (contract-root-region)
+  maybug 1429 becomes a synonym alias of cockchafer 1428 (familiarity 5, region UK): another name of the cockchafer, grouped with it (contract-root-region)
+  may bug 9006 becomes a synonym alias of cockchafer 1428 (familiarity 4, region UK): maybug written apart: another name of the cockchafer
+    may bug 9006: nameOkIn insects_and_bugs (its text holds a word of the theme name; the root is linked)
+  bonxie 8136 becomes a synonym alias of great skua 8135 (familiarity 5, region UK): the Shetland name of the great skua, grouped with it (contract-root-region)
+  bin chicken 51194 becomes a synonym alias of ibis 1116 (familiarity 4, region AU); better typicality kept: australian_birds 4 -> 3: Australian slang for the ibis, grouped with it (contract-root-region)
+  shippon 57686 becomes a synonym alias of cowshed 38174 (familiarity 5, region UK): a dialect word for a cowshed, grouped with it in every theme (contract-root-region); byre is cowshed's UK regional alias
+  dino 9970 becomes a abbreviation alias of dinosaur 1551 (familiarity 1): short for dinosaur, grouped with it
+  Van cat 63097 becomes a synonym alias of Turkish Van 9338 (familiarity 4); links move: turkish_animals 1; shown: "Van cat" in turkish_animals: the same breed
+    Van cat 63097: nameOkIn cat_breeds (its text holds a word of the theme name; the root is linked)
+  Angora cat 9664 becomes a synonym alias of Turkish Angora 9318 (familiarity 3); links move: turkish_animals 2; shown: "Angora cat" in turkish_animals: the same breed
+    Angora cat 9664: nameOkIn cat_breeds (its text holds a word of the theme name; the root is linked)
+  spectacled cobra 63098 becomes a synonym alias of Indian cobra 9695 (familiarity 4); links move: indian_animals 2; shown: "spectacled cobra" in indian_animals: another name of the Indian cobra
+  rhesus macaque 51127 becomes a synonym alias of rhesus monkey 7814 (familiarity 3); links move: indian_animals 3: the same monkey
+  pink dolphin 40146 becomes a synonym alias of pink river dolphin 9722 (familiarity 3); links move: pink_animals 2, pink_things 4; shown: "river dolphin" in pink_animals, "river dolphin" in pink_things: the Amazon river dolphin
+    pink dolphin 40146: nameOkIn pink_animals, pink_things (its text holds a word of the theme name; the root is linked)
+  boto 63300 becomes a synonym alias of pink river dolphin 9722 (familiarity 4); links move: whales_and_dolphins 4; shown: "river dolphin" in pink_animals, "river dolphin" in pink_things, "boto" in whales_and_dolphins: the Amazon river dolphin (its Portuguese name; contract-dup-root with Boto)
+    pink dolphin 40146: nameOkIn whales_and_dolphins (its text holds a word of the theme name; the root is linked)
+  Mitchell's cockatoo 63122 becomes a synonym alias of pink cockatoo 8295 (familiarity 4); links move: pink_animals 2: Major Mitchell's cockatoo is the pink cockatoo (the common name is the root, reviewer); pink animals holds it with nameOkIn: the full name
+  marine turtle 51268 becomes a synonym alias of sea turtle 1293 (familiarity 3); links move: galapagos_animals 4: another name of the sea turtle
+    marine turtle 51268: nameOkIn turtles_and_tortoises, marine_animals (its text holds a word of the theme name; the root is linked)
+  out of wild_dogs_and_foxes: Tasmanian wolf 7994: a marsupial (the thylacine), not a dog or fox (now in no theme)
+  Tasmanian wolf 7994 becomes a synonym alias of thylacine 1606 (familiarity 4): another name of the thylacine (Tasmanian tiger is grouped with it)
+  painted dog 7970 becomes a synonym alias of African wild dog 7969 (familiarity 4); links move: african_animals 4; shown: "painted dog" in african_animals: another name of the African wild dog, grouped with it
+  painted wolf 63574 becomes a synonym alias of African wild dog 7969 (familiarity 4); links move: wild_dogs_and_foxes 3; shown: "painted wolf" in wild_dogs_and_foxes: another name of the African wild dog
+    painted dog 7970: nameOkIn wild_dogs_and_foxes (its text holds a word of the theme name; the root is linked)
+  grey parrot 63095 becomes a synonym alias of African grey 8265 (familiarity 3); links move: african_birds 2; shown: "grey parrot" in african_birds: the same parrot
+    grey parrot 63095: nameOkIn parrots (its text holds a word of the theme name; the root is linked)
+  little blue penguin 51218 becomes a synonym alias of little penguin 8241 (familiarity 4); links move: new_zealand_animals 3: the same penguin (blue, fairy and little penguin and korora are grouped with it)
+    little blue penguin 51218: nameOkIn penguins (its text holds a word of the theme name; the root is linked)
+  Andean mountain cat 7800 becomes a synonym alias of Andean cat 9804 (familiarity 5); links move: small_wild_cats 4: the same cat
+    Andean mountain cat 7800: nameOkIn mountain_animals, andean_animals, small_wild_cats (its text holds a word of the theme name; the root is linked)
+  mountain cat 63744 becomes a synonym alias of Andean cat 9804 (familiarity 5): the same cat, grouped with it
+    mountain cat 63744: nameOkIn mountain_animals, small_wild_cats (its text holds a word of the theme name; the root is linked)
+  wisent 63116 becomes a synonym alias of European bison 9741 (familiarity 4); links move: european_animals 2; shown: "wisent" in european_animals: the European bison
+  colobus 7816 becomes a synonym alias of colobus monkey 9859 (familiarity 4); links move: primates 4, ends_with_bus 4: the same monkey
+  Sumatran rhino 9792 becomes a abbreviation alias of Sumatran rhinoceros 51173 (familiarity 4); links move: rainforest_animals 4, endangered_animals 4: the same animal, rhino short for rhinoceros
+  out of himalayan_animals: Kodiak 7948: a North American bear, not a Himalayan one (stays in hibernating_animals, taiga)
+  out of himalayan_animals: grizzly bear 7946: a North American bear, not a Himalayan one (stays in north_american_animals, hibernating_animals, turkish_animals, european_animals, alpine_animals, taiga, national_animals)
+  out of himalayan_animals: grizzly 7945: a North American bear, not a Himalayan one (stays in turkish_animals, european_animals, alpine_animals, hibernating_animals, taiga, national_animals)
+  Kodiak 7948 becomes a abbreviation alias of Kodiak bear 7947 (familiarity 3): the same bear, grouped with it
+  loggerhead 8569 becomes a abbreviation alias of loggerhead turtle 8610 (familiarity 4); links move: migrating_animals 4, ocean_animals 4: the same turtle
+  out of sea_reptiles: leatherback 1202 [turtle]: a living animal or a monster, not a prehistoric sea reptile (stays in reptiles_and_amphibians, animals_with_shells)
+  out of sea_reptiles: sea turtle 1293: a living animal or a monster, not a prehistoric sea reptile (stays in turtles_and_tortoises, reef_life, migrating_animals, animals_with_shells, ocean, endangered_animals, aquarium, marine_animals, ocean_animals, sea_life, galapagos_animals)
+  out of sea_reptiles: saltwater crocodile 8612: a living animal or a monster, not a prehistoric sea reptile (stays in crocodilians, ocean_giants, australian_animals, southeast_asian_animals, deadly_creatures)
+  out of sea_reptiles: sea snake 1328: a living animal or a monster, not a prehistoric sea reptile (stays in sea_life, snakes, reef_life, venomous_animals, venomous_snakes, sea_blank)
+  out of sea_reptiles: marine iguana 1200: a living animal or a monster, not a prehistoric sea reptile (stays in reptiles_and_amphibians, lizards, spiny_animals, galapagos_animals)
+  out of sea_reptiles: Nessie 10022 [monster]: a living animal or a monster, not a prehistoric sea reptile (stays in cryptids, sea_monsters)
+  leatherback 1202 becomes a abbreviation alias of leatherback turtle 8609 (familiarity 4); links move: reptiles_and_amphibians 4, animals_with_shells 5; shown: "leatherback" in reptiles_and_amphibians: the same turtle
+  hawksbill 8571 becomes a abbreviation alias of hawksbill turtle 8912 (familiarity 4); links move: animals_with_shells 3: the same turtle
+  bush baby 9914 becomes a spelling alias of bushbaby 7820 (familiarity 3); links move: hopping_animals 3: bushbaby written apart
+  bumble bee 9851 becomes a spelling alias of bumblebee 1383 (familiarity 1): bumblebee written apart, grouped with it
+    bumble bee 9851: nameOkIn bees_and_wasps (its text holds a word of the theme name; the root is linked)
+  yellow jacket 9825 becomes a spelling alias of yellowjacket 1409 (familiarity 3); links move: venomous_animals 4: yellowjacket written apart
+  glow-worm 9018 becomes a spelling alias of glowworm 1415 (familiarity 3, region UK); links move: beetles 4, nocturnal_animals 3: the British spelling (Oxford: glow-worm; M-W: glowworm)
+    glow-worm 9018: nameOkIn worms (its text holds a word of the theme name; the root is linked)
+  cranefly 9124 becomes a spelling alias of crane fly 1386 (familiarity 3); links move: garden_bugs 4: crane fly written as one word
+  mouse-deer 51176 becomes a spelling alias of mouse deer 9693 (familiarity 4); links move: southeast_asian_animals 4: mouse deer with a hyphen
+  mallee fowl 60034 becomes a spelling alias of malleefowl 51186 (familiarity 5); links move: australian_animals 5: malleefowl written apart
+  hammerkop 50706 becomes a spelling alias of hamerkop 51103 (familiarity 4); links move: wading_birds 5: the commoner spelling is hamerkop
+  seagrass 1339 becomes a spelling alias of sea grass 1291 (familiarity 4); links move: plants 5: sea grass written as one word, grouped with it
+  cony 8083 becomes a spelling alias of coney 8084 (familiarity 5): the same word, grouped with it
+  oxen 9452 becomes a form alias of ox 162 (familiarity 2): the plural of ox, grouped with it
+  antennae 9135 becomes a form alias of antenna 10338 (familiarity 3): the plural of antenna, grouped with it
+  whitetail 63024 becomes a synonym alias of white-tailed deer 9733 (familiarity 3); links move: deer 2; shown: "whitetail" in deer: the same deer
+  Darwin's finches 41021 becomes a form alias of Darwin's finch 51251 (familiarity 4); links move: evolution_words 3, finches 3; shown: "Darwin's" in finches: the plural
+    Darwin's finches 41021: nameOkIn finches (its text holds a word of the theme name; the root is linked)
+  star tortoise 63100 becomes a synonym alias of Indian star tortoise 8604 (familiarity 4); links move: indian_animals 4; shown: "star tortoise" in indian_animals: the same tortoise
+    star tortoise 63100: nameOkIn turtles_and_tortoises (its text holds a word of the theme name; the root is linked)
+  mugger crocodile 8624 becomes a synonym alias of mugger 8633 (familiarity 5); links move: indian_animals 4: the same crocodile
+  marsh crocodile 8637 becomes a synonym alias of mugger 8633 (familiarity 5): another name of the mugger, grouped with it
+  swamp crocodile 8635 becomes a synonym alias of mugger 8633 (familiarity 4): another name of the mugger
+  beluga whale 9748 becomes a synonym alias of beluga 1309 (familiarity 3); links move: arctic_animals 2, whales_and_dolphins 3: the same whale
+    beluga whale 9748: nameOkIn whales_and_dolphins (its text holds a word of the theme name; the root is linked)
+4. Belonging (LIBRARY-RULES 6, Themes: every member belongs unambiguously; never the bare category word; no word beside its own kinds)
+  out of big_cats: pride 7763 [lions]: not a big cat (a group, a young animal, a description) (stays in collective_nouns, safari_words)
+  out of big_cats: cub 7762 [animal]: not a big cat (a group, a young animal, a description) (stays in baby_animals)
+  out of big_cats: maneater 7767: not a big cat (a group, a young animal, a description) (now in no theme)
+  group in big_cats: lion 215 = African lion 7754 = Asiatic lion 7755 = Barbary lion 7760 = lioness 7756 = king of the jungle 7766: king of the jungle is a name for the lion: one answer
+  out of whales_and_dolphins: cetacean 7893: the bare category word / a river (place), not a whale or dolphin (stays in sea_mammals, animal_adjectives)
+  out of whales_and_dolphins: Irrawaddy 36797: the bare category word / a river (place), not a whale or dolphin (stays in famous_rivers, asian_rivers)
+  out of marsupials: marsupial 7919: the bare category word, a body part or a young animal, not a marsupial (now in no theme)
+  out of marsupials: pouch 7918 [marsupial]: the bare category word, a body part or a young animal, not a marsupial (now in no theme)
+  out of marsupials: joey 9702 [baby kangaroo]: the bare category word, a body part or a young animal, not a marsupial (stays in australian_animals, hopping_animals, baby_animals)
+  out of bats: roost 8056 [bats]: not a bat (a home, a group, an ability) (now in no theme)
+  out of bats: colony 8057 [bats]: not a bat (a home, a group, an ability) (now in no theme)
+  out of bats: echolocation 3341: not a bat (a home, a group, an ability) (stays in acoustics_words)
+  out of rabbits_and_hares: buck 8078 [rabbit]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (now in no theme)
+  out of rabbits_and_hares: doe 8077 [rabbit]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (now in no theme)
+  out of rabbits_and_hares: kit 8079 [rabbit]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (now in no theme)
+  out of rabbits_and_hares: leveret 8080: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in baby_animals)
+  out of rabbits_and_hares: hutch 10163 [rabbit home]: a home, not a rabbit or hare (in animal homes) (stays in animal_homes, pet_supplies, farmyard_shelters)
+  out of rabbits_and_hares: burrow 8082 [rabbit]: a home, not a rabbit or hare (in animal homes) (now in no theme)
+  out of rabbits_and_hares: warren 8081 [rabbit]: a home, not a rabbit or hare (in animal homes) (stays in animal_homes, homes_of_wild_mammals)
+  out of wild_dogs_and_foxes: vixen 7995 [fox]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in female_animals)
+  out of deer: Bambi 50506 [deer]: a fictional character, not a kind of deer (now in no theme)
+  out of deer: Rudolph 25017: a fictional character, not a kind of deer (stays in christmas, santa_s_reindeer)
+  out of mammals_that_live_in_water: elephant 979 [animal]: not an aquatic mammal (stays in mammals, working_animals, savanna_animals, animals_with_tusks, savanna, national_animals, huge_things, heavy_things, animal_powered_travel, safari_words, zoo, southeast_asian_animals, things_you_ride, zoo_animals, four_legged_animals, things_with_tails)
+  out of birds_of_prey: bird of prey 8119: the theme's own name, the bare category word (now in no theme)
+  out of birds_of_prey: raptor 8118 [bird]: the theme's own name, the bare category word (now in no theme)
+  out of birds_of_prey: talon 8120 [bird]: a body part, not a bird (stays in bird_body_parts, animal_body_parts, what_a_bird_stands_on, bird_parts)
+  out of owls: owlet 10135: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in baby_animals)
+  out of owls: Hedwig 50579 [owl]: a fictional owl (Harry Potter), not a kind of owl (now in no theme)
+  out of eagles: eaglet 10134: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in baby_animals)
+  group in eagles: bald eagle 2528 = American eagle 50597: American eagle is the bald eagle: one answer
+  out of crows_and_ravens: murder 10240 [crows]: a collective noun / the bare category word (stays in collective_nouns)
+  out of crows_and_ravens: corvid 50653: a collective noun / the bare category word (now in no theme)
+  out of ducks: duckling 10128: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in baby_animals, yellow_things, fluffy_things, signs_of_spring)
+  out of ducks: drake 1480 [male duck]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in domestic_animals, farm_animals, male_animals, rhymes_with_cake)
+  out of ducks: rubber 65266 [bath toy]: the bath toy (rubber duck), not a duck (now in no theme)
+  out of geese_and_swans: gosling 10131: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in baby_animals)
+  out of geese_and_swans: cygnet 41073 [young swan]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in life_cycle_words, baby_animals)
+  out of geese_and_swans: gander 1481 [male goose]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in domestic_animals, farm_animals, male_animals)
+  out of geese_and_swans: cob 10287 [male swan]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in male_animals)
+  out of geese_and_swans: pen 50686 [female swan]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in female_animals, numbers_with_the_first_letter_changed)
+  out of wading_birds: wader 32072: the bare category word (wading bird) (stays in wetlands)
+  out of flightless_birds: flightless 8256: an adjective / the bare category word (now in no theme)
+  out of flightless_birds: ratite 8257: an adjective / the bare category word (now in no theme)
+  out of penguins: Antarctic penguin 51227: not a species: a description that fits several (stays in antarctic_coast, antarctic_research_station)
+  out of parrots: polly 8297 [parrot]: a pet name / a comedy parrot (Monty Python), not a kind of parrot (now in no theme)
+  out of parrots: Norwegian blue 8298 [parrot]: a pet name / a comedy parrot (Monty Python), not a kind of parrot (now in no theme)
+  out of game_birds: gun dog 8321 [game]: a word of the shoot, not a game bird (stays in hunting_words)
+  out of game_birds: shoot 8323 [game]: a word of the shoot, not a game bird (now in no theme)
+  out of game_birds: beater 8322 [game]: a word of the shoot, not a game bird (now in no theme)
+  out of game_birds: brace 8319 [game]: a word of the shoot, not a game bird (now in no theme)
+  out of game_birds: covey 8320: a word of the shoot, not a game bird (stays in collective_nouns)
+  out of bird_body_parts: drumstick 8407 [bird]: a cut of cooked poultry, not a part of a living bird (now in no theme)
+  out of local_status_labels: migration 8419 [birds]: not a status label (resident, vagrant, summer visitor ...) (stays in birdwatching_words)
+  out of pigeons_and_doves: coo 8493 [dove]: a sound, a young bird or a home, not a pigeon or dove (stays in animal_sounds, rhymes_with_blue, baby_milestones)
+  out of pigeons_and_doves: squab 8486: a sound, a young bird or a home, not a pigeon or dove (stays in baby_animals, poultry)
+  out of pigeons_and_doves: dovecote 8491: a sound, a young bird or a home, not a pigeon or dove (stays in animal_homes, farm_buildings, homes_for_birds)
+  out of pigeons_and_doves: pigeon loft 8492: a sound, a young bird or a home, not a pigeon or dove (stays in farm_buildings)
+  pink pigeon 9921 in pigeons_and_doves: shown "pigeon" -> "pink": shown "pigeon" leaked the theme name; the modifier is what identifies it
+  spotted dolphin 9857 in whales_and_dolphins: shown "dolphin" -> "spotted": shown "dolphin" leaked the theme name
+  carrier pigeon 4629: type "phrase" -> "common": a common noun, not a set phrase (LIBRARY-RULES 4, type)
+  out of venomous_snakes: venomous snake 50724: the theme's own name (now in no theme)
+  out of constrictor_snakes: constrictor 50741: the bare category word (now in no theme)
+  out of constrictor_snakes: Kaa 50745 [python]: a fictional python (The Jungle Book) (now in no theme)
+  garter 63617 [snake] goes into garter snake 1192 and is deleted; links move: american_serpents 2: a bare stub of the full snake name, which takes its link (no word of "American serpents" in it)
+  coral 63615 [snake] goes into coral snake 1191 and is deleted; links move: american_serpents 3: a bare stub of the full snake name, which takes its link (no word of "American serpents" in it)
+  corn 63616 [snake] goes into corn snake 8507 and is deleted; links move: american_serpents 3: a bare stub of the full snake name, which takes its link (no word of "American serpents" in it)
+  out of turtles_and_tortoises: shell 8599 [turtle]: a body part or a young animal, not a turtle (now in no theme)
+  out of turtles_and_tortoises: carapace 8597: a body part or a young animal, not a turtle (stays in animal_body_parts, animal_coverings)
+  out of turtles_and_tortoises: plastron 8598 [shell]: a body part or a young animal, not a turtle (stays in animal_body_parts)
+  out of turtles_and_tortoises: hatchling 8596 [turtle]: a body part or a young animal, not a turtle (now in no theme)
+  out of turtles_and_tortoises: Lonesome George 8611 [tortoise]: one famous tortoise, not a kind (he stays in Galápagos animals and extinct animals) (stays in extinct_animals, galapagos_animals)
+  out of crocodilians: crocodilian 8634: the bare category word (stays in animal_adjectives)
+  out of frogs_and_toads: croak 8673 [frog]: a sound, eggs, a young frog or a lily pad, not a frog or toad (stays in animal_sounds, ways_of_speaking, hidden_trees, voice_sounds)
+  out of frogs_and_toads: ribbit 8674 [frog]: a sound, eggs, a young frog or a lily pad, not a frog or toad (stays in animal_sounds)
+  out of frogs_and_toads: spawn 8672 [frog]: a sound, eggs, a young frog or a lily pad, not a frog or toad (now in no theme)
+  out of frogs_and_toads: frogspawn 8676: a sound, eggs, a young frog or a lily pad, not a frog or toad (stays in signs_of_spring, pond)
+  out of frogs_and_toads: lily pad 8675: a sound, eggs, a young frog or a lily pad, not a frog or toad (stays in pond, things_that_float)
+  out of frogs_and_toads: froglet 8671: a sound, eggs, a young frog or a lily pad, not a frog or toad (stays in life_cycle_words)
+  out of frogs_and_toads: toadlet 8677: a sound, eggs, a young frog or a lily pad, not a frog or toad (now in no theme)
+  out of frogs_and_toads: tadpole 1163: a sound, eggs, a young frog or a lily pad, not a frog or toad (stays in reptiles_and_amphibians, baby_animals, pond, things_with_tails, life_cycle_words, things_that_swim, signs_of_spring)
+  out of frogs_and_toads: Kermit 8670 [frog]: a puppet (The Muppets), not a kind of frog (stays in green_things)
+  out of salamanders_and_newts: gill 10334 [animal]: a body part, a young stage or the bare category word (stays in animal_body_parts, fish_body_parts, parts_of_water_animals)
+  out of salamanders_and_newts: larva 8710 [amphibian]: a body part, a young stage or the bare category word (now in no theme)
+  out of salamanders_and_newts: caudate 8706: a body part, a young stage or the bare category word (now in no theme)
+  out of salamanders_and_newts: urodele 8707: a body part, a young stage or the bare category word (now in no theme)
+  out of salmon_and_trout: lox 17792 [salmon]: a food (smoked salmon), not a salmon or trout (stays in cured_meats, words_from_yiddish, salty_foods, cured_fish)
+  out of salmon_and_trout: fingerling 41059: a life stage of a salmon (or its nest), not a kind of salmon or trout (stays in life_cycle_words, baby_animals)
+  out of salmon_and_trout: alevin 50760: a life stage of a salmon (or its nest), not a kind of salmon or trout (stays in baby_animals, starts_with_ale)
+  out of salmon_and_trout: parr 10142: a life stage of a salmon (or its nest), not a kind of salmon or trout (stays in baby_animals, life_cycle_words)
+  out of salmon_and_trout: smolt 10143: a life stage of a salmon (or its nest), not a kind of salmon or trout (stays in baby_animals, life_cycle_words)
+  out of salmon_and_trout: kelt 50761: a life stage of a salmon (or its nest), not a kind of salmon or trout (now in no theme)
+  out of salmon_and_trout: grilse 50759: a life stage of a salmon (or its nest), not a kind of salmon or trout (now in no theme)
+  out of salmon_and_trout: redd 50762: a life stage of a salmon (or its nest), not a kind of salmon or trout (now in no theme)
+  out of tropical_fish: goldfish 1214: a cold-water fish, not a tropical one (stays in fish, domestic_animals, freshwater_fish, pets, starts_with_a_color, pond, orange_things, hidden_colors, blank_fish, things_that_swim, egg_laying_animals)
+  out of tropical_fish: koi 1239: a cold-water fish, not a tropical one (stays in fish, freshwater_fish, pets, words_from_japanese, japanese_garden, pond, orange_things, japanese_animals)
+  out of rays_and_eels: elver 8808: a young eel, not a kind (stays in baby_animals, life_cycle_words)
+  out of deep_sea_fish: giant squid 1318: a cephalopod, not a fish (stays in sea_life, ocean_giants, tentacled_animals, cephalopods, sea_monsters, squid_types)
+  out of deep_sea_fish: dumbo octopus 8832: a cephalopod, not a fish (stays in tentacled_animals, cephalopods)
+  out of deep_sea_fish: vampire squid 8831: a cephalopod, not a fish (stays in tentacled_animals, cephalopods, ocean, marine_animals, squid_types)
+  out of fish_body_parts: fillet 17671 [meat]: a cut of meat, not a part of a living fish (stays in cuts_of_meat, ways_to_cut_food)
+  out of sea_life: calamari 486: squid as food (squid is a member) (stays in seafood_dishes, deep_fried_foods, cephalopods, chewy_foods, meat_and_seafood, mollusks, tentacled_animals, things_with_arms)
+  out of mollusks: calamari 486: squid as food (squid is a member) (stays in seafood_dishes, deep_fried_foods, cephalopods, chewy_foods, meat_and_seafood, tentacled_animals, things_with_arms)
+  out of cephalopods: calamari 486: squid as food (squid is a member) (stays in seafood_dishes, deep_fried_foods, chewy_foods, meat_and_seafood, tentacled_animals, things_with_arms)
+  out of tentacled_animals: calamari 486: squid as food (squid is a member) (stays in seafood_dishes, deep_fried_foods, chewy_foods, meat_and_seafood, things_with_arms)
+  out of sea_life: uni 503: sea urchin roe as food (sea urchin is a member) (stays in meat_and_seafood, shellfish, reef_life, starfish_and_sea_urchins, spiny_animals, rock_pool, prickly_things, things_with_shells, things_that_sting, animals_covered_in_spikes)
+  out of reef_life: uni 503: sea urchin roe as food (sea urchin is a member) (stays in meat_and_seafood, shellfish, starfish_and_sea_urchins, spiny_animals, rock_pool, prickly_things, things_with_shells, things_that_sting, animals_covered_in_spikes)
+  out of starfish_and_sea_urchins: uni 503: sea urchin roe as food (sea urchin is a member) (stays in meat_and_seafood, shellfish, spiny_animals, rock_pool, prickly_things, things_with_shells, things_that_sting, animals_covered_in_spikes)
+  out of spiny_animals: uni 503: sea urchin roe as food (sea urchin is a member) (stays in meat_and_seafood, shellfish, rock_pool, prickly_things, things_with_shells, things_that_sting, animals_covered_in_spikes)
+  out of mollusks: mollusc 8896: the theme's own word, the bare category word (now in no theme)
+  text: mollusc 8896 -> "mollusk": US spelling for the root (contract-root-region: the UK spelling was the root and the library had no mollusk)
+  mollusk 8896: region ["UK"] -> []: the root is the US form
+  new alias: mollusc 68139 (spelling UK, familiarity 3) of mollusk 8896: the UK spelling
+  out of cephalopods: cephalopod 8895: the bare category word (stays in mollusks, tentacled_animals)
+  out of tentacled_animals: cephalopod 8895: the bare category word (stays in mollusks)
+  out of cephalopods: Kraken 6947 [sea monster]: a sea monster of legend (in mythical creatures and sea monsters) (stays in mythology, ocean_giants, tentacled_animals, mythical_creatures, sea_monsters)
+  out of ocean_giants: Kraken 6947 [sea monster]: a sea monster of legend (in mythical creatures and sea monsters) (stays in mythology, tentacled_animals, mythical_creatures, sea_monsters)
+  out of tentacled_animals: Kraken 6947 [sea monster]: a sea monster of legend (in mythical creatures and sea monsters) (stays in mythology, mythical_creatures, sea_monsters)
+  out of cephalopods: tentacle 8933: a body part, not an animal (stays in jellyfish_and_relatives, animal_body_parts, parts_of_water_animals)
+  out of jellyfish_and_relatives: tentacle 8933: a body part, not an animal (stays in animal_body_parts, parts_of_water_animals)
+  out of jellyfish_and_relatives: nematocyst 8934: a stinging cell, not an animal (now in no theme)
+  out of sea_mammals: pinniped 8905: the bare category word (stays in seals_and_sea_lions)
+  out of seals_and_sea_lions: pinniped 8905: the bare category word (now in no theme)
+  out of sea_mammals: cetacean 7893: the bare category word (stays in animal_adjectives)
+  out of seals_and_sea_lions: pup 10133 [young seal]: a young seal or a place, not a seal (stays in baby_animals, palindromes)
+  out of seals_and_sea_lions: rookery 10175: a young seal or a place, not a seal (stays in animal_homes, antarctic_coast, homes_for_birds)
+  out of seals_and_sea_lions: haul-out 50818: a young seal or a place, not a seal (now in no theme)
+  out of seals_and_sea_lions: selkie 22262: a creature of folklore, not a seal (stays in mythical_creatures, fairy_folk, celtic_folklore, shapeshifters)
+  out of seaweeds: seaweed salad 18998: a food or product, not a seaweed (stays in salads)
+  out of seaweeds: agar 19917 [gelling agent]: a food or product, not a seaweed (stays in in_the_pantry)
+  out of seaweeds: spirulina 8949: a food or product, not a seaweed (stays in superfoods, supplements)
+  out of seaweeds: sea grass 1291 [seagrass]: a flowering plant, not a seaweed (stays in foraging_finds, water_plants, rock_pool, beachcombing_finds, coastal_plants, ocean, beach, chip_flavors, sea_life, slippery_things, umami_foods, things_that_float, green_things, plants)
+  out of seaweeds: eelgrass 8953: a flowering plant, not a seaweed (stays in water_plants, coastal_plants)
+  out of starfish_and_sea_urchins: tube feet 8987: a body part, the bare category word, or a sea cucumber (now in no theme)
+  out of starfish_and_sea_urchins: echinoderm 8986: a body part, the bare category word, or a sea cucumber (now in no theme)
+  out of starfish_and_sea_urchins: holothurian 63062: a body part, the bare category word, or a sea cucumber (now in no theme)
+  out of spiders: spider crab 8861: a crab, not a spider (stays in crustaceans, animals_with_shells, spiny_animals, crab_types)
+  out of spiders: arachnid 9112: the bare category word, a young spider or a body part (now in no theme)
+  out of spiders: spiderling 9113: the bare category word, a young spider or a body part (stays in baby_animals)
+  out of spiders: spinneret 9115: the bare category word, a young spider or a body part (now in no theme)
+  out of insect_body_parts: cuticle 9138 [nail]: cuticle [nail], the human sense; insects have an exoskeleton (a member) (stays in hands_and_feet, skin_words, nail_care, hand_parts)
+  out of biting_bugs: bee 1342 [insect]: it stings, it does not bite or suck blood (the theme note); in venomous animals (stays in insects_and_bugs, bees_and_wasps, garden_bugs, venomous_animals, pollinators, sounds_like_a_letter, garden_helpers, meadow, things_that_fly, things_that_sting, winged_creatures, minibeasts, things_with_wings, egg_laying_animals, signs_of_summer)
+  out of biting_bugs: wasp 1343: it stings, it does not bite or suck blood (the theme note); in venomous animals (stays in insects_and_bugs, bees_and_wasps, city_animals, venomous_animals, striped_animals, pollinators, household_pests, yellow_things, things_that_sting, hidden_insects, things_with_wings, signs_of_summer)
+  out of biting_bugs: hornet 1382: it stings, it does not bite or suck blood (the theme note); in venomous animals (stays in insects_and_bugs, bees_and_wasps, venomous_animals, striped_animals, things_that_sting, starts_with_a_musical_instrument, starts_with_horn, things_with_wings)
+  out of ants_and_termites: colony 10242 [ants]: a group or a home, not an ant (stays in collective_nouns)
+  out of ants_and_termites: anthill 9227: a group or a home, not an ant (stays in animal_homes)
+  out of ants_and_termites: formicary 9230: a group or a home, not an ant (stays in animal_homes)
+  out of ants_and_termites: antlion 1434: an insect larva of another order, not an ant (stays in insects_and_bugs)
+  group in butterflies_and_moths: purple emperor 9033 leaves emperor moth = purple emperor: the purple emperor (a butterfly) is not the emperor moth: two answers
+  out of domestic_animals: livestock 1476: the bare category word (now in no theme)
+  out of terriers: Toto 50973 [terrier]: a fictional dog (The Wizard of Oz) (now in no theme)
+  Silky terrier 50969 in terriers: shown "silky" -> "Silky": a show keeps the root's case (LIBRARY-RULES 4, show)
+  out of toy_dogs: toy dog 51015: the theme's own word or a category, not a breed (now in no theme)
+  out of toy_dogs: lapdog 51017: the theme's own word or a category, not a breed (now in no theme)
+  out of toy_dogs: teacup dog 51016: the theme's own word or a category, not a breed (now in no theme)
+  out of herding_dogs: Lassie 51048 [collie]: a fictional collie (now in no theme)
+  out of horse_tack: blanket 3668 [bedding]: blanket [bedding]; the horse's blanket is the saddle blanket (a member) (stays in sleep, bedding, picnic_basket, bedroom, emergency_supplies, cozy_things, soft_things, beach_gear)
+  out of horse_family: equid 9625: the bare category word (now in no theme)
+  out of horse_family: Equus 9626: the bare category word (now in no theme)
+  group in horses: horse 153 leaves mustang = wild horse = horse: a mustang is a kind of horse, not the same answer as horse
+  group in horse_family: horse 153 leaves mustang = wild horse = horse = feral horse: a mustang is a kind of horse, not the same answer as horse
+  out of wild_pigs: Pumbaa 50562 [warthog]: a fictional warthog (The Lion King) (now in no theme)
+  out of turkish_animals: grizzly bear 7946: the North American brown bear (stays in north_american_animals, hibernating_animals, european_animals, alpine_animals, taiga, national_animals)
+  out of turkish_animals: grizzly 7945: the North American brown bear (stays in european_animals, alpine_animals, hibernating_animals, taiga, national_animals)
+  out of european_animals: grizzly bear 7946: the North American brown bear (stays in north_american_animals, hibernating_animals, alpine_animals, taiga, national_animals)
+  out of european_animals: grizzly 7945: the North American brown bear (stays in alpine_animals, hibernating_animals, taiga, national_animals)
+  out of alpine_animals: grizzly bear 7946: the North American brown bear (stays in north_american_animals, hibernating_animals, taiga, national_animals)
+  out of alpine_animals: grizzly 7945: the North American brown bear (stays in hibernating_animals, taiga, national_animals)
+  out of turkish_animals: timber wolf 7966: the North American name of the gray wolf (gray wolf is a member) (stays in wild_dogs_and_foxes, north_american_animals, european_animals, taiga)
+  out of european_animals: timber wolf 7966: the North American name of the gray wolf (gray wolf is a member) (stays in wild_dogs_and_foxes, north_american_animals, taiga)
+  out of turkish_animals: Caretta caretta 9667: the Latin name of the loggerhead turtle (a member) (now in no theme)
+  out of himalayan_animals: newt 1147: not a Himalayan animal (typicality 5) (stays in reptiles_and_amphibians, salamanders_and_newts, hibernating_animals, insect_eaters, garden_helpers, pond, cold_blooded_animals, egg_laying_animals)
+  out of himalayan_animals: eft 1148: not a Himalayan animal (typicality 5) (stays in hibernating_animals, insect_eaters, garden_helpers, pond, reptiles_and_amphibians, salamanders_and_newts, alpine_animals, cold_blooded_animals)
+  out of alpine_animals: eft 1148: a young newt, not an Alpine animal (Alpine newt is a member) (stays in hibernating_animals, insect_eaters, garden_helpers, pond, reptiles_and_amphibians, salamanders_and_newts, cold_blooded_animals)
+  out of australian_animals: joey 9702 [baby kangaroo]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (stays in hopping_animals, baby_animals)
+  out of prehistoric_life: Jurassic 1610: a period or a supercontinent, not a creature (in prehistoric periods) (stays in prehistoric_periods)
+  out of prehistoric_life: Cretaceous 1611: a period or a supercontinent, not a creature (in prehistoric periods) (stays in prehistoric_periods)
+  out of prehistoric_life: Triassic 1612: a period or a supercontinent, not a creature (in prehistoric periods) (stays in prehistoric_periods)
+  out of prehistoric_life: Mesozoic 1607: a period or a supercontinent, not a creature (in prehistoric periods) (stays in prehistoric_periods)
+  out of prehistoric_life: Cambrian 1619: a period or a supercontinent, not a creature (in prehistoric periods) (stays in prehistoric_periods)
+  out of prehistoric_life: Cenozoic 1609: a period or a supercontinent, not a creature (in prehistoric periods) (stays in prehistoric_periods)
+  out of prehistoric_life: Paleozoic 1608: a period or a supercontinent, not a creature (in prehistoric periods) (stays in prehistoric_periods)
+  out of prehistoric_life: Ice Age 1613: a period or a supercontinent, not a creature (in prehistoric periods) (stays in historical_periods, prehistoric_periods, stone_age, ages_of_history, ice_blank)
+  out of prehistoric_life: Pangaea 1620: a period or a supercontinent, not a creature (in prehistoric periods) (stays in continents_and_supercontinents)
+  out of prehistoric_life: fossil record 1621: a word of the science, not a creature (in dinosaur science) (stays in fossils)
+  out of prehistoric_life: paleontologist 1616: a word of the science, not a creature (in dinosaur science) (stays in dinosaur_words, fossils, science_jobs)
+  out of prehistoric_life: carnivore 1627 [animal]: a word of the science, not a creature (in dinosaur science) (stays in dinosaur_words, animal_diets, ecology_words)
+  out of prehistoric_life: herbivore 1626: a word of the science, not a creature (in dinosaur science) (stays in dinosaur_words, animal_diets, ecology_words)
+  out of prehistoric_life: extinction 1614: a word of the science, not a creature (in dinosaur science) (stays in dinosaur_words, evolution_words)
+  out of prehistoric_life: amber 1615 [fossil resin]: a word of the science, not a creature (in dinosaur science) (stays in fossils, beachcombing_finds, gemstones, precious_materials, yellow_things, orange_things, dinosaur_words)
+  out of prehistoric_life: fossil 1567: a word of the science, not a creature (in dinosaur science) (stays in rocks_and_minerals, archaeology, dinosaur_words, fossils, beachcombing_finds, biology_words, evolution_words, museum)
+  out of flying_reptiles: flying reptile 9996: the theme's own name or a description (pterosaurs were not dinosaurs) (now in no theme)
+  out of flying_reptiles: winged reptile 9997: the theme's own name or a description (pterosaurs were not dinosaurs) (now in no theme)
+  out of flying_reptiles: flying dinosaur 9998: the theme's own name or a description (pterosaurs were not dinosaurs) (now in no theme)
+  out of prehistoric_periods: Anthropocene 10092: the present age, not a prehistoric one (stays in ages_of_history, geological_epochs)
+  out of male_animals: hound 1436: a word for any dog, not a male one (stays in hunting_words, hounds, domestic_animals, pets, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails)
+  out of male_animals: mutt 1438: a word for any dog, not a male one (stays in domestic_animals, pets, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails)
+  out of male_animals: pooch 1437: a word for any dog, not a male one (stays in domestic_animals, pets, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails)
+  out of male_animals: doggo 1439: a word for any dog, not a male one (stays in domestic_animals, pets, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails, police_station)
+  out of animal_movements: burrow 10149 [animal home]: a home (noun), not a movement (stays in animal_homes, homes_of_wild_mammals)
+4b. Reviewer's fixes (second agent: apply after fixes)
+  out of deer: stag 9780 [deer]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (as in ducks, geese, owls and rabbits) (stays in woodland_animals, animals_with_horns, male_animals)
+  out of deer: doe 9781 [deer]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (as in ducks, geese, owls and rabbits) (stays in woodland_animals, female_animals)
+  out of deer: fawn 10130 [young deer]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (as in ducks, geese, owls and rabbits) (stays in baby_animals, woodland_animals, spotted_animals)
+  out of deer: hart 10288 [stag]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (as in ducks, geese, owls and rabbits) (stays in male_animals)
+  out of deer: hind 50504 [deer]: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (as in ducks, geese, owls and rabbits) (now in no theme)
+  out of deer: roebuck 50505: a young, male or female animal, not a kind of the theme (it is in baby, male or female animals) (as in ducks, geese, owls and rabbits) (now in no theme)
+  deleted entry: hind 50504 [deer]: hind [deer], a second root of hind [animal] 10309 (female animals), made for deer
+  linked: roebuck 50505 in male_animals (typicality 4): the male roe deer: a male animal word
+  out of worms: ringworm 3433: an infection / a person, not a worm (stays in illnesses, childhood_illnesses, infections, fungi)
+  out of worms: bookworm 6533: an infection / a person, not a worm (stays in literature)
+  out of hounds: hound 1436: the theme's own word or a category of hounds, not a breed (stays in hunting_words, domestic_animals, pets, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails)
+  out of hounds: hunting dog 50997: the theme's own word or a category of hounds, not a breed (now in no theme)
+  out of hounds: sighthound 50992: the theme's own word or a category of hounds, not a breed (now in no theme)
+  out of hounds: scent hound 50993: the theme's own word or a category of hounds, not a breed (now in no theme)
+  out of prehistoric_life: megafauna 1617: a category word, not a creature (now in no theme)
+  out of prehistoric_life: sauropod 1624: a category word, not a creature (stays in long_necked_animals, dinosaur_words, plant_eating_dinosaurs)
+  out of prehistoric_life: theropod 1625: a category word, not a creature (stays in dinosaur_words, meat_eating_dinosaurs)
+  cachalot 63021 becomes a synonym alias of sperm whale 1308 (familiarity 4): another name of the sperm whale
+  finback 63015 becomes a synonym alias of fin whale 7868 (familiarity 4): another name of the fin whale
+  woolly rhinoceros 1601 becomes a synonym alias of woolly rhino 10025 (familiarity 4); links move: prehistoric_life 4: the same animal, grouped with it; woolly rhino is the commoner name
+    kin of beardie 1176 dropped (set for the bare word, not the thing): beard 14290
+  beardie 1176 becomes a abbreviation alias of bearded dragon 1175 (familiarity 4): short for bearded dragon, grouped with it (its kin beard was set for the word)
+  Komodo monitor 1153 becomes a synonym alias of Komodo dragon 1152 (familiarity 5): another name of the Komodo dragon, grouped with it
+  ratel 8020 becomes a synonym alias of honey badger 8003 (familiarity 5): another name of the honey badger, grouped with it
+  Barbary ape 7832 becomes a synonym alias of Barbary macaque 7831 (familiarity 4): the Barbary macaque (not an ape), grouped with it
+  beech marten 8016 becomes a synonym alias of stone marten 8015 (familiarity 5); links move: european_animals 5: another name of the stone marten
+  mallard 17734: fam 3 -> 2: nearly every adult knows the mallard (the common wild duck); it gives ducks an easy word
+  theme odd_toed_animals: ident 4 -> 3: horse, zebra, rhino, tapir: needs a moment (hoofed animals fit too), not hard
+  bantam 1473: fam 4 -> 3: a small chicken many adults know (chicken breeds had no easy or middle words)
+  moa 1604: fam 4 -> 3: the giant extinct bird of New Zealand is known to many adults
+  Liopleurodon 1597: fam 5 -> 4: known to people with an interest (Walking with Dinosaurs), not to few
+4c. Simon's decisions on the first draft ("Take all")
+  woodchuck 1049 becomes a synonym alias of groundhog 1048 (familiarity 4, region US/CA); links move: words_from_native_american_languages 4; shown: "woodchuck" in words_from_native_american_languages: the same animal (Simon: merge); groundhog is the usual name (the commoner root), woodchuck a synonym with its US/CA tag
+  bullsnake 1186 becomes a spelling alias of bull snake 8517 (familiarity 4); links move: reptiles_and_amphibians 5: the same word written as one (Simon: merge)
+  royal_things: the link moves from ermine 9751 [animal] to ermine 20847 [fur] (typicality 3): the royal robes are trimmed with ermine fur, not the animal (Simon); stoat and ermine [animal] stay separate
+  budgerigar 9697 becomes a synonym alias of budgie 1094 (familiarity 3); links move: australian_animals 3: the full name of the budgie (Simon: budgie stays the root)
+  shag 8137: offensive false -> true: the crude British slang sense makes many players snigger (Simon; LIBRARY-RULES 5 snigger test, like tit and booby): every sense is flagged
+  shag 14323: offensive false -> true: the crude British slang sense makes many players snigger (Simon; LIBRARY-RULES 5 snigger test, like tit and booby): every sense is flagged
+5. Regional roots, US spelling and case
+  text: dapple grey 1544 -> "dapple gray": US spelling for the root (LIBRARY-RULES 5: the UK spelling is a spelling alias tagged UK; gray [horse color] is already the root)
+  dapple gray 1544: region ["UK"] -> []: the root is the US form
+  new alias: dapple grey 68140 (spelling UK, familiarity 4) of dapple gray 1544: the UK spelling
+  text: grey kangaroo 7900 -> "gray kangaroo": US spelling for the root (gray whale, gray wolf, gray squirrel)
+  new alias: grey kangaroo 68141 (spelling UK, familiarity 3) of gray kangaroo 7900: the UK spelling
+  text: animal behaviourist 10470 -> "animal behaviorist": US spelling for the root
+  animal behaviorist 10470 in animal_experts: shown "behaviourist" -> "behaviorist": the shown word in US spelling
+  new alias: animal behaviourist 68142 (spelling UK, familiarity 3) of animal behaviorist 10470: the UK spelling
+    animal behaviourist 68142: nameOkIn animal_experts (its text holds a word of the theme name; the root is linked)
+  text: harlequin ladybird 1426 -> "Asian lady beetle", type common -> proper: the US name of the insect (lady beetle, as ladybug is the root of ladybird; contract-root-region)
+  Asian lady beetle 1426: region ["UK"] -> []: the root is the US name
+  new alias: harlequin ladybird 68143 (regional UK, familiarity 4) of Asian lady beetle 1426: the British name
+  katydid 1403: region ["US"] -> []: the US root of its UK regional alias bush cricket: a root carries no region (contract-root-region)
+  text: great dane 9278 -> "Great Dane", type common -> proper: M-W and Oxford capitalise the breed (a proper word, Dane)
+  text: rhodesian ridgeback 9291 -> "Rhodesian ridgeback", type common -> proper: M-W and Oxford capitalise Rhodesian
+  text: pel's fishing owl 51110 -> "Pel's fishing owl", type common -> proper: named after a person (Pel): capital
+  text: Miniature bull terrier 60003 -> "miniature bull terrier", type proper -> common: no proper word in it: lowercase, as miniature schnauzer and miniature pinscher
+6. Tree: merges and moves inside the group (TIDY-UP.md, Tree)
+  new_world_songbirds "New World songbirds": 12 words, 5 already in new_world_birds, 5 move, 2 stay out: New World songbirds (under colorful birds, US/CA) and American songbirds (under songbirds, US/CA) are one topic; 5 of its 12 words were already in American songbirds
+  linked: indigo bunting 8342 in new_world_birds (typicality 4): from New World songbirds, at the same typicality
+  linked: painted bunting 8341 in new_world_birds (typicality 4): from New World songbirds, at the same typicality
+  linked: scarlet tanager 8340 in new_world_birds (typicality 4): from New World songbirds, at the same typicality
+  linked: green jay 8353 in new_world_birds (typicality 5): from New World songbirds, at the same typicality
+  linked: goldfinch 8160 in new_world_birds (typicality 3): from New World songbirds, at the same typicality
+  not moved: paradise tanager 8355: paradise tanager: a South American bird (stays in colorful birds)
+  not moved: red-crested cardinal 8350: red-crested cardinal: a South American bird (stays in colorful birds)
+  deleted theme: new_world_songbirds "New World songbirds", merged into new_world_birds "American songbirds"
+  bird_parts "bird-only parts": 10 words, 10 already in bird_body_parts, 0 move, 0 stay out: all 10 of its words are in bird body parts and in animal body parts (theme-twin): a copy of a part of the bird theme
+  deleted theme: bird_parts "bird-only parts", merged into bird_body_parts "bird body parts"
+  bug_parts "arthropod parts": 8 words, 7 already in insect_body_parts, 0 move, 1 stay out: 7 of its 8 words are in insect body parts (theme-twin)
+  typicality: pincer 9148 in insect_body_parts 4 -> 3: its typicality in arthropod parts, the better of the two
+  not moved: pedipalp 10349: pedipalp: a spider part, not an insect part (it stays in animal body parts)
+  deleted theme: bug_parts "arthropod parts", merged into insect_body_parts "insect body parts"
+  cold_blooded_animals "cold-blooded animals": 10 words, 10 already in reptiles_and_amphibians, 0 move, 1 stay out: all 10 of its words are in reptiles and amphibians (theme-twin), and it was filed under insect eaters
+  not moved: eft 1148: eft: grouped with newt there already
+  deleted theme: cold_blooded_animals "cold-blooded animals", merged into reptiles_and_amphibians "reptiles and amphibians"
+  linked: Indian rhinoceros 9681 in odd_toed_animals (typicality 3): an odd-toed hoofed animal (rhinos and tapirs, with the horses): the theme held 8 horse-family words of 10 (theme-twin with horse family)
+  linked: Sumatran rhinoceros 51173 in odd_toed_animals (typicality 4): an odd-toed hoofed animal (rhinos and tapirs, with the horses): the theme held 8 horse-family words of 10 (theme-twin with horse family)
+  linked: Javan rhinoceros 51172 in odd_toed_animals (typicality 4): an odd-toed hoofed animal (rhinos and tapirs, with the horses): the theme held 8 horse-family words of 10 (theme-twin with horse family)
+  linked: Malayan tapir 9685 in odd_toed_animals (typicality 4): an odd-toed hoofed animal (rhinos and tapirs, with the horses): the theme held 8 horse-family words of 10 (theme-twin with horse family)
+  linked: mountain tapir 51233 in odd_toed_animals (typicality 4): an odd-toed hoofed animal (rhinos and tapirs, with the horses): the theme held 8 horse-family words of 10 (theme-twin with horse family)
+  theme long_necked_giants "long-necked dinosaurs" moves from dinosaurs to plant_eating_dinosaurs: 8 of its 9 words are plant-eaters (theme-twin): the sauropods are a kind of plant-eating dinosaur
+  theme horned_and_armored_beasts "horned and armored dinos" moves from dinosaurs to plant_eating_dinosaurs: 7 of its 8 words are plant-eaters (theme-twin): a kind of plant-eating dinosaur
+  theme pet_snacks_and_feed "pet snacks and feed" moves from domestic_animals to pets (after pet_supplies): what pets are fed: beside pet supplies under pets, not a sibling of farm animals
+  theme galapagos_animals: name "Galapagos animals" -> "Galápagos animals": the diacritic, as the theme's shown texts (v390) and LIBRARY-RULES 6 write it
+7. Entries left in no theme by this batch: stubs and category words made for these themes are deleted (LIBRARY-RULES 2, Deleting); real words are kept
+  deleted entry: maneater 7767: a description made for big cats
+  deleted entry: roost 8056 [bats]: roost [bats], made for bats (roost [birds] is in animal homes)
+  deleted entry: colony 8057 [bats]: colony [bats], made for bats (colony [ants] is in collective nouns)
+  deleted entry: buck 8078 [rabbit]: buck [rabbit], made for rabbits and hares (buck [male animal] is in male animals)
+  deleted entry: doe 8077 [rabbit]: doe [rabbit], made for rabbits and hares (doe [deer] is in female animals)
+  deleted entry: kit 8079 [rabbit]: kit [rabbit], made for rabbits and hares (kit [fox] is in baby animals)
+  deleted entry: burrow 8082 [rabbit]: burrow [rabbit], made for rabbits and hares (burrow [animal home] is in animal homes)
+  deleted entry: pouch 7918 [marsupial]: pouch [marsupial], made for marsupials (pouch [animal] is in animal body parts)
+  deleted entry: flightless 8256: an adjective made for flightless birds
+  deleted entry: shoot 8323 [game]: shoot [game], made for game birds
+  deleted entry: beater 8322 [game]: beater [game], made for game birds
+  deleted entry: brace 8319 [game]: brace [game], made for game birds
+  deleted entry: larva 8710 [amphibian]: larva [amphibian], made for salamanders (larva [grub] is in insect life cycle)
+  deleted entry: kelt 50761: a salmon life stage made for salmon and trout
+  deleted entry: grilse 50759: a salmon life stage made for salmon and trout
+  deleted entry: redd 50762: a salmon nest made for salmon and trout
+  deleted entry: nematocyst 8934: a cell, made for jellyfish
+  deleted entry: haul-out 50818: a word made for seals
+  deleted entry: tube feet 8987: a body part made for starfish
+  deleted entry: holothurian 63062: a sea cucumber word made for starfish
+  deleted entry: spinneret 9115: a body part made for spiders
+  deleted entry: winged reptile 9997: a description
+  deleted entry: flying dinosaur 9998: a wrong description (pterosaurs are not dinosaurs)
+  deleted entry: polly 8297 [parrot]: a pet name made for parrots
+  deleted entry: rubber 65266 [bath toy]: a bare stub of rubber duck (the toy, 46070)
+  deleted entry: shell 8599 [turtle]: shell [turtle], made for turtles (shell [animal] is in animal body parts)
+  deleted entry: hatchling 8596 [turtle]: hatchling [turtle], made for turtles (hatchling [baby animal] is in baby animals)
+  deleted entry: spawn 8672 [frog]: spawn [frog], made for frogs (frogspawn is its synonym)
+  deleted entry: toadlet 8677: a young toad made for frogs
+  deleted entry: drumstick 8407 [bird]: drumstick [bird], a cut of cooked poultry made for bird body parts
+Difficulty spread and gap of the themes that changed (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  mammals: 79 words, easy/middle/hard 27/22/30, difficulty 1, 4th-easiest band 1, gap 0 -> 77 words, easy/middle/hard 27/22/28, difficulty 1, 4th-easiest band 1, gap 0
+  big_cats: 33 words, easy/middle/hard 12/7/14, difficulty 1, 4th-easiest band 1, gap 0 -> 30 words, easy/middle/hard 12/7/11, difficulty 1, 4th-easiest band 1, gap 0
+  primates: 41 words, easy/middle/hard 8/13/20, difficulty 1, 4th-easiest band 1, gap 0 -> 40 words, easy/middle/hard 8/13/19, difficulty 1, 4th-easiest band 1, gap 0
+  monkeys: 44 words, easy/middle/hard 3/9/32, difficulty 2, 4th-easiest band 3, gap 1 -> 43 words, easy/middle/hard 3/9/31, difficulty 2, 4th-easiest band 3, gap 1
+  rodents: 40 words, easy/middle/hard 10/14/16, difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 39 words, easy/middle/hard 10/14/15, difficulty 1.5, 4th-easiest band 1, gap -0.5
+  whales_and_dolphins: 46 words, easy/middle/hard 6/9/31, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 42 words, easy/middle/hard 6/9/27, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  marsupials: 38 words, easy/middle/hard 8/8/22, difficulty 1, 4th-easiest band 2, gap 1 -> 34 words, easy/middle/hard 7/5/22, difficulty 1, 4th-easiest band 2, gap 1
+  deer: 30 words, easy/middle/hard 8/6/16, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 22 words, easy/middle/hard 5/4/13, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  wild_pigs: 21 words, easy/middle/hard 3/3/15, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 20 words, easy/middle/hard 3/2/15, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  odd_toed_animals: 8 words, easy/middle/hard 4/0/4, difficulty 5, 4th-easiest band 2, gap -3 -> 13 words, easy/middle/hard 4/1/8, difficulty 4, 4th-easiest band 2, gap -2
+  wild_dogs_and_foxes: 34 words, easy/middle/hard 7/4/23, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 32 words, easy/middle/hard 7/4/21, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  weasel_family: 36 words, easy/middle/hard 6/10/20, difficulty 3, 4th-easiest band 2, gap -1 -> 34 words, easy/middle/hard 6/10/18, difficulty 3, 4th-easiest band 2, gap -1
+  bats: 34 words, easy/middle/hard 2/2/30, difficulty 2, 4th-easiest band 3, gap 1 -> 31 words, easy/middle/hard 2/2/27, difficulty 2, 4th-easiest band 3, gap 1
+  rabbits_and_hares: 35 words, easy/middle/hard 3/15/17, difficulty 1.5, 4th-easiest band 3, gap 1.5 -> 27 words, easy/middle/hard 3/10/14, difficulty 1.5, 4th-easiest band 3, gap 1.5
+  mammals_that_live_in_water: 10 words, easy/middle/hard 4/3/3, difficulty 4, 4th-easiest band 2, gap -2 -> 9 words, easy/middle/hard 3/3/3, difficulty 4, 4th-easiest band 3, gap -1
+  birds_of_prey: 57 words, easy/middle/hard 8/15/34, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 54 words, easy/middle/hard 8/14/32, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  owls: 38 words, easy/middle/hard 3/5/30, difficulty 1.5, 4th-easiest band 3, gap 1.5 -> 36 words, easy/middle/hard 2/4/30, difficulty 1.5, 4th-easiest band 3, gap 1.5
+  eagles: 26 words, easy/middle/hard 4/4/18, difficulty 2, 4th-easiest band 2, gap 0 -> 25 words, easy/middle/hard 4/3/18, difficulty 2, 4th-easiest band 2, gap 0
+  seabirds: 39 words, easy/middle/hard 5/6/28, difficulty 2, 4th-easiest band 2, gap 0 -> 37 words, easy/middle/hard 5/6/26, difficulty 2, 4th-easiest band 2, gap 0
+  finches: 35 words, easy/middle/hard 1/6/28, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 35 words, easy/middle/hard 1/7/27, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  crows_and_ravens: 33 words, easy/middle/hard 3/7/23, difficulty 3, 4th-easiest band 3, gap 0 -> 31 words, easy/middle/hard 3/6/22, difficulty 3, 4th-easiest band 3, gap 0
+  new_world_birds: 16 words, easy/middle/hard 2/3/11, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 21 words, easy/middle/hard 2/4/15, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  waterbirds: 63 words, easy/middle/hard 9/13/41, difficulty 2, 4th-easiest band 2, gap 0 -> 63 words, easy/middle/hard 10/12/41, difficulty 2, 4th-easiest band 2, gap 0
+  ducks: 37 words, easy/middle/hard 1/7/29, difficulty 2, 4th-easiest band 3, gap 1 -> 34 words, easy/middle/hard 1/4/29, difficulty 2, 4th-easiest band 3, gap 1
+  geese_and_swans: 34 words, easy/middle/hard 5/7/22, difficulty 2, 4th-easiest band 2, gap 0 -> 29 words, easy/middle/hard 4/4/21, difficulty 2, 4th-easiest band 2, gap 0
+  wading_birds: 61 words, easy/middle/hard 4/9/48, difficulty 3, 4th-easiest band 2, gap -1 -> 60 words, easy/middle/hard 4/8/48, difficulty 3, 4th-easiest band 2, gap -1
+  flightless_birds: 40 words, easy/middle/hard 7/4/29, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 38 words, easy/middle/hard 7/5/26, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  penguins: 24 words, easy/middle/hard 2/2/20, difficulty 1.5, 4th-easiest band 3, gap 1.5 -> 23 words, easy/middle/hard 2/2/19, difficulty 1.5, 4th-easiest band 3, gap 1.5
+  parrots: 42 words, easy/middle/hard 6/3/33, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 40 words, easy/middle/hard 6/2/32, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  game_birds: 45 words, easy/middle/hard 1/11/33, difficulty 3, 4th-easiest band 3, gap 0 -> 40 words, easy/middle/hard 1/9/30, difficulty 3, 4th-easiest band 3, gap 0
+  new_world_songbirds: 12 words, easy/middle/hard 2/2/8, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> deleted
+  bird_body_parts: 59 words, easy/middle/hard 9/18/32, difficulty 1, 4th-easiest band 1, gap 0 -> 58 words, easy/middle/hard 9/18/31, difficulty 1, 4th-easiest band 1, gap 0
+  local_status_labels: 9 words, easy/middle/hard 0/2/7, difficulty 5, 4th-easiest band 4, gap -1 -> 8 words, easy/middle/hard 0/1/7, difficulty 5, 4th-easiest band 4, gap -1
+  pigeons_and_doves: 43 words, easy/middle/hard 3/10/30, difficulty 2, 4th-easiest band 3, gap 1 -> 38 words, easy/middle/hard 3/8/27, difficulty 2, 4th-easiest band 3, gap 1
+  reptiles_and_amphibians: 73 words, easy/middle/hard 20/18/35, difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 71 words, easy/middle/hard 20/18/33, difficulty 1.5, 4th-easiest band 1, gap -0.5
+  snakes: 56 words, easy/middle/hard 7/14/35, difficulty 1, 4th-easiest band 2, gap 1 -> 55 words, easy/middle/hard 7/14/34, difficulty 1, 4th-easiest band 2, gap 1
+  venomous_snakes: 42 words, easy/middle/hard 4/10/28, difficulty 2, 4th-easiest band 2, gap 0 -> 41 words, easy/middle/hard 3/10/28, difficulty 2, 4th-easiest band 3, gap 1
+  constrictor_snakes: 39 words, easy/middle/hard 3/7/29, difficulty 3, 4th-easiest band 3, gap 0 -> 37 words, easy/middle/hard 3/6/28, difficulty 3, 4th-easiest band 3, gap 0
+  american_serpents: 14 words, easy/middle/hard 2/5/7, difficulty 3, 4th-easiest band 3, gap 0 -> 13 words, easy/middle/hard 1/5/7, difficulty 3, 4th-easiest band 3, gap 0
+  lizards: 53 words, easy/middle/hard 6/6/41, difficulty 1, 4th-easiest band 2, gap 1 -> 51 words, easy/middle/hard 6/6/39, difficulty 1, 4th-easiest band 2, gap 1
+  turtles_and_tortoises: 47 words, easy/middle/hard 4/9/34, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 42 words, easy/middle/hard 4/8/30, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  crocodilians: 30 words, easy/middle/hard 2/5/23, difficulty 1.5, 4th-easiest band 3, gap 1.5 -> 27 words, easy/middle/hard 2/5/20, difficulty 1.5, 4th-easiest band 3, gap 1.5
+  frogs_and_toads: 52 words, easy/middle/hard 6/11/35, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 43 words, easy/middle/hard 4/8/31, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  salamanders_and_newts: 48 words, easy/middle/hard 2/1/45, difficulty 3, 4th-easiest band 4, gap 1 -> 44 words, easy/middle/hard 2/1/41, difficulty 3, 4th-easiest band 4, gap 1
+  exotic_pets: 14 words, easy/middle/hard 7/4/3, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 13 words, easy/middle/hard 7/4/2, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  salmon_and_trout: 37 words, easy/middle/hard 3/6/28, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 29 words, easy/middle/hard 3/6/20, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  tropical_fish: 31 words, easy/middle/hard 4/6/21, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 29 words, easy/middle/hard 4/6/19, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  rays_and_eels: 25 words, easy/middle/hard 2/7/16, difficulty 2, 4th-easiest band 3, gap 1 -> 24 words, easy/middle/hard 2/7/15, difficulty 2, 4th-easiest band 3, gap 1
+  deep_sea_fish: 30 words, easy/middle/hard 0/3/27, difficulty 3, 4th-easiest band 4, gap 1 -> 27 words, easy/middle/hard 0/3/24, difficulty 3, 4th-easiest band 4, gap 1
+  fish_body_parts: 28 words, easy/middle/hard 4/3/21, difficulty 1, 4th-easiest band 2, gap 1 -> 27 words, easy/middle/hard 4/3/20, difficulty 1, 4th-easiest band 2, gap 1
+  sea_life: 80 words, easy/middle/hard 23/25/32, difficulty 1, 4th-easiest band 1, gap 0 -> 77 words, easy/middle/hard 23/25/29, difficulty 1, 4th-easiest band 1, gap 0
+  mollusks: 35 words, easy/middle/hard 8/8/19, difficulty 2, 4th-easiest band 2, gap 0 -> 33 words, easy/middle/hard 8/6/19, difficulty 2, 4th-easiest band 2, gap 0
+  cephalopods: 30 words, easy/middle/hard 2/6/22, difficulty 2, 4th-easiest band 3, gap 1 -> 26 words, easy/middle/hard 2/5/19, difficulty 2, 4th-easiest band 3, gap 1
+  sea_mammals: 39 words, easy/middle/hard 12/13/14, difficulty 1, 4th-easiest band 1, gap 0 -> 37 words, easy/middle/hard 12/13/12, difficulty 1, 4th-easiest band 1, gap 0
+  seals_and_sea_lions: 32 words, easy/middle/hard 2/9/21, difficulty 2, 4th-easiest band 3, gap 1 -> 27 words, easy/middle/hard 2/8/17, difficulty 2, 4th-easiest band 3, gap 1
+  reef_life: 41 words, easy/middle/hard 6/13/22, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 40 words, easy/middle/hard 6/13/21, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  jellyfish_and_relatives: 29 words, easy/middle/hard 2/4/23, difficulty 3, 4th-easiest band 3, gap 0 -> 27 words, easy/middle/hard 2/5/20, difficulty 3, 4th-easiest band 3, gap 0
+  seaweeds: 36 words, easy/middle/hard 1/7/28, difficulty 2.5, 4th-easiest band 3, gap 0.5 -> 31 words, easy/middle/hard 1/6/24, difficulty 2.5, 4th-easiest band 3, gap 0.5
+  ocean_giants: 32 words, easy/middle/hard 8/8/16, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 31 words, easy/middle/hard 8/8/15, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  starfish_and_sea_urchins: 28 words, easy/middle/hard 2/1/25, difficulty 3, 4th-easiest band 4, gap 1 -> 24 words, easy/middle/hard 2/1/21, difficulty 3, 4th-easiest band 4, gap 1
+  insects_and_bugs: 80 words, easy/middle/hard 22/21/37, difficulty 1, 4th-easiest band 1, gap 0 -> 78 words, easy/middle/hard 22/20/36, difficulty 1, 4th-easiest band 1, gap 0
+  beetles: 36 words, easy/middle/hard 2/6/28, difficulty 2, 4th-easiest band 3, gap 1 -> 34 words, easy/middle/hard 2/6/26, difficulty 2, 4th-easiest band 3, gap 1
+  butterflies_and_moths: 37 words, easy/middle/hard 3/7/27, difficulty 1.5, 4th-easiest band 3, gap 1.5 -> 37 words, easy/middle/hard 3/8/26, difficulty 1.5, 4th-easiest band 3, gap 1.5
+  spiders: 32 words, easy/middle/hard 3/8/21, difficulty 1.5, 4th-easiest band 3, gap 1.5 -> 28 words, easy/middle/hard 3/7/18, difficulty 1.5, 4th-easiest band 3, gap 1.5
+  insect_body_parts: 32 words, easy/middle/hard 7/5/20, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 30 words, easy/middle/hard 7/5/18, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  biting_bugs: 31 words, easy/middle/hard 5/8/18, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 27 words, easy/middle/hard 5/7/15, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  flies: 33 words, easy/middle/hard 2/10/21, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 32 words, easy/middle/hard 2/9/21, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  ants_and_termites: 44 words, easy/middle/hard 9/5/30, difficulty 2, 4th-easiest band 2, gap 0 -> 40 words, easy/middle/hard 7/5/28, difficulty 2, 4th-easiest band 2, gap 0
+  worms: 42 words, easy/middle/hard 3/11/28, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 40 words, easy/middle/hard 3/10/27, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  domestic_animals: 78 words, easy/middle/hard 19/30/29, difficulty 1, 4th-easiest band 1, gap 0 -> 76 words, easy/middle/hard 19/29/28, difficulty 1, 4th-easiest band 1, gap 0
+  pets: 67 words, easy/middle/hard 17/21/29, difficulty 1, 4th-easiest band 1, gap 0 -> 65 words, easy/middle/hard 17/20/28, difficulty 1, 4th-easiest band 1, gap 0
+  dog_breeds: 52 words, easy/middle/hard 23/13/16, difficulty 1, 4th-easiest band 1, gap 0 -> 52 words, easy/middle/hard 23/14/15, difficulty 1, 4th-easiest band 1, gap 0
+  terriers: 40 words, easy/middle/hard 5/6/29, difficulty 3.5, 4th-easiest band 2, gap -1.5 -> 39 words, easy/middle/hard 5/6/28, difficulty 3.5, 4th-easiest band 2, gap -1.5
+  hounds: 44 words, easy/middle/hard 7/5/32, difficulty 3, 4th-easiest band 2, gap -1 -> 40 words, easy/middle/hard 5/5/30, difficulty 3, 4th-easiest band 2, gap -1
+  toy_dogs: 32 words, easy/middle/hard 9/7/16, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 29 words, easy/middle/hard 7/7/15, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  herding_dogs: 40 words, easy/middle/hard 5/11/24, difficulty 3.5, 4th-easiest band 2, gap -1.5 -> 39 words, easy/middle/hard 5/11/23, difficulty 3.5, 4th-easiest band 2, gap -1.5
+  cattle_breeds: 38 words, easy/middle/hard 0/8/30, difficulty 2.5, 4th-easiest band 3, gap 0.5 -> 38 words, easy/middle/hard 1/7/30, difficulty 2.5, 4th-easiest band 3, gap 0.5
+  chicken_breeds: 40 words, easy/middle/hard 0/3/37, difficulty 2.5, 4th-easiest band 4, gap 1.5 -> 40 words, easy/middle/hard 0/4/36, difficulty 2.5, 4th-easiest band 3, gap 0.5
+  working_animals: 35 words, easy/middle/hard 15/9/11, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 34 words, easy/middle/hard 14/9/11, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  horse_breeds: 39 words, easy/middle/hard 2/6/31, difficulty 2, 4th-easiest band 3, gap 1 -> 39 words, easy/middle/hard 2/7/30, difficulty 2, 4th-easiest band 3, gap 1
+  horse_tack: 38 words, easy/middle/hard 5/10/23, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 37 words, easy/middle/hard 5/9/23, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  horse_family: 27 words, easy/middle/hard 5/4/18, difficulty 2, 4th-easiest band 2, gap 0 -> 25 words, easy/middle/hard 5/5/15, difficulty 2, 4th-easiest band 2, gap 0
+  turkish_animals: 29 words, easy/middle/hard 0/4/25, difficulty 5, 4th-easiest band 3, gap -2 -> 25 words, easy/middle/hard 0/3/22, difficulty 5, 4th-easiest band 4, gap -1
+  asian_animals: 48 words, easy/middle/hard 9/11/28, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 47 words, easy/middle/hard 9/11/27, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  indian_animals: 35 words, easy/middle/hard 4/7/24, difficulty 3, 4th-easiest band 2, gap -1 -> 35 words, easy/middle/hard 4/8/23, difficulty 3, 4th-easiest band 2, gap -1
+  himalayan_animals: 38 words, easy/middle/hard 2/8/28, difficulty 5, 4th-easiest band 3, gap -2 -> 33 words, easy/middle/hard 2/5/26, difficulty 5, 4th-easiest band 3, gap -2
+  southeast_asian_animals: 37 words, easy/middle/hard 3/5/29, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 36 words, easy/middle/hard 3/5/28, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  australian_animals: 49 words, easy/middle/hard 11/11/27, difficulty 1, 4th-easiest band 1, gap 0 -> 48 words, easy/middle/hard 11/11/26, difficulty 1, 4th-easiest band 1, gap 0
+  australian_birds: 38 words, easy/middle/hard 5/4/29, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 36 words, easy/middle/hard 5/4/27, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  new_zealand_animals: 35 words, easy/middle/hard 1/1/33, difficulty 2.5, 4th-easiest band 4, gap 1.5 -> 35 words, easy/middle/hard 1/2/32, difficulty 2.5, 4th-easiest band 4, gap 1.5
+  andean_animals: 34 words, easy/middle/hard 2/5/27, difficulty 4, 4th-easiest band 3, gap -1 -> 33 words, easy/middle/hard 2/5/26, difficulty 4, 4th-easiest band 3, gap -1
+  north_american_animals: 48 words, easy/middle/hard 14/21/13, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 45 words, easy/middle/hard 14/19/12, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  everglades_animals: 39 words, easy/middle/hard 2/11/26, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 38 words, easy/middle/hard 2/11/25, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  european_animals: 45 words, easy/middle/hard 9/17/19, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 41 words, easy/middle/hard 9/17/15, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  alpine_animals: 35 words, easy/middle/hard 2/6/27, difficulty 3.5, 4th-easiest band 3, gap -0.5 -> 32 words, easy/middle/hard 2/6/24, difficulty 3.5, 4th-easiest band 3, gap -0.5
+  savanna_animals: 46 words, easy/middle/hard 17/10/19, difficulty 1, 4th-easiest band 1, gap 0 -> 45 words, easy/middle/hard 17/10/18, difficulty 1, 4th-easiest band 1, gap 0
+  city_animals: 45 words, easy/middle/hard 18/13/14, difficulty 2.5, 4th-easiest band 1, gap -1.5 -> 43 words, easy/middle/hard 18/12/13, difficulty 2.5, 4th-easiest band 1, gap -1.5
+  nocturnal_animals: 49 words, easy/middle/hard 10/19/20, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 48 words, easy/middle/hard 10/18/20, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  venomous_animals: 48 words, easy/middle/hard 10/14/24, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 47 words, easy/middle/hard 10/14/23, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  hibernating_animals: 50 words, easy/middle/hard 10/19/21, difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 47 words, easy/middle/hard 10/17/20, difficulty 1.5, 4th-easiest band 1, gap -0.5
+  striped_animals: 30 words, easy/middle/hard 11/4/15, difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 29 words, easy/middle/hard 10/4/15, difficulty 1.5, 4th-easiest band 1, gap -0.5
+  animals_with_tusks: 25 words, easy/middle/hard 9/4/12, difficulty 2.5, 4th-easiest band 2, gap -0.5 -> 25 words, easy/middle/hard 10/3/12, difficulty 2.5, 4th-easiest band 2, gap -0.5
+  burrowing_animals: 47 words, easy/middle/hard 13/9/25, difficulty 3, 4th-easiest band 2, gap -1 -> 46 words, easy/middle/hard 13/9/24, difficulty 3, 4th-easiest band 2, gap -1
+  scavengers: 38 words, easy/middle/hard 11/15/12, difficulty 3, 4th-easiest band 2, gap -1 -> 37 words, easy/middle/hard 11/14/12, difficulty 3, 4th-easiest band 2, gap -1
+  spiny_animals: 31 words, easy/middle/hard 4/1/26, difficulty 3.5, 4th-easiest band 2, gap -1.5 -> 30 words, easy/middle/hard 4/1/25, difficulty 3.5, 4th-easiest band 2, gap -1.5
+  pink_animals: 26 words, easy/middle/hard 3/5/18, difficulty 3, 4th-easiest band 3, gap 0 -> 25 words, easy/middle/hard 3/4/18, difficulty 3, 4th-easiest band 3, gap 0
+  tentacled_animals: 36 words, easy/middle/hard 3/8/25, difficulty 3, 4th-easiest band 3, gap 0 -> 33 words, easy/middle/hard 3/8/22, difficulty 3, 4th-easiest band 3, gap 0
+  cold_blooded_animals: 10 words, easy/middle/hard 5/0/5, difficulty 3, 4th-easiest band 2, gap -1 -> deleted
+  prehistoric_life: 76 words, easy/middle/hard 15/20/41, difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 57 words, easy/middle/hard 13/17/27, difficulty 1.5, 4th-easiest band 1, gap -0.5
+  dinosaurs: 54 words, easy/middle/hard 11/6/37, difficulty 1, 4th-easiest band 1, gap 0 -> 53 words, easy/middle/hard 10/6/37, difficulty 1, 4th-easiest band 1, gap 0
+  flying_reptiles: 40 words, easy/middle/hard 1/4/35, difficulty 2.5, 4th-easiest band 3, gap 0.5 -> 37 words, easy/middle/hard 1/2/34, difficulty 2.5, 4th-easiest band 4, gap 1.5
+  sea_reptiles: 43 words, easy/middle/hard 0/3/40, difficulty 4, 4th-easiest band 4, gap 0 -> 37 words, easy/middle/hard 0/3/34, difficulty 4, 4th-easiest band 4, gap 0
+  ice_age_animals: 46 words, easy/middle/hard 3/9/34, difficulty 2, 4th-easiest band 3, gap 1 -> 45 words, easy/middle/hard 3/9/33, difficulty 2, 4th-easiest band 3, gap 1
+  extinct_animals: 55 words, easy/middle/hard 5/9/41, difficulty 2, 4th-easiest band 2, gap 0 -> 55 words, easy/middle/hard 5/10/40, difficulty 2, 4th-easiest band 2, gap 0
+  extinct_birds: 16 words, easy/middle/hard 1/1/14, difficulty 3, 4th-easiest band 4, gap 1 -> 16 words, easy/middle/hard 1/2/13, difficulty 3, 4th-easiest band 4, gap 1
+  prehistoric_periods: 50 words, easy/middle/hard 4/8/38, difficulty 4, 4th-easiest band 2, gap -2 -> 49 words, easy/middle/hard 4/8/37, difficulty 4, 4th-easiest band 2, gap -2
+  animal_homes: 49 words, easy/middle/hard 11/13/25, difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 48 words, easy/middle/hard 11/13/24, difficulty 1.5, 4th-easiest band 1, gap -0.5
+  farmyard_shelters: 11 words, easy/middle/hard 3/3/5, difficulty 2.5, 4th-easiest band 3, gap 0.5 -> 10 words, easy/middle/hard 3/3/4, difficulty 2.5, 4th-easiest band 3, gap 0.5
+  male_animals: 45 words, easy/middle/hard 9/9/27, difficulty 1.5, 4th-easiest band 2, gap 0.5 -> 42 words, easy/middle/hard 9/9/24, difficulty 1.5, 4th-easiest band 2, gap 0.5
+  bird_parts: 10 words, easy/middle/hard 1/3/6, difficulty 3, 4th-easiest band 3, gap 0 -> deleted
+  bug_parts: 8 words, easy/middle/hard 1/3/4, difficulty 3, 4th-easiest band 3, gap 0 -> deleted
+  animal_movements: 46 words, easy/middle/hard 13/17/16, difficulty 1.5, 4th-easiest band 1, gap -0.5 -> 45 words, easy/middle/hard 13/18/14, difficulty 1.5, 4th-easiest band 1, gap -0.5
+Entries left in no theme (kept in the library, not exported) 32:
+  marsupial 7919: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Bambi 50506 [deer]: Bambi: a candidate for kids' book or film characters (another group)
+  bird of prey 8119: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  raptor 8118 [bird]: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Hedwig 50579 [owl]: Hedwig: candidate for kids' book characters
+  corvid 50653: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  ratite 8257: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Norwegian blue 8298 [parrot]: Norwegian blue: a comedy sketch parrot
+  venomous snake 50724: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  constrictor 50741: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Kaa 50745 [python]: Kaa: candidate for kids' book characters
+  caudate 8706: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  urodele 8707: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  mollusk 8896: kept: a real word (not made only for the theme it left)
+  pinniped 8905: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  echinoderm 8986: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  arachnid 9112: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  livestock 1476: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Toto 50973 [terrier]: Toto: candidate for kids' book characters
+  toy dog 51015: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  lapdog 51017: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  teacup dog 51016: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Lassie 51048 [collie]: Lassie: candidate for a famous animals theme
+  equid 9625: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Equus 9626: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  Pumbaa 50562 [warthog]: Pumbaa: candidate for film characters
+  Caretta caretta 9667: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  flying reptile 9996: a real category word or name, kept in the library (LIBRARY-RULES 2: only stubs are deleted)
+  hunting dog 50997: kept: a real word (not made only for the theme it left)
+  sighthound 50992: kept: a real word (not made only for the theme it left)
+  scent hound 50993: kept: a real word (not made only for the theme it left)
+  megafauna 1617: kept: a real word (not made only for the theme it left)
+Entries added 16: egg 68128 [animal egg], proboscis 68129 [mouthpart], puggle 68130 [baby echidna], lumber 68131 [move heavily], possum 68132 [Australian], Galapagos penguin 68133 (alias), Galapagos sea lion 68134 (alias), Galapagos tortoise 68135 (alias), Galapagos cormorant 68136 (alias), Galapagos racer 68137 (alias), Galapagos rail 68138 (alias), mollusc 68139 (alias), dapple grey 68140 (alias), grey kangaroo 68141 (alias), animal behaviourist 68142 (alias), harlequin ladybird 68143 (alias)
+Entries deleted 69: hock 9588, red 63577, mule 63564, roe 63566, sable 63568, harpy 63600, snapper 63623, giant 65319, Galapagos 65318, radiated 65332, gopher 65320, collared 65273, mourning 65287, rock 65292, peacock 63688, hawk 63686, luna 63687, queen 63694, eagle 63656, manta 63054, moray 63055, great white 1330, hammerhead 1331, Pacific octopus 65422, tanuki 63029, bongo 9637, boar 7931, Przewalski 63089, Persian 63088, bobtail 63734, Chin 63735, griffon 50612, Highland 9344, holstein 9339, cinnamon 64801, garter 63617, coral 63615, corn 63616, hind 50504, maneater 7767, roost 8056, colony 8057, buck 8078, doe 8077, kit 8079, burrow 8082, pouch 7918, flightless 8256, shoot 8323, beater 8322, brace 8319, larva 8710, kelt 50761, grilse 50759, redd 50762, nematocyst 8934, haul-out 50818, tube feet 8987, holothurian 63062, spinneret 9115, winged reptile 9997, flying dinosaur 9998, polly 8297, rubber 65266, shell 8599, hatchling 8596, spawn 8672, toadlet 8677, drumstick 8407
+library changes 466; entries changed 448; status set to rev 373
+Checks: changed kinds: info:alias-fullname 44 -> 45, info:family-kin 351 -> 349, info:offensive-unlisted 92 -> 94, info:orphan 225 -> 257, info:overlap 4926 -> 4921, info:rating-vs-zipf 1679 -> 1678, info:sense-link 41 -> 37, info:sense-twin 105 -> 92, info:theme-twin 56 -> 51
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 161, theme-gap 1, theme-name 3
+Export contract (family export, zipf): contract-dup-root 185 -> 177, contract-root-region 1781 -> 1768, contract-type-common 42 -> 41; after: contract-dup-root 177, contract-root-region 1768, contract-type-common 41
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3242 -> 3238; gone new_world_songbirds (index 290), cold_blooded_animals (index 445), bird_parts (index 474), bug_parts (index 476); new none; theme indexes shift: from index 290 ("bird_body_parts", was "new_world_songbirds") to index 3237 ("things_you_eat_with_a_spoon", was "things_you_throw")
+Entry rows 61116 -> 61027; first row whose entry changed: 1317 (mantis shrimp 1332, was 1330); rows that moved: 59695; added egg 68128 (row 61012), proboscis 68129 (row 61013), puggle 68130 (row 61014), lumber 68131 (row 61015), possum 68132 (row 61016), Galapagos penguin 68133 (row 61017), Galapagos sea lion 68134 (row 61018), Galapagos tortoise 68135 (row 61019), Galapagos cormorant 68136 (row 61020), Galapagos racer 68137 (row 61021), Galapagos rail 68138 (row 61022), dapple grey 68140 (row 61023), grey kangaroo 68141 (row 61024), animal behaviourist 68142 (row 61025), harlequin ladybird 68143 (row 61026); removed 1330 (row 1317), 1331 (row 1318), 1476 (row 1462), 1617 (row 1598), 7767 (row 7510), 7918 (row 7653), 7919 (row 7654), 7931 (row 7666), 8056 (row 7786), 8057 (row 7787), 8077 (row 7805), 8078 (row 7806), 8079 (row 7807), 8082 (row 7810), 8118 (row 7845), 8119 (row 7846), 8137 (row 7863), 8256 (row 7975), 8257 (row 7976), 8297 (row 8014), 8298 (row 8015), 8319 (row 8036), 8321 (row 8038), 8322 (row 8039), 8323 (row 8040), 8407 (row 8123), 8596 (row 8306), 8599 (row 8309), 8672 (row 8382), 8677 (row 8387), 8706 (row 8416), 8707 (row 8417), 8710 (row 8420), 8896 (row 8595), 8905 (row 8604), 8934 (row 8631), 8986 (row 8679), 8987 (row 8680), 9112 (row 8799), 9115 (row 8802), 9339 (row 9003), 9344 (row 9008), 9588 (row 9237), 9625 (row 9272), 9626 (row 9273), 9637 (row 9284), 9667 (row 9314), 9996 (row 9626), 9997 (row 9627), 9998 (row 9628), 14323 (row 13797), 50504 (row 46580), 50506 (row 46582), 50562 (row 46635), 50579 (row 46650), 50612 (row 46682), 50653 (row 46723), 50724 (row 46789), 50741 (row 46806), 50745 (row 46810), 50759 (row 46823), 50761 (row 46825), 50762 (row 46826), 50818 (row 46876), 50973 (row 47019), 50992 (row 47035), 50993 (row 47036), 50997 (row 47040), 51015 (row 47058), 51016 (row 47059), 51017 (row 47060), 51048 (row 47090), 63029 (row 58372), 63054 (row 58390), 63055 (row 58391), 63062 (row 58395), 63088 (row 58417), 63089 (row 58418), 63564 (row 58689), 63566 (row 58690), 63568 (row 58691), 63577 (row 58693), 63600 (row 58696), 63615 (row 58698), 63616 (row 58699), 63617 (row 58700), 63623 (row 58701), 63656 (row 58705), 63686 (row 58707), 63687 (row 58708), 63688 (row 58709), 63694 (row 58710), 63734 (row 58712), 63735 (row 58713), 64801 (row 58929), 65266 (row 59111), 65273 (row 59112), 65287 (row 59113), 65292 (row 59114), 65318 (row 59115), 65319 (row 59116), 65320 (row 59117), 65332 (row 59118), 65422 (row 59120)
+root -> alias rows 61: possum 1047, woodchuck 1049, Komodo monitor 1153, beardie 1176, bullsnake 1186, leatherback 1202, seagrass 1339, skeeter 1347, maybug 1429, moggy 1441, woolly rhinoceros 1601, Andean mountain cat 7800, colobus 7816, Barbary ape 7832, Kodiak 7948, painted dog 7970, Tasmanian wolf 7994, beech marten 8016, ratel 8020, cony 8083, bonxie 8136, loggerhead 8569, hawksbill 8571, mugger crocodile 8624, swamp crocodile 8635, marsh crocodile 8637, may bug 9006, glow-worm 9018, cranefly 9124, antennae 9135, oxen 9452, Angora cat 9664, budgerigar 9697, beluga whale 9748, Sumatran rhino 9792, yellow jacket 9825, bumble bee 9851, bush baby 9914, dino 9970, pink dolphin 40146, Darwin's finches 41021, hammerkop 50706, rhesus macaque 51127, mouse-deer 51176, bin chicken 51194, little blue penguin 51218, marine turtle 51268, shippon 57686, mallee fowl 60034, finback 63015, cachalot 63021, whitetail 63024, grey parrot 63095, Van cat 63097, spectacled cobra 63098, star tortoise 63100, wisent 63116, Mitchell's cockatoo 63122, boto 63300, painted wolf 63574, mountain cat 63744
+Links 100684 -> 100371; rows whose link count changed: 300
+Link-index shifts: from row 454 (bacon 462) on, link positions move
+Rows whose text changed: Asian lady beetle 1426 (was "harlequin ladybird"), dapple gray 1544 (was "dapple grey"), gray kangaroo 7900 (was "grey kangaroo"), Galápagos penguin 8244 (was "Galapagos penguin"), Galápagos tortoise 8576 (was "Galapagos tortoise"), Great Dane 9278 (was "great dane"), Rhodesian ridgeback 9291 (was "rhodesian ridgeback"), animal behaviorist 10470 (was "animal behaviourist"), Galápagos sea lion 50810 (was "Galapagos sea lion"), Pel's fishing owl 51110 (was "pel's fishing owl"), Galápagos racer 51263 (was "Galapagos racer"), Galápagos rail 51265 (was "Galapagos rail"), miniature bull terrier 60003 (was "Miniature bull terrier"), Geoffroy's cat 63002 (was "Geoffroy's"), De Brazza's monkey 63003 (was "De Brazza's"), Goeldi's monkey 63004 (was "Goeldi's"), Daubenton's bat 63030 (was "Daubenton's"), Natterer's bat 63031 (was "Natterer's"), saw-whet owl 63032 (was "saw-whet"), Tengmalm's owl 63033 (was "Tengmalm's"), Bewick's swan 63039 (was "Bewick's"), Meyer's parrot 63042 (was "Meyer's"), Nicobar pigeon 63043 (was "Nicobar"), Aldabra tortoise 63046 (was "Aldabra"), Steller sea lion 63058 (was "Steller"), Galápagos cormorant 63286 (was "Galapagos cormorant"), pink salmon 63641 (was "pink"), horned frog 65357 (was "horned")
+New characters in the export: none
+Theme rows whose fields changed (parent compared by id): 140: mammals (index 245 -> 245: counts [11,16,24,18,12] -> [11,16,24,17,11]); big_cats (index 246 -> 246: counts [5,7,7,7,7] -> [5,7,7,6,5]); primates (index 249 -> 249: counts [5,3,13,9,11] -> [5,3,13,8,11]); whales_and_dolphins (index 253 -> 253: counts [3,3,9,12,19] -> [3,3,9,11,18]); marsupials (index 254 -> 254: counts [3,5,9,10,12] -> [3,4,6,10,12]); deer (index 256 -> 256: counts [2,6,6,6,10] -> [1,4,5,3,10]); wild_cattle (index 258 -> 258: counts [0,3,4,5,10] -> [0,3,4,6,10]); wild_pigs (index 260 -> 260: counts [0,3,3,6,9] -> [0,3,2,6,9]); odd_toed_animals (index 261 -> 261: counts [2,2,0,3,3] -> [2,2,1,7,3], identifiability 4 -> 3, difficulty 5 -> 4); wild_dogs_and_foxes (index 263 -> 263: counts [2,5,4,13,10] -> [2,5,4,12,10]); weasel_family (index 264 -> 264: counts [0,6,10,8,12] -> [0,6,10,8,11]); bats (index 265 -> 265: counts [1,1,2,11,19] -> [1,1,2,9,18]); rabbits_and_hares (index 266 -> 266: counts [2,1,15,6,11] -> [2,1,10,4,10]); mammals_that_live_in_water (index 267 -> 267: counts [1,3,4,3,0] -> [0,3,4,3,0], range [2,3] -> [3,3]); birds_of_prey (index 269 -> 269: counts [1,7,15,25,9] -> [1,7,14,24,8]); owls (index 270 -> 270: counts [0,3,5,13,17] -> [0,2,4,13,17]); eagles (index 271 -> 271: counts [2,2,4,10,8] -> [2,2,3,10,8]); finches (index 277 -> 277: counts [0,1,6,15,13] -> [0,1,7,15,13]); crows_and_ravens (index 278 -> 278: counts [1,2,7,15,8] -> [1,2,6,14,8]); new_world_birds (index 279 -> 279: counts [0,2,3,7,4] -> [0,2,4,10,5]); waterbirds (index 281 -> 281: counts [3,6,13,27,15] -> [3,7,12,28,15]); ducks (index 282 -> 282: counts [0,1,7,18,11] -> [0,1,4,18,11]); geese_and_swans (index 283 -> 283: counts [2,3,7,8,14] -> [2,2,4,7,14]); wading_birds (index 284 -> 284: counts [1,3,9,20,29] -> [1,3,8,21,29]); flightless_birds (index 285 -> 285: counts [3,4,4,12,17] -> [3,4,5,12,15]); penguins (index 286 -> 286: counts [1,1,2,13,8] -> [1,1,2,12,8]); parrots (index 287 -> 287: counts [1,5,3,18,15] -> [1,5,3,17,15]); game_birds (index 288 -> 288: counts [0,1,11,20,13] -> [0,1,9,17,13]); bird_body_parts (index 291 -> 290: counts [4,5,18,11,21] -> [4,5,18,11,20]); local_status_labels (index 297 -> 296: counts [0,0,2,5,2] -> [0,0,1,5,2]); pigeons_and_doves (index 298 -> 297: counts [0,3,11,16,14] -> [0,3,9,13,14]); snakes (index 300 -> 299: counts [1,6,15,18,17] -> [1,6,15,18,16]); venomous_snakes (index 301 -> 300: counts [1,3,11,16,12] -> [0,3,11,17,12], range [2,5] -> [3,5]); constrictor_snakes (index 302 -> 301: counts [0,3,7,15,14] -> [0,3,6,14,14]); american_serpents (index 303 -> 302: counts [0,2,6,5,2] -> [0,1,6,6,1]); turtles_and_tortoises (index 305 -> 304: counts [2,2,9,17,17] -> [2,2,9,16,15]); crocodilians (index 306 -> 305: counts [2,2,5,11,13] -> [2,2,5,9,13]); frogs_and_toads (index 307 -> 306: counts [2,5,12,22,14] -> [2,3,9,19,12]); salamanders_and_newts (index 308 -> 307: counts [0,2,1,7,38] -> [0,2,1,5,36]); salmon_and_trout (index 312 -> 311: counts [2,1,6,13,15] -> [2,1,6,12,8]); tropical_fish (index 318 -> 317: counts [1,3,6,15,7] -> [1,3,6,15,5]); rays_and_eels (index 319 -> 318: counts [0,2,7,11,5] -> [0,2,7,10,5]); deep_sea_fish (index 320 -> 319: counts [0,0,3,10,17] -> [0,0,3,9,15]); fish_body_parts (index 321 -> 320: counts [1,3,4,13,9] -> [1,3,4,13,8]); sea_life (index 322 -> 321: counts [9,14,25,20,13] -> [9,14,26,19,12]); mollusks (index 325 -> 324: counts [2,6,8,12,8] -> [2,6,6,12,8]); cephalopods (index 326 -> 325: counts [1,1,6,11,11] -> [1,1,5,10,9]); sea_mammals (index 328 -> 327: counts [6,6,13,12,2] -> [6,6,13,13,1]); seals_and_sea_lions (index 329 -> 328: counts [1,1,9,10,11] -> [1,1,8,10,7]); reef_life (index 330 -> 329: counts [1,5,13,16,6] -> [1,5,14,16,5]); jellyfish_and_relatives (index 331 -> 330: counts [1,1,4,11,12] -> [1,1,5,9,11]); seaweeds (index 332 -> 331: counts [0,1,7,7,21] -> [0,1,6,7,17]); ocean_giants (index 333 -> 332: counts [2,6,8,12,4] -> [2,6,8,14,3], range [2,5] -> [2,4]); starfish_and_sea_urchins (index 334 -> 333: counts [1,1,1,5,20] -> [1,1,1,3,18]); insects_and_bugs (index 335 -> 334: counts [12,14,22,23,15] -> [12,14,22,23,14]); beetles (index 336 -> 335: counts [2,1,6,16,12] -> [2,1,6,16,11]); butterflies_and_moths (index 337 -> 336: counts [2,2,7,20,7] -> [2,2,8,19,7]); spiders (index 340 -> 339: counts [0,3,8,10,11] -> [0,3,7,9,9]); insect_body_parts (index 342 -> 341: counts [2,5,6,8,12] -> [2,5,6,7,11]); biting_bugs (index 343 -> 342: counts [2,3,8,12,7] -> [2,3,8,10,6]); ants_and_termites (index 347 -> 346: counts [1,8,5,12,18] -> [1,6,5,12,16]); worms (index 349 -> 348: counts [2,1,11,9,19] -> [2,1,10,9,18]); domestic_animals (index 350 -> 349: counts [8,11,30,13,17] -> [8,11,31,12,17]); pets (index 352 -> 351: counts [7,10,21,19,10] -> [7,10,22,19,10]); pet_snacks_and_feed (index 375 -> 356: parent "domestic_animals" -> "pets"); cage_birds (index 359 -> 359: counts [0,2,7,1,0] -> [0,2,8,1,0]); dog_breeds (index 360 -> 360: counts [7,16,14,11,5] -> [7,16,15,10,5]); terriers (index 361 -> 361: counts [0,6,6,19,10] -> [0,6,6,19,9]); hounds (index 362 -> 362: counts [1,6,5,17,15] -> [1,4,5,15,15]); toy_dogs (index 363 -> 363: counts [2,7,7,9,7] -> [1,6,7,8,7]); herding_dogs (index 364 -> 364: counts [1,4,12,4,20] -> [1,4,12,3,20]); cat_breeds (index 370 -> 370: counts [1,2,13,11,21] -> [2,1,13,12,21]); cattle_breeds (index 371 -> 371: counts [0,0,8,15,15] -> [0,1,7,15,15]); chicken_breeds (index 372 -> 372: counts [0,0,3,22,15] -> [0,0,4,21,15], range [4,5] -> [3,5]); working_animals (index 374 -> 374: counts [2,14,9,9,3] -> [2,13,9,9,3]); horse_breeds (index 377 -> 376: counts [0,2,6,17,14] -> [0,2,7,17,13]); horse_tack (index 380 -> 379: counts [1,4,11,16,8] -> [1,4,10,16,8]); horse_family (index 382 -> 381: counts [3,2,5,6,13] -> [3,2,6,6,10]); african_animals (index 384 -> 383: counts [7,7,11,13,9] -> [7,7,11,13,10]); turkish_animals (index 388 -> 387: counts [0,0,4,16,9] -> [0,0,4,13,10], range [3,5] -> [4,5]); asian_animals (index 389 -> 388: counts [2,7,11,16,12] -> [2,7,11,17,12]); indian_animals (index 390 -> 389: counts [1,3,7,12,12] -> [1,3,8,13,13]); himalayan_animals (index 391 -> 390: counts [0,2,8,10,18] -> [0,2,5,9,17]); australian_animals (index 394 -> 393: counts [8,3,12,21,7] -> [8,3,12,20,7]); australian_birds (index 395 -> 394: counts [1,4,4,20,9] -> [1,4,5,19,9]); new_zealand_animals (index 396 -> 395: counts [0,1,1,18,16] -> [0,1,2,17,16]); south_american_animals (index 399 -> 398: counts [3,9,14,11,9] -> [3,9,15,11,9]); amazon_animals (index 400 -> 399: counts [3,6,13,15,8] -> [3,6,14,15,8]); andean_animals (index 401 -> 400: counts [0,2,5,10,17] -> [0,2,5,10,16]); galapagos_animals (index 402 -> 401: name "Galapagos animals" -> "Galápagos animals", counts [0,1,5,18,8] -> [0,1,5,19,8], breaks [2,6] -> [2,4,6]); north_american_animals (index 403 -> 402: counts [2,13,22,9,4] -> [2,13,21,9,4]); everglades_animals (index 405 -> 404: counts [1,2,11,17,9] -> [1,2,12,16,9]); european_animals (index 406 -> 405: counts [2,8,17,12,7] -> [2,8,17,10,6]); alpine_animals (index 408 -> 407: counts [0,2,6,12,15] -> [0,2,6,11,13]); savanna_animals (index 415 -> 414: counts [7,10,10,16,3] -> [7,10,10,16,4]); city_animals (index 417 -> 416: counts [5,14,13,13,1] -> [5,14,12,13,0]); zoo_animals (index 418 -> 417: counts [9,15,13,3,0] -> [9,15,13,3,1]); nocturnal_animals (index 420 -> 419: counts [3,8,19,13,7] -> [3,8,18,13,7]); hibernating_animals (index 423 -> 422: counts [4,7,19,14,8] -> [4,7,17,14,8]); migrating_animals (index 424 -> 423: counts [2,10,19,17,6] -> [2,10,20,17,6]); ocean_animals (index 426 -> 425: counts [1,2,6,6,0] -> [1,2,7,6,0]); striped_animals (index 427 -> 426: counts [4,7,4,11,4] -> [4,6,4,11,4]); black_and_white_animals (index 429 -> 428: counts [6,6,4,8,6] -> [6,6,4,9,6]); animals_with_tusks (index 431 -> 430: counts [1,8,4,5,7] -> [1,9,3,5,7]); animals_with_shells (index 432 -> 431: counts [4,9,7,14,7] -> [4,9,8,14,7]); scavengers (index 435 -> 434: counts [1,10,15,6,6] -> [1,10,14,6,6]); spiny_animals (index 438 -> 437: counts [1,4,2,20,7] -> [1,4,2,20,6]); long_necked_animals (index 440 -> 439: counts [4,12,5,10,5] -> [4,12,5,11,5]); tentacled_animals (index 442 -> 441: counts [2,1,8,15,10] -> [2,1,8,12,10]); four_legged_animals (index 446 -> 444: counts [12,17,8,1,0] -> [12,17,9,1,0]); prehistoric_life (index 449 -> 447: counts [8,7,20,25,16] -> [7,6,17,19,8]); dinosaurs (index 450 -> 448: counts [5,6,6,15,22] -> [5,5,6,15,22]); long_necked_giants (index 453 -> 451: parent "dinosaurs" -> "plant_eating_dinosaurs"); horned_and_armored_beasts (index 454 -> 452: parent "dinosaurs" -> "plant_eating_dinosaurs"); flying_reptiles (index 455 -> 453: counts [0,1,4,2,33] -> [0,1,2,2,32], range [3,5] -> [4,5]); sea_reptiles (index 456 -> 454: counts [0,0,3,7,33] -> [0,0,3,6,28]); extinct_animals (index 458 -> 456: counts [2,3,9,15,26] -> [2,3,10,15,26]); extinct_birds (index 459 -> 457: counts [0,1,1,4,10] -> [0,1,2,3,10]); prehistoric_periods (index 460 -> 458: counts [1,3,8,18,20] -> [1,3,8,17,20]); animal_homes (index 465 -> 463: counts [5,6,13,12,14] -> [5,6,13,12,13]); farmyard_shelters (index 468 -> 466: counts [1,2,3,2,4] -> [1,2,3,2,3]); male_animals (index 471 -> 469: counts [3,6,11,15,12] -> [3,6,11,13,11]); animal_movements (index 477 -> 473: counts [5,8,17,10,6] -> [5,8,18,9,5]); water_plants (index 549 -> 545: counts [0,3,8,9,17] -> [0,3,8,10,17]); ocean (index 659 -> 655: counts [9,10,17,11,7] -> [9,10,18,11,7]); marine_animals (index 660 -> 656: counts [5,1,4,4,0] -> [5,1,5,4,0]); wetlands (index 667 -> 663: counts [2,8,21,14,3] -> [2,8,21,15,3]); taiga (index 674 -> 670: counts [2,9,27,12,11] -> [2,9,26,11,11]); aquarium (index 926 -> 922: counts [4,6,17,7,5] -> [4,6,18,7,5]); farm_buildings (index 935 -> 931: counts [1,6,16,11,7] -> [1,6,16,11,6]); household_pests (index 1566 -> 1562: counts [4,8,10,8,4] -> [4,8,11,7,4]); evolution_words (index 2463 -> 2459: counts [2,7,12,16,5] -> [2,7,13,16,5]); sounds_like_a_number (index 2831 -> 2827: counts [4,0,2,7,6] -> [4,0,2,7,5]); words_from_spanish (index 2961 -> 2957: counts [6,18,17,14,9] -> [6,18,18,14,8]); words_from_native_american_languages (index 2979 -> 2975: counts [2,12,20,11,6] -> [2,12,19,11,6]); quiet_things (index 3146 -> 3142: counts [3,8,18,5,5] -> [3,8,18,5,4]); pink_things (index 3200 -> 3196: counts [4,13,15,15,4] -> [4,13,15,14,4]); things_with_eyes (index 3209 -> 3205: counts [2,12,17,16,3] -> [2,12,18,15,3]); things_with_tongues (index 3213 -> 3209: counts [4,8,12,11,9] -> [4,8,12,11,8]); things_with_tails (index 3216 -> 3212: counts [8,20,18,14,4] -> [8,20,19,13,4])
+Root links by theme + shown text + row: gone 446, new 133, rating changed 22
+  gone: farm_animals: "lamb" (461), baby_animals: "lamb" (461), cephalopods: "calamari" (486), mollusks: "calamari" (486), tentacled_animals: "calamari" (486), sea_life: "calamari" (486), reef_life: "uni" (503), starfish_and_sea_urchins: "uni" (503), spiny_animals: "uni" (503), sea_life: "uni" (503), insect_life_cycle: "egg" (518), butterfly_life_stages: "egg" (518), mammals_that_live_in_water: "elephant" (979), australian_animals: "possum" (1047), scavengers: "possum" (1047), north_american_animals: "possum" (1047), city_animals: "possum" (1047), nocturnal_animals: "possum" (1047), mammals: "possum" (1047), marsupials: "possum" (1047), words_from_native_american_languages: "possum" (1047), tree_dwelling_animals: "possum" (1047), hibernating_animals: "woodchuck" (1049), words_from_native_american_languages: "woodchuck" (1049), north_american_animals: "woodchuck" (1049), burrowing_animals: "woodchuck" (1049), mammals: "woodchuck" (1049), rodents: "woodchuck" (1049), cold_blooded_animals: "lizard" (1137), cold_blooded_animals: "frog" (1144), cold_blooded_animals: "toad" (1145), cold_blooded_animals: "salamander" (1146), himalayan_animals: "newt" (1147), cold_blooded_animals: "newt" (1147), himalayan_animals: "eft" (1148), alpine_animals: "eft" (1148), cold_blooded_animals: "eft" (1148), cold_blooded_animals: "gecko" (1149), cold_blooded_animals: "chameleon" (1151), asian_animals: "Komodo monitor" (1153), southeast_asian_animals: "Komodo monitor" (1153), venomous_animals: "Komodo monitor" (1153), national_animals: "Komodo monitor" (1153), reptiles_and_amphibians: "Komodo monitor" (1153), lizards: "Komodo monitor" (1153), frogs_and_toads: "tadpole" (1163), pets: "beardie" (1176), reptiles_and_amphibians: "beardie" (1176), lizards: "beardie" (1176), exotic_pets: "beardie" (1176), cold_blooded_animals: "anole" (1183), cold_blooded_animals: "horned lizard" (1184), reptiles_and_amphibians: "bullsnake" (1186), snakes: "bullsnake" (1186), american_serpents: "bullsnake" (1186), sea_reptiles: "marine iguana" (1200), reptiles_and_amphibians: "leatherback" (1202), animals_with_shells: "leatherback" (1202), sea_reptiles: "leatherback" (1202), tropical_fish: "goldfish" (1214), tropical_fish: "koi" (1239), seaweeds: "sea grass" (1291), sea_reptiles: "turtle" (1293), sea_life: "man-of-war" (1317), jellyfish_and_relatives: "man-of-war" (1317), deep_sea_fish: "giant squid" (1318), sea_reptiles: "snake" (1328), sea_life: "great white" (1330), sea_life: "hammerhead" (1331), ocean_giants: "hammerhead" (1331), sea_life: "seagrass" (1339), plants: "seagrass" (1339), biting_bugs: "bee" (1342), biting_bugs: "wasp" (1343), insects_and_bugs: "skeeter" (1347), biting_bugs: "skeeter" (1347), flies: "skeeter" (1347), everglades_animals: "skeeter" (1347), city_animals: "skeeter" (1347), household_pests: "skeeter" (1347), words_from_spanish: "skeeter" (1347), biting_bugs: "hornet" (1382), insects_and_bugs: "harlequin ladybird" (1426), insects_and_bugs: "maybug" (1429), beetles: "maybug" (1429), ants_and_termites: "antlion" (1434), hounds: "hound" (1436), male_animals: "hound" (1436), male_animals: "pooch" (1437), male_animals: "mutt" (1438), male_animals: "doggo" (1439), domestic_animals: "moggy" (1441), pets: "moggy" (1441), sounds_like_a_number: "moggy" (1441), quiet_things: "moggy" (1441), things_with_eyes: "moggy" (1441), things_with_tongues: "moggy" (1441), things_with_tails: "moggy" (1441), animals_with_tusks: "boar" (1458), domestic_animals: "livestock" (1476), ducks: "drake" (1480), geese_and_swans: "gander" (1481), horses: "dapple grey" (1544), horse_colors: "dapple grey" (1544), prehistoric_life: "fossil" (1567), prehistoric_life: "woolly rhinoceros" (1601), ice_age_animals: "woolly rhinoceros" (1601), prehistoric_life: "Mesozoic" (1607), prehistoric_life: "Paleozoic" (1608), prehistoric_life: "Cenozoic" (1609), prehistoric_life: "Jurassic" (1610), prehistoric_life: "Cretaceous" (1611), prehistoric_life: "Triassic" (1612), prehistoric_life: "Ice Age" (1613), prehistoric_life: "extinction" (1614), prehistoric_life: "amber" (1615), prehistoric_life: "paleontologist" (1616), prehistoric_life: "megafauna" (1617), prehistoric_life: "Cambrian" (1619), prehistoric_life: "Pangaea" (1620), prehistoric_life: "fossil record" (1621), prehistoric_life: "sauropod" (1624), prehistoric_life: "theropod" (1625), prehistoric_life: "herbivore" (1626), prehistoric_life: "carnivore" (1627), bats: "echolocation" (3341), worms: "ringworm" (3433), horse_tack: "blanket" (3668), insect_body_parts: "antenna" (4606), worms: "bookworm" (6533), insect_life_cycle: "nymph" (6922), ocean_giants: "Kraken" (6947), tentacled_animals: "Kraken" (6947), cephalopods: "Kraken" (6947), dog_breeds: "Maltese" (7583), big_cats: "cub" (7762), big_cats: "pride" (7763), big_cats: "maneater" (7767), small_wild_cats: "Andean mountain cat" (7800), primates: "colobus" (7816), ends_with_bus: "colobus" (7816), primates: "Barbary ape" (7832), european_animals: "Barbary ape" (7832), monkeys: "Barbary ape" (7832), whales_and_dolphins: "cetacean" (7893), sea_mammals: "cetacean" (7893), marsupials: "grey kangaroo" (7900), marsupials: "pouch" (7918), marsupials: "marsupial" (7919), hoofed_mammals: "boar" (7931), turkish_animals: "grizzly" (7945), european_animals: "grizzly" (7945), alpine_animals: "grizzly" (7945), himalayan_animals: "grizzly" (7945), turkish_animals: "grizzly bear" (7946), european_animals: "grizzly bear" (7946), alpine_animals: "grizzly bear" (7946), himalayan_animals: "grizzly bear" (7946), hibernating_animals: "Kodiak" (7948), taiga: "Kodiak" (7948), himalayan_animals: "Kodiak" (7948), turkish_animals: "timber wolf" (7966), european_animals: "timber wolf" (7966), african_animals: "painted dog" (7970), savanna_animals: "painted dog" (7970), wild_dogs_and_foxes: "Tasmanian wolf" (7994), wild_dogs_and_foxes: "vixen" (7995), weasel_family: "beech marten" (8016), european_animals: "beech marten" (8016), weasel_family: "ratel" (8020), bats: "roost" (8056), bats: "colony" (8057), rabbits_and_hares: "doe" (8077), rabbits_and_hares: "buck" (8078), rabbits_and_hares: "kit" (8079), rabbits_and_hares: "leveret" (8080), rabbits_and_hares: "warren" (8081), rabbits_and_hares: "burrow" (8082), rabbits_and_hares: "cony" (8083), birds_of_prey: "raptor" (8118), birds_of_prey: "bird of prey" (8119), birds_of_prey: "talon" (8120), bird_parts: "talon" (8120), seabirds: "bonxie" (8136), seabirds: "shag" (8137), new_world_songbirds: "bluebird" (8152), new_world_songbirds: "cardinal" (8153), new_world_songbirds: "blue jay" (8155), new_world_songbirds: "oriole" (8156), new_world_songbirds: "goldfinch" (8160), new_world_songbirds: "tanager" (8190), flightless_birds: "Galapagos penguin" (8244), flightless_birds: "flightless" (8256), flightless_birds: "ratite" (8257), parrots: "polly" (8297), parrots: "Norwegian blue" (8298), game_birds: "brace" (8319), game_birds: "covey" (8320), game_birds: "gun dog" (8321), game_birds: "beater" (8322), game_birds: "shoot" (8323), new_world_songbirds: "scarlet tanager" (8340), new_world_songbirds: "painted bunting" (8341), new_world_songbirds: "indigo bunting" (8342), new_world_songbirds: "red-crested cardinal" (8350), new_world_songbirds: "green jay" (8353), new_world_songbirds: "paradise tanager" (8355), bird_parts: "bill" (8359), bird_parts: "feather" (8360), bird_parts: "crest" (8364), bird_parts: "wattle" (8367), bird_parts: "spur" (8382), bird_parts: "webbed foot" (8392), bird_parts: "cloaca" (8403), bird_body_parts: "drumstick" (8407), local_status_labels: "migration" (8419), pigeons_and_doves: "squab" (8486), pigeons_and_doves: "dovecote" (8491), pigeons_and_doves: "loft" (8492), pigeons_and_doves: "coo" (8493), migrating_animals: "loggerhead" (8569), ocean_animals: "loggerhead" (8569), animals_with_shells: "hawksbill" (8571), slow_things: "Galapagos tortoise" (8576), turtles_and_tortoises: "hatchling" (8596), turtles_and_tortoises: "carapace" (8597), turtles_and_tortoises: "plastron" (8598), turtles_and_tortoises: "shell" (8599), turtles_and_tortoises: "Lonesome George" (8611), sea_reptiles: "saltwater crocodile" (8612), indian_animals: "mugger crocodile" (8624), crocodilians: "crocodilian" (8634), crocodilians: "swamp crocodile" (8635), crocodilians: "marsh crocodile" (8637), frogs_and_toads: "Kermit" (8670), frogs_and_toads: "froglet" (8671), frogs_and_toads: "spawn" (8672), frogs_and_toads: "croak" (8673), frogs_and_toads: "ribbit" (8674), frogs_and_toads: "lily pad" (8675), frogs_and_toads: "frogspawn" (8676), frogs_and_toads: "toadlet" (8677), salamanders_and_newts: "caudate" (8706), salamanders_and_newts: "urodele" (8707), salamanders_and_newts: "larva" (8710), rays_and_eels: "elver" (8808), deep_sea_fish: "vampire squid" (8831), deep_sea_fish: "dumbo octopus" (8832), spiders: "crab" (8861), tentacled_animals: "cephalopod" (8895), cephalopods: "cephalopod" (8895), mollusks: "mollusc" (8896), sea_mammals: "pinniped" (8905), seals_and_sea_lions: "pinniped" (8905), jellyfish_and_relatives: "tentacle" (8933), cephalopods: "tentacle" (8933), jellyfish_and_relatives: "nematocyst" (8934), seaweeds: "spirulina" (8949), seaweeds: "eelgrass" (8953), starfish_and_sea_urchins: "echinoderm" (8986), starfish_and_sea_urchins: "tube feet" (8987), beetles: "may bug" (9006), beetles: "glow-worm" (9018), nocturnal_animals: "glow-worm" (9018), spiders: "arachnid" (9112), spiders: "spiderling" (9113), spiders: "spinneret" (9115), garden_bugs: "cranefly" (9124), bug_parts: "wing" (9125), bug_parts: "mandible" (9131), insect_body_parts: "proboscis" (9132), bug_parts: "proboscis" (9132), bug_parts: "stinger" (9133), insect_body_parts: "antennae" (9135), bug_parts: "spiracle" (9136), insect_body_parts: "cuticle" (9138), bug_parts: "pincer" (9148), ants_and_termites: "anthill" (9227), ants_and_termites: "formicary" (9230), dog_breeds: "great dane" (9278), working_dogs: "great dane" (9278), dogs_from_germany: "great dane" (9278), dog_breeds: "rhodesian ridgeback" (9291), hounds: "rhodesian ridgeback" (9291), cattle_breeds: "holstein" (9339), cattle_breeds: "Highland" (9344), working_animals: "oxen" (9452), parts_of_a_horse: "hock" (9588), horse_family: "equid" (9625), horse_family: "Equus" (9626), african_animals: "bongo" (9637), striped_animals: "bongo" (9637), turkish_animals: "Angora cat" (9664), turkish_animals: "Caretta caretta" (9667), australian_animals: "budgerigar" (9697), australian_birds: "budgerigar" (9697), australian_animals: "joey" (9702), marsupials: "joey" (9702), arctic_animals: "beluga whale" (9748), whales_and_dolphins: "beluga" (9748), royal_things: "ermine" (9751), deer: "stag" (9780), deer: "doe" (9781), rainforest_animals: "Sumatran rhino" (9792), endangered_animals: "Sumatran rhino" (9792), venomous_animals: "yellow jacket" (9825), striped_animals: "bumble bee" (9851), whales_and_dolphins: "dolphin" (9857), hopping_animals: "bush baby" (9914), pigeons_and_doves: "pigeon" (9921), dinosaurs: "dino" (9970), flying_reptiles: "flying reptile" (9996), flying_reptiles: "winged reptile" (9997), flying_reptiles: "flying dinosaur" (9998), sea_reptiles: "Nessie" (10022), prehistoric_periods: "Anthropocene" (10092), ducks: "duckling" (10128), deer: "fawn" (10130), geese_and_swans: "gosling" (10131), seals_and_sea_lions: "pup" (10133), eagles: "eaglet" (10134), owls: "owlet" (10135), salmon_and_trout: "parr" (10142), salmon_and_trout: "smolt" (10143), animal_movements: "burrow" (10149), rabbits_and_hares: "hutch" (10163), seals_and_sea_lions: "rookery" (10175), crows_and_ravens: "murder" (10240), ants_and_termites: "colony" (10242), geese_and_swans: "cob" (10287), deer: "hart" (10288), salamanders_and_newts: "gills" (10334), bug_parts: "antenna" (10338), bird_parts: "comb" (10342), bug_parts: "pedipalp" (10349), animal_experts: "behaviourist" (10470), baby_animals: "puggle" (10516), hair: "shag" (14323), fish_body_parts: "fillet" (17671), salmon_and_trout: "lox" (17792), seaweeds: "seaweed" (18998), seaweeds: "agar" (19917), seals_and_sea_lions: "selkie" (22262), animal_movements: "lumber" (24038), ways_of_walking: "lumber" (24038), deer: "Rudolph" (25017), wading_birds: "wader" (32072), seals_and_sea_lions: "Ross" (32173), whales_and_dolphins: "Irrawaddy" (36797), pink_animals: "pink dolphin" (40146), pink_things: "pink dolphin" (40146), evolution_words: "Darwin's finches" (41021), finches: "Darwin's" (41021), salmon_and_trout: "fingerling" (41059), geese_and_swans: "cygnet" (41073), bird_parts: "keel" (50278), deer: "hind" (50504), deer: "roebuck" (50505), deer: "Bambi" (50506), wild_pigs: "Pumbaa" (50562), owls: "Hedwig" (50579), himalayan_animals: "griffon" (50612), crows_and_ravens: "corvid" (50653), geese_and_swans: "pen" (50686), wading_birds: "hammerkop" (50706), venomous_snakes: "venomous snake" (50724), constrictor_snakes: "constrictor" (50741), constrictor_snakes: "Kaa" (50745), salmon_and_trout: "grilse" (50759), salmon_and_trout: "alevin" (50760), salmon_and_trout: "kelt" (50761), salmon_and_trout: "redd" (50762), seals_and_sea_lions: "haul-out" (50818), terriers: "silky" (50969), terriers: "Toto" (50973), hounds: "sighthound" (50992), hounds: "scent hound" (50993), hounds: "hunting dog" (50997), toy_dogs: "toy dog" (51015), toy_dogs: "teacup" (51016), toy_dogs: "lapdog" (51017), herding_dogs: "Lassie" (51048), african_birds: "pel's fishing owl" (51110), owls: "pel's fishing owl" (51110), indian_animals: "rhesus macaque" (51127), southeast_asian_animals: "mouse-deer" (51176), australian_birds: "bin chicken" (51194), new_zealand_animals: "little blue penguin" (51218), penguins: "Antarctic penguin" (51227), galapagos_animals: "marine turtle" (51268), farm_buildings: "shippon" (57686), animal_homes: "shippon" (57686), farmyard_shelters: "shippon" (57686), terriers: "Miniature bull terrier" (60003), australian_animals: "mallee fowl" (60034), whales_and_dolphins: "finback" (63015), whales_and_dolphins: "cachalot" (63021), deer: "whitetail" (63024), wild_dogs_and_foxes: "tanuki" (63029), rays_and_eels: "manta" (63054), rays_and_eels: "moray" (63055), starfish_and_sea_urchins: "holothurian" (63062), cat_breeds: "Persian" (63088), horses: "Przewalski" (63089), horse_breeds: "Przewalski" (63089), horse_family: "Przewalski" (63089), african_birds: "grey parrot" (63095), turkish_animals: "Van cat" (63097), indian_animals: "spectacled cobra" (63098), indian_animals: "star tortoise" (63100), european_animals: "wisent" (63116), pink_animals: "Mitchell's cockatoo" (63122), flightless_birds: "Galapagos cormorant" (63286), pink_animals: "boto" (63300), pink_things: "boto" (63300), whales_and_dolphins: "boto" (63300), deer: "mule" (63564), deer: "roe" (63566), antelopes: "sable" (63568), wild_dogs_and_foxes: "painted wolf" (63574), wild_dogs_and_foxes: "red" (63577), eagles: "harpy" (63600), american_serpents: "coral" (63615), american_serpents: "corn" (63616), american_serpents: "garter" (63617), turtles_and_tortoises: "snapper" (63623), rays_and_eels: "eagle" (63656), butterflies_and_moths: "hawk" (63686), butterflies_and_moths: "luna" (63687), butterflies_and_moths: "peacock" (63688), bees_and_wasps: "queen" (63694), japanese_animals: "bobtail" (63734), japanese_animals: "Chin" (63735), andean_animals: "mountain cat" (63744), north_american_animals: "cinnamon" (64801), hibernating_animals: "cinnamon" (64801), taiga: "cinnamon" (64801), ducks: "rubber" (65266), pigeons_and_doves: "collared" (65273), pigeons_and_doves: "mourning" (65287), pigeons_and_doves: "rock" (65292), turtles_and_tortoises: "Galapagos" (65318), turtles_and_tortoises: "giant" (65319), turtles_and_tortoises: "gopher" (65320), turtles_and_tortoises: "radiated" (65332), ocean_giants: "Pacific octopus" (65422)
+  new: tree_dwelling_animals: "opossum" (1046), words_from_native_american_languages: "woodchuck" (1048), australian_animals: "budgie" (1094), american_serpents: "coral snake" (1191), american_serpents: "garter snake" (1192), turtles_and_tortoises: "snapping" (1201), plants: "sea grass" (1291), galapagos_animals: "sea turtle" (1293), arctic_animals: "beluga" (1309), whales_and_dolphins: "beluga" (1309), rays_and_eels: "moray" (1320), rays_and_eels: "manta" (1329), garden_bugs: "crane fly" (1386), venomous_animals: "yellowjacket" (1409), beetles: "glowworm" (1415), nocturnal_animals: "glowworm" (1415), insects_and_bugs: "Asian lady beetle" (1426), horses: "dapple gray" (1544), horse_colors: "dapple gray" (1544), indian_animals: "rhesus monkey" (7814), hopping_animals: "bushbaby" (7820), marsupials: "gray kangaroo" (7900), wild_dogs_and_foxes: "red" (7962), african_animals: "painted dog" (7969), wild_dogs_and_foxes: "painted wolf" (7969), wild_dogs_and_foxes: "tanuki" (7974), european_animals: "stone marten" (8015), eagles: "harpy" (8108), new_world_birds: "goldfinch" (8160), new_zealand_animals: "little penguin" (8241), flightless_birds: "Galápagos penguin" (8244), african_birds: "grey parrot" (8265), pink_animals: "pink cockatoo" (8295), new_world_birds: "scarlet tanager" (8340), new_world_birds: "painted bunting" (8341), new_world_birds: "indigo bunting" (8342), new_world_birds: "green jay" (8353), pigeons_and_doves: "rock" (8461), pigeons_and_doves: "mourning" (8464), american_serpents: "corn snake" (8507), reptiles_and_amphibians: "bull snake" (8517), turtles_and_tortoises: "giant" (8575), slow_things: "Galápagos tortoise" (8576), turtles_and_tortoises: "Galápagos" (8576), turtles_and_tortoises: "radiated" (8603), indian_animals: "star tortoise" (8604), turtles_and_tortoises: "gopher" (8606), reptiles_and_amphibians: "leatherback" (8609), animals_with_shells: "leatherback turtle" (8609), migrating_animals: "loggerhead turtle" (8610), ocean_animals: "loggerhead turtle" (8610), indian_animals: "mugger" (8633), sea_life: "great white shark" (8743), rays_and_eels: "eagle" (8797), animals_with_shells: "hawksbill turtle" (8912), ocean_giants: "Pacific octopus" (8973), butterflies_and_moths: "peacock" (9024), butterflies_and_moths: "luna" (9042), butterflies_and_moths: "hawk" (9044), bees_and_wasps: "queen" (9057), dog_breeds: "Great Dane" (9278), working_dogs: "Great Dane" (9278), dogs_from_germany: "Great Dane" (9278), dog_breeds: "Rhodesian ridgeback" (9291), hounds: "Rhodesian ridgeback" (9291), cat_breeds: "Persian" (9304), turkish_animals: "Angora cat" (9318), turkish_animals: "Van cat" (9338), horses: "Przewalski's" (9483), horse_breeds: "Przewalski's" (9483), horse_family: "Przewalski's" (9483), animals_with_tusks: "wild boar" (9678), hoofed_mammals: "wild boar" (9678), deer: "roe" (9679), odd_toed_animals: "Indian rhinoceros" (9681), odd_toed_animals: "Malayan tapir" (9685), southeast_asian_animals: "mouse deer" (9693), indian_animals: "spectacled cobra" (9695), seals_and_sea_lions: "Ross" (9712), pink_animals: "river dolphin" (9722), pink_things: "river dolphin" (9722), whales_and_dolphins: "boto" (9722), deer: "whitetail" (9733), deer: "mule" (9734), european_animals: "wisent" (9741), small_wild_cats: "Andean cat" (9804), sea_life: "Portuguese man o' war" (9819), jellyfish_and_relatives: "Portuguese man o' war" (9819), whales_and_dolphins: "spotted" (9857), primates: "colobus monkey" (9859), ends_with_bus: "colobus monkey" (9859), cattle_breeds: "Holstein" (9863), pigeons_and_doves: "pink" (9921), prehistoric_life: "woolly rhino" (10025), insect_life_cycle: "nymph" (10146), insect_body_parts: "antenna" (10338), parts_of_a_horse: "hock" (10344), animal_experts: "behaviorist" (10470), royal_things: "ermine" (20847), farm_animals: "lamb" (25044), baby_animals: "lamb" (25044), cattle_breeds: "Highland" (40202), antelopes: "sable" (40205), male_animals: "roebuck" (50505), african_animals: "bongo" (50510), striped_animals: "bongo" (50510), himalayan_animals: "griffon" (50604), terriers: "Silky" (50969), dog_breeds: "Maltese" (50998), japanese_animals: "Chin" (51003), wading_birds: "hamerkop" (51103), african_birds: "Pel's fishing owl" (51110), owls: "Pel's fishing owl" (51110), japanese_animals: "bobtail" (51171), odd_toed_animals: "Javan rhinoceros" (51172), rainforest_animals: "Sumatran rhinoceros" (51173), endangered_animals: "Sumatran rhinoceros" (51173), odd_toed_animals: "Sumatran rhinoceros" (51173), australian_animals: "malleefowl" (51186), odd_toed_animals: "mountain tapir" (51233), evolution_words: "Darwin's finch" (51251), finches: "Darwin's" (51251), sea_life: "hammerhead shark" (51267), ocean_giants: "hammerhead shark" (51267), terriers: "miniature bull terrier" (60003), flightless_birds: "Galápagos cormorant" (63286), insect_life_cycle: "egg" (68128), butterfly_life_stages: "egg" (68128), insect_body_parts: "proboscis" (68129), baby_animals: "puggle" (68130), animal_movements: "lumber" (68131), ways_of_walking: "lumber" (68131), australian_animals: "possum" (68132)
+  rating: australian_birds: "ibis" (1116) 3.7/4 -> 3/3, domestic_animals: "bantam" (1473) 4.7/5 -> 4.4/5, farm_animals: "bantam" (1473) 4.7/5 -> 4.4/5, chicken_breeds: "bantam" (1473) 3.4/2 -> 2.7/2, poultry: "bantam" (1473) 4.7/5 -> 4.4/5, words_for_small: "bantam" (1473) 4.7/5 -> 4.4/5, prehistoric_life: "Liopleurodon" (1597) 4.7/4 -> 4/4, sea_reptiles: "Liopleurodon" (1597) 4.4/3 -> 3.7/3, prehistoric_life: "moa" (1604) 4/4 -> 3.7/4, flightless_birds: "moa" (1604) 3.4/2 -> 2.7/2, extinct_animals: "moa" (1604) 3.7/3 -> 3/3, new_zealand_animals: "moa" (1604) 3.4/2 -> 2.7/2, extinct_birds: "moa" (1604) 3.7/3 -> 3/3, penguins: "African" (8243) 3/3 -> 2.7/2, pigeons_and_doves: "Eurasian collared" (8471) 3.7/3 -> 3.4/2, insect_body_parts: "pincer" (9148) 3.4/4 -> 2.7/3, game_meats: "mallard" (17734) 3/3 -> 2.7/3, waterbirds: "mallard" (17734) 2.4/1 -> 1.7/1, game_birds: "mallard" (17734) 3/3 -> 2.7/3, pond: "mallard" (17734) 3/3 -> 2.7/3, ducks: "mallard" (17734) 2.4/1 -> 1.7/1, north_american_birds: "mallard" (17734) 3/3 -> 2.7/3
+new issues: none
+
+Checks in the Animals group (items on its themes or on entries linked to them), v433 -> this draft:
+  warnings long, theme-name, clash-big, maybe-duplicate, theme-gap: 0 in the group (the baseline items are elsewhere); 0 after.
+  contract-dup-root 14 -> 9: 5 fixed (crest [helmet emblem] 2527 typed common clears crest 8364 and 9604; the stubs luna, moray and boto are gone).
+    The 9 left are by design: a common animal word after a same-text name row (jaguar/Jaguar, ram/RAM, medusa/Medusa, hydra/Hydra, earth/Earth,
+    kindle/Kindle, bobcat/Bobcat, labour/Labour, homer/Homer). Both rows are right; only the export's row order or the contract's lookup could
+    change it. Proposal: accept them in the baseline note ("two senses, the name first by id"), or have the contract prefer the common row.
+  contract-root-region 57 -> 42: 13 real ones fixed (including possum and woodchuck, merged on Simon's word) (skeeter, moggy, maybug, bonxie, bin chicken, shippon become synonym aliases with their
+    region; mollusc becomes mollusk with a UK spelling alias; dapple grey and harlequin ladybird become US roots with UK aliases; katydid loses the US tag on the US root);
+    2 left the group with their link (lumber [US timber] 24038: real, the US root of a lumber/timber pair, for the group of its timber themes;
+    frogspawn: by design). Of the 42 left, stoat (kept apart from ermine, Simon) and
+    about 41 are by design: a local animal or local term with no same-sense word in the other dialect (plaice, tench, rudd, bream, gudgeon,
+    barbel, walleye, crappie, barramundi, galah, corella, goanna, bobtail [lizard], weka, tuatara, pipi, brushtail possum, Scottish wildcat,
+    tigrina, slow worm, natterjack, crested newt, money spider, jackdaw, dunnock, yellowhammer, shag, cockchafer, blackfly, yellowjacket,
+    springbok, skewbald, twitcher, RSPB, walkies, mosey, and six UK chicken and sheep breeds). LIBRARY-RULES 4 keeps such a word a root with
+    its region ("the game raises its band"), while the contract says the game never reads root regions. Proposal: accept the by-design
+    roots in the baseline note as "regional words with no equivalent", and ask the game session whether it should read root regions
+    (then the contract kind could skip a root with no regional alias).
+  contract-type-common: 0 in the group (the crest fix lowers the count by 1 elsewhere).
+  info: sense-twin 17 -> 4, sense-link 7 -> 3, theme-twin 4 -> 0, alias-fullname 4 -> 3, orphan (animal words) 4 -> 36 (the 7 fictional
+    animals and the real category words kept, below), clash-large 6 -> 6, family-kin 28 -> 28, same-display 1 -> 1.
+
+Cross-group moves (for the tree batch at the end of step 3; not in this batch):
+  - seaweeds (Animals > sea life > seaweeds, 36 words): algae and sea plants, not animals -> Nature & Earth (plants).
+  - prehistoric periods with its child geological epochs (Animals > prehistoric life): geological time and Stone Age periods, not
+    creatures -> Nature & Earth (geology) or History & Myth (the Stone Age half).
+  - animal experts (zoologist, vet, beekeeper ...): could join the jobs themes in People & Society; it reads fine where it is.
+  - Links for other groups: Bambi, Kaa, Toto, Hedwig (kids' book characters, Arts), Lassie, Pumbaa (film characters), Norwegian blue
+    (comedy): fictional animals now in no theme. nymph [myth] 6922 and egg [food from hens] 518 still carry life cycle words (Science):
+    the insect senses (nymph 10146, egg 68128) fit there. cardinal [bird] in red things (sense-link) is for that group.
+
+For Simon:
+  1. Four themes go: new world songbirds merges into American songbirds (the same US/CA topic); bird-only parts (all 10 words in bird body
+     parts and animal body parts), arthropod parts (7 of 8 in insect body parts) and cold-blooded animals (all 10 in reptiles and
+     amphibians, filed under insect eaters) are deleted as twins. Theme indexes shift from 290 to the end. Alternative for cold-blooded
+     animals: keep it under animal traits and add fish and insects (it would need about 10 new links).
+  2. Holstein: v376 kept holstein [cattle] 9339 lowercase beside Holstein [cow] 9863 because capitalising would duplicate it; this batch
+     merges them (one breed, capital, gloss cattle). Not a reversal, but it changes v376's outcome.
+  3-5. Decided by Simon ("Take all", in this batch): the six Galápagos entries take the diacritic with plain spelling aliases (rule 8);
+     possum 1047 becomes a US synonym alias of opossum and woodchuck a US/CA synonym alias of groundhog (words from Native American languages
+     shows "woodchuck"); bullsnake becomes a spelling alias of bull snake; budgerigar a synonym alias of budgie; stoat and ermine stay apart,
+     and royal things now links ermine [fur] instead of ermine [animal].
+  6. Category words that left their only theme are kept as orphans (marsupial, arachnid, echinoderm, pinniped, livestock, corvid, ratite,
+     equid, wader, constrictor, raptor, bird of prey, toy dog, venomous snake, megafauna, sighthound ...; reviewer: LIBRARY-RULES 2 deletes
+     only stubs). Only stubs and descriptions made for one theme are deleted (31).
+  7. Offensive flags (Simon): jackass [black-footed] is a synonym alias of African penguin and keeps its flag; shag [bird] and shag [haircut]
+     are flagged offensive (snigger test). "shag" is not in js/offensive-words.js (offensive-unlisted info 92 -> 94): add it with Simon's OK.
+  8. Dinosaur case (Simon: a separate batch later) is mixed: Stegosaurus, Velociraptor, Brachiosaurus ... capital (proper), triceratops, apatosaurus, oviraptor, baryonyx and
+     most pterosaurs and sea reptiles lowercase (common). M-W prints the animals lowercase (stegosaurus, tyrannosaurus). About 150 entries:
+     a case pass of its own, not in this batch.
+  9. Short dog-breed names kept as they are (Bedlington, Kerry blue, Lakeland, Patterdale, Cesky, Sealyham, Bernese, Jack Russell): people
+     use them alone. Pharaoh [dog] and Ibizan read oddly without "hound": full terms with a show?
+ 10. Entries of other groups touched to finish a sense fix: man-of-war 1317 keeps only the warship themes (gloss warship); lumber [move
+     heavily] takes ways of walking too; lumber 24038 becomes a noun; crest 2527 typed common; pink things now links pink river dolphin
+     (shown "river dolphin"); Ice Age 1613 loses tm (no film theme holds it).
+ 11. Kept on your earlier decisions: horse coat colors (chestnut, bay, dun, pinto, champagne) stay separate from the plain colors; flank and
+     breast stay split (2026-11-23).
+ 12. Not done in this batch (it would pass a clean point): a full ratings pass (pop/ident and typicality consistency across the 230 themes),
+     spread tuning of the themes with few easy words (antelopes 2/3/30, salamanders and newts 2/1/45, flying reptiles 1/4/35, sea reptiles),
+     and family-kin pairs (spurs [horse tack] / spur [bird], heeler / heel could be kin).
+
+Left as is (flagged by a check, correct):
+  - sense-twin pinto [horse] / [horse color], chestnut [horse color] / [horse leg], flank [body part] / [animal part]: Simon, 2026-11-23.
+  - sense-twin and sense-link trunk [elephant] in animal body parts: the right sense (trunk [body] is the torso).
+  - sense-link boom [bittern] in animal sounds: the bittern's booming call is the right sense.
+  - contract-dup-root (9) and contract-root-region (about 42): by design, above.
+  - clash-large (6): crown, down, paw, kneading, snapper, wing families, all within 12.
+  - family-kin (28): other words or senses that share letters (theater flies, birdie, Spurs, trunks [swimming], sett / setter ...).
+  - alias-fullname: dinosaur bones, tree frogs and Darwin's finches are plural forms of their roots.
+  - same-display fish / fish in things with tails: not an Animals theme.
+  - orphans horse race, lone wolf, wolf pack, duck breast: no theme in this group fits (racing, people, food).
+  - Topic themes kept broad: horses (gallop, jockey, saddle beside the animals), deer (stag, doe, fawn), dog breeds (terrier, spaniel).
+  - Theme names: American serpents (snake would leak into rat snake, king snake), deadly Aussie animals, birds awake after dark.
+
+Baselines this batch would lower (tools/checks-baseline.json, at apply time): contract-dup-root 185 -> 177, contract-root-region 1781 -> 1768,
+contract-type-common 42 -> 41. No warning kind changes.
+
+=== Notice to _WS_ for v435 (send when Simon says) ===
+Library v435 is the tidy-up of the Animals group (TIDY-UP.md, step 3; reviewed by a second agent; Simon: "Take all"; applied after v434). No pin until Simon asks.
+- Four themes are gone: new world songbirds (merged into American songbirds), bird-only parts, arthropod parts and cold-blooded animals (copies of other themes). Theme indexes shift from the first of them to the end. Long-necked and horned/armored dinosaurs now sit under plant-eating dinosaurs, pet snacks and feed under pets; "Galápagos animals" takes its diacritic; odd-toed animals gains rhinos and tapirs (identifiability 4 -> 3).
+- Wrong senses fixed: lamb (the animal, not the meat), nymph, antenna, Maltese, hock, man-of-war (the jellyfish is Portuguese man o' war; man-of-war is the warship), Ross seal (was the Ross Sea), ermine in royal things (the fur); new entries egg [animal egg], proboscis [mouthpart], puggle [baby echidna], lumber [move heavily], possum [Australian].
+- 38 bare stubs and second roots went into their full entries with the same shown text (red fox shown "red", mule deer "mule", manta ray "manta" ...); 62 became aliases of the main word (possum of opossum, woodchuck of groundhog, budgerigar of budgie, skeeter of mosquito, moggy of cat, beardie of bearded dragon, cachalot of sperm whale, jackass of African penguin ...): their rows are gone or are alias rows now.
+- 210 links left themes they did not belong to (young, male and female words in kinds themes such as deer, homes and body parts, category words, fictional animals, food senses, modern animals in prehistoric themes). New text on some rows: Galápagos penguin, sea lion, tortoise, cormorant, racer, rail (plain spellings kept as aliases), mollusk (UK alias mollusc), Great Dane, Rhodesian ridgeback, Pel's fishing owl, dapple gray, gray kangaroo, Asian lady beetle (UK alias harlequin ladybird), and full names for the possessive stubs (Geoffroy's cat, Tengmalm's owl ...), shown short as before. Flags: shag (both senses) is now offensive. Familiarity: mallard 2, bantam 3, moa 3, Liopleurodon 4.
+Export (at the v433 base): theme rows 3,242 -> 3,238; entry rows 61,116 -> 61,027 (first change at row 1,317); links 100,684 -> 100,371, link positions move from row 454; no new characters.

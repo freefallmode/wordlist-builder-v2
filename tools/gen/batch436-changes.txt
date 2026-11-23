@@ -1,0 +1,376 @@
+Library batch v436: tidy-up step 3, Nature & Earth (218 themes read). 8 themes deleted, 23 second roots merged, 11 entries added, 26 deleted.
+1. Twins and the tree
+  Everest 32079 [mountain] becomes a synonym alias of Mount Everest 6757 (familiarity 1); links move: mountains:1 mountaineering_words:1 himalayan_peaks:1 seven_summits:1 famous_marathons:5 famous_mountains_and_ranges:1: the same mountain: Mount Everest is the name famous mountains uses; Everest, the short name, is its alias (the game swaps none, so the theme shows the full name)
+  Fuji 32087 [mountain] becomes a synonym alias of Mount Fuji 2354 (familiarity 2); links move: mountains:2 famous_volcanoes:3 famous_mountains_and_ranges:2: the same mountain (gloss mountain kept: Fuji is also an apple and a music style)
+  Mount Everest 6757 in famous_marathons: shown null -> "Everest": the race is the Everest Marathon (reviewer)
+  Mont Blanc 18416: type "proper" -> "place": a mountain is a place (the other Mont Blanc, the dessert, is proper)
+  deleted theme: famous_mountains_and_ranges "famous mountains and ranges" (11 words, all still in other themes): a twin of its parent mountains (all 11 words are there) and of Places & Geography's famous mountains and mountain ranges, which hold every peak and range in it; the name kept in v433 is settled by merging it into them
+  deleted theme: marine_animals "marine animals" (14 words, all still in other themes): twins sea life (Animals: 12 of its 14 words); all 14 are in its parent ocean
+  deleted theme: moving_water "water movements" (10 words, all still in other themes): "water movements" twins tides and currents (8 of 10); all 10 are in its parent ocean
+  deleted theme: minibeasts "minibeasts" (10 words, all still in other themes): twins insects and bugs (Animals: 8 of 10); all 10 are in its parent meadow
+  deleted theme: grassland_blooms "grassland blooms" (22 words, all still in other themes): all 22 words are in its parent meadow and 17 in wildflowers: a near-duplicate (reviewer)
+  deleted theme: australian_wildlife "Australian wildlife" (13 words, all still in other themes): twins Australian animals (Animals: 11 of 13); all 13 are in its parent outback
+  linked: ice sheet 30901 in polar_formations (typicality 4): the full term of the stub sheet [glacier]
+  linked: ice floe 21052 in polar_formations (typicality 4): the full term of the stub floe
+  out of polar_formations: sheet 28525: a bare stub: ice sheet takes the link (now in no theme: not exported)
+  out of polar_formations: floe 28526: a bare stub: ice floe takes the link (now in no theme: not exported)
+  deleted entry: sheet 28525 [glacier]: a bare stub of ice sheet made for polar formations (LIBRARY-RULES 5: never a bare stub); in no theme
+  deleted entry: floe 28526: a bare stub of ice floe made for polar formations; in no theme
+  kin of pack 63778 moves to pack ice 30904: packing 24248, packed 46979
+  pack 63778 [drifting floes] becomes a synonym alias of pack ice 30904 (familiarity 4); links move: ice_features:2 polar_formations:4: pack [drifting floes] is pack ice (ice features shows it as "pack")
+  linked: pancake ice 31303 in ice_features (typicality 5, shown "pancake"): from polar formations (its one word ice features lacked)
+  deleted theme: polar_formations "polar formations" (12 words, all still in other themes): with its stubs replaced it shares 11 of 12 words with ice features (a twin); pancake ice moves there; all its words stay in ice features and snow and ice
+  deleted theme: frozen_formations "frozen formations" (12 words, all still in other themes): all 12 words are in its parent polar regions and 9 in ice features: a near-duplicate of both
+  linked: Scots pine 29955 in trees_native_to_britain (typicality 2): Britain's native pine: the theme held only deciduous trees (theme-twin with deciduous trees, 13 of 16)
+  linked: holly 29953 in trees_native_to_britain (typicality 2): a native evergreen: the theme held only deciduous trees (theme-twin with deciduous trees, 13 of 16)
+  linked: juniper 1655 in trees_native_to_britain (typicality 3): one of the three native conifers: the theme held only deciduous trees (theme-twin with deciduous trees, 13 of 16)
+  linked: box 30070 in trees_native_to_britain (typicality 4): a native evergreen (box hill): the theme held only deciduous trees (theme-twin with deciduous trees, 13 of 16)
+  linked: crab apple 29988 in trees_native_to_britain (typicality 3): the native wild apple: the theme held only deciduous trees (theme-twin with deciduous trees, 13 of 16)
+  linked: blackthorn 30073 in trees_native_to_britain (typicality 3): a native small tree (sloes): the theme held only deciduous trees (theme-twin with deciduous trees, 13 of 16)
+  theme hot_weather_words: name "hot weather words" -> "hot weather talk": how people talk about the heat (scorcher, scorchio, sweltering, dog days); it shared 19 of 42 words with words for hot (xwords-twin), LIBRARY-RULES 6: renamed for what it is (Simon, 2026-11-23); the id stays
+  theme medicinal_plants: sensitive true -> false: no member is a drug plant and the theme is not religion, politics or death (Simon, 2026-11-23)
+  theme precious_elements: name "precious elements" -> "precious metals": gold, silver, platinum and the platinum-group metals are called precious metals; the everyday name (the id stays)
+2. Two roots of one sense
+  pine tree 39535 merged into pine 1629 [tree] and deleted (as an alias its text would hold the theme name's word wherever the root is linked (theme-name)); links move: tall_things:3 things_that_smell_good:3 green_things:3 woody_and_resin_scents:3 trees:1 evergreen_trees:1 mediterranean_trees:2: the same tree; LIBRARY-RULES 5 names pine as a short word that names the thing alone (pine tree was shown "pine" where it leaked)
+  fir tree 30687 merged into fir 1638 and deleted (as an alias its text would hold the theme name's word wherever the root is linked (theme-name)); links move: christmas_plants:2 trees:2 evergreen_trees:1 needle_leaf_trees:2: the same tree (fir tree was shown "fir" in trees and needle-leaf trees)
+  palm tree 32116 merged into palm 1631 [tree] and deleted (as an alias its text would hold the theme name's word wherever the root is linked (theme-name)); links move: oasis:1 tall_things:3 trees:1: the same tree (palm tree was shown "palm" in trees)
+  tree trunk 40163 merged into trunk 30032 [tree] and deleted (as an alias its text would hold the theme name's word wherever the root is linked (theme-name)); links move: brown_things:2 tree_parts:1: the same part (tree trunk was shown "trunk" in tree parts)
+  kin of ebony 38999 moves to ebony 1659: ebon 38725
+  ebony 38999 [wood] merged into ebony 1659 [tree] and deleted (same text); links move: hard_materials:4 black_things:3: one sense: the tree entry is also the wood in types of wood, as oak, ash and teak (sense-twin)
+  jet 40127 [gemstone] merged into jet 31691 [gem] and deleted (same text); links move: black_things:4: jet [gem] and jet [gemstone] are one sense (sense-twin in gemstones)
+  Atacama Desert 37669 merged into Atacama 32054 [desert] and deleted (as an alias its text would hold the theme name's word wherever the root is linked (theme-name)); links move: south_american_landmarks:3 desert:3 famous_deserts:2: the same desert; the bare name like Sahara, Kalahari, Mojave (desert showed it as "Atacama")
+  Gobi Desert 21111 merged into Gobi 32050 [desert] and deleted (as an alias its text would hold the theme name's word wherever the root is linked (theme-name)); links move: silk_road:3 desert:2: the same desert; the bare name like Sahara (desert showed it as "Gobi")
+  Glencoe 30990 [valley] becomes a spelling alias of Glen Coe 30983 (familiarity 3); better typicality kept: scottish_landscape_words 3 -> 2: the same glen, both glossed valley in Scottish landscape words (Glencoe is the usual spelling of the village)
+  passion flower 30399 merged into passionflower 56512 and deleted (as an alias its text would hold the theme name's word wherever the root is linked (theme-name)); links move: vines_and_climbers:3: one word written two ways (Merriam-Webster: passionflower)
+  sun dog 31435 becomes a spelling alias of sundog 31405 (familiarity 4): one word written two ways (grouped as one answer in sky phenomena and ice-crystal effects)
+  fohn 31366 becomes a spelling alias of foehn 31336 (familiarity 5): one word written two ways (German Föhn; grouped in named winds)
+  text: foehn 31336 -> "föhn": rule 8: Collins English Dictionary prints föhn as the headword, with foehn as its variant (dictionary.com British entry, Collins English Dictionary 2012; Merriam-Webster and Random House print foehn); Simon, 2026-11-23
+  new entry: foehn 68128 noun, common, familiarity 5, spelling alias of föhn 31336: the variant spelling (Merriam-Webster's headword); fohn stays the plain spelling (rule 8)
+  scirocco 31367 becomes a spelling alias of sirocco 31335 (familiarity 5): one word written two ways (grouped in named winds)
+  bird's foot trefoil 60176 becomes a spelling alias of bird's-foot trefoil 30364 (familiarity 5); links move: flowers_with_animal_names:3: the same plant, written with and without the hyphen (wildflowers and meadow use the hyphen)
+  basswood 1678: aliasKind "regional" -> "synonym": lime becomes the UK display word of linden; basswood, the timber name used in the US, is a synonym (Simon, 2026-11-23)
+  lime tree 1677: aliasKind "regional" -> "synonym": moves with lime to linden: one display alias per dialect, lime is the UK one (Simon, 2026-11-23)
+  alias lime tree 1677 (synonym) moves to linden 1676
+  lime 64792 [linden] becomes a regional alias of linden 1676 (familiarity 3, region UK): the UK name of the linden tree (grouped as one answer in trees and deciduous trees): its UK regional alias (Simon, 2026-11-23)
+  furze 1797 becomes a synonym alias of gorse 1796 (familiarity 4, region UK): another name of gorse (all three grouped as one answer in plants, yellow flowers and thorny plants); keeps its UK tag
+  whin 1798 becomes a synonym alias of gorse 1796 (familiarity 5, region UK): another name of gorse; keeps its UK tag
+  linked: water lily 1791 in water_plants (typicality 1, shown "lily"): the best-known water plant, missing from the theme (nymphaea, its Latin genus name, held the link at typicality 1 because water lily leaks "water"); shown "lily" as water hyacinth and water fern are
+  out of water_plants: nymphaea 63142: water lily takes the link (now in no theme: not exported)
+  nymphaea 63142 becomes a synonym alias of water lily 1791 (familiarity 5): the Latin genus name of the water lily
+  new entry: sledging 68129 [cricket] noun, common, familiarity 4: verbal needling of a batsman in cricket; the old entry mixed it with sledding (gloss "sledding or cricket banter")
+  linked: sledging 68129 in cricket_terms (typicality 5): the cricket sense
+  out of cricket_terms: sledging 5366: wrong sense: sledging 68129 [cricket] takes the link (stays in signs_of_winter, winter_sports, snow_sports)
+  sledging 5366: gloss "sledding or cricket banter" -> "sledding": the snow sense; the cricket sense is its own entry
+  tobogganing 5365: aliasKind "regional" -> "synonym": sledging becomes the UK display word for sledding (one per dialect); tobogganing stays a synonym with its UK and CA tags (reviewer)
+  kin of sledging 5366 moves to sledding 5364: sledge 21046
+  sledging 5366 [sledding] becomes a regional alias of sledding 5364 (familiarity 2, region UK); links move: signs_of_winter:3: the UK word for sledding (same activity): its UK regional alias
+  out of signs_of_autumn: toadstools 31544: a plural root of toadstool: toadstool takes the link and shows the plural (now in no theme: not exported)
+  linked: toadstool 22509 in signs_of_autumn (typicality 3): from toadstools, its plural
+  group in signs_of_autumn: mushrooms 20303 = fungi 30133 = toadstool 22509: toadstool takes the place of toadstools
+  toadstools 31544 becomes a form alias of toadstool 22509; toadstool shows "toadstools" (use) in signs of autumn
+  out of signs_of_autumn: spiders' webs 31531: repeats spider web (with its form spider webs), already in the theme and in the same group (now in no theme: not exported)
+  deleted entry: spiders' webs 31531: a plural duplicate of spider web 39072, in no theme now
+  out of nature_at_night: lightning bugs 31592: repeats firefly, whose US alias is lightning bug (both were in the theme, grouped) (now in no theme: not exported)
+  deleted entry: lightning bugs 31592: a root that repeats the alias lightning bug 1360 of firefly, in no theme now
+  linked: rubber tree 30014 in south_american_trees (typicality 2, shown "rubber"): from rubber [latex source], a second root of the rubber tree
+  out of south_american_trees: rubber 65482: rubber tree takes the link (now in no theme: not exported)
+  deleted entry: rubber 65482 [latex source]: a second root of the rubber tree made for South American trees ("rubber" alone is the material); in no theme
+  linked: buffalo grass 60209 in grasses_and_reeds (typicality 4, shown "buffalo"): the full term of the stub buffalo [prairie type]
+  out of grasses_and_reeds: buffalo 63763: a bare stub: buffalo grass takes the link (now in no theme: not exported)
+  deleted entry: buffalo 63763 [prairie type]: a bare modifier stub of buffalo grass (LIBRARY-RULES 5); in no theme
+  linked: couch grass 30646 in grasses_and_reeds (typicality 4, shown "couch"): the full term of the stub couch [weed type]
+  out of grasses_and_reeds: couch 63765: a bare stub: couch grass takes the link (now in no theme: not exported)
+  deleted entry: couch 63765 [weed type]: a bare modifier stub of couch grass (LIBRARY-RULES 5); in no theme
+  out of christmas_plants: red amaryllis 30693: amaryllis 1751 is in the theme: a word and a more specific form of it (LIBRARY-RULES 5, overlap) (now in no theme: not exported)
+  deleted entry: red amaryllis 30693: made for Christmas plants beside amaryllis; in no theme
+3. Wrong senses
+  linked: fuchsia 62419 in hedge_plants (typicality 5): the plant (fuchsia [pink-purple] is the color)
+  out of hedge_plants: fuchsia 7685: wrong sense: fuchsia 62419 [flower] takes the link (stays in words_named_after_people, garden_flowers, edible_flowers, shades_of_purple, shades_of_pink, jewel_tones, colors_named_after_flowers, pink_things, south_american_flowers, words_from_italian, colors, colors_named_after_places, purple_things)
+  linked: fuchsia 62419 in garden_flowers (typicality 2): the plant (fuchsia [pink-purple] is the color)
+  out of garden_flowers: fuchsia 7685: wrong sense: fuchsia 62419 [flower] takes the link (stays in words_named_after_people, edible_flowers, shades_of_purple, shades_of_pink, jewel_tones, colors_named_after_flowers, pink_things, south_american_flowers, words_from_italian, colors, colors_named_after_places, purple_things)
+  linked: fuchsia 62419 in edible_flowers (typicality 4): the plant (fuchsia [pink-purple] is the color)
+  out of edible_flowers: fuchsia 7685: wrong sense: fuchsia 62419 [flower] takes the link (stays in words_named_after_people, shades_of_purple, shades_of_pink, jewel_tones, colors_named_after_flowers, pink_things, south_american_flowers, words_from_italian, colors, colors_named_after_places, purple_things)
+  linked: fuchsia 62419 in south_american_flowers (typicality 1): the plant (fuchsia [pink-purple] is the color)
+  out of south_american_flowers: fuchsia 7685: wrong sense: fuchsia 62419 [flower] takes the link (stays in words_named_after_people, shades_of_purple, shades_of_pink, jewel_tones, colors_named_after_flowers, pink_things, words_from_italian, colors, colors_named_after_places, purple_things)
+  linked: hickory 1656 in nut_trees (typicality 3): the tree, as the other members (hickory nut is the nut; it was shown "hickory")
+  out of nut_trees: hickory nut 17363: wrong sense: hickory 1656 takes the link (stays in nuts)
+  linked: ovary 40954 in flower_parts (typicality 3): the part of a flower (sense-link)
+  out of flower_parts: ovary 14368: wrong sense: ovary 40954 [flower] takes the link (stays in paired_body_parts, organs)
+  linked: rose quartz 31680 in quartz_varieties (typicality 1, shown "rose"): the gem (rose quartz [color] is the color)
+  out of quartz_varieties: rose quartz 38661: wrong sense: rose quartz 31680 [gem] takes the link (stays in shades_of_pink, colors_named_after_gems)
+  linked: conker 30088 in signs_of_autumn (typicality 2): the horse chestnut seed (conkers 5960 is the game)
+  out of signs_of_autumn: conkers 5960: wrong sense: conker 30088 takes the link (stays in toys_and_play, traditional_playthings)
+  new entry: plumbago 68130 [plant] noun, common, familiarity 5: the blue-flowered shrub (leadwort); the old entry is graphite
+  linked: plumbago 68130 in south_african_flowers (typicality 4): the plant
+  out of south_african_flowers: plumbago 2066: wrong sense: plumbago 68130 [plant] takes the link (stays in blue_flowers, rocks_and_minerals, minerals, nuclear_power_plant, shades_of_gray, shades_of_black, slippery_things, black_things, starts_with_plum)
+  linked: plumbago 68130 in blue_flowers (typicality 4): the plant
+  out of blue_flowers: plumbago 2066: wrong sense: plumbago 68130 [plant] takes the link (stays in rocks_and_minerals, minerals, nuclear_power_plant, shades_of_gray, shades_of_black, slippery_things, black_things, starts_with_plum)
+  plumbago 2066: gloss "" -> "graphite": its text is now shared with plumbago [plant]
+  new entry: arrowhead 68131 [plant] noun, common, familiarity 4: the water plant Sagittaria (the old entry is the tip of an arrow)
+  linked: arrowhead 68131 in water_plants (typicality 4): the plant
+  out of water_plants: arrowhead 21715: wrong sense: arrowhead 68131 [plant] takes the link (stays in artifacts, archery_terms, triangular_things)
+  arrowhead 21715: gloss "" -> "arrow tip": its text is now shared with arrowhead [plant]
+  new entry: attrition 68132 [erosion] noun, common, familiarity 4: rocks wearing each other down as they are carried (the old entry, from war words in v430, is the war of attrition)
+  linked: attrition 68132 in erosion_words (typicality 5): the erosion sense
+  out of erosion_words: attrition 21371: wrong sense: attrition 68132 [erosion] takes the link (stays in wars_and_battles)
+  attrition 21371: gloss "" -> "war": its text is now shared with attrition [erosion]
+  new entry: foam 68133 [sea] noun, common, familiarity 1: the white froth of breaking waves (the old entry is bath foam)
+  linked: foam 68133 in wave_words (typicality 3): the sea sense
+  out of wave_words: foam 16291: wrong sense: foam 68133 [sea] takes the link (stays in bath_time, turkish_bath, lightweight_things)
+  group in wave_words: spume 31190 = foam 68133: foam 68133 takes the place of foam 16291
+  new entry: moor 68134 [boat] verb, common, familiarity 3: to tie up a boat (the old entry is the heath landscape; it also held the sailing themes and the form mooring)
+  linked: moor 68134 in sailing_words (typicality 2): the boat sense
+  out of sailing_words: moor 1952: wrong sense: moor 68134 [boat] takes the link (stays in landscapes, flat_landscapes, scottish_landscape_words, ports_and_harbors, cruise_words)
+  linked: moor 68134 in ports_and_harbors (typicality 1): the boat sense
+  out of ports_and_harbors: moor 1952: wrong sense: moor 68134 [boat] takes the link (stays in landscapes, flat_landscapes, scottish_landscape_words, cruise_words)
+  linked: moor 68134 in cruise_words (typicality 4): the boat sense
+  out of cruise_words: moor 1952: wrong sense: moor 68134 [boat] takes the link (stays in landscapes, flat_landscapes, scottish_landscape_words)
+  out of ports_and_harbors: moor 68134: the theme lists harbor parts (nouns) and berth [mooring] is there; mooring is an alias of moor [boat], not a root (reviewer) (stays in sailing_words, cruise_words)
+  mooring 47466 (form) moves from moor [heath] to moor 68134 [boat]: a mooring is where a boat is moored
+  moor 1952: gloss "" -> "heath": its text is now shared with moor [boat]
+4. Belonging
+  out of fungi: athlete's foot 3431: an infection caused by a fungus, not a fungus (stays in illnesses, infections)
+  out of fungi: ringworm 3433: an infection caused by a fungus, not a fungus (stays in illnesses, worms, childhood_illnesses, infections)
+  out of garden_styles: stone 2050: not a garden style (rock garden, courtyard garden and bog garden are the styles) (stays in hidden_numbers, natural_materials, hard_materials, things_that_sink, rocks_and_minerals, japanese_garden, garden, ends_with_one, things_you_throw, things_you_kick, building_materials)
+  out of garden_styles: quad 6565: not a garden style (rock garden, courtyard garden and bog garden are the styles) (stays in architecture, mosque_parts, castle_parts)
+  out of garden_styles: mire 1927: not a garden style (rock garden, courtyard garden and bog garden are the styles) (stays in wetlands, landscapes, taiga)
+  out of garden_furniture: barbecue 19767: barbecue [grilled meat] is the meal, and a grill is not furniture (stays in cooking_methods, outside_the_house, words_from_spanish, words_from_native_american_languages, kinds_of_party, things_that_smell_good, hot_things, chip_flavors, foods_and_flavors, smells_from_the_kitchen, signs_of_summer)
+  out of building_stones: brick 24030: made, not stone (in building materials) (stays in building_materials, man_made_materials, hard_materials, rough_things, heavy_things, things_that_sink, red_things, construction_site)
+  out of building_stones: adobe 50304: made, not stone (in building materials) (stays in building_materials, natural_materials, words_from_spanish)
+  out of types_of_wood: driftwood 30059: wood washed up on a beach, not a kind of wood (in beachcombing finds) (stays in beachcombing_finds, things_that_float, beach, beach_vacation, blank_wood)
+  out of asian_trees: durian 365: the fruit entry (no tree sense); the theme names trees (stays in fruits, tropical_fruits, asian_fruits, foods_you_peel, prickly_things, things_that_smell_bad, pungent_foods)
+  out of asian_trees: mangosteen 378: the fruit entry (no tree sense); the theme names trees (stays in fruits, tropical_fruits, asian_fruits, foods_you_peel)
+  out of fruit_trees: mandarin 79: the fruit entry in a theme of "X tree" entries; tangerine tree, with which it was grouped, stays (stays in perfume_notes, fruits, citrus_fruits, foods_you_peel, starts_with_a_color, words_named_after_places, shades_of_orange, colors_named_after_foods, orange_things, fruit_shades)
+  out of new_zealand_plants: Christmas tree 25007: the decorated Christmas tree (evergreen tree); pōhutukawa, the New Zealand Christmas tree, stays (stays in evergreen_trees, green_things, christmas_plants)
+  out of gemstones: birthstone 31696: a role, not a kind of gem (stays in blank_stone)
+  out of dry_season: heat 40847: heat [physics] is the science term (stays in heat_science, temperature_words)
+  out of rock_pool: uni 503: sea urchin roe as food; sea urchin is the animal (in rock pool life) (stays in meat_and_seafood, shellfish, reef_life, starfish_and_sea_urchins, spiny_animals, sea_life, prickly_things, things_with_shells, things_that_sting, animals_covered_in_spikes)
+  out of eco_swaps: tote bag 4991: a kind of reusable bag, which is in the theme (overlap; its group made a clash group of 9) (stays in accessories, luggage, blank_bag, bags)
+  out of fiber_plants: wicker 30682: a weave of rattan, willow or cane, not a plant (reviewer) (stays in natural_materials, hot_air_balloon_parts, picnic_basket)
+  new entry: jute 68135 [plant] noun, common, familiarity 3: the plant grown for jute fiber (the old entry is the fabric; flax and hemp have plant senses)
+  linked: jute 68135 in fiber_plants (typicality 2): the plant (reviewer)
+  out of fiber_plants: jute 24866: wrong sense: jute 68135 [plant] takes the link (stays in fabrics, natural_materials, rough_things, tough_fabrics)
+  out of wind_words: puff 17037: puff [breath] is a breath, not a gust (reviewer) (stays in ways_of_breathing)
+  out of hot_weather_words: sticky 14804: sticky [tacky] is the texture sense; warm [not hot] is glossed as not hot (reviewer) (stays in words_for_hot, hidden_insects, texture_words)
+  out of hot_weather_words: warm 31463: sticky [tacky] is the texture sense; warm [not hot] is glossed as not hot (reviewer) (stays in words_for_hot, temperature_words)
+  out of dry_season: lack of rain 31655: a loose description, not a fixed term (reviewer) (now in no theme: not exported)
+  deleted entry: lack of rain 31655: made for dry_season only; in no theme now
+  out of dry_season: low rivers 31643: a loose description, not a fixed term (reviewer) (now in no theme: not exported)
+  deleted entry: low rivers 31643: made for dry_season only; in no theme now
+  out of dry_season: brown grass 31647: a loose description, not a fixed term (reviewer) (now in no theme: not exported)
+  deleted entry: brown grass 31647: made for dry_season only; in no theme now
+  out of dry_season: shrinking lake 31649: a loose description, not a fixed term (reviewer) (now in no theme: not exported)
+  deleted entry: shrinking lake 31649: made for dry_season only; in no theme now
+  out of seashells: spiral shell 31029: a loose description, not the name of a shell (reviewer) (now in no theme: not exported)
+  deleted entry: spiral shell 31029: made for seashells only; in no theme now
+  out of seashells: sea snail shell 31036: a loose description, not the name of a shell (reviewer) (now in no theme: not exported)
+  deleted entry: sea snail shell 31036: made for seashells only; in no theme now
+  out of monsoon_season: wet markets 31628: markets selling fresh meat and fish, not a sign of the monsoon (reviewer) (now in no theme: not exported)
+  deleted entry: wet markets 31628: made for monsoon_season only; in no theme now
+  out of trees: deciduous 1673: an adjective, not a tree (deciduous trees is a theme of its own) (now in no theme: not exported)
+  linked: white pine 56468 in pine_species (typicality 3, shown "white"): a true pine (Pinus); the theme had 4 words, all hard
+  linked: bristlecone pine 56465 in pine_species (typicality 4, shown "bristlecone"): a true pine (Pinus); the theme had 4 words, all hard
+  linked: loblolly pine 56464 in pine_species (typicality 4, shown "loblolly"): a true pine (Pinus); the theme had 4 words, all hard
+  linked: Aleppo pine 56472 in pine_species (typicality 4, shown "Aleppo"): a true pine (Pinus); the theme had 4 words, all hard
+  linked: focus 31881 in earthquake_words (typicality 4): the point where an earthquake starts (an orphan since v415; hypocenter is its synonym)
+  group in earthquake_words: hypocenter 31880 = focus 31881: focus and hypocenter, the same answer
+  linked: rupture 31884 in earthquake_words (typicality 4): the break along a fault in an earthquake (an orphan since v415)
+5. Case, type and spelling
+  forget-me-not 1726: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  bird of paradise 1752: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  baby's breath 30442: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  love-in-a-mist 30353: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  angel's trumpet 30405: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  hen and chicks 30475: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  cherry blossom 2540: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  fiddle-leaf fig 30548: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  string of pearls 30556: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  monkey bread tree 1662: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  silver fern 2553: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  ponga 2554: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  game reserve 48724: type "phrase" -> "common": the name of a plant or place type, not an idiom: type phrase is for idioms and set phrases only (LIBRARY-RULES 4; ponga was contract-type-common)
+  text: Holiday cactus 65496 -> "holiday cactus": holiday is not a proper word (Christmas cactus keeps its capital)
+  holiday cactus 65496: type "proper" -> "common": holiday is not a proper word (Christmas cactus keeps its capital)
+  text: kuroshio 31138 -> "Kuroshio": the name of a current, like Agulhas and Benguela beside it
+  Kuroshio 31138: type "common" -> "proper": the name of a current, like Agulhas and Benguela beside it
+  Humboldt 63111: type "person" -> "proper": the Humboldt Current (a named current), not the person
+  st elmo's fire 31431 merged into St. Elmo's fire 39978 and deleted (a case-only variant of the root); links move: sky_phenomena:4: the same glow, a second root; St. Elmo's fire 39978 (named after St. Elmo; the library writes St. with a period) takes its link
+  text: stevenson screen 31315 -> "Stevenson screen": named after Thomas Stevenson (Oxford: Stevenson screen)
+  Stevenson screen 31315: type "common" -> "proper": named after Thomas Stevenson (Oxford: Stevenson screen)
+  text: cape doctor 31368 -> "Cape doctor": the wind of the Cape (Dictionary of South African English: Cape doctor), like Fremantle doctor
+  Cape doctor 31368: type "common" -> "proper": the wind of the Cape (Dictionary of South African English: Cape doctor), like Fremantle doctor
+  text: brent crude 32348 -> "Brent crude": named after the Brent oilfield
+  Brent crude 32348: type "common" -> "proper": named after the Brent oilfield
+  text: adirondack chair 30741 -> "Adirondack chair": named after the Adirondacks (Merriam-Webster: Adirondack chair)
+  Adirondack chair 30741: type "common" -> "proper": named after the Adirondacks (Merriam-Webster: Adirondack chair)
+  text: uv index 16351 -> "UV index": UV is an initialism, written in capitals
+  UV index 16351: type "common" -> "proper": UV is an initialism, written in capitals
+  text: brocken spectre 31416 -> "Brocken specter": named after the Brocken; US spelling as root (Merriam-Webster: Brocken specter)
+  Brocken specter 31416: type "common" -> "proper": named after the Brocken; US spelling as root (Merriam-Webster: Brocken specter)
+  new entry: Brocken spectre 68136 noun, proper, familiarity 5, spelling alias of Brocken specter 31416 [UK]: the UK spelling
+  text: ploughing 31549 -> "plowing": US spelling as root (LIBRARY-RULES 5)
+  new entry: ploughing 68137 noun, common, familiarity 3, spelling alias of plowing 31549 [UK]: the UK spelling
+  text: pinon 17361 -> "piñon": rule 8: Merriam-Webster prints piñon
+  new entry: pinon 68138 noun, common, familiarity 5, spelling alias of piñon 17361: the plain form, kept as a spelling (rule 8)
+  mold 30330: region ["US"] -> []: the US spelling root of mould [UK]: untagged, as color is (v413)
+  aluminum can 23983: region ["US"] -> []: the US spelling root of aluminium can [UK]: untagged, as color is (v413)
+  hanky 4977: aliasKind "spelling" -> "abbreviation": a short form of handkerchief like hankie (not a spelling of handkerchief; alias-kind-suspect)
+  weathervane 31306: aliasKind "spelling" -> "synonym": another name of the wind vane, not a spelling of it (alias-kind-suspect)
+  seafloor 32035: aliasKind "spelling" -> "synonym": another word for the seabed, not a spelling of it (alias-kind-suspect)
+  deleted alias: mould allergy 14935, a UK "spelling" of mold: an allergy to mould is not a spelling of mold (mould 30331 is the UK spelling)
+6. Ratings, kin, groups, shown texts
+  water garden 30776 in garden_styles: shown "water" -> null: the modifier alone does not name the kind: the full term, with nameOkIn (reviewer)
+  rain garden 60279 in garden_styles: shown "rain" -> null: the modifier alone does not name the kind: the full term, with nameOkIn (reviewer)
+  moon garden 30792 in garden_styles: shown "moon" -> null: the modifier alone does not name the kind: the full term, with nameOkIn (reviewer)
+  roof garden 30789 in garden_styles: shown "roof" -> null: the modifier alone does not name the kind: the full term, with nameOkIn (reviewer)
+  kitchen garden 1870 in garden_styles: shown "kitchen" -> null: the modifier alone does not name the kind: the full term, with nameOkIn (reviewer)
+  kitchen garden 1870 in garden: shown "kitchen" -> null: the modifier alone does not name the kind: the full term, with nameOkIn (reviewer)
+  kitchen garden 1870 in garden_features: shown "kitchen" -> null: the modifier alone does not name the kind: the full term, with nameOkIn (reviewer)
+  gorse 1796: fam 4 -> 3: as heather and bracken (reviewer: 4 too hard)
+  Scots pine 29955: fam 4 -> 3: many adults know it (reviewer: 4 too hard)
+  ripple 20008: fam 4 -> 2: nearly every adult knows the word (4 was too hard)
+  kin: humid 31443 <-> humidity 2002: one word family in different themes (family-kin)
+  group in hot_weather_words: steamy 31455 leaves muggy = humid = steamy: steamy is kin of steam: the group made a clash group of 11 (clash-large); muggy and humid stay grouped
+  winter aconite 30388 in signs_of_winter: shown "aconite" -> null: aconite alone is another plant (monkshood): the theme shows the full name
+  winter aconite 30388: nameOkIn signs_of_winter: winter is part of the plant's name
+  rosewood 29942 in tropical_trees: shown "rosewood" -> null: the shown text equals the text
+  rosewood 29942 in types_of_wood: shown "rosewood" -> null: the shown text equals the text
+  rosewood 29942 in south_american_trees: shown "rosewood" -> null: the shown text equals the text
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  asian_trees: "Asian trees" pop 3 ident 4: 22 words, easy/middle/hard 1/8/13, theme difficulty 4, 4th-easiest band 3, gap -1.0 -> "Asian trees" pop 3 ident 4: 20 words, easy/middle/hard 1/8/11, theme difficulty 4, 4th-easiest band 3, gap -1.0
+  blue_flowers: "blue flowers" pop 2 ident 2: 30 words, easy/middle/hard 2/9/19, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "blue flowers" pop 2 ident 2: 30 words, easy/middle/hard 2/9/19, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  building_stones: "building stones" pop 3 ident 3: 36 words, easy/middle/hard 7/7/22, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "building stones" pop 3 ident 3: 34 words, easy/middle/hard 6/7/21, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  christmas_plants: "Christmas plants" pop 2 ident 2: 27 words, easy/middle/hard 5/4/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "Christmas plants" pop 2 ident 2: 26 words, easy/middle/hard 5/4/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  deciduous_trees: "deciduous trees" pop 2 ident 3: 36 words, easy/middle/hard 7/10/19, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "deciduous trees" pop 2 ident 3: 35 words, easy/middle/hard 7/9/19, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  desert: "desert" pop 1 ident 1: 47 words, easy/middle/hard 10/18/19, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "desert" pop 1 ident 1: 47 words, easy/middle/hard 9/19/19, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  dry_season: "dry season" pop 3 ident 3: 47 words, easy/middle/hard 7/26/14, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "dry season" pop 3 ident 3: 42 words, easy/middle/hard 6/22/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  earthquake_words: "earthquakes" pop 3 ident 2: 30 words, easy/middle/hard 4/10/16, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "earthquakes" pop 3 ident 2: 32 words, easy/middle/hard 4/10/18, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  eco_swaps: "eco swaps" pop 3 ident 3: 15 words, easy/middle/hard 6/8/1, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "eco swaps" pop 3 ident 3: 14 words, easy/middle/hard 5/8/1, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  edible_flowers: "edible flowers" pop 3 ident 3: 35 words, easy/middle/hard 7/6/22, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "edible flowers" pop 3 ident 3: 35 words, easy/middle/hard 7/6/22, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  erosion_words: "erosion" pop 4 ident 4: 26 words, easy/middle/hard 3/7/16, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "erosion" pop 4 ident 4: 26 words, easy/middle/hard 3/7/16, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  evergreen_trees: "evergreen trees" pop 2 ident 3: 33 words, easy/middle/hard 4/8/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "evergreen trees" pop 2 ident 3: 33 words, easy/middle/hard 4/9/20, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  famous_mountains_and_ranges: "famous mountains and ranges" pop 2 ident 2: 11 words, easy/middle/hard 7/2/2, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> deleted
+  fiber_plants: "fiber plants" pop 5 ident 4: 21 words, easy/middle/hard 1/6/14, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "fiber plants" pop 5 ident 4: 20 words, easy/middle/hard 1/6/13, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  flower_parts: "flower parts" pop 2 ident 2: 35 words, easy/middle/hard 5/8/22, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "flower parts" pop 2 ident 2: 35 words, easy/middle/hard 5/7/23, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  flowers_with_animal_names: "animal-named flowers" pop 4 ident 3: 51 words, easy/middle/hard 2/11/38, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "animal-named flowers" pop 4 ident 3: 51 words, easy/middle/hard 2/11/38, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  fruit_trees: "fruit trees" pop 2 ident 2: 32 words, easy/middle/hard 9/10/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "fruit trees" pop 2 ident 2: 31 words, easy/middle/hard 9/9/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  fungi: "fungi" pop 2 ident 2: 44 words, easy/middle/hard 4/11/29, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "fungi" pop 2 ident 2: 42 words, easy/middle/hard 4/11/27, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  garden: "garden" pop 1 ident 1: 61 words, easy/middle/hard 26/20/15, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "garden" pop 1 ident 1: 61 words, easy/middle/hard 26/20/15, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  garden_features: "garden features" pop 2 ident 2: 39 words, easy/middle/hard 12/16/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "garden features" pop 2 ident 2: 39 words, easy/middle/hard 12/16/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  garden_flowers: "garden flowers" pop 2 ident 2: 51 words, easy/middle/hard 12/17/22, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "garden flowers" pop 2 ident 2: 51 words, easy/middle/hard 13/16/22, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  garden_furniture: "garden furniture" pop 2 ident 2: 30 words, easy/middle/hard 7/11/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "garden furniture" pop 2 ident 2: 29 words, easy/middle/hard 7/10/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  garden_styles: "garden styles" pop 5 ident 3: 46 words, easy/middle/hard 5/13/28, theme difficulty 4, 4th-easiest band 2, gap -2.0 -> "garden styles" pop 5 ident 3: 43 words, easy/middle/hard 5/11/27, theme difficulty 4, 4th-easiest band 2, gap -2.0
+  gemstones: "gemstones" pop 2 ident 1: 61 words, easy/middle/hard 7/13/41, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "gemstones" pop 2 ident 1: 60 words, easy/middle/hard 7/13/40, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  grasses_and_reeds: "grasses and reeds" pop 5 ident 4: 37 words, easy/middle/hard 2/7/28, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "grasses and reeds" pop 5 ident 4: 37 words, easy/middle/hard 2/7/28, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  heath_and_moor_plants: "heath and moor plants" pop 4 ident 4: 9 words, easy/middle/hard 0/3/6, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "heath and moor plants" pop 4 ident 4: 7 words, easy/middle/hard 0/4/3, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  hedge_plants: "hedge plants" pop 4 ident 3: 30 words, easy/middle/hard 3/3/24, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "hedge plants" pop 4 ident 3: 30 words, easy/middle/hard 3/3/24, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  hot_weather_words: "hot weather words" pop 2 ident 3: 42 words, easy/middle/hard 10/16/16, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "hot weather talk" pop 2 ident 3: 40 words, easy/middle/hard 9/15/16, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  ice_crystal_effects: "ice-crystal effects" pop 5 ident 5: 15 words, easy/middle/hard 0/2/13, theme difficulty 5, 4th-easiest band 4, gap -1.0 -> "ice-crystal effects" pop 5 ident 5: 14 words, easy/middle/hard 0/2/12, theme difficulty 5, 4th-easiest band 4, gap -1.0
+  ice_features: "ice features" pop 3 ident 3: 36 words, easy/middle/hard 6/8/22, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "ice features" pop 3 ident 3: 37 words, easy/middle/hard 6/9/22, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  medicinal_plants: "medicinal plants" pop 3 ident 3: 35 words, easy/middle/hard 7/10/18, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "medicinal plants" pop 3 ident 3: 35 words, easy/middle/hard 7/10/18, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  mediterranean_trees: "Mediterranean trees" pop 3 ident 3: 29 words, easy/middle/hard 4/10/15, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "Mediterranean trees" pop 3 ident 3: 29 words, easy/middle/hard 4/10/15, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  monsoon_season: "monsoon season" pop 3 ident 3: 47 words, easy/middle/hard 13/19/15, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "monsoon season" pop 3 ident 3: 46 words, easy/middle/hard 13/19/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  mountains: "mountains" pop 2 ident 2: 51 words, easy/middle/hard 15/16/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "mountains" pop 2 ident 2: 51 words, easy/middle/hard 15/16/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  named_winds: "named winds" pop 5 ident 4: 42 words, easy/middle/hard 1/2/39, theme difficulty 5, 4th-easiest band 4, gap -1.0 -> "named winds" pop 5 ident 4: 40 words, easy/middle/hard 1/2/37, theme difficulty 5, 4th-easiest band 4, gap -1.0
+  nature_at_night: "nature at night" pop 3 ident 3: 48 words, easy/middle/hard 14/10/24, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "nature at night" pop 3 ident 3: 47 words, easy/middle/hard 14/9/24, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  needle_leaf_trees: "needle-leaf trees" pop 3 ident 2: 9 words, easy/middle/hard 4/2/3, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "needle-leaf trees" pop 3 ident 2: 9 words, easy/middle/hard 4/2/3, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  new_zealand_plants: "New Zealand plants" pop 5 ident 4: 29 words, easy/middle/hard 0/3/26, theme difficulty 5, 4th-easiest band 4, gap -1.0 -> "New Zealand plants" pop 5 ident 4: 28 words, easy/middle/hard 0/3/25, theme difficulty 5, 4th-easiest band 4, gap -1.0
+  nut_trees: "nut trees" pop 2 ident 2: 28 words, easy/middle/hard 3/5/20, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "nut trees" pop 2 ident 2: 28 words, easy/middle/hard 3/6/19, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  oasis: "oasis" pop 3 ident 3: 45 words, easy/middle/hard 14/11/20, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "oasis" pop 3 ident 3: 45 words, easy/middle/hard 14/11/20, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  pine_species: "pine species" pop 5 ident 4: 4 words, easy/middle/hard 0/0/4, theme difficulty 5, 4th-easiest band 5, gap 0.0 -> "pine species" pop 5 ident 4: 8 words, easy/middle/hard 0/1/7, theme difficulty 5, 4th-easiest band 5, gap 0.0
+  plants: "plants" pop 1 ident 1: 62 words, easy/middle/hard 13/18/31, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "plants" pop 1 ident 1: 60 words, easy/middle/hard 13/19/28, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  polar_formations: "polar formations" pop 4 ident 3: 12 words, easy/middle/hard 2/0/10, theme difficulty 3.5, 4th-easiest band 4, gap 0.5 -> deleted
+  precious_elements: "precious elements" pop 3 ident 3: 8 words, easy/middle/hard 3/0/5, theme difficulty 3, 4th-easiest band 4, gap 1.0 -> "precious metals" pop 3 ident 3: 8 words, easy/middle/hard 3/0/5, theme difficulty 3, 4th-easiest band 4, gap 1.0
+  quartz_varieties: "quartz varieties" pop 4 ident 4: 28 words, easy/middle/hard 0/5/23, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "quartz varieties" pop 4 ident 4: 28 words, easy/middle/hard 0/5/23, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  rock_pool: "rock pool life" pop 2 ident 2: 41 words, easy/middle/hard 5/9/27, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "rock pool life" pop 2 ident 2: 40 words, easy/middle/hard 5/9/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  scottish_landscape_words: "Scottish landscape words" pop 4 ident 4: 37 words, easy/middle/hard 3/13/21, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "Scottish landscape words" pop 4 ident 4: 36 words, easy/middle/hard 3/12/21, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  seashells: "seashells" pop 2 ident 2: 35 words, easy/middle/hard 3/8/24, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "seashells" pop 2 ident 2: 33 words, easy/middle/hard 3/6/24, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  signs_of_autumn: "signs of autumn" pop 2 ident 3: 48 words, easy/middle/hard 7/19/22, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "signs of autumn" pop 2 ident 3: 47 words, easy/middle/hard 7/19/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  signs_of_winter: "signs of winter" pop 2 ident 3: 49 words, easy/middle/hard 16/14/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "signs of winter" pop 2 ident 3: 49 words, easy/middle/hard 16/14/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  sky_phenomena: "sky phenomena" pop 3 ident 3: 50 words, easy/middle/hard 6/8/36, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "sky phenomena" pop 3 ident 3: 49 words, easy/middle/hard 6/8/35, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  snow_and_ice: "snow and ice" pop 2 ident 3: 64 words, easy/middle/hard 16/18/30, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "snow and ice" pop 2 ident 3: 63 words, easy/middle/hard 16/18/29, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  south_african_flowers: "South African flowers" pop 4 ident 4: 24 words, easy/middle/hard 0/2/22, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "South African flowers" pop 4 ident 4: 24 words, easy/middle/hard 0/2/22, theme difficulty 4.5, 4th-easiest band 4, gap -0.5
+  south_american_flowers: "South American flowers" pop 5 ident 5: 24 words, easy/middle/hard 1/5/18, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "South American flowers" pop 5 ident 5: 24 words, easy/middle/hard 2/4/18, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  south_american_trees: "South American trees" pop 4 ident 4: 24 words, easy/middle/hard 1/4/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "South American trees" pop 4 ident 4: 24 words, easy/middle/hard 1/4/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  thorny_plants: "thorny plants" pop 5 ident 3: 36 words, easy/middle/hard 4/5/27, theme difficulty 4, 4th-easiest band 2, gap -2.0 -> "thorny plants" pop 5 ident 3: 34 words, easy/middle/hard 4/6/24, theme difficulty 4, 4th-easiest band 2, gap -2.0
+  tree_parts: "tree parts" pop 2 ident 1: 28 words, easy/middle/hard 9/9/10, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "tree parts" pop 2 ident 1: 28 words, easy/middle/hard 9/9/10, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  trees: "trees" pop 1 ident 1: 61 words, easy/middle/hard 13/18/30, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "trees" pop 1 ident 1: 59 words, easy/middle/hard 13/17/29, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  trees_native_to_britain: "trees native to Britain" pop 3 ident 3: 16 words, easy/middle/hard 6/4/6, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "trees native to Britain" pop 3 ident 3: 22 words, easy/middle/hard 7/7/8, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  tropical_trees: "tropical trees" pop 2 ident 3: 35 words, easy/middle/hard 5/9/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "tropical trees" pop 2 ident 3: 35 words, easy/middle/hard 5/9/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  types_of_wood: "types of wood" pop 2 ident 3: 38 words, easy/middle/hard 10/9/19, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "types of wood" pop 2 ident 3: 37 words, easy/middle/hard 10/9/18, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  vines_and_climbers: "vines and climbers" pop 3 ident 3: 26 words, easy/middle/hard 3/9/14, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "vines and climbers" pop 3 ident 3: 26 words, easy/middle/hard 3/9/14, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  water_plants: "water plants" pop 4 ident 3: 36 words, easy/middle/hard 3/8/25, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "water plants" pop 4 ident 3: 36 words, easy/middle/hard 4/8/24, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  wave_words: "wave words" pop 4 ident 3: 41 words, easy/middle/hard 3/15/23, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "wave words" pop 4 ident 3: 41 words, easy/middle/hard 4/15/22, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  wind_words: "wind words" pop 2 ident 2: 44 words, easy/middle/hard 8/17/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "wind words" pop 2 ident 2: 43 words, easy/middle/hard 8/16/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  yellow_flowers: "yellow flowers" pop 2 ident 2: 32 words, easy/middle/hard 6/8/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "yellow flowers" pop 2 ident 2: 30 words, easy/middle/hard 6/9/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+Entries left in no theme (kept in the library, not exported) 1: deciduous 1673
+Entries added 11: foehn 68128, sledging 68129 [cricket], plumbago 68130 [plant], arrowhead 68131 [plant], attrition 68132 [erosion], foam 68133 [sea], moor 68134 [boat], jute 68135 [plant], Brocken spectre 68136, ploughing 68137, pinon 68138
+Entries deleted 26: sheet 28525, floe 28526, pine tree 39535, fir tree 30687, palm tree 32116, tree trunk 40163, ebony 38999, jet 40127, Atacama Desert 37669, Gobi Desert 21111, passion flower 30399, spiders' webs 31531, lightning bugs 31592, rubber 65482, buffalo 63763, couch 63765, red amaryllis 30693, lack of rain 31655, low rivers 31643, brown grass 31647, shrinking lake 31649, spiral shell 31029, sea snail shell 31036, wet markets 31628, st elmo's fire 31431, mould allergy 14935
+library changes 227; entries changed 242; status set to rev 192
+Checks: changed kinds: info:alias-kind-suspect 47 -> 44, info:family-kin 351 -> 352, info:orphan 225 -> 224, info:overlap 4926 -> 4918, info:sense-twin 105 -> 103, info:theme-twin 56 -> 51, info:xwords-twin 88 -> 87, warn:rating-vs-zipf 161 -> 160
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 160, theme-gap 1, theme-name 3
+Export contract (family export, zipf): contract-root-region 1781 -> 1776, contract-type-common 42 -> 41; after: contract-dup-root 185, contract-root-region 1776, contract-type-common 41
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3242 -> 3234; gone polar_formations (index 604), marine_animals (index 660), moving_water (index 662), frozen_formations (index 666), famous_mountains_and_ranges (index 669), grassland_blooms (index 671), minibeasts (index 672), australian_wildlife (index 678); new none; theme indexes shift: from index 604 ("weather_instruments", was "polar_formations") to the last index 3233
+Entry rows 61116 -> 61101; first row whose entry changed: 1654 (sandalwood 1674, was deciduous 1673); rows that moved: 59434; added focus 31881 (row 29343), rupture 31884 (row 29346), foehn 68128 (row 61090), sledging 68129 (row 61091), plumbago 68130 (row 61092), arrowhead 68131 (row 61093), attrition 68132 (row 61094), foam 68133 (row 61095), moor 68134 (row 61096), jute 68135 (row 61097), Brocken spectre 68136 (row 61098), ploughing 68137 (row 61099), pinon 68138 (row 61100); removed 1673 (row 1654), 14935 (row 14344), 21111 (row 19838), 21371 (row 20028), 28525 (row 26289), 28526 (row 26290), 30399 (row 27940), 30687 (row 28218), 30693 (row 28224), 31029 (row 28546), 31036 (row 28553), 31431 (row 28924), 31531 (row 29021), 31592 (row 29081), 31628 (row 29117), 31643 (row 29131), 31647 (row 29135), 31649 (row 29137), 31655 (row 29143), 32116 (row 29563), 37669 (row 34625), 38999 (row 35857), 39535 (row 36373), 40127 (row 36927), 40163 (row 36961), 63763 (row 58716), 63765 (row 58717), 65482 (row 59121)
+root -> alias rows 14: furze 1797, whin 1798, sledging 5366, Glencoe 30990, fohn 31366, scirocco 31367, sun dog 31435, toadstools 31544, Everest 32079, Fuji 32087, bird's foot trefoil 60176, nymphaea 63142, pack 63778, lime 64792; alias -> root rows 0: none
+Links 100684 -> 100538; rows whose link count changed: 170
+Link-index shifts: from row 79 (clementine 80) on, link positions move
+Rows whose text changed: UV index 16351 (was "uv index"), piñon 17361 (was "pinon"), Adirondack chair 30741 (was "adirondack chair"), Kuroshio 31138 (was "kuroshio"), Stevenson screen 31315 (was "stevenson screen"), föhn 31336 (was "foehn"), Cape doctor 31368 (was "cape doctor"), Brocken specter 31416 (was "brocken spectre"), plowing 31549 (was "ploughing"), Brent crude 32348 (was "brent crude"), holiday cactus 65496 (was "Holiday cactus")
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 242, new 96, rating changed 13
+  gone (other than the deleted themes): fruit_trees: "mandarin" (79), asian_trees: "durian" (365), asian_trees: "mangosteen" (378), rock_pool: "uni" (503), trees: "deciduous" (1673), prickly_things: "furze" (1797), yellow_flowers: "furze" (1797), plants: "furze" (1797), thorny_plants: "furze" (1797), plants_with_spines: "furze" (1797), heath_and_moor_plants: "furze" (1797), yellow_flowers: "whin" (1798), plants: "whin" (1798), thorny_plants: "whin" (1798), prickly_things: "whin" (1798), plants_with_spines: "whin" (1798), heath_and_moor_plants: "whin" (1798), garden_styles: "kitchen" (1870), garden: "kitchen" (1870), garden_features: "kitchen" (1870), garden_styles: "mire" (1927), sailing_words: "moor" (1952), ports_and_harbors: "moor" (1952), cruise_words: "moor" (1952), garden_styles: "stone" (2050), south_african_flowers: "plumbago" (2066), blue_flowers: "plumbago" (2066), fungi: "athlete's foot" (3431), fungi: "ringworm" (3433), eco_swaps: "tote bag" (4991), signs_of_winter: "sledging" (5366), cricket_terms: "sledging" (5366), winter_sports: "sledging" (5366), snow_sports: "sledging" (5366), signs_of_autumn: "conkers" (5960), garden_styles: "quad" (6565), hedge_plants: "fuchsia" (7685), garden_flowers: "fuchsia" (7685), edible_flowers: "fuchsia" (7685), south_american_flowers: "fuchsia" (7685), flower_parts: "ovary" (14368), hot_weather_words: "sticky" (14804), wave_words: "foam" (16291), sun_care: "uv index" (16351), forecast_words: "uv index" (16351), wind_words: "puff" (17037), edible_seeds: "pinon" (17361), foraging_finds: "pinon" (17361), seeds_and_pips: "pinon" (17361), foods_with_shells: "pinon" (17361), nut_trees: "hickory" (17363), garden_furniture: "barbecue" (19767), silk_road: "Gobi Desert" (21111), desert: "Gobi" (21111), erosion_words: "attrition" (21371), water_plants: "arrowhead" (21715), building_stones: "brick" (24030), fiber_plants: "jute" (24866), new_zealand_plants: "Christmas tree" (25007), types_of_wood: "driftwood" (30059), signs_of_winter: "aconite" (30388), vines_and_climbers: "passion flower" (30399), fiber_plants: "wicker" (30682), christmas_plants: "fir tree" (30687), trees: "fir" (30687), evergreen_trees: "fir" (30687), needle_leaf_trees: "fir" (30687), christmas_plants: "red amaryllis" (30693), garden_furniture: "adirondack chair" (30741), garden_styles: "water" (30776), garden_styles: "roof" (30789), garden_styles: "moon" (30792), scottish_landscape_words: "Glencoe" (30990), seashells: "spiral shell" (31029), seashells: "sea snail shell" (31036), tides_and_currents: "kuroshio" (31138), weather_instruments: "stevenson screen" (31315), antarctic_research_station: "stevenson screen" (31315), named_winds: "foehn" (31336), wind_words: "foehn" (31336), named_winds: "fohn" (31366), named_winds: "scirocco" (31367), named_winds: "cape doctor" (31368), sky_phenomena: "brocken spectre" (31416), sky_phenomena: "st elmo's fire" (31431), sky_phenomena: "sun dog" (31435), ice_crystal_effects: "sun dog" (31435), hot_weather_words: "warm" (31463), signs_of_autumn: "spiders' webs" (31531), signs_of_autumn: "toadstools" (31544), signs_of_autumn: "ploughing" (31549), nature_at_night: "lightning bugs" (31592), monsoon_season: "wet markets" (31628), dry_season: "low rivers" (31643), dry_season: "brown grass" (31647), dry_season: "shrinking lake" (31649), dry_season: "lack of rain" (31655), gemstones: "birthstone" (31696), mountains: "Everest" (32079), mountaineering_words: "Everest" (32079), himalayan_peaks: "Everest" (32079), seven_summits: "Everest" (32079), famous_marathons: "Everest" (32079), mountains: "Fuji" (32087), famous_volcanoes: "Fuji" (32087), oasis: "palm tree" (32116), tall_things: "palm tree" (32116), trees: "palm" (32116), fossil_fuels: "brent crude" (32348), south_american_landmarks: "Atacama Desert" (37669), desert: "Atacama" (37669), famous_deserts: "Atacama" (37669), quartz_varieties: "rose" (38661), hard_materials: "ebony" (38999), black_things: "ebony" (38999), tall_things: "pine tree" (39535), things_that_smell_good: "pine tree" (39535), green_things: "pine tree" (39535), woody_and_resin_scents: "pine tree" (39535), trees: "pine" (39535), evergreen_trees: "pine" (39535), mediterranean_trees: "pine" (39535), black_things: "jet" (40127), brown_things: "tree trunk" (40163), tree_parts: "trunk" (40163), dry_season: "heat" (40847), building_stones: "adobe" (50304), flowers_with_animal_names: "bird's foot trefoil" (60176), garden_styles: "rain" (60279), water_plants: "nymphaea" (63142), grasses_and_reeds: "buffalo" (63763), grasses_and_reeds: "couch" (63765), ice_features: "pack" (63778), snow_and_ice: "pack" (63778), trees: "lime" (64792), deciduous_trees: "lime" (64792), south_american_trees: "rubber" (65482), christmas_plants: "Holiday cactus" (65496)
+  new: tall_things: "pine" (1629), things_that_smell_good: "pine" (1629), green_things: "pine" (1629), woody_and_resin_scents: "pine" (1629), trees: "pine" (1629), evergreen_trees: "pine" (1629), mediterranean_trees: "pine" (1629), oasis: "palm" (1631), tall_things: "palm" (1631), trees: "palm" (1631), christmas_plants: "fir" (1638), trees: "fir" (1638), evergreen_trees: "fir" (1638), needle_leaf_trees: "fir" (1638), trees_native_to_britain: "juniper" (1655), nut_trees: "hickory" (1656), hard_materials: "ebony" (1659), black_things: "ebony" (1659), water_plants: "lily" (1791), garden_styles: "kitchen garden" (1870), garden: "kitchen garden" (1870), garden_features: "kitchen garden" (1870), mountains: "Mount Fuji" (2354), famous_volcanoes: "Mount Fuji" (2354), signs_of_winter: "sledding" (5364), mountains: "Mount Everest" (6757), mountaineering_words: "Mount Everest" (6757), himalayan_peaks: "Mount Everest" (6757), seven_summits: "Mount Everest" (6757), famous_marathons: "Everest" (6757), sun_care: "UV index" (16351), forecast_words: "UV index" (16351), edible_seeds: "piñon" (17361), foraging_finds: "piñon" (17361), seeds_and_pips: "piñon" (17361), foods_with_shells: "piñon" (17361), signs_of_autumn: "toadstools" (22509), trees_native_to_britain: "holly" (29953), trees_native_to_britain: "Scots pine" (29955), trees_native_to_britain: "crab apple" (29988), south_american_trees: "rubber" (30014), brown_things: "trunk" (30032), tree_parts: "trunk" (30032), trees_native_to_britain: "box" (30070), trees_native_to_britain: "blackthorn" (30073), signs_of_autumn: "conker" (30088), flowers_with_animal_names: "bird's-foot trefoil" (30364), signs_of_winter: "winter aconite" (30388), grasses_and_reeds: "couch" (30646), garden_furniture: "Adirondack chair" (30741), garden_styles: "water garden" (30776), garden_styles: "roof garden" (30789), garden_styles: "moon garden" (30792), ice_features: "pack" (30904), tides_and_currents: "Kuroshio" (31138), ice_features: "pancake" (31303), weather_instruments: "Stevenson screen" (31315), antarctic_research_station: "Stevenson screen" (31315), named_winds: "föhn" (31336), wind_words: "föhn" (31336), named_winds: "Cape doctor" (31368), sky_phenomena: "Brocken specter" (31416), signs_of_autumn: "plowing" (31549), quartz_varieties: "rose" (31680), black_things: "jet" (31691), earthquake_words: "focus" (31881), earthquake_words: "rupture" (31884), silk_road: "Gobi" (32050), desert: "Gobi" (32050), south_american_landmarks: "Atacama" (32054), desert: "Atacama" (32054), famous_deserts: "Atacama" (32054), fossil_fuels: "Brent crude" (32348), sky_phenomena: "St. Elmo's fire" (39978), flower_parts: "ovary" (40954), pine_species: "loblolly" (56464), pine_species: "bristlecone" (56465), pine_species: "white" (56468), pine_species: "Aleppo" (56472), vines_and_climbers: "passionflower" (56512), grasses_and_reeds: "buffalo" (60209), garden_styles: "rain garden" (60279), hedge_plants: "fuchsia" (62419), garden_flowers: "fuchsia" (62419), edible_flowers: "fuchsia" (62419), south_american_flowers: "fuchsia" (62419), christmas_plants: "holiday cactus" (65496), cricket_terms: "sledging" (68129), south_african_flowers: "plumbago" (68130), blue_flowers: "plumbago" (68130), water_plants: "arrowhead" (68131), erosion_words: "attrition" (68132), wave_words: "foam" (68133), sailing_words: "moor" (68134), cruise_words: "moor" (68134), fiber_plants: "jute" (68135)
+  rating: plants: "gorse" (1796) 3.7/3 -> 3/3, thorny_plants: "gorse" (1796) 3.7/3 -> 3/3, prickly_things: "gorse" (1796) 3.7/3 -> 3/3, yellow_flowers: "gorse" (1796) 3.4/2 -> 2.7/2, plants_with_spines: "gorse" (1796) 3.7/3 -> 3/3, heath_and_moor_plants: "gorse" (1796) 3.7/3 -> 3/3, ways_to_mix: "ripple" (20008) 4.7/5 -> 4.1/5, wave_words: "ripple" (20008) 3.4/2 -> 2/2, water_sounds: "ripple" (20008) 3.7/3 -> 2.7/3, evergreen_trees: "Scots pine" (29955) 3.7/3 -> 3/3, christmas_plants: "Scots pine" (29955) 4/4 -> 3.7/4, pine_species: "Scots" (29955) 3.7/3 -> 3/3, scottish_landscape_words: "Glen Coe" (30983) 3/3 -> 2.7/2
+new issues: none
+
+Checks inside Nature & Earth (218 themes, 6,453 links at v433), found -> left after this batch:
+  warn (long, theme-name, clash-big, maybe-duplicate, theme-gap): 0 in the group's themes (the one theme-name hit, pencil, is in "in a pencil case", Home & Everyday).
+  contract-root-region: 86 roots with a region linked in the group -> 80. Fixed 5 (furze, whin, sledging become aliases; mold, aluminum can untagged as US spellings with a UK spelling, v413). Real but not fixed here, 4 (For Simon): rock pool, lumber, sun lounger, conkers. By design 72 (a regional word with no same-sense word in the other dialect, or a place: kauri, tamarack, whitebeam, wych elm, gorse, kudzu, herbaceous border, trug, dibber, dibble, gulch, arroyo, moorland, fen, glen, tarn, pea-souper, haar, wintry mix, mizzle, orangery, bothy, silver fern, ponga, wattle, road train, yellowhammer, galah, goanna, frogspawn, sloe, piñon, runner bean, brownstone, cobnut tree, leylandii, conker, spinney, hanger, weald, bridleway, New Forest, Forest of Dean, Kielder, Epping, backburn, cleavers, pawpaw, cow parsley, red campion, stitchwort, ragwort, bluebonnet, pikake, waratah, cwm, downs, machair, mere, billabong, firth, lough, wormery, sneaker wave, scorchio, bilberry, samphire, jackdaw, dunnock, slow worm, blackfly, wildlife refuge), plus 5 US words with a UK regional alias that v413 left tagged US (kiddie pool, double-pane windows, draft stopper, illegal dumping, deck). Proposal: the by-design roots are the accepted remainder of contract-root-region (a note in the baseline: "a regional word with no equivalent stays a root with its region", LIBRARY-RULES 4 region), or the contract kind skips roots with no alias of the other dialect; the 5 US roots with a UK regional alias lose their US tag in a library-wide batch (the game reads the alias, so the root tag says nothing).
+  contract-dup-root: 2 -> 2, both by design (deadwood [dead branches] after the place Deadwood; Klondike [solitaire] after the region).
+  contract-type-common: 1 -> 0 (ponga typed common).
+  orphan: 2 words that belonged here were linked (focus, rupture in earthquakes); 1 new orphan (deciduous, an adjective taken out of trees). The other nature orphans stay: the environment words taken out by the v377-379 environment branch (Julia: recyclable, repurpose, zero waste, green hydrogen, buffer zone ...), the Earth's-layers words left by v415, and the words that repeat a theme name (erosion, water cycle, climate change, protected area, public transport, nutrients).
+  sense-link 1 -> 0 (ovary). sense-twin 4 -> 1 in the group's themes (ebony, jet, ovary fixed; buckeye left) plus 1 new outside them (plumbago [graphite] in nuclear power plant, after the split; correct). The other sense-link/sense-twin hits on the group's words sit in other groups' themes: axe in medieval weapons, sherpa in soft things, cinnabar and cardinal in red things, ocean and sapphire in blue things, amethyst in purple things, gopher in burrowing animals.
+  theme-twin 7 -> 2 (marine animals, water movements, minibeasts, Australian wildlife deleted, and grassland blooms as a near-twin of meadow; trees native to Britain completed; precious metals and alkali and alkaline earths left).
+  xwords-twin 2 -> 1 (hot weather words renamed hot weather talk; rain words allow-listed by Simon). alias-kind-suspect 3 -> 0. alias-fullname 10 -> 10 (left). clash-large 3 -> 1 (stream group left). family-kin 18 -> 18 (humid/humidity made kin; plowing, renamed from ploughing, keeps its kin plough [farm implement] and is now also suggested with plow [yoga pose], another word; the rest are different words).
+
+Cross-group moves (not in this batch; for the tree batch at the end of step 3):
+  - alkali and alkaline earths (alkali_and_alkaline_earth_elements, under rocks and minerals > metals) -> Science & Tech > chemical elements: a group of the periodic table, and all 12 words are chemical elements (theme-twin with chemical elements).
+  - gold rush words (gold_rush_words, under rocks and minerals) -> History & Myth beside the Wild West themes: a history topic (forty-niner, Klondike, Sutter's Mill, boomtown), not rocks; Deadwood is already shared with wild west.
+  - Fujiyama 2355 (Places & Geography: famous mountains, landmarks, Japanese landmarks, feudal Japan) is a second root of Mount Fuji 2354, grouped with it in famous mountains: make it a synonym alias of Mount Fuji in the Places & Geography batch (as Fuji became here).
+  - Wrong senses seen on this group's words in other groups' themes: axe [tool] in medieval weapons (axe [weapon]), cinnabar and cardinal in red things, ocean and sapphire in blue things, amethyst in purple things (the color senses), sherpa [mountain guide] in soft things (sherpa [fabric]), conkers [game] fine in toys.
+
+Decided by Simon (2026-11-23, "Take all"), done in this batch:
+  - Deleting famous mountains and ranges overrides Simon's v433 "keep" of its name (NAME_KEEP in batch433): it is deleted as a twin of its parent mountains, which holds all 11 words.
+  - hot weather words is renamed "hot weather talk" (id kept); rain words stays, allow-listed.
+  - lime [linden] 64792 becomes the UK regional alias of linden 1676; basswood and lime tree become synonyms.
+  - föhn is the root (Collins English Dictionary prints föhn, foehn as its variant; dictionary.com British entry); foehn and fohn are its spellings.
+  - medicinal plants is no longer sensitive.
+  - Left as they are (Simon): rock pool, lumber, sun lounger, draught, bats, mushrooms. Fujiyama (linked only in Places & Geography) goes to that group's batch.
+  - Allow-list keys approved (the manager adds them): buckeye [nut] in things trees drop; plumbago [graphite] in nuclear power plant; precious metals / chemical elements; rain words / weather.
+
+Notes kept from the draft:
+  - Everest and Fuji are aliases of Mount Everest and Mount Fuji (mountains shows the full names; famous marathons shows "Everest").
+  - Long forms deleted rather than kept as leaking aliases: pine tree, fir tree, palm tree, tree trunk, Atacama Desert, Gobi Desert, passion flower.
+  - nymphaea (the v166 stand-in for water lily) is water lily's alias; water lily is shown "lily" in water plants. Schwarzwald stays.
+  - Other groups' entries changed with the senses: sledging [cricket] in cricket terms; moor [boat] in sailing words and cruise words; plumbago [graphite] keeps the mineral themes.
+  - Cross-group moves above stay proposals for the tree batch.
+
+Left as is:
+  - buckeye [nut] in things trees drop (sense-twin): the nut is what the tree drops.
+  - alias-fullname (10): hemp seeds, water chestnuts, sweet peas, tree frogs, rain clouds, noctilucent clouds, trade winds, runner beans, Incas, hot springs are plural forms (form aliases), not longer names.
+  - clash-large: stream, brook, creek, rivulet (one answer in bodies of water) with streaming, streamer, creeking: 9 words, real look-alikes in a big theme (up to 12 allowed).
+  - family-kin (18): plowing/plow [yoga pose], iron/irons, slug/sluggish, fir/firie, bush/bushed, sunny/sunnies, trunk/trunking, breaker/break, trail/trailer, tailings/tail, spitting/spit, walking/walkies, walking/walker, stock/stocks, felling/fell, forwarder/forward, brook/brookie: different words.
+  - Schwarzwald in famous forests (v166 stand-in for Black Forest, see For Simon 4).
+  - Theme names: all 24 characters or fewer; "Scottish landscape words", "wave words", "forecast words", "wildfire words", "mining words" have no same-topic twin.
+  - I30: no theme in the group has a gap of 2 or more (largest 1.5: blue flowers, nut trees, seashells, cloud types, Earth's layers).
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time): contract-root-region 1781 -> 1776; contract-type-common 42 -> 41. No warn kind changes (the group had none of long, theme-name, clash-big, maybe-duplicate, theme-gap).
+
+=== Notice to _WS_ for v436 (send when Simon says; one combined notice per game round) ===
+Library v436 is the Nature & Earth tidy-up (TIDY-UP.md, step 3), drafted for Simon's approval; it applies after v434 and v435. No pin until Simon asks.
+- Eight themes are gone (twins of a theme that holds all their words): polar formations, marine animals, water movements, frozen formations, famous mountains and ranges, grassland blooms, minibeasts, Australian wildlife. Theme rows 3,242 -> 3,234 (counted on v433); theme indexes shift from index 604 (was polar formations) to the end. precious elements is renamed precious metals, hot weather words is renamed hot weather talk (ids kept); medicinal plants is no longer sensitive.
+- Second roots merged: pine tree, fir tree, palm tree and tree trunk into pine, fir, palm and trunk (the themes that showed "pine", "fir", "palm", "trunk" still do); Atacama Desert and Gobi Desert into Atacama and Gobi; Everest and Fuji become aliases of Mount Everest and Mount Fuji (mountains now shows the full names); furze and whin become UK synonyms of gorse; lime [linden] becomes the UK regional alias of linden (basswood and lime tree synonyms); sledging (snow) the UK regional alias of sledding (tobogganing a synonym); Glencoe, fohn, scirocco, sun dog, bird's foot trefoil, toadstools, pack, nymphaea become aliases of Glen Coe, foehn, sirocco, sundog, bird's-foot trefoil, toadstool, pack ice, water lily.
+- Wrong senses fixed: fuchsia (the flower) in four flower themes; hickory in nut trees; ovary [flower]; rose quartz [gem]; conker in signs of autumn; new rows plumbago [plant], arrowhead [plant], attrition [erosion], foam [sea], moor [boat] (sailing themes), sledging [cricket], jute [plant]. Loose phrases left dry season and seashells; wicker, wet markets, puff, sticky and warm left themes they did not fit. Mount Everest shows "Everest" in famous marathons.
+- Texts changed (same rows): UV index, föhn (was foehn; foehn and fohn are its spellings), piñon (no new characters: ñ and ö are already in the export), Adirondack chair, Kuroshio, Stevenson screen, Cape doctor, Brocken specter (UK spelling Brocken spectre), plowing (UK spelling ploughing), Brent crude, holiday cactus.
+- Export v433 -> v436 (this batch alone): entry rows 61,116 -> 61,101 (28 removed; 13 added: focus and rupture at their places, 11 new rows at the end), shifting from row 1,654; links 100,684 -> 100,538, link positions move from row 79. No new characters.

@@ -49,3 +49,13 @@ Each group's batch also fixes the baseline warnings (tools/checks-baseline.json)
 ## Progress
 
 - 2026-11-23: plan written. Step 2 done: checks xwords-twin, sense-link (info) and theme-gap (warn, baseline 1) merged (e43fd26). Step 1 done: v433 applied (Simon: "Yes, fix and apply"): 60 orphans deleted, 17 linked, 3 aliased, 225 left with reasons (tools/gen/batch433-review.txt); 68 stale nameOkIn removed; 166 same-sense roots merged; I32 leftovers fixed (spelling-fam 5 -> 0); 84 theme names shortened. For step 3: twins fermented foods and drinks, old ways to keep in touch.
+- 2026-11-23: step 3, first round applied (Simon: "Take all"): v434 Food & Drink, v435 Animals, v436 Nature & Earth, each drafted by one agent, reviewed by a second and corrected; baselines clash-big 0, contract-dup-root 177, contract-root-region 1744, contract-type-common 39; six allow-list keys (Simon). Not sent to the game yet.
+
+## Waiting for later batches
+
+- Cross-group moves from round 1: alkali and alkaline earths to Science & Tech; gold rush words to History & Myth; seaweeds and prehistoric periods to Nature & Earth; fermented foods and drinks (under Qualities) into fermented foods; old ways to keep in touch twin; dragon egg its own root; wrong-sense links in other groups' themes: egg [food] in insect life cycle, butterfly life stages, life cycle words; applesauce, Bordeaux, plum, fish, lamb, champagne, pork pie in hats, honeydew in sticky things.
+- Fujiyama an alias of Mount Fuji (Places & Geography).
+- A dinosaur capital-letter pass (about 150 entries: stegosaurus lowercase, Tyrannosaurus rex capital).
+- "starts with public transport" / "ends with public transport": v433 dropped "public"; put it back (Language & Wordplay).
+- contract-root-region policy (Simon took the recommendation): warn only for a regional root that has a same-sense untagged root; the rest (regional words with no equivalent, by design) become info. Code change, plus a question to the game whether it reads root regions.
+- föhn was made the root from Collins (Oxford could not be fetched); check Oxford by hand if it matters.

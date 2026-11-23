@@ -1,0 +1,42 @@
+Checks inside Nature & Earth (218 themes, 6,453 links at v433), found -> left after this batch:
+  warn (long, theme-name, clash-big, maybe-duplicate, theme-gap): 0 in the group's themes (the one theme-name hit, pencil, is in "in a pencil case", Home & Everyday).
+  contract-root-region: 86 roots with a region linked in the group -> 80. Fixed 5 (furze, whin, sledging become aliases; mold, aluminum can untagged as US spellings with a UK spelling, v413). Real but not fixed here, 4 (For Simon): rock pool, lumber, sun lounger, conkers. By design 72 (a regional word with no same-sense word in the other dialect, or a place: kauri, tamarack, whitebeam, wych elm, gorse, kudzu, herbaceous border, trug, dibber, dibble, gulch, arroyo, moorland, fen, glen, tarn, pea-souper, haar, wintry mix, mizzle, orangery, bothy, silver fern, ponga, wattle, road train, yellowhammer, galah, goanna, frogspawn, sloe, piñon, runner bean, brownstone, cobnut tree, leylandii, conker, spinney, hanger, weald, bridleway, New Forest, Forest of Dean, Kielder, Epping, backburn, cleavers, pawpaw, cow parsley, red campion, stitchwort, ragwort, bluebonnet, pikake, waratah, cwm, downs, machair, mere, billabong, firth, lough, wormery, sneaker wave, scorchio, bilberry, samphire, jackdaw, dunnock, slow worm, blackfly, wildlife refuge), plus 5 US words with a UK regional alias that v413 left tagged US (kiddie pool, double-pane windows, draft stopper, illegal dumping, deck). Proposal: the by-design roots are the accepted remainder of contract-root-region (a note in the baseline: "a regional word with no equivalent stays a root with its region", LIBRARY-RULES 4 region), or the contract kind skips roots with no alias of the other dialect; the 5 US roots with a UK regional alias lose their US tag in a library-wide batch (the game reads the alias, so the root tag says nothing).
+  contract-dup-root: 2 -> 2, both by design (deadwood [dead branches] after the place Deadwood; Klondike [solitaire] after the region).
+  contract-type-common: 1 -> 0 (ponga typed common).
+  orphan: 2 words that belonged here were linked (focus, rupture in earthquakes); 1 new orphan (deciduous, an adjective taken out of trees). The other nature orphans stay: the environment words taken out by the v377-379 environment branch (Julia: recyclable, repurpose, zero waste, green hydrogen, buffer zone ...), the Earth's-layers words left by v415, and the words that repeat a theme name (erosion, water cycle, climate change, protected area, public transport, nutrients).
+  sense-link 1 -> 0 (ovary). sense-twin 4 -> 1 in the group's themes (ebony, jet, ovary fixed; buckeye left) plus 1 new outside them (plumbago [graphite] in nuclear power plant, after the split; correct). The other sense-link/sense-twin hits on the group's words sit in other groups' themes: axe in medieval weapons, sherpa in soft things, cinnabar and cardinal in red things, ocean and sapphire in blue things, amethyst in purple things, gopher in burrowing animals.
+  theme-twin 7 -> 2 (marine animals, water movements, minibeasts, Australian wildlife deleted, and grassland blooms as a near-twin of meadow; trees native to Britain completed; precious metals and alkali and alkaline earths left).
+  xwords-twin 2 -> 1 (hot weather words renamed hot weather talk; rain words allow-listed by Simon). alias-kind-suspect 3 -> 0. alias-fullname 10 -> 10 (left). clash-large 3 -> 1 (stream group left). family-kin 18 -> 18 (humid/humidity made kin; plowing, renamed from ploughing, keeps its kin plough [farm implement] and is now also suggested with plow [yoga pose], another word; the rest are different words).
+
+Cross-group moves (not in this batch; for the tree batch at the end of step 3):
+  - alkali and alkaline earths (alkali_and_alkaline_earth_elements, under rocks and minerals > metals) -> Science & Tech > chemical elements: a group of the periodic table, and all 12 words are chemical elements (theme-twin with chemical elements).
+  - gold rush words (gold_rush_words, under rocks and minerals) -> History & Myth beside the Wild West themes: a history topic (forty-niner, Klondike, Sutter's Mill, boomtown), not rocks; Deadwood is already shared with wild west.
+  - Fujiyama 2355 (Places & Geography: famous mountains, landmarks, Japanese landmarks, feudal Japan) is a second root of Mount Fuji 2354, grouped with it in famous mountains: make it a synonym alias of Mount Fuji in the Places & Geography batch (as Fuji became here).
+  - Wrong senses seen on this group's words in other groups' themes: axe [tool] in medieval weapons (axe [weapon]), cinnabar and cardinal in red things, ocean and sapphire in blue things, amethyst in purple things (the color senses), sherpa [mountain guide] in soft things (sherpa [fabric]), conkers [game] fine in toys.
+
+Decided by Simon (2026-11-23, "Take all"), done in this batch:
+  - Deleting famous mountains and ranges overrides Simon's v433 "keep" of its name (NAME_KEEP in batch433): it is deleted as a twin of its parent mountains, which holds all 11 words.
+  - hot weather words is renamed "hot weather talk" (id kept); rain words stays, allow-listed.
+  - lime [linden] 64792 becomes the UK regional alias of linden 1676; basswood and lime tree become synonyms.
+  - föhn is the root (Collins English Dictionary prints föhn, foehn as its variant; dictionary.com British entry); foehn and fohn are its spellings.
+  - medicinal plants is no longer sensitive.
+  - Left as they are (Simon): rock pool, lumber, sun lounger, draught, bats, mushrooms. Fujiyama (linked only in Places & Geography) goes to that group's batch.
+  - Allow-list keys approved (the manager adds them): buckeye [nut] in things trees drop; plumbago [graphite] in nuclear power plant; precious metals / chemical elements; rain words / weather.
+
+Notes kept from the draft:
+  - Everest and Fuji are aliases of Mount Everest and Mount Fuji (mountains shows the full names; famous marathons shows "Everest").
+  - Long forms deleted rather than kept as leaking aliases: pine tree, fir tree, palm tree, tree trunk, Atacama Desert, Gobi Desert, passion flower.
+  - nymphaea (the v166 stand-in for water lily) is water lily's alias; water lily is shown "lily" in water plants. Schwarzwald stays.
+  - Other groups' entries changed with the senses: sledging [cricket] in cricket terms; moor [boat] in sailing words and cruise words; plumbago [graphite] keeps the mineral themes.
+  - Cross-group moves above stay proposals for the tree batch.
+
+Left as is:
+  - buckeye [nut] in things trees drop (sense-twin): the nut is what the tree drops.
+  - alias-fullname (10): hemp seeds, water chestnuts, sweet peas, tree frogs, rain clouds, noctilucent clouds, trade winds, runner beans, Incas, hot springs are plural forms (form aliases), not longer names.
+  - clash-large: stream, brook, creek, rivulet (one answer in bodies of water) with streaming, streamer, creeking: 9 words, real look-alikes in a big theme (up to 12 allowed).
+  - family-kin (18): plowing/plow [yoga pose], iron/irons, slug/sluggish, fir/firie, bush/bushed, sunny/sunnies, trunk/trunking, breaker/break, trail/trailer, tailings/tail, spitting/spit, walking/walkies, walking/walker, stock/stocks, felling/fell, forwarder/forward, brook/brookie: different words.
+  - Schwarzwald in famous forests (v166 stand-in for Black Forest, see For Simon 4).
+  - Theme names: all 24 characters or fewer; "Scottish landscape words", "wave words", "forecast words", "wildfire words", "mining words" have no same-topic twin.
+  - I30: no theme in the group has a gap of 2 or more (largest 1.5: blue flowers, nut trees, seashells, cloud types, Earth's layers).
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time): contract-root-region 1781 -> 1776; contract-type-common 42 -> 41. No warn kind changes (the group had none of long, theme-name, clash-big, maybe-duplicate, theme-gap).
