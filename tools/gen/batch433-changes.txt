@@ -1,0 +1,792 @@
+Library batch v433: tidy-up step 1, parts a-e (TIDY-UP.md). a. orphans: 60 deleted, 3 made aliases, 17 linked, 225 left (reasons below); b. 68 stale nameOkIn keys removed; c. 166 second roots of one sense merged; d. 18 I32 fixes; e. 84 theme names shortened, 36 kept.
+a. Entries in no theme (orphan)
+  deleted entry: acoustic 63344 [instrument]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: camel 63428 [dairy]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: condensed 63430: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: evaporated 63431: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: boreal 63749 [northern conifer]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: cloud 63750 [mist-shrouded]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: rose 63811 [pink gem]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: smoky 63813 [brown gem]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: folding 63936 [collapsible]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: pop-up 63966 [spring-frame]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: bachelorette 64091 [pre-wedding]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: retirement 64097 [send-off]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: surprise 64098 [secret celebration]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: math 64383 [odd-meter]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: birthday 64402 [happy-birthday tune]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: suspension 64512 [hanging cable span]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: neutron 64546 [collapsed stellar core]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: whole 64554 [zero and up]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: petrified 65486 [fossil woodland]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: trail 65632 [hiking chart]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: weather 65634 [forecast chart]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: bedouin 65695 [nomadic goat-hair shelter]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: armored 65712 [cash-carrying armoured hauler]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: box 65713 [enclosed cargo hauler]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: food 65717 [mobile kitchen]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: ice cream 65719 [mobile dessert vendor]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: logging 65720 [timber hauler]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: mail 65721 [postal hauler]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: monster 65722 [oversized-wheel show vehicle]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: water 65725 [water-spraying hauler]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: rope 65954 [strung rope crossing]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: hipped 65963 [four-sided sloping cover]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: car 66093 [starter power]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: cadmium 66126 [pigment]: a bare modifier stub made for one compound theme (its full term is the member; LIBRARY-RULES 5: never a bare stub); in no theme, no aliases, kin or groups
+  deleted entry: right 58110 [angle]: a stub of right angle 41566, which geometry and angle words hold
+  deleted entry: equilateral 58128: a stub of equilateral triangle 58090, which polygons and triangle types hold
+  deleted entry: kinetic 62926: a stub of kinetic energy 40601, which energy types holds
+  deleted entry: potential 62927: a stub of potential energy, which energy types holds
+  deleted entry: shish 62988: a stub of shish kebab 17876, which kebab types holds
+  deleted entry: adana 53379 [kebab]: a stub of Adana kebab 19304, which kebab types holds
+  deleted entry: margherita 19209 [pizza]: a stub of margherita pizza 20266, which pizza styles holds
+  deleted entry: Shetland 9518 [pony]: a stub of Shetland pony 1519, which pony breeds holds (Shetland [wool] is another entry)
+  deleted entry: longest finger 14381: a description unlinked from fingers in v410 (not the name of a finger: middle finger is)
+  deleted entry: fourth finger 14383: a description unlinked from fingers in v410 (ring finger is the name)
+  deleted entry: neck vertebrae 53059: a description unlinked from a complete set in v410 (cervical vertebrae)
+  deleted entry: man-eating mares 55048: a description unlinked from the labours of Hercules in v410 (the Mares of Diomedes)
+  deleted entry: red cattle 55052: a description unlinked from the labours of Hercules in v410 (the cattle of Geryon)
+  deleted entry: solar 49749 [sun power]: a bare stub of solar power, which renewable energy holds
+  deleted entry: wind 49750 [energy]: a bare stub of wind power (renewable energy holds wind turbine, wind farm)
+  deleted entry: tidal 49751 [sea power]: a bare stub of tidal power, which renewable energy holds (its kin entries lose it)
+  deleted entry: almost 29143: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  deleted entry: beefy 29146: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value (its kin entries lose it)
+  deleted entry: billowy 29147: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value (its kin entries lose it)
+  deleted entry: adopt 29148: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  deleted entry: deft 29156: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  deleted entry: glow 29157: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  deleted entry: most 29160: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  deleted entry: aegilops 29161: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  deleted entry: access 29163: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  deleted entry: effort 29164: made for the theme letters in alphabetical order, deleted in v414 (T34); no other value
+  Xena 41417 becomes a synonym alias of Eris 41416 (familiarity 5): the nickname Eris had before it was named (2005); one body, unlinked from dwarf planets in v410
+  Farrokh Bulsara 51974 becomes a synonym alias of Freddie Mercury 51973 (familiarity 5): Freddie Mercury's birth name, the same person
+  Mount St. Helens 31852 becomes a spelling alias of Mount St Helens 36530 (familiarity 2): the same volcano
+  Mount St. Helens 31852 becomes the root and Mount St Helens 36530 its spelling alias (familiarity 2 / 2): the library writes the period (St. Louis): the orphan with the period takes the links of famous volcanoes and the rest, Mount St Helens is its spelling
+  text: Bull Run 50171 -> "bull run": a rising market is a bull run, a common noun (Bull Run [battle] 21327 is the place)
+  bull run 50171: type "place" -> "common": a common noun, not a place
+  bull run 50171: fam 4 -> 3: many adults know the market term
+  linked: bull run 50171 in stock_market_words "stock market words" (typicality 3): a period of rising prices (bull [market] and rally [market] are there)
+  linked: supervolcano 31836 in volcano_words "volcanoes" (typicality 3): a volcano word
+  linked: hypocenter 31880 in earthquake_words "earthquakes" (typicality 4): the point underground where an earthquake starts (epicenter is there)
+  linked: temblor 31886 in earthquake_words "earthquakes" (typicality 4): another word for an earthquake or tremor
+  linked: moment magnitude 31887 in earthquake_words "earthquakes" (typicality 5): the scale that replaced the Richter scale
+  linked: seismic zone 31895 in earthquake_words "earthquakes" (typicality 4): an earthquake word
+  linked: strike-slip 31896 in earthquake_words "earthquakes" (typicality 5): a kind of fault (fault is there)
+  linked: megathrust 31897 in earthquake_words "earthquakes" (typicality 5): the great subduction earthquakes
+  linked: eutrophication 32199 in pollution_words "pollution" (typicality 5): water pollution by nutrient run-off
+  linked: radiative forcing 32309 in climate_words "climate change" (typicality 5): a climate-change term
+  linked: Keeling Curve 32312 in climate_words "climate change" (typicality 5): the record of rising carbon dioxide
+  linked: dumpling soup 18669 in soups "soups" (typicality 3; nameOkIn: "soup" of the theme name is part of the full term): a soup
+  linked: engagement party 60904 in kinds_of_party "kinds of party" (typicality 3; nameOkIn: "party" of the theme name is part of the full term): a kind of party
+  linked: claim jumper 31814 in gold_rush_words "gold rush words" (typicality 4): one who seizes another's mining claim
+  linked: whole tone 11180 in music_terms "music terms" (typicality 4): an interval (interval is there)
+  linked: asteroid belt 41302 in things_in_space "things in space" (typicality 3): a thing in space
+  linked: ollie north 48044 in skateboard_tricks "skateboard tricks" (typicality 5): a skateboard trick (an ollie with the front foot off the board)
+b. Stale nameOkIn keys (nameOk-stale): the entry is not in that theme, so the key would only mute the leak check if it were linked there later
+  butcher's 131: nameOkIn drops butcher_shop
+  egg 518: nameOkIn drops dairy_and_eggs
+  kebab 813: nameOkIn drops kebab_types
+  macaroni cheese 816: nameOkIn drops cheese_dishes
+  owl 1063: nameOkIn drops owls
+  pigeon 1070: nameOkIn drops pigeons_and_doves
+  dolphin 1285: nameOkIn drops whales_and_dolphins
+  seaweed 1290: nameOkIn drops seaweeds
+  roly-poly 1418: nameOkIn drops insects_and_bugs, garden_bugs
+  horse race 1513: nameOkIn drops horses
+  horse trailer 1539: nameOkIn drops horses
+  Chile pine 1668: nameOkIn drops pine_species
+  lime tree 1677: nameOkIn drops names_that_are_trees
+  coat of arms 2526: nameOkIn drops things_with_arms
+  aircraft 2710: nameOkIn drops aircraft_types
+  tent stake 3057: nameOkIn drops tent_parts
+  tipper truck 3106: nameOkIn drops truck_types
+  the law 4208: nameOkIn drops law_and_order
+  jacket 4871: nameOkIn drops coats_and_jackets
+  hair slide 4969: nameOkIn drops hair_care, hair_accessories
+  Chinese New Year 5127: nameOkIn drops new_year
+  Lunar New Year 5128: nameOkIn drops new_year
+  water gun 5966: nameOkIn drops water_park
+  soft toy 5972: nameOkIn drops toys_and_play
+  cuddly toy 5973: nameOkIn drops toys_and_play
+  grizzly bear 7946: nameOkIn drops bears
+  Kodiak bear 7947: nameOkIn drops bears
+  American black bear 7949: nameOkIn drops bears
+  cinnamon bear 7951: nameOkIn drops bears
+  Asiatic black bear 7952: nameOkIn drops bears
+  painted dog 7970: nameOkIn drops wild_dogs_and_foxes
+  peace dove 8496: nameOkIn drops pigeons_and_doves
+  white ant 9225: nameOkIn drops ant_types
+  termite mound 9229: nameOkIn drops ants_and_termites
+  Robin Hood 12551: nameOkIn drops robin_hood_legend
+  intravenous drip 15168: nameOkIn drops things_that_drip
+  mixed nuts 16760: nameOkIn drops nuts
+  pickled onion 17583: nameOkIn drops onion_family
+  onion powder 17584: nameOkIn drops onion_family
+  fairy ring 17638: nameOkIn drops fairy_folk
+  devilled eggs 17987: nameOkIn drops egg_dishes
+  dumpling soup 18669: nameOkIn drops dumplings
+  egg sandwich 19011: nameOkIn drops dairy_and_eggs
+  dragon egg 22473: nameOkIn drops dairy_and_eggs
+  fairy dust 22497: nameOkIn drops fairy_folk
+  miter saw 23691: nameOkIn drops saws
+  council tax 24220: nameOkIn drops tax_words
+  oven gloves 24763: nameOkIn drops scarves_and_gloves
+  gift wrap 25203: nameOkIn drops gift_wrapping
+  wall clock 25377: nameOkIn drops clocks_and_calendars
+  candle maker 25618: nameOkIn drops candle_words
+  key cutter 25728: nameOkIn drops locks_and_keys
+  road 28254: nameOkIn drops road_types
+  truck 28334: nameOkIn drops truck_types
+  butterflies 31506: nameOkIn drops butterfly_life_stages
+  potting soil 31987: nameOkIn drops soil_words
+  acid rain 32183: nameOkIn drops acids_and_bases
+  medal bar 34645: nameOkIn drops medals_and_honors
+  motorcycle 40174: nameOkIn drops motorcycle_types
+  toilet 47326: nameOkIn drops words_for_toilet
+  mobility scooter 48058: nameOkIn drops scooters_and_skates
+  dumper truck 49257: nameOkIn drops truck_types
+  refuse truck 49258: nameOkIn drops truck_types
+  salmon run 50763: nameOkIn drops salmon_and_trout
+  egg white 64688: nameOkIn drops dairy_and_eggs
+  samurai armour 64887: nameOkIn drops armor
+c. Two roots of one sense merged (the second id goes into the first; links, show, use, nameOkIn, groups, kin and aliases move; the better typicality is kept)
+  port 47462 [left side] into port 37954 [ship side]; links move: sailing_words:2; familiarity stays 3 (the other had 2): the left side of a ship, three times
+  port 37954: gloss "ship side" -> "ship's left": fits both former roots
+  port 47598 [ship left] into port 37954 [ship's left]; links move: nautical_directions:1; familiarity stays 3 (the other had 2): the left side of a ship
+  keep 20710 [castle tower] into keep 2509 [castle]; links move: castles:1; familiarity stays 4 (the other had 2): the castle tower
+  transfer 46913 [bus ticket] into transfer 46950 [ticket]; links move: on_a_bus:4: the ticket for changing buses or trains
+  tender 2848 [ship] into tender 48895 [ship boat]; links move: boats_and_ships:5; familiarity stays 4 (the other had 5): a ship's boat
+  kin of tank 4451 moves to tank 3125: tanker 2810, tanker 47104, tanker 49255
+  tank 4451 [armored vehicle] into tank 3125 [military vehicle]; links move: military:1 modern_weapons:2; familiarity stays 1 (the other had 2): the armored military vehicle
+  kin of tail 9584 moves to tail 8834: tailings 31793
+  tail 9584 [animal part] into tail 8834 [animal]; links move: parts_of_a_horse:1: an animal's tail
+  kin of tail 8362 moves to tail 8834: tailings 31793
+  tail 8362 [bird] into tail 8834 [animal]; links move: bird_body_parts:1: an animal's tail (a bird is an animal)
+  muzzle 9589 [animal part] into muzzle 10336 [animal]; links move: parts_of_a_horse:2: an animal's nose and mouth
+  bill 10347 [animal] into bill 8359 [bird]; links move: animal_body_parts:3 bird_parts:3: a bird's beak
+  kin of spur 10343 moves to spur 8382: spurs 9569
+  spur 10343 [animal] into spur 8382 [bird]; links move: animal_body_parts:4 bird_parts:4: the spur on a bird's leg
+  wattle 10341 [animal] into wattle 8367 [bird]; links move: animal_body_parts:4 bird_parts:4; familiarity stays 3 (the other had 4): the fold of skin on a bird's head
+  Terra Nova 21055 [Scott ship] into Terra Nova 54269 [ship]; links move: polar_exploration:4: Scott's ship
+  Fram 21056 [Nansen ship] into Fram 47528 [ship]; links move: polar_exploration:4; familiarity stays 4 (the other had 5): Nansen's ship
+  Erebus 21057 [Franklin ship] into Erebus 54270 [ship]; links move: polar_exploration:4; familiarity stays 4 (the other had 5): Franklin's (and Ross's) ship
+  Nimrod 21058 [Shackleton ship] into Nimrod 54272 [ship]; links move: polar_exploration:4; familiarity stays 4 (the other had 5): Shackleton's ship
+  Hispaniola 21232 [Treasure Island ship] into Hispaniola 47531 [ship]; links move: pirate_ships:3: the Treasure Island ship
+  Endeavour 21082 [Cook ship] into Endeavour 6754 [ship]; links move: famous_voyages:3; familiarity stays 3 (the other had 4): Cook's ship
+  Calypso 21096 [Cousteau ship] into Calypso 47533 [ship]; links move: famous_voyages:4; familiarity stays 3 (the other had 4): Cousteau's ship
+  Nina 21089 [Columbus ship] into Nina 47526 [ship]; links move: famous_voyages:2: Columbus's ship
+  RAM 29208 [computer memory] into RAM 7302 [memory]; links move: acronyms:3; familiarity stays 2 (the other had 1): computer memory
+  drake 28906 [male duck] into drake 1480 [duck]; links move: rhymes_with_cake:4: a male duck
+  drake 1480: gloss "duck" -> "male duck": fits both former roots
+  amber 10109 [resin] into amber 1615 [fossil resin]; links move: dinosaur_words:3: fossil resin
+  Hubble 49155 [space telescope] into Hubble 7168 [telescope]; links move: space_vehicles:4: the space telescope
+  Voyager 49149 [space probe] into Voyager 41222 [probe]; links move: space_vehicles:4; familiarity stays 2 (the other had 3): the space probes
+  Concorde 47093 [supersonic airliner] into Concorde 39833 [airliner]; links move: aircraft_types:3: the airliner
+  Harrier 34618 [jump jet] into Harrier 47256 [jet]; links move: air_force_words:4: the jump jet
+  familiar 7032 [witch's pet] into familiar 22422 [witch's animal]; links move: fantasy:4; familiarity stays 3 (the other had 4): a witch's animal companion
+  familiar 22407 [witch pet] into familiar 22422 [witch's animal]; links move: wizard_words:3; familiarity stays 3 (the other had 2): a witch's animal companion
+  fawn 9782 [young deer] into fawn 10130 [deer]; links move: woodland_animals:2 spotted_animals:2: a young deer
+  fawn 10130: gloss "deer" -> "young deer": fits both former roots
+  Pluto 39882 [planet] into Pluto 21099 [dwarf planet]; links move: cold_things:4: the dwarf planet
+  Ur 21818 [Sumerian city] into Ur 36088 [ancient city]; links move: bronze_age:3 mesopotamia:2: the Sumerian city
+  Tyre 54755 [ancient city] into Tyre 50324 [city]; links move: ancient_sites_of_the_middle_east:3: the ancient Phoenician city
+  Memphis 54765 [Egypt] into Memphis 36091 [ancient city]; links move: ancient_sites_of_africa:3: the ancient Egyptian city
+  Moray 42216 [Inca site] into Moray 54828 [Inca terraces]; links move: inca_engineering:4: the Inca terraces
+  Deir el-Bahri 37500 [Egyptian temple site] into Deir el-Bahri 65611 [Egyptian landmark]; links move: egyptian_landmarks:5: the temple site
+  Bird's Nest 37561 [stadium] into Bird's Nest 44407 [Beijing stadium]; links move: chinese_landmarks:3: the Beijing stadium
+  Whistler 37741 [resort] into Whistler 48982 [ski resort]; links move: canadian_landmarks:3: the ski resort
+  Immortals 20537 [Persian guard] into Immortals 21395 [Persian soldiers]; links move: ancient_persia:2: the Persian elite soldiers
+  boto 63009 [Amazon] into boto 63300 [Amazon river dolphin]; links move: whales_and_dolphins:4; familiarity stays 4 (the other had 5): the Amazon river dolphin
+  shuttle 64543 [NASA orbiter] into shuttle 63990 [orbiter]; links move: space_station:3: the space shuttle
+  figure eight 48705 [climbing knot] into figure eight 47564 [knot]; links move: climbing_gear:4; familiarity stays 3 (the other had 4): the knot
+  hockey 42646 [field] into hockey 44063 [field hockey]; links move: team_ball_sports:3 sports_with_a_net:4; familiarity stays 1 (the other had 2): field hockey
+  kin of knots 48902 moves to knots 47473: knot 10259, knot 30039, knot 47467, knot 50695, knot 56042
+  knots 48902 [ship speed] into knots 47473 [speed]; links move: cruise_words:4; familiarity stays 2 (the other had 3): a ship's speed
+  alias microlight 47094 (regional) moves to ultralight 39775
+  ultralight 47095 [microlight] into ultralight 39775 [aircraft]; links move: aircraft_types:4; familiarity stays 4 (the other had 3): the light aircraft (microlight)
+  jet 34600 [aircraft] into jet 2711 [plane]; links move: air_force_words:1 aircraft_types:1 flying_machines:1: a jet aircraft
+  kin of freighter 62653 moves to freighter 2809: freight 28656
+  freighter 62653 [merchant] into freighter 2809 [cargo ship]; links move: boats_and_ships:2; familiarity stays 3 (the other had 2): a cargo ship
+  kin of liner 62654 moves to liner 2836: lining 24956, lines 33811, line 41555, line 45122, lining 67250
+  liner 62654 [ocean] into liner 2836 [ship]; links move: boats_and_ships:2; familiarity stays 3 (the other had 2): an ocean liner
+  junk 47428 [boat] into junk 2817 [ship]; links move: boat_types:3 traditional_boats:1: the Chinese sailing ship
+  kin of dock 29361 moves to dock 2806: docking 41331
+  dock 29361 [harbor] into dock 2806 [port]; links move: words_from_dutch:4 ports_and_harbors:1 ships_and_sailing_words:4: a place where ships tie up
+  dock 2806: gloss "port" -> "harbor": fits both former roots
+  conductor 2661 [transport] into conductor 2862 [train]; links move: public_transportation:3; familiarity stays 1 (the other had 2): the official on a train or bus
+  conductor 2862: gloss "train" -> "transport": fits both former roots
+  conductor 46919 [bus] into conductor 2862 [transport]; links move: on_a_bus:2; familiarity stays 1 (the other had 2): the official on a train or bus
+  drone 10297 [male bee] into drone 9059 [bee]; links move: male_animals:3: a male bee
+  tom 1482 [cat] into tom 10285 [male cat]; links move: domestic_animals:4; familiarity stays 2 (the other had 3): a male cat
+  ram 1460 [animal] into ram 9268 [sheep]; links move: domestic_animals:3 things_with_horns:2: a male sheep
+  kin of mouse 24022 moves to mouse 991: mousy 53051
+  mouse 24022 [rodent] into mouse 991 [animal]; links move: household_pests:1: the rodent
+  python 29534 [snake] into python 1154 [animal]; links move: words_from_mythology:3 long_things:3; familiarity stays 2 (the other had 1): the snake
+  python 1154: gloss "animal" -> "snake": fits both former roots
+  calf 9267 [animal] into calf 10126 [cattle]; links move: farm_animals:2: a young cow
+  doe 10303 [animal] into doe 9781 [deer]; links move: female_animals:2: a female deer (or rabbit)
+  kin of pen 10314 moves to pen 50686: pen 34758
+  pen 10314 [animal] into pen 50686 [female swan]; links move: female_animals:4 numbers_with_the_first_letter_changed:2; familiarity stays 4 (the other had 3): a female swan
+  coral 9926 [animal] into coral 1289 [marine animal]; links move: pink_animals:5 tentacled_animals:4: the marine animal
+  periwinkle 40195 [snail] into periwinkle 7746 [sea snail]; links move: things_with_shells:4; familiarity stays 4 (the other had 3): the sea snail
+  kin of mercury 22454 moves to mercury 214: mercurial 29519
+  mercury 22454 [metal] into mercury 214 [element]; links move: alchemy:3: the metal element
+  kin of tailgate 46664 moves to tailgate 38392: tailgating 62180
+  tailgate 46664 [drive] into tailgate 38392 [driving]; links move: driving_words:3: driving too close
+  pike 34653 [weapon] into pike 20790 [spear]; links move: historic_weapons:3: the long spear
+  morning star 34656 [weapon] into morning star 20791 [spiked club]; links move: historic_weapons:3; familiarity stays 3 (the other had 4): the spiked club
+  sieve 19853 [utensil] into sieve 25770 [kitchen tool]; links move: kitchen_utensils:2: the kitchen tool
+  monitor 23215 [computer] into monitor 7256 [screen]; links move: home_office:2 things_you_plug_in:3 office:2; familiarity stays 1 (the other had 2): a computer screen
+  amber 16301 [perfume] into amber 39730 [scent]; links move: middle_eastern_grooming:4; familiarity stays 2 (the other had 3): the scent
+  chart 21018 [nautical map] into chart 37893 [sea chart]; links move: navigation_tools:2; familiarity stays 2 (the other had 1): a sea map
+  kin of mirror 11884 moves to mirror 23136: mirrorless 49482
+  mirror 11884 [object] into mirror 23136 [glass]; links move: dance_studio_words:1 hair_salon:2 dentist_s_office:2 things_made_of_glass:1: a looking glass
+  cul-de-sac 46733 [dead end] into cul-de-sac 26867 [road]; links move: road_signs:3 giving_directions:4; familiarity stays 2 (the other had 3): a dead-end road
+  nail 39023 [metal] into nail 23702 [fastener]; links move: things_that_rust:1: the metal fastener
+  kin of fuse 49766 moves to fuse 40676: fusion 10871, fuse 40676, fusion 40809
+  fuse 49766 [electrical] into fuse 40676 [electric]; links move: electronic_parts:3: the electrical fuse
+  solder 49772 [electronics] into solder 31729 [metal]; links move: electronic_parts:4 maker_kit:4; familiarity stays 3 (the other had 2): the metal alloy for joining
+  habit 34368 [nun] into habit 20855 [monk clothing]; links move: religious_clothing:1; familiarity stays 2 (the other had 3): the robe of a monk or nun
+  habit 20855: gloss "monk clothing" -> "religious dress": fits both former roots
+  Amazon 32025 [region] into Amazon 30211 [rainforest]; links move: rainforest:1: the rainforest region
+  Hector 22520 [hero] into Hector 22275 [Trojan]; links move: legendary_heroes:3: the Trojan hero
+  Loki 20591 [Norse god] into Loki 21896 [god]; links move: vikings:3: the Norse god (a deity is typed proper, LIBRARY-RULES 4)
+  Ra 20348 [sun god] into Ra 21927 [god]; links move: ancient_egypt:3; familiarity stays 2 (the other had 3): the Egyptian sun god (typed proper)
+  druid 34214 [priest] into druid 20658 [Celtic priest]; links move: religious_leaders:3; familiarity stays 2 (the other had 3): the Celtic priest
+  Gothic 55881 [language] into Gothic 25941 [ancient language]; links move: germanic_languages:4; familiarity stays 3 (the other had 4): the language
+  mummy 20341 [embalmed body] into mummy 6660 [Egyptian]; links move: ancient_egypt:1 egyptian_afterlife:1: the embalmed body
+  mummy 6660: gloss "Egyptian" -> "embalmed body": fits both former roots
+  kin of troll 13609 moves to troll 6987: trolling 45132
+  troll 13609 [fairy tale] into troll 6987 [monster]; links move: fairy_tale_villains:2; familiarity stays 1 (the other had 2): the folklore monster
+  kingdom 50325 [taxonomy] into kingdom 50039 [biology rank]; links move: biology_words:3; familiarity stays 1 (the other had 2): the rank in biology
+  kin of spoons 51571 moves to spoons 10624: spoon 20136, spoon 58796, spoon 61547
+  spoons 51571 [percussion] into spoons 10624 [instrument]; links move: celtic_instruments:3: the percussion instrument
+  primer 28815 [paint base] into primer 11919 [paint]; links move: homographs:5; familiarity stays 2 (the other had 3): the base coat of paint
+  horror 45628 [game genre] into horror 12560 [film genre]; links move: video_game_genres:2: the genre (already in film and book genres)
+  horror 12560: gloss "film genre" -> "genre": fits both former roots
+  kin of adventure 45620 moves to adventure 12569: adventurous 32894, adventurer 48149
+  adventure 45620 [game genre] into adventure 12569 [film genre]; links move: video_game_genres:2: the genre
+  adventure 12569: gloss "film genre" -> "genre": fits both former roots
+  century 34696 [Roman] into century 54007 [unit]; links move: military_units:4; familiarity stays 2 (the other had 3): the Roman army unit
+  century 54007: gloss "unit" -> "Roman unit": fits both former roots
+  embargo 29306 [trade ban] into embargo 33532 [trade]; links move: words_from_spanish:4: a ban on trade
+  embargo 33532: gloss "trade" -> "trade ban": fits both former roots
+  router 23682 [woodworking] into router 4835 [power tool]; links move: power_tools:3: the woodworking power tool
+  router 46042 [tool] into router 4835 [power tool]; links move: woodworking_words:2: the woodworking power tool
+  pool 43106 [game] into pool 5252 [cue sport]; links move: cue_sports_terms:1: the cue sport
+  kin of jacks 46059 moves to jacks 5962: jack 10286, jack 23155, jack 37974, jack 42662, jack 51609
+  jacks 46059 [toy] into jacks 5962 [game]; links move: toys:4 old_fashioned_playthings:4; familiarity stays 3 (the other had 2): the game played with jacks
+  kin of brush 11907 moves to brush 6289: brushes 10879
+  brush 11907 [paintbrush] into brush 6289 [painting]; links move: painting_words:1: a paintbrush
+  kin of grade 34830 moves to grade 4491: grader 3148
+  grade 34830 [school] into grade 4491 [mark]; links move: exam_words:1: a school mark
+  kin of drill 34560 moves to drill 4411: drilling 32339
+  drill 34560 [military] into drill 4411 [training]; links move: army_words:2: military training
+  skeleton 43513 [sled] into skeleton 5354 [sport]; links move: snow_sports:3 olympic_snow_sports:3: the head-first sled sport
+  skeleton 5354: gloss "sport" -> "sled sport": fits both former roots
+  skeleton 44067 [sled sport] into skeleton 5354 [sled sport]; links move: olympic_sports:4: the head-first sled sport
+  kin of love 44254 moves to love 42987: lover 32469, lovely 39446, lovey 50294
+  love 44254 [tennis score] into love 42987 [tennis]; links move: scoring_words:2; familiarity stays 1 (the other had 2): zero in tennis
+  hutch 8089 [rabbit] into hutch 10163 [rabbit home]; links move: rabbits_and_hares:3; familiarity stays 2 (the other had 3): a rabbit's cage
+  kin of rasp 39655 moves to rasp 16970: raspy 39660
+  rasp 39655 [sound] into rasp 16970 [harsh sound]; links move: voice_sounds:4: a harsh sound
+  kin of rigging 45915 moves to rigging 12473: rigger 12334, rigger 43442
+  rigging 45915 [model ship] into rigging 12473 [ship]; links move: model_making:4; familiarity stays 4 (the other had 3): a ship's ropes (on a model too)
+  col 45098 [mountain pass] into col 30845 [mountain]; links move: mountaineering_words:4 trail_words:5: a mountain pass
+  second 41926 [time] into second 25337 [time unit]; links move: si_base_units:1: the unit of time
+  minute 28787 [time] into minute 25338 [time unit]; links move: homographs:2: the unit of time
+  kin of quark 17954 moves to quark 547: quarks 42098
+  quark 17954 [cheese] into quark 547 [dairy]; links move: cheeses:5 soft_cheeses:4: the soft cheese
+  partner 32432 [significant other] into partner 3918 [life partner]; links move: relationships:2: a life partner
+  patient 15282 [person] into patient 3451 [medical]; links move: people_at_a_hospital:1: a person in medical care
+  test 34829 [exam] into test 4487 [school]; links move: exam_words:1: a school test
+  test 4487: gloss "school" -> "exam": fits both former roots
+  sentence 33665 [court] into sentence 4190 [punishment]; links move: courtroom_words:3; familiarity stays 1 (the other had 2): a court's punishment
+  scoop 35192 [story] into scoop 4636 [news]; links move: journalism_words:2: an exclusive news story
+  clutch 24712 [bag] into clutch 4992 [handbag]; links move: bags:3: the small handbag
+  ascot 24823 [neckwear] into ascot 5011 [cravat]; links move: neckwear:3: the cravat
+  shrug 24319 [top] into shrug 4934 [cropped cardigan]; links move: tops:4; familiarity stays 4 (the other had 3): the cropped cardigan
+  kin of dart 24968 moves to dart 5054: darts 5249
+  dart 24968 [clothing] into dart 5054 [sewing]; links move: clothing_parts:4: a sewn fold in a garment
+  arcade 14156 [building] into arcade 6611 [architecture]; links move: architectural_features:3: a row of arches
+  kin of hoard 22465 moves to hoard 6884: hoarding 4593
+  hoard 22465 [treasure] into hoard 6884 [find]; links move: dragons:3: a store of treasure
+  axle 60686 [skateboard] into axle 7388 [car part]; links move: skateboard_parts:3; familiarity stays 2 (the other had 3): a wheel shaft
+  bias 41692 [statistics] into bias 7463 [research]; links move: statistics_words:4: a skew in research or statistics
+  mode 41450 [math] into mode 41670 [statistics]; links move: math_terms:3: the most common value
+  kin of range 41451 moves to range 41671: ranger 32267
+  range 41451 [math] into range 41671 [statistics]; links move: math_terms:3 algebra_words:4: the spread of values
+  teal 17738 [duck] into teal 8196 [bird]; links move: game_meats:4 ducks:2; familiarity stays 3 (the other had 4): the duck
+  teal 8196: gloss "bird" -> "duck": fits both former roots
+  adult 9173 [animal] into adult 41069 [life stage]; links move: insect_life_cycle:3 butterfly_life_stages:2: the grown stage of a life cycle
+  kin of slash 26109 moves to slash 26135: slasher 6445, slashing 43627
+  slash 26109 [punctuation] into slash 26135 [symbol]; links move: punctuation:4: the / sign
+  ticket booth 57579 [zoo] into ticket booth 12471 [cinema]; links move: zoo:4: a ticket office
+  ticket booth 12471: gloss "cinema" -> "ticket office": fits both former roots
+  alias ticket office 46951 (regional) moves to ticket booth 12471
+  ticket booth 46952 [station] into ticket booth 12471 [ticket office]; links move: station_words:2: a ticket office (at a station)
+  porter 33238 [luggage] into porter 33008 [hotel]; links move: transport_jobs:4: one who carries luggage (hotel, station, airport: one dictionary sense)
+  porter 33008: gloss "hotel" -> "luggage carrier": fits both former roots
+  porter 47831 [railway] into porter 33008 [luggage carrier]; links move: railroad_jobs:2; familiarity stays 3 (the other had 2): one who carries luggage (the railway porter)
+  plank 63334 [arm balance] into plank 15842 [exercise]; links move: yoga_poses:3; familiarity stays 1 (the other had 3): the exercise and yoga pose
+  kin of eggs 48550 moves to eggs 16678: egg 518
+  eggs 48550 [camping] into eggs 16678 [food]; links move: campfire_foods:2: the food
+  kin of boom 43485 moves to boom 47443: booming 39658
+  boom 43485 [sailing] into boom 47443 [sail]; links move: sailing_sports:3: the spar of a sail
+  kin of paste 23759 moves to paste 23809: pasty 19179, pasty 20243
+  paste 23759 [wallpaper] into paste 23809 [adhesive]; links move: painting_and_decorating:3: the adhesive (wallpaper paste)
+  arc 38927 [line] into arc 28032 [curve]; links move: line_types:4: a curved line
+  spiral 38946 [line] into spiral 38907 [pattern]; links move: line_types:4: the curve
+  wolfsbane 30494 [flower] into wolfsbane 30617 [poisonous]; links move: flowers_with_animal_names:4: the poisonous plant
+  kin of merge 46728 moves to merge 46661: merger 34098
+  merge 46728 [sign] into merge 46661 [traffic]; links move: road_signs:3: joining traffic
+  slipstream 46680 [driving] into slipstream 46704 [racing]; links move: driving_words:4: the draft behind a vehicle
+  awning 48616 [RV] into awning 48509 [tent]; links move: rvs_and_campers:4: a canopy
+  stone 24043 [material] into stone 2050 [rock]; links move: building_materials:1: rock as a material
+  kin of marble 31746 moves to marble 2057: marbles 5929, marbled 38912, marbling 45859, marbles 46330
+  marble 31746 [rock] into marble 2057 [stone]; links move: rock_types:1 building_stones:1; familiarity stays 2 (the other had 1): the rock
+  chalk 34782 [teaching] into chalk 4480 [for writing]; links move: classroom_items:1: chalk for writing
+  token 46965 [subway] into token 2694 [transit]; links move: ticket_words:3: the transit token
+  kin of landing 47319 moves to landing 2718: lander 49141
+  landing 47319 [flight] into landing 2718 [plane]; links move: in_flight_words:2: a plane coming down
+  drone 7335 [gadget] into drone 2750 [aircraft]; links move: gadgets:2 things_that_run_on_batteries:3 robots:4; familiarity stays 2 (the other had 1): the flying drone
+  bridge 51606 [piano] into bridge 10716 [music]; links move: piano_parts:4; familiarity stays 1 (the other had 3): the bridge of a string instrument
+  tunnel 47700 [railway] into tunnel 2886 [train]; links move: railway_words:2: the railway tunnel
+  stroke 16890 [caress] into stroke 14812 [touch]; links move: hand_actions:2; familiarity stays 1 (the other had 2): a gentle touch
+  relief 12040 [sculpture] into relief 6340 [art]; links move: sculpture_words:3: raised carving
+  paper 12011 [sheet] into paper 20472 [material]; links move: art_materials:2: paper the material and the sheet
+  kin of marbles 46330 moves to marbles 5929: marble 2057, marbles 5929, marble 20007, marbled 38912, marble 39869, marbling 45859
+  marbles 46330 [game] into marbles 5929 [toy]; links move: south_asian_games:2: the game and its glass balls
+  romance 25167 [love] into romance 32442 [courtship]; links move: valentine_s_day:2; familiarity stays 1 (the other had 2): love and courtship
+  kin of compass 42072 moves to compass 2398: compass 34772
+  compass 42072 [direction] into compass 2398 [navigation]; links move: inventions:2 chinese_inventions:1: the magnetic compass
+  pigeon 62749 [hip opener] into pigeon 62738 [asana]; links move: stretches:2: the yoga pose
+  rally 43077 [table tennis] into rally 43001 [tennis]; links move: table_tennis_terms:2: an exchange of shots, the same in tennis and table tennis
+  rally 43001: gloss "tennis" -> "racket sports": fits both former roots
+  net 43076 [table tennis] into net 42993 [tennis]; links move: table_tennis_terms:1: the net across the court or table
+  net 42993: gloss "tennis" -> "racket sports": fits both former roots
+  let 43085 [table tennis] into let 43007 [tennis]; links move: table_tennis_terms:3: a serve replayed after touching the net
+  let 43007: gloss "tennis" -> "racket sports": fits both former roots
+  180 60674 [skateboard trick] into 180 61611 [snowboard trick]; links move: skateboard_tricks:3: a half turn, on a skateboard or a snowboard
+  180 61611: gloss "snowboard trick" -> "board trick": fits both former roots
+  900 48029 [skateboard trick] into 900 43642 [snowboard trick]; links move: skateboard_tricks:3: two and a half turns
+  900 43642: gloss "snowboard trick" -> "board trick": fits both former roots
+  handicap 43240 [bowling] into handicap 43041 [golf]; links move: bowling_terms:4; familiarity stays 2 (the other had 3): strokes or pins given to even out players
+  handicap 43041: gloss "golf" -> "score allowance": fits both former roots
+  tackle 42892 [rugby] into tackle 42765 [american football]; links move: rugby_terms:1: bringing down the ball carrier, in American football and rugby
+  tackle 42765: gloss "american football" -> "football": fits both former roots
+  kin of leg 9128 moves to leg 3177: leggings 4894, legs 12288, legless 27333, legs 51617
+  leg 9128 [animal] into leg 3177 [body part]; links move: insect_body_parts:1: a leg, human or animal
+  kin of head 9127 moves to head 3168: header 42680
+  head 9127 [animal] into head 3168 [body]; links move: insect_body_parts:2: a head, human or animal
+  kin of webbing 67272 moves to webbing 14217: web 10182
+  webbing 67272 [toes] into webbing 14217 [hand]; links move: foot_parts:5: the skin between fingers or toes
+  webbing 14217: gloss "hand" -> "between digits": fits both former roots
+  crest 10115 [head crest] into crest 8364 [bird]; links move: dinosaur_words:3: a crest on the head (birds, dinosaurs)
+  crest 8364: gloss "bird" -> "head crest": fits both former roots
+d. I32 leftovers (ISSUES.md; detail tools/gen/batch420-review.txt)
+  gaol 2487: region ["UK","AU","IE"] -> []: not the UK display word for prison: an untagged rare variant (Simon, v420); its familiarity 3 is then right
+  paeony 1718: region ["UK"] -> []: UK writes peony; paeony is a rare untagged variant (v420); its familiarity 4 is then right
+  Yemaya 22196 becomes the root and Yemoja 22195 its spelling alias (familiarity 4 / 5): Yemaya is the commoner spelling (v420)
+  ether 40584 becomes the root and aether 40583 its spelling alias (familiarity 3 / 4): ether is the US spelling of the classical element (v420); aether an untagged variant
+  éclair 18073 becomes the root and eclair 18072 its spelling alias (familiarity 3 / 3): rule 8: the dictionaries print éclair (Oxford, M-W); the plain form stays as its spelling
+  Atatürk 47290 becomes the root and Ataturk 47289 its spelling alias (familiarity 4 / 4): rule 8: the name keeps its diacritic (Atatürk); the plain form stays as its spelling
+  piñata 25140 becomes the root and pinata 25139 its spelling alias (familiarity 2 / 2): rule 8: M-W and Oxford print piñata; the plain form stays as its spelling
+  glycerin 40534: aliasKind "spelling" -> "synonym": two names of one compound, not one word spelt two ways
+  Paul McCartney 51969: aliasKind "spelling" -> "synonym": the full name, not a spelling of McCartney
+  Sir John Franklin 54246: aliasKind "spelling" -> "synonym": the titled name, not a spelling of John Franklin
+  deleted entry: pick 28522 [tool]: a stub in no theme; its alias lockpick 25709 was not a spelling of it (v420) and is promoted to a root of its own (in no theme)
+  cabby 4116: alias of taxi driver 4114 -> spelling alias of cabbie 4115: a spelling of cabbie, not of taxi driver
+  pinkie 14386: alias of little finger 14384 -> spelling alias of pinky 14385: a spelling of pinky, not of little finger
+  emmentaler 17921: alias of Swiss cheese 17920 -> spelling alias of Emmental 252: a spelling of Emmental (the German form), not of Swiss cheese
+  text: emmentaler 17921 -> "Emmentaler": a spelling of the capitalised Emmental keeps the capital
+  Emmentaler 17921: type "common" -> "proper": as its root Emmental
+  ax 67281: axe 322 stays the root and ax its untagged spelling (both standard in the US; Simon): confirmed, status rev
+  taekwondo 5399: fam 1 -> 2: not every child knows it; nearly every adult does (v420: 1 looked too easy)
+  tae kwon do 5400: fam 3 -> 2: as common as taekwondo: the same familiarity (an untagged spelling is never easier than its root)
+  e. Theme names over 24 characters shortened (I33; LIBRARY-RULES 6, Names: short, clear on its own, no member's word, no "types of"); ids stay
+  theme vegetables_that_are_really_fruits: "vegetables that are fruits" (26) -> "fruits called vegetables" (24)
+  theme birds_named_after_a_colour: "birds named after a colour" (26) -> "birds named for a color" (23)
+  theme local_status_labels: "birdwatching status labels" (26) -> "birding status labels" (21)
+  theme deadly_creatures: "deadly Australian animals" (25) -> "deadly Aussie animals" (21)
+  theme horned_and_armored_beasts: "horned and armored dinosaurs" (28) -> "horned and armored dinos" (24)
+  theme things_that_fall_from_trees: "things that fall from trees" (27) -> "things trees drop" (17)
+  theme leaves_and_shoots: "foraged leaves and shoots" (25) -> "foraged greens" (14)
+  theme flowers_with_animal_names: "flowers with animal names" (25) -> "animal-named flowers" (20)
+  theme plants_of_the_middle_east: "plants of the Middle East" (25) -> "Middle Eastern plants" (21)
+  theme sunrise_and_sunset_sights: "sunrise and sunset sights" (25) -> "dawn and dusk sights" (20)
+  theme eastern_european_countries: "Eastern European countries" (26) -> "Eastern European nations" (24)
+  theme western_european_countries: "Western European countries" (26) -> "Western European nations" (24)
+  theme southern_african_countries: "Southern African countries" (26) -> "Southern African nations" (24)
+  theme central_african_lands: "Central African countries" (25) -> "Central African nations" (23)
+  theme spanish_speaking_countries: "Spanish-speaking countries" (26) -> "Spanish-speaking nations" (24)
+  theme french_speaking_countries: "French-speaking countries" (25) -> "French-speaking nations" (23)
+  theme arabic_speaking_countries: "Arabic-speaking countries" (25) -> "Arabic-speaking nations" (23)
+  theme central_american_countries: "Central American countries" (26) -> "Central American nations" (24)
+  theme australian_states_and_regions: "Australian states and regions" (29) -> "Australian regions" (18)
+  theme famous_canyons_and_gorges: "famous canyons and gorges" (25) -> "canyons and gorges" (18)
+  theme places_named_after_people: "places named after people" (25) -> "places named for people" (23)
+  theme places_that_are_also_words: "places that are also words" (26) -> "places that are words" (21)
+  theme things_you_do_at_the_beach: "things you do at the beach" (26) -> "beach activities" (16)
+  theme plain_names_for_body_parts: "plain names for body parts" (26) -> "plain body part names" (21)
+  theme things_you_do_in_the_bath: "things you do in the bath" (25) -> "bath activities" (15)
+  theme positive_traits: "positive personality traits" (27) -> "positive traits" (15)
+  theme negative_traits: "negative personality traits" (27) -> "negative traits" (15)
+  theme people_who_work_with_sound: "people who work with sound" (26) -> "jobs working with sound" (23)
+  theme central_and_eastern_european_titles: "Central European royal titles" (29) -> "Central European titles" (23)
+  theme ideologies_named_after_people: "ideologies named after people" (29) -> "people-named ideologies" (23)
+  theme latin_american_currencies: "Latin American currencies" (25) -> "Latin American money" (20)
+  theme four_horsemen_of_the_apocalypse: "horsemen of the apocalypse" (26) -> "the Four Horsemen" (17)
+  theme parts_of_a_religious_service: "parts of a religious service" (28) -> "religious service parts" (23)
+  theme things_with_a_sharp_blade: "things with a sharp blade" (25) -> "things with a blade" (19)
+  theme american_football_positions: "American football positions" (27) -> "NFL positions" (13)
+  theme cricket_fielding_positions: "cricket fielding positions" (26) -> "cricket field positions" (23)
+  theme players_and_officials: "cricket players and officials" (29) -> "cricket roles" (13)
+  theme sports_played_with_sticks: "sports played with sticks" (25) -> "stick sports" (12)
+  theme weapon_based_martial_arts: "weapon-based martial arts" (25) -> "weapon martial arts" (19)
+  theme american_football_legends: "American football legends" (25) -> "NFL legends" (11)
+  theme middle_eastern_instruments: "Middle Eastern instruments" (26) -> "Middle East instruments" (23)
+  theme classical_dances: "dances in classical music" (25) -> "classical music dances" (22)
+  theme latin_american_folk_dances: "Latin American folk dances" (26) -> "Latin folk dances" (17)
+  theme continental_stage_writers: "continental stage writers" (25) -> "continental playwrights" (23)
+  theme leading_ladies: "classic film leading ladies" (27) -> "classic leading ladies" (22)
+  theme characters_in_tragedies: "Shakespeare tragedy roles" (25) -> "Shakespeare tragic roles" (24)
+  theme children_s_book_characters: "children's book characters" (26) -> "kids' book characters" (21)
+  theme famous_ruins_and_monuments: "famous ruins and monuments" (26) -> "ruins and monuments" (19)
+  theme african_historical_leaders: "African historical leaders" (26) -> "historic African leaders" (24)
+  theme mount_rushmore_presidents: "Mount Rushmore presidents" (25) -> "Mount Rushmore faces" (20)
+  theme ancient_sites_of_the_middle_east: "ancient Middle East sites" (25) -> "ancient Near East sites" (23)
+  theme symbols_of_the_greek_gods: "symbols of the Greek gods" (25) -> "Greek gods' symbols" (19)
+  theme periods_named_after_rulers: "periods named after rulers" (26) -> "periods named for rulers" (24)
+  theme ancient_greek_mathematicians: "ancient Greek mathematicians" (28) -> "Greek mathematicians" (20)
+  theme four_great_chinese_inventions: "four great Chinese inventions" (29) -> "China's great inventions" (24)
+  theme middle_eastern_inventions: "Middle Eastern inventions" (25) -> "Middle East inventions" (22)
+  theme peace_prize_winners: "Nobel Peace Prize winners" (25) -> "Nobel Peace laureates" (21)
+  theme old_languages_from_last_century: "old programming languages" (25) -> "old coding languages" (20)
+  theme ways_to_prove_who_you_are: "ways to prove who you are" (25) -> "ways to verify identity" (23)
+  theme steps_of_an_investigation: "steps of an investigation" (25) -> "scientific method steps" (23)
+  theme past_tenses_ending_in_silent_e: "past tenses ending in silent e" (30) -> "silent-e past tenses" (20)
+  theme thank_you_around_the_world: "thank you around the world" (26) -> "thanks around the world" (23)
+  theme french_phrases_in_english: "French phrases in English" (25) -> "French loan phrases" (19)
+  theme numbers_in_other_languages: "numbers in other languages" (26) -> "foreign numbers" (15)
+  theme archaic_pronouns_and_verb_forms: "archaic pronouns and verbs" (26) -> "archaic grammar words" (21)
+  theme old_exclamations: "old-fashioned exclamations" (26) -> "old exclamations" (16)
+  theme words_made_of_roman_numerals: "words made of Roman numerals" (28) -> "Roman numeral words" (19)
+  theme starts_with_public_transport: "starts with public transport" (28) -> "starts with transport" (21)
+  theme starts_with_a_weather_word: "starts with a weather word" (26) -> "starts with weather" (19)
+  theme ends_with_public_transport: "ends with public transport" (26) -> "ends with transport" (19)
+  theme food_and_dining_words: "French food and dining words" (28) -> "French food words" (17)
+  theme food_and_drink_words: "Dutch food and drink words" (26) -> "Dutch food words" (16)
+  theme flowers_named_after_people: "flowers named after people" (26) -> "flowers named for people" (24)
+  theme brand_names_used_as_words: "brand names used as words" (25) -> "brands used as words" (20)
+  theme entertainment_blends: "entertainment word blends" (25) -> "showbiz word blends" (19)
+  theme colors_in_other_languages: "colors in other languages" (25) -> "foreign color words" (19)
+  theme fruit_shades: "colors named after fruits" (25) -> "fruit-named colors" (18)
+  theme drink_shades: "colors named after drinks" (25) -> "drink-named colors" (18)
+  theme colors_named_after_flowers: "colors named after flowers" (26) -> "flower-named colors" (19)
+  theme colors_named_after_animals: "colors named after animals" (26) -> "animal-named colors" (19)
+  theme colors_named_after_places: "colors named after places" (25) -> "place-named colors" (18)
+  theme animals_covered_in_spikes: "animals covered in spikes" (25) -> "spiky animals" (13)
+  theme things_that_come_in_pairs: "things that come in pairs" (25) -> "things in pairs" (15)
+  theme things_you_eat_with_a_spoon: "things you eat with a spoon" (27) -> "eaten with a spoon" (18)
+a. Orphans left in no theme (225), with the reason:
+  butcher's 131 [shop] (rev, familiarity 2): batch421: out of sight_words: a person, a camera view, rhyming slang: not eyesight
+  horse race 1513 (gen, familiarity 1): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  vision 3309 (rev, familiarity 2): batch421: out of sight_words: the theme name's own word
+  sixth sense 3314 (rev, familiarity 2): batch421: out of senses: senses is now a folder with no words
+  taste buds 3315 (rev, familiarity 2): batch421: out of senses: senses is now a folder with no words
+  flavor 3324 (rev, familiarity 2): batch421: out of senses: senses is now a folder with no words
+  sensation 3327 (rev, familiarity 2): batch421: out of senses: senses is now a folder with no words
+  perception 3328 (rev, familiarity 3): batch421: out of senses: senses is now a folder with no words
+  optic 3335 (rev, familiarity 4): batch421: out of senses: senses is now a folder with no words
+  receptor 3337 (rev, familiarity 3): batch421: out of senses: senses is now a folder with no words
+  stimulus 3338 (rev, familiarity 3): batch421: out of senses: senses is now a folder with no words
+  synesthesia 3339 (rev, familiarity 4): batch421: out of senses: senses is now a folder with no words
+  perfect pitch 3342 (rev, familiarity 3): batch421: out of senses: senses is now a folder with no words
+  balance 3343 [sense] (rev, familiarity 2): batch421: out of senses: senses is now a folder with no words
+  gustation 3345 (rev, familiarity 5): batch421: out of senses: senses is now a folder with no words
+  proprioception 3347 (rev, familiarity 5): batch421: out of senses: senses is now a folder with no words
+  thermoception 3348 (rev, familiarity 5): batch421: out of senses: senses is now a folder with no words
+  nociception 3349 (rev, familiarity 5): batch421: out of senses: senses is now a folder with no words
+  earwax 3352 (rev, familiarity 2): batch421: out of ear_parts: a substance, not a part of the ear
+  lone wolf 7991 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  wolf pack 7992 [wolves] (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  peace dove 8496 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  sea elephant 9878 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  bollywood 10905 [Indian film music] (gen, familiarity 3): lowercase "bollywood" [Indian film music]: no theme; the proper Bollywood (film industry) would need its own entry
+  oil on canvas 11927 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  Shonen Jump 13118 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  magic trick 13744 (rev, familiarity 1): left out of magic shows in v430 (the general word beside its kinds)
+  French door 14168 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  sweet tooth 14514 (gen, familiarity 1): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  visible 14673 (rev, familiarity 2): batch421: out of sight_words: a seeing word, not about how well you see
+  clock 14688 [see] (rev, familiarity 3): batch421: out of sight_words: a seeing word, not about how well you see
+  perceive 14692 (rev, familiarity 3): batch421: out of sight_words: a seeing word, not about how well you see
+  visualize 14693 (rev, familiarity 3): batch421: out of sight_words: a seeing word, not about how well you see
+  noise 14697 [sound] (rev, familiarity 1): batch421: out of hearing_words: a word about sound, not hearing
+  pitch 14710 [sound] (rev, familiarity 2): batch421: out of hearing_words: a second copy of pitch [music] 6069 / frequency [radio] 35258, which acoustics words holds
+  audio 14713 [sound] (rev, familiarity 2): batch421: out of hearing_words: a word about sound, not hearing
+  frequency 14723 [sound] (rev, familiarity 3): batch421: out of hearing_words: a second copy of pitch [music] 6069 / frequency [radio] 35258, which acoustics words holds
+  amplify 14724 (rev, familiarity 3): batch421: out of hearing_words: a word about sound, not hearing
+  reverberate 14725 (rev, familiarity 4): batch421: out of hearing_words: a word about sound, not hearing
+  scratch and sniff 14765 (rev, familiarity 2): batch421: out of smell_words: a thing, not a word for a smell
+  cerumen 14793 (rev, familiarity 5): batch421: out of ear_parts: a substance, not a part of the ear
+  grope 14820 (rev, familiarity 3): batch421: out of touch_words: a sexual sense
+  fleecy 14830 (rev, familiarity 3): batch421: out of touch_words: a texture: texture words holds the textures
+  abrasive 14831 (rev, familiarity 3): batch421: out of touch_words: a texture: texture words holds the textures
+  fondle 14835 (rev, familiarity 3): batch421: out of touch_words: a sexual sense
+  feel up 14837 (rev, familiarity 3): batch421: out of touch_words: a sexual sense
+  sandpapery 14842 (rev, familiarity 3): batch421: out of touch_words: a texture: texture words holds the textures
+  nubbly 14843 (rev, familiarity 4): batch421: out of touch_words: a texture: texture words holds the textures
+  pupillary 14864 (rev, familiarity 5): batch421: out of eye_parts: an adjective, not a part
+  choler 15550 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  Huang Di 15587 (rev, familiarity 5): batch423: out of chinese_medicine: a legendary emperor, not a practice, herb or idea of the medicine
+  sidr honey 15600 (rev, familiarity 5): batch423: out of middle_eastern_remedies: a more specific form of honey and dates, which the theme holds
+  Zamzam water 15602 (rev, familiarity 4): batch423: out of middle_eastern_remedies: a religious rite and holy water, not a remedy
+  ruqyah 15606 (rev, familiarity 5): batch423: out of middle_eastern_remedies: a religious rite and holy water, not a remedy
+  Unani 15607 (rev, familiarity 5): batch423: out of middle_eastern_remedies: the name of the tradition itself
+  ajwa dates 15609 (rev, familiarity 4): batch423: out of middle_eastern_remedies: a more specific form of honey and dates, which the theme holds
+  sangoma 15620 [healer] (rev, familiarity 4): batch423: out of african_remedies: a healer, not a remedy
+  cat's claw 15625 [herb] (rev, familiarity 4): batch423: out of african_remedies: a South American plant
+  traditional healer 15628 (rev, familiarity 3): batch423: out of african_remedies: a healer, not a remedy
+  witch doctor 15629 (rev, familiarity 2): batch423: out of african_remedies: a healer, not a remedy; the term is also widely felt to be disrespectful
+  iboga 15630 (rev, familiarity 5): batch423: out of african_remedies: a hallucinogenic drug; this theme is not adult, so it played in the family game
+  nyanga 15635 [healer] (rev, familiarity 5): batch423: out of african_remedies: a healer, not a remedy
+  rongoā 15642 (rev, familiarity 5): batch423: out of oceanian_remedies: the name of the tradition itself
+  bush medicine 15648 (rev, familiarity 3): batch423: out of oceanian_remedies: the name of the tradition itself
+  piripiri 15653 (rev, familiarity 5): batch423: out of oceanian_remedies: reads as the chili piri piri, its own entry
+  ngangkari 15655 [healer] (rev, familiarity 5): batch423: out of oceanian_remedies: a healer, not a remedy
+  Charaka 15675 (rev, familiarity 5): batch423: out of ayurveda_words: an ancient physician, not a practice, herb or idea of Ayurveda
+  Sushruta 15676 (rev, familiarity 5): batch423: out of ayurveda_words: an ancient physician, not a practice, herb or idea of Ayurveda
+  tridosha 15684 (rev, familiarity 5): batch423: out of ayurveda_words: the three doshas together; vata, pitta and kapha are the members
+  hibernate 16020 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  somnambulist 16029 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  thread count 16054 (rev, familiarity 3): batch424: out of bedding: a measure of fabric, not bedding
+  nocturnal 16093 (rev, familiarity 3): batch424: out of dream_words: a general word, not a dream word
+  exploding head 16150 (rev, familiarity 5): batch424: out of sleep_disorders: the disorder is exploding head syndrome; the short form is misleading
+  xenophobia 16413 (rev, familiarity 3): batch427: out of phobias: a prejudice against people, not a fear
+  homophobia 16414 (rev, familiarity 3): batch427: out of phobias: a prejudice against people, not a fear
+  effleurage 16472 (rev, familiarity 5): batch427: out of massage_types: a stroke used within a massage, not a type of massage
+  petrissage 16473 (rev, familiarity 5): batch427: out of massage_types: a stroke used within a massage, not a type of massage
+  vitamin B 16638 (rev, familiarity 2): batch429: out of vitamins: the B vitamins together, not one vitamin
+  ketogenic 16731 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  maraschino cherry 17220 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  apricot kernel 17232 (gen, familiarity 5): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  garlic scape 17578 (gen, familiarity 5): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  onion powder 17584 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  chicken breast 17718 (gen, familiarity 1): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  chicken thigh 17719 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  duck breast 17722 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  rotisserie chicken 17726 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  chicken liver 17728 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  bacon bits 17808 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  icing tip 18269 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  praline filling 18407 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  truffle shell 18408 (gen, familiarity 5): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  mille crepe 19269 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  pot roast 19780 [cook] (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  witch hunt 22426 (rev, familiarity 2): left by v432 (offensive pass)
+  pixie dust 22498 (gen, familiarity 1): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  mouse trap 23388 [pest trap] (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  listing agent 24206 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  Cyber Monday 25289 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  weekend break 25300 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  candle maker 25618 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  may 27948 [might] (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  dotted 28197 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  spa 28453 [hot tub] (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  sanitizer 28465 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  color 28466 (gen, familiarity 1): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  humor 28481 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  time 28515 [duration] (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  lived 29041 (rev, familiarity 1): left by v432 (offensive pass)
+  lighthouse keeper 31166 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  locust plague 31838 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  focus 31881 [earthquake] (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  rupture 31884 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  molten iron 31908 (rev, familiarity 3): Earth's layers words left by v415 (layers of the earth holds inner and outer core)
+  geosphere 31909 (rev, familiarity 4): Earth's layers words left by v415 (layers of the earth holds inner and outer core)
+  solid core 31913 (rev, familiarity 3): Earth's layers words left by v415 (layers of the earth holds inner and outer core)
+  liquid core 31914 (rev, familiarity 3): Earth's layers words left by v415 (layers of the earth holds inner and outer core)
+  erosion 31915 (rev, familiarity 2): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  geothermal plant 31956 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  thermal bath 31957 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  ground source heat 31961 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  nutrients 31978 (rev, familiarity 2): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  drainage 31980 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  tilth 31981 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  hydrologic cycle 32003 (rev, familiarity 5): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  hydrosphere 32006 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  water cycle 32007 (rev, familiarity 2): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  pollutant 32185 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  contamination 32188 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  greywater 32203 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  deposit scheme 32211 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  curbside collection 32212 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  repurpose 32216 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  pulp 32217 [paper] (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  bale 32218 [bundle] (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  downcycle 32219 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  closed loop 32220 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  MRF 32221 [recycling] (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  refillable 32222 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  reclaimed 32223 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  recyclable 32224 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  single stream 32225 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  feedstock 32226 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  reprocess 32227 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  geothermal 32232 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  battery storage 32247 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  concentrated solar 32251 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  run-of-river 32252 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  wave buoy 32253 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  net metering 32254 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  feed-in tariff 32255 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  green hydrogen 32256 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  geothermal well 32258 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  protected area 32262 (rev, familiarity 3): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  sustainable 32287 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  buffer zone 32289 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  SSSI 32290 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  climate change 32292 (rev, familiarity 1): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  flooding 32308 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  mitigation 32318 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  oil well 32338 (gen, familiarity 1): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  coal seam 32346 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  reusable 32355 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  public transport 32357 (rev, familiarity 1): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  secondhand 32359 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  vegetable garden 32360 (rev, familiarity 1): no clearly right theme (left for the group-by-group pass, step 3)
+  zero waste 32366 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  energy saving 32368 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  bokashi 32370 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  low flush 32371 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  farmers market 32373 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  car share 32375 (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  ride share 32376 [ridesharing] (rev, familiarity 2): no clearly right theme (left for the group-by-group pass, step 3)
+  repair cafe 32377 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  plastic-free 32378 (rev, familiarity 3): no clearly right theme (left for the group-by-group pass, step 3)
+  refillery 32379 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  Gideon Bible 34238 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  Heaven's Gate 34426 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  medal bar 34645 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  French Guiana 35765 (rev, familiarity 3): unlinked by Simon in v411 (complete sets): no Canadian territories or overseas-departments theme
+  Nunavut 36213 (rev, familiarity 4): unlinked by Simon in v411 (complete sets): no Canadian territories or overseas-departments theme
+  Northwest Territories 36214 (rev, familiarity 4): unlinked by Simon in v411 (complete sets): no Canadian territories or overseas-departments theme
+  bull elephant 40204 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  cooling engine 40270 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  Human Genome Project 40949 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  comet tail 41321 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  launch pad 41335 (gen, familiarity 2): its text is (or repeats) the name of the theme it would fit (climate change, public transport words, water cycle, erosion, nutrients, protected areas, launch pad)
+  payload bay 41343 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  bowl over 44290 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  craps table 45199 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  hailing a cab 47040 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  test pilot 47180 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  fighter pilot 47181 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  crop duster pilot 47182 (gen, familiarity 5): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  stunt pilot 47183 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  helicopter pilot 47184 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  stem to stern 47620 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  van life 48612 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  semi trailer 49185 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  waste-to-energy 49760 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  audition 50101 [hearing] (rev, familiarity 5): batch421: out of senses: senses is now a folder with no words
+  salmon run 50763 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  Achilles' heel 54884 (gen, familiarity 2): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  Shamrock Shake 55779 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  Larderello 60441 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  Wairakei 60442 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  binary cycle 60443 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  dry steam 60444 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  geothermal gradient 60445 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  rhizosphere 60446 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  mycorrhiza 60453 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  vadose zone 60459 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  ex situ 60502 (rev, familiarity 5): no clearly right theme (left for the group-by-group pass, step 3)
+  coal tar 60510 (gen, familiarity 4): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  mechanoreceptor 60780 (rev, familiarity 5): batch421: out of touch_words: a specialist term
+  paresthesia 60781 (rev, familiarity 5): batch421: out of touch_words: a specialist term
+  somatosensory 60782 (rev, familiarity 5): batch421: out of touch_words: a specialist term
+  arachibutyrophobia 60846 (rev, familiarity 5): batch427: out of phobias: a joke word
+  tapotement 60849 (rev, familiarity 5): batch427: out of massage_types: a stroke used within a massage, not a type of massage
+  retool 62412 (rev, familiarity 4): no clearly right theme (left for the group-by-group pass, step 3)
+  clever clogs 62493 (gen, familiarity 3): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  bass 63345 [instrument] (gen, familiarity 2): a real word (the bass guitar), but no theme takes the bare word
+  sushi roll 64778 (gen, familiarity 1): a generated word with no clearly right theme (left for the group-by-group pass, step 3)
+  lockpick 25709 (gen, familiarity 3): lockpick, promoted from pick [tool] by this batch: no theme of locks or burglary tools
+c. Not merged (1 skipped by the script; Simon's answers below):
+  Lady Liberty 2313 [nickname] / Lady Liberty 62566 [statue]: region differ
+  kept apart (the meaning differs between sports): volley, block, hook, approach, frame, double, ace; handicap [race] 44850 (a weight allowance) stays apart from the score allowance
+  kept apart: horse coat colors (chestnut, bay, dun, pinto, champagne) and the plain colors; breast [bird] / [body] and flank [body part] / [animal part]
+  not merged: goggles [eyewear] 24786 / [swimming] 48808 / [ski] 48872 (one sense, but the merge makes a clash group of 13, clash-big); Lady Liberty 2313 / 62566 (regions differ); sea elephant 9878 (as an alias of elephant seal it would show "sea" in sea mammals); porter [hospital] 15292 (moves patients: another sense)
+  left for step 3: boar [pig] / [animal]; captain [ship] / [crew]; transfer [transit] / [commuting]; ahead, forward [direction] / [ship]; Thebes, Rome, Broadway, Grand Canal, Fiji, Malta, Mauritius (two place senses); tanuki, halo, canvas, score, ciao, aloha, Pinkerton, pastoral, shaft, washer, sponge, elastic
+  kept apart on purpose (different senses or words): numbers in other languages (zero, six, mille ...), sports teams of one name (Giants, Rangers, Kings, Jets, Panthers, Cardinals, Oilers), gem / color, flower / color, tree / nut, wine / wine region, dynasty / surname pairs
+e. Theme names: 84 shortened; 36 kept over 24 characters (Simon). Kept because the short name was weaker:
+  exotic_pets "pet reptiles and amphibians" (27): "cold-blooded pets" would take in goldfish; no short name excludes fish
+  famous_mountains_and_ranges "famous mountains and ranges" (27): Simon: keep
+  southeast_asian_martial_arts "Southeast Asian martial arts" (28): "SE Asian" is weaker
+  international_organizations "international organizations" (27): "international bodies" is vaguer
+  languages_of_southern_africa "languages of Southern Africa" (28): "tongues" is weaker
+  native_north_american_languages "Native American languages" (25): "tongues" is weaker
+  science_experiments_for_kids "science experiments for kids" (28): "kids' experiments" loses science
+  north_american_folk_dances "North American folk dances" (26): keeps "folk" (Simon); a short name with folk does not fit 24
+Kept (Simon: keep the current names); fermented foods and drinks and old ways to keep in touch go to the step 3 merge list as twins of fermented foods and old ways to communicate; flowers used as girls' names stays (LIBRARY-RULES 5, given names, names it). First-draft proposal, not applied:
+  eastern_mediterranean_sweets "Eastern Mediterranean sweets" (28) -> "eastern Med sweets" (18): "Levantine" would leave out Greece and Turkey
+  alkali_and_alkaline_earth_elements "alkali and alkaline earths" (26) -> "group 1 and 2 metals" (20): exact, but less known than the chemistry names
+  continents_and_supercontinents "continents and supercontinents" (30) -> "continents, then and now" (24): Pangaea is a member, so it cannot name the theme
+  australian_places "Australian eponymous places" (27) -> "Aussie eponymous places" (23): "eponymous" is not everyday
+  us_cities "US cities named after people" (28) -> "US eponymous cities" (19): "eponymous" is not everyday
+  california_parks "California national parks" (25) -> "California parks" (16): drops "national": state parks would fit the name
+  eastern_parks "eastern US national parks" (25) -> "eastern US parks" (16): drops "national"
+  types_of_public_transport "types of public transport" (25) -> "public transport" (16): sits beside "public transport words" (public_transportation)
+  things_for_watching_shows "things for watching shows" (25) -> "home viewing devices" (20): TV would leak into smart TV
+  holidays_and_celebrations "holidays and celebrations" (25) -> "holidays and festivities" (24): a big theme; or "celebrations"
+  things_with_a_carrying_handle "things with a carrying handle" (29) -> "handheld carriers" (17): things with handles is another theme
+  office_and_school_supplies "office and school supplies" (26) -> "desk supplies" (13): paper and stationery are members
+  games_with_things_you_throw "games with things you throw" (27) -> "chance throwing games" (21): dice is a member
+  south_american_soccer_clubs "South American soccer clubs" (27) -> "South American clubs" (20): drops soccer
+  latin_american_liberators "Latin American liberators" (25) -> "the Liberators" (14): El Libertador is a member: may read as a leak
+  norse_mythology "Norse myth places and things" (28) -> "Norse myth things" (17): Norse mythology names another sense of the group
+  islamic_golden_age_scholars "Islamic Golden Age scholars" (27) -> "early Islamic scholars" (22): loses the Golden Age
+  data_structures_and_types "data types and structures" (25) -> "coding data types" (17): array and stack are structures, not types
+  languages_of_the_americas "languages of the Americas" (25) -> "New World languages" (19): holds English and Spanish too
+  indigenous_south_american_languages "native South American tongues" (29) -> "South American tongues" (22): loses "native"
+  old_adverbs_and_prepositions "old adverbs and prepositions" (28) -> "archaic adverbs" (15): betwixt and ere are prepositions
+  starts_with_a_musical_instrument "starts with an instrument" (25) -> "starts with instrument" (22): grammar
+  numbers_with_the_first_letter_changed "numbers, first letter changed" (29) -> "numbers, letter swapped" (23): wordplay: the rule must stay clear
+  toys_and_characters "toys and characters with eyes" (29) -> "characters with eyes" (20): under things with eyes
+  flowers_used_as_girls_names "flowers used as girls' names" (28) -> "girls' flower names" (19): LIBRARY-RULES 5 (given names) names this theme
+  sci_fi_and_fantasy_authors "sci-fi and fantasy authors" (26) -> "sci-fi/fantasy authors" (22): a slash in a game title
+  fermented_foods_and_drinks "fermented foods and drinks" (26) -> "fermented fare" (14): fermented foods (fermented_foods) is another theme: a twin to merge?
+  old_ways_to_keep_in_touch "old ways to keep in touch" (25) -> "retro contact methods" (21): old ways to communicate (old_ways_to_communicate) is another theme: a twin to merge?
+Entries deleted 227: acoustic 63344, camel 63428, condensed 63430, evaporated 63431, boreal 63749, cloud 63750, rose 63811, smoky 63813, folding 63936, pop-up 63966, bachelorette 64091, retirement 64097, surprise 64098, math 64383, birthday 64402, suspension 64512, neutron 64546, whole 64554, petrified 65486, trail 65632, weather 65634, bedouin 65695, armored 65712, box 65713, food 65717, ice cream 65719, logging 65720, mail 65721, monster 65722, water 65725, rope 65954, hipped 65963, car 66093, cadmium 66126, right 58110, equilateral 58128, kinetic 62926, potential 62927, shish 62988, adana 53379, margherita 19209, Shetland 9518, longest finger 14381, fourth finger 14383, neck vertebrae 53059, man-eating mares 55048, red cattle 55052, solar 49749, wind 49750, tidal 49751, almost 29143, beefy 29146, billowy 29147, adopt 29148, deft 29156, glow 29157, most 29160, aegilops 29161, access 29163, effort 29164, port 47462, port 47598, keep 20710, transfer 46913, tender 2848, tank 4451, tail 9584, tail 8362, muzzle 9589, bill 10347, spur 10343, wattle 10341, Terra Nova 21055, Fram 21056, Erebus 21057, Nimrod 21058, Hispaniola 21232, Endeavour 21082, Calypso 21096, Nina 21089, RAM 29208, drake 28906, amber 10109, Hubble 49155, Voyager 49149, Concorde 47093, Harrier 34618, familiar 7032, familiar 22407, fawn 9782, Pluto 39882, Ur 21818, Tyre 54755, Memphis 54765, Moray 42216, Deir el-Bahri 37500, Bird's Nest 37561, Whistler 37741, Immortals 20537, boto 63009, shuttle 64543, figure eight 48705, hockey 42646, knots 48902, ultralight 47095, jet 34600, freighter 62653, liner 62654, junk 47428, dock 29361, conductor 2661, conductor 46919, drone 10297, tom 1482, ram 1460, mouse 24022, python 29534, calf 9267, doe 10303, pen 10314, coral 9926, periwinkle 40195, mercury 22454, tailgate 46664, pike 34653, morning star 34656, sieve 19853, monitor 23215, amber 16301, chart 21018, mirror 11884, cul-de-sac 46733, nail 39023, fuse 49766, solder 49772, habit 34368, Amazon 32025, Hector 22520, Loki 20591, Ra 20348, druid 34214, Gothic 55881, mummy 20341, troll 13609, kingdom 50325, spoons 51571, primer 28815, horror 45628, adventure 45620, century 34696, embargo 29306, router 23682, router 46042, pool 43106, jacks 46059, brush 11907, grade 34830, drill 34560, skeleton 43513, skeleton 44067, love 44254, hutch 8089, rasp 39655, rigging 45915, col 45098, second 41926, minute 28787, quark 17954, partner 32432, patient 15282, test 34829, sentence 33665, scoop 35192, clutch 24712, ascot 24823, shrug 24319, dart 24968, arcade 14156, hoard 22465, axle 60686, bias 41692, mode 41450, range 41451, teal 17738, adult 9173, slash 26109, ticket booth 57579, ticket booth 46952, porter 33238, porter 47831, plank 63334, eggs 48550, boom 43485, paste 23759, arc 38927, spiral 38946, wolfsbane 30494, merge 46728, slipstream 46680, awning 48616, stone 24043, marble 31746, chalk 34782, token 46965, landing 47319, drone 7335, bridge 51606, tunnel 47700, stroke 16890, relief 12040, paper 12011, marbles 46330, romance 25167, compass 42072, pigeon 62749, rally 43077, net 43076, let 43085, 180 60674, 900 48029, handicap 43240, tackle 42892, leg 9128, head 9127, webbing 67272, crest 10115, pick 28522
+library changes 447; entries changed 337; status set to rev 281
+Checks: changed kinds: info:alias-kind-suspect 51 -> 47, info:clash-large 58 -> 56, info:family-kin 352 -> 351, info:nameOk-stale 68 -> 0, info:orphan 305 -> 225, info:overlap 4919 -> 4926, info:rating-vs-zipf 1681 -> 1679, info:sense-link 74 -> 41, info:sense-twin 235 -> 105, info:theme-twin 54 -> 56, info:xwords-twin 83 -> 88, warn:rating-vs-zipf 162 -> 161, warn:spelling-fam 5 -> 0
+Checks after (errors and warnings): clash-big 1, long 5, maybe-duplicate 1, rating-vs-zipf 161, spelling-fam 0, theme-gap 1, theme-name 3
+Export contract (family export, zipf): contract-dup-root 188 -> 185; after: contract-dup-root 185, contract-root-region 1781, contract-type-common 42
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3242 -> 3242; gone none; new none; theme indexes shift: none
+Entry rows 61255 -> 61116; first row whose entry changed: 1447 (heifer 1461, was 1460); rows that moved: 59646; added whole tone 11180 (row 10766), dumpling soup 18669 (row 17670), Immortals 21395 (row 20033), familiar 22422 (row 20948), claim jumper 31814 (row 29299), supervolcano 31836 (row 29320), Mount St. Helens 31852 (row 29335), hypocenter 31880 (row 29361), temblor 31886 (row 29365), moment magnitude 31887 (row 29366), seismic zone 31895 (row 29374), strike-slip 31896 (row 29375), megathrust 31897 (row 29376), eutrophication 32199 (row 29640), radiative forcing 32309 (row 29717), Keeling Curve 32312 (row 29720), asteroid belt 41302 (row 38051), Xena 41417 (row 38155), ollie north 48044 (row 44279), bull run 50171 (row 46282), Farrokh Bulsara 51974 (row 47953), century 54007 (row 49927), engagement party 60904 (row 56426); removed 1460 (row 1447), 1482 (row 1469), 2661 (row 2636), 2848 (row 2822), 7032 (row 6794), 7335 (row 7090), 8089 (row 7823), 8362 (row 8086), 9127 (row 8822), 9128 (row 8823), 9173 (row 8867), 9267 (row 8947), 9584 (row 9246), 9589 (row 9251), 9782 (row 9436), 9926 (row 9572), 10109 (row 9754), 10115 (row 9760), 10297 (row 9930), 10303 (row 9936), 10314 (row 9947), 10341 (row 9969), 10343 (row 9971), 10347 (row 9975), 11884 (row 11490), 11907 (row 11513), 12011 (row 11616), 12040 (row 11644), 13609 (row 13163), 14156 (row 13674), 15282 (row 14712), 16301 (row 15579), 16890 (row 16136), 17738 (row 16882), 17954 (row 17091), 19853 (row 18750), 20341 (row 19215), 20348 (row 19221), 20537 (row 19398), 20591 (row 19450), 20710 (row 19562), 21018 (row 19798), 21055 (row 19830), 21056 (row 19831), 21057 (row 19832), 21058 (row 19833), 21082 (row 19857), 21089 (row 19864), 21096 (row 19870), 21232 (row 19996), 21818 (row 20413), 22454 (row 21015), 22465 (row 21026), 22520 (row 21077), 23215 (row 21699), 23682 (row 22147), 23759 (row 22222), 24022 (row 22478), 24043 (row 22499), 24319 (row 22753), 24712 (row 23126), 24823 (row 23233), 24968 (row 23375), 25167 (row 23572), 26109 (row 24483), 28787 (row 26514), 28815 (row 26541), 28906 (row 26615), 29208 (row 26879), 29306 (row 26972), 29361 (row 27023), 29534 (row 27177), 30494 (row 28102), 31746 (row 29303), 32025 (row 29544), 32432 (row 29881), 33238 (row 30668), 33665 (row 31059), 34214 (row 31548), 34368 (row 31691), 34560 (row 31868), 34600 (row 31899), 34618 (row 31916), 34696 (row 31960), 34782 (row 32035), 34829 (row 32082), 34830 (row 32083), 35192 (row 32433), 37500 (row 34533), 37561 (row 34593), 37741 (row 34769), 38927 (row 35878), 38946 (row 35892), 39023 (row 35956), 39655 (row 36571), 39882 (row 36779), 40195 (row 37070), 41450 (row 38262), 41451 (row 38263), 41692 (row 38486), 41926 (row 38714), 42072 (row 38860), 42216 (row 38999), 42646 (row 39422), 42892 (row 39661), 43076 (row 39841), 43077 (row 39842), 43085 (row 39850), 43106 (row 39870), 43240 (row 40003), 43485 (row 40239), 43513 (row 40265), 44067 (row 40809), 44254 (row 40992), 45098 (row 41771), 45620 (row 42065), 45628 (row 42073), 45915 (row 42354), 46042 (row 42476), 46059 (row 42492), 46330 (row 42753), 46664 (row 43086), 46680 (row 43102), 46728 (row 43150), 46733 (row 43155), 46913 (row 43326), 46919 (row 43332), 46952 (row 43363), 46965 (row 43375), 47093 (row 43497), 47095 (row 43499), 47319 (row 43707), 47428 (row 43811), 47462 (row 43843), 47598 (row 43974), 47700 (row 44071), 47831 (row 44197), 48029 (row 44384), 48550 (row 44881), 48616 (row 44942), 48705 (row 45025), 48902 (row 45217), 49149 (row 45428), 49155 (row 45434), 49766 (row 46018), 49772 (row 46024), 50325 (row 46535), 51571 (row 47686), 51606 (row 47721), 54755 (row 50591), 54765 (row 50601), 55881 (row 51694), 57579 (row 53371), 60674 (row 56349), 60686 (row 56361), 62653 (row 58191), 62654 (row 58192), 62749 (row 58276), 63009 (row 58495), 63334 (row 58768), 64543 (row 58920), 67272 (row 60416)
+root -> alias rows 6: eclair 18072, Yemoja 22195, pinata 25139, Mount St Helens 36530, aether 40583, Ataturk 47289; alias -> root rows 5: éclair 18073, Yemaya 22196, piñata 25140, ether 40584, Atatürk 47290
+Links 100667 -> 100684; rows whose link count changed: 163
+Link-index shifts: from row 207 (lion 215) on, link positions move
+Rows whose text changed: Emmentaler 17921 (was "emmentaler")
+New characters in the export (list them in the notice: the game font needs them): none
+Theme rows whose fields changed (parent compared by id): vegetables_that_are_really_fruits (index 28 -> 28: name "vegetables that are fruits" -> "fruits called vegetables", breaks [4,6] -> [18,20]); cheeses (index 43 -> 43: counts [5,6,18,21,11] -> [5,6,18,22,11]); hard_cheeses (index 44 -> 44: counts [2,3,4,13,3] -> [2,3,4,14,3]); soups (index 107 -> 107: counts [5,7,13,10,7] -> [5,7,14,10,7]); burger_toppings (index 122 -> 122: counts [9,8,13,9,9] -> [9,8,13,8,9]); whales_and_dolphins (index 253 -> 253: counts [3,3,9,11,20] -> [3,3,9,12,19]); birds_named_after_a_colour (index 280 -> 280: name "birds named after a colour" -> "birds named for a color"); ducks (index 282 -> 282: counts [0,1,6,19,11] -> [0,1,7,18,11]); local_status_labels (index 297 -> 297: name "birdwatching status labels" -> "birding status labels", breaks [4,9] -> []); deadly_creatures (index 397 -> 397: name "deadly Australian animals" -> "deadly Aussie animals", breaks [10,13] -> []); horned_and_armored_beasts (index 454 -> 454: name "horned and armored dinosaurs" -> "horned and armored dinos", breaks [21,23] -> []); things_that_fall_from_trees (index 495 -> 495: name "things that fall from trees" -> "things trees drop"); leaves_and_shoots (index 516 -> 516: name "foraged leaves and shoots" -> "foraged greens"); flowers_with_animal_names (index 527 -> 527: name "flowers with animal names" -> "animal-named flowers"); plants_of_the_middle_east (index 557 -> 557: name "plants of the Middle East" -> "Middle Eastern plants"); sunrise_and_sunset_sights (index 612 -> 612: name "sunrise and sunset sights" -> "dawn and dusk sights"); rock_types (index 631 -> 631: counts [1,6,9,11,19] -> [0,7,9,11,19]); building_stones (index 637 -> 637: counts [2,5,7,17,5] -> [1,6,7,17,5]); gold_rush_words (index 639 -> 639: counts [0,7,13,7,6] -> [0,7,13,8,6]); volcano_words (index 642 -> 642: counts [1,5,7,7,9] -> [1,5,8,7,9]); earthquake_words (index 646 -> 646: counts [0,4,10,8,2] -> [0,4,10,10,6], range [2,4] -> [2,5]); pollution_words (index 687 -> 687: counts [1,9,5,6,2] -> [1,9,5,6,3]); climate_words (index 693 -> 693: counts [1,4,13,7,0] -> [1,4,13,7,2]); eastern_european_countries (index 705 -> 705: name "Eastern European countries" -> "Eastern European nations", breaks [10,12,14,21] -> [10,12,14]); western_european_countries (index 706 -> 706: name "Western European countries" -> "Western European nations", breaks [10,12,14,21] -> [10,12,14]); southern_african_countries (index 713 -> 713: name "Southern African countries" -> "Southern African nations", breaks [5,21] -> [5]); central_african_lands (index 714 -> 714: name "Central African countries" -> "Central African nations", breaks [20] -> []); spanish_speaking_countries (index 721 -> 721: name "Spanish-speaking countries" -> "Spanish-speaking nations", breaks [13,21] -> [13]); french_speaking_countries (index 722 -> 722: name "French-speaking countries" -> "French-speaking nations", breaks [12,20] -> [12]); arabic_speaking_countries (index 723 -> 723: name "Arabic-speaking countries" -> "Arabic-speaking nations", breaks [12,20] -> [12]); central_american_countries (index 726 -> 726: name "Central American countries" -> "Central American nations", breaks [13,21] -> [13]); australian_states_and_regions (index 767 -> 767: name "Australian states and regions" -> "Australian regions"); famous_canyons_and_gorges (index 797 -> 797: name "famous canyons and gorges" -> "canyons and gorges"); places_named_after_people (index 884 -> 884: name "places named after people" -> "places named for people"); foods_named_after_places (index 888 -> 888: counts [1,8,15,14,1] -> [1,8,15,15,1]); places_that_are_also_words (index 889 -> 889: name "places that are also words" -> "places that are words"); things_you_do_at_the_beach (index 921 -> 921: name "things you do at the beach" -> "beach activities", breaks [] -> [8,12]); national_sports (index 953 -> 953: counts [3,6,9,13,9] -> [3,6,8,13,9]); boats_and_ships (index 1003 -> 1003: counts [7,15,28,10,8] -> [7,13,30,10,8]); sailing_words (index 1011 -> 1011: counts [0,8,18,15,10] -> [0,7,19,15,10]); nautical_directions (index 1020 -> 1020: counts [0,4,13,13,8] -> [0,3,14,13,8], range [2,5] -> [3,5]); railroad_jobs (index 1035 -> 1035: counts [3,3,4,8,9] -> [3,2,5,8,9]); skateboard_tricks (index 1043 -> 1043: counts [0,2,12,25,13] -> [0,2,12,25,14]); fingers (index 1152 -> 1152: counts [5,2,2,0,0] -> [5,3,2,0,0]); plain_names_for_body_parts (index 1169 -> 1169: name "plain names for body parts" -> "plain body part names"); things_you_do_in_the_bath (index 1249 -> 1249: name "things you do in the bath" -> "bath activities", breaks [] -> [7,11]); kinds_of_party (index 1307 -> 1307: counts [2,10,14,5,4] -> [2,10,15,5,4]); positive_traits (index 1320 -> 1320: name "positive personality traits" -> "positive traits", breaks [4,12,15,18] -> [4]); negative_traits (index 1321 -> 1321: name "negative personality traits" -> "negative traits", breaks [4,12,15,18] -> [4]); jobs (index 1323 -> 1323: counts [19,33,25,18,16] -> [19,33,24,18,16]); service_jobs (index 1327 -> 1327: counts [5,11,21,5,3] -> [5,11,20,5,3]); people_who_work_with_sound (index 1329 -> 1329: name "people who work with sound" -> "jobs working with sound"); transport_jobs (index 1346 -> 1346: counts [5,7,13,10,6] -> [5,7,12,10,6]); central_and_eastern_european_titles (index 1364 -> 1364: name "Central European royal titles" -> "Central European titles"); ideologies_named_after_people (index 1372 -> 1372: name "ideologies named after people" -> "people-named ideologies", breaks [3,6] -> [16,19]); latin_american_currencies (index 1400 -> 1400: name "Latin American currencies" -> "Latin American money", breaks [11,18,21] -> [11]); stock_market_words (index 1408 -> 1408: counts [0,11,21,9,5] -> [0,11,22,9,5]); parts_of_a_religious_service (index 1415 -> 1415: name "parts of a religious service" -> "religious service parts", breaks [13,15] -> [2,4]); religious_clothing (index 1424 -> 1424: counts [0,4,7,14,19] -> [0,5,6,14,19]); military (index 1439 -> 1439: counts [8,17,46,19,9] -> [9,16,46,19,9]); things_with_a_sharp_blade (index 1556 -> 1556: name "things with a sharp blade" -> "things with a blade"); american_football_positions (index 1741 -> 1741: name "American football positions" -> "NFL positions", breaks [5,13,20,22] -> [6,8]); cricket_fielding_positions (index 1750 -> 1750: name "cricket fielding positions" -> "cricket field positions", breaks [13,19,21] -> [16,18]); players_and_officials (index 1753 -> 1753: name "cricket players and officials" -> "cricket roles", breaks [22,24] -> []); sports_played_with_sticks (index 1757 -> 1757: name "sports played with sticks" -> "stick sports"); combat_sports (index 1804 -> 1804: counts [7,4,13,9,14] -> [6,5,12,9,14]); martial_arts (index 1805 -> 1805: counts [4,2,10,10,28] -> [3,3,9,10,28], range [1,5] -> [2,5]); weapon_based_martial_arts (index 1809 -> 1809: name "weapon-based martial arts" -> "weapon martial arts"); american_football_legends (index 1881 -> 1881: name "American football legends" -> "NFL legends", breaks [5,13] -> []); middle_eastern_instruments (index 1988 -> 1988: name "Middle Eastern instruments" -> "Middle East instruments", breaks [17,21] -> [14,18]); classical_dances (index 2011 -> 2011: name "dances in classical music" -> "classical music dances", breaks [14,16] -> [4,6]); music_terms (index 2026 -> 2026: counts [5,8,16,14,12] -> [5,8,16,15,12]); queen_members (index 2055 -> 2055: counts [1,1,0,2,0] -> [1,1,0,2,1]); latin_american_folk_dances (index 2080 -> 2080: name "Latin American folk dances" -> "Latin folk dances", breaks [11] -> []); continental_stage_writers (index 2128 -> 2128: name "continental stage writers" -> "continental playwrights", breaks [3,5,8] -> [3,5,8,16]); leading_ladies (index 2152 -> 2152: name "classic film leading ladies" -> "classic leading ladies"); characters_in_tragedies (index 2180 -> 2180: name "Shakespeare tragedy roles" -> "Shakespeare tragic roles"); children_s_book_characters (index 2204 -> 2204: name "children's book characters" -> "kids' book characters", breaks [4,20,22] -> [15,17]); famous_ruins_and_monuments (index 2254 -> 2254: name "famous ruins and monuments" -> "ruins and monuments", breaks [21] -> [14]); castles (index 2260 -> 2260: counts [4,2,9,11,9] -> [4,1,9,12,9]); polar_exploration (index 2278 -> 2278: counts [2,4,7,9,6] -> [2,4,7,12,3], range [2,5] -> [2,4]); famous_voyages (index 2283 -> 2283: counts [0,1,8,14,6] -> [0,1,9,13,6]); african_historical_leaders (index 2301 -> 2301: name "African historical leaders" -> "historic African leaders", breaks [11,15] -> [3,6]); mount_rushmore_presidents (index 2314 -> 2314: name "Mount Rushmore presidents" -> "Mount Rushmore faces", breaks [10,20] -> [10]); ancient_sites_of_the_middle_east (index 2323 -> 2323: name "ancient Middle East sites" -> "ancient Near East sites"); symbols_of_the_greek_gods (index 2340 -> 2340: name "symbols of the Greek gods" -> "Greek gods' symbols"); periods_named_after_rulers (index 2418 -> 2418: name "periods named after rulers" -> "periods named for rulers"); dwarf_planets (index 2489 -> 2489: counts [1,0,1,1,2] -> [1,0,1,1,3]); ancient_greek_mathematicians (index 2540 -> 2540: name "ancient Greek mathematicians" -> "Greek mathematicians", breaks [19,21,23] -> [11,13,15]); four_great_chinese_inventions (index 2546 -> 2546: name "four great Chinese inventions" -> "China's great inventions", breaks [21,24] -> [16,19]); middle_eastern_inventions (index 2548 -> 2548: name "Middle Eastern inventions" -> "Middle East inventions", breaks [17,20] -> [14,17]); peace_prize_winners (index 2564 -> 2564: name "Nobel Peace Prize winners" -> "Nobel Peace laureates", breaks [] -> [15,17]); old_languages_from_last_century (index 2575 -> 2575: name "old programming languages" -> "old coding languages", breaks [7,11,19] -> [14]); ways_to_prove_who_you_are (index 2593 -> 2593: name "ways to prove who you are" -> "ways to verify identity", breaks [] -> [19,21]); steps_of_an_investigation (index 2668 -> 2668: name "steps of an investigation" -> "scientific method steps", breaks [14,17,19,21] -> [3,5,8]); past_tenses_ending_in_silent_e (index 2718 -> 2718: name "past tenses ending in silent e" -> "silent-e past tenses"); thank_you_around_the_world (index 2724 -> 2724: name "thank you around the world" -> "thanks around the world"); french_phrases_in_english (index 2727 -> 2727: name "French phrases in English" -> "French loan phrases"); numbers_in_other_languages (index 2734 -> 2734: name "numbers in other languages" -> "foreign numbers", breaks [20] -> []); archaic_pronouns_and_verb_forms (index 2764 -> 2764: name "archaic pronouns and verbs" -> "archaic grammar words", breaks [11] -> []); old_exclamations (index 2765 -> 2765: name "old-fashioned exclamations" -> "old exclamations", breaks [8,16,19,21] -> [6,9,11]); words_made_of_roman_numerals (index 2849 -> 2849: name "words made of Roman numerals" -> "Roman numeral words", breaks [22,25] -> []); starts_with_public_transport (index 2869 -> 2869: name "starts with public transport" -> "starts with transport", breaks [24] -> [17]); starts_with_a_weather_word (index 2903 -> 2903: name "starts with a weather word" -> "starts with weather"); ends_with_public_transport (index 2943 -> 2943: name "ends with public transport" -> "ends with transport", breaks [22] -> [15]); numbers_with_the_first_letter_changed (index 2954 -> 2954: counts [0,7,4,0,0] -> [0,7,3,1,0]); food_and_dining_words (index 2960 -> 2960: name "French food and dining words" -> "French food words"); food_and_drink_words (index 2970 -> 2970: name "Dutch food and drink words" -> "Dutch food words"); flowers_named_after_people (index 2984 -> 2984: name "flowers named after people" -> "flowers named for people"); brand_names_used_as_words (index 2986 -> 2986: name "brand names used as words" -> "brands used as words"); entertainment_blends (index 2989 -> 2989: name "entertainment word blends" -> "showbiz word blends", breaks [2,5,9] -> []); colors_in_other_languages (index 3029 -> 3029: name "colors in other languages" -> "foreign color words", breaks [19] -> []); fruit_shades (index 3044 -> 3044: name "colors named after fruits" -> "fruit-named colors"); drink_shades (index 3045 -> 3045: name "colors named after drinks" -> "drink-named colors"); colors_named_after_flowers (index 3046 -> 3046: name "colors named after flowers" -> "flower-named colors"); colors_named_after_animals (index 3048 -> 3048: name "colors named after animals" -> "animal-named colors"); colors_named_after_places (index 3049 -> 3049: name "colors named after places" -> "place-named colors"); animals_covered_in_spikes (index 3086 -> 3086: name "animals covered in spikes" -> "spiky animals"); things_with_holes (index 3215 -> 3215: counts [5,8,12,11,3] -> [5,8,12,10,3]); things_that_come_in_pairs (index 3226 -> 3226: name "things that come in pairs" -> "things in pairs"); things_in_space (index 3235 -> 3235: counts [8,15,7,2,0] -> [8,15,8,2,0]); things_you_eat_with_a_spoon (index 3241 -> 3241: name "things you eat with a spoon" -> "eaten with a spoon")
+Root links by theme + shown text + row: gone 212, new 229, rating changed 4
+  gone: domestic_animals: "ram" (1460), things_with_horns: "ram" (1460), domestic_animals: "tom" (1482), public_transportation: "conductor" (2661), boats_and_ships: "tender" (2848), fantasy: "familiar" (7032), gadgets: "drone" (7335), things_that_run_on_batteries: "drone" (7335), robots: "drone" (7335), rabbits_and_hares: "hutch" (8089), bird_body_parts: "tail" (8362), insect_body_parts: "head" (9127), insect_body_parts: "leg" (9128), insect_life_cycle: "adult" (9173), butterfly_life_stages: "adult" (9173), farm_animals: "calf" (9267), parts_of_a_horse: "tail" (9584), parts_of_a_horse: "muzzle" (9589), woodland_animals: "fawn" (9782), spotted_animals: "fawn" (9782), pink_animals: "coral" (9926), tentacled_animals: "coral" (9926), dinosaur_words: "amber" (10109), dinosaur_words: "crest" (10115), male_animals: "drone" (10297), female_animals: "doe" (10303), female_animals: "pen" (10314), numbers_with_the_first_letter_changed: "pen" (10314), animal_body_parts: "wattle" (10341), bird_parts: "wattle" (10341), animal_body_parts: "spur" (10343), bird_parts: "spur" (10343), animal_body_parts: "bill" (10347), bird_parts: "bill" (10347), dance_studio_words: "mirror" (11884), hair_salon: "mirror" (11884), dentist_s_office: "mirror" (11884), things_made_of_glass: "mirror" (11884), painting_words: "brush" (11907), art_materials: "paper" (12011), sculpture_words: "relief" (12040), fairy_tale_villains: "troll" (13609), architectural_features: "arcade" (14156), people_at_a_hospital: "patient" (15282), middle_eastern_grooming: "amber" (16301), hand_actions: "stroke" (16890), game_meats: "teal" (17738), ducks: "teal" (17738), cheeses: "quark" (17954), soft_cheeses: "quark" (17954), pastries: "eclair" (18072), french_pastries: "eclair" (18072), bakery: "eclair" (18072), kitchen_utensils: "sieve" (19853), ancient_egypt: "mummy" (20341), egyptian_afterlife: "mummy" (20341), ancient_egypt: "Ra" (20348), ancient_persia: "Immortals" (20537), vikings: "Loki" (20591), castles: "keep" (20710), navigation_tools: "chart" (21018), polar_exploration: "Terra Nova" (21055), polar_exploration: "Fram" (21056), polar_exploration: "Erebus" (21057), polar_exploration: "Nimrod" (21058), famous_voyages: "Endeavour" (21082), famous_voyages: "Nina" (21089), famous_voyages: "Calypso" (21096), pirate_ships: "Hispaniola" (21232), bronze_age: "Ur" (21818), mesopotamia: "Ur" (21818), yoruba_orishas: "Yemoja" (22195), alchemy: "mercury" (22454), dragons: "hoard" (22465), legendary_heroes: "Hector" (22520), home_office: "monitor" (23215), things_you_plug_in: "monitor" (23215), office: "monitor" (23215), power_tools: "router" (23682), painting_and_decorating: "paste" (23759), household_pests: "mouse" (24022), building_materials: "stone" (24043), tops: "shrug" (24319), bags: "clutch" (24712), neckwear: "ascot" (24823), clothing_parts: "dart" (24968), birthdays: "pinata" (25139), party_games: "pinata" (25139), party_supplies: "pinata" (25139), party_entertainment: "pinata" (25139), things_made_of_paper: "pinata" (25139), mexican_souvenirs: "pinata" (25139), valentine_s_day: "romance" (25167), punctuation: "slash" (26109), homographs: "minute" (28787), homographs: "primer" (28815), rhymes_with_cake: "drake" (28906), acronyms: "RAM" (29208), words_from_spanish: "embargo" (29306), words_from_dutch: "dock" (29361), ports_and_harbors: "dock" (29361), ships_and_sailing_words: "dock" (29361), words_from_mythology: "python" (29534), long_things: "python" (29534), flowers_with_animal_names: "wolfsbane" (30494), rock_types: "marble" (31746), building_stones: "marble" (31746), rainforest: "Amazon" (32025), relationships: "partner" (32432), transport_jobs: "porter" (33238), courtroom_words: "sentence" (33665), religious_leaders: "druid" (34214), religious_clothing: "habit" (34368), army_words: "drill" (34560), air_force_words: "jet" (34600), aircraft_types: "jet" (34600), flying_machines: "jet" (34600), air_force_words: "Harrier" (34618), military_units: "century" (34696), classroom_items: "chalk" (34782), exam_words: "test" (34829), exam_words: "grade" (34830), journalism_words: "scoop" (35192), famous_mountains: "Mount St Helens" (36530), us_landmarks: "Mount St Helens" (36530), famous_volcanoes: "Mount St Helens" (36530), american_natural_wonders: "Mount St Helens" (36530), egyptian_landmarks: "Deir el-Bahri" (37500), chinese_landmarks: "Bird's Nest" (37561), canadian_landmarks: "Whistler" (37741), line_types: "arc" (38927), line_types: "spiral" (38946), things_that_rust: "nail" (39023), voice_sounds: "rasp" (39655), cold_things: "Pluto" (39882), things_with_shells: "periwinkle" (40195), classical_elements: "aether" (40583), math_terms: "mode" (41450), math_terms: "range" (41451), algebra_words: "range" (41451), statistics_words: "bias" (41692), si_base_units: "second" (41926), inventions: "compass" (42072), chinese_inventions: "compass" (42072), inca_engineering: "Moray" (42216), team_ball_sports: "hockey" (42646), sports_with_a_net: "hockey" (42646), rugby_terms: "tackle" (42892), table_tennis_terms: "net" (43076), table_tennis_terms: "rally" (43077), table_tennis_terms: "let" (43085), cue_sports_terms: "pool" (43106), bowling_terms: "handicap" (43240), sailing_sports: "boom" (43485), snow_sports: "skeleton" (43513), olympic_snow_sports: "skeleton" (43513), olympic_sports: "skeleton" (44067), scoring_words: "love" (44254), mountaineering_words: "col" (45098), trail_words: "col" (45098), video_game_genres: "adventure" (45620), video_game_genres: "horror" (45628), model_making: "rigging" (45915), woodworking_words: "router" (46042), toys: "jacks" (46059), old_fashioned_playthings: "jacks" (46059), south_asian_games: "marbles" (46330), driving_words: "tailgate" (46664), driving_words: "slipstream" (46680), road_signs: "merge" (46728), road_signs: "cul-de-sac" (46733), giving_directions: "cul-de-sac" (46733), on_a_bus: "transfer" (46913), on_a_bus: "conductor" (46919), station_words: "ticket booth" (46952), ticket_words: "token" (46965), aircraft_types: "Concorde" (47093), aircraft_types: "ultralight" (47095), famous_airports: "Ataturk" (47289), in_flight_words: "landing" (47319), boat_types: "junk" (47428), traditional_boats: "junk" (47428), sailing_words: "port" (47462), nautical_directions: "port" (47598), railway_words: "tunnel" (47700), railroad_jobs: "porter" (47831), skateboard_tricks: "900" (48029), campfire_foods: "eggs" (48550), rvs_and_campers: "awning" (48616), climbing_gear: "figure eight" (48705), cruise_words: "knots" (48902), space_vehicles: "Voyager" (49149), space_vehicles: "Hubble" (49155), electronic_parts: "fuse" (49766), electronic_parts: "solder" (49772), maker_kit: "solder" (49772), biology_words: "kingdom" (50325), celtic_instruments: "spoons" (51571), piano_parts: "bridge" (51606), ancient_sites_of_the_middle_east: "Tyre" (54755), ancient_sites_of_africa: "Memphis" (54765), germanic_languages: "Gothic" (55881), zoo: "ticket booth" (57579), skateboard_tricks: "180" (60674), skateboard_parts: "axle" (60686), boats_and_ships: "freighter" (62653), boats_and_ships: "liner" (62654), stretches: "pigeon" (62749), whales_and_dolphins: "boto" (63009), yoga_poses: "plank" (63334), space_station: "shuttle" (64543), foot_parts: "webbing" (67272)
+  new: alchemy: "mercury" (214), cheeses: "quark" (547), soft_cheeses: "quark" (547), household_pests: "mouse" (991), words_from_mythology: "python" (1154), long_things: "python" (1154), pink_animals: "coral" (1289), tentacled_animals: "coral" (1289), rhymes_with_cake: "drake" (1480), dinosaur_words: "amber" (1615), building_materials: "stone" (2050), rock_types: "marble" (2057), building_stones: "marble" (2057), inventions: "compass" (2398), chinese_inventions: "compass" (2398), castles: "keep" (2509), ticket_words: "token" (2694), air_force_words: "jet" (2711), aircraft_types: "jet" (2711), flying_machines: "jet" (2711), in_flight_words: "landing" (2718), gadgets: "drone" (2750), things_that_run_on_batteries: "drone" (2750), robots: "drone" (2750), words_from_dutch: "dock" (2806), ports_and_harbors: "dock" (2806), ships_and_sailing_words: "dock" (2806), boats_and_ships: "freighter" (2809), boat_types: "junk" (2817), traditional_boats: "junk" (2817), boats_and_ships: "liner" (2836), public_transportation: "conductor" (2862), on_a_bus: "conductor" (2862), railway_words: "tunnel" (2886), insect_body_parts: "head" (3168), insect_body_parts: "leg" (3177), people_at_a_hospital: "patient" (3451), relationships: "partner" (3918), courtroom_words: "sentence" (4190), army_words: "drill" (4411), classroom_items: "chalk" (4480), exam_words: "test" (4487), exam_words: "grade" (4491), journalism_words: "scoop" (4636), power_tools: "router" (4835), woodworking_words: "router" (4835), tops: "shrug" (4934), bags: "clutch" (4992), neckwear: "ascot" (5011), clothing_parts: "dart" (5054), cue_sports_terms: "pool" (5252), snow_sports: "skeleton" (5354), olympic_snow_sports: "skeleton" (5354), olympic_sports: "skeleton" (5354), south_asian_games: "marbles" (5929), toys: "jacks" (5962), old_fashioned_playthings: "jacks" (5962), painting_words: "brush" (6289), sculpture_words: "relief" (6340), architectural_features: "arcade" (6611), ancient_egypt: "mummy" (6660), egyptian_afterlife: "mummy" (6660), famous_voyages: "Endeavour" (6754), dragons: "hoard" (6884), fairy_tale_villains: "troll" (6987), space_vehicles: "Hubble" (7168), home_office: "monitor" (7256), things_you_plug_in: "monitor" (7256), office: "monitor" (7256), acronyms: "RAM" (7302), skateboard_parts: "axle" (7388), statistics_words: "bias" (7463), things_with_shells: "periwinkle" (7746), game_meats: "teal" (8196), ducks: "teal" (8196), animal_body_parts: "bill" (8359), bird_parts: "bill" (8359), dinosaur_words: "crest" (8364), animal_body_parts: "wattle" (8367), bird_parts: "wattle" (8367), animal_body_parts: "spur" (8382), bird_parts: "spur" (8382), parts_of_a_horse: "tail" (8834), bird_body_parts: "tail" (8834), male_animals: "drone" (9059), domestic_animals: "ram" (9268), things_with_horns: "ram" (9268), female_animals: "doe" (9781), farm_animals: "calf" (10126), woodland_animals: "fawn" (10130), spotted_animals: "fawn" (10130), rabbits_and_hares: "hutch" (10163), domestic_animals: "tom" (10285), parts_of_a_horse: "muzzle" (10336), celtic_instruments: "spoons" (10624), piano_parts: "bridge" (10716), music_terms: "whole tone" (11180), homographs: "primer" (11919), zoo: "ticket booth" (12471), station_words: "ticket booth" (12471), model_making: "rigging" (12473), video_game_genres: "horror" (12560), video_game_genres: "adventure" (12569), foot_parts: "webbing" (14217), hand_actions: "stroke" (14812), yoga_poses: "plank" (15842), campfire_foods: "eggs" (16678), voice_sounds: "rasp" (16970), pastries: "éclair" (18073), french_pastries: "éclair" (18073), bakery: "éclair" (18073), soups: "dumpling soup" (18669), art_materials: "paper" (20472), religious_leaders: "druid" (20658), religious_clothing: "habit" (20855), cold_things: "Pluto" (21099), ancient_persia: "Immortals" (21395), vikings: "Loki" (21896), ancient_egypt: "Ra" (21927), yoruba_orishas: "Yemaya" (22196), legendary_heroes: "Hector" (22275), fantasy: "familiar" (22422), dance_studio_words: "mirror" (23136), hair_salon: "mirror" (23136), dentist_s_office: "mirror" (23136), things_made_of_glass: "mirror" (23136), things_that_rust: "nail" (23702), painting_and_decorating: "paste" (23809), birthdays: "piñata" (25140), party_games: "piñata" (25140), party_supplies: "piñata" (25140), party_entertainment: "piñata" (25140), things_made_of_paper: "piñata" (25140), mexican_souvenirs: "piñata" (25140), si_base_units: "second" (25337), homographs: "minute" (25338), kitchen_utensils: "sieve" (25770), germanic_languages: "Gothic" (25941), punctuation: "slash" (26135), road_signs: "cul-de-sac" (26867), giving_directions: "cul-de-sac" (26867), line_types: "arc" (28032), rainforest: "Amazon" (30211), flowers_with_animal_names: "wolfsbane" (30617), mountaineering_words: "col" (30845), trail_words: "col" (30845), electronic_parts: "solder" (31729), maker_kit: "solder" (31729), gold_rush_words: "claim jumper" (31814), volcano_words: "supervolcano" (31836), famous_mountains: "Mount St. Helens" (31852), us_landmarks: "Mount St. Helens" (31852), famous_volcanoes: "Mount St. Helens" (31852), american_natural_wonders: "Mount St. Helens" (31852), earthquake_words: "hypocenter" (31880), earthquake_words: "temblor" (31886), earthquake_words: "moment magnitude" (31887), earthquake_words: "seismic zone" (31895), earthquake_words: "strike-slip" (31896), earthquake_words: "megathrust" (31897), pollution_words: "eutrophication" (32199), climate_words: "radiative forcing" (32309), climate_words: "Keeling Curve" (32312), valentine_s_day: "romance" (32442), transport_jobs: "porter" (33008), railroad_jobs: "porter" (33008), words_from_spanish: "embargo" (33532), bronze_age: "Ur" (36088), mesopotamia: "Ur" (36088), ancient_sites_of_africa: "Memphis" (36091), navigation_tools: "chart" (37893), sailing_words: "port" (37954), nautical_directions: "port" (37954), driving_words: "tailgate" (38392), line_types: "spiral" (38907), middle_eastern_grooming: "amber" (39730), aircraft_types: "ultralight" (39775), aircraft_types: "Concorde" (39833), classical_elements: "ether" (40584), electronic_parts: "fuse" (40676), insect_life_cycle: "adult" (41069), butterfly_life_stages: "adult" (41069), space_vehicles: "Voyager" (41222), things_in_space: "asteroid belt" (41302), math_terms: "mode" (41670), math_terms: "range" (41671), algebra_words: "range" (41671), rugby_terms: "tackle" (42765), scoring_words: "love" (42987), table_tennis_terms: "net" (42993), table_tennis_terms: "rally" (43001), table_tennis_terms: "let" (43007), bowling_terms: "handicap" (43041), skateboard_tricks: "900" (43642), team_ball_sports: "hockey" (44063), sports_with_a_net: "hockey" (44063), chinese_landmarks: "Bird's Nest" (44407), road_signs: "merge" (46661), driving_words: "slipstream" (46704), on_a_bus: "transfer" (46950), air_force_words: "Harrier" (47256), famous_airports: "Atatürk" (47290), sailing_sports: "boom" (47443), cruise_words: "knots" (47473), famous_voyages: "Nina" (47526), polar_exploration: "Fram" (47528), pirate_ships: "Hispaniola" (47531), famous_voyages: "Calypso" (47533), climbing_gear: "figure eight" (47564), skateboard_tricks: "ollie north" (48044), rvs_and_campers: "awning" (48509), boats_and_ships: "tender" (48895), canadian_landmarks: "Whistler" (48982), biology_words: "kingdom" (50039), stock_market_words: "bull run" (50171), ancient_sites_of_the_middle_east: "Tyre" (50324), female_animals: "pen" (50686), numbers_with_the_first_letter_changed: "pen" (50686), military_units: "century" (54007), polar_exploration: "Terra Nova" (54269), polar_exploration: "Erebus" (54270), polar_exploration: "Nimrod" (54272), inca_engineering: "Moray" (54828), kinds_of_party: "engagement party" (60904), skateboard_tricks: "180" (61611), stretches: "pigeon" (62738), whales_and_dolphins: "boto" (63300), space_station: "shuttle" (63990), egyptian_landmarks: "Deir el-Bahri" (65611)
+  rating: combat_sports: "taekwondo" (5399) 1/1 -> 1.7/1, national_sports: "taekwondo" (5399) 1.7/2 -> 2/2, martial_arts: "taekwondo" (5399) 1/1 -> 1.7/1, olympic_sports: "taekwondo" (5399) 2.4/3 -> 2.7/3
+new issues: none
+
+=== Notice to _WS_ for v433 (send when Simon says) ===
+Library v433 is the first tidy-up batch (TIDY-UP.md, step 1: a mechanical sweep; Simon approved it with a second reviewer's fixes). No pin until Simon asks.
+- 84 themes have shorter names (24 characters or fewer; ids and indexes unchanged), e.g. "vegetables that are fruits" -> "fruits called vegetables", "American football positions" -> "NFL positions", "colors named after flowers" -> "flower-named colors". The full list is in tools/gen/batch433-review.txt (part e).
+- 166 second roots of one sense were merged into the first (port, keep, tank, tail, leg, head, mouse, python, calf, porter, ticket booth, rally/net/let across tennis and table tennis, the polar expedition ships Fram, Erebus, Nimrod, Terra Nova ...): their links now sit on one row; the merged rows are gone.
+- Six roots swapped with their spelling alias (the root row's text is now the other form): Yemaya (was Yemoja), ether (was aether), éclair, Atatürk, piñata (were plain), Mount St. Helens (was Mount St Helens). The old forms stay as spelling aliases. The alias emmentaler is now Emmentaler, a spelling of Emmental; cabby and pinkie are spellings of cabbie and pinky.
+- 17 entries in no theme were linked: earthquake words (hypocenter, temblor, megathrust ...), supervolcano, dumpling soup, engagement party, asteroid belt, and bull run (the market term) in stock market words. 3 became aliases (Xena of Eris, Farrokh Bulsara of Freddie Mercury, Mount St Helens). 60 unexported stubs were deleted.
+- Familiarity: taekwondo 1 -> 2 (and tae kwon do 2); gaol and paeony lose their UK tag.
+Export v432 -> v433: theme rows 3,242 -> 3,242 (no index shifts; 84 names changed); entry rows 61,255 -> 61,116 (162 removed, 23 added), shifting from row 1,447; links 100,667 -> 100,684, link positions move from row 207. No new characters.

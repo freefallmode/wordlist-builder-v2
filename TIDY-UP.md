@@ -48,4 +48,4 @@ Each group's batch also fixes the baseline warnings (tools/checks-baseline.json)
 
 ## Progress
 
-- 2026-11-23: plan written; step 1 and step 2 started.
+- 2026-11-23: plan written. Step 2 done: checks xwords-twin, sense-link (info) and theme-gap (warn, baseline 1) merged (e43fd26). Step 1 done: v433 applied (Simon: "Yes, fix and apply"): 60 orphans deleted, 17 linked, 3 aliased, 225 left with reasons (tools/gen/batch433-review.txt); 68 stale nameOkIn removed; 166 same-sense roots merged; I32 leftovers fixed (spelling-fam 5 -> 0); 84 theme names shortened. For step 3: twins fermented foods and drinks, old ways to keep in touch.
