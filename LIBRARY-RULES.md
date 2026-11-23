@@ -159,6 +159,7 @@ The game must be able to leave out every word some players have objected to. Two
 
 ### Aliases
 
+- People's names (Simon, 2026-11-23): the full name is the root (`Claude Monet`, `Isaac Newton`); the surname is its first `synonym` alias, at the same familiarity, so the game can still show "Monet". Exceptions: a person known by one name (`Rembrandt`, `Banksy`) and a full name over 20 letters keep the short name as root. Replaces the v164 "shorter name is the root" sweep. (no check: judgement)
 - Kinds:
   - `spelling`: the same word spelt another way (`colour`, `jalapeno`, `Dobermann`); `satnav` is not a spelling of GPS;
   - `form`: a grammatical form only, an inflection or derivation of the same sense (`rainy`, `skis`, `apples`), never a compound or longer name;

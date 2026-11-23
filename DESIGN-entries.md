@@ -244,6 +244,7 @@ This section is a dated log: each entry records what was decided or done at the 
 - Export additions are additive within a format version (3 until 2026-11-18, now 4); the field list is DESIGN.md section 8.
 - Offensive words (3.8, Simon, 2026-11-22): delete an entry whose meaning is crude, vulgar or a slur; flag `offensive` on any kept entry whose word some players object to, independent of adult and sensitive; names and hyphenated phrases only when the whole text is the word; the export leaves flagged words out by default. Not yet built.
 - A theme and its "X words" theme of the same topic are one theme (Simon, 2026-11-22; replaces v408's "parent topic / X words child: kept"). An "X words" theme of how people talk about X (pirate talk, wine tasting) stays and is renamed for that. LIBRARY-RULES.md section 6.
+- People's names: the full name is the root and the surname its first synonym alias at the same familiarity (Simon, 2026-11-23; replaces the v164 shorter-name sweep). Exceptions: one-name people and full names over 20 letters. LIBRARY-RULES.md section 5, Aliases.
 
 **Log**
 
