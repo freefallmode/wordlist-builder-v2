@@ -1069,6 +1069,80 @@ test('theme-twin: two themes, neither inside the other, sharing 80% of the small
   try { assert.equal(kinds(P, 'theme-twin').length, 0); } finally { THEME_TWIN_OK.clear(); }
 });
 
+test('xwords-twin: an "X words" theme sharing 30% of its words with another theme, unrelated or parent and child (not a grandparent); THEME_TWIN_OK silences it', async () => {
+  const { THEME_TWIN_OK } = await import('../js/theme-twin-allow.js');
+  const P = contractProject();
+  P.themes.push(T('mil', 'military'), T('army', 'army words', { parent: 'mil' }), T('fleet', 'fleets', { parent: 'mil' }), T('navy', 'navy words', { parent: 'fleet' }), T('sea', 'sea'), T('few', 'camp words'));
+  const w = Array.from({ length: 10 }, (_, i) => addEntry(P, 'arm' + 'abcdefghij'[i], { fam: 2, typ: { army: 2 } }));
+  const n = Array.from({ length: 6 }, (_, i) => addEntry(P, 'nav' + 'abcdef'[i], { fam: 2, typ: { navy: 2 } }));
+  w.slice(0, 4).forEach(e => { e.typ.mil = 2; e.typ.navy = 2; });   // military holds 4 of army words' 10 (40%); navy words holds 4 of them too
+  n[0].typ.fleet = 2; n[1].typ.fleet = 2; n[2].typ.fleet = 2; n[3].typ.fleet = 2;   // fleets: navy words' parent, 4 of its 10 (40%)
+  w[9].typ.sea = 2; n[5].typ.sea = 2; n[4].typ.sea = 2;                             // sea: 1 or 2 of 10, under 30%
+  for (const e of w.slice(0, 2)) e.typ.few = 2;                                     // camp words: 2 of army words' 10 (20%), and too few words to be reported itself
+  reindex(P);
+  const xs = kinds(P, 'xwords-twin');
+  assert.deepEqual(xs.map(i => [i.themeId, i.msg.match(/with "([^"]+)"/)[1]]), [['army', 'military'], ['army', 'navy words'], ['navy', 'fleets']]);   // navy words and military: grandparent, not reported; the army/navy pair once
+  assert.match(xs[0].msg, /4 of its 10 words \(40%\) with "military" \(its parent\) \(4 words\)/);
+  assert.match(xs[2].msg, /\(its parent\)/);
+  THEME_TWIN_OK.add('army|mil'); THEME_TWIN_OK.add('army|navy'); THEME_TWIN_OK.add('fleet|navy');
+  try { assert.equal(kinds(P, 'xwords-twin').length, 0); } finally { THEME_TWIN_OK.clear(); }
+});
+
+// The four wrong senses v430 fixed: trench [ocean] in army words, pommel [sword] in horse riding words, talon [bird] and shuffle [walk] in card game words.
+function senseProject() {
+  const P = contractProject();
+  P.themes.push(T('mil', 'military'), T('army', 'army words', { parent: 'mil' }), T('ocean', 'ocean'),
+    T('tack', 'horse tack'), T('ride', 'horse riding words'), T('fence', 'fencing terms'),
+    T('cards', 'card game words'), T('sol', 'solitaire'), T('prey', 'birds of prey'), T('walk', 'ways of walking'));
+  const add = (text, gloss, typ, over = {}) => addEntry(P, text, { gloss, fam: 2, typ, ...over });
+  for (const [t, g] of [['soldier', ''], ['military base', ''], ['drill', 'military'], ['rank', 'military']]) add(t, g, { mil: 2, army: 2 });
+  add('march', '', { army: 2 });
+  for (const t of ['wave', 'reef', 'tide']) add(t, '', { ocean: 2 });
+  const tm = add('trench', 'military', { mil: 2 }), to = add('trench', 'ocean', { ocean: 3, army: 5 });
+  for (const t of ['saddle', 'stirrup', 'reins', 'bridle', 'girth']) add(t, '', { tack: 2, ride: 2 });
+  for (const t of ['side saddle', 'saddle horn', 'canter']) add(t, '', { ride: 3 });
+  for (const t of ['foil', 'epee', 'parry']) add(t, '', { fence: 3 });
+  const ps = add('pommel', 'saddle part', { tack: 4 }), pw = add('pommel', 'sword', { fence: 4, ride: 4 });
+  for (const t of ['deal', 'trick']) add(t, 'cards', { cards: 2, sol: 2 });
+  add('trump', 'cards', { cards: 2 }); add('ante', '', { cards: 3 }); add('foundation', '', { sol: 3 });
+  for (const t of ['eagle', 'hawk', 'owl']) add(t, '', { prey: 1 });
+  for (const t of ['stroll', 'amble', 'trudge']) add(t, '', { walk: 2 }, { pos: 'verb' });
+  const tc = add('talon', 'cards', { sol: 4 }), tb = add('talon', 'bird', { prey: 2, cards: 4 });
+  const sc = add('shuffle', 'cards', { sol: 1 }, { pos: 'verb' }), sw = add('shuffle', 'walk', { walk: 3, cards: 1 }, { pos: 'verb' });
+  reindex(P);
+  return { P, tm, to, ps, pw, tc, tb, sc, sw };
+}
+
+test('sense-link: a link on a sense whose same-text sibling fits the theme clearly better (v430: trench, pommel, talon, shuffle); the allow list and wordplay themes are quiet', async () => {
+  const { SENSE_OK } = await import('../js/sense-allow.js');
+  const { P, to, tm, pw, tb, tc, sw } = senseProject();
+  const got = () => kinds(P, 'sense-link').map(i => [i.themeId, i.entryId]).sort();
+  assert.deepEqual(got(), [['army', to.id], ['cards', sw.id], ['cards', tb.id], ['ride', pw.id]].sort());
+  const msg = kinds(P, 'sense-link').find(i => i.entryId === to.id).msg;
+  assert.match(msg, /"trench \(ocean\)" is in "army words", but "trench \(military\)" fits it better/);
+  assert.match(msg, new RegExp(`entry ${tm.id}`));
+  SENSE_OK.add(`${Math.min(tb.id, tc.id)}|${Math.max(tb.id, tc.id)}|cards`);   // one theme only
+  try { assert.deepEqual(got(), [['army', to.id], ['cards', sw.id], ['ride', pw.id]].sort()); } finally { SENSE_OK.clear(); }
+  // no neighbours: pommel [saddle part] in no theme, so nothing says it is the horse riding sense
+  const { P: P2, ps } = senseProject(); ps.typ = {}; reindex(P2);
+  assert.ok(!kinds(P2, 'sense-link').some(i => i.themeId === 'ride'));
+  // a wordplay theme: the sense is not the point
+  const { P: P3 } = senseProject(); P3.ix.theme.get('cards').tkind = 'wordplay'; P3.ix.theme.get('cards').rule = 'curated';
+  assert.ok(!kinds(P3, 'sense-link').some(i => i.themeId === 'cards'));
+});
+
+test('theme-gap: the 4th-easiest word 2 or more bands above the theme difficulty is a warning (I30)', () => {
+  const P = contractProject();
+  P.themes.push(T('hard', 'hard words', { ident: 2, pop: 3 }), T('fine', 'fine words', { ident: 3, pop: 3 }), T('three', 'three words', { ident: 1, pop: 3 }));
+  for (const c of 'abcde') { addEntry(P, 'hard' + c, { fam: 4, typ: { hard: 2, fine: 2 } }); }
+  for (const c of 'abc') addEntry(P, 'three' + c, { fam: 5, typ: { three: 5 } });   // three words: thin, not a gap
+  addEntry(P, 'easy', { fam: 1, typ: { hard: 1 } });   // one easy word does not close the gap
+  reindex(P);
+  const g = kinds(P, 'theme-gap');
+  assert.deepEqual(g.map(i => [i.sev, i.themeId]), [['warn', 'hard']]);   // fine: difficulty 3, band 4, gap 1
+  assert.match(g[0].msg, /theme difficulty 2 .*band 4 \(gap 2\)/);
+});
+
 test('diff rules: an added or changed entry needs status rev; an accented root the change touched keeps its plain alias (rule 8)', async () => {
   const { diffRules, diffRuleLines } = await import('../tools/checks-core.mjs');
   const { plainText } = await import('../js/model.js');
