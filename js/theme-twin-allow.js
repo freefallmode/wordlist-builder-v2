@@ -2,6 +2,8 @@
 // theme-twin and xwords-twin checks (js/validate.js) do not report them. Key: themeIdA|themeIdB, the two ids in sorted order.
 // Add a line only after a person has decided both themes stay.
 export const THEME_TWIN_OK = new Set([
+  'police_station|police_words',         // police words: the topic beside the place police station (Simon, standing approval, 2026-11-23, v448)
+  'internet_words|social_media_words',    // social media words: a sub-topic of internet words (Simon, standing approval, 2026-11-23, v448)
   'fantasy|wizard_words',                 // wizard words: offensive, never plays; kept (Simon, 2026-11-23, v444)
   'witchcraft|wizard_words',              // wizard words: offensive, never plays; kept (Simon, 2026-11-23, v444)
   'planets|things_in_space',              // planets: a subset of things in space (Simon, 2026-11-23, v445)
@@ -9,9 +11,7 @@ export const THEME_TWIN_OK = new Set([
   'astronomy_terms|space',                // astronomy terms: the science, beside space (Simon, 2026-11-23, v445)
   'food_and_dining_words|words_from_french',                      // French food words: a sub-theme of words from French (Simon, 2026-11-23, v446)
   'foods_and_flavors|words_from_spanish',                         // Spanish food words: a sub-theme of words from Spanish (Simon, 2026-11-23, v446)
-  'wild_west_words|words_from_spanish',                           // Spanish Wild West words: a sub-theme of words from Spanish (Simon, 2026-11-23, v446)
   'italian_food_words|words_from_italian',                        // Italian food words: a sub-theme of words from Italian (Simon, 2026-11-23, v446)
-  'musical_terms|words_from_italian',                             // Italian musical terms: a sub-theme of words from Italian (Simon, 2026-11-23, v446)
   'food_and_drink_words|words_from_dutch',                        // Dutch food words: a sub-theme of words from Dutch (Simon, 2026-11-23, v446)
   'ships_and_sailing_words|words_from_dutch',                     // Dutch sailing words: a sub-theme of words from Dutch (Simon, 2026-11-23, v446)
   'archaic_pronouns_and_verb_forms|old_fashioned_english_words',  // archaic grammar words: a sub-theme of old-fashioned words (Simon, 2026-11-23, v446)
@@ -21,10 +21,7 @@ export const THEME_TWIN_OK = new Set([
   'colors_named_after_foods|foods_and_flavors',                   // Spanish food words: loanwords overlapping a food topic (Simon, 2026-11-23, v446)
   'burger_toppings|foods_and_flavors',                            // Spanish food words: loanwords overlapping a food topic (Simon, 2026-11-23, v446)
   'foods_and_flavors|mexican_food',                               // Spanish food words: loanwords overlapping a food topic (Simon, 2026-11-23, v446)
-  'horses|wild_west_words',                                       // Spanish Wild West words: loanwords overlapping horses (Simon, 2026-11-23, v446)
   'dinner_foods|italian_food_words',                              // Italian food words: loanwords overlapping a food topic (Simon, 2026-11-23, v446)
-  'musical_terms|musicians',                                      // Italian musical terms: loanwords overlapping musicians (Simon, 2026-11-23, v446)
-  'musical_terms|opera_words',                                    // Italian musical terms: loanwords overlapping opera words (Simon, 2026-11-23, v446)
   'boats_and_ships|ships_and_sailing_words',                      // Dutch sailing words: loanwords overlapping boats and ships (Simon, 2026-11-23, v446)
   'american_campaign_terms|election_words',   // American campaign terms: a regional sub-theme of election words (Simon, 2026-11-23, v440)
   'british_campaign_terms|election_words',    // British campaign terms: a regional sub-theme of election words (Simon, 2026-11-23, v440)
