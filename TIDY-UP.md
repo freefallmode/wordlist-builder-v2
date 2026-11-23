@@ -38,6 +38,10 @@ Read LIBRARY-RULES.md first; this list points into it.
 - Every group, including Body & Health, is done in this pass, not by Julia ("i'll do all").
 - Scope includes restructuring the tree ("restructuring too"): moving, merging, splitting and renaming folders and themes. Within a group it goes in that group's batch. A move between groups is listed in the group's review and done in one tree batch at the end of step 3, so theme indexes shift once per game round, not in every batch.
 
+## Tolerated warnings (Simon, 2026-11-23)
+
+Each group's batch also fixes the baseline warnings (tools/checks-baseline.json) in its own themes and entries and lowers the counts. By the end of the tidy-up every count is 0, or the remainder is accepted by Simon with a reason written in the baseline note. Counts at the start (v432): warn: spelling-fam 5 (I32, step 1), long 5, theme-name 3, clash-big 1, maybe-duplicate 1, theme-gap 1; contract: contract-dup-root 188, contract-root-region 1781, contract-type-common 42. Some contract kinds may be largely by design (region-tagged roots); the first group batch says how many of its hits are real and proposes how to treat the rest. The info kinds the group touches (orphan, sense-link, xwords-twin, theme-twin, sense-twin, nameOk-stale) are cleared the same way, without a baseline.
+
 ## Checklist addition for restructuring
 
 - **Tree**: each folder is a real category with a clear name; no folder holding one theme; no theme filed under the wrong group; similar themes are siblings, not scattered; nesting no deeper than needed. Don't rename the ancestors "names", "famous people" and "surnames": the game uses them.
