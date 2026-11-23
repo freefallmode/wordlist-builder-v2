@@ -1,0 +1,120 @@
+Review by kind (counted on v450; npm run check -- --kind <k>), before -> after this batch (with the second agent's fixes):
+
+region-root-equiv (warn): 73 -> 17. Fixed 56:
+  - 18 merged, the regional root an alias in place (section 1a): whortleberry (synonym of bilberry), piñon and pinon (translations of pine nut), hispi, bacon butty, spinney, moorland,
+    fenland, goosegrass, mini-break, bobtail, clunker (synonyms), tigrina (translation of oncilla), lough [IE], wildlife refuge [US], dial-a-ride [UK], engineering works [UK]
+    (of track work, retexted from planned maintenance), nutrition facts [US] (of nutrition label) (regional aliases); champissage deleted, its synonym Indian head massage the root.
+  - 18 ungrouped, two different things or a kind beside its generic word (1b): Cox's Orange Pippin, cobnut, cobnut tree, roti canai (chapati's hit), lemon drizzle, jelly,
+    steak and kidney, cottage pie, Scottish wildcat, blackfly, samphire and rock samphire, haar, wintry mix, landing stage, damper, pumper truck, outhouse, charley horse
+    (stays an answer, tagged US); certified mail too (counted under untagged).
+  - 11 slang or regional words out of a general theme that has their standard word (1c, as v440): brewski, cuppa, bubbly, fizz, goanna, mizzle, moonroof, schlep, kip (out of
+    sleep and short sleeps; stays in British slang), lurgy (out of common illnesses and illnesses; now in British slang, typicality 3), stoat (out of camouflaged animals and
+    Alpine animals, where ermine is; both stay roots, Simon v435).
+  - 7 untagged (1d): pip, candy bar, sieve, cwm, certified mail, freeway, horse and cart. 1 tagged: dollar van [US] (jitney's hit).
+  - 2 splits (1f): barbel [body part] (new, untagged) takes the three body-part themes from barbel [fish]; outhouse [outbuilding] (new) takes farm buildings from outhouse [toilet].
+  Left 17: Accepted remainder (below).
+
+sense-link (info): 4 -> 4, all right senses (keys below): boom [bittern] in animal sounds (the bittern's call), cutter [coast guard] in warships, Thebes [Egypt] in
+  ancient sites of Africa (Thebes [ancient city] is the Greek city), halo [angel] in things that glow (the glowing ring; halo [light] is the sky phenomenon).
+
+sense-twin (info): 40 -> 38. Fixed 2 (reviewer): Grand Canal [canal] 36922 (straits and canals) was the Chinese canal: reglossed China it duplicated Grand Canal [China] 20475,
+  so it is merged into it (same text: deleted, its link moves); Nest [thermostat] typed proper (a named product with tm), so it no longer pairs with nest [home].
+  Left 38, all right (keys below). Simon's: pinto, flank and chestnut [horse color] / [horse leg] (horse coat colours, flank and breast stay split); the seven team pairs
+  (Rangers, Kings, Giants, Jets, Panthers, Cardinals, Oilers: v433, kept apart). Right link in the theme: egg [food from hens] in eggs (Food & Drink), trunk [elephant] in animal
+  body parts, fan [supporter] in fans and followers, acrylic [paint] in art materials, keyboard [music] in instrument parts, bow [weapon] in archery terms, Thebes [Egypt];
+  wordplay, where the word matters, not the sense: ash [residue] in hidden trees, crown [royal] in hidden birds, principal [school] in head___ (v446). Two senses: mana [magic
+  power] (games) / [spiritual power] (Polynesian), score [twenty pounds] (money slang) / [twenty], colorist [film] / [hair], brig [ship] / [ship prison], Pinkerton [agency] /
+  [detective], safety [american football] (the position) / [football score], gem [game piece] / [game], cross-country [running] / [horse event] (three themes link the running
+  sense); one entry per foreign-number theme by design: zero (6 pairs), six, mille [French / Italian / Japanese number].
+
+xwords-twin, theme-twin, same-display (info): 0 at v450, 0 after.
+
+alias-kind-suspect (info): 25 -> 23. Fixed 2: PO box typed proper like its root P.O. box; nicoise salad deleted (a longer plain name kept as a spelling of niçoise; nicoise stays
+  its plain spelling). Left 23, real variant spellings of one word: catsup, luffa, tee shirt, gryphon, kunafa, Mao Tse-tung, Oxum, Kokytos, faerie, hurrah, purty (eye-dialect
+  spelling), tipi, calash, stade, Hsuan-tsang, Fa-Hien, Tiahuanaco (romanizations and old spellings, v444), Blixem (the 1823 poem's spelling of Blitzen), bark (barque),
+  plough (UK spelling of plow, v446); deejay and emcee (the spelled-out DJ and MC, v440 and v443 kept them as spellings), wifi (typed common: as proper it fails the case lint, v445).
+
+alias-fullname (info): 42 -> 42, all form aliases that are the plural or -ing form of their root (pancakes, skis, skates, headlights, firecrackers, jousting, Incas, dinosaur bones,
+  kidney beans ...). They fire only because the alias carries nameOkIn (checked like a root since v450). No data change; the manager handles the check.
+
+clash-large (info): 47 -> 47, all within the 12 allowed (LIBRARY-RULES 5, Clash groups) and none wrong:
+  - one written word in several senses, kin by the rule ("one written word in another sense counts"), joined to one synonym group: peel/peeler/skin, rib/ribs, sprinkle/sprinkler,
+    scramble/scrambled eggs, blue/blues/blue cheese, crown/crowning, down/downs/downers, paw/shake/shaker, knead/kneading/wedge/wedging, trunk/trunks, stream/streamer/streaming,
+    round/rounds/rounders, dig/digger, glide/glider/gliding, tank/tanker, gray/graying, white/whites/whiting, sponge/spongy/loofah, fish/fishing/fisher/fishy, beam/beaming,
+    creep/creeper/sneak/sneaky, code/coder/program, pot/potter/pottery/potty, binder/binding/fold/folder, string/stringer, lock/locker/locking, bolt/quarrel, fin/flipper/flip,
+    score/scorer/scoring, count/counter/countess, wand/rod/perch/perched, bump/bumper/bumpy, conjure/conjurer/summon, movie/movement/flick/flicker, weight/weightless/sink/sinker,
+    check/checker/checkered, snap/snapper/snappy, scale/scaly/scaler, draw/drawing/drawer, wing/wings/winger, glass/glasses/glassy, sweat/sweater/sweaty;
+  - one synonym theme of many same-answer words: marijuana (illegal drugs, an adult theme that never plays), ghost (ghosts and spirits, as v444), kebab (kebab types),
+    prison (prison words), singer (rock band lineup).
+  Breaking any of them would let look-alikes share a level; the clash-big limit (13+) is not reached.
+
+Decided (standing approval; the second agent's review "sound, apply with four fixes", its recommendations taken):
+  - Fix 1: planned maintenance 47006 retexted "track work" (familiarity 3); engineering works 47005 stays its UK regional alias.
+  - Fix 2: lurgy 3358 out of common illnesses and illnesses, linked in British slang (typicality 3).
+  - Fix 3: cwm 30849 out of Scottish landscape words (a Welsh word); its tag comes off as drafted.
+  - Fix 4: Grand Canal 36922 reglossed China, which made it a duplicate of Grand Canal [China] 20475: merged into it (its straits and canals link moves); the key
+    36922|47584|famous_canals is dropped. Nest 49461 typed proper; its key 10147|49461|smart_home is no longer needed (the pair has two types now), so dropped too.
+  - kip out of sleep and short sleeps (stays in British slang); nutrition facts the US regional alias of nutrition label (nameOkIn nutrition: the real name); charley horse
+    ungrouped (stays an answer, tagged US); stoat and ermine both stay roots (Simon, v435), stoat out of camouflaged animals and Alpine animals; pea-souper stays grouped with fog
+    (Simon, v436); umu and lovo stay grouped and untagged; alias-fullname: no data change (the manager handles the check).
+  - Earlier reviews called some of the words fixed here "by design" for contract-root-region (v436 bilberry, piñon, cobnut tree, spinney, cleavers, moorland, fen, cwm, lough,
+    samphire, haar, wintry mix, mizzle, goanna, blackfly, wildlife refuge; v439 lurgy, gym bunny, champissage). That was about their region tag; this batch fixes the synonym group
+    that joined them with an untagged root, or merges where it is one sense; only cwm loses its tag. Listed so it is not a silent change.
+
+Allow-list keys proposed, final (js/sense-allow.js; 39 lines; each pair checked as two real senses, each linked in the right themes):
+  '16971|60102|animal_sounds',             // boom [bittern] is the animal sound (Simon, 2026-11-24, v451)
+  '34718|59139|warships',                  // cutter [coast guard] is the warship (Simon, 2026-11-24, v451)
+  '36090|54764|ancient_sites_of_africa',   // Thebes [Egypt] is the African site; Thebes [ancient city] the Greek one (Simon, 2026-11-24, v451)
+  '31404|34275|things_that_glow',          // halo [angel] is the glowing ring (Simon, 2026-11-24, v451)
+  '518|68162|eggs',                        // egg [food from hens] is right in eggs (Food & Drink) (Simon, 2026-11-24, v451)
+  '1546|9531',                             // pinto [horse] and pinto [horse color]: two senses, kept split by Simon (Simon, 2026-11-24, v451)
+  '1632|39899|hidden_trees',               // ash [residue] hides the tree: wordplay, the word counts (Simon, 2026-11-24, v451)
+  '10325|14249|animal_body_parts',         // trunk [elephant] is the animal body part (Simon, 2026-11-24, v451)
+  '3222|9593',                             // flank [body part] and flank [animal part]: kept split by Simon (Simon, 2026-11-24, v451)
+  '4497|35535|head_blank',                 // principal [school] in head___: compound, the word counts (Simon, 2026-11-24, v451)
+  '4742|35609|fans_and_followers',         // fan [supporter] is right in fans and followers (Simon, 2026-11-24, v451)
+  '6299|38986|art_materials',              // acrylic [paint] is the art material (Simon, 2026-11-24, v451)
+  '7046|35435',                            // mana [magic power] (games) and mana [spiritual power] (Polynesian): two senses (Simon, 2026-11-24, v451)
+  '10627|10744|instrument_parts',          // keyboard [music] (the keys) is the instrument part (Simon, 2026-11-24, v451)
+  '8372|21212|hidden_birds',               // crown [royal] hides the bird: wordplay (Simon, 2026-11-24, v451)
+  '9524|9599',                             // chestnut [horse color] and chestnut [horse leg]: two senses (Simon, 2026-11-24, v451)
+  '20781|28780|archery_terms',             // bow [weapon] is the archery term; bow [knot or archery] is the homographs entry (Simon, 2026-11-24, v451)
+  '34054|41489',                           // score [twenty pounds] (money slang) and score [twenty]: two senses (Simon, 2026-11-24, v451)
+  '12691|50184',                           // colorist [film] and colorist [hair]: two jobs (Simon, 2026-11-24, v451)
+  '21159|34584',                           // brig [ship] and brig [ship prison]: two senses (Simon, 2026-11-24, v451)
+  '23025|55202',                           // Pinkerton [detective agency] and Pinkerton [detective] (Allan Pinkerton): two senses (Simon, 2026-11-24, v451)
+  '29418|55953', '29418|56001', '29418|56023', '55953|56001', '55953|56023', '56001|56023',   // zero [number] and zero [French, Italian, Japanese number]: one entry per foreign-number theme (Simon, 2026-11-24, v451)
+  '41475|55935',                           // six [number] and six [French number] (Simon, 2026-11-24, v451)
+  '55952|56000',                           // mille [French number] and mille [Italian number] (Simon, 2026-11-24, v451)
+  '42773|44266',                           // safety [american football] (the position) and safety [football score]: two senses (Simon, 2026-11-24, v451)
+  '44904|46199',                           // cross-country [horse event] and cross-country [running]: two sports (Simon, 2026-11-24, v451)
+  '45548|45788',                           // gem [game piece] and gem [game]: two senses (Simon, 2026-11-24, v451)
+  '58618|58667', '58534|58688', '58543|58593', '58544|58693', '58564|58682', '58567|58594', '58672|61501',   // Rangers, Kings, Giants, Jets, Panthers, Cardinals, Oilers: two teams each, kept apart in v433 (Simon, 2026-11-24, v451)
+  These 39 keys take sense-twin 38 -> 0 and sense-link 4 -> 0 (Thebes is one key for both).
+
+Baselines to lower at apply time (tools/checks-baseline.json): warn region-root-equiv 73 -> 17. Contract unchanged (contract-dup-root 170); contract-root-region (info) 1446 -> 1425.
+No warning baseline rises; no js/ change.
+
+Accepted remainder (region-root-equiv 17; one line each, for the baseline note):
+  - sun lounger [UK] / chaise longue (garden furniture): kept as is by Simon (v436).
+  - rock pool [UK] / tide pool (beach vacation): kept as is by Simon (v436).
+  - pea-souper [UK] / fog (shipwreck coast words, weather): stays grouped with fog (Simon, v436).
+  - whiff-whaff [UK] / table tennis (five sports themes): kept a root grouped with table tennis (Simon, round 2).
+  - tube map [UK] / subway map (kinds of maps): kept a root (v437); as its alias it would leak "map" in kinds of maps.
+  - hangi [NZ] / umu, lovo (Pacific Islands food): one earth oven in three cultures, kept grouped and untagged (v448; tagging needs new region codes).
+  - broil [US] / grill (cooking, cooking methods): the meaning shifts by dialect (US grill is a barbecue), so no alias carries both.
+  - fish slice [UK] / spatula (kitchen utensils): the UK turner; spatula is also the scraper and the lab tool, so no alias carries both.
+  - grinder [US] / sub (sandwiches): sub already has its US alias hoagie, and as a synonym grinder (familiarity 4) would be too hard for sub (1).
+  - mere [UK] / lake (bodies of water): as a UK alias it would replace lake for UK players; as a synonym it is too hard (5 for 1).
+  - permanent way [UK] / track (railway words): a UK engineering term; as track's synonym too hard (5 for 1), as a UK alias it would replace track.
+  - dauphinoise potatoes [UK] / gratin, scalloped potatoes (potato dishes): a near but different dish (cream and garlic), grouped as one answer.
+  - arroyo [US] / wadi (desert themes): two regions' words for a dry gully, grouped as one answer; arroyo stays a root for words from Spanish.
+  - dak bungalow [IN] / rest house (accommodation): an Indian government rest house, grouped with the general word as one answer.
+  - dharamshala [IN] / rest house (accommodation): an Indian pilgrims' rest house, grouped with the general word as one answer.
+  - gym bunny [UK, AU, IE] / gym rat (fitness): close but not the same (a gym bunny trains for looks), grouped as one answer.
+  - charlie [UK, AU, NZ, IE] / cocaine (illegal drugs, stimulant drugs): slang in an adult theme that never plays, grouped with the drug like coke and snow.
+
+For Simon:
+  - Nothing open (the earlier items are decided above).
+
+Left as is (other kinds): alias-kind-suspect 23, alias-fullname 42, clash-large 47, sense-twin 38, sense-link 4: above (keys proposed for the last two).
