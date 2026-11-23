@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, parseRule, displayKey, isAncestor, plainText, ALIAS_KINDS, POS, TYPES } from './model.js';
+import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, parseRule, displayKey, isAncestor, plainText, themeDifficulty, themeProfile, ALIAS_KINDS, POS, TYPES } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
 import { familyPairs, clashGroups, CLASH_SOFT, CLASH_MAX } from './family.js';
@@ -134,6 +134,9 @@ export function validate(P) {
   offensiveChecks(P, add);
   senseTwins(P, add);
   themeTwins(P, add);
+  xwordsTwins(P, add);
+  senseLinks(P, add);
+  themeGaps(P, add);
 
   // ----- entries -----
   const seen = new Map();
@@ -357,6 +360,95 @@ function themeTwins(P, add) {
     }
   }
 }
+
+// xwords-twin: an "X words" or "X terms" theme sharing at least 30% of its distinct words (4 or more) with another playable theme, the two
+// unrelated or a direct parent and child (a deeper ancestor is the tree's business): same-topic "X words" themes are merged into the topic
+// (LIBRARY-RULES 6, Simon 2026-11-22; v430 merged nine such pairs, most of them parent and child). Allow list: THEME_TWIN_OK (both themes stay).
+export const XWORDS_SHARE = 0.3, XWORDS_MIN = 4;
+const xwordsName = name => / (words|terms)$/i.test(name.trim());
+function xwordsTwins(P, add) {
+  const ix = P.ix, words = new Map(), inv = new Map();
+  for (const t of P.themes) {
+    if (t.group || !eff(P, t.id).enabled) continue;
+    const s = new Set((ix.byTheme.get(t.id) || []).filter(e => e.enabled && e.typ[t.id] !== undefined).map(e => e.aliasOf || e.id));
+    words.set(t.id, s); for (const r of s) { if (!inv.has(r)) inv.set(r, []); inv.get(r).push(t.id); }
+  }
+  const done = new Set(), depth = (a, b) => { let t = ix.theme.get(b), n = 0; while (t && n++ < 60) { if (t.id === a) return n - 1; t = t.parent && ix.theme.get(t.parent); } return -1; };
+  for (const [a, sa] of words) {
+    const ta = ix.theme.get(a);
+    if (sa.size < XWORDS_MIN || !xwordsName(ta.name)) continue;
+    const n = new Map(); for (const r of sa) for (const b of inv.get(r)) if (b !== a) n.set(b, (n.get(b) || 0) + 1);
+    for (const [b, k] of n) {
+      const key = a < b ? a + '|' + b : b + '|' + a;
+      if (k < XWORDS_SHARE * sa.size || done.has(key) || THEME_TWIN_OK.has(key)) continue;
+      if (depth(a, b) > 1 || depth(b, a) > 1) continue;   // a grandparent or deeper: not a twin
+      done.add(key);
+      const tb = ix.theme.get(b), rel = ta.parent === b ? ' (its parent)' : tb.parent === a ? ' (its sub-theme)' : '';
+      add('info', 'xwords-twin', `"${ta.name}" shares ${k} of its ${sa.size} words (${Math.round(100 * k / sa.size)}%) with "${tb.name}"${rel} (${words.get(b).size} words): the same topic? Merge the things into "${tb.name}"; if "${ta.name}" is how people talk about it, rename it for what it is (pirate talk); or list the pair in js/theme-twin-allow.js.`, { themeId: a });
+    }
+  }
+}
+
+// sense-link: a link whose entry has a sibling root (same text, case ignored, another meaning) that fits the theme clearly better.
+// Each sense is scored by the words of its gloss (stemmed, 3+ letters, not generic) found in the theme's own name (3 each), an ancestor's
+// name (1) and the texts and glosses of the theme's other members (1 per member, at most 3 per word). Reported when the sibling scores at
+// least 3 and at least twice the linked sense plus 2, and more of the theme's other members share another theme with the sibling than
+// with the linked sense (neighbours), by 5 or more when the sibling scores only 3: trench [ocean] in army words, trench [military] exists.
+// Not reported: wordplay and compound themes (the sense is not the point), a sibling linked in the theme too (maybe-duplicate), two glosses
+// sharing a word (sense-twin), entries with no gloss (needs-gloss). Many hits are one sense entered twice under unrelated glosses (calf
+// [cattle] / calf [animal]): a merge. Allow list: js/sense-allow.js (idA|idB or idA|idB|themeId).
+const SENSE_STOP = new Set(('a an and or the of in on at to for from with by as is are that this these those your my our their its words word names name types type kinds kind famous common things thing parts part ' +
+  'varieties variety styles style ways way terms term items item sorts sort different all some other about into over under more most not no ' +
+  'also used something someone very made like small large person people general one two act').split(/\s+/));
+const senseToks = s => [...new Set((fold(s || '').match(/[\p{L}\p{N}]+/gu) || []).map(nameStem).filter(w => w.length >= 3 && !SENSE_STOP.has(w)))];
+function senseLinks(P, add) {
+  const ix = P.ix, byText = new Map(), tk = new Map();
+  for (const e of P.entries) if (!e.aliasOf && e.enabled) { const k = e.text.trim().toLowerCase(); if (!byText.has(k)) byText.set(k, []); byText.get(k).push(e); }
+  for (const [k, es] of byText) if (es.length < 2) byText.delete(k);
+  const toksOf = e => { let x = tk.get(e.id); if (!x) tk.set(e.id, x = { text: senseToks(e.text), gloss: senseToks(e.gloss) }); return x; };
+  const ok = (a, b, tid) => SENSE_OK.has(pairKey(a.id, b.id)) || SENSE_OK.has(pairKey(a.id, b.id) + '|' + tid);
+  for (const t of P.themes) {
+    if (t.group || t.tkind === 'wordplay' || t.tkind === 'compound' || !eff(P, t.id).enabled) continue;
+    const mem = (ix.byTheme.get(t.id) || []).filter(e => !e.aliasOf && e.enabled && e.typ[t.id] !== undefined);
+    const cand = mem.filter(e => e.gloss && byText.has(e.text.trim().toLowerCase()));
+    if (!cand.length) continue;
+    const own = new Set(senseToks(t.name)), up = new Set(), bag = new Map();
+    for (let x = t.parent && ix.theme.get(t.parent), n = 0; x && n++ < 60; x = x.parent && ix.theme.get(x.parent)) for (const w of senseToks(x.name)) up.add(w);
+    for (const e of mem) { const x = toksOf(e); for (const w of new Set([...x.text, ...x.gloss])) bag.set(w, (bag.get(w) || 0) + 1); }
+    for (const e of cand) {
+      const ex = toksOf(e), eAll = new Set([...ex.text, ...ex.gloss]);
+      const score = s => { let n = 0; for (const w of toksOf(s).gloss) if (!ex.text.includes(w)) n += (own.has(w) ? 3 : up.has(w) ? 1 : 0) + Math.min(3, (bag.get(w) || 0) - (eAll.has(w) ? 1 : 0)); return n; };
+      let se = null, ce = null;
+      for (const o of byText.get(e.text.trim().toLowerCase())) {
+        if (o === e || !o.gloss || o.typ[t.id] !== undefined || fold(o.gloss) === fold(e.gloss) || ok(e, o, t.id)) continue;
+        if (toksOf(o).gloss.some(w => w.length >= 4 && ex.gloss.includes(w))) continue;
+        const so = score(o);
+        if (so < 3) continue;
+        if (se === null) se = score(e);
+        if (so < 2 * se + 2) continue;
+        const near = x => { const ts = new Set(Object.keys(x.typ)); ts.delete(t.id); let n = 0; for (const m of mem) if (m !== e && Object.keys(m.typ).some(k => ts.has(k))) n++; return n; };
+        if (ce === null) ce = near(e);
+        const co = near(o);
+        if (co <= ce || (so < 4 && co < ce + 5)) continue;
+        add('info', 'sense-link', `"${label(e)}" is in "${t.name}", but "${label(o)}" fits it better (its meaning matches the theme's name and words: ${so} to ${se}; ${co} of the other words share a theme with it, ${ce} with the linked sense): is the link on the wrong sense (move it to entry ${o.id}), or are the two one sense entered twice (merge them)? If both are right, list the pair in js/sense-allow.js.`, { themeId: t.id, entryId: e.id });
+      }
+    }
+  }
+}
+
+// theme-gap: LIBRARY-RULES 6, "Theme difficulty against its words" (I30): the 4th-easiest usable word's band (themeProfile lo) 2 or more
+// above the theme difficulty (themeDifficulty): the game rarely finds four words easy enough for the theme, so it seldom plays.
+export const GAP_MAX = 2;
+function themeGaps(P, add) {
+  for (const t of P.themes) {
+    if (t.group || !eff(P, t.id).enabled) continue;
+    const td = themeDifficulty(t); if (!td) continue;   // unrated: theme-unrated
+    const lo = themeProfile(P, t.id).lo; if (!lo) continue;   // fewer than 4 words: thin
+    const gap = round1(lo - td);
+    if (gap >= GAP_MAX) add('warn', 'theme-gap', `"${t.name}" has the theme difficulty ${td} (ident ${t.ident}, pop ${t.pop || '-'}) but its 4th-easiest word is band ${lo} (gap ${gap}): the theme rarely plays. Fix a wrong word rating, add easier words, or raise ident (or pop).`, { themeId: t.id });
+  }
+}
+const round1 = x => Math.round(x * 10) / 10;
 
 function shares(P, a, b) {
   const x = new Set(linkIds(P, a));
