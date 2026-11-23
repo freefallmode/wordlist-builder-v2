@@ -1,0 +1,63 @@
+Reviewer's fixes (second agent, 2026-11-23, "apply after fixes"), in section 8 of the batch and above:
+  - scrape [clean] 68193 (verb) takes cleaning verbs from scrape [injury] 14989, so a UK player never sees graze as a cleaning verb.
+  - rifle [search through] familiarity 1 -> 3 (it now exports), paw [to paw] 1 -> 2; circulatory system 2 (as respiratory), endocrine system 3.
+  - Black Death, bubonic plague, Spanish flu sensitive like plague; seasonal depression sensitive like mental health words.
+  - middle finger out of gestures (the finger entry; the gesture is the rude one); tummy out of organs.
+  - pop 3 (ordinary everyday themes): mouth actions (was 5), hand actions, ways of looking, body positions (were 4).
+  - medical tests typicality: urinalysis 1 -> 3, lipid panel 2 -> 3, audiometry 2 -> 4.
+  - ways to move: by its note ("everyday ways to move the body: walk, run, hop, crawl, skip, jump, swim, climb, roll") it holds the basic movements, not the kinds of walking: march, shuffle, limp, stagger, stumble, tiptoe, waddle and wander leave too (all stay in ways of walking), as stroll, saunter, strut and swagger did. 27 words, 19 easy.
+  - Familiarity of well-known words in the hard themes: brain stem, gray matter (and grey matter), neuron, frontal lobe 3 -> 2; hippocampus, hypothalamus, pituitary gland 4 -> 3; melatonin, quadriceps, diaphragm 3 -> 2. endorphin and gluteus maximus were kept at 3 (the frequency check rates them rarer). No members added: the easy ones that exist (brain, spinal cord) are not brain parts.
+
+Checks inside Body & Health (158 themes, about 5,100 links at v436), found -> left after this batch:
+  warn: maybe-duplicate 1 -> 0 (fish [food] and fish [animal] shared things with tails; fish [animal] now takes things with eyes too). long, theme-name, clash-big, theme-gap: 0 in the group's themes before and after.
+  contract-root-region: 63 roots with a region linked in the group -> 46. Fixed 17: tum, graze, gawp, blub become regional or abbreviation aliases of tummy, scrape, gawk, blubber; goose egg, crease up, fall about, dekko, shufti, squiz become synonym aliases (keeping their tags) of bump, crack up, gander; bangs, shot, faucet, doctor's note, sharps container and crib bumper (US roots with a UK regional alias) untagged, as color is (v413, v436 mold); argan oil untagged (known everywhere, not a Moroccan word).
+    Real but left, 10 (For Simon): plaster (UK root, US alias Band-Aid), lie-in, nutrition facts, kip, forty winks (Julia's themes), charley horse, roll-on, natter, witter, locum.
+    By design, 36: a regional word with no same-sense word in the other dialect, or a regional brand: lurgy, strep throat, quinsy, glue ear, co-pay, sleepsuit, gym bunny, Parkrun, kilojoule, five a day, Dry January, mosey, quiff, hum, pong, niff, gurn, V sign, yomp, stravaig, greet, bath screen, champissage, pawpaw ointment, emu oil, anomaly scan, gas and air, health visitor, bottom shuffling, Q-tip, GHDs, Veet, Lemsip, Beechams, NyQuil, Theraflu. Proposal (as for round 1, Simon took it): they are the accepted remainder, info under the planned contract-root-region change (warn only for a regional root that has a same-sense untagged root).
+  contract-dup-root: 7 -> 7 in the group, all by design (a common word after a name: pong, lotus, kiss, dash, knock, sphinx, and cranium, new after its retext from Cranium); contour [makeup] and the new tap [touch lightly] were cleared by retyping contour [map line] and tap [rhythm] from phrase to common. Library 177 -> 177.
+  contract-type-common: 0 in the group; library 39 -> 37 (tap [rhythm], contour [map line]).
+  sense-link 1 -> 0 (jump; run [cricket] and fish [food] in Qualities and Sports themes fixed too: library 35 -> 31). sense-twin 3 -> 1 in the group (bun, gum fixed; chestnut [horse color] / [color] left). theme-twin 1 -> 0 (healthcare workers). xwords-twin 3 -> 3 (For Simon 3). alias-kind-suspect 4 -> 1 (luffa left). alias-fullname 8 -> 6 (left). case 1 -> 0 (DNA test). clash-large 12 -> 9 (walk group, hair tie group, sunglasses group in sun care). family-kin 51 -> 48. nameOk-stale 0 -> 0.
+  orphan: choler and spa [hot tub] (orphans since v433) are now aliases of yellow bile and (deleted into) hot tub; 10 new orphans, real words with no theme in the group now (respiration, immune response, central nervous system with its alias CNS, sensory, special senses, enteric nervous system from body systems; visage, countenance, mug [face] from face parts; trunk [body] from torso). The other orphans of the group stay as v433 listed them (Julia's senses, sleep and phobia words; taste buds, earwax, thread count, sanitizer, thermal bath: no clearly right theme).
+
+Cross-group moves and follow-ups (not in this batch; for the tree batch or the owning group's batch):
+  - meander [river] 31931 is still linked in travel verbs (Travel & Transport): move that link to meander [wander] 68191, the verb this batch adds (ways of walking and motion verbs moved here).
+  - visage, countenance, mug [face]: words for the face, now in no theme; a "words for face" theme beside words for friend etc. (Language & Wordplay) would take them.
+  - eggs 16678 [food] (food groups here; baking ingredients, breakfast foods, in the fridge, campfire foods) and egg 518 [food from hens] are two roots of one sense (clash group of 11 with dragon egg): for Food & Drink. dragon egg (a form alias of egg) still waits to become its own root.
+  - Done here in other groups' themes (one entry each, skipped if their batch did it first): run [move fast] for run [cricket] in motion verbs (Qualities) and sports verbs (Sports & Games); fish [animal] for fish [food] in things with eyes and things with tails (Qualities); bun [hair] in dance studio words (Arts); canine [tooth] in dentist's office, IV drip in hospital, exam table in vet clinic and at the doctor (Places & Geography, through the merges); contour [map line] and tap [rhythm] typed common.
+
+Decided by Simon (2026-11-23, "Take all and apply"): every recommendation below is taken as drafted.
+  - illnesses, medical specialties and operating room lose the sensitive flag; the deadly diseases, HIV, plague, Black Death, bubonic plague, Spanish flu and seasonal depression keep or get theirs.
+  - crease up, fall about, dekko, shufti and squiz become aliases: this reverses Julia's v421 decision (she linked shufti and dekko as separate members, "like gander and squiz").
+  - hair tie and hair elastic stay two roots; mono is the root; hands and feet stays the parent of hand parts, foot parts and fingers; Pap smear, BB cream and CC cream as drafted.
+  - plaster -> a neutral root "adhesive bandage": a later batch, not this one.
+  - Allow-list keys (js/theme-twin-allow.js, added by the manager at apply time):
+      'babies_and_birth|childbirth_words', // childbirth words: a sub-theme of the topic babies and birth, not a same-topic twin (Simon, 2026-11-23, v439)
+      'babies_and_birth|pregnancy_words',  // pregnancy words: a sub-theme of the topic babies and birth, not a same-topic twin (Simon, 2026-11-23, v439)
+      'hand_actions|touch_words',          // touch words: the sense of touch beside actions done with the hands (Simon, 2026-11-23, v439)
+
+The recommendations as drafted (For Simon):
+  1. illnesses, medical specialties and operating room lose the sensitive flag (not religion, politics or death). illnesses passed it down to all its sub-themes (16 after this batch) (common illnesses, allergies, injuries ...), so the game held them back to level 31. The deadly diseases keep their own flag (cancer, dementia, stroke, Ebola, plague, sepsis, HIV, anthrax, palliative care). pregnancy words, childbirth words, maternity ward and mental health words stay sensitive (Julia's themes, reviewed in v428/v427).
+  2. Regional roots with a same-sense standard word became synonym aliases keeping their tag (LIBRARY-RULES 5: one display alias per dialect, and crack up and gander are said in the UK too): crease up, fall about (ways of laughing), dekko, shufti, squiz (ways of looking). They no longer play as separate answers. This reverses Julia's v421 decision, which linked shufti and dekko in ways of looking as separate members, "UK slang for a look, like gander and squiz". Say if they should stay roots.
+  3. xwords-twin, left: pregnancy words (33%) and childbirth words (38%) share words with their parent babies and birth, a topic theme above them; touch words shares 7 touch verbs (pat, pinch, rub, stroke, tickle, poke, caress) with hand actions. Proposal: allow-list the three pairs in js/theme-twin-allow.js (sub-themes of a topic, and the sense of touch beside hand actions).
+  4. plaster [adhesive] 15383 is a UK root with the US alias Band-Aid (shown "Band-Aid" in brand names used as words). Proposal: a neutral root "adhesive bandage" with plaster (UK) and Band-Aid (US) as its regional aliases, in a later batch with Language & Wordplay.
+  5. Julia's themes, left as she and you settled them: lie-in (sleep in is in the same group in sleep), nutrition facts (grouped with nutrition label), kip and forty winks (nap) are regional roots with a near or same-sense standard word; candidates for aliases.
+  6. hair elastic 16179 and hair tie 3798 are one thing, but either text as an alias would contain "hair" in hair care (theme-name), so both stay roots; the tie [elastic loop] stub is deleted (hair elastic, shown "elastic", was grouped with it).
+  7. mononucleosis becomes the synonym alias of mono (the shorter form people use, LIBRARY-RULES 5), which keeps its UK alias glandular fever; mono is in infections and viral illnesses now.
+  8. hands and feet is kept and made the parent of hand parts, foot parts and fingers (it shared 15 and 14 words with them). The alternative is to delete it; fist is linked only there.
+  9. Case calls: Pap smear (Merriam-Webster: Pap smear), BB cream and CC cream (Oxford: BB cream), cranium [skull] lowercase (it had the capital, org type and trademark of the board game Cranium). Recheck Pap smear in Oxford if it matters.
+  10. body systems now holds 13 words, the organ systems as full terms shown short (excretory and urinary grouped as one answer) (circulatory system shown "circulatory" ...); cardiovascular, renal and vascular (adjective stubs) and blood system are deleted, CNS is the alias of central nervous system, GI tract of alimentary canal; six words are left in no theme (orphan list above).
+
+Left as is:
+  - alias-fullname (6): cold sores, cold showers, whole grains, hemp seeds, hair ties, blood types are plural forms (form aliases), not longer names; dragon egg is the cross-group item above.
+  - alias-kind-suspect: luffa is a variant spelling of loofah.
+  - sense-twin: chestnut [horse color] (horse colors, Animals) and chestnut [color] (hair colors here) are separate senses.
+  - clash-large (9): stay within 12 or belong to other groups: eggs/scramble (Food & Drink), sunglasses/shades/shade (kin in other groups), gray/graying in hair colors, white/sclera, the cannabis group (an offensive theme), loofah/sponge, fish, smile/beam, sneak/creep.
+  - family-kin (48): different words (iron/irons, roll/roller, skin/skinner, cut/cutter, spin/spinner, set/setter, comb/comber, pot/potter, pluck/plucky, beans/beanie ...), or pairs already in one group.
+  - ways of breathing: Cheyne-Stokes, Kussmaul, alternate nostril and 4-7-8 are modifier stubs, but their full names (Cheyne-Stokes breathing, alternate nostril breathing) pass 20 letters; left. Trendelenburg (position) likewise.
+  - yoga poses: the asana stubs (mountain, tree, camel ...) are Julia's v426 choice.
+  - hand actions and things your hands do, ways to move and things your feet do, ways of looking and things your eyes do share 10-19 words: the "things your X do" themes are Simon's easy everyday themes (v346), the others the harder ones; not twins.
+  - joints keeps the joint parts (cartilage, ligament, socket, synovial fluid, meniscus): a topic theme of the joints.
+  - Theme names: all 24 characters or fewer.
+  - I30: no theme in the group has a gap of 2 or more (largest 1.5: illegal drugs, an offensive theme that never plays; body systems 1.5 -> 0.5).
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time): warn maybe-duplicate 1 -> 0; contract-root-region 1744 -> 1727; contract-type-common 39 -> 37. contract-dup-root stays 177.
+Line breaks: new or retexted words of 8 or more letters (hinge joint, the "X system" entries, fetal position, Fowler's position, UV protection, SPF lip balm, vitamin C serum, meander, eyeball) need break points at apply time (node tools/brk-tokens.mjs).

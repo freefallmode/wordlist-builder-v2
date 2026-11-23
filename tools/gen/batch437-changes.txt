@@ -1,0 +1,668 @@
+Library batch v437: tidy-up step 3, Places & Geography (254 themes read). 3 themes deleted, 4 moved, 41 second roots merged, 20 entries added, 27 deleted.
+1. Twins and the tree
+  theme balkan_countries "Balkan countries" moves from european_countries to eastern_european_countries "Eastern European nations": all 11 Balkan countries are Eastern European nations (theme-twin 11 of 11): a real subtype, so a sub-theme of it rather than its sibling
+  theme original_thirteen_colonies "Thirteen Colonies" moves from regions to us_states "US states": the 13 colonies are the 13 original states, all in US states (theme-twin 13 of 13): a sub-theme of it
+  theme british_and_irish_rivers "British and Irish rivers" moves from famous_rivers to european_rivers "European rivers": British and Irish rivers are European rivers (theme-twin 7 of 8): a sub-theme of European rivers rather than its sibling
+  theme continents "continents" moves from maps_and_globes to continents_and_supercontinents "continents and supercontinents": the seven continents are a complete subset of continents and supercontinents (theme-twin 8 of 8 once Australia is added): a sub-theme of it
+  deleted theme: countries_in_africa "star flags of Africa" (12 words, all still in other themes): every word is a country of African countries (theme-twin: all or all but one shared) and in its parent flags with stars; the continent split of one flag feature is not a theme a player can tell apart (ident 4)
+  deleted theme: countries_in_asia "star flags of Asia" (16 words, all still in other themes): every word is a country of Asian countries (theme-twin: all or all but one shared) and in its parent flags with stars; the continent split of one flag feature is not a theme a player can tell apart (ident 4)
+  deleted theme: countries_in_oceania "star flags of Oceania" (9 words, all still in other themes): every word is a country of Oceanian countries (theme-twin: all or all but one shared) and in its parent flags with stars; the continent split of one flag feature is not a theme a player can tell apart (ident 4)
+2. Regional roots with a same-sense root (contract-root-region) and second roots of one place
+  Eire 2139 becomes a translation alias of Ireland 2138 (familiarity 4, region IE,UK): the Irish name of Ireland (both were linked in the same 10 themes, grouped): its translation alias, keeping its IE and UK tags
+  Frisco 2242 becomes a abbreviation alias of San Francisco 2241 (familiarity 4, region US): a short nickname of San Francisco (grouped with it in cities and American cities): its US abbreviation (not a synonym, which the game may show as the alternative; reviewer)
+  Lady Liberty 2313 [nickname] becomes a synonym alias of Statue of Liberty 2312 (familiarity 2): the nickname of the Statue of Liberty (grouped with it in 5 themes): its synonym; known everywhere, so untagged
+  Lady Liberty 62566 [statue] merged into Statue of Liberty 2312 and deleted (its text is already the alias Lady Liberty of the statue); links move: famous_statues:1: a second root of the same statue made for famous statues (Statue of Liberty leaks "statue"): the statue takes the link, shown "Lady Liberty"
+  Elizabeth Tower 2315 becomes a synonym alias of Big Ben 2314 (familiarity 4, region UK): the official name of the tower called Big Ben (grouped with it in 4 themes, linked in the same 7): its UK synonym, with nameOkIn where its text holds a word of the theme name (reviewer)
+  Golden Gate 2326 [famous bridge] becomes a synonym alias of Golden Gate Bridge 2325 (familiarity 2): the short name of the bridge (grouped with it in landmarks and US landmarks): its synonym; known everywhere, so untagged
+  Millennium Wheel 2346 becomes a synonym alias of London Eye 2345 (familiarity 4, region UK): the London Eye's first name (grouped with it): its UK synonym
+  Sultan Ahmed Mosque 2364 becomes a synonym alias of Blue Mosque 2363 (familiarity 4, region TR); links move: famous_mosques:1: the official name of the Blue Mosque (grouped with it): its synonym, keeping its TR tag, with nameOkIn for famous mosques (reviewer)
+  Blue Mosque 2363 in famous_mosques: shown "Sultan Ahmed" -> null: the full name, as the other mosques in the theme
+  Blue Mosque 2363: nameOkIn famous_mosques: a mosque's name holds the word
+  Fujiyama 2355 becomes a synonym alias of Mount Fuji 2354 (familiarity 3): another name of Mount Fuji (grouped with it in famous mountains, landmarks and Japanese landmarks; TIDY-UP.md, from v436)
+  alias order: Fuji 32087 moves to the row before Fujiyama 2355: the game shows the first synonym alias in row order as the alternative (GAME-CONTRACT.md, flags 512), and Fuji is the better one (reviewer)
+  Bondi 36614 [Sydney beach] becomes a synonym alias of Bondi Beach 36613 (familiarity 3, region AU): the short name of Bondi Beach (grouped with it in Australian landmarks): its synonym, keeping its AU tag
+  triangulation pillar 2450 becomes a synonym alias of trig point 2449 (familiarity 5, region UK): the formal name of a trig point (grouped with it in maps and globes): its UK synonym
+  Greenwich Meridian 2420 becomes a synonym alias of prime meridian 2419 (familiarity 4, region UK): the prime meridian through Greenwich (grouped with it in two themes): its UK synonym
+  Old Glory 2534 becomes a synonym alias of Stars and Stripes 2533 (familiarity 3, region US): a nickname of the US flag (grouped with it in 3 themes): its US synonym
+  group in national_symbols: Star-Spangled Banner 2535 leaves Stars and Stripes = Star-Spangled Banner (dissolved): the national anthem is a symbol of its own, not another name of the flag (national anthem is in the theme too)
+  group in symbols_of_the_usa: Star-Spangled Banner 2535 leaves Stars and Stripes = Star-Spangled Banner (dissolved): the national anthem is a symbol of its own, not another name of the flag (national anthem is in the theme too)
+  wading pool 57631 becomes a synonym alias of kiddie pool 57632 (familiarity 3, region US): another US word for the kiddie pool (grouped with it in water park): its US synonym, with nameOkIn for swimming pool as paddling pool has (reviewer)
+  alias truncheon 33681 (regional [UK]) moves from nightstick to baton [police] 33682
+  nightstick 33701 becomes a synonym alias of baton 33682 (familiarity 4, region US): a US name for the police baton (grouped with it in police station; both in police words and officer's equipment): its US synonym; truncheon stays the UK display word
+  layby 38439 becomes a spelling alias of lay-by 27385 (familiarity 4); links move: parts_of_a_road:4: a closed spelling of lay-by (lay-by [pull-in] is in traffic words, layby in parts of a road): its spelling
+  stop and go 38412 becomes a spelling alias of stop-and-go 67195 (familiarity 3): one term written with and without hyphens, both in traffic words: its spelling
+  jail 2486: region ["US"] -> []: jail is everyday British English too (fam 1): no region (prison words, buildings)
+  Aussie 38015: region ["AU"] -> []: every UK and US adult knows the word (fam 1), as Kiwi, which is untagged
+  linked: Angora 36158 in old_city_names (typicality 4): the old name of Ankara (in no other theme)
+  out of capital_cities: Angora 36158: an old name of Ankara, not a capital today (grouped with Ankara) (stays in turkish_cities, old_city_names)
+  out of turkish_cities: Angora 36158: an old name of Ankara (grouped with Ankara) (stays in old_city_names)
+  out of foods_named_after_places: bubbly 966: a nickname of champagne, not named after a place (champagne is in the theme; they were grouped) (stays in drinks, new_year, wines, silent_g_words, words_named_after_places, metallic_colors, things_that_pop, nicknames_for_drinks)
+  Washington DC 35774 becomes a synonym alias of Washington 38117 (familiarity 1); links move: capital_cities:1: the same city (Washington [city] is in American capitals and US cities, Washington DC in capital cities)
+  Salt Lake 62825 becomes a abbreviation alias of Salt Lake City 35922 (familiarity 3); links move: american_cities:4: a short name of Salt Lake City, a second root made for American cities: the city takes the link, shown "Salt Lake"
+  Surinam 36146 becomes a spelling alias of Suriname 2202 (familiarity 4): an older spelling of Suriname (grouped with it in 3 themes)
+  The Netherlands 2142 becomes a synonym alias of Netherlands 2140 (familiarity 2): the same name with the article (grouped with Netherlands in 4 themes)
+  Vinson 57169 becomes a synonym alias of Vinson Massif 36535 (familiarity 4); links move: seven_summits:3: the short name of the same mountain (Seven Summits names it "Vinson", which now matches the alias)
+  Galapagos Islands 36587 becomes a synonym alias of Galápagos 57215 (familiarity 2); links move: south_american_landmarks:1 famous_islands:2: the same islands; the root keeps the diacritic (rule 8); nameOkIn for famous islands (reviewer)
+  St Lawrence 36788 becomes a spelling alias of St. Lawrence 57313 (familiarity 3); links move: famous_rivers:3: the same river, written without the period (the library writes St.)
+  Amazon River 60557 becomes a synonym alias of Amazon 36769 (familiarity 1); links move: famous_rivers:1 south_american_rivers:1: the same river; the bare name as Nile; nameOkIn for the river themes (reviewer)
+  Caspian 63268 [Central Asia] merged into Caspian Sea 36861 and deleted (Caspian [pony] keeps the text; the sea needs no second spelling of its short name); links move: asian_waters:3: the same sea, a second root made for Asian waters
+  Hatshepsut 65610 [Egyptian landmark] merged into Temple of Hatshepsut 37349 and deleted (its text is the pharaoh's name); links move: famous_temples:4: a second root of the temple made for famous temples (the person Hatshepsut keeps the text): the temple takes the link, shown "Hatshepsut"
+  Harmandir Sahib 63304 becomes a translation alias of Golden Temple 34327 (familiarity 5); links move: famous_temples:2: the Punjabi name of the Golden Temple (famous temples' note names "Golden Temple"); translation, so the game does not show it (fam 5) as the synonym alternative
+  Golden Temple 34327 in famous_temples: shown "Harmandir Sahib" -> null: the temple's everyday name, in full
+  Golden Temple 34327: nameOkIn famous_temples: its name holds the word, as Temple of Heaven
+  Great Pyramid of Giza 37205 becomes a synonym alias of Great Pyramid 6659 (familiarity 1); links move: ancient_wonders:1 egyptian_landmarks:1: the same pyramid (Seven Ancient Wonders' note: "Great Pyramid of Giza (Great Pyramid)")
+  Sphinx 2357 [Giza] becomes a synonym alias of Great Sphinx 37118 (familiarity 2); links move: landmarks:2 ancient_egypt:2 egyptian_symbols:3: the same monument at Giza (Sphinx [Giza] was in landmarks, ancient Egypt and Egyptian symbols): its synonym; also clears two contract-dup-root hits (sphinx after Sphinx)
+  Great Sphinx 37118 in egyptian_symbols: shown "sphinx" -> "Sphinx": a shown text keeps the root's capital (the show came from Sphinx [Giza])
+  Tower of Pisa 2323 becomes a synonym alias of Leaning Tower of Pisa 2324 (familiarity 1): the same tower, linked only in landmarks and grouped with it; nameOkIn for famous towers (reviewer)
+  Neuschwanstein 2372 becomes a synonym alias of Neuschwanstein Castle 2373 (familiarity 3): the same castle, linked only in landmarks and grouped with it
+  LoC 63862 becomes a abbreviation alias of Line of Control 37881 (familiarity 4): the abbreviation of the Line of Control (grouped with it; both were in lines on a map, where Line of Control keeps its link and full name)
+  mailbag 38225 becomes a spelling alias of mail bag 35180 (familiarity 3): one word written open and closed, both in post office (the open form shows "mail" in ___ bag)
+  teepee 48535 [tent] becomes a spelling alias of tepee 48547 (familiarity 3); links move: words_from_native_american_languages:2; better typicality kept: tent_types 3 -> 2: one word, two spellings, both in tent types (Merriam-Webster: tepee, also teepee)
+  tepee 48547: fam 4 -> 3: as teepee (tepee was 4)
+3. Wrong senses
+  new entry: Lincoln 68189 [Nebraska] noun, place, familiarity 3: Lincoln, Nebraska (named after Abraham Lincoln), the state capital; the old entry is the English city
+  linked: Lincoln 68189 in us_state_capitals (typicality 4): the Nebraska sense
+  out of us_state_capitals: Lincoln 29892: wrong sense: Lincoln 68189 [Nebraska] takes the link (stays in british_cities, places_named_after_people, us_cities)
+  linked: Lincoln 68189 in places_named_after_people (typicality 3): the Nebraska sense
+  out of places_named_after_people: Lincoln 29892: wrong sense: Lincoln 68189 [Nebraska] takes the link (stays in british_cities, us_cities)
+  linked: Lincoln 68189 in us_cities (typicality 3): the Nebraska sense
+  out of us_cities: Lincoln 29892: wrong sense: Lincoln 68189 [Nebraska] takes the link (stays in british_cities)
+  Lincoln 29892: gloss "city" -> "England": its text is shared with Lincoln [Nebraska]
+  new entry: Dover 68190 [Delaware] noun, place, familiarity 4: the capital of Delaware; the old entry is the English port
+  linked: Dover 68190 in us_state_capitals (typicality 4): the Delaware sense
+  out of us_state_capitals: Dover 36048: wrong sense: Dover 68190 [Delaware] takes the link (stays in port_cities, ports_in_europe)
+  Dover 36048: gloss "city" -> "England": its text is shared with Dover [Delaware]
+  new entry: Charleston 68191 [West Virginia] noun, place, familiarity 4: the capital of West Virginia; the old entry is the South Carolina port
+  linked: Charleston 68191 in us_state_capitals (typicality 4): the West Virginia sense
+  out of us_state_capitals: Charleston 36057: wrong sense: Charleston 68191 [West Virginia] takes the link (stays in port_cities, places_named_after_people, ports_in_the_americas, us_cities)
+  Charleston 36057: gloss "city" -> "South Carolina": its text is shared with Charleston [West Virginia]
+  new entry: Hamilton 68192 [New Zealand] noun, place, familiarity 4: the New Zealand city; the old entry is Hamilton, Ontario
+  linked: Hamilton 68192 in new_zealand_cities (typicality 2): the New Zealand sense
+  out of new_zealand_cities: Hamilton 35946: wrong sense: Hamilton 68192 [New Zealand] takes the link (stays in canadian_cities, oceanian_cities)
+  linked: Hamilton 68192 in oceanian_cities (typicality 5): the New Zealand sense
+  out of oceanian_cities: Hamilton 35946: wrong sense: Hamilton 68192 [New Zealand] takes the link (stays in canadian_cities)
+  Hamilton 35946: gloss "city" -> "Ontario": its text is shared with Hamilton [New Zealand]
+  new entry: Newcastle 68193 [Australia] noun, place, familiarity 4: Newcastle, New South Wales; the old entry is the English city
+  linked: Newcastle 68193 in australian_cities (typicality 3): the Australia sense
+  out of australian_cities: Newcastle 56863: wrong sense: Newcastle 68193 [Australia] takes the link (stays in british_cities)
+  Newcastle 56863: gloss "" -> "England": its text is shared with Newcastle [Australia]
+  new entry: Kingston 68194 [Jamaica] noun, place, familiarity 3: the capital of Jamaica; the old entry is Kingston, Ontario
+  linked: Kingston 68194 in american_capitals (typicality 3): the Jamaica sense
+  out of american_capitals: Kingston 35959: wrong sense: Kingston 68194 [Jamaica] takes the link (stays in canadian_cities)
+  Kingston 35959: gloss "city" -> "Ontario": its text is shared with Kingston [Jamaica]
+  cordoba 56798: gloss "" -> "currency": its text is now shared with the plain spellings of Córdoba
+  new entry: Córdoba 68195 [Argentina] noun, place, familiarity 4: the Argentine city; the old entry is the Spanish city
+  linked: Córdoba 68195 in south_american_cities (typicality 4): the Argentina sense
+  out of south_american_cities: Córdoba 35975: wrong sense: Córdoba 68195 [Argentina] takes the link (stays in spanish_cities)
+  Córdoba 35975: gloss "city" -> "Spain": its text is shared with Córdoba [Argentina]
+  new entry: Cordoba 68196 [Spain] noun, place, familiarity 3, spelling alias of Córdoba 35975: the plain form, kept as a spelling (rule 8)
+  new entry: Cordoba 68197 [Argentina] noun, place, familiarity 4, spelling alias of Córdoba 68195: the plain form, kept as a spelling (rule 8)
+  new entry: Hanover 68198 [city] noun, place, familiarity 3: the German city; the old entry is the royal house
+  linked: Hanover 68198 in german_cities (typicality 4): the city sense
+  out of german_cities: Hanover 22853: wrong sense: Hanover 68198 [city] takes the link (stays in dynasties, royal_houses)
+  Hanover 22853: gloss "" -> "royal house": its text is shared with Hanover [city]
+  new entry: Cannes 68199 [city] noun, place, familiarity 2: the French city; the old entry is the film festival
+  linked: Cannes 68199 in french_cities (typicality 3): the city sense
+  out of french_cities: Cannes 12769: wrong sense: Cannes 68199 [city] takes the link (stays in film_festivals)
+  Cannes 12769: gloss "" -> "film festival": its text is shared with Cannes [city]
+  new entry: Busan 68200 [city] noun, place, familiarity 4: the Korean port city (fam 4); the old entry is the film festival
+  linked: Busan 68200 in asian_cities (typicality 4): the city sense
+  out of asian_cities: Busan 12777: wrong sense: Busan 68200 [city] takes the link (stays in film_festivals, port_cities, ports_in_asia)
+  linked: Busan 68200 in port_cities (typicality 3): the city sense
+  out of port_cities: Busan 12777: wrong sense: Busan 68200 [city] takes the link (stays in film_festivals, ports_in_asia)
+  linked: Busan 68200 in ports_in_asia (typicality 3): the city sense
+  out of ports_in_asia: Busan 12777: wrong sense: Busan 68200 [city] takes the link (stays in film_festivals)
+  Busan 12777: gloss "" -> "film festival": its text is shared with Busan [city]
+  new entry: Normandy 68201 [battle] noun, proper, familiarity 2: the 1944 Battle of Normandy (D-Day), adult and sensitive as war; the old entry is the French region
+  linked: Normandy 68201 in wars_and_battles (typicality 3): the battle sense
+  out of wars_and_battles: Normandy 6829: wrong sense: Normandy 68201 [battle] takes the link (stays in famous_battles, french_regions, european_holiday_regions, world_war_ii_battles)
+  linked: Normandy 68201 in famous_battles (typicality 2): the battle sense
+  out of famous_battles: Normandy 6829: wrong sense: Normandy 68201 [battle] takes the link (stays in french_regions, european_holiday_regions, world_war_ii_battles)
+  linked: Normandy 68201 in world_war_ii_battles (typicality 1): the battle sense
+  out of world_war_ii_battles: Normandy 6829: wrong sense: Normandy 68201 [battle] takes the link (stays in french_regions, european_holiday_regions)
+  Normandy 6829: adult true -> false: the region: the war flags go with the battle sense
+  Normandy 6829: sensitive true -> false: the region: the war flags go with the battle sense
+  new entry: Cyprus 68202 [country] noun, place, familiarity 2: the country, as Malta, Fiji and Mauritius have country and island entries; the island keeps famous islands and Mediterranean islands
+  linked: Cyprus 68202 in european_countries (typicality 5): the country sense
+  out of european_countries: Cyprus 36576: wrong sense: Cyprus 68202 [country] takes the link (stays in famous_islands, island_nations, tiny_countries, middle_eastern_countries, mediterranean_islands)
+  linked: Cyprus 68202 in island_nations (typicality 3): the country sense
+  out of island_nations: Cyprus 36576: wrong sense: Cyprus 68202 [country] takes the link (stays in famous_islands, tiny_countries, middle_eastern_countries, mediterranean_islands)
+  linked: Cyprus 68202 in tiny_countries (typicality 4): the country sense
+  out of tiny_countries: Cyprus 36576: wrong sense: Cyprus 68202 [country] takes the link (stays in famous_islands, middle_eastern_countries, mediterranean_islands)
+  linked: Cyprus 68202 in middle_eastern_countries (typicality 5): the country sense
+  out of middle_eastern_countries: Cyprus 36576: wrong sense: Cyprus 68202 [country] takes the link (stays in famous_islands, mediterranean_islands)
+  new entry: bangka 68203 [island] noun, place, familiarity 5: the Indonesian island Bangka; the old entry is the Philippine boat
+  linked: bangka 68203 in indonesian_islands (typicality 5): the island sense
+  out of indonesian_islands: bangka 57233: wrong sense: bangka 68203 [island] takes the link (stays in traditional_boats)
+  bangka 57233: gloss "" -> "boat": its text is shared with bangka [island]
+  text: bangka 68203 -> "Bangka": an island is a proper noun
+  new entry: Baffin Bay 68204 noun, place, familiarity 4: Baffin Bay (the old entry is Baffin Island, in famous islands); a full name shown short, as Hudson Bay (reviewer)
+  linked: Baffin Bay 68204 in gulfs_and_bays (typicality 4, shown "Baffin"): the bay
+  out of gulfs_and_bays: Baffin 63166: wrong sense: Baffin Bay 68204 takes the link (stays in famous_islands)
+  new entry: Altai 68205 [mountains] noun, place, familiarity 4: the Altai Mountains; the old entry is the Turkic language
+  linked: Altai 68205 in mountain_ranges (typicality 5): the mountains sense
+  out of mountain_ranges: Altai 25901: wrong sense: Altai 68205 [mountains] takes the link (stays in turkic_languages)
+  Altai 25901: gloss "" -> "language": its text is shared with Altai [mountains]
+  new entry: Neapolitan 68206 [Naples] noun, proper, familiarity 3: a person from Naples, as Florentine [of Florence]; the old entry is the ice cream
+  linked: Neapolitan 68206 in city_demonyms (typicality 5): the Naples sense
+  out of city_demonyms: Neapolitan 20207: wrong sense: Neapolitan 68206 [Naples] takes the link (stays in ice_cream_parlor, ice_cream_flavors)
+  new entry: Gold Coast 68207 [colony] noun, place, familiarity 3: the old name of Ghana; the old entry is the Queensland city
+  linked: Gold Coast 68207 in old_country_names (typicality 3): the colony sense
+  out of old_country_names: Gold Coast 36020: wrong sense: Gold Coast 68207 [colony] takes the link (stays in oceanian_cities, beach_destinations, australian_cities)
+  linked: goggles 48808 in swimming_pool (typicality 2): swimming goggles (sense-twin)
+  out of swimming_pool: goggles 24786: wrong sense: goggles 48808 [swimming] takes the link (stays in eyewear, things_that_come_in_pairs, lab_equipment, swimming_words, skiing_words, sports_equipment, science_lab, factory, lab_safety_gear, protective_equipment, pairs_you_wear, protective_gear, bike_gear)
+  group in swimming_pool: safety glasses 50008 = goggles 48808: goggles 48808 takes the place of goggles 24786
+  linked: Fiji 36586 in pacific_islands (typicality 1): the island group (sense-twin; Fiji [country] stays in island nations and Oceanian countries)
+  out of pacific_islands: Fiji 35766: wrong sense: Fiji 36586 [islands] takes the link (stays in oceanian_countries, island_nations, flags_with_crosses, flags_with_animals, beach_destinations, island_getaways)
+  Hastings 59399: adult true -> false: the New Zealand city, not the battle (flags copied from Hastings [battle])
+  Hastings 59399: sensitive true -> false: the New Zealand city, not the battle
+  out of north_american_rivers: Yellowstone 31943: the park / the city entry, not the river (the theme has 38 rivers) (stays in famous_parks, us_landmarks, us_national_parks, american_natural_wonders, geothermal_wonders)
+  out of north_american_rivers: Sacramento 57043: the park / the city entry, not the river (the theme has 38 rivers) (stays in us_state_capitals)
+  out of pacific_islands: bikini 24468: the swimsuit, not Bikini Atoll (stays in swimwear, words_named_after_places, things_with_strings, beach)
+  out of famous_parks: English garden 30774: the garden style, not Munich's Englischer Garten (stays in garden_styles)
+  out of places_that_are_also_words: Cuba 2157: not an English word or a homophone of one (stays in countries, pirate_places, north_american_countries, island_nations, spanish_speaking_countries, famous_islands, flags_with_stars, caribbean_islands)
+  out of places_that_are_also_words: Eyam 20971: not an English word or a homophone of one (stays in black_death)
+4. Belonging
+  out of western_european_countries: Gibraltar 60511: a British territory, not a country (stays in straits and canals) (stays in straits_and_canals)
+  linked: DR Congo 60518 in central_african_lands (typicality 2): the largest Central African country, missing from the theme
+  out of southern_african_countries: DR Congo 60518: Central Africa (now in Central African nations) (stays in central_african_lands)
+  out of middle_eastern_countries: Kurdistan 60514: a region, not a country (now in no theme: not exported)
+  deleted entry: Kurdistan 60514: a stub made for middle_eastern_countries only; in no theme now
+  deleted alias: Reunion 67858: the plain spelling of Réunion, which goes
+  out of east_african_countries: Réunion 60515: a French overseas department, not a country (now in no theme: not exported)
+  deleted entry: Réunion 60515: a stub made for east_african_countries only; in no theme now
+  out of east_african_countries: Mayotte 60516: a French overseas department, not a country (now in no theme: not exported)
+  deleted entry: Mayotte 60516: a stub made for east_african_countries only; in no theme now
+  out of middle_eastern_countries: Gaza Strip 60512: a territory, not a country; Palestine (sensitive) stays (Simon, 2026-11-23) (now in no theme: not exported)
+  deleted entry: Gaza Strip 60512: a stub made for middle_eastern_countries only; in no theme now
+  out of middle_eastern_countries: West Bank 60513: a territory, not a country; Palestine (sensitive) stays (Simon, 2026-11-23) (now in no theme: not exported)
+  deleted entry: West Bank 60513: a stub made for middle_eastern_countries only; in no theme now
+  out of east_african_countries: Somaliland 60517: an unrecognised state, not a country of the list (Simon, 2026-11-23) (now in no theme: not exported)
+  deleted entry: Somaliland 60517: a stub made for east_african_countries only; in no theme now
+  Pompeii 6874: sensitive true -> false: an ancient city: not religion, politics or death in the narrow v417 sense (Simon, 2026-11-23)
+  server 4111: region ["US"] -> []: stays a root apart from waiter (v413); the US tag goes (Simon, 2026-11-23)
+  theme central_african_lands: note "" -> "Central African Republic is left out: its name is over the 20-letter limit (Simon, 2026-11-23)": why the obvious member is missing
+  out of wine_regions: Chablis 19671: the wine entry, not the region (rule 9: a wine and its region are separate entries; the wine themes keep them) (stays in wines, foods_named_after_places, white_wines)
+  out of wine_regions: Barolo 19672: the wine entry, not the region (rule 9: a wine and its region are separate entries; the wine themes keep them) (stays in wines, red_wines, wines_named_for_places)
+  out of flags_with_crosses: Greenland 32063: its flag has a disc, no cross (stays in polar_regions, famous_islands, red_and_white_flags, places_ending_in_land, cold_things, flags_with_a_sun, polar_and_frozen_places)
+  out of red_and_white_flags: Trinidad 37968: the flag of Trinidad and Tobago is red, black and white (stays in caribbean_islands)
+  out of flags_with_a_sun: Palau 35769: the disc on its flag is the moon (stays in oceanian_countries, island_nations, tiny_countries, pacific_islands)
+  out of flags_with_a_sun: Vergina Star 63868: an ancient emblem, not a national flag (now in no theme: not exported)
+  deleted entry: Vergina Star 63868: a stub made for flags_with_a_sun only; in no theme now
+  out of flags_with_a_sun: Vergina Sun 60554: an ancient emblem, not a national flag (now in no theme: not exported)
+  deleted entry: Vergina Sun 60554: a stub made for flags_with_a_sun only; in no theme now
+  out of tricolor_flags: Austria 2163: a two-color triband, not a tricolor (stays in countries, european_countries, landlocked_countries, red_and_white_flags, countries_ending_in_ia, western_european_countries)
+  out of tricolor_flags: Peru 2158: a two-color triband, not a tricolor (stays in countries, rhymes_with_blue, andes, south_american_countries, spanish_speaking_countries, red_and_white_flags)
+  out of tricolor_flags: Nigeria 2177: a two-color triband, not a tricolor (stays in countries, african_countries, countries_ending_in_ia, west_african_countries)
+  out of flags_with_animals: Scotland 48: the national flag has no animal (Scotland's is the saltire, the lion rampant is the royal banner; Lithuania's is a plain tricolor) (stays in uk_nations, celts, flags_with_crosses, places_ending_in_land, western_european_countries)
+  out of flags_with_animals: Lithuania 35676: the national flag has no animal (Scotland's is the saltire, the lion rampant is the royal banner; Lithuania's is a plain tricolor) (stays in european_countries, tricolor_flags, countries_ending_in_ia, eastern_european_countries)
+  group in flags_with_animals: California 36160 = Bear Flag 60556: California's flag is the Bear Flag: one answer
+  out of places_ending_in_land: Siam 2180: does not end in "land" (stays in old_country_names, countries, asian_countries, tricolor_flags)
+  out of countries_ending_in_ia: Arabia 37855: a region, not a country (Saudi Arabia is in the theme) (stays in world_regions)
+  out of places_named_after_people: Saigon 2282: not named after a person (Ho Chi Minh City and New York are) (stays in old_city_names, cities)
+  out of places_named_after_people: Big Apple 2221: not named after a person (Ho Chi Minh City and New York are) (stays in cities, american_cities)
+  out of lines_on_a_map: Durand 62622: a bare person stub for the Durand Line (LIBRARY-RULES 5: never a bare stub) (now in no theme: not exported)
+  deleted entry: Durand 62622: a stub made for lines_on_a_map only; in no theme now
+  out of lines_on_a_map: Radcliffe 62623: a bare person stub for the Radcliffe Line (now in no theme: not exported)
+  deleted entry: Radcliffe 62623: a stub made for lines_on_a_map only; in no theme now
+  out of kinds_of_maps: Google Maps 2418: an app, not a kind of map (stays in maps and globes) (stays in maps_and_globes)
+  linked: Australia 37812 in continents (typicality 1): the seven-continent list most people learn names Australia; grouped with Oceania as one item
+  group in continents: Oceania 37815 = Australia 37812: Oceania and Australia, one continent
+  typicality: Oceania 37815 in continents 4 -> 2: a member of a complete set is never 4-5 just for being named later
+  theme continents: note "Africa, Antarctica, Asia, Europe, North America, Oceania, South America" -> "Africa, Antarctica, Asia, Europe, North America, Oceania (Australia), South America": Australia, the usual name of the continent, as the alternative
+  text: indoor indoor fountain 57497 -> "indoor fountain": the word was typed twice
+  street 28439: fam 3 -> 1: every child knows it (typicality 1 in road types)
+  out of police_station: doggo 1439: internet slang for a dog (police dog is in the theme) (stays in domestic_animals, pets, things_with_teeth, things_with_eyes, things_with_tongues, things_with_tails)
+  out of vet_clinic: silicon chip 50004: the computer part, not the pet microchip (microchip is in the theme) (stays in electronic_parts, semiconductor_devices)
+  out of hospital: hospice 3506: a separate place of care, not part of a hospital (stays in medicine)
+  out of public_buildings: toilet 23134: the fixture, not a building (stays in bathroom, bathroom_fixtures, plumbing_words, things_with_lids, words_for_toilet)
+  out of street_furniture: mail slot 35174: a slot in a door, not street furniture (stays in post office) (stays in post_office, windows_and_doors, parts_of_a_door, blank_box)
+  out of swimming_pool: safety glasses 50008: safety eyewear, not swimming goggles (stays in factory, eyewear, swimming_words, skiing_words, sports_equipment, lab_equipment, science_lab, things_that_come_in_pairs, protective_equipment, pairs_you_wear, protective_gear, glasses_types)
+  out of art_gallery: museum 2472: another place, not a thing in a gallery (stays in buildings, art, dinosaur_words, words_from_mythology, quiet_things, tourist_attractions, public_buildings)
+  out of builders_tools: theodolite 7248: a surveyor's instrument (stays in construction site) (stays in measurement, navigation_tools, measuring_tools, measuring_instruments, optical_instruments, construction_site)
+  out of dentist_s_office: drill 4799: dental drill and dental probe are in the theme (drill [tool] is the power tool, probe the space probe) (stays in tools, power_tools, construction_site, builders_tools, in_a_toolbox, loud_things)
+  out of dentist_s_office: probe 57567: dental drill and dental probe are in the theme (drill [tool] is the power tool, probe the space probe) (stays in space_vehicles)
+  group in dentist_s_office: tooth extraction 15434 = extraction 57569: tooth extraction and extraction, one answer
+  linked: ski school 43555 in ski_resort (typicality 3, nameOkIn: the full name contains a word of the theme name): the ski school (school [building] is the building)
+  out of ski_resort: school 2465: wrong sense: ski school 43555 takes the link (stays in buildings, public_buildings)
+  linked: ski patrol 43542 in ski_resort (typicality 4, nameOkIn: the full name contains a word of the theme name): the ski patrol (patrol is the police and military sense)
+  out of ski_resort: patrol 4215: wrong sense: ski patrol 43542 takes the link (stays in law_and_order, military, police_words, military_units, ski_trip)
+  out of middle_eastern_buildings: Alhambra 2360: in Spain, not the Middle East (stays in landmarks, famous_palaces, spanish_landmarks)
+  out of national_costumes: gaucho 38553: a person, not a costume (bombachas is in the theme) (stays in words_from_south_american_languages, gaucho_words)
+  linked: Shard 38283 in famous_towers (typicality 3): London's tallest building, from towers and skyscrapers (its only theme)
+  out of towers_and_skyscrapers: Big Ben 2314: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in landmarks, new_year, famous_towers, tall_things, things_that_tick, london_landmarks)
+  out of towers_and_skyscrapers: Empire State Building 2328: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in landmarks, us_landmarks, tall_things, new_york_landmarks, famous_buildings)
+  out of towers_and_skyscrapers: Burj Khalifa 2337: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in landmarks, famous_buildings, huge_things, tall_things)
+  out of towers_and_skyscrapers: Pisa 56924: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in italian_cities)
+  out of towers_and_skyscrapers: Chrysler Building 37041: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in new_york_landmarks, famous_buildings)
+  out of towers_and_skyscrapers: CN Tower 2370: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in landmarks, famous_towers, canadian_landmarks, tall_things)
+  out of towers_and_skyscrapers: Shard 38283: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in famous_towers)
+  out of towers_and_skyscrapers: Space Needle 2367: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in landmarks, famous_towers, us_landmarks, tall_things)
+  out of towers_and_skyscrapers: Shanghai Tower 37092: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in famous_towers)
+  out of towers_and_skyscrapers: Taipei 101 37043: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in famous_buildings, tall_things)
+  out of towers_and_skyscrapers: Tokyo Skytree 37090: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in famous_towers, japanese_landmarks, tall_things)
+  out of towers_and_skyscrapers: Willis Tower 37050: a named tower or skyscraper in a theme of kinds of tower (its note); it stays in famous towers or famous buildings (stays in famous_buildings, famous_towers)
+  out of towers_and_skyscrapers: Eiffel 62559: a bare stub of Eiffel Tower (famous towers shows Eiffel Tower as "Eiffel") (now in no theme: not exported)
+  deleted entry: Eiffel 62559: a stub made for towers_and_skyscrapers only; in no theme now
+  out of towers_and_skyscrapers: Petronas 62564: a bare stub of Petronas Towers (famous towers shows it as "Petronas") (now in no theme: not exported)
+  deleted entry: Petronas 62564: a stub made for towers_and_skyscrapers only; in no theme now
+  linked: Tower of Babel 20525 in famous_towers (typicality 4, shown "Babel"): the full name of the stub Babel (sensitive, as the stub was)
+  out of famous_towers: Babel 62565: a bare stub of Tower of Babel (now in no theme: not exported)
+  deleted entry: Babel 62565: a stub made for famous_towers only; in no theme now
+  text: Belem 62558 -> "Belem Tower": a bare stub becomes the full name (LIBRARY-RULES 5), shown short as Eiffel Tower is
+  Belem Tower 62558 in famous_towers: shown null -> "Belem": the short name, as the other towers
+  text: Ostankino 62563 -> "Ostankino Tower": a bare stub becomes the full name (LIBRARY-RULES 5), shown short as Eiffel Tower is
+  Ostankino Tower 62563 in famous_towers: shown null -> "Ostankino": the short name, as the other towers
+  text: Azadi 62557 -> "Azadi Tower": a bare stub becomes the full name (LIBRARY-RULES 5), shown short as Eiffel Tower is
+  Azadi Tower 62557 in famous_towers: shown null -> "Azadi": the short name, as the other towers
+  text: Jin Mao 62561 -> "Jin Mao Tower": a bare stub becomes the full name (LIBRARY-RULES 5), shown short as Eiffel Tower is
+  Jin Mao Tower 62561 in famous_towers: shown null -> "Jin Mao": the short name, as the other towers
+4b. Bare stubs in the water and street themes become full names, shown short (reviewer; LIBRARY-RULES 5: never a bare stub)
+  text: Mexico 63251 -> "Gulf of Mexico": a bare stub becomes the full name Gulf of Mexico
+  Gulf of Mexico 63251: gloss "Texas shore" -> "": the full name needs no gloss
+  Gulf of Mexico 63251 in gulfs_and_bays: shown null -> "Mexico": the short name, as the theme shows the others
+  text: Bengal 63241 -> "Bay of Bengal": a bare stub becomes the full name Bay of Bengal
+  Bay of Bengal 63241: gloss "Indian sea" -> "": the full name needs no gloss
+  Bay of Bengal 63241 in gulfs_and_bays: shown null -> "Bengal": the short name, as the theme shows the others
+  text: Biscay 63242 -> "Bay of Biscay": a bare stub becomes the full name Bay of Biscay
+  Bay of Biscay 63242 in gulfs_and_bays: shown null -> "Biscay": the short name, as the theme shows the others
+  text: Chesapeake 63246 -> "Chesapeake Bay": a bare stub becomes the full name Chesapeake Bay
+  Chesapeake Bay 63246 in gulfs_and_bays: shown null -> "Chesapeake": the short name, as the theme shows the others
+  text: Halong 63253 -> "Halong Bay": a bare stub becomes the full name Halong Bay
+  Halong Bay 63253 in gulfs_and_bays: shown null -> "Halong": the short name, as the theme shows the others
+  linked: Bay of Fundy 36961 in gulfs_and_bays (typicality 3, shown "Fundy"): the full name of the stub Fundy
+  out of gulfs_and_bays: Fundy 63243: a bare stub: Bay of Fundy takes the link (now in no theme: not exported)
+  deleted entry: Fundy 63243: a bare stub of Bay of Fundy, in no theme now
+  text: Montego 63255 -> "Montego Bay": a bare stub becomes the full name Montego Bay
+  Montego Bay 63255 in gulfs_and_bays: shown null -> "Montego": the short name, as the theme shows the others
+  text: Monterey 63256 -> "Monterey Bay": a bare stub becomes the full name Monterey Bay
+  Monterey Bay 63256 in gulfs_and_bays: shown null -> "Monterey": the short name, as the theme shows the others
+  text: Aqaba 63248 -> "Gulf of Aqaba": a bare stub becomes the full name Gulf of Aqaba
+  Gulf of Aqaba 63248 in gulfs_and_bays: shown null -> "Aqaba": the short name, as the theme shows the others
+  text: Biscayne 63245 -> "Biscayne Bay": a bare stub becomes the full name Biscayne Bay
+  Biscayne Bay 63245: gloss "Florida" -> "": the full name needs no gloss
+  Biscayne Bay 63245 in gulfs_and_bays: shown null -> "Biscayne": the short name, as the theme shows the others
+  text: Bothnia 63249 -> "Gulf of Bothnia": a bare stub becomes the full name Gulf of Bothnia
+  Gulf of Bothnia 63249 in gulfs_and_bays: shown null -> "Bothnia": the short name, as the theme shows the others
+  text: Carpentaria 63250 -> "Gulf of Carpentaria": a bare stub becomes the full name Gulf of Carpentaria
+  Gulf of Carpentaria 63250 in gulfs_and_bays: shown null -> "Carpentaria": the short name, as the theme shows the others
+  text: Guanabara 63247 -> "Guanabara Bay": a bare stub becomes the full name Guanabara Bay
+  Guanabara Bay 63247 in gulfs_and_bays: shown null -> "Guanabara": the short name, as the theme shows the others
+  text: Morecambe 63257 -> "Morecambe Bay": a bare stub becomes the full name Morecambe Bay
+  Morecambe Bay 63257 in gulfs_and_bays: shown null -> "Morecambe": the short name, as the theme shows the others
+  text: Tonkin 63252 -> "Gulf of Tonkin": a bare stub becomes the full name Gulf of Tonkin
+  Gulf of Tonkin 63252 in gulfs_and_bays: shown null -> "Tonkin": the short name, as the theme shows the others
+  text: Walvis 63259 -> "Walvis Bay": a bare stub becomes the full name Walvis Bay
+  Walvis Bay 63259 in gulfs_and_bays: shown null -> "Walvis": the short name, as the theme shows the others
+  text: Jervis 63254 -> "Jervis Bay": a bare stub becomes the full name Jervis Bay
+  Jervis Bay 63254 in gulfs_and_bays: shown null -> "Jervis": the short name, as the theme shows the others
+  text: Kotor 63244 -> "Bay of Kotor": a bare stub becomes the full name Bay of Kotor
+  Bay of Kotor 63244 in gulfs_and_bays: shown null -> "Kotor": the short name, as the theme shows the others
+  text: Moreton 63258 -> "Moreton Bay": a bare stub becomes the full name Moreton Bay
+  Moreton Bay 63258 in gulfs_and_bays: shown null -> "Moreton": the short name, as the theme shows the others
+  text: Panama 62660 -> "Panama Canal": a bare stub becomes the full name Panama Canal
+  Panama Canal 62660: gloss "waterway" -> "": the full name needs no gloss
+  Panama Canal 62660 in straits_and_canals: shown null -> "Panama": the short name, as the theme shows the others
+  Panama Canal 62660: nameOkIn famous_canals: the full name holds the word, as the other members there
+  linked: Suez Canal 36908 in straits_and_canals (typicality 1, shown "Suez"): the full name of the stub Suez
+  out of straits_and_canals: Suez 62662: a bare stub: Suez Canal takes the link (now in no theme: not exported)
+  deleted entry: Suez 62662: a bare stub of Suez Canal, in no theme now
+  text: Gibraltar 60511 -> "Strait of Gibraltar": a bare stub becomes the full name Strait of Gibraltar
+  Strait of Gibraltar 60511 in straits_and_canals: shown null -> "Gibraltar": the short name, as the theme shows the others
+  text: Bering 63230 -> "Bering Strait": a bare stub becomes the full name Bering Strait
+  Bering Strait 63230 in straits_and_canals: shown null -> "Bering": the short name, as the theme shows the others
+  text: Hormuz 63234 -> "Strait of Hormuz": a bare stub becomes the full name Strait of Hormuz
+  Strait of Hormuz 63234 in straits_and_canals: shown null -> "Hormuz": the short name, as the theme shows the others
+  linked: Strait of Malacca 21270 in straits_and_canals (typicality 2, shown "Malacca"): the full name of the stub Malacca
+  out of straits_and_canals: Malacca 63236: a bare stub: Strait of Malacca takes the link (now in no theme: not exported)
+  deleted entry: Malacca 63236: a bare stub of Strait of Malacca, in no theme now
+  text: Magellan 63235 -> "Strait of Magellan": a bare stub becomes the full name Strait of Magellan
+  Strait of Magellan 63235: gloss "Chile" -> "": the full name needs no gloss
+  Strait of Magellan 63235 in straits_and_canals: shown null -> "Magellan": the short name, as the theme shows the others
+  linked: Corinth Canal 36920 in straits_and_canals (typicality 3, shown "Corinth"): the full name of the stub Corinth
+  out of straits_and_canals: Corinth 62657: a bare stub: Corinth Canal takes the link (now in no theme: not exported)
+  deleted entry: Corinth 62657 [isthmus]: a bare stub of Corinth Canal, in no theme now
+  text: Kiel 62659 -> "Kiel Canal": a bare stub becomes the full name Kiel Canal
+  Kiel Canal 62659: gloss "waterway" -> "": the full name needs no gloss
+  Kiel Canal 62659 in straits_and_canals: shown null -> "Kiel": the short name, as the theme shows the others
+  Kiel Canal 62659: nameOkIn famous_canals: the full name holds the word, as the other members there
+  text: Menai 63231 -> "Menai Strait": a bare stub becomes the full name Menai Strait
+  Menai Strait 63231 in straits_and_canals: shown null -> "Menai": the short name, as the theme shows the others
+  text: Torres 63238 -> "Torres Strait": a bare stub becomes the full name Torres Strait
+  Torres Strait 63238 in straits_and_canals: shown null -> "Torres": the short name, as the theme shows the others
+  linked: Rideau Canal 36927 in straits_and_canals (typicality 4, shown "Rideau"): the full name of the stub Rideau
+  out of straits_and_canals: Rideau 62661: a bare stub: Rideau Canal takes the link (now in no theme: not exported)
+  deleted entry: Rideau 62661: a bare stub of Rideau Canal, in no theme now
+  text: Bonifacio 63233 -> "Strait of Bonifacio": a bare stub becomes the full name Strait of Bonifacio
+  Strait of Bonifacio 63233 in straits_and_canals: shown null -> "Bonifacio": the short name, as the theme shows the others
+  text: Palk 63232 -> "Palk Strait": a bare stub becomes the full name Palk Strait
+  Palk Strait 63232 in straits_and_canals: shown null -> "Palk": the short name, as the theme shows the others
+  text: Sunda 63237 -> "Sunda Strait": a bare stub becomes the full name Sunda Strait
+  Sunda Strait 63237 in straits_and_canals: shown null -> "Sunda": the short name, as the theme shows the others
+  text: Tsushima 63239 -> "Tsushima Strait": a bare stub becomes the full name Tsushima Strait
+  Tsushima Strait 63239 in straits_and_canals: shown null -> "Tsushima": the short name, as the theme shows the others
+  text: Gaspé 63175 -> "Gaspé Peninsula": a bare stub becomes the full name Gaspé Peninsula
+  Gaspé Peninsula 63175 in peninsulas: shown null -> "Gaspé": the short name, as the theme shows the others
+  text: Kenai 63177 -> "Kenai Peninsula": a bare stub becomes the full name Kenai Peninsula
+  Kenai Peninsula 63177 in peninsulas: shown null -> "Kenai": the short name, as the theme shows the others
+  text: Shandong 63178 -> "Shandong Peninsula": a bare stub becomes the full name Shandong Peninsula
+  Shandong Peninsula 63178 in peninsulas: shown null -> "Shandong": the short name, as the theme shows the others
+  text: Yorke 63179 -> "Yorke Peninsula": a bare stub becomes the full name Yorke Peninsula
+  Yorke Peninsula 63179 in peninsulas: shown null -> "Yorke": the short name, as the theme shows the others
+  text: Gaspe 63175 alias -> "Gaspe Peninsula": the plain spelling follows its root (rule 8)
+  out of peninsulas: Iberian 63176: a bare stub of the Iberian Peninsula; Iberia is in the theme (they were grouped) (now in no theme: not exported)
+  deleted entry: Iberian 63176: a stub made for peninsulas only; in no theme now
+  out of peninsulas: Balkan 63174: a bare stub of the Balkan Peninsula; Balkans is in the theme (they were grouped) (now in no theme: not exported)
+  deleted entry: Balkan 63174: a stub made for peninsulas only; in no theme now
+  linked: Downing Street 33602 in famous_streets (typicality 2, shown "Downing"): the full name of the stub Downing
+  out of famous_streets: Downing 62636: a bare stub: Downing Street takes the link (now in no theme: not exported)
+  deleted entry: Downing 62636: a bare stub of Downing Street, in no theme now
+  linked: Wall Street 34068 in famous_streets (typicality 1, shown "Wall"): the full name of the stub Wall
+  out of famous_streets: Wall 62641: a bare stub: Wall Street takes the link (now in no theme: not exported)
+  deleted entry: Wall 62641 [finance]: a bare stub of Wall Street, in no theme now
+  Downing Street 33602: type "proper" -> "place": a street is a place, as the other famous streets
+  text: Carnaby 62596 -> "Carnaby Street": a bare stub becomes the full name Carnaby Street
+  Carnaby Street 62596 in famous_streets: shown null -> "Carnaby": the short name, as the theme shows the others
+  text: Lombard 62597 -> "Lombard Street": a bare stub becomes the full name Lombard Street
+  Lombard Street 62597 in famous_streets: shown null -> "Lombard": the short name, as the theme shows the others
+  text: Bleecker 62595 -> "Bleecker Street": a bare stub becomes the full name Bleecker Street
+  Bleecker Street 62595 in famous_streets: shown null -> "Bleecker": the short name, as the theme shows the others
+  out of street_names: Broadway 12388: a famous street, not a common street name (it is in famous streets; reviewer) (stays in musicals_words)
+  out of street_names: Fifth Avenue 37253: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Park Avenue 37262: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Abbey Road 37256: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Baker Street 37257: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Downing Street 33602: a famous street, not a common street name (it is in famous streets; reviewer) (stays in british_politics, famous_streets)
+  out of street_names: Penny Lane 37265: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Sunset Boulevard 37260: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Wall Street 34068: a famous street, not a common street name (it is in famous streets; reviewer) (stays in stock_market_words, new_york_landmarks, famous_streets)
+  out of street_names: Orchard Road 37277: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Bourbon Street 37268: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+  out of street_names: Fleet Street 37272: a famous street, not a common street name (it is in famous streets; reviewer) (stays in famous_streets)
+4c. Seven Ancient Wonders as an exact set: one root per wonder, the other names its aliases (reviewer)
+  alias Pharos 37212 (abbreviation) moves to Alexandria Lighthouse 37211
+  Pharos of Alexandria 37210 becomes a synonym alias of Alexandria Lighthouse 37211 (familiarity 4); better typicality kept: ancient_wonders 3 -> 2, seven_wonders_of_the_ancient_world 3 -> 2: the same lighthouse (grouped in both wonders themes); its alias Pharos moves with it
+  Zeus at Olympia 60561 merged into Statue of Zeus 37129 and deleted (as the only synonym alias (fam 5) the game would show it as the alternative of Statue of Zeus (fam 3)): the same statue (grouped in three themes), a stand-in made for the set
+  Colossus 60559 becomes a abbreviation alias of Colossus of Rhodes 37119 (familiarity 3): the short name of the same statue (grouped in three themes)
+  Temple of Diana 37209 becomes a synonym alias of Temple of Artemis 37208 (familiarity 4): the same temple under its Roman name (grouped in three themes)
+  Gardens of Babylon 60560 becomes a synonym alias of Hanging Gardens 6653 (familiarity 3): the same gardens (grouped in five themes)
+  Tomb of Mausolus 37214 becomes a synonym alias of Mausoleum of Mausolus 37213 (familiarity 4); links move: seven_wonders_of_the_ancient_world:4: the same tomb (grouped with it in wonders of the world)
+  theme seven_wonders_of_the_ancient_world: note "Great Pyramid of Giza (Great Pyramid), Hanging Gardens of Babylon (Hanging Gardens), Statue of Zeus, Temple of Artemis, Mausoleum at Halicarnassus (Tomb of Mausolus), Colossus of Rhodes, Lighthouse of Alexandria (Pharos of Alexandria)" -> "Great Pyramid of Giza (Great Pyramid), Hanging Gardens of Babylon (Hanging Gardens), Statue of Zeus, Temple of Artemis, Mausoleum of Mausolus (Tomb of Mausolus), Colossus of Rhodes, Lighthouse of Alexandria (Alexandria Lighthouse)": one item per root after the merges
+5. Case, type, spelling and aliases
+  text: white house 33580 -> "White House": the president's house is a proper noun
+  White House 33580: type "common" -> "place": the president's house is a proper noun
+  White House 33580 in blank_house: shown "white" -> "White": keeps the root's capital
+  Normal 38139: gloss "ordinary" -> "Illinois": the town of Normal, Illinois (the gloss said ordinary)
+  Terracotta Army 6657: type "org" -> "proper": an army of statues, not an organisation
+  Jolly Roger 6766: type "person" -> "proper": a flag, not a person
+  Lake Biwa 36859 in famous_lakes: shown "biwa" -> "Biwa": the shown text keeps the capital
+  text: Nordrhein-Westfalen 36402 -> "North Rhine-Westphalia": the English name, as Bavaria and Lower Saxony
+  new entry: Nordrhein-Westfalen 68208 noun, place, familiarity 5, translation alias of North Rhine-Westphalia 36402 [DE]: the German name
+  theme german_states: note "Exactly: Berlin, Hamburg, Bavaria, Bremen, Saxony, Hesse, Brandenburg, Thuringia, Saarland, Lower Saxony, Schleswig-Holstein, Saxony-Anhalt, Rhineland-Palatinate, Baden-Württemberg, Nordrhein-Westfalen, Mecklenburg." -> "Exactly: Berlin, Hamburg, Bavaria, Bremen, Saxony, Hesse, Brandenburg, Thuringia, Saarland, Lower Saxony, Schleswig-Holstein, Saxony-Anhalt, Rhineland-Palatinate, Baden-Württemberg, North Rhine-Westphalia, Mecklenburg.": the member's English name
+  Vladimir 56262: fam 2 -> 4: the city, not the name (Kazan and Omsk are 4)
+  combine harvester 3132: aliasKind "spelling" -> "synonym": the full name of the combine, not a spelling of it (alias-kind-suspect)
+  tae kwon do 5400: type "phrase" -> "common": a spelling alias takes its root's type (alias-kind-suspect)
+  world map 2402: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  treasure map 2403: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  road map 2404: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  street map 2405: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  prime meridian 2419: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  contour lines 48668: type "phrase" -> "common": a spelling or form alias takes its root's type
+  contour line 2430: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  contour 2431: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  isoline 2432: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  grid reference 2436: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  map reference 2437: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  topographic map 2441: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  nautical chart 2442: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  trig point 2449: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  relief map 2451: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  mappa mundi 2452: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  portolan chart 2453: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  rhumb line 2458: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  great circle 2459: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  cadastral map 2460: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  loxodrome 62624: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  flag of convenience 37992: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  rising sun 2539: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  mail carrier 4120: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  flying disc 5934: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  monkey bars 5976: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  physical therapist 4160: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  officer 63879: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  aerial work platform 3135: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  holding pattern 2765: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  metal detector 6897: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  luggage tag 48762: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  air traffic controller 2747: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  still life 6293: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  oil painting 6298: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  box office 6416: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  ski poles 48873: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  town hall 2493: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  oast house 2518: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  rush hour 2668: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  bus lane 2678: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  national anthem 2523: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  coat of arms 2526: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  red dragon 2545: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  fleur-de-lys 2549: type "phrase" -> "common": a spelling or form alias takes its root's type
+  fleur de lis 2550: type "phrase" -> "common": a spelling or form alias takes its root's type
+  fleur-de-lis 2548: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  double-headed eagle 2557: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  hammer and sickle 2558: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  great seal 2562: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  fish and chips 817: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  sepak takraw 5226: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  table tennis 5244: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  ping pong 5245: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  whiff-whaff 5246: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+  ice hockey 5349: type "phrase" -> "common": the name of a thing, not an idiom: type phrase is for idioms and set phrases (LIBRARY-RULES 4)
+6. Shown texts
+  Elizabeth Tower 2315 (alias of Big Ben 2314): nameOkIn famous_towers: its text holds a word of the theme name, as the root's
+  Tower of Pisa 2323 (alias of Leaning Tower of Pisa 2324): nameOkIn famous_towers: its text holds a word of the theme name, as the root's
+  Sultan Ahmed Mosque 2364 (alias of Blue Mosque 2363): nameOkIn famous_mosques: its text holds a word of the theme name, as the root's
+  Galapagos Islands 36587 (alias of Galápagos 57215): nameOkIn pacific_islands, famous_islands: its text holds a word of the theme name, as the root's
+  Temple of Diana 37209 (alias of Temple of Artemis 37208): nameOkIn famous_temples: its text holds a word of the theme name, as the root's
+  wading pool 57631 (alias of kiddie pool 57632): nameOkIn swimming_pool: its text holds a word of the theme name, as the root's
+  Amazon River 60557 (alias of Amazon 36769): nameOkIn famous_rivers, south_american_rivers: its text holds a word of the theme name, as the root's
+  Gaspe Peninsula 67874 (alias of Gaspé Peninsula 63175): nameOkIn peninsulas: its text holds a word of the theme name, as the root's
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  american_capitals: "American capitals" pop 3 ident 3: 30 words, easy/middle/hard 4/14/12, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "American capitals" pop 3 ident 3: 30 words, easy/middle/hard 4/15/11, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  american_cities: "American cities" pop 1 ident 2: 47 words, easy/middle/hard 15/18/14, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "American cities" pop 1 ident 2: 46 words, easy/middle/hard 15/18/13, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  ancient_wonders: "wonders of the world" pop 2 ident 3: 29 words, easy/middle/hard 7/11/11, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "wonders of the world" pop 2 ident 3: 23 words, easy/middle/hard 7/9/7, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  art_gallery: "art gallery" pop 2 ident 2: 63 words, easy/middle/hard 15/17/31, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "art gallery" pop 2 ident 2: 62 words, easy/middle/hard 14/17/31, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  asian_cities: "Asian cities" pop 2 ident 3: 43 words, easy/middle/hard 12/14/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "Asian cities" pop 2 ident 3: 43 words, easy/middle/hard 12/14/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  asian_waters: "Asian waters" pop 4 ident 3: 13 words, easy/middle/hard 0/4/9, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "Asian waters" pop 4 ident 3: 13 words, easy/middle/hard 0/4/9, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  australian_cities: "Australian cities" pop 3 ident 2: 31 words, easy/middle/hard 5/5/21, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Australian cities" pop 3 ident 2: 31 words, easy/middle/hard 5/4/22, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  australian_landmarks: "Australian landmarks" pop 4 ident 2: 41 words, easy/middle/hard 5/2/34, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "Australian landmarks" pop 4 ident 2: 40 words, easy/middle/hard 5/1/34, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  balkan_countries: "Balkan countries" pop 3 ident 3: 11 words, easy/middle/hard 0/6/5, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "Balkan countries" pop 3 ident 3: 11 words, easy/middle/hard 0/6/5, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  british_and_irish_rivers: "British and Irish rivers" pop 3 ident 3: 8 words, easy/middle/hard 1/3/4, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "British and Irish rivers" pop 3 ident 3: 8 words, easy/middle/hard 1/3/4, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  builders_tools: "builders' tools" pop 3 ident 3: 12 words, easy/middle/hard 3/6/3, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "builders' tools" pop 3 ident 3: 11 words, easy/middle/hard 3/6/2, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  capital_cities: "capital cities" pop 1 ident 2: 78 words, easy/middle/hard 26/30/22, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "capital cities" pop 1 ident 2: 77 words, easy/middle/hard 26/30/21, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  central_african_lands: "Central African nations" pop 4 ident 3: 8 words, easy/middle/hard 0/1/7, theme difficulty 3.5, 4th-easiest band 4, gap 0.5 -> "Central African nations" pop 4 ident 3: 9 words, easy/middle/hard 1/1/7, theme difficulty 3.5, 4th-easiest band 4, gap 0.5
+  cities: "cities" pop 1 ident 1: 82 words, easy/middle/hard 41/15/26, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "cities" pop 1 ident 1: 81 words, easy/middle/hard 41/15/25, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  city_demonyms: "city demonyms" pop 4 ident 4: 40 words, easy/middle/hard 7/14/19, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "city demonyms" pop 4 ident 4: 40 words, easy/middle/hard 7/14/19, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  continents: "continents" pop 1 ident 1: 7 words, easy/middle/hard 6/0/1, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "continents" pop 1 ident 1: 8 words, easy/middle/hard 8/0/0, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  countries: "countries" pop 1 ident 1: 91 words, easy/middle/hard 44/20/27, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "countries" pop 1 ident 1: 88 words, easy/middle/hard 43/20/25, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  countries_ending_in_ia: "countries ending in ia" pop 3 ident 3: 40 words, easy/middle/hard 18/17/5, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "countries ending in ia" pop 3 ident 3: 39 words, easy/middle/hard 18/17/4, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  dentist_s_office: "dentist's office" pop 2 ident 2: 62 words, easy/middle/hard 22/26/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "dentist's office" pop 2 ident 2: 60 words, easy/middle/hard 21/25/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  east_african_countries: "East African countries" pop 4 ident 3: 22 words, easy/middle/hard 4/3/15, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "East African countries" pop 4 ident 3: 19 words, easy/middle/hard 4/3/12, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  egyptian_landmarks: "Egyptian landmarks" pop 3 ident 2: 39 words, easy/middle/hard 5/6/28, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Egyptian landmarks" pop 3 ident 2: 39 words, easy/middle/hard 5/6/28, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  european_countries: "European countries" pop 2 ident 2: 50 words, easy/middle/hard 20/10/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "European countries" pop 2 ident 2: 48 words, easy/middle/hard 19/10/19, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  famous_islands: "famous islands" pop 2 ident 2: 67 words, easy/middle/hard 19/23/25, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "famous islands" pop 2 ident 2: 66 words, easy/middle/hard 19/23/24, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  famous_lakes: "famous lakes" pop 3 ident 2: 48 words, easy/middle/hard 8/15/25, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "famous lakes" pop 3 ident 2: 48 words, easy/middle/hard 8/15/25, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  famous_mosques: "famous mosques" pop 4 ident 3: 32 words, easy/middle/hard 0/5/27, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "famous mosques" pop 4 ident 3: 32 words, easy/middle/hard 0/6/26, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  famous_mountains: "famous mountains" pop 2 ident 2: 41 words, easy/middle/hard 3/14/24, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "famous mountains" pop 2 ident 2: 40 words, easy/middle/hard 3/13/24, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  famous_parks: "famous parks" pop 3 ident 3: 40 words, easy/middle/hard 4/12/24, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "famous parks" pop 3 ident 3: 39 words, easy/middle/hard 4/12/23, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  famous_rivers: "famous rivers" pop 2 ident 1: 59 words, easy/middle/hard 12/23/24, theme difficulty 1, 4th-easiest band 2, gap 1.0 -> "famous rivers" pop 2 ident 1: 59 words, easy/middle/hard 12/23/24, theme difficulty 1, 4th-easiest band 2, gap 1.0
+  famous_statues: "famous statues" pop 3 ident 3: 37 words, easy/middle/hard 6/9/22, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "famous statues" pop 3 ident 3: 35 words, easy/middle/hard 6/8/21, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  famous_streets: "famous streets" pop 3 ident 3: 44 words, easy/middle/hard 14/6/24, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "famous streets" pop 3 ident 3: 44 words, easy/middle/hard 14/6/24, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  famous_temples: "famous temples" pop 4 ident 3: 49 words, easy/middle/hard 2/3/44, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "famous temples" pop 4 ident 3: 48 words, easy/middle/hard 2/4/42, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  famous_towers: "famous towers" pop 3 ident 2: 35 words, easy/middle/hard 3/6/26, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "famous towers" pop 3 ident 2: 35 words, easy/middle/hard 3/7/25, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  flag_words: "flag words" pop 4 ident 3: 35 words, easy/middle/hard 7/11/17, theme difficulty 3.5, 4th-easiest band 1, gap -2.5 -> "flag words" pop 4 ident 3: 34 words, easy/middle/hard 7/10/17, theme difficulty 3.5, 4th-easiest band 1, gap -2.5
+  flags_with_a_sun: "flags with a sun" pop 4 ident 4: 27 words, easy/middle/hard 3/6/18, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "flags with a sun" pop 4 ident 4: 24 words, easy/middle/hard 3/6/15, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  flags_with_animals: "flags with animals" pop 3 ident 3: 30 words, easy/middle/hard 5/8/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "flags with animals" pop 3 ident 3: 28 words, easy/middle/hard 4/8/16, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  flags_with_crosses: "flags with crosses" pop 3 ident 3: 32 words, easy/middle/hard 12/4/16, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "flags with crosses" pop 3 ident 3: 31 words, easy/middle/hard 12/4/15, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  flags_with_stars: "flags with stars" pop 3 ident 3: 54 words, easy/middle/hard 16/11/27, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "flags with stars" pop 3 ident 3: 53 words, easy/middle/hard 16/11/26, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  foods_named_after_places: "foods named after places" pop 3 ident 3: 39 words, easy/middle/hard 9/15/15, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "foods named after places" pop 3 ident 3: 38 words, easy/middle/hard 9/14/15, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  french_cities: "French cities" pop 3 ident 2: 31 words, easy/middle/hard 3/11/17, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "French cities" pop 3 ident 2: 31 words, easy/middle/hard 3/11/17, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  german_cities: "German cities" pop 4 ident 2: 30 words, easy/middle/hard 4/9/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "German cities" pop 4 ident 2: 30 words, easy/middle/hard 4/9/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  german_states: "German states" pop 3 ident 3: 16 words, easy/middle/hard 3/4/9, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "German states" pop 3 ident 3: 16 words, easy/middle/hard 3/4/9, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  gulfs_and_bays: "gulfs and bays" pop 4 ident 4: 49 words, easy/middle/hard 5/14/30, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "gulfs and bays" pop 4 ident 4: 49 words, easy/middle/hard 5/14/30, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  hospital: "hospital" pop 1 ident 1: 66 words, easy/middle/hard 18/25/23, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "hospital" pop 1 ident 1: 65 words, easy/middle/hard 18/25/22, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  indonesian_islands: "Indonesian islands" pop 4 ident 3: 33 words, easy/middle/hard 3/5/25, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "Indonesian islands" pop 4 ident 3: 33 words, easy/middle/hard 3/5/25, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  island_nations: "island nations" pop 2 ident 2: 48 words, easy/middle/hard 15/16/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "island nations" pop 2 ident 2: 47 words, easy/middle/hard 15/16/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  islands_near_britain: "islands near Britain" pop 3 ident 3: 10 words, easy/middle/hard 1/4/5, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "islands near Britain" pop 3 ident 3: 9 words, easy/middle/hard 1/4/4, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  istanbul_landmarks: "Istanbul landmarks" pop 4 ident 2: 24 words, easy/middle/hard 0/4/20, theme difficulty 2.5, 4th-easiest band 3, gap 0.5 -> "Istanbul landmarks" pop 4 ident 2: 23 words, easy/middle/hard 0/4/19, theme difficulty 2.5, 4th-easiest band 3, gap 0.5
+  japanese_landmarks: "Japanese landmarks" pop 4 ident 3: 42 words, easy/middle/hard 1/5/36, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "Japanese landmarks" pop 4 ident 3: 41 words, easy/middle/hard 1/4/36, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  kinds_of_maps: "kinds of maps" pop 3 ident 3: 32 words, easy/middle/hard 9/10/13, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "kinds of maps" pop 3 ident 3: 31 words, easy/middle/hard 9/9/13, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  landmarks: "landmarks" pop 2 ident 2: 80 words, easy/middle/hard 33/22/25, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "landmarks" pop 2 ident 2: 72 words, easy/middle/hard 31/19/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  lines_on_a_map: "lines on a map" pop 3 ident 3: 33 words, easy/middle/hard 5/9/19, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "lines on a map" pop 3 ident 3: 29 words, easy/middle/hard 5/9/15, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  london_landmarks: "London landmarks" pop 2 ident 2: 38 words, easy/middle/hard 13/11/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "London landmarks" pop 2 ident 2: 36 words, easy/middle/hard 13/11/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  maps_and_globes: "maps and globes" pop 2 ident 2: 75 words, easy/middle/hard 21/29/25, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "maps and globes" pop 2 ident 2: 73 words, easy/middle/hard 21/29/23, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  middle_eastern_buildings: "Middle Eastern buildings" pop 4 ident 4: 32 words, easy/middle/hard 2/11/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "Middle Eastern buildings" pop 4 ident 4: 30 words, easy/middle/hard 2/11/17, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  middle_eastern_countries: "Middle Eastern countries" pop 2 ident 3: 20 words, easy/middle/hard 8/5/7, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "Middle Eastern countries" pop 2 ident 3: 17 words, easy/middle/hard 8/5/4, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  mountain_ranges: "mountain ranges" pop 2 ident 2: 39 words, easy/middle/hard 6/12/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "mountain ranges" pop 2 ident 2: 39 words, easy/middle/hard 6/12/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  national_costumes: "national costumes" pop 3 ident 3: 44 words, easy/middle/hard 3/9/32, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "national costumes" pop 3 ident 3: 43 words, easy/middle/hard 3/8/32, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  national_symbols: "national symbols" pop 3 ident 3: 50 words, easy/middle/hard 16/17/17, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "national symbols" pop 3 ident 3: 48 words, easy/middle/hard 16/16/16, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  new_york_landmarks: "New York landmarks" pop 2 ident 2: 40 words, easy/middle/hard 13/14/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "New York landmarks" pop 2 ident 2: 39 words, easy/middle/hard 13/13/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  new_zealand_cities: "New Zealand cities" pop 4 ident 3: 21 words, easy/middle/hard 1/4/16, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "New Zealand cities" pop 4 ident 3: 22 words, easy/middle/hard 1/3/18, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  north_american_rivers: "North American rivers" pop 4 ident 3: 38 words, easy/middle/hard 6/10/22, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "North American rivers" pop 4 ident 3: 36 words, easy/middle/hard 6/8/22, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  oceanian_cities: "Oceanian cities" pop 3 ident 3: 37 words, easy/middle/hard 4/9/24, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "Oceanian cities" pop 3 ident 3: 37 words, easy/middle/hard 4/9/24, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  old_city_names: "old city names" pop 4 ident 2: 31 words, easy/middle/hard 2/10/19, theme difficulty 2.5, 4th-easiest band 3, gap 0.5 -> "old city names" pop 4 ident 2: 32 words, easy/middle/hard 2/10/20, theme difficulty 2.5, 4th-easiest band 3, gap 0.5
+  old_country_names: "old country names" pop 3 ident 2: 31 words, easy/middle/hard 7/9/15, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "old country names" pop 3 ident 2: 31 words, easy/middle/hard 7/9/15, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  original_thirteen_colonies: "Thirteen Colonies" pop 2 ident 3: 13 words, easy/middle/hard 7/6/0, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "Thirteen Colonies" pop 2 ident 3: 13 words, easy/middle/hard 7/6/0, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  pacific_islands: "Pacific islands" pop 3 ident 3: 32 words, easy/middle/hard 4/13/15, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "Pacific islands" pop 3 ident 3: 31 words, easy/middle/hard 4/13/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  parts_of_a_road: "parts of a road" pop 3 ident 3: 34 words, easy/middle/hard 10/11/13, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "parts of a road" pop 3 ident 3: 34 words, easy/middle/hard 10/11/13, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  peninsulas: "peninsulas" pop 4 ident 3: 40 words, easy/middle/hard 0/14/26, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "peninsulas" pop 4 ident 3: 38 words, easy/middle/hard 0/12/26, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  places_ending_in_land: "places ending in land" pop 4 ident 3: 35 words, easy/middle/hard 14/10/11, theme difficulty 3.5, 4th-easiest band 1, gap -2.5 -> "places ending in land" pop 4 ident 3: 33 words, easy/middle/hard 14/9/10, theme difficulty 3.5, 4th-easiest band 1, gap -2.5
+  places_named_after_people: "places named for people" pop 4 ident 4: 52 words, easy/middle/hard 12/22/18, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "places named for people" pop 4 ident 4: 50 words, easy/middle/hard 12/21/17, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  places_that_are_also_words: "places that are words" pop 5 ident 5: 31 words, easy/middle/hard 3/8/20, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "places that are words" pop 5 ident 5: 29 words, easy/middle/hard 3/8/18, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  police_station: "police station" pop 2 ident 2: 38 words, easy/middle/hard 9/20/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "police station" pop 2 ident 2: 36 words, easy/middle/hard 9/19/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  port_cities: "port cities" pop 3 ident 3: 57 words, easy/middle/hard 9/24/24, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "port cities" pop 3 ident 3: 57 words, easy/middle/hard 9/24/24, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  ports_in_asia: "ports in Asia" pop 3 ident 3: 14 words, easy/middle/hard 4/3/7, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "ports in Asia" pop 3 ident 3: 14 words, easy/middle/hard 4/3/7, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  post_office: "post office" pop 2 ident 2: 57 words, easy/middle/hard 15/22/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "post office" pop 2 ident 2: 56 words, easy/middle/hard 15/21/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  public_buildings: "public buildings" pop 2 ident 3: 34 words, easy/middle/hard 11/10/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "public buildings" pop 2 ident 3: 33 words, easy/middle/hard 11/10/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  red_and_white_flags: "red and white flags" pop 3 ident 3: 23 words, easy/middle/hard 8/6/9, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "red and white flags" pop 3 ident 3: 22 words, easy/middle/hard 8/6/8, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  seven_summits: "Seven Summits" pop 4 ident 3: 7 words, easy/middle/hard 2/0/5, theme difficulty 3.5, 4th-easiest band 4, gap 0.5 -> "Seven Summits" pop 4 ident 3: 7 words, easy/middle/hard 2/0/5, theme difficulty 3.5, 4th-easiest band 4, gap 0.5
+  seven_wonders_of_the_ancient_world: "Seven Ancient Wonders" pop 2 ident 2: 12 words, easy/middle/hard 1/7/4, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "Seven Ancient Wonders" pop 2 ident 2: 7 words, easy/middle/hard 1/5/1, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  ski_resort: "ski resort" pop 2 ident 2: 37 words, easy/middle/hard 11/11/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "ski resort" pop 2 ident 2: 37 words, easy/middle/hard 11/11/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  south_american_cities: "South American cities" pop 3 ident 3: 37 words, easy/middle/hard 4/9/24, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "South American cities" pop 3 ident 3: 37 words, easy/middle/hard 4/9/24, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  south_american_countries: "South American countries" pop 2 ident 2: 13 words, easy/middle/hard 6/4/3, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "South American countries" pop 2 ident 2: 12 words, easy/middle/hard 6/4/2, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  south_american_landmarks: "South American landmarks" pop 3 ident 3: 41 words, easy/middle/hard 9/9/23, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "South American landmarks" pop 3 ident 3: 40 words, easy/middle/hard 8/9/23, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  south_american_rivers: "South American rivers" pop 4 ident 3: 35 words, easy/middle/hard 1/4/30, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "South American rivers" pop 4 ident 3: 35 words, easy/middle/hard 1/4/30, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  southern_african_countries: "Southern African nations" pop 4 ident 3: 17 words, easy/middle/hard 4/3/10, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "Southern African nations" pop 4 ident 3: 16 words, easy/middle/hard 4/3/9, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  straits_and_canals: "straits and canals" pop 4 ident 3: 42 words, easy/middle/hard 3/8/31, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "straits and canals" pop 4 ident 3: 42 words, easy/middle/hard 3/8/31, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  street_furniture: "street furniture" pop 2 ident 2: 34 words, easy/middle/hard 16/8/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "street furniture" pop 2 ident 2: 33 words, easy/middle/hard 16/7/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  street_names: "street names" pop 4 ident 4: 36 words, easy/middle/hard 12/11/13, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "street names" pop 4 ident 4: 24 words, easy/middle/hard 12/8/4, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  swimming_pool: "swimming pool" pop 2 ident 2: 35 words, easy/middle/hard 10/11/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "swimming pool" pop 2 ident 2: 34 words, easy/middle/hard 10/11/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  symbols_of_the_usa: "symbols of the USA" pop 2 ident 2: 9 words, easy/middle/hard 4/3/2, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "symbols of the USA" pop 2 ident 2: 7 words, easy/middle/hard 4/2/1, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  tiny_countries: "tiny countries" pop 3 ident 2: 36 words, easy/middle/hard 1/8/27, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "tiny countries" pop 3 ident 2: 36 words, easy/middle/hard 1/8/27, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  towers_and_skyscrapers: "towers and skyscrapers" pop 3 ident 3: 36 words, easy/middle/hard 9/10/17, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "towers and skyscrapers" pop 3 ident 3: 21 words, easy/middle/hard 4/5/12, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  traffic_words: "traffic words" pop 2 ident 2: 47 words, easy/middle/hard 13/18/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "traffic words" pop 2 ident 2: 46 words, easy/middle/hard 13/17/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  tricolor_flags: "tricolor flags" pop 3 ident 3: 44 words, easy/middle/hard 10/14/20, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "tricolor flags" pop 3 ident 3: 39 words, easy/middle/hard 9/12/18, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  turkish_cities: "Turkish cities" pop 4 ident 3: 31 words, easy/middle/hard 1/2/28, theme difficulty 3.5, 4th-easiest band 4, gap 0.5 -> "Turkish cities" pop 4 ident 3: 30 words, easy/middle/hard 1/2/27, theme difficulty 3.5, 4th-easiest band 4, gap 0.5
+  us_cities: "US cities named after people" pop 4 ident 4: 16 words, easy/middle/hard 2/9/5, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "US cities named after people" pop 4 ident 4: 16 words, easy/middle/hard 2/9/5, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  us_landmarks: "US landmarks" pop 2 ident 2: 67 words, easy/middle/hard 20/27/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "US landmarks" pop 2 ident 2: 65 words, easy/middle/hard 19/26/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  us_state_capitals: "US state capitals" pop 2 ident 3: 50 words, easy/middle/hard 9/13/28, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "US state capitals" pop 2 ident 3: 50 words, easy/middle/hard 9/13/28, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  vet_clinic: "vet clinic" pop 2 ident 2: 46 words, easy/middle/hard 8/19/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "vet clinic" pop 2 ident 2: 45 words, easy/middle/hard 8/19/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  water_park: "water park" pop 2 ident 2: 30 words, easy/middle/hard 8/13/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "water park" pop 2 ident 2: 29 words, easy/middle/hard 8/12/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  western_european_countries: "Western European nations" pop 2 ident 3: 26 words, easy/middle/hard 11/8/7, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "Western European nations" pop 2 ident 3: 23 words, easy/middle/hard 10/8/5, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  wine_regions: "wine regions" pop 3 ident 3: 48 words, easy/middle/hard 6/8/34, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "wine regions" pop 3 ident 3: 46 words, easy/middle/hard 6/8/32, theme difficulty 3, 4th-easiest band 2, gap -1.0
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 20: Lincoln 68189 [Nebraska], Dover 68190 [Delaware], Charleston 68191 [West Virginia], Hamilton 68192 [New Zealand], Newcastle 68193 [Australia], Kingston 68194 [Jamaica], Córdoba 68195 [Argentina], Cordoba 68196 [Spain], Cordoba 68197 [Argentina], Hanover 68198 [city], Cannes 68199 [city], Busan 68200 [city], Normandy 68201 [battle], Cyprus 68202 [country], Bangka 68203 [island], Baffin Bay 68204, Altai 68205 [mountains], Neapolitan 68206 [Naples], Gold Coast 68207 [colony], Nordrhein-Westfalen 68208
+Entries deleted 27: Lady Liberty 62566, Caspian 63268, Hatshepsut 65610, Kurdistan 60514, Reunion 67858, Réunion 60515, Mayotte 60516, Gaza Strip 60512, West Bank 60513, Somaliland 60517, Vergina Star 63868, Vergina Sun 60554, Durand 62622, Radcliffe 62623, Eiffel 62559, Petronas 62564, Babel 62565, Fundy 63243, Suez 62662, Malacca 63236, Corinth 62657, Rideau 62661, Iberian 63176, Balkan 63174, Downing 62636, Wall 62641, Zeus at Olympia 60561
+library changes 460; entries changed 321; status set to rev 277
+Checks: changed kinds: info:alias-kind-suspect 44 -> 42, info:family-kin 350 -> 354, info:overlap 4914 -> 4909, info:sense-twin 87 -> 85, info:theme-twin 41 -> 33
+Checks after (errors and warnings): long 5, maybe-duplicate 1, rating-vs-zipf 159, theme-gap 1, theme-name 3
+Export contract (family export, zipf): contract-dup-root 177 -> 174, contract-root-region 1744 -> 1728, contract-type-common 39 -> 35; after: contract-dup-root 174, contract-root-region 1728, contract-type-common 35
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3227 -> 3224; gone countries_in_africa (index 854), countries_in_asia (index 855), countries_in_oceania (index 856); new none; theme indexes shift: from index 691 ("balkan_countries", was "western_european_countries") to the last index 3223
+Entry rows 61024 -> 61017; first row whose entry changed: 2327 (Fuji 32087, was Fujiyama 2355); rows that moved: 33241; added Normandy 6829 (row 6615), Hastings 59399 (row 54902), Lincoln 68189 (row 60998), Dover 68190 (row 60999), Charleston 68191 (row 61000), Hamilton 68192 (row 61001), Newcastle 68193 (row 61002), Kingston 68194 (row 61003), Córdoba 68195 (row 61004), Cordoba 68196 (row 61005), Cordoba 68197 (row 61006), Hanover 68198 (row 61007), Cannes 68199 (row 61008), Busan 68200 (row 61009), Cyprus 68202 (row 61010), Bangka 68203 (row 61011), Baffin Bay 68204 (row 61012), Altai 68205 (row 61013), Neapolitan 68206 (row 61014), Gold Coast 68207 (row 61015), Nordrhein-Westfalen 68208 (row 61016); removed 20971 (row 19670), 60512 (row 55972), 60513 (row 55973), 60514 (row 55974), 60515 (row 55975), 60516 (row 55976), 60517 (row 55977), 60554 (row 56012), 60561 (row 56018), 62559 (row 57892), 62564 (row 57895), 62565 (row 57896), 62566 (row 57897), 62622 (row 57938), 62623 (row 57939), 62636 (row 57950), 62641 (row 57952), 62657 (row 57965), 62661 (row 57969), 62662 (row 57970), 63174 (row 58390), 63176 (row 58392), 63236 (row 58437), 63243 (row 58443), 63268 (row 58468), 63868 (row 58595), 65610 (row 58979), 67858 (row 60698)
+root -> alias rows 37: Eire 2139, The Netherlands 2142, Frisco 2242, Lady Liberty 2313, Elizabeth Tower 2315, Tower of Pisa 2323, Golden Gate 2326, Millennium Wheel 2346, Fujiyama 2355, Sphinx 2357, Sultan Ahmed Mosque 2364, Neuschwanstein 2372, Greenwich Meridian 2420, triangulation pillar 2450, Old Glory 2534, nightstick 33701, Washington DC 35774, Surinam 36146, Galapagos Islands 36587, Bondi 36614, St Lawrence 36788, Great Pyramid of Giza 37205, Temple of Diana 37209, Pharos of Alexandria 37210, Tomb of Mausolus 37214, mailbag 38225, stop and go 38412, layby 38439, teepee 48535, Vinson 57169, wading pool 57631, Amazon River 60557, Colossus 60559, Gardens of Babylon 60560, Salt Lake 62825, Harmandir Sahib 63304, LoC 63862; alias -> root rows 0: none
+Links 100154 -> 99968; rows whose link count changed: 177
+Link-index shifts: from row 48 (Wales 49) on, link positions move
+Rows whose text changed: White House 33580 (was "white house"), North Rhine-Westphalia 36402 (was "Nordrhein-Westfalen"), indoor fountain 57497 (was "indoor indoor fountain"), Strait of Gibraltar 60511 (was "Gibraltar"), Azadi Tower 62557 (was "Azadi"), Belem Tower 62558 (was "Belem"), Jin Mao Tower 62561 (was "Jin Mao"), Ostankino Tower 62563 (was "Ostankino"), Bleecker Street 62595 (was "Bleecker"), Carnaby Street 62596 (was "Carnaby"), Lombard Street 62597 (was "Lombard"), Kiel Canal 62659 (was "Kiel"), Panama Canal 62660 (was "Panama"), Gaspé Peninsula 63175 (was "Gaspé"), Kenai Peninsula 63177 (was "Kenai"), Shandong Peninsula 63178 (was "Shandong"), Yorke Peninsula 63179 (was "Yorke"), Bering Strait 63230 (was "Bering"), Menai Strait 63231 (was "Menai"), Palk Strait 63232 (was "Palk"), Strait of Bonifacio 63233 (was "Bonifacio"), Strait of Hormuz 63234 (was "Hormuz"), Strait of Magellan 63235 (was "Magellan"), Sunda Strait 63237 (was "Sunda"), Torres Strait 63238 (was "Torres"), Tsushima Strait 63239 (was "Tsushima"), Bay of Bengal 63241 (was "Bengal"), Bay of Biscay 63242 (was "Biscay"), Bay of Kotor 63244 (was "Kotor"), Biscayne Bay 63245 (was "Biscayne"), Chesapeake Bay 63246 (was "Chesapeake"), Guanabara Bay 63247 (was "Guanabara"), Gulf of Aqaba 63248 (was "Aqaba"), Gulf of Bothnia 63249 (was "Bothnia"), Gulf of Carpentaria 63250 (was "Carpentaria"), Gulf of Mexico 63251 (was "Mexico"), Gulf of Tonkin 63252 (was "Tonkin"), Halong Bay 63253 (was "Halong"), Jervis Bay 63254 (was "Jervis"), Montego Bay 63255 (was "Montego"), Monterey Bay 63256 (was "Monterey"), Morecambe Bay 63257 (was "Morecambe"), Moreton Bay 63258 (was "Moreton"), Walvis Bay 63259 (was "Walvis"), Gaspe Peninsula 67874 (was "Gaspe")
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 262, new 76, rating changed 7
+  gone (other than the deleted themes): flags_with_animals: "Scotland" (48), foods_named_after_places: "bubbly" (966), police_station: "doggo" (1439), countries: "Eire" (2139), european_countries: "Eire" (2139), western_european_countries: "Eire" (2139), island_nations: "Eire" (2139), famous_islands: "Eire" (2139), tricolor_flags: "Eire" (2139), places_ending_in_land: "Eire" (2139), st_patrick_s_day: "Eire" (2139), celts: "Eire" (2139), islands_near_britain: "Eire" (2139), countries: "The Netherlands" (2142), european_countries: "The Netherlands" (2142), western_european_countries: "The Netherlands" (2142), tricolor_flags: "The Netherlands" (2142), places_that_are_also_words: "Cuba" (2157), tricolor_flags: "Peru" (2158), tricolor_flags: "Austria" (2163), tricolor_flags: "Nigeria" (2177), places_ending_in_land: "Siam" (2180), places_named_after_people: "Big Apple" (2221), cities: "Frisco" (2242), american_cities: "Frisco" (2242), places_named_after_people: "Saigon" (2282), landmarks: "Lady Liberty" (2313), us_landmarks: "Lady Liberty" (2313), new_york_landmarks: "Lady Liberty" (2313), national_symbols: "Lady Liberty" (2313), tall_things: "Lady Liberty" (2313), green_things: "Lady Liberty" (2313), symbols_of_the_usa: "Lady Liberty" (2313), towers_and_skyscrapers: "Big Ben" (2314), famous_towers: "Elizabeth" (2315), landmarks: "Elizabeth Tower" (2315), london_landmarks: "Elizabeth Tower" (2315), towers_and_skyscrapers: "Elizabeth Tower" (2315), new_year: "Elizabeth Tower" (2315), tall_things: "Elizabeth Tower" (2315), things_that_tick: "Elizabeth Tower" (2315), landmarks: "Tower of Pisa" (2323), landmarks: "Golden Gate" (2326), us_landmarks: "Golden Gate" (2326), towers_and_skyscrapers: "Empire State Building" (2328), towers_and_skyscrapers: "Burj Khalifa" (2337), landmarks: "Millennium Wheel" (2346), london_landmarks: "Millennium Wheel" (2346), famous_mountains: "Fujiyama" (2355), landmarks: "Fujiyama" (2355), japanese_landmarks: "Fujiyama" (2355), feudal_japan: "Fujiyama" (2355), landmarks: "Sphinx" (2357), ancient_egypt: "Sphinx" (2357), egyptian_symbols: "sphinx" (2357), middle_eastern_buildings: "Alhambra" (2360), landmarks: "Sultan Ahmed Mosque" (2364), istanbul_landmarks: "Sultan Ahmed Mosque" (2364), middle_eastern_buildings: "Sultan Ahmed Mosque" (2364), ottoman_empire: "Sultan Ahmed Mosque" (2364), famous_mosques: "Sultan Ahmed" (2364), towers_and_skyscrapers: "Space Needle" (2367), towers_and_skyscrapers: "CN Tower" (2370), landmarks: "Neuschwanstein" (2372), kinds_of_maps: "Google Maps" (2418), lines_on_a_map: "Greenwich Meridian" (2420), maps_and_globes: "Greenwich Meridian" (2420), maps_and_globes: "triangulation pillar" (2450), ski_resort: "school" (2465), art_gallery: "museum" (2472), flag_words: "Old Glory" (2534), national_symbols: "Old Glory" (2534), symbols_of_the_usa: "Old Glory" (2534), hospital: "hospice" (3506), ski_resort: "patrol" (4215), dentist_s_office: "drill" (4799), builders_tools: "theodolite" (7248), street_names: "Broadway" (12388), french_cities: "Cannes" (12769), asian_cities: "Busan" (12777), port_cities: "Busan" (12777), ports_in_asia: "Busan" (12777), wine_regions: "Chablis" (19671), wine_regions: "Barolo" (19672), city_demonyms: "Neapolitan" (20207), places_that_are_also_words: "Eyam" (20971), german_cities: "Hanover" (22853), public_buildings: "toilets" (23134), pacific_islands: "bikini" (24468), swimming_pool: "goggles" (24786), mountain_ranges: "Altai" (25901), us_state_capitals: "Lincoln" (29892), places_named_after_people: "Lincoln" (29892), us_cities: "Lincoln" (29892), famous_parks: "English garden" (30774), north_american_rivers: "Yellowstone" (31943), flags_with_crosses: "Greenland" (32063), us_government: "white house" (33580), famous_buildings: "white house" (33580), us_landmarks: "white house" (33580), white_things: "white house" (33580), capital_sights: "white house" (33580), blank_house: "white" (33580), street_names: "Downing" (33602), police_words: "nightstick" (33701), officer_s_equipment: "nightstick" (33701), police_station: "nightstick" (33701), street_names: "Wall" (34068), street_furniture: "mail slot" (35174), flags_with_animals: "Lithuania" (35676), pacific_islands: "Fiji" (35766), flags_with_a_sun: "Palau" (35769), capital_cities: "Washington DC" (35774), oceanian_cities: "Hamilton" (35946), new_zealand_cities: "Hamilton" (35946), american_capitals: "Kingston" (35959), south_american_cities: "Córdoba" (35975), old_country_names: "Gold Coast" (36020), us_state_capitals: "Dover" (36048), us_state_capitals: "Charleston" (36057), countries: "Surinam" (36146), south_american_countries: "Surinam" (36146), flags_with_stars: "Surinam" (36146), capital_cities: "Angora" (36158), turkish_cities: "Angora" (36158), german_states: "Nordrhein-Westfalen" (36402), european_countries: "Cyprus" (36576), island_nations: "Cyprus" (36576), tiny_countries: "Cyprus" (36576), middle_eastern_countries: "Cyprus" (36576), south_american_landmarks: "Galapagos Islands" (36587), famous_islands: "Galápagos" (36587), australian_landmarks: "Bondi" (36614), famous_rivers: "St Lawrence" (36788), famous_lakes: "biwa" (36859), towers_and_skyscrapers: "Chrysler Building" (37041), towers_and_skyscrapers: "Taipei 101" (37043), towers_and_skyscrapers: "Willis Tower" (37050), towers_and_skyscrapers: "Tokyo Skytree" (37090), towers_and_skyscrapers: "Shanghai Tower" (37092), ancient_wonders: "Great Pyramid of Giza" (37205), egyptian_landmarks: "Great Pyramid of Giza" (37205), ancient_wonders: "Temple of Diana" (37209), seven_wonders_of_the_ancient_world: "Temple of Diana" (37209), famous_temples: "Temple of Diana" (37209), ancient_wonders: "Pharos of Alexandria" (37210), seven_wonders_of_the_ancient_world: "Pharos of Alexandria" (37210), seven_wonders_of_the_ancient_world: "Tomb of Mausolus" (37214), ancient_wonders: "Tomb of Mausolus" (37214), street_names: "Fifth Avenue" (37253), street_names: "Abbey Road" (37256), street_names: "Baker" (37257), street_names: "Sunset Boulevard" (37260), street_names: "Park Avenue" (37262), street_names: "Penny Lane" (37265), street_names: "Bourbon" (37268), street_names: "Fleet" (37272), street_names: "Orchard Road" (37277), countries_ending_in_ia: "Arabia" (37855), red_and_white_flags: "Trinidad" (37968), post_office: "mailbag" (38225), towers_and_skyscrapers: "Shard" (38283), traffic_words: "stop and go" (38412), parts_of_a_road: "layby" (38439), national_costumes: "gaucho" (38553), tent_types: "teepee" (48535), words_from_native_american_languages: "teepee" (48535), vet_clinic: "silicon chip" (50004), swimming_pool: "safety glasses" (50008), australian_cities: "Newcastle" (56863), towers_and_skyscrapers: "Pisa" (56924), north_american_rivers: "Sacramento" (57043), seven_summits: "Vinson" (57169), indonesian_islands: "bangka" (57233), shopping_mall: "indoor indoor fountain" (57497), dentist_s_office: "probe" (57567), water_park: "wading pool" (57631), western_european_countries: "Gibraltar" (60511), middle_eastern_countries: "Gaza Strip" (60512), middle_eastern_countries: "West Bank" (60513), middle_eastern_countries: "Kurdistan" (60514), east_african_countries: "Réunion" (60515), east_african_countries: "Mayotte" (60516), east_african_countries: "Somaliland" (60517), southern_african_countries: "DR Congo" (60518), flags_with_a_sun: "Vergina" (60554), south_american_landmarks: "Amazon River" (60557), famous_rivers: "Amazon" (60557), south_american_rivers: "Amazon" (60557), famous_statues: "Colossus" (60559), ancient_wonders: "Colossus" (60559), seven_wonders_of_the_ancient_world: "Colossus" (60559), ancient_wonders: "Gardens of Babylon" (60560), seven_wonders_of_the_ancient_world: "Gardens of Babylon" (60560), ancient_civilizations: "Gardens of Babylon" (60560), mesopotamia: "Gardens of Babylon" (60560), famous_ruins_and_monuments: "Gardens of Babylon" (60560), famous_statues: "Zeus at Olympia" (60561), ancient_wonders: "Zeus at Olympia" (60561), seven_wonders_of_the_ancient_world: "Zeus at Olympia" (60561), towers_and_skyscrapers: "Eiffel" (62559), towers_and_skyscrapers: "Petronas" (62564), famous_towers: "Babel" (62565), famous_statues: "Lady Liberty" (62566), lines_on_a_map: "Durand" (62622), lines_on_a_map: "Radcliffe" (62623), famous_streets: "Downing" (62636), famous_streets: "Wall" (62641), straits_and_canals: "Corinth" (62657), famous_canals: "Kiel" (62659), famous_canals: "Panama" (62660), straits_and_canals: "Rideau" (62661), straits_and_canals: "Suez" (62662), american_cities: "Salt Lake" (62825), gulfs_and_bays: "Baffin" (63166), peninsulas: "Balkan" (63174), peninsulas: "Iberian" (63176), oceans_and_seas: "Bering" (63230), straits_and_canals: "Malacca" (63236), gulfs_and_bays: "Fundy" (63243), asian_waters: "Caspian" (63268), famous_temples: "Harmandir Sahib" (63304), lines_on_a_map: "LoC" (63862), flags_with_a_sun: "Vergina Star" (63868), famous_temples: "Hatshepsut" (65610)
+  new: famous_statues: "Lady Liberty" (2312), famous_mosques: "Blue Mosque" (2363), ancient_wonders: "Great Pyramid" (6659), egyptian_landmarks: "Great Pyramid" (6659), french_regions: "Normandy" (6829), european_holiday_regions: "Normandy" (6829), famous_towers: "Babel" (20525), straits_and_canals: "Malacca" (21270), parts_of_a_road: "lay-by" (27385), us_government: "White House" (33580), famous_buildings: "White House" (33580), us_landmarks: "White House" (33580), white_things: "White House" (33580), capital_sights: "White House" (33580), blank_house: "White" (33580), famous_streets: "Downing" (33602), famous_streets: "Wall" (34068), famous_temples: "Golden Temple" (34327), american_cities: "Salt Lake" (35922), old_city_names: "Angora" (36158), german_states: "North Rhine-Westphalia" (36402), seven_summits: "Vinson Massif" (36535), pacific_islands: "Fiji" (36586), famous_rivers: "Amazon" (36769), south_american_rivers: "Amazon" (36769), famous_lakes: "Biwa" (36859), asian_waters: "Caspian Sea" (36861), straits_and_canals: "Suez" (36908), straits_and_canals: "Corinth" (36920), straits_and_canals: "Rideau" (36927), gulfs_and_bays: "Fundy" (36961), landmarks: "Great Sphinx" (37118), ancient_egypt: "Great Sphinx" (37118), egyptian_symbols: "Sphinx" (37118), seven_wonders_of_the_ancient_world: "Mausoleum of Mausolus" (37213), famous_temples: "Hatshepsut" (37349), continents: "Australia" (37812), capital_cities: "Washington" (38117), famous_towers: "Shard" (38283), ski_resort: "ski patrol" (43542), ski_resort: "ski school" (43555), words_from_native_american_languages: "tepee" (48547), swimming_pool: "goggles" (48808), south_american_landmarks: "Galápagos" (57215), famous_islands: "Galápagos" (57215), famous_rivers: "St. Lawrence" (57313), shopping_mall: "indoor fountain" (57497), new_zealand_cities: "Hastings" (59399), central_african_lands: "DR Congo" (60518), famous_canals: "Kiel Canal" (62659), famous_canals: "Panama Canal" (62660), oceans_and_seas: "Bering Strait" (63230), us_state_capitals: "Lincoln" (68189), places_named_after_people: "Lincoln" (68189), us_cities: "Lincoln" (68189), us_state_capitals: "Dover" (68190), us_state_capitals: "Charleston" (68191), new_zealand_cities: "Hamilton" (68192), oceanian_cities: "Hamilton" (68192), australian_cities: "Newcastle" (68193), american_capitals: "Kingston" (68194), south_american_cities: "Córdoba" (68195), german_cities: "Hanover" (68198), french_cities: "Cannes" (68199), asian_cities: "Busan" (68200), port_cities: "Busan" (68200), ports_in_asia: "Busan" (68200), european_countries: "Cyprus" (68202), island_nations: "Cyprus" (68202), tiny_countries: "Cyprus" (68202), middle_eastern_countries: "Cyprus" (68202), indonesian_islands: "Bangka" (68203), gulfs_and_bays: "Baffin" (68204), mountain_ranges: "Altai" (68205), city_demonyms: "Neapolitan" (68206), old_country_names: "Gold Coast" (68207)
+  rating: road_types: "street" (28439) 2.4/1 -> 1/1, ancient_wonders: "Alexandria Lighthouse" (37211) 3/3 -> 2.7/2, seven_wonders_of_the_ancient_world: "Alexandria Lighthouse" (37211) 3/3 -> 2.7/2, continents: "Oceania" (37815) 3.4/4 -> 2/2, tent_types: "tepee" (48547) 3.7/3 -> 2.7/2, traditional_dwellings: "tepee" (48547) 3.1/1 -> 2.4/1, russian_cities: "Vladimir" (56262) 4.1/5 -> 4.7/5
+new issues: none
+
+Reviewer's fixes (2026-11-23, "apply after fixes"), done in this batch:
+  - The six names are kept as aliases with nameOkIn where their text holds a word of the theme name (as v435 did for the Galápagos penguin): Elizabeth Tower [UK] (Big Ben), Tower of Pisa, Galapagos Islands, Amazon River, Sultan Ahmed Mosque [TR], wading pool [US]. A final pass gives every alias of the group's roots the nameOkIn it needs (also Temple of Diana, Gaspe Peninsula).
+  - Baffin Bay is a full-name entry shown "Baffin", as Hudson Bay; Baffin 63166 stays the island.
+  - Famous streets: Downing Street and Wall Street take the links of the stubs Downing and Wall [finance] (deleted), shown short; Carnaby, Lombard and Bleecker become Carnaby Street, Lombard Street, Bleecker Street, shown short. Street names keeps only common street names: Broadway, Fifth Avenue, Park Avenue, Abbey Road, Baker Street, Downing Street, Penny Lane, Sunset Boulevard, Wall Street, Orchard Road, Bourbon Street and Fleet Street leave it (all are in famous streets).
+  - Alias order: the game shows the first synonym alias in row order as the alternative (GAME-CONTRACT.md, flags 512). Fuji 32087 moves to the row before Fujiyama 2355. Frisco is an abbreviation alias. Harmandir Sahib is a translation alias. whiff-whaff stays a root grouped with table tennis: no kind but synonym fits, and as table tennis's only synonym it would be the alternative (For Simon). Zeus at Olympia (fam 5, a stand-in) is deleted rather than becoming Statue of Zeus's only synonym.
+  - Peninsulas: the stubs Iberian and Balkan are deleted (Iberia and Balkans are there); Gaspé, Kenai, Shandong and Yorke become "... Peninsula", shown short (plain alias Gaspe Peninsula).
+  - Gulfs and bays (19 stubs) and straits and canals (16 stubs) hold full names shown short: Gulf of Mexico, Bay of Bengal, Bay of Biscay, Chesapeake Bay ...; Panama Canal, Strait of Gibraltar, Bering Strait, Strait of Hormuz ...; where the full name already existed (Bay of Fundy, Suez Canal, Strait of Malacca, Corinth Canal, Rideau Canal) it takes the link and the stub is deleted. Kiel Canal and Panama Canal get nameOkIn in famous canals. Gibraltar 60511 (the territory, now only in straits) becomes Strait of Gibraltar.
+  - Seven Ancient Wonders is an exact set of 7 roots: Pharos of Alexandria, Temple of Diana, Gardens of Babylon, Tomb of Mausolus become aliases of Alexandria Lighthouse, Temple of Artemis, Hanging Gardens, Mausoleum of Mausolus; Colossus an abbreviation of Colossus of Rhodes; Zeus at Olympia deleted; the note names one item per root.
+  - Every name of a thing typed phrase in the group is typed common (57 roots and aliases, fish and chips, coat of arms, table tennis, box office included); kept as phrase: activities (fly a kite, build a sandcastle ...) and set phrases (on the house, sold out, à la carte, prix fixe, table d'hôte, mise en place). TV tower stays proper: typed common, its capital trips the case lint (case-cap-common), as UV index in v436.
+  - Slips: the header no longer says tube map becomes an alias; LoC's line says Line of Control keeps its link and full name in lines on a map (no show); Normal 38139 is glossed Illinois.
+
+Checks inside Places & Geography (255 themes, 8,194 links at v436), found -> left after this batch:
+  warn (long, theme-name, clash-big, maybe-duplicate, theme-gap): 0 in the group's themes before and after.
+  contract-root-region (roots linked in the group, export rows mapped to entry ids): 172 -> 155. Fixed 16: 13 regional roots with a same-sense root became its aliases (Eire, Frisco, Lady Liberty, Elizabeth Tower, Golden Gate, Millennium Wheel, Sultan Ahmed Mosque, Bondi, triangulation pillar, Greenwich Meridian, Old Glory, nightstick, layby); jail, Aussie and server untagged (Simon: server stays a root apart from waiter). bubbly [UK] left the group (out of foods named after places). Real but not fixed, 2: tube map (as the UK alias of subway map it would leak "map" in kinds of maps), whiff-whaff (see above). By design 153:
+    - 32 US roots with a UK regional alias (v413 kept the US tag on the root: newsstand, fire truck, sidewalk, freeway, mail carrier, kiddie pool, row house, thrift store, do not enter, general delivery ...);
+    - 37 names tagged for who knows them (city demonyms Geordie, Scouser, Sydneysider ...; UK street names; New Forest, New Cross, Benidorm, Cape Cod, Pentagon, Ordnance Survey, Martello ...);
+    - 84 regional words with no same-sense word in the other dialect (greengrocer, pub, bothy, oast house, crannog, A-road, carriageway, contraflow, village green, market town, meal deal, bag for life, interstate, exurb, condo, brownstone, haggis, poutine, hurling, shinty, sari, lederhosen, silver fern, springbok ...).
+    Proposal (as v436): the by-design roots are the accepted remainder of contract-root-region under the policy Simon took (warn only for a regional root with a same-sense untagged root, the rest info; TIDY-UP.md); the 32 US roots with a UK regional alias lose their US tag in a library-wide batch, or the code change treats a root with an other-dialect regional alias as fine.
+  contract-dup-root: 20 -> 17 (Sphinx [Giza] merged into Great Sphinx; contour typed common). The 17 left are by design: a place or proper name before a common word of the same text (China/china, Bath, Medina, Byzantium, Nelson, Crux, Klondike, Tonga, Surrey, Anchorage, Pentagon, Muscat, Ankara, Bordeaux, Bury).
+  contract-type-common: 4 -> 0 (contour, isoline, loxodrome, officer typed common).
+  theme-twin: 7 -> 0 (Balkan countries, Thirteen Colonies and British and Irish rivers became sub-themes of the theme that holds all their words; the three "star flags of" sub-themes deleted; Central African nations, with DR Congo added, no longer twins French-speaking nations; continents, which twinned continents and supercontinents once Australia was added, became its sub-theme).
+  sense-link: 1 -> 0 in the group's themes (Broadway [theater district] out of street names). The 6 left sit in other groups' themes (see Cross-group moves).
+  sense-twin: 6 -> 4 in the group's themes (Fiji in Pacific islands, goggles in swimming pool fixed; Broadway gone). Left, correct: Malta, Fiji, Mauritius and now Cyprus [country] in island nations (the theme is nations); Memphis [city] / [ancient city] (two cities); lane [traffic] in parts of a road (the traffic lane is the part of a road). Allow-list keys proposed below.
+  alias-kind-suspect: 6 -> 4 (combine harvester a synonym; tae kwon do typed common). Left: gaol (Simon, v420: an untagged rare variant of prison; For Simon), wifi / Wi-Fi and PO box / P.O. box (the root's type), plow / plough [farm implement] (the UK spelling is the root because ough words needs it; Home & Everyday).
+  alias-fullname 3, left: signal flags, skis, contour lines are plural forms. clash-large 7, left: every group 12 or fewer, real look-alikes in big themes. family-kin 17 -> 14 plus 3 new suggestions on officer (now common: office, off, offering): all different words. same-display 1: in shopping words (Home & Everyday).
+  xwords-twin: 0 -> 1: traffic words now shares 14 of 46 words (30%) with driving words (Travel & Transport), after its duplicate stop and go was merged into stop-and-go. For the v438 draft and the tree batch (Cross-group moves).
+  orphan: no new orphans; the deleted stubs were made for one theme each.
+  I30: no theme in the group has a gap of 2 or more, before or after.
+
+Cross-group moves and other groups' items (not in this batch):
+  - traffic words (streets and roads) / driving words (Travel & Transport): xwords-twin 30%. Merge the shared things into one, or rename traffic words for what it is; decide with v438.
+  - car park has two roots, 27371 and 63317, tied to parking lot and lay-by in Travel & Transport: left for Simon and v438.
+  - Wrong senses on this group's words in other groups' themes: captain [crew] in cruise words (captain [ship]); canvas [painting surface] in fabrics and tough fabrics (canvas [fabric]); goggles [eyewear] in swimming words and skiing words (goggles [swimming], [ski]); axe [tool] in medieval weapons (axe [weapon]); Bordeaux [wine] in place-named colors (bordeaux [color]); champagne [drink] in metallic colors; acrylic [paint] in art materials; colorist [film] / [hair] (one sense?); Fiji and Mauritius [country] in island getaways.
+  - grizzly 7945 and grizzly bear 7946 are two roots of one animal, grouped in national animals (Animals entries).
+  - ski poles 48873 is a plural root of ski pole 43522 (Sports): left, it is a root shown "poles" in ski resort and ski trip.
+  - New sense entries now hold other groups' links: Normandy [battle] in wars and battles, famous battles, World War II battles; the old entries keep Hanover [royal house], Cannes and Busan [film festival], Altai [language], bangka [boat].
+  - hospital, people at a hospital and at the doctor were not compared with Body & Health's themes; restaurant not with Food & Drink's; airport not with Travel & Transport's.
+
+Decided by Simon (2026-11-23, "Take all and apply"):
+  - Lady Liberty: the merge into Statue of Liberty stays (Lady Liberty [nickname] its synonym alias, Lady Liberty [statue] deleted, famous statues shows "Lady Liberty"). Approved although it reverses v433, which had kept the two Lady Liberty roots apart because their regions differed.
+  - Gaza Strip, West Bank and Somaliland leave the country themes and are deleted (in no other theme, as Kurdistan); Palestine stays, flagged sensitive (it already was).
+  - Pompeii loses its sensitive flag.
+  - Central African Republic stays out; the note of Central African nations says it is over the 20-letter limit.
+  - server [waiter] stays a root apart from waiter (v413), without its US tag.
+  - Everything else recommended in this review is taken as drafted (towers and skyscrapers kinds only, TV tower proper, whiff-whaff and tube map roots, gaol as it is).
+  - Later batches, not this one: the rule 8 diacritics pass for places; translations stored as roots (La Tour Eiffel, Cristo Redentor ...); foods named after places as foods only (and Savoy); car park / lay-by (with Travel & Transport).
+  - Allow-list keys (the manager adds them):
+      js/sense-allow.js '35680|36577|island_nations'   // Malta [country] is right in island nations
+      js/sense-allow.js '35766|36586|island_nations'   // Fiji [country] is right in island nations
+      js/sense-allow.js '35772|36599|island_nations'   // Mauritius [country] is right in island nations
+      js/sense-allow.js '36576|68202|island_nations'   // Cyprus [country] is right in island nations (68202 is created by this batch, applied first on v436)
+      js/sense-allow.js '35915|36091'                  // Memphis [city] (Tennessee) and Memphis [ancient city] (Egypt) are two cities
+      js/sense-allow.js '38308|38415|parts_of_a_road'  // lane [traffic] is the part of a road; lane [road] is the road type
+  Still open for a later look: cenotaph and catacomb stand-ins in London and Paris landmarks; places that are also words (Greece, Hungary, Jordan); Pompeii-like flag checks elsewhere.
+
+Left as is:
+  - Synonym groups of two real names of one place stay groups (Uluru / Ayers Rock, Burma, Siam, Ceylon, Swaziland, Czechia, Holland, Bombay, Peking, Calcutta, Constantinople, Kinkaku-ji / Golden Pavilion, Sears / Willis Tower, Mount Cook / Aoraki, Vltava / Moldau, Victoria Falls / Mosi-oa-Tunya, Zakynthos / Zante): LIBRARY-RULES 5 names Uluru / Ayers Rock as a synonym group.
+  - Middle Eastern and East Asian buildings group a generic word with its named examples (mosque = Blue Mosque = Al-Aqsa Mosque ...): the overlap rule allows a word and its more specific forms when grouped.
+  - The complete sets match their notes (continents now "Oceania (Australia)"; German states with North Rhine-Westphalia; Seven Summits "Vinson" through the alias; Seven Ancient Wonders with one root per item).
+  - Theme names: the three over 24 characters (continents and supercontinents, Aussie eponymous places, US cities named after people) are in v433's NAME_KEEP (Simon).
+  - Hastings [battle] is typed place (History & Myth's entry); Normandy [battle] is typed proper as an event.
+  - Shard [London] keeps its text (the building is "the Shard").
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time): contract-dup-root 177 -> 174; contract-root-region 1744 -> 1728; contract-type-common 39 -> 35. No warn kind changes.
+
+=== Notice to _WS_ for v437 (send when Simon says; one combined notice per game round) ===
+Library v437 is the Places & Geography tidy-up (TIDY-UP.md, step 3), reviewed and approved by Simon ("Take all and apply"); it applies first in round 2, on v436. No pin until Simon asks.
+- Three themes are gone: star flags of Africa, star flags of Asia, star flags of Oceania (every word is in flags with stars and in its continent's countries). Theme rows 3,227 -> 3,224; theme indexes shift from index 691 to the end. Four themes have a new parent (ids kept): Balkan countries under Eastern European nations, Thirteen Colonies under US states, British and Irish rivers under European rivers, continents under continents and supercontinents.
+- Regional and second roots become aliases of the root of their place or thing: Eire (translation of Ireland), Frisco (abbreviation), Lady Liberty, Elizabeth Tower, Tower of Pisa, Golden Gate, Millennium Wheel, Sultan Ahmed Mosque, Fujiyama, Bondi, triangulation pillar, Greenwich Meridian, Old Glory, nightstick (truncheon moves with it to baton), Washington DC, Salt Lake, Surinam, The Netherlands, Vinson, St Lawrence, Galapagos Islands, Amazon River, Great Pyramid of Giza, Sphinx [Giza] (now Great Sphinx), Neuschwanstein, LoC, Harmandir Sahib (translation), wading pool, layby, stop and go, mailbag, teepee, and in the Seven Ancient Wonders Pharos of Alexandria, Temple of Diana, Gardens of Babylon, Tomb of Mausolus, Colossus. Deleted with their links moved to the root: Lady Liberty [statue], Caspian [sea], Hatshepsut [temple], Zeus at Olympia. jail, Aussie and server lose their region; Pompeii is no longer sensitive.
+- Alias row order: Fuji now comes before Fujiyama, so Mount Fuji's first synonym alias is Fuji.
+- One entry held two places: new rows Lincoln [Nebraska], Dover [Delaware], Charleston [West Virginia], Hamilton [New Zealand], Newcastle [Australia], Kingston [Jamaica], Córdoba [Argentina] (plain spellings Cordoba for both Córdobas), Hanover [city], Cannes [city], Busan [city], Normandy [battle] (adult, sensitive; the region loses both flags and now exports), Cyprus [country], Bangka [island], Baffin Bay, Altai [mountains], Neapolitan [Naples], Gold Coast [colony] take the links of that sense. Broadway [theater district] leaves street names; goggles [swimming] and Fiji [islands] take the link in swimming pool and Pacific islands.
+- Bare stubs become full names shown short (the shown text is unchanged): gulfs and bays (Gulf of Mexico, Bay of Bengal ...), straits and canals (Panama Canal, Strait of Gibraltar ...), peninsulas (Gaspé, Kenai, Shandong, Yorke Peninsula), famous streets (Carnaby, Lombard, Bleecker Street); where the full name existed it takes the link and the stub goes (Bay of Fundy, Suez Canal, Strait of Malacca, Corinth Canal, Rideau Canal, Downing Street, Wall Street, Tower of Babel). Street names loses 12 famous streets (they are in famous streets).
+- Out of themes they do not fit: territories (Gibraltar; Kurdistan, Réunion, Mayotte, Gaza Strip, West Bank, Somaliland deleted), flags that fail the test (Greenland crosses, Trinidad red and white, Palau sun, Austria/Peru/Nigeria tricolor, Scotland/Lithuania animals), Siam, Arabia, Saigon, Big Apple, Cuba, Eyam from the place-name wordplay themes, named towers from towers and skyscrapers, and others listed above. Stubs deleted: Vergina Star, Vergina Sun, Durand, Radcliffe, Eiffel, Petronas, Iberian, Balkan.
+- Texts changed (same rows): White House (was white house; ___ house shows "White"), North Rhine-Westphalia (Nordrhein-Westfalen is its translation), indoor fountain, Azadi / Belem / Jin Mao / Ostankino Tower, the stub-to-full-name rows above (45 rows in all; see "Rows whose text changed").
+- Export v436 -> v437 (this batch alone): entry rows 61,024 -> 61,017 (28 removed; Normandy [region] and Hastings [NZ city] now export at their places; 19 new rows at the end, 60,998 on), rows shift from row 2,327; links 100,154 -> 99,968, link positions move from row 48. No new characters.

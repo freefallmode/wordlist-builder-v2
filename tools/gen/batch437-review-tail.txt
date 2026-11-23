@@ -1,0 +1,64 @@
+Reviewer's fixes (2026-11-23, "apply after fixes"), done in this batch:
+  - The six names are kept as aliases with nameOkIn where their text holds a word of the theme name (as v435 did for the Galápagos penguin): Elizabeth Tower [UK] (Big Ben), Tower of Pisa, Galapagos Islands, Amazon River, Sultan Ahmed Mosque [TR], wading pool [US]. A final pass gives every alias of the group's roots the nameOkIn it needs (also Temple of Diana, Gaspe Peninsula).
+  - Baffin Bay is a full-name entry shown "Baffin", as Hudson Bay; Baffin 63166 stays the island.
+  - Famous streets: Downing Street and Wall Street take the links of the stubs Downing and Wall [finance] (deleted), shown short; Carnaby, Lombard and Bleecker become Carnaby Street, Lombard Street, Bleecker Street, shown short. Street names keeps only common street names: Broadway, Fifth Avenue, Park Avenue, Abbey Road, Baker Street, Downing Street, Penny Lane, Sunset Boulevard, Wall Street, Orchard Road, Bourbon Street and Fleet Street leave it (all are in famous streets).
+  - Alias order: the game shows the first synonym alias in row order as the alternative (GAME-CONTRACT.md, flags 512). Fuji 32087 moves to the row before Fujiyama 2355. Frisco is an abbreviation alias. Harmandir Sahib is a translation alias. whiff-whaff stays a root grouped with table tennis: no kind but synonym fits, and as table tennis's only synonym it would be the alternative (For Simon). Zeus at Olympia (fam 5, a stand-in) is deleted rather than becoming Statue of Zeus's only synonym.
+  - Peninsulas: the stubs Iberian and Balkan are deleted (Iberia and Balkans are there); Gaspé, Kenai, Shandong and Yorke become "... Peninsula", shown short (plain alias Gaspe Peninsula).
+  - Gulfs and bays (19 stubs) and straits and canals (16 stubs) hold full names shown short: Gulf of Mexico, Bay of Bengal, Bay of Biscay, Chesapeake Bay ...; Panama Canal, Strait of Gibraltar, Bering Strait, Strait of Hormuz ...; where the full name already existed (Bay of Fundy, Suez Canal, Strait of Malacca, Corinth Canal, Rideau Canal) it takes the link and the stub is deleted. Kiel Canal and Panama Canal get nameOkIn in famous canals. Gibraltar 60511 (the territory, now only in straits) becomes Strait of Gibraltar.
+  - Seven Ancient Wonders is an exact set of 7 roots: Pharos of Alexandria, Temple of Diana, Gardens of Babylon, Tomb of Mausolus become aliases of Alexandria Lighthouse, Temple of Artemis, Hanging Gardens, Mausoleum of Mausolus; Colossus an abbreviation of Colossus of Rhodes; Zeus at Olympia deleted; the note names one item per root.
+  - Every name of a thing typed phrase in the group is typed common (57 roots and aliases, fish and chips, coat of arms, table tennis, box office included); kept as phrase: activities (fly a kite, build a sandcastle ...) and set phrases (on the house, sold out, à la carte, prix fixe, table d'hôte, mise en place). TV tower stays proper: typed common, its capital trips the case lint (case-cap-common), as UV index in v436.
+  - Slips: the header no longer says tube map becomes an alias; LoC's line says Line of Control keeps its link and full name in lines on a map (no show); Normal 38139 is glossed Illinois.
+
+Checks inside Places & Geography (255 themes, 8,194 links at v436), found -> left after this batch:
+  warn (long, theme-name, clash-big, maybe-duplicate, theme-gap): 0 in the group's themes before and after.
+  contract-root-region (roots linked in the group, export rows mapped to entry ids): 172 -> 155. Fixed 16: 13 regional roots with a same-sense root became its aliases (Eire, Frisco, Lady Liberty, Elizabeth Tower, Golden Gate, Millennium Wheel, Sultan Ahmed Mosque, Bondi, triangulation pillar, Greenwich Meridian, Old Glory, nightstick, layby); jail, Aussie and server untagged (Simon: server stays a root apart from waiter). bubbly [UK] left the group (out of foods named after places). Real but not fixed, 2: tube map (as the UK alias of subway map it would leak "map" in kinds of maps), whiff-whaff (see above). By design 153:
+    - 32 US roots with a UK regional alias (v413 kept the US tag on the root: newsstand, fire truck, sidewalk, freeway, mail carrier, kiddie pool, row house, thrift store, do not enter, general delivery ...);
+    - 37 names tagged for who knows them (city demonyms Geordie, Scouser, Sydneysider ...; UK street names; New Forest, New Cross, Benidorm, Cape Cod, Pentagon, Ordnance Survey, Martello ...);
+    - 84 regional words with no same-sense word in the other dialect (greengrocer, pub, bothy, oast house, crannog, A-road, carriageway, contraflow, village green, market town, meal deal, bag for life, interstate, exurb, condo, brownstone, haggis, poutine, hurling, shinty, sari, lederhosen, silver fern, springbok ...).
+    Proposal (as v436): the by-design roots are the accepted remainder of contract-root-region under the policy Simon took (warn only for a regional root with a same-sense untagged root, the rest info; TIDY-UP.md); the 32 US roots with a UK regional alias lose their US tag in a library-wide batch, or the code change treats a root with an other-dialect regional alias as fine.
+  contract-dup-root: 20 -> 17 (Sphinx [Giza] merged into Great Sphinx; contour typed common). The 17 left are by design: a place or proper name before a common word of the same text (China/china, Bath, Medina, Byzantium, Nelson, Crux, Klondike, Tonga, Surrey, Anchorage, Pentagon, Muscat, Ankara, Bordeaux, Bury).
+  contract-type-common: 4 -> 0 (contour, isoline, loxodrome, officer typed common).
+  theme-twin: 7 -> 0 (Balkan countries, Thirteen Colonies and British and Irish rivers became sub-themes of the theme that holds all their words; the three "star flags of" sub-themes deleted; Central African nations, with DR Congo added, no longer twins French-speaking nations; continents, which twinned continents and supercontinents once Australia was added, became its sub-theme).
+  sense-link: 1 -> 0 in the group's themes (Broadway [theater district] out of street names). The 6 left sit in other groups' themes (see Cross-group moves).
+  sense-twin: 6 -> 4 in the group's themes (Fiji in Pacific islands, goggles in swimming pool fixed; Broadway gone). Left, correct: Malta, Fiji, Mauritius and now Cyprus [country] in island nations (the theme is nations); Memphis [city] / [ancient city] (two cities); lane [traffic] in parts of a road (the traffic lane is the part of a road). Allow-list keys proposed below.
+  alias-kind-suspect: 6 -> 4 (combine harvester a synonym; tae kwon do typed common). Left: gaol (Simon, v420: an untagged rare variant of prison; For Simon), wifi / Wi-Fi and PO box / P.O. box (the root's type), plow / plough [farm implement] (the UK spelling is the root because ough words needs it; Home & Everyday).
+  alias-fullname 3, left: signal flags, skis, contour lines are plural forms. clash-large 7, left: every group 12 or fewer, real look-alikes in big themes. family-kin 17 -> 14 plus 3 new suggestions on officer (now common: office, off, offering): all different words. same-display 1: in shopping words (Home & Everyday).
+  xwords-twin: 0 -> 1: traffic words now shares 14 of 46 words (30%) with driving words (Travel & Transport), after its duplicate stop and go was merged into stop-and-go. For the v438 draft and the tree batch (Cross-group moves).
+  orphan: no new orphans; the deleted stubs were made for one theme each.
+  I30: no theme in the group has a gap of 2 or more, before or after.
+
+Cross-group moves and other groups' items (not in this batch):
+  - traffic words (streets and roads) / driving words (Travel & Transport): xwords-twin 30%. Merge the shared things into one, or rename traffic words for what it is; decide with v438.
+  - car park has two roots, 27371 and 63317, tied to parking lot and lay-by in Travel & Transport: left for Simon and v438.
+  - Wrong senses on this group's words in other groups' themes: captain [crew] in cruise words (captain [ship]); canvas [painting surface] in fabrics and tough fabrics (canvas [fabric]); goggles [eyewear] in swimming words and skiing words (goggles [swimming], [ski]); axe [tool] in medieval weapons (axe [weapon]); Bordeaux [wine] in place-named colors (bordeaux [color]); champagne [drink] in metallic colors; acrylic [paint] in art materials; colorist [film] / [hair] (one sense?); Fiji and Mauritius [country] in island getaways.
+  - grizzly 7945 and grizzly bear 7946 are two roots of one animal, grouped in national animals (Animals entries).
+  - ski poles 48873 is a plural root of ski pole 43522 (Sports): left, it is a root shown "poles" in ski resort and ski trip.
+  - New sense entries now hold other groups' links: Normandy [battle] in wars and battles, famous battles, World War II battles; the old entries keep Hanover [royal house], Cannes and Busan [film festival], Altai [language], bangka [boat].
+  - hospital, people at a hospital and at the doctor were not compared with Body & Health's themes; restaurant not with Food & Drink's; airport not with Travel & Transport's.
+
+Decided by Simon (2026-11-23, "Take all and apply"):
+  - Lady Liberty: the merge into Statue of Liberty stays (Lady Liberty [nickname] its synonym alias, Lady Liberty [statue] deleted, famous statues shows "Lady Liberty"). Approved although it reverses v433, which had kept the two Lady Liberty roots apart because their regions differed.
+  - Gaza Strip, West Bank and Somaliland leave the country themes and are deleted (in no other theme, as Kurdistan); Palestine stays, flagged sensitive (it already was).
+  - Pompeii loses its sensitive flag.
+  - Central African Republic stays out; the note of Central African nations says it is over the 20-letter limit.
+  - server [waiter] stays a root apart from waiter (v413), without its US tag.
+  - Everything else recommended in this review is taken as drafted (towers and skyscrapers kinds only, TV tower proper, whiff-whaff and tube map roots, gaol as it is).
+  - Later batches, not this one: the rule 8 diacritics pass for places; translations stored as roots (La Tour Eiffel, Cristo Redentor ...); foods named after places as foods only (and Savoy); car park / lay-by (with Travel & Transport).
+  - Allow-list keys (the manager adds them):
+      js/sense-allow.js '35680|36577|island_nations'   // Malta [country] is right in island nations
+      js/sense-allow.js '35766|36586|island_nations'   // Fiji [country] is right in island nations
+      js/sense-allow.js '35772|36599|island_nations'   // Mauritius [country] is right in island nations
+      js/sense-allow.js '36576|68202|island_nations'   // Cyprus [country] is right in island nations (68202 is created by this batch, applied first on v436)
+      js/sense-allow.js '35915|36091'                  // Memphis [city] (Tennessee) and Memphis [ancient city] (Egypt) are two cities
+      js/sense-allow.js '38308|38415|parts_of_a_road'  // lane [traffic] is the part of a road; lane [road] is the road type
+  Still open for a later look: cenotaph and catacomb stand-ins in London and Paris landmarks; places that are also words (Greece, Hungary, Jordan); Pompeii-like flag checks elsewhere.
+
+Left as is:
+  - Synonym groups of two real names of one place stay groups (Uluru / Ayers Rock, Burma, Siam, Ceylon, Swaziland, Czechia, Holland, Bombay, Peking, Calcutta, Constantinople, Kinkaku-ji / Golden Pavilion, Sears / Willis Tower, Mount Cook / Aoraki, Vltava / Moldau, Victoria Falls / Mosi-oa-Tunya, Zakynthos / Zante): LIBRARY-RULES 5 names Uluru / Ayers Rock as a synonym group.
+  - Middle Eastern and East Asian buildings group a generic word with its named examples (mosque = Blue Mosque = Al-Aqsa Mosque ...): the overlap rule allows a word and its more specific forms when grouped.
+  - The complete sets match their notes (continents now "Oceania (Australia)"; German states with North Rhine-Westphalia; Seven Summits "Vinson" through the alias; Seven Ancient Wonders with one root per item).
+  - Theme names: the three over 24 characters (continents and supercontinents, Aussie eponymous places, US cities named after people) are in v433's NAME_KEEP (Simon).
+  - Hastings [battle] is typed place (History & Myth's entry); Normandy [battle] is typed proper as an event.
+  - Shard [London] keeps its text (the building is "the Shard").
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time): contract-dup-root 177 -> 174; contract-root-region 1744 -> 1728; contract-type-common 39 -> 35. No warn kind changes.
