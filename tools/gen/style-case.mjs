@@ -28,7 +28,7 @@ const errorsBefore = errors();
 const STYLES = [
   // lowercase: the word also lives in lowercase
   [6594, 'art deco', 'common'], [6361, 'art nouveau', 'common'], [6593, 'baroque', 'common'], [13938, 'beaux-arts', 'common'],
-  [6595, 'brutalism', 'common'], [13928, 'brutalist', 'common'], [13934, 'byzantine architecture', 'common'], [11994, 'byzantine art', 'common'],
+  [6595, 'brutalism', 'common'], [13928, 'brutalist', 'common'], [13934, 'byzantine style', 'common'], [11994, 'byzantine art', 'common'],
   [13931, 'colonial', 'common'], [67021, 'colonial architecture', 'common'], [13948, 'craftsman', 'common'], [6359, 'dada', 'common'],
   [13937, 'deconstructivism', 'common'], [24363, 'empire line', 'common'], [6592, 'gothic', 'common'], [11993, 'gothic art', 'common'],
   [13168, 'gothic fiction', 'common'], [13932, 'gothic revival', 'common'], [13950, 'international style', 'common'],

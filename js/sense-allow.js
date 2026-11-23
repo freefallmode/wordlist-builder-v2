@@ -2,6 +2,17 @@
 // Key: smallerId|largerId for the pair, or smallerId|largerId|themeId for one theme only (the "linked on the wrong sense?" form).
 // Add a line only after a person has checked the two are different senses and each is linked in the right themes.
 export const SENSE_OK = new Set([
+  '2104|7727|red_things',        // cinnabar [mineral] is the red thing (Simon, 2026-11-23, v447)
+  '8153|38560|red_things',       // cardinal [bird] is the red thing (Simon, 2026-11-23, v447)
+  '7707|40083|red_things',       // rust [corrosion] is the red thing (Simon, 2026-11-23, v447)
+  '7707|40083|brown_things',     // rust [corrosion] is the brown thing (Simon, 2026-11-23, v447)
+  '30961|38743|blue_things',     // ocean [water] is the blue thing (Simon, 2026-11-23, v447)
+  '31659|38574|blue_things',     // sapphire [gem] is the blue thing (Simon, 2026-11-23, v447)
+  '94|7699|purple_things',       // plum [fruit] is the purple thing (Simon, 2026-11-23, v447)
+  '29871|38618|purple_things',   // amethyst [gemstone] is the purple thing (Simon, 2026-11-23, v447)
+  '29049|47250|things_that_fly', // balloon [party] flies away; balloon [aircraft] is the hot air kind (Simon, 2026-11-23, v447)
+  '38654|57751',                 // rouge [color] and rouge [red] (French word): two senses (Simon, 2026-11-23, v447)
+  '9524|38626',                  // chestnut [horse color] and chestnut [color]: two senses (Simon, 2026-11-23, v447)
   '34188|34220|religious_leaders',          // canon [clergy] is right in religious leaders (Simon, 2026-11-23, v440)
   '32522|41069|ages_and_stages',            // adult [grown-up] is right in stages of life (Simon, 2026-11-23, v440)
   '25344|54007|time_units',                 // century [100 years] is right in time units (Simon, 2026-11-23, v441)

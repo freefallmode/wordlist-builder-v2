@@ -1,0 +1,63 @@
+Checks inside Qualities (224 themes; counted on library v442, main after round 3), found -> left after this batch:
+  warn region-root-equiv: 16 entries linked in the group -> 4. Fixed in the group's own themes 3: lolly (split, Simon), spiffing (its group with spiffy in words for good removed: a synonym theme takes no groups) and bluebottle (now the AU regional alias of Portuguese man o' war; man o' war [jellyfish], a stub, its synonym). 9 more leave the group's themes because they were wrong there, but keep their hit in another group's theme: brewski (bitter foods), bubbly and fizz (things that pop, metallic colors), cuppa (brown things), broil (hot things), sieve [to strain] (things with holes: the tool takes the link), pea-souper and haar (shades of gray, quiet things), mizzle (water sounds). Left 4, all in other groups' themes: stoat, cleavers, samphire, wintry mix. Library 87 -> 84.
+  long, theme-name, clash-big, maybe-duplicate, theme-gap: 0 in the group's themes before and after.
+  contract-type-common: 1 -> 0 in the group (shot [tiny tumbler] deleted; noir [film genre] retyped common). Library 9 -> 8.
+  contract-dup-root: 20 -> 20 in the group, all by design (a common word after a name: ring x2, ram, stagecoach, jersey, bath, opal x2, aurora, byzantium, mini x2, mastermind, dash, adobe x2, pentagon, azul, esmeralda, bordeaux, kindle, tang). Library 171 -> 170 (halo [light ring] deleted).
+  contract-root-region: 88 roots with a region linked in the group -> 73. Fixed by region 1 (knobby untagged: the US root of knobbly) plus bluebottle aliased and lolly split (its root now AU, in Australian slang only); the others left the group's themes as wrong there (above, plus greenboard, Sooty, Putt-Putt). Real but left, about 11, all other groups' or Simon's: stoat, cleavers, samphire, wintry mix, composition book, springbok (a ZA tag on a world animal: Animals), diary (a UK tag on a word everyone knows), set square, cat's eye, Hoover and JCB (UK generic uses of brands). By design about 60: UK, US and AU slang in the synonym themes (titchy, tiddly, nippy, pacy, smashing, topping, corking, spiffing, grotty, ropy, clued-up, rum, bonny, dishy, parky, perishing, baltic, cushty, shonky, manky, nous), regional foods, sweets, drinks and brands (damson, clotted cream, trifle, blancmange, syllabub, kulfi, gulab jamun, root beer, birch beer, sloe, jelly babies, wine gum, candy corn, saltwater taffy, treacle, Marmite, Vegemite, prawn crackers, Irn-Bru, Vimto, Ribena, Lilt, Lucozade, Appletiser, dandelion and burdock, sprouting broccoli, paddle pop), regional plants and animals (kauri, gorse, yellowhammer, yellowjacket) and the rest (rebar, mosey, Hacky Sack, Crock-Pot, eau de nil, lederhosen, Purple Heart, cliffs of Dover, Blu-Tack). Proposal as in rounds 1-3: the accepted remainder (contract-root-region is info). Library 1462 -> 1458.
+  info: theme-twin 6 -> 0 (reading material, confectionery, fermented foods and drinks, fragrant flowers and aircraft deleted; spiky animals, a twin of spiny animals once uni leaves it, deleted too). sense-twin 14 -> 7 (tank, halo, sable, bay, dun; champagne out of metallic colors; paper [newspaper] went with reading material); left: chestnut [horse color] / [color] (allow keys under Decided by Simon) and other groups' axe, egg, ash, crown, bow, applesauce. sense-link 15 -> 10 (sable, sherpa fixed; the color words left red and blue things); left: the property-theme hits (things of that color) and Bordeaux, balloon (allow keys under Decided by Simon). alias-kind-suspect 4 -> 3 (purty left the group with pretty). offensive-unlisted 1 -> 0 (the stub bluetit deleted). clash-large 11 -> 12, family-kin 47 -> 45, alias-fullname 19 -> 19: left (below). orphan: 9 new (smart, strange, pretty, shiny: topic words of synonym themes; close, sweaty, swarthy: out of words for hot and dark; Sooty; Putt-Putt [mini golf brand]).
+  First synonym alias (game flag 512): 56 roots linked in the group have synonym aliases; 9 have a first synonym harder than the root + 1, none made here and all other groups' entries (later batch, Simon). Every merge here was checked: navy (abbreviation), gum, man o' war, boba, bubble tea pearls are no harder than their root + 1; western boots and paper airplane were deleted instead (an alias is checked for theme-name like a root).
+  Spread and I30: no theme of the group has a gap of 2 or more before or after.
+
+Reviewer's fixes (second agent, 2026-11-23, "apply after fixes"), section 13 of the batch and above:
+  - sable 7670 familiarity 4 (as the merged sable [black]).
+  - mirror ball stays a root, grouped with disco ball: in ___ ball mirror and disco are different answers.
+  - Synonym themes treated alike: warm [not hot], sultry, close, oppressive, tropical and sweaty out of words for hot; tepid and snowy out of words for cold (as sunny, muggy and humid); swarthy (a skin-tone word, sensitive) out of words for dark.
+  - things that glow links halo [angel] 34275; the second root halo [light ring] 39977 is deleted (the sky halo 31404 is untouched).
+  - flower-named colors: 17 flowers that are not color names out (tulip, daisy, sunflower, lily, daffodil, narcissus, carnation, dianthus, peony, dandelion, foxglove, camellia, azalea, lupine, hibiscus, pansy, hyacinth); the color names stay (rose, lavender, lilac, violet, fuchsia, magnolia, poppy, marigold, cornflower, periwinkle, iris, primrose, wisteria ...).
+  - red things and blue things link things: vermilion, carmine, madder, cochineal, turquoise, indigo, cobalt, azure, ultramarine, Prussian blue (color words) out.
+  - things with eyes, teeth, tongues and tails: doggo, hound, mutt, pooch, kitty and serpent out (padding beside dog, cat, snake); cyclone and typhoon out of things with eyes (hurricane stays).
+  - magnolia [tree] out of shades of white (no color sense in the library); doorknob and door handle out of things with holes.
+
+Cross-group moves and follow-ups (not in this batch):
+  - hot weather talk (Nature & Earth): done here (Simon), see Decided by Simon.
+  - harlequin [pattern] (new here) should also take fabric prints' link from harlequin [clown character] 12548.
+  - armor 10406 is glossed [animal covering] but linked for the knight's armor too (knights, jousting tournament, shiny things): split needed (History & Myth / Animals).
+  - shoyu 39197 is the Japanese name of soy sauce (a translation alias), grouped with it in five themes, three of them Food & Drink's; katsuobushi and bacalao are made translation aliases here.
+  - Second roots of one sense grouped in other groups' themes: pumice / pumice stone, obsidian / volcanic glass, graphite / plumbago, echidna / spiny anteater, kiwi / kiwifruit, vacuum / vacuum cleaner, microwave / microwave oven, coffee maker / coffee machine, bike / bicycle, tin whistle / penny whistle, anemone / sea anemone, ladybug / lady beetle, hair tie / hair elastic, skate [roller skate] / roller skate, lokum / Turkish delight (Turkish themes), dulce de leche / arequipe / manjar blanco.
+  - trainer 40218 [shoe] stays a root beside sneakers' UK alias trainers: starts with public transport (Language & Wordplay) needs its text.
+  - whizz: the sound has no entry (whizz [blend] left onomatopoeia and machine sounds).
+  - brine 18034 and rake 1851 are typed pos verb for nouns (Food & Drink, Home & Everyday).
+
+Decided by Simon (2026-11-23, "Take all and apply"), section 14 of the batch and above:
+  - lolly split: lolly 610 keeps the Australian sense (gloss "sweets", region AU; with its form lollies) and stays only in Australian slang; its lollipop sense is a new regional alias lolly [lollipop] of lollipop (UK, AU; UK and Australian players see "lolly"). It leaves desserts and sweets, candy, foods on a stick and sweet foods, where lollipop is (they were grouped). Its region-root-equiv hit is gone: in the group 5 -> 4 left, library 87 -> 84.
+  - shiny is linked in texture words (typicality 2), beside glossy and matte; smart, pretty and strange stay in no theme. The other topic words are out as drafted.
+  - hot weather talk: torrid, canicular, searing, broiling, sizzling out (literary or plain synonyms of hot, in words for hot); boiling, roasting and baking stay.
+  - Bordeaux: place-named colors links bordeaux [color] 57763 instead of Bordeaux [wine] 19663, with the case allow key below. The batch makes the swap only when the key is in js/caselint-allow.js (it trips case-sense-common otherwise); tested on a scratch copy with the key: no new issues, rerun 0 changes.
+  - Accepted as drafted: the padding cleanup in things with eyes, teeth, tongues and tails; the 8 deleted themes; the words deleted rather than aliased (western boots, paper airplane, the stubs).
+  - Later batches, not this one: words for smart split into "clever people"; the hard first synonyms (tadpole / polliwog, cat / moggy, Big Ben / Elizabeth Tower, GPS / satnav, movie theater / picture house, notebook / jotter, handbag / pocketbook, sparkling water / club soda, sperm whale / cachalot).
+  - Allow-list keys (the manager adds them at apply time):
+      js/caselint-allow.js:  '57763|colors_named_after_places', // bordeaux [color], the color named after the wine, in place-named colors (Simon, 2026-11-23, v447)
+      js/sense-allow.js:     '2104|7727|red_things',       // cinnabar [mineral] is the red thing in red things (Simon, 2026-11-23, v447)
+                             '8153|38560|red_things',      // cardinal [bird] is the red thing in red things (Simon, 2026-11-23, v447)
+                             '7707|40083|red_things',      // rust [corrosion] is the red thing in red things (Simon, 2026-11-23, v447)
+                             '7707|40083|brown_things',    // rust [corrosion] is the brown thing in brown things (Simon, 2026-11-23, v447)
+                             '30961|38743|blue_things',    // ocean [water] is the blue thing in blue things (Simon, 2026-11-23, v447)
+                             '31659|38574|blue_things',    // sapphire [gem] is the blue thing in blue things (Simon, 2026-11-23, v447)
+                             '94|7699|purple_things',      // plum [fruit] is the purple thing in purple things (Simon, 2026-11-23, v447)
+                             '29871|38618|purple_things',  // amethyst [gemstone] is the purple thing in purple things (Simon, 2026-11-23, v447)
+                             '29049|47250|things_that_fly', // balloon [party] flies away; balloon [aircraft] is hot air balloon's kind (Simon, 2026-11-23, v447)
+                             '38654|57751',                // rouge [color] (English color name) and rouge [red] (French word): two senses (Simon, 2026-11-23, v447)
+                             '9524|38626',                 // chestnut [horse color] (coat) and chestnut [color] (general color): two senses (Simon, 2026-11-23, v447)
+
+Left as is:
+  - The color-word sense-link hits in red, blue, purple and brown things (allow keys under Decided by Simon).
+  - alias-kind-suspect: catsup, luffa, gryphon are dictionary variant spellings of ketchup, loofah, griffin.
+  - alias-fullname (19): plural and -ing forms of other groups' roots (pancakes, skis, black holes ...).
+  - clash-large (12): real look-alike groups in big themes (gray/grey, goggles/glasses, sweater/jumper, ghost/spirit ...).
+  - family-kin (45): different words or senses (bubbly/bubble, spin/spinner, fly/flyer, chips/chip ...).
+  - Lowercase trademarks: styrofoam, formica, teflon, bakelite, jacuzzi, sharpie (brand names used as words, rule 4); mylar, lucite, plexiglass (v383, as their siblings in plastics).
+  - knobby keeps its show "knobbly" in texture words and silent k words (v413); only its US tag goes.
+  - furze and whin are UK synonyms of gorse (v436).
+  - Theme names: all 24 characters or fewer after toys and characters with eyes is gone.
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time; counted on v442, recount after v443-v446): warn region-root-equiv 87 -> 84; contract-dup-root 171 -> 170; contract-type-common 9 -> 8. contract-root-region (info) 1462 -> 1458.

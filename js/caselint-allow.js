@@ -1,6 +1,7 @@
 // Links where the capital (or lowercase) is intended for the sense the word has in that theme, so the case lint does not flag them.
 // Key: entryId|themeId. Add a line only after checking the word is right as shown. Lines are added and removed by hand or by a library batch script (tools/gen/batchNNN.mjs).
 export const CASE_OK = new Set([
+  '57763|colors_named_after_places', // bordeaux [color], the color named after the wine (Simon, 2026-11-23, v447)
   '68257|charity_words',       // Comic Relief, the UK charity, in charity words (Simon, 2026-11-23, v440)
   '50194|fans_and_followers',  // Deadhead, the Grateful Dead fan (Merriam-Webster capitalizes it) (Simon, 2026-11-23, v440)
   '45559|word_games',          // I spy: the pronoun I is a capital in a common phrase (Simon, 2026-11-23, v442)
