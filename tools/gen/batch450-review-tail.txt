@@ -1,0 +1,45 @@
+Summary by part (counted on v447; v448 and v449 apply first, and every step here is skipped when its entry is gone or changed):
+  1. Hard first synonyms (game flag 512: the game shows a root's first synonym alias, in row order, at some levels; it must be no harder than the root's familiarity + 1). Library-wide 30 roots broke the rule; 25 fixed, 5 left (below):
+     - 20 aliases deleted (obscure, or not a strict synonym; no theme of the root shows the text and no note names it): dinner hall, polliwog, pollywog, Komodo monitor, saithe, Millennium Wheel, shippon, Old Glory, registration plate, dumper truck, goose egg, dosette box, jacket potatoes, section hand, tripometer, gin palace, Mother Road, cachalot, choler, ratel.
+     - 2 aliases become roots of their own (reviewer): moggy (common, UK, familiarity 3) in British slang (typicality 3); gandy dancer (US, familiarity 5) in nicknames for workers (typicality 4, beside sparky, chippy, copper). Not strict synonyms of cat and track worker, so no group.
+     - 5 given a better kind: dumper, tipper (dump truck), jacket (baked potato), estate (station wagon; familiarity 5 -> 4, reviewer) are abbreviations (short forms of dumper truck, tipper truck, jacket potato, estate car); nymphaea is water lily's translation (the Latin genus name; as hookah has narghile).
+     - 5 rerated: club soda 3 -> 2; dekko, shufti, squiz 5 -> 4 (slang known in its region, familiarity 4 by the rule); reconnaissance plane 4 -> 3.
+     - No reorder was needed: where a root had two synonyms, both were too hard.
+     - narghile (hookah) was already a translation alias: nothing to do.
+  2. Translations stored as roots: 7 roots become translation aliases of the known name (links move, the better typicality kept, the synonym groups dissolve): La Tour Eiffel (Eiffel Tower), Cristo Redentor (Christ the Redeemer), Fernsehturm (Berlin TV Tower), Stephansdom (St Stephen's Cathedral), Masjid al-Haram (Great Mosque of Mecca, famous mosques typicality 2 -> 1); and two English renderings of a name English uses in the original: Arch of Triumph (Arc de Triomphe), Orsay Museum (Musée d'Orsay; nameOkIn famous museums, as Elizabeth Tower has in famous towers). None of their themes is lang-locked or shows the foreign text. Found by script: synonym groups of a place, proper or org root with a foreign-looking member (32 groups read) and 198 ungrouped foreign-looking place roots.
+  3. foods named after places (Places & Geography > place names; lang): 38 -> 29 words, foods only. 16 places or stubs give their link to the food named after them: cheddar, Dijon mustard (new, shown "Dijon"), Parma ham ("Parma"), Peking duck ("Peking"), Bombay mix ("Bombay"), chicken Kiev ("Kiev", as the theme showed), Brussels sprouts and Jerusalem artichoke (no show: each has a regional alias, sprouts [UK] and sunchoke [US]), hamburger, frankfurter, Kobe beef (new, shown "Kobe"), Cheshire [cheese], Worcestershire sauce ("Worcestershire"), Bakewell tart ("Bakewell"), Eccles cake ("Eccles"), Madeira cake ("Madeira"). Out: the drinks champagne, Bordeaux, Chablis, cognac (they stay in their drinks themes); the places Burgundy and Java (named after them: wine and coffee). 7 stubs deleted: jaffa, eccles, madeira [cake], Marsala [town], Worcester, Bakewell (also out of puddings: the town, not Bakewell pudding), Mocha [port]. Savoy [cabbage] typed proper (a thing named after a place), not place. The note says what the theme holds now. Dijon mustard is also linked in French food (2) and sauces and condiments (3), Kobe beef in Japanese food (3). The theme is not thin (9 easy, 13 middle, 7 hard), so no other food was added.
+  4. Other open items of TIDY-UP.md: the dinosaur capital pass: 44 genus names lowercase and typed common; T. rex is now the abbreviation of Tyrannosaurus rex (was of tyrannosaurus; reviewer). See Left as is for the rest.
+
+Checks (npm run check -- <draft> --diff data/wordlist-en.project.json --export): no new errors or warnings; diff rules pass; strict export and export contract PASS.
+  warn: no kind changed in the gated Checks (region-root-equiv 74). rating-vs-zipf (outside the gate: the gate's Checks run without the frequency list) 156 -> 160: stegosaurus, brontosaurus, diplodocus, brachiosaurus are now type common at familiarity 2 and rare in text; well-known dinosaur names, the ratings are right (accepted, reviewer).
+  contract: contract-dup-root 171 -> 170 (the stub madeira [cake] deleted, a common word after Madeira [wine]). contract-root-region (info) 1444 -> 1446 (moggy [UK], gandy dancer [US] are roots now).
+  First synonym rule, library-wide: 676 roots with synonym aliases, 30 too hard -> 654, 5 too hard (Left as is).
+  Rerun on the draft: 0 changes.
+
+Export (family, this batch alone on v447): theme rows 3192 -> 3192, no theme index shifts; entry rows 60,886 -> 60,861 (27 rows removed, 2 new rows at the end: Dijon mustard, Kobe beef); rows shift from row 1,140 (Komodo monitor's row); 7 rows turn from root to alias (La Tour Eiffel, Cristo Redentor, Arch of Triumph, Fernsehturm, Masjid al-Haram, Stephansdom, Orsay Museum), 2 from alias to root (moggy, gandy dancer); links 97,991 -> 97,973, link positions move from row 231; 44 rows change text (the dinosaur names, case only); no new characters.
+
+Baselines to lower at apply time (tools/checks-baseline.json; recount after v448 and v449): contract-dup-root 171 -> 170. No warning baseline rises. No allow-list key is needed.
+
+Decided (standing approval, reviewer's recommendations; the second agent's review said "apply after fixes"):
+  - Elizabeth Tower, dustcart, jotter and pocketbook stay as they are: Simon kept them in v441 ("The four obscure first synonyms stay as they are"); not reversed.
+  - moggy and gandy dancer become roots of their own (british_slang typicality 3; nicknames_for_workers typicality 4), not deleted. No group.
+  - T. rex points at Tyrannosaurus rex, as its abbreviation.
+  - estate familiarity 5 -> 4.
+  - Dinosaur lowercasing kept. Recheck in Oxford and Merriam-Webster when they can be fetched: the obscure genera, lowercased by their siblings (rule 2) without a dictionary entry checked: cuvieronius, palaeoloxodon, doedicurus, macrauchenia, toxodon, homotherium, diprotodon, arctodus, procoptodon, stephanorhinus, mylodon, liopleurodon, dunkleosteus, anomalocaris, hallucigenia, titanoboa, quetzalcoatlus, therizinosaurus, argentinosaurus, giganotosaurus, carnotaurus, gallimimus, utahraptor, dimetrodon. Mark "recheck".
+  - The 4 rating-vs-zipf hits (stegosaurus, brontosaurus, diplodocus, brachiosaurus) are accepted.
+  - ear infection / otitis media stays (the theme infections shows "otitis media"); Masjid al-Haram is the translation alias of Great Mosque of Mecca, as drafted.
+
+For Simon:
+  - Nothing.
+
+Left as is:
+  - First synonyms still harder than root + 1 (5): Big Ben / Elizabeth Tower, garbage truck / dustcart, notebook / jotter, handbag / pocketbook (Simon's v441 decision), ear infection / otitis media (shown in infections).
+  - Accent-related translation roots, for v449 or later: Bocca della Verità (Mouth of Truth), Côte d'Ivoire (Ivory Coast), Côte d'Azur (French Riviera), çay (Turkish tea), tortilla española (Spanish omelette), ragù (Bolognese), Parchís (Ludo), Qhapaq Ñan (Inca road), Kız Kulesi; Albrecht Dürer / Durer.
+  - Foreign names that are the names English uses, or other things than a translation: Notre-Dame, Ponte Vecchio, Piazza San Marco, Place de la Concorde, Plaza Mayor, Hofburg, Gare du Nord ...; Deir el-Bahri (the site of Hatshepsut's temple), Camino Frances (one route of the Camino), Green Hell (Nürburgring's nickname), Iceman (Ötzi's nickname), te reo (Māori), Hine-nui-te-pō.
+  - Regional aliases that are obscure but are the dialect's display word: byre [UK] (cowshed), platelayer [UK] (track worker); tag [US] (license plate) and purse [US] (handbag) are not shown (the game shows only UK-tagged regional aliases).
+  - foods named after places: Waldorf [salad] stays (a bare name people use); Jaffa orange, Bakewell pudding, chicken Marsala and Bath bun are not in the library and the theme is not thin.
+  - TIDY-UP.md open items already done by earlier batches: Fujiyama (alias of Mount Fuji), car park (UK alias of parking lot), lay-by (alias of rest area), plaster -> adhesive bandage (v441), starts/ends with transport (v446 kept the names, the rule covers all modes of transport), egg [animal egg] in the life-cycle themes, dragon egg its own root, honeydew out of sticky things (v447); applesauce, plum, fish, lamb, pork pie are on their right senses.
+  - TIDY-UP.md items in v448 (tree): moves between groups; cowboy words / Wild West words; words for smart -> clever people (the v448 draft takes them; checked: no other overlap with the v448 and v449 drafts).
+  - TIDY-UP.md items in v449 (diacritics): Édouard Manet, Zurbarán, Joaquín Sorolla, Mexican places, Belém Tower, Kız Kulesi, Zócalo, Dürer.
+  - TIDY-UP.md items that stay with Simon, untouched here: "squaw" on js/offensive-words.js (Squaw Valley); föhn against Oxford (could not be fetched).
+  - region-root-equiv 74: not this batch's scope.

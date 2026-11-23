@@ -1,0 +1,512 @@
+Library batch v449: tidy-up follow-up, the diacritics pass. 223 roots retexted to their accented form (place 62, proper 27, person 118, title 10, org 6), 220 plain spelling aliases added, 0 skipped.
+1. Names and titles retexted to the accented form (by entry id; the source after the colon)
+  text: Reykjavik 2299 -> "Reykjavík" (place): English Wikipedia: "Reykjavík"
+  new entry: Reykjavik 68381: spelling alias of Reykjavík 2299, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Volapuk 7593 -> "Volapük" (proper): English Wikipedia: "Volapük"
+  new entry: Volapuk 68382: spelling alias of Volapük 7593, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Adelie penguin 8236 -> "Adélie penguin" (proper): English Wikipedia: "Adélie penguin"
+  new entry: Adelie penguin 68383: spelling alias of Adélie penguin 8236, familiarity 4, no region (rule 8: the plain form is kept)
+  Adélie penguin 8236 in penguins: shown "Adelie" -> "Adélie" (a shown text keeps the root's diacritics)
+  text: Atitlan grebe 8248 -> "Atitlán grebe" (proper): English Wikipedia: "Atitlán grebe"
+  new entry: Atitlan grebe 68384: spelling alias of Atitlán grebe 8248, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Selle Francais 9490 -> "Selle Français" (proper): English Wikipedia: "Selle Français"
+  new entry: Selle Francais 68385: spelling alias of Selle Français 9490, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Grevy's zebra 9615 -> "Grévy's zebra" (proper): English Wikipedia: "Grévy's zebra"
+  new entry: Grevy's zebra 68386: spelling alias of Grévy's zebra 9615, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Dvorak 11396 -> "Dvořák" (person): English Wikipedia: "Antonín Dvořák" (the name as the library writes it)
+  new entry: Dvorak 68387: spelling alias of Dvořák 11396, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Saint-Saens 11410 -> "Saint-Saëns" (person): English Wikipedia: "Camille Saint-Saëns" (the name as the library writes it)
+  new entry: Saint-Saens 68388: spelling alias of Saint-Saëns 11410, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Bartok 11426 -> "Bartók" (person): English Wikipedia: "Béla Bartók" (the name as the library writes it)
+  new entry: Bartok 68389: spelling alias of Bartók 11426, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Janacek 11427 -> "Janáček" (person): English Wikipedia: "Leoš Janáček" (the name as the library writes it)
+  new entry: Janacek 68390: spelling alias of Janáček 11427, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Arvo Part 11435 -> "Arvo Pärt" (person): English Wikipedia: "Arvo Pärt"
+  new entry: Arvo Part 68391: spelling alias of Arvo Pärt 11435, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Beyonce 11474 -> "Beyoncé" (person): English Wikipedia: "Beyoncé"
+  new entry: Beyonce 68392: spelling alias of Beyoncé 11474, familiarity 1, no region (rule 8: the plain form is kept)
+  text: Baris Manco 11592 -> "Barış Manço" (person): English Wikipedia: "Barış Manço"
+  new entry: Baris Manco 68393: spelling alias of Barış Manço 11592, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ibrahim Tatlises 11593 -> "Ibrahim Tatlıses" (person): English Wikipedia: "İbrahim Tatlıses", with the capital I plain as English writes it (reviewer)
+  new entry: Ibrahim Tatlises 68394: spelling alias of Ibrahim Tatlıses 11593, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Muslum Gurses 11597 -> "Müslüm Gürses" (person): English Wikipedia: "Müslüm Gürses"
+  new entry: Muslum Gurses 68395: spelling alias of Müslüm Gürses 11597, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Zeki Muren 11598 -> "Zeki Müren" (person): English Wikipedia: "Zeki Müren"
+  new entry: Zeki Muren 68396: spelling alias of Zeki Müren 11598, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Bulent Ersoy 11599 -> "Bülent Ersoy" (person): English Wikipedia: "Bülent Ersoy"
+  new entry: Bulent Ersoy 68397: spelling alias of Bülent Ersoy 11599, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Kenan Dogulu 11600 -> "Kenan Doğulu" (person): English Wikipedia: "Kenan Doğulu"
+  new entry: Kenan Dogulu 68398: spelling alias of Kenan Doğulu 11600, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Gulsen 11601 -> "Gülşen" (person): English Wikipedia: "Gülşen"
+  new entry: Gulsen 68399: spelling alias of Gülşen 11601, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Yildiz Tilbe 11602 -> "Yıldız Tilbe" (person): English Wikipedia: "Yıldız Tilbe"
+  new entry: Yildiz Tilbe 68400: spelling alias of Yıldız Tilbe 11602, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Demet Akalin 11604 -> "Demet Akalın" (person): English Wikipedia: "Demet Akalın"
+  new entry: Demet Akalin 68401: spelling alias of Demet Akalın 11604, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Sebnem Ferah 11607 -> "Şebnem Ferah" (person): English Wikipedia: "Şebnem Ferah"
+  new entry: Sebnem Ferah 68402: spelling alias of Şebnem Ferah 11607, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Angelique Kidjo 11613 -> "Angélique Kidjo" (person): English Wikipedia: "Angélique Kidjo"
+  new entry: Angelique Kidjo 68403: spelling alias of Angélique Kidjo 11613, familiarity 5, no region (rule 8: the plain form is kept)
+  text: King Sunny Ade 11621 -> "King Sunny Adé" (person): English Wikipedia: "King Sunny Adé"
+  new entry: King Sunny Ade 68404: spelling alias of King Sunny Adé 11621, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Oumou Sangare 11622 -> "Oumou Sangaré" (person): English Wikipedia: "Oumou Sangaré"
+  new entry: Oumou Sangare 68405: spelling alias of Oumou Sangaré 11622, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ali Farka Toure 11623 -> "Ali Farka Touré" (person): English Wikipedia: "Ali Farka Touré"
+  new entry: Ali Farka Toure 68406: spelling alias of Ali Farka Touré 11623, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Toumani Diabate 11624 -> "Toumani Diabaté" (person): English Wikipedia: "Toumani Diabaté"
+  new entry: Toumani Diabate 68407: spelling alias of Toumani Diabaté 11624, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Cesaria Evora 11625 -> "Cesária Évora" (person): English Wikipedia: "Cesária Évora"
+  new entry: Cesaria Evora 68408: spelling alias of Cesária Évora 11625, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Mory Kante 11626 -> "Mory Kanté" (person): English Wikipedia: "Mory Kanté"
+  new entry: Mory Kante 68409: spelling alias of Mory Kanté 11626, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Victor Jara 11645 -> "Víctor Jara" (person): English Wikipedia: "Víctor Jara"
+  new entry: Victor Jara 68410: spelling alias of Víctor Jara 11645, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Maria Bethania 11649 -> "Maria Bethânia" (person): English Wikipedia: "Maria Bethânia"
+  new entry: Maria Bethania 68411: spelling alias of Maria Bethânia 11649, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Joao Gilberto 11651 -> "João Gilberto" (person): English Wikipedia: "João Gilberto"
+  new entry: Joao Gilberto 68412: spelling alias of João Gilberto 11651, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Charly Garcia 11662 -> "Charly García" (person): English Wikipedia: "Charly García"
+  new entry: Charly Garcia 68413: spelling alias of Charly García 11662, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Sebastian Yatra 11669 -> "Sebastián Yatra" (person): English Wikipedia: "Sebastián Yatra"
+  new entry: Sebastian Yatra 68414: spelling alias of Sebastián Yatra 11669, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Niccolo Paganini 11710 -> "Niccolò Paganini" (person): English Wikipedia: "Niccolò Paganini"
+  new entry: Niccolo Paganini 68415: spelling alias of Niccolò Paganini 11710, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Jacqueline du Pre 11716 -> "Jacqueline du Pré" (person): English Wikipedia: "Jacqueline du Pré"
+  new entry: Jacqueline du Pre 68416: spelling alias of Jacqueline du Pré 11716, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Andres Segovia 11718 -> "Andrés Segovia" (person): English Wikipedia: "Andrés Segovia"
+  new entry: Andres Segovia 68417: spelling alias of Andrés Segovia 11718, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Bela Fleck 11737 -> "Béla Fleck" (person): English Wikipedia: "Béla Fleck"
+  new entry: Bela Fleck 68418: spelling alias of Béla Fleck 11737, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Salvador Dali 11934 -> "Salvador Dalí" (person): English Wikipedia: "Salvador Dalí"
+  new entry: Salvador Dali 68419: spelling alias of Salvador Dalí 11934, familiarity 1, no region (rule 8: the plain form is kept)
+  alias Dali 52163 (synonym) -> "Dalí": the short name takes the root's accents (as Descartes, Gödel, García Márquez)
+  text: Paul Cezanne 11943 -> "Paul Cézanne" (person): English Wikipedia: "Paul Cézanne"
+  new entry: Paul Cezanne 68420: spelling alias of Paul Cézanne 11943, familiarity 2, no region (rule 8: the plain form is kept)
+  alias Cezanne 52149 (synonym) -> "Cézanne": the short name takes the root's accents (as Descartes, Gödel, García Márquez)
+  text: Rene Magritte 11953 -> "René Magritte" (person): English Wikipedia: "René Magritte"
+  new entry: Rene Magritte 68421: spelling alias of René Magritte 11953, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Joan Miro 11954 -> "Joan Miró" (person): English Wikipedia: "Joan Miró"
+  new entry: Joan Miro 68422: spelling alias of Joan Miró 11954, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Diego Velazquez 11956 -> "Diego Velázquez" (person): English Wikipedia: "Diego Velázquez"
+  new entry: Diego Velazquez 68423: spelling alias of Diego Velázquez 11956, familiarity 3, no region (rule 8: the plain form is kept)
+  alias Velazquez 52203 (synonym) -> "Velázquez": the short name takes the root's accents (as Descartes, Gödel, García Márquez)
+  text: Eugene Delacroix 11968 -> "Eugène Delacroix" (person): English Wikipedia: "Eugène Delacroix"
+  new entry: Eugene Delacroix 68424: spelling alias of Eugène Delacroix 11968, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Cafe Terrace at Night 12132 -> "Café Terrace at Night" (title): English Wikipedia: "Café Terrace at Night"
+  new entry: Cafe Terrace at Night 68425: spelling alias of Café Terrace at Night 12132, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Moliere 12484 -> "Molière" (person): English Wikipedia: "Molière"
+  new entry: Moliere 68426: spelling alias of Molière 12484, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Garcia Lorca 12502 -> "García Lorca" (person): English Wikipedia: "Federico García Lorca" (the name as the library writes it)
+  new entry: Garcia Lorca 68427: spelling alias of García Lorca 12502, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Noel Coward 12510 -> "Noël Coward" (person): English Wikipedia: "Noël Coward"
+  new entry: Noel Coward 68428: spelling alias of Noël Coward 12510, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Eugene Ionesco 12521 -> "Eugène Ionesco" (person): English Wikipedia: "Eugène Ionesco"
+  new entry: Eugene Ionesco 68429: spelling alias of Eugène Ionesco 12521, familiarity 5, no region (rule 8: the plain form is kept)
+  text: San Sebastian 12776 -> "San Sebastián" (proper): English Wikipedia: "San Sebastián"
+  San Sebastián 12776: gloss "film festival" (its text is now shared)
+  San Sebastián 56949: gloss "city" (its text is now shared with San Sebastián 12776)
+  new entry: San Sebastian 68430: spelling alias of San Sebastián 12776, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Weta Workshop 12889 -> "Wētā Workshop" (org): English Wikipedia: "Wētā Workshop"
+  new entry: Weta Workshop 68431: spelling alias of Wētā Workshop 12889, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Pedro Almodovar 12916 -> "Pedro Almodóvar" (person): English Wikipedia: "Pedro Almodóvar"
+  new entry: Pedro Almodovar 68432: spelling alias of Pedro Almodóvar 12916, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Francois Truffaut 12920 -> "François Truffaut" (person): English Wikipedia: "François Truffaut"
+  new entry: Francois Truffaut 68433: spelling alias of François Truffaut 12920, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Chloe Zhao 12942 -> "Chloé Zhao" (person): English Wikipedia: "Chloé Zhao"
+  new entry: Chloe Zhao 68434: spelling alias of Chloé Zhao 12942, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Agnes Varda 12952 -> "Agnès Varda" (person): English Wikipedia: "Agnès Varda"
+  new entry: Agnes Varda 68435: spelling alias of Agnès Varda 12952, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Luis Bunuel 12953 -> "Luis Buñuel" (person): English Wikipedia: "Luis Buñuel"
+  new entry: Luis Bunuel 68436: spelling alias of Luis Buñuel 12953, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Les Miserables 13471 -> "Les Misérables" (title): English Wikipedia: "Les Misérables"
+  new entry: Les Miserables 68437: spelling alias of Les Misérables 13471, familiarity 2, no region (rule 8: the plain form is kept)
+  text: Antoni Gaudi 13957 -> "Antoni Gaudí" (person): English Wikipedia: "Antoni Gaudí"
+  new entry: Antoni Gaudi 68438: spelling alias of Antoni Gaudí 13957, familiarity 3, no region (rule 8: the plain form is kept)
+  alias Gaudi 13958 (synonym) -> "Gaudí": the short name takes the root's accents (as Descartes, Gödel, García Márquez)
+  text: Jorn Utzon 13985 -> "Jørn Utzon" (person): English Wikipedia: "Jørn Utzon"
+  new entry: Jorn Utzon 68439: spelling alias of Jørn Utzon 13985, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Bjorn Ironside 20607 -> "Björn Ironside" (person): English Wikipedia: "Björn Ironside"
+  new entry: Bjorn Ironside 68440: spelling alias of Björn Ironside 20607, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Topkapi Palace 20636 -> "Topkapı Palace" (place): English Wikipedia: "Topkapı Palace"
+  new entry: Topkapi Palace 68441: spelling alias of Topkapı Palace 20636, familiarity 4, no region (rule 8: the plain form is kept)
+  Topkapı Palace 20636 in famous_palaces: shown "Topkapi" -> "Topkapı" (a shown text keeps the root's diacritics)
+  text: Mustafa Kemal Ataturk 21523 -> "Mustafa Kemal Atatürk" (person): English Wikipedia: "Mustafa Kemal Atatürk"
+  new entry: Mustafa Kemal Ataturk 68442: spelling alias of Mustafa Kemal Atatürk 21523, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Ruaumoko 22177 -> "Rūaumoko" [god] (proper): English Wikipedia: "Rūaumoko"
+  new entry: Ruaumoko 68443: spelling alias of Rūaumoko 22177, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Laocoon 22298 -> "Laocoön" (person): English Wikipedia: "Laocoön"
+  new entry: Laocoon 68444: spelling alias of Laocoön 22298, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Tir na nOg 22309 -> "Tír na nÓg" (place): English Wikipedia: "Tír na nÓg"
+  new entry: Tir na nOg 68445: spelling alias of Tír na nÓg 22309, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Tepegoz 22686 -> "Tepegöz" (proper): English Wikipedia: "Tepegöz"
+  new entry: Tepegoz 68446: spelling alias of Tepegöz 22686, familiarity 5, no region (rule 8: the plain form is kept)
+  theme turkish_folklore: note item "Tepegoz" -> "Tepegöz"
+  text: Karagoz and Hacivat 22690 -> "Karagöz and Hacivat" (proper): English Wikipedia: "Karagöz and Hacivat"
+  new entry: Karagoz and Hacivat 68447: spelling alias of Karagöz and Hacivat 22690, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Vigenere cipher 26002 -> "Vigenère cipher" (proper): English Wikipedia: "Vigenère cipher"
+  new entry: Vigenere cipher 68448: spelling alias of Vigenère cipher 26002, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Laadan 26044 -> "Láadan" (proper): English Wikipedia: "Láadan"
+  new entry: Laadan 68449: spelling alias of Láadan 26044, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Bialowieza 30213 -> "Białowieża" (place): English Wikipedia: "Białowieża"
+  new entry: Bialowieza 68450: spelling alias of Białowieża 30213, familiarity 5, no region (rule 8: the plain form is kept)
+  theme famous_forests: note item "Bialowieza" -> "Białowieża"
+  text: Teresa of Avila 34346 -> "Teresa of Ávila" (person): English Wikipedia: "Teresa of Ávila"
+  new entry: Teresa of Avila 68451: spelling alias of Teresa of Ávila 34346, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Sao Tome and Principe 35745 -> "São Tomé and Príncipe" (place): English Wikipedia: "São Tomé and Príncipe"
+  new entry: Sao Tome and Principe 68452: spelling alias of São Tomé and Príncipe 35745, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Gdansk 35833 -> "Gdańsk" (place): English Wikipedia: "Gdańsk"
+  new entry: Gdansk 68453: spelling alias of Gdańsk 35833, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Eskisehir 35842 -> "Eskişehir" (place): English Wikipedia: "Eskişehir"
+  new entry: Eskisehir 68454: spelling alias of Eskişehir 35842, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Diyarbakir 35843 -> "Diyarbakır" (place): English Wikipedia: "Diyarbakır"
+  new entry: Diyarbakir 68455: spelling alias of Diyarbakır 35843, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Canakkale 35848 -> "Çanakkale" (place): English Wikipedia: "Çanakkale"
+  new entry: Canakkale 68456: spelling alias of Çanakkale 35848, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Kusadasi 35849 -> "Kuşadası" (place): English Wikipedia: "Kuşadası"
+  new entry: Kusadasi 68457: spelling alias of Kuşadası 35849, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Cesme 35857 -> "Çeşme" (place): English Wikipedia: "Çeşme"
+  new entry: Cesme 68458: spelling alias of Çeşme 35857, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Noumea 36035 -> "Nouméa" (place): English Wikipedia: "Nouméa"
+  new entry: Noumea 68459: spelling alias of Nouméa 36035, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Cancun 36103 -> "Cancún" (place): English Wikipedia: "Cancún"
+  new entry: Cancun 68460: spelling alias of Cancún 36103, familiarity 2, no region (rule 8: the plain form is kept)
+  theme beach_destinations: note item "Cancun" -> "Cancún"
+  text: Mazatlan 36116 -> "Mazatlán" (place): English Wikipedia: "Mazatlán"
+  new entry: Mazatlan 68461: spelling alias of Mazatlán 36116, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Ciudad Juarez 36117 -> "Ciudad Juárez" (place): English Wikipedia: "Ciudad Juárez"
+  new entry: Ciudad Juarez 68462: spelling alias of Ciudad Juárez 36117, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Queretaro 36119 -> "Querétaro" (place): English Wikipedia: "Querétaro"
+  new entry: Queretaro 68463: spelling alias of Querétaro 36119, familiarity 4, no region (rule 8: the plain form is kept)
+  theme mexican_states: note item "Queretaro" -> "Querétaro"
+  text: Culiacan 36126 -> "Culiacán" (place): English Wikipedia: "Culiacán"
+  new entry: Culiacan 68464: spelling alias of Culiacán 36126, familiarity 4, no region (rule 8: the plain form is kept)
+  text: San Luis Potosi 36128 -> "San Luis Potosí" (place): English Wikipedia: "San Luis Potosí"
+  new entry: San Luis Potosi 68465: spelling alias of San Luis Potosí 36128, familiarity 4, no region (rule 8: the plain form is kept)
+  theme mexican_states: note item "San Luis Potosi" -> "San Luis Potosí"
+  text: Torreon 36131 -> "Torreón" (place): English Wikipedia: "Torreón"
+  new entry: Torreon 68466: spelling alias of Torreón 36131, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Yucatan 36216 -> "Yucatán" (place): English Wikipedia: "Yucatán"
+  new entry: Yucatan 68467: spelling alias of Yucatán 36216, familiarity 3, no region (rule 8: the plain form is kept)
+  theme mexican_states: note item "Yucatan" -> "Yucatán"
+  text: Nuevo Leon 36224 -> "Nuevo León" (place): English Wikipedia: "Nuevo León"
+  new entry: Nuevo Leon 68468: spelling alias of Nuevo León 36224, familiarity 4, no region (rule 8: the plain form is kept)
+  theme mexican_states: note item "Nuevo Leon" -> "Nuevo León"
+  text: Michoacan 36233 -> "Michoacán" (place): English Wikipedia: "Michoacán"
+  new entry: Michoacan 68469: spelling alias of Michoacán 36233, familiarity 4, no region (rule 8: the plain form is kept)
+  theme mexican_states: note item "Michoacan" -> "Michoacán"
+  text: Yucatan Peninsula 36649 -> "Yucatán Peninsula" (place): English Wikipedia: "Yucatán Peninsula"
+  new entry: Yucatan Peninsula 68470: spelling alias of Yucatán Peninsula 36649, familiarity 3, no region (rule 8: the plain form is kept)
+  Yucatán Peninsula 36649 in peninsulas: shown "Yucatan" -> "Yucatán" (a shown text keeps the root's diacritics)
+  text: Lake Wanaka 36848 -> "Lake Wānaka" (place): English Wikipedia: "Lake Wānaka"
+  new entry: Lake Wanaka 68471: spelling alias of Lake Wānaka 36848, familiarity 4, no region (rule 8: the plain form is kept)
+  Lake Wānaka 36848 in famous_lakes: shown "Wanaka" -> "Wānaka" (a shown text keeps the root's diacritics)
+  text: Skogafoss 36872 -> "Skógafoss" (place): English Wikipedia: "Skógafoss"
+  new entry: Skogafoss 68472: spelling alias of Skógafoss 36872, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Casa Batllo 37055 -> "Casa Batlló" (place): English Wikipedia: "Casa Batlló"
+  new entry: Casa Batllo 68473: spelling alias of Casa Batlló 37055, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Pieta 37121 -> "Pietà" (place): English Wikipedia: "Pietà"
+  new entry: Pieta 68474: spelling alias of Pietà 37121, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Chateau d'If 37193 -> "Château d'If" (place): English Wikipedia: "Château d'If"
+  new entry: Chateau d'If 68475: spelling alias of Château d'If 37193, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Zocalo 37230 -> "Zócalo" (place): English Wikipedia: "Zócalo"
+  new entry: Zocalo 68476: spelling alias of Zócalo 37230, familiarity 4, no region (rule 8: the plain form is kept)
+  theme famous_squares: note item "Zocalo" -> "Zócalo"
+  text: Plaza de Espana 37237 -> "Plaza de España" (place): English Wikipedia: "Plaza de España"
+  new entry: Plaza de Espana 68477: spelling alias of Plaza de España 37237, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Kurfurstendamm 37291 -> "Kurfürstendamm" (place): English Wikipedia: "Kurfürstendamm"
+  new entry: Kurfurstendamm 68478: spelling alias of Kurfürstendamm 37291, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Maison Carree 37357 -> "Maison Carrée" (place): English Wikipedia: "Maison carrée" (the name as the library writes it)
+  new entry: Maison Carree 68479: spelling alias of Maison Carrée 37357, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Hallgrimskirkja 37430 -> "Hallgrímskirkja" (place): English Wikipedia: "Hallgrímskirkja"
+  new entry: Hallgrimskirkja 68480: spelling alias of Hallgrímskirkja 37430, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Anitkabir 37472 -> "Anıtkabir" (place): English Wikipedia: "Anıtkabir"
+  new entry: Anitkabir 68481: spelling alias of Anıtkabir 37472, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Goreme 37475 -> "Göreme" (place): English Wikipedia: "Göreme"
+  new entry: Goreme 68482: spelling alias of Göreme 37475, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Oludeniz 37478 -> "Ölüdeniz" (place): English Wikipedia: "Ölüdeniz"
+  new entry: Oludeniz 68483: spelling alias of Ölüdeniz 37478, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Kuelap 37682 -> "Kuélap" (place): English Wikipedia: "Kuélap"
+  new entry: Kuelap 68484: spelling alias of Kuélap 37682, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Monte Alban 37687 -> "Monte Albán" (place): English Wikipedia: "Monte Albán"
+  new entry: Monte Alban 68485: spelling alias of Monte Albán 37687, familiarity 4, no region (rule 8: the plain form is kept)
+  text: El Tajin 37702 -> "El Tajín" (place): English Wikipedia: "El Tajín"
+  new entry: El Tajin 68486: spelling alias of El Tajín 37702, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Chateau Frontenac 37743 -> "Château Frontenac" (place): English Wikipedia: "Château Frontenac"
+  new entry: Chateau Frontenac 68487: spelling alias of Château Frontenac 37743, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Perce Rock 37759 -> "Percé Rock" (place): English Wikipedia: "Percé Rock"
+  new entry: Perce Rock 68488: spelling alias of Percé Rock 37759, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Park Guell 37784 -> "Park Güell" (place): English Wikipedia: "Park Güell"
+  new entry: Park Guell 68489: spelling alias of Park Güell 37784, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Alcazar of Seville 37794 -> "Alcázar of Seville" (place): English Wikipedia: "Alcázar of Seville"
+  new entry: Alcazar of Seville 68490: spelling alias of Alcázar of Seville 37794, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Montjuic 37798 -> "Montjuïc" (place): English Wikipedia: "Montjuïc"
+  new entry: Montjuic 68491: spelling alias of Montjuïc 37798, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Alcazar of Segovia 37801 -> "Alcázar of Segovia" (place): English Wikipedia: "Alcázar of Segovia"
+  new entry: Alcazar of Segovia 68492: spelling alias of Alcázar of Segovia 37801, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Albaicin 37807 -> "Albaicín" (place): English Wikipedia: "Albaicín"
+  new entry: Albaicin 68493: spelling alias of Albaicín 37807, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Buchner funnel 40413 -> "Büchner funnel" (proper): English Wikipedia: "Büchner funnel"
+  new entry: Buchner funnel 68494: spelling alias of Büchner funnel 40413, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Bootes 41165 -> "Boötes" (proper): English Wikipedia: "Boötes"
+  new entry: Bootes 68495: spelling alias of Boötes 41165, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Canelo Alvarez 44596 -> "Canelo Álvarez" (person): English Wikipedia: "Canelo Álvarez"
+  new entry: Canelo Alvarez 68496: spelling alias of Canelo Álvarez 44596, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Roberto Duran 44603 -> "Roberto Durán" (person): English Wikipedia: "Roberto Durán"
+  new entry: Roberto Duran 68497: spelling alias of Roberto Durán 44603, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Julio Cesar Chavez 44610 -> "Julio César Chávez" (person): English Wikipedia: "Julio César Chávez"
+  new entry: Julio Cesar Chavez 68498: spelling alias of Julio César Chávez 44610, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Nikola Jokic 44624 -> "Nikola Jokić" (person): English Wikipedia: "Nikola Jokić"
+  new entry: Nikola Jokic 68499: spelling alias of Nikola Jokić 44624, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Manu Ginobili 44637 -> "Manu Ginóbili" (person): English Wikipedia: "Manu Ginóbili"
+  new entry: Manu Ginobili 68500: spelling alias of Manu Ginóbili 44637, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Kimi Raikkonen 44658 -> "Kimi Räikkönen" (person): English Wikipedia: "Kimi Räikkönen"
+  new entry: Kimi Raikkonen 68501: spelling alias of Kimi Räikkönen 44658, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Mika Hakkinen 44665 -> "Mika Häkkinen" (person): English Wikipedia: "Mika Häkkinen"
+  new entry: Mika Hakkinen 68502: spelling alias of Mika Häkkinen 44665, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Sergio Perez 44682 -> "Sergio Pérez" (person): English Wikipedia: "Sergio Pérez"
+  new entry: Sergio Perez 68503: spelling alias of Sergio Pérez 44682, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Annika Sorenstam 44704 -> "Annika Sörenstam" (person): English Wikipedia: "Annika Sörenstam"
+  new entry: Annika Sorenstam 68504: spelling alias of Annika Sörenstam 44704, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Padraig Harrington 44712 -> "Pádraig Harrington" (person): English Wikipedia: "Pádraig Harrington"
+  new entry: Padraig Harrington 68505: spelling alias of Pádraig Harrington 44712, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Sergio Garcia 44716 -> "Sergio García" [golfer] (person): English Wikipedia: "Sergio García"
+  new entry: Sergio Garcia 68506: spelling alias of Sergio García 44716, familiarity 3, no region (rule 8: the plain form is kept)
+  text: El Cordobes 44970 -> "El Cordobés" (person): English Wikipedia: "El Cordobés"
+  new entry: El Cordobes 68507: spelling alias of El Cordobés 44970, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Molkky 46128 -> "Mölkky" (proper): English Wikipedia: "Mölkky"
+  new entry: Molkky 68508: spelling alias of Mölkky 46128, familiarity 5, no region (rule 8: the plain form is kept)
+  alias Citroën 46581 (spelling) -> "Citroen" spelling: the root takes the accented text
+  text: Citroen 46580 -> "Citroën" (org): English Wikipedia: "Citroën"
+  text: Aeromexico 47242 -> "Aeroméxico" (org): English Wikipedia: "Aeroméxico"
+  new entry: Aeromexico 68509: spelling alias of Aeroméxico 47242, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Galeao 47298 -> "Galeão" (place): English Wikipedia: "Galeão"
+  new entry: Galeao 68510: spelling alias of Galeão 47298, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Gota Canal 47592 -> "Göta Canal" (place): English Wikipedia: "Göta Canal"
+  new entry: Gota Canal 68511: spelling alias of Göta Canal 47592, familiarity 5, no region (rule 8: the plain form is kept)
+  Göta Canal 47592 in famous_canals: shown "Gota" -> "Göta" (a shown text keeps the root's diacritics)
+  text: Haydarpasa 47821 -> "Haydarpaşa" (place): English Wikipedia: "Haydarpaşa"
+  new entry: Haydarpasa 68512: spelling alias of Haydarpaşa 47821, familiarity 5, no region (rule 8: the plain form is kept)
+  theme famous_train_stations: note item "Haydarpasa" -> "Haydarpaşa"
+  text: Liege-Bastogne-Liege 47966 -> "Liège-Bastogne-Liège" (proper): English Wikipedia: "Liège–Bastogne–Liège" (the name as the library writes it)
+  new entry: Liege-Bastogne-Liege 68513: spelling alias of Liège-Bastogne-Liège 47966, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Fleche Wallonne 47973 -> "Flèche Wallonne" (proper): English Wikipedia: "La Flèche Wallonne" (the name as the library writes it)
+  new entry: Fleche Wallonne 68514: spelling alias of Flèche Wallonne 47973, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Hotel de Paris 48421 -> "Hôtel de Paris" (org): English Wikipedia: "Hôtel de Paris"
+  new entry: Hotel de Paris 68515: spelling alias of Hôtel de Paris 48421, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Parc Asterix 48962 -> "Parc Astérix" (place): English Wikipedia: "Parc Astérix"
+  new entry: Parc Asterix 68516: spelling alias of Parc Astérix 48962, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Leclanche cell 49624 -> "Leclanché cell" (proper): English Wikipedia: "Leclanché cell"
+  new entry: Leclanche cell 68517: spelling alias of Leclanché cell 49624, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ruppell's vulture 50610 -> "Rüppell's vulture" (proper): English Wikipedia: "Rüppell's vulture"
+  new entry: Ruppell's vulture 68518: spelling alias of Rüppell's vulture 50610, familiarity 5, no region (rule 8: the plain form is kept)
+  Rüppell's vulture 50610 in vultures: shown "Ruppell's" -> "Rüppell's" (a shown text keeps the root's diacritics)
+  text: Lowchen 51007 -> "Löwchen" (proper): English Wikipedia: "Löwchen"
+  new entry: Lowchen 68519: spelling alias of Löwchen 51007, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Heinrich Schutz 51882 -> "Heinrich Schütz" (person): English Wikipedia: "Heinrich Schütz"
+  new entry: Heinrich Schutz 68520: spelling alias of Heinrich Schütz 51882, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Cesar Franck 51901 -> "César Franck" (person): English Wikipedia: "César Franck"
+  new entry: Cesar Franck 68521: spelling alias of César Franck 51901, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Cesar Cui 51910 -> "César Cui" (person): English Wikipedia: "César Cui"
+  new entry: Cesar Cui 68522: spelling alias of César Cui 51910, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ludwig Goransson 51945 -> "Ludwig Göransson" (person): English Wikipedia: "Ludwig Göransson"
+  new entry: Ludwig Goransson 68523: spelling alias of Ludwig Göransson 51945, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Miklos Rozsa 51958 -> "Miklós Rózsa" (person): English Wikipedia: "Miklós Rózsa"
+  new entry: Miklos Rozsa 68524: spelling alias of Miklós Rózsa 51958, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Johann Johannsson 51966 -> "Jóhann Jóhannsson" (person): English Wikipedia: "Jóhann Jóhannsson"
+  new entry: Johann Johannsson 68525: spelling alias of Jóhann Jóhannsson 51966, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Agnetha Faltskog 51977 -> "Agnetha Fältskog" (person): English Wikipedia: "Agnetha Fältskog"
+  new entry: Agnetha Faltskog 68526: spelling alias of Agnetha Fältskog 51977, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Bjorn Ulvaeus 51979 -> "Björn Ulvaeus" (person): English Wikipedia: "Björn Ulvaeus"
+  new entry: Bjorn Ulvaeus 68527: spelling alias of Björn Ulvaeus 51979, familiarity 3, no region (rule 8: the plain form is kept)
+  alias Bjorn 51980 (synonym) -> "Björn": the short name takes the root's accents (as Descartes, Gödel, García Márquez)
+  text: La Bayadere 51999 -> "La Bayadère" (title): English Wikipedia: "La Bayadère"
+  new entry: La Bayadere 68528: spelling alias of La Bayadère 51999, familiarity 5, no region (rule 8: the plain form is kept)
+  text: La Fille mal gardee 52017 -> "La Fille mal gardée" (title): English Wikipedia: "La fille mal gardée" (the name as the library writes it)
+  new entry: La Fille mal gardee 68529: spelling alias of La Fille mal gardée 52017, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Edouard Manet 52143 -> "Édouard Manet" (person): English Wikipedia: "Édouard Manet"
+  new entry: Edouard Manet 68530: spelling alias of Édouard Manet 52143, familiarity 2, no region (rule 8: the plain form is kept)
+  text: Frederic Bazille 52148 -> "Frédéric Bazille" (person): English Wikipedia: "Frédéric Bazille"
+  new entry: Frederic Bazille 68531: spelling alias of Frédéric Bazille 52148, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Eugene Boudin 52154 -> "Eugène Boudin" (person): English Wikipedia: "Eugène Boudin"
+  new entry: Eugene Boudin 68532: spelling alias of Eugène Boudin 52154, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Eva Gonzales 52160 -> "Eva Gonzalès" (person): English Wikipedia: "Eva Gonzalès"
+  new entry: Eva Gonzales 68533: spelling alias of Eva Gonzalès 52160, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Francisco de Zurbaran 52205 -> "Francisco de Zurbarán" (person): English Wikipedia: "Francisco de Zurbarán"
+  new entry: Francisco de Zurbaran 68534: spelling alias of Francisco de Zurbarán 52205, familiarity 5, no region (rule 8: the plain form is kept)
+  alias Zurbaran 68292 (synonym) -> "Zurbarán": the short name takes the root's accents (as Descartes, Gödel, García Márquez)
+  text: Joaquin Sorolla 52206 -> "Joaquín Sorolla" (person): English Wikipedia: "Joaquín Sorolla"
+  new entry: Joaquin Sorolla 68535: spelling alias of Joaquín Sorolla 52206, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Antoni Tapies 52208 -> "Antoni Tàpies" (person): English Wikipedia: "Antoni Tàpies"
+  new entry: Antoni Tapies 68536: spelling alias of Antoni Tàpies 52208, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Santiago Rusinol 52211 -> "Santiago Rusiñol" (person): English Wikipedia: "Santiago Rusiñol"
+  new entry: Santiago Rusinol 68537: spelling alias of Santiago Rusiñol 52211, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Antonio Lopez Garcia 52212 -> "Antonio López García" (person): English Wikipedia: "Antonio López García"
+  new entry: Antonio Lopez Garcia 68538: spelling alias of Antonio López García 52212, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Luis Melendez 52213 -> "Luis Meléndez" (person): English Wikipedia: "Luis Meléndez"
+  new entry: Luis Melendez 68539: spelling alias of Luis Meléndez 52213, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Jose Clemente Orozco 52222 -> "José Clemente Orozco" (person): English Wikipedia: "José Clemente Orozco"
+  new entry: Jose Clemente Orozco 68540: spelling alias of José Clemente Orozco 52222, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Joaquin Torres-Garcia 52224 -> "Joaquín Torres-García" (person): English Wikipedia: "Joaquín Torres-García"
+  new entry: Joaquin Torres-Garcia 68541: spelling alias of Joaquín Torres-García 52224, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Oswaldo Guayasamin 52229 -> "Oswaldo Guayasamín" (person): English Wikipedia: "Oswaldo Guayasamín"
+  new entry: Oswaldo Guayasamin 68542: spelling alias of Oswaldo Guayasamín 52229, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Helio Oiticica 52232 -> "Hélio Oiticica" (person): English Wikipedia: "Hélio Oiticica"
+  new entry: Helio Oiticica 68543: spelling alias of Hélio Oiticica 52232, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Jesus Rafael Soto 52234 -> "Jesús Rafael Soto" (person): English Wikipedia: "Jesús Rafael Soto"
+  new entry: Jesus Rafael Soto 68544: spelling alias of Jesús Rafael Soto 52234, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Maria Izquierdo 52237 -> "María Izquierdo" (person): English Wikipedia: "María Izquierdo"
+  new entry: Maria Izquierdo 68545: spelling alias of María Izquierdo 52237, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Armando Reveron 52238 -> "Armando Reverón" (person): English Wikipedia: "Armando Reverón"
+  new entry: Armando Reveron 68546: spelling alias of Armando Reverón 52238, familiarity 5, no region (rule 8: the plain form is kept)
+  text: La Boheme 52371 -> "La Bohème" (title): English Wikipedia: "La bohème" (the name as the library writes it)
+  new entry: La Boheme 68547: spelling alias of La Bohème 52371, familiarity 2, no region (rule 8: the plain form is kept)
+  text: Cosi fan tutte 52382 -> "Così fan tutte" (title): English Wikipedia: "Così fan tutte"
+  new entry: Cosi fan tutte 68548: spelling alias of Così fan tutte 52382, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Die Walkure 52404 -> "Die Walküre" (title): English Wikipedia: "Die Walküre"
+  new entry: Die Walkure 68549: spelling alias of Die Walküre 52404, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Gotterdammerung 52405 -> "Götterdämmerung" (title): English Wikipedia: "Götterdämmerung"
+  new entry: Gotterdammerung 68550: spelling alias of Götterdämmerung 52405, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Charlotte Bronte 52462 -> "Charlotte Brontë" (person): English Wikipedia: "Charlotte Brontë"
+  new entry: Charlotte Bronte 68551: spelling alias of Charlotte Brontë 52462, familiarity 2, no region (rule 8: the plain form is kept)
+  text: Emily Bronte 52463 -> "Emily Brontë" (person): English Wikipedia: "Emily Brontë"
+  new entry: Emily Bronte 68552: spelling alias of Emily Brontë 52463, familiarity 2, no region (rule 8: the plain form is kept)
+  text: John le Carre 52486 -> "John le Carré" (person): English Wikipedia: "John le Carré"
+  new entry: John le Carre 68553: spelling alias of John le Carré 52486, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Yasar Kemal 52539 -> "Yaşar Kemal" (person): English Wikipedia: "Yaşar Kemal"
+  new entry: Yasar Kemal 68554: spelling alias of Yaşar Kemal 52539, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Nazim Hikmet 52540 -> "Nâzım Hikmet" (person): English Wikipedia: "Nâzım Hikmet"
+  new entry: Nazim Hikmet 68555: spelling alias of Nâzım Hikmet 52540, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Resat Nuri Guntekin 52544 -> "Reşat Nuri Güntekin" (person): English Wikipedia: "Reşat Nuri Güntekin"
+  new entry: Resat Nuri Guntekin 68556: spelling alias of Reşat Nuri Güntekin 52544, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ahmet Hamdi Tanpinar 52545 -> "Ahmet Hamdi Tanpınar" (person): English Wikipedia: "Ahmet Hamdi Tanpınar"
+  new entry: Ahmet Hamdi Tanpinar 68557: spelling alias of Ahmet Hamdi Tanpınar 52545, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Oguz Atay 52546 -> "Oğuz Atay" (person): English Wikipedia: "Oğuz Atay"
+  new entry: Oguz Atay 68558: spelling alias of Oğuz Atay 52546, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Yusuf Atilgan 52548 -> "Yusuf Atılgan" (person): English Wikipedia: "Yusuf Atılgan"
+  new entry: Yusuf Atilgan 68559: spelling alias of Yusuf Atılgan 52548, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Namik Kemal 52552 -> "Namık Kemal" (person): English Wikipedia: "Namık Kemal"
+  new entry: Namik Kemal 68560: spelling alias of Namık Kemal 52552, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ayse Kulin 52556 -> "Ayşe Kulin" (person): English Wikipedia: "Ayşe Kulin"
+  new entry: Ayse Kulin 68561: spelling alias of Ayşe Kulin 52556, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Burhan Sonmez 52558 -> "Burhan Sönmez" (person): English Wikipedia: "Burhan Sönmez"
+  new entry: Burhan Sonmez 68562: spelling alias of Burhan Sönmez 52558, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Zulfu Livaneli 52559 -> "Zülfü Livaneli" (person): English Wikipedia: "Zülfü Livaneli"
+  new entry: Zulfu Livaneli 68563: spelling alias of Zülfü Livaneli 52559, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Cahit Sitki Taranci 52561 -> "Cahit Sıtkı Tarancı" (person): English Wikipedia: "Cahit Sıtkı Tarancı"
+  new entry: Cahit Sitki Taranci 68564: spelling alias of Cahit Sıtkı Tarancı 52561, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ziya Gokalp 52562 -> "Ziya Gökalp" (person): English Wikipedia: "Ziya Gökalp"
+  new entry: Ziya Gokalp 68565: spelling alias of Ziya Gökalp 52562, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Evliya Celebi 52565 -> "Evliya Çelebi" (person): English Wikipedia: "Evliya Çelebi"
+  new entry: Evliya Celebi 68566: spelling alias of Evliya Çelebi 52565, familiarity 5, no region (rule 8: the plain form is kept)
+  alias Mariama Bâ 52577 (spelling) -> "Mariama Ba" spelling: the root takes the accented text
+  text: Mariama Ba 52576 -> "Mariama Bâ" (person): English Wikipedia: "Mariama Bâ"
+  text: Wislawa Szymborska 52728 -> "Wisława Szymborska" (person): English Wikipedia: "Wisława Szymborska"
+  new entry: Wislawa Szymborska 68567: spelling alias of Wisława Szymborska 52728, familiarity 5, no region (rule 8: the plain form is kept)
+  alias Dara Ó Briain 53015 (spelling) -> "Dara O Briain" spelling: the root takes the accented text
+  text: Dara O Briain 53014 -> "Dara Ó Briain" (person): English Wikipedia: "Dara Ó Briain"
+  text: Antonio de Abreu 54148 -> "António de Abreu" (person): English Wikipedia: "António de Abreu"
+  new entry: Antonio de Abreu 68568: spelling alias of António de Abreu 54148, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Djenne 54775 -> "Djenné" [town] (place): English Wikipedia: "Djenné"
+  new entry: Djenne 68569: spelling alias of Djenné 54775, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Quirigua 54817 -> "Quiriguá" (place): English Wikipedia: "Quiriguá"
+  new entry: Quirigua 68570: spelling alias of Quiriguá 54817, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Chavin de Huantar 54831 -> "Chavín de Huántar" (place): English Wikipedia: "Chavín de Huántar"
+  new entry: Chavin de Huantar 68571: spelling alias of Chavín de Huántar 54831, familiarity 5, no region (rule 8: the plain form is kept)
+  text: San Agustin 54841 -> "San Agustín" [Colombia] (place): English Wikipedia: "San Agustín"
+  new entry: San Agustin 68572: spelling alias of San Agustín 54841, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Beast of Gevaudan 54995 -> "Beast of Gévaudan" (proper): English Wikipedia: "Beast of Gévaudan"
+  new entry: Beast of Gevaudan 68573: spelling alias of Beast of Gévaudan 54995, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Sieyes 55123 -> "Sieyès" [Abbe] (person): English Wikipedia: "Emmanuel Joseph Sieyès" (the name as the library writes it)
+  new entry: Sieyes 68574: spelling alias of Sieyès 55123, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Vendee 55129 -> "Vendée" (place): English Wikipedia: "Vendée"
+  new entry: Vendee 68575: spelling alias of Vendée 55129, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Orleans 55167 -> "Orléans" [royal house] (proper): English Wikipedia: "Orléans"
+  new entry: Orleans 68576: spelling alias of Orléans 55167, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Trastamara 55168 -> "Trastámara" (proper): English Wikipedia: "House of Trastámara" (the name as the library writes it)
+  new entry: Trastamara 68577: spelling alias of Trastámara 55168, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Malaga 56940 -> "Málaga" (place): English Wikipedia: "Málaga"
+  new entry: Malaga 68578: spelling alias of Málaga 56940, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Rio de la Plata 57345 -> "Río de la Plata" (place): English Wikipedia: "Río de la Plata"
+  new entry: Rio de la Plata 68579: spelling alias of Río de la Plata 57345, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Irene Joliot-Curie 58143 -> "Irène Joliot-Curie" (person): English Wikipedia: "Irène Joliot-Curie"
+  new entry: Irene Joliot-Curie 68580: spelling alias of Irène Joliot-Curie 58143, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Atletico Madrid 58480 -> "Atlético Madrid" [soccer club] (org): English Wikipedia: "Atlético Madrid"
+  new entry: Atletico Madrid 68581: spelling alias of Atlético Madrid 58480, familiarity 3, no region (rule 8: the plain form is kept)
+  text: Judit Polgar 58877 -> "Judit Polgár" (person): English Wikipedia: "Judit Polgár"
+  new entry: Judit Polgar 68582: spelling alias of Judit Polgár 58877, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Tete de Moine 59446 -> "Tête de Moine" (proper): English Wikipedia: "Tête de Moine"
+  new entry: Tete de Moine 68583: spelling alias of Tête de Moine 59446, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Movenpick 60704 -> "Mövenpick" (org): English Wikipedia: "Mövenpick"
+  new entry: Movenpick 68584: spelling alias of Mövenpick 60704, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Vendee Globe 61725 -> "Vendée Globe" (proper): English Wikipedia: "Vendée Globe"
+  new entry: Vendee Globe 68585: spelling alias of Vendée Globe 61725, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Estadio da Luz 61752 -> "Estádio da Luz" (place): English Wikipedia: "Estádio da Luz"
+  new entry: Estadio da Luz 68586: spelling alias of Estádio da Luz 61752, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Gaston Gaudio 61792 -> "Gastón Gaudio" (person): English Wikipedia: "Gastón Gaudio"
+  new entry: Gaston Gaudio 68587: spelling alias of Gastón Gaudio 61792, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Ebru Gundes 61867 -> "Ebru Gündeş" (person): English Wikipedia: "Ebru Gündeş"
+  new entry: Ebru Gundes 68588: spelling alias of Ebru Gündeş 61867, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Jenufa 61929 -> "Jenůfa" (title): English Wikipedia: "Jenůfa"
+  new entry: Jenufa 68589: spelling alias of Jenůfa 61929, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Andrea Chenier 61935 -> "Andrea Chénier" (title): English Wikipedia: "Andrea Chénier"
+  new entry: Andrea Chenier 68590: spelling alias of Andrea Chénier 61935, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Adalet Agaoglu 61972 -> "Adalet Ağaoğlu" (person): English Wikipedia: "Adalet Ağaoğlu"
+  new entry: Adalet Agaoglu 68591: spelling alias of Adalet Ağaoğlu 61972, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Tezer Ozlu 61974 -> "Tezer Özlü" (person): English Wikipedia: "Tezer Özlü"
+  new entry: Tezer Ozlu 68592: spelling alias of Tezer Özlü 61974, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Belem Tower 62558 -> "Belém Tower" (place): English Wikipedia: "Belém Tower"
+  new entry: Belem Tower 68593: spelling alias of Belém Tower 62558, familiarity 4, no region (rule 8: the plain form is kept)
+  Belém Tower 62558 in famous_towers: shown "Belem" -> "Belém" (a shown text keeps the root's diacritics)
+  text: Schonbrunn 62575 -> "Schönbrunn" (place): English Wikipedia: "Schönbrunn"
+  new entry: Schonbrunn 68594: spelling alias of Schönbrunn 62575, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Medoc 62816 -> "Médoc" (proper): English Wikipedia: "Médoc"
+  Médoc 62816: gloss "marathon" (its text is now shared)
+  Médoc 36474: gloss "wine region" (its text is now shared with Médoc 62816)
+  new entry: Medoc 68595: spelling alias of Médoc 62816, familiarity 5, no region (rule 8: the plain form is kept)
+  text: Skocjan 63210 -> "Škocjan" (place): English Wikipedia: "Škocjan"
+  new entry: Skocjan 68596: spelling alias of Škocjan 63210, familiarity 5, no region (rule 8: the plain form is kept)
+2. Names that hold a word accented above (checked against the same source)
+  text: Karagoz 12382 -> "Karagöz" (proper): English Wikipedia: "Karagöz and Hacivat" (the shadow play; as Karagöz and Hacivat 22690)
+  new entry: Karagoz 68597: spelling alias of Karagöz 12382, familiarity 5, no region (rule 8: the plain form is kept)
+  theme turkish_folklore: note item "Karagoz" -> "Karagöz"
+  text: Djenne Mosque 37379 -> "Djenné Mosque" (place): English Wikipedia: "Great Mosque of Djenné" (as Djenné 54775)
+  new entry: Djenne Mosque 68598: spelling alias of Djenné Mosque 37379, familiarity 4, no region (rule 8: the plain form is kept)
+  Djenné Mosque 37379 in famous_mosques: shown "Djenne" -> "Djenné" (a shown text keeps the root's diacritics)
+  text: Jose Capablanca 58868 -> "José Capablanca" (person): English Wikipedia: "José Raúl Capablanca"
+  new entry: Jose Capablanca 68599: spelling alias of José Capablanca 58868, familiarity 4, no region (rule 8: the plain form is kept)
+  text: Cesar Award 61943 -> "César Award" (proper): English Wikipedia: "César Awards"
+  new entry: Cesar Award 68600: spelling alias of César Award 61943, familiarity 4, no region (rule 8: the plain form is kept)
+  César Award 61943 in entertainment_awards: shown "Cesar" -> "César" (a shown text keeps the root's diacritics)
+3. Reviewer's fixes (2026-11-23, standing approval)
+  theme abba_members: note item "Bjorn" -> "Björn": the note follows Björn Ulvaeus and his alias Björn (reviewer)
+  theme peninsulas: note item "Yucatan" -> "Yucatán": the note follows Yucatán Peninsula (reviewer)
+  linked: Maiden's Tower 37102 in famous_towers (typicality 4): the link of Kiz Kulesi 65572, the same landmark (reviewer)
+  Maiden's Tower 37102 in famous_towers: nameOkIn (the full name is the member, as the other towers)
+  Kiz Kulesi 65572 [Istanbul landmark] becomes the translation alias "Kız Kulesi" of Maiden's Tower 37102 (Turkish name; familiarity 5; gloss dropped, its text is not shared): one landmark stored twice (reviewer)
+Skipped 0: none
+New words of 8+ letters without line-break points (54; node tools/brk-tokens.mjs, then tools/gen/brk/BRIEF-brk.md and node tools/brk-merge.mjs todo at apply): aeroméxico, albaicín, almodóvar, angélique, anıtkabir, bayadère, bethânia, białowieża, cordobés, culiacán, diyarbakır, eskişehir, français, françois, frédéric, fältskog, ginóbili, gonzalès, guayasamín, gévaudan, göransson, götterdämmerung, güntekin, hallgrímskirkja, haydarpaşa, häkkinen, jóhannsson, kurfürstendamm, kuşadası, leclanché, mazatlán, meléndez, michoacán, misérables, montjuïc, mövenpick, príncipe, querétaro, quiriguá, reykjavík, räikkönen, rüppell's, rūaumoko, schönbrunn, skógafoss, sörenstam, tanpınar, tatlıses, trastámara, velázquez, vigenère, zurbarán, çanakkale, ölüdeniz
+library changes 480; entries changed 456; status set to rev 221
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 156, region-root-equiv 73
+Export contract (family export, zipf): no change
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3188 -> 3188; theme indexes shift: none
+Entry rows 60887 -> 61106; first row whose entry changed: 60887 (Reykjavik 68381, was undefined); rows that moved: 0; added 219 (rows 60887-61105, at the end); removed none
+Links 97913 -> 97913; rows whose link count changed: 2
+Link-index shifts: from row 33953 (Calgary Tower 37105) on, link positions move
+Rows whose text changed: 232
+New characters in the export (the game font needs them): ř U+0159, Ş U+015E, ż U+017C, ï U+00EF, ì U+00EC, ů U+016F, Š U+0160
+new issues: none
+
+Notice for the game (_WS_; send only on Simon's word):
+  Library v449: 223 names and titles now carry the diacritics of their usual English written form (Cancún, Querétaro, Yucatán, Zócalo,
+  Belém Tower, Topkapı Palace, Göreme, Málaga, Reykjavík, Gdańsk, Édouard Manet, Salvador Dalí, Joan Miró, Diego Velázquez,
+  Paul Cézanne, Dvořák, Bartók, Charlotte Brontë, Les Misérables, La Bohème, Die Walküre, Beyoncé, Kimi Räikkönen ...); the surname
+  aliases Dalí, Cézanne, Velázquez, Gaudí, Zurbarán and Björn follow. Every one keeps its plain text as a spelling alias with no region,
+  so the old text still finds it (220 new aliases; 219 new export rows, appended at the end of the entry table: no row of an existing entry moves).
+  Entry texts change in place (same rows); no theme row or theme index changes; links change only for Kız Kulesi (below); shown texts follow the root (Adélie, Topkapı,
+  Yucatán, Wānaka, Göta, Belém, Rüppell's in their themes). Two new glosses: San Sebastián [city] / [film festival], Médoc [wine region] / [marathon].
+  Kız Kulesi 65572 is now a translation alias of Maiden's Tower 37102 (export row kept, now an alias row); Maiden's Tower takes its famous towers link, so link positions move from row 33953 (Calgary Tower) on.
+  New characters for the game font: ř U+0159, Ş U+015E, ż U+017C, ï U+00EF, ì U+00EC, ů U+016F, Š U+0160.
+  Please confirm that the game font covers Latin-1 Supplement and Latin Extended-A (U+00C0-U+017F): all the new letters are in these two blocks.
+  Line-break points for the new long words are added at apply (data/breaks-en.txt).
