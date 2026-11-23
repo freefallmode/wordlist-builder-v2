@@ -14,7 +14,7 @@ A standardisation pass over the whole library after weeks of edits. Each batch i
    - an "X words" twin check: an "X words" theme sharing 30% or more of its words with another theme (the `theme-twin` check needs 80%);
    - a wrong-sense check: a word with two or more senses whose linked sense's gloss fits the theme less well than a sibling sense's (compares glosses with the theme's name, its folders and its other members);
    - the I30 gap (theme difficulty against its 4th-easiest word) as a warning.
-3. **Group by group** (one batch per top-level group, 13 groups; Body & Health done by Julia's v423-v429). An Opus agent drafts, a second agent reviews, Simon approves. Two or three groups at a time. Order: Food & Drink, Animals, Nature & Earth first (most played), then the rest.
+3. **Group by group** (one batch per top-level group, all 13 groups, Body & Health included). An Opus agent drafts, a second agent reviews, Simon approves. Two or three groups at a time. Order: Food & Drink, Animals, Nature & Earth first (most played), then the rest.
 4. **Game rounds**: one combined notice to `_WS_` every 3-4 groups; a pin only when a round measures clean.
 
 ## Checklist for each group (step 3)
@@ -33,10 +33,14 @@ Read LIBRARY-RULES.md first; this list points into it.
 - **Offensive and sensitive words** (5, Offensive words): flags per the 2026-11-22 rules.
 - **Size** (6, Themes): at least 4 usable words; stubs with no theme deleted.
 
-## Open for Simon
+## Decided (Simon, 2026-11-23)
 
-- Which groups Julia takes (she works on branch `julia-category-fixes-2`), so two people never edit the same themes.
-- Scope: correctness and consistency only, or also restructuring the tree (moving or merging folders), which shifts many theme indexes for the game.
+- Every group, including Body & Health, is done in this pass, not by Julia ("i'll do all").
+- Scope includes restructuring the tree ("restructuring too"): moving, merging, splitting and renaming folders and themes. Within a group it goes in that group's batch. A move between groups is listed in the group's review and done in one tree batch at the end of step 3, so theme indexes shift once per game round, not in every batch.
+
+## Checklist addition for restructuring
+
+- **Tree**: each folder is a real category with a clear name; no folder holding one theme; no theme filed under the wrong group; similar themes are siblings, not scattered; nesting no deeper than needed. Don't rename the ancestors "names", "famous people" and "surnames": the game uses them.
 
 ## Progress
 
