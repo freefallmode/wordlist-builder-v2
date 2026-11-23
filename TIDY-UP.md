@@ -57,5 +57,5 @@ Each group's batch also fixes the baseline warnings (tools/checks-baseline.json)
 - Fujiyama an alias of Mount Fuji (Places & Geography).
 - A dinosaur capital-letter pass (about 150 entries: stegosaurus lowercase, Tyrannosaurus rex capital).
 - "starts with public transport" / "ends with public transport": v433 dropped "public"; put it back (Language & Wordplay).
-- contract-root-region policy (Simon took the recommendation): warn only for a regional root that has a same-sense untagged root; the rest (regional words with no equivalent, by design) become info. Code change, plus a question to the game whether it reads root regions.
+- Region check (Simon, 2026-11-23, "Yes"): branch worktree-agent-aa07cb3d5c02a50c0 (759acde) makes contract-root-region info (the game raises a regional root's band, +1 UK- or US-only, +2 other regions only, and shows it to everyone; _WS_ 2026-11-23) and adds the warning region-root-equiv (a regional root with a same-sense untagged root; 245 at v436, about 70% real). Merge it after round 2 is applied, with the baseline at the count left then.
 - föhn was made the root from Collins (Oxford could not be fetched); check Oxford by hand if it matters.
