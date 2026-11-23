@@ -1,0 +1,14 @@
+=== Notice to _WS_ for library v433-v439 (sent 2026-11-23 on Simon's word, "Push and send") ===
+Library v439 is in the export (data/export/wordlist-game-family.json, main, commit 88a5cc6 or later). It is the first part of a library tidy-up (TIDY-UP.md): a sweep (v433) and six of thirteen top-level groups, each drafted by one agent, reviewed by a second, decided by Simon. No pin until Simon asks.
+
+What changed, by batch (details and the per-batch notices: tools/gen/batch433-changes.txt ... batch439-changes.txt):
+- v433 sweep: 60 orphan stubs deleted; 166 second roots of one sense merged; 84 theme names shortened (no index shifts); I32 spelling-alias fixes.
+- v434 Food & Drink: juices, soups, oils and teas link full terms ("apple juice" shown "apple"; 34 new entries); stub and dish merges; wrong senses fixed (pistachio, pepper, dice ...); 3 twin themes merged.
+- v435 Animals: 61 roots became aliases (possum of opossum, woodchuck of groundhog, ratel of honey badger ...); 210 links that did not belong removed; 4 themes gone; Galápagos entries take the diacritic; shag flagged offensive.
+- v436 Nature & Earth: 8 twin themes deleted (famous mountains and ranges, grassland blooms ...); Mount Everest and Mount Fuji are roots; föhn root; hot weather words renamed hot weather talk.
+- v437 Places & Geography: 41 merges and 17 entries that held two places split (Lincoln, Dover, Kingston ...); gulf, bay, strait and street stubs became full names shown short; Seven Ancient Wonders exact; Gaza Strip, West Bank and Somaliland deleted; Pompeii not sensitive.
+- v438 Travel & Transport: 141 merges (UK/US pairs as regional aliases: lorry/truck ...); 311 names of things typed common instead of phrase; 5 themes gone, 3 renamed (aviation jobs, leisure trips, US vacation spots); Palisades Tahoe replaces Squaw Valley in ski resorts (Squaw Valley offensive, olympic host cities only).
+- v439 Body & Health: bare stubs replaced by full terms; 3 themes gone; illnesses, medical specialties and operating room no longer sensitive (deadly diseases, plague, seasonal depression keep or get the flag).
+
+Export v432 -> v439: theme rows 3,242 -> 3,217 (25 gone; theme indexes shift throughout); entry rows 61,255 -> 60,951 (rows and link positions shift throughout; many roots became alias rows); no new characters. Root regions: your answer (the game raises a regional root's band) is now in the contract and the docs; contract-root-region is info, and a new library warning flags regional roots that have a same-sense equivalent (202 left).
+Please measure v439 against your pinned version as usual.
