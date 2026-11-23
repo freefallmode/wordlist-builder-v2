@@ -1,0 +1,122 @@
+Checks inside People & Society (220 themes, about 8,000 links at v439), found -> left after this batch:
+  warn region-root-equiv: 47 entries of the group -> 3; library 202 -> 161 (41 fewer; cuppa, Hogmanay and boilersuit leave the group's themes but keep their hit in other groups' themes).
+    Fixed: 29 US roots that already had their UK word as an alias untagged, as color is (mail carrier, garbage collector, recess, freshman, tube, cell, report card,
+    elementary school, lunchroom, esthetician, substitute teacher, lunch lady, crossing guard, busy signal, area code, special election, senior citizen ...); ring [phone call],
+    bursar, sultana [sultan's wife], tetchy and cabin crew untagged (said outside the UK too; reviewer); same word: grandad (UK spelling of granddad), nanna, gramma, kinsfolk;
+    other-dialect words made aliases: letter carrier, trash collector, garbageman, precinct and collection tin (US and UK synonyms), lifeboatman, mark scheme,
+    DPhil (abbreviation), speech day, hooky, sports carnival (AU), ejector seat, hoarding (a new UK alias of billboard; the old entry keeps the site fence); the words v413 kept
+    "in their own right" (mate, nan, fresher, copper, bobby) and other slang stay roots and leave the groups or general themes that joined them with the standard word
+    (mate, cobber, mucker out of family and friends; china, bruv, mam, mammy, da, nan ungrouped in the "words for" themes; rozzers and old bill out of law and order and police
+    words, where police plays; perp out of law and order; copper and bobby out of jobs and emergency workers); Hogmanay out of kinds of party, boilersuit out of prison words,
+    greenboard out of school and classroom items, fresher out of university words (freshman is there), hiraeth, costermonger and fruiterer ungrouped.
+    Left, 3 (Cross-group moves): hangi
+    (Pacific Islands food), ironmonger (shops), Shrove Tuesday (holidays and celebrations).
+  contract-root-region (info): 291 roots with a region linked in the group -> 238; library 1631 -> 1585. Real problems left: the 3 above. By design, about 230: regional words
+    with no same-sense word in the other dialect (petal, chuck, hen, cariad, wotcha, cheerio, knees-up, leaving do, prom, potluck, borstal, P45, W-2, hustings, marginal seat,
+    barrister, solicitor, fete, tuck shop, valedictorian, homecoming, sophomore, fraternity, toff, yob, bloke-type slang, money slang (dosh, quid, wonga, readies), Māori and
+    Aboriginal words, UK/US politics, UK honours, Ottoman, South Asian and gaucho titles). Proposal: as before, the accepted remainder (the gated check is region-root-equiv).
+  warn long 5 -> 3: parent-teacher conference -> parent-teacher meeting (20 letters; parents' evening stays its UK alias); educational psychologist deleted (school psychologist is there).
+  warn theme-name 3 -> 2: honors degree leaves university degrees (its UK spelling honours degree held "degree"). Left: pencil in "in a pencil case" (Home & Everyday).
+  warn clash-big, maybe-duplicate, theme-gap: 0 in the group before and after. No theme in the group has an I30 gap of 2 or more (largest 1.5: police equipment, archangels).
+  contract-type-common 31 -> 20: all 11 of the group fixed (policeman, cop, copper, bobby, cabbie, trucker, postie, garbageman, ring, buzz, noir), with 50 more nouns
+    typed phrase retyped common (police officer, taxi driver, high school, phone call, bachelor party, film noir ...). Idioms and set phrases keep phrase.
+  contract-dup-root 175 -> 172: cop (two roots merged), nanna (now an alias), mate [tea] (merged into mate [drink]). Left, by design (a common word after a name): lotus, miller,
+    prince, stagecoach, papa, yes, courier, constitution, empire, regency, clue, will, grace, halo, battleship, major, master, ring, mastermind, oracle, cad, china, grammy,
+    guarani, balboa, inti, cruzeiro, abba, mercer, glover, iceman (and sat, now beside SAT).
+  sense-link 6 -> 5 in the group (Fatima merged); sense-twin 13 -> 11 (salute and dog collar merged); theme-twin 3 -> 0; xwords-twin 15 -> 14 (navy words / ship parts);
+    same-display 1 -> 0 (cart); alias-kind-suspect 3 -> 1 (gaol moves to jail, neighborhood watch retyped); clash-large 8 -> 7 (truancy/hooky).
+  First synonym alias (the game shows a root's first synonym alias at some levels; GAME-CONTRACT flag 512): 31 roots of the group have synonym aliases after this batch;
+    7 had a first synonym harder than the root's familiarity + 1 at v439 -> 3. Fixed 4: head teacher moves before head (principal), engineer [US] before locomotive driver
+    (locomotive engineer) (row order), narghile and narguile become translation aliases of hookah (the Turkish and Persian names), slumber party familiarity 3 -> 2 (sleepover).
+    Every synonym alias this batch makes passes. Left 3, no better kind fits: jotter (notebook; exercise book is its UK regional alias), dinner hall (cafeteria; canteen is
+    the UK regional alias), gandy dancer (track worker, Travel & Transport's merge in v438).
+
+Cross-group moves and follow-ups (not in this batch):
+  - Done here in other groups' themes (Simon): squaddie, digger, grunt ungrouped or unlinked in ANZAC Day (Home & Everyday) and wars and battles (History & Myth); copper and bobby out of dress-up costumes and jobs with uniforms (Arts & Entertainment). Skipped if those batches did it first.
+  - Shrove Tuesday (UK) is grouped with Mardi Gras in holidays and celebrations (Home & Everyday): v413 kept them apart as different observances; ungroup there.
+  - cuppa (UK, AU, NZ, IE) is grouped with tea in drinks (Food & Drink); Hogmanay with New Year's Eve in holidays and celebrations; boilersuit with jumpsuit in clothes (Home & Everyday).
+  - hangi (NZ) is grouped with umu in Pacific Islands food (Food & Drink): Māori and Polynesian names of one earth oven; ungroup or tag umu.
+  - ironmonger (a shopkeeper) is grouped with hardware store in shops (Places & Geography): the shop sense would be its own entry or an alias of hardware store.
+  - cowboy words shares 18 of its 53 words with Wild West (History & Myth; xwords-twin 34%): the cowboy gear and people could live under Wild West.
+  - social media words shares 20 of 52 with internet words (Science & Tech; 38%); police words shares 16 with police station (Places & Geography; 33%).
+  - Wrong senses in other groups' themes, flagged by sense-link and sense-twin: knight [warrior] in game pieces, crown [royal] in hidden birds, cooper [barrel maker] in pirate
+    crew, principal [school] in head___, paper [newspaper] in reading material, bow [weapon] in archery terms.
+  - honors degree 34950 is now in no theme (with its alias honours degree).
+  - tube [television] is linked in about ten Home, Arts and Science themes beside television; those themes may want television only.
+
+Decided by Simon (2026-11-23, "Take all and apply"): every recommendation below is taken as drafted, and section 10 of the batch adds:
+  - The v413 slang stays roots: squaddie, digger and grunt leave military and army words (they play in kinds of soldier and service members) and the soldier groups of
+    service members, kinds of soldier and wars and battles; squaddie and grunt leave ANZAC Day, digger is ungrouped there; copper and bobby leave dress-up costumes and jobs
+    with uniforms; cop leaves nicknames for workers (cop/copper are one family; the theme keeps copper). region-root-equiv no longer fires on the five: 202 -> 161.
+  - Comic Relief [charity] (org, UK) takes the links of comic relief in charity words and aid organizations; deadhead [Grateful Dead fan] becomes Deadhead (proper).
+    The case lint needs two keys; the batch skips both steps until they are in js/caselint-allow.js (Comic Relief takes entry id 68257 when created after the rest):
+      '68257|charity_words',       // Comic Relief, the UK charity, in charity words (Simon, 2026-11-23, v440)
+      '50194|fans_and_followers',  // Deadhead, the Grateful Dead fan (Merriam-Webster capitalizes it), in fans and followers (Simon, 2026-11-23, v440)
+    The key '32575|military_ranks' (Major in military ranks) is stale after this batch: lowercase major [army officer] takes that link.
+  - Allow-list keys (added by the manager at apply time):
+    js/theme-twin-allow.js (sub-themes of a topic; foreign diplomatic terms is a real sub-theme of diplomacy words, the loanwords of the trade):
+      'american_campaign_terms|election_words',      // American campaign terms: a regional sub-theme of election words (Simon, 2026-11-23, v440)
+      'british_campaign_terms|election_words',       // British campaign terms: a regional sub-theme of election words (Simon, 2026-11-23, v440)
+      'borrowed_foreign_words|diplomacy_words',      // foreign diplomatic terms: the loanwords of diplomacy, a sub-theme (Simon, 2026-11-23, v440)
+      'courtroom_words|law_and_order',               // courtroom words: a sub-topic of law and order (Simon, 2026-11-23, v440)
+      'law_and_order|police_words',                  // police words: a sub-topic of law and order (Simon, 2026-11-23, v440)
+      'islam_words|pilgrimage_words',                // Islamic pilgrimage words: a sub-theme of Islam words (Simon, 2026-11-23, v440)
+      'pilgrimage_sites|pilgrimage_words',           // Islamic pilgrimage words share Mecca, Medina and the Kaaba with pilgrimage sites (Simon, 2026-11-23, v440)
+      'buddhism_words|key_teachings',                // Buddhist teachings: a sub-theme of Buddhism words (Simon, 2026-11-23, v440)
+      'army_words|military',                         // army words: a sub-topic of military (Simon, 2026-11-23, v440)
+      'advertising_words|online_promotion_terms',    // online promotion terms: a sub-theme of advertising words (Simon, 2026-11-23, v440)
+    js/sense-allow.js:
+      '34188|34220|religious_leaders',  // canon [clergy] is right in religious leaders (Simon, 2026-11-23, v440)
+      '32522|41069|ages_and_stages',    // adult [grown-up] is right in stages of life (Simon, 2026-11-23, v440)
+
+The recommendations as drafted (For Simon):
+  1. The slang words that v413 skipped as "slang or informal words in their own right" (fresher / freshman, copper, bobby / police officer, mate / buddy, nan / grandma) are
+     kept as roots here, as v413 decided, and only leave the groups that joined them with the standard word. The rule since 2026-11-23 (region-root-equiv, and v439's dekko,
+     shufti, squiz) would make the clear dialect pairs aliases instead. Most of these words are also answers in wordplay or slang themes (mate in anagrams and British slang,
+     bobby in words named after people, old bill in hidden insects, china and bruv in British slang, greenboard in starts with a color), where an alias cannot stand.
+     The five still flagged (copper, bobby, squaddie, digger, grunt) are grouped in Home, Arts and military themes: alias them, or ungroup them there?
+  2. Regional words made aliases (no longer separate answers): letter carrier, trash collector, garbageman (of mail carrier and garbage collector), precinct
+     (US synonym of station [precinct house]), collection tin (UK synonym of collection box), lifeboatman, mark scheme, DPhil, speech day,
+     hooky (its kin with the hooks cleared: not one family), sports carnival, ejector seat; hoarding is a new UK alias of billboard and the old entry keeps the site fence.
+  3. Themes deleted as twins: jobs working with sound (musicians), cowboy outfits (cowboy gear), Hindu gods and goddesses (Hindu gods); every word stays in another theme.
+     theatre and movie crew renamed theater and movie crew (US spelling); visual creators kept (visual artists would leak street artist).
+  4. navy words gives its 18 ship parts (hull, bow, stern, crow's nest, bowsprit, gunwale ...) to ship parts: 41 words left (ships, people, weapons, bases).
+  5. Case and diacritics from memory of Merriam-Webster and Oxford (no dictionary page fetched; recheck if it matters): attaché, démarche, chargé d'affaires, agrément,
+     aide-mémoire, communiqué, colón, córdoba, bolívar, Señor, Fräulein, Tánaiste, Sinn Féin (plain spellings kept as aliases); Taoiseach, Zionism, Fabianism,
+     Bolshevism, Menshevism, Pan-Africanism, Theravada, Mahayana, Vajrayana, Zen [Buddhism], Kingdom Hall, Brexit, Trooping the Colour, Supreme Court, Oval Office, Secret
+     Service, Federal Reserve, Library of Congress, Speaker of the House capitalized; enlightenment [spiritual awakening] lowercase; US roots fervor, Your Honor, councilor,
+     Legion of Honor (nameOkIn medals and honors: the full name is the member) with UK spelling aliases; VAT.
+  6. New sense entries: Telegram [app] (social media platforms; wire leaves it), SAT [exam] (was sat), Commonwealth [nations], Matthew, Mark, John [evangelist] (the given-name
+     entries held the links), lowercase major [army officer], sergeant [rank] and professor [academic] for the rank and job themes (the title entries stay in honorifics);
+     Paul [saint] replaces Saint Paul (the Minnesota city) in famous saints; gym [venue] replaces gymnasium [German school] in places in a school; avatar [internet] in social media words.
+  7. Not done, need an allow-list key (js/caselint-allow.js) or your call: Comic Relief (the UK charity) for comic relief in charity words and aid organizations, and Deadhead
+     (capital, Merriam-Webster) in fans and followers: the case lint refuses a proper entry in a common theme beside the lowercase word (case-sense-proper).
+  8. Ratings: monarchy and republic typicality 5 -> 1 in types of government (they were scrambled: regency and mobocracy were 1); murder, pay, team familiarity 1; stir [prison] 1 -> 4.
+  8b. Reviewer's fixes (2026-11-23, "apply after fixes"), in the batch: tetchy, cabin crew and fruiterer stay roots (tetchy and cabin crew untagged,
+     fruiterer ungrouped from greengrocer); precinct and collection tin synonym aliases, not regional; fresher leaves university words (freshman is there); the aliases postman,
+     binman, dustman, refuse collector, letter carrier and bunking off typed common; kūmara replaces sweet potato in Māori culture; sultana [sultan's wife] familiarity
+     2 -> 4, Mark [name] 3 -> 1, money 2 -> 1; translator/interpreter, optician/optometrist (jobs, medical jobs, shopkeepers) and janitor/cleaner ungrouped (different jobs).
+     Baathism left lowercase as it was (Oxford's spelling, Ba'athism or Baathism, not verified). v442 makes the same hookah translations; this batch skips them if done.
+  9. xwords-twin left, proposed allow-list keys (js/theme-twin-allow.js; sub-themes of a topic, as v439):
+      'american_campaign_terms|election_words', 'british_campaign_terms|election_words', 'borrowed_foreign_words|diplomacy_words', 'courtroom_words|law_and_order',
+      'law_and_order|police_words', 'islam_words|pilgrimage_words', 'pilgrimage_sites|pilgrimage_words', 'buddhism_words|key_teachings', 'army_words|military',
+      'advertising_words|online_promotion_terms'.
+ 10. Sense allow-list keys proposed (js/sense-allow.js, info only): canon [clergy] in religious leaders ('34188|34220|religious_leaders'), adult [grown-up] in stages of life
+     ('32522|41069|ages_and_stages'); mana, score, colorist, brig: separate senses.
+ 11. relationships and life events are flagged sensitive (relationships holds one-night stand and open relationship, adult); left as they are.
+
+Left as is:
+  - the Four Horsemen: 3 usable words (war and conquest are adult); a complete set, left.
+  - deejay stays the spelling alias of DJ (alias-kind-suspect: a spelling-out of the letters).
+  - alias-fullname: signal flags, dried apricots are plural forms.
+  - offensive-unlisted: shekels and sweet cheeks flagged offensive by hand; for the list only with Simon's approval.
+  - Lady and Mister titles, minister titles (4 words shown short), colour sergeant (a British rank name) and the UK words of British politics keep their form.
+  - clash-large (7): prison/jail (family groups), tank, programmer, singer, potter, ghost, binder: real look-alikes, mostly in other groups' themes.
+  - family-kin: different words or pairs already grouped.
+  - Theme names: all 24 characters or fewer except international organizations (27 letters with the space; kept in v433).
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time): warn region-root-equiv 202 -> 161, long 5 -> 3, theme-name 3 -> 2; contract-dup-root 175 -> 172,
+contract-type-common 31 -> 20.
+Line breaks: new or retexted words of 8 or more letters (the diacritic roots and their plain aliases, Telegram, Commonwealth, professor, sergeant, Taoiseach, Tánaiste, Zionism,
+Fabianism, Bolshevism, Menshevism, Pan-Africanism, Theravada, Mahayana, Vajrayana, Kingdom Hall, Supreme Court, Oval Office, Secret Service, Federal Reserve, Library of
+Congress, Speaker of the House, Trooping the Colour, councilor, Legion of Honor, parent-teacher meeting) need break points at apply time (node tools/brk-tokens.mjs).

@@ -1,6 +1,10 @@
 // Links where the capital (or lowercase) is intended for the sense the word has in that theme, so the case lint does not flag them.
 // Key: entryId|themeId. Add a line only after checking the word is right as shown. Lines are added and removed by hand or by a library batch script (tools/gen/batchNNN.mjs).
 export const CASE_OK = new Set([
+  '68257|charity_words',       // Comic Relief, the UK charity, in charity words (Simon, 2026-11-23, v440)
+  '50194|fans_and_followers',  // Deadhead, the Grateful Dead fan (Merriam-Webster capitalizes it) (Simon, 2026-11-23, v440)
+  '45559|word_games',          // I spy: the pronoun I is a capital in a common phrase (Simon, 2026-11-23, v442)
+  '45559|road_trip_games',     // I spy: the pronoun I is a capital in a common phrase (Simon, 2026-11-23, v442)
   '633|desserts_and_sweets', // Skittles in desserts and sweets
   '20295|canned_foods', // Spam in canned foods
   '1532|horse_breeds', // mustang in horse breeds
@@ -14,7 +18,6 @@ export const CASE_OK = new Set([
   '3158|construction_vehicles', // Bobcat in construction vehicles
   '3656|fitness', // Peloton in fitness
   '4459|military', // Pentagon in military
-  '32575|military_ranks', // Major in military ranks
   '4459|camps_and_fortifications', // Pentagon in camps and fortifications
   '29382|school_subjects', // Mandarin in school subjects
   '55461|western_wear', // Wrangler in western wear

@@ -2,6 +2,12 @@
 // Key: smallerId|largerId for the pair, or smallerId|largerId|themeId for one theme only (the "linked on the wrong sense?" form).
 // Add a line only after a person has checked the two are different senses and each is linked in the right themes.
 export const SENSE_OK = new Set([
+  '34188|34220|religious_leaders',          // canon [clergy] is right in religious leaders (Simon, 2026-11-23, v440)
+  '32522|41069|ages_and_stages',            // adult [grown-up] is right in stages of life (Simon, 2026-11-23, v440)
+  '25344|54007|time_units',                 // century [100 years] is right in time units (Simon, 2026-11-23, v441)
+  '25482|25788|things_with_lids',           // pot [cooking pot] is right in things with lids (Simon, 2026-11-23, v441)
+  '161|55503|fabrics_from_animals',         // alpaca [wool] is the fabric (Simon, 2026-11-23, v441)
+  '837|19827|serving_dishes',               // tagine [cookware] is the serving pot (Simon, 2026-11-23, v441)
   '35680|36577|island_nations',  // Malta [country] is right in island nations (Simon, 2026-11-23, v437)
   '35766|36586|island_nations',  // Fiji [country] is right in island nations (Simon, 2026-11-23, v437)
   '35772|36599|island_nations',  // Mauritius [country] is right in island nations (Simon, 2026-11-23, v437)

@@ -1,0 +1,121 @@
+Checks inside Home & Everyday (227 themes, about 6,770 links at v439), found -> left after this batch:
+  warn region-root-equiv: 62 -> 7 hits linked in the group (library 202 -> 151). Fixed 55: regional words grouped with their same-sense word became its
+    aliases (zapper, throw pillow, in-tray, limescale remover, end table, uplighter, drapes, music centre, cable box, outlet, bradawl, mackintosh,
+    waterproofs, budgie smugglers, trainer socks, ear defenders, datebook, Phagwah, Tet Trung Thu, eyeglasses, boilersuit, party favors, tube,
+    gerb ...); stoop ungrouped from doorstep (a US porch platform, a root); fortnight ungrouped and two weeks deleted; US roots of a regional pair untagged (blanket chest, liquor cabinet, breaker box, hand truck, panties, pantyhose,
+    mail slot, row house, laundromat, cell phone ...); veranda, chesterfield, slacks, dollar bill untagged (known in the UK and US); pairs Simon called
+    different in v413 ungrouped (Remembrance Day / Veterans Day / Armistice Day, Mardi Gras / Pancake Day, Hogmanay / New Year's Eve, fanlight / transom);
+    the four midsummer festivals (Litha, Juhannus, Ivan Kupala, Midsommar) ungrouped; grunt and squaddie out of ANZAC Day.
+    Left 7, for other groups or Simon: bubbly, fizz (Food & Drink's drinks group; slang roots in nicknames for drinks), sun lounger (garden furniture,
+    Nature & Earth; Simon left it in v436), lumber (timber = lumber in building materials: v442 makes lumber the root and timber its UK alias, so this batch leaves both alone), Hogmanay (kinds of party), digger (military), recess (school): People & Society, v440.
+  warn theme-gap 1 -> 0: Hindu festivals ident 2 -> 3 (For Simon).
+  warn theme-name 1 -> 0: pencil gets nameOkIn in "in a pencil case" (Simon). long, clash-big, maybe-duplicate: 0 in the group before and after.
+  contract-type-common 4 -> 0 in the group (garbageman merged, remote and zapper, toy car); library 31 -> 27.
+  contract-dup-root 13 -> 12 in the group, all by design (a common word after a name: ring, kiss, polish, guernsey, jersey, resolution, midsummer, opal,
+    adobe, ankara, china, shamash); kindle [to light] went (its links meant kindling, now a root). Library 175 -> 174.
+  contract-root-region (info): 344 -> 229 hits linked in the group. The rest are by design: regional words with no same-sense word (Marmite, trouser
+    press, wet room, council house, Thanksgiving, Boxing Day, festival and clothing words of their countries ...). Proposal as before: the accepted
+    remainder under the info kind.
+  info: theme-twin 4 -> 2 (kitchen electricals and table types deleted; left: in a pencil case / stationery, things on wheels / things with wheels, both
+    For Simon); xwords-twin 1 -> 0; sense-link 2 -> 1 (canvas fixed; pot left, For Simon); sense-twin 6 -> 3 (casserole, canvas, machine fixed; left:
+    alpaca [wool] in fabrics from animals, tagine [cookware] in serving dishes, century in time units are right: allow-list keys below); same-display
+    2 -> 0; alias-kind-suspect 6 -> 5 (neighborhood watch retyped; catsup, luffa, tee shirt, 8-track, Blixem left: real variant spellings);
+    clash-large 10 -> 9 (the rest within 12); alias-fullname 8 -> 9 (plural forms, left); family-kin 60 -> 60 (different words).
+  orphan: 5 orphans of the group placed (listing agent linked in real estate words; French door, lockpick, candle maker, curbside collection, deposit
+    scheme became aliases); 1 new orphan: mitt [baseball] 64279 (out of scarves and gloves, wrong sense; for Sports & Games). Left (v433's list):
+    mouse trap, sanitizer, thread count, weekend break, Cyber Monday (no clearly right theme).
+  First synonyms (the coordinator's item: the game shows a root's first synonym alias at some levels): 9 roots in the group had a first synonym harder
+    than the root + 1. Fixed 5: knitted jumper moves first for sweater (row order); skeeter deleted (reviewer); ice chest, lilo and Kirby grip
+    familiarity 4 -> 3. Every merge here was checked the same way: nine obscure words were left as roots (range, serviette, longcase, bean
+    grinder, peep sight, sky rocket, phial, shoestring, message machine); tube, mackintosh, drapes and gerb were deleted after their links moved
+    (the theme where the word itself is the answer shows it: media slang "tube", words named after people "mackintosh");
+    carrier is now a synonym of grocery bag (whose UK alias is carrier bag), cracker an abbreviation, bateau and Phagwah translations; skeeter and datebook (reviewer) are deleted. Left 4 (no better synonym, For Simon): Big Ben / Elizabeth Tower,
+    garbage truck / dustcart, notebook / jotter, handbag / pocketbook.
+
+Reviewer's fixes (second agent, 2026-11-23, "apply after fixes"), in section 7b and above:
+  - necktie stays a root, grouped with tie in neckwear (as an alias, tie showed "tie" in the locked theme starts with a body part).
+  - fortnight stays a regional root; the group with two weeks goes and two weeks is deleted (v413).
+  - adhesive bandage drops its kin to plasterer.
+  - No shown alias text: laundry basket, party favor, toilet paper and board shorts take nameOkIn where their text holds a theme word; grocery bag is
+    shown "grocery" in bags.
+  - Real words kept as aliases with nameOkIn, not deleted: hipped roof (UK regional of hip roof), deck shoes (UK regional of boat shoes), sports coat,
+    duffle coat, black powder.
+  - Alias kinds: bias binding regional UK; carrier a synonym of grocery bag; thumbtacks and bobby pins forms with no region; garbageman common;
+    datebook and skeeter deleted (as synonyms they would be the first synonym the game shows, and both are obscure).
+  - stoop stays a US root, ungrouped from doorstep (a porch platform, not a doorstep).
+  - icebox becomes its own root (the old ice-cooled cabinet) in retro household items and things without a plug, not a US alias of fridge.
+  - The jubilees leave wedding anniversaries (reigns, not marriages; in no theme now, for History & Myth); orison and supplication leave Ramadan and
+    Eid; lintel and girder leave building materials, joist moves to parts of a house; flyer leaves office and school supplies (kept as a sub-theme
+    of paper goods: the office and school papers, a real subtype); saucepan, skillet and wok leave kitchen tools (cookware), whisk and peeler
+    typicality 3 -> 2 for its gap; shayla, taqiyah and tarha lose the sensitive flag, as hijab, niqab, burqa, chador and kufi in the same theme;
+    tartan and Stetson leave traditional clothes (chaps stays: cowboy dress, in western wear below it).
+
+Decided by Simon (2026-11-23, "Take all and apply"): every recommendation below is taken as drafted, and:
+  - The one-word near-synonym pairs merge, as remote / remote control did: refrigerator becomes the synonym of fridge, microwave oven of microwave,
+    vacuum cleaner of vacuum, smoke alarm of smoke detector (all familiarity 1, so the first synonym the game shows is well known).
+  - tombstone / gravestone / headstone and Chinese New Year / Lunar New Year stay grouped, separate roots.
+  - pencil gets nameOkIn in "in a pencil case" (Simon kept it there in v337): theme-name baseline 3 -> 2.
+  - Hindu festivals ident 2 -> 3 as drafted.
+  - The four obscure first synonyms stay as they are (Elizabeth Tower, dustcart, jotter, pocketbook).
+  - things on wheels merges into things with wheels in the Qualities batch (v447), not here.
+  - Allow-list keys (the manager adds them at apply time):
+      js/sense-allow.js       '25344|54007|time_units',        // century [100 years] is right in time units, not century [Roman unit] (Simon, 2026-11-23, v441)
+      js/sense-allow.js       '25482|25788|things_with_lids',  // pot [cooking pot] is right in things with lids: a cooking pot has a lid (Simon, 2026-11-23, v441)
+      js/sense-allow.js       '161|55503|fabrics_from_animals', // alpaca [wool] is the fabric, not alpaca [animal] (Simon, 2026-11-23, v441)
+      js/sense-allow.js       '837|19827|serving_dishes',      // tagine [cookware] is the serving pot, not tagine [dish] (Simon, 2026-11-23, v441)
+      js/theme-twin-allow.js  'in_a_pencil_case|stationery',   // in a pencil case: a scenario theme beside the category stationery (Simon, 2026-11-23, v441)
+
+Cross-group moves and follow-ups (not in this batch):
+  - things on wheels (here, 12 words) shares 10 with things with wheels (Qualities): merge or allow-list in the tree batch.
+  - in a pencil case shares 17 of 20 words with stationery: a scenario theme beside a category; allow-list proposed.
+  - stoop (still a US root): the church basin for holy water is a stoup; church parts (Arts & Entertainment) lost the wrong-sense link: add stoup there.
+  - mitt [baseball] 64279 is in no theme: for Sports & Games (v442). diamond, golden and silver jubilee are in no theme: for History & Myth.
+  - harlequin [clown character] left fabric prints; a harlequin [pattern] entry could join patterns / fabric prints.
+  - Linked or merged in other groups' themes (one entry each, skipped if their batch did it first): Pesach -> Passover (religious festivals, Judaism
+    words), tube -> television (media and communication, media slang shown "tube"),
+    zapper / remote control -> remote (film and TV, gadgets ...), boilersuit -> boiler suit (prison words), ear defenders -> hearing protection (lab
+    safety gear), prayer mat -> prayer rug (Islam words, mosque parts), eyeglasses -> glasses (inventions), kindling (fire words, campsite, things made
+    from trees), outlet -> wall socket (electricity words), plaster [bandage] -> adhesive bandage (british english words, shown "plaster").
+  - Food & Drink: brewski, cuppa, bubbly, fizz are slang roots grouped with beer, tea, champagne in drinks; they are the answers of nicknames for
+    drinks, so they stay roots: ungroup them in drinks, or accept.
+  - Places & Geography: Big Ben's first synonym Elizabeth Tower (familiarity 4).
+
+For Simon (the recommendations as drafted):
+  1. Reversals or revisits of earlier decisions:
+     - fortnight / two weeks: kept as v413 decided (reviewer): fortnight stays a regional root (UK, AU, IE), the group goes, and "two weeks" (a phrase,
+       not a time unit) is deleted.
+     - Remembrance Day, Veterans Day, Armistice Day; Mardi Gras and Pancake Day / Shrove Tuesday; Hogmanay and New Year's Eve; fanlight and transom
+       are ungrouped, keeping v413's "different observances". The alternative: aliases (Remembrance Day UK and Veterans Day US of Armistice Day).
+     - sun lounger is left as v436 left it (its hit is in garden furniture, Nature & Earth); lounger [sun] became its alias.
+  2. Hindu festivals ident 2 -> 3 clears the one theme-gap warning (LIBRARY-RULES 7 lists it as an I30 leftover for Simon).
+  3. pants (the alias of trousers) was tagged UK, IE, AU, NZ, so a UK player saw "pants" (underwear there) for trousers; now US, CA.
+  4. plaster -> adhesive bandage (round 2 decision): plaster 15383 retexted "adhesive bandage" (untagged, familiarity 3), new UK alias plaster, US alias
+     Band-Aid kept; band-aids 23332 and plaster [bandage] 27383 merged into it.
+  5. Two themes deleted: kitchen electricals (its words are in kitchen appliances; hot plate and popcorn maker moved there) and table types (in tables
+     and desks; tea table moved). fireplace words renamed "around the fireplace" and heating and cooling loses the fireplace tools and parts.
+  6. Near-synonym pairs left grouped, not merged (LIBRARY-RULES 3.11: same-answer words both worth having): fridge / refrigerator, microwave /
+     microwave oven, vacuum / vacuum cleaner, smoke alarm / smoke detector, tombstone / gravestone / headstone, Chinese New Year / Lunar New Year.
+     remote control did become the synonym of remote (short form, as mono). Say if the others should merge too.
+  7. Case: Hermès (rule 8, plain alias Hermes), V-neck, A-line skirt, Y-fronts, D-ring, TV license, cable TV, CO detector, PTFE tape; traveler's check
+     (US spelling); mold remover root with UK alias mould remover. Lowercase trademarks left as v382 settled them (jacuzzi, rawlplug, rolodex,
+     polaroid, anglepoise, dustbuster, shop vac).
+  8. Allow-list keys proposed (the manager adds them on Simon's OK):
+       js/sense-allow.js '25344|54007|time_units'  // century [100 years] is right in time units
+       js/sense-allow.js '25482|25788|things_with_lids'               // a cooking pot has a lid
+       js/sense-allow.js '161|55503|fabrics_from_animals'             // alpaca [wool] is the fabric
+       js/sense-allow.js '837|19827|serving_dishes'    // tagine [cookware] is the serving pot
+       js/theme-twin-allow.js 'in_a_pencil_case|stationery'           // a scenario theme beside the category
+  9. pencil in "in a pencil case" (theme-name, baseline 3): give pencil nameOkIn there, rename the theme, or accept.
+  10. First synonyms left (4): Elizabeth Tower, dustcart, jotter, pocketbook are honest familiarity 4 and the only synonym of a familiarity-1 root.
+
+Left as is:
+  - contract-dup-root (12), by design (above). alias-fullname: plural forms. family-kin: different words.
+  - Complete sets: months, seasons, zodiac signs, Chinese zodiac, days, weekdays, Santa's reindeer, Twelve Days, wedding rhyme match their notes.
+  - Theme names: all 24 characters or fewer. I30: no gap of 2 or more after this batch.
+  - The chores phrases (mowing the lawn ...), the Twelve Days items and idioms (crack of dawn, birthday suit ...) keep type phrase.
+  - bats [animals] 23197 stays a root (v436, Simon).
+
+Baselines this batch lowers (tools/checks-baseline.json, at apply time, counted on v439): warn region-root-equiv 202 -> 151; warn theme-gap 1 -> 0; warn theme-name 3 -> 2;
+  contract-dup-root 175 -> 174; contract-type-common 31 -> 27. (v440, applied first, may lower some of them further.)
+Line breaks: new or retexted words of 8 or more letters (adhesive bandage, tube top, porkpie, Jingle Bells, Pembroke table, Gregorian calendar, Cretan
+  stitch, traveler's check, A-line skirt, mold remover, mould remover, TV license, CO detector, PTFE tape) need break points at apply time.
