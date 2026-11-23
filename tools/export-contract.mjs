@@ -2,6 +2,7 @@
 // on an export file. Each rule below names the GAME-CONTRACT.md table or section it comes from.
 //   error: the game crashes or silently drops something (a theme, an alias, a link). Always fails.
 //   warn:  play is skewed. Gated per kind against the "contract" section of tools/checks-baseline.json (a kind not listed counts as 0).
+//   info:  how the game reads something, often right by design (contract-root-region). Counted and reported, not gated.
 //
 // Run: node tools/export-contract.mjs [export.json] [--baseline <file>] [--kind <k>] [--json]
 //   export.json  default data/export/wordlist-game-family.json
@@ -159,7 +160,9 @@ export function checkContract(X) {
   const has = (i, r) => r < bits ? !!(ent.regions[i] & (1 << r)) : !!(ent.regionsHi[i] & (1 << (r - bits)));
   const dial = new Map();   // root row -> { uk: [], us: [] } display aliases
   for (let i = 0; i < n; i++) {
-    if (isRoot[i]) { if (ent.regions[i] || ent.regionsHi[i]) add('warn', 'contract-root-region', 'a root with regions: the game never reads root regions, so the word shows to everyone (a regional word belongs on an alias)', eName(i)); continue; }
+    // Entries: regions on a root raise its band (game g24, DynWord.RegionRaise): right for a regional word with no same-sense equivalent, so info;
+    // a regional root that has one is the Checks' warning region-root-equiv (js/validate.js).
+    if (isRoot[i]) { if (ent.regions[i] || ent.regionsHi[i]) add('info', 'contract-root-region', 'a root with regions: the game counts it as harder (+1 UK- or US-only, +2 other regions only) and shows it to everyone; fine for a regional word with no same-sense equivalent', eName(i)); continue; }
     if (ent.flags[i] & E_DROP || !isInt(ent.root[i], 1, n)) continue;
     const uk = has(i, ukI), us = has(i, usI), sp = ent.flags[i] & E_SPELLING, rg = ent.flags[i] & E_REGIONAL;
     if ((sp || rg) && uk && us) add('warn', 'contract-alias-dialect', 'an alias tagged both UK and US (the game makes it British only)', eName(i));
@@ -191,13 +194,14 @@ export function checkContract(X) {
   return out;
 }
 
-// Counts per kind against the baseline section: { errors, warn: [{ kind, n, max, status }], over, below, byKind: Map(kind -> issues) }.
+// Counts per kind against the baseline section: { errors, warn: [{ kind, n, max, status }], info: { kind: n }, over, below, byKind: Map(kind -> issues) }.
+// Info is counted, never gated (as the Checks' info in tools/checks-core.mjs summarize).
 export function contractSummary(issues, baseline = {}) {
   const byKind = new Map(); for (const i of issues) { if (!byKind.has(i.kind)) byKind.set(i.kind, []); byKind.get(i.kind).push(i); }
-  const errors = issues.filter(i => i.sev === 'error'), cnt = {};
-  for (const i of issues) if (i.sev === 'warn') cnt[i.kind] = (cnt[i.kind] || 0) + 1;
+  const errors = issues.filter(i => i.sev === 'error'), cnt = {}, info = {};
+  for (const i of issues) { if (i.sev === 'warn') cnt[i.kind] = (cnt[i.kind] || 0) + 1; else if (i.sev === 'info') info[i.kind] = (info[i.kind] || 0) + 1; }
   const warn = [...new Set([...Object.keys(baseline), ...Object.keys(cnt)])].sort().map(kind => { const n = cnt[kind] || 0, max = baseline[kind] ?? 0; return { kind, n, max, status: n > max ? 'OVER' : n < max ? 'below' : 'OK' }; });
-  return { errors, warn, over: warn.filter(w => w.status === 'OVER'), below: warn.filter(w => w.status === 'below'), byKind };
+  return { errors, warn, info, over: warn.filter(w => w.status === 'OVER'), below: warn.filter(w => w.status === 'below'), byKind };
 }
 
 // Text report: counts per kind with up to `ex` examples each.
@@ -207,7 +211,8 @@ export function contractReport(sum, ex = 3) {
   L.push(`errors: ${sum.errors.length}${errKinds.length ? ' (' + errKinds.map(([k, l]) => `${k} ${l.length}`).join(', ') + ')' : ''}`);
   for (const [k, l] of errKinds) for (const i of l.slice(0, ex)) L.push(`  [error] ${k}: ${line(i)}`);
   L.push('warnings (count / baseline): ' + (sum.warn.map(w => `${w.kind} ${w.n}/${w.max}${w.status === 'OVER' ? ' OVER' : w.status === 'below' ? ' (below: lower it)' : ''}`).join(', ') || 'none'));
-  for (const w of sum.warn) for (const i of (sum.byKind.get(w.kind) || []).slice(0, ex)) L.push(`  [warn] ${w.kind}: ${line(i)}`);
+  L.push('info (not gated): ' + (Object.entries(sum.info || {}).map(([k, n]) => `${k} ${n}`).join(', ') || 'none'));
+  for (const w of sum.warn) for (const i of (sum.byKind.get(w.kind) || []).filter(i => i.sev === 'warn').slice(0, ex)) L.push(`  [warn] ${w.kind}: ${line(i)}`);
   return L;
 }
 
@@ -229,7 +234,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   file = path.resolve(file || path.join(HERE, 'data/export/wordlist-game-family.json'));
   let X; try { X = JSON.parse(fs.readFileSync(file, 'utf8')); } catch (e) { usage(`Cannot read ${file}: ${e.message}`); }
   const issues = checkContract(X), sum = contractSummary(issues, readContractBaseline(base)), ok = !sum.errors.length && !sum.over.length;
-  if (json) console.log(JSON.stringify({ file, version: X?.lib?.version, ok, errors: sum.errors.length, warnings: sum.warn, issues: kind ? issues.filter(i => i.kind === kind) : issues.slice(0, 200) }, null, 1));
+  if (json) console.log(JSON.stringify({ file, version: X?.lib?.version, ok, errors: sum.errors.length, warnings: sum.warn, info: sum.info, issues: kind ? issues.filter(i => i.kind === kind) : issues.slice(0, 200) }, null, 1));
   else {
     console.log(`export contract (GAME-CONTRACT.md): ${file}, lib v${X?.lib?.version}`);
     if (kind) for (const i of issues.filter(i => i.kind === kind)) console.log(`  [${i.sev}] ${i.at ? i.at + ': ' : ''}${i.msg}`);

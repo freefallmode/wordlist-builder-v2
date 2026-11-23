@@ -22,7 +22,7 @@
 //   g. Each batch script (tools/gen/batchNNN.mjs) new or changed in the diff makes 0 changes when rerun as a dry run. WARN only, not FAIL:
 //      some replays legitimately flip-flop (batch409).
 //   h. The export contract (tools/export-contract.mjs, GAME-CONTRACT.md) on the fresh export of step c: 0 errors; each warning kind at most its
-//      count in the "contract" section of tools/checks-baseline.json.
+//      count in the "contract" section of tools/checks-baseline.json. Contract info (contract-root-region) is reported, not gated.
 //   i. On the diff against the base library: every entry added or changed has status "rev", and no accented root the change touched is left
 //      without its plain spelling alias (rule 8) (checks-core.mjs diffRules).
 //   j. Approvals, WARN only: a count raised in tools/checks-baseline.json, an "accept" key added, or a key added to an allow list
@@ -187,7 +187,7 @@ try {
     if (r.code !== 0) { const r2 = await node('tools/export-game.mjs', 'family', fresh); ms = r2.ms; if (r2.code !== 0) { result('h', H, 'FAIL', 0, 'no export to check (see c)'); return result('e', 'committed export is current', 'FAIL', ms, 'the export failed:\n' + tail(r2.out)); } }
     // h. the export contract on the fresh export (tools/export-contract.mjs)
     const rh = await node('tools/export-contract.mjs', fresh, '--baseline', BASELINE);
-    result('h', H, rh.code === 0 ? 'PASS' : 'FAIL', rh.ms, rh.out.trim().split(/\r?\n/).slice(1, rh.code === 0 ? 3 : 40).map(l => l.slice(0, 220)).join('\n      ').replace(fresh, 'tmp'));
+    result('h', H, rh.code === 0 ? 'PASS' : 'FAIL', rh.ms, rh.out.trim().split(/\r?\n/).slice(1, rh.code === 0 ? 4 : 40).map(l => l.slice(0, 220)).join('\n      ').replace(fresh, 'tmp'));
     const s = Date.now();
     let a, b; try { a = JSON.parse(fs.readFileSync(path.join(T, EXPORT), 'utf8')); } catch (e) { return result('e', 'committed export is current', 'FAIL', ms, `${EXPORT} missing or not JSON: ${e.message}`); }
     b = JSON.parse(fs.readFileSync(fresh, 'utf8')); delete a.generated; delete b.generated;

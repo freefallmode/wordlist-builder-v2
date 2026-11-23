@@ -137,6 +137,7 @@ export function validate(P) {
   xwordsTwins(P, add);
   senseLinks(P, add);
   themeGaps(P, add);
+  regionRootEquiv(P, add);
 
   // ----- entries -----
   const seen = new Map();
@@ -337,6 +338,40 @@ function senseTwins(P, add) {
       }
     }
   }
+}
+
+// region-root-equiv (LIBRARY-RULES.md, Aliases; Simon 2026-11-23): an enabled root with regions (not both UK and US) that has a same-sense
+// untagged root, which the rules say it should be a regional alias of. The game raises a root's band by its regions (+1 UK- or US-only, +2
+// other regions only), which is right for a regional word with no equivalent (Stilton, poutine) and wrong for one that has one. Precision
+// first; a pair is one sense when either
+//   (a) the two roots are in one synonym group of an enabled theme, with the same part of speech and type, neither a trademark, and neither
+//       text made of the other's words plus more (Scottish wildcat / wildcat is a subtype, not a synonym); or
+//   (b) the sense-twin test calls them one sense (same text, part of speech and type, meanings sharing a word; js/sense-allow.js respected).
+// Fix: make the regional root a `regional` (or `synonym`) alias of the other in a batch; or, when the group is wrong, ungroup them.
+const regionTagged = e => e.region.length > 0 && !(e.region.includes('UK') && e.region.includes('US'));
+function regionRootEquiv(P, add) {
+  const ix = P.ix, live = e => e && !e.aliasOf && e.enabled, hits = new Map();
+  const toks = s => s.toLowerCase().match(/[\p{L}\p{N}]+/gu) || [];
+  const wordsOf = (a, b) => { const x = toks(a), y = toks(b); return x.length !== y.length && (x.every(w => y.includes(w)) || y.every(w => x.includes(w))); };
+  const hit = (a, b, why) => { if (!hits.has(a.id)) hits.set(a.id, { a, b, why }); };
+  for (const t of P.themes) {
+    if (t.group || !(t.groups || []).length || !eff(P, t.id).enabled) continue;
+    for (const g of t.groups) {
+      const m = g.map(id => ix.entry.get(id)).filter(live);
+      for (const a of m) if (regionTagged(a)) for (const b of m)
+        if (b !== a && !b.region.length && a.pos === b.pos && a.type === b.type && !a.tm && !b.tm && !wordsOf(a.text, b.text)) hit(a, b, `are in one synonym group in "${t.name}"`);
+    }
+  }
+  const byText = new Map();
+  for (const e of P.entries) if (live(e)) { const k = e.text.trim().toLowerCase(); if (!byText.has(k)) byText.set(k, []); byText.get(k).push(e); }
+  for (const es of byText.values()) for (let i = 0; i < es.length; i++) for (let j = i + 1; j < es.length; j++) {
+    const [a, b] = regionTagged(es[i]) && !es[j].region.length ? [es[i], es[j]] : regionTagged(es[j]) && !es[i].region.length ? [es[j], es[i]] : [];
+    if (!a || a.pos !== b.pos || a.type !== b.type || SENSE_OK.has(pairKey(a.id, b.id))) continue;
+    const gb = glossToks(b.gloss), shared = glossToks(a.gloss).find(w => w.length >= 4 && !GLOSS_STOP.has(w) && gb.includes(w));
+    if (shared) hit(a, b, `have the same text and meanings sharing "${shared}"`);
+  }
+  for (const { a, b, why } of hits.values())
+    add('warn', 'region-root-equiv', `"${label(a)}" [${a.region.join(', ')}] is a root with regions, and it and the untagged root "${label(b)}" ${why}: the same sense? Then make it a regional alias of "${b.text}" (the game raises a regional root's band; LIBRARY-RULES.md, Aliases), or ungroup them if they differ.`, { entryId: a.id });
 }
 
 // theme-twin: two playable themes, neither inside the other, where at least 80% of the smaller one's words (8 or more) are in the larger one:

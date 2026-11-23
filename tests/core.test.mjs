@@ -895,16 +895,41 @@ test('export contract: the rule grammar; warnings for what skews play; the summa
   const is = await contractOf(X), n = k => is.filter(i => i.kind === k).length;
   assert.deepEqual(is.filter(i => i.sev === 'error'), []);
   assert.equal(n('contract-root-region'), 1);
+  assert.equal(is.find(i => i.kind === 'contract-root-region').sev, 'info');   // the game raises a regional root's band (g24): info, not gated
   assert.equal(n('contract-alias-dialect'), 2);    // tagged both, and two UK display aliases
   assert.equal(n('contract-dup-root'), 0);         // Plum (org) comes after the common plum
   assert.equal(n('contract-type-common'), 1);      // level typed phrase
   assert.equal(n('contract-thin'), 1);             // few things: 2 usable words (ant, sensitive bee); cat and dog are offensive
-  const s = contractSummary(is, { 'contract-root-region': 1, 'contract-alias-dialect': 2, 'contract-type-common': 1 });
+  const s = contractSummary(is, { 'contract-alias-dialect': 2, 'contract-type-common': 1 });
   assert.deepEqual(s.over.map(w => w.kind), ['contract-thin']);
+  assert.deepEqual(s.info, { 'contract-root-region': 1 });                      // counted as info, never over a baseline
+  assert.ok(!s.warn.some(w => w.kind === 'contract-root-region'));
   // the order in the export decides contract-dup-root: a place row first hides the common word
   const Y = structuredClone(X), r = Y.entries.text.indexOf('fig'); Y.entries.type[r] = 2; Y.entries.text.push('fig'); for (const c of Object.keys(Y.entries)) if (!['text', 'links'].includes(c)) Y.entries[c].push(c === 'familiarity' ? 1 : c === 'breaks' ? [] : 0);
   Y.entries.linkCount[Y.entries.linkCount.length - 1] = 1; Y.entries.links.push(Y.themes.findIndex(t => t[0] === 'fruits'), 2, 2, 0);
   assert.equal((await contractOf(Y)).filter(i => i.kind === 'contract-dup-root').length, 1);
+});
+
+test('region-root-equiv: a regional root with a same-sense untagged root (one synonym group, or a sense twin) is a warning', () => {
+  const P = contractProject(), fr = P.themes.find(t => t.id === 'fruits');
+  const add = (text, o) => addEntry(P, text, { fam: 2, typ: { fruits: 3 }, ...o });
+  const bil = add('bilberry', { region: ['UK'] }), wh = add('whortleberry', {});                  // (a) grouped: flagged
+  const ap = P.entries.find(e => e.text === 'apple');
+  const cox = add('Cox apple', { region: ['UK'] });                                                // the other's words plus more: a subtype
+  const both = add('sweetie', { region: ['UK', 'US'] }), sw = add('sweet', {});                    // tagged both UK and US: excluded
+  const tmr = add('Fruitella', { region: ['UK'], tm: true }), fc = add('fruit chew', {});         // a trademark: excluded
+  const lol = add('lolly', { region: ['AU'], pos: 'verb' }), lp = add('lollipop', {});             // another part of speech: excluded
+  fr.groups = [[bil.id, wh.id], [cox.id, ap.id], [both.id, sw.id], [tmr.id, fc.id], [lol.id, lp.id]];
+  const t1 = add('jelly', { gloss: 'fruit spread', region: ['US'] }); add('jelly', { gloss: 'fruit spread jam' });   // (b) sense twin, one tagged
+  const t2 = add('chips', { gloss: 'potato fries', region: ['UK'] }); add('chips', { gloss: 'potato fries thin' });
+  add('pudding', { gloss: 'dessert course', region: ['UK'] }); add('pudding', { gloss: 'custard', region: ['US'] });  // both tagged: not this check
+  reindex(P);
+  const got = kinds(P, 'region-root-equiv');
+  assert.deepEqual(got.map(i => i.entryId).sort(), [bil.id, t1.id, t2.id].sort());
+  assert.ok(got.every(i => i.sev === 'warn'));
+  assert.match(got.find(i => i.entryId === bil.id).msg, /whortleberry.*synonym group in "fruits"/);
+  P.themes.find(t => t.id === 'fruits').enabled = false; reindex(P);                                // a disabled theme's groups do not count
+  assert.deepEqual(kinds(P, 'region-root-equiv').map(i => i.entryId).sort(), [t1.id, t2.id].sort());
 });
 
 test('wordplay rules (v414): validate and the contract accept the game grammar only; a reversible member needs its reverse in the export', async () => {
