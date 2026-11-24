@@ -1,0 +1,221 @@
+Library batch v462 (for Simon's review): Qualities, light and dark branch: words that do not fit out, loose phrases replaced, well-known words added in its five themes; new themes words for bright and dark places; luge and skeleton out of winter vehicles.
+1. things that glow
+  out of things_that_glow: glowing coals 39982: it repeats "glow" of the theme name; ember is there (they were grouped) (now in no theme: not exported)
+  out of things_that_glow: glowing plankton 39974: it repeats "glow" of the theme name; a loose phrase (now in no theme: not exported)
+  out of things_that_glow: bioluminescence 31589: the glow itself, not a thing that glows (it stays in light words, nature at night and ocean) (stays in nature_at_night, ocean, light_words)
+  linked: jack-o'-lantern 25033 in things_that_glow (typicality 2): a well-known thing that glows; it was not linked
+  linked: lamp 34150 [light] in things_that_glow (typicality 2): a well-known thing that glows; it was not linked
+  linked: streetlight 38357 in things_that_glow (typicality 3): a well-known thing that glows; it was not linked
+  linked: headlight 2571 in things_that_glow (typicality 3): a well-known thing that glows; it was not linked
+  linked: lightsaber 49631 in things_that_glow (typicality 4): a well-known thing that glows; it was not linked
+  new entry: kryptonite 68784 noun, common, familiarity 2: Superman's glowing green rock
+  linked: kryptonite 68784 in things_that_glow (typicality 4): Superman's glowing green rock
+  group in things_that_glow: lamp 34150 = lava lamp 23486: a word and its more specific form: one answer
+2. shiny things
+  out of shiny_things: sheen 39998: a quality, not a thing (now in no theme: not exported)
+  out of shiny_things: patent shoes 40000: patent leather is there (now in no theme: not exported)
+  out of shiny_things: wet pavement 39995: a loose phrase (now in no theme: not exported)
+  linked: coin 21717 [money] in shiny_things (typicality 2): the plain word
+  out of shiny_things: new coin 39985: a loose phrase: coin takes the link (now in no theme: not exported)
+  linked: chrome 39044 [plating] in shiny_things (typicality 2): the plain word
+  out of shiny_things: chrome bumper 39986: a loose phrase: chrome takes the link (now in no theme: not exported)
+  linked: ring 4948 [jewelry] in shiny_things (typicality 2): a typical shiny thing; it was not linked
+  linked: medal 4408 in shiny_things (typicality 3): a typical shiny thing; it was not linked
+  linked: CD 49347 [disc] in shiny_things (typicality 4): a typical shiny thing; it was not linked
+  linked: saxophone 6004 in shiny_things (typicality 4): a typical shiny thing; it was not linked
+  linked: scarab 1393 [beetle] in shiny_things (typicality 5): a typical shiny thing; it was not linked
+  theme shiny_things: note "mirror, new coin, chrome bumper, polished shoes, glitter" -> "mirror, coin, chrome, polished shoes, glitter": its examples are members
+3. things that reflect
+  out of things_that_reflect: snowfall 1968: weather, not a thing that reflects; snow is there (they were grouped) (stays in snow_and_ice, quiet_things, weather, kinds_of_precipitation, signs_of_winter, polar_regions, taiga, shades_of_white, cold_things, things_that_melt, white_things, frozen_precipitation, snow_blank)
+  out of things_that_reflect: kettle 4730 [appliance]: weak: a kettle is not known for its reflection (stays in appliances, kitchen, kitchen_appliances, small_appliances, things_you_plug_in, things_with_handles, things_with_lids, hot_things, in_a_hotel_room)
+  out of things_that_reflect: vanity mirror 40014: one mirror too many: mirror, rearview, compact, hall of mirrors and mirror ball are there (now in no theme: not exported)
+  linked: windshield 2575 in things_that_reflect (typicality 3): a thing that reflects; it was not linked
+  linked: CD 49347 [disc] in things_that_reflect (typicality 3): a thing that reflects; it was not linked
+  linked: trophy 12732 [award] in things_that_reflect (typicality 4): a thing that reflects; it was not linked
+4. words for shiny
+  out of words_for_shiny: sheeny 40044: its text is also a slur (flagged offensive), so it never plays (now in no theme: not exported)
+  out of words_for_shiny: bling 40045 [flashy]: mostly a noun; bling [jewelry] is in shiny things (now in no theme: not exported)
+  out of words_for_shiny: flashy 40046: it means showy, not shiny (now in no theme: not exported)
+  new entry: reflective 68785 adjective, common, familiarity 2: throwing light back
+  linked: reflective 68785 in words_for_shiny (typicality 3): throwing light back
+  kin: reflective 68785 <-> reflection 40699 [light]: one word family
+  new entry: sequined 68786 adjective, common, familiarity 3: covered in sequins
+  linked: sequined 68786 in words_for_shiny (typicality 4): covered in sequins
+  new entry: spangled 68787 adjective, common, familiarity 4: covered in spangles
+  linked: spangled 68787 in words_for_shiny (typicality 4): covered in spangles
+  new entry: bejeweled 68788 adjective, common, familiarity 4: covered in jewels
+  linked: bejeweled 68788 in words_for_shiny (typicality 4): covered in jewels
+  new entry: bejewelled 68789 adjective, common, familiarity 4, spelling alias of bejeweled 68788 [UK]: the UK spelling
+  new entry: waxed 68790 adjective, common, familiarity 2: polished with wax
+  linked: waxed 68790 in words_for_shiny (typicality 4): polished with wax
+  new entry: pearly 68791 adjective, common, familiarity 3: with the luster of pearl
+  linked: pearly 68791 in words_for_shiny (typicality 4): with the luster of pearl
+  kin: sequined 68786 <-> sequins 13919: one word family
+  kin: pearly 68791 <-> pearl 31660 [gem]: one word family
+  kin: waxed 68790 <-> waxy 39127: one word family
+  kin: bejeweled 68788 <-> jewel 21206 [gemstone]: one word family
+5. words for dark
+  out of words_for_dark: pitch dark 40052: it holds "dark" of the theme name (it was let through with nameOkIn), as v447 found for dark; pitch-black stays (now in no theme: not exported)
+  out of words_for_dark: murk 40074: a noun among adjectives; murky is there (now in no theme: not exported)
+  out of words_for_dark: gloaming 25425: a noun among adjectives (it stays in times of day) (stays in times_of_day, scottish_words)
+  out of words_for_dark: jet 7669 [color]: a color name; jet-black is there (stays in colors, shades_of_black, colors_named_after_gems, hair_colors)
+  out of words_for_dark: sable 7670 [color]: a color name (stays in heraldry, hair_colors, colors, shades_of_black, colors_named_after_animals)
+  out of words_for_dark: obscure 40073: it means hidden or little known (now in no theme: not exported)
+  out of words_for_dark: cavernous 40078: it means huge and hollow (now in no theme: not exported)
+  out of words_for_dark: dull 40075: it means not bright, but is not a word for dark (now in no theme: not exported)
+  new entry: poorly lit 68792 adjective, common, familiarity 2: with little light
+  linked: poorly lit 68792 in words_for_dark (typicality 2): with little light
+6. words for bright (new)
+  new theme: words_for_bright "words for bright" under light_and_dark (after words_for_shiny), pop 3, ident 3: dark and shiny had a list, bright had none
+  linked: luminous 40033 in words_for_bright (typicality 2): it means giving off light
+  out of words_for_shiny: luminous 40033: it means bright: words for bright takes the link (stays in light_words, words_for_bright)
+  linked: lambent 40034 in words_for_bright (typicality 5): it means giving off light
+  out of words_for_shiny: lambent 40034: it means bright: words for bright takes the link (stays in starts_with_lamb, words_for_bright)
+  linked: effulgent 40035 in words_for_bright (typicality 5): it means giving off light
+  out of words_for_shiny: effulgent 40035: it means bright: words for bright takes the link (stays in words_for_bright)
+  linked: refulgent 40036 in words_for_bright (typicality 5): it means giving off light
+  out of words_for_shiny: refulgent 40036: it means bright: words for bright takes the link (stays in words_for_bright)
+  linked: dazzling 40029 in words_for_bright (typicality 1): a word for bright
+  linked: brilliant 39336 in words_for_bright (typicality 1): a word for bright
+  linked: sunny 2020 in words_for_bright (typicality 2): a word for bright
+  linked: gleaming 40022 in words_for_bright (typicality 2): a word for bright
+  linked: radiant 32680 in words_for_bright (typicality 2): a word for bright
+  linked: vivid 16079 in words_for_bright (typicality 2): a word for bright
+  linked: incandescent 40721 [glowing] in words_for_bright (typicality 4): a word for bright
+  linked: vibrant 12199 in words_for_bright (typicality 4): a word for bright
+  new entry: shining 68793 adjective, common, familiarity 1: a word for bright
+  linked: shining 68793 in words_for_bright (typicality 1): a word for bright
+  new entry: glowing 68794 adjective, common, familiarity 1: a word for bright
+  linked: glowing 68794 in words_for_bright (typicality 2): a word for bright
+  new entry: blinding 68795 adjective, common, familiarity 2: a word for bright
+  linked: blinding 68795 in words_for_bright (typicality 2): a word for bright
+  new entry: lit up 68796 adjective, common, familiarity 1: a word for bright
+  linked: lit up 68796 in words_for_bright (typicality 3): a word for bright
+  new entry: glaring 68797 adjective, common, familiarity 2: a word for bright
+  linked: glaring 68797 in words_for_bright (typicality 3): a word for bright
+  new entry: illuminated 68798 adjective, common, familiarity 2: a word for bright
+  linked: illuminated 68798 in words_for_bright (typicality 3): a word for bright
+  new entry: well-lit 68799 adjective, common, familiarity 2: a word for bright
+  linked: well-lit 68799 in words_for_bright (typicality 3): a word for bright
+  new entry: sunlit 68800 adjective, common, familiarity 2: a word for bright
+  linked: sunlit 68800 in words_for_bright (typicality 3): a word for bright
+  new entry: fluorescent 68801 adjective, common, familiarity 2: a word for bright
+  linked: fluorescent 68801 in words_for_bright (typicality 3): a word for bright
+  new entry: ablaze 68802 adjective, common, familiarity 3: a word for bright
+  linked: ablaze 68802 in words_for_bright (typicality 4): a word for bright
+  new entry: floodlit 68803 adjective, common, familiarity 3: a word for bright
+  linked: floodlit 68803 in words_for_bright (typicality 4): a word for bright
+  new entry: sun-drenched 68804 adjective, common, familiarity 3: a word for bright
+  linked: sun-drenched 68804 in words_for_bright (typicality 4): a word for bright
+  new entry: phosphorescent 68805 adjective, common, familiarity 4: a word for bright
+  linked: phosphorescent 68805 in words_for_bright (typicality 4): a word for bright
+  new entry: lucent 68806 adjective, common, familiarity 5: a word for bright
+  linked: lucent 68806 in words_for_bright (typicality 5): a word for bright
+  new entry: neon 68807 [bright] adjective, common, familiarity 1: as bright as a neon sign; neon [element] is the gas
+  linked: neon 68807 [bright] in words_for_bright (typicality 3): as bright as a neon sign; neon [element] is the gas
+  kin: glaring 68797 <-> glare 14660: one word family
+  kin: fluorescent 68801 <-> fluorescence 40722: one word family
+  kin: ablaze 68802 <-> blaze 30270 [fire]: one word family
+  kin: shining 68793 <-> shiny 40021: one word family
+  kin: blinding 68795 <-> blind 3311 [unable to see]: one word family
+  kin: illuminated 68798 <-> illumination 52297 [manuscript]: one word family
+7. dark places (new)
+  new theme: dark_places "dark places" under light_and_dark (after words_for_dark), pop 2, ident 3: no theme had it
+  linked: cave 1913 [rock hollow] in dark_places (typicality 1): a place known for being dark
+  linked: closet 23462 [storage] in dark_places (typicality 1): a place known for being dark
+  linked: basement 24074 in dark_places (typicality 1): a place known for being dark
+  linked: cellar 24075 [basement] in dark_places (typicality 1): a place known for being dark
+  linked: tunnel 7381 [structure] in dark_places (typicality 1): a place known for being dark
+  linked: coal mine 22917 in dark_places (typicality 1): a place known for being dark
+  linked: attic 24072 in dark_places (typicality 2): a place known for being dark
+  linked: movie theater 2477 in dark_places (typicality 2): a place known for being dark
+  linked: dungeon 6670 in dark_places (typicality 2): a place known for being dark
+  linked: sewer 28812 [drain] in dark_places (typicality 2): a place known for being dark
+  linked: black hole 7122 in dark_places (typicality 2): a place known for being dark
+  linked: haunted house 13834 in dark_places (typicality 2): a place known for being dark
+  linked: cavern 30924 in dark_places (typicality 2): a place known for being dark
+  linked: forest 28392 [woodland] in dark_places (typicality 3): a place known for being dark
+  linked: alley 38309 [road] in dark_places (typicality 3): a place known for being dark
+  linked: planetarium 7154 in dark_places (typicality 3): a place known for being dark
+  linked: nightclub 68740 in dark_places (typicality 3): a place known for being dark
+  linked: burrow 10149 [animal home] in dark_places (typicality 3): a place known for being dark
+  linked: crawl space 23188 in dark_places (typicality 3): a place known for being dark
+  linked: bunker 4403 [shelter] in dark_places (typicality 3): a place known for being dark
+  linked: den 10148 [lair] in dark_places (typicality 4): a place known for being dark
+  linked: abyss 32037 in dark_places (typicality 4): a place known for being dark
+  linked: well 32112 [water source] in dark_places (typicality 4): a place known for being dark
+  linked: ghost train 13783 in dark_places (typicality 4): a place known for being dark
+  linked: chimney 23246 [house] in dark_places (typicality 4): a place known for being dark
+  linked: underworld 6919 in dark_places (typicality 4): a place known for being dark
+  linked: trunk 2577 [car] in dark_places (typicality 4): a place known for being dark
+  linked: stairwell 35025 in dark_places (typicality 4): a place known for being dark
+  linked: Mariana Trench 60464 in dark_places (typicality 4): a place known for being dark
+  linked: oubliette 20719 in dark_places (typicality 4): a place known for being dark
+  new entry: outer space 68808 noun, common, familiarity 1: a place known for being dark
+  linked: outer space 68808 in dark_places (typicality 2): a place known for being dark
+  new entry: deep sea 68809 noun, common, familiarity 2: a place known for being dark
+  linked: deep sea 68809 in dark_places (typicality 3): a place known for being dark
+  group in dark_places: basement 24074 = cellar 24075: the same answer: the room under a house
+  group in dark_places: cave 1913 = cavern 30924: the same answer: a hollow in rock
+8. winter vehicles (v461): two sports out
+  out of winter_vehicles: luge 5353: the entry is the sport (winter sports, Olympic sports), not the sled (stays in winter_sports, snow_sports, olympic_sports, olympic_snow_sports)
+  out of winter_vehicles: skeleton 5354 [sled sport]: the entry is the sled sport, not the sled (stays in winter_sports, snow_sports, olympic_snow_sports, olympic_sports)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  dark_places: new -> "dark places" pop 2 ident 3: 32 words, easy/middle/hard 14/8/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  shiny_things: "shiny things" pop 2 ident 3: 40 words, easy/middle/hard 12/11/17, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "shiny things" pop 2 ident 3: 42 words, easy/middle/hard 12/13/17, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_glow: "things that glow" pop 2 ident 3: 38 words, easy/middle/hard 13/10/15, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "things that glow" pop 2 ident 3: 41 words, easy/middle/hard 14/11/16, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  things_that_reflect: "things that reflect" pop 3 ident 4: 41 words, easy/middle/hard 12/13/16, theme difficulty 4, 4th-easiest band 2, gap -2.0 -> "things that reflect" pop 3 ident 4: 41 words, easy/middle/hard 11/15/15, theme difficulty 4, 4th-easiest band 2, gap -2.0
+  winter_vehicles: "winter vehicles" pop 3 ident 2: 25 words, easy/middle/hard 8/6/11, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "winter vehicles" pop 3 ident 2: 23 words, easy/middle/hard 8/5/10, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  words_for_bright: new -> "words for bright" pop 3 ident 3: 27 words, easy/middle/hard 7/10/10, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  words_for_dark: "words for dark" pop 3 ident 3: 38 words, easy/middle/hard 8/11/19, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "words for dark" pop 3 ident 3: 31 words, easy/middle/hard 8/9/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  words_for_shiny: "words for shiny" pop 4 ident 3: 35 words, easy/middle/hard 7/13/15, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "words for shiny" pop 4 ident 3: 35 words, easy/middle/hard 7/14/14, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 16: glowing coals 39982, glowing plankton 39974, sheen 39998, patent shoes 40000, wet pavement 39995, new coin 39985, chrome bumper 39986, vanity mirror 40014, sheeny 40044, bling 40045, flashy 40046, pitch dark 40052, murk 40074, obscure 40073, cavernous 40078, dull 40075
+Entries added 26: kryptonite 68784, reflective 68785, sequined 68786, spangled 68787, bejeweled 68788, bejewelled 68789, waxed 68790, pearly 68791, poorly lit 68792, shining 68793, glowing 68794, blinding 68795, lit up 68796, glaring 68797, illuminated 68798, well-lit 68799, sunlit 68800, fluorescent 68801, ablaze 68802, floodlit 68803, sun-drenched 68804, phosphorescent 68805, lucent 68806, neon 68807, outer space 68808, deep sea 68809
+Entries deleted 0: none
+library changes 219; entries changed 117; status set to rev 66; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 414 -> 417, info:orphan 238 -> 254, info:overlap 4814 -> 4813, info:rating-vs-zipf 1681 -> 1683
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1427
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3205 -> 3207; gone none; new words_for_bright, dark_places; theme indexes shift: from index 3153 ("words_for_bright", was "words_for_dark") to the last index 3206
+Theme rows whose fields changed (parent compared by id): 6: winter_vehicles (index 1123 -> 1123: counts [2,7,8,8,4] -> [2,7,7,7,4]); things_that_glow (index 3149 -> 3149: counts [3,11,10,11,4] -> [3,12,11,12,4]); shiny_things (index 3150 -> 3150: counts [4,8,12,11,6] -> [4,8,14,12,5]); things_that_reflect (index 3151 -> 3151: counts [2,10,13,8,8] -> [2,9,15,9,6]); words_for_shiny (index 3152 -> 3152: counts [0,7,13,10,6] -> [0,7,14,12,2], range [2,5] -> [2,4]); words_for_dark (index 3153 -> 3154: counts [2,6,11,10,9] -> [2,6,9,6,8])
+Entry rows 61305 -> 61316; first row whose entry changed: 36621 (phosphorescent paint 39975, was glowing plankton 39974); rows that moved: 24669; added kryptonite 68784 (row 61290), reflective 68785 (row 61291), sequined 68786 (row 61292), spangled 68787 (row 61293), bejeweled 68788 (row 61294), bejewelled 68789 (row 61295), waxed 68790 (row 61296), pearly 68791 (row 61297), poorly lit 68792 (row 61298), shining 68793 (row 61299), glowing 68794 (row 61300), blinding 68795 (row 61301), lit up 68796 (row 61302), glaring 68797 (row 61303), illuminated 68798 (row 61304), well-lit 68799 (row 61305), sunlit 68800 (row 61306), fluorescent 68801 (row 61307), ablaze 68802 (row 61308), floodlit 68803 (row 61309), sun-drenched 68804 (row 61310), phosphorescent 68805 (row 61311), lucent 68806 (row 61312), neon 68807 (row 61313), outer space 68808 (row 61314), deep sea 68809 (row 61315); removed 39974 (row 36621), 39982 (row 36628), 39985 (row 36631), 39986 (row 36632), 39995 (row 36641), 39998 (row 36644), 40000 (row 36646), 40014 (row 36658), 40045 (row 36688), 40046 (row 36689), 40052 (row 36694), 40073 (row 36715), 40074 (row 36716), 40075 (row 36717), 40078 (row 36719)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 98585 -> 98640; rows whose link count changed: 60
+Link-index shifts: from row 1375 (silverfish 1394) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 27, new 82, rating changed 0
+  gone (other than the deleted themes): things_that_reflect: "snowfall" (1968), things_that_reflect: "kettle" (4730), winter_vehicles: "luge" (5353), winter_vehicles: "skeleton" (5354), words_for_dark: "jet" (7669), words_for_dark: "sable" (7670), words_for_dark: "gloaming" (25425), things_that_glow: "bioluminescence" (31589), things_that_glow: "glowing plankton" (39974), things_that_glow: "glowing coals" (39982), shiny_things: "new coin" (39985), shiny_things: "chrome bumper" (39986), shiny_things: "wet pavement" (39995), shiny_things: "sheen" (39998), shiny_things: "patent shoes" (40000), things_that_reflect: "vanity mirror" (40014), words_for_shiny: "luminous" (40033), words_for_shiny: "lambent" (40034), words_for_shiny: "effulgent" (40035), words_for_shiny: "refulgent" (40036), words_for_shiny: "bling" (40045), words_for_shiny: "flashy" (40046), words_for_dark: "pitch dark" (40052), words_for_dark: "obscure" (40073), words_for_dark: "murk" (40074), words_for_dark: "dull" (40075), words_for_dark: "cavernous" (40078)
+  new: shiny_things: "scarab" (1393), dark_places: "cave" (1913), words_for_bright: "sunny" (2020), dark_places: "movie theater" (2477), things_that_glow: "headlight" (2571), things_that_reflect: "windshield" (2575), dark_places: "trunk" (2577), dark_places: "bunker" (4403), shiny_things: "medal" (4408), shiny_things: "ring" (4948), shiny_things: "saxophone" (6004), dark_places: "dungeon" (6670), dark_places: "underworld" (6919), dark_places: "black hole" (7122), dark_places: "planetarium" (7154), dark_places: "tunnel" (7381), dark_places: "den" (10148), dark_places: "burrow" (10149), words_for_bright: "vibrant" (12199), things_that_reflect: "trophy" (12732), dark_places: "ghost train" (13783), dark_places: "haunted house" (13834), words_for_bright: "vivid" (16079), dark_places: "oubliette" (20719), shiny_things: "coin" (21717), dark_places: "coal mine" (22917), dark_places: "crawl space" (23188), dark_places: "chimney" (23246), dark_places: "closet" (23462), dark_places: "attic" (24072), dark_places: "basement" (24074), dark_places: "cellar" (24075), things_that_glow: "jack-o'-lantern" (25033), dark_places: "forest" (28392), dark_places: "sewer" (28812), dark_places: "cavern" (30924), dark_places: "abyss" (32037), dark_places: "well" (32112), words_for_bright: "radiant" (32680), things_that_glow: "lamp" (34150), dark_places: "stairwell" (35025), dark_places: "alley" (38309), things_that_glow: "streetlight" (38357), shiny_things: "chrome" (39044), words_for_bright: "brilliant" (39336), words_for_bright: "gleaming" (40022), words_for_bright: "dazzling" (40029), words_for_bright: "luminous" (40033), words_for_bright: "lambent" (40034), words_for_bright: "effulgent" (40035), words_for_bright: "refulgent" (40036), words_for_bright: "incandescent" (40721), shiny_things: "CD" (49347), things_that_reflect: "CD" (49347), things_that_glow: "lightsaber" (49631), dark_places: "Mariana Trench" (60464), dark_places: "nightclub" (68740), things_that_glow: "kryptonite" (68784), words_for_shiny: "reflective" (68785), words_for_shiny: "sequined" (68786), words_for_shiny: "spangled" (68787), words_for_shiny: "bejeweled" (68788), words_for_shiny: "waxed" (68790), words_for_shiny: "pearly" (68791), words_for_dark: "poorly lit" (68792), words_for_bright: "shining" (68793), words_for_bright: "glowing" (68794), words_for_bright: "blinding" (68795), words_for_bright: "lit up" (68796), words_for_bright: "glaring" (68797), words_for_bright: "illuminated" (68798), words_for_bright: "well-lit" (68799), words_for_bright: "sunlit" (68800), words_for_bright: "fluorescent" (68801), words_for_bright: "ablaze" (68802), words_for_bright: "floodlit" (68803), words_for_bright: "sun-drenched" (68804), words_for_bright: "phosphorescent" (68805), words_for_bright: "lucent" (68806), words_for_bright: "neon" (68807), dark_places: "outer space" (68808), dark_places: "deep sea" (68809)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Qualities gap check, 2026-11-24): all 5 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 82 new links existed earlier and was removed, and no theme with these names existed (all 203 library versions and 149 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above; each theme is near a third each, and dark places and words for bright are new at 14/8/10 and 7/10/10.
+
+Considered and left out:
+  - dark places: coffin, tomb, catacomb, crypt, mausoleum (burial places), womb, jail cell; darkroom (it holds "dark").
+  - words for bright: beaming (mostly smiling; its look-alike group has 9 words already); bright itself (the topic word).
+  - words for shiny: sparkly, glittery, shimmery (one family with sparkling, glittering, shimmering, and a synonym theme takes no groups).
+  - things that glow: halo stays (your v447 decision).
+
+For Simon:
+  1. 16 words are left in no theme (kept in the library, not exported): glowing plankton, glowing coals, new coin, chrome bumper, wet pavement, sheen, patent shoes, vanity mirror, sheeny, bling [flashy], flashy, pitch dark, obscure, murk, dull, cavernous. The stubs among them (new coin, chrome bumper ...) could be deleted.
+  2. pitch dark leaves words for dark for the reason you gave for dark in v447 (nameOkIn let the topic word through).
+  3. kryptonite is tagged tm, as lightsaber is.
+  4. reflective, glaring, shining, waxed and others are new adjectives made kin with their nouns (see the kin lines).
+
+=== Notice to _WS_ for v462 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v462 (Qualities, light and dark branch): 2 new themes, 82 new links, 26 new entries (25 roots and the alias bejewelled; listed above).
+- words for bright (under light and dark, after words for shiny; language-specific, as its siblings) and dark places (after words for dark; property).
+- things that glow, shiny things, things that reflect, words for shiny and words for dark lose words that do not fit and gain well-known ones (listed above); luminous, lambent, effulgent and refulgent move from words for shiny to words for bright.
+- winter vehicles loses luge and skeleton (the entries are the sports).
+Theme rows 3205 -> 3207; theme indexes shift from index 3153 (words_for_bright, was words_for_dark) on.
+Entry rows 61305 -> 61316: 15 words with no theme left are no longer exported (glowing plankton, glowing coals, new coin, chrome bumper, wet pavement, sheen, patent shoes, vanity mirror, bling [flashy], flashy, pitch dark, obscure, murk, dull, cavernous), so rows move from 36621 on; the new rows are at the end. Link positions move from row 1375 on.
+Line breaks: 8 words added (data/breaks-en.txt; drenched left unbroken, be-jeweled in two pieces so that no piece is offensive).
+New characters: none.
