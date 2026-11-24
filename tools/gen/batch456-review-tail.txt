@@ -1,0 +1,43 @@
+Reviewer's corrections applied (2026-11-24): no popularity raises on easy subjects (word fixes instead where they close the gap; otherwise the
+theme is left to the game's g27 floor); no theme merges (earth_s_layers kept, Simon kept it in v409; main_cloud_types kept as an exact complete
+subset, ident 2 -> 3); springbok untagged, antelopes stays ident 2; common vampire bat deleted; eggs gains roe only.
+
+Eggs: why it never played (game: 9 picks, 9 word-phase failures in every variant)
+  Rated 1.5, eggs is picked at low levels, where the game shows full terms (W10). Seven of its nine usable full texts contain "egg" (egg yolk,
+  duck egg, Easter egg, ostrich egg, egg carton, quail egg, free-range egg), and the game's B12 rule lets no two words of a level share a word,
+  comparing full texts. So a level could hold at most eggshell, albumen and one "egg ..." word: three, never four. Senses, typicality, shows and
+  sensitive flags were not the cause. The game-side fix (compare shown texts, W10) is agreed; this batch adds roe (a text without "egg") and makes
+  egg white (familiarity 1) the root of albumen (4), shown "white". Yolk becomes a root (familiarity 1) with egg yolk
+  its synonym alias (links move with their typicality: eggs 2, yellow things 2). Under the old full-text rule a level now gets eggshell, roe, yolk
+  and one "egg ..." word: four.
+
+Places of worship and religious festivals (the game's note: sensitive words count as not usable)
+  The low count is only the sensitive flags: church, temple, cathedral, mosque, synagogue (places) and Christmas, Easter, Hanukkah, Diwali, Eid,
+  Ramadan, Passover (festivals) are sensitive, correctly (religion). Both themes are sensitive themselves, so the game holds them to level 31,
+  where sensitive words are usable: counted with them (our themeProfile) both are within one band. Words and ratings left as they are.
+
+Left for the game's g27 floor (no fourth easy member in the library; an easy subject, so no popularity raise): melons, owls, penguins, cat breeds,
+  rabbits and hares, butterflies and moths, turtles and tortoises, long pasta, sushi types, RVs and campers, chili peppers, cloud types, capsicums; curries and mushrooms are within one band by our measure but not game-like (curry and mushroom are name words).
+  Blue flowers is within one band by our measure but not game-like: cornflower's US regional alias bachelor's button (familiarity 4) is what US
+  players see. Making it a synonym (as jump drive here) would close the gap; not done, for Simon.
+
+Follow-ups (not in this batch)
+  - capsicums: merge into chili_peppers; chili 29499 and chili pepper 17658 are two roots of one sense.
+  - penguins: blue penguin 51222 and little penguin 8241 are two roots of one bird (little blue penguin 51218 is already an alias of little penguin).
+  - cornflower: bachelor's button 1748 [US] regional -> synonym? (above)
+
+For Simon
+  1. Places of worship and religious festivals: should the game count sensitive words for a theme that is itself sensitive? Flags are uneven
+     inside both themes (shrine, basilica, gurdwara, mandir, masjid, minster; Eid al-Fitr, Advent, All Saints Day, Shavuot, Vaisakhi, Vesak are not
+     sensitive while church, mosque, Eid and Christmas are): flag them all in a later batch?
+  2. springbok loses its ZA tag (kept as a regional root in v435): this reverses that call (reviewer's correction).
+  3. Familiarity raised on words in other themes too (each change applies everywhere): partridge, Mont Blanc, garden spider, hazel,
+     hydrangea, Nile and saltwater crocodile. (Korma, vindaloo, shiitake and cornflower stay 3: Zipf under 2.3.)
+  4. Display aliases: housie loses its UK tag (UK players see bingo); jump drive becomes a synonym of flash drive (US players see flash drive).
+
+Left as is
+  - nicknames for drinks: five of nine words are alcohol slang (sensitive, correctly); re-rated pop 4 -> 5, not refilled.
+  - Stilton keeps its UK tag; number plate game (UK, familiarity 3) stays as Simon set it in v438.
+  - Synonym groups (father/dad/daddy, handcuffs/cuffs, wildebeest/gnu) were not used to reach a band.
+
+Baselines: no count to lower.
