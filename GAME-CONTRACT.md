@@ -53,6 +53,7 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 | nameWordLinks | Links never picked (the shown text is a word of the theme name) |
 | nameThemeLinks | [link, source theme]: passenger pairs. If any pair exists, the name-matching fallback is off. A pair is dropped when its source is unplayable or has fewer than 6 words, the name differs from the word text, the link has a short text, the word has a UK/US variant, the themes are nested, or the word is also in the source |
 | lib.version | Level code and save-history fit. Must change whenever the contents change, or saved histories resume with shifted indexes. A missing `lib` object throws |
+| lib.unsaved | Optional, additive (2026-11-24): `true` when a browser export was made from unsaved edits, so `lib.version` is the last saved one. Not a pinnable export; ignore it otherwise |
 | regions | Must contain "UK" and "US", or no variants appear |
 | regionBits | Default 30; must be at most 31 |
 | kindNames | Must be exactly category, place, property, wordplay, compound |

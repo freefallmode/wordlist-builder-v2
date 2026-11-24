@@ -10,7 +10,7 @@ import { parseOutline, formatOutline } from '../js/outline.js';
 import { newProject, addEntry, reindex, themeStats, themeRoots, themeCounts, touchedThemes, difficultyBand, eff, deleteEntry, deleteTheme, unlinkEntry, linkTarget, moveTheme, descendants, blendRatings, themeDifficulty, mergeRegions, updateIndex, indexEntry, placeTheme, entryDefaults, sortByKey, flagKey } from '../js/model.js';
 import { sig } from '../js/dom.js';
 import { serializeProject, parseProject } from '../js/store.js';
-import { validate, nameLeak } from '../js/validate.js';
+import { validate, nameLeak, themeNameChars } from '../js/validate.js';
 import { offensiveMatch, offensivePiece } from '../js/offensive.js';
 import { buildExport, capLines, reportLists } from '../js/export.js';
 import { parseFreq, setFreq, zipf, loadFreq, freqLoaded } from '../js/freq.js';
@@ -186,6 +186,24 @@ test('theme-name-long: warns above 30 characters (code points), not at 30', () =
   reindex(P);
   const w = validate(P).filter(i => i.kind === 'theme-name-long');
   assert.deepEqual(w.map(i => i.themeId), ['long31']);
+});
+
+test('theme-name-chars: an error for a name the outline format cannot carry ([, " -- ", a final colon)', () => {
+  const P = newProject();
+  const T = (id, name) => ({ id, name, parent: null, group: false, enabled: true, region: [] });
+  P.themes.push(T('ok', 'Rock-paper-scissors: the game'), T('br', 'Things [odd]'), T('dash', 'Cats -- and dogs'), T('colon', 'Colours:'), T('hy', 'Well-known -people'));
+  reindex(P);
+  const w = validate(P).filter(i => i.kind === 'theme-name-chars');
+  assert.deepEqual(w.map(i => i.themeId), ['br', 'dash', 'colon']);
+  assert.ok(w.every(i => i.sev === 'error'));
+  assert.equal(themeNameChars('Plain name'), '');
+  assert.notEqual(themeNameChars('Ends with: '), '');
+});
+
+test('settings.basedOn survives a save and load (the starter version the browser copy came from)', () => {
+  const P = newProject(); P.settings.basedOn = 454;
+  assert.equal(parseProject(serializeProject(P)).settings.basedOn, 454);
+  assert.equal(parseProject(serializeProject(newProject())).settings.basedOn, undefined);
 });
 
 test('theme-name check: the collected thing alone is fine, longer text and other name words are not', () => {

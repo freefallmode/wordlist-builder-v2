@@ -20,4 +20,4 @@ Every change to the library data must pass the library gate, `npm run gate` (`to
 
 ## Working
 
-Autosave goes to the browser (IndexedDB). File ▾ → Save project file writes a git-friendly JSON file (one theme or entry per line) and bumps the library version; Open project file loads one. Export… writes the game library (see DESIGN.md).
+Autosave goes to the browser (IndexedDB). File ▾ → Save project file writes a git-friendly JSON file (one theme or entry per line) and bumps the library version; Open project file loads one. Export… writes the game library (see DESIGN.md); with unsaved edits it asks first whether to save the project file.

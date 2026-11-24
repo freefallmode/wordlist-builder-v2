@@ -6,7 +6,7 @@ import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICAL
   FLAG_HELP, pathOf, setKin, moveKin, deleteEntry, deleteTheme, unlinkEntry, linkTarget, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded, loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
-import { validate, SEV_ORDER } from './validate.js';
+import { validate, SEV_ORDER, themeNameChars } from './validate.js';
 import { caseLint } from './caselint.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, exportName, lintLine, reportLists, THEME_KINDS } from './export.js';
 import { download } from './store.js';
@@ -81,6 +81,7 @@ export async function editTheme(t, isNew = false) {
     { label: 'Save', primary: true, action: () => {
       const name = f.name.value.trim();
       if (!name) throw Error('A theme needs a name.');
+      if (themeNameChars(name)) throw Error(`A theme name cannot have ${themeNameChars(name)} (the outline format uses it).`);
       if (P.themes.some(x => x !== t && x.name.toLowerCase() === name.toLowerCase())) throw Error('Another theme already has this name.');
       const pname = parentPick.input.value.trim(), parent = pname ? parentPick.get() : null;
       if (pname && !parent) throw Error('Parent theme not found.');
@@ -446,11 +447,12 @@ export async function showExport() {
   };
   let form = build();
   let last = null;
-  const run = async () => {
+  const run = async (unsaved = false) => {
     reindex(P);
     let brkErr = null; if (P.lang === 'en') try { await loadBreaks(); } catch (e) { brkErr = e instanceof TypeError ? 'could not fetch it; serve the folder over http' : e.message; }   // the table is English-only: other languages are not fetched for and get no break points
     let frqErr = null; if (o.zipf && P.lang === 'en' && !freqLoaded()) try { await loadFreq(); } catch (e) { frqErr = e instanceof TypeError ? 'could not fetch it; serve the folder over http' : e.message; }   // the Zipf column is zeros without the list
     last = buildExport(P, o);
+    if (unsaved) last.file.lib.unsaved = true;   // the library has edits no project file holds: this export's version is not a saved version (GAME-CONTRACT.md, DESIGN.md 8.6)
     const text = JSON.stringify(last.file);
     const s = await sizeOf(text);
     const r = last.report;
@@ -469,8 +471,14 @@ export async function showExport() {
     { label: 'Save as preset…', action: () => { const n = prompt('Preset name'); if (!n) return false; (P.settings.exportPresets ||= {})[n] = JSON.parse(JSON.stringify(o)); A.changed(); toast('Preset saved with the project.'); return false; } },
     { label: 'Preview', action: async () => { await run(); return false; } },
     { label: 'Download', primary: true, action: async () => {
-      const text = await run();
-      download(exportName(P, presetName, true), text);
+      let unsaved = false;
+      if (A.dirty) {   // the version in the file is the last saved one, so two different exports could carry the same version
+        const ans = await dialog('Save the project file first?', h('p', {}, `The library has edits that are not in a project file, so this export would carry the version of the last save (v${P.lib.version}). Saving first gives it a new version.`),
+          [{ label: 'Cancel', action: () => 'cancel' }, { label: 'Export anyway', action: () => 'anyway' }, { label: 'Save', primary: true, action: () => 'save' }]);
+        if (ans === 'save') A.saveFile(); else if (ans === 'anyway') unsaved = true; else return false;
+      }
+      const text = await run(unsaved);
+      download(exportName(P, presetName, true).replace(/.json$/, unsaved ? '-unsaved.json' : '.json'), text);
     } },
   ], { wide: true });
 }

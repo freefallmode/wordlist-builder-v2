@@ -4,6 +4,7 @@ import { A } from './state.js';
 import { parseOutline, formatOutline, mergeOutline } from './outline.js';
 import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeCounts, touchedThemes, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, sortByKey, FAMILIARITY_HELP, themeDifficulty } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
+import { themeNameChars } from './validate.js';
 import { loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
 import { editTheme, addTheme, editEntry, bulkAdd, generate, showValidation, showExport, showSettings, openPath } from './dialogs.js';
@@ -31,7 +32,8 @@ A.changed = touch => {
 A.render = keep => render(keep);
 
 function renderStatus() {
-  $('#save').textContent = (A.dirty ? 'Unsaved to file · ' : 'File saved · ') + (held ? 'autosave off: browser copy unreadable (click for choices)' : savedAt === 'failed' ? 'autosave failed' : savedAt ? 'autosaved ' + savedAt : '');
+  $('#save').textContent = held ? (A.dirty ? 'Unsaved to file · ' : '') + 'Autosave off: browser copy unreadable (click for choices)'   // never "File saved" while the browser copy is held: nothing is being kept
+    : (A.dirty ? 'Unsaved to file · ' : 'File saved · ') + (savedAt === 'failed' ? 'autosave failed' : savedAt ? 'autosaved ' + savedAt : '');
   const P = A.P; let themes = 0, on = 0;   // counted in loops: filter() copied the 60,000 entries on every render
   for (const t of P.themes) if (!t.group) themes++;
   for (const e of P.entries) if (e.enabled) on++;
@@ -79,6 +81,7 @@ function renameTheme(t) {
     { label: 'Rename', primary: true, action: () => {
       const name = input.value.trim();
       if (!name) throw Error('A theme needs a name.');
+      if (themeNameChars(name)) throw Error(`A theme name cannot have ${themeNameChars(name)} (the outline format uses it).`);
       if (A.P.themes.some(x => x !== t && x.name.toLowerCase() === name.toLowerCase())) throw Error('Another theme already has this name.');
       t.name = name; A.changed({ themes: true });
     } },
@@ -148,9 +151,9 @@ const THEME_FILTERS = [
   ['locked', 'Locked words (no substitution)', (P, t) => !t.group && themeLocked(P, t)],
   ['pop', 'Popularity…'],
   ['ident', 'Identifiability…'],
-  ['diff', 'Difficulty…'],
+  ['diff', 'Fills level…'],
 ];
-// The "Popularity…" and "Difficulty…" choices open a second select for the level.
+// The "Popularity…", "Identifiability…" and "Fills level…" choices open a second select for the level.
 let profMemo = null;   // while counting, each theme's profile is worked out once
 const prof = (P, t) => profMemo ? (profMemo.get(t.id) || profMemo.set(t.id, themeProfile(P, t.id)).get(t.id)) : themeProfile(P, t.id);
 const LEVEL_FILTERS = {
@@ -223,7 +226,7 @@ function select_(id) {
 // ---------- main pane ----------
 
 const RECCLASS = ['r0', 'r1', 'r2', 'r3', 'r4', 'r5'];
-const themeBadge = (P, t) => { const p = themeProfile(P, t.id); return p.reach ? h('span.badge.d', { title: `Worked out from the words: the difficulty range in which the theme can fill a 4-word set. Roots at difficulty 1-5: ${p.counts.slice(1).join(' / ')}` }, (() => { const d = p.lo ? [p.lo, p.hi] : [1, 2, 3, 4, 5].filter(n => p.counts[n]); return `difficulty ${d[0]}–${d[d.length - 1]}`; })()) : null; };
+const themeBadge = (P, t) => { const p = themeProfile(P, t.id); return p.reach ? h('span.badge.d', { title: `Worked out from the words: the difficulty levels in which the theme can fill a 4-word set from its words. Roots at difficulty 1-5: ${p.counts.slice(1).join(' / ')}` }, (() => { const d = p.lo ? [p.lo, p.hi] : [1, 2, 3, 4, 5].filter(n => p.counts[n]); return `fills levels ${d[0]}–${d[d.length - 1]}`; })()) : null; };
 const famTpl = {};   // the rating select is built once per kind and cloned for each row (two per row of the word table)
 const familiaritySel = (value, onchange, auto = false) => {
   const s = (famTpl[auto] ||= select([[0, auto ? 'auto' : '–'], 1, 2, 3, 4, 5], 0)).cloneNode(true);
@@ -299,7 +302,7 @@ function entryTable(t) {
     h('label.chk', { title: 'Also list the words of every sub-theme' }, h('input', { type: 'checkbox', checked: sub, onchange: ev => { A.showSub = ev.target.checked; render(); } }), ' show words in sub-themes'));
   if (t.group && !sub) return h('div.etable', {}, tools);
   const formsOf = { get: id => (P.ix.aliases.get(id) || []).filter(a => a.aliasKind === 'form') };   // a word's forms (rainy for rain) are not rows of their own: the row shows the form this theme uses, with the root after an arrow
-  const shown = e => (!e.aliasOf && P.ix.entry.get(e.use?.[t.id])) || e;
+  const shown = e => { const u = !e.aliasOf && P.ix.entry.get(e.use?.[t.id]); return u?.enabled ? u : e; };   // the form only when it is enabled: the export falls back to the root text otherwise (shownFor in model.js)
   const own = e => e.typ[t.id] !== undefined;   // an alias linked in this theme on its own is a word of the theme like any other (public house in ___ house); otherwise it only sits under its root
   const locked = themeLocked(P, t);   // a locked theme never swaps in an alias it does not link itself, so such aliases are not listed under their root
   const dm = e => locked ? e : dialectMember(P, e);   // a locked theme shows exactly the linked word, whatever the library's dialect
@@ -464,6 +467,13 @@ async function loadSkeleton() {
   return P;
 }
 
+function saveFile() {   // also used by the Export dialog's "Save the project file first?"
+  stampSave(A.P);
+  download(`wordlist-${A.P.lang}.project.json`, serializeProject(A.P));
+  A.dirty = false; autosave(); render();
+}
+A.saveFile = saveFile;
+
 const menuItem = (label, fn) => h('button.mi', { onclick: ev => { ev.target.closest('details').open = false; fn(); } }, label);
 
 // The starter library shipped with the app (data/wordlist-en.project.json). Used when the browser holds no library, and offered when it is newer than the one in the browser.
@@ -478,16 +488,17 @@ async function fetchStarter() {
 
 async function offerStarterUpdate() {
   const S = await fetchStarter(), P = A.P;
-  if (!S || S.lang !== P.lang || S.lib.version <= P.lib.version) return;
+  const base = P.settings.basedOn ?? P.lib.version;   // the shipped version this copy came from (Save project file raises lib.version on its own); a copy without the field is compared as before
+  if (!S || S.lang !== P.lang || S.lib.version <= base) return;
   let declined = 0;
   try { declined = +localStorage.getItem('wlb2-starter-declined') || 0; } catch {}
   if (declined >= S.lib.version) return;
   const words = S.entries.filter(e => !e.aliasOf).length.toLocaleString();
-  if (confirm(`A newer starter library is available: v${S.lib.version} (${S.themes.length.toLocaleString()} themes, ${words} words). Yours is v${P.lib.version}.
+  if (confirm(`A newer starter library is available: v${S.lib.version} (${S.themes.length.toLocaleString()} themes, ${words} words). Yours is v${P.lib.version}${P.settings.basedOn && P.settings.basedOn !== P.lib.version ? ` (from starter v${P.settings.basedOn})` : ''}.
 
 OK opens it and REPLACES your current library. Save your project to a file first (File menu) if you want to keep it.
 Cancel keeps yours; you will not be asked again for this version.`)) {
-    reindex(S); A.P = S; A.sel = null; A.view = null; A.dirty = false; autosave(); A.render(); toast('Opened starter library v' + S.lib.version);
+    S.settings.basedOn = S.lib.version; reindex(S); A.P = S; A.sel = null; A.view = null; A.dirty = false; autosave(); A.render(); toast('Opened starter library v' + S.lib.version);
   } else { try { localStorage.setItem('wlb2-starter-declined', String(S.lib.version)); } catch {} }
 }
 
@@ -520,7 +531,7 @@ async function boot() {
   let P = null, dirty = false;
   try { const L = await loadLocal(); if (L) ({ P, dirty } = L); } catch (e) { held = e; console.error(e); }
   const fresh = !P || !P.themes.length;
-  if (fresh) { P = (await fetchStarter()) || await loadSkeleton(); dirty = false; }
+  if (fresh) { const S = await fetchStarter(); P = S || await loadSkeleton(); if (S) P.settings.basedOn = S.lib.version; dirty = false; }
   A.P = P; A.dirty = dirty; reindex(P);
   if (fresh) autosave();   // writes nothing while held
   $('#save').onclick = () => { if (held) unreadable(); };
@@ -555,12 +566,7 @@ async function boot() {
   countMain();
   $('#btn-home').onclick = () => { A.sel = null; A.view = null; render(); };
   $('#filemenu .mpop').append(
-    menuItem('Save project file', () => {
-      if (!A.dirty) return toast('No changes since the last file save.');
-      stampSave(A.P);
-      download(`wordlist-${A.P.lang}.project.json`, serializeProject(A.P));
-      A.dirty = false; autosave(); render();
-    }),
+    menuItem('Save project file', () => { if (!A.dirty) return toast('No changes since the last file save.'); saveFile(); }),
     menuItem('Open project file…', async () => {
       const f = await pickFile('.json'); if (!f) return;
       try { openProject(f); } catch (e) { toast(e.message, true); }
@@ -577,7 +583,8 @@ async function boot() {
       A.P = await loadSkeleton(); reindex(A.P); A.sel = null; A.changed();
     }));
   render();
-  if (held) unreadable(); else if (!fresh) offerStarterUpdate();
+  if (held) { let seen = false; try { seen = !!sessionStorage.getItem('wlb2-unreadable-shown'); sessionStorage.setItem('wlb2-unreadable-shown', '1'); } catch {}   // once per session, so a browser where storage never works is not asked on every load (the status line still opens it)
+    if (!seen) unreadable(); } else if (!fresh) offerStarterUpdate();
 }
 
 boot().catch(e => { document.body.append(h('pre.fatal', String(e && e.stack || e))); console.error(e); });

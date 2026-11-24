@@ -38,6 +38,8 @@ const LANGS = 'french|german|spanish|italian|japanese|chinese|mandarin|cantonese
 const FOREIGN_OK = /\b(in english|words from|from other languages|speaking|languages?|letters?|cities|food|painters|writers|kings|gods|myth|cars?)\b/i;
 export const foreignListName = name => !FOREIGN_OK.test(name) && new RegExp(String.raw`\bin (${LANGS})\b|\b(${LANGS}) (everyday |basic )?(words|phrases|numbers|colou?rs|greetings|vocabulary)\b`, 'i').test(name);
 
+// What the outline format cannot carry in a theme name (B21, js/outline.js): "[" starts the tags, " -- " starts the note, a final ":" marks a group. Returns what is wrong, or ''.
+export const themeNameChars = name => name.includes('[') ? '"["' : name.includes(' -- ') ? '" -- "' : name.trimEnd().endsWith(':') ? 'a final ":"' : '';
 export const THEME_NAME_SOFT = 24, THEME_NAME_MAX = 30;   // theme name length (DESIGN-entries.md): soft = two lines in the game's narrowest column, hard = the check warns above it
 // Distinct concepts of a theme that are not offensive: an alias family counts when one of its enabled members is not offensive.
 function cleanRoots(P, tid) {
@@ -84,6 +86,7 @@ export function validate(P) {
   for (const t of P.themes) {
     { const rt = ruleTheme(t); if (rt && !ix.theme.get(rt)) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rt}.`, { themeId: t.id }); }
     if (t.tkind === 'wordplay' || t.tkind === 'compound') { const pr = parseRule(t.rule); if (pr.state !== 'ok') add('error', 'rule-unknown', `"${t.name}" is a ${t.tkind} theme with ${t.rule ? `the rule "${t.rule}", which ${pr.state === 'bad' ? 'has a bad argument' : "is not in the game's grammar"}` : 'no rule'} (GAME-CONTRACT.md: palindrome, double-letters, homophone, onomatopoeia, anagram, no-vowels, roman, reversible, curated, rhyme:X, contains:X, compound-start:X, compound-end:X, starts:X, ends:X, hidden:@id): the game never plays it.`, { themeId: t.id }); }
+    { const bad = themeNameChars(t.name); if (bad) add('error', 'theme-name-chars', `The theme name "${t.name}" has ${bad}: it would not survive an outline export and import.`, { themeId: t.id }); }
     { const len = [...t.name].length; if (len > THEME_NAME_MAX) add('warn', 'theme-name-long', `The theme name "${t.name}" has ${len} characters; keep it to ${THEME_NAME_MAX} at most (aim for ${THEME_NAME_SOFT}).`, { themeId: t.id }); }
     const ef = eff(P, t.id);
     if (!ef.enabled) continue;
