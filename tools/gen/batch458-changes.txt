@@ -1,0 +1,66 @@
+Library batch v458 (ISSUES W14; Simon, 2026-11-24: "Fix the leftovers"): rapture split into two senses; taraweeh/tarawih and Laylat/Lailat al-Qadr merged; Rama and Garuda kept whole; korora an alias of little penguin.
+1. rapture: two senses split (LIBRARY-RULES 4: flags are set for the sense). rapture 4053 keeps the emotion (delight, ecstasy; not sensitive; its kin rapturous stays); a new entry holds the Christian end-times Rapture (sensitive: religion)
+  new entry: rapture 68620 [end times] noun, common, familiarity 3: the Christian belief that the faithful are taken up to heaven at the end of time (familiarity 3: well known in the US, less in the UK)
+  linked: rapture 68620 [end times] in afterlife_words (typicality 4): the religious sense
+  out of afterlife_words: rapture 4053: the emotion sense: rapture [end times] takes the link (stays in emotions)
+  rapture 4053: gloss "" -> "delight": its text is now shared with rapture [end times]
+2. Spelling pairs of one sense merged (LIBRARY-RULES 5: two roots for one sense; the usual English spelling is the root, the other an untagged spelling alias with the root's flags)
+  tarawih 61208 becomes a spelling alias of taraweeh 55707 (familiarity 5); links move: islam_words:4: the same Ramadan night prayers: taraweeh is the commoner English spelling (tarawih the transliteration)
+  Lailat al-Qadr 61177 becomes a spelling alias of Laylat al-Qadr 55708 (familiarity 5); links move: religious_festivals:4: the same Night of Power: Laylat al-Qadr is the commoner spelling (Wikipedia, most English sources)
+3. Rama and Garuda: not split (explained in the review tail): the themes cannot tell a second sense apart
+4. korora becomes a translation alias of little penguin (the same bird in Māori; LIBRARY-RULES 5: translation is the same thing named in another language)
+  korora 63112 becomes a translation alias of little penguin 8241 (familiarity 5, region NZ): one bird: kororā is its Māori name (tagged NZ, where it is used)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  afterlife_words: "afterlife words" pop 3 ident 2: 44 words, easy/middle/hard 8/12/24, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "afterlife words" pop 3 ident 2: 44 words, easy/middle/hard 8/12/24, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  islam_words: "Islam words" pop 3 ident 2: 53 words, easy/middle/hard 8/15/30, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Islam words" pop 3 ident 2: 53 words, easy/middle/hard 8/15/30, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  penguins: "penguins" pop 2 ident 2: 21 words, easy/middle/hard 2/2/17, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "penguins" pop 2 ident 2: 20 words, easy/middle/hard 2/2/16, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  religious_festivals: "religious festivals" pop 3 ident 2: 45 words, easy/middle/hard 9/9/27, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "religious festivals" pop 3 ident 2: 45 words, easy/middle/hard 9/9/27, theme difficulty 2, 4th-easiest band 2, gap 0.0
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 1: rapture 68620
+Entries deleted 0: none
+library changes 9; entries changed 7; status set to rev 2; themes deleted 0; entries merged 3
+Checks: changed kinds: info:family-kin 400 -> 401
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1422
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3189 -> 3189; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 2: flightless_birds (index 282 -> 282: counts [3,4,5,11,15] -> [3,4,5,11,16]); new_zealand_animals (index 391 -> 391: counts [0,1,3,17,16] -> [0,1,3,17,17])
+Entry rows 61136 -> 61137; first row whose entry changed: 61136 (rapture 68620, was undefined); rows that moved: 0; added rapture 68620 (row 61136); removed none
+root -> alias rows 3: Lailat al-Qadr 61177, tarawih 61208, korora 63112; alias -> root rows 0: none
+Rows whose flags changed: 3
+Links 97883 -> 97882; rows whose link count changed: 6
+Link-index shifts: from row 3977 (foreboding 4054) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 4, new 3, rating changed 0
+  gone (other than the deleted themes): afterlife_words: "rapture" (4053), religious_festivals: "Lailat al-Qadr" (61177), islam_words: "tarawih" (61208), penguins: "korora" (63112)
+  new: islam_words: "taraweeh" (55707), religious_festivals: "Laylat al-Qadr" (55708), afterlife_words: "rapture" (68620)
+  rating: none
+new issues: none
+
+Rama and Garuda, not split
+- Rama 21970 [god]: its four themes (Hindu gods, Hinduism words, Diwali, legendary heroes) all mean one figure, the hero-king of the Ramayana, who is worshipped as Vishnu's avatar; Diwali celebrates his return. The hero and the god are the same figure, so there is no second sense to split off. Kept as one entry, unflagged (as v457).
+- Garuda 21990 [eagle mount]: Hindu gods and winged beasts both mean the divine eagle of Hindu and Buddhist myth, Vishnu's mount. Kept as one entry, unflagged.
+- If Simon wants them held back, flag the single entry: legendary heroes and winged beasts would then hold them back to level 31 too.
+korora: a translation alias (the same bird named in Māori, LIBRARY-RULES 5), tagged NZ; not regional, which is for another English dialect's word.
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v458 (ISSUES W14, the v457 leftovers):
+- rapture is split: rapture 4053 [delight] keeps emotions (not sensitive); a new entry rapture 68620 [end times] (sensitive) takes afterlife words.
+- tarawih becomes the spelling alias of taraweeh, and Lailat al-Qadr the spelling alias of Laylat al-Qadr (both sensitive, as their roots); their links move to the roots.
+- korora becomes a translation alias (NZ) of little penguin; it leaves penguins as a separate word.
+- Rama and Garuda are unchanged (one figure each).
+Theme rows: 3189, no change, no index shifts.
+Entry rows 61136 -> 61137: rapture 68620 added as the last row (61136); no other row moves. Lailat al-Qadr 61177, tarawih 61208 and korora 63112 turn from roots into aliases. Link positions move from row 3977 on (links 97883 -> 97882).
+New characters: none.
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v458 (ISSUES W14, the v457 leftovers):
+- rapture is split: rapture 4053 [delight] keeps emotions (not sensitive); a new entry rapture 68620 [end times] (sensitive) takes afterlife words.
+- tarawih becomes the spelling alias of taraweeh, and Lailat al-Qadr the spelling alias of Laylat al-Qadr (both sensitive, as their roots); their links move to the roots.
+- korora becomes a translation alias (NZ) of little penguin; it leaves penguins as a separate word.
+- Rama and Garuda are unchanged (one figure each).
+Theme rows: 3189, no change, no index shifts.
+Entry rows 61136 -> 61137: rapture 68620 added as the last row (61136); no other row moves. Lailat al-Qadr 61177, tarawih 61208 and korora 63112 turn from roots into aliases. Link positions move from row 3977 on (links 97883 -> 97882).
+New characters: none.
