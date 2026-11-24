@@ -1,0 +1,30 @@
+Library batch v459 (the game's v458 measurement; Simon, 2026-11-24: "Yes, draft and apply"): alcoholic drinks sensitive; Hindu festivals: six festivals untagged IN, ident 3 -> 4; cell parts pop 2 -> 3.
+1. alcoholic drinks is sensitive (LIBRARY-RULES 4: alcohol is sensitive only, Simon, I31, v418; 20 of its 21 members are sensitive, so before level 31 the game had 1 usable word). As v455 did for Hindu festivals
+2. Hindu festivals: the IN tag comes off the festivals a UK or US adult meets through the diaspora and the news (LIBRARY-RULES 4, region: who knows it; world religions and their festivals are not tagged). The game raises an IN-only root by +2, so these played at band 5 and the theme had 1 usable word at its level
+3. cell parts: pop 2 -> 3 (LIBRARY-RULES 4: pop is how appealing a pick the theme is; school biology is an ordinary, rather dry topic, not a popular one). ident stays 2: a plain category that nucleus, mitochondria, cell wall and cell membrane name at once
+Hindu festivals, game band of each member (max(familiarity, typicality), +2 for an IN-only root, capped at 5), before -> after: Diwali 5114 2 -> 2, Holi 5126 3 -> 3, Navratri 5164 4 -> 4, Raksha Bandhan 5165 4 -> 4, Durga Puja 5166 4 -> 4, Onam 5167 [IN] 5 -> 5, Pongal 5168 [IN] 5 -> 5, Ganesh Chaturthi 5169 4 -> 4, Dussehra 5170 4 -> 4, Janmashtami 5172 [IN] 5 -> 5, Baisakhi 5173 [IN] 5 -> 5, Lohri 5174 [IN] 5 -> 5
+  theme difficulty 4: 7 usable words at its level or easier (all sensitive, as the theme is; from level 31)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1416
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3189 -> 3189; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61137 -> 61137; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 97882 -> 97882; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none

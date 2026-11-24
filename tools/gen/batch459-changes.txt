@@ -1,0 +1,60 @@
+Library batch v459 (the game's v458 measurement; Simon, 2026-11-24: "Yes, draft and apply"): alcoholic drinks sensitive; Hindu festivals: six festivals untagged IN, ident 3 -> 4; cell parts pop 2 -> 3.
+1. alcoholic drinks is sensitive (LIBRARY-RULES 4: alcohol is sensitive only, Simon, I31, v418; 20 of its 21 members are sensitive, so before level 31 the game had 1 usable word). As v455 did for Hindu festivals
+  theme alcoholic_drinks: sensitive false -> true: 20 of 21 members are sensitive (alcohol); the drink themes are sensitive, not adult (v419)
+2. Hindu festivals: the IN tag comes off the festivals a UK or US adult meets through the diaspora and the news (LIBRARY-RULES 4, region: who knows it; world religions and their festivals are not tagged). The game raises an IN-only root by +2, so these played at band 5 and the theme had 1 usable word at its level
+  Holi 5126: region ["IN"] -> []: the festival of colours: celebrated in UK and US cities and campuses, widely pictured in the news and in adverts
+  Navratri 5164: region ["IN"] -> []: nine nights of garba and dandiya dances held in community halls across the UK and US (large Gujarati diaspora)
+  Dussehra 5170: region ["IN"] -> []: the pan-Hindu victory of Rama, the effigy burning that ends Navratri; reported each year with Navratri and Diwali, not tied to one Indian region
+  Raksha Bandhan 5165: region ["IN"] -> []: the rakhi thread festival of brothers and sisters, kept by Hindu, Sikh and Jain families across the diaspora and in Bollywood films
+  Durga Puja 5166: region ["IN"] -> []: Bengali in origin but kept by diaspora communities worldwide (London, New York pujas) and named on the UNESCO intangible heritage list (2021)
+  Ganesh Chaturthi 5169: region ["IN"] -> []: the elephant-god festival whose idol immersions are pictured in world news each year and held in UK and US Hindu temples
+  theme hindu_festivals: ident 3 -> 4: theme difficulty 3 -> 4 (LIBRARY-RULES 6, I30: keep the theme near its 4th-easiest usable word): with the tags off, its words play at bands 2, 3 and 4 (five at 4), so a difficulty of 4 gives 7 usable words at its level; the familiarities are right for a general UK/US adult, so the theme moves, not the words
+3. cell parts: pop 2 -> 3 (LIBRARY-RULES 4: pop is how appealing a pick the theme is; school biology is an ordinary, rather dry topic, not a popular one). ident stays 2: a plain category that nucleus, mitochondria, cell wall and cell membrane name at once
+  theme cell_parts: pop 2 -> 3: a school-biology topic, ordinary rather than popular: theme difficulty 1.5 -> 2.0, level with its 4th-easiest usable word (band 2: nucleus, mitochondria, cell wall, cell membrane; chromosome is band 3)
+Hindu festivals, game band of each member (max(familiarity, typicality), +2 for an IN-only root, capped at 5), before -> after: Diwali 5114 2 -> 2, Holi 5126 5 -> 3, Navratri 5164 5 -> 4, Raksha Bandhan 5165 5 -> 4, Durga Puja 5166 5 -> 4, Onam 5167 [IN] 5 -> 5, Pongal 5168 [IN] 5 -> 5, Ganesh Chaturthi 5169 5 -> 4, Dussehra 5170 5 -> 4, Janmashtami 5172 [IN] 5 -> 5, Baisakhi 5173 [IN] 5 -> 5, Lohri 5174 [IN] 5 -> 5
+  theme difficulty 4: 7 usable words at its level or easier (all sensitive, as the theme is; from level 31)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  alcoholic_drinks: "alcoholic drinks" pop 1 ident 1: 21 words, easy/middle/hard 11/6/4, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "alcoholic drinks" pop 1 ident 1: 21 words, easy/middle/hard 11/6/4, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  cell_parts: "cell parts" pop 2 ident 2: 28 words, easy/middle/hard 4/5/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "cell parts" pop 3 ident 2: 28 words, easy/middle/hard 4/5/19, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  hindu_festivals: "Hindu festivals" pop 3 ident 3: 12 words, easy/middle/hard 1/1/10, theme difficulty 3, 4th-easiest band 4, gap 1.0 -> "Hindu festivals" pop 3 ident 4: 12 words, easy/middle/hard 1/1/10, theme difficulty 4, 4th-easiest band 4, gap 0.0
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 15; entries changed 6; status set to rev 6; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): contract-root-region 1422 -> 1416; after: contract-dup-root 170, contract-root-region 1416
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3189 -> 3189; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 3: alcoholic_drinks (index 200 -> 200: flags 0 -> 2); hindu_festivals (index 1634 -> 1634: identifiability 3 -> 4, difficulty 3 -> 4); cell_parts (index 2424 -> 2424: popularity 2 -> 3, difficulty 1.5 -> 2)
+Entry rows 61137 -> 61137; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 97882 -> 97882; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v459 (fixes from your v458 measurement):
+- alcoholic drinks is now flagged sensitive (20 of its 21 members were already sensitive), so it waits for level 31 as a whole.
+- Hindu festivals: the IN region tag comes off Holi, Navratri, Dussehra, Raksha Bandhan, Durga Puja and Ganesh Chaturthi (known in the UK and US through the diaspora and the news). Onam, Pongal, Lohri, Baisakhi and Janmashtami keep IN. Bands with your +2 raise, before -> after: Diwali 2 -> 2, Holi 5 -> 3, Navratri, Dussehra, Raksha Bandhan, Durga Puja, Ganesh Chaturthi 5 -> 4; the IN five stay 5. ident 3 -> 4, theme difficulty 3 -> 4: 7 usable words at its level (all sensitive, from level 31).
+- cell parts: popularity 2 -> 3, theme difficulty 1.5 -> 2 (its 4 easiest words are band 2).
+Theme rows: 3189, no change, no index shifts. Changed theme fields: alcoholic_drinks (index 200) flags; hindu_festivals (index 1634) identifiability, difficulty; cell_parts (index 2424) popularity, difficulty.
+Entry rows 61137, no change, no row moves, no link shifts; six entries lose their IN region (ids 5126, 5164, 5165, 5166, 5169, 5170).
+New characters: none.
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v459 (fixes from your v458 measurement):
+- alcoholic drinks is now flagged sensitive (20 of its 21 members were already sensitive), so it waits for level 31 as a whole.
+- Hindu festivals: the IN region tag comes off Holi, Navratri, Dussehra, Raksha Bandhan, Durga Puja and Ganesh Chaturthi (known in the UK and US through the diaspora and the news). Onam, Pongal, Lohri, Baisakhi and Janmashtami keep IN. Bands with your +2 raise, before -> after: Diwali 2 -> 2, Holi 5 -> 3, Navratri, Dussehra, Raksha Bandhan, Durga Puja, Ganesh Chaturthi 5 -> 4; the IN five stay 5. ident 3 -> 4, theme difficulty 3 -> 4: 7 usable words at its level (all sensitive, from level 31).
+- cell parts: popularity 2 -> 3, theme difficulty 1.5 -> 2 (its 4 easiest words are band 2).
+Theme rows: 3189, no change, no index shifts. Changed theme fields: alcoholic_drinks (index 200) flags; hindu_festivals (index 1634) identifiability, difficulty; cell_parts (index 2424) popularity, difficulty.
+Entry rows 61137, no change, no row moves, no link shifts; six entries lose their IN region (ids 5126, 5164, 5165, 5166, 5169, 5170).
+New characters: none.
