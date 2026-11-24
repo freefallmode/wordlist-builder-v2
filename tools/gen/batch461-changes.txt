@@ -1,0 +1,865 @@
+Library batch v461 (for Simon's review): Travel & Transport gap check, part 2: 16 new everyday themes: car wash, car trouble, learning to drive, roadwork, in a glove box, two-wheelers, travel hubs, on a train, on the subway, taxi ride, airport security, in a hotel room, on a cruise ship, summer camp, travel trouble, winter vehicles.
+1. Glosses of entries now used more widely
+  seat 46905: gloss "bus" -> "vehicle": the seat of a bus or a train
+  window 46909: gloss "bus" -> "vehicle": the window of a bus or a train
+  aisle 46908: gloss "bus" -> "vehicle": the aisle of a bus or a train
+  pole 46926: gloss "bus" -> "vehicle": the pole riders hold on a bus or a subway train
+  announcement 47321: gloss "flight" -> "": its text has one meaning: on a plane, at a station, on a train
+  instructor 57621: gloss "ski" -> "": its text has one meaning: a teacher of skiing, driving and so on
+  sing-along 48311: gloss "car game" -> "": its text has one meaning: in a car, at a camp
+  checkpoint 45651: gloss "" -> "game": its text is now shared with checkpoint [security]
+  wand 6991: gloss "" -> "magic": its text is now shared with wand [scanner]
+  undercarriage 47113: gloss "" -> "aircraft": its text is now shared with undercarriage [car]
+  medallion 24752: gloss "" -> "jewelry": its text is now shared with medallion [taxi]
+  right of way 43805: gloss "" -> "fencing": its text is now shared with right of way [road]
+  linked: horseback 48230 in modes_of_transport (typicality 3): a way of getting around (v438: the animals themselves are in the animal themes, as in animal-powered travel)
+  out of modes_of_transport: horse 153 [animal]: linked in v460; an animal, not a way of travelling (Simon, v438): horseback takes the link (stays in farm_animals, domestic_animals, horses, hoofed_mammals, horse_family, fast_animals, knights, jousting_tournament, chinese_zodiac, brown_things, things_with_necks, things_with_tails, odd_toed_animals, things_you_brush, things_you_ride, four_legged_animals)
+2. car wash
+  new theme: car_wash "car wash" under cars (after gas_station), pop 3, ident 2: no theme had it
+  linked: sponge 23835 [cleaning] in car_wash (typicality 1): a thing or step of a car wash
+  linked: hose 1844 [pipe] in car_wash (typicality 1): a thing or step of a car wash
+  linked: soap 3726 [wash] in car_wash (typicality 1): a thing or step of a car wash
+  linked: bucket 23378 [pail] in car_wash (typicality 2): a thing or step of a car wash
+  linked: foam 16291 [bath] in car_wash (typicality 2): a thing or step of a car wash
+  linked: suds 24004 in car_wash (typicality 2): a thing or step of a car wash
+  linked: rinse 23860 in car_wash (typicality 2): a thing or step of a car wash
+  linked: water 861 [liquid] in car_wash (typicality 2): a thing or step of a car wash
+  linked: vacuum 4735 [vacuum cleaner] in car_wash (typicality 2): a thing or step of a car wash
+  linked: towel 3755 [bath cloth] in car_wash (typicality 3): a thing or step of a car wash
+  linked: squeegee 46778 [car] in car_wash (typicality 2): a thing or step of a car wash
+  linked: polish 23861 [to shine] in car_wash (typicality 3): a thing or step of a car wash
+  linked: pressure washer 23545 in car_wash (typicality 3): a thing or step of a car wash
+  linked: microfiber cloth 23845 in car_wash (typicality 3): a thing or step of a car wash
+  linked: spray 28689 [droplets] in car_wash (typicality 3): a thing or step of a car wash
+  linked: detergent 23882 in car_wash (typicality 3): a thing or step of a car wash
+  linked: mud 28051 [dirt] in car_wash (typicality 3): a thing or step of a car wash
+  linked: chamois 50180 [leather cloth] in car_wash (typicality 2): a thing or step of a car wash
+  linked: conveyor belt 38199 in car_wash (typicality 4): a thing or step of a car wash
+  linked: shampoo 3727 in car_wash (typicality 4): a thing or step of a car wash
+  linked: air freshener 23395 in car_wash (typicality 4): a thing or step of a car wash
+  linked: nozzle 46758 in car_wash (typicality 4): a thing or step of a car wash
+  linked: hubcap 39999 in car_wash (typicality 5): a thing or step of a car wash
+  linked: windshield 2575 in car_wash (typicality 4): a thing or step of a car wash
+  linked: buff 23874 [to polish] in car_wash (typicality 4): a thing or step of a car wash
+  linked: lather 16343 in car_wash (typicality 4): a thing or step of a car wash
+  new entry: wax 68649 [car] noun, common, familiarity 2: the polish for a car's paint; wax [candle], [surfing], [skiing] are others
+  linked: wax 68649 [car] in car_wash (typicality 1): the polish for a car's paint; wax [candle], [surfing], [skiing] are others
+  new entry: drive-through 68650 noun, common, familiarity 1: a car wash the car rolls through
+  linked: drive-through 68650 in car_wash (typicality 2): a car wash the car rolls through
+  new entry: blower 68651 noun, common, familiarity 3: the hot air that dries the car
+  linked: blower 68651 in car_wash (typicality 3): the hot air that dries the car
+  kin: blower 68651 <-> blow 17055 [breathe]: one word family
+  new entry: detailing 68652 noun, common, familiarity 3: a thorough clean inside and out
+  linked: detailing 68652 in car_wash (typicality 4): a thorough clean inside and out
+  new entry: undercarriage 68653 [car] noun, common, familiarity 4: the underside a car wash sprays; undercarriage (landing gear) is the plane's
+  linked: undercarriage 68653 [car] in car_wash (typicality 4): the underside a car wash sprays; undercarriage (landing gear) is the plane's
+  new entry: degreaser 68654 noun, common, familiarity 4: cleaner for wheels and engines
+  linked: degreaser 68654 in car_wash (typicality 4): cleaner for wheels and engines
+  kin: degreaser 68654 <-> degrease 23873: one word family
+  new entry: tire shine 68655 noun, common, familiarity 4: spray that blackens tires
+  linked: tire shine 68655 in car_wash (typicality 4): spray that blackens tires
+  new entry: clay bar 68656 noun, common, familiarity 5: the putty that lifts grit off paint
+  linked: clay bar 68656 in car_wash (typicality 5): the putty that lifts grit off paint
+  kin: wax 68649 [car] <-> waxy 39127: one word family, as wax [candle]
+  kin: wax 68649 [car] <-> waxing 41358: one word family, as wax [candle]
+  group in car_wash: foam 16291 = suds 24004 = lather 16343: the same answer: soapy bubbles
+  group in car_wash: polish 23861 = buff 23874: the same answer: rubbing to a shine
+3. car trouble
+  new theme: car_trouble "car trouble" under cars (after driving_words), pop 2, ident 2: no theme had it
+  linked: flat tire 47991 in car_trouble (typicality 1): a sign or kind of car trouble
+  linked: check engine light 59008 in car_trouble (typicality 2): a sign or kind of car trouble
+  linked: warning light 58998 in car_trouble (typicality 2): a sign or kind of car trouble
+  linked: rust 40083 [corrosion] in car_trouble (typicality 3): a sign or kind of car trouble
+  linked: stall 46665 [engine] in car_trouble (typicality 3): a sign or kind of car trouble
+  linked: smoke 30277 [fire] in car_trouble (typicality 3): a sign or kind of car trouble
+  linked: rattle 39637 [sound] in car_trouble (typicality 3): a sign or kind of car trouble
+  linked: steam 16570 [vapor] in car_trouble (typicality 4): a sign or kind of car trouble
+  linked: backfire 49204 in car_trouble (typicality 4): a sign or kind of car trouble
+  linked: fender bender 2641 in car_trouble (typicality 3): a sign or kind of car trouble
+  new entry: breakdown 68657 noun, common, familiarity 1: a sign or kind of car trouble
+  linked: breakdown 68657 in car_trouble (typicality 1): a sign or kind of car trouble
+  new entry: dead battery 68658 noun, common, familiarity 1: a sign or kind of car trouble
+  linked: dead battery 68658 in car_trouble (typicality 1): a sign or kind of car trouble
+  new entry: overheating 68659 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: overheating 68659 in car_trouble (typicality 2): a sign or kind of car trouble
+  new entry: oil leak 68660 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: oil leak 68660 in car_trouble (typicality 2): a sign or kind of car trouble
+  new entry: engine failure 68661 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: engine failure 68661 in car_trouble (typicality 2): a sign or kind of car trouble
+  new entry: cracked windshield 68662 noun, common, familiarity 1: a sign or kind of car trouble
+  linked: cracked windshield 68662 in car_trouble (typicality 2): a sign or kind of car trouble
+  new entry: blowout 68663 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: blowout 68663 in car_trouble (typicality 3): a sign or kind of car trouble
+  new entry: blown fuse 68664 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: blown fuse 68664 in car_trouble (typicality 3): a sign or kind of car trouble
+  new entry: dent 68665 noun, common, familiarity 1: a sign or kind of car trouble
+  linked: dent 68665 in car_trouble (typicality 3): a sign or kind of car trouble
+  new entry: squeaky brakes 68666 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: squeaky brakes 68666 in car_trouble (typicality 3): a sign or kind of car trouble
+  new entry: brake failure 68667 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: brake failure 68667 in car_trouble (typicality 3): a sign or kind of car trouble
+  new entry: bald tire 68668 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: bald tire 68668 in car_trouble (typicality 4): a sign or kind of car trouble
+  new entry: blown gasket 68669 noun, common, familiarity 3: a sign or kind of car trouble
+  linked: blown gasket 68669 in car_trouble (typicality 4): a sign or kind of car trouble
+  new entry: fuel leak 68670 noun, common, familiarity 2: a sign or kind of car trouble
+  linked: fuel leak 68670 in car_trouble (typicality 4): a sign or kind of car trouble
+  new entry: slipping clutch 68671 noun, common, familiarity 3: a sign or kind of car trouble
+  linked: slipping clutch 68671 in car_trouble (typicality 4): a sign or kind of car trouble
+  new entry: misfire 68672 noun, common, familiarity 4: a sign or kind of car trouble
+  linked: misfire 68672 in car_trouble (typicality 4): a sign or kind of car trouble
+  new entry: flooded engine 68673 noun, common, familiarity 4: a sign or kind of car trouble
+  linked: flooded engine 68673 in car_trouble (typicality 4): a sign or kind of car trouble
+  new entry: engine knock 68674 noun, common, familiarity 4: a sign or kind of car trouble
+  linked: engine knock 68674 in car_trouble (typicality 5): a sign or kind of car trouble
+  new entry: scratch 68675 [mark] noun, common, familiarity 1: a mark on the paint; scratch [itch] is the verb
+  linked: scratch 68675 [mark] in car_trouble (typicality 4): a mark on the paint; scratch [itch] is the verb
+  kin: overheating 68659 <-> overheat 66973: one word family
+  new entry: out of gas 68676 other, phrase, familiarity 1: a sign or kind of car trouble
+  linked: out of gas 68676 in car_trouble (typicality 1): a sign or kind of car trouble
+  new entry: locked out 68677 adjective, common, familiarity 1: with the keys inside the car
+  linked: locked out 68677 in car_trouble (typicality 4): with the keys inside the car
+  kin: scratch 68675 [mark] <-> scratching 10964 [DJing]: one word family, as scratch [itch]
+  kin: scratch 68675 [mark] <-> scratchy 26188 [handwriting]: one word family, as scratch [itch]
+  kin: scratch 68675 [mark] <-> scratching 50904 [cat]: one word family, as scratch [itch]
+  group in car_trouble: check engine light 59008 = warning light 58998: a word and its more specific form: one answer
+4. learning to drive
+  new theme: learning_to_drive "learning to drive" under cars (after car_trouble), pop 3, ident 2: no theme had it
+  linked: instructor 57621 in learning_to_drive (typicality 1): a thing of driving lessons and the test
+  linked: parallel parking 46797 in learning_to_drive (typicality 1): a thing of driving lessons and the test
+  linked: steering wheel 2568 [car] in learning_to_drive (typicality 1): a thing of driving lessons and the test
+  linked: rearview mirror 2594 in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  linked: seat belt 2569 in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  linked: turn signal 46674 [indicator] in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  linked: clutch 46607 [car] in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  linked: stall 46665 [engine] in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  linked: reverse 46659 [drive] in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  linked: three-point turn 46662 in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  linked: blind spot 50161 [driving] in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  linked: pass 34832 [exam] in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  linked: fail 34833 [exam] in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  linked: gearshift 46605 [car] in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  linked: speed limit 38396 in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  linked: stop sign 40080 in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  linked: gas pedal 46601 in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  linked: nerves 3990 [anxiety] in learning_to_drive (typicality 4): a thing of driving lessons and the test
+  linked: curb 46806 [street] in learning_to_drive (typicality 4): a thing of driving lessons and the test
+  linked: traffic cone 38409 in learning_to_drive (typicality 4): a thing of driving lessons and the test
+  linked: hand signal 66751 in learning_to_drive (typicality 4): a thing of driving lessons and the test
+  new entry: written test 68678 noun, common, familiarity 2: the test on the rules (UK theory test); driving test would repeat "drive" of the theme name
+  linked: written test 68678 in learning_to_drive (typicality 2): the test on the rules (UK theory test); driving test would repeat "drive" of the theme name
+  new entry: theory test 68679 noun, common, familiarity 2, regional alias of written test 68678 [UK,IE]: the UK name
+  new entry: learner's permit 68680 noun, common, familiarity 2: the license to practice
+  linked: learner's permit 68680 in learning_to_drive (typicality 2): the license to practice
+  new entry: emergency stop 68681 noun, common, familiarity 2: a thing of driving lessons and the test
+  linked: emergency stop 68681 in learning_to_drive (typicality 2): a thing of driving lessons and the test
+  new entry: brake pedal 68682 noun, common, familiarity 1: beside the gas pedal
+  linked: brake pedal 68682 in learning_to_drive (typicality 2): beside the gas pedal
+  new entry: lane change 68683 noun, common, familiarity 2: a thing of driving lessons and the test
+  linked: lane change 68683 in learning_to_drive (typicality 3): a thing of driving lessons and the test
+  new entry: examiner 68684 noun, common, familiarity 3: the person who gives the test
+  linked: examiner 68684 in learning_to_drive (typicality 2): the person who gives the test
+  kin: examiner 68684 <-> examine 16940: one word family
+  new entry: L-plate 68685 noun, common, familiarity 3: the red L on a learner's car
+  linked: L-plate 68685 in learning_to_drive (typicality 3): the red L on a learner's car
+  new entry: dual controls 68686 noun, common, familiarity 4: the instructor's own pedals
+  linked: dual controls 68686 in learning_to_drive (typicality 4): the instructor's own pedals
+  new entry: hill start 68687 noun, common, familiarity 4: starting on a slope
+  linked: hill start 68687 in learning_to_drive (typicality 4): starting on a slope
+  new entry: right of way 68688 [road] noun, common, familiarity 2: who goes first; right of way [fencing] is another
+  linked: right of way 68688 [road] in learning_to_drive (typicality 4): who goes first; right of way [fencing] is another
+  new entry: Highway Code 68689 noun, title, familiarity 3: the UK book of road rules
+  linked: Highway Code 68689 in learning_to_drive (typicality 4): the UK book of road rules
+  new entry: biting point 68690 noun, common, familiarity 5: where the clutch starts to grip
+  linked: biting point 68690 in learning_to_drive (typicality 5): where the clutch starts to grip
+  new entry: provisional license 68691 noun, common, familiarity 4: the UK learner's license
+  linked: provisional license 68691 in learning_to_drive (typicality 4): the UK learner's license
+  new entry: provisional licence 68692 noun, common, familiarity 4, spelling alias of provisional license 68691 [UK]: the UK spelling
+5. roadwork
+  new theme: roadwork "roadwork" under streets_and_roads (after traffic_words), pop 3, ident 2: no theme had it
+  linked: traffic cone 38409 in roadwork (typicality 1): a thing seen where a road is being repaired
+  linked: hard hat 24454 in roadwork (typicality 1): a thing seen where a road is being repaired
+  linked: high-vis vest 57550 in roadwork (typicality 1): a thing seen where a road is being repaired
+  linked: jackhammer 23693 in roadwork (typicality 1): a thing seen where a road is being repaired
+  linked: steamroller 3128 in roadwork (typicality 2): a thing seen where a road is being repaired
+  linked: asphalt 38434 in roadwork (typicality 2): a thing seen where a road is being repaired
+  linked: detour 2940 in roadwork (typicality 2): a thing seen where a road is being repaired
+  linked: digger 3102 [machine] in roadwork (typicality 2): a thing seen where a road is being repaired
+  linked: shovel 1850 in roadwork (typicality 2): a thing seen where a road is being repaired
+  linked: pothole 38435 [road] in roadwork (typicality 2): a thing seen where a road is being repaired
+  linked: delay 46975 [transport] in roadwork (typicality 2): a thing seen where a road is being repaired
+  linked: tarmac 27387 in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: gravel 2053 [crushed stone] in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: drill 4799 [tool] in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: tar 39066 [pitch] in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: barricade 61414 in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: cement mixer 3108 in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: dump truck 3105 in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: paver 49047 [machine] in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: concrete 7396 [building material] in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: traffic jam 38385 in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: flagman 47839 in roadwork (typicality 3): a thing seen where a road is being repaired
+  linked: manhole 38422 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: contraflow 38406 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: grader 3148 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: floodlight 66333 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: rubble 31770 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: trench 21689 [excavation] in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: backhoe 3127 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: pickaxe 25774 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: bitumen 24060 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: surveyor 4164 in roadwork (typicality 4): a thing seen where a road is being repaired
+  linked: sandbag 66528 in roadwork (typicality 5): a thing seen where a road is being repaired
+  linked: dust 23180 [dirt] in roadwork (typicality 4): a thing seen where a road is being repaired
+  new entry: barrier 68693 noun, common, familiarity 1: what closes the road off
+  linked: barrier 68693 in roadwork (typicality 2): what closes the road off
+  new entry: lane closure 68694 noun, common, familiarity 2: a thing seen where a road is being repaired
+  linked: lane closure 68694 in roadwork (typicality 2): a thing seen where a road is being repaired
+  new entry: resurfacing 68695 noun, common, familiarity 3: a new top layer for the road
+  linked: resurfacing 68695 in roadwork (typicality 3): a new top layer for the road
+  new entry: arrow board 68696 noun, common, familiarity 4: the lit arrow that moves traffic over
+  linked: arrow board 68696 in roadwork (typicality 4): the lit arrow that moves traffic over
+  group in roadwork: barrier 68693 = barricade 61414: the same answer: what closes the road off
+  group in roadwork: asphalt 38434 = tarmac 27387: the same answer: the black road surface
+  group in roadwork: tar 39066 = bitumen 24060: the same answer: the black binder
+6. in a glove box
+  new theme: in_a_glove_box "in a glove box" under where_things_are_kept (after in_a_pocket), pop 3, ident 3: no theme had it; a sibling of in a handbag, in a pocket and junk drawer
+  new entry: owner's manual 68697 noun, common, familiarity 1: a thing many drivers keep there
+  linked: owner's manual 68697 in in_a_glove_box (typicality 1): a thing many drivers keep there
+  new entry: registration 68698 noun, common, familiarity 1: the car's papers
+  linked: registration 68698 in in_a_glove_box (typicality 1): the car's papers
+  new entry: parking permit 68699 noun, common, familiarity 2: a thing many drivers keep there
+  linked: parking permit 68699 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  new entry: ketchup packet 68700 noun, common, familiarity 2: a thing many drivers keep there
+  linked: ketchup packet 68700 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  new entry: valve cap 68701 noun, common, familiarity 4: a spare for a tire
+  linked: valve cap 68701 in in_a_glove_box (typicality 5): a spare for a tire
+  linked: insurance card 23302 in in_a_glove_box (typicality 1): a thing many drivers keep there
+  linked: napkin 19926 in in_a_glove_box (typicality 2): a thing many drivers keep there
+  linked: tire gauge 41855 in in_a_glove_box (typicality 2): a thing many drivers keep there
+  linked: flashlight 3028 in in_a_glove_box (typicality 2): a thing many drivers keep there
+  linked: pen 34758 [writing] in in_a_glove_box (typicality 2): a thing many drivers keep there
+  linked: sunglasses 4952 in in_a_glove_box (typicality 2): a thing many drivers keep there
+  linked: tissue 25548 [paper] in in_a_glove_box (typicality 2): a thing many drivers keep there
+  linked: road map 2404 in in_a_glove_box (typicality 2): a thing many drivers keep there
+  linked: hand sanitizer 15322 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: chewing gum 23326 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: mints 23317 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: phone charger 23572 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: ice scraper 46868 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: loose change 23276 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: receipt 23290 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: parking ticket 4227 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: first aid kit 15344 [medical] in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: candy 607 in in_a_glove_box (typicality 3): a thing many drivers keep there
+  linked: wet wipes 19944 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: screwdriver 317 [tool] in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: notebook 4504 [paper] in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: garage door opener 61492 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: lip balm 3777 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: sunscreen 3745 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: fuse 40676 [electric] in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: multitool 25623 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: spare keys 23265 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: reading glasses 23330 in in_a_glove_box (typicality 4): a thing many drivers keep there
+  linked: hairbrush 3754 in in_a_glove_box (typicality 5): a thing many drivers keep there
+  linked: hand cream 3782 in in_a_glove_box (typicality 5): a thing many drivers keep there
+7. two-wheelers
+  new theme: two_wheelers "two-wheelers" under bikes_and_boards (after motorcycle_types), pop 2, ident 2: no theme had it; a category of a rival game (Two-Wheeled Transport)
+  linked: bicycle 23154 in two_wheelers (typicality 1): it runs on two wheels
+  linked: motorcycle 40174 in two_wheelers (typicality 1): it runs on two wheels
+  linked: scooter 5954 in two_wheelers (typicality 1): it runs on two wheels
+  linked: moped 29601 in two_wheelers (typicality 1): it runs on two wheels
+  linked: Segway 7356 in two_wheelers (typicality 2): it runs on two wheels
+  linked: tandem 47885 in two_wheelers (typicality 2): it runs on two wheels
+  linked: dirt bike 47936 in two_wheelers (typicality 2): it runs on two wheels
+  linked: mountain bike 62668 in two_wheelers (typicality 2): it runs on two wheels
+  linked: penny-farthing 40180 in two_wheelers (typicality 2): it runs on two wheels
+  linked: hoverboard 7369 in two_wheelers (typicality 3): it runs on two wheels
+  linked: BMX 44069 in two_wheelers (typicality 3): it runs on two wheels
+  linked: e-scooter 7370 in two_wheelers (typicality 2): it runs on two wheels
+  linked: chariot 20383 in two_wheelers (typicality 3): it runs on two wheels
+  linked: electric bike 47886 in two_wheelers (typicality 3): it runs on two wheels
+  linked: superbike 47942 in two_wheelers (typicality 3): it runs on two wheels
+  linked: rickshaw 2684 in two_wheelers (typicality 3): it runs on two wheels
+  linked: balance bike 47893 in two_wheelers (typicality 3): it runs on two wheels
+  linked: racing bike 47888 in two_wheelers (typicality 3): it runs on two wheels
+  linked: folding bike 40277 in two_wheelers (typicality 4): it runs on two wheels
+  linked: hand truck 24258 in two_wheelers (typicality 4): it runs on two wheels
+  linked: minibike 47949 in two_wheelers (typicality 3): it runs on two wheels
+  linked: sulky 50129 [cart] in two_wheelers (typicality 4): it runs on two wheels
+  linked: gig 40184 [carriage] in two_wheelers (typicality 4): it runs on two wheels
+  linked: velocipede 40183 in two_wheelers (typicality 4): it runs on two wheels
+  linked: bone shaker 47906 in two_wheelers (typicality 4): it runs on two wheels
+  linked: dogcart 49173 in two_wheelers (typicality 4): it runs on two wheels
+  linked: hansom cab 22973 in two_wheelers (typicality 4): it runs on two wheels
+  linked: pony cart 48235 in two_wheelers (typicality 4): it runs on two wheels
+  linked: ox cart 39859 in two_wheelers (typicality 5): it runs on two wheels
+  new entry: dandy horse 68702 noun, common, familiarity 5: the pedal-less bicycle of 1817
+  linked: dandy horse 68702 in two_wheelers (typicality 4): the pedal-less bicycle of 1817
+  group in two_wheelers: scooter 5954 = e-scooter 7370: a word and its more specific form: one answer
+8. travel hubs
+  new theme: travel_hubs "travel hubs" under travel_transport (after modes_of_transport), pop 3, ident 2: no theme had it; a category of a rival game (Travel Hubs)
+  linked: airport 2715 in travel_hubs (typicality 1): a place where trips start, stop or change
+  linked: train station 57667 in travel_hubs (typicality 1): a place where trips start, stop or change
+  linked: bus station 2657 in travel_hubs (typicality 1): a place where trips start, stop or change
+  linked: harbor 2804 [port] in travel_hubs (typicality 2): a place where trips start, stop or change
+  linked: ferry terminal 47506 in travel_hubs (typicality 2): a place where trips start, stop or change
+  linked: bus stop 2656 in travel_hubs (typicality 2): a place where trips start, stop or change
+  linked: port 48887 [cruise stop] in travel_hubs (typicality 2): a place where trips start, stop or change
+  linked: taxi stand 67180 in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: marina 47492 in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: cruise terminal 47507 in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: pier 2807 [jetty] in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: dock 2806 [harbor] in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: park and ride 2677 in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: seaport 47512 in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: terminus 2680 in travel_hubs (typicality 3): a place where trips start, stop or change
+  linked: depot 2482 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: spaceport 41353 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: interchange 2696 [transit] in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: wharf 47491 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: rest stop 32122 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: truck stop 48281 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: helipad 47153 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: airfield 66821 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: quay 47489 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: airstrip 2748 in travel_hubs (typicality 4): a place where trips start, stop or change
+  linked: caravanserai 2520 in travel_hubs (typicality 5): a place where trips start, stop or change
+  new entry: subway station 68703 noun, common, familiarity 1: a place where trips start, stop or change
+  linked: subway station 68703 in travel_hubs (typicality 2): a place where trips start, stop or change
+  new entry: tram stop 68704 noun, common, familiarity 2: a place where trips start, stop or change
+  linked: tram stop 68704 in travel_hubs (typicality 3): a place where trips start, stop or change
+  new entry: heliport 68705 noun, common, familiarity 3: a place where trips start, stop or change
+  linked: heliport 68705 in travel_hubs (typicality 3): a place where trips start, stop or change
+  new entry: border crossing 68706 noun, common, familiarity 2: a place where trips start, stop or change
+  linked: border crossing 68706 in travel_hubs (typicality 4): a place where trips start, stop or change
+  new entry: aerodrome 68707 noun, common, familiarity 4: an old word for an airfield
+  linked: aerodrome 68707 in travel_hubs (typicality 4): an old word for an airfield
+  new entry: way station 68708 noun, common, familiarity 4: a stop between main stops
+  linked: way station 68708 in travel_hubs (typicality 5): a stop between main stops
+  group in travel_hubs: port 48887 = seaport 47512: a word and its more specific form: one answer
+  group in travel_hubs: airfield 66821 = aerodrome 68707: the same answer
+9. on a train
+  new theme: on_a_train "on a train" under trains (after station_words), pop 2, ident 2: no theme had it; a sibling in kind of on a bus and in-flight words
+  linked: seat 46905 [vehicle] in on_a_train (typicality 1): what a passenger finds on a train
+  linked: window 46909 [vehicle] in on_a_train (typicality 1): what a passenger finds on a train
+  linked: conductor 2862 [transport] in on_a_train (typicality 1): what a passenger finds on a train
+  linked: ticket 46940 [transport] in on_a_train (typicality 1): what a passenger finds on a train
+  linked: passenger 2663 [traveler] in on_a_train (typicality 1): what a passenger finds on a train
+  linked: luggage rack 46910 in on_a_train (typicality 2): what a passenger finds on a train
+  linked: dining car 2883 in on_a_train (typicality 2): what a passenger finds on a train
+  linked: aisle 46908 [vehicle] in on_a_train (typicality 2): what a passenger finds on a train
+  linked: first class 38233 [cabin] in on_a_train (typicality 2): what a passenger finds on a train
+  linked: next stop 46985 in on_a_train (typicality 2): what a passenger finds on a train
+  linked: table 4663 [furniture] in on_a_train (typicality 3): what a passenger finds on a train
+  linked: emergency brake 46812 in on_a_train (typicality 3): what a passenger finds on a train
+  linked: announcement 47321 in on_a_train (typicality 3): what a passenger finds on a train
+  linked: Wi-Fi 7296 in on_a_train (typicality 3): what a passenger finds on a train
+  linked: sleeper car 2880 in on_a_train (typicality 3): what a passenger finds on a train
+  linked: corridor 6562 in on_a_train (typicality 3): what a passenger finds on a train
+  linked: reservation 46960 [seat] in on_a_train (typicality 3): what a passenger finds on a train
+  linked: reading light 47323 in on_a_train (typicality 4): what a passenger finds on a train
+  linked: tray table 2761 in on_a_train (typicality 4): what a passenger finds on a train
+  linked: curtain 12242 in on_a_train (typicality 5): what a passenger finds on a train
+  linked: restroom 27904 in on_a_train (typicality 4): what a passenger finds on a train
+  linked: headrest 46927 in on_a_train (typicality 4): what a passenger finds on a train
+  linked: newspaper 4567 in on_a_train (typicality 4): what a passenger finds on a train
+  linked: observation car 47687 in on_a_train (typicality 4): what a passenger finds on a train
+  linked: inspector 46964 [ticket] in on_a_train (typicality 4): what a passenger finds on a train
+  linked: berth 23460 [bed] in on_a_train (typicality 4): what a passenger finds on a train
+  linked: whistle 2875 [train] in on_a_train (typicality 4): what a passenger finds on a train
+  linked: tunnel 2886 [train] in on_a_train (typicality 4): what a passenger finds on a train
+  new entry: compartment 68709 noun, common, familiarity 2: a closed set of seats
+  linked: compartment 68709 in on_a_train (typicality 2): a closed set of seats
+  new entry: scenery 68710 noun, common, familiarity 1: what passengers look out at
+  linked: scenery 68710 in on_a_train (typicality 3): what passengers look out at
+  kin: scenery 68710 <-> scene 6373: one word family
+  new entry: quiet car 68711 noun, common, familiarity 3: what a passenger finds on a train
+  linked: quiet car 68711 in on_a_train (typicality 3): what a passenger finds on a train
+  new entry: snack cart 68712 noun, common, familiarity 2: what a passenger finds on a train
+  linked: snack cart 68712 in on_a_train (typicality 3): what a passenger finds on a train
+  new entry: bunk 68713 [bed] noun, common, familiarity 2: a bed on a sleeper; bunk [nonsense] is another word
+  linked: bunk 68713 [bed] in on_a_train (typicality 4): a bed on a sleeper; bunk [nonsense] is another word
+  new entry: couchette 68714 noun, common, familiarity 5: a fold-down bed on a European train
+  linked: couchette 68714 in on_a_train (typicality 4): a fold-down bed on a European train
+  group in on_a_train: bunk 68713 = berth 23460: the same answer: a bed on a train
+  group in on_a_train: table 4663 = tray table 2761: a word and its more specific form: one answer
+10. on the subway
+  new theme: on_the_subway "on the subway" under public_transportation (after on_a_bus), pop 2, ident 2: no theme had it
+  linked: train 39524 [vehicle] in on_the_subway (typicality 1): a thing of the subway
+  linked: platform 2857 [station] in on_the_subway (typicality 1): a thing of the subway
+  linked: station 2492 [train] in on_the_subway (typicality 1): a thing of the subway
+  linked: turnstile 2664 in on_the_subway (typicality 1): a thing of the subway
+  linked: escalator 29567 in on_the_subway (typicality 2): a thing of the subway
+  linked: rush hour 2668 in on_the_subway (typicality 2): a thing of the subway
+  linked: commuter 2662 [traveller] in on_the_subway (typicality 2): a thing of the subway
+  linked: seat 46905 [vehicle] in on_the_subway (typicality 2): a thing of the subway
+  linked: tunnel 2886 [train] in on_the_subway (typicality 2): a thing of the subway
+  linked: fare 2658 [transport] in on_the_subway (typicality 2): a thing of the subway
+  linked: map 2395 [chart of places] in on_the_subway (typicality 2): a thing of the subway
+  linked: stairs 24068 [house] in on_the_subway (typicality 2): a thing of the subway
+  linked: next stop 46985 in on_the_subway (typicality 2): a thing of the subway
+  linked: mind the gap 46983 in on_the_subway (typicality 2): a thing of the subway
+  linked: token 2694 [transit] in on_the_subway (typicality 3): a thing of the subway
+  linked: busker 6160 in on_the_subway (typicality 3): a thing of the subway
+  linked: pole 46926 [vehicle] in on_the_subway (typicality 3): a thing of the subway
+  linked: strap 46907 [handhold] in on_the_subway (typicality 3): a thing of the subway
+  linked: transfer 2695 [transit] in on_the_subway (typicality 3): a thing of the subway
+  linked: MetroCard 46966 in on_the_subway (typicality 3): a thing of the subway
+  linked: Oyster card 46967 in on_the_subway (typicality 3): a thing of the subway
+  linked: announcement 47321 in on_the_subway (typicality 3): a thing of the subway
+  linked: graffiti 6333 in on_the_subway (typicality 3): a thing of the subway
+  linked: express 2865 [train] in on_the_subway (typicality 3): a thing of the subway
+  linked: ticket machine 40239 in on_the_subway (typicality 3): a thing of the subway
+  linked: crowd 35500 [people] in on_the_subway (typicality 3): a thing of the subway
+  linked: delay 46975 [transport] in on_the_subway (typicality 3): a thing of the subway
+  linked: third rail 47701 in on_the_subway (typicality 4): a thing of the subway
+  linked: straphanger 46994 in on_the_subway (typicality 4): a thing of the subway
+  linked: rat 992 [animal] in on_the_subway (typicality 4): a thing of the subway
+  linked: newspaper 4567 in on_the_subway (typicality 4): a thing of the subway
+  linked: conductor 2862 [transport] in on_the_subway (typicality 4): a thing of the subway
+  linked: yellow line 47728 in on_the_subway (typicality 4): a thing of the subway
+  linked: handrail 24299 in on_the_subway (typicality 4): a thing of the subway
+  linked: emergency brake 46812 in on_the_subway (typicality 4): a thing of the subway
+  linked: stand clear 46984 in on_the_subway (typicality 4): a thing of the subway
+  linked: poster 4564 in on_the_subway (typicality 4): a thing of the subway
+  linked: headphones 7330 in on_the_subway (typicality 4): a thing of the subway
+  linked: tile 24041 [building] in on_the_subway (typicality 5): a thing of the subway
+  new entry: line 68715 [route] noun, common, familiarity 1: a colored route on the map; line [geometry] and [fishing] are others
+  linked: line 68715 [route] in on_the_subway (typicality 2): a colored route on the map; line [geometry] and [fishing] are others
+  kin: line 68715 [route] <-> line 41555 [geometry]: one word family, as line [geometry]
+  kin: line 68715 [route] <-> liner 2836 [ship]: one word family, as line [geometry]
+  kin: line 68715 [route] <-> lining 24956 [clothing]: one word family, as line [geometry]
+  kin: line 68715 [route] <-> lines 33811 [school punishment]: one word family, as line [geometry]
+  kin: line 68715 [route] <-> lining 67250 [shoe]: one word family, as line [geometry]
+11. taxi ride
+  new theme: taxi_ride "taxi ride" under public_transportation (after taxis_of_the_world), pop 2, ident 2: no theme had it; taxis of the world holds the vehicles
+  linked: taximeter 40266 in taxi_ride (typicality 1, shown "meter"): what adds up the fare
+  linked: fare 2658 [transport] in taxi_ride (typicality 1): a thing of a taxi ride
+  linked: tip 20015 [gratuity] in taxi_ride (typicality 1): a thing of a taxi ride
+  linked: driver 2566 [vehicle] in taxi_ride (typicality 1): a thing of a taxi ride
+  linked: back seat 48275 in taxi_ride (typicality 1): a thing of a taxi ride
+  linked: passenger 2663 [traveler] in taxi_ride (typicality 1): a thing of a taxi ride
+  linked: yellow cab 47008 in taxi_ride (typicality 1): a thing of a taxi ride
+  linked: receipt 23290 in taxi_ride (typicality 2): a thing of a taxi ride
+  linked: black cab 47009 in taxi_ride (typicality 2): a thing of a taxi ride
+  linked: cash 23285 in taxi_ride (typicality 2): a thing of a taxi ride
+  linked: cabbie 4115 in taxi_ride (typicality 2): a thing of a taxi ride
+  linked: shortcut 46998 [route] in taxi_ride (typicality 3): a thing of a taxi ride
+  linked: traffic light 38368 in taxi_ride (typicality 3): a thing of a taxi ride
+  linked: rush hour 2668 in taxi_ride (typicality 3): a thing of a taxi ride
+  linked: small talk 35417 in taxi_ride (typicality 3): a thing of a taxi ride
+  linked: traffic jam 38385 in taxi_ride (typicality 3): a thing of a taxi ride
+  linked: GPS 2415 in taxi_ride (typicality 3): a thing of a taxi ride
+  linked: app 7265 in taxi_ride (typicality 3): a thing of a taxi ride
+  linked: license plate 2581 in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: seat belt 2569 in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: luggage 47150 [airport] in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: whistle 16992 [with lips] in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: air freshener 23395 in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: minicab 47030 in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: curb 46806 [street] in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: trunk 2577 [car] in taxi_ride (typicality 4): a thing of a taxi ride
+  linked: detour 2940 in taxi_ride (typicality 4): a thing of a taxi ride
+  new entry: destination 68716 noun, common, familiarity 1: where the ride ends
+  linked: destination 68716 in taxi_ride (typicality 1): where the ride ends
+  new entry: drop-off 68717 noun, common, familiarity 2: a thing of a taxi ride
+  linked: drop-off 68717 in taxi_ride (typicality 2): a thing of a taxi ride
+  new entry: pickup 68718 [ride] noun, common, familiarity 2: where the ride starts
+  linked: pickup 68718 [ride] in taxi_ride (typicality 2): where the ride starts
+  new entry: hail 68719 [flag down] verb, common, familiarity 2: to wave a cab down
+  linked: hail 68719 [flag down] in taxi_ride (typicality 2): to wave a cab down
+  new entry: flat rate 68720 noun, common, familiarity 3: a fixed price
+  linked: flat rate 68720 in taxi_ride (typicality 3): a fixed price
+  new entry: surge pricing 68721 noun, common, familiarity 3: the higher price at busy times
+  linked: surge pricing 68721 in taxi_ride (typicality 3): the higher price at busy times
+  new entry: keep the change 68722 other, phrase, familiarity 2: said when tipping
+  linked: keep the change 68722 in taxi_ride (typicality 3): said when tipping
+  new entry: partition 68723 noun, common, familiarity 3: the screen behind the driver
+  linked: partition 68723 in taxi_ride (typicality 4): the screen behind the driver
+  new entry: star rating 68724 noun, common, familiarity 2: given to the driver
+  linked: star rating 68724 in taxi_ride (typicality 4): given to the driver
+  new entry: medallion 68725 [taxi] noun, common, familiarity 5: a New York cab's license
+  linked: medallion 68725 [taxi] in taxi_ride (typicality 5): a New York cab's license
+12. airport security
+  new theme: airport_security "airport security" under airport (after people_at_an_airport), pop 2, ident 2: no theme had it; a sub-theme of airport beside people at an airport
+  linked: metal detector 6897 in airport_security (typicality 1): a thing of the airport checkpoint
+  linked: X-ray machine 15191 in airport_security (typicality 1): a thing of the airport checkpoint
+  linked: boarding pass 2719 in airport_security (typicality 2): a thing of the airport checkpoint
+  linked: passport 48763 in airport_security (typicality 2): a thing of the airport checkpoint
+  linked: belt 4943 [clothing] in airport_security (typicality 2): a thing of the airport checkpoint
+  linked: shoes 23349 in airport_security (typicality 2): a thing of the airport checkpoint
+  linked: laptop 7251 [portable computer] in airport_security (typicality 2): a thing of the airport checkpoint
+  linked: queue 35405 [line] in airport_security (typicality 3): a thing of the airport checkpoint
+  linked: sniffer dog 9459 in airport_security (typicality 2): a thing of the airport checkpoint
+  linked: ID card 23294 in airport_security (typicality 3): a thing of the airport checkpoint
+  linked: plastic bag 66541 in airport_security (typicality 3): a thing of the airport checkpoint
+  linked: conveyor belt 38199 in airport_security (typicality 3): a thing of the airport checkpoint
+  linked: water bottle 19921 in airport_security (typicality 3): a thing of the airport checkpoint
+  linked: jacket 4871 [coat] in airport_security (typicality 3): a thing of the airport checkpoint
+  linked: gloves 4956 in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: swab 67358 [medical] in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: fingerprint 4225 in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: scissors 5026 in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: pocketknife 3046 in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: coin 21717 [money] in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: key 25699 [lock] in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: toothpaste 3730 in airport_security (typicality 4): a thing of the airport checkpoint
+  linked: security officer 47176 [airport] in airport_security (typicality 2, shown "officer"): who checks the bags
+  new entry: body scanner 68726 noun, common, familiarity 2: a thing of the airport checkpoint
+  linked: body scanner 68726 in airport_security (typicality 1): a thing of the airport checkpoint
+  new entry: tray 68727 noun, common, familiarity 1: where belongings go through
+  linked: tray 68727 in airport_security (typicality 2): where belongings go through
+  new entry: pat-down 68728 noun, common, familiarity 2: a search by hand
+  linked: pat-down 68728 in airport_security (typicality 2): a search by hand
+  new entry: checkpoint 68729 [security] noun, common, familiarity 2: where travelers are checked; checkpoint [game] is another
+  linked: checkpoint 68729 [security] in airport_security (typicality 2): where travelers are checked; checkpoint [game] is another
+  new entry: TSA 68730 noun, acronym, familiarity 2: the US agency
+  linked: TSA 68730 in airport_security (typicality 2): the US agency
+  new entry: wand 68731 [scanner] noun, common, familiarity 2: a hand-held scanner; wand [magic] is another
+  linked: wand 68731 [scanner] in airport_security (typicality 3): a hand-held scanner; wand [magic] is another
+  new entry: bag search 68732 noun, common, familiarity 2: a thing of the airport checkpoint
+  linked: bag search 68732 in airport_security (typicality 3): a thing of the airport checkpoint
+  new entry: random search 68733 noun, common, familiarity 2: a thing of the airport checkpoint
+  linked: random search 68733 in airport_security (typicality 3): a thing of the airport checkpoint
+  new entry: no-fly list 68734 noun, common, familiarity 3: a thing of the airport checkpoint
+  linked: no-fly list 68734 in airport_security (typicality 4): a thing of the airport checkpoint
+  new entry: contraband 68735 noun, common, familiarity 3: what may not go through
+  linked: contraband 68735 in airport_security (typicality 4): what may not go through
+  new entry: facial recognition 68736 noun, common, familiarity 3: a thing of the airport checkpoint
+  linked: facial recognition 68736 in airport_security (typicality 4): a thing of the airport checkpoint
+  new entry: biometrics 68737 noun, common, familiarity 4: fingerprint and face checks
+  linked: biometrics 68737 in airport_security (typicality 4): fingerprint and face checks
+  kin: biometrics 68737 <-> biometric 42543: one word family
+  new entry: liquids 68738 [form] noun, common, familiarity 1, form alias of liquid 40460: the plural, as in the rule on liquids
+  linked: liquid 40460 [state of matter] in airport_security (typicality 2): only small bottles may go through
+  liquid 40460 in airport_security: shows its form liquids 68738 (use): the rule speaks of liquids
+13. in a hotel room
+  new theme: in_a_hotel_room "in a hotel room" under accommodation (after room_types), pop 2, ident 3: no theme had it; hotel holds the things of the whole hotel
+  linked: bed 3666 in in_a_hotel_room (typicality 1): a thing found in a hotel room
+  linked: minibar 48318 in in_a_hotel_room (typicality 1): a thing found in a hotel room
+  linked: television 4572 in in_a_hotel_room (typicality 1): a thing found in a hotel room
+  linked: do not disturb 48321 [hotel sign] in in_a_hotel_room (typicality 1): a thing found in a hotel room
+  linked: safe 48325 [room safe] in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: kettle 4730 [appliance] in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: hair dryer 3767 in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: towel 3755 [bath cloth] in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: bathrobe 4888 in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: coffee maker 4732 in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: remote 6390 [tv] in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: pillow 3667 [bedding] in in_a_hotel_room (typicality 2): a thing found in a hotel room
+  linked: iron 25760 [appliance] in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: slippers 34144 [footwear] in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: desk 4479 [furniture] in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: lamp 34150 [light] in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: telephone 40165 [device] in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: closet 23462 [storage] in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: notepad 23219 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: alarm clock 3685 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: luggage rack 46910 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: ironing board 23554 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: shower cap 16156 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: air conditioner 4737 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: shampoo 3727 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: soap 3726 [wash] in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: nightstand 4676 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: ice bucket 66841 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: bottled water 23399 in in_a_hotel_room (typicality 3): a thing found in a hotel room
+  linked: menu 26281 [restaurant] in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: armchair 337 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: sewing kit 5034 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: peephole 24113 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: trouser press 23367 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: Bible 4290 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: bathtub 16268 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: balcony 6559 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: bedspread 16033 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: headboard 16053 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: blackout curtains 55237 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: laundry bag 48769 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: tea bag 40243 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: smoke detector 24277 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: thermostat 23575 in in_a_hotel_room (typicality 4): a thing found in a hotel room
+  linked: deadbolt 24114 in in_a_hotel_room (typicality 5): a thing found in a hotel room
+  new entry: shoehorn 68739 noun, common, familiarity 3: a thing found in a hotel room
+  linked: shoehorn 68739 in in_a_hotel_room (typicality 5): a thing found in a hotel room
+14. on a cruise ship
+  new theme: on_a_cruise_ship "on a cruise ship" under cruise_words (after cruise_lines), pop 2, ident 3: no theme had it; cruise words holds the words of a cruise
+  linked: swimming pool 40120 in on_a_cruise_ship (typicality 1): a place or thing on board
+  linked: casino 29326 in on_a_cruise_ship (typicality 1): a place or thing on board
+  linked: buffet 28646 [meal] in on_a_cruise_ship (typicality 1): a place or thing on board
+  linked: cabin 48886 [ship] in on_a_cruise_ship (typicality 1): a place or thing on board
+  linked: theater 2480 in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: spa 48324 [hotel] in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: gym 44162 [venue] in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: water slide 57627 in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: sun deck 66632 in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: hot tub 16539 in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: restaurant 29271 in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: lifeboat 2791 in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: deck chair 30738 in on_a_cruise_ship (typicality 2): a place or thing on board
+  linked: mini golf 5274 in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: climbing wall 46083 [playground] in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: gift shop 12144 in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: arcade 29328 [game room] in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: sauna 16537 in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: shuffleboard 5278 in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: balcony 6559 in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: bridge 2834 [ship] in on_a_cruise_ship (typicality 3): a place or thing on board
+  linked: library 2471 [building] in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: ice rink 39043 in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: basketball court 44164 in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: ballroom 29060 in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: zip line 46079 in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: infirmary 20874 in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: atrium 6558 [building] in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: duty-free shop 66574 in on_a_cruise_ship (typicality 4): a place or thing on board
+  linked: lido deck 48891 in on_a_cruise_ship (typicality 3): a place or thing on board
+  new entry: nightclub 68740 noun, common, familiarity 1: a place or thing on board
+  linked: nightclub 68740 in on_a_cruise_ship (typicality 2): a place or thing on board
+  new entry: kids' club 68741 noun, common, familiarity 3: a place or thing on board
+  linked: kids' club 68741 in on_a_cruise_ship (typicality 3): a place or thing on board
+  new entry: piano bar 68742 noun, common, familiarity 3: a place or thing on board
+  linked: piano bar 68742 in on_a_cruise_ship (typicality 3): a place or thing on board
+  new entry: jogging track 68743 noun, common, familiarity 2: a place or thing on board
+  linked: jogging track 68743 in on_a_cruise_ship (typicality 4): a place or thing on board
+  new entry: beauty salon 68744 noun, common, familiarity 2: a place or thing on board
+  linked: beauty salon 68744 in on_a_cruise_ship (typicality 4): a place or thing on board
+  new entry: karaoke bar 68745 noun, common, familiarity 2: a place or thing on board
+  linked: karaoke bar 68745 in on_a_cruise_ship (typicality 4): a place or thing on board
+  new entry: muster station 68746 noun, common, familiarity 4: where passengers gather in an emergency
+  linked: muster station 68746 in on_a_cruise_ship (typicality 4): where passengers gather in an emergency
+  new entry: solarium 68747 noun, common, familiarity 4: a glass-roofed deck
+  linked: solarium 68747 in on_a_cruise_ship (typicality 5): a glass-roofed deck
+15. summer camp
+  new theme: summer_camp "summer camp" under vacations (after ski_trip), pop 2, ident 2: no theme had it
+  linked: cabin 119 [building] in summer_camp (typicality 1): a thing of summer camp
+  linked: bunk bed 3708 in summer_camp (typicality 1): a thing of summer camp
+  linked: canoe 2781 in summer_camp (typicality 1): a thing of summer camp
+  linked: campfire 3024 [outdoor fire] in summer_camp (typicality 1): a thing of summer camp
+  linked: archery 5248 in summer_camp (typicality 2): a thing of summer camp
+  linked: s'more 3040 in summer_camp (typicality 2): a thing of summer camp
+  linked: friendship bracelet 45861 in summer_camp (typicality 2): a thing of summer camp
+  linked: lake 1909 in summer_camp (typicality 2): a thing of summer camp
+  linked: swimming 5290 in summer_camp (typicality 2): a thing of summer camp
+  linked: hiking 5604 [outdoor activity] in summer_camp (typicality 2): a thing of summer camp
+  linked: sleeping bag 3025 in summer_camp (typicality 2): a thing of summer camp
+  linked: marshmallow 611 in summer_camp (typicality 2): a thing of summer camp
+  linked: capture the flag 46120 in summer_camp (typicality 3): a thing of summer camp
+  linked: sing-along 48311 in summer_camp (typicality 3): a thing of summer camp
+  linked: tie-dye 5885 in summer_camp (typicality 3): a thing of summer camp
+  linked: mess hall 4422 in summer_camp (typicality 3): a thing of summer camp
+  linked: homesickness 4044 in summer_camp (typicality 3): a thing of summer camp
+  linked: talent show 12610 in summer_camp (typicality 3): a thing of summer camp
+  linked: tug of war 44072 in summer_camp (typicality 3): a thing of summer camp
+  linked: kayak 2782 in summer_camp (typicality 3): a thing of summer camp
+  linked: scavenger hunt 46102 in summer_camp (typicality 3): a thing of summer camp
+  linked: bug spray 3052 in summer_camp (typicality 3): a thing of summer camp
+  linked: flashlight 3028 in summer_camp (typicality 3): a thing of summer camp
+  linked: whistle 48630 [safety] in summer_camp (typicality 4): a thing of summer camp
+  linked: lanyard 4999 in summer_camp (typicality 4): a thing of summer camp
+  linked: bugle 297 [instrument] in summer_camp (typicality 4): a thing of summer camp
+  linked: relay race 46123 in summer_camp (typicality 4): a thing of summer camp
+  linked: poison ivy 30614 [plant] in summer_camp (typicality 4): a thing of summer camp
+  linked: flagpole 37969 in summer_camp (typicality 4): a thing of summer camp
+  linked: obstacle course 46191 in summer_camp (typicality 4): a thing of summer camp
+  linked: reveille 4469 in summer_camp (typicality 5): a thing of summer camp
+  new entry: ghost story 68748 noun, common, familiarity 1: told round the fire
+  linked: ghost story 68748 in summer_camp (typicality 2): told round the fire
+  new entry: arts and crafts 68749 noun, common, familiarity 1: a thing of summer camp
+  linked: arts and crafts 68749 in summer_camp (typicality 2): a thing of summer camp
+  new entry: care package 68750 noun, common, familiarity 2: sent from home
+  linked: care package 68750 in summer_camp (typicality 3): sent from home
+  new entry: mosquito bite 68751 noun, common, familiarity 1: a thing of summer camp
+  linked: mosquito bite 68751 in summer_camp (typicality 3): a thing of summer camp
+  new entry: rope swing 68752 noun, common, familiarity 2: a thing of summer camp
+  linked: rope swing 68752 in summer_camp (typicality 4): a thing of summer camp
+  new entry: nature walk 68753 noun, common, familiarity 2: a thing of summer camp
+  linked: nature walk 68753 in summer_camp (typicality 4): a thing of summer camp
+  new entry: bunkmate 68754 noun, common, familiarity 3: a thing of summer camp
+  linked: bunkmate 68754 in summer_camp (typicality 4): a thing of summer camp
+  new entry: cookout 68755 noun, common, familiarity 2: a thing of summer camp
+  linked: cookout 68755 in summer_camp (typicality 4): a thing of summer camp
+  new entry: ropes course 68756 noun, common, familiarity 3: a thing of summer camp
+  linked: ropes course 68756 in summer_camp (typicality 4): a thing of summer camp
+  new entry: prank 68757 noun, common, familiarity 1: a thing of summer camp
+  linked: prank 68757 in summer_camp (typicality 4): a thing of summer camp
+  new entry: trust fall 68758 noun, common, familiarity 3: a thing of summer camp
+  linked: trust fall 68758 in summer_camp (typicality 4): a thing of summer camp
+  new entry: color war 68759 noun, common, familiarity 4: a camp-wide team contest (US)
+  linked: color war 68759 in summer_camp (typicality 4): a camp-wide team contest (US)
+16. travel trouble
+  new theme: travel_trouble "travel trouble" under journeys (after arduous_trips), pop 2, ident 2: no theme had it
+  linked: delay 47149 [flight] in travel_trouble (typicality 1): what can go wrong on a trip
+  linked: jet lag 2720 in travel_trouble (typicality 2): what can go wrong on a trip
+  linked: traffic jam 38385 in travel_trouble (typicality 2): what can go wrong on a trip
+  linked: overbooking 2758 in travel_trouble (typicality 2): what can go wrong on a trip
+  linked: sunburn 14337 in travel_trouble (typicality 3): what can go wrong on a trip
+  linked: food poisoning 3412 in travel_trouble (typicality 3): what can go wrong on a trip
+  linked: flat tire 47991 in travel_trouble (typicality 3): what can go wrong on a trip
+  linked: turbulence 2721 in travel_trouble (typicality 3): what can go wrong on a trip
+  linked: homesickness 4044 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: scam 42549 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: theft 33625 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: strike 35333 [labor] in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: altitude sickness 45094 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: stomach bug 3413 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: tourist trap 48914 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: bedbug 1395 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: red tape 39856 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: gridlock 38386 in travel_trouble (typicality 4): what can go wrong on a trip
+  linked: blister 14331 [skin bubble] in travel_trouble (typicality 5): what can go wrong on a trip
+  new entry: lost luggage 68760 noun, common, familiarity 1: what can go wrong on a trip
+  linked: lost luggage 68760 in travel_trouble (typicality 1): what can go wrong on a trip
+  new entry: missed flight 68761 noun, common, familiarity 1: what can go wrong on a trip
+  linked: missed flight 68761 in travel_trouble (typicality 1): what can go wrong on a trip
+  new entry: lost passport 68762 noun, common, familiarity 1: what can go wrong on a trip
+  linked: lost passport 68762 in travel_trouble (typicality 1): what can go wrong on a trip
+  new entry: cancellation 68763 [flight] noun, common, familiarity 2: of a flight or train; cancellation [postal] is another
+  linked: cancellation 68763 [flight] in travel_trouble (typicality 2): of a flight or train; cancellation [postal] is another
+  new entry: pickpocket 68764 noun, common, familiarity 2: what can go wrong on a trip
+  linked: pickpocket 68764 in travel_trouble (typicality 2): what can go wrong on a trip
+  kin: pickpocket 68764 <-> pickpocketing 33649: one word family
+  new entry: language barrier 68765 noun, common, familiarity 2: what can go wrong on a trip
+  linked: language barrier 68765 in travel_trouble (typicality 2): what can go wrong on a trip
+  new entry: missed connection 68766 noun, common, familiarity 2: what can go wrong on a trip
+  linked: missed connection 68766 in travel_trouble (typicality 2): what can go wrong on a trip
+  new entry: motion sickness 68767 noun, common, familiarity 2: what can go wrong on a trip
+  linked: motion sickness 68767 in travel_trouble (typicality 2): what can go wrong on a trip
+  new entry: seasickness 68768 noun, common, familiarity 2: what can go wrong on a trip
+  linked: seasickness 68768 in travel_trouble (typicality 3): what can go wrong on a trip
+  new entry: car sickness 68769 noun, common, familiarity 2: what can go wrong on a trip
+  linked: car sickness 68769 in travel_trouble (typicality 3): what can go wrong on a trip
+  new entry: bad weather 68770 noun, common, familiarity 1: what can go wrong on a trip
+  linked: bad weather 68770 in travel_trouble (typicality 3): what can go wrong on a trip
+  new entry: culture shock 68771 noun, common, familiarity 2: what can go wrong on a trip
+  linked: culture shock 68771 in travel_trouble (typicality 3): what can go wrong on a trip
+  new entry: hidden fees 68772 noun, common, familiarity 2: what can go wrong on a trip
+  linked: hidden fees 68772 in travel_trouble (typicality 3): what can go wrong on a trip
+  new entry: wrong turn 68773 noun, common, familiarity 1: what can go wrong on a trip
+  linked: wrong turn 68773 in travel_trouble (typicality 3): what can go wrong on a trip
+  new entry: volcanic ash 68774 noun, common, familiarity 3: it grounded planes in 2010
+  linked: volcanic ash 68774 in travel_trouble (typicality 5): it grounded planes in 2010
+  linked: breakdown 68657 in travel_trouble (typicality 3): what can go wrong on a trip
+  linked: mosquito bite 68751 in travel_trouble (typicality 4): what can go wrong on a trip
+  kin: seasickness 68768 <-> seasick 66642: one word family
+  kin: cancellation 68763 [flight] <-> cancellation 61355 [postal]: one word in two senses
+  group in travel_trouble: motion sickness 68767 = seasickness 68768 = car sickness 68769: a word and its more specific forms: one answer
+17. winter vehicles
+  new theme: winter_vehicles "winter vehicles" under special_vehicles (after electric_vehicles), pop 3, ident 2: no theme had it; polar vehicles (Antarctic research base) holds 10 polar ones, 5 of them here too
+  linked: snowmobile 3139 in winter_vehicles (typicality 1): a vehicle for snow or ice
+  linked: snowplow 3094 [vehicle] in winter_vehicles (typicality 1): a vehicle for snow or ice
+  linked: sled 48885 [snow] in winter_vehicles (typicality 1): a vehicle for snow or ice
+  linked: sleigh 25016 [Santa's ride] in winter_vehicles (typicality 2): a vehicle for snow or ice
+  linked: toboggan 29486 [sled] in winter_vehicles (typicality 2): a vehicle for snow or ice
+  linked: dog sled 48228 in winter_vehicles (typicality 2): a vehicle for snow or ice
+  linked: bobsled 5351 in winter_vehicles (typicality 2): a vehicle for snow or ice
+  linked: snowcat 49889 in winter_vehicles (typicality 3): a vehicle for snow or ice
+  linked: luge 5353 in winter_vehicles (typicality 3): a vehicle for snow or ice
+  linked: Zamboni 3130 in winter_vehicles (typicality 3): a vehicle for snow or ice
+  linked: reindeer sleigh 48234 in winter_vehicles (typicality 3): a vehicle for snow or ice
+  linked: icebreaker 59146 in winter_vehicles (typicality 3): a vehicle for snow or ice
+  linked: skeleton 5354 [sled sport] in winter_vehicles (typicality 4): a vehicle for snow or ice
+  linked: snow groomer 57624 in winter_vehicles (typicality 4): a vehicle for snow or ice
+  linked: ice resurfacer 3131 in winter_vehicles (typicality 4): a vehicle for snow or ice
+  linked: troika 48239 in winter_vehicles (typicality 4): a vehicle for snow or ice
+  linked: ski plane 49903 in winter_vehicles (typicality 4): a vehicle for snow or ice
+  linked: snow tractor 49907 in winter_vehicles (typicality 4): a vehicle for snow or ice
+  new entry: salt truck 68775 noun, common, familiarity 2: it spreads salt on icy roads (US)
+  linked: salt truck 68775 in winter_vehicles (typicality 2): it spreads salt on icy roads (US)
+  new entry: gritter 68776 noun, common, familiarity 3, regional alias of salt truck 68775 [UK]: the UK word
+  new entry: snow tube 68777 noun, common, familiarity 2: an inflated ring for sliding
+  linked: snow tube 68777 in winter_vehicles (typicality 3): an inflated ring for sliding
+  new entry: snowbike 68778 noun, common, familiarity 3: a bike on skis
+  linked: snowbike 68778 in winter_vehicles (typicality 4): a bike on skis
+  kin: snowbike 68778 <-> snowbiking 61599: one word family
+  new entry: snow coach 68779 noun, common, familiarity 4: a bus on tracks
+  linked: snow coach 68779 in winter_vehicles (typicality 4): a bus on tracks
+  new entry: ice yacht 68780 noun, common, familiarity 4: a sailing boat on runners
+  linked: ice yacht 68780 in winter_vehicles (typicality 4): a sailing boat on runners
+  new entry: iceboat 68781 noun, common, familiarity 4, synonym alias of ice yacht 68780: another name
+  new entry: kicksled 68782 noun, common, familiarity 5: a Nordic sled pushed by foot
+  linked: kicksled 68782 in winter_vehicles (typicality 4): a Nordic sled pushed by foot
+  new entry: pulka 68783 noun, common, familiarity 5: a low Nordic sled pulled by a skier
+  linked: pulka 68783 in winter_vehicles (typicality 5): a low Nordic sled pulled by a skier
+  group in winter_vehicles: Zamboni 3130 = ice resurfacer 3131: the same answer: the ice rink machine
+  group in winter_vehicles: snowcat 49889 = snow groomer 57624: the same answer: the machine that grooms slopes
+  group in winter_vehicles: sleigh 25016 = reindeer sleigh 48234: a word and its more specific form: one answer
+  group in winter_vehicles: sled 48885 = dog sled 48228: a word and its more specific form: one answer
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  airport_security: new -> "airport security" pop 2 ident 2: 36 words, easy/middle/hard 14/10/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  car_trouble: new -> "car trouble" pop 2 ident 2: 31 words, easy/middle/hard 9/10/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  car_wash: new -> "car wash" pop 3 ident 2: 34 words, easy/middle/hard 11/9/14, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  in_a_glove_box: new -> "in a glove box" pop 3 ident 3: 35 words, easy/middle/hard 9/12/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  in_a_hotel_room: new -> "in a hotel room" pop 2 ident 3: 46 words, easy/middle/hard 12/17/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  learning_to_drive: new -> "learning to drive" pop 3 ident 2: 34 words, easy/middle/hard 13/11/10, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  modes_of_transport: "modes of transport" pop 1 ident 1: 34 words, easy/middle/hard 16/8/10, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "modes of transport" pop 1 ident 1: 34 words, easy/middle/hard 15/9/10, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  on_a_cruise_ship: new -> "on a cruise ship" pop 2 ident 3: 38 words, easy/middle/hard 14/10/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  on_a_train: new -> "on a train" pop 2 ident 2: 34 words, easy/middle/hard 11/10/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  on_the_subway: new -> "on the subway" pop 2 ident 2: 40 words, easy/middle/hard 13/15/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  roadwork: new -> "roadwork" pop 3 ident 2: 38 words, easy/middle/hard 13/11/14, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  summer_camp: new -> "summer camp" pop 2 ident 2: 43 words, easy/middle/hard 14/13/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  taxi_ride: new -> "taxi ride" pop 2 ident 2: 37 words, easy/middle/hard 13/12/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  travel_hubs: new -> "travel hubs" pop 3 ident 2: 32 words, easy/middle/hard 8/10/14, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  travel_trouble: new -> "travel trouble" pop 2 ident 2: 36 words, easy/middle/hard 11/12/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  two_wheelers: new -> "two-wheelers" pop 2 ident 2: 30 words, easy/middle/hard 8/10/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  winter_vehicles: new -> "winter vehicles" pop 3 ident 2: 25 words, easy/middle/hard 8/6/11, theme difficulty 2, 4th-easiest band 2, gap 0.0
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 135: wax 68649, drive-through 68650, blower 68651, detailing 68652, undercarriage 68653, degreaser 68654, tire shine 68655, clay bar 68656, breakdown 68657, dead battery 68658, overheating 68659, oil leak 68660, engine failure 68661, cracked windshield 68662, blowout 68663, blown fuse 68664, dent 68665, squeaky brakes 68666, brake failure 68667, bald tire 68668, blown gasket 68669, fuel leak 68670, slipping clutch 68671, misfire 68672, flooded engine 68673, engine knock 68674, scratch 68675, out of gas 68676, locked out 68677, written test 68678, theory test 68679, learner's permit 68680, emergency stop 68681, brake pedal 68682, lane change 68683, examiner 68684, L-plate 68685, dual controls 68686, hill start 68687, right of way 68688, Highway Code 68689, biting point 68690, provisional license 68691, provisional licence 68692, barrier 68693, lane closure 68694, resurfacing 68695, arrow board 68696, owner's manual 68697, registration 68698, parking permit 68699, ketchup packet 68700, valve cap 68701, dandy horse 68702, subway station 68703, tram stop 68704, heliport 68705, border crossing 68706, aerodrome 68707, way station 68708, compartment 68709, scenery 68710, quiet car 68711, snack cart 68712, bunk 68713, couchette 68714, line 68715, destination 68716, drop-off 68717, pickup 68718, hail 68719, flat rate 68720, surge pricing 68721, keep the change 68722, partition 68723, star rating 68724, medallion 68725, body scanner 68726, tray 68727, pat-down 68728, checkpoint 68729, TSA 68730, wand 68731, bag search 68732, random search 68733, no-fly list 68734, contraband 68735, facial recognition 68736, biometrics 68737, liquids 68738, shoehorn 68739, nightclub 68740, kids' club 68741, piano bar 68742, jogging track 68743, beauty salon 68744, karaoke bar 68745, muster station 68746, solarium 68747, ghost story 68748, arts and crafts 68749, care package 68750, mosquito bite 68751, rope swing 68752, nature walk 68753, bunkmate 68754, cookout 68755, ropes course 68756, prank 68757, trust fall 68758, color war 68759, lost luggage 68760, missed flight 68761, lost passport 68762, cancellation 68763, pickpocket 68764, language barrier 68765, missed connection 68766, motion sickness 68767, seasickness 68768, car sickness 68769, bad weather 68770, culture shock 68771, hidden fees 68772, wrong turn 68773, volcanic ash 68774, salt truck 68775, gritter 68776, snow tube 68777, snowbike 68778, snow coach 68779, ice yacht 68780, iceboat 68781, kicksled 68782, pulka 68783
+Entries deleted 0: none
+library changes 1072; entries changed 570; status set to rev 301; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 404 -> 414, info:overlap 4812 -> 4814, info:rating-vs-zipf 1679 -> 1681, warn:rating-vs-zipf 160 -> 161
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): contract-root-region 1418 -> 1427; after: contract-dup-root 170, contract-root-region 1427
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3189 -> 3205; gone none; new airport_security, roadwork, car_trouble, learning_to_drive, car_wash, on_the_subway, taxi_ride, on_a_train, two_wheelers, travel_trouble, in_a_hotel_room, summer_camp, on_a_cruise_ship, winter_vehicles, travel_hubs, in_a_glove_box; theme indexes shift: from index 907 ("airport_security", was "museum") to the last index 3204
+Theme rows whose fields changed (parent compared by id): 1: modes_of_transport (index 1110 -> 1124: counts [7,9,8,7,3] -> [7,8,9,7,3])
+Entry rows 61166 -> 61305; first row whose entry changed: 13347 (taxi rank 13899, was nightcap 13901); rows that moved: 47819; added taxi rank 13899 (row 13347), theft 33625 (row 30855), rank 63911 (row 58353), taxi stand 67180 (row 59739), wax 68649 (row 61170), drive-through 68650 (row 61171), blower 68651 (row 61172), detailing 68652 (row 61173), undercarriage 68653 (row 61174), degreaser 68654 (row 61175), tire shine 68655 (row 61176), clay bar 68656 (row 61177), breakdown 68657 (row 61178), dead battery 68658 (row 61179), overheating 68659 (row 61180), oil leak 68660 (row 61181), engine failure 68661 (row 61182), cracked windshield 68662 (row 61183), blowout 68663 (row 61184), blown fuse 68664 (row 61185), dent 68665 (row 61186), squeaky brakes 68666 (row 61187), brake failure 68667 (row 61188), bald tire 68668 (row 61189), blown gasket 68669 (row 61190), fuel leak 68670 (row 61191), slipping clutch 68671 (row 61192), misfire 68672 (row 61193), flooded engine 68673 (row 61194), engine knock 68674 (row 61195), scratch 68675 (row 61196), out of gas 68676 (row 61197), locked out 68677 (row 61198), written test 68678 (row 61199), theory test 68679 (row 61200), learner's permit 68680 (row 61201), emergency stop 68681 (row 61202), brake pedal 68682 (row 61203), lane change 68683 (row 61204), examiner 68684 (row 61205), L-plate 68685 (row 61206), dual controls 68686 (row 61207), hill start 68687 (row 61208), right of way 68688 (row 61209), Highway Code 68689 (row 61210), biting point 68690 (row 61211), provisional license 68691 (row 61212), provisional licence 68692 (row 61213), barrier 68693 (row 61214), lane closure 68694 (row 61215), resurfacing 68695 (row 61216), arrow board 68696 (row 61217), owner's manual 68697 (row 61218), registration 68698 (row 61219), parking permit 68699 (row 61220), ketchup packet 68700 (row 61221), valve cap 68701 (row 61222), dandy horse 68702 (row 61223), subway station 68703 (row 61224), tram stop 68704 (row 61225), heliport 68705 (row 61226), border crossing 68706 (row 61227), aerodrome 68707 (row 61228), way station 68708 (row 61229), compartment 68709 (row 61230), scenery 68710 (row 61231), quiet car 68711 (row 61232), snack cart 68712 (row 61233), bunk 68713 (row 61234), couchette 68714 (row 61235), line 68715 (row 61236), destination 68716 (row 61237), drop-off 68717 (row 61238), pickup 68718 (row 61239), hail 68719 (row 61240), flat rate 68720 (row 61241), surge pricing 68721 (row 61242), keep the change 68722 (row 61243), partition 68723 (row 61244), star rating 68724 (row 61245), medallion 68725 (row 61246), body scanner 68726 (row 61247), tray 68727 (row 61248), pat-down 68728 (row 61249), checkpoint 68729 (row 61250), TSA 68730 (row 61251), wand 68731 (row 61252), bag search 68732 (row 61253), random search 68733 (row 61254), no-fly list 68734 (row 61255), contraband 68735 (row 61256), facial recognition 68736 (row 61257), biometrics 68737 (row 61258), liquids 68738 (row 61259), shoehorn 68739 (row 61260), nightclub 68740 (row 61261), kids' club 68741 (row 61262), piano bar 68742 (row 61263), jogging track 68743 (row 61264), beauty salon 68744 (row 61265), karaoke bar 68745 (row 61266), muster station 68746 (row 61267), solarium 68747 (row 61268), ghost story 68748 (row 61269), arts and crafts 68749 (row 61270), care package 68750 (row 61271), mosquito bite 68751 (row 61272), rope swing 68752 (row 61273), nature walk 68753 (row 61274), bunkmate 68754 (row 61275), cookout 68755 (row 61276), ropes course 68756 (row 61277), prank 68757 (row 61278), trust fall 68758 (row 61279), color war 68759 (row 61280), lost luggage 68760 (row 61281), missed flight 68761 (row 61282), lost passport 68762 (row 61283), cancellation 68763 (row 61284), pickpocket 68764 (row 61285), language barrier 68765 (row 61286), missed connection 68766 (row 61287), motion sickness 68767 (row 61288), seasickness 68768 (row 61289), car sickness 68769 (row 61290), bad weather 68770 (row 61291), culture shock 68771 (row 61292), hidden fees 68772 (row 61293), wrong turn 68773 (row 61294), volcanic ash 68774 (row 61295), salt truck 68775 (row 61296), gritter 68776 (row 61297), snow tube 68777 (row 61298), snowbike 68778 (row 61299), snow coach 68779 (row 61300), ice yacht 68780 (row 61301), iceboat 68781 (row 61302), kicksled 68782 (row 61303), pulka 68783 (row 61304); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 98016 -> 98585; rows whose link count changed: 408
+Link-index shifts: from row 119 (villa 120) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 1, new 570, rating changed 0
+  gone (other than the deleted themes): modes_of_transport: "horse" (153)
+  new: summer_camp: "cabin" (119), summer_camp: "bugle" (297), in_a_glove_box: "screwdriver" (317), in_a_hotel_room: "armchair" (337), in_a_glove_box: "candy" (607), summer_camp: "marshmallow" (611), car_wash: "water" (861), on_the_subway: "rat" (992), travel_trouble: "bedbug" (1395), car_wash: "hose" (1844), roadwork: "shovel" (1850), summer_camp: "lake" (1909), roadwork: "gravel" (2053), on_the_subway: "map" (2395), in_a_glove_box: "road map" (2404), taxi_ride: "GPS" (2415), on_a_cruise_ship: "library" (2471), on_a_cruise_ship: "theater" (2480), travel_hubs: "depot" (2482), on_the_subway: "station" (2492), travel_hubs: "caravanserai" (2520), taxi_ride: "driver" (2566), learning_to_drive: "steering wheel" (2568), learning_to_drive: "seat belt" (2569), taxi_ride: "seat belt" (2569), car_wash: "windshield" (2575), taxi_ride: "trunk" (2577), taxi_ride: "license plate" (2581), learning_to_drive: "rearview mirror" (2594), car_trouble: "fender bender" (2641), travel_hubs: "bus stop" (2656), travel_hubs: "bus station" (2657), on_the_subway: "fare" (2658), taxi_ride: "fare" (2658), on_the_subway: "commuter" (2662), on_a_train: "passenger" (2663), taxi_ride: "passenger" (2663), on_the_subway: "turnstile" (2664), on_the_subway: "rush hour" (2668), taxi_ride: "rush hour" (2668), travel_hubs: "park and ride" (2677), travel_hubs: "terminus" (2680), two_wheelers: "rickshaw" (2684), on_the_subway: "token" (2694), on_the_subway: "transfer" (2695), travel_hubs: "interchange" (2696), travel_hubs: "airport" (2715), airport_security: "boarding pass" (2719), travel_trouble: "jet lag" (2720), travel_trouble: "turbulence" (2721), travel_hubs: "airstrip" (2748), travel_trouble: "overbooking" (2758), on_a_train: "tray table" (2761), summer_camp: "canoe" (2781), summer_camp: "kayak" (2782), on_a_cruise_ship: "lifeboat" (2791), travel_hubs: "harbor" (2804), travel_hubs: "dock" (2806), travel_hubs: "pier" (2807), on_a_cruise_ship: "bridge" (2834), on_the_subway: "platform" (2857), on_a_train: "conductor" (2862), on_the_subway: "conductor" (2862), on_the_subway: "express" (2865), on_a_train: "whistle" (2875), on_a_train: "sleeper car" (2880), on_a_train: "dining car" (2883), on_a_train: "tunnel" (2886), on_the_subway: "tunnel" (2886), roadwork: "detour" (2940), taxi_ride: "detour" (2940), summer_camp: "campfire" (3024), summer_camp: "sleeping bag" (3025), in_a_glove_box: "flashlight" (3028), summer_camp: "flashlight" (3028), summer_camp: "s'more" (3040), airport_security: "pocketknife" (3046), summer_camp: "bug spray" (3052), winter_vehicles: "snowplow" (3094), roadwork: "digger" (3102), roadwork: "dump truck" (3105), roadwork: "cement mixer" (3108), roadwork: "backhoe" (3127), roadwork: "steamroller" (3128), winter_vehicles: "Zamboni" (3130), winter_vehicles: "ice resurfacer" (3131), winter_vehicles: "snowmobile" (3139), roadwork: "grader" (3148), travel_trouble: "food poisoning" (3412), travel_trouble: "stomach bug" (3413), in_a_hotel_room: "bed" (3666), in_a_hotel_room: "pillow" (3667), in_a_hotel_room: "alarm clock" (3685), summer_camp: "bunk bed" (3708), car_wash: "soap" (3726), in_a_hotel_room: "soap" (3726), car_wash: "shampoo" (3727), in_a_hotel_room: "shampoo" (3727), airport_security: "toothpaste" (3730), in_a_glove_box: "sunscreen" (3745), in_a_glove_box: "hairbrush" (3754), car_wash: "towel" (3755), in_a_hotel_room: "towel" (3755), in_a_hotel_room: "hair dryer" (3767), in_a_glove_box: "lip balm" (3777), in_a_glove_box: "hand cream" (3782), learning_to_drive: "nerves" (3990), summer_camp: "homesickness" (4044), travel_trouble: "homesickness" (4044), taxi_ride: "cabbie" (4115), roadwork: "surveyor" (4164), airport_security: "fingerprint" (4225), in_a_glove_box: "parking ticket" (4227), in_a_hotel_room: "Bible" (4290), summer_camp: "mess hall" (4422), summer_camp: "reveille" (4469), in_a_hotel_room: "desk" (4479), in_a_glove_box: "notebook" (4504), on_the_subway: "poster" (4564), on_a_train: "newspaper" (4567), on_the_subway: "newspaper" (4567), in_a_hotel_room: "television" (4572), on_a_train: "table" (4663), in_a_hotel_room: "nightstand" (4676), in_a_hotel_room: "kettle" (4730), in_a_hotel_room: "coffee maker" (4732), car_wash: "vacuum" (4735), in_a_hotel_room: "air conditioner" (4737), roadwork: "drill" (4799), airport_security: "jacket" (4871), in_a_hotel_room: "bathrobe" (4888), airport_security: "belt" (4943), in_a_glove_box: "sunglasses" (4952), airport_security: "gloves" (4956), summer_camp: "lanyard" (4999), airport_security: "scissors" (5026), in_a_hotel_room: "sewing kit" (5034), summer_camp: "archery" (5248), on_a_cruise_ship: "mini golf" (5274), on_a_cruise_ship: "shuffleboard" (5278), summer_camp: "swimming" (5290), winter_vehicles: "bobsled" (5351), winter_vehicles: "luge" (5353), winter_vehicles: "skeleton" (5354), summer_camp: "hiking" (5604), summer_camp: "tie-dye" (5885), two_wheelers: "scooter" (5954), on_the_subway: "busker" (6160), on_the_subway: "graffiti" (6333), in_a_hotel_room: "remote" (6390), on_a_cruise_ship: "atrium" (6558), in_a_hotel_room: "balcony" (6559), on_a_cruise_ship: "balcony" (6559), on_a_train: "corridor" (6562), airport_security: "metal detector" (6897), airport_security: "laptop" (7251), taxi_ride: "app" (7265), on_a_train: "Wi-Fi" (7296), on_the_subway: "headphones" (7330), two_wheelers: "Segway" (7356), two_wheelers: "hoverboard" (7369), two_wheelers: "e-scooter" (7370), roadwork: "concrete" (7396), airport_security: "sniffer dog" (9459), on_a_cruise_ship: "gift shop" (12144), on_a_train: "curtain" (12242), summer_camp: "talent show" (12610), travel_trouble: "blister" (14331), travel_trouble: "sunburn" (14337), airport_security: "X-ray machine" (15191), in_a_glove_box: "hand sanitizer" (15322), in_a_glove_box: "first aid kit" (15344), in_a_hotel_room: "bedspread" (16033), in_a_hotel_room: "headboard" (16053), in_a_hotel_room: "shower cap" (16156), in_a_hotel_room: "bathtub" (16268), car_wash: "foam" (16291), car_wash: "lather" (16343), on_a_cruise_ship: "sauna" (16537), on_a_cruise_ship: "hot tub" (16539), car_trouble: "steam" (16570), taxi_ride: "whistle" (16992), airport_security: "water bottle" (19921), in_a_glove_box: "napkin" (19926), in_a_glove_box: "wet wipes" (19944), taxi_ride: "tip" (20015), two_wheelers: "chariot" (20383), on_a_cruise_ship: "infirmary" (20874), roadwork: "trench" (21689), airport_security: "coin" (21717), two_wheelers: "hansom cab" (22973), two_wheelers: "bicycle" (23154), roadwork: "dust" (23180), in_a_hotel_room: "notepad" (23219), in_a_glove_box: "spare keys" (23265), in_a_glove_box: "loose change" (23276), taxi_ride: "cash" (23285), in_a_glove_box: "receipt" (23290), taxi_ride: "receipt" (23290), airport_security: "ID card" (23294), in_a_glove_box: "insurance card" (23302), in_a_glove_box: "mints" (23317), in_a_glove_box: "chewing gum" (23326), in_a_glove_box: "reading glasses" (23330), airport_security: "shoes" (23349), in_a_hotel_room: "trouser press" (23367), car_wash: "bucket" (23378), car_wash: "air freshener" (23395), taxi_ride: "air freshener" (23395), in_a_hotel_room: "bottled water" (23399), on_a_train: "berth" (23460), in_a_hotel_room: "closet" (23462), car_wash: "pressure washer" (23545), in_a_hotel_room: "ironing board" (23554), in_a_glove_box: "phone charger" (23572), in_a_hotel_room: "thermostat" (23575), roadwork: "jackhammer" (23693), car_wash: "sponge" (23835), car_wash: "microfiber cloth" (23845), car_wash: "rinse" (23860), car_wash: "polish" (23861), car_wash: "buff" (23874), car_wash: "detergent" (23882), car_wash: "suds" (24004), on_the_subway: "tile" (24041), roadwork: "bitumen" (24060), on_the_subway: "stairs" (24068), in_a_hotel_room: "peephole" (24113), in_a_hotel_room: "deadbolt" (24114), two_wheelers: "hand truck" (24258), in_a_hotel_room: "smoke detector" (24277), on_the_subway: "handrail" (24299), roadwork: "hard hat" (24454), winter_vehicles: "sleigh" (25016), in_a_glove_box: "tissue" (25548), in_a_glove_box: "multitool" (25623), airport_security: "key" (25699), in_a_hotel_room: "iron" (25760), roadwork: "pickaxe" (25774), in_a_hotel_room: "menu" (26281), roadwork: "tarmac" (27387), on_a_train: "restroom" (27904), car_wash: "mud" (28051), on_a_cruise_ship: "buffet" (28646), car_wash: "spray" (28689), on_a_cruise_ship: "ballroom" (29060), on_a_cruise_ship: "restaurant" (29271), on_a_cruise_ship: "casino" (29326), on_a_cruise_ship: "arcade" (29328), winter_vehicles: "toboggan" (29486), on_the_subway: "escalator" (29567), two_wheelers: "moped" (29601), car_trouble: "smoke" (30277), summer_camp: "poison ivy" (30614), on_a_cruise_ship: "deck chair" (30738), roadwork: "rubble" (31770), travel_hubs: "rest stop" (32122), travel_trouble: "theft" (33625), in_a_hotel_room: "slippers" (34144), in_a_hotel_room: "lamp" (34150), in_a_glove_box: "pen" (34758), learning_to_drive: "pass" (34832), learning_to_drive: "fail" (34833), travel_trouble: "strike" (35333), airport_security: "queue" (35405), taxi_ride: "small talk" (35417), on_the_subway: "crowd" (35500), summer_camp: "flagpole" (37969), car_wash: "conveyor belt" (38199), airport_security: "conveyor belt" (38199), on_a_train: "first class" (38233), taxi_ride: "traffic light" (38368), roadwork: "traffic jam" (38385), taxi_ride: "traffic jam" (38385), travel_trouble: "traffic jam" (38385), travel_trouble: "gridlock" (38386), learning_to_drive: "speed limit" (38396), roadwork: "contraflow" (38406), learning_to_drive: "traffic cone" (38409), roadwork: "traffic cone" (38409), roadwork: "manhole" (38422), roadwork: "asphalt" (38434), roadwork: "pothole" (38435), on_a_cruise_ship: "ice rink" (39043), roadwork: "tar" (39066), on_the_subway: "train" (39524), car_trouble: "rattle" (39637), travel_trouble: "red tape" (39856), two_wheelers: "ox cart" (39859), car_wash: "hubcap" (39999), learning_to_drive: "stop sign" (40080), car_trouble: "rust" (40083), on_a_cruise_ship: "swimming pool" (40120), in_a_hotel_room: "telephone" (40165), two_wheelers: "motorcycle" (40174), two_wheelers: "penny-farthing" (40180), two_wheelers: "velocipede" (40183), two_wheelers: "gig" (40184), on_the_subway: "ticket machine" (40239), in_a_hotel_room: "tea bag" (40243), taxi_ride: "meter" (40266), two_wheelers: "folding bike" (40277), airport_security: "liquids" (40460), in_a_glove_box: "fuse" (40676), travel_hubs: "spaceport" (41353), in_a_glove_box: "tire gauge" (41855), travel_trouble: "scam" (42549), two_wheelers: "BMX" (44069), summer_camp: "tug of war" (44072), on_a_cruise_ship: "gym" (44162), on_a_cruise_ship: "basketball court" (44164), travel_trouble: "altitude sickness" (45094), summer_camp: "friendship bracelet" (45861), on_a_cruise_ship: "zip line" (46079), on_a_cruise_ship: "climbing wall" (46083), summer_camp: "scavenger hunt" (46102), summer_camp: "capture the flag" (46120), summer_camp: "relay race" (46123), summer_camp: "obstacle course" (46191), learning_to_drive: "gas pedal" (46601), learning_to_drive: "gearshift" (46605), learning_to_drive: "clutch" (46607), learning_to_drive: "reverse" (46659), learning_to_drive: "three-point turn" (46662), car_trouble: "stall" (46665), learning_to_drive: "stall" (46665), learning_to_drive: "turn signal" (46674), car_wash: "nozzle" (46758), car_wash: "squeegee" (46778), learning_to_drive: "parallel parking" (46797), learning_to_drive: "curb" (46806), taxi_ride: "curb" (46806), on_a_train: "emergency brake" (46812), on_the_subway: "emergency brake" (46812), in_a_glove_box: "ice scraper" (46868), on_a_train: "seat" (46905), on_the_subway: "seat" (46905), on_the_subway: "strap" (46907), on_a_train: "aisle" (46908), on_a_train: "window" (46909), on_a_train: "luggage rack" (46910), in_a_hotel_room: "luggage rack" (46910), on_the_subway: "pole" (46926), on_a_train: "headrest" (46927), on_a_train: "ticket" (46940), on_a_train: "reservation" (46960), on_a_train: "inspector" (46964), on_the_subway: "MetroCard" (46966), on_the_subway: "Oyster card" (46967), roadwork: "delay" (46975), on_the_subway: "delay" (46975), on_the_subway: "mind the gap" (46983), on_the_subway: "stand clear" (46984), on_a_train: "next stop" (46985), on_the_subway: "next stop" (46985), on_the_subway: "straphanger" (46994), taxi_ride: "shortcut" (46998), taxi_ride: "yellow cab" (47008), taxi_ride: "black cab" (47009), taxi_ride: "minicab" (47030), travel_trouble: "delay" (47149), taxi_ride: "luggage" (47150), travel_hubs: "helipad" (47153), airport_security: "officer" (47176), on_a_train: "announcement" (47321), on_the_subway: "announcement" (47321), on_a_train: "reading light" (47323), travel_hubs: "quay" (47489), travel_hubs: "wharf" (47491), travel_hubs: "marina" (47492), travel_hubs: "ferry terminal" (47506), travel_hubs: "cruise terminal" (47507), travel_hubs: "seaport" (47512), on_a_train: "observation car" (47687), on_the_subway: "third rail" (47701), on_the_subway: "yellow line" (47728), roadwork: "flagman" (47839), two_wheelers: "tandem" (47885), two_wheelers: "electric bike" (47886), two_wheelers: "racing bike" (47888), two_wheelers: "balance bike" (47893), two_wheelers: "bone shaker" (47906), two_wheelers: "dirt bike" (47936), two_wheelers: "superbike" (47942), two_wheelers: "minibike" (47949), car_trouble: "flat tire" (47991), travel_trouble: "flat tire" (47991), winter_vehicles: "dog sled" (48228), modes_of_transport: "horseback" (48230), winter_vehicles: "reindeer sleigh" (48234), two_wheelers: "pony cart" (48235), winter_vehicles: "troika" (48239), taxi_ride: "back seat" (48275), travel_hubs: "truck stop" (48281), summer_camp: "sing-along" (48311), in_a_hotel_room: "minibar" (48318), in_a_hotel_room: "do not disturb" (48321), on_a_cruise_ship: "spa" (48324), in_a_hotel_room: "safe" (48325), summer_camp: "whistle" (48630), airport_security: "passport" (48763), in_a_hotel_room: "laundry bag" (48769), winter_vehicles: "sled" (48885), on_a_cruise_ship: "cabin" (48886), travel_hubs: "port" (48887), on_a_cruise_ship: "lido deck" (48891), travel_trouble: "tourist trap" (48914), roadwork: "paver" (49047), two_wheelers: "dogcart" (49173), car_trouble: "backfire" (49204), winter_vehicles: "snowcat" (49889), winter_vehicles: "ski plane" (49903), winter_vehicles: "snow tractor" (49907), two_wheelers: "sulky" (50129), learning_to_drive: "blind spot" (50161), car_wash: "chamois" (50180), in_a_hotel_room: "blackout curtains" (55237), roadwork: "high-vis vest" (57550), learning_to_drive: "instructor" (57621), winter_vehicles: "snow groomer" (57624), on_a_cruise_ship: "water slide" (57627), travel_hubs: "train station" (57667), car_trouble: "warning light" (58998), car_trouble: "check engine light" (59008), winter_vehicles: "icebreaker" (59146), roadwork: "barricade" (61414), in_a_glove_box: "garage door opener" (61492), two_wheelers: "mountain bike" (62668), roadwork: "floodlight" (66333), roadwork: "sandbag" (66528), airport_security: "plastic bag" (66541), on_a_cruise_ship: "duty-free shop" (66574), on_a_cruise_ship: "sun deck" (66632), learning_to_drive: "hand signal" (66751), travel_hubs: "airfield" (66821), in_a_hotel_room: "ice bucket" (66841), travel_hubs: "taxi stand" (67180), airport_security: "swab" (67358), car_wash: "wax" (68649), car_wash: "drive-through" (68650), car_wash: "blower" (68651), car_wash: "detailing" (68652), car_wash: "undercarriage" (68653), car_wash: "degreaser" (68654), car_wash: "tire shine" (68655), car_wash: "clay bar" (68656), car_trouble: "breakdown" (68657), travel_trouble: "breakdown" (68657), car_trouble: "dead battery" (68658), car_trouble: "overheating" (68659), car_trouble: "oil leak" (68660), car_trouble: "engine failure" (68661), car_trouble: "cracked windshield" (68662), car_trouble: "blowout" (68663), car_trouble: "blown fuse" (68664), car_trouble: "dent" (68665), car_trouble: "squeaky brakes" (68666), car_trouble: "brake failure" (68667), car_trouble: "bald tire" (68668), car_trouble: "blown gasket" (68669), car_trouble: "fuel leak" (68670), car_trouble: "slipping clutch" (68671), car_trouble: "misfire" (68672), car_trouble: "flooded engine" (68673), car_trouble: "engine knock" (68674), car_trouble: "scratch" (68675), car_trouble: "out of gas" (68676), car_trouble: "locked out" (68677), learning_to_drive: "written test" (68678), learning_to_drive: "learner's permit" (68680), learning_to_drive: "emergency stop" (68681), learning_to_drive: "brake pedal" (68682), learning_to_drive: "lane change" (68683), learning_to_drive: "examiner" (68684), learning_to_drive: "L-plate" (68685), learning_to_drive: "dual controls" (68686), learning_to_drive: "hill start" (68687), learning_to_drive: "right of way" (68688), learning_to_drive: "Highway Code" (68689), learning_to_drive: "biting point" (68690), learning_to_drive: "provisional license" (68691), roadwork: "barrier" (68693), roadwork: "lane closure" (68694), roadwork: "resurfacing" (68695), roadwork: "arrow board" (68696), in_a_glove_box: "owner's manual" (68697), in_a_glove_box: "registration" (68698), in_a_glove_box: "parking permit" (68699), in_a_glove_box: "ketchup packet" (68700), in_a_glove_box: "valve cap" (68701), two_wheelers: "dandy horse" (68702), travel_hubs: "subway station" (68703), travel_hubs: "tram stop" (68704), travel_hubs: "heliport" (68705), travel_hubs: "border crossing" (68706), travel_hubs: "aerodrome" (68707), travel_hubs: "way station" (68708), on_a_train: "compartment" (68709), on_a_train: "scenery" (68710), on_a_train: "quiet car" (68711), on_a_train: "snack cart" (68712), on_a_train: "bunk" (68713), on_a_train: "couchette" (68714), on_the_subway: "line" (68715), taxi_ride: "destination" (68716), taxi_ride: "drop-off" (68717), taxi_ride: "pickup" (68718), taxi_ride: "hail" (68719), taxi_ride: "flat rate" (68720), taxi_ride: "surge pricing" (68721), taxi_ride: "keep the change" (68722), taxi_ride: "partition" (68723), taxi_ride: "star rating" (68724), taxi_ride: "medallion" (68725), airport_security: "body scanner" (68726), airport_security: "tray" (68727), airport_security: "pat-down" (68728), airport_security: "checkpoint" (68729), airport_security: "TSA" (68730), airport_security: "wand" (68731), airport_security: "bag search" (68732), airport_security: "random search" (68733), airport_security: "no-fly list" (68734), airport_security: "contraband" (68735), airport_security: "facial recognition" (68736), airport_security: "biometrics" (68737), in_a_hotel_room: "shoehorn" (68739), on_a_cruise_ship: "nightclub" (68740), on_a_cruise_ship: "kids' club" (68741), on_a_cruise_ship: "piano bar" (68742), on_a_cruise_ship: "jogging track" (68743), on_a_cruise_ship: "beauty salon" (68744), on_a_cruise_ship: "karaoke bar" (68745), on_a_cruise_ship: "muster station" (68746), on_a_cruise_ship: "solarium" (68747), summer_camp: "ghost story" (68748), summer_camp: "arts and crafts" (68749), summer_camp: "care package" (68750), summer_camp: "mosquito bite" (68751), travel_trouble: "mosquito bite" (68751), summer_camp: "rope swing" (68752), summer_camp: "nature walk" (68753), summer_camp: "bunkmate" (68754), summer_camp: "cookout" (68755), summer_camp: "ropes course" (68756), summer_camp: "prank" (68757), summer_camp: "trust fall" (68758), summer_camp: "color war" (68759), travel_trouble: "lost luggage" (68760), travel_trouble: "missed flight" (68761), travel_trouble: "lost passport" (68762), travel_trouble: "cancellation" (68763), travel_trouble: "pickpocket" (68764), travel_trouble: "language barrier" (68765), travel_trouble: "missed connection" (68766), travel_trouble: "motion sickness" (68767), travel_trouble: "seasickness" (68768), travel_trouble: "car sickness" (68769), travel_trouble: "bad weather" (68770), travel_trouble: "culture shock" (68771), travel_trouble: "hidden fees" (68772), travel_trouble: "wrong turn" (68773), travel_trouble: "volcanic ash" (68774), winter_vehicles: "salt truck" (68775), winter_vehicles: "snow tube" (68777), winter_vehicles: "snowbike" (68778), winter_vehicles: "snow coach" (68779), winter_vehicles: "ice yacht" (68780), winter_vehicles: "kicksled" (68782), winter_vehicles: "pulka" (68783)
+  rating: none
+new issues: warn rating-vs-zipf: entry 68768
+
+Why these themes (gap check of Travel & Transport, 2026-11-24):
+  - All 170 themes of the group were read, and each candidate was compared with every theme of the library. The 16 had no theme, under these names or others; the closest overlaps before drafting were two-wheelers / bike types (39% of the smaller) and in a glove box / in a pocket (36%).
+  - Two-wheelers, travel hubs and roadwork are categories of rival games (tools/gen/category-research on branch julia-category-fixes).
+  - No theme with these names existed in any of the 202 library versions, and no batch notice removes one.
+  - Spread (LIBRARY-RULES 3.7): harder words that belong were added (clay bar, engine knock, biting point, arrow board, dandy horse, aerodrome, couchette, medallion, biometrics, muster station, color war, volcanic ash, pulka).
+
+Considered and left out:
+  - summer camp: camp counselor (its alias camp counsellor holds "camp"); taps (sensitive, played at funerals).
+  - learning to drive: driving test, student driver, driving school (they repeat the theme name); stick shift.
+  - roadwork: road crew, work zone, roadworks words that repeat the name.
+  - taxi ride: traffic as a new entry (contract-dup-root 170 -> 171 beside Traffic [band]); traffic jam and traffic light are there.
+  - two-wheelers: chopper (the entry is the helicopter), Harley-Davidson and Vespa (brands beside their generic word).
+  - winter vehicles: snow blower, ski lift, skis, snowboard (not vehicles).
+  - airport security: security guard (repeats the name); profiling.
+
+For Simon:
+  1. Size: 16 new themes. Drop any you find too narrow; the weakest is winter vehicles (25 words; polar vehicles shares 5: snowmobile, sled, snowcat, snow tractor, ski plane).
+  2. seasickness is rated familiarity 2, one step easier than its frequency suggests (rating-vs-zipf, outside the gate); seasick is 1.
+  3. learning to drive mixes UK and US words (L-plate, Highway Code and biting point are tagged UK; learner's permit US, CA, AU).
+  4. wand [scanner] is not kin with wand [magic]: that clash group would reach 13.
+  5. Four entries whose only themes were adult are now exported (taxi stand with its aliases taxi rank and rank, and theft).
+  6. modes of transport: v460 linked horse; horseback replaces it, following your v438 decision on animal-powered travel.
+
+=== Notice to _WS_ for v461 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v461 (Travel & Transport, gap check, part 2): 16 new themes, 570 new links, 135 new entries (130 roots, 5 aliases; listed above).
+- car wash, car trouble, learning to drive (under cars); two-wheelers (bikes and boards); on a train (trains); on the subway, taxi ride (public transport words); travel hubs (Travel & Transport); travel trouble (journeys); in a hotel room (accommodation); on a cruise ship (cruise words); summer camp (vacations); winter vehicles (special vehicles); roadwork (Places & Geography, streets and roads); airport security (Places & Geography, airport); in a glove box (Home & Everyday, where things are kept).
+- Spread easy/middle/hard of each is in the list above; each is near a third each, and no theme is more than 0.5 below its 4th-easiest usable word.
+- modes of transport: horseback replaces horse (linked in v460).
+- Glosses changed on 12 entries whose text is now used more widely or shared (seat, window, aisle and pole [vehicle]; announcement, instructor and sing-along without a gloss; checkpoint [game]; wand [magic]; medallion [jewelry]; right of way [fencing]; undercarriage [aircraft]).
+Theme rows 3189 -> 3205; theme indexes shift from index 907 (airport_security, was museum) on.
+Entry rows 61166 -> 61305: taxi rank 13899, theft 33625, rank 63911 and taxi stand 67180 are newly exported (their only themes were adult), so rows move from 13347 on; the other new rows are at the end. Link positions move from row 119 on.
+Line breaks: 23 words added (data/breaks-en.txt).
+New characters: none.

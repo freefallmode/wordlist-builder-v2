@@ -349,7 +349,8 @@ linkL('safari_words', [[980, 'giraffe', 1], [981, 'zebra', 1], [987, 'hippo', 2]
 sec('4. Ways of getting around');
 linkL('cycling_words', [[44295, 'Tour de France', 1], [28433, 'pedal', 2], [7384, 'gear', 3], [46190, 'sprint', 3], [44009, 'finish line', 3]], 'a word every rider or fan uses; the theme had 2 easy words of 35');
 if (E(46190).typ.cycling_words !== undefined) addToGroup('cycling_words', [46190, 48000], 'a word and its more specific form (LIBRARY-RULES 5, overlap): one answer');
-linkL('modes_of_transport', [[153, 'horse', 2], [2785, 'rowboat', 3], [2670, 'monorail', 3], [2684, 'rickshaw', 3]], 'a way of getting around; the theme had 5 middle words of 30');
+// v461 replaced horse with horseback: not linked again on a rerun
+linkL('modes_of_transport', [...((ix.byText.get('horseback') || []).some(e => e.typ?.modes_of_transport !== undefined) ? [] : [[153, 'horse', 2]]), [2785, 'rowboat', 3], [2670, 'monorail', 3], [2684, 'rickshaw', 3]], 'a way of getting around; the theme had 5 middle words of 30');
 linkL('boats_and_ships', [[34583, 'deck', 2], [4380, 'sailor', 2], [43422, 'oar', 2], [28003, 'paddle', 3]], 'a basic word of boats and ships; it was not linked');
 linkL('trains', [[2663, 'passenger', 1], [2054, 'coal', 3], [16570, 'steam', 3]], 'a basic word of trains; it was not linked');
 { const rail = newEntry('rail', 'train track', { ...noun, fam: 1 }, 'the steel bar trains run on; rail [surfing] and [skate park] are other senses'); linkE(rail, 'trains', 2, 'what trains run on'); }

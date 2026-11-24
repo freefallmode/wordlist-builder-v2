@@ -1,0 +1,22 @@
+Why these themes (gap check of Travel & Transport, 2026-11-24):
+  - All 170 themes of the group were read, and each candidate was compared with every theme of the library. The 16 had no theme, under these names or others; the closest overlaps before drafting were two-wheelers / bike types (39% of the smaller) and in a glove box / in a pocket (36%).
+  - Two-wheelers, travel hubs and roadwork are categories of rival games (tools/gen/category-research on branch julia-category-fixes).
+  - No theme with these names existed in any of the 202 library versions, and no batch notice removes one.
+  - Spread (LIBRARY-RULES 3.7): harder words that belong were added (clay bar, engine knock, biting point, arrow board, dandy horse, aerodrome, couchette, medallion, biometrics, muster station, color war, volcanic ash, pulka).
+
+Considered and left out:
+  - summer camp: camp counselor (its alias camp counsellor holds "camp"); taps (sensitive, played at funerals).
+  - learning to drive: driving test, student driver, driving school (they repeat the theme name); stick shift.
+  - roadwork: road crew, work zone, roadworks words that repeat the name.
+  - taxi ride: traffic as a new entry (contract-dup-root 170 -> 171 beside Traffic [band]); traffic jam and traffic light are there.
+  - two-wheelers: chopper (the entry is the helicopter), Harley-Davidson and Vespa (brands beside their generic word).
+  - winter vehicles: snow blower, ski lift, skis, snowboard (not vehicles).
+  - airport security: security guard (repeats the name); profiling.
+
+For Simon:
+  1. Size: 16 new themes. Drop any you find too narrow; the weakest is winter vehicles (25 words; polar vehicles shares 5: snowmobile, sled, snowcat, snow tractor, ski plane).
+  2. seasickness is rated familiarity 2, one step easier than its frequency suggests (rating-vs-zipf, outside the gate); seasick is 1.
+  3. learning to drive mixes UK and US words (L-plate, Highway Code and biting point are tagged UK; learner's permit US, CA, AU).
+  4. wand [scanner] is not kin with wand [magic]: that clash group would reach 13.
+  5. Four entries whose only themes were adult are now exported (taxi stand with its aliases taxi rank and rank, and theft).
+  6. modes of transport: v460 linked horse; horseback replaces it, following your v438 decision on animal-powered travel.
