@@ -1,0 +1,30 @@
+Library batch v454: small items closed after the tidy-up (Simon, 2026-11-24): Brigid in Celtic folklore is the goddess; "squaw" on the offensive list (no library change); föhn checked (no change).
+1. Brigid in Celtic folklore is the goddess (the saint keeps famous saints and Celts)
+  linked: Brigid 22223 [goddess] in celtic_folklore (typicality 4): the goddess Brigid is the figure of Celtic folklore (reviewer, v453); same typicality as the saint had
+  out of celtic_folklore: Brigid 20671 [saint]: the saint of Kildare is history, not folklore; the goddess entry 22223 takes the link (stays in celts, famous_saints)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  celtic_folklore: "Celtic folklore" pop 3 ident 3: 35 words, easy/middle/hard 3/2/30, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "Celtic folklore" pop 3 ident 3: 35 words, easy/middle/hard 3/2/30, theme difficulty 3, 4th-easiest band 3, gap 0.0
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 4; entries changed 2; status set to rev 2
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1423
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3190 -> 3190; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61133 -> 61133; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Links 97891 -> 97891; rows whose link count changed: 2
+Link-index shifts: from row 19416 (Pict 20672) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 1, new 1, rating changed 0
+  gone (other than the deleted themes): celtic_folklore: "Brigid" (20671)
+  new: celtic_folklore: "Brigid" (22223)
+  rating: none
+new issues: none
+
+--- Notice for the game (v454; not sent: Simon decides) ---
+Library v454: Brigid in Celtic folklore is now the goddess entry (22223) instead of the saint (20671); same text and typicality. Entry rows unchanged; link positions move from row 19416 (Pict) on. No theme index shifts, no new characters.

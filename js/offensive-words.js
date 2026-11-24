@@ -568,6 +568,7 @@ export const OFFENSIVE_WORDS = [
   "spooge",
   "spread legs",
   "spunk",
+  "squaw",
   "strap on",
   "strapon",
   "strappado",

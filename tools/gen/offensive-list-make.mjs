@@ -34,7 +34,8 @@ ass tit booby boobies bitch knob jizz faggots negro sambo hun beaver hooker kaff
 shitty shithole shitstorm bullshit horseshit dipshit shithead chickenshit apeshit batshit fuckwit clusterfuck
 asshole arsehole jackass dumbass badass smartass wiseass kickass hardass cocksucker dickhead
 porn porno pornography
-dingus sheeny scumbag crapper cocaine marijuana methamphetamine meth ganja hashish skag warlock sorcery necromancy pothead gyppo`.split(/\s+/);   // the last line: batch 432 (Simon, 2026-11-22)
+dingus sheeny scumbag crapper cocaine marijuana methamphetamine meth ganja hashish skag warlock sorcery necromancy pothead gyppo
+squaw`.split(/\s+/);   // the gyppo line: batch 432 (Simon, 2026-11-22); squaw: v454 (Simon, 2026-11-24)
 const ADD_PHRASES = ['choc ice', 'paddy wagon', 'son of a bitch', 'pissed off', 'sod off', 'deaf and dumb', 'mentally challenged', 'wheelchair bound',
   'window licker', 'half-caste', 'uncle tom', 'curry muncher', 'sheep shagger', 'bible basher', 'jungle bunny', 'bud bud', 'ching chong', 'white power'];
 
