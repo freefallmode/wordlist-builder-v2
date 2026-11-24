@@ -230,7 +230,7 @@ export function buildExport(P, opt0 = {}) {
   });
 
   const file = {
-    v: 4, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: new Date().toISOString(),
+    v: 4, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: /^\d{4}-\d\d-\d\d \d\d:\d\d$/.test(P.lib.modified || '') ? P.lib.modified.replace(' ', 'T') + ':00' : new Date().toISOString(),   // the library's last save time (E5): the same library always gives the same file
     dialect: dialectOf(P), options: o, regions, regionBits: REGION_BITS, kindNames: THEME_KINDS, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
     // identifiability 1 (obvious) to 5 (obscure), 0 unrated; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
     themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty', 'breaks'].concat(o.notes ? ['note'] : []),

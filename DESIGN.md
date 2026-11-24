@@ -191,7 +191,7 @@ One JSON object, no whitespace. Top-level keys in this order:
 | `v` | number | format version, 4. |
 | `lang` | string | library language (`en`). |
 | `lib` | `{version, modified}` | library change counter and its time, local `YYYY-MM-DD HH:MM`. |
-| `generated` | string | export time, ISO 8601 UTC. |
+| `generated` | string | the library's last save time (`lib.modified`, ISO 8601, local time, no zone), so the same library always gives the same file (E5, 2026-11-24); export time (UTC) only for a library with no save time. |
 | `dialect` | string | the library's default dialect (`settings.dialect`, else `US` for English): the variant the app shows for a word that has a regional or spelling alternative. |
 | `options` | object | the options used, 8.2. |
 | `regions` | string[] | region codes used by any written theme or entry: `UK`, `US`, then the rest alphabetically. |

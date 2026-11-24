@@ -1,2 +1,4 @@
 # Hook scripts run under sh: keep LF line endings on every platform.
 .githooks/* text eol=lf
+# Every text file is LF in the repository and in working copies, whatever core.autocrlf says (ISSUES I14, 2026-11-24).
+* text=auto eol=lf
