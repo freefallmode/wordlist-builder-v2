@@ -396,6 +396,16 @@ function patchTable(old, neu) {   // old: the .etable on screen, neu: the one ju
 
 function groupName(t, id) { const e = A.P.ix.entry.get(id); return (e && (e.show?.[t.id] || A.P.ix.entry.get(e.use?.[t.id])?.text)) || e?.text || '?'; }   // a group member is named as its theme shows it
 function groupMates(t, e) { return (t.groups || []).filter(g => g.includes(e.id)).flatMap(g => g.filter(id => id !== e.id)).map(id => groupName(t, id)).join(', '); }
+// A menu is fixed to the window; while anything scrolls it follows its anchor, and it closes once the anchor is gone or scrolled out of sight.
+function stick(menu, anchor) {
+  const move = () => {
+    if (!menu.isConnected) return document.removeEventListener('scroll', move, true);
+    const r = anchor.getBoundingClientRect();
+    if (!anchor.isConnected || r.bottom < 0 || r.top > innerHeight) { menu.remove(); return document.removeEventListener('scroll', move, true); }
+    menu.style.left = Math.round(r.left) + 'px'; menu.style.top = Math.round(r.bottom + 2) + 'px';
+  };
+  document.addEventListener('scroll', move, { capture: true, passive: true });
+}
 // A search box with its own list under it (the browser's datalist looks different everywhere): type to narrow, arrows and Enter or a click to choose.
 function lookup(items, pick) {
   let menu = null, at = 0, shown = [];
@@ -407,7 +417,7 @@ function lookup(items, pick) {
     at = 0; const r = input.getBoundingClientRect();
     menu = h('div.formmenu.lookup', { style: `left:${Math.round(r.left)}px;top:${Math.round(r.bottom + 2)}px;min-width:${Math.max(160, Math.round(r.width))}px` },
       shown.map(([id, text], n) => h('div', { class: n === at ? 'cur' : '', onmousedown: e2 => { e2.preventDefault(); close(); pick(id); } }, text)));
-    document.body.append(menu);
+    document.body.append(menu); stick(menu, input);
   };
   const mark = n => { at = (n + shown.length) % shown.length; [...menu.children].forEach((c, j) => c.classList.toggle('cur', j === at)); menu.children[at].scrollIntoView({ block: 'nearest' }); };
   return { oninput: open, onfocus: open, onblur: close, onkeydown: ev => {
@@ -421,7 +431,7 @@ function formMenu(anchor, items, current, pick) {   // a small list under the ar
   document.querySelectorAll('.formmenu').forEach(m => m.remove());
   const r = anchor.getBoundingClientRect();
   const m = h('div.formmenu', { style: `left:${Math.round(r.left)}px;top:${Math.round(r.bottom + 2)}px` }, items.map(([v, text]) => h('div', { class: v === current ? 'cur' : '', onclick: ev => { ev.stopPropagation(); m.remove(); pick(v); } }, text)));
-  document.body.append(m);
+  document.body.append(m); stick(m, anchor);
   const off = ev => { if (!m.contains(ev.target)) { m.remove(); document.removeEventListener('click', off, true); } };
   setTimeout(() => document.addEventListener('click', off, true));
 }
