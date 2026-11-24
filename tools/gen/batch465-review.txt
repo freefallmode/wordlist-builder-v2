@@ -1,0 +1,49 @@
+Library batch v465 (for Simon's review): Qualities, smells branch: words that do not fit out and well-known words added in its eight themes; new theme scented products.
+1. things that smell good
+2. smells from the kitchen
+3. woody and resin scents
+4. things that smell bad
+5. pungent foods
+6. perfume notes
+7. candle scents
+8. Middle Eastern scents
+9. scented products (new)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1427
+Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
+Theme rows 3211 -> 3211; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61326 -> 61326; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 98942 -> 98942; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (Qualities gap check, 2026-11-24): all 8 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 145 new links existed earlier and was removed (all 206 library versions and 155 batch notices and reviews checked). fragrant flowers was deleted in v447 as a twin of sweet-smelling flowers; scented products holds products, no flowers.
+  - Spread (LIBRARY-RULES 3.7): see the list above; woody and resin scents had 1 easy word of 10 and now has 5 of 27, smells from the kitchen had 1 hard word of 14 and now has 8 of 28.
+
+Considered and left out:
+  - smelly animals (mostly hard; words such as camel and hyena could be argued about).
+  - scented products: smelling salts (ammonia, not made to smell nice), dryer sheet (US only), scented candle (it holds "scented"; candles is there).
+  - pungent foods: Stilton (UK only), wild garlic and pickled onion (garlic and onion are there).
+  - things that smell bad: trash can stays beside trash (the container; its UK alias bin counts).
+
+For Simon:
+  1. Three words are left in no theme (kept in the library, not exported): tar pit, mahogany teakwood, frankincense and myrrh.
+  2. Overlap notes that stay: garlic / garlic bread, cinnamon / cinnamon roll and apple / apple pie (different smells), rose / rose attar (rose attar is grouped with attar).
+  3. pomander was only in Black Death and not exported; it is now in scented products too.
