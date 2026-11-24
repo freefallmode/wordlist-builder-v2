@@ -1,10 +1,12 @@
-Reply to the game's v454 measurement (2026-11-24). Draft: sent only on Simon's word.
+Reply to the game's v454 measurement (2026-11-24). Sent 2026-11-24 on Simon's word ("Yes, both"), with library v455.
 
 Thanks for measuring v454. Answers to your questions:
 
 1. Strict synonyms (546/593/664 -> 1,499/1,529/1,465): this rise is intended. Roots with a synonym alias, by type, v439 -> v454: person 5 -> 164 (the people's-names rule: the full name is the root and the surname its first synonym, e.g. Albert Einstein / Einstein), common 227 -> 367 (merges in the group batches: near-duplicate roots became synonyms), proper 31 -> 76, org 4 -> 23 (brands and their short names). Few words are actually shown as their synonym, as you saw. That is expected, because the first synonym is shown only at some levels.
-2. "ends with transport" (id ends_with_public_transport): v446 changed its rule to @modes_of_transport. That theme has no "cab" root, so vocab dropped out. Of the 4 words left, worship is sensitive, which leaves 3 before level 31. Proposed fix (library v455, needs Simon's OK): add friendship, hardship, strain, divan, nimbus and rebus.
-   Hindu festivals: all 12 festival entries are flagged sensitive (religion), but the theme itself is not. Proposed in v455: flag the theme sensitive, as religious festivals is.
+2. "ends with transport" (id ends_with_public_transport): v446 changed its rule to @modes_of_transport. That theme has no "cab" root, so vocab dropped out. Of the 4 words left, worship is sensitive, which leaves 3 before level 31. Fixed in library v455: friendship, hardship, strain, divan, nimbus and rebus joined it, so it now has 9 words, 8 of them usable before level 31.
+   Hindu festivals: all 12 festival entries are flagged sensitive (religion), but the theme itself is not. Fixed in v455: the theme is now flagged sensitive, as religious festivals is.
 3. moon_phases_and_moods is now the compound theme "___ moon" (rule compound-end:moon, 22 members shown without "moon": crescent, harvest, blue, full ...). The non-phase words (earthshine, moonrise, terminator ...) left it. The library's contract checks pass. Could you tell us why your generator never picks it (compound rule, shown-text test, rating)? Then we can fix it on our side if the cause is ours.
 4. The 22 themes that vanished by id are the tidy-up merges (cowboy words into Wild West, aircraft into the transport themes, Italian musical terms into Italian music words ...). This is expected.
 5. Font: filling the whole Latin Extended-A block before the pin sounds right.
+
+v455 (commit 427d5e1, committed locally; pushed when Simon says): six new links in ends_with_public_transport and the hindu_festivals theme flag (0 -> 2). No theme index shifts, no row changes, no new characters; link positions move from row 3,821 on. Details: tools/gen/batch455-changes.txt.
