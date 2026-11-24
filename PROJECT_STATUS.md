@@ -1,6 +1,6 @@
 # Project status: handover to the next manager session
 
-Written 2026-11-19, library v452. Read this, then `ISSUES.md`. The library tidy-up in progress: `TIDY-UP.md`. Do not re-audit: `ISSUES.md` is the audit.
+Written 2026-11-19, library v453. Read this, then `ISSUES.md`. The library tidy-up in progress: `TIDY-UP.md`. Do not re-audit: `ISSUES.md` is the audit.
 
 ## 1. Overview
 
