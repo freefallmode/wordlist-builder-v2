@@ -1,0 +1,16 @@
+How the branch was reviewed (Qualities gap check, 2026-11-24): all 8 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - All 204 earlier library versions and 151 batch notices and reviews were checked for the 116 new links and the two names. Two links were there before: icebox in food chillers (it left at v307 as an alias of fridge; v441 made it its own root, the ice-cooled cabinet) and bitter [taste] in words for cold (v447 took it out as the wrong sense and noted that the cold sense was not in the library: bitter [very cold] is that sense).
+  - Spread (LIBRARY-RULES 3.7): see the list above.
+
+Considered and left out:
+  - hot things: incinerator (left out in review); grill stays as the verb 921: an appliance sense would need a gloss on the verb, which changes the text of the baselined region-root-equiv warning of broil / grill.
+  - cold things: polar bear and penguin leave: they live in the cold and are in 10 and 12 other themes.
+  - words for hot: tropical, summery and the other warm words (v447 took them out).
+  - keeping warm: too close to cozy things and winter clothes.
+  - things that burn: cigarette, cigar (smoking), alcohol, natural gas, methane, butane (fuels has them).
+
+For Simon:
+  1. red-hot, white-hot, piping hot and stone cold leave words for hot and words for cold for the reason you gave for hot and cold in v447 (nameOkIn let the topic word through).
+  2. 9 words are left in no theme (kept in the library, not exported): hot as hell, red-hot, piping hot, white-hot, hellish, feverish, stone cold, arctic blast, bleak.
+  3. grill 921 (to cook) and barbecue 19767 [grilled meat] are typed verb but stand for the appliance in hot things: a sense split, if you want it, needs the region-root-equiv baseline text.
+  4. burn [fire] joins burning, burner and combust in a clash group of 9 (a real look-alike; up to 12 is allowed).
