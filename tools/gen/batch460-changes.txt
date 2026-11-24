@@ -1,0 +1,264 @@
+Library batch v460 (for Simon's review): Travel & Transport gap check, part 1: well-known words linked in 22 existing themes; helmet in bike gear and reception in hotel take the right sense; US vacation spots moves beside beach destinations.
+1. Wrong senses
+  new entry: helmet 68621 [sports] noun, common, familiarity 1: the helmet of a cyclist, racing driver or skier; helmet [armor], [military] and [climbing] are other helmets
+  linked: helmet 68621 [sports] in bike_gear (typicality 1): a cyclist's helmet
+  out of bike_gear: helmet 20685 [armor]: wrong sense: helmet [armor] is a knight's; helmet [sports] takes the link (stays in knights, jousting_tournament, armor, hidden_trees, symbols_of_the_greek_gods)
+  linked: helmet 68621 [sports] in cycling_words (typicality 1): every rider wears one; the theme had two easy words
+  linked: helmet 68621 [sports] in motor_racing (typicality 2): the driver's helmet
+  linked: helmet 68621 [sports] in ski_trip (typicality 3): worn on the slopes
+  new entry: front desk 68622 noun, common, familiarity 2: where hotel guests check in (US); reception is its UK word
+  linked: front desk 68622 in hotel (typicality 1): the desk where guests check in
+  out of hotel: reception 25105: wrong sense: reception 25105 is the wedding party; front desk (UK reception) takes the link (stays in weddings)
+  reception 25105: gloss "" -> "party": its text is now shared with reception [hotel desk]
+  new entry: reception 68623 [hotel desk] noun, common, familiarity 2, regional alias of front desk 68622 [UK,IE,AU,NZ]: the UK word for the front desk
+2. Verbs and nouns of travel
+  linked: fly 67311 [through the air] in travel_verbs (typicality 1): one of the first travel verbs anyone names; the theme had 8 easy words of 34
+  linked: walk 16849 [stroll] in travel_verbs (typicality 3): one of the first travel verbs anyone names; the theme had 8 easy words of 34
+  new entry: drive 68624 [car] verb, common, familiarity 1: to drive a car; drive [trip] is the noun
+  new entry: ride 68625 [bus] verb, common, familiarity 1: to ride a bus, bike or train; ride [trip] is the noun
+  new entry: sail 68626 [voyage] verb, common, familiarity 1: to travel by boat; sail [boat] is the cloth
+  new entry: pack 68627 [suitcase] verb, common, familiarity 1: to pack a bag; pack [wolves] is another word
+  new entry: leave 68628 verb, common, familiarity 1: to go away from a place
+  new entry: return 68629 [go back] verb, common, familiarity 1: to come back; return [key], [tennis] are other senses
+  linked: drive 68624 [car] in travel_verbs (typicality 1): one of the first travel verbs anyone names; the theme had 8 easy words of 34
+  linked: sail 68626 [voyage] in travel_verbs (typicality 2): one of the first travel verbs anyone names; the theme had 8 easy words of 34
+  linked: ride 68625 [bus] in travel_verbs (typicality 2): one of the first travel verbs anyone names; the theme had 8 easy words of 34
+  linked: leave 68628 in travel_verbs (typicality 2): one of the first travel verbs anyone names; the theme had 8 easy words of 34
+  linked: return 68629 [go back] in travel_verbs (typicality 2): one of the first travel verbs anyone names; the theme had 8 easy words of 34
+  linked: pack 68627 [suitcase] in travel_verbs (typicality 4): what a traveler does first; a step of a trip rather than a way of going
+  group in travel_verbs: set off 48178 = set out 48179 = depart 48173 = leave 68628: the same answer: depart, set off, set out, leave
+  kin: pack 68627 [suitcase] <-> packing 24248: one word family
+  kin: drive 68624 [car] <-> drive 2949 [trip]: one word, verb and noun
+  kin: ride 68625 [bus] <-> ride 2950 [trip]: one word, verb and noun
+  kin: sail 68626 [voyage] <-> sail 2799 [boat]: one word, verb and noun
+  new entry: vacation 68630 noun, common, familiarity 1: a trip for rest or pleasure; it was not in the library
+  new entry: holiday 68631 noun, common, familiarity 1, regional alias of vacation 68630 [UK,IE,AU,NZ,ZA]: the UK word for a vacation
+  linked: vacation 68630 in journeys (typicality 2): the commonest reason for a trip
+  new entry: adventure 68632 [journey] noun, common, familiarity 1: an exciting journey; adventure [genre] is the film and game genre
+  linked: adventure 68632 [journey] in journeys (typicality 4): as odyssey, quest and expedition
+  linked: honeymoon 25104 in journeys (typicality 3): a well-known kind of journey
+  linked: flight 2741 [air travel] in journeys (typicality 3): a well-known kind of journey
+  kin: adventure 68632 [journey] <-> adventure 12569 [genre]: one word in two senses
+3. Trips and places to stay
+  linked: snow 1967 [weather] in ski_trip (typicality 1): one of the first things a ski trip brings to mind; it was not linked
+  linked: mountain 1894 [landform] in ski_trip (typicality 1): one of the first things a ski trip brings to mind; it was not linked
+  linked: gloves 4956 in ski_trip (typicality 2): one of the first things a ski trip brings to mind; it was not linked
+  linked: blizzard 1996 in ski_trip (typicality 4): one of the first things a ski trip brings to mind; it was not linked
+  linked: sand 2063 [sediment] in beach_vacation (typicality 1): what a beach vacation brings to mind; it was not linked
+  linked: sea 28110 [water body] in beach_vacation (typicality 1): what a beach vacation brings to mind; it was not linked
+  linked: swimsuit 24469 in beach_vacation (typicality 2): what a beach vacation brings to mind; it was not linked
+  linked: towel 3755 [bath cloth] in beach_vacation (typicality 3): what a beach vacation brings to mind; it was not linked
+  linked: palm 1631 [tree] in beach_vacation (typicality 3): what a beach vacation brings to mind; it was not linked
+  linked: coral reef 32031 in beach_vacation (typicality 4): what a beach vacation brings to mind; it was not linked
+  new entry: guest 68633 [hotel] noun, common, familiarity 1: a person staying at a hotel; guest [visitor] is the one at home
+  guest 3900: gloss "" -> "visitor": its text is now shared with guest [hotel]
+  kin: guest 68633 [hotel] <-> guest 3900 [visitor]: one word in two senses
+  linked: guest 68633 [hotel] in hotel (typicality 1): the person a hotel is for; it was not linked
+  linked: suite 48361 [hotel] in hotel (typicality 2): a well-known thing of a hotel; it was not linked
+  linked: reservation 48787 [travel] in hotel (typicality 2): a well-known thing of a hotel; it was not linked
+  linked: ballroom 29060 in hotel (typicality 4): a well-known thing of a hotel; it was not linked
+  linked: revolving door 24118 in hotel (typicality 4): a well-known thing of a hotel; it was not linked
+  new entry: vacancy 68634 noun, common, familiarity 2: a free room, as on a motel's neon sign
+  linked: vacancy 68634 in hotel (typicality 3): a free room
+  new entry: room rate 68635 noun, common, familiarity 3: the price of a room for a night
+  linked: room rate 68635 in hotel (typicality 4): the price of a room; room service and room number show the word already
+  group in hotel: suite 48361 = bridal suite 48335: a word and its more specific form (LIBRARY-RULES 5, overlap): one answer
+  linked: giraffe 980 in safari_words (typicality 1): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+  linked: zebra 981 [animal] in safari_words (typicality 1): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+  linked: hippo 987 in safari_words (typicality 2): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+  linked: cheetah 218 [animal] in safari_words (typicality 2): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+  linked: crocodile 1138 in safari_words (typicality 3): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+  linked: hyena 1020 in safari_words (typicality 3): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+  linked: wildebeest 1030 in safari_words (typicality 3): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+  linked: vulture 1082 [bird] in safari_words (typicality 4): an animal every safari is sold on, as lion, leopard, elephant, rhinoceros and buffalo, which are linked
+4. Ways of getting around
+  linked: Tour de France 44295 in cycling_words (typicality 1): a word every rider or fan uses; the theme had 2 easy words of 35
+  linked: pedal 28433 [bicycle] in cycling_words (typicality 2): a word every rider or fan uses; the theme had 2 easy words of 35
+  linked: gear 7384 [machine] in cycling_words (typicality 3): a word every rider or fan uses; the theme had 2 easy words of 35
+  linked: sprint 46190 [race] in cycling_words (typicality 3): a word every rider or fan uses; the theme had 2 easy words of 35
+  linked: finish line 44009 in cycling_words (typicality 3): a word every rider or fan uses; the theme had 2 easy words of 35
+  group in cycling_words: sprint 46190 = bunch sprint 48000: a word and its more specific form (LIBRARY-RULES 5, overlap): one answer
+  linked: horse 153 [animal] in modes_of_transport (typicality 2): a way of getting around; the theme had 5 middle words of 30
+  linked: rowboat 2785 in modes_of_transport (typicality 3): a way of getting around; the theme had 5 middle words of 30
+  linked: monorail 2670 in modes_of_transport (typicality 3): a way of getting around; the theme had 5 middle words of 30
+  linked: rickshaw 2684 in modes_of_transport (typicality 3): a way of getting around; the theme had 5 middle words of 30
+  linked: deck 34583 [ship] in boats_and_ships (typicality 2): a basic word of boats and ships; it was not linked
+  linked: sailor 4380 in boats_and_ships (typicality 2): a basic word of boats and ships; it was not linked
+  linked: oar 43422 in boats_and_ships (typicality 2): a basic word of boats and ships; it was not linked
+  linked: paddle 28003 [oar] in boats_and_ships (typicality 3): a basic word of boats and ships; it was not linked
+  linked: passenger 2663 [traveler] in trains (typicality 1): a basic word of trains; it was not linked
+  linked: coal 2054 in trains (typicality 3): a basic word of trains; it was not linked
+  linked: steam 16570 [vapor] in trains (typicality 3): a basic word of trains; it was not linked
+  new entry: rail 68636 [train track] noun, common, familiarity 1: the steel bar trains run on; rail [surfing] and [skate park] are other senses
+  linked: rail 68636 [train track] in trains (typicality 2): what trains run on
+  linked: ticket 46940 [transport] in air_travel (typicality 1): a word of every flight; crosswind and contrail are harder ones, for the spread
+  linked: passenger 2663 [traveler] in air_travel (typicality 1): a word of every flight; crosswind and contrail are harder ones, for the spread
+  linked: passport 48763 in air_travel (typicality 2): a word of every flight; crosswind and contrail are harder ones, for the spread
+  linked: luggage 47150 [airport] in air_travel (typicality 2): a word of every flight; crosswind and contrail are harder ones, for the spread
+  linked: crosswind 31234 in air_travel (typicality 4): a word of every flight; crosswind and contrail are harder ones, for the spread
+  linked: contrail 31274 in air_travel (typicality 4): a word of every flight; crosswind and contrail are harder ones, for the spread
+  linked: train 39524 [vehicle] in station_words (typicality 1): what a player sees at a train station; it was not linked
+  linked: track 2858 [railway] in station_words (typicality 1): what a player sees at a train station; it was not linked
+  linked: ticket 46940 [transport] in station_words (typicality 1): what a player sees at a train station; it was not linked
+  linked: passenger 2663 [traveler] in station_words (typicality 2): what a player sees at a train station; it was not linked
+  linked: bench 339 [seat] in station_words (typicality 3): what a player sees at a train station; it was not linked
+  linked: escalator 29567 in station_words (typicality 3): what a player sees at a train station; it was not linked
+  linked: announcement 47321 [flight] in station_words (typicality 3): what a player sees at a train station; it was not linked
+  linked: stairs 24068 [house] in station_words (typicality 4): what a player sees at a train station; it was not linked
+  linked: vending machine 25780 in station_words (typicality 4): what a player sees at a train station; it was not linked
+  linked: race car 39826 in motor_racing (typicality 1): the car itself; it was not linked
+  linked: finish line 44009 in motor_racing (typicality 2): a basic word of motor racing; it was not linked
+  linked: trophy 12732 [award] in motor_racing (typicality 3): a basic word of motor racing; it was not linked
+  linked: hose 1844 [pipe] in gas_station (typicality 2): what a driver uses at a gas station; it was not linked
+  linked: restroom 27904 in gas_station (typicality 3): what a driver uses at a gas station; it was not linked
+  linked: credit card 23286 in gas_station (typicality 3): what a driver uses at a gas station; it was not linked
+  new entry: self-service 68637 adjective, common, familiarity 2: where drivers fill the tank themselves
+  linked: self-service 68637 in gas_station (typicality 3): most gas stations are
+  linked: camera 12060 in sightseeing_words (typicality 1): what a sightseer carries or looks at; it was not linked
+  linked: photo 23291 in sightseeing_words (typicality 2): what a sightseer carries or looks at; it was not linked
+  linked: statue 6338 in sightseeing_words (typicality 3): what a sightseer carries or looks at; it was not linked
+  linked: skyline 66465 in sightseeing_words (typicality 3): what a sightseer carries or looks at; it was not linked
+  linked: phrasebook 66412 in sightseeing_words (typicality 4): what a sightseer carries or looks at; it was not linked
+  linked: pyramid 6619 [monument] in tourist_attractions (typicality 2): a kind of sight tourists travel to see; it was not linked
+  linked: skyscraper 2461 in tourist_attractions (typicality 3): a kind of sight tourists travel to see; it was not linked
+  linked: volcano 1912 in tourist_attractions (typicality 3): a kind of sight tourists travel to see; it was not linked
+  linked: windmill 2475 [building] in tourist_attractions (typicality 4): a kind of sight tourists travel to see; it was not linked
+  linked: obelisk 6883 in tourist_attractions (typicality 4): a kind of sight tourists travel to see; it was not linked
+  linked: amphitheater 6600 in tourist_attractions (typicality 4): a kind of sight tourists travel to see; it was not linked
+5. Cars
+  linked: Mini 193 [car] in car_brands (typicality 2): a brand most players know; it was only in its country's theme
+  linked: Mitsubishi 58967 [car] in car_brands (typicality 2): a brand most players know; it was only in its country's theme
+  linked: Chrysler 58978 [car brand] in car_brands (typicality 2): a brand most players know; it was only in its country's theme
+  linked: race car 39826 in car_types (typicality 2, nameOkIn: the full name contains a word of the theme name): a well-known kind of car (whole, as town car: "race" alone does not name it)
+  linked: self-driving car 49448 in car_types (typicality 3, shown "self-driving"): a well-known kind of car
+  linked: sun visor 46846 [car] in things_inside_the_cabin (typicality 2): a thing inside a car; the theme had 10 words
+  linked: cup holder 12807 in things_inside_the_cabin (typicality 2): a thing inside a car; the theme had 10 words
+  linked: headrest 46927 in things_inside_the_cabin (typicality 2): a thing inside a car; the theme had 10 words
+  linked: back seat 48275 in things_inside_the_cabin (typicality 2): a thing inside a car; the theme had 10 words
+  linked: gas pedal 46601 in things_inside_the_cabin (typicality 3): a thing inside a car; the theme had 10 words
+  linked: air vent 47324 in things_inside_the_cabin (typicality 3): a thing inside a car; the theme had 10 words
+  linked: armrest 12808 in things_inside_the_cabin (typicality 3): a thing inside a car; the theme had 10 words
+  linked: gearshift 46605 [car] in things_inside_the_cabin (typicality 3): a thing inside a car; the theme had 10 words
+  linked: infotainment screen 59006 in things_inside_the_cabin (typicality 4): a thing inside a car; the theme had 10 words
+  linked: cigarette lighter 15441 in things_inside_the_cabin (typicality 4): a thing inside a car; the theme had 10 words
+  new entry: center console 68638 noun, common, familiarity 3: the storage and controls between the front seats
+  new entry: centre console 68639 noun, common, familiarity 3, spelling alias of center console 68638 [UK]: the UK spelling
+  linked: center console 68638 in things_inside_the_cabin (typicality 3): between the front seats
+  new entry: dome light 68640 noun, common, familiarity 4: the lamp in a car's roof
+  linked: dome light 68640 in things_inside_the_cabin (typicality 4): the lamp in the roof
+6. Airlines
+  linked: Norwegian 59072 [airline] in low_cost_airlines (typicality 2): a low-cost airline; the theme had 8 words, six of them American
+  linked: AirAsia 59091 in low_cost_airlines (typicality 3): a low-cost airline; the theme had 8 words, six of them American
+  linked: Jet2 59081 in low_cost_airlines (typicality 3): a low-cost airline; the theme had 8 words, six of them American
+  linked: Vueling 59074 in low_cost_airlines (typicality 4): a low-cost airline; the theme had 8 words, six of them American
+  linked: IndiGo 59398 [airline] in low_cost_airlines (typicality 4): a low-cost airline; the theme had 8 words, six of them American
+  linked: Scoot 59098 [airline] in low_cost_airlines (typicality 4): a low-cost airline; the theme had 8 words, six of them American
+7. Vacations
+  linked: honeymoon 25104 in holiday_travel (typicality 1): a kind of trip taken for pleasure; the theme had 9 words
+  linked: weekend break 25300 in holiday_travel (typicality 2): a short trip for pleasure; it was in no theme
+  linked: staycation 2965 in holiday_travel (typicality 3): a kind of trip taken for pleasure; the theme had 9 words
+  linked: backpacking 5636 [hiking trip] in holiday_travel (typicality 3): a kind of trip taken for pleasure; the theme had 9 words
+  linked: glamping 2999 [luxury camping] in holiday_travel (typicality 4): a kind of trip taken for pleasure; the theme had 9 words
+  new entry: spring break 68641 noun, common, familiarity 2: the college students' week away in March
+  linked: spring break 68641 in holiday_travel (typicality 3): the college students' week away in March
+  new entry: package tour 68642 noun, common, familiarity 3: flights, hotel and excursions sold as one
+  linked: package tour 68642 in holiday_travel (typicality 3): flights, hotel and excursions sold as one
+  new entry: city break 68643 noun, common, familiarity 3: a few days in another city (UK)
+  linked: city break 68643 in holiday_travel (typicality 4): a few days in another city (UK)
+  new entry: island hopping 68644 noun, common, familiarity 3: a trip from island to island
+  linked: island hopping 68644 in holiday_travel (typicality 4): a trip from island to island
+  kin: island hopping 68644 <-> island-hop 48189: one word family
+  theme american_holiday_spots "US vacation spots" moves from beach_destinations to vacations (after beach_destinations): its name promises any US vacation spot, and it now holds cities, parks and lakes: a sibling of beach destinations, no longer under it
+  linked: Las Vegas 2240 in american_holiday_spots (typicality 1): a well-known US vacation spot; the theme held 9 beaches and islands only
+  linked: Orlando 35921 [city] in american_holiday_spots (typicality 1): a well-known US vacation spot; the theme held 9 beaches and islands only
+  linked: Walt Disney World 48931 in american_holiday_spots (typicality 1): a well-known US vacation spot; the theme held 9 beaches and islands only
+  linked: Grand Canyon 2332 in american_holiday_spots (typicality 2): a well-known US vacation spot; the theme held 9 beaches and islands only
+  linked: Cape Cod 50175 [Massachusetts peninsula] in american_holiday_spots (typicality 3): a well-known US vacation spot; the theme held 9 beaches and islands only
+  linked: Napa Valley 36454 in american_holiday_spots (typicality 3): a well-known US vacation spot; the theme held 9 beaches and islands only
+  linked: Aspen 50013 [ski town] in american_holiday_spots (typicality 4): a well-known US vacation spot; the theme held 9 beaches and islands only
+  linked: Nantucket 60528 in american_holiday_spots (typicality 4): a well-known US vacation spot; the theme held 9 beaches and islands only
+  new entry: Lake Tahoe 68645 noun, place, familiarity 3: the mountain lake on the California and Nevada line
+  linked: Lake Tahoe 68645 in american_holiday_spots (typicality 3): the mountain lake on the California and Nevada line
+  new entry: Martha's Vineyard 68646 noun, place, familiarity 3: the Massachusetts summer island
+  linked: Martha's Vineyard 68646 in american_holiday_spots (typicality 4): the Massachusetts summer island
+  new entry: Palm Springs 68647 noun, place, familiarity 3: the California desert resort
+  linked: Palm Springs 68647 in american_holiday_spots (typicality 4): the California desert resort
+  new entry: Outer Banks 68648 noun, place, familiarity 4: the North Carolina barrier islands
+  linked: Outer Banks 68648 in american_holiday_spots (typicality 4): the North Carolina barrier islands
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  air_travel: "air travel" pop 1 ident 1: 65 words, easy/middle/hard 30/16/19, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "air travel" pop 1 ident 1: 71 words, easy/middle/hard 34/16/21, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  american_holiday_spots: "US vacation spots" pop 3 ident 4: 9 words, easy/middle/hard 3/4/2, theme difficulty 4, 4th-easiest band 3, gap -1.0 -> "US vacation spots" pop 3 ident 4: 21 words, easy/middle/hard 7/7/7, theme difficulty 4, 4th-easiest band 2, gap -2.0
+  beach_vacation: "beach vacation" pop 1 ident 2: 47 words, easy/middle/hard 21/13/13, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "beach vacation" pop 1 ident 2: 53 words, easy/middle/hard 24/15/14, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  bike_gear: "bike gear" pop 3 ident 2: 17 words, easy/middle/hard 8/8/1, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "bike gear" pop 3 ident 2: 17 words, easy/middle/hard 8/8/1, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  boats_and_ships: "boats and ships" pop 1 ident 1: 64 words, easy/middle/hard 19/27/18, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "boats and ships" pop 1 ident 1: 68 words, easy/middle/hard 22/28/18, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  car_brands: "car brands" pop 1 ident 1: 50 words, easy/middle/hard 22/16/12, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "car brands" pop 1 ident 1: 53 words, easy/middle/hard 25/16/12, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  car_types: "car types" pop 2 ident 2: 40 words, easy/middle/hard 12/12/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "car types" pop 2 ident 2: 42 words, easy/middle/hard 13/13/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  cycling_words: "cycling words" pop 3 ident 3: 35 words, easy/middle/hard 2/11/22, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "cycling words" pop 3 ident 3: 41 words, easy/middle/hard 4/15/22, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  gas_station: "gas station" pop 3 ident 3: 37 words, easy/middle/hard 8/10/19, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "gas station" pop 3 ident 3: 41 words, easy/middle/hard 9/13/19, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  holiday_travel: "leisure trips" pop 3 ident 3: 9 words, easy/middle/hard 3/3/3, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "leisure trips" pop 3 ident 3: 18 words, easy/middle/hard 5/7/6, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  hotel: "hotel" pop 2 ident 2: 31 words, easy/middle/hard 11/12/8, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "hotel" pop 2 ident 2: 38 words, easy/middle/hard 14/13/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  journeys: "journeys" pop 2 ident 2: 51 words, easy/middle/hard 11/11/29, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "journeys" pop 2 ident 2: 55 words, easy/middle/hard 12/13/30, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  low_cost_airlines: "low-cost airlines" pop 3 ident 4: 8 words, easy/middle/hard 3/1/4, theme difficulty 4, 4th-easiest band 3, gap -1.0 -> "low-cost airlines" pop 3 ident 4: 14 words, easy/middle/hard 3/3/8, theme difficulty 4, 4th-easiest band 3, gap -1.0
+  modes_of_transport: "modes of transport" pop 1 ident 1: 30 words, easy/middle/hard 15/5/10, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "modes of transport" pop 1 ident 1: 34 words, easy/middle/hard 16/8/10, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  motor_racing: "motor racing" pop 2 ident 2: 43 words, easy/middle/hard 8/20/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "motor racing" pop 2 ident 2: 47 words, easy/middle/hard 11/21/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  safari_words: "safari words" pop 2 ident 2: 49 words, easy/middle/hard 14/16/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "safari words" pop 2 ident 2: 57 words, easy/middle/hard 18/19/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  sightseeing_words: "sightseeing words" pop 3 ident 3: 39 words, easy/middle/hard 16/12/11, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "sightseeing words" pop 3 ident 3: 44 words, easy/middle/hard 18/14/12, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  ski_trip: "ski trip" pop 2 ident 2: 46 words, easy/middle/hard 14/13/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "ski trip" pop 2 ident 2: 51 words, easy/middle/hard 17/14/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  station_words: "station words" pop 2 ident 2: 33 words, easy/middle/hard 7/19/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "station words" pop 2 ident 2: 42 words, easy/middle/hard 11/22/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_inside_the_cabin: "car interior items" pop 2 ident 3: 10 words, easy/middle/hard 4/5/1, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "car interior items" pop 2 ident 3: 22 words, easy/middle/hard 8/10/4, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  tourist_attractions: "tourist attractions" pop 2 ident 3: 41 words, easy/middle/hard 17/13/11, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "tourist attractions" pop 2 ident 3: 47 words, easy/middle/hard 18/15/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  trains: "trains" pop 1 ident 1: 44 words, easy/middle/hard 18/13/13, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "trains" pop 1 ident 1: 48 words, easy/middle/hard 20/15/13, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  travel_verbs: "travel verbs" pop 2 ident 2: 34 words, easy/middle/hard 8/12/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "travel verbs" pop 2 ident 2: 42 words, easy/middle/hard 14/13/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 28: helmet 68621, front desk 68622, reception 68623, drive 68624, ride 68625, sail 68626, pack 68627, leave 68628, return 68629, vacation 68630, holiday 68631, adventure 68632, guest 68633, vacancy 68634, room rate 68635, rail 68636, self-service 68637, center console 68638, centre console 68639, dome light 68640, spring break 68641, package tour 68642, city break 68643, island hopping 68644, Lake Tahoe 68645, Martha's Vineyard 68646, Palm Springs 68647, Outer Banks 68648
+Entries deleted 0: none
+library changes 260; entries changed 139; status set to rev 81; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 401 -> 404, info:orphan 239 -> 238, info:overlap 4798 -> 4812
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): contract-root-region 1416 -> 1418; after: contract-dup-root 170, contract-root-region 1418
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3189 -> 3189; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 22: car_brands (index 942 -> 942: counts [13,9,16,9,3] -> [13,12,16,9,3]); car_types (index 952 -> 952: counts [2,10,15,13,6] -> [2,11,16,13,6]); motor_racing (index 955 -> 955: counts [2,7,20,11,4] -> [3,9,21,11,4]); gas_station (index 958 -> 958: counts [1,7,10,14,5] -> [1,8,13,14,5]); things_inside_the_cabin (index 961 -> 961: counts [1,3,6,1,0] -> [1,7,11,4,0], range [2,3] -> [2,4]); air_travel (index 970 -> 970: counts [14,18,16,13,7] -> [16,20,16,15,7]); low_cost_airlines (index 979 -> 979: counts [0,3,1,3,1] -> [0,3,3,7,1]); boats_and_ships (index 987 -> 987: counts [7,14,29,10,8] -> [7,17,30,10,9]); trains (index 1006 -> 1006: counts [7,12,16,11,5] -> [8,13,18,11,5]); station_words (index 1010 -> 1010: counts [1,6,19,6,1] -> [4,7,22,8,1], range [2,4] -> [1,4]); cycling_words (index 1022 -> 1022: counts [2,1,11,9,13] -> [4,1,15,9,13], range [3,5] -> [1,5]); journeys (index 1033 -> 1033: counts [3,8,11,15,14] -> [3,9,13,16,14]); travel_verbs (index 1035 -> 1035: counts [2,6,12,9,6] -> [4,10,13,10,6], range [2,5] -> [1,5]); holiday_travel (index 1041 -> 1041: counts [0,3,3,2,1] -> [1,4,7,5,1], range [3,3] -> [2,4]); hotel (index 1044 -> 1044: counts [3,8,12,5,3] -> [4,10,13,8,3], range [2,4] -> [1,4]); safari_words (index 1071 -> 1071: counts [4,11,16,10,9] -> [6,13,19,11,9], range [2,5] -> [1,5]); beach_vacation (index 1088 -> 1088: counts [8,15,13,13,2] -> [10,16,16,15,2]); ski_trip (index 1089 -> 1089: counts [3,11,13,14,6] -> [5,12,14,15,6], range [2,5] -> [1,5]); sightseeing_words (index 1092 -> 1092: counts [2,14,12,7,4] -> [3,15,14,8,4]); tourist_attractions (index 1093 -> 1093: counts [2,15,13,10,2] -> [2,16,15,13,2]); american_holiday_spots (index 1097 -> 1097: parent "beach_destinations" -> "vacations", counts [1,2,4,2,0] -> [3,4,7,7,0], range [3,3] -> [2,4]); modes_of_transport (index 1110 -> 1110: counts [7,8,5,7,3] -> [7,9,8,7,3])
+Entry rows 61137 -> 61166; first row whose entry changed: 23537 (weekend break 25300, was spring 25301); rows that moved: 37600; added weekend break 25300 (row 23537), helmet 68621 (row 61138), front desk 68622 (row 61139), reception 68623 (row 61140), drive 68624 (row 61141), ride 68625 (row 61142), sail 68626 (row 61143), pack 68627 (row 61144), leave 68628 (row 61145), return 68629 (row 61146), vacation 68630 (row 61147), holiday 68631 (row 61148), adventure 68632 (row 61149), guest 68633 (row 61150), vacancy 68634 (row 61151), room rate 68635 (row 61152), rail 68636 (row 61153), self-service 68637 (row 61154), center console 68638 (row 61155), centre console 68639 (row 61156), dome light 68640 (row 61157), spring break 68641 (row 61158), package tour 68642 (row 61159), city break 68643 (row 61160), island hopping 68644 (row 61161), Lake Tahoe 68645 (row 61162), Martha's Vineyard 68646 (row 61163), Palm Springs 68647 (row 61164), Outer Banks 68648 (row 61165); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 97882 -> 98016; rows whose link count changed: 103
+Link-index shifts: from row 151 (goat 154) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 2, new 136, rating changed 0
+  gone (other than the deleted themes): bike_gear: "helmet" (20685), hotel: "reception" (25105)
+  new: modes_of_transport: "horse" (153), car_brands: "Mini" (193), safari_words: "cheetah" (218), station_words: "bench" (339), safari_words: "giraffe" (980), safari_words: "zebra" (981), safari_words: "hippo" (987), safari_words: "hyena" (1020), safari_words: "wildebeest" (1030), safari_words: "vulture" (1082), safari_words: "crocodile" (1138), beach_vacation: "palm" (1631), gas_station: "hose" (1844), ski_trip: "mountain" (1894), tourist_attractions: "volcano" (1912), ski_trip: "snow" (1967), ski_trip: "blizzard" (1996), trains: "coal" (2054), beach_vacation: "sand" (2063), american_holiday_spots: "Las Vegas" (2240), american_holiday_spots: "Grand Canyon" (2332), tourist_attractions: "skyscraper" (2461), tourist_attractions: "windmill" (2475), trains: "passenger" (2663), air_travel: "passenger" (2663), station_words: "passenger" (2663), modes_of_transport: "monorail" (2670), modes_of_transport: "rickshaw" (2684), journeys: "flight" (2741), modes_of_transport: "rowboat" (2785), station_words: "track" (2858), holiday_travel: "staycation" (2965), holiday_travel: "glamping" (2999), beach_vacation: "towel" (3755), boats_and_ships: "sailor" (4380), ski_trip: "gloves" (4956), holiday_travel: "backpacking" (5636), sightseeing_words: "statue" (6338), tourist_attractions: "amphitheater" (6600), tourist_attractions: "pyramid" (6619), tourist_attractions: "obelisk" (6883), cycling_words: "gear" (7384), sightseeing_words: "camera" (12060), motor_racing: "trophy" (12732), things_inside_the_cabin: "cup holder" (12807), things_inside_the_cabin: "armrest" (12808), things_inside_the_cabin: "cigarette lighter" (15441), trains: "steam" (16570), travel_verbs: "walk" (16849), gas_station: "credit card" (23286), sightseeing_words: "photo" (23291), station_words: "stairs" (24068), hotel: "revolving door" (24118), beach_vacation: "swimsuit" (24469), journeys: "honeymoon" (25104), holiday_travel: "honeymoon" (25104), holiday_travel: "weekend break" (25300), station_words: "vending machine" (25780), gas_station: "restroom" (27904), boats_and_ships: "paddle" (28003), beach_vacation: "sea" (28110), cycling_words: "pedal" (28433), hotel: "ballroom" (29060), station_words: "escalator" (29567), air_travel: "crosswind" (31234), air_travel: "contrail" (31274), beach_vacation: "coral reef" (32031), boats_and_ships: "deck" (34583), american_holiday_spots: "Orlando" (35921), american_holiday_spots: "Napa Valley" (36454), station_words: "train" (39524), motor_racing: "race car" (39826), car_types: "race car" (39826), boats_and_ships: "oar" (43422), cycling_words: "finish line" (44009), motor_racing: "finish line" (44009), cycling_words: "Tour de France" (44295), cycling_words: "sprint" (46190), things_inside_the_cabin: "gas pedal" (46601), things_inside_the_cabin: "gearshift" (46605), things_inside_the_cabin: "sun visor" (46846), things_inside_the_cabin: "headrest" (46927), air_travel: "ticket" (46940), station_words: "ticket" (46940), air_travel: "luggage" (47150), station_words: "announcement" (47321), things_inside_the_cabin: "air vent" (47324), things_inside_the_cabin: "back seat" (48275), hotel: "suite" (48361), air_travel: "passport" (48763), hotel: "reservation" (48787), american_holiday_spots: "Walt Disney World" (48931), car_types: "self-driving" (49448), american_holiday_spots: "Aspen" (50013), american_holiday_spots: "Cape Cod" (50175), car_brands: "Mitsubishi" (58967), car_brands: "Chrysler" (58978), things_inside_the_cabin: "infotainment screen" (59006), low_cost_airlines: "Norwegian" (59072), low_cost_airlines: "Vueling" (59074), low_cost_airlines: "Jet2" (59081), low_cost_airlines: "AirAsia" (59091), low_cost_airlines: "Scoot" (59098), low_cost_airlines: "IndiGo" (59398), american_holiday_spots: "Nantucket" (60528), sightseeing_words: "phrasebook" (66412), sightseeing_words: "skyline" (66465), travel_verbs: "fly" (67311), bike_gear: "helmet" (68621), cycling_words: "helmet" (68621), motor_racing: "helmet" (68621), ski_trip: "helmet" (68621), hotel: "front desk" (68622), travel_verbs: "drive" (68624), travel_verbs: "ride" (68625), travel_verbs: "sail" (68626), travel_verbs: "pack" (68627), travel_verbs: "leave" (68628), travel_verbs: "return" (68629), journeys: "vacation" (68630), journeys: "adventure" (68632), hotel: "guest" (68633), hotel: "vacancy" (68634), hotel: "room rate" (68635), trains: "rail" (68636), gas_station: "self-service" (68637), things_inside_the_cabin: "center console" (68638), things_inside_the_cabin: "dome light" (68640), holiday_travel: "spring break" (68641), holiday_travel: "package tour" (68642), holiday_travel: "city break" (68643), holiday_travel: "island hopping" (68644), american_holiday_spots: "Lake Tahoe" (68645), american_holiday_spots: "Martha's Vineyard" (68646), american_holiday_spots: "Palm Springs" (68647), american_holiday_spots: "Outer Banks" (68648)
+  rating: none
+new issues: none
+
+How the words were chosen (gap check of Travel & Transport, 2026-11-24, on v459; 170 themes read):
+  - For each theme, the words a player would name first were looked up. Only words that were not linked, directly or through an alias, are added.
+  - None of these links existed earlier and was removed (all 201 earlier library versions and 147 batch notices and reviews checked).
+  - The spread is kept near a third each where the words allow (LIBRARY-RULES 3.7); harder words that belong were added beside the easy ones (crosswind, contrail, coral reef, obelisk, amphitheater, room rate, dome light).
+
+Considered and left out:
+  - key in hotel: room key is there (its more specific form) and is grouped with keycard.
+  - fuel in gas station: the category of gasoline, diesel, ethanol and the others there.
+  - jet in modes of transport: a kind of plane, and plane is there.
+  - floor mat in car interior items: its alias car mat holds "car" of the theme name.
+  - unsure or narrow words, and words that fit another theme better.
+  - vacation and vacationer are not kin: the chain tourist, sightseer, vacationer, tour, sightseeing ... would reach 10 (8 is the limit).
+
+For Simon:
+  1. city break is tagged UK, IE (a US player says weekend getaway), so the game raises its band.
+  2. helmet now has four senses (armor, military, climbing, sports). bike gear, cycling words, motor racing and ski trip use [sports].
+  3. reception 25105 keeps its wedding links under the gloss party.
+  4. Not changed, noted for Food & Drink: sea grass 1291 is linked in chip flavors and umami foods beside seaweed (the food sense there is seaweed).
+
+=== Notice to _WS_ for v460 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v460 (Travel & Transport, gap check, part 1): well-known words that were missing from 22 existing themes are linked; 136 links are new, most to entries already in the library; 28 entries are new (25 roots and the aliases reception, holiday and centre console; listed above).
+- travel verbs gain fly, drive, sail, ride, leave, return, walk, pack; journeys gains vacation (UK holiday), honeymoon, flight, adventure.
+- ski trip, beach vacation, hotel, safari words, cycling words, station words, air travel, trains, boats and ships, sightseeing words, tourist attractions, modes of transport, motor racing, gas station, car brands, car types, car interior items, low-cost airlines, leisure trips and US vacation spots gain words (listed above).
+- Two wrong senses: bike gear shows helmet [sports], not the knight's helmet; hotel shows front desk (UK reception), not the wedding reception.
+- US vacation spots is now a sibling of beach destinations (it was under it); it holds cities, parks and lakes as well as beaches.
+Theme rows: 3189, no theme added or gone, no index shifts; counts change for the 22 themes listed above, and the parent of american_holiday_spots.
+Entry rows 61137 -> 61166: weekend break 25300 is newly exported (row 23537), so 37600 rows after it move by one; the other new rows are at the end. Link positions move from row 151 on.
+New characters: none.
