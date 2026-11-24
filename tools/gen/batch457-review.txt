@@ -1,0 +1,109 @@
+Library batch v457 (ISSUES W12, W13; Simon, 2026-11-24: "fix"): religious words flagged sensitive by sense; capsicums merged into chili peppers, chili pepper the alias of chili, blue penguin and fairy penguin regional aliases of little penguin; curry and mushroom out of their kinds themes; bachelor's button no longer cornflower's US display alias.
+1. W12: religious words flagged sensitive by sense (LIBRARY-RULES 4: this sense touches religion, politics or death; narrow), consistent with the flags already set (church, Christmas, priest, Bible, karma, Diwali)
+2. W13a: chili pepper becomes the synonym alias of chili (two roots of one sense; chili, the US and neutral word, is the root, chilli its UK spelling); capsicums, a near-twin of chili peppers, is merged into it (LIBRARY-RULES 6: twins)
+3. W13b: blue penguin (NZ) and fairy penguin (AU) become regional aliases of little penguin (one bird; little penguin, its standard name, is the root)
+4. W13c: curry and mushroom leave curries and mushrooms (LIBRARY-RULES 5: never the bare category word in a theme of its kinds); each theme keeps four easy members
+5. W13d: bachelor's button becomes a plain synonym of cornflower (as jump drive, v456)
+Sensitive roots linked per theme (sensitive / all), before -> after (0 roots flagged, 0 unflagged; aliases follow their roots):
+  holy_cities: 0/32 -> 0/32
+  famous_temples (theme not sensitive): 4/48 -> 4/48
+  famous_mosques: 6/31 -> 6/31
+  famous_churches: 9/44 -> 9/44
+  religion: 117/120 -> 117/120
+  the_four_evangelists: 0/4 -> 0/4
+  four_horsemen_of_the_apocalypse: 3/5 -> 3/5
+  seven_deadly_sins: 0/8 -> 0/8
+  parts_of_a_religious_service: 13/13 -> 13/13
+  religious_festivals: 43/45 -> 43/45
+  religious_leaders: 42/47 -> 42/47
+  holy_books: 42/44 -> 42/44
+  angels_and_spirits: 20/41 -> 20/41
+  archangels: 15/15 -> 15/15
+  places_of_worship: 36/39 -> 36/39
+  pilgrimage_sites: 2/48 -> 2/48
+  famous_saints: 2/46 -> 2/46
+  religious_clothing: 3/40 -> 3/40
+  afterlife_words: 25/45 -> 25/45
+  islam_words: 42/53 -> 42/53
+  pilgrimage_words: 5/8 -> 5/8
+  judaism_words: 41/58 -> 41/58
+  jewish_holidays: 8/8 -> 8/8
+  jewish_ritual_objects: 7/11 -> 7/11
+  buddhism_words: 43/51 -> 43/51
+  key_teachings: 16/16 -> 16/16
+  contemplative_practices: 7/8 -> 7/8
+  temple_sights: 7/9 -> 7/9
+  hinduism_words: 46/55 -> 46/55
+  spiritual_concepts: 11/11 -> 11/11
+  world_religions: 14/14 -> 14/14
+  christmas (theme not sensitive): 3/40 -> 3/40
+  christmas_carols (theme not sensitive): 20/26 -> 20/26
+  easter (theme not sensitive): 13/38 -> 13/38
+  festivals_of_the_world: 21/44 -> 21/44
+  ramadan_and_eid: 12/30 -> 12/30
+  hindu_festivals: 12/12 -> 12/12
+  church_parts: 12/41 -> 12/41
+  mosque_parts: 4/22 -> 4/22
+  asian_temple_features (theme not sensitive): 6/36 -> 6/36
+  hindu_gods: 38/40 -> 38/40
+Newly flagged roots also linked in themes that are not sensitive (held back to level 31 there now) 0: none
+Unflagged roots, now usable before level 31 in: none
+Game-like 4th-easiest band below level 31 (roots not sensitive, adult, offensive or a name word; v456 measure), before -> after:
+  curries: 2 -> 2 (theme difficulty 1.5)
+  mushrooms: 2 -> 2 (theme difficulty 1.5)
+  chili_peppers: 3 -> 3 (theme difficulty 1.5)
+  capsicums: - -> gone (merged into chili_peppers: 3)
+  penguins: 3 -> 3 (theme difficulty 1.5)
+  blue_flowers: 3 -> 3 (theme difficulty 1.5)
+  christmas_carols: 2 -> 2 (theme difficulty 1.5)
+  christmas: 1 -> 1 (theme difficulty 1)
+  easter: 1 -> 1 (theme difficulty 1)
+  church_parts: 3 -> 3 (theme difficulty 1.5)
+  mosque_parts: 3 -> 3 (theme difficulty 3.5)
+  asian_temple_features: 3 -> 3 (theme difficulty 3)
+  famous_temples: 3 -> 3 (theme difficulty 3.5)
+  spicy_foods: 2 -> 2 (theme difficulty 1.5)
+  fungi: 2 -> 2 (theme difficulty 1.5)
+  flightless_birds: 2 -> 2 (theme difficulty 1.5)
+  new_zealand_animals: 3 -> 3 (theme difficulty 3.5)
+Difficulty spread and gap of the W13 themes (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1422
+Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
+Theme rows 3189 -> 3189; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61136 -> 61136; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 97883 -> 97883; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none
+
+Scope (Simon, 2026-11-24, via the coordinator): the reviewer's narrower version plus the yoga words. Kept: every flag inside the religion themes; clergy, rites, places of worship and scripture outside them (vicar, sexton, friar, chaplain, kirk, Kaaba, madrasa, yeshiva, Star of David, the Nativity carols, Eastertide); the yoga words (mantra, chakra, dharma, tantra, sutra, ashram, Zen). Left unflagged: zakat, tzedakah, Dalai Lama (a person), caliph (a historical title, v417). No flag removed: spire, steeple, minaret, flying buttress and Lalibela keep theirs (Simon declined narrowing in I31). metropolitan: the everyday adjective (new entry, [of a city]) takes the starts with metro link, then the bishop sense is flagged.
+
+For Simon (not done)
+1. Christmas, Easter, Shrove Tuesday and Kwanzaa stay sensitive (your open v416/I30 decision).
+2. Hindu festivals: all 12 stay sensitive (v455).
+3. Saints, the four evangelists, pilgrimage sites, holy cities and named churches, mosques and temples are left as they are.
+4. Religious dress (hijab, burqa, turban, cassock, kippah, saffron robe) stays unflagged; the prayer objects tallit, prayer shawl, tefillin and tzitzit are flagged.
+5. Little Drummer Boy stays unflagged (v456 counts it as an easy carol).
+
+Follow-ups (found, not changed)
+- rapture 4053 holds two senses (the emotion; the Christian Rapture in afterlife words): needs a sense split. Left unflagged.
+- Root pairs of one sense: taraweeh 55707 / tarawih 61208; Laylat al-Qadr 55708 / Lailat al-Qadr 61177 (all four now flagged).
+- Rama 21970 [god] is one entry for the god and the hero (legendary heroes); Garuda 21990 [eagle mount] for the divine mount and the winged beast (winged beasts). Both left unflagged; a sense split would let the god senses be flagged.
+- korora 63112 is the little penguin as well (Māori name; still a root in the penguins group).
+- sheikh 34217 [Muslim leader] is also linked in royal titles and Ottoman titles (the ruler sense): left unflagged.
+- chili peppers still has fewer than four easy words (game-like band 3; v456: no fourth easy member exists).

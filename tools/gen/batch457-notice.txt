@@ -1,0 +1,11 @@
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v457 (ISSUES W12, W13):
+- Religious words flagged sensitive by sense: 328 roots (places of worship, holy days, clergy, rites, scriptures, angels, the afterlife, Islamic, Jewish, Buddhist and Hindu terms, Hindu gods, the yoga words mantra, chakra, dharma, tantra, sutra, ashram, Zen); none unflagged. Aliases follow their roots: 335 export rows change flags. 32 of the words also sit in themes that are not sensitive (yoga words, Asian temple features, Christmas carols, school types ...) and are held back to level 31 there; every such theme keeps at least 5 words before level 31.
+- metropolitan: a new entry [of a city] (adjective) replaces the bishop sense in starts with metro.
+- capsicums is merged into chili peppers and deleted (ghost pepper, rocoto, ají amarillo join chili peppers). chili pepper becomes the synonym alias of chili; chili leaves chili peppers.
+- blue penguin (NZ) and fairy penguin (AU) become regional aliases of little penguin (familiarity 4 -> 3); the "blue" and "fairy" shown texts in penguins go.
+- curry leaves curries (fish curry joins, shown "fish"); mushroom leaves mushrooms (oyster mushroom familiarity 3 -> 2). Both keep four easy words.
+- bachelor's button is a plain synonym of cornflower: US players see cornflower.
+Theme rows 3190 -> 3189: capsicums (index 3053) is gone; every theme from index 3053 on moves down by one (umami_foods now 3053, the last index 3188).
+Entry rows 61135 -> 61136: metropolitan 68619 added as the last row (61135); no other row moves. fairy penguin 8242, chili pepper 17658 and blue penguin 51222 turn from roots into aliases. Link positions move from row 753 on (links 97899 -> 97883).
+New characters: none.

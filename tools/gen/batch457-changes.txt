@@ -1,0 +1,499 @@
+Library batch v457 (ISSUES W12, W13; Simon, 2026-11-24: "fix"): religious words flagged sensitive by sense; capsicums merged into chili peppers, chili pepper the alias of chili, blue penguin and fairy penguin regional aliases of little penguin; curry and mushroom out of their kinds themes; bachelor's button no longer cornflower's US display alias.
+1. W12: religious words flagged sensitive by sense (LIBRARY-RULES 4: this sense touches religion, politics or death; narrow), consistent with the flags already set (church, Christmas, priest, Bible, karma, Diwali)
+  sanctuary 14006: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  baptistery 14011: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  baptistry 57661: sensitive false -> true: spelling alias of baptistery 14011: the same sense, as its root
+  stupa 14045: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  shrine 14050: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  ashram 15943: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  fire temple 20552: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  kirk 27397: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  gurdwara 34279: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  basilica 34280: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  minster 34281: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  priory 34282: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  nunnery 34283: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  mandir 34284: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  meeting house 34285: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  tabernacle 34286: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  oratory 34287: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  Kingdom Hall 34288: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  vihara 34289: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  wat 34290: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  masjid 34292: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  parish church 34294: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  Orthodox church 34295: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  zendo 57662: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  chantry 57663: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  gompa 57664: sensitive false -> true: a place of worship, as church, mosque, temple and synagogue (sensitive: religion)
+  Vesak 25195: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Obon 25196: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Thaipusam 25198: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Eid al-Fitr 25201: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Advent 34192: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Ascension Day 34193: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Shavuot 34195: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Maha Shivaratri 34196: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Vaisakhi 34197: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Candlemas 34198: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  All Saints Day 34199: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Lammas 34200: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Mawlid 34201: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Ashura 34202: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Tisha B'Av 61174: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Simchat Torah 61175: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Kumbh Mela 61176: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Lailat al-Qadr 61177: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Esala Perahera 61178: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Eastertide 25062: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Shabbat 34455: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Sabbath 34456: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  Laylat al-Qadr 55708: sensitive false -> true: a religious holy day or season, as Lent, Pentecost, Passover, Eid and Diwali (sensitive: religion)
+  muezzin 14030: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  shaman 15708: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  sexton 20753: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  abbot 20852: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  friar 20853: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  vicar 28716: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  archbishop 34203: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  cardinal 34204: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  minister 34205: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  deacon 34206: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  mullah 34207: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  ayatollah 34208: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  chaplain 34209: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  curate 34210: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  rector 34211: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  abbess 34212: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  prior 34213: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  lama 34215: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  swami 34216: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  archdeacon 34218: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  dean 34219: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  canon 34220: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  moderator 34221: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  verger 34222: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  Grand Mufti 34223: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  pontiff 34224: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  metropolitan 61179: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  archimandrite 61180: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  granthi 61182: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  rebbe 61183: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  pujari 61184: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  sadhu 34510: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  pandit 34520: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  bhikkhu 34488: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  arhat 34487: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  tulku 61225: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  mohel 61217: sensitive false -> true: a religious office or role, as priest, rabbi, imam, bishop and monk (sensitive: religion)
+  bless 34182: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  pray 34183: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  absolution 34187: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  offering 34190: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  catechism 34191: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  exorcism 22790: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  creed 34184: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  atheism 34185: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  divine 34186: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  canon 34188: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  grace 34189: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  theodicy 61170: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  syncretism 61171: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  numinous 61172: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  soul 34181: sensitive false -> true: a religious rite, belief or term, as prayer, sermon, sacrament, atheist and holy (sensitive: religion)
+  Holly and the Ivy 55595: sensitive false -> true: a carol about the Nativity (Mary and Jesus in the words), as Silent Night and The First Noel; Deck the Halls, Jingle Bells, Carol of the Bells, O Tannenbaum and the Wassail Song stay unflagged (secular)
+  Ding Dong Merrily 55596: sensitive false -> true: a carol about the Nativity (Mary and Jesus in the words), as Silent Night and The First Noel; Deck the Halls, Jingle Bells, Carol of the Bells, O Tannenbaum and the Wassail Song stay unflagged (secular)
+  I Saw Three Ships 55601: sensitive false -> true: a carol about the Nativity (Mary and Jesus in the words), as Silent Night and The First Noel; Deck the Halls, Jingle Bells, Carol of the Bells, O Tannenbaum and the Wassail Song stay unflagged (secular)
+  Tripitaka 22155: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Talmud 34225: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Psalms 34226: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Book of Mormon 34227: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Bhagavad Gita 34228: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Guru Granth Sahib 34229: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Dhammapada 34230: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Tao Te Ching 34231: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Hadith 34232: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  New Testament 34233: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Old Testament 34234: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Apocrypha 34237: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Septuagint 34239: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Book of Common Prayer 34240: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Sutras 34242: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Puranas 34244: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Zohar 34245: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Tanakh 34246: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Pentateuch 34247: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Book of Job 34248: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Lotus Sutra 34249: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  King James Bible 34251: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  gospel 50014: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Vulgate 61185: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Rigveda 61186: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Book of Enoch 61187: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Adi Granth 61188: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Nag Hammadi 61189: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Gospel of Thomas 61190: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Targum 61191: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Exodus 62771: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Genesis 62772: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Revelation 62774: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  sutra 15944: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Haggadah 34462: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  Mishnah 34473: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  tafsir 61211: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  surah 34450: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  parsha 61220: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  smriti 61231: sensitive false -> true: a holy book or scripture, as Bible, Quran, Torah and Vedas (sensitive: religion); I Ching and Kojiki stay unflagged (divination and chronicle)
+  guardian angel 34252: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  cherub 34253: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  seraph 34254: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  seraphim 34255: sensitive false -> true: form alias of seraph 34254: the same sense, as its root
+  archangel 34256: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Gabriel 34257: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Michael 34258: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Raphael 34259: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Uriel 34260: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  demon 34261: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Satan 34262: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Lucifer 34263: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  fallen angel 34264: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Beelzebub 34268: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Azrael 34269: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Metatron 34270: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  throne 34271: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  principality 34272: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Abaddon 34273: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Raguel 56825: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Remiel 56826: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Sariel 56827: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Raziel 56828: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Jophiel 56829: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Chamuel 56830: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Zadkiel 56831: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Haniel 56832: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  Barachiel 56833: sensitive false -> true: an angel or devil of the Bible and Quran, as angel and devil (sensitive: religion); folklore spirits (fairy, ghost, banshee, djinn, imp) stay unflagged
+  heaven 34403: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  hell 34404: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  purgatory 34405: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  limbo 34406: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  afterlife 34407: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Sheol 34409: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Jannah 34410: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Gehenna 34411: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Pearly Gates 34412: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Judgment Day 34413: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  damnation 34414: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  hereafter 34416: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  transmigration 34417: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Day of Judgment 34418: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  moksha 34423: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  samsara 34424: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Abraham's bosom 34425: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  life after death 34429: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Naraka 61202: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  barzakh 61212: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  Death 56819: sensitive false -> true: the afterlife in religious belief, or death itself (Death the horseman), as salvation and reincarnation (sensitive: religion, death)
+  qibla 14026: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  prayer rug 14031: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  prayer mat 14032: sensitive false -> true: synonym alias of prayer rug 14031: the same sense, as its root
+  Kaaba 34323: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  Allah 34431: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  Muhammad 34432: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  salah 34433: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  sharia 34435: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  fatwa 34436: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  Sunni 34437: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  Shia 34438: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  Sufi 34439: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  umrah 34440: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  sawm 34441: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  shahada 34442: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  wudu 34445: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  caliphate 34447: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  madrasa 34448: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  takbir 34449: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  dhikr 34451: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  ummah 34452: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  mashallah 34453: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  inshallah 34454: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  tawhid 61206: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  ijtihad 61207: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  tarawih 61208: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  taraweeh 55707: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  kiswah 61209: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  ihram 61210: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  qurbani 55710: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  adhan 55715: sensitive false -> true: a term of Islamic faith and worship, as hajj, imam, halal and jihad (sensitive: religion; inşallah and maşallah are flagged already)
+  tallit 34379: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  prayer shawl 34380: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  tefillin 34381: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  tzitzit 61218: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  mezuzah 34457: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  seder 34459: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  yeshiva 34460: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  Star of David 34461: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  minyan 34464: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  Kaddish 34466: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  mikvah 34467: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  Ark 34468: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  Kabbalah 34469: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  Zion 34471: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  Hasidic 34474: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  eruv 61214: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  gematria 61215: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  chuppah 61216: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  Sanhedrin 61219: sensitive false -> true: a term of Jewish faith and worship, as Torah, shofar, menorah, kosher and bar mitzvah (sensitive: religion); food (challah, latke), dreidel and everyday words (shalom, mazel tov) stay unflagged
+  prayer wheel 14048: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  bodhi tree 14061: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  mantra 15937: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  dharma 15950: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  tantra 15960: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  Zen 29449: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  bodhisattva 34475: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  sangha 34476: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  koan 34477: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  Four Noble Truths 34479: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  Eightfold Path 34480: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  satori 34481: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  thangka 34482: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  prayer flag 34483: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  prayer flags 14051: sensitive false -> true: form alias of prayer flag 34483: the same sense, as its root
+  Theravada 34484: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  Mahayana 34485: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  Vajrayana 34486: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  vipassana 34489: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  zazen 34490: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  dukkha 34491: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  Siddhartha 34492: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  metta 34496: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  enlightenment 50207: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  anatta 61222: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  anicca 61223: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  skandha 61224: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  bardo 61226: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  jhana 61227: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  parinirvana 61228: sensitive false -> true: a term of Buddhist faith and practice, as Buddha, karma, nirvana and meditation (sensitive: religion); lotus, mindfulness, singing bowl and mandala stay unflagged (secular use)
+  chakra 15660: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  puja 34497: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  avatar 34498: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  om 34511: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  aarti 34514: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  prasad 34515: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  darshan 34516: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  atman 34518: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  murti 34519: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  yajna 34521: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  lingam 34522: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  kirtan 51756: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  Brahman 61229: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  bhakti 61230: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  varna 61232: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  samskara 61233: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  jnana 61234: sensitive false -> true: a term of Hindu faith and worship, as guru, Brahmin, caste and Vedas (sensitive: religion); yoga, bindi, tilak, rangoli and diya stay unflagged (secular or cultural use)
+  Vishnu 21962: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Shiva 21963: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Brahma 21964: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Ganesh 21965: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Ganesha 21966: sensitive false -> true: spelling alias of Ganesh 21965: the same sense, as its root
+  Ganapati 21967: sensitive false -> true: synonym alias of Ganesh 21965: the same sense, as its root
+  Hanuman 21968: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Krishna 21969: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Lakshmi 21971: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Saraswati 21972: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Parvati 21973: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Durga 21974: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Kali 21975: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Indra 21976: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Agni 21977: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Surya 21978: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Varuna 21979: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Vayu 21980: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Yama 21981: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Kartikeya 21982: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Murugan 21983: sensitive false -> true: synonym alias of Kartikeya 21982: the same sense, as its root
+  Sita 21984: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Radha 21985: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Kubera 21986: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Kama 21987: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Ganga 21988: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Narasimha 21989: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Nandi 21991: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Vamana 21992: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Parashurama 21993: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Balarama 21994: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Shakti 21995: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Rudra 21996: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Matsya 21997: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Kurma 21998: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Varaha 21999: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Kalki 22000: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Vishwakarma 22001: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Jagannath 22002: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Ayyappan 22003: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  Trimurti 22004: sensitive false -> true: a Hindu god, as god, deity, Allah and Buddha (sensitive: religion); Rama and Garuda are left: one entry holds the god and the legendary hero or winged beast (follow-up)
+  font 14004: sensitive false -> true: a furnishing for a rite (baptism, confession, holy water) or the cross itself, as altar (sensitive: religion); the building parts (nave, pulpit, crypt, belfry) stay unflagged as architecture
+  confessional 14013: sensitive false -> true: a furnishing for a rite (baptism, confession, holy water) or the cross itself, as altar (sensitive: religion); the building parts (nave, pulpit, crypt, belfry) stay unflagged as architecture
+  cross 14022: sensitive false -> true: a furnishing for a rite (baptism, confession, holy water) or the cross itself, as altar (sensitive: religion); the building parts (nave, pulpit, crypt, belfry) stay unflagged as architecture
+  stoup 68380: sensitive false -> true: a furnishing for a rite (baptism, confession, holy water) or the cross itself, as altar (sensitive: religion); the building parts (nave, pulpit, crypt, belfry) stay unflagged as architecture
+  new entry: metropolitan 68619 [of a city] adjective, common, familiarity 2: the everyday adjective (a metropolitan area), the sense a player knows
+  linked: metropolitan 68619 [of a city] in starts_with_metro (typicality 2): wrong sense: the everyday adjective metropolitan [of a city] takes the link (familiarity 2)
+  out of starts_with_metro: metropolitan 61179 [bishop]: the bishop sense: metropolitan [of a city] takes the link (stays in religious_leaders)
+2. W13a: chili pepper becomes the synonym alias of chili (two roots of one sense; chili, the US and neutral word, is the root, chilli its UK spelling); capsicums, a near-twin of chili peppers, is merged into it (LIBRARY-RULES 6: twins)
+  chili pepper 17658 becomes a synonym alias of chili 29499 (familiarity 2); links move: andean_crops:3 chili_peppers:1 hot_things:3: one sense: chili pepper is the full name of the chili (familiarity 2, the root 1)
+  linked: ghost pepper 18758 in chili_peppers (typicality 2, nameOkIn: the full name contains a word of the theme name): from its twin capsicums
+  linked: rocoto 62456 in chili_peppers (typicality 5): from its twin capsicums
+  linked: ají amarillo 62457 in chili_peppers (typicality 5): from its twin capsicums
+  out of capsicums: chili 29499 [pepper]: the bare category word: not linked in chili peppers (LIBRARY-RULES 5: never the bare category word in a theme of its kinds) (stays in words_from_nahuatl, spicy_foods, andean_crops, chili_peppers, hot_things)
+  deleted theme: capsicums "capsicums" (13 words, all still in other themes): a near-twin of chili_peppers (pop 2, ident 2 both): its words are in chili_peppers now, with the better typicality of the two
+  out of chili_peppers: chili 29499 [pepper]: the bare category word in a theme of its kinds (it came with chili pepper's link): it stays in spicy foods, words from Nahuatl, Andean crops and hot things (stays in words_from_nahuatl, spicy_foods, andean_crops, hot_things)
+3. W13b: blue penguin (NZ) and fairy penguin (AU) become regional aliases of little penguin (one bird; little penguin, its standard name, is the root)
+  blue penguin 51222 becomes a regional alias of little penguin 8241 (familiarity 3, region NZ): one bird (Eudyptula minor): blue penguin is its New Zealand name
+  fairy penguin 8242 becomes a regional alias of little penguin 8241 (familiarity 4, region AU): one bird: fairy penguin is its Australian name (its show "fairy" in penguins cannot move: little penguin shows "little" there)
+  fairy penguin 8242: nameOkIn [] -> ["penguins"]: the alias inherits penguins, where its full name contains penguin (as little blue penguin)
+  blue penguin 51222: nameOkIn [] -> ["penguins"]: the alias inherits penguins, where its full name contains penguin (as little blue penguin)
+  little penguin 8241: fam 4 -> 3: the standard name of the smallest penguin, as well known as blue penguin (3); 4 made the root harder than its alias
+4. W13c: curry and mushroom leave curries and mushrooms (LIBRARY-RULES 5: never the bare category word in a theme of its kinds); each theme keeps four easy members
+  out of curries: curry 799: the general word beside its own kinds (stays in dishes, stews, asian_food, spicy_foods, pungent_foods, hot_things, indian_food, dinner_foods)
+  out of mushrooms: mushroom 17645 [fungus]: the general word beside its own kinds (stays in pizza_toppings, burger_toppings, forest_floor, foraging_finds, fungi, blank_room, on_toast)
+  linked: fish curry 17851 in curries (typicality 2, shown "fish"): a well-known curry (familiarity 2), a fourth easy member once curry leaves: shown "fish" (curry is a word of the theme name), as "button" in mushrooms
+  oyster mushroom 17613: fam 3 -> 2: a supermarket staple nearly every adult has seen (as portobello, 2); the fourth easy member once mushroom leaves (Zipf 3.2)
+5. W13d: bachelor's button becomes a plain synonym of cornflower (as jump drive, v456)
+  bachelor's button 1748 (alias of cornflower 1747): kind regional -> synonym: cornflower is the US word as well (cornflower blue, the Crayola color); bachelor's button is a garden name. As the US display alias it showed every US player "bachelor's button" (familiarity 4) for cornflower (3)
+Sensitive roots linked per theme (sensitive / all), before -> after (328 roots flagged, 0 unflagged; aliases follow their roots):
+  holy_cities: 0/32 -> 0/32
+  famous_temples (theme not sensitive): 4/48 -> 4/48
+  famous_mosques: 6/31 -> 6/31
+  famous_churches: 9/44 -> 9/44
+  religion: 103/120 -> 117/120 (+14)
+  the_four_evangelists: 0/4 -> 0/4
+  four_horsemen_of_the_apocalypse: 2/5 -> 3/5 (+1)
+  seven_deadly_sins: 0/8 -> 0/8
+  parts_of_a_religious_service: 8/13 -> 13/13 (+5)
+  religious_festivals: 24/45 -> 43/45 (+19)
+  religious_leaders: 11/47 -> 42/47 (+31)
+  holy_books: 9/44 -> 42/44 (+33)
+  angels_and_spirits: 2/41 -> 20/41 (+18)
+  archangels: 0/15 -> 15/15 (+15)
+  places_of_worship: 11/39 -> 36/39 (+25)
+  pilgrimage_sites: 1/48 -> 2/48 (+1)
+  famous_saints: 2/46 -> 2/46
+  religious_clothing: 0/40 -> 3/40 (+3)
+  afterlife_words: 5/45 -> 25/45 (+20)
+  islam_words: 9/53 -> 42/53 (+33)
+  pilgrimage_words: 1/8 -> 5/8 (+4)
+  judaism_words: 15/58 -> 41/58 (+26)
+  jewish_holidays: 6/8 -> 8/8 (+2)
+  jewish_ritual_objects: 2/11 -> 7/11 (+5)
+  buddhism_words: 6/51 -> 43/51 (+37)
+  key_teachings: 2/16 -> 16/16 (+14)
+  contemplative_practices: 1/8 -> 7/8 (+6)
+  temple_sights: 1/9 -> 7/9 (+6)
+  hinduism_words: 10/55 -> 46/55 (+36)
+  spiritual_concepts: 1/11 -> 11/11 (+10)
+  world_religions: 14/14 -> 14/14
+  christmas (theme not sensitive): 3/40 -> 3/40
+  christmas_carols (theme not sensitive): 17/26 -> 20/26 (+3)
+  easter (theme not sensitive): 12/38 -> 13/38 (+1)
+  festivals_of_the_world: 17/44 -> 21/44 (+4)
+  ramadan_and_eid: 5/30 -> 12/30 (+7)
+  hindu_festivals: 12/12 -> 12/12
+  church_parts: 6/41 -> 12/41 (+6)
+  mosque_parts: 1/22 -> 4/22 (+3)
+  asian_temple_features (theme not sensitive): 1/36 -> 6/36 (+5)
+  hindu_gods: 0/40 -> 38/40 (+38)
+Newly flagged roots also linked in themes that are not sensitive (held back to level 31 there now) 32: stupa 14045 (asian_temple_features, ancient_india, east_asian_buildings); shrine 14050 (asian_temple_features, east_asian_buildings); ashram 15943 (yoga_words, starts_with_ash); fire temple 20552 (ancient_persia); kirk 27397 (scottish_words, scottish_landscape_words); Eastertide 25062 (easter); sexton 20753 (medieval_jobs); friar 20853 (robin_hood_legend); vicar 28716 (hidden_vehicles, ends_with_public_transport); chaplain 34209 (people_at_a_hospital); exorcism 22790 (ghosts_and_spirits); Holly and the Ivy 55595 (christmas_carols); Ding Dong Merrily 55596 (christmas_carols); I Saw Three Ships 55601 (christmas_carols); Tripitaka 22155 (chinese_mythology); sutra 15944 (yoga_words); cherub 34253 (things_with_wings); prayer rug 14031 (islamic_art_words, rugs_and_carpets); Kaaba 34323 (middle_eastern_buildings); madrasa 34448 (middle_eastern_buildings, school_types); yeshiva 34460 (school_types); Star of David 34461 (symbols); prayer wheel 14048 (asian_temple_features); bodhi tree 14061 (asian_temple_features, asian_trees); mantra 15937 (yoga_words); dharma 15950 (yoga_words); tantra 15960 (yoga_words); Zen 29449 (words_from_japanese); thangka 34482 (asian_art_forms); prayer flag 34483 (asian_temple_features); chakra 15660 (ayurveda_words, yoga_words); kirtan 51756 (asian_music_styles)
+Unflagged roots, now usable before level 31 in: none
+Game-like 4th-easiest band below level 31 (roots not sensitive, adult, offensive or a name word; v456 measure), before -> after:
+  curries: 3 -> 2 (theme difficulty 1.5)
+  mushrooms: 3 -> 2 (theme difficulty 1.5)
+  chili_peppers: 3 -> 3 (theme difficulty 1.5)
+  capsicums: 3 -> gone (merged into chili_peppers: 3)
+  penguins: 3 -> 3 (theme difficulty 1.5)
+  blue_flowers: 3 -> 3 (theme difficulty 1.5)
+  christmas_carols: 2 -> 2 (theme difficulty 1.5)
+  christmas: 1 -> 1 (theme difficulty 1)
+  easter: 1 -> 1 (theme difficulty 1)
+  church_parts: 2 -> 3 (theme difficulty 1.5)
+  mosque_parts: 3 -> 3 (theme difficulty 3.5)
+  asian_temple_features: 2 -> 3 (theme difficulty 3)
+  famous_temples: 3 -> 3 (theme difficulty 3.5)
+  spicy_foods: 2 -> 2 (theme difficulty 1.5)
+  fungi: 2 -> 2 (theme difficulty 1.5)
+  flightless_birds: 2 -> 2 (theme difficulty 1.5)
+  new_zealand_animals: 4 -> 3 (theme difficulty 3.5)
+Difficulty spread and gap of the W13 themes (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  asian_temple_features: "Asian temple features" pop 3 ident 3: 36 words, easy/middle/hard 5/14/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "Asian temple features" pop 3 ident 3: 36 words, easy/middle/hard 5/14/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  capsicums: "capsicums" pop 2 ident 2: 14 words, easy/middle/hard 2/7/5, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> deleted
+  chili_peppers: "chili peppers" pop 2 ident 2: 35 words, easy/middle/hard 2/9/24, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "chili peppers" pop 2 ident 2: 37 words, easy/middle/hard 1/10/26, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  christmas_carols: "Christmas carols" pop 2 ident 2: 26 words, easy/middle/hard 11/4/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "Christmas carols" pop 2 ident 2: 26 words, easy/middle/hard 11/4/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  church_parts: "church parts" pop 2 ident 2: 41 words, easy/middle/hard 5/15/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "church parts" pop 2 ident 2: 41 words, easy/middle/hard 5/15/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  curries: "curries" pop 2 ident 2: 11 words, easy/middle/hard 4/7/0, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "curries" pop 2 ident 2: 11 words, easy/middle/hard 4/7/0, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  easter: "Easter" pop 1 ident 1: 38 words, easy/middle/hard 11/11/16, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "Easter" pop 1 ident 1: 38 words, easy/middle/hard 11/11/16, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  flightless_birds: "flightless birds" pop 2 ident 2: 38 words, easy/middle/hard 7/5/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "flightless birds" pop 2 ident 2: 37 words, easy/middle/hard 7/5/25, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  mosque_parts: "mosque parts" pop 4 ident 3: 22 words, easy/middle/hard 1/5/16, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "mosque parts" pop 4 ident 3: 22 words, easy/middle/hard 1/5/16, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  mushrooms: "mushrooms" pop 2 ident 2: 37 words, easy/middle/hard 4/8/25, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "mushrooms" pop 2 ident 2: 36 words, easy/middle/hard 4/7/25, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  penguins: "penguins" pop 2 ident 2: 23 words, easy/middle/hard 2/2/19, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "penguins" pop 2 ident 2: 21 words, easy/middle/hard 2/2/17, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 1: metropolitan 68619
+Entries deleted 0: none
+library changes 644; entries changed 359; status set to rev 289; themes deleted 1; entries merged 3
+Checks: changed kinds: info:overlap 4802 -> 4798
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1422
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3190 -> 3189; gone capsicums (index 3053); new none; theme indexes shift: from index 3053 ("umami_foods", was "capsicums") to the last index 3188
+Theme rows whose fields changed (parent compared by id): 10: mushrooms (index 26 -> 26: counts [2,3,8,12,15] -> [1,4,7,12,15]); chili_peppers (index 97 -> 97: counts [0,2,9,12,13] -> [0,1,10,12,15]); curries (index 150 -> 150: counts [1,3,7,0,0] -> [0,4,7,0,0]); flightless_birds (index 282 -> 282: counts [3,4,5,12,15] -> [3,4,5,11,15]); penguins (index 283 -> 283: counts [1,1,2,12,8] -> [1,1,2,11,8]); new_zealand_animals (index 391 -> 391: counts [0,1,2,17,16] -> [0,1,3,17,16], range [4,5] -> [3,5]); fungi (index 508 -> 508: counts [1,3,11,19,10] -> [1,4,10,19,10]); starts_with_metro (index 2828 -> 2828: counts [0,1,1,0,2] -> [0,2,1,0,1]); words_from_nahuatl (index 2935 -> 2935: counts [4,3,13,12,8] -> [4,4,13,12,8]); spicy_foods (index 3052 -> 3052: counts [2,7,17,15,12] -> [2,8,17,15,12])
+Entry rows 61135 -> 61136; first row whose entry changed: 61135 (metropolitan 68619, was undefined); rows that moved: 0; added metropolitan 68619 (row 61135); removed none
+root -> alias rows 3: fairy penguin 8242, chili pepper 17658, blue penguin 51222; alias -> root rows 0: none
+Rows whose flags changed: 335
+Links 97899 -> 97883; rows whose link count changed: 18
+Link-index shifts: from row 753 (allspice 763) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 23, new 7, rating changed 5
+  gone (other than the deleted themes): curries: "curry" (799), flightless_birds: "fairy penguin" (8242), penguins: "fairy" (8242), mushrooms: "mushroom" (17645), andean_crops: "chili pepper" (17658), chili_peppers: "chili pepper" (17658), hot_things: "chili pepper" (17658), penguins: "blue" (51222), starts_with_metro: "metropolitan" (61179)
+  new: curries: "fish" (17851), chili_peppers: "ghost pepper" (18758), andean_crops: "chili" (29499), hot_things: "chili" (29499), chili_peppers: "rocoto" (62456), chili_peppers: "ají amarillo" (62457), starts_with_metro: "metropolitan" (68619)
+  rating: flightless_birds: "little penguin" (8241) 4/4 -> 3.7/4, penguins: "little" (8241) 3.7/3 -> 3/3, new_zealand_animals: "little penguin" (8241) 3.7/3 -> 3/3, fungi: "oyster mushroom" (17613) 2.7/2 -> 2/2, mushrooms: "oyster" (17613) 2.7/2 -> 2/2
+new issues: none
+
+Scope (Simon, 2026-11-24, via the coordinator): the reviewer's narrower version plus the yoga words. Kept: every flag inside the religion themes; clergy, rites, places of worship and scripture outside them (vicar, sexton, friar, chaplain, kirk, Kaaba, madrasa, yeshiva, Star of David, the Nativity carols, Eastertide); the yoga words (mantra, chakra, dharma, tantra, sutra, ashram, Zen). Left unflagged: zakat, tzedakah, Dalai Lama (a person), caliph (a historical title, v417). No flag removed: spire, steeple, minaret, flying buttress and Lalibela keep theirs (Simon declined narrowing in I31). metropolitan: the everyday adjective (new entry, [of a city]) takes the starts with metro link, then the bishop sense is flagged.
+
+For Simon (not done)
+1. Christmas, Easter, Shrove Tuesday and Kwanzaa stay sensitive (your open v416/I30 decision).
+2. Hindu festivals: all 12 stay sensitive (v455).
+3. Saints, the four evangelists, pilgrimage sites, holy cities and named churches, mosques and temples are left as they are.
+4. Religious dress (hijab, burqa, turban, cassock, kippah, saffron robe) stays unflagged; the prayer objects tallit, prayer shawl, tefillin and tzitzit are flagged.
+5. Little Drummer Boy stays unflagged (v456 counts it as an easy carol).
+
+Follow-ups (found, not changed)
+- rapture 4053 holds two senses (the emotion; the Christian Rapture in afterlife words): needs a sense split. Left unflagged.
+- Root pairs of one sense: taraweeh 55707 / tarawih 61208; Laylat al-Qadr 55708 / Lailat al-Qadr 61177 (all four now flagged).
+- Rama 21970 [god] is one entry for the god and the hero (legendary heroes); Garuda 21990 [eagle mount] for the divine mount and the winged beast (winged beasts). Both left unflagged; a sense split would let the god senses be flagged.
+- korora 63112 is the little penguin as well (Māori name; still a root in the penguins group).
+- sheikh 34217 [Muslim leader] is also linked in royal titles and Ottoman titles (the ruler sense): left unflagged.
+- chili peppers still has fewer than four easy words (game-like band 3; v456: no fourth easy member exists).
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v457 (ISSUES W12, W13):
+- Religious words flagged sensitive by sense: 328 roots (places of worship, holy days, clergy, rites, scriptures, angels, the afterlife, Islamic, Jewish, Buddhist and Hindu terms, Hindu gods, the yoga words mantra, chakra, dharma, tantra, sutra, ashram, Zen); none unflagged. Aliases follow their roots: 335 export rows change flags. 32 of the words also sit in themes that are not sensitive (yoga words, Asian temple features, Christmas carols, school types ...) and are held back to level 31 there; every such theme keeps at least 5 words before level 31.
+- metropolitan: a new entry [of a city] (adjective) replaces the bishop sense in starts with metro.
+- capsicums is merged into chili peppers and deleted (ghost pepper, rocoto, ají amarillo join chili peppers). chili pepper becomes the synonym alias of chili; chili leaves chili peppers.
+- blue penguin (NZ) and fairy penguin (AU) become regional aliases of little penguin (familiarity 4 -> 3); the "blue" and "fairy" shown texts in penguins go.
+- curry leaves curries (fish curry joins, shown "fish"); mushroom leaves mushrooms (oyster mushroom familiarity 3 -> 2). Both keep four easy words.
+- bachelor's button is a plain synonym of cornflower: US players see cornflower.
+Theme rows 3190 -> 3189: capsicums (index 3053) is gone; every theme from index 3053 on moves down by one (umami_foods now 3053, the last index 3188).
+Entry rows 61135 -> 61136: metropolitan 68619 added as the last row (61135); no other row moves. fairy penguin 8242, chili pepper 17658 and blue penguin 51222 turn from roots into aliases. Link positions move from row 753 on (links 97899 -> 97883).
+New characters: none.
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v457 (ISSUES W12, W13):
+- Religious words flagged sensitive by sense: 328 roots (places of worship, holy days, clergy, rites, scriptures, angels, the afterlife, Islamic, Jewish, Buddhist and Hindu terms, Hindu gods, the yoga words mantra, chakra, dharma, tantra, sutra, ashram, Zen); none unflagged. Aliases follow their roots: 335 export rows change flags. 32 of the words also sit in themes that are not sensitive (yoga words, Asian temple features, Christmas carols, school types ...) and are held back to level 31 there; every such theme keeps at least 5 words before level 31.
+- metropolitan: a new entry [of a city] (adjective) replaces the bishop sense in starts with metro.
+- capsicums is merged into chili peppers and deleted (ghost pepper, rocoto, ají amarillo join chili peppers). chili pepper becomes the synonym alias of chili; chili leaves chili peppers.
+- blue penguin (NZ) and fairy penguin (AU) become regional aliases of little penguin (familiarity 4 -> 3); the "blue" and "fairy" shown texts in penguins go.
+- curry leaves curries (fish curry joins, shown "fish"); mushroom leaves mushrooms (oyster mushroom familiarity 3 -> 2). Both keep four easy words.
+- bachelor's button is a plain synonym of cornflower: US players see cornflower.
+Theme rows 3190 -> 3189: capsicums (index 3053) is gone; every theme from index 3053 on moves down by one (umami_foods now 3053, the last index 3188).
+Entry rows 61135 -> 61136: metropolitan 68619 added as the last row (61135); no other row moves. fairy penguin 8242, chili pepper 17658 and blue penguin 51222 turn from roots into aliases. Link positions move from row 753 on (links 97899 -> 97883).
+New characters: none.
