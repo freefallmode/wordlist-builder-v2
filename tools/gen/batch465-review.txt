@@ -1,36 +1,234 @@
 Library batch v465 (for Simon's review): Qualities, smells branch: words that do not fit out and well-known words added in its eight themes; new theme scented products.
 1. things that smell good
+  linked: soap 3726 [wash] in things_that_smell_good (typicality 2): well known for its nice smell; it was not linked
+  linked: apple pie 18168 in things_that_smell_good (typicality 2): well known for its nice smell; it was not linked
+  linked: cologne 3741 [perfume] in things_that_smell_good (typicality 2): well known for its nice smell; it was not linked
+  linked: bouquet 25100 [flowers] in things_that_smell_good (typicality 2): well known for its nice smell; it was not linked
+  linked: Christmas tree 25007 [evergreen tree] in things_that_smell_good (typicality 3): well known for its nice smell; it was not linked
+  linked: gingerbread 18141 in things_that_smell_good (typicality 3): well known for its nice smell; it was not linked
+  linked: shampoo 3727 in things_that_smell_good (typicality 3): well known for its nice smell; it was not linked
+  linked: incense 14760 [smell] in things_that_smell_good (typicality 3): well known for its nice smell; it was not linked
+  linked: potpourri 25683 in things_that_smell_good (typicality 3): well known for its nice smell; it was not linked
+  linked: leather 24841 [material] in things_that_smell_good (typicality 4): well known for its nice smell; it was not linked
+  linked: sunscreen 3745 in things_that_smell_good (typicality 4): well known for its nice smell; it was not linked
+  group in things_that_smell_good: perfume 3740 = cologne 3741: grouped in toiletries and personal care too
 2. smells from the kitchen
+  out of smells_from_the_kitchen: strawberry 91 [berry]: its smell is not tied to the kitchen (stays in fruits, berries, ice_cream_flavors, ice_cream_parlor, red_things, soda_flavors, jam_flavours, blank_berry, red_fruits, picnic_basket, signs_of_summer, things_that_smell_good, midsummer)
+  out of smells_from_the_kitchen: peach 93 [fruit]: its smell is not tied to the kitchen (stays in fruits, stone_fruits, foods_you_peel, words_from_persian, soda_flavors, jam_flavours, canned_foods, things_that_smell_good)
+  linked: garlic 404 in smells_from_the_kitchen (typicality 2): a well-known kitchen smell; it was not linked
+  linked: apple pie 18168 in smells_from_the_kitchen (typicality 2): a well-known kitchen smell; it was not linked
+  linked: curry 799 in smells_from_the_kitchen (typicality 3): a well-known kitchen smell; it was not linked
+  linked: gingerbread 18141 in smells_from_the_kitchen (typicality 3): a well-known kitchen smell; it was not linked
+  linked: cinnamon roll 18077 in smells_from_the_kitchen (typicality 3): a well-known kitchen smell; it was not linked
+  linked: garlic bread 20324 in smells_from_the_kitchen (typicality 3): a well-known kitchen smell; it was not linked
+  linked: roast chicken 17725 in smells_from_the_kitchen (typicality 3): a well-known kitchen smell; it was not linked
+  linked: pizza 795 in smells_from_the_kitchen (typicality 3): a well-known kitchen smell; it was not linked
+  linked: rosemary 716 [culinary herb] in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
+  linked: basil 713 [culinary herb] in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
+  linked: nutmeg 740 [spice] in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
+  linked: cloves 743 in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
+  linked: cardamom 760 in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
+  linked: ginger 718 [spice root] in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
+  linked: maple syrup 18432 in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
+  linked: bay leaf 739 in smells_from_the_kitchen (typicality 4): a well-known kitchen smell; it was not linked
 3. woody and resin scents
+  out of woody_and_resin_scents: campfire 3024 [outdoor fire]: smoke, not wood or resin (stays in campsite, stone_age, things_that_smell_good, candle_scents, hot_things, fire_words, camping_gear, smores, summer_camp)
+  typicality: pine 1629 in woody_and_resin_scents 3 -> 1: one of the first answers here (the rating was the one of things that smell good)
+  typicality: cedar 1637 in woody_and_resin_scents 3 -> 1: one of the first answers here (the rating was the one of things that smell good)
+  typicality: sandalwood 1674 in woody_and_resin_scents 4 -> 1: one of the first answers here (the rating was the one of things that smell good)
+  typicality: frankincense 15591 in woody_and_resin_scents 4 -> 2: one of the first answers here (the rating was the one of things that smell good)
+  typicality: myrrh 15592 in woody_and_resin_scents 5 -> 2: one of the first answers here (the rating was the one of things that smell good)
+  typicality: oud 16292 in woody_and_resin_scents 5 -> 2: one of the first answers here (the rating was the one of things that smell good)
+  typicality: patchouli 39731 in woody_and_resin_scents 4 -> 3: one of the first answers here (the rating was the one of things that smell good)
+  linked: amber 39730 [scent] in woody_and_resin_scents (typicality 2): a woody or resin scent; it was not linked
+  linked: incense 14760 [smell] in woody_and_resin_scents (typicality 3): a woody or resin scent; it was not linked
+  linked: spruce 1639 in woody_and_resin_scents (typicality 3): a woody or resin scent; it was not linked
+  linked: fir 1638 in woody_and_resin_scents (typicality 3): a woody or resin scent; it was not linked
+  linked: juniper 1655 [tree] in woody_and_resin_scents (typicality 3): a woody or resin scent; it was not linked
+  linked: cypress 1646 [tree] in woody_and_resin_scents (typicality 3): a woody or resin scent; it was not linked
+  linked: sawdust 17917 [wood] in woody_and_resin_scents (typicality 3): a woody or resin scent; it was not linked
+  linked: cedarwood 39735 in woody_and_resin_scents (typicality 3): a woody or resin scent; it was not linked
+  linked: teakwood 39752 in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: balsam fir 15705 in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: oakmoss 39732 in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: agarwood 39755 in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: rosewood 29942 [wood] in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: birch 1634 [tree] in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: labdanum 39736 in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: benzoin 39738 in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: palo santo 56450 in woody_and_resin_scents (typicality 4): a woody or resin scent; it was not linked
+  linked: copal 29504 in woody_and_resin_scents (typicality 5): a woody or resin scent; it was not linked
+  group in woody_and_resin_scents: cedar 1637 = cedarwood 39735: the same answer
+  group in woody_and_resin_scents: fir 1638 = balsam fir 15705: a word and its more specific form: one answer
+  group in woody_and_resin_scents: oud 16292 = agarwood 39755: oud is the scent of agarwood: one answer
 4. things that smell bad
+  out of things_that_smell_bad: tar pit 39720: not known for its smell (now in no theme: not exported)
+  linked: armpit 3192 in things_that_smell_bad (typicality 2): well known for its bad smell; it was not linked
+  linked: landfill 23976 in things_that_smell_bad (typicality 2): well known for its bad smell; it was not linked
+  linked: sewage 28255 in things_that_smell_bad (typicality 2): well known for its bad smell; it was not linked
+  linked: swamp 1924 [wooded wetland] in things_that_smell_bad (typicality 2): well known for its bad smell; it was not linked
+  linked: pigsty 10162 in things_that_smell_bad (typicality 3): well known for its bad smell; it was not linked
+  linked: stink bug 1424 in things_that_smell_bad (typicality 3): well known for its bad smell; it was not linked
+  linked: latrine 3071 in things_that_smell_bad (typicality 3): well known for its bad smell; it was not linked
+  linked: mothball 66296 in things_that_smell_bad (typicality 3): well known for its bad smell; it was not linked
+  linked: fish market 47504 in things_that_smell_bad (typicality 3): well known for its bad smell; it was not linked
+  linked: stinky tofu 19137 in things_that_smell_bad (typicality 4): well known for its bad smell; it was not linked
+  linked: guano 29506 in things_that_smell_bad (typicality 4): well known for its bad smell; it was not linked
+  linked: polecat 7999 in things_that_smell_bad (typicality 4): well known for its bad smell; it was not linked
+  group in things_that_smell_bad: sewer 28812 = sewage 28255: a sewer and what is in it: one answer
 5. pungent foods
+  out of pungent_foods: liver 3240: a strong taste, not a strong smell (stays in inside_the_body, organs, digestive_system, butcher_shop)
+  out of pungent_foods: cardamom 760: fragrant rather than pungent (stays in herbs_spices_and_sauces, middle_eastern_remedies, spices, spice_trade, middle_eastern_scents, smells_from_the_kitchen)
+  typicality: vinegar 730 in pungent_foods 3 -> 2: one of the first answers
+  typicality: mustard 720 in pungent_foods 3 -> 2: one of the first answers
+  typicality: anchovy 482 in pungent_foods 3 -> 2: one of the first answers
+  typicality: sauerkraut 18857 in pungent_foods 3 -> 2: one of the first answers
+  linked: sardine 481 in pungent_foods (typicality 2): a well-known pungent food; it was not linked
+  linked: tuna 467 in pungent_foods (typicality 2): a well-known pungent food; it was not linked
+  linked: ginger 718 [spice root] in pungent_foods (typicality 2): a well-known pungent food; it was not linked
+  linked: black pepper 721 in pungent_foods (typicality 3): a well-known pungent food; it was not linked
+  linked: radish 405 in pungent_foods (typicality 3): a well-known pungent food; it was not linked
+  linked: parmesan 241 in pungent_foods (typicality 3): a well-known pungent food; it was not linked
+  linked: goat cheese 17928 in pungent_foods (typicality 3): a well-known pungent food; it was not linked
+  linked: hard-boiled egg 16759 in pungent_foods (typicality 3): a well-known pungent food; it was not linked
+  linked: truffle 17618 [fungus] in pungent_foods (typicality 3): a well-known pungent food; it was not linked
+  linked: camembert 244 in pungent_foods (typicality 3): a well-known pungent food; it was not linked
+  linked: mackerel 492 in pungent_foods (typicality 4): a well-known pungent food; it was not linked
 6. perfume notes
+  linked: lemon 74 [fruit] in perfume_notes (typicality 2): a well-known perfume note; it was not linked
+  linked: coconut 351 [fruit] in perfume_notes (typicality 2): a well-known perfume note; it was not linked
+  linked: peach 93 [fruit] in perfume_notes (typicality 2): a well-known perfume note; it was not linked
+  linked: cinnamon 717 [spice] in perfume_notes (typicality 2): a well-known perfume note; it was not linked
+  linked: orange blossom 30502 in perfume_notes (typicality 2): a well-known perfume note; it was not linked
+  linked: grapefruit 77 [citrus fruit] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: pear 89 [fruit] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: caramel 612 in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: gardenia 1736 [flower] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: peony 1717 [flower] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: honeysuckle 30462 [flower] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: freesia 1744 in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: magnolia 1664 [tree] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: saffron 761 [spice] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: tobacco 15442 in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: incense 14760 [smell] in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  linked: cardamom 760 in perfume_notes (typicality 3): a well-known perfume note; it was not linked
+  group in perfume_notes: orange blossom 30502 = neroli 39733: grouped in things that smell good too
 7. candle scents
+  out of candle_scents: mahogany teakwood 39753: one shop's blend; teakwood is there (now in no theme: not exported)
+  out of candle_scents: rainfall 1966: rain is there (stays in rain_words, monsoon_season, weather, kinds_of_precipitation, things_that_drip, rain_blank)
+  out of candle_scents: frankincense and myrrh 39754: two scents; frankincense takes the place (now in no theme: not exported)
+  fresh cut grass 39750 becomes a synonym alias of cut grass 39687 (familiarity 1); links move: candle_scents:3: the same thing entered twice
+  linked: frankincense 15591 in candle_scents (typicality 4): a well-known candle scent; it was not linked
+  linked: apple 87 [fruit] in candle_scents (typicality 2): a well-known candle scent; it was not linked
+  linked: caramel 612 in candle_scents (typicality 2): a well-known candle scent; it was not linked
+  linked: marshmallow 611 in candle_scents (typicality 3): a well-known candle scent; it was not linked
+  linked: sea salt 39037 in candle_scents (typicality 3): a well-known candle scent; it was not linked
+  linked: lemongrass 758 in candle_scents (typicality 3): a well-known candle scent; it was not linked
+  linked: gardenia 1736 [flower] in candle_scents (typicality 3): a well-known candle scent; it was not linked
+  linked: honeysuckle 30462 [flower] in candle_scents (typicality 3): a well-known candle scent; it was not linked
+  linked: Christmas tree 25007 [evergreen tree] in candle_scents (typicality 3): a well-known candle scent; it was not linked
+  linked: leather 24841 [material] in candle_scents (typicality 4): a well-known candle scent; it was not linked
+  linked: fig 101 in candle_scents (typicality 4): a well-known candle scent; it was not linked
+  linked: driftwood 30059 [beach] in candle_scents (typicality 4): a well-known candle scent; it was not linked
+  linked: hyacinth 1713 [flower] in candle_scents (typicality 4): a well-known candle scent; it was not linked
+  linked: blueberry 348 [fruit] in candle_scents (typicality 4): a well-known candle scent; it was not linked
 8. Middle Eastern scents
+  out of middle_eastern_scents: kohl 16226: eye makeup, not a scent (stays in makeup, middle_eastern_grooming, moroccan_souvenirs, words_from_arabic)
+  out of middle_eastern_scents: sumac 780: a food spice, not a scent (stays in herbs_spices_and_sauces, native_american_remedies, spices, middle_eastern_food, bazaar, sour_foods, plants_of_the_middle_east)
+  out of middle_eastern_scents: za'atar 18706: a food spice, not a scent (stays in spices, spice_blends, middle_eastern_food)
+  out of middle_eastern_scents: pomegranate blossom 39759: hardly any scent (stays in red_flowers)
+  linked: rose 1693 [flower] in middle_eastern_scents (typicality 1): a well-known scent of the region; it was not linked
+  linked: cedar 1637 [tree] in middle_eastern_scents (typicality 3): a well-known scent of the region; it was not linked
+  linked: cinnamon 717 [spice] in middle_eastern_scents (typicality 3): a well-known scent of the region; it was not linked
+  linked: cloves 743 in middle_eastern_scents (typicality 3): a well-known scent of the region; it was not linked
+  linked: patchouli 39731 in middle_eastern_scents (typicality 3): a well-known scent of the region; it was not linked
+  linked: narcissus 1700 [flower] in middle_eastern_scents (typicality 4): a well-known scent of the region; it was not linked
+  linked: olive oil soap 16304 in middle_eastern_scents (typicality 4): a well-known scent of the region; it was not linked
+  group in middle_eastern_scents: oud 16292 = agarwood 39755: oud is the scent of agarwood: one answer
+  group in middle_eastern_scents: attar 16293 = rose attar 39758: a word and its more specific form: one answer
+  group in middle_eastern_scents: rose 1693 = damask rose 30523: a word and its more specific form: one answer
+  group in middle_eastern_scents: bakhoor 16296 = dukhoon 16300: the same answer
 9. scented products (new)
+  new theme: scented_products "scented products" under smells (after candle_scents), pop 2, ident 3: the branch had scents and smells, but not the things that are scented
+  linked: perfume 3740 in scented_products (typicality 1): made to smell nice
+  linked: candles 16276 in scented_products (typicality 1): made to smell nice
+  linked: air freshener 23395 in scented_products (typicality 1): made to smell nice
+  linked: soap 3726 [wash] in scented_products (typicality 1): made to smell nice
+  linked: shampoo 3727 in scented_products (typicality 1): made to smell nice
+  linked: cologne 3741 [perfume] in scented_products (typicality 1): made to smell nice
+  linked: incense 14760 [smell] in scented_products (typicality 1): made to smell nice
+  linked: potpourri 25683 in scented_products (typicality 1): made to smell nice
+  linked: deodorant 3733 in scented_products (typicality 2): made to smell nice
+  linked: bubble bath 3758 in scented_products (typicality 2): made to smell nice
+  linked: bath bomb 3813 in scented_products (typicality 2): made to smell nice
+  linked: aftershave 3739 in scented_products (typicality 2): made to smell nice
+  linked: fabric softener 23883 in scented_products (typicality 2): made to smell nice
+  linked: shower gel 3756 in scented_products (typicality 2): made to smell nice
+  linked: wax melt 25603 in scented_products (typicality 2): made to smell nice
+  linked: bath salts 15510 [bath product] in scented_products (typicality 3): made to smell nice
+  linked: lotion 3742 in scented_products (typicality 3): made to smell nice
+  linked: hand cream 3782 in scented_products (typicality 3): made to smell nice
+  linked: lip balm 3777 in scented_products (typicality 3): made to smell nice
+  linked: laundry detergent 40573 in scented_products (typicality 3): made to smell nice
+  linked: conditioner 3728 [hair] in scented_products (typicality 3): made to smell nice
+  linked: baby powder 3781 in scented_products (typicality 3): made to smell nice
+  linked: dish soap 23374 in scented_products (typicality 4): made to smell nice
+  linked: hairspray 3770 [hair product] in scented_products (typicality 4): made to smell nice
+  linked: shaving cream 3738 in scented_products (typicality 4): made to smell nice
+  linked: mouthwash 3732 in scented_products (typicality 4): made to smell nice
+  linked: baby wipes 15760 in scented_products (typicality 4): made to smell nice
+  linked: sunscreen 3745 in scented_products (typicality 4): made to smell nice
+  linked: marker 34759 [pen] in scented_products (typicality 4): made to smell nice
+  linked: eraser 12017 in scented_products (typicality 4): made to smell nice
+  linked: trash bags 23370 in scented_products (typicality 4): made to smell nice
+  linked: pomander 20970 in scented_products (typicality 4): made to smell nice
+  linked: cat litter 50839 in scented_products (typicality 5): made to smell nice
+  linked: toilet paper 23138 in scented_products (typicality 5): made to smell nice
+  new entry: body spray 68825 noun, common, familiarity 2: a scented spray for the body
+  linked: body spray 68825 in scented_products (typicality 2): a scented spray for the body
+  new entry: essential oil 68826 noun, common, familiarity 2: a scented plant oil
+  linked: essential oil 68826 in scented_products (typicality 1): a scented plant oil
+  new entry: sachet 68827 noun, common, familiarity 3: a small scented bag
+  linked: sachet 68827 in scented_products (typicality 2): a small scented bag
+  new entry: diffuser 68828 [scent] noun, common, familiarity 3: it spreads a scent in a room
+  linked: diffuser 68828 [scent] in scented_products (typicality 2): it spreads a scent in a room
+  kin: diffuser 68828 [scent] <-> diffusion 40877: one word family (as diffuser [hair])
+  new entry: eau de toilette 68829 noun, common, familiarity 3: a light perfume
+  linked: eau de toilette 68829 in scented_products (typicality 3): a light perfume
+  group in scented_products: soap 3726 = dish soap 23374: a word and its more specific form: one answer
+  group in scented_products: perfume 3740 = cologne 3741 = eau de toilette 68829: kinds of perfume, grouped in toiletries too
 Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  candle_scents: "candle scents" pop 2 ident 3: 45 words, easy/middle/hard 16/17/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "candle scents" pop 2 ident 3: 56 words, easy/middle/hard 18/23/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  middle_eastern_scents: "Middle Eastern scents" pop 4 ident 4: 30 words, easy/middle/hard 2/7/21, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "Middle Eastern scents" pop 4 ident 4: 33 words, easy/middle/hard 3/11/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  perfume_notes: "perfume notes" pop 4 ident 4: 42 words, easy/middle/hard 6/12/24, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "perfume notes" pop 4 ident 4: 59 words, easy/middle/hard 10/25/24, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  pungent_foods: "pungent foods" pop 2 ident 3: 39 words, easy/middle/hard 5/14/20, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "pungent foods" pop 2 ident 3: 48 words, easy/middle/hard 12/17/19, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  scented_products: new -> "scented products" pop 2 ident 3: 39 words, easy/middle/hard 14/13/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  smells_from_the_kitchen: "smells from the kitchen" pop 2 ident 3: 14 words, easy/middle/hard 9/4/1, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "smells from the kitchen" pop 2 ident 3: 28 words, easy/middle/hard 11/9/8, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_smell_bad: "things that smell bad" pop 2 ident 2: 40 words, easy/middle/hard 17/12/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "things that smell bad" pop 2 ident 2: 51 words, easy/middle/hard 21/17/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_smell_good: "things that smell good" pop 2 ident 3: 53 words, easy/middle/hard 18/16/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things that smell good" pop 2 ident 3: 64 words, easy/middle/hard 22/21/21, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  woody_and_resin_scents: "woody and resin scents" pop 4 ident 4: 10 words, easy/middle/hard 1/3/6, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "woody and resin scents" pop 4 ident 4: 27 words, easy/middle/hard 5/11/11, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
 First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
-Entries left in no theme (kept in the library, not exported) 0: none
-Entries added 0: none
+Entries left in no theme (kept in the library, not exported) 3: tar pit 39720, mahogany teakwood 39753, frankincense and myrrh 39754
+Entries added 5: body spray 68825, essential oil 68826, sachet 68827, diffuser 68828, eau de toilette 68829
 Entries deleted 0: none
-library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
-Checks: changed kinds: none
+library changes 274; entries changed 148; status set to rev 85; themes deleted 0; entries merged 1
+Checks: changed kinds: info:orphan 264 -> 267, info:overlap 4819 -> 4822
 Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
 Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1427
-Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
-Theme rows 3211 -> 3211; gone none; new none; theme indexes shift: none
-Theme rows whose fields changed (parent compared by id): 0: none
-Entry rows 61326 -> 61326; first row whose entry changed: none; rows that moved: 0; added none; removed none
-root -> alias rows 0: none; alias -> root rows 0: none
-Rows whose flags changed: 0
-Links 98942 -> 98942; rows whose link count changed: 0
-Link-index shifts: none
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3210 -> 3211; gone none; new scented_products; theme indexes shift: from index 3126 ("scented_products", was "middle_eastern_scents") to the last index 3210
+Theme rows whose fields changed (parent compared by id): 8: things_that_smell_good (index 3119 -> 3119: counts [7,11,16,11,8] -> [7,15,21,13,8]); smells_from_the_kitchen (index 3120 -> 3120: counts [4,5,4,1,0] -> [4,7,9,8,0], range [1,3] -> [1,4]); woody_and_resin_scents (index 3121 -> 3121: counts [0,1,3,3,3] -> [1,4,11,7,4], range [3,4] -> [2,5]); things_that_smell_bad (index 3122 -> 3122: counts [7,10,12,6,5] -> [7,14,17,10,4]); pungent_foods (index 3123 -> 3123: counts [2,3,14,15,5] -> [2,10,18,14,5]); perfume_notes (index 3124 -> 3124: counts [2,4,12,9,15] -> [2,8,25,10,15]); candle_scents (index 3125 -> 3125: counts [4,12,17,12,1] -> [4,14,23,16,0]); middle_eastern_scents (index 3126 -> 3127: counts [0,2,7,9,12] -> [1,2,11,11,8])
+Entry rows 61323 -> 61326; first row whose entry changed: 19645 (pomander 20970, was shroud 20977); rows that moved: 41646; added pomander 20970 (row 19645), body spray 68825 (row 61321), essential oil 68826 (row 61322), sachet 68827 (row 61323), diffuser 68828 (row 61324), eau de toilette 68829 (row 61325); removed 39720 (row 36391), 39753 (row 36421), 39754 (row 36422)
+root -> alias rows 1: fresh cut grass 39750; alias -> root rows 0: none
+Rows whose flags changed: 1
+Links 98810 -> 98942; rows whose link count changed: 129
+Link-index shifts: from row 74 (lime 75) on, link positions move
 Rows whose text changed: none
 New characters in the export (list them in the notice: the game font needs them): none
-Root links by theme + shown text + row: gone 0, new 0, rating changed 0
-  gone (other than the deleted themes): none
-  new: none
-  rating: none
+Root links by theme + shown text + row: gone 14, new 146, rating changed 11
+  gone (other than the deleted themes): smells_from_the_kitchen: "strawberries" (91), smells_from_the_kitchen: "peaches" (93), pungent_foods: "cardamom" (760), middle_eastern_scents: "sumac" (780), candle_scents: "rainfall" (1966), woody_and_resin_scents: "campfire" (3024), pungent_foods: "liver" (3240), middle_eastern_scents: "kohl" (16226), middle_eastern_scents: "za'atar" (18706), things_that_smell_bad: "tar pit" (39720), candle_scents: "fresh cut grass" (39750), candle_scents: "mahogany teakwood" (39753), candle_scents: "frankincense and myrrh" (39754), middle_eastern_scents: "pomegranate blossom" (39759)
+  new: perfume_notes: "lemon" (74), perfume_notes: "grapefruit" (77), candle_scents: "apple" (87), perfume_notes: "pear" (89), perfume_notes: "peach" (93), candle_scents: "fig" (101), pungent_foods: "parmesan" (241), pungent_foods: "camembert" (244), candle_scents: "blueberry" (348), perfume_notes: "coconut" (351), smells_from_the_kitchen: "garlic" (404), pungent_foods: "radish" (405), pungent_foods: "tuna" (467), pungent_foods: "sardine" (481), pungent_foods: "mackerel" (492), candle_scents: "marshmallow" (611), perfume_notes: "caramel" (612), candle_scents: "caramel" (612), smells_from_the_kitchen: "basil" (713), smells_from_the_kitchen: "rosemary" (716), perfume_notes: "cinnamon" (717), middle_eastern_scents: "cinnamon" (717), smells_from_the_kitchen: "ginger" (718), pungent_foods: "ginger" (718), pungent_foods: "black pepper" (721), smells_from_the_kitchen: "bay leaf" (739), smells_from_the_kitchen: "nutmeg" (740), smells_from_the_kitchen: "cloves" (743), middle_eastern_scents: "cloves" (743), candle_scents: "lemongrass" (758), smells_from_the_kitchen: "cardamom" (760), perfume_notes: "cardamom" (760), perfume_notes: "saffron" (761), smells_from_the_kitchen: "pizza" (795), smells_from_the_kitchen: "curry" (799), things_that_smell_bad: "stink bug" (1424), woody_and_resin_scents: "birch" (1634), middle_eastern_scents: "cedar" (1637), woody_and_resin_scents: "fir" (1638), woody_and_resin_scents: "spruce" (1639), woody_and_resin_scents: "cypress" (1646), woody_and_resin_scents: "juniper" (1655), perfume_notes: "magnolia" (1664), middle_eastern_scents: "rose" (1693), middle_eastern_scents: "narcissus" (1700), candle_scents: "hyacinth" (1713), perfume_notes: "peony" (1717), perfume_notes: "gardenia" (1736), candle_scents: "gardenia" (1736), perfume_notes: "freesia" (1744), things_that_smell_bad: "swamp" (1924), things_that_smell_bad: "latrine" (3071), things_that_smell_bad: "armpit" (3192), things_that_smell_good: "soap" (3726), scented_products: "soap" (3726), things_that_smell_good: "shampoo" (3727), scented_products: "shampoo" (3727), scented_products: "conditioner" (3728), scented_products: "mouthwash" (3732), scented_products: "deodorant" (3733), scented_products: "shaving cream" (3738), scented_products: "aftershave" (3739), scented_products: "perfume" (3740), things_that_smell_good: "cologne" (3741), scented_products: "cologne" (3741), scented_products: "lotion" (3742), things_that_smell_good: "sunscreen" (3745), scented_products: "sunscreen" (3745), scented_products: "shower gel" (3756), scented_products: "bubble bath" (3758), scented_products: "hairspray" (3770), scented_products: "lip balm" (3777), scented_products: "baby powder" (3781), scented_products: "hand cream" (3782), scented_products: "bath bomb" (3813), things_that_smell_bad: "polecat" (7999), things_that_smell_bad: "pigsty" (10162), scented_products: "eraser" (12017), things_that_smell_good: "incense" (14760), woody_and_resin_scents: "incense" (14760), perfume_notes: "incense" (14760), scented_products: "incense" (14760), perfume_notes: "tobacco" (15442), scented_products: "bath salts" (15510), candle_scents: "frankincense" (15591), woody_and_resin_scents: "balsam fir" (15705), scented_products: "baby wipes" (15760), scented_products: "candles" (16276), middle_eastern_scents: "olive oil soap" (16304), pungent_foods: "hard-boiled egg" (16759), pungent_foods: "truffle" (17618), smells_from_the_kitchen: "roast chicken" (17725), woody_and_resin_scents: "sawdust" (17917), pungent_foods: "goat cheese" (17928), smells_from_the_kitchen: "cinnamon roll" (18077), things_that_smell_good: "gingerbread" (18141), smells_from_the_kitchen: "gingerbread" (18141), things_that_smell_good: "apple pie" (18168), smells_from_the_kitchen: "apple pie" (18168), smells_from_the_kitchen: "maple syrup" (18432), things_that_smell_bad: "stinky tofu" (19137), smells_from_the_kitchen: "garlic bread" (20324), scented_products: "pomander" (20970), scented_products: "toilet paper" (23138), scented_products: "trash bags" (23370), scented_products: "dish soap" (23374), scented_products: "air freshener" (23395), scented_products: "fabric softener" (23883), things_that_smell_bad: "landfill" (23976), things_that_smell_good: "leather" (24841), candle_scents: "leather" (24841), things_that_smell_good: "Christmas tree" (25007), candle_scents: "Christmas tree" (25007), things_that_smell_good: "bouquet" (25100), scented_products: "wax melt" (25603), things_that_smell_good: "potpourri" (25683), scented_products: "potpourri" (25683), things_that_smell_bad: "sewage" (28255), woody_and_resin_scents: "copal" (29504), things_that_smell_bad: "guano" (29506), woody_and_resin_scents: "rosewood" (29942), candle_scents: "driftwood" (30059), perfume_notes: "honeysuckle" (30462), candle_scents: "honeysuckle" (30462), perfume_notes: "orange blossom" (30502), scented_products: "marker" (34759), candle_scents: "sea salt" (39037), candle_scents: "cut grass" (39687), woody_and_resin_scents: "amber" (39730), middle_eastern_scents: "patchouli" (39731), woody_and_resin_scents: "oakmoss" (39732), woody_and_resin_scents: "cedarwood" (39735), woody_and_resin_scents: "labdanum" (39736), woody_and_resin_scents: "benzoin" (39738), woody_and_resin_scents: "teakwood" (39752), woody_and_resin_scents: "agarwood" (39755), scented_products: "laundry detergent" (40573), things_that_smell_bad: "fish market" (47504), scented_products: "cat litter" (50839), woody_and_resin_scents: "palo santo" (56450), things_that_smell_bad: "mothball" (66296), scented_products: "body spray" (68825), scented_products: "essential oil" (68826), scented_products: "sachet" (68827), scented_products: "diffuser" (68828), scented_products: "eau de toilette" (68829)
+  rating: pungent_foods: "anchovies" (482) 3/3 -> 2.7/2, pungent_foods: "mustard" (720) 2.4/3 -> 1.7/2, pungent_foods: "vinegar" (730) 2.4/3 -> 1.7/2, woody_and_resin_scents: "pine" (1629) 2.4/3 -> 1/1, woody_and_resin_scents: "cedar" (1637) 2.7/3 -> 1.7/1, woody_and_resin_scents: "sandalwood" (1674) 3.7/4 -> 2.4/1, woody_and_resin_scents: "frankincense" (15591) 3.4/4 -> 2/2, woody_and_resin_scents: "myrrh" (15592) 4.1/5 -> 2/2, woody_and_resin_scents: "oud" (16292) 4.4/5 -> 2.7/2, pungent_foods: "sauerkraut" (18857) 2.7/3 -> 2/2, woody_and_resin_scents: "patchouli" (39731) 3.7/4 -> 3/3
 new issues: none
 
 How the branch was reviewed (Qualities gap check, 2026-11-24): all 8 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.

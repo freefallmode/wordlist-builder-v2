@@ -1,40 +1,198 @@
 Library batch v466 (for Simon's review): Qualities, shapes and patterns branch: words that do not fit out and well-known words added; new themes rectangular things and flat things.
 1. 2D shapes
+  linked: equilateral triangle 58090 in 2d_shapes (typicality 3): well known here; it was not linked
 2. 3D shapes
+  out of 3d_shapes: helix 38886 [spiral]: a curve, not a solid (stays in curves and spirals) (stays in curves_and_spirals)
+  typicality: wedge 38896 in 3d_shapes 4 -> 3: well known: one of the first answers
+  typicality: capsule 38895 in 3d_shapes 4 -> 3: well known: one of the first answers
 3. patterns
+  linked: zebra print 24927 in patterns (typicality 2): well known here; it was not linked
+  new entry: snakeskin 68830 noun, common, familiarity 2: a common word that was not in the library
+  linked: snakeskin 68830 in patterns (typicality 3): a common word that was not in the library
+  new entry: speckled 68831 adjective, common, familiarity 3: a common word that was not in the library
+  linked: speckled 68831 in patterns (typicality 3): a common word that was not in the library
+  new entry: crisscross 68832 noun, common, familiarity 3: a common word that was not in the library
+  linked: crisscross 68832 in patterns (typicality 3): a common word that was not in the library
+  new entry: fractal 68833 noun, common, familiarity 3: a common word that was not in the library
+  linked: fractal 68833 in patterns (typicality 4): a common word that was not in the library
 4. line types
+  linked: axis 41462 [math] in line_types (typicality 3): well known here; it was not linked
+  new entry: thick line 68834 noun, common, familiarity 1: a common word that was not in the library
+  linked: thick line 68834 in line_types (typicality 3, shown "thick"): a common word that was not in the library
+  new entry: thin line 68835 noun, common, familiarity 1: a common word that was not in the library
+  linked: thin line 68835 in line_types (typicality 3, shown "thin"): a common word that was not in the library
 5. symbols
+  linked: heart 25160 [symbol] in symbols (typicality 2): well known here; it was not linked
+  linked: smiley face 40092 in symbols (typicality 2): well known here; it was not linked
+  linked: question mark 26095 in symbols (typicality 2): well known here; it was not linked
+  linked: exclamation point 26097 in symbols (typicality 3): well known here; it was not linked
+  linked: treble clef 10992 in symbols (typicality 3): well known here; it was not linked
+  linked: Eye of Horus 53943 in symbols (typicality 4): well known here; it was not linked
+  new entry: cent sign 68836 noun, common, familiarity 2: a common word that was not in the library
+  linked: cent sign 68836 in symbols (typicality 3): a common word that was not in the library
+  new entry: division sign 68837 noun, common, familiarity 2: a common word that was not in the library
+  linked: division sign 68837 in symbols (typicality 3): a common word that was not in the library
+  power symbol 38959 in symbols: shown null -> "power": the full name holds the word of the theme name (as recycling and trademark)
+  power symbol 38959: nameOkIn drops symbols: it has a show now
 6. curves and spirals
+  linked: Slinky 5932 in curves_and_spirals (typicality 2): well known here; it was not linked
+  linked: tornado 1994 [storm] in curves_and_spirals (typicality 2): well known here; it was not linked
+  linked: whirlpool 31131 [water current] in curves_and_spirals (typicality 2): well known here; it was not linked
+  linked: cinnamon roll 18077 in curves_and_spirals (typicality 3): well known here; it was not linked
+  linked: DNA 33743 in curves_and_spirals (typicality 3): well known here; it was not linked
+  linked: galaxy 7107 in curves_and_spirals (typicality 3): well known here; it was not linked
+  linked: tendril 30636 in curves_and_spirals (typicality 4): well known here; it was not linked
+  linked: cochlea 14779 in curves_and_spirals (typicality 4): well known here; it was not linked
+  new entry: snail shell 68838 noun, common, familiarity 1: a common word that was not in the library
+  linked: snail shell 68838 in curves_and_spirals (typicality 2): a common word that was not in the library
 7. round things
+  linked: globe 2396 [world model] in round_things (typicality 1): well known here; it was not linked
+  linked: orange 76 [fruit] in round_things (typicality 2): well known here; it was not linked
+  linked: tire 2585 [wheel] in round_things (typicality 2): well known here; it was not linked
+  linked: lollipop 609 in round_things (typicality 3): well known here; it was not linked
+  linked: wreath 25022 in round_things (typicality 3): well known here; it was not linked
+  linked: record 39792 [vinyl] in round_things (typicality 3): well known here; it was not linked
+  linked: medal 4408 in round_things (typicality 4): well known here; it was not linked
+  linked: roulette wheel 39794 in round_things (typicality 4): well known here; it was not linked
 8. square things
+  out of square_things: Jenga 5750: its blocks are long, not square (stays in table_games, party_games, building_toys)
+  out of square_things: Tetris 5781: a game whose pieces are mostly not square (stays in video_games, arcade_classics)
+  out of square_things: town square 38451: the tile shows only "town", which makes no sense here (stays in parts_of_a_town)
+  out of square_things: market square 38452: the tile shows only "market", which makes no sense here (now in no theme: not exported)
+  linked: Rubik's Cube 5968 in square_things (typicality 2): well known here; it was not linked
+  linked: pizza box 68046 in square_things (typicality 2): well known here; it was not linked
+  linked: toast 565 [bread] in square_things (typicality 3): well known here; it was not linked
+  linked: ravioli 663 in square_things (typicality 3): well known here; it was not linked
+  linked: caramel 612 in square_things (typicality 4): well known here; it was not linked
+  linked: pillow 3667 [bedding] in square_things (typicality 4): well known here; it was not linked
+  linked: tic-tac-toe 5765 in square_things (typicality 4): well known here; it was not linked
 9. triangular things
+  linked: mountain 1894 [landform] in triangular_things (typicality 2): well known here; it was not linked
+  linked: roof 23245 [house] in triangular_things (typicality 2): well known here; it was not linked
+  linked: party hat 24710 in triangular_things (typicality 2): well known here; it was not linked
+  linked: Christmas tree 25007 [evergreen tree] in triangular_things (typicality 3): well known here; it was not linked
+  linked: traffic cone 38409 in triangular_things (typicality 3): well known here; it was not linked
+  linked: hang glider 39772 in triangular_things (typicality 4): well known here; it was not linked
+  linked: metronome 40262 in triangular_things (typicality 4): well known here; it was not linked
+  new entry: coat hanger 68839 noun, common, familiarity 1: a common word that was not in the library
+  linked: coat hanger 68839 in triangular_things (typicality 2): a common word that was not in the library
 10. oval things
+  out of oval_things: kidney bean 17525: kidney-shaped, not oval (stays in andean_crops, beans_and_pulses, canned_foods)
+  linked: eye 3185 [body part] in oval_things (typicality 2): well known here; it was not linked
+  linked: potato 392 [vegetable] in oval_things (typicality 2): well known here; it was not linked
+  linked: jelly bean 39144 in oval_things (typicality 2): well known here; it was not linked
+  linked: avocado 111 in oval_things (typicality 3): well known here; it was not linked
+  linked: mango 95 [tropical fruit] in oval_things (typicality 3): well known here; it was not linked
+  linked: stadium 2473 [building] in oval_things (typicality 4): well known here; it was not linked
+  linked: surfboard 39818 in oval_things (typicality 4): well known here; it was not linked
 11. rectangular things (new)
+  new theme: rectangular_things "rectangular things" under shaped_things (after square_things), pop 2, ident 2: square, round, triangular and oval things exist, rectangular things did not
+  linked: door 24066 [house] in rectangular_things (typicality 1): a well-known member of the new theme
+  linked: book 6452 in rectangular_things (typicality 1): a well-known member of the new theme
+  linked: phone 23319 [device] in rectangular_things (typicality 1): a well-known member of the new theme
+  linked: brick 24030 [building block] in rectangular_things (typicality 1): a well-known member of the new theme
+  linked: dollar bill 23314 in rectangular_things (typicality 1): a well-known member of the new theme
+  linked: credit card 23286 in rectangular_things (typicality 2): a well-known member of the new theme
+  linked: envelope 12745 [mail] in rectangular_things (typicality 2): a well-known member of the new theme
+  linked: playing card 40213 in rectangular_things (typicality 2): a well-known member of the new theme
+  linked: ruler 7192 [measuring tool] in rectangular_things (typicality 2): a well-known member of the new theme
+  linked: shoebox 66400 in rectangular_things (typicality 2): a well-known member of the new theme
+  linked: mattress 3672 in rectangular_things (typicality 2): a well-known member of the new theme
+  linked: flag 28224 [banner] in rectangular_things (typicality 2): a well-known member of the new theme
+  linked: postcard 4562 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: doormat 23503 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: domino 45535 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: license plate 2581 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: billboard 4592 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: tennis court 44163 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: swimming pool 40120 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: passport 48763 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: suitcase 23183 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: chocolate bar 18383 in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: laptop 7251 [portable computer] in rectangular_things (typicality 3): a well-known member of the new theme
+  linked: pool table 23430 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: blackboard 4509 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: briefcase 4995 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: gold bar 21211 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: bookmark 13399 [book] in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: cutting board 19850 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: yoga mat 15874 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: aquarium 10169 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: eraser 12017 in rectangular_things (typicality 4): a well-known member of the new theme
+  linked: newspaper 4567 in rectangular_things (typicality 4): a well-known member of the new theme
 12. flat things (new)
+  new theme: flat_things "flat things" under shaped_things (after oval_things), pop 2, ident 2: an everyday property with no category of its own
+  linked: paper 20472 [material] in flat_things (typicality 1): a well-known member of the new theme
+  linked: pancake 19250 [food] in flat_things (typicality 1): a well-known member of the new theme
+  linked: plate 20137 [dinner dish] in flat_things (typicality 1): a well-known member of the new theme
+  linked: floor 24064 [house part] in flat_things (typicality 1): a well-known member of the new theme
+  linked: table 4663 [furniture] in flat_things (typicality 2): a well-known member of the new theme
+  linked: coin 21717 [money] in flat_things (typicality 2): a well-known member of the new theme
+  linked: map 2395 [chart of places] in flat_things (typicality 2): a well-known member of the new theme
+  linked: pizza 795 in flat_things (typicality 2): a well-known member of the new theme
+  linked: CD 49347 [disc] in flat_things (typicality 2): a well-known member of the new theme
+  linked: credit card 23286 in flat_things (typicality 2): a well-known member of the new theme
+  linked: tortilla 571 in flat_things (typicality 2): a well-known member of the new theme
+  linked: plain 1917 [landscape] in flat_things (typicality 2): a well-known member of the new theme
+  linked: rug 23105 [carpet] in flat_things (typicality 3): a well-known member of the new theme
+  linked: leaf 30033 in flat_things (typicality 3): a well-known member of the new theme
+  linked: ruler 7192 [measuring tool] in flat_things (typicality 3): a well-known member of the new theme
+  linked: coaster 23115 [drink mat] in flat_things (typicality 3): a well-known member of the new theme
+  linked: baking sheet 19815 in flat_things (typicality 3): a well-known member of the new theme
+  linked: plywood 24039 in flat_things (typicality 3): a well-known member of the new theme
+  linked: stingray 1235 in flat_things (typicality 3): a well-known member of the new theme
+  linked: prairie 1920 in flat_things (typicality 3): a well-known member of the new theme
+  linked: ironing board 23554 in flat_things (typicality 3): a well-known member of the new theme
+  linked: runway 2716 in flat_things (typicality 3): a well-known member of the new theme
+  linked: ice rink 39043 in flat_things (typicality 3): a well-known member of the new theme
+  linked: flounder 1228 [fish] in flat_things (typicality 3): a well-known member of the new theme
+  linked: manta ray 1329 in flat_things (typicality 4): a well-known member of the new theme
+  linked: plateau 1918 [landform] in flat_things (typicality 4): a well-known member of the new theme
+  linked: mesa 1950 in flat_things (typicality 4): a well-known member of the new theme
+  linked: Netherlands 2140 in flat_things (typicality 4): a well-known member of the new theme
+  linked: Kansas 32168 [state] in flat_things (typicality 4): a well-known member of the new theme
+  linked: steppe 1940 in flat_things (typicality 4): a well-known member of the new theme
+  linked: naan 572 in flat_things (typicality 4): a well-known member of the new theme
+  linked: sole 1227 [fish] in flat_things (typicality 4): a well-known member of the new theme
+  linked: halibut 490 in flat_things (typicality 4): a well-known member of the new theme
+  linked: photo 23291 in flat_things (typicality 4): a well-known member of the new theme
 kin
+  kin: fractal 68833 <-> fraction 41442: one word family
 Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  2d_shapes: "2D shapes" pop 1 ident 1: 36 words, easy/middle/hard 14/11/11, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "2D shapes" pop 1 ident 1: 37 words, easy/middle/hard 14/12/11, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  3d_shapes: "3D shapes" pop 2 ident 2: 33 words, easy/middle/hard 6/7/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "3D shapes" pop 2 ident 2: 32 words, easy/middle/hard 6/9/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  curves_and_spirals: "curves and spirals" pop 3 ident 3: 30 words, easy/middle/hard 6/15/9, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "curves and spirals" pop 3 ident 3: 39 words, easy/middle/hard 10/18/11, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  flat_things: new -> "flat things" pop 2 ident 2: 34 words, easy/middle/hard 12/12/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  line_types: "line types" pop 3 ident 3: 36 words, easy/middle/hard 12/7/17, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "line types" pop 3 ident 3: 39 words, easy/middle/hard 12/10/17, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  oval_things: "oval things" pop 3 ident 3: 26 words, easy/middle/hard 7/8/11, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "oval things" pop 3 ident 3: 32 words, easy/middle/hard 10/9/13, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  patterns: "patterns" pop 2 ident 2: 42 words, easy/middle/hard 11/11/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "patterns" pop 2 ident 2: 47 words, easy/middle/hard 12/14/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  rectangular_things: new -> "rectangular things" pop 2 ident 2: 33 words, easy/middle/hard 12/11/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  round_things: "round things" pop 2 ident 3: 44 words, easy/middle/hard 18/14/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "round things" pop 2 ident 3: 52 words, easy/middle/hard 21/17/14, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  square_things: "square things" pop 3 ident 3: 30 words, easy/middle/hard 12/9/9, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "square things" pop 3 ident 3: 33 words, easy/middle/hard 14/10/9, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  symbols: "symbols" pop 2 ident 3: 39 words, easy/middle/hard 15/11/13, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "symbols" pop 2 ident 3: 47 words, easy/middle/hard 18/15/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  triangular_things: "triangular things" pop 3 ident 3: 28 words, easy/middle/hard 8/11/9, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "triangular things" pop 3 ident 3: 36 words, easy/middle/hard 12/13/11, theme difficulty 3, 4th-easiest band 2, gap -1.0
 First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
-Entries left in no theme (kept in the library, not exported) 0: none
-Entries added 0: none
+Entries left in no theme (kept in the library, not exported) 1: market square 38452
+Entries added 10: snakeskin 68830, speckled 68831, crisscross 68832, fractal 68833, thick line 68834, thin line 68835, cent sign 68836, division sign 68837, snail shell 68838, coat hanger 68839
 Entries deleted 0: none
-library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
-Checks: changed kinds: none
+library changes 203; entries changed 131; status set to rev 57; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 267 -> 268, info:overlap 4822 -> 4824, info:rating-vs-zipf 1684 -> 1685
 Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
 Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1427
-Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
-Theme rows 3213 -> 3213; gone none; new none; theme indexes shift: none
-Theme rows whose fields changed (parent compared by id): 0: none
-Entry rows 61335 -> 61335; first row whose entry changed: none; rows that moved: 0; added none; removed none
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3211 -> 3213; gone none; new rectangular_things, flat_things; theme indexes shift: from index 3031 ("rectangular_things", was "triangular_things") to the last index 3212
+Theme rows whose fields changed (parent compared by id): 10: 2d_shapes (index 3022 -> 3022: counts [8,6,11,5,6] -> [8,6,12,5,6]); 3d_shapes (index 3023 -> 3023: counts [3,3,8,14,6] -> [3,3,10,11,6]); patterns (index 3024 -> 3024: counts [2,9,11,21,3] -> [2,10,14,22,3]); line_types (index 3025 -> 3025: counts [4,8,7,8,9] -> [4,8,10,8,9]); symbols (index 3026 -> 3026: counts [3,13,11,7,6] -> [3,16,15,8,6]); curves_and_spirals (index 3027 -> 3027: counts [1,6,15,4,5] -> [1,10,18,6,5]); round_things (index 3029 -> 3029: counts [6,12,14,8,4] -> [7,14,17,10,4]); square_things (index 3030 -> 3030: counts [1,11,10,8,2] -> [1,13,11,9,1]); triangular_things (index 3031 -> 3032: counts [1,7,11,7,2] -> [1,11,13,9,2]); oval_things (index 3032 -> 3033: counts [1,6,8,7,4] -> [1,9,9,9,4])
+Entry rows 61326 -> 61335; first row whose entry changed: 35210 (suburb 38453, was market square 38452); rows that moved: 26115; added snakeskin 68830 (row 61325), speckled 68831 (row 61326), crisscross 68832 (row 61327), fractal 68833 (row 61328), thick line 68834 (row 61329), thin line 68835 (row 61330), cent sign 68836 (row 61331), division sign 68837 (row 61332), snail shell 68838 (row 61333), coat hanger 68839 (row 61334); removed 38452 (row 35210)
 root -> alias rows 0: none; alias -> root rows 0: none
 Rows whose flags changed: 0
-Links 99059 -> 99059; rows whose link count changed: 0
-Link-index shifts: none
+Links 98942 -> 99059; rows whose link count changed: 116
+Link-index shifts: from row 76 (grapefruit 77) on, link positions move
 Rows whose text changed: none
 New characters in the export (list them in the notice: the game font needs them): none
-Root links by theme + shown text + row: gone 0, new 0, rating changed 0
-  gone (other than the deleted themes): none
-  new: none
-  rating: none
+Root links by theme + shown text + row: gone 7, new 124, rating changed 2
+  gone (other than the deleted themes): square_things: "Jenga" (5750), square_things: "Tetris" (5781), oval_things: "kidney bean" (17525), square_things: "town" (38451), square_things: "market" (38452), 3d_shapes: "helix" (38886), symbols: "power symbol" (38959)
+  new: round_things: "orange" (76), oval_things: "mango" (95), oval_things: "avocado" (111), oval_things: "potato" (392), flat_things: "halibut" (490), square_things: "toast" (565), flat_things: "tortilla" (571), flat_things: "naan" (572), round_things: "lollipop" (609), square_things: "caramel" (612), square_things: "ravioli" (663), flat_things: "pizza" (795), flat_things: "sole" (1227), flat_things: "flounder" (1228), flat_things: "stingray" (1235), flat_things: "manta ray" (1329), triangular_things: "mountain" (1894), flat_things: "plain" (1917), flat_things: "plateau" (1918), flat_things: "prairie" (1920), flat_things: "steppe" (1940), flat_things: "mesa" (1950), curves_and_spirals: "tornado" (1994), flat_things: "Netherlands" (2140), flat_things: "map" (2395), round_things: "globe" (2396), oval_things: "stadium" (2473), rectangular_things: "license plate" (2581), round_things: "tire" (2585), flat_things: "runway" (2716), oval_things: "eye" (3185), square_things: "pillow" (3667), rectangular_things: "mattress" (3672), round_things: "medal" (4408), rectangular_things: "blackboard" (4509), rectangular_things: "postcard" (4562), rectangular_things: "newspaper" (4567), rectangular_things: "billboard" (4592), flat_things: "table" (4663), rectangular_things: "briefcase" (4995), square_things: "tic-tac-toe" (5765), curves_and_spirals: "Slinky" (5932), square_things: "Rubik's Cube" (5968), rectangular_things: "book" (6452), curves_and_spirals: "galaxy" (7107), rectangular_things: "ruler" (7192), flat_things: "ruler" (7192), rectangular_things: "laptop" (7251), rectangular_things: "aquarium" (10169), symbols: "treble clef" (10992), rectangular_things: "eraser" (12017), rectangular_things: "envelope" (12745), rectangular_things: "bookmark" (13399), curves_and_spirals: "cochlea" (14779), rectangular_things: "yoga mat" (15874), curves_and_spirals: "cinnamon roll" (18077), rectangular_things: "chocolate bar" (18383), flat_things: "pancake" (19250), flat_things: "baking sheet" (19815), rectangular_things: "cutting board" (19850), flat_things: "plate" (20137), flat_things: "paper" (20472), rectangular_things: "gold bar" (21211), flat_things: "coin" (21717), flat_things: "rug" (23105), flat_things: "coaster" (23115), rectangular_things: "suitcase" (23183), triangular_things: "roof" (23245), rectangular_things: "credit card" (23286), flat_things: "credit card" (23286), flat_things: "photo" (23291), rectangular_things: "dollar bill" (23314), rectangular_things: "phone" (23319), rectangular_things: "pool table" (23430), rectangular_things: "doormat" (23503), flat_things: "ironing board" (23554), rectangular_things: "brick" (24030), flat_things: "plywood" (24039), flat_things: "floor" (24064), rectangular_things: "door" (24066), triangular_things: "party hat" (24710), patterns: "zebra print" (24927), triangular_things: "Christmas tree" (25007), round_things: "wreath" (25022), symbols: "heart" (25160), symbols: "question mark" (26095), symbols: "exclamation point" (26097), rectangular_things: "flag" (28224), flat_things: "leaf" (30033), curves_and_spirals: "tendril" (30636), curves_and_spirals: "whirlpool" (31131), flat_things: "Kansas" (32168), curves_and_spirals: "DNA" (33743), triangular_things: "traffic cone" (38409), symbols: "power" (38959), flat_things: "ice rink" (39043), oval_things: "jelly bean" (39144), triangular_things: "hang glider" (39772), round_things: "record" (39792), round_things: "roulette wheel" (39794), oval_things: "surfboard" (39818), symbols: "smiley face" (40092), rectangular_things: "swimming pool" (40120), rectangular_things: "playing card" (40213), triangular_things: "metronome" (40262), line_types: "axis" (41462), rectangular_things: "tennis court" (44163), rectangular_things: "domino" (45535), rectangular_things: "passport" (48763), flat_things: "CD" (49347), symbols: "Eye of Horus" (53943), 2d_shapes: "equilateral triangle" (58090), rectangular_things: "shoebox" (66400), square_things: "pizza box" (68046), patterns: "snakeskin" (68830), patterns: "speckled" (68831), patterns: "crisscross" (68832), patterns: "fractal" (68833), line_types: "thick" (68834), line_types: "thin" (68835), symbols: "cent sign" (68836), symbols: "division sign" (68837), curves_and_spirals: "snail shell" (68838), triangular_things: "coat hanger" (68839)
+  rating: 3d_shapes: "capsule" (38895) 3.4/4 -> 2.7/3, 3d_shapes: "wedge" (38896) 3.4/4 -> 2.7/3
 new issues: none
 
 How the branch was reviewed (Qualities, 2026-11-25): all 10 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.

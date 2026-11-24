@@ -1,36 +1,133 @@
 Library batch v468 (for Simon's review): Qualities, sounds branch: words that do not fit out and well-known words added.
 1. onomatopoeia
+  out of onomatopoeia: hubbub 27838: a word for noise, not a sound word (stays in words for noise) (stays in silly_sounding_words, words_for_noise)
+  linked: ribbit 8674 [frog] in onomatopoeia (typicality 3): well known here; it was not linked
+  linked: caw 10206 in onomatopoeia (typicality 3): well known here; it was not linked
+  linked: pitter-patter 27828 in onomatopoeia (typicality 3): well known here; it was not linked
+  new entry: ding-dong 68931 other, common, familiarity 1: a common word that was not in the library
+  linked: ding-dong 68931 in onomatopoeia (typicality 2): a common word that was not in the library
+  new entry: boing 68932 other, common, familiarity 2: a common word that was not in the library
+  linked: boing 68932 in onomatopoeia (typicality 3): a common word that was not in the library
+  new entry: ka-ching 68933 other, common, familiarity 2: a common word that was not in the library
+  linked: ka-ching 68933 in onomatopoeia (typicality 3): a common word that was not in the library
+  new entry: clip-clop 68934 other, common, familiarity 3: a common word that was not in the library
+  linked: clip-clop 68934 in onomatopoeia (typicality 4): a common word that was not in the library
 2. eating sounds
+  out of eating_sounds: swallow 17101 [throat]: a way of eating, not a sound (stays in mouth_actions)
+  out of eating_sounds: chew 17100: a way of eating, not a sound (stays in mouth_actions, rhymes_with_blue)
+  out of eating_sounds: sip 17106: a way of drinking, not a sound (stays in mouth_actions)
+  out of eating_sounds: scoff 57953: a way of eating, not a sound (now in no theme: not exported)
+  linked: hiccup 16980 in eating_sounds (typicality 3): well known here; it was not linked
+  linked: crackle 39586 in eating_sounds (typicality 3): well known here; it was not linked
+  linked: lap 17114 [drink] in eating_sounds (typicality 4): well known here; it was not linked
+  linked: gurgle 16989 in eating_sounds (typicality 4): well known here; it was not linked
 3. impact sounds
+  linked: knock 56043 [door] in impact_sounds (typicality 2): well known here; it was not linked
+  linked: smack 16905 [hit] in impact_sounds (typicality 3): well known here; it was not linked
+  linked: slap 16888 in impact_sounds (typicality 3): well known here; it was not linked
+  linked: crunch 57947 [sound] in impact_sounds (typicality 3): well known here; it was not linked
+  new entry: clash 68935 [sound] noun, common, familiarity 2: a common word that was not in the library
+  linked: clash 68935 [sound] in impact_sounds (typicality 3): a common word that was not in the library
 4. loud things
+  linked: fire alarm 40304 in loud_things (typicality 1): well known here; it was not linked
+  linked: lion 215 in loud_things (typicality 3): well known here; it was not linked
+  linked: heavy metal 10774 in loud_things (typicality 3): well known here; it was not linked
+  linked: leaf blower 23686 in loud_things (typicality 3): well known here; it was not linked
+  linked: cicada 1375 in loud_things (typicality 4): well known here; it was not linked
+  linked: vuvuzela 6055 in loud_things (typicality 4): well known here; it was not linked
+  linked: blue whale 1306 in loud_things (typicality 4): well known here; it was not linked
+  linked: Concorde 39833 [airliner] in loud_things (typicality 4): well known here; it was not linked
 5. quiet things
+  out of quiet_things: kitty 1442 [cat]: cat is there (stays in baby_talk, domestic_animals, pets)
+  out of quiet_things: velvet 5042 [fabric]: soft, not quiet (stays in fabrics_and_sewing, fabrics, smooth_things, soft_things)
+  linked: butterfly 1348 [insect] in quiet_things (typicality 2): well known here; it was not linked
+  linked: deer 997 in quiet_things (typicality 3): well known here; it was not linked
+  linked: shadow 28397 [dark patch] in quiet_things (typicality 3): well known here; it was not linked
+  linked: statue 6338 in quiet_things (typicality 3): well known here; it was not linked
+  linked: spider 1362 [animal] in quiet_things (typicality 4): well known here; it was not linked
+  linked: moth 1349 in quiet_things (typicality 4): well known here; it was not linked
+  linked: outer space 68808 in quiet_things (typicality 4): well known here; it was not linked
+  linked: stealth bomber 34608 in quiet_things (typicality 4): well known here; it was not linked
 6. water sounds
+  out of water_sounds: hiss 10191: not a water sound (stays in animal_sounds, ways_of_speaking, onomatopoeia, machine_sounds, vehicle_sounds, mouth_actions)
+  out of water_sounds: sluice 23871 [channel]: a channel, not a sound (stays in gold_rush_words)
+  linked: spray 28689 [droplets] in water_sounds (typicality 3): well known here; it was not linked
+  linked: swish 39588 [sound] in water_sounds (typicality 3): well known here; it was not linked
+  linked: fizz 39589 [sound] in water_sounds (typicality 3): well known here; it was not linked
+  new entry: flush 68936 [toilet] verb, common, familiarity 1: a common word that was not in the library
+  linked: flush 68936 [toilet] in water_sounds (typicality 2): a common word that was not in the library
+  new entry: spurt 68937 verb, common, familiarity 3: a common word that was not in the library
+  linked: spurt 68937 in water_sounds (typicality 4): a common word that was not in the library
 7. machine sounds
+  out of machine_sounds: chunter 39640: a UK word for grumbling (now in no theme: not exported)
+  linked: honk 10209 in machine_sounds (typicality 2): well known here; it was not linked
+  linked: ring 39585 [sound] in machine_sounds (typicality 2): well known here; it was not linked
+  linked: ka-ching 68933 in machine_sounds (typicality 3): well known here; it was not linked
+  new entry: clack 68938 other, common, familiarity 3: a common word that was not in the library
+  linked: clack 68938 in machine_sounds (typicality 3): a common word that was not in the library
 8. voice sounds
+  linked: chatter 10223 in voice_sounds (typicality 3): well known here; it was not linked
+  linked: yelp 10217 in voice_sounds (typicality 3): well known here; it was not linked
+  linked: guffaw 17133 in voice_sounds (typicality 4): well known here; it was not linked
+  linked: croon 60098 in voice_sounds (typicality 4): well known here; it was not linked
+  linked: drawl 16956 in voice_sounds (typicality 4): well known here; it was not linked
+  linked: babble 16957 in voice_sounds (typicality 4): well known here; it was not linked
+  linked: whoop 60099 [cry] in voice_sounds (typicality 4): well known here; it was not linked
 9. sound qualities
+  out of sound_qualities: thin 38948 [line]: the wrong sense (a thin line) (now in no theme: not exported)
+  out of sound_qualities: timbre 6094: a noun among adjectives (stays in music_terms, acoustics_words)
+  linked: deep 67388 in sound_qualities (typicality 2): well known here; it was not linked
+  new entry: noisy 68939 adjective, common, familiarity 1: a common word that was not in the library
+  linked: noisy 68939 in sound_qualities (typicality 2): a common word that was not in the library
+  new entry: high-pitched 68940 adjective, common, familiarity 2: a common word that was not in the library
+  linked: high-pitched 68940 in sound_qualities (typicality 2): a common word that was not in the library
+  new entry: faint 68941 adjective, common, familiarity 2: a common word that was not in the library
+  linked: faint 68941 in sound_qualities (typicality 3): a common word that was not in the library
+  new entry: ear-splitting 68942 adjective, common, familiarity 3: a common word that was not in the library
+  linked: ear-splitting 68942 in sound_qualities (typicality 3): a common word that was not in the library
+  new entry: thunderous 68943 adjective, common, familiarity 3: a common word that was not in the library
+  linked: thunderous 68943 in sound_qualities (typicality 3): a common word that was not in the library
+  new entry: off-key 68944 adjective, common, familiarity 3: a common word that was not in the library
+  linked: off-key 68944 in sound_qualities (typicality 3): a common word that was not in the library
+  new entry: monotone 68945 adjective, common, familiarity 3: a common word that was not in the library
+  linked: monotone 68945 in sound_qualities (typicality 4): a common word that was not in the library
 groups and kin
+  linked: howl 10193 [animal sound] in voice_sounds (typicality 3): well known here; it was not linked (the sense the check sense-link prefers)
+  group in onomatopoeia: ding 28872 = ding-dong 68931: a word and its more specific form: one answer
+  group in loud_things: alarm 28279 = fire alarm 40304: a word and its more specific form: one answer
+  group in machine_sounds: clickety-clack 39650 = clack 68938: a word and its more specific form: one answer
+  kin: thunderous 68943 <-> thunder 1972 [storm]: one word family
 Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  eating_sounds: "eating sounds" pop 2 ident 2: 23 words, easy/middle/hard 8/9/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "eating sounds" pop 2 ident 2: 23 words, easy/middle/hard 8/8/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  impact_sounds: "impact sounds" pop 2 ident 2: 34 words, easy/middle/hard 15/7/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "impact sounds" pop 2 ident 2: 39 words, easy/middle/hard 16/11/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  loud_things: "loud things" pop 2 ident 3: 56 words, easy/middle/hard 31/20/5, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "loud things" pop 2 ident 3: 64 words, easy/middle/hard 32/23/9, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  machine_sounds: "machine sounds" pop 3 ident 3: 43 words, easy/middle/hard 11/19/13, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "machine sounds" pop 3 ident 3: 46 words, easy/middle/hard 13/21/12, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  onomatopoeia: "onomatopoeia" pop 2 ident 2: 43 words, easy/middle/hard 23/12/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "onomatopoeia" pop 2 ident 2: 49 words, easy/middle/hard 24/17/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  quiet_things: "quiet things" pop 2 ident 3: 36 words, easy/middle/hard 11/18/7, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "quiet things" pop 2 ident 3: 42 words, easy/middle/hard 12/21/9, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  sound_qualities: "sound qualities" pop 3 ident 3: 54 words, easy/middle/hard 14/17/23, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "sound qualities" pop 3 ident 3: 60 words, easy/middle/hard 17/21/22, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  voice_sounds: "voice sounds" pop 2 ident 2: 45 words, easy/middle/hard 19/16/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "voice sounds" pop 2 ident 2: 53 words, easy/middle/hard 19/19/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  water_sounds: "water sounds" pop 3 ident 3: 34 words, easy/middle/hard 6/16/12, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "water sounds" pop 3 ident 3: 37 words, easy/middle/hard 7/19/11, theme difficulty 3, 4th-easiest band 2, gap -1.0
 First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
-Entries left in no theme (kept in the library, not exported) 0: none
-Entries added 0: none
+Entries left in no theme (kept in the library, not exported) 3: scoff 57953, chunter 39640, thin 38948
+Entries added 15: ding-dong 68931, boing 68932, ka-ching 68933, clip-clop 68934, clash 68935, flush 68936, spurt 68937, clack 68938, noisy 68939, high-pitched 68940, faint 68941, ear-splitting 68942, thunderous 68943, off-key 68944, monotone 68945
 Entries deleted 0: none
-library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
-Checks: changed kinds: none
+library changes 126; entries changed 69; status set to rev 38; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 280 -> 283, info:rating-vs-zipf 1686 -> 1687
 Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
 Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
-Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
+Committed family export equals the in-memory export of the library before the changes: yes
 Theme rows 3216 -> 3216; gone none; new none; theme indexes shift: none
-Theme rows whose fields changed (parent compared by id): 0: none
-Entry rows 61426 -> 61426; first row whose entry changed: none; rows that moved: 0; added none; removed none
+Theme rows whose fields changed (parent compared by id): 9: onomatopoeia (index 3114 -> 3114: counts [12,11,12,5,3] -> [12,12,17,6,2]); eating_sounds (index 3115 -> 3115: counts [1,7,9,5,1] -> [1,7,8,6,1]); impact_sounds (index 3116 -> 3116: counts [4,11,7,5,7] -> [4,12,11,5,7]); loud_things (index 3117 -> 3117: counts [6,25,23,6,1] -> [7,25,26,10,1]); quiet_things (index 3118 -> 3118: counts [3,8,18,5,2] -> [3,9,21,8,1]); water_sounds (index 3119 -> 3119: counts [2,4,16,9,4] -> [2,5,19,10,2], range [2,5] -> [2,4]); machine_sounds (index 3120 -> 3120: counts [3,8,20,8,5] -> [3,10,22,8,4]); voice_sounds (index 3121 -> 3121: counts [8,11,16,8,2] -> [8,11,19,13,2]); sound_qualities (index 3122 -> 3122: counts [2,12,17,14,9] -> [2,15,21,13,9])
+Entry rows 61414 -> 61426; first row whose entry changed: 35662 (yen sign 38950, was thin 38948); rows that moved: 25749; added ding-dong 68931 (row 61411), boing 68932 (row 61412), ka-ching 68933 (row 61413), clip-clop 68934 (row 61414), clash 68935 (row 61415), flush 68936 (row 61416), spurt 68937 (row 61417), clack 68938 (row 61418), noisy 68939 (row 61419), high-pitched 68940 (row 61420), faint 68941 (row 61421), ear-splitting 68942 (row 61422), thunderous 68943 (row 61423), off-key 68944 (row 61424), monotone 68945 (row 61425); removed 38948 (row 35662), 39640 (row 36307), 57953 (row 53279)
 root -> alias rows 0: none; alias -> root rows 0: none
 Rows whose flags changed: 0
-Links 99198 -> 99198; rows whose link count changed: 0
-Link-index shifts: none
+Links 99153 -> 99198; rows whose link count changed: 50
+Link-index shifts: from row 209 (tiger 216) on, link positions move
 Rows whose text changed: none
 New characters in the export (list them in the notice: the game font needs them): none
-Root links by theme + shown text + row: gone 0, new 0, rating changed 0
-  gone (other than the deleted themes): none
-  new: none
+Root links by theme + shown text + row: gone 12, new 57, rating changed 0
+  gone (other than the deleted themes): quiet_things: "kitty" (1442), quiet_things: "velvet" (5042), sound_qualities: "timbre" (6094), water_sounds: "hiss" (10191), eating_sounds: "chew" (17100), eating_sounds: "swallow" (17101), eating_sounds: "sip" (17106), water_sounds: "sluice" (23871), onomatopoeia: "hubbub" (27838), sound_qualities: "thin" (38948), machine_sounds: "chunter" (39640), eating_sounds: "scoff" (57953)
+  new: loud_things: "lion" (215), quiet_things: "deer" (997), loud_things: "blue whale" (1306), quiet_things: "butterfly" (1348), quiet_things: "moth" (1349), quiet_things: "spider" (1362), loud_things: "cicada" (1375), loud_things: "vuvuzela" (6055), quiet_things: "statue" (6338), onomatopoeia: "ribbit" (8674), voice_sounds: "howl" (10193), onomatopoeia: "caw" (10206), machine_sounds: "honk" (10209), voice_sounds: "yelp" (10217), voice_sounds: "chatter" (10223), loud_things: "heavy metal" (10774), impact_sounds: "slap" (16888), impact_sounds: "smack" (16905), voice_sounds: "drawl" (16956), voice_sounds: "babble" (16957), eating_sounds: "hiccup" (16980), eating_sounds: "gurgle" (16989), eating_sounds: "lap" (17114), voice_sounds: "guffaw" (17133), loud_things: "leaf blower" (23686), onomatopoeia: "pitter-patter" (27828), quiet_things: "shadow" (28397), water_sounds: "spray" (28689), quiet_things: "stealth bomber" (34608), machine_sounds: "ring" (39585), eating_sounds: "crackle" (39586), water_sounds: "swish" (39588), water_sounds: "fizz" (39589), loud_things: "Concorde" (39833), loud_things: "fire alarm" (40304), impact_sounds: "knock" (56043), impact_sounds: "crunch" (57947), voice_sounds: "croon" (60098), voice_sounds: "whoop" (60099), sound_qualities: "deep" (67388), quiet_things: "outer space" (68808), onomatopoeia: "ding-dong" (68931), onomatopoeia: "boing" (68932), onomatopoeia: "ka-ching" (68933), machine_sounds: "ka-ching" (68933), onomatopoeia: "clip-clop" (68934), impact_sounds: "clash" (68935), water_sounds: "flush" (68936), water_sounds: "spurt" (68937), machine_sounds: "clack" (68938), sound_qualities: "noisy" (68939), sound_qualities: "high-pitched" (68940), sound_qualities: "faint" (68941), sound_qualities: "ear-splitting" (68942), sound_qualities: "thunderous" (68943), sound_qualities: "off-key" (68944), sound_qualities: "monotone" (68945)
   rating: none
 new issues: none
 

@@ -1,41 +1,305 @@
 Library batch v467 (for Simon's review): Qualities, synonyms branch: words that do not fit out and well-known words added; new themes words for funny, words for strong and words for new.
 1. words for big
+  new entry: astronomical 68840 [huge] adjective, common, familiarity 3: a common word that was not in the library
+  linked: astronomical 68840 [huge] in words_for_big (typicality 3): a common word that was not in the library
 2. words for small
+  new entry: minute 68841 [tiny] adjective, common, familiarity 3: a common word that was not in the library
+  linked: minute 68841 [tiny] in words_for_small (typicality 2): a common word that was not in the library
 3. words for fast
+  out of words_for_fast: lightning-fast 39322: holds "fast", the word in the category name (now in no theme: not exported)
+  out of words_for_fast: rapid-fire 39317: rapid is there (now in no theme: not exported)
+  out of words_for_fast: precipitate 50080 [hasten]: a verb here, not an adjective (now in no theme: not exported)
+  linked: lickety-split 27830 in words_for_fast (typicality 3): well known here; it was not linked
 4. words for good
+  linked: ace 27359 [great] in words_for_good (typicality 3): well known here; it was not linked
+  new entry: perfect 68842 [flawless] adjective, common, familiarity 1: a common word that was not in the library
+  linked: perfect 68842 [flawless] in words_for_good (typicality 2): a common word that was not in the library
+  new entry: incredible 68843 adjective, common, familiarity 1: a common word that was not in the library
+  linked: incredible 68843 in words_for_good (typicality 2): a common word that was not in the library
+  new entry: phenomenal 68844 adjective, common, familiarity 2: a common word that was not in the library
+  linked: phenomenal 68844 in words_for_good (typicality 3): a common word that was not in the library
+  new entry: sensational 68845 adjective, common, familiarity 2: a common word that was not in the library
+  linked: sensational 68845 in words_for_good (typicality 3): a common word that was not in the library
+  new entry: exceptional 68846 adjective, common, familiarity 2: a common word that was not in the library
+  linked: exceptional 68846 in words_for_good (typicality 3): a common word that was not in the library
 5. words for bad
+  out of words_for_bad: dreck 29409: a noun among adjectives (stays in words_from_yiddish)
+  out of words_for_bad: godawful 62485: awful is there (now in no theme: not exported)
+  linked: evil 29048 in words_for_bad (typicality 2): well known here; it was not linked
+  linked: abominable 60914 in words_for_bad (typicality 3): well known here; it was not linked
+  new entry: disgusting 68847 adjective, common, familiarity 1: a common word that was not in the library
+  linked: disgusting 68847 in words_for_bad (typicality 2): a common word that was not in the library
+  new entry: unpleasant 68848 adjective, common, familiarity 2: a common word that was not in the library
+  linked: unpleasant 68848 in words_for_bad (typicality 2): a common word that was not in the library
 6. words for smart
+  out of words_for_smart: whip-smart 39403: holds "smart", the word in the category name (now in no theme: not exported)
+  out of words_for_smart: nous 62496: a noun among adjectives (now in no theme: not exported)
+  new entry: educated 68849 adjective, common, familiarity 1: a common word that was not in the library
+  linked: educated 68849 in words_for_smart (typicality 2): a common word that was not in the library
+  new entry: intellectual 68850 adjective, common, familiarity 2: a common word that was not in the library
+  linked: intellectual 68850 in words_for_smart (typicality 3): a common word that was not in the library
+  new entry: well-read 68851 adjective, common, familiarity 3: a common word that was not in the library
+  linked: well-read 68851 in words_for_smart (typicality 3): a common word that was not in the library
+  new entry: cunning 68852 adjective, common, familiarity 3: a common word that was not in the library
+  linked: cunning 68852 in words_for_smart (typicality 3): a common word that was not in the library
+  new entry: precocious 68853 adjective, common, familiarity 3: a common word that was not in the library
+  linked: precocious 68853 in words_for_smart (typicality 4): a common word that was not in the library
 7. words for strange
+  new entry: mysterious 68854 adjective, common, familiarity 1: a common word that was not in the library
+  linked: mysterious 68854 in words_for_strange (typicality 2): a common word that was not in the library
+  new entry: exotic 68855 adjective, common, familiarity 2: a common word that was not in the library
+  linked: exotic 68855 in words_for_strange (typicality 3): a common word that was not in the library
+  new entry: unfamiliar 68856 adjective, common, familiarity 2: a common word that was not in the library
+  linked: unfamiliar 68856 in words_for_strange (typicality 3): a common word that was not in the library
+  new entry: off-the-wall 68857 adjective, common, familiarity 3: a common word that was not in the library
+  linked: off-the-wall 68857 in words_for_strange (typicality 3): a common word that was not in the library
 8. words for pretty
+  out of words_for_pretty: drop-dead gorgeous 39470: gorgeous is there (now in no theme: not exported)
+  linked: dazzling 40029 in words_for_pretty (typicality 3): well known here; it was not linked
+  linked: eye-catching 66923 in words_for_pretty (typicality 3): well known here; it was not linked
+  new entry: glamorous 68858 adjective, common, familiarity 2: a common word that was not in the library
+  linked: glamorous 68858 in words_for_pretty (typicality 3): a common word that was not in the library
+  new entry: breathtaking 68859 adjective, common, familiarity 2: a common word that was not in the library
+  linked: breathtaking 68859 in words_for_pretty (typicality 3): a common word that was not in the library
+  new entry: photogenic 68860 adjective, common, familiarity 3: a common word that was not in the library
+  linked: photogenic 68860 in words_for_pretty (typicality 4): a common word that was not in the library
 9. words for old
+  out of words_for_old: olden 39485: a form of "old", the word in the category name (now in no theme: not exported)
+  out of words_for_old: senior 32524 [older person]: a noun among adjectives (stays in ages_and_stages)
+  out of words_for_old: aging 39475 [getting old]: aged is there (now in no theme: not exported)
+  out of words_for_old: dated 28679: outdated is there (now in no theme: not exported)
+  out of words_for_old: historic 39477: it means important, and prehistoric is there (now in no theme: not exported)
+  out of words_for_old: tried and true 39492: it means proven, not old (now in no theme: not exported)
+  linked: over the hill 25154 in words_for_old (typicality 3): well known here; it was not linked
+  new entry: mature 68861 [grown-up] adjective, common, familiarity 1: a common word that was not in the library
+  linked: mature 68861 [grown-up] in words_for_old (typicality 2): a common word that was not in the library
+  new entry: primitive 68862 adjective, common, familiarity 2: a common word that was not in the library
+  linked: primitive 68862 in words_for_old (typicality 3): a common word that was not in the library
 10. words for noise
+  linked: sound 14696 [noise] in words_for_noise (typicality 2): well known here; it was not linked
+  linked: clatter 39587 in words_for_noise (typicality 3): well known here; it was not linked
+  linked: kerfuffle 27795 in words_for_noise (typicality 4): well known here; it was not linked
+  linked: bedlam 29564 in words_for_noise (typicality 4): well known here; it was not linked
 11. words for tired
+  new entry: wiped out 68863 adjective, common, familiarity 2: a common word that was not in the library
+  linked: wiped out 68863 in feeling_tired (typicality 2): a common word that was not in the library
+  new entry: burned out 68864 adjective, common, familiarity 2: a common word that was not in the library
+  linked: burned out 68864 in feeling_tired (typicality 3): a common word that was not in the library
+  new entry: frazzled 68865 adjective, common, familiarity 3: a common word that was not in the library
+  linked: frazzled 68865 in feeling_tired (typicality 4): a common word that was not in the library
+  new entry: spent 68866 [exhausted] adjective, common, familiarity 3: a common word that was not in the library
+  linked: spent 68866 [exhausted] in feeling_tired (typicality 4): a common word that was not in the library
+  new entry: zonked 68867 adjective, common, familiarity 4: a common word that was not in the library
+  linked: zonked 68867 in feeling_tired (typicality 4): a common word that was not in the library
 12. words for funny (new)
+  new theme: words_for_funny "words for funny" under synonyms (after words_for_strange), pop 2, ident 2: a basic word with no list; most of its words were not in the library
+  linked: wacky 39424 in words_for_funny (typicality 3): a well-known member of the new theme
+  linked: zany 39425 in words_for_funny (typicality 3): a well-known member of the new theme
+  linked: facetious 29096 in words_for_funny (typicality 4): a well-known member of the new theme
+  linked: wry 29080 in words_for_funny (typicality 4): a well-known member of the new theme
+  new entry: hilarious 68868 adjective, common, familiarity 1: a common word that was not in the library
+  linked: hilarious 68868 in words_for_funny (typicality 1): a common word that was not in the library
+  new entry: silly 68869 adjective, common, familiarity 1: a common word that was not in the library
+  linked: silly 68869 in words_for_funny (typicality 1): a common word that was not in the library
+  new entry: amusing 68870 adjective, common, familiarity 1: a common word that was not in the library
+  linked: amusing 68870 in words_for_funny (typicality 2): a common word that was not in the library
+  new entry: humorous 68871 adjective, common, familiarity 2: a common word that was not in the library
+  linked: humorous 68871 in words_for_funny (typicality 2): a common word that was not in the library
+  new entry: comical 68872 adjective, common, familiarity 2: a common word that was not in the library
+  linked: comical 68872 in words_for_funny (typicality 2): a common word that was not in the library
+  new entry: ridiculous 68873 adjective, common, familiarity 1: a common word that was not in the library
+  linked: ridiculous 68873 in words_for_funny (typicality 2): a common word that was not in the library
+  new entry: hysterical 68874 adjective, common, familiarity 2: a common word that was not in the library
+  linked: hysterical 68874 in words_for_funny (typicality 2): a common word that was not in the library
+  new entry: witty 68875 adjective, common, familiarity 2: a common word that was not in the library
+  linked: witty 68875 in words_for_funny (typicality 2): a common word that was not in the library
+  new entry: goofy 68876 [silly] adjective, common, familiarity 2: a common word that was not in the library
+  linked: goofy 68876 [silly] in words_for_funny (typicality 3): a common word that was not in the library
+  new entry: entertaining 68877 adjective, common, familiarity 1: a common word that was not in the library
+  linked: entertaining 68877 in words_for_funny (typicality 3): a common word that was not in the library
+  new entry: laughable 68878 adjective, common, familiarity 2: a common word that was not in the library
+  linked: laughable 68878 in words_for_funny (typicality 3): a common word that was not in the library
+  new entry: priceless 68879 adjective, common, familiarity 2: a common word that was not in the library
+  linked: priceless 68879 in words_for_funny (typicality 3): a common word that was not in the library
+  new entry: tongue-in-cheek 68880 adjective, common, familiarity 3: a common word that was not in the library
+  linked: tongue-in-cheek 68880 in words_for_funny (typicality 3): a common word that was not in the library
+  new entry: side-splitting 68881 adjective, common, familiarity 3: a common word that was not in the library
+  linked: side-splitting 68881 in words_for_funny (typicality 3): a common word that was not in the library
+  new entry: absurd 68882 adjective, common, familiarity 2: a common word that was not in the library
+  linked: absurd 68882 in words_for_funny (typicality 3): a common word that was not in the library
+  new entry: droll 68883 adjective, common, familiarity 4: a common word that was not in the library
+  linked: droll 68883 in words_for_funny (typicality 4): a common word that was not in the library
+  new entry: uproarious 68884 adjective, common, familiarity 4: a common word that was not in the library
+  linked: uproarious 68884 in words_for_funny (typicality 4): a common word that was not in the library
+  new entry: farcical 68885 adjective, common, familiarity 4: a common word that was not in the library
+  linked: farcical 68885 in words_for_funny (typicality 4): a common word that was not in the library
+  new entry: rib-tickling 68886 adjective, common, familiarity 4: a common word that was not in the library
+  linked: rib-tickling 68886 in words_for_funny (typicality 4): a common word that was not in the library
+  new entry: jocular 68887 adjective, common, familiarity 5: a common word that was not in the library
+  linked: jocular 68887 in words_for_funny (typicality 4): a common word that was not in the library
+  new entry: risible 68888 adjective, common, familiarity 5: a common word that was not in the library
+  linked: risible 68888 in words_for_funny (typicality 4): a common word that was not in the library
 13. words for strong (new)
+  new theme: words_for_strong "words for strong" under synonyms (after words_for_smart), pop 2, ident 2: a basic word with no list; most of its words were not in the library
+  linked: tough 29177 in words_for_strong (typicality 2): a well-known member of the new theme
+  linked: herculean 29516 in words_for_strong (typicality 4): a well-known member of the new theme
+  new entry: powerful 68889 adjective, common, familiarity 1: a common word that was not in the library
+  linked: powerful 68889 in words_for_strong (typicality 1): a common word that was not in the library
+  new entry: mighty 68890 adjective, common, familiarity 2: a common word that was not in the library
+  linked: mighty 68890 in words_for_strong (typicality 1): a common word that was not in the library
+  new entry: sturdy 68891 adjective, common, familiarity 2: a common word that was not in the library
+  linked: sturdy 68891 in words_for_strong (typicality 2): a common word that was not in the library
+  new entry: muscular 68892 adjective, common, familiarity 2: a common word that was not in the library
+  linked: muscular 68892 in words_for_strong (typicality 2): a common word that was not in the library
+  new entry: unbreakable 68893 adjective, common, familiarity 1: a common word that was not in the library
+  linked: unbreakable 68893 in words_for_strong (typicality 2): a common word that was not in the library
+  new entry: rugged 68894 adjective, common, familiarity 2: a common word that was not in the library
+  linked: rugged 68894 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: hardy 68895 adjective, common, familiarity 3: a common word that was not in the library
+  linked: hardy 68895 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: robust 68896 adjective, common, familiarity 3: a common word that was not in the library
+  linked: robust 68896 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: burly 68897 adjective, common, familiarity 3: a common word that was not in the library
+  linked: burly 68897 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: brawny 68898 adjective, common, familiarity 3: a common word that was not in the library
+  linked: brawny 68898 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: beefy 68899 [muscular] adjective, common, familiarity 3: a common word that was not in the library
+  linked: beefy 68899 [muscular] in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: invincible 68900 adjective, common, familiarity 2: a common word that was not in the library
+  linked: invincible 68900 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: indestructible 68901 adjective, common, familiarity 2: a common word that was not in the library
+  linked: indestructible 68901 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: heavy-duty 68902 adjective, common, familiarity 2: a common word that was not in the library
+  linked: heavy-duty 68902 in words_for_strong (typicality 3): a common word that was not in the library
+  new entry: strapping 68903 [sturdy] adjective, common, familiarity 4: a common word that was not in the library
+  linked: strapping 68903 [sturdy] in words_for_strong (typicality 4): a common word that was not in the library
+  new entry: formidable 68904 adjective, common, familiarity 3: a common word that was not in the library
+  linked: formidable 68904 in words_for_strong (typicality 4): a common word that was not in the library
+  new entry: potent 68905 adjective, common, familiarity 3: a common word that was not in the library
+  linked: potent 68905 in words_for_strong (typicality 4): a common word that was not in the library
+  new entry: sinewy 68906 adjective, common, familiarity 4: a common word that was not in the library
+  linked: sinewy 68906 in words_for_strong (typicality 4): a common word that was not in the library
+  new entry: vigorous 68907 adjective, common, familiarity 3: a common word that was not in the library
+  linked: vigorous 68907 in words_for_strong (typicality 4): a common word that was not in the library
+  new entry: puissant 68908 adjective, common, familiarity 5: a common word that was not in the library
+  linked: puissant 68908 in words_for_strong (typicality 5): a common word that was not in the library
 14. words for new (new)
+  new theme: words_for_new "words for new" under synonyms (after words_for_old), pop 2, ident 2: words for old had no opposite; its words were not in the library
+  new entry: fresh 68909 [new] adjective, common, familiarity 1: a common word that was not in the library
+  linked: fresh 68909 [new] in words_for_new (typicality 1): a common word that was not in the library
+  new entry: modern 68910 adjective, common, familiarity 1: a common word that was not in the library
+  linked: modern 68910 in words_for_new (typicality 1): a common word that was not in the library
+  new entry: recent 68911 adjective, common, familiarity 1: a common word that was not in the library
+  linked: recent 68911 in words_for_new (typicality 2): a common word that was not in the library
+  new entry: latest 68912 adjective, common, familiarity 1: a common word that was not in the library
+  linked: latest 68912 in words_for_new (typicality 2): a common word that was not in the library
+  new entry: original 68913 [first] adjective, common, familiarity 1: a common word that was not in the library
+  linked: original 68913 [first] in words_for_new (typicality 2): a common word that was not in the library
+  new entry: unused 68914 adjective, common, familiarity 1: a common word that was not in the library
+  linked: unused 68914 in words_for_new (typicality 2): a common word that was not in the library
+  new entry: up-to-date 68915 adjective, common, familiarity 2: a common word that was not in the library
+  linked: up-to-date 68915 in words_for_new (typicality 2): a common word that was not in the library
+  new entry: contemporary 68916 adjective, common, familiarity 2: a common word that was not in the library
+  linked: contemporary 68916 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: cutting-edge 68917 adjective, common, familiarity 2: a common word that was not in the library
+  linked: cutting-edge 68917 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: state-of-the-art 68918 adjective, common, familiarity 2: a common word that was not in the library
+  linked: state-of-the-art 68918 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: futuristic 68919 adjective, common, familiarity 2: a common word that was not in the library
+  linked: futuristic 68919 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: trendy 68920 adjective, common, familiarity 2: a common word that was not in the library
+  linked: trendy 68920 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: innovative 68921 adjective, common, familiarity 2: a common word that was not in the library
+  linked: innovative 68921 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: unopened 68922 adjective, common, familiarity 1: a common word that was not in the library
+  linked: unopened 68922 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: pristine 68923 adjective, common, familiarity 3: a common word that was not in the library
+  linked: pristine 68923 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: hot off the press 68924 adjective, common, familiarity 3: a common word that was not in the library
+  linked: hot off the press 68924 in words_for_new (typicality 3): a common word that was not in the library
+  new entry: groundbreaking 68925 adjective, common, familiarity 2: a common word that was not in the library
+  linked: groundbreaking 68925 in words_for_new (typicality 4): a common word that was not in the library
+  new entry: pioneering 68926 adjective, common, familiarity 3: a common word that was not in the library
+  linked: pioneering 68926 in words_for_new (typicality 4): a common word that was not in the library
+  new entry: budding 68927 adjective, common, familiarity 3: a common word that was not in the library
+  linked: budding 68927 in words_for_new (typicality 4): a common word that was not in the library
+  new entry: inaugural 68928 adjective, common, familiarity 3: a common word that was not in the library
+  linked: inaugural 68928 in words_for_new (typicality 4): a common word that was not in the library
+  new entry: nascent 68929 adjective, common, familiarity 5: a common word that was not in the library
+  linked: nascent 68929 in words_for_new (typicality 4): a common word that was not in the library
+  new entry: novel 68930 [new] adjective, common, familiarity 3: a common word that was not in the library
+  linked: novel 68930 [new] in words_for_new (typicality 4): a common word that was not in the library
 glosses and kin
+  mature 41071: gloss "" -> "grow up": its text is now shared with mature [grown-up]
+  original 53252: gloss "" -> "flavor": its text is now shared with original [first]
+  kin: beefy 68899 [muscular] <-> beef 459: one word family
+  kin: disgusting 68847 <-> disgust 3980: one word family
+  kin: disgusting 68847 <-> disgusted 32852: one word family
+  kin: amusing 68870 <-> amusement 4013: one word family
+  kin: witty 68875 <-> wit 13775 [humour]: one word family
+  kin: mysterious 68854 <-> mystery 12567: one word family
+  kin: novel 68930 [new] <-> novelist 6459: one word family
+  kin: comical 68872 <-> comedy 6523 [literature]: one word family
+  kin: comical 68872 <-> comic 26279 [comic book]: one word family
+  kin: modern 68910 <-> modernism 6596: one word family
+  kin: modern 68910 <-> modernist 13929: one word family
+  kin: pioneering 68926 <-> pioneer 6748: one word family
+  kin: astronomical 68840 [huge] <-> astronomy 7155: one word family
+  kin: astronomical 68840 [huge] <-> astronomer 32975: one word family
+  kin: futuristic 68919 <-> future 26349 [tense]: one word family
+  kin: futuristic 68919 <-> futurism 11981 [art]: one word family
+  kin: farcical 68885 <-> farce 12263: one word family
+  kin: latest 68912 <-> late 67372: one word family
+  kin: latest 68912 <-> later 32504 [farewell]: one word family
+  kin: hysterical 68874 <-> hysterics 17152: one word family
+  kin: perfect 68842 [flawless] <-> perfective 26377: one word family
+  kin: mighty 68890 <-> might 28818: one word family
+  kin: educated 68849 <-> education 29095: one word family
+  kin: priceless 68879 <-> price 33863: one word family
+  kin: trendy 68920 <-> trending 35078: one word family
+  kin: laughable 68878 <-> laugh 39651: one word family
+  kin: exceptional 68846 <-> exception 42329 [programming]: one word family
+  kin: original 68913 [first] <-> origin 67098: one word family
+  kin: zonked 68867 <-> zonk 57968: one word family
+  kin: uproarious 68884 <-> uproar 68077: one word family
+  kin: budding 68927 <-> bud 30629 [plant]: one word family
+  kin: powerful 68889 <-> power 40599 [physics]: one word family
 Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  feeling_tired: "words for tired" pop 2 ident 2: 17 words, easy/middle/hard 5/7/5, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for tired" pop 2 ident 2: 22 words, easy/middle/hard 6/8/8, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_bad: "words for bad" pop 2 ident 2: 46 words, easy/middle/hard 9/21/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for bad" pop 2 ident 2: 48 words, easy/middle/hard 12/21/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_big: "words for big" pop 2 ident 1: 34 words, easy/middle/hard 9/8/17, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "words for big" pop 2 ident 1: 35 words, easy/middle/hard 9/9/17, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  words_for_fast: "words for fast" pop 3 ident 2: 30 words, easy/middle/hard 5/12/13, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "words for fast" pop 3 ident 2: 28 words, easy/middle/hard 4/13/11, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  words_for_funny: new -> "words for funny" pop 2 ident 2: 25 words, easy/middle/hard 8/9/8, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_good: "words for good" pop 2 ident 2: 47 words, easy/middle/hard 15/10/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "words for good" pop 2 ident 2: 53 words, easy/middle/hard 17/14/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  words_for_new: new -> "words for new" pop 2 ident 2: 22 words, easy/middle/hard 7/9/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_noise: "words for noise" pop 2 ident 2: 14 words, easy/middle/hard 4/6/4, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for noise" pop 2 ident 2: 18 words, easy/middle/hard 5/7/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_old: "words for old" pop 2 ident 2: 31 words, easy/middle/hard 6/12/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for old" pop 2 ident 2: 28 words, easy/middle/hard 7/11/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_pretty: "words for pretty" pop 2 ident 2: 30 words, easy/middle/hard 11/8/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "words for pretty" pop 2 ident 2: 34 words, easy/middle/hard 11/11/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  words_for_small: "words for small" pop 2 ident 1: 30 words, easy/middle/hard 7/10/13, theme difficulty 1, 4th-easiest band 2, gap 1.0 -> "words for small" pop 2 ident 1: 31 words, easy/middle/hard 7/11/13, theme difficulty 1, 4th-easiest band 2, gap 1.0
+  words_for_smart: "words for smart" pop 2 ident 2: 36 words, easy/middle/hard 9/13/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "words for smart" pop 2 ident 2: 39 words, easy/middle/hard 10/15/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  words_for_strange: "words for strange" pop 2 ident 2: 35 words, easy/middle/hard 9/15/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for strange" pop 2 ident 2: 39 words, easy/middle/hard 10/18/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_strong: new -> "words for strong" pop 2 ident 2: 22 words, easy/middle/hard 6/9/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
 First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
-Entries left in no theme (kept in the library, not exported) 0: none
-Entries added 0: none
+Entries left in no theme (kept in the library, not exported) 12: lightning-fast 39322, rapid-fire 39317, precipitate 50080, godawful 62485, whip-smart 39403, nous 62496, drop-dead gorgeous 39470, olden 39485, aging 39475, dated 28679, historic 39477, tried and true 39492
+Entries added 91: astronomical 68840, minute 68841, perfect 68842, incredible 68843, phenomenal 68844, sensational 68845, exceptional 68846, disgusting 68847, unpleasant 68848, educated 68849, intellectual 68850, well-read 68851, cunning 68852, precocious 68853, mysterious 68854, exotic 68855, unfamiliar 68856, off-the-wall 68857, glamorous 68858, breathtaking 68859, photogenic 68860, mature 68861, primitive 68862, wiped out 68863, burned out 68864, frazzled 68865, spent 68866, zonked 68867, hilarious 68868, silly 68869, amusing 68870, humorous 68871, comical 68872, ridiculous 68873, hysterical 68874, witty 68875, goofy 68876, entertaining 68877, laughable 68878, priceless 68879, tongue-in-cheek 68880, side-splitting 68881, absurd 68882, droll 68883, uproarious 68884, farcical 68885, rib-tickling 68886, jocular 68887, risible 68888, powerful 68889, mighty 68890, sturdy 68891, muscular 68892, unbreakable 68893, rugged 68894, hardy 68895, robust 68896, burly 68897, brawny 68898, beefy 68899, invincible 68900, indestructible 68901, heavy-duty 68902, strapping 68903, formidable 68904, potent 68905, sinewy 68906, vigorous 68907, puissant 68908, fresh 68909, modern 68910, recent 68911, latest 68912, original 68913, unused 68914, up-to-date 68915, contemporary 68916, cutting-edge 68917, state-of-the-art 68918, futuristic 68919, trendy 68920, innovative 68921, unopened 68922, pristine 68923, hot off the press 68924, groundbreaking 68925, pioneering 68926, budding 68927, inaugural 68928, nascent 68929, novel 68930
 Entries deleted 0: none
-library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
-Checks: changed kinds: none
+library changes 309; entries changed 156; status set to rev 59; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 430 -> 458, info:orphan 268 -> 280, info:overlap 4824 -> 4822, info:rating-vs-zipf 1685 -> 1686
 Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
-Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
-Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
-Theme rows 3216 -> 3216; gone none; new none; theme indexes shift: none
-Theme rows whose fields changed (parent compared by id): 0: none
-Entry rows 61414 -> 61414; first row whose entry changed: none; rows that moved: 0; added none; removed none
+Export contract (family export, zipf): contract-root-region 1427 -> 1426; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3213 -> 3216; gone none; new words_for_strong, words_for_funny, words_for_new; theme indexes shift: from index 3096 ("words_for_strong", was "words_for_strange") to the last index 3215
+Theme rows whose fields changed (parent compared by id): 11: words_for_big (index 3090 -> 3090: counts [6,3,8,12,5] -> [6,3,9,12,5]); words_for_small (index 3091 -> 3091: counts [3,4,10,7,6] -> [3,4,11,7,6]); words_for_fast (index 3092 -> 3092: counts [1,4,12,8,5] -> [1,3,13,7,4]); words_for_good (index 3093 -> 3093: counts [6,9,10,14,8] -> [6,11,14,14,8]); words_for_bad (index 3094 -> 3094: counts [3,6,21,11,5] -> [3,9,21,10,5]); words_for_smart (index 3095 -> 3095: counts [4,5,13,11,3] -> [4,6,15,11,3]); words_for_strange (index 3096 -> 3097: counts [2,7,15,9,2] -> [2,8,18,9,2]); words_for_pretty (index 3097 -> 3099: counts [6,5,8,8,3] -> [6,5,11,9,3]); words_for_old (index 3098 -> 3100: counts [1,5,12,10,3] -> [1,6,11,7,3]); words_for_noise (index 3099 -> 3102: counts [0,4,6,3,1] -> [0,5,7,5,1]); feeling_tired (index 3100 -> 3103: counts [2,3,7,5,0] -> [2,4,8,8,0])
+Entry rows 61335 -> 61414; first row whose entry changed: 26234 (annoy 28680, was dated 28679); rows that moved: 35089; added astronomical 68840 (row 61323), minute 68841 (row 61324), perfect 68842 (row 61325), incredible 68843 (row 61326), phenomenal 68844 (row 61327), sensational 68845 (row 61328), exceptional 68846 (row 61329), disgusting 68847 (row 61330), unpleasant 68848 (row 61331), educated 68849 (row 61332), intellectual 68850 (row 61333), well-read 68851 (row 61334), cunning 68852 (row 61335), precocious 68853 (row 61336), mysterious 68854 (row 61337), exotic 68855 (row 61338), unfamiliar 68856 (row 61339), off-the-wall 68857 (row 61340), glamorous 68858 (row 61341), breathtaking 68859 (row 61342), photogenic 68860 (row 61343), mature 68861 (row 61344), primitive 68862 (row 61345), wiped out 68863 (row 61346), burned out 68864 (row 61347), frazzled 68865 (row 61348), spent 68866 (row 61349), zonked 68867 (row 61350), hilarious 68868 (row 61351), silly 68869 (row 61352), amusing 68870 (row 61353), humorous 68871 (row 61354), comical 68872 (row 61355), ridiculous 68873 (row 61356), hysterical 68874 (row 61357), witty 68875 (row 61358), goofy 68876 (row 61359), entertaining 68877 (row 61360), laughable 68878 (row 61361), priceless 68879 (row 61362), tongue-in-cheek 68880 (row 61363), side-splitting 68881 (row 61364), absurd 68882 (row 61365), droll 68883 (row 61366), uproarious 68884 (row 61367), farcical 68885 (row 61368), rib-tickling 68886 (row 61369), jocular 68887 (row 61370), risible 68888 (row 61371), powerful 68889 (row 61372), mighty 68890 (row 61373), sturdy 68891 (row 61374), muscular 68892 (row 61375), unbreakable 68893 (row 61376), rugged 68894 (row 61377), hardy 68895 (row 61378), robust 68896 (row 61379), burly 68897 (row 61380), brawny 68898 (row 61381), beefy 68899 (row 61382), invincible 68900 (row 61383), indestructible 68901 (row 61384), heavy-duty 68902 (row 61385), strapping 68903 (row 61386), formidable 68904 (row 61387), potent 68905 (row 61388), sinewy 68906 (row 61389), vigorous 68907 (row 61390), puissant 68908 (row 61391), fresh 68909 (row 61392), modern 68910 (row 61393), recent 68911 (row 61394), latest 68912 (row 61395), original 68913 (row 61396), unused 68914 (row 61397), up-to-date 68915 (row 61398), contemporary 68916 (row 61399), cutting-edge 68917 (row 61400), state-of-the-art 68918 (row 61401), futuristic 68919 (row 61402), trendy 68920 (row 61403), innovative 68921 (row 61404), unopened 68922 (row 61405), pristine 68923 (row 61406), hot off the press 68924 (row 61407), groundbreaking 68925 (row 61408), pioneering 68926 (row 61409), budding 68927 (row 61410), inaugural 68928 (row 61411), nascent 68929 (row 61412), novel 68930 (row 61413); removed 28679 (row 26234), 39317 (row 36004), 39322 (row 36009), 39403 (row 36089), 39470 (row 36153), 39475 (row 36158), 39477 (row 36159), 39485 (row 36167), 39492 (row 36174), 50080 (row 45922), 62485 (row 57581), 62496 (row 57591)
 root -> alias rows 0: none; alias -> root rows 0: none
 Rows whose flags changed: 0
-Links 99153 -> 99153; rows whose link count changed: 0
-Link-index shifts: none
+Links 99059 -> 99153; rows whose link count changed: 19
+Link-index shifts: from row 14063 (quiet 14698) on, link positions move
 Rows whose text changed: none
 New characters in the export (list them in the notice: the game font needs them): none
-Root links by theme + shown text + row: gone 0, new 0, rating changed 0
-  gone (other than the deleted themes): none
-  new: none
+Root links by theme + shown text + row: gone 14, new 108, rating changed 0
+  gone (other than the deleted themes): words_for_old: "dated" (28679), words_for_bad: "dreck" (29409), words_for_old: "senior" (32524), words_for_fast: "rapid-fire" (39317), words_for_fast: "lightning-fast" (39322), words_for_smart: "whip-smart" (39403), words_for_pretty: "drop-dead gorgeous" (39470), words_for_old: "aging" (39475), words_for_old: "historic" (39477), words_for_old: "olden" (39485), words_for_old: "tried and true" (39492), words_for_fast: "precipitate" (50080), words_for_bad: "godawful" (62485), words_for_smart: "nous" (62496)
+  new: words_for_noise: "sound" (14696), words_for_old: "over the hill" (25154), words_for_good: "ace" (27359), words_for_noise: "kerfuffle" (27795), words_for_fast: "lickety-split" (27830), words_for_bad: "evil" (29048), words_for_funny: "wry" (29080), words_for_funny: "facetious" (29096), words_for_strong: "tough" (29177), words_for_strong: "herculean" (29516), words_for_noise: "bedlam" (29564), words_for_funny: "wacky" (39424), words_for_funny: "zany" (39425), words_for_noise: "clatter" (39587), words_for_pretty: "dazzling" (40029), words_for_bad: "abominable" (60914), words_for_pretty: "eye-catching" (66923), words_for_big: "astronomical" (68840), words_for_small: "minute" (68841), words_for_good: "perfect" (68842), words_for_good: "incredible" (68843), words_for_good: "phenomenal" (68844), words_for_good: "sensational" (68845), words_for_good: "exceptional" (68846), words_for_bad: "disgusting" (68847), words_for_bad: "unpleasant" (68848), words_for_smart: "educated" (68849), words_for_smart: "intellectual" (68850), words_for_smart: "well-read" (68851), words_for_smart: "cunning" (68852), words_for_smart: "precocious" (68853), words_for_strange: "mysterious" (68854), words_for_strange: "exotic" (68855), words_for_strange: "unfamiliar" (68856), words_for_strange: "off-the-wall" (68857), words_for_pretty: "glamorous" (68858), words_for_pretty: "breathtaking" (68859), words_for_pretty: "photogenic" (68860), words_for_old: "mature" (68861), words_for_old: "primitive" (68862), feeling_tired: "wiped out" (68863), feeling_tired: "burned out" (68864), feeling_tired: "frazzled" (68865), feeling_tired: "spent" (68866), feeling_tired: "zonked" (68867), words_for_funny: "hilarious" (68868), words_for_funny: "silly" (68869), words_for_funny: "amusing" (68870), words_for_funny: "humorous" (68871), words_for_funny: "comical" (68872), words_for_funny: "ridiculous" (68873), words_for_funny: "hysterical" (68874), words_for_funny: "witty" (68875), words_for_funny: "goofy" (68876), words_for_funny: "entertaining" (68877), words_for_funny: "laughable" (68878), words_for_funny: "priceless" (68879), words_for_funny: "tongue-in-cheek" (68880), words_for_funny: "side-splitting" (68881), words_for_funny: "absurd" (68882), words_for_funny: "droll" (68883), words_for_funny: "uproarious" (68884), words_for_funny: "farcical" (68885), words_for_funny: "rib-tickling" (68886), words_for_funny: "jocular" (68887), words_for_funny: "risible" (68888), words_for_strong: "powerful" (68889), words_for_strong: "mighty" (68890), words_for_strong: "sturdy" (68891), words_for_strong: "muscular" (68892), words_for_strong: "unbreakable" (68893), words_for_strong: "rugged" (68894), words_for_strong: "hardy" (68895), words_for_strong: "robust" (68896), words_for_strong: "burly" (68897), words_for_strong: "brawny" (68898), words_for_strong: "beefy" (68899), words_for_strong: "invincible" (68900), words_for_strong: "indestructible" (68901), words_for_strong: "heavy-duty" (68902), words_for_strong: "strapping" (68903), words_for_strong: "formidable" (68904), words_for_strong: "potent" (68905), words_for_strong: "sinewy" (68906), words_for_strong: "vigorous" (68907), words_for_strong: "puissant" (68908), words_for_new: "fresh" (68909), words_for_new: "modern" (68910), words_for_new: "recent" (68911), words_for_new: "latest" (68912), words_for_new: "original" (68913), words_for_new: "unused" (68914), words_for_new: "up-to-date" (68915), words_for_new: "contemporary" (68916), words_for_new: "cutting-edge" (68917), words_for_new: "state-of-the-art" (68918), words_for_new: "futuristic" (68919), words_for_new: "trendy" (68920), words_for_new: "innovative" (68921), words_for_new: "unopened" (68922), words_for_new: "pristine" (68923), words_for_new: "hot off the press" (68924), words_for_new: "groundbreaking" (68925), words_for_new: "pioneering" (68926), words_for_new: "budding" (68927), words_for_new: "inaugural" (68928), words_for_new: "nascent" (68929), words_for_new: "novel" (68930)
   rating: none
 new issues: none
 

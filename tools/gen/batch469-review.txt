@@ -1,39 +1,219 @@
 Library batch v469 (for Simon's review): Qualities, textures branch: words that do not fit out and well-known words added; new themes sharp things and fragile things.
 1. rough things
+  out of rough_things: lava 28044 [molten rock]: liquid (lava rock stays) (stays in words_from_italian, volcano_words, hot_things, things_that_glow)
+  typicality: brick 24030 in rough_things 3 -> 2: well known: one of the first answers
+  typicality: rope 48700 in rough_things 3 -> 2: well known: one of the first answers
+  typicality: pine cone 30087 in rough_things 3 -> 2: well known: one of the first answers
+  linked: rock 2049 [stone] in rough_things (typicality 2): well known here; it was not linked
+  linked: beard 14290 in rough_things (typicality 2): well known here; it was not linked
+  linked: nail file 3766 in rough_things (typicality 2): well known here; it was not linked
+  linked: crocodile 1138 in rough_things (typicality 3): well known here; it was not linked
+  linked: coral 1289 [marine animal] in rough_things (typicality 3): well known here; it was not linked
+  linked: pineapple 96 in rough_things (typicality 3): well known here; it was not linked
+  linked: coconut 351 [fruit] in rough_things (typicality 3): well known here; it was not linked
+  linked: sidewalk 38436 in rough_things (typicality 4): well known here; it was not linked
+  group in rough_things: nail file 3766 = emery board 16240: the same answer, or a word and its more specific form
 2. smooth things
+  linked: glass 24032 [material] in smooth_things (typicality 1): well known here; it was not linked
+  linked: ice 39079 [frozen water] in smooth_things (typicality 1): well known here; it was not linked
+  linked: pearl 31660 [gem] in smooth_things (typicality 2): well known here; it was not linked
+  linked: apple 87 [fruit] in smooth_things (typicality 3): well known here; it was not linked
+  linked: dolphin 1285 [sea mammal] in smooth_things (typicality 3): well known here; it was not linked
+  linked: ribbon 5035 [fabric strip] in smooth_things (typicality 3): well known here; it was not linked
 3. soft things
+  linked: fur 10394 in soft_things (typicality 1): well known here; it was not linked
+  linked: bed 3666 in soft_things (typicality 2): well known here; it was not linked
+  linked: wool 5040 in soft_things (typicality 2): well known here; it was not linked
+  linked: sweater 4873 in soft_things (typicality 3): well known here; it was not linked
+  linked: petal 30090 [flower] in soft_things (typicality 3): well known here; it was not linked
+  linked: tissue 25548 [paper] in soft_things (typicality 3): well known here; it was not linked
+  linked: robe 4890 [bathrobe] in soft_things (typicality 3): well known here; it was not linked
+  linked: scarf 4955 in soft_things (typicality 3): well known here; it was not linked
+  group in soft_things: wool 5040 = lamb wool 39057: the same answer, or a word and its more specific form
 4. sticky things
+  linked: lollipop 609 in sticky_things (typicality 2): well known here; it was not linked
+  linked: marshmallow 611 in sticky_things (typicality 2): well known here; it was not linked
+  linked: gummy bear 613 in sticky_things (typicality 3): well known here; it was not linked
+  linked: dough 564 [food] in sticky_things (typicality 3): well known here; it was not linked
+  linked: slime 28640 in sticky_things (typicality 3): well known here; it was not linked
+  linked: stamp 23300 [postage] in sticky_things (typicality 3): well known here; it was not linked
+  linked: gecko 1149 in sticky_things (typicality 4): well known here; it was not linked
+  linked: Spider-Man 12554 in sticky_things (typicality 4): well known here; it was not linked
 5. slippery things
+  out of slippery_things: sea grass 1291 [seagrass]: seaweed is there (stays in foraging_finds, water_plants, rock_pool, beachcombing_finds, coastal_plants, ocean, beach, chip_flavors, sea_life, umami_foods, things_that_float, green_things, plants)
+  linked: ice rink 39043 in slippery_things (typicality 2): well known here; it was not linked
+  linked: bathtub 16268 in slippery_things (typicality 2): well known here; it was not linked
+  linked: water slide 57627 in slippery_things (typicality 2): well known here; it was not linked
+  linked: waxed floor 39047 in slippery_things (typicality 3): well known here; it was not linked
+  linked: jellyfish 1286 in slippery_things (typicality 3): well known here; it was not linked
+  linked: noodle 29337 [pasta] in slippery_things (typicality 3): well known here; it was not linked
+  linked: oyster 476 [shellfish] in slippery_things (typicality 4): well known here; it was not linked
+  linked: ski slope 39885 in slippery_things (typicality 4): well known here; it was not linked
 6. prickly things
+  typicality: pineapple 96 in prickly_things 4 -> 3: well known: one of the first answers
+  linked: rose 1693 [flower] in prickly_things (typicality 2): well known here; it was not linked
+  linked: artichoke 429 [thistle vegetable] in prickly_things (typicality 3): well known here; it was not linked
+  linked: Christmas tree 25007 [evergreen tree] in prickly_things (typicality 3): well known here; it was not linked
+  linked: hairbrush 3754 in prickly_things (typicality 3): well known here; it was not linked
+  group in prickly_things: thorn 28480 = rose thorn 39094 = rose 1693: the same answer, or a word and its more specific form
 7. plants with spines
+  linked: rose 1693 [flower] in plants_with_spines (typicality 2): well known here; it was not linked
+  linked: pineapple 96 in plants_with_spines (typicality 3): well known here; it was not linked
+  linked: raspberry 349 in plants_with_spines (typicality 3): well known here; it was not linked
+  linked: prickly pear 30574 in plants_with_spines (typicality 3): well known here; it was not linked
+  linked: saguaro 30576 [cactus] in plants_with_spines (typicality 4): well known here; it was not linked
+  linked: bougainvillea 30394 in plants_with_spines (typicality 4): well known here; it was not linked
+  linked: acacia 1657 [tree] in plants_with_spines (typicality 4): well known here; it was not linked
+  group in plants_with_spines: nopal 29503 = prickly pear 30574: the same answer, or a word and its more specific form
 8. stretchy things
+  out of stretchy_things: catapult 20725: the siege weapon (slingshot stays) (stays in castles, medieval_weapons, siege_weapons, historic_weapons, simple_machines, science_experiments_for_kids, starts_with_cat)
+  out of stretchy_things: bungee jump 39107: an activity (bungee cord stays) (stays in ways_to_jump)
+  out of stretchy_things: rubber tree 30014: a tree (stays in tropical_trees, asian_trees, south_american_trees)
+  out of stretchy_things: gutta-percha 62436: it hardly stretches (now in no theme: not exported)
+  linked: rubber 30101 [material] in stretchy_things (typicality 2): well known here; it was not linked
+  linked: socks 24409 in stretchy_things (typicality 2): well known here; it was not linked
+  linked: swimsuit 24469 in stretchy_things (typicality 3): well known here; it was not linked
+  linked: headband 4965 in stretchy_things (typicality 3): well known here; it was not linked
+  linked: muscle 3244 [body tissue] in stretchy_things (typicality 4): well known here; it was not linked
+  linked: leotard 6224 in stretchy_things (typicality 4): well known here; it was not linked
+  linked: skin 3189 [body part] in stretchy_things (typicality 4): well known here; it was not linked
 9. texture words
+  new entry: furry 68946 adjective, common, familiarity 1: a common word that was not in the library
+  linked: furry 68946 in texture_words (typicality 2): a common word that was not in the library
+  new entry: spiky 68947 adjective, common, familiarity 2: a common word that was not in the library
+  linked: spiky 68947 in texture_words (typicality 2): a common word that was not in the library
+  new entry: rubbery 68948 adjective, common, familiarity 2: a common word that was not in the library
+  linked: rubbery 68948 in texture_words (typicality 3): a common word that was not in the library
+  new entry: wrinkled 68949 adjective, common, familiarity 2: a common word that was not in the library
+  linked: wrinkled 68949 in texture_words (typicality 3): a common word that was not in the library
+  new entry: greasy 68950 adjective, common, familiarity 2: a common word that was not in the library
+  linked: greasy 68950 in texture_words (typicality 3): a common word that was not in the library
+  new entry: chalky 68951 adjective, common, familiarity 3: a common word that was not in the library
+  linked: chalky 68951 in texture_words (typicality 4): a common word that was not in the library
 10. sharp things (new)
+  new theme: sharp_things "sharp things" under textures (after rough_things), pop 2, ident 2: a set rival games have; things that cut holds only cutting tools
+  linked: knife 20135 [cutlery] in sharp_things (typicality 1): a well-known member of the new theme
+  linked: razor 3737 [shaving tool] in sharp_things (typicality 1): a well-known member of the new theme
+  linked: needle 5020 [sewing] in sharp_things (typicality 1): a well-known member of the new theme
+  linked: scissors 5026 in sharp_things (typicality 1): a well-known member of the new theme
+  linked: sword 20683 [weapon] in sharp_things (typicality 1): a well-known member of the new theme
+  linked: axe 322 [tool] in sharp_things (typicality 2): a well-known member of the new theme
+  linked: saw 318 [tool] in sharp_things (typicality 2): a well-known member of the new theme
+  linked: claw 9149 [animal] in sharp_things (typicality 2): a well-known member of the new theme
+  linked: nail 23702 [fastener] in sharp_things (typicality 2): a well-known member of the new theme
+  linked: pin 25002 [fastening] in sharp_things (typicality 2): a well-known member of the new theme
+  linked: arrow 20782 [weapon] in sharp_things (typicality 2): a well-known member of the new theme
+  linked: cactus 1768 in sharp_things (typicality 2): a well-known member of the new theme
+  linked: thorn 28480 in sharp_things (typicality 2): a well-known member of the new theme
+  linked: fang 10333 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: thumbtack 23714 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: dagger 20784 [weapon] in sharp_things (typicality 3): a well-known member of the new theme
+  linked: spear 20783 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: scalpel 3475 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: barbed wire 39035 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: toothpick 30103 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: machete 40284 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: safety pin 15394 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: icicle 2015 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: shark tooth 21698 in sharp_things (typicality 3): a well-known member of the new theme
+  linked: stinger 9133 [insect] in sharp_things (typicality 3): a well-known member of the new theme
+  linked: talon 8120 [bird] in sharp_things (typicality 4): a well-known member of the new theme
+  linked: quill 50084 [spine] in sharp_things (typicality 4): a well-known member of the new theme
+  linked: lance 34650 [weapon] in sharp_things (typicality 4): a well-known member of the new theme
+  linked: harpoon 67082 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: pickaxe 25774 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: guillotine 33828 [execution device] in sharp_things (typicality 4): a well-known member of the new theme
+  linked: pitchfork 25771 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: cleaver 17894 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: scythe 25769 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: bayonet 28727 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: katana 20560 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: flint 2081 in sharp_things (typicality 4): a well-known member of the new theme
+  linked: ice pick 66846 in sharp_things (typicality 4): a well-known member of the new theme
 11. fragile things (new)
+  new theme: fragile_things "fragile things" under textures (after soft_things), pop 2, ident 2: a set rival games have
+  linked: egg 518 [food from hens] in fragile_things (typicality 1): a well-known member of the new theme
+  linked: vase 21719 in fragile_things (typicality 1): a well-known member of the new theme
+  linked: wine glass 20141 in fragile_things (typicality 1): a well-known member of the new theme
+  linked: light bulb 23481 in fragile_things (typicality 1): a well-known member of the new theme
+  linked: mirror 23136 [glass] in fragile_things (typicality 2): a well-known member of the new theme
+  linked: window 24067 [house] in fragile_things (typicality 2): a well-known member of the new theme
+  linked: plate 20137 [dinner dish] in fragile_things (typicality 2): a well-known member of the new theme
+  linked: bubble 39566 [air bubble] in fragile_things (typicality 2): a well-known member of the new theme
+  linked: snow globe 25685 in fragile_things (typicality 2): a well-known member of the new theme
+  linked: teacup 20144 [cup] in fragile_things (typicality 2): a well-known member of the new theme
+  linked: glasses 24782 in fragile_things (typicality 2): a well-known member of the new theme
+  linked: ornament 25674 in fragile_things (typicality 2): a well-known member of the new theme
+  linked: porcelain 21117 [ceramic] in fragile_things (typicality 3): a well-known member of the new theme
+  linked: chandelier 23200 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: sandcastle 48859 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: seashell 40197 [shell] in fragile_things (typicality 3): a well-known member of the new theme
+  linked: spider web 39072 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: figurine 12046 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: hourglass 21022 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: test tube 40393 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: snowflake 1985 [ice crystal] in fragile_things (typicality 3): a well-known member of the new theme
+  linked: smartphone 7324 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: violin 280 in fragile_things (typicality 3): a well-known member of the new theme
+  linked: stained glass 5881 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: champagne flute 20163 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: bone china 55825 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: dandelion 1727 [flower] in fragile_things (typicality 4): a well-known member of the new theme
+  linked: taco shell 57838 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: gingerbread house 13629 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: Fabergé egg 21221 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: coral reef 32031 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: ecosystem 32273 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: heart 3238 [organ] in fragile_things (typicality 4): a well-known member of the new theme
+  linked: reputation 29101 in fragile_things (typicality 4): a well-known member of the new theme
+  linked: icicle 2015 in fragile_things (typicality 4): a well-known member of the new theme
+  new entry: house of cards 68952 noun, common, familiarity 2: a common word that was not in the library
+  linked: house of cards 68952 in fragile_things (typicality 3): a common word that was not in the library
 groups and kin
+  group in rough_things: coconut 351 = coconut husk 39038: a word and its more specific form: one answer
+  group in rough_things: lava rock 31073 = scoria 31747 = rock 2049: a word and its more specific form: one answer
+  group in sharp_things: pin 25002 = safety pin 15394: a word and its more specific form: one answer
+  group in soft_things: fur 10394 = kitten fur 39053 = rabbit fur 39061: a word and its more specific form: one answer
+  kin: chalky 68951 <-> chalk 4480 [for writing]: one word family
+  kin: spiky 68947 <-> spike 39098 [sharp point]: one word family
+  kin: rubbery 68948 <-> rubber 30101 [material]: one word family
+  kin: furry 68946 <-> fur 10394: one word family
+  kin: wrinkled 68949 <-> wrinkle 14327: one word family
+  kin: greasy 68950 <-> grease 39083 [slippery]: one word family
 Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  fragile_things: new -> "fragile things" pop 2 ident 2: 36 words, easy/middle/hard 12/12/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  plants_with_spines: "plants with spines" pop 3 ident 3: 20 words, easy/middle/hard 4/4/12, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "plants with spines" pop 3 ident 3: 27 words, easy/middle/hard 5/7/15, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  prickly_things: "prickly things" pop 2 ident 2: 49 words, easy/middle/hard 9/13/27, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "prickly things" pop 2 ident 2: 53 words, easy/middle/hard 10/17/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  rough_things: "rough things" pop 3 ident 3: 43 words, easy/middle/hard 5/17/21, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "rough things" pop 3 ident 3: 50 words, easy/middle/hard 11/18/21, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  sharp_things: new -> "sharp things" pop 2 ident 2: 38 words, easy/middle/hard 12/13/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  slippery_things: "slippery things" pop 2 ident 2: 36 words, easy/middle/hard 11/16/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "slippery things" pop 2 ident 2: 43 words, easy/middle/hard 14/19/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  smooth_things: "smooth things" pop 3 ident 3: 32 words, easy/middle/hard 7/13/12, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "smooth things" pop 3 ident 3: 38 words, easy/middle/hard 10/16/12, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  soft_things: "soft things" pop 2 ident 3: 38 words, easy/middle/hard 13/7/18, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "soft things" pop 2 ident 3: 46 words, easy/middle/hard 16/12/18, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  sticky_things: "sticky things" pop 2 ident 2: 41 words, easy/middle/hard 11/14/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "sticky things" pop 2 ident 2: 49 words, easy/middle/hard 13/18/18, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  stretchy_things: "stretchy things" pop 2 ident 2: 35 words, easy/middle/hard 10/13/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "stretchy things" pop 2 ident 2: 38 words, easy/middle/hard 12/14/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  texture_words: "texture words" pop 2 ident 2: 52 words, easy/middle/hard 17/18/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "texture words" pop 2 ident 2: 58 words, easy/middle/hard 19/21/18, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
 First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
-Entries left in no theme (kept in the library, not exported) 0: none
-Entries added 0: none
+Entries left in no theme (kept in the library, not exported) 1: gutta-percha 62436
+Entries added 7: furry 68946, spiky 68947, rubbery 68948, wrinkled 68949, greasy 68950, chalky 68951, house of cards 68952
 Entries deleted 0: none
-library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
-Checks: changed kinds: none
+library changes 233; entries changed 146; status set to rev 64; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 458 -> 463, info:orphan 283 -> 284, info:overlap 4822 -> 4828, info:rating-vs-zipf 1687 -> 1689
 Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
 Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
-Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
-Theme rows 3218 -> 3218; gone none; new none; theme indexes shift: none
-Theme rows whose fields changed (parent compared by id): 0: none
-Entry rows 61432 -> 61432; first row whose entry changed: none; rows that moved: 0; added none; removed none
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3216 -> 3218; gone none; new sharp_things, fragile_things; theme indexes shift: from index 3052 ("sharp_things", was "smooth_things") to the last index 3217
+Theme rows whose fields changed (parent compared by id): 9: rough_things (index 3051 -> 3051: counts [2,3,18,15,7] -> [2,9,19,15,7]); smooth_things (index 3052 -> 3053: counts [2,5,13,9,3] -> [4,6,16,9,3], range [2,4] -> [1,4]); soft_things (index 3053 -> 3054: counts [4,10,7,15,3] -> [5,12,12,16,3]); sticky_things (index 3054 -> 3056: counts [5,6,14,10,6] -> [5,8,18,12,6]); slippery_things (index 3055 -> 3057: counts [5,6,16,5,4] -> [5,9,19,7,3], range [1,5] -> [1,4]); prickly_things (index 3056 -> 3058: counts [2,8,13,19,11] -> [2,9,17,18,11]); plants_with_spines (index 3057 -> 3059: counts [1,3,4,9,5] -> [1,4,7,12,5]); stretchy_things (index 3058 -> 3060: counts [1,9,14,10,3] -> [1,11,15,13,1]); texture_words (index 3059 -> 3061: counts [4,13,18,12,5] -> [4,15,21,13,5])
+Entry rows 61426 -> 61432; first row whose entry changed: 57519 (elastin 62437, was gutta-percha 62436); rows that moved: 3906; added furry 68946 (row 61425), spiky 68947 (row 61426), rubbery 68948 (row 61427), wrinkled 68949 (row 61428), greasy 68950 (row 61429), chalky 68951 (row 61430), house of cards 68952 (row 61431); removed 62436 (row 57519)
 root -> alias rows 0: none; alias -> root rows 0: none
 Rows whose flags changed: 0
-Links 99328 -> 99328; rows whose link count changed: 0
-Link-index shifts: none
+Links 99198 -> 99328; rows whose link count changed: 131
+Link-index shifts: from row 87 (banana 88) on, link positions move
 Rows whose text changed: none
 New characters in the export (list them in the notice: the game font needs them): none
-Root links by theme + shown text + row: gone 0, new 0, rating changed 0
-  gone (other than the deleted themes): none
-  new: none
-  rating: none
+Root links by theme + shown text + row: gone 6, new 136, rating changed 4
+  gone (other than the deleted themes): slippery_things: "sea grass" (1291), stretchy_things: "catapult" (20725), rough_things: "lava" (28044), stretchy_things: "rubber tree" (30014), stretchy_things: "bungee jump" (39107), stretchy_things: "gutta-percha" (62436)
+  new: smooth_things: "apple" (87), rough_things: "pineapple" (96), plants_with_spines: "pineapple" (96), fragile_things: "violin" (280), sharp_things: "saw" (318), sharp_things: "axe" (322), plants_with_spines: "raspberry" (349), rough_things: "coconut" (351), prickly_things: "artichoke" (429), slippery_things: "oyster" (476), fragile_things: "egg" (518), sticky_things: "dough" (564), sticky_things: "lollipop" (609), sticky_things: "marshmallow" (611), sticky_things: "gummy bear" (613), rough_things: "crocodile" (1138), sticky_things: "gecko" (1149), smooth_things: "dolphin" (1285), slippery_things: "jellyfish" (1286), rough_things: "coral" (1289), plants_with_spines: "acacia" (1657), prickly_things: "rose" (1693), plants_with_spines: "rose" (1693), fragile_things: "dandelion" (1727), sharp_things: "cactus" (1768), fragile_things: "snowflake" (1985), sharp_things: "icicle" (2015), fragile_things: "icicle" (2015), rough_things: "rock" (2049), sharp_things: "flint" (2081), stretchy_things: "skin" (3189), fragile_things: "heart" (3238), stretchy_things: "muscle" (3244), sharp_things: "scalpel" (3475), soft_things: "bed" (3666), sharp_things: "razor" (3737), prickly_things: "hairbrush" (3754), rough_things: "nail file" (3766), soft_things: "sweater" (4873), soft_things: "robe" (4890), soft_things: "scarf" (4955), stretchy_things: "headband" (4965), sharp_things: "needle" (5020), sharp_things: "scissors" (5026), smooth_things: "ribbon" (5035), soft_things: "wool" (5040), fragile_things: "stained glass" (5881), stretchy_things: "leotard" (6224), fragile_things: "smartphone" (7324), sharp_things: "talon" (8120), sharp_things: "stinger" (9133), sharp_things: "claw" (9149), sharp_things: "fang" (10333), soft_things: "fur" (10394), fragile_things: "figurine" (12046), sticky_things: "Spider-Man" (12554), fragile_things: "gingerbread house" (13629), rough_things: "beard" (14290), sharp_things: "safety pin" (15394), slippery_things: "bathtub" (16268), sharp_things: "cleaver" (17894), sharp_things: "knife" (20135), fragile_things: "plate" (20137), fragile_things: "wine glass" (20141), fragile_things: "teacup" (20144), fragile_things: "champagne flute" (20163), sharp_things: "katana" (20560), sharp_things: "sword" (20683), sharp_things: "arrow" (20782), sharp_things: "spear" (20783), sharp_things: "dagger" (20784), fragile_things: "hourglass" (21022), fragile_things: "porcelain" (21117), fragile_things: "Fabergé egg" (21221), sharp_things: "shark tooth" (21698), fragile_things: "vase" (21719), fragile_things: "mirror" (23136), fragile_things: "chandelier" (23200), sticky_things: "stamp" (23300), fragile_things: "light bulb" (23481), sharp_things: "nail" (23702), sharp_things: "thumbtack" (23714), smooth_things: "glass" (24032), fragile_things: "window" (24067), stretchy_things: "socks" (24409), stretchy_things: "swimsuit" (24469), fragile_things: "glasses" (24782), sharp_things: "pin" (25002), prickly_things: "Christmas tree" (25007), soft_things: "tissue" (25548), fragile_things: "ornament" (25674), fragile_things: "snow globe" (25685), sharp_things: "scythe" (25769), sharp_things: "pitchfork" (25771), sharp_things: "pickaxe" (25774), sharp_things: "thorn" (28480), sticky_things: "slime" (28640), sharp_things: "bayonet" (28727), fragile_things: "reputation" (29101), slippery_things: "noodle" (29337), soft_things: "petal" (30090), stretchy_things: "rubber" (30101), sharp_things: "toothpick" (30103), plants_with_spines: "bougainvillea" (30394), plants_with_spines: "prickly pear" (30574), plants_with_spines: "saguaro" (30576), smooth_things: "pearl" (31660), fragile_things: "coral reef" (32031), fragile_things: "ecosystem" (32273), sharp_things: "guillotine" (33828), sharp_things: "lance" (34650), rough_things: "sidewalk" (38436), sharp_things: "barbed wire" (39035), slippery_things: "ice rink" (39043), slippery_things: "waxed floor" (39047), fragile_things: "spider web" (39072), smooth_things: "ice" (39079), fragile_things: "bubble" (39566), slippery_things: "ski slope" (39885), fragile_things: "seashell" (40197), sharp_things: "machete" (40284), fragile_things: "test tube" (40393), fragile_things: "sandcastle" (48859), sharp_things: "quill" (50084), fragile_things: "bone china" (55825), slippery_things: "water slide" (57627), fragile_things: "taco shell" (57838), sharp_things: "ice pick" (66846), sharp_things: "harpoon" (67082), texture_words: "furry" (68946), texture_words: "spiky" (68947), texture_words: "rubbery" (68948), texture_words: "wrinkled" (68949), texture_words: "greasy" (68950), texture_words: "chalky" (68951), fragile_things: "house of cards" (68952)
+  rating: prickly_things: "pineapple" (96) 3.1/4 -> 2.4/3, rough_things: "brick" (24030) 2.4/3 -> 1.7/2, rough_things: "pine cone" (30087) 2.4/3 -> 1.7/2, rough_things: "rope" (48700) 2.4/3 -> 1.7/2
 new issues: none
 
 How the branch was reviewed (Qualities, 2026-11-25): all 11 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
