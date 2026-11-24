@@ -1,0 +1,315 @@
+Library batch v452: the last clean-up after the tidy-up (orphans, alias kinds, oddities, ISSUES T16/T33/T34, people typed person). 0 themes deleted, 0 moved, 0 renamed, 10 second roots merged, 11 entries added, 25 deleted.
+1. Orphans (info, 304 at v451): entries in no theme. Linked where a theme clearly fits, merged as an alias where another root has the sense, deleted when a stub made for one theme, else kept with a reason (LIBRARY-RULES 2 Deleting)
+1a. New theme "animal categories": real names of animal categories (marsupial, arachnid, mollusk ...), left in no theme when v435 took the bare category words out of their kinds themes
+  new theme: animal_categories "animal categories" under animal_words (after hybrid_animals), pop 3, ident 2: a home for the real category names v435 left in no theme (LIBRARY-RULES 6 Themes: 4+ real members, a clear name), with the easy class words mammal, reptile, amphibian and insect (reviewer); a player names it from mammal, reptile, insect and marsupial after a second look (ident 2); an ordinary pick (pop 3)
+  raptor 8118 [bird] becomes a synonym alias of bird of prey 8119 (familiarity 3): one sense: a raptor [bird] is a bird of prey (Merriam-Webster raptor 2); bird of prey is the plainer name (familiarity 2), raptor its synonym (familiarity 3, the root + 1); the dinosaur raptor 9971 is another entry
+  new entry: mammal 68605 noun, common, familiarity 1: the class word of a big animal category; none existed (reviewer)
+  linked: mammal 68605 in animal_categories (typicality 1): warm-blooded animals that feed their young on milk
+  new entry: reptile 68606 noun, common, familiarity 1: the class word of a big animal category; none existed (reviewer)
+  linked: reptile 68606 in animal_categories (typicality 1): snakes, lizards, turtles and crocodiles
+  new entry: insect 68607 noun, common, familiarity 1: the class word of a big animal category; none existed (reviewer)
+  linked: insect 68607 in animal_categories (typicality 1): six-legged animals: ants, bees, beetles, butterflies
+  new entry: amphibian 68608 noun, common, familiarity 1: the class word of a big animal category; none existed (reviewer)
+  linked: amphibian 68608 in animal_categories (typicality 2): frogs, toads, newts and salamanders
+  linked: marsupial 7919 in animal_categories (typicality 2): the pouched mammals (kangaroo, koala, opossum)
+  linked: arachnid 9112 in animal_categories (typicality 2): spiders, scorpions, ticks and mites
+  linked: mollusk 8896 in animal_categories (typicality 2): snails, clams, squid and octopus
+  linked: bird of prey 8119 in animal_categories (typicality 2): eagles, hawks, falcons and owls
+  linked: corvid 50653 in animal_categories (typicality 3): the crow family (crows, ravens, magpies, jays)
+  linked: cetacean 7893 in animal_categories (typicality 3): whales, dolphins and porpoises
+  linked: waterfowl 32071 in animal_categories (typicality 3): ducks, geese and swans
+  linked: songbird 66428 in animal_categories (typicality 3): perching birds that sing (thrushes, warblers, finches)
+  linked: echinoderm 8986 in animal_categories (typicality 3): starfish, sea urchins and sea cucumbers
+  linked: pinniped 8905 in animal_categories (typicality 3): seals, sea lions and walruses
+  linked: ratite 8257 in animal_categories (typicality 4): the flightless running birds (ostrich, emu, kiwi)
+  linked: equid 9625 in animal_categories (typicality 4): the horse family (horse, donkey, zebra)
+1b. Linked to an existing theme that clearly fits
+  linked: fleecy 14830 in texture_words (typicality 3): a texture word; batch421 took it out of touch words because texture words holds the textures, but it was never linked there
+  linked: abrasive 14831 in texture_words (typicality 4): a texture word; batch421 took it out of touch words because texture words holds the textures, but it was never linked there
+  linked: sandpapery 14842 in texture_words (typicality 4): a texture word; batch421 took it out of touch words because texture words holds the textures, but it was never linked there
+  linked: Sushruta 15676 in medical_pioneers (typicality 4): the ancient Indian physician known as the father of surgery, beside Avicenna
+  linked: Charaka 15675 in medical_pioneers (typicality 5): the ancient Indian physician of the Charaka Samhita, beside Avicenna
+  linked: rongoā 15642 in maori_culture (typicality 4): traditional Māori healing (Te Aka), a part of Māori culture as marae and tapu are
+  linked: ngangkari 15655 [healer] in aboriginal_culture (typicality 4): the traditional healers of the Anangu (Ngaanyatjarra Pitjantjatjara Yankunytjatjara Women's Council), as bush tucker is Aboriginal food
+  linked: bush medicine 15648 in aboriginal_culture (typicality 3): traditional Aboriginal plant medicine, beside bush tucker
+  linked: pixie dust 22498 in magic_items (typicality 3): the magic dust of Peter Pan that makes people fly (its synonym fairy dust stays its alias)
+  linked: Cyber Monday 25289 in shopping_words (typicality 3): the online sales day after Thanksgiving, beside Black Friday
+  linked: lighthouse keeper 31166 in old_time_jobs (typicality 3): a job that vanished when lighthouses were automated (the theme note: jobs that have mostly vanished in the last 150 years)
+  linked: craps table 45199 in casino_words (typicality 3): the table of the dice game craps, beside roulette wheel
+  linked: fighter pilot 47181 in flight_crew (typicality 3): a kind of pilot, beside airline pilot, commercial pilot and chief pilot
+  linked: helicopter pilot 47184 in flight_crew (typicality 3): a kind of pilot, beside airline pilot, commercial pilot and chief pilot
+  linked: test pilot 47180 in flight_crew (typicality 4): a kind of pilot, beside airline pilot, commercial pilot and chief pilot
+  linked: stunt pilot 47183 in flight_crew (typicality 4): a kind of pilot, beside airline pilot, commercial pilot and chief pilot
+  linked: Julius 62423 in boys_names (typicality 4): a given-name entry (gloss name, type person), an old Latin boy's name
+  linked: Augustus 67466 [name] in boys_names (typicality 4): a given-name entry (gloss name, type person), an old Latin boy's name
+  linked: Augustine 67465 [name] in boys_names (typicality 4): a given-name entry (gloss name, type person), an old Latin boy's name
+  linked: Augusta 67464 [name] in girls_names (typicality 4): a given-name entry (gloss name, type person), an old Latin girl's name
+  linked: Julio 67463 [name] in latin_american_names (typicality 3): a given-name entry (gloss name, type person), a common Spanish boy's name
+  linked: Larderello 60441 in geothermal_wonders (typicality 4): the Tuscan geothermal field of fumaroles, the first geothermal power (1904)
+  linked: Wairakei 60442 in geothermal_wonders (typicality 4): the New Zealand geothermal field and terraces near Taupō, beside Rotorua
+  linked: concentrated solar 32251 in renewable_energy (typicality 4): a kind of solar power (mirrors focus sunlight), beside photovoltaic
+  linked: green hydrogen 32256 in renewable_energy (typicality 4): hydrogen made with renewable electricity, beside biofuel and biogas
+  linked: protected area 32262 in conservation_words (typicality 3): land or sea protected for nature, beside wildlife corridor and Red List
+  linked: buffer zone 32289 in conservation_words (typicality 4): the belt around a protected area, beside wildlife corridor
+  linked: public transport 32357 in eco_habits (typicality 2): taking the bus or train instead of the car, beside cycling, walking and carpooling
+1c. Same sense as another root: merged (the orphan becomes an alias in place, or is deleted when its text repeats)
+  butcher's 131 [shop] becomes a synonym alias of butcher shop 66586 (familiarity 2, region UK): the UK everyday name of a butcher shop ("the butcher's"); a synonym keeping its UK tag, not the UK display word: butcher shop shows "butcher" in shops and ___shop, and a regional alias would swap that text
+  banger 2644 [old car] becomes a regional alias of jalopy 2643 (familiarity 3, region UK): banger is the UK word for an old, worn-out car (Oxford "banger" 3): the UK display word of jalopy (no UK alias yet); jalopy stays in 1920s slang (locked)
+  kin nubbly 14843 - nubby 39131 dropped (a different word)
+  nubbly 14843 becomes a regional alias of nubby 39131 (familiarity 4, region UK): the UK word for nubby (Oxford nubbly; Merriam-Webster nubby): the UK display word; their kin goes (one word now)
+  kin pitch 14710 - pitcher 50069 dropped (a different word)
+  pitch 14710 [sound] merged into pitch 6069 [music] and deleted (same text): one sense: the highness or lowness of a sound; pitch [music] 6069 already holds it in music words and acoustics words (batch421 called it a second copy)
+  frequency 14723 [sound] merged into frequency 35258 [radio] and deleted (same text): one sense: the rate of a wave's vibration; frequency 35258 already holds it in acoustics words and physics words (batch421 called it a second copy)
+  frequency 35258: gloss "radio" -> "wave": the one wave sense now (radio, sound, physics); the gloss names it (reviewer)
+1d. Deleted: stubs made for one theme, with no alias, kin, group or nameOkIn depending on them (LIBRARY-RULES 2, Deleting)
+  deleted entry: Equus 9626: the Latin genus name of horses, made for horse family (v435 took it out as the bare category word); equid is the group word, now in animal categories
+  deleted entry: Caretta caretta 9667: the Latin name of the loggerhead turtle, made for Turkish animals, where loggerhead turtle is the member
+  deleted entry: caudate 8706: the zoologist's order name of the salamanders (familiarity 5), made for salamanders and newts; no theme of order names
+  deleted entry: urodele 8707: the other order name of the salamanders (familiarity 5), made for salamanders and newts
+  deleted entry: flying reptile 9996: a description, made for flying reptiles, whose name it is
+  deleted entry: venomous snake 50724: a description, made for venomous snakes, whose name it is
+  deleted entry: pupillary 14864: an adjective made for eye parts, not a part
+  deleted entry: Huang Di 15587: a second romanization of the Yellow Emperor, whose translation alias Huangdi it repeats
+  deleted entry: sidr honey 15600: a specific honey made for Middle Eastern remedies, where honey is the member
+  deleted entry: ajwa dates 15609: a specific date made for Middle Eastern remedies, where dates is the member
+  deleted entry: tridosha 15684: the three doshas together, made for Ayurveda words, where vata, pitta and kapha are the members
+  deleted entry: exploding head 16150: a misleading short form of exploding head syndrome, made for sleep disorders
+  deleted entry: praline filling 18407: a generated stub (a filling, not a chocolate) with no theme
+  deleted entry: truffle shell 18408: a generated stub (a confectioner's part) with no theme
+  deleted entry: hydrologic cycle 32003: a technical name of the water cycle (familiarity 5), too hard as its first synonym (familiarity 2 + 1 at most); made for the water cycle theme, whose name is water cycle
+  deleted entry: cooling engine 40270: a generated stub that is not an established term
+  deleted entry: arachibutyrophobia 60846: a joke coinage (fear of peanut butter sticking to the roof of the mouth), made for phobias and taken out as a joke word
+  deleted entry: feel up 14837: a crude sexual phrase (LIBRARY-RULES 5, Offensive words: delete an entry whose meaning is crude), unflagged; made for touch words
+  deleted entry: cerumen 14793: the medical word for earwax (familiarity 5), made for ear parts; too hard as earwax's first synonym (familiarity 2 + 1 at most)
+  deleted entry: crop duster pilot 47182: a stub: crop duster 47088 (aircraft types, farm vehicles) covers it; the job is the pilot of a crop duster (reviewer)
+  deleted entry: sea elephant 9878: an old name of the elephant seal (familiarity 4); as its synonym it would give away sea mammals and seals and sea lions (theme-name: "sea")
+  deleted entry: coin laundry 23901: a second name of the laundromat (familiarity 3); as its synonym it would give away laundry words (theme-name: "laundry")
+1e. Kept in no theme, on purpose (listed with the reasons at the end of the review)
+2. alias-kind-suspect (info, 23 at v451): real variant spellings (romanizations, old and eye-dialect spellings, UK plough, spelled-out DJ and MC); one kind fixed
+  Oxum 22199 (alias of Oshun 22198): kind spelling -> translation: Oxum is the Portuguese (Brazilian Candomblé) name of the orisha Oshun, as Roma is the Italian name of Rome: a translation, not an English spelling
+3. Small oddities
+  Pietà 37121: type "place" -> "title": Michelangelo's Pietà is a sculpture, an artwork: type title (LIBRARY-RULES 4 type: book, film, song, game, artwork), not a place
+  Pieta 68474: type "place" -> "title": a spelling alias has its root's type
+  otitis media 62722: alias (synonym) of ear infection 14876 -> its own root (familiarity 4): the medical name of a middle-ear infection, the member infections shows; as ear infection's first synonym it was too hard (5 for a familiarity-1 root) (reviewer)
+  linked: otitis media 62722 in infections (typicality 4): the medical name, shown there before through ear infection (reviewer)
+  out of infections: ear infection 14876: otitis media takes its place (its show "otitis media" goes with the link) (reviewer) (stays in common_illnesses, childhood_illnesses)
+4. T16, T33, T34 (ISSUES.md): what is still wrong and clear
+  kin skip 60580 - skipping 15857 dropped (a different word)
+  skip 60580 [rubbish container] merged into dumpster 23980 and deleted (its text is already the UK regional alias skip of dumpster): T33: a second root of dumpster [UK skip], untagged, beside dumpster in construction site; dumpster already has skip as its UK regional alias, so the root is deleted (its link merges into dumpster, typicality kept); its kin with skipping [exercise] was a different word
+  new entry: transom 68609 [window] noun, common, familiarity 4: T33: a transom window (the small window over a door, Merriam-Webster transom 2) is another sense than the ship's transom (the flat stern)
+  linked: transom 68609 [window] in window_styles (typicality 4): T33: a transom window (the small window over a door, Merriam-Webster transom 2) is another sense than the ship's transom (the flat stern)
+  out of window_styles: transom 47452: wrong sense: transom 68609 [window] takes the link (stays in ship_parts)
+  transom 47452: gloss "" -> "ship": its text is now shared with transom [window]
+  coveralls 4893: regional alias (US) of overalls 4891 -> a root (untagged, the US and neutral word): T33, the one-piece garment; overalls keeps dungarees, the bib sense (reviewer)
+  alias boilersuit 4908 (spelling) moves to coveralls 4893
+  boiler suit 24453 becomes a regional alias of coveralls 4893 (familiarity 3, region UK); links move: work_clothes:2 clothes:4: T33: the UK word for coveralls: the UK display word; its links (work clothes 2, clothes 4) move to coveralls (reviewer)
+  boilersuit 4908 (alias of coveralls 4893): kind spelling -> synonym: the closed spelling of the UK boiler suit: a UK synonym of coveralls (one UK display word, boiler suit) (reviewer)
+  Aussie rules 38526 becomes a synonym alias of Australian rules 5214 (familiarity 3, region AU); links move: national_sports:2: T33: one sport, the informal Australian name; a synonym keeping its AU tag (familiarity 3, the root 3)
+  Blu-Tack 39075: type "common" -> "proper": T33: a named product with tm is proper (LIBRARY-RULES 4 type)
+  Blu Tack 23824 becomes a spelling alias of Blu-Tack 39075 (familiarity 3); links move: adhesives:3: T33: one product; Oxford prints Blu-Tack (trademark): the root; Blu Tack its plain spelling (untagged)
+  roly poly 28950: type "phrase" -> "common": T34: an adjective (plump), not an idiom (LIBRARY-RULES 4 type phrase)
+  roly poly 28950: gloss "" -> "plump": T34: names the sense beside roly-poly [pill bug] 1418
+6. People typed person (the game may detect a people theme from 70% person members): themes of mostly real people
+  Audubon 8441: type "proper" -> "person": John James Audubon, the bird painter: a real person in famous naturalists (beside Lamarck and Buffon, also surname roots typed person)
+  new theme: fashion_houses "fashion houses" under clothes (after fashion_designers), pop 2, ident 2, tm: fashion designers held 14 fashion houses (companies, typed org) beside 21 designers; the houses get their own theme, so fashion designers holds people only (100% person)
+  linked: Chanel 24532 in fashion_houses (typicality 1): a fashion house (company), typicality kept
+  out of fashion_designers: Chanel 24532: a company, now in fashion houses (stays in fashion_houses)
+  linked: Dior 24533 in fashion_houses (typicality 1): a fashion house (company), typicality kept
+  out of fashion_designers: Dior 24533: a company, now in fashion houses (stays in fashion_houses)
+  linked: Versace 24534 in fashion_houses (typicality 1): a fashion house (company), typicality kept
+  out of fashion_designers: Versace 24534: a company, now in fashion houses (stays in fashion_houses)
+  linked: Armani 24535 in fashion_houses (typicality 1): a fashion house (company), typicality kept
+  out of fashion_designers: Armani 24535: a company, now in fashion houses (stays in fashion_houses)
+  linked: Prada 24536 in fashion_houses (typicality 1): a fashion house (company), typicality kept
+  out of fashion_designers: Prada 24536: a company, now in fashion houses (stays in fashion_houses)
+  linked: Gucci 24537 in fashion_houses (typicality 1): a fashion house (company), typicality kept
+  out of fashion_designers: Gucci 24537: a company, now in fashion houses (stays in fashion_houses)
+  linked: Louis Vuitton 24538 in fashion_houses (typicality 2): a fashion house (company), typicality kept
+  out of fashion_designers: Louis Vuitton 24538: a company, now in fashion houses (stays in fashion_houses)
+  linked: Givenchy 24543 in fashion_houses (typicality 3): a fashion house (company), typicality kept
+  out of fashion_designers: Givenchy 24543: a company, now in fashion houses (stays in fashion_houses)
+  linked: Balenciaga 24544 in fashion_houses (typicality 3): a fashion house (company), typicality kept
+  out of fashion_designers: Balenciaga 24544: a company, now in fashion houses (stays in fashion_houses)
+  linked: Burberry 24545 in fashion_houses (typicality 2): a fashion house (company), typicality kept
+  out of fashion_designers: Burberry 24545: a company, now in fashion houses (stays in fashion_houses)
+  linked: Hermès 24546 [fashion house] in fashion_houses (typicality 3): a fashion house (company), typicality kept
+  out of fashion_designers: Hermès 24546 [fashion house]: a company, now in fashion houses (stays in fashion_houses)
+  linked: Valentino 24547 in fashion_houses (typicality 3): a fashion house (company), typicality kept
+  out of fashion_designers: Valentino 24547: a company, now in fashion houses (stays in fashion_houses)
+  linked: Fendi 24548 in fashion_houses (typicality 3): a fashion house (company), typicality kept
+  out of fashion_designers: Fendi 24548: a company, now in fashion houses (stays in fashion_houses)
+  linked: Dolce & Gabbana 24549 in fashion_houses (typicality 2): a fashion house (company), typicality kept
+  out of fashion_designers: Dolce & Gabbana 24549: a company, now in fashion houses (stays in fashion_houses)
+  new entry: Christian Dior 68610 noun, person, familiarity 2: the designer who founded the house Dior; the house entry is the company, in fashion houses (reviewer: easy members; in fashion houses the house entry already covers the name, and a person there would show "Dior" twice, so the designer goes in fashion designers)
+  linked: Christian Dior 68610 in fashion_designers (typicality 1): a famous designer, an easy member
+  new entry: Dior 68611 [designer] noun, person, familiarity 2, synonym alias of Christian Dior 68610: the people-names rule: the surname is the first synonym, at the same familiarity
+  Dior 24533: gloss "" -> "fashion house": its text is now shared with Dior [designer], the alias of Christian Dior
+  new entry: Giorgio Armani 68612 noun, person, familiarity 2: the designer who founded the house Armani; the house entry is the company, in fashion houses (reviewer: easy members; in fashion houses the house entry already covers the name, and a person there would show "Armani" twice, so the designer goes in fashion designers)
+  linked: Giorgio Armani 68612 in fashion_designers (typicality 1): a famous designer, an easy member
+  new entry: Armani 68613 [designer] noun, person, familiarity 2, synonym alias of Giorgio Armani 68612: the people-names rule: the surname is the first synonym, at the same familiarity
+  Armani 24535: gloss "" -> "fashion house": its text is now shared with Armani [designer], the alias of Giorgio Armani
+  new entry: Gianni Versace 68614 noun, person, familiarity 3: the designer who founded the house Versace; the house entry is the company, in fashion houses (reviewer: easy members; in fashion houses the house entry already covers the name, and a person there would show "Versace" twice, so the designer goes in fashion designers)
+  linked: Gianni Versace 68614 in fashion_designers (typicality 2): a famous designer, an easy member
+  new entry: Versace 68615 [designer] noun, person, familiarity 3, synonym alias of Gianni Versace 68614: the people-names rule: the surname is the first synonym, at the same familiarity
+  Versace 24534: gloss "" -> "fashion house": its text is now shared with Versace [designer], the alias of Gianni Versace
+  theme fashion_designers: note "real designers and houses: Chanel, Dior, Versace, Armani, Prada" -> "real designers: Coco Chanel, Ralph Lauren, Vivienne Westwood, Karl Lagerfeld, Yves Saint Laurent": the houses moved to fashion houses
+  Orphans: 304 before, 239 after; kept with a reason 239; without a reason 0; new 0
+Orphans left in no theme, by reason (kept on purpose):
+  21: livestock 1476, megafauna 1617, flavor 3324, video game 5825, magic trick 13744, trunk 14249, color 28466, erosion 31915, water cycle 32007, pollutant 32185, climate change 32292, launch pad 41335, constrictor 50741, sighthound 50992, scent hound 50993, hunting dog 50997, toy dog 51015, teacup dog 51016, lapdog 51017, logic puzzle 58921, sushi roll 64778: a real category word, or the name of a theme, with its kinds or members in that theme: the bare category word is not a member (LIBRARY-RULES 5)
+  1: horse race 1513: a general word: horse racing terms holds race and the kinds of race
+  1: deciduous 1673: an adjective of trees: the tree themes hold trees, and no theme holds tree adjectives
+  38: vision 3309, sixth sense 3314, taste buds 3315, sensation 3327, perception 3328, sensory 3329, optic 3335, receptor 3337, stimulus 3338, synesthesia 3339, perfect pitch 3342, balance 3343, gustation 3345, proprioception 3347, thermoception 3348, nociception 3349, earwax 3352, visage 14205, countenance 14206, mug 14207, central nervous system 14576, respiration 14584, immune response 14586, enteric nervous system 14588, special senses 14589, visible 14673, clock 14688, perceive 14692, visualize 14693, noise 14697, audio 14713, amplify 14724, reverberate 14725, scratch and sniff 14765, audition 50101, mechanoreceptor 60780, paresthesia 60781, somatosensory 60782: a senses or body word left when batch421 and v439 narrowed the senses and body themes; a real word, no theme of its kind (perception words, body processes)
+  9: Putt-Putt 5276, Norwegian blue 8298, Hotel California 48428, Hostelworld 48464, Sooty 50116, Pumbaa 50562, Lassie 51048, Shamrock Shake 55779, Beth Harmon 58866: a named character, product or title with no theme of its kind (fictional animals, a song, a booking site, a menu item)
+  40: lone wolf 7991, wolf pack 7992, peace dove 8496, sweet tooth 14514, hibernate 16020, somnambulist 16029, nocturnal 16093, omen 22822, harbinger 22825, bespoke 27903, may 27948, dotted 28197, craft 28464, humor 28481, time 28515, collide 28627, delivery 28631, vocal 28698, rehearse 28713, submit 28719, smart 29046, gumption 29229, heartless 29230, strange 39417, pretty 39442, close 39933, sweaty 39941, swarthy 40077, bowl over 44290, stem to stern 47620, Achilles' heel 54884, malice 56037, answer 56056, paradigm 56071, Age of Aquarius 62068, married 62394, retool 62412, eyeful 66915, dotage 67087, vocab 67117: a general word or idiom with no theme of its kind (v433, v446, v447 kept these)
+  2: grope 14820, fondle 14835: a sexual sense, flagged (offensive or adult); a real word, no family theme takes it
+  14: Zamzam water 15602, ruqyah 15606, Unani 15607, sangoma 15620, cat's claw 15625, traditional healer 15628, iboga 15630, nyanga 15635, piripiri 15653, Orisha 22214, Santeria 22218, Gideon Bible 34238, Heaven's Gate 34426, Candomble 62043: a healer, rite, tradition or faith with no theme of its kind (taken out of the remedy themes by batch423, of religion by v444); a real word
+  3: witch doctor 15629, witch hunt 22426, lived 29041: left by the offensive pass (v432); a real word, flagged or only a reversible partner (T34)
+  8: thread count 16054, xenophobia 16413, homophobia 16414, effleurage 16472, petrissage 16473, vitamin B 16638, ketogenic 16731, tapotement 60849: a real term taken out of the theme it was made for as not a member (prejudice, not a phobia; a massage stroke, not a massage type; the B vitamins together; a diet adjective; a fabric measure)
+  9: maraschino cherry 17220, apricot kernel 17232, garlic scape 17578, duck breast 17722, rotisserie chicken 17726, chicken liver 17728, icing tip 18269, extra virgin 18900, mille crepe 19269: a real food word with no theme of its kind; a more specific form of a member (maraschino cherry beside cherry on top, duck breast beside duck) is not a member (LIBRARY-RULES 5)
+  5: Caernarfon 20730, French Guiana 35765, Nunavut 36213, Northwest Territories 36214, Warwick 56063: a place with no theme of its kind: no theme of Welsh or English towns; French Guiana is not a country; Nunavut and Northwest Territories are territories, not among the 10 Canadian provinces (complete set)
+  26: mouse trap 23388, weekend break 25300, sanitizer 28465, locust plague 31838, oil well 32338, coal seam 32346, medal bar 34645, honors degree 34950, bull elephant 40204, Human Genome Project 40949, comet tail 41321, payload bay 41343, kin-ball 42969, footgolf 42972, Yoyogi 44428, pony club 44907, spectacle 44976, snake eyes 45495, boxcars 45496, hailing a cab 47040, chase vehicle 47416, van life 48612, semi trailer 49185, salmon run 50763, Flushing Meadows 58911, coal tar 60510: a real word with no clearly right theme: a more specific form of a member (oil well, coal seam beside seam, comet tail, bull elephant), a part, an event or a niche sport (kin-ball, footgolf: v442 kept these)
+  1: yooper 27564: a US regional nickname (a person from Michigan's Upper Peninsula): no theme of regional nicknames
+  4: molten iron 31908, geosphere 31909, solid core 31913, liquid core 31914: Earth's-layers words left by v415: layers of the earth holds inner and outer core
+  8: geothermal plant 31956, thermal bath 31957, ground source heat 31961, geothermal 32232, geothermal well 32258, binary cycle 60443, dry steam 60444, geothermal gradient 60445: a geothermal power word: geothermal features holds natural features only, renewable energy holds geothermal energy
+  45: nutrients 31978, drainage 31980, tilth 31981, hydrosphere 32006, contamination 32188, greywater 32203, repurpose 32216, pulp 32217, bale 32218, downcycle 32219, closed loop 32220, MRF 32221, refillable 32222, reclaimed 32223, recyclable 32224, single stream 32225, feedstock 32226, reprocess 32227, battery storage 32247, run-of-river 32252, wave buoy 32253, net metering 32254, feed-in tariff 32255, sustainable 32287, SSSI 32290, flooding 32308, mitigation 32318, reusable 32355, secondhand 32359, vegetable garden 32360, zero waste 32366, energy saving 32368, bokashi 32370, low flush 32371, farmers market 32373, car share 32375, ride share 32376, repair cafe 32377, plastic-free 32378, refillery 32379, waste-to-energy 49760, rhizosphere 60446, mycorrhiza 60453, vadose zone 60459, ex situ 60502: an environment word with no theme of its kind (most are adjectives or processes; the eco themes hold things and habits); flooding is a form of flood, which natural disasters holds; ride share and car share are carpooling, which eco habits holds
+  3: golden jubilee 55631, silver jubilee 55632, diamond jubilee 55633: a jubilee is the anniversary of a reign or a founding, not a personal milestone: milestone celebrations is not its theme (reviewer); no theme of anniversaries
+  1: clever clogs 62493: the UK word for a smarty-pants: as its synonym it would give away clever people (theme-name: "clever"), and a second root of one sense is not linked; British slang holds UK words with no general equivalent
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  aboriginal_culture: "Aboriginal culture" pop 3 ident 3: 38 words, easy/middle/hard 5/6/27, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "Aboriginal culture" pop 3 ident 3: 40 words, easy/middle/hard 5/7/28, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  adhesives: "adhesives" pop 2 ident 2: 35 words, easy/middle/hard 9/13/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "adhesives" pop 2 ident 2: 35 words, easy/middle/hard 9/13/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  animal_categories: new -> "animal categories" pop 3 ident 2: 16 words, easy/middle/hard 6/5/5, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  boys_names: "boys' names" pop 1 ident 1: 44 words, easy/middle/hard 20/14/10, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "boys' names" pop 1 ident 1: 47 words, easy/middle/hard 20/14/13, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  casino_words: "casino words" pop 2 ident 2: 50 words, easy/middle/hard 13/13/24, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "casino words" pop 2 ident 2: 51 words, easy/middle/hard 13/14/24, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  clothes: "clothes" pop 1 ident 1: 62 words, easy/middle/hard 18/16/28, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "clothes" pop 1 ident 1: 62 words, easy/middle/hard 18/16/28, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  conservation_words: "conservation" pop 3 ident 3: 22 words, easy/middle/hard 3/6/13, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "conservation" pop 3 ident 3: 24 words, easy/middle/hard 3/7/14, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  construction_site: "construction site" pop 2 ident 2: 54 words, easy/middle/hard 19/20/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "construction site" pop 2 ident 2: 53 words, easy/middle/hard 19/19/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  eco_habits: "eco habits" pop 2 ident 2: 11 words, easy/middle/hard 5/5/1, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "eco habits" pop 2 ident 2: 12 words, easy/middle/hard 6/5/1, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  fashion_designers: "fashion designers" pop 3 ident 2: 35 words, easy/middle/hard 11/12/12, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "fashion designers" pop 3 ident 2: 24 words, easy/middle/hard 5/8/11, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  fashion_houses: new -> "fashion houses" pop 2 ident 2: 14 words, easy/middle/hard 8/5/1, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  flight_crew: "aviation jobs" pop 3 ident 2: 35 words, easy/middle/hard 7/12/16, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "aviation jobs" pop 3 ident 2: 39 words, easy/middle/hard 7/14/18, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  geothermal_wonders: "geothermal wonders" pop 4 ident 3: 10 words, easy/middle/hard 2/1/7, theme difficulty 3.5, 4th-easiest band 4, gap 0.5 -> "geothermal wonders" pop 4 ident 3: 12 words, easy/middle/hard 2/1/9, theme difficulty 3.5, 4th-easiest band 4, gap 0.5
+  girls_names: "girls' names" pop 1 ident 1: 45 words, easy/middle/hard 16/17/12, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "girls' names" pop 1 ident 1: 46 words, easy/middle/hard 16/17/13, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  infections: "infections" pop 2 ident 3: 55 words, easy/middle/hard 8/20/27, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "infections" pop 2 ident 3: 55 words, easy/middle/hard 7/20/28, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  latin_american_names: "Latin American names" pop 3 ident 3: 29 words, easy/middle/hard 15/8/6, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "Latin American names" pop 3 ident 3: 30 words, easy/middle/hard 15/9/6, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  magic_items: "magic items" pop 2 ident 2: 39 words, easy/middle/hard 12/10/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "magic items" pop 2 ident 2: 40 words, easy/middle/hard 12/11/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  maori_culture: "Māori culture" pop 3 ident 3: 43 words, easy/middle/hard 1/3/39, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "Māori culture" pop 3 ident 3: 44 words, easy/middle/hard 1/3/40, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  medical_pioneers: "medical pioneers" pop 3 ident 3: 7 words, easy/middle/hard 1/3/3, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "medical pioneers" pop 3 ident 3: 9 words, easy/middle/hard 1/3/5, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  national_sports: "national sports" pop 3 ident 3: 37 words, easy/middle/hard 8/8/21, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "national sports" pop 3 ident 3: 37 words, easy/middle/hard 8/8/21, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  old_time_jobs: "old-time jobs" pop 3 ident 2: 35 words, easy/middle/hard 4/12/19, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "old-time jobs" pop 3 ident 2: 36 words, easy/middle/hard 4/13/19, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  renewable_energy: "renewable energy" pop 2 ident 2: 25 words, easy/middle/hard 9/8/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "renewable energy" pop 2 ident 2: 27 words, easy/middle/hard 9/8/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  shopping_words: "shopping words" pop 2 ident 2: 40 words, easy/middle/hard 28/7/5, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "shopping words" pop 2 ident 2: 41 words, easy/middle/hard 28/8/5, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  texture_words: "texture words" pop 2 ident 2: 49 words, easy/middle/hard 17/17/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "texture words" pop 2 ident 2: 52 words, easy/middle/hard 17/18/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  window_styles: "window styles" pop 3 ident 3: 32 words, easy/middle/hard 4/11/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "window styles" pop 3 ident 3: 32 words, easy/middle/hard 4/11/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  work_clothes: "work clothes" pop 2 ident 2: 26 words, easy/middle/hard 8/9/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "work clothes" pop 2 ident 2: 26 words, easy/middle/hard 8/9/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 11: mammal 68605, reptile 68606, insect 68607, amphibian 68608, transom 68609 [window], Christian Dior 68610, Dior 68611 [designer], Giorgio Armani 68612, Armani 68613 [designer], Gianni Versace 68614, Versace 68615 [designer]
+Entries deleted 25: pitch 14710, frequency 14723, Equus 9626, Caretta caretta 9667, caudate 8706, urodele 8707, flying reptile 9996, venomous snake 50724, pupillary 14864, Huang Di 15587, sidr honey 15600, ajwa dates 15609, tridosha 15684, exploding head 16150, praline filling 18407, truffle shell 18408, hydrologic cycle 32003, cooling engine 40270, arachibutyrophobia 60846, feel up 14837, cerumen 14793, crop duster pilot 47182, sea elephant 9878, coin laundry 23901, skip 60580
+library changes 176; entries changed 88; status set to rev 35
+Checks: changed kinds: info:alias-kind-suspect 23 -> 22, info:family-kin 398 -> 400, info:orphan 304 -> 239, info:overlap 4799 -> 4802, info:rating-vs-zipf 1672 -> 1674
+Checks after (errors and warnings): rating-vs-zipf 160, region-root-equiv 17
+Export contract (family export, zipf): contract-root-region 1425 -> 1423; after: contract-dup-root 170, contract-root-region 1423
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3188 -> 3190; gone none; new animal_categories, fashion_houses; theme indexes shift: from index 473 ("animal_categories", was "nature_earth") to the last index 3189
+Theme rows whose fields changed (parent compared by id): 22: geothermal_wonders (index 639 -> 640: counts [0,2,1,4,3] -> [0,2,1,4,5], range [4,4] -> [4,5]); renewable_energy (index 673 -> 674: counts [4,5,8,5,3] -> [4,5,8,6,4], range [1,4] -> [1,5]); conservation_words (index 674 -> 675: counts [0,3,6,10,3] -> [0,3,7,11,3]); eco_habits (index 682 -> 683: counts [1,4,5,1,0] -> [1,5,5,1,0]); construction_site (index 896 -> 897: counts [5,14,22,11,7] -> [5,14,21,11,7]); shops (index 919 -> 920: counts [8,8,4,6,3] -> [8,9,4,6,3]); flight_crew (index 972 -> 973: counts [3,5,12,10,6] -> [3,5,14,12,6]); common_illnesses (index 1156 -> 1157: counts [11,12,16,15,8] -> [11,12,16,15,7]); childhood_illnesses (index 1159 -> 1160: counts [2,7,12,12,11] -> [2,7,12,12,10]); infections (index 1161 -> 1162: counts [4,4,20,15,13] -> [4,3,20,16,12]); old_time_jobs (index 1309 -> 1310: counts [0,4,12,11,8] -> [0,4,13,11,8]); shopping_words (index 1372 -> 1373: counts [6,22,7,4,1] -> [6,22,8,4,1]); maori_culture (index 1456 -> 1457: counts [0,1,3,31,8] -> [0,1,3,31,9]); aboriginal_culture (index 1457 -> 1458: counts [1,4,6,18,11] -> [1,4,7,18,12]); fashion_designers (index 1567 -> 1568: counts [0,11,12,9,3] -> [0,5,8,8,3]); window_styles (index 2188 -> 2190: counts [0,4,11,9,8] -> [0,4,11,10,7]); magic_items (index 2340 -> 2342: counts [2,11,10,16,1] -> [2,11,11,16,1]); medical_pioneers (index 2503 -> 2505: counts [0,1,3,1,2] -> [0,1,3,1,4], range [3,3] -> [3,5]); girls_names (index 2944 -> 2946: counts [8,8,17,9,3] -> [8,8,17,10,3]); boys_names (index 2945 -> 2947: counts [11,9,14,7,3] -> [11,9,14,10,3]); latin_american_names (index 2962 -> 2964: counts [1,14,8,5,1] -> [1,14,9,5,1]); texture_words (index 3039 -> 3041: counts [4,13,17,10,5] -> [4,13,18,12,5])
+Entry rows 61080 -> 61133; first row whose entry changed: 129 (butcher's 131, was pharmacy 132); rows that moved: 60950; added butcher's 131 (row 129), banger 2644 (row 2605), marsupial 7919 (row 7632), raptor 8118 (row 7815), bird of prey 8119 (row 7816), ratite 8257 (row 7944), mollusk 8896 (row 8549), pinniped 8905 (row 8558), echinoderm 8986 (row 8632), arachnid 9112 (row 8751), equid 9625 (row 9220), fleecy 14830 (row 14185), abrasive 14831 (row 14186), sandpapery 14842 (row 14195), nubbly 14843 (row 14196), rongoā 15642 (row 14876), rongoa 15643 (row 14877), bush medicine 15648 (row 14882), ngangkari 15655 (row 14888), Charaka 15675 (row 14908), Sushruta 15676 (row 14909), fairy dust 22497 (row 20927), pixie dust 22498 (row 20928), Cyber Monday 25289 (row 23527), lighthouse keeper 31166 (row 28536), concentrated solar 32251 (row 29529), green hydrogen 32256 (row 29530), protected area 32262 (row 29535), buffer zone 32289 (row 29561), public transport 32357 (row 29622), test pilot 47180 (row 43249), fighter pilot 47181 (row 43250), stunt pilot 47183 (row 43251), helicopter pilot 47184 (row 43252), corvid 50653 (row 46468), Larderello 60441 (row 55705), Wairakei 60442 (row 55706), Julius 62423 (row 57544), Julio 67463 (row 60005), Augusta 67464 (row 60006), Augustine 67465 (row 60007), Augustus 67466 (row 60008), mollusc 68173 (row 60696), mammal 68605 (row 61122), reptile 68606 (row 61123), insect 68607 (row 61124), amphibian 68608 (row 61125), transom 68609 (row 61126), Christian Dior 68610 (row 61127), Dior 68611 (row 61128), Giorgio Armani 68612 (row 61129), Armani 68613 (row 61130), Gianni Versace 68614 (row 61131), Versace 68615 (row 61132); removed 60580 (row 55788)
+root -> alias rows 3: Blu Tack 23824, boiler suit 24453, Aussie rules 38526; alias -> root rows 2: coveralls 4893, otitis media 62722
+Links 97846 -> 97891; rows whose link count changed: 12
+Link-index shifts: from row 4794 (leggings 4894) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 21, new 66, rating changed 0
+  gone (other than the deleted themes): infections: "otitis media" (14876), adhesives: "Blu Tack" (23824), work_clothes: "boiler suit" (24453), clothes: "boiler suit" (24453), fashion_designers: "Chanel" (24532), fashion_designers: "Dior" (24533), fashion_designers: "Versace" (24534), fashion_designers: "Armani" (24535), fashion_designers: "Prada" (24536), fashion_designers: "Gucci" (24537), fashion_designers: "Louis Vuitton" (24538), fashion_designers: "Givenchy" (24543), fashion_designers: "Balenciaga" (24544), fashion_designers: "Burberry" (24545), fashion_designers: "Hermès" (24546), fashion_designers: "Valentino" (24547), fashion_designers: "Fendi" (24548), fashion_designers: "Dolce & Gabbana" (24549), national_sports: "Aussie rules" (38526), window_styles: "transom" (47452), construction_site: "skip" (60580)
+  new: work_clothes: "coveralls" (4893), clothes: "coveralls" (4893), national_sports: "Australian rules" (5214), animal_categories: "cetacean" (7893), animal_categories: "marsupial" (7919), animal_categories: "bird of prey" (8119), animal_categories: "ratite" (8257), animal_categories: "mollusk" (8896), animal_categories: "pinniped" (8905), animal_categories: "echinoderm" (8986), animal_categories: "arachnid" (9112), animal_categories: "equid" (9625), texture_words: "fleecy" (14830), texture_words: "abrasive" (14831), texture_words: "sandpapery" (14842), maori_culture: "rongoā" (15642), aboriginal_culture: "bush medicine" (15648), aboriginal_culture: "ngangkari" (15655), medical_pioneers: "Charaka" (15675), medical_pioneers: "Sushruta" (15676), magic_items: "pixie dust" (22498), fashion_houses: "Chanel" (24532), fashion_houses: "Dior" (24533), fashion_houses: "Versace" (24534), fashion_houses: "Armani" (24535), fashion_houses: "Prada" (24536), fashion_houses: "Gucci" (24537), fashion_houses: "Louis Vuitton" (24538), fashion_houses: "Givenchy" (24543), fashion_houses: "Balenciaga" (24544), fashion_houses: "Burberry" (24545), fashion_houses: "Hermès" (24546), fashion_houses: "Valentino" (24547), fashion_houses: "Fendi" (24548), fashion_houses: "Dolce & Gabbana" (24549), shopping_words: "Cyber Monday" (25289), old_time_jobs: "lighthouse keeper" (31166), animal_categories: "waterfowl" (32071), renewable_energy: "concentrated solar" (32251), renewable_energy: "green hydrogen" (32256), conservation_words: "protected area" (32262), conservation_words: "buffer zone" (32289), eco_habits: "public transport" (32357), adhesives: "Blu-Tack" (39075), flight_crew: "test pilot" (47180), flight_crew: "fighter pilot" (47181), flight_crew: "stunt pilot" (47183), flight_crew: "helicopter pilot" (47184), animal_categories: "corvid" (50653), geothermal_wonders: "Larderello" (60441), geothermal_wonders: "Wairakei" (60442), boys_names: "Julius" (62423), infections: "otitis media" (62722), animal_categories: "songbird" (66428), latin_american_names: "Julio" (67463), girls_names: "Augusta" (67464), boys_names: "Augustine" (67465), boys_names: "Augustus" (67466), animal_categories: "mammal" (68605), animal_categories: "reptile" (68606), animal_categories: "insect" (68607), animal_categories: "amphibian" (68608), window_styles: "transom" (68609), fashion_designers: "Christian Dior" (68610), fashion_designers: "Giorgio Armani" (68612), fashion_designers: "Gianni Versace" (68614)
+  rating: none
+new issues: none
+
+Review tail, by part (v452, drafted under Simon's standing approval; reviewed by a second agent: "sound, apply after fixes"; the fixes are in).
+
+Decided (standing approval: the reviewer's recommendations, 2026-11-24):
+  1. coveralls 4893 is the root (untagged; links work clothes 2, clothes 4 from boiler suit); boiler suit 24453 its UK regional alias; boilersuit 4908 a UK synonym.
+  2. otitis media 62722 is its own root (familiarity 4), linked in infections at typicality 4; ear infection 14876 leaves infections (its show "otitis media" goes)
+     and stays in common illnesses and childhood illnesses.
+  3. The new theme is "animal categories" (id animal_categories), with the easy class words mammal, reptile, insect (typicality 1) and amphibian (2) as new
+     entries (none existed; familiarity 1); pop 3, ident 2 with them.
+  4. The jubilees 55631-55633 are not linked to milestone celebrations (an anniversary of a reign or founding, not a personal milestone): kept in no theme.
+  5. crop duster pilot 47182 deleted: crop duster 47088 covers it.
+  6. frequency 35258: gloss "wave" (radio, sound and physics now share the one entry).
+  7. Christian Dior, Giorgio Armani, Gianni Versace added (people-names rule: full name root, surname a synonym alias [designer]) in fashion designers, not in
+     fashion houses: there the house entries Dior, Armani, Versace already cover the names, and a person beside the house would show the same text twice.
+     The house roots get the gloss "fashion house" (their text is now shared with the surname aliases).
+  - I11: no status change; close it under Simon's 2026-11-19 rule (batches set rev).
+  - Fictional characters: no change in this batch; Simon decides separately.
+
+1. Orphans (info): 304 -> 239.
+  Linked 37 (9 into the new theme animal categories, 28 into existing themes), merged as an alias 3 (butcher's, banger, nubbly), merged and deleted as a
+  same-text second copy 2 (pitch [sound], frequency [sound]), raptor [bird] made the synonym of bird of prey, deleted 22 stubs (with crop duster pilot). 239
+  kept, each with its reason in the list above: real category words beside their kinds (livestock, megafauna, constrictor, sighthound, video game), senses
+  and body words left by batch421 and v439, general words and idioms (v433, v446, v447 kept these), healers and faiths, food words that are a more specific
+  form of a member, environment adjectives and processes, places with no theme of their kind, the three jubilees.
+  New theme animal categories (Animals > animal words, after hybrid animals): pop 3, ident 2, 16 members: mammal, reptile, insect 1; amphibian, marsupial,
+  arachnid, mollusk, bird of prey 2; corvid, cetacean, waterfowl, songbird, echinoderm, pinniped 3; ratite, equid 4.
+  Not in it: vertebrate and invertebrate (the general words above the categories), the mollusk classes cephalopod, bivalve, gastropod (in mollusks), livestock
+  and megafauna (groups by use or size, not kinds of animal).
+  Line breaks: amphibian, Christian and categories (8+ letters) are not in data/breaks-en.txt: run tools/brk-tokens.mjs and brk-merge after the apply.
+
+2. alias-kind-suspect (info): 23 -> 22. Oxum made the translation of Oshun (the Portuguese name). The 22 left are confirmed real variant spellings of one word:
+  catsup, luffa, tee shirt, gryphon, kunafa, faerie, hurrah, tipi, calash, stade, bark (barque) (variant spellings); Mao Tse-tung, Hsuan-tsang, Fa-Hien,
+  Tiahuanaco, Kokytos (older romanizations of the same name); purty (eye-dialect spelling of pretty); Blixem (the 1823 poem's spelling of Blitzen, v444);
+  plough (UK spelling of plow, v446); deejay, emcee (the spelled-out DJ and MC, v440, v443); wifi (typed common: as proper it fails the case lint, v445).
+
+3. Small oddities: Pietà (and its plain alias Pieta) typed title, an artwork. otitis media is its own root in infections (decided 2), so ear infection has no
+  hard first synonym. The first-synonym line of v450 is now 4 roots: Big Ben / Elizabeth Tower, garbage truck / dustcart, notebook / jotter, handbag /
+  pocketbook (all Simon's decisions).
+
+4. ISSUES status lines (Simon or the manager edits ISSUES.md; not edited here):
+  - T16 `fixed` v404-v452: every item is settled. plaster is the UK regional alias of adhesive bandage, which shows "Band-Aid" in brands used as words (that
+    theme is locked through its inherited lang flag, so no dialect word replaces the shown brand); great Indian bustard, Forbidden, Quarter, Easter egg, parc
+    fermé, dada, atomic, ancien régime, brutalism settled in v404; the case of special K, premium bonds, great northern, land art and promised land was left
+    lowercase by the group batches (the cheddar rule and the style rule), case lint clean.
+  - T33 `fixed` v437-v452: fixed now: skip [rubbish container] (a second root beside dumpster, whose UK alias skip it repeated: deleted), transom split
+    (ship / window), coveralls the root of the one-piece garment with boiler suit its UK word (overalls keeps dungarees, the bib sense), Aussie rules a synonym
+    of Australian rules, Blu Tack a spelling of Blu-Tack (typed proper). Fixed earlier: boot, bonnet, fringe, plaster, lay-by, roundabout, sledge, give way,
+    brandy butter, lumber, hoarding, emulsion, Bonfire Night, gorse/furze/whin, mitre [joint]. Stays as is, with reason: fire engine [emergency] stays a root
+    in fire___ (a compound theme, locked: "engine" is its own answer beside fire truck's "truck"); thigh-highs stays the abbreviation of thigh-high boots shown
+    in boots (the stockings sense has no entry and no theme asks for it).
+  - T34 `fixed` v446-v452: roly poly typed common with gloss plump (an adjective, not an idiom; roly-poly [pill bug] is the other sense). Already gone:
+    rhyming_word_pairs merged into rhyming pairs (v446); the ten members of the deleted letters theme are no longer in the library. Stays as is, with reason:
+    teeter totter 28990 in zigzag words is a wordplay root chosen by its spelling (made seesaw's alias, the theme could not hold it beside see saw, one alias
+    family per theme); dog/god and lived/devil: devil is offensive (out of the family export) and lived is in no theme, so only dog/god plays, with god
+    sensitive; the game handles a sensitive reverse at load and the contract shows contract-reversible-missing 0: a game-side matter, no library change.
+  - I11 `fixed` (decided): no status change; batches set rev under Simon's 2026-11-19 rule, which every tidy-up batch has followed.
+
+5. I11: decided above (the draft's recommendation, one status-only batch, is not taken).
+
+6. People typed person (for a people-theme test at 70% person members). All 178 themes with 30% or more person members were read. Themes of real people were
+  already typed consistently; 1 retype: Audubon (famous naturalists, John James Audubon) proper -> person. fashion designers (21 designers, 14 fashion houses
+  typed org: 60%) is split: the 14 houses (companies) move to a new theme fashion houses (Home & Everyday > clothes, pop 2, ident 2, tm, 0% person), and
+  fashion designers gains Christian Dior, Giorgio Armani, Gianni Versace: 24/24 person (100%), so it crosses 70%. No other theme crosses 70% by a retype.
+  Left as typed (doubtful): Yellow Emperor (proper, legendary, in Chinese emperors 29/30), Pinkerton [detective] (proper, in Wild West legends: the agency's
+  name or Allan Pinkerton), Ivanhoe (fictional, famous knights 26/27); pairs and families: Burke and Wills, Laurel and Hardy, Marx Brothers, Medici, Boulton
+  and Watt. Fictional characters: LIBRARY-RULES 4 says person ("a named person or character"); the library mostly has them proper (superheroes 1/44), with
+  fictional detectives (33/33) and video game characters (48/53) person: no change here (decided: Simon decides separately).
+
+Baselines: no warning count changes (region-root-equiv 17, contract-dup-root 170), so none to lower and none raised; no allow-list key added; no js/ change.
+Info: orphan 304 -> 239, alias-kind-suspect 23 -> 22, family-kin 398 -> 400, overlap 4799 -> 4802, contract-root-region 1425 -> 1423.
+
+For Simon:
+  - Fictional characters: person (as LIBRARY-RULES 4 says) or proper (as most of the library has them)? It decides which character themes a 70%-person
+    people test catches (part 6). Not changed here.
+
+Left as is:
+  - The 239 orphans, each with its reason (list above); clever clogs among them (the UK smarty-pants: as its synonym it would give away clever people).
+  - premium bonds 5703 typed phrase (a UK product name; its case was left by the group batches; recheck with the dictionaries if it matters).
+  - famous statues: other artworks there (Venus de Milo, The Thinker, Little Mermaid, Cloud Gate) are still typed place; only Pietà was asked for.
+  - fire engine [emergency], thigh-highs, teeter totter, dog/god (part 4); the doubtful people cases (part 6).
+
+=== Notice to _WS_ for v452 (send when Simon says; one combined notice per game round) ===
+Library v452 is the last clean-up after the library tidy-up: entries in no theme, alias kinds, small oddities, the ISSUES T16/T33/T34 leftovers, and people typed person. Drafted under Simon's standing approval, reviewed by a second agent and corrected. No pin until Simon asks. Counts are for this batch alone on v451.
+- New themes (theme rows 3,188 -> 3,190): animal categories (Animals > animal words, index 473; 16 words: mammal, reptile, insect, amphibian, marsupial, arachnid, mollusk, bird of prey, corvid, cetacean, waterfowl, songbird, echinoderm, pinniped, ratite, equid; pop 3, ident 2) and fashion houses (Home & Everyday > clothes, right after fashion designers; 14 words; pop 2, ident 2, tm). Every later theme index moves by 1 from index 473, and by 2 after fashion houses.
+- fashion designers now holds designers only (24, all typed person): the 14 houses (Chanel, Dior, Versace, Armani, Prada, Gucci, Louis Vuitton, Givenchy, Balenciaga, Burberry, Hermès, Valentino, Fendi, Dolce & Gabbana) moved to fashion houses with their typicality; new designers Christian Dior, Giorgio Armani, Gianni Versace (surname synonym rows Dior, Armani, Versace [designer]); the house rows Dior, Armani, Versace get the gloss "fashion house". Audubon is typed person.
+- New entries (rows at the end): mammal, reptile, insect, amphibian (animal categories); transom [window] (window styles); Christian Dior, Giorgio Armani, Gianni Versace and their surname aliases.
+- Words linked to existing themes (new rows): fleecy, abrasive, sandpapery (texture words); Sushruta, Charaka (medical pioneers); rongoā (Māori culture); ngangkari, bush medicine (Aboriginal culture); pixie dust (magic items); Cyber Monday (shopping words); lighthouse keeper (old-time jobs); fighter, helicopter, test and stunt pilot (aviation jobs); Julius, Augustus, Augustine (boys' names); Augusta (girls' names); Julio (Latin American names); Larderello, Wairakei (geothermal wonders); concentrated solar, green hydrogen (renewable energy); protected area, buffer zone (conservation); public transport (eco habits). craps table joins casino words (adult, not in the family export).
+- Root and alias changes: coveralls is now a root (work clothes, clothes) with boiler suit its UK regional alias and boilersuit a UK synonym; otitis media is now a root in infections (typicality 4), where ear infection no longer plays (it stays in common and childhood illnesses). New alias rows: butcher's (UK synonym of butcher shop), banger (UK regional alias of jalopy), nubbly (UK regional alias of nubby), raptor [bird] (synonym of bird of prey). Aussie rules is a synonym of Australian rules (its national sports link moves there); Blu Tack a spelling of Blu-Tack (its adhesives link moves; Blu-Tack typed proper).
+- Kinds, types, glosses: Oxum a translation of Oshun; Pietà and Pieta typed title; roly poly typed common, gloss plump; transom [ship] keeps ship parts; frequency gloss "wave".
+- Removed row: skip 60580 [rubbish container] (row 55,788), a second root of dumpster, whose UK alias skip stays.
+- Export v451 -> v452: entry rows 61,080 -> 61,133 (54 added, 1 removed; first changed row 129, butcher's); root -> alias rows: Blu Tack, boiler suit, Aussie rules; alias -> root rows: coveralls, otitis media; link positions move from row 4,794 (leggings) on; links 97,846 -> 97,891; no text changes; no new characters.

@@ -1,0 +1,79 @@
+Review tail, by part (v452, drafted under Simon's standing approval; reviewed by a second agent: "sound, apply after fixes"; the fixes are in).
+
+Decided (standing approval: the reviewer's recommendations, 2026-11-24):
+  1. coveralls 4893 is the root (untagged; links work clothes 2, clothes 4 from boiler suit); boiler suit 24453 its UK regional alias; boilersuit 4908 a UK synonym.
+  2. otitis media 62722 is its own root (familiarity 4), linked in infections at typicality 4; ear infection 14876 leaves infections (its show "otitis media" goes)
+     and stays in common illnesses and childhood illnesses.
+  3. The new theme is "animal categories" (id animal_categories), with the easy class words mammal, reptile, insect (typicality 1) and amphibian (2) as new
+     entries (none existed; familiarity 1); pop 3, ident 2 with them.
+  4. The jubilees 55631-55633 are not linked to milestone celebrations (an anniversary of a reign or founding, not a personal milestone): kept in no theme.
+  5. crop duster pilot 47182 deleted: crop duster 47088 covers it.
+  6. frequency 35258: gloss "wave" (radio, sound and physics now share the one entry).
+  7. Christian Dior, Giorgio Armani, Gianni Versace added (people-names rule: full name root, surname a synonym alias [designer]) in fashion designers, not in
+     fashion houses: there the house entries Dior, Armani, Versace already cover the names, and a person beside the house would show the same text twice.
+     The house roots get the gloss "fashion house" (their text is now shared with the surname aliases).
+  - I11: no status change; close it under Simon's 2026-11-19 rule (batches set rev).
+  - Fictional characters: no change in this batch; Simon decides separately.
+
+1. Orphans (info): 304 -> 239.
+  Linked 37 (9 into the new theme animal categories, 28 into existing themes), merged as an alias 3 (butcher's, banger, nubbly), merged and deleted as a
+  same-text second copy 2 (pitch [sound], frequency [sound]), raptor [bird] made the synonym of bird of prey, deleted 22 stubs (with crop duster pilot). 239
+  kept, each with its reason in the list above: real category words beside their kinds (livestock, megafauna, constrictor, sighthound, video game), senses
+  and body words left by batch421 and v439, general words and idioms (v433, v446, v447 kept these), healers and faiths, food words that are a more specific
+  form of a member, environment adjectives and processes, places with no theme of their kind, the three jubilees.
+  New theme animal categories (Animals > animal words, after hybrid animals): pop 3, ident 2, 16 members: mammal, reptile, insect 1; amphibian, marsupial,
+  arachnid, mollusk, bird of prey 2; corvid, cetacean, waterfowl, songbird, echinoderm, pinniped 3; ratite, equid 4.
+  Not in it: vertebrate and invertebrate (the general words above the categories), the mollusk classes cephalopod, bivalve, gastropod (in mollusks), livestock
+  and megafauna (groups by use or size, not kinds of animal).
+  Line breaks: amphibian, Christian and categories (8+ letters) are not in data/breaks-en.txt: run tools/brk-tokens.mjs and brk-merge after the apply.
+
+2. alias-kind-suspect (info): 23 -> 22. Oxum made the translation of Oshun (the Portuguese name). The 22 left are confirmed real variant spellings of one word:
+  catsup, luffa, tee shirt, gryphon, kunafa, faerie, hurrah, tipi, calash, stade, bark (barque) (variant spellings); Mao Tse-tung, Hsuan-tsang, Fa-Hien,
+  Tiahuanaco, Kokytos (older romanizations of the same name); purty (eye-dialect spelling of pretty); Blixem (the 1823 poem's spelling of Blitzen, v444);
+  plough (UK spelling of plow, v446); deejay, emcee (the spelled-out DJ and MC, v440, v443); wifi (typed common: as proper it fails the case lint, v445).
+
+3. Small oddities: Pietà (and its plain alias Pieta) typed title, an artwork. otitis media is its own root in infections (decided 2), so ear infection has no
+  hard first synonym. The first-synonym line of v450 is now 4 roots: Big Ben / Elizabeth Tower, garbage truck / dustcart, notebook / jotter, handbag /
+  pocketbook (all Simon's decisions).
+
+4. ISSUES status lines (Simon or the manager edits ISSUES.md; not edited here):
+  - T16 `fixed` v404-v452: every item is settled. plaster is the UK regional alias of adhesive bandage, which shows "Band-Aid" in brands used as words (that
+    theme is locked through its inherited lang flag, so no dialect word replaces the shown brand); great Indian bustard, Forbidden, Quarter, Easter egg, parc
+    fermé, dada, atomic, ancien régime, brutalism settled in v404; the case of special K, premium bonds, great northern, land art and promised land was left
+    lowercase by the group batches (the cheddar rule and the style rule), case lint clean.
+  - T33 `fixed` v437-v452: fixed now: skip [rubbish container] (a second root beside dumpster, whose UK alias skip it repeated: deleted), transom split
+    (ship / window), coveralls the root of the one-piece garment with boiler suit its UK word (overalls keeps dungarees, the bib sense), Aussie rules a synonym
+    of Australian rules, Blu Tack a spelling of Blu-Tack (typed proper). Fixed earlier: boot, bonnet, fringe, plaster, lay-by, roundabout, sledge, give way,
+    brandy butter, lumber, hoarding, emulsion, Bonfire Night, gorse/furze/whin, mitre [joint]. Stays as is, with reason: fire engine [emergency] stays a root
+    in fire___ (a compound theme, locked: "engine" is its own answer beside fire truck's "truck"); thigh-highs stays the abbreviation of thigh-high boots shown
+    in boots (the stockings sense has no entry and no theme asks for it).
+  - T34 `fixed` v446-v452: roly poly typed common with gloss plump (an adjective, not an idiom; roly-poly [pill bug] is the other sense). Already gone:
+    rhyming_word_pairs merged into rhyming pairs (v446); the ten members of the deleted letters theme are no longer in the library. Stays as is, with reason:
+    teeter totter 28990 in zigzag words is a wordplay root chosen by its spelling (made seesaw's alias, the theme could not hold it beside see saw, one alias
+    family per theme); dog/god and lived/devil: devil is offensive (out of the family export) and lived is in no theme, so only dog/god plays, with god
+    sensitive; the game handles a sensitive reverse at load and the contract shows contract-reversible-missing 0: a game-side matter, no library change.
+  - I11 `fixed` (decided): no status change; batches set rev under Simon's 2026-11-19 rule, which every tidy-up batch has followed.
+
+5. I11: decided above (the draft's recommendation, one status-only batch, is not taken).
+
+6. People typed person (for a people-theme test at 70% person members). All 178 themes with 30% or more person members were read. Themes of real people were
+  already typed consistently; 1 retype: Audubon (famous naturalists, John James Audubon) proper -> person. fashion designers (21 designers, 14 fashion houses
+  typed org: 60%) is split: the 14 houses (companies) move to a new theme fashion houses (Home & Everyday > clothes, pop 2, ident 2, tm, 0% person), and
+  fashion designers gains Christian Dior, Giorgio Armani, Gianni Versace: 24/24 person (100%), so it crosses 70%. No other theme crosses 70% by a retype.
+  Left as typed (doubtful): Yellow Emperor (proper, legendary, in Chinese emperors 29/30), Pinkerton [detective] (proper, in Wild West legends: the agency's
+  name or Allan Pinkerton), Ivanhoe (fictional, famous knights 26/27); pairs and families: Burke and Wills, Laurel and Hardy, Marx Brothers, Medici, Boulton
+  and Watt. Fictional characters: LIBRARY-RULES 4 says person ("a named person or character"); the library mostly has them proper (superheroes 1/44), with
+  fictional detectives (33/33) and video game characters (48/53) person: no change here (decided: Simon decides separately).
+
+Baselines: no warning count changes (region-root-equiv 17, contract-dup-root 170), so none to lower and none raised; no allow-list key added; no js/ change.
+Info: orphan 304 -> 239, alias-kind-suspect 23 -> 22, family-kin 398 -> 400, overlap 4799 -> 4802, contract-root-region 1425 -> 1423.
+
+For Simon:
+  - Fictional characters: person (as LIBRARY-RULES 4 says) or proper (as most of the library has them)? It decides which character themes a 70%-person
+    people test catches (part 6). Not changed here.
+
+Left as is:
+  - The 239 orphans, each with its reason (list above); clever clogs among them (the UK smarty-pants: as its synonym it would give away clever people).
+  - premium bonds 5703 typed phrase (a UK product name; its case was left by the group batches; recheck with the dictionaries if it matters).
+  - famous statues: other artworks there (Venus de Milo, The Thinker, Little Mermaid, Cloud Gate) are still typed place; only Pietà was asked for.
+  - fire engine [emergency], thigh-highs, teeter totter, dog/god (part 4); the doubtful people cases (part 6).
