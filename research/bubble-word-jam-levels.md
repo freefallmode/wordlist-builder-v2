@@ -829,6 +829,130 @@ Notes:
 - No "+5 MOVES" ad bubble was seen this level. No purchase offer appeared in levels 21 to 30.
 - Level end: MASTERY 431 captured, autumn leaves on the frame.
 
+## Level 31
+
+Themes: 9 (bar `0/9`). Moves: 47 at start (first screenshot, before any drag), 15 left after the last merge. Mastery: 445 (captured with dragburst). Reward: 30 coins (counter 1,980). Next button is a plain green "LEVEL 32" (X2 and Home not tapped). Split words: 8. No booster used. Plain level. No chain this level.
+
+Chunk pairs: SPA\|NISH, GER\|MAN, PRA\|GUE, BEI\|JING, BI\|SHOP, COT\|TAGE, BAM\|BOO and DOMI\|NO. Each join cost 1 move.
+
+New: cryptic bubbles (words with missing letters shown as "?"; letters reveal as you play).
+
+| Theme | Words | Name |
+|---|---|---|
+| Languages | SPANISH (SPA\|NISH), ENGLISH, GERMAN (GER\|MAN), FRENCH | LANGUAGES (shown; returned as a word bubble, joined a parent) |
+| Capitals | BUDAPEST, PRAGUE (PRA\|GUE), COPENHAGEN, BEIJING (BEI\|JING) | CAPITALS (shown; returned as a word bubble) |
+| Chess | ROOK, BISHOP (BI\|SHOP), QUEEN, KNIGHT | CHESS (shown; returned as the word CHESS, joined the last theme) |
+| House | BUNGALOW, MANSION, VILLA, COTTAGE (COT\|TAGE) | HOUSE (shown; returned as the word HOUSE, joined FARM) |
+| Coffee drinks | MOCHA, LATTE, ESPRESSO, CAPPUCCINO | COFFEE DRINKS (shown) |
+| Composer | BEETHOVEN, BACH (cryptic ??C? -> ?ACH -> BACH), MOZART, CHOPIN | COMPOSER (shown) |
+| Farm | STABLE, BARN, FIELD, HOUSE (returned) | FARM (shown) |
+| Panda | BAMBOO (BAM\|BOO), BEAR, WHITE, BLACK (cryptic ????? -> BLACK) | PANDA (shown; returned as the word PANDA, joined the last theme) |
+| Last | ORCA, PANDA (returned), DOMINO (DOMI\|NO), CHESS (returned) | (guessed: BLACK AND WHITE; name not captured, the 4-word bubble showed only its words) |
+
+Notes: the first coffee merge (CAPPUCCINO) missed once because bubbles were still moving (cost 1 move; DUR=900 worked). ORCA onto BAMBOO/BEAR did not merge (cost 1 move). Names read from screenshots a9, b4, c3, d3, d7, e3, f4, g4 in the scratchpad.
+
+## Level 32
+
+Themes: 11 (bar `0/11`). Moves: 48 at start (first screenshot, before any drag), 17 left at the last merge. Mastery: 467 (captured with dragburst). Reward: 30 coins (counter 2,010). Next button is a plain green "LEVEL 33" (X2 and Home not tapped). Split words: 3. No booster used. Plain level. No chain this level.
+
+Only about 28 bubbles were on screen at the start; more words appeared on the board as themes cleared (later words such as FRIES, SANDWICH, HAWAIIAN, KITE, LAKE, BUTTERFLY, DANUBE, SUPREME, MARGHERITA, PEPPERONI, NILE, AMAZON, MISSISSIPPI came in this way).
+
+Chunk pairs: DOL\|PHIN (DOLPHIN), SPAR\|ROW (SPARROW) and BUR\|GER (BURGER). Each join cost 1 move.
+
+Cryptic bubbles seen (letters revealed as play went on): ??S? -> F?SH -> FISH, ?N??E -> ?NA?E -> SNAKE, P??? -> P??D -> PO?D -> POND.
+
+| Theme | Words | Name |
+|---|---|---|
+| Oceans | PACIFIC, ATLANTIC, INDIAN, ARCTIC | OCEAN (shown; returned as the word OCEAN, joined BODIES OF WATER) |
+| Birds | OWL, PARROT, EAGLE, SPARROW (SPAR\|ROW) | BIRD (shown; returned as the word BIRD, joined THINGS THAT FLY) |
+| Aircraft | JET, DRONE, GLIDER, HELICOPTER | PLANE (shown; returned as the word PLANE) |
+| Reptiles | LIZARD, TURTLE, CROCODILE, SNAKE | REPTILE (shown; returned as the word REPTILE) |
+| Pizza | HAWAIIAN, SUPREME, MARGHERITA, PEPPERONI | PIZZA (shown; returned as the word PIZZA, joined FAST FOOD) |
+| Rivers | MISSISSIPPI, NILE, AMAZON, DANUBE | RIVER (shown; returned as the word RIVER) |
+| Fast food | FRIES, PIZZA, BURGER (BUR\|GER), SANDWICH | FAST FOOD (shown) |
+| Water | LAKE, RIVER, POND, OCEAN | BODIES OF WATER (shown) |
+| Mammals | ELEPHANT, LION, DOLPHIN (DOL\|PHIN), BAT | MAMMAL (shown; returned as the word MAMMAL) |
+| Flying | PLANE, KITE, BIRD, BUTTERFLY | THINGS THAT FLY (shown) |
+| Animals | REPTILE, FISH (cryptic), MAMMAL, INSECT | (guessed: ANIMAL; name not captured on the final merge) |
+
+Notes: first LAKE-onto-DANUBE drag missed (cost 1 move). Names read from screenshots a3, a8, b2, b5, b9, c4, c8, d3, d6, d9 in the scratchpad.
+
+## Level 33
+
+Themes: 11 (bar `0/11`). Moves: 43 at start (first screenshot, before any drag), 13 left after the last merge. Mastery: 482 (captured with dragburst). Reward: 30 coins (counter 2,040). Next button is a red "HARD LEVEL 34" with an octopus (X2 and Home not tapped). Split words: 0. No booster used. Plain level. No chain, no cryptic bubbles this level.
+
+Only about 27 bubbles were on screen at the start; more words came onto the board as themes cleared (TARGET, SURGE, BOW, SHOTGUN, FAULT, FLOOD, SEISMIC, PISTOL, RIFLE, SHAKE, TREMOR, REVOLVER, ARROW, QUIVER).
+
+Chunk pairs: none.
+
+The theme tree is deep: WEAPON and CALIFORNIA and TSUNAMI were all clear sub-themes that returned as bubbles; the bar counted `10/11` while only 4 bubbles were left.
+
+| Theme | Words | Name |
+|---|---|---|
+| Volcano | CRATER, ERUPTION, LAVA, MAGMA | VOLCANO (shown; returned as the word VOLCANO) |
+| National parks | EVERGLADES, GRAND CANYON, YELLOWSTONE, ZION | NATIONAL PARKS (shown) |
+| Hopping animals | KANGAROO, WALLABY, HARE, RABBIT | HOPPING ANIMALS (shown) |
+| Earthquake | FAULT, SEISMIC, SHAKE, TREMOR | EARTHQUAKE (shown; returned as the word EARTHQUAKE) |
+| Gun | PISTOL, SHOTGUN, RIFLE, REVOLVER | GUN (shown; returned as the word GUN, joined WEAPON) |
+| Archer | QUIVER, BOW, ARROW, TARGET | ARCHER (shown; returned as the word ARCHER) |
+| Weapon | SWORD, SPEAR, GUN, ARCHER | WEAPON (shown) |
+| Hollywood | OSCARS, MOVIES, STUDIOS, STARS | HOLLYWOOD (shown; returned as the word HOLLYWOOD) |
+| California | NAPA, GOLDEN GATE, SILICON VALLEY, HOLLYWOOD | CALIFORNIA (shown) |
+| Tsunami | FLOOD, SURGE, WAVE, OCEAN | TSUNAMI (shown; returned as the word TSUNAMI) |
+| Natural disasters | AURORA, VOLCANO, EARTHQUAKE, TSUNAMI | (guessed: NATURE or NATURAL EVENTS; the final merge was covered by the praise text "Incredible!", not captured) |
+
+Notes: no wrong drags; the move counter held at 17 once (streak refund) after 5 merges in a row. Names read from screenshots a3, a6, a9, b4, b7, c1, c3, c7, d2, d5 in the scratchpad.
+
+## Level 34
+
+Themes: 10 (bar `0/10`). Moves: 37 at start (first screenshot, before any drag), 9 left at the last merge. Mastery: 494 (captured with dragburst). Reward: 60 coins (HARD level; counter 2,070 on the Mastery and Well Done screens). Next button is a purple "EXPERT LEVEL 35" with a purple octopus (X2 and Home not tapped). Split words: 0. No booster used. HARD level (red LVL tab with a red octopus, red booster bar, as levels 8, 19, 24, 29). No chain.
+
+Chunk pairs: none. Cryptic bubbles: M??? -> M?OW -> MEOW, ??K? -> M?KO -> MAKO, ???? -> ?O?? -> ?O?K -> ?OLK -> YOLK.
+
+Only about 26 bubbles were on screen at the start; LONDON, TROPHY, TENNIS, GRASS and similar words were already there, and returned sub-theme bubbles joined as themes cleared.
+
+| Theme | Words | Name |
+|---|---|---|
+| Social media | TIKTOK, TWITTER, INSTAGRAM, FACEBOOK | SOCIAL MEDIA (shown) |
+| Animal sounds | MEOW (cryptic), ROAR, BARK, NEIGH | ANIMAL SOUNDS (shown) |
+| Shark | HAMMERHEAD, MAKO (cryptic), TIGER, GREAT WHITE | SHARK (shown; returned as the word SHARK, joined the last theme) |
+| Egg | HATCH, SHELL, WHITE, YOLK (cryptic) | EGG (shown; returned as the word EGG, joined PENGUIN) |
+| Penguin | COLONY, WADDLE, ICE, EGG (returned) | PENGUIN (shown; returned as the word PENGUIN, joined NON-FLYING BIRDS) |
+| Non-flying birds | EMU, KIWI, OSTRICH, PENGUIN (returned) | NON-FLYING BIRDS (shown) |
+| Printed media | NEWSPAPER, NEWSLETTER, MAGAZINE, BROCHURE | PRINTED MEDIA (shown) |
+| Wimbledon | TENNIS, LONDON, GRASS, TROPHY | WIMBLEDON (shown; returned as the word WIMBLEDON, joined SPORT EVENTS) |
+| Sport events | OLYMPIAD, WORLD CUP, SUPER BOWL, WIMBLEDON (returned) | SPORT EVENTS (shown) |
+| Sea hunters | SQUID, BARRACUDA, ORCA, SHARK (returned) | (guessed: SEA PREDATORS or OCEAN HUNTERS; the 4-bubble orange merge showed only its words in the burst) |
+
+Notes: a drag of PENGUIN onto the flightless stack the first time did not merge and did not cost a move (counter stayed 21); the retry worked. One wrong drag (TROPHY onto OLYMPIAD/WORLD CUP/SUPER BOWL) cost 1 move. Move streak refund seen (counter held at 34 after the SOCIAL MEDIA merge, 21 after the PENGUIN merge).
+
+## Level 35 (EXPERT; FAILED, out of moves at 8/10)
+
+Themes: 10 (bar `0/10`). Moves: 43 at start (first screenshot, before any drag), 0 left with the bar at `8/10`: the level was NOT completed. No Mastery, no reward (EXPERT level, purple LVL tab with a purple octopus, purple booster bar). Split words: 9 chunk pairs (the most so far). No booster used. No chain, no cryptic bubbles.
+
+Chunk pairs: MYS\|TERY, ELE\|MENT, MOLE\|CULE, CURI\|OUS, CHAR\|GER, HOR\|ROR, NEU\|TRON, CHAP\|TER and PRO\|TON. Each join cost 1 move.
+
+A floating "+5 MOVES" rewarded-ad bubble (orange, video icon) hung on the board from about move 12 (not tapped).
+
+What went wrong: about 7 moves were spent on chunks (9 chunk pairs need 9 joins) plus about 6 wrong or no-op drags (AUTHOR onto BOOK, CHAP onto AUTHOR, a missed ELE drag, and others), so the level was out of moves with the gadget cluster (APP, CAMERA, SCREEN, CHARGER, DRONE, SMARTWATCH, 3D PRINTER) not yet cleared.
+
+| Theme | Words | Name |
+|---|---|---|
+| Genre | MYSTERY (MYS\|TERY), ROMANCE, HORROR (HOR\|ROR), FANTASY | GENRE (shown; returned as the word GENRE, joined LITERATURE) |
+| Feelings | CURIOUS (CURI\|OUS), LONELY, JOYFUL (returned from the SMILE/LAUGH/CHEER/DANCE theme), ANGRY (returned) | FEELINGS & EMOTIONS (shown) |
+| Joyful | SMILE, LAUGH, CHEER, DANCE | JOYFUL (shown; returned as the word JOYFUL) |
+| Library | LIBRARIAN, SHELF, BOOK, CATALOG | LIBRARY (shown; returned as the word LIBRARY, joined LITERATURE) |
+| Literature | GENRE (returned), AUTHOR, CHAPTER (CHAP\|TER), LIBRARY (returned) | LITERATURE (shown) |
+| Atom | NEUTRON (NEU\|TRON), ELECTRON, PROTON (PRO\|TON), NUCLEUS | ATOM (shown; returned as the word ATOM, joined CHEMISTRY) |
+| Anger | RAGE, SHOUT, TEMPER, FROWN | ANGRY (shown; returned as the word ANGRY) |
+| Chemistry | ELEMENT (ELE\|MENT), MOLECULE (MOLE\|CULE), ACID, ATOM (returned) | CHEMISTRY (shown) |
+| Gadgets (not cleared) | APP, CAMERA, SCREEN (and probably CHARGER) | (guessed: SMARTPHONE; not cleared) |
+| Gadgets 2 (not cleared) | DRONE, SMARTWATCH, 3D PRINTER, CHARGER? | (guessed: TECH GADGETS; not cleared) |
+
+Names read from screenshots b4, c6, d6, e2, e6, e8, f1, f5 in the scratchpad (the level never reached the final merge).
+
+Out-of-moves screen (scratchpad/shots/oom35a.png, oom35c.png, oom35d.png): a modal "OUT OF MOVES! Add extra moves to continue" with a big green "+5 Moves FREE" button (probably a rewarded ad, not tapped), a swipeable carousel below: (1) "Revive Offer" 1,000 coins + 1 each of Extra Bubbles/Magnet/Hint + 1H unlimited hearts for 880 yen ("Continue with +15 Moves"), (2) "Golden Pass" (GET button, 5d 4h timer). There is NO close X: the Back key and taps outside the modal and a swipe down did nothing. Closing it appears to need the FREE button (probably an ad), a purchase, or the Golden Pass; none of these were tapped. The play stopped here under the standing rules.
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
@@ -854,3 +978,6 @@ Notes:
 | 18 | HARD level indicator | scratchpad/shots/l5.png | The Well Done screen after level 18 shows the next button as a red "HARD LEVEL 19" with an octopus; level 19 itself has a red LVL tab with the octopus and a red booster bar (reward 60 coins, as level 8). |
 | 21 | Chained bubbles (padlock chain) | scratchpad/shots/chained_tutorial.png, t3.png | A chain with a numbered padlock splits the board; "Collect 3 bubbles to unlock. No merging across the chain." Lock counts down as themes clear. Also a floating "+5 MOVES" rewarded-ad bubble (not tapped). |
 | 24 | EXPERT level indicator | scratchpad/shots/wd24.png | The Well Done screen after HARD level 24 shows the next button as a purple "EXPERT LEVEL 25" with a purple octopus (HARD was red with a red octopus). |
+| 31 | Cryptic bubbles | scratchpad/shots/s31b.png, s31c.png | Words with missing letters shown as "?" (tutorial example A?P??); the letters reveal as other merges happen (??C? -> ?ACH -> BACH). |
+| 35 | Out-of-moves modal without a close button | scratchpad/shots/oom35a.png, oom35c.png | "OUT OF MOVES!" modal with "+5 Moves FREE" (probably rewarded ad), carousel with 880 yen Revive Offer (+15 moves) and Golden Pass; no X, Back and outside taps do nothing. Not dismissed. |
+| 35 | Low-moves warning ring | scratchpad/shots/e8.png | Red moves ring and pink screen vignette at 5 moves and below. |
