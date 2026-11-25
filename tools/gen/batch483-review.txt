@@ -1,0 +1,287 @@
+Library batch v483 (for Simon's review): Nature & Earth, garden branch
+1. garden
+  linked: flower 28286 [plant] in garden (typicality 1): well known here; it was not linked
+  linked: grass 1769 [plant] in garden (typicality 1): well known here; it was not linked
+  linked: bench 339 [seat] in garden (typicality 2): well known here; it was not linked
+  linked: weed 1775 [plant] in garden (typicality 2): well known here; it was not linked
+2. garden tools
+  linked: gloves 4956 in garden_tools (typicality 3): well known here; it was not linked
+  linked: bucket 23378 [pail] in garden_tools (typicality 3): well known here; it was not linked
+  linked: ladder 23153 [steps] in garden_tools (typicality 3): well known here; it was not linked
+3. garden features
+  linked: gate 1842 [garden] in garden_features (typicality 2): well known here; it was not linked
+  linked: bench 339 [seat] in garden_features (typicality 2): well known here; it was not linked
+  linked: statue 6338 in garden_features (typicality 3): well known here; it was not linked
+  linked: archway 6603 in garden_features (typicality 3): well known here; it was not linked
+  linked: maze 45933 in garden_features (typicality 4): well known here; it was not linked
+4. garden pests
+  linked: ant 1341 in garden_pests (typicality 3): well known here; it was not linked
+  linked: mouse 991 [animal] in garden_pests (typicality 3): well known here; it was not linked
+  linked: grasshopper 1354 [insect] in garden_pests (typicality 3): well known here; it was not linked
+  linked: crow 1069 [bird] in garden_pests (typicality 3): well known here; it was not linked
+  linked: groundhog 1048 in garden_pests (typicality 3): well known here; it was not linked
+  linked: locust 1385 [insect] in garden_pests (typicality 4): well known here; it was not linked
+5. garden birds
+  linked: crow 1069 [bird] in garden_birds (typicality 3): well known here; it was not linked
+  linked: pigeon 1070 [bird] in garden_birds (typicality 3): well known here; it was not linked
+  linked: finch 1092 in garden_birds (typicality 3): well known here; it was not linked
+  linked: woodpecker 1077 in garden_birds (typicality 3): well known here; it was not linked
+6. gardening verbs
+  linked: spray 28689 [droplets] in gardening_verbs (typicality 3): well known here; it was not linked
+  new entry: water 68974 [pour on plants] verb, common, familiarity 1: a common word that was not in the library
+  linked: water 68974 [pour on plants] in gardening_verbs (typicality 1): a common word that was not in the library
+7. famous gardens
+  linked: Babylon 6624 in famous_gardens (typicality 3): well known here; it was not linked
+  linked: Tivoli Gardens 37441 in famous_gardens (typicality 3, shown "Tivoli"): well known here; it was not linked
+  linked: Luxembourg Gardens 37453 in famous_gardens (typicality 4, shown "Luxembourg"): well known here; it was not linked
+8. garden helpers
+  linked: spider 1362 [animal] in garden_helpers (typicality 2): well known here; it was not linked
+  linked: butterfly 1348 [insect] in garden_helpers (typicality 2): well known here; it was not linked
+  linked: robin 1067 [bird] in garden_helpers (typicality 3): well known here; it was not linked
+  linked: dragonfly 1358 in garden_helpers (typicality 3): well known here; it was not linked
+  linked: bat 993 [animal] in garden_helpers (typicality 3): well known here; it was not linked
+9. vegetable garden (new)
+  new theme: vegetable_garden "vegetable garden" under garden (after garden_features), pop 2, ident 2: an everyday set with no list: what grows, works and lives there
+  linked: tomato 110 [fruit] in vegetable_garden (typicality 1): a well-known member of the new theme
+  linked: carrot 391 [vegetable] in vegetable_garden (typicality 1): a well-known member of the new theme
+  linked: lettuce 394 [vegetable] in vegetable_garden (typicality 1): a well-known member of the new theme
+  linked: pea 17530 [vegetable] in vegetable_garden (typicality 1): a well-known member of the new theme
+  linked: pumpkin 403 [vegetable] in vegetable_garden (typicality 1): a well-known member of the new theme
+  linked: potato 392 [vegetable] in vegetable_garden (typicality 2): a well-known member of the new theme
+  linked: cucumber 400 in vegetable_garden (typicality 2): a well-known member of the new theme
+  linked: onion 393 [bulb vegetable] in vegetable_garden (typicality 2): a well-known member of the new theme
+  linked: scarecrow 1857 [field figure] in vegetable_garden (typicality 2): a well-known member of the new theme
+  linked: watering can 1845 in vegetable_garden (typicality 2): a well-known member of the new theme
+  linked: soil 1838 in vegetable_garden (typicality 2): a well-known member of the new theme
+  linked: zucchini 415 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: radish 405 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: rabbit 1443 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: worm 9116 [earthworm] in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: compost 1836 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: seedling 1788 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: slug 1368 [animal] in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: caterpillar 1361 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: raised bed 1863 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: hoe 1854 [tool] in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: trowel 1853 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: wheelbarrow 1843 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: fence 1832 in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: corn 406 [vegetable] in vegetable_garden (typicality 3): a well-known member of the new theme
+  linked: rhubarb 39153 [vegetable] in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: leek 427 in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: kale 428 in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: chives 738 in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: trellis 1860 [garden] in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: cold frame 1887 in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: mulch 1837 in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: aphid 1372 in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: chard 436 in vegetable_garden (typicality 4): a well-known member of the new theme
+  linked: whitefly 1407 in vegetable_garden (typicality 5): a well-known member of the new theme
+10. in a greenhouse (new)
+  new theme: in_a_greenhouse "in a greenhouse" under garden (after vegetable_garden), pop 2, ident 3: an everyday set with no list
+  linked: watering can 1845 in in_a_greenhouse (typicality 1): a well-known member of the new theme
+  linked: plant pot 1855 in in_a_greenhouse (typicality 1): a well-known member of the new theme
+  linked: tomato 110 [fruit] in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: soil 1838 in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: glass 24032 [material] in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: gardener 4150 in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: sunlight 49762 [sun light] in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: hose 1844 [pipe] in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: cucumber 400 in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: thermometer 3461 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: fern 1766 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: cactus 1768 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: seedling 1788 in in_a_greenhouse (typicality 2): a well-known member of the new theme
+  linked: orchid 1698 [flower] in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: trowel 1853 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: seed tray 1885 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: potting mix 65517 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: fertilizer 1839 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: sprinkler 1846 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: humidity 2002 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: gloves 4956 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: heater 4743 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: basil 713 [culinary herb] in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: spray bottle 23843 in in_a_greenhouse (typicality 3): a well-known member of the new theme
+  linked: raised bed 1863 in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: workbench 4817 in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: ladybug 1351 in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: trellis 1860 [garden] in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: heat lamp 25763 in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: palm 1631 [tree] in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: bonsai 1643 in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: aphid 1372 in in_a_greenhouse (typicality 4): a well-known member of the new theme
+  linked: bromeliad 1817 in in_a_greenhouse (typicality 5): a well-known member of the new theme
+  linked: whitefly 1407 in in_a_greenhouse (typicality 5): a well-known member of the new theme
+11. in a garden shed (new)
+  new theme: in_a_garden_shed "in a garden shed" under garden (after in_a_greenhouse), pop 2, ident 2: an everyday set with no list
+  linked: lawnmower 1847 in in_a_garden_shed (typicality 1): a well-known member of the new theme
+  linked: shovel 1850 in in_a_garden_shed (typicality 1): a well-known member of the new theme
+  linked: rake 1851 [garden] in in_a_garden_shed (typicality 1): a well-known member of the new theme
+  linked: wheelbarrow 1843 in in_a_garden_shed (typicality 1): a well-known member of the new theme
+  linked: spade 1852 [digging tool] in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: ladder 23153 [steps] in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: hose 1844 [pipe] in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: watering can 1845 in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: bicycle 23154 in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: toolbox 4801 in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: bucket 23378 [pail] in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: flowerpot 66564 in in_a_garden_shed (typicality 2): a well-known member of the new theme
+  linked: hammer 316 [tool] in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: spider 1362 [animal] in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: cobweb 9114 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: broom 23833 [cleaning tool] in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: gloves 4956 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: deck chair 30738 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: saw 318 [tool] in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: axe 322 [tool] in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: paint can 23772 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: trowel 1853 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: hedge trimmer 23687 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: leaf blower 23686 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: workbench 4817 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: fertilizer 1839 in in_a_garden_shed (typicality 3): a well-known member of the new theme
+  linked: mouse 991 [animal] in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: birdseed 50844 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: sled 48885 [snow] in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: padlock 25698 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: tarp 3032 [waterproof sheet] in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: twine 25210 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: hoe 1854 [tool] in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: pitchfork 25771 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: oil can 23157 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: weed killer 40578 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: extension cord 23164 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: weed whacker 30722 in in_a_garden_shed (typicality 4): a well-known member of the new theme
+  linked: vise 4818 [tool] in in_a_garden_shed (typicality 4): a well-known member of the new theme
+12. backyard (new)
+  new theme: backyard "backyard" under garden (after in_a_garden_shed), pop 2, ident 2: an everyday set with no list
+  linked: fence 1832 in backyard (typicality 1): a well-known member of the new theme
+  linked: lawn 1828 [garden] in backyard (typicality 1): a well-known member of the new theme
+  linked: swing 5940 [playground] in backyard (typicality 1): a well-known member of the new theme
+  linked: trampoline 5944 in backyard (typicality 1): a well-known member of the new theme
+  linked: patio 1834 in backyard (typicality 2): a well-known member of the new theme
+  linked: tree 27965 [plant] in backyard (typicality 2): a well-known member of the new theme
+  linked: slide 5941 [playground] in backyard (typicality 2): a well-known member of the new theme
+  linked: treehouse 66313 [play structure] in backyard (typicality 2): a well-known member of the new theme
+  linked: hammock 3044 [hanging bed] in backyard (typicality 2): a well-known member of the new theme
+  linked: swimming pool 40120 in backyard (typicality 2): a well-known member of the new theme
+  linked: dog 1435 [pet animal] in backyard (typicality 2): a well-known member of the new theme
+  linked: shed 1831 [garden building] in backyard (typicality 2): a well-known member of the new theme
+  linked: sprinkler 1846 in backyard (typicality 3): a well-known member of the new theme
+  linked: lawnmower 1847 in backyard (typicality 3): a well-known member of the new theme
+  linked: picnic table 3055 in backyard (typicality 3): a well-known member of the new theme
+  linked: fire pit 3043 in backyard (typicality 3): a well-known member of the new theme
+  linked: hot tub 16539 in backyard (typicality 3): a well-known member of the new theme
+  linked: bird feeder 1856 in backyard (typicality 3): a well-known member of the new theme
+  linked: basketball hoop 44154 in backyard (typicality 3): a well-known member of the new theme
+  linked: hose 1844 [pipe] in backyard (typicality 3): a well-known member of the new theme
+  linked: trash can 23251 [household] in backyard (typicality 3): a well-known member of the new theme
+  linked: flower bed 1829 in backyard (typicality 3): a well-known member of the new theme
+  linked: gate 1842 [garden] in backyard (typicality 3): a well-known member of the new theme
+  linked: squirrel 990 [tree rodent] in backyard (typicality 3): a well-known member of the new theme
+  linked: clothesline 23257 [laundry] in backyard (typicality 3): a well-known member of the new theme
+  linked: birdbath 1859 in backyard (typicality 4): a well-known member of the new theme
+  linked: kennel 10159 in backyard (typicality 4): a well-known member of the new theme
+  linked: chicken coop 38179 in backyard (typicality 4): a well-known member of the new theme
+  linked: playhouse 46086 in backyard (typicality 4): a well-known member of the new theme
+  linked: gazebo 1862 in backyard (typicality 4): a well-known member of the new theme
+  linked: greenhouse 1835 in backyard (typicality 4): a well-known member of the new theme
+  linked: compost bin 1864 in backyard (typicality 4): a well-known member of the new theme
+  linked: vegetable patch 1868 in backyard (typicality 4): a well-known member of the new theme
+  linked: pergola 1876 in backyard (typicality 4): a well-known member of the new theme
+13. in a compost bin (new)
+  new theme: in_a_compost_bin "in a compost bin" under garden (after backyard), pop 2, ident 2: an everyday set with no list
+  linked: banana peel 39080 [fruit peel] in in_a_compost_bin (typicality 1): a well-known member of the new theme
+  linked: eggshell 66176 [hen shell] in in_a_compost_bin (typicality 2): a well-known member of the new theme
+  linked: tea bag 40243 in in_a_compost_bin (typicality 1): a well-known member of the new theme
+  linked: leaf 30033 in in_a_compost_bin (typicality 1): a well-known member of the new theme
+  linked: worm 9116 [earthworm] in in_a_compost_bin (typicality 2): a well-known member of the new theme
+  linked: weed 1775 [plant] in in_a_compost_bin (typicality 2): a well-known member of the new theme
+  linked: newspaper 4567 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: cardboard 23982 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: paper towel 25549 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: straw 28060 [dried stalks] in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: hay 31498 [dried grass] in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: twig 30036 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: sawdust 17917 [wood] in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: manure 31968 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: hair 3190 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: wood chips 30108 [material] in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: egg carton 62428 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: coffee filter 25568 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: fruit fly 9198 in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: mold 30330 [fungus] in in_a_compost_bin (typicality 3): a well-known member of the new theme
+  linked: pine needle 39095 in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: feather 8360 [bird] in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: toothpick 30103 in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: napkin 19926 in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: slug 1368 [animal] in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: roly-poly 1418 in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: beetle 1350 [insect] in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: moss 1767 in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: centipede 1364 in in_a_compost_bin (typicality 4): a well-known member of the new theme
+  linked: chopsticks 20150 in in_a_compost_bin (typicality 5): a well-known member of the new theme
+  linked: millipede 1365 in in_a_compost_bin (typicality 5): a well-known member of the new theme
+  new entry: apple core 68975 noun, common, familiarity 1: a common word that was not in the library
+  linked: apple core 68975 in in_a_compost_bin (typicality 1): a common word that was not in the library
+  new entry: orange peel 68976 noun, common, familiarity 2: a common word that was not in the library
+  linked: orange peel 68976 in in_a_compost_bin (typicality 2): a common word that was not in the library
+  new entry: coffee grounds 68977 noun, common, familiarity 2: a common word that was not in the library
+  linked: coffee grounds 68977 in in_a_compost_bin (typicality 2): a common word that was not in the library
+  new entry: grass clippings 68978 noun, common, familiarity 2: a common word that was not in the library
+  linked: grass clippings 68978 in in_a_compost_bin (typicality 2): a common word that was not in the library
+  new entry: corn cob 68979 noun, common, familiarity 2: a common word that was not in the library
+  linked: corn cob 68979 in in_a_compost_bin (typicality 3): a common word that was not in the library
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  backyard: new -> "backyard" pop 2 ident 2: 34 words, easy/middle/hard 12/13/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  famous_gardens: "famous gardens" pop 3 ident 3: 29 words, easy/middle/hard 1/2/26, theme difficulty 3, 4th-easiest band 4, gap 1.0 -> "famous gardens" pop 3 ident 3: 32 words, easy/middle/hard 1/4/27, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  garden: "garden" pop 1 ident 1: 61 words, easy/middle/hard 26/20/15, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "garden" pop 1 ident 1: 65 words, easy/middle/hard 30/20/15, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  garden_birds: "garden birds" pop 2 ident 2: 40 words, easy/middle/hard 7/10/23, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "garden birds" pop 2 ident 2: 44 words, easy/middle/hard 7/14/23, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  garden_features: "garden features" pop 2 ident 2: 39 words, easy/middle/hard 12/16/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "garden features" pop 2 ident 2: 44 words, easy/middle/hard 14/18/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  garden_helpers: "garden helpers" pop 2 ident 3: 27 words, easy/middle/hard 8/4/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "garden helpers" pop 2 ident 3: 32 words, easy/middle/hard 10/7/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  garden_pests: "garden pests" pop 3 ident 2: 38 words, easy/middle/hard 4/8/26, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "garden pests" pop 3 ident 2: 44 words, easy/middle/hard 4/13/27, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  garden_tools: "garden tools" pop 2 ident 1: 34 words, easy/middle/hard 12/6/16, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "garden tools" pop 2 ident 1: 37 words, easy/middle/hard 12/9/16, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  gardening_verbs: "gardening verbs" pop 3 ident 2: 35 words, easy/middle/hard 8/9/18, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "gardening verbs" pop 3 ident 2: 37 words, easy/middle/hard 9/10/18, theme difficulty 2, 4th-easiest band 1, gap -1.0
+  in_a_compost_bin: new -> "in a compost bin" pop 2 ident 2: 36 words, easy/middle/hard 10/15/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  in_a_garden_shed: new -> "in a garden shed" pop 2 ident 2: 39 words, easy/middle/hard 12/14/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  in_a_greenhouse: new -> "in a greenhouse" pop 2 ident 3: 34 words, easy/middle/hard 10/14/10, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  vegetable_garden: new -> "vegetable garden" pop 2 ident 2: 35 words, easy/middle/hard 11/14/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 6: water 68974, apple core 68975, orange peel 68976, coffee grounds 68977, grass clippings 68978, corn cob 68979
+Entries deleted 0: none
+library changes 288; entries changed 177; status set to rev 67; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 463 -> 464, info:overlap 4834 -> 4835
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3235 -> 3240; gone none; new vegetable_garden, in_a_greenhouse, in_a_garden_shed, backyard, in_a_compost_bin; theme indexes shift: from index 568 ("vegetable_garden", was "garden_pests") to the last index 3239
+Theme rows whose fields changed (parent compared by id): 8: garden (index 565 -> 565: counts [12,14,21,11,4] -> [14,16,21,11,4]); garden_tools (index 566 -> 566: counts [5,7,6,9,8] -> [5,7,9,9,8]); garden_features (index 567 -> 567: counts [3,9,17,5,6] -> [3,11,19,6,6]); garden_pests (index 568 -> 573: counts [2,2,8,13,14] -> [2,2,13,15,14]); garden_birds (index 570 -> 575: counts [1,6,12,17,7] -> [1,6,16,17,7]); gardening_verbs (index 571 -> 576: counts [3,5,9,5,13] -> [4,5,10,5,13], range [2,5] -> [1,5]); famous_gardens (index 573 -> 578: counts [0,1,2,8,18] -> [0,1,4,9,18], range [4,5] -> [3,5]); garden_helpers (index 575 -> 580: counts [4,6,4,8,8] -> [4,8,7,8,8])
+Entry rows 61427 -> 61433; first row whose entry changed: 61427 (water 68974, was undefined); rows that moved: 0; added water 68974 (row 61427), apple core 68975 (row 61428), orange peel 68976 (row 61429), coffee grounds 68977 (row 61430), grass clippings 68978 (row 61431), corn cob 68979 (row 61432); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100262 -> 100472; rows whose link count changed: 171
+Link-index shifts: from row 110 (avocado 111) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 210, rating changed 0
+  gone (other than the deleted themes): none
+  new: vegetable_garden: "tomato" (110), in_a_greenhouse: "tomato" (110), in_a_garden_shed: "hammer" (316), in_a_garden_shed: "saw" (318), in_a_garden_shed: "axe" (322), garden: "bench" (339), garden_features: "bench" (339), vegetable_garden: "carrot" (391), vegetable_garden: "potato" (392), vegetable_garden: "onion" (393), vegetable_garden: "lettuce" (394), vegetable_garden: "cucumber" (400), in_a_greenhouse: "cucumber" (400), vegetable_garden: "pumpkin" (403), vegetable_garden: "radish" (405), vegetable_garden: "corn" (406), vegetable_garden: "zucchini" (415), vegetable_garden: "leek" (427), vegetable_garden: "kale" (428), vegetable_garden: "chard" (436), in_a_greenhouse: "basil" (713), vegetable_garden: "chives" (738), backyard: "squirrel" (990), garden_pests: "mouse" (991), in_a_garden_shed: "mouse" (991), garden_helpers: "bat" (993), garden_pests: "groundhog" (1048), garden_helpers: "robin" (1067), garden_pests: "crow" (1069), garden_birds: "crow" (1069), garden_birds: "pigeon" (1070), garden_birds: "woodpecker" (1077), garden_birds: "finch" (1092), garden_pests: "ant" (1341), garden_helpers: "butterfly" (1348), in_a_compost_bin: "beetle" (1350), in_a_greenhouse: "ladybug" (1351), garden_pests: "grasshopper" (1354), garden_helpers: "dragonfly" (1358), vegetable_garden: "caterpillar" (1361), garden_helpers: "spider" (1362), in_a_garden_shed: "spider" (1362), in_a_compost_bin: "centipede" (1364), in_a_compost_bin: "millipede" (1365), vegetable_garden: "slug" (1368), in_a_compost_bin: "slug" (1368), vegetable_garden: "aphid" (1372), in_a_greenhouse: "aphid" (1372), garden_pests: "locust" (1385), vegetable_garden: "whitefly" (1407), in_a_greenhouse: "whitefly" (1407), in_a_compost_bin: "roly-poly" (1418), backyard: "dog" (1435), vegetable_garden: "rabbit" (1443), in_a_greenhouse: "palm" (1631), in_a_greenhouse: "bonsai" (1643), in_a_greenhouse: "orchid" (1698), in_a_greenhouse: "fern" (1766), in_a_compost_bin: "moss" (1767), in_a_greenhouse: "cactus" (1768), garden: "grass" (1769), garden: "weed" (1775), in_a_compost_bin: "weed" (1775), vegetable_garden: "seedling" (1788), in_a_greenhouse: "seedling" (1788), in_a_greenhouse: "bromeliad" (1817), backyard: "lawn" (1828), backyard: "flower bed" (1829), backyard: "shed" (1831), vegetable_garden: "fence" (1832), backyard: "fence" (1832), backyard: "patio" (1834), backyard: "greenhouse" (1835), vegetable_garden: "compost" (1836), vegetable_garden: "mulch" (1837), vegetable_garden: "soil" (1838), in_a_greenhouse: "soil" (1838), in_a_greenhouse: "fertilizer" (1839), in_a_garden_shed: "fertilizer" (1839), garden_features: "gate" (1842), backyard: "gate" (1842), vegetable_garden: "wheelbarrow" (1843), in_a_garden_shed: "wheelbarrow" (1843), in_a_greenhouse: "hose" (1844), in_a_garden_shed: "hose" (1844), backyard: "hose" (1844), vegetable_garden: "watering can" (1845), in_a_greenhouse: "watering can" (1845), in_a_garden_shed: "watering can" (1845), in_a_greenhouse: "sprinkler" (1846), backyard: "sprinkler" (1846), in_a_garden_shed: "lawnmower" (1847), backyard: "lawnmower" (1847), in_a_garden_shed: "shovel" (1850), in_a_garden_shed: "rake" (1851), in_a_garden_shed: "spade" (1852), vegetable_garden: "trowel" (1853), in_a_greenhouse: "trowel" (1853), in_a_garden_shed: "trowel" (1853), vegetable_garden: "hoe" (1854), in_a_garden_shed: "hoe" (1854), in_a_greenhouse: "plant pot" (1855), backyard: "bird feeder" (1856), vegetable_garden: "scarecrow" (1857), backyard: "birdbath" (1859), vegetable_garden: "trellis" (1860), in_a_greenhouse: "trellis" (1860), backyard: "gazebo" (1862), vegetable_garden: "raised bed" (1863), in_a_greenhouse: "raised bed" (1863), backyard: "compost bin" (1864), backyard: "vegetable patch" (1868), backyard: "pergola" (1876), in_a_greenhouse: "seed tray" (1885), vegetable_garden: "cold frame" (1887), in_a_greenhouse: "humidity" (2002), in_a_garden_shed: "tarp" (3032), backyard: "fire pit" (3043), backyard: "hammock" (3044), backyard: "picnic table" (3055), in_a_compost_bin: "hair" (3190), in_a_greenhouse: "thermometer" (3461), in_a_greenhouse: "gardener" (4150), in_a_compost_bin: "newspaper" (4567), in_a_greenhouse: "heater" (4743), in_a_garden_shed: "toolbox" (4801), in_a_greenhouse: "workbench" (4817), in_a_garden_shed: "workbench" (4817), in_a_garden_shed: "vise" (4818), garden_tools: "gloves" (4956), in_a_greenhouse: "gloves" (4956), in_a_garden_shed: "gloves" (4956), backyard: "swing" (5940), backyard: "slide" (5941), backyard: "trampoline" (5944), garden_features: "statue" (6338), garden_features: "archway" (6603), famous_gardens: "Babylon" (6624), in_a_compost_bin: "feather" (8360), in_a_garden_shed: "cobweb" (9114), vegetable_garden: "worm" (9116), in_a_compost_bin: "worm" (9116), in_a_compost_bin: "fruit fly" (9198), backyard: "kennel" (10159), backyard: "hot tub" (16539), vegetable_garden: "pea" (17530), in_a_compost_bin: "sawdust" (17917), in_a_compost_bin: "napkin" (19926), in_a_compost_bin: "chopsticks" (20150), garden_tools: "ladder" (23153), in_a_garden_shed: "ladder" (23153), in_a_garden_shed: "bicycle" (23154), in_a_garden_shed: "oil can" (23157), in_a_garden_shed: "extension cord" (23164), backyard: "trash can" (23251), backyard: "clothesline" (23257), garden_tools: "bucket" (23378), in_a_garden_shed: "bucket" (23378), in_a_garden_shed: "leaf blower" (23686), in_a_garden_shed: "hedge trimmer" (23687), in_a_garden_shed: "paint can" (23772), in_a_garden_shed: "broom" (23833), in_a_greenhouse: "spray bottle" (23843), in_a_compost_bin: "cardboard" (23982), in_a_greenhouse: "glass" (24032), in_a_garden_shed: "twine" (25210), in_a_compost_bin: "paper towel" (25549), in_a_compost_bin: "coffee filter" (25568), in_a_garden_shed: "padlock" (25698), in_a_greenhouse: "heat lamp" (25763), in_a_garden_shed: "pitchfork" (25771), backyard: "tree" (27965), in_a_compost_bin: "straw" (28060), garden: "flower" (28286), gardening_verbs: "spray" (28689), in_a_compost_bin: "leaf" (30033), in_a_compost_bin: "twig" (30036), in_a_compost_bin: "toothpick" (30103), in_a_compost_bin: "wood chips" (30108), in_a_compost_bin: "mold" (30330), in_a_garden_shed: "weed whacker" (30722), in_a_garden_shed: "deck chair" (30738), in_a_compost_bin: "hay" (31498), in_a_compost_bin: "manure" (31968), famous_gardens: "Tivoli" (37441), famous_gardens: "Luxembourg" (37453), backyard: "chicken coop" (38179), in_a_compost_bin: "banana peel" (39080), in_a_compost_bin: "pine needle" (39095), vegetable_garden: "rhubarb" (39153), backyard: "swimming pool" (40120), in_a_compost_bin: "tea bag" (40243), in_a_garden_shed: "weed killer" (40578), backyard: "basketball hoop" (44154), garden_features: "maze" (45933), backyard: "playhouse" (46086), in_a_garden_shed: "sled" (48885), in_a_greenhouse: "sunlight" (49762), in_a_garden_shed: "birdseed" (50844), in_a_compost_bin: "egg carton" (62428), in_a_greenhouse: "potting mix" (65517), in_a_compost_bin: "eggshell" (66176), backyard: "treehouse" (66313), in_a_garden_shed: "flowerpot" (66564), gardening_verbs: "water" (68974), in_a_compost_bin: "apple core" (68975), in_a_compost_bin: "orange peel" (68976), in_a_compost_bin: "coffee grounds" (68977), in_a_compost_bin: "grass clippings" (68978), in_a_compost_bin: "corn cob" (68979)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 11 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 210 new links existed earlier and was removed (all 225 library versions and 191 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - famous gardens: Eden (overlap with Eden Project)
+  - backyard: tire swing (overlap with swing), swing set; in a greenhouse: seed (overlap with seed tray)
+  - vegetable garden: runner bean (a UK word)
+  - garden pests: beetle (several kinds of beetle are there)
+
+For Simon:
+  1. gardening verbs had no water: a new entry water [pour on plants] (verb) beside water [liquid].
+  2. Overlap note that stays: flower / flower bed in garden (different things). family-kin note that stays: wat / water (no family).
+  3. No new theme shares more than half its words with another (backyard shares 46% with garden).
