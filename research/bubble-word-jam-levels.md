@@ -1656,7 +1656,6 @@ Themes: 9 (bar `0/9`). Moves: 37 at start (counter read 2 then 3 on load; 35 aft
 
 | Theme | Words | Name |
 |---|---|---|
-| Wireless (first part) | BLUETOOTH, WI-FI, INFRARED (3 merged early, waited for the 4th) | see below |
 | Radio | SIGNAL, FREQUENCY, BROADCAST, ANTENNA | RADIO (shown; returned as a word to WIRELESS) |
 | Wireless | BLUETOOTH, WI-FI, INFRARED, RADIO (returned) | WIRELESS (shown; did not come back) |
 | Fish | TROUT, CARP (??R?), PIKE (P?K?), CATFISH | FISH (shown; returned as a word to RIVER) |
@@ -1667,7 +1666,7 @@ Themes: 9 (bar `0/9`). Moves: 37 at start (counter read 2 then 3 on load; 35 aft
 | Ship | SHIP, CREW (??EW), COMPASS, UNIFORM | CAPTAIN (shown; returned as a word to PROFESSIONS) |
 | Professions | CONDUCTOR (returned), LAWYER (returned), REALTOR (returned), CAPTAIN (returned) | PROFESSIONS (shown, final merge) |
 
-Notes: the theme rows are listed by the word that came back (the cleared theme's NAME is the returned word): the 4 words in each bubble were as listed and the orange bubble showed the returned name. So the 9 themes were RADIO, WIRELESS, FISH, RIVER, CONDUCTOR, LAWYER, REALTOR, CAPTAIN, PROFESSIONS. The first row above is only the early part of WIRELESS (ignore it as a theme). Four-level hierarchy (words of CONDUCTOR/LAWYER/REALTOR/CAPTAIN were set by me from the merge order and the returned word; the 4th word of each, e.g. TRAIN for CONDUCTOR and CASE for LAWYER, was dragged in last, and its group name came only from the orange bubble). Board of 27 bubbles at start; new words dropped after clears (B???, ????, TROUT dropped in early; STREAM, CATFISH, P???). Autumn leaf decoration on Mastery and Well Done screens.
+Re-checked against screenshots L69-01..L69-41 (the rows above are in clear order and each name was seen on an orange bubble). The table is confirmed; the only change was removing a duplicate "Wireless (first part)" row (BLUETOOTH, WI-FI, INFRARED merged early into one bubble and waited for RADIO to return as the 4th word). Clear order on the N/9 bar: RADIO 1/9, WIRELESS 2/9, FISH 3/9, RIVER 4/9, CONDUCTOR 5/9, LAWYER 6/9, REALTOR 7/9, CAPTAIN 8/9, PROFESSIONS 9/9. A theme's NAME is the orange-bubble word; that same word returns and joins the parent theme. Four-level hierarchy (RADIO into WIRELESS; FISH into RIVER; CONDUCTOR/LAWYER/REALTOR/CAPTAIN into PROFESSIONS). The 4th words of Fish and Train (CATFISH, TRAIN) were not shown inside the merged bubble but were the only bubbles that vanished with it. Moves: 37 start, 13 at the 9/9 frame; Mastery 937 only a mid-count-up frame (counter at 8, final unknown); reward 60 confirmed. Board of 27 bubbles at start; new words dropped after clears (B???, ????, TROUT dropped in early; STREAM, CATFISH, P???). Autumn leaf decoration on Mastery and Well Done screens.
 
 ## Level 70 (EXPERT)
 
@@ -1678,9 +1677,9 @@ Chunk pairs: FRO\|ZEN, MER\|CURY, JUPI\|TER, GRIF\|FIN, GALA\|XY
 | Theme | Words | Name |
 |---|---|---|
 | Sentence | VERB, SUBJECT, OBJECT, CLAUSE | SENTENCE (shown) |
-| Plants | LEAVES, SEED, SPROUT, TRUNK (from the merge order; those four bubbles were on board together; not all frames read) | (not captured; the 2/12 clear came between frames) |
-| Fire | FLAME, SMOKE, HEAT, SPARKS | (guessed: FIRE; the orange bubble showed no readable name, then a FIRE word bubble returned) |
-| Dragon | FIRE (returned), WINGS, SCALES, plus one more word I did not read | DRAGON (shown; returned as a word to MYSTIC FLYERS) |
+| Plants | TRUNK, LEAVES, SEED, SPROUT (the 4th, SPROUT, vanished with the merge; the merged bubble showed TRUNK, LEAVES, SEED) | TREE LIFE (shown, as read from the orange bubble; possibly TREE OF LIFE, the "OF" not visible) |
+| Fire | FLAME, SMOKE, HEAT, SPARKS (SPARKS was the 4th, gone after the merge) | (guessed: FIRE; the orange bubble was blank, no text rendered; a FIRE word bubble returned right after) |
+| Dragon | FIRE (returned), WINGS, SCALES, TAIL | DRAGON (shown; returned as a word to MYSTIC FLYERS) |
 | Mystic flyers | PHOENIX, FAIRY, DRAGON (returned), GRIFFIN (GRIF\|FIN) | MYSTIC FLYERS (shown) |
 | Chess | PIN, FORK, CASTLING, CHECKMATE | CHECK (shown, as read from the orange bubble) |
 | Theater | STAGE, ACTOR, CURTAIN, SCRIPT | THEATER (shown; returned as a word to SHOW TYPES) |
@@ -1690,7 +1689,7 @@ Chunk pairs: FRO\|ZEN, MER\|CURY, JUPI\|TER, GRIF\|FIN, GALA\|XY
 | Astronomy | CONSTELLATION (returned), PLANETS (returned), GALAXY (GALA\|XY), STARS | ASTRONOMY (shown) |
 | Show types | OPERA (AREPO), THEATER (returned), MOVIE, ANIMATION (returned) | SHOW TYPES (shown, final merge) |
 
-Notes: three-level hierarchy (SHOW TYPES, ASTRONOMY, MYSTIC FLYERS each take returned words). First board had 28 bubbles. I did not read the frames for the plant clear and the fourth DRAGON word, so those two rows are incomplete. Autumn leaf decoration on the Well Done screen.
+Notes: three-level hierarchy (SHOW TYPES, ASTRONOMY, MYSTIC FLYERS each take returned words). First board had 28 bubbles. Re-checked against screenshots L70-01..L70-64: the Plants name (TREE LIFE) and the DRAGON 4th word (TAIL) are now read; all other rows were confirmed unchanged. Clear order on the N/12 bar: SENTENCE 1, PLANTS 2, FIRE 3, DRAGON 4, MYSTIC FLYERS 5, CHESS (CHECK) 6, THEATER 7, PLANETS 8, ANIMATION 9, CONSTELLATIONS 10, ASTRONOMY 11, SHOW TYPES 12. Moves: 48 at start (counter 3 on load, 47 once the first merge started, 46 after it), 13 at 12/12. Mastery bubble not in any of the 64 frames (12/12 frames go straight to Well Done); reward 90 coins confirmed (coins 3,750 shown). The FIRE name is inferred only from the returned FIRE word; the orange bubble frame itself shows no text. Still unknown: exact Plants name wording (TREE LIFE vs TREE OF LIFE), Fire name text, Mastery value. Autumn leaf decoration on the Well Done screen.
 
 ## Level 71
 
@@ -1709,6 +1708,45 @@ Chunk pairs: SE\|VEN, DE\|CADE, CEN\|TURY, MILLEN\|NIUM, BAL\|LOON, TUN\|DRA, RE
 | Antarctica | PENGUIN (returned), SOUTH POLE, GLACIER, RESEARCH (RE\|SEARCH) | ANTARCTICA (shown, final merge) |
 
 Notes: first board 28 bubbles; 14 of them were chunk bubbles (teal) in 7 pairs. Hierarchical: SHIP into FLOATING THINGS, PENGUIN into ANTARCTICA. New words dropped after each clear (ANCHOR, SAIL, CAPTAIN, EMPEROR after prime numbers; ADELIE, CHINSTRAP after ship; ...). I took the Arctic theme before Antarctica so the PENGUIN word (returned) would be on board. Autumn leaves on Mastery and Well Done screens.
+
+## Level 72
+
+Themes: 10 (bar `0/10`). Moves: 52 at start (counter read 3 on load; 51 after the first merge). 21 left at the final merge. Mastery: 981 (count-up frame, counter at 21; may still have been counting). Reward: 30 coins (coins 3,870 shown). Next button: plain green "LEVEL 73" (not tapped). Shell Streak free boosters in the pre-level dialog (green PLAY), left unselected; a shell-reward animation played over the board for a few seconds after load. Split words (7 chunk pairs, 1 move each): POR\|TUGAL, SPA\|IN, INCEP\|TION, GOD\|FATHER, TITA\|NIC, ORCHES\|TRA, COS\|TUME. Cryptic bubbles: 5 at the start (FRANCE, PICK, KEYS, FRET, CANDY), letters filled in as merges happened. No chain lock, no reversed bubbles, no +5 ad bubble. Wrong or wasted drags: 2 (PICK drag missed after drift, cost 1 move; CANDY drag missed, no visible cost).
+
+| Theme | Words | Name |
+|---|---|---|
+| France | PARIS, LOUVRE, EIFFEL TOWER, BAGUETTE | FRANCE (shown; returned as a word to WESTERN EUROPE) |
+| Ballet | BALLERINA, TUTU, SWAN LAKE, POINTE | BALLET (shown; returned as a word to PERFORMING ARTS) |
+| Western Europe | PORTUGAL (POR\|TUGAL), SPAIN (SPA\|IN), FRANCE (returned), GERMANY | WESTERN EUROPE (shown) |
+| Guitar | PICK, FRET, AMPLIFIER, STRINGS | GUITAR (shown; returned as a word to MUSICAL INSTRUMENTS) |
+| Piano | KEYS, PEDAL, BENCH, SONATA | PIANO (shown; returned as a word to MUSICAL INSTRUMENTS) |
+| Musical instruments | OBOE, GUITAR (returned), PIANO (returned), CELLO | MUSICAL INSTRUMENTS (shown; did not come back) |
+| Performing arts | OPERA, THEATER, ORCHESTRA (ORCHES\|TRA), BALLET (returned) | PERFORMING ARTS (shown; did not come back) |
+| Famous movies | INCEPTION (INCEP\|TION), THE MATRIX, GODFATHER (GOD\|FATHER), TITANIC (TITA\|NIC) | FAMOUS MOVIES (shown; did not come back) |
+| Halloween | PUMPKIN, CANDY, GHOST, COSTUME (COS\|TUME) | HALLOWEEN (shown; returned as a word to US HOLIDAYS) |
+| US holidays | THANKSGIVING, INDEPENDENCE DAY, LABOR DAY, HALLOWEEN (returned) | US HOLIDAYS (shown, final merge) |
+
+Notes: first board 26 bubbles; 10 of them were chunk bubbles in 5 pairs (INCEP and COS partners TION/TUME, GOD's FATHER, TITA and TRA arrived later, in drops after clears). Three hierarchies at once: FRANCE into WESTERN EUROPE, BALLET into PERFORMING ARTS, GUITAR and PIANO into MUSICAL INSTRUMENTS, HALLOWEEN into US HOLIDAYS. Decoys: STRINGS and PEDAL fit guitar or piano (PEDAL piano, STRINGS guitar), SONATA is piano not classical/performing arts, OPERA/THEATER/BALLET/ORCHESTRA are performing arts. The moves counter lagged by one merge on some frames. Autumn leaves on Mastery and Well Done screens.
+
+## Level 73
+
+Themes: 11 (bar `0/11`). Moves: 46 at start (counter read 46 before the first merge, 45 after it). 17 left at the final merge (counter showed 16 on the Mastery frame, counting down). Mastery: 1002 (count-up frame, counter at 16 and still running; final not confirmed). Reward: 30 coins (coins 3,900 shown). Next button: red "HARD LEVEL 74" with the octopus (not tapped). Shell Streak free boosters shown in the pre-level dialog (+3 moves and extra bubbles, 1 each), left unselected. Split words: 0. No chain lock, no cryptic or reversed bubbles, no +5 ad bubble. Wrong or wasted drags: 0.
+
+| Theme | Words | Name |
+|---|---|---|
+| Atom | PROTON, ELECTRON, NEUTRON, NUCLEUS | ATOM (shown; returned as a word to THINGS WITH CORE) |
+| Facial expressions | SMILE, LAUGH, WINK, FROWN | EXPRESSION (shown) |
+| Religious items | RELIC, ROSARY, ALTAR, CRUCIFIX | RELIGIOUS ITEMS (shown) |
+| Santa's Christmas Eve | SLEIGH, ELVES, DEER, CHIMNEY | (guessed: SANTA CLAUS; praise "Cool!" covered the name; returned as a word SANTA CLAUS to CHRISTMAS) |
+| Beach activities | SURFING, VOLLEYBALL, SWIMMING, SANDCASTLE | BEACH ACTIVITIES (shown; did not come back) |
+| Birthday | GIFT, CAKE, CANDLE, PARTY | BIRTHDAY (shown; returned as a word to CELEBRATIONS) |
+| Anniversary | FLOWERS, RINGS, DINNER, TOAST | ANNIVERSARY (shown; returned as a word to CELEBRATIONS) |
+| Celebrations | BIRTHDAY (returned), GRADUATION, FESTIVAL, ANNIVERSARY (returned) | CELEBRATIONS (shown; did not come back) |
+| Christmas | SANTA CLAUS (returned), TREE, ORNAMENT, CAROL | CHRISTMAS (shown; returned as a word to WINTER) |
+| Winter | ICE, SNOW, FIREPLACE, CHRISTMAS (returned) | WINTER (shown; did not come back) |
+| Things with core | ATOM (returned), GALAXY, EARTH, REACTOR | THINGS WITH CORE (shown, final merge) |
+
+Notes: first board 26 bubbles, all plain words, no chunks. Hierarchies: ATOM into THINGS WITH CORE; BIRTHDAY and ANNIVERSARY into CELEBRATIONS; SANTA CLAUS into CHRISTMAS; CHRISTMAS into WINTER (a chain). The last four bubbles were merged as two pairs (ATOM+GALAXY, EARTH+REACTOR), then pair onto pair (a 2+2 merge works). Decoys: CHIMNEY and DEER with Santa (not Christmas), TOAST and RINGS with anniversary (not wedding), FIREPLACE with winter, EARTH and REACTOR core. Autumn leaves on Mastery and Well Done screens.
 
 ## New features log
 
