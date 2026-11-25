@@ -1609,6 +1609,107 @@ Chunk pairs: KET\|CHUP, MUS\|TARD, AD\|MIRAL, WAR\|SHIP, BUF\|FALO, DOL\|PHIN, B
 
 Notes: hierarchical again with a second level: NAVY into SHADES OF BLUE, SPRING into EASTER, AQUARIUM and ZOO into PLACES TO VISIT. The chain split the board into the upper half (condiments, navy, animals, Easter words) and the lower half (colours and spring words) until two themes cleared. Autumn leaf decoration shown on the Mastery and Well Done screens (as level 8).
 
+## Level 67
+
+Themes: 8 (bar `0/8`). Moves: 45 at start (counter read 42 on load, then 45; 44 after the first merge, so true start 45). Shell Streak free boosters were shown in the pre-level dialog and left unselected (PLAY tapped); no moves added visibly. 21 left on the frame of the final merge (TEXAS bubble); the Mastery frame then showed the counter at 14 and counting down. Mastery: 900 (count-up frame, counter at 14 moves; probably still counting: 886 + 21 leftover would be 907; final not confirmed). Reward: 30 coins (coins 3,630 shown). Next button: green "LEVEL 68" (plain). Split words (6 chunk pairs, 1 move each): DOL\|LAR, RAM\|BUTAN, SCULP\|TURE, MANA\|GER, SUPER\|VISOR, COW\|BOY. No chain lock, no reversed or cryptic bubbles, no +5 ad bubble. Wrong or wasted drags: 1 (NIAGARA drag missed the Waterfall bubble after the board shifted; the counter showed no extra cost).
+
+Chunk pairs: DOL\|LAR, RAM\|BUTAN, SCULP\|TURE, MANA\|GER, SUPER\|VISOR, COW\|BOY
+
+| Theme | Words | Name |
+|---|---|---|
+| Banknotes (currency) | DOLLAR (DOL\|LAR), EURO, POUND, YEN | BANKNOTES (shown) |
+| Native tribes | APACHE, NAVAJO, SIOUX, CHEROKEE | NATIVE TRIBES (shown) |
+| Waterfall | IGUAZU, VICTORIA, NIAGARA, ANGEL | WATERFALL (shown) |
+| Fruit | PINEAPPLE, DRAGONFRUIT, MANGO, RAMBUTAN (RAM\|BUTAN) | FRUIT (shown; returned as a word to TREE) |
+| Tree | ROOT, TRUNK, BRANCH, FRUIT (returned) | TREE (shown) |
+| Art | SKETCH, OIL, SCULPTURE (SCULP\|TURE), WATERCOLOR | ART (shown; did not come back) |
+| Staff | CLERK, ASSISTANT, MANAGER (MANA\|GER), SUPERVISOR (SUPER\|VISOR) | STAFF (shown) |
+| Texas | AUSTIN, HOUSTON, RANCH, COWBOY (COW\|BOY) | TEXAS (shown, final merge) |
+
+Notes: first board had 27 bubbles (the counter showed 3 for the first ~second). Hierarchical: FRUIT came back into TREE. New words dropped after each clear (ASSISTANT; IGUAZU, VICTORIA, SUPER, COW; AUSTIN, NIAGARA, CLERK, ANGEL; HOUSTON, RANCH). The moves counter did not drop on several merges (Move Streak). Autumn leaf decoration on the Mastery and Well Done screens.
+
+## Level 68
+
+Themes: 11 (bar `0/11`). Moves: 46 at start (counter read 46 on the first frame; 44 after the first two merges). Shell Streak free boosters shown in the pre-level dialog, left unselected. 19 left at the final merge. Mastery: 919 (count-up frame with the counter at 14; 900 + 19 leftover moves = 919, so probably final, but it may still have been counting). Reward: 30 coins (coins 3,660 before the reward was added). Next button: red "HARD LEVEL 69" (octopus). Split words: 0 (no chunk bubbles). Reversed bubbles: 4 (see below). No chain lock, no cryptic bubbles, no +5 ad bubble. Wrong or wasted drags: 1 (SPINE drag onto the Human Body bubble missed after the bubble moved; no visible cost).
+
+Reversed: GORF = FROG, ENOT = TONE, EPOR = ROPE, XATNYS = SYNTAX.
+
+| Theme | Words | Name |
+|---|---|---|
+| Sea life | DOLPHIN, JELLYFISH, SEAHORSE, OCTOPUS | SEA LIFE (shown; did not come back) |
+| Hopping | FROG (GORF), KANGAROO, RABBIT, GRASSHOPPER | HOPPING (shown; returned as a word to WAYS OF MOVING) |
+| Phonetics | VOWELS, CONSONANTS, ACCENT, TONE (ENOT) | PHONETICS (shown; returned as a word to LINGUISTICS) |
+| Linguistics | MORPHOLOGY, SEMANTICS, SYNTAX (XATNYS), PHONETICS (returned) | LINGUISTICS (shown; did not come back) |
+| Flying | BIRD, BAT, INSECT, BEE | FLYING (shown; returned as a word to WAYS OF MOVING) |
+| Ways of moving | HOPPING (returned), SWIMMING, CRAWLING, FLYING (returned) | WAYS OF MOVING (shown) |
+| Rock climbing | HARNESS, CLIFF, ROPE (EPOR), CHALK | ROCK CLIMBING (shown; returned as a word to EXTREME SPORTS) |
+| Skydiving | PARACHUTE, FREEFALL, ADRENALINE, ALTITUDE | SKYDIVING (shown; returned as a word to EXTREME SPORTS) |
+| Extreme sports | ICE DIVING, BUNGEE JUMPING, ROCK CLIMBING (returned), SKYDIVING (returned) | EXTREME SPORTS (shown) |
+| Wrist | WATCH, PULSE, BRACELET, JOINT | WRIST (shown; returned as a word to HUMAN BODY) |
+| Human body | SHOULDER, KNEE, WRIST (returned), SPINE | HUMAN BODY (shown, final merge) |
+
+Notes: heavily hierarchical (4 parent themes: LINGUISTICS, WAYS OF MOVING, EXTREME SPORTS, HUMAN BODY). First board had 27 bubbles. New words dropped in after each clear (MORPHOLOGY, GRASSHOPPER, SHOULDER, INSECT after sea life; SWIMMING, XATNYS, KNEE after hopping; SPINE, CRAWLING, SEMANTICS after phonetics; BIRD, BAT after linguistics). Several merges cost 0 moves (Move Streak). Autumn leaf decoration on Mastery and Well Done screens.
+
+## Level 69 (HARD)
+
+Themes: 9 (bar `0/9`). Moves: 37 at start (counter read 2 then 3 on load; 35 after the first two merges, so true start 37 by that count). Shell Streak free boosters shown in the pre-level dialog (red HARD LEVEL PLAY button), left unselected. 13 left at the final merge. Mastery: 937 (count-up frame, counter at 8 and still running; final not confirmed). Reward: 60 coins (HARD; coins 3,690 shown before the reward was added). Next button: purple "EXPERT LEVEL 70" (pink-purple octopus). Split words: 0 (no chunk bubbles). Cryptic bubbles: 6 (BAN? -> BANK, ???S -> KEYS, J???? -> JUDGE, P??? -> PIKE, ??EW -> CREW, ??R? -> CARP; letters filled in as other words merged). No chain lock, no reversed bubbles, no +5 ad bubble. Wrong or wasted drags: 0.
+
+| Theme | Words | Name |
+|---|---|---|
+| Wireless (first part) | BLUETOOTH, WI-FI, INFRARED (3 merged early, waited for the 4th) | see below |
+| Radio | SIGNAL, FREQUENCY, BROADCAST, ANTENNA | RADIO (shown; returned as a word to WIRELESS) |
+| Wireless | BLUETOOTH, WI-FI, INFRARED, RADIO (returned) | WIRELESS (shown; did not come back) |
+| Fish | TROUT, CARP (??R?), PIKE (P?K?), CATFISH | FISH (shown; returned as a word to RIVER) |
+| River | STREAM, BANK (B???), FISH (returned), FRESH WATER | RIVER (shown; did not come back) |
+| Train | TRACKS, WHISTLE, TICKET, TRAIN | CONDUCTOR (shown; returned as a word to PROFESSIONS) |
+| Court | JUDGE (J????), TRIAL, COURT, CASE | LAWYER (shown; returned as a word to PROFESSIONS) |
+| Real estate | CLIENT, HOUSE, CONTRACT, KEYS (???S) | REALTOR (shown; returned as a word to PROFESSIONS) |
+| Ship | SHIP, CREW (??EW), COMPASS, UNIFORM | CAPTAIN (shown; returned as a word to PROFESSIONS) |
+| Professions | CONDUCTOR (returned), LAWYER (returned), REALTOR (returned), CAPTAIN (returned) | PROFESSIONS (shown, final merge) |
+
+Notes: the theme rows are listed by the word that came back (the cleared theme's NAME is the returned word): the 4 words in each bubble were as listed and the orange bubble showed the returned name. So the 9 themes were RADIO, WIRELESS, FISH, RIVER, CONDUCTOR, LAWYER, REALTOR, CAPTAIN, PROFESSIONS. The first row above is only the early part of WIRELESS (ignore it as a theme). Four-level hierarchy (words of CONDUCTOR/LAWYER/REALTOR/CAPTAIN were set by me from the merge order and the returned word; the 4th word of each, e.g. TRAIN for CONDUCTOR and CASE for LAWYER, was dragged in last, and its group name came only from the orange bubble). Board of 27 bubbles at start; new words dropped after clears (B???, ????, TROUT dropped in early; STREAM, CATFISH, P???). Autumn leaf decoration on Mastery and Well Done screens.
+
+## Level 70 (EXPERT)
+
+Themes: 12 (bar `0/12`). Moves: 48 at start (counter read 3 on load; 46 after the first two merges, so true start 48 by the first-merge-plus-1 rule). Shell Streak free boosters shown in the pre-level dialog (purple EXPERT LEVEL PLAY button), left unselected. 13 left at the final merge. Mastery: NOT captured (the MASTERY bubble did not appear in my 5 post-merge frames; the 12/12 bar frame went straight to the Well Done screen ~6 s later). Reward: 90 coins (EXPERT; coins 3,750 shown before the reward). Next button: plain green "LEVEL 71". Split words (5 chunk pairs, 1 move each): FRO\|ZEN, MER\|CURY, JUPI\|TER, GRIF\|FIN, GALA\|XY. Reversed bubble: 1 (AREPO = OPERA, yellow with a left-arrow). No chain lock, no cryptic bubbles, no +5 ad bubble. Wrong or wasted drags: 1 (CHECKMATE drag missed after the board shifted; no visible move cost).
+
+Chunk pairs: FRO\|ZEN, MER\|CURY, JUPI\|TER, GRIF\|FIN, GALA\|XY
+
+| Theme | Words | Name |
+|---|---|---|
+| Sentence | VERB, SUBJECT, OBJECT, CLAUSE | SENTENCE (shown) |
+| Plants | LEAVES, SEED, SPROUT, TRUNK (from the merge order; those four bubbles were on board together; not all frames read) | (not captured; the 2/12 clear came between frames) |
+| Fire | FLAME, SMOKE, HEAT, SPARKS | (guessed: FIRE; the orange bubble showed no readable name, then a FIRE word bubble returned) |
+| Dragon | FIRE (returned), WINGS, SCALES, plus one more word I did not read | DRAGON (shown; returned as a word to MYSTIC FLYERS) |
+| Mystic flyers | PHOENIX, FAIRY, DRAGON (returned), GRIFFIN (GRIF\|FIN) | MYSTIC FLYERS (shown) |
+| Chess | PIN, FORK, CASTLING, CHECKMATE | CHECK (shown, as read from the orange bubble) |
+| Theater | STAGE, ACTOR, CURTAIN, SCRIPT | THEATER (shown; returned as a word to SHOW TYPES) |
+| Planets | MERCURY (MER\|CURY), JUPITER (JUPI\|TER), SATURN, MARS | PLANETS (shown; returned as a word to ASTRONOMY) |
+| Animation | SHREK, TOY STORY, FROZEN (FRO\|ZEN), ICE AGE | ANIMATION (shown; returned as a word to SHOW TYPES) |
+| Constellations | ORION, SCORPIUS, CASSIOPEIA, URSA MAJOR | CONSTELLATIONS (shown; returned as CONSTELLATION to ASTRONOMY) |
+| Astronomy | CONSTELLATION (returned), PLANETS (returned), GALAXY (GALA\|XY), STARS | ASTRONOMY (shown) |
+| Show types | OPERA (AREPO), THEATER (returned), MOVIE, ANIMATION (returned) | SHOW TYPES (shown, final merge) |
+
+Notes: three-level hierarchy (SHOW TYPES, ASTRONOMY, MYSTIC FLYERS each take returned words). First board had 28 bubbles. I did not read the frames for the plant clear and the fourth DRAGON word, so those two rows are incomplete. Autumn leaf decoration on the Well Done screen.
+
+## Level 71
+
+Themes: 7 (bar `0/7`). Moves: about 43 at start (counter read 3 on load; 40 after the first three merges, so true start about 43). Shell Streak free boosters shown in the pre-level dialog (green PLAY), left unselected. 20 left at the final merge (counter showed 10 on the Mastery frame, counting down). Mastery: 968 (count-up frame, counter at 10 moves and still running; final not confirmed). Reward: 30 coins (coins 3,840 shown). Next button: plain green "LEVEL 72" (not tapped). Split words (7 chunk pairs, 1 move each): SE\|VEN, DE\|CADE, CEN\|TURY, MILLEN\|NIUM, BAL\|LOON, TUN\|DRA, RE\|SEARCH. No chain lock, no reversed or cryptic bubbles, no +5 ad bubble. Wrong or wasted drags: 1 (CHINSTRAP drag missed after the board shifted; no visible cost).
+
+Chunk pairs: SE\|VEN, DE\|CADE, CEN\|TURY, MILLEN\|NIUM, BAL\|LOON, TUN\|DRA, RE\|SEARCH
+
+| Theme | Words | Name |
+|---|---|---|
+| Prime numbers | TWO, THREE, FIVE, SEVEN (SE\|VEN) | PRIME NUMBERS (shown) |
+| Ship | ANCHOR, SAIL, CAPTAIN, CREW | SHIP (shown; returned as a word to FLOATING THINGS) |
+| Penguin | GENTOO, EMPEROR, ADELIE, CHINSTRAP | PENGUIN (shown; returned as a word to ANTARCTICA) |
+| Time periods | YEAR, DECADE (DE\|CADE), CENTURY (CEN\|TURY), MILLENNIUM (MILLEN\|NIUM) | TIME PERIODS (shown; did not come back) |
+| Floating things | SHIP (returned), WOOD, RAFT, BALLOON (BAL\|LOON) | FLOATING THINGS (shown; did not come back) |
+| Arctic | POLAR BEAR, NORTHERN LIGHTS, TUNDRA (TUN\|DRA), NORTH POLE | ARCTIC (shown; did not come back) |
+| Antarctica | PENGUIN (returned), SOUTH POLE, GLACIER, RESEARCH (RE\|SEARCH) | ANTARCTICA (shown, final merge) |
+
+Notes: first board 28 bubbles; 14 of them were chunk bubbles (teal) in 7 pairs. Hierarchical: SHIP into FLOATING THINGS, PENGUIN into ANTARCTICA. New words dropped after each clear (ANCHOR, SAIL, CAPTAIN, EMPEROR after prime numbers; ADELIE, CHINSTRAP after ship; ...). I took the Arctic theme before Antarctica so the PENGUIN word (returned) would be on board. Autumn leaves on Mastery and Well Done screens.
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
