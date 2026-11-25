@@ -1063,6 +1063,216 @@ Chunk pairs: EXPLO\|SION, RADIA\|TION, OPE\|RA, BUC\|KET, BUT\|TER, KER\|NEL, DA
 
 Notes: SINGER vanished after it was shown and the bar went up, so it joined the OPERA stack without a second bubble being visible. Five themes returned as sub-theme words (POPCORN, CAVE, CIRCUS, SINGER, SUPERNOVA). Names read from the shots named in the table in the scratchpad. A brief Android status bar (clock "8:16" and a "G") flickered at the top of the board once, after the Play Store detour at level 39.
 
+## Level 41
+
+Themes: 10 (bar `0/10`). Moves: 47 at start (s41a), 14 left at the last merge (13 on the Mastery screen). Mastery: 559 (single drag with WAIT=1 for the name, then four back-to-back shots; f41c). Reward: 30 coins (counter 2,460 on the Mastery and Well Done screens, 2,490 on the Level 42 pre-level dialog). Next button is a plain green "LEVEL 42" (X2 and Home not tapped). Split words: 5 joins. No booster used. Plain level, no chain. Autumn leaf decoration on the Mastery and Well Done screens.
+
+Chunk pairs: SOC\|RATES, CYP\|RUS, BURG\|LAR, SCOR\|PION, WIT\|NESS. Each join cost 1 move. Many words dropped in only after a sub-theme cleared (TARANTULA, SNAKE, FANG, VENOM, HOOD, THOR, ZEUS, ODIN, MURDERER, SCAMMER, HACKER and others), and each chunk partner appeared late too.
+
+| Theme | Words | Name |
+|---|---|---|
+| Judge | ROBE, GAVEL, VERDICT, LAWS | JUDGE (shown, d41f) |
+| Ancient states | ROME, EGYPT, CARTHAGE, BABYLON | ANCIENT STATES (shown, d41i) |
+| Hornet | STING, WASP, NEST, SWARM | HORNET (shown, d41m) |
+| Islands | HAWAII, SICILY, CYPRUS (CYP\|RUS), ICELAND | ISLANDS (shown, d41q) |
+| Gods | JUPITER, ZEUS, ODIN, THOR | GODS AND GODDESSES (shown, d41t) |
+| Philosophers | PLATO, ARISTOTLE, KANT, SOCRATES (SOC\|RATES) | PHILOSOPHERS (shown, d41w) |
+| Criminals | BURGLAR (BURG\|LAR), HACKER, SCAMMER, MURDERER | CRIMINALS (shown, d41ad) |
+| In court | LAWYER, WITNESS (WIT\|NESS), JUDGE, CRIMINALS | IN COURT (shown, d41ag) |
+| Cobra | HOOD, FANG, SNAKE, VENOM | COBRA (shown, d41am) |
+| Venomous animals | TARANTULA, HORNET, SCORPION (SCOR\|PION), COBRA | VENOMOUS ANIMALS (shown, f41a) |
+
+Notes: this level is a four-deep hierarchy (STING/WASP/NEST/SWARM returned as HORNET, then HORNET and COBRA joined VENOMOUS ANIMALS; JUDGE and CRIMINALS joined IN COURT). The +5 MOVES ad bubble floated on the board from the fifth drag until about the islands merge; no drag started within a bubble width of it and no ad opened. Wrong drags (4 moves lost): GAVEL onto LAWYER twice and LAWYER onto the ROBE/GAVEL stack (LAWYER belongs to IN COURT, not to JUDGE; LAWS went in instead), and SNAKE onto the creature stack (SNAKE belongs to COBRA). Two drags made while the board shifted did nothing and cost nothing. Streak refunds kept the counter flat three times. Names read from the shots named in the table in the scratchpad.
+
+## Level 42
+
+Themes: 10 (bar `0/10`). Moves: 49 at start (s42a), 18 before the last merge (17 after it; 12 on the Mastery screen). Mastery: 575 (single drag with WAIT=1 for the name, then four back-to-back shots; f42c). Reward: 30 coins (counter 2,490 on the Mastery and Well Done screens, 2,520 on the Level 43 pre-level dialog). Next button is a plain green "LEVEL 43" (X2 and Home not tapped). Split words: 7 joins. No booster used. Plain level, no chain, no +5 ad bubble seen. Autumn leaf decoration on the Mastery and Well Done screens.
+
+Chunk pairs: MAM\|MOTH (no join needed: MAMMOTH arrived whole later), QUAR\|TER, ARA\|BICA, CHI\|NA, JA\|PAN, KAN\|GAROO, DINO\|SAURS. Each join cost 1 move. Many bubbles appeared only after a sub-theme cleared (the second half of each chunk, ROBUSTA, LIBERICA, EXCELSA, NICKEL, DOLLAR, SABERTOOTH TIGER, MAMMOTH and others).
+
+| Theme | Words | Name |
+|---|---|---|
+| Swimming | SIDESTROKE, BUTTERFLY, BACKSTROKE, FREESTYLE | SWIMMING (shown, d42c) |
+| Olympic sports | GYMNASTICS, SKIING, FIGURE SKATING, SWIMMING | OLYMPIC SPORTS (shown, d42f) |
+| Asia | INDIA, JAPAN (JA\|PAN), CHINA (CHI\|NA), THAILAND | ASIA (shown, d42o) |
+| Coffee bean | LIBERICA, ROBUSTA, ARABICA (ARA\|BICA), EXCELSA | COFFEE BEAN (shown, d42t) |
+| Coffee (parent) | BARISTA, COFFEE MACHINE, BREW, COFFEE BEAN | (name missed: the final merge was a single drag but the next shot showed the bar already at 5/10 with no name bubble; guessed COFFEE) |
+| Money | DIME, QUARTER (QUAR\|TER), NICKEL, DOLLAR | MONEY (shown, d42y) |
+| Australia | KOALA, KANGAROO (KAN\|GAROO), EMU, PLATYPUS | AUSTRALIA (shown, d42ac) |
+| Continents | ASIA, AUSTRALIA, NORTH AMERICA, AFRICA | CONTINENTS (shown, d42ag) |
+| Lost species | DODO, DINOSAURS (DINO\|SAURS), SABERTOOTH TIGER, MAMMOTH | LOST SPECIES (shown, d42aj) |
+| Economy | MONEY, INFLATION, JOBS, TRADE | ECONOMY (shown, f42a) |
+
+Notes: three of the ten themes are second-level (CONTINENTS, COFFEE and ECONOMY take a cleared theme as a word) and one (OLYMPIC SPORTS) takes SWIMMING; the bar counts each cleared theme once, so it read 9/10 before the last merge. One wrong drag (ARABICA, still two chunks at the time, was dragged at the coffee stack: it missed and cost 1 move). Two drags made while the board was shifting did nothing and cost nothing. Streak refunds kept the counter flat three times. Names read from the shots named in the table in the scratchpad.
+
+## Level 43
+
+Themes: 10 (bar `0/10`). Moves: 48 at start (s43a), 2 on screen at the last merge (a very close level: 0 moves showed on the Mastery screen). Mastery: 590 (single drag with WAIT=1 for the name, then four back-to-back shots; f43d). Reward: 30 coins (counter 2,520 on the Mastery and Well Done screens, 2,550 on the Level 44 pre-level dialog). Next button is a red HARD "LEVEL 44" with the octopus (X2 and Home not tapped). Split words: 8 joins. No booster used. Plain level with a chain lock. Autumn leaf decoration on the Mastery and Well Done screens.
+
+Chain: a numbered padlock "3" across the middle of the board (second chain level seen, after 37). The number counted down 3 -> 2 -> 1 as themes cleared (BEANS cleared it to 2, then the CIRCUIT/SENSOR pair stack never needed it; the lock opened after the third theme, SATELLITE). Merging across the chain was blocked, the same as on level 37: the SATELLITE words (ANTENNA, SIGNAL, TRANSMISSION, SMARTPHONE, AUTOMATION) sat under the chain from the start, and several words (ORBIT halves, MODERN, VINTAGE, MINIMALIST and the soup and spice words) only dropped in above after the lock opened.
+
+Chunk pairs: CIR\|CUIT, SEN\|SOR, MONI\|TOR, CHICK\|PEAS, SIG\|NAL, OR\|BIT, PAP\|RIKA, RUS\|TIC. Each join cost 1 move.
+
+| Theme | Words | Name |
+|---|---|---|
+| Computer | KEYBOARD, MONITOR (MONI\|TOR), MOUSE, PROCESSOR | COMPUTER (shown, d43d) |
+| Beans | KIDNEY, PINTO, CANNELLINI, CHICKPEAS (CHICK\|PEAS) | BEANS (shown, d43j) |
+| Satellite | ANTENNA, SIGNAL (SIG\|NAL), TRANSMISSION, ORBIT (OR\|BIT) | SATELLITE (shown, d43ae) |
+| Soup | BROTH, MISO, CHOWDER, CHICKEN NOODLE | SOUP (shown, d43ai) |
+| Pasta | FETTUCCINE, PENNE, MACARONI, SPAGHETTI | PASTA (shown, d43ak) |
+| Spices | CUMIN, CINNAMON, GINGER, PAPRIKA (PAP\|RIKA) | SPICES (shown, d43am) |
+| Home design | MODERN, MINIMALIST, VINTAGE, RUSTIC (RUS\|TIC) | HOME DESIGN (shown, d43aq) |
+| Canned food | TUNA, SWEET CORN, SOUP, BEANS | CANNED FOOD (shown, d43at) |
+| Robot | CIRCUIT (CIR\|CUIT), SENSOR (SEN\|SOR), AUTOMATION, ANDROID | ROBOT (shown, d43ax) |
+| Technology | COMPUTER, SMARTPHONE, SATELLITE, ROBOT | TECHNOLOGY (shown, f43a) |
+
+Notes: the +5 MOVES ad bubble floated on the board from about 35 moves left and stayed until about 3 moves left. No drag started within about a bubble width of it (PAPRIKA and VINTAGE were dragged only after other merges had moved them clear, or from their far edge) and no ad opened. SPICES, SOUP and PASTA were nested one level up (HOME DESIGN, CANNED FOOD and TECHNOLOGY took cleared themes as words). Wrong drags (about 8 moves lost): CHICK onto PEAS once missed, COMPUTER onto the CIRCUIT/SENSOR stack twice (COMPUTER belongs to TECHNOLOGY, not ROBOT), SMARTPHONE and AUTOMATION onto the ANTENNA stack, MODEM-style drags of MODERN onto ANDROID and CIRCUIT, TUNA onto the BROTH stack. Streak refunds returned a move three times. Names read from the shots named in the table in the scratchpad.
+
+## Level 44 (HARD)
+
+Themes: 8 (bar `0/8`). Moves: 41 at start (s44a), 14 before the last merge (13 after it; 12 on the first Mastery frame, 6 once it finished counting). Mastery: 605 (the counter ran 592 -> 596 -> 605 over frames f44c to f44e, so the last frame is taken as final). Reward: 60 coins (HARD; counter 2,550 on the Mastery and Well Done screens, 2,610 on the Level 45 pre-level dialog). Next button is a purple "EXPERT LEVEL 45" with a pink octopus (X2 and Home not tapped). Split words: 9 joins. No booster used. HARD level: red "LVL 44" tab with octopus, "HARD LEVEL PLAY" button on the pre-level dialog. No chain and no +5 ad bubble seen. Autumn leaf decoration on the Mastery and Well Done screens.
+
+Chunk pairs: SCIS\|SORS, LET\|TER, ENVE\|LOPE, CRE\|DIT, CUR\|RENCY, AR\|TICLE, ES\|SAY, DEPO\|SIT, PASS\|WORD (a plain pair of bubbles), WALL\|FIRE (a pair). Each join cost 1 move. Hierarchical: the theme bubbles returned as words (HAIRDRESSER, MAIL, MONEY, PUBLICATIONS, FOUR DIMENSION, SECURITY, VAULT).
+
+| Theme | Words | Name |
+|---|---|---|
+| Hairdresser | SHAMPOO, BLOWDRYER, SCISSORS (SCIS\|SORS), COMB | HAIRDRESSER (shown, d44d) |
+| Mail | LETTER (LET\|TER), STAMP, MAILMAN, ENVELOPE (ENVE\|LOPE) | MAIL (shown, d44i) |
+| Money | COINS, CREDIT (CRE\|DIT), CURRENCY (CUR\|RENCY), CASH | MONEY (shown, d44o) |
+| Publications | REVIEW, ARTICLE (AR\|TICLE), EDITORIAL, ESSAY (ES\|SAY) | PUBLICATIONS (shown, d44t) |
+| Four dimension | WIDTH, HEIGHT, LENGTH, TIME | FOUR DIMENSION (shown, d44aa) |
+| Security | FIREWALL, PASSWORD, ENCRYPTION, VIRUS | SECURITY (shown, d44ad) |
+| Vault | ALARM, LOCK, SAFE, SECURITY | VAULT (shown, d44ag) |
+| Bank | MONEY, LOAN, DEPOSIT (DEPO\|SIT), VAULT | BANK (shown, f44a) |
+
+Notes: the board started as a single cluster of 29 bubbles; ENCRYPTION, SAFE, LOCK, ALARM and the money words dropped in only after sub-themes cleared. A drag onto a chunk partner that was still a pair (CHUNK drags before the first half had joined) cost 1 move once; two drags during board shifts did nothing. Streak refunds returned 1 move twice. The TIME bubble belongs to FOUR DIMENSION, with WIDTH, HEIGHT and LENGTH. No wrong merges on themes.
+
+## Level 45 (EXPERT)
+
+Themes: 12 (bar `0/12`). Moves: 49 at start, 10 before the last merge (9 after it and on the first Mastery frame). Mastery: 610 (e45z3, a clean frame). Reward: 90 coins (EXPERT; counter 2,610 on the Mastery and Well Done screens). Next button: green "LEVEL 46" (2,700 coins on the Level 46 pre-level dialog; X2 and Home not tapped). Split words: 4 joins (MI\|RAGE, CAC\|TUS, SCULP\|TURE, POT\|TERY). No booster used. EXPERT level: purple "LVL 45" tab with octopus. Autumn leaf decoration on the Mastery and Well Done screens. The rewarded "+5 MOVES" ad bubble was on the board from about move 25 and was never tapped, no drag started near it, no ad opened. Cryptic bubbles (letters shown as `?`) appeared again: TACO, KEBAB, CLIFF (C?I??, C?IFF, then CLIFF).
+
+Chunk pairs: MI\|RAGE, CAC\|TUS, SCULP\|TURE, POT\|TERY. Hierarchical: MOUNTAIN, DINOSAURS and BABYLON returned as word bubbles; CARPENTRY, ATHENS, BABYLON joined parent themes (CRAFTS, ANCIENT CITIES).
+
+| Theme | Words | Name |
+|---|---|---|
+| Islands | CRETE, BALI, ICELAND, SICILY | ISLANDS (shown) |
+| Deep sea | ABYSS, HYDROTHERMAL VENT, ANGLERFISH, GIANT SQUID | DEEP SEA (shown) |
+| Street food | BURGER, TACO, KEBAB, FRIES | STREET FOOD (shown) |
+| Desert | OASIS, DUNES, MIRAGE (MI\|RAGE), CACTUS (CAC\|TUS) | DESERT (shown) |
+| Athens | AGORA, PARTHENON, ACROPOLIS, SOCRATES | ATHENS (shown; the orange bubble read "ATHENE" and the word that came back read ATHENS) |
+| Carpentry | CHISEL, HAMMER, SAW, PLANE | CARPENTRY (shown, e45b) |
+| Mountain | SUMMIT, TRAIL, CLIFF, GLACIER | MOUNTAIN (shown, e45g) |
+| Landscapes | DESERT, JUNGLE, CANYON, MOUNTAIN | LANDSCAPES (shown, e45i) |
+| Dinosaurs | STEGOSAURUS, T-REX, TRICERATOPS, VELOCIRAPTOR | DINOSAURS (shown, e45k) |
+| Babylon | ISHTAR GATE, HANGING GARDENS, ESAGILA TEMPLE, MESOPOTAMIA | BABYLON (shown, e45q) |
+| Ancient cities | POMPEII, ATHENS, TROY, BABYLON | ANCIENT CITIES (shown, e45s) |
+| Crafts | CARPENTRY, POTTERY (POT\|TERY), SCULPTURE (SCULP\|TURE), WEAVING | CRAFTS (shown, e45y) |
+
+Notes: GLACIER is a mountain word, not a biome: dragging it onto DESERT/JUNGLE/CANYON cost 1 move each time, three times. The mountain words (SUMMIT, TRAIL, CLIFF) only appeared after CARPENTRY cleared. The biome stack waited for MOUNTAIN. MESOPOTAMIA belongs to BABYLON, not to the cities. The bar counted LANDSCAPES, DINOSAURS and BABYLON as separate cleared themes and ANCIENT CITIES as the 11th. Two drags made while the board was shifting did nothing and cost no move. Streak refunds returned 1 move twice. The chunk joins were cheap (streak). Total about 3 wrong drags.
+
+## Level 46
+
+Themes: 7 (bar `0/7`). Moves: 33 at start, 17 before the last merge (16 after it, 7 on the Mastery frame once it finished counting). Mastery: 620 (f46ae). Reward: 30 coins (counter 2,700 on the Mastery and Well Done screens and on the Level 46 pre-level dialog). Next button: green "LEVEL 47" (X2 and Home not tapped). Split words: none. No booster used. Plain level (pre-level dialog showed boosters "+" and "+3 MOVES", both left unselected). No chain, no +5 ad bubble, no cryptic bubbles.
+
+Chunk pairs: none. Hierarchical, three levels deep: 21 word bubbles at the start; clearing SEASONS added PULSE, EARS, NOISE, SOUND; clearing SCIENTISTS added MUSIC. HEARING, SIGHT and then SENSES came from sub-themes.
+
+| Theme | Words | Name |
+|---|---|---|
+| Seasons | SPRING, WINTER, SUMMER, FALL | SEASONS (shown, f46c) |
+| Scientists | GALILEO, CURIE, EINSTEIN, HAWKING | SCIENTISTS (shown, f46g) |
+| Slavic countries | SLOVAKIA, BELARUS, SLOVENIA, POLAND | SLAVIC COUNTRIES (shown, f46k) |
+| Heart | PULSE, CHAMBER, BEAT, ARTERY | HEART (shown, f46o) |
+| Hearing | NOISE, MUSIC, SOUND, EARS | HEARING (shown, f46t) |
+| Sight | LIGHT, VISION, EYES, FOCUS | SIGHT (shown, f46x) |
+| Senses | TOUCH, TASTE, HEARING, SIGHT | SENSES (shown, f46ab) |
+
+Notes: no wrong drags, no missed names. The word bubbles that returned after a sub-theme cleared were HEARING and SIGHT (joined SENSES); HEART, SEASONS, SCIENTISTS and SLAVIC COUNTRIES just disappeared with the bar counting them (no parent word). Every merge cost 1 move, five-merge streak refunds returned 1 move at times (moves went 33 -> 17 over 16 merges). Autumn leaves on the Mastery and Well Done screens. Level 46 took 17 merges for 7 themes.
+
+## Level 47
+
+Themes: 10 (bar `0/10`). Moves: 49 at start, 13 before the last merge (12 after it, 9 on the Mastery frame once it finished counting). Mastery: 630 (g47az2). Reward: 30 coins (counter 2,730 on the Mastery and Well Done screens). Next button: green "LEVEL 48" (X2 and Home not tapped). Split words: 7 joins (PREDA\|TOR, PAN\|THER, KING\|DOM, CUR\|RENT, RA\|PIDS, HEL\|MET, CHAM\|BER). No booster used. Plain level, no chain, no cryptic bubbles. The rewarded "+5 MOVES" ad bubble floated on the board from about move 33 until the 9th theme cleared; no drag started near it and no ad opened.
+
+Chunk pairs: PREDA\|TOR, PAN\|THER, KING\|DOM, CUR\|RENT, RA\|PIDS, HEL\|MET, CHAM\|BER. Each join cost 1 move. Hierarchical: SHARK, MEDIEVAL words and the like returned as word bubbles. After PREDATORY ANIMALS cleared, new bubbles appeared (BERET, CAP, ASH, PIDS...), after BAKED GOODS the BERET group was unlocked, and so on.
+
+| Theme | Words | Name |
+|---|---|---|
+| Knight | SWORD, SHIELD, LANCE, ARMOR | KNIGHT (shown, g47c; returned as the word KNIGHT) |
+| Shark | PREDATOR (PREDA\|TOR), FIN, TEETH, OCEAN | SHARK (shown, g47o; returned as the word SHARK) |
+| Predatory animals | PANTHER (PAN\|THER), WOLF, POLAR BEAR, SHARK | PREDATORY ANIMALS (shown, g47v) |
+| Medieval | KNIGHT, LORD, CASTLE, KINGDOM (KING\|DOM) | MEDIEVAL (shown, g47ab) |
+| Medicine (name guessed) | LOZENGES, CAPSULES, TABLETS, VITAMINS | MEDICINE (guessed; the name was missed, the cleared bubble showed only the three words) |
+| Baked goods | PIE, CAKE, COOKIE, BREAD | BAKED GOODS (shown, g47ai) |
+| Headwear | BERET, HELMET (HEL\|MET), CROWN, CAP | HEADWEAR (shown, g47aq) |
+| River | RAPIDS (RA\|PIDS), BRIDGE, CURRENT (CUR\|RENT), BANK | RIVER (shown, g47ar) |
+| Magma | LAVA, HEAT, FLOW, CHAMBER (CHAM\|BER) | MAGMA (shown, g47au; returned as the word MAGMA) |
+| Volcanic eruption | CRATER, MAGMA, ASH, TREMOR | VOLCANIC ERUPTION (shown, g47ay) |
+
+Notes: wrong drags cost about 6 moves: TEETH onto the WOLF/POLAR BEAR stack (TEETH belongs to SHARK), PREDATOR onto the same stack, CURRENT and TREMOR and ASH and CRATER onto the LAVA/HEAT/FLOW stack (they belong to RIVER and VOLCANIC ERUPTION). The LAVA, HEAT, FLOW stack stayed at 3 from move 42 until CHAMBER (a chunk pair joined late) arrived, so four words that look like volcano words were all rejected until MAGMA was named. The MEDICINE name was missed: the 4th merge was dragged without WAIT=1 correctly set (the orange bubble showed LOZENGES, CAPSULES, TABLETS with VITAMINS dropping in). Five-merge streaks gave about 2 refund moves. Autumn leaves on Mastery and Well Done.
+
+## Level 48
+
+Themes: 11 (bar `0/11`). Moves: 48 at start, 5 before the last merge (4 after it and on the Mastery screen). Mastery: MISSED (the Mastery screen showed "Tap to skip" and the move counter but no number in four back-to-back shots, so the number was not captured). Reward: 30 coins (counter 2,760 on the Mastery and Well Done screens, 2,790 on the Level 49 pre-level dialog). Next button: red "HARD LEVEL 49" with an octopus (X2 and Home not tapped). Split words: 5 joins (SEA\|WEED, TOP\|PING, COT\|TON, GE\|ISHA, BULL\|DOZER). No booster used. Plain level. No chain, no cryptic bubbles. The rewarded "+5 MOVES" ad bubble floated on the board from about move 41 to the end; no drag started on it, no ad opened. Autumn leaves on Mastery and Well Done.
+
+Chunk pairs: SEA\|WEED, TOP\|PING, COT\|TON, GE\|ISHA, BULL\|DOZER. Each join cost 1 move. Hierarchical: YARN, CAR, MACHINES, BURGER, DISH and MATERIALS returned as word bubbles; the first five joined other themes, MATERIALS joined CONSTRUCTION.
+
+| Theme | Words | Name |
+|---|---|---|
+| Sushi | RICE, WASABI, FISH, SEAWEED (SEA\|WEED) | SUSHI (shown, h48e) |
+| Pizza | CRUST, CHEESE, SLICE, TOPPING (TOP\|PING) | PIZZA (shown, h48p) |
+| Japan | KATANA, KIMONO, GEISHA (GE\|ISHA), SAMURAI | JAPAN (shown, h48w) |
+| Yarn | ACRYLIC, COTTON (COT\|TON), THREAD, WOOL | YARN (shown, h48ah) |
+| Knitting | NEEDLES, PATTERN, STITCH, YARN | KNITTING (shown, h48aj) |
+| Car | SEDAN, COUPE, SUV, PICKUP | CAR (shown, h48am) |
+| Machines | BULLDOZER (BULL\|DOZER), CRANE, LOADER, EXCAVATOR | MACHINES (shown, h48ar) |
+| Burger | PATTY, LETTUCE, BUN, GRILL | BURGER (shown, h48ax) |
+| Dish | SUSHI, PIZZA, BURGER, SALAD | DISH (shown, h48bb) |
+| Materials | WOOD, BRICK, CEMENT, STONE | MATERIALS (shown, h48bf) |
+| Construction (name guessed) | SITE, TOOLS, MACHINES, MATERIALS | CONSTRUCTION (guessed; the orange name bubble was not caught, h48bj shows only its pop) |
+
+Notes: about 13 wrong drags (the most of any level so far): THREAD, TOOLS and WOOL onto the NEEDLES/PATTERN/STITCH stack (all three belong to YARN, whose fourth word ACRYLIC|COTTON only existed after COT|TON joined); DOZER onto the cars stack and onto CEMENT, BULLDOZER onto CEMENT and the car stack, SITE onto the CRANE stack and onto CEMENT, WOOD onto STONE. A drag from EXCAVATOR while another bubble overlapped it did nothing and cost no move. Moves fell from 48 to 4. Close call: 4 moves left, no out-of-moves screen. The CAR stack (SEDAN, COUPE, SUV) waited for PICKUP from move 31 to move 18.
+
+## Level 49 (HARD)
+
+Themes: 10 (bar `0/10`). Moves: 46 at start, 14 before the last merge, 13 after it; the Mastery screen showed 4 moves. Mastery: 652 (seen once at 4 moves left; at level 50 the number was still counting up in that frame, so 652 may be a few short of the final value). Reward: 60 coins (HARD; counter 2,790 on the Mastery and Well Done screens). Next button: plain green "LEVEL 50" (X2 and Home not tapped). Split words: 9. Red LVL 49 tab with octopus. No booster used. No chain, no cryptic bubbles. Hierarchical: ELEMENTS OF NATURE (with FIRE), SCHOOL SUBJECTS (with ASTRONOMY, ART) and NORTH AFRICAN COUNTRIES (with EGYPT) took cleared sub-themes as words.
+
+Chunk pairs: MOR\|OCCO, PYRA\|MIDS, PHA\|RAOH, CLIN\|TON, KEN\|NEDY, CAN\|VAS, BIO\|LOGY, PLA\|NET, POR\|TRAIT.
+
+| Theme | Words | Name |
+|---|---|---|
+| Fire | HEAT, BURN, SMOKE, FLAME | FIRE (shown) |
+| Citrus fruits | LIME, POMELO, LEMON, ORANGE | CITRUS FRUITS (shown) |
+| Elements of nature | EARTH, AIR, WATER, FIRE | ELEMENTS OF NATURE (shown) |
+| US presidents | REAGAN, LINCOLN, CLINTON (CLIN\|TON), KENNEDY (KEN\|NEDY) | US PRESIDENTS (guessed; the orange bubble popped before the shot) |
+| North Pole | IGLOO, ICE, POLAR BEAR, AURORA | NORTH POLE (shown) |
+| Astronomy | ORBIT, MOON, STAR, PLANET (PLA\|NET) | ASTRONOMY (shown) |
+| Art | EASEL, BRUSH, CANVAS (CAN\|VAS), PORTRAIT (POR\|TRAIT) | ART (shown) |
+| School subjects | BIOLOGY (BIO\|LOGY), MATHS, ASTRONOMY, ART | SCHOOL SUBJECTS (shown) |
+| Egypt | SPHINX, NILE, PHARAOH (PHA\|RAOH), PYRAMIDS (PYRA\|MIDS) | EGYPT (shown) |
+| North African countries | ALGERIA, TUNISIA, MOROCCO (MOR\|OCCO), EGYPT | NORTH AFRICAN COUNTRIES (shown, final merge) |
+
+Notes: the "+5 MOVES" ad bubble was not seen on this level; no ad opened. Wrong drags were not counted exactly (46 moves to 14 over 10 themes). The final-merge routine (single drag with WAIT=1, then back-to-back shots) caught both the name and Mastery this time. The move counter on the Mastery screen read 4, lower than the 13 left on the board; it looks like leftover moves being counted down, as at level 48 (4).
+
+## Level 50
+
+Themes: 10 (bar `0/10`). Moves: 43 at start, 10 before the last merge and on the Mastery frame at first (the counter then dropped to 4 while the Mastery number counted up from 659 to 661). Mastery: 661 (seen at 659 and 661 in two frames of the count-up; 661 was the last value before Well Done). Reward: 30 coins (counter 2,850 on the Mastery and Well Done screens). Next button: plain green "LEVEL 51" (X2 and Home not tapped). Split words: 9. Plain level; green leaf decoration on the board edges; no chain, no cryptic bubbles, no booster used. The "+5 MOVES" ad bubble was not seen. Autumn leaves on Mastery and Well Done.
+
+Chunk pairs: BAL\|TIC, CAC\|TUS, DECA\|GON, PAS\|TE, CO\|PY, LU\|CAS, ROB\|ERT, HEDGE\|HOG, CHAR\|COAL. Joins cost 1 move each except CAC\|TUS, which was free. Only about 28 bubbles were on the board at first; new word bubbles appeared after each cleared theme (SEA released DAVID, VOWS, ROB, RIBEYE and MOB; POLYGONS released RING, CHAR, JASON, SILVER and RABBLE; EDITING released ASH, WINK, TENDERLOIN and LU; and so on), so only part of each theme was visible at first.
+
+| Theme | Words | Name |
+|---|---|---|
+| Sea | BLACK, RED, AEGEAN, BALTIC (BAL\|TIC) | SEA (shown, a50d) |
+| Polygons | PENTAGON, HEPTAGON, HEXAGON, DECAGON (DECA\|GON) | POLYGONS (shown, a50i) |
+| Editing | EDIT, DELETE, PASTE (PAS\|TE), COPY (CO\|PY) | EDITING (shown, a50n) |
+| Weddings | GROOM, RING, VOWS, BRIDE | WEDDINGS (shown, a50r) |
+| Crowd | MOB, RABBLE, HORDE, THRONG | CROWD (shown, a50v) |
+| Beef cut | RIBEYE, SIRLOIN, BRISKET, TENDERLOIN | BEEF CUT (shown, a50zb) |
+| Eye actions | WINK, BLINK, SQUINT, ROLL | EYE ACTIONS (shown, b50d) |
+| Names | JASON, ROBERT (ROB\|ERT), DAVID, LUCAS (LU\|CAS) | NAMES (shown, b50j) |
+| Spiky things | CACTUS (CAC\|TUS), PORCUPINE, HEDGEHOG (HEDGE\|HOG), DURIAN | SPIKY THINGS (shown, b50o) |
+| Grey shades | PEWTER, SILVER, ASH, CHARCOAL (CHAR\|COAL) | GREY SHADES (shown, f50a, final merge) |
+
+Notes: no wrong drags. Two drags of TENDERLOIN onto the RIBEYE/SIRLOIN stack and one HOG onto HEDGE did nothing and cost no move (the bubble was probably still moving); a retry from another bubble worked. The five-merge refund came once (22 moves stayed 22 after WINK onto BLINK). Moves went 43 to 10 with 10 themes, the best margin since level 46. PEWTER, ASH and SILVER sat on the board from the start and joined CHARCOAL only after the CHAR\|COAL join.
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
