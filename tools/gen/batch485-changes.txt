@@ -1,0 +1,102 @@
+Library batch v485 (for Simon's review): Nature & Earth, seashore branch
+1. rock pool life
+  linked: octopus 480 [animal] in rock_pool (typicality 3): well known here; it was not linked
+  linked: clam 478 in rock_pool (typicality 3): well known here; it was not linked
+  linked: eel 495 in rock_pool (typicality 4): well known here; it was not linked
+2. beachcombing finds
+  linked: shark tooth 21698 in beachcombing_finds (typicality 3): well known here; it was not linked
+  linked: coin 21717 [money] in beachcombing_finds (typicality 3): well known here; it was not linked
+  linked: coral 1289 [marine animal] in beachcombing_finds (typicality 3): well known here; it was not linked
+3. coastal features
+  linked: island 1910 [landmass] in coastal_features (typicality 2): well known here; it was not linked
+  linked: harbor 2804 [port] in coastal_features (typicality 3): well known here; it was not linked
+4. tides and currents
+  out of tides_and_currents: tidal wave 31125: a tsunami, not a tide or a current (stays in natural_disasters)
+5. on a desert island (new)
+  new theme: on_a_desert_island "on a desert island" under seashore (after beachcombing_finds), pop 2, ident 2: an everyday story set with no list
+  linked: palm 1631 [tree] in on_a_desert_island (typicality 1): a well-known member of the new theme
+  linked: coconut 351 [fruit] in on_a_desert_island (typicality 1): a well-known member of the new theme
+  linked: sand 2063 [sediment] in on_a_desert_island (typicality 1): a well-known member of the new theme
+  linked: beach 1915 [sandy shore] in on_a_desert_island (typicality 1): a well-known member of the new theme
+  linked: castaway 31164 in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: raft 2795 in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: SOS 31163 [signal] in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: message in a bottle 31059 in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: shipwreck 31157 in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: campfire 3024 [outdoor fire] in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: crab 470 [animal] in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: fish 59990 [animal] in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: shark 1215 [fish] in on_a_desert_island (typicality 2): a well-known member of the new theme
+  linked: treasure 6765 [loot] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: hut 2483 [building] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: hammock 3044 [hanging bed] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: parrot 1065 in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: monkey 982 [animal] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: spear 20783 in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: shells 31054 [seashells] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: driftwood 30059 [beach] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: sunburn 14337 in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: jungle 28105 [forest] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: banana 88 [fruit] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: footprint 29224 in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: pirate 6759 [sea robber] in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: lagoon 1947 in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: sea turtle 1293 in on_a_desert_island (typicality 3): a well-known member of the new theme
+  linked: cave 1913 [rock hollow] in on_a_desert_island (typicality 4): a well-known member of the new theme
+  linked: bamboo 1774 [plant] in on_a_desert_island (typicality 4): a well-known member of the new theme
+  linked: smoke signal 4628 in on_a_desert_island (typicality 4): a well-known member of the new theme
+  linked: fishing net 31060 in on_a_desert_island (typicality 4): a well-known member of the new theme
+  linked: distress flare 31161 in on_a_desert_island (typicality 4): a well-known member of the new theme
+  linked: Robinson Crusoe 13461 in on_a_desert_island (typicality 4): a well-known member of the new theme
+  linked: mango 95 [tropical fruit] in on_a_desert_island (typicality 4): a well-known member of the new theme
+  linked: reef 31077 [coral] in on_a_desert_island (typicality 4): a well-known member of the new theme
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  beachcombing_finds: "beachcombing finds" pop 2 ident 2: 37 words, easy/middle/hard 7/12/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "beachcombing finds" pop 2 ident 2: 40 words, easy/middle/hard 7/15/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  coastal_features: "coastal features" pop 2 ident 2: 43 words, easy/middle/hard 8/16/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "coastal features" pop 2 ident 2: 45 words, easy/middle/hard 9/17/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  on_a_desert_island: new -> "on a desert island" pop 2 ident 2: 36 words, easy/middle/hard 13/15/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  rock_pool: "rock pool life" pop 2 ident 2: 40 words, easy/middle/hard 5/9/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "rock pool life" pop 2 ident 2: 43 words, easy/middle/hard 5/11/27, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  tides_and_currents: "tides and currents" pop 4 ident 3: 43 words, easy/middle/hard 6/16/21, theme difficulty 3.5, 4th-easiest band 1, gap -2.5 -> "tides and currents" pop 4 ident 3: 42 words, easy/middle/hard 6/15/21, theme difficulty 3.5, 4th-easiest band 1, gap -2.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 59; entries changed 45; status set to rev 13; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3243 -> 3244; gone none; new on_a_desert_island; theme indexes shift: from index 598 ("on_a_desert_island", was "coastal_features") to the last index 3243
+Theme rows whose fields changed (parent compared by id): 4: rock_pool (index 596 -> 596: counts [2,3,9,12,14] -> [2,3,11,13,14]); beachcombing_finds (index 597 -> 597: counts [2,5,12,13,5] -> [2,5,15,13,5]); coastal_features (index 598 -> 599: counts [2,6,16,12,9] -> [2,7,17,12,9]); tides_and_currents (index 600 -> 601: counts [4,2,16,11,10] -> [4,2,15,11,10])
+Entry rows 61436 -> 61436; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100596 -> 100639; rows whose link count changed: 45
+Link-index shifts: from row 88 (pear 89) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 1, new 44, rating changed 0
+  gone (other than the deleted themes): tides_and_currents: "tidal wave" (31125)
+  new: on_a_desert_island: "banana" (88), on_a_desert_island: "mango" (95), on_a_desert_island: "coconut" (351), on_a_desert_island: "crab" (470), rock_pool: "clam" (478), rock_pool: "octopus" (480), rock_pool: "eel" (495), on_a_desert_island: "monkey" (982), on_a_desert_island: "parrot" (1065), on_a_desert_island: "shark" (1215), beachcombing_finds: "coral" (1289), on_a_desert_island: "sea turtle" (1293), on_a_desert_island: "palm" (1631), on_a_desert_island: "bamboo" (1774), coastal_features: "island" (1910), on_a_desert_island: "cave" (1913), on_a_desert_island: "beach" (1915), on_a_desert_island: "lagoon" (1947), on_a_desert_island: "sand" (2063), on_a_desert_island: "hut" (2483), on_a_desert_island: "raft" (2795), coastal_features: "harbor" (2804), on_a_desert_island: "campfire" (3024), on_a_desert_island: "hammock" (3044), on_a_desert_island: "smoke signal" (4628), on_a_desert_island: "pirate" (6759), on_a_desert_island: "treasure" (6765), on_a_desert_island: "Robinson Crusoe" (13461), on_a_desert_island: "sunburn" (14337), on_a_desert_island: "spear" (20783), beachcombing_finds: "shark tooth" (21698), beachcombing_finds: "coin" (21717), on_a_desert_island: "jungle" (28105), on_a_desert_island: "footprint" (29224), on_a_desert_island: "driftwood" (30059), on_a_desert_island: "shells" (31054), on_a_desert_island: "message in a bottle" (31059), on_a_desert_island: "fishing net" (31060), on_a_desert_island: "reef" (31077), on_a_desert_island: "shipwreck" (31157), on_a_desert_island: "distress flare" (31161), on_a_desert_island: "SOS" (31163), on_a_desert_island: "castaway" (31164), on_a_desert_island: "fish" (59990)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 8 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 44 new links existed earlier and was removed (all 227 library versions and 195 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - on a desert island: hermit crab and treasure chest (overlap with crab and treasure)
+  - coastal features: coral reef and sandbank (reef and sandbar are there)
+
+For Simon:
+  1. tidal wave leaves tides and currents: a tsunami, not a tide or a current. It stays in natural disasters.
+  2. coastal features: bay [inlet] is easier now (familiarity 4 -> 2 in v484).
+
+=== Notice to _WS_ for v485 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v485 (Nature & Earth, seashore branch): 1 new theme (on a desert island), 44 new links, 1 links out, 0 new entries.
+Theme rows 3243 -> 3244; gone none; new on_a_desert_island; theme indexes shift: from index 598 ("on_a_desert_island", was "coastal_features") to the last index 3243
+Entry rows 61436 -> 61436.
+Link-index shifts: from row 88 (pear 89) on, link positions move
+Line breaks: none.
+New characters: none.
