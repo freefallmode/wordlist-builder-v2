@@ -76,4 +76,5 @@ export const CASE_OK = new Set([
   '19663|red_wines', // Bordeaux the wine in red wines: capital kept (Simon's precedent; M-W, Random House, Collins, Oxford Learner's all capitalise it), beside bordeaux the colour (v385)
   '19663|wines', // Bordeaux the wine in wines: capital kept as in red wines (v388 lowercased rioja, beaujolais, chianti, marsala there), beside bordeaux the colour
   '19674|wines', // Madeira the wine in wines: capital kept (v385: M-W, Collins, Oxford Learner's capitalise it), beside madeira the cake (v388 made wines mostly common)
+  '21|things_with_layers', // Earth the planet (crust, mantle, core) in things with layers, beside earth [soil] (Simon, 2026-11-25, v475)
 ]);

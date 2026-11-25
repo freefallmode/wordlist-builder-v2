@@ -1,5 +1,5 @@
-// Library batch v475 (for Simon's review): Qualities, tastes branch (24 themes read word by word, 2026-11-25).
-// Words that do not fit go and well-known words are added, about 8 a theme at most.
+// Library batch v475: the items v474 held for Simon (he approved them 2026-11-25): mammoth [huge] (nice dropped by Simon: it would raise contract-dup-root),
+// Earth in things_with_layers (case allow-list key 21|things_with_layers); and I36 ("fix all as u think best"): ways_to_move merges into motion_verbs.
 // Base: library v474. Everything works by entry id + text, never by position; every step is skipped when it is done already or its entry
 // is gone or changed (rerun: 0 changes). Every entry this batch changes gets status "rev".
 // Run: node tools/gen/batch475.mjs [--apply | --out <path>] [--lib <path>] [--changes <path>] [--review <path>]
@@ -297,56 +297,39 @@ const KEEP = new Map();   // orphans kept on purpose: id -> reason (the review l
 const keep = (ids, why) => { for (const id of ids) KEEP.set(id, why); };
 const ORPH0 = P.entries.filter(e => !e.aliasOf && e.enabled !== false && !linkIds(P, e).filter(t => ix.theme.has(t)).length).map(e => e.id);
 
-// ---------- this batch (v475) ----------
+
 // A new entry linked in tid. x: gloss, pos, show.
 const add = (tid, text, fam, typ, why, x = {}) => { const e = newEntry(text, x.gloss || '', { pos: x.pos || 'noun', type: 'common', fam }, why); linkE(e, tid, typ, why, x.show ? { show: x.show } : {}); return e; };
 const outL = (tid, list) => { for (const [id, text, why] of list) unlinkIf([tid], id, text, why); };
 const grp = (tid, ids, why) => { if (ids.every(id => ix.entry.get(id) && E(id).typ[tid] !== undefined)) addToGroup(tid, ids, why); };
 const rateL = (tid, list, why) => { for (const [id, text, typ] of list) { const e = live(id, text); if (e && e.typ[tid] !== undefined) rate(e, tid, typ, why); } };
-const addKin = (a, b, why) => { if (!a || !b || a.id === b.id || (a.kin || []).includes(b.id)) return; setKin(P, a, b, true); n++; reindex(P); A.push(`kin: ${lab(a)}${a.gloss ? ' [' + a.gloss + ']' : ''} <-> ${lab(b)}${b.gloss ? ' [' + b.gloss + ']' : ''}: ${why}`); };
-const N = {};
+const famL = (list, why) => { for (const [id, text, fam, w] of list) { const e = live(id, text); if (e) setE(e, 'fam', fam, w || why); } };
+const glossIf = (id, text, gloss, why) => { const e = live(id, text); if (e && !e.gloss) setE(e, 'gloss', gloss, why); };
+// Delete an entry left in no theme (a stub or a loose phrase); skipped when it is linked or has aliases.
+const delStub = (id, text, why) => { const e = ix.entry.get(id); if (!e || e.text !== text) return; if (linkIds(P, e).filter(t => ix.theme.has(t)).length) { A.push(`  (kept: ${lab(e)} is still in ${linkIds(P, e).join(', ')})`); return; } delE(id, text, why); };
 
-sec("1. baked treats");
-linkL("baked_treats", [[558, "muffin", 2], [18077, "cinnamon roll", 2], [18141, "gingerbread", 3], [576, "scone", 3], [18073, "éclair", 3], [18146, "biscotti", 4], [20274, "madeleine", 4], [18079, "cannoli", 4]], "well known here; it was not linked");
+// ---------- this batch (v475) ----------
+const linkL2 = (tid, list, why) => { for (const [id, text, typ, w] of list) { const e = live(id, text); if (e && !e.aliasOf) linkE(e, tid, typ, w || why); } };
 
-sec("2. sour foods");
-rateL("sour_foods", [[77, "grapefruit", 2], [354, "cranberry", 2]], 'well known: one of the first answers');
-linkL("sour_foods", [[98, "kiwi", 3], [107, "passion fruit", 3], [349, "raspberry", 3]], "well known here; it was not linked");
+sec('1. mammoth, held in v460-v473: the adjective is a new entry (only mammoth [animal] existed); it adds no contract-dup-root warning (mammoth [animal] is common too). nice is dropped (Simon, 2026-11-25): it would raise contract-dup-root beside Nice the city');
+{ const big = newEntry('mammoth', 'huge', { pos: 'adjective', type: 'common', fam: 2 }, 'the adjective (a mammoth task); the existing entry is the animal');
+  linkE(big, 'words_for_big', 2, 'a common word for big'); }
 
-sec("3. salty foods");
-outL("salty_foods", [[18034, "brine", "a verb here (salty water), not a food"]]);
+sec('2. Earth [planet] in things_with_layers (held in v473 for the case allow-list key; Simon approved the key 21|things_with_layers, 2026-11-25): the planet has crust, mantle and core');
+linkL2('things_with_layers', [[21, 'Earth', 2, 'crust, mantle and core: the school example of layers']]);
 
-sec("4. cured fish");
-linkL("cured_fish", [[481, "sardine", 2], [18861, "pickled herring", 3], [17860, "gravlax", 4]], "well known here; it was not linked");
+sec('3. I36: ways_to_move and motion_verbs are twins (22 of 27 words shared): ways_to_move merges into motion_verbs (LIBRARY-RULES 6). motion_verbs is kept: the larger theme (57 words), in the motion branch with its siblings, and the name says what all its members are (sashay, perambulate are not everyday ways to move the body). The links it lacks move with their typicality, the better typicality of shared words is kept, the groups move, then ways_to_move is deleted');
+if (ix.theme.has('ways_to_move')) {
+  const W = 'ways_to_move', M = 'motion_verbs';
+  for (const e of (ix.byTheme.get(W) || []).filter(e => !e.aliasOf && e.typ[W] !== undefined).sort((a, b) => a.id - b.id)) {
+    if (e.typ[M] === undefined) linkE(e, M, e.typ[W], 'moved from ways_to_move (merged)');
+    else if (e.typ[W] < e.typ[M]) rate(e, M, e.typ[W], 'the better typicality of the two twins is kept');
+  }
+  for (const g of T(W).groups || []) grp(M, g, 'moved from ways_to_move (merged): near words, one answer');
+  if (!T(M).note) setT(M, 'note', 'everyday ways to move: walk, run, hop, crawl, skip, jump, swim, climb, roll', 'the note of ways_to_move, which merges in');
+  dropTheme(W, 'the twin of motion_verbs (22 of its 27 words shared; I36): merged into motion_verbs');
+}
 
-sec("5. bar snacks");
-linkL("bar_snacks", [[807, "nachos", 2], [39177, "hot wings", 2], [19053, "onion rings", 2], [19050, "French fries", 2], [19062, "mozzarella sticks", 3], [19072, "slider", 3], [440, "edamame", 4], [18864, "pickled egg", 4]], "well known here; it was not linked");
-
-sec("6. bitter foods");
-outL("bitter_foods", [[67185, "bitter orange", "its tile reads only \"orange\", which makes no sense here"]]);
-linkL("bitter_foods", [[30307, "walnut", 3], [360, "olive", 3], [412, "eggplant", 3]], "well known here; it was not linked");
-
-sec("7. umami foods");
-outL("umami_foods", [[1291, "sea grass", "a plant on the sea floor, not a food (seaweed stays)"]]);
-linkL("umami_foods", [[465, "steak", 2], [670, "ramen", 2], [731, "gravy", 3]], "well known here; it was not linked");
-
-sec("8. Japanese ingredients");
-linkL("japanese_ingredients", [[1290, "seaweed", 2], [8941, "wakame", 4], [17619, "enoki", 4], [786, "mirin", 4]], "well known here; it was not linked");
-
-sec("9. ocean ingredients");
-linkL("ocean_ingredients", [[467, "tuna", 2], [481, "sardine", 2], [478, "clam", 2], [29435, "caviar", 3], [8941, "wakame", 4]], "well known here; it was not linked");
-
-sec("10. chewy foods");
-linkL("chewy_foods", [[480, "octopus", 4], [504, "tripe", 4], [17781, "biltong", 4]], "well known here; it was not linked");
-
-sec("11. creamy desserts");
-linkL("creamy_desserts", [[604, "ice cream", 1]], "well known here; it was not linked");
-
-sec("12. creamy sauces and dips");
-linkL("sauces_and_dips", [[526, "sour cream", 2], [769, "aioli", 3], [18813, "raita", 4], [53202, "remoulade", 4]], "well known here; it was not linked");
-
-sec("13. spicy dishes of Africa");
-outL("spicy_dishes_of_africa", [[19365, "mechoui", "roast lamb, not spicy"], [53446, "ful medames", "fava beans, not spicy"]]);
 // ---------- status ----------
 let revSet = 0, touched = 0;
 for (const e of P.entries) { const s = snap.get(e.id); if (s === JSON.stringify({ ...e, status: undefined }) && !confirm.has(e.id)) continue; touched++; if (e.status !== 'rev') { e.status = 'rev'; revSet++; n++; } }
@@ -404,7 +387,7 @@ function shownMap(x) {
 
 const spreads = [...touchedT].filter(t => prof0[t] || ix.theme.has(t)).sort().map(t => `  ${t}: ${prof0[t] || 'new'} -> ${profile(t)}`);
 const FS1 = firstSynLine();
-const summary = [`Library batch v475 (for Simon's review): Qualities, tastes branch`,
+const summary = [`Library batch v475 (the items held from v474, approved by Simon 2026-11-25, and I36, "fix all as u think best"): mammoth [huge] in words for big (nice dropped: it would raise contract-dup-root); Earth in things with layers; ways_to_move merged into motion_verbs.`,
   ...A.map(x => x.startsWith('#') ? x.slice(1) : x.startsWith('  ') ? x : '  ' + x),
   'Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:', ...spreads,
   `First synonym aliases harder than root familiarity + 1: ${FS0.bad.length} -> ${FS1.bad.length}${FS1.bad.length ? ': ' + FS1.bad.join(', ') : ''}`,

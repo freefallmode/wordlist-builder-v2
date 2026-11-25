@@ -246,6 +246,7 @@ This section is a dated log: each entry records what was decided or done at the 
 - A theme and its "X words" theme of the same topic are one theme (Simon, 2026-11-22; replaces v408's "parent topic / X words child: kept"). An "X words" theme of how people talk about X (pirate talk, wine tasting) stays and is renamed for that. LIBRARY-RULES.md section 6.
 - People's names: the full name is the root and the surname its first synonym alias at the same familiarity (Simon, 2026-11-23; replaces the v164 shorter-name sweep). Exceptions: one-name people and full names over 20 letters. LIBRARY-RULES.md section 5, Aliases.
 - Type `person` is for real people only (and given-name entries); fictional characters, figures of myth, legend and folklore, and personifications (Uncle Sam) are `proper` (Simon, 2026-11-24, v453). Reason: the game may detect a people theme from 70% person members and holds people themes to level 41; character themes must keep playing early.
+- `nameOkIn` is for compound themes only (dried apple in dried fruits): a theme of words for X (words for hot, words for dark) takes no member that holds its topic word, compounds included (red-hot, stone cold, pitch dark) (Simon, 2026-11-25, keeping Julia's v462-v463; extends v447, which took out the bare words hot, cold, dark).
 
 **Log**
 

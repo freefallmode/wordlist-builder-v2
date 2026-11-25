@@ -1,11 +1,15 @@
-How the branch was reviewed (Qualities, 2026-11-25): all 21 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
-  - None of the 236 new links existed earlier and was removed (all 215 library versions and 173 batch notices and reviews checked).
-  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
-
-Considered and left out:
-  - things underground: coffin, tomb, crypt and catacomb (left out of dark places in v462 too)
-
-For Simon:
-  1. bomb leaves things that tick (time bomb, the one that ticks, stays), which also settles the overlap note bomb / time bomb. It stays in military, modern weapons, power-ups and pickups and silent b words.
-  2. guillotine and scalpel leave things that cut. Both stay in sharp things (v469) and in their other themes.
-  3. stalagmite grows from drips on the floor and cooling tower is a tower at a power station: both leave things that drip. centipede bites, so it leaves things that sting.
+From the review (tools/gen/review-julia-v460-v473.md), not done or done differently:
+- Held for Simon (B9): nice (words_for_good) and mammoth (words_for_big) would raise the contract-dup-root baseline; Earth in things_with_layers needs a case allow-list key.
+- A16 fragile things: glass [material] in at typicality 1; glasses goes out with it (one word family, family-pair warning otherwise; wine glass stays).
+- A17 gold things: with Midas, Fort Knox and El Dorado out, capitals fall to a fifth of the theme and the case lint flags Oscar [award] (case-sense-proper, baseline 0). Grammy, Golden Globe and Ballon d'Or (gold trophies) are linked so the theme keeps its mix and no warning is new.
+- A11: nettle does not move to thorny plants (stinging hairs, not thorns); it stays in prickly things.
+- B2 cold things: the North and South Poles, the Arctic and Antarctica stay (the cold itself, the first words people name); the other named places and Hoth go.
+- B3: snow tube is left in no theme (a real thing, not a loose phrase): kept in the library.
+- B9: grill and barbecue have no appliance entries; they only go out of hot things (no appliance entry made).
+- C duplicates: horned owl as an alias of great horned owl would leak "owl" in owls (theme-name, a new warning): the duplicate stub is deleted instead.
+- C types: ID card stays proper: typed common, its capital trips case-cap-common in three themes (new warnings).
+- C ratings: atmosphere is familiarity 1 already (cannot go one easier): unchanged. "Typicality one step lower" read as less typical: turnip in purple things 3 -> 4, water in blue things 2 -> 3, referee in striped things 2 -> 3, rubber in natural materials 2 -> 3 (stretchy things keeps 2).
+- C weak links: sewer and sewage were grouped in things that smell bad already.
+- C: dark creatures is not renamed "black animals": black cat, black widow and black mamba would leak "black" (theme-name warnings).
+- Info only, new: theme-twin "ways to move" shares 22 of 27 words with "motion verbs" (fly and creep linked); sense-link prefers howl [animal sound] in voice sounds (the review's call puts howl [cry] there).
+- Words left in no theme by this batch (kept, not exported): Hoth, snow tube, valve cap, entertaining, trendy, futuristic, pristine, primitive, precocious, indestructible, infernal, unheated.

@@ -1,5 +1,5 @@
-// Library batch v474 (for Simon's review): Qualities, things that… branch (21 themes read word by word, 2026-11-25).
-// Words that do not fit go and well-known words are added, about 8 a theme at most; new themes: things that grow, things that hang, things that beep, things that buzz, things underground, things you climb.
+// Library batch v474: fixes from the review of Julia's v460-v473 (tools/gen/review-julia-v460-v473.md): section A (clear fixes), the calls on
+// B2-B11 (Simon, 2026-11-25: "fix all how you think best"; nice, mammoth and Earth in things_with_layers held for Simon) and section C (minor).
 // Base: library v473. Everything works by entry id + text, never by position; every step is skipped when it is done already or its entry
 // is gone or changed (rerun: 0 changes). Every entry this batch changes gets status "rev".
 // Run: node tools/gen/batch474.mjs [--apply | --out <path>] [--lib <path>] [--changes <path>] [--review <path>]
@@ -297,69 +297,237 @@ const KEEP = new Map();   // orphans kept on purpose: id -> reason (the review l
 const keep = (ids, why) => { for (const id of ids) KEEP.set(id, why); };
 const ORPH0 = P.entries.filter(e => !e.aliasOf && e.enabled !== false && !linkIds(P, e).filter(t => ix.theme.has(t)).length).map(e => e.id);
 
+
 // ---------- this batch (v474) ----------
 // A new entry linked in tid. x: gloss, pos, show.
 const add = (tid, text, fam, typ, why, x = {}) => { const e = newEntry(text, x.gloss || '', { pos: x.pos || 'noun', type: 'common', fam }, why); linkE(e, tid, typ, why, x.show ? { show: x.show } : {}); return e; };
 const outL = (tid, list) => { for (const [id, text, why] of list) unlinkIf([tid], id, text, why); };
 const grp = (tid, ids, why) => { if (ids.every(id => ix.entry.get(id) && E(id).typ[tid] !== undefined)) addToGroup(tid, ids, why); };
 const rateL = (tid, list, why) => { for (const [id, text, typ] of list) { const e = live(id, text); if (e && e.typ[tid] !== undefined) rate(e, tid, typ, why); } };
-const addKin = (a, b, why) => { if (!a || !b || a.id === b.id || (a.kin || []).includes(b.id)) return; setKin(P, a, b, true); n++; reindex(P); A.push(`kin: ${lab(a)}${a.gloss ? ' [' + a.gloss + ']' : ''} <-> ${lab(b)}${b.gloss ? ' [' + b.gloss + ']' : ''}: ${why}`); };
-const N = {};
+const famL = (list, why) => { for (const [id, text, fam, w] of list) { const e = live(id, text); if (e) setE(e, 'fam', fam, w || why); } };
+const glossIf = (id, text, gloss, why) => { const e = live(id, text); if (e && !e.gloss) setE(e, 'gloss', gloss, why); };
+// Delete an entry left in no theme (a stub or a loose phrase); skipped when it is linked or has aliases.
+const delStub = (id, text, why) => { const e = ix.entry.get(id); if (!e || e.text !== text) return; if (linkIds(P, e).filter(t => ix.theme.has(t)).length) { A.push(`  (kept: ${lab(e)} is still in ${linkIds(P, e).join(', ')})`); return; } delE(id, text, why); };
 
-sec("1. things that sting");
-outL("things_that_sting", [[1364, "centipede", "it bites, it does not sting"]]);
-linkL("things_that_sting", [[14337, "sunburn", 2], [66871, "paper cut", 3], [16654, "iodine", 3], [23337, "rubbing alcohol", 3]], "well known here; it was not linked");
+sec('A1. emergency brake 46812 is the car brake (UK alias handbrake): on a train or the subway UK players would see "handbrake". A new entry emergency brake [train] takes those two links');
+{ const car = live(46812, 'emergency brake');
+  if (car) { const tr = newEntry('emergency brake', 'train', { pos: 'noun', type: 'common', fam: 2 }, 'the passenger alarm on a train or subway car, not the car handbrake');
+    swap('on_a_train', car, tr, 'the train sense: the car sense shows "handbrake" to UK players');
+    swap('on_the_subway', car, tr, 'the train sense: the car sense shows "handbrake" to UK players');
+    if (!car.gloss) setE(car, 'gloss', 'car', 'its text is now shared with emergency brake [train]'); } }
 
-sec("2. things that pop");
-linkL("things_that_pop", [[5931, "jack-in-the-box", 3]], "well known here; it was not linked");
+sec('A2. learning_to_drive: learner\'s permit (US) and provisional license (UK, IE) are one thing under two dialect words: one root, the UK word a regional alias (LIBRARY-RULES 5, Aliases)');
+merge(68680, "learner's permit", 68691, 'provisional license', 'synonym', 4, 'the same document: the UK and Irish name of the learner\'s permit (the US spelling of a UK term: a synonym, so the UK display alias is "provisional licence")', { region: ['UK', 'IE'] });
+setKind(68692, 'provisional licence', 'regional', 'the UK and Irish everyday word for the learner\'s permit (one display alias per dialect)', 3);
+tag(68692, 'provisional licence', ['UK', 'IE'], 'a UK and Irish word');
+untag(68680, "learner's permit", 'the root of a US word with a UK, IE regional alias is untagged (as written test / theory test): UK players see "provisional licence"');
 
-sec("3. things that tick");
-outL("things_that_tick", [[4456, "bomb", "left out at the review (time bomb, the one that ticks, stays)"]]);
-linkL("things_that_tick", [[1138, "crocodile", 4]], "well known here; it was not linked");
+sec('A3. car_wash');
+outL('car_wash', [[23882, 'detergent', 'UK players see "washing powder", a laundry word; soap and shampoo cover it']]);
 
-sec("4. things that fold");
-linkL("things_that_fold", [[4567, "newspaper", 2], [4859, "shirt", 2], [3668, "blanket", 3], [15183, "wheelchair", 3], [532, "omelet", 3], [28224, "flag", 4]], "well known here; it was not linked");
+sec('A4. size_labels: a word and its abbreviation are one answer');
+grp('size_labels', [68820, 39548], 'extra small and XS are one size label');
+grp('size_labels', [39539, 39546], 'extra large and XL are one size label');
 
-sec("5. things that cut");
-outL("things_that_cut", [[33828, "guillotine", "left out at the review"], [3475, "scalpel", "left out at the review"]]);
-linkL("things_that_cut", [[34778, "letter opener", 4]], "well known here; it was not linked");
+sec('A5. things_that_burn: figurative links out');
+outL('things_that_burn', [[7379, 'bridge', 'figurative ("burn bridges")'], [49347, 'CD', 'to burn a CD is to write it, not set it on fire'], [3827, 'calorie', 'figurative ("burn calories")'], [29499, 'chili', 'it tastes hot, it does not burn']]);
 
-sec("6. pairs you wear");
-linkL("pairs_you_wear", [[21315, "boots", 2], [4952, "sunglasses", 2], [4894, "leggings", 2], [24624, "flip-flops", 3], [5002, "earmuffs", 3], [4973, "suspenders", 4], [16074, "long johns", 4]], "well known here; it was not linked");
+sec('A6. deep_things');
+outL('deep_things', [[24952, 'pocket', 'figurative ("deep pockets")'], [68808, 'outer space', 'figurative ("deep space"); not a deep thing']]);
+linkL('deep_things', [[31789, 'pit', 3, 'a deep hole dug in the ground (the mine sense, as mine [pit] there)']]);
+grp('deep_things', [31788, 31789], 'mine [pit] and pit [mine] are one answer');
 
-sec("7. bell types");
-{ const e = live(2544, "Liberty Bell"); if (e && !e.aliasOf) linkE(e, "bell_types", 3, "well known here; it was not linked", { show: "Liberty" }); }
-{ const e = live(14060, "temple bell"); if (e && !e.aliasOf) linkE(e, "bell_types", 3, "well known here; it was not linked", { show: "temple" }); }
-{ const e = live(47659, "diving bell"); if (e && !e.aliasOf) linkE(e, "bell_types", 4, "well known here; it was not linked", { show: "diving" }); }
+sec('A7. words_for_cold');
+linkL('words_for_cold', [[39916, 'frozen', 2, 'an everyday word for very cold ("I\'m frozen")']]);
 
-sec("8. things that drip");
-outL("things_that_drip", [[30923, "stalagmite", "it grows from drips on the floor, it does not drip"], [38276, "cooling tower", "a tower at a power station"]]);
-linkL("things_that_drip", [[40230, "shower head", 3], [39697, "wet dog", 3], [97, "watermelon", 4], [39065, "sap", 4]], "well known here; it was not linked");
+sec('A8. middle_eastern_scents');
+outL('middle_eastern_scents', [[16304, 'olive oil soap', 'a product, not a scent (kohl went out as "not a scent" in v465)'], [39731, 'patchouli', 'a South and Southeast Asian scent, not a Middle Eastern one']]);
 
-sec("9. things that grow (new)");
-newTheme({ id: "things_that_grow", name: "things that grow", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "flower, tree, hair, grass, baby" }, "things_that_squeak", "a set rival games have");
-linkL("things_that_grow", [[28286, "flower", 1], [27965, "tree", 1], [3190, "hair", 1], [1769, "grass", 1], [3523, "baby", 1], [14290, "beard", 2], [17645, "mushroom", 2], [1696, "sunflower", 2], [3898, "child", 2], [1775, "weed", 2], [14211, "fingernail", 2], [17411, "seed", 2], [1767, "moss", 3], [30330, "mold", 3], [1774, "bamboo", 3], [1773, "vine", 3], [1163, "tadpole", 3], [32518, "teenager", 3], [1830, "hedge", 3], [14292, "mustache", 3], [2055, "crystal", 3], [2015, "icicle", 3], [45162, "antlers", 3], [1289, "coral", 4], [30922, "stalactite", 4], [1643, "bonsai", 4], [33862, "debt", 4], [33873, "interest", 4], [31291, "snowball", 4], [28397, "shadow", 4], [41677, "population", 4], [3244, "muscle", 4], [8966, "algae", 4], [7106, "universe", 4]], "a well-known member of the new theme");
+sec('A9. pungent_foods: liver went out as "taste, not smell" (v465); the same holds for these');
+outL('pungent_foods', [[405, 'radish', 'sharp in taste, not pungent in smell'], [721, 'black pepper', 'sharp in taste, not pungent in smell']]);
+rateL('pungent_foods', [[467, 'tuna', 4]], 'canned tuna smells, but it is not one of the first pungent foods named');
 
-sec("10. things that hang (new)");
-newTheme({ id: "things_that_hang", name: "things that hang", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "curtain, chandelier, bat, hammock, ornament" }, "things_that_grow", "an everyday set with no list");
-linkL("things_that_hang", [[12242, "curtain", 1], [23200, "chandelier", 1], [993, "bat", 1], [3044, "hammock", 2], [25674, "ornament", 2], [3755, "towel", 2], [4872, "coat", 2], [5855, "painting", 2], [5940, "swing", 2], [21316, "earring", 2], [23933, "laundry", 2], [25009, "stocking", 2], [2015, "icicle", 3], [25682, "wind chime", 3], [1790, "mistletoe", 3], [1017, "sloth", 3], [25022, "wreath", 3], [3027, "lantern", 3], [25140, "piñata", 3], [13872, "disco ball", 3], [25378, "calendar", 3], [23579, "ceiling fan", 3], [1856, "bird feeder", 3], [15876, "punching bag", 3], [13685, "trapeze", 4], [30922, "stalactite", 4], [25372, "pendulum", 4], [6671, "tapestry", 4], [28410, "bunting", 4], [1023, "orangutan", 4], [9114, "cobweb", 4], [16084, "dreamcatcher", 4], [3302, "uvula", 4], [23758, "wallpaper", 4]], "a well-known member of the new theme");
+sec('A10. things_that_smell_bad: mothball and its form mothballs');
+famL([[66296, 'mothball', 2], [23189, 'mothballs', 2]], 'nearly every adult knows mothballs; the singular is not easier than the plural people say');
+{ const m = live(66296, 'mothball'); if (m && m.typ.things_that_smell_bad !== undefined) setUse(m, 'things_that_smell_bad', 23189, 'mothballs is the form people say for the smell'); }
 
-sec("11. things that beep (new)");
-newTheme({ id: "things_that_beep", name: "things that beep", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "alarm clock, microwave, smoke detector, phone, robot" }, "things_that_hang", "things that ring, tick and squeak exist, beep did not");
-linkL("things_that_beep", [[3685, "alarm clock", 1], [4722, "microwave", 1], [24277, "smoke detector", 1], [23319, "phone", 1], [28692, "robot", 2], [25393, "timer", 2], [23150, "car", 2], [28334, "truck", 2], [4719, "oven", 2], [49389, "R2-D2", 2], [4725, "washing machine", 2], [25777, "cash register", 2], [7258, "scanner", 3], [25775, "elevator", 3], [6897, "metal detector", 3], [4724, "dishwasher", 3], [7329, "smartwatch", 3], [15366, "heart monitor", 3], [3571, "baby monitor", 3], [25651, "answering machine", 3], [40169, "keypad", 3], [4601, "walkie-talkie", 3], [25782, "ATM", 3], [7367, "digital watch", 3], [4633, "pager", 4], [40265, "Geiger counter", 4], [21036, "sonar", 4], [3096, "forklift", 4], [14704, "hearing aid", 4], [29586, "breathalyzer", 4], [2415, "GPS", 4], [4764, "Roomba", 4], [38195, "self-checkout", 4], [7358, "Game Boy", 4], [38368, "traffic light", 4]], "a well-known member of the new theme");
+sec('A11. plants_with_spines and thorny_plants are twins (17 of 27 shared): plants_with_spines merges into thorny_plants (LIBRARY-RULES 6, a near-duplicate is merged): the links it lacks move (the better typicality kept), its group moves, then it is deleted');
+if (ix.theme.has('plants_with_spines')) {
+  const PW = 'plants_with_spines', TP = 'thorny_plants';
+  for (const e of (ix.byTheme.get(PW) || []).filter(e => !e.aliasOf && e.typ[PW] !== undefined).sort((a, b) => a.id - b.id)) {
+    if (e.id === 1778) continue;   // nettle: stinging hairs, not thorns or spines; it stays in prickly_things
+    if (e.typ[TP] === undefined) linkE(e, TP, e.typ[PW], 'moved from plants_with_spines (merged)', (e.nameOkIn || []).includes(PW) ? { nameOk: true } : {});
+    else if (e.typ[PW] < e.typ[TP]) rate(e, TP, e.typ[PW], 'the better typicality of the two twins is kept');
+  }
+  grp(TP, [29503, 30574], 'nopal and prickly pear are one answer (moved from plants_with_spines)');
+  unlinkE(E(1778), PW, 'stinging hairs, not thorns or spines: not a thorny plant; it stays in prickly_things');
+  dropTheme(PW, 'the twin of thorny_plants (17 of its 27 words shared): merged into thorny_plants');
+  setT(TP, 'pop', 3, 'with rose, cactus, thistle and holly the merged theme is an ordinary pick, as plants_with_spines was rated (it was 5)');
+}
 
-sec("12. things that buzz (new)");
-newTheme({ id: "things_that_buzz", name: "things that buzz", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "bee, fly, mosquito, doorbell, phone" }, "things_that_beep", "things that ring, tick and squeak exist, buzz did not");
-linkL("things_that_buzz", [[1342, "bee", 1], [1344, "fly", 1], [1345, "mosquito", 1], [23248, "doorbell", 2], [23319, "phone", 2], [3737, "razor", 2], [1343, "wasp", 2], [1382, "hornet", 2], [3685, "alarm clock", 2], [4806, "chainsaw", 2], [2750, "drone", 2], [10150, "hive", 2], [20174, "neon sign", 3], [1076, "hummingbird", 3], [16333, "clippers", 3], [23600, "electric toothbrush", 3], [23481, "light bulb", 3], [6022, "kazoo", 3], [1399, "gnat", 3], [35500, "crowd", 3], [7329, "smartwatch", 3], [1358, "dragonfly", 3], [1375, "cicada", 3], [4638, "intercom", 3], [49816, "power line", 4], [6055, "vuvuzela", 4], [11197, "amplifier", 4], [23662, "transformer", 4], [1396, "horsefly", 4], [4633, "pager", 4], [23681, "sander", 4], [4805, "jigsaw", 4], [1350, "beetle", 4], [1385, "locust", 4], [4716, "fridge", 4]], "a well-known member of the new theme");
+sec('A12. prickly_things: rose is in the group thorn = rose thorn = rose (a thing and its part)');
+outL('prickly_things', [[1693, 'rose', 'the plant whose part is the thorn; thorn = rose thorn stays']]);
 
-sec("13. things underground (new)");
-newTheme({ id: "things_underground", name: "things underground", parent: "things_that", pop: 2, ident: 2, tkind: "category", note: "worm, potato, mole, tunnel, coal" }, "things_in_space", "a set rival games have; things in the sky and in space exist");
-linkL("things_underground", [[9116, "worm", 1], [392, "potato", 1], [391, "carrot", 1], [30034, "root", 1], [1029, "mole", 1], [7381, "tunnel", 1], [1913, "cave", 2], [31788, "mine", 2], [24074, "basement", 2], [2054, "coal", 2], [2647, "subway", 2], [1341, "ant", 2], [28812, "sewer", 3], [1567, "fossil", 3], [23780, "pipe", 3], [4403, "bunker", 3], [10149, "burrow", 3], [32112, "well", 3], [405, "radish", 3], [7848, "gopher", 3], [1048, "groundhog", 3], [31839, "magma", 3], [6792, "buried treasure", 3], [32326, "oil", 3], [32327, "natural gas", 3], [6670, "dungeon", 3], [31992, "aquifer", 4], [17618, "truffle", 4], [31782, "bedrock", 4], [23792, "septic tank", 4], [420, "beet", 4], [17350, "peanut", 4], [1021, "meerkat", 4], [7840, "prairie dog", 4], [6988, "hobbit", 4], [31656, "diamond", 4], [40957, "bulb", 4]], "a well-known member of the new theme");
+sec('A13. symbols');
+grp('symbols', [68837, 26117], 'division sign and obelus are the same ÷');
 
-sec("14. things you climb (new)");
-newTheme({ id: "things_you_climb", name: "things you climb", parent: "things_that", pop: 2, ident: 2, tkind: "category", note: "ladder, tree, mountain, stairs, rope" }, "things_you_ride", "a set rival games have");
-linkL("things_you_climb", [[23153, "ladder", 1], [27965, "tree", 1], [1894, "mountain", 1], [24068, "stairs", 1], [1896, "hill", 2], [48700, "rope", 2], [24063, "wall", 2], [2049, "rock", 2], [1832, "fence", 2], [5981, "jungle gym", 2], [5976, "monkey bars", 2], [6757, "Mount Everest", 2], [1906, "cliff", 3], [2474, "lighthouse", 3], [13625, "beanstalk", 3], [6553, "tower", 3], [1912, "volcano", 3], [3708, "bunk bed", 3], [2052, "boulder", 3], [66313, "treehouse", 3], [24285, "fire escape", 3], [6619, "pyramid", 3], [25803, "stepladder", 3], [32085, "Kilimanjaro", 3], [2798, "mast", 4], [1860, "trellis", 4], [1929, "dune", 4], [32083, "K2", 4], [32084, "Matterhorn", 4], [6608, "scaffolding", 4], [14001, "bell tower", 4], [2833, "crow's nest", 4], [46092, "cargo net", 4], [39533, "telephone pole", 4]], "a well-known member of the new theme");
-grp("things_you_climb", [6553, 14001], 'the same answer, or a word and its more specific form');
+sec('A14-A16. synonyms and sounds, textures');
+outL('words_for_fast', [[27830, 'lickety-split', 'an adverb (precipitate went out for the same reason)']]);
+famL([[28397, 'shadow', 1]], 'every child knows the word shadow');
+outL('fragile_things', [[29101, 'reputation', 'abstract'], [32273, 'ecosystem', 'abstract'], [3238, 'heart', 'figurative (the organ is not fragile)']]);
+linkL('fragile_things', [[24032, 'glass', 1, 'the first fragile thing anyone names']]);
+outL('fragile_things', [[24782, 'glasses', 'one word family with glass, now there (LIBRARY-RULES 5: keep the better fit); wine glass stays']]);
+
+sec('A17-A20. colors, things with, motion');
+outL('gold_things', [[6957, 'Midas', 'a king, not a gold thing'], [37714, 'Fort Knox', 'a vault, not a gold thing'], [21218, 'El Dorado', 'a legendary place, not a gold thing']]);
+// With the three names out, capitals fall under a fifth of the theme and the case lint reads Oscar [award] as the wrong sense (case-sense-proper,
+// baseline 0): three well-known gold trophies, all names, keep the theme's real mix.
+linkL('gold_things', [[12748, 'Grammy', 3, 'a gold gramophone trophy'], [12750, 'Golden Globe', 3, 'a gold globe trophy'], [44447, "Ballon d'Or", 4, 'the golden ball of football']]);
+outL('things_with_numbers', [[38221, 'mailbox', 'the street postbox has no number']]);
+linkL('things_with_numbers', [[44229, 'jersey', 2, 'players\' shirts carry big numbers']]);
+linkL('motion_verbs', [[67311, 'fly', 1, 'the most obvious motion verb'], [10380, 'creep', 3, 'a well-known motion verb']]);
+outL('things_that_roll', [[6396, 'credits', 'figurative ("the credits roll")']]);
+outL('ways_to_jump', [[5625, 'parkour', 'a sport of running, climbing and jumping, not a way to jump']]);
+
+sec('B2. cold_things: polar bear and penguin stay out (v463); named places other than the poles and fiction go: they are cold places, not cold things (polar_and_frozen_places holds them). The poles, the Arctic and Antarctica stay: they are the cold itself in the first words people name');
+outL('cold_things', [[32111, 'Alaska', 'a US state, a cold place, not a cold thing'], [62517, 'Hoth', 'a fictional planet'], [32063, 'Greenland', 'a cold place, not a cold thing'], [32106, 'Siberia', 'a cold place, not a cold thing'], [31816, 'Yukon', 'a cold place, not a cold thing'], [32064, 'Svalbard', 'a cold place, not a cold thing'], [36684, 'Vostok Station', 'a cold place, not a cold thing'], [62516, 'Oymyakon', 'a cold place, not a cold thing'], [26, 'Neptune', 'a planet, not a cold thing'], [21099, 'Pluto', 'a dwarf planet, not a cold thing'], [6757, 'Mount Everest', 'a mountain, not a cold thing']]);
+
+sec('B3. winter_vehicles: snow tube is not a vehicle; luge and bobsled get their sled sense (the existing entries are the sport); skeleton stays out');
+outL('winter_vehicles', [[68777, 'snow tube', 'an inflatable ring for sliding, not a vehicle']]);
+{ const sport = live(5351, 'bobsled');
+  if (sport) {
+    const sled = newEntry('bobsled', 'sled', { pos: 'noun', type: 'common', fam: 2 }, 'the sled itself, not the sport');
+    newAlias(sled.id, 'bobsleigh', 'sled', 'regional', 2, ['UK', 'IE', 'AU'], 'the UK, Irish and Australian word for the sled');
+    swap('winter_vehicles', sport, sled, 'the sled sense: the bobsled entry is the sport');
+    if (!sport.gloss) setE(sport, 'gloss', 'sport', 'its text is now shared with bobsled [sled]');
+    glossIf(5352, 'bobsleigh', 'sport', 'its text is now shared with bobsleigh [sled]');
+  }
+  const luge = live(5353, 'luge');
+  if (luge) {
+    const sled = newEntry('luge', 'sled', { pos: 'noun', type: 'common', fam: 3 }, 'the sled itself, not the sport');
+    linkE(sled, 'winter_vehicles', 3, 'a small racing sled ridden feet first');
+    if (!luge.gloss) setE(luge, 'gloss', 'sport', 'its text is now shared with luge [sled]');
+  } }
+
+sec('B4. winged_creatures: real animals only; v470\'s mythical additions go back out (winged_beasts holds them)');
+outL('winged_creatures', [[6989, 'fairy', 'mythical'], [6982, 'dragon', 'mythical'], [6941, 'Pegasus', 'mythical'], [6962, 'phoenix', 'mythical'], [6944, 'griffin', 'mythical'], [6963, 'harpy', 'mythical'], [6620, 'sphinx', 'mythical']]);
+
+sec('B5. sharp_things: weapons of war and execution out of a non-adult theme (sword, dagger, knife, spear, arrow stay)');
+outL('sharp_things', [[33828, 'guillotine', 'an execution device'], [28727, 'bayonet', 'a weapon of war'], [34650, 'lance', 'a weapon of war']]);
+
+sec('B6. two_wheelers: bikes, motorbikes, scooters and the like only');
+outL('two_wheelers', [[20383, 'chariot', 'a cart, not a bike'], [22973, 'hansom cab', 'a carriage, not a bike'], [50129, 'sulky', 'a cart, not a bike'], [40184, 'gig', 'a carriage, not a bike'], [49173, 'dogcart', 'a cart, not a bike'], [48235, 'pony cart', 'a cart, not a bike'], [39859, 'ox cart', 'a cart, not a bike'], [24258, 'hand truck', 'a trolley, not a vehicle you ride'], [2684, 'rickshaw', 'a cart, not a bike (the cycle rickshaw has three wheels)']]);
+setT('two_wheelers', 'note', 'vehicles on two wheels: bicycle, motorcycle, scooter, moped, Segway', 'chariot is out');
+
+sec('B7. loose phrases (v462 removed this kind elsewhere): unlinked, and deleted when made by v460-v461 and in no other theme');
+outL('travel_trouble', [[68770, 'bad weather', 'a loose phrase'], [68772, 'hidden fees', 'a loose phrase'], [68762, 'lost passport', 'a loose phrase (lost luggage is the fixed term)']]);
+outL('car_trouble', [[68662, 'cracked windshield', 'a loose phrase'], [68666, 'squeaky brakes', 'a loose phrase'], [68671, 'slipping clutch', 'a loose phrase'], [68670, 'fuel leak', 'a loose phrase']]);
+outL('in_a_glove_box', [[68700, 'ketchup packet', 'a loose phrase']]);
+outL('airport_security', [[68732, 'bag search', 'a loose phrase'], [68733, 'random search', 'a loose phrase']]);
+for (const [id, text] of [[68770, 'bad weather'], [68772, 'hidden fees'], [68762, 'lost passport'], [68662, 'cracked windshield'], [68666, 'squeaky brakes'], [68671, 'slipping clutch'], [68670, 'fuel leak'], [68700, 'ketchup packet'], [68732, 'bag search'], [68733, 'random search']]) delStub(id, text, 'a loose phrase made by v461 for one theme, now in none');
+
+sec('B8. synonym themes: words that are not true synonyms out; ratings');
+outL('words_for_funny', [[68877, 'entertaining', 'not a synonym of funny'], [29096, 'facetious', 'not a synonym of funny (flippant)']]);
+outL('words_for_new', [[68920, 'trendy', 'fashionable, not new'], [68919, 'futuristic', 'of the future, not new'], [68923, 'pristine', 'unspoiled, not new']]);
+outL('words_for_old', [[68862, 'primitive', 'early or simple, not old']]);
+outL('words_for_smart', [[68853, 'precocious', 'advanced for one\'s age, not smart']]);
+outL('words_for_strong', [[68901, 'indestructible', 'unbreakable and invincible stay; three for one idea is too many']]);
+rateL('words_for_funny', [[68869, 'silly', 2], [68873, 'ridiculous', 3]], 'silly and ridiculous are not the first words for funny');
+rateL('words_for_strange', [[68854, 'mysterious', 3], [68856, 'unfamiliar', 4], [68855, 'exotic', 4]], 'loose synonyms of strange');
+rateL('words_for_old', [[68861, 'mature', 3]], 'grown-up rather than old');
+
+sec('B9. hot_things: a verb and a dish standing in for the appliances (no appliance entry exists: grill and barbecue are the verb and the meat)');
+outL('hot_things', [[921, 'grill', 'the verb, not the appliance'], [19767, 'barbecue', 'the grilled meat, not the appliance']]);
+linkL('hot_things', [[25302, 'summer', 3, 'the hot season']]);
+
+sec('B9. stubs left in no theme by v460-v473: loose phrases and duplicate stubs deleted (bluetongue and chipboard become aliases below)');
+for (const [id, text, why] of [
+  [39017, 'pane', 'a stub left by v471 (window is the word)'], [40124, 'albino', 'a stub left by v472'], [40215, 'coalface', 'a stub left by v473'], [38948, 'thin', 'a stub left by v468 (thin [slim] is the word)'],
+  [39974, 'glowing plankton', 'a loose phrase'], [39982, 'glowing coals', 'a loose phrase (embers is the word)'], [39985, 'new coin', 'a loose phrase'], [39986, 'chrome bumper', 'a loose phrase'],
+  [39995, 'wet pavement', 'a loose phrase'], [40000, 'patent shoes', 'a loose phrase (patent leather is the word)'], [39753, 'mahogany teakwood', 'a candle product name, a loose phrase'],
+  [39754, 'frankincense and myrrh', 'two words joined, a loose phrase'], [39940, 'hot as hell', 'a loose simile'], [39576, 'Pringle', 'a stub left by v464, duplicating Pringles']]) delStub(id, text, why);
+
+sec('B10. US vacation spots');
+setT('american_holiday_spots', 'ident', 3, 'with Las Vegas, Hawaii and Walt Disney World in, four members name it after a moment');
+linkL('american_holiday_spots', [[2219, 'New York', 1], [31943, 'Yellowstone', 2], [2331, 'Niagara Falls', 2], [48930, 'Disneyland', 2]], 'a top US vacation spot; it was not linked');
+
+sec('B11. overlaps');
+outL('words_for_shiny', [[28031, 'bright', 'the topic word of words_for_bright, its sibling']]);
+outL('scented_products', [[3745, 'sunscreen', 'personal care, scented only incidentally'], [3732, 'mouthwash', 'personal care, scented only incidentally'], [23138, 'toilet paper', 'a household product, scented only incidentally'], [50839, 'cat litter', 'a household product, scented only incidentally'], [23370, 'trash bags', 'a household product, scented only incidentally'], [34759, 'marker', 'a novelty, scented only incidentally'], [12017, 'eraser', 'a novelty, scented only incidentally']]);
+outL('flat_things', [[2140, 'Netherlands', 'a flat country, a place, not a flat thing'], [32168, 'Kansas', 'a flat state, a place, not a flat thing'], [1950, 'mesa', 'a landform (flat_landscapes holds it)'], [1940, 'steppe', 'a landform (flat_landscapes holds it)']]);
+outL('pink_animals', [[1041, 'manatee', 'gray, not pink']]);
+linkL('gray_things', [[1041, 'manatee', 3, 'a gray animal'], [13663, 'Eeyore', 3, 'the gray donkey (moved from blue_things)'], [39899, 'ash', 2, 'gray ash, as in ash gray']]);
+
+sec('C. regional gaps');
+newAlias(68658, 'flat battery', '', 'regional', 2, ['UK'], 'the UK word for a dead battery');
+newAlias(68676, 'out of petrol', '', 'regional', 2, ['UK'], 'the UK words for out of gas');
+newAlias(68642, 'package holiday', '', 'regional', 2, ['UK'], 'the UK word for a package tour');
+newAlias(68954, "barber's pole", '', 'regional', 3, ['UK'], 'the UK form of barber pole');
+tag(68725, 'medallion', ['US'], 'the taxi medallion is a US (New York) thing');
+tag(68641, 'spring break', ['US'], 'a US college custom');
+
+sec('C. on_a_train: conductor and ticket inspector are one answer (the conductor\'s UK alias is ticket inspector)');
+grp('on_a_train', [2862, 46964], 'conductor and inspector [ticket] are one answer');
+
+sec('C. ratings');
+for (const tid of ['rectangular_things', 'flat_things']) { setT(tid, 'pop', 3, 'like its siblings square_things and oval_things'); setT(tid, 'ident', 3, 'like its siblings square_things and oval_things: a loose shape property'); }
+setT('things_with_numbers', 'ident', 3, 'a loose property: several themes fit four of its members');
+famL([[68929, 'nascent', 4], [68887, 'jocular', 4], [68885, 'farcical', 3], [68884, 'uproarious', 3], [68903, 'strapping', 3], [68867, 'zonked', 3], [68831, 'speckled', 2], [68832, 'crisscross', 2], [50133, 'strut', 3]], 'better known than rated: one step easier');
+rateL('purple_things', [[425, 'turnip', 4]], 'only its top is purple');
+rateL('blue_things', [[861, 'water', 3]], 'drawn blue, but clear');
+rateL('striped_things', [[42671, 'referee', 3]], 'striped shirts in US sports only');
+rateL('natural_materials', [[30101, 'rubber', 3]], 'most rubber now is synthetic');
+
+sec('C. weak links out');
+outL('food_chillers', [[3063, 'thermos', 'it keeps food hot or cold, it does not chill it']]);
+outL('words_for_hot', [[68814, 'infernal', 'hellish in general, rarely "hot"']]);
+outL('words_for_cold', [[68817, 'unheated', 'a fact about a room, not a word for cold']]);
+outL('eating_sounds', [[16980, 'hiccup', 'not made by eating'], [16989, 'gurgle', 'a stomach or water sound, not an eating sound']]);
+outL('quiet_things', [[34608, 'stealth bomber', 'hidden from radar, not quiet']]);
+outL('sticky_things', [[12554, 'Spider-Man', 'a character; his webs are the sticky thing']]);
+outL('square_things', [[5765, 'tic-tac-toe', 'a grid game, the board not clearly square'], [3667, 'pillow', 'usually rectangular']]);
+outL('oval_things', [[111, 'avocado', 'pear-shaped, not oval']]);
+outL('blue_things', [[13663, 'Eeyore', 'gray, not blue (now in gray_things)']]);
+outL('pink_things', [[103, 'lychee', 'red outside, white inside']]);
+outL('yellow_things', [[215, 'lion', 'tawny, not yellow']]);
+outL('gray_things', [[33938, 'nickel', 'the US coin is silver-colored']]);
+outL('things_with_tongues', [[41927, 'Albert Einstein', 'a famous photo, not a thing with a tongue']]);
+outL('things_with_necks', [[23481, 'light bulb', 'the neck of a bulb is a specialist term']]);
+outL('things_with_keys', [[4106, 'janitor', 'a person who carries keys, not a thing with keys']]);
+outL('things_that_sink', [[2232, 'Venice', 'a city that is slowly sinking, figurative']]);
+outL('airport_security', [[67358, 'swab', 'a specialist detail'], [4956, 'gloves', 'not a checkpoint thing']]);
+outL('in_a_glove_box', [[68701, 'valve cap', 'kept on the tire, not in the glove box']]);
+outL('summer_camp', [[3024, 'campfire', 'it holds "camp" of the theme name']]);
+setT('summer_camp', 'note', 'camp for kids: cabin, canoe, archery, friendship bracelet', 'campfire is out');
+{ const h = live(10193, 'howl'), c = live(17016, 'howl'); if (h && c) swap('voice_sounds', h, c, 'a voice sound is the cry (howl [cry]), not the animal sound'); }
+
+sec('C. missing words');
+linkL('smells_from_the_kitchen', [[393, 'onion', 2, 'frying onions: a first kitchen smell']]);
+linkL('striped_things', [[9845, 'tabby cat', 3, 'a striped cat'], [1014, 'badger', 3, 'a striped face']]);
+linkL('things_with_layers', [[639, 'trifle', 3, 'a layered dessert']]);
+linkL('roadwork', [[3099, 'bulldozer', 2, 'a roadwork machine']]);
+linkL('in_a_hotel_room', [[25706, 'keycard', 2, 'the room key'], [23136, 'mirror', 3, 'in every room'], [23340, 'hangers', 2, 'in every closet']]);
+{ const bb = newEntry('bad breath', '', { pos: 'noun', type: 'common', fam: 1 }, 'the everyday word; halitosis becomes its synonym');
+  merge(bb.id, 'bad breath', 62959, 'halitosis', 'synonym', 3, 'the medical word for bad breath'); }
+
+sec('C. duplicates');
+// horned owl as an alias of great horned owl would hold "owl" of the theme name owls (theme-name, a new warning): the duplicate stub is deleted instead.
+delStub(40201, 'horned owl', 'a stub left by v473 duplicating great horned owl (as its alias it would leak "owl" in owls)');
+merge(1209, 'blue-tongued skink', 40223, 'bluetongue', 'synonym', 4, 'the Australian name of the blue-tongued skink');
+merge(24055, 'particle board', 24054, 'chipboard', 'regional', 3, 'the UK word for particle board', { region: ['UK'] });
+grp('heavy_things', [21211, 21214], 'a gold bar is an ingot: one answer (grouped so in treasure)');
+
+sec('C. types');
+// ID card stays proper: typed common, its capital trips case-cap-common in three themes (a new warning); left for Simon.
+{ const e = live(5968, "Rubik's Cube"); if (e) setE(e, 'type', 'proper', 'a named product (proper + tm), not a company'); }
+{ const e = live(5932, 'Slinky'); if (e) setE(e, 'type', 'proper', 'a named product (proper + tm), not a company'); }
+{ const e = ix.entry.get(2384); if (e && (e.text === 'Moai' || e.text === 'moai')) retext(2384, 'Moai', 'moai', 'the statues: a common noun, lowercase in Merriam-Webster and Oxford', { type: 'common' }); }
+typeCommon([[5937, 'hula hoop']], 'a toy, not an idiom (tm stays)');
+{ const e = live(50032, 'husky'); if (e) setE(e, 'pos', 'adjective', 'a husky voice: an adjective'); }
+
+sec('C. notes');
+{ const t = T('things_made_of_glass'); if (t.note.includes('lightbulb')) setT('things_made_of_glass', 'note', t.note.replace('lightbulb', 'light bulb'), 'the root is light bulb'); }
+
 // ---------- status ----------
 let revSet = 0, touched = 0;
 for (const e of P.entries) { const s = snap.get(e.id); if (s === JSON.stringify({ ...e, status: undefined }) && !confirm.has(e.id)) continue; touched++; if (e.status !== 'rev') { e.status = 'rev'; revSet++; n++; } }
@@ -417,7 +585,7 @@ function shownMap(x) {
 
 const spreads = [...touchedT].filter(t => prof0[t] || ix.theme.has(t)).sort().map(t => `  ${t}: ${prof0[t] || 'new'} -> ${profile(t)}`);
 const FS1 = firstSynLine();
-const summary = [`Library batch v474 (for Simon's review): Qualities, things that… branch`,
+const summary = [`Library batch v474 (fixes from the review of Julia's v460-v473; Simon, 2026-11-25: "fix all how you think best"): clear fixes, the calls on B2-B11, minor items; plants_with_spines merged into thorny_plants.`,
   ...A.map(x => x.startsWith('#') ? x.slice(1) : x.startsWith('  ') ? x : '  ' + x),
   'Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:', ...spreads,
   `First synonym aliases harder than root familiarity + 1: ${FS0.bad.length} -> ${FS1.bad.length}${FS1.bad.length ? ': ' + FS1.bad.join(', ') : ''}`,

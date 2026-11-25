@@ -1,52 +1,314 @@
-Library batch v476 (for Simon's review): Qualities, colors branch
-1. shades of white
-  out of shades_of_white: snowfall 1968: weather, not a color (snow stays) (stays in snow_and_ice, quiet_things, weather, kinds_of_precipitation, signs_of_winter, polar_regions, taiga, white_things, frozen_precipitation, snow_blank)
-2. colors named after foods
-  out of colors_named_after_foods: cookie 566 [biscuit]: not the name of a color (stays in breads_and_baking, desserts_and_sweets, lunchbox, words_from_dutch, sweet_foods, bakery, round_things, british_english_words, baked_treats, food_and_drink_words, finger_foods, brown_things)
-3. drink-named colors
-  linked: sangria 38568 [color] in drink_shades (typicality 3): well known here; it was not linked
-  linked: chartreuse 7708 [color] in drink_shades (typicality 4): well known here; it was not linked
-  linked: bordeaux 57763 [color] in drink_shades (typicality 4): well known here; it was not linked
-4. flower-named colors
-  out of colors_named_after_flowers: cornflower 1747 [flower]: the flower (the color takes its place) (stays in flowers, wildflowers, edible_flowers, meadow, national_flowers, blue_things, anatolian_flowers, blue_flowers)
-  linked: cornflower 62956 [color] in colors_named_after_flowers (typicality 3): well known here; it was not linked
-5. animal-named colors
-  out of colors_named_after_animals: isabelline 7742: not named after an animal (said to come from the name Isabella) (stays in colors)
+Library batch v476 (for Simon's review): Qualities, things that… branch
+1. things that sting
+  out of things_that_sting: centipede 1364: it bites, it does not sting (stays in insects_and_bugs, garden_bugs, venomous_animals, household_pests, forest_floor, long_things, garden_helpers)
+  linked: sunburn 14337 in things_that_sting (typicality 2): well known here; it was not linked
+  linked: paper cut 66871 in things_that_sting (typicality 3): well known here; it was not linked
+  linked: iodine 16654 in things_that_sting (typicality 3): well known here; it was not linked
+  linked: rubbing alcohol 23337 in things_that_sting (typicality 3): well known here; it was not linked
+2. things that pop
+  linked: jack-in-the-box 5931 in things_that_pop (typicality 3): well known here; it was not linked
+3. things that tick
+  out of things_that_tick: bomb 4456 [weapon]: left out at the review (time bomb, the one that ticks, stays) (stays in military, modern_weapons, power_ups_and_pickups, silent_b_words)
+  linked: crocodile 1138 in things_that_tick (typicality 4): well known here; it was not linked
+4. things that fold
+  linked: newspaper 4567 in things_that_fold (typicality 2): well known here; it was not linked
+  linked: shirt 4859 in things_that_fold (typicality 2): well known here; it was not linked
+  linked: blanket 3668 [bedding] in things_that_fold (typicality 3): well known here; it was not linked
+  linked: wheelchair 15183 in things_that_fold (typicality 3): well known here; it was not linked
+  linked: omelet 532 in things_that_fold (typicality 3): well known here; it was not linked
+  linked: flag 28224 [banner] in things_that_fold (typicality 4): well known here; it was not linked
+5. things that cut
+  out of things_that_cut: guillotine 33828 [execution device]: left out at the review (stays in punishments, words_named_after_people, french_revolution, european_inventions)
+  out of things_that_cut: scalpel 3475: left out at the review (stays in medicine, medical_equipment, operating_room, hospital, sharp_things)
+  linked: letter opener 34778 in things_that_cut (typicality 4): well known here; it was not linked
+6. pairs you wear
+  linked: boots 21315 in pairs_you_wear (typicality 2): well known here; it was not linked
+  linked: sunglasses 4952 in pairs_you_wear (typicality 2): well known here; it was not linked
+  linked: leggings 4894 in pairs_you_wear (typicality 2): well known here; it was not linked
+  linked: flip-flops 24624 in pairs_you_wear (typicality 3): well known here; it was not linked
+  linked: earmuffs 5002 in pairs_you_wear (typicality 3): well known here; it was not linked
+  linked: suspenders 4973 in pairs_you_wear (typicality 4): well known here; it was not linked
+  linked: long johns 16074 in pairs_you_wear (typicality 4): well known here; it was not linked
+7. bell types
+  linked: Liberty Bell 2544 in bell_types (typicality 3, shown "Liberty"): well known here; it was not linked
+  linked: temple bell 14060 in bell_types (typicality 3, shown "temple"): well known here; it was not linked
+  linked: diving bell 47659 [underwater chamber] in bell_types (typicality 4, shown "diving"): well known here; it was not linked
+8. things that drip
+  out of things_that_drip: stalagmite 30923: it grows from drips on the floor, it does not drip (stays in cave_features)
+  out of things_that_drip: cooling tower 38276: a tower at a power station (stays in towers_and_skyscrapers, nuclear_power_plant, industrial_buildings)
+  linked: shower head 40230 in things_that_drip (typicality 3): well known here; it was not linked
+  linked: wet dog 39697 in things_that_drip (typicality 3): well known here; it was not linked
+  linked: watermelon 97 in things_that_drip (typicality 4): well known here; it was not linked
+  linked: sap 39065 [tree] in things_that_drip (typicality 4): well known here; it was not linked
+9. things that grow (new)
+  new theme: things_that_grow "things that grow" under things_that (after things_that_squeak), pop 2, ident 2: a set rival games have
+  linked: flower 28286 [plant] in things_that_grow (typicality 1): a well-known member of the new theme
+  linked: tree 27965 [plant] in things_that_grow (typicality 1): a well-known member of the new theme
+  linked: hair 3190 in things_that_grow (typicality 1): a well-known member of the new theme
+  linked: grass 1769 [plant] in things_that_grow (typicality 1): a well-known member of the new theme
+  linked: baby 3523 [infant] in things_that_grow (typicality 1): a well-known member of the new theme
+  linked: beard 14290 in things_that_grow (typicality 2): a well-known member of the new theme
+  linked: mushroom 17645 [fungus] in things_that_grow (typicality 2): a well-known member of the new theme
+  linked: sunflower 1696 in things_that_grow (typicality 2): a well-known member of the new theme
+  linked: child 3898 in things_that_grow (typicality 2): a well-known member of the new theme
+  linked: weed 1775 [plant] in things_that_grow (typicality 2): a well-known member of the new theme
+  linked: fingernail 14211 in things_that_grow (typicality 2): a well-known member of the new theme
+  linked: seed 17411 [plant] in things_that_grow (typicality 2): a well-known member of the new theme
+  linked: moss 1767 in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: mold 30330 [fungus] in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: bamboo 1774 [plant] in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: vine 1773 [plant] in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: tadpole 1163 in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: teenager 32518 in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: hedge 1830 [garden] in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: mustache 14292 in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: crystal 2055 [mineral] in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: icicle 2015 in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: antlers 45162 in things_that_grow (typicality 3): a well-known member of the new theme
+  linked: coral 1289 [marine animal] in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: stalactite 30922 in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: bonsai 1643 in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: debt 33862 in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: interest 33873 [finance] in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: snowball 31291 in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: shadow 28397 [dark patch] in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: population 41677 [statistics] in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: muscle 3244 [body tissue] in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: algae 8966 in things_that_grow (typicality 4): a well-known member of the new theme
+  linked: universe 7106 in things_that_grow (typicality 4): a well-known member of the new theme
+10. things that hang (new)
+  new theme: things_that_hang "things that hang" under things_that (after things_that_grow), pop 2, ident 2: an everyday set with no list
+  linked: curtain 12242 in things_that_hang (typicality 1): a well-known member of the new theme
+  linked: chandelier 23200 in things_that_hang (typicality 1): a well-known member of the new theme
+  linked: bat 993 [animal] in things_that_hang (typicality 1): a well-known member of the new theme
+  linked: hammock 3044 [hanging bed] in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: ornament 25674 in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: towel 3755 [bath cloth] in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: coat 4872 [clothing] in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: painting 5855 in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: swing 5940 [playground] in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: earring 21316 in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: laundry 23933 in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: stocking 25009 [christmas] in things_that_hang (typicality 2): a well-known member of the new theme
+  linked: icicle 2015 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: wind chime 25682 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: mistletoe 1790 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: sloth 1017 [animal] in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: wreath 25022 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: lantern 3027 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: piñata 25140 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: disco ball 13872 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: calendar 25378 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: ceiling fan 23579 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: bird feeder 1856 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: punching bag 15876 in things_that_hang (typicality 3): a well-known member of the new theme
+  linked: trapeze 13685 [circus] in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: stalactite 30922 in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: pendulum 25372 in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: tapestry 6671 in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: bunting 28410 [flags] in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: orangutan 1023 in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: cobweb 9114 in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: dreamcatcher 16084 in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: uvula 3302 in things_that_hang (typicality 4): a well-known member of the new theme
+  linked: wallpaper 23758 [wall covering] in things_that_hang (typicality 4): a well-known member of the new theme
+11. things that beep (new)
+  new theme: things_that_beep "things that beep" under things_that (after things_that_hang), pop 2, ident 2: things that ring, tick and squeak exist, beep did not
+  linked: alarm clock 3685 in things_that_beep (typicality 1): a well-known member of the new theme
+  linked: microwave 4722 [appliance] in things_that_beep (typicality 1): a well-known member of the new theme
+  linked: smoke detector 24277 in things_that_beep (typicality 1): a well-known member of the new theme
+  linked: phone 23319 [device] in things_that_beep (typicality 1): a well-known member of the new theme
+  linked: robot 28692 [machine] in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: timer 25393 in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: car 23150 [automobile] in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: truck 28334 [vehicle] in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: oven 4719 in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: R2-D2 49389 [robot] in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: washing machine 4725 in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: cash register 25777 in things_that_beep (typicality 2): a well-known member of the new theme
+  linked: scanner 7258 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: elevator 25775 [lift] in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: metal detector 6897 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: dishwasher 4724 [appliance] in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: smartwatch 7329 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: heart monitor 15366 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: baby monitor 3571 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: answering machine 25651 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: keypad 40169 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: walkie-talkie 4601 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: ATM 25782 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: digital watch 7367 in things_that_beep (typicality 3): a well-known member of the new theme
+  linked: pager 4633 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: Geiger counter 40265 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: sonar 21036 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: forklift 3096 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: hearing aid 14704 [ear device] in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: breathalyzer 29586 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: GPS 2415 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: Roomba 4764 [robot vacuum] in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: self-checkout 38195 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: Game Boy 7358 in things_that_beep (typicality 4): a well-known member of the new theme
+  linked: traffic light 38368 in things_that_beep (typicality 4): a well-known member of the new theme
+12. things that buzz (new)
+  new theme: things_that_buzz "things that buzz" under things_that (after things_that_beep), pop 2, ident 2: things that ring, tick and squeak exist, buzz did not
+  linked: bee 1342 [insect] in things_that_buzz (typicality 1): a well-known member of the new theme
+  linked: fly 1344 [insect] in things_that_buzz (typicality 1): a well-known member of the new theme
+  linked: mosquito 1345 in things_that_buzz (typicality 1): a well-known member of the new theme
+  linked: doorbell 23248 in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: phone 23319 [device] in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: razor 3737 [shaving tool] in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: wasp 1343 in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: hornet 1382 in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: alarm clock 3685 in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: chainsaw 4806 in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: drone 2750 [aircraft] in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: hive 10150 in things_that_buzz (typicality 2): a well-known member of the new theme
+  linked: neon sign 20174 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: hummingbird 1076 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: clippers 16333 [hair] in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: electric toothbrush 23600 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: light bulb 23481 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: kazoo 6022 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: gnat 1399 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: crowd 35500 [people] in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: smartwatch 7329 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: dragonfly 1358 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: cicada 1375 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: intercom 4638 in things_that_buzz (typicality 3): a well-known member of the new theme
+  linked: power line 49816 in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: vuvuzela 6055 in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: amplifier 11197 in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: transformer 23662 [electrical] in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: horsefly 1396 in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: pager 4633 in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: sander 23681 in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: jigsaw 4805 [saw] in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: beetle 1350 [insect] in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: locust 1385 [insect] in things_that_buzz (typicality 4): a well-known member of the new theme
+  linked: fridge 4716 [refrigerator] in things_that_buzz (typicality 4): a well-known member of the new theme
+13. things underground (new)
+  new theme: things_underground "things underground" under things_that (after things_in_space), pop 2, ident 2: a set rival games have; things in the sky and in space exist
+  linked: worm 9116 [earthworm] in things_underground (typicality 1): a well-known member of the new theme
+  linked: potato 392 [vegetable] in things_underground (typicality 1): a well-known member of the new theme
+  linked: carrot 391 [vegetable] in things_underground (typicality 1): a well-known member of the new theme
+  linked: root 30034 [plant] in things_underground (typicality 1): a well-known member of the new theme
+  linked: mole 1029 [animal] in things_underground (typicality 1): a well-known member of the new theme
+  linked: tunnel 7381 [structure] in things_underground (typicality 1): a well-known member of the new theme
+  linked: cave 1913 [rock hollow] in things_underground (typicality 2): a well-known member of the new theme
+  linked: mine 31788 [pit] in things_underground (typicality 2): a well-known member of the new theme
+  linked: basement 24074 in things_underground (typicality 2): a well-known member of the new theme
+  linked: coal 2054 in things_underground (typicality 2): a well-known member of the new theme
+  linked: subway 2647 [train] in things_underground (typicality 2): a well-known member of the new theme
+  linked: ant 1341 in things_underground (typicality 2): a well-known member of the new theme
+  linked: sewer 28812 [drain] in things_underground (typicality 3): a well-known member of the new theme
+  linked: fossil 1567 in things_underground (typicality 3): a well-known member of the new theme
+  linked: pipe 23780 [tube] in things_underground (typicality 3): a well-known member of the new theme
+  linked: bunker 4403 [shelter] in things_underground (typicality 3): a well-known member of the new theme
+  linked: burrow 10149 [animal home] in things_underground (typicality 3): a well-known member of the new theme
+  linked: well 32112 [water source] in things_underground (typicality 3): a well-known member of the new theme
+  linked: radish 405 in things_underground (typicality 3): a well-known member of the new theme
+  linked: gopher 7848 [pocket rodent] in things_underground (typicality 3): a well-known member of the new theme
+  linked: groundhog 1048 in things_underground (typicality 3): a well-known member of the new theme
+  linked: magma 31839 in things_underground (typicality 3): a well-known member of the new theme
+  linked: buried treasure 6792 in things_underground (typicality 3): a well-known member of the new theme
+  linked: oil 32326 [fuel] in things_underground (typicality 3): a well-known member of the new theme
+  linked: natural gas 32327 in things_underground (typicality 3): a well-known member of the new theme
+  linked: dungeon 6670 in things_underground (typicality 3): a well-known member of the new theme
+  linked: aquifer 31992 in things_underground (typicality 4): a well-known member of the new theme
+  linked: truffle 17618 [fungus] in things_underground (typicality 4): a well-known member of the new theme
+  linked: bedrock 31782 in things_underground (typicality 4): a well-known member of the new theme
+  linked: septic tank 23792 in things_underground (typicality 4): a well-known member of the new theme
+  linked: beet 420 in things_underground (typicality 4): a well-known member of the new theme
+  linked: peanut 17350 [legume nut] in things_underground (typicality 4): a well-known member of the new theme
+  linked: meerkat 1021 in things_underground (typicality 4): a well-known member of the new theme
+  linked: prairie dog 7840 in things_underground (typicality 4): a well-known member of the new theme
+  linked: hobbit 6988 in things_underground (typicality 4): a well-known member of the new theme
+  linked: diamond 31656 [gem] in things_underground (typicality 4): a well-known member of the new theme
+  linked: bulb 40957 [plant] in things_underground (typicality 4): a well-known member of the new theme
+14. things you climb (new)
+  new theme: things_you_climb "things you climb" under things_that (after things_you_ride), pop 2, ident 2: a set rival games have
+  linked: ladder 23153 [steps] in things_you_climb (typicality 1): a well-known member of the new theme
+  linked: tree 27965 [plant] in things_you_climb (typicality 1): a well-known member of the new theme
+  linked: mountain 1894 [landform] in things_you_climb (typicality 1): a well-known member of the new theme
+  linked: stairs 24068 [house] in things_you_climb (typicality 1): a well-known member of the new theme
+  linked: hill 1896 [rise of land] in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: rope 48700 [climbing] in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: wall 24063 [building] in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: rock 2049 [stone] in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: fence 1832 in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: jungle gym 5981 in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: monkey bars 5976 in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: Mount Everest 6757 in things_you_climb (typicality 2): a well-known member of the new theme
+  linked: cliff 1906 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: lighthouse 2474 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: beanstalk 13625 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: tower 6553 [building] in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: volcano 1912 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: bunk bed 3708 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: boulder 2052 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: treehouse 66313 [play structure] in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: fire escape 24285 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: pyramid 6619 [monument] in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: stepladder 25803 in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: Kilimanjaro 32085 [mountain] in things_you_climb (typicality 3): a well-known member of the new theme
+  linked: mast 2798 in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: trellis 1860 [garden] in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: dune 1929 in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: K2 32083 [mountain] in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: Matterhorn 32084 in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: scaffolding 6608 in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: bell tower 14001 in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: crow's nest 2833 in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: cargo net 46092 [playground] in things_you_climb (typicality 4): a well-known member of the new theme
+  linked: telephone pole 39533 in things_you_climb (typicality 4): a well-known member of the new theme
+  group in things_you_climb: tower 6553 = bell tower 14001: the same answer, or a word and its more specific form
 Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
-  colors_named_after_animals: "animal-named colors" pop 3 ident 3: 33 words, easy/middle/hard 5/15/13, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "animal-named colors" pop 3 ident 3: 32 words, easy/middle/hard 5/15/12, theme difficulty 3, 4th-easiest band 2, gap -1.0
-  colors_named_after_flowers: "flower-named colors" pop 3 ident 3: 22 words, easy/middle/hard 7/10/5, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "flower-named colors" pop 3 ident 3: 22 words, easy/middle/hard 7/10/5, theme difficulty 3, 4th-easiest band 2, gap -1.0
-  colors_named_after_foods: "colors named after foods" pop 2 ident 2: 50 words, easy/middle/hard 23/17/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "colors named after foods" pop 2 ident 2: 49 words, easy/middle/hard 23/17/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
-  drink_shades: "drink-named colors" pop 3 ident 3: 7 words, easy/middle/hard 3/2/2, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "drink-named colors" pop 3 ident 3: 10 words, easy/middle/hard 3/3/4, theme difficulty 3, 4th-easiest band 3, gap 0.0
-  shades_of_white: "shades of white" pop 2 ident 2: 28 words, easy/middle/hard 9/12/7, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "shades of white" pop 2 ident 2: 27 words, easy/middle/hard 9/12/6, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
-First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+  bell_types: "bell types" pop 3 ident 3: 9 words, easy/middle/hard 3/5/1, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "bell types" pop 3 ident 3: 12 words, easy/middle/hard 3/7/2, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  pairs_you_wear: "pairs you wear" pop 2 ident 2: 20 words, easy/middle/hard 7/9/4, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "pairs you wear" pop 2 ident 2: 27 words, easy/middle/hard 10/11/6, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_beep: new -> "things that beep" pop 2 ident 2: 35 words, easy/middle/hard 12/12/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_buzz: new -> "things that buzz" pop 2 ident 2: 35 words, easy/middle/hard 12/12/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  things_that_cut: "things that cut" pop 2 ident 2: 46 words, easy/middle/hard 15/23/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "things that cut" pop 2 ident 2: 45 words, easy/middle/hard 14/22/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_drip: "things that drip" pop 3 ident 3: 40 words, easy/middle/hard 12/15/13, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "things that drip" pop 3 ident 3: 42 words, easy/middle/hard 12/17/13, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  things_that_fold: "things that fold" pop 3 ident 3: 44 words, easy/middle/hard 15/17/12, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "things that fold" pop 3 ident 3: 50 words, easy/middle/hard 17/20/13, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  things_that_grow: new -> "things that grow" pop 2 ident 2: 34 words, easy/middle/hard 12/11/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_hang: new -> "things that hang" pop 2 ident 2: 34 words, easy/middle/hard 12/12/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  things_that_pop: "things that pop" pop 3 ident 3: 32 words, easy/middle/hard 10/13/9, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "things that pop" pop 3 ident 3: 33 words, easy/middle/hard 10/14/9, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  things_that_sting: "things that sting" pop 2 ident 2: 34 words, easy/middle/hard 10/6/18, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "things that sting" pop 2 ident 2: 37 words, easy/middle/hard 11/9/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_tick: "things that tick" pop 3 ident 3: 28 words, easy/middle/hard 14/5/9, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "things that tick" pop 3 ident 3: 29 words, easy/middle/hard 14/5/10, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  things_underground: new -> "things underground" pop 2 ident 2: 37 words, easy/middle/hard 12/14/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_you_climb: new -> "things you climb" pop 2 ident 2: 34 words, easy/middle/hard 12/12/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
 Entries left in no theme (kept in the library, not exported) 0: none
 Entries added 0: none
 Entries deleted 0: none
-library changes 11; entries changed 8; status set to rev 3; themes deleted 0; entries merged 0
-Checks: changed kinds: none
+library changes 355; entries changed 235; status set to rev 106; themes deleted 0; entries merged 0
+Checks: changed kinds: info:overlap 4836 -> 4835
 Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
 Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
 Committed family export equals the in-memory export of the library before the changes: yes
-Theme rows 3229 -> 3229; gone none; new none; theme indexes shift: none
-Theme rows whose fields changed (parent compared by id): 5: shades_of_white (index 3004 -> 3004: counts [4,5,13,5,2] -> [4,5,13,5,1]); colors_named_after_foods (index 3014 -> 3014: counts [6,18,18,7,4] -> [6,18,18,6,4]); drink_shades (index 3016 -> 3016: counts [1,2,2,1,1] -> [1,2,3,3,1], range [3,3] -> [3,4]); colors_named_after_flowers (index 3017 -> 3017: counts [1,6,10,3,3] -> [1,6,10,2,3]); colors_named_after_animals (index 3019 -> 3019: counts [0,5,16,10,3] -> [0,5,16,10,2])
-Entry rows 61431 -> 61431; first row whose entry changed: none; rows that moved: 0; added none; removed none
+Theme rows 3221 -> 3227; gone none; new things_that_grow, things_that_hang, things_that_beep, things_that_buzz, things_underground, things_you_climb; theme indexes shift: from index 3210 ("things_that_grow", was "things_that_drip") to the last index 3226
+Theme rows whose fields changed (parent compared by id): 8: things_that_sting (index 3200 -> 3200: counts [4,6,6,9,9] -> [4,7,9,8,9]); things_that_pop (index 3201 -> 3201: counts [3,7,14,7,2] -> [3,7,15,7,2]); things_that_tick (index 3202 -> 3202: counts [4,10,6,6,3] -> [4,10,5,7,3]); things_that_fold (index 3203 -> 3203: counts [5,11,18,9,5] -> [5,13,21,10,5]); things_that_cut (index 3204 -> 3204: counts [5,11,24,5,4] -> [5,10,23,6,4]); pairs_you_wear (index 3206 -> 3206: counts [5,3,9,3,1] -> [5,6,11,6,1]); bell_types (index 3208 -> 3208: counts [1,2,5,1,0] -> [1,2,7,2,0]); things_that_drip (index 3210 -> 3214: counts [3,9,15,8,5] -> [3,9,17,10,3], range [2,5] -> [2,4])
+Entry rows 61419 -> 61419; first row whose entry changed: none; rows that moved: 0; added none; removed none
 root -> alias rows 0: none; alias -> root rows 0: none
 Rows whose flags changed: 0
-Links 99991 -> 99991; rows whose link count changed: 8
-Link-index shifts: from row 557 (biscuit 567) on, link positions move
+Links 99595 -> 99826; rows whose link count changed: 234
+Link-index shifts: from row 97 (kiwi 98) on, link positions move
 Rows whose text changed: none
 New characters in the export (list them in the notice: the game font needs them): none
-Root links by theme + shown text + row: gone 4, new 4, rating changed 0
-  gone (other than the deleted themes): colors_named_after_foods: "cookie" (566), colors_named_after_flowers: "cornflower" (1747), shades_of_white: "snowfall" (1968), colors_named_after_animals: "isabelline" (7742)
-  new: drink_shades: "chartreuse" (7708), drink_shades: "sangria" (38568), drink_shades: "bordeaux" (57763), colors_named_after_flowers: "cornflower" (62956)
+Root links by theme + shown text + row: gone 5, new 236, rating changed 0
+  gone (other than the deleted themes): things_that_sting: "centipede" (1364), things_that_cut: "scalpel" (3475), things_that_drip: "stalagmite" (30923), things_that_cut: "guillotine" (33828), things_that_drip: "cooling tower" (38276)
+  new: things_that_drip: "watermelon" (97), things_underground: "carrot" (391), things_underground: "potato" (392), things_underground: "radish" (405), things_underground: "beet" (420), things_that_fold: "omelet" (532), things_that_hang: "bat" (993), things_that_hang: "sloth" (1017), things_underground: "meerkat" (1021), things_that_hang: "orangutan" (1023), things_underground: "mole" (1029), things_underground: "groundhog" (1048), things_that_buzz: "hummingbird" (1076), things_that_tick: "crocodile" (1138), things_that_grow: "tadpole" (1163), things_that_grow: "coral" (1289), things_underground: "ant" (1341), things_that_buzz: "bee" (1342), things_that_buzz: "wasp" (1343), things_that_buzz: "fly" (1344), things_that_buzz: "mosquito" (1345), things_that_buzz: "beetle" (1350), things_that_buzz: "dragonfly" (1358), things_that_buzz: "cicada" (1375), things_that_buzz: "hornet" (1382), things_that_buzz: "locust" (1385), things_that_buzz: "horsefly" (1396), things_that_buzz: "gnat" (1399), things_underground: "fossil" (1567), things_that_grow: "bonsai" (1643), things_that_grow: "sunflower" (1696), things_that_grow: "moss" (1767), things_that_grow: "grass" (1769), things_that_grow: "vine" (1773), things_that_grow: "bamboo" (1774), things_that_grow: "weed" (1775), things_that_hang: "mistletoe" (1790), things_that_grow: "hedge" (1830), things_you_climb: "fence" (1832), things_that_hang: "bird feeder" (1856), things_you_climb: "trellis" (1860), things_you_climb: "mountain" (1894), things_you_climb: "hill" (1896), things_you_climb: "cliff" (1906), things_you_climb: "volcano" (1912), things_underground: "cave" (1913), things_you_climb: "dune" (1929), things_that_grow: "icicle" (2015), things_that_hang: "icicle" (2015), things_you_climb: "rock" (2049), things_you_climb: "boulder" (2052), things_underground: "coal" (2054), things_that_grow: "crystal" (2055), things_that_beep: "GPS" (2415), things_you_climb: "lighthouse" (2474), bell_types: "Liberty" (2544), things_underground: "subway" (2647), things_that_buzz: "drone" (2750), things_you_climb: "mast" (2798), things_you_climb: "crow's nest" (2833), things_that_hang: "lantern" (3027), things_that_hang: "hammock" (3044), things_that_beep: "forklift" (3096), things_that_grow: "hair" (3190), things_that_grow: "muscle" (3244), things_that_hang: "uvula" (3302), things_that_grow: "baby" (3523), things_that_beep: "baby monitor" (3571), things_that_fold: "blanket" (3668), things_that_beep: "alarm clock" (3685), things_that_buzz: "alarm clock" (3685), things_you_climb: "bunk bed" (3708), things_that_buzz: "razor" (3737), things_that_hang: "towel" (3755), things_that_grow: "child" (3898), things_underground: "bunker" (4403), things_that_fold: "newspaper" (4567), things_that_beep: "walkie-talkie" (4601), things_that_beep: "pager" (4633), things_that_buzz: "pager" (4633), things_that_buzz: "intercom" (4638), things_that_buzz: "fridge" (4716), things_that_beep: "oven" (4719), things_that_beep: "microwave" (4722), things_that_beep: "dishwasher" (4724), things_that_beep: "washing machine" (4725), things_that_beep: "Roomba" (4764), things_that_buzz: "jigsaw" (4805), things_that_buzz: "chainsaw" (4806), things_that_fold: "shirt" (4859), things_that_hang: "coat" (4872), pairs_you_wear: "leggings" (4894), pairs_you_wear: "sunglasses" (4952), pairs_you_wear: "suspenders" (4973), pairs_you_wear: "earmuffs" (5002), things_that_hang: "painting" (5855), things_that_pop: "jack-in-the-box" (5931), things_that_hang: "swing" (5940), things_you_climb: "monkey bars" (5976), things_you_climb: "jungle gym" (5981), things_that_buzz: "kazoo" (6022), things_that_buzz: "vuvuzela" (6055), things_you_climb: "tower" (6553), things_you_climb: "scaffolding" (6608), things_you_climb: "pyramid" (6619), things_underground: "dungeon" (6670), things_that_hang: "tapestry" (6671), things_you_climb: "Mount Everest" (6757), things_underground: "buried treasure" (6792), things_that_beep: "metal detector" (6897), things_underground: "hobbit" (6988), things_that_grow: "universe" (7106), things_that_beep: "scanner" (7258), things_that_beep: "smartwatch" (7329), things_that_buzz: "smartwatch" (7329), things_that_beep: "Game Boy" (7358), things_that_beep: "digital watch" (7367), things_underground: "tunnel" (7381), things_underground: "prairie dog" (7840), things_underground: "gopher" (7848), things_that_grow: "algae" (8966), things_that_hang: "cobweb" (9114), things_underground: "worm" (9116), things_underground: "burrow" (10149), things_that_buzz: "hive" (10150), things_that_buzz: "amplifier" (11197), things_that_hang: "curtain" (12242), things_you_climb: "beanstalk" (13625), things_that_hang: "trapeze" (13685), things_that_hang: "disco ball" (13872), things_you_climb: "bell tower" (14001), bell_types: "temple" (14060), things_that_grow: "fingernail" (14211), things_that_grow: "beard" (14290), things_that_grow: "mustache" (14292), things_that_sting: "sunburn" (14337), things_that_beep: "hearing aid" (14704), things_that_fold: "wheelchair" (15183), things_that_beep: "heart monitor" (15366), things_that_hang: "punching bag" (15876), pairs_you_wear: "long johns" (16074), things_that_hang: "dreamcatcher" (16084), things_that_buzz: "clippers" (16333), things_that_sting: "iodine" (16654), things_underground: "peanut" (17350), things_that_grow: "seed" (17411), things_underground: "truffle" (17618), things_that_grow: "mushroom" (17645), things_that_buzz: "neon sign" (20174), things_that_beep: "sonar" (21036), pairs_you_wear: "boots" (21315), things_that_hang: "earring" (21316), things_that_beep: "car" (23150), things_you_climb: "ladder" (23153), things_that_hang: "chandelier" (23200), things_that_buzz: "doorbell" (23248), things_that_beep: "phone" (23319), things_that_buzz: "phone" (23319), things_that_sting: "rubbing alcohol" (23337), things_that_buzz: "light bulb" (23481), things_that_hang: "ceiling fan" (23579), things_that_buzz: "electric toothbrush" (23600), things_that_buzz: "transformer" (23662), things_that_buzz: "sander" (23681), things_that_hang: "wallpaper" (23758), things_underground: "pipe" (23780), things_underground: "septic tank" (23792), things_that_hang: "laundry" (23933), things_you_climb: "wall" (24063), things_you_climb: "stairs" (24068), things_underground: "basement" (24074), things_that_beep: "smoke detector" (24277), things_you_climb: "fire escape" (24285), pairs_you_wear: "flip-flops" (24624), things_that_hang: "stocking" (25009), things_that_hang: "wreath" (25022), things_that_hang: "piñata" (25140), things_that_hang: "pendulum" (25372), things_that_hang: "calendar" (25378), things_that_beep: "timer" (25393), things_that_beep: "answering machine" (25651), things_that_hang: "ornament" (25674), things_that_hang: "wind chime" (25682), things_that_beep: "elevator" (25775), things_that_beep: "cash register" (25777), things_that_beep: "ATM" (25782), things_you_climb: "stepladder" (25803), things_that_grow: "tree" (27965), things_you_climb: "tree" (27965), things_that_fold: "flag" (28224), things_that_grow: "flower" (28286), things_that_beep: "truck" (28334), things_that_grow: "shadow" (28397), things_that_hang: "bunting" (28410), things_that_beep: "robot" (28692), things_underground: "sewer" (28812), things_that_beep: "breathalyzer" (29586), things_underground: "root" (30034), things_that_grow: "mold" (30330), things_that_grow: "stalactite" (30922), things_that_hang: "stalactite" (30922), things_that_grow: "snowball" (31291), things_underground: "diamond" (31656), things_underground: "bedrock" (31782), things_underground: "mine" (31788), things_underground: "magma" (31839), things_underground: "aquifer" (31992), things_you_climb: "K2" (32083), things_you_climb: "Matterhorn" (32084), things_you_climb: "Kilimanjaro" (32085), things_underground: "well" (32112), things_underground: "oil" (32326), things_underground: "natural gas" (32327), things_that_grow: "teenager" (32518), things_that_grow: "debt" (33862), things_that_grow: "interest" (33873), things_that_cut: "letter opener" (34778), things_that_buzz: "crowd" (35500), things_that_beep: "self-checkout" (38195), things_that_beep: "traffic light" (38368), things_that_drip: "sap" (39065), things_you_climb: "telephone pole" (39533), things_that_drip: "wet dog" (39697), things_that_beep: "keypad" (40169), things_that_drip: "shower head" (40230), things_that_beep: "Geiger counter" (40265), things_underground: "bulb" (40957), things_that_grow: "population" (41677), things_that_grow: "antlers" (45162), things_you_climb: "cargo net" (46092), bell_types: "diving" (47659), things_you_climb: "rope" (48700), things_that_beep: "R2-D2" (49389), things_that_buzz: "power line" (49816), things_you_climb: "treehouse" (66313), things_that_sting: "paper cut" (66871)
   rating: none
 new issues: none
 
-How the branch was reviewed (Qualities, 2026-11-25): all 31 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
-  - None of the 4 new links existed earlier and was removed; the one hit, cornflower in flower-named colors, is the flower 1747, and the color 62956 takes its place in this batch (all 217 library versions and 177 batch notices and reviews checked).
+How the branch was reviewed (Qualities, 2026-11-25): all 21 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 236 new links existed earlier and was removed (all 215 library versions and 173 batch notices and reviews checked).
   - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
 
+Considered and left out:
+  - things underground: coffin, tomb, crypt and catacomb (left out of dark places in v462 too)
+
 For Simon:
-  1. snowfall leaves shades of white (weather; snow stays), cookie leaves colors named after foods (not the name of a color) and isabelline leaves animal-named colors (not named after an animal). All three stay in their other themes.
-  2. cornflower [flower] 1747 is replaced by cornflower [color] 62956 in flower-named colors; the tile text does not change.
-  3. drink-named colors had seven words and gains sangria, chartreuse and bordeaux (the color senses).
+  1. bomb leaves things that tick (time bomb, the one that ticks, stays), which also settles the overlap note bomb / time bomb. It stays in military, modern weapons, power-ups and pickups and silent b words.
+  2. guillotine and scalpel leave things that cut. scalpel stays in sharp things; guillotine left sharp things in v474. Both stay in their other themes.
+  3. stalagmite grows from drips on the floor and cooling tower is a tower at a power station: both leave things that drip. centipede bites, so it leaves things that sting.

@@ -1,8 +1,4 @@
-How the branch was reviewed (Qualities, 2026-11-25): all 24 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
-  - None of the 45 new links existed earlier and was removed (all 216 library versions and 175 batch notices and reviews checked).
-  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
-
-For Simon:
-  1. bitter orange leaves bitter foods: its tile shows only "orange", which makes no sense there. This also settles the overlap note orange / orange pith. It stays in citrus fruits and orange varieties.
-  2. brine leaves salty foods (the entry is a verb), sea grass leaves umami foods (seaweed stays), and mechoui and ful medames leave spicy dishes of Africa (neither is spicy).
-  3. 33 of the 45 new links go to short lists of 9 to 16 words: baked treats, bar snacks (eight each), ocean ingredients, Japanese ingredients, creamy sauces and dips, cured fish and creamy desserts.
+Approvals this batch needs (Simon, 2026-11-25):
+- nice [pleasant] in words for good is dropped (Simon, 2026-11-25): beside Nice the city it would raise contract-dup-root 170 -> 171. mammoth [huge] adds no warning (mammoth [animal] is common too). No baseline change.
+- js/caselint-allow.js: key 21|things_with_layers (Earth the planet beside earth [soil]) added.
+The game notice for v460-v475 is in tools/gen/batch474-notice.txt (one notice).

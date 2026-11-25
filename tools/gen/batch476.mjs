@@ -1,5 +1,5 @@
-// Library batch v476 (for Simon's review): Qualities, colors branch (31 themes read word by word, 2026-11-25).
-// Words that do not fit go and well-known words are added, about 8 a theme at most.
+// Library batch v476 (for Simon's review): Qualities, things that… branch (21 themes read word by word, 2026-11-25).
+// Words that do not fit go and well-known words are added, about 8 a theme at most; new themes: things that grow, things that hang, things that beep, things that buzz, things underground, things you climb.
 // Base: library v475. Everything works by entry id + text, never by position; every step is skipped when it is done already or its entry
 // is gone or changed (rerun: 0 changes). Every entry this batch changes gets status "rev".
 // Run: node tools/gen/batch476.mjs [--apply | --out <path>] [--lib <path>] [--changes <path>] [--review <path>]
@@ -306,21 +306,60 @@ const rateL = (tid, list, why) => { for (const [id, text, typ] of list) { const 
 const addKin = (a, b, why) => { if (!a || !b || a.id === b.id || (a.kin || []).includes(b.id)) return; setKin(P, a, b, true); n++; reindex(P); A.push(`kin: ${lab(a)}${a.gloss ? ' [' + a.gloss + ']' : ''} <-> ${lab(b)}${b.gloss ? ' [' + b.gloss + ']' : ''}: ${why}`); };
 const N = {};
 
-sec("1. shades of white");
-outL("shades_of_white", [[1968, "snowfall", "weather, not a color (snow stays)"]]);
+sec("1. things that sting");
+outL("things_that_sting", [[1364, "centipede", "it bites, it does not sting"]]);
+linkL("things_that_sting", [[14337, "sunburn", 2], [66871, "paper cut", 3], [16654, "iodine", 3], [23337, "rubbing alcohol", 3]], "well known here; it was not linked");
 
-sec("2. colors named after foods");
-outL("colors_named_after_foods", [[566, "cookie", "not the name of a color"]]);
+sec("2. things that pop");
+linkL("things_that_pop", [[5931, "jack-in-the-box", 3]], "well known here; it was not linked");
 
-sec("3. drink-named colors");
-linkL("drink_shades", [[38568, "sangria", 3], [7708, "chartreuse", 4], [57763, "bordeaux", 4]], "well known here; it was not linked");
+sec("3. things that tick");
+outL("things_that_tick", [[4456, "bomb", "left out at the review (time bomb, the one that ticks, stays)"]]);
+linkL("things_that_tick", [[1138, "crocodile", 4]], "well known here; it was not linked");
 
-sec("4. flower-named colors");
-outL("colors_named_after_flowers", [[1747, "cornflower", "the flower (the color takes its place)"]]);
-linkL("colors_named_after_flowers", [[62956, "cornflower", 3]], "well known here; it was not linked");
+sec("4. things that fold");
+linkL("things_that_fold", [[4567, "newspaper", 2], [4859, "shirt", 2], [3668, "blanket", 3], [15183, "wheelchair", 3], [532, "omelet", 3], [28224, "flag", 4]], "well known here; it was not linked");
 
-sec("5. animal-named colors");
-outL("colors_named_after_animals", [[7742, "isabelline", "not named after an animal (said to come from the name Isabella)"]]);
+sec("5. things that cut");
+outL("things_that_cut", [[33828, "guillotine", "left out at the review"], [3475, "scalpel", "left out at the review"]]);
+linkL("things_that_cut", [[34778, "letter opener", 4]], "well known here; it was not linked");
+
+sec("6. pairs you wear");
+linkL("pairs_you_wear", [[21315, "boots", 2], [4952, "sunglasses", 2], [4894, "leggings", 2], [24624, "flip-flops", 3], [5002, "earmuffs", 3], [4973, "suspenders", 4], [16074, "long johns", 4]], "well known here; it was not linked");
+
+sec("7. bell types");
+{ const e = live(2544, "Liberty Bell"); if (e && !e.aliasOf) linkE(e, "bell_types", 3, "well known here; it was not linked", { show: "Liberty" }); }
+{ const e = live(14060, "temple bell"); if (e && !e.aliasOf) linkE(e, "bell_types", 3, "well known here; it was not linked", { show: "temple" }); }
+{ const e = live(47659, "diving bell"); if (e && !e.aliasOf) linkE(e, "bell_types", 4, "well known here; it was not linked", { show: "diving" }); }
+
+sec("8. things that drip");
+outL("things_that_drip", [[30923, "stalagmite", "it grows from drips on the floor, it does not drip"], [38276, "cooling tower", "a tower at a power station"]]);
+linkL("things_that_drip", [[40230, "shower head", 3], [39697, "wet dog", 3], [97, "watermelon", 4], [39065, "sap", 4]], "well known here; it was not linked");
+
+sec("9. things that grow (new)");
+newTheme({ id: "things_that_grow", name: "things that grow", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "flower, tree, hair, grass, baby" }, "things_that_squeak", "a set rival games have");
+linkL("things_that_grow", [[28286, "flower", 1], [27965, "tree", 1], [3190, "hair", 1], [1769, "grass", 1], [3523, "baby", 1], [14290, "beard", 2], [17645, "mushroom", 2], [1696, "sunflower", 2], [3898, "child", 2], [1775, "weed", 2], [14211, "fingernail", 2], [17411, "seed", 2], [1767, "moss", 3], [30330, "mold", 3], [1774, "bamboo", 3], [1773, "vine", 3], [1163, "tadpole", 3], [32518, "teenager", 3], [1830, "hedge", 3], [14292, "mustache", 3], [2055, "crystal", 3], [2015, "icicle", 3], [45162, "antlers", 3], [1289, "coral", 4], [30922, "stalactite", 4], [1643, "bonsai", 4], [33862, "debt", 4], [33873, "interest", 4], [31291, "snowball", 4], [28397, "shadow", 4], [41677, "population", 4], [3244, "muscle", 4], [8966, "algae", 4], [7106, "universe", 4]], "a well-known member of the new theme");
+
+sec("10. things that hang (new)");
+newTheme({ id: "things_that_hang", name: "things that hang", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "curtain, chandelier, bat, hammock, ornament" }, "things_that_grow", "an everyday set with no list");
+linkL("things_that_hang", [[12242, "curtain", 1], [23200, "chandelier", 1], [993, "bat", 1], [3044, "hammock", 2], [25674, "ornament", 2], [3755, "towel", 2], [4872, "coat", 2], [5855, "painting", 2], [5940, "swing", 2], [21316, "earring", 2], [23933, "laundry", 2], [25009, "stocking", 2], [2015, "icicle", 3], [25682, "wind chime", 3], [1790, "mistletoe", 3], [1017, "sloth", 3], [25022, "wreath", 3], [3027, "lantern", 3], [25140, "piñata", 3], [13872, "disco ball", 3], [25378, "calendar", 3], [23579, "ceiling fan", 3], [1856, "bird feeder", 3], [15876, "punching bag", 3], [13685, "trapeze", 4], [30922, "stalactite", 4], [25372, "pendulum", 4], [6671, "tapestry", 4], [28410, "bunting", 4], [1023, "orangutan", 4], [9114, "cobweb", 4], [16084, "dreamcatcher", 4], [3302, "uvula", 4], [23758, "wallpaper", 4]], "a well-known member of the new theme");
+
+sec("11. things that beep (new)");
+newTheme({ id: "things_that_beep", name: "things that beep", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "alarm clock, microwave, smoke detector, phone, robot" }, "things_that_hang", "things that ring, tick and squeak exist, beep did not");
+linkL("things_that_beep", [[3685, "alarm clock", 1], [4722, "microwave", 1], [24277, "smoke detector", 1], [23319, "phone", 1], [28692, "robot", 2], [25393, "timer", 2], [23150, "car", 2], [28334, "truck", 2], [4719, "oven", 2], [49389, "R2-D2", 2], [4725, "washing machine", 2], [25777, "cash register", 2], [7258, "scanner", 3], [25775, "elevator", 3], [6897, "metal detector", 3], [4724, "dishwasher", 3], [7329, "smartwatch", 3], [15366, "heart monitor", 3], [3571, "baby monitor", 3], [25651, "answering machine", 3], [40169, "keypad", 3], [4601, "walkie-talkie", 3], [25782, "ATM", 3], [7367, "digital watch", 3], [4633, "pager", 4], [40265, "Geiger counter", 4], [21036, "sonar", 4], [3096, "forklift", 4], [14704, "hearing aid", 4], [29586, "breathalyzer", 4], [2415, "GPS", 4], [4764, "Roomba", 4], [38195, "self-checkout", 4], [7358, "Game Boy", 4], [38368, "traffic light", 4]], "a well-known member of the new theme");
+
+sec("12. things that buzz (new)");
+newTheme({ id: "things_that_buzz", name: "things that buzz", parent: "things_that", pop: 2, ident: 2, tkind: "property", note: "bee, fly, mosquito, doorbell, phone" }, "things_that_beep", "things that ring, tick and squeak exist, buzz did not");
+linkL("things_that_buzz", [[1342, "bee", 1], [1344, "fly", 1], [1345, "mosquito", 1], [23248, "doorbell", 2], [23319, "phone", 2], [3737, "razor", 2], [1343, "wasp", 2], [1382, "hornet", 2], [3685, "alarm clock", 2], [4806, "chainsaw", 2], [2750, "drone", 2], [10150, "hive", 2], [20174, "neon sign", 3], [1076, "hummingbird", 3], [16333, "clippers", 3], [23600, "electric toothbrush", 3], [23481, "light bulb", 3], [6022, "kazoo", 3], [1399, "gnat", 3], [35500, "crowd", 3], [7329, "smartwatch", 3], [1358, "dragonfly", 3], [1375, "cicada", 3], [4638, "intercom", 3], [49816, "power line", 4], [6055, "vuvuzela", 4], [11197, "amplifier", 4], [23662, "transformer", 4], [1396, "horsefly", 4], [4633, "pager", 4], [23681, "sander", 4], [4805, "jigsaw", 4], [1350, "beetle", 4], [1385, "locust", 4], [4716, "fridge", 4]], "a well-known member of the new theme");
+
+sec("13. things underground (new)");
+newTheme({ id: "things_underground", name: "things underground", parent: "things_that", pop: 2, ident: 2, tkind: "category", note: "worm, potato, mole, tunnel, coal" }, "things_in_space", "a set rival games have; things in the sky and in space exist");
+linkL("things_underground", [[9116, "worm", 1], [392, "potato", 1], [391, "carrot", 1], [30034, "root", 1], [1029, "mole", 1], [7381, "tunnel", 1], [1913, "cave", 2], [31788, "mine", 2], [24074, "basement", 2], [2054, "coal", 2], [2647, "subway", 2], [1341, "ant", 2], [28812, "sewer", 3], [1567, "fossil", 3], [23780, "pipe", 3], [4403, "bunker", 3], [10149, "burrow", 3], [32112, "well", 3], [405, "radish", 3], [7848, "gopher", 3], [1048, "groundhog", 3], [31839, "magma", 3], [6792, "buried treasure", 3], [32326, "oil", 3], [32327, "natural gas", 3], [6670, "dungeon", 3], [31992, "aquifer", 4], [17618, "truffle", 4], [31782, "bedrock", 4], [23792, "septic tank", 4], [420, "beet", 4], [17350, "peanut", 4], [1021, "meerkat", 4], [7840, "prairie dog", 4], [6988, "hobbit", 4], [31656, "diamond", 4], [40957, "bulb", 4]], "a well-known member of the new theme");
+
+sec("14. things you climb (new)");
+newTheme({ id: "things_you_climb", name: "things you climb", parent: "things_that", pop: 2, ident: 2, tkind: "category", note: "ladder, tree, mountain, stairs, rope" }, "things_you_ride", "a set rival games have");
+linkL("things_you_climb", [[23153, "ladder", 1], [27965, "tree", 1], [1894, "mountain", 1], [24068, "stairs", 1], [1896, "hill", 2], [48700, "rope", 2], [24063, "wall", 2], [2049, "rock", 2], [1832, "fence", 2], [5981, "jungle gym", 2], [5976, "monkey bars", 2], [6757, "Mount Everest", 2], [1906, "cliff", 3], [2474, "lighthouse", 3], [13625, "beanstalk", 3], [6553, "tower", 3], [1912, "volcano", 3], [3708, "bunk bed", 3], [2052, "boulder", 3], [66313, "treehouse", 3], [24285, "fire escape", 3], [6619, "pyramid", 3], [25803, "stepladder", 3], [32085, "Kilimanjaro", 3], [2798, "mast", 4], [1860, "trellis", 4], [1929, "dune", 4], [32083, "K2", 4], [32084, "Matterhorn", 4], [6608, "scaffolding", 4], [14001, "bell tower", 4], [2833, "crow's nest", 4], [46092, "cargo net", 4], [39533, "telephone pole", 4]], "a well-known member of the new theme");
+grp("things_you_climb", [6553, 14001], 'the same answer, or a word and its more specific form');
 // ---------- status ----------
 let revSet = 0, touched = 0;
 for (const e of P.entries) { const s = snap.get(e.id); if (s === JSON.stringify({ ...e, status: undefined }) && !confirm.has(e.id)) continue; touched++; if (e.status !== 'rev') { e.status = 'rev'; revSet++; n++; } }
@@ -378,7 +417,7 @@ function shownMap(x) {
 
 const spreads = [...touchedT].filter(t => prof0[t] || ix.theme.has(t)).sort().map(t => `  ${t}: ${prof0[t] || 'new'} -> ${profile(t)}`);
 const FS1 = firstSynLine();
-const summary = [`Library batch v476 (for Simon's review): Qualities, colors branch`,
+const summary = [`Library batch v476 (for Simon's review): Qualities, things that… branch`,
   ...A.map(x => x.startsWith('#') ? x.slice(1) : x.startsWith('  ') ? x : '  ' + x),
   'Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:', ...spreads,
   `First synonym aliases harder than root familiarity + 1: ${FS0.bad.length} -> ${FS1.bad.length}${FS1.bad.length ? ': ' + FS1.bad.join(', ') : ''}`,
