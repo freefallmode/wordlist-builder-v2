@@ -36,7 +36,7 @@ v470-v473 (motion, materials, colors, things with)
 
 ## B. Decisions for Simon
 
-1. Topic-word compounds. v462-v463 took red-hot, white-hot, piping hot, stone cold and pitch dark out of the words-for themes "as v447 found". v447 took out only the bare words hot, cold and dark, so this extends the rule and loses easy answers. Keep the extension, or put them back?
+1. Topic-word compounds. v462-v463 took red-hot, white-hot, piping hot, stone cold and pitch dark out of the words-for themes "as v447 found". v447 took out only the bare words hot, cold and dark, so this extends the rule and loses easy answers. **Decided (Simon, 2026-11-25): keep Julia's removal.** Recorded in DESIGN-entries.md, Rules in force.
 2. cold_things: polar bear and penguin went out ("not cold themselves"), but igloo, winter, Alaska, ski slope stay. Put them back at t3, or prune the associations too?
 3. winter_vehicles: luge and skeleton out (the sport), bobsled stays (also the sport); snow tube is not a vehicle; shares half its words with polar_vehicles. Add a luge [sled] entry and fix bobsled, or merge into polar_vehicles?
 4. winged_creatures: v470 added seven mythical creatures; now 17 of its 23 words are in things_that_fly and 17 in things_with_wings. Revert the mythical additions, or merge it into things_with_wings?
