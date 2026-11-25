@@ -1,0 +1,150 @@
+Library batch v470 (for Simon's review): Qualities, motion branch: words that do not fit out and well-known words added.
+1. motion verbs
+  linked: jog 43994 in motion_verbs (typicality 2): well known here; it was not linked
+  linked: wander 16915 in motion_verbs (typicality 2): well known here; it was not linked
+  linked: leap 10356 [jump] in motion_verbs (typicality 2): well known here; it was not linked
+  linked: limp 16912 [walk] in motion_verbs (typicality 3): well known here; it was not linked
+  linked: sneak 67310 [move quietly] in motion_verbs (typicality 3): well known here; it was not linked
+  linked: strut 50133 [walk] in motion_verbs (typicality 4): well known here; it was not linked
+  new entry: hurtle 68953 verb, common, familiarity 3: a common word that was not in the library
+  linked: hurtle 68953 in motion_verbs (typicality 4): a common word that was not in the library
+2. things that fly
+  linked: mosquito 1345 in things_that_fly (typicality 2): well known here; it was not linked
+  linked: ladybug 1351 in things_that_fly (typicality 2): well known here; it was not linked
+  linked: UFO 62652 [alien craft] in things_that_fly (typicality 2): well known here; it was not linked
+  linked: hummingbird 1076 in things_that_fly (typicality 2): well known here; it was not linked
+  linked: magic carpet 22382 [flying carpet] in things_that_fly (typicality 3): well known here; it was not linked
+  linked: Tinker Bell 22490 in things_that_fly (typicality 3): well known here; it was not linked
+3. winged creatures
+  linked: fairy 6989 [mythical being] in winged_creatures (typicality 2): well known here; it was not linked
+  linked: dragon 6982 [creature] in winged_creatures (typicality 2): well known here; it was not linked
+  linked: mosquito 1345 in winged_creatures (typicality 2): well known here; it was not linked
+  linked: hornet 1382 in winged_creatures (typicality 3): well known here; it was not linked
+  linked: Pegasus 6941 [winged horse] in winged_creatures (typicality 3): well known here; it was not linked
+  linked: phoenix 6962 [bird] in winged_creatures (typicality 3): well known here; it was not linked
+  linked: griffin 6944 in winged_creatures (typicality 3): well known here; it was not linked
+  linked: harpy 6963 [monster] in winged_creatures (typicality 4): well known here; it was not linked
+  linked: sphinx 6620 [myth] in winged_creatures (typicality 4): well known here; it was not linked
+4. things that roll
+  out of things_that_roll: globe 2396 [world model]: it spins on a stand (stays in maps_and_globes, navigation_tools, classroom_items, kinds_of_maps, round_things)
+  out of things_that_roll: gyroscope 39789: it spins, it does not roll (stays in things_that_spin)
+  out of things_that_roll: hoop 39780 [basketball]: the basketball hoop does not roll (stays in basketball_terms)
+  out of things_that_roll: maki 53560: a roll, but it does not roll (stays in sushi_types)
+  linked: golf ball 42649 in things_that_roll (typicality 2): well known here; it was not linked
+  linked: hula hoop 5937 in things_that_roll (typicality 3): well known here; it was not linked
+  linked: pencil 12007 [writing tool] in things_that_roll (typicality 3): well known here; it was not linked
+  linked: hedgehog 1003 [animal] in things_that_roll (typicality 3): well known here; it was not linked
+  linked: office chair 23216 in things_that_roll (typicality 3): well known here; it was not linked
+  linked: eyeball 3351 [eye] in things_that_roll (typicality 4): well known here; it was not linked
+  linked: hay bale 38169 in things_that_roll (typicality 4): well known here; it was not linked
+  linked: credits 6396 [film] in things_that_roll (typicality 4): well known here; it was not linked
+5. things that spin
+  linked: globe 2396 [world model] in things_that_spin (typicality 2): well known here; it was not linked
+  linked: helicopter 2712 in things_that_spin (typicality 2): well known here; it was not linked
+  linked: disco ball 13872 in things_that_spin (typicality 2): well known here; it was not linked
+  linked: CD 49347 [disc] in things_that_spin (typicality 3): well known here; it was not linked
+  linked: revolving door 24118 in things_that_spin (typicality 3): well known here; it was not linked
+  linked: Frisbee 5933 in things_that_spin (typicality 3): well known here; it was not linked
+  linked: blender 4731 in things_that_spin (typicality 3): well known here; it was not linked
+6. things that bounce
+  out of things_that_bounce: rocking horse 5930: it rocks (stays in toys_and_play, attic, toys, things_made_of_wood, traditional_playthings)
+  out of things_that_bounce: tire swing 39815: it swings (stays in playground, things_made_of_rubber)
+  out of things_that_bounce: dribble 50200 [ball skill]: a verb among things (stays in soccer_terms, basketball_terms, sports_verbs, ball_skills)
+  linked: volleyball 5194 in things_that_bounce (typicality 2): well known here; it was not linked
+  linked: soccer ball 42648 in things_that_bounce (typicality 2): well known here; it was not linked
+  linked: golf ball 42649 in things_that_bounce (typicality 3): well known here; it was not linked
+  linked: wallaby 7896 in things_that_bounce (typicality 3): well known here; it was not linked
+  linked: lamb 25044 [animal] in things_that_bounce (typicality 4): well known here; it was not linked
+7. ball types
+8. things that float
+  out of things_that_float: sea grass 1291 [seagrass]: it grows under water (stays in foraging_finds, water_plants, rock_pool, beachcombing_finds, coastal_plants, ocean, beach, chip_flavors, sea_life, umami_foods, green_things, plants)
+  linked: bubble 39566 [air bubble] in things_that_float (typicality 2): well known here; it was not linked
+  linked: leaf 30033 in things_that_float (typicality 3): well known here; it was not linked
+  linked: water lily 1791 in things_that_float (typicality 3): well known here; it was not linked
+  linked: feather 8360 [bird] in things_that_float (typicality 3): well known here; it was not linked
+  linked: astronaut 7115 in things_that_float (typicality 4): well known here; it was not linked
+  linked: marshmallow 611 in things_that_float (typicality 4): well known here; it was not linked
+9. fast things
+  out of fast_things: quicksilver 22441 [mercury]: a liquid metal, not fast (stays in alchemy)
+  out of fast_things: stoat 1044: not known for its speed (stays in mammals, weasel_family, european_animals, woodland_animals, british_wildlife)
+  linked: racehorse 1550 in fast_things (typicality 2): well known here; it was not linked
+  linked: Ferrari 46570 in fast_things (typicality 2): well known here; it was not linked
+  linked: arrow 20782 [weapon] in fast_things (typicality 2): well known here; it was not linked
+  linked: gazelle 7923 in fast_things (typicality 3): well known here; it was not linked
+  linked: roadrunner 9731 in fast_things (typicality 3): well known here; it was not linked
+  linked: ambulance 3088 in fast_things (typicality 3): well known here; it was not linked
+  linked: jet ski 29570 in fast_things (typicality 3): well known here; it was not linked
+  linked: Bugatti 46577 in fast_things (typicality 4): well known here; it was not linked
+10. ways to jump
+  out of ways_to_jump: lunge 15841 [exercise]: a step, not a jump (stays in exercises)
+  linked: backflip 11833 in ways_to_jump (typicality 3): well known here; it was not linked
+  linked: dunk 42715 in ways_to_jump (typicality 3): well known here; it was not linked
+  linked: parkour 5625 in ways_to_jump (typicality 4): well known here; it was not linked
+11. slow things
+  out of slow_things: sundial 1871: a clock, not slow (stays in garden, clocks_and_calendars, garden_features, things_with_faces, inventions, clock_types, middle_eastern_inventions, sun_blank)
+  linked: zombie 12536 [undead] in slow_things (typicality 2): well known here; it was not linked
+  linked: worm 9116 [earthworm] in slow_things (typicality 2): well known here; it was not linked
+  linked: koala 998 in slow_things (typicality 3): well known here; it was not linked
+  linked: donkey 158 [farm animal] in slow_things (typicality 3): well known here; it was not linked
+  linked: escalator 29567 in slow_things (typicality 3): well known here; it was not linked
+  linked: steamroller 3128 in slow_things (typicality 3): well known here; it was not linked
+  linked: erosion 31915 in slow_things (typicality 4): well known here; it was not linked
+  linked: evolution 40865 in slow_things (typicality 4): well known here; it was not linked
+12. things that sink
+  out of things_that_sink: drain 23628 [bathroom]: water goes down it, it does not sink (stays in bathroom_fixtures, bath_time, plumbing_words, bathroom)
+  out of things_that_sink: dead weight 39523: an idiom, not a thing (stays in heavy_things)
+  linked: nail 23702 [fastener] in things_that_sink (typicality 2): well known here; it was not linked
+  linked: spoon 20136 [cutlery] in things_that_sink (typicality 2): well known here; it was not linked
+  linked: hammer 316 [tool] in things_that_sink (typicality 3): well known here; it was not linked
+  linked: ring 4948 [jewelry] in things_that_sink (typicality 3): well known here; it was not linked
+  linked: golf ball 42649 in things_that_sink (typicality 3): well known here; it was not linked
+  linked: Venice 2232 [city] in things_that_sink (typicality 4): well known here; it was not linked
+groups
+  group in things_that_spin: helicopter 2712 = helicopter blade 39796: a word and its more specific form: one answer
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  fast_things: "fast things" pop 2 ident 3: 42 words, easy/middle/hard 15/14/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "fast things" pop 2 ident 3: 48 words, easy/middle/hard 18/18/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  motion_verbs: "motion verbs" pop 2 ident 2: 48 words, easy/middle/hard 13/21/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "motion verbs" pop 2 ident 2: 55 words, easy/middle/hard 16/23/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  slow_things: "slow things" pop 2 ident 2: 35 words, easy/middle/hard 7/14/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "slow things" pop 2 ident 2: 42 words, easy/middle/hard 9/18/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_bounce: "things that bounce" pop 2 ident 3: 35 words, easy/middle/hard 12/8/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things that bounce" pop 2 ident 3: 37 words, easy/middle/hard 14/10/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_float: "things that float" pop 2 ident 3: 44 words, easy/middle/hard 16/15/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things that float" pop 2 ident 3: 49 words, easy/middle/hard 17/18/14, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_fly: "things that fly" pop 2 ident 2: 51 words, easy/middle/hard 23/15/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "things that fly" pop 2 ident 2: 57 words, easy/middle/hard 27/17/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_that_roll: "things that roll" pop 2 ident 3: 38 words, easy/middle/hard 11/13/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "things that roll" pop 2 ident 3: 42 words, easy/middle/hard 12/16/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  things_that_sink: "things that sink" pop 2 ident 3: 34 words, easy/middle/hard 9/14/11, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things that sink" pop 2 ident 3: 38 words, easy/middle/hard 11/17/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_spin: "things that spin" pop 2 ident 3: 45 words, easy/middle/hard 10/21/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "things that spin" pop 2 ident 3: 52 words, easy/middle/hard 13/25/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  ways_to_jump: "ways to jump" pop 3 ident 3: 43 words, easy/middle/hard 10/14/19, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "ways to jump" pop 3 ident 3: 45 words, easy/middle/hard 10/16/19, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  winged_creatures: "winged creatures" pop 2 ident 3: 14 words, easy/middle/hard 11/2/1, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "winged creatures" pop 2 ident 3: 23 words, easy/middle/hard 14/6/3, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 1: hurtle 68953
+Entries deleted 0: none
+library changes 131; entries changed 83; status set to rev 42; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 284 -> 283, info:overlap 4828 -> 4832
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3218 -> 3218; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 11: motion_verbs (index 3136 -> 3136: counts [3,10,21,11,3] -> [3,13,23,13,3]); things_that_fly (index 3137 -> 3137: counts [4,19,16,8,5] -> [4,23,19,8,5]); winged_creatures (index 3138 -> 3138: counts [1,10,3,1,0] -> [1,13,8,4,0], range [2,2] -> [2,3]); things_that_roll (index 3139 -> 3139: counts [3,8,13,11,4] -> [3,9,16,12,3]); things_that_spin (index 3140 -> 3140: counts [2,8,21,10,4] -> [2,11,25,10,4]); things_that_bounce (index 3141 -> 3141: counts [5,7,9,11,4] -> [5,9,11,11,2], range [1,5] -> [1,4]); things_that_float (index 3143 -> 3143: counts [4,12,15,11,2] -> [4,13,18,13,2]); fast_things (index 3144 -> 3144: counts [5,10,14,10,3] -> [5,13,18,11,1]); ways_to_jump (index 3145 -> 3145: counts [5,5,14,12,8] -> [5,5,16,13,7]); slow_things (index 3146 -> 3146: counts [4,3,15,8,6] -> [4,5,19,10,5]); things_that_sink (index 3147 -> 3147: counts [4,5,14,8,3] -> [4,7,17,9,1])
+Entry rows 61432 -> 61434; first row whose entry changed: 29246 (erosion 31915, was weathering 31916); rows that moved: 32186; added erosion 31915 (row 29246), hurtle 68953 (row 61433); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 99328 -> 99387; rows whose link count changed: 80
+Link-index shifts: from row 156 (llama 160) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 14, new 73, rating changed 0
+  gone (other than the deleted themes): fast_things: "stoat" (1044), things_that_float: "sea grass" (1291), slow_things: "sundial" (1871), things_that_roll: "globe" (2396), things_that_bounce: "rocking horse" (5930), ways_to_jump: "lunge" (15841), fast_things: "quicksilver" (22441), things_that_sink: "drain" (23628), things_that_sink: "dead weight" (39523), things_that_roll: "hoop" (39780), things_that_roll: "gyroscope" (39789), things_that_bounce: "tire swing" (39815), things_that_bounce: "dribble" (50200), things_that_roll: "maki" (53560)
+  new: slow_things: "donkey" (158), things_that_sink: "hammer" (316), things_that_float: "marshmallow" (611), slow_things: "koala" (998), things_that_roll: "hedgehog" (1003), things_that_fly: "hummingbird" (1076), things_that_fly: "mosquito" (1345), winged_creatures: "mosquito" (1345), things_that_fly: "ladybug" (1351), winged_creatures: "hornet" (1382), fast_things: "racehorse" (1550), things_that_float: "water lily" (1791), things_that_sink: "Venice" (2232), things_that_spin: "globe" (2396), things_that_spin: "helicopter" (2712), fast_things: "ambulance" (3088), slow_things: "steamroller" (3128), things_that_roll: "eyeball" (3351), things_that_spin: "blender" (4731), things_that_sink: "ring" (4948), things_that_bounce: "volleyball" (5194), ways_to_jump: "parkour" (5625), things_that_spin: "Frisbee" (5933), things_that_roll: "hula hoop" (5937), things_that_roll: "credits" (6396), winged_creatures: "sphinx" (6620), winged_creatures: "Pegasus" (6941), winged_creatures: "griffin" (6944), winged_creatures: "phoenix" (6962), winged_creatures: "harpy" (6963), winged_creatures: "dragon" (6982), winged_creatures: "fairy" (6989), things_that_float: "astronaut" (7115), things_that_bounce: "wallaby" (7896), fast_things: "gazelle" (7923), things_that_float: "feather" (8360), slow_things: "worm" (9116), fast_things: "roadrunner" (9731), motion_verbs: "leap" (10356), ways_to_jump: "backflip" (11833), things_that_roll: "pencil" (12007), slow_things: "zombie" (12536), things_that_spin: "disco ball" (13872), motion_verbs: "limp" (16912), motion_verbs: "wander" (16915), things_that_sink: "spoon" (20136), fast_things: "arrow" (20782), things_that_fly: "magic carpet" (22382), things_that_fly: "Tinker Bell" (22490), things_that_roll: "office chair" (23216), things_that_sink: "nail" (23702), things_that_spin: "revolving door" (24118), things_that_bounce: "lamb" (25044), slow_things: "escalator" (29567), fast_things: "jet ski" (29570), things_that_float: "leaf" (30033), slow_things: "erosion" (31915), things_that_roll: "hay bale" (38169), things_that_float: "bubble" (39566), slow_things: "evolution" (40865), things_that_bounce: "soccer ball" (42648), things_that_roll: "golf ball" (42649), things_that_bounce: "golf ball" (42649), things_that_sink: "golf ball" (42649), ways_to_jump: "dunk" (42715), motion_verbs: "jog" (43994), fast_things: "Ferrari" (46570), fast_things: "Bugatti" (46577), things_that_spin: "CD" (49347), motion_verbs: "strut" (50133), things_that_fly: "UFO" (62652), motion_verbs: "sneak" (67310), motion_verbs: "hurtle" (68953)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Qualities, 2026-11-25): all 12 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 73 new links existed earlier and was removed (all 211 library versions and 165 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose (v336) are left as they are.
+
+Considered and left out:
+  - ball types: more balls (golf, soccer, bowling and others): the theme would be a twin of sports balls (15 of 18 words), so it stays as it is
+  - winged creatures: angel and cherub (sensitive)
+
+For Simon:
+  1. erosion was in no theme; it is now in slow things.
+  2. Overlap notes that stay: ball / golf ball / soccer ball (as ball / bowling ball and others before), jet / jet ski (different things).
