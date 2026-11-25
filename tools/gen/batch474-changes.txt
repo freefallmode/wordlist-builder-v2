@@ -1,0 +1,412 @@
+Library batch v474 (fixes from the review of Julia's v460-v473; Simon, 2026-11-25: "fix all how you think best"): clear fixes, the calls on B2-B11, minor items; plants_with_spines merged into thorny_plants.
+A1. emergency brake 46812 is the car brake (UK alias handbrake): on a train or the subway UK players would see "handbrake". A new entry emergency brake [train] takes those two links
+  new entry: emergency brake 68956 [train] noun, common, familiarity 2: the passenger alarm on a train or subway car, not the car handbrake
+  linked: emergency brake 68956 [train] in on_a_train (typicality 3): the train sense: the car sense shows "handbrake" to UK players
+  out of on_a_train: emergency brake 46812: wrong sense: emergency brake 68956 [train] takes the link (stays in parking_words, hand_blank, on_the_subway)
+  linked: emergency brake 68956 [train] in on_the_subway (typicality 4): the train sense: the car sense shows "handbrake" to UK players
+  out of on_the_subway: emergency brake 46812: wrong sense: emergency brake 68956 [train] takes the link (stays in parking_words, hand_blank)
+  emergency brake 46812: gloss "" -> "car": its text is now shared with emergency brake [train]
+A2. learning_to_drive: learner's permit (US) and provisional license (UK, IE) are one thing under two dialect words: one root, the UK word a regional alias (LIBRARY-RULES 5, Aliases)
+  alias provisional licence 68692 (spelling) moves to learner's permit 68680
+  provisional license 68691 becomes a synonym alias of learner's permit 68680 (familiarity 4, region UK,IE): the same document: the UK and Irish name of the learner's permit (the US spelling of a UK term: a synonym, so the UK display alias is "provisional licence")
+  provisional licence 68692 (alias of learner's permit 68680): kind spelling -> regional: the UK and Irish everyday word for the learner's permit (one display alias per dialect)
+  provisional licence 68692: fam 4 -> 3: the UK and Irish everyday word for the learner's permit (one display alias per dialect)
+  provisional licence 68692: region ["UK"] -> ["UK","IE"]: a UK and Irish word
+  learner's permit 68680: region ["US","CA","AU"] -> []: the root of a US word with a UK, IE regional alias is untagged (as written test / theory test): UK players see "provisional licence"
+A3. car_wash
+  out of car_wash: detergent 23882: UK players see "washing powder", a laundry word; soap and shampoo cover it (stays in laundry_words, cleaning_products)
+A4. size_labels: a word and its abbreviation are one answer
+  group in size_labels: extra small 68820 = XS 39548: extra small and XS are one size label
+  group in size_labels: extra large 39539 = XL 39546: extra large and XL are one size label
+A5. things_that_burn: figurative links out
+  out of things_that_burn: bridge 7379 [structure]: figurative ("burn bridges") (stays in engineering, long_things, tourist_attractions)
+  out of things_that_burn: CD 49347 [disc]: to burn a CD is to write it, not set it on fire (stays in computer_storage, things_with_holes, round_things, shiny_things, things_that_reflect, flat_things, things_that_spin, things_made_of_plastic)
+  out of things_that_burn: calorie 3827: figurative ("burn calories") (stays in nutrition, heat_science, nutrients)
+  out of things_that_burn: chili 29499 [pepper]: it tastes hot, it does not burn (stays in words_from_nahuatl, spicy_foods, andean_crops, hot_things, red_things)
+A6. deep_things
+  out of deep_things: pocket 24952 [clothing]: figurative ("deep pockets") (stays in clothing_parts)
+  out of deep_things: outer space 68808: figurative ("deep space"); not a deep thing (stays in dark_places, cold_things, quiet_things)
+  linked: pit 31789 [mine] in deep_things (typicality 3): a deep hole dug in the ground (the mine sense, as mine [pit] there)
+  group in deep_things: mine 31788 = pit 31789: mine [pit] and pit [mine] are one answer
+A7. words_for_cold
+  linked: frozen 39916 in words_for_cold (typicality 2): an everyday word for very cold ("I'm frozen")
+A8. middle_eastern_scents
+  out of middle_eastern_scents: olive oil soap 16304: a product, not a scent (kohl went out as "not a scent" in v465) (stays in middle_eastern_grooming, turkish_bath, turkish_souvenirs)
+  out of middle_eastern_scents: patchouli 39731: a South and Southeast Asian scent, not a Middle Eastern one (stays in perfume_notes, things_that_smell_good, candle_scents, woody_and_resin_scents)
+A9. pungent_foods: liver went out as "taste, not smell" (v465); the same holds for these
+  out of pungent_foods: radish 405: sharp in taste, not pungent in smell (stays in vegetables, root_vegetables, cabbage_family, crunchy_foods, salad_ingredients, red_things)
+  out of pungent_foods: black pepper 721: sharp in taste, not pungent in smell (stays in spice_trade, herbs_spices_and_sauces, spices, spicy_foods, black_blank)
+  typicality: tuna 467 in pungent_foods 2 -> 4: canned tuna smells, but it is not one of the first pungent foods named
+A10. things_that_smell_bad: mothball and its form mothballs
+  mothball 66296: fam 1 -> 2: nearly every adult knows mothballs; the singular is not easier than the plural people say
+  mothballs 23189: fam 3 -> 2: nearly every adult knows mothballs; the singular is not easier than the plural people say
+  mothball 66296 in things_that_smell_bad: shows its form mothballs 23189 (use): mothballs is the form people say for the smell
+A11. plants_with_spines and thorny_plants are twins (17 of 27 shared): plants_with_spines merges into thorny_plants (LIBRARY-RULES 6, a near-duplicate is merged): the links it lacks move (the better typicality kept), its group moves, then it is deleted
+  linked: pineapple 96 in thorny_plants (typicality 3): moved from plants_with_spines (merged)
+  typicality: raspberry 349 in thorny_plants 5 -> 3: the better typicality of the two twins is kept
+  linked: monkey puzzle 1667 in thorny_plants (typicality 3): moved from plants_with_spines (merged)
+  linked: yucca 1802 in thorny_plants (typicality 4): moved from plants_with_spines (merged)
+  linked: burdock 17443 in thorny_plants (typicality 4): moved from plants_with_spines (merged)
+  linked: nopal 29503 in thorny_plants (typicality 2): moved from plants_with_spines (merged)
+  typicality: holly 29953 in thorny_plants 3 -> 1: the better typicality of the two twins is kept
+  linked: prickly pear 30574 in thorny_plants (typicality 3): moved from plants_with_spines (merged)
+  linked: saguaro 30576 [cactus] in thorny_plants (typicality 4): moved from plants_with_spines (merged)
+  linked: cholla 30586 in thorny_plants (typicality 5): moved from plants_with_spines (merged)
+  linked: ocotillo 30696 in thorny_plants (typicality 5): moved from plants_with_spines (merged)
+  group in thorny_plants: nopal 29503 = prickly pear 30574: nopal and prickly pear are one answer (moved from plants_with_spines)
+  out of plants_with_spines: nettle 1778: stinging hairs, not thorns or spines: not a thorny plant; it stays in prickly_things (stays in plants, foraging_finds, weeds, prickly_things, things_that_sting, leaves_and_shoots)
+  deleted theme: plants_with_spines "plants with spines" (26 words, all still in other themes): the twin of thorny_plants (17 of its 27 words shared): merged into thorny_plants
+  theme thorny_plants: pop 5 -> 3: with rose, cactus, thistle and holly the merged theme is an ordinary pick, as plants_with_spines was rated (it was 5)
+A12. prickly_things: rose is in the group thorn = rose thorn = rose (a thing and its part)
+  out of prickly_things: rose 1693 [flower]: the plant whose part is the thorn; thorn = rose thorn stays (stays in flowers, garden_flowers, bouquet_flowers, sweet_smelling_flowers, thorny_plants, national_flowers, perfume_notes, candle_scents, red_things, pink_things, red_flowers, flowers_used_as_girls_names, middle_eastern_scents)
+A13. symbols
+  group in symbols: division sign 68837 = obelus 26117: division sign and obelus are the same ÷
+A14-A16. synonyms and sounds, textures
+  out of words_for_fast: lickety-split 27830: an adverb (precipitate went out for the same reason) (stays in silly_sounding_words)
+  shadow 28397: fam 3 -> 1: every child knows the word shadow
+  out of fragile_things: reputation 29101: abstract (stays in all_five_vowels)
+  out of fragile_things: ecosystem 32273: abstract (stays in biology_words, ecology_words)
+  out of fragile_things: heart 3238 [organ]: figurative (the organ is not fragile) (stays in inside_the_body, organs, blood_words, hidden_body_parts, anagrams_of_each_other)
+  linked: glass 24032 [material] in fragile_things (typicality 1): the first fragile thing anyone names
+  out of fragile_things: glasses 24782: one word family with glass, now there (LIBRARY-RULES 5: keep the better fit); wine glass stays (stays in eyewear, things_that_come_in_pairs, pairs_you_wear, inventions, things_made_of_glass, european_inventions, things_with_arms)
+A17-A20. colors, things with, motion
+  out of gold_things: Midas 6957: a king, not a gold thing (stays in mythology)
+  out of gold_things: Fort Knox 37714: a vault, not a gold thing (stays in us_landmarks)
+  out of gold_things: El Dorado 21218: a legendary place, not a gold thing (stays in treasure, legendary_places, latin_american_folklore, lost_treasures)
+  linked: Grammy 12748 [award] in gold_things (typicality 3): a gold gramophone trophy
+  linked: Golden Globe 12750 in gold_things (typicality 3): a gold globe trophy
+  linked: Ballon d'Or 44447 in gold_things (typicality 4): the golden ball of football
+  out of things_with_numbers: mailbox 38221 [postbox]: the street postbox has no number (stays in post_office, outside_the_house, street_furniture, blank_box, red_things)
+  linked: jersey 44229 [sports shirt] in things_with_numbers (typicality 2): players' shirts carry big numbers
+  linked: fly 67311 [through the air] in motion_verbs (typicality 1): the most obvious motion verb
+  linked: creep 10380 [move] in motion_verbs (typicality 3): a well-known motion verb
+  out of things_that_roll: credits 6396 [film]: figurative ("the credits roll") (stays in film_and_tv, film_words)
+  out of ways_to_jump: parkour 5625: a sport of running, climbing and jumping, not a way to jump (stays in adventure_and_outdoor_sports, extreme_sports)
+B2. cold_things: polar bear and penguin stay out (v463); named places other than the poles and fiction go: they are cold places, not cold things (polar_and_frozen_places holds them). The poles, the Arctic and Antarctica stay: they are the cold itself in the first words people name
+  out of cold_things: Alaska 32111 [state]: a US state, a cold place, not a cold thing (stays in taiga, us_states, flags_with_stars, polar_and_frozen_places)
+  out of cold_things: Hoth 62517: a fictional planet (now in no theme: not exported)
+  out of cold_things: Greenland 32063 [Arctic island]: a cold place, not a cold thing (stays in polar_regions, famous_islands, red_and_white_flags, places_ending_in_land, flags_with_a_sun, polar_and_frozen_places)
+  out of cold_things: Siberia 32106: a cold place, not a cold thing (stays in taiga, world_regions, polar_and_frozen_places)
+  out of cold_things: Yukon 31816 [territory]: a cold place, not a cold thing (stays in gold_rush_words, taiga, polar_and_frozen_places)
+  out of cold_things: Svalbard 32064: a cold place, not a cold thing (stays in polar_regions, famous_islands, polar_and_frozen_places)
+  out of cold_things: Vostok Station 36684: a cold place, not a cold thing (stays in antarctic_places, polar_and_frozen_places)
+  out of cold_things: Oymyakon 62516: a cold place, not a cold thing (stays in polar_and_frozen_places)
+  out of cold_things: Neptune 26 [planet]: a planet, not a cold thing (stays in planets, discoveries, blue_things, famous_discoveries, outer_planets, astronomy_discoveries, things_in_space)
+  out of cold_things: Pluto 21099 [dwarf planet]: a dwarf planet, not a cold thing (stays in discoveries, dwarf_planets, famous_discoveries, astronomy_discoveries, things_in_space)
+  out of cold_things: Mount Everest 6757: a mountain, not a cold thing (stays in exploration, famous_mountains, huge_things, mountains, mountaineering_words, himalayan_peaks, seven_summits, famous_marathons)
+B3. winter_vehicles: snow tube is not a vehicle; luge and bobsled get their sled sense (the existing entries are the sport); skeleton stays out
+  out of winter_vehicles: snow tube 68777: an inflatable ring for sliding, not a vehicle (now in no theme: not exported)
+  new entry: bobsled 68957 [sled] noun, common, familiarity 2: the sled itself, not the sport
+  new entry: bobsleigh 68958 [sled] noun, common, familiarity 2, regional alias of bobsled 68957 [UK,IE,AU]: the UK, Irish and Australian word for the sled
+  linked: bobsled 68957 [sled] in winter_vehicles (typicality 2): the sled sense: the bobsled entry is the sport
+  out of winter_vehicles: bobsled 5351: wrong sense: bobsled 68957 [sled] takes the link (stays in winter_sports, snow_sports, olympic_sports, olympic_snow_sports)
+  bobsled 5351: gloss "" -> "sport": its text is now shared with bobsled [sled]
+  bobsleigh 5352: gloss "" -> "sport": its text is now shared with bobsleigh [sled]
+  new entry: luge 68959 [sled] noun, common, familiarity 3: the sled itself, not the sport
+  linked: luge 68959 [sled] in winter_vehicles (typicality 3): a small racing sled ridden feet first
+  luge 5353: gloss "" -> "sport": its text is now shared with luge [sled]
+B4. winged_creatures: real animals only; v470's mythical additions go back out (winged_beasts holds them)
+  out of winged_creatures: fairy 6989 [mythical being]: mythical (stays in fantasy, dress_up_costumes, fairy_tale_characters, mythical_creatures, fantasy_races, fairy_folk, angels_and_spirits, tiny_things, magical_beings, things_with_wings)
+  out of winged_creatures: dragon 6982 [creature]: mythical (stays in fantasy, fairy_tale_characters, fairy_tale_villains, mythical_creatures, dragons, chinese_zodiac, national_animals, things_that_fly, things_with_teeth, things_with_tails, winged_beasts, magical_beings, things_with_wings, things_with_horns)
+  out of winged_creatures: Pegasus 6941 [winged horse]: mythical (stays in mythology, mythical_creatures, legendary_horses, things_that_fly, winged_beasts, things_with_wings, greek_monsters)
+  out of winged_creatures: phoenix 6962 [bird]: mythical (stays in mythology, mythical_creatures, winged_beasts, things_with_wings)
+  out of winged_creatures: griffin 6944: mythical (stays in mythology, heraldry, mythical_creatures, greek_monsters, winged_beasts, things_with_wings)
+  out of winged_creatures: harpy 6963 [monster]: mythical (stays in mythology, mythical_creatures, fantasy_races, greek_monsters, winged_beasts)
+  out of winged_creatures: sphinx 6620 [myth]: mythical (stays in ancient_civilizations, mythical_creatures, greek_monsters, winged_beasts)
+B5. sharp_things: weapons of war and execution out of a non-adult theme (sword, dagger, knife, spear, arrow stay)
+  out of sharp_things: guillotine 33828 [execution device]: an execution device (stays in punishments, words_named_after_people, things_that_cut, french_revolution, european_inventions)
+  out of sharp_things: bayonet 28727: a weapon of war (stays in words_named_after_places, army_words, army_kit)
+  out of sharp_things: lance 34650 [weapon]: a weapon of war (stays in historic_weapons, knights, medieval_weapons, jousting_tournament)
+B6. two_wheelers: bikes, motorbikes, scooters and the like only
+  out of two_wheelers: chariot 20383: a cart, not a bike (stays in ancient_rome, bronze_age, things_with_wheels, animal_powered_travel, horse_drawn_vehicles, roman_life)
+  out of two_wheelers: hansom cab 22973: a carriage, not a bike (stays in victorian_era, animal_powered_travel, horse_drawn_vehicles, taxis_of_the_world)
+  out of two_wheelers: sulky 50129 [cart]: a cart, not a bike (stays in horse_drawn_vehicles)
+  out of two_wheelers: gig 40184 [carriage]: a carriage, not a bike (stays in things_with_wheels, horse_drawn_vehicles)
+  out of two_wheelers: dogcart 49173: a cart, not a bike (stays in horse_drawn_vehicles)
+  out of two_wheelers: pony cart 48235: a cart, not a bike (stays in animal_powered_travel, horse_drawn_vehicles)
+  out of two_wheelers: ox cart 39859: a cart, not a bike (stays in slow_things, animal_powered_travel)
+  out of two_wheelers: hand truck 24258: a trolley, not a vehicle you ride (stays in moving_house, things_with_wheels)
+  out of two_wheelers: rickshaw 2684: a cart, not a bike (the cycle rickshaw has three wheels) (stays in words_from_japanese, things_with_wheels, taxis_of_the_world, types_of_public_transport, things_you_ride, land_vehicles, modes_of_transport)
+  theme two_wheelers: note "vehicles on two wheels: bicycle, motorcycle, scooter, moped, Segway, chariot" -> "vehicles on two wheels: bicycle, motorcycle, scooter, moped, Segway": chariot is out
+B7. loose phrases (v462 removed this kind elsewhere): unlinked, and deleted when made by v460-v461 and in no other theme
+  out of travel_trouble: bad weather 68770: a loose phrase (now in no theme: not exported)
+  out of travel_trouble: hidden fees 68772: a loose phrase (now in no theme: not exported)
+  out of travel_trouble: lost passport 68762: a loose phrase (lost luggage is the fixed term) (now in no theme: not exported)
+  out of car_trouble: cracked windshield 68662: a loose phrase (now in no theme: not exported)
+  out of car_trouble: squeaky brakes 68666: a loose phrase (now in no theme: not exported)
+  out of car_trouble: slipping clutch 68671: a loose phrase (now in no theme: not exported)
+  out of car_trouble: fuel leak 68670: a loose phrase (now in no theme: not exported)
+  out of in_a_glove_box: ketchup packet 68700: a loose phrase (now in no theme: not exported)
+  out of airport_security: bag search 68732: a loose phrase (now in no theme: not exported)
+  out of airport_security: random search 68733: a loose phrase (now in no theme: not exported)
+  deleted entry: bad weather 68770: a loose phrase made by v461 for one theme, now in none
+  deleted entry: hidden fees 68772: a loose phrase made by v461 for one theme, now in none
+  deleted entry: lost passport 68762: a loose phrase made by v461 for one theme, now in none
+  deleted entry: cracked windshield 68662: a loose phrase made by v461 for one theme, now in none
+  deleted entry: squeaky brakes 68666: a loose phrase made by v461 for one theme, now in none
+  deleted entry: slipping clutch 68671: a loose phrase made by v461 for one theme, now in none
+  deleted entry: fuel leak 68670: a loose phrase made by v461 for one theme, now in none
+  deleted entry: ketchup packet 68700: a loose phrase made by v461 for one theme, now in none
+  deleted entry: bag search 68732: a loose phrase made by v461 for one theme, now in none
+  deleted entry: random search 68733: a loose phrase made by v461 for one theme, now in none
+B8. synonym themes: words that are not true synonyms out; ratings
+  out of words_for_funny: entertaining 68877: not a synonym of funny (now in no theme: not exported)
+  out of words_for_funny: facetious 29096: not a synonym of funny (flippant) (stays in all_five_vowels)
+  out of words_for_new: trendy 68920: fashionable, not new (now in no theme: not exported)
+  out of words_for_new: futuristic 68919: of the future, not new (now in no theme: not exported)
+  out of words_for_new: pristine 68923: unspoiled, not new (now in no theme: not exported)
+  out of words_for_old: primitive 68862: early or simple, not old (now in no theme: not exported)
+  out of words_for_smart: precocious 68853: advanced for one's age, not smart (now in no theme: not exported)
+  out of words_for_strong: indestructible 68901: unbreakable and invincible stay; three for one idea is too many (now in no theme: not exported)
+  typicality: silly 68869 in words_for_funny 1 -> 2: silly and ridiculous are not the first words for funny
+  typicality: ridiculous 68873 in words_for_funny 2 -> 3: silly and ridiculous are not the first words for funny
+  typicality: mysterious 68854 in words_for_strange 2 -> 3: loose synonyms of strange
+  typicality: unfamiliar 68856 in words_for_strange 3 -> 4: loose synonyms of strange
+  typicality: exotic 68855 in words_for_strange 3 -> 4: loose synonyms of strange
+  typicality: mature 68861 in words_for_old 2 -> 3: grown-up rather than old
+B9. hot_things: a verb and a dish standing in for the appliances (no appliance entry exists: grill and barbecue are the verb and the meat)
+  out of hot_things: grill 921: the verb, not the appliance (stays in cooking, cooking_methods)
+  out of hot_things: barbecue 19767 [grilled meat]: the grilled meat, not the appliance (stays in cooking_methods, outside_the_house, words_from_spanish, words_from_native_american_languages, kinds_of_party, things_that_smell_good, chip_flavors, foods_and_flavors, smells_from_the_kitchen, signs_of_summer)
+  linked: summer 25302 [season] in hot_things (typicality 3): the hot season
+B9. stubs left in no theme by v460-v473: loose phrases and duplicate stubs deleted (bluetongue and chipboard become aliases below)
+  deleted entry: pane 39017: a stub left by v471 (window is the word)
+  deleted entry: albino 40124: a stub left by v472
+  deleted entry: coalface 40215: a stub left by v473
+  deleted entry: thin 38948 [line]: a stub left by v468 (thin [slim] is the word)
+  deleted entry: glowing plankton 39974: a loose phrase
+  deleted entry: glowing coals 39982: a loose phrase (embers is the word)
+  deleted entry: new coin 39985: a loose phrase
+  deleted entry: chrome bumper 39986: a loose phrase
+  deleted entry: wet pavement 39995: a loose phrase
+  deleted entry: patent shoes 40000: a loose phrase (patent leather is the word)
+  deleted entry: mahogany teakwood 39753: a candle product name, a loose phrase
+  deleted entry: frankincense and myrrh 39754: two words joined, a loose phrase
+  deleted entry: hot as hell 39940: a loose simile
+  deleted entry: Pringle 39576: a stub left by v464, duplicating Pringles
+B10. US vacation spots
+  theme american_holiday_spots: ident 4 -> 3: with Las Vegas, Hawaii and Walt Disney World in, four members name it after a moment
+  linked: New York 2219 in american_holiday_spots (typicality 1): a top US vacation spot; it was not linked
+  linked: Yellowstone 31943 in american_holiday_spots (typicality 2): a top US vacation spot; it was not linked
+  linked: Niagara Falls 2331 in american_holiday_spots (typicality 2): a top US vacation spot; it was not linked
+  linked: Disneyland 48930 in american_holiday_spots (typicality 2): a top US vacation spot; it was not linked
+B11. overlaps
+  out of words_for_shiny: bright 28031: the topic word of words_for_bright, its sibling (stays in rhymes_with_light, words_for_smart, opposites)
+  out of scented_products: sunscreen 3745: personal care, scented only incidentally (stays in personal_care, pharmacy, skincare_products, sun_care, healthy_habits, picnic_basket, medicine_cabinet, hiking_gear, things_to_pack, toiletries, beach_gear, beach_vacation, korean_skincare, beach, water_park, sun_blank, in_a_glove_box, things_that_smell_good)
+  out of scented_products: mouthwash 3732: personal care, scented only incidentally (stays in personal_care, bedtime_routine, medicine_cabinet, toiletries, dentist_s_office)
+  out of scented_products: toilet paper 23138: a household product, scented only incidentally (stays in bathroom, things_made_of_paper, things_used_for_wiping, blank_paper, paper_goods, things_with_layers)
+  out of scented_products: cat litter 50839: a household product, scented only incidentally (stays in pet_supplies, feline_gear)
+  out of scented_products: trash bags 23370: a household product, scented only incidentally (stays in under_the_sink, picnic_basket)
+  out of scented_products: marker 34759 [pen]: a novelty, scented only incidentally (stays in stationery, art_materials, things_you_write_with, in_a_pencil_case)
+  out of scented_products: eraser 12017: a novelty, scented only incidentally (stays in art_materials, stationery, pink_things, math_tools, things_made_of_rubber, in_a_school_bag, in_a_pencil_case, rectangular_things)
+  out of flat_things: Netherlands 2140: a flat country, a place, not a flat thing (stays in countries, european_countries, tricolor_flags, western_european_countries)
+  out of flat_things: Kansas 32168 [state]: a flat state, a place, not a flat thing (stays in prairie, us_states)
+  out of flat_things: mesa 1950: a landform (flat_landscapes holds it) (stays in landscapes, words_from_spanish, desert_features, desert)
+  out of flat_things: steppe 1940: a landform (flat_landscapes holds it) (stays in landscapes, flat_landscapes, prairie)
+  out of pink_animals: manatee 1041: gray, not pink (stays in mammals, sea_life, sea_mammals, slow_things, everglades_animals, mammals_that_live_in_water)
+  linked: manatee 1041 in gray_things (typicality 3): a gray animal
+  linked: Eeyore 13663 in gray_things (typicality 3): the gray donkey (moved from blue_things)
+  linked: ash 39899 [residue] in gray_things (typicality 2): gray ash, as in ash gray
+C. regional gaps
+  new entry: flat battery 68960 noun, common, familiarity 2, regional alias of dead battery 68658 [UK]: the UK word for a dead battery
+  new entry: out of petrol 68961 other, common, familiarity 2, regional alias of out of gas 68676 [UK]: the UK words for out of gas
+  new entry: package holiday 68962 noun, common, familiarity 2, regional alias of package tour 68642 [UK]: the UK word for a package tour
+  new entry: barber's pole 68963 noun, common, familiarity 3, regional alias of barber pole 68954 [UK]: the UK form of barber pole
+  medallion 68725: region [] -> ["US"]: the taxi medallion is a US (New York) thing
+  spring break 68641: region [] -> ["US"]: a US college custom
+C. on_a_train: conductor and ticket inspector are one answer (the conductor's UK alias is ticket inspector)
+  group in on_a_train: conductor 2862 = inspector 46964: conductor and inspector [ticket] are one answer
+C. ratings
+  theme rectangular_things: pop 2 -> 3: like its siblings square_things and oval_things
+  theme rectangular_things: ident 2 -> 3: like its siblings square_things and oval_things: a loose shape property
+  theme flat_things: pop 2 -> 3: like its siblings square_things and oval_things
+  theme flat_things: ident 2 -> 3: like its siblings square_things and oval_things: a loose shape property
+  theme things_with_numbers: ident 2 -> 3: a loose property: several themes fit four of its members
+  nascent 68929: fam 5 -> 4: better known than rated: one step easier
+  jocular 68887: fam 5 -> 4: better known than rated: one step easier
+  farcical 68885: fam 4 -> 3: better known than rated: one step easier
+  uproarious 68884: fam 4 -> 3: better known than rated: one step easier
+  strapping 68903: fam 4 -> 3: better known than rated: one step easier
+  zonked 68867: fam 4 -> 3: better known than rated: one step easier
+  speckled 68831: fam 3 -> 2: better known than rated: one step easier
+  crisscross 68832: fam 3 -> 2: better known than rated: one step easier
+  strut 50133: fam 4 -> 3: better known than rated: one step easier
+  typicality: turnip 425 in purple_things 3 -> 4: only its top is purple
+  typicality: water 861 in blue_things 2 -> 3: drawn blue, but clear
+  typicality: referee 42671 in striped_things 2 -> 3: striped shirts in US sports only
+  typicality: rubber 30101 in natural_materials 2 -> 3: most rubber now is synthetic
+C. weak links out
+  out of food_chillers: thermos 3063: it keeps food hot or cold, it does not chill it (stays in campsite, lunchbox, brand_names_used_as_words, heat_science, camping_gear)
+  out of words_for_hot: infernal 68814: hellish in general, rarely "hot" (now in no theme: not exported)
+  out of words_for_cold: unheated 68817: a fact about a room, not a word for cold (now in no theme: not exported)
+  out of eating_sounds: hiccup 16980: not made by eating (stays in body_noises, voice_sounds, ough_words)
+  out of eating_sounds: gurgle 16989: a stomach or water sound, not an eating sound (stays in body_noises, onomatopoeia, water_sounds)
+  out of quiet_things: stealth bomber 34608: hidden from radar, not quiet (stays in air_force_words, aircraft_types, military_vehicles, military_aircraft)
+  out of sticky_things: Spider-Man 12554: a character; his webs are the sticky thing (stays in dress_up_costumes, superheroes, blank_man)
+  out of square_things: tic-tac-toe 5765: a grid game, the board not clearly square (stays in table_games, two_player_games)
+  out of square_things: pillow 3667 [bedding]: usually rectangular (stays in sleep, bedding, bedroom, cozy_things, soft_things, in_a_hotel_room)
+  out of oval_things: avocado 111: pear-shaped, not oval (stays in fruits, superfoods, burger_toppings, foods_you_peel, words_from_spanish, words_from_nahuatl, shades_of_green, colors_named_after_foods, green_things, creamy_foods, foods_and_flavors, fruit_shades, on_toast)
+  out of blue_things: Eeyore 13663: gray, not blue (now in gray_things) (stays in children_s_book_characters, things_with_tails, gray_things)
+  out of pink_things: lychee 103: red outside, white inside (stays in fruits, tropical_fruits, stone_fruits, asian_fruits, foods_you_peel, words_from_chinese, soda_flavors, red_fruits)
+  out of yellow_things: lion 215: tawny, not yellow (stays in big_cats, african_animals, savanna_animals, fast_animals, male_animals, savanna, national_animals, things_with_teeth, things_with_tongues, safari_words, zoo, zoo_animals, four_legged_animals, things_with_tails, loud_things)
+  out of gray_things: nickel 33938 [coin]: the US coin is silver-colored (stays in coins, us_coins)
+  out of things_with_tongues: Albert Einstein 41927: a famous photo, not a thing with a tongue (stays in scientists, famous_physicists, nobel_laureates, physics_prize_winners)
+  out of things_with_necks: light bulb 23481: the neck of a bulb is a specialist term (stays in inventions, american_inventions, household_gadgets, lights_and_lamps, fragile_things, things_that_glow, things_made_of_glass)
+  out of things_with_keys: janitor 4106: a person who carries keys, not a thing with keys (stays in jobs, service_jobs, school_staff, people_at_school)
+  out of things_that_sink: Venice 2232 [city]: a city that is slowly sinking, figurative (stays in cities, silk_road, european_cities, silk_road_cities, italian_cities)
+  out of airport_security: swab 67358 [medical]: a specialist detail (stays in at_the_doctor)
+  out of airport_security: gloves 4956: not a checkpoint thing (stays in accessories, winter_clothes, scarves_and_gloves, things_that_come_in_pairs, science_lab, dentist_s_office, lab_safety_gear, boxing_terms, pairs_you_wear, in_a_toolbox, bike_gear, ski_trip, things_made_of_leather)
+  out of in_a_glove_box: valve cap 68701: kept on the tire, not in the glove box (now in no theme: not exported)
+  out of summer_camp: campfire 3024 [outdoor fire]: it holds "camp" of the theme name (stays in campsite, stone_age, things_that_smell_good, candle_scents, hot_things, fire_words, camping_gear, smores)
+  theme summer_camp: note "camp for kids: cabin, campfire, canoe, archery, friendship bracelet" -> "camp for kids: cabin, canoe, archery, friendship bracelet": campfire is out
+  linked: howl 17016 [cry] in voice_sounds (typicality 3): a voice sound is the cry (howl [cry]), not the animal sound
+  out of voice_sounds: howl 10193 [animal sound]: wrong sense: howl 17016 [cry] takes the link (stays in animal_sounds, hidden_birds)
+C. missing words
+  linked: onion 393 [bulb vegetable] in smells_from_the_kitchen (typicality 2): frying onions: a first kitchen smell
+  linked: tabby cat 9845 in striped_things (typicality 3): a striped cat
+  linked: badger 1014 [animal] in striped_things (typicality 3): a striped face
+  linked: trifle 639 in things_with_layers (typicality 3): a layered dessert
+  linked: bulldozer 3099 in roadwork (typicality 2): a roadwork machine
+  linked: keycard 25706 in in_a_hotel_room (typicality 2): the room key
+  linked: mirror 23136 [glass] in in_a_hotel_room (typicality 3): in every room
+  linked: hangers 23340 in in_a_hotel_room (typicality 2): in every closet
+  new entry: bad breath 68964 noun, common, familiarity 1: the everyday word; halitosis becomes its synonym
+  halitosis 62959 becomes a synonym alias of bad breath 68964 (familiarity 3); links move: things_that_smell_bad:2: the medical word for bad breath
+C. duplicates
+  deleted entry: horned owl 40201: a stub left by v473 duplicating great horned owl (as its alias it would leak "owl" in owls)
+  bluetongue 40223 becomes a synonym alias of blue-tongued skink 1209 (familiarity 4): the Australian name of the blue-tongued skink
+  chipboard 24054 becomes a regional alias of particle board 24055 (familiarity 3, region UK); links move: blank_board:3: the UK word for particle board
+  group in heavy_things: gold bar 21211 = ingot 21214: a gold bar is an ingot: one answer (grouped so in treasure)
+C. types
+  Rubik's Cube 5968: type "org" -> "proper": a named product (proper + tm), not a company
+  Slinky 5932: type "org" -> "proper": a named product (proper + tm), not a company
+  text: Moai 2384 -> "moai": the statues: a common noun, lowercase in Merriam-Webster and Oxford
+  moai 2384: type "place" -> "common": the statues: a common noun, lowercase in Merriam-Webster and Oxford
+  hula hoop 5937: type "phrase" -> "common": a toy, not an idiom (tm stays)
+  husky 50032: pos "noun" -> "adjective": a husky voice: an adjective
+C. notes
+  theme things_made_of_glass: note "window, mirror, bottle, lightbulb, marble" -> "window, mirror, bottle, light bulb, marble": the root is light bulb
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  airport_security: "airport security" pop 2 ident 2: 36 words, easy/middle/hard 14/10/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "airport security" pop 2 ident 2: 32 words, easy/middle/hard 14/8/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  american_holiday_spots: "US vacation spots" pop 3 ident 4: 21 words, easy/middle/hard 7/7/7, theme difficulty 4, 4th-easiest band 2, gap -2.0 -> "US vacation spots" pop 3 ident 3: 25 words, easy/middle/hard 11/7/7, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  blank_board: "___board" pop 2 ident 3: 52 words, easy/middle/hard 24/20/8, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "___board" pop 2 ident 3: 52 words, easy/middle/hard 24/20/8, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  blue_things: "blue things" pop 2 ident 3: 43 words, easy/middle/hard 12/17/14, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "blue things" pop 2 ident 3: 42 words, easy/middle/hard 11/17/14, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  building_materials: "building materials" pop 2 ident 2: 38 words, easy/middle/hard 11/8/19, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "building materials" pop 2 ident 2: 37 words, easy/middle/hard 11/8/18, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  car_trouble: "car trouble" pop 2 ident 2: 31 words, easy/middle/hard 9/10/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "car trouble" pop 2 ident 2: 27 words, easy/middle/hard 8/9/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  car_wash: "car wash" pop 3 ident 2: 34 words, easy/middle/hard 11/9/14, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "car wash" pop 3 ident 2: 33 words, easy/middle/hard 11/8/14, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  cold_things: "cold things" pop 2 ident 3: 53 words, easy/middle/hard 18/17/18, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "cold things" pop 2 ident 3: 42 words, easy/middle/hard 18/14/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  deep_things: "deep things" pop 2 ident 3: 33 words, easy/middle/hard 10/14/9, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "deep things" pop 2 ident 3: 32 words, easy/middle/hard 10/14/8, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  eating_sounds: "eating sounds" pop 2 ident 2: 23 words, easy/middle/hard 8/8/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "eating sounds" pop 2 ident 2: 21 words, easy/middle/hard 8/7/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  flat_things: "flat things" pop 2 ident 2: 34 words, easy/middle/hard 12/12/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "flat things" pop 3 ident 3: 30 words, easy/middle/hard 12/12/6, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  food_chillers: "food chillers" pop 3 ident 3: 11 words, easy/middle/hard 4/4/3, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "food chillers" pop 3 ident 3: 10 words, easy/middle/hard 4/4/2, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  fragile_things: "fragile things" pop 2 ident 2: 36 words, easy/middle/hard 12/12/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "fragile things" pop 2 ident 2: 33 words, easy/middle/hard 12/12/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  gold_things: "gold things" pop 2 ident 2: 32 words, easy/middle/hard 10/10/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "gold things" pop 2 ident 2: 32 words, easy/middle/hard 10/12/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  gray_things: "gray things" pop 2 ident 2: 34 words, easy/middle/hard 12/11/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "gray things" pop 2 ident 2: 36 words, easy/middle/hard 13/13/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  heavy_things: "heavy things" pop 2 ident 3: 43 words, easy/middle/hard 13/15/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "heavy things" pop 2 ident 3: 43 words, easy/middle/hard 13/15/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  hot_things: "hot things" pop 2 ident 3: 44 words, easy/middle/hard 15/16/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "hot things" pop 2 ident 3: 43 words, easy/middle/hard 15/15/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  in_a_glove_box: "in a glove box" pop 3 ident 3: 35 words, easy/middle/hard 9/12/14, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "in a glove box" pop 3 ident 3: 33 words, easy/middle/hard 9/12/12, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  in_a_hotel_room: "in a hotel room" pop 2 ident 3: 46 words, easy/middle/hard 12/17/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "in a hotel room" pop 2 ident 3: 49 words, easy/middle/hard 13/19/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  learning_to_drive: "learning to drive" pop 3 ident 2: 34 words, easy/middle/hard 13/11/10, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "learning to drive" pop 3 ident 2: 33 words, easy/middle/hard 13/11/9, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  middle_eastern_scents: "Middle Eastern scents" pop 4 ident 4: 33 words, easy/middle/hard 3/11/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "Middle Eastern scents" pop 4 ident 4: 31 words, easy/middle/hard 3/10/18, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  motion_verbs: "motion verbs" pop 2 ident 2: 55 words, easy/middle/hard 16/23/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "motion verbs" pop 2 ident 2: 57 words, easy/middle/hard 17/24/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  natural_materials: "natural materials" pop 2 ident 2: 42 words, easy/middle/hard 13/8/21, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "natural materials" pop 2 ident 2: 42 words, easy/middle/hard 12/9/21, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  on_a_train: "on a train" pop 2 ident 2: 34 words, easy/middle/hard 11/10/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "on a train" pop 2 ident 2: 34 words, easy/middle/hard 11/10/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  on_the_subway: "on the subway" pop 2 ident 2: 40 words, easy/middle/hard 13/15/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "on the subway" pop 2 ident 2: 40 words, easy/middle/hard 13/15/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  oval_things: "oval things" pop 3 ident 3: 32 words, easy/middle/hard 10/9/13, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "oval things" pop 3 ident 3: 31 words, easy/middle/hard 10/8/13, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  pink_animals: "pink animals" pop 3 ident 3: 25 words, easy/middle/hard 3/4/18, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "pink animals" pop 3 ident 3: 24 words, easy/middle/hard 3/4/17, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  pink_things: "pink things" pop 2 ident 2: 48 words, easy/middle/hard 15/16/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "pink things" pop 2 ident 2: 47 words, easy/middle/hard 15/16/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  plants_with_spines: "plants with spines" pop 3 ident 3: 27 words, easy/middle/hard 5/7/15, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> deleted
+  prickly_things: "prickly things" pop 2 ident 2: 53 words, easy/middle/hard 10/17/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "prickly things" pop 2 ident 2: 52 words, easy/middle/hard 9/17/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  pungent_foods: "pungent foods" pop 2 ident 3: 48 words, easy/middle/hard 12/17/19, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "pungent foods" pop 2 ident 3: 46 words, easy/middle/hard 11/15/20, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  purple_things: "purple things" pop 2 ident 2: 43 words, easy/middle/hard 8/12/23, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "purple things" pop 2 ident 2: 43 words, easy/middle/hard 8/11/24, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  quiet_things: "quiet things" pop 2 ident 3: 42 words, easy/middle/hard 12/21/9, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "quiet things" pop 2 ident 3: 41 words, easy/middle/hard 12/21/8, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  rectangular_things: "rectangular things" pop 2 ident 2: 33 words, easy/middle/hard 12/11/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "rectangular things" pop 3 ident 3: 33 words, easy/middle/hard 12/11/10, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  roadwork: "roadwork" pop 3 ident 2: 38 words, easy/middle/hard 13/11/14, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "roadwork" pop 3 ident 2: 39 words, easy/middle/hard 14/11/14, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  scented_products: "scented products" pop 2 ident 3: 39 words, easy/middle/hard 14/13/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "scented products" pop 2 ident 3: 32 words, easy/middle/hard 14/13/5, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  sharp_things: "sharp things" pop 2 ident 2: 38 words, easy/middle/hard 12/13/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "sharp things" pop 2 ident 2: 35 words, easy/middle/hard 12/13/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  size_labels: "size labels" pop 2 ident 2: 40 words, easy/middle/hard 12/17/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "size labels" pop 2 ident 2: 40 words, easy/middle/hard 12/17/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  smells_from_the_kitchen: "smells from the kitchen" pop 2 ident 3: 28 words, easy/middle/hard 11/9/8, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "smells from the kitchen" pop 2 ident 3: 29 words, easy/middle/hard 12/9/8, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  square_things: "square things" pop 3 ident 3: 33 words, easy/middle/hard 14/10/9, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "square things" pop 3 ident 3: 31 words, easy/middle/hard 14/10/7, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  sticky_things: "sticky things" pop 2 ident 2: 49 words, easy/middle/hard 13/18/18, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "sticky things" pop 2 ident 2: 48 words, easy/middle/hard 13/18/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  striped_things: "striped things" pop 2 ident 2: 33 words, easy/middle/hard 12/11/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "striped things" pop 2 ident 2: 35 words, easy/middle/hard 11/14/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  summer_camp: "summer camp" pop 2 ident 2: 43 words, easy/middle/hard 14/13/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "summer camp" pop 2 ident 2: 42 words, easy/middle/hard 13/13/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  symbols: "symbols" pop 2 ident 3: 47 words, easy/middle/hard 18/15/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "symbols" pop 2 ident 3: 47 words, easy/middle/hard 18/15/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  things_made_from_trees: "things made from trees" pop 2 ident 3: 43 words, easy/middle/hard 9/18/16, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "things made from trees" pop 2 ident 3: 42 words, easy/middle/hard 9/17/16, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  things_made_of_glass: "things made of glass" pop 2 ident 3: 45 words, easy/middle/hard 12/21/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things made of glass" pop 2 ident 3: 45 words, easy/middle/hard 12/21/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_burn: "things that burn" pop 2 ident 3: 32 words, easy/middle/hard 12/10/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things that burn" pop 2 ident 3: 28 words, easy/middle/hard 12/10/6, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_roll: "things that roll" pop 2 ident 3: 42 words, easy/middle/hard 12/16/14, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "things that roll" pop 2 ident 3: 41 words, easy/middle/hard 12/16/13, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  things_that_sink: "things that sink" pop 2 ident 3: 38 words, easy/middle/hard 11/17/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things that sink" pop 2 ident 3: 37 words, easy/middle/hard 11/17/9, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_smell_bad: "things that smell bad" pop 2 ident 2: 51 words, easy/middle/hard 21/17/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "things that smell bad" pop 2 ident 2: 51 words, easy/middle/hard 22/16/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  things_with_keys: "things with keys" pop 2 ident 3: 47 words, easy/middle/hard 13/17/17, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things with keys" pop 2 ident 3: 46 words, easy/middle/hard 13/17/16, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_with_layers: "things with layers" pop 2 ident 2: 33 words, easy/middle/hard 9/12/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "things with layers" pop 2 ident 2: 34 words, easy/middle/hard 9/13/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  things_with_necks: "things with necks" pop 3 ident 4: 44 words, easy/middle/hard 11/22/11, theme difficulty 4, 4th-easiest band 1, gap -3.0 -> "things with necks" pop 3 ident 4: 43 words, easy/middle/hard 11/22/10, theme difficulty 4, 4th-easiest band 1, gap -3.0
+  things_with_numbers: "things with numbers" pop 2 ident 2: 37 words, easy/middle/hard 12/13/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "things with numbers" pop 2 ident 3: 37 words, easy/middle/hard 13/13/11, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_with_tongues: "things with tongues" pop 3 ident 4: 37 words, easy/middle/hard 12/13/12, theme difficulty 4, 4th-easiest band 1, gap -3.0 -> "things with tongues" pop 3 ident 4: 36 words, easy/middle/hard 12/13/11, theme difficulty 4, 4th-easiest band 1, gap -3.0
+  thorny_plants: "thorny plants" pop 5 ident 3: 34 words, easy/middle/hard 4/6/24, theme difficulty 4, 4th-easiest band 2, gap -2.0 -> "thorny plants" pop 3 ident 3: 43 words, easy/middle/hard 5/9/29, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  travel_trouble: "travel trouble" pop 2 ident 2: 36 words, easy/middle/hard 11/12/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "travel trouble" pop 2 ident 2: 33 words, easy/middle/hard 10/10/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  two_wheelers: "two-wheelers" pop 2 ident 2: 30 words, easy/middle/hard 8/10/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "two-wheelers" pop 2 ident 2: 21 words, easy/middle/hard 8/8/5, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  types_of_wood: "types of wood" pop 2 ident 3: 37 words, easy/middle/hard 10/9/18, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "types of wood" pop 2 ident 3: 36 words, easy/middle/hard 10/9/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  voice_sounds: "voice sounds" pop 2 ident 2: 53 words, easy/middle/hard 19/19/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "voice sounds" pop 2 ident 2: 53 words, easy/middle/hard 19/19/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  ways_to_jump: "ways to jump" pop 3 ident 3: 45 words, easy/middle/hard 10/16/19, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "ways to jump" pop 3 ident 3: 44 words, easy/middle/hard 10/16/18, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  winged_creatures: "winged creatures" pop 2 ident 3: 23 words, easy/middle/hard 14/6/3, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "winged creatures" pop 2 ident 3: 16 words, easy/middle/hard 12/3/1, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  winter_vehicles: "winter vehicles" pop 3 ident 2: 23 words, easy/middle/hard 8/5/10, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "winter vehicles" pop 3 ident 2: 23 words, easy/middle/hard 8/5/10, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  words_for_cold: "words for cold" pop 3 ident 2: 30 words, easy/middle/hard 7/10/13, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "words for cold" pop 3 ident 2: 30 words, easy/middle/hard 8/10/12, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  words_for_fast: "words for fast" pop 3 ident 2: 28 words, easy/middle/hard 4/13/11, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "words for fast" pop 3 ident 2: 27 words, easy/middle/hard 4/12/11, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  words_for_funny: "words for funny" pop 2 ident 2: 25 words, easy/middle/hard 8/9/8, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for funny" pop 2 ident 2: 23 words, easy/middle/hard 7/9/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_hot: "words for hot" pop 3 ident 2: 26 words, easy/middle/hard 7/11/8, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "words for hot" pop 3 ident 2: 25 words, easy/middle/hard 7/11/7, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  words_for_new: "words for new" pop 2 ident 2: 22 words, easy/middle/hard 7/9/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for new" pop 2 ident 2: 19 words, easy/middle/hard 7/6/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_old: "words for old" pop 2 ident 2: 28 words, easy/middle/hard 7/11/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for old" pop 2 ident 2: 27 words, easy/middle/hard 6/11/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_shiny: "words for shiny" pop 4 ident 3: 35 words, easy/middle/hard 7/14/14, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "words for shiny" pop 4 ident 3: 34 words, easy/middle/hard 7/13/14, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  words_for_smart: "words for smart" pop 2 ident 2: 39 words, easy/middle/hard 10/15/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "words for smart" pop 2 ident 2: 38 words, easy/middle/hard 10/15/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  words_for_strange: "words for strange" pop 2 ident 2: 39 words, easy/middle/hard 10/18/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for strange" pop 2 ident 2: 39 words, easy/middle/hard 9/17/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  words_for_strong: "words for strong" pop 2 ident 2: 22 words, easy/middle/hard 6/9/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "words for strong" pop 2 ident 2: 21 words, easy/middle/hard 6/8/7, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  yellow_things: "yellow things" pop 2 ident 2: 49 words, easy/middle/hard 23/14/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "yellow things" pop 2 ident 2: 48 words, easy/middle/hard 23/13/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+First synonym aliases harder than root familiarity + 1: 6 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 12: Hoth 62517, snow tube 68777, entertaining 68877, trendy 68920, futuristic 68919, pristine 68923, primitive 68862, precocious 68853, indestructible 68901, infernal 68814, unheated 68817, valve cap 68701
+Entries added 9: emergency brake 68956, bobsled 68957, bobsleigh 68958, luge 68959, flat battery 68960, out of petrol 68961, package holiday 68962, barber's pole 68963, bad breath 68964
+Entries deleted 25: bad weather 68770, hidden fees 68772, lost passport 68762, cracked windshield 68662, squeaky brakes 68666, slipping clutch 68671, fuel leak 68670, ketchup packet 68700, bag search 68732, random search 68733, pane 39017, albino 40124, coalface 40215, thin 38948, glowing plankton 39974, glowing coals 39982, new coin 39985, chrome bumper 39986, wet pavement 39995, patent shoes 40000, mahogany teakwood 39753, frankincense and myrrh 39754, hot as hell 39940, Pringle 39576, horned owl 40201
+library changes 293; entries changed 201; status set to rev 41; themes deleted 1; entries merged 4
+Checks: changed kinds: info:orphan 288 -> 284, info:overlap 4835 -> 4836, info:rating-vs-zipf 1688 -> 1691, info:sense-link 0 -> 1, info:theme-twin 0 -> 1
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3223 -> 3222; gone plants_with_spines (index 3059); new none; theme indexes shift: from index 3059 ("stretchy_things", was "plants_with_spines") to the last index 3221
+Theme rows whose fields changed (parent compared by id): 66: pink_animals (index 436 -> 436: counts [2,1,5,12,6] -> [2,1,5,12,5]); types_of_wood (index 484 -> 484: counts [2,8,9,13,5] -> [2,8,9,12,5]); things_made_from_trees (index 495 -> 495: counts [3,6,18,8,8] -> [3,6,17,8,8]); thorny_plants (index 553 -> 553: popularity 5 -> 3, counts [2,2,6,16,10] -> [2,3,9,20,11], difficulty 4 -> 3); airport_security (index 907 -> 907: counts [2,12,10,12,0] -> [2,12,8,10,0]); roadwork (index 930 -> 930: counts [2,11,12,15,1] -> [2,12,13,15,1]); car_trouble (index 957 -> 957: counts [4,6,10,11,1] -> [4,7,9,9,1]); learning_to_drive (index 958 -> 958: counts [1,12,12,9,1] -> [1,12,13,9,1]); car_wash (index 963 -> 963: counts [3,8,9,12,2] -> [3,8,8,12,2]); two_wheelers (index 1030 -> 1030: counts [3,5,11,8,4] -> [3,5,9,2,3], range [2,5] -> [2,4]); travel_trouble (index 1052 -> 1052: counts [4,7,13,11,2] -> [3,7,11,11,2], range [1,4] -> [2,4]); in_a_hotel_room (index 1057 -> 1057: counts [2,11,17,17,2] -> [2,12,19,17,2]); summer_camp (index 1101 -> 1101: counts [4,10,14,15,1] -> [3,10,14,15,1], range [1,4] -> [2,4]); american_holiday_spots (index 1110 -> 1110: counts [3,4,7,7,0] -> [4,7,7,7,0], range [2,4] -> [1,4], identifiability 4 -> 3, difficulty 4 -> 3); ways_of_walking (index 1265 -> 1265: counts [2,6,14,17,6] -> [2,6,15,16,6]); things_you_do_with_your_feet (index 1276 -> 1276: counts [7,9,11,1,0] -> [7,9,12,0,0]); in_a_glove_box (index 1509 -> 1509: counts [2,7,12,11,3] -> [2,7,12,10,2]); building_materials (index 1552 -> 1552: counts [5,6,8,12,7] -> [5,6,8,11,7]); square_things (index 3030 -> 3030: counts [1,13,11,9,1] -> [1,13,11,7,1]); rectangular_things (index 3031 -> 3031: popularity 2 -> 3, identifiability 2 -> 3, difficulty 1.5 -> 3); oval_things (index 3033 -> 3033: counts [1,9,9,9,4] -> [1,9,8,9,4]); flat_things (index 3034 -> 3034: popularity 2 -> 3, counts [4,8,13,10,0] -> [4,8,13,6,0], identifiability 2 -> 3, difficulty 1.5 -> 3); natural_materials (index 3036 -> 3036: counts [4,9,8,15,6] -> [4,8,9,15,6]); sharp_things (index 3052 -> 3052: counts [5,7,13,13,0] -> [5,7,13,10,0]); fragile_things (index 3055 -> 3055: counts [3,9,12,12,0] -> [4,8,12,9,0], range [2,4] -> [1,4]); sticky_things (index 3056 -> 3056: counts [5,8,18,12,6] -> [5,8,18,11,6]); prickly_things (index 3058 -> 3058: counts [2,9,17,18,11] -> [2,8,17,18,11]); words_for_fast (index 3094 -> 3093: counts [1,3,13,7,4] -> [1,3,12,7,4]); words_for_smart (index 3097 -> 3096: counts [4,6,15,11,3] -> [4,6,15,10,3]); words_for_strong (index 3098 -> 3097: counts [1,5,9,6,1] -> [1,5,8,6,1]); words_for_strange (index 3099 -> 3098: counts [2,8,18,9,2] -> [2,7,17,11,2]); words_for_funny (index 3100 -> 3099: counts [2,6,9,6,2] -> [1,6,9,6,1]); words_for_old (index 3102 -> 3101: counts [1,6,11,7,3] -> [1,5,11,7,3]); words_for_new (index 3103 -> 3102: counts [2,5,9,5,1] -> [2,5,6,6,0]); deep_things (index 3112 -> 3111: counts [4,6,15,9,1] -> [4,6,15,9,0]); eating_sounds (index 3117 -> 3116: counts [1,7,8,6,1] -> [1,7,7,5,1]); quiet_things (index 3120 -> 3119: counts [3,9,21,8,1] -> [3,9,21,7,1]); smells_from_the_kitchen (index 3127 -> 3126: counts [4,7,9,8,0] -> [4,8,9,8,0]); things_that_smell_bad (index 3129 -> 3128: counts [7,14,17,10,4] -> [7,15,17,10,4]); pungent_foods (index 3130 -> 3129: counts [2,10,18,14,5] -> [2,9,16,15,5]); scented_products (index 3133 -> 3132: counts [4,11,14,9,3] -> [4,11,14,4,1]); middle_eastern_scents (index 3134 -> 3133: counts [1,2,11,11,8] -> [1,2,10,10,8]); motion_verbs (index 3136 -> 3135: counts [3,13,23,13,3] -> [4,13,24,13,3], range [2,4] -> [1,4]); winged_creatures (index 3138 -> 3137: counts [1,13,8,4,0] -> [1,11,5,1,0]); things_that_roll (index 3139 -> 3138: counts [3,9,16,12,3] -> [3,9,16,11,3]); ways_to_jump (index 3145 -> 3144: counts [5,5,16,13,7] -> [5,5,16,12,7]); things_that_sink (index 3147 -> 3146: counts [4,7,17,9,1] -> [4,7,17,8,1]); hot_things (index 3149 -> 3148: counts [4,12,16,11,2] -> [4,12,15,11,2]); cold_things (index 3150 -> 3149: counts [4,14,17,11,8] -> [4,14,14,7,4], range [1,5] -> [1,4]); food_chillers (index 3152 -> 3151: counts [2,2,4,2,1] -> [2,2,4,2,0]); things_that_burn (index 3155 -> 3154: counts [4,9,10,8,2] -> [4,9,10,5,1]); words_for_hot (index 3157 -> 3156: counts [1,6,12,5,3] -> [1,6,12,4,3]); words_for_cold (index 3158 -> 3157: counts [3,4,10,8,5] -> [3,5,10,7,5]); words_for_shiny (index 3163 -> 3162: counts [0,7,14,12,2] -> [0,7,13,12,2]); yellow_things (index 3169 -> 3168: counts [6,17,15,10,2] -> [6,17,14,10,2]); blue_things (index 3171 -> 3170: counts [5,7,17,11,4] -> [5,6,17,11,4]); pink_things (index 3177 -> 3176: counts [4,12,17,15,3] -> [4,12,17,14,3]); purple_things (index 3178 -> 3177: counts [1,7,12,18,6] -> [1,7,11,19,6]); gray_things (index 3180 -> 3179: counts [3,9,11,11,0] -> [3,10,13,10,0]); gold_things (index 3181 -> 3180: counts [5,6,10,12,0] -> [5,6,12,10,0]); striped_things (index 3182 -> 3181: counts [3,9,11,10,0] -> [3,8,14,10,0]); things_with_keys (index 3184 -> 3183: counts [4,9,17,14,3] -> [4,9,17,13,3]); things_with_numbers (index 3185 -> 3184: counts [5,7,13,13,0] -> [5,8,13,12,0], identifiability 2 -> 3, difficulty 1.5 -> 2.5); things_with_necks (index 3191 -> 3190: counts [6,5,22,9,3] -> [6,5,22,8,3]); things_with_tongues (index 3193 -> 3192: counts [4,9,13,7,5] -> [4,9,13,6,5]); things_with_layers (index 3196 -> 3195: counts [3,6,12,13,0] -> [3,6,13,13,0])
+Entry rows 61431 -> 61418; first row whose entry changed: 36802 (bluetongue 40223, was tongue and groove 40224); rows that moved: 24268; added bluetongue 40223 (row 36802), emergency brake 68956 (row 61409), bobsled 68957 (row 61410), bobsleigh 68958 (row 61411), luge 68959 (row 61412), flat battery 68960 (row 61413), out of petrol 68961 (row 61414), package holiday 68962 (row 61415), barber's pole 68963 (row 61416), bad breath 68964 (row 61417); removed 62517 (row 57592), 62959 (row 57931), 68662 (row 61137), 68666 (row 61141), 68670 (row 61145), 68671 (row 61146), 68700 (row 61175), 68701 (row 61176), 68732 (row 61207), 68733 (row 61208), 68762 (row 61237), 68770 (row 61245), 68772 (row 61247), 68777 (row 61252), 68814 (row 61289), 68817 (row 61292), 68853 (row 61328), 68862 (row 61337), 68877 (row 61352), 68901 (row 61376), 68919 (row 61394), 68920 (row 61395), 68923 (row 61398)
+root -> alias rows 2: chipboard 24054, provisional license 68691; alias -> root rows 0: none
+Rows whose flags changed: 3
+Links 99720 -> 99615; rows whose link count changed: 132
+Link-index shifts: from row 26 (hearts 27) on, link positions move
+Rows whose text changed: moai 2384 (was "Moai")
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 151, new 46, rating changed 30
+  gone (other than the deleted themes): cold_things: "Neptune" (26), pink_things: "lychee" (103), oval_things: "avocado" (111), yellow_things: "lion" (215), pungent_foods: "radish" (405), pungent_foods: "black pepper" (721), hot_things: "grill" (921), pink_animals: "manatee" (1041), prickly_things: "rose" (1693), flat_things: "steppe" (1940), flat_things: "mesa" (1950), flat_things: "Netherlands" (2140), things_that_sink: "Venice" (2232), landmarks: "Moai" (2384), famous_statues: "Moai" (2384), south_american_landmarks: "Moai" (2384), things_with_faces: "Moai" (2384), two_wheelers: "rickshaw" (2684), summer_camp: "campfire" (3024), food_chillers: "thermos" (3063), fragile_things: "heart" (3238), square_things: "pillow" (3667), scented_products: "mouthwash" (3732), scented_products: "sunscreen" (3745), things_that_burn: "calories" (3827), things_with_keys: "janitor" (4106), airport_security: "gloves" (4956), winter_vehicles: "bobsled" (5351), ways_to_jump: "parkour" (5625), square_things: "tic-tac-toe" (5765), things_that_roll: "credits" (6396), winged_creatures: "sphinx" (6620), cold_things: "Mount Everest" (6757), winged_creatures: "Pegasus" (6941), winged_creatures: "griffin" (6944), gold_things: "Midas" (6957), winged_creatures: "phoenix" (6962), winged_creatures: "harpy" (6963), winged_creatures: "dragon" (6982), winged_creatures: "fairy" (6989), things_that_burn: "bridge" (7379), voice_sounds: "howl" (10193), scented_products: "eraser" (12017), sticky_things: "Spider-Man" (12554), blue_things: "Eeyore" (13663), middle_eastern_scents: "olive oil soap" (16304), eating_sounds: "hiccup" (16980), eating_sounds: "gurgle" (16989), hot_things: "barbecue" (19767), two_wheelers: "chariot" (20383), cold_things: "Pluto" (21099), gold_things: "El Dorado" (21218), two_wheelers: "hansom cab" (22973), scented_products: "toilet paper" (23138), scented_products: "trash bags" (23370), things_with_necks: "light bulb" (23481), car_wash: "detergent" (23882), building_materials: "chipboard" (24054), types_of_wood: "chipboard" (24054), things_made_from_trees: "chipboard" (24054), blank_board: "chip" (24054), two_wheelers: "hand truck" (24258), fragile_things: "glasses" (24782), deep_things: "pocket" (24952), words_for_fast: "lickety-split" (27830), words_for_shiny: "bright" (28031), sharp_things: "bayonet" (28727), words_for_funny: "facetious" (29096), fragile_things: "reputation" (29101), things_that_burn: "chili" (29499), cold_things: "Yukon" (31816), cold_things: "Greenland" (32063), cold_things: "Svalbard" (32064), cold_things: "Siberia" (32106), cold_things: "Alaska" (32111), flat_things: "Kansas" (32168), fragile_things: "ecosystem" (32273), sharp_things: "guillotine" (33828), gray_things: "nickel" (33938), quiet_things: "stealth bomber" (34608), sharp_things: "lance" (34650), scented_products: "marker" (34759), cold_things: "Vostok Station" (36684), gold_things: "Fort Knox" (37714), things_with_numbers: "mailbox" (38221), middle_eastern_scents: "patchouli" (39731), two_wheelers: "ox cart" (39859), two_wheelers: "gig" (40184), things_with_tongues: "Albert Einstein" (41927), on_a_train: "emergency brake" (46812), on_the_subway: "emergency brake" (46812), two_wheelers: "pony cart" (48235), two_wheelers: "dogcart" (49173), things_that_burn: "CD" (49347), two_wheelers: "sulky" (50129), scented_products: "cat litter" (50839), cold_things: "Oymyakon" (62516), cold_things: "Hoth" (62517), things_that_smell_bad: "halitosis" (62959), things_that_smell_bad: "mothball" (66296), airport_security: "swab" (67358), car_trouble: "cracked windshield" (68662), car_trouble: "squeaky brakes" (68666), car_trouble: "fuel leak" (68670), car_trouble: "slipping clutch" (68671), learning_to_drive: "provisional license" (68691), in_a_glove_box: "ketchup packet" (68700), in_a_glove_box: "valve cap" (68701), airport_security: "bag search" (68732), airport_security: "random search" (68733), travel_trouble: "lost passport" (68762), travel_trouble: "bad weather" (68770), travel_trouble: "hidden fees" (68772), winter_vehicles: "snow tube" (68777), deep_things: "outer space" (68808), words_for_hot: "infernal" (68814), words_for_cold: "unheated" (68817), words_for_smart: "precocious" (68853), words_for_old: "primitive" (68862), words_for_funny: "entertaining" (68877), words_for_strong: "indestructible" (68901), words_for_new: "futuristic" (68919), words_for_new: "trendy" (68920), words_for_new: "pristine" (68923)
+  new: thorny_plants: "pineapple" (96), smells_from_the_kitchen: "onion" (393), things_with_layers: "trifle" (639), striped_things: "badger" (1014), gray_things: "manatee" (1041), thorny_plants: "monkey puzzle" (1667), thorny_plants: "yucca" (1802), american_holiday_spots: "New York" (2219), american_holiday_spots: "Niagara Falls" (2331), landmarks: "moai" (2384), famous_statues: "moai" (2384), south_american_landmarks: "moai" (2384), things_with_faces: "moai" (2384), roadwork: "bulldozer" (3099), striped_things: "tabby cat" (9845), motion_verbs: "creep" (10380), gold_things: "Grammy" (12748), gold_things: "Golden Globe" (12750), gray_things: "Eeyore" (13663), voice_sounds: "howl" (17016), thorny_plants: "burdock" (17443), in_a_hotel_room: "mirror" (23136), in_a_hotel_room: "hangers" (23340), fragile_things: "glass" (24032), blank_board: "chip" (24055), hot_things: "summer" (25302), in_a_hotel_room: "keycard" (25706), thorny_plants: "nopal" (29503), thorny_plants: "prickly pear" (30574), thorny_plants: "saguaro" (30576), thorny_plants: "cholla" (30586), thorny_plants: "ocotillo" (30696), deep_things: "pit" (31789), american_holiday_spots: "Yellowstone" (31943), gray_things: "ash" (39899), words_for_cold: "frozen" (39916), things_with_numbers: "jersey" (44229), gold_things: "Ballon d'Or" (44447), american_holiday_spots: "Disneyland" (48930), things_that_smell_bad: "mothballs" (66296), motion_verbs: "fly" (67311), on_a_train: "emergency brake" (68956), on_the_subway: "emergency brake" (68956), winter_vehicles: "bobsled" (68957), winter_vehicles: "luge" (68959), things_that_smell_bad: "halitosis" (68964)
+  rating: thorny_plants: "raspberry" (349) 3.8/5 -> 2.4/3, purple_things: "turnip" (425) 2.7/3 -> 3.4/4, pungent_foods: "tuna" (467) 1.7/2 -> 3.1/4, blue_things: "water" (861) 1.7/2 -> 2.4/3, light_words: "shadow" (28397) 3/3 -> 2.4/3, quiet_things: "shadow" (28397) 3/3 -> 2.4/3, thorny_plants: "holly" (29953) 2.7/3 -> 1.7/1, natural_materials: "rubber" (30101) 2/2 -> 2.7/3, striped_things: "referee" (42671) 1.7/2 -> 2.4/3, ways_of_walking: "strut" (50133) 3.7/3 -> 3/3, things_you_do_with_your_feet: "strut" (50133) 3.7/3 -> 3/3, motion_verbs: "strut" (50133) 4/4 -> 3.7/4, blank_ball: "moth" (66296) 2.4/3 -> 2.7/3, attic: "mothballs" (66296) 3.7/4 -> 3.4/4, wardrobe: "mothballs" (66296) 3/3 -> 2.7/3, household_chemicals: "mothballs" (66296) 3/3 -> 2.7/3, patterns: "speckled" (68831) 3/3 -> 2.7/3, patterns: "crisscross" (68832) 3/3 -> 2.7/3, words_for_strange: "mysterious" (68854) 1.7/2 -> 2.4/3, words_for_strange: "exotic" (68855) 2.7/3 -> 3.4/4, words_for_strange: "unfamiliar" (68856) 2.7/3 -> 3.4/4, words_for_old: "mature" (68861) 1.7/2 -> 2.4/3, feeling_tired: "zonked" (68867) 4/4 -> 3.7/4, words_for_funny: "silly" (68869) 1/1 -> 1.7/2, words_for_funny: "ridiculous" (68873) 1.7/2 -> 2.4/3, words_for_funny: "uproarious" (68884) 4/4 -> 3.7/4, words_for_funny: "farcical" (68885) 4/4 -> 3.7/4, words_for_funny: "jocular" (68887) 4.7/4 -> 4/4, words_for_strong: "strapping" (68903) 4/4 -> 3.7/4, words_for_new: "nascent" (68929) 4.7/4 -> 4/4
+new issues: none
+
+From the review (tools/gen/review-julia-v460-v473.md), not done or done differently:
+- Held for Simon (B9): nice (words_for_good) and mammoth (words_for_big) would raise the contract-dup-root baseline; Earth in things_with_layers needs a case allow-list key.
+- A16 fragile things: glass [material] in at typicality 1; glasses goes out with it (one word family, family-pair warning otherwise; wine glass stays).
+- A17 gold things: with Midas, Fort Knox and El Dorado out, capitals fall to a fifth of the theme and the case lint flags Oscar [award] (case-sense-proper, baseline 0). Grammy, Golden Globe and Ballon d'Or (gold trophies) are linked so the theme keeps its mix and no warning is new.
+- A11: nettle does not move to thorny plants (stinging hairs, not thorns); it stays in prickly things.
+- B2 cold things: the North and South Poles, the Arctic and Antarctica stay (the cold itself, the first words people name); the other named places and Hoth go.
+- B3: snow tube is left in no theme (a real thing, not a loose phrase): kept in the library.
+- B9: grill and barbecue have no appliance entries; they only go out of hot things (no appliance entry made).
+- C duplicates: horned owl as an alias of great horned owl would leak "owl" in owls (theme-name, a new warning): the duplicate stub is deleted instead.
+- C types: ID card stays proper: typed common, its capital trips case-cap-common in three themes (new warnings).
+- C ratings: atmosphere is familiarity 1 already (cannot go one easier): unchanged. "Typicality one step lower" read as less typical: turnip in purple things 3 -> 4, water in blue things 2 -> 3, referee in striped things 2 -> 3, rubber in natural materials 2 -> 3 (stretchy things keeps 2).
+- C weak links: sewer and sewage were grouped in things that smell bad already.
+- C: dark creatures is not renamed "black animals": black cat, black widow and black mamba would leak "black" (theme-name warnings).
+- Info only, new: theme-twin "ways to move" shares 22 of 27 words with "motion verbs" (fly and creep linked); sense-link prefers howl [animal sound] in voice sounds (the review's call puts howl [cry] there).
+- Words left in no theme by this batch (kept, not exported): Hoth, snow tube, valve cap, entertaining, trendy, futuristic, pristine, primitive, precocious, indestructible, infernal, unheated.
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v460-v474 together (one notice for all fifteen; replaces the per-batch drafts batch460-notice.txt ... batch473-notice.txt). Net effect against v459, the version you have:
+- Travel & Transport (v460-v461): well-known missing words linked in 22 existing themes; 16 new themes: car wash, car trouble, learning to drive, two-wheelers, on a train, on the subway, taxi ride, travel hubs, travel trouble, in a hotel room, on a cruise ship, summer camp, winter vehicles, roadwork, airport security, in a glove box. US vacation spots is now a sibling of beach destinations (it was under it). modes of transport: horseback replaces horse (Simon's v438 call stands).
+- Qualities (v462-v473): the light and dark, temperature, size and weight, smells, shapes, synonyms, sounds, textures, motion, materials, colors and things with… branches read word by word: words that did not fit out, well-known words in. 18 new themes: words for bright, dark places, things that burn, keeping cool, deep things, scented products, rectangular things, flat things, words for funny, words for strong, words for new, sharp things, fragile things, gray things, gold things, striped things, things with layers, things with numbers. Words-for themes no longer hold a member with the topic word (red-hot, stone cold, pitch dark are out).
+- Fixes (v474): plants with spines merged into thorny plants (its twin; thorny plants popularity 5 -> 3). Figurative and loose links out (burn bridges, deep pockets, Midas and Fort Knox in gold things, mythical beasts in winged creatures, carts in two-wheelers, weapons in sharp things, named places in cold things, loose phrases such as bad weather and squeaky brakes). New sense entries: emergency brake [train] (the car one shows UK "handbrake"), bobsled [sled], luge [sled] in winter vehicles (the old entries are the sports). learner's permit takes UK, IE "provisional licence" as its regional alias; chipboard is now the UK alias of particle board; halitosis a synonym of the new root bad breath. New UK regional aliases: flat battery, out of petrol, package holiday, barber's pole; medallion [taxi] and spring break tagged US. Moai is now lowercase "moai" (common noun).
+- Ratings: US vacation spots identifiability 4 -> 3 (theme difficulty 4 -> 3; New York, Yellowstone, Niagara Falls, Disneyland now in it); of the new themes, rectangular things and flat things are popularity 3, identifiability 3 like square and oval things, things with numbers identifiability 3.
+Theme rows 3189 -> 3222 (34 new, plants_with_spines gone); theme indexes shift from index 907 (airport_security, was museum) to the last index 3221.
+Entry rows 61137 -> 61418: rows move from row 13347 on (taxi rank, pomander, weekend break, erosion, theft, Nunavut, rank and taxi stand newly exported in the middle; 50 entries left the export, words in no theme now or deleted); the other new rows are at the end. chipboard, bluetongue, fresh cut grass and lightbulb are now alias rows. Link positions move from row 23 on.
+Line breaks: 80 words added over v461-v469 (data/breaks-en.txt); none in v474.
+New characters: none.
