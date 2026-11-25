@@ -926,9 +926,9 @@ Only about 26 bubbles were on screen at the start; LONDON, TROPHY, TENNIS, GRASS
 
 Notes: a drag of PENGUIN onto the flightless stack the first time did not merge and did not cost a move (counter stayed 21); the retry worked. One wrong drag (TROPHY onto OLYMPIAD/WORLD CUP/SUPER BOWL) cost 1 move. Move streak refund seen (counter held at 34 after the SOCIAL MEDIA merge, 21 after the PENGUIN merge).
 
-## Level 35 (EXPERT; FAILED, out of moves at 8/10)
+## Level 35 (EXPERT; out of moves once at 8/10, completed after the free +5)
 
-Themes: 10 (bar `0/10`). Moves: 43 at start (first screenshot, before any drag), 0 left with the bar at `8/10`: the level was NOT completed. No Mastery, no reward (EXPERT level, purple LVL tab with a purple octopus, purple booster bar). Split words: 9 chunk pairs (the most so far). No booster used. No chain, no cryptic bubbles.
+Themes: 10 (bar `0/10`). Moves: 43 at start (first screenshot, before any drag), 0 left with the bar at `8/10` (out of moves). The free "+5 Moves FREE" button then gave a straight +5 (see below) and the level was completed with 2 moves left. Mastery: MISSED (the dragburst on the last merge showed Fantastic! then the Well Done screen; Mastery was not caught). Reward: 90 coins (EXPERT; the counter stayed 2,130 on the Well Done screen). Next button is a plain green "LEVEL 36" (X2 and Home not tapped). EXPERT level (purple LVL tab with a purple octopus, purple booster bar). Split words: 9 chunk pairs (the most so far). No booster used. No chain, no cryptic bubbles.
 
 Chunk pairs: MYS\|TERY, ELE\|MENT, MOLE\|CULE, CURI\|OUS, CHAR\|GER, HOR\|ROR, NEU\|TRON, CHAP\|TER and PRO\|TON. Each join cost 1 move.
 
@@ -946,12 +946,122 @@ What went wrong: about 7 moves were spent on chunks (9 chunk pairs need 9 joins)
 | Atom | NEUTRON (NEU\|TRON), ELECTRON, PROTON (PRO\|TON), NUCLEUS | ATOM (shown; returned as the word ATOM, joined CHEMISTRY) |
 | Anger | RAGE, SHOUT, TEMPER, FROWN | ANGRY (shown; returned as the word ANGRY) |
 | Chemistry | ELEMENT (ELE\|MENT), MOLECULE (MOLE\|CULE), ACID, ATOM (returned) | CHEMISTRY (shown) |
-| Gadgets (not cleared) | APP, CAMERA, SCREEN (and probably CHARGER) | (guessed: SMARTPHONE; not cleared) |
-| Gadgets 2 (not cleared) | DRONE, SMARTWATCH, 3D PRINTER, CHARGER? | (guessed: TECH GADGETS; not cleared) |
+| Smartphone | APP, CAMERA, SCREEN, CHARGER | SMARTPHONE (shown; returned as the word SMARTPHONE) |
+| Gadgets | DRONE, SMARTWATCH, 3D PRINTER, SMARTPHONE (returned) | (guessed: GADGETS or TECHNOLOGY; the final merge showed only the 4 words in an orange bubble) |
 
-Names read from screenshots b4, c6, d6, e2, e6, e8, f1, f5 in the scratchpad (the level never reached the final merge).
+Names read from screenshots b4, c6, d6, e2, e6, e8, f1, f5 in the scratchpad and g1.
 
-Out-of-moves screen (scratchpad/shots/oom35a.png, oom35c.png, oom35d.png): a modal "OUT OF MOVES! Add extra moves to continue" with a big green "+5 Moves FREE" button (probably a rewarded ad, not tapped), a swipeable carousel below: (1) "Revive Offer" 1,000 coins + 1 each of Extra Bubbles/Magnet/Hint + 1H unlimited hearts for 880 yen ("Continue with +15 Moves"), (2) "Golden Pass" (GET button, 5d 4h timer). There is NO close X: the Back key and taps outside the modal and a swipe down did nothing. Closing it appears to need the FREE button (probably an ad), a purchase, or the Golden Pass; none of these were tapped. The play stopped here under the standing rules.
+Out-of-moves screen (scratchpad/shots/oom35a.png, oom35c.png, oom35d.png): a modal "OUT OF MOVES! Add extra moves to continue" with a big green "+5 Moves FREE" button, a swipeable carousel below: (1) "Revive Offer" 1,000 coins + 1 each of Extra Bubbles/Magnet/Hint + 1H unlimited hearts for 880 yen ("Continue with +15 Moves"), (2) "Golden Pass" (GET button, 5d 4h timer). There is no close X; Back, outside taps and a swipe down did nothing. On the coordinator's word I tapped "+5 Moves FREE": it gave a straight +5 moves at once (counter 0 -> 5), no ad, no price, no later cost seen (coins unchanged at 2,130). After the +5 the level was finished with 2 moves left.
+
+## Level 36
+
+Themes: 10 (bar `0/10`). Moves: 46 at start (first screenshot, before any drag), 11 left at the last merge. Mastery: 509 (captured with dragburst; Level 35's Mastery was missed, so the gap from 494 is unrecorded). Reward: 30 coins (counter 2,220 on the Mastery and Well Done screens; coins had gone 2,130 -> 2,220 across the level 35 reward of 90). Next button is a plain green "LEVEL 37" (X2 and Home not tapped). Split words: 5. No booster used (the two FREE boosters on the pre-level dialog were not selected). Plain level. No chain.
+
+New: a pre-level dialog (logged in the features table). A "+5 MOVES" rewarded-ad bubble sat on the board for most of the level (not tapped).
+
+Chunk pairs: PEN\|GUIN, DEMO\|CRACY, ELEC\|TION, SPELL\|BOOK and (CRA\|B, cryptic ?RA? -> CRAB, not a chunk). Each join cost 1 move. I joined chunks only once their theme was close to ready, as the coordinator asked.
+
+Cryptic bubbles: ???? -> ??A? -> ?RA? -> CRAB; ???L -> ?O?L -> BO?L -> BOIL; ?N?? / ?N?Y -> EN?Y -> ENVY; ?A?E -> BA?E -> BAKE.
+
+| Theme | Words | Name |
+|---|---|---|
+| Magic | WIZARD, WAND, CHARMS, SPELLBOOK (SPELL\|BOOK) | MAGIC (shown) |
+| Seafood | SHRIMP, SCALLOP, MUSSEL, CRAB (cryptic) | SEAFOOD (shown) |
+| Roller coaster | TRACK, SPEED, LOOP, THRILL | ROLLER COASTER (shown) |
+| Noodles | SOBA, UDON, PHO, RAMEN | NOODLES (shown) |
+| Kitchen appliances | BLENDER, TOASTER, MICROWAVE, FRIDGE | KITCHEN APPLIANCES (shown) |
+| Cooking techniques | GRILL, BOIL (cryptic), FRY, BAKE (cryptic) | COOKING TECHNIQUES (shown) |
+| Unpleasant feelings | ANGER, FEAR, GUILT, ENVY (cryptic) | UNPLEASANT (shown) |
+| Hygiene | BRUSH, RINSE, SHOWER, FLOSS | HYGIENE (shown) |
+| Politics | CAMPAIGN, BALLOT, DEMOCRACY (DEMO\|CRACY), ELECTION (ELEC\|TION) | POLITICS (shown) |
+| Flightless / pink birds | EMU, OSTRICH, FLAMINGO, PENGUIN (PEN\|GUIN) | (guessed: BIRDS; the burst showed only the four words in an orange bubble, no name) |
+
+Notes: SEAFOOD, MAGIC and the others returned and joined parents that were not shown; the returned bubbles were not visible in the later screenshots (the bar counts them). One wrong drag (GRILL onto the appliance stack) cost 1 move; one chunk drag (ELEC onto TION) cost 1 move when the board shifted (retry with DUR=800 worked); the +5 bubble was never tapped. Names read from screenshots a4, b5, d3, e2, e3, e6, f3, g3, g9 in the scratchpad.
+
+## Level 37
+
+Themes: 10 (bar `0/10`, counting sub-themes that return as words). Moves: 50 at start (s37a), 10 left at the last merge. Mastery: 520 (dragburst, fin37_5). Reward: 30 coins (counter 2,250 on the Mastery and Well Done screens). Next button is a plain green "LEVEL 38" (X2 and Home not tapped). Split words: 8. No booster used. Plain level. Chain lock "3" across the middle (first seen at level 21), see notes.
+
+Chunk pairs: MINI\|VAN, SUN\|SET, MAN\|GO, CAR\|ROT, GRA\|INS, EGG\|PLANT, BLUE\|BELL, DARK\|NESS. Each join cost 1 move.
+
+Hierarchy: most words started in two or three layers. Many bubbles were not on the board at the start and dropped in from the top as earlier merges happened (EGG, ROT, BELL, BLUE, SET, DAISY, GUAVA, ROSE, LILY, DAWN, MIDNIGHT, MANGOSTEEN, OKRA, ROMANESCO, POMEGRANATE and others). Sub-themes (cars, night, berries, mushrooms) return as one word that joins a parent theme.
+
+| Theme | Words | Name |
+|---|---|---|
+| Vehicles | SUV, SEDAN, COUPE, MINIVAN (MINI\|VAN) | VEHICLE (shown, b2) |
+| Night | MOON, STARS, SLEEP, DARKNESS (DARK\|NESS) | NIGHT (shown, d3) |
+| Times of day | NIGHT, DAWN, SUNSET (SUN\|SET), MIDNIGHT | TIMES OF DAY (shown, w1) |
+| Fruit | POMEGRANATE, MANGO (MAN\|GO), GUAVA, MANGOSTEEN | FRUIT (shown, x1) |
+| Flowers | LILY, ROSE, DAISY, BLUEBELL (BLUE\|BELL) | FLOWERS (shown, z1) |
+| Vegetables | CARROT (CAR\|ROT), EGGPLANT (EGG\|PLANT), OKRA, ROMANESCO | VEGETABLES (shown, bb1) |
+| Berries | RASPBERRY, BLUEBERRY, STRAWBERRY, CRANBERRY | BERRIES (shown, dd1) |
+| Mushrooms | ENOKI, PORCINI, TRUFFLE, SHIITAKE | MUSHROOMS (shown, v1) |
+| Healthy eating | FRUIT, VEGETABLES, SALAD, GRAINS (GRA\|INS) | HEALTHY EATING (shown, ii1) |
+| Foraged/natural foods (guessed) | BERRIES, NUTS, HERBS, MUSHROOMS | (guessed: FORAGING; the burst showed only the four words in an orange bubble, no name) |
+
+Notes: the chain lock counted completed themes, not bubbles: it went 3 -> 2 after VEHICLE and 2 -> 1 after NIGHT, then vanished after MUSHROOMS. While it stood, the upper half (cars, night, fruit, flowers, vegetables, times of day) could not be finished: three stacks sat at three words with no fourth until the lower half was done (the fourth words dropped in only after MUSHROOMS). I lost about 8 moves guessing: HERBS dragged onto SALAD, the vegetable stack, the flower stack and the berry stack all failed (HERBS belongs with BERRIES and NUTS), SALAD onto the vegetable stack failed, a first ENOKI drag in the locked half did nothing, and BERRIES onto FRUIT failed once. A "+5 MOVES" rewarded-ad bubble sat on the board for most of the level (not tapped). Names read from the shots named in the table in the scratchpad.
+
+## Level 38
+
+Themes: 9 (bar `0/9`). Moves: 44 at start (s38a), 15 left at the last merge. Mastery: 530 (dragburst, fin38_5). Reward: 30 coins (counter 2,280 on the Mastery and Well Done screens; 2,250 before). Next button is a HARD "LEVEL 39" with an octopus (red tab; X2 and Home not tapped). Split words: 7. No booster used (two boosters on the pre-level dialog, count 1 each, not selected). Plain level, no chain.
+
+Chunk pairs: PAS\|SAGE, EMPE\|ROR, GLADI\|ATOR, CHA\|RIOT, AMERI\|CANO, BLEN\|DER, COU\|PON. Each join cost 1 move. Many words dropped in later, after a sub-theme cleared (SPHINX, KETTLE, TORCH, EGYPT, CANDLE, LANTERN, LIGHTER, JUICER, ESPRESSO, MACCHIATO, CAPPUCCINO, COLOSSEUM and others).
+
+| Theme | Words | Name |
+|---|---|---|
+| Treats | FUDGE, BROWNIE, CUPCAKE, DONUT | TREATS (shown, a3) |
+| Ticket | PASSAGE (PAS\|SAGE), ENTRY, ADMISSION, ACCESS | TICKET (shown, b4) |
+| Colosseum | GLADIATOR (GLADI\|ATOR), EMPEROR (EMPE\|ROR), ARENA, CHARIOT (CHA\|RIOT) | COLOSSEUM (shown, e3) |
+| Flame holders | CANDLE, LIGHTER, LANTERN, TORCH | FLAME HOLDERS (shown, f4) |
+| Coffee machine | CAPPUCCINO, MACCHIATO, ESPRESSO, AMERICANO (AMERI\|CANO) | COFFEE MACHINE (shown, h3) |
+| Kitchen appliances | KETTLE, JUICER, BLENDER (BLEN\|DER), COFFEE MACHINE | KITCHEN APPLIANCES (shown, j3) |
+| Redeemables | VOUCHER, COUPON (COU\|PON), TOKEN, TICKET | REDEEMABLES (shown, l3) |
+| Pyramids | MUMMIES, PHARAOH, SPHINX, EGYPT | PYRAMIDS (shown, n3) |
+| Landmarks | PYRAMIDS, COLOSSEUM, GREAT WALL, EIFFEL TOWER | (guessed: LANDMARKS; the burst showed only the four words in an orange bubble, no name) |
+
+Notes: three themes were nested one level deeper than they looked (TICKET, COLOSSEUM, COFFEE MACHINE, FLAME HOLDERS and PYRAMIDS each returned as a word and joined a parent). A wrong drag (CHA onto the Rome stack) cost 1 move; a few drags made while the board was still shifting did nothing and cost nothing. Streak refunds kept the counter flat twice (33 and 20-ish). Names read from the shots named in the table in the scratchpad.
+
+## Level 39 (HARD)
+
+Themes: 11 (bar `0/11`). Moves: 51 at start (s39a), 13 left at the last merge (this includes +5 from an accidental rewarded ad, see notes). Mastery: 543 (dragburst, fin39_5). Reward: 60 coins (HARD; counter 2,310 on the Mastery and Well Done screens; 2,280 before). Next button is a purple "EXPERT LEVEL 40" with a pink octopus (X2 and Home not tapped). Split words: 7 joins (CRIS\|PY, SNEA\|KERS, LIGHT\|HOUSE, BUSI\|NESS, UNI\|FORM, TER\|MINAL, CERE\|AL). No booster used. Red "LVL 39" tab with an octopus. The pre-level dialog's PLAY button was normal; the dialog showed no FREE tag. Autumn leaf decoration at the top of the Mastery and Well Done screens (as at level 8).
+
+Chunk pairs: CRIS\|PY, SNEA\|KERS, LIGHT\|HOUSE, BUSI\|NESS, UNI\|FORM, TER\|MINAL, CERE\|AL. Each join cost 1 move (7 moves). I joined them only when their theme needed them. Many words dropped in later after a sub-theme cleared (SCRAM, TUXEDO, GOWN, KID, ADULT, RUNWAY, CUSTOMS, TIE and others).
+
+| Theme | Words | Name |
+|---|---|---|
+| Bacon | FRIED, SALTY, SMOKY, CRISPY (CRIS\|PY) | BACON (shown, a4) |
+| Casual wear | JEANS, T-SHIRT, HOODIE, SNEAKERS (SNEA\|KERS) | CASUAL (shown, b4) |
+| Baby | CRIB, PACIFIER, DIAPER, STROLLER | BABY (shown, d3) |
+| Harbor | PIER, DOCK, LIGHTHOUSE (LIGHT\|HOUSE), WHARF | HARBOR (shown, f2) |
+| Egg | SCRAMBLED, BOILED, POACHED, OMELETTE | EGG (shown, h3) |
+| Breakfast | EGG, BACON, WAFFLES, CEREAL (CERE\|AL) | BREAKFAST (shown, i4) |
+| Life stages | BABY, KID, TEEN, ADULT | LIFE STAGES (shown, j4) |
+| Formal | TIE, GOWN, HEELS, TUXEDO | FORMAL (shown, k4) |
+| Dress code | UNIFORM (UNI\|FORM), FORMAL, BUSINESS (BUSI\|NESS), CASUAL | DRESS CODE (shown, m5) |
+| Airport | RUNWAY, CONTROL TOWER, BAGGAGE CLAIM, CUSTOMS | AIRPORT (shown, o4) |
+| Transport hubs | STATION, HARBOR, TERMINAL (TER\|MINAL), AIRPORT | (guessed: TRANSPORT HUBS; the burst showed only the four words in an orange bubble, covered by "Cool!") |
+
+Notes: the TER\|MINAL drag was the point where a rewarded ad played (see the features table). A "+5 MOVES" bubble sat on the board from move 24 on; I never tapped it, but a drag that began near it opened the ad, and the counter rose 14 -> 18 after the ad (+5, minus 1 for the join). A BUSINESS drag onto the dress-code stack missed once (1 move). Names read from the shots named in the table in the scratchpad.
+
+## Level 40 (EXPERT)
+
+Themes: 9 (bar `0/9`). Moves: 38 at start (s40a), 7 left at the last merge. Mastery: 555 (dragburst, fin40_5). Reward: 90 coins (EXPERT; counter 2,370 on the Mastery and Well Done screens; 2,310 before). Next button is a plain green "LEVEL 41" (X2 and Home not tapped). Split words: 8 (EXPLO\|SION, RADIA\|TION, OPE\|RA, BUC\|KET, BUT\|TER, DARK\|NESS, BUN\|KER, KER\|NEL). No booster used. Purple "LVL 40" tab with a pink octopus. Autumn leaf decoration at the top of the Mastery and Well Done screens. The pre-level dialog's PLAY button read "EXPERT LEVEL PLAY".
+
+Chunk pairs: EXPLO\|SION, RADIA\|TION, OPE\|RA, BUC\|KET, BUT\|TER, KER\|NEL, DARK\|NESS, BUN\|KER. Each join cost 1 move. Cryptic bubbles: ??N? -> M?N? -> M?NE -> MINE; ???? -> ?C?? -> EC?O -> ECHO; M???? -> M???O -> M?ZZO -> MEZZO; ????? -> ?L??? -> ?LOW? -> ?LOWN -> CLOWN. There was no ad and no chain on this level.
+
+| Theme | Words | Name |
+|---|---|---|
+| Popcorn | KERNEL (KER\|NEL), BUTTER (BUT\|TER), SALT, BUCKET (BUC\|KET) | POPCORN (shown, f1) |
+| Things that pop | POPCORN, BUBBLEGUM, BALLOON, FIRECRACKER | THINGS THAT POP (shown, g1) |
+| Cave | ECHO (cryptic), BAT, STALACTITE, DARKNESS (DARK\|NESS) | CAVE (shown, k1) |
+| Underground locations | CAVE, BUNKER (BUN\|KER), SUBWAY, MINE (cryptic) | UNDERGROUND LOCATIONS (shown, p1) |
+| Circus | CLOWN (cryptic), TIGHTROPE, ACROBAT, TRAPEZE | CIRCUS (shown, t1) |
+| Opera voices | SOPRANO, MEZZO (cryptic), TENOR, BARITONE | SINGER (shown, a1) |
+| Supernova | STAR DEATH, REMNANT, EXPLOSION (EXPLO\|SION), RADIATION (RADIA\|TION) | SUPERNOVA (shown, d1) |
+| Live shows | CIRCUS, PARADE, THEATER, OPERA (OPE\|RA) | LIVE SHOWS (shown, g1) |
+| Sky events | METEOR, AURORA, ECLIPSE, SUPERNOVA | (guessed: SKY EVENTS; the burst showed only the four words in an orange bubble, covered by "Cool!") |
+
+Notes: SINGER vanished after it was shown and the bar went up, so it joined the OPERA stack without a second bubble being visible. Five themes returned as sub-theme words (POPCORN, CAVE, CIRCUS, SINGER, SUPERNOVA). Names read from the shots named in the table in the scratchpad. A brief Android status bar (clock "8:16" and a "G") flickered at the top of the board once, after the Play Store detour at level 39.
 
 ## New features log
 
@@ -979,5 +1089,9 @@ Out-of-moves screen (scratchpad/shots/oom35a.png, oom35c.png, oom35d.png): a mod
 | 21 | Chained bubbles (padlock chain) | scratchpad/shots/chained_tutorial.png, t3.png | A chain with a numbered padlock splits the board; "Collect 3 bubbles to unlock. No merging across the chain." Lock counts down as themes clear. Also a floating "+5 MOVES" rewarded-ad bubble (not tapped). |
 | 24 | EXPERT level indicator | scratchpad/shots/wd24.png | The Well Done screen after HARD level 24 shows the next button as a purple "EXPERT LEVEL 25" with a purple octopus (HARD was red with a red octopus). |
 | 31 | Cryptic bubbles | scratchpad/shots/s31b.png, s31c.png | Words with missing letters shown as "?" (tutorial example A?P??); the letters reveal as other merges happen (??C? -> ?ACH -> BACH). |
-| 35 | Out-of-moves modal without a close button | scratchpad/shots/oom35a.png, oom35c.png | "OUT OF MOVES!" modal with "+5 Moves FREE" (probably rewarded ad), carousel with 880 yen Revive Offer (+15 moves) and Golden Pass; no X, Back and outside taps do nothing. Not dismissed. |
+| 35 | Out-of-moves modal ("+5 Moves FREE") | scratchpad/shots/oom35a.png, oom35c.png, free1.png | "OUT OF MOVES!" modal with a green "+5 Moves FREE" button (a straight +5, no ad), a 880 yen Revive Offer (+15 moves) and a Golden Pass carousel; no close X (Back and outside taps do nothing). |
 | 35 | Low-moves warning ring | scratchpad/shots/e8.png | Red moves ring and pink screen vignette at 5 moves and below. |
+| 36 | Pre-level dialog (Shell Streak, free boosters) | scratchpad/shots/s36a.png, s36b.png | Tapping the LEVEL 36 button first opens a dialog: "Shell Streak" (locked, "Unlocks at Level 51"), "Select Boosters" with two FREE boosters (extra bubble, +3 MOVES) behind a tutorial arrow, and a green PLAY button; heart counter 5 Full. First seen at level 36 (not selected; PLAY tapped). |
+| 37 | Chain lock counts completed themes | scratchpad/shots/c0.png, v2.png | The padlock number (3 on level 37) drops by one for each theme completed above the chain (3 -> 2 -> 1 -> gone); merges inside one half work freely. Words needed to finish the upper themes only drop in after the lock opens. |
+| 39 | Rewarded-ad "+5 MOVES" bubble fires from a nearby drag | scratchpad/shots/n2.png, ad2.png, ad5.png, ad10.png, o1.png | A drag next to the orange +5 MOVES bubble (a drag from TER toward MINAL, bubble was 200 px away) started a full-screen MAX test ad ("Congrats! You're seeing a test ad", countdown 9 s). It had no X at first; a top-left pill with a skip glyph and "Google Play" was in fact a Play Store link (opened a Play sheet, then the Play Store home with an info dialog; nothing installed). The game was brought back with an app launch; the ad then showed "Privacy Management" with GET, Interested, Not interested and an X at top right; the X closed it. Reward +5 moves (14 -> 18). |
+| 39 | EXPERT indicator after a HARD level | scratchpad/shots/wd39.png | Well Done after HARD level 39 shows a purple "EXPERT LEVEL 40" button with a pink octopus (reward of 39 was 60). |
