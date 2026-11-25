@@ -1565,6 +1565,50 @@ Themes: 9 (bar `0/9`). Moves: 44 at start (counter read 3 for about 55 s while t
 
 Notes: hierarchical: SCIENCE, ART, MATH and MUSIC into SUBJECTS (the biggest two-level tree so far: sciences also fed a parent); AUSTRALIA, USA and CANADA into ENGLISH-SPEAKING WORLD with the plain word NEW ZEALAND. OPERA HOUSE (an Australia clue) was dragged with the Australia group, not ART. Table rows for AUSTRALIA and ART may be slightly off in which fourth word joined (the clears were played quickly).
 
+## Level 65 (EXPERT)
+
+Themes: 13 (bar `0/13`). Moves: 46 at start (counter read 3 on load; 45 after the first merge, so true start 46 by the first-merge-plus-1 rule), 14 left at the final merge. Mastery: 872 (count-up frame, counter at 0 moves; still counting, final not confirmed). Reward: 90 coins (EXPERT; coins 3,510). Next button: green "LEVEL 66" (plain). Split words: 0 (no chunk bubbles). No reversed or cryptic bubbles, no chain lock, no +5 ad bubble. Wrong or wasted drags: 0 (a few merges cost 0 moves, probably Move Streak +1; counter lagged on others).
+
+| Theme | Words | Name |
+|---|---|---|
+| Venomous snakes | COBRA, MAMBA, VIPER, RATTLESNAKE | VENOMOUS SNAKES (shown; not returned to a parent that I saw) |
+| Harry Potter | HOGWARTS, QUIDDITCH, DUMBLEDORE, SNAPE | HARRY POTTER (shown) |
+| Narnia | WITCH, WARDROBE, CAIR PARAVEL, ASLAN | NARNIA (shown) |
+| Adverbs of frequency | USUALLY, OFTEN, RARELY, SOMETIMES | ADVERBS OF FREQUENCY (shown) |
+| Winter | SNOW, SLED, FIREPLACE, CHRISTMAS | WINTER (shown) |
+| Telescope | LENS, OBSERVATORY, ASTRONOMY, STARS | TELESCOPE (shown) |
+| Spain | MADRID, BARCELONA, BULLFIGHT, FLAMENCO | SPAIN (shown) |
+| Bicycle | PEDAL, CHAIN, WHEEL, HANDLEBAR | BICYCLE (shown) |
+| Lord of the Rings | ARAGORN, GOLLUM, LEGOLAS, SHIRE | LORD OF THE RINGS (shown) |
+| Opera | ARIA, CONDUCTOR, TENOR, STAGE | OPERA (shown; returned as a word to the final Italy theme) |
+| Accommodations | MANSION, HOSTEL, BUNGALOW, VILLA | ACCOMMODATIONS (shown; did not come back) |
+| Mafia | MOB, SICILY, CRIME, GODFATHER | MAFIA (shown; returned as a word to the final Italy theme) |
+| Italy | OPERA (returned), MAFIA (returned), PASTA, VENICE | (guessed: ITALY; the name did not show, only "Cool!" praise, then a blank orange bubble) |
+
+Notes: all words were plain; the first board was 29 bubbles of 13 themes' words. Hierarchical: OPERA and MAFIA into the last theme with PASTA and VENICE (the final 4 words). New words dropped in after each clear (e.g. VILLA, MANSION, CRIME after snakes; TENOR, OFTEN, MOB, VENICE; CHAIN, LEGOLAS, USUALLY, STAGE; CONDUCTOR, BUNGALOW, SHIRE, HOSTEL; ARIA, SICILY, WHEEL, GODFATHER; ARAGORN, GOLLUM, PASTA, HANDLEBAR). Counter oddity: the moves counter did not drop on several merges (HP merge, adverbs merge, bicycle merge), likely the 5-merge Move Streak bonus.
+
+## Level 66
+
+Themes: 9 (bar `0/9`). Moves: counter read 46 at the first screenshot I kept (1/9 already cleared, 2 chain-lock bubbles still to go), so the true start is not confirmed (probably 46-50); 21 left at the final merge. Mastery: 886 (count-up frame, counter at 6 and still running; final not confirmed). Reward: 30 coins (coins 3,600 shown). Next button: green "LEVEL 67" (plain). Split words (7 chunk pairs, 1 move each): KET\|CHUP, MUS\|TARD, AD\|MIRAL, WAR\|SHIP, BUF\|FALO, DOL\|PHIN, BLOS\|SOM. Chain lock: yes, number 2 at the 1/9 point; it dropped to 1 after the second theme cleared and was gone by the third. No reversed or cryptic bubbles, no +5 ad bubble. Wrong or wasted drags: 0 that I saw (a few merges cost 0 moves, probably Move Streak).
+
+Note on evidence: my first screenshots of this level (the board before 1/9, the first theme clear and its name) were overwritten by file-name reuse, so the first cleared theme is NOT recorded. Rows below are from the remaining 8 themes.
+
+Chunk pairs: KET\|CHUP, MUS\|TARD, AD\|MIRAL, WAR\|SHIP, BUF\|FALO, DOL\|PHIN, BLOS\|SOM
+
+| Theme | Words | Name |
+|---|---|---|
+| (first theme, 1/9) | not recorded | not recorded |
+| Condiments | KETCHUP (KET\|CHUP), MUSTARD (MUS\|TARD), RANCH, RELISH | (guessed: CONDIMENTS; "Splendid!" praise covered the name, then the clear) |
+| Navy | SUBMARINE, FLEET, ADMIRAL (AD\|MIRAL), WARSHIP (WAR\|SHIP) | NAVY (shown; returned as a word to SHADES OF BLUE) |
+| Spring | BLOOM, RAIN, WARMTH, BLOSSOM (BLOS\|SOM) | SPRING (shown at clear; returned as a word to EASTER) |
+| Easter | BUNNY, BASKET, EGGS, SPRING (returned) | (guessed: EASTER; the name was hidden in the orange bubble as tiny text, then cleared) |
+| Shades of blue | NAVY (returned), AZURE, TEAL, TURQUOISE | SHADES OF BLUE (shown) |
+| Aquarium | FISH, TANK, CORAL, DOLPHIN (DOL\|PHIN) | AQUARIUM (shown; returned as a word to PLACES TO VISIT) |
+| Zoo | PANDA, OSTRICH, RHINO, BUFFALO (BUF\|FALO) | ZOO (shown; returned as a word to PLACES TO VISIT) |
+| Places to visit | ZOO (returned), MUSEUM, PARK, AQUARIUM (returned) | PLACES TO VISIT (shown, final merge) |
+
+Notes: hierarchical again with a second level: NAVY into SHADES OF BLUE, SPRING into EASTER, AQUARIUM and ZOO into PLACES TO VISIT. The chain split the board into the upper half (condiments, navy, animals, Easter words) and the lower half (colours and spring words) until two themes cleared. Autumn leaf decoration shown on the Mastery and Well Done screens (as level 8).
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
