@@ -1,0 +1,306 @@
+Library batch v472 (for Simon's review): Qualities, things by color branch: color words and words that do not fit out, well-known words added; new themes gray things, gold things and striped things.
+1. red things
+  linked: heart 25160 [symbol] in red_things (typicality 1): well known here; it was not linked
+  linked: chili 29499 [pepper] in red_things (typicality 2): well known here; it was not linked
+  linked: sunburn 14337 in red_things (typicality 2): well known here; it was not linked
+  linked: barn 2467 [farm building] in red_things (typicality 2): well known here; it was not linked
+  linked: radish 405 in red_things (typicality 2): well known here; it was not linked
+  linked: lava 28044 [molten rock] in red_things (typicality 3): well known here; it was not linked
+  linked: salsa 732 [sauce] in red_things (typicality 3): well known here; it was not linked
+  linked: Ferrari 46570 in red_things (typicality 4): well known here; it was not linked
+2. yellow things
+  out of yellow_things: gamboge 7735: a color word, and the list holds things (as Simon did for red and blue) (stays in colors)
+  out of yellow_things: chrome yellow 38612: a color word, and the list holds things (as Simon did for red and blue) (stays in shades_of_yellow)
+  linked: bee 1342 [insect] in yellow_things (typicality 2): well known here; it was not linked
+  linked: pencil 12007 [writing tool] in yellow_things (typicality 2): well known here; it was not linked
+  linked: tennis ball 39805 in yellow_things (typicality 2): well known here; it was not linked
+  linked: lightning 1973 [storm] in yellow_things (typicality 3): well known here; it was not linked
+  linked: lion 215 in yellow_things (typicality 3): well known here; it was not linked
+  linked: bulldozer 3099 in yellow_things (typicality 3): well known here; it was not linked
+  linked: Post-it 25572 in yellow_things (typicality 3): well known here; it was not linked
+  linked: Winnie the Pooh 13651 in yellow_things (typicality 3): well known here; it was not linked
+3. green things
+  out of green_things: chartreuse 7708 [color]: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_green, colors_named_after_foods)
+  out of green_things: verdigris 7728: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_green, blue_green_shades)
+  out of green_things: celadon 7724 [color]: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_green)
+  out of green_things: viridian 7726: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_green, blue_green_shades)
+  out of green_things: sea grass 1291 [seagrass]: grass and seaweed are there (stays in foraging_finds, water_plants, rock_pool, beachcombing_finds, coastal_plants, ocean, beach, chip_flavors, sea_life, umami_foods, plants)
+  linked: turtle 1142 [shelled reptile] in green_things (typicality 2): well known here; it was not linked
+  linked: crocodile 1138 in green_things (typicality 2): well known here; it was not linked
+  linked: guacamole 16768 in green_things (typicality 2): well known here; it was not linked
+  linked: praying mantis 1378 [insect] in green_things (typicality 4): well known here; it was not linked
+  linked: matcha 237 in green_things (typicality 4): well known here; it was not linked
+  linked: peridot 29876 [gem] in green_things (typicality 4): well known here; it was not linked
+  linked: luna moth 9042 in green_things (typicality 4): well known here; it was not linked
+  linked: wasabi 750 in green_things (typicality 4): well known here; it was not linked
+4. blue things
+  linked: water 861 [liquid] in blue_things (typicality 2): well known here; it was not linked
+  linked: raindrop 1984 in blue_things (typicality 3): well known here; it was not linked
+  linked: ink 12014 [writing fluid] in blue_things (typicality 3): well known here; it was not linked
+  linked: Pepsi 873 in blue_things (typicality 3): well known here; it was not linked
+  linked: Eeyore 13663 in blue_things (typicality 3): well known here; it was not linked
+  linked: kingfisher 1087 in blue_things (typicality 4): well known here; it was not linked
+  linked: turquoise 31661 [gem] in blue_things (typicality 4): well known here; it was not linked
+  linked: poison dart frog 8640 in blue_things (typicality 4): well known here; it was not linked
+5. white things
+  out of white_things: albino 40124: a person or an animal, and not a kind word (now in no theme: not exported)
+  out of white_things: ivory 7696 [color]: a color word (the material takes its place) (stays in colors, shades_of_white)
+  linked: ivory 38984 [material] in white_things (typicality 3): well known here; it was not linked
+  linked: igloo 118 in white_things (typicality 2): well known here; it was not linked
+  linked: mayonnaise 725 in white_things (typicality 2): well known here; it was not linked
+  linked: golf ball 42649 in white_things (typicality 3): well known here; it was not linked
+  linked: Taj Mahal 2318 in white_things (typicality 3): well known here; it was not linked
+  linked: beluga 1309 [whale] in white_things (typicality 4): well known here; it was not linked
+  linked: edelweiss 1746 in white_things (typicality 4): well known here; it was not linked
+  linked: cue ball 42663 in white_things (typicality 4): well known here; it was not linked
+  linked: ermine 9751 [animal] in white_things (typicality 4): well known here; it was not linked
+6. black things
+  linked: spider 1362 [animal] in black_things (typicality 2): well known here; it was not linked
+  linked: ant 1341 in black_things (typicality 2): well known here; it was not linked
+  linked: hockey puck 44156 in black_things (typicality 2): well known here; it was not linked
+  linked: ninja 12537 in black_things (typicality 3): well known here; it was not linked
+  linked: orca 1304 in black_things (typicality 3): well known here; it was not linked
+  linked: limousine 28712 in black_things (typicality 3): well known here; it was not linked
+  linked: umbrella 4962 [rain shield] in black_things (typicality 3): well known here; it was not linked
+  linked: anthracite 32329 [coal] in black_things (typicality 4): well known here; it was not linked
+7. dark foods and drinks
+  linked: cola 865 in dark_foods_and_drinks (typicality 2): well known here; it was not linked
+  linked: espresso 231 in dark_foods_and_drinks (typicality 2): well known here; it was not linked
+  linked: blackberry 49261 [fruit] in dark_foods_and_drinks (typicality 2): well known here; it was not linked
+  linked: raisin 17265 in dark_foods_and_drinks (typicality 2): well known here; it was not linked
+  linked: molasses 18464 in dark_foods_and_drinks (typicality 3): well known here; it was not linked
+  linked: prune 17215 [dried plum] in dark_foods_and_drinks (typicality 3): well known here; it was not linked
+  linked: poppy seed 17387 in dark_foods_and_drinks (typicality 3): well known here; it was not linked
+  linked: nori 8939 in dark_foods_and_drinks (typicality 4): well known here; it was not linked
+  linked: pumpernickel 597 in dark_foods_and_drinks (typicality 4): well known here; it was not linked
+8. dark creatures
+  linked: ant 1341 in dark_creatures (typicality 2): well known here; it was not linked
+  linked: gorilla 983 in dark_creatures (typicality 2): well known here; it was not linked
+  linked: mole 1029 [animal] in dark_creatures (typicality 3): well known here; it was not linked
+  linked: vulture 1082 [bird] in dark_creatures (typicality 3): well known here; it was not linked
+  linked: tarantula 1401 in dark_creatures (typicality 3): well known here; it was not linked
+  linked: chimpanzee 1004 in dark_creatures (typicality 3): well known here; it was not linked
+  linked: black mamba 8501 in dark_creatures (typicality 3): well known here; it was not linked
+  linked: cormorant 1099 in dark_creatures (typicality 4): well known here; it was not linked
+  linked: rook 7745 [bird] in dark_creatures (typicality 4): well known here; it was not linked
+9. orange things
+  out of orange_things: ocher 7704: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, aboriginal_culture, shades_of_yellow, earth_tones, pacific_art_words)
+  out of orange_things: burnt sienna 38793: a color word, and the list holds things (as Simon did for red and blue) (stays in earth_tones)
+  out of orange_things: Halloween 5102: a holiday, not a thing (stays in holidays_and_celebrations)
+  linked: pumpkin pie 18170 in orange_things (typicality 3): well known here; it was not linked
+  linked: butternut squash 17488 in orange_things (typicality 3): well known here; it was not linked
+  linked: Tigger 13664 [Pooh character] in orange_things (typicality 3): well known here; it was not linked
+  linked: flame 39889 [fire] in orange_things (typicality 3): well known here; it was not linked
+  linked: turmeric 759 in orange_things (typicality 4): well known here; it was not linked
+  linked: habanero 18751 in orange_things (typicality 4): well known here; it was not linked
+  linked: Golden Gate Bridge 2325 in orange_things (typicality 4): well known here; it was not linked
+10. pink things
+  out of pink_things: baby shower 3590: a party, not a thing (stays in holidays_and_celebrations, pregnancy_words, life_events, kinds_of_party, life_milestones, babies_and_birth)
+  out of pink_things: manatee 1041: it is gray (stays in mammals, sea_life, sea_mammals, pink_animals, slow_things, everglades_animals, mammals_that_live_in_water)
+  out of pink_things: fuchsia 7685 [pink-purple]: a color word (the flower takes its place) (stays in shades_of_purple, shades_of_pink, jewel_tones, colors_named_after_flowers, colors, purple_things)
+  linked: fuchsia 62419 [flower] in pink_things (typicality 3): well known here; it was not linked
+  linked: earthworm 1366 in pink_things (typicality 3): well known here; it was not linked
+  linked: prosciutto 17776 in pink_things (typicality 4): well known here; it was not linked
+  linked: guava 104 in pink_things (typicality 4): well known here; it was not linked
+  linked: lychee 103 in pink_things (typicality 4): well known here; it was not linked
+11. purple things
+  out of purple_things: magenta 7684 [color]: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, words_from_italian, shades_of_purple, shades_of_pink, cmyk_inks, jewel_tones, colors_named_after_places)
+  out of purple_things: mauve 7701: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_purple, shades_of_pink, pastel_colors)
+  out of purple_things: Tyrian purple 7732: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, colors_named_after_places, shades_of_purple)
+  out of purple_things: heliotrope 7731 [color]: a color word (the flower takes its place) (stays in colors, shades_of_purple, colors_named_after_flowers)
+  out of purple_things: fuchsia 7685 [pink-purple]: a color word (the flower takes its place) (stays in shades_of_purple, shades_of_pink, jewel_tones, colors_named_after_flowers, colors)
+  out of purple_things: periwinkle 70 [color]: a color word (the flower takes its place) (stays in shades_of_blue, shades_of_purple, pastel_colors, colors_named_after_flowers)
+  linked: blackberry 49261 [fruit] in purple_things (typicality 3): well known here; it was not linked
+  linked: turnip 425 in purple_things (typicality 3): well known here; it was not linked
+  linked: fuchsia 62419 [flower] in purple_things (typicality 4): well known here; it was not linked
+  linked: periwinkle 56546 [flower] in purple_things (typicality 4): well known here; it was not linked
+  linked: heliotrope 30507 [flower] in purple_things (typicality 5): well known here; it was not linked
+  linked: allium 17586 in purple_things (typicality 4): well known here; it was not linked
+  linked: radicchio 439 in purple_things (typicality 4): well known here; it was not linked
+12. brown things
+  out of brown_things: taupe 7702: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_brown, earth_tones, colors_named_after_animals)
+  out of brown_things: sepia 7706: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, photography_words, shades_of_brown, earth_tones, colors_named_after_animals)
+  out of brown_things: sienna 7712 [color]: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_brown, earth_tones, colors_named_after_places)
+  out of brown_things: umber 7713: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_brown, earth_tones)
+  out of brown_things: fawn 7721 [color]: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_brown, colors_named_after_animals)
+  out of brown_things: russet 7723: a color word, and the list holds things (as Simon did for red and blue) (stays in colors, shades_of_brown, earth_tones)
+  out of brown_things: mocha 38629 [brown]: a color word, and the list holds things (as Simon did for red and blue) (stays in shades_of_brown, colors_named_after_foods, drink_shades)
+  out of brown_things: java 961 [coffee]: slang for coffee, which is there (as v447) (stays in ice_cream_flavors, cafe, drinks, hot_drinks, courses_of_a_meal, campfire_foods, nicknames_for_drinks)
+  linked: monkey 982 [animal] in brown_things (typicality 2): well known here; it was not linked
+  linked: deer 997 in brown_things (typicality 2): well known here; it was not linked
+  linked: cookie 566 [biscuit] in brown_things (typicality 2): well known here; it was not linked
+  linked: walrus 1027 in brown_things (typicality 4): well known here; it was not linked
+  linked: mahogany 1658 [wood] in brown_things (typicality 4): well known here; it was not linked
+  linked: wildebeest 1030 in brown_things (typicality 4): well known here; it was not linked
+  linked: pumpernickel 597 in brown_things (typicality 4): well known here; it was not linked
+13. gray things (new)
+  new theme: gray_things "gray things" under things_by_color (after brown_things), pop 2, ident 2: every other common color has its list, gray had none
+  linked: elephant 979 [animal] in gray_things (typicality 1): a well-known member of the new theme
+  linked: mouse 991 [animal] in gray_things (typicality 1): a well-known member of the new theme
+  linked: concrete 7396 [building material] in gray_things (typicality 1): a well-known member of the new theme
+  linked: storm cloud 31278 in gray_things (typicality 2): a well-known member of the new theme
+  linked: shark 1215 [fish] in gray_things (typicality 2): a well-known member of the new theme
+  linked: stone 2050 [rock] in gray_things (typicality 2): a well-known member of the new theme
+  linked: wolf 995 [animal] in gray_things (typicality 2): a well-known member of the new theme
+  linked: donkey 158 [farm animal] in gray_things (typicality 2): a well-known member of the new theme
+  linked: dolphin 1285 [sea mammal] in gray_things (typicality 2): a well-known member of the new theme
+  linked: koala 998 in gray_things (typicality 2): a well-known member of the new theme
+  linked: pigeon 1070 [bird] in gray_things (typicality 2): a well-known member of the new theme
+  linked: seal 1028 [animal] in gray_things (typicality 2): a well-known member of the new theme
+  linked: rhinoceros 988 [animal] in gray_things (typicality 3): a well-known member of the new theme
+  linked: hippo 987 in gray_things (typicality 3): a well-known member of the new theme
+  linked: squirrel 990 [tree rodent] in gray_things (typicality 3): a well-known member of the new theme
+  linked: smoke 30277 [fire] in gray_things (typicality 3): a well-known member of the new theme
+  linked: fog 1974 in gray_things (typicality 3): a well-known member of the new theme
+  linked: dust 23180 [dirt] in gray_things (typicality 3): a well-known member of the new theme
+  linked: gravel 2053 [crushed stone] in gray_things (typicality 3): a well-known member of the new theme
+  linked: lead 206 [metal] in gray_things (typicality 3): a well-known member of the new theme
+  linked: sidewalk 38436 in gray_things (typicality 3): a well-known member of the new theme
+  linked: steel 7397 [metal] in gray_things (typicality 3): a well-known member of the new theme
+  linked: battleship 34574 [warship] in gray_things (typicality 3): a well-known member of the new theme
+  linked: heron 1086 in gray_things (typicality 4): a well-known member of the new theme
+  linked: gargoyle 6573 in gray_things (typicality 4): a well-known member of the new theme
+  linked: granite 2056 in gray_things (typicality 4): a well-known member of the new theme
+  linked: graphite 2065 in gray_things (typicality 4): a well-known member of the new theme
+  linked: pewter 31728 [metal] in gray_things (typicality 4): a well-known member of the new theme
+  linked: nickel 33938 [coin] in gray_things (typicality 4): a well-known member of the new theme
+  linked: lint 23893 in gray_things (typicality 4): a well-known member of the new theme
+  linked: slate 2060 [rock] in gray_things (typicality 4): a well-known member of the new theme
+  linked: chinchilla 1042 in gray_things (typicality 4): a well-known member of the new theme
+  linked: armadillo 1016 in gray_things (typicality 4): a well-known member of the new theme
+  linked: Gandalf 7003 in gray_things (typicality 4): a well-known member of the new theme
+14. gold things (new)
+  new theme: gold_things "gold things" under things_by_color (after gray_things), pop 2, ident 2: a well-known set with no list
+  linked: crown 21212 [royal] in gold_things (typicality 1): a well-known member of the new theme
+  linked: wedding ring 24736 in gold_things (typicality 1): a well-known member of the new theme
+  linked: medal 4408 in gold_things (typicality 1): a well-known member of the new theme
+  linked: trophy 12732 [award] in gold_things (typicality 1): a well-known member of the new theme
+  linked: coin 21717 [money] in gold_things (typicality 1): a well-known member of the new theme
+  linked: treasure 6765 [loot] in gold_things (typicality 2): a well-known member of the new theme
+  linked: necklace 4949 in gold_things (typicality 2): a well-known member of the new theme
+  linked: Oscar 12746 [award] in gold_things (typicality 2): a well-known member of the new theme
+  linked: C-3PO 49390 [robot] in gold_things (typicality 2): a well-known member of the new theme
+  linked: saxophone 6004 in gold_things (typicality 2): a well-known member of the new theme
+  linked: tiara 5007 in gold_things (typicality 3): a well-known member of the new theme
+  linked: trumpet 292 [instrument] in gold_things (typicality 3): a well-known member of the new theme
+  linked: tuba 294 in gold_things (typicality 3): a well-known member of the new theme
+  linked: bracelet 4950 in gold_things (typicality 3): a well-known member of the new theme
+  linked: watch 4947 [wristwatch] in gold_things (typicality 3): a well-known member of the new theme
+  linked: scepter 33396 in gold_things (typicality 3): a well-known member of the new theme
+  linked: throne 27916 [royal seat] in gold_things (typicality 3): a well-known member of the new theme
+  linked: cymbals 6024 in gold_things (typicality 3): a well-known member of the new theme
+  linked: brass 31727 [metal] in gold_things (typicality 3): a well-known member of the new theme
+  linked: Emmy 12747 in gold_things (typicality 3): a well-known member of the new theme
+  linked: harp 282 [instrument] in gold_things (typicality 4): a well-known member of the new theme
+  linked: locket 4984 in gold_things (typicality 4): a well-known member of the new theme
+  linked: gong 10596 [instrument] in gold_things (typicality 4): a well-known member of the new theme
+  linked: Fabergé egg 21221 in gold_things (typicality 4): a well-known member of the new theme
+  linked: doubloon 6771 in gold_things (typicality 4): a well-known member of the new theme
+  linked: El Dorado 21218 in gold_things (typicality 4): a well-known member of the new theme
+  linked: Midas 6957 in gold_things (typicality 4): a well-known member of the new theme
+  linked: ingot 21214 in gold_things (typicality 4): a well-known member of the new theme
+  linked: bullion 21213 in gold_things (typicality 4): a well-known member of the new theme
+  linked: chalice 55834 in gold_things (typicality 4): a well-known member of the new theme
+  linked: pyrite 2073 in gold_things (typicality 4): a well-known member of the new theme
+  linked: Fort Knox 37714 in gold_things (typicality 4): a well-known member of the new theme
+15. striped things (new)
+  new theme: striped_things "striped things" under things_by_color (after gold_things), pop 2, ident 2: a set rival games have; striped animals holds only animals
+  linked: zebra 981 [animal] in striped_things (typicality 1): a well-known member of the new theme
+  linked: tiger 216 [animal] in striped_things (typicality 1): a well-known member of the new theme
+  linked: candy cane 621 in striped_things (typicality 1): a well-known member of the new theme
+  linked: bee 1342 [insect] in striped_things (typicality 2): a well-known member of the new theme
+  linked: skunk 1013 [animal] in striped_things (typicality 2): a well-known member of the new theme
+  linked: clownfish 1217 in striped_things (typicality 2): a well-known member of the new theme
+  linked: pajamas 3674 in striped_things (typicality 2): a well-known member of the new theme
+  linked: referee 42671 in striped_things (typicality 2): a well-known member of the new theme
+  linked: watermelon 97 in striped_things (typicality 2): a well-known member of the new theme
+  linked: barcode 25992 in striped_things (typicality 2): a well-known member of the new theme
+  linked: socks 24409 in striped_things (typicality 2): a well-known member of the new theme
+  linked: flag 28224 [banner] in striped_things (typicality 2): a well-known member of the new theme
+  linked: tie 4945 [neckwear] in striped_things (typicality 3): a well-known member of the new theme
+  linked: raccoon 1011 in striped_things (typicality 3): a well-known member of the new theme
+  linked: chipmunk 7836 in striped_things (typicality 3): a well-known member of the new theme
+  linked: deck chair 30738 in striped_things (typicality 3): a well-known member of the new theme
+  linked: lighthouse 2474 in striped_things (typicality 3): a well-known member of the new theme
+  linked: toothpaste 3730 in striped_things (typicality 3): a well-known member of the new theme
+  linked: beach ball 39807 in striped_things (typicality 3): a well-known member of the new theme
+  linked: rainbow 1982 [weather] in striped_things (typicality 3): a well-known member of the new theme
+  linked: Cat in the Hat 13655 in striped_things (typicality 3): a well-known member of the new theme
+  linked: wasp 1343 in striped_things (typicality 3): a well-known member of the new theme
+  linked: okapi 1036 in striped_things (typicality 4): a well-known member of the new theme
+  linked: coral snake 1191 in striped_things (typicality 4): a well-known member of the new theme
+  linked: rugby shirt 24316 in striped_things (typicality 4): a well-known member of the new theme
+  linked: awning 48509 [tent] in striped_things (typicality 4): a well-known member of the new theme
+  linked: lemur 1022 in striped_things (typicality 4): a well-known member of the new theme
+  linked: mackerel 492 in striped_things (typicality 4): a well-known member of the new theme
+  linked: sergeant 68238 [rank] in striped_things (typicality 4): a well-known member of the new theme
+  linked: caterpillar 1361 in striped_things (typicality 4): a well-known member of the new theme
+  linked: lionfish 1321 in striped_things (typicality 4): a well-known member of the new theme
+  linked: bow tie 4946 in striped_things (typicality 4): a well-known member of the new theme
+  new entry: barber pole 68954 noun, common, familiarity 3: a common word that was not in the library
+  linked: barber pole 68954 in striped_things (typicality 2): a common word that was not in the library
+groups
+  group in striped_things: tie 4945 = bow tie 4946: a word and its more specific form: one answer
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  black_things: "black things" pop 2 ident 3: 45 words, easy/middle/hard 17/16/12, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "black things" pop 2 ident 3: 53 words, easy/middle/hard 20/20/13, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  blue_things: "blue things" pop 2 ident 3: 35 words, easy/middle/hard 11/13/11, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "blue things" pop 2 ident 3: 43 words, easy/middle/hard 12/17/14, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  brown_things: "brown things" pop 2 ident 3: 47 words, easy/middle/hard 15/21/11, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "brown things" pop 2 ident 3: 46 words, easy/middle/hard 18/20/8, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  dark_creatures: "dark creatures" pop 4 ident 4: 8 words, easy/middle/hard 5/1/2, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "dark creatures" pop 4 ident 4: 17 words, easy/middle/hard 7/6/4, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  dark_foods_and_drinks: "dark foods and drinks" pop 4 ident 4: 6 words, easy/middle/hard 2/2/2, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "dark foods and drinks" pop 4 ident 4: 15 words, easy/middle/hard 6/5/4, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  gold_things: new -> "gold things" pop 2 ident 2: 32 words, easy/middle/hard 10/10/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  gray_things: new -> "gray things" pop 2 ident 2: 34 words, easy/middle/hard 12/11/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  green_things: "green things" pop 2 ident 2: 48 words, easy/middle/hard 20/19/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "green things" pop 2 ident 2: 51 words, easy/middle/hard 23/19/9, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  orange_things: "orange things" pop 2 ident 2: 44 words, easy/middle/hard 16/13/15, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "orange things" pop 2 ident 2: 48 words, easy/middle/hard 15/17/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  pink_things: "pink things" pop 2 ident 2: 46 words, easy/middle/hard 15/14/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "pink things" pop 2 ident 2: 48 words, easy/middle/hard 15/16/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  purple_things: "purple things" pop 2 ident 2: 42 words, easy/middle/hard 8/12/22, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "purple things" pop 2 ident 2: 43 words, easy/middle/hard 8/12/23, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  red_things: "red things" pop 2 ident 2: 39 words, easy/middle/hard 17/11/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "red things" pop 2 ident 2: 47 words, easy/middle/hard 22/13/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  striped_things: new -> "striped things" pop 2 ident 2: 33 words, easy/middle/hard 12/11/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  white_things: "white things" pop 2 ident 3: 49 words, easy/middle/hard 23/19/7, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "white things" pop 2 ident 3: 56 words, easy/middle/hard 25/21/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  yellow_things: "yellow things" pop 2 ident 2: 43 words, easy/middle/hard 20/9/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "yellow things" pop 2 ident 2: 49 words, easy/middle/hard 23/14/12, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 1: albino 40124
+Entries added 1: barber pole 68954
+Entries deleted 0: none
+library changes 351; entries changed 215; status set to rev 125; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 284 -> 285
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3218 -> 3221; gone none; new gray_things, gold_things, striped_things; theme indexes shift: from index 3180 ("gray_things", was "things_with") to the last index 3220
+Theme rows whose fields changed (parent compared by id): 12: red_things (index 3168 -> 3168: counts [7,12,13,10,1] -> [8,16,15,11,1]); yellow_things (index 3169 -> 3169: counts [6,14,10,10,4] -> [6,17,15,10,2], range [1,5] -> [1,4]); green_things (index 3170 -> 3170: counts [7,13,19,6,3] -> [7,16,19,9,0]); blue_things (index 3171 -> 3171: counts [5,6,13,8,4] -> [5,7,17,11,4]); white_things (index 3172 -> 3172: counts [5,18,19,5,2] -> [5,20,21,8,2]); black_things (index 3173 -> 3173: counts [3,14,16,11,2] -> [3,17,20,12,2]); dark_foods_and_drinks (index 3174 -> 3174: counts [0,2,2,3,0] -> [0,6,5,5,0], range [3,3] -> [2,4]); dark_creatures (index 3175 -> 3175: counts [2,3,1,2,0] -> [2,5,6,4,0], range [2,2] -> [2,4]); orange_things (index 3176 -> 3176: counts [4,12,13,13,3] -> [4,11,17,15,2]); pink_things (index 3177 -> 3177: counts [4,12,15,14,4] -> [4,12,17,15,3], range [2,5] -> [2,4]); purple_things (index 3178 -> 3178: counts [1,7,12,16,7] -> [1,7,12,18,6]); brown_things (index 3179 -> 3179: counts [5,11,22,9,2] -> [5,14,21,7,1])
+Entry rows 61433 -> 61433; first row whose entry changed: 36719 (Moby Dick 40125, was albino 40124); rows that moved: 24713; added barber pole 68954 (row 61432); removed 40124 (row 36719)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 99438 -> 99601; rows whose link count changed: 213
+Link-index shifts: from row 70 (denim 71) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 29, new 192, rating changed 0
+  gone (other than the deleted themes): purple_things: "periwinkle" (70), brown_things: "java" (961), pink_things: "manatee" (1041), green_things: "sea grass" (1291), pink_things: "baby shower" (3590), orange_things: "Halloween" (5102), purple_things: "magenta" (7684), pink_things: "fuchsia" (7685), purple_things: "fuchsia" (7685), white_things: "ivory" (7696), purple_things: "mauve" (7701), brown_things: "taupe" (7702), orange_things: "ocher" (7704), brown_things: "sepia" (7706), green_things: "chartreuse" (7708), brown_things: "sienna" (7712), brown_things: "umber" (7713), brown_things: "fawn" (7721), brown_things: "russet" (7723), green_things: "celadon" (7724), green_things: "viridian" (7726), green_things: "verdigris" (7728), purple_things: "heliotrope" (7731), purple_things: "Tyrian purple" (7732), yellow_things: "gamboge" (7735), yellow_things: "chrome yellow" (38612), brown_things: "mocha" (38629), orange_things: "burnt sienna" (38793), white_things: "albino" (40124)
+  new: striped_things: "watermelon" (97), pink_things: "lychee" (103), pink_things: "guava" (104), white_things: "igloo" (118), gray_things: "donkey" (158), gray_things: "lead" (206), yellow_things: "lion" (215), striped_things: "tiger" (216), dark_foods_and_drinks: "espresso" (231), green_things: "matcha" (237), gold_things: "harp" (282), gold_things: "trumpet" (292), gold_things: "tuba" (294), red_things: "radish" (405), purple_things: "turnip" (425), purple_things: "radicchio" (439), striped_things: "mackerel" (492), brown_things: "cookie" (566), dark_foods_and_drinks: "pumpernickel" (597), brown_things: "pumpernickel" (597), striped_things: "candy cane" (621), white_things: "mayonnaise" (725), red_things: "salsa" (732), green_things: "wasabi" (750), orange_things: "turmeric" (759), blue_things: "water" (861), dark_foods_and_drinks: "cola" (865), blue_things: "Pepsi" (873), gray_things: "elephant" (979), striped_things: "zebra" (981), brown_things: "monkey" (982), dark_creatures: "gorilla" (983), gray_things: "hippo" (987), gray_things: "rhinoceros" (988), gray_things: "squirrel" (990), gray_things: "mouse" (991), gray_things: "wolf" (995), brown_things: "deer" (997), gray_things: "koala" (998), dark_creatures: "chimpanzee" (1004), striped_things: "raccoon" (1011), striped_things: "skunk" (1013), gray_things: "armadillo" (1016), striped_things: "lemur" (1022), brown_things: "walrus" (1027), gray_things: "seal" (1028), dark_creatures: "mole" (1029), brown_things: "wildebeest" (1030), striped_things: "okapi" (1036), gray_things: "chinchilla" (1042), gray_things: "pigeon" (1070), dark_creatures: "vulture" (1082), gray_things: "heron" (1086), blue_things: "kingfisher" (1087), dark_creatures: "cormorant" (1099), green_things: "crocodile" (1138), green_things: "turtle" (1142), striped_things: "coral snake" (1191), gray_things: "shark" (1215), striped_things: "clownfish" (1217), gray_things: "dolphin" (1285), black_things: "orca" (1304), white_things: "beluga" (1309), striped_things: "lionfish" (1321), black_things: "ant" (1341), dark_creatures: "ant" (1341), yellow_things: "bee" (1342), striped_things: "bee" (1342), striped_things: "wasp" (1343), striped_things: "caterpillar" (1361), black_things: "spider" (1362), pink_things: "earthworm" (1366), green_things: "praying mantis" (1378), dark_creatures: "tarantula" (1401), brown_things: "mahogany" (1658), white_things: "edelweiss" (1746), yellow_things: "lightning" (1973), gray_things: "fog" (1974), striped_things: "rainbow" (1982), blue_things: "raindrop" (1984), gray_things: "stone" (2050), gray_things: "gravel" (2053), gray_things: "granite" (2056), gray_things: "slate" (2060), gray_things: "graphite" (2065), gold_things: "pyrite" (2073), white_things: "Taj Mahal" (2318), orange_things: "Golden Gate Bridge" (2325), red_things: "barn" (2467), striped_things: "lighthouse" (2474), yellow_things: "bulldozer" (3099), striped_things: "pajamas" (3674), striped_things: "toothpaste" (3730), gold_things: "medal" (4408), striped_things: "tie" (4945), striped_things: "bow tie" (4946), gold_things: "watch" (4947), gold_things: "necklace" (4949), gold_things: "bracelet" (4950), black_things: "umbrella" (4962), gold_things: "locket" (4984), gold_things: "tiara" (5007), gold_things: "saxophone" (6004), gold_things: "cymbals" (6024), gray_things: "gargoyle" (6573), gold_things: "treasure" (6765), gold_things: "doubloon" (6771), gold_things: "Midas" (6957), gray_things: "Gandalf" (7003), gray_things: "concrete" (7396), gray_things: "steel" (7397), dark_creatures: "rook" (7745), striped_things: "chipmunk" (7836), dark_creatures: "black mamba" (8501), blue_things: "poison dart frog" (8640), dark_foods_and_drinks: "nori" (8939), green_things: "luna moth" (9042), white_things: "ermine" (9751), gold_things: "gong" (10596), yellow_things: "pencil" (12007), blue_things: "ink" (12014), black_things: "ninja" (12537), gold_things: "trophy" (12732), gold_things: "Oscar" (12746), gold_things: "Emmy" (12747), yellow_things: "Winnie the Pooh" (13651), striped_things: "Cat in the Hat" (13655), blue_things: "Eeyore" (13663), orange_things: "Tigger" (13664), red_things: "sunburn" (14337), green_things: "guacamole" (16768), dark_foods_and_drinks: "prune" (17215), dark_foods_and_drinks: "raisin" (17265), dark_foods_and_drinks: "poppy seed" (17387), orange_things: "butternut squash" (17488), purple_things: "allium" (17586), pink_things: "prosciutto" (17776), orange_things: "pumpkin pie" (18170), dark_foods_and_drinks: "molasses" (18464), orange_things: "habanero" (18751), gold_things: "crown" (21212), gold_things: "bullion" (21213), gold_things: "ingot" (21214), gold_things: "El Dorado" (21218), gold_things: "Fabergé egg" (21221), gold_things: "coin" (21717), gray_things: "dust" (23180), gray_things: "lint" (23893), striped_things: "rugby shirt" (24316), striped_things: "socks" (24409), gold_things: "wedding ring" (24736), red_things: "heart" (25160), yellow_things: "Post-it" (25572), striped_things: "barcode" (25992), gold_things: "throne" (27916), red_things: "lava" (28044), striped_things: "flag" (28224), black_things: "limousine" (28712), red_things: "chili" (29499), green_things: "peridot" (29876), gray_things: "smoke" (30277), purple_things: "heliotrope" (30507), striped_things: "deck chair" (30738), gray_things: "storm cloud" (31278), blue_things: "turquoise" (31661), gold_things: "brass" (31727), gray_things: "pewter" (31728), black_things: "anthracite" (32329), gold_things: "scepter" (33396), gray_things: "nickel" (33938), gray_things: "battleship" (34574), gold_things: "Fort Knox" (37714), gray_things: "sidewalk" (38436), white_things: "ivory" (38984), yellow_things: "tennis ball" (39805), striped_things: "beach ball" (39807), orange_things: "flame" (39889), white_things: "golf ball" (42649), white_things: "cue ball" (42663), striped_things: "referee" (42671), black_things: "hockey puck" (44156), red_things: "Ferrari" (46570), striped_things: "awning" (48509), dark_foods_and_drinks: "blackberry" (49261), purple_things: "blackberry" (49261), gold_things: "C-3PO" (49390), gold_things: "chalice" (55834), purple_things: "periwinkle" (56546), pink_things: "fuchsia" (62419), purple_things: "fuchsia" (62419), striped_things: "sergeant" (68238), striped_things: "barber pole" (68954)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Qualities, 2026-11-25): all 12 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 192 new links existed earlier and was removed in the same sense: turquoise, ivory, fuchsia, periwinkle and heliotrope were linked as color words; the links now are the gem, the material and the flowers (all 213 library versions and 169 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - pink things: brain, brown things: cigar (left out at the review)
+  - purple things: Prince (its text is shared with prince: case-sense-proper)
+  - new themes colorful things and things with spots (spotted animals holds about half of the second)
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 1: albino 40124
+  2. The color words leave yellow, green, white, orange, pink, purple and brown things, as v447 did for red and blue.
+  3. striped things shares 9 of 33 words with striped animals, gray things 10 of 34 with mammals.
+  4. Overlap note that stays: pumpkin / pumpkin pie (different things).
+
+=== Notice to _WS_ for v472 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v472 (Qualities, things by color branch): 3 new themes (gray things, gold things, striped things), 192 new links, 29 links out, 1 new entries (barber pole).
+Theme rows 3218 -> 3221; gone none; new gray_things, gold_things, striped_things; theme indexes shift: from index 3180 ("gray_things", was "things_with") to the last index 3220
+Entry rows 61433 -> 61433. Removed: 40124 (row 36719).
+Link-index shifts: from row 70 (denim 71) on, link positions move
+Line breaks: none.
+New characters: none.

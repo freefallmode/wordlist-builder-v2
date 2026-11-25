@@ -1,0 +1,230 @@
+Library batch v463 (for Simon's review): Qualities, temperature branch: words that do not fit out, well-known words added in its eight themes; new themes things that burn and keeping cool.
+1. hot things
+  out of hot_things: equator 2399: a line on the map, not a hot thing (stays in maps_and_globes, lines_on_a_map)
+  out of hot_things: hot sauce 728: spicy rather than hot, and it holds "hot" of the theme name (stays in spicy_foods, mexican_souvenirs, burger_toppings, herbs_spices_and_sauces, sauces_and_condiments)
+  linked: soup 797 [liquid dish] in hot_things (typicality 2): a well-known hot thing; it was not linked
+  linked: tea 225 [drink] in hot_things (typicality 2): a well-known hot thing; it was not linked
+  linked: skillet 19808 in hot_things (typicality 3): a well-known hot thing; it was not linked
+  linked: hair dryer 3767 in hot_things (typicality 3): a well-known hot thing; it was not linked
+  linked: bonfire 31537 in hot_things (typicality 3): a well-known hot thing; it was not linked
+  linked: boiler 23576 [heating] in hot_things (typicality 4): a well-known hot thing; it was not linked
+2. cold things
+  out of cold_things: snowfall 1968: weather, not a cold thing; snow is there (they were grouped) (stays in snow_and_ice, quiet_things, weather, kinds_of_precipitation, signs_of_winter, polar_regions, taiga, shades_of_white, things_that_melt, white_things, frozen_precipitation, snow_blank)
+  out of cold_things: cold shower 39884: it holds "cold" of the theme name (stays in healthy_habits)
+  out of cold_things: polar bear 7943: it lives in the cold but is not cold itself (it stays in polar regions, Arctic animals and others) (stays in sea_mammals, north_american_animals, arctic_animals, hibernating_animals, polar_regions, endangered_animals, white_things, things_that_swim, zoo_animals, bears)
+  out of cold_things: penguin 1064 [bird]: it lives in the cold but is not cold itself (it stays in polar regions, Antarctic animals and others) (stays in birds, seabirds, flightless_birds, black_and_white_animals, polar_regions, zoo, aquarium, things_that_swim, things_with_wings, zoo_animals, egg_laying_animals, antarctic_animals)
+  cold showers 16526: nameOkIn key cold_things dropped (cold shower left the theme; nameOk-stale)
+  linked: South Pole 2401 [polar] in cold_things (typicality 2): a well-known cold thing or place; it was not linked (North Pole was)
+  linked: snowball 31291 in cold_things (typicality 2): a well-known cold thing or place; it was not linked (North Pole was)
+  linked: hail 1987 [weather] in cold_things (typicality 3): a well-known cold thing or place; it was not linked (North Pole was)
+  linked: iced tea 866 in cold_things (typicality 3): a well-known cold thing or place; it was not linked (North Pole was)
+  linked: ice bucket 66841 in cold_things (typicality 3): a well-known cold thing or place; it was not linked (North Pole was)
+  linked: Neptune 26 [planet] in cold_things (typicality 4): a well-known cold thing or place; it was not linked (North Pole was)
+  linked: outer space 68808 in cold_things (typicality 4): a well-known cold thing or place; it was not linked (North Pole was)
+  linked: South Pole 2401 [polar] in polar_and_frozen_places (typicality 2): a polar or frozen place; the theme had 11 words
+  linked: Arctic Ocean 36998 in polar_and_frozen_places (typicality 2): a polar or frozen place; the theme had 11 words
+  linked: Iceland 2167 in polar_and_frozen_places (typicality 3): a polar or frozen place; the theme had 11 words
+  linked: Lapland 36447 in polar_and_frozen_places (typicality 3): a polar or frozen place; the theme had 11 words
+  linked: Nunavut 36213 in polar_and_frozen_places (typicality 4): a frozen Canadian territory; it was in no theme
+  linked: McMurdo Station 32174 in polar_and_frozen_places (typicality 4): a polar or frozen place; the theme had 11 words
+  linked: Ross Ice Shelf 21054 in polar_and_frozen_places (typicality 5): a polar or frozen place; the theme had 11 words
+  linked: Murmansk 56975 in polar_and_frozen_places (typicality 5): a polar or frozen place; the theme had 11 words
+  linked: ice bucket 66841 in food_chillers (typicality 2): it keeps food or drink cold; the theme had 7 words
+  linked: minibar 48318 in food_chillers (typicality 3): it keeps food or drink cold; the theme had 7 words
+  linked: icebox 4717 in food_chillers (typicality 3): it keeps food or drink cold; the theme had 7 words
+  linked: thermos 3063 in food_chillers (typicality 5): it keeps food or drink cold; the theme had 7 words
+3. things that melt
+  out of things_that_melt: snowfall 1968: weather, not a thing that melts; snow is there (they were grouped) (stays in snow_and_ice, quiet_things, weather, kinds_of_precipitation, signs_of_winter, polar_regions, taiga, shades_of_white, white_things, frozen_precipitation, snow_blank)
+  out of things_that_melt: fondue 18013: already melted (stays in cheese_dishes, national_dishes, ski_trip, creamy_foods)
+  linked: snowball 31291 in things_that_melt (typicality 2): a well-known thing that melts; it was not linked
+  linked: s'more 3040 in things_that_melt (typicality 3): a well-known thing that melts; it was not linked
+  linked: sorbet 622 in things_that_melt (typicality 3): a well-known thing that melts; it was not linked
+  linked: slushie 18314 in things_that_melt (typicality 3): a well-known thing that melts; it was not linked
+  linked: lipstick 3748 in things_that_melt (typicality 4): a well-known thing that melts; it was not linked
+  linked: coconut oil 15644 in things_that_melt (typicality 4): a well-known thing that melts; it was not linked
+4. fire words
+  out of fire_words: Greek fire 20611: it holds "fire" of the theme name (stays in byzantine_empire, siege_weapons)
+  new entry: burn 68810 [fire] verb, common, familiarity 1: what fire does; burn [injury], [stream], [spaceflight] are others
+  linked: burn 68810 [fire] in fire_words (typicality 1): what fire does; burn [injury], [stream], [spaceflight] are others
+  new entry: extinguish 68811 verb, common, familiarity 3: to put a fire out
+  linked: extinguish 68811 in fire_words (typicality 3): to put a fire out
+  linked: matches 3066 [fire] in fire_words (typicality 2): a basic word of fire; it was not linked
+  linked: heat 40847 [physics] in fire_words (typicality 2): a basic word of fire; it was not linked
+  linked: crackle 39586 in fire_words (typicality 3): a basic word of fire; it was not linked
+  linked: charcoal 30100 [fuel] in fire_words (typicality 4): a basic word of fire; it was not linked
+  linked: bellows 23589 [fireplace] in fire_words (typicality 4): a basic word of fire; it was not linked
+  kin: burn 68810 [fire] <-> burning 39931: one word family, as burn [injury]
+  kin: burn 68810 [fire] <-> burner 28438 [balloon]: one word family, as burn [injury]
+  kin: burn 68810 [fire] <-> burner 63340 [disposable]: one word family, as burn [injury]
+5. words for hot
+  out of words_for_hot: hot as hell 39940: it holds the topic word of the theme name (let through with nameOkIn), as v447 found for hot and cold; flagged offensive (now in no theme: not exported)
+  out of words_for_hot: red-hot 39928: it holds the topic word of the theme name (let through with nameOkIn), as v447 found for hot and cold (now in no theme: not exported)
+  out of words_for_hot: piping hot 39929: it holds the topic word of the theme name (let through with nameOkIn), as v447 found for hot and cold (now in no theme: not exported)
+  out of words_for_hot: white-hot 39930: it holds the topic word of the theme name (let through with nameOkIn), as v447 found for hot and cold (now in no theme: not exported)
+  out of words_for_hot: hellish 39942: flagged offensive, so it never plays (now in no theme: not exported)
+  out of words_for_hot: balmy 2028: pleasantly warm; v447 took the other warm words out (it stays in hot weather talk) (stays in hot_weather_words, temperature_words, weather_conditions)
+  out of words_for_hot: thermal 39938 [heat]: it means of heat, not hot (stays in heat_science, temperature_words)
+  out of words_for_hot: feverish 39932: it means with a fever (now in no theme: not exported)
+  linked: blistering 31442 [heat] in words_for_hot (typicality 2): a word for hot; it was not linked
+  linked: sun-baked 31460 in words_for_hot (typicality 4): a word for hot; it was not linked
+  new entry: flaming 68812 adjective, common, familiarity 2: a word for hot
+  linked: flaming 68812 in words_for_hot (typicality 3): a word for hot
+  new entry: molten 68813 adjective, common, familiarity 3: melted by heat
+  linked: molten 68813 in words_for_hot (typicality 4): melted by heat
+  new entry: infernal 68814 adjective, common, familiarity 3: as hot as an inferno
+  linked: infernal 68814 in words_for_hot (typicality 4): as hot as an inferno
+  kin: flaming 68812 <-> flame 39889 [fire]: one word family
+  kin: infernal 68814 <-> inferno 34419: one word family
+6. words for cold
+  out of words_for_cold: stone cold 39958: it holds the topic word of the theme name (let through with nameOkIn), as v447 found for hot and cold (now in no theme: not exported)
+  out of words_for_cold: chill 19893: a verb among adjectives; chilly is there (stays in ways_to_preserve_food)
+  out of words_for_cold: arctic blast 39965: a noun among adjectives (now in no theme: not exported)
+  out of words_for_cold: bleak 39950: it means bare or hopeless, not cold (now in no theme: not exported)
+  new entry: bitter 68815 [very cold] adjective, common, familiarity 1: bitter cold, as the theme note says; v447 took out the taste sense
+  linked: bitter 68815 [very cold] in words_for_cold (typicality 2): bitter cold, as the theme note says; v447 took out the taste sense
+  kin: bitter 68815 [very cold] <-> bitterness 4034: one word family, as bitter [taste]
+  kin: bitter 68815 [very cold] <-> bitters 39166: one word family, as bitter [taste]
+  new entry: shivery 68816 adjective, common, familiarity 3: a word for cold
+  linked: shivery 68816 in words_for_cold (typicality 3): a word for cold
+  kin: shivery 68816 <-> shiver 16879: one word family
+  new entry: unheated 68817 adjective, common, familiarity 2: with no heating
+  linked: unheated 68817 in words_for_cold (typicality 4): with no heating
+  new entry: drafty 68818 adjective, common, familiarity 3: with cold air coming in
+  linked: drafty 68818 in words_for_cold (typicality 3): with cold air coming in
+  new entry: draughty 68819 adjective, common, familiarity 3, spelling alias of drafty 68818 [UK]: the UK spelling
+7. things that burn (new)
+  new theme: things_that_burn "things that burn" under temperature (after things_that_melt), pop 2, ident 3: things that melt had no sibling
+  linked: wood 24031 [material] in things_that_burn (typicality 1): a thing that burns or is burned
+  linked: paper 20472 [material] in things_that_burn (typicality 1): a thing that burns or is burned
+  linked: matches 3066 [fire] in things_that_burn (typicality 1): a thing that burns or is burned
+  linked: candles 16276 in things_that_burn (typicality 1): a thing that burns or is burned
+  linked: coal 2054 in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: gasoline 50000 in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: log 30135 [wood] in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: charcoal 30100 [fuel] in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: kindling 3042 in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: toast 565 [bread] in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: torch 39902 [flame] in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: bonfire 31537 in things_that_burn (typicality 2): a thing that burns or is burned
+  linked: incense 14760 [smell] in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: hay 31498 [dried grass] in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: leaf 30033 in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: straw 28060 [dried stalks] in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: sparkler 25074 in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: wick 25589 in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: oil 32326 [fuel] in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: propane 46781 [fuel] in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: wax 25590 [candle] in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: cardboard 23982 in things_that_burn (typicality 3): a thing that burns or is burned
+  linked: kerosene 32333 in things_that_burn (typicality 4): a thing that burns or is burned
+  linked: marshmallow 611 in things_that_burn (typicality 4): a thing that burns or is burned
+  linked: tire 2585 [wheel] in things_that_burn (typicality 4): a thing that burns or is burned
+  linked: calorie 3827 in things_that_burn (typicality 4): exercise burns calories
+  linked: CD 49347 [disc] in things_that_burn (typicality 4): one burns a CD
+  linked: chili 29499 [pepper] in things_that_burn (typicality 4): it burns the mouth
+  linked: peat 31965 in things_that_burn (typicality 4): a thing that burns or is burned
+  linked: sulfur 2067 in things_that_burn (typicality 4): a thing that burns or is burned
+  linked: bridge 7379 [structure] in things_that_burn (typicality 5): one burns bridges
+  linked: magnesium 16652 in things_that_burn (typicality 5): a thing that burns or is burned
+  calorie 3827 in things_that_burn: shows its form calories 16701 (use): one burns calories
+8. keeping cool (new)
+  new theme: keeping_cool "keeping cool" under temperature (after cold_things), pop 2, ident 3: no theme had it
+  linked: fan 4742 [electric fan] in keeping_cool (typicality 1): it keeps people cool
+  linked: air conditioner 4737 in keeping_cool (typicality 1): it keeps people cool
+  linked: swimming pool 40120 in keeping_cool (typicality 1): it keeps people cool
+  linked: shade 16365 [sun] in keeping_cool (typicality 1): it keeps people cool
+  linked: ice cream 604 [frozen dessert] in keeping_cool (typicality 2): it keeps people cool
+  linked: popsicle 18303 in keeping_cool (typicality 2): it keeps people cool
+  linked: lemonade 863 in keeping_cool (typicality 2): it keeps people cool
+  linked: shorts 4867 in keeping_cool (typicality 2): it keeps people cool
+  linked: sprinkler 1846 in keeping_cool (typicality 2): it keeps people cool
+  linked: iced tea 866 in keeping_cool (typicality 2): it keeps people cool
+  linked: sun hat 16347 in keeping_cool (typicality 2): it keeps people cool
+  linked: breeze 1979 in keeping_cool (typicality 2): it keeps people cool
+  linked: cold shower 39884 in keeping_cool (typicality 2): it keeps people cool
+  linked: ceiling fan 23579 in keeping_cool (typicality 3): it keeps people cool
+  linked: hand fan 5005 in keeping_cool (typicality 3): it keeps people cool
+  linked: ice pack 15392 in keeping_cool (typicality 3): it keeps people cool
+  linked: tank top 4896 in keeping_cool (typicality 3): it keeps people cool
+  linked: sandals 20848 [shoes] in keeping_cool (typicality 3): it keeps people cool
+  linked: parasol 5004 [sunshade] in keeping_cool (typicality 3): it keeps people cool
+  linked: smoothie 864 in keeping_cool (typicality 3): it keeps people cool
+  linked: swimsuit 24469 in keeping_cool (typicality 3): it keeps people cool
+  linked: flip-flops 24624 in keeping_cool (typicality 3): it keeps people cool
+  linked: slushie 18314 in keeping_cool (typicality 3): it keeps people cool
+  linked: snow cone 18312 in keeping_cool (typicality 3): it keeps people cool
+  linked: water balloon 40254 in keeping_cool (typicality 3): it keeps people cool
+  linked: iced coffee 19523 in keeping_cool (typicality 3): it keeps people cool
+  linked: watermelon 97 in keeping_cool (typicality 4): it keeps people cool
+  linked: linen 5041 in keeping_cool (typicality 4): it keeps people cool
+  linked: gazpacho 843 in keeping_cool (typicality 4): it keeps people cool
+  linked: siesta 3692 in keeping_cool (typicality 4): it keeps people cool
+  linked: basement 24074 in keeping_cool (typicality 4): it keeps people cool
+  linked: sorbet 622 in keeping_cool (typicality 4): it keeps people cool
+  linked: hose 1844 [pipe] in keeping_cool (typicality 4): it keeps people cool
+  linked: water slide 57627 in keeping_cool (typicality 4): it keeps people cool
+  linked: blinds 23146 in keeping_cool (typicality 4): it keeps people cool
+  linked: squirt gun 5965 in keeping_cool (typicality 4): it keeps people cool
+  linked: sweat 28307 in keeping_cool (typicality 5): it keeps people cool
+  group in keeping_cool: fan 4742 = ceiling fan 23579 = hand fan 5005: a word and its more specific forms: one answer
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  cold_things: "cold things" pop 2 ident 3: 50 words, easy/middle/hard 17/17/16, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "cold things" pop 2 ident 3: 53 words, easy/middle/hard 18/17/18, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  fire_words: "fire words" pop 2 ident 2: 41 words, easy/middle/hard 10/18/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "fire words" pop 2 ident 2: 47 words, easy/middle/hard 13/20/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  food_chillers: "food chillers" pop 3 ident 3: 7 words, easy/middle/hard 3/2/2, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "food chillers" pop 3 ident 3: 11 words, easy/middle/hard 4/4/3, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  hot_things: "hot things" pop 2 ident 3: 40 words, easy/middle/hard 13/14/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "hot things" pop 2 ident 3: 44 words, easy/middle/hard 15/16/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  keeping_cool: new -> "keeping cool" pop 2 ident 3: 37 words, easy/middle/hard 13/13/11, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  polar_and_frozen_places: "polar and frozen places" pop 3 ident 3: 11 words, easy/middle/hard 3/4/4, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "polar and frozen places" pop 3 ident 3: 19 words, easy/middle/hard 5/6/8, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  things_that_burn: new -> "things that burn" pop 2 ident 3: 32 words, easy/middle/hard 12/10/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  things_that_melt: "things that melt" pop 2 ident 3: 42 words, easy/middle/hard 12/16/14, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things that melt" pop 2 ident 3: 46 words, easy/middle/hard 13/17/16, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  words_for_cold: "words for cold" pop 3 ident 2: 30 words, easy/middle/hard 6/10/14, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "words for cold" pop 3 ident 2: 30 words, easy/middle/hard 7/10/13, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  words_for_hot: "words for hot" pop 3 ident 2: 27 words, easy/middle/hard 7/11/9, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "words for hot" pop 3 ident 2: 26 words, easy/middle/hard 7/11/8, theme difficulty 2, 4th-easiest band 2, gap 0.0
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 9: hot as hell 39940, red-hot 39928, piping hot 39929, white-hot 39930, hellish 39942, feverish 39932, stone cold 39958, arctic blast 39965, bleak 39950
+Entries added 10: burn 68810, extinguish 68811, flaming 68812, molten 68813, infernal 68814, bitter 68815, shivery 68816, unheated 68817, drafty 68818, draughty 68819
+Entries deleted 0: none
+library changes 225; entries changed 136; status set to rev 65; themes deleted 0; entries merged 0
+Checks: changed kinds: info:clash-large 47 -> 48, info:family-kin 417 -> 430, info:orphan 254 -> 262, info:overlap 4813 -> 4815, info:rating-vs-zipf 1683 -> 1684
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1427
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3207 -> 3209; gone none; new keeping_cool, things_that_burn; theme indexes shift: from index 3144 ("keeping_cool", was "things_that_melt") to the last index 3208
+Theme rows whose fields changed (parent compared by id): 8: hot_things (index 3140 -> 3140: counts [4,10,14,11,2] -> [4,12,16,11,2]); cold_things (index 3141 -> 3141: counts [4,13,17,9,8] -> [4,14,17,11,8]); polar_and_frozen_places (index 3142 -> 3142: counts [0,3,4,0,4] -> [0,5,6,2,6], range [3,5] -> [2,5]); food_chillers (index 3143 -> 3143: counts [2,1,2,2,0] -> [2,2,4,2,1], range [3,3] -> [2,3]); things_that_melt (index 3144 -> 3145: counts [5,8,16,13,1] -> [5,9,17,15,2]); fire_words (index 3145 -> 3147: counts [3,7,19,9,4] -> [4,9,21,11,3], range [2,5] -> [1,4]); words_for_hot (index 3146 -> 3148: counts [1,6,13,6,4] -> [1,6,12,5,3], range [2,5] -> [2,4]); words_for_cold (index 3147 -> 3149: counts [3,3,10,8,6] -> [3,4,10,8,5])
+Entry rows 61316 -> 61320; first row whose entry changed: 33218 (Nunavut 36213, was Jalisco 36215); rows that moved: 28091; added Nunavut 36213 (row 33218), burn 68810 (row 61310), extinguish 68811 (row 61311), flaming 68812 (row 61312), molten 68813 (row 61313), infernal 68814 (row 61314), bitter 68815 (row 61315), shivery 68816 (row 61316), unheated 68817 (row 61317), drafty 68818 (row 61318), draughty 68819 (row 61319); removed 39928 (row 36581), 39929 (row 36582), 39930 (row 36583), 39932 (row 36585), 39950 (row 36599), 39958 (row 36607), 39965 (row 36614)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 98640 -> 98737; rows whose link count changed: 106
+Link-index shifts: from row 26 (hearts 27) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 19, new 116, rating changed 0
+  gone (other than the deleted themes): hot_things: "hot sauce" (728), cold_things: "penguin" (1064), cold_things: "snowfall" (1968), things_that_melt: "snowfall" (1968), words_for_hot: "balmy" (2028), hot_things: "equator" (2399), cold_things: "polar bear" (7943), things_that_melt: "fondue" (18013), words_for_cold: "chill" (19893), fire_words: "Greek fire" (20611), cold_things: "cold shower" (39884), words_for_hot: "red-hot" (39928), words_for_hot: "piping hot" (39929), words_for_hot: "white-hot" (39930), words_for_hot: "feverish" (39932), words_for_hot: "thermal" (39938), words_for_cold: "bleak" (39950), words_for_cold: "stone cold" (39958), words_for_cold: "arctic blast" (39965)
+  new: cold_things: "Neptune" (26), keeping_cool: "watermelon" (97), hot_things: "tea" (225), things_that_burn: "toast" (565), keeping_cool: "ice cream" (604), things_that_burn: "marshmallow" (611), things_that_melt: "sorbet" (622), keeping_cool: "sorbet" (622), hot_things: "soup" (797), keeping_cool: "gazpacho" (843), keeping_cool: "lemonade" (863), keeping_cool: "smoothie" (864), cold_things: "iced tea" (866), keeping_cool: "iced tea" (866), keeping_cool: "hose" (1844), keeping_cool: "sprinkler" (1846), keeping_cool: "breeze" (1979), cold_things: "hail" (1987), things_that_burn: "coal" (2054), things_that_burn: "sulfur" (2067), polar_and_frozen_places: "Iceland" (2167), cold_things: "South Pole" (2401), polar_and_frozen_places: "South Pole" (2401), things_that_burn: "tire" (2585), things_that_melt: "s'more" (3040), things_that_burn: "kindling" (3042), food_chillers: "thermos" (3063), fire_words: "matches" (3066), things_that_burn: "matches" (3066), keeping_cool: "siesta" (3692), things_that_melt: "lipstick" (3748), hot_things: "hair dryer" (3767), things_that_burn: "calories" (3827), food_chillers: "icebox" (4717), keeping_cool: "air conditioner" (4737), keeping_cool: "fan" (4742), keeping_cool: "shorts" (4867), keeping_cool: "tank top" (4896), keeping_cool: "parasol" (5004), keeping_cool: "hand fan" (5005), keeping_cool: "linen" (5041), keeping_cool: "squirt gun" (5965), things_that_burn: "bridge" (7379), things_that_burn: "incense" (14760), keeping_cool: "ice pack" (15392), things_that_melt: "coconut oil" (15644), things_that_burn: "candles" (16276), keeping_cool: "sun hat" (16347), keeping_cool: "shade" (16365), things_that_burn: "magnesium" (16652), keeping_cool: "popsicle" (18303), keeping_cool: "snow cone" (18312), things_that_melt: "slushie" (18314), keeping_cool: "slushie" (18314), keeping_cool: "iced coffee" (19523), hot_things: "skillet" (19808), things_that_burn: "paper" (20472), keeping_cool: "sandals" (20848), polar_and_frozen_places: "Ross Ice Shelf" (21054), keeping_cool: "blinds" (23146), hot_things: "boiler" (23576), keeping_cool: "ceiling fan" (23579), fire_words: "bellows" (23589), things_that_burn: "cardboard" (23982), things_that_burn: "wood" (24031), keeping_cool: "basement" (24074), keeping_cool: "swimsuit" (24469), keeping_cool: "flip-flops" (24624), things_that_burn: "sparkler" (25074), things_that_burn: "wick" (25589), things_that_burn: "wax" (25590), things_that_burn: "straw" (28060), keeping_cool: "sweat" (28307), things_that_burn: "chili" (29499), things_that_burn: "leaf" (30033), fire_words: "charcoal" (30100), things_that_burn: "charcoal" (30100), things_that_burn: "log" (30135), cold_things: "snowball" (31291), things_that_melt: "snowball" (31291), words_for_hot: "blistering" (31442), words_for_hot: "sun-baked" (31460), things_that_burn: "hay" (31498), hot_things: "bonfire" (31537), things_that_burn: "bonfire" (31537), things_that_burn: "peat" (31965), polar_and_frozen_places: "McMurdo Station" (32174), things_that_burn: "oil" (32326), things_that_burn: "kerosene" (32333), polar_and_frozen_places: "Nunavut" (36213), polar_and_frozen_places: "Lapland" (36447), polar_and_frozen_places: "Arctic Ocean" (36998), fire_words: "crackle" (39586), keeping_cool: "cold shower" (39884), things_that_burn: "torch" (39902), keeping_cool: "swimming pool" (40120), keeping_cool: "water balloon" (40254), fire_words: "heat" (40847), things_that_burn: "propane" (46781), food_chillers: "minibar" (48318), things_that_burn: "CD" (49347), things_that_burn: "gasoline" (50000), polar_and_frozen_places: "Murmansk" (56975), keeping_cool: "water slide" (57627), cold_things: "ice bucket" (66841), food_chillers: "ice bucket" (66841), cold_things: "outer space" (68808), fire_words: "burn" (68810), fire_words: "extinguish" (68811), words_for_hot: "flaming" (68812), words_for_hot: "molten" (68813), words_for_hot: "infernal" (68814), words_for_cold: "bitter" (68815), words_for_cold: "shivery" (68816), words_for_cold: "unheated" (68817), words_for_cold: "drafty" (68818)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Qualities gap check, 2026-11-24): all 8 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - All 204 earlier library versions and 151 batch notices and reviews were checked for the 116 new links and the two names. Two links were there before: icebox in food chillers (it left at v307 as an alias of fridge; v441 made it its own root, the ice-cooled cabinet) and bitter [taste] in words for cold (v447 took it out as the wrong sense and noted that the cold sense was not in the library: bitter [very cold] is that sense).
+  - Spread (LIBRARY-RULES 3.7): see the list above.
+
+Considered and left out:
+  - hot things: incinerator (left out in review); grill stays as the verb 921: an appliance sense would need a gloss on the verb, which changes the text of the baselined region-root-equiv warning of broil / grill.
+  - cold things: polar bear and penguin leave: they live in the cold and are in 10 and 12 other themes.
+  - words for hot: tropical, summery and the other warm words (v447 took them out).
+  - keeping warm: too close to cozy things and winter clothes.
+  - things that burn: cigarette, cigar (smoking), alcohol, natural gas, methane, butane (fuels has them).
+
+For Simon:
+  1. red-hot, white-hot, piping hot and stone cold leave words for hot and words for cold for the reason you gave for hot and cold in v447 (nameOkIn let the topic word through).
+  2. 9 words are left in no theme (kept in the library, not exported): hot as hell, red-hot, piping hot, white-hot, hellish, feverish, stone cold, arctic blast, bleak.
+  3. grill 921 (to cook) and barbecue 19767 [grilled meat] are typed verb but stand for the appliance in hot things: a sense split, if you want it, needs the region-root-equiv baseline text.
+  4. burn [fire] joins burning, burner and combust in a clash group of 9 (a real look-alike; up to 12 is allowed).
+
+=== Notice to _WS_ for v463 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v463 (Qualities, temperature branch): 2 new themes, 116 new links, 10 new entries (9 roots and the alias draughty; listed above).
+- things that burn (after things that melt) and keeping cool (after cold things and its sub-themes); both property themes.
+- hot things, cold things, polar and frozen places, food chillers, things that melt, fire words, words for hot and words for cold lose words that do not fit and gain well-known ones (listed above); polar bear and penguin leave cold things.
+Theme rows 3207 -> 3209; theme indexes shift from index 3144 (keeping_cool, was things_that_melt) on.
+Entry rows 61316 -> 61320: Nunavut 36213 is newly exported (row 33218); red-hot, piping hot, white-hot, feverish, stone cold, arctic blast and bleak are in no theme and leave the export, so rows move from 33218 on; the new rows are at the end. Link positions move from row 26 on.
+Line breaks: 4 words added (data/breaks-en.txt).
+New characters: none.

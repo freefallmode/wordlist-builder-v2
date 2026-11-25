@@ -1,0 +1,162 @@
+Library batch v464 (for Simon's review): Qualities, size and weight branch: words that do not fit out and well-known words added in its seven themes; new theme deep things.
+1. huge things
+  out of huge_things: mount 1895 [mountain]: used only in names (Mount Everest); mountain is there (they were grouped) (stays in landscapes, tall_things, things_with_faces)
+  linked: Jupiter 23 [planet] in huge_things (typicality 2): a well-known huge thing; it was not linked
+  linked: Titanic 21085 [ship] in huge_things (typicality 3): a well-known huge thing; it was not linked
+  linked: sun 7109 [star] in huge_things (typicality 3): a well-known huge thing; it was not linked
+  linked: Grand Canyon 2332 in huge_things (typicality 4): a well-known huge thing; it was not linked
+  linked: Great Barrier Reef 37610 in huge_things (typicality 4): a well-known huge thing; it was not linked
+  linked: aircraft carrier 4452 in huge_things (typicality 4): a well-known huge thing; it was not linked
+  linked: megalodon 1576 in huge_things (typicality 4): a well-known huge thing; it was not linked
+  linked: Sahara 32049 [desert] in huge_things (typicality 4): a well-known huge thing; it was not linked
+  linked: Betelgeuse 41274 in huge_things (typicality 5): a well-known huge thing; it was not linked
+2. tiny things
+  out of tiny_things: thimble 5027: small rather than tiny (stays in fabrics_and_sewing, game_pieces, sewing_kit, sewing_tools, collecting_hobbies)
+  linked: germ 40969 [microbe] in tiny_things (typicality 1): a well-known tiny thing; it was not linked
+  linked: ladybug 1351 in tiny_things (typicality 2): a well-known tiny thing; it was not linked
+  linked: bead 21731 in tiny_things (typicality 2): a well-known tiny thing; it was not linked
+  linked: freckle 14326 in tiny_things (typicality 2): a well-known tiny thing; it was not linked
+  linked: cell 3278 [biology] in tiny_things (typicality 3): a well-known tiny thing; it was not linked
+  linked: raindrop 1984 in tiny_things (typicality 3): a well-known tiny thing; it was not linked
+  linked: neutrino 40777 in tiny_things (typicality 4): a well-known tiny thing; it was not linked
+  linked: pixel 7285 in tiny_things (typicality 4): a well-known tiny thing; it was not linked
+  group in tiny_things: mite 9154 = dust mites 14917: a word and its more specific form: one answer
+  group in tiny_things: germ 40969 = microbe 39509: the same answer
+3. heavy things
+  out of heavy_things: pianoforte 5999: the formal name of the piano, which is there (v444 took it out of wild west town for the same reason) (stays in instruments, things_with_lids, things_with_legs, keyboard_instruments, european_inventions, words_from_italian, things_made_of_wood, things_with_keys, things_with_strings)
+  linked: wrecking ball 66301 in heavy_things (typicality 3): a well-known heavy thing; it was not linked
+  linked: gold bar 21211 in heavy_things (typicality 3): a well-known heavy thing; it was not linked
+  linked: washing machine 4725 in heavy_things (typicality 3): a well-known heavy thing; it was not linked
+  linked: sledgehammer 4804 in heavy_things (typicality 4): a well-known heavy thing; it was not linked
+  linked: suit of armor 21346 in heavy_things (typicality 4): a well-known heavy thing; it was not linked
+  linked: church bell 40302 in heavy_things (typicality 4): a well-known heavy thing; it was not linked
+4. long things
+  out of long_things: ruler 7192 [measuring tool]: not long (stays in measurement, measuring_tools, stationery, math_tools, measuring_instruments, things_made_of_plastic, in_a_school_bag, in_a_pencil_case, art_materials)
+  out of long_things: telescope 7121: not known for being long (stays in space, navigation_tools, things_that_reflect, astronomy_terms, inventions, observatory, optical_instruments, european_inventions)
+  linked: jump rope 5936 in long_things (typicality 2): a well-known long thing; it was not linked
+  linked: vine 1773 [plant] in long_things (typicality 3): a well-known long thing; it was not linked
+  linked: dachshund 262 in long_things (typicality 3): a well-known long thing; it was not linked
+  linked: trunk 10325 [elephant] in long_things (typicality 3): a well-known long thing; it was not linked
+  linked: marathon 29561 [race] in long_things (typicality 4): a well-known long thing; it was not linked
+  linked: intestine 3252 in long_things (typicality 4): a well-known long thing; it was not linked
+  linked: War and Peace 13464 in long_things (typicality 4): a well-known long thing; it was not linked
+  linked: pool noodle 39817 in long_things (typicality 4): a well-known long thing; it was not linked
+  linked: Andes 20435 in long_things (typicality 4): a well-known long thing; it was not linked
+  linked: equator 2399 in long_things (typicality 4): a well-known long thing; it was not linked
+  group in long_things: rope 48700 = jump rope 5936: a word and its more specific form: one answer
+5. tall things
+  out of tall_things: mount 1895 [mountain]: used only in names (Mount Everest); mountain is there (they were grouped) (stays in landscapes, things_with_faces)
+  linked: Ferris wheel 13776 in tall_things (typicality 2): a well-known tall thing; it was not linked
+  linked: roller coaster 13778 in tall_things (typicality 2): a well-known tall thing; it was not linked
+  linked: mast 2798 in tall_things (typicality 3): a well-known tall thing; it was not linked
+  linked: wedding cake 18116 in tall_things (typicality 4): a well-known tall thing; it was not linked
+6. size labels
+  out of size_labels: macro 39563 [large]: not a size label (now in no theme: not exported)
+  new entry: extra small 68820 adjective, common, familiarity 1: extra large was in, extra small was not
+  linked: extra small 68820 in size_labels (typicality 1): extra large was in, extra small was not
+  new entry: XXXL 68821 noun, acronym, familiarity 2: the size after XXL
+  linked: XXXL 68821 in size_labels (typicality 3): the size after XXL
+  new entry: party size 68822 adjective, common, familiarity 2: as family size
+  linked: party size 68822 in size_labels (typicality 3, shown "party"): as family size
+  new entry: California king 68823 noun, proper, familiarity 3: the long king-size bed
+  linked: California king 68823 in size_labels (typicality 4): the long king-size bed
+7. lightweight things
+  out of lightweight_things: Pringle 39576: one brand of chip (now in no theme: not exported)
+  linked: petal 30090 [flower] in lightweight_things (typicality 2): a well-known light thing; it was not linked
+  linked: cotton candy 628 in lightweight_things (typicality 2): a well-known light thing; it was not linked
+  linked: eyelash 14196 in lightweight_things (typicality 3): a well-known light thing; it was not linked
+  linked: confetti 13916 in lightweight_things (typicality 3): a well-known light thing; it was not linked
+  linked: shuttlecock 42656 in lightweight_things (typicality 3): a well-known light thing; it was not linked
+  linked: plastic bag 66541 in lightweight_things (typicality 4): a well-known light thing; it was not linked
+  linked: toothpick 30103 in lightweight_things (typicality 4): a well-known light thing; it was not linked
+8. deep things (new)
+  new theme: deep_things "deep things" under size_and_weight (after tall_things), pop 2, ident 3: tall things and long things had no sibling for depth
+  linked: ocean 30961 [water] in deep_things (typicality 1): a deep thing
+  linked: well 32112 [water source] in deep_things (typicality 1): a deep thing
+  linked: canyon 1903 in deep_things (typicality 1): a deep thing
+  linked: hole 28476 [opening] in deep_things (typicality 1): a deep thing
+  linked: swimming pool 40120 in deep_things (typicality 2): a deep thing
+  linked: cave 1913 [rock hollow] in deep_things (typicality 2): a deep thing
+  linked: valley 1900 [landform] in deep_things (typicality 2): a deep thing
+  linked: lake 1909 in deep_things (typicality 2): a deep thing
+  linked: mine 31788 [pit] in deep_things (typicality 2): a deep thing
+  linked: gorge 1928 in deep_things (typicality 2): a deep thing
+  linked: trench 32036 [ocean] in deep_things (typicality 2): a deep thing
+  linked: abyss 32037 in deep_things (typicality 2): a deep thing
+  linked: moat 6668 in deep_things (typicality 3): a deep thing
+  linked: submarine 34572 in deep_things (typicality 3): a deep thing
+  linked: crater 1931 in deep_things (typicality 3): a deep thing
+  linked: fjord 1941 [landform] in deep_things (typicality 3): a deep thing
+  linked: ravine 1943 in deep_things (typicality 3): a deep thing
+  linked: sinkhole 30172 in deep_things (typicality 3): a deep thing
+  linked: crevasse 30902 in deep_things (typicality 3): a deep thing
+  linked: Loch Ness 30989 [lake] in deep_things (typicality 3): a deep thing
+  linked: shaft 31783 [mine] in deep_things (typicality 3): a deep thing
+  linked: quarry 31784 [pit] in deep_things (typicality 3): a deep thing
+  linked: outer space 68808 in deep_things (typicality 3): a deep thing
+  linked: Mariana Trench 60464 in deep_things (typicality 4): a deep thing
+  linked: root 30034 [plant] in deep_things (typicality 4): a deep thing
+  linked: Lake Baikal 32110 in deep_things (typicality 4): a deep thing
+  linked: dungeon 6670 in deep_things (typicality 4): a deep thing
+  linked: foundation 6546 [building] in deep_things (typicality 4): a deep thing
+  linked: snowdrift 31290 in deep_things (typicality 4): a deep thing
+  linked: bathyscaphe 47652 in deep_things (typicality 4): a deep thing
+  linked: bass 11011 [voice] in deep_things (typicality 4): a deep voice
+  linked: pocket 24952 [clothing] in deep_things (typicality 5): deep pockets
+  new entry: chasm 68824 noun, common, familiarity 3: a deep opening in the ground
+  linked: chasm 68824 in deep_things (typicality 2): a deep opening in the ground
+  group in deep_things: trench 32036 = Mariana Trench 60464: a word and its more specific form: one answer
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  deep_things: new -> "deep things" pop 2 ident 3: 33 words, easy/middle/hard 10/14/9, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  heavy_things: "heavy things" pop 2 ident 3: 38 words, easy/middle/hard 13/12/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "heavy things" pop 2 ident 3: 43 words, easy/middle/hard 13/15/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  huge_things: "huge things" pop 2 ident 3: 36 words, easy/middle/hard 12/18/6, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "huge things" pop 2 ident 3: 44 words, easy/middle/hard 13/19/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  lightweight_things: "lightweight things" pop 3 ident 3: 38 words, easy/middle/hard 10/14/14, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "lightweight things" pop 3 ident 3: 44 words, easy/middle/hard 12/17/15, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  long_things: "long things" pop 3 ident 3: 38 words, easy/middle/hard 13/15/10, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "long things" pop 3 ident 3: 46 words, easy/middle/hard 14/18/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  size_labels: "size labels" pop 2 ident 2: 37 words, easy/middle/hard 11/15/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "size labels" pop 2 ident 2: 40 words, easy/middle/hard 12/17/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  tall_things: "tall things" pop 2 ident 3: 49 words, easy/middle/hard 11/19/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "tall things" pop 2 ident 3: 52 words, easy/middle/hard 13/19/20, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  tiny_things: "tiny things" pop 2 ident 3: 36 words, easy/middle/hard 9/13/14, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "tiny things" pop 2 ident 3: 43 words, easy/middle/hard 13/15/15, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+First synonym aliases harder than root familiarity + 1: 6 -> 6: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, egg white 64688 f1 / albumen 63421 f4
+Entries left in no theme (kept in the library, not exported) 2: macro 39563, Pringle 39576
+Entries added 5: extra small 68820, XXXL 68821, party size 68822, California king 68823, chasm 68824
+Entries deleted 0: none
+library changes 151; entries changed 88; status set to rev 52; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 262 -> 264, info:overlap 4815 -> 4819
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1427
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3209 -> 3210; gone none; new deep_things; theme indexes shift: from index 3105 ("deep_things", was "size_labels") to the last index 3209
+Theme rows whose fields changed (parent compared by id): 7: huge_things (index 3100 -> 3100: counts [6,6,18,5,1] -> [6,7,19,10,2]); tiny_things (index 3101 -> 3101: counts [4,6,13,12,2] -> [5,9,15,14,1]); heavy_things (index 3102 -> 3102: counts [4,9,14,11,2] -> [4,9,17,13,2]); long_things (index 3103 -> 3103: counts [3,10,17,9,1] -> [3,11,20,14,0]); tall_things (index 3104 -> 3104: counts [4,7,19,17,4] -> [4,9,20,18,4]); size_labels (index 3105 -> 3106: counts [5,6,15,6,5] -> [6,6,17,7,4]); lightweight_things (index 3106 -> 3107: counts [2,8,14,9,5] -> [2,10,18,11,4])
+Entry rows 61320 -> 61323; first row whose entry changed: 36241 (maxi 39564, was macro 39563); rows that moved: 25077; added extra small 68820 (row 61318), XXXL 68821 (row 61319), party size 68822 (row 61320), California king 68823 (row 61321), chasm 68824 (row 61322); removed 39563 (row 36241), 39576 (row 36254)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 98737 -> 98810; rows whose link count changed: 81
+Link-index shifts: from row 23 (Saturn 24) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 8, new 81, rating changed 0
+  gone (other than the deleted themes): huge_things: "mount" (1895), tall_things: "mount" (1895), tiny_things: "thimble" (5027), heavy_things: "pianoforte" (5999), long_things: "telescope" (7121), long_things: "ruler" (7192), size_labels: "macro" (39563), lightweight_things: "Pringle" (39576)
+  new: huge_things: "Jupiter" (23), long_things: "dachshund" (262), lightweight_things: "cotton candy" (628), tiny_things: "ladybug" (1351), huge_things: "megalodon" (1576), long_things: "vine" (1773), deep_things: "valley" (1900), deep_things: "canyon" (1903), deep_things: "lake" (1909), deep_things: "cave" (1913), deep_things: "gorge" (1928), deep_things: "crater" (1931), deep_things: "fjord" (1941), deep_things: "ravine" (1943), tiny_things: "raindrop" (1984), huge_things: "Grand Canyon" (2332), long_things: "equator" (2399), tall_things: "mast" (2798), long_things: "intestine" (3252), tiny_things: "cell" (3278), huge_things: "aircraft carrier" (4452), heavy_things: "washing machine" (4725), heavy_things: "sledgehammer" (4804), long_things: "jump rope" (5936), deep_things: "foundation" (6546), deep_things: "moat" (6668), deep_things: "dungeon" (6670), huge_things: "sun" (7109), tiny_things: "pixel" (7285), long_things: "trunk" (10325), deep_things: "bass" (11011), long_things: "War and Peace" (13464), tall_things: "Ferris wheel" (13776), tall_things: "roller coaster" (13778), lightweight_things: "confetti" (13916), lightweight_things: "eyelash" (14196), tiny_things: "freckle" (14326), tall_things: "wedding cake" (18116), long_things: "Andes" (20435), huge_things: "Titanic" (21085), heavy_things: "gold bar" (21211), heavy_things: "suit of armor" (21346), tiny_things: "bead" (21731), deep_things: "pocket" (24952), deep_things: "hole" (28476), long_things: "marathon" (29561), deep_things: "root" (30034), lightweight_things: "petal" (30090), lightweight_things: "toothpick" (30103), deep_things: "sinkhole" (30172), deep_things: "crevasse" (30902), deep_things: "ocean" (30961), deep_things: "Loch Ness" (30989), deep_things: "snowdrift" (31290), deep_things: "shaft" (31783), deep_things: "quarry" (31784), deep_things: "mine" (31788), deep_things: "trench" (32036), deep_things: "abyss" (32037), huge_things: "Sahara" (32049), deep_things: "Lake Baikal" (32110), deep_things: "well" (32112), deep_things: "submarine" (34572), huge_things: "Great Barrier Reef" (37610), long_things: "pool noodle" (39817), deep_things: "swimming pool" (40120), heavy_things: "church bell" (40302), tiny_things: "neutrino" (40777), tiny_things: "germ" (40969), huge_things: "Betelgeuse" (41274), lightweight_things: "shuttlecock" (42656), deep_things: "bathyscaphe" (47652), deep_things: "Mariana Trench" (60464), heavy_things: "wrecking ball" (66301), lightweight_things: "plastic bag" (66541), deep_things: "outer space" (68808), size_labels: "extra small" (68820), size_labels: "XXXL" (68821), size_labels: "party" (68822), size_labels: "California king" (68823), deep_things: "chasm" (68824)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Qualities gap check, 2026-11-24): all 7 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 81 new links existed earlier and was removed, and no theme named deep things existed (all 205 library versions and 153 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above; huge things had 6 hard words of 36 and now has 12 of 44.
+
+Considered and left out:
+  - short things, thin things (too many members could be argued about); flat things and rectangular things fit the shapes branch.
+  - deep things: oil well (a well is there), Grand Canyon (a canyon is there), deep sea and deep end (they hold "deep").
+
+For Simon:
+  1. Two words are left in no theme (kept in the library, not exported): macro [large], Pringle.
+  2. pianoforte leaves heavy things as it left wild west town in v444; it is still in things made of wood, things with keys and things with strings.
+
+=== Notice to _WS_ for v464 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v464 (Qualities, size and weight branch): 1 new theme, 81 new links, 5 new entries (extra small, XXXL, party size, California king, chasm).
+- deep things (under size and weight, after tall things; property).
+- huge, tiny, heavy, long, tall and lightweight things and size labels lose a few words that do not fit and gain well-known ones (listed above).
+Theme rows 3209 -> 3210; theme indexes shift from index 3105 (deep_things, was size_labels) on.
+Entry rows 61320 -> 61323: macro [large] and Pringle are in no theme and leave the export, so rows move from 36241 on; the new rows are at the end. Link positions move from row 23 on.
+Line breaks: none.
+New characters: none.
