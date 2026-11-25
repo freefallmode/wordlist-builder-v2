@@ -1273,6 +1273,223 @@ Chunk pairs: BAL\|TIC, CAC\|TUS, DECA\|GON, PAS\|TE, CO\|PY, LU\|CAS, ROB\|ERT, 
 
 Notes: no wrong drags. Two drags of TENDERLOIN onto the RIBEYE/SIRLOIN stack and one HOG onto HEDGE did nothing and cost no move (the bubble was probably still moving); a retry from another bubble worked. The five-merge refund came once (22 moves stayed 22 after WINK onto BLINK). Moves went 43 to 10 with 10 themes, the best margin since level 46. PEWTER, ASH and SILVER sat on the board from the start and joined CHARCOAL only after the CHAR\|COAL join.
 
+## Level 51
+
+Themes: 12 (bar `0/12`). Moves: 48 at start, 11 left at the end (the counter was 11 on the Mastery screen). Mastery: 680. Reward: 30 coins (counter 2,880 on the Mastery and Well Done screens). Next button: green "LEVEL 52" (X2 and Home not tapped). Split words: none. NEW: reversed-word bubbles (tutorial popup on first sight) and the Shell Streak pre-level dialog now unlocked (see the features log). The rewarded "+5 MOVES" ad bubble floated on the board from about move 37 to the end; no drag started on it, no ad opened. Autumn leaves on Mastery and Well Done.
+
+Chunk pairs: none. Reversed bubbles (yellow text with a left arrow): EVAC (read CAVE) and RIFEK (read KEFIR); the arrow marks a reversed word, and the bubble joins its theme as the real word.
+
+| Theme | Words | Name |
+|---|---|---|
+| Amphibians | (four words not recorded; the stack formed off-screen early) | AMPHIBIANS (name not caught; the bubble returned as a word) |
+| Cheeses | RICOTTA, BURRATA, DORBLU, EDAM | CHEESE (shown, a51j) |
+| Fuels | GASOLINE, DIESEL, KEROSENE, JET FUEL | FUEL (guessed, name not caught; the bubble returned as a word and became OIL) |
+| Nocturnal animals | BAT, WINGS, EVAC (CAVE), ECHO | BAT (shown, a51s) |
+| Eye | RETINA, CORNEA, IRIS, PUPIL | EYES (shown, b51a) |
+| Paired things | SOCKS, SKIS, TWINS, EYES | PAIRED THINGS (shown, b51c) |
+| Mammals | WHALE, LION, HUMAN, BAT | MAMMALS (shown, a51y) |
+| Birds | PARROT, EAGLE, PENGUIN, KIWI | BIRDS (shown, b51g) |
+| Dairy | MILK, YOGURT, KEFIR (RIFEK reversed), CHEESE | DAIRY PRODUCTS (shown, b51j) |
+| Vertebrates | MAMMALS, BIRDS, REPTILES, AMPHIBIANS | VERTEBRATES (shown, b51n) |
+| Rare elements | LITHIUM, COBALT, NICKEL, URANIUM | RARE ELEMENTS (shown, b51u) |
+| Underground treasures | COAL, OIL (the FUEL theme returned), NATURAL GAS, RARE ELEMENTS | UNDERGROUND TREASURES (shown, f51a, final merge) |
+
+Notes: a hierarchical level where most themes feed a parent (cheese into dairy; mammals, birds, reptiles, amphibians into vertebrates; fuels and rare elements into underground treasures). About 4 wrong or ignored drags: WINGS onto the SOCKS stack and WHALE onto the BAT stack each cost 1 move; the first two merges of the GASOLINE stack were free. The final-merge routine caught both the name and the Mastery number.
+
+## Level 52
+
+Themes: 10 (bar `0/10`). Moves: 42 at start, 18 before the last merge, 17 on the first Mastery frame (10 two frames later, then 0 as the bonus ran down). Mastery: 686 was the last value read; the number counts UP while the leftover moves count DOWN, and the screen then advanced by itself to Well Done within about 3 s, so the final value was not captured (the first frame, at 17 moves, still showed 680, level 51's value). Reward: 30 coins (counter 2,910 on the Mastery and Well Done screens). Next button: green "LEVEL 53" (X2 and Home not tapped). Split words: none. Reversed bubbles (second sighting, no popup this time): IKOL (LOKI), ERIF (FIRE), YROVAS (SAVORY). Shell Streak bar showed 1/5 (green) on the LEVEL 52 pre-level dialog after winning level 51. No ad bubble seen. Autumn leaves on Mastery and Well Done.
+
+Chunk pairs: none.
+
+| Theme | Words | Name |
+|---|---|---|
+| Norse legends | THOR, LOKI (IKOL reversed), ASGARD, VALHALLA | NORSE LEGENDS (shown, a52c) |
+| Word puzzles | SCRABBLE, JUMBLE, CROSSWORD, ANAGRAM | WORD PUZZLES (shown, a52f) |
+| Air | CARBON DIOXIDE, NITROGEN, ARGON, OXYGEN | AIR (shown, a52i) |
+| Dragon | TAIL, SCALES, WINGS, FIRE (ERIF reversed) | DRAGON (shown, a52o) |
+| River | MISSISSIPPI, NILE, DANUBE, AMAZON | RIVER (shown, a52l) |
+| Taste qualities | BITTER, SPICY, TANGY, SAVORY (YROVAS reversed) | TASTE QUALITIES (shown, a52r) |
+| It flows | AIR, TIME, RIVER, ENERGY | IT FLOWS (shown, a52u) |
+| Nighttime | MOON, STARS, DREAMS, DARKNESS | NIGHTTIME (shown, a52x) |
+| Vampire | COFFIN, GARLIC, BLOOD, NIGHTTIME | VAMPIRE (name not caught; the bubble returned as VAMPIRE, so this is the name, b52a shows only the pop) |
+| Mythical beasts | DRAGON, HYDRA, GRIFFIN, VAMPIRE | MYTHICAL BEASTS (shown, f52a, final merge) |
+
+Notes: no wrong drags; most of the 42 moves were refunded or kept (42 to 18 over 9 themes). Hierarchical chain: NORSE and the first themes were standalone, then AIR, RIVER and the others fed IT FLOWS, DRAGON joined MYTHICAL BEASTS, NIGHTTIME joined VAMPIRE and VAMPIRE joined MYTHICAL BEASTS. Each reversed bubble was dragged as the real word it stands for. Mastery warning: readings on the Mastery screen in earlier levels (about 49 onward) may also have been mid-count; see the report.
+
+## Level 53
+
+Themes: 10 (bar `0/10`). Moves: 47 at start, 10 left at the final merge and 0 on the Mastery screen (leftover moves counted down). Mastery: 707 (the Mastery screen was already at 0 moves, so 707 is the final value). Reward: 30 coins (counter 2,940 on the Mastery and Well Done screens). Next button: red "HARD LEVEL 54" with an octopus (X2 and Home not tapped). Split words: 5 (KET\|CHUP, GOL\|LUM, GAN\|DALF, MOS\|QUE, DUMB\|BELL, TREAD\|MILL; 6 joins counting the fitness pair). Chain lock numbered 4 above 4 themes (lock number fell 4, 3, 2, 1, gone as the upper themes cleared). Shell Streak bar was 2/5 (green) on the pre-level dialog. The rewarded "+5 MOVES" ad bubble floated on the board from about move 32 to move 11; no drag started within about one bubble width of it where avoidable (two drags were started 190 to 205 px away), and no ad opened. Autumn leaves on Mastery and Well Done.
+
+Chunk pairs: KET\|CHUP, GOL\|LUM, GAN\|DALF, MOS\|QUE, DUMB\|BELL, TREAD\|MILL. Each cost 1 move.
+
+| Theme | Words | Name |
+|---|---|---|
+| Parts of the day | NOON, DAWN, DUSK, NIGHT | PARTS OF THE DAY (shown, a53c) |
+| Sauces | SOY, MUSTARD, KETCHUP (KET\|CHUP), MAYONNAISE | SAUCES (shown, a53g) |
+| Magnifying glass | LENS, HANDLE, ZOOM, INSPECT | MAGNIFYING GLASS (shown, a53j) |
+| Months | OCTOBER, MARCH, MAY, APRIL | MONTHS (shown, a53x) |
+| Detective | MAGNIFYING GLASS, NOTEBOOK, HATS, PEN | DETECTIVE (shown, a53v) |
+| Whales | ORCA, BELUGA, HUMPBACK, BLUE | WHALES (shown, f53a, final merge) |
+| Lord of the Rings | SAURON, GOLLUM (GOL\|LUM), GANDALF (GAN\|DALF), FRODO | LORD OF THE RINGS (shown, b53f) |
+| Places of worship | MOSQUE (MOS\|QUE), TEMPLE, CHAPEL, SYNAGOGUE | PLACES OF WORSHIP (shown, b53k) |
+| Gym | BENCH, DUMBBELL (DUMB\|BELL), TREADMILL (TREAD\|MILL), WORKOUT | GYM (shown, b53p) |
+| Wellness activities | READING, MEDITATION, YOGA, GYM | WELLNESS ACTIVITIES (shown, b53r) |
+
+Notes: no wrong drags and no moves wasted except the usual 1 per merge (47 moves to 10; two five-merge refunds were seen). The upper half (parts of the day, sauces, magnifying glass, months and the chained LOTR chunks) had to clear before the lower half (worship, whales, fitness) because of the chain lock; the lower chunk bubbles (GOL, LUM, GAN, DALF, MOS) could be joined at once. The lock number dropped after each theme completed above it. Several themes held a word that belonged to a different theme in the same level (HATS = detective, not parts of the day; WORKOUT = gym; YOGA = wellness; NIGHT = parts of the day).
+
+## Level 54 (HARD)
+
+Themes: 10 (bar `0/10`), HARD level (red LVL 54 tab, octopus). Moves: 44 at start, 12 left at the final merge and 0 on the Mastery screen. Mastery: 716 (read on the 0-moves frame). Reward: 60 coins (counter 2,970 on the Mastery and Well Done screens). Next button: purple "EXPERT LEVEL 55" with a purple octopus (X2 and Home not tapped). Split words: 6 (MOTOR\|CYCLE, CIR\|CUS, WA\|VES, COUN\|TRY, a torpedo chunk pair and FLA\|MENCO; the torpedo and flamenco splits were joined before the notes were taken, so their exact break points are uncertain). Reversed-word bubbles: RAC (CAR), RANOS (SONAR) and EDIT (TIDE, read from early notes). Shell Streak bar was 3/5 on the pre-level dialog. No ad bubble appeared on this level.
+
+Chunk pairs: MOTOR\|CYCLE, CIR\|CUS, WA\|VES, COUN\|TRY (others uncertain, see above).
+
+| Theme | Words | Name |
+|---|---|---|
+| Dances | SALSA, FLAMENCO, TANGO, DISCO | DANCES (shown) |
+| Beach | COAST, SAND, WAVES (WA\|VES), TIDE (reversed EDIT) | BEACH (shown) |
+| Music | COUNTRY (COUN\|TRY), ROCK, JAZZ, DANCES (returned) | MUSIC (shown) |
+| Submarine | TORPEDO, PERISCOPE, HULL, SONAR (reversed RANOS) | SUBMARINE (shown, b2) |
+| Water | BOAT, SHIP, FERRY, SUBMARINE (returned) | WATER (shown, e1; the name is the single word WATER) |
+| Air | GLIDER, HELICOPTER, PLANE, DRONE | AIR (shown, h1) |
+| Railway | TRAIN, TRACKS, TUNNEL, STATION | RAILWAY (shown, l2) |
+| Road | BUS, BIKE, CAR (reversed RAC), MOTORCYCLE (MOTOR\|CYCLE) | ROAD (shown, p1) |
+| Ways of transportation | WATER, AIR, RAILWAY, ROAD (all four returned) | WAYS OF TRANSPORTATION (shown, s1) |
+| Performing arts | CIRCUS (CIR\|CUS), MUSIC (returned), DANCE (returned), THEATER | PERFORMING ARTS (shown, w1, final merge) |
+
+Notes: three levels deep hierarchy: sub-themes (submarine, water, air, railway, road) each returned as a single word that joined WAYS OF TRANSPORTATION, and MUSIC and DANCE returned into PERFORMING ARTS. Moves: 44 to 12, so 32 spent; wrong or lost drags cost 3 in all (two missed drags while the board was shifting, one drag fired blind at the start of this session at empty water, which took no move). The first six themes (dances, beach, music and the early submarine pairs) were done before the session was compacted; their exact word lists are from running notes and the beach fourth word is the reversed EDIT (TIDE), inferred.
+
+## Level 55 (EXPERT)
+
+Themes: 14 (bar `0/14`), EXPERT level (purple LVL 55 tab, purple octopus). Moves: 58 at start, 4 at the final merge and 0 on the Mastery screen (leftover moves counted down). Mastery: 722 (read on the 0-moves frame). Reward: 90 coins (counter 3,030 on the Mastery and Well Done screens). Next button: green plain "LEVEL 56" (X2 and Home not tapped). Split words: 6 chunk pairs (OR\|GAN, DIGES\|TION, REMIN\|DER, HASH\|TAG, PRES\|SURE, DICT\|ION... see table; STOP and TON/VER pairs: STOP\|... uncertain). Cryptic bubbles: ?EE? (WEEK), ?U?G? (JUDGE, the ?U??? form changed as letters were revealed), a five-letter ????? (FORMULA was the shown name of a different stack, so ????? is uncertain). The rewarded "+5 MOVES" ad bubble floated on the board from about move 40 to the end; no drag started within about one bubble width of it where avoidable and no ad opened. Shell Streak bar was 4/5 on the pre-level dialog.
+
+Chunk pairs: OR\|GAN, DIGES\|TION, REMIN\|DER, HASH\|TAG, PRES\|SURE, and a pair of cut-in-half words (DICT\|ION, TON and VER were joined with other chunks and are recorded in the table as read).
+
+| Theme | Words | Name |
+|---|---|---|
+| Social media | THUMBS UP, LOVE, FAVORITE, HASHTAG (HASH\|TAG), MEME | SOCIAL MEDIA (shown) |
+| Emotions | ANGER, ENVY, FEAR, HATE | DISLIKE (the shown name of the second stack; LOVE belongs to social media) |
+| Opinion | LIKE, DISLIKE, MEME, ... | (name partly caught: LIKE, DISLIKE, MEME) |
+| Calendar | WEEK, MONTH, YEAR, DAY | CALENDAR (shown) |
+| Auto racing | PITSTOP, SPEEDWAY, TRACK, FORMULA (1) | AUTO RACING (shown) |
+| Digestion | ACID, FOOD, DIGESTION (DIGES\|TION), ORGAN (OR\|GAN) | STOMACH (shown, word returned) |
+| Digestive system | LIVER, STOMACH, ESOPHAGUS, INTESTINE | DIGESTIVE SYSTEM (shown) |
+| Law | COURT, TRIAL, VERDICT, JUDGE (cryptic ?U?G?) | JUDICIARY (shown, word returned) |
+| Government | CONGRESS, SENATOR, PRESIDENT, JUDICIARY | GOVERNMENT (shown) |
+| Maths | EQUATION, SOLUTION, PATTERN, ... | FORMULA (shown, word returned to Auto racing) |
+| Deadline | COUNTDOWN, PRESSURE (PRES\|SURE), FINISH, TASK | DEADLINE (shown) |
+| Time management | CALENDAR, PLANNER, REMINDER (REMIN\|DER), DEADLINE | TIME MANAGEMENT (shown) |
+| Materials | IRON, OBSIDIAN, COTTON, QUARTZ | MATERIALS (shown, final merge) |
+| Plus other themes cleared in the first third of the level (about 4 more: the quartz/ironwork and congress/expression stacks, ton/ver chunk pair, etc.): not all recorded | | |
+
+Notes: this EXPERT level was difficult to track because of three levels of hierarchy (e.g. FORMULA returned as a word into AUTO RACING after naming a maths stack; JUDICIARY returned into GOVERNMENT; CALENDAR and DEADLINE into TIME MANAGEMENT; STOMACH into DIGESTIVE SYSTEM). The table is therefore incomplete and some rows reconstruct the shown names from memory of the screens rather than from a shot of each theme's four words. Wrong or wasted drags: about 6 (two were dragged at a wrong target when the board had shifted: FORMULA onto PRESSURE, REMINDER onto COUNTDOWN; two FINISH drags were not the right theme; each costs 1 move). Moves 58 down to 4: five-in-a-row refunds were seen at least twice (the move counter held for a merge). A reverse-word bubble did not appear on this level.
+
+## Level 56
+
+Themes: 7 (bar `0/7`). Moves: the counter read 3 for the first 15 s while the board settled (a start-up animation), then 41 after the first merge, so the start was 42 (not confirmed whether Shell Streak gave anything; see the Shell Streak row in the features log). 16 left at the final merge and 9 on the only Mastery frame caught. Mastery: 728 was on screen with 9 moves left, so it was still counting up (earlier levels ended about 6 to 20 higher); final value not captured. Reward: 30 coins (counter 3,120 on the Mastery and Well Done screens; the 3,120 was already added before the level started, so the 30 from level 55 plus the 90 are consistent). Next button: green plain "LEVEL 57". Split words: 6 chunk pairs (SQUIR\|REL, LEO\|PARD, PRI\|VACY, CAN\|NON, FIRE\|WALL, TRE\|ADS or TREAD\|S; chunk breaks as seen: SQUIR+REL, LEO+PARD, PRI+VACY, CAN+NON, FIRE+WALL, TREAD+S? the last was read as TREADS joined with ARMOR). The rewarded "+5 MOVES" ad bubble floated on the board from about move 33 to move 25; no drag started near it and no ad opened.
+
+Chunk pairs: SQUIR\|REL, LEO\|PARD, PRI\|VACY, CAN\|NON, FIRE\|WALL.
+
+| Theme | Words | Name |
+|---|---|---|
+| Rodents | RAT, MOUSE, BEAVER, SQUIRREL (SQUIR\|REL) | RODENTS (shown) |
+| Military weapon | CANNON (CAN\|NON), FIGHTER JET, SUBMARINE, TURRET | MILITARY WEAPON (shown) |
+| Tank | TANK, ARMORED VEHICLE, TREADS, ARMOR, TURRET | TANK (shown; a returned word that joined MILITARY WEAPON) |
+| Computer security | PASSWORD, LOCK, FIREWALL (FIRE\|WALL), PRIVACY (PRI\|VACY) | (name partly caught: the stack with PRIVACY joined last) |
+| Tarot cards | FOOL, DEATH, LOVERS, HIGH PRIESTESS | TAROT CARDS (shown) |
+| Bakery | FLOUR, YEAST, EGGS, MILK | BAKERY (shown) |
+| Predators | WOLF, LEOPARD (LEO\|PARD), PUMA, WILD DOG | PREDATORS (shown, final merge) |
+
+Notes: the sub-theme TANK (TANK, ARMORED VEHICLE, TREADS, ARMOR) returned as the word TANK into MILITARY WEAPON; RODENTS did not appear to return elsewhere (the shot after the RODENTS name showed 1/7). The row names for the tank group and the security group are partly reconstructed: the 4th word of the security stack joined while the bar went 3/7 to 4/7 and the name was not caught. Two missed name captures. No wrong drags and no wasted moves beyond the usual 1 per merge; five-in-a-row refund not observed. The board started very crowded (about 30 bubbles) and needed about 15 s to settle before the counter showed the true move count.
+
+## Level 57
+
+Themes: 10 (bar `0/10`). Moves: 52 at start, 16 left at the final merge, 7 on the Mastery frame caught. Mastery: 746 seen while still counting up (7 moves left); final value not captured (the screen moved on to Well Done within the next 2 shots), so the true value is 746 or a little higher. Reward: 30 coins (counter 3,150). Next button: green plain "LEVEL 58". Shell Streak bar was full (5/5) on the pre-level dialog and shows the same two shell prizes (green extra-bubble booster at segment 3, +3 MOVES at segment 5); the two booster slots stayed unselected. Reversed-word bubbles: ETAG (GATE), BARC (CRAB), REWOT (TOWER), EGARIM (MIRAGE). Split words (6): SAL\|MON, DUN\|GEON, FAC\|TORY, VOL\|CANO, HOLI\|DAY, SEA\|HORSE, plus NACE after FUR (FUR\|NACE). The rewarded "+5 MOVES" ad bubble floated on the board from about move 27 to move 19; no drag started within one bubble width of it and no ad opened. Two drags at move 27 and 26 (STEAM and FURNACE onto the SUN/HEAT stack) did nothing and cost 1 move each: that stack was SUMMER, not heat.
+
+Chunk pairs: SAL\|MON, DUN\|GEON, FAC\|TORY, VOL\|CANO, HOLI\|DAY, SEA\|HORSE, FUR\|NACE.
+
+| Theme | Words | Name |
+|---|---|---|
+| Fish | TROUT, TUNA, HERRING, SALMON (SAL\|MON) | FISH (shown) |
+| Castle | MOAT, DUNGEON (DUN\|GEON), GATE (reversed ETAG), TOWER (reversed REWOT) | CASTLE (name not caught as a theme name; the word CASTLE joined KINGDOM) |
+| Kingdom | CASTLE, THRONE, CROWN, SUBJECTS | KINGDOM (shown) |
+| Camping | TENT, CAMPFIRE, SLEEPING BAG, BACKPACK | CAMPING (shown) |
+| Industry | FACTORY (FAC\|TORY), TEXTILE, STEAM ENGINE, FURNACE | (not caught; STEAM ENGINE and FURNACE joined other stacks, see notes) |
+| Railway | TRAIN, STATION, TUNNEL, TRACKS | RAILWAY (shown) |
+| Desert | SAND, DUNES, OASIS, MIRAGE (reversed EGARIM) | DESERT (shown) |
+| Summer | SUN, HEAT, BEACH, HOLIDAY (HOLI\|DAY) | SUMMER (shown) |
+| Under the sea | FISH (returned), JELLYFISH, SEAHORSE (SEA\|HORSE), CRAB (reversed BARC) | UNDER THE SEA (shown) |
+| Hot things | STEAM, GEYSER, FURNACE, VOLCANO (VOL\|CANO) | HOT THINGS (shown, final merge) |
+
+Notes: the Industry row is a reconstruction: FACTORY and TEXTILE joined (green 2 stack) and later joined STEAM ENGINE and FURNACE in the shots I saw, but the batch was grouped quickly and a separate theme name for that stack was not caught; one theme name is therefore unrecorded and the Castle row's own theme name is not shown here (CASTLE appeared as a word bubble afterwards). FURNACE and STEAM ended in HOT THINGS, so the Industry stack must have been FACTORY, TEXTILE, STEAM ENGINE and a fourth word I did not see (the table row is uncertain). Wasted moves: 2 (STEAM and FURNACE onto the SUMMER stack); no five-in-a-row refund observed.
+
+## Level 58
+
+Themes: 10 (bar `0/10`). Moves: 47 at start (the counter read 3 for the first 15 s while the board settled, then 47 after the first merge-cost move), 10 left at the final merge. Mastery: NOT captured (the fireworks frame went straight to Well Done within the shot interval; no Mastery number seen). Reward: 30 coins (counter 3,180). Next button: red "HARD LEVEL 59" with an octopus (X2 and Home not tapped). Shell Streak still full (5/5) on the pre-level dialog. Split words (7 chunk pairs, 1 move each): AVO\|CA\|DO (three chunks AVO, CA, DO read as AVO, CADO and a middle piece; joined to AVOCADO), BAI\|KAL, OR\|CHID, VIC\|TORIA, TA\|HOE, ARAL? (ARAL was already a full word), CRATER and other single words. Cryptic/reversed: none. The rewarded "+5 MOVES" ad bubble floated on the board from about move 36 to move 14; every drag started more than about 190 px from it (several used the stack as the source instead of a bubble next to the ad), and no ad opened.
+
+Chunk pairs: AVO\|CADO (read as AVO + CADO), BAI\|KAL, OR\|CHID, DIN\|NER (DINNER), VER? (VER joined TA\|HOE area; exact break uncertain), NER, RI, plus KAL.
+
+| Theme | Words | Name |
+|---|---|---|
+| Guacamole | CILANTRO, LIME, ONION, AVOCADO (AVO\|CADO) | GUACAMOLE (not shown clearly; the name flashed during a drag batch) |
+| Names | DANIEL, MARIA, ALICE, KEVIN | NAMES (shown) |
+| Lakes | TAHOE, VICTORIA, ARAL, BAIKAL (BAI\|KAL) | LAKE (shown) |
+| Cooking | PAN, CHEF, RECIPE, STOVE | COOK (shown; returned as a word into RESTAURANT) |
+| Restaurant | TABLE, MENU, WAITER, COOK (returned) | RESTAURANT (shown) |
+| Flowers | ORCHID (OR\|CHID), TULIP, ROSE, DAISY | FLOWERS (shown) |
+| Wizard | WAND, POTION, ROBE, MAGIC SPELL | WIZARD (shown) |
+| First date | COUPLE, DINNER, FLOWERS (returned), RESTAURANT (returned) | FIRST DATE (shown) |
+| Water bodies | RIVER, LAKE (returned), OCEAN, CRATER | WATER BODIES (shown, final merge) |
+
+Notes: this level held more than 10 themes in the table above (9 rows plus the GUACAMOLE row listed first, so 10 themes in all counting the sub-theme returns: GUACAMOLE, NAMES, LAKE, COOK, RESTAURANT, FLOWERS, WIZARD, FIRST DATE, WATER BODIES, with the tenth being the second Magic/Enchant group (ENCHANT, CHARM, CURSE, HEX = a magic spells stack merged early, name caught as part of the early batch); the early stack HEX + CHARM + CURSE + ENCHANT is not in the table because I did not catch its theme name). Wrong or wasted drags: 4 (DINNER and CHEF onto the restaurant stack, which cost 1 move each; two others missed while the board shifted); the restaurant stack needed COOK returned from the cooking theme as its fourth word, and the cooking stack's own fourth word was CHEF (not restaurant staff), which is why those two drags failed. DINNER belongs to FIRST DATE, not RESTAURANT.
+
+## Level 59 (HARD)
+
+Themes: 12 (bar `0/12`). Moves: 52 at start (the counter read 3 for about 25 s while the board settled; it showed 52 after the first drag), 16 left at the final merge. Mastery: 778 (a count-up frame of 766 was seen first, then 778 with the leftover moves at 0; taken as final). Reward: 60 coins (HARD; counter 3,210 on the Well Done screen, 3,270 on the next pre-level dialog). Next button: purple "EXPERT LEVEL 60" with a purple octopus (X2 and Home not tapped). Shell Streak still full (5/5) on the pre-level dialog. Split words (7 chunk pairs, 1 move each): ARGEN\|TINA, REAC\|TOR, FIS\|SION, RADIA\|TION, URA\|NIUM, MOUN\|TAIN, SUP\|PER. Chain lock "3" over the lower half of the board; it counted down 3 to 2 to 1 as themes cleared and opened after the HYDRO theme (4th clear). New bubbles dropped in as themes cleared and as chunk pairs joined (each join revealed a new bubble). No reversed or cryptic bubbles. No +5 ad bubble opened (only a plain floating bubble drifted past, not tapped). Wrong or wasted drags: 3 (VALLEY onto RAVINE, WATERFALL onto GORGE+RAVINE, and a test of one other); no failures.
+
+Chunk pairs: ARGEN\|TINA, REAC\|TOR, FIS\|SION, RADIA\|TION, URA\|NIUM, MOUN\|TAIN, SUP\|PER
+
+| Theme | Words | Name |
+|---|---|---|
+| City transportation | TAXI, TRAM, BUS, SUBWAY | CITY TRANSPORTATION (shown) |
+| Latin America | CHILE, PERU, BRAZIL, ARGENTINA (ARGEN\|TINA) | LATIN AMERICA (shown) |
+| Hydro | DAM, TURBINE, GENERATOR, WATERFALL | HYDRO (shown; returned as a word to ENERGY SOURCES) |
+| Nuclear | REACTOR (REAC\|TOR), FISSION (FIS\|SION), RADIATION (RADIA\|TION), URANIUM (URA\|NIUM) | NUCLEAR (shown; returned as a word to ENERGY SOURCES) |
+| Energy sources | SOLAR, WIND, HYDRO (returned), NUCLEAR (returned) | ENERGY SOURCES (shown) |
+| Woodland animals | DEER, FOX, BEAR, SQUIRREL | NOT SEEN (the name shot came too early; bubble was blank orange) |
+| Breakfast | OMELETTE, TOAST, PANCAKES, CEREAL | BREAKFAST (shown; returned as a word to MEALS) |
+| Meals | LUNCH, DINNER, SUPPER (SUP\|PER), BREAKFAST (returned) | MEALS (shown) |
+| Volleyball | SERVE, NET, SPIKE, BLOCK | VOLLEYBALL (shown; returned as a word to the ball-sports theme) |
+| Ball sports | SQUASH, BASKETBALL, BADMINTON, VOLLEYBALL (returned) | NOT SEEN (the 4th-merge shot missed it; probably a ball or racket sports name) |
+| Canyon | GORGE, RAVINE, RIVERBED, CLIFF | CANYON (shown; returned as a word to TERRAIN) |
+| Terrain | VALLEY, MOUNTAIN (MOUN\|TAIN), PLATEAU, CANYON (returned) | TERRAIN (shown, final merge) |
+
+Notes: hierarchical level again (six sub-themes return as single words: HYDRO and NUCLEAR into ENERGY SOURCES, BREAKFAST into MEALS, VOLLEYBALL into the ball-sports theme, CANYON into TERRAIN). The lower half of the board was chain-locked ("3") at the start; the visible upper half held only about 24 bubbles and more dropped in as themes cleared. Join chunk pairs any time; each join cost 1 move and often revealed a new bubble. Wrong drags showed as a cost of 1 move with no change: VALLEY does not belong with GORGE+RAVINE (it goes with MOUNTAIN and PLATEAU), and WATERFALL belongs with DAM, TURBINE and GENERATOR (HYDRO), not with GORGE+RAVINE.
+
+## Level 60 (EXPERT)
+
+Themes: 13 (bar `0/13`). Moves: 52 at start (the counter read 3 for about 25 s while the board settled), 16 left at the final merge. Mastery: 798 (count-up frames 784 then 798 seen while leftover moves counted down 11 and lower; 798 is possibly mid-count, final not confirmed). Reward: 90 coins (EXPERT). Next button: green plain "LEVEL 61" (X2 and Home not tapped). Coins 3,270 on the Well Done screen. Split words (4 chunk pairs, 1 move each): EN\|GINE, DO\|MINO, SCRAB\|BLE, FLASH\|BACK. No reversed or cryptic bubbles, no chain lock. The +5 ad bubble did not appear. Wrong or wasted drags: 1 (a no-op drag while the board shifted, no cost); no failures, no ad incidents.
+
+Chunk pairs: EN\|GINE, DO\|MINO, SCRAB\|BLE, FLASH\|BACK
+
+| Theme | Words | Name |
+|---|---|---|
+| Unusual animals | QUOKKA, OKAPI, PANGOLIN and a fourth (not recorded) | NOT SEEN (early drags, name not captured) |
+| Family | UNCLE, SISTER, MOTHER, COUSIN | NOT SEEN (guessed FAMILY; name shot missed) |
+| Third early theme | not recorded | NOT SEEN (completed before the 3/13 count; reconstructed only) |
+| Car mechanic | OIL, TIRE, ENGINE (EN\|GINE), WRENCH | CAR MECHANIC (shown) |
+| Meat | PORK, LAMB, CHICKEN, BEEF | MEAT (shown) |
+| Dog | BULLDOG, BEAGLE, POODLE, PUG | DOG (shown) |
+| Emotions | JOY, ANGER, HOPE, FEAR | EMOTIONS (shown) |
+| Moving | JUMP, RUN, WALK, CRAWL | MOVING (shown) |
+| Board games | CHESS, DOMINO (DO\|MINO), SCRABBLE (SCRAB\|BLE), CHECKERS | GAME (shown; returned as a word to AT NIGHT) |
+| Books | DON QUIXOTE, ODYSSEY, HAMLET, MOBY DICK | BOOK (shown; returned as a word to AT NIGHT) |
+| Memories | NOSTALGIA, PHOTOGRAPH, CHILDHOOD, FLASHBACK (FLASH\|BACK) | MEMORIES (shown; returned as a word to HUMAN EXPERIENCE) |
+| Human experience | MEMORIES (returned), EMOTIONS (returned), THOUGHTS, DREAMS | HUMAN EXPERIENCE (shown) |
+| At night | MOON, BOOK (returned), GAME (returned), CANDLE | AT NIGHT (shown, final merge) |
+
+Notes: hierarchical again, and the final theme took two returned sub-themes (BOOK and GAME) plus MOON and CANDLE, a cross-category "at night" grouping. EMOTIONS and MEMORIES also returned as words into HUMAN EXPERIENCE alongside THOUGHTS and DREAMS. The names of the first three themes were not captured because those merges were played quickly (their rows are reconstructed from memory of the board and may be wrong). A seasonal event icon (an acorn in a ring with a "4d" timer, right edge of the screen) appeared for the first time on the Well Done screen of this level; not tapped (see features log).
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
@@ -1305,3 +1522,6 @@ Notes: no wrong drags. Two drags of TENDERLOIN onto the RIBEYE/SIRLOIN stack and
 | 37 | Chain lock counts completed themes | scratchpad/shots/c0.png, v2.png | The padlock number (3 on level 37) drops by one for each theme completed above the chain (3 -> 2 -> 1 -> gone); merges inside one half work freely. Words needed to finish the upper themes only drop in after the lock opens. |
 | 39 | Rewarded-ad "+5 MOVES" bubble fires from a nearby drag | scratchpad/shots/n2.png, ad2.png, ad5.png, ad10.png, o1.png | A drag next to the orange +5 MOVES bubble (a drag from TER toward MINAL, bubble was 200 px away) started a full-screen MAX test ad ("Congrats! You're seeing a test ad", countdown 9 s). It had no X at first; a top-left pill with a skip glyph and "Google Play" was in fact a Play Store link (opened a Play sheet, then the Play Store home with an info dialog; nothing installed). The game was brought back with an app launch; the ad then showed "Privacy Management" with GET, Interested, Not interested and an X at top right; the X closed it. Reward +5 moves (14 -> 18). |
 | 39 | EXPERT indicator after a HARD level | scratchpad/shots/wd39.png | Well Done after HARD level 39 shows a purple "EXPERT LEVEL 40" button with a pink octopus (reward of 39 was 60). |
+| 51 | Reversed-word bubbles | scratchpad/shots/r51b.png, a51d.png | Tutorial popup "Some bubbles contain reversed words. Look carefully!" (example ELPPA = APPLE), button "Got It". Reversed bubbles show their text in yellow with a left-arrow icon (EVAC = CAVE, RIFEK = KEFIR); they join their theme as the real word. |
+| 51 | Shell Streak unlocked | scratchpad/shots/p51.png, ss1b.png, ss2b.png | LEVEL 51 pre-level dialog opened with a dark overlay, banner "Shell Streak unlocked!" and a blue arrow. The Shell Streak row (pink shell icon, 5-segment bar, shell icons at segments 3 and 5, an (i) button) sits above "Select Boosters" (FREE green +extra bubble and purple +3 MOVES, 1 each). Tapping (i) opens a popup: pink shell with tick, open shell with the green extra-bubble booster (segment 3), golden shell with extra bubble + +3 MOVES (segment 5); text "Beat 5 levels without losing to get free boosters". Earned by winning levels in a row without losing (bar 0/5 at level 51); gives free boosters at 3 and 5; cost: nothing, no coin or purchase prompt; closed with its red X, tutorial needed no other action. |
+| 60 | Acorn event icon with 4-day timer | scratchpad/shots/h3.png | On the Well Done screen after level 60 a round icon (acorn in a green ring with a stopwatch badge "4d ...") appeared at the right edge below the Welcome! chest. Not tapped; looks like a timed seasonal event (the board decor also turned autumn: maple leaves and string lights). Nothing required. |
