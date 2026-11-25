@@ -48,6 +48,20 @@ v470-v473 (motion, materials, colors, things with)
 10. US vacation spots: ident 4 -> 2 or 3 now that Las Vegas, Hawaii, Disney World are in; link New York, Yellowstone, Niagara Falls, Disneyland.
 11. Overlaps worth a look: words_for_shiny keeps bright (now its own theme's topic word) and shares brilliant, dazzling, radiant, gleaming with words_for_bright; scented_products shares 18 of 39 with personal_care (trim sunscreen, mouthwash, toilet paper, cat litter, trash bags); flat_things holds landforms, flatfish, flatbreads and Netherlands/Kansas; manatee out of pink_things but still in pink_animals.
 
+### Calls on B2-B11 (Claude, on Simon's "fix all how you think best", 2026-11-25)
+
+- B2 cold_things: keep Julia's removal of polar bear and penguin; also take out the members that are places or fiction, not cold things (Alaska, Hoth and the like). igloo, winter and ice rink stay.
+- B3 winter_vehicles: keep the theme. Unlink snow tube. Where luge or bobsled is only the sport entry, add the sled sense (luge [sled], bobsled [sled]) and link that; skeleton stays out.
+- B4 winged_creatures: revert v470's mythical additions (fairy, dragon, Pegasus, phoenix, griffin, harpy, sphinx); winged_beasts covers them. Real animals only.
+- B5 sharp_things: unlink guillotine, bayonet, lance. Sword, dagger, knife, spear, arrow stay.
+- B6 two_wheelers: bikes, motorbikes, scooters and the like only: unlink the carts and carriages (chariot, hansom cab, sulky, gig, dogcart, pony cart, ox cart), hand truck and rickshaw.
+- B7 loose phrases: drop bad weather, hidden fees, lost passport, cracked windshield, squeaky brakes, slipping clutch, fuel leak, ketchup packet, bag search, random search (unlink; delete the entry when v461 made it and it is in no other theme). Fixed terms stay.
+- B8 synonym themes: prune as the review lists (entertaining, facetious, trendy, futuristic, pristine, primitive, precocious out; silly t2, ridiculous t3, mysterious t3, mature t3; unfamiliar and exotic t4; keep invincible and unbreakable, drop indestructible).
+- B9: grill (verb) and barbecue [meat] out of hot_things (link the appliance senses if they exist). Delete stubs left in no theme by v460-v473 that are loose phrases or duplicates (duplicates become aliases instead). license plate stays out of things_with_numbers. **Held for Simon** (each needs his explicit OK): nice and mammoth (raise the contract-dup-root baseline), Earth in things_with_layers (an allow-list key).
+- B10 US vacation spots: ident 3; link New York, Yellowstone, Niagara Falls, Disneyland (t1-t2).
+- B11: bright out of words_for_shiny; scented_products loses sunscreen, mouthwash, toilet paper, cat litter, trash bags, marker, eraser; flat_things loses Netherlands, Kansas, mesa, steppe; manatee out of pink_animals and into gray_things (t3).
+- A11 plants_with_spines: merge into thorny_plants (twin rule).
+
 ## C. Minor (fold into v474 unless Simon objects)
 
 - Regional gaps: dead battery (UK flat battery), out of gas (out of petrol), package tour (package holiday), medallion [taxi] US, spring break US, barber pole (barber's pole).
