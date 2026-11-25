@@ -567,6 +567,268 @@ Notes:
 - Decoys: FLOWER and BASKET (both fit spring and Easter), GARDEN, BLOSSOM; STAR (astronomy vs names); EARTH vs GARDEN; DIET vs GYM and HYDRATION (wellness vs fitness).
 - Level end: MASTERY 316 captured; autumn leaves still on the frame.
 
+## Level 21
+
+Themes: 8 (bar `0/8`). Moves: 36 at start, 9 left at the end. Mastery: 319. Reward: 30 coins (counter 1,530 -> 1,560); next button "LEVEL 22" (green), X2 and Home buttons (none tapped). Split words: 0. No booster used. NEW: chained bubbles (padlock chain splitting the board).
+
+| Theme | Words | Name |
+|---|---|---|
+| Elements / metals and gases | HELIUM, IRON, GOLD, OXYGEN | (guessed: ELEMENTS; only the praise "Incredible!" was caught) |
+| Zodiac signs | VIRGO, LEO, TAURUS, PISCES | (guessed: ZODIAC SIGNS; name not captured) |
+| Pinocchio | NOSE, GEPPETTO, PUPPET, WOODEN | (guessed: PINOCCHIO; it returned as the word PINOCCHIO) |
+| Cinderella | FAIRY, PRINCE, SLIPPER, PUMPKIN | (guessed: CINDERELLA; returned as the word CINDERELLA) |
+| Fairy tales | RAPUNZEL, PETER PAN, PINOCCHIO (returned word), CINDERELLA (returned word) | (guessed: FAIRY TALES; name not captured) |
+| Oils | COCONUT, SUNFLOWER, OLIVE, AVOCADO | (guessed: OILS; name not captured) |
+| Red things | CHERRY, BLOOD, TOMATO, ROSE | (guessed: RED; name not captured) |
+| Balkan countries | SERBIA, CROATIA, ROMANIA, BULGARIA | (guessed: BALKANS; last theme, the final merge was too fast to read the name) |
+
+Start board: about 20 bubbles split by a chain with a padlock numbered 3. Arrivals: SERBIA, FAIRY, PUPPET, PRINCE (after the first clears), SLIPPER, WOODEN, ROMANIA, PUMPKIN, CROATIA, BULGARIA, then the returned words PINOCCHIO and CINDERELLA.
+
+Notes:
+- Chained bubbles: tutorial text "Collect 3 bubbles to unlock. No merging across the chain." The lock number counted 3 -> 2 after the first theme -> 1 at 2/8 -> opened at 3/8, after which the two sections combined.
+- A floating "+5 MOVES" bubble with a video icon (rewarded ad) appeared from about 28 moves left onward. Never tapped.
+- Decoys: ROSE (red vs flowers), PETER PAN and RAPUNZEL (fairy tale vs Pinocchio/Cinderella), GOLD/IRON/OXYGEN/HELIUM all one theme (metals and gases together).
+- Level end: MASTERY 319 captured (dragburst), 9 moves left, no wrong drags.
+
+## Level 22
+
+Themes: 10 (bar `0/10`). Moves: 42 at start, 16 left at the end (one wrong drag, WINDY, cost 1 move; the usual +1 refunds seen). Mastery: 332. Reward: 30 coins (counter 1,560 -> 1,590); next button "LEVEL 23" (green), X2 and Home buttons (none tapped). Split words: 0. No booster used (the Hint magnifier icon animated by itself when idle; not tapped). Chained bubbles again (padlock 3, opened at 3/10).
+
+| Theme | Words | Name |
+|---|---|---|
+| Eye colours | GRAY, BLUE, BROWN, HAZEL | (guessed: EYE COLOURS; "Fantastic!" praise hid the name); did not return |
+| Rain | CLOUDS, SHOWERS, WET, PUDDLES | (guessed: RAIN; "Well Done!" praise hid the name); returned as the word RAINY |
+| Safety gear | GLOVES, HARD HAT, GLASSES, TOOLS | (guessed: SAFETY GEAR; "Well Done!" praise hid the name); did not return |
+| Weather | RAINY (returned word), FOGGY, CLEAR, WINDY | (guessed: WEATHER; name not captured); did not return |
+| Fruit | GUAVA, PEAR, MANGO, ORANGE | (guessed: FRUIT; name not captured); returned as the word JUICE |
+| Drinks | JUICE (returned word), SODA, TEA, LEMONADE | (guessed: DRINKS; name not captured); did not return |
+| Places for animals | SAFARI, ZOO, WILDLIFE, FARM | (guessed: ANIMALS; name not captured); did not return |
+| Dragon | SCALES, CLAWS, WINGS, FIRE BREATH | (guessed: DRAGON; name not captured); returned as the word DRAGON |
+| Unicorn | HORN, MANE, HORSE, MYTH | (guessed: UNICORN; name not captured); returned as the word UNICORN |
+| Mythical creatures | PHOENIX, MERMAID, UNICORN (returned word), DRAGON (returned word) | (guessed: MYTHICAL CREATURES; last theme, name not captured) |
+
+Start board: 24 bubbles; top section (above the chain) GUAVA, SODA, SAFARI, TEA, LEMONADE, ORANGE, WILDLIFE, CLOUDS, SHOWERS, TOOLS, WET, PUDDLES, FOGGY, GLOVES, HARD HAT, GLASSES; bottom section CLEAR, GRAY, BLUE, BROWN, HAZEL, PEAR, MANGO, WINDY. Arrivals after the first clear: SCALES, FIRE BREATH, HORN, FARM; later MYTH, PHOENIX, MERMAID; CLAWS, ZOO, WINGS, MANE, HORSE; then the returned words RAINY, JUICE, DRAGON, UNICORN.
+
+Notes:
+- Chain: lock 3 -> 2 after the first theme (eye colours) -> 1 after rain -> opened after safety gear (3/10). While locked only the lower section could merge with itself (eye colours), the top had to be merged within itself.
+- Returned-word chain: Rain -> RAINY joins Weather; Fruit -> JUICE joins Drinks; Dragon and Unicorn -> words that join Mythical creatures. Pairs of themes sharing a decoy: ORANGE (fruit vs drink), MYTH (unicorn vs mythical), WINGS (dragon vs phoenix).
+- Praise words ("Fantastic!", "Well Done!") cover the theme name on the orange 4-stack, so most names were not captured even with dragburst.
+- No "+5 MOVES" ad bubble seen this level.
+- Level end: MASTERY 332 captured (dragburst), autumn leaves still on the frame.
+
+## Level 23
+
+Themes: 9 (bar `0/9`). Moves: 42 at start, 8 left at the end (one wasted drag: GALLERY dragged onto the CURATOR/ARTIFACT stack did nothing and cost 1 move; the usual +1 refunds). Mastery: 345. Reward: 30 coins (counter 1,590 -> 1,620); next button is the red "HARD LEVEL 24" with the octopus (X2 and Home buttons not tapped). Split words: 5. No booster used.
+
+Chunk pairs: BUT\|TER, ARTI\|FACT, CHED\|DAR, GAL\|LERY, CAE\|SAR (five pairs, 10 teal chunk bubbles at the start; each join cost 1 move).
+
+| Theme | Words | Name |
+|---|---|---|
+| States of matter | SOLID, LIQUID, GAS, PLASMA | (guessed: STATES OF MATTER; name not captured); did not return |
+| Cheese | BRIE, CHEDDAR (CHED\|DAR), GOUDA, MOZZARELLA | (guessed: CHEESE; name not captured); did not return |
+| Dairy | MILK, CREAM, YOGURT, BUTTER (BUT\|TER) | (guessed: DAIRY; name not captured); did not return |
+| Salads | CAESAR (CAE\|SAR), COBB, GREEK, GARDEN | (guessed: SALADS; name not captured); did not return |
+| Nuts | ALMOND, PEANUT, HAZELNUT, WALNUT | NUTS (returned as the word NUTS) |
+| Shells | CLAM, TURTLE, COCONUT, NUTS (returned word) | (guessed: SHELL; the name flashed behind overlapping words) |
+| Theatre | ACTORS, PROPS, STAGE, CURTAIN | THEATER (returned as the word THEATER) |
+| Museum | CURATOR, ARTIFACT, EXHIBIT, LOUVRE | MUSEUM (returned as the word MUSEUM) |
+| Arts and culture | OPERA, MUSEUM (returned), THEATER (returned), GALLERY (GAL\|LERY) | (guessed: ARTS; last theme) |
+
+Start board: 26 bubbles incl. 10 chunk bubbles (teal), the most chunks so far. Arrivals: BRIE, GOUDA, CLAM, GARDEN, COCONUT, CREAM, then MOZZARELLA, ACTORS, PROPS, CURATOR, STAGE, TURTLE, CURTAIN, LOUVRE, plus the returned words NUTS, THEATER, MUSEUM.
+
+Notes:
+- Chunk bubbles in numbers: this level had five chunk pairs (BUTTER, ARTIFACT, CHEDDAR, GALLERY, CAESAR). Several chunk halves (BUT, ARTI, TER, DAR, FACT, CHED, LERY, GAL, CAE, SAR) were visible at once. A chunk joined to its partner took 1 move.
+- Returned-word chain: Nuts -> NUTS joins Shells; Theatre -> THEATER and Museum -> MUSEUM join Arts and culture. Decoys: COCONUT (nut vs shell), GALLERY (museum vs arts), LOUVRE and OPERA (arts vs museum/theatre), TURTLE/CLAM (sea animals vs shells), GARDEN (salad vs plants).
+- Level end: MASTERY 345 captured (dragburst), autumn leaves still on the frame.
+
+## Level 24 (HARD)
+
+Themes: 7 (bar `0/7`). Moves: 31 at start, 7 left at the end (one wrong drag, PUZZLE onto BRAIN TEASER, cost 1 move; the usual +1 refunds). Mastery: 357. Reward: 60 coins (HARD level; counter showed 1,650 on the Well Done screen, 1,620 before; the count may have been mid-animation); next button is a purple "EXPERT LEVEL 25" with a purple octopus (X2 and Home not tapped). Split words: 3. No booster used. HARD styling: red "LVL 24" tab with octopus, red booster bar, and a red "Hard Level" banner and octopus animation on entry.
+
+Chunk pairs: SU\|DOKU, STRA\|TEGY, RUS\|TING (each join cost 1 move).
+
+| Theme | Words | Name |
+|---|---|---|
+| Compass directions | NORTH, EAST, SOUTH, WEST | (guessed: DIRECTIONS; "Incredible!" praise hid the name); returned as the word COMPASS |
+| Navigation | COMPASS (returned word), GPS, MAP, STAR CHART | (guessed: NAVIGATION; "Splendid!" praise hid the name); did not return |
+| Weights | OUNCE, GRAM, KILOGRAM, POUND | (guessed: WEIGHT; "Splendid!" praise hid the name); did not return |
+| Restaurant | CHEF, MENU, TABLE, WAITER | (guessed: RESTAURANT; "Well Done!" praise hid the name); did not return |
+| Chemical reactions | DIGESTION, OXIDATION, COMBUSTION, RUSTING (RUS\|TING) | (guessed: CHEMICAL REACTIONS; "Cool!" praise hid the name); did not return |
+| Video games | ARCADE, SIMULATION, STRATEGY (STRA\|TEGY), PUZZLE | (guessed: GAMES; "Well Done!" praise hid the name); did not return |
+| Puzzles | SUDOKU (SU\|DOKU), ANAGRAM, RIDDLE, BRAIN TEASER | (guessed: PUZZLES; "Awesome!" praise hid the name); last theme |
+
+Start board: 29 bubbles incl. six teal chunk bubbles (SU, DOKU, STRA, TEGY, RUS, TING), the biggest board so far (bubbles overflowed the top edge while the HARD banner played, then settled). Arrivals: SUDOKU, EAST, NORTH, STRATEGY, RUSTING, then COMPASS, GPS, MAP, STAR CHART after the directions cleared.
+
+Notes:
+- Decoys: PUZZLE (puzzle vs game genres: it goes with ARCADE/SIMULATION/STRATEGY, not with ANAGRAM/RIDDLE), SUDOKU (puzzle, not a game genre here), DIGESTION (reaction vs body), POUND (weight), TABLE.
+- New: "EXPERT" level indicator on the Well Done screen (purple button with a purple octopus), after HARD (red/octopus). Not yet seen: the play screen for an expert level.
+- Level end: MASTERY 357 captured (dragburst), autumn leaves still on the frame.
+
+## Level 25 (EXPERT)
+
+Themes: 9 (bar `0/9`). Moves: 33 at start, 9 left at the end (no wrong drags; 24 merges for 9 themes, minus the +1 refunds). Mastery: 366. Reward: 90 coins on the Well Done screen (the counter read 1,710 on the Mastery screen, so it may already include the reward; earlier counters were 1,650 after level 24); next button is a plain green "LEVEL 26" (X2 and Home not tapped). Split words: 2. No booster used. EXPERT styling: purple "LVL 25" tab with a purple octopus, purple booster bar (as red for HARD). Chained bubbles again: padlock 4 (counts 4, 3, 2, 1, opened at 4/9).
+
+Chunk pairs: QUID\|DITCH, MAR\|KET (each join cost 1 move).
+
+| Theme | Words | Name |
+|---|---|---|
+| Elements (classical) | FIRE, AIR, EARTH, WATER | (guessed: ELEMENTS; "Fantastic!" praise hid the name) |
+| Magic / wizards | WAND, MAGIC, QUIDDITCH (QUID\|DITCH), HOGWARTS | (guessed: HARRY POTTER; name not captured) |
+| Insects | BEE, WASP, FLY, BUTTERFLY | (guessed: INSECTS; name not captured) |
+| Engine parts | PISTONS, SPARK PLUG, CYLINDER, CRANKSHAFT | (guessed: ENGINE; returned as the word ENGINE) |
+| Car | SEATBELT, ENGINE (returned word), WHEELS, TRANSMISSION | (guessed: CAR; name not captured) |
+| Trees | OAK, BIRCH, PINE, CEDAR | (guessed: TREES; name not captured) |
+| Trade | EXCHANGE, MARKET (MAR\|KET), GOODS, ROUTE | (guessed: TRADE; name not captured) |
+| Face | NOSE, BROW, MOUTH, EYES | (guessed: FACE; returned as the word FACE) |
+| Body | SKIN, HEART, BRAIN, FACE (returned word) | (guessed: BODY; last theme) |
+
+Start board: 26 bubbles; lock 4 in the middle. Top section: MAGIC, EARTH, AIR, FIRE, WAND, WASP, WATER, BUTTERFLY, HOGWARTS, QUID, DITCH, FLY, TRANSMISSION, BEE, SEATBELT, WHEELS; bottom section: OAK, CEDAR, BIRCH, PINE, BROW, MOUTH, NOSE, EYES. Arrivals: after elements, PISTONS, SKIN, EXCHANGE, KET, HEART and the first QUIDDITCH merge gave a new bubble; then MAR, BRAIN, GOODS, SPARK PLUG; CYLINDER, CRANKSHAFT, ROUTE; the returned words ENGINE, MARKET, FACE appeared when their sub-themes cleared.
+
+Notes:
+- Chain: the top (above the chain) section must be cleared of 4 themes (elements, magic, insects, engine) before the chain opens; bottom bubbles (trees, face) cannot join. Lock 4 -> 3 (after elements) -> 2 (after magic) -> 1 (after insects) -> opened (after engine, 4/9).
+- Returned-word chain: Engine parts -> ENGINE joins Car; Face -> FACE joins Body; Trade does not return (and the MARKET chunk pair clears inside Trade).
+- Decoys: HEART (body vs car parts), SKIN, BRAIN (organs vs face), EARTH/AIR (elements vs trees), WASP/BEE/FLY (insects vs magic), WANDS.
+- Magnet booster icon animated by itself once when idle, not used.
+- Level end: MASTERY 366 captured (dragburst), autumn leaves still on the frame.
+
+## Level 26
+
+Themes: 9 (bar `0/9`). Moves: 45 at start, 14 left at the last merge (the counter then ticked down to 6 on the Mastery screen as the bonus tally ran). Mastery: 380. Reward: 30 coins (counter shown 1,800 on the Mastery and Well Done screens; 1,710 before, so the level may add a moves bonus on top of the 30). Next button is a plain green "LEVEL 27" (X2 and Home not tapped). Split words: 6. No booster used. The plain level (no HARD/EXPERT tab: white "LVL 26" text, no octopus, no coloured tab). No chain this level.
+
+Chunk pairs: ICE\|BERG, MA\|JOR, NEC\|TAR, HAM\|MAM, PAIN\|TER, SU\|DOKU (each join cost 1 move; 12 teal chunk bubbles at the start, the most so far).
+
+| Theme | Words | Name |
+|---|---|---|
+| Military ranks | COLONEL, SERGEANT, GENERAL, MAJOR (MA\|JOR) | (guessed: MILITARY RANKS; "Awesome!" praise hid the name) |
+| Authors | TWAIN, DICKENS, WILDE, ORWELL | (guessed: AUTHORS; "Splendid!" praise hid the name) |
+| Polar / ice | ICEBERG (ICE\|BERG), GLACIER, POLAR BEAR, AURORA | (guessed: ARCTIC; name not captured) |
+| Bees | HONEY, NECTAR (NEC\|TAR), SWARM, HIVE | (guessed: BEES; name not captured) |
+| Spa | SAUNA, MASSAGE, HAMMAM (HAM\|MAM), BATHROBE | (guessed: SPA; name not captured) |
+| Puzzles | JIGSAW, MAZE, CIPHER, SUDOKU (SU\|DOKU) | (guessed: PUZZLES; name not captured) |
+| Contagion | INFECTION, OUTBREAK, SURVIVORS, UNDEAD | (guessed: ZOMBIE / PANDEMIC; name not captured) |
+| Painting | EASEL, CANVAS, BRUSH, GALLERY | (guessed: ART; returned as a painter picture) |
+| Artists | SCULPTOR, PAINTER (PAIN\|TER), MUSICIAN, painter picture (returned) | (guessed: ARTISTS; last theme, "Incredible" orange stack) |
+
+Start board: 33 bubbles (25 words and 12 chunk halves among them), the biggest board so far; the top of the board overflowed the screen while the bubbles settled (needs about 8 s). Arrivals: UNDEAD, SAUNA, DOKU/SU-style chunks surfaced as pieces cleared, BRUSH, MUSICIAN, GALLERY, CANVAS, HIVE, EASEL; returned picture after the painting theme.
+
+Notes:
+- Returned-item chain: Painting returned as a painter picture (a person with a palette) that joined Artists; no other returned items this level.
+- Decoys: SAUNA/MASSAGE/BATHROBE (spa, not bees), MAJOR (rank vs puzzle/author), GALLERY (art vs artist), UNDEAD, SURVIVORS (contagion vs author), HONEY.
+- A "+5 MOVES" rewarded-ad bubble floated on the board from 32 moves left on (not tapped).
+- The bar chunk pieces were counted in the 33 bubbles; merging a chunk with its partner gives a single word bubble that then joins its theme.
+- Level end: MASTERY 380 captured (dragburst), autumn leaves still on the frame.
+
+## Level 27
+
+Themes: 12 (bar `0/12`). Moves: 55 at start (first screenshot, before any drag), 9 left at the last merge. Mastery: 389 (captured with dragburst). Reward: 30 coins (counter 1,830 on the Mastery and Well Done screens). Next button is a plain green "LEVEL 28" (X2 and Home not tapped). Split words: 7. No booster used. Plain level (white "LVL 27" text, no octopus, no coloured tab). No chain this level.
+
+Chunk pairs: VOR\|TEX, HURRI\|CANE, THUN\|DER and CHIM\|NEY and MAN\|TEL at the start (five pairs on the first board), then RESER\|VATION and WAI\|TER arrived later; so 7 pairs in all (each join cost 1 move).
+
+| Theme | Words | Name |
+|---|---|---|
+| Fireplace | FIREWOOD, BRICK, MANTEL (MAN\|TEL), CHIMNEY (CHIM\|NEY) | (guessed: FIREPLACE PARTS; "Fantastic!" praise hid the name; returned as the word FIREPLACE) |
+| Storms | HAILSTORM, THUNDER (THUN\|DER), HURRICANE (HURRI\|CANE), TORNADO (returned) | (guessed: STORMS; name not captured) |
+| Tornado | TWISTER, DEBRIS, VORTEX (VOR\|TEX), FUNNEL | (guessed: TORNADO; "Incredible!" praise hid the name; returned as the word TORNADO) |
+| Stretchy | GUM, TAFFY, BUNGEE CORD, BALLOONS | (guessed: STRETCHY; name not captured; SCARF surfaced when it cleared, return item not identified) |
+| Restaurant | RESERVATION (RESER\|VATION), WAITER (WAI\|TER), MENU, TABLE | (guessed: RESTAURANT; returned as the word RESTAURANT) |
+| Cooking | GRILL, FRY, BOIL, BAKE | (guessed: COOKING; returned as the word COOKING) |
+| Restaurant (parent) | RESTAURANT, GASTRONOMY, CUISINE, COOKING | (guessed: FOOD; name not captured) |
+| Warmth | SCARF, GLOVES, HEATER, FIREPLACE | (guessed: KEEPING WARM; name not captured) |
+| Garden tools | TROWEL, WATERING, COMPOST, SEEDS (returned) | (guessed: GARDENING; name not captured) |
+| Seeds | SESAME, APPLE, SUNFLOWER, PUMPKIN | (guessed: SEEDS; returned as the word SEEDS) |
+| Bicycle | CHAIN, PEGS, PEDALS, KICKSTAND | (guessed: BICYCLE PARTS; returned as a bicycle picture) |
+| Motor bikes | DIRT BIKE, SCOOTER, MOTORBIKE, bicycle picture (returned) | (guessed: BIKES; last theme, orange stack) |
+
+Start board: 28 bubbles (23 words plus the chunk halves MAN, TEL and the rest), settled in about 4 s. Arrivals as themes cleared (GASTRONOMY was on the first board): BAKE, DEBRIS, KICKSTAND, FUNNEL, RESER/TER/WAI/VATION chunks, MENU, GRILL, MOTORBIKE, SCARF, FRY, PEDALS, SCOOTER, BOIL, CHAIN, CUISINE, GLOVES, PEGS, SEEDS, COOKING, RESTAURANT, FIREPLACE, TORNADO.
+
+Notes:
+- Returned-item chain (more than any earlier level): Fireplace parts -> FIREPLACE (joined Warmth), Tornado -> TORNADO (joined Storms), Restaurant words -> RESTAURANT (joined the food parent), Cooking -> COOKING (joined the food parent), Seeds -> SEEDS (joined Garden), Bicycle -> bicycle picture (joined Motor bikes).
+- Decoys/wrong drags (each cost 1 move): VORTEX onto THUNDER (VORTEX belongs to the tornado), TWISTER and DEBRIS onto the storm stack, GASTRONOMY onto the restaurant stack before RESTAURANT returned, CHAIN onto the food stack, PEGS onto the motor stack and the garden stack, SUNFLOWER onto the garden stack. PEGS finally joined CHAIN (bicycle).
+- A "+5 MOVES" rewarded-ad bubble floated on the board from 43 moves left to 20 (not tapped).
+- Move streak refunds: the counter stayed level on several merges (e.g. 39 to 39 after the stretchy theme cleared).
+- Level end: MASTERY 389 captured, autumn leaves on the frame.
+
+## Level 28
+
+Themes: 10 (bar `0/10`). Moves: 46 at start (first screenshot, before any drag), 16 left at the last merge (the Mastery screen then showed 9 as the bonus tally ran). Mastery: 402 (captured with dragburst). Reward: 30 coins (counter 1,860 on the Mastery and Well Done screens). Next button is a red "HARD LEVEL 29" with an octopus (the Well Done screen after level 28; X2 and Home not tapped). Split words: 6. No booster used. Plain level (white "LVL 28" text, no octopus). A chain with a padlock "3" splits the board (second chained level after 21; seen again here).
+
+Chunk pairs: PLAS\|MA, CHEE\|TAH, GIRAF\|FE, COT\|TON (all four on the first board), CRE\|DIT and HAR\|MONY (arrived later). Each join cost 1 move.
+
+| Theme | Words | Name |
+|---|---|---|
+| Fabrics | LINEN, WOOL, COTTON (COT\|TON), SILK | (guessed: FABRICS; orange stack, first theme cleared) |
+| Blood parts | PLATELETS, PLASMA (PLAS\|MA), HEMOGLOBIN, CELLS | (guessed: BLOOD; returned as the word BLOOD) |
+| Elephant | TRUNK, TUSKS, BIG EARS, TAIL | (guessed: ELEPHANT; returned as the word ELEPHANT) |
+| Red liquids | CHERRY JUICE, BLOOD, WINE, TOMATO SAUCE | (guessed: RED LIQUIDS / RED THINGS; name not captured) |
+| Music | SONG, MELODY, HARMONY (HAR\|MONY), RHYTHM | (guessed: MUSIC; returned as the word MUSIC) |
+| Money | CASH, CREDIT (CRE\|DIT), DEBIT, BITCOIN | (guessed: MONEY / PAYMENT; name not captured) |
+| US cities | BOSTON, DENVER, AUSTIN, RICHMOND | (guessed: CITIES; name not captured) |
+| Sculpture | STATUE, BUST, CARVING, RELIEF | (guessed: SCULPTURE; returned as the word SCULPTURE) |
+| Arts | LITERATURE, SCULPTURE (returned), MUSIC (returned), PAINTING | (guessed: ARTS; name not captured) |
+| Savanna animals | ELEPHANT (returned), CHEETAH (CHEE\|TAH), ZEBRA, GIRAFFE (GIRAF\|FE) | (guessed: AFRICAN ANIMALS; last theme, two green stacks merged) |
+
+Start board: 33 bubbles (24 words and 8 chunk halves at the start, plus the padlock chain across the middle). The chain and board take about 7 s to settle after the next-level tap. Arrivals: RHYTHM, AUSTIN, SONG, STATUE, BUST, MELODY, CASH, DEBIT, CARVING, RELIEF, BOSTON, DENVER, RICHMOND, BITCOIN, CRE/DIT, HAR/MONY (as pieces cleared and the board refilled from the top).
+
+Notes:
+- Chain mechanic: lock "3" at the start counted down 3 -> 2 (after Fabrics) -> 1 (after Blood parts) -> gone (after Elephant), and the bubbles below the chain (WINE, TOMATO SAUCE, GIRAFFE etc.) became reachable. Tutorial text not shown again (it was shown at level 21).
+- Returned-item chain: Blood parts -> BLOOD (joined Red liquids), Elephant -> ELEPHANT (joined Savanna), Music -> MUSIC and Sculpture -> SCULPTURE (both joined Arts).
+- Decoys: LITERATURE and PAINTING (stay till the Arts parent is ready), BLOOD (red liquids vs blood parts), CELLS, RELIEF vs CASH (money), RICHMOND/AUSTIN/DENVER (cities, not names).
+- Move streak refunds: 41 -> 41 at one point when the Fabrics orange stack cleared (counter held at 41 after the merge).
+- Level end: MASTERY 402, autumn leaves still on the frame.
+
+## Level 29
+
+Themes: 9 (bar `0/9`). Moves: 41 at start (first screenshot, before any drag), 10 left at the last merge (the Mastery screen showed 1 as the bonus tally ran). Mastery: 420 (captured with dragburst). Reward: 60 coins (HARD level reward, as levels 8, 19, 24; counter 1,890 on the Mastery and Well Done screens). Next button is a plain green "LEVEL 30" (X2 and Home not tapped). Split words: 6. No booster used. HARD level: red LVL tab with the octopus and a red booster bar. No chain this level.
+
+Chunk pairs: GLO\|VES, HEL\|MET, SUR\|GEON, COM\|PUTER, LAP\|TOP, CHIM\|NEY (VES in the board was the second half of GLO\|VES). Each join cost 1 move. Split words: 6.
+
+| Theme | Words | Name |
+|---|---|---|
+| Surgery | SURGEON (SUR\|GEON), SCALPEL, GLOVES (GLO\|VES), MASK | (guessed: OPERATING ROOM; name not captured) |
+| Fireplace | CHIMNEY (CHIM\|NEY), MATCHES, LOG, FIRE | (guessed: FIREPLACE; returned as the word FIREPLACE) |
+| Armour | ARMOR, SHIELD, SWORD, HELMET (HEL\|MET) | (guessed: KNIGHT / ARMOUR; name not captured) |
+| Genetics | MUTATION, DNA, GENOTYPE, HYBRID | (guessed: GENETICS; name not captured) |
+| Computers | SMARTPHONE, COMPUTER (COM\|PUTER), LAPTOP (LAP\|TOP), TABLET | (guessed: ELECTRONICS; name not captured) |
+| Print | BROCHURE, BOOK, MAGAZINE, NEWSPAPER | (guessed: PRINT MEDIA; name not captured) |
+| Piano | STRINGS, PEDAL, HAMMER, KEYS | (guessed: PIANO PARTS; name not captured) |
+| Living room | RUG, SOFA, CHAIR, FIREPLACE (returned) | (guessed: LIVING ROOM; name not captured) |
+| Safety / medicine | LIFEBUOY, SEATBELT, VACCINE, doctor picture (returned) | (guessed: SAFETY / HEALTH; last theme, orange stack with a purple core) |
+
+Start board: 33 bubbles (including teal chunk halves GLO, MET, VES, SUR, NEY, CHIM, HEL; the biggest start board so far, settled in about 8 s). Arrivals: GENOTYPE, GEON, TABLET, SCALPEL, GLOVES, a doctor picture (returned from the surgery theme), HYBRID, TOP, COM, BOOK, MAGAZINE, SMARTPHONE, COMPUTER, LAPTOP, FIREPLACE.
+
+Notes:
+- Returned-item chain: Surgery -> doctor picture (joins the last theme), Fireplace -> FIREPLACE (joins Living room).
+- Wrong drags (each cost 1 move): HYBRID dragged before it had a stack (no merge), FIREPLACE dragged onto the purple rug/sofa/chair stack (no merge; the fire then joined only after the stack went onto it), VACCINE onto the genetics stack, BROCHURE decoy vs print, SEATBELT and LIFEBUOY (not armour), TABLET and KEYS (computers vs piano), GLOVES (surgery vs armour).
+- No "+5 MOVES" ad bubble was seen this level.
+- Level end: MASTERY 420 captured, autumn leaves on the frame.
+
+## Level 30
+
+Themes: 10 (bar `0/10`). Moves: 49 at start (first screenshot, before any drag), 21 left at the last merge (the Mastery screen then showed 11 as the bonus tally ran). Mastery: 431 (captured with dragburst). Reward: 30 coins (counter 1,950 on the Mastery and Well Done screens). Next button is a plain green "LEVEL 31" (X2 and Home not tapped). Split words: 4. No booster used. Plain level (white "LVL 30" text, no octopus, no coloured tab). No chain this level.
+
+Chunk pairs: CO\|RAL (CORAL), MONI\|TOR (MONITOR), DIA\|MOND (DIAMOND) and SAL\|MON (SALMON; the MON half arrived late). Each join cost 1 move.
+
+| Theme | Words | Name |
+|---|---|---|
+| Gems | DIAMOND (DIA\|MOND), PEARL, ONYX, OPAL | (guessed: GEMS; returned as the word GEMSTONE) |
+| Money | CASH, COINS, CURRENCY, CENT | (guessed: MONEY; returned as the word MONEY) |
+| Fruit | GRAPE, APPLE, BANANA, PLUM | (guessed: FRUIT; name not captured) |
+| Egypt | NILE, PYRAMID, MUMMY, PHARAOH | (guessed: ANCIENT EGYPT; name not captured) |
+| Fish | SALMON (SAL\|MON), TUNA, HERRING, TILAPIA | (guessed: FISH; returned as a seahorse picture) |
+| Reef | CORAL (CO\|RAL), REEF, WATER, seahorse picture (returned) | (guessed: SEA / REEF; name not captured) |
+| Computer parts | MOUSE, KEYBOARD, MONITOR (MONI\|TOR), CPU | (guessed: COMPUTER; returned as the word HARDWARE) |
+| Computing | INTERNET, HARDWARE (returned), SOFTWARE, PROGRAMMING | (guessed: COMPUTING; name not captured) |
+| Library | BOOKS, SHELF, LIBRARIAN, SILENCE | (guessed: LIBRARY; name not captured) |
+| Jewelry | GEMSTONE (returned), JEWELRY, GOLD, MONEY (returned) | (guessed: JEWELRY; last theme, orange stack) |
+
+Start board: 28 bubbles (about 20 words and the chunk halves MOND, MONI, RAL, DIA, TOR, CO, SAL), settled in about 5 s. Arrivals as themes cleared: SAL/MON, SILENCE, SHELF, GEMSTONE, MONEY, BOOKS, LIBRARIAN, PYRAMID, MUMMY, PHARAOH, JEWELRY, TUNA, HERRING, SALMON, TILAPIA, seahorse picture, HARDWARE.
+
+Notes:
+- Returned-item chain: Gems -> GEMSTONE (joined Jewelry), Money -> MONEY (joined Jewelry), Fish -> seahorse picture (joined Reef), Computer parts -> HARDWARE (joined Computing). The returns for Fruit, Egypt and Library were not identified (they may have been other words that cleared on arrival, e.g. BOOKS); the order of the clears here is partly reconstructed.
+- Wrong drags: CORAL/REEF dragged to the wrong stack early, MONITOR/MOUSE decoys vs the computing theme, JEWELRY and GOLD (not money), SALMON/TUNA onto the reef stack. The Move Streak refund kept the counter level on a few merges (45 stayed 45 after PEARL and ONYX).
+- No "+5 MOVES" ad bubble was seen this level. No purchase offer appeared in levels 21 to 30.
+- Level end: MASTERY 431 captured, autumn leaves on the frame.
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
@@ -590,3 +852,5 @@ Notes:
 | 11 | Welcome Pack purchase offer | scratchpad/shots/u1.png | Popup 'Welcome Pack' appeared as level 11 loaded (51 moves, 0/12 themes): 2,000 coins, 2 each of Extra Bubbles/Magnet/Hint, 1H unlimited hearts, button 'YEN 520' with '70% OFF'. Real-money offer: NOT tapped; closed with its red X. |
 | 15 | Home button on the Well Done screen | scratchpad/shots/r15.png | A blue Home button with a red "!" badge now sits under LEVEL 16 and X2 (not tapped). |
 | 18 | HARD level indicator | scratchpad/shots/l5.png | The Well Done screen after level 18 shows the next button as a red "HARD LEVEL 19" with an octopus; level 19 itself has a red LVL tab with the octopus and a red booster bar (reward 60 coins, as level 8). |
+| 21 | Chained bubbles (padlock chain) | scratchpad/shots/chained_tutorial.png, t3.png | A chain with a numbered padlock splits the board; "Collect 3 bubbles to unlock. No merging across the chain." Lock counts down as themes clear. Also a floating "+5 MOVES" rewarded-ad bubble (not tapped). |
+| 24 | EXPERT level indicator | scratchpad/shots/wd24.png | The Well Done screen after HARD level 24 shows the next button as a purple "EXPERT LEVEL 25" with a purple octopus (HARD was red with a red octopus). |
