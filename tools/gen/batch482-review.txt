@@ -1,0 +1,162 @@
+Library batch v482 (for Simon's review): Nature & Earth, plants branch
+1. plants
+  linked: tree 27965 [plant] in plants (typicality 1): well known here; it was not linked
+  linked: flower 28286 [plant] in plants (typicality 1): well known here; it was not linked
+  linked: palm 1631 [tree] in plants (typicality 2): well known here; it was not linked
+  linked: sunflower 1696 in plants (typicality 2): well known here; it was not linked
+  linked: rose 1693 [flower] in plants (typicality 2): well known here; it was not linked
+2. houseplants
+  linked: geranium 1709 in houseplants (typicality 3): well known here; it was not linked
+  linked: cyclamen 30525 [plant] in houseplants (typicality 3): well known here; it was not linked
+3. flowering houseplants
+  linked: geranium 1709 in flowering_houseplants (typicality 2): well known here; it was not linked
+  linked: cyclamen 30525 [plant] in flowering_houseplants (typicality 3): well known here; it was not linked
+  linked: amaryllis 1751 [flower] in flowering_houseplants (typicality 3): well known here; it was not linked
+  linked: azalea 1738 [flower] in flowering_houseplants (typicality 4): well known here; it was not linked
+  linked: gardenia 1736 [flower] in flowering_houseplants (typicality 4): well known here; it was not linked
+  linked: bromeliad 1817 in flowering_houseplants (typicality 4): well known here; it was not linked
+4. vines and climbers
+  linked: pumpkin 403 [vegetable] in vines_and_climbers (typicality 3): well known here; it was not linked
+  linked: watermelon 97 in vines_and_climbers (typicality 4): well known here; it was not linked
+  linked: cucumber 400 in vines_and_climbers (typicality 4): well known here; it was not linked
+5. poisonous plants
+  linked: hydrangea 1729 in poisonous_plants (typicality 4): well known here; it was not linked
+  linked: rhododendron 30383 in poisonous_plants (typicality 4): well known here; it was not linked
+  linked: azalea 1738 [flower] in poisonous_plants (typicality 4): well known here; it was not linked
+6. grasses and reeds
+  typicality: wheat 658 in grasses_and_reeds 4 -> 3: well known: one of the first answers
+  typicality: barley 666 in grasses_and_reeds 4 -> 3: well known: one of the first answers
+  typicality: oats 657 in grasses_and_reeds 5 -> 4: well known: one of the first answers
+  linked: corn 406 [vegetable] in grasses_and_reeds (typicality 3): well known here; it was not linked
+  linked: rice 653 [grain] in grasses_and_reeds (typicality 3): well known here; it was not linked
+  linked: rye 667 [grain] in grasses_and_reeds (typicality 3): well known here; it was not linked
+7. medicinal plants
+  linked: thyme 734 in medicinal_plants (typicality 4): well known here; it was not linked
+  linked: foxglove 1732 in medicinal_plants (typicality 4): well known here; it was not linked
+  linked: lemon balm 18698 in medicinal_plants (typicality 4): well known here; it was not linked
+8. weeds
+  linked: daisy 1695 [flower] in weeds (typicality 3): well known here; it was not linked
+  linked: ivy 1770 [plant] in weeds (typicality 3): well known here; it was not linked
+  linked: morning glory 30592 [flower] in weeds (typicality 4): well known here; it was not linked
+  linked: mint 715 [herb] in weeds (typicality 4): well known here; it was not linked
+9. thorny plants
+  typicality: blackberry 49261 in thorny_plants 5 -> 3: well known: one of the first answers
+10. plant biology
+  linked: endosperm 30714 in plant_biology (typicality 5): well known here; it was not linked
+  linked: testa 60232 in plant_biology (typicality 5): well known here; it was not linked
+  linked: radicle 60233 in plant_biology (typicality 5): well known here; it was not linked
+  linked: plumule 60234 in plant_biology (typicality 5): well known here; it was not linked
+11. seeds and pips
+  out of seeds_and_pips: cotyledon 30713: a part of a seed (it stays in plant biology) (stays in plant_biology)
+  out of seeds_and_pips: endosperm 30714: a part of a seed (it moves to plant biology) (stays in plant_biology)
+  out of seeds_and_pips: testa 60232: a part of a seed (it moves to plant biology) (stays in plant_biology)
+  out of seeds_and_pips: radicle 60233: a part of a seed (it moves to plant biology) (stays in plant_biology)
+  out of seeds_and_pips: plumule 60234: a part of a seed (it moves to plant biology) (stays in plant_biology)
+  linked: nutmeg 740 [spice] in seeds_and_pips (typicality 4): well known here; it was not linked
+  linked: caraway 18705 in seeds_and_pips (typicality 4): well known here; it was not linked
+12. flowerless plants
+  linked: pine 1629 [tree] in flowerless_plants (typicality 3): well known here; it was not linked
+  linked: conifer 1672 in flowerless_plants (typicality 3): well known here; it was not linked
+  linked: spruce 1639 in flowerless_plants (typicality 4): well known here; it was not linked
+  linked: ginkgo 1665 in flowerless_plants (typicality 4): well known here; it was not linked
+13. heath and moor plants
+  linked: broom 59388 [plant] in heath_and_moor_plants (typicality 3): well known here; it was not linked
+  linked: juniper 1655 [tree] in heath_and_moor_plants (typicality 4): well known here; it was not linked
+  linked: sundew 1812 in heath_and_moor_plants (typicality 4): well known here; it was not linked
+  linked: cranberry 354 [red berry] in heath_and_moor_plants (typicality 4): well known here; it was not linked
+  linked: crowberry 17202 in heath_and_moor_plants (typicality 5): well known here; it was not linked
+14. crops (new)
+  new theme: crops "crops" under plants (after fiber_plants), pop 2, ident 2: a basic set with no list: grains, vegetables and fiber plants exist
+  linked: wheat 658 [cereal] in crops (typicality 1): a well-known member of the new theme
+  linked: corn 406 [vegetable] in crops (typicality 1): a well-known member of the new theme
+  linked: rice 653 [grain] in crops (typicality 1): a well-known member of the new theme
+  linked: potato 392 [vegetable] in crops (typicality 1): a well-known member of the new theme
+  linked: cotton 5038 in crops (typicality 2): a well-known member of the new theme
+  linked: barley 666 in crops (typicality 2): a well-known member of the new theme
+  linked: oats 657 in crops (typicality 2): a well-known member of the new theme
+  linked: tomato 110 [fruit] in crops (typicality 2): a well-known member of the new theme
+  linked: pumpkin 403 [vegetable] in crops (typicality 2): a well-known member of the new theme
+  linked: peanut 17350 [legume nut] in crops (typicality 2): a well-known member of the new theme
+  linked: soybean 17531 in crops (typicality 2): a well-known member of the new theme
+  linked: sugarcane 1792 in crops (typicality 2): a well-known member of the new theme
+  linked: carrot 391 [vegetable] in crops (typicality 2): a well-known member of the new theme
+  linked: sunflower 1696 in crops (typicality 3): a well-known member of the new theme
+  linked: cabbage 395 [vegetable] in crops (typicality 3): a well-known member of the new theme
+  linked: onion 393 [bulb vegetable] in crops (typicality 3): a well-known member of the new theme
+  linked: lettuce 394 [vegetable] in crops (typicality 3): a well-known member of the new theme
+  linked: strawberry 91 [berry] in crops (typicality 3): a well-known member of the new theme
+  linked: pea 17530 [vegetable] in crops (typicality 3): a well-known member of the new theme
+  linked: hay 31498 [dried grass] in crops (typicality 3): a well-known member of the new theme
+  linked: rye 667 [grain] in crops (typicality 3): a well-known member of the new theme
+  linked: grape 90 in crops (typicality 3): a well-known member of the new theme
+  linked: banana 88 [fruit] in crops (typicality 3): a well-known member of the new theme
+  linked: pineapple 96 in crops (typicality 3): a well-known member of the new theme
+  linked: olive 360 [fruit] in crops (typicality 3): a well-known member of the new theme
+  linked: hops 30595 [plant] in crops (typicality 4): a well-known member of the new theme
+  linked: flax 30676 [plant] in crops (typicality 4): a well-known member of the new theme
+  linked: canola 40099 in crops (typicality 4): a well-known member of the new theme
+  linked: lentil 17527 in crops (typicality 4): a well-known member of the new theme
+  linked: chickpea 17528 in crops (typicality 4): a well-known member of the new theme
+  linked: turnip 425 in crops (typicality 4): a well-known member of the new theme
+  linked: quinoa 665 [grain] in crops (typicality 4): a well-known member of the new theme
+  linked: cassava 435 [root crop] in crops (typicality 4): a well-known member of the new theme
+  linked: millet 682 [grain] in crops (typicality 4): a well-known member of the new theme
+  linked: sorghum 699 in crops (typicality 4): a well-known member of the new theme
+  linked: jute 68185 [plant] in crops (typicality 5): a well-known member of the new theme
+  new entry: alfalfa 68972 noun, common, familiarity 3: a common word that was not in the library
+  linked: alfalfa 68972 in crops (typicality 4): a common word that was not in the library
+  new entry: sugar beet 68973 noun, common, familiarity 4: a common word that was not in the library
+  linked: sugar beet 68973 in crops (typicality 4): a common word that was not in the library
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  crops: new -> "crops" pop 2 ident 2: 38 words, easy/middle/hard 13/12/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  flowering_houseplants: "flowering houseplants" pop 3 ident 3: 9 words, easy/middle/hard 2/3/4, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "flowering houseplants" pop 3 ident 3: 15 words, easy/middle/hard 3/5/7, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  flowerless_plants: "flowerless plants" pop 4 ident 4: 10 words, easy/middle/hard 2/2/6, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "flowerless plants" pop 4 ident 4: 14 words, easy/middle/hard 2/4/8, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  grasses_and_reeds: "grasses and reeds" pop 5 ident 4: 37 words, easy/middle/hard 2/7/28, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "grasses and reeds" pop 5 ident 4: 40 words, easy/middle/hard 2/12/26, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  heath_and_moor_plants: "heath and moor plants" pop 4 ident 4: 7 words, easy/middle/hard 0/4/3, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "heath and moor plants" pop 4 ident 4: 12 words, easy/middle/hard 0/5/7, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  houseplants: "houseplants" pop 2 ident 2: 59 words, easy/middle/hard 7/15/37, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "houseplants" pop 2 ident 2: 61 words, easy/middle/hard 7/17/37, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  medicinal_plants: "medicinal plants" pop 3 ident 3: 35 words, easy/middle/hard 7/10/18, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "medicinal plants" pop 3 ident 3: 38 words, easy/middle/hard 7/10/21, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  plant_biology: "plant biology" pop 2 ident 2: 42 words, easy/middle/hard 10/8/24, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "plant biology" pop 2 ident 2: 46 words, easy/middle/hard 10/8/28, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  plants: "plants" pop 1 ident 1: 60 words, easy/middle/hard 13/19/28, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "plants" pop 1 ident 1: 65 words, easy/middle/hard 18/19/28, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  poisonous_plants: "poisonous plants" pop 2 ident 2: 28 words, easy/middle/hard 4/6/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "poisonous plants" pop 2 ident 2: 31 words, easy/middle/hard 4/6/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  seeds_and_pips: "seeds and pips" pop 4 ident 4: 30 words, easy/middle/hard 9/11/10, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "seeds and pips" pop 4 ident 4: 27 words, easy/middle/hard 9/11/7, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  thorny_plants: "thorny plants" pop 3 ident 3: 43 words, easy/middle/hard 5/9/29, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "thorny plants" pop 3 ident 3: 43 words, easy/middle/hard 5/10/28, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  vines_and_climbers: "vines and climbers" pop 3 ident 3: 26 words, easy/middle/hard 3/9/14, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "vines and climbers" pop 3 ident 3: 29 words, easy/middle/hard 3/10/16, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  weeds: "weeds" pop 3 ident 2: 40 words, easy/middle/hard 4/5/31, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "weeds" pop 3 ident 2: 44 words, easy/middle/hard 4/7/33, theme difficulty 2, 4th-easiest band 2, gap 0.0
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 2: alfalfa 68972, sugar beet 68973
+Entries deleted 0: none
+library changes 123; entries changed 76; status set to rev 29; themes deleted 0; entries merged 0
+Checks: changed kinds: info:overlap 4833 -> 4834
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3234 -> 3235; gone none; new crops; theme indexes shift: from index 555 ("crops", was "plants_of_the_world") to the last index 3234
+Theme rows whose fields changed (parent compared by id): 13: plants (index 542 -> 542: counts [6,7,19,23,9] -> [8,10,19,23,9]); houseplants (index 543 -> 543: counts [1,6,15,26,11] -> [1,6,17,26,11]); flowering_houseplants (index 544 -> 544: counts [0,2,3,3,1] -> [0,3,5,6,1]); vines_and_climbers (index 546 -> 546: counts [0,3,9,11,3] -> [0,3,10,13,3]); poisonous_plants (index 549 -> 549: counts [1,3,6,15,3] -> [1,3,6,18,3]); grasses_and_reeds (index 551 -> 551: counts [0,2,7,18,10] -> [0,2,12,17,9]); medicinal_plants (index 552 -> 552: counts [0,7,10,14,4] -> [0,7,10,17,4]); weeds (index 553 -> 553: counts [1,3,5,16,15] -> [1,3,7,18,15]); thorny_plants (index 560 -> 561: counts [2,3,9,20,11] -> [2,3,10,20,10]); seeds_and_pips (index 561 -> 562: counts [2,7,11,2,9] -> [2,7,11,4,4], range [2,5] -> [2,4]); flowerless_plants (index 562 -> 563: counts [2,0,2,3,3] -> [2,0,4,5,3]); heath_and_moor_plants (index 563 -> 564: counts [0,0,4,4,1] -> [0,0,5,7,2], range [3,3] -> [3,4]); plant_biology (index 2449 -> 2450: counts [6,4,8,15,9] -> [6,4,8,15,13])
+Entry rows 61425 -> 61427; first row whose entry changed: 61425 (alfalfa 68972, was undefined); rows that moved: 0; added alfalfa 68972 (row 61425), sugar beet 68973 (row 61426); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100185 -> 100262; rows whose link count changed: 69
+Link-index shifts: from row 88 (pear 89) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 5, new 82, rating changed 4
+  gone (other than the deleted themes): seeds_and_pips: "cotyledon" (30713), seeds_and_pips: "endosperm" (30714), seeds_and_pips: "testa" (60232), seeds_and_pips: "radicle" (60233), seeds_and_pips: "plumule" (60234)
+  new: crops: "banana" (88), crops: "grape" (90), crops: "strawberry" (91), crops: "pineapple" (96), vines_and_climbers: "watermelon" (97), crops: "tomato" (110), heath_and_moor_plants: "cranberry" (354), crops: "olive" (360), crops: "carrot" (391), crops: "potato" (392), crops: "onion" (393), crops: "lettuce" (394), crops: "cabbage" (395), vines_and_climbers: "cucumber" (400), vines_and_climbers: "pumpkin" (403), crops: "pumpkin" (403), grasses_and_reeds: "corn" (406), crops: "corn" (406), crops: "turnip" (425), crops: "cassava" (435), grasses_and_reeds: "rice" (653), crops: "rice" (653), crops: "oats" (657), crops: "wheat" (658), crops: "quinoa" (665), crops: "barley" (666), grasses_and_reeds: "rye" (667), crops: "rye" (667), crops: "millet" (682), crops: "sorghum" (699), weeds: "mint" (715), medicinal_plants: "thyme" (734), seeds_and_pips: "nutmeg" (740), flowerless_plants: "pine" (1629), plants: "palm" (1631), flowerless_plants: "spruce" (1639), heath_and_moor_plants: "juniper" (1655), flowerless_plants: "ginkgo" (1665), flowerless_plants: "conifer" (1672), plants: "rose" (1693), weeds: "daisy" (1695), plants: "sunflower" (1696), crops: "sunflower" (1696), houseplants: "geranium" (1709), flowering_houseplants: "geranium" (1709), poisonous_plants: "hydrangea" (1729), medicinal_plants: "foxglove" (1732), flowering_houseplants: "gardenia" (1736), flowering_houseplants: "azalea" (1738), poisonous_plants: "azalea" (1738), flowering_houseplants: "amaryllis" (1751), weeds: "ivy" (1770), crops: "sugarcane" (1792), heath_and_moor_plants: "sundew" (1812), flowering_houseplants: "bromeliad" (1817), crops: "cotton" (5038), heath_and_moor_plants: "crowberry" (17202), crops: "peanut" (17350), crops: "lentil" (17527), crops: "chickpea" (17528), crops: "pea" (17530), crops: "soybean" (17531), medicinal_plants: "lemon balm" (18698), seeds_and_pips: "caraway" (18705), plants: "tree" (27965), plants: "flower" (28286), poisonous_plants: "rhododendron" (30383), houseplants: "cyclamen" (30525), flowering_houseplants: "cyclamen" (30525), weeds: "morning glory" (30592), crops: "hops" (30595), crops: "flax" (30676), plant_biology: "endosperm" (30714), crops: "hay" (31498), crops: "canola" (40099), heath_and_moor_plants: "broom" (59388), plant_biology: "testa" (60232), plant_biology: "radicle" (60233), plant_biology: "plumule" (60234), crops: "jute" (68185), crops: "alfalfa" (68972), crops: "sugar beet" (68973)
+  rating: grasses_and_reeds: "oats" (657) 3.8/5 -> 3.1/4, grasses_and_reeds: "wheat" (658) 3.1/4 -> 2.4/3, grasses_and_reeds: "barley" (666) 3.4/4 -> 2.7/3, thorny_plants: "blackberry" (49261) 3.8/5 -> 2.4/3
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 22 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 82 new links existed earlier and was removed (all 224 library versions and 189 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - vines and climbers: poison ivy and pea (overlap with ivy and sweet pea); weeds: grass (overlap with couch grass)
+  - medicinal plants: sage [herb] (sense-link then prefers plantain [herb] 50252 to plantain [weed] 50332 there)
+  - poisonous plants: ivy (overlap with poison ivy)
+
+For Simon:
+  1. The themes counted above include plant biology (Science & Tech): endosperm, testa, radicle and plumule move there from seeds and pips with cotyledon, which was there already (parts of a seed, not seeds or pips).
+  2. thorny plants: raspberry and prickly pear were planned here and came in with v474; only blackberry is rerated (5 -> 3, as raspberry).
+  3. plantain [weed] 50332 and plantain [herb] 50252 (Native American remedies) look like one plant: merge them?
+  4. Overlap note that stays: tree / tree fern in plants (different things).
