@@ -1,0 +1,181 @@
+Library batch v486 (for Simon's review): Nature & Earth, weather branch
+1. weather
+  linked: sunshine 31501 [sun] in weather (typicality 1): well known here; it was not linked
+  linked: temperature 31374 [weather] in weather (typicality 2): well known here; it was not linked
+  new entry: climate 68983 noun, common, familiarity 2: a common word that was not in the library
+  linked: climate 68983 in weather (typicality 3): a common word that was not in the library
+2. weather conditions
+  linked: hot 27978 [high temperature] in weather_conditions (typicality 1): well known here; it was not linked
+  linked: cold 39943 [temperature] in weather_conditions (typicality 1): well known here; it was not linked
+  linked: warm 31463 [not hot] in weather_conditions (typicality 1): well known here; it was not linked
+  linked: dry 67366 [no water] in weather_conditions (typicality 2): well known here; it was not linked
+  linked: wet 14811 [not dry] in weather_conditions (typicality 2): well known here; it was not linked
+  linked: freezing 39944 in weather_conditions (typicality 2): well known here; it was not linked
+  linked: mild 29166 in weather_conditions (typicality 3): well known here; it was not linked
+  linked: calm 21492 in weather_conditions (typicality 3): well known here; it was not linked
+  linked: sweltering 31440 in weather_conditions (typicality 4): well known here; it was not linked
+  linked: scorching 31439 in weather_conditions (typicality 4): well known here; it was not linked
+3. snow and ice
+  out of snow_and_ice: storm 1971 [bad weather]: any storm, not snow or ice (snowstorm stays) (stays in weather, storms, things_with_eyes, weather_conditions)
+  out of snow_and_ice: calve 39918: what a glacier does (calving), not a word for snow or ice (stays in antarctic_coast)
+  out of snow_and_ice: moraine 1964: rocks and earth, not ice (stays in landscapes, mountain_features, ice_features, mountains, trail_words)
+4. weather instruments
+  linked: satellite 7120 [space] in weather_instruments (typicality 3): well known here; it was not linked
+  linked: weather balloon 31307 in weather_instruments (typicality 2, shown "balloon"): well known here; it was not linked
+5. sky phenomena
+  linked: sunset 25417 [time of day] in sky_phenomena (typicality 1): well known here; it was not linked
+  linked: sunrise 25416 in sky_phenomena (typicality 1): well known here; it was not linked
+  linked: lightning 1973 [storm] in sky_phenomena (typicality 2): well known here; it was not linked
+  linked: full moon 41374 in sky_phenomena (typicality 2): well known here; it was not linked
+  linked: solar eclipse 41255 in sky_phenomena (typicality 3): well known here; it was not linked
+  linked: lunar eclipse 41256 in sky_phenomena (typicality 3): well known here; it was not linked
+  linked: comet 7113 [astronomy] in sky_phenomena (typicality 3): well known here; it was not linked
+6. dawn and dusk sights
+  linked: sunset 25417 [time of day] in sunrise_and_sunset_sights (typicality 1): well known here; it was not linked
+  linked: sunrise 25416 in sunrise_and_sunset_sights (typicality 1): well known here; it was not linked
+  linked: sunbeams 31433 in sunrise_and_sunset_sights (typicality 3): well known here; it was not linked
+  linked: moonrise 41379 in sunrise_and_sunset_sights (typicality 3): well known here; it was not linked
+  linked: mist 1986 [weather] in sunrise_and_sunset_sights (typicality 3): well known here; it was not linked
+  linked: dew 2013 in sunrise_and_sunset_sights (typicality 3): well known here; it was not linked
+  linked: silhouette 29286 in sunrise_and_sunset_sights (typicality 4): well known here; it was not linked
+7. night sky sights
+  linked: moon 7110 [satellite] in night_sky_sights (typicality 1): well known here; it was not linked
+  linked: star 7108 [sky] in night_sky_sights (typicality 1): well known here; it was not linked
+  linked: planet 7111 in night_sky_sights (typicality 2): well known here; it was not linked
+  linked: constellation 67277 in night_sky_sights (typicality 2): well known here; it was not linked
+  linked: Milky Way 7135 [galaxy] in night_sky_sights (typicality 2): well known here; it was not linked
+  linked: Big Dipper 41154 [asterism] in night_sky_sights (typicality 3): well known here; it was not linked
+  linked: comet 7113 [astronomy] in night_sky_sights (typicality 3): well known here; it was not linked
+  linked: satellite 7120 [space] in night_sky_sights (typicality 3): well known here; it was not linked
+  linked: Venus 20 [planet] in night_sky_sights (typicality 3): well known here; it was not linked
+8. rainy-day fun (new)
+  new theme: rainy_day_fun "rainy-day fun" under weather (after rain_words), pop 2, ident 2: a set two rival games have
+  linked: board game 67289 in rainy_day_fun (typicality 1): a well-known member of the new theme
+  linked: reading 16529 [pastime] in rainy_day_fun (typicality 1): a well-known member of the new theme
+  linked: movie 6363 in rainy_day_fun (typicality 1): a well-known member of the new theme
+  linked: video game 5825 in rainy_day_fun (typicality 2): a well-known member of the new theme
+  linked: jigsaw puzzle 5922 in rainy_day_fun (typicality 1): a well-known member of the new theme
+  linked: drawing 5856 in rainy_day_fun (typicality 2): a well-known member of the new theme
+  linked: nap 3665 in rainy_day_fun (typicality 2): a well-known member of the new theme
+  linked: hide-and-seek 5957 in rainy_day_fun (typicality 2): a well-known member of the new theme
+  linked: television 4572 in rainy_day_fun (typicality 2): a well-known member of the new theme
+  linked: Lego 5924 in rainy_day_fun (typicality 2): a well-known member of the new theme
+  linked: painting 5855 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: museum 2472 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: knitting 5847 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: bowling 5250 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: charades 45556 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: hot chocolate 227 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: dollhouse 5974 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: chess 5713 [board game] in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: library 2471 [building] in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: crossword 35040 [puzzle] in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: popcorn 6418 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: sewing 5849 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: karaoke 13856 in rainy_day_fun (typicality 3): a well-known member of the new theme
+  linked: puppet show 12362 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: origami 5852 [paper folding] in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: aquarium 10169 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: scrapbooking 5866 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: tea party 32594 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: yoga 15665 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: solitaire 5773 [card game] in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: crochet 5848 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: journaling 16122 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  linked: dominoes 5732 in rainy_day_fun (typicality 4): a well-known member of the new theme
+  new entry: baking 68984 [pastime] noun, common, familiarity 1: a common word that was not in the library
+  linked: baking 68984 [pastime] in rainy_day_fun (typicality 2): a common word that was not in the library
+  new entry: coloring book 68985 noun, common, familiarity 1: a common word that was not in the library
+  linked: coloring book 68985 in rainy_day_fun (typicality 2): a common word that was not in the library
+  new entry: pillow fort 68986 noun, common, familiarity 2: a common word that was not in the library
+  linked: pillow fort 68986 in rainy_day_fun (typicality 3): a common word that was not in the library
+9. things that block the sun (new)
+  new theme: things_that_block_the_sun "things that block the sun" under weather (after weather_conditions), pop 3, ident 3: a set a rival game has
+  linked: umbrella 4962 [rain shield] in things_that_block_the_sun (typicality 1): a well-known member of the new theme
+  linked: cloud 1970 [weather] in things_that_block_the_sun (typicality 1): a well-known member of the new theme
+  linked: curtain 12242 in things_that_block_the_sun (typicality 1): a well-known member of the new theme
+  linked: hat 4944 [headwear] in things_that_block_the_sun (typicality 1): a well-known member of the new theme
+  linked: tree 27965 [plant] in things_that_block_the_sun (typicality 2): a well-known member of the new theme
+  linked: blinds 23146 in things_that_block_the_sun (typicality 2): a well-known member of the new theme
+  linked: baseball cap 24678 in things_that_block_the_sun (typicality 2): a well-known member of the new theme
+  linked: tent 3023 [shelter] in things_that_block_the_sun (typicality 2): a well-known member of the new theme
+  linked: roof 23245 [house] in things_that_block_the_sun (typicality 2): a well-known member of the new theme
+  linked: parasol 5004 [sunshade] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: awning 48509 [tent] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: shutters 23507 in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: visor 24701 [hat] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: wall 24063 [building] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: fog 1974 in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: smoke 30277 [fire] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: leaf 30033 in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: moon 7110 [satellite] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: eclipse 7131 [space] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: mountain 1894 [landform] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: skyscraper 2461 in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: canopy 30037 [forest] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: hood 20827 [clothing] in things_that_block_the_sun (typicality 3): a well-known member of the new theme
+  linked: tarp 3032 [waterproof sheet] in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: pergola 1876 in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: gazebo 1862 in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: porch 6614 in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: sombrero 24681 [hat] in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: smog 2012 in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: eyelid 3204 in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: veil 5008 in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: bonnet 24692 [hat] in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: hedge 1830 [garden] in things_that_block_the_sun (typicality 4): a well-known member of the new theme
+  linked: marquee 12803 [tent] in things_that_block_the_sun (typicality 5): a well-known member of the new theme
+meanings and kin
+  baking 28324: gloss "" -> "very hot": its text is now shared with baking [pastime]
+  kin: baking 68984 [pastime] <-> bake 917: one word family
+  kin: baking 68984 [pastime] <-> baker 20056 [job]: one word family
+  kin: baking 68984 [pastime] <-> bakery 129: one word family
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  night_sky_sights: "night sky sights" pop 3 ident 3: 12 words, easy/middle/hard 3/3/6, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "night sky sights" pop 3 ident 3: 21 words, easy/middle/hard 8/7/6, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  rainy_day_fun: new -> "rainy-day fun" pop 2 ident 2: 36 words, easy/middle/hard 12/14/10, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  sky_phenomena: "sky phenomena" pop 3 ident 3: 49 words, easy/middle/hard 6/8/35, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "sky phenomena" pop 3 ident 3: 56 words, easy/middle/hard 10/11/35, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  snow_and_ice: "snow and ice" pop 2 ident 3: 63 words, easy/middle/hard 16/18/29, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "snow and ice" pop 2 ident 3: 60 words, easy/middle/hard 15/18/27, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  sunrise_and_sunset_sights: "dawn and dusk sights" pop 4 ident 4: 9 words, easy/middle/hard 0/2/7, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "dawn and dusk sights" pop 4 ident 4: 16 words, easy/middle/hard 2/6/8, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  things_that_block_the_sun: new -> "things that block the sun" pop 3 ident 3: 34 words, easy/middle/hard 9/14/11, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  weather: "weather" pop 1 ident 1: 68 words, easy/middle/hard 27/21/20, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "weather" pop 1 ident 1: 71 words, easy/middle/hard 29/22/20, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  weather_conditions: "weather conditions" pop 1 ident 1: 24 words, easy/middle/hard 16/6/2, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "weather conditions" pop 1 ident 1: 34 words, easy/middle/hard 22/8/4, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  weather_instruments: "weather instruments" pop 4 ident 2: 42 words, easy/middle/hard 4/6/32, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "weather instruments" pop 4 ident 2: 44 words, easy/middle/hard 5/7/32, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 4: climate 68983, baking 68984, coloring book 68985, pillow fort 68986
+Entries deleted 0: none
+library changes 179; entries changed 110; status set to rev 58; themes deleted 0; entries merged 0
+Checks: changed kinds: info:clash-large 48 -> 49, info:orphan 284 -> 283, info:overlap 4836 -> 4838
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3244 -> 3246; gone none; new rainy_day_fun, things_that_block_the_sun; theme indexes shift: from index 606 ("rainy_day_fun", was "wind_words") to the last index 3245
+Theme rows whose fields changed (parent compared by id): 7: weather (index 604 -> 604: counts [9,19,24,13,7] -> [10,20,25,13,7]); weather_conditions (index 608 -> 609: counts [7,9,6,2,0] -> [10,12,8,4,0], range [1,3] -> [1,4]); snow_and_ice (index 611 -> 613: counts [6,10,18,13,17] -> [6,9,18,11,17]); weather_instruments (index 613 -> 615: counts [1,3,6,4,28] -> [1,4,7,4,28]); sky_phenomena (index 618 -> 620: counts [3,3,8,10,25] -> [5,5,12,10,25], range [2,5] -> [1,5]); sunrise_and_sunset_sights (index 620 -> 622: counts [0,0,2,3,4] -> [2,0,7,4,4], range [4,5] -> [3,5]); night_sky_sights (index 621 -> 623: counts [2,1,3,1,5] -> [4,4,7,1,5], range [3,5] -> [1,5])
+Entry rows 61436 -> 61441; first row whose entry changed: 5638 (video game 5825, was gamer 5826); rows that moved: 55798; added video game 5825 (row 5638), climate 68983 (row 61437), baking 68984 (row 61438), coloring book 68985 (row 61439), pillow fort 68986 (row 61440); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100639 -> 100744; rows whose link count changed: 101
+Link-index shifts: from row 20 (Earth 21) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 3, new 108, rating changed 0
+  gone (other than the deleted themes): snow_and_ice: "moraine" (1964), snow_and_ice: "storm" (1971), snow_and_ice: "calve" (39918)
+  new: night_sky_sights: "Venus" (20), rainy_day_fun: "hot chocolate" (227), things_that_block_the_sun: "hedge" (1830), things_that_block_the_sun: "gazebo" (1862), things_that_block_the_sun: "pergola" (1876), things_that_block_the_sun: "mountain" (1894), things_that_block_the_sun: "cloud" (1970), sky_phenomena: "lightning" (1973), things_that_block_the_sun: "fog" (1974), sunrise_and_sunset_sights: "mist" (1986), things_that_block_the_sun: "smog" (2012), sunrise_and_sunset_sights: "dew" (2013), things_that_block_the_sun: "skyscraper" (2461), rainy_day_fun: "library" (2471), rainy_day_fun: "museum" (2472), things_that_block_the_sun: "tent" (3023), things_that_block_the_sun: "tarp" (3032), things_that_block_the_sun: "eyelid" (3204), rainy_day_fun: "nap" (3665), rainy_day_fun: "television" (4572), things_that_block_the_sun: "hat" (4944), things_that_block_the_sun: "umbrella" (4962), things_that_block_the_sun: "parasol" (5004), things_that_block_the_sun: "veil" (5008), rainy_day_fun: "bowling" (5250), rainy_day_fun: "chess" (5713), rainy_day_fun: "dominoes" (5732), rainy_day_fun: "solitaire" (5773), rainy_day_fun: "video game" (5825), rainy_day_fun: "knitting" (5847), rainy_day_fun: "crochet" (5848), rainy_day_fun: "sewing" (5849), rainy_day_fun: "origami" (5852), rainy_day_fun: "painting" (5855), rainy_day_fun: "drawing" (5856), rainy_day_fun: "scrapbooking" (5866), rainy_day_fun: "jigsaw puzzle" (5922), rainy_day_fun: "Lego" (5924), rainy_day_fun: "hide-and-seek" (5957), rainy_day_fun: "dollhouse" (5974), rainy_day_fun: "movie" (6363), rainy_day_fun: "popcorn" (6418), things_that_block_the_sun: "porch" (6614), night_sky_sights: "star" (7108), night_sky_sights: "moon" (7110), things_that_block_the_sun: "moon" (7110), night_sky_sights: "planet" (7111), sky_phenomena: "comet" (7113), night_sky_sights: "comet" (7113), weather_instruments: "satellite" (7120), night_sky_sights: "satellite" (7120), things_that_block_the_sun: "eclipse" (7131), night_sky_sights: "Milky Way" (7135), rainy_day_fun: "aquarium" (10169), things_that_block_the_sun: "curtain" (12242), rainy_day_fun: "puppet show" (12362), things_that_block_the_sun: "marquee" (12803), rainy_day_fun: "karaoke" (13856), weather_conditions: "wet" (14811), rainy_day_fun: "yoga" (15665), rainy_day_fun: "journaling" (16122), rainy_day_fun: "reading" (16529), things_that_block_the_sun: "hood" (20827), weather_conditions: "calm" (21492), things_that_block_the_sun: "blinds" (23146), things_that_block_the_sun: "roof" (23245), things_that_block_the_sun: "shutters" (23507), things_that_block_the_sun: "wall" (24063), things_that_block_the_sun: "baseball cap" (24678), things_that_block_the_sun: "sombrero" (24681), things_that_block_the_sun: "bonnet" (24692), things_that_block_the_sun: "visor" (24701), sky_phenomena: "sunrise" (25416), sunrise_and_sunset_sights: "sunrise" (25416), sky_phenomena: "sunset" (25417), sunrise_and_sunset_sights: "sunset" (25417), things_that_block_the_sun: "tree" (27965), weather_conditions: "hot" (27978), weather_conditions: "mild" (29166), sunrise_and_sunset_sights: "silhouette" (29286), things_that_block_the_sun: "leaf" (30033), things_that_block_the_sun: "canopy" (30037), things_that_block_the_sun: "smoke" (30277), weather_instruments: "balloon" (31307), weather: "temperature" (31374), sunrise_and_sunset_sights: "sunbeams" (31433), weather_conditions: "scorching" (31439), weather_conditions: "sweltering" (31440), weather_conditions: "warm" (31463), weather: "sunshine" (31501), rainy_day_fun: "tea party" (32594), rainy_day_fun: "crossword" (35040), weather_conditions: "cold" (39943), weather_conditions: "freezing" (39944), night_sky_sights: "Big Dipper" (41154), sky_phenomena: "solar eclipse" (41255), sky_phenomena: "lunar eclipse" (41256), sky_phenomena: "full moon" (41374), sunrise_and_sunset_sights: "moonrise" (41379), rainy_day_fun: "charades" (45556), things_that_block_the_sun: "awning" (48509), night_sky_sights: "constellation" (67277), rainy_day_fun: "board game" (67289), weather_conditions: "dry" (67366), weather: "climate" (68983), rainy_day_fun: "baking" (68984), rainy_day_fun: "coloring book" (68985), rainy_day_fun: "pillow fort" (68986)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 20 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 108 new links existed earlier and was removed (all 228 library versions and 197 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - things that block the sun: sunglasses, sun hat, sunscreen (they hold the word of the theme name), cowboy hat (overlap with hat)
+  - dawn and dusk sights: Venus (overlap with Belt of Venus)
+  - weather conditions: hail and sleet (nouns; the theme shows adjectives)
+
+For Simon:
+  1. weather conditions had no hot, cold, warm, dry or wet, and night sky sights no star or moon; both gain them.
+  2. storm [bad weather] leaves snow and ice (snowstorm stays), with calve (calving) and moraine (rocks and earth).
+  3. baking [pastime] is new: the only entry was baking (very hot), which gets its gloss. It is kin with bake, baker and bakery, so the family's clash group has 9 words (clash-large, info; real look-alikes).
+  4. Overlap notes that stay: lightning / ball lightning, star / shooting star (different things).
+  5. video game was in no theme and is linked in rainy-day fun.
