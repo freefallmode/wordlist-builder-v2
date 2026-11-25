@@ -1,0 +1,204 @@
+Library batch v484 (for Simon's review): Nature & Earth, landscapes branch
+1. landscapes
+  linked: forest 28392 [woodland] in landscapes (typicality 1): well known here; it was not linked
+  linked: jungle 28105 [forest] in landscapes (typicality 2): well known here; it was not linked
+  linked: coast 28191 in landscapes (typicality 2): well known here; it was not linked
+2. mountain features
+  out of mountain_features: avalanche 43543 [skiing]: something that happens, not a feature of the land (stays in skiing_words, snow_and_ice, natural_disasters, mountains, loud_things, mountaineering_words, ski_resort, hiking_dangers)
+  linked: cave 1913 [rock hollow] in mountain_features (typicality 3): well known here; it was not linked
+  linked: waterfall 1914 in mountain_features (typicality 3): well known here; it was not linked
+  linked: snowcap 32089 in mountain_features (typicality 3): well known here; it was not linked
+3. river features
+  linked: current 31128 [water] in river_features (typicality 2): well known here; it was not linked
+  linked: island 1910 [landmass] in river_features (typicality 3): well known here; it was not linked
+  linked: canyon 1903 in river_features (typicality 3): well known here; it was not linked
+  linked: gorge 1928 in river_features (typicality 3): well known here; it was not linked
+  linked: channel 30964 [water] in river_features (typicality 4): well known here; it was not linked
+4. desert features
+  linked: sand 2063 [sediment] in desert_features (typicality 1): well known here; it was not linked
+  linked: canyon 1903 in desert_features (typicality 2): well known here; it was not linked
+  linked: cliff 1906 in desert_features (typicality 3): well known here; it was not linked
+  linked: plateau 1918 [landform] in desert_features (typicality 3): well known here; it was not linked
+5. ice features
+  out of ice_features: calve 39918: something that happens (calving), not a feature (stays in antarctic_coast, snow_and_ice)
+  linked: snowdrift 31290 in ice_features (typicality 3): well known here; it was not linked
+6. cave features
+  linked: tunnel 7381 [structure] in cave_features (typicality 2): well known here; it was not linked
+  linked: pool 32114 [water] in cave_features (typicality 3): well known here; it was not linked
+  linked: boulder 2052 in cave_features (typicality 3): well known here; it was not linked
+7. flat landscapes
+  field 28409: fam 3 -> 1: a well-known word: easier than its rating
+  linked: field 28409 [open land] in flat_landscapes (typicality 2): well known here; it was not linked
+  linked: meadow 1919 in flat_landscapes (typicality 2): well known here; it was not linked
+  linked: desert 1907 [wasteland] in flat_landscapes (typicality 2): well known here; it was not linked
+  linked: marsh 1925 [wetland] in flat_landscapes (typicality 3): well known here; it was not linked
+  linked: floodplain 30866 in flat_landscapes (typicality 4): well known here; it was not linked
+8. bodies of water
+  bay 28144: fam 4 -> 2: a well-known word: easier than its rating
+  linked: puddle 31213 in bodies_of_water (typicality 2): well known here; it was not linked
+  linked: spring 32113 [water source] in bodies_of_water (typicality 3): well known here; it was not linked
+  linked: moat 6668 in bodies_of_water (typicality 4): well known here; it was not linked
+9. Scottish landscape words
+  out of scottish_landscape_words: tarn 1963 [mountain lake]: a northern English word (a Scottish one is a lochan) (stays in landscapes, mountain_features, bodies_of_water, trail_words, mountains)
+  cirque 30847 in scottish_landscape_words: shown null -> "corrie": the Scottish word for it, as the note of this category says
+10. rock formations (new)
+  new theme: rock_formations "rock formations" under landscapes (after cave_features), pop 3, ident 3: a set a rival game has
+  linked: cliff 1906 in rock_formations (typicality 1): a well-known member of the new theme
+  linked: canyon 1903 in rock_formations (typicality 2): a well-known member of the new theme
+  linked: cave 1913 [rock hollow] in rock_formations (typicality 2): a well-known member of the new theme
+  linked: boulder 2052 in rock_formations (typicality 2): a well-known member of the new theme
+  linked: ridge 1930 [landform] in rock_formations (typicality 2): a well-known member of the new theme
+  linked: stalactite 30922 in rock_formations (typicality 2): a well-known member of the new theme
+  linked: gorge 1928 in rock_formations (typicality 2): a well-known member of the new theme
+  linked: stalagmite 30923 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: mesa 1950 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: natural arch 31088 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: pinnacle 30856 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: crag 30844 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: outcrop 1960 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: sea arch 31076 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: grotto 30925 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: geode 2086 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: sea stack 31002 in rock_formations (typicality 3): a well-known member of the new theme
+  linked: butte 1962 in rock_formations (typicality 4): a well-known member of the new theme
+  linked: escarpment 1957 in rock_formations (typicality 4): a well-known member of the new theme
+  linked: tor 30860 in rock_formations (typicality 4): a well-known member of the new theme
+  linked: blowhole 50163 [coast] in rock_formations (typicality 4): a well-known member of the new theme
+  linked: headland 31074 in rock_formations (typicality 4): a well-known member of the new theme
+  linked: lava tube 30939 in rock_formations (typicality 4): a well-known member of the new theme
+  linked: scree 30850 in rock_formations (typicality 4): a well-known member of the new theme
+  linked: inselberg 30892 in rock_formations (typicality 5): a well-known member of the new theme
+  linked: hoodoo 30887 in rock_formations (typicality 5): a well-known member of the new theme
+  linked: buttress 50329 [mountain] in rock_formations (typicality 5): a well-known member of the new theme
+  linked: yardang 60301 in rock_formations (typicality 5): a well-known member of the new theme
+  linked: flowstone 30927 in rock_formations (typicality 5): a well-known member of the new theme
+  new entry: monolith 68980 noun, common, familiarity 3: a common word that was not in the library
+  linked: monolith 68980 in rock_formations (typicality 3): a common word that was not in the library
+11. water sources (new)
+  new theme: water_sources "water sources" under landscapes (after bodies_of_water), pop 3, ident 2: a set a rival game has
+  linked: river 1908 [water] in water_sources (typicality 1): a well-known member of the new theme
+  linked: lake 1909 in water_sources (typicality 1): a well-known member of the new theme
+  linked: rain 1965 [weather] in water_sources (typicality 1): a well-known member of the new theme
+  linked: well 32112 [water source] in water_sources (typicality 1): a well-known member of the new theme
+  linked: spring 32113 [water source] in water_sources (typicality 2): a well-known member of the new theme
+  linked: faucet 16278 in water_sources (typicality 1): a well-known member of the new theme
+  linked: stream 30152 [woodland] in water_sources (typicality 2): a well-known member of the new theme
+  linked: pond 1841 [garden water] in water_sources (typicality 2): a well-known member of the new theme
+  linked: fountain 1858 [garden feature] in water_sources (typicality 2): a well-known member of the new theme
+  linked: fire hydrant 38366 in water_sources (typicality 2): a well-known member of the new theme
+  linked: sink 23117 in water_sources (typicality 2): a well-known member of the new theme
+  linked: hose 1844 [pipe] in water_sources (typicality 2): a well-known member of the new theme
+  linked: shower 16272 [bathroom] in water_sources (typicality 3): a well-known member of the new theme
+  linked: snow 1967 [weather] in water_sources (typicality 3): a well-known member of the new theme
+  linked: reservoir 7421 in water_sources (typicality 3): a well-known member of the new theme
+  linked: pump 7389 [machine] in water_sources (typicality 3): a well-known member of the new theme
+  linked: glacier 1911 [ice] in water_sources (typicality 3): a well-known member of the new theme
+  linked: oasis 1937 [desert] in water_sources (typicality 3): a well-known member of the new theme
+  linked: creek 30874 in water_sources (typicality 3): a well-known member of the new theme
+  linked: dam 7380 [barrier] in water_sources (typicality 3): a well-known member of the new theme
+  linked: sprinkler 1846 in water_sources (typicality 3): a well-known member of the new theme
+  linked: cloud 1970 [weather] in water_sources (typicality 3): a well-known member of the new theme
+  linked: pipe 23780 [tube] in water_sources (typicality 3): a well-known member of the new theme
+  linked: aquifer 31992 in water_sources (typicality 4): a well-known member of the new theme
+  linked: iceberg 29374 in water_sources (typicality 4): a well-known member of the new theme
+  linked: dew 2013 in water_sources (typicality 4): a well-known member of the new theme
+  linked: brook 30873 in water_sources (typicality 4): a well-known member of the new theme
+  linked: geyser 1938 [landform] in water_sources (typicality 4): a well-known member of the new theme
+  linked: snowmelt 31999 in water_sources (typicality 4): a well-known member of the new theme
+  linked: fog 1974 in water_sources (typicality 4): a well-known member of the new theme
+  new entry: borehole 68981 noun, common, familiarity 4: a common word that was not in the library
+  linked: borehole 68981 in water_sources (typicality 4): a common word that was not in the library
+12. countryside (new)
+  new theme: countryside "countryside" under landscapes (after flat_landscapes), pop 2, ident 2: an everyday set with no list
+  linked: farm 27964 in countryside (typicality 1): a well-known member of the new theme
+  linked: field 28409 [open land] in countryside (typicality 1): a well-known member of the new theme
+  linked: tractor 3097 in countryside (typicality 1): a well-known member of the new theme
+  linked: cow 149 [animal] in countryside (typicality 1): a well-known member of the new theme
+  linked: sheep 151 [farm animal] in countryside (typicality 1): a well-known member of the new theme
+  linked: horse 153 [animal] in countryside (typicality 2): a well-known member of the new theme
+  linked: barn 2467 [farm building] in countryside (typicality 2): a well-known member of the new theme
+  linked: village 38481 in countryside (typicality 2): a well-known member of the new theme
+  linked: hill 1896 [rise of land] in countryside (typicality 2): a well-known member of the new theme
+  linked: meadow 1919 in countryside (typicality 2): a well-known member of the new theme
+  linked: cottage 116 [small house] in countryside (typicality 2): a well-known member of the new theme
+  linked: wildflower 32094 in countryside (typicality 2): a well-known member of the new theme
+  linked: gate 1842 [garden] in countryside (typicality 3): a well-known member of the new theme
+  linked: stream 30152 [woodland] in countryside (typicality 3): a well-known member of the new theme
+  linked: footpath 30158 in countryside (typicality 3): a well-known member of the new theme
+  linked: hedge 1830 [garden] in countryside (typicality 3): a well-known member of the new theme
+  linked: windmill 2475 [building] in countryside (typicality 3): a well-known member of the new theme
+  linked: hay bale 38169 in countryside (typicality 3): a well-known member of the new theme
+  linked: haystack 38170 in countryside (typicality 3): a well-known member of the new theme
+  linked: scarecrow 1857 [field figure] in countryside (typicality 3): a well-known member of the new theme
+  linked: fence 1832 in countryside (typicality 3): a well-known member of the new theme
+  linked: fox 996 in countryside (typicality 3): a well-known member of the new theme
+  linked: picnic 64163 [outdoor] in countryside (typicality 3): a well-known member of the new theme
+  linked: dirt road 38314 in countryside (typicality 3): a well-known member of the new theme
+  linked: orchard 38173 in countryside (typicality 3): a well-known member of the new theme
+  linked: farmhouse 24154 [house] in countryside (typicality 3): a well-known member of the new theme
+  linked: valley 1900 [landform] in countryside (typicality 3): a well-known member of the new theme
+  linked: rabbit 1443 in countryside (typicality 3): a well-known member of the new theme
+  linked: mud 28051 [dirt] in countryside (typicality 3): a well-known member of the new theme
+  linked: pony 1451 [horse] in countryside (typicality 3): a well-known member of the new theme
+  linked: hedgerow 30166 in countryside (typicality 4): a well-known member of the new theme
+  linked: pheasant 1107 in countryside (typicality 4): a well-known member of the new theme
+  linked: sheepdog 1474 in countryside (typicality 4): a well-known member of the new theme
+  linked: silo 38168 in countryside (typicality 4): a well-known member of the new theme
+  linked: plow 49080 [farm implement] in countryside (typicality 4): a well-known member of the new theme
+  linked: rubber boots 24589 in countryside (typicality 4): a well-known member of the new theme
+  linked: birdsong 8416 in countryside (typicality 4): a well-known member of the new theme
+  linked: hare 8058 in countryside (typicality 4): a well-known member of the new theme
+  new entry: pasture 68982 noun, common, familiarity 2: a common word that was not in the library
+  linked: pasture 68982 in countryside (typicality 3): a common word that was not in the library
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  bodies_of_water: "bodies of water" pop 2 ident 2: 37 words, easy/middle/hard 9/11/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "bodies of water" pop 2 ident 2: 40 words, easy/middle/hard 10/13/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  cave_features: "cave features" pop 4 ident 2: 32 words, easy/middle/hard 2/12/18, theme difficulty 2.5, 4th-easiest band 3, gap 0.5 -> "cave features" pop 4 ident 2: 35 words, easy/middle/hard 3/14/18, theme difficulty 2.5, 4th-easiest band 3, gap 0.5
+  countryside: new -> "countryside" pop 2 ident 2: 39 words, easy/middle/hard 12/19/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  desert_features: "desert features" pop 4 ident 2: 30 words, easy/middle/hard 4/5/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "desert features" pop 4 ident 2: 34 words, easy/middle/hard 6/7/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  flat_landscapes: "flat landscapes" pop 4 ident 3: 27 words, easy/middle/hard 5/7/15, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "flat landscapes" pop 4 ident 3: 32 words, easy/middle/hard 8/8/16, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  ice_features: "ice features" pop 3 ident 3: 37 words, easy/middle/hard 6/9/22, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "ice features" pop 3 ident 3: 37 words, easy/middle/hard 6/10/21, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  landscapes: "landscapes" pop 1 ident 2: 67 words, easy/middle/hard 26/26/15, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "landscapes" pop 1 ident 2: 70 words, easy/middle/hard 29/26/15, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  mountain_features: "mountain features" pop 2 ident 2: 37 words, easy/middle/hard 10/10/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "mountain features" pop 2 ident 2: 39 words, easy/middle/hard 9/13/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  river_features: "river features" pop 2 ident 2: 31 words, easy/middle/hard 6/14/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "river features" pop 2 ident 2: 36 words, easy/middle/hard 7/17/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  rock_formations: new -> "rock formations" pop 3 ident 3: 30 words, easy/middle/hard 6/11/13, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  scottish_landscape_words: "Scottish landscape words" pop 4 ident 4: 34 words, easy/middle/hard 3/11/20, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "Scottish landscape words" pop 4 ident 4: 33 words, easy/middle/hard 3/11/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  water_sources: new -> "water sources" pop 3 ident 2: 31 words, easy/middle/hard 12/11/8, theme difficulty 2, 4th-easiest band 1, gap -1.0
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 3: monolith 68980, borehole 68981, pasture 68982
+Entries deleted 0: none
+library changes 193; entries changed 122; status set to rev 54; themes deleted 0; entries merged 0
+Checks: changed kinds: info:overlap 4835 -> 4836
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3240 -> 3243; gone none; new rock_formations, countryside, water_sources; theme indexes shift: from index 587 ("rock_formations", was "flat_landscapes") to the last index 3242
+Theme rows whose fields changed (parent compared by id): 12: landscapes (index 581 -> 581: counts [13,13,27,13,4] -> [14,15,27,13,4]); mountain_features (index 582 -> 582: counts [1,9,11,10,7] -> [1,8,14,10,7]); river_features (index 583 -> 583: counts [0,6,14,6,5] -> [0,7,17,7,5]); desert_features (index 584 -> 584: counts [1,3,5,4,18] -> [2,4,7,4,18]); ice_features (index 585 -> 585: counts [4,3,9,7,16] -> [4,3,10,6,16]); cave_features (index 586 -> 586: counts [0,2,12,6,13] -> [0,3,14,6,13]); flat_landscapes (index 587 -> 588: counts [1,5,7,9,7] -> [1,8,8,10,7]); bodies_of_water (index 588 -> 590: counts [5,4,11,10,10] -> [5,5,13,10,10]); scottish_landscape_words (index 589 -> 592: counts [1,2,11,7,14] -> [1,2,11,6,14]); coastal_features (index 595 -> 598: counts [2,5,16,13,9] -> [2,6,16,12,9]); meadow (index 670 -> 673: counts [7,8,14,14,12] -> [7,9,13,14,12]); farm (index 890 -> 893: counts [6,9,14,9,3] -> [6,10,13,9,3])
+Entry rows 61433 -> 61436; first row whose entry changed: 61433 (monolith 68980, was undefined); rows that moved: 0; added monolith 68980 (row 61433), borehole 68981 (row 61434), pasture 68982 (row 61435); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100472 -> 100596; rows whose link count changed: 117
+Link-index shifts: from row 116 (mansion 117) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 4, new 128, rating changed 4
+  gone (other than the deleted themes): scottish_landscape_words: "tarn" (1963), scottish_landscape_words: "cirque" (30847), ice_features: "calving" (39918), mountain_features: "avalanche" (43543)
+  new: countryside: "cottage" (116), countryside: "cow" (149), countryside: "sheep" (151), countryside: "horse" (153), countryside: "fox" (996), countryside: "pheasant" (1107), countryside: "rabbit" (1443), countryside: "pony" (1451), countryside: "sheepdog" (1474), countryside: "hedge" (1830), countryside: "fence" (1832), water_sources: "pond" (1841), countryside: "gate" (1842), water_sources: "hose" (1844), water_sources: "sprinkler" (1846), countryside: "scarecrow" (1857), water_sources: "fountain" (1858), countryside: "hill" (1896), countryside: "valley" (1900), river_features: "canyon" (1903), desert_features: "canyon" (1903), rock_formations: "canyon" (1903), desert_features: "cliff" (1906), rock_formations: "cliff" (1906), flat_landscapes: "desert" (1907), water_sources: "river" (1908), water_sources: "lake" (1909), river_features: "island" (1910), water_sources: "glacier" (1911), mountain_features: "cave" (1913), rock_formations: "cave" (1913), mountain_features: "waterfall" (1914), desert_features: "plateau" (1918), flat_landscapes: "meadow" (1919), countryside: "meadow" (1919), flat_landscapes: "marsh" (1925), river_features: "gorge" (1928), rock_formations: "gorge" (1928), rock_formations: "ridge" (1930), water_sources: "oasis" (1937), water_sources: "geyser" (1938), rock_formations: "mesa" (1950), rock_formations: "escarpment" (1957), rock_formations: "outcrop" (1960), rock_formations: "butte" (1962), water_sources: "rain" (1965), water_sources: "snow" (1967), water_sources: "cloud" (1970), water_sources: "fog" (1974), water_sources: "dew" (2013), cave_features: "boulder" (2052), rock_formations: "boulder" (2052), desert_features: "sand" (2063), rock_formations: "geode" (2086), countryside: "barn" (2467), countryside: "windmill" (2475), countryside: "tractor" (3097), bodies_of_water: "moat" (6668), water_sources: "dam" (7380), cave_features: "tunnel" (7381), water_sources: "pump" (7389), water_sources: "reservoir" (7421), countryside: "hare" (8058), countryside: "birdsong" (8416), water_sources: "shower" (16272), water_sources: "faucet" (16278), water_sources: "sink" (23117), water_sources: "pipe" (23780), countryside: "farmhouse" (24154), countryside: "rubber boots" (24589), countryside: "farm" (27964), countryside: "mud" (28051), landscapes: "jungle" (28105), landscapes: "coast" (28191), landscapes: "forest" (28392), flat_landscapes: "field" (28409), countryside: "field" (28409), water_sources: "iceberg" (29374), water_sources: "stream" (30152), countryside: "stream" (30152), countryside: "footpath" (30158), countryside: "hedgerow" (30166), rock_formations: "crag" (30844), scottish_landscape_words: "corrie" (30847), rock_formations: "scree" (30850), rock_formations: "pinnacle" (30856), rock_formations: "tor" (30860), flat_landscapes: "floodplain" (30866), water_sources: "brook" (30873), water_sources: "creek" (30874), rock_formations: "hoodoo" (30887), rock_formations: "inselberg" (30892), rock_formations: "stalactite" (30922), rock_formations: "stalagmite" (30923), rock_formations: "grotto" (30925), rock_formations: "flowstone" (30927), rock_formations: "lava tube" (30939), river_features: "channel" (30964), rock_formations: "sea stack" (31002), rock_formations: "headland" (31074), rock_formations: "sea arch" (31076), rock_formations: "natural arch" (31088), river_features: "current" (31128), bodies_of_water: "puddle" (31213), ice_features: "snowdrift" (31290), water_sources: "aquifer" (31992), water_sources: "snowmelt" (31999), mountain_features: "snowcap" (32089), countryside: "wildflower" (32094), water_sources: "well" (32112), bodies_of_water: "spring" (32113), water_sources: "spring" (32113), cave_features: "pool" (32114), countryside: "silo" (38168), countryside: "hay bale" (38169), countryside: "haystack" (38170), countryside: "orchard" (38173), countryside: "dirt road" (38314), water_sources: "fire hydrant" (38366), countryside: "village" (38481), countryside: "plow" (49080), rock_formations: "blowhole" (50163), rock_formations: "buttress" (50329), rock_formations: "yardang" (60301), countryside: "picnic" (64163), rock_formations: "monolith" (68980), water_sources: "borehole" (68981), countryside: "pasture" (68982)
+  rating: bodies_of_water: "bay" (28144) 3.7/3 -> 2.7/3, coastal_features: "bay" (28144) 3.4/2 -> 2/2, meadow: "field" (28409) 2.7/2 -> 1.7/2, farm: "field" (28409) 2.7/2 -> 1.7/2
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 10 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 127 new links existed earlier and was removed (all 226 library versions and 193 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - bodies of water: pool (overlap with rock pool); water sources: drinking fountain (overlap with fountain), rain barrel (its UK alias water butt holds the word of the theme name)
+  - countryside: farmer (one word family with farm)
+  - flat landscapes: salt flat and mudflat (they hold the word of the theme name)
+  - river features: stream (taken out in v415)
+
+For Simon:
+  1. avalanche leaves mountain features and calve (calving) leaves ice features: things that happen, not features. tarn leaves Scottish landscape words (a northern English word; lochan is there).
+  2. Scottish landscape words: cirque shows its Scottish name corrie, which the note of the theme lists.
+  3. Familiarity: field [open land] 3 -> 1 and bay [inlet] 4 -> 2 (well-known words).
+  4. Overlap note that stays: sand / sand sea in desert features (different things).
