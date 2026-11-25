@@ -1490,6 +1490,81 @@ Chunk pairs: EN\|GINE, DO\|MINO, SCRAB\|BLE, FLASH\|BACK
 
 Notes: hierarchical again, and the final theme took two returned sub-themes (BOOK and GAME) plus MOON and CANDLE, a cross-category "at night" grouping. EMOTIONS and MEMORIES also returned as words into HUMAN EXPERIENCE alongside THOUGHTS and DREAMS. The names of the first three themes were not captured because those merges were played quickly (their rows are reconstructed from memory of the board and may be wrong). A seasonal event icon (an acorn in a ring with a "4d" timer, right edge of the screen) appeared for the first time on the Well Done screen of this level; not tapped (see features log).
 
+## Level 61
+
+Themes: 9 (bar `0/9`). Moves: 47 at start; the Shell Streak (full 5/5) fired its free boosters as the board loaded (extra bubbles dropped in and +3 MOVES), so the counter read 50 once settled. 20 left at the final merge (move streaks gave a few +1s). Mastery: 810 (count-up frames 803 at 12 moves left, 810 at 4 left; probably a little higher at the very end, final not confirmed). Reward: 30 coins (plain level; coins 3,360 on the pre-level and Well Done screens). Next button: green plain "LEVEL 62". Split words (8 chunk pairs, 1 move each): HER\|BAL, PUZ\|ZLE, ENGI\|NEER, TOYO\|TA, CI\|PHER, VISIO\|NARY, EN\|CODE, LAT\|TE. Two reversed bubbles (EZAH = HAZE, ROPAV = VAPOR). No chain lock, no cryptic bubbles. No +5 ad bubble. Wrong or wasted drags: 1 (a drag after a board shift that did nothing, no cost).
+
+Chunk pairs: HER\|BAL, PUZ\|ZLE, ENGI\|NEER, TOYO\|TA, CI\|PHER, VISIO\|NARY, EN\|CODE, LAT\|TE
+
+| Theme | Words | Name |
+|---|---|---|
+| Inventors | VISIONARY (VISIO\|NARY), SCIENTIST, INVENTOR, ENGINEER (ENGI\|NEER) | NOT SEEN (guessed: INVENTORS; the clear bubble showed TESLA, which returned as a word to CAR BRANDS) |
+| Car brands | FORD, BMW, TOYOTA (TOYO\|TA), TESLA (returned) | CAR BRANDS (shown) |
+| Tableware | PLATE, BOWL, SPOON, FORK | TABLEWARE (shown) |
+| Tea | GREEN, BLACK, OOLONG, HERBAL (HER\|BAL) | TEA (shown; returned as a word to DRINKS) |
+| Coffee | ESPRESSO, MOCHA, LATTE (LAT\|TE), CAPPUCCINO | COFFEE (shown; returned as a word to DRINKS) |
+| Drinks | JUICE, SODA, TEA (returned), COFFEE (returned) | DRINKS (shown) |
+| Organic molecules | LIPID, CARBOHYDRATE, ENZYME, PROTEIN | ORGANIC MOLECULES (shown) |
+| Fog | SMOG, MIST, VAPOR (ROPAV reversed), HAZE (EZAH reversed) | FOG (shown) |
+| Codes | DECODE, ENCODE (EN\|CODE), CIPHER (CI\|PHER), PUZZLE (PUZ\|ZLE) | ENIGMA (shown, final merge) |
+
+Notes: start board was mostly chunk pairs and the first words; arrivals came from extra bubbles (PLATE, TE, TA, VISIO) and later after each clear: EZAH, BOWL, SPOON, LIPID, CARBOHYDRATE, ENZYME, ESPRESSO, FORK, SMOG, MIST, LAT, TESLA (the cleared inventors bubble), CAPPUCCINO, MOCHA, ROPAV, PROTEIN. TEA and COFFEE returned as words to DRINKS; CAR BRANDS, TABLEWARE, ORGANIC MOLECULES and FOG did not return anywhere. The TESLA arrival (an inventors-theme bubble that joined CAR BRANDS) is a cross-over: the cleared theme came back as a word of another theme. Board packs into a tidy grid late in the level. Final clear name ENIGMA.
+
+## Level 62
+
+Themes: 10 (bar `0/10`). Moves: about 50 at start (counter read 3 while the board settled; 32 left by the 2/10 stage after about 18 merges and a few Move Streak bonuses; the exact start was not captured), 7 left when the Mastery count showed 818 (count-up still running, final not confirmed). Reward: 30 coins (plain level; coins 3,390). Next button: green plain "LEVEL 63". Cryptic bubbles seen: ???E, ????, ?A?E (CAKE), ???P (SOUP). No reversed bubbles, no chain lock. The orange "+5 MOVES" ad bubble floated on the board mid-level; not tapped, no drag started near it. Wrong or wasted drags: about 3 (some drags missed after the board shifted). Chunk pairs: this section's chunk list is not reliable (the start screenshots were not re-checked); at least STA|TION, SATEL|LITE style joins were not confirmed, so treat the split-word count as unknown.
+
+| Theme | Words | Name |
+|---|---|---|
+| Train | ENGINE, TRACK, WAGON, CONDUCTOR | TRAIN (shown; returned as a word to RAILWAY) |
+| Railway | PLATFORM, PASSENGER, TICKET, TRAIN (returned) | RAILWAY (shown) |
+| Finance | INCOME, EXPENSE, SAVINGS, REPORT | NOT SEEN (guessed: FINANCE; "Cool!" covered it; returned as BUDGET to MANAGEMENT) |
+| Dessert | PIE, PUDDING, ICE CREAM, CAKE (?A?E) | DESSERT (shown; returned to MEALS) |
+| Appetizer | NACHOS, SPRING ROLL, SALAD, SOUP | APPETIZER (shown; returned to MEALS) |
+| Meals | APPETIZER (returned), MAIN COURSE, DESSERT (returned), SNACK | MEALS (shown) |
+| Management | TEAM, BUDGET (returned), SCHEDULE, MEETING | MANAGEMENT (shown) |
+| Radio | SIGNAL, ANTENNA, BROADCAST, STATION | RADIO (shown, final merge) |
+| Two more themes | the bubble AM / FM / SATELLITE (+ ONLINE) and one other, not reconstructed | NOT SEEN |
+
+Notes: only 8 of the 10 theme clears are reconstructed (the screenshots between 2/10 and 7/10 were partly skimmed). Hierarchical: TRAIN into RAILWAY, DESSERT and APPETIZER into MEALS, BUDGET into MANAGEMENT. The final merge was STATION onto the SIGNAL ANTENNA BROADCAST bubble (RADIO). CONDUCTOR belongs to the train theme. Treat this section as partly unverified.
+
+## Level 63
+
+Themes: 8 (bar `0/8`). Moves: 44 at start (counter read 3 for about 40 s while the board settled; 43 after the first drag), 11 left at the final merge. Mastery: 831 (count-up frame at 11 leftover moves; the count was still running and the next screenshot was already the Well Done screen, so final not confirmed). Reward: 30 coins (coins 3,420). Next button: red "HARD LEVEL 64" with a red octopus. Split words (7 chunk pairs, 1 move each): EMPE\|ROR, SENA\|TOR, ME\|MORY, PLA\|NET, HOROS\|COPE, BAL\|CONY, BASE\|MENT. No reversed or cryptic bubbles, no chain lock, no +5 ad bubble. Wrong or wasted drags: 3 (PISCES onto the zodiac group while it was still moving, BASE onto MENT once, and one drag that missed after a board shift); no failures.
+
+Chunk pairs: EMPE\|ROR, SENA\|TOR, ME\|MORY, PLA\|NET, HOROS\|COPE, BAL\|CONY, BASE\|MENT
+
+| Theme | Words | Name |
+|---|---|---|
+| Martial arts | KARATE, JUDO, TAEKWONDO, AIKIDO | MARTIAL ARTS (shown) |
+| Roman hierarchy | EMPEROR (EMPE\|ROR), SOLDIER, SLAVE, SENATOR (SENA\|TOR) | ROMAN HIERARCHY (shown) |
+| Zodiac | LEO, VIRGO, ARIES, PISCES | ZODIAC (shown; returned as a word to ASTROLOGY) |
+| Astrology | ZODIAC (returned), HOROSCOPE (HOROS\|COPE), CONSTELLATION, PLANET (PLA\|NET) | ASTROLOGY (shown) |
+| House parts | ATTIC, ROOF, BALCONY (BAL\|CONY), BASEMENT (BASE\|MENT) | HOUSE PARTS (shown) |
+| Face | NOSE, MOUTH, EYES, CHEEKS | FACE (shown; returned as a word to HUMAN HEAD) |
+| Brain | CEREBRUM, MEMORY (ME\|MORY), NEURONS, THOUGHTS | BRAIN (shown; returned as a word to HUMAN HEAD) |
+| Human head | SKULL, HAIR, FACE (returned), BRAIN (returned) | HUMAN HEAD (shown, final merge) |
+
+Notes: hierarchical again: ZODIAC into ASTROLOGY, FACE and BRAIN into HUMAN HEAD. New bubbles arrived after merges (TAEKWONDO, EMPEROR, ATTIC, SENATOR, MEMORY, PLANET, AIKIDO, VIRGO, ROOF, ARIES, PISCES, ZODIAC). Start board was mostly chunk fragments plus anatomy words. The HARD button for level 64 follows an ordinary level.
+
+## Level 64 (HARD)
+
+Themes: 9 (bar `0/9`). Moves: 44 at start (counter read 3 for about 55 s while the board settled; 41 after the first drag), 9 left when the Mastery count showed 848 (count-up in progress, final not confirmed). Reward: 60 coins (HARD; coins 3,450). Next button: purple "EXPERT LEVEL 65" with a purple octopus. Shell Streak full (5/5). Split words (about 9 chunk pairs, 1 move each): DRA\|WING, WING\|?, TING (PAIN\|TING), PHO\|TO... joins seen: DRA+WING, PAIN+TING, HO+CKEY, OC+TAVE, QUE+BEC, plus others I did not re-verify (the start board had 12+ teal chunks: WING, DRA, TING, PAIN, QUE, OC, BEC, HO, CKEY, TAVE and more). Two reversed bubbles (yellow with left arrow): ETON = NOTE, OHADI = IDAHO. No chain lock, no cryptic bubbles, no +5 ad bubble. Wrong or wasted drags: about 5 (several drags missed after the board shifted: ETON, MUSIC, TORONTO each needed a retry; most missed drags cost 0 or 1 move).
+
+| Theme | Words | Name |
+|---|---|---|
+| Natural sciences | BIOLOGY, CHEMISTRY, PHYSICS, ASTRONOMY | SCIENCE (shown; returned to SUBJECTS) |
+| Australia | SYDNEY, OUTBACK, KANGAROO, plus one more | AUSTRALIA (shown; returned to ENGLISH-SPEAKING WORLD) |
+| Art | PAINTING, DRAWING, SCULPTURE, PHOTOGRAPHY (OPERA HOUSE belonged to Australia) | ART (shown; returned to SUBJECTS) |
+| Math | ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION | MATH (shown; returned to SUBJECTS) |
+| Music | MELODY, RHYTHM, OCTAVE (OC\|TAVE), NOTE (ETON reversed) | MUSIC (shown; returned to SUBJECTS) |
+| Subjects | ART, MATH, SCIENCE, MUSIC (all returned) | SUBJECTS (shown) |
+| US states | WYOMING, MAINE, NEVADA, IDAHO (OHADI reversed) | USA (shown; returned to ENGLISH-SPEAKING WORLD) |
+| Canada | TORONTO, MAPLE, HOCKEY (HO\|CKEY), QUEBEC (QUE\|BEC) | CANADA (shown; returned to ENGLISH-SPEAKING WORLD) |
+| English-speaking world | AUSTRALIA (returned), USA (returned), NEW ZEALAND, CANADA (returned) | ENGLISH-SPEAKING WORLD (shown, final merge) |
+
+Notes: hierarchical: SCIENCE, ART, MATH and MUSIC into SUBJECTS (the biggest two-level tree so far: sciences also fed a parent); AUSTRALIA, USA and CANADA into ENGLISH-SPEAKING WORLD with the plain word NEW ZEALAND. OPERA HOUSE (an Australia clue) was dragged with the Australia group, not ART. Table rows for AUSTRALIA and ART may be slightly off in which fourth word joined (the clears were played quickly).
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
