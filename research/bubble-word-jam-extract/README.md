@@ -191,6 +191,19 @@ Counted over all 1,800 levels, ignoring case.
 - No theme appears twice in one level.
 - Most levels: Opera 43, Violin 38, Card Games 34, Pottery, Mint and Gemstones 33.
 
+**Why a returning theme's words change.** Of the 3,039 theme names whose words change:
+
+- 2,133 (70%) draw from one bigger pool: every use shares a word with another use. Farm Animals rotates cow, goat, horse, pig, chicken and sheep. Pools hold 5 to 44 words, mostly 5-8.
+- 906 (30%) have a use that shares no word with any other. These are either:
+  - an easy and a hard pool with the same meaning: Colors (red, blue... / indigo, saffron... / chartreuse, taupe), Weather (rain, snow... / hailstorm, tornado), Vehicles (car, bus... / hatchback, SUV);
+  - or a different meaning under the same name: Music (genres / instruments / harmony, melody, rhythm), Shoes (parts: aglet, heel, sole / types: loafers, sandals), House (furniture / kinds of house), Numbers (four, five / even, odd, prime), Compass (north, south / azimuth, bearing, meridian).
+  Telling the two kinds apart would take reading the 906 by hand.
+
+**Same word twice in a level.** Never, ignoring case. A singular and its plural share a level 25 times:
+
+- 21 times across two themes, for example level 151: shrub (Plants) and shrubs (Garden Space).
+- 4 times inside one theme, which look like data mistakes: level 1070 Roulette (bet, bets), level 1070 Conifers (cedar, cedars), level 1095 Chimera (centaur, centaurs), level 1259 Soaring (glider, gliders).
+
 ## Why early levels have capitals
 
 **Capitalised words by level:**
