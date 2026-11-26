@@ -1,0 +1,40 @@
+Library batch v502 (for Simon's review): History & Myth, fantasy branch
+1. legendary heroes
+  out of legendary_heroes: Mordred 22530: the villain of the Arthurian legend, not a hero (stays in famous_knights, arthurian_legend)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  legendary_heroes: "legendary heroes" pop 2 ident 3: 37 words, easy/middle/hard 7/8/22, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "legendary heroes" pop 2 ident 3: 36 words, easy/middle/hard 7/8/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 1; entries changed 1; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3259 -> 3259; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 1: legendary_heroes (index 2393 -> 2393: counts [3,5,9,16,7] -> [3,5,9,16,6])
+Entry rows 61400 -> 61400; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101024 -> 101023; rows whose link count changed: 1
+Link-index shifts: from row 20930 (kitsune 22531) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 1, new 0, rating changed 0
+  gone (other than the deleted themes): legendary_heroes: "Mordred" (22530)
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 12 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 0 new links existed earlier and was removed (all 244 library versions and 229 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - legendary heroes: Guinevere and Maid Marian stay (figures of the legends, close to the heroes)
+  - folklore: nothing to change; Princess Jasmine in Arabian Nights is Disney's, not from the tales, but it is in no other theme
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. Mordred leaves legendary heroes: the villain of the Arthurian legend (he stays in famous knights and Arthurian legend).

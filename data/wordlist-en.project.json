@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":501,"modified":"2026-11-26 23:12"},"nextId":69017,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
+{"project":{"schema":1,"lang":"en","lib":{"version":502,"modified":"2026-11-26 23:13"},"nextId":69017,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[78,79]],"ident":1},
@@ -24881,7 +24881,7 @@
 {"id":22527,"text":"Sir Gawain","type":"proper","fam":3,"aliasOf":20699,"aliasKind":"synonym","status":"rev"},
 {"id":22528,"text":"Will Scarlet","type":"proper","fam":4,"typ":{"legendary_heroes":5,"robin_hood_legend":3},"status":"rev"},
 {"id":22529,"text":"Ulysses","gloss":"hero","type":"proper","fam":2,"aliasOf":6952,"aliasKind":"translation","status":"rev"},
-{"id":22530,"text":"Mordred","type":"proper","fam":3,"typ":{"legendary_heroes":5,"famous_knights":2,"arthurian_legend":2},"status":"rev"},
+{"id":22530,"text":"Mordred","type":"proper","fam":3,"typ":{"famous_knights":2,"arthurian_legend":2},"status":"rev"},
 {"id":22531,"text":"kitsune","fam":3,"typ":{"japanese_folklore":1,"shapeshifters":1,"yokai":1,"tricksters":3},"status":"rev"},
 {"id":22532,"text":"kappa","gloss":"yokai","fam":3,"typ":{"japanese_folklore":1,"yokai":1},"status":"gen"},
 {"id":22533,"text":"tengu","fam":4,"typ":{"japanese_folklore":2,"yokai":2,"mythical_creatures":4},"status":"gen"},
