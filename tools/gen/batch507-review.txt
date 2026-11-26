@@ -1,0 +1,48 @@
+Library batch v507 (for Simon's review): People & Society, society branch
+1. protest words
+  out of protest_words: Molotov cocktail 61415: a firebomb, a grim word for a word game (stays in words_named_after_people)
+  out of protest_words: rubber bullets 61413: fired at crowds, a grim word for a word game (now in no theme: not exported)
+2. gaucho words
+  out of gaucho_words: Argentina 2131: a country, not part of gaucho life (stays in countries, south_american_countries, spanish_speaking_countries, flags_with_a_sun)
+  out of gaucho_words: Uruguay 33202 [country]: a country, not part of gaucho life (stays in south_american_countries, spanish_speaking_countries, flags_with_a_sun)
+  out of gaucho_words: tango 6209: a city dance from Buenos Aires, not part of gaucho life (stays in dance, world_music_styles, dances, ballroom_dances, latin_dances, phonetic_alphabet, hidden_colors, starts_with_a_color, latin_music_styles, latin_american_folk_dances)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  gaucho_words: "gaucho words" pop 5 ident 4: 28 words, easy/middle/hard 1/7/20, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "gaucho words" pop 5 ident 4: 25 words, easy/middle/hard 1/5/19, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  protest_words: "protest words" pop 3 ident 2: 55 words, easy/middle/hard 12/16/27, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "protest words" pop 3 ident 2: 53 words, easy/middle/hard 12/16/25, theme difficulty 2, 4th-easiest band 2, gap 0.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 1: rubber bullets 61413
+Entries added 0: none
+Entries deleted 0: none
+library changes 10; entries changed 5; status set to rev 5; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 367 -> 368
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3261 -> 3261; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 2: protest_words (index 1491 -> 1491: counts [2,10,16,17,11] -> [2,10,16,15,11]); gaucho_words (index 1501 -> 1501: counts [0,1,7,10,10] -> [0,1,5,9,10])
+Entry rows 61401 -> 61400; first row whose entry changed: 56485 (barricade 61414, was rubber bullets 61413); rows that moved: 4915; added none; removed 61413 (row 56485)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101043 -> 101038; rows whose link count changed: 4
+Link-index shifts: from row 2100 (France 2132) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 5, new 0, rating changed 0
+  gone (other than the deleted themes): gaucho_words: "Argentina" (2131), gaucho_words: "tango" (6209), gaucho_words: "Uruguay" (33202), protest_words: "rubber bullets" (61413), protest_words: "Molotov cocktail" (61415)
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 12 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 0 new links existed earlier and was removed (all 249 library versions and 239 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - protest words: riot, water cannon, flag burning and insurrection stay (the theme plays from level 31)
+  - gaucho words: asado, mate, empanada, chorizo and chimichurri stay (gaucho food)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 1: rubber bullets 61413
+  2. Asked for by the user: Molotov cocktail and rubber bullets out of protest words (rubber bullets is now in no theme).
+  3. Argentina, Uruguay and tango leave gaucho words: two countries and a city dance, not gaucho life.
