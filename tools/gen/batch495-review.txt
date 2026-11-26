@@ -1,0 +1,54 @@
+Library batch v495 (for Simon's review): History & Myth, medieval times branch
+1. castles
+  linked: throne 27916 [royal seat] in castles (typicality 2): well known here; it was not linked
+  linked: king 31 [monarch] in castles (typicality 2): well known here; it was not linked
+  linked: queen 20757 [royal] in castles (typicality 2): well known here; it was not linked
+  linked: knight 36 [warrior] in castles (typicality 2): well known here; it was not linked
+2. medieval jobs
+  linked: merchant 21113 in medieval_jobs (typicality 2): well known here; it was not linked
+  linked: carpenter 4094 [job] in medieval_jobs (typicality 2): well known here; it was not linked
+  linked: potter 33027 [ceramicist] in medieval_jobs (typicality 3): well known here; it was not linked
+3. feudal ranks
+  out of feudal_ranks: fief 6678: a piece of land a lord gave, not a rank (stays in medieval_times)
+4. jousting tournament
+  out of jousting_tournament: Ivanhoe 20921: a novel by Walter Scott, not part of a tournament (stays in famous_knights)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  castles: "castles" pop 1 ident 1: 34 words, easy/middle/hard 5/8/21, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "castles" pop 1 ident 1: 38 words, easy/middle/hard 9/8/21, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  feudal_ranks: "feudal ranks" pop 2 ident 2: 36 words, easy/middle/hard 11/4/21, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "feudal ranks" pop 2 ident 2: 35 words, easy/middle/hard 11/4/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  jousting_tournament: "jousting tournament" pop 3 ident 3: 29 words, easy/middle/hard 7/11/11, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "jousting tournament" pop 3 ident 3: 28 words, easy/middle/hard 7/10/11, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  medieval_jobs: "medieval jobs" pop 2 ident 2: 40 words, easy/middle/hard 12/12/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "medieval jobs" pop 2 ident 2: 43 words, easy/middle/hard 14/13/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 14; entries changed 9; status set to rev 5; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3253 -> 3253; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 4: castles (index 2265 -> 2265: counts [4,1,9,12,9] -> [4,5,9,12,9]); medieval_jobs (index 2267 -> 2267: counts [2,10,12,11,5] -> [2,12,14,11,5]); feudal_ranks (index 2268 -> 2268: counts [4,7,4,15,6] -> [4,7,4,14,6]); jousting_tournament (index 2273 -> 2273: counts [2,5,11,5,6] -> [2,5,10,5,6])
+Entry rows 61401 -> 61401; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100923 -> 100928; rows whose link count changed: 9
+Link-index shifts: from row 31 (queen 32) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 2, new 7, rating changed 0
+  gone (other than the deleted themes): feudal_ranks: "fief" (6678), jousting_tournament: "Ivanhoe" (20921)
+  new: castles: "king" (31), castles: "knight" (36), medieval_jobs: "carpenter" (4094), castles: "queen" (20757), medieval_jobs: "merchant" (21113), castles: "throne" (27916), medieval_jobs: "potter" (33027)
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 19 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 7 new links existed earlier and was removed (all 237 library versions and 215 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - medieval pastimes: bear baiting and cockfighting stay (the user's call)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. castles gets throne, king, queen and knight: the first answers a player gives for castles.
+  2. fief leaves feudal ranks (land, not a rank); Ivanhoe leaves jousting tournament (a novel; it stays in famous knights).
