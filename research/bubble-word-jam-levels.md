@@ -1748,6 +1748,25 @@ Themes: 11 (bar `0/11`). Moves: 46 at start (counter read 46 before the first me
 
 Notes: first board 26 bubbles, all plain words, no chunks. Hierarchies: ATOM into THINGS WITH CORE; BIRTHDAY and ANNIVERSARY into CELEBRATIONS; SANTA CLAUS into CHRISTMAS; CHRISTMAS into WINTER (a chain). The last four bubbles were merged as two pairs (ATOM+GALAXY, EARTH+REACTOR), then pair onto pair (a 2+2 merge works). Decoys: CHIMNEY and DEER with Santa (not Christmas), TOAST and RINGS with anniversary (not wedding), FIREPLACE with winter, EARTH and REACTOR core. Autumn leaves on Mastery and Well Done screens.
 
+## Level 74 (HARD)
+
+Themes: 10 (bar `0/10`). Moves: 40 at start (counter read 39 after the first merge). 14 left at the final merge (counter 14 on the OFFICE frame; 8 on the first Mastery frame, counting down). Mastery: 1022 (count-up frame at counter 8, still running; final not confirmed). Reward: 60 coins (HARD level). Next button: purple "EXPERT LEVEL 75" with a purple octopus (not tapped). Shell Streak free boosters shown in the pre-level dialog, left unselected. Split words: 0. No chain lock, no cryptic bubbles, no +5 ad bubble. Reversed bubbles: TEN (= NET), RAC (= CAR), EGAC (= CAGE). Move Streak bonuses kept the counter flat on several merges (e.g. 23 stayed 23 after a merge).
+
+| Theme | Words | Name |
+|---|---|---|
+| Fishing | ROD, BAIT, NET (reversed TEN), HOOK | FISHING (shown; returned as a word to HOBBY) |
+| Programming language | RUBY, PYTHON, JAVA, OBJECTIVE-C | PROGRAMMING LANGUAGE (shown; returned as a word to COMPUTER) |
+| Fashion brands | PRADA, HERMES, CHANEL, GUCCI | (guessed: FASHION BRANDS; the praise "Fantastic!" covered the name) |
+| Driving | CAR (reversed RAC), ROAD, INSURANCE, LICENSE | DRIVING (shown; returned as a word to TRANSPORT) |
+| Computer | MOUSE, MONITOR, KEYBOARD, PROGRAMMING LANGUAGE (returned) | COMPUTER (shown; returned as a word to OFFICE) |
+| Transport | DRIVING (returned), FLYING, SAILING, WALKING | TRANSPORT (shown; did not come back) |
+| Hunting | BOW, RIFLE, TRAP, CAMOUFLAGE | HUNTING (shown; returned as a word to HOBBY) |
+| Hobby | FISHING (returned), PAINTING, GARDENING, HUNTING (returned) | HOBBY (shown; did not come back) |
+| Birds | FEATHERS, PARROT, SONG, CAGE (reversed EGAC) | AVIARY (shown; did not come back) |
+| Office | DESK, CHAIR, PAPERS, COMPUTER (returned) | OFFICE (shown, final merge) |
+
+Notes: first board 27 bubbles, all plain words. Chains: FISHING and HUNTING into HOBBY; PROGRAMMING LANGUAGE into COMPUTER into OFFICE; DRIVING into TRANSPORT. Four themes finished as pairs merged pair onto pair or word onto a 3-group. Missed drags (no merge, bubbles had drifted after a clear, about 4 of them: RAC, KEYBOARD, DRIVING, WALKING) mostly cost no move visibly; the lesson is to re-shoot after every clear. Autumn leaves on Mastery and Well Done screens. Pre-level screen and a coin-flying loading screen took about 15 s to load.
+
 ## New features log
 
 | Level | Feature | Screenshot | Description |
