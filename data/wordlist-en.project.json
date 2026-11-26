@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":502,"modified":"2026-11-26 23:13"},"nextId":69017,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
+{"project":{"schema":1,"lang":"en","lib":{"version":503,"modified":"2026-11-27 00:26"},"nextId":69017,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[78,79]],"ident":1},
@@ -7179,9 +7179,9 @@
 {"id":3900,"text":"guest","gloss":"visitor","fam":1,"typ":{"family_and_friends":4},"status":"rev","kin":[68633]},
 {"id":3901,"text":"buddy","gloss":"friend","fam":1,"typ":{"family_and_friends":1,"words_for_friend":1},"status":"gen"},
 {"id":3902,"text":"classmate","fam":1,"typ":{"family_and_friends":3,"people_at_school":1},"status":"rev"},
-{"id":3903,"text":"wedding","fam":1,"typ":{"family_and_friends":3,"holidays_and_celebrations":1,"life_events":1,"life_milestones":1},"status":"gen"},
-{"id":3904,"text":"birthday","gloss":"anniversary","fam":1,"typ":{"family_and_friends":3,"holidays_and_celebrations":1,"life_events":1,"life_milestones":1},"status":"gen"},
-{"id":3905,"text":"anniversary","fam":1,"typ":{"family_and_friends":3,"holidays_and_celebrations":3,"life_events":2,"life_milestones":3},"status":"gen"},
+{"id":3903,"text":"wedding","fam":1,"typ":{"holidays_and_celebrations":1,"life_events":1,"life_milestones":1},"status":"rev"},
+{"id":3904,"text":"birthday","gloss":"anniversary","fam":1,"typ":{"holidays_and_celebrations":1,"life_events":1,"life_milestones":1},"status":"rev"},
+{"id":3905,"text":"anniversary","fam":1,"typ":{"holidays_and_celebrations":3,"life_events":2,"life_milestones":3},"status":"rev"},
 {"id":3906,"text":"relative","fam":1,"typ":{"family_and_friends":1,"extended_family":1},"status":"gen","kin":[40593]},
 {"id":3907,"text":"relation","gloss":"relative","fam":2,"typ":{"family_and_friends":2,"extended_family":2},"status":"gen"},
 {"id":3908,"text":"kinsman","fam":5,"typ":{"extended_family":5,"family_and_friends":5},"status":"rev"},
