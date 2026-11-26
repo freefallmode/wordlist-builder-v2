@@ -27,6 +27,7 @@ The game is a Unity app. Its levels are ScriptableObject assets in Addressables 
   - Sub-themes returning as bubbles are left out.
   - Matching is by letters, so some rows are coincidences (birds of prey / osprey).
   - Rebuild with `python theme_leaks.py levels.json theme-leaks.xlsx`.
+- `comparison-with-library.md`: this game against our library (v493 export): theme counts, words per theme, word shape, structure, metadata and overlap. Numbers from `compare_library.mjs`.
 - `export_levels.py`: rebuilds both files from the raw dump (see "How it was made").
 
 Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per level (median 12), and split words in 1,530 levels.
