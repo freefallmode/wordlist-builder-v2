@@ -1,0 +1,58 @@
+Library batch v508 (for Simon's review): People & Society, government branch
+1. political ideologies
+  out of political_ideologies: Stalinism 33507: named after a dictator (Stalin) (stays in ideologies_named_after_people)
+  out of political_ideologies: Leninism 33506: named after a dictator (Lenin) (stays in ideologies_named_after_people)
+  out of political_ideologies: Maoism 33505: named after a dictator (Mao Zedong) (stays in ideologies_named_after_people)
+  out of political_ideologies: Trotskyism 33508: named after a leader of the Soviet terror (Trotsky) (stays in ideologies_named_after_people)
+2. people-named ideologies
+  out of ideologies_named_after_people: Stalinism 33507: named after a dictator (Stalin) (now in no theme: not exported)
+  out of ideologies_named_after_people: Leninism 33506: named after a dictator (Lenin) (now in no theme: not exported)
+  out of ideologies_named_after_people: Maoism 33505: named after a dictator (Mao Zedong) (now in no theme: not exported)
+  out of ideologies_named_after_people: Trotskyism 33508: named after a leader of the Soviet terror (Trotsky) (now in no theme: not exported)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  ideologies_named_after_people: "people-named ideologies" pop 5 ident 4: 16 words, easy/middle/hard 0/0/16, theme difficulty 5, 4th-easiest band 4, gap -1.0 -> "people-named ideologies" pop 5 ident 4: 12 words, easy/middle/hard 0/0/12, theme difficulty 5, 4th-easiest band 5, gap 0.0
+  political_ideologies: "political ideologies" pop 3 ident 2: 56 words, easy/middle/hard 3/11/42, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "political ideologies" pop 3 ident 2: 52 words, easy/middle/hard 3/11/38, theme difficulty 2, 4th-easiest band 3, gap 1.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 4: Stalinism 33507, Leninism 33506, Maoism 33505, Trotskyism 33508
+Entries added 0: none
+Entries deleted 0: none
+library changes 12; entries changed 4; status set to rev 4; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 368 -> 372
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3261 -> 3261; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 2: political_ideologies (index 1379 -> 1379: counts [0,3,11,18,24] -> [0,3,11,16,22]); ideologies_named_after_people (index 1380 -> 1380: counts [0,0,0,5,11] -> [0,0,0,3,9], range [4,5] -> [5,5])
+Entry rows 61400 -> 61396; first row whose entry changed: 30697 (syndicalism 33509, was Maoism 33505); rows that moved: 30699; added none; removed 33505 (row 30697), 33506 (row 30698), 33507 (row 30699), 33508 (row 30700)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101038 -> 101030; rows whose link count changed: 0
+Link-index shifts: from row 30697 (syndicalism 33509) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 8, new 0, rating changed 0
+  gone (other than the deleted themes): political_ideologies: "Maoism" (33505), ideologies_named_after_people: "Maoism" (33505), political_ideologies: "Leninism" (33506), ideologies_named_after_people: "Leninism" (33506), political_ideologies: "Stalinism" (33507), ideologies_named_after_people: "Stalinism" (33507), political_ideologies: "Trotskyism" (33508), ideologies_named_after_people: "Trotskyism" (33508)
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 31 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 0 new links existed earlier and was removed (all 250 library versions and 241 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - political ideologies stays as a theme (the user chose only the four named after dictators); Titoism, Peronism and the other people-named ideologies stay
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 4: Stalinism 33507, Leninism 33506, Maoism 33505, Trotskyism 33508
+  2. Asked for by the user: Stalinism, Leninism, Maoism and Trotskyism out of political ideologies and people-named ideologies, like the dictators out of famous leaders in v498. All four are now in no theme (kept in the library).
+
+=== Notice to _WS_ for v508 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v508 (People & Society, government branch): 0 new themes, 0 new links, 8 links out, 0 new entries.
+Theme rows 3261 -> 3261; gone none; new none; theme indexes shift: none
+Entry rows 61400 -> 61396. Removed: 33505 (row 30697), 33506 (row 30698), 33507 (row 30699), 33508 (row 30700).
+Link-index shifts: from row 30697 (syndicalism 33509) on, link positions move
+Line breaks: none.
+New characters: none.
