@@ -1,0 +1,15 @@
+From the review (tools/gen/review-julia-v476-v491.md), not done or done differently:
+- A11 famous gardens: Babylon (the city) goes out, but Hanging Gardens is not linked: its synonym alias Gardens of Babylon holds "garden" of the theme name (theme-name, a new warning). Tivoli Gardens out as reviewed.
+- A15 natural resources: natural gas is shown "gas" (the full name holds "natural" of the theme name).
+- B3 autumn fun: hayride is tagged US; corn maze stays untagged because it gets the UK regional alias maize maze (C), as written test / theory test.
+- B4 winter flowers: winter aconite is shown "aconite", as winter jasmine is shown "jasmine" (the full name holds "winter").
+- B8: the new barbecue [grill] (the appliance) is also linked in hot things (t3), where v474 took the verb and the meat out for lack of it.
+- C groups: glasses = sunglasses in pairs you wear is skipped: it joins a clash group of 18 (clash-big, a new warning).
+- C: flowerpot and plant pot are one entry: plant pot becomes the UK regional alias of flowerpot (id kept). ___pot played both; now flowerpot ("flower") only.
+- C: colouring book becomes the UK spelling of coloring book (id kept); coloring book shows "coloring" in ___book.
+- C: duck beside waterfowl: waterfowl leaves wetlands (the category beside its member).
+- C weak links: drink shades loses claret (burgundy and bordeaux stay); natural resources loses tree and fish (forest, wood and wildlife stay).
+- C: monkey nut becomes a synonym alias (UK players say peanut). Big Dipper gets the UK regional alias Plough [asterism].
+- Line breaks: carolling (9 letters) has no break point yet: run tools/brk-tokens.mjs and tools/brk-merge.mjs (car-ol-ling, as car-ol-ing) when applying.
+- Info only, new: overlap forest beside its kinds in biomes (a generic beside species in a kinds theme is fine), coal beside coal mine and coal face, Bonfire Night beside bonfire, sea beside sea turtle, dog beside dog house; sense-twin champagne [color] beside champagne [horse color] (not merged: a different theme sense), walnut [nut] and chestnut [nut] in things that grow on trees beside their tree senses (the nut is what grows).
+- Left in no theme: climate 68983 (a real word; kept).
