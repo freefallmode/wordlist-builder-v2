@@ -1,0 +1,79 @@
+Library batch v504 (for Simon's review): People & Society, jobs branch
+1. jobs
+  linked: chef 916 [cook] in jobs (typicality 1): well known here; it was not linked
+  linked: baker 20056 [job] in jobs (typicality 2): well known here; it was not linked
+  linked: hairdresser 33002 in jobs (typicality 2): well known here; it was not linked
+  linked: astronaut 7115 in jobs (typicality 2): well known here; it was not linked
+  linked: judge 4186 in jobs (typicality 2): well known here; it was not linked
+  linked: singer 6131 in jobs (typicality 2): well known here; it was not linked
+  linked: dancer 6204 [performer] in jobs (typicality 2): well known here; it was not linked
+  linked: zookeeper 10449 in jobs (typicality 2): well known here; it was not linked
+2. community helpers (new)
+  new theme: community_helpers "community helpers" under jobs (after emergency_workers), pop 1, ident 2: a classic set for children; jobs and emergency workers exist
+  linked: firefighter 4083 in community_helpers (typicality 1): a well-known member of the new theme
+  linked: police officer 4086 in community_helpers (typicality 1): a well-known member of the new theme
+  linked: doctor 3448 in community_helpers (typicality 1): a well-known member of the new theme
+  linked: nurse 3449 [health worker] in community_helpers (typicality 1): a well-known member of the new theme
+  linked: teacher 4063 in community_helpers (typicality 1): a well-known member of the new theme
+  linked: mail carrier 4120 in community_helpers (typicality 2): a well-known member of the new theme
+  linked: garbage collector 4125 in community_helpers (typicality 2): a well-known member of the new theme
+  linked: librarian 4141 in community_helpers (typicality 2): a well-known member of the new theme
+  linked: crossing guard 34812 in community_helpers (typicality 2): a well-known member of the new theme
+  linked: paramedic 3490 in community_helpers (typicality 2): a well-known member of the new theme
+  linked: dentist 4067 in community_helpers (typicality 2): a well-known member of the new theme
+  linked: vet 4068 [animal] in community_helpers (typicality 2): a well-known member of the new theme
+  linked: farmer 4081 [job] in community_helpers (typicality 2): a well-known member of the new theme
+  linked: bus driver 4113 in community_helpers (typicality 2): a well-known member of the new theme
+  linked: plumber 4093 in community_helpers (typicality 3): a well-known member of the new theme
+  linked: electrician 4091 in community_helpers (typicality 3): a well-known member of the new theme
+  linked: pharmacist 4144 in community_helpers (typicality 3): a well-known member of the new theme
+  linked: park ranger 33091 in community_helpers (typicality 3): a well-known member of the new theme
+  linked: lifeguard 33021 in community_helpers (typicality 3): a well-known member of the new theme
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  community_helpers: new -> "community helpers" pop 1 ident 2: 19 words, easy/middle/hard 14/5/0, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  jobs: "jobs" pop 1 ident 1: 99 words, easy/middle/hard 49/20/30, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "jobs" pop 1 ident 1: 107 words, easy/middle/hard 57/20/30, theme difficulty 1, 4th-easiest band 1, gap 0.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 37; entries changed 27; status set to rev 9; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3259 -> 3260; gone none; new community_helpers; theme indexes shift: from index 1353 ("community_helpers", was "transport_jobs") to the last index 3259
+Theme rows whose fields changed (parent compared by id): 1: jobs (index 1336 -> 1336: counts [19,32,22,16,16] -> [20,39,22,16,16])
+Entry rows 61400 -> 61400; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101020 -> 101047; rows whose link count changed: 27
+Link-index shifts: from row 906 (bake 917) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 27, rating changed 0
+  gone (other than the deleted themes): none
+  new: jobs: "chef" (916), community_helpers: "doctor" (3448), community_helpers: "nurse" (3449), community_helpers: "paramedic" (3490), community_helpers: "teacher" (4063), community_helpers: "dentist" (4067), community_helpers: "vet" (4068), community_helpers: "farmer" (4081), community_helpers: "firefighter" (4083), community_helpers: "police officer" (4086), community_helpers: "electrician" (4091), community_helpers: "plumber" (4093), community_helpers: "bus driver" (4113), community_helpers: "mail carrier" (4120), community_helpers: "garbage collector" (4125), community_helpers: "librarian" (4141), community_helpers: "pharmacist" (4144), jobs: "judge" (4186), jobs: "singer" (6131), jobs: "dancer" (6204), jobs: "astronaut" (7115), jobs: "zookeeper" (10449), jobs: "baker" (20056), jobs: "hairdresser" (33002), community_helpers: "lifeguard" (33021), community_helpers: "park ranger" (33091), community_helpers: "crossing guard" (34812)
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 21 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 27 new links existed earlier and was removed (all 246 library versions and 233 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - first jobs (babysitter, paperboy, lifeguard, dog walker): offered as optional, not chosen
+  - community helpers: construction worker (not in the library)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. jobs gets chef, baker, hairdresser, astronaut, judge, singer, dancer and zookeeper: first answers that were only in narrower job themes.
+  2. community helpers is a new theme (19 words, all in the library), a classic set for children; as a child of jobs it shares 15 words with it.
+
+=== Notice to _WS_ for v504 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v504 (People & Society, jobs branch): 1 new theme (community helpers), 27 new links, 0 links out, 0 new entries.
+Theme rows 3259 -> 3260; gone none; new community_helpers; theme indexes shift: from index 1353 ("community_helpers", was "transport_jobs") to the last index 3259
+Entry rows 61400 -> 61400.
+Link-index shifts: from row 906 (bake 917) on, link positions move
+Line breaks: none.
+New characters: none.
