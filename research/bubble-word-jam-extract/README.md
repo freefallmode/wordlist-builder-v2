@@ -247,6 +247,22 @@ Use: `bwj 81`, or the home-screen buttons.
 
 Tested 2026-11-26 on the Pixel 6a: `bwj 81` worked from Termux through Shizuku.
 
+### Level selector app
+
+`selector-app/` is a small Android app ("BWJ Levels", plain Java), an alternative to the Termux buttons:
+- **The list:** all 1,800 levels. Each shows its special bubbles and the themes it contains, and the first appearance of each feature is marked NEW.
+- **Filters:** all levels, first appearances, or one bubble type.
+- **Jump box:** type a level number to go straight to it.
+- **Jumping:** tapping a level asks to confirm, then runs `phone/bwj-edit.sh` (copied into the app at build time) through Shizuku. That sets the level, unlimited lives and 99 hints, and relaunches the game.
+- **Needs:** Shizuku running, and this app allowed in Shizuku. The app's top line says which step is missing; tap it to fix.
+
+Build and install it from `selector-app/`:
+1. Point `local.properties` at the SDK: `sdk.dir=C\:/Simon/Dev/Android/sdk`.
+2. Run Gradle 9.4.1 with `assembleDebug`.
+3. Install with `adb install -r app/build/outputs/apk/debug/app-debug.apk`.
+
+`make_levels_asset.py` regenerates `app/src/main/assets/levels.tsv` from `levels.json`.
+
 Shizuku has to be running:
 - After every phone restart, start it in the Shizuku app with Wireless debugging, or from a computer with `adb shell <app dir>/lib/arm64/libshizuku.so`.
 - The first `bwj` asks to allow Termux in Shizuku.

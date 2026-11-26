@@ -11,6 +11,7 @@ F=/sdcard/Android/data/$PKG/files/IDIPref.dat
 [ -f "$F" ] || { echo "no save file at $F: open the game once first"; exit 1; }
 
 am force-stop $PKG   # so the game can't overwrite the edit
+mkdir -p /sdcard/bwj
 [ -f /sdcard/bwj/IDIPref.backup.dat ] || cp "$F" /sdcard/bwj/IDIPref.backup.dat
 # unlimited lives end time, in .NET ticks (100 ns since 0001-01-01): now + 30 days, i.e.
 # (unix seconds + 62135596800) * 10^7. The phone's shell only has 32-bit arithmetic, so the sum is
