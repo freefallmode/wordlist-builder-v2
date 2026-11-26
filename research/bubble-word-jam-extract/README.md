@@ -219,12 +219,43 @@ What does work is the save file:
 - That folder is readable and writable through adb, with no root needed.
 
 ```
-bash set_level.sh 76        # force-stop the game, set the level, relaunch
-bash set_level.sh restore   # put back the save from before the first jump
+bash set_level.sh 76                          # force-stop the game, set the level, relaunch (emulator)
+bash set_level.sh 51 2B211JEGR02969           # the same on a phone (adb serial from `adb devices`)
+bash set_level.sh - --lives inf --hints 20    # keep the level; unlimited lives for 30 days, 20 hints
+bash set_level.sh restore [DEVICE]            # put back that device's save from before the first edit
 ```
 
+Other options: `--lives N`, `--magnets N` and `--bubbles N` (Extra Bubbles). They set `currentLives`, `totalHint`, `totalMagnet` and `totalBubbleBooster`. `--lives inf` sets `hasInfinityLife` with an `infinityLifeEndTime` in .NET ticks.
+
+A real phone works the same way. Tested 2026-11-26 on a Pixel 6a running Android 17: with USB debugging on, adb could read and write the save folder.
+
+### On the phone, without a computer
+
+`phone/` holds a version that runs on the phone itself:
+- `bwj-edit.sh` takes the level number only. It always sets unlimited lives (30 days) and 99 hints, then relaunches the game. The phone's shell has only 32-bit arithmetic, so the script builds the .NET-ticks end time out of two parts.
+- `install.sh` adds a `bwj` command to Termux.
+- The phone gets adb-level rights through [Shizuku](https://github.com/RikkaApps/Shizuku) and its `rish` shell.
+
+Setup, done once:
+1. Install Shizuku and Termux.
+2. Copy `bwj-edit.sh`, `install.sh`, and `rish` with `rish_shizuku.dex` (from the Shizuku APK's `assets/`) to `/sdcard/bwj/`.
+3. In Termux, run `termux-setup-storage`, then `sh ~/storage/shared/bwj/install.sh`.
+
+Use: `bwj 81`, or the home-screen buttons.
+- `install.sh` puts one script per button in `~/.shortcuts`: the first level of each special bubble (21, 31, 51, 76, 81, 101, 126, 151, 161), 502 for the first random specials, and "Level..." to type any number.
+- The Google Play build of Termux has the Termux widget built in, so the separate Termux:Widget app isn't needed.
+
+Tested 2026-11-26 on the Pixel 6a: `bwj 81` worked from Termux through Shizuku.
+
+Shizuku has to be running:
+- After every phone restart, start it in the Shizuku app with Wireless debugging, or from a computer with `adb shell <app dir>/lib/arm64/libshizuku.so`.
+- The first `bwj` asks to allow Termux in Shizuku.
+
+The first run keeps the original save at `/sdcard/bwj/IDIPref.backup.dat`.
+
 How it behaves:
-- The first run backs up the original file to `save-backup/`, which git ignores.
+- Each device's first run backs up its whole save (all the `.dat` files) to `save-backup/<DEVICE>/`, which git ignores.
+- After an edit, the game may offer its cloud save in a "Load Data" popup. Close it with X to keep the edit; LOAD puts the cloud level back.
 - Tested 2026-11-26: the home screen showed LEVEL 76, and the frozen-bubble intro popup appeared before the board.
 - The board matched `levels.json` (CHOWDER frozen for 3 merges, SUM|MER, BLIZ|ZARD).
 - Force-stopping during a level abandons that level, and the Shell Streak was reset.
