@@ -143,6 +143,29 @@ The patterns:
 
 The game shows everything in capitals, so the difference is never visible to players.
 
+## Jumping to a level (for testing)
+
+The game has no usable level-select:
+- The code includes SRDebugger (a third-party in-game debug panel) and functions such as `DEBUGWinLevel`.
+- Three quick taps in any screen corner (the panel's usual way of opening) did nothing in the store build.
+
+What does work is the save file:
+- The current level is the int `gameLevel` in `/sdcard/Android/data/com.AppFore.BubbleWordJam/files/IDIPref.dat`.
+- That file is plain JSON with no checksum, and the level is counted from 0, so level 76 is stored as 75.
+- That folder is readable and writable through adb, with no root needed.
+
+```
+bash set_level.sh 76        # force-stop the game, set the level, relaunch
+bash set_level.sh restore   # put back the save from before the first jump
+```
+
+How it behaves:
+- The first run backs up the original file to `save-backup/`, which git ignores.
+- Tested 2026-11-26: the home screen showed LEVEL 76, and the frozen-bubble intro popup appeared before the board.
+- The board matched `levels.json` (CHOWDER frozen for 3 merges, SUM|MER, BLIZ|ZARD).
+- Force-stopping during a level abandons that level, and the Shell Streak was reset.
+- Other save files (coins, lives, events) are untouched.
+
 ## Caveats
 
 - **Picture bubbles:** they are not in the level data; only 5 words in all levels carry an `icon`. The game chooses pictures at run time, so the files don't say which words show as pictures.
