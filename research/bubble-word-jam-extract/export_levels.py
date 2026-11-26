@@ -28,6 +28,14 @@ def cryptic_start(c):
     return ''.join(chr(l['letter']).upper() if l['revealAtMerge'] == 0 else '?' for l in c['letters'])
 
 
+# Special bubble types: export name, level flag (levels 501+: placed at random when the level loads),
+# and the field holding the [min, max] count for that random placement (none for the chain separator).
+RANDOM = [('chain separator', 'hasSeperator', None), ('cryptic', 'hasCrypticBubbles', 'minMaxCrypticBubbles'),
+          ('backward', 'hasBackwardBubbles', 'minMaxBackwardBubbles'), ('frozen', 'hasFrozenBubbles', 'minMaxFrozenBubbles'),
+          ('burst', 'hasBurstBubbles', 'minMaxBurstBubbles'), ('linked', 'hasLinkedBubbles', 'minMaxLinkedBubbles'),
+          ('key lock', 'hasKeyLockBubbles', 'minMaxKeyLockBubbles'), ('cracked', 'hasCrackBubbles', 'minMaxCrackBubbles'),
+          ('screw lock', 'hasScrewLockBubbles', 'minMaxScrewLockBubbles')]
+
 levels, rows = [], []
 n_levels = 1 + max(int(m.group(1)) for k in L if (m := re.fullmatch(r'Level_(\d+)', k)))
 for n in range(n_levels):
@@ -82,7 +90,9 @@ for n in range(n_levels):
         'split_words': splits,
         'start_moves_est': 3 * len(cats) + splits + t['moveLimit'],
         'move_slack': t['moveLimit'],
-        'chain_separator': sep,
+        'chain_separator': sep or bool(t.get('hasSeperator')),
+        # levels 501+: types switched on for the level, placed on random words at load; value = [min, max] count
+        'random_specials': {name: (t[rng] if rng else None) for name, flag, rng in RANDOM if t.get(flag)},
         'max_bubbles_on_screen': t.get('maxBubblesInScene'),
         'themes': themes,
     })

@@ -8,12 +8,12 @@ The game is a Unity app. Its levels are ScriptableObject assets in Addressables 
 - `levels.json`: all 1,800 levels as this device plays them. For each level:
   - themes, each with its parent theme and words
   - splits (`YEL|LOW`)
-  - special bubbles
+  - special bubbles: set words (levels 1-500), or `random_specials` with types and `[min, max]` counts (levels 501+)
   - theme count
   - split-word count
   - an estimate of the starting moves
 - `words.tsv`: one row per word (91,008 rows): level, theme, parent_theme, word, split, special.
-- `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), Special notes. A bold row per level (theme count, split total, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes-averages.xlsx` is the same with a first sheet, Averages: themes and split words per level for all levels, 1-500, 501-1800 and each block of 100. `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
+- `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), one count column per special bubble type (Behind chain, Cryptic, Backward, Frozen, Burst, Linked, Key lock, Cracked, Screw lock), Special notes. A bold row per level (theme count, split total, special-bubble totals or random ranges, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes-averages.xlsx` is the same with a first sheet, Averages: themes and split words per level for all levels, 1-500, 501-1800 and each block of 100. `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
 - `export_levels.py`: rebuilds both files from the raw dump (see "How it was made").
 
 Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per level (median 12), and split words in 1,530 levels.
@@ -37,21 +37,78 @@ Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per l
 
 ## Bubble types, by first level (this device's variant)
 
-| Level | Type | Data |
-|---|---|---|
-| 3 | Parent themes (a cleared theme returns as a word) | `parentCategory` |
-| 10 | Split words (chunks) | `chunks` |
-| 21 | Chain separator | `bubbleSeparatorData.linkedWords` = words behind the chain, `breakThreshold` 3 |
-| 31 | Cryptic | `crypticBubbles`: letters with `revealAtMerge` (0 = shown at start) |
-| 51 | Backward | `backwardBubbles` |
-| 76 | Frozen (not yet played) | `frozenBubbles`: `mergesNeeded` before it thaws |
-| 81 | Burst (not yet played) | `burstBubbles`: `movesRemaining` |
-| 101 | Linked (not yet played) | `linkedBubbles`: word tied to chunk(s) |
-| 126 | Key and lock (not yet played) | `keyLockBubbles`: `keyWord` unlocks `lockWord` |
-| 151 | Cracked (not yet played) | `crackedBubbles`: a whole word that breaks into two chunks after `breakNum` |
-| 161 | Screw lock (not yet played) | `screwLockBubbles`: `screwCount` screws, removed by `screwDriverWords` |
+| Level | Type | First random level (501+) | Levels 1-500 / 501-1800 | Data |
+|---|---|---|---|---|
+| 3 | Parent themes (a cleared theme returns as a word) | | | `parentCategory` |
+| 10 | Split words (chunks) | | | `chunks` |
+| 21 | Chain separator | 502 | 58 / 176 | `bubbleSeparatorData.linkedWords` = words behind the chain, `breakThreshold` 3 |
+| 31 | Cryptic | 509 | 61 / 168 | `crypticBubbles`: letters with `revealAtMerge` (0 = shown at start) |
+| 51 | Backward | 504 | 68 / 188 | `backwardBubbles` |
+| 76 | Frozen (played once: intro popup shown) | 503 | 36 / 160 | `frozenBubbles`: `mergesNeeded` before it thaws |
+| 81 | Burst (not yet played) | 506 | 29 / 142 | `burstBubbles`: `movesRemaining` |
+| 101 | Linked (not yet played) | 508 | 30 / 137 | `linkedBubbles`: word tied to chunk(s) |
+| 126 | Key and lock (not yet played) | 504 | 27 / 143 | `keyLockBubbles`: `keyWord` unlocks `lockWord` |
+| 151 | Cracked (not yet played) | 505 | 31 / 167 | `crackedBubbles`: a whole word that breaks into two chunks after `breakNum` |
+| 161 | Screw lock (not yet played) | 502 | 51 / 168 | `screwLockBubbles`: `screwCount` screws, removed by `screwDriverWords` |
 
 The game's saved state (`LevelVariantPersonalData.dat`) uses the same nine intro-popup names: chain separator, frozen, lock, burst, cryptic, screw, backward, cracked and linked.
+
+**Two ways of placing special bubbles:**
+
+- **Levels 1-500:** special bubbles sit on set words, listed in the level data.
+- **Levels 501-1800:** none are placed in the data. Instead the level switches a type on and gives a `[min, max]` count:
+  - the switches are `hasCrypticBubbles`, `hasSeperator` and the rest
+  - the counts are in `minMaxCrypticBubbles` and the rest
+  - the game picks the words when the level loads, so they may differ between plays
+- **How common:**
+  - 1,098 of levels 501-1800 switch on at least one type, 345 switch on two, and 3 switch on three.
+  - In levels 1-500, only about 320 levels have any, and 11 mix two types.
+- **In the export:**
+  - `levels.json` has `random_specials`: type, then `[min, max]` (`null` for the chain separator).
+  - The spreadsheets show the range on the level row (for example `3-4`, or `yes` for the chain).
+  - The theme rows are left blank for those types.
+
+**Frozen bubbles can make a level impossible:**
+
+- A frozen word thaws only after its count of merges. It seems to count only merges made while it is on the board.
+- If it appears late, too few merges may be left. Level 76 (ANENOME, 10 merges) ended unwinnable without a booster.
+- Other levels with 10 or more: 94, 125, 138, 145, 203 (TIGER, 15), 229, 231, 257, 263, 299, 306, 342, 404, 416, 458, 469 and 483.
+
+## Other features, by first level (from play)
+
+The unlock levels for boosters, events and offers aren't in the level files:
+- The code names them (`HintUnlockLevel`, `MagnetUnlockLevel`, `StreakUnlockLevel`, `DailyMissionUnlockLevel`, `BattlePassUnlockLevel`, `PiggyBankUnlockLevel`, `TidalTrialsUnlockLevel`, `LavaQuestUnlockLevel` and others).
+- Their values come from the game's remote config, which is fetched from the server and stored where adb can't read it.
+
+So this table only has what was seen in play. Details are in `../bubble-word-jam-levels.md`, "New features log".
+
+| Level | Feature |
+|---|---|
+| 2 | Move limit; Mastery score at the end of a level |
+| 3 | Extra Bubbles booster; picture bubbles |
+| 4 | Hint booster |
+| 5 | Move streak (+1 move per 5 correct merges in a row) |
+| 6 | Tap and hold to preview a word |
+| 7 | Magnet booster |
+| 8 | First HARD level (also 19, 24, 39) |
+| 10 | Rewarded-ad X2 coins; "Welcome!" chest |
+| 11 | Welcome Pack offer (real money) |
+| 15 | Home button on the Well Done screen |
+| 25 | First EXPERT level (also 40) |
+| 35 | Out-of-moves screen (+5 moves free); low-moves warning |
+| 36 | Pre-level screen with free boosters |
+| 51 | Shell Streak (beat 5 levels in a row for free boosters) |
+| 60 | Seasonal event (acorn icon, 4-day timer) |
+
+Events and features named in the code but not yet seen:
+- Daily missions
+- Battle Pass
+- Piggy Bank
+- Tidal Trials
+- Lava Quest
+- Champion Arena
+- Weekly leaderboard
+- Starfish Trail (its popup appeared on reaching level 76 by the jump)
 
 ## Patterns in theme and split-word counts
 
