@@ -7,19 +7,22 @@ How the raw input is made (see README.md):
      ({asset name: typetree}); asset names are Level_N[_variant], N counting from 0 (game level = N + 1).
 
 Variant rule: this device plays Level_N_ob where it exists, else Level_N (checked against levels 1-74 as played).
+Other installs are in other A/B groups and play other variant sets (a phone in group 2 plays plain Level_N);
+the optional SUFFIX picks the set: _ob (default), '' for the original levels, _cd, _heartbeat and so on.
 
-Usage: python export_levels.py levels_raw.json OUT_DIR
+Usage: python export_levels.py levels_raw.json OUT_DIR [SUFFIX]
 Writes OUT_DIR/levels.json and OUT_DIR/words.tsv.
 """
 import json, os, re, sys
 
 raw, out_dir = sys.argv[1], sys.argv[2]
+SUFFIX = sys.argv[3] if len(sys.argv) > 3 else '_ob'
 L = json.load(open(raw, encoding='utf-8'))
 
 
 def pick(n):
-    if f'Level_{n}_ob' in L:
-        return f'Level_{n}_ob'
+    if SUFFIX and f'Level_{n}{SUFFIX}' in L:
+        return f'Level_{n}{SUFFIX}'
     return f'Level_{n}'
 
 

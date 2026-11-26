@@ -48,6 +48,16 @@ Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per l
   - The first appearances match what was played: chain lock at 21, cryptic bubbles at 31, backward words at 51.
   - In the base and other variants, cryptic bubbles start only at 121 and backward words at 201.
   - Another player may get different levels below 500.
+- **Confirmed on a second install (2026-11-26).** The Pixel 6a's save has `FirebaseExperimentBucket` 2, and the emulator's has 6. The phone plays the plain `Level_N` set: level 101 had no special bubbles, and level 126 introduced cryptic bubbles (its 3 cryptic words). In the `_ob` set, 101 has linked bubbles and 126 key lock.
+- First levels of each special bubble, by set:
+
+  | Set | Chain | Cryptic | Backward | Frozen | Burst | Linked | Key lock | Cracked | Screw lock |
+  |---|---|---|---|---|---|---|---|---|---|
+  | Original `Level_N` (also `_cd`, `_heartbeat`, `_early`) | 20 | 121 | 201 | 30 | 81 | 251 | 50 | 301 | 161 |
+  | `_ob` and `_ocd` | 21 | 31 | 51 | 76 | 81 | 101 | 126 | 151 | 161 |
+  | `_heartbeatob` | 21 | 30 | 50 | 76 | 103 | 251 | 107 | 301 | 161 |
+
+- `export_levels.py` takes an optional third argument for the set: `_ob` (the default, used for `levels.json`), `""` for the original levels, `_cd` and so on.
 
 ## Bubble types, by first level (this device's variant)
 
@@ -281,7 +291,7 @@ A real phone works the same way. Tested 2026-11-26 on a Pixel 6a running Android
 ### On the phone, without a computer
 
 `phone/` holds a version that runs on the phone itself:
-- `bwj-edit.sh` takes the level number only. It always sets unlimited lives (30 days) and 99 hints, then relaunches the game. The phone's shell has only 32-bit arithmetic, so the script builds the .NET-ticks end time out of two parts.
+- `bwj-edit.sh` takes the level number only. It always sets unlimited lives (30 days, with 5 lives underneath) and 99 each of Hint, Magnet and Extra Bubbles, then relaunches the game. The phone's shell has only 32-bit arithmetic, so the script builds the .NET-ticks end time out of two parts.
 - `install.sh` adds a `bwj` command to Termux.
 - The phone gets adb-level rights through [Shizuku](https://github.com/RikkaApps/Shizuku) and its `rish` shell.
 
@@ -302,7 +312,8 @@ Tested 2026-11-26 on the Pixel 6a: `bwj 81` worked from Termux through Shizuku.
 - **The list:** all 1,800 levels. Each shows its special bubbles and the themes it contains, and the first appearance of each feature is marked NEW.
 - **Filters:** all levels, first appearances, or one bubble type.
 - **Jump box:** type a level number to go straight to it.
-- **Jumping:** tapping a level asks to confirm, then runs `phone/bwj-edit.sh` (copied into the app at build time) through Shizuku. That sets the level, unlimited lives and 99 hints, and relaunches the game.
+- **Jumping:** tapping a level asks to confirm, then runs `phone/bwj-edit.sh` (copied into the app at build time) through Shizuku. That sets the level, unlimited lives and 99 of each booster, and relaunches the game.
+- **Level set:** a dropdown picks the original levels or the `_ob` levels. Each install plays one set, depending on its A/B group (see "Level numbering and variants"); the choice is remembered.
 - **Needs:** Shizuku running, and this app allowed in Shizuku. The app's top line says which step is missing; tap it to fix.
 
 Build and install it from `selector-app/`:
@@ -310,7 +321,7 @@ Build and install it from `selector-app/`:
 2. Run Gradle 9.4.1 with `assembleDebug`.
 3. Install with `adb install -r app/build/outputs/apk/debug/app-debug.apk`.
 
-`make_levels_asset.py` regenerates `app/src/main/assets/levels.tsv` from `levels.json`.
+`make_levels_asset.py` makes the lists `app/src/main/assets/levels-ob.tsv` (from `levels.json`) and `levels-original.tsv` (from `export_levels.py levels_raw.json OUT ""`).
 
 Shizuku has to be running:
 - After every phone restart, start it in the Shizuku app with Wireless debugging, or from a computer with `adb shell <app dir>/lib/arm64/libshizuku.so`.

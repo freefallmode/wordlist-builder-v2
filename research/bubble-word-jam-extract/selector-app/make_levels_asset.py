@@ -1,6 +1,6 @@
 """Make the selector app's level list from levels.json.
 
-Usage: python make_levels_asset.py ../levels.json app/src/main/assets/levels.tsv
+Usage: python make_levels_asset.py LEVELS.json app/src/main/assets/levels-ob.tsv (or levels-original.tsv)
 One line per level, tab-separated:
   level, types (comma list, for the filter), specials (shown text), new (types first seen here),
   themes count, split words, theme names (top-level themes, '; ').

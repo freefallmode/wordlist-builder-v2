@@ -42,15 +42,18 @@ import rikka.shizuku.Shizuku;
 
 /**
  * Bubble Word Jam level selector for testing. Tap a level: the game's save is set to that level, with
- * unlimited lives and 99 hints, and the game relaunches. The edit is assets/bwj-edit.sh (the same
+ * unlimited lives and 99 of each booster, and the game relaunches. The edit is assets/bwj-edit.sh (the same
  * script as the Termux bwj command), run with adb-level rights through Shizuku.
  */
 public class MainActivity extends Activity {
     private static final String SHIZUKU_PKG = "moe.shizuku.privileged.api";
     private static final String[] FILTERS = {"All levels", "First appearances", "chain", "cryptic",
             "backward", "frozen", "burst", "linked", "key lock", "cracked", "screw lock"};
+    /** The game is A/B testing level variants: each install plays one set (see the README). */
+    private static final String[] SET_NAMES = {"Original levels (Level_N)", "_ob levels (Level_N_ob)"};
+    private static final String[] SET_FILES = {"levels-original.tsv", "levels-ob.tsv"};
 
-    /** One line of assets/levels.tsv. */
+    /** One line of assets/levels-*.tsv. */
     private static final class Level {
         int number, themes, split;
         String types, specials, isNew, names;
@@ -64,6 +67,7 @@ public class MainActivity extends Activity {
     private EditText number;
     private LevelAdapter adapter;
     private int pad;
+    private int filterPos;
 
     private final Shizuku.OnBinderReceivedListener binderReceived = () -> runOnUiThread(this::updateStatus);
     private final Shizuku.OnBinderDeadListener binderDead = () -> runOnUiThread(this::updateStatus);
@@ -73,11 +77,13 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle state) {
         super.onCreate(state);
+        int set = getPreferences(MODE_PRIVATE).getInt("set", 0);
         try {
-            loadAssets();
+            script = new String(readAll(getAssets().open("bwj-edit.sh")), StandardCharsets.UTF_8);
         } catch (Exception e) {
-            Toast.makeText(this, "Could not read the level list: " + e, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Could not read the edit script: " + e, Toast.LENGTH_LONG).show();
         }
+        loadLevels(set);
         pad = dp(16);
 
         LinearLayout root = new LinearLayout(this);
@@ -118,6 +124,22 @@ public class MainActivity extends Activity {
         row.addView(go);
         root.addView(row);
 
+        Spinner sets = new Spinner(this);
+        ArrayAdapter<String> sa = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, SET_NAMES);
+        sa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        sets.setAdapter(sa);
+        sets.setSelection(set);
+        sets.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> p, View v, int pos, long id) {
+                if (pos == getPreferences(MODE_PRIVATE).getInt("set", 0)) return;
+                getPreferences(MODE_PRIVATE).edit().putInt("set", pos).apply();
+                loadLevels(pos);
+                applyFilter(filterPos);
+            }
+            public void onNothingSelected(AdapterView<?> p) {}
+        });
+        root.addView(sets);
+
         Spinner filter = new Spinner(this);
         ArrayAdapter<String> fa = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, FILTERS);
         fa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -157,9 +179,10 @@ public class MainActivity extends Activity {
         super.onDestroy();
     }
 
-    private void loadAssets() throws Exception {
+    private void loadLevels(int set) {
+        all.clear();
         try (BufferedReader r = new BufferedReader(new InputStreamReader(
-                getAssets().open("levels.tsv"), StandardCharsets.UTF_8))) {
+                getAssets().open(SET_FILES[set]), StandardCharsets.UTF_8))) {
             String line;
             while ((line = r.readLine()) != null) {
                 String[] f = line.split("\t", -1);
@@ -174,11 +197,13 @@ public class MainActivity extends Activity {
                 l.names = f[6];
                 all.add(l);
             }
+        } catch (Exception e) {
+            Toast.makeText(this, "Could not read the level list: " + e, Toast.LENGTH_LONG).show();
         }
-        script = new String(readAll(getAssets().open("bwj-edit.sh")), StandardCharsets.UTF_8);
     }
 
     private void applyFilter(int pos) {
+        filterPos = pos;
         shown.clear();
         for (Level l : all) {
             if (pos == 0
@@ -231,7 +256,7 @@ public class MainActivity extends Activity {
         } else if (Shizuku.checkSelfPermission() != PackageManager.PERMISSION_GRANTED) {
             status.setText("Tap here to allow this app in Shizuku.");
         } else {
-            status.setText("Ready. Tap a level: it also sets unlimited lives and 99 hints, then relaunches the game.");
+            status.setText("Ready. Tap a level: it also sets unlimited lives and 99 of each booster, then relaunches the game. Pick the level set this install plays (it depends on its A/B group).");
         }
     }
 
@@ -253,7 +278,7 @@ public class MainActivity extends Activity {
         }
         Level l = all.get(level - 1);
         String msg = (l.specials.isEmpty() ? "No special bubbles." : l.specials)
-                + "\n\nSets unlimited lives and 99 hints, then relaunches Bubble Word Jam."
+                + "\n\nSets unlimited lives and 99 hints, magnets and extra bubbles, then relaunches Bubble Word Jam."
                 + " If the game offers Load Data, close it with X.";
         new AlertDialog.Builder(this)
                 .setTitle("Jump to level " + level + "?")
