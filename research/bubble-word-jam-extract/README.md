@@ -53,6 +53,51 @@ Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per l
 
 The game's saved state (`LevelVariantPersonalData.dat`) uses the same nine intro-popup names: chain separator, frozen, lock, burst, cryptic, screw, backward, cracked and linked.
 
+## Patterns in theme and split-word counts
+
+**Themes per level follow a 5-level cycle from level 301 on.** By the last digit of the level number:
+
+| Ends in | Themes |
+|---|---|
+| 1, 6 | 10 |
+| 2, 7 | 10 |
+| 3, 8 | 12 |
+| 4, 9 | 14 |
+| 5, 0 | 16 |
+
+- **Exceptions from 501 to 1800:** only 9 levels: 546 (26 themes, the most in the game), 603, 607, 608, 638, 901, 1446, 1794 and 1795.
+- **Exceptions from 301 to 400:** only level 399.
+- **Levels 1-300 are irregular:**
+  - Levels 1-4 build up from 5 to 10 themes.
+  - Levels 1-100 mostly have 8-12.
+  - The count climbs through 101-300; levels 201-300 mostly have 14-16.
+- **Levels 401-500** use the same shape but larger: 14, 14, 16, 18, 18-20 (mean 16.1). Eight of the nine levels with 20 or more themes are here.
+- **Other variants:** the base and other variants give the same picture below 500.
+
+**Split words per level have no cycle and fall over time.**
+
+- **Range:** from 0 to 13 per level.
+  - Levels ending in 0 or 5 average only slightly more.
+  - The correlation with the theme count is weak (0.12).
+- **Split words per theme:**
+
+  | Levels | Split words per theme |
+  |---|---|
+  | 1-300 | 0.31 |
+  | 301-600 | 0.23 |
+  | 601-900 | 0.26 |
+  | 901-1200 | 0.19 |
+  | 1201-1500 | 0.18 |
+  | 1501-1800 | 0.16 |
+
+  From 1101 on, most stretches have at most 3 per level.
+- **No split words:**
+  - levels 1-9 (split words start at 10)
+  - the levels that introduce a new bubble type: 20-22, 33-34 and 51-52
+  - many levels in 101-200, where frozen, burst and linked bubbles arrive
+
+**Move slack** (`moveLimit`) is 10 on every level from 201 on, and close to 10 before that.
+
 ## Caveats
 
 - **Picture bubbles:** they are not in the level data; only 5 words in all levels carry an `icon`. The game chooses pictures at run time, so the files don't say which words show as pictures.
