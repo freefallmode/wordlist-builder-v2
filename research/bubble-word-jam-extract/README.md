@@ -172,6 +172,25 @@ Across all levels, including those with none, the mean is 2.8 split words.
 
 **Move slack** (`moveLimit`) is 10 on every level from 201 on, and close to 10 before that.
 
+## Repeated words and themes
+
+Counted over all 1,800 levels, ignoring case.
+
+**Words:** 21,605 different words.
+
+- 12,381 (57%) appear in more than one theme. No word appears twice in one level, so these are also the words in more than one level.
+- 10,251 of those appear under more than one theme name (bow under weapons in one level, under violin in another). The rest come back only because their theme returns.
+- 9,224 words appear only once.
+- Most levels: bridge 91, bow 79, emerald 75, violin 71, mint 70.
+- Most theme names: helmet 47, water 46, mint 40.
+
+**Themes:** 10,857 different theme names fill 22,752 theme slots.
+
+- 4,162 theme names appear in more than one level. 1,123 of them have the same four words every time; 3,039 change their words at least once.
+- 6,695 theme names are used once.
+- No theme appears twice in one level.
+- Most levels: Opera 43, Violin 38, Card Games 34, Pottery, Mint and Gemstones 33.
+
 ## Why early levels have capitals
 
 **Capitalised words by level:**
