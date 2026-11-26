@@ -104,9 +104,26 @@ wb.save(base + '.xlsx')
 avg = wb.create_sheet('Averages', 0)
 avg.append(['Levels', 'Levels in range', 'Themes per level (mean)', 'Themes (median)',
             'Levels with split words', 'Split words per level, where any (mean)',
-            'Split words where any (median)', 'Split words per level, all levels (mean)'])
+            'Split words where any (median)', 'Split words per level, all levels (mean)']
+           + [h for name, _, _ in TYPES for h in (f'{name}: levels with any',
+                                                 f'{name}: bubbles per level, where any (mean)')])
 for c in avg[1]:
     c.font = bold
+
+
+def type_counts(l):
+    """Per type: the number of bubbles in the level, the midpoint of the random range for
+    levels 501+, None when the level has the type but no count (random chain separator), 0 when none."""
+    rnd = l.get('random_specials', {})
+    totals = [sum(c) for c in zip(*(theme_counts(t) for t in l['themes']))]
+    out = []
+    for total, (_, key, _) in zip(totals, TYPES):
+        if key in rnd:
+            r = rnd[key]
+            out.append(None if r is None else (r[0] + r[1]) / 2)
+        else:
+            out.append(total)
+    return out
 
 
 def stats(name, lv):
@@ -114,8 +131,14 @@ def stats(name, lv):
     s = [l['split_words'] for l in lv]
     nz = [x for x in s if x]
     med = lambda xs: sorted(xs)[len(xs) // 2] if len(xs) % 2 else sum(sorted(xs)[len(xs) // 2 - 1:len(xs) // 2 + 1]) / 2
-    avg.append([name, len(lv), round(sum(t) / len(t), 2), med(t), len(nz),
-                round(sum(nz) / len(nz), 2), med(nz), round(sum(s) / len(s), 2)])
+    row = [name, len(lv), round(sum(t) / len(t), 2), med(t), len(nz),
+           round(sum(nz) / len(nz), 2), med(nz), round(sum(s) / len(s), 2)]
+    per = list(zip(*(type_counts(l) for l in lv)))
+    for col in per:
+        has = [x for x in col if x != 0]
+        nums = [x for x in has if x is not None]
+        row += [len(has), round(sum(nums) / len(nums), 2) if nums else '']
+    avg.append(row)
 
 
 stats('All 1-1800', levels)
@@ -124,9 +147,14 @@ stats('501-1800', levels[500:])
 for b in range(0, len(levels), 100):
     stats(f'{b + 1}-{b + 100}', levels[b:b + 100])
 avg.insert_rows(5)
-for col, width in zip('ABCDEFGH', (12, 10, 14, 10, 14, 18, 14, 18)):
-    avg.column_dimensions[col].width = width
+avg.append([])
+avg.append(['Special-bubble means: levels 501+ place bubbles on random words; their count is taken as '
+            'the middle of the level\'s min-max range. Random chain separators have no count, so they '
+            'count in "levels with any" but not in the mean.'])
+for i, width in enumerate([12, 10, 14, 10, 14, 18, 14, 18] + [12, 16] * len(TYPES)):
+    avg.column_dimensions[avg.cell(1, i + 1).column_letter].width = width
 for c in avg[1]:
     c.alignment = Alignment(wrap_text=True, vertical='top')
+avg.freeze_panes = 'B2'
 wb.save(base + '-averages.xlsx')
 print(len(levels), 'levels,', n, 'theme rows')
