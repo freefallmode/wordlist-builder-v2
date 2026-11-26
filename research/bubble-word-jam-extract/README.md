@@ -14,6 +14,13 @@ The game is a Unity app. Its levels are ScriptableObject assets in Addressables 
   - an estimate of the starting moves
 - `words.tsv`: one row per word (91,008 rows): level, theme, parent_theme, word, split, special.
 - `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), one count column per special bubble type (Behind chain, Cryptic, Backward, Frozen, Burst, Linked, Key lock, Cracked, Screw lock), Special notes. A bold row per level (theme count, split total, special-bubble totals or random ranges, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes-averages.xlsx` is the same with a first sheet, Averages: themes and split words per level for all levels, 1-500, 501-1800 and each block of 100. `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
+- `theme-leaks.xlsx`: words that contain or give away their own theme name (975 of 91,008; 213 in levels 1-500), one row each with Level, Theme, Word, Kind:
+  - `word = theme` (8): hatchets / hatchet
+  - `shares a word` (386): bears / polar bear
+  - `theme word inside` (581): Berries / Blueberry
+  - Sub-themes returning as bubbles are left out.
+  - Matching is by letters, so some rows are coincidences (birds of prey / osprey).
+  - Rebuild with `python theme_leaks.py levels.json theme-leaks.xlsx`.
 - `export_levels.py`: rebuilds both files from the raw dump (see "How it was made").
 
 Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per level (median 12), and split words in 1,530 levels.
