@@ -13,7 +13,13 @@ The game is a Unity app. Its levels are ScriptableObject assets in Addressables 
   - split-word count
   - an estimate of the starting moves
 - `words.tsv`: one row per word (91,008 rows): level, theme, parent_theme, word, split, special.
-- `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), one count column per special bubble type (Behind chain, Cryptic, Backward, Frozen, Burst, Linked, Key lock, Cracked, Screw lock), Special notes. A bold row per level (theme count, split total, special-bubble totals or random ranges, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes-averages.xlsx` is the same with a first sheet, Averages: themes, split words and each special-bubble type per level (levels with any, mean count where any; levels 501+ use the middle of their random range) for all levels, 1-500, 501-1800 and each block of 100. A second sheet, Theme words, lists each theme name once (case ignored) with its number of different words, the number of levels it appears in, its first level and every word it uses across all levels. `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
+- `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), one count column per special bubble type (Behind chain, Cryptic, Backward, Frozen, Burst, Linked, Key lock, Cracked, Screw lock), Special notes. A bold row per level (theme count, split total, special-bubble totals or random ranges, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes-averages.xlsx` has four sheets, summaries first:
+  1. **Level averages**: themes, split words and each special-bubble type per level (levels with any, mean count where any; levels 501+ use the middle of their random range) for all levels, 1-500, 501-1800 and each block of 100.
+  2. **Words per theme**: min, max, mean and median words per theme, counting each theme's whole word set (every theme in a level has exactly 4), plus how many themes have each set size.
+  3. **Theme word sets**: each theme name once (case ignored) with its number of different words, the number of levels it appears in, its first level and every word it uses across all levels.
+  4. **Themes by level**: the same sheet as `themes.xlsx`.
+
+  `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
 - `theme-leaks.xlsx`: words that contain or give away their own theme name (975 of 91,008; 213 in levels 1-500), one row each with Level, Theme, Word, Kind:
   - `word = theme` (8): hatchets / hatchet
   - `shares a word` (386): bears / polar bear
@@ -190,6 +196,16 @@ Counted over all 1,800 levels, ignoring case.
 - 6,695 theme names are used once.
 - No theme appears twice in one level.
 - Most levels: Opera 43, Violin 38, Card Games 34, Pottery, Mint and Gemstones 33.
+
+**Words per theme.** Every theme in a level has exactly 4 words. Counting each theme's whole word set across its levels:
+
+| Themes counted | Themes | Min | Max | Mean | Median |
+|---|---|---|---|---|---|
+| All themes | 10,857 | 4 | 44 | 5.56 | 4 |
+| Themes in more than one level | 4,162 | 4 | 44 | 8.06 | 7 |
+| Themes whose words change | 3,039 | 5 | 44 | 9.56 | 8 |
+
+7,818 themes (72%) only ever use the same 4 words. The largest sets are Music (44) and Opera (43).
 
 **Why a returning theme's words change.** Of the 3,039 theme names whose words change:
 

@@ -2,7 +2,7 @@
 
 Usage: python themes_table.py levels.json OUT_BASENAME
 Writes OUT_BASENAME.xlsx (a bold summary row per level, its theme rows grouped under it so they
-collapse and expand), OUT_BASENAME-averages.xlsx (the same plus a first sheet of per-level
+collapse and expand), OUT_BASENAME-averages.xlsx (sheets Level averages, Words per theme, Theme word sets, then the same Themes by level; per-level
 averages: all levels, 1-500, 501-1800 and each block of 100) and OUT_BASENAME.csv (the theme
 rows only, no grouping).
 
@@ -16,6 +16,7 @@ Special bubble counts:
     rows are left blank for those types.
 """
 import csv, json, sys
+from collections import Counter
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 
@@ -72,7 +73,7 @@ def safe(v):
 
 wb = Workbook()
 ws = wb.active
-ws.title = 'Themes'
+ws.title = 'Themes by level'
 ws.append(HEAD)
 for c in ws[1]:
     c.font = Font(bold=True)
@@ -100,8 +101,9 @@ for i, width in enumerate(widths):
     ws.column_dimensions[ws.cell(1, i + 1).column_letter].width = width
 wb.save(base + '.xlsx')
 
-# Second file: the same sheet plus an Averages sheet.
-avg = wb.create_sheet('Averages', 0)
+# Second file: summary sheets first, then the data sheets.
+#   Level averages | Words per theme | Theme word sets | Themes by level
+avg = wb.create_sheet('Level averages', 0)
 avg.append(['Levels', 'Levels in range', 'Themes per level (mean)', 'Themes (median)',
             'Levels with split words', 'Split words per level, where any (mean)',
             'Split words where any (median)', 'Split words per level, all levels (mean)']
@@ -166,7 +168,7 @@ for lv in levels:
         p['levels'].append(lv['level'])
         for x in t['words']:
             p['words'].setdefault(' '.join(x['word'].lower().split()), x['word'])
-tw = wb.create_sheet('Theme words', 1)
+tw = wb.create_sheet('Theme word sets', 1)
 tw.append(['Theme', 'Words', 'Levels used', 'First level', 'All words'])
 for c in tw[1]:
     c.font = bold
@@ -178,5 +180,31 @@ tw.freeze_panes = 'B2'
 tw.auto_filter.ref = f'A1:E{len(pools) + 1}'
 for col, width in zip('ABCDE', (30, 8, 8, 8, 120)):
     tw.column_dimensions[col].width = width
+
+# Words per theme: every theme slot in a level has 4 words, so the spread is in the word sets.
+ws_ = wb.create_sheet('Words per theme', 1)
+ws_.append(['Every theme in a level has exactly 4 words. These stats count each theme\'s whole word '
+            'set across all the levels it appears in (sheet Theme word sets).'])
+ws_.append([])
+ws_.append(['Themes counted', 'Themes', 'Min words', 'Max words', 'Mean', 'Median'])
+for c in ws_[3]:
+    c.font = bold
+sizes = {k: len(p['words']) for k, p in pools.items()}
+groups = [('All themes', list(sizes)),
+          ('Themes in more than one level', [k for k in pools if len(pools[k]['levels']) > 1]),
+          ('Themes whose words change', [k for k in pools if sizes[k] > 4])]
+for name, keys in groups:
+    xs = sorted(sizes[k] for k in keys)
+    mid = len(xs) // 2
+    ws_.append([name, len(xs), xs[0], xs[-1], round(sum(xs) / len(xs), 2),
+                xs[mid] if len(xs) % 2 else (xs[mid - 1] + xs[mid]) / 2])
+ws_.append([])
+ws_.append(['Words in the set', 'Themes'])
+for c in ws_[ws_.max_row]:
+    c.font = bold
+for size, count in sorted(Counter(sizes.values()).items()):
+    ws_.append([size, count])
+for col, width in zip('ABCDEF', (30, 10, 10, 10, 10, 10)):
+    ws_.column_dimensions[col].width = width
 wb.save(base + '-averages.xlsx')
 print(len(levels), 'levels,', n, 'theme rows')
