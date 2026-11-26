@@ -1,0 +1,170 @@
+Library batch v479 (for Simon's review): Nature & Earth, trees branch
+1. trees
+  linked: chestnut 29945 [tree] in trees (typicality 2): well known here; it was not linked
+  linked: walnut 29946 [tree] in trees (typicality 2): well known here; it was not linked
+  linked: holly 29953 [tree] in trees (typicality 3): well known here; it was not linked
+  linked: apple tree 29967 in trees (typicality 2, shown "apple"): well known here; it was not linked
+  linked: cherry tree 29969 in trees (typicality 2, shown "cherry"): well known here; it was not linked
+  linked: olive tree 29976 in trees (typicality 3, shown "olive"): well known here; it was not linked
+  new entry: weeping willow 68966 noun, common, familiarity 3: a common word that was not in the library
+  linked: weeping willow 68966 in trees (typicality 3): a common word that was not in the library
+2. deciduous trees
+  linked: hawthorn 1651 [tree] in deciduous_trees (typicality 3): well known here; it was not linked
+  linked: dogwood 1681 in deciduous_trees (typicality 4): well known here; it was not linked
+  linked: apple tree 29967 in deciduous_trees (typicality 2, shown "apple"): well known here; it was not linked
+  linked: cherry tree 29969 in deciduous_trees (typicality 3, shown "cherry"): well known here; it was not linked
+  linked: weeping willow 68966 in deciduous_trees (typicality 3): well known here; it was not linked
+3. evergreen trees
+  linked: olive tree 29976 in evergreen_trees (typicality 3, shown "olive"): well known here; it was not linked
+4. pine species
+  linked: jack pine 60477 in pine_species (typicality 5, shown "jack"): well known here; it was not linked
+5. fruit trees
+  linked: papaya tree 30019 in fruit_trees (typicality 3, shown "papaya"): well known here; it was not linked
+6. tropical trees
+  linked: avocado tree 29986 in tropical_trees (typicality 3, shown "avocado"): well known here; it was not linked
+  linked: cashew tree 30000 in tropical_trees (typicality 3, shown "cashew"): well known here; it was not linked
+7. palm species
+  linked: oil palm 56421 in palm_species (typicality 3, shown "oil"): well known here; it was not linked
+  linked: acai palm 56456 in palm_species (typicality 4, shown "acai"): well known here; it was not linked
+  linked: kentia palm 30562 in palm_species (typicality 4, shown "kentia"): well known here; it was not linked
+  linked: betel palm 30009 in palm_species (typicality 5, shown "betel"): well known here; it was not linked
+8. tree parts
+  linked: fruit 30089 [tree] in tree_parts (typicality 2): well known here; it was not linked
+  linked: flower 28286 [plant] in tree_parts (typicality 3): well known here; it was not linked
+  linked: seed 17411 [plant] in tree_parts (typicality 3): well known here; it was not linked
+9. types of wood
+  linked: spruce 1639 in types_of_wood (typicality 3): well known here; it was not linked
+  linked: fir 1638 in types_of_wood (typicality 3): well known here; it was not linked
+  linked: poplar 1647 in types_of_wood (typicality 4): well known here; it was not linked
+10. hedge plants
+  linked: bamboo 1774 [plant] in hedge_plants (typicality 3): well known here; it was not linked
+  linked: cypress 1646 [tree] in hedge_plants (typicality 3): well known here; it was not linked
+  linked: rosemary 716 [culinary herb] in hedge_plants (typicality 4): well known here; it was not linked
+11. things trees drop
+  linked: coconut 351 [fruit] in things_that_fall_from_trees (typicality 2): well known here; it was not linked
+  linked: pollen 14916 in things_that_fall_from_trees (typicality 3): well known here; it was not linked
+  linked: sap 39065 [tree] in things_that_fall_from_trees (typicality 3): well known here; it was not linked
+12. South American trees
+  linked: monkeypod 63130 in south_american_trees (typicality 5): well known here; it was not linked
+13. Asian trees
+  out of asian_trees: monkeypod 63130: it comes from South America (it moves there) (stays in south_american_trees)
+  linked: mango tree 29977 in asian_trees (typicality 3, shown "mango"): well known here; it was not linked
+  linked: cinnamon tree 30024 in asian_trees (typicality 4, shown "cinnamon"): well known here; it was not linked
+  linked: persimmon tree 29991 in asian_trees (typicality 4, shown "persimmon"): well known here; it was not linked
+  linked: mulberry tree 29985 in asian_trees (typicality 4, shown "mulberry"): well known here; it was not linked
+14. eucalypt species
+  linked: jarrah 56433 in eucalypt_species (typicality 4): well known here; it was not linked
+  linked: karri 56441 in eucalypt_species (typicality 4): well known here; it was not linked
+  linked: ironbark 60165 in eucalypt_species (typicality 4): well known here; it was not linked
+  linked: coolabah 60164 in eucalypt_species (typicality 4): well known here; it was not linked
+  linked: bloodwood 60168 in eucalypt_species (typicality 4): well known here; it was not linked
+  linked: stringybark 60166 in eucalypt_species (typicality 5): well known here; it was not linked
+  linked: mallee 60169 in eucalypt_species (typicality 5): well known here; it was not linked
+15. North American trees
+  linked: magnolia 1664 [tree] in north_american_trees (typicality 3): well known here; it was not linked
+  linked: sycamore 1650 in north_american_trees (typicality 3): well known here; it was not linked
+  linked: sassafras 15696 in north_american_trees (typicality 4): well known here; it was not linked
+16. things made from trees
+  out of things_made_from_trees: daily 4570 [newspaper]: a nickname for a newspaper (newspaper stays) (stays in library, media_and_communication, things_you_read, things_made_of_paper, periodicals)
+  out of things_made_from_trees: rag 4569 [newspaper]: a nickname for a newspaper (newspaper stays) (stays in library, media_and_communication, things_you_read, things_made_of_paper, periodicals, media_slang)
+  out of things_made_from_trees: gazette 4571 [official journal]: another newspaper word (newspaper stays) (stays in things_you_read, government_words, newspaper_words, library, media_and_communication, things_made_of_paper, periodicals)
+  linked: baseball bat 44137 in things_made_from_trees (typicality 2): well known here; it was not linked
+  linked: log cabin 24153 in things_made_from_trees (typicality 2): well known here; it was not linked
+  linked: door 24066 [house] in things_made_from_trees (typicality 2): well known here; it was not linked
+  linked: guitar 279 in things_made_from_trees (typicality 3): well known here; it was not linked
+  linked: violin 280 in things_made_from_trees (typicality 3): well known here; it was not linked
+17. things that grow on trees (new)
+  new theme: things_that_grow_on_trees "things that grow on trees" under trees (after things_that_fall_from_trees), pop 2, ident 2: a set rival games have; things trees drop and things made from trees exist
+  linked: apple 87 [fruit] in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: leaf 30033 in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: orange 76 [fruit] in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: cherry 92 [fruit] in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: peach 93 [fruit] in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: lemon 74 [fruit] in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: coconut 351 [fruit] in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: pear 89 [fruit] in things_that_grow_on_trees (typicality 1): a well-known member of the new theme
+  linked: plum 94 [fruit] in things_that_grow_on_trees (typicality 2): a well-known member of the new theme
+  linked: mango 95 [tropical fruit] in things_that_grow_on_trees (typicality 2): a well-known member of the new theme
+  linked: acorn 17362 [nut] in things_that_grow_on_trees (typicality 2): a well-known member of the new theme
+  linked: pine cone 30087 in things_that_grow_on_trees (typicality 2): a well-known member of the new theme
+  linked: blossom 29857 [flowers] in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: hazelnut 17354 [nut] in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: olive 360 [fruit] in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: avocado 111 in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: fig 101 in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: grapefruit 77 [citrus fruit] in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: apricot 352 in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: pomegranate 100 in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: mistletoe 1790 in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: moss 1767 in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: almond 17235 [nut] in things_that_grow_on_trees (typicality 3): a well-known member of the new theme
+  linked: pecan 17352 [nut] in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: papaya 102 in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: lychee 103 in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: persimmon 105 in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: nutmeg 740 [spice] in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: durian 365 in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: jackfruit 106 in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: lichen 30139 in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: catkin 30091 in things_that_grow_on_trees (typicality 4): a well-known member of the new theme
+  linked: breadfruit 17204 in things_that_grow_on_trees (typicality 5): a well-known member of the new theme
+  linked: kumquat 82 in things_that_grow_on_trees (typicality 5): a well-known member of the new theme
+groups
+  group in trees: willow 1633 = weeping willow 68966: a word and its more specific form: one answer
+  group in deciduous_trees: willow 1633 = weeping willow 68966: a word and its more specific form: one answer
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  asian_trees: "Asian trees" pop 3 ident 4: 20 words, easy/middle/hard 1/8/11, theme difficulty 4, 4th-easiest band 3, gap -1.0 -> "Asian trees" pop 3 ident 4: 23 words, easy/middle/hard 1/9/13, theme difficulty 4, 4th-easiest band 3, gap -1.0
+  deciduous_trees: "deciduous trees" pop 2 ident 3: 35 words, easy/middle/hard 7/9/19, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "deciduous trees" pop 2 ident 3: 40 words, easy/middle/hard 8/12/20, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  eucalypt_species: "eucalypt species" pop 5 ident 4: 4 words, easy/middle/hard 0/0/4, theme difficulty 5, 4th-easiest band 5, gap 0.0 -> "eucalypt species" pop 5 ident 4: 11 words, easy/middle/hard 0/0/11, theme difficulty 5, 4th-easiest band 4, gap -1.0
+  evergreen_trees: "evergreen trees" pop 2 ident 3: 33 words, easy/middle/hard 4/9/20, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "evergreen trees" pop 2 ident 3: 34 words, easy/middle/hard 4/10/20, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  fruit_trees: "fruit trees" pop 2 ident 2: 31 words, easy/middle/hard 9/9/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "fruit trees" pop 2 ident 2: 32 words, easy/middle/hard 9/10/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  hedge_plants: "hedge plants" pop 4 ident 3: 30 words, easy/middle/hard 3/3/24, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "hedge plants" pop 4 ident 3: 33 words, easy/middle/hard 3/5/25, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  north_american_trees: "North American trees" pop 2 ident 3: 31 words, easy/middle/hard 2/7/22, theme difficulty 2.5, 4th-easiest band 3, gap 0.5 -> "North American trees" pop 2 ident 3: 34 words, easy/middle/hard 2/9/23, theme difficulty 2.5, 4th-easiest band 3, gap 0.5
+  palm_species: "palm species" pop 4 ident 4: 5 words, easy/middle/hard 1/1/3, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "palm species" pop 4 ident 4: 9 words, easy/middle/hard 1/2/6, theme difficulty 4.5, 4th-easiest band 4, gap -0.5
+  pine_species: "pine species" pop 5 ident 4: 8 words, easy/middle/hard 0/1/7, theme difficulty 5, 4th-easiest band 5, gap 0.0 -> "pine species" pop 5 ident 4: 9 words, easy/middle/hard 0/1/8, theme difficulty 5, 4th-easiest band 5, gap 0.0
+  south_american_trees: "South American trees" pop 4 ident 4: 24 words, easy/middle/hard 1/4/19, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "South American trees" pop 4 ident 4: 25 words, easy/middle/hard 1/4/20, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  things_made_from_trees: "things made from trees" pop 2 ident 3: 42 words, easy/middle/hard 9/17/16, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "things made from trees" pop 2 ident 3: 44 words, easy/middle/hard 12/19/13, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  things_that_fall_from_trees: "things trees drop" pop 3 ident 3: 25 words, easy/middle/hard 8/9/8, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "things trees drop" pop 3 ident 3: 28 words, easy/middle/hard 9/11/8, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  things_that_grow_on_trees: new -> "things that grow on trees" pop 2 ident 2: 34 words, easy/middle/hard 12/11/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  tree_parts: "tree parts" pop 2 ident 1: 28 words, easy/middle/hard 9/9/10, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "tree parts" pop 2 ident 1: 31 words, easy/middle/hard 10/11/10, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  trees: "trees" pop 1 ident 1: 59 words, easy/middle/hard 13/17/29, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "trees" pop 1 ident 1: 66 words, easy/middle/hard 17/20/29, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  tropical_trees: "tropical trees" pop 2 ident 3: 35 words, easy/middle/hard 5/9/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "tropical trees" pop 2 ident 3: 37 words, easy/middle/hard 5/11/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  types_of_wood: "types of wood" pop 2 ident 3: 36 words, easy/middle/hard 10/9/17, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "types of wood" pop 2 ident 3: 39 words, easy/middle/hard 10/11/18, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 1: weeping willow 68966
+Entries deleted 0: none
+library changes 135; entries changed 85; status set to rev 40; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3227 -> 3228; gone none; new things_that_grow_on_trees; theme indexes shift: from index 487 ("things_that_grow_on_trees", was "trees_of_the_world") to the last index 3227
+Theme rows whose fields changed (parent compared by id): 16: trees (index 475 -> 475: counts [6,7,18,23,6] -> [6,11,21,23,6]); deciduous_trees (index 476 -> 476: counts [3,4,10,13,6] -> [3,5,13,14,6]); evergreen_trees (index 477 -> 477: counts [1,3,9,12,8] -> [1,3,10,12,8]); pine_species (index 478 -> 478: counts [0,0,1,1,6] -> [0,0,1,1,7]); fruit_trees (index 479 -> 479: counts [7,2,9,9,4] -> [7,2,10,9,4]); tropical_trees (index 481 -> 481: counts [1,4,9,17,4] -> [1,4,11,17,4]); palm_species (index 482 -> 482: counts [0,1,1,2,1] -> [0,1,2,4,2], range [4,3] -> [4,4]); tree_parts (index 483 -> 483: counts [4,5,9,8,2] -> [4,6,11,8,2]); types_of_wood (index 484 -> 484: counts [2,8,9,12,5] -> [2,8,11,13,5]); hedge_plants (index 485 -> 485: counts [0,3,3,13,11] -> [0,3,5,14,11]); things_that_fall_from_trees (index 486 -> 486: counts [1,7,9,6,2] -> [1,8,11,6,2]); asian_trees (index 489 -> 490: counts [0,1,8,5,6] -> [0,1,9,7,6]); eucalypt_species (index 491 -> 492: counts [0,0,0,2,2] -> [0,0,0,6,5], range [5,4] -> [4,5]); south_american_trees (index 492 -> 493: counts [0,1,4,8,11] -> [0,1,4,8,12]); north_american_trees (index 493 -> 494: counts [0,2,7,16,6] -> [0,2,9,17,6]); things_made_from_trees (index 495 -> 496: counts [3,6,17,8,8] -> [3,9,19,7,6])
+Entry rows 61419 -> 61420; first row whose entry changed: 61419 (weeping willow 68966, was undefined); rows that moved: 0; added weeping willow 68966 (row 61419); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 99866 -> 99949; rows whose link count changed: 83
+Link-index shifts: from row 74 (lime 75) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 4, new 87, rating changed 0
+  gone (other than the deleted themes): things_made_from_trees: "rag" (4569), things_made_from_trees: "daily" (4570), things_made_from_trees: "gazette" (4571), asian_trees: "monkeypod" (63130)
+  new: things_that_grow_on_trees: "lemon" (74), things_that_grow_on_trees: "orange" (76), things_that_grow_on_trees: "grapefruit" (77), things_that_grow_on_trees: "kumquat" (82), things_that_grow_on_trees: "apple" (87), things_that_grow_on_trees: "pear" (89), things_that_grow_on_trees: "cherry" (92), things_that_grow_on_trees: "peach" (93), things_that_grow_on_trees: "plum" (94), things_that_grow_on_trees: "mango" (95), things_that_grow_on_trees: "pomegranate" (100), things_that_grow_on_trees: "fig" (101), things_that_grow_on_trees: "papaya" (102), things_that_grow_on_trees: "lychee" (103), things_that_grow_on_trees: "persimmon" (105), things_that_grow_on_trees: "jackfruit" (106), things_that_grow_on_trees: "avocado" (111), things_made_from_trees: "guitar" (279), things_made_from_trees: "violin" (280), things_that_fall_from_trees: "coconut" (351), things_that_grow_on_trees: "coconut" (351), things_that_grow_on_trees: "apricot" (352), things_that_grow_on_trees: "olive" (360), things_that_grow_on_trees: "durian" (365), hedge_plants: "rosemary" (716), things_that_grow_on_trees: "nutmeg" (740), types_of_wood: "fir" (1638), types_of_wood: "spruce" (1639), hedge_plants: "cypress" (1646), types_of_wood: "poplar" (1647), north_american_trees: "sycamore" (1650), deciduous_trees: "hawthorn" (1651), north_american_trees: "magnolia" (1664), deciduous_trees: "dogwood" (1681), things_that_grow_on_trees: "moss" (1767), hedge_plants: "bamboo" (1774), things_that_grow_on_trees: "mistletoe" (1790), things_that_fall_from_trees: "pollen" (14916), north_american_trees: "sassafras" (15696), things_that_grow_on_trees: "breadfruit" (17204), things_that_grow_on_trees: "almond" (17235), things_that_grow_on_trees: "pecan" (17352), things_that_grow_on_trees: "hazelnut" (17354), things_that_grow_on_trees: "acorn" (17362), tree_parts: "seed" (17411), things_made_from_trees: "door" (24066), things_made_from_trees: "log cabin" (24153), tree_parts: "flower" (28286), things_that_grow_on_trees: "blossom" (29857), trees: "chestnut" (29945), trees: "walnut" (29946), trees: "holly" (29953), trees: "apple" (29967), deciduous_trees: "apple" (29967), trees: "cherry" (29969), deciduous_trees: "cherry" (29969), trees: "olive" (29976), evergreen_trees: "olive" (29976), asian_trees: "mango" (29977), asian_trees: "mulberry" (29985), tropical_trees: "avocado" (29986), asian_trees: "persimmon" (29991), tropical_trees: "cashew" (30000), palm_species: "betel" (30009), fruit_trees: "papaya" (30019), asian_trees: "cinnamon" (30024), things_that_grow_on_trees: "leaf" (30033), things_that_grow_on_trees: "pine cone" (30087), tree_parts: "fruit" (30089), things_that_grow_on_trees: "catkin" (30091), things_that_grow_on_trees: "lichen" (30139), palm_species: "kentia" (30562), things_that_fall_from_trees: "sap" (39065), things_made_from_trees: "baseball bat" (44137), palm_species: "oil" (56421), eucalypt_species: "jarrah" (56433), eucalypt_species: "karri" (56441), palm_species: "acai" (56456), eucalypt_species: "coolabah" (60164), eucalypt_species: "ironbark" (60165), eucalypt_species: "stringybark" (60166), eucalypt_species: "bloodwood" (60168), eucalypt_species: "mallee" (60169), pine_species: "jack" (60477), south_american_trees: "monkeypod" (63130), trees: "weeping willow" (68966), deciduous_trees: "weeping willow" (68966)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 21 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 87 new links existed earlier and was removed (all 221 library versions and 183 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - things that grow on trees, things trees drop: chestnut [nut] and walnut [nut] (sense-twin: the tree senses name the theme)
+  - things made from trees: toilet paper (overlap with paper)
+  - palm species: parlor palm (its UK spelling alias parlour palm holds the word of the theme name)
+
+For Simon:
+  1. daily, rag and gazette leave things made from trees (newspaper nicknames; newspaper stays), as they left recyclables before.
+  2. monkeypod moves from Asian trees to South American trees, where it comes from.
+  3. eucalypt species had four words and gains seven that are in Australian trees already; palm species had five and gains four.
+  4. weeping willow is new and grouped with willow in trees and deciduous trees, as aspen = quaking aspen.

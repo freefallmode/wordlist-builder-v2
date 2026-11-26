@@ -1,0 +1,96 @@
+Library batch v489 (for Simon's review): Nature & Earth, earth science branch
+1. volcanoes
+  linked: smoke 30277 [fire] in volcano_words (typicality 3): well known here; it was not linked
+  linked: sulfur 2067 in volcano_words (typicality 3): well known here; it was not linked
+  linked: evacuation 29100 in volcano_words (typicality 3): well known here; it was not linked
+  new entry: active 68995 [volcano] adjective, common, familiarity 1: a common word that was not in the library
+  linked: active 68995 [volcano] in volcano_words (typicality 2): a common word that was not in the library
+2. lava forms
+  linked: pahoehoe 60429 in lava_forms (typicality 5): well known here; it was not linked
+3. earthquakes
+  linked: evacuation 29100 in earthquake_words (typicality 3): well known here; it was not linked
+4. natural resources (new)
+  new theme: natural_resources "natural resources" under earth_science (after water_cycle_words), pop 2, ident 2: a school set with no list
+  linked: water 861 [liquid] in natural_resources (typicality 1): a well-known member of the new theme
+  linked: coal 2054 in natural_resources (typicality 1): a well-known member of the new theme
+  linked: oil 32326 [fuel] in natural_resources (typicality 1): a well-known member of the new theme
+  linked: gold 202 [metal] in natural_resources (typicality 1): a well-known member of the new theme
+  linked: tree 27965 [plant] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: soil 1838 in natural_resources (typicality 2): a well-known member of the new theme
+  linked: sunlight 49762 [sun light] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: wind 1969 [weather] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: iron 201 [metal] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: forest 28392 [woodland] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: diamond 31656 [gem] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: silver 203 [metal] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: copper 204 [metal] in natural_resources (typicality 2): a well-known member of the new theme
+  linked: stone 2050 [rock] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: sand 2063 [sediment] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: salt 712 [seasoning] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: clay 2064 [soil] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: fish 59990 [animal] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: cotton 5038 in natural_resources (typicality 3): a well-known member of the new theme
+  linked: wildlife 48740 in natural_resources (typicality 3): a well-known member of the new theme
+  linked: rubber 30101 [material] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: aluminum 208 in natural_resources (typicality 3): a well-known member of the new theme
+  linked: marble 2057 [stone] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: granite 2056 in natural_resources (typicality 3): a well-known member of the new theme
+  linked: tin 205 [metal] in natural_resources (typicality 3): a well-known member of the new theme
+  linked: uranium 31704 in natural_resources (typicality 3): a well-known member of the new theme
+  linked: peat 31965 in natural_resources (typicality 4): a well-known member of the new theme
+  linked: lithium 31703 [metal] in natural_resources (typicality 4): a well-known member of the new theme
+  linked: helium 39568 in natural_resources (typicality 4): a well-known member of the new theme
+  linked: nickel 210 [metal] in natural_resources (typicality 4): a well-known member of the new theme
+  linked: zinc 207 in natural_resources (typicality 4): a well-known member of the new theme
+  linked: limestone 2058 in natural_resources (typicality 4): a well-known member of the new theme
+  linked: platinum 211 in natural_resources (typicality 4): a well-known member of the new theme
+  linked: lead 206 [metal] in natural_resources (typicality 4): a well-known member of the new theme
+  linked: gravel 2053 [crushed stone] in natural_resources (typicality 4): a well-known member of the new theme
+  linked: oxygen 40337 in natural_resources (typicality 4): a well-known member of the new theme
+  linked: bauxite 2102 in natural_resources (typicality 5): a well-known member of the new theme
+kin
+  kin: active 68995 [volcano] <-> act 12249 [theater]: one word family
+  kin: active 68995 [volcano] <-> activist 35354: one word family
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  earthquake_words: "earthquakes" pop 3 ident 2: 32 words, easy/middle/hard 4/10/18, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "earthquakes" pop 3 ident 2: 33 words, easy/middle/hard 4/11/18, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  lava_forms: "lava forms" pop 4 ident 4: 5 words, easy/middle/hard 1/0/4, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "lava forms" pop 4 ident 4: 6 words, easy/middle/hard 1/0/5, theme difficulty 4.5, 4th-easiest band 4, gap -0.5
+  natural_resources: new -> "natural resources" pop 2 ident 2: 37 words, easy/middle/hard 13/13/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  volcano_words: "volcanoes" pop 2 ident 2: 30 words, easy/middle/hard 6/8/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "volcanoes" pop 2 ident 2: 34 words, easy/middle/hard 7/11/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 1: active 68995
+Entries deleted 0: none
+library changes 61; entries changed 44; status set to rev 14; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3249 -> 3250; gone none; new natural_resources; theme indexes shift: from index 666 ("natural_resources", was "layers_of_the_atmosphere") to the last index 3249
+Theme rows whose fields changed (parent compared by id): 3: volcano_words (index 653 -> 653: counts [1,5,8,7,9] -> [1,6,11,7,9]); lava_forms (index 654 -> 654: counts [0,1,0,3,1] -> [0,1,0,3,2]); earthquake_words (index 657 -> 657: counts [0,4,10,12,6] -> [0,4,11,12,6])
+Entry rows 61451 -> 61452; first row whose entry changed: 61451 (active 68995, was undefined); rows that moved: 0; added active 68995 (row 61451); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100851 -> 100894; rows whose link count changed: 41
+Link-index shifts: from row 195 (gold 202) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 43, rating changed 0
+  gone (other than the deleted themes): none
+  new: natural_resources: "iron" (201), natural_resources: "gold" (202), natural_resources: "silver" (203), natural_resources: "copper" (204), natural_resources: "tin" (205), natural_resources: "lead" (206), natural_resources: "zinc" (207), natural_resources: "aluminum" (208), natural_resources: "nickel" (210), natural_resources: "platinum" (211), natural_resources: "salt" (712), natural_resources: "water" (861), natural_resources: "soil" (1838), natural_resources: "wind" (1969), natural_resources: "stone" (2050), natural_resources: "gravel" (2053), natural_resources: "coal" (2054), natural_resources: "granite" (2056), natural_resources: "marble" (2057), natural_resources: "limestone" (2058), natural_resources: "sand" (2063), natural_resources: "clay" (2064), volcano_words: "sulfur" (2067), natural_resources: "bauxite" (2102), natural_resources: "cotton" (5038), natural_resources: "tree" (27965), natural_resources: "forest" (28392), volcano_words: "evacuation" (29100), earthquake_words: "evacuation" (29100), natural_resources: "rubber" (30101), volcano_words: "smoke" (30277), natural_resources: "diamond" (31656), natural_resources: "lithium" (31703), natural_resources: "uranium" (31704), natural_resources: "peat" (31965), natural_resources: "oil" (32326), natural_resources: "helium" (39568), natural_resources: "oxygen" (40337), natural_resources: "wildlife" (48740), natural_resources: "sunlight" (49762), natural_resources: "fish" (59990), lava_forms: "pahoehoe" (60429), volcano_words: "active" (68995)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 17 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 43 new links existed earlier and was removed (all 231 library versions and 203 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - volcanoes: crater, vent, cone and the named volcanoes (taken out in v366-v382)
+  - water cycle: rain, cloud, river, lake, dew; soil: mud, dirt, compost, gravel, topsoil (taken out earlier)
+  - natural resources: natural gas (it carries a word of the topic)
+  - the other themes of the branch stay as they are (mostly complete sets such as the layers of the Earth)
+
+For Simon:
+  1. natural resources is a new theme and shares minerals with the themes next to it (gold, silver, copper, iron); it also has water, sunlight, wind, forest and fish.
+  2. active [volcano] is new: dormant and extinct were in volcanoes without it. It is linked as one word family with act and activist.
+  3. pahoehoe was in the library and not in lava forms.

@@ -1,0 +1,65 @@
+Library batch v491 (for Simon's review): Nature & Earth, environment branch
+1. pollution
+  linked: factory 2468 in pollution_words (typicality 2): well known here; it was not linked
+  linked: plastic bag 66541 in pollution_words (typicality 2): well known here; it was not linked
+  linked: chemicals 49969 in pollution_words (typicality 3): well known here; it was not linked
+2. recyclables
+  linked: aluminum foil 39989 in recycling_words (typicality 3): well known here; it was not linked
+  linked: catalog 12140 in recycling_words (typicality 3): well known here; it was not linked
+  linked: comic book 13566 in recycling_words (typicality 3): well known here; it was not linked
+3. conservation
+  linked: zoo 28885 in conservation_words (typicality 3): well known here; it was not linked
+  linked: giant panda 1001 in conservation_words (typicality 3): well known here; it was not linked
+  linked: Greenpeace 33571 in conservation_words (typicality 3): well known here; it was not linked
+4. climate change
+  linked: fossil fuel 49759 in climate_words (typicality 2): well known here; it was not linked
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  climate_words: "climate change" pop 2 ident 2: 27 words, easy/middle/hard 5/13/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "climate change" pop 2 ident 2: 28 words, easy/middle/hard 6/13/9, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  conservation_words: "conservation" pop 3 ident 3: 24 words, easy/middle/hard 3/7/14, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "conservation" pop 3 ident 3: 27 words, easy/middle/hard 3/10/14, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  pollution_words: "pollution" pop 3 ident 2: 24 words, easy/middle/hard 10/5/9, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "pollution" pop 3 ident 2: 27 words, easy/middle/hard 12/6/9, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  recycling_words: "recyclables" pop 2 ident 2: 18 words, easy/middle/hard 16/2/0, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "recyclables" pop 2 ident 2: 21 words, easy/middle/hard 16/5/0, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 16; entries changed 10; status set to rev 6; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3253 -> 3253; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 4: pollution_words (index 697 -> 697: counts [1,9,5,6,3] -> [1,11,6,6,3]); recycling_words (index 699 -> 699: counts [6,10,2,0,0] -> [6,10,5,0,0], range [1,2] -> [1,3]); conservation_words (index 701 -> 701: counts [0,3,7,11,3] -> [0,3,10,11,3]); climate_words (index 703 -> 703: counts [1,4,13,7,2] -> [1,5,13,7,2])
+Entry rows 61453 -> 61453; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101075 -> 101085; rows whose link count changed: 10
+Link-index shifts: from row 991 (camel 1002) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 10, rating changed 0
+  gone (other than the deleted themes): none
+  new: conservation_words: "giant panda" (1001), pollution_words: "factory" (2468), recycling_words: "catalog" (12140), recycling_words: "comic book" (13566), conservation_words: "zoo" (28885), conservation_words: "Greenpeace" (33571), recycling_words: "aluminum foil" (39989), climate_words: "fossil fuel" (49759), pollution_words: "chemicals" (49969), pollution_words: "plastic bag" (66541)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 14 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 10 new links existed earlier and was removed (all 233 library versions and 207 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - conservation: wildlife (overlap with wildlife corridor); habitat, national park, biodiversity and nature reserve (taken out in v366-v382)
+  - climate change: emissions (it is in pollution); heatwave, drought and wildfire (taken out in v366-v382)
+  - pollution: landfill; recyclables: paper; renewable energy: dam and heat pump (taken out earlier)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. catalog and comic book go into recyclables (both are paper).
+
+=== Notice to _WS_ for v491 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v491 (Nature & Earth, environment branch): 0 new themes, 10 new links, 0 links out, 0 new entries.
+Theme rows 3253 -> 3253; gone none; new none; theme indexes shift: none
+Entry rows 61453 -> 61453.
+Link-index shifts: from row 991 (camel 1002) on, link positions move
+Line breaks: none.
+New characters: none.

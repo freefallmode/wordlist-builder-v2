@@ -1,0 +1,283 @@
+Library batch v490 (for Simon's review): Nature & Earth, habitats branch
+1. rainforest
+  linked: snake 1135 [animal] in rainforest (typicality 2): well known here; it was not linked
+  linked: tiger 216 [animal] in rainforest (typicality 3): well known here; it was not linked
+  linked: tarantula 1401 in rainforest (typicality 3): well known here; it was not linked
+  linked: mosquito 1345 in rainforest (typicality 3): well known here; it was not linked
+  linked: butterfly 1348 [insect] in rainforest (typicality 3): well known here; it was not linked
+  linked: boa constrictor 1159 in rainforest (typicality 4): well known here; it was not linked
+  linked: python 1154 [snake] in rainforest (typicality 4): well known here; it was not linked
+  linked: fern 1766 in rainforest (typicality 4): well known here; it was not linked
+2. ocean
+  out of ocean: brine 18034: the entry is a verb (to brine food), and salt water is there (stays in cheesemaking_words, ways_to_preserve_food)
+  linked: fish 59990 [animal] in ocean (typicality 1): well known here; it was not linked
+  linked: crab 470 [animal] in ocean (typicality 2): well known here; it was not linked
+  linked: lobster 469 in ocean (typicality 3): well known here; it was not linked
+  linked: seahorse 1219 in ocean (typicality 3): well known here; it was not linked
+  linked: ship 2778 in ocean (typicality 3): well known here; it was not linked
+  linked: island 1910 [landmass] in ocean (typicality 3): well known here; it was not linked
+  linked: submarine 34572 in ocean (typicality 4): well known here; it was not linked
+3. desert
+  linked: sand 2063 [sediment] in desert (typicality 1): well known here; it was not linked
+  linked: sun 7109 [star] in desert (typicality 2): well known here; it was not linked
+  linked: snake 1135 [animal] in desert (typicality 2): well known here; it was not linked
+  linked: tortoise 1143 in desert (typicality 3): well known here; it was not linked
+  linked: meerkat 1021 in desert (typicality 3): well known here; it was not linked
+  linked: pyramid 6619 [monument] in desert (typicality 3): well known here; it was not linked
+  linked: tarantula 1401 in desert (typicality 4): well known here; it was not linked
+4. savanna
+  linked: hippopotamus 986 in savanna (typicality 2): well known here; it was not linked
+  linked: crocodile 1138 in savanna (typicality 3): well known here; it was not linked
+  linked: baboon 1024 in savanna (typicality 3): well known here; it was not linked
+5. polar regions
+  linked: parka 4919 in polar_regions (typicality 3): well known here; it was not linked
+  linked: snowmobile 3139 in polar_regions (typicality 3): well known here; it was not linked
+  linked: orca 1304 in polar_regions (typicality 3): well known here; it was not linked
+6. wetlands
+  linked: duck 155 [bird] in wetlands (typicality 2): well known here; it was not linked
+  linked: mosquito 1345 in wetlands (typicality 2): well known here; it was not linked
+  linked: turtle 1142 [shelled reptile] in wetlands (typicality 2): well known here; it was not linked
+  linked: mud 28051 [dirt] in wetlands (typicality 3): well known here; it was not linked
+  linked: flamingo 1074 in wetlands (typicality 3): well known here; it was not linked
+  linked: crane 1100 [bird] in wetlands (typicality 3): well known here; it was not linked
+  linked: otter 1009 in wetlands (typicality 3): well known here; it was not linked
+7. mountains
+  linked: snow 1967 [weather] in mountains (typicality 1): well known here; it was not linked
+  linked: eagle 1062 [bird] in mountains (typicality 2): well known here; it was not linked
+  linked: hiking 5604 [outdoor activity] in mountains (typicality 2): well known here; it was not linked
+  linked: skiing 5345 in mountains (typicality 3): well known here; it was not linked
+  linked: cable car 47041 in mountains (typicality 3): well known here; it was not linked
+  linked: cave 1913 [rock hollow] in mountains (typicality 3): well known here; it was not linked
+  linked: yeti 22258 in mountains (typicality 4): well known here; it was not linked
+8. meadow
+  linked: rabbit 1443 in meadow (typicality 2): well known here; it was not linked
+  linked: cow 149 [animal] in meadow (typicality 2): well known here; it was not linked
+  linked: sheep 151 [farm animal] in meadow (typicality 3): well known here; it was not linked
+  linked: deer 997 in meadow (typicality 3): well known here; it was not linked
+9. pond
+  linked: fish 59990 [animal] in pond (typicality 1): well known here; it was not linked
+  linked: turtle 1142 [shelled reptile] in pond (typicality 2): well known here; it was not linked
+  linked: goose 157 in pond (typicality 3): well known here; it was not linked
+  linked: salamander 1146 in pond (typicality 3): well known here; it was not linked
+  linked: crayfish 499 in pond (typicality 4): well known here; it was not linked
+10. oasis
+  out of oasis: rest stop 32122: a stop on a highway (stays in road_trip_words, trail_words, travel_hubs)
+  out of oasis: Timbuktu 2306: a city, not an oasis (stays in cities, exploration, rhymes_with_blue, african_cities, african_landmarks, ancient_sites_of_africa)
+11. outback
+  linked: desert 1907 [wasteland] in outback (typicality 2): well known here; it was not linked
+  linked: snake 1135 [animal] in outback (typicality 3): well known here; it was not linked
+  linked: crocodile 1138 in outback (typicality 3): well known here; it was not linked
+  linked: fly 1344 [insect] in outback (typicality 3): well known here; it was not linked
+  linked: spider 1362 [animal] in outback (typicality 4): well known here; it was not linked
+  linked: camel 1002 [animal] in outback (typicality 4): well known here; it was not linked
+12. prairie
+  typicality: sunflower 1696 in prairie 5 -> 3: well known: one of the first answers
+  linked: horse 153 [animal] in prairie (typicality 2): well known here; it was not linked
+  linked: farm 27964 in prairie (typicality 2): well known here; it was not linked
+  linked: rattlesnake 1157 in prairie (typicality 3): well known here; it was not linked
+  linked: log cabin 24153 in prairie (typicality 4): well known here; it was not linked
+13. plains plants
+  typicality: sunflower 1696 in heartland_plants 5 -> 3: well known: one of the first answers
+  linked: corn 406 [vegetable] in heartland_plants (typicality 3): well known here; it was not linked
+  linked: sagebrush 30694 in heartland_plants (typicality 4): well known here; it was not linked
+  linked: goldenrod 30372 in heartland_plants (typicality 4): well known here; it was not linked
+  linked: black-eyed Susan 30369 in heartland_plants (typicality 4): well known here; it was not linked
+14. plains animals
+  linked: rattlesnake 1157 in heartland_creatures (typicality 3): well known here; it was not linked
+  linked: jackrabbit 8059 in heartland_creatures (typicality 3): well known here; it was not linked
+  linked: gopher 7848 [pocket rodent] in heartland_creatures (typicality 3): well known here; it was not linked
+15. frontier life
+  linked: log cabin 24153 in settler_life (typicality 2): well known here; it was not linked
+  linked: horse 153 [animal] in settler_life (typicality 2): well known here; it was not linked
+  linked: wagon train 23012 in settler_life (typicality 3): well known here; it was not linked
+  linked: campfire 3024 [outdoor fire] in settler_life (typicality 3): well known here; it was not linked
+  linked: lantern 3027 in settler_life (typicality 3): well known here; it was not linked
+  linked: ox 162 in settler_life (typicality 3): well known here; it was not linked
+  linked: plow 49080 [farm implement] in settler_life (typicality 3): well known here; it was not linked
+  linked: butter churn 25666 in settler_life (typicality 4): well known here; it was not linked
+16. biomes (new)
+  new theme: biomes "biomes" under habitats (after antarctic_coast), pop 3, ident 3: a set three rival games have
+  linked: desert 1907 [wasteland] in biomes (typicality 1): a well-known member of the new theme
+  linked: rainforest 30175 in biomes (typicality 1): a well-known member of the new theme
+  linked: ocean 30961 [water] in biomes (typicality 1): a well-known member of the new theme
+  linked: grassland 1935 in biomes (typicality 2): a well-known member of the new theme
+  linked: savanna 1922 in biomes (typicality 2): a well-known member of the new theme
+  linked: tundra 1921 [biome] in biomes (typicality 2): a well-known member of the new theme
+  linked: coral reef 32031 in biomes (typicality 2): a well-known member of the new theme
+  linked: mountain 1894 [landform] in biomes (typicality 2): a well-known member of the new theme
+  linked: river 1908 [water] in biomes (typicality 2): a well-known member of the new theme
+  linked: wetland 1936 in biomes (typicality 2): a well-known member of the new theme
+  linked: swamp 1924 [wooded wetland] in biomes (typicality 2): a well-known member of the new theme
+  linked: prairie 1920 in biomes (typicality 3): a well-known member of the new theme
+  linked: taiga 30177 in biomes (typicality 3): a well-known member of the new theme
+  linked: steppe 1940 in biomes (typicality 3): a well-known member of the new theme
+  linked: mangrove 1671 in biomes (typicality 3): a well-known member of the new theme
+  linked: estuary 1945 in biomes (typicality 3): a well-known member of the new theme
+  linked: boreal forest 30176 in biomes (typicality 3): a well-known member of the new theme
+  linked: deciduous forest 30181 in biomes (typicality 3): a well-known member of the new theme
+  linked: coniferous forest 30180 in biomes (typicality 3): a well-known member of the new theme
+  linked: meadow 1919 in biomes (typicality 3): a well-known member of the new theme
+  linked: pampas 29507 in biomes (typicality 3): a well-known member of the new theme
+  linked: ice cap 30900 in biomes (typicality 3): a well-known member of the new theme
+  linked: temperate forest 30178 in biomes (typicality 3): a well-known member of the new theme
+  linked: cloud forest 30182 in biomes (typicality 4): a well-known member of the new theme
+  linked: salt marsh 31083 in biomes (typicality 4): a well-known member of the new theme
+  linked: kelp forest 30192 in biomes (typicality 4): a well-known member of the new theme
+  linked: moor 1952 [heath] in biomes (typicality 4): a well-known member of the new theme
+  linked: scrubland 30955 in biomes (typicality 4): a well-known member of the new theme
+  linked: veld 29473 in biomes (typicality 4): a well-known member of the new theme
+  linked: monsoon forest 30187 in biomes (typicality 4): a well-known member of the new theme
+  linked: cerrado 30207 in biomes (typicality 5): a well-known member of the new theme
+  linked: chaparral 29318 in biomes (typicality 5): a well-known member of the new theme
+  group in biomes: taiga 30177 = boreal forest 30176: the same answer, or a word and its more specific form
+17. river (new)
+  new theme: river "river" under habitats (after pond), pop 2, ident 2: a set a rival game has; pond and ocean exist
+  linked: fish 59990 [animal] in river (typicality 1): a well-known member of the new theme
+  linked: bridge 7379 [structure] in river (typicality 1): a well-known member of the new theme
+  linked: canoe 2781 in river (typicality 1): a well-known member of the new theme
+  linked: waterfall 1914 in river (typicality 2): a well-known member of the new theme
+  linked: duck 155 [bird] in river (typicality 2): a well-known member of the new theme
+  linked: otter 1009 in river (typicality 2): a well-known member of the new theme
+  linked: salmon 466 [fish] in river (typicality 2): a well-known member of the new theme
+  linked: trout 483 in river (typicality 2): a well-known member of the new theme
+  linked: raft 2795 in river (typicality 2): a well-known member of the new theme
+  linked: current 31128 [water] in river (typicality 2): a well-known member of the new theme
+  linked: rapids 30863 in river (typicality 2): a well-known member of the new theme
+  linked: kayak 2782 in river (typicality 2): a well-known member of the new theme
+  linked: frog 1144 [amphibian] in river (typicality 3): a well-known member of the new theme
+  linked: swan 1066 in river (typicality 3): a well-known member of the new theme
+  linked: rowboat 2785 in river (typicality 3): a well-known member of the new theme
+  linked: ferry 2654 in river (typicality 3): a well-known member of the new theme
+  linked: barge 2812 in river (typicality 3): a well-known member of the new theme
+  linked: paddle 28003 [oar] in river (typicality 3): a well-known member of the new theme
+  linked: fishing rod 39526 in river (typicality 3): a well-known member of the new theme
+  linked: stepping stone 66494 in river (typicality 3): a well-known member of the new theme
+  linked: heron 1086 in river (typicality 3): a well-known member of the new theme
+  linked: kingfisher 1087 in river (typicality 3): a well-known member of the new theme
+  linked: reed 1784 [plant] in river (typicality 3): a well-known member of the new theme
+  linked: crocodile 1138 in river (typicality 3): a well-known member of the new theme
+  linked: hippopotamus 986 in river (typicality 3): a well-known member of the new theme
+  linked: pebble 2051 [stone] in river (typicality 3): a well-known member of the new theme
+  linked: mud 28051 [dirt] in river (typicality 3): a well-known member of the new theme
+  linked: delta 1944 [river] in river (typicality 3): a well-known member of the new theme
+  linked: dragonfly 1358 in river (typicality 3): a well-known member of the new theme
+  linked: catfish 1221 [fish] in river (typicality 4): a well-known member of the new theme
+  linked: piranha 1216 in river (typicality 4): a well-known member of the new theme
+  linked: eel 495 in river (typicality 4): a well-known member of the new theme
+  linked: weeping willow 68966 in river (typicality 4): a well-known member of the new theme
+  linked: watermill 66755 in river (typicality 4): a well-known member of the new theme
+  linked: houseboat 123 in river (typicality 4): a well-known member of the new theme
+  linked: gondola 2813 [boat] in river (typicality 4): a well-known member of the new theme
+  linked: tributary 30864 in river (typicality 4): a well-known member of the new theme
+  linked: crayfish 499 in river (typicality 4): a well-known member of the new theme
+  linked: minnow 1238 in river (typicality 4): a well-known member of the new theme
+  linked: water vole 9770 in river (typicality 5): a well-known member of the new theme
+18. in a cave (new)
+  new theme: in_a_cave "in a cave" under habitats (after mountains), pop 2, ident 2: a set a rival game has; cave features is about the rock
+  linked: bat 993 [animal] in in_a_cave (typicality 1): a well-known member of the new theme
+  linked: rock 2049 [stone] in in_a_cave (typicality 1): a well-known member of the new theme
+  linked: bear 994 [animal] in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: stalactite 30922 in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: echo 14701 [sound] in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: dragon 6982 [creature] in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: treasure 6765 [loot] in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: shadow 28397 [dark patch] in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: crystal 2055 [mineral] in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: spider 1362 [animal] in in_a_cave (typicality 2): a well-known member of the new theme
+  linked: stalagmite 30923 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: tunnel 7381 [structure] in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: flashlight 3028 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: lantern 3027 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: explorer 6712 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: skull 3246 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: bone 3243 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: pool 32114 [water] in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: stream 30152 [woodland] in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: boulder 2052 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: fossil 1567 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: cobweb 9114 in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: snake 1135 [animal] in in_a_cave (typicality 3): a well-known member of the new theme
+  linked: rope 48700 [climbing] in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: helmet 48702 [climbing] in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: headlamp 2572 in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: salamander 1146 in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: hibernation 3698 in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: wolf 995 [animal] in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: limestone 2058 in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: hermit 20871 in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: moss 1767 in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: cricket 1355 [insect] in in_a_cave (typicality 4): a well-known member of the new theme
+  linked: guano 29506 in in_a_cave (typicality 5): a well-known member of the new theme
+  linked: glowworm 1415 in in_a_cave (typicality 5): a well-known member of the new theme
+  new entry: darkness 68996 noun, common, familiarity 1: a common word that was not in the library
+  linked: darkness 68996 in in_a_cave (typicality 1): a common word that was not in the library
+kin
+  kin: darkness 68996 <-> dark 28162 [unlit]: one word family
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  biomes: new -> "biomes" pop 3 ident 3: 32 words, easy/middle/hard 11/12/9, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  desert: "desert" pop 1 ident 1: 47 words, easy/middle/hard 9/19/19, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "desert" pop 1 ident 1: 54 words, easy/middle/hard 12/22/20, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  heartland_creatures: "plains animals" pop 3 ident 3: 15 words, easy/middle/hard 2/0/13, theme difficulty 3, 4th-easiest band 4, gap 1.0 -> "plains animals" pop 3 ident 3: 18 words, easy/middle/hard 2/3/13, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  heartland_plants: "plains plants" pop 4 ident 4: 10 words, easy/middle/hard 2/1/7, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "plains plants" pop 4 ident 4: 14 words, easy/middle/hard 2/3/9, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  in_a_cave: new -> "in a cave" pop 2 ident 2: 36 words, easy/middle/hard 10/14/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  meadow: "meadow" pop 2 ident 3: 51 words, easy/middle/hard 14/13/24, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "meadow" pop 2 ident 3: 55 words, easy/middle/hard 16/15/24, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  mountains: "mountains" pop 2 ident 2: 51 words, easy/middle/hard 15/17/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "mountains" pop 2 ident 2: 58 words, easy/middle/hard 18/20/20, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  oasis: "oasis" pop 3 ident 3: 45 words, easy/middle/hard 14/11/20, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "oasis" pop 3 ident 3: 43 words, easy/middle/hard 14/11/18, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  ocean: "ocean" pop 1 ident 1: 54 words, easy/middle/hard 19/17/18, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "ocean" pop 1 ident 1: 60 words, easy/middle/hard 21/21/18, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  outback: "outback" pop 3 ident 3: 54 words, easy/middle/hard 6/13/35, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "outback" pop 3 ident 3: 60 words, easy/middle/hard 7/16/37, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  polar_regions: "polar regions" pop 2 ident 2: 53 words, easy/middle/hard 20/20/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "polar regions" pop 2 ident 2: 56 words, easy/middle/hard 20/23/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  pond: "pond" pop 2 ident 2: 56 words, easy/middle/hard 15/16/25, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "pond" pop 2 ident 2: 61 words, easy/middle/hard 17/18/26, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  prairie: "prairie" pop 3 ident 3: 48 words, easy/middle/hard 12/11/25, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "prairie" pop 3 ident 3: 52 words, easy/middle/hard 14/13/25, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  rainforest: "rainforest" pop 1 ident 1: 41 words, easy/middle/hard 17/12/12, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "rainforest" pop 1 ident 1: 49 words, easy/middle/hard 18/16/15, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  river: new -> "river" pop 2 ident 2: 40 words, easy/middle/hard 12/17/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  savanna: "savanna" pop 2 ident 2: 46 words, easy/middle/hard 14/16/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "savanna" pop 2 ident 2: 49 words, easy/middle/hard 15/18/16, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  settler_life: "frontier life" pop 3 ident 3: 11 words, easy/middle/hard 3/5/3, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "frontier life" pop 3 ident 3: 19 words, easy/middle/hard 5/10/4, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  wetlands: "wetlands" pop 3 ident 3: 46 words, easy/middle/hard 9/20/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "wetlands" pop 3 ident 3: 53 words, easy/middle/hard 12/24/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 1: darkness 68996
+Entries deleted 0: none
+library changes 243; entries changed 167; status set to rev 48; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3250 -> 3253; gone none; new in_a_cave, river, biomes; theme indexes shift: from index 680 ("in_a_cave", was "meadow") to the last index 3252
+Theme rows whose fields changed (parent compared by id): 15: rainforest (index 671 -> 671: counts [8,9,14,11,1] -> [8,10,18,14,1]); ocean (index 673 -> 673: counts [9,10,18,11,7] -> [10,11,22,11,7]); desert (index 675 -> 675: counts [6,3,19,9,10] -> [7,5,22,10,10]); savanna (index 676 -> 676: counts [6,9,16,12,4] -> [6,10,18,12,4]); polar_regions (index 677 -> 677: counts [11,9,20,10,5] -> [11,9,23,10,5]); wetlands (index 678 -> 678: counts [2,8,21,16,3] -> [2,11,26,16,3]); mountains (index 679 -> 679: counts [3,12,19,11,8] -> [4,14,23,12,8], range [2,5] -> [1,5]); meadow (index 680 -> 681: counts [7,9,13,14,12] -> [7,11,15,14,12]); pond (index 681 -> 682: counts [4,11,17,19,7] -> [5,12,19,20,7]); oasis (index 684 -> 686: counts [6,9,11,8,12] -> [6,9,11,6,12]); outback (index 685 -> 687: counts [2,4,14,24,12] -> [2,5,17,26,12]); prairie (index 688 -> 690: counts [1,12,11,14,11] -> [1,14,13,15,10]); heartland_plants (index 689 -> 691: counts [0,2,1,3,4] -> [0,2,3,6,3], range [4,5] -> [3,4]); heartland_creatures (index 690 -> 692: counts [0,2,0,10,3] -> [0,2,3,10,3], range [4,4] -> [3,4]); settler_life (index 691 -> 693: counts [0,3,5,2,1] -> [0,5,10,3,1], range [3,3] -> [2,4])
+Entry rows 61452 -> 61453; first row whose entry changed: 61452 (darkness 68996, was undefined); rows that moved: 0; added darkness 68996 (row 61452); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100894 -> 101075; rows whose link count changed: 164
+Link-index shifts: from row 123 (mobile home 124) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 3, new 184, rating changed 2
+  gone (other than the deleted themes): oasis: "Timbuktu" (2306), ocean: "brine" (18034), oasis: "rest stop" (32122)
+  new: river: "houseboat" (123), meadow: "cow" (149), meadow: "sheep" (151), prairie: "horse" (153), settler_life: "horse" (153), wetlands: "duck" (155), river: "duck" (155), pond: "goose" (157), settler_life: "ox" (162), rainforest: "tiger" (216), heartland_plants: "corn" (406), river: "salmon" (466), ocean: "lobster" (469), ocean: "crab" (470), river: "trout" (483), river: "eel" (495), pond: "crayfish" (499), river: "crayfish" (499), savanna: "hippopotamus" (986), river: "hippopotamus" (986), in_a_cave: "bat" (993), in_a_cave: "bear" (994), in_a_cave: "wolf" (995), meadow: "deer" (997), outback: "camel" (1002), wetlands: "otter" (1009), river: "otter" (1009), desert: "meerkat" (1021), savanna: "baboon" (1024), mountains: "eagle" (1062), river: "swan" (1066), wetlands: "flamingo" (1074), river: "heron" (1086), river: "kingfisher" (1087), wetlands: "crane" (1100), rainforest: "snake" (1135), desert: "snake" (1135), outback: "snake" (1135), in_a_cave: "snake" (1135), savanna: "crocodile" (1138), outback: "crocodile" (1138), river: "crocodile" (1138), wetlands: "turtle" (1142), pond: "turtle" (1142), desert: "tortoise" (1143), river: "frog" (1144), pond: "salamander" (1146), in_a_cave: "salamander" (1146), rainforest: "python" (1154), prairie: "rattlesnake" (1157), heartland_creatures: "rattlesnake" (1157), rainforest: "boa constrictor" (1159), river: "piranha" (1216), ocean: "seahorse" (1219), river: "catfish" (1221), river: "minnow" (1238), polar_regions: "orca" (1304), outback: "fly" (1344), rainforest: "mosquito" (1345), wetlands: "mosquito" (1345), rainforest: "butterfly" (1348), in_a_cave: "cricket" (1355), river: "dragonfly" (1358), outback: "spider" (1362), in_a_cave: "spider" (1362), rainforest: "tarantula" (1401), desert: "tarantula" (1401), in_a_cave: "glowworm" (1415), meadow: "rabbit" (1443), in_a_cave: "fossil" (1567), biomes: "mangrove" (1671), rainforest: "fern" (1766), in_a_cave: "moss" (1767), river: "reed" (1784), biomes: "mountain" (1894), outback: "desert" (1907), biomes: "desert" (1907), biomes: "river" (1908), ocean: "island" (1910), mountains: "cave" (1913), river: "waterfall" (1914), biomes: "meadow" (1919), biomes: "prairie" (1920), biomes: "tundra" (1921), biomes: "savanna" (1922), biomes: "swamp" (1924), biomes: "grassland" (1935), biomes: "wetland" (1936), biomes: "steppe" (1940), river: "delta" (1944), biomes: "estuary" (1945), biomes: "moor" (1952), mountains: "snow" (1967), in_a_cave: "rock" (2049), river: "pebble" (2051), in_a_cave: "boulder" (2052), in_a_cave: "crystal" (2055), in_a_cave: "limestone" (2058), desert: "sand" (2063), in_a_cave: "headlamp" (2572), river: "ferry" (2654), ocean: "ship" (2778), river: "canoe" (2781), river: "kayak" (2782), river: "rowboat" (2785), river: "raft" (2795), river: "barge" (2812), river: "gondola" (2813), settler_life: "campfire" (3024), settler_life: "lantern" (3027), in_a_cave: "lantern" (3027), in_a_cave: "flashlight" (3028), polar_regions: "snowmobile" (3139), in_a_cave: "bone" (3243), in_a_cave: "skull" (3246), in_a_cave: "hibernation" (3698), polar_regions: "parka" (4919), mountains: "skiing" (5345), mountains: "hiking" (5604), desert: "pyramid" (6619), in_a_cave: "explorer" (6712), in_a_cave: "treasure" (6765), in_a_cave: "dragon" (6982), desert: "sun" (7109), river: "bridge" (7379), in_a_cave: "tunnel" (7381), heartland_creatures: "gopher" (7848), heartland_creatures: "jackrabbit" (8059), in_a_cave: "cobweb" (9114), river: "water vole" (9770), in_a_cave: "echo" (14701), in_a_cave: "hermit" (20871), mountains: "yeti" (22258), settler_life: "wagon train" (23012), prairie: "log cabin" (24153), settler_life: "log cabin" (24153), settler_life: "butter churn" (25666), prairie: "farm" (27964), river: "paddle" (28003), wetlands: "mud" (28051), river: "mud" (28051), in_a_cave: "shadow" (28397), biomes: "chaparral" (29318), biomes: "veld" (29473), in_a_cave: "guano" (29506), biomes: "pampas" (29507), in_a_cave: "stream" (30152), biomes: "rainforest" (30175), biomes: "boreal forest" (30176), biomes: "taiga" (30177), biomes: "temperate forest" (30178), biomes: "coniferous forest" (30180), biomes: "deciduous forest" (30181), biomes: "cloud forest" (30182), biomes: "monsoon forest" (30187), biomes: "kelp forest" (30192), biomes: "cerrado" (30207), heartland_plants: "black-eyed Susan" (30369), heartland_plants: "goldenrod" (30372), heartland_plants: "sagebrush" (30694), river: "rapids" (30863), river: "tributary" (30864), biomes: "ice cap" (30900), in_a_cave: "stalactite" (30922), in_a_cave: "stalagmite" (30923), biomes: "scrubland" (30955), biomes: "ocean" (30961), biomes: "salt marsh" (31083), river: "current" (31128), biomes: "coral reef" (32031), in_a_cave: "pool" (32114), ocean: "submarine" (34572), river: "fishing rod" (39526), mountains: "cable car" (47041), in_a_cave: "rope" (48700), in_a_cave: "helmet" (48702), settler_life: "plow" (49080), ocean: "fish" (59990), pond: "fish" (59990), river: "fish" (59990), river: "stepping stone" (66494), river: "watermill" (66755), river: "weeping willow" (68966), in_a_cave: "darkness" (68996)
+  rating: prairie: "sunflower" (1696) 3.8/5 -> 2.4/3, heartland_plants: "sunflower" (1696) 3.8/5 -> 2.4/3
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 22 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 184 new links existed earlier and was removed (all 232 library versions and 205 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - ocean: squid (overlap with vampire squid)
+  - outback: cattle (overlap with cattle station); prairie: cattle (overlap with cattle drive)
+  - river: fishing (family pair with fish)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. brine leaves ocean: the entry is the verb (to brine food), and salt water is there. rest stop (a stop on a highway) and Timbuktu (a city) leave oasis.
+  2. sunflower is rated easier in prairie and plains plants (5 -> 3).
+  3. biomes also holds mountain, river and ocean, as school lists do; it shares 41% of its words with landscapes.
+  4. in a cave holds some story words (dragon, treasure); cave features keeps the rock forms.
+  5. darkness is new, linked as one word family with dark [unlit].
+
+=== Notice to _WS_ for v490 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v490 (Nature & Earth, habitats branch): 3 new themes (biomes, river, in a cave), 184 new links, 3 links out, 1 new entries (darkness).
+Theme rows 3250 -> 3253; gone none; new in_a_cave, river, biomes; theme indexes shift: from index 680 ("in_a_cave", was "meadow") to the last index 3252
+Entry rows 61452 -> 61453.
+Link-index shifts: from row 123 (mobile home 124) on, link positions move
+Line breaks: none.
+New characters: none.

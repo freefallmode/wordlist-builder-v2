@@ -1,0 +1,314 @@
+Library batch v481 (for Simon's review): Nature & Earth, flowers branch
+1. flowers
+  linked: cherry blossom 2540 in flowers (typicality 3): well known here; it was not linked
+  linked: honeysuckle 30462 [flower] in flowers (typicality 3): well known here; it was not linked
+  linked: wisteria 29549 [flower] in flowers (typicality 3): well known here; it was not linked
+  linked: clematis 30591 in flowers (typicality 3): well known here; it was not linked
+  linked: magnolia 1664 [tree] in flowers (typicality 3): well known here; it was not linked
+2. garden flowers
+  linked: lavender 1703 [flower] in garden_flowers (typicality 2): well known here; it was not linked
+  linked: chrysanthemum 1710 [flower] in garden_flowers (typicality 2): well known here; it was not linked
+  linked: iris 1712 [flower] in garden_flowers (typicality 3): well known here; it was not linked
+  linked: primrose 1731 [flower] in garden_flowers (typicality 3): well known here; it was not linked
+3. bedding plants
+  linked: primrose 1731 [flower] in bedding_plants (typicality 3): well known here; it was not linked
+  linked: dahlia 1730 [flower] in bedding_plants (typicality 3): well known here; it was not linked
+  linked: fuchsia 62419 [flower] in bedding_plants (typicality 3): well known here; it was not linked
+  linked: wallflower 30516 [plant] in bedding_plants (typicality 4): well known here; it was not linked
+  linked: coleus 30566 in bedding_plants (typicality 4): well known here; it was not linked
+4. wildflowers
+  linked: sunflower 1696 in wildflowers (typicality 3): well known here; it was not linked
+  linked: heather 1794 [plant] in wildflowers (typicality 3): well known here; it was not linked
+  linked: honeysuckle 30462 [flower] in wildflowers (typicality 3): well known here; it was not linked
+  linked: columbine 1756 [flower] in wildflowers (typicality 4): well known here; it was not linked
+5. tropical flowers
+  out of tropical_flowers: protea 1759: from South Africa, not the tropics (stays in flowers, national_symbols, bouquet_flowers, national_flowers, south_african_flowers)
+  out of tropical_flowers: king protea 30413: from South Africa, not the tropics (stays in south_african_flowers)
+  out of tropical_flowers: kangaroo paw 30411: from southern Australia, not the tropics (stays in flowers_with_animal_names, australian_wildflowers)
+  out of tropical_flowers: waratah 30412: from southern Australia, not the tropics (stays in australian_wildflowers)
+6. flower parts
+  out of flower_parts: thorn 28480: a part of the stem, not of the flower (stays in plant_parts, prickly_things, sharp_things)
+  out of flower_parts: leaf 30033: a part of the plant, not of the flower (stays in tree_parts, things_that_fall_from_trees, plant_parts, lightweight_things, green_things, plant_biology, things_you_kick, things_that_burn, flat_things, things_that_float, things_that_grow_on_trees, woodland, on_a_nature_walk)
+  out of flower_parts: root 30034 [plant]: a part of the plant, not of the flower (stays in tree_parts, plant_parts, plant_biology, forest_floor, deep_things, things_underground)
+7. bouquet flowers
+  linked: daffodil 1699 in bouquet_flowers (typicality 3): well known here; it was not linked
+  linked: lilac 1714 [flower] in bouquet_flowers (typicality 3): well known here; it was not linked
+  linked: hyacinth 1713 [flower] in bouquet_flowers (typicality 4): well known here; it was not linked
+8. animal-named flowers
+  out of flowers_with_animal_names: buttercup 1723 [flower]: there is no animal in the name (stays in flowers, wildflowers, meadow, shades_of_yellow, pastel_colors, colors_named_after_flowers, yellow_things, yellow_flowers)
+  out of flowers_with_animal_names: antirrhinum 1720: there is no animal in the name (snapdragon stays) (stays in flowers, garden_flowers, bouquet_flowers, red_flowers)
+  linked: harebell 28281 in flowers_with_animal_names (typicality 3): well known here; it was not linked
+  linked: dogwood 1681 in flowers_with_animal_names (typicality 3): well known here; it was not linked
+  linked: fleabane 60213 in flowers_with_animal_names (typicality 5): well known here; it was not linked
+9. South African flowers
+  linked: calla lily 30453 in south_african_flowers (typicality 3): well known here; it was not linked
+  linked: geranium 1709 in south_african_flowers (typicality 3): well known here; it was not linked
+  linked: lobelia 30343 in south_african_flowers (typicality 4): well known here; it was not linked
+  group in south_african_flowers: arum lily 56483 = calla lily 30453: the same answer, or a word and its more specific form
+  group in south_african_flowers: pelargonium 15623 = geranium 1709: the same answer, or a word and its more specific form
+10. flowers of East Asia
+  linked: iris 1712 [flower] in flowers_of_east_asia (typicality 3): well known here; it was not linked
+  linked: tiger lily 30472 in flowers_of_east_asia (typicality 4): well known here; it was not linked
+11. South American flowers
+  out of south_american_flowers: calla lily 30453: it comes from South Africa (it moves there) (stays in bouquet_flowers, flower_bulbs, white_flowers, south_african_flowers)
+  linked: orchid 1698 [flower] in south_american_flowers (typicality 2): well known here; it was not linked
+  linked: canna 30404 in south_american_flowers (typicality 4): well known here; it was not linked
+12. yellow flowers
+  out of yellow_flowers: touch-me-not 65494: another name for the sensitive plant, which has pink flowers (stays in plants, sweet_smelling_flowers)
+  linked: chrysanthemum 1710 [flower] in yellow_flowers (typicality 3): well known here; it was not linked
+  linked: crocus 1725 in yellow_flowers (typicality 3): well known here; it was not linked
+  linked: daylily 30463 in yellow_flowers (typicality 4): well known here; it was not linked
+13. blue flowers
+  linked: clematis 30591 in blue_flowers (typicality 4): well known here; it was not linked
+  group in blue_flowers: grape hyacinth 30382 = muscari 30537: the same answer, or a word and its more specific form
+14. sweet-smelling flowers
+  out of sweet_smelling_flowers: touch-me-not 65494: another name for the sensitive plant, which is not known for its smell (stays in plants)
+15. summer flowers (new)
+  new theme: summer_flowers "summer flowers" under flowers (after spring_flowers), pop 2, ident 2: spring flowers was the only season
+  linked: sunflower 1696 in summer_flowers (typicality 1): a well-known member of the new theme
+  linked: rose 1693 [flower] in summer_flowers (typicality 1): a well-known member of the new theme
+  linked: lavender 1703 [flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: daisy 1695 [flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: marigold 1706 [flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: geranium 1709 in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: petunia 1708 [flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: lily 1697 [flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: poppy 1701 [red flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: sweet pea 1721 in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: hydrangea 1729 in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: fuchsia 62419 [flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: dahlia 1730 [flower] in summer_flowers (typicality 2): a well-known member of the new theme
+  linked: zinnia 1733 [flower] in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: foxglove 1732 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: delphinium 1739 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: hollyhock 1749 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: gladiolus 1742 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: snapdragon 1719 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: begonia 1734 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: cornflower 1747 [flower] in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: nasturtium 1750 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: honeysuckle 30462 [flower] in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: black-eyed Susan 30369 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: hibiscus 1716 in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: morning glory 30592 [flower] in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: lupine 1741 [flower] in summer_flowers (typicality 3): a well-known member of the new theme
+  linked: cosmos 1753 [flower] in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: phlox 30340 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: verbena 1757 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: agapanthus 1762 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: impatiens 30339 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: daylily 30463 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: yarrow 15689 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: buddleia 56080 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: echinacea 15532 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: salvia 1758 in summer_flowers (typicality 4): a well-known member of the new theme
+  linked: bee balm 30467 in summer_flowers (typicality 5): a well-known member of the new theme
+16. autumn flowers (new)
+  new theme: autumn_flowers "autumn flowers" under flowers (after summer_flowers), pop 3, ident 3: spring flowers was the only season
+  linked: chrysanthemum 1710 [flower] in autumn_flowers (typicality 1): a well-known member of the new theme
+  linked: sunflower 1696 in autumn_flowers (typicality 2): a well-known member of the new theme
+  linked: marigold 1706 [flower] in autumn_flowers (typicality 2): a well-known member of the new theme
+  linked: pansy 1707 [flower] in autumn_flowers (typicality 2): a well-known member of the new theme
+  linked: hydrangea 1729 in autumn_flowers (typicality 2): a well-known member of the new theme
+  linked: fuchsia 62419 [flower] in autumn_flowers (typicality 2): a well-known member of the new theme
+  linked: dahlia 1730 [flower] in autumn_flowers (typicality 2): a well-known member of the new theme
+  linked: aster 1735 in autumn_flowers (typicality 2): a well-known member of the new theme
+  linked: goldenrod 30372 in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: heather 1794 [plant] in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: cyclamen 30525 [plant] in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: black-eyed Susan 30369 in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: zinnia 1733 [flower] in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: snapdragon 1719 in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: begonia 1734 in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: echinacea 15532 in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: Michaelmas daisy 56557 in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: sedum 30351 in autumn_flowers (typicality 3): a well-known member of the new theme
+  linked: cosmos 1753 [flower] in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: salvia 1758 in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: witch hazel 15688 in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: coneflower 30342 in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: nerine 30527 in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: saffron crocus 56478 in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: rudbeckia 30345 in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: sneezeweed 56545 in autumn_flowers (typicality 4): a well-known member of the new theme
+  linked: celosia 1763 in autumn_flowers (typicality 4): a well-known member of the new theme
+  new entry: Japanese anemone 68967 noun, proper, familiarity 4: a common word that was not in the library
+  linked: Japanese anemone 68967 in autumn_flowers (typicality 3): a common word that was not in the library
+  new entry: strawflower 68968 noun, common, familiarity 4: a common word that was not in the library
+  linked: strawflower 68968 in autumn_flowers (typicality 4): a common word that was not in the library
+  group in autumn_flowers: black-eyed Susan 30369 = rudbeckia 30345: the same answer, or a word and its more specific form
+  group in autumn_flowers: echinacea 15532 = coneflower 30342: the same answer, or a word and its more specific form
+17. winter flowers (new)
+  new theme: winter_flowers "winter flowers" under flowers (after autumn_flowers), pop 3, ident 3: spring flowers was the only season
+  linked: snowdrop 1724 in winter_flowers (typicality 1): a well-known member of the new theme
+  linked: poinsettia 25023 in winter_flowers (typicality 1): a well-known member of the new theme
+  linked: pansy 1707 [flower] in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: crocus 1725 in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: violet 1702 [flower] in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: hyacinth 1713 [flower] in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: camellia 1737 [flower] in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: amaryllis 1751 [flower] in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: Christmas cactus 30557 in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: cyclamen 30525 [plant] in winter_flowers (typicality 2): a well-known member of the new theme
+  linked: Christmas rose 30688 in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: heather 1794 [plant] in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: primrose 1731 [flower] in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: witch hazel 15688 in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: daffodil 1699 in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: iris 1712 [flower] in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: hellebore 30341 in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: paperwhite 30536 in winter_flowers (typicality 3): a well-known member of the new theme
+  linked: viburnum 30085 in winter_flowers (typicality 4): a well-known member of the new theme
+  linked: daphne 30505 [shrub] in winter_flowers (typicality 4): a well-known member of the new theme
+  linked: mimosa 1801 [plant] in winter_flowers (typicality 4): a well-known member of the new theme
+  linked: anemone 1745 [flower] in winter_flowers (typicality 4): a well-known member of the new theme
+  linked: kalanchoe 30583 in winter_flowers (typicality 4): a well-known member of the new theme
+  linked: winter jasmine 56544 in winter_flowers (typicality 3, shown "jasmine"): a well-known member of the new theme
+  new entry: mahonia 68969 noun, common, familiarity 5: a common word that was not in the library
+  linked: mahonia 68969 in winter_flowers (typicality 4): a common word that was not in the library
+  group in winter_flowers: hellebore 30341 = Christmas rose 30688: the same answer, or a word and its more specific form
+18. pink flowers (new)
+  new theme: pink_flowers "pink flowers" under flowers_by_color (after red_flowers), pop 2, ident 2: yellow, blue, red, white and purple flowers exist, pink did not
+  linked: cherry blossom 2540 in pink_flowers (typicality 1): a well-known member of the new theme
+  linked: peony 1717 [flower] in pink_flowers (typicality 1): a well-known member of the new theme
+  linked: carnation 1704 in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: rose 1693 [flower] in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: tulip 1694 [flower] in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: hydrangea 1729 in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: hibiscus 1716 in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: lotus 1728 [flower] in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: orchid 1698 [flower] in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: geranium 1709 in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: fuchsia 62419 [flower] in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: petunia 1708 [flower] in pink_flowers (typicality 2): a well-known member of the new theme
+  linked: azalea 1738 [flower] in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: camellia 1737 [flower] in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: begonia 1734 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: foxglove 1732 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: bleeding heart 30349 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: dahlia 1730 [flower] in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: sweet pea 1721 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: snapdragon 1719 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: magnolia 1664 [tree] in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: bougainvillea 30394 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: rhododendron 30383 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: water lily 1791 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: cyclamen 30525 [plant] in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: echinacea 15532 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: apple blossom 30389 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: hollyhock 1749 in pink_flowers (typicality 3): a well-known member of the new theme
+  linked: cosmos 1753 [flower] in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: phlox 30340 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: oleander 30398 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: gerbera 1760 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: impatiens 30339 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: mallow 30313 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: fireweed 30373 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: clematis 30591 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: peach blossom 55666 in pink_flowers (typicality 4): a well-known member of the new theme
+  linked: thrift 28302 in pink_flowers (typicality 5): a well-known member of the new theme
+  linked: nerine 30527 in pink_flowers (typicality 5): a well-known member of the new theme
+  linked: astilbe 1765 in pink_flowers (typicality 5): a well-known member of the new theme
+19. orange flowers (new)
+  new theme: orange_flowers "orange flowers" under flowers_by_color (after yellow_flowers), pop 2, ident 2: yellow, blue, red, white and purple flowers exist, orange did not
+  linked: marigold 1706 [flower] in orange_flowers (typicality 1): a well-known member of the new theme
+  linked: tulip 1694 [flower] in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: chrysanthemum 1710 [flower] in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: hibiscus 1716 in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: pansy 1707 [flower] in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: rose 1693 [flower] in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: tiger lily 30472 in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: bird of paradise 1752 [flower] in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: carnation 1704 in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: nasturtium 1750 in orange_flowers (typicality 2): a well-known member of the new theme
+  linked: gerbera 1760 in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: zinnia 1733 [flower] in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: dahlia 1730 [flower] in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: begonia 1734 in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: snapdragon 1719 in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: gladiolus 1742 in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: calendula 30455 in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: red hot poker 56485 in orange_flowers (typicality 3): a well-known member of the new theme
+  linked: daylily 30463 in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: lantana 30350 in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: crocosmia 30526 in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: canna 30404 in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: alstroemeria 30443 in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: ranunculus 1761 in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: wallflower 30516 [plant] in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: clivia 56482 in orange_flowers (typicality 4): a well-known member of the new theme
+  linked: gazania 56543 in orange_flowers (typicality 5): a well-known member of the new theme
+  linked: lion's tail 30485 in orange_flowers (typicality 5): a well-known member of the new theme
+  linked: trumpet creeper 63141 in orange_flowers (typicality 4): a well-known member of the new theme
+  new entry: California poppy 68970 noun, proper, familiarity 3: a common word that was not in the library
+  linked: California poppy 68970 in orange_flowers (typicality 2): a common word that was not in the library
+  new entry: butterfly weed 68971 noun, common, familiarity 4: a common word that was not in the library
+  linked: butterfly weed 68971 in orange_flowers (typicality 4): a common word that was not in the library
+  group in orange_flowers: marigold 1706 = calendula 30455: the same answer, or a word and its more specific form
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  autumn_flowers: new -> "autumn flowers" pop 3 ident 3: 29 words, easy/middle/hard 6/10/13, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  bedding_plants: "bedding plants" pop 3 ident 4: 13 words, easy/middle/hard 5/3/5, theme difficulty 4, 4th-easiest band 2, gap -2.0 -> "bedding plants" pop 3 ident 4: 18 words, easy/middle/hard 5/6/7, theme difficulty 4, 4th-easiest band 2, gap -2.0
+  blue_flowers: "blue flowers" pop 2 ident 2: 30 words, easy/middle/hard 3/8/19, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "blue flowers" pop 2 ident 2: 31 words, easy/middle/hard 3/8/20, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+  bouquet_flowers: "bouquet flowers" pop 2 ident 3: 44 words, easy/middle/hard 7/13/24, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "bouquet flowers" pop 2 ident 3: 47 words, easy/middle/hard 7/15/25, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  flower_parts: "flower parts" pop 2 ident 2: 35 words, easy/middle/hard 5/7/23, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "flower parts" pop 2 ident 2: 32 words, easy/middle/hard 5/7/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  flowers: "flowers" pop 1 ident 1: 69 words, easy/middle/hard 26/24/19, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "flowers" pop 1 ident 1: 74 words, easy/middle/hard 26/29/19, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  flowers_of_east_asia: "flowers of East Asia" pop 4 ident 4: 24 words, easy/middle/hard 4/8/12, theme difficulty 4.5, 4th-easiest band 2, gap -2.5 -> "flowers of East Asia" pop 4 ident 4: 26 words, easy/middle/hard 4/9/13, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  flowers_with_animal_names: "animal-named flowers" pop 4 ident 3: 51 words, easy/middle/hard 2/11/38, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "animal-named flowers" pop 4 ident 3: 52 words, easy/middle/hard 2/10/40, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  garden_flowers: "garden flowers" pop 2 ident 2: 51 words, easy/middle/hard 14/15/22, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "garden flowers" pop 2 ident 2: 55 words, easy/middle/hard 16/17/22, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  orange_flowers: new -> "orange flowers" pop 2 ident 2: 31 words, easy/middle/hard 6/11/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  pink_flowers: new -> "pink flowers" pop 2 ident 2: 40 words, easy/middle/hard 12/16/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  south_african_flowers: "South African flowers" pop 4 ident 4: 24 words, easy/middle/hard 0/2/22, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "South African flowers" pop 4 ident 4: 27 words, easy/middle/hard 0/4/23, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  south_american_flowers: "South American flowers" pop 5 ident 5: 24 words, easy/middle/hard 2/4/18, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "South American flowers" pop 5 ident 5: 25 words, easy/middle/hard 3/4/18, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  summer_flowers: new -> "summer flowers" pop 2 ident 2: 38 words, easy/middle/hard 12/15/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  sweet_smelling_flowers: "sweet-smelling flowers" pop 2 ident 2: 46 words, easy/middle/hard 6/13/27, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "sweet-smelling flowers" pop 2 ident 2: 45 words, easy/middle/hard 6/13/26, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  tropical_flowers: "tropical flowers" pop 3 ident 3: 39 words, easy/middle/hard 2/9/28, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "tropical flowers" pop 3 ident 3: 35 words, easy/middle/hard 2/9/24, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  wildflowers: "wildflowers" pop 2 ident 3: 44 words, easy/middle/hard 9/10/25, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "wildflowers" pop 2 ident 3: 48 words, easy/middle/hard 9/13/26, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  winter_flowers: new -> "winter flowers" pop 3 ident 3: 25 words, easy/middle/hard 5/11/9, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  yellow_flowers: "yellow flowers" pop 2 ident 2: 30 words, easy/middle/hard 6/9/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "yellow flowers" pop 2 ident 2: 32 words, easy/middle/hard 6/11/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 5: Japanese anemone 68967, strawflower 68968, mahonia 68969, California poppy 68970, butterfly weed 68971
+Entries deleted 0: none
+library changes 312; entries changed 132; status set to rev 85; themes deleted 0; entries merged 0
+Checks: changed kinds: info:overlap 4834 -> 4833
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3229 -> 3234; gone none; new summer_flowers, autumn_flowers, winter_flowers, orange_flowers, pink_flowers; theme indexes shift: from index 516 ("summer_flowers", was "tropical_flowers") to the last index 3233
+Theme rows whose fields changed (parent compared by id): 14: flowers (index 511 -> 511: counts [7,19,26,16,5] -> [7,19,31,16,5]); garden_flowers (index 512 -> 512: counts [1,13,16,15,8] -> [1,15,18,15,8]); bedding_plants (index 513 -> 513: counts [0,5,3,5,0] -> [0,5,6,7,0]); wildflowers (index 514 -> 514: counts [3,6,10,21,5] -> [3,6,13,22,5]); tropical_flowers (index 516 -> 519: counts [1,1,9,16,13] -> [1,1,9,15,10]); flower_parts (index 517 -> 520: counts [2,3,7,11,12] -> [2,3,7,11,9]); bouquet_flowers (index 518 -> 521: counts [2,5,13,14,11] -> [2,5,15,15,11]); flowers_with_animal_names (index 520 -> 523: counts [0,2,11,12,27] -> [0,2,10,14,27]); south_african_flowers (index 523 -> 526: counts [0,0,2,13,9] -> [0,0,4,14,9], range [4,5] -> [3,5]); flowers_of_east_asia (index 524 -> 527: counts [0,4,8,10,3] -> [0,4,9,11,3]); south_american_flowers (index 526 -> 529: counts [0,2,4,10,8] -> [0,3,4,11,7]); yellow_flowers (index 529 -> 532: counts [3,3,9,13,5] -> [3,3,11,13,5]); blue_flowers (index 530 -> 534: counts [0,3,8,10,10] -> [0,3,8,11,10]); sweet_smelling_flowers (index 534 -> 539: counts [1,5,14,18,10] -> [1,5,14,17,10])
+Entry rows 61420 -> 61425; first row whose entry changed: 61420 (Japanese anemone 68967, was undefined); rows that moved: 0; added Japanese anemone 68967 (row 61420), strawflower 68968 (row 61421), mahonia 68969 (row 61422), California poppy 68970 (row 61423), butterfly weed 68971 (row 61424); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 99999 -> 100185; rows whose link count changed: 126
+Link-index shifts: from row 1638 (ginkgo 1665) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 12, new 198, rating changed 0
+  gone (other than the deleted themes): flowers_with_animal_names: "antirrhinum" (1720), flowers_with_animal_names: "buttercup" (1723), tropical_flowers: "protea" (1759), flower_parts: "thorn" (28480), flower_parts: "leaf" (30033), flower_parts: "root" (30034), tropical_flowers: "kangaroo paw" (30411), tropical_flowers: "waratah" (30412), tropical_flowers: "king protea" (30413), south_american_flowers: "calla lily" (30453), sweet_smelling_flowers: "touch-me-not" (65494), yellow_flowers: "touch-me-not" (65494)
+  new: flowers: "magnolia" (1664), pink_flowers: "magnolia" (1664), flowers_with_animal_names: "dogwood" (1681), summer_flowers: "rose" (1693), pink_flowers: "rose" (1693), orange_flowers: "rose" (1693), pink_flowers: "tulip" (1694), orange_flowers: "tulip" (1694), summer_flowers: "daisy" (1695), wildflowers: "sunflower" (1696), summer_flowers: "sunflower" (1696), autumn_flowers: "sunflower" (1696), summer_flowers: "lily" (1697), south_american_flowers: "orchid" (1698), pink_flowers: "orchid" (1698), bouquet_flowers: "daffodil" (1699), winter_flowers: "daffodil" (1699), summer_flowers: "poppy" (1701), winter_flowers: "violet" (1702), garden_flowers: "lavender" (1703), summer_flowers: "lavender" (1703), pink_flowers: "carnation" (1704), orange_flowers: "carnation" (1704), summer_flowers: "marigold" (1706), autumn_flowers: "marigold" (1706), orange_flowers: "marigold" (1706), autumn_flowers: "pansy" (1707), winter_flowers: "pansy" (1707), orange_flowers: "pansy" (1707), summer_flowers: "petunia" (1708), pink_flowers: "petunia" (1708), south_african_flowers: "geranium" (1709), summer_flowers: "geranium" (1709), pink_flowers: "geranium" (1709), garden_flowers: "chrysanthemum" (1710), yellow_flowers: "chrysanthemum" (1710), autumn_flowers: "chrysanthemum" (1710), orange_flowers: "chrysanthemum" (1710), garden_flowers: "iris" (1712), flowers_of_east_asia: "iris" (1712), winter_flowers: "iris" (1712), bouquet_flowers: "hyacinth" (1713), winter_flowers: "hyacinth" (1713), bouquet_flowers: "lilac" (1714), summer_flowers: "hibiscus" (1716), pink_flowers: "hibiscus" (1716), orange_flowers: "hibiscus" (1716), pink_flowers: "peony" (1717), summer_flowers: "snapdragon" (1719), autumn_flowers: "snapdragon" (1719), pink_flowers: "snapdragon" (1719), orange_flowers: "snapdragon" (1719), summer_flowers: "sweet pea" (1721), pink_flowers: "sweet pea" (1721), winter_flowers: "snowdrop" (1724), yellow_flowers: "crocus" (1725), winter_flowers: "crocus" (1725), pink_flowers: "lotus" (1728), summer_flowers: "hydrangea" (1729), autumn_flowers: "hydrangea" (1729), pink_flowers: "hydrangea" (1729), bedding_plants: "dahlia" (1730), summer_flowers: "dahlia" (1730), autumn_flowers: "dahlia" (1730), pink_flowers: "dahlia" (1730), orange_flowers: "dahlia" (1730), garden_flowers: "primrose" (1731), bedding_plants: "primrose" (1731), winter_flowers: "primrose" (1731), summer_flowers: "foxglove" (1732), pink_flowers: "foxglove" (1732), summer_flowers: "zinnia" (1733), autumn_flowers: "zinnia" (1733), orange_flowers: "zinnia" (1733), summer_flowers: "begonia" (1734), autumn_flowers: "begonia" (1734), pink_flowers: "begonia" (1734), orange_flowers: "begonia" (1734), autumn_flowers: "aster" (1735), winter_flowers: "camellia" (1737), pink_flowers: "camellia" (1737), pink_flowers: "azalea" (1738), summer_flowers: "delphinium" (1739), summer_flowers: "lupine" (1741), summer_flowers: "gladiolus" (1742), orange_flowers: "gladiolus" (1742), winter_flowers: "anemone" (1745), summer_flowers: "cornflower" (1747), summer_flowers: "hollyhock" (1749), pink_flowers: "hollyhock" (1749), summer_flowers: "nasturtium" (1750), orange_flowers: "nasturtium" (1750), winter_flowers: "amaryllis" (1751), orange_flowers: "bird of paradise" (1752), summer_flowers: "cosmos" (1753), autumn_flowers: "cosmos" (1753), pink_flowers: "cosmos" (1753), wildflowers: "columbine" (1756), summer_flowers: "verbena" (1757), summer_flowers: "salvia" (1758), autumn_flowers: "salvia" (1758), pink_flowers: "gerbera" (1760), orange_flowers: "gerbera" (1760), orange_flowers: "ranunculus" (1761), summer_flowers: "agapanthus" (1762), autumn_flowers: "celosia" (1763), pink_flowers: "astilbe" (1765), pink_flowers: "water lily" (1791), wildflowers: "heather" (1794), autumn_flowers: "heather" (1794), winter_flowers: "heather" (1794), winter_flowers: "mimosa" (1801), flowers: "cherry blossom" (2540), pink_flowers: "cherry blossom" (2540), summer_flowers: "echinacea" (15532), autumn_flowers: "echinacea" (15532), pink_flowers: "echinacea" (15532), autumn_flowers: "witch hazel" (15688), winter_flowers: "witch hazel" (15688), summer_flowers: "yarrow" (15689), winter_flowers: "poinsettia" (25023), flowers_with_animal_names: "harebell" (28281), pink_flowers: "thrift" (28302), flowers: "wisteria" (29549), winter_flowers: "viburnum" (30085), pink_flowers: "mallow" (30313), summer_flowers: "impatiens" (30339), pink_flowers: "impatiens" (30339), summer_flowers: "phlox" (30340), pink_flowers: "phlox" (30340), winter_flowers: "hellebore" (30341), autumn_flowers: "coneflower" (30342), south_african_flowers: "lobelia" (30343), autumn_flowers: "rudbeckia" (30345), pink_flowers: "bleeding heart" (30349), orange_flowers: "lantana" (30350), autumn_flowers: "sedum" (30351), summer_flowers: "black-eyed Susan" (30369), autumn_flowers: "black-eyed Susan" (30369), autumn_flowers: "goldenrod" (30372), pink_flowers: "fireweed" (30373), pink_flowers: "rhododendron" (30383), pink_flowers: "apple blossom" (30389), pink_flowers: "bougainvillea" (30394), pink_flowers: "oleander" (30398), south_american_flowers: "canna" (30404), orange_flowers: "canna" (30404), orange_flowers: "alstroemeria" (30443), south_african_flowers: "calla lily" (30453), orange_flowers: "calendula" (30455), flowers: "honeysuckle" (30462), wildflowers: "honeysuckle" (30462), summer_flowers: "honeysuckle" (30462), yellow_flowers: "daylily" (30463), summer_flowers: "daylily" (30463), orange_flowers: "daylily" (30463), summer_flowers: "bee balm" (30467), flowers_of_east_asia: "tiger lily" (30472), orange_flowers: "tiger lily" (30472), orange_flowers: "lion's tail" (30485), winter_flowers: "daphne" (30505), bedding_plants: "wallflower" (30516), orange_flowers: "wallflower" (30516), autumn_flowers: "cyclamen" (30525), winter_flowers: "cyclamen" (30525), pink_flowers: "cyclamen" (30525), orange_flowers: "crocosmia" (30526), autumn_flowers: "nerine" (30527), pink_flowers: "nerine" (30527), winter_flowers: "paperwhite" (30536), winter_flowers: "Christmas cactus" (30557), bedding_plants: "coleus" (30566), winter_flowers: "kalanchoe" (30583), flowers: "clematis" (30591), blue_flowers: "clematis" (30591), pink_flowers: "clematis" (30591), summer_flowers: "morning glory" (30592), winter_flowers: "Christmas rose" (30688), pink_flowers: "peach blossom" (55666), summer_flowers: "buddleia" (56080), autumn_flowers: "saffron crocus" (56478), orange_flowers: "clivia" (56482), orange_flowers: "red hot poker" (56485), orange_flowers: "gazania" (56543), winter_flowers: "jasmine" (56544), autumn_flowers: "sneezeweed" (56545), autumn_flowers: "Michaelmas daisy" (56557), flowers_with_animal_names: "fleabane" (60213), bedding_plants: "fuchsia" (62419), summer_flowers: "fuchsia" (62419), autumn_flowers: "fuchsia" (62419), pink_flowers: "fuchsia" (62419), orange_flowers: "trumpet creeper" (63141), autumn_flowers: "Japanese anemone" (68967), autumn_flowers: "strawflower" (68968), winter_flowers: "mahonia" (68969), orange_flowers: "California poppy" (68970), orange_flowers: "butterfly weed" (68971)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 24 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 198 new links existed earlier and was removed (all 223 library versions and 187 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - orange flowers: lily (overlap with tiger lily), squash blossom (its aliases courgette flower and zucchini flower hold the word of the theme name), saffron crocus (its petals are purple)
+  - summer, autumn and winter flowers share words, as flowers bloom over more than one season; spring flowers stays as it is
+
+For Simon:
+  1. touch-me-not (Mimosa pudica, pink flowers) leaves yellow flowers and sweet-smelling flowers, with its group mimosa = touch-me-not there. It stays in plants. mimosa 1801 has the alias sensitive plant (the same Mimosa pudica) but is used in yellow, sweet-smelling and winter flowers for the yellow florist's mimosa (an acacia): split it into two entries?
+  2. protea, king protea, kangaroo paw and waratah leave tropical flowers (South Africa's Cape and southern Australia); all four stay in their own region's list.
+  3. calla lily moves from South American flowers to South African flowers and is grouped with arum lily; geranium joins pelargonium there.
+  4. buttercup and antirrhinum leave animal-named flowers (no animal in the name).
+  5. Japanese anemone and California poppy are typed proper, as Japanese maple and Michaelmas daisy.
+
+=== Notice to _WS_ for v481 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v481 (Nature & Earth, flowers branch): 5 new themes (summer flowers, autumn flowers, winter flowers, pink flowers, orange flowers), 198 new links, 12 links out, 5 new entries (Japanese anemone, strawflower, mahonia, California poppy, butterfly weed).
+Theme rows 3229 -> 3234; gone none; new summer_flowers, autumn_flowers, winter_flowers, orange_flowers, pink_flowers; theme indexes shift: from index 516 ("summer_flowers", was "tropical_flowers") to the last index 3233
+Entry rows 61420 -> 61425.
+Link-index shifts: from row 1638 (ginkgo 1665) on, link positions move
+Line breaks: 1 new (straw-flow-er).
+New characters: none.

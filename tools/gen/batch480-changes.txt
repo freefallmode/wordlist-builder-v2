@@ -1,0 +1,105 @@
+Library batch v480 (for Simon's review): Nature & Earth, forests branch
+1. woodland
+  linked: mushroom 17645 [fungus] in woodland (typicality 2): well known here; it was not linked
+  linked: acorn 17362 [nut] in woodland (typicality 2): well known here; it was not linked
+  linked: rabbit 1443 in woodland (typicality 2): well known here; it was not linked
+  linked: leaf 30033 in woodland (typicality 2): well known here; it was not linked
+  linked: stream 30152 [woodland] in woodland (typicality 3): well known here; it was not linked
+  linked: hedgehog 1003 [animal] in woodland (typicality 3): well known here; it was not linked
+  linked: bramble 1808 in woodland (typicality 4): well known here; it was not linked
+  linked: ivy 1770 [plant] in woodland (typicality 4): well known here; it was not linked
+2. foraging finds
+  out of foraging_finds: sea grass 1291 [seagrass]: a plant on the sea floor, not gathered for food (seaweed stays) (stays in water_plants, rock_pool, beachcombing_finds, coastal_plants, ocean, beach, chip_flavors, sea_life, plants)
+  linked: raspberry 349 in foraging_finds (typicality 2): well known here; it was not linked
+  linked: blueberry 348 [fruit] in foraging_finds (typicality 2): well known here; it was not linked
+  linked: truffle 17618 [fungus] in foraging_finds (typicality 3): well known here; it was not linked
+  linked: mussel 477 in foraging_finds (typicality 3): well known here; it was not linked
+3. hedgerow fruits
+  linked: blackberry 49261 [fruit] in hedgerow_fruits (typicality 1): well known here; it was not linked
+  linked: raspberry 349 in hedgerow_fruits (typicality 2): well known here; it was not linked
+4. foraged greens
+  linked: watercress 437 in leaves_and_shoots (typicality 3): well known here; it was not linked
+5. on a nature walk (new)
+  new theme: on_a_nature_walk "on a nature walk" under forests (after fungi), pop 2, ident 2: an everyday set with no list: things to see and find outdoors
+  linked: leaf 30033 in on_a_nature_walk (typicality 1): a well-known member of the new theme
+  linked: flower 28286 [plant] in on_a_nature_walk (typicality 1): a well-known member of the new theme
+  linked: tree 27965 [plant] in on_a_nature_walk (typicality 1): a well-known member of the new theme
+  linked: bird 27973 in on_a_nature_walk (typicality 1): a well-known member of the new theme
+  linked: butterfly 1348 [insect] in on_a_nature_walk (typicality 1): a well-known member of the new theme
+  linked: squirrel 990 [tree rodent] in on_a_nature_walk (typicality 2): a well-known member of the new theme
+  linked: pine cone 30087 in on_a_nature_walk (typicality 2): a well-known member of the new theme
+  linked: feather 8360 [bird] in on_a_nature_walk (typicality 2): a well-known member of the new theme
+  linked: mushroom 17645 [fungus] in on_a_nature_walk (typicality 2): a well-known member of the new theme
+  linked: trail 30150 [path] in on_a_nature_walk (typicality 2): a well-known member of the new theme
+  linked: acorn 17362 [nut] in on_a_nature_walk (typicality 2): a well-known member of the new theme
+  linked: ladybug 1351 in on_a_nature_walk (typicality 2): a well-known member of the new theme
+  linked: stream 30152 [woodland] in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: moss 1767 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: spider web 39072 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: puddle 31213 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: caterpillar 1361 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: footprint 29224 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: worm 9116 [earthworm] in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: dandelion 1727 [flower] in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: log 30135 [wood] in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: fern 1766 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: pebble 2051 [stone] in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: binoculars 8408 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: snail 1367 in on_a_nature_walk (typicality 3): a well-known member of the new theme
+  linked: burrow 10149 [animal home] in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: seed pod 30096 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: lichen 30139 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: toadstool 22509 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: chipmunk 7836 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: signpost 38369 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: woodpecker 1077 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: stump 30041 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: dragonfly 1358 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: antlers 45162 in on_a_nature_walk (typicality 4): a well-known member of the new theme
+  linked: eggshell 66176 [hen shell] in on_a_nature_walk (typicality 4): a well-known member of the new theme
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  foraging_finds: "foraging finds" pop 3 ident 3: 57 words, easy/middle/hard 9/10/38, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "foraging finds" pop 3 ident 3: 60 words, easy/middle/hard 11/12/37, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  hedgerow_fruits: "hedgerow fruits" pop 4 ident 3: 9 words, easy/middle/hard 1/4/4, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "hedgerow fruits" pop 4 ident 3: 11 words, easy/middle/hard 3/4/4, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  leaves_and_shoots: "foraged greens" pop 4 ident 4: 18 words, easy/middle/hard 2/1/15, theme difficulty 4.5, 4th-easiest band 4, gap -0.5 -> "foraged greens" pop 4 ident 4: 19 words, easy/middle/hard 2/2/15, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  on_a_nature_walk: new -> "on a nature walk" pop 2 ident 2: 36 words, easy/middle/hard 12/13/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  woodland: "woodland" pop 2 ident 3: 31 words, easy/middle/hard 10/13/8, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "woodland" pop 2 ident 3: 39 words, easy/middle/hard 14/15/10, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+First synonym aliases harder than root familiarity + 1: 8 -> 8: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 67; entries changed 47; status set to rev 14; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3228 -> 3229; gone none; new on_a_nature_walk; theme indexes shift: from index 510 ("on_a_nature_walk", was "flowers") to the last index 3228
+Theme rows whose fields changed (parent compared by id): 4: woodland (index 499 -> 499: counts [3,7,13,6,3] -> [3,11,15,8,3]); foraging_finds (index 506 -> 506: counts [2,8,10,22,21] -> [2,10,12,22,20]); hedgerow_fruits (index 507 -> 507: counts [0,1,4,4,1] -> [1,3,4,4,1]); leaves_and_shoots (index 508 -> 508: counts [0,2,1,9,8] -> [0,2,2,9,8], range [4,5] -> [3,5])
+Entry rows 61420 -> 61420; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 99949 -> 99999; rows whose link count changed: 47
+Link-index shifts: from row 342 (raspberry 349) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 1, new 51, rating changed 0
+  gone (other than the deleted themes): foraging_finds: "sea grass" (1291)
+  new: foraging_finds: "blueberry" (348), foraging_finds: "raspberry" (349), hedgerow_fruits: "raspberry" (349), leaves_and_shoots: "watercress" (437), foraging_finds: "mussel" (477), on_a_nature_walk: "squirrel" (990), woodland: "hedgehog" (1003), on_a_nature_walk: "woodpecker" (1077), on_a_nature_walk: "butterfly" (1348), on_a_nature_walk: "ladybug" (1351), on_a_nature_walk: "dragonfly" (1358), on_a_nature_walk: "caterpillar" (1361), on_a_nature_walk: "snail" (1367), woodland: "rabbit" (1443), on_a_nature_walk: "dandelion" (1727), on_a_nature_walk: "fern" (1766), on_a_nature_walk: "moss" (1767), woodland: "ivy" (1770), woodland: "bramble" (1808), on_a_nature_walk: "pebble" (2051), on_a_nature_walk: "chipmunk" (7836), on_a_nature_walk: "feather" (8360), on_a_nature_walk: "binoculars" (8408), on_a_nature_walk: "worm" (9116), on_a_nature_walk: "burrow" (10149), woodland: "acorn" (17362), on_a_nature_walk: "acorn" (17362), foraging_finds: "truffle" (17618), woodland: "mushroom" (17645), on_a_nature_walk: "mushroom" (17645), on_a_nature_walk: "toadstool" (22509), on_a_nature_walk: "tree" (27965), on_a_nature_walk: "bird" (27973), on_a_nature_walk: "flower" (28286), on_a_nature_walk: "footprint" (29224), woodland: "leaf" (30033), on_a_nature_walk: "leaf" (30033), on_a_nature_walk: "stump" (30041), on_a_nature_walk: "pine cone" (30087), on_a_nature_walk: "seed pod" (30096), on_a_nature_walk: "log" (30135), on_a_nature_walk: "lichen" (30139), on_a_nature_walk: "trail" (30150), woodland: "stream" (30152), on_a_nature_walk: "stream" (30152), on_a_nature_walk: "puddle" (31213), on_a_nature_walk: "signpost" (38369), on_a_nature_walk: "spider web" (39072), on_a_nature_walk: "antlers" (45162), hedgerow_fruits: "blackberry" (49261), on_a_nature_walk: "eggshell" (66176)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Nature & Earth, 2026-11-25): all 11 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 51 new links existed earlier and was removed (all 222 library versions and 185 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+For Simon:
+  1. sea grass 1291 leaves foraging finds: a plant on the sea floor, not gathered for food (it left umami foods in v477 too; seaweed stays).
+  2. Four of the eleven themes change; the other seven stay as they are.
+
+=== Notice to _WS_ for v480 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v480 (Nature & Earth, forests branch): 1 new theme (on a nature walk), 51 new links, 1 links out, 0 new entries.
+Theme rows 3228 -> 3229; gone none; new on_a_nature_walk; theme indexes shift: from index 510 ("on_a_nature_walk", was "flowers") to the last index 3228
+Entry rows 61420 -> 61420.
+Link-index shifts: from row 342 (raspberry 349) on, link positions move
+Line breaks: none.
+New characters: none.
