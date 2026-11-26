@@ -88,12 +88,6 @@ public class MainActivity extends Activity {
             return WindowInsets.CONSUMED;
         });
 
-        TextView title = new TextView(this);
-        title.setText("Bubble Word Jam levels");
-        title.setTextSize(TypedValue.COMPLEX_UNIT_SP, 22);
-        title.setTypeface(Typeface.DEFAULT_BOLD);
-        root.addView(title);
-
         status = new TextView(this);
         status.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
         status.setPadding(0, dp(4), 0, dp(8));
