@@ -214,6 +214,13 @@ test('theme-name check: the collected thing alone is fine, longer text and other
   assert.equal(nameLeak(T('soups'), E('tomato soup')), 'soup');
   assert.equal(nameLeak(T('police words'), E('police')), 'police');
   assert.equal(nameLeak(T('water park'), E('water')), 'water');
+  // I37: a "things …" theme collects things, so its last word alone is a leak; other verb forms of a name word count
+  assert.equal(nameLeak(T('things underground'), E('underground')), 'underground');
+  assert.equal(nameLeak(T('things you climb'), E('climbing frame')), 'climb');
+  assert.equal(nameLeak(T('skiing words'), E('ski lift')), 'skiing');
+  assert.equal(nameLeak(T('things that cut'), E('pizza cutter')), 'cut');
+  assert.equal(nameLeak(T('baking'), E('bake sale')), 'baking');
+  assert.equal(nameLeak(T('things that cut'), E('scissors')), null);
 });
 
 test('validate warns when a US-tagged spelling alias sits under a non-US root', () => {

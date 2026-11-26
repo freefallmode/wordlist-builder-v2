@@ -17,14 +17,18 @@ const nameStem = w => w.length > 4 && /ies$/.test(w) ? w.slice(0, -3) + 'y' : w.
 const nameToks = s => (s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').match(/[a-z]+/g) || []);
 export const themeNameWords = t => [...new Set(nameToks(t.name).filter(w => w.length > 2 && !NAME_STOP.has(w)).map(nameStem))];
 // A single word that IS the thing the theme collects does not give it away: `pants` in pants and shorts, `bug` in garden bugs. The collected things are the last word of the name or of each part of "A and B" / "A, B" (not `police` in police words or `water` in water park). Longer text (cotton candy, tomato soup) still counts as a leak.
-const collected = t => new Set(t.name.toLowerCase().split(/\s+and\s+|\s*[,&/]\s*/).map(p => nameToks(p).pop()).filter(w => w && w.length > 2 && !NAME_STOP.has(w)).map(nameStem));
+// A part that names "things" collects things, not its last word: `underground` in things underground, `glow` in things that glow is a leak (ISSUES I37).
+const collected = t => new Set(t.name.toLowerCase().split(/\s+and\s+|\s*[,&/]\s*/).filter(p => !/\bthings?\b/.test(p)).map(p => nameToks(p).pop()).filter(w => w && w.length > 2 && !NAME_STOP.has(w)).map(nameStem));
+// The same word in another verb form: `climbing` (climbing frame) for `climb` in things you climb, `baking` for bake, `running` for run (ISSUES I37).
+const formOf = (x, b) => b.length > 2 && ['ing', 'ed', 'er', 'ers'].some(s => x === b + s || x === b + b.at(-1) + s || (b.endsWith('e') && x === b.slice(0, -1) + s));
+const sameWord = (a, b) => a === b || formOf(a, b) || formOf(b, a);
 // True when the text shown in the theme is just a word of the theme name (or its singular/plural): `snake` in "snakes", `red` in "shades of red". The leak check lets some of these through (the thing the theme collects); the export flags them so the game can leave them out.
 export const isNameWord = (t, text) => { const ts = nameToks(text).map(nameStem); return ts.length === 1 && themeNameWords(t).includes(ts[0]); };
 export function nameLeak(t, e, words = themeNameWords(t)) {
   if (t.nameOk || !words.length || (e.nameOkIn || []).includes(t.id)) return null;
   const ts = nameToks(e.text).map(nameStem);
   if (ts.length === 1 && collected(t).has(ts[0])) return null;
-  return words.find(k => ts.includes(k)) || null;
+  return words.find(k => ts.some(w => sameWord(w, k))) || null;
 }
 
 const words = s => s.trim().split(/\s+/).length;
