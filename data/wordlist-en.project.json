@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":505,"modified":"2026-11-27 00:28"},"nextId":69017,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
+{"project":{"schema":1,"lang":"en","lib":{"version":506,"modified":"2026-11-27 00:30"},"nextId":69025,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[78,79]],"ident":1},
@@ -1484,6 +1484,7 @@
 {"id":"exam_words","name":"exam words","parent":"school","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":2,"groups":[[34861,61274],[4485,4486,4487]],"ident":2},
 {"id":"university_words","name":"university words","parent":"school","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":2,"groups":[[34869,34870],[34877,34879],[4537,61278,33090],[4539,34873]],"ident":2},
 {"id":"academic_staff","name":"university staff","parent":"university_words","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":4,"ident":3},
+{"group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"world-famous universities: Harvard, Oxford, Cambridge, Yale, MIT, Stanford","id":"famous_universities","name":"famous universities","parent":"school","pop":3,"ident":2,"tkind":"category"},
 {"id":"school_types","name":"school types","parent":"school","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"kindergarten, preschool, elementary, middle school, high school, boarding school, academy","pop":2,"groups":[[34911,34910],[34897,34898],[34896,34904],[34929,61284]],"ident":3},
 {"id":"university_degrees","name":"university degrees","parent":"school","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"bachelor, master, doctorate, PhD, MBA, BA, BSc, diploma","pop":3,"groups":[[34955,34936],[34956,34951],[34957,34939],[34958,34940],[34934,34959]],"ident":2},
 {"id":"graduation_words","name":"graduation words","parent":"school","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"cap, gown, diploma, tassel, valedictorian, commencement, alumni, yearbook","pop":2,"groups":[[34964,61309,34965,34979,24700],[10261,34975],[4519,61304],[4554,26668]],"ident":2},
@@ -57037,8 +57038,8 @@
 {"id":56864,"text":"Cardiff","type":"place","fam":2,"typ":{"british_cities":2},"status":"gen"},
 {"id":56865,"text":"Belfast","type":"place","fam":2,"typ":{"british_cities":2},"status":"gen"},
 {"id":56866,"text":"Leicester","gloss":"city","type":"place","fam":3,"typ":{"british_cities":3},"status":"gen"},
-{"id":56867,"text":"Oxford","gloss":"English university city","type":"place","fam":1,"typ":{"british_cities":2},"status":"gen"},
-{"id":56868,"text":"Cambridge","type":"place","fam":1,"typ":{"british_cities":2},"status":"gen"},
+{"id":56867,"text":"Oxford","gloss":"English university city","type":"place","fam":1,"typ":{"british_cities":2,"famous_universities":1},"status":"rev"},
+{"id":56868,"text":"Cambridge","type":"place","fam":1,"typ":{"british_cities":2,"famous_universities":1},"status":"rev"},
 {"id":56869,"text":"Exeter","type":"place","fam":3,"typ":{"british_cities":4},"status":"gen"},
 {"id":56870,"text":"Durham","gloss":"city","type":"place","fam":3,"typ":{"british_cities":4},"status":"gen"},
 {"id":56871,"text":"Aberdeen","type":"place","fam":3,"typ":{"british_cities":3},"status":"gen"},
@@ -66438,5 +66439,13 @@
 {"id":69013,"text":"settler","fam":2,"typ":{"people_of_the_frontier":1},"status":"rev"},
 {"id":69014,"text":"cowgirl","fam":1,"typ":{"people_of_the_frontier":2},"status":"rev"},
 {"id":69015,"text":"trapper","fam":3,"typ":{"people_of_the_frontier":2},"status":"rev","kin":[45171,48576]},
-{"id":69016,"text":"Fenrir","type":"proper","fam":3,"typ":{"norse_mythology":2},"status":"rev"}
+{"id":69016,"text":"Fenrir","type":"proper","fam":3,"typ":{"norse_mythology":2},"status":"rev"},
+{"id":69017,"text":"Harvard","type":"proper","fam":1,"typ":{"famous_universities":1},"status":"rev"},
+{"id":69018,"text":"Yale","type":"proper","fam":2,"typ":{"famous_universities":2},"status":"rev"},
+{"id":69019,"text":"MIT","type":"proper","fam":2,"typ":{"famous_universities":2},"status":"rev"},
+{"id":69020,"text":"Stanford","type":"proper","fam":2,"typ":{"famous_universities":2},"status":"rev"},
+{"id":69021,"text":"Princeton","type":"proper","fam":2,"typ":{"famous_universities":2},"status":"rev"},
+{"id":69022,"text":"Sorbonne","type":"proper","fam":3,"typ":{"famous_universities":3},"status":"rev"},
+{"id":69023,"text":"Berkeley","type":"proper","fam":3,"typ":{"famous_universities":3},"status":"rev"},
+{"id":69024,"text":"Caltech","type":"proper","fam":3,"typ":{"famous_universities":3},"status":"rev"}
 ]}
