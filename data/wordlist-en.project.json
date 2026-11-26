@@ -1,4 +1,4 @@
-{"project":{"schema":1,"lang":"en","lib":{"version":509,"modified":"2026-11-27 00:34"},"nextId":69025,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
+{"project":{"schema":1,"lang":"en","lib":{"version":510,"modified":"2026-11-27 00:35"},"nextId":69025,"settings":{"minWords":4,"maxWords":4,"maxLen":20}},
 "themes":[
 {"id":"food_drink","name":"Food & Drink","parent":null,"group":true,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":0},
 {"id":"fruits","name":"fruits","parent":"food_drink","group":false,"enabled":true,"complete":false,"adult":false,"sensitive":false,"tm":false,"lang":false,"region":[],"note":"","pop":1,"groups":[[385,387,386],[98,99],[363,364],[361,362],[355,356],[78,79]],"ident":1},
@@ -35753,7 +35753,7 @@
 {"id":34443,"text":"iftar","fam":4,"typ":{"islam_words":2,"ramadan_and_eid":1},"status":"gen"},
 {"id":34444,"text":"suhoor","fam":5,"typ":{"islam_words":3,"ramadan_and_eid":2},"status":"gen"},
 {"id":34445,"text":"wudu","fam":5,"sensitive":true,"typ":{"islam_words":3},"status":"rev"},
-{"id":34446,"text":"jihad","fam":3,"sensitive":true,"typ":{"islam_words":3},"status":"gen"},
+{"id":34446,"text":"jihad","fam":3,"sensitive":true,"status":"rev"},
 {"id":34447,"text":"caliphate","fam":4,"sensitive":true,"typ":{"islam_words":3,"types_of_government":4,"ruled_by_one_leader":4},"status":"rev"},
 {"id":34448,"text":"madrasa","fam":4,"sensitive":true,"typ":{"islam_words":3,"middle_eastern_buildings":4,"school_types":5},"status":"rev"},
 {"id":34449,"text":"takbir","fam":5,"sensitive":true,"typ":{"islam_words":4},"status":"rev"},
