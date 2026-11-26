@@ -13,7 +13,7 @@ The game is a Unity app. Its levels are ScriptableObject assets in Addressables 
   - split-word count
   - an estimate of the starting moves
 - `words.tsv`: one row per word (91,008 rows): level, theme, parent_theme, word, split, special.
-- `themes.csv`: one row per theme (22,752 rows), for Google Sheets: Level, Theme, Parent theme, Words, Split words, Special notes. Each level's first row also notes its theme count, split-word count, estimated moves and chain separator. Rebuild with `python themes_csv.py levels.json themes.csv`.
+- `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), Special notes. A bold row per level (theme count, split total, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
 - `export_levels.py`: rebuilds both files from the raw dump (see "How it was made").
 
 Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per level (median 12), and split words in 1,530 levels.
