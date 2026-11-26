@@ -13,7 +13,7 @@ The game is a Unity app. Its levels are ScriptableObject assets in Addressables 
   - split-word count
   - an estimate of the starting moves
 - `words.tsv`: one row per word (91,008 rows): level, theme, parent_theme, word, split, special.
-- `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), Special notes. A bold row per level (theme count, split total, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
+- `themes.xlsx`: one row per theme (22,752 rows) in original case, for Google Sheets or Excel. Columns: Level, Theme, Parent theme, Words, Split words (count), Special notes. A bold row per level (theme count, split total, estimated moves, chain separator) sits above that level's theme rows, which are grouped so they collapse and expand. `themes-averages.xlsx` is the same with a first sheet, Averages: themes and split words per level for all levels, 1-500, 501-1800 and each block of 100. `themes.csv` holds the same theme rows without the level rows or grouping. Rebuild both with `python themes_table.py levels.json themes`.
 - `export_levels.py`: rebuilds both files from the raw dump (see "How it was made").
 
 Totals: 21,605 distinct words, 10,858 distinct theme names, 5 to 26 themes per level (median 12), and split words in 1,530 levels.
@@ -107,6 +107,41 @@ Across all levels, including those with none, the mean is 2.8 split words.
   - many levels in 101-200, where frozen, burst and linked bubbles arrive
 
 **Move slack** (`moveLimit`) is 10 on every level from 201 on, and close to 10 before that.
+
+## Why early levels have capitals
+
+**Capitalised words by level:**
+
+| Levels | Words capitalised |
+|---|---|
+| 1-100 | about 60% |
+| 101-200 | about 40% |
+| 201-300 | none |
+| 301-400 | about 13% |
+| 401-1800 | none (all lowercase) |
+
+The patterns:
+
+- **Case is mostly set per level.** In the base variant of levels 1-400:
+  - 154 levels are fully capitalised
+  - 225 are fully lowercase
+  - only 21 mix the two
+- **The same level often exists in both cases.** 1,190 themes in levels 1-200 are written in different case in different variants, e.g. `Farm Animals` / `farm animals` in level 1.
+- **Capitals by variant:**
+  - base: 29% of words
+  - `ob`: 16%
+  - `ocd`: 9%
+  - `cd`: 2%
+  - `heartbeat`, `heartbeatob`, `early`, `7new` and `c` (which look newer): none
+- **Lowercase words inside capitalised themes** look like later edits: `Cow, Horse, goat, pig`, `Uranus, Mars, earth, Neptune`. About a third of them are words that differ between variants.
+
+**Likely explanation (an inference; nothing in the files records how levels were made):**
+
+1. The first few hundred levels were typed by hand with natural capitals.
+2. Later levels, and the A/B variants, came from a bulk tool or script, possibly AI-assisted, that wrote lowercase.
+3. Words swapped into old capitalised levels during edits were typed lowercase.
+
+The game shows everything in capitals, so the difference is never visible to players.
 
 ## Caveats
 
