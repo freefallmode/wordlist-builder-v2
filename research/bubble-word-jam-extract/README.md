@@ -55,6 +55,16 @@ The game's saved state (`LevelVariantPersonalData.dat`) uses the same nine intro
 
 ## Patterns in theme and split-word counts
 
+**Averages per level:**
+
+| Levels | Themes (mean) | Levels with split words | Split words where any (mean) |
+|---|---|---|---|
+| All 1-1800 | 12.6 (median 12) | 1,530 | 3.3 (median 3) |
+| 1-500 | 13.3 | 367 | 5.1 |
+| 501-1800 | 12.4 | 1,163 | 2.8 |
+
+Across all levels, including those with none, the mean is 2.8 split words.
+
 **Themes per level follow a 5-level cycle from level 301 on.** By the last digit of the level number:
 
 | Ends in | Themes |
