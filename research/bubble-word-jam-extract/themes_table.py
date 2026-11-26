@@ -156,5 +156,27 @@ for i, width in enumerate([12, 10, 14, 10, 14, 18, 14, 18] + [12, 16] * len(TYPE
 for c in avg[1]:
     c.alignment = Alignment(wrap_text=True, vertical='top')
 avg.freeze_panes = 'B2'
+
+# Theme words sheet: every theme name once (case-insensitive), with all the words it uses across levels.
+pools = {}
+for lv in levels:
+    for t in lv['themes']:
+        key = ' '.join(t['theme'].lower().split())
+        p = pools.setdefault(key, {'name': t['theme'], 'levels': [], 'words': {}})
+        p['levels'].append(lv['level'])
+        for x in t['words']:
+            p['words'].setdefault(' '.join(x['word'].lower().split()), x['word'])
+tw = wb.create_sheet('Theme words', 1)
+tw.append(['Theme', 'Words', 'Levels used', 'First level', 'All words'])
+for c in tw[1]:
+    c.font = bold
+for key in sorted(pools):
+    p = pools[key]
+    tw.append([safe(p['name']), len(p['words']), len(p['levels']), p['levels'][0],
+               safe(', '.join(sorted(p['words'].values(), key=str.lower)))])
+tw.freeze_panes = 'B2'
+tw.auto_filter.ref = f'A1:E{len(pools) + 1}'
+for col, width in zip('ABCDE', (30, 8, 8, 8, 120)):
+    tw.column_dimensions[col].width = width
 wb.save(base + '-averages.xlsx')
 print(len(levels), 'levels,', n, 'theme rows')
