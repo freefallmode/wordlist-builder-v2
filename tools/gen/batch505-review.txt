@@ -1,0 +1,63 @@
+Library batch v505 (for Simon's review): People & Society, military branch
+1. army words
+  out of army_words: sniper 34565 [soldier]: a word about killing, kept out of family themes (stays in kinds_of_soldier)
+  out of army_words: bayonet 28727: a weapon (weapons are in adult themes) (stays in words_named_after_places, army_kit)
+  out of army_words: mortar 34567 [weapon]: a weapon (weapons are in adult themes) (stays in modern_weapons)
+  out of army_words: howitzer 34568: a weapon (weapons are in adult themes) (stays in modern_weapons)
+  out of army_words: ammunition 34569: for weapons (weapons are in adult themes) (stays in hunting_words, army_kit)
+2. kinds of soldier
+  out of kinds_of_soldier: sniper 34565 [soldier]: a word about killing, kept out of family themes (now in no theme: not exported)
+3. army kit
+  out of army_kit: ammunition 34569: for weapons (weapons are in adult themes) (stays in hunting_words)
+  out of army_kit: bayonet 28727: a weapon (weapons are in adult themes) (stays in words_named_after_places)
+  out of army_kit: bandolier 21319: a belt for bullets (stays in pirate_clothing, army_words)
+4. navy words
+  out of navy_words: torpedo 34587 [weapon]: a weapon (weapons are in adult themes) (stays in modern_weapons, submarine_words)
+  out of navy_words: depth charge 34588: a weapon (weapons are in adult themes) (stays in modern_weapons, submarine_words)
+5. air force words
+  out of air_force_words: air strike 34606: an attack, a grim word for a word game (now in no theme: not exported)
+  out of air_force_words: flak 29354: gunfire at aircraft (stays in words_from_german)
+  out of air_force_words: dogfight 34605: a fight to shoot down aircraft (now in no theme: not exported)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  air_force_words: "air force words" pop 3 ident 3: 39 words, easy/middle/hard 11/10/18, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "air force words" pop 3 ident 3: 36 words, easy/middle/hard 10/9/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  army_kit: "army kit" pop 3 ident 3: 11 words, easy/middle/hard 6/2/3, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "army kit" pop 3 ident 3: 8 words, easy/middle/hard 5/1/2, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  army_words: "army words" pop 2 ident 2: 53 words, easy/middle/hard 15/20/18, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "army words" pop 2 ident 2: 48 words, easy/middle/hard 13/18/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  kinds_of_soldier: "kinds of soldier" pop 3 ident 3: 12 words, easy/middle/hard 2/5/5, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "kinds of soldier" pop 3 ident 3: 11 words, easy/middle/hard 1/5/5, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  navy_words: "navy words" pop 3 ident 3: 41 words, easy/middle/hard 10/14/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "navy words" pop 3 ident 3: 39 words, easy/middle/hard 9/13/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 3: sniper 34565, air strike 34606, dogfight 34605
+Entries added 0: none
+Entries deleted 0: none
+library changes 24; entries changed 11; status set to rev 10; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 364 -> 367, info:xwords-twin 0 -> 2
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3260 -> 3260; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 5: army_words (index 1449 -> 1449: counts [6,12,23,11,9] -> [6,10,21,10,9]); kinds_of_soldier (index 1450 -> 1450: counts [0,2,5,4,1] -> [0,1,5,4,1]); army_kit (index 1451 -> 1451: counts [2,4,3,1,2] -> [2,3,2,1,1], range [2,3] -> [2,2]); navy_words (index 1452 -> 1452: counts [3,7,14,13,5] -> [3,6,13,13,5]); air_force_words (index 1454 -> 1454: counts [3,8,10,15,3] -> [3,7,9,14,3])
+Entry rows 61400 -> 61393; first row whose entry changed: 31630 (infantryman 34566, was sniper 34565); rows that moved: 29763; added none; removed 34565 (row 31630), 34567 (row 31632), 34568 (row 31633), 34569 (row 31634), 34605 (row 31660), 34606 (row 31661), 34607 (row 31662)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101047 -> 101033; rows whose link count changed: 5
+Link-index shifts: from row 19915 (kerchief 21320) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 14, new 0, rating changed 0
+  gone (other than the deleted themes): army_kit: "bandolier" (21319), army_words: "bayonet" (28727), army_kit: "bayonet" (28727), air_force_words: "flak" (29354), army_words: "sniper" (34565), kinds_of_soldier: "sniper" (34565), army_words: "mortar" (34567), army_words: "howitzer" (34568), army_words: "ammunition" (34569), army_kit: "ammunition" (34569), navy_words: "torpedo" (34587), navy_words: "depth charge" (34588), air_force_words: "dogfight" (34605), air_force_words: "strike" (34606)
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 13 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 0 new links existed earlier and was removed (all 247 library versions and 235 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - aircraft (bomber, stealth bomber, B-52, fighter jet) stay in air force words
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 3: sniper 34565, air strike 34606, dogfight 34605
+  2. Asked for by the user: weapons and attack words out of the family military themes, since weapons live in adult themes (modern weapons, historic weapons): sniper, bayonet, mortar [weapon], howitzer, ammunition, bandolier, torpedo, depth charge, air strike, flak, dogfight. sniper, air strike and dogfight are now in no theme (kept in the library).
+  3. Two new info notes: army words now shares 31% with wars and battles (adult), navy words 31% with warships (adult).
+  4. kinds of soldier and service members share 67% of their words (siblings): merge?
