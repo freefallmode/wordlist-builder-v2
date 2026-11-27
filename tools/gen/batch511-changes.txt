@@ -1,0 +1,192 @@
+Library batch v511 (for Simon's review): fixes after the review of Julia's v494-v510
+1. Flag, do not remove: v497-v510 removals of correct members go back, flagged
+  Holocaust 21462: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Holocaust 21462 in world_war_ii_terms (typicality 1): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Gestapo 21473: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Gestapo 21473 in world_war_ii_terms (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  gulag 21458: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: gulag 21458 in cold_war (typicality 4): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  linked: Hitler 21529 in famous_leaders (typicality 1): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Stalin 21528: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Stalin 21528 in famous_leaders (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Mussolini 21530: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Mussolini 21530 in famous_leaders (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Mao Zedong 21525: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  Mao Tse-tung 21526: offensive false -> true: alias of Mao Zedong 21525: takes its flag
+  linked: Mao Zedong 21525 in famous_leaders (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Lenin 21527: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Lenin 21527 in famous_leaders (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Fidel Castro 21531: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  Castro 68324: offensive false -> true: alias of Fidel Castro 21531: takes its flag
+  linked: Fidel Castro 21531 in famous_leaders (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Stalinism 33507: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Stalinism 33507 in political_ideologies (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  linked: Stalinism 33507 in ideologies_named_after_people (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Leninism 33506: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Leninism 33506 in political_ideologies (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  linked: Leninism 33506 in ideologies_named_after_people (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  Maoism 33505: offensive false -> true: flag, do not remove (Simon, 2026-11-27): some players object to the word itself (a dictator, a genocide, a camp system)
+  linked: Maoism 33505 in political_ideologies (typicality 5): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  linked: Maoism 33505 in ideologies_named_after_people (typicality 5): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged offensive
+  war crime 21367: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: war crime 21367 in wars_and_battles (typicality 3, nameOkIn: the full name contains a word of the theme name): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  mortar 34567: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: mortar 34567 [weapon] in army_words (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  howitzer 34568: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: howitzer 34568 in army_words (typicality 4): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  torpedo 34587: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: torpedo 34587 [weapon] in navy_words (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  depth charge 34588: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: depth charge 34588 in navy_words (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  bayonet 28727: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: bayonet 28727 in army_words (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  linked: bayonet 28727 in army_kit (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  ammunition 34569: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: ammunition 34569 in army_words (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  linked: ammunition 34569 in army_kit (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  sniper 34565: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: sniper 34565 [soldier] in army_words (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  linked: sniper 34565 [soldier] in kinds_of_soldier (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  air strike 34606: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  airstrike 34607: adult false -> true: alias of air strike 34606: takes its flag
+  linked: air strike 34606 in air_force_words (typicality 2, shown "strike"): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  dogfight 34605: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: dogfight 34605 in air_force_words (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  flak 29354: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: flak 29354 in air_force_words (typicality 4): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  Molotov cocktail 61415: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: Molotov cocktail 61415 in protest_words (typicality 4): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  rubber bullets 61413: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: rubber bullets 61413 in protest_words (typicality 4): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  bribe 34167: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: bribe 34167 in things_you_do_with_money (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  embezzle 34172: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: embezzle 34172 in things_you_do_with_money (typicality 4): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  launder 34170: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: launder 34170 [money] in things_you_do_with_money (typicality 4): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  jihad 34446: adult false -> true: flag, do not remove (Simon, 2026-11-27): war, weapons, violence and crime are adult (Simon, 2026-11-20), like rifle, grenade and crusade
+  linked: jihad 34446 in islam_words (typicality 3): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510), flagged adult
+  linked: casualty 21364 in wars_and_battles (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510)
+  linked: Rommel 21410 in famous_generals (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510)
+  linked: kamikaze 21480 in world_war_ii_terms (typicality 2): flag, do not remove (Simon, 2026-11-27): back with its v493 typicality and display (unlinked in v497-v510)
+  gamble 34165: adult false -> true: gambling is adult (Simon, 2026-11-20); stays linked in things you do with money
+  bet 34166: adult false -> true: gambling is adult (Simon, 2026-11-20); stays linked in things you do with money
+  (stay out, not restored: Fat Man, lebensraum, Anschluss, Bokassa as too obscure (familiarity 5); Trotskyism as too obscure; boiling oil as not a siege weapon; and every misfit removal of v494-v510)
+2. Clear fixes
+  out of pirate_crew: ship's cat 21289: a pet, not crew (like parrot, out in v494) (now in no theme: not exported)
+  out of lost_treasures: Atocha 21219 [shipwreck]: found in 1985: not lost (like Sutton Hoo, out in v496) (stays in treasure)
+  out of lost_treasures: Priam's treasure 54306: found in 1873: not lost (now in no theme: not exported)
+  linked: World War I 69005 in wars_and_battles (typicality 1, nameOkIn: the full name contains a word of the theme name): a first answer; only in conflicts in history so far (nameOkIn: the full name holds war, like war crime)
+  linked: World War II 69006 in wars_and_battles (typicality 1, nameOkIn: the full name contains a word of the theme name): a first answer; only in conflicts in history so far (nameOkIn: the full name holds war, like war crime)
+  kin: Crusades 69007 <-> crusade 6711: one word family (the wars and the word); crusader joins through crusade's kin
+  group in people_of_the_frontier: buckaroo 27578 = vaquero 33189 = cowpuncher 60944 = cowboy 12534 = cowgirl 69014: cowboy and cowgirl are the same answer as buckaroo, vaquero and cowpuncher (cowpoke is not linked in this theme)
+  group in bad_guys_of_the_west: outlaw 4203 = bandit 23000 = desperado 27591: desperado is the same answer as outlaw and bandit
+  group in people_of_the_frontier: pioneer 6748 = settler 69013: pioneer and settler are the same answer
+  deputy 69010: gloss "" -> "lawman": a gloss for the sense (deputy is also a political title)
+  linked: bandolier 21319 in army_kit (typicality 5): back with its v493 typicality: it stays in army words, so its army links agree
+  linked: paramedic 3490 in jobs (typicality 2): a job (in community helpers, not in jobs)
+  linked: butcher 28118 [meat seller] in jobs (typicality 2): a well-known job (the meat-seller sense)
+  linked: barber 28297 [job] in jobs (typicality 2): a well-known job
+  linked: soldier 4373 [military person] in jobs (typicality 3): a job
+  MIT 69019: type "proper" -> "acronym": letters said as letters, like NASA
+  Harvard 69017: fam 1 -> 2: nearly every adult, not every child
+3. Judgement calls (Simon took the recommendations)
+  new entry: Oxford 69025 [university] noun, org, familiarity 1: the university, not the city, is the member of famous universities
+  linked: Oxford 69025 [university] in famous_universities (typicality 1): the university, not the city, is the member of famous universities
+  out of famous_universities: Oxford 56867 [English university city]: wrong sense: Oxford 69025 [university] takes the link (stays in british_cities)
+  new entry: Cambridge 69026 [university] noun, org, familiarity 1: the university, not the city, is the member of famous universities
+  linked: Cambridge 69026 [university] in famous_universities (typicality 1): the university, not the city, is the member of famous universities
+  out of famous_universities: Cambridge 56868: wrong sense: Cambridge 69026 [university] takes the link (stays in british_cities)
+  Cambridge 56868: gloss "" -> "English city": its text is now shared with Cambridge [university]
+  kin: Oxford 69025 [university] <-> Oxford 56867 [English university city]: one written word in another sense: kept apart in a level
+  kin: Cambridge 69026 [university] <-> Cambridge 56868 [English city]: one written word in another sense: kept apart in a level
+  new entry: Columbia 69027 [university] noun, org, familiarity 3: a famous Ivy League university
+  linked: Columbia 69027 [university] in famous_universities (typicality 2): a famous Ivy League university
+  Harvard 69017: type "proper" -> "org": a university is an organisation
+  Yale 69018: type "proper" -> "org": a university is an organisation
+  Stanford 69020: type "proper" -> "org": a university is an organisation
+  Princeton 69021: type "proper" -> "org": a university is an organisation
+  Sorbonne 69022: type "proper" -> "org": a university is an organisation
+  Berkeley 69023: type "proper" -> "org": a university is an organisation
+  Caltech 69024: type "proper" -> "org": a university is an organisation
+  out of aztecs_and_maya: jaguar 219 [animal]: an association, not a thing of the civilization (stays in big_cats, south_american_animals, rainforest_animals, spotted_animals, words_from_south_american_languages, rainforest, national_animals, amazon_animals)
+  out of ancient_india: elephant 979 [animal]: an association, not a thing of the civilization (stays in mammals, working_animals, savanna_animals, animals_with_tusks, savanna, national_animals, huge_things, heavy_things, safari_words, zoo, southeast_asian_animals, things_you_ride, zoo_animals, four_legged_animals, things_with_tails, gray_things)
+  out of ancient_rome: Roman numeral 41493: gives the theme away and is an association (stays in numbers, clocks_and_calendars)
+  out of castles: king 31 [monarch]: a person (rank), not a thing of a castle; throne and knight stay (stays in medieval_times, feudal_ranks, rhymes_with_ring, royal_titles)
+  out of castles: queen 20757 [royal]: a person (rank), not a thing of a castle (stays in feudal_ranks, royal_titles, titles_for_women)
+  linked: plank 21308 [pirate] in on_a_pirate_ship (typicality 2): a first answer (walk the plank)
+  linked: telescope 7121 in on_a_pirate_ship (typicality 2): a first answer; the same answer as spyglass
+  group in on_a_pirate_ship: telescope 7121 = spyglass 57996: telescope and spyglass are the same answer
+  linked: treasure 6765 [loot] in on_a_pirate_ship (typicality 1): a first answer
+  out of family_and_friends: sleepover 3935: an event, not a person (like the v503 removals) (stays in kinds_of_party)
+  out of family_and_friends: playdate 3938: an event, not a person (now in no theme: not exported)
+  out of family_and_friends: family reunion 55700: an event, not a person (stays in mid_autumn_festival)
+  out of community_helpers: electrician 4091: just a job: it stays in jobs and trades (stays in jobs, trades)
+  out of community_helpers: plumber 4093: just a job: it stays in jobs and trades (stays in jobs, hidden_colors, hidden_fruits, starts_with_a_color, trades, silent_b_words, starts_with_plum)
+  out of legendary_heroes: Merlin 7004 [wizard]: a wizard, not a hero (like Mordred) (stays in fantasy, arthurian_legend)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  air_force_words: "air force words" pop 3 ident 3: 36 words, easy/middle/hard 10/9/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "air force words" pop 3 ident 3: 36 words, easy/middle/hard 10/9/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  ancient_india: "ancient India" pop 4 ident 3: 30 words, easy/middle/hard 2/6/22, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "ancient India" pop 4 ident 3: 29 words, easy/middle/hard 2/5/22, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  ancient_rome: "ancient Rome" pop 2 ident 2: 41 words, easy/middle/hard 17/13/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "ancient Rome" pop 2 ident 2: 40 words, easy/middle/hard 16/13/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  army_kit: "army kit" pop 3 ident 3: 8 words, easy/middle/hard 5/1/2, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "army kit" pop 3 ident 3: 9 words, easy/middle/hard 5/1/3, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  army_words: "army words" pop 2 ident 2: 48 words, easy/middle/hard 13/18/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "army words" pop 2 ident 2: 48 words, easy/middle/hard 13/18/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  aztecs_and_maya: "Aztecs and Maya" pop 3 ident 3: 32 words, easy/middle/hard 3/11/18, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "Aztecs and Maya" pop 3 ident 3: 31 words, easy/middle/hard 3/10/18, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  bad_guys_of_the_west: "bad guys of the West" pop 3 ident 3: 19 words, easy/middle/hard 5/6/8, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "bad guys of the West" pop 3 ident 3: 19 words, easy/middle/hard 5/6/8, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  castles: "castles" pop 1 ident 1: 38 words, easy/middle/hard 9/8/21, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "castles" pop 1 ident 1: 36 words, easy/middle/hard 7/8/21, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  cold_war: "Cold War" pop 3 ident 2: 33 words, easy/middle/hard 10/5/18, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Cold War" pop 3 ident 2: 33 words, easy/middle/hard 10/5/18, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  community_helpers: "community helpers" pop 1 ident 2: 19 words, easy/middle/hard 14/5/0, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "community helpers" pop 1 ident 2: 17 words, easy/middle/hard 14/3/0, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  family_and_friends: "family and friends" pop 2 ident 3: 62 words, easy/middle/hard 17/18/27, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "family and friends" pop 2 ident 3: 59 words, easy/middle/hard 17/17/25, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  famous_generals: "famous generals" pop 2 ident 2: 30 words, easy/middle/hard 8/8/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "famous generals" pop 2 ident 2: 31 words, easy/middle/hard 8/9/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  famous_leaders: "famous leaders" pop 2 ident 3: 33 words, easy/middle/hard 14/6/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "famous leaders" pop 2 ident 3: 33 words, easy/middle/hard 14/6/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  famous_universities: "famous universities" pop 3 ident 2: 10 words, easy/middle/hard 7/3/0, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "famous universities" pop 3 ident 2: 11 words, easy/middle/hard 7/4/0, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  ideologies_named_after_people: "people-named ideologies" pop 5 ident 4: 12 words, easy/middle/hard 0/0/12, theme difficulty 5, 4th-easiest band 5, gap 0.0 -> "people-named ideologies" pop 5 ident 4: 12 words, easy/middle/hard 0/0/12, theme difficulty 5, 4th-easiest band 5, gap 0.0
+  islam_words: "Islam words" pop 3 ident 2: 52 words, easy/middle/hard 8/14/30, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Islam words" pop 3 ident 2: 52 words, easy/middle/hard 8/14/30, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  jobs: "jobs" pop 1 ident 1: 107 words, easy/middle/hard 57/20/30, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "jobs" pop 1 ident 1: 111 words, easy/middle/hard 59/22/30, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  kinds_of_soldier: "kinds of soldier" pop 3 ident 3: 11 words, easy/middle/hard 1/5/5, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "kinds of soldier" pop 3 ident 3: 11 words, easy/middle/hard 1/5/5, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  legendary_heroes: "legendary heroes" pop 2 ident 3: 36 words, easy/middle/hard 7/8/21, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "legendary heroes" pop 2 ident 3: 35 words, easy/middle/hard 7/8/20, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  lost_treasures: "lost treasures" pop 3 ident 3: 25 words, easy/middle/hard 1/6/18, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "lost treasures" pop 3 ident 3: 23 words, easy/middle/hard 1/6/16, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  navy_words: "navy words" pop 3 ident 3: 39 words, easy/middle/hard 9/13/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "navy words" pop 3 ident 3: 39 words, easy/middle/hard 9/13/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  on_a_pirate_ship: "on a pirate ship" pop 2 ident 2: 23 words, easy/middle/hard 12/8/3, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "on a pirate ship" pop 2 ident 2: 26 words, easy/middle/hard 15/8/3, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  people_of_the_frontier: "people of the frontier" pop 3 ident 3: 19 words, easy/middle/hard 7/7/5, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "people of the frontier" pop 3 ident 3: 19 words, easy/middle/hard 7/7/5, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  pirate_crew: "pirate crew" pop 2 ident 2: 30 words, easy/middle/hard 6/11/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "pirate crew" pop 2 ident 2: 29 words, easy/middle/hard 6/11/12, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  political_ideologies: "political ideologies" pop 3 ident 2: 52 words, easy/middle/hard 3/11/38, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "political ideologies" pop 3 ident 2: 52 words, easy/middle/hard 3/11/38, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  protest_words: "protest words" pop 3 ident 2: 53 words, easy/middle/hard 12/16/25, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "protest words" pop 3 ident 2: 53 words, easy/middle/hard 12/16/25, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  things_you_do_with_money: "things you do with money" pop 2 ident 3: 34 words, easy/middle/hard 17/7/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things you do with money" pop 2 ident 3: 32 words, easy/middle/hard 15/7/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  wars_and_battles: "wars and battles" pop 2 ident 2: 44 words, easy/middle/hard 6/17/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "wars and battles" pop 2 ident 2: 45 words, easy/middle/hard 6/18/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  world_war_ii_terms: "World War II terms" pop 2 ident 2: 25 words, easy/middle/hard 1/12/12, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "World War II terms" pop 2 ident 2: 26 words, easy/middle/hard 1/13/12, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 3: ship's cat 21289, Priam's treasure 54306, playdate 3938
+Entries added 3: Oxford 69025, Cambridge 69026, Columbia 69027
+Entries deleted 0: none
+library changes 133; entries changed 77; status set to rev 12; themes deleted 0; entries merged 0
+Checks: changed kinds: info:offensive-unlisted 94 -> 107, info:orphan 376 -> 356, info:overlap 4820 -> 4824, info:xwords-twin 2 -> 0
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3261 -> 3261; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 23: family_and_friends (index 1304 -> 1304: counts [7,10,18,22,6] -> [7,10,17,20,6]); jobs (index 1336 -> 1336: counts [20,39,22,16,16] -> [20,41,24,16,16]); community_helpers (index 1353 -> 1353: counts [5,10,7,2,0] -> [5,10,5,2,0], range [1,3] -> [1,2]); political_ideologies (index 1379 -> 1379: counts [0,3,11,16,22] -> [0,3,11,18,23]); ideologies_named_after_people (index 1380 -> 1380: counts [0,0,0,3,9] -> [0,0,0,5,10], range [5,5] -> [4,5]); things_you_do_with_money (index 1419 -> 1419: counts [6,11,7,8,2] -> [6,11,8,10,2]); islam_words (index 1434 -> 1434: counts [0,8,14,16,15] -> [0,8,15,16,15]); army_words (index 1449 -> 1449: counts [6,10,21,10,9] -> [6,12,23,11,9]); kinds_of_soldier (index 1450 -> 1450: counts [0,1,5,4,1] -> [0,2,5,4,1]); army_kit (index 1451 -> 1451: counts [2,3,2,1,1] -> [2,4,3,1,2], range [2,2] -> [2,3]); navy_words (index 1452 -> 1452: counts [3,6,13,13,5] -> [3,7,14,13,5]); air_force_words (index 1454 -> 1454: counts [3,7,9,14,3] -> [3,8,10,15,3]); famous_universities (index 1467 -> 1467: counts [3,4,3,0,0] -> [2,5,4,0,0], range [2,2] -> [2,3]); protest_words (index 1491 -> 1491: counts [2,10,16,15,11] -> [2,10,16,17,11]); ancient_rome (index 2246 -> 2246: counts [5,13,13,10,2] -> [5,12,13,10,2]); aztecs_and_maya (index 2248 -> 2248: counts [0,3,11,10,9] -> [0,3,10,10,9]); ancient_india (index 2252 -> 2252: counts [0,2,6,9,13] -> [0,2,5,9,13]); castles (index 2267 -> 2267: counts [4,5,9,12,9] -> [4,3,9,12,9]); lost_treasures (index 2299 -> 2299: counts [0,1,6,7,11] -> [0,1,6,7,9]); on_a_pirate_ship (index 2301 -> 2301: counts [6,6,8,3,0] -> [7,8,8,3,0]); pirate_crew (index 2304 -> 2304: counts [2,4,11,10,4] -> [2,4,11,9,4]); famous_leaders (index 2307 -> 2307: counts [9,5,6,8,6] -> [10,6,10,9,6]); legendary_heroes (index 2395 -> 2395: counts [3,5,9,16,6] -> [3,5,9,15,6])
+Entry rows 61392 -> 61386; first row whose entry changed: 3859 (host 3939, was playdate 3938); rows that moved: 57523; added plank 21308 (row 19905), Oxford 69025 (row 61383), Cambridge 69026 (row 61384), Columbia 69027 (row 61385); removed 3938 (row 3859), 21289 (row 19900), 28727 (row 26234), 29354 (row 26783), 34165 (row 31256), 34166 (row 31257), 34587 (row 31634), 34588 (row 31635), 54306 (row 49793), 61415 (row 56478)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101026 -> 101014; rows whose link count changed: 20
+Link-index shifts: from row 31 (queen 32) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 23, new 11, rating changed 1
+  gone (other than the deleted themes): castles: "king" (31), aztecs_and_maya: "jaguar" (219), ancient_india: "elephant" (979), family_and_friends: "sleepover" (3935), family_and_friends: "playdate" (3938), community_helpers: "electrician" (4091), community_helpers: "plumber" (4093), legendary_heroes: "Merlin" (7004), castles: "queen" (20757), lost_treasures: "Atocha" (21219), pirate_crew: "ship's cat" (21289), words_named_after_places: "bayonet" (28727), words_from_german: "flak" (29354), things_you_do_with_money: "gamble" (34165), things_you_do_with_money: "bet" (34166), submarine_words: "torpedo" (34587), submarine_words: "depth charge" (34588), ancient_rome: "Roman numeral" (41493), lost_treasures: "Priam's treasure" (54306), family_and_friends: "reunion" (55700), famous_universities: "Oxford" (56867), famous_universities: "Cambridge" (56868), words_named_after_people: "Molotov cocktail" (61415)
+  new: jobs: "paramedic" (3490), jobs: "soldier" (4373), on_a_pirate_ship: "treasure" (6765), on_a_pirate_ship: "telescope" (7121), on_a_pirate_ship: "plank" (21308), army_kit: "bandolier" (21319), jobs: "butcher" (28118), jobs: "barber" (28297), famous_universities: "Oxford" (69025), famous_universities: "Cambridge" (69026), famous_universities: "Columbia" (69027)
+  rating: famous_universities: "Harvard" (69017) 1/1 -> 1.7/1
+new issues: none
+
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v494-v511 together (one notice for all eighteen; replaces the per-batch drafts batch494-notice.txt ... batch510-notice.txt). Net effect against v493, the version you pinned:
+- History & Myth (v494-v502): every branch read word by word, words that did not fit out, well-known words in. New themes: on a pirate ship, sun gods, sea gods, thunder gods, gods of love, tricksters. New entries: philosopher, deputy [lawman], train robber, horse thief, settler, cowgirl, trapper, Fenrir (World War I, World War II, Crusades and two other wars are new too, but adult). Out as misfits: Stonehenge and Newgrange (Celts), parrot and ship's cat (pirate crew), Sutton Hoo, Atocha and Priam's treasure (lost treasures: all found), giant squid and megalodon (sea monsters), Valkyrie (winged beasts), Mordred and Merlin (legendary heroes), king and queen (castles), jaguar (Aztecs and Maya), elephant (ancient India), Roman numeral (ancient Rome), gaucho words loses Argentina, Uruguay, tango.
+- tricksters keeps Coyote and Raven (well known); Greek and Roman god names (Poseidon/Neptune, Zeus/Jupiter, Aphrodite/Venus, Eros/Cupid) are separate answers on purpose, not grouped.
+- People & Society (v503-v510): new themes community helpers (jobs) and famous universities. New entries: Harvard, Yale, MIT, Stanford, Princeton, Sorbonne, Berkeley, Caltech, and (v511) Oxford [university], Cambridge [university], Columbia [university], which take the university links from the city entries Oxford and Cambridge. Out of family and friends: wedding, birthday, anniversary, sleepover, playdate, family reunion (events, not people); out of community helpers: electrician, plumber. jobs gains paramedic, butcher, barber, soldier.
+- Grim and political words (v497-v510 took them out; v511 puts them back, flagged, under the new rule "flag, do not remove"): they leave the family export by their flag, not by a missing link. Offensive: Hitler, Stalin, Mussolini, Mao Zedong (with Mao Tse-tung), Lenin, Fidel Castro (with Castro), Holocaust, Gestapo, gulag, Stalinism, Leninism, Maoism. Adult: war crime, mortar, howitzer, torpedo, depth charge, bayonet, ammunition, sniper, air strike (with airstrike), dogfight, Molotov cocktail, rubber bullets, bribe, embezzle, launder, jihad (like crusade), and gamble and bet (gambling is adult). So torpedo and depth charge leave submarine words, bayonet words named after places, Molotov cocktail words named after people, gamble and bet things you do with money. Bokassa, Trotskyism, Fat Man, lebensraum, Anschluss stay out (too obscure), boiling oil too (not a weapon).
+- Groups: cowboy = cowgirl = buckaroo = vaquero = cowpuncher and pioneer = settler (people of the frontier), desperado = outlaw = bandit (bad guys of the West), telescope = spyglass (on a pirate ship). Also new in on a pirate ship: plank, treasure.
+- Ratings and types: MIT is now an acronym, the universities org; Harvard familiarity 2.
+Theme rows 3253 -> 3261 (8 new, none gone): community_helpers (index 1353), famous_universities (1467), on_a_pirate_ship (2301), sun_gods, sea_gods, thunder_gods, gods_of_love, tricksters (2370-2374); theme indexes shift from index 1353 (community_helpers, was transport_jobs) to the last index 3260.
+Entry rows 61400 -> 61386: rows move from row 3859 on. 34 rows leave: playdate, ship's cat and Priam's treasure (now in no theme), Bokassa and Trotskyism (unlinked), and the 28 rows flagged above (Mao Zedong, Mao Tse-tung, Lenin, Stalin, Mussolini, Fidel Castro, Castro, bayonet, Maoism, Leninism, Stalinism, gamble, bet, bribe, launder, embezzle, jihad, sniper, mortar, howitzer, ammunition, torpedo, depth charge, dogfight, flak, air strike, airstrike, rubber bullets, Molotov cocktail; Hitler, Holocaust, Gestapo, gulag were out already). plank [pirate] 21308 is newly exported in the middle (row 19905); the 19 other new rows are at the end (rows 61367-61385: philosopher ... Columbia). No row changes between root and alias; no text changes. Link positions move from row 36 on.
+Line breaks: berkeley, philosopher, princeton, sorbonne, tricksters, universities (data/breaks-en.txt, v494-v506); none with v511.
+New characters: none.

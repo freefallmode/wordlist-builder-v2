@@ -1,0 +1,29 @@
+Library batch v511 (for Simon's review): fixes after the review of Julia's v494-v510
+1. Flag, do not remove: v497-v510 removals of correct members go back, flagged
+  (stay out, not restored: Fat Man, lebensraum, Anschluss, Bokassa as too obscure (familiarity 5); Trotskyism as too obscure; boiling oil as not a siege weapon; and every misfit removal of v494-v510)
+2. Clear fixes
+3. Judgement calls (Simon took the recommendations)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 0; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: NO (the library or export code changed since it was written: compared with the in-memory export before the changes)
+Theme rows 3261 -> 3261; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61386 -> 61386; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101014 -> 101014; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none
