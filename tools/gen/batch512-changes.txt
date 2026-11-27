@@ -1,0 +1,105 @@
+Library batch v512 (for Simon's review): Qualities, smells branch
+1. perfume words (new)
+  new theme: perfume_words "perfume words" under smells (after perfume_notes), pop 4, ident 3: asked for by the user; perfume notes lists the ingredients
+  linked: eau de toilette 68829 in perfume_words (typicality 1): a well-known member of the new theme
+  linked: cologne 3741 [perfume] in perfume_words (typicality 2): a well-known member of the new theme
+  linked: essential oil 68826 in perfume_words (typicality 3): a well-known member of the new theme
+  linked: distillation 40438 in perfume_words (typicality 3): a well-known member of the new theme
+  linked: maceration 59863 in perfume_words (typicality 4): a well-known member of the new theme
+  linked: attar 16293 [perfume] in perfume_words (typicality 4): a well-known member of the new theme
+  new entry: top note 69028 noun, common, familiarity 3: a common word that was not in the library
+  linked: top note 69028 in perfume_words (typicality 1): a common word that was not in the library
+  new entry: base note 69029 noun, common, familiarity 3: a common word that was not in the library
+  linked: base note 69029 in perfume_words (typicality 1): a common word that was not in the library
+  new entry: eau de parfum 69030 noun, common, familiarity 3: a common word that was not in the library
+  linked: eau de parfum 69030 in perfume_words (typicality 1): a common word that was not in the library
+  new entry: heart note 69031 noun, common, familiarity 4: a common word that was not in the library
+  linked: heart note 69031 in perfume_words (typicality 2): a common word that was not in the library
+  new entry: parfum 69032 noun, common, familiarity 4: a common word that was not in the library
+  linked: parfum 69032 in perfume_words (typicality 2): a common word that was not in the library
+  new entry: atomizer 69033 noun, common, familiarity 3: a common word that was not in the library
+  linked: atomizer 69033 in perfume_words (typicality 2): a common word that was not in the library
+  new entry: signature scent 69034 noun, common, familiarity 3: a common word that was not in the library
+  linked: signature scent 69034 in perfume_words (typicality 2): a common word that was not in the library
+  new entry: sillage 69035 noun, common, familiarity 5: a common word that was not in the library
+  linked: sillage 69035 in perfume_words (typicality 3): a common word that was not in the library
+  new entry: dry down 69036 noun, common, familiarity 5: a common word that was not in the library
+  linked: dry down 69036 in perfume_words (typicality 3): a common word that was not in the library
+  new entry: body mist 69037 noun, common, familiarity 3: a common word that was not in the library
+  linked: body mist 69037 in perfume_words (typicality 3): a common word that was not in the library
+  new entry: enfleurage 69038 noun, common, familiarity 5: a common word that was not in the library
+  linked: enfleurage 69038 in perfume_words (typicality 3): a common word that was not in the library
+2. fragrance families (new)
+  new theme: fragrance_families "fragrance families" under smells (after perfume_words), pop 4, ident 4: asked for by the user; a rival game has scent families
+  linked: floral 24921 in fragrance_families (typicality 1): a well-known member of the new theme
+  linked: citrus 39741 in fragrance_families (typicality 1): a well-known member of the new theme
+  linked: fruity 39215 in fragrance_families (typicality 2): a well-known member of the new theme
+  linked: spicy 39208 in fragrance_families (typicality 2): a well-known member of the new theme
+  linked: leather 24841 [material] in fragrance_families (typicality 3): a well-known member of the new theme
+  linked: smoky 39217 [flavor] in fragrance_families (typicality 3): a well-known member of the new theme
+  linked: earthy 39218 in fragrance_families (typicality 3): a well-known member of the new theme
+  new entry: woody 69039 [scent] adjective, common, familiarity 2: a common word that was not in the library
+  linked: woody 69039 [scent] in fragrance_families (typicality 1): a common word that was not in the library
+  new entry: musky 69040 adjective, common, familiarity 3: a common word that was not in the library
+  linked: musky 69040 in fragrance_families (typicality 2): a common word that was not in the library
+  new entry: aquatic 69041 adjective, common, familiarity 3: a common word that was not in the library
+  linked: aquatic 69041 in fragrance_families (typicality 3): a common word that was not in the library
+  new entry: gourmand 69042 [perfume family] noun, common, familiarity 4: a common word that was not in the library
+  linked: gourmand 69042 [perfume family] in fragrance_families (typicality 3): a common word that was not in the library
+  new entry: chypre 69043 noun, common, familiarity 5: a common word that was not in the library
+  linked: chypre 69043 in fragrance_families (typicality 3): a common word that was not in the library
+  new entry: fougère 69044 noun, common, familiarity 5: a common word that was not in the library
+  linked: fougère 69044 in fragrance_families (typicality 3): a common word that was not in the library
+kin
+  kin: musky 69040 <-> musk 14759 [scent]: one word family
+  kin: woody 69039 [scent] <-> wood 24031 [material]: one word family
+aliases
+  new entry: fougere 69045 noun, common, familiarity 5, spelling alias of fougère 69044: the plain spelling without the accent (rule 8)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  fragrance_families: new -> "fragrance families" pop 4 ident 4: 13 words, easy/middle/hard 5/5/3, theme difficulty 4.5, 4th-easiest band 2, gap -2.5
+  perfume_words: new -> "perfume words" pop 4 ident 3: 17 words, easy/middle/hard 1/9/7, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 18: top note 69028, base note 69029, eau de parfum 69030, heart note 69031, parfum 69032, atomizer 69033, signature scent 69034, sillage 69035, dry down 69036, body mist 69037, enfleurage 69038, woody 69039, musky 69040, aquatic 69041, gourmand 69042, chypre 69043, fougère 69044, fougere 69045
+Entries deleted 0: none
+library changes 61; entries changed 33; status set to rev 9; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 469 -> 471, info:overlap 4824 -> 4825
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3261 -> 3263; gone none; new perfume_words, fragrance_families; theme indexes shift: from index 3164 ("perfume_words", was "candle_scents") to the last index 3262
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61386 -> 61404; first row whose entry changed: 61386 (top note 69028, was undefined); rows that moved: 0; added top note 69028 (row 61386), base note 69029 (row 61387), eau de parfum 69030 (row 61388), heart note 69031 (row 61389), parfum 69032 (row 61390), atomizer 69033 (row 61391), signature scent 69034 (row 61392), sillage 69035 (row 61393), dry down 69036 (row 61394), body mist 69037 (row 61395), enfleurage 69038 (row 61396), woody 69039 (row 61397), musky 69040 (row 61398), aquatic 69041 (row 61399), gourmand 69042 (row 61400), chypre 69043 (row 61401), fougère 69044 (row 61402), fougere 69045 (row 61403); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101014 -> 101044; rows whose link count changed: 13
+Link-index shifts: from row 3664 (lotion 3742) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 30, rating changed 0
+  gone (other than the deleted themes): none
+  new: perfume_words: "cologne" (3741), perfume_words: "attar" (16293), fragrance_families: "leather" (24841), fragrance_families: "floral" (24921), fragrance_families: "spicy" (39208), fragrance_families: "fruity" (39215), fragrance_families: "smoky" (39217), fragrance_families: "earthy" (39218), fragrance_families: "citrus" (39741), perfume_words: "distillation" (40438), perfume_words: "maceration" (59863), perfume_words: "essential oil" (68826), perfume_words: "eau de toilette" (68829), perfume_words: "top note" (69028), perfume_words: "base note" (69029), perfume_words: "eau de parfum" (69030), perfume_words: "heart note" (69031), perfume_words: "parfum" (69032), perfume_words: "atomizer" (69033), perfume_words: "signature scent" (69034), perfume_words: "sillage" (69035), perfume_words: "dry down" (69036), perfume_words: "body mist" (69037), perfume_words: "enfleurage" (69038), fragrance_families: "woody" (69039), fragrance_families: "musky" (69040), fragrance_families: "aquatic" (69041), fragrance_families: "gourmand" (69042), fragrance_families: "chypre" (69043), fragrance_families: "fougère" (69044)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Qualities, 2026-11-27): all 9 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 30 new links existed earlier and was removed (all 254 library versions and 249 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - perfume words: spritz (Aperol spritz is the known sense), perfumer and perfume bottle (they hold the theme name), accord (the entry is the diplomatic one, unglossed), fixative and tincture (other senses: art, medicine)
+  - fragrance families: fresh, green, powdery and amber (the entries are other senses: new, the color, texture, the resin), oriental (an older name, falling out of use)
+
+For Simon:
+  1. Asked for by the user: two new themes beside perfume notes. perfume words (17: how a perfume is built, how strong it is, how it is made) and fragrance families (13). New entries: top note, heart note, base note, eau de parfum, parfum, atomizer, signature scent, sillage, dry down, body mist, enfleurage; woody [scent], musky, aquatic, gourmand [perfume family], chypre, fougère.
+  2. parfum stays beside eau de parfum (one new overlap note): two strengths. musky is kin of musk, woody of wood [material].
+  3. Line breaks: at-om-iz-er, en-fleur-age, gour-mand.
+
+=== Notice to _WS_ for v512 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v512 (Qualities, smells branch): 2 new themes (perfume words, fragrance families), 30 new links, 0 links out, 18 new entries (top note, base note, eau de parfum, heart note, parfum, atomizer, signature scent, sillage, dry down, body mist, enfleurage, woody, musky, aquatic, gourmand, chypre, fougère, fougere).
+Theme rows 3261 -> 3263; gone none; new perfume_words, fragrance_families; theme indexes shift: from index 3164 ("perfume_words", was "candle_scents") to the last index 3262
+Entry rows 61386 -> 61404.
+Link-index shifts: from row 3664 (lotion 3742) on, link positions move
+Line breaks: 3 new (at-om-iz-er, en-fleur-age, gour-mand).
+New characters: none.
