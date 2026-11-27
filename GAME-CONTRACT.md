@@ -35,7 +35,7 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 | clash | One member per level | A shared id on unrelated words wrongly keeps them apart | 0 or more |
 | linkCount | Link offsets | A wrong value shifts every later entry's links (the packed loader checks the total; JSON doesn't) | Sum equals links/4 |
 | breaks | wordbreaks.bytes (adult and offensive entries left out; sensitive ones included from g25) | For splitting, offsets outside [2, len-2], or leaving a half under a quarter of the word, are ignored. Balloon wrapping uses [3, len-3] on letters-only words of 10 or more letters | Integer offsets inside the word |
-| zipf | An everyday split half needs zipf of at least 30 | 0 or missing: no everyday-word splits | zipf x10, 0-74 |
+| zipf | Not written since library v520 (2026-11-27): generator g29 has no zipf test in the split rule and does not read the column (g28 and earlier needed it: an everyday split half needed zipf of at least 30) | Missing: expected from v520 | Not applicable |
 | firstLevel | New (library 2026-11-27), the last entry column; unread by the game until it adopts it. The word's first level per game mode [easy, medium, hard]; an alias carries its root's | None yet | null, or 3 values each null or a whole number of 1 or more |
 
 ## Links (the full-JSON reader assumes stride 4 in this order; the slimmer reads linkFields by name)
@@ -68,7 +68,7 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 - **Playable theme:** not a group, not adult, popularity at least 1.
 - **Theme size:** a theme needs at least 4 usable words after the band, gap and shape filters. An anagram theme needs 4 in one anagram set; a passenger source needs at least 6.
 - **Shown words:** a word shows only if it is a root, not adult or offensive, with at least 1 link to a playable theme; a sensitive one only from the sensitive start level (g25).
-- **Split words:** 5-12 letters, with one spelling for both dialects. A real split needs both halves of 3 or more letters, both halves existing lower-case roots, zipf of at least 30, type 0, and a link difficulty below 2.5.
+- **Split words:** 5-12 letters, with one spelling for both dialects. A real split needs both halves of 3 or more letters, both halves existing lower-case roots, type 0 (no zipf test since g29, library v520), and a link difficulty below 2.5.
 
 ## Gaps the game logged (its I25-I27 and E17; Simon decides the fixes)
 

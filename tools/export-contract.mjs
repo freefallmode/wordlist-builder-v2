@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url';
 export const KIND_NAMES = ['category', 'place', 'property', 'wordplay', 'compound'];   // Top level: kindNames, exactly these
 export const TOP_KEYS = ['lib', 'regions', 'regionBits', 'kindNames', 'themeFields', 'themes', 'entries', 'linkFields', 'shown', 'shownUK', 'nameWordLinks', 'nameThemeLinks'];
 export const THEME_COLUMNS = ['id', 'name', 'parent', 'flags', 'popularity', 'kind', 'rule', 'difficulty', 'breaks'];   // Themes table: the fields the game reads (a missing one throws)
-export const ENTRY_COLUMNS = ['text', 'pos', 'type', 'flags', 'familiarity', 'regions', 'regionsHi', 'root', 'clash', 'linkCount', 'links', 'breaks', 'zipf'];   // Entries table
+export const ENTRY_COLUMNS = ['text', 'pos', 'type', 'flags', 'familiarity', 'regions', 'regionsHi', 'root', 'clash', 'linkCount', 'links', 'breaks'];   // Entries table (zipf is optional: not written since library v520, generator g29 does not read it; checked when present)
 export const LINK_FIELDS = ['theme', 'difficulty', 'typicality', 'shown'];   // Links table: the full-JSON reader assumes stride 4 in this order
 export const MAX_DEPTH = 40, NAME_MAX = 30, MIN_WORDS = 4;
 const T_ADULT = 1, T_GROUP = 32;                                     // theme flags the game hard-codes (Themes: flags)
@@ -134,7 +134,7 @@ export function checkContract(X) {
     else if (!isInt(ro, 1, n) || ro - 1 === i) err('contract-root', `root ${JSON.stringify(ro)} is not 0 or another entry's 1-based row (the alias is silently dropped)`, eName(i));
     else if (ent.root[ro - 1] !== 0) err('contract-root', `root ${ro} points at an alias, not a root (chains aren't followed: the alias is silently dropped)`, eName(i));
     if (!isInt(ent.clash[i], 0, 1e9)) err('contract-clash', `clash ${JSON.stringify(ent.clash[i])}; 0 or more`, eName(i));
-    if (!isInt(ent.zipf[i], 0, 74)) err('contract-zipf', `zipf ${JSON.stringify(ent.zipf[i])}; 0-74 (zipf x10)`, eName(i));
+    if (ent.zipf && !isInt(ent.zipf[i], 0, 74)) err('contract-zipf', `zipf ${JSON.stringify(ent.zipf[i])}; 0-74 (zipf x10)`, eName(i));
     breaksOk(ent.breaks[i], text, 'breaks', eName(i));
   }
   // ----- Links -----

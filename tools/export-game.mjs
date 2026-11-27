@@ -1,5 +1,5 @@
 // Writes the game file (export format 4) from the working library: node tools/export-game.mjs [preset] [out] [--strict] [--lib <file>]
-// Default: the "Word Safari" preset (the family filters; Zipf is still added until the game commits g29; js/export.js PRESETS, the same preset the web app offers), to data/export/wordlist-game-family.json in this repository (from any directory; an explicit out is relative to the current directory).
+// Default: the "Word Safari" preset (the family filters, no Zipf since v520; js/export.js PRESETS, the same preset the web app offers), to data/export/wordlist-game-family.json in this repository (from any directory; an explicit out is relative to the current directory).
 // --lib <file>: export that library file instead of data/wordlist-en.project.json (e.g. a draft; the frequency list and break points are still this repository's).
 // --strict (in any position): exit 1 when the case lint finds issues, before anything is written.
 import fs from 'node:fs';
@@ -23,7 +23,7 @@ setFreq(parseFreq(fs.readFileSync(new URL('../data/freq-en.txt', import.meta.url
 const brk = new URL('../data/breaks-en.txt', import.meta.url);
 if (fs.existsSync(brk)) setBreaks(parseBreaks(fs.readFileSync(brk, 'utf8')));
 else console.warn(`Warning: ${fileURLToPath(brk)} not found; the export has no break points.`);
-const { file, report } = buildExport(P, { ...PRESETS[preset], zipf: true });   // zipf stays in the game's file until the game commits generator g29 (it drops the zipf test; g28 still needs it): then remove this override so the file follows the Word Safari preset
+const { file, report } = buildExport(P, PRESETS[preset]);   // the preset as it is: Word Safari has no Zipf since library v520 (the game's generator g29 does not read it)
 const c = caseLint(P), text = JSON.stringify(file);   // every kind counts
 const show = () => { console.log(`${out}: ${(Buffer.byteLength(text) / 1e6).toFixed(1)} MB, library v${P.lib.version}, ${report.themesOut} themes, ${report.entriesOut} entries`); for (const n of report.notes) console.log(' ', n); for (const l of reportLists(report, PRESETS[preset].minWords ?? 4, 20)) { console.log('  ' + l.title + ' (' + l.why + ')'); for (const x of l.lines) console.log('    ' + x); } console.log('  ' + lintLine(c.length)); };
 if (flags.includes('--strict') && c.length) { show(); console.error('--strict: case lint found issues; nothing written.'); process.exit(1); }

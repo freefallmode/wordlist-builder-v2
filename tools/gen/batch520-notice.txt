@@ -1,0 +1,6 @@
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v520 (Simon, 2026-11-27, through your session: "you can drop zipf from the export now"): the export no longer has the entry column zipf, as your generator g29 does not read it. Net effect against v519:
+- Entries: the `zipf` column is gone; every other column is unchanged (same rows, values and order). Theme rows unchanged. File 4.26 MB -> 4.09 MB raw (about 6% smaller gzipped).
+- No theme, word or link changes: the library version was raised only so the changed export carries a new version. Needs g29: g28 would lose its everyday-word split halves on this file.
+- The export contract (GAME-CONTRACT.md, tools/export-contract.mjs) now treats zipf as optional (checked only when present).
+Line breaks: none. New characters: none.
