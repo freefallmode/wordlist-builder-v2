@@ -1,0 +1,44 @@
+Library batch v515: peace words out of the war folder; games with things you throw renamed dice and coin games (Simon)
+1. peace words out of the adult war folder (Simon, 2026-11-27)
+  theme peace_words "peace words" moves from wars_and_battles to society: a family theme (dove, peace sign, olive branch, white flag); under wars and battles it inherited adult and never played
+  peace 21491: nameOkIn ["peace_words"] -> []: no exemption: peace words is not a compound theme
+  out of peace_words: peace 21491: holds the topic word "peace" (Simon, 2026-11-25) (now in no theme: not exported)
+  peace sign 16826: nameOkIn ["peace_words"] -> []: no exemption: peace words is not a compound theme
+  out of peace_words: peace sign 16826: holds the topic word "peace" (Simon, 2026-11-25) (stays in gestures, symbols)
+2. games with things you throw renamed (Simon, 2026-11-27)
+  theme games_with_things_you_throw: name "games with things you throw" -> "dice and coin games": its members are dice and coin gambling games; the old name asks for darts, horseshoes, frisbee
+  coin toss 5676 in games_with_things_you_throw: shown null -> "toss": holds the name word "coin": shown short
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  games_with_things_you_throw: "games with things you throw" pop 4 ident 4: 3 words, easy/middle/hard 3/0/0, theme difficulty 4.5, 4th-easiest band -, gap - -> "dice and coin games" pop 4 ident 4: 3 words, easy/middle/hard 3/0/0, theme difficulty 4.5, 4th-easiest band -, gap -
+  peace_words: "peace words" pop 2 ident 2: 34 words, easy/middle/hard 8/16/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "peace words" pop 2 ident 2: 32 words, easy/middle/hard 6/16/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 1: peace 21491
+Entries added 0: none
+Entries deleted 0: none
+library changes 10; entries changed 3; status set to rev 3; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 355 -> 356, info:overlap 4824 -> 4822
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): contract-dup-root 170 -> 171; after: contract-dup-root 171, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3262 -> 3263; gone none; new peace_words; theme indexes shift: from index 1502 ("peace_words", was "kinds_of_people") to the last index 3262
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61374 -> 61390; first row whose entry changed: 19957 (olive branch 21493, was accord 21494); rows that moved: 41417; added olive branch 21493 (row 19957), diplomacy 21495 (row 19959), reconciliation 21496 (row 19960), pacifist 21497 (row 19961), peacemaker 21498 (row 19962), amnesty 21500 (row 19964), Nobel Peace Prize 21501 (row 19965), non-violence 21503 (row 19967), concord 21505 (row 19969), United Nations 21506 (row 19970), conciliation 21507 (row 19971), mediation 21510 (row 19974), Pax Romana 21512 (row 19976), shalom 21513 (row 19977), unity 67927 (row 60295), harmony 68309 (row 60672); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100979 -> 101011; rows whose link count changed: 16
+Link-index shifts: from row 1073 (stork 1085) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 32, rating changed 0
+  gone (other than the deleted themes): none
+  new: peace_words: "dove" (1084), peace_words: "serenity" (4030), peace_words: "ceasefire" (4441), peace_words: "truce" (4443), peace_words: "armistice" (4464), peace_words: "treaty" (6814), peace_words: "tranquility" (16560), peace_words: "détente" (21439), peace_words: "calm" (21492), peace_words: "olive branch" (21493), peace_words: "accord" (21494), peace_words: "diplomacy" (21495), peace_words: "reconciliation" (21496), peace_words: "pacifist" (21497), peace_words: "peacemaker" (21498), peace_words: "white flag" (21499), peace_words: "amnesty" (21500), peace_words: "Nobel Peace Prize" (21501), peace_words: "negotiation" (21502), peace_words: "non-violence" (21503), peace_words: "concord" (21505), peace_words: "United Nations" (21506), peace_words: "conciliation" (21507), peace_words: "entente" (21508), peace_words: "Geneva Convention" (21509), peace_words: "mediation" (21510), peace_words: "rapprochement" (21511), peace_words: "Pax Romana" (21512), peace_words: "shalom" (21513), peace_words: "salaam" (21514), peace_words: "unity" (67927), peace_words: "harmony" (68309)
+  rating: none
+new issues: none
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v515 (Simon, 2026-11-27; drafted as v513, renumbered after Julia's v512-v513). Net effect against v514:
+- peace words (peace_words) moves from the adult folder wars and battles to society, so it now plays (pop 2, ident 2; 32 words, easy ones dove, olive branch, white flag, calm, harmony). ceasefire, truce, armistice and treaty keep their own sensitive flag (from level 31). peace and peace sign leave it (they hold the topic word; peace sign stays in gestures and symbols); Nobel Peace Prize stays (Simon).
+- games with things you throw (adult, under games of chance) is renamed "dice and coin games"; coin toss shows as "toss" there. It still never plays.
+Theme rows 3262 -> 3263: peace_words is new in the export at index 1502; theme indexes shift from index 1502 (peace_words, was kinds_of_people) to the last index 3262.
+Entry rows 61374 -> 61390: 16 words newly exported (they were only in peace words): olive branch, diplomacy, reconciliation, pacifist, peacemaker, amnesty, Nobel Peace Prize, non-violence, concord, United Nations, conciliation, mediation, Pax Romana, shalom, unity, harmony; rows move from row 19957 on. Links 100979 -> 101011; link positions move from row 1073 on.
+Contract: contract-dup-root 170 -> 171 (unity [harmony] beside the name Unity; Simon approved).
+Line breaks: none. New characters: none.

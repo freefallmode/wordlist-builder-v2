@@ -1,0 +1,8 @@
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v515 (Simon, 2026-11-27; drafted as v513, renumbered after Julia's v512-v513). Net effect against v514:
+- peace words (peace_words) moves from the adult folder wars and battles to society, so it now plays (pop 2, ident 2; 32 words, easy ones dove, olive branch, white flag, calm, harmony). ceasefire, truce, armistice and treaty keep their own sensitive flag (from level 31). peace and peace sign leave it (they hold the topic word; peace sign stays in gestures and symbols); Nobel Peace Prize stays (Simon).
+- games with things you throw (adult, under games of chance) is renamed "dice and coin games"; coin toss shows as "toss" there. It still never plays.
+Theme rows 3262 -> 3263: peace_words is new in the export at index 1502; theme indexes shift from index 1502 (peace_words, was kinds_of_people) to the last index 3262.
+Entry rows 61374 -> 61390: 16 words newly exported (they were only in peace words): olive branch, diplomacy, reconciliation, pacifist, peacemaker, amnesty, Nobel Peace Prize, non-violence, concord, United Nations, conciliation, mediation, Pax Romana, shalom, unity, harmony; rows move from row 19957 on. Links 100979 -> 101011; link positions move from row 1073 on.
+Contract: contract-dup-root 170 -> 171 (unity [harmony] beside the name Unity; Simon approved).
+Line breaks: none. New characters: none.
