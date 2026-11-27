@@ -74,7 +74,7 @@ export function validate(P) {
   const S = P.settings, minWords = S.minWords || 4;
   const ix = P.ix;
 
-  // ----- the theme tree: ids unique, parents existing, no cycle (a cycle would break every inherited flag, so the other checks wait for the fix) -----
+  // ----- the theme tree: ids unique, parents existing, no cycle (a cycle would break the tree walks, so the other checks wait for the fix) -----
   { const ids = new Set(); let cycle = false;
     for (const t of P.themes) {
       if (ids.has(t.id)) add('error', 'theme-dup-id', `Two themes have the id ${t.id}.`, { themeId: t.id }); ids.add(t.id);

@@ -127,15 +127,15 @@ export const blendRatings = (a, b) => {
 // 0 when identifiability is unrated; identifiability alone when popularity is.
 export const themeDifficulty = t => !t.ident ? 0 : !t.pop ? t.ident : round1(Math.min(5, Math.max(1, t.ident + 0.5 * (t.pop - 3))));
 
-// Theme flags with inheritance: adult, sensitive, trademark, offensive, language-specific, foreign-language and disabled pass down the tree; regions are unioned.
+// A theme's flags: adult, sensitive, trademark, offensive, language-specific, foreign-language, enabled and regions. Each theme has its own;
+// nothing passes down the tree (Simon, 2026-11-27; until library v515 they were inherited, and v516 wrote the inherited flags onto each theme).
 export function eff(P, tid) {
   const ix = P.ix;
   if (ix.eff.has(tid)) return ix.eff.get(tid);
   const t = ix.theme.get(tid);
   if (!t) return { adult: false, sensitive: false, tm: false, offensive: false, lang: false, foreign: false, enabled: false, region: [] };
-  const p = t.parent && t.parent !== tid ? eff(P, t.parent) : { adult: false, sensitive: false, tm: false, offensive: false, lang: false, foreign: false, enabled: true, region: [] };
-  const r = { adult: p.adult || t.adult, sensitive: p.sensitive || t.sensitive, tm: p.tm || t.tm, offensive: p.offensive || !!t.offensive, lang: p.lang || t.lang, foreign: p.foreign || !!t.foreign,
-    enabled: p.enabled && t.enabled, region: [...new Set([...p.region, ...t.region])] };
+  const r = { adult: !!t.adult, sensitive: !!t.sensitive, tm: !!t.tm, offensive: !!t.offensive, lang: !!t.lang, foreign: !!t.foreign,
+    enabled: t.enabled !== false, region: [...new Set(t.region || [])] };
   ix.eff.set(tid, r);
   return r;
 }

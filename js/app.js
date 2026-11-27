@@ -52,12 +52,12 @@ function badges(t) {
   const ef = eff(A.P, t.id), b = [];
   const add = (txt, cls, title) => b.push(h('span.badge.' + cls, { title }, txt));
   if (t.complete) add('✓', 'complete', 'Complete set');
-  if (ef.adult) add('A', 'adult', 'Adult' + (t.adult ? '' : ' (inherited)'));
-  if (ef.offensive) add('O', 'offensive', 'Offensive' + (t.offensive ? '' : ' (inherited)'));
-  if (ef.sensitive) add('S', 'sens', 'Sensitive' + (t.sensitive ? '' : ' (inherited)'));
-  if (ef.tm) add('T', 'tm', 'Trademark' + (t.tm ? '' : ' (inherited)'));
-  if (ef.lang) add('L', 'lang', 'Language-specific' + (t.lang ? '' : ' (inherited)'));
-  if (ef.foreign) add('F', 'lang', 'Foreign language' + (t.foreign ? '' : ' (inherited)'));
+  if (ef.adult) add('A', 'adult', 'Adult');
+  if (ef.offensive) add('O', 'offensive', 'Offensive');
+  if (ef.sensitive) add('S', 'sens', 'Sensitive');
+  if (ef.tm) add('T', 'tm', 'Trademark');
+  if (ef.lang) add('L', 'lang', 'Language-specific');
+  if (ef.foreign) add('F', 'lang', 'Foreign language');
   if (ef.region.length) add(ef.region.join('/'), 'region', 'Region-specific');
   return b;
 }
@@ -135,7 +135,7 @@ document.addEventListener('dragend', () => { drag = null; clearZones(); });
 
 const searchOpen = { themes: true, words: true };
 
-// Tree filter (the select above the tree): themes with a flag, set on them or inherited from a parent, plus their parents for context.
+// Tree filter (the select above the tree): themes with a flag (each theme its own), plus their parents for context.
 const THEME_FILTERS = [
   ['', 'All themes'],
   ['off', 'Disabled themes', (P, t, ef) => !ef.enabled],

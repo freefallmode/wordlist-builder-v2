@@ -1,0 +1,214 @@
+Library batch v516: inherited theme flags written onto each theme (Simon)
+1. Inherited flags written onto each theme (Simon, 2026-11-27: flags no longer inherit)
+  sweet_treats ("British sweet treats", under british_food): region UK
+  scottish_dishes ("Scottish dishes", under british_food): region UK
+  kebab_types ("kebab types", under turkish_food): region TR
+  curries ("curries", under indian_food): region IN
+  street_snacks ("Indian street snacks", under indian_food): region IN
+  south_indian_dishes ("South Indian dishes", under indian_food): region IN
+  australian_food ("Australian food", under oceanian_food): region NZ
+  bush_tucker ("bush tucker", under oceanian_food): region NZ
+  mexican_food ("Mexican food", under north_american_food): region CA
+  southern_food ("Southern food", under north_american_food): region CA
+  canadian_food ("Canadian food", under north_american_food): region US
+  red_wines ("red wines", under wines): sensitive
+  grape_varieties ("red wine grapes", under red_wines): sensitive
+  wines_named_for_places ("wines named for places", under red_wines): sensitive
+  white_wines ("white wines", under wines): sensitive
+  wine_words ("wine world", under wines): sensitive
+  tasting_notes ("wine tasting notes", under wine_words): sensitive
+  winemaking_terms ("winemaking", under wine_words): sensitive
+  ale_types ("ale types", under beers): sensitive
+  liqueurs ("liqueurs", under spirits): sensitive
+  national_spirits ("national spirits", under spirits): sensitive
+  new_zealand_animals ("New Zealand animals", under australian_animals): region AU
+  deadly_creatures ("deadly Aussie animals", under australian_animals): region AU
+  eucalypt_species ("eucalypt species", under australian_trees): region AU
+  places_in_remote_australia ("outback places", under outback): region AU
+  greenhouse_gases ("greenhouse gases", under climate_words): sensitive
+  american_natural_wonders ("American natural wonders", under us_landmarks): region US
+  capital_sights ("capital city landmarks", under us_landmarks): region US
+  airlines_of_the_americas ("airlines of the Americas", under airlines): tm
+  low_cost_airlines ("low-cost airlines", under airlines): tm
+  desert_parks ("desert national parks", under us_national_parks): region US
+  california_parks ("California national parks", under us_national_parks): region US
+  eastern_parks ("eastern US national parks", under us_national_parks): region US
+  military_aircraft ("military aircraft", under military_vehicles): adult, sensitive
+  army_ground_vehicles ("army ground vehicles", under military_vehicles): adult, sensitive
+  street_names_for_hemp ("street names for hemp", under illegal_drugs): adult, sensitive
+  stimulants ("stimulant drugs", under illegal_drugs): adult, sensitive, offensive
+  hallucinogens ("hallucinogens", under illegal_drugs): adult, sensitive, offensive
+  american_campaign_terms ("American campaign terms", under election_words): sensitive
+  british_campaign_terms ("British campaign terms", under election_words): sensitive
+  ruled_by_one_leader ("ruled by one leader", under types_of_government): sensitive
+  words_ending_in_cracy ("words ending in -cracy", under types_of_government): sensitive
+  ideologies_named_after_people ("people-named ideologies", under political_ideologies): sensitive
+  government_agencies ("US government agencies", under us_government): sensitive, region US
+  office_holders ("US government officials", under us_government): sensitive, region US
+  stealing_crimes ("stealing crimes", under crimes): adult, sensitive
+  financial_crimes ("financial crimes", under crimes): adult, sensitive
+  crimes_against_people ("crimes against people", under crimes): adult, sensitive
+  the_four_evangelists ("the four evangelists", under religion): sensitive
+  four_horsemen_of_the_apocalypse ("the Four Horsemen", under religion): sensitive
+  parts_of_a_religious_service ("religious service parts", under religion): sensitive
+  archangels ("archangels", under angels_and_spirits): sensitive
+  pilgrimage_words ("Islamic pilgrimage words", under islam_words): sensitive, disabled
+  jewish_holidays ("Jewish holidays", under judaism_words): sensitive
+  jewish_ritual_objects ("Jewish ritual objects", under judaism_words): sensitive
+  key_teachings ("Buddhist teachings", under buddhism_words): sensitive
+  contemplative_practices ("Buddhist practices", under buddhism_words): sensitive
+  temple_sights ("Buddhist temple sights", under buddhism_words): sensitive
+  spiritual_concepts ("Hindu spiritual concepts", under hinduism_words): sensitive
+  world_religions ("world religions", under religion): sensitive
+  military_ranks ("military ranks", under military): sensitive
+  navy_ranks ("navy ranks", under military_ranks): sensitive
+  army_words ("army words", under military): sensitive
+  kinds_of_soldier ("kinds of soldier", under army_words): sensitive
+  army_kit ("army kit", under army_words): sensitive
+  navy_words ("navy words", under military): sensitive
+  naval_people ("naval people", under navy_words): sensitive
+  air_force_words ("air force words", under military): sensitive
+  medals_and_honors ("medals and honors", under military): sensitive
+  modern_weapons ("modern weapons", under military): sensitive
+  military_units ("military units", under military): sensitive
+  warships ("warships", under military): sensitive
+  service_members ("service members", under military): sensitive
+  camps_and_fortifications ("camps and fortifications", under military): sensitive
+  workplace_disputes ("workplace disputes", under protest_words): sensitive
+  lunar_new_year ("Lunar New Year", under festivals_of_the_world): sensitive
+  mid_autumn_festival ("Mid-Autumn Festival", under festivals_of_the_world): sensitive
+  midsummer ("Midsummer", under festivals_of_the_world): sensitive
+  st_patrick_s_day ("St. Patrick's Day", under festivals_of_the_world): sensitive
+  ballpark_parts ("ballpark parts", under baseball_terms): region US
+  pitching_terms ("baseball pitching terms", under baseball_terms): region US
+  hitting_terms ("baseball hitting", under baseball_terms): region US
+  cricket_dismissals ("cricket dismissals", under cricket_terms): region UK,AU,IN,ZA
+  bowling_deliveries ("cricket deliveries", under cricket_terms): region UK,AU,IN,ZA
+  players_and_officials ("cricket roles", under cricket_terms): region UK,AU,IN,ZA
+  nhl_teams ("NHL teams", under ice_hockey_terms): region CA
+  casino_games ("casino games", under games_of_chance): sensitive
+  casino_words ("casino words", under games_of_chance): sensitive
+  people_in_a_casino ("people in a casino", under casino_words): adult, sensitive
+  money_terms_in_gambling ("money terms in gambling", under casino_words): adult, sensitive
+  poker_terms ("poker terms", under games_of_chance): sensitive
+  poker_betting_rounds ("poker betting rounds", under poker_terms): adult, sensitive
+  poker_hands ("poker hands", under poker_terms): adult, sensitive
+  player_actions ("poker actions", under poker_terms): adult, sensitive
+  blackjack_terms ("blackjack terms", under games_of_chance): sensitive
+  betting_words ("betting words", under games_of_chance): sensitive
+  kinds_of_wager ("kinds of wager", under betting_words): adult, sensitive
+  lottery_words ("lottery words", under games_of_chance): adult, sensitive
+  games_with_things_you_throw ("dice and coin games", under games_of_chance): adult, sensitive
+  video_game_genres ("video game genres", under video_games): tm
+  gaming_words ("gaming words", under video_games): tm
+  gaming_hardware ("gaming hardware", under video_games): tm
+  arcade_words ("arcade words", under video_games): tm
+  pinball_words ("pinball words", under arcade_words): tm
+  game_controls ("game controls", under video_games): tm
+  esports_words ("esports words", under video_games): tm
+  power_ups_and_pickups ("power-ups and pickups", under video_games): tm
+  nintendo_characters ("Nintendo characters", under video_game_characters): tm
+  villains_and_monsters ("video game villains", under video_game_characters): tm
+  arcade_classics ("arcade classics", under video_games): tm
+  blues_styles ("blues styles", under american_roots_music): region US
+  superhero_world ("superhero world", under comic_book_words): lang
+  superheroes ("superheroes", under superhero_world): lang
+  superpowers ("superpowers", under superhero_world): lang
+  supervillains ("supervillains", under superhero_world): lang
+  ottoman_sultans ("Ottoman sultans", under ottoman_empire): sensitive
+  ancient_battles ("ancient battles", under famous_battles): sensitive
+  medieval_battles ("medieval battles", under famous_battles): sensitive
+  napoleonic_battles ("Napoleonic battles", under famous_battles): sensitive
+  world_war_i_battles ("World War I battles", under famous_battles): sensitive
+  world_war_ii_battles ("World War II battles", under famous_battles): sensitive
+  civil_war_battles ("Civil War battles", under famous_battles): sensitive
+  armor ("armor", under wars_and_battles): adult, sensitive
+  historic_weapons ("historic weapons", under wars_and_battles): sensitive
+  conflicts_in_history ("conflicts in history", under wars_and_battles): adult, sensitive
+  african_historical_leaders ("historic African leaders", under famous_leaders): sensitive
+  latin_american_liberators ("Latin American liberators", under famous_leaders): sensitive
+  founding_fathers ("Founding Fathers", under famous_leaders): sensitive
+  mount_rushmore_presidents ("Mount Rushmore faces", under us_presidents): sensitive
+  civil_rights_figures ("civil rights figures", under reformers): sensitive
+  suffragists ("suffragists", under reformers): sensitive
+  fantasy_races ("fantasy races", under fantasy): tm
+  elf_types ("elf types", under fantasy_races): tm
+  magic_items ("magic items", under fantasy): tm
+  wizard_words ("wizard words", under fantasy): tm
+  witchcraft ("witchcraft", under fantasy): tm
+  alchemy ("alchemy", under fantasy): tm
+  dragons ("dragons", under fantasy): tm
+  fairy_folk ("fairy folk", under fantasy): tm
+  legendary_heroes ("legendary heroes", under fantasy): tm
+  arthurian_legend ("Arthurian legend", under legendary_heroes): tm
+  robin_hood_legend ("Robin Hood legend", under legendary_heroes): tm
+  lawmen_of_the_west ("lawmen of the West", under wild_west): region US
+  bad_guys_of_the_west ("bad guys of the West", under wild_west): region US
+  people_of_the_frontier ("people of the frontier", under wild_west): region US
+  typefaces_with_serifs ("typefaces with serifs", under fonts): tm
+  typefaces_without_serifs ("typefaces without serifs", under fonts): tm
+  polite_swears ("polite swears", under slang_and_sayings): lang
+  british_exclamations ("British exclamations", under polite_swears): sensitive, lang
+  american_exclamations ("American exclamations", under polite_swears): sensitive, lang
+  words_meaning_nonsense ("words meaning nonsense", under slang_and_sayings): lang
+  silly_sounding_words ("silly-sounding words", under slang_and_sayings): lang
+  old_fashioned_english_words ("old-fashioned words", under slang_and_sayings): lang
+  archaic_pronouns_and_verb_forms ("archaic grammar words", under old_fashioned_english_words): lang
+  old_exclamations ("old exclamations", under old_fashioned_english_words): lang
+  old_adverbs_and_prepositions ("old adverbs and prepositions", under old_fashioned_english_words): lang
+  words_for_toilet ("words for toilet", under slang_and_sayings): lang
+  words_from_french ("words from French", under word_origins): lang
+  food_and_dining_words ("French food words", under words_from_french): lang
+  words_from_spanish ("words from Spanish", under word_origins): lang
+  foods_and_flavors ("Spanish food words", under words_from_spanish): lang
+  wild_west_words ("cowboy words from Spanish", under words_from_spanish): lang
+  words_from_italian ("words from Italian", under word_origins): lang
+  italian_food_words ("Italian food words", under words_from_italian): lang
+  words_from_german ("words from German", under word_origins): lang
+  german_foods_and_drinks ("German foods and drinks", under words_from_german): lang
+  words_from_dutch ("words from Dutch", under word_origins): lang
+  food_and_drink_words ("Dutch food words", under words_from_dutch): lang
+  ships_and_sailing_words ("Dutch sailing words", under words_from_dutch): lang
+  flowers_named_after_people ("flowers named for people", under words_named_after_people): lang
+  brand_names_used_as_words ("brands used as words", under word_origins): lang
+  words_for_big ("words for big", under synonyms): lang
+  words_for_small ("words for small", under synonyms): lang
+  words_for_fast ("words for fast", under synonyms): lang
+  words_for_good ("words for good", under synonyms): lang
+  words_for_bad ("words for bad", under synonyms): lang
+  words_for_smart ("words for smart", under synonyms): lang
+  words_for_strong ("words for strong", under synonyms): lang
+  words_for_strange ("words for strange", under synonyms): lang
+  words_for_funny ("words for funny", under synonyms): lang
+  words_for_pretty ("words for pretty", under synonyms): lang
+  words_for_old ("words for old", under synonyms): lang
+  words_for_new ("words for new", under synonyms): lang
+  words_for_noise ("words for noise", under synonyms): lang
+  feeling_tired ("words for tired", under synonyms): lang
+  eating_sounds ("eating sounds", under onomatopoeia): lang
+  impact_sounds ("impact sounds", under onomatopoeia): lang
+Count by flag: region 33, sensitive 88, tm 26, adult 18, offensive 2, disabled 1, lang 44
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 187; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 171, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3263 -> 3263; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61390 -> 61390; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101011 -> 101011; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none

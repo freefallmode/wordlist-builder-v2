@@ -50,11 +50,17 @@ test('the real skeleton parses cleanly and ids are unique', () => {
   for (const t of themes) if (t.parent) assert.ok(themes.find(x => x.id === t.parent), t.name);
 });
 
-test('flags inherit down the tree', () => {
-  const P = project(); reindex(P);
-  assert.equal(eff(P, 'shades_of_blue').adult, true);
+test('flags belong to each theme: nothing passes down the tree (Simon, 2026-11-27)', () => {
+  const P = project();
+  P.themes.find(t => t.id === 'colors').enabled = false;
+  P.themes.find(t => t.id === 'colors').region = ['AU'];
+  reindex(P);
+  assert.equal(eff(P, 'colors').adult, true);
+  assert.equal(eff(P, 'shades_of_blue').adult, false);   // under the adult group colors, not adult itself
+  assert.equal(eff(P, 'shades_of_blue').enabled, true);  // under a disabled group, still enabled
+  assert.equal(eff(P, 'wild').sensitive, true);
+  assert.deepEqual(eff(P, 'wild').region, ['US', 'UK']); // its own regions only, not the group's AU
   assert.equal(eff(P, 'citrus').adult, false);
-  assert.deepEqual(eff(P, 'wild').region, ['US', 'UK']);
 });
 
 test('aliases take the root themes and the harder rating', () => {
@@ -107,6 +113,7 @@ test('moving a theme keeps outline order', () => {
 
 test('export filters by flag, drops thin themes, promotes aliases', () => {
   const P = project();
+  P.themes.find(t => t.id === 'shades_of_blue').adult = true;   // flags do not pass down from the adult group colors: set on the theme itself
   // 5 clean words in fruits, one adult-theme word set, aliases of a offensive root.
   for (const w of ['apple', 'pear', 'plum', 'fig', 'grape']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
   for (const w of ['navy', 'sky', 'teal', 'cyan']) addEntry(P, w, { fam: 2, typ: { shades_of_blue: 2 } });
@@ -119,7 +126,7 @@ test('export filters by flag, drops thin themes, promotes aliases', () => {
   assert.equal(all.file.themes.filter(r => !(r[3] & 32)).length, 2);
 
   const family = buildExport(P, { adult: 'exclude', offensive: 'exclude' });
-  // the adult "colors" branch goes, so shades_of_blue disappears; offensive root goes, its alias stays as a root
+  // the adult theme shades_of_blue disappears; offensive root goes, its alias stays as a root
   assert.equal(family.file.entries.text.length, 6);
   assert.ok(family.file.entries.text.includes('cheeky'));
   assert.equal(family.file.entries.root[family.file.entries.text.indexOf('cheeky')], 0);

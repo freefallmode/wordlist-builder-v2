@@ -23,7 +23,7 @@ The old app (`../wordlist-builder`) is a reference only. Its words were over-inc
 | **Separate entries per meaning.** "bat" (animal), "bat" (sports) and "Apple"/"apple" are different entries. | Flags and ratings depend on meaning (ass: donkey vs. buttocks; Mercury: planet vs. element). One entry with per-theme overrides would need every flag duplicated per theme. |
 | **A short "meaning/context" label (`gloss`) tells same-text entries apart**, required once text is shared. | Without it two entries named "bat" cannot be told apart in lists, pickers and exports. Identity is the numeric id, never the text. |
 | **Theme membership is explicit.** A word is in a theme only if linked to it; a theme never pulls in its sub-themes' words. | A sub-theme rating (kumquat in "citrus fruits": hard) says how typical the word is of that sub-theme, not of "fruits". Inheriting would give ratings that are not valid in the parent. If a word should be in both, link it to both; each link has its own rating. Optional per-branch roll-up can be added later. |
-| **The tree is for navigation, flag inheritance and telling the generator which themes are related.** | See above. |
+| **The tree is for navigation and telling the generator which themes are related.** | See above. |
 | **Aliases** (`aliasOf` + `aliasKind` + the entry's own `region`) instead of a special US/UK pair type. | One mechanism covers sidewalk/pavement and color/colour. Six kinds, see section 3. |
 | **Aliases add variety, not words to a level.** An alias takes its themes from its root; the game must never show two entries of one alias group in the same level; a theme's 4-word minimum counts distinct roots. | Aliases give extra difficulty steps (settee is harder than couch) and extra surface forms, but must not make a thin theme look big. |
 | **Synonyms are theme-local, not global aliases.** A theme lists its synonym groups; one member per group per level; a cross-theme `clash` id in the export stops synonyms of different themes meeting in a level. | Whether two words mean the same depends on the theme (pudding and dessert). A global alias cannot be right everywhere and had already been misused (castle as an alias of rook). See DESIGN-entries.md. |
@@ -34,7 +34,7 @@ The old app (`../wordlist-builder`) is a reference only. Its words were over-inc
 | **Text is stored with its proper case** (Paris, NASA, iPhone) and accents. The game derives upper-case and accent-folded balloon text. | Case carries meaning and lets validation catch mistakes. Smaller than storing both forms. |
 | **Words and flags are regenerated, not copied from the old library.** | The old data was suspect (section 1). |
 | **Regionality on both words and themes** (`region[]`: US, CA, UK, IE, AU, NZ, ZA, IN, TR). | A word or theme known mainly in some countries (satsuma, UK nations, US states) should be filterable. Region means *who knows it* (audience), not *what it is about*. |
-| **Theme flags:** enabled, complete, adult, sensitive, trademark/copyright, language-specific, foreign-language, regions. Adult, sensitive, trademark, language-specific and disabled **pass down** to sub-themes; regions are unioned. | A parent decision (all of "drugs" is adult) should not have to be repeated on every child. |
+| **Theme flags:** enabled, complete, adult, sensitive, trademark/copyright, language-specific, foreign-language, regions. Each theme has its **own** flags and regions; nothing passes down to sub-themes (Simon, 2026-11-27; inherited until v515, written onto each theme in v516). | A sub-theme often differs from its parent (peace words under wars and battles, kebab types under Turkish food): inheritance hid those cases and forced theme moves. |
 | **Export filtering is per link (entry in theme), not per entry.** | A flag can come from the entry or from the theme it sits in; the same word can be fine in one theme and flagged in another. |
 | **The project file has one record per line.** | Diffs and merges in git stay readable. |
 | **Claude generation lives in the app (browser, the user's key), and the data is also produced by Claude in working sessions** (section 12). | In-app generation is for ongoing top-ups; both paths must set every flag. |
@@ -53,7 +53,7 @@ Pure functions over a plain project object (`js/model.js`), so the core can be t
 - `id`: stable slug (`citrus_fruits`). A leading or trailing `___` in a name becomes "blank" so `___ball` and `ball` get different ids. Duplicate ids get `_2`, `_3`.
 - `group`: a folder, never played, holds no words (validation warns if it does).
 - `pop`: theme popularity 1-5 (1 most popular and appealing), 0 = unrated. `ident`: identifiability 1-5 (1 obvious ... 5 obscure), 0 = unrated. Difficulty is not stored (an old `d` field was dropped): it is worked out from `ident` and `pop`.
-- `foreign`: the words are mostly not English (inherits down the tree). `tkind`, `rule`: see section 2. `locked`: true or false forces or forbids word substitution (regional, spelling or alias words standing in for the linked one); absent, it follows the kind (wordplay, compound) and the language-specific flag. `nameOk`: the theme's words may appear in its members' text (wordplay themes), so the theme-name check skips it. `familyOk`: two words of one word family may be separate answers here (male/female titles, tenses, anagram themes); the `family-pair` check skips it. Set by hand, per theme (not inherited), never by generation, not exported (DESIGN-entries.md 3.7).
+- `foreign`: the words are mostly not English. `tkind`, `rule`: see section 2. `locked`: true or false forces or forbids word substitution (regional, spelling or alias words standing in for the linked one); absent, it follows the kind (wordplay, compound) and the language-specific flag. `nameOk`: the theme's words may appear in its members' text (wordplay themes), so the theme-name check skips it. `familyOk`: two words of one word family may be separate answers here (male/female titles, tenses, anagram themes); the `family-pair` check skips it. Set by hand, per theme (not inherited), never by generation, not exported (DESIGN-entries.md 3.7).
 - `groups` (optional): synonym groups, a list of lists of entry ids of this theme. Words in one group stand for one another *in this theme*: only one of them may appear in a level. A word is in at most one group per theme; members must be roots linked to the theme. See DESIGN-entries.md.
 - `note`: shown to the generator and to people. **For complete sets it lists the exact members.**
 - The order of the `themes` array is the depth-first outline order (the tree order). Moving a theme moves its whole sub-tree.
@@ -72,7 +72,7 @@ Pure functions over a plain project object (`js/model.js`), so the core can be t
 
 **Theme statistics** (`themeStats`): entries, distinct roots, counts by rating band. A theme is "ready" when its distinct roots reach `settings.minWords`.
 
-**Effective flags** (`eff(P, id)`): walks up the tree; adult, sensitive, tm, lang and disabled inherit, regions are unioned.
+**Theme flags** (`eff(P, id)`): the theme's own adult, sensitive, tm, offensive, lang, foreign, enabled and regions; nothing is inherited from parents (since v516).
 
 ## 4. Theme tree
 
@@ -161,9 +161,9 @@ The export is the only thing the Word Safari game reads from this project (the f
 | key | default | meaning |
 |---|---|---|
 | `adult`, `sensitive`, `tm` | `include` | `include` or `exclude` (`only` still works in code, the screen does not offer it). Judged per link: flagged when the entry or the theme (with inheritance) has the flag. |
-| `offensive` | `exclude` | entry or theme (inherited); off by default (DESIGN-entries.md 3.8). An options object with the old key `vulgar` still works. |
-| `lang` | `include` | the theme's language-specific flag (inherited) only. |
-| `region` | `{mode:'all', codes:[9 codes], v:2}` | `mode` `all` keeps everything; `exclude` drops themes whose inherited regions, and entries whose **root's** regions, meet `codes` (an alias follows its root; its own tag is ignored here but still written). Presets without `v: 2` used `[]` for every region and are converted on read. |
+| `offensive` | `exclude` | entry or theme (its own flag); off by default (DESIGN-entries.md 3.8). An options object with the old key `vulgar` still works. |
+| `lang` | `include` | the theme's language-specific flag only. |
+| `region` | `{mode:'all', codes:[9 codes], v:2}` | `mode` `all` keeps everything; `exclude` drops themes whose regions, and entries whose **root's** regions, meet `codes` (an alias follows its root; its own tag is ignored here but still written). Presets without `v: 2` used `[]` for every region and are converted on read. |
 | `synonyms` | true | keep aliases of kind synonym, regional, abbreviation, translation. |
 | `spellings` | true | keep aliases of kind spelling and form. |
 | `recMin`, `recMax`, `unrated` | 1, 5, true | range on the whole-number band of the link (the harder of familiarity, typicality and the `use` form's familiarity); band 0 is kept only when `unrated`. |
@@ -218,8 +218,8 @@ A **link number** n is the n-th link in file order: `entries.links[4n .. 4n+3]`.
 | 0 | `id` | string | the theme's id (a slug, stable across versions). |
 | 1 | `name` | string | display name. |
 | 2 | `parent` | number | index of the parent row, -1 at the top. |
-| 3 | `flags` | number | theme bits: adult 1, sensitive 2, trademark 4, lang 8, complete 16, group 32, locked 64, foreign 128. Adult, sensitive, trademark, lang and foreign are inherited down the tree; complete is the theme's own; locked is the theme's own setting, else on for wordplay and compound themes and language-specific ones (show exactly the linked word, no regional, spelling or family substitute); group is set on group themes and on ancestors written only to hold the tree, which have no links. Foreign: the words are mostly not English (numbers, days, greetings in another language; Swahili or Maori words), not English words of foreign origin. |
-| 4 | `regions` | number | low region mask, inherited (union up the tree). |
+| 3 | `flags` | number | theme bits: adult 1, sensitive 2, trademark 4, lang 8, complete 16, group 32, locked 64, foreign 128. Every flag is the theme's own (none inherited since v516); locked is the theme's own setting, else on for wordplay and compound themes and language-specific ones (show exactly the linked word, no regional, spelling or family substitute); group is set on group themes and on ancestors written only to hold the tree, which have no links. Foreign: the words are mostly not English (numbers, days, greetings in another language; Swahili or Maori words), not English words of foreign origin. |
+| 4 | `regions` | number | low region mask, the theme's own regions. |
 | 5 | `popularity` | number | theme popularity 1 (most) to 5, 0 unrated. |
 | 6 | `counts` | number[5] | words at band 1..5 (root and band pairs, unrated counted as 5), from **every enabled word** of the theme, not only those that passed the filters; zeros for a group. |
 | 7 | `range` | number[2] | band of the 4th easiest and the 4th hardest root (same basis as counts); `[0,0]` under 4 roots or for a group. With fewer than 7 roots the first can exceed the second. |

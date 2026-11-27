@@ -72,7 +72,7 @@ export async function editTheme(t, isNew = false) {
     field('Theme popularity', f.pop, 'How familiar and appealing the theme is for a general player (1 most popular ... 5 least). How hard a theme is to work out is its identifiability.'),
     field('Identifiability', f.ident, 'How easily a player works out the theme from its members (1 obvious ... 5 obscure). Wordplay themes and broad themes ("things made of metal") rate high even when their words are easy.'),
     field('Note', f.note, 'Shown to the word generator and to people. For complete sets, list the exact members.'),
-    !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Inherited flags (adult, offensive, sensitive, trademark, language, disabled) apply to sub-themes.`));
+    !isNew && h('p.hint', {}, `${plural(themeStats(P, t.id).entries, 'entry')} linked. Flags belong to this theme only: sub-themes do not inherit them.`));
   return dialog(isNew ? 'New theme' : 'Theme: ' + t.name, body, [
     { label: 'Cancel' },
     !isNew && { label: 'Delete', action: async () => {
