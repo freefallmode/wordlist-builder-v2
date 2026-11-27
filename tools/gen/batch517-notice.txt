@@ -1,4 +1,4 @@
-GAME NOTICE (DRAFT, not sent: only on Simon's word)
+GAME NOTICE (sent to `_WS_` 2026-11-27 on Simon's word, with v512-v518)
 Library v516-v517 (Simon, 2026-11-27): theme flags no longer inherit. Net effect against v515:
 - v516: each theme now carries its own flags and regions; nothing passes down from a parent. v516 wrote the then-inherited flags onto 187 themes, so the export did not change (only the version).
 - v517: flags and regions that came only from a parent and do not fit are dropped:

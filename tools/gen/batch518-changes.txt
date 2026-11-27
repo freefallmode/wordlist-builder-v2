@@ -27,7 +27,7 @@ Root links by theme + shown text + row: gone 0, new 0, rating changed 0
   new: none
   rating: none
 new issues: none
-GAME NOTICE (DRAFT, not sent: only on Simon's word)
+GAME NOTICE (sent to `_WS_` 2026-11-27 on Simon's word, with v512-v518)
 Library v518 (Simon, 2026-11-27): the sensitive flag is replaced by a first level, and themes can require levels. Net effect against v517:
 - New fields (export format stays 4; the new columns come at the end, so existing column positions do not move, except the optional theme `note` column, now after them):
   - theme column `firstLevel`: [easy, medium, hard], the first level the theme may appear at in each of your three difficulty modes, null = anywhere; null on the whole when unset and on group rows.

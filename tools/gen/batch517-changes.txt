@@ -156,7 +156,7 @@ Root links by theme + shown text + row: gone 0, new 29, rating changed 0
   new: armor: "hauberk" (6705), armor: "shield" (20684), armor: "helmet" (20685), armor: "visor" (20691), armor: "gauntlet" (20692), armor: "chain mail" (20703), armor: "plate" (20704), armor: "gorget" (20705), armor: "pauldron" (20706), armor: "coif" (20835), armor: "gambeson" (20845), armor: "breastplate" (21344), armor: "greaves" (21345), armor: "suit of armor" (21346), armor: "buckler" (21347), armor: "cuirass" (21348), armor: "vambrace" (21349), armor: "sabaton" (21350), armor: "bascinet" (21351), armor: "kite shield" (21353), armor: "tower shield" (21354), armor: "lamellar" (21355), armor: "scale mail" (21356), armor: "brigandine" (21357), armor: "cuisses" (21358), armor: "poleyn" (21359), armor: "body armor" (21360), armor: "helm" (50026), armor: "yoroi" (66010)
   rating: none
 new issues: none
-GAME NOTICE (DRAFT, not sent: only on Simon's word)
+GAME NOTICE (sent to `_WS_` 2026-11-27 on Simon's word, with v512-v518)
 Library v516-v517 (Simon, 2026-11-27): theme flags no longer inherit. Net effect against v515:
 - v516: each theme now carries its own flags and regions; nothing passes down from a parent. v516 wrote the then-inherited flags onto 187 themes, so the export did not change (only the version).
 - v517: flags and regions that came only from a parent and do not fit are dropped:
