@@ -1,0 +1,84 @@
+Library batch v513 (for Simon's review): Places & Geography, streets and roads branch
+1. road layers (new)
+  new theme: road_layers "road layers" under streets_and_roads (after parts_of_a_road), pop 5, ident 4: asked for by the user; parts of a road lists what you see
+  linked: roadbed 38444 in road_layers (typicality 2): a well-known member of the new theme
+  new entry: subgrade 69046 noun, common, familiarity 4: a common word that was not in the library
+  linked: subgrade 69046 in road_layers (typicality 1): a common word that was not in the library
+  new entry: sub-base 69047 noun, common, familiarity 4: a common word that was not in the library
+  linked: sub-base 69047 in road_layers (typicality 1): a common word that was not in the library
+  new entry: base course 69048 noun, common, familiarity 4: a common word that was not in the library
+  linked: base course 69048 in road_layers (typicality 1): a common word that was not in the library
+  new entry: surface course 69049 noun, common, familiarity 4: a common word that was not in the library
+  linked: surface course 69049 in road_layers (typicality 1): a common word that was not in the library
+  new entry: binder course 69050 noun, common, familiarity 4: a common word that was not in the library
+  linked: binder course 69050 in road_layers (typicality 2): a common word that was not in the library
+  new entry: wearing course 69051 noun, common, familiarity 4: a common word that was not in the library
+  linked: wearing course 69051 in road_layers (typicality 2): a common word that was not in the library
+  new entry: geotextile 69052 noun, common, familiarity 4: a common word that was not in the library
+  linked: geotextile 69052 in road_layers (typicality 3): a common word that was not in the library
+2. road building (new)
+  new theme: road_building "road building" under streets_and_roads (after roadwork), pop 4, ident 3: asked for by the user; roadwork lists the street scene
+  linked: asphalt 38434 in road_building (typicality 1): a well-known member of the new theme
+  linked: tarmac 27387 in road_building (typicality 1): a well-known member of the new theme
+  linked: bitumen 24060 in road_building (typicality 2): a well-known member of the new theme
+  linked: tar 39066 [pitch] in road_building (typicality 2): a well-known member of the new theme
+  linked: gravel 2053 [crushed stone] in road_building (typicality 2): a well-known member of the new theme
+  linked: aggregate 24056 in road_building (typicality 2): a well-known member of the new theme
+  linked: concrete 7396 [building material] in road_building (typicality 2): a well-known member of the new theme
+  linked: cement 24033 in road_building (typicality 3): a well-known member of the new theme
+  linked: resurfacing 68695 in road_building (typicality 3): a well-known member of the new theme
+  linked: paver 49047 [machine] in road_building (typicality 3): a well-known member of the new theme
+  linked: drainage 31980 in road_building (typicality 4): a well-known member of the new theme
+  new entry: macadam 69053 noun, common, familiarity 4: a common word that was not in the library
+  linked: macadam 69053 in road_building (typicality 2): a common word that was not in the library
+  new entry: hot mix 69054 noun, common, familiarity 4: a common word that was not in the library
+  linked: hot mix 69054 in road_building (typicality 3): a common word that was not in the library
+  new entry: chip seal 69055 noun, common, familiarity 4: a common word that was not in the library
+  linked: chip seal 69055 in road_building (typicality 3): a common word that was not in the library
+  new entry: compaction 69056 noun, common, familiarity 4: a common word that was not in the library
+  linked: compaction 69056 in road_building (typicality 3): a common word that was not in the library
+  new entry: culvert 69057 noun, common, familiarity 4: a common word that was not in the library
+  linked: culvert 69057 in road_building (typicality 4): a common word that was not in the library
+  group in road_building: asphalt 38434 = tarmac 27387: the same answer, or a word and its more specific form
+  group in road_building: tar 39066 = bitumen 24060: the same answer, or a word and its more specific form
+kin
+  kin: compaction 69056 <-> compact 28806 [small]: one word family
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  road_building: new -> "road building" pop 4 ident 3: 16 words, easy/middle/hard 4/4/8, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  road_layers: new -> "road layers" pop 5 ident 4: 8 words, easy/middle/hard 0/0/8, theme difficulty 5, 4th-easiest band 4, gap -1.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 12: subgrade 69046, sub-base 69047, base course 69048, surface course 69049, binder course 69050, wearing course 69051, geotextile 69052, macadam 69053, hot mix 69054, chip seal 69055, compaction 69056, culvert 69057
+Entries deleted 0: none
+library changes 43; entries changed 25; status set to rev 2; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 471 -> 472, info:orphan 356 -> 355
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3263 -> 3265; gone none; new road_building, road_layers; theme indexes shift: from index 957 ("road_building", was "parts_of_a_road") to the last index 3264
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61404 -> 61417; first row whose entry changed: 29262 (drainage 31980, was podzol 31982); rows that moved: 32142; added drainage 31980 (row 29262), subgrade 69046 (row 61405), sub-base 69047 (row 61406), base course 69048 (row 61407), surface course 69049 (row 61408), binder course 69050 (row 61409), wearing course 69051 (row 61410), geotextile 69052 (row 61411), macadam 69053 (row 61412), hot mix 69054 (row 61413), chip seal 69055 (row 61414), compaction 69056 (row 61415), culvert 69057 (row 61416); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101044 -> 101068; rows whose link count changed: 11
+Link-index shifts: from row 2025 (coal 2054) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 24, rating changed 0
+  gone (other than the deleted themes): none
+  new: road_building: "gravel" (2053), road_building: "concrete" (7396), road_building: "cement" (24033), road_building: "aggregate" (24056), road_building: "bitumen" (24060), road_building: "tarmac" (27387), road_building: "drainage" (31980), road_building: "asphalt" (38434), road_layers: "roadbed" (38444), road_building: "tar" (39066), road_building: "paver" (49047), road_building: "resurfacing" (68695), road_layers: "subgrade" (69046), road_layers: "sub-base" (69047), road_layers: "base course" (69048), road_layers: "surface course" (69049), road_layers: "binder course" (69050), road_layers: "wearing course" (69051), road_layers: "geotextile" (69052), road_building: "macadam" (69053), road_building: "hot mix" (69054), road_building: "chip seal" (69055), road_building: "compaction" (69056), road_building: "culvert" (69057)
+  rating: none
+new issues: none
+
+How the branch was reviewed (Places & Geography, 2026-11-27): all 8 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 24 new links existed earlier and was removed (all 255 library versions and 251 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - road layers: tack coat and prime coat (familiarity 5: too obscure), capping layer and road surface (they hold the theme name)
+  - road building: grader and steamroller (their aliases road grader and road roller hold the theme name; both are in roadwork), crushed stone (gravel's gloss), asphalt concrete (beside asphalt and concrete), hardcore (UK regional), milling (no entry)
+
+For Simon:
+  1. Asked for by the user: two new themes beside parts of a road and roadwork. road layers (8, from the ground up; groups surface course = wearing course, subgrade = roadbed) and road building (16; groups asphalt = tarmac, tar = bitumen, as in roadwork). New entries: subgrade, sub-base, base course, binder course, surface course, wearing course, geotextile, macadam, hot mix, chip seal, compaction, culvert.
+  2. drainage was in no theme and is linked in road building. compaction is kin of compact [small].
+  3. Line breaks: com-pac-tion, geo-tex-tile, sub-grade.
