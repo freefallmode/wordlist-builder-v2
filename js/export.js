@@ -1,7 +1,7 @@
 // Library export: themes and words filtered by flags, written as a compact columnar JSON file.
 //
 // Filters are applied per link (entry in theme), because a flag can come from the entry or from the theme it sits in.
-// For adult, sensitive, trademark and offensive a link is flagged when the entry OR the theme (or any ancestor) has the flag.
+// For adult, sensitive, trademark and offensive a link is flagged when the entry OR the theme has the flag (theme flags are the theme's own, not inherited, since v516).
 // Offensive words and themes are left out unless the options include them (DESIGN-entries.md 3.8: the toggle is off by default).
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
