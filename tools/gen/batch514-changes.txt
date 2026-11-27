@@ -1,0 +1,37 @@
+Library batch v514: islam words and Islamic art words disabled (Simon)
+1. Themes disabled (Simon, 2026-11-27)
+  islam_words ("Islam words"): disabled; off with it: pilgrimage_words
+  islamic_art_words ("Islamic art words"): disabled
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  islam_words: "Islam words" pop 3 ident 2: 52 words, easy/middle/hard 8/14/30, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Islam words" pop 3 ident 2: 52 words, easy/middle/hard 8/14/30, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  islamic_art_words: "Islamic art words" pop 5 ident 3: 29 words, easy/middle/hard 4/5/20, theme difficulty 4, 4th-easiest band 2, gap -2.0 -> "Islamic art words" pop 5 ident 3: 29 words, easy/middle/hard 4/5/20, theme difficulty 4, 4th-easiest band 2, gap -2.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 2; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: info:overlap 4825 -> 4824
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3265 -> 3262; gone islam_words (index 1436), pilgrimage_words (index 1437), islamic_art_words (index 2115); new none; theme indexes shift: from index 1436 ("judaism_words", was "islam_words") to the last index 3261
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61417 -> 61374; first row whose entry changed: 15859 (kosher 16720, was halal 16719); rows that moved: 45515; added none; removed 16719 (row 15859), 34431 (row 31498), 34432 (row 31499), 34433 (row 31500), 34435 (row 31502), 34436 (row 31503), 34437 (row 31504), 34438 (row 31505), 34439 (row 31506), 34440 (row 31507), 34442 (row 31509), 34445 (row 31512), 34449 (row 31515), 34450 (row 31516), 34451 (row 31517), 34452 (row 31518), 34453 (row 31519), 34454 (row 31520), 52286 (row 47862), 52287 (row 47863), 52288 (row 47864), 52289 (row 47865), 52290 (row 47866), 52291 (row 47867), 52292 (row 47868), 52293 (row 47869), 52294 (row 47870), 52295 (row 47871), 52296 (row 47872), 52297 (row 47873), 52298 (row 47874), 52299 (row 47875), 52300 (row 47876), 52301 (row 47877), 52302 (row 47878), 52303 (row 47879), 61206 (row 56278), 61207 (row 56279), 61209 (row 56281), 61210 (row 56282), 61211 (row 56283), 61212 (row 56284), 61213 (row 56285)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101068 -> 100979; rows whose link count changed: 35
+Link-index shifts: from row 2457 (temple 2490) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 89, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v514 (Simon, 2026-11-27; drafted as v512, renumbered after Julia's v512-v513): two themes disabled. Net effect against v513:
+- Disabled (they leave every export; their words stay in the library): Islam words (islam_words) with its sub-theme Islamic pilgrimage words (pilgrimage_words), and Islamic art words (islamic_art_words).
+- 43 words were only in those themes and leave the export: halal, Allah, Muhammad, salah, sharia, fatwa, Sunni, Shia, Sufi, umrah, shahada, wudu, takbir, surah, dhikr, ummah, mashallah, inshallah, girih, zellige, tilework, miniature painting, Kufic, naskh, thuluth, nastaliq, diwani, tughra, Persian carpet, illumination, Quran calligraphy, ablaq, Iznik, lusterware, damascening, hilye, tawhid, ijtihad, kiswah, ihram, tafsir, barzakh, Zamzam. 35 more words lose those links but stay through their other themes (mosque, Ramadan, Eid, imam and others, in places of worship, religious festivals and the like).
+Theme rows 3265 -> 3262: islam_words (index 1436), pilgrimage_words (1437), islamic_art_words (2115) gone; theme indexes shift from index 1436 (judaism_words, was islam_words) to the last index 3261.
+Entry rows 61417 -> 61374: rows move from row 15859 on (kosher, was halal). No row added; no flag or text changes. Links 101068 -> 100979.
+Line breaks: none. New characters: none.
