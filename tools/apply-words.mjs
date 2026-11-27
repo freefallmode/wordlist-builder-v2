@@ -12,13 +12,13 @@
 //          gloss sets a meaning label; merge joins the entries of that text that sit in the listed themes into one (the lowest id survives, links and aliases move to it); split moves one theme link of an entry that was linked for a different meaning onto a new entry with its own meaning label; del removes one
 //   GROUPS [[themeId, 'text', 'text|gloss', ...], ...]  synonym groups for that theme: words of the theme that stand for one another (a level never shows two); each member is the text of a root linked to the theme (add '|gloss' when the text has several meanings there); joins an existing group when a member is already in one
 //   SETTINGS { maxWords: 4, ... }  library settings to set
-//   THEMES { themeId: { pop: 1-5 (theme popularity, 1 most popular), ident: 1-5 (identifiability, 1 obvious ... 5 obscure), ...flag overrides (complete, adult, sensitive, tm, lang, foreign (the words are mostly not English), region, note) } }
+//   THEMES { themeId: { pop: 1-5 (theme popularity, 1 most popular), ident: 1-5 (identifiability, 1 obvious ... 5 obscure), ...flag overrides (complete, adult, sensitive (read as firstLevel 31), firstLevel, mustLevels, tm, lang, foreign (the words are mostly not English), region, note) } }
 // An entry that already exists (same text and gloss) is only linked to the theme (its own ratings and flags stay); a link already there is left alone.
-// Aliases inherit part of speech, type, adult, sensitive and trademark from the root unless the alias row says otherwise.
+// Aliases inherit part of speech, type, adult and trademark from the root unless the alias row says otherwise. A row's `sens: true` (old name) or `firstLevel` sets the root's firstLevel (31 in every mode for sens); an alias has none (it follows its root).
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
-import { addEntry, reindex, indexEntry, sameText, linkIds, deleteEntry, setKin } from '../js/model.js';
+import { addEntry, reindex, indexEntry, sameText, linkIds, deleteEntry, setKin, normThemeLevels, hasFirstLevel, SENSITIVE_START } from '../js/model.js';
 import { parseProject, serializeProject, stampSave } from '../js/store.js';
 import { validate } from '../js/validate.js';
 import { parseFreq, setFreq } from '../js/freq.js';
@@ -50,7 +50,7 @@ for (const f of FIXES || []) {
     for (const d of rest) {
       for (const [t, v] of Object.entries(d.typ)) if (keep.typ[t] === undefined) keep.typ[t] = v;
       for (const a of P.entries) if (a.aliasOf === d.id) a.aliasOf = keep.id;
-      keep.adult ||= d.adult; keep.sensitive ||= d.sensitive; keep.tm ||= d.tm;
+      keep.adult ||= d.adult; keep.tm ||= d.tm; if (!hasFirstLevel(keep) && hasFirstLevel(d)) keep.firstLevel = [...d.firstLevel];
       for (const [t, s] of Object.entries(d.show || {})) { keep.show ||= {}; if (!keep.show[t]) keep.show[t] = s; }
       for (const [t, id] of Object.entries(d.use || {})) { keep.use ||= {}; if (!keep.use[t] && id !== keep.id) keep.use[t] = id; }
       if (d.nameOkIn?.length) keep.nameOkIn = [...new Set([...(keep.nameOkIn || []), ...d.nameOkIn])];
@@ -88,12 +88,12 @@ for (const [tid, rows] of Object.entries(DATA)) {
     let e = sameText(P, text).find(x => (x.gloss || '') === (o.g || ''));
     if (e) { if (e.typ[tid] === undefined) { e.typ[tid] = typ; stats.linked++; } else stats.kept++; continue; }
     e = addEntry(P, text, { gloss: o.g || '', pos: o.pos || 'noun', type: o.type || 'common', fam: clampRating(r), typ: { [tid]: typ }, tm: !!o.tm, adult: !!o.adult,
-      offensive: !!(o.offensive ?? o.vulgar), sensitive: !!o.sens, region: o.reg || [], note: o.note || '', status: 'gen' });
+      offensive: !!(o.offensive ?? o.vulgar), firstLevel: o.firstLevel ?? (o.sens ? [SENSITIVE_START, SENSITIVE_START, SENSITIVE_START] : null), region: o.reg || [], note: o.note || '', status: 'gen' });
     indexEntry(P, e); stats.made++;
     for (const [at, kind, ar, ai, areg = [], ao = {}] of o.al || []) {
       if (!(ar >= 1 && ar <= 5 && ai >= 1 && ai <= 5)) throw Error(`bad alias rating on "${at}"`);
       const a = addEntry(P, at, { gloss: ao.g || '', pos: e.pos, type: ao.type || e.type, fam: clampRating(ar), aliasOf: e.id, aliasKind: kind, region: areg,
-        tm: ao.tm ?? e.tm, adult: ao.adult ?? e.adult, sensitive: ao.sens ?? e.sensitive, offensive: !!(ao.offensive ?? ao.vulgar), status: 'gen' });
+        tm: ao.tm ?? e.tm, adult: ao.adult ?? e.adult, offensive: !!(ao.offensive ?? ao.vulgar), status: 'gen' });
       if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
       indexEntry(P, a); stats.aliases++;
     }
@@ -106,7 +106,7 @@ for (const [tid, rootText, rootGloss, rows] of ALIASES || []) {
   for (const [at, kind, ar, ai, areg = [], ao = {}] of rows) {
     if (sameText(P, at).some(x => (x.gloss || '') === (ao.g || '') && x.aliasOf === root.id)) continue;
     const a = addEntry(P, at, { gloss: ao.g || '', pos: root.pos, type: ao.type || root.type, fam: clampRating(ar), aliasOf: root.id, aliasKind: kind, region: areg,
-      tm: ao.tm ?? root.tm, adult: ao.adult ?? root.adult, sensitive: ao.sens ?? root.sensitive, offensive: !!(ao.offensive ?? ao.vulgar), status: 'gen' });
+      tm: ao.tm ?? root.tm, adult: ao.adult ?? root.adult, offensive: !!(ao.offensive ?? ao.vulgar), status: 'gen' });
     if (ai !== Math.max(typ, ar)) a.typ[tid] = ai;
     indexEntry(P, a); stats.aliases++;
   }
@@ -114,7 +114,7 @@ for (const [tid, rootText, rootGloss, rows] of ALIASES || []) {
 for (const [tid, t] of Object.entries(THEMES || {})) {
   const th = P.ix.theme.get(tid);
   if (!th) throw Error('no such theme: ' + tid);
-  Object.assign(th, t);
+  Object.assign(th, t); normThemeLevels(th);   // themes have no sensitive flag since 2026-11-27: sensitive: true becomes firstLevel [31, 31, 31] (model.js)
 }
 for (const [tid, ...members] of GROUPS || []) {
   const t = P.ix.theme.get(tid); if (!t) throw Error('GROUPS: no such theme ' + tid);

@@ -3,7 +3,7 @@ import { h, select, check, field, dialog, toast, plural, fmtBytes } from './dom.
 import { A } from './state.js';
 import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, reindexThemes, indexEntry,
-  FLAG_HELP, pathOf, setKin, moveKin, deleteEntry, deleteTheme, unlinkEntry, linkTarget, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
+  FLAG_HELP, MODES, SENSITIVE_START, hasFirstLevel, hasMustLevels, pathOf, setKin, moveKin, deleteEntry, deleteTheme, unlinkEntry, linkTarget, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded, loadFreq } from './freq.js';
 import { loadBreaks } from './breaks.js';
 import { validate, SEV_ORDER, themeNameChars } from './validate.js';
@@ -38,6 +38,21 @@ function themePicker(placeholder, { groups = true } = {}) {
   return { node: h('span.picker', {}, input, list), input, get: () => byName.get(input.value.trim().toLowerCase()) || null };
 }
 
+// Level boxes (model.js level fields), one per game mode. levelRow lays boxes out as Easy [ ] Medium [ ] Hard [ ].
+const levelRow = (boxes, extra) => h('div.chips', {}, ...MODES.map((m, i) => h('span', {}, m[0].toUpperCase() + m.slice(1) + ' ', boxes[i])), extra);
+// First level (theme and entry dialogs): a number box per mode (blank = anywhere) and a "same for all" tick that copies Easy into the other two.
+// read() gives [easy, medium, hard] (null = anywhere) or throws a message for the dialog's error line.
+function firstLevelBoxes(fl) {
+  const fl0 = Array.isArray(fl) ? fl : [null, null, null];
+  const boxes = MODES.map((m, i) => h('input.level', { type: 'number', min: 1, step: 1, value: fl0[i] ?? '', placeholder: 'anywhere', 'aria-label': 'First level, ' + m, style: 'width:6em' }));
+  const same = check('same for all', fl0[0] != null && fl0.every(v => v === fl0[0]), { onchange: () => sync() });
+  const sync = () => { const on = same.querySelector('input').checked; boxes.slice(1).forEach(b => { b.disabled = on; if (on) b.value = boxes[0].value; }); };
+  boxes[0].addEventListener('input', () => { if (same.querySelector('input').checked) sync(); });
+  sync();
+  const read = () => boxes.map((b, i) => { const s = b.value.trim(); if (!s) return null; if (!/^\d+$/.test(s) || +s < 1) throw Error(`First level, ${MODES[i]}: "${s}" is not a whole number of 1 or more.`); return +s; });
+  return { node: levelRow(boxes, same), boxes, read, sig: () => boxes.map(b => b.value).join('/') };
+}
+
 // ---------- theme ----------
 
 export async function editTheme(t, isNew = false) {
@@ -54,18 +69,23 @@ export async function editTheme(t, isNew = false) {
     ident: select(IDENT_HELP.map((l, v) => [v, l]), w.ident || 0),
     locked: select([['auto', 'Follow the kind (locked for wordplay, compound and language-specific)'], ['locked', 'Locked: show exactly the linked word'], ['free', 'Allowed: regional and family words may stand in']], w.locked === undefined ? 'auto' : w.locked ? 'locked' : 'free'),
   };
-  const flags = ['enabled', 'group', 'complete', 'adult', 'offensive', 'sensitive', 'tm', 'lang', 'foreign', 'nameOk'];   // adult, offensive, sensitive, trademark, language: the order of the Export window
-  const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', offensive: 'Offensive topic (its words leave the default export)', sensitive: 'Sensitive topic',
+  const flags = ['enabled', 'group', 'complete', 'adult', 'offensive', 'tm', 'lang', 'foreign', 'nameOk'];   // adult, offensive, trademark, language: the order of the Export window (themes have no sensitive flag since 2026-11-27: First level 31)
+  const flagLabel = { enabled: 'Enabled', group: 'Group (a folder, never played)', complete: 'Complete set (finite, fixed: months, planets)', adult: 'Adult content', offensive: 'Offensive topic (its words leave the default export)',
     tm: 'Trademark / copyright', lang: 'Language-specific (English spelling, sound or slang)', foreign: 'Foreign language (the words are mostly not English)', nameOk: "Words may contain the theme's own words (wordplay themes)" };
   const boxes = Object.fromEntries(flags.map(k => [k, check(flagLabel[k], w[k])]));
   const famBox = check('Same-family words may be separate answers (tenses, male/female titles, anagrams)', !!w.familyOk, { title: 'familyOk: the family-pair check skips this theme. Only for themes where the form of the word is the point. This theme only (not inherited); generation never sets it.' });
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
+  // Level fields (model.js): First level per game mode (blank = anywhere), with "same for all" copying the easy box; Must appear in levels, comma-separated per mode.
+  const flBoxes = firstLevelBoxes(w.firstLevel), ml0 = hasMustLevels(w) ? w.mustLevels : [[], [], []];
+  const mlBox = MODES.map((m, i) => h('input.levels', { value: ml0[i].join(', '), placeholder: 'e.g. 5, 12', 'aria-label': 'Must appear in levels, ' + m, style: 'width:9em' }));
   const body = h('div.form', {},
     field('Name', f.name),
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
     h('div.flags', [...Object.values(boxes), famBox]),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).', w.region.filter(c => !REGIONS.includes(c))),
-    h('div.hint.flaghelp', {}, ['adult', 'offensive', 'sensitive', 'tm', 'lang', 'foreign'].map(k => h('div', {}, FLAG_HELP[k]))),
+    h('div.hint.flaghelp', {}, ['adult', 'offensive', 'tm', 'lang', 'foreign'].map(k => h('div', {}, FLAG_HELP[k]))),
+    field('First level', flBoxes.node, `The first level of each game mode the theme may appear at; blank = anywhere. A sensitive topic (religion, politics, death) starts at ${SENSITIVE_START}. Otherwise set only when Simon asks.`),
+    field('Must appear in levels', levelRow(mlBox), 'Levels of each game mode in which the game must show the theme, comma-separated (5, 12); blank = none. Set only when Simon asks.'),
     field('Kind', f.tkind, 'category = kinds of one thing; place; property = members share an attribute; wordplay = chosen by spelling or sound; compound = members combine with a shared word.'),
     field('Rule', f.rule, 'Wordplay and compound themes only: how the game tests a word. hidden:<what>, rhyme:<ending>, palindrome, anagram, homophone, onomatopoeia, double-letters, starts:<what>, ends:<ending> (for a category, name the theme by id: starts:@colors, hidden:@birds), contains:<letters>, compound-end:<word> for ___ word, compound-start:<word> for word ___, or other.'),
     field('Word substitution', f.locked, 'Whether the game may show a regional, spelling or alias word in place of the one linked (US word for a UK player). Locked themes always show the linked word.'),
@@ -93,11 +113,17 @@ export async function editTheme(t, isNew = false) {
       if (tk === 'category') delete w.tkind; else w.tkind = tk;
       if ((tk === 'wordplay' || tk === 'compound') && rule) w.rule = rule; else delete w.rule;
       for (const k of flags) w[k] = boxes[k].querySelector('input').checked;
+      { const fl = flBoxes.read();
+        const ml = mlBox.map((b, i) => { const ps = b.value.split(/[\s,]+/).filter(Boolean); const bad = ps.find(s => !/^\d+$/.test(s) || +s < 1); if (bad) throw Error(`Must appear in levels, ${MODES[i]}: "${bad}" is not a whole number of 1 or more.`); return [...new Set(ps.map(Number))].sort((a, b) => a - b); });
+        ml.forEach((l, i) => { const low = fl[i] == null ? [] : l.filter(v => v < fl[i]); if (low.length) throw Error(`Must appear in levels, ${MODES[i]}: ${low.join(', ')} ${low.length === 1 ? 'is' : 'are'} below the first ${MODES[i]} level ${fl[i]}.`); });
+        if (fl.some(v => v != null)) w.firstLevel = fl; else delete w.firstLevel;
+        if (ml.some(l => l.length)) w.mustLevels = ml; else delete w.mustLevels; }
       w.region = mergeRegions(t.region, regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c));
       const oldParent = t.parent;
       Object.assign(t, w, { parent: oldParent });
       if (!w.tkind) delete t.tkind;
       if (!w.rule) delete t.rule;
+      if (!w.firstLevel) delete t.firstLevel; if (!w.mustLevels) delete t.mustLevels;
       if (f.locked.value === 'auto') delete t.locked; else t.locked = f.locked.value === 'locked';
       if (famBox.querySelector('input').checked) t.familyOk = true; else delete t.familyOk;
       if (isNew) { t.id = uniqueThemeId(P, slug(name)); P.themes.push(t); reindexThemes(P); moveTheme(P, t.id, parent); A.sel = t.id; if (parent) A.open.add(parent); }
@@ -122,7 +148,8 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     fam: select(FAMILIARITY_OPTS, w.fam), status: select(STATUS.map(s => [s, `${s} — ${STATUS_HELP[s]}`]), w.status),
     note: h('textarea', { rows: 2 }, w.note), kind: select(ALIAS_KINDS.map(k => [k, k || '(not an alias)']), w.aliasKind),
   };
-  const flags = { enabled: 'Enabled', adult: 'Adult', offensive: 'Offensive', sensitive: 'Sensitive', tm: 'Trademark / copyright' };   // the order of the Export window
+  const flags = { enabled: 'Enabled', adult: 'Adult', offensive: 'Offensive', tm: 'Trademark / copyright' };   // the order of the Export window (no sensitive since 2026-11-27: First level 31)
+  const flBoxes = firstLevelBoxes(w.firstLevel);   // roots only: an alias follows its root
   const boxes = Object.fromEntries(Object.keys(flags).map(k => [k, check(flags[k], w[k])]));
   const regionBoxes = REGIONS.map(c => check(c, w.region.includes(c), { 'data-c': c }));
 
@@ -168,7 +195,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
 
   // Has anything been changed since the dialog opened? (Used to ask before leaving for a theme.)
   const sig = () => JSON.stringify([f.text.value, f.gloss.value, f.pos.value, f.type.value, f.fam.value, f.status.value, f.note.value, f.kind.value, aliasInput.value,
-    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), w.typ, w.show, kin]);
+    Object.values(boxes).map(b => b.querySelector('input').checked), regionBoxes.map(b => b.querySelector('input').checked), flBoxes.sig(), w.typ, w.show, kin]);
   const initialSig = sig();
   const linksBox = h('div.links');
   const addPick = themePicker('add a theme…', { groups: false });
@@ -243,7 +270,8 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     h('div.two', {}, field('Familiarity (the word itself)', f.fam, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
     h('div.flags', Object.values(boxes)),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).', w.region.filter(c => !REGIONS.includes(c))),
-    h('div.hint.flaghelp', {}, ['adult', 'offensive', 'sensitive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
+    h('div.hint.flaghelp', {}, ['adult', 'offensive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),
+    w.aliasOf ? h('p.hint', 'First level: an alias follows its root.') : field('First level', flBoxes.node, `The first level of each game mode the word may appear at; blank = anywhere. ${FLAG_HELP.late}`),
     h('h3', 'Themes'), linksBox,
     aliasBlock,
     kinBlock,
@@ -271,6 +299,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     Object.assign(w, { text, gloss, pos: f.pos.value, type: f.type.value, fam: +f.fam.value, status: f.status.value, note: f.note.value.trim(), aliasOf,
       aliasKind: aliasOf ? (f.kind.value || 'synonym') : '' });
     for (const k of Object.keys(flags)) w[k] = boxes[k].querySelector('input').checked;
+    { const fl = aliasOf ? null : flBoxes.read(); w.firstLevel = fl && fl.some(v => v != null) ? fl : null; }   // firstLevel lives on roots; an entry that becomes an alias drops it
     w.region = mergeRegions(e.region, regionBoxes.filter(b => b.querySelector('input').checked).map(b => b.querySelector('input').dataset.c));
     const unlinked = isNew ? [] : Object.keys(e.typ).filter(tid => !(tid in w.typ));
     const kinOld = e.kin || [];
@@ -343,7 +372,7 @@ export async function generate(tid) {
           h('td', {}, h('input', { type: 'checkbox', checked: x.take, onchange: ev => { x.take = ev.target.checked; } })),
           h('td', {}, x.text, x.gloss && h('span.hint', ` (${x.gloss})`), exists && h('span.hint', ' · exists, will be linked')),
           h('td', x.pos.slice(0, 3)), h('td', x.type), h('td', clamp(x.familiarity)), h('td', clamp(x.typicality)),
-          h('td', ['adult', 'sensitive', 'tm', 'offensive'].filter(k => x[k]).map(k => k[0].toUpperCase()).join('') + (x.region.length ? ' ' + x.region.join('/') : '')),
+          h('td', ['adult', 'level31', 'tm', 'offensive'].filter(k => x[k]).map(k => k === 'level31' ? '31+' : k[0].toUpperCase()).join(' ') + (x.region.length ? ' ' + x.region.join('/') : '')),
           h('td', x.aliases.map(a => `${a.text} (${a.kind}${a.region.length ? ' ' + a.region.join('/') : ''}, ${clamp(a.familiarity)})`).join(', ')));
       })));
   };
@@ -358,7 +387,7 @@ export async function generate(tid) {
         if (![fam, ...P.entries.filter(a => a.aliasOf === fam.id)].some(m => tid in m.typ)) { const m = linkTarget(P, root); m.typ[tid] = clamp(x.typicality); touched.push(m); linked++; }
         root = fam;
       } else {
-        root = addEntry(P, text, { gloss, pos: x.pos, type: x.type, fam: clamp(x.familiarity), adult: x.adult, sensitive: x.sensitive, tm: x.tm, offensive: x.offensive, region: x.region,
+        root = addEntry(P, text, { gloss, pos: x.pos, type: x.type, fam: clamp(x.familiarity), adult: x.adult, firstLevel: x.level31 ? [SENSITIVE_START, SENSITIVE_START, SENSITIVE_START] : null, tm: x.tm, offensive: x.offensive, region: x.region,
           status: 'gen', typ: { [tid]: clamp(x.typicality) } });
         indexEntry(P, root); created++;
       }
@@ -366,7 +395,7 @@ export async function generate(tid) {
         const at = a.text.trim(); if (!at || at.toLowerCase() === text.toLowerCase()) continue;
         if (sameText(P, at).some(o => (o.gloss || '').toLowerCase() === (a.gloss || '').toLowerCase())) continue;
         const al = addEntry(P, at, { gloss: (a.gloss || '').trim(), pos: root.pos, type: root.type, fam: clamp(a.familiarity), aliasOf: root.id, aliasKind: a.kind, region: a.region, status: 'gen',
-          adult: root.adult, sensitive: root.sensitive, tm: root.tm, offensive: root.offensive });
+          adult: root.adult, tm: root.tm, offensive: root.offensive });
         indexEntry(P, al); created++;   // the alias follows its root's links; a family has only one member linked in a theme
       }
     }
@@ -440,7 +469,7 @@ export async function showExport() {
       h('div.hint', 'If unticked, leave out words and themes tagged with any of these regions:'), h('div.chips', [...both, ...boxes]));
     lock();
     return h('div.form', {},
-      h('div.two', {}, inc('Include adult content', 'adult'), inc('Include offensive words (off by default)', 'offensive'), inc('Include sensitive topics', 'sensitive'), inc('Include trademark / copyright', 'tm'), inc('Include language-specific themes', 'lang')),
+      h('div.two', {}, inc('Include adult content', 'adult'), inc('Include offensive words (off by default)', 'offensive'), inc('Include words and themes held to level 31 (first level 31+ in every mode)', 'sensitive'), inc('Include trademark / copyright', 'tm'), inc('Include language-specific themes', 'lang')),
       region,
       h('div.two', {}, tick('Include synonyms (couch / sofa)', 'synonyms'), tick('Include spelling variants (color / colour)', 'spellings'), tick('Include unrated words', 'unrated'), tick('Zipf frequency column', 'zipf'), tick('Meanings', 'gloss'), tick('Notes', 'notes')),
       h('div.two', {}, num('recMin', 'Easiest difficulty to include', 1, 5), num('recMax', 'Hardest difficulty to include', 1, 5), num('minWords', 'Minimum words per theme', 1, 20), num('maxEntryWords', 'Longest entry in words (0 = no limit)', 0, 10)));

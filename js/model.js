@@ -1,7 +1,10 @@
 // Data model. Pure functions over a plain project object, so they can be tested in Node.
 //
-// Theme   { id, name, parent, group, enabled, pop, complete, adult, sensitive, tm, offensive, lang, foreign, region[], note }   (offensive: written only when true)
-// Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, fam, adult, sensitive, tm, offensive, region[],
+// Theme   { id, name, parent, group, enabled, pop, complete, adult, tm, offensive, lang, foreign, region[], note, firstLevel?, mustLevels? }   (offensive: written only when true)
+//         firstLevel: [easy, medium, hard], each the first level the theme may appear at in that game mode, or null (anywhere); mustLevels: [easy[], medium[], hard[]],
+//         levels in which the game must show the theme (sorted, no duplicates). Both are left out of the file when empty (store.js). Themes have no sensitive flag
+//         since 2026-11-27: a theme kept for later levels has firstLevel 31 (SENSITIVE_START); an old file's theme `sensitive: true` loads as firstLevel [31, 31, 31].
+// Entry   one meaning of one written form: { id, text, gloss, pos, type, enabled, fam, adult, tm, offensive, region[], firstLevel,
 //         aliasOf, aliasKind, typ{ themeId: typicality }, status, note, kin[] }
 //         kin: ids of other root entries of the same word family linked in other themes (joy / joyful); stored on both entries (symmetric), never on an alias. The export keeps kin apart in a level (clash).
 //         Two meanings of "bat" are two entries. Every flag that depends on meaning lives on the entry; the only thing that differs
@@ -11,7 +14,7 @@
 import { childrenOf } from './outline.js';
 
 export const POS = ['noun', 'verb', 'adjective', 'adverb', 'other'];
-export const flagKey = e => (e.adult ? 'a' : 'z') + (e.sensitive ? 's' : 'z') + (e.tm ? 't' : 'z') + (e.offensive ? 'o' : 'z') + (e.region.length ? 'r' : 'z');   // flagged words sort first: adult, sensitive, trademark, offensive, region
+export const flagKey = e => (e.adult ? 'a' : 'z') + (hasFirstLevel(e) ? 's' : 'z') + (e.tm ? 't' : 'z') + (e.offensive ? 'o' : 'z') + (e.region.length ? 'r' : 'z');   // flagged words sort first: adult, sensitive, trademark, offensive, region
 export const TYPES = ['common', 'person', 'place', 'org', 'title', 'proper', 'acronym', 'phrase'];
 export const TYPE_HELP = { common: 'ordinary word (lowercase)', person: 'a named person or character', place: 'a named place', org: 'company, brand, team, group',
   title: 'book, film, song, game, artwork', proper: 'other proper name (event, era, deity)', acronym: 'letters said as letters or a word (NASA, UFO)', phrase: 'idiom or set phrase' };
@@ -32,7 +35,7 @@ export function newProject() {
 }
 
 export function entryDefaults() {
-  return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, fam: 0, adult: false, sensitive: false, tm: false, offensive: false,
+  return { id: 0, text: '', gloss: '', pos: 'noun', type: 'common', enabled: true, fam: 0, adult: false, tm: false, offensive: false, firstLevel: null,
     region: [], aliasOf: 0, aliasKind: '', typ: {}, status: 'new', note: '', nameOkIn: [], use: {}, show: {}, kin: [] };   // nameOkIn: themes where the full text is the real name and may contain the theme's words (dried apple in dried fruits); use: { themeId: id of a form alias to show instead of the root in that theme }; show: { themeId: text } the theme shows this shorter text for the entry (rock for rock garden)
 }
 
@@ -127,14 +130,63 @@ export const blendRatings = (a, b) => {
 // 0 when identifiability is unrated; identifiability alone when popularity is.
 export const themeDifficulty = t => !t.ident ? 0 : !t.pop ? t.ident : round1(Math.min(5, Math.max(1, t.ident + 0.5 * (t.pop - 3))));
 
-// A theme's flags: adult, sensitive, trademark, offensive, language-specific, foreign-language, enabled and regions. Each theme has its own;
+// ---------- level fields (Simon, 2026-11-27) ----------
+// The game has three difficulty modes (easy, medium, hard), each with its own run of levels. A theme's firstLevel and mustLevels hold one value per mode.
+export const MODES = ['easy', 'medium', 'hard'], MODE_LETTERS = ['e', 'm', 'h'];
+export const SENSITIVE_START = 31;   // the game's sensitive start level (every plan): a theme or word that had the sensitive flag (removed 2026-11-27) gets firstLevel 31
+export const isLevel = v => Number.isInteger(v) && v >= 1;
+export const hasFirstLevel = t => Array.isArray(t.firstLevel) && t.firstLevel.some(v => v != null);
+export const hasMustLevels = t => Array.isArray(t.mustLevels) && t.mustLevels.some(l => Array.isArray(l) && l.length > 0);
+// What is wrong with a theme's level fields (shape, whole numbers of 1 or more, sorted without duplicates): a list of reasons, empty when fine. Absent or null fields are fine.
+export function levelProblems(t) {
+  const out = [], fl = t.firstLevel, ml = t.mustLevels;
+  if (fl != null) {
+    if (!Array.isArray(fl) || fl.length !== 3) out.push('firstLevel is not a list of 3 (easy, medium, hard)');
+    else fl.forEach((v, i) => { if (v != null && !isLevel(v)) out.push(`firstLevel ${MODES[i]} ${JSON.stringify(v)} is not a whole number of 1 or more`); });
+  }
+  if (ml != null) {
+    if (!Array.isArray(ml) || ml.length !== 3 || !ml.every(Array.isArray)) out.push('mustLevels is not 3 lists (easy, medium, hard)');
+    else ml.forEach((l, i) => {
+      const bad = l.filter(v => !isLevel(v));
+      if (bad.length) out.push(`mustLevels ${MODES[i]} has ${bad.map(v => JSON.stringify(v)).join(', ')}, not whole numbers of 1 or more`);
+      else if (l.some((v, j) => j && v <= l[j - 1])) out.push(`mustLevels ${MODES[i]} [${l.join(', ')}] is not sorted or has duplicates`);
+    });
+  }
+  return out;
+}
+// In place: a legacy theme `sensitive` flag becomes firstLevel [31, 31, 31] (when the theme has no firstLevel) and is removed; empty level fields are removed.
+// parseProject runs it on every theme, and the file writer on a copy of each, so the model and the file never carry a theme's sensitive or an empty level field.
+export function normThemeLevels(t) {
+  if ('sensitive' in t) { if (t.sensitive === true && !hasFirstLevel(t)) t.firstLevel = [SENSITIVE_START, SENSITIVE_START, SENSITIVE_START]; delete t.sensitive; }
+  if (!hasFirstLevel(t) && (t.firstLevel === null || Array.isArray(t.firstLevel))) delete t.firstLevel;   // a malformed value stays, for the level-bad check
+  if (!hasMustLevels(t) && (t.mustLevels === null || (Array.isArray(t.mustLevels) && t.mustLevels.every(l => Array.isArray(l) && !l.length)))) delete t.mustLevels;
+  return t;
+}
+// Entries (second step, Simon, 2026-11-27): the word's `sensitive` flag is replaced by the same firstLevel, kept on roots only (an alias follows its root; null = none).
+// In place: a ROOT's legacy `sensitive: true` becomes firstLevel [31, 31, 31] when it has no firstLevel; on an alias the legacy flag is just dropped; `sensitive` is removed from every entry,
+// and an all-null firstLevel becomes null. parseProject runs it on every entry, and the file writer on a copy of an entry that needs it.
+export function normEntryLevels(e) {
+  if ('sensitive' in e) { if (e.sensitive === true && !e.aliasOf && !hasFirstLevel(e)) e.firstLevel = [SENSITIVE_START, SENSITIVE_START, SENSITIVE_START]; delete e.sensitive; }
+  if (Array.isArray(e.firstLevel) && !hasFirstLevel(e)) e.firstLevel = null;
+  return e;
+}
+// True when the levels keep the theme or word out of every mode until the sensitive start level: the export's transitional sensitive bits and its `sensitive` filter.
+export const lateLevels = fl => Array.isArray(fl) && fl.length === 3 && fl.every(v => v != null && v >= SENSITIVE_START);
+// The firstLevel of a word: its root's (an alias follows its root).
+export const entryFirstLevel = (P, e) => (e.aliasOf ? P.ix.entry.get(e.aliasOf) || e : e).firstLevel ?? null;
+// The firstLevel as written in the outline and shown in the tree: "40" when the same for all three modes, else "40/30/-" ('-' = anywhere); '' when none.
+export const firstLevelText = fl => !Array.isArray(fl) || !fl.some(v => v != null) ? '' : fl.every(v => v === fl[0]) ? String(fl[0]) : fl.map(v => v == null ? '-' : v).join('/');
+// The mustLevels as written in the outline: "e5,12;m8;h3" (modes with no level left out); '' when none.
+export const mustLevelsText = ml => !Array.isArray(ml) ? '' : ml.map((l, i) => Array.isArray(l) && l.length ? MODE_LETTERS[i] + l.join(',') : '').filter(Boolean).join(';');
+
+// A theme's flags: adult, trademark, offensive, language-specific, foreign-language, enabled and regions (no sensitive since 2026-11-27: see firstLevel). Each theme has its own;
 // nothing passes down the tree (Simon, 2026-11-27; until library v515 they were inherited, and v516 wrote the inherited flags onto each theme).
 export function eff(P, tid) {
   const ix = P.ix;
   if (ix.eff.has(tid)) return ix.eff.get(tid);
   const t = ix.theme.get(tid);
-  if (!t) return { adult: false, sensitive: false, tm: false, offensive: false, lang: false, foreign: false, enabled: false, region: [] };
-  const r = { adult: !!t.adult, sensitive: !!t.sensitive, tm: !!t.tm, offensive: !!t.offensive, lang: !!t.lang, foreign: !!t.foreign,
+  if (!t) return { adult: false, tm: false, offensive: false, lang: false, foreign: false, enabled: false, region: [] };
+  const r = { adult: !!t.adult, tm: !!t.tm, offensive: !!t.offensive, lang: !!t.lang, foreign: !!t.foreign,
     enabled: t.enabled !== false, region: [...new Set(t.region || [])] };
   ix.eff.set(tid, r);
   return r;
@@ -270,7 +322,7 @@ export function unlinkEntry(P, e, tid) {
 
 const SAME_WORD = ['spelling', 'form'];   // alias kinds that are the root's own word written another way: the root's word-level data fits them
 // Deleting a root promotes an alias: the first spelling, else the first that is not a form, else the first. It takes the root's place everywhere:
-// its links (with the root's rating where it had none of its own), its synonym groups, its kin, adult and sensitive (they follow the meaning), its region when it has none of its own (the export judged it on the root's),
+// its links (with the root's rating where it had none of its own), its synonym groups, its kin, adult and firstLevel (they follow the meaning), its region when it has none of its own (the export judged it on the root's),
 // and the shown text of a theme when it is the same word or its text contains that text. When it is the same word (spelling, form) it also takes trademark, offensive, the name allowances and the forms the themes used.
 // When it is another word, the root's spellings and abbreviations become its synonyms (a spelling of the old root is not a spelling of the new one); forms keep their kind.
 // The deleted id leaves every synonym group and every `use`. Returns what updateIndex needs.
@@ -281,7 +333,7 @@ export function deleteEntry(P, e) {
     first = als.find(a => a.aliasKind === 'spelling') || als.find(a => a.aliasKind !== 'form') || als[0];
     const same = SAME_WORD.includes(first.aliasKind);
     for (const [tid, v] of Object.entries(e.typ)) if (!(tid in first.typ)) first.typ[tid] = v;
-    first.adult ||= e.adult; first.sensitive ||= e.sensitive;
+    first.adult ||= e.adult; first.firstLevel = e.firstLevel ? [...e.firstLevel] : null;   // firstLevel lives on the root: the new root takes the old one's
     if (!first.region.length) first.region = [...e.region];
     first.show ||= {};
     for (const [tid, s] of Object.entries(e.show || {})) if (!first.show[tid] && (same || first.text.toLowerCase().includes(s.toLowerCase()))) first.show[tid] = s;
@@ -422,7 +474,7 @@ export function placeTheme(P, id, targetId, where) {
 export const FLAG_HELP = {
   tm: 'Trademarks or copyrighted names: brands, titles, characters, and so on.',
   adult: 'Adult: drugs, sexual content, violence, and so on.',
-  sensitive: 'Sensitive: religion, politics, death, and so on. The game can keep these out of early or easy levels.',
+  late: 'First level 31 (was the sensitive flag until 2026-11-27): religion, politics, death, alcohol, and so on. The game keeps these out of levels before 31.',
   offensive: 'Offensive: some players object to this word, in any of its meanings: swear words, slurs, sexual and body words, mild insults, and the harmless meaning of a word whose rude meaning comes to mind first (ass [donkey]). Independent of adult and sensitive. Left out of the export unless included (DESIGN-entries.md 3.8).',
   lang: 'Language-specific: depends on the spelling, sound or slang of the library language, so it will not translate: rhymes, puns, slang, acronyms, anagrams, spoonerisms, wordplay, and so on.',
   foreign: 'Foreign language: the words are mostly NOT English (numbers, days, colors or greetings in another language, Swahili or Maori words). English words of foreign origin (loanwords, french phrases used in English) do not count. The game can hold these back until later levels.',

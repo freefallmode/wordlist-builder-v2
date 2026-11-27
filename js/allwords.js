@@ -1,7 +1,7 @@
 // The "All words" screen: every entry in the library in one sortable, filterable table.
 import { h, select, plural, debounce } from './dom.js';
 import { A } from './state.js';
-import { linkIds, flagKey } from './model.js';
+import { linkIds, flagKey, hasFirstLevel, firstLevelText } from './model.js';
 import { editEntry } from './dialogs.js';
 
 const PAGE = 200;
@@ -9,7 +9,7 @@ const S = { q: '', in: 'wordalias', mode: 'contains', flag: '', fam: '', status:
 
 const SCOPE = [['wordalias', 'search word or alias'], ['word', 'search the word'], ['alias', 'search the alias'], ['meaning', 'search the meaning'], ['theme', 'search the themes'], ['any', 'search everything']];
 const MODES = [['contains', 'contains'], ['starts', 'starts with'], ['exact', 'exactly']];
-const FLAGS = [['', 'any flags'], ['adult', 'adult'], ['sensitive', 'sensitive'], ['tm', 'trademark'], ['offensive', 'offensive'], ['region', 'region-specific'], ['none', 'no flags']];
+const FLAGS = [['', 'any flags'], ['adult', 'adult'], ['late', 'has a first level'], ['tm', 'trademark'], ['offensive', 'offensive'], ['region', 'region-specific'], ['none', 'no flags']];
 const SHOW = [['', 'all words'], ['on', 'enabled only'], ['off', 'disabled only'], ['roots', 'roots only'], ['alias', 'aliases only'], ['orphan', 'not in any theme']];
 const STATUS = [['', 'any status'], ['new', 'new (by hand)'], ['gen', 'generated, not reviewed'], ['rev', 'reviewed']];
 
@@ -46,7 +46,7 @@ function colGrip(k, thEl) {
   return thEl;
 }
 
-const flagList = e => ['adult', 'sensitive', 'tm', 'offensive'].filter(k => e[k]);
+const flagList = e => ['adult', 'late', 'tm', 'offensive'].filter(k => k === 'late' ? hasFirstLevel(e) : e[k]);   // late: the word has a first level (replaced sensitive, 2026-11-27)
 const themeNames = (P, e) => linkIds(P, e).map(id => P.ix.theme.get(id)?.name).filter(Boolean);
 
 // The other names of an entry: the aliases that point at it (and, for an alias, the word it is an alias of).
@@ -59,7 +59,7 @@ function matches(P, e, aliasesOf) {
     const inWord = () => has(e.text), inMeaning = () => has(e.gloss || ''), inTheme = () => themeNames(P, e).some(has), inAlias = () => otherNames(P, e, aliasesOf).some(has);
     if (!(S.in === 'word' ? inWord() : S.in === 'alias' ? inAlias() : S.in === 'wordalias' ? inWord() || inAlias() : S.in === 'meaning' ? inMeaning() : S.in === 'theme' ? inTheme() : inWord() || inAlias() || inMeaning() || inTheme())) return false;
   }
-  if (S.flag === 'region' ? !e.region.length : S.flag === 'none' ? (flagList(e).length || e.region.length) : S.flag && !e[S.flag]) return false;
+  if (S.flag === 'region' ? !e.region.length : S.flag === 'none' ? (flagList(e).length || e.region.length) : S.flag && !flagList(e).includes(S.flag)) return false;
   if (S.fam !== '' && e.fam !== +S.fam) return false;
   if (S.status && e.status !== S.status) return false;
   switch (S.show) {
@@ -95,7 +95,7 @@ export function allWordsView() {
     onclick: () => { S.dir = S.sort === k ? -S.dir : 1; S.sort = k; S.page = 0; A.render(); } }, label, h('span.sortmark', S.sort === k ? (S.dir > 0 ? ' ▲' : ' ▼') : ' ⇅')));
   const pick = (k, opts) => { const el = select(opts, S[k]); el.onchange = () => { S[k] = el.value; S.page = 0; A.render(); }; return el; };
   const familiarityOpts = [['', 'any familiarity'], ...[1, 2, 3, 4, 5].map(n => [String(n), 'familiarity ' + n]), ['0', 'unrated']];
-  const flagBadges = e => flagList(e).map(k => h('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase()))
+  const flagBadges = e => flagList(e).map(k => k === 'late' ? h('span.badge.sens', { title: 'First level (easy/medium/hard)' }, '≥' + firstLevelText(e.firstLevel)) : h('span.badge.' + k, { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase()))
     .concat(e.region.length ? [h('span.badge.region', e.region.join('/'))] : []);
   const aliasCell = e => { const as = aliasesOf.get(e.id) || []; return as.length ? h('span', { title: as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ')' : '')).join(', ') }, as.map(a => a.text + (a.aliasKind ? ' (' + a.aliasKind + ' alias)' : '')).join(', ')) : ''; };
   const themesCell = e => { const n = themeNames(P, e); return n.length ? n.slice(0, 3).join(', ') + (n.length > 3 ? ` +${n.length - 3}` : '') : h('span.hint', '(none)'); };

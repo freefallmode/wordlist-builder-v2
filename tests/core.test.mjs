@@ -24,7 +24,7 @@ const tree = `Things:
     citrus
   colors [adult]
     shades of blue [complete] -- navy, sky
-    wild [region:US,UK] [sensitive]
+    wild [region:US,UK] [from:31]
 `;
 function project() {
   const P = newProject();
@@ -58,7 +58,8 @@ test('flags belong to each theme: nothing passes down the tree (Simon, 2026-11-2
   assert.equal(eff(P, 'colors').adult, true);
   assert.equal(eff(P, 'shades_of_blue').adult, false);   // under the adult group colors, not adult itself
   assert.equal(eff(P, 'shades_of_blue').enabled, true);  // under a disabled group, still enabled
-  assert.equal(eff(P, 'wild').sensitive, true);
+  assert.deepEqual(P.ix.theme.get('wild').firstLevel, [31, 31, 31]);   // its own level field
+  assert.equal('sensitive' in eff(P, 'wild'), false);   // themes have no sensitive flag since 2026-11-27
   assert.deepEqual(eff(P, 'wild').region, ['US', 'UK']); // its own regions only, not the group's AU
   assert.equal(eff(P, 'citrus').adult, false);
 });
@@ -304,7 +305,7 @@ test('B12: deleting a theme or an entry, or unlinking, leaves no stale reference
 test('B19: the promoted alias takes the root place: links, groups, meaning flags, region, shown text; a spelling is preferred', () => {
   const P = project();
   const fr = P.themes.find(t => t.id === 'fruits');
-  const root = addEntry(P, 'color', { fam: 1, typ: { fruits: 2 }, adult: true, sensitive: true, tm: true, offensive: true, region: ['US'], show: { fruits: 'col' }, nameOkIn: ['fruits'] });
+  const root = addEntry(P, 'color', { fam: 1, typ: { fruits: 2 }, adult: true, firstLevel: [31, 31, 31], tm: true, offensive: true, region: ['US'], show: { fruits: 'col' }, nameOkIn: ['fruits'] });
   const syn = addEntry(P, 'hue', { fam: 3, aliasOf: root.id, aliasKind: 'synonym' });
   const sp = addEntry(P, 'colour', { fam: 1, aliasOf: root.id, aliasKind: 'spelling', region: ['UK'] });
   const form = addEntry(P, 'colors', { aliasOf: root.id, aliasKind: 'form' });
@@ -315,19 +316,19 @@ test('B19: the promoted alias takes the root place: links, groups, meaning flags
   assert.equal(sp.aliasOf, 0);   // the spelling, not the first alias, takes the root place
   assert.deepEqual([syn.aliasOf, syn.aliasKind, form.aliasOf, form.aliasKind], [sp.id, 'synonym', sp.id, 'form']);
   assert.deepEqual([sp.typ, sp.show, sp.use, sp.nameOkIn, sp.region], [{ fruits: 2 }, { fruits: 'col' }, { fruits: form.id }, ['fruits'], ['UK']]);
-  assert.deepEqual([sp.adult, sp.sensitive, sp.tm, sp.offensive], [true, true, true, true]);
+  assert.deepEqual([sp.adult, sp.firstLevel, sp.tm, sp.offensive], [true, [31, 31, 31], true, true]);
   assert.deepEqual(fr.groups, [[sp.id, other.id]]);
 
   // another word promoted: meaning flags and region only; the root's spellings and abbreviations become its synonyms
   const Q = project(), qf = Q.themes.find(t => t.id === 'fruits');
-  const r = addEntry(Q, 'personal computer', { typ: { fruits: 1 }, sensitive: true, tm: true, region: ['US'], show: { fruits: 'computer' }, nameOkIn: ['fruits'] });
+  const r = addEntry(Q, 'personal computer', { typ: { fruits: 1 }, firstLevel: [31, 31, 31], tm: true, region: ['US'], show: { fruits: 'computer' }, nameOkIn: ['fruits'] });
   const home = addEntry(Q, 'home computer', { aliasOf: r.id, aliasKind: 'synonym' });
   const pc = addEntry(Q, 'PC', { aliasOf: r.id, aliasKind: 'abbreviation' });
   const x = addEntry(Q, 'laptop', { typ: { fruits: 1 } });
   qf.groups = [[r.id, x.id], [home.id, 99]];   // the promoted word already in a group: the two groups become one
   reindex(Q);
   deleteEntry(Q, r); reindex(Q);
-  assert.deepEqual([home.aliasOf, home.sensitive, home.tm, home.region, home.show, home.nameOkIn], [0, true, false, ['US'], { fruits: 'computer' }, []]);
+  assert.deepEqual([home.aliasOf, home.firstLevel, home.tm, home.region, home.show, home.nameOkIn], [0, [31, 31, 31], false, ['US'], { fruits: 'computer' }, []]);
   assert.deepEqual([pc.aliasOf, pc.aliasKind], [home.id, 'synonym']);
   assert.deepEqual(qf.groups.map(g => [...g].sort((a, b) => a - b)), [[x.id, home.id, 99].sort((a, b) => a - b)]);
 });
@@ -368,7 +369,7 @@ test('loadBreaks fails on an HTTP error or an empty table; a loaded table puts b
     const { file } = buildExport(P);
     assert.deepEqual(brk(file), [5]);
     assert.equal(file.entries.breaks.length, file.entries.text.length);
-    assert.equal(file.themeFields.at(-1), 'breaks');
+    assert.deepEqual(file.themeFields.slice(-3), ['breaks', 'firstLevel', 'mustLevels']);
   } finally { globalThis.fetch = realFetch; setBreaks(new Map()); }
 });
 
@@ -386,7 +387,7 @@ test('the break table is applied to English libraries only', async () => {
     const { file } = buildExport(P);
     assert.deepEqual(brk(file), []);
     assert.equal(file.entries.breaks.length, file.entries.text.length);
-    assert.equal(file.themeFields.at(-1), 'breaks');
+    assert.deepEqual(file.themeFields.slice(-3), ['breaks', 'firstLevel', 'mustLevels']);
   } finally { globalThis.fetch = realFetch; setBreaks(new Map()); }
 });
 
@@ -921,7 +922,7 @@ test('export contract: the rule grammar; warnings for what skews play; the summa
   addEntry(P, 'Plum', { gloss: 'company', type: 'org', fam: 2, typ: { fruits: 5 } }); P.entries.find(e => e.text === 'plum').gloss = 'fruit';
   addEntry(P, 'kiwi', { gloss: 'bird', type: 'common', fam: 1, typ: { pals: 5 } });   // after an earlier common kiwi: not reported
   addEntry(P, 'level', { gloss: 'tool', type: 'phrase', fam: 1, typ: { fruits: 5 } }); // a lower-case word typed phrase
-  P.themes.push(T('few', 'few things')); for (const w of ['ant', 'bee', 'cat', 'dog']) addEntry(P, w, { fam: 1, typ: { few: 1 }, sensitive: w === 'bee', offensive: w === 'cat' || w === 'dog' });   // offensive is dropped; sensitive is held back (g25) and counts
+  P.themes.push(T('few', 'few things')); for (const w of ['ant', 'bee', 'cat', 'dog']) addEntry(P, w, { fam: 1, typ: { few: 1 }, firstLevel: w === 'bee' ? [31, 31, 31] : null, offensive: w === 'cat' || w === 'dog' });   // offensive is dropped; first level 31 (the sensitive bit) is held back (g25) and counts
   reindex(P);
   const X = buildExport(P, { adult: 'exclude', offensive: 'exclude', zipf: true, minWords: 1 }).file;
   const is = await contractOf(X), n = k => is.filter(i => i.kind === k).length;
@@ -1303,4 +1304,147 @@ test('offensive: a flagged theme leaves the default export with its words and ca
   const inc = buildExport(P, { offensive: 'include' }).file;
   assert.equal(inc.entries.text.length, 4); assert.ok(fruitsRow(inc)[3] & 256);
   assert.equal(buildExport(P, { vulgar: 'include' }).file.entries.text.length, 4);   // a preset saved before the rename
+});
+
+// ---------- level fields: firstLevel and mustLevels (Simon, 2026-11-27) ----------
+const levelProject = () => {
+  const P = newProject();
+  P.themes = parseOutline('Things:\n  fruits [pop:2] [ident:1]\n  trees [pop:2] [ident:1]\n').themes;
+  for (const w of ['apple', 'pear', 'plum', 'fig']) addEntry(P, w, { fam: 1, typ: { fruits: 1 } });
+  for (const w of ['oak', 'ash', 'elm', 'yew']) addEntry(P, w, { fam: 1, typ: { trees: 1 } });
+  reindex(P);
+  return P;
+};
+const LEVEL_KINDS = ['level-bad', 'level-below-first', 'level-unplayable', 'level-crowded'];
+const levelIssues = P => validate(P).filter(i => LEVEL_KINDS.includes(i.kind));
+
+test('levels: the outline tags [from:] and [at:] round-trip; [sensitive] reads as from 31 and is never written', () => {
+  const text = 'Things:\n  fruits [from:40] [at:e5,12;m8;h3]\n  trees [from:-/30/-]\n  nuts [from:5/10/20] [at:h40]\n';
+  const { themes, errors } = parseOutline(text);
+  assert.deepEqual(errors, []);
+  assert.deepEqual(themes[1].firstLevel, [40, 40, 40]);
+  assert.deepEqual(themes[1].mustLevels, [[5, 12], [8], [3]]);
+  assert.deepEqual(themes[2].firstLevel, [null, 30, null]);
+  assert.equal(themes[2].mustLevels, null);
+  assert.deepEqual(themes[3].mustLevels, [[], [], [40]]);
+  assert.equal(formatOutline(themes), text);
+  const old = parseOutline('a [sensitive]\nb [sensitive] [from:-/20/-]\nc [at:m12,5,5]\n').themes;
+  assert.deepEqual(old.map(t => t.firstLevel), [[31, 31, 31], [null, 20, null], null]);
+  assert.deepEqual(old[2].mustLevels, [[], [5, 12], []]);   // sorted, duplicates dropped
+  assert.ok(old.every(t => !('sensitive' in t)));
+  assert.equal(formatOutline(old), 'a [from:31]\nb [from:-/20/-]\nc [at:m5,12]\n');
+  for (const bad of ['[from:0]', '[from:1/2]', '[from:x]', '[from:-]', '[at:x5]', '[at:e0]', '[at:e5,a]', '[at:]']) assert.equal(parseOutline('t ' + bad + '\n').errors.length, 1, bad);
+});
+
+test('levels: the file leaves out empty fields, keeps set ones, and loads a theme sensitive flag as firstLevel 31', () => {
+  const P = levelProject();
+  const fr = P.ix.theme.get('fruits'), tr = P.ix.theme.get('trees');
+  fr.firstLevel = [null, null, null]; fr.mustLevels = [[], [], []];
+  tr.firstLevel = [5, null, 20]; tr.mustLevels = [[5], [], [20, 30]];
+  const text = serializeProject(P);
+  const line = (t, id) => t.split('\n').find(l => l.includes(`"id":"${id}"`));
+  assert.ok(!/firstLevel|mustLevels/.test(line(text, 'fruits')));
+  assert.ok(!/firstLevel|mustLevels/.test(line(text, 'things')));   // newTheme's nulls are not written
+  const Q = parseProject(text), q = Q.themes.find(t => t.id === 'trees');
+  assert.deepEqual([q.firstLevel, q.mustLevels], [[5, null, 20], [[5], [], [20, 30]]]);
+  assert.ok(!('firstLevel' in Q.themes.find(t => t.id === 'fruits')));
+  // A library from before 2026-11-27: a theme's sensitive: true becomes firstLevel [31, 31, 31] unless it has one; sensitive: false just goes.
+  const legacy = text.replace('"id":"fruits",', '"id":"fruits","sensitive":true,').replace('"id":"things",', '"id":"things","sensitive":false,').replace('"id":"trees",', '"id":"trees","sensitive":true,');
+  const L = parseProject(legacy), byId = id => L.themes.find(t => t.id === id);
+  assert.deepEqual(byId('fruits').firstLevel, [31, 31, 31]);
+  assert.deepEqual(byId('trees').firstLevel, [5, null, 20]);   // its own firstLevel wins
+  assert.ok(L.themes.every(t => !('sensitive' in t)));
+  const out = serializeProject(L);
+  for (const id of ['fruits', 'things', 'trees']) assert.ok(!line(out, id).includes('sensitive'), id);
+  // A script that still sets a theme's sensitive: written as firstLevel 31.
+  P.ix.theme.get('fruits').sensitive = true;
+  assert.ok(line(serializeProject(P), 'fruits').includes('"firstLevel":[31,31,31]'));
+});
+
+test('levels: each check fires, and a clean theme is quiet', () => {
+  let P = levelProject();
+  assert.deepEqual(levelIssues(P), []);
+  P.ix.theme.get('fruits').firstLevel = [5, null, 31]; P.ix.theme.get('fruits').mustLevels = [[5, 9], [], [31]];
+  assert.deepEqual(levelIssues(P), []);   // set and valid
+  const one = (mut, kind) => { const Q = levelProject(); mut(Q, Q.ix.theme.get('fruits')); reindex(Q); const got = levelIssues(Q); assert.deepEqual(got.map(i => i.kind), [kind], kind + ': ' + JSON.stringify(got)); return got[0]; };
+  one((Q, t) => { t.firstLevel = [0, null, null]; }, 'level-bad');
+  one((Q, t) => { t.firstLevel = [5, 6]; }, 'level-bad');
+  one((Q, t) => { t.firstLevel = [2.5, null, null]; }, 'level-bad');
+  one((Q, t) => { t.mustLevels = [[5, 5], [], []]; }, 'level-bad');
+  one((Q, t) => { t.mustLevels = [[9, 5], [], []]; }, 'level-bad');
+  one((Q, t) => { t.mustLevels = [[5], []]; }, 'level-bad');
+  one((Q, t) => { t.mustLevels = [['5'], [], []]; }, 'level-bad');
+  const below = one((Q, t) => { t.firstLevel = [31, 31, 31]; t.mustLevels = [[], [12, 40], []]; }, 'level-below-first');
+  assert.match(below.msg, /medium level 12, below its first medium level 31/);
+  one((Q, t) => { t.mustLevels = [[5], [], []]; t.adult = true; }, 'level-unplayable');
+  one((Q, t) => { t.mustLevels = [[5], [], []]; t.offensive = true; }, 'level-unplayable');
+  one((Q, t) => { t.mustLevels = [[5], [], []]; t.enabled = false; }, 'level-unplayable');
+  one((Q, t) => { t.mustLevels = [[5], [], []]; t.pop = 0; }, 'level-unplayable');
+  one(Q => { Q.ix.theme.get('things').mustLevels = [[5], [], []]; }, 'level-unplayable');   // a group
+  const thin = one((Q, t) => { t.mustLevels = [[5], [], []]; Q.entries.find(e => e.text === 'fig').typ = {}; }, 'level-unplayable');
+  assert.match(thin.msg, /3 usable words \(at least 4 needed\)/);
+  // level-crowded: only with settings.themesPerLevel
+  P = levelProject();
+  P.ix.theme.get('fruits').mustLevels = [[5], [], []]; P.ix.theme.get('trees').mustLevels = [[5, 6], [], []];
+  assert.deepEqual(levelIssues(P), []);   // no setting: skipped
+  P.settings.themesPerLevel = 2; assert.deepEqual(levelIssues(P), []);
+  P.settings.themesPerLevel = 1;
+  const c = levelIssues(P);
+  assert.deepEqual(c.map(i => [i.sev, i.kind]), [['warn', 'level-crowded']]);
+  assert.match(c[0].msg, /2 themes must appear in easy level 5/);
+});
+
+test('levels: the export writes firstLevel and mustLevels after the fixed theme columns; theme bit 2 marks firstLevel 31+ in every mode (transitional)', () => {
+  const P = levelProject();
+  const fr = P.ix.theme.get('fruits'), tr = P.ix.theme.get('trees');
+  fr.firstLevel = [31, 31, 40]; fr.mustLevels = [[], [35], []];
+  tr.firstLevel = [null, 31, 31];
+  P.ix.theme.get('things').firstLevel = [31, 31, 31];
+  addEntry(P, 'kiwi', { fam: 1, typ: { fruits: 1 }, firstLevel: [31, 31, 31] });
+  reindex(P);
+  const { file } = buildExport(P);
+  const tf = file.themeFields, row = id => file.themes.find(r => r[0] === id), col = (id, k) => row(id)[tf.indexOf(k)];
+  assert.deepEqual(tf.slice(-2), ['firstLevel', 'mustLevels']);
+  assert.equal(row('fruits').length, tf.length);
+  assert.deepEqual(col('fruits', 'firstLevel'), [31, 31, 40]);
+  assert.deepEqual(col('fruits', 'mustLevels'), [[], [35], []]);
+  assert.deepEqual(col('trees', 'firstLevel'), [null, 31, 31]);
+  assert.equal(col('trees', 'mustLevels'), null);
+  assert.deepEqual([col('things', 'firstLevel'), col('things', 'mustLevels')], [null, null]);   // a group row
+  assert.ok(row('fruits')[3] & 2); assert.ok(!(row('trees')[3] & 2));
+  // The sensitive filter: a link whose word or theme has firstLevel 31+ in every mode. fruits has [31, 31, 40]: all its links go; trees ([null, 31, 31]) stays.
+  const ex = buildExport(P, { sensitive: 'exclude', minWords: 1 }).file;
+  assert.ok(!ex.entries.text.includes('kiwi') && !ex.entries.text.includes('apple') && ex.entries.text.includes('oak'));
+  fr.firstLevel = [30, 31, 31];
+  const ex2 = buildExport(P, { sensitive: 'exclude' }).file;
+  assert.ok(!ex2.entries.text.includes('kiwi') && ex2.entries.text.includes('apple'));   // the word's own firstLevel
+  // The note column, when asked for, comes after them.
+  assert.deepEqual(buildExport(P, { notes: true }).file.themeFields.slice(-3), ['firstLevel', 'mustLevels', 'note']);
+});
+
+test('levels on words: a root sensitive flag loads as firstLevel 31, an alias drops it; aliases follow the root in the export; checks', () => {
+  const P = levelProject();
+  const apple = P.entries.find(e => e.text === 'apple'), pear = P.entries.find(e => e.text === 'pear');
+  const al = addEntry(P, 'apples', { fam: 1, aliasOf: apple.id, aliasKind: 'form' });
+  // legacy file: sensitive on a root, on another root that has a firstLevel, and on an alias
+  const text = serializeProject(P).replace(`{"id":${apple.id},"text":"apple",`, `{"id":${apple.id},"text":"apple","sensitive":true,`)
+    .replace(`{"id":${pear.id},"text":"pear",`, `{"id":${pear.id},"text":"pear","sensitive":true,"firstLevel":[null,5,null],`)
+    .replace(`{"id":${al.id},"text":"apples",`, `{"id":${al.id},"text":"apples","sensitive":true,`);
+  assert.ok((text.match(/"sensitive":true/g) || []).length === 3);
+  const L = parseProject(text), by = t => L.entries.find(e => e.text === t);
+  assert.deepEqual([by('apple').firstLevel, by('pear').firstLevel, by('apples').firstLevel, by('plum').firstLevel], [[31, 31, 31], [null, 5, null], null, null]);
+  assert.ok(L.entries.every(e => !('sensitive' in e)));
+  const out = serializeProject(L);
+  assert.ok(!out.includes('sensitive') && !/"text":"plum"[^\n]*firstLevel/.test(out) && /"text":"apple"[^\n]*"firstLevel":\[31,31,31\]/.test(out));
+  // export: the entry column, the alias carries its root's value, the transitional bit 2
+  reindex(L);
+  const { file } = buildExport(L);
+  const i = t => file.entries.text.indexOf(t), E = file.entries;
+  assert.equal(Object.keys(E).at(-1), 'firstLevel');
+  assert.deepEqual([E.firstLevel[i('apple')], E.firstLevel[i('apples')], E.firstLevel[i('pear')], E.firstLevel[i('plum')]], [[31, 31, 31], [31, 31, 31], [null, 5, null], null]);
+  assert.ok(E.flags[i('apple')] & 2); assert.ok(E.flags[i('apples')] & 2); assert.ok(!(E.flags[i('pear')] & 2));
+  // checks: a clean set is quiet; a bad value or a firstLevel on an alias is level-bad
+  assert.deepEqual(levelIssues(L), []);
+  by('apples').firstLevel = [31, 31, 31]; by('plum').firstLevel = [0, null, null];
+  assert.deepEqual(levelIssues(L).map(x => [x.kind, x.entryId]).sort(), [['level-bad', by('apples').id], ['level-bad', by('plum').id]].sort());
 });

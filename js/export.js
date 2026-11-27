@@ -1,11 +1,12 @@
 // Library export: themes and words filtered by flags, written as a compact columnar JSON file.
 //
 // Filters are applied per link (entry in theme), because a flag can come from the entry or from the theme it sits in.
-// For adult, sensitive, trademark and offensive a link is flagged when the entry OR the theme has the flag (theme flags are the theme's own, not inherited, since v516).
+// For adult, trademark and offensive a link is flagged when the entry OR the theme has the flag (theme flags are the theme's own, not inherited, since v516).
+// The `sensitive` option (the flag became firstLevel on 2026-11-27): a link is flagged when its word (its root) or its theme has firstLevel 31 or later in every mode.
 // Offensive words and themes are left out unless the options include them (DESIGN-entries.md 3.8: the toggle is off by default).
 // Each filter is 'include' (ignore the flag) or 'exclude' (drop flagged links); 'only' still works in the code but the screen no longer offers it.
 // Entries longer than `maxEntryWords` words are dropped (0 = no limit). Entries left with no link are dropped; themes left with fewer than `minWords` distinct words are dropped; the report says how many.
-import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, shownFor, POS, TYPES, REGIONS } from './model.js';
+import { eff, difficultyBand, typicality, blendRatings, themeDifficulty, themeProfile, dialectOf, themeLocked, linkIds, shownFor, hasFirstLevel, hasMustLevels, lateLevels, entryFirstLevel, POS, TYPES, REGIONS } from './model.js';
 import { zipf } from './freq.js';
 import { isNameWord } from './validate.js';
 import { breakPoints } from './breaks.js';
@@ -64,7 +65,7 @@ export function buildExport(P, opt0 = {}) {
     for (const tid of linkIds(P, e)) {
       if (!okTheme.get(tid)) continue;
       const f = eff(P, tid);
-      if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, e.sensitive || f.sensitive) || !pass(o.tm, e.tm || f.tm) || !pass(o.offensive, e.offensive || f.offensive)) continue;
+      if (!pass(o.adult, e.adult || f.adult) || !pass(o.sensitive, lateLevels(entryFirstLevel(P, e)) || lateLevels(ix.theme.get(tid).firstLevel)) || !pass(o.tm, e.tm || f.tm) || !pass(o.offensive, e.offensive || f.offensive)) continue;
       // A theme may show the entry under a shorter text (show) or as one of its forms (use); that text and its part of speech travel with the link.
       const sh = shownFor(P, e, tid);
       const r = Math.max(difficultyBand(P, e, tid), sh && sh.fam || 0);
@@ -177,10 +178,13 @@ export function buildExport(P, opt0 = {}) {
   if (o.zipf && P.lang === "en") cols.zipf = [];
   if (o.gloss) cols.gloss = [];
   if (o.notes) cols.note = [];
+  cols.firstLevel = [];
   for (const id of ids) {
     const e = ix.entry.get(id), links = keep.get(id);
     let flags = 0;
-    if (e.adult) flags |= ENTRY_BITS.adult; if (e.sensitive) flags |= ENTRY_BITS.sensitive; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.offensive) flags |= ENTRY_BITS.offensive;
+    const fl = entryFirstLevel(P, e);   // an alias follows its root
+    // Entry bit 2 (sensitive) is transitional, until the game reads firstLevel; remove then: set when the word's (root's) firstLevel is 31 or later in all three modes.
+    if (e.adult) flags |= ENTRY_BITS.adult; if (lateLevels(fl)) flags |= ENTRY_BITS.sensitive; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.offensive) flags |= ENTRY_BITS.offensive;
     if (e.aliasOf && e.aliasKind === 'spelling') flags |= ENTRY_BITS.spelling;
     if (e.aliasOf && e.aliasKind === 'form') flags |= ENTRY_BITS.form;
     if (e.aliasOf && e.aliasKind === 'regional') flags |= ENTRY_BITS.regional;
@@ -212,19 +216,25 @@ export function buildExport(P, opt0 = {}) {
     if (cols.zipf) { const z = zipf(e.text); cols.zipf.push(z == null ? 0 : Math.round(z * 10)); }
     if (o.gloss) cols.gloss.push(e.gloss);
     if (o.notes) cols.note.push(e.note);
+    cols.firstLevel.push(hasFirstLevel({ firstLevel: fl }) ? fl.map(v => v ?? null) : null);   // new 2026-11-27, the last entry column: [easy, medium, hard] or null; aliases carry their root's
   }
   report.entriesOut = ids.length;
   report.notes.push(`${shown.length} texts are shown in place of an entry's own text in some themes; ${clash.clashId.size} groups of words stand for one another.`);
 
   const themeRows = themes.map(t => {
     const f = eff(P, t.id);
-    const bits = (f.adult ? THEME_BITS.adult : 0) | (f.sensitive ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0) | (f.foreign ? THEME_BITS.foreign : 0) | (f.offensive ? THEME_BITS.offensive : 0)
+    // Theme bit 2 (sensitive) is transitional, until the game reads firstLevel; remove then: set when the theme's firstLevel is SENSITIVE_START or later in all three modes.
+    const late = lateLevels(t.firstLevel);
+    const bits = (f.adult ? THEME_BITS.adult : 0) | (late ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0) | (f.foreign ? THEME_BITS.foreign : 0) | (f.offensive ? THEME_BITS.offensive : 0)
       | (t.complete ? THEME_BITS.complete : 0)
       | (themeLocked(P, t) ? THEME_BITS.locked : 0)
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group
     const pr = used.has(t.id) ? themeProfile(P, t.id) : null;   // worked out from every usable word of the theme (not only the ones that pass the filters)
     const [rlo, rhi] = rMask(f.region);
     const row = [t.id, t.name, t.parent ? tIndex.get(t.parent) : -1, bits, rlo, t.pop || 0, pr ? pr.counts.slice(1) : [0, 0, 0, 0, 0], pr ? [pr.lo, pr.hi] : [0, 0], rhi, Math.max(0, THEME_KINDS.indexOf(t.tkind || 'category')), t.rule || '', t.ident || 0, themeDifficulty(t), bp(t.name)];
+    // Level fields (2026-11-27; the game does not read them yet): firstLevel [easy, medium, hard] (null = anywhere) and mustLevels [[easy], [medium], [hard]], each null when the theme has none; null on group rows.
+    const play = !t.group && used.has(t.id);
+    row.push(play && hasFirstLevel(t) ? t.firstLevel.map(v => v ?? null) : null, play && hasMustLevels(t) ? t.mustLevels.map(l => [...l]) : null);
     if (o.notes) row.push(t.note);
     return row;
   });
@@ -233,7 +243,7 @@ export function buildExport(P, opt0 = {}) {
     v: 4, lang: P.lang, lib: { version: P.lib.version, modified: P.lib.modified }, generated: /^\d{4}-\d\d-\d\d \d\d:\d\d$/.test(P.lib.modified || '') ? P.lib.modified.replace(' ', 'T') + ':00' : new Date().toISOString(),   // the library's last save time (E5): the same library always gives the same file
     dialect: dialectOf(P), options: o, regions, regionBits: REGION_BITS, kindNames: THEME_KINDS, posNames: POS, typeNames: TYPES, themeBits: THEME_BITS, entryBits: ENTRY_BITS,
     // identifiability 1 (obvious) to 5 (obscure), 0 unrated; popularity 1 (most popular) to 5, 0 unrated; counts = roots at difficulty 1..5; range = difficulty of the 4th easiest and 4th hardest root
-    themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty', 'breaks'].concat(o.notes ? ['note'] : []),
+    themeFields: ['id', 'name', 'parent', 'flags', 'regions', 'popularity', 'counts', 'range', 'regionsHi', 'kind', 'rule', 'identifiability', 'difficulty', 'breaks', 'firstLevel', 'mustLevels'].concat(o.notes ? ['note'] : []),
     themes: themeRows,
     // entries are columns: entry i is text[i], pos[i] ... ; its themes (roots only: an alias row has linkCount 0) are the next linkCount[i] groups of 4 numbers (themeIndex, difficulty, typicality, shown) in `links`; shown is 0 or index+1 into `shown` ([text, pos]), the text and part of speech the theme displays.
     // clash[i] is 0, or an id shared by words that stand for one another in a theme (synonym groups) or are kin (one word family across themes): never put two with the same id in one level.

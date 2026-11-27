@@ -6,13 +6,18 @@
 //
 // Tags in square brackets after the name:
 //   [complete]                      a finite, fixed set (months, planets)
-//   [adult] [sensitive] [trademark] [lang] [foreign]   theme flags; [lang] = depends on English (spelling, sound, slang); [foreign] = the words are mostly not English
+//   [adult] [trademark] [lang] [foreign]   theme flags; [lang] = depends on English (spelling, sound, slang); [foreign] = the words are mostly not English
+//   [sensitive]                     old tag (themes have no sensitive flag since 2026-11-27): read as [from:31] unless a [from:] tag is also given; never written
 //   [off]                           disabled
 //   [pop:3]                         theme popularity 1 (most popular) to 5 (unrated when absent); [d:n] is an old difficulty tag and is ignored
 //   [ident:3]                       identifiability 1 (obvious) to 5 (obscure), unrated when absent
 //   [region:US,UK]                 only widely known in those regions (audience)
+//   [from:40] [from:40/30/-]        first level the theme may appear at: one number for all three game modes, or easy/medium/hard ('-' = anywhere)
+//   [at:e5,12;m8;h3]                levels the game must show the theme in, per mode (e easy, m medium, h hard)
 //   [id:dairy_and_eggs]             the theme's id, written only when it is not the slug of the name (ids stay when a theme is renamed)
 
+
+import { SENSITIVE_START, isLevel, firstLevelText, mustLevelsText, MODE_LETTERS } from './model.js';
 
 export function slug(s) {
   // "___ball" (words before ball) and "fire___" (words after fire) must not collide with the plain themes "ball" and "fire".
@@ -21,8 +26,8 @@ export function slug(s) {
 }
 
 export function newTheme(name, parent = null) {
-  return { id: slug(name), name, parent, group: false, enabled: true, pop: 0, ident: 0, complete: false, adult: false, sensitive: false,
-    tm: false, lang: false, foreign: false, region: [], note: '' };
+  return { id: slug(name), name, parent, group: false, enabled: true, pop: 0, ident: 0, complete: false, adult: false,
+    tm: false, lang: false, foreign: false, region: [], note: '', firstLevel: null, mustLevels: null };   // the level fields: null = none (the file leaves them out)
 }
 
 // Returns { themes, errors }. Themes are in outline order (parents before children).
@@ -47,12 +52,14 @@ export function parseOutline(text) {
     stack.length = Math.min(depth, stack.length);
     const t = newTheme(body, stack.length ? stack[stack.length - 1].id : null);
     t.group = group; t.note = note;
+    let sens = false;
+    const bad = g => errors.push(`line ${i + 1}: bad tag [${g}]`);
     for (const g of tags) {
       if (g === 'place' || g === 'property') continue; // retired tags, ignored
       if (g === 'wordplay') { t.lang = true; continue; } // retired tag: wordplay is language-specific
       else if (g === 'complete') t.complete = true;
       else if (g === 'adult') t.adult = true;
-      else if (g === 'sensitive') t.sensitive = true;
+      else if (g === 'sensitive') sens = true;   // old theme flag: firstLevel 31 (below)
       else if (g === 'trademark') t.tm = true;
       else if (g === 'lang') t.lang = true;
       else if (g === 'foreign') t.foreign = true;
@@ -63,8 +70,24 @@ export function parseOutline(text) {
       else if (g.startsWith('region:')) t.region = g.slice(7).split(',').map(s => s.trim()).filter(Boolean);
       else if (g.startsWith('geo:')) continue; // retired tag, ignored
       else if (g.startsWith('id:') && g.slice(3).trim()) t.id = g.slice(3).trim();
+      else if (g.startsWith('from:')) {
+        const p = g.slice(5).split('/').map(s => s.trim()), v = p.map(s => s === '-' ? null : /^\d+$/.test(s) ? +s : NaN);
+        if ((p.length !== 1 && p.length !== 3) || v.some(x => x !== null && !isLevel(x)) || (p.length === 1 && v[0] === null)) bad(g);
+        else t.firstLevel = p.length === 1 ? [v[0], v[0], v[0]] : v;
+      }
+      else if (g.startsWith('at:')) {
+        const ml = [[], [], []]; let ok = true;
+        for (const part of g.slice(3).split(';').map(s => s.trim()).filter(Boolean)) {
+          const k = MODE_LETTERS.indexOf(part[0]), ns = part.slice(1).split(',').map(s => s.trim());
+          if (k < 0 || ns.some(s => !/^\d+$/.test(s) || !isLevel(+s))) { ok = false; break; }
+          ml[k].push(...ns.map(Number));
+        }
+        if (!ok || !ml.some(l => l.length)) bad(g);
+        else t.mustLevels = ml.map(l => [...new Set(l)].sort((a, b) => a - b));
+      }
       else errors.push(`line ${i + 1}: unknown tag [${g}]`);
     }
+    if (sens && !t.firstLevel) t.firstLevel = [SENSITIVE_START, SENSITIVE_START, SENSITIVE_START];
     // After the tags, so an [id:] tag is the id children link to.
     let id = t.id, n = 2;
     while (ids.has(id)) id = t.id + '_' + n++;
@@ -84,7 +107,8 @@ export function formatOutline(themes) {
     if (t.region.length) tags.push('region:' + t.region.join(','));
     if (t.pop) tags.push('pop:' + t.pop);
     if (t.ident) tags.push('ident:' + t.ident);
-    for (const [k, v] of [['complete', t.complete], ['adult', t.adult], ['sensitive', t.sensitive], ['trademark', t.tm], ['lang', t.lang], ['foreign', t.foreign], ['off', !t.enabled]]) if (v) tags.push(k);
+    for (const [k, v] of [['complete', t.complete], ['adult', t.adult], ['trademark', t.tm], ['lang', t.lang], ['foreign', t.foreign], ['off', !t.enabled]]) if (v) tags.push(k);
+    { const f = firstLevelText(t.firstLevel), m = mustLevelsText(t.mustLevels); if (f) tags.push('from:' + f); if (m) tags.push('at:' + m); }
     if (t.id !== slug(t.name)) tags.push('id:' + t.id);
     return '  '.repeat(depth(t)) + t.name + (t.group ? ':' : '') + tags.map(g => ' [' + g + ']').join('') + (t.note ? ' -- ' + t.note : '');
   }).join('\n') + '\n';
@@ -92,7 +116,7 @@ export function formatOutline(themes) {
 
 // Import theme outline: themes are matched by id; a new id is added. On an existing theme only the fields the outline carries are written,
 // and only where they differ (a missing field counts as its default), so tkind, rule, locked, nameOk, groups and absent keys are left alone.
-// A line sets every field it carries: one with no tags resets enabled, pop, ident, the flags and region; no " -- " clears the note.
+// A line sets every field it carries: one with no tags resets enabled, pop, ident, the flags, region, firstLevel and mustLevels; no " -- " clears the note.
 // The caller re-sorts (sortDepthFirst) and reindexes. Returns { added, changed, errors }; changed counts themes that really changed.
 const THEME_DEFAULTS = newTheme('');
 export function mergeOutline(P, text) {

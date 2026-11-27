@@ -1,11 +1,11 @@
 // The "All themes" screen: every theme and group in the library in one sortable, filterable table.
 import { h, select, plural, debounce } from './dom.js';
 import { A } from './state.js';
-import { eff, pathOf, themeDifficulty } from './model.js';
+import { eff, pathOf, themeDifficulty, hasFirstLevel, hasMustLevels, firstLevelText } from './model.js';
 
 const PAGE = 200;
 const S = { q: '', show: '', sort: 'name', dir: 1, page: 0 };
-const SHOW = [['', 'all themes'], ['play', 'playable themes'], ['group', 'groups'], ['adult', 'adult'], ['sensitive', 'sensitive'], ['tm', 'trademark'], ['lang', 'language-specific'], ['foreign', 'foreign language'], ['region', 'region-specific'],
+const SHOW = [['', 'all themes'], ['play', 'playable themes'], ['group', 'groups'], ['adult', 'adult'], ['late', 'with a first level'], ['must', 'with must levels'], ['tm', 'trademark'], ['lang', 'language-specific'], ['foreign', 'foreign language'], ['region', 'region-specific'],
   ['complete', 'complete sets'], ['off', 'disabled'], ['empty', 'with no words'], ['thin', 'with too few words']];
 
 // A rating 1-5 in the colours of the theme table's rating cells (.diffcell.rN); a half (difficulty 2.5) takes the harder colour.
@@ -17,9 +17,9 @@ export function allThemesView(c, open) {
   const own = t => (t.group ? 0 : c.own.get(t.id) || 0);
   const kids = t => (P.ix.kids.get(t.id) || []).length;
   const parentName = t => (t.parent && P.ix.theme.get(t.parent)?.name) || '';
-  const flagsOf = t => { const ef = eff(P, t.id); return [ef.adult && 'A', ef.offensive && 'O', ef.sensitive && 'S', ef.tm && 'T', ef.lang && 'L', ef.foreign && 'F', t.complete && '✓'].filter(Boolean); };
+  const flagsOf = t => { const ef = eff(P, t.id); return [ef.adult && 'A', ef.offensive && 'O', hasFirstLevel(t) && '≥' + firstLevelText(t.firstLevel), hasMustLevels(t) && '!', ef.tm && 'T', ef.lang && 'L', ef.foreign && 'F', t.complete && '✓'].filter(Boolean); };
   const keep = {
-    play: t => !t.group, group: t => t.group, adult: t => eff(P, t.id).adult, offensive: t => eff(P, t.id).offensive, sensitive: t => eff(P, t.id).sensitive, tm: t => eff(P, t.id).tm, lang: t => eff(P, t.id).lang, foreign: t => eff(P, t.id).foreign,
+    play: t => !t.group, group: t => t.group, adult: t => eff(P, t.id).adult, offensive: t => eff(P, t.id).offensive, late: hasFirstLevel, must: hasMustLevels, tm: t => eff(P, t.id).tm, lang: t => eff(P, t.id).lang, foreign: t => eff(P, t.id).foreign,
     region: t => eff(P, t.id).region.length > 0, complete: t => t.complete, off: t => !eff(P, t.id).enabled, empty: t => !t.group && own(t) === 0, thin: t => !t.group && own(t) < min,
   }[S.show];
   const q = S.q.trim().toLowerCase();

@@ -1,0 +1,12 @@
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v518 (Simon, 2026-11-27): the sensitive flag is replaced by a first level, and themes can require levels. Net effect against v517:
+- New fields (export format stays 4; the new columns come at the end, so existing column positions do not move, except the optional theme `note` column, now after them):
+  - theme column `firstLevel`: [easy, medium, hard], the first level the theme may appear at in each of your three difficulty modes, null = anywhere; null on the whole when unset and on group rows.
+  - theme column `mustLevels`: [[easy levels], [medium levels], [hard levels]]: levels in which the game must show the theme; null when unset. None is set yet.
+  - entry column `firstLevel` (last column): the same per-mode first level for a word; aliases carry their root's value.
+  Please tell us the names you use for the three modes (we call them easy, medium, hard) and how many themes a level holds, so the library can check that required levels fit.
+- The sensitive flag is gone from themes and words. Every theme and word that was sensitive now has firstLevel [31, 31, 31]: 159 themes, 873 words.
+- Transitional, so nothing changes in play until you read firstLevel: theme bit 2 and entry bit 2 (sensitive) are still written when firstLevel is 31 or more in all three modes. Once you read firstLevel, tell us and we will stop writing bit 2.
+- Aliases now follow their root's first level: Obama, Carter, Wilson and Whitsun gain bit 2 (their roots are held to 31); dog collar loses it (its root clerical collar is not held).
+Theme rows 3265 -> 3265, entry rows 61407 -> 61407: no rows added, removed or moved; links unchanged.
+Line breaks: none. New characters: none.

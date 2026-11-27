@@ -1,6 +1,6 @@
 // Checks over the whole project. Returns issues { sev: 'error' | 'warn' | 'info', kind, msg, themeId?, entryId? }.
 // Errors break the model (a duplicate, a broken alias); warnings are probably mistakes; info is work still to do.
-import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, parseRule, displayKey, isAncestor, plainText, themeDifficulty, themeProfile, ALIAS_KINDS, POS, TYPES } from './model.js';
+import { eff, linkIds, themeStats, sameText, themeLocked, ruleTheme, parseRule, displayKey, isAncestor, plainText, themeDifficulty, themeProfile, ALIAS_KINDS, POS, TYPES, MODES, levelProblems, hasMustLevels, hasFirstLevel } from './model.js';
 import { zipf, freqLoaded, fold } from './freq.js';
 import { caseLint, initialism } from './caselint.js';
 import { familyPairs, clashGroups, CLASH_SOFT, CLASH_MAX } from './family.js';
@@ -65,6 +65,48 @@ function offensiveChecks(P, add) {
   for (const t of P.themes) {
     const w = offensiveWord(t.name);
     if (w && !eff(P, t.id).offensive) add('warn', 'offensive-theme', `The theme name "${t.name}" contains the offensive word "${w}": flag the theme offensive (its words leave the default export with it) or rename it.`, { themeId: t.id });
+  }
+}
+
+// Level fields (model.js; Simon, 2026-11-27): firstLevel, the first level a theme may appear at per game mode, and mustLevels, the levels the game must show it in.
+// level-bad (error): not 3 values of whole numbers 1 or more (null = anywhere), or a must list unsorted or with duplicates; on an entry, a firstLevel on an alias (it follows its root).
+// level-below-first (error): a must level below that mode's firstLevel (a theme that had the sensitive flag has firstLevel 31, so this also keeps it out of early levels).
+// level-unplayable (error): must levels on a theme the game cannot use: a group, adult, offensive, disabled, no popularity, or fewer usable words than the minimum (as the thin check counts).
+// level-crowded (warn): more themes must appear in one mode and level than settings.themesPerLevel; skipped when that setting is not set.
+function levelChecks(P, add, minWords) {
+  const need = new Map();   // "mode|level" -> theme names
+  for (const t of P.themes) {
+    if (t.firstLevel == null && t.mustLevels == null) continue;
+    const bad = levelProblems(t);
+    if (bad.length) { add('error', 'level-bad', `"${t.name}" has bad level fields: ${bad.join('; ')}.`, { themeId: t.id }); continue; }
+    if (!hasMustLevels(t)) continue;
+    t.mustLevels.forEach((l, i) => {
+      const fl = t.firstLevel?.[i], low = fl == null ? [] : l.filter(v => v < fl);
+      if (low.length) add('error', 'level-below-first', `"${t.name}" must appear in ${MODES[i]} level${low.length === 1 ? '' : 's'} ${low.join(', ')}, below its first ${MODES[i]} level ${fl}.`, { themeId: t.id });
+      for (const v of l) { const k = i + '|' + v; if (!need.has(k)) need.set(k, []); need.get(k).push(t.name); }
+    });
+    const ef = eff(P, t.id), why = [];
+    if (t.group) why.push('it is a group');
+    if (ef.adult) why.push('it is adult');
+    if (ef.offensive) why.push('it is offensive');
+    if (!ef.enabled) why.push('it is disabled');
+    if (!t.group) {
+      if (!isRating(t.pop)) why.push('it has no popularity');
+      const n = ef.offensive ? themeStats(P, t.id).roots : cleanRoots(P, t.id);
+      if (n < minWords) why.push(`it has ${n} usable word${n === 1 ? '' : 's'} (at least ${minWords} needed)`);
+    }
+    if (why.length) add('error', 'level-unplayable', `"${t.name}" has must levels, but the game cannot play it: ${why.join(', ')}.`, { themeId: t.id });
+  }
+  for (const e of P.entries) {   // words: firstLevel only, on roots
+    if (e.firstLevel == null) continue;
+    const bad = levelProblems({ firstLevel: e.firstLevel });
+    if (e.aliasOf && hasFirstLevel(e)) bad.push('an alias has no firstLevel of its own (it follows its root)');
+    if (bad.length) add('error', 'level-bad', `"${e.text}${e.gloss ? ' (' + e.gloss + ')' : ''}" has a bad firstLevel: ${bad.join('; ')}.`, { entryId: e.id });
+  }
+  const per = P.settings?.themesPerLevel;
+  if (typeof per === 'number' && per > 0) for (const [k, names] of need) if (names.length > per) {
+    const [i, v] = k.split('|');
+    add('warn', 'level-crowded', `${names.length} themes must appear in ${MODES[+i]} level ${v}, more than the ${per} themes a level holds (settings.themesPerLevel): ${names.join(', ')}.`);
   }
 }
 
@@ -180,7 +222,7 @@ export function validate(P) {
       else if (r.id === e.id) add('error', 'alias-self', `"${label(e)}" is an alias of itself.`, loc);
       else {
         if (r.aliasOf) add('error', 'alias-chain', `"${label(e)}" is an alias of "${label(r)}", which is itself an alias. Point it at the root.`, loc);
-        { const diff = (e.aliasKind === 'spelling' || e.aliasKind === 'form') ? ['adult', 'offensive', 'sensitive', 'tm'].filter(f => !!e[f] !== !!r[f]) : [];   // the same word takes the root's flags
+        { const diff = (e.aliasKind === 'spelling' || e.aliasKind === 'form') ? ['adult', 'offensive', 'tm'].filter(f => !!e[f] !== !!r[f]) : [];   // the same word takes the root's flags
           if (diff.length) add('warn', 'alias-flags', `"${label(e)}" is a ${e.aliasKind} alias of "${label(r)}" (the same word) but differs in ${diff.map(f => `${f} (${e[f] ? 'on' : 'off'}, root ${r[f] ? 'on' : 'off'})`).join(', ')}: give it the root's flags.`, loc); }
         if (r.text.toLowerCase() === text.toLowerCase()) add('warn', 'alias-same', `"${label(e)}" has the same text as its root.`, loc);
         if (e.aliasKind && !ALIAS_KINDS.includes(e.aliasKind)) add('warn', 'alias-kind', `Alias "${label(e)}" has an unknown kind (${e.aliasKind}).`, loc);
@@ -227,6 +269,7 @@ export function validate(P) {
   }
   // ----- capitals of shown words (js/caselint.js): one warning per link -----
   for (const i of caseLint(P)) add('warn', i.kind.startsWith('case-') ? i.kind : 'case-' + i.kind, i.msg, { themeId: i.themeId, entryId: i.entryId });
+  levelChecks(P, add, minWords);
   return out;
 }
 

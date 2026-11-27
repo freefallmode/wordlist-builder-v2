@@ -1,6 +1,6 @@
 // Saving and loading. Two places: an autosave in the browser (IndexedDB) and a project file you keep in git.
 // The project file is JSON with one theme or entry per line, so diffs and merges stay readable.
-import { newProject, entryDefaults, nowStamp } from './model.js';
+import { newProject, entryDefaults, nowStamp, normThemeLevels, normEntryLevels } from './model.js';
 
 const DB = 'wordlist-builder-v2';
 
@@ -48,6 +48,7 @@ const isDefault = (k, v) => {
   return JSON.stringify(v) === DEF_JSON[k];
 };
 function packEntry(e) {
+  if ('sensitive' in e || (Array.isArray(e.firstLevel) && !e.firstLevel.some(v => v != null))) e = normEntryLevels({ ...e });   // a script that still sets sensitive, or an all-blank firstLevel (model.js)
   const o = {};
   for (const k in e) {
     if (!Object.hasOwn(e, k) || k === 'id' || k === 'text') continue;
@@ -57,7 +58,8 @@ function packEntry(e) {
   }
   return JSON.stringify({ id: e.id, text: e.text, ...o });
 }
-const packTheme = t => JSON.stringify(t);
+// A theme is written as it is, except: no empty firstLevel or mustLevels, and a theme `sensitive` set by a script is written as firstLevel 31 (model.js normThemeLevels).
+const packTheme = t => JSON.stringify(normThemeLevels({ ...t }));
 
 export function serializeProject(P) {
   const head = { schema: P.schema, lang: P.lang, lib: P.lib, nextId: P.nextId, settings: P.settings };
@@ -69,8 +71,8 @@ export function parseProject(text) {
   if (!j.project || !j.themes) throw Error('Not a wordlist-builder project file.');
   const P = Object.assign(newProject(), j.project);
   P.settings = Object.assign(newProject().settings, j.project.settings);
-  P.themes = j.themes.slice();
-  P.entries = j.entries.map(e => Object.assign(entryDefaults(), e));
+  P.themes = j.themes.map(t => normThemeLevels({ ...t }));   // a theme's legacy sensitive: true becomes firstLevel [31, 31, 31] (unless it has a firstLevel) and the field goes; empty level fields go (model.js)
+  P.entries = j.entries.map(e => normEntryLevels(Object.assign(entryDefaults(), e)));   // a root's legacy sensitive: true becomes firstLevel [31, 31, 31] (unless it has one); sensitive goes from every entry, aliases included (model.js)
   for (const e of P.entries) if ('vulgar' in e) { e.offensive ||= !!e.vulgar; delete e.vulgar; }   // the flag was called vulgar until 2026-11-22 (DESIGN-entries.md 3.8): an older file still loads, and saving writes the new name
   let n = Math.max(P.nextId || 1, 1);
   for (const e of P.entries) if (e.id + 1 > n) n = e.id + 1;   // a loop, not Math.max(...entries): spreading overflows the stack above ~120,000 entries

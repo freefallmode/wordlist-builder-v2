@@ -2,7 +2,7 @@
 import { h, sig, $, select, dialog, toast, debounce, plural } from './dom.js';
 import { A } from './state.js';
 import { parseOutline, formatOutline, mergeOutline } from './outline.js';
-import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeCounts, touchedThemes, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, sortByKey, FAMILIARITY_HELP, themeDifficulty } from './model.js';
+import { flagKey, linkIds, placeTheme, deleteTheme, newProject, reindex, updateIndex, eff, themeStats, themeCounts, touchedThemes, themeProfile, dialectMember, themeLocked, difficultyBand, typicality, pathOf, descendants, sortDepthFirst, sortByKey, FAMILIARITY_HELP, themeDifficulty, hasFirstLevel, hasMustLevels, firstLevelText, mustLevelsText } from './model.js';
 import { loadLocal, saveLocal, serializeProject, parseProject, download, pickFile, stampSave } from './store.js';
 import { themeNameChars } from './validate.js';
 import { loadFreq } from './freq.js';
@@ -54,7 +54,8 @@ function badges(t) {
   if (t.complete) add('✓', 'complete', 'Complete set');
   if (ef.adult) add('A', 'adult', 'Adult');
   if (ef.offensive) add('O', 'offensive', 'Offensive');
-  if (ef.sensitive) add('S', 'sens', 'Sensitive');
+  { const fl = firstLevelText(t.firstLevel); if (fl) add('≥' + fl, 'sens', 'First level (easy/medium/hard): ' + fl); }
+  { const ml = mustLevelsText(t.mustLevels); if (ml) add('!', 'sens', 'Must appear in levels: ' + ml); }
   if (ef.tm) add('T', 'tm', 'Trademark');
   if (ef.lang) add('L', 'lang', 'Language-specific');
   if (ef.foreign) add('F', 'lang', 'Foreign language');
@@ -143,7 +144,8 @@ const THEME_FILTERS = [
   ['complete', 'Complete sets', (P, t) => t.complete],
   ['adult', 'Adult themes', (P, t, ef) => ef.adult],
   ['offensive', 'Offensive themes', (P, t, ef) => ef.offensive],
-  ['sensitive', 'Sensitive themes', (P, t, ef) => ef.sensitive],
+  ['late', 'Themes with a first level', (P, t) => hasFirstLevel(t)],
+  ['must', 'Themes with must levels', (P, t) => hasMustLevels(t)],
   ['tm', 'Trademark / copyright themes', (P, t, ef) => ef.tm],
   ['lang', 'Language-specific themes', (P, t, ef) => ef.lang],
   ['foreign', 'Foreign-language themes', (P, t, ef) => ef.foreign],
@@ -324,7 +326,7 @@ function entryTable(t) {
   if (sub && total > SUB_CAP) rows = rows.slice(0, SUB_CAP);
   const where = e => linkIds(P, e).filter(id => subIds.has(id)).map(id => `${P.ix.theme.get(id)?.name} ${difficultyBand(P, e, id) || ''}`.trim()).join(', ');
   const th = (label, k) => h('th.sortable', { class: A.sort === k ? 'sorted' : '', title: A.sort === k ? 'Click to reverse the order' : 'Click to sort by ' + label, onclick: () => { A.sortDesc = A.sort === k ? !A.sortDesc : false; A.sort = k; render(); } }, label, h('span.sortmark', A.sort === k ? (A.sortDesc ? ' ▼' : ' ▲') : ' ⇅'));
-  const flagsOf = (H, e) => ['adult', 'sensitive', 'tm', 'offensive'].filter(k => e[k]).map(k => H('span.badge.' + (k === 'sensitive' ? 'sens' : k), { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [H('span.badge.region', e.region.join('/'))] : []);
+  const flagsOf = (H, e) => ['adult', 'late', 'tm', 'offensive'].filter(k => k === 'late' ? hasFirstLevel(e) : e[k]).map(k => k === 'late' ? H('span.badge.sens', { title: 'First level (easy/medium/hard)' }, '≥' + firstLevelText(e.firstLevel)) : H('span.badge.' + k, { title: k }, k === 'tm' ? 'T' : k[0].toUpperCase())).concat(e.region.length ? [H('span.badge.region', e.region.join('/'))] : []);
   const readAs = new Map();   // the meaning label is left out when the theme already gives the meaning; it shows for words that read the same as another word of the table, and in the sub-theme view (which needs no count)
   if (!sub) for (const x of roots) { const k = label(x).toLowerCase(); readAs.set(k, (readAs.get(k) || 0) + 1); }
   const needLabel = e => sub || readAs.get(label(e).toLowerCase()) > 1;
