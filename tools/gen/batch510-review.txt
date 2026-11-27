@@ -1,0 +1,40 @@
+Library batch v510 (for Simon's review): People & Society, religion branch
+1. Islam words
+  out of islam_words: jihad 34446: linked with violence, kept out of the game (now in no theme: not exported)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  islam_words: "Islam words" pop 3 ident 2: 53 words, easy/middle/hard 8/15/30, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Islam words" pop 3 ident 2: 52 words, easy/middle/hard 8/14/30, theme difficulty 2, 4th-easiest band 2, gap 0.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 1: jihad 34446
+Entries added 0: none
+Entries deleted 0: none
+library changes 2; entries changed 1; status set to rev 1; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 375 -> 376
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3261 -> 3261; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 1: islam_words (index 1434 -> 1434: counts [0,8,15,16,15] -> [0,8,14,16,15])
+Entry rows 61393 -> 61392; first row whose entry changed: 31517 (caliphate 34447, was jihad 34446); rows that moved: 29875; added none; removed 34446 (row 31517)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101027 -> 101026; rows whose link count changed: 0
+Link-index shifts: from row 31517 (caliphate 34447) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 1, new 0, rating changed 0
+  gone (other than the deleted themes): islam_words: "jihad" (34446)
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 27 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 0 new links existed earlier and was removed (all 252 library versions and 245 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - the religion themes play from level 31 and stay as they are
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 1: jihad 34446
+  2. Asked for by the user: jihad out of Islam words (now in no theme, kept in the library).
+  3. Seen in passing: the Four Horsemen has only 3 game words (war is adult), so it never plays.

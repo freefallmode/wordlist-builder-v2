@@ -1,0 +1,77 @@
+Library batch v500 (for Simon's review): History & Myth, historical periods branch
+1. lawmen of the West
+  linked: Texas Ranger 55203 in lawmen_of_the_west (typicality 2): well known here; it was not linked
+  linked: Virgil Earp 55192 in lawmen_of_the_west (typicality 4): well known here; it was not linked
+  linked: Morgan Earp 55193 in lawmen_of_the_west (typicality 4): well known here; it was not linked
+  new entry: deputy 69010 noun, common, familiarity 1: a common word that was not in the library
+  linked: deputy 69010 in lawmen_of_the_west (typicality 2): a common word that was not in the library
+2. bad guys of the West
+  linked: desperado 27591 in bad_guys_of_the_west (typicality 2): well known here; it was not linked
+  linked: Frank James 55185 in bad_guys_of_the_west (typicality 3): well known here; it was not linked
+  linked: Dalton Gang 55200 in bad_guys_of_the_west (typicality 3): well known here; it was not linked
+  linked: Wild Bunch 55199 [outlaw gang] in bad_guys_of_the_west (typicality 3): well known here; it was not linked
+  linked: Cole Younger 55186 in bad_guys_of_the_west (typicality 4): well known here; it was not linked
+  linked: John Wesley Hardin 55187 in bad_guys_of_the_west (typicality 4): well known here; it was not linked
+  new entry: train robber 69011 noun, common, familiarity 2: a common word that was not in the library
+  linked: train robber 69011 in bad_guys_of_the_west (typicality 2): a common word that was not in the library
+  new entry: horse thief 69012 noun, common, familiarity 2: a common word that was not in the library
+  linked: horse thief 69012 in bad_guys_of_the_west (typicality 2): a common word that was not in the library
+3. people of the frontier
+  linked: cowboy 12534 [cattle herder] in people_of_the_frontier (typicality 1): well known here; it was not linked
+  linked: pioneer 6748 in people_of_the_frontier (typicality 1): well known here; it was not linked
+  linked: homesteader 32167 in people_of_the_frontier (typicality 2): well known here; it was not linked
+  linked: rancher 33099 in people_of_the_frontier (typicality 2): well known here; it was not linked
+  linked: prospector 23023 in people_of_the_frontier (typicality 2): well known here; it was not linked
+  new entry: settler 69013 noun, common, familiarity 2: a common word that was not in the library
+  linked: settler 69013 in people_of_the_frontier (typicality 1): a common word that was not in the library
+  new entry: cowgirl 69014 noun, common, familiarity 1: a common word that was not in the library
+  linked: cowgirl 69014 in people_of_the_frontier (typicality 2): a common word that was not in the library
+  new entry: trapper 69015 noun, common, familiarity 3: a common word that was not in the library
+  linked: trapper 69015 in people_of_the_frontier (typicality 2): a common word that was not in the library
+groups
+  group in cowboy_gear: spurs 9569 leaves spurs = boots (dissolved): spurs and boots are two different things, not one answer
+kin
+  kin: trapper 69015 <-> trap 45171 [hunting]: one word family
+  kin: trapper 69015 <-> trapping 48576: one word family
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  bad_guys_of_the_west: "bad guys of the West" pop 3 ident 3: 11 words, easy/middle/hard 3/5/3, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "bad guys of the West" pop 3 ident 3: 19 words, easy/middle/hard 5/6/8, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  cowboy_gear: "cowboy gear" pop 2 ident 1: 41 words, easy/middle/hard 9/14/18, theme difficulty 1, 4th-easiest band 2, gap 1.0 -> "cowboy gear" pop 2 ident 1: 41 words, easy/middle/hard 9/14/18, theme difficulty 1, 4th-easiest band 2, gap 1.0
+  lawmen_of_the_west: "lawmen of the West" pop 3 ident 3: 12 words, easy/middle/hard 1/4/7, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "lawmen of the West" pop 3 ident 3: 16 words, easy/middle/hard 3/4/9, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  people_of_the_frontier: "people of the frontier" pop 3 ident 3: 11 words, easy/middle/hard 2/4/5, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "people of the frontier" pop 3 ident 3: 19 words, easy/middle/hard 7/7/5, theme difficulty 3, 4th-easiest band 2, gap -1.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 6: deputy 69010, train robber 69011, horse thief 69012, settler 69013, cowgirl 69014, trapper 69015
+Entries deleted 0: none
+library changes 43; entries changed 23; status set to rev 14; themes deleted 0; entries merged 0
+Checks: changed kinds: info:family-kin 466 -> 469, info:rating-vs-zipf 1691 -> 1692
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3254 -> 3254; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 3: lawmen_of_the_west (index 2421 -> 2421: counts [0,1,4,3,4] -> [0,3,4,3,6]); bad_guys_of_the_west (index 2422 -> 2422: counts [0,3,5,1,2] -> [0,5,6,4,4], range [3,3] -> [2,5]); people_of_the_frontier (index 2423 -> 2423: counts [0,2,4,5,0] -> [1,6,7,5,0], range [3,4] -> [2,4])
+Entry rows 61393 -> 61399; first row whose entry changed: 61393 (deputy 69010, was undefined); rows that moved: 0; added deputy 69010 (row 61393), train robber 69011 (row 61394), horse thief 69012 (row 61395), settler 69013 (row 61396), cowgirl 69014 (row 61397), trapper 69015 (row 61398); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100952 -> 100972; rows whose link count changed: 14
+Link-index shifts: from row 6541 (trailblazer 6749) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 20, rating changed 0
+  gone (other than the deleted themes): none
+  new: people_of_the_frontier: "pioneer" (6748), people_of_the_frontier: "cowboy" (12534), people_of_the_frontier: "prospector" (23023), bad_guys_of_the_west: "desperado" (27591), people_of_the_frontier: "homesteader" (32167), people_of_the_frontier: "rancher" (33099), bad_guys_of_the_west: "Frank James" (55185), bad_guys_of_the_west: "Cole Younger" (55186), bad_guys_of_the_west: "John Wesley Hardin" (55187), lawmen_of_the_west: "Virgil Earp" (55192), lawmen_of_the_west: "Morgan Earp" (55193), bad_guys_of_the_west: "Wild Bunch" (55199), bad_guys_of_the_west: "Dalton Gang" (55200), lawmen_of_the_west: "Texas Ranger" (55203), lawmen_of_the_west: "deputy" (69010), bad_guys_of_the_west: "train robber" (69011), bad_guys_of_the_west: "horse thief" (69012), people_of_the_frontier: "settler" (69013), people_of_the_frontier: "cowgirl" (69014), people_of_the_frontier: "trapper" (69015)
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 23 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 20 new links existed earlier and was removed (all 242 library versions and 225 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - historic documents: Emancipation Proclamation (over 20 letters); Declaration [independence] shows only "Declaration" (Declaration of Independence could be its text)
+  - settler has no kin: the library's settle (bench, dog command) and settlement (legal) are other senses
+  - empires: Rome [ancient city] stands for the Roman Empire (there is no Roman Empire entry)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. The three small Wild West people themes get their first answers: lawmen of the West 12 to 16 words (deputy new), bad guys of the West 11 to 19 (train robber and horse thief new), people of the frontier 11 to 19 (settler, cowgirl and trapper new; trapper kin of trap [hunting] and trapping).
+  2. cowboy gear: the group spurs = boots is dissolved: two different things, not one answer (probably left from the spurs and boots stub deleted in v444).

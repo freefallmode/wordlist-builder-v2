@@ -1,0 +1,51 @@
+Library batch v503 (for Simon's review): People & Society, family and friends branch
+1. family and friends
+  out of family_and_friends: anniversary 3905: an event, not a person (it stays in life events) (stays in holidays_and_celebrations, life_events, life_milestones)
+  out of family_and_friends: birthday 3904 [anniversary]: an event, not a person (it stays in life events) (stays in holidays_and_celebrations, life_events, life_milestones)
+  out of family_and_friends: wedding 3903: an event, not a person (it stays in life events) (stays in holidays_and_celebrations, life_events, life_milestones)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  family_and_friends: "family and friends" pop 2 ident 3: 65 words, easy/middle/hard 17/21/27, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "family and friends" pop 2 ident 3: 62 words, easy/middle/hard 17/18/27, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 6; entries changed 3; status set to rev 3; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3259 -> 3259; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 1: family_and_friends (index 1304 -> 1304: counts [7,10,21,22,6] -> [7,10,18,22,6])
+Entry rows 61400 -> 61400; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101023 -> 101020; rows whose link count changed: 3
+Link-index shifts: from row 3826 (birthday 3904) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 3, new 0, rating changed 0
+  gone (other than the deleted themes): family_and_friends: "wedding" (3903), family_and_friends: "birthday" (3904), family_and_friends: "anniversary" (3905)
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 18 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 0 new links existed earlier and was removed (all 245 library versions and 231 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - family and friends: sleepover, playdate, family tree and family reunion stay (things friends and families do or have)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. anniversary, birthday and wedding leave family and friends: events, not people (they stay in life events and holidays and celebrations).
+  2. Seen in passing: barbecue [grilled meat] in kinds of party is the meat, not the party; punter [gambler] in words for a person has the gambler gloss.
+
+=== Notice to _WS_ for v503 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v503 (People & Society, family and friends branch): 0 new themes, 0 new links, 3 links out, 0 new entries.
+Theme rows 3259 -> 3259; gone none; new none; theme indexes shift: none
+Entry rows 61400 -> 61400.
+Link-index shifts: from row 3826 (birthday 3904) on, link positions move
+Line breaks: none.
+New characters: none.

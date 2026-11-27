@@ -1,0 +1,42 @@
+Library batch v509 (for Simon's review): People & Society, money branch
+1. things you do with money
+  out of things_you_do_with_money: bribe 34167: a crime, kept out of family words (now in no theme: not exported)
+  out of things_you_do_with_money: embezzle 34172: a crime, kept out of family words (now in no theme: not exported)
+  out of things_you_do_with_money: launder 34170 [money]: a crime (money laundering), kept out of family words (now in no theme: not exported)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  things_you_do_with_money: "things you do with money" pop 2 ident 3: 37 words, easy/middle/hard 17/8/12, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "things you do with money" pop 2 ident 3: 34 words, easy/middle/hard 17/7/10, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 3: bribe 34167, embezzle 34172, launder 34170
+Entries added 0: none
+Entries deleted 0: none
+library changes 6; entries changed 3; status set to rev 3; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 372 -> 375
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3261 -> 3261; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 1: things_you_do_with_money (index 1419 -> 1419: counts [6,11,8,10,2] -> [6,11,7,8,2])
+Entry rows 61396 -> 61393; first row whose entry changed: 31258 (hoard 34168, was bribe 34167); rows that moved: 30135; added none; removed 34167 (row 31258), 34170 (row 31261), 34172 (row 31262)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101030 -> 101027; rows whose link count changed: 0
+Link-index shifts: from row 31258 (hoard 34168) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 3, new 0, rating changed 0
+  gone (other than the deleted themes): things_you_do_with_money: "bribe" (34167), things_you_do_with_money: "launder" (34170), things_you_do_with_money: "embezzle" (34172)
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 17 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 0 new links existed earlier and was removed (all 251 library versions and 243 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - things you do with money: gamble and bet stay; bazaar keeps hookah, shisha and water pipe, shopkeepers keeps tobacconist and bookmaker (offered to the user, kept)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 3: bribe 34167, embezzle 34172, launder 34170
+  2. Asked for by the user: bribe, embezzle and launder [money] out of things you do with money (crimes). All three are now in no theme (kept in the library).

@@ -1,0 +1,58 @@
+Library batch v506 (for Simon's review): People & Society, school branch
+1. famous universities (new)
+  new theme: famous_universities "famous universities" under school (after university_words), pop 3, ident 2: a set a rival game has
+  linked: Oxford 56867 [English university city] in famous_universities (typicality 1): a well-known member of the new theme
+  linked: Cambridge 56868 in famous_universities (typicality 1): a well-known member of the new theme
+  new entry: Harvard 69017 noun, proper, familiarity 1: a common word that was not in the library
+  linked: Harvard 69017 in famous_universities (typicality 1): a common word that was not in the library
+  new entry: Yale 69018 noun, proper, familiarity 2: a common word that was not in the library
+  linked: Yale 69018 in famous_universities (typicality 2): a common word that was not in the library
+  new entry: MIT 69019 noun, proper, familiarity 2: a common word that was not in the library
+  linked: MIT 69019 in famous_universities (typicality 2): a common word that was not in the library
+  new entry: Stanford 69020 noun, proper, familiarity 2: a common word that was not in the library
+  linked: Stanford 69020 in famous_universities (typicality 2): a common word that was not in the library
+  new entry: Princeton 69021 noun, proper, familiarity 2: a common word that was not in the library
+  linked: Princeton 69021 in famous_universities (typicality 2): a common word that was not in the library
+  new entry: Sorbonne 69022 noun, proper, familiarity 3: a common word that was not in the library
+  linked: Sorbonne 69022 in famous_universities (typicality 3): a common word that was not in the library
+  new entry: Berkeley 69023 noun, proper, familiarity 3: a common word that was not in the library
+  linked: Berkeley 69023 in famous_universities (typicality 3): a common word that was not in the library
+  new entry: Caltech 69024 noun, proper, familiarity 3: a common word that was not in the library
+  linked: Caltech 69024 in famous_universities (typicality 3): a common word that was not in the library
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  famous_universities: new -> "famous universities" pop 3 ident 2: 10 words, easy/middle/hard 7/3/0, theme difficulty 2, 4th-easiest band 2, gap 0.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 8: Harvard 69017, Yale 69018, MIT 69019, Stanford 69020, Princeton 69021, Sorbonne 69022, Berkeley 69023, Caltech 69024
+Entries deleted 0: none
+library changes 21; entries changed 10; status set to rev 2; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3260 -> 3261; gone none; new famous_universities; theme indexes shift: from index 1467 ("famous_universities", was "school_types") to the last index 3260
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61393 -> 61401; first row whose entry changed: 61393 (Harvard 69017, was undefined); rows that moved: 0; added Harvard 69017 (row 61393), Yale 69018 (row 61394), MIT 69019 (row 61395), Stanford 69020 (row 61396), Princeton 69021 (row 61397), Sorbonne 69022 (row 61398), Berkeley 69023 (row 61399), Caltech 69024 (row 61400); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101033 -> 101043; rows whose link count changed: 2
+Link-index shifts: from row 52141 (Cambridge 56868) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 10, rating changed 0
+  gone (other than the deleted themes): none
+  new: famous_universities: "Oxford" (56867), famous_universities: "Cambridge" (56868), famous_universities: "Harvard" (69017), famous_universities: "Yale" (69018), famous_universities: "MIT" (69019), famous_universities: "Stanford" (69020), famous_universities: "Princeton" (69021), famous_universities: "Sorbonne" (69022), famous_universities: "Berkeley" (69023), famous_universities: "Caltech" (69024)
+  rating: none
+new issues: none
+
+How the branch was reviewed (People & Society, 2026-11-26): all 15 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 10 new links existed earlier and was removed (all 248 library versions and 237 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - famous universities: Columbia (the entries are a space shuttle, a city and a river), Eton (a school, not a university), Oxford University and Cambridge University as new entries (they would hold the theme name, and showing them as Oxford and Cambridge would duplicate the city entries)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. famous universities is a new theme (10 words; a rival game has it). Harvard, Yale, MIT, Stanford, Princeton, Sorbonne, Berkeley and Caltech are new; Oxford and Cambridge are the city entries (Oxford's gloss is English university city): a university sense of their own would need a sense-twin decision.
+  2. Line breaks: berke-ley, prince-ton, sor-bonne, uni-ver-si-ties.

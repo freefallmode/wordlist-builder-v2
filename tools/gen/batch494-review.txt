@@ -1,0 +1,95 @@
+Library batch v494 (for Simon's review): History & Myth, ancient civilizations branch
+1. ancient Egypt
+  linked: scribe 6687 in ancient_egypt (typicality 3): well known here; it was not linked
+  linked: chariot 20383 in ancient_egypt (typicality 3): well known here; it was not linked
+2. ancient Greece
+  linked: Olympic Games 6651 in ancient_greece (typicality 1): well known here; it was not linked
+  linked: column 6549 [building] in ancient_greece (typicality 3): well known here; it was not linked
+  new entry: philosopher 69004 noun, common, familiarity 2: a common word that was not in the library
+  linked: philosopher 69004 in ancient_greece (typicality 2): a common word that was not in the library
+3. ancient Rome
+  linked: Latin 7524 [language] in ancient_rome (typicality 2): well known here; it was not linked
+  linked: Roman numeral 41493 in ancient_rome (typicality 2): well known here; it was not linked
+  linked: bathhouse 16565 in ancient_rome (typicality 2): well known here; it was not linked
+  linked: mosaic 5882 in ancient_rome (typicality 3): well known here; it was not linked
+  linked: villa 53996 [Roman] in ancient_rome (typicality 3): well known here; it was not linked
+4. Aztecs and Maya
+  linked: pyramid 6619 [monument] in aztecs_and_maya (typicality 2): well known here; it was not linked
+  linked: jaguar 219 [animal] in aztecs_and_maya (typicality 3): well known here; it was not linked
+  linked: chocolate 605 [sweet] in aztecs_and_maya (typicality 3): well known here; it was not linked
+  group in aztecs_and_maya: pyramid 6619 = step pyramid 20414: the same answer, or a word and its more specific form
+5. ancient China
+  linked: porcelain 21117 [ceramic] in ancient_china (typicality 2): well known here; it was not linked
+  linked: calligraphy 5867 in ancient_china (typicality 2): well known here; it was not linked
+  linked: compass 2398 [navigation] in ancient_china (typicality 3): well known here; it was not linked
+  linked: kite 5927 [toy] in ancient_china (typicality 3): well known here; it was not linked
+  linked: jade 31662 [gem] in ancient_china (typicality 3): well known here; it was not linked
+6. ancient India
+  linked: elephant 979 [animal] in ancient_india (typicality 3): well known here; it was not linked
+  linked: yoga 15665 in ancient_india (typicality 3): well known here; it was not linked
+7. Mesopotamia
+  linked: wheel 7387 [part] in mesopotamia (typicality 3): well known here; it was not linked
+8. Vikings
+  linked: shield 20684 [armor] in vikings (typicality 2): well known here; it was not linked
+9. Celts
+  out of celts: Stonehenge 2322: built thousands of years before the Celts came to Britain (stays in landmarks, archaeology, stone_age, bronze_age, ancient_sites_of_europe, midsummer)
+  out of celts: Newgrange 20679: a tomb about 3,000 years older than the Celts (stays in tombs_and_burials, ancient_sites_of_europe)
+10. ruins and monuments
+  linked: Stonehenge 2322 in famous_ruins_and_monuments (typicality 1): well known here; it was not linked
+  linked: Machu Picchu 2333 in famous_ruins_and_monuments (typicality 2): well known here; it was not linked
+  linked: Great Wall of China 2316 in famous_ruins_and_monuments (typicality 2): well known here; it was not linked
+  linked: Pompeii 6874 [ancient Roman city] in famous_ruins_and_monuments (typicality 2): well known here; it was not linked
+  linked: Petra 2374 in famous_ruins_and_monuments (typicality 3): well known here; it was not linked
+  linked: Chichen Itza 2368 in famous_ruins_and_monuments (typicality 3): well known here; it was not linked
+  linked: moai 2384 [Easter Island] in famous_ruins_and_monuments (typicality 3): well known here; it was not linked
+kin
+  kin: philosopher 69004 <-> philosophy 34749: one word family
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  ancient_china: "ancient China" pop 3 ident 3: 34 words, easy/middle/hard 8/9/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "ancient China" pop 3 ident 3: 39 words, easy/middle/hard 10/12/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  ancient_egypt: "ancient Egypt" pop 3 ident 2: 33 words, easy/middle/hard 9/14/10, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "ancient Egypt" pop 3 ident 2: 35 words, easy/middle/hard 9/16/10, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  ancient_greece: "ancient Greece" pop 3 ident 2: 32 words, easy/middle/hard 11/8/13, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "ancient Greece" pop 3 ident 2: 35 words, easy/middle/hard 13/9/13, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  ancient_india: "ancient India" pop 4 ident 3: 28 words, easy/middle/hard 2/4/22, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "ancient India" pop 4 ident 3: 30 words, easy/middle/hard 2/6/22, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  ancient_rome: "ancient Rome" pop 2 ident 2: 36 words, easy/middle/hard 14/11/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "ancient Rome" pop 2 ident 2: 41 words, easy/middle/hard 17/13/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  aztecs_and_maya: "Aztecs and Maya" pop 3 ident 3: 29 words, easy/middle/hard 2/9/18, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "Aztecs and Maya" pop 3 ident 3: 32 words, easy/middle/hard 3/11/18, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  celts: "Celts" pop 3 ident 3: 33 words, easy/middle/hard 6/6/21, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "Celts" pop 3 ident 3: 31 words, easy/middle/hard 6/5/20, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  famous_ruins_and_monuments: "ruins and monuments" pop 3 ident 2: 11 words, easy/middle/hard 5/5/1, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "ruins and monuments" pop 3 ident 2: 18 words, easy/middle/hard 9/7/2, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  mesopotamia: "Mesopotamia" pop 3 ident 2: 31 words, easy/middle/hard 1/10/20, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "Mesopotamia" pop 3 ident 2: 32 words, easy/middle/hard 1/11/20, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  vikings: "Vikings" pop 2 ident 1: 33 words, easy/middle/hard 6/12/15, theme difficulty 1, 4th-easiest band 2, gap 1.0 -> "Vikings" pop 2 ident 1: 34 words, easy/middle/hard 7/12/15, theme difficulty 1, 4th-easiest band 2, gap 1.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 1: philosopher 69004
+Entries deleted 0: none
+library changes 52; entries changed 31; status set to rev 18; themes deleted 0; entries merged 0
+Checks: changed kinds: info:overlap 4819 -> 4820
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3253 -> 3253; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 10: ancient_egypt (index 2235 -> 2235: counts [3,7,15,8,2] -> [3,7,17,8,2]); ancient_greece (index 2239 -> 2239: counts [0,11,8,12,3] -> [1,12,9,12,3]); ancient_rome (index 2244 -> 2244: counts [5,10,11,10,2] -> [5,13,13,10,2]); aztecs_and_maya (index 2246 -> 2246: counts [0,2,9,10,9] -> [0,3,11,10,9]); ancient_china (index 2249 -> 2249: counts [2,6,9,15,2] -> [2,8,12,15,2]); ancient_india (index 2250 -> 2250: counts [0,2,4,9,13] -> [0,2,6,9,13]); mesopotamia (index 2251 -> 2251: counts [0,1,10,14,6] -> [0,1,11,14,6]); vikings (index 2254 -> 2254: counts [1,5,13,11,5] -> [1,6,13,11,5]); celts (index 2258 -> 2258: counts [0,6,6,15,9] -> [0,6,5,15,8]); famous_ruins_and_monuments (index 2259 -> 2259: counts [1,4,5,1,0] -> [2,7,7,2,0])
+Entry rows 61400 -> 61401; first row whose entry changed: 61400 (philosopher 69004, was undefined); rows that moved: 0; added philosopher 69004 (row 61400); removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100896 -> 100923; rows whose link count changed: 28
+Link-index shifts: from row 213 (cougar 220) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 2, new 29, rating changed 0
+  gone (other than the deleted themes): celts: "Stonehenge" (2322), celts: "Newgrange" (20679)
+  new: aztecs_and_maya: "jaguar" (219), aztecs_and_maya: "chocolate" (605), ancient_india: "elephant" (979), famous_ruins_and_monuments: "Great Wall of China" (2316), famous_ruins_and_monuments: "Stonehenge" (2322), famous_ruins_and_monuments: "Machu Picchu" (2333), famous_ruins_and_monuments: "Chichen Itza" (2368), famous_ruins_and_monuments: "Petra" (2374), famous_ruins_and_monuments: "moai" (2384), ancient_china: "compass" (2398), ancient_china: "calligraphy" (5867), ancient_rome: "mosaic" (5882), ancient_china: "kite" (5927), ancient_greece: "column" (6549), aztecs_and_maya: "pyramid" (6619), ancient_greece: "Olympic Games" (6651), ancient_egypt: "scribe" (6687), famous_ruins_and_monuments: "Pompeii" (6874), mesopotamia: "wheel" (7387), ancient_rome: "Latin" (7524), ancient_india: "yoga" (15665), ancient_rome: "bathhouse" (16565), ancient_egypt: "chariot" (20383), vikings: "shield" (20684), ancient_china: "porcelain" (21117), ancient_china: "jade" (31662), ancient_rome: "Roman numeral" (41493), ancient_rome: "villa" (53996), ancient_greece: "philosopher" (69004)
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 27 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 29 new links existed earlier and was removed (all 236 library versions and 213 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - ancient Egypt: tomb; ancient Greece: temple; ancient India: Hinduism, Buddhism; ruins and monuments: Angkor Wat (all flagged sensitive)
+  - Vikings: battle axe (only in medieval weapons, which is adult: it would bring a weapon into the family export)
+  - the other themes of the branch stay as they are (many are complete sets, such as the pharaohs and the Ottoman sultans)
+
+For Simon:
+  1. Stonehenge and Newgrange leave Celts: both were built thousands of years before the Celts. Stonehenge goes into ruins and monuments, which grows from 11 to 18 words.
+  2. pyramid joins Aztecs and Maya grouped with step pyramid. jaguar stays beside jaguar warrior (one new overlap note): an animal and a warrior.
+  3. philosopher is new, linked as one word family with philosophy.
+  4. Seen in passing: trackside (a theme name since v493) has no line break yet.

@@ -1,0 +1,95 @@
+Library batch v497 (for Simon's review): History & Myth, wars and battles branch
+1. wars and battles
+  out of wars_and_battles: war crime 21367: a grim word for a word game (now in no theme: not exported)
+  out of wars_and_battles: casualty 21364: a grim word for a word game (now in no theme: not exported)
+2. armor
+  out of armor: tabard 20836: a cloth tunic worn over armor, not armor (stays in medieval_clothing, work_clothes)
+3. siege weapons
+  out of siege_weapons: testudo 21380: a shield formation of Roman soldiers, not a weapon (stays in roman_army)
+  out of siege_weapons: boiling oil 21376: poured on attackers, a grim word for a word game (now in no theme: not exported)
+4. soldiers of history
+  out of soldiers_of_history: gladiator 6621: fought in arenas for show, not a soldier (stays in ancient_civilizations, dress_up_costumes, ancient_rome, roman_life)
+5. famous generals
+  out of famous_generals: Rommel 21410: Hitler's general (now in no theme: not exported)
+6. Cold War
+  out of cold_war: gulag 21458: Soviet prison camps, a grim word for a word game (now in no theme: not exported)
+7. World War II terms
+  out of world_war_ii_terms: Holocaust 21462: a genocide, not a word for a game (now in no theme: not exported)
+  out of world_war_ii_terms: Gestapo 21473: the Nazi secret police (now in no theme: not exported)
+  out of world_war_ii_terms: kamikaze 21480: suicide attacks (stays in words_from_japanese)
+  out of world_war_ii_terms: Fat Man 21490 [atomic bomb]: the atomic bomb dropped on Nagasaki (now in no theme: not exported)
+  out of world_war_ii_terms: lebensraum 21486: a Nazi idea of conquest (now in no theme: not exported)
+  out of world_war_ii_terms: Anschluss 21481: the Nazi takeover of Austria (now in no theme: not exported)
+8. peace words
+  out of peace_words: hippie 12547: linked with peace, not a word for it (stays in dress_up_costumes, fashion_styles)
+9. conflicts in history
+  new entry: World War I 69005 noun, proper, familiarity 1: a common word that was not in the library
+  linked: World War I 69005 in conflicts_in_history (typicality 1): a common word that was not in the library
+  new entry: World War II 69006 noun, proper, familiarity 1: a common word that was not in the library
+  linked: World War II 69006 in conflicts_in_history (typicality 1): a common word that was not in the library
+  new entry: Crusades 69007 noun, proper, familiarity 2: a common word that was not in the library
+  linked: Crusades 69007 in conflicts_in_history (typicality 2): a common word that was not in the library
+  new entry: Spanish Civil War 69008 noun, proper, familiarity 3: a common word that was not in the library
+  linked: Spanish Civil War 69008 in conflicts_in_history (typicality 3): a common word that was not in the library
+  new entry: Thirty Years' War 69009 noun, proper, familiarity 4: a common word that was not in the library
+  linked: Thirty Years' War 69009 in conflicts_in_history (typicality 4): a common word that was not in the library
+flags
+  World War I 69005: adult false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  World War I 69005: sensitive false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  World War II 69006: adult false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  World War II 69006: sensitive false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  Crusades 69007: adult false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  Crusades 69007: sensitive false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  Spanish Civil War 69008: adult false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  Spanish Civil War 69008: sensitive false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  Thirty Years' War 69009: adult false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+  Thirty Years' War 69009: sensitive false -> true: a war, like the other wars in conflicts in history (LIBRARY-RULES 4)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  armor: "armor" pop 2 ident 2: 30 words, easy/middle/hard 5/5/20, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "armor" pop 2 ident 2: 29 words, easy/middle/hard 5/5/19, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  cold_war: "Cold War" pop 3 ident 2: 34 words, easy/middle/hard 10/5/19, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "Cold War" pop 3 ident 2: 33 words, easy/middle/hard 10/5/18, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  conflicts_in_history: "conflicts in history" pop 3 ident 3: 0 words, easy/middle/hard 0/0/0, theme difficulty 3, 4th-easiest band -, gap - -> "conflicts in history" pop 3 ident 3: 0 words, easy/middle/hard 0/0/0, theme difficulty 3, 4th-easiest band -, gap -
+  famous_generals: "famous generals" pop 2 ident 2: 31 words, easy/middle/hard 8/9/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "famous generals" pop 2 ident 2: 30 words, easy/middle/hard 8/8/14, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  peace_words: "peace words" pop 2 ident 2: 35 words, easy/middle/hard 8/17/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "peace words" pop 2 ident 2: 34 words, easy/middle/hard 8/16/10, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  siege_weapons: "siege weapons" pop 3 ident 2: 20 words, easy/middle/hard 4/5/11, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "siege weapons" pop 3 ident 2: 18 words, easy/middle/hard 3/5/10, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  soldiers_of_history: "soldiers of history" pop 2 ident 3: 30 words, easy/middle/hard 7/10/13, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "soldiers of history" pop 2 ident 3: 29 words, easy/middle/hard 7/9/13, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  wars_and_battles: "wars and battles" pop 2 ident 2: 46 words, easy/middle/hard 6/19/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "wars and battles" pop 2 ident 2: 44 words, easy/middle/hard 6/17/21, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  world_war_ii_terms: "World War II terms" pop 2 ident 2: 31 words, easy/middle/hard 2/14/15, theme difficulty 1.5, 4th-easiest band 3, gap 1.5 -> "World War II terms" pop 2 ident 2: 25 words, easy/middle/hard 1/12/12, theme difficulty 1.5, 4th-easiest band 3, gap 1.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 10: war crime 21367, casualty 21364, boiling oil 21376, Rommel 21410, gulag 21458, Holocaust 21462, Gestapo 21473, Fat Man 21490, lebensraum 21486, Anschluss 21481
+Entries added 5: World War I 69005, World War II 69006, Crusades 69007, Spanish Civil War 69008, Thirty Years' War 69009
+Entries deleted 0: none
+library changes 48; entries changed 20; status set to rev 13; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 347 -> 357
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3254 -> 3254; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 0: none
+Entry rows 61401 -> 61401; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100950 -> 100950; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 17 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 5 new links existed earlier and was removed (all 239 library versions and 219 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - conflicts in history: Cold War (sensitive; it is in historical periods)
+  - Robert E. Lee and Stonewall Jackson (famous generals), Luftwaffe and Wehrmacht (World War II terms) stay: shown to the user as borderline, kept
+  - the battle lists stay as they are
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 10: war crime 21367, casualty 21364, boiling oil 21376, Rommel 21410, gulag 21458, Holocaust 21462, Gestapo 21473, Fat Man 21490, lebensraum 21486, Anschluss 21481
+  2. A cleanup asked for by the user: grim, Nazi and atrocity words out of the war themes (war crime, casualty, boiling oil, Rommel, gulag, Holocaust, Gestapo, kamikaze, Fat Man, lebensraum, Anschluss). Ten of them are now in no theme (kept in the library); the themes are adult, so the family export does not change.
+  3. Misfits out: tabard (armor, a tunic), testudo (siege weapons, a formation), gladiator (soldiers of history), hippie (peace words, an association).
+  4. conflicts in history gets World War I, World War II, Crusades, Spanish Civil War and Thirty Years' War: all new, flagged adult and sensitive like the other wars there. civil war stays beside Spanish Civil War (one new overlap note).
+  5. medieval weapons and historic weapons share 75% of their words (two branches): merge or trim?

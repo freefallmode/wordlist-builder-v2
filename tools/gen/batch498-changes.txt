@@ -1,0 +1,62 @@
+Library batch v498 (for Simon's review): History & Myth, famous people branch
+1. famous leaders
+  out of famous_leaders: Hitler 21529: a dictator responsible for the Holocaust (now in no theme: not exported)
+  out of famous_leaders: Stalin 21528: a dictator responsible for millions of deaths (now in no theme: not exported)
+  out of famous_leaders: Lenin 21527: a dictator who began the Soviet terror (now in no theme: not exported)
+  out of famous_leaders: Mao Zedong 21525: a dictator responsible for millions of deaths (now in no theme: not exported)
+  out of famous_leaders: Mussolini 21530: a fascist dictator (now in no theme: not exported)
+  out of famous_leaders: Fidel Castro 21531: a dictator who jailed and executed opponents (now in no theme: not exported)
+  linked: George Washington 21404 in famous_leaders (typicality 1): well known here; it was not linked
+  linked: Alexander the Great 20368 in famous_leaders (typicality 2): well known here; it was not linked
+  linked: Elizabeth II 54564 in famous_leaders (typicality 2): well known here; it was not linked
+2. emperors
+  out of emperors: Bokassa 21560: a brutal dictator who crowned himself emperor (now in no theme: not exported)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  emperors: "emperors" pop 3 ident 3: 34 words, easy/middle/hard 3/11/20, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "emperors" pop 3 ident 3: 33 words, easy/middle/hard 3/11/19, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  famous_leaders: "famous leaders" pop 2 ident 3: 35 words, easy/middle/hard 12/10/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "famous leaders" pop 2 ident 3: 33 words, easy/middle/hard 14/6/13, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 7: Hitler 21529, Stalin 21528, Lenin 21527, Mao Zedong 21525, Mussolini 21530, Fidel Castro 21531, Bokassa 21560
+Entries added 0: none
+Entries deleted 0: none
+library changes 18; entries changed 10; status set to rev 8; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 357 -> 364
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3254 -> 3254; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 2: famous_leaders (index 2305 -> 2305: counts [9,4,10,9,6] -> [9,5,6,8,6]); emperors (index 2315 -> 2315: counts [1,2,11,14,6] -> [1,2,11,14,5])
+Entry rows 61401 -> 61393; first row whose entry changed: 19977 (Charles de Gaulle 21532, was Mao Zedong 21525); rows that moved: 41416; added none; removed 21525 (row 19977), 21526 (row 19978), 21527 (row 19979), 21528 (row 19980), 21530 (row 19981), 21531 (row 19982), 21560 (row 20011), 68324 (row 60743)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100950 -> 100947; rows whose link count changed: 3
+Link-index shifts: from row 19109 (Delphi 20369) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 6, new 3, rating changed 0
+  gone (other than the deleted themes): famous_leaders: "Mao Zedong" (21525), famous_leaders: "Lenin" (21527), famous_leaders: "Stalin" (21528), famous_leaders: "Mussolini" (21530), famous_leaders: "Fidel Castro" (21531), emperors: "Bokassa" (21560)
+  new: famous_leaders: "Alexander the Great" (20368), famous_leaders: "George Washington" (21404), famous_leaders: "Elizabeth II" (54564)
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 23 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 3 new links existed earlier and was removed (all 240 library versions and 221 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - famous leaders: Charlemagne (flagged sensitive)
+  - Genghis Khan (famous leaders), Hirohito (emperors), Henry Kissinger, Yasser Arafat and Fritz Haber (Nobel laureates), Margaret Sanger (reformers), Huey Newton (civil rights figures) stay: shown to the user as borderline, kept
+  - the other themes of the branch stay as they are (many are complete sets, such as the US presidents)
+
+For Simon:
+  1. Left in no theme (kept in the library, not exported) 7: Hitler 21529, Stalin 21528, Lenin 21527, Mao Zedong 21525, Mussolini 21530, Fidel Castro 21531, Bokassa 21560
+  2. Asked for by the user: dictators out of famous leaders (Hitler, Stalin, Lenin, Mao Zedong, Mussolini, Fidel Castro) and Bokassa out of emperors. All seven are now in no theme (kept in the library); Hitler was already flagged offensive.
+  3. famous leaders gets George Washington, Alexander the Great and Elizabeth II.
+
+=== Notice to _WS_ for v498 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v498 (History & Myth, famous people branch): 0 new themes, 3 new links, 7 links out, 0 new entries.
+Theme rows 3254 -> 3254; gone none; new none; theme indexes shift: none
+Entry rows 61401 -> 61393. Removed: 21525 (row 19977), 21526 (row 19978), 21527 (row 19979), 21528 (row 19980), 21530 (row 19981), 21531 (row 19982), 21560 (row 20011), 68324 (row 60743).
+Link-index shifts: from row 19109 (Delphi 20369) on, link positions move
+Line breaks: none.
+New characters: none.

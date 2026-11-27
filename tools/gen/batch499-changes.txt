@@ -1,0 +1,54 @@
+Library batch v499 (for Simon's review): History & Myth, archaeology branch
+1. archaeology
+  linked: shovel 1850 in archaeology (typicality 2): well known here; it was not linked
+  linked: bone 3243 in archaeology (typicality 2): well known here; it was not linked
+  linked: skeleton 3248 [body] in archaeology (typicality 2): well known here; it was not linked
+  linked: pickaxe 25774 in archaeology (typicality 3): well known here; it was not linked
+2. Stone Age
+  linked: fire 27944 [flame] in stone_age (typicality 2): well known here; it was not linked
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  archaeology: "archaeology" pop 3 ident 2: 67 words, easy/middle/hard 12/16/39, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "archaeology" pop 3 ident 2: 71 words, easy/middle/hard 15/17/39, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  stone_age: "Stone Age" pop 2 ident 2: 40 words, easy/middle/hard 9/13/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "Stone Age" pop 2 ident 2: 41 words, easy/middle/hard 10/13/18, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 6; entries changed 5; status set to rev 1; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3254 -> 3254; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 2: archaeology (index 2329 -> 2329: counts [1,12,17,22,18] -> [1,15,18,22,18]); stone_age (index 2342 -> 2342: counts [2,7,13,8,10] -> [2,8,13,8,10])
+Entry rows 61393 -> 61393; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100947 -> 100952; rows whose link count changed: 5
+Link-index shifts: from row 1822 (rake 1851) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 5, rating changed 0
+  gone (other than the deleted themes): none
+  new: archaeology: "shovel" (1850), archaeology: "bone" (3243), archaeology: "skeleton" (3248), archaeology: "pickaxe" (25774), stone_age: "fire" (27944)
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 14 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 5 new links existed earlier and was removed (all 241 library versions and 223 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - archaeology: brush and sieve (the library has the painting brush and the kitchen sieve, not the digging tools); Indiana Jones stays (a fictional archaeologist, only in this theme)
+  - the ancient sites lists and the other themes of the branch stay as they are
+
+For Simon:
+  1. archaeology gets shovel, bone, skeleton and pickaxe; Stone Age gets fire.
+
+=== Notice to _WS_ for v499 (send when Simon says) ===
+GAME NOTICE (DRAFT, not sent: only on Simon's word)
+Library v499 (History & Myth, archaeology branch): 0 new themes, 5 new links, 0 links out, 0 new entries.
+Theme rows 3254 -> 3254; gone none; new none; theme indexes shift: none
+Entry rows 61393 -> 61393.
+Link-index shifts: from row 1822 (rake 1851) on, link positions move
+Line breaks: none.
+New characters: none.

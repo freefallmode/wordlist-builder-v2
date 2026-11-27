@@ -1,0 +1,71 @@
+Library batch v496 (for Simon's review): History & Myth, pirates branch
+1. lost treasures
+  out of lost_treasures: Sutton Hoo 6908: found in 1939, no longer lost (stays in archaeology, discoveries, tombs_and_burials, ancient_sites_of_europe)
+2. pirate crew
+  out of pirate_crew: parrot 1065: a pet, not one of the crew (stays in birds, domestic_animals, pirates, parrots, colorful_birds, pets, rainforest, green_things, cage_birds, starts_with_pa, things_with_wings, zoo_animals, egg_laying_animals, tree_dwelling_animals, on_a_desert_island)
+  linked: ship's cook 47630 in pirate_crew (typicality 2): well known here; it was not linked
+3. on a pirate ship (new)
+  new theme: on_a_pirate_ship "on a pirate ship" under pirates (after pirate_ships), pop 2, ident 2: a set a rival game has (pirate life); on a cruise ship exists
+  linked: deck 34583 [ship] in on_a_pirate_ship (typicality 1): a well-known member of the new theme
+  linked: sail 2799 [boat] in on_a_pirate_ship (typicality 1): a well-known member of the new theme
+  linked: cannon 21158 in on_a_pirate_ship (typicality 1): a well-known member of the new theme
+  linked: Jolly Roger 6766 in on_a_pirate_ship (typicality 1): a well-known member of the new theme
+  linked: treasure chest 6793 in on_a_pirate_ship (typicality 1): a well-known member of the new theme
+  linked: parrot 1065 in on_a_pirate_ship (typicality 1): a well-known member of the new theme
+  linked: captain 2801 [ship] in on_a_pirate_ship (typicality 1): a well-known member of the new theme
+  linked: mast 2798 in on_a_pirate_ship (typicality 2): a well-known member of the new theme
+  linked: anchor 2796 [boat] in on_a_pirate_ship (typicality 2): a well-known member of the new theme
+  linked: crow's nest 2833 in on_a_pirate_ship (typicality 2): a well-known member of the new theme
+  linked: gangplank 2825 in on_a_pirate_ship (typicality 2): a well-known member of the new theme
+  linked: cannonball 21241 [ammunition] in on_a_pirate_ship (typicality 2): a well-known member of the new theme
+  linked: treasure map 2403 in on_a_pirate_ship (typicality 2): a well-known member of the new theme
+  linked: spyglass 57996 in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: rigging 12473 [ship] in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: hammock 3044 [hanging bed] in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: porthole 2824 in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: barrel 25480 [container] in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: cabin 48886 [ship] in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: helm 21352 [steering] in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: lantern 3027 in on_a_pirate_ship (typicality 3): a well-known member of the new theme
+  linked: figurehead 35546 [ship carving] in on_a_pirate_ship (typicality 4): a well-known member of the new theme
+  linked: brig 34584 [ship prison] in on_a_pirate_ship (typicality 4): a well-known member of the new theme
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  lost_treasures: "lost treasures" pop 3 ident 3: 26 words, easy/middle/hard 1/6/19, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "lost treasures" pop 3 ident 3: 25 words, easy/middle/hard 1/6/18, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  on_a_pirate_ship: new -> "on a pirate ship" pop 2 ident 2: 23 words, easy/middle/hard 12/8/3, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  pirate_crew: "pirate crew" pop 2 ident 2: 30 words, easy/middle/hard 7/10/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "pirate crew" pop 2 ident 2: 30 words, easy/middle/hard 6/11/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 36; entries changed 25; status set to rev 9; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (family export, zipf): no change; after: contract-dup-root 170, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3253 -> 3254; gone none; new on_a_pirate_ship; theme indexes shift: from index 2299 ("on_a_pirate_ship", was "pirate_weapons") to the last index 3253
+Theme rows whose fields changed (parent compared by id): 2: lost_treasures (index 2297 -> 2297: counts [0,1,6,8,11] -> [0,1,6,7,11]); pirate_crew (index 2301 -> 2302: counts [3,4,10,10,4] -> [2,4,11,10,4])
+Entry rows 61401 -> 61401; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 100928 -> 100950; rows whose link count changed: 24
+Link-index shifts: from row 2372 (road map 2404) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 2, new 24, rating changed 0
+  gone (other than the deleted themes): pirate_crew: "parrot" (1065), lost_treasures: "Sutton Hoo" (6908)
+  new: on_a_pirate_ship: "parrot" (1065), on_a_pirate_ship: "treasure map" (2403), on_a_pirate_ship: "anchor" (2796), on_a_pirate_ship: "mast" (2798), on_a_pirate_ship: "sail" (2799), on_a_pirate_ship: "captain" (2801), on_a_pirate_ship: "porthole" (2824), on_a_pirate_ship: "gangplank" (2825), on_a_pirate_ship: "crow's nest" (2833), on_a_pirate_ship: "lantern" (3027), on_a_pirate_ship: "hammock" (3044), on_a_pirate_ship: "Jolly Roger" (6766), on_a_pirate_ship: "treasure chest" (6793), on_a_pirate_ship: "rigging" (12473), on_a_pirate_ship: "cannon" (21158), on_a_pirate_ship: "cannonball" (21241), on_a_pirate_ship: "helm" (21352), on_a_pirate_ship: "barrel" (25480), on_a_pirate_ship: "deck" (34583), on_a_pirate_ship: "brig" (34584), on_a_pirate_ship: "figurehead" (35546), pirate_crew: "ship's cook" (47630), on_a_pirate_ship: "cabin" (48886), on_a_pirate_ship: "spyglass" (57996)
+  rating: none
+new issues: none
+
+How the branch was reviewed (History & Myth, 2026-11-26): all 11 themes read word by word; every word checked for its sense and its fit, and the words a player would name first looked up.
+  - None of the 24 new links existed earlier and was removed (all 238 library versions and 217 batch notices and reviews checked).
+  - Spread (LIBRARY-RULES 3.7): see the list above. At most about 8 additions a theme; themes made short and easy on purpose are left as they are or get easy words only.
+
+Considered and left out:
+  - on a pirate ship: plank [pirate] (only in pirate punishments, which is adult), ship's cat (holds ship of the theme name), hull, galley and hold (kept down so the theme shares under half its words with ship parts)
+  - the other themes of the branch stay as they are
+
+For Simon:
+  1. on a pirate ship is a new theme (23 words); it shares 10 words (43%) with ship parts and 8 with boats and ships.
+  2. parrot leaves pirate crew (a pet, not crew); it is in on a pirate ship. Sutton Hoo leaves lost treasures (found in 1939).
+  3. Seen in passing: Piltdown Man (a hoax) is only in discoveries.
