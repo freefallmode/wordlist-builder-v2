@@ -185,8 +185,8 @@ export function buildExport(P, opt0 = {}) {
     const e = ix.entry.get(id), links = keep.get(id);
     let flags = 0;
     const fl = entryFirstLevel(P, e);   // an alias follows its root
-    // Entry bit 2 (sensitive) is transitional, until the game reads firstLevel; remove then: set when the word's (root's) firstLevel is 31 or later in all three modes.
-    if (e.adult) flags |= ENTRY_BITS.adult; if (lateLevels(fl)) flags |= ENTRY_BITS.sensitive; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.offensive) flags |= ENTRY_BITS.offensive;
+    // Bit 2 (sensitive) is no longer written (library v519, 2026-11-27): the game reads firstLevel since generator g28. The bit value stays reserved.
+    if (e.adult) flags |= ENTRY_BITS.adult; if (e.tm) flags |= ENTRY_BITS.trademark; if (e.offensive) flags |= ENTRY_BITS.offensive;
     if (e.aliasOf && e.aliasKind === 'spelling') flags |= ENTRY_BITS.spelling;
     if (e.aliasOf && e.aliasKind === 'form') flags |= ENTRY_BITS.form;
     if (e.aliasOf && e.aliasKind === 'regional') flags |= ENTRY_BITS.regional;
@@ -225,9 +225,8 @@ export function buildExport(P, opt0 = {}) {
 
   const themeRows = themes.map(t => {
     const f = eff(P, t.id);
-    // Theme bit 2 (sensitive) is transitional, until the game reads firstLevel; remove then: set when the theme's firstLevel is SENSITIVE_START or later in all three modes.
-    const late = lateLevels(t.firstLevel);
-    const bits = (f.adult ? THEME_BITS.adult : 0) | (late ? THEME_BITS.sensitive : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0) | (f.foreign ? THEME_BITS.foreign : 0) | (f.offensive ? THEME_BITS.offensive : 0)
+    // Theme bit 2 (sensitive) is no longer written (library v519): the game reads firstLevel since generator g28.
+    const bits = (f.adult ? THEME_BITS.adult : 0) | (f.tm ? THEME_BITS.trademark : 0) | (f.lang ? THEME_BITS.lang : 0) | (f.foreign ? THEME_BITS.foreign : 0) | (f.offensive ? THEME_BITS.offensive : 0)
       | (t.complete ? THEME_BITS.complete : 0)
       | (themeLocked(P, t) ? THEME_BITS.locked : 0)
       | (t.group || !used.has(t.id) ? THEME_BITS.group : 0);      // an ancestor kept only for the tree is written as a group

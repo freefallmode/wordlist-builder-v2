@@ -170,7 +170,7 @@ export function normEntryLevels(e) {
   if (Array.isArray(e.firstLevel) && !hasFirstLevel(e)) e.firstLevel = null;
   return e;
 }
-// True when the levels keep the theme or word out of every mode until the sensitive start level: the export's transitional sensitive bits and its `sensitive` filter.
+// True when the levels keep the theme or word out of every mode until the sensitive start level: the export's `sensitive` filter option.
 export const lateLevels = fl => Array.isArray(fl) && fl.length === 3 && fl.every(v => v != null && v >= SENSITIVE_START);
 // The firstLevel of a word: its root's (an alias follows its root).
 export const entryFirstLevel = (P, e) => (e.aliasOf ? P.ix.entry.get(e.aliasOf) || e : e).firstLevel ?? null;

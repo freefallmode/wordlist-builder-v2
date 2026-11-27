@@ -1394,7 +1394,7 @@ test('levels: each check fires, and a clean theme is quiet', () => {
   assert.match(c[0].msg, /2 themes must appear in easy level 5/);
 });
 
-test('levels: the export writes firstLevel and mustLevels after the fixed theme columns; theme bit 2 marks firstLevel 31+ in every mode (transitional)', () => {
+test('levels: the export writes firstLevel and mustLevels after the fixed theme columns; bit 2 is no longer written (v519)', () => {
   const P = levelProject();
   const fr = P.ix.theme.get('fruits'), tr = P.ix.theme.get('trees');
   fr.firstLevel = [31, 31, 40]; fr.mustLevels = [[], [35], []];
@@ -1411,7 +1411,7 @@ test('levels: the export writes firstLevel and mustLevels after the fixed theme 
   assert.deepEqual(col('trees', 'firstLevel'), [null, 31, 31]);
   assert.equal(col('trees', 'mustLevels'), null);
   assert.deepEqual([col('things', 'firstLevel'), col('things', 'mustLevels')], [null, null]);   // a group row
-  assert.ok(row('fruits')[3] & 2); assert.ok(!(row('trees')[3] & 2));
+  assert.ok(!(row('fruits')[3] & 2)); assert.ok(!(row('trees')[3] & 2));   // bit 2 is no longer written (v519): the game reads firstLevel
   // The sensitive filter: a link whose word or theme has firstLevel 31+ in every mode. fruits has [31, 31, 40]: all its links go; trees ([null, 31, 31]) stays.
   const ex = buildExport(P, { sensitive: 'exclude', minWords: 1 }).file;
   assert.ok(!ex.entries.text.includes('kiwi') && !ex.entries.text.includes('apple') && ex.entries.text.includes('oak'));
@@ -1436,13 +1436,13 @@ test('levels on words: a root sensitive flag loads as firstLevel 31, an alias dr
   assert.ok(L.entries.every(e => !('sensitive' in e)));
   const out = serializeProject(L);
   assert.ok(!out.includes('sensitive') && !/"text":"plum"[^\n]*firstLevel/.test(out) && /"text":"apple"[^\n]*"firstLevel":\[31,31,31\]/.test(out));
-  // export: the entry column, the alias carries its root's value, the transitional bit 2
+  // export: the entry column, the alias carries its root's value, no bit 2 (v519)
   reindex(L);
   const { file } = buildExport(L);
   const i = t => file.entries.text.indexOf(t), E = file.entries;
   assert.equal(Object.keys(E).at(-1), 'firstLevel');
   assert.deepEqual([E.firstLevel[i('apple')], E.firstLevel[i('apples')], E.firstLevel[i('pear')], E.firstLevel[i('plum')]], [[31, 31, 31], [31, 31, 31], [null, 5, null], null]);
-  assert.ok(E.flags[i('apple')] & 2); assert.ok(E.flags[i('apples')] & 2); assert.ok(!(E.flags[i('pear')] & 2));
+  assert.ok(!(E.flags[i('apple')] & 2)); assert.ok(!(E.flags[i('apples')] & 2)); assert.ok(!(E.flags[i('pear')] & 2));
   // checks: a clean set is quiet; a bad value or a firstLevel on an alias is level-bad
   assert.deepEqual(levelIssues(L), []);
   by('apples').firstLevel = [31, 31, 31]; by('plum').firstLevel = [0, null, null];
