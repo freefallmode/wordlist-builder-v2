@@ -24,6 +24,8 @@ export const PRESETS = {
   'full': { offensive: 'include' },
   'family': { adult: 'exclude', offensive: 'exclude' },
   'family, no trademarks': { adult: 'exclude', offensive: 'exclude', tm: 'exclude' },
+  // The file the game reads (data/export/wordlist-game-family.json, written by tools/export-game.mjs): family plus word frequency (Simon, 2026-11-27).
+  'Word Safari': { adult: 'exclude', offensive: 'exclude', zipf: true },
 };
 
 const pass = (mode, flagged) => mode === 'include' || (mode === 'exclude' ? !flagged : flagged);

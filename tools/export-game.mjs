@@ -1,5 +1,5 @@
 // Writes the game file (export format 4) from the working library: node tools/export-game.mjs [preset] [out] [--strict] [--lib <file>]
-// Default: the "family" preset with Zipf, to data/export/wordlist-game-family.json in this repository (from any directory; an explicit out is relative to the current directory).
+// Default: the "Word Safari" preset (family plus Zipf; js/export.js PRESETS, the same preset the web app offers), to data/export/wordlist-game-family.json in this repository (from any directory; an explicit out is relative to the current directory).
 // --lib <file>: export that library file instead of data/wordlist-en.project.json (e.g. a draft; the frequency list and break points are still this repository's).
 // --strict (in any position): exit 1 when the case lint finds issues, before anything is written.
 import fs from 'node:fs';
@@ -16,7 +16,7 @@ let args = process.argv.slice(2), libArg = null;
 const flags = args.filter(a => a.startsWith('--')), pos = args.filter(a => !a.startsWith('--'));
 const bad = flags.filter(a => a !== '--strict');
 if (bad.length) { console.error('Unknown option ' + bad.join(', ') + '. Options: --strict, --lib <file>'); process.exit(2); }
-const preset = pos[0] || 'family', out = pos[1] || fileURLToPath(new URL('../data/export/' + exportName({}, pos[0] || 'family'), import.meta.url));
+const preset = pos[0] || 'Word Safari', out = pos[1] || fileURLToPath(new URL('../data/export/' + exportName({}, pos[0] || 'family'), import.meta.url));   // the game's file keeps its name wordlist-game-family.json
 if (!PRESETS[preset]) { console.error('No preset ' + preset + '. Presets: ' + Object.keys(PRESETS).join(', ')); process.exit(2); }
 const P = parseProject(fs.readFileSync(libArg ? path.resolve(libArg) : new URL('../data/wordlist-en.project.json', import.meta.url), 'utf8')); reindex(P);
 setFreq(parseFreq(fs.readFileSync(new URL('../data/freq-en.txt', import.meta.url), 'utf8')));
