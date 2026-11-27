@@ -1,6 +1,6 @@
 Library batch v519: version raised for the export change (bit 2 no longer written; the game reads firstLevel since g28). No theme or word changes.
 
-GAME NOTICE (DRAFT, not sent: only on Simon's word)
+GAME NOTICE (sent to `_WS_` 2026-11-27 on Simon's word, with v519-v520)
 Library v519 (Simon, 2026-11-27: "Yes, remove it"): the export no longer writes bit 2 (sensitive), as you said g28 does not need it. Net effect against v518:
 - Theme rows: 104 lose bit 2 (the 103 with firstLevel 31 and the group row wars_and_battles). Entry rows: 799 lose bit 2 (751 roots and 48 aliases with firstLevel 31). No other flag changes.
 - No theme, word or link changes: the library version was raised only so the changed export carries a new version. Theme rows 3265, entry rows 61407, links unchanged; no index shifts.
