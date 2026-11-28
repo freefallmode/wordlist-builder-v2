@@ -5,7 +5,7 @@ import { newTheme, slug } from './outline.js';
 import { POS, TYPES, TYPE_HELP, REGIONS, mergeRegions, FAMILIARITY_HELP, TYPICALITY_HELP, IDENT_HELP, ALIAS_KINDS, STATUS, STATUS_HELP, addEntry, entryDefaults, reindex, reindexThemes, indexEntry,
   FLAG_HELP, MODES, SENSITIVE_START, hasFirstLevel, hasMustLevels, pathOf, setKin, moveKin, deleteEntry, deleteTheme, unlinkEntry, linkTarget, moveTheme, isAncestor, uniqueThemeId, sameText, themeStats, dialectOf } from './model.js';
 import { zipf, freqLoaded, loadFreq } from './freq.js';
-import { loadBreaks } from './breaks.js';
+import { loadBreaks, breakPoints, breaksLoaded } from './breaks.js';
 import { validate, SEV_ORDER, themeNameChars } from './validate.js';
 import { caseLint } from './caselint.js';
 import { buildExport, DEFAULT_EXPORT, PRESETS, fixRegion, sizeOf, exportName, lintLine, reportLists, THEME_KINDS } from './export.js';
@@ -55,6 +55,18 @@ function firstLevelBoxes(fl) {
 
 // ---------- theme ----------
 
+// Split points (read-only): where the game may split a word into two halves or wrap it in a balloon; from data/breaks-en.txt, which the export reads.
+// Follows the text input as it is typed. Words and theme names both get them.
+function splitsField(P, input, hint) {
+  const view = h('span.splits');
+  const draw = () => {
+    const t = input.value.trim(), bp = P.lang === 'en' && breaksLoaded() ? breakPoints(t) : null;
+    view.textContent = bp === null ? (P.lang === 'en' ? 'The break table did not load.' : 'English only.') : bp.length ? t.split('').map((c, i) => (bp.includes(i) ? '·' : '') + c).join('') : 'None';
+  };
+  input.addEventListener('input', draw); draw();
+  return field('Split points', view, `${hint} (read-only, from data/breaks-en.txt; only words of 8 or more letters are listed there).`);
+}
+
 export async function editTheme(t, isNew = false) {
   const P = A.P;
   const w = { ...t, region: [...t.region] };
@@ -80,6 +92,7 @@ export async function editTheme(t, isNew = false) {
   const mlBox = MODES.map((m, i) => h('input.levels', { value: ml0[i].join(', '), placeholder: 'e.g. 5, 12', 'aria-label': 'Must appear in levels, ' + m, style: 'width:9em' }));
   const body = h('div.form', {},
     field('Name', f.name),
+    splitsField(P, f.name, 'Where the game may break the long words of this name across lines'),
     field('Parent theme', parentPick.node, 'Leave empty for a top-level group.'),
     h('div.flags', [...Object.values(boxes), famBox]),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the theme is mainly known in (US states, British politics).', w.region.filter(c => !REGIONS.includes(c))),
@@ -268,6 +281,7 @@ export async function editEntry(e, { isNew = false, themeId = null } = {}) {
     h('div.two', {}, field('Text (as written, with capitals)', f.text), field('Meaning/context', f.gloss)),
     h('div.two', {}, field('Part of speech', f.pos), field('Type', f.type)),
     h('div.two', {}, field('Familiarity (the word itself)', f.fam, zv === undefined ? '' : zv === null ? 'Not in the frequency list.' : `Zipf frequency ${zv.toFixed(1)} (4+ common, 3 uncommon, 2 rare).`), field('Status', f.status)),
+    splitsField(P, f.text, 'Where the game may split this word into two halves or wrap it in a balloon'),
     h('div.flags', Object.values(boxes)),
     regionBox(regionBoxes, 'Region-specific', 'Tick the countries the word is mainly known in (lorry, pavement).', w.region.filter(c => !REGIONS.includes(c))),
     h('div.hint.flaghelp', {}, ['adult', 'offensive', 'tm'].map(k => h('div', {}, FLAG_HELP[k]))),

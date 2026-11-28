@@ -313,6 +313,8 @@ Called from the browser with the user's key (Settings; kept for the session unle
 
 **All themes screen:** every theme and group in one table (theme, parent, words, words with sub-themes, sub-themes, difficulty, popularity, identifiability, flags) with a filter on name, path or note, a show dropdown (all, playable, groups, each flag, complete, disabled, with no words, with too few words), sortable columns, 200 rows per page. A click opens the theme.
 
+**Split points (read-only):** the word dialog and the theme dialog show the text with a dot where `data/breaks-en.txt` puts a break (play·ground), updated as the text is typed; "None" when the table has no long word of it. The table is not part of the library and is not edited in the app; only the export writes the points (`breaks`) into the game file (Simon, 2026-11-28).
+
 **All words screen:** every entry in one table with a text filter and a scope (word or alias, word, alias, meaning, themes, everything) and match mode (contains / starts with / exactly), dropdowns (show: all / enabled / disabled / roots / aliases / not in any theme; flags: any / adult / has a first level / trademark / offensive / region-specific / none; familiarity; status), sortable columns (click again to reverse), enabled checkbox, 200 rows per page with Prev/Next above and below. Filters and sort are remembered until reload. A word click opens the entry dialog; "← Overview" returns.
 
 **Settings dialog**, two sections:
