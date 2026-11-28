@@ -383,14 +383,14 @@ export function moveKin(P, from, to) {
 export const ruleTheme = t => /^(?:starts|ends|hidden):@(.+)$/.exec(t.rule || '')?.[1] || '';
 // The game's wordplay rule grammar (GAME-CONTRACT.md, Themes: rule), the one copy shared by js/validate.js (`rule-unknown`) and
 // tools/export-contract.mjs (`contract-rule`, `contract-rule-unknown`). X is at least 2 letters, or @id where allowed; contains:X takes letters
-// (silent-b style hyphens too). Game g24 added the tested rules no-vowels, roman, reversible and `curated` (links only, no property test).
+// only: the game cannot test a description such as silent-b (it skipped silent b words; reported 2026-11-28), which needs curated instead. Game g24 added the tested rules no-vowels, roman, reversible and `curated` (links only, no property test).
 // Any other rule name keeps the theme out of play.
 const RULE_FORMS = [
   [/^(palindrome|double-letters|onomatopoeia|anagram)$/, null],
   [/^(no-vowels|roman|reversible|curated)$/, null],
   [/^homophone(:[a-z-]+)?$/, null],
   [/^rhyme:([a-z]{2,})$/, null],
-  [/^contains:([a-z]+(-[a-z]+)*)$/, null],
+  [/^contains:([a-z]+)$/, null],
   [/^compound-(start|end):([a-z]{2,})$/, null],
   [/^(starts|ends):(?:[a-z]{2,}|@(.+))$/, 2],
   [/^hidden:@(.+)$/, 1],

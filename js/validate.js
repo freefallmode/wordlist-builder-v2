@@ -72,7 +72,10 @@ function offensiveChecks(P, add) {
 // level-bad (error): not 3 values of whole numbers 1 or more (null = anywhere), or a must list unsorted or with duplicates; on an entry, a firstLevel on an alias (it follows its root).
 // level-below-first (error): a must level below that mode's firstLevel (a theme that had the sensitive flag has firstLevel 31, so this also keeps it out of early levels).
 // level-unplayable (error): must levels on a theme the game cannot use: a group, adult, offensive, disabled, no popularity, or fewer usable words than the minimum (as the thin check counts).
+// level-past-end (error): a must level past LAST_LEVEL, the last level the game builds (g29: a must level past 2000 is a library error there).
 // level-crowded (warn): more themes must appear in one mode and level than settings.themesPerLevel; skipped when that setting is not set.
+// The last level the game builds in each mode (generator g29, 2026-11-27).
+const LAST_LEVEL = 2000;
 function levelChecks(P, add, minWords) {
   const need = new Map();   // "mode|level" -> theme names
   for (const t of P.themes) {
@@ -82,6 +85,8 @@ function levelChecks(P, add, minWords) {
     if (!hasMustLevels(t)) continue;
     t.mustLevels.forEach((l, i) => {
       const fl = t.firstLevel?.[i], low = fl == null ? [] : l.filter(v => v < fl);
+      const far = l.filter(v => v > LAST_LEVEL);
+      if (far.length) add('error', 'level-past-end', `"${t.name}" must appear in ${MODES[i]} level${far.length === 1 ? '' : 's'} ${far.join(', ')}, past level ${LAST_LEVEL}, the last level the game builds.`, { themeId: t.id });
       if (low.length) add('error', 'level-below-first', `"${t.name}" must appear in ${MODES[i]} level${low.length === 1 ? '' : 's'} ${low.join(', ')}, below its first ${MODES[i]} level ${fl}.`, { themeId: t.id });
       for (const v of l) { const k = i + '|' + v; if (!need.has(k)) need.set(k, []); need.get(k).push(t.name); }
     });
@@ -112,6 +117,8 @@ function levelChecks(P, add, minWords) {
 
 // kind-people: a theme whose words are at least this share of type person is a people theme.
 const PEOPLE_SHARE = 0.7;
+// wordplay-thin: a wordplay or compound theme with fewer linked words than this almost never plays.
+const WORDPLAY_MIN = 8;
 
 export function validate(P) {
   const out = [];
@@ -157,6 +164,8 @@ export function validate(P) {
       else if (t.tkind !== 'people' && roots.length >= minWords && per >= PEOPLE_SHARE) add('warn', 'kind-people', `"${t.name}": ${pc}% of its words are type person but its kind is ${t.tkind || 'category'}: set the kind to people (real people by name).`, { themeId: t.id });
       else if (t.tkind === 'people' && per < PEOPLE_SHARE) add('warn', 'kind-people', `"${t.name}" has the kind people but only ${pc}% of its words are type person: retype the words that are people, or change the kind.`, { themeId: t.id });
     }
+    // wordplay-thin (info): a wordplay or compound theme with fewer than WORDPLAY_MIN linked words almost never plays (the game, 2026-11-28: 30 such themes never came up in 30,000 levels)
+    if ((t.tkind === 'wordplay' || t.tkind === 'compound') && st.roots && st.roots < WORDPLAY_MIN) add('info', 'wordplay-thin', `"${t.name}" is a ${t.tkind} theme with ${st.roots} words; with fewer than ${WORDPLAY_MIN} the game almost never has 4 it can use. Add words, or merge it into a broader theme.`, { themeId: t.id });
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else { const n = ef.offensive ? st.roots : cleanRoots(P, t.id);   // offensive words do not count toward a theme's minimum (the export leaves them out by default; DESIGN-entries.md 3.8), unless the theme is offensive itself
       if (n < minWords) add('warn', 'thin', `"${t.name}" has ${n} distinct word${n === 1 ? '' : 's'}${n < st.roots ? ` that are not offensive (${st.roots} in all)` : ''}; a theme needs at least ${minWords}.`, { themeId: t.id }); }

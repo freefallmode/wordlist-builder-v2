@@ -1,0 +1,11 @@
+GAME NOTICE (drafted 2026-11-28; to send only on Simon's word, with v524-v525)
+Library v526 (Simon, 2026-11-28: "Yes, do the full proposal. but don't disable any"): the 37 themes your 30,000-level run never showed. Net effect against v525:
+- Theme rows 3264 -> 3256: gone starts_with_dog (2867), starts_with_pig (2870), starts_with_hen (2871), starts_with_cow (2872), starts_with_lamb (2873), ends_with_ten (2940), ends_with_nine (2941), ends_with_eight (2942). Their words moved into the parents starts with an animal (9 -> 25 words) and ends with a number (4 -> 16; mittens left out: it fails ends:@numbers). Theme indexes shift from 2867 to the last, 3255.
+- silent b words: rule contains:silent-b -> curated (your g30 skipped it).
+- Wordplay themes topped up toward 8 words: ale, bell, disc, starts with a tree, starts with a metal, owl, ear, ends with clothing, red, ends with a shape, ring, ends with a tree reach 8 or more; horn 6, arm 7, lute 7, metro 4 (unchanged), sun 5, mum 5, rust 5, viol 4, train 4 stay short (no more fair words). 22 theme rows change their counts.
+- Categories: short sleeps 9 -> 12 (kip, lie-down, microsleep); cricket dismissals 7 -> 11, complete (obstructing the field, timed out, hit the ball twice, retired out). Tiger subspecies, elf types, CMYK inks, basic tastes unchanged (closed sets; Simon accepts they are rare).
+- Entry rows 61405 -> 61424: 19 new entries appended at rows 61405-61423 (aleph, belle, discover, discuss, discreet, harm, schoolmarm, pursuit, dissolute, approval, entire, absorb, boring, lie-down, microsleep, obstructing the field, timed out, hit the ball twice, retired out); no existing row moves.
+- Links 101036 -> 101091; link positions move from row 39 on.
+- No theme is disabled. No flag changes.
+Line breaks: none. New characters: none.
+Library side: a must level past 2000 is now a library error too (check level-past-end), and contains: rules take plain letters only.

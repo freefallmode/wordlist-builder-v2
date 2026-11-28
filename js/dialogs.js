@@ -446,14 +446,16 @@ export function openPath(tid) {
 export async function showExport() {
   const P = A.P;
   const presets = { ...PRESETS, ...(P.settings.exportPresets || {}) };
-  let o = JSON.parse(JSON.stringify(DEFAULT_EXPORT)), presetName = 'full';
+  // A preset over the defaults; minWords from the library setting unless the preset names one (I5). The screen opens on full, so it starts from full.
+  const start = name => { const p = presets[name] || {}, x = Object.assign(JSON.parse(JSON.stringify(DEFAULT_EXPORT)), JSON.parse(JSON.stringify(p))); if (p.minWords === undefined) x.minWords = P.settings.minWords || 4; return x; };
+  let o = start('full'), presetName = 'full';
   const info = h('div.exportinfo', 'Press Preview to see the counts and size.');
   const stale = () => { info.textContent = 'Press Preview to update.'; };
   const num = (key, label, min, max) => field(label, h('input', { type: 'number', min, max, value: o[key], onchange: ev => { o[key] = +ev.target.value; stale(); } }));
   const tick = (label, key) => check(label, o[key], { onchange: ev => { o[key] = ev.target.checked; stale(); } });
   const inc = (label, key) => check(label, o[key] !== 'exclude', { onchange: ev => { o[key] = ev.target.checked ? 'include' : 'exclude'; stale(); } });   // flag filters: ticked = include, unticked = leave out
   const preset = select(Object.keys(presets), 'full', { onchange: ev => {
-    presetName = ev.target.value; o = Object.assign(JSON.parse(JSON.stringify(DEFAULT_EXPORT)), JSON.parse(JSON.stringify(presets[presetName])));
+    presetName = ev.target.value; o = start(presetName);
     form.replaceWith(form = build()); stale();
   } });
   const build = () => {

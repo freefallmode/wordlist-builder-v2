@@ -912,9 +912,9 @@ test('export contract: a clean export passes; each broken rule is an error of it
 
 test('export contract: the rule grammar; warnings for what skews play; the summary gates them against a baseline', async () => {
   const { contractSummary, parseRule } = await import('../tools/export-contract.mjs');
-  for (const r of ['palindrome', 'homophone', 'homophone:animals', 'rhyme:at', 'contains:aeiou', 'contains:silent-b', 'compound-start:air', 'starts:@birds', 'ends:ma', 'hidden:@x', 'no-vowels', 'roman', 'reversible', 'curated']) assert.equal(parseRule(r).state, 'ok', r);
+  for (const r of ['palindrome', 'homophone', 'homophone:animals', 'rhyme:at', 'contains:aeiou', 'compound-start:air', 'starts:@birds', 'ends:ma', 'hidden:@x', 'no-vowels', 'roman', 'reversible', 'curated']) assert.equal(parseRule(r).state, 'ok', r);
   for (const r of ['other', 'letter:animals:plus', 'alphabetical', 'plus-letter:@animals']) assert.equal(parseRule(r).state, 'unknown', r);
-  for (const r of ['starts:a', 'hidden:abc', 'rhyme:', 'compound-end:@x', 'roman:x', 'curated:x']) assert.equal(parseRule(r).state, 'bad', r);
+  for (const r of ['starts:a', 'hidden:abc', 'rhyme:', 'compound-end:@x', 'roman:x', 'curated:x', 'contains:silent-b']) assert.equal(parseRule(r).state, 'bad', r);
   const P = contractProject();
   P.entries.find(e => e.text === 'apple').region = ['AU'];                            // a root with a region
   P.entries.find(e => e.text === 'grey').region = ['UK', 'US'];                       // an alias tagged both
@@ -1469,4 +1469,27 @@ test('kinds people and name: exported at the end of kindNames; kind-people and k
   assert.deepEqual(f.kindNames.slice(-2), ['people', 'name']);
   assert.equal(f.kindNames[row('painters')[k]], 'people');
   assert.equal(f.kindNames[row('boys_names')[k]], 'name');
+});
+
+test('I5: the export takes minWords from the library setting unless the options name one', () => {
+  const P = newProject();
+  P.themes.push({ id: 'pets', name: 'pets', parent: null, group: false, enabled: true, region: [], pop: 1, ident: 1 });
+  reindex(P);
+  for (const w of ['cat', 'dog', 'hamster', 'rabbit', 'goldfish']) addEntry(P, w, { type: 'common', fam: 1, typ: { pets: 1 } });
+  reindex(P);
+  P.settings.minWords = 6;
+  assert.equal(buildExport(P, {}).report.droppedThin.length, 1);
+  assert.equal(buildExport(P, { minWords: 4 }).report.droppedThin.length, 0);
+  P.settings.minWords = 5;
+  assert.equal(buildExport(P, {}).report.droppedThin.length, 0);
+});
+
+test('level-past-end: a must level past 2000 is an error, 2000 is fine', () => {
+  const P = newProject();
+  P.themes.push({ id: 'a', name: 'a', parent: null, group: false, enabled: true, region: [], pop: 1, ident: 1, mustLevels: [[2000], [2001], []] });
+  reindex(P);
+  const v = validate(P).filter(i => i.kind === 'level-past-end');
+  assert.equal(v.length, 1);
+  assert.match(v[0].msg, /medium level 2001/);
+  assert.equal(v[0].sev, 'error');
 });

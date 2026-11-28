@@ -47,6 +47,7 @@ export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, offensive: 8, 
 
 export function buildExport(P, opt0 = {}) {
   const o = Object.assign({}, DEFAULT_EXPORT, opt0);
+  if (opt0.minWords === undefined && P.settings?.minWords) o.minWords = P.settings.minWords;   // the library setting, unless the options name their own (I5)
   if (opt0.offensive === undefined && opt0.vulgar !== undefined) o.offensive = opt0.vulgar;   // presets saved before the flag was renamed (2026-11-22)
   o.region = fixRegion(o.region);
   const report = { themesIn: 0, themesOut: 0, entriesIn: 0, entriesOut: 0, droppedThin: [], notes: [] };
