@@ -12,7 +12,7 @@ Generator g29 holds people and first-name themes to level 41, but it finds them 
 | `name` | personal names as words, not particular people | girls' names, short forms of names, names that are flowers, surnames that are jobs | 20 + 3 surnames |
 
 - **Not `people`:** fictional characters (Disney, superheroes), gods and myth figures, and job or role words (doctors, kings as a chess piece). They stay category; firstLevel can still hold any of them back.
-- **Surnames (3 themes):** I recommend `name`. They are lists of names as words, like the first-name themes, and today they play from level 1 as category. Making them `name` holds them to 41 like first names. The other choice is leaving them category.
+- **Surnames (3 themes): `name`** (Simon, 2026-11-28: "Yes, name kind"). They are lists of names as words, like the first-name themes, and today they play from level 1 as category. Making them `name` holds them to 41 like first names. The other choice is leaving them category.
 - **Wordplay stays wordplay:** a names theme built on spelling (none today) would keep wordplay.
 
 ## Which themes become `people`
@@ -44,5 +44,5 @@ Batch v523 sets `tkind` on the people and name themes (status `rev` on no entrie
 
 ## Your decisions
 
-1. Surnames: `name` (held to 41), or stay category?
+1. Surnames: `name`, held to 41 (decided 2026-11-28).
 2. The people themes the game's test misses today: hold all to 41, or keep some early?
