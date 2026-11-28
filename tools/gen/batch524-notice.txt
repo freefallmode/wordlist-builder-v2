@@ -1,0 +1,7 @@
+GAME NOTICE (drafted 2026-11-28; to send only on Simon's word)
+Library v524 (Simon, 2026-11-28: "Do 1 and 2 together"): small fixes after v521 and v523. Net effect against v523:
+- Theme rows: puddings, parking words, taxis of the world and things made of rubber lose bit 8 (lang) and keep bit 64 (locked), now set on the theme itself: their aliases (Christmas pud, car park, collective taxi, rubber) must not stand in, as they would give the theme name away. No play change except that a plan dropping lang themes may now use them.
+- Entry rows 61407 -> 61405: Grab 47028 (row 43001) and Bolt 47029 (row 43002) are gone: too obscure for taxis of the world, and the brands clash with the common words grab and bolt. Every entry row from 43001 on moves up by 2 (18404 rows move).
+- Links 101040 -> 101036: Grab and Bolt out of taxis of the world, cosmonaut and spacewalk out of astronauts (they stay in their space themes). Link positions move from row 6846 (taikonaut) on.
+- Christopher (famous saints) is typed person, as the other saints.
+Line breaks: none. New characters: none.

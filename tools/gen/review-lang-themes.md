@@ -47,6 +47,6 @@ slang and sayings, hidden animals, silent letter words, word origins, foreign co
 ## Outcome: batch v521 (Simon, 2026-11-28: "yes, do what you think best")
 
 - `lang` off 54 of the 58 and off the 6 groups. The export changes only in those 60 theme rows (bits 8 lang and 64 locked off); no word, link or index changes.
-- Kept for now: puddings, parking words, taxis of the world, things made of rubber. Unlocked, they raise theme-name warnings (Christmas pud, car park, parking spot, collective taxi, rubber, rubber bands, rubber gloves) and case-sense-proper (Grab, Bolt); ISSUES I38.
+- Kept for now (settled in v524: lang off, locked: true): puddings, parking words, taxis of the world, things made of rubber. Unlocked, they raise theme-name warnings (Christmas pud, car park, parking spot, collective taxi, rubber, rubber bands, rubber gloves) and case-sense-proper (Grab, Bolt); ISSUES I38.
 - Greetings and ways to say goodbye keep `lang` and get no `foreign`: 10 of 28 and about 12 of 30 of their words are not English, and `foreign` is for themes whose words are mostly not English (Simon left it to me, 2026-11-28).
 - Tenses: `lang` off in batch v522, as grammar concepts like grammar terms and clause types.

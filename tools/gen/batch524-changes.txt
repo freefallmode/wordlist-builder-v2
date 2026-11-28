@@ -1,0 +1,45 @@
+Library batch v524: ISSUES I38 and I39 (Simon)
+1. ISSUES I38: lang off, locked on (the lock was the only part of lang these themes needed)
+  theme puddings: lang true -> false: its members translate one by one (review-lang-themes.md)
+  theme puddings: locked undefined -> true: a member shows a short word or is a family word whose alias would stand in and give the theme name away (Christmas pud, car park, collective taxi, rubber): the exact linked word is the point
+  theme parking_words: lang true -> false: its members translate one by one (review-lang-themes.md)
+  theme parking_words: locked undefined -> true: a member shows a short word or is a family word whose alias would stand in and give the theme name away (Christmas pud, car park, collective taxi, rubber): the exact linked word is the point
+  theme taxis_of_the_world: lang true -> false: its members translate one by one (review-lang-themes.md)
+  theme taxis_of_the_world: locked undefined -> true: a member shows a short word or is a family word whose alias would stand in and give the theme name away (Christmas pud, car park, collective taxi, rubber): the exact linked word is the point
+  theme things_made_of_rubber: lang true -> false: its members translate one by one (review-lang-themes.md)
+  theme things_made_of_rubber: locked undefined -> true: a member shows a short word or is a family word whose alias would stand in and give the theme name away (Christmas pud, car park, collective taxi, rubber): the exact linked word is the point
+  out of taxis_of_the_world: Grab 47028 [rideshare]: too obscure for this theme (a Southeast Asian ride-hailing app), and the brand clashes with the common word grab (now in no theme: not exported)
+  out of taxis_of_the_world: Bolt 47029 [rideshare]: too obscure for this theme (a European ride-hailing app), and the brand clashes with the common word bolt (now in no theme: not exported)
+2. ISSUES I39: people themes
+  out of astronauts: cosmonaut 7117: a job word, not a person: astronauts lists astronauts by name (it stays in spaceflight words, space, space station) (stays in spaceflight_words, dress_up_costumes, space, space_station, jobs_with_uniforms)
+  out of astronauts: spacewalk 7151: an activity, not a person (it stays in space, spaceflight words, space station) (stays in space, spaceflight_words, space_station)
+  Christopher 34338: type "proper" -> "person": Saint Christopher, a person (as the other saints)
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  astronauts: "astronauts" pop 3 ident 2: 24 words, easy/middle/hard 4/3/17, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "astronauts" pop 3 ident 2: 22 words, easy/middle/hard 4/2/16, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  parking_words: "parking words" pop 3 ident 3: 35 words, easy/middle/hard 5/16/14, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "parking words" pop 3 ident 3: 35 words, easy/middle/hard 5/16/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  puddings: "puddings" pop 3 ident 3: 38 words, easy/middle/hard 6/9/23, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "puddings" pop 3 ident 3: 38 words, easy/middle/hard 6/9/23, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  taxis_of_the_world: "taxis of the world" pop 3 ident 3: 34 words, easy/middle/hard 5/11/18, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "taxis of the world" pop 3 ident 3: 32 words, easy/middle/hard 5/11/16, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  things_made_of_rubber: "things made of rubber" pop 3 ident 3: 32 words, easy/middle/hard 8/10/14, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "things made of rubber" pop 3 ident 3: 32 words, easy/middle/hard 8/10/14, theme difficulty 3, 4th-easiest band 2, gap -1.0
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 2: Grab 47028, Bolt 47029
+Entries added 0: none
+Entries deleted 0: none
+library changes 16; entries changed 5; status set to rev 3; themes deleted 0; entries merged 0
+Checks: changed kinds: info:orphan 356 -> 358
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (Word Safari export): no change; after: contract-dup-root 171, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3265 -> 3265; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 5: puddings (index 67 -> 67: flags 72 -> 64); parking_words (index 992 -> 992: flags 72 -> 64); taxis_of_the_world (index 1001 -> 1001: flags 72 -> 64, counts [3,2,11,11,13] -> [3,2,11,9,13]); astronauts (index 2289 -> 2289: counts [1,3,3,13,5] -> [1,3,2,12,4]); things_made_of_rubber (index 3081 -> 3081: flags 72 -> 64)
+Entry rows 61407 -> 61405; first row whose entry changed: 43001 (minicab 47030, was Grab 47028); rows that moved: 18404; added none; removed 47028 (row 43001), 47029 (row 43002)
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101040 -> 101036; rows whose link count changed: 2
+Link-index shifts: from row 6846 (taikonaut 7118) on, link positions move
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 4, new 0, rating changed 0
+  gone (other than the deleted themes): astronauts: "cosmonaut" (7117), astronauts: "spacewalk" (7151), taxis_of_the_world: "Grab" (47028), taxis_of_the_world: "Bolt" (47029)
+  new: none
+  rating: none
+new issues: none
