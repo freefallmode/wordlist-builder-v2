@@ -1,0 +1,147 @@
+Library batch v521: lang off themes that translate, and off groups (Simon)
+1. Language-specific off: themes whose members translate
+  theme types_of_milk: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme cookies: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme flours: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme chocolates: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme pizza_styles: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme ways_to_cut_food: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme meals_of_the_day: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme foods_named_after_people: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme foods_named_after_places: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme american_candy: lang true -> false: foods and cooking: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme horse_colors: lang true -> false: coat colours: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme traffic_words: lang true -> false: roads and travel: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme road_signs: lang true -> false: roads and travel: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme nautical_directions: lang true -> false: roads and travel: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme metro_systems: lang true -> false: roads and travel: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme room_types: lang true -> false: roads and travel: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme stretches: lang true -> false: the body: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme body_noises: lang true -> false: the body: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme honorifics: lang true -> false: people and occasions: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme wedding_anniversaries: lang true -> false: people and occasions: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme cozy_things: lang true -> false: people and occasions: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme scoring_words: lang true -> false: sport and games: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme sports_verbs: lang true -> false: sport and games: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme word_games: lang true -> false: sport and games: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme aussie_rules_terms: lang true -> false: sport and games: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme jazz_words: lang true -> false: music and literature: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme hip_hop_words: lang true -> false: music and literature: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme notes_and_rests: lang true -> false: music and literature: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme solfege_notes: lang true -> false: music and literature: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme poetry_terms: lang true -> false: music and literature: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme rhythm_words: lang true -> false: music and literature: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme comic_book_words: lang true -> false: music and literature: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme superstitions: lang true -> false: history and folklore: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme empires: lang true -> false: history and folklore: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme numbers_one_to_ten: lang true -> false: numbers and measures: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme multiples_of_ten: lang true -> false: numbers and measures: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme big_numbers: lang true -> false: numbers and measures: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme imperial_units: lang true -> false: numbers and measures: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme old_units: lang true -> false: numbers and measures: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme keyboard_keys: lang true -> false: computers: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme internet_words: lang true -> false: computers: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme computer_actions: lang true -> false: computers: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme grammar_terms: lang true -> false: grammar concepts, not the English words themselves: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme sentence_parts: lang true -> false: grammar concepts, not the English words themselves: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme clause_types: lang true -> false: grammar concepts, not the English words themselves: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme figures_of_speech: lang true -> false: grammar concepts, not the English words themselves: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme opposites: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme see_through_materials: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme texture_words: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme taste_words: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme touch_words: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme size_labels: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme sound_qualities: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+  theme fire_words: lang true -> false: qualities and materials: translates member by member: not tied to English spelling, sound or slang (LIBRARY-RULES 4)
+2. Language-specific off: groups
+  theme slang_and_sayings: lang true -> false: a group: never played, and flags do not pass down (v516), so the flag did nothing
+  theme hidden_animals: lang true -> false: a group: never played, and flags do not pass down (v516), so the flag did nothing
+  theme silent_letter_words: lang true -> false: a group: never played, and flags do not pass down (v516), so the flag did nothing
+  theme word_origins: lang true -> false: a group: never played, and flags do not pass down (v516), so the flag did nothing
+  theme colors_in_other_languages: lang true -> false: a group: never played, and flags do not pass down (v516), so the flag did nothing
+  theme synonyms: lang true -> false: a group: never played, and flags do not pass down (v516), so the flag did nothing
+Difficulty spread and gap of the themes touched (usable words; band 1-2 easy, 3 middle, 4-5 hard; gap = 4th-easiest band - theme difficulty), before -> after:
+  american_candy: "American candy" pop 2 ident 2: 48 words, easy/middle/hard 18/15/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "American candy" pop 2 ident 2: 48 words, easy/middle/hard 18/15/15, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  aussie_rules_terms: "Aussie rules terms" pop 4 ident 3: 48 words, easy/middle/hard 2/5/41, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "Aussie rules terms" pop 4 ident 3: 48 words, easy/middle/hard 2/5/41, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  big_numbers: "big numbers" pop 2 ident 2: 28 words, easy/middle/hard 5/7/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "big numbers" pop 2 ident 2: 28 words, easy/middle/hard 5/7/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  body_noises: "body noises" pop 2 ident 2: 37 words, easy/middle/hard 11/9/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "body noises" pop 2 ident 2: 37 words, easy/middle/hard 11/9/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  chocolates: "chocolates" pop 2 ident 3: 31 words, easy/middle/hard 11/11/9, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "chocolates" pop 2 ident 3: 31 words, easy/middle/hard 11/11/9, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  clause_types: "clause types" pop 4 ident 4: 8 words, easy/middle/hard 0/4/4, theme difficulty 4.5, 4th-easiest band 3, gap -1.5 -> "clause types" pop 4 ident 4: 8 words, easy/middle/hard 0/4/4, theme difficulty 4.5, 4th-easiest band 3, gap -1.5
+  colors_in_other_languages: new -> "foreign color words" pop 0 ident undefined: 0 words, easy/middle/hard 0/0/0, theme difficulty 0, 4th-easiest band -, gap -
+  comic_book_words: "comic book words" pop 3 ident 3: 36 words, easy/middle/hard 11/12/13, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "comic book words" pop 3 ident 3: 36 words, easy/middle/hard 11/12/13, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  computer_actions: "computer actions" pop 2 ident 2: 45 words, easy/middle/hard 18/19/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "computer actions" pop 2 ident 2: 45 words, easy/middle/hard 18/19/8, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  cookies: "cookies" pop 2 ident 2: 36 words, easy/middle/hard 7/7/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "cookies" pop 2 ident 2: 36 words, easy/middle/hard 7/7/22, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  cozy_things: "cozy things" pop 2 ident 3: 49 words, easy/middle/hard 21/26/2, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "cozy things" pop 2 ident 3: 49 words, easy/middle/hard 21/26/2, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  empires: "empires" pop 3 ident 3: 37 words, easy/middle/hard 13/7/17, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "empires" pop 3 ident 3: 37 words, easy/middle/hard 13/7/17, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  figures_of_speech: "figures of speech" pop 4 ident 2: 42 words, easy/middle/hard 4/13/25, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "figures of speech" pop 4 ident 2: 42 words, easy/middle/hard 4/13/25, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  fire_words: "fire words" pop 2 ident 2: 47 words, easy/middle/hard 13/20/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "fire words" pop 2 ident 2: 47 words, easy/middle/hard 13/20/14, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  flours: "flours" pop 3 ident 3: 43 words, easy/middle/hard 8/9/26, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "flours" pop 3 ident 3: 43 words, easy/middle/hard 8/9/26, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  foods_named_after_people: "foods named after people" pop 5 ident 4: 47 words, easy/middle/hard 4/20/23, theme difficulty 5, 4th-easiest band 2, gap -3.0 -> "foods named after people" pop 5 ident 4: 47 words, easy/middle/hard 4/20/23, theme difficulty 5, 4th-easiest band 2, gap -3.0
+  foods_named_after_places: "foods named after places" pop 3 ident 3: 29 words, easy/middle/hard 9/13/7, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "foods named after places" pop 3 ident 3: 29 words, easy/middle/hard 9/13/7, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  grammar_terms: "grammar terms" pop 2 ident 2: 42 words, easy/middle/hard 11/18/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "grammar terms" pop 2 ident 2: 42 words, easy/middle/hard 11/18/13, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  hidden_animals: new -> "hidden animals" pop 0 ident undefined: 0 words, easy/middle/hard 0/0/0, theme difficulty 0, 4th-easiest band -, gap -
+  hip_hop_words: "hip hop words" pop 3 ident 2: 47 words, easy/middle/hard 15/19/13, theme difficulty 2, 4th-easiest band 1, gap -1.0 -> "hip hop words" pop 3 ident 2: 47 words, easy/middle/hard 15/19/13, theme difficulty 2, 4th-easiest band 1, gap -1.0
+  honorifics: "honorifics" pop 4 ident 2: 32 words, easy/middle/hard 7/8/17, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "honorifics" pop 4 ident 2: 32 words, easy/middle/hard 7/8/17, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  horse_colors: "horse colors" pop 3 ident 2: 30 words, easy/middle/hard 3/5/22, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "horse colors" pop 3 ident 2: 30 words, easy/middle/hard 3/5/22, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  imperial_units: "imperial units" pop 2 ident 2: 46 words, easy/middle/hard 13/10/23, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "imperial units" pop 2 ident 2: 46 words, easy/middle/hard 13/10/23, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  internet_words: "internet words" pop 2 ident 3: 86 words, easy/middle/hard 31/36/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5 -> "internet words" pop 2 ident 3: 86 words, easy/middle/hard 31/36/19, theme difficulty 2.5, 4th-easiest band 1, gap -1.5
+  jazz_words: "jazz words" pop 3 ident 3: 40 words, easy/middle/hard 6/11/23, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "jazz words" pop 3 ident 3: 40 words, easy/middle/hard 6/11/23, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  keyboard_keys: "keyboard keys" pop 2 ident 2: 29 words, easy/middle/hard 14/8/7, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "keyboard keys" pop 2 ident 2: 29 words, easy/middle/hard 14/8/7, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  meals_of_the_day: "meals of the day" pop 1 ident 1: 23 words, easy/middle/hard 7/7/9, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "meals of the day" pop 1 ident 1: 23 words, easy/middle/hard 7/7/9, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  metro_systems: "metro systems" pop 3 ident 3: 29 words, easy/middle/hard 3/5/21, theme difficulty 3, 4th-easiest band 3, gap 0.0 -> "metro systems" pop 3 ident 3: 29 words, easy/middle/hard 3/5/21, theme difficulty 3, 4th-easiest band 3, gap 0.0
+  multiples_of_ten: "multiples of ten" pop 1 ident 1: 9 words, easy/middle/hard 6/3/0, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "multiples of ten" pop 1 ident 1: 9 words, easy/middle/hard 6/3/0, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  nautical_directions: "nautical directions" pop 4 ident 3: 37 words, easy/middle/hard 3/13/21, theme difficulty 3.5, 4th-easiest band 3, gap -0.5 -> "nautical directions" pop 4 ident 3: 37 words, easy/middle/hard 3/13/21, theme difficulty 3.5, 4th-easiest band 3, gap -0.5
+  notes_and_rests: "notes and rests" pop 4 ident 3: 35 words, easy/middle/hard 5/10/20, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "notes and rests" pop 4 ident 3: 35 words, easy/middle/hard 5/10/20, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  numbers_one_to_ten: "numbers one to ten" pop 1 ident 1: 10 words, easy/middle/hard 7/3/0, theme difficulty 1, 4th-easiest band 1, gap 0.0 -> "numbers one to ten" pop 1 ident 1: 10 words, easy/middle/hard 7/3/0, theme difficulty 1, 4th-easiest band 1, gap 0.0
+  old_units: "old units" pop 5 ident 4: 44 words, easy/middle/hard 0/9/35, theme difficulty 5, 4th-easiest band 3, gap -2.0 -> "old units" pop 5 ident 4: 44 words, easy/middle/hard 0/9/35, theme difficulty 5, 4th-easiest band 3, gap -2.0
+  opposites: "opposites" pop 2 ident 4: 93 words, easy/middle/hard 76/17/0, theme difficulty 3.5, 4th-easiest band 1, gap -2.5 -> "opposites" pop 2 ident 4: 93 words, easy/middle/hard 76/17/0, theme difficulty 3.5, 4th-easiest band 1, gap -2.5
+  pizza_styles: "pizza styles" pop 3 ident 3: 40 words, easy/middle/hard 7/11/22, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "pizza styles" pop 3 ident 3: 40 words, easy/middle/hard 7/11/22, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  poetry_terms: "poetry terms" pop 3 ident 2: 45 words, easy/middle/hard 3/21/21, theme difficulty 2, 4th-easiest band 3, gap 1.0 -> "poetry terms" pop 3 ident 2: 45 words, easy/middle/hard 3/21/21, theme difficulty 2, 4th-easiest band 3, gap 1.0
+  rhythm_words: "poetic meters" pop 5 ident 4: 7 words, easy/middle/hard 0/0/7, theme difficulty 5, 4th-easiest band 5, gap 0.0 -> "poetic meters" pop 5 ident 4: 7 words, easy/middle/hard 0/0/7, theme difficulty 5, 4th-easiest band 5, gap 0.0
+  road_signs: "road signs" pop 3 ident 2: 53 words, easy/middle/hard 12/15/26, theme difficulty 2, 4th-easiest band 2, gap 0.0 -> "road signs" pop 3 ident 2: 53 words, easy/middle/hard 12/15/26, theme difficulty 2, 4th-easiest band 2, gap 0.0
+  room_types: "hotel room types" pop 2 ident 3: 29 words, easy/middle/hard 9/9/11, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "hotel room types" pop 2 ident 3: 29 words, easy/middle/hard 9/9/11, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  scoring_words: "scoring words" pop 2 ident 2: 62 words, easy/middle/hard 31/12/19, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "scoring words" pop 2 ident 2: 62 words, easy/middle/hard 31/12/19, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  see_through_materials: "see-through materials" pop 4 ident 3: 32 words, easy/middle/hard 6/11/15, theme difficulty 3.5, 4th-easiest band 2, gap -1.5 -> "see-through materials" pop 4 ident 3: 32 words, easy/middle/hard 6/11/15, theme difficulty 3.5, 4th-easiest band 2, gap -1.5
+  sentence_parts: "sentence parts" pop 3 ident 3: 37 words, easy/middle/hard 7/13/17, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "sentence parts" pop 3 ident 3: 37 words, easy/middle/hard 7/13/17, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  silent_letter_words: new -> "silent letter words" pop 0 ident undefined: 0 words, easy/middle/hard 0/0/0, theme difficulty 0, 4th-easiest band -, gap -
+  size_labels: "size labels" pop 2 ident 2: 40 words, easy/middle/hard 12/17/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "size labels" pop 2 ident 2: 40 words, easy/middle/hard 12/17/11, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  slang_and_sayings: new -> "slang and sayings" pop 0 ident undefined: 0 words, easy/middle/hard 0/0/0, theme difficulty 0, 4th-easiest band -, gap -
+  solfege_notes: "solfege notes" pop 2 ident 2: 7 words, easy/middle/hard 5/0/2, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "solfege notes" pop 2 ident 2: 7 words, easy/middle/hard 5/0/2, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  sound_qualities: "sound qualities" pop 3 ident 3: 60 words, easy/middle/hard 17/21/22, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "sound qualities" pop 3 ident 3: 60 words, easy/middle/hard 17/21/22, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  sports_verbs: "sports verbs" pop 2 ident 2: 57 words, easy/middle/hard 22/22/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "sports verbs" pop 2 ident 2: 57 words, easy/middle/hard 22/22/13, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  stretches: "stretches" pop 3 ident 3: 37 words, easy/middle/hard 5/17/15, theme difficulty 3, 4th-easiest band 2, gap -1.0 -> "stretches" pop 3 ident 3: 37 words, easy/middle/hard 5/17/15, theme difficulty 3, 4th-easiest band 2, gap -1.0
+  superstitions: "superstitions" pop 2 ident 2: 29 words, easy/middle/hard 13/11/5, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "superstitions" pop 2 ident 2: 29 words, easy/middle/hard 13/11/5, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  synonyms: new -> "synonyms" pop 0 ident undefined: 0 words, easy/middle/hard 0/0/0, theme difficulty 0, 4th-easiest band -, gap -
+  taste_words: "taste words" pop 2 ident 2: 54 words, easy/middle/hard 14/14/26, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "taste words" pop 2 ident 2: 54 words, easy/middle/hard 14/14/26, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  texture_words: "texture words" pop 2 ident 2: 57 words, easy/middle/hard 19/21/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5 -> "texture words" pop 2 ident 2: 57 words, easy/middle/hard 19/21/17, theme difficulty 1.5, 4th-easiest band 1, gap -0.5
+  touch_words: "touch words" pop 2 ident 3: 22 words, easy/middle/hard 8/8/6, theme difficulty 2.5, 4th-easiest band 2, gap -0.5 -> "touch words" pop 2 ident 3: 22 words, easy/middle/hard 8/8/6, theme difficulty 2.5, 4th-easiest band 2, gap -0.5
+  traffic_words: "traffic words" pop 2 ident 2: 46 words, easy/middle/hard 13/17/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "traffic words" pop 2 ident 2: 46 words, easy/middle/hard 13/17/16, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  types_of_milk: "types of milk" pop 2 ident 2: 24 words, easy/middle/hard 8/5/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "types of milk" pop 2 ident 2: 24 words, easy/middle/hard 8/5/11, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  ways_to_cut_food: "ways to cut food" pop 2 ident 2: 33 words, easy/middle/hard 10/6/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "ways to cut food" pop 2 ident 2: 33 words, easy/middle/hard 10/6/17, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  wedding_anniversaries: "wedding anniversaries" pop 3 ident 3: 36 words, easy/middle/hard 10/13/13, theme difficulty 3, 4th-easiest band 1, gap -2.0 -> "wedding anniversaries" pop 3 ident 3: 36 words, easy/middle/hard 10/13/13, theme difficulty 3, 4th-easiest band 1, gap -2.0
+  word_games: "word games" pop 2 ident 2: 30 words, easy/middle/hard 9/15/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5 -> "word games" pop 2 ident 2: 30 words, easy/middle/hard 9/15/6, theme difficulty 1.5, 4th-easiest band 2, gap 0.5
+  word_origins: new -> "word origins" pop 0 ident undefined: 0 words, easy/middle/hard 0/0/0, theme difficulty 0, 4th-easiest band -, gap -
+First synonym aliases harder than root familiarity + 1: 9 -> 9: Big Ben 2314 f1 / Elizabeth Tower 2315 f4, garbage truck 3113 f1 / dustcart 3115 f4, notebook 4504 f1 / jotter 4506 f4, handbag 4957 f1 / pocketbook 4959 f4, peanut 17350 f1 / monkey nut 17369 f3, cell membrane 68617 f2 / plasma membrane 40904 f4, bad breath 68964 f1 / halitosis 62959 f3, egg white 64688 f1 / albumen 63421 f4, learner's permit 68680 f2 / provisional license 68691 f4
+Entries left in no theme (kept in the library, not exported) 0: none
+Entries added 0: none
+Entries deleted 0: none
+library changes 60; entries changed 0; status set to rev 0; themes deleted 0; entries merged 0
+Checks: changed kinds: none
+Checks after (errors and warnings): rating-vs-zipf 161, region-root-equiv 17
+Export contract (Word Safari export): no change; after: contract-dup-root 171, contract-root-region 1426
+Committed family export equals the in-memory export of the library before the changes: yes
+Theme rows 3265 -> 3265; gone none; new none; theme indexes shift: none
+Theme rows whose fields changed (parent compared by id): 60: types_of_milk (index 50 -> 50: flags 72 -> 0); cookies (index 59 -> 59: flags 72 -> 0); flours (index 62 -> 62: flags 72 -> 0); chocolates (index 69 -> 69: flags 72 -> 0); pizza_styles (index 119 -> 119: flags 72 -> 0); ways_to_cut_food (index 203 -> 203: flags 72 -> 0); meals_of_the_day (index 216 -> 216: flags 72 -> 0); foods_named_after_people (index 228 -> 228: flags 72 -> 0); horse_colors (index 374 -> 374: flags 72 -> 0); foods_named_after_places (index 897 -> 897: flags 72 -> 0); traffic_words (index 955 -> 955: flags 72 -> 0); road_signs (index 989 -> 989: flags 72 -> 0); nautical_directions (index 1038 -> 1038: flags 72 -> 0); metro_systems (index 1050 -> 1050: flags 72 -> 0); room_types (index 1084 -> 1084: flags 72 -> 0); touch_words (index 1195 -> 1195: flags 72 -> 0); stretches (index 1249 -> 1249: flags 72 -> 0); body_noises (index 1296 -> 1296: flags 72 -> 0); honorifics (index 1316 -> 1316: flags 72 -> 0); wedding_anniversaries (index 1656 -> 1656: flags 72 -> 0); cozy_things (index 1729 -> 1729: flags 72 -> 0); scoring_words (index 1857 -> 1857: flags 72 -> 0); sports_verbs (index 1858 -> 1858: flags 72 -> 0); word_games (index 1926 -> 1926: flags 72 -> 0); aussie_rules_terms (index 1977 -> 1977: flags 72 -> 0); jazz_words (index 2021 -> 2021: flags 72 -> 0); hip_hop_words (index 2031 -> 2031: flags 72 -> 0); notes_and_rests (index 2043 -> 2043: flags 72 -> 0); solfege_notes (index 2050 -> 2050: flags 88 -> 16); poetry_terms (index 2179 -> 2179: flags 72 -> 0); rhythm_words (index 2180 -> 2180: flags 72 -> 0); comic_book_words (index 2200 -> 2200: flags 72 -> 0); superstitions (index 2413 -> 2413: flags 72 -> 0); empires (index 2423 -> 2423: flags 72 -> 0); numbers_one_to_ten (index 2515 -> 2515: flags 88 -> 16); multiples_of_ten (index 2517 -> 2517: flags 88 -> 16); big_numbers (index 2519 -> 2519: flags 72 -> 0); imperial_units (index 2542 -> 2542: flags 72 -> 0); old_units (index 2544 -> 2544: flags 72 -> 0); keyboard_keys (index 2583 -> 2583: flags 72 -> 0); internet_words (index 2595 -> 2595: flags 72 -> 0); computer_actions (index 2608 -> 2608: flags 72 -> 0); grammar_terms (index 2717 -> 2717: flags 72 -> 0); sentence_parts (index 2719 -> 2719: flags 72 -> 0); clause_types (index 2720 -> 2720: flags 72 -> 0); figures_of_speech (index 2729 -> 2729: flags 72 -> 0); slang_and_sayings (index 2753 -> 2753: flags 104 -> 32); hidden_animals (index 2826 -> 2826: flags 104 -> 32); silent_letter_words (index 2859 -> 2859: flags 104 -> 32); word_origins (index 2965 -> 2965: flags 104 -> 32); opposites (index 3022 -> 3022: flags 72 -> 0); colors_in_other_languages (index 3035 -> 3035: flags 104 -> 32); see_through_materials (index 3075 -> 3075: flags 72 -> 0); texture_words (index 3095 -> 3095: flags 72 -> 0); taste_words (index 3110 -> 3110: flags 72 -> 0); american_candy (index 3123 -> 3123: flags 72 -> 0); synonyms (index 3125 -> 3125: flags 104 -> 32); size_labels (index 3147 -> 3147: flags 72 -> 0); sound_qualities (index 3158 -> 3158: flags 72 -> 0); fire_words (index 3192 -> 3192: flags 72 -> 0)
+Entry rows 61407 -> 61407; first row whose entry changed: none; rows that moved: 0; added none; removed none
+root -> alias rows 0: none; alias -> root rows 0: none
+Rows whose flags changed: 0
+Links 101040 -> 101040; rows whose link count changed: 0
+Link-index shifts: none
+Rows whose text changed: none
+New characters in the export (list them in the notice: the game font needs them): none
+Root links by theme + shown text + row: gone 0, new 0, rating changed 0
+  gone (other than the deleted themes): none
+  new: none
+  rating: none
+new issues: none
