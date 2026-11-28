@@ -229,6 +229,6 @@ The game must be able to leave out every word some players have objected to. Two
 - Alias links (settled 2026-11-20, Simon): no alias holds a link; the root is linked. Enforced by the error `alias-links` and `contract-alias-links`; the app links the root, and the entry dialog of an alias shows the root's themes read-only.
 - (Settled 2026-11-20, v419: the drink themes are sensitive, not adult.)
 - (Settled 2026-11-20, Simon: adult stays as it is, covering drugs, sexual content and violence, including war, weapons, gambling and stag nights; alcohol is sensitive only.)
-- I30 leftovers: places of worship and religious festivals (easy words sensitive) are for Simon; `theme-gap` (warn) lists the themes over the gap (Hindu festivals at its start).
+- I30 leftovers settled (v518: those two themes have firstLevel 31 like their easy words); `theme-gap` (warn) lists the themes over the gap (Hindu festivals at its start).
 - (Settled 2026-11-20, Simon: a UK/US spelling alias has its root's familiarity; an untagged variant the root's by default, higher only when clearly rarer; never easier than its root. Check `spelling-fam`; v420.)
 - (Settled 2026-11-20, re-checked on dictionary pages: liebfraumilch, gavi and côtes du rhône stay lowercase (v392, Simon; gavi and côtes du rhône marked recheck); hoover [verb] is already its own lowercase root (v389); Doric, Ionic, Corinthian, Tuscan stay capital, Composite lowercase (v376). Evidence: tools/gen/words-evidence-2026-11-20.txt.)
