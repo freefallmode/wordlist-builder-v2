@@ -1,4 +1,4 @@
-GAME NOTICE (drafted 2026-11-28; to send only on Simon's word, with v524)
+GAME NOTICE (sent to `_WS_` 2026-11-28 on Simon's word, with v524-v527)
 Library v525 (Simon, 2026-11-28: "do"): road layers, which never played (8 words, all familiarity 4), merges into road building. Net effect against v524:
 - Theme rows 3265 -> 3264: road_layers (index 959) is gone. Theme indexes shift down by 1 from index 959 (now parts_of_a_town) to the last, 3263.
 - road building (index 957) gains the 8 words (roadbed, subgrade, sub-base, base course, surface course, binder course, wearing course, geotextile): its counts [0,4,4,8,0] -> [0,4,4,16,0].
