@@ -9,12 +9,12 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 | Field | Game use | Effect of a bad value | Valid |
 |---|---|---|---|
 | id | `@id` targets in wordplay rules (case-insensitive, first match) | Duplicate or empty: a rule finds the wrong theme or none | Non-empty, unique |
-| name | Shown in the review; name tokens for the leak test; passenger matching (name equals word text); kind detection by the ancestor names "names", "famous people", "surnames" | Empty: a blank name is shown. Renaming those three ancestors changes which levels may use people themes | Non-empty, at most 30 characters |
+| name | Shown in the review; name tokens for the leak test; passenger matching (name equals word text); people detection (g29): a theme in the "names" branch but not under "surnames" is first names; one in the "famous people" branch, or whose name has a person word (directors, composers, kings...) and 70% of its words capitalised or of type person, is people; both are held to level 41. Surnames play as category | Empty: a blank name is shown. Renaming "names", "famous people" or "surnames" changes which levels may use people themes | Non-empty, at most 30 characters |
 | parent | Ancestors (at most 40), theme closeness, nesting | An index at or past the theme count crashes at load; a cycle corrupts the ancestors | -1 or a valid index, no cycles |
 | flags | Unplayable: 1 adult, 32 group. Held to the plan's starting level: 2 sensitive, 128 foreign. Bit 2 is no longer written since library v519 (2026-11-27): the game reads the theme's firstLevel (generator g28). 8 lang: dropped if the plan forbids it. 16 complete: rated easier. 64 locked: exact (shows the linked text only). 4 trademark: unread. 256 offensive (library 2026-11-22): written only when the export includes offensive themes, which the default (family) export does not; the game does not read it yet | The bits are hard-coded, so renumbering silently changes behaviour | Fixed bit meanings |
 | popularity | A playable theme needs at least 1; fallback when difficulty is below 1 | 0: the theme never plays | 1-5 on every playable theme |
 | difficulty | Theme band and pick weight | Below 1 falls back to popularity; above 5 is clamped; a wrong value moves the theme to other levels | 1.0-5.0 |
-| kind | Index into kindNames. wordplay and compound make a theme exact and need a rule; place and property get their own kind codes | Out of range: treated as category | 0 to kindNames-1 |
+| kind | Index into kindNames; the generator matches the kind by its name, and the game itself never reads it. wordplay and compound make a theme exact and need a rule. The kind sets the earliest level (g29, all three plans): category 1, place 21, property 31, people and first names 41, wordplay and compound 51, at most 1 wordplay theme per level. Otherwise place and property play exactly like category | Out of range, or a name the generator does not know: plays as category, no error | 0 to kindNames-1 |
 | rule | Wordplay test that no other word on the level fits | Unknown or empty: the theme is silently never used (15 in v411: 13 `other`, 2 `letter`) | palindrome, double-letters, homophone, onomatopoeia, anagram, rhyme:X, contains:X (letters; aeiou means all five), compound-start:X, compound-end:X, starts:X, ends:X (X at least 2 letters or @id), hidden:@id |
 | breaks | Theme names go into wordbreaks.bytes | As for entry breaks | As for entry breaks |
 | regions, regionsHi, counts, range, identifiability | Unread: pools are recounted and themes aren't filtered by region. identifiability reaches the game only through difficulty | None | Not applicable |
@@ -59,7 +59,7 @@ The export-contract check (`tools/export-contract.mjs`; gate step h on every fre
 | lib.unsaved | Optional, additive (2026-11-24): `true` when a browser export was made from unsaved edits, so `lib.version` is the last saved one. Not a pinnable export; ignore it otherwise |
 | regions | Must contain "UK" and "US", or no variants appear |
 | regionBits | Default 30; must be at most 31 |
-| kindNames | Must be exactly category, place, property, wordplay, compound |
+| kindNames | category, place, property, wordplay, compound, matched by name (g29). A new name may be added without a generator release (it plays as category until the generator knows it); renaming one of these five changes behaviour |
 | posNames, generated | Tools only |
 | v, lang, dialect, options, typeNames, themeBits, entryBits | Unread (the bits are hard-coded) |
 
