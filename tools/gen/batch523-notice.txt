@@ -1,0 +1,9 @@
+GAME NOTICE (drafted 2026-11-28; to send only on Simon's word, with v521-v522)
+Library v523 (Simon, 2026-11-28: "Hold them to 41 and ship v523"): the theme kinds people and name, for your g30 (commit 050b87f). Net effect against v522:
+- kindNames gains two names at the end: category, place, property, wordplay, compound, people (5), name (6). The existing indexes are unchanged.
+- Theme rows: 131 change kind to people (index 5): the 23 under famous people and 108 more whose words are 70% or more type person, all of which your g29 test already took for people. Two more people themes are adult and not in the family export (conquistadors, famous generals).
+- Theme rows: 23 change kind to name (index 6): the 20 first-name themes (as g29) and the 3 surname themes (surnames that are jobs, Scottish clan names, Chinese surnames), which played as category until now.
+- Theme rows: 9 get firstLevel [41, 41, 41], so they stay where g29's name test held them: video game characters, Nintendo characters, video game villains, Shakespeare characters, fairy tale heroes, kids' book characters, twelve Olympians, Greek heroes, legendary heroes. Their kind stays category.
+- No other changes: theme rows 3265, entry rows 61407, entry columns unchanged; no index shifts.
+- Net effect in play under g30: the same as g29 on v522, except the 3 surname themes, now held to level 41.
+Line breaks: none. New characters: none.

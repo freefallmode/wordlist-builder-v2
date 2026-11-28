@@ -110,6 +110,9 @@ function levelChecks(P, add, minWords) {
   }
 }
 
+// kind-people: a theme whose words are at least this share of type person is a people theme.
+const PEOPLE_SHARE = 0.7;
+
 export function validate(P) {
   const out = [];
   const add = (sev, kind, msg, extra = {}) => out.push({ sev, kind, msg, ...extra });
@@ -129,6 +132,7 @@ export function validate(P) {
   let unrated = 0;
   const aliasTexts = new Map();   // root id -> texts of its aliases (for the complete-set check)
   for (const e of P.entries) if (e.aliasOf) { if (!aliasTexts.has(e.aliasOf)) aliasTexts.set(e.aliasOf, []); aliasTexts.get(e.aliasOf).push(e.text); }
+  const underNames = t => { for (let p = t.parent; p; p = ix.theme.get(p)?.parent) if (p === 'names') return true; return false; };   // the names folder (kind name)
   for (const t of P.themes) {
     { const rt = ruleTheme(t); if (rt && !ix.theme.get(rt)) add('error', 'rule-theme', `"${t.name}" has the rule ${t.rule}, but there is no theme with the id ${rt}.`, { themeId: t.id }); }
     if (t.tkind === 'wordplay' || t.tkind === 'compound') { const pr = parseRule(t.rule); if (pr.state !== 'ok') add('error', 'rule-unknown', `"${t.name}" is a ${t.tkind} theme with ${t.rule ? `the rule "${t.rule}", which ${pr.state === 'bad' ? 'has a bad argument' : "is not in the game's grammar"}` : 'no rule'} (GAME-CONTRACT.md: palindrome, double-letters, homophone, onomatopoeia, anagram, no-vowels, roman, reversible, curated, rhyme:X, contains:X, compound-start:X, compound-end:X, starts:X, ends:X, hidden:@id): the game never plays it.`, { themeId: t.id }); }
@@ -145,6 +149,14 @@ export function validate(P) {
     { const miss = [!isRating(t.pop) && 'popularity', !isRating(t.ident) && 'identifiability'].filter(Boolean);   // ratings: always all four (pop, ident, fam, typ), set in the batch that creates the theme, word or link
       if (miss.length && st.entries) add('error', 'theme-unrated', `"${t.name}" has words but no theme ${miss.join(' and no ')} (1-5).`, { themeId: t.id }); else if (!t.pop) unrated++; }
     if (!ef.foreign && foreignListName(t.name)) add('warn', 'foreign-flag', `"${t.name}" looks like a list of words in another language but is not flagged Foreign language; tick it if its words are mostly not English.`, { themeId: t.id });
+    // kind-people, kind-name (Simon, 2026-11-28; GAME-CONTRACT kind row): the game holds both kinds to level 41, so the kind must not be left to a guess.
+    // First names are typed person too: the names folder is checked by kind-name, not by the person share.
+    if (t.tkind !== 'wordplay' && t.tkind !== 'compound') {
+      const roots = direct.filter(e => !e.aliasOf), per = roots.length ? roots.filter(e => e.type === 'person').length / roots.length : 0, pc = Math.round(per * 100);
+      if (underNames(t)) { if (t.tkind !== 'name') add('warn', 'kind-name', `"${t.name}" is in the names folder but its kind is ${t.tkind || 'category'}: set the kind to name (given names or surnames as words).`, { themeId: t.id }); }
+      else if (t.tkind !== 'people' && roots.length >= minWords && per >= PEOPLE_SHARE) add('warn', 'kind-people', `"${t.name}": ${pc}% of its words are type person but its kind is ${t.tkind || 'category'}: set the kind to people (real people by name).`, { themeId: t.id });
+      else if (t.tkind === 'people' && per < PEOPLE_SHARE) add('warn', 'kind-people', `"${t.name}" has the kind people but only ${pc}% of its words are type person: retype the words that are people, or change the kind.`, { themeId: t.id });
+    }
     if (st.roots === 0) add('info', 'empty', `"${t.name}" has no words yet.`, { themeId: t.id });
     else { const n = ef.offensive ? st.roots : cleanRoots(P, t.id);   // offensive words do not count toward a theme's minimum (the export leaves them out by default; DESIGN-entries.md 3.8), unless the theme is offensive itself
       if (n < minWords) add('warn', 'thin', `"${t.name}" has ${n} distinct word${n === 1 ? '' : 's'}${n < st.roots ? ` that are not offensive (${st.roots} in all)` : ''}; a theme needs at least ${minWords}.`, { themeId: t.id }); }

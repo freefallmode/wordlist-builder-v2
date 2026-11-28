@@ -889,7 +889,7 @@ test('export contract: a clean export passes; each broken rule is an error of it
   await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'difficulty')] = 0; }, 'contract-difficulty');
   await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'name')] = 'x'.repeat(31); }, 'contract-theme-name');
   await broken(X => { X.themes[ti(X, 'pals')][0] = 'FRUITS'; }, 'contract-theme-id');                                              // ids match case-insensitively
-  await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'kind')] = 5; }, 'contract-kind');
+  await broken(X => { X.themes[ti(X, 'fruits')][tf(X, 'kind')] = 7; }, 'contract-kind');
   await broken(X => { X.entries.links[2] = 0; }, 'contract-link');                                                                   // typicality 0
   await broken(X => { X.entries.links[1] = 5.5; }, 'contract-link');
   await broken(X => { X.entries.familiarity[0] = 0; }, 'contract-familiarity');
@@ -1447,4 +1447,26 @@ test('levels on words: a root sensitive flag loads as firstLevel 31, an alias dr
   assert.deepEqual(levelIssues(L), []);
   by('apples').firstLevel = [31, 31, 31]; by('plum').firstLevel = [0, null, null];
   assert.deepEqual(levelIssues(L).map(x => [x.kind, x.entryId]).sort(), [['level-bad', by('apples').id], ['level-bad', by('plum').id]].sort());
+});
+
+test('kinds people and name: exported at the end of kindNames; kind-people and kind-name warn on a missing or wrong kind', () => {
+  const P = newProject();
+  const T = (id, name, parent = null, x = {}) => ({ id, name, parent, group: false, enabled: true, region: [], pop: 2, ident: 2, ...x });
+  P.themes.push(T('scientists', 'scientists'), T('painters', 'painters', null, { tkind: 'people' }), T('mixed', 'mixed', null, { tkind: 'people' }),
+    { ...T('names', 'names'), group: true }, T('girls_names', "girls' names", 'names'), T('boys_names', "boys' names", 'names', { tkind: 'name' }));
+  reindex(P);
+  const add = (text, type, tid) => addEntry(P, text, { type, fam: 1, typ: { [tid]: 1 } });
+  for (const w of ['Newton', 'Curie', 'Darwin', 'Einstein']) add(w, 'person', 'scientists');
+  for (const w of ['Monet', 'Turner', 'Goya', 'Klimt']) add(w, 'person', 'painters');
+  for (const w of ['Rembrandt', 'easel', 'canvas', 'palette']) add(w, w === 'Rembrandt' ? 'person' : 'common', 'mixed');
+  for (const w of ['Olivia', 'Emma', 'Ava', 'Mia']) add(w, 'person', 'girls_names');
+  for (const w of ['Jack', 'Leo', 'Noah', 'Liam']) add(w, 'person', 'boys_names');
+  reindex(P);
+  const v = validate(P), of = k => v.filter(i => i.kind === k).map(i => i.themeId).sort();
+  assert.deepEqual(of('kind-people'), ['mixed', 'scientists']);
+  assert.deepEqual(of('kind-name'), ['girls_names']);
+  const f = buildExport(P, {}).file, k = f.themeFields.indexOf('kind'), row = id => f.themes.find(r => r[0] === id);
+  assert.deepEqual(f.kindNames.slice(-2), ['people', 'name']);
+  assert.equal(f.kindNames[row('painters')[k]], 'people');
+  assert.equal(f.kindNames[row('boys_names')[k]], 'name');
 });

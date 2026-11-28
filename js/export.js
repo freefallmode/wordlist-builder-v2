@@ -38,8 +38,10 @@ const regionPass = (r, regions) => {
 export const fixRegion = r => (r.v === 2 ? r : { ...r, codes: r.codes.length ? r.codes : [...REGIONS], v: 2 });
 
 // Bit layouts, written into the file so the reader does not have to guess.
-// What a theme is: category (kinds of one thing), place, property (members share an attribute), wordplay (members chosen by spelling or sound; rule says how to test) and compound (members combine with a shared word).
-export const THEME_KINDS = ['category', 'place', 'property', 'wordplay', 'compound'];
+// What a theme is: category (kinds of one thing), place, property (members share an attribute), wordplay (members chosen by spelling or sound; rule says how to test),
+// compound (members combine with a shared word), people (real people by name) and name (given names and surnames as words). New kinds go at the end: the export
+// writes the index, and the game matches kindNames by name (g30 reads people and name; an older generator plays them as category).
+export const THEME_KINDS = ['category', 'place', 'property', 'wordplay', 'compound', 'people', 'name'];
 export const THEME_BITS = { adult: 1, sensitive: 2, trademark: 4, lang: 8, complete: 16, group: 32, locked: 64, foreign: 128, offensive: 256 };   // locked: show exactly the linked word, no regional or family substitution
 export const ENTRY_BITS = { adult: 1, sensitive: 2, trademark: 4, offensive: 8, spelling: 16, form: 32, regional: 64, abbreviation: 128, translation: 256, synonym: 512 };
 

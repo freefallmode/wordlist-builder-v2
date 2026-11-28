@@ -42,7 +42,12 @@ Batch v523 sets `tkind` on the people and name themes (status `rev` on no entrie
 2. Then the library ships v523, and the notice goes to the game on your word.
 3. Later, once the game pins v523 or later, it can drop the ancestor test, and GAME-CONTRACT drops the warning about renaming those folders.
 
-## Your decisions
+## Outcome: batch v523 (2026-11-28)
+
+- The game measured g29 on v520: 108 of the 110 already played as people (the other two are adult and not exported); its name test also caught 9 themes of characters, heroes and gods. g30 (050b87f) trusts the kind alone once kindNames has people or name.
+- v523: people on 133 themes, name on 23; the 9 get firstLevel 41 so they stay where they played (Simon: "Hold them to 41 and ship v523"). In play the only change is the 3 surname themes, now held to 41.
+
+## Your decisions (settled)
 
 1. Surnames: `name`, held to 41 (decided 2026-11-28).
 2. The people themes the game's test misses today: hold all to 41, or keep some early?

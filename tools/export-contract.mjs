@@ -14,7 +14,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const KIND_NAMES = ['category', 'place', 'property', 'wordplay', 'compound'];   // Top level: kindNames, exactly these
+export const KIND_NAMES = ['category', 'place', 'property', 'wordplay', 'compound', 'people', 'name'];   // Top level: kindNames, exactly these (people and name from library v523, game g30)
 export const TOP_KEYS = ['lib', 'regions', 'regionBits', 'kindNames', 'themeFields', 'themes', 'entries', 'linkFields', 'shown', 'shownUK', 'nameWordLinks', 'nameThemeLinks'];
 export const THEME_COLUMNS = ['id', 'name', 'parent', 'flags', 'popularity', 'kind', 'rule', 'difficulty', 'breaks'];   // Themes table: the fields the game reads (a missing one throws)
 export const ENTRY_COLUMNS = ['text', 'pos', 'type', 'flags', 'familiarity', 'regions', 'regionsHi', 'root', 'clash', 'linkCount', 'links', 'breaks'];   // Entries table (zipf is optional: not written since library v520, generator g29 does not read it; checked when present)
